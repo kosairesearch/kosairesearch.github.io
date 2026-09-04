@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "2026Q1 흑자 복귀, 카메라·배터리팩 투트랙 전환점",
-  "en": "2026 Q1 Profit Turnaround: Camera Module & Battery Pack Dual-Track at an Inflection"
+  "ko": "카메라모듈 흑자전환, 2차전지는 회복 지연",
+  "en": "Camera Module Turns Profitable, Battery Segment Lags"
  },
  "lead": {
-  "ko": "2025년 이차전지 시장 침체와 4분기 자산손상으로 영업손실로 전환했던 파워로직스가 2026년 1분기 매출 2,413억원·영업이익 78억원으로 최근 5개 분기 최대 실적을 기록하며 반등했고, 르노코리아 하이브리드 배터리팩 공급 원년과 맞물려 이원화 성장 전략의 현실화 여부를 검증하는 중요 분기점에 서 있다.",
-  "en": "After slipping to an operating loss in 2025 on secondary battery market weakness and Q4 asset impairments, Power Logics delivered a strong 2026 Q1 rebound — its highest quarterly revenue and operating profit in five periods — and now stands at a critical inflection point where the viability of its camera-module-plus-battery-pack dual-track strategy will be tested, coinciding with the inaugural year of its Renault Korea hybrid battery pack supply."
+  "ko": "파워로직스는 2026년 1·2분기 연속 영업흑자를 내며 상반기 흑자전환에 성공했으나, 이는 카메라모듈 부문 개선에 힘입은 것으로 이차전지(ES) 부문은 여전히 업황 침체의 영향권에 있다.",
+  "en": "Power Logics returned to operating profit in both the first and second quarters of 2026, driven mainly by improvement in its camera module business, while its secondary battery (ES) segment remains affected by a market downturn."
  },
  "keypoints": [
   {
-   "ko": "2026Q1 매출 2,413억원·영업이익 78억원·지배주주 순이익 89억원 — 전년 동기 대비 매출 약 35% 급증, 최근 5개 분기 최고치",
-   "en": "2026 Q1 revenue KRW 241.3bn, operating profit KRW 7.8bn, controlling shareholders' net income KRW 8.9bn — revenue surged ~35% YoY, the highest in five quarters"
+   "ko": "2026년 1분기 매출 2,413억원 중 카메라모듈이 79%, 이차전지 보호회로·배터리팩이 20%를 차지했다.",
+   "en": "Of Q1 2026 revenue of KRW 241.3 billion, camera modules accounted for 79% and secondary battery protection circuits/packs for 20%."
   },
   {
-   "ko": "2025년 연간 영업손실 64억원·지배주주 순손실 123억원 — 이차전지 시장 침체 따른 매출 감소와 4분기 대규모 자산손상이 주원인",
-   "en": "2025 full-year operating loss KRW 6.4bn, controlling shareholders' net loss KRW 12.3bn — driven by secondary battery demand weakness and large Q4 asset impairment"
+   "ko": "2025년 연결 매출은 6,865억원으로 전년 대비 6.4% 감소했고, 영업이익은 흑자에서 적자로 전환했다.",
+   "en": "2025 consolidated revenue fell 6.4% year-on-year to KRW 686.5 billion, with operating profit swinging from a gain to a loss."
   },
   {
-   "ko": "르노코리아 차세대 중형 SUV 하이브리드 배터리팩 공급 개시(2026년) — 수주 시점 기준 연간 7~8만 대, 약 700~800억원 규모 신규 매출원",
-   "en": "Renault Korea next-gen midsize SUV hybrid battery pack deliveries begin in 2026 — at contract award ~70,000–80,000 units/year implying ~KRW 70–80bn in annual revenue"
+   "ko": "2026년 1분기(영업이익 78억원)와 2분기(46억원) 모두 흑자를 내며 상반기 기준 흑자전환에 성공했다.",
+   "en": "Both Q1 2026 (operating profit of KRW 7.8 billion) and Q2 2026 (KRW 4.6 billion) were profitable, marking a turnaround for the first half."
   },
   {
-   "ko": "삼성전자 스마트폰 카메라 모듈 2위권 입지 유지 중이나, 국내외 경쟁사 경쟁 심화로 ASP·점유율 방어가 지속 과제",
-   "en": "Maintains second-tier position in Samsung smartphone camera module supply, but intensifying domestic and Chinese competition keeps ASP and share defense an ongoing challenge"
+   "ko": "삼성전자 카메라모듈 협력사 6곳의 2026년 상반기 합산 영업이익률은 2.4%로 전년과 유사한 수준을 유지했다.",
+   "en": "Six Samsung Electronics camera module suppliers posted a combined H1 2026 operating margin of 2.4%, similar to the prior year."
   },
   {
-   "ko": "주가가 주당 순자산(BPS 5,777원) 대비 할인 국면에서, 이익 반전의 지속성 확인이 재평가의 핵심 전제 조건",
-   "en": "Stock trades at a discount to book value per share (BPS KRW 5,777); sustained earnings recovery is the key prerequisite for any re-rating"
+   "ko": "수출 비중이 매출의 86%에 달해 해외 수요와 환율 변동에 대한 노출도가 크다.",
+   "en": "Exports account for 86% of revenue, resulting in significant exposure to overseas demand and currency movements."
   }
  ],
  "business": {
-  "ko": "파워로직스는 2003년 코스닥에 상장한 전자·부품 전문기업으로, 삼성전자 스마트폰용 카메라 모듈(CM), 소형 이차전지 보호회로(PCM·SM), 배터리관리시스템(BMS), 중대형 배터리팩을 주력으로 생산한다. 매출 구성의 핵심은 삼성전자에 납품하는 스마트폰 카메라 모듈로, 국내 협력사 중 2위권 지위를 확보하며 외형 성장의 견인차 역할을 해왔다. 소형 배터리 보호회로 사업에서는 삼성SDI·LG화학 등 대형 배터리 셀 제조사와의 협력 관계를 바탕으로 시장 지위를 유지하고 있다. BMS와 중대형 배터리팩으로의 다변화를 추진 중이며, 방산·산업·차량 분야에서 축적한 BMS 기술을 기반으로 전기버스·전기이륜차·AGV·선박용 ESS 등으로 응용처를 넓히고 있다. 생산 거점은 국내 본사와 베트남 법인(파워로직스 바띠엔 비나 등) 중심이며, 베트남 공장에는 5,000평 규모의 배터리팩 제조 라인 4개를 구축해 공정 자동화를 통해 비용 경쟁력을 확보하고 있다. 중국·베트남 등 해외에 총 11개 종속회사를 두며 글로벌 생산 체계를 운영 중이다. 2023년 말 르노코리아 차세대 중형 SUV의 하이브리드 배터리팩 공급사로 선정됐으며, 2026년부터 양산 납품이 시작됐다. 카메라 모듈 단일 고객 의존 구조에서 배터리팩·BMS 사업으로 포트폴리오를 이전하는 사업 구조 재편이 중장기 핵심 과제다.",
-  "en": "Power Logics, listed on KOSDAQ since 2003, is an electronics and components manufacturer whose core product lines include camera modules (CM) for Samsung Electronics smartphones, small lithium-ion battery protection circuit modules (PCM/SM), battery management systems (BMS), and mid-to-large battery packs. The camera module business — where the company has maintained a second-tier position among Samsung smartphone suppliers — has historically been the primary revenue engine. In the small battery protection circuit segment, supply relationships with major domestic cell makers including Samsung SDI and LG Chem underpin market position. The company is actively diversifying into BMS and mid-to-large battery packs, leveraging accumulated BMS expertise from defense, industrial, and automotive applications to expand into electric buses, electric two-wheelers, AGVs, and marine energy storage systems. Its production footprint is anchored by domestic headquarters and Vietnamese manufacturing subsidiaries, where four automated battery pack lines spanning a 5,000-pyong facility have been built to ensure cost competitiveness. The group operates 11 overseas subsidiaries in Vietnam, China, and other markets. In late 2023, the company was selected as the hybrid battery pack supplier for Renault Korea's next-generation midsize SUV, with mass-production deliveries beginning in 2026. Diversifying from single-customer Samsung Electronics reliance toward sustainable battery pack and BMS contributions is the central medium-term strategic objective."
+  "ko": "파워로직스는 이차전지 보호회로 및 중대형 배터리팩을 담당하는 ES(에너지솔루션) 사업부문과 IT 모바일 및 전장용 카메라모듈을 만드는 CM(카메라모듈) 사업부문으로 구성된 전자부품 기업이다. 2026년 1분기 기준 사업부문별 매출 비중은 카메라모듈이 전체의 79%로 가장 크고, 이차전지 보호회로 및 배터리팩이 20%를 차지했다. 제품별로는 배터리팩(PACK)이 매출의 12.9%, 스마트모듈(SM)이 5.7%를 기록했다. 수출 비중은 전체 매출의 86%에 달해 해외 매출 의존도가 높은 구조다. 카메라모듈 부문은 삼성전자 스마트폰용 멀티카메라와 전장용 카메라모듈을 주력으로 하며, 국내 시장에서는 파트론, 엠씨넥스, 캠시스, 나무가, 코아시아씨엠 등이 동일한 고객사를 두고 경쟁한다. 이차전지 부문은 리튬이온 배터리의 과충전·과방전을 차단·제어하는 보호회로(PCM)를 핵심 제품으로 하며, 이를 기반으로 전기차(EV)·에너지저장장치(ESS)향 중대형 배터리팩 사업으로 확장을 추진해왔다. 회사는 국내 최대 2차전지 셀 기업과의 전략적 제휴를 통해 사업 위험을 낮추며 중대형 배터리 시장에 진입한 바 있다. CM 사업부문은 전장용 카메라모듈 개발을 위해 글로벌 스마트폰 업체 및 전장 고객사와 협력 연구개발을 지속하고 있다.",
+  "en": "Power Logics is an electronic components company organized into an ES (Energy Solution) segment, which makes secondary battery protection circuits and large-format battery packs, and a CM (Camera Module) segment, which makes IT mobile and automotive camera modules. As of Q1 2026, camera modules made up the largest share of revenue at 79%, while secondary battery protection circuits and packs accounted for 20%. By product, battery packs (PACK) contributed 12.9% of revenue and smart modules (SM) 5.7%. Exports represented 86% of total revenue, reflecting heavy reliance on overseas sales. The camera module business focuses on multi-camera modules for Samsung Electronics smartphones and automotive camera modules, competing for the same customer base as Partron, MCNEX, Camsys, Namuga, and CoAsia CM. The battery segment's core product is a protection circuit module (PCM) that blocks and controls overcharging and overdischarging of lithium-ion batteries, and the company has used this base to expand into large-format battery packs for electric vehicles (EV) and energy storage systems (ESS). It entered the large-format battery market through a strategic partnership with a major domestic battery cell maker to reduce business risk. The CM segment continues joint development with global smartphone makers and automotive customers to build out its automotive camera module business."
  },
  "earnings": {
-  "ko": "최근 4년 실적은 2022년 대규모 적자 → 2023년 흑자 전환 → 2024~2025년 재악화의 'W자형' 변동 흐름을 보인다. 2023년에는 매출 7,732억원·영업이익 156억원(OPM 2.0%)으로 2022년 적자(OPM -5.3%)에서 뚜렷이 회복했고, 지배주주 순이익은 164억원이었다. 2024년에는 매출이 7,334억원으로 5.1% 감소하고 영업이익도 24억원(OPM 0.3%)으로 축소됐으나 지배주주 순이익 100억원(EPS 299원)으로 흑자는 유지했다. 2025년에는 매출이 6,865억원으로 재차 6.4% 감소했고 영업손실 64억원(OPM -0.9%)으로 전환됐으며, 지배주주 순손실 123억원(EPS -337원)을 기록했다. 2025년 손익 악화의 핵심은 이차전지 시장 침체에 따른 매출 감소와 4분기 자산손상 인식으로, 4분기에만 지배주주 순손실이 약 140억원에 달하며 연간 적자를 주도했다. 분기 흐름을 보면 2025년 Q1(-41억원)·Q2(-60억원) 연속 영업손실에서 Q3(+61억원)로 반등했다가 Q4(-24억원)에 다시 후퇴했다. 2026년 1분기는 매출 2,413억원(전년 동기 대비 약 35% 급증)·영업이익 78억원·지배주주 순이익 89억원으로 최근 5개 분기 중 최대 실적을 달성했다. 영업현금흐름(CFO)은 2023년 409억원에서 2024년 -51억원으로 음전환했다가 2025년 166억원으로 회복됐다. 부채비율은 2025년 84.6%로 전년(90.9%) 대비 개선됐으며, 지배주주 자기자본 1,975억원으로 재무적 기초는 유지되고 있다.",
-  "en": "The past four years show a 'W-shaped' earnings pattern: a deep loss in 2022, recovery in 2023, followed by renewed deterioration in 2024–2025. In 2023, revenue reached KRW 773.2bn with operating profit of KRW 15.6bn (OPM 2.0%), reversing the 2022 operating loss (OPM -5.3%); controlling shareholders' net income was KRW 16.4bn. In 2024, revenue fell 5.1% to KRW 733.4bn and operating profit narrowed to KRW 2.4bn (OPM 0.3%), though controlling shareholders' net income remained positive at KRW 10.0bn (EPS KRW 299). In 2025, revenue declined another 6.4% to KRW 686.5bn, swinging to an operating loss of KRW 6.4bn (OPM -0.9%) and a controlling shareholders' net loss of KRW 12.3bn (EPS -KRW 337). The primary culprits were the secondary battery demand slowdown and a large Q4 asset impairment that alone generated approximately KRW 13.9bn in Q4 controlling shareholders' net loss. Quarterly within 2025, operating losses in Q1 (-KRW 4.1bn) and Q2 (-KRW 6.0bn) were interrupted by a Q3 recovery (+KRW 6.1bn) before Q4 slipped back to -KRW 2.4bn. In 2026 Q1, revenue surged to KRW 241.3bn (~35% YoY), delivering operating profit of KRW 7.8bn and controlling shareholders' net income of KRW 8.9bn — the strongest quarter in five periods. Operating cash flow (CFO) was KRW 40.9bn in 2023, turned negative at -KRW 5.1bn in 2024, and recovered to KRW 16.6bn in 2025. The debt-to-equity ratio improved to 84.6% in 2025 from 90.9% in 2024, and controlling shareholders' equity stood at KRW 197.5bn."
+  "ko": "2025년 연결 매출액은 6,865억원으로 2024년 7,334억원 대비 6.4% 감소했다. 영업손익은 2024년 24억원 흑자에서 2025년 64억원 적자로 전환했고, 지배주주순이익도 2024년 108억원 흑자에서 2025년 123억원 적자로 돌아섰다. 앞선 2023년에는 매출 7,732억원, 영업이익 156억원(영업이익률 2.0%)으로 흑자를 냈으나, 2022년에는 매출 7,439억원에 영업손실 391억원(영업이익률 -5.3%)을 기록하며 큰 폭의 적자를 낸 바 있어, 최근 4개 연도 실적은 흑자와 적자를 반복하는 모습을 보였다. 분기별로는 2025년 2분기 영업손실 60억원에서 3분기 영업이익 61억원으로 한 차례 흑자전환했으나, 4분기 다시 24억원 적자로 돌아서는 등 분기 간 변동성이 컸다. 2026년에는 1분기 매출 2,413억원·영업이익 78억원, 2분기 매출 2,005억원·영업이익 46억원을 기록하며 두 개 분기 연속 흑자를 냈다. 이 같은 상반기 흑자전환은 카메라모듈 부문 수익성 개선에 힘입은 것으로, 회사의 2026년 상반기 매출은 전년 동기보다 28% 늘어난 4,418억원, 영업이익은 124억원으로 집계돼 삼성 카메라모듈 협력사 중 흑자전환에 성공한 사례로 분류됐다. 순이익 측면에서도 2026년 1분기 89억원, 2분기 36억원의 지배주주순이익을 기록했다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 지배주주순이익 합계는 85억원 수준으로, 분기별 등락이 큰 만큼 최근의 개선 흐름이 안정적으로 이어지는지는 다음 분기 실적으로 확인이 필요하다.",
+  "en": "2025 consolidated revenue was KRW 686.5 billion, down 6.4% from KRW 733.4 billion in 2024. Operating profit swung from a gain of KRW 2.4 billion in 2024 to a loss of KRW 6.4 billion in 2025, and net income attributable to owners flipped from a gain of KRW 10.8 billion in 2024 to a loss of KRW 12.3 billion in 2025. In 2023 the company had posted revenue of KRW 773.2 billion and operating profit of KRW 15.6 billion (a 2.0% margin), while 2022 saw a wider loss with revenue of KRW 743.9 billion and an operating loss of KRW 39.1 billion (a -5.3% margin), meaning results alternated between profit and loss over the past four fiscal years. On a quarterly basis, operating profit moved from a loss of KRW 6.0 billion in Q2 2025 to a gain of KRW 6.1 billion in Q3 2025, before reverting to a loss of KRW 2.4 billion in Q4 2025, showing considerable quarter-to-quarter volatility. In 2026, the company posted revenue of KRW 241.3 billion and operating profit of KRW 7.8 billion in Q1, followed by revenue of KRW 200.5 billion and operating profit of KRW 4.6 billion in Q2, marking two consecutive profitable quarters. This first-half turnaround was driven by improved profitability in the camera module business; first-half 2026 revenue rose 28% year-on-year to KRW 441.8 billion with operating profit of KRW 12.4 billion, placing the company among the Samsung camera module suppliers that returned to profit. Net income attributable to owners was KRW 8.9 billion in Q1 2026 and KRW 3.6 billion in Q2 2026. Over the most recent four quarters (Q3 2025 through Q2 2026), net income attributable to owners totaled roughly KRW 8.5 billion, and given the swings seen in prior quarters, whether this improvement proves durable will require confirmation in coming quarterly results."
  },
  "industry": {
-  "ko": "파워로직스가 속한 삼성전자 스마트폰 카메라 모듈 시장은 삼성전기(1위)·파워로직스·파트론·캠시스·서니옵티컬(중국)·엠씨넥스 등 10여 개사가 경합하는 과점 구조이며, 고해상도·OIS 등 프리미엄 기능 탑재 트렌드 속에서 ASP 방어와 기술력이 핵심 경쟁 요인이다. 소형 이차전지 보호회로 시장은 전기차(EV) 캐즘 장기화로 2025년 수요가 크게 둔화했으며, 국내외 배터리 셀 메이커의 재고 조정이 부품사에 전이됐다. 중대형 배터리팩·BMS 시장에서는 AI 데이터센터 확산에 따른 에너지저장장치(ESS) 수요가 새로운 성장 동력으로 부상했으며, 증권가는 ESS 배터리 수요가 2024년 230GWh에서 2026년 359GWh로 확대될 것으로 전망하고 있다. 반면 전기차용 배터리는 미국 IRA 세액공제 약화, 완성차 업체들의 전동화 전략 수정 등 불확실 요인이 지속되고 있다. 미국·유럽의 중국산 배터리 관세·규제 장벽 강화는 국내 배터리 부품사에 일정 부분 수혜 환경을 제공하는 구조적 변화다. 카메라 모듈 경쟁에서 파워로직스는 1위 삼성전기와 비교해 규모·기술 격차가 존재하지만, 중간 가격대 모델 공급과 ASP 2위권 유지 측면에서 경쟁력을 보유하고 있다. 배터리 산업의 주 무대가 전기차 단일 시장에서 ESS·데이터센터·로보틱스용 등으로 확장되는 추세는 파워로직스의 사업 다변화 전략과 방향이 일치한다.",
-  "en": "The Samsung smartphone camera module market is an oligopoly of roughly ten suppliers — including Samsung Electro-Mechanics (No. 1), Power Logics, Partron, Camsis, Chinese-based Sunny Optical, and MCNex — where premium feature capability (high-resolution sensors, OIS) and ASP defense are the key competitive factors. In the small battery protection circuit segment, the prolonged EV demand slowdown (chasm) significantly depressed volumes in 2025, with inventory adjustments at domestic and overseas cell makers rippling downstream to component suppliers. In the mid-to-large battery pack and BMS space, ESS demand fueled by AI data center proliferation is emerging as a new structural growth driver; sell-side analysts project ESS battery demand expanding from 230 GWh in 2024 to 359 GWh by 2026. EV battery demand, by contrast, remains clouded by U.S. IRA tax credit changes and automakers' revised electrification timelines. Rising U.S.-European tariff and regulatory barriers against Chinese batteries provide a partial tailwind for Korean battery component makers. Within the camera module competitive set, Power Logics trails Samsung Electro-Mechanics in scale and technology breadth but maintains a second-tier ASP position. The broader industry shift from EV-centric to multi-application (ESS, data centers, robotics) battery demand aligns directionally with Power Logics's diversification strategy."
+  "ko": "삼성전자 스마트폰용 카메라모듈 협력사 6곳(파트론·엠씨넥스·파워로직스·캠시스·나무가·코아시아씨엠)의 2026년 상반기 합산 영업이익률은 2.4%로, 전년 동기 2.3%와 큰 차이가 없었다. 같은 기간 삼성전기 카메라모듈 사업부의 영업이익률은 5.8%로 협력사 평균을 크게 웃돌았는데, 이는 갤럭시 플래그십 모델 비중이 크기 때문으로 풀이된다. 업계에서는 대부분의 협력사가 이익률이 낮은 중저가 갤럭시A 시리즈용 카메라모듈 비중이 크다는 점을 이익률 격차의 배경으로 설명한다. 상반기 협력사별로는 파트론과 파워로직스, 캠시스의 실적이 개선된 반면 엠씨넥스와 나무가는 둔화되는 등 물량 배분에 따라 실적이 엇갈렸다. 통상 삼성전자 MX사업부는 특정 협력사가 물량을 독점하지 못하도록 여러 업체에 분산 발주하는 경향이 있어, 개별 업체의 실적은 물량 배정 변화에 민감하게 반응한다. 이차전지 부문은 2025년 시장 침체의 영향을 받았는데, 회사는 이차전지 시장 침체에 따른 매출 감소와 자산손상 인식이 손익 악화의 주요 원인이라고 공시를 통해 설명했다. 한편 삼성전자는 2026년 2분기 갤럭시S26 시리즈 중심의 견조한 플래그십 판매와 A시리즈 판매 호조로 모바일 사업 매출이 성장했다고 밝혔는데, 이는 카메라모듈 협력사들의 수요 기반과도 연결되는 대목이다.",
+  "en": "Six Samsung Electronics smartphone camera module suppliers (Partron, MCNEX, Power Logics, Camsys, Namuga, and CoAsia CM) posted a combined operating margin of 2.4% in H1 2026, little changed from 2.3% in the same period a year earlier. Samsung Electro-Mechanics' camera module division posted a much higher operating margin of 5.8% over the same period, reflecting its larger share of Galaxy flagship models. Industry sources attribute the margin gap to the fact that most suppliers carry a larger mix of lower-margin camera modules for mid-range Galaxy A series devices. Among suppliers, Partron, Power Logics, and Camsys saw improved results in H1 while MCNEX and Namuga saw a slowdown, reflecting differences in order allocation. Samsung Electronics' MX division typically spreads orders across multiple suppliers so that no single vendor dominates, making individual suppliers' results sensitive to shifts in order allocation. The battery segment was affected by a market downturn in 2025, with the company disclosing that the decline in revenue and impairment recognition tied to the secondary battery market slump were the main causes of the deterioration in earnings. Separately, Samsung Electronics reported that mobile division revenue grew in Q2 2026 on solid flagship sales led by the Galaxy S26 series and strong A-series sales, which is relevant to the demand base for camera module suppliers."
  },
  "outlook": {
-  "ko": "2026년은 르노코리아 하이브리드 배터리팩 공급 개시가 연간 실적에 직접 반영되는 원년으로, 수주 계약 기준 연간 7만~8만 대(약 700~800억원 매출 기대)라는 가시적 신규 매출원이 가동된다. 베트남 법인에서는 전기스쿠터·전기트럭·전기농기계·AGV 등을 대상으로 국내 배터리 셀 메이커에 OEM 방식 중대형 배터리팩 납품이 진행되고 있어, 추가 고객사 수주 현황이 향후 배터리팩 사업 성장의 가늠자다. 카메라 모듈 부문에서는 삼성 갤럭시 플래그십·보급형 신모델 출시 사이클에 따른 분기별 물량 변동이 이어지며, OIS·고해상도 등 고부가 모듈 비중 확대를 통한 ASP 방어가 수익성의 핵심 변수다. 고상버스·선박용 ESS·고속도로 터널용 제트팬 배터리팩 등으로 응용처를 확장하는 전략도 병행 중이나, 이 응용처들의 의미 있는 매출 기여 시점은 추가 수주 공시 확인이 선행돼야 한다. 2026년 1분기의 강한 반등이 구조적 회복인지 일시적 요인인지는 2·3분기 실적이 결정적 판단 근거가 될 것이며, 배터리팩 매출 비중 변화와 영업이익률 회복 추이를 동반 점검하는 것이 중요하다.",
-  "en": "2026 marks the first year in which the Renault Korea hybrid battery pack supply contract will directly feed into reported results — with approximately 70,000–80,000 units/year and implied revenue of KRW 70–80 billion at contract award terms representing a visible new revenue pillar. At the Vietnamese facility, OEM deliveries of mid-to-large battery packs for electric scooters, trucks, agricultural machinery, and AGVs to domestic Korean cell makers are ongoing; the pace of additional customer wins will be a key gauge of the battery pack business's growth trajectory. In camera modules, quarterly volume swings tied to Samsung Galaxy flagship and mid-range model launch cycles will continue, making ASP defense through higher-value (OIS, high-resolution) module mix expansion the primary margin lever. The company's parallel push into electric buses, marine ESS, and highway tunnel jet-fan battery packs is underway, though material revenue contributions from these applications require further confirmed orders. Whether the 2026 Q1 rebound represents a structural or transitory recovery will be adjudicated primarily by Q2 and Q3 results."
+  "ko": "회사는 2026년 1분기와 2분기 연속 영업흑자를 내며 상반기 흑자전환에 성공했다. 카메라모듈 부문은 삼성전자의 갤럭시S 시리즈와 A시리즈 등 다양한 라인업에 공급하고 있어, 하반기 신모델 출시 및 물량 배정 변화가 실적에 계속 영향을 줄 것으로 보인다. 이차전지 부문은 2026년 1분기 기준 매출 비중이 20% 수준으로 유지됐으나, 시장 침체 국면이 이어질 경우 해당 부문의 회복 속도는 제한적일 수 있다. 회사는 과거 EV·ESS용 중대형 배터리팩과 BMS 사업 확장을 추진해왔으며, 국내 주요 2차전지 셀 기업과의 협업을 통해 사업 리스크를 관리해온 만큼, 전방산업 수요가 회복될 경우 해당 부문의 매출 기여가 늘어날 잠재력이 있다. 다만 최근 시점에서 공식적인 연간 가이던스나 대규모 신규 수주에 대한 공시는 확인되지 않았다. 향후 실적의 방향은 카메라모듈 부문의 이익률 개선이 계속 이어지는지, 그리고 이차전지 부문의 매출 비중이 회복되는지에 따라 갈릴 것으로 보인다.",
+  "en": "The company achieved a first-half turnaround in 2026, posting operating profit in both Q1 and Q2. The camera module business supplies multiple Samsung Electronics lineups including the Galaxy S series and A series, so new model launches and shifts in order allocation in the second half will continue to affect results. The battery segment's revenue share stood at around 20% as of Q1 2026, but its pace of recovery could remain limited if the broader market downturn persists. The company has previously pursued expansion into large-format battery packs and BMS for EV and ESS applications, managing business risk through partnership with a major domestic battery cell maker, giving this segment potential to contribute more to revenue if end-market demand recovers. However, no official annual guidance or large new order disclosures have been confirmed as of the most recent information available. The future earnings trajectory will likely hinge on whether the camera module segment's margin improvement continues and whether the battery segment's revenue contribution recovers."
  },
  "valuation_comment": {
-  "ko": "주가는 주당 순자산(BPS 5,777원) 대비 할인된 수준에서 거래되고 있어 순자산 이하 구간에 위치한다. 헤드라인 EPS(-42원)는 최근 12개월 누적 지배주주 순손실을 반영하며 적자를 유지하고 있고, 배당은 연속 무배(DPS 0원)여서 배당수익률은 업종 평균을 하회하는 수준에 머물러 있다. 다만 2026년 1분기 지배주주 순이익 89억원으로 분기 흑자에 복귀했으며, 이익 회복 추세가 이어진다면 헤드라인 EPS의 흑자 전환도 가능해진다. 순자산 대비 할인 국면은 이익 반전의 지속성이 확인되기 전까지 재평가 촉매의 선행 조건으로 남아 있으며, 르노코리아 배터리팩 기여·카메라 모듈 수익성 방어가 동반 실현될 경우 밸류에이션 격차 축소 논의의 근거가 형성될 수 있다.",
-  "en": "The stock trades at a discount to book value per share (BPS KRW 5,777), placing it in sub-book-value territory. The headline EPS of -KRW 42 reflects a small trailing controlling shareholders' net loss, while zero dividends (DPS KRW 0) push the dividend yield well below sector norms. However, the 2026 Q1 return to controlling shareholders' quarterly profitability (KRW 8.9bn net income) is a constructive data point, and sustained earnings recovery could flip the headline EPS to positive. The book-value discount is likely to persist as a pre-condition until earnings recovery durability is confirmed; concurrent realization of Renault Korea battery pack revenue and camera module margin defense would provide the basis for a valuation gap narrowing discussion."
+  "ko": "파워로직스의 주가는 최근 확정된 자기자본 대비 순자산가치에 못 미치는 수준에서 거래되고 있어, 순자산 대비 할인된 구간에 놓여 있다. 2025년 연간 기준으로는 영업손실을 냈지만 2026년 들어 1분기와 2분기 모두 영업이익이 흑자로 전환되면서 이익의 방향성은 개선되는 모습을 보였다. 다만 2025년 3분기 한 차례 흑자를 냈다가 4분기 다시 적자로 돌아선 사례처럼 분기별 손익 변동성이 큰 편이어서, 최근 몇 개 분기의 개선 흐름이 앞으로도 이어질지는 다음 분기 실적을 통해 추가로 확인할 필요가 있다. 최근 확정 회계연도 기준으로는 배당이 지급되지 않아, 배당을 통한 주주환원 측면의 매력은 제한적이다. 카메라모듈 업종 내 비교기업들과 마찬가지로 낮은 한 자릿수 영업이익률 구조가 이어지고 있어, 밸류에이션은 향후 이익의 방향성과 폭에 따라 민감하게 반응할 수 있는 구간에 있다.",
+  "en": "Power Logics shares trade below the company's most recently confirmed net asset value per share, placing the stock in a discount-to-book position. While the company posted an operating loss for full-year 2025, both Q1 and Q2 of 2026 turned operating-profitable, showing an improving earnings direction. However, given the volatility seen in prior quarters—such as a single profitable quarter in Q3 2025 followed by another loss in Q4—whether the recent improvement proves durable will require confirmation in upcoming quarterly results. No dividend was paid based on the most recently confirmed fiscal year, limiting the appeal from a shareholder-return perspective. As with comparable companies in the camera module industry, the business continues to operate on a low single-digit operating margin structure, leaving valuation sensitive to the direction and magnitude of future earnings."
  },
  "bull": [
   {
    "title": {
-    "ko": "르노코리아 배터리팩 공급 원년 — 연간 700~800억원 신규 매출원 가시화",
-    "en": "Renault Korea Battery Pack Inaugural Year — KRW 70–80bn New Annual Revenue Materializing"
+    "ko": "카메라모듈 이익률 개선",
+    "en": "Camera Module Margin Improvement"
    },
    "body": {
-    "ko": "2023년 수주한 르노코리아 차세대 중형 SUV 하이브리드 배터리팩 계약이 2026년부터 본격 양산에 진입한다. 수주 당시 공시 기준으로 연간 7만~8만 대, 약 700~800억원의 매출이 기대된다. 기존 카메라 모듈·소형 배터리 회로 위주의 수익 구조에서 배터리팩 비중을 실질적으로 높이는 첫 대형 수주이며, 열 폭주 전이 방지 BMS 기술 탑재로 안전성 측면의 차별화도 갖추고 있다. 이 계약이 안정적으로 운영될 경우 중장기 매출 믹스 개선과 수익 다각화에 의미 있는 기여가 예상된다.",
-    "en": "The Renault Korea next-generation midsize SUV hybrid battery pack contract signed in 2023 enters full-scale mass production in 2026, with approximately 70,000–80,000 units/year implying ~KRW 70–80 billion in annual revenue at contract terms. This is the first major battery pack order that can materially shift Power Logics's revenue mix away from camera modules and small protection circuits. The product incorporates thermal runaway propagation-prevention BMS algorithms, providing a safety-differentiated offering. Stable execution of this contract is expected to meaningfully contribute to medium-term revenue mix improvement and earnings diversification."
+    "ko": "카메라모듈 부문의 수익성 개선에 힘입어 2026년 1분기와 2분기 연속 영업흑자를 기록했다. 상반기 매출은 전년 동기보다 28% 늘어난 4,418억원, 영업이익은 124억원으로 집계돼 삼성 카메라모듈 협력사 중 흑자전환에 성공한 사례로 분류됐다. 카메라모듈이 전체 매출의 79%를 차지하는 만큼, 이 부문의 개선이 전사 실적에 미치는 영향력이 크다.",
+    "en": "Driven by improved profitability in the camera module business, the company posted operating profit in both Q1 and Q2 of 2026. First-half revenue rose 28% year-on-year to KRW 441.8 billion with operating profit of KRW 12.4 billion, placing it among Samsung camera module suppliers that returned to profit. Since camera modules account for 79% of total revenue, improvement in this segment has an outsized impact on overall results."
    }
   },
   {
    "title": {
-    "ko": "2026Q1 분기 최대 매출 달성 — 실적 반등 모멘텀 가시화",
-    "en": "Record Recent Quarterly Revenue in 2026 Q1 — Turnaround Momentum Visible"
+    "ko": "이차전지 사업 다각화",
+    "en": "Secondary Battery Business Diversification"
    },
    "body": {
-    "ko": "2026년 1분기 매출은 2,413억원으로 최근 5개 분기 중 최대치를 기록하며 전년 동기 대비 약 35% 급증했다. 영업이익 78억원은 2025년 3분기(61억원)를 크게 웃도는 수준이며, 지배주주 순이익도 89억원으로 회복됐다. 2025년 4분기 대규모 자산손상 이후 실질적인 이익 정상화가 진행 중임을 보여주는 데이터포인트로, 이 추세가 2분기 이후에도 이어진다면 연간 흑자 전환이 가능한 궤도에 진입한다.",
-    "en": "2026 Q1 revenue of KRW 241.3bn was the highest in five quarters, up approximately 35% YoY. Operating profit of KRW 7.8bn substantially exceeded the KRW 6.1bn seen in 2025 Q3, and controlling shareholders' net income recovered to KRW 8.9bn. This dataset signals genuine earnings normalization following the large asset impairment-driven loss in 2025 Q4; if the trend holds through Q2 and beyond, a full-year return to profitability becomes achievable."
+    "ko": "이차전지 보호회로에서 축적한 기술과 노하우를 바탕으로 EV·ESS용 중대형 배터리팩 및 BMS 사업으로 포트폴리오를 넓혀왔다. 국내 최대 2차전지 셀 기업과의 전략적 제휴를 통해 사업 위험을 낮추며 시장에 진입한 점도 특징이다. 2026년 1분기 기준 배터리팩(PACK) 매출은 전체의 12.9%를 차지해, 카메라모듈 외 수익원으로 자리 잡고 있다.",
+    "en": "Building on technology and know-how accumulated in battery protection circuits, the company has broadened its portfolio into large-format battery packs and BMS for EV and ESS applications. It entered this market through a strategic partnership with a major domestic battery cell maker to reduce business risk. As of Q1 2026, battery pack (PACK) revenue accounted for 12.9% of the total, establishing itself as a revenue source beyond camera modules."
    }
   },
   {
    "title": {
-    "ko": "ESS·모빌리티 배터리팩 다변화 — 구조적 성장 시장과 포트폴리오 정렬",
-    "en": "ESS and Mobility Battery Pack Diversification — Portfolio Aligned with Structural Growth Markets"
+    "ko": "전장용 카메라모듈 사업 확장",
+    "en": "Expansion into Automotive Camera Modules"
    },
    "body": {
-    "ko": "전기버스·전기이륜차·선박용 ESS·AGV 등 다양한 응용처로 중대형 배터리팩 사업을 확장 중이며, 베트남 자동화 4개 생산 라인이 비용 경쟁력의 기반이 된다. AI 데이터센터 확산과 재생에너지 성장에 힘입어 ESS 배터리 수요는 2024년 230GWh에서 2026년 359GWh로 확대될 것으로 전망되며, 파워로직스는 이 성장 흐름에 편승할 포트폴리오를 갖추고 있다. 방산·산업용 BMS에서 축적한 기술력이 고부가 응용처 진입 시 진입 장벽으로 기능할 수 있다.",
-    "en": "The company is broadening its mid-to-large battery pack business across electric buses, electric two-wheelers, marine ESS, and AGVs, backed by four automated production lines in Vietnam. ESS battery demand is projected to expand from 230 GWh in 2024 to 359 GWh by 2026 on AI data center growth and renewable energy expansion, and Power Logics's diversified application portfolio positions it to benefit from this structural tailwind. BMS expertise accumulated through defense and industrial applications provides a technical moat supporting entry into higher-value application segments."
+    "ko": "CM 사업부문은 IT 모바일용 카메라모듈에 이어 전장용 카메라모듈 개발을 지속하며 글로벌 스마트폰 업체 및 전장 고객사와 협력 연구개발을 이어가고 있다. 이를 통해 스마트폰 카메라모듈 시장과 전장용 카메라모듈 기술 양쪽에서 경쟁력을 갖추려는 전략을 취하고 있다. 자율주행·전장화 확산에 따른 전방산업 성장은 중장기 사업 기회로 거론된다.",
+    "en": "The CM segment continues to develop automotive camera modules alongside its IT mobile camera modules, maintaining joint development with global smartphone makers and automotive customers. Through this, the company aims to build competitiveness in both the smartphone camera module market and automotive camera module technology. Growth in the underlying autonomous driving and vehicle electrification markets is cited as a mid- to long-term business opportunity."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "카메라 모듈 경쟁 심화 — ASP·점유율 동반 압박 위험",
-    "en": "Intensifying Camera Module Competition — Dual Pressure on ASP and Market Share"
+    "ko": "이차전지 업황 침체 영향",
+    "en": "Secondary Battery Market Downturn Impact"
    },
    "body": {
-    "ko": "삼성전자 스마트폰 카메라 모듈 시장은 삼성전기·파워로직스·파트론·캠시스·중국계 서니옵티컬·엠씨넥스 등 10여 개사가 경합하는 구조다. 중국계 공급사의 저가 공세와 국내 경쟁사의 수직 계열화 추진으로 가격 압력이 지속되고 있으며, 파워로직스는 2022년 시장 내 6위까지 밀린 전례가 있다. 고부가 모듈(OIS·고배율 줌) 비중 확대로 ASP를 방어하지 못한다면 카메라 모듈 사업의 수익성이 다시 훼손될 위험이 있다.",
-    "en": "Samsung smartphone camera module supply is contested by roughly ten vendors including Samsung Electro-Mechanics, Power Logics, Partron, Camsis, China's Sunny Optical, and MCNex. Low-price competition from Chinese suppliers and domestic peers' vertical integration create sustained pricing pressure; Power Logics notably slipped to sixth place in this market as recently as 2022. Failure to shift the mix toward higher-value modules (OIS, high-magnification zoom) risks renewed camera module margin compression."
+    "ko": "회사는 2025년 실적 악화의 주요 원인으로 이차전지 시장 침체에 따른 매출 감소와 자산손상 인식을 공시를 통해 설명했다. 이차전지 보호회로 및 배터리팩 부문은 2026년 1분기 기준으로도 매출 비중이 20% 수준에 머물러 있어, 업황 회복이 늦어질 경우 해당 부문의 기여도 제한될 수 있다. 카메라모듈 부문의 개선이 이차전지 부문의 부진을 상당 부분 상쇄하고 있는 구조다.",
+    "en": "The company disclosed that a decline in revenue tied to the secondary battery market slump, along with impairment recognition, was the main cause of the deterioration in 2025 results. The battery protection circuit and pack segment's revenue share remained around 20% as of Q1 2026, meaning its contribution could stay limited if the market recovery is delayed. The improvement in the camera module segment has been offsetting much of the weakness in the battery segment."
    }
   },
   {
    "title": {
-    "ko": "이차전지 캐즘 장기화 — 배터리팩·BMS 수익화 시점 지연 가능성",
-    "en": "Prolonged EV Demand Softness — Risk of Delayed Battery Pack and BMS Revenue Ramp"
+    "ko": "분기별 손익 변동성",
+    "en": "Quarterly Earnings Volatility"
    },
    "body": {
-    "ko": "글로벌 전기차 수요 성장 둔화는 소형 배터리 보호회로와 배터리팩 수요 모두에 부담을 주고 있으며, 미국 IRA 세액공제 약화와 완성차 업체들의 전동화 전략 수정이 이 리스크를 연장시킬 수 있다. 2025년 손익 악화의 직접 원인도 이차전지 시장 침체로 회사가 공시를 통해 명시했다. 전기버스·선박 ESS 등 신규 응용처의 매출 기여 시점이 예상보다 늦어질 경우, 카메라 모듈 의존도 탈피 속도가 더뎌질 수 있다.",
-    "en": "The global EV demand slowdown weighs on both small battery protection circuit and battery pack volumes, and U.S. IRA tax credit weakening alongside automakers' revised electrification timelines could prolong this headwind. The company itself cited secondary battery market weakness as the primary cause of 2025 earnings deterioration. If new application segments such as electric buses and marine ESS take longer than anticipated to generate meaningful revenue, the pace of reducing camera module customer concentration will slow."
+    "ko": "2025년 2분기 영업손실에서 3분기 흑자로 전환했다가 4분기 다시 적자로 돌아서는 등 분기 간 손익 변동성이 크게 나타났다. 2022년에는 연간 영업손실이 매출의 5.3%에 달하는 등 실적이 큰 폭으로 흔들린 시기도 있었다. 최근 2개 분기 연속 흑자가 앞으로도 안정적으로 유지될지는 추가 확인이 필요한 부분이다.",
+    "en": "Operating results swung from a loss in Q2 2025 to a profit in Q3, then back to a loss in Q4, showing considerable quarter-to-quarter volatility. In 2022, the company experienced a period of sharp swings with an annual operating loss equal to 5.3% of revenue. Whether the recent two consecutive profitable quarters can be sustained going forward remains to be confirmed."
    }
   },
   {
    "title": {
-    "ko": "삼성전자 고객 집중 리스크 — 거래조건 변화 시 외형·수익성 즉각 타격",
-    "en": "Samsung Electronics Customer Concentration — Immediate Vulnerability to Volume Shifts"
+    "ko": "고객 집중 및 물량 배분 리스크",
+    "en": "Customer Concentration and Allocation Risk"
    },
    "body": {
-    "ko": "카메라 모듈과 소형 배터리 보호회로 사업 모두에서 삼성전자·삼성SDI 등 삼성 계열 의존도가 높다. 삼성전자의 공급사 재편, 생산 물량 조정, 인소싱 확대 등이 발생할 경우 파워로직스 매출에 직접적이고 즉각적인 타격이 불가피하다. 2025년 매출이 전년 대비 6.4% 감소한 배경에도 고객사 물량 변화가 부분적으로 작용했으며, 르노코리아 등 비삼성 고객 확보 속도가 이 리스크를 희석하는 핵심 변수다.",
-    "en": "Both the camera module and small battery protection circuit businesses carry high dependence on Samsung affiliates (Samsung Electronics and Samsung SDI). Any changes in Samsung Electronics' supplier mix, volume reallocations, or in-sourcing moves would translate directly and immediately into Power Logics revenue shortfalls. The 6.4% YoY revenue decline in 2025 was partly attributable to customer volume changes, and the pace of winning non-Samsung customers such as Renault Korea is the critical variable for diluting this concentration risk."
+    "ko": "카메라모듈 매출의 상당 부분이 삼성전자 스마트폰 프로그램에 연동돼 있어 고객 집중도가 높다. 삼성전자 MX사업부는 통상 여러 협력사에 물량을 분산해 특정 업체의 독주를 제한하는 경향이 있어, 개별 업체의 실적은 물량 배정 변화에 취약할 수 있다. 실제로 2026년 상반기에도 협력사별로 실적 개선과 둔화가 엇갈리는 모습이 나타났다.",
+    "en": "A large portion of camera module revenue is tied to Samsung Electronics' smartphone programs, resulting in high customer concentration. Samsung's MX division typically spreads orders across multiple suppliers to prevent any single vendor from dominating, making individual companies' results vulnerable to shifts in order allocation. In H1 2026 this dynamic was evident, with some suppliers improving while others slowed."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "원자재·환율 리스크",
-    "en": "Raw Material and FX Risk"
+    "ko": "고객/업황 집중",
+    "en": "Customer and Industry Concentration"
    },
    "body": {
-    "ko": "배터리팩 생산에 사용되는 리튬 계열 소재와 카메라 모듈의 이미지 센서·광학 부품 가격 변동은 원가율에 직접 영향을 미친다. 베트남 생산 법인에서 발생하는 베트남 동화(VND) 비용과 주요 판매 통화 사이의 환율 불일치도 수익성 변동 요인이다. 미·중 무역 갈등 심화나 핵심 광물 수출 규제 강화 시 소재 조달 비용과 리드타임이 상승할 수 있다.",
-    "en": "Prices of lithium-based materials for battery packs and image sensors and optical components for camera modules directly affect cost margins. FX mismatch between Vietnamese dong-denominated costs at the Vietnam subsidiary and major invoicing currencies adds to earnings volatility. Escalating U.S.-China trade tensions or mineral export restrictions could increase input costs and extend supply lead times."
+    "ko": "카메라모듈 매출의 대부분이 삼성전자 스마트폰 프로그램에 연동되어 있어 특정 고객사의 판매 전략 및 물량 배정 변화에 실적이 민감하게 반응한다. 협력사 간 물량 배분 경쟁이 상시적으로 존재해 시장점유율 변화가 실적에 직접적인 영향을 줄 수 있다.",
+    "en": "Most camera module revenue is linked to Samsung Electronics' smartphone programs, making results sensitive to changes in that customer's sales strategy and order allocation. Ongoing competition for order share among suppliers means shifts in market share can directly affect results."
    }
   },
   {
    "cat": {
-    "ko": "기술 경쟁 및 시장 지위 리스크",
-    "en": "Technology Competition and Market Position Risk"
+    "ko": "이차전지 업황 회복 지연",
+    "en": "Delayed Secondary Battery Recovery"
    },
    "body": {
-    "ko": "스마트폰 카메라 모듈 시장에서 중국 공급사들의 기술 추격과 저가 공세가 지속되고 있으며, 고객사의 설계 변경이나 물량 전환 리스크가 상존한다. 배터리팩·BMS 시장에서도 CATL 등 중국 업체들이 저비용 패키지 솔루션을 공급하며 국내 업체 대비 비용 우위를 갖고 있다. 파워로직스가 OIS·고해상도 모듈, 안전성 BMS 등 기술적 차별화를 유지하지 못할 경우 시장 지위가 빠르게 잠식될 수 있다.",
-    "en": "Chinese camera module suppliers continue to close the technology gap and compete aggressively on price, maintaining constant risk of customer volume reallocation. In the battery pack and BMS market, CATL and other Chinese players offer packaged solutions at significant cost advantages over Korean rivals. If Power Logics fails to maintain technology differentiation — in OIS modules, high-resolution camera assemblies, or safety-focused BMS — market position could erode rapidly."
+    "ko": "이차전지 보호회로 및 배터리팩 부문은 2025년 시장 침체로 매출 감소와 자산손상을 겪었다. 전방산업인 EV·ESS 수요 회복 시점이 불확실한 만큼, 해당 부문의 매출 비중 확대가 지연될 가능성이 있다.",
+    "en": "The battery protection circuit and pack segment suffered revenue declines and asset impairments amid a 2025 market downturn. Given uncertainty over the timing of EV and ESS demand recovery, expansion of this segment's revenue share could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "자산손상·일회성 비용 반복 리스크",
-    "en": "Asset Impairment and Recurring One-Off Cost Risk"
+    "ko": "환율 및 수출 비중",
+    "en": "FX and Export Exposure"
    },
    "body": {
-    "ko": "2025년 연간 실적에서 이차전지 관련 자산손상이 4분기 대규모 지배주주 순손실(약 -140억원)의 주원인이었다. 중대형 배터리팩 사업 확대 과정에서 설비투자나 재고 자산의 손상 리스크가 재발할 가능성을 배제하기 어렵다. 일회성 비용의 반복 여부는 연간 손익 방향성의 핵심 변수이므로, 향후 반기·사업보고서의 주석 사항 및 DART 공시를 통한 지속적 점검이 필요하다.",
-    "en": "The 2025 annual results were heavily distorted by a Q4 asset impairment on secondary battery-related assets, which drove an approximately KRW 13.9bn controlling shareholders' net loss in Q4 alone. As the battery pack business scales up through new capex and inventory, the risk of further impairment charges cannot be dismissed. Whether such one-off costs recur is a critical variable for annual earnings direction, making ongoing scrutiny of DART disclosures and footnotes in semi-annual and annual report filings essential."
+    "ko": "수출 비중이 매출의 86%에 달해 원/달러 등 환율 변동과 해외 수요 변화에 대한 노출도가 크다. 베트남 등 해외 생산기지를 운영하고 있어 현지 인건비, 관세, 무역환경 변화도 원가와 실적에 영향을 줄 수 있다.",
+    "en": "With exports representing 86% of revenue, the company has significant exposure to currency fluctuations such as the KRW/USD rate and changes in overseas demand. Operating overseas production sites, including in Vietnam, also means local labor costs, tariffs, and shifts in the trade environment can affect costs and results."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월 (2분기 잠정 실적 공시 예상)",
-    "en": "July–August 2026 (Expected 2026 Q2 Preliminary Earnings)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 1분기 급등 이후 2분기 영업이익 흑자 지속 여부를 확인하는 핵심 데이터포인트. 삼성 갤럭시 신모델 양산 일정 연동 카메라 모듈 물량 추이와 르노코리아 배터리팩 초기 납품 기여 규모를 점검한다.",
-    "en": "The most important near-term data point for confirming whether operating profit momentum from 2026 Q1 is sustained. Key metrics to watch: camera module volumes tied to Samsung Galaxy new model ramps and the initial Renault Korea battery pack revenue contribution."
+    "ko": "2026년 3분기 실적(분기보고서) 공시 예정 – 카메라모듈 흑자 기조가 3개 분기 연속으로 이어지는지, 이차전지 부문 매출 비중이 회복되는지 확인이 필요하다.",
+    "en": "Q3 2026 results (quarterly report) are due to be disclosed – worth checking whether the camera module profit streak extends to a third consecutive quarter and whether the battery segment's revenue share recovers."
    }
   },
   {
    "when": {
-    "ko": "2026년 8월 중순 (반기보고서 제출 기한)",
-    "en": "Mid-August 2026 (Semi-annual Report Filing Deadline)"
+    "ko": "2026년 4분기(10~12월)",
+    "en": "Q4 2026 (October-December)"
    },
    "what": {
-    "ko": "2026년 상반기(1~6월) 연결 확정치가 담긴 반기보고서 제출. 누적 영업이익·순이익과 르노코리아 배터리팩 매출 반영 현황을 확인해 연간 흑자 전환 여부를 가늠할 수 있다.",
-    "en": "The semi-annual report will provide H1 2026 consolidated financials, allowing assessment of cumulative operating profit and Renault Korea battery pack revenue recognition, and whether a full-year return to profitability is on track."
+    "ko": "갤럭시 신모델 및 중저가 라인업 물량 배정 변화 – 카메라모듈 협력사 간 물량 배분 뉴스와 매출 믹스 변화를 확인할 필요가 있다.",
+    "en": "Changes in order allocation for new Galaxy models and mid-range lineups – worth monitoring news on order allocation among camera module suppliers and shifts in revenue mix."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (베트남 배터리팩 추가 수주 공시 가능성)",
-    "en": "H2 2026 (Potential Additional Battery Pack Order Disclosures)"
+    "ko": "2027년 2월 초(잠정실적 공시 예상 시점)",
+    "en": "Early February 2027 (expected preliminary results disclosure)"
    },
    "what": {
-    "ko": "베트남 법인의 전기스쿠터·전기트럭·AGV 등 응용처 중대형 배터리팩 OEM 신규 고객 수주 공시 여부. 배터리팩 사업의 고객 다변화 속도와 향후 매출 기여 가시성을 판단하는 지표다.",
-    "en": "DART disclosures of new OEM orders from the Vietnam facility covering electric scooters, trucks, and AGV battery packs; these will indicate the pace of customer diversification and future revenue visibility in the battery pack segment."
+    "ko": "2026년 연간 잠정실적 공시 – 상반기 흑자 기조가 연간 기준 흑자전환으로 이어지는지 확인이 필요하다.",
+    "en": "Disclosure of preliminary full-year 2026 results – worth checking whether the first-half profit turnaround carries through to a full-year swing to profit."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 중순 (3분기 보고서 제출 기한)",
-    "en": "Mid-November 2026 (Q3 Report Filing Deadline)"
+    "ko": "다음 분기 세그먼트 공시 시점",
+    "en": "Next quarterly segment disclosure"
    },
    "what": {
-    "ko": "2026년 3분기(7~9월) 누적 실적 공시로, 르노코리아 배터리팩 6개월분 반영 후 연간 손익 방향성이 명확해지는 시점. 전년 동기 4분기 자산손상의 기저효과 소멸 여부도 함께 확인한다.",
-    "en": "Q3 2026 report captures approximately six months of Renault Korea battery pack revenue and provides cumulative data to judge full-year profitability; it also clarifies whether Q4 2025 asset impairment base effects have fully cleared."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기 삼성 갤럭시 신제품 양산 시점",
-    "en": "H2 2026 Samsung Galaxy New Product Mass Production Ramp"
-   },
-   "what": {
-    "ko": "삼성전자 갤럭시 폴더블·차기 S시리즈 신모델 양산 일정에 따른 카메라 모듈 공급 물량과 모델 채택 여부. 플래그십 모델 공급 지위 유지 여부가 카메라 모듈 부문 ASP와 하반기 분기 매출의 가장 큰 변동 요인이다.",
-    "en": "Volume allocations for Power Logics in Samsung Galaxy foldable and next S-series new model production ramps; retention of flagship model supply status is the primary driver of camera module ASP and H2 quarterly revenue variability."
+    "ko": "이차전지(ES) 부문 매출 비중 및 배터리팩(PACK) 매출 변화를 다음 분기보고서 세그먼트 공시로 확인할 필요가 있다.",
+    "en": "Worth checking changes in the secondary battery (ES) segment's revenue share and battery pack (PACK) sales in the next quarterly segment disclosure."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "파워로직스는 삼성전자 스마트폰 카메라 모듈을 핵심 기반으로, 소형 배터리 보호회로·BMS·중대형 배터리팩으로 사업을 다변화하는 전환 국면에 있는 코스닥 전자·부품 기업이다. 2022년 대규모 적자→2023년 흑자 전환→2024~2025년 재악화로 이어진 높은 손익 변동성이 이 기업 분석의 핵심 과제이며, 2025년에는 이차전지 시장 침체와 4분기 자산손상이 겹쳐 영업손실 전환과 지배주주 순손실 123억원을 기록했다. 그러나 2026년 1분기에 매출 2,413억원·영업이익 78억원으로 명확한 반등 신호를 냈고, 르노코리아 하이브리드 배터리팩 공급 원년이라는 가시적 성장 촉매가 처음으로 연간 실적에 반영되기 시작했다. ESS 수요의 구조적 성장(2024년 230GWh→2026년 359GWh 전망)은 배터리팩·BMS 다변화 전략을 지지하는 우호적 환경이며, 미국·유럽의 중국산 배터리 규제 강화도 간접 수혜 요인이다. 반면 카메라 모듈 경쟁 심화, EV 캐즘 지속 여부, 일회성 자산손상 재발 가능성이 핵심 하방 위험으로 남아 있다. 주가가 순자산 대비 할인 구간에 있는 상황에서, 2026년 2·3분기 실적과 반기보고서를 통한 이익 반전의 지속성 확인이 사업 방향 판단의 가장 중요한 체크포인트다.",
-   "en": "Power Logics is a KOSDAQ electronics and components company at a strategic inflection, seeking to diversify from its Samsung Electronics smartphone camera module core into small battery protection circuits, BMS, and mid-to-large battery packs. The company's high earnings volatility — large losses in 2022, recovery in 2023, renewed deterioration in 2024–2025 — is the central analytical challenge; 2025 saw a return to operating loss and a controlling shareholders' net loss of KRW 12.3bn, driven by secondary battery market weakness and a large Q4 asset impairment. Yet 2026 Q1 delivered a clear rebound signal with KRW 241.3bn revenue and KRW 7.8bn operating profit, and 2026 also marks the inaugural year of Renault Korea hybrid battery pack deliveries as the first material new revenue catalyst to hit annual financials. The structural growth of ESS demand (forecast 230 GWh in 2024 to 359 GWh by 2026) provides a constructive backdrop for the battery pack and BMS diversification strategy, and tightening Western tariff barriers against Chinese batteries offer indirect tailwinds. Against this, intensifying camera module competition, sustained EV demand uncertainty, and the risk of recurring asset impairment charges remain material downside factors. With the stock trading at a discount to book value, Q2 and Q3 2026 results and the semi-annual report are the most critical near-term checkpoints for assessing whether the earnings recovery is structural or transitory."
+   "ko": "파워로직스는 카메라모듈과 이차전지 보호회로·배터리팩을 두 축으로 하는 전자부품 기업으로, 2026년 1분기와 2분기 연속 영업흑자를 내며 상반기 기준 흑자전환에 성공했다. 이 같은 개선은 삼성전자 카메라모듈 공급망 내에서의 물량 배정과 이익률 회복에 크게 힘입은 것으로, 카메라모듈이 전체 매출의 약 80%를 차지하는 만큼 이 부문의 향방이 전사 실적을 좌우하는 구조다. 반면 이차전지 부문은 2025년 시장 침체의 영향으로 매출 감소와 자산손상을 겪었고, 2026년 1분기 기준으로도 매출 비중이 20% 수준에 머물러 회복이 완전히 확인되지는 않았다. 최근 4년간 연간 실적이 흑자와 적자를 오간 데다 분기별로도 변동성이 컸던 점을 고려하면, 최근 2개 분기의 개선 흐름이 앞으로도 안정적으로 이어질지는 다음 실적 발표를 통해 추가로 확인해야 할 부분이다. 주가는 최근 확정된 순자산가치에 못 미치는 수준에서 거래되고 있으며, 최근 회계연도 기준으로는 배당이 지급되지 않았다. 투자자들은 카메라모듈 부문의 이익률 개선 지속 여부와 이차전지 부문의 회복 시점을 함께 주시할 필요가 있다.",
+   "en": "Power Logics is an electronic components company built on two pillars—camera modules and secondary battery protection circuits/packs—that achieved a first-half turnaround to operating profit with two consecutive profitable quarters in Q1 and Q2 2026. This improvement was driven largely by order allocation and margin recovery within the Samsung Electronics camera module supply chain, and since camera modules make up roughly 80% of total revenue, the direction of this segment largely determines overall results. In contrast, the battery segment suffered revenue declines and asset impairments amid the 2025 market downturn, and its revenue share remained around 20% as of Q1 2026, meaning a full recovery has not yet been confirmed. Given that annual results alternated between profit and loss over the past four years and quarterly results showed considerable volatility, whether the improvement seen in the last two quarters proves durable will require further confirmation in upcoming earnings releases. The shares trade below the company's most recently confirmed net asset value, and no dividend was paid based on the most recent fiscal year. Investors will want to monitor both whether the camera module segment's margin improvement continues and when the battery segment's recovery materializes."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A047310",
-  "https://markets.hankyung.com/stock/047310/",
+  "https://kr.investing.com/news/global-filings/article-93CH-1944903",
+  "https://m.irgo.co.kr/IR-COMP/047310/-IR-PAGE",
+  "https://alphasquare.co.kr/home/stock-summary?code=047310",
+  "https://www.investing.com/equities/power-logics-earnings",
   "https://www.investing.com/equities/power-logics",
-  "https://www.valueline.co.kr/finance/bicchart/047310",
-  "https://m.thinkpool.com/item/047310",
-  "https://goinsider.kr/stock/00269612",
-  "https://www.google.com/finance/quote/047310:KOSDAQ?hl=en",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A047310&MenuYn=Y&NewMenuID=105&stkGb=701",
-  "https://inside.lgensol.com/2022/04/%EB%B0%B0%ED%84%B0%EB%A6%AC-%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84-bms-battery-management-system/",
-  "https://kr.mathworks.com/discovery/battery-management-system.html",
-  "https://www.autoelectronics.co.kr/article/articleView.asp?idx=4573",
-  "https://elementkorea.kr/%EC%A0%84%EA%B8%B0%EC%B0%A8-bms-%EB%B0%B0%ED%84%B0%EB%A6%AC-%EA%B4%80%EB%A6%AC-%ED%95%B5%EC%8B%AC-%EA%B8%B0%EC%88%A0/",
-  "https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO201800012540",
-  "https://www.irisoele.com/en/technology/knowledge/bms/",
-  "https://www.analog.com/en/resources/technical-articles/ev-batteries.html",
-  "https://www.epnc.co.kr/news/articleView.html?idxno=217029",
-  "https://www.dspace.com/en/inc/home/applicationfields/ind-appl/automotive-industry/emobility/battery-management-systems.cfm",
-  "https://www.kia.com/kr/customer-service/notice/notice-20251015"
+  "https://kr.investing.com/equities/power-logics-news",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=KhzEZXTGuozU3rWQ",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250515000410&docno=&viewerhost=",
+  "https://www.dailyinvest.kr/news/articleView.html?idxno=50531",
+  "https://www.thelec.kr/news/articleView.html?idxno=19789",
+  "https://zdnet.co.kr/view/?no=20230213110827",
+  "https://www.news2day.co.kr/article/20211227500012",
+  "https://www.ksai.kr/bbs/board.php?bo_table=KSAI_PRIMY_STMK_NEWS&wr_id=1&page=6",
+  "https://www.thelec.kr/news/articleView.html?idxno=20045",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=417306",
+  "https://www.ddaily.co.kr/news/article/?no=257365",
+  "https://app.rndcircle.io/company/d828bc1e-a26e-5103-bcb4-b8f99c9cda1a",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1567043255598.pdf"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "047310",
  "name": "파워로직스",
  "name_en": "POWER LOGICS",
@@ -233,9 +223,9 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 01:03",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 07:33",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 2920,
-   "mcap": 0.1069,
+   "price": 3035,
+   "mcap": 0.1111,
    "shares": 36610755,
    "total_shares": 36610755,
    "wavg_shares": 36570471,
-   "per": 12.532,
+   "per": 13.026,
    "eps": 233,
-   "pbr": 0.4913,
+   "pbr": 0.5107,
    "bps": 5943,
    "roe_ttm": 4.1,
    "ttm_window": "2025Q3~2026Q2",

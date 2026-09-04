@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "DR 1위 기반 흑자전환 확인, 신성장 가시성 점검",
-  "en": "Profitability Restored: DR Market Leader Tests New Growth Catalysts"
+  "ko": "국내 DR 1위, 뚜렷한 계절성 실적",
+  "en": "Korea's No.1 in DR, Marked Seasonality"
  },
  "lead": {
-  "ko": "국내 수요자원(DR) 시장 1위 사업자 그리드위즈가 2025년 첫 연간 흑자 전환을 달성했으나, 2026년 1분기 비수기 적자가 재현되며 이익 지속성과 신사업(데이터센터·해외·V2G) 가시화 시점이 핵심 관전 포인트다.",
-  "en": "GridWiz, South Korea's #1 demand-response aggregator, returned to full-year profitability in 2025, but a renewed Q1 2026 operating loss underscores the need to demonstrate earnings durability while new growth engines—data-center DR, overseas expansion, and V2G—move from roadmap to revenue."
+  "ko": "그리드위즈는 국내 전력수요관리(DR) 시장 1위 사업자로 2025년 연간 흑자전환에 성공했지만, 여름철 성수기에 이익이 집중되는 계절성 구조로 2026년 상반기에는 다시 영업손실을 기록했다.",
+  "en": "Gridwiz is Korea's No.1 demand response (DR) operator that swung to an annual operating profit in 2025, but its earnings remain heavily seasonal, with the first half of 2026 returning to operating losses."
  },
  "keypoints": [
   {
-   "ko": "정산금 기준 DR 시장 47% 점유율·용량 1.8GW 보유; 2025년 신규 휴일DR 시장서 전체 754MW 중 524MW를 확보해 69% 점유율 선점",
-   "en": "47% of Korea's DR settlement market and 1.8 GW of demand-resource capacity; captured 69% of the newly launched Holiday-DR market (524 MW out of 754 MW registered) in 2025"
+   "ko": "2025년 연결 영업이익 8.16억원으로 전년(-43.4억원) 대비 흑자전환했으나 2025Q4~2026Q2 3개 분기 연속 영업손실을 이어갔다.",
+   "en": "2025 consolidated operating profit turned positive at KRW 0.816bn versus a loss of KRW 4.34bn in 2024, but the company posted operating losses again for three straight quarters from 2025Q4 through 2026Q2."
   },
   {
-   "ko": "2025년 영업이익 8.2억원 흑자 전환(2024년 43.4억원 적자); 머니투데이 2026.03 보도 기준 7kW 완속충전기 판매량 약 716% 급증이 E-Mobility 매출 100% 이상 성장을 견인",
-   "en": "Operating profit turned positive in 2025 after a KRW 4.3 bn loss the prior year; per March 2026 media reports, 7 kW slow-charger unit sales surged ~716%, driving E-Mobility segment revenue to more than double year-on-year"
+   "ko": "2025년 3분기(여름 DR 성수기)에 매출 426.9억원, 영업이익 33.4억원, 지배주주순이익 78.3억원을 기록해 연중 최대 실적을 냈다.",
+   "en": "In 2025Q3, the peak summer DR season, the company posted its strongest quarter of the year with revenue of KRW 42.69bn, operating profit of KRW 3.34bn, and net profit attributable to owners of KRW 7.83bn."
   },
   {
-   "ko": "2026년 6월 기관 IR에서 AI 데이터센터 에너지 관리를 미래 성장축으로 공식화, 호주 법인 설립 완료 후 ESS 기반 첫 프로젝트 착수 준비 중",
-   "en": "June 2026 institutional IR designated AI data-center energy management as the primary growth engine; Australian subsidiary established and first ESS/EV-charging project in preparation"
+   "ko": "2026년 8월 상장 후 처음으로 총 250억원 규모의 무이자·리픽싱 없는 사모 전환사채(CB)를 발행해 국내 배전망 ESS와 호주 BESS 사업 등에 투입한다.",
+   "en": "In August 2026 the company issued its first convertible bonds since listing—a KRW 25bn private placement with zero coupon and no repricing—to fund domestic grid-connected ESS and Australian BESS projects."
   },
   {
-   "ko": "2026Q1 매출 206억원·영업손실 22.0억원으로 구조적 비수기 패턴 지속, 신사업 투자 비용과 DR 정산 계절성이 병존",
-   "en": "Q1 2026 revenue of KRW 20.6 bn with an operating loss of KRW 2.2 bn confirms structural off-peak seasonality; new-business investment costs compound the seasonal pressure"
+   "ko": "AI 데이터센터 전력·냉각 통합 솔루션 공동개발을 위해 소형모듈원자로(SMR) 기업과 업무협약을 체결하며 신사업 영역을 넓히고 있다.",
+   "en": "The company signed an MOU with a small modular reactor (SMR) developer to jointly develop integrated power-and-cooling solutions for AI data centers, expanding into new business areas."
   },
   {
-   "ko": "분산에너지특별법(2024.06 시행)·제11차 전력수급기본계획·V2G 제도화 진전 속도가 중장기 성장의 핵심 외생 변수",
-   "en": "Korea's Distributed Energy Special Act, the pending 11th National Electricity Plan, and the pace of V2G policy formalization remain key external growth catalysts"
+   "ko": "전환사채가 전량 전환되면 기존 발행주식의 22.3%에 해당하는 물량이 추가되어 지분 희석 부담이 존재한다.",
+   "en": "If the convertible bonds are fully converted, new shares equal to 22.3% of existing shares outstanding would be issued, creating a potential dilution overhang."
   }
  ],
  "business": {
-  "ko": "그리드위즈는 2013년 설립, 2024년 코스닥에 상장한 에너지 데이터 테크 기업으로, 전력 수요반응(DR)·에너지저장장치(ESS)·전기차 충전(E-Mobility)·태양광(PV) 4개 부문을 운영한다. DR 부문은 자회사 아이디알서비스와 합산해 국내 수요자원 용량 약 1.8GW를 확보하고 있으며, 정산금 기준 시장점유율 47%로 국내 1위 수요관리사업자 지위를 유지하고 있다. 주요 고객은 제조업체·반도체·데이터센터 등 대형 전력 소비 산업체로, 전력거래소와 고객사 사이를 중개해 감축 전력을 입찰·판매하고 수수료를 수취하는 플랫폼 비즈니스 모델을 채택하고 있다. 2025년부터 시행된 휴일 DR 시장에서는 전체 등록 용량 754MW 중 524MW를 확보해 69%의 압도적 점유율을 기록했다. E-Mobility 부문은 자체 브랜드 완속충전기(Dotori·7kW)와 충전 관제 플랫폼(스카이블루)을 제공하며, 충전기 제조·판매 및 전기차 수요관리 연계 서비스가 외형 성장을 담당하고 있다. 국내 유일하게 DR·ESS·EM·PV 4대 분산에너지 자원을 통합 운영하는 VPP(가상발전소) 풀 라인업을 보유하고 있으며, V2G 사업은 단계적 시장 형성 로드맵 하에 추진 중이다. 2022년에는 한국 기업 최초로 Global Cleantech 100에 선정되는 등 기술력을 국제적으로 인정받았고, 현재 임직원 수는 약 105명, 보유 특허는 53개다. 실시간 EMS 플랫폼과 12년 이상의 운영 노하우가 핵심 진입 장벽이다.",
-  "en": "GridWiz, founded in 2013 and listed on KOSDAQ in 2024, is an energy-data-technology company operating across four segments: Demand Response (DR), Energy Storage Systems (ESS), Electric-Mobility (EV charging), and Photovoltaics (PV). Through its subsidiary IDR Services, the company controls approximately 1.8 GW of demand-resource capacity, commanding a 47% share of Korea's DR settlement market and ranking first nationally. Key customers are large industrial power consumers—including manufacturers, semiconductor fabs, and data centers—who receive compensation for reducing consumption on request, with GridWiz acting as aggregator and fee-earner between customers and the Korea Power Exchange. In the Holiday-DR market launched in 2025, the company secured 524 MW out of 754 MW registered, capturing a 69% market share immediately. The E-Mobility segment manufactures the Dotori-brand 7 kW slow charger and operates the SkyBlue charging management platform, integrating EV demand management with the core DR business model. GridWiz is the only domestic operator with a full VPP lineup spanning DR, ESS, EM, and PV, with V2G integration on its strategic roadmap. The company was the first Korean firm selected for the Global Cleantech 100 list in 2022, and currently employs approximately 105 people with a portfolio of 53 patents. A proprietary real-time EMS platform and over 12 years of operational expertise form the primary entry barriers."
+  "ko": "그리드위즈는 2013년 설립된 에너지 데이터 기술 기업으로 전력수요관리(DR), 에너지저장장치(ESS), 전기차 충전(E-Mobility), 태양광(PV) 등 4개 사업을 축으로 한다. IPO 당시 공개된 투자설명서 기준 전력수요관리 부문이 매출의 84%를 차지하는 핵심 캐시카우였다. 회사는 국내 전력 수요관리 시장점유율 47%를 가진 아이디알서비스를 인수하며 DR·EM·ESS·PV 4대 분산에너지 자원을 모두 확보한 국내 유일의 VPP(가상발전소) 사업자로 자리매김했다. 고객사로는 반도체, 자동차, 조선, 철강, 화학 등 다양한 업종의 기업 700여 곳을 두고 있으며 고객 유지율은 90%를 넘는다. 그리드위즈가 운영하는 가상발전소 규모는 약 4GW로 원자력발전소 4기와 맞먹는 수준이며, 전력시장에 '그리드위즈 발전기'로 등록돼 있다. 전기차 충전 분야에서는 V2G(Vehicle-to-Grid) 기술과 스마트 충전기 'Skyblue' 시리즈를 통해 전동화 확산에 대응하고 있으며, 2026년 8월 EV 트렌드 코리아 행사에도 참가했다. 최근에는 데이터센터 고객을 대상으로 전력 수요 예측, 계통 연계, ESS 운영, 전력시장 입찰까지 아우르는 통합 에너지 관리 사업모델을 새로운 성장축으로 제시했다. 경쟁구도는 국내 DR 부문에서는 선도적 지위를 확보했으나, ESS·VPP·V2G 신사업 영역에서는 다수의 국내외 사업자와 경쟁하는 구조다.",
+  "en": "Founded in 2013, Gridwiz is an energy data technology company built around four business lines: demand response (DR), energy storage systems (ESS), e-mobility (EV charging), and photovoltaic (PV) solutions. According to the IPO prospectus, demand response accounted for 84% of revenue at the time, functioning as the company's core cash-generating business. By acquiring IDR Service, which held a 47% share of Korea's power demand management market, Gridwiz became the country's only virtual power plant (VPP) operator holding all four distributed energy resources—DR, EM, ESS, and PV. Its customer base spans roughly 700 companies across semiconductors, automotive, shipbuilding, steel, and chemicals, with a customer retention rate above 90%. The virtual power plant it operates has a scale of about 4GW, comparable to four nuclear reactors, and is registered in the power market as a Gridwiz generator. In e-mobility, the company addresses electrification demand through Vehicle-to-Grid (V2G) technology and its 'Skyblue' smart charger lineup, and it participated in the EV Trend Korea event in August 2026. More recently, the company has proposed an integrated energy management model for data center customers spanning power demand forecasting, grid interconnection, ESS operation, and power market bidding as a new growth axis. Competitively, Gridwiz holds a leading position in domestic DR, but faces a more fragmented competitive field in the newer ESS, VPP, and V2G segments both domestically and abroad."
  },
  "earnings": {
-  "ko": "2024년 연결 기준 매출 1,247억원에 영업손실 43.4억원, 순손실 27.9억원을 기록하며 수익성이 크게 훼손됐다. 2025년에는 매출 1,256억원(전년 대비 +0.7%)을 달성하고 영업이익 8.2억원·순이익 20.2억원으로 흑자 전환에 성공했다. 머니투데이(2026.03 보도) 기준 판관비 약 37억원 절감과 일회성 비용 제거가 수익성 회복의 핵심이었으며, 같은 기간 7kW 완속충전기 판매량이 전년 대비 약 716% 급증하며 E-Mobility 매출이 100% 이상 성장해 DR 매출 감소를 상쇄했다. 분기별 흐름을 보면, 2025년 3분기에 매출 427억원·영업이익 33.4억원으로 연간 성수기 피크를 형성했으나, 1분기(매출 221억원·영업손실 33.7억원)와 4분기(매출 347억원·영업손실 6.0억원)에는 적자를 냈다. 이는 DR 정산금이 하절기·전력 피크 시즌에 집중되는 구조적 계절성과 신사업 고정비 부담이 복합적으로 작용한 결과다. 2026년 1분기에는 매출 206억원·영업손실 22.0억원·순손실 13.0억원으로 전년 동기와 유사한 비수기 패턴이 재현됐다. 영업현금흐름(CFO)은 2025년 54억원으로 전년 25억원 대비 두 배 이상 개선돼 현금 창출 능력이 강화됐다. 부채비율은 2024년 29.4%에서 2025년 41.7%로 상승했으며, 이는 부채가 384억원에서 554억원으로 증가한 데 따른 것으로 신사업 투자 재원 조달과 연관되어 있다.",
-  "en": "In 2024, consolidated revenue was KRW 124.7 bn with an operating loss of KRW 4.3 bn and a net loss of KRW 2.8 bn, reflecting a significant deterioration in profitability. In 2025, revenue edged up 0.7% to KRW 125.6 bn, and the company returned to profitability with operating income of KRW 816 mn and net income of KRW 2.0 bn. Per March 2026 media reports (Money Today), approximately KRW 3.7 bn in SG&A reductions and elimination of one-off costs were the primary drivers of the earnings recovery, alongside a ~716% surge in 7 kW slow-charger unit sales that pushed E-Mobility segment revenue up more than 100%, offsetting softer DR revenue. Quarterly, seasonality was pronounced: Q3 2025 was the annual peak with revenue of KRW 42.7 bn and operating profit of KRW 3.3 bn, while Q1 (KRW 22.1 bn, –KRW 3.4 bn OP) and Q4 (KRW 34.7 bn, –KRW 0.6 bn OP) ran at losses, reflecting the concentration of DR settlement income during summer peak-demand periods. Q1 2026 repeated the seasonal pattern with revenue of KRW 20.6 bn and an operating loss of KRW 2.2 bn. Operating cash flow improved materially to KRW 5.4 bn in 2025 from KRW 2.5 bn in 2024, demonstrating strengthening cash generation. The debt-to-equity ratio rose to 41.7% from 29.4%, as total liabilities grew from KRW 38.4 bn to KRW 55.5 bn, reflecting funding for new-business investments."
+  "ko": "2025년 연결 매출은 1,256억원으로 전년(1,247억원) 대비 소폭 늘었고, 영업이익은 8.16억원으로 2024년 -43.4억원의 영업손실에서 흑자로 전환했다. 지배주주순이익도 21.4억원으로 2024년 -30.1억원 적자에서 벗어났다. 다만 2023년의 매출 1,319억원, 영업이익 15.9억원, 지배주주순이익 43.1억원과 비교하면 매출 규모는 오히려 줄었고 이익 수준도 아직 회복 초기 단계에 머물러 있다. 분기별로 보면 계절성이 뚜렷하다. 여름철 전력 수요가 몰리는 2025년 3분기에는 매출 426.9억원, 영업이익 33.4억원, 지배주주순이익 78.3억원으로 연중 최대 실적을 기록했다. 그러나 이후 2025년 4분기(매출 346.7억원, 영업이익 -6.0억원, 순이익 -44.0억원), 2026년 1분기(매출 206.1억원, 영업이익 -22.0억원, 순이익 -13.0억원), 2026년 2분기(매출 208.6억원, 영업이익 -16.5억원, 순이익 -9.5억원)까지 3개 분기 연속으로 영업손실과 순손실이 이어졌다. 이는 DR 사업의 수익이 여름철 전력 피크 관리 실적에 집중되는 구조적 특성 때문으로, 비수기에는 고정비 부담이 상대적으로 커지는 패턴이 반복되고 있다. 최근 4개 분기(2025년 3분기~2026년 2분기) 합산으로도 상반기 손실이 3분기 이익을 대부분 상쇄하는 모습이어서, 연간 실적의 방향성은 하반기, 특히 3분기 성수기 실적에 크게 좌우되는 구조다.",
+  "en": "Consolidated revenue in 2025 was KRW 125.6bn, a modest increase from KRW 124.7bn in 2024, while operating profit turned positive at KRW 0.816bn, reversing a KRW 4.34bn operating loss in 2024. Net profit attributable to owners also recovered to KRW 2.14bn from a loss of KRW 3.01bn in 2024. However, compared with 2023, when revenue was KRW 131.9bn, operating profit was KRW 1.59bn, and owners' net profit was KRW 4.31bn, current revenue is actually lower and profitability remains in an early recovery stage. Quarterly results show pronounced seasonality. In 2025Q3, when summer power demand peaks, the company posted its strongest results of the year with revenue of KRW 42.69bn, operating profit of KRW 3.34bn, and owners' net profit of KRW 7.83bn. But operating and net losses returned for three consecutive quarters afterward: 2025Q4 (revenue KRW 34.67bn, operating loss KRW 0.60bn, net loss KRW 4.40bn), 2026Q1 (revenue KRW 20.61bn, operating loss KRW 2.20bn, net loss KRW 1.30bn), and 2026Q2 (revenue KRW 20.86bn, operating loss KRW 1.65bn, net loss KRW 0.95bn). This reflects the structural nature of the DR business, whose earnings are concentrated around summer peak-load management, with fixed costs weighing relatively more heavily during off-peak quarters. Even summed over the most recent four quarters (2025Q3 through 2026Q2), the first-half losses largely offset the third-quarter profit, meaning the full-year earnings trajectory continues to hinge heavily on second-half—particularly third-quarter peak season—performance."
  },
  "industry": {
-  "ko": "국내 수요자원 시장은 제10차 전력수급기본계획에 따라 최대전력 수요관리 목표량이 2026년 6.2GW에서 2031년 11.6GW, 2036년 17.7GW로 단계적으로 확대될 예정이어서 구조적 성장이 기대된다. AI 데이터센터 확산과 전기차·히트펌프 보급 증가로 전력 수요가 빠르게 늘어나는 한편 발전소·송전망 확충은 속도에 한계가 있어, 수요 측 유연성 자원(DR·VPP) 활용에 대한 정책 의지가 강해지고 있다. 글로벌 DR 시장은 2023년 기준 약 290억 달러에서 2030년 약 888억 달러 규모로 연평균 17.4% 성장이 전망되고, VPP 시장도 같은 기간 41억 달러에서 147억 달러 이상으로 연평균 약 20% 확대가 예상된다. 국내에서는 2024년 6월 분산에너지특별법이 시행되며 VPP 사업이 법제화됐으나, DR과 VPP 시장이 분리 운영되고 V2G 전기차의 전력시장 참여가 제도적으로 제한돼 있어 본격적인 시장 융합까지는 제도 개편 진전이 선행 조건이다. 경쟁 측면에서 국내 수요관리사업자는 약 25개사이지만 그리드위즈(아이디알서비스 포함)는 용량 기준 약 40%, 정산금 기준 47%의 점유율로 경쟁자가 없는 독보적 1위 지위를 보유하고 있다. 해외에서는 호주가 재생에너지 확대와 석탄발전 퇴출이 동시에 진행되는 분산에너지 선진 시장으로 주목받고 있으며, 미국·일본에서도 DR·ESS 시장이 고속 성장 중이다. 에너지 전환과 AI 시대를 배경으로 EMS가 DR·VPP·분산에너지 시장과 연결되는 국가 에너지안보 핵심 인프라로 자리 잡을 가능성이 높아지고 있다.",
-  "en": "Korea's demand-resource market is set for structural growth: the 10th National Electricity Plan targets maximum load-management capacity rising from 6.2 GW in 2026 to 11.6 GW in 2031 and 17.7 GW in 2036. Surging electricity demand from AI data centers, EVs, and heat pumps—combined with constraints on new generation and grid expansion—is reinforcing the policy shift toward demand-side flexibility resources such as DR and VPP. Globally, the DR market is forecast to grow from approximately USD 29 bn in 2023 to USD 89 bn by 2030 (CAGR ~17.4%), while the VPP market is projected to expand from USD 4.1 bn to over USD 14.7 bn over the same period (CAGR ~20%). Domestically, the Distributed Energy Special Act (effective June 2024) formalized VPP operations, but DR and VPP markets remain structurally separate and V2G EV participation in power markets is still institutionally constrained, meaning regulatory reform must lead before full market convergence can occur. Competitively, GridWiz (including IDR Services) holds roughly 40% by capacity and 47% by settlement amount among approximately 25 licensed demand-response operators, conferring a near-monopoly in the domestic DR space. Overseas, Australia stands out as a leading distributed-energy market amid rapid renewable expansion and coal phaseout, while the US and Japan also offer fast-growing DR and ESS opportunities. The evolving AI era is positioning EMS as critical national energy-security infrastructure linked to DR, VPP, and distributed-energy markets."
+  "ko": "국내 VPP·V2G 시장은 2030년까지 연평균 35% 성장할 것으로 전망되며, 제11차 전력수급기본계획에 따라 분산형 전원 비중이 확대되면서 플랫폼 수요도 함께 늘어날 것으로 예상된다. 인공지능(AI) 확산과 탄소중립 정책 강화로 DR의 중요성이 커지고 있으며, 발전 설비 증설에 대한 효율적 대안으로 역할이 확대되고 있다. 특히 AI 데이터센터의 전력 수요가 빠르게 늘어나면서 데이터센터 고객을 대상으로 전력 수요 예측, 계통 연계, ESS 운영을 아우르는 통합 에너지 관리 사업 기회가 새롭게 부각되고 있다. 정부는 지난 2024년 6월부터 제주에서 실시간 시장, 예비력 시장, 재생에너지 입찰제도 등을 시범 도입했고, 분산에너지 활성화 특별법 시행으로 국내 전력시장 구조에도 변화가 예고돼 있다. 그리드위즈는 아이디알서비스 인수를 통해 DR 시장 점유율을 확대하며 국내 시장에서 선도적 위치를 다졌지만, 신성장 영역인 ESS·VPP·V2G에서는 다수의 경쟁사가 기술 강화와 시장 점유율 확대에 나서고 있어 경쟁 구도가 유동적이다. 산업 사이클 측면에서는 정책 수혜와 AI발 전력 수요 증가라는 구조적 성장 동력이 있지만, 국내 ESS 시장은 상대적으로 정체된 시기를 거쳤다는 평가도 있어 신사업의 성과가 본격화되기까지는 시간이 필요한 국면으로 판단된다.",
+  "en": "Korea's VPP and V2G markets are projected to grow at an average annual rate of 35% through 2030, with platform demand expected to rise further as the 11th Basic Plan for Electricity Supply and Demand increases the share of distributed power sources. The spread of artificial intelligence and stronger carbon-neutrality policies are elevating the importance of demand response, which is increasingly seen as an efficient alternative to building new generation capacity. In particular, rapidly rising power demand from AI data centers is creating new business opportunities around integrated energy management covering demand forecasting, grid interconnection, and ESS operation for data center customers. Since June 2024, the government has piloted real-time markets, reserve markets, and renewable energy bidding systems in Jeju, and the enforcement of the Distributed Energy Activation Special Act signals further structural changes to Korea's power market. Gridwiz strengthened its leading position in the domestic DR market through the acquisition of IDR Service, but in newer growth areas such as ESS, VPP, and V2G, multiple competitors are also reinforcing their technology and expanding market share, making the competitive landscape more fluid. From a cycle perspective, structural tailwinds exist from policy support and AI-driven power demand growth, but the domestic ESS market has reportedly gone through a relatively stagnant period, suggesting the new businesses may need more time before their contribution becomes substantial."
  },
  "outlook": {
-  "ko": "2026년 6월 그리드위즈는 기관 대상 IR을 개최해 AI 데이터센터 에너지 관리를 미래 핵심 성장축으로 공식화했다. 전력 수요 예측·계통 연계·ESS 운영·DR·전력시장 참여까지 데이터센터 에너지 운영 전 과정을 지원하는 통합 솔루션으로 고객 기반을 확장하겠다는 전략이다. 회사 측은 피크 관리와 수요반응, ESS·VPP 연계를 통해 그동안 활용도가 낮았던 전력 자원을 새로운 수익원으로 전환하는 사업 모델을 구체화하고 있다. 글로벌 측면에서는 호주 법인 설립을 완료하고 ESS 기반 첫 프로젝트 착수를 준비 중이며, 미국·일본에서도 DR·ESS 협력 파트너 검토가 진행 중이다. V2G 사업은 2026년부터 단계적 시장 형성 로드맵이 수립 중으로, 관련 제도 정비와 전기차 보급 확대 시 중장기 신규 수익원으로 부상할 수 있다. 2026년 상반기는 1분기 비수기 적자 패턴이 이어졌으며, 성수기인 3분기(7~9월)의 DR 정산금 및 E-Mobility 수요 동향이 연간 실적 방향성을 좌우할 것으로 예상된다. 회사는 AI 기반 에너지 관리 고도화, DR·ESS·전기차 통합 운영 플랫폼 강화, 글로벌 시장 본격 진출을 2026년 3대 전략 방향으로 제시하고 있다.",
-  "en": "At its June 2026 institutional IR event, GridWiz formally designated AI data-center energy management as its primary future growth engine, outlining an integrated service model covering demand forecasting, grid interconnection, ESS operation, DR participation, and power-market access—all tailored to data-center operators. The company plans to transform underutilized power assets through peak shaving, demand response, and ESS/VPP integration, creating new recurring revenue streams from assets already at customer sites. On the international front, the Australian subsidiary has been established and its first ESS-anchored project is in preparation; partnership exploration is also underway in the US and Japan for DR and ESS opportunities. The V2G business is in the roadmap stage, targeted for gradual market formation from 2026 onward, and could become a meaningful revenue contributor as EV penetration rises and supporting regulations are finalized. Domestically, the seasonal Q3 (July–September) period—historically the single largest earnings quarter—will be pivotal for 2026 full-year performance as summer-peak DR settlements and E-Mobility demand converge. Management has framed three strategic priorities for 2026: AI-enhanced energy management, a fully integrated DR/ESS/EV platform, and active entry into global markets."
+  "ko": "그리드위즈는 2026년 6월 서울 여의도에서 기관투자자·애널리스트 대상 IR을 열고 데이터센터 에너지 관리 사업을 미래 성장축으로 제시하며, 호주·미국·중국·일본을 중심으로 한 글로벌 사업 확대 전략을 공개했다. 회사는 전력 수요 예측과 최적화, 수요자원 운영, 전력시장 입찰, ESS 연계 운영을 아우르는 통합 에너지 관리 사업 모델을 데이터센터 고객 대상으로 구축해 나갈 계획이다. 자금 조달 측면에서는 2026년 8월 상장 후 첫 전환사채(총 250억원)를 발행해 시설자금 180억원과 운영자금 70억원으로 나눠 집행하며, 이 중 90억원은 국내 배전망 ESS 구축사업, 90억원은 호주 BESS 사업, 나머지 70억원은 국내외 AI 데이터센터 관련 사업과 해외 BESS 사업 추진에 쓰일 예정이다. 회사는 2026년 7월 정부의 'AI 활용 ESS 구축지원 사업'에서 호남 지역 3개 배전선로 사업자로 선정돼 12MW·60MWh 규모의 ESS를 구축하기로 했다. 신사업 측면에서는 소형모듈원자로(SMR) 기업과 AI 데이터센터 대상 통합 전력·냉각 솔루션 공동개발을 위한 업무협약을 체결하며 저온 열원을 활용한 데이터센터 냉각 기술도 검토하고 있다. 다만 이러한 신사업들은 아직 초기 단계로, 매출과 수익으로의 연결 시점과 규모는 확인되지 않았다.",
+  "en": "In June 2026, Gridwiz held an investor relations event in Seoul's Yeouido district for institutional investors and analysts, presenting data center energy management as a future growth axis and unveiling a global expansion strategy centered on Australia, the United States, China, and Japan. The company plans to build an integrated energy management business model for data center customers spanning power demand forecasting and optimization, demand resource operation, power market bidding, and ESS-linked operation. On the funding side, in August 2026 the company issued its first convertible bonds since listing, totaling KRW 25bn, to be split between KRW 18bn for facility investment and KRW 7bn for operating funds; of the facility portion, KRW 9bn is earmarked for domestic grid-connected ESS construction, KRW 9bn for an Australian BESS project, with the remaining KRW 7bn allocated to domestic and overseas AI data center businesses and further overseas BESS expansion. In July 2026 the company was selected as the operator for three distribution lines in the Honam region under the government's 'AI-utilizing ESS Deployment Support Project,' committing to build 12MW/60MWh of ESS capacity. On the new business front, the company signed an MOU with an SMR developer to jointly develop integrated power-and-cooling solutions for AI data centers, and is also exploring data center cooling technology utilizing low-temperature heat sources. However, these new initiatives remain at an early stage, and the timing and scale of their contribution to revenue and profit have not yet been confirmed."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당순자산(BPS) 16,640원 근방에서 거래되고 있어, 성장성 프리미엄이 거의 반영되지 않은 수준으로 해석된다. 주당순이익(EPS) 476원을 기준으로 한 이익 배수는 적자에서 흑자로 전환된 초기 단계임을 감안할 때, 이익 창출 능력의 안정적 증명이 시장 멀티플 재평가의 선결 조건이다. 공모 당시 희망가 밴드(34,000~40,000원) 대비 현재 주가가 상당한 폭으로 할인되어 있다는 점은, 상장 후 실적 부진이 이미 주가에 상당 부분 반영되었음을 시사하나 이익 지속성이 확인되기 전까지 밸류에이션 회복을 단정하기는 이르다. 2025년 결산 기준 무배당(DPS 0원)으로 현금 환원보다 성장 투자 단계임을 반영한다. DR 사업의 구조적 계절성과 신사업 투자 비용이 이익 변동성을 높이는 한, 안정적인 연간 이익 창출이 확인되는 시점이 핵심 변곡점이 될 것이다.",
-  "en": "The share price is currently trading near the reported book value per share (BPS: KRW 16,640), indicating that the market is assigning little to no growth premium at current levels. With earnings per share (EPS) at KRW 476, reflecting the initial phase of the company's return to profitability from losses, demonstrating sustainable earnings generation is the prerequisite for a meaningful re-rating of the earnings multiple. The significant discount versus the IPO price band (KRW 34,000–40,000) suggests the market has absorbed a substantial portion of post-listing earnings disappointment, yet a valuation recovery remains premature to anticipate absent consistent annual profit delivery. The company paid no dividend for fiscal 2025 (DPS: KRW 0), signaling that capital deployment into growth takes priority over shareholder returns at this stage. As long as structural seasonal Q1 losses and elevated new-business investment costs weigh on reported earnings, establishing a credible year-round profit track record remains the clearest catalyst for a re-rating."
+  "ko": "그리드위즈의 주가는 순자산가치 대비로는 할인된 수준에서, 최근 이익 규모 대비로는 상당한 프리미엄이 붙은 수준에서 거래되는 이중적 구조를 보인다. 이는 회사가 2024년 적자에서 2025년 흑자로 전환했지만 이익 절대 규모가 아직 작고 계절성이 강해, 이익 기준 배수가 매출·자산 기준 배수보다 민감하게 움직이기 때문이다. 배당은 최근 지급 이력이 확인되지 않아 배당 매력을 기준으로 접근하기는 어려운 종목이다. 상장 당시 공모가 산정에서도 주가매출비율(PSR) 방식이 적용됐던 점은, 이 회사의 밸류에이션이 전통적인 이익 기반 지표만으로는 설명되기 어려운 성장주 특성을 갖고 있음을 보여준다. 향후 이익 회복 속도와 신사업(ESS·데이터센터·해외 BESS)의 매출 기여 여부에 따라 이익 기반 밸류에이션의 안정성이 달라질 수 있다.",
+  "en": "Gridwiz's stock exhibits a dual valuation profile: it trades at a discount relative to net asset value, while trading at a substantial premium relative to its recent scale of earnings. This reflects the fact that although the company turned from a loss in 2024 to a profit in 2025, the absolute size of that profit remains small and highly seasonal, making earnings-based multiples more sensitive than revenue- or asset-based multiples. There is no confirmed recent dividend payment history, making a dividend-based approach difficult to apply to this stock. The fact that a price-to-sales (PSR) approach was used to set the IPO offering price also illustrates that the company's valuation has growth-stock characteristics that are not easily captured by traditional earnings-based metrics alone. Going forward, the stability of earnings-based valuation may shift depending on the pace of profit recovery and whether new businesses—ESS, data centers, and overseas BESS—begin contributing meaningfully to revenue."
  },
  "bull": [
   {
    "title": {
-    "ko": "국내 DR 시장 독보적 1위와 제도 확대 수혜",
-    "en": "Unchallenged Domestic DR Leadership with Policy Tailwinds"
+    "ko": "국내 DR·VPP 시장 구조적 성장 수혜",
+    "en": "Structural Growth in Domestic DR/VPP Market"
    },
    "body": {
-    "ko": "정산금 기준 47%라는 압도적 점유율은 오랜 운영 노하우와 촘촘한 고객 네트워크에서 비롯된 강력한 진입 장벽이다. 제10차 전력수급기본계획에 따라 수요관리 목표용량이 2036년까지 현재의 약 4배 수준으로 확대될 예정이어서 절대 시장이 구조적으로 성장한다. 휴일 DR 시장 신설과 동시에 69% 점유율을 선점한 사례처럼, 신규 시장이 열릴 때마다 기존 고객 기반과 기술력을 활용해 빠르게 지위를 확보하는 패턴이 반복될 가능성이 높다.",
-    "en": "A 47% settlement-based market share rests on deep operational know-how and a dense customer network that form durable entry barriers against new entrants. The 10th National Electricity Plan projects demand-management capacity to roughly quadruple by 2036, guaranteeing structural absolute market growth. The rapid capture of 69% in the newly opened Holiday-DR segment illustrates the company's ability to leverage its existing customer base each time a new market format is introduced by regulators."
+    "ko": "국내 VPP·V2G 시장은 2030년까지 연평균 35% 성장할 것으로 전망되며, 제11차 전력수급기본계획에 따라 분산형 전원 비중이 확대되고 있다. 그리드위즈는 아이디알서비스 인수를 통해 DR 부문에서 시장점유율 47%를 확보하며 업계 1위로 올라섰고, DR·EM·ESS·PV 4대 자원을 모두 보유한 국내 유일의 VPP 사업자다. AI 데이터센터의 전력 수요 급증은 수요관리 서비스의 필요성을 더욱 키우는 요인으로 꼽힌다.",
+    "en": "Korea's VPP and V2G markets are projected to grow at a 35% average annual rate through 2030, with distributed power sources expanding under the 11th Basic Plan for Electricity Supply and Demand. Through its acquisition of IDR Service, Gridwiz secured a 47% share of the DR market and rose to the industry's top position, becoming the only domestic VPP operator holding all four resources—DR, EM, ESS, and PV. Surging power demand from AI data centers is cited as a factor further increasing the need for demand management services."
    }
   },
   {
    "title": {
-    "ko": "E-Mobility·데이터센터 DR로 매출 다변화 가속",
-    "en": "E-Mobility Surge and Data-Center DR Accelerate Revenue Diversification"
+    "ko": "2025년 흑자전환과 이익 회복 흐름",
+    "en": "2025 Profit Turnaround and Earnings Recovery Path"
    },
    "body": {
-    "ko": "단일 DR 수수료 의존 구조에서 하드웨어(충전기) + 플랫폼(스카이블루) + 데이터센터 에너지 관리로 이어지는 복합 수익 구조로 이행 중이다. 데이터센터 향 AI 기반 DR 솔루션은 기존 고객군 대비 전력 소비량이 크고 계약 단가가 높아 수익성 개선 잠재력이 크다. AI 데이터센터와 스마트공장 등 전력 다소비 산업 중심의 데이터 기반 통합 에너지 서비스는 중장기 핵심 성장 엔진으로 자리 잡을 수 있다.",
-    "en": "The business is transitioning from a single-stream DR-fee model toward a composite revenue structure combining hardware sales (chargers), platform services (SkyBlue), and data-center energy management. Data-center clients consume significantly more power and command higher contract values than typical industrial DR customers, offering meaningful margin-improvement potential. AI data centers and smart-factory operators represent a strategically important new customer vertical for integrated, data-driven energy services."
+    "ko": "2025년 연결 영업이익은 8.16억원으로 2024년 -43.4억원의 적자에서 흑자로 전환했고, 지배주주순이익도 21.4억원으로 적자를 벗어났다. 2025년 3분기에는 매출 426.9억원, 영업이익 33.4억원으로 연중 최대 실적을 기록하며 여름철 DR 성수기의 수익성을 입증했다. 비용 효율화와 사업 구조 개선이 흑자전환의 배경으로 꼽힌다.",
+    "en": "Consolidated operating profit in 2025 turned positive at KRW 0.816bn, reversing a KRW 4.34bn loss in 2024, and owners' net profit also moved out of loss territory to KRW 2.14bn. In 2025Q3, the company posted its strongest results of the year with revenue of KRW 42.69bn and operating profit of KRW 3.34bn, demonstrating the profitability of the summer DR peak season. Cost efficiency improvements and business structure changes are cited as drivers of the turnaround."
    }
   },
   {
    "title": {
-    "ko": "V2G·글로벌 확장이라는 중장기 옵션 가치",
-    "en": "V2G and Global Expansion as Medium-Term Option Value"
+    "ko": "ESS·데이터센터·해외 BESS로 사업 다각화",
+    "en": "Diversification into ESS, Data Centers, and Overseas BESS"
    },
    "body": {
-    "ko": "전기차를 ESS처럼 활용하는 V2G는 DR 사업과 직접 시너지를 내며, 국내 VPP·V2G 시장은 2030년까지 연평균 35% 성장이 전망된다. 호주 법인을 통한 ESS·EV 충전 사업 진출은 재생에너지 확대 구간에서 분산에너지 수요가 높은 선진 시장을 선점하는 기회다. 국내 분산에너지특별법 성숙과 V2G 제도화가 진전될 경우, 현재 로드맵 단계에 있는 신사업들이 실질적 수익원으로 전환될 수 있다.",
-    "en": "V2G—leveraging EV batteries as grid-connected storage—creates direct synergies with the existing DR operation, and the domestic VPP/V2G market is projected to grow at approximately 35% annually through 2030. The Australian subsidiary positions the company early in a leading distributed-energy market experiencing rapid renewable expansion and coal phaseout. As the Distributed Energy Special Act matures and V2G regulations are finalized domestically, currently roadmap-stage businesses could transition into tangible revenue contributors."
+    "ko": "2026년 8월 발행한 250억원 규모 전환사채를 통해 국내 배전망 ESS와 호주 BESS 사업에 각각 90억원씩을 투입할 계획이다. AI 데이터센터 고객을 대상으로 전력 수요 예측부터 ESS 연계 운영까지 아우르는 통합 에너지 관리 사업 모델을 새로운 성장축으로 제시했다. SMR 기업과의 업무협약을 통해 데이터센터 냉각 기술까지 사업 영역을 확장하고 있다.",
+    "en": "Through the KRW 25bn convertible bond issued in August 2026, the company plans to allocate KRW 9bn each to domestic grid-connected ESS and an Australian BESS project. It has proposed an integrated energy management business model for AI data center customers, spanning power demand forecasting through ESS-linked operation, as a new growth axis. Through an MOU with an SMR developer, the company is also expanding into data center cooling technology."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "구조적 이익 계절성과 1분기 반복 적자 패턴",
-    "en": "Structural Earnings Seasonality and Recurrent Q1 Losses"
+    "ko": "여름철 편중 계절성과 반복되는 비수기 손실",
+    "en": "Summer-Concentrated Seasonality and Recurring Off-Season Losses"
    },
    "body": {
-    "ko": "DR 정산금이 하절기 전력 피크에 집중되어 1분기는 구조적으로 영업적자를 기록하는 경향이 있다. 2025년 1분기(-33.7억원)와 2026년 1분기(-22.0억원) 모두 영업손실을 기록했으며, 이 계절성은 단기간에 해소되기 어렵다. 연간 이익 안정성이 낮은 구조는 실적 예측 가능성을 저해하고 기관 투자자의 신뢰 형성을 어렵게 하는 요인이다.",
-    "en": "DR settlement income concentrates heavily in the summer peak-demand period, structurally driving Q1 into operating losses every year. Both Q1 2025 (–KRW 3.4 bn) and Q1 2026 (–KRW 2.2 bn) posted operating losses, and this pattern is unlikely to resolve quickly. The resulting low earnings stability undermines forecasting confidence and complicates institutional investor conviction."
+    "ko": "2025년 3분기 33.4억원의 영업이익을 낸 이후 2025년 4분기부터 2026년 2분기까지 3개 분기 연속 영업손실을 기록했다. DR 매출이 여름철 전력 피크 관리에 집중되는 구조적 특성상 비수기 고정비 부담이 반복적으로 이익을 갉아먹고 있다. 연간 실적의 방향성이 3분기 성수기 한 개 분기에 크게 좌우되는 구조는 실적 예측 가능성을 낮춘다.",
+    "en": "After posting an operating profit of KRW 3.34bn in 2025Q3, the company recorded operating losses for three consecutive quarters from 2025Q4 through 2026Q2. Because DR revenue is structurally concentrated around summer peak-load management, off-season fixed costs repeatedly erode profitability. The fact that the full-year earnings trajectory hinges heavily on a single peak quarter reduces earnings predictability."
    }
   },
   {
    "title": {
-    "ko": "국내 전력시장 제도 개편 지연 리스크",
-    "en": "Risk of Delayed Domestic Power-Market Regulatory Reform"
+    "ko": "전환사채 발행에 따른 지분 희석 부담",
+    "en": "Dilution Overhang from Convertible Bond Issuance"
    },
    "body": {
-    "ko": "DR과 VPP 시장이 분리 운영되고 V2G 전기차의 전력시장 참여는 고시 미반영 상태로 제도적 제약이 크다. 전기사업법 개정 및 VPP 도매시장 통합 논의가 진전되지 않으면 중장기 성장 시나리오의 실현 시기가 늦어진다. 전기요금 현실화 지연에 따른 한전 재정 악화가 DR 정산 구조에 간접적으로 영향을 줄 수 있다는 업계의 우려도 존재한다.",
-    "en": "The continued separation of DR and VPP markets, and the exclusion of EVs from power-market participation rules, impose meaningful institutional ceilings on the growth pathway. Slow progress on Electricity Business Act amendments and VPP wholesale-market integration extends the timeline for the mid-to-long-term growth scenario. Industry observers also note that KEPCO's financial strain from regulated tariffs could indirectly affect DR settlement economics over time."
+    "ko": "2026년 8월 발행된 250억원 규모 전환사채가 전량 전환되면 기존 발행주식의 22.3%에 해당하는 177만여 주가 추가 발행된다. 전환가액은 14,116원으로 고정돼 있어 주가가 이를 상회할 경우 전환 압력이 커질 수 있다. 무이자 조건으로 현금 부담은 낮췄지만, 신규 투자가 실질적인 매출과 수익으로 연결될지는 아직 확인되지 않았다.",
+    "en": "If the KRW 25bn convertible bonds issued in August 2026 are fully converted, roughly 1.77 million new shares—equal to 22.3% of shares outstanding—would be issued. The conversion price is fixed at KRW 14,116, meaning conversion pressure could rise if the share price exceeds that level. While the zero-coupon structure limits cash cost, it remains unconfirmed whether the new investments will translate into meaningful revenue and profit."
    }
   },
   {
    "title": {
-    "ko": "신사업 투자 확대에 따른 수익성 재압박 가능성",
-    "en": "Escalating New-Business Investment Could Re-Compress Margins"
+    "ko": "신사업의 초기 단계와 국내 ESS 시장 정체",
+    "en": "Early-Stage New Businesses Amid a Stagnant Domestic ESS Market"
    },
    "body": {
-    "ko": "데이터센터 DR, 호주 법인 운영, 미국·일본 파트너십 구축 등 다양한 전선에서 동시에 투자가 진행되고 있다. 부채비율이 2024년 29.4%에서 2025년 41.7%로 상승한 가운데 추가 투자 소요 시 재무 레버리지가 더 높아질 수 있다. 신사업의 매출 기여가 본격화되기 전까지 이익 대비 투자 비용 부담이 지속되는 구간이 이어질 수 있다.",
-    "en": "The company is simultaneously investing across multiple fronts: data-center DR solutions, the Australian subsidiary, and US/Japan partnership development. With the debt-to-equity ratio already rising from 29.4% to 41.7%, additional capital deployment could increase financial leverage further. Until new-business revenues reach meaningful scale, the gap between investment costs and current earnings generation may persist."
+    "ko": "호주 BESS, AI 데이터센터 전력·냉각 솔루션, SMR 연계 냉각 기술 등 신사업은 대부분 업무협약이나 시범사업 단계에 머물러 있다. 국내 ESS 시장은 상대적으로 정체된 시기를 거쳤다는 평가도 있어, 신사업이 본격적인 매출 기여로 이어지기까지 시차가 발생할 수 있다. ESS·VPP·V2G 영역에서는 다수의 경쟁사가 기술과 시장 점유율 확대에 나서고 있어 경쟁 심화 가능성도 있다.",
+    "en": "Most new businesses—Australian BESS, AI data center power-and-cooling solutions, and SMR-linked cooling technology—remain at the MOU or pilot-project stage. The domestic ESS market has reportedly gone through a relatively stagnant period, meaning there could be a lag before new businesses translate into substantial revenue contribution. Competition may also intensify in the ESS, VPP, and V2G segments, where multiple rivals are reinforcing their technology and market share."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "DR 정산금 구조 변동 위험",
-    "en": "DR Settlement Structure Risk"
+    "ko": "실적 계절성 및 변동성",
+    "en": "Earnings Seasonality and Volatility"
    },
    "body": {
-    "ko": "DR 사업 수익은 전력거래소 정산 단가·낙찰량·계통 여건에 따라 연도별·분기별로 크게 변동한다. 전력공급 여유가 지속될 경우 신뢰성 DR 발령 빈도가 줄어 정산금 하락 압력이 생긴다. 과거 2023~2024년 DR 수익 약세가 2년 연속 영업적자의 주요 원인이 됐던 전례가 있어, 이 리스크의 현실화 가능성을 간과할 수 없다.",
-    "en": "DR revenue fluctuates materially with settlement prices, bid volumes accepted, and system-reserve conditions set by the Korea Power Exchange. Extended periods of ample power supply reduce the frequency of reliability-DR dispatches, compressing settlement income. The 2023–2024 episode of DR revenue weakness—a key driver of two consecutive years of net losses—illustrates the real-world materiality of this risk."
+    "ko": "DR 사업의 수익이 여름철 전력 피크 관리에 집중되면서 분기별 실적 편차가 크다. 2025년 3분기 흑자 이후 3개 분기 연속 적자를 기록한 사례는 이러한 계절성이 반복적으로 나타날 수 있음을 보여준다. 연간 실적의 상당 부분이 특정 계절에 좌우되는 구조는 투자자의 실적 예측을 어렵게 만드는 요인이다.",
+    "en": "Because DR business revenue is concentrated around summer peak-load management, quarterly results show significant variation. The pattern of three consecutive quarters of losses following a profitable 2025Q3 illustrates how this seasonality can recur. A structure in which a large share of annual results depends on a specific season makes earnings forecasting more difficult for investors."
    }
   },
   {
    "cat": {
-    "ko": "해외 진출 초기 단계 불확실성",
-    "en": "Early-Stage Overseas Expansion Uncertainty"
+    "ko": "자본조달 및 지분 희석",
+    "en": "Capital Raising and Equity Dilution"
    },
    "body": {
-    "ko": "호주·미국·일본 등 해외 시장은 사업 타당성 검토·협력사 선정·인허가 등 초기 단계에 있어 매출 기여 시점이 불확실하다. 각국의 규제 환경·경쟁 구도·파트너 리스크가 국내와 다르며, 사업화 과정에서 예상치 못한 비용이 발생할 수 있다. 글로벌 에너지 기업들과의 기술·가격 경쟁에서 충분한 차별성을 입증하지 못하면 해외 사업 확장이 지연될 수 있다.",
-    "en": "Overseas initiatives in Australia, the US, and Japan remain in early feasibility and partnership stages, making revenue contribution timing uncertain. Each market presents distinct regulatory frameworks, competitive dynamics, and partner-execution risks that differ materially from the domestic environment. Failure to demonstrate sufficient technical differentiation against established international energy-management players could delay overseas revenue ramp-up."
+    "ko": "2026년 8월 첫 전환사채 발행으로 신규 사업 재원을 확보했지만, 전량 전환 시 기존 주식의 22.3%에 해당하는 물량이 추가된다. 향후 신사업 확장 과정에서 추가적인 자금조달이 필요할 경우 유사한 희석 이슈가 재발할 가능성이 있다.",
+    "en": "The first convertible bond issuance in August 2026 secured funding for new business initiatives, but full conversion would add shares equal to 22.3% of the existing total. If further capital raising is needed as new businesses expand, similar dilution issues could recur."
    }
   },
   {
    "cat": {
-    "ko": "전기차 충전 시장 경쟁 심화 및 수요 변동 위험",
-    "en": "Intensifying EV-Charging Competition and Demand Volatility"
+    "ko": "정책·제도 의존도",
+    "en": "Dependence on Policy and Regulatory Framework"
    },
    "body": {
-    "ko": "E-Mobility 부문은 완속충전기 판매 급증으로 2025년 성장을 견인했으나, 대기업 계열 충전 사업자와의 경쟁이 심화될 경우 단가 압박이 발생할 수 있다. 전기차 수요 둔화 또는 정부 보조금 축소는 충전 인프라 투자 감소로 이어질 수 있다. 하드웨어 판매 중심에서 소프트웨어·플랫폼 기반 수익 구조로의 전환 속도가 부문 수익성에 중요한 영향을 미친다.",
-    "en": "While the E-Mobility segment was a key 2025 growth driver, price competition from large conglomerate-backed charging operators could squeeze unit margins. A slowdown in EV adoption or reduction in government subsidies could dampen charging-infrastructure spending. The pace of transitioning from hardware-centric to software/platform-based recurring revenues will materially influence long-run segment profitability."
+    "ko": "DR·VPP·ESS 사업은 분산에너지 활성화 특별법, 제11차 전력수급기본계획 등 정부 정책과 제도 설계에 크게 의존한다. 제주 실시간 시장 등 제도가 아직 시범 단계에 있는 부분이 많아, 정책 변화나 제도 지연이 사업 성장 속도에 영향을 줄 수 있다.",
+    "en": "The DR, VPP, and ESS businesses are heavily dependent on government policy and institutional design, including the Distributed Energy Activation Special Act and the 11th Basic Plan for Electricity Supply and Demand. Many related systems, such as Jeju's real-time market, remain at a pilot stage, so policy shifts or regulatory delays could affect the pace of business growth."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 잠정 실적 발표 — 하절기 DR 정산금 반등 폭과 E-Mobility 수요 회복세가 연간 이익 달성 여부의 선행 지표로 기능한다.",
-    "en": "Q2 2026 preliminary earnings release — the magnitude of summer-peak DR settlement recovery and E-Mobility demand will serve as leading indicators of full-year profitability."
+    "ko": "2026년 3분기 실적 발표 예정. 여름철 성수기 실적이 전년 동기(영업이익 33.4억원) 수준을 회복하는지, 상반기 누적 손실을 상쇄할 수 있는지가 핵심 관전 포인트다.",
+    "en": "2026Q3 earnings are due to be released. A key point to watch is whether summer peak-season results recover to levels comparable to the prior year (operating profit of KRW 3.34bn) and offset accumulated first-half losses."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "Second Half 2026"
+    "ko": "2026년 9월 이후",
+    "en": "From September 2026 onward"
    },
    "what": {
-    "ko": "호주 법인의 첫 ESS 프로젝트 착수 및 계약 공시 여부 — 글로벌 사업이 실질 매출로 전환되는 첫 사례로, 해외 성장 모멘텀의 가시화 신호가 된다.",
-    "en": "Launch of the Australian subsidiary's first ESS project and any related contract disclosure — the first overseas revenue conversion, providing tangible visibility into the global growth strategy."
+    "ko": "8월 발행한 전환사채(250억원) 자금이 국내 배전망 ESS 및 호주 BESS 사업에 실제로 어떻게 집행되는지, 관련 계약이나 착공 공시가 이어지는지 확인이 필요하다.",
+    "en": "It is worth tracking how the KRW 25bn convertible bond proceeds issued in August are actually deployed toward domestic grid ESS and Australian BESS projects, and whether related contract or construction disclosures follow."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 초",
-    "en": "H2 2026–Early 2027"
+    "ko": "2026년 4분기 중",
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "제11차 전력수급기본계획 확정 발표 — 수요자원 용량 목표 및 VPP 관련 로드맵 내용이 DR·VPP 시장 규모와 회사 중장기 성장 경로를 재조정하는 기준점이 된다.",
-    "en": "Finalization of the 11th National Electricity Plan — demand-resource capacity targets and VPP roadmap details will recalibrate the addressable market size and medium-term growth path for DR/VPP operators."
+    "ko": "AI 데이터센터 대상 통합 에너지 관리 사업모델과 SMR 연계 냉각 솔루션이 구체적인 계약이나 매출로 이어지는지 후속 공시·보도를 확인할 필요가 있다.",
+    "en": "Follow-up disclosures or reports should be checked to see whether the integrated energy management model for AI data centers and the SMR-linked cooling solution progress into concrete contracts or revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 내",
-    "en": "Within 2026"
+    "ko": "2026년 4분기~2027년 초",
+    "en": "Q4 2026 through early 2027"
    },
    "what": {
-    "ko": "V2G 전기차의 전력시장 참여를 허용하는 산업부 고시 개정 여부 — 전기차 배터리를 분산자원으로 공식 편입하는 제도 변화로, V2G 사업화 가능성과 EM 사업 연계 수익 창출 시점에 직접 영향을 미친다.",
-    "en": "MOTIE ministerial notice revision to permit EV participation in power markets (V2G) — formally incorporating EV batteries as distributed resources would directly accelerate GridWiz's V2G commercialization timeline and EM-segment revenue synergies."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 11월 전후",
-    "en": "Circa November 2026"
-   },
-   "what": {
-    "ko": "2026년 3분기 실적 발표 — 연간 최대 성수기인 3분기 DR 정산금 및 전기차 충전기 판매 결과가 2026년 연간 흑자 유지 여부를 결정하는 핵심 관문이다.",
-    "en": "Q3 2026 earnings release — as the seasonally strongest quarter, Q3 DR settlements and EV-charger sales outcomes will determine whether the company can sustain full-year profitability in 2026."
+    "ko": "호주 BESS 사업의 구체적인 프로젝트 규모, 파트너, 가동 시점 등이 공시되는지 확인이 필요하다.",
+    "en": "It is worth checking whether concrete details on the Australian BESS project—such as project scale, partners, and start-up timing—are disclosed."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "그리드위즈는 국내 수요자원(DR) 시장에서 정산금 기준 47%의 압도적 점유율을 보유한 독보적 1위 사업자로, 2024년 코스닥 상장 후 2025년 첫 연간 흑자 전환을 달성했다. 판관비 절감과 전기차 완속충전기 판매 급증이 흑자 전환을 이끌었으나, 2026년 1분기에 다시 비수기 적자를 기록해 이익의 계절적 변동성은 여전히 해소 과제로 남아 있다. 중장기 성장 동인으로는 제도 확대에 따른 수요자원 시장 팽창, AI 데이터센터 에너지 관리 수요 급증, 호주·미국 등 글로벌 진출, V2G 사업 개화가 복합적으로 작용할 것으로 예상된다. 한편 DR 정산금의 구조적 변동성, 전력시장 제도 개편 지연, 신사업 투자 비용이 단기 수익성을 제약하는 요인으로 병존한다. 현재 주가가 순자산 근방에서 거래되어 성장 프리미엄이 거의 없는 상태이나, 2026년 성수기 실적 회복 및 호주 첫 프로젝트 착수 등의 이벤트가 재평가 트리거로 작용할 수 있다. 투자자는 DR 정산금 추이, 해외 매출 현실화 속도, V2G 제도화 진전 여부를 지속적으로 모니터링할 필요가 있다.",
-   "en": "GridWiz holds an unchallenged #1 position in Korea's demand-response settlement market with a 47% share, and achieved its first full-year profitability in 2025 following its 2024 KOSDAQ listing. The profit recovery was driven by SG&A discipline and a dramatic surge in EV slow-charger sales, but a renewed operating loss in Q1 2026 confirms that structural earnings seasonality remains a persistent challenge. Medium-to-long-term growth drivers—DR market capacity expansion under national energy plans, rising demand for AI data-center energy management, overseas entry into Australia and the US, and eventual V2G commercialization—present a credible diversification narrative. Offsetting factors include inherent DR settlement volatility, the risk of delayed domestic power-market regulatory reform, and near-term cost drag from simultaneous investment across multiple new business lines. The share price currently trades close to reported book value, reflecting little embedded growth premium; a Q3 2026 seasonal earnings recovery and the first tangible overseas contract could serve as near-term re-rating catalysts. Investors should monitor DR settlement trends, the pace of overseas revenue materialization, and progress on V2G policy formalization as the primary determinants of the company's earnings trajectory."
+   "ko": "그리드위즈는 국내 DR 시장 1위 사업자로서 VPP 4대 자원(DR·EM·ESS·PV)을 모두 보유한 유일한 사업자라는 구조적 지위를 갖고 있으며, 2025년 연간 흑자전환에 성공했다. 그러나 이익의 대부분이 여름철 성수기인 3분기에 집중되는 계절성이 반복되면서, 2025년 4분기부터 2026년 2분기까지 3개 분기 연속 영업손실을 기록했다. 회사는 2026년 8월 상장 후 첫 전환사채를 발행해 ESS·해외 BESS·데이터센터 관련 신사업 재원을 확보했지만, 전량 전환 시 22.3%의 지분 희석이 발생할 수 있다는 점은 부담 요인이다. AI 데이터센터발 전력 수요 증가와 분산에너지 정책 확대는 구조적인 성장 동력으로 꼽히지만, 신사업 대부분이 업무협약이나 시범사업 단계에 머물러 있어 매출 기여 시점은 아직 확인되지 않았다. 투자자는 향후 3분기 성수기 실적의 회복 정도와 신사업의 매출 전환 속도, 전환사채 관련 주식 발행 동향을 함께 살펴볼 필요가 있다.",
+   "en": "Gridwiz holds a structurally distinct position as Korea's No.1 DR operator and the only company holding all four VPP resources—DR, EM, ESS, and PV—and it successfully turned to an annual operating profit in 2025. However, with profits concentrated heavily in the summer peak-season third quarter, the company recorded operating losses for three consecutive quarters from 2025Q4 through 2026Q2. In August 2026 the company issued its first convertible bond since listing to fund ESS, overseas BESS, and data-center-related new businesses, but the potential 22.3% dilution if bonds are fully converted is a notable overhang. Rising power demand from AI data centers and expanding distributed energy policy are cited as structural growth drivers, but most new businesses remain at the MOU or pilot stage, and the timing of their revenue contribution is not yet confirmed. Investors may wish to monitor the degree of recovery in the upcoming third-quarter peak season, the pace at which new businesses convert into revenue, and share issuance trends related to the convertible bonds."
   }
  },
  "sources": [
+  "https://v.daum.net/v/20260308192011119",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A453450",
-  "https://m.irgo.co.kr/IR-COMP/453450/",
-  "https://www.valueline.co.kr/finance/summary/453450",
-  "https://thevc.kr/gridwiz",
-  "https://www.samsungpop.com/common.do?cmd=down&contentType=application/pdf&inlineYn=Y&saveKey=research.pdf&fileName=2010/2024120216314787K_02_04.pdf",
-  "https://www.investing.com/equities/gridwiz",
   "https://www.valueline.co.kr/finance/balancesheet/453450",
   "https://m.thinkpool.com/item/453450",
-  "https://v.daum.net/v/ZbNwC8jJYW",
-  "https://www.mt.co.kr/industry/2026/03/20/2026032013480133307",
-  "https://www.etnews.com/20260610000270",
-  "https://www.industrynews.co.kr/news/articleView.html?idxno=61585",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=UmfnmIQbOIL3AZ1S",
+  "https://m.irgo.co.kr/IR-COMP/453450/",
+  "https://thevc.kr/gridwiz",
   "https://www.pinpointnews.co.kr/news/articleView.html?idxno=376482",
-  "https://www.industrynews.co.kr/news/articleView.html?idxno=66914",
-  "https://www.electimes.com/news/articleView.html?idxno=364395",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=335603",
-  "https://www.ksga.org/sgstandard/framework/03/09/03.do",
-  "https://www.finuts.co.kr/datas/report/3fb36fdb2bf6a229034bbddada5edcba75258d9d.pdf"
+  "https://www.etnews.com/20260610000270",
+  "https://seo.goover.ai/report/202504/go-public-report-ko-1e1bc296-b346-407e-a642-34ca3b82f443-0-0.html",
+  "https://www.gridwiz.com/en/",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/dVQveFNncXR2cHRLUWthM3gyVU5wQT09/company_nm/(%EC%A3%BC)%EA%B7%B8%EB%A6%AC%EB%93%9C%EC%9C%84%EC%A6%88",
+  "https://www.infostockdaily.co.kr/news/articleView.html?idxno=199615",
+  "https://www.electimes.com/news/articleView.html?idxno=348931",
+  "https://www.thebutter.org/news/articleView.html?idxno=1781",
+  "https://www.industrynews.co.kr/news/articleView.html?idxno=60075",
+  "https://littlebproject.com/stock/453450/249/46905",
+  "https://www.seoulexchange.kr/stocks/%EA%B7%B8%EB%A6%AC%EB%93%9C%EC%9C%84%EC%A6%88-1008/"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "453450",
  "name": "그리드위즈",
  "name_en": "Gridwiz Co.,Ltd",
@@ -233,11 +223,11 @@
   "에너지·전력"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 01:03",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 07:33",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -271,6 +261,23 @@
     "opm": -3.5,
     "roe": -2.3,
     "debt_ratio": 29.4
+   },
+   {
+    "year": 2023,
+    "rev": 131870602109,
+    "op": 1591501114,
+    "np": 4156327772,
+    "np_owner": 4309345508,
+    "equity": 76882866819,
+    "equity_owner": 77220913206,
+    "equity_nci": -338046387,
+    "liab": 45410215785,
+    "cfo": 2588487433,
+    "eps_basic": 922,
+    "src": "전기 비교치",
+    "opm": 1.2,
+    "roe": 5.6,
+    "debt_ratio": 59.1
    }
   ],
   "quarterly": [
@@ -306,21 +313,22 @@
    }
   ],
   "valuation": {
-   "price": 13730,
-   "mcap": 0.1091,
+   "price": 12880,
+   "mcap": 0.1023,
    "shares": 7942750,
    "total_shares": 7942750,
    "wavg_shares": 7941878,
-   "per": 92.148,
+   "per": 86.443,
    "eps": 149,
-   "pbr": 0.8327,
+   "pbr": 0.7812,
    "bps": 16488,
    "roe_ttm": 0.9,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 1182847938,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.82,
+   "eps_src": "공시",
+   "pbr_krx": 0.77,
    "bps_krx": 16771.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,

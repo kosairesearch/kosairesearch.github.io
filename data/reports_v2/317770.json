@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "매출 급성장·IP 성과 가시화, 영업 흑자 안착이 관건",
-  "en": "Revenue Surging and IP Gains Materializing — Sustainable Operating Profitability Is the Key Test"
+  "ko": "AI·IP 신사업 확장 속 손익 전환기",
+  "en": "Digital ID Firm in Profit Transition Amid AI, IP Expansion"
  },
  "lead": {
-  "ko": "글로벌 전자신원확인 수요 회복과 IP 자회사 인텔렉추얼디스커버리의 성과 가시화로 연결 매출이 빠르게 확대되고 있으나, 3년 연속 영업적자 탈출과 2025년 대규모 비영업 손실의 재발 방지 여부가 기업가치 재평가의 핵심 분수령이다.",
-  "en": "Consolidated revenue is expanding rapidly on the back of recovering global e-ID demand and materializing results at IP associate Intellectual Discovery, but a durable escape from three consecutive years of operating losses and prevention of a recurrence of the 2025 outsized non-operating losses are the pivotal tests for a valuation re-rating."
+  "ko": "생체인식·전자문서 본업이 회복되는 가운데 관계기업 지분법 이익이 최근 분기 순이익 흑자를 견인하고 있으나, 연결 영업손익은 신사업 투자로 여전히 적자 상태다.",
+  "en": "While the core biometric and e-document business is recovering, equity-method gains from an affiliate have driven recent quarterly net profit, even as consolidated operating income remains in the red due to new-business investment."
  },
  "keypoints": [
   {
-   "ko": "3년 연속 매출 성장: 2023~2025년 119억→148억→215억원(+46% YoY), 2026 Q1도 전년 동기 대비 약 35% 성장 지속",
-   "en": "Three consecutive years of revenue growth: KRW 11.9B → 14.7B → 21.5B (2023–2025, +46% YoY); 2026 Q1 also up ~35% year-on-year"
+   "ko": "2025년 연결 매출 214.9억원(+45.7% YoY)으로 2년 연속 증가했으나 영업손익은 3년째 적자(-14.1억원)를 지속했다.",
+   "en": "2025 consolidated revenue rose to KRW 21.49 billion (+45.7% YoY), a second straight annual increase, but operating income stayed negative for a third consecutive year (KRW -1.41 billion)."
   },
   {
-   "ko": "2026 Q1 지배주주 순이익 흑자전환: 관계사 인텔렉추얼디스커버리(ID) 지분법 이익 35.2억원 연결 반영이 주된 동인",
-   "en": "Controlling-interest net income turns positive in 2026 Q1, primarily driven by KRW 3.52B equity-method income from associate Intellectual Discovery"
+   "ko": "2026년 1·2분기 지배주주 순이익이 각각 30.7억원, 11.3억원으로 흑자 전환했는데, 이는 관계기업 인텔렉추얼디스커버리(ID)의 지분법 이익 기여가 크다.",
+   "en": "Net income attributable to owners turned positive in Q1 and Q2 2026 (KRW 3.07 billion and KRW 1.13 billion), largely driven by equity-method gains from affiliate Intellectual Discovery (ID)."
   },
   {
-   "ko": "유럽 EES·인도 NID 등 해외 대형 파이프라인: 이탈리아·프랑스·인도·남아공 등 정부 프로젝트가 2026년 중 순차 수주 반영 예상",
-   "en": "Large overseas pipeline including EU EES and India NID: government-scale projects in Italy, France, India, and South Africa expected to be booked progressively through 2026"
+   "ko": "본업(디지털 신원확인)은 2026년 상반기 별도 기준 매출 113억원(+52.7% YoY), 영업이익 0.9억원으로 흑자전환했다는 회사 공시가 있다.",
+   "en": "The core digital-identity business reportedly posted standalone H1 2026 revenue of KRW 11.3 billion (+52.7% YoY) and turned operating-profit positive at KRW 0.09 billion, per company disclosure."
   },
   {
-   "ko": "그룹 다각화 가속: IP(ID)·열관리 소재(XCM)·AI(에이뉴트 흡수합병 추진)·퓨리오사AI 협력을 통한 사업 구조 전환 중",
-   "en": "Group diversification accelerating: IP (ID), thermal materials (XCM), AI (Ainute absorption planned), and FuriosaAI partnership driving a business model transformation"
+   "ko": "ID 지분 추가 인수를 통한 연결 종속회사 편입이 연내 추진 중이며, 성사되면 연결 매출·이익 지표가 크게 확대될 수 있다.",
+   "en": "The company is pursuing additional stake acquisition in ID for subsidiary consolidation within the year, which could materially expand consolidated revenue and profit metrics if completed."
   },
   {
-   "ko": "CB 잠재 희석·비영업 손실 재발 가능성: 2025년 지배주주 순손실 195.2억원의 구조적 원인 해소 여부와 전환사채 오버행이 핵심 불확실성",
-   "en": "CB dilution risk and non-operating loss recurrence: resolution of the structural causes behind the 2025 KRW 19.5B controlling-interest net loss and CB overhang are key uncertainties"
+   "ko": "부채비율은 2024년 65.6%에서 2025년 35.1%로 낮아졌으며, 지배주주 자본은 같은 기간 570억원에서 813억원으로 늘었다.",
+   "en": "The debt ratio fell from 65.6% in 2024 to 35.1% in 2025, while equity attributable to owners rose from KRW 57.0 billion to KRW 81.3 billion over the same period."
   }
  ],
  "business": {
-  "ko": "엑스페릭스는 2017년 설립된 디지털 신원확인 솔루션 전문기업으로, 2019년 코스닥에 상장됐으며 2023년 윤상철 회장 체제로 최대주주가 변경되며 슈프리마아이디에서 현 사명으로 전환했다. 핵심 본업인 Biometric Solutions 부문은 공항 자동출입국 게이트, 여권 발급기, 경찰청·행안부 지문스캐너, 은행권 인감스캐너 등 공공·금융기관향 하드웨어와 통합 SW를 제공하고, eDocument Solutions 부문은 전자주민증 등록·인증 및 전자여권 발급 사업을 담당한다. 글로벌 130여 개국 수출 레퍼런스와 75건 이상의 정부 프로젝트 트랙레코드를 보유하며, AI 기반 위조 지문 검출·OCR·FIDO2 솔루션 등을 통해 단순 하드웨어 공급사에서 통합 솔루션 사업자로 진화하고 있다. 2024년 이후 그룹 차원의 사업 다각화가 빠르게 진행 중으로, IP 수익화 전문 자회사 인텔렉추얼디스커버리(ID)를 인수하고 열관리 소재 자회사 XCM, 디지털치료기기(DTx) 자회사 베이글랩스, AI 솔루션 자회사 에이뉴트를 계열사로 편입했다. ID는 표준 특허풀 로열티, IP 매각·중개, 회수전문기관 서비스 등 IP 수익화 사업을 영위하며, 2026 Q1 단독 기준 매출 238억원·영업이익 155억원·순이익 148억원을 달성했다. XCM은 난·불연 소재(XTBS)와 방열 소재(XTIM)로 반도체·에너지 시장을 공략 중이며, 에이뉴트는 2026년 중 흡수합병이 예정돼 AI 사업부로 통합될 전망이다. 엑스페릭스 그룹은 국내 AI 반도체 팹리스인 퓨리오사AI에 인텔렉추얼디스커버리 등을 통해 반복 지분 투자를 단행해왔으며, 퓨리오사AI RNGD NPU와 엑스페릭스 AI 소프트웨어를 결합한 'AI 올인원 어플라이언스' 공동 개발을 추진 중이다. 신규 사업목적에 기타 금융투자업을 추가하는 등 2026년 3월 정기주총에서 사업 다각화를 위한 정관 변경도 가결됐다.",
-  "en": "Xperix was founded in 2017 as a digital identity solution specialist, listed on KOSDAQ in 2019, and rebranded from Suprema ID in 2023 under Chairman Yoon Sang-cheol. Its core Biometric Solutions segment provides public- and financial-institution-grade hardware and integrated software—automated border control gates, passport issuance machines, police fingerprint scanners, and bank inkless pad scanners—while the eDocument Solutions segment handles e-national-ID registration, authentication, and e-passport issuance. With over 130 countries in its export reference base and 75+ government project track records, the company is leveraging AI-based spoof detection, OCR, and FIDO2 solutions to transition from a device supplier to an integrated solution provider. Since 2024, rapid group diversification has included the acquisition of IP monetization specialist Intellectual Discovery (ID), the establishment of thermal-management materials subsidiary XCM, and the addition of digital therapeutics player Baygle Labs and AI solutions firm Ainute. ID—which recorded standalone 2026 Q1 revenue of KRW 23.8B, operating income of KRW 15.5B, and net income of KRW 14.8B—is emerging as a meaningful consolidated earnings contributor via equity-method accounting. XCM targets the semiconductor and energy sectors with flame-retardant (XTBS) and thermal interface materials (XTIM), while Ainute is slated for full absorption as the AI division during 2026. The Xperix Group has made serial investments in domestic AI chip company FuriosaAI through Intellectual Discovery and other vehicles, with joint development of an 'AI all-in-one appliance' integrating FuriosaAI's RNGD NPU with Xperix AI software currently underway. An extraordinary shareholder resolution in March 2026 added financial investment activities to the company's business scope, underscoring the ongoing diversification strategy."
+  "ko": "엑스페릭스는 2017년 설립된 디지털 신원확인 통합 솔루션 전문기업으로 2019년 코스닥에 상장됐다. 2023년 윤상철 회장 체제로 최대주주가 변경되며 사명이 슈프리마아이디에서 현재의 엑스페릭스로 전환됐다. 주요 제품군은 공항 자동출입국 게이트, 법무부·외교부 여권 발급기, 경찰청·행정안전부 지문스캐너, 은행권 인감스캐너 등 공공·금융기관 대상 하드웨어와 통합 소프트웨어로 구성된다. 글로벌 130여 개국 수출 레퍼런스와 75건 이상의 정부 프로젝트 트랙레코드를 보유하고 있으며, 인도·유럽·아시아·아프리카 지역에서 전자주민증 등록·인증, 전자여권 발급 사업을 수주해왔다. AI 기반 위조지문 검출 및 OCR 기술 등 핵심 기술을 바탕으로 기술 경쟁력을 확대하는 중이다. 2024년에는 특허관리전문회사(NPE)인 인텔렉추얼디스커버리(ID)를 인수하며 IP 수익화 사업에 진출했는데, ID는 2010년 정부·대기업 컨소시엄 주도로 설립됐고 매출 구성은 IP 라이선싱 68%, IP 거래 11%, IP 금융 21%(2021~2024년 평균)로 이뤄져 있다. 이후 XCM(열관리·난연 소재), 베이글랩스(디지털치료제), 에이뉴트(AI) 등을 잇따라 계열사로 편입하며 본업인 디지털 신원확인 외에 IP·소재·헬스케어·AI로 사업 영역을 다각화하고 있다. 결과적으로 회사는 단일 하드웨어 공급사에서 공공보안 솔루션, IP 수익화, 신소재, AI 인프라를 아우르는 그룹 구조로 재편되는 과정에 있다.",
+  "en": "Xperix is a digital identity solution company founded in 2017 and listed on KOSDAQ in 2019. In 2023 the largest shareholder changed to Chairman Yoon Sang-cheol's group, and the company name was changed from Suprema ID to its current name. Its main product lineup consists of hardware and integrated software for public and financial institutions, including automated airport immigration gates, passport-issuance devices for the Ministry of Justice and Ministry of Foreign Affairs, fingerprint scanners for the National Police Agency and Ministry of Interior and Safety, and bank seal scanners. The company has export references in more than 130 countries and a track record of over 75 government projects, having won national ID registration and e-passport issuance contracts in India, Europe, Asia, and Africa. It has been expanding technology leadership through AI-based fake fingerprint detection and OCR capabilities. In 2024 the company acquired Intellectual Discovery (ID), a non-practicing entity (NPE) originally established in 2010 by a government and corporate consortium, entering the IP monetization business; ID's revenue mix consists of IP licensing (68%), IP trading (11%), and IP financing (21%) on a 2021-2024 average basis. Xperix subsequently brought XCM (thermal management and flame-retardant materials), Beaglabs (digital therapeutics), and Anute (AI) under its group umbrella, diversifying beyond its core digital-identity business into IP, materials, healthcare, and AI. As a result, the company is in the process of transforming from a single hardware supplier into a group spanning public security solutions, IP monetization, new materials, and AI infrastructure."
  },
  "earnings": {
-  "ko": "2022년은 매출 150.8억원(영업이익 28.2억원, OPM 18.7%, 순이익 31.0억원, 영업현금흐름 +28.9억원)으로 최근 5개 연도 내 유일하게 영업·순이익 모두 흑자를 달성한 기준점이다. 2023년은 최대주주 변경 및 구조개혁 비용 집중으로 매출이 119.1억원(–21% YoY)으로 감소하며 영업손실 41.8억원(OPM –35.1%), 순손실 37.1억원을 기록했다. 2024년은 매출 147.5억원(+24% YoY)으로 회복세에 접어들었으나 영업손실 32.5억원(OPM –22.0%)이 지속됐고, 대규모 그룹 인수 과정에서 부채비율이 65.6%로 급등했다. 2025년은 매출 214.9억원(+46% YoY)으로 외형 성장이 본격화되고 영업손실이 14.1억원(OPM –6.6%)으로 대폭 축소됐으나, 연간 지배주주 귀속 순손실은 195.2억원으로 오히려 크게 확대됐다. 이 과도한 괴리(영업손실 14.1억원 대비 순손실 195.2억원)는 2025 Q2에만 지배주주 순손실 132.2억원이 집중된 데서 비롯되며, 비경상적 영업외 비용이 당해 분기에 집중된 것으로 추정된다. 영업현금흐름도 2023~2025년 연속 마이너스(–5.2억원, –33.2억원, –25.0억원)를 기록해 현금 창출력 회복이 중요 과제로 남아 있다. 분기별 반전 흐름은 고무적인데, 2025 Q4에는 연결 기준 분기 영업이익 10.5억원으로 처음 흑자를 달성했으며, 2026 Q1은 매출 67.3억원(+35% YoY)에 영업손실 8.2억원이지만 ID 지분법 이익 35.2억원 반영으로 지배주주 순이익 29.2억원 흑자전환에 성공했다. 2026 Q1을 끝으로 2년간 영업비용에 반영됐던 전 직원 스톡옵션 비용이 종료돼 2분기부터 영업비용 감소 효과가 기대되며, 하나증권(2026.05.08) 리포트는 별도 기준 2026년 매출 약 220억원·영업이익 약 20억원(OPM 9%) 달성을 전망했다.",
-  "en": "In 2022—the only year in the past five with both operating and net profit—the company reported revenue of KRW 15.1B, operating income of KRW 2.8B (OPM 18.7%), net income of KRW 3.1B, and operating cash flow of +KRW 2.9B, providing a useful profitability benchmark. In 2023, a major-shareholder change and restructuring costs coincided with a revenue decline to KRW 11.9B (–21% YoY), generating an operating loss of KRW 4.2B (OPM –35.1%) and net loss of KRW 3.7B. Revenue recovered to KRW 14.7B (+24% YoY) in 2024, but the operating loss continued at KRW 3.2B (OPM –22.0%), and large-scale group acquisitions drove the debt ratio sharply higher to 65.6%. In 2025, revenue surged to KRW 21.5B (+46% YoY), and the operating loss narrowed markedly to KRW 1.4B (OPM –6.6%), yet the controlling-interest net loss widened dramatically to KRW 19.5B. The vast gap between operating loss and net loss is explained by the concentration of KRW 13.2B in controlling-interest net loss in Q2 2025 alone, pointing to non-recurring non-operating charges in that quarter. Operating cash flow also remained negative for three straight years (2023–2025: –KRW 0.5B, –3.3B, –2.5B). On a more positive note, the company achieved its first quarterly operating profit of KRW 1.05B in Q4 2025, and Q1 2026 delivered controlling-interest net income of KRW 2.9B (+KRW 5.0B year-on-year improvement) thanks to KRW 3.5B in equity-method gains from ID, despite an operating loss of KRW 0.8B. The expiry of company-wide stock option expense recognition in Q1 2026 is expected to reduce operating costs from Q2 onward; Hana Securities (May 8, 2026) projected standalone 2026 revenue of approximately KRW 22B and operating income of approximately KRW 2B (OPM ~9%)."
+  "ko": "연결 매출액은 2022년 150.8억원에서 2023년 119.1억원으로 줄었다가 2024년 147.5억원, 2025년 214.9억원으로 2년 연속 회복세를 보였다. 반면 영업손익은 2022년 28.2억원 흑자였던 것이 2023년 -41.8억원, 2024년 -32.5억원, 2025년 -14.1억원으로 3년째 적자를 이어갔다. 영업이익률 역시 2022년 18.7%에서 2023년 -35.1%, 2024년 -22.0%, 2025년 -6.6%로, 적자 폭은 매년 줄었지만 흑자 전환에는 이르지 못했다. 지배주주 순이익은 2022년 30.3억원 흑자였으나 2023년 -36.4억원, 2024년 -30.2억원으로 손실이 지속됐고, 2025년에는 -195.2억원으로 손실 규모가 크게 확대됐는데, 이는 2025년 2분기 지배주주 순손실이 131.9억원에 달한 데서 기인한다. 분기별로 보면 2025년 3분기 -0.7억원, 4분기 -37.9억원으로 손실이 이어졌으나, 4분기 영업이익은 10.5억원으로 분기 기준 흑자 전환에 성공했다. 이후 2026년 1분기(매출 67.3억원, 영업손실 -8.2억원, 지배주주순이익 +30.7억원)와 2분기(매출 52.6억원, 영업손실 -8.1억원, 지배주주순이익 +11.3억원)에는 영업손익은 여전히 적자였지만 지배주주 순이익이 두 개 분기 연속 흑자로 전환됐다. 회사는 관계기업 실적 개선과 지분법 이익 증가가 순이익 흑자전환에 기여했다고 설명한 바 있으며, 언론 보도에 따르면 2026년 1분기 관계기업 인텔렉추얼디스커버리(ID)가 매출 238억원, 영업이익 155억원, 순이익 148억원을 기록해 지분법 이익 증가에 크게 기여했다. 재무구조 측면에서는 부채비율이 2022년 4.8%, 2023년 6.6%에서 2024년 65.6%로 크게 뛴 뒤 2025년 35.1%로 낮아졌고, 지배주주 자본은 2022년 463.8억원에서 2025년 813.2억원으로 확대됐다.",
+  "en": "Consolidated revenue declined from KRW 15.08 billion in 2022 to KRW 11.91 billion in 2023, before recovering for two straight years to KRW 14.75 billion in 2024 and KRW 21.49 billion in 2025. Operating income, however, swung from a profit of KRW 2.82 billion in 2022 to losses of KRW -4.18 billion (2023), KRW -3.25 billion (2024), and KRW -1.41 billion (2025) — a third consecutive year in the red, though the loss narrowed each year. Operating margin followed the same pattern, moving from 18.7% in 2022 to -35.1%, -22.0%, and -6.6% in 2023-2025 respectively, narrowing losses without reaching breakeven. Net income attributable to owners was a profit of KRW 3.03 billion in 2022 but turned to losses of KRW -3.64 billion (2023) and KRW -3.02 billion (2024), before widening sharply to KRW -19.52 billion in 2025 — a deterioration driven largely by a KRW -13.19 billion net loss attributable to owners in Q2 2025 alone. Quarterly losses continued into Q3 2025 (KRW -0.07 billion) and Q4 2025 (KRW -3.79 billion), even as Q4 operating income turned positive at KRW 1.05 billion on a quarterly basis. Subsequently, in Q1 2026 (revenue KRW 6.73 billion, operating loss KRW -0.82 billion, net income attributable to owners +KRW 3.07 billion) and Q2 2026 (revenue KRW 5.26 billion, operating loss KRW -0.81 billion, net income attributable to owners +KRW 1.13 billion), operating income remained negative but net income attributable to owners turned positive for two consecutive quarters. The company has attributed this net-income turnaround to improved affiliate performance and higher equity-method gains; according to media reports, affiliate Intellectual Discovery posted Q1 2026 revenue of KRW 23.8 billion, operating profit of KRW 15.5 billion, and net profit of KRW 14.8 billion, contributing significantly to the equity-method gain. On the balance sheet, the debt ratio jumped from 4.8% (2022) and 6.6% (2023) to 65.6% in 2024 before falling to 35.1% in 2025, while equity attributable to owners expanded from KRW 46.38 billion in 2022 to KRW 81.32 billion in 2025."
  },
  "industry": {
-  "ko": "글로벌 바이오인식 시장은 전자신분증(eID) 도입 국가 확대, 공항 자동화, 디지털 국경 관리 고도화 수요에 힘입어 견조한 성장세를 이어가고 있다. 특히 유럽연합이 EES(출입국 관리 시스템)를 2025년 10월 발효시키며 비EU 국적자 대상 전자 출입국 관리 인프라 구축이 유럽 전역에 진행 중이고, E-gate 신규 도입 수요가 창출되고 있다. 인도·아프리카·중남미 등 신흥국에서도 국가 디지털 신원 인프라 구축 프로젝트가 이어지며 대형 정부 수주 기회가 지속되고 있다. 경쟁 구도 측면에서 엑스페릭스는 IDEMIA, Thales, Suprema 등 글로벌 생체인식 강자들과 경쟁하나, 130개국 이상의 정부 납품 레퍼런스와 공공 하드웨어·통합 SW 역량이 차별점이다. IP 수익화 시장은 AI·5G·WiFi 표준 특허의 경제적 가치가 부각되며 성장 중이며, ID는 북미향 GPU 레이트레이싱·AI 음성인식·4G/5G·WiFi 표준 특허 포트폴리오를 지속 확대하고 있다. 열관리 소재(TIM) 시장도 AI 서버·반도체 패키징·전기차 배터리 열 관리 수요 증가로 고성장 국면에 진입했으며, XCM이 공략하는 반도체 공장·해저케이블·선박 케이블 분야는 수요가 빠르게 확대되고 있다. 국내 AI 반도체 생태계에서는 퓨리오사AI가 HBM3 탑재 NPU '레니게이드(RNGD)' 양산을 추진하며 국민성장펀드의 8,000억원 직접투자 승인(2026.05.28)을 받는 등 생태계가 본격화되고 있어 관련 투자 포트폴리오를 보유한 엑스페릭스의 간접 수혜 모멘텀과 연결된다.",
-  "en": "The global biometric identification market continues its steady growth trajectory, driven by expanding eID adoption, airport automation, and digital border management. The EU's Entry/Exit System (EES), which took effect in October 2025, is spurring E-gate procurement across Europe for non-EU travelers. Emerging markets in India, Africa, and Latin America are also generating large government contract opportunities through national digital identity infrastructure projects. Xperix competes against global biometric leaders such as IDEMIA, Thales, and Suprema, but differentiates itself through government delivery references spanning over 130 countries and its integrated hardware-plus-software capability. The IP monetization market is growing as the commercial value of AI, 5G, and Wi-Fi standard patents rises, with ID steadily expanding its portfolio covering North American GPU ray-tracing, AI voice recognition, and 4G/5G/Wi-Fi standards. The thermal interface material (TIM) market is in a high-growth phase, fueled by demand from AI servers, semiconductor packaging, and EV battery thermal management—all key target segments for XCM. On the AI semiconductor front, FuriosaAI secured KRW 800B in National Growth Fund investment approval in late May 2026 as it advances RNGD NPU mass production, underscoring the momentum of the domestic AI chip ecosystem and providing an indirect tailwind for Xperix's investment portfolio."
+  "ko": "회사가 속한 디지털 신원확인·생체인식 시장은 각국 정부의 전자여권, 국가신원증(NID), 출입국관리 시스템 고도화 수요에 연동돼 있으며, 유럽의 입출국시스템(EES) 시행과 같은 정책 이벤트가 신규 수주 촉진 요인으로 작용한다. 하나증권은 2026년 5월 리포트에서 유럽 EES 시행 및 글로벌 대형 프로젝트 입찰 가시화로 본업 외형 회복이 본격화되고 있다고 평가했다. 이 시장은 정부·공공기관 발주 중심의 입찰 구조여서 프로젝트 수주부터 매출 인식까지 리드타임이 길고 분기별 실적 편차가 큰 특징이 있다. 한편 자회사 인텔렉추얼디스커버리가 속한 특허관리전문회사(NPE) 산업은 글로벌 대기업 대상 라이선싱·소송을 통한 수익화가 핵심으로, 협상 결과에 따라 개별 계약 규모가 실적에 큰 영향을 미치는 구조다. 신소재(XCM) 부문은 전선·이차전지·건설 등 다양한 전방산업에 열관리·난연 소재를 공급하는 초기 성장 단계에 있다. 경쟁 구도 측면에서 디지털 신원확인 분야는 다수의 글로벌·국내 업체가 각국 정부 입찰에 참여하는 구조이며, 회사는 130여 개국 수출 및 75건 이상의 정부 프로젝트 레퍼런스를 경쟁력으로 제시하고 있다.",
+  "en": "The digital identity and biometrics market Xperix operates in is tied to government demand for e-passports, national ID (NID) systems, and border-control modernization, with policy events such as the European Entry/Exit System (EES) rollout acting as catalysts for new orders. In a May 2026 report, Hana Securities assessed that the EES rollout and visibility on large global project tenders were driving a recovery in the core business's top line. Because this market is centered on government and public-sector tenders, the lead time from contract win to revenue recognition tends to be long, resulting in significant quarter-to-quarter variability. Meanwhile, the non-practicing entity (NPE) industry that subsidiary Intellectual Discovery operates in is built around licensing and litigation-based monetization against large global corporations, where individual settlement outcomes can materially sway results. The new-materials (XCM) segment, supplying thermal-management and flame-retardant materials to end markets such as cables, secondary batteries, and construction, is still in an early growth stage. In terms of competitive positioning, the digital-identity segment involves numerous domestic and global vendors competing for government tenders, and the company points to its export presence in over 130 countries and track record of more than 75 government projects as competitive differentiators."
  },
  "outlook": {
-  "ko": "회사 측은 2026년을 '바이오인식 사업 안정 성장과 AI 중심 사업 구조 전환이 본격화되는 시기'로 규정하고 있다. 해외 파이프라인으로는 이탈리아 EES RS-S60 1,000여 대, 프랑스·멕시코 전자여권 RSSG10 3,000여 대, 인도 NID RS-G10i 10,000여 대, 남아공·브라질 경찰청 및 NID 입찰 등 대형 프로젝트가 2026년 중 순차적으로 수주 전환될 예정이다. SITA 인증 작업이 2026년 내 마무리되면 글로벌 공항 자동화 ATI(One-ID) 시장 진입이 가능해지며 신규 채널이 열린다. 하나증권 리포트(2026.05.08)는 별도 기준 2026년 매출 약 220억원, 영업이익 약 20억원(OPM 9%)을 전망하며 본업 흑자 기조 안착을 예상했다. XCM은 2026년 3분기부터 반도체 공장향 MV 케이블 소재 PO 발생이 예상되며, 방열 소재 양산 본격화 시 연결 매출에 신규 기여가 발생한다. 에이뉴트 흡수합병 완료 후 AI 사업부를 중심으로 공공·출입국·행정 분야 AI 전환(AX) 수요 대응이 시작되고, 퓨리오사AI RNGD NPU와 엑스페릭스 SW를 결합한 'AI 올인원 어플라이언스' 상용화 일정이 핵심 체크포인트다. 스톡옵션 비용 소멸로 2분기부터 영업비용 감소 효과가 반영되고, ID의 AI·5G·WiFi 표준특허 포트폴리오 확대에 따른 지분법 이익 안정성도 개선될 전망이다.",
-  "en": "Management has characterized 2026 as the year when 'stable growth in the biometric business will be complemented by a full-scale transition to an AI-centric structure.' The overseas project pipeline for 2026 includes sequential deliveries of Italy EES RS-S60 (approximately 1,000 units), France/Mexico e-passport RSSG10 (approximately 3,000 units), India NID RS-G10i (approximately 10,000 units), and South Africa/Brazil police and NID tenders. Completion of SITA certification in 2026 would unlock access to the global airport ATI (One-ID) automation market as a new distribution channel. Hana Securities (May 8, 2026) projected standalone 2026 revenue of approximately KRW 22B and operating income of approximately KRW 2B (OPM ~9%), signaling a return to standalone operating profitability. XCM is expected to begin receiving purchase orders for MV cable materials destined for semiconductor fabs from Q3 2026, adding a new revenue stream to consolidated results upon commencement of mass production. Following the absorption of Ainute as the AI division, the company plans to target AI transformation (AX) demand in public-sector, border control, and administration, with the commercialization timeline of the joint 'AI all-in-one appliance' with FuriosaAI being a critical milestone. The elimination of stock option charges from Q2 2026 should reduce operating expenses, while ID's growing AI and wireless standards patent portfolio is expected to improve equity-method income stability."
+  "ko": "하나증권은 2026년 5월 리포트에서 별도 기준 2026년 매출 약 220억원, 영업이익 약 20억원(영업이익률 9%)을 전망하며 별도 영업이익 흑자 기조가 2025년 4분기부터 시작됐다고 밝혔다. 2026년 파이프라인으로는 이탈리아 EES용 RS-S60 약 1,000여 대, 프랑스·멕시코 전자여권용 RSSG10 약 3,000여 대, 인도 NID용 RS-G10i 약 10,000여 대, 남아프리카공화국·브라질 경찰청 및 NID 입찰 등 대형 프로젝트가 언급됐다. 추가로 SITA 인증 작업이 연내 마무리되며 ATI(One-ID) 시장 진입을 추진하고, eDocument 신제품과 AFIS 플랫폼, Mobile OCR 솔루션 개발을 통해 단순 디바이스 공급사에서 통합 솔루션 사업자로 전환을 추진한다는 계획이 제시됐다. 회사는 2026년 상반기 실적 공시를 통해 관계기업 ID의 지분 추가 인수를 통한 연결 종속회사 편입을 연내 추진 중이라고 밝혔으며, 편입이 성사될 경우 연결 매출과 영업이익 지표가 크게 확대될 것으로 기대된다고 설명했다. 회사 관계자는 인텔렉추얼디스커버리 연결 편입과 베이글랩스의 디지털헬스케어 사업, 퓨리오사AI 총판 사업을 포함한 AI솔루션 사업의 상업화가 순차적으로 진행되면서 2027년에는 기존 사업과 신규 사업이 함께 실적 개선을 이루는 국면이 마련될 것이라고 전망했다. 다만 이러한 계획은 지분 추가 인수 성사 여부, 해외 정부 프로젝트의 실제 발주(PO) 시점 등 확인이 필요한 변수에 좌우된다.",
+  "en": "In its May 2026 report, Hana Securities projected standalone FY2026 revenue of roughly KRW 22 billion and operating profit of about KRW 2 billion (a 9% operating margin), noting that standalone operating profitability had turned positive starting in Q4 2025. The 2026 project pipeline cited included around 1,000 units of the RS-S60 for Italy's EES program, roughly 3,000 units of the RSSG10 e-passport reader for France and Mexico, about 10,000 units of the RS-G10i for India's NID program, and tenders with South Africa and Brazil's police and NID authorities. The company also plans to complete SITA certification within the year to enter the ATI (One-ID) market, and to develop new eDocument products, an AFIS platform, and a mobile OCR solution as part of a shift from a device supplier to an integrated solution provider. In its H1 2026 disclosure, the company said it is pursuing additional stake acquisition in affiliate ID this year to bring it under consolidated subsidiary status, which it said would materially expand consolidated revenue and operating profit metrics if completed. Company officials have said that as the ID consolidation, Beaglabs' digital healthcare business, and the Furiosa AI distribution business progress sequentially, 2027 could be a phase in which both existing and new businesses jointly show improved performance. These plans, however, hinge on variables that still require confirmation, including whether the additional stake acquisition is completed and the actual purchase-order timing for overseas government projects."
  },
  "valuation_comment": {
-  "ko": "EPS가 손실 구간(–467원, 기본 주당순손실 기준)에 있어 PER 산출이 불가능하며, 이익 회복 속도가 밸류에이션의 핵심 변수다. 주가는 BPS(2,707원, 자체 산출 기준) 근방에서 거래되고 있어 순자산 대비 거의 등가 혹은 소폭 할인 구간에 위치하며, 영업 흑자와 본업 이익 창출이 선행되기 전까지 순자산 배수의 의미 있는 확장을 기대하기는 구조적으로 어렵다. 흑자를 기록했던 2022년과 비교하면 현재 매출 규모는 당시를 크게 상회하나, 이익 창출력이 회복되기 전에는 그 격차가 밸류에이션에 온전히 반영되기 어렵다. 배당 지급 이력이 없어(DPS 0원) 배당 환원 측면에서 업종 평균을 하회한다. ID 지분법 이익의 안정적 연결 반영, 해외 대형 프로젝트 수주 확정, 스톡옵션 비용 소멸에 따른 영업비용 감소가 이익 회복 경로를 가시화할 경우, 순자산 기준 현재 수준에서 밸류에이션 재평가의 계기가 마련될 수 있다.",
-  "en": "With EPS in loss territory (basic loss per share of KRW –467), PER is not calculable, and the pace of earnings recovery is the dominant valuation variable. The share price is trading near the book value per share (BPS of KRW 2,707, self-calculated basis), placing it in an approximately flat-to-modest-discount zone relative to net assets; a meaningful expansion of price-to-book is structurally difficult until sustained core operating profitability is demonstrated. Although current revenue significantly exceeds the levels seen in the last profitable year (2022), that growth premium cannot be fully reflected in the valuation ahead of a proven earnings recovery. With no dividend history (DPS: zero), shareholder returns trail the sector average. Stable consolidation of equity-method gains from ID, firm booking of large overseas contracts, and the removal of stock option expense headwinds together represent the most credible path to earnings recovery—and potential triggers for a re-rating from the current level near book value."
+  "ko": "회사는 자체 산출 기준으로 순자산 대비 주가가 낮은 수준에서 거래되고 있으며, 한국거래소 집계 기준으로도 유사한 관계가 확인된다. 다만 최근 몇 년간 순이익이 적자와 소폭 흑자를 오간 만큼, 이익 대비 주가 배수는 과거 통상적인 거래 밴드보다 높은 구간에 위치해 있다. 배당은 최근 회계연도 기준으로 실시되지 않고 있어 배당수익률 논의 자체가 성립하지 않는 상태다. 지배주주 순이익은 2022년 흑자에서 2023~2025년 적자로, 이후 2026년 상반기 두 개 분기 연속 흑자로 전환되는 방향성을 보이고 있으나, 흑자 전환의 상당 부분이 관계기업 지분법 이익에 기인해 연결 영업손익 자체의 개선과는 별개로 해석할 필요가 있다. 자기자본은 지속적으로 확대되고 있어 순자산 규모 측면의 완충력은 커지는 추세다.",
+  "en": "On the company's own calculation, the shares trade at a level below net asset value, a relationship also broadly confirmed under the Korea Exchange's own figures. However, given that net income has swung between losses and modest profits in recent years, the price multiple relative to earnings sits above what has historically been a typical trading band. No dividend has been paid in the most recent fiscal year, so a dividend-yield discussion does not currently apply. Net income attributable to owners moved from a profit in 2022 to losses across 2023-2025, then turned to profit for two consecutive quarters in H1 2026 — a directional shift, though a substantial portion of that turnaround stems from equity-method gains at an affiliate rather than from underlying improvement in consolidated operating income, which warrants separate interpretation. Total equity has continued to expand, increasing the net-asset buffer over time."
  },
  "bull": [
   {
    "title": {
-    "ko": "3년 연속 매출 성장과 영업 흑자 전환 임박",
-    "en": "Three Consecutive Years of Revenue Growth and Imminent Operating Profitability"
+    "ko": "관계기업 지분법 이익의 순이익 견인",
+    "en": "Affiliate Equity-Method Gains Driving Net Income"
    },
    "body": {
-    "ko": "2023~2025년 연결 매출이 119.1억→147.5억→214.9억원으로 3년 연속 확대됐으며, 2025 Q4에는 분기 영업이익 10.5억원으로 처음 흑자를 달성했다. 2026 Q1도 매출 67.3억원(+35% YoY)으로 성장세가 이어졌다. 스톡옵션 비용이 2026 Q1을 끝으로 소진됨에 따라 2분기부터 영업비용 감소 효과가 발생하며, 하나증권은 별도 기준 2026년 영업이익 약 20억원 달성을 전망하는 등 흑자 기조 안착 가능성이 높아지고 있다.",
-    "en": "Consolidated revenue expanded for three straight years from KRW 11.9B to 14.7B to 21.5B (2023–2025), and the company achieved its first quarterly operating profit of KRW 1.05B in Q4 2025. The growth momentum continued in Q1 2026 with revenue of KRW 6.7B (+35% YoY). The expiry of company-wide stock option charge recognition in Q1 2026 should reduce operating expenses from Q2, and Hana Securities projects standalone operating income of approximately KRW 2B in 2026, raising the probability of sustained profitability."
+    "ko": "2026년 1분기와 2분기 지배주주 순이익이 각각 30.7억원, 11.3억원으로 두 개 분기 연속 흑자를 기록했는데, 이는 관계기업 인텔렉추얼디스커버리(ID)의 실적 호조가 지분법 이익으로 반영된 결과다. ID는 2025년 매출 478억원(+57% YoY), 영업이익 113억원(+394% YoY)의 사상 최대 실적을 냈고 2026년 1분기에도 매출 238억원, 순이익 148억원을 기록했다. 지분 추가 인수를 통한 연결 편입이 성사되면 이 실적이 지분법 이익을 넘어 연결 재무제표 전체에 직접 반영될 수 있다.",
+    "en": "Net income attributable to owners posted two consecutive quarterly profits in Q1 and Q2 2026 (KRW 3.07 billion and KRW 1.13 billion), reflecting strong equity-method gains from affiliate Intellectual Discovery (ID). ID posted a record 2025 with revenue of KRW 47.8 billion (+57% YoY) and operating profit of KRW 11.3 billion (+394% YoY), and continued into Q1 2026 with revenue of KRW 23.8 billion and net profit of KRW 14.8 billion. If additional stake acquisition leads to full subsidiary consolidation, this performance could flow directly into the consolidated financial statements beyond just equity-method income."
    }
   },
   {
    "title": {
-    "ko": "ID 지분법 이익의 연결 편입과 IP 사업 고성장",
-    "en": "Equity-Method Gains from ID and High-Growth IP Business"
+    "ko": "본업 외형 회복과 별도 흑자 전환",
+    "en": "Core Business Recovery and Standalone Profitability"
    },
    "body": {
-    "ko": "관계기업 인텔렉추얼디스커버리(ID)는 2026 Q1에 매출 238억원·영업이익 155억원·순이익 148억원을 기록하며 대형 IP 합의 성과가 본격화됐다. 이에 따른 지분법 이익 35.2억원이 엑스페릭스의 2026 Q1 지배주주 순이익 흑자전환의 핵심 동인이 됐다. AI 음성인식·GPU 레이트레이싱·4G/5G·WiFi 표준특허 포트폴리오 확대로 ID의 수익 기반이 다각화되고 있어 중장기 지분법 이익의 안정성이 높아지고 있다.",
-    "en": "Associate Intellectual Discovery (ID) reported KRW 23.8B revenue, KRW 15.5B operating income, and KRW 14.8B net income in Q1 2026, reflecting the fruition of major IP settlements. The resulting KRW 3.5B equity-method gain was the primary driver behind Xperix's Q1 2026 net income recovery. With a growing portfolio spanning AI voice recognition, GPU ray-tracing, and 4G/5G/Wi-Fi standard patents, the breadth of ID's revenue base is increasing, improving medium-term equity-method income stability."
+    "ko": "연결 매출은 2023년 저점 이후 2024년, 2025년 2년 연속 증가했고, 회사 공시에 따르면 2026년 상반기 별도 기준 매출도 113억원으로 전년 대비 52.7% 늘며 영업이익이 흑자로 전환됐다. 유럽 EES 시행과 인도·이탈리아·프랑스·멕시코 등의 대형 전자여권·NID 프로젝트 파이프라인이 확인돼 있어 외형 회복의 근거가 되고 있다. 지난 2년간 반영됐던 전 직원 스톡옵션 비용이 2026년 1분기로 종료돼 이후 수익성 개선 여지가 있다는 점도 회사 측 설명이다.",
+    "en": "Consolidated revenue rose for two consecutive years in 2024 and 2025 after bottoming in 2023, and per company disclosure, standalone H1 2026 revenue also grew 52.7% year-on-year to KRW 11.3 billion, with operating income turning positive. A confirmed pipeline of large e-passport and NID projects in Europe, India, Italy, France, and Mexico, tied partly to the EES rollout, underpins this top-line recovery. The company has also noted that stock-option expenses recognized over the prior two years concluded in Q1 2026, creating room for further profitability improvement."
    }
   },
   {
    "title": {
-    "ko": "글로벌 eID 수요 확대와 퓨리오사AI AI 생태계 모멘텀",
-    "en": "Global e-ID Demand Tailwind and FuriosaAI AI Ecosystem Momentum"
+    "ko": "IP·소재·헬스케어로 사업 다각화",
+    "en": "Diversification into IP, Materials, and Healthcare"
    },
    "body": {
-    "ko": "유럽 EES 시행으로 E-gate 인프라 수요가 창출되고, 인도·남아공·브라질 등 신흥시장 대형 프로젝트가 2026년 순차적으로 수주 반영될 전망이다. 퓨리오사AI는 국민성장펀드 8,000억원 투자(2026.05.28 승인)를 받으며 국산 AI 반도체 생태계의 핵심 기업으로 부상했으며, 엑스페릭스 그룹은 초기 투자사로서 지분 가치 상승 수혜와 함께 'AI 올인원 어플라이언스' 협력 사업 기회를 동시에 보유하고 있다.",
-    "en": "The EU EES rollout is generating new E-gate infrastructure procurement, and a sizeable pipeline of government projects in India, South Africa, and Brazil is expected to convert to firm orders progressively in 2026. FuriosaAI secured a KRW 800B National Growth Fund investment approval in late May 2026, establishing itself as a flagship player in Korea's AI semiconductor ecosystem. Xperix Group, as an early-stage investor, stands to benefit from rising equity value and holds a joint business opportunity through the 'AI all-in-one appliance' collaboration."
+    "ko": "2024년 ID 인수를 계기로 XCM(열관리 소재), 베이글랩스(디지털치료제), 에이뉴트(AI) 등을 잇따라 계열사로 편입하며 단일 하드웨어 사업 의존도를 낮추고 있다. 회사는 ID 연결 편입, 베이글랩스의 디지털헬스케어 사업화, 퓨리오사AI 총판 사업 등이 순차 진행되면 2027년에는 기존·신규 사업이 함께 실적에 기여하는 국면이 될 것으로 전망한다고 밝혔다. 다각화된 사업 포트폴리오는 단일 부문의 부진이 전체 실적에 미치는 영향을 완충할 수 있는 구조적 요인이 될 수 있다.",
+    "en": "Following the 2024 ID acquisition, the company has brought XCM (thermal materials), Beaglabs (digital therapeutics), and Anute (AI) under its group structure in succession, reducing reliance on a single hardware business. The company has stated that as ID consolidation, Beaglabs' digital healthcare commercialization, and the Furiosa AI distribution business proceed sequentially, 2027 could become a phase where both existing and new businesses contribute jointly to results. This diversified portfolio can serve as a structural buffer against underperformance in any single segment."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "영업 흑자 안착 지연 및 영업현금흐름 마이너스 지속",
-    "en": "Delayed Operating Profitability and Persistently Negative Operating Cash Flow"
+    "ko": "연결 영업손익 3년 연속 적자",
+    "en": "Three Straight Years of Consolidated Operating Losses"
    },
    "body": {
-    "ko": "2023~2025년 3년 연속 영업손실을 기록했으며, 영업현금흐름도 같은 기간 연속 마이너스(–5.2억원→–33.2억원→–25.0억원)를 이어가고 있다. 2025 Q4의 분기 영업이익 흑자는 긍정적이나 2026 Q1에 다시 영업손실(–8.2억원)로 전환됐다. 해외 프로젝트 지연이나 비용 증가가 발생할 경우 연간 흑자 달성 시점이 계획보다 뒤로 밀릴 수 있다.",
-    "en": "The company reported operating losses for three consecutive years (2023–2025), with operating cash flow also negative throughout (–KRW 0.5B, –3.3B, –2.5B). While Q4 2025 marked the first quarterly operating profit, Q1 2026 reverted to an operating loss of KRW 0.8B. Any delays in overseas project bookings or cost overruns could push the timeline for annual operating profitability beyond current expectations."
+    "ko": "연결 영업손익은 2023년 -41.8억원, 2024년 -32.5억원, 2025년 -14.1억원으로 3년째 적자를 벗어나지 못했다. 적자 폭이 매년 줄어드는 방향성은 확인되지만, 2026년 1·2분기에도 영업손실이 각각 -8.2억원, -8.1억원으로 지속돼 완전한 흑자 전환에는 이르지 못한 상태다. AI·헬스케어 등 신사업 투자가 선행 투자 성격으로 계속되는 한 연결 영업손익의 적자 지속 가능성이 남아 있다.",
+    "en": "Consolidated operating income has stayed negative for three straight years — KRW -4.18 billion in 2023, KRW -3.25 billion in 2024, and KRW -1.41 billion in 2025. While the loss has narrowed each year, operating losses continued in Q1 and Q2 2026 (KRW -0.82 billion and KRW -0.81 billion), meaning a full operating turnaround has not yet been achieved. As long as investment in new businesses such as AI and healthcare continues as forward-looking spending, the possibility of continued consolidated operating losses remains."
    }
   },
   {
    "title": {
-    "ko": "2025년 대규모 비영업 손실의 재발 가능성",
-    "en": "Risk of Recurrence of Massive Non-Operating Losses Seen in 2025"
+    "ko": "손익 변동성과 일회성 요인 의존",
+    "en": "Earnings Volatility and Reliance on One-off/Equity Items"
    },
    "body": {
-    "ko": "2025년 연간 영업손실은 14.1억원에 불과했음에도 지배주주 귀속 순손실이 195.2억원에 달했다. Q2에만 지배주주 순손실 132.2억원이 집중된 점은 비경상 영업외 비용의 일회성 성격을 시사하지만 재발 가능성을 배제하기 어렵다. 2024년 대규모 인수 과정에서 발행된 전환사채·신주인수권 잔액이 아직 남아 있어 주가 또는 금리 변동에 따른 평가 손실이 재발할 위험이 있다.",
-    "en": "In 2025, despite an operating loss of only KRW 1.4B, controlling-interest net loss reached KRW 19.5B. The concentration of KRW 13.2B in net loss in Q2 2025 alone suggests non-recurring non-operating charges, but the risk of recurrence cannot be dismissed. Convertible bond and warrant balances remaining from 2024 acquisition financing carry embedded derivatives subject to fair-value revaluation, which could generate further non-operating losses if share prices or interest rates move adversely."
+    "ko": "2025년 지배주주 순손실은 195.2억원으로 전년보다 크게 확대됐는데, 이는 2025년 2분기 단일 분기 순손실 131.9억원이 결정적 원인이었다. 최근 두 개 분기의 순이익 흑자전환도 영업손익 개선이 아니라 관계기업 지분법 이익에 크게 의존한 결과로, 지분법 대상 회사의 실적 부침에 따라 향후 손익이 다시 흔들릴 수 있다. 분기별 실적의 큰 편차는 예측 가능성을 낮추는 요인이다.",
+    "en": "The 2025 net loss attributable to owners widened sharply to KRW 19.52 billion, driven decisively by a single-quarter net loss of KRW 13.19 billion in Q2 2025. The net-income turnaround in the two most recent quarters also stemmed largely from equity-method gains at an affiliate rather than from operating-income improvement, meaning future results could swing again depending on that affiliate's performance. Large quarter-to-quarter variability reduces earnings predictability."
    }
   },
   {
    "title": {
-    "ko": "CB 잠재 오버행 및 그룹 다각화의 경영 복잡성",
-    "en": "Convertible Bond Overhang and Management Complexity from Rapid Group Diversification"
+    "ko": "실행 리스크와 테마성 수급",
+    "en": "Execution Risk and Thematic Trading Flows"
    },
    "body": {
-    "ko": "2024년 발행된 전환사채의 전환가액이 현 주가 근방에 형성되어 있어 잠재적 주식 희석 압력이 존재한다. 바이오인식(본업)·IP(ID)·소재(XCM)·AI(에이뉴트)·DTx(베이글랩스) 등 이질적 사업군을 단기간에 확장함에 따라 경영 자원이 분산되고 각 사업의 수익 기여 시점이 불일치할 가능성이 있다. 추가 자금 조달이 필요해질 경우 신주 발행 또는 CB 추가 발행 등으로 주주 가치 희석 위험이 재발할 수 있다.",
-    "en": "The conversion price of the 2024 CB issuance is near the current share price, creating latent dilution pressure. Rapid expansion into heterogeneous businesses—biometrics, IP (ID), materials (XCM), AI (Ainute), and digital therapeutics (Baygle Labs)—risks spreading management resources thin and creating timing mismatches in profit contributions across units. If additional capital is required to fund this diversification strategy, further share dilution through new equity issuances or additional CB transactions remains a structural concern."
+    "ko": "ID 지분 추가 인수를 통한 연결 편입, 해외 정부 프로젝트의 실제 발주(PO) 전환 등 다수의 성장 스토리가 아직 확정되지 않은 계획 단계에 있다. 소형주 특성상 AI 반도체 테마 관련 뉴스플로우에 주가가 민감하게 반응해온 사례가 있어, 실질적인 실적 개선과 무관한 단기 수급 변동성에 노출될 가능성이 있다.",
+    "en": "Several growth narratives — including ID subsidiary consolidation via additional stake acquisition and the conversion of overseas government project pipelines into actual purchase orders — remain at the planning stage and are not yet confirmed. As a small-cap stock, shares have shown sensitivity to AI-semiconductor-related news flow, exposing the stock to short-term trading volatility that may be unrelated to underlying earnings improvement."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "해외 정부 프로젝트 수주 지연·취소",
-    "en": "Overseas Government Project Delays or Cancellations"
+    "ko": "연결 편입 실행 리스크",
+    "en": "Consolidation Execution Risk"
    },
    "body": {
-    "ko": "엑스페릭스 본업 매출의 주요 원천은 정부 주도 eID·전자여권 프로젝트로, 예산 삭감·입찰 지연·정치적 환경 변화에 따른 수주 지연 또는 취소 위험이 상존한다. 2026년 파이프라인인 이탈리아 EES, 인도 NID, 남아공·브라질 경찰청 프로젝트 등은 현재 PO 미확정 단계여서 수주 시점 불확실성이 크다. 프로젝트 지연은 분기 실적 변동성을 확대하고 현금흐름 계획에도 부정적 영향을 미칠 수 있다.",
-    "en": "The core revenue base relies on government-driven eID and e-passport projects, which inherently carry risks of budget cuts, tender delays, and political disruptions. Key 2026 pipeline items—Italy EES, India NID, and South Africa/Brazil police projects—have not yet been formally ordered, leaving booking timing uncertain. Delays in project awards would amplify quarterly earnings volatility and strain cash flow planning."
+    "ko": "인텔렉추얼디스커버리(ID) 지분 추가 인수를 통한 연결 종속회사 편입은 회사가 연내 추진 중이라고 밝힌 계획일 뿐 확정된 사안이 아니다. 인수 협상 지연이나 가격·구조 합의 실패 시 기대했던 연결 실적 확대 효과가 지연되거나 무산될 수 있다. 이 경우 순이익의 지분법 이익 의존 구조가 계속될 가능성이 있다.",
+    "en": "Consolidating Intellectual Discovery as a subsidiary through additional stake acquisition remains a plan the company says it is pursuing within the year, not a finalized matter. Delays in negotiation or failure to agree on pricing and structure could postpone or derail the expected boost to consolidated results, in which case net income could remain dependent on equity-method gains."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지 및 파생상품 손실 재발",
-    "en": "Financial Leverage and Derivative Loss Recurrence"
+    "ko": "해외 공공 프로젝트 수주 지연 리스크",
+    "en": "Overseas Public Project Delay Risk"
    },
    "body": {
-    "ko": "2024년 그룹 인수 과정에서 부채비율이 65.6%로 급등했으며, CB/BW 잔액에 내재된 파생상품은 공정가치 평가 의무를 수반한다. 2025년 Q2의 대규모 비영업 손실이 재발할 경우 순이익 기준 손익이 크게 왜곡되고 자본 건전성에도 부담이 될 수 있다. 금리 변동이나 주가 급등락 구간에서 파생상품 평가 변동성이 증가할 수 있다.",
-    "en": "The debt ratio surged to 65.6% in 2024 from group acquisition activities, and outstanding CB/BW balances carry embedded derivatives subject to fair-value measurement. A recurrence of the large non-operating losses seen in Q2 2025 would significantly distort net income and add pressure to capital adequacy. Interest rate changes or sharp share price movements could amplify derivative revaluation swings."
+    "ko": "이탈리아 EES, 인도 NID, 프랑스·멕시코 전자여권 등 2026년 파이프라인으로 제시된 프로젝트들은 정부 입찰과 예산 집행에 따라 발주(PO) 시점이 지연되거나 변경될 수 있다. 공공 발주 특성상 정치·행정 일정 변화에 따른 리드타임 변동성이 존재하며, 이는 분기별 실적 편차를 확대하는 요인이 될 수 있다.",
+    "en": "Projects presented as part of the 2026 pipeline — including Italy's EES, India's NID, and e-passport programs in France and Mexico — are subject to delay or change in purchase-order timing depending on government tenders and budget execution. Because these are public-sector orders, lead times can shift with political and administrative schedules, which can widen quarter-to-quarter earnings variability."
    }
   },
   {
    "cat": {
-    "ko": "신사업 투자 비용 및 수익화 지연",
-    "en": "Ongoing New Business Investment Costs and Delayed Monetization"
+    "ko": "손익 변동성 및 신사업 투자 부담",
+    "en": "Earnings Volatility and New-Business Investment Burden"
    },
    "body": {
-    "ko": "XCM 방열소재·베이글랩스 DTx·에이뉴트 AI 등 다수 신사업이 아직 본격적인 수익 창출 이전 단계에 있어 연구개발·운영 비용이 연결 손익에 부담을 주고 있다. AI 올인원 어플라이언스 상용화 시점, XCM 방열소재 PO 대규모 확보 시점이 계획보다 늦어질 경우 수익성 개선 일정이 지연될 수 있다. 신사업 투자에 필요한 추가 자금 조달 가능성도 희석 리스크로 남아 있다.",
-    "en": "Multiple new businesses—XCM thermal materials, Baygle Labs digital therapeutics, and Ainute AI—are still in pre-revenue or early monetization stages, and their R&D and operating costs continue to weigh on consolidated earnings. If the commercialization of the AI all-in-one appliance or large-scale XCM material PO generation lags behind plan, the profitability improvement timeline could be deferred. The need for additional capital to fund new business investment also remains a residual dilution risk."
+    "ko": "2025년 2분기와 같이 대규모 일회성 순손실이 재발할 가능성을 배제할 수 없으며, AI·소재·헬스케어 등 다수 신사업에 대한 선행 투자가 지속되는 한 연결 영업손익의 적자가 이어질 수 있다. 신사업들이 계획대로 상업화에 성공하지 못할 경우 투자 대비 성과가 지연될 리스크도 있다.",
+    "en": "The possibility of a large one-off net loss recurring, as seen in Q2 2025, cannot be ruled out, and consolidated operating losses could persist as long as forward investment continues across multiple new businesses in AI, materials, and healthcare. There is also a risk that returns on this investment could be delayed if these new businesses fail to commercialize as planned."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 말 (2026 Q2 연결 실적 발표)",
-    "en": "Late August 2026 (2026 Q2 Consolidated Earnings Release)"
+    "ko": "2026년 11월 중(3분기 실적 발표 예상 시기)",
+    "en": "Around November 2026 (expected Q3 earnings release)"
    },
    "what": {
-    "ko": "스톡옵션 비용 소진 후 첫 분기인 Q2의 영업이익 개선 폭과 ID 지분법 이익 지속 여부를 확인. 연속 분기 영업손실 축소 또는 흑자 기록이 연간 흑자 달성 가능성의 핵심 지표다.",
-    "en": "Check the magnitude of operating profit improvement in Q2 (the first full quarter post-stock-option expiry) and the continuity of ID equity-method income. Successive quarters of narrowing or positive operating income are the key signal for annual profitability."
+    "ko": "지배주주 순이익이 최근 두 개 분기처럼 지분법 이익에 의존한 흑자 기조를 이어가는지, 연결 영업손익 자체가 개선되는지를 확인해야 한다.",
+    "en": "Check whether net income attributable to owners continues its equity-method-driven profit trend from the two most recent quarters, and whether consolidated operating income itself shows improvement."
    }
   },
   {
    "when": {
-    "ko": "2026년 3분기 (XCM 방열소재 PO 발생 확인)",
-    "en": "Q3 2026 (XCM Thermal Material Purchase Order Confirmation)"
+    "ko": "2026년 4분기 중",
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "반도체 공장향 MV 케이블 소재 PO 발생 여부와 규모를 점검. 양산 본격화 시 연결 매출에 신규 성장 축이 추가되는 시점이며, PO 지연은 XCM 사업 가치 평가에 영향을 미친다.",
-    "en": "Verify whether purchase orders for MV cable materials for semiconductor fabs are placed and their scale. Mass production commencement would add a new revenue growth pillar; any delay would weigh on the assessment of XCM's business value."
+    "ko": "인텔렉추얼디스커버리(ID) 지분 추가 인수를 통한 연결 종속회사 편입 추진 결과가 공시를 통해 확정되는지 확인해야 한다.",
+    "en": "Check whether the pursuit of additional stake acquisition in Intellectual Discovery (ID) for subsidiary consolidation is finalized and disclosed."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (에이뉴트 흡수합병 완료 및 AI사업부 출범)",
-    "en": "H2 2026 (Ainute Absorption Completion and AI Division Launch)"
+    "ko": "2026년 하반기 중",
+    "en": "During H2 2026"
    },
    "what": {
-    "ko": "에이뉴트 합병 기일 도래 후 AI사업부 공식 출범과 퓨리오사AI 'AI 올인원 어플라이언스' 상용화 일정 확인. 합병에 따른 비용 절감 효과와 AI 매출 가시화 여부가 핵심 관전 포인트다.",
-    "en": "Monitor the official launch of the AI division following Ainute's absorption and the commercialization timeline of the 'AI all-in-one appliance' with FuriosaAI. Cost savings from integration and any initial AI revenue contribution are the key items to track."
+    "ko": "이탈리아 EES, 인도 NID, 프랑스·멕시코 전자여권 등 파이프라인 프로젝트의 실제 발주(PO) 전환과 매출 반영 시점을 확인해야 한다.",
+    "en": "Check the actual conversion of pipeline projects — Italy's EES, India's NID, and France/Mexico e-passport programs — into purchase orders and their revenue-recognition timing."
    }
   },
   {
    "when": {
-    "ko": "2026년 연중 (이탈리아·인도·남아공 프로젝트 수주 확정)",
-    "en": "Throughout 2026 (Italy / India / South Africa Project Award Outcomes)"
+    "ko": "2026년 4분기 중",
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "이탈리아 EES RS-S60, 인도 NID RS-G10i, 남아공 경찰청 및 NID 입찰 결과를 확인. 이들 프로젝트의 수주 여부와 계약 금액은 2026년 하반기 및 2027년 매출 전망의 핵심 변수다.",
-    "en": "Track bid results for Italy EES RS-S60, India NID RS-G10i, and South Africa police/NID tenders. Award outcomes and contract values are the primary variables determining the 2026 H2 and 2027 revenue trajectory."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 4분기 (SITA 인증 완료 및 ATI 시장 진입)",
-    "en": "Q4 2026 (SITA Certification Completion and ATI Market Entry)"
-   },
-   "what": {
-    "ko": "SITA 인증 작업 완료 여부와 글로벌 공항 자동화 ATI(One-ID) 시장 진입 선언을 확인. 인증 완료는 기존 정부 프로젝트 채널 외 공항 인프라 시장이라는 신규 성장 동력이 열리는 시점을 의미한다.",
-    "en": "Confirm SITA certification completion and formal entry into the ATI (One-ID) airport automation market. Certification would open a major new global channel beyond existing government project pipelines, marking a meaningful medium-term growth catalyst."
+    "ko": "베이글랩스의 디지털헬스케어 사업화 및 퓨리오사AI 총판 관련 AI 인프라 사업의 상업화 진척 여부를 확인해야 한다.",
+    "en": "Check progress on the commercialization of Beaglabs' digital healthcare business and the AI infrastructure business tied to the Furiosa AI distribution agreement."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "엑스페릭스는 글로벌 전자신원확인 수요 회복을 발판으로 3년 연속 매출 성장을 이어가며 영업손실 폭을 빠르게 축소하고 있다는 점에서 본업의 방향성은 긍정적이다. 2026 Q1에는 ID의 지분법 이익 가시화로 지배주주 순이익 흑자전환이 이루어졌고, 스톡옵션 비용 소멸 효과가 가세하면서 2026년 하반기로 갈수록 연결 수익성 개선 가능성이 높아지고 있다. 반면 2025년 지배주주 귀속 순손실 195.2억원에서 드러났듯 영업외 비경상 손실의 재발 위험은 여전히 불확실성 요인으로 남아 있으며, CB 잔액에 따른 잠재 희석 리스크와 영업현금흐름 적자 지속도 재무 건전성 관점에서 주시해야 할 변수다. 이탈리아·인도·남아공 등 해외 대형 프로젝트 수주 확정, XCM 방열소재 양산 본격화, 에이뉴트 AI사업부 통합, 퓨리오사AI 협력 상용화 등 그룹 마일스톤이 구체화될수록 중장기 성장 서사의 신뢰성이 높아질 것이다. 결국 본업 영업 흑자의 현금 창출력 전환과 비경상 손실 구조 해소가 선행되어야 사업 다각화의 잠재 가치가 시장에서 온전히 평가받을 수 있다.",
-   "en": "Xperix has maintained three consecutive years of revenue growth on the strength of recovering global e-ID demand, and is rapidly narrowing core operating losses—a positive directional signal. Controlling-interest net income turned positive in Q1 2026, driven by the materialization of ID equity-method gains, and the elimination of stock option charges adds further momentum toward improved consolidated profitability in H2 2026. However, the KRW 19.5B controlling-interest net loss in 2025 underscores the persistent risk of non-recurring non-operating losses, while residual CB dilution potential and negative operating cash flow remain key financial health concerns. The credibility of the company's medium-to-long-term growth narrative will strengthen as group milestones are delivered—firm bookings for overseas government projects (Italy, India, South Africa), XCM thermal material mass production, Ainute AI division integration, and FuriosaAI collaboration commercialization. Ultimately, demonstrated core operating profitability with positive cash generation and normalization of non-recurring financial losses are prerequisites for the market to fully price in the value of Xperix's diversified group platform."
+   "ko": "엑스페릭스는 본업인 디지털 신원확인 사업의 외형 회복과 별도 기준 흑자 전환이 확인되는 한편, 연결 기준으로는 신사업 투자 부담으로 3년째 영업손실을 이어가고 있다. 2026년 상반기 두 개 분기 연속 지배주주 순이익 흑자는 관계기업 인텔렉추얼디스커버리의 지분법 이익에 크게 의존한 결과로, 연결 영업손익 자체의 구조적 개선과는 구분해 볼 필요가 있다. ID 지분 추가 인수를 통한 연결 편입, 유럽·인도 등 해외 대형 프로젝트의 실제 발주, XCM·베이글랩스·AI 인프라 등 신사업의 상업화가 순차적으로 확인돼야 할 변수로 남아 있다. 재무구조 측면에서는 부채비율이 낮아지고 자기자본이 꾸준히 확대되는 점이 긍정적이나, 손익 자체의 변동성은 여전히 크다. 투자자는 다가오는 3분기 실적과 ID 연결 편입 여부, 해외 프로젝트 진행 상황을 함께 살펴볼 필요가 있다.",
+   "en": "Xperix shows a recovering core digital-identity business with a standalone operating-profit turnaround, while consolidated operating income has remained negative for three straight years due to new-business investment burden. The two consecutive quarters of net income attributable to owners in H1 2026 were driven largely by equity-method gains from affiliate Intellectual Discovery, which should be viewed separately from any structural improvement in consolidated operating income itself. Key variables that still require confirmation include the completion of ID's subsidiary consolidation via additional stake acquisition, the actual conversion of large overseas projects in Europe and India into purchase orders, and the commercialization progress of new businesses such as XCM, Beaglabs, and AI infrastructure. On the balance sheet side, a declining debt ratio and steadily expanding equity are positive developments, but earnings volatility itself remains significant. Investors may want to monitor the upcoming Q3 results together with the status of ID's consolidation and progress on overseas projects."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A317770",
-  "https://files-scs.pstatic.net/2026/05/08/fRe1fu64Uz/%EC%97%91%EC%8A%A4%ED%8E%98%EB%A6%AD%EC%8A%A4%EF%BC%BB317770%EF%BC%BD_20260508_Hana_1095143.pdf",
-  "https://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=317770",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=646251",
-  "https://www.valueline.co.kr/finance/investment/317770",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cn=&cmp_cd=317770",
-  "https://www.k5.co.kr/stock/317770",
-  "https://finance.finup.co.kr/Stock/317770",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A317770&MenuYn=Y&ReportGB=&NewMenuID=103",
-  "https://thevc.kr/xperix",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/supremaid",
-  "https://alpha-lenz.com/ko/companies/2262",
-  "https://m.saramin.co.kr/job-search/company-info-view?csn=YWF6b1hCNzhBdXZScFFvcUF4SGtXQT09",
-  "https://www.incruit.com/company/1684511524/",
+  "https://m.thinkpool.com/compDiscuss/cont/1017126",
   "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250318001915&docno=&viewerhost=",
-  "https://www.etoday.co.kr/news/view/2585523",
-  "https://www.cstimes.com/news/articleView.html?idxno=707731",
-  "https://thevc.kr/furiosaai"
+  "https://m.thinkpool.com/item/317770",
+  "https://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=317770",
+  "https://m.thinkpool.com/compDiscuss/cont/1016959",
+  "https://files-scs.pstatic.net/2026/05/08/fRe1fu64Uz/%EC%97%91%EC%8A%A4%ED%8E%98%EB%A6%AD%EC%8A%A4%EF%BC%BB317770%EF%BC%BD_20260508_Hana_1095143.pdf",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A317770",
+  "https://stocktong.co.kr/Web/Item.aspx?t=s&amp=&l=1&amp=&code=317770&amp=&item_code=317770&amp=&item_name=%EC%97%91%EC%8A%A4%ED%8E%98%EB%A6%AD%EC%8A%A4",
+  "https://valueline.co.kr/finance/mri/317770",
+  "https://hongcenter.com/683",
+  "https://alphasquare.co.kr/home/stock-summary?code=317770",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=QghBeAOlOVajsuUh",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=kRO6K8ql8zCbzWH5",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cn=&cmp_cd=317770",
+  "https://v.daum.net/v/UcnnlUqFgn",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=97oxe7JcFhoi1N2J",
+  "https://kr.investing.com/news/company-news/article-93CH-1931375",
+  "https://m.thinkpool.com/compDiscuss/cont/1009956"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "317770",
  "name": "엑스페릭스",
  "name_en": "Xperix Inc.",
@@ -233,11 +223,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 01:03",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 07:33",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -338,21 +328,22 @@
    }
   ],
   "valuation": {
-   "price": 2475,
-   "mcap": 0.0907,
+   "price": 2360,
+   "mcap": 0.0865,
    "shares": 36644144,
    "total_shares": 36486545,
    "wavg_shares": 30216983,
-   "per": 225.0,
-   "eps": 11,
-   "pbr": 0.7945,
+   "per": 196.667,
+   "eps": 12,
+   "pbr": 0.7576,
    "bps": 3115,
    "roe_ttm": 0.4,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 348476862,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.01,
+   "eps_src": "순이익÷주식수",
+   "pbr_krx": 0.97,
    "bps_krx": 2444.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,

@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "PQC·디지털자산 전환기, 이익 회복이 핵심 관건",
-  "en": "PQC & Digital Asset Pivot — Earnings Recovery Is the Central Test"
+  "ko": "인증·보안 강자, 관건은 이익 안정성",
+  "en": "Authentication Leader, Earnings Stability the Key Question"
  },
  "lead": {
-  "ko": "금융권 핀테크 인증·보안 1위 아톤이 양자내성암호·스테이블코인·AI보안 등 신사업 투자로 2025년 수익성이 크게 낮아진 가운데, 2026년 신규 계약의 본격 매출 인식 여부가 기업가치의 핵심 분기점이다.",
-  "en": "Fintech security leader ATON saw a sharp profitability decline in 2025 amid aggressive PQC, stablecoin, and AI security investments; whether new contract revenue materializes in 2026 is the pivotal test for its earnings recovery thesis."
+  "ko": "핀테크 인증·보안 시장에서 독보적 지위를 다져온 아톤이 매출 성장세는 이어가고 있으나 2025년 이후 이익 변동성이 커지며 수익성 안정화가 다음 과제로 떠올랐다.",
+  "en": "Aton, a leading player in fintech authentication and security, continues to grow revenue, but earnings volatility has widened since 2025, making profitability stabilization the next key task."
  },
  "keypoints": [
   {
-   "ko": "금융권 사설인증·모바일OTP 시장 1위 사업자로 은행·증권 등 30여 개 주요 금융기관에 솔루션 공급 중",
-   "en": "Dominant #1 provider of private certificate and mobile OTP solutions, supplying 30+ major financial institutions including leading banks and brokerages."
+   "ko": "2025년 연결 매출은 676억원으로 전년 대비 늘었지만 영업이익률은 22.1%에서 15.3%로 낮아지고 지배주주순이익은 큰 폭 감소했다.",
+   "en": "2025 consolidated revenue rose to KRW 67.6bn, but the operating margin narrowed from 22.1% to 15.3% and owner net profit fell sharply."
   },
   {
-   "ko": "NIST 표준 양자내성암호(PQC) 솔루션을 증권·가상자산·은행 전 업권에 공급, 금융 전 업권 레퍼런스 확보(2026년 현재)",
-   "en": "NIST-standard PQC solutions now deployed across securities firms, crypto exchanges, and banks — establishing a full financial-sector reference portfolio by mid-2026."
+   "ko": "2025년 4분기 지배주주순이익이 적자(-32억원)로 전환된 뒤 2026년 1분기에도 영업이익이 4억원대로 급감했다가 2분기 다시 회복하는 등 분기별 변동성이 뚜렷하다.",
+   "en": "Owner net profit swung to a loss in 4Q25 (-KRW 3.2bn), operating profit slumped to around KRW 0.4bn in 1Q26, then rebounded in 2Q26, highlighting quarter-to-quarter volatility."
   },
   {
-   "ko": "한국은행 CBDC 프로젝트 한강 1·2단계 NH농협은행 사업자로 선정, 스테이블코인 플랫폼 '밴티지' 개발 완료 후 상용화 진입",
-   "en": "Selected as system integrator for Bank of Korea CBDC pilot ('Project Hangang') Phases 1 and 2 at NH Nonghyup, while stablecoin platform 'Vantage' has completed development and entered commercialization."
+   "ko": "금융권 클라우드 전환과 기업용 사설인증서 시장 확대가 신규 수요를 만들고 있으며, 양자내성암호화 등 차세대 보안 기술 투자를 지속하고 있다.",
+   "en": "Financial-sector cloud migration and the expanding enterprise private certification market are creating new demand, while the company continues investing in next-generation security technologies such as quantum-resistant cryptography."
   },
   {
-   "ko": "2025년 매출 3.3% 증가에도 영업이익률 22%→15%대 급락, 4분기 대규모 비영업 손실로 연간 지배주주순이익 85% 감소",
-   "en": "Revenue grew only 3.3% in 2025 as operating margin compressed from ~22% to 15.3%; a large non-operating loss in Q4 2025 caused full-year owner net profit to fall approximately 85%."
+   "ko": "2026년 7월 각자대표 체제로 전환하며 창업주는 해외·신성장, 기존 대표는 국내 핵심사업을 전담하는 구조로 재편했고 경영진이 자사주를 매입했다.",
+   "en": "In July 2026 the company shifted to a co-CEO structure, with the founder overseeing overseas and new-growth businesses and the incumbent CEO focused on the domestic core business, alongside insider treasury share purchases."
   },
   {
-   "ko": "2026년 1분기도 매출·영업이익 전년동기 대비 동반 감소세 지속, 회사는 2분기 이후 신규 사업 매출 본격 반영을 제시",
-   "en": "Revenue and operating profit declined again in Q1 2026 versus the prior year; management guides that new-business revenue recognition will accelerate meaningfully from Q2 2026 onward."
+   "ko": "부채비율은 2023년 74.4%에서 2025년 39.3%로 낮아지는 등 재무구조는 개선됐으나 2025년 영업활동현금흐름은 전년 대비 크게 줄었다.",
+   "en": "The debt ratio improved from 74.4% in 2023 to 39.3% in 2025, but operating cash flow declined sharply in 2025 compared with the prior year."
   }
  ],
  "business": {
-  "ko": "아톤(ATON Inc.)은 1999년 설립, 2019년 코스닥에 상장한 핀테크 보안 기업으로, 금융기관을 핵심 고객으로 모바일 인증·보안 솔루션을 공급한다. 주요 사업은 ① 핀테크 보안 솔루션(ATON mPKI 사설인증서, mOTP 모바일OTP, mSafeBox 소프트웨어 보안매체), ② 핀테크 플랫폼(통신 3사 'PASS' 전자서명 플랫폼 내 서비스 운영), ③ 스마트 금융(금융기관 시스템 구축·운영 프로젝트), ④ 기타(연결 자회사 매출) 등으로 구분된다. 신한·NH농협·KB국민·하나·IBK 등 대형 은행, 신한·한국투자·삼성·미래에셋 등 주요 증권사를 포함해 인증보안 솔루션 고객사는 30여 곳에 이르며 금융권 내 독보적 시장 점유율을 유지하고 있다. 통신 3사(SKT·KT·LGU+) PASS 플랫폼에서는 인증서 발급·전자서명 서비스를 제공하며 건당 수수료 모델로 매출을 인식한다. 2025년부터는 NIST가 표준으로 채택한 ML-DSA·ML-KEM 알고리즘 기반 '퀀텀 세이프' 솔루션 시리즈를 출시하며 차세대 보안 시장에 진입했다. 스테이블코인 기반 디지털자산 발행·운영 B2B 플랫폼 '밴티지(VANTAGE)'를 개발 완료하고 AI 커머스 결제 시장으로의 확장도 추진 중이다. 연결 종속기업 6곳을 통해 사업 영역을 넓히고 있으나, 2025년 자회사 사업 구조 정상화 과정에서 일부 비용 부담이 발생했다.",
-  "en": "ATON Inc. was established in 1999 and listed on KOSDAQ in 2019. It is a fintech security company serving financial institutions with mobile authentication and security solutions. Core business lines include: ① Fintech Security Solutions (ATON mPKI private certificate, mOTP mobile OTP, mSafeBox software security element); ② Fintech Platform (operating services within the 'PASS' e-signature platform of three major telecoms — SKT, KT, and LGU+); ③ Smart Finance (financial system development and integration projects); and ④ Other (revenues from consolidated subsidiaries). The company counts over 30 financial institutions as authentication security clients — including major banks (Shinhan, NH Nonghyup, KB Kookmin, Hana, IBK) and leading brokerages — holding a dominant market position in domestic financial-sector authentication. Revenue on the PASS platform is recognized on a per-transaction fee basis. Since 2025, ATON has entered next-generation security markets with its 'Quantum Safe' series based on NIST-standardized ML-DSA and ML-KEM post-quantum cryptography (PQC) algorithms. It has also completed development of 'Vantage,' a B2B stablecoin-based digital asset issuance and management platform, and is pursuing expansion into the AI commerce payment market. Six consolidated subsidiaries broaden the group's scope, though subsidiary restructuring costs weighed on 2025 results."
+  "ko": "아톤은 1999년 설립된 핀테크 인증·보안 솔루션 기업으로 2019년 코스닥에 상장했으며, 국내 최초로 모바일증권거래서비스를 개발한 이력을 갖고 있다. 핵심 제품은 소프트웨어 기반 보안매체 'mSafeBox', 모바일 OTP 'mOTP', 사설 인증 솔루션 'mPKI' 등이며, 이를 통해 신한·KB·NH농협·하나·IBK기업은행 등 국내 대형 은행과 다수 증권사에 인증·보안 솔루션을 공급한다. 사업 부문은 핀테크 보안 솔루션, 핀테크 플랫폼, 스마트 금융, 티머니 솔루션, 기타로 구성되며, 서비스 구축 매출에서 라이선스·유지보수 매출로 이어지는 누적형 수익 구조를 갖고 있다. 이동통신 3사가 제공하는 본인확인 플랫폼 'PASS'에 간편인증 서비스를 제공하는 핀테크 플랫폼 사업도 주요 축이며, PASS인증서는 2023년 발급 5,000만 건을 돌파한 바 있다. 자회사 트랙체인을 통해 두나무 계열사 람다256과 협력해 가상자산 트래블룰 솔루션 시장에도 진출해 있으며, 뮤직카우 지분을 보유하며 협업 관계를 이어가는 등 디지털 자산 관련 사업 영역도 넓히고 있다. 최근에는 디지털 자산 합작법인 '카르도'에 전략적 투자를 진행하는 등 스테이블코인·디지털자산 관련 신사업 확장도 병행하고 있다. 경쟁 구도 측면에서는 금융권 인증·보안 시장에서 사실상 독점적 지위를 확보하고 있다는 평가가 있으나, 과거 KB금융이 자체 인증서로 전환하며 고객사에서 이탈한 사례처럼 대형 금융기관의 기술 내재화 가능성은 상존하는 리스크로 지적된다. 해외 사업은 베트남, 일본, 캄보디아, 인도, 인도네시아, 모리셔스 등으로 진출해 있으며, 2026년 7월 각자대표 체제 개편을 통해 창업주가 해외·신성장 부문을 전담하는 구조로 재편됐다.",
+  "en": "Founded in 1999, Aton is a fintech authentication and security solutions provider that listed on KOSDAQ in 2019, with a history that includes developing Korea's first mobile securities trading service. Its core products are the software-based security medium mSafeBox, mobile OTP solution mOTP, and private certification solution mPKI, which it supplies to major domestic banks including Shinhan, KB, NH Nonghyup, Hana, and IBK, as well as numerous securities firms. The business is organized into fintech security solutions, fintech platform, smart finance, T-money solutions, and other segments, with a revenue model that progresses from initial build-out revenue to recurring license and maintenance fees. Aton also provides simple authentication services for the telecom carriers' identity verification platform PASS, and PASS certificates surpassed 50 million issuances in 2023. Through its subsidiary Trackchain, the company partnered with Lambda256, a Dunamu affiliate, to enter the virtual asset travel rule solution market, and it also holds a stake in Musicinco (Musiccow) with an ongoing collaborative relationship, broadening its footprint in digital asset-related businesses. More recently, Aton has made a strategic investment in the digital asset joint venture Cardo, expanding into stablecoin and digital asset-related new businesses. Aton is seen by some observers as holding a near-dominant position in the financial authentication and security market, though the risk of large financial institutions internalizing certification technology remains, as illustrated by KB Financial's earlier shift away from Aton's solution to its own in-house certificate. Overseas, the company has expanded into Vietnam, Japan, Cambodia, India, Indonesia, and Mauritius, and in July 2026 it restructured into a co-CEO system with the founder now dedicated to overseas and new-growth businesses."
  },
  "earnings": {
-  "ko": "연결 매출은 2022년 447억원에서 2023년 550억원(+22.9%), 2024년 654억원(+18.9%), 2025년 676억원(+3.3%)으로 꾸준히 성장했으나, 성장세가 뚜렷이 둔화됐다. 영업이익률은 2022년 18.0%에서 2024년 22.1%로 개선되다 2025년 15.3%로 급락했으며, 영업이익 절대액도 2024년 144억원에서 2025년 104억원으로 28% 감소했다. 분기별로는 2025년 1분기(영업이익 21억원)에서 2분기(16억원)로 마진이 급락했다가 3분기(33억원)·4분기(33억원)에 회복됐으나, 4분기에는 지배주주 기준 순손실(-32억원)이라는 대규모 비영업 손실이 발생하며 2025년 연간 지배주주순이익이 16억원에 그쳤다(2024년 105억원 대비 -85%). 2025년 영업현금흐름 역시 16억원으로 2024년 142억원 대비 급감해 내부 투자 재원이 제한됐다. 회사 측은 PQC·AI보안·디지털자산 등 신규 사업의 R&D·마케팅·인재 비용 집중과 일부 고마진 계약의 매출 인식 이연을 수익성 하락 원인으로 설명했다. 2026년 1분기는 매출 148억원(전년동기 -12.8%), 영업이익 4억원(전년동기 -79.4%)으로 부진이 이어졌으며, 연결 자회사 구조 정상화 관련 비용도 반영됐다. 긍정적인 면으로 부채비율이 2023년 74.4%에서 2025년 39.3%로 개선되며 재무 안전성은 강화됐다.",
-  "en": "Consolidated revenue grew steadily from KRW 44.7bn in 2022 to KRW 55.0bn in 2023 (+22.9%), KRW 65.4bn in 2024 (+18.9%), and KRW 67.6bn in 2025 (+3.3%), though the growth rate decelerated sharply. Operating margin peaked at 22.1% in 2024 before falling to 15.3% in 2025; operating profit in absolute terms declined 28% from KRW 14.4bn in 2024 to KRW 10.4bn in 2025. On a quarterly basis, margin compressed sharply from Q1 (KRW 2.1bn operating profit) to Q2 (KRW 1.6bn), partially recovered in Q3 and Q4 (each near KRW 3.3bn), but Q4 2025 recorded an owner-attributable net loss of KRW -3.2bn due to a large non-operating charge — pulling the full-year owner net profit to KRW 1.5bn, a decline of approximately 85% from 2024's KRW 10.5bn. Operating cash flow also collapsed to KRW 1.6bn in 2025 from KRW 14.2bn in 2024, significantly constraining internally funded investment. Management cited front-loaded R&D, marketing, and talent spending on PQC, AI security, and digital asset businesses, as well as deferred revenue recognition on high-margin contracts, as the primary drivers. Q1 2026 showed continuing weakness — revenue of KRW 14.8bn (−12.8% YoY) and operating profit of KRW 432mn (−79.4% YoY) — partly attributable to subsidiary restructuring costs. On a positive note, the debt ratio improved significantly from 74.4% in 2023 to 39.3% in 2025, strengthening balance sheet resilience."
+  "ko": "아톤의 연결 매출액은 2022년 447억원에서 2023년 550억원, 2024년 654억원, 2025년 676억원으로 4년 연속 증가세를 이어왔다. 그러나 이익 측면에서는 흐름이 엇갈렸는데, 영업이익률은 2022년 18.0%에서 2023년 20.7%, 2024년 22.1%로 높아졌다가 2025년 15.3%로 크게 낮아졌다. 지배주주순이익은 2022년 170억원에서 2023년 92억원, 2024년 105억원으로 등락을 거친 뒤 2025년에는 15억원 수준으로 급격히 줄었다. 분기 흐름을 보면 2025년 3분기 매출 146억원, 영업이익 33억원, 지배주주순이익 20억원을 기록한 이후 4분기에는 매출 163억원, 영업이익 33억원을 유지했음에도 지배주주순이익이 -32억원으로 적자 전환됐는데, 이는 영업이익과 무관한 하단 항목에서 일회성 손실이 발생했음을 시사한다. 2026년 1분기에는 매출 148억원에 영업이익이 4억원대로 급감했으나 지배주주순이익은 11억원으로 회복됐고, 2분기에는 매출 174억원, 영업이익 32억원, 지배주주순이익 37억원으로 뚜렷한 개선을 보이며 최근 다섯 개 분기 중 가장 견조한 실적을 냈다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주순이익은 약 36억원으로, 2024년 한 해 실적에는 크게 못 미치는 수준이다. 재무구조 측면에서는 부채비율이 2023년 74.4%에서 2024년 54.5%, 2025년 39.3%로 꾸준히 낮아지며 개선됐지만, 영업활동현금흐름은 2023년 147억원, 2024년 142억원에서 2025년 16억원으로 크게 축소돼 이익 감소와 함께 현금창출력도 둔화된 모습이다.",
+  "en": "Aton's consolidated revenue rose for four consecutive years, from KRW 44.7bn in 2022 to KRW 55.0bn in 2023, KRW 65.4bn in 2024, and KRW 67.6bn in 2025. Profitability trends, however, diverged: the operating margin climbed from 18.0% in 2022 to 20.7% in 2023 and 22.1% in 2024, before dropping sharply to 15.3% in 2025. Owner net profit fluctuated from KRW 17.0bn in 2022 to KRW 9.2bn in 2023 and KRW 10.5bn in 2024, then fell sharply to roughly KRW 1.5bn in 2025. On a quarterly basis, after posting revenue of KRW 14.6bn, operating profit of KRW 3.3bn, and owner net profit of KRW 2.0bn in 3Q25, the company maintained revenue of KRW 16.3bn and operating profit of KRW 3.3bn in 4Q25, yet owner net profit swung to a loss of KRW -3.2bn, suggesting a one-off loss below the operating line. In 1Q26, revenue was KRW 14.8bn with operating profit sharply lower at around KRW 0.4bn, though owner net profit recovered to KRW 1.1bn; in 2Q26, revenue reached KRW 17.4bn, operating profit KRW 3.2bn, and owner net profit KRW 3.7bn, marking the strongest of the last five quarters. Summed over the trailing four quarters (3Q25-2Q26), owner net profit totaled about KRW 3.6bn, well below full-year 2024 levels. On the balance sheet, the debt ratio steadily improved from 74.4% in 2023 to 54.5% in 2024 and 39.3% in 2025, but operating cash flow contracted sharply from KRW 14.7bn in 2023 and KRW 14.2bn in 2024 to just KRW 1.6bn in 2025, indicating that cash generation slowed alongside the profit decline."
  },
  "industry": {
-  "ko": "국내 핀테크 보안·인증 시장은 금융권 클라우드 전환, AI 기반 사이버 위협 증가, 디지털자산 제도화라는 세 가지 구조적 동력이 복합적으로 작용하고 있다. 금융권 클라우드 전환은 기존 온프레미스 인증 체계를 전면 재구축하는 수요를 창출하며, 신한투자증권의 '프로젝트 메타' 등 대형 사업이 연이어 발주되고 있다. 양자내성암호 시장은 정부가 '범부처 정보보호 종합대책'과 PQC 전환 의무화 방침을 추진하면서 도입이 가속될 전망이며, '지금 수집-미래 복호화(HNDL)' 공격 위협이 부각되면서 장기 자산을 다루는 금융기관의 선제적 도입 수요가 형성되고 있다. 스테이블코인·CBDC 법제화 진전은 디지털자산 결제 인프라 수요라는 새로운 시장을 여는 중이다. 경쟁 측면에서는 드림시큐리티·케이사인 등 보안 전문사와 삼성SDS·SK쉴더스 등 대형 IT 기업이 잠재적 경쟁자로 부상하고 있으나, 아톤은 금융권 특화 인증 레퍼런스와 PASS 플랫폼 내 기득권으로 진입장벽을 갖추고 있다. 보안 산업 특성상 1분기가 전통적 비수기이며 정부 예산 집행과 연동된 4분기 집중 현상이 뚜렷해, 분기별 실적 변동성이 크게 나타난다.",
-  "en": "The domestic fintech security and authentication market is shaped by three structural tailwinds: financial-sector cloud migration, rising AI-based cyber threats, and the institutionalization of digital assets. Cloud migration is forcing wholesale rebuilds of financial authentication architectures, with large-ticket contracts such as Shinhan Investment's 'Project Meta' being awarded in sequence. The PQC market is expected to accelerate as the government advances cross-ministerial cybersecurity mandates and planned PQC conversion requirements; the HNDL (Harvest Now, Decrypt Later) attack threat is simultaneously driving proactive procurement from institutions managing long-duration assets. Stablecoin and CBDC legislation is opening an entirely new market for digital asset payment infrastructure. Competitive pressure comes from specialized security rivals (Dream Security, Ksign) and large IT conglomerates (Samsung SDS, SK Shieldus), but ATON's deep financial-sector reference base and entrenched PASS platform position provide meaningful moats. Industry seasonality is pronounced, with Q1 structurally the weakest quarter and Q4 the strongest due to government and corporate budget cycles, resulting in significant quarterly earnings volatility."
+  "ko": "국내 핀테크 인증·보안 시장은 공인인증서 폐지 이후 민간 사설인증서 발급이 확대되고, 모바일 OTP 및 간편인증 수요가 늘면서 구조적으로 성장해왔다. 최근에는 금융권의 클라우드 전환이 새로운 성장축으로 부상하고 있으며, 기업용 사설인증서 시장 확대가 개인용 시장을 넘어서는 추가 수요를 만들고 있다는 평가가 나온다. 아톤은 신한·NH농협·KB·하나·IBK 등 대형 은행과 다수 증권사를 고객사로 확보하며 시장 내 우위를 다져왔고, 경쟁사가 상대적으로 제한적인 구조 속에서 사업을 영위해왔다는 분석이 있다. 다만 금융기관의 기술 내재화 가능성은 상시적인 경쟁 리스크로 남아 있으며, 과거 KB금융이 자체 인증서로 전환한 사례가 이를 보여준다. 사이버 위협 증가와 오픈소스 활성화, 클라우드 확산에 따라 보안·인증 기술 수요는 지속적으로 성장할 것으로 전망되고 있으며, 양자컴퓨팅 발전에 대응하는 양자내성암호화 기술에 대한 관심도 높아지는 추세다. 아톤은 미국 국립표준기술연구소(NIST) 인증 양자내성암호화 표준을 적용한 차세대 인증 솔루션을 개발 완료한 상태로, 관련 기술 경쟁에서 선제적으로 대응하고 있다는 평가를 받는다. 동시에 스테이블코인·디지털자산 관련 정책 논의가 활발해지며 트랙체인 등 자회사를 통한 신사업 기회도 열려 있으나, 해당 시장은 아직 정책·제도적 불확실성이 큰 초기 단계에 머물러 있다.",
+  "en": "Korea's fintech authentication and security market has grown structurally since the phase-out of the government-backed public certificate system, as private certificate issuance and demand for mobile OTP and simple authentication expanded. More recently, cloud migration in the financial sector has emerged as a new growth driver, with the expansion of the enterprise private certification market seen as generating additional demand beyond the individual consumer segment. Aton has built a strong market position by securing major banks such as Shinhan, NH Nonghyup, KB, Hana, and IBK, along with numerous securities firms, as clients, operating in a market where competitors are seen as relatively limited. However, the possibility of financial institutions internalizing certification technology remains an ongoing competitive risk, as illustrated by KB Financial's earlier shift to its own in-house certificate. Demand for security and authentication technology is expected to keep growing amid rising cyber threats, open-source adoption, and cloud expansion, while interest in quantum-resistant cryptography is also increasing in response to advances in quantum computing. Aton has completed development of a next-generation authentication solution applying a quantum-resistant cryptography standard certified by the U.S. National Institute of Standards and Technology (NIST), positioning it as an early mover in this technology race. At the same time, active policy discussions around stablecoins and digital assets are opening new business opportunities through subsidiaries such as Trackchain, though this market remains at an early stage with significant policy and regulatory uncertainty."
  },
  "outlook": {
-  "ko": "회사는 2026년을 수익성 회복의 원년으로 제시하며, 2025년 체결한 고마진 계약의 본격 매출 인식과 신규 솔루션 안착을 통해 매출·이익 모두 의미 있는 개선을 기대하고 있다. PQC 솔루션은 메리츠·미래에셋·넥스트증권 등 증권사와 빗썸·뮤직카우 등 가상자산 플랫폼을 거쳐 Sh수협은행(2026년 4월)까지 은행권에도 진출했으며, KB국민은행과 PQC 인증체계 기술검증 MOU를 체결(2026년 6월)하며 레퍼런스 확장이 이어지고 있다. 스테이블코인 플랫폼 밴티지는 신한카드·NH농협은행·뮤직카우와의 PoC를 완료하고 상용화 단계에 진입했으며, 한국은행 CBDC '프로젝트 한강' 2단계 사업도 진행 중이다. AI 기반 클라우드 보안관제 서비스와 위치 기반 스마트 범죄예방 서비스(자녀안전지킴이)의 국내외 동시 출시도 예정돼 있다. 회사는 2분기부터 PQC 인증보안 솔루션 추가 공급과 AI 보안관제 서비스 확대를 통해 신규 사업 매출 기여도가 높아질 것으로 전망했다. 다만 신규 사업의 실제 매출 인식 시점과 규모는 고객사 의사결정·프로젝트 일정에 따라 변동 가능성이 있어, 하반기 계약 전환 속도를 지속 모니터링할 필요가 있다.",
-  "en": "Management has positioned 2026 as a year of earnings recovery, expecting both revenue and profitability to improve meaningfully as contracts signed in 2025 begin generating revenue and new solutions gain client traction. PQC deployments have expanded from securities firms (Meritz, Mirae Asset, Next Securities) and crypto platforms (Bithumb, MusicCow) into banking via Sh Suhyup Bank (April 2026), and a PQC authentication technology MOU with KB Kookmin Bank was signed in June 2026 — extending the reference network further. The Vantage stablecoin platform, having completed PoCs with Shinhan Card, NH Nonghyup, and MusicCow, is entering commercial deployment, and Phase 2 of the Bank of Korea's 'Project Hangang' CBDC pilot is underway. Launches of an AI-based cloud security operations service and a location-based smart crime prevention service are also scheduled for both domestic and international markets. Management guided for improving new-business revenue contribution from Q2 2026 through additional PQC supply and expanded AI security operations. However, the timing and scale of revenue recognition for new businesses depend on client adoption decisions and project schedules, making H2 2026 contract conversion rates the key variable to monitor."
+  "ko": "아톤은 금융권 클라우드 전환에 대응하는 클라우드 환경 솔루션 공급을 준비하고 있으며, 기업용 사설인증서를 주요 금융사 중심으로 확대해 나갈 계획인 것으로 파악된다. 2026년 3월 31일에는 자율공시로 기업가치 제고 계획을 공시한 바 있어, 향후 구체적인 이행 상황을 지켜볼 필요가 있다. 2026년 7월 각자대표 체제 전환 이후 창업주가 해외·신성장 부문을 전담하게 되면서, 해외 진출과 신사업 발굴에 조직적 역량이 집중될 것으로 예상된다. 경영진은 최근 장내 매수를 통해 보통주 약 27만 4,000주, 총 10억원 규모의 자사주를 매입했는데, 이는 책임경영 의지를 보여주는 행보로 해석된다. 스테이블코인·디지털자산 관련 신사업에서는 자회사 트랙체인의 트래블룰 솔루션과 최근 진행한 디지털 자산 합작법인 카르도에 대한 전략적 투자가 향후 성과로 이어질지가 관전 포인트다. 다만 2025년 4분기와 2026년 1분기에 나타난 이익 변동성을 감안하면, 매출 성장세가 안정적인 이익 개선으로 얼마나 이어질지가 다음 실적에서 확인해야 할 핵심 변수다. 해외 사업은 베트남, 일본, 캄보디아, 인도, 인도네시아, 모리셔스 등 기존 진출 국가에서의 확장 속도가 향후 성장의 또 다른 축이 될 수 있다.",
+  "en": "Aton is preparing to supply cloud-environment solutions in response to financial-sector cloud migration and is understood to be expanding enterprise private certification services centered on major financial institutions. On March 31, 2026, the company filed a voluntary disclosure of a corporate value-up plan, and its implementation progress will need to be monitored going forward. Following the July 2026 shift to a co-CEO structure, with the founder now dedicated to overseas and new-growth businesses, organizational focus is expected to concentrate on overseas expansion and new business development. Management recently purchased roughly 274,000 common shares worth about KRW 1.0bn through open-market buying, a move interpreted as a demonstration of accountable management. In stablecoin and digital asset-related new businesses, a key watch point is whether the travel rule solution of subsidiary Trackchain and the recent strategic investment in digital asset joint venture Cardo translate into tangible results. Given the earnings volatility seen in 4Q25 and 1Q26, however, the extent to which revenue growth translates into stable profit improvement is the key variable to confirm in upcoming results. Overseas business expansion pace in existing markets such as Vietnam, Japan, Cambodia, India, Indonesia, and Mauritius could serve as another axis of future growth."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 순자산(BPS 4,242원)에 소폭 프리미엄을 얹은 구간에서 형성돼 있으며, 이익 기반이 크게 위축된 국면이라 주가이익배율 기준으로는 과거 이익 정상화 구간(2023~2024년 영업이익률 20%대)의 거래 범위를 크게 상회한다. 현재 EPS(43원)는 2023~2024년 이익 정상화 국면 수치의 수십 분의 일 수준에 불과해, 주가에는 향후 이익 회복에 대한 상당한 기대가 이미 반영돼 있다. 연간 배당금(DPS 50원)을 고려할 때 배당수익률은 업종 평균을 밑도는 수준으로, 배당 투자 매력보다는 이익 회복 기대감이 주가의 주요 설명 변수로 작용하는 구조다. 밸류에이션의 정상화 여부는 PQC·스테이블코인·AI보안 등 신사업의 매출 전환 속도와 영업이익률 회복 궤도에 달려 있다.",
-  "en": "The current share price is positioned at a modest premium to book value (BPS: KRW 4,242), while on an earnings basis (EPS: KRW 43), it trades materially above the historical range observed during the normalized profitability periods of 2023–2024, when operating margins ran above 20%. The current EPS is a small fraction of the levels seen during the prior earnings normalization cycle, indicating that substantial expectations for future earnings recovery are already embedded in the share price. The annual DPS of KRW 50 implies a dividend yield below the sector average, suggesting that the dividend is not the primary price driver — earnings recovery expectations are the dominant valuation anchor. Whether the valuation normalizes depends primarily on the pace at which PQC, stablecoin, and AI security revenues convert into profit-line contributions and how quickly operating margins recover toward prior peak levels."
+  "ko": "현재 거래되는 배수는 과거 상장 당시 증권사가 제시했던 예상 주가수익비율 밴드(10대 후반~20대 초반) 상단을 웃도는 수준에서 형성돼 있다. 이는 2025년 이후 지배주주순이익이 큰 폭으로 줄어든 영향으로, 이익 규모가 축소된 상태에서 주가수익비율 산식의 분모가 작아진 결과로 해석할 수 있다. 주가순자산비율은 순자산가치에 근접한 수준에서 거래되고 있어, 과거 이익이 컸던 시기에 비해 순자산 대비 프리미엄이 크지 않은 편이다. 배당 정책 측면에서는 현금배당을 지속하고 있으나 배당수익률은 업종 내에서 두드러지게 높은 편은 아니다. 최근 분기별로 영업이익과 순이익 간 괘리가 반복되고 있어, 이익의 질과 지속성을 어떻게 평가할지가 밸류에이션 판단에서 중요한 변수로 작용할 수 있다.",
+  "en": "The stock currently trades at a multiple above the upper end of the forward price-to-earnings band that brokerages projected around the time of its IPO, roughly in the high-teens to low-20s range. This reflects the sharp decline in owner net profit since 2025, which has mechanically raised the earnings multiple as the denominator shrank. The price-to-book ratio sits close to net asset value, meaning the premium over book value is not as pronounced as it was during periods of larger profits. On dividends, the company continues to pay a cash dividend, though the yield is not notably high relative to the sector. Given the recurring divergence between operating profit and net profit seen in recent quarters, how investors weigh the quality and sustainability of earnings is likely to be an important variable in any valuation assessment."
  },
  "bull": [
   {
    "title": {
-    "ko": "금융권 PQC 시장 선점자 지위",
-    "en": "First-Mover Advantage in Financial-Sector PQC"
+    "ko": "금융 인증·보안 시장의 구조적 지위",
+    "en": "Structural Position in Financial Authentication and Security"
    },
    "body": {
-    "ko": "아톤은 NIST 인증 ML-DSA·ML-KEM 알고리즘 기반 퀀텀 세이프 솔루션 시리즈를 증권·가상자산·은행 전 업권에 공급하며 금융 부문 PQC 시장의 선점자 지위를 확립했다. 정부의 PQC 전환 의무화 방침과 HNDL 위협 인식 확산은 구조적 수요 확대의 촉매다. 기존 사설인증 고객사(30여 곳)를 토대로 솔루션 업그레이드 형태의 크로스셀이 가능해, 추가 영업비용 없이 매출을 확장할 레버리지가 있다.",
-    "en": "ATON has established first-mover positioning in financial-sector PQC by deploying its Quantum Safe solution series across securities, crypto, and banking. Government PQC conversion mandates and growing HNDL threat awareness provide structural demand catalysts. The existing 30+ private-certificate client base enables upsell via solution upgrades, potentially expanding revenue with limited incremental sales costs."
+    "ko": "신한·KB·NH농협·하나·IBK 등 국내 주요 은행과 다수 증권사를 고객사로 확보하고 있으며, PASS인증서는 2023년 발급 5,000만 건을 돌파했다. 금융권 클라우드 전환과 기업용 사설인증서 시장 확대가 신규 수요를 만들고 있으며, 경쟁사가 상대적으로 제한적인 구조에서 사업을 영위해왔다는 평가가 있다. 이러한 고객 기반과 시장 지위는 매출의 안정적 성장을 뒷받침하는 요인으로 꼽힌다.",
+    "en": "Aton has secured major domestic banks including Shinhan, KB, NH Nonghyup, Hana, and IBK, along with numerous securities firms, as clients, and its PASS certificates surpassed 50 million issuances in 2023. Financial-sector cloud migration and the expanding enterprise private certification market are creating new demand, and the company is seen as operating in a market with relatively limited competition. This customer base and market position are cited as factors supporting stable revenue growth."
    }
   },
   {
    "title": {
-    "ko": "CBDC·스테이블코인 인프라 수혜 포지셔닝",
-    "en": "CBDC and Stablecoin Infrastructure Positioning"
+    "ko": "차세대 보안 기술 선점",
+    "en": "Early Positioning in Next-Generation Security Technology"
    },
    "body": {
-    "ko": "한국은행 CBDC 프로젝트 한강 1·2단계에 NH농협은행 사업자로 연속 선정됐고, 신한카드·NH농협·뮤직카우와의 PoC를 마친 밴티지 플랫폼이 상용화 단계에 진입했다. 스테이블코인 결제 가이드라인 구체화와 디지털자산 관련 법제화 진전은 수요 가시성을 높이는 요인이다. 인증보안 기술 보유 기업으로서 디지털자산 생태계 신뢰 인프라 역할을 담당할 수 있는 구조적 포지션을 갖추고 있다.",
-    "en": "ATON has been selected for both Phase 1 and Phase 2 of the Bank of Korea's CBDC pilot at NH Nonghyup Bank, while its Vantage platform — PoC-validated with Shinhan Card, NH Nonghyup, and MusicCow — is now entering commercialization. Regulatory advances in stablecoin payment guidelines and digital asset legislation increase demand visibility. As an authentication security provider, ATON is structurally positioned to serve as a trust infrastructure layer within the emerging digital asset ecosystem."
+    "ko": "아톤은 미국 NIST 인증 양자내성암호화 표준을 적용한 차세대 인증 솔루션 개발을 완료했다. 양자컴퓨팅 발전에 대응하는 보안 기술 수요가 커지는 가운데, 관련 기술을 선제적으로 확보했다는 점은 향후 신규 수주 경쟁에서 긍정적 요인이 될 수 있다. 자회사 트랙체인을 통한 가상자산 트래블룰 솔루션, 최근의 디지털 자산 합작법인 카르도 투자 등 스테이블코인·디지털자산 관련 신사업 포트폴리오도 확장되고 있다.",
+    "en": "Aton has completed development of a next-generation authentication solution applying a NIST-certified quantum-resistant cryptography standard. As demand for security technology addressing advances in quantum computing grows, having secured such technology early could be a positive factor in future contract competition. The company's new business portfolio in stablecoins and digital assets is also expanding, through the virtual asset travel rule solution offered via subsidiary Trackchain and the recent investment in digital asset joint venture Cardo."
    }
   },
   {
    "title": {
-    "ko": "대형 금융사 레퍼런스와 높은 고객 전환 비용",
-    "en": "Blue-Chip Financial References and High Switching Costs"
+    "ko": "책임경영 강화와 재무구조 개선",
+    "en": "Stronger Governance Commitment and Improved Balance Sheet"
    },
    "body": {
-    "ko": "신한·NH농협·KB국민 등 최상위 금융기관들과의 인증 솔루션 계약은 고객 전환 비용이 높아 안정적 반복 매출 기반을 제공한다. 통신 3사 PASS 플랫폼 내 서비스 운영 권한은 대규모 사용자 기반과 연결된 장기 수익원이다. 신한투자증권·미래에셋증권 등 대형 클라우드 전환 프로젝트에서 신규 솔루션 채택이 이어지고 있어 기존 고객군 내 업셀 사이클이 진행 중이다.",
-    "en": "Authentication solution contracts with top-tier institutions such as Shinhan, NH Nonghyup, and KB Kookmin involve high switching costs, providing a stable recurring revenue foundation. Exclusive service rights within the PASS platform of three major telecoms represent a long-duration revenue stream tied to a vast user base. With Shinhan Investment and Mirae Asset Securities recently adopting new solutions through cloud migration projects, an upsell cycle within the existing client base is actively underway."
+    "ko": "2026년 7월 각자대표 체제로 전환하며 창업주가 해외·신성장 부문을 전담하도록 역할을 분담했고, 경영진이 약 27만 4,000주(10억원 규모)의 자사주를 장내에서 매입했다. 부채비율은 2023년 74.4%에서 2025년 39.3%로 낮아지며 재무구조가 꾸준히 개선됐다. 이러한 지배구조 재편과 재무 건전성 개선은 중장기 경영 안정성을 뒷받침하는 요인으로 볼 수 있다.",
+    "en": "In July 2026 the company shifted to a co-CEO structure, dividing responsibilities so the founder oversees overseas and new-growth businesses, and management purchased about 274,000 treasury shares worth roughly KRW 1.0bn on the open market. The debt ratio steadily improved from 74.4% in 2023 to 39.3% in 2025. This governance restructuring and improved financial soundness can be viewed as factors supporting mid-to-long-term management stability."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2025~2026 이익 바닥 장기화 리스크",
-    "en": "Risk of a Prolonged Earnings Trough Through 2025–2026"
+    "ko": "2025년 이후 이익 변동성 확대",
+    "en": "Widening Earnings Volatility Since 2025"
    },
    "body": {
-    "ko": "2025년 영업이익률이 22%→15%대로 급락했으며 4분기에는 지배주주 기준 순손실(-32억원)이 발생해 연간 지배주주순이익이 16억원에 그쳤다. 2026년 1분기에도 매출·영업이익이 전년동기 대비 각각 12.8%, 79.4% 감소하며 부진이 이어졌다. 신규 사업 매출 인식의 이연이 반복될 경우 이익 회복 시점이 2026년 하반기 이후로 밀릴 수 있으며, 2025년 영업현금흐름이 16억원으로 급감해 내부 투자 재원도 제한적이다.",
-    "en": "Operating margin dropped sharply from ~22% to 15.3% in 2025, and a large non-operating loss in Q4 2025 produced an owner-attributable net loss of KRW -3.2bn, holding full-year owner net profit to KRW 1.5bn. Q1 2026 continued to disappoint with revenue falling 12.8% and operating profit falling 79.4% YoY. Repeated deferrals of new-business revenue recognition could delay any meaningful recovery to H2 2026 or later, while the collapse in operating cash flow to KRW 1.6bn in 2025 limits internally funded investment."
+    "ko": "2025년 영업이익률은 22.1%에서 15.3%로 낮아졌고, 지배주주순이익은 105억원에서 15억원 수준으로 급감했다. 2025년 4분기에는 영업이익이 33억원임에도 지배주주순이익이 -32억원으로 적자 전환됐으며, 2026년 1분기에도 영업이익이 4억원대로 급감하는 등 분기별 편차가 커졌다. 이 같은 이익의 질적 변동성은 실적 예측 가능성을 낮추는 요인이다.",
+    "en": "The 2025 operating margin fell from 22.1% to 15.3%, and owner net profit collapsed from KRW 10.5bn to about KRW 1.5bn. In 4Q25, despite operating profit of KRW 3.3bn, owner net profit swung to a loss of KRW -3.2bn, and operating profit slumped to around KRW 0.4bn again in 1Q26, widening quarter-to-quarter variance. This qualitative volatility in earnings reduces the predictability of results."
    }
   },
   {
    "title": {
-    "ko": "신사업 상용화 지연 및 실적 전환 불확실성",
-    "en": "New Business Commercialization Delay and Revenue Conversion Uncertainty"
+    "ko": "고객사 기술 내재화 리스크",
+    "en": "Risk of Client Technology Internalization"
    },
    "body": {
-    "ko": "PQC·밴티지(스테이블코인)·AI보안관제·자녀안전지킴이 등 복수의 신사업이 동시에 투자 및 출시 단계에 있어 경영 집중도가 분산될 수 있다. CBDC·스테이블코인 관련 사업은 규제 환경 변화에 민감하며, 법제화 일정 지연 시 수익 기여 시점이 불확실해진다. PoC 성공이 반드시 상용화 수주로 이어지지 않는 IT 사업의 특성도 감안해야 한다.",
-    "en": "Multiple new businesses — PQC, Vantage (stablecoin), AI security operations, and Child Safety Guardian — are simultaneously in the investment and launch phase, potentially diluting management focus. CBDC- and stablecoin-related revenues are sensitive to regulatory timelines, and delays in legislation could push profitability contribution further out. PoC success does not automatically translate into full commercial contracts, adding execution uncertainty to the revenue ramp."
+    "ko": "과거 KB금융이 자체 인증서를 개발하며 아톤의 고객사에서 이탈한 사례가 있었던 것처럼, 대형 금융기관이 인증·보안 기술을 자체 개발해 내재화할 가능성은 상시적인 리스크로 남아 있다. 매출이 소수 대형 은행·증권사에 집중된 구조에서는 이러한 이탈이 발생할 경우 실적에 미치는 영향이 클 수 있다.",
+    "en": "As illustrated by KB Financial's earlier departure from Aton's client base after developing its own in-house certificate, the possibility of large financial institutions internalizing authentication and security technology remains an ongoing risk. With revenue concentrated among a small number of major banks and securities firms, such client departures could have an outsized impact on results if they were to occur."
    }
   },
   {
    "title": {
-    "ko": "대형 IT 기업의 보안 시장 진입 및 경쟁 심화",
-    "en": "Large IT Conglomerate Entry and Intensifying Competition"
+    "ko": "현금창출력 둔화",
+    "en": "Slowing Cash Generation"
    },
    "body": {
-    "ko": "삼성SDS·SK쉴더스 등 대형 IT 기업이 클라우드 보안 및 AI 보안관제 시장에 적극 투자하고 있어 아톤의 핵심 영역인 금융권 보안 솔루션 시장의 경쟁 강도가 높아질 수 있다. PQC 시장은 현재 아톤이 선점하고 있으나, 자원이 풍부한 대기업의 후발 진입 시 가격 경쟁 압력이 발생할 가능성이 있다. 드림시큐리티·케이사인 등 기존 경쟁사와의 솔루션 차별성 유지도 지속적인 과제다.",
-    "en": "Large IT conglomerates such as Samsung SDS and SK Shieldus are actively investing in cloud security and AI security operations, potentially raising competitive intensity in ATON's core financial-sector market. While ATON currently leads in financial PQC, a well-resourced late entrant could exert pricing pressure. Maintaining product differentiation against existing rivals such as Dream Security and Ksign also remains an ongoing challenge."
+    "ko": "영업활동현금흐름은 2023년 147억원, 2024년 142억원에서 2025년 16억원으로 크게 줄었다. 이익 감소와 함께 현금창출력도 약화된 모습으로, 향후 클라우드 전환 솔루션 투자나 신사업 확장에 필요한 자금 조달 부담이 커질 가능성이 있다.",
+    "en": "Operating cash flow fell sharply from KRW 14.7bn in 2023 and KRW 14.2bn in 2024 to KRW 1.6bn in 2025. Cash generation has weakened alongside the profit decline, potentially increasing the funding burden for future investment in cloud transition solutions or new business expansion."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "규제·정책 일정 리스크",
-    "en": "Regulatory and Policy Timeline Risk"
+    "ko": "사업 리스크",
+    "en": "Business Risk"
    },
    "body": {
-    "ko": "정부의 PQC 전환 의무화 일정과 스테이블코인·CBDC 관련 법제화 속도가 사업 전개에 결정적 영향을 미친다. 규제 시행 시점이 지연되거나 적용 범위가 축소될 경우 신사업 수요가 예상보다 늦게 현실화될 수 있다. 반대로 보안 규제 강화가 가속되면 기존 고객사의 업그레이드 수요를 자극하는 정책 수혜로 작용할 수도 있다.",
-    "en": "The government's PQC conversion mandate timeline and the pace of stablecoin and CBDC legislation are critical determinants of business momentum. If implementation is delayed or scope reduced, new-service demand could materialize later than expected. Conversely, accelerated security regulation tightening could stimulate upgrade demand from the existing client base."
+    "ko": "대형 금융기관의 인증·보안 기술 내재화 가능성과 고객사 집중도가 주요 사업 리스크로 꼽힌다. 신사업으로 추진 중인 스테이블코인·디지털자산 관련 사업은 아직 초기 단계로 수익화 시점이 불확실하다. 해외 사업 확장 속도가 기대에 미치지 못할 경우 성장 스토리에 대한 재평가가 필요할 수 있다.",
+    "en": "The possibility of large financial institutions internalizing authentication and security technology, along with client concentration, stand out as key business risks. The stablecoin and digital asset-related new businesses under development are still at an early stage, with uncertain monetization timing. If the pace of overseas expansion falls short of expectations, the growth narrative may need to be reassessed."
    }
   },
   {
    "cat": {
-    "ko": "수익성 회복 지연 리스크",
-    "en": "Earnings Recovery Delay Risk"
+    "ko": "재무 리스크",
+    "en": "Financial Risk"
    },
    "body": {
-    "ko": "신규 사업의 R&D·마케팅 비용이 지속되는 가운데 매출 인식이 이연되면 영업 레버리지가 역(-)으로 작용해 이익 회복이 더 늦어질 수 있다. 2026년 연간 실적이 회사 기대치를 하회할 경우 순자산 대비 프리미엄을 지지하는 근거가 약화된다. 연결 자회사 구조 정상화 과정에서 추가적인 일회성 손실 가능성도 완전히 배제하기 어렵다.",
-    "en": "If revenue recognition continues to defer while R&D and marketing costs remain elevated, negative operating leverage could delay the profit recovery. If 2026 full-year results disappoint relative to guidance, the case for a premium to book value would weaken. Additional one-time charges from ongoing subsidiary restructuring cannot be entirely ruled out."
+    "ko": "2025년 영업활동현금흐름이 크게 줄어든 만큼, 향후 투자 재원 확보를 위한 외부 자금조달이 필요해질 가능성이 있다. 지배주주순이익과 소액주주(비지배주주) 귀속 순이익 간 배분 구조의 변동성도 재무 리스크 평가 시 함께 살펴볼 요소다.",
+    "en": "Given the sharp decline in operating cash flow in 2025, the company may need external financing to secure funds for future investment. Volatility in the allocation between owner net profit and non-controlling interest profit is another factor to consider when assessing financial risk."
    }
   },
   {
    "cat": {
-    "ko": "핵심 플랫폼·고객 의존도 리스크",
-    "en": "Key Platform and Customer Concentration Risk"
+    "ko": "정책·규제 리스크",
+    "en": "Policy and Regulatory Risk"
    },
    "body": {
-    "ko": "통신 3사 PASS 플랫폼과의 제휴는 안정적 매출 기반이지만 협상력 불균형과 수수료 조정 리스크를 내포한다. 통신사의 전략 변화나 PASS 플랫폼 서비스 개편 시 해당 부문 매출에 영향이 생길 수 있다. 특정 대형 고객사 의존도가 높을 경우 해당 고객의 클라우드 전환 일정 변경이 분기 실적 변동성을 확대한다.",
-    "en": "The partnership with the three major telecoms' PASS platform provides a stable revenue base but entails negotiation power asymmetry and fee adjustment risk. Strategic shifts by telecom partners or restructuring of the PASS platform could affect that segment's revenues. High concentration in specific large accounts amplifies quarterly earnings volatility whenever those clients adjust their cloud migration schedules."
+    "ko": "스테이블코인·디지털자산 및 CBDC 관련 정책과 제도는 아직 확정되지 않은 부분이 많아 관련 신사업의 방향성에 영향을 줄 수 있다. 금융 인증·보안 관련 정부 정책 변화(예: 특정 인증 방식 의무화 여부)도 사업 환경에 직접적인 영향을 미칠 수 있는 변수다.",
+    "en": "Policies and institutional frameworks related to stablecoins, digital assets, and CBDCs remain largely undecided in many respects, which could affect the direction of related new businesses. Changes in government policy regarding financial authentication and security, such as whether specific authentication methods become mandatory, are also variables that could directly affect the business environment."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월",
-    "en": "July–August 2026"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표: 회사가 제시한 '2분기 이후 신규 사업 매출 인식 본격화'의 실제 반영 여부가 최우선 확인 사항. 영업이익률 반등 폭이 수익성 회복 궤도 진입의 핵심 판단 지표.",
-    "en": "Q2 2026 earnings release: the primary test of management's guidance that new-business revenue recognition accelerates from Q2. The magnitude of operating margin recovery will be the critical indicator of whether the earnings recovery track has been entered."
+    "ko": "2026년 3분기 실적 발표 예정으로, 2분기에 회복된 영업이익·순이익 흐름이 이어지는지 확인이 필요하다.",
+    "en": "3Q26 earnings are expected to be released, and it will be important to check whether the operating profit and net profit recovery seen in 2Q26 continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "H2 2026"
+    "ko": "2026년 4분기 중",
+    "en": "In 4Q 2026"
    },
    "what": {
-    "ko": "한국은행 CBDC 프로젝트 한강 2단계 완료·결과 발표: NH농협은행 가맹점 결제 및 국고금 집행 연계 기능 구현 일정과 실제 매출 기여 규모를 확인.",
-    "en": "Completion and results of Bank of Korea CBDC 'Project Hangang' Phase 2: track NH Nonghyup merchant payment and government fund disbursement integration milestones and assess actual revenue contribution once the project closes."
+    "ko": "금융권 클라우드 전환 솔루션 공급과 기업용 사설인증서 확대가 실제 수주·매출로 이어지는지 후속 공시를 확인할 필요가 있다.",
+    "en": "Follow-up disclosures should be checked to see whether the supply of cloud-transition solutions and expansion of enterprise private certification translate into actual contract wins and revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 상반기",
-    "en": "H2 2026–H1 2027"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "스테이블코인 플랫폼 밴티지 상용화 계약 수주 현황: PoC 이후 실제 B2B 계약 체결 건수와 금융사 채택 속도가 디지털자산 신사업의 매출 가시성을 결정.",
-    "en": "Vantage stablecoin platform contract wins: post-PoC conversion to commercial B2B contracts and the speed of financial institution adoption will determine revenue visibility for the digital asset business."
+    "ko": "2026년 연간 확정 실적과 2026년 3월 공시한 기업가치 제고 계획의 이행 성과를 함께 점검할 시점이다.",
+    "en": "This is a point to review both the confirmed full-year 2026 results and the progress on the corporate value-up plan disclosed in March 2026."
    }
   },
   {
    "when": {
-    "ko": "2026년 내 (정책 일정에 따라 변동)",
-    "en": "2026 (subject to policy timeline)"
+    "ko": "지속 확인 필요",
+    "en": "Ongoing monitoring"
    },
    "what": {
-    "ko": "정부 PQC 전환 의무화 세부 일정 및 스테이블코인 법제화 확정: 금융·공공 부문 PQC 적용 기한이 명시될 경우 아톤 솔루션의 긴급 수요 발생 가능성이 있어 정책 발표를 모니터링.",
-    "en": "Government PQC conversion mandate details and stablecoin legislation finalization: once specific compliance deadlines for financial and public-sector PQC adoption are set, ATON could see urgent procurement demand — a key upside catalyst to watch."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 연간 결산·2027년 초",
-    "en": "Full-Year 2026 / Early 2027"
-   },
-   "what": {
-    "ko": "연간 실적 가이던스 대비 달성 여부 및 연간 배당(DPS) 결정: 이익 회복 궤도 확인과 함께 배당 정책 변화가 주주 환원 관점에서 관심 사항.",
-    "en": "Full-year 2026 actual results versus guidance, and annual DPS declaration: confirmation of the earnings recovery trajectory alongside any changes in dividend policy are important shareholder return indicators."
+    "ko": "각자대표 체제 하에서 해외·신성장 부문(디지털자산, 카르도 등)의 구체적 성과와 진행 상황에 대한 추가 공시·뉴스를 지속적으로 확인해야 한다.",
+    "en": "Additional disclosures and news regarding concrete progress in the overseas and new-growth businesses (digital assets, Cardo, etc.) under the co-CEO structure should be monitored on an ongoing basis."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "아톤은 국내 금융권 핀테크 인증·보안 분야에서 확고한 시장 지위를 갖춘 기업으로, 클라우드 전환·PQC·CBDC·스테이블코인이라는 다층적 성장 모멘텀을 보유하고 있다. 그러나 2025년 지배주주순이익의 급격한 감소와 2026년 1분기 부진이 이어지며 단기 실적 가시성은 낮은 상태다. 회사가 제시하는 2026년 이익 회복의 실현 여부는 PQC·디지털자산·AI보안 등 신사업 매출이 하반기에 걸쳐 실제로 인식되느냐에 달려 있으며, 이를 2분기 실적에서 1차 검증할 수 있다. 재무 안전성(부채비율 39.3%)은 크게 개선됐으나, 이익 기반이 얇아진 상황에서 현 주가 수준은 향후 이익 회복에 대한 상당한 기대를 선반영하고 있다. 정부의 PQC 의무화·스테이블코인 법제화가 구체화될 경우 수요 촉발제로 작용할 수 있으나, 반대로 일정이 지연되면 밸류에이션 조정 압력이 커질 수 있다. 향후 2~3개 분기의 실적 추이와 신사업 계약 전환 속도가 중장기 사업 궤도를 가늠하는 핵심 판단 근거가 될 전망이다.",
-   "en": "ATON holds a defensible market position in domestic financial-sector fintech authentication and security, with multiple structural growth drivers — cloud migration, PQC, CBDC, and stablecoin infrastructure — stacked in its favor. However, the sharp earnings decline in 2025 and continued weakness in Q1 2026 leave near-term earnings visibility low. The 2026 recovery thesis rests on whether PQC, digital asset, and AI security revenues materialize as guided in the second half of the year — a thesis that can be partially tested with the Q2 2026 earnings release. While the balance sheet has strengthened significantly (debt ratio: 39.3%), the current share price appears to price in a substantial degree of earnings normalization. Government finalization of PQC conversion mandates and stablecoin legislation could act as demand catalysts; conversely, regulatory delays could exert meaningful valuation pressure. The next two to three quarterly earnings releases and the pace of new-business contract conversion will be the critical checkpoints for assessing the medium-term business trajectory."
+   "ko": "아톤은 국내 금융 인증·보안 시장에서 다수 대형 은행·증권사를 고객사로 확보한 구조적 지위를 바탕으로 매출 성장을 이어가고 있으나, 2025년 이후 영업이익률 하락과 지배주주순이익의 급격한 축소로 이익의 질과 지속성에 대한 의문이 커졌다. 분기별로는 2025년 4분기 적자 전환과 2026년 1분기 영업이익 급감을 거쳐 2분기에 뚜렷한 회복세를 보이는 등 변동성이 컸다. 부채비율 개선 등 재무구조는 꾸준히 좋아지고 있지만, 영업활동현금흐름 축소는 함께 지켜봐야 할 대목이다. 양자내성암호화 기술, 클라우드 전환 대응, 스테이블코인·디지털자산 신사업 등 중장기 성장 동력은 다수 확인되나 아직 초기 단계이거나 실적 기여가 제한적이다. 2026년 7월 각자대표 체제 전환과 경영진의 자사주 매입은 책임경영 강화 시도로 해석될 수 있는 사실이다. 종합적으로 매출 성장과 이익 변동성이 공존하는 구간으로, 향후 몇 개 분기의 실적이 수익성 안정화 여부를 판가름할 핵심 변수가 될 것으로 보인다.",
+   "en": "Aton continues to grow revenue on the back of its structural position in Korea's financial authentication and security market, having secured numerous major banks and securities firms as clients, but the decline in operating margin and the sharp contraction in owner net profit since 2025 have raised questions about the quality and sustainability of earnings. Quarterly volatility has been pronounced, moving from a net loss in 4Q25 and a sharp operating profit decline in 1Q26 to a clear recovery in 2Q26. The balance sheet has steadily improved, as shown by the falling debt ratio, but the contraction in operating cash flow is another point that warrants continued attention. Multiple mid-to-long-term growth drivers are visible, including quantum-resistant cryptography, cloud transition readiness, and new stablecoin and digital asset businesses, though these remain at an early stage or contribute only marginally to results so far. The July 2026 shift to a co-CEO structure and the subsequent insider treasury share purchases are facts that can be read as an attempt to strengthen accountable management. Overall, the company sits at a stage where revenue growth and earnings volatility coexist, and results over the coming quarters are likely to be the key variable determining whether profitability stabilizes."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A158430",
-  "https://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=158430",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?gicode=A158430&MenuYn=Y",
-  "https://m.thinkpool.com/item/158430",
-  "https://www.asiae.co.kr/article/2025111417574516302",
-  "https://m.thinkpool.com/stockDiscuss/158430/cont/11876795",
+  "https://m.irgo.co.kr/IR-COMP/158430/%EC%95%84%ED%86%A4-IR-ROOM",
+  "https://rdata.kbsec.com/pdf_data/20220720160226063K.pdf",
   "https://m.thinkpool.com/compDiscuss/cont/1015451",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A158430",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A158430",
+  "https://www.mt.co.kr/stock/2026/04/17/2026041706207024026",
   "https://www.investing.com/equities/aton-inc-earnings",
-  "https://finance.finup.co.kr/Stock/158430",
-  "https://zdnet.co.kr/view/?no=20250928135810",
-  "https://www.atoncorp.com/business/fintech-platform/service-info",
-  "https://www.atoncorp.com/business/fintech-security/mpki",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_main_chosunbiz.asp?pGB=1&gicode=A158430&NewMenuID=11&cID=CB&MenuYn=Y",
-  "https://www.atoncorp.com/press-view/64",
-  "https://www.atoncorp.com/business/fintech-platform/pass",
-  "https://www.atoncorp.com/",
-  "https://kind.krx.co.kr/external/2025/03/13/002329/20250313005256/11011.htm"
+  "https://m.thinkpool.com/item/158430",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=158430",
+  "https://file.alphasquare.co.kr/media/pdfs/company-report/%EB%A9%94%EB%A6%AC%EC%B8%A020191021%EC%95%84%ED%86%A4.pdf",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_main.asp?MenuYn=Y&NewMenuID=11&ReportGB=&amp=&amp=&amp=&amp=&amp=&amp=&amp=&cID=&gicode=A158430&pGB=1&stkGb=&strResearchYN=",
+  "http://home.imeritz.com/include/resource/research/WorkFlow/20200225173411593K_02.pdf",
+  "https://www.eugenefn.com/common/files/amail/20190930_B_jongsun.park_1095.pdf",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1708559722219.pdf",
+  "https://thevc.kr/aton",
+  "https://m.thinkpool.com/compDiscuss/cont/1015030",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=qPgG79N1No2578i4",
+  "https://m.finance.daum.net/quotes/A158430/news/disclosure/20260331040487",
+  "https://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=158430"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "158430",
  "name": "아톤",
  "name_en": "ATON Inc.",
@@ -233,9 +223,9 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 01:03",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 07:33",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 4390,
-   "mcap": 0.1075,
+   "price": 4850,
+   "mcap": 0.1187,
    "shares": 24482092,
    "total_shares": 24482092,
    "wavg_shares": 23879518,
-   "per": 30.068,
+   "per": 33.219,
    "eps": 146,
-   "pbr": 0.9575,
+   "pbr": 1.0578,
    "bps": 4585,
    "roe_ttm": 3.4,
    "ttm_window": "2025Q3~2026Q2",
@@ -356,7 +346,7 @@
    "bps_krx": 4089.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 50.0,
-   "div": 1.14
+   "div": 1.03
   }
  }
 }

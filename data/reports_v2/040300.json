@@ -1,220 +1,230 @@
 {
  "title": {
-  "ko": "지배구조 불확실성 속 손실 축소, 정상화 시점이 관건",
-  "en": "Loss Narrowing Amid Governance Turmoil — Timing of Normalization Is the Key Variable"
+  "ko": "지배구조 리스크 속 손익 개선 신호",
+  "en": "Governance Risk Amid Signs of Earnings Improvement"
  },
  "lead": {
-  "ko": "2025년 영업손실이 전년 대비 절반 수준으로 줄고 4분기에 분기 흑자를 회복했지만, 최대주주 지위를 둘러싼 법정 분쟁과 사장 공백 장기화로 경영 불확실성이 높은 상태가 이어지고 있다.",
-  "en": "While YTN's operating loss nearly halved year-over-year in 2025 and the company returned to quarterly profitability in Q4, prolonged legal disputes over its largest-shareholder status and a persistent leadership vacuum continue to cast a shadow over the outlook."
+  "ko": "유진그룹의 YTN 최대주주 지위를 둘러싼 법적 다툼이 이어지는 가운데, 회사는 4년 연속 순손실을 이어가면서도 최근 분기 손익 흐름에서는 개선 조짐을 보이고 있다.",
+  "en": "As a legal dispute over Yujin Group's status as YTN's largest shareholder continues, the company has posted four consecutive years of net losses while recent quarterly results show tentative signs of improvement."
  },
  "keypoints": [
   {
-   "ko": "2025년 영업손실 136억원으로 전년(267억원) 대비 약 49% 축소, 4분기에 영업이익 11억원으로 분기 흑자 전환 달성",
-   "en": "FY2025 operating loss narrowed ~49% YoY to KRW 13.6bn; Q4 2025 swung to an operating profit of KRW 1.1bn — first quarterly profit in several quarters"
+   "ko": "2024년 2월 방송통신위원회가 승인한 유진이엔티의 YTN 최대주주 지위에 대해 2025년 11월 서울행정법원이 절차상 위법을 이유로 취소 판결을 내렸고, 유진그룹은 항소했다.",
+   "en": "In February 2024 the Korea Communications Commission approved Yujin E&T as YTN's largest shareholder, but in November 2025 the Seoul Administrative Court ruled the approval unlawful on procedural grounds, and Yujin Group has appealed."
   },
   {
-   "ko": "서울행정법원, 방통위의 유진그룹 최대주주 변경 승인을 위법 판결 — 2심 진행 중, 방미통위 행정절차 개시(2026년 4월)",
-   "en": "Seoul Administrative Court ruled the regulator's approval of Yujin Group as largest shareholder was illegal; Yujin's appeal is ongoing and the BMCC formally began administrative review in April 2026"
+   "ko": "2022년 흑자에서 2023~2025년 3년 연속 영업손실로 전환했고, 2025년 영업손실은 2024년보다 줄었지만 여전히 적자다.",
+   "en": "The company swung from a profit in 2022 to three straight years of operating losses from 2023 to 2025, with the 2025 loss narrowing from 2024 but remaining negative."
   },
   {
-   "ko": "방송 광고 시장, 2025년 전년 대비 약 13% 감소 추정 — 온라인·디지털 광고로의 구조적 이동이 TV 광고 의존 수익 구조를 지속 압박",
-   "en": "Broadcast advertising estimated to have declined ~13% YoY in 2025; structural migration to online/digital media continues to pressure YTN's TV ad-dependent revenue mix"
+   "ko": "유진그룹은 2026년 7월 YTN을 축으로 10년간 2조원 이상을 투자해 미디어 부문 매출을 5년 내 5,000억원 이상으로 키우겠다는 비전을 발표했다.",
+   "en": "In July 2026 Yujin Group unveiled a plan to invest more than 2 trillion won over ten years centered on YTN, aiming to grow its media segment revenue to more than 500 billion won within five years."
   },
   {
-   "ko": "유튜브 구독자 535만 명 돌파, OTT 플랫폼 제휴 등 디지털 수익원 다각화 진행 중이나 전통 광고 감소를 대체하기에는 아직 규모가 제한적",
-   "en": "YouTube subscriber base surpassed 5.35mn and OTT partnerships are progressing, but digital revenues remain too small to fully offset legacy advertising erosion"
+   "ko": "국내 방송광고 시장은 2021년 4조531억원에서 2024년 3조2191억원으로 줄었고, 2026년에는 2조5583억원까지 다시 축소될 것으로 전망됐다.",
+   "en": "Korea's broadcast advertising market shrank from 4.0531 trillion won in 2021 to 3.2191 trillion won in 2024, and is projected to fall further to 2.5583 trillion won in 2026."
   },
   {
-   "ko": "방미통위, 2026년 7월 말까지 사장추천위원회(사추위) 구성 시정명령 — 리더십 조기 안정이 실적 회복의 선결 과제",
-   "en": "BMCC ordered formation of a CEO recommendation committee by end-July 2026; early leadership stabilization is a prerequisite for earnings recovery"
+   "ko": "사장추천위원회 구성을 둘러싼 노사 이견과 방송미디어통신위원회의 후속 처분 지연으로 경영 불확실성이 지속되고 있다.",
+   "en": "Management uncertainty persists amid labor-management disagreement over forming the CEO recommendation committee and delays in the Broadcasting and Media Communications Commission's follow-up decision."
   }
  ],
  "business": {
-  "ko": "YTN은 1993년 방송법에 따라 설립된 국내 최초의 24시간 뉴스전문채널로, 2001년 코스닥에 상장됐다. 메인 뉴스채널 YTN과 YTN 사이언스, YTN2 등 3개 채널을 운영하며, YTN 서울타워·뉴스퀘어 부동산 임대 사업, 유튜브 채널 운영, OTT 플랫폼 제휴 및 브랜디드 콘텐츠 공급 등을 통해 사업 포트폴리오를 다각화하고 있다. 매출의 주력은 방송(TV·라디오) 광고 수익이며 부동산 임대·콘텐츠 판매가 보완한다. 유튜브 구독자는 535만 명을 넘어섰고, 네이버 채널 구독자는 약 550만 명 규모로 디지털 독자 기반을 갖추고 있다. 임직원은 2026년 4월 기준 약 709명이다. 경쟁 채널로는 연합뉴스TV 등 보도전문채널과 JTBC·TV조선·채널A·MBN 등 종합편성채널이 있으며, 시청률·광고 경쟁이 심화되고 있다. 2023년 한전KDN·한국마사회 등 공기업이 보유하던 지분 약 30%를 유진이엔티(유진그룹 계열 특수목적법인)가 인수하면서 공공 소유에서 민간 최대주주 체제로 전환된 국내 첫 보도전문채널이 됐다. 2025년 7월 사장이 전격 사임한 이후 대행 체제가 지속되고 있으며, 보도국장도 공석인 상태로 내부 리더십 공백이 장기화되고 있다.",
-  "en": "YTN, established under the Broadcasting Act in 1993 and listed on KOSDAQ in 2001, is South Korea's first 24-hour news channel. It operates three channels — YTN (flagship news), YTN Science, and YTN2 — and diversifies revenue through real-estate leasing at YTN Seoul Tower and Newsquare, a YouTube channel, OTT platform content partnerships, and branded-content production. Broadcast advertising remains the primary revenue driver, supplemented by leasing income and content sales. The YouTube subscriber base has exceeded 5.35 million, with the Naver channel standing at approximately 5.5 million. As of April 2026, the workforce numbers approximately 709 employees. Competitors include news-only broadcaster YonhapNews TV and general-programming channels such as JTBC, TV Chosun, Channel A, and MBN. In 2023, a special-purpose vehicle affiliated with Yujin Group acquired approximately 30% of YTN's shares from state-owned enterprises (KEPCO KDN and Korea Racing Authority), making YTN the country's first publicly owned news channel to transition to private majority ownership. Following the CEO's abrupt resignation in July 2025, the company has been managed by an acting executive, with the news director position also vacant, creating a prolonged leadership vacuum."
+  "ko": "YTN은 국내 대표 보도전문채널로 뉴스·시사·경제 정보를 24시간 편성하는 것을 핵심 사업으로 한다. 매출은 방송광고, 유료방송 플랫폼 재송신료, 콘텐츠 판매, YTN라디오 등 부가 채널 편성 수익, 디지털·온라인 뉴스 유통 수익 등으로 구성된다. 최대주주는 유진그룹 계열 특수목적법인 유진이엔티로, 2023년 10월 한전KDN과 한국마사회가 보유하던 지분 30.95%를 약 3,199억원에 인수했고 2024년 2월 방송통신위원회의 조건부 승인을 받아 최대주주 지위를 확보했다. 이후 제3자배정 유상증자를 통해 유진이엔티의 보유 지분은 39%대까지 늘어난 것으로 알려졌다. 유진그룹은 YTN을 미디어 중간지주사 유진이엔티, 콘텐츠 제작사 스튜디오 유지니아와 묶어 K컬처·산업 콘텐츠·데이터·커머스·공간사업을 결합한 플랫폼으로 육성하겠다는 구상을 밝혔다. 경쟁 구도로는 또 다른 24시간 보도전문채널인 연합뉴스TV가 있으며, 광고 예산을 두고는 지상파·종합편성채널뿐 아니라 유튜브·OTT 등 디지털 플랫폼과도 경쟁한다. 회사가 보유한 YTN서울타워(남산타워)는 2027년 1월부터 직영 체제로 전환되어 공간사업 자산으로 활용될 예정이다. 광고와 수신료 중심의 전통적 수익모델이 구조적으로 약화되는 가운데, 데이터·콘텐츠 판매 등 비광고 수익원 확대가 회사와 대주주 양측의 공통 과제로 제시되고 있다.",
+  "en": "YTN is Korea's leading round-the-clock news channel, with its core business centered on 24-hour news, current affairs, and economic programming. Revenue is derived from broadcast advertising, retransmission fees from pay-TV platforms, content sales, ancillary channel operations such as YTN Radio, and digital/online news distribution. The largest shareholder is Yujin E&T, a special-purpose vehicle under Yujin Group, which acquired the 30.95% stake previously held by KEPCO KDN and the Korea Racing Authority for about 319.9 billion won in October 2023 and secured largest-shareholder status after conditional approval from the Korea Communications Commission in February 2024. Yujin E&T's stake was subsequently reported to have risen to around 39% through a third-party share issuance. Yujin Group has outlined a vision to combine YTN with its media holding arm Yujin E&T and content producer Studio Eugenia into a platform spanning K-culture and industry content, data, commerce, and space business. Competitively, YTN faces Yonhap News TV, another round-the-clock news channel, and competes for advertising budgets with terrestrial and general programming channels as well as digital platforms such as YouTube and OTT services. The company's YTN Seoul Tower (Namsan Tower) asset is set to move to direct in-house management from January 2027 to be used as a space-business asset. With the traditional ad- and license-fee-dependent revenue model facing structural pressure, expanding non-advertising revenue through data and content sales has become a shared priority for both the company and its controlling shareholder."
  },
  "earnings": {
-  "ko": "2022년에는 매출 1,522억원, 영업이익 53억원(영업이익률 3.5%)으로 흑자를 유지했으나, 2023년에는 매출 1,305억원·영업손실 93억원(영업이익률 -7.1%)으로 적자 전환했다. 2024년에는 영업손실이 267억원(영업이익률 -20.3%)으로 급확대됐고, 지배주주 귀속 순손실도 186억원에 달했다. 2025년에는 매출 1,342억원으로 전년(1,312억원) 대비 약 2% 소폭 증가한 가운데 영업손실이 136억원(영업이익률 -10.1%)으로 전년 대비 약 49% 축소됐다. 분기별로는 2025년 1분기 영업손실이 98억원으로 가장 컸으나, 2분기 29억원, 3분기 20억원으로 순차 개선되었고 4분기에는 11억원의 영업이익을 기록해 분기 흑자를 달성했다. 2025년 지배주주 귀속 순손실은 142억원으로 전년(186억원) 대비 감소했다. 2026년 1분기에는 매출 269억원·영업손실 71억원을 기록했는데, 이는 전년 동기(영업손실 98억원) 대비 약 27억원 개선된 수치로 계절성에 따른 1분기 약세 패턴 속에서도 전년비 손실 축소가 확인된다. 영업현금흐름은 2022년 +58억원 흑자에서 이후 3년 연속 마이너스(2025년 -47억원)를 이어가고 있어 내부 현금창출 여력은 아직 제한적이다. 부채비율은 2022년 41.1%에서 2025년 51.9%로 완만하게 상승했다.",
-  "en": "YTN posted an operating profit of KRW 5.3bn on revenue of KRW 152.2bn in 2022 (OPM 3.5%), but slipped into an operating loss of KRW 9.3bn in 2023 (OPM -7.1%) as revenue contracted to KRW 130.5bn. The loss deepened sharply in 2024, reaching KRW 26.7bn (OPM -20.3%) on revenue of KRW 131.2bn, with a net loss attributable to controlling shareholders of KRW 18.6bn. In 2025, revenue grew modestly ~2% YoY to KRW 134.2bn while the operating loss narrowed ~49% to KRW 13.6bn (OPM -10.1%), and the net loss attributable to shareholders improved to KRW 14.2bn. Quarterly progression showed steady improvement: the Q1 2025 operating loss of KRW 9.8bn was the deepest, narrowing to KRW 2.9bn in Q2 and KRW 2.0bn in Q3, before reaching an operating profit of KRW 1.1bn in Q4. In Q1 2026, revenue came in at KRW 26.9bn with an operating loss of KRW 7.1bn — an improvement of approximately KRW 2.7bn compared with the year-earlier quarter's KRW 9.8bn loss, confirming continued loss reduction despite the seasonally weakest quarter. Operating cash flow has remained negative for three consecutive years since 2022 (FY2025: negative KRW 4.7bn), limiting internal cash generation capacity. The debt-to-equity ratio has edged up from 41.1% in 2022 to 51.9% in 2025."
+  "ko": "YTN의 연결 매출은 2022년 1,521.9억원에서 2023년 1,304.7억원으로 줄었다가 2024년 1,311.8억원, 2025년 1,341.9억원으로 소폭 회복되는 흐름을 보였다. 반면 영업손익은 2022년 53.1억원 흑자(영업이익률 3.5%)에서 2023년 -93.0억원(-7.1%), 2024년 -266.8억원(-20.3%)으로 적자가 확대된 뒤 2025년 -136.0억원(-10.1%)으로 손실 폭이 줄었다. 순이익(지배주주) 역시 2022년 55.1억원 흑자에서 2023년 -41.8억원, 2024년 -186.1억원으로 악화된 뒤 2025년 -141.9억원으로 적자가 다소 완화됐다. 분기별로 보면 2025년 4분기 매출이 435.6억원으로 크게 늘며 영업이익 10.7억원의 분기 흑자를 냈으나 순이익은 -25.7억원으로 여전히 손실을 기록해 영업외 요인이 컸던 것으로 보인다. 2026년 1분기는 매출 268.5억원, 영업손실 -70.5억원으로 최근 분기 중 가장 큰 폭의 적자를 기록했고, 2026년 2분기에는 매출 328.7억원, 영업손실 -8.3억원으로 적자 폭이 줄면서 순이익은 5.6억원으로 흑자 전환했다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순이익은 -85.3억원으로 여전히 적자 구간에 있다. 재무구조 측면에서는 자기자본이 2023년 2,434.1억원에서 2024년 2,226.0억원으로 줄었다가 2025년 2,304.5억원으로 늘었는데, 이는 유상증자에 따른 자본 확충 효과로 해석된다. 부채비율은 2022년 41.1%에서 2024년 57.6%까지 높아진 뒤 2025년 51.9%로 다소 낮아졌으며, 영업활동현금흐름은 2022년 57.6억원 흑자였던 것과 달리 2023~2025년 3년 연속 마이너스(각각 -11.3억원, -24.6억원, -47.0억원)를 기록해 현금창출력 저하가 이어지고 있다.",
+  "en": "YTN's consolidated revenue fell from 152.19 billion won in 2022 to 130.47 billion won in 2023, then recovered modestly to 131.18 billion won in 2024 and 134.19 billion won in 2025. Operating profit, however, swung from a 5.31 billion won profit in 2022 (3.5% margin) to losses of 9.30 billion won in 2023 (-7.1%) and 26.68 billion won in 2024 (-20.3%), before the loss narrowed to 13.60 billion won in 2025 (-10.1%). Net income attributable to owners followed a similar pattern, moving from a 5.51 billion won profit in 2022 to losses of 4.18 billion won in 2023 and 18.61 billion won in 2024, before narrowing to a 14.19 billion won loss in 2025. On a quarterly basis, revenue jumped to 43.56 billion won in the fourth quarter of 2025, driving a rare operating profit of 1.07 billion won, yet net income remained negative at -2.57 billion won, suggesting non-operating items weighed on the bottom line. The first quarter of 2026 saw revenue of 26.85 billion won and the widest recent operating loss of -7.05 billion won, while the second quarter of 2026 showed revenue of 32.87 billion won, a narrower operating loss of -0.83 billion won, and a return to net profit of 0.56 billion won. Over the trailing four quarters (Q3 2025 through Q2 2026), net income attributable to owners totaled a loss of 8.53 billion won, still in negative territory. On the balance sheet, equity fell from 243.41 billion won in 2023 to 222.60 billion won in 2024 before rising to 230.45 billion won in 2025, an increase attributable to capital raised through share issuance. The debt ratio rose from 41.1% in 2022 to 57.6% in 2024 before easing to 51.9% in 2025, while operating cash flow, positive at 5.76 billion won in 2022, turned negative for three straight years from 2023 to 2025 (-1.13 billion won, -2.46 billion won, and -4.70 billion won respectively), pointing to continued pressure on cash generation."
  },
  "industry": {
-  "ko": "국내 방송 광고 시장은 구조적 하락 국면에 본격 진입했다. 코바코(한국방송광고진흥공사) 보고서에 따르면 2025년 국내 방송 광고비는 전년 대비 약 13% 감소한 약 2조 7,744억원으로 처음으로 2조원대로 축소될 것으로 추정된다. 반면 온라인 광고비는 2024년 처음으로 10조원을 돌파해 전체 광고비의 약 59%를 차지했으며, 2025년에도 약 11조 2,619억원 규모로 성장세를 이어가고 있다. 방송채널사용사업자(PP) 광고 시장도 2024년 전년 대비 3.8% 감소한 1조 7,830억원을 기록하는 등 케이블·보도채널 모두 역풍을 맞고 있다. 2026년에는 매체 간 양극화가 더욱 심화되면서 방송·인쇄 광고의 조정 흐름이 지속될 것으로 전망된다. OTT 플랫폼의 광고 요금제 확산과 스포츠 중계권 확대가 전통 방송 채널의 광고 수익 기반을 추가로 잠식하고 있다. 뉴스전문채널 내에서는 연합뉴스TV와의 경쟁은 물론 뉴스 비중이 높아진 종합편성채널과의 시청률·광고 경쟁도 심화되어 업계 전반의 수익성 압박이 이어지고 있다.",
-  "en": "South Korea's broadcast advertising market has entered a structural contraction phase. According to KOBACO (Korea Broadcasting Advertising Corporation), domestic broadcast ad spending is estimated to have declined approximately 13% YoY in 2025 to roughly KRW 2.77 trillion — falling below the KRW 3 trillion mark for the first time. Online advertising, by contrast, surpassed KRW 10 trillion for the first time in 2024, claiming roughly 59% of total ad spending, and is projected to grow further to approximately KRW 11.3 trillion in 2025. Pay-television channel (PP) ad revenue also contracted 3.8% YoY in 2024, confirming that the structural headwind extends across cable and news channels alike. In 2026, the divergence between digital and traditional media is expected to widen further, with broadcast and print advertising likely to face continued adjustment. OTT platforms rolling out ad-supported tiers and securing sports broadcast rights are further eroding traditional TV channels' share of the ad market. Within the news-channel segment, competition from YonhapNews TV as well as news-heavy general-programming channels intensifies pressure on both ratings and advertiser share."
+  "ko": "국내 방송광고 시장은 한국방송광고진흥공사 조사보고서 기준 2021년 4조531억원에서 2024년 3조2191억원으로 20% 이상 줄었고, 2026년에는 2조5583억원까지 다시 20% 이상 축소될 것으로 전망돼 광고 의존형 방송사업자에 구조적 압박이 지속되고 있다. 다만 같은 조사에서 TV 광고는 광고 효과·신뢰성 지표에서 유튜브 등 인터넷 매체보다 높은 점수를 받아, 신뢰가 중요한 뉴스·정보 카테고리에서 전통 방송의 상대적 강점이 일부 확인됐다. 24시간 보도전문채널 시장에서는 YTN과 연합뉴스TV가 양강 구도를 이루고 있으며, 광고 예산 배분에서는 지상파·종합편성채널은 물론 유튜브·OTT 등 디지털 동영상 플랫폼과도 경쟁해야 하는 구조다. 통합미디어법(시청각미디어서비스법안) 논의는 방송과 OTT 간 규제 형평성 문제를 다루고 있어, 향후 법제화 여부에 따라 업계 전반의 경쟁 조건이 달라질 수 있다. 이런 환경에서 유진그룹을 비롯한 방송사 대주주들은 광고·수신료 중심 모델의 한계를 인식하고 데이터, 커머스, 공간사업 등으로 수익원을 다변화하려는 시도를 확대하고 있다. 업계 전반의 수익성 악화는 YTN에 국한된 문제가 아니라 종합편성채널을 포함한 여러 방송사업자가 공통으로 겪는 사이클로 파악된다.",
+  "en": "According to the Korea Broadcast Advertising Corporation's survey data, Korea's broadcast advertising market shrank more than 20% from 4.0531 trillion won in 2021 to 3.2191 trillion won in 2024, and is projected to shrink by more than 20% again to 2.5583 trillion won by 2026, keeping structural pressure on ad-dependent broadcasters. The same survey found that TV advertising scored higher than YouTube and other internet media on effectiveness and trust metrics, confirming a relative advantage for traditional broadcast in trust-sensitive news and information categories. In the 24-hour news channel segment, YTN and Yonhap News TV form a two-player field, while advertising budgets are contested not only with terrestrial and general programming channels but also with digital video platforms such as YouTube and OTT services. Ongoing discussion of an integrated media law addressing regulatory parity between broadcasting and OTT could reshape competitive conditions across the industry depending on whether it is enacted. Against this backdrop, controlling shareholders of broadcasters, including Yujin Group, are increasingly seeking to diversify revenue beyond the advertising and license-fee model into data, commerce, and space businesses. The profitability deterioration facing YTN is not unique to the company but reflects a broader cycle affecting multiple broadcasters, including general programming channels."
  },
  "outlook": {
-  "ko": "지배구조 불확실성 해소 여부가 2026년 하반기 경영 정상화의 핵심 변수다. 방미통위는 2026년 4월 유진그룹 최대주주 변경 승인 취소에 관한 공식 논의에 착수해 외부 법률자문단을 구성하기로 했으나, 유진그룹이 항소(2심)를 진행 중이어서 최종 행정 처분 시점은 유동적이다. 개정 방송법이 의무화한 사장추천위원회(사추위)는 방미통위가 7월 말까지 구성 완료를 시정명령으로 지시했으나, 노사 합의가 아직 이루어지지 않고 있다. 실적 측면에서는 2025년의 손실 축소 흐름이 2026년에도 이어진다면 연간 영업손실의 추가 개선 여지가 있다. 다만 방송 광고 시장의 구조적 감소가 수요 측 압력으로 지속 작용하고 있어, 비용 절감만으로는 손익분기점 달성에 한계가 있다. 유튜브 535만 구독자 기반과 OTT 플랫폼 제휴, 브랜디드 콘텐츠 확대 등 디지털 수익원이 전통 광고 감소를 얼마나 보완할 수 있는지가 중기 수익성 회복의 분수령이다. 사추위 구성 완료 및 신임 사장 선임이 이루어질 경우 광고주 기반 재구축과 콘텐츠 투자 정상화로 이어질 수 있어, 리더십 조기 안정이 우선 과제로 남아 있다.",
-  "en": "Resolution of the governance uncertainty is the pivotal variable for operational normalization in the second half of 2026. In April 2026, the BMCC formally launched deliberations on whether to rescind Yujin Group's largest-shareholder status and announced the formation of an external legal advisory panel; however, with Yujin Group's appeal still pending, the timing of a binding administrative decision remains open. The regulator has ordered YTN to form a CEO recommendation committee by end-July 2026, but labor-management negotiations remain unresolved. On the earnings trajectory, if the loss-narrowing trend of 2025 extends into 2026, further improvement in the annual operating result is plausible. Structural demand-side pressure from declining broadcast advertising, however, limits how far cost control alone can carry the company toward breakeven. The degree to which digital revenue streams — including a 5.35-million YouTube subscriber base, OTT partnerships, and branded content — can offset legacy advertising erosion will be the medium-term swing factor. Successful establishment of the CEO recommendation committee and appointment of a permanent chief executive would be a crucial prerequisite for rebuilding the advertiser base and normalizing content investment."
+  "ko": "유진그룹은 2026년 7월 기자간담회를 통해 YTN을 축으로 향후 10년간 2조원 이상을 신규 투자하겠다는 미디어 사업 비전을 발표했다. 콘텐츠 분야에 1조2,000억원, 사업 분야에 8,000억원을 투입하며, 우선 미디어 중간지주사 유진이엔티에 300억원 규모의 유상증자를 진행해 확장의 발판을 마련한다는 계획이다. 이를 통해 YTN, 유진이엔티, 스튜디오 유지니아를 포함한 미디어 부문 매출을 5년 내 5,000억원 이상으로 끌어올린다는 목표를 제시했다. 해외 제휴 측면에서는 2026년 4월 미국 싱클레어 브로드캐스트그룹과 전략적 업무협약을 체결했고, 같은 해 6월에는 미국 전미방송협회 및 연방통신위원회와 K콘텐츠 유통 관련 논의를 진행했다. 자산 활용 측면에서는 YTN서울타워(남산타워)를 2027년 1월부터 직영 체제로 전환해 K컬처 랜드마크 성격의 공간사업으로 육성할 계획이며, K라이프스타일 분야 전문 미디어의 추가 인수도 검토 대상으로 언급됐다. 다만 이 같은 투자 계획의 실행 속도와 방향은 최대주주 지위를 둘러싼 법적 다툼과 방송미디어통신위원회의 후속 처분 결과, 그리고 사장추천위원회 구성을 둘러싼 노사 협의 진행 상황에 따라 달라질 수 있어, 계획과 실제 집행 사이의 간극을 계속 확인할 필요가 있다.",
+  "en": "In a July 2026 press briefing, Yujin Group unveiled a media business vision to invest more than 2 trillion won over the next decade centered on YTN, allocating 1.2 trillion won to content and 800 billion won to business initiatives, starting with a 30 billion won capital raise at media holding company Yujin E&T to fund the expansion. The plan targets media segment revenue, including YTN, Yujin E&T, and Studio Eugenia, of more than 500 billion won within five years. On the international front, the group signed a strategic partnership with Sinclair Broadcast Group in April 2026 and held discussions with the U.S. National Association of Broadcasters and the Federal Communications Commission on K-content distribution in June 2026. On the asset side, YTN Seoul Tower (Namsan Tower) is set to move to direct in-house management from January 2027 as a K-culture landmark space business, with additional acquisitions of K-lifestyle-focused media also under consideration. However, the pace and direction of these investment plans could be affected by the ongoing legal dispute over largest-shareholder status, the outcome of the Broadcasting and Media Communications Commission's follow-up decision, and the progress of labor-management talks over forming the CEO recommendation committee, making it necessary to keep tracking the gap between stated plans and actual execution."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당순자산(BPS 4,895원) 대비 상당한 할인 구간에서 거래되고 있어, 순자산 가치가 낮게 평가된 상태임을 나타낸다. 최근 분기 누적 EPS는 -263원으로 적자가 지속되어 이익 기반의 PER 산출이 불가능하며, 이익 회복 이전까지 정상화 배수 적용이 제한적이다. 배당은 2025년 결산 기준 지급이 없어(DPS 0원) 이익 환원 측면의 매력이 부재하며, 이는 국내 미디어·엔터 업종 평균 배당수익률을 하회하는 수준이다. 2022년 흑자를 기록했던 시기와 비교해 현재는 다년간 적자 국면이 지속되는 만큼, 정상화 이전에는 이익 기반 밸류에이션 배수 비교가 제한된다. 실적이 흑자로 전환하기 이전까지 주가는 최대주주 변경 분쟁 해소 여부, 사추위 구성 및 사장 선임 등 지배구조 이벤트와 방송 광고 시황 변화에 민감하게 연동되는 흐름이 이어질 것으로 보인다.",
-  "en": "The current share price trades at a meaningful discount to book value per share (BPS: KRW 4,895), indicating that net assets are valued below their carrying amount on a per-share basis. The trailing EPS of negative KRW 263 reflects ongoing losses, rendering a conventional earnings-based PER comparison inapplicable and limiting the use of normalized multiples until a sustained turnaround is established. With no dividend paid for fiscal year 2025 (DPS: KRW 0), income-return appeal is absent — a level that trails the domestic media and entertainment sector average. Relative to the profitable period of 2022, consecutive annual losses over multiple years further constrain earnings-based valuation benchmarking. Until profitability is restored, share-price performance is likely to remain closely tied to governance-related catalysts — resolution of the largest-shareholder dispute, formation of the CEO recommendation committee, and appointment of a new permanent chief executive — as well as shifts in the broadcast advertising cycle."
+  "ko": "YTN은 최근 몇 년간 순손실을 지속해 통상적인 주가수익비율 산출이 어려운 구간에 있으며, 주가는 주당 순자산에 못 미치는 수준, 즉 순자산 대비 할인된 상태에서 거래되고 있다. 배당은 최근 지급되지 않고 있어 배당수익률 측면에서 비교할 기준 자체가 마련되어 있지 않다. 다년간의 실적 흐름을 보면 2022년 흑자에서 2023~2024년 적자 확대, 2025년 적자 축소로 방향이 바뀌었고, 가장 최근 분기(2026년 2분기)에는 순이익이 흑자로 전환하는 등 손익 개선의 조짐이 일부 관찰된다. 다만 2025년 유상증자로 발행주식수가 늘어난 만큼 향후 이익이 늘더라도 주주 1인당 몫으로 환산되는 속도는 이전과 달라질 수 있다는 점도 함께 고려할 부분이다. 최대주주 지위를 둘러싼 법적 불확실성은 밸류에이션 판단에 별도의 변수로 작용할 수 있는 요인으로, 사업 펀더멘털과는 구분해 지켜볼 필요가 있다.",
+  "en": "Having posted net losses in recent years, YTN sits in a range where a conventional price-to-earnings ratio is difficult to calculate, and its shares trade at a discount to net asset value, that is, below book value per share. The company has not been paying dividends recently, leaving no basis for a dividend yield comparison. Looking at the multi-year earnings trend, the trajectory shifted from a profit in 2022 to widening losses in 2023-2024, then to a narrower loss in 2025, with the most recent quarter (second quarter of 2026) showing a swing back to net profit—tentative signs of earnings improvement. That said, the increase in shares outstanding following the 2025 capital raise means that any future profit growth would translate into a different per-share pace than before, a point worth factoring in separately. The legal uncertainty surrounding largest-shareholder status is a distinct variable that can weigh on valuation assessments and should be monitored apart from underlying business fundamentals."
  },
  "bull": [
   {
    "title": {
-    "ko": "손실 축소·분기 흑자 전환 모멘텀",
-    "en": "Loss Narrowing Momentum and Return to Quarterly Profitability"
+    "ko": "손익 개선 조짐",
+    "en": "Signs of Earnings Improvement"
    },
    "body": {
-    "ko": "2025년 영업손실이 전년 대비 약 49% 축소되었고, 4분기에는 영업이익 11억원을 기록해 분기 흑자를 달성했다. 2026년 1분기 영업손실(71억원)도 전년 동기(98억원) 대비 개선됐다. 계절성을 고려하면 2분기 이후 손익 개선이 추가로 기대되는 구간이며, 연간 단위 적자 규모가 점진적으로 축소되는 방향성이 유지되고 있다.",
-    "en": "YTN's operating loss narrowed approximately 49% in 2025, and Q4 2025 delivered an operating profit of KRW 1.1bn — the first quarterly profit in several quarters. Q1 2026's operating loss of KRW 7.1bn also improved versus the year-earlier KRW 9.8bn. Given the strong seasonal skew toward the second and fourth quarters, further improvement is plausible for the remainder of 2026, maintaining a directional trend of gradually shrinking annual losses."
+    "ko": "2025년 영업손실은 -136.0억원으로 2024년 -266.8억원보다 축소됐고, 2025년 4분기와 2026년 2분기에는 영업이익 또는 순이익이 흑자로 전환하는 분기가 나타났다. 매출도 2023년 1,304.7억원에서 2025년 1,341.9억원으로 소폭 회복되는 흐름을 보였다. 다만 2026년 1분기처럼 큰 적자를 낸 분기도 있어 분기별 변동성은 여전히 크다.",
+    "en": "The 2025 operating loss narrowed to 13.60 billion won from 26.68 billion won in 2024, and both the fourth quarter of 2025 and the second quarter of 2026 saw a swing to operating or net profit. Revenue also recovered modestly from 130.47 billion won in 2023 to 134.19 billion won in 2025. Quarterly volatility remains significant, however, as seen in the large loss posted in the first quarter of 2026."
    }
   },
   {
    "title": {
-    "ko": "순자산 대비 할인 — 지배구조 정상화 시 재평가 여지",
-    "en": "Discount to Book Value — Rerating Potential upon Governance Normalization"
+    "ko": "그룹 차원의 대규모 미디어 투자",
+    "en": "Group-Level Media Investment Commitment"
    },
    "body": {
-    "ko": "현재 주가가 주당순자산(BPS 4,895원)에 비해 현저히 낮게 형성되어 있어, 지배구조 분쟁이 해소되고 경영이 안정화될 경우 자산 재평가 기회를 내포하고 있다. 법원의 최대주주 변경 승인 취소 판결과 방미통위의 행정절차 개시는 공적 소유구조 복원 가능성을 높이고 있으며, 이 경우 브랜드 신뢰도 회복과 광고주 기반 재구축이 뒤따를 수 있다.",
-    "en": "The share price trades at a significant discount to book value per share (BPS: KRW 4,895), embedding a potential rerating catalyst if governance disputes are resolved and management stabilizes. The court's ruling invalidating the largest-shareholder change and the BMCC's formal review process raise the possibility of a reversion toward a public ownership structure, which could improve advertiser trust and brand equity."
+    "ko": "유진그룹은 2026년 7월 YTN을 중심으로 10년간 2조원 이상을 투자해 미디어 부문 매출을 5년 내 5,000억원 이상으로 키우겠다는 비전을 공개했다. 콘텐츠·데이터·커머스·공간사업으로 수익원을 다변화하려는 구상이며, YTN서울타워 직영화, 해외 방송사와의 제휴 등 구체적 실행 항목도 제시됐다. 광고·수신료 의존형 수익모델의 한계를 보완할 수 있는 대주주 차원의 자금력이 뒷받침되고 있다는 점이 특징이다.",
+    "en": "In July 2026 Yujin Group unveiled a vision to invest more than 2 trillion won over ten years centered on YTN, aiming to grow media segment revenue to more than 500 billion won within five years. The plan seeks to diversify revenue into content, data, commerce, and space business, with concrete initiatives such as bringing YTN Seoul Tower under direct management and partnering with overseas broadcasters. A notable feature is the financial backing from the controlling shareholder to help offset the limitations of the ad- and license-fee-dependent model."
    }
   },
   {
    "title": {
-    "ko": "디지털 플랫폼 확장 — 유튜브·OTT 신규 수익원 기반 구축",
-    "en": "Digital Platform Expansion — Building YouTube and OTT Revenue Foundations"
+    "ko": "신뢰 기반 매체로서의 경쟁력",
+    "en": "Trust-Based Media Competitiveness"
    },
    "body": {
-    "ko": "유튜브 구독자 535만 명 돌파와 네이버 채널 약 550만 명의 충성 독자 기반은 방송 광고 이외의 디지털 수익화 잠재력을 뒷받침한다. OTT 플랫폼 제휴·브랜디드 콘텐츠 공급을 통해 전통 광고 감소를 보완하는 수익원 다각화가 진행 중이다. 콘텐츠 신뢰도 회복 시 디지털 광고·구독 수익의 실질 기여 확대를 기대할 수 있다.",
-    "en": "A YouTube subscriber base of over 5.35 million and approximately 5.5 million Naver channel followers underpin meaningful digital monetization potential beyond traditional broadcast advertising. Ongoing OTT platform partnerships and branded-content supply represent a diversification effort that could partially offset legacy ad revenue declines. Restoration of editorial credibility could accelerate real contributions from digital advertising and content distribution revenue."
+    "ko": "한국방송광고진흥공사의 2026년 매체이용행태 조사에서 TV 광고는 광고 효과·신뢰성 지표에서 유튜브 등 인터넷 매체보다 높은 점수를 받았다. 뉴스·정보 소비에서 신뢰도가 중요한 만큼, 보도전문채널이라는 정체성이 광고주 및 시청자 신뢰 확보에 상대적 강점으로 작용할 수 있다. 유진그룹 역시 이런 신뢰 자산을 데이터·콘텐츠 사업 확장의 기반으로 명시적으로 활용하려는 전략을 밝혔다.",
+    "en": "In the Korea Broadcast Advertising Corporation's 2026 media usage survey, TV advertising scored higher than YouTube and other internet media on effectiveness and trust metrics. Given that trust matters greatly in news and information consumption, YTN's identity as a dedicated news channel could be a relative strength in securing advertiser and viewer confidence. Yujin Group has explicitly stated a strategy to use this trust asset as a foundation for expanding into data and content businesses."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "방송 광고 시장의 구조적 하락",
-    "en": "Structural Decline in Broadcast Advertising"
+    "ko": "지배구조 불확실성",
+    "en": "Governance Uncertainty"
    },
    "body": {
-    "ko": "2025년 국내 방송 광고비가 전년 대비 약 13% 감소한 것으로 추정되는 등 방송 광고 시장이 구조적 축소 국면에 있다. 온라인·디지털 광고로의 이동은 단기 반전이 어려운 장기 트렌드이며, 2026년에도 방송·인쇄 광고의 조정이 지속될 전망이다. TV 광고 의존도가 높은 YTN의 수익 구조상 외형 성장에 직접적 제약으로 작용하고 있다.",
-    "en": "Domestic broadcast advertising is estimated to have contracted by approximately 13% in 2025, deepening the structural erosion of YTN's primary revenue source. The migration of ad budgets to online and digital channels is a durable structural trend with limited near-term reversal potential, and broadcast and print advertising is forecast to remain in adjustment mode through 2026. YTN's high reliance on TV advertising creates a direct ceiling on revenue recovery."
+    "ko": "서울행정법원은 2025년 11월 방송통신위원회가 2인 체제에서 의결한 유진이엔티의 최대주주 변경 승인이 절차상 위법이라며 취소 판결을 내렸고, 유진그룹은 항소했다. 방송미디어통신위원회는 2026년 4월 법률자문단을 구성해 후속 처분을 검토하기 시작했지만 2026년 8월까지도 안건 상정 시점이 불확실한 상태로 남아 있다. 사장추천위원회 구성을 둘러싼 노사 이견도 시정명령 시한을 넘긴 채 지속되고 있어, 경영진 공백과 의사결정 지연이 이어질 위험이 있다.",
+    "en": "In November 2025 the Seoul Administrative Court ruled that the Korea Communications Commission's approval of Yujin E&T as largest shareholder, made under a two-member quorum, was procedurally unlawful, and Yujin Group has appealed. The Broadcasting and Media Communications Commission formed a legal advisory panel in April 2026 to review follow-up action, but as of August 2026 the timing of a formal agenda item remained uncertain. Labor-management disagreement over forming the CEO recommendation committee has also persisted past its corrective-order deadline, raising the risk of continued leadership vacancy and decision-making delays."
    }
   },
   {
    "title": {
-    "ko": "경영 공백 및 노사 갈등 장기화",
-    "en": "Prolonged Leadership Vacuum and Labor-Management Conflict"
+    "ko": "광고시장 구조적 축소",
+    "en": "Structural Decline in Ad Market"
    },
    "body": {
-    "ko": "2025년 7월 사장 사임 이후 대행 체제가 지속되고 있으며, 보도국장도 공석인 상태다. 사추위 구성을 놓고 노사 간 합의가 이루어지지 않고 있고, 노조 파업과 대주주 퇴출 요구가 반복되면서 내부 조직 불안이 이어지고 있다. 이 같은 리더십 공백과 내부 갈등은 광고 영업력과 콘텐츠 경쟁력 저하로 이어질 수 있어 실적 회복을 지연시키는 요인이다.",
-    "en": "Following the CEO's resignation in July 2025, YTN has been run by an acting executive, with the news director position also vacant. Labor-management negotiations over the CEO recommendation committee remain deadlocked, and repeated union strikes and demands for the removal of the largest shareholder are fueling organizational instability. This leadership vacuum and internal conflict risk further eroding advertising competitiveness and content quality, potentially delaying any earnings recovery."
+    "ko": "한국방송광고진흥공사 자료에 따르면 국내 방송광고 시장은 2021년 4조531억원에서 2024년 3조2191억원으로 줄었고, 2026년에는 2조5583억원까지 다시 축소될 것으로 전망됐다. 광고와 수신료가 여전히 핵심 수익원인 YTN에는 구조적인 매출 압박 요인으로 작용한다. 유튜브·OTT 등 디지털 플랫폼으로의 광고비 이동이 계속되고 있어 전통 방송사 전반의 수익모델 전환 압력이 커지고 있다.",
+    "en": "According to Korea Broadcast Advertising Corporation data, Korea's broadcast advertising market shrank from 4.0531 trillion won in 2021 to 3.2191 trillion won in 2024, and is projected to shrink further to 2.5583 trillion won by 2026. This represents a structural revenue headwind for YTN, which still relies heavily on advertising and license fees. The continued migration of ad spending toward digital platforms such as YouTube and OTT services is intensifying pressure on traditional broadcasters to transform their revenue models."
    }
   },
   {
    "title": {
-    "ko": "지배구조 분쟁 장기화 — 경영 의사결정 지연",
-    "en": "Protracted Governance Dispute — Strategic Decision-Making Delayed"
+    "ko": "모기업 재무부담",
+    "en": "Parent Group Financial Burden"
    },
    "body": {
-    "ko": "유진그룹이 1심 판결에 항소해 2심이 진행 중이고, 방미통위의 행정 처분 시점도 불확실하다. 법적 분쟁이 장기화될수록 경영전략 수립, 인사, 콘텐츠 투자 등 핵심 의사결정이 지연될 수밖에 없다. 유진그룹이 개정 방송법 사추위 의무화 조항에 헌법소원까지 제기한 상황이어서 분쟁 전선이 복수로 확대되어 있다.",
-    "en": "With Yujin Group having appealed the first-instance ruling and the BMCC's administrative decision timeline still uncertain, the governance dispute shows few signs of near-term resolution. A prolonged legal battle directly delays critical decisions on strategy, personnel, and content investment. The fact that Yujin Group has also filed a constitutional challenge against the revised Broadcasting Act's mandatory CEO recommendation committee provisions means the dispute spans multiple legal fronts simultaneously."
+    "ko": "YTN 최대주주인 유진이엔티의 지배기업 유진기업은 2023년 총차입금 8,944억원에서 2025년 1분기 1조34억원으로 차입 규모가 계속 늘어난 것으로 알려졐다. 2조원 이상의 10년 투자 계획을 실행하려면 모기업의 자금 동원 능력이 중요한데, 유진기업의 높은 차입 수준은 계획 실행의 속도나 규모에 제약 요인이 될 수 있다. 방송산업 자체의 수익성 부진이 지속되는 상황에서 대주주의 재무 여력은 YTN 경영 안정성에 직접적인 영향을 줄 수 있는 변수다.",
+    "en": "Yujin Corp, the parent of Yujin E&T, YTN's largest shareholder, reportedly saw its total borrowings rise continuously from 894.4 billion won in 2023 to 1.0034 trillion won in the first quarter of 2025. Executing the more than 2 trillion won, ten-year investment plan depends heavily on the parent's capacity to raise funds, and Yujin Corp's elevated debt level could constrain the pace or scale of that execution. With profitability across the broadcasting industry remaining weak, the controlling shareholder's financial capacity is a variable that could directly affect YTN's management stability."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "규제·법률 리스크",
-    "en": "Regulatory and Legal Risk"
+    "ko": "규제·지배구조",
+    "en": "Regulatory/Governance"
    },
    "body": {
-    "ko": "방미통위의 유진그룹 최대주주 자격 취소 여부 결정, 유진그룹의 항소심(2심), 개정 방송법 사추위 의무화 조항에 대한 헌법소원 등 복수의 법적 분쟁이 동시에 진행 중이다. 각 절차의 결과와 시점에 따라 소유구조·경영진 구성이 급변할 수 있어 예측 가능성이 낮다. 규제 당국의 시정명령 불이행 시 추가 제재 가능성도 배제할 수 없다.",
-    "en": "Multiple legal proceedings run concurrently: the BMCC's administrative review of Yujin Group's shareholder status, Yujin Group's appellate challenge to the first-instance ruling, and its constitutional challenge to mandatory CEO recommendation committee provisions. Each proceeding could abruptly alter ownership structure and management composition, making outcomes highly unpredictable. The risk of additional regulatory sanctions for non-compliance with BMCC directives cannot be ruled out."
+    "ko": "최대주주 변경 승인이 법원에서 위법 판결을 받고 항소가 진행 중이며, 방송미디어통신위원회의 후속 처분 결과에 따라 최대주주 자격 자체가 재검토될 수 있다. 사장추천위원회 구성 지연에 따른 방송법상 시정명령 대상 상태도 이어지고 있다. 이러한 불확실성은 경영 의사결정과 투자 집행 속도에 영향을 줄 수 있다.",
+    "en": "The court has ruled the largest-shareholder approval unlawful and an appeal is underway, while the Broadcasting and Media Communications Commission's follow-up decision could reopen the question of largest-shareholder eligibility. The company also remains subject to a corrective order under the Broadcasting Act due to delays in forming the CEO recommendation committee. This uncertainty could affect the pace of management decisions and investment execution."
    }
   },
   {
    "cat": {
-    "ko": "광고 시황 악화 리스크",
-    "en": "Broadcast Advertising Market Deterioration Risk"
+    "ko": "재무 건전성",
+    "en": "Financial Soundness"
    },
    "body": {
-    "ko": "내수 경기 부진 장기화와 OTT·디지털 플랫폼으로의 광고비 이동이 방송 광고 수익의 추가 감소를 야기할 수 있다. 뉴스전문채널 광고 시장은 종합편성채널·OTT와의 경쟁 심화로 구조적 위축이 가속화될 위험이 있다. 대형 광고주가 예상보다 빠르게 디지털 채널로 집행을 전환할 경우 방송 광고 매출이 추가로 감소할 수 있다.",
-    "en": "Prolonged domestic economic sluggishness and the structural reallocation of ad budgets toward OTT and digital platforms could accelerate the decline in broadcast advertising revenue. The news-channel segment faces structural compression risks as competition from general-programming channels and OTT intensifies. A faster-than-expected migration of major advertisers to digital channels could erode YTN's broadcast ad revenue more sharply than anticipated."
+    "ko": "2023~2025년 3년 연속 영업손실과 순손실이 이어졌고, 같은 기간 영업활동현금흐름도 3년 연속 마이너스를 기록했다. 부채비율은 2024년 57.6%까지 높아진 뒤 2025년 51.9%로 다소 낮아졌으나 여전히 2022년 41.1%보다 높은 수준이다. 적자와 현금흐름 부진이 장기화될 경우 추가 자본조달 필요성이 커질 수 있다.",
+    "en": "Operating losses and net losses continued for three straight years from 2023 to 2025, and operating cash flow was also negative for three consecutive years over the same period. The debt ratio rose to 57.6% in 2024 before easing to 51.9% in 2025, still above the 41.1% level seen in 2022. Prolonged losses and weak cash flow could increase the need for additional capital raising."
    }
   },
   {
    "cat": {
-    "ko": "운영 및 콘텐츠 경쟁력 리스크",
-    "en": "Operational and Content Competitiveness Risk"
+    "ko": "산업 구조 변화",
+    "en": "Industry Structure Shift"
    },
    "body": {
-    "ko": "지배구조 분쟁과 경영 공백 과정에서 핵심 취재 인력 이탈, 보도 경쟁력 저하, 조직 사기 훼손 등이 복합적으로 작용해 콘텐츠 품질이 하락할 위험이 있다. 유튜브·OTT 등 신규 디지털 수익원은 아직 전통 방송 광고 감소를 대체할 만한 규모에 미치지 못한 상태다. 이러한 복합 위험이 지속될 경우 중단기 실적 회복이 추가로 지연될 수 있다.",
-    "en": "The combination of personnel departures, reduced reporting capacity, and weakened organizational morale during the governance dispute and leadership vacuum poses a risk of declining content quality. New digital revenue streams, including YouTube and OTT partnerships, have yet to reach sufficient scale to compensate for the structural decline in traditional broadcast advertising. If these compounded risks persist, medium-term earnings recovery could be further delayed."
+    "ko": "방송광고 시장이 구조적으로 축소되는 가운데 유튜브·OTT 등 디지털 플랫폼과의 광고 경쟁이 심화되고 있다. 통합미디어법 등 규제 재편 논의도 진행 중이어서 향후 법제화 방향에 따라 경쟁 조건이 달라질 수 있다. 새로운 수익모델로의 전환이 지연되면 산업 전반의 수익성 회복이 더 늦어질 위험이 있다.",
+    "en": "As the broadcast advertising market shrinks structurally, competition for ad spending with digital platforms such as YouTube and OTT services is intensifying. Discussions over regulatory restructuring, including an integrated media law, are also ongoing, and the direction of any future legislation could alter competitive conditions. A delayed shift toward new revenue models risks further postponing an industry-wide profitability recovery."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7월 말",
-    "en": "End of July 2026"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "방미통위 시정명령에 따른 YTN 사장추천위원회(사추위) 구성 완료 여부 확인 — 완료 시 신임 사장 선임 절차가 개시돼 리더십 공백 해소의 출발점이 될 수 있으며, 미이행 시 추가 제재 가능성이 있다.",
-    "en": "Confirm whether YTN has complied with the BMCC's directive to form a CEO recommendation committee by end-July 2026; successful formation would initiate the formal CEO selection process — a potential turning point for the leadership vacuum — while non-compliance could trigger further regulatory sanctions."
+    "ko": "YTN 3분기보고서 공시(DART)를 통해 영업손익 방향과 2025년 유상증자 이후 자본구조 변화를 확인할 필요가 있다.",
+    "en": "Check YTN's third-quarter report (DART filing) to see the direction of operating results and how the capital structure has evolved after the 2025 share issuance."
    }
   },
   {
    "when": {
-    "ko": "2026년 8월(예상)",
-    "en": "August 2026 (Expected)"
+    "ko": "2026년 하반기 중(시점 미정)",
+    "en": "During the second half of 2026 (timing unconfirmed)"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표 — 계절적 광고 성수기인 2분기의 영업손익 개선 폭과 방송 광고 매출 변화가 연간 손익분기점 도달 가능성을 판단하는 핵심 지표가 된다.",
-    "en": "Q2 2026 earnings release — the seasonally stronger second quarter is critical for assessing the pace of operating-loss improvement and shifts in broadcast advertising revenue, both of which are key indicators of whether full-year breakeven is achievable."
+    "ko": "방송미디어통신위원회가 유진이엔티의 최대주주 변경 승인에 대해 무효·취소 등 후속 처분을 확정하는지 여부와 그 내용을 확인해야 한다.",
+    "en": "Watch whether the Broadcasting and Media Communications Commission finalizes follow-up action, such as annulment or cancellation, on Yujin E&T's largest-shareholder approval, and the content of that decision."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기(시점 미정)",
-    "en": "2H 2026 (Timing TBD)"
+    "ko": "2027년 1월 1일",
+    "en": "January 1, 2027"
    },
    "what": {
-    "ko": "유진그룹 최대주주 변경 승인 취소 관련 2심 판결 및 방미통위 행정 처분 결정 — 소유구조 최종 확정에 따라 YTN의 경영 방향성과 주주 구성이 근본적으로 바뀔 수 있어 가장 중요한 이벤트다.",
-    "en": "Second-instance court ruling on the Yujin Group largest-shareholder approval and the BMCC's administrative decision — a final determination on ownership structure could fundamentally reshape YTN's management direction and shareholder composition, making this the single most consequential event to monitor."
+    "ko": "YTN서울타워(남산타워)의 직영 전환이 예정된 시점으로, 공간사업 매출이 실제로 실적에 반영되는지 점검할 시점이다.",
+    "en": "This is the scheduled date for YTN Seoul Tower (Namsan Tower) to move to direct in-house management, a point to check whether space-business revenue is actually reflected in results."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 — 2026년 방송통신광고비 조사 발표(2027년 초 확정)",
-    "en": "2H 2026 Interim Data / Early 2027 (Official Publication)"
+    "ko": "2026년 중(하반기 예상)",
+    "en": "Sometime in 2026 (expected in H2)"
    },
    "what": {
-    "ko": "코바코 발표 예정인 2026년 방송 광고비 실적치 확인 — 방송 광고 시장 감소 폭이 예상(약 13%)보다 확대 또는 완화되는지에 따라 YTN 수익 모델의 중기 지속가능성 판단 근거가 변화한다.",
-    "en": "Official 2026 broadcast advertising expenditure data from KOBACO will serve as a key yardstick for evaluating whether the structural decline in broadcast advertising is accelerating or decelerating, with direct implications for the medium-term sustainability of YTN's revenue model."
+    "ko": "유진이엔티의 300억원 규모 유상증자 완료 여부와 K라이프스타일 분야 미디어 추가 인수 검토 결과를 확인해야 한다.",
+    "en": "Confirm whether Yujin E&T's planned 30 billion won capital raise has been completed and monitor any decisions on additional K-lifestyle media acquisitions under review."
+   }
+  },
+  {
+   "when": {
+    "ko": "차기 정기주주총회(2027년 3월경)",
+    "en": "The next annual general meeting (around March 2027)"
+   },
+   "what": {
+    "ko": "사장추천위원회 구성 협의 결과와 그에 따른 신임 대표이사 선임 여부를 확인할 시점이다.",
+    "en": "Check the outcome of negotiations over forming the CEO recommendation committee and whether a new chief executive is subsequently appointed."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "YTN은 국내 최초의 24시간 보도전문채널로서 높은 브랜드 인지도와 유튜브 535만 구독자를 포함한 디지털 플랫폼 자산을 보유하고 있으나, 2023년부터 이어진 3년 연속 영업손실과 경영 불안정이 회사의 체력을 소모시키고 있다. 2025년 영업손실 축소(전년 대비 약 49%)와 4분기 분기 흑자 달성은 의미 있는 개선 신호지만, 방송 광고 시장의 구조적 하락이라는 외부 역풍은 단기간에 해소되기 어렵다. 지배구조 측면에서는 법원의 유진그룹 최대주주 변경 승인 취소 판결과 방미통위의 행정절차 개시 등 소유구조 재편 가능성이 높아지고 있으나, 유진그룹의 항소로 인해 최종 결론까지 불확실성이 크다. 사추위 구성 완료와 신임 사장 선임을 통한 리더십 조기 안정화가 실적 회복과 광고주 신뢰 재건의 선결 과제다. 2026년 하반기에 집중될 지배구조 이벤트(2심 판결, 방미통위 행정 처분, 사추위 완성)와 분기별 실적 추이가 향후 경영 정상화 속도를 결정하는 핵심 분수령이 될 것이다.",
-   "en": "YTN holds a strong brand franchise as South Korea's first 24-hour news channel and a growing digital asset base — including 5.35 million YouTube subscribers — but three consecutive years of operating losses since 2023 and prolonged organizational instability have been depleting its financial and operational resilience. The meaningful narrowing of the operating loss in 2025 and the return to quarterly profitability in Q4 2025 are constructive signals, yet the structural headwind from declining broadcast advertising is unlikely to abate quickly. On the governance front, the court's invalidation of the largest-shareholder approval and the BMCC's formal review raise the probability of ownership structure reform, though the ongoing appeal leaves the ultimate resolution uncertain. Early stabilization of leadership through the CEO recommendation committee and a permanent appointment is a prerequisite for rebuilding advertiser relationships and accelerating earnings recovery. Key governance events concentrated in the second half of 2026 — the appellate ruling, the BMCC's administrative decision, and the formation of the CEO recommendation committee — along with quarterly earnings trends, will be the decisive inflection points for the pace of operational normalization."
+   "ko": "YTN은 유진그룹 인수 이후 최대주주 지위를 둘러싼 법적 다툼과 사장추천위원회 구성 지연 등 지배구조 불확실성이 장기화되고 있다. 재무적으로는 2022년 흑자에서 2023~2025년 3년 연속 적자로 전환했고, 2025년 적자 폭이 2024년보다 줄었으며 2026년 2분기에는 순이익이 흑자로 전환하는 등 개선 조짐이 일부 나타났지만 최근 네 개 분기 누적으로는 여전히 손실 구간에 있다. 산업 측면에서는 방송광고 시장의 구조적 축소가 지속되는 가운데, 대주주인 유진그룹이 10년간 2조원 이상을 투자해 미디어 부문 매출을 5,000억원대로 키우겠다는 비전을 제시해 사업 다각화 시도가 본격화되고 있다. 다만 이 투자 계획의 실행 속도는 모기업의 재무 부담, 방송미디어통신위원회의 후속 처분 결과, 노사 관계 등 여러 변수에 좌우될 수 있다. 투자자는 분기별 손익 변동성, 지배구조 관련 행정·법적 절차의 진행 상황, 그리고 유진그룹의 투자 계획 이행 여부를 함께 지켜볼 필요가 있다.",
+   "en": "Since Yujin Group's acquisition, YTN has faced prolonged governance uncertainty stemming from the legal dispute over largest-shareholder status and delays in forming the CEO recommendation committee. Financially, the company swung from a profit in 2022 to three consecutive years of losses from 2023 to 2025, with the 2025 loss narrowing from 2024 and net income turning positive in the second quarter of 2026, showing tentative signs of improvement, though the trailing four-quarter total remains in loss territory. On the industry side, the broadcast advertising market continues its structural decline, even as controlling shareholder Yujin Group has laid out a vision to invest more than 2 trillion won over ten years to grow media segment revenue toward 500 billion won, signaling a serious push toward diversification. The pace of execution of this investment plan, however, could be shaped by the parent group's financial burden, the outcome of the Broadcasting and Media Communications Commission's follow-up decision, and labor-management relations. Investors will want to keep watching quarterly earnings volatility, the progress of governance-related administrative and legal proceedings, and whether Yujin Group's investment plans are actually implemented."
   }
  },
  "sources": [
-  "https://www.investing.com/equities/ytn",
-  "https://www.ytn.co.kr/",
-  "https://www.investing.com/equities/ytn-historical-data",
-  "https://thevc.kr/ytn",
-  "http://www.thinkpool.com/itemanal/i/index.jsp?code=040300",
-  "https://www.google.com/finance/quote/040300:KOSDAQ?hl=en",
+  "https://www.asiae.co.kr/article/2025112817294575651",
+  "https://news.mt.co.kr/mtview.php?no=2024021515424294304",
+  "https://www.ytn.co.kr/_ln/0102_202402071358577589",
+  "http://www.journalist.or.kr/news/article.html?no=61402",
+  "https://dealsite.co.kr/articles/152412",
+  "https://www.ibtomato.com/Mobile/mView.aspx?no=14917&type=1",
+  "https://zdnet.co.kr/view/?no=20260417124215",
+  "https://www.moneys.co.kr/article/2025070314561334351",
+  "https://www.hankyung.com/article/202607095277i",
+  "https://www.ytn.co.kr/_ln/0134_202310241542495034",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=692584",
+  "https://www.ytn.co.kr/_ln/0102_202607061808352695",
+  "https://www.dailian.co.kr/news/view/1675816/%EC%B2%AB-%ED%9D%91%EC%9E%90-%EB%82%B8-%ED%8B%B0%EB%B9%99-%ED%95%98%EB%B0%98%EA%B8%B0%EC%97%90%EB%8F%84-%EC%9B%83%EC%9D%84%EA%B9%8C%EC%A0%95-2026",
+  "https://www.ytn.co.kr/_ln/0102_202607070018287842",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260515003435",
   "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A040300&MenuYn=Y&NewMenuID=102&stkGb=701",
-  "https://infor.ytn.co.kr/ir/posting.php",
-  "https://ytn.co.kr/index.html",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=630379",
-  "https://m.ytn.co.kr/schedule.php",
-  "https://dmb.ytn.co.kr/mytn/schedule.php",
-  "https://infor.ytn.co.kr/news/bbs_list.php",
-  "https://infor.ytn.co.kr/",
-  "https://infor.ytn.co.kr/ir/stockholder.php",
-  "https://www.seoul.co.kr/news/life/2025/11/28/20251128500268",
-  "https://imnews.imbc.com/replay/2025/nwdesk/article/6780262_36800.html",
-  "https://infor.ytn.co.kr/ir/stock.php"
+  "https://www.ytn.co.kr/_ln/0102_202606041124006451",
+  "https://www.ytn.co.kr/_ln/0104_202607230604152259"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "040300",
  "name": "YTN",
  "name_en": "YTN",
@@ -223,9 +233,9 @@
   "미디어·엔터"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 01:03",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 07:33",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-22",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -324,14 +334,14 @@
    }
   ],
   "valuation": {
-   "price": 2005,
-   "mcap": 0.0956,
+   "price": 2000,
+   "mcap": 0.0954,
    "shares": 47676980,
    "total_shares": 47676980,
    "wavg_shares": 45914605,
    "per": null,
    "eps": -172,
-   "pbr": 0.41,
+   "pbr": 0.4077,
    "bps": 4906,
    "roe_ttm": -3.7,
    "ttm_window": "2025Q3~2026Q2",

@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "XGSPON 양산 전환 기로, 수주 가시성 확대",
-  "en": "At the XGSPON Mass-Production Inflection: Stronger Order Visibility"
+  "ko": "XGS-PON 양산 전환, 이익 회복 시동",
+  "en": "XGS-PON Mass Production Shift, Profit Recovery Begins"
  },
  "lead": {
-  "ko": "2025년 매출 급감·영업 대규모 적자를 겪은 자람테크놀로지가 2026Q1 매출의 분기 기준 대폭 반등과 함께 유럽 고객사 XGSPON ASIC 2건(총 395억 원 이상) 수주를 기반으로, 양산 매출 전환 여부가 본격적인 시험대에 올랐다.",
-  "en": "After a sharp revenue decline and widened operating losses in 2025, Jaram Technology enters a critical inflection test in 2026, as a meaningful Q1 revenue rebound and two XGSPON ASIC contracts (totaling over KRW 39.5B) with a European customer set the stage for a potential structural shift to mass-production revenue."
+  "ko": "자람테크놀로지는 유럽 통신장비사 대상 XGS-PON ASIC 양산 발주가 시작되며 2026년 상반기 매출이 급증하고 2분기 순이익이 흑자로 전환했다.",
+  "en": "Zaram Technology saw sharp revenue growth and a return to net profit in Q2 2026 as mass-production orders began for its XGS-PON ASIC supplied to a European telecom equipment maker."
  },
  "keypoints": [
   {
-   "ko": "유럽 통신장비사(노키아 추정)와 XGSPON ASIC 개발·공급 계약 2건(2023년 165억 원·2025년 12월 230억 원) 체결, 2026년부터 양산 매출 전환 예정",
-   "en": "Two XGSPON ASIC development and supply contracts signed with a European customer (reportedly Nokia) — KRW 16.5B in 2023 and KRW 23.05B in December 2025 — with mass-production revenue conversion expected to begin in 2026."
+   "ko": "2026년 2분기 매출 60.95억원, 영업손실 3.14억원으로 적자 축소, 순이익은 1.46억원으로 흑자전환",
+   "en": "Q2 2026 revenue reached KRW 6.10 billion with operating loss narrowing to KRW 314 million and net profit turning positive at KRW 146 million"
   },
   {
-   "ko": "2025년 연결 매출 약 106억 원(전년 대비 -52%), 영업손실 약 71억 원(영업손실률 -66.4%)으로 광트랜시버 수요 급감과 XGSPON ASIC 연구개발비 급증이 동시에 실적을 압박",
-   "en": "FY2025 revenue fell approximately 52% YoY to ~KRW 10.6B, with an operating loss of ~KRW 7.1B (OPM -66.4%), as the optical transceiver market downturn coincided with a surge in XGSPON ASIC R&D expenses."
+   "ko": "2025년 연간 매출은 106억원으로 전년 대비 절반 수준 감소하며 영업손실 70.6억원 기록",
+   "en": "Full-year 2025 revenue fell to about KRW 10.6 billion, roughly half the prior year, with an operating loss of KRW 7.06 billion"
   },
   {
-   "ko": "2026Q1 매출 약 52억 원으로 직전 분기(약 28억 원) 대비 88% 반등, 순손실 폭이 약 2.5억 원으로 대폭 축소되며 실적 회복의 첫 신호 포착",
-   "en": "2026Q1 revenue recovered ~88% QoQ to ~KRW 5.2B (vs. ~KRW 2.8B in 2025Q4), with net loss narrowing sharply to ~KRW 0.25B — the first concrete sign of a recovery trajectory."
+   "ko": "유럽 Tier-1 통신장비사 대상 XGS-PON ASIC 첫·두 번째 양산발주(PO)를 2026년 6월과 7월에 연이어 수주",
+   "en": "Secured its first and second XGS-PON ASIC mass-production orders from a European Tier-1 telecom equipment maker in June and July 2026"
   },
   {
-   "ko": "2024년 8월 발행한 사모 전환사채(CB) 330억 원의 전환청구 가능 기간(2025년 7월~2027년 6월) 진행 중으로, 주식 희석 리스크 상존",
-   "en": "The KRW 33B private convertible bond issued in August 2024 entered its conversion window (July 2025 – June 2027), presenting an ongoing share dilution overhang."
+   "ko": "전환사채 264억원이 보통주로 전환되며 부채비율이 크게 낮아지는 등 재무구조가 개선됨",
+   "en": "Debt structure improved markedly as KRW 26.4 billion of convertible bonds were converted into common shares"
   },
   {
-   "ko": "RISC-V 기반 차량용 이더넷 스위치, AGI 뉴로모픽 반도체 등 차기 파이프라인을 국책 과제와 병행 추진 중이나, 실질적 매출 기여는 2027~2028년 이후로 전망됨",
-   "en": "Next-generation pipelines — including RISC-V automotive ethernet switches and AGI neuromorphic chips — are being developed via government R&D programs, though commercial revenue contribution is not expected before 2027–2028."
+   "ko": "25G/50G-PON, 모빌리티 반도체, AGI 뉴로모픽 등 차세대 과제가 다수 진행 중",
+   "en": "Multiple next-generation projects are underway spanning 25G/50G-PON, mobility semiconductors, and AGI neuromorphic chips"
   }
  ],
  "business": {
-  "ko": "자람테크놀로지는 2000년 설립된 시스템반도체 설계 전문 팹리스 기업으로, 2023년 3월 기술성장기업 특례로 코스닥에 상장하였다. 핵심 제품은 10기가급 수동형 광네트워크(PON) 칩인 XGSPON SoC와 이를 광부품과 결합한 XGSPON 스틱으로, 코어망과 최대 64개 기지국·단말기를 하나의 광케이블로 연결하는 1:N 전송 기술이 핵심 경쟁력이다. 이 외에도 광트랜시버, 기가와이어, 하이패스 단말기용 칩, 에릭슨향 PABX 교환기용 ASIC 등 다양한 통신반도체 제품군을 갖추고 있으며, 에릭슨과는 15년 이상의 공급 관계를 유지 중이다. 2025년 3분기 별도 기준 제품 매출 비중은 DVT·SOC 약 33.0%, 광트랜시버 약 30.9%, 기가와이어 약 14.1%, XGSPON 제품 약 3.8%이며, 용역(ASIC 개발) 매출에서 XGSPON 개발 용역이 약 13.2%를 차지해 개발 단계 계약 매출이 전체 수익의 상당 부분을 구성한다. 주요 고객은 국내 통신 3사와 노키아·에릭슨 등 글로벌 통신장비사다. 경쟁 구도는 인텔(맥스리니어)·브로드컴·마벨·코티나 등 미국 반도체 기업들이 10G PON 칩 시장을 사실상 과점하고 있으며, 자람테크놀로지는 국내 최초로 XGSPON SoC를 개발·상용화한 Non-US 공급사로서 벤더 다변화 수요에 대응하는 포지션이다. DSP 코어 기술 및 EDA Tool 내재화로 설계 원가 경쟁력을 갖추고 있으며, 25GS-PON MSA 표준 그룹 정회원 자격과 함께 차세대 25G·50G PON SoC, RISC-V 기반 차량용·AI 반도체 등으로 사업 영역 확장을 도모하고 있다.",
-  "en": "Founded in 2000, Jaram Technology is a fabless system semiconductor design company that listed on KOSDAQ in March 2023 under the technology-growth special exemption. Its flagship products are the XGSPON SoC — a 10-Gbps passive optical network chip — and the XGSPON Stick, which integrates the chip with optical components to enable 1:N connectivity from a core network node to up to 64 base stations or terminals over a single optical cable. The broader product portfolio includes optical transceivers, Giga-Wire chips, Hi-Pass terminal chips, and an ASIC for Ericsson's PABX exchange systems, a supply relationship maintained for over 15 years. In the Q3 2025 standalone revenue breakdown, DVT/SoC products comprised ~33.0%, optical transceivers ~30.9%, Giga-Wire ~14.1%, and XGSPON products ~3.8%; XGSPON development service fees contributed ~13.2%, indicating that development-phase contract revenue constitutes a meaningful share of the mix. Key customers include Korea's three major telcos and global telecom equipment makers Nokia and Ericsson. Competitively, the 10G PON chip market is dominated by U.S.-based firms (Intel/MaxLinear, Broadcom, Marvell, Cortina); Jaram holds the distinction of being the first Korean company to develop and commercialize an XGSPON SoC, positioning it as a non-U.S. alternative benefiting from vendor-diversification trends. Internalized DSP core technology and EDA tools support cost competitiveness, and the company is a full member of the 25GS-PON MSA standards group while pursuing next-generation pipelines in 25G/50G PON SoC, RISC-V automotive ethernet switches, and AGI neuromorphic chips."
+  "ko": "자람테크놀로지는 2000년 설립된 시스템반도체 설계 전문 팹리스 기업으로, 2023년 3월 기술성장기업 특례로 코스닥에 상장했다. 통신반도체(XGSPON칩) 및 XGSPON SFP+ ONU 제품을 주력으로, 광트랜시버, 기가와이어, 하이패스 단말기용 반도체 등을 생산하며 국내 통신 3사 및 글로벌 통신장비사에 제품을 공급한다. 창업 초기에는 반도체 설계자산(IP) 사업과 디지털 신호 처리 프로세서(DSP) 설계를 영위하다가 2015년 폰스틱(PON Stick) 개발, 2017년 라이트웍스 흡수합병을 계기로 통신용 반도체 사업에 본격 진출했다. 자람테크놀로지는 무료 오픈소스 아키텍처인 RISC-V를 사용해 자체적으로 IP를 만들고 EDA도 일부 내재화해 일반 중소형 팹리스 대비 개발 비용 구조에서 차별점을 가진 것으로 파악된다. 주요 경쟁사로는 브로드컴, 인텔(맥스리니어), 코티나, 티빗 등 PON SoC 시장을 과점하는 해외 대형 업체들이 꼽힌다. 2023년 글로벌 통신장비사와 165억원 규모의 XGSPON ASIC 설계 계약을 체결했고, 2025년에는 230억원 규모 차세대 XGSPON 계약도 추가로 체결했다. 최근에는 차세대 GPON 기술과 RISC-V 기반 온디바이스 AI 반도체 개발을 통해 5G 스몰셀 등으로 사업 영역을 확장하고 있으며, 모빌리티용 네트워크 프로세서 SoC 개발 등 차량용 반도체 분야로도 진출을 추진 중이다.",
+  "en": "Founded in 2000, Zaram Technology is a fabless system semiconductor design company that listed on KOSDAQ in March 2023 under the technology growth company special listing track. Its core products are XGSPON communication chips and XGSPON SFP+ ONU modules, alongside optical transceivers, giga-wire products, and Hi-Pass toll-payment terminal chips, supplied to Korea's three telecom carriers and global telecom equipment makers. The company originally operated a semiconductor IP business and digital signal processor design before entering the telecom chip business in earnest following its PON Stick development in 2015 and the absorption merger of Lightworks in 2017. Zaram builds its own IP using the open-source RISC-V architecture and has internalized part of its EDA capability, which appears to differentiate its cost structure from typical small and mid-sized fabless peers. Its main competitors are large overseas players such as Broadcom, Intel (MaxLinear), Cortina, and Tibit, which dominate the PON SoC market. In 2023 the company signed a KRW 16.5 billion XGSPON ASIC design contract with a global telecom equipment maker, and in 2025 added a further next-generation XGSPON contract worth about KRW 23 billion. More recently, Zaram has been expanding into 5G small cells through next-generation GPON technology and RISC-V based on-device AI chip development, while also pursuing entry into automotive semiconductors via a mobility network processor SoC."
  },
  "earnings": {
-  "ko": "2022년 연결 매출 약 161억 원, 영업이익 약 2억 원(영업이익률 1.3%), 순이익 약 6억 원으로 소폭 흑자를 유지했다. 2023년에는 광트랜시버 시황 둔화와 XGSPON 개발 비용 확대로 매출이 약 116억 원으로 감소하고 영업손실 약 21억 원(영업손실률 -18.4%)을 기록하며 적자 전환했다. 2024년에는 유럽 고객사와의 165억 원 규모 XGSPON ASIC 개발 계약 매출이 본격 반영되면서 연간 매출이 약 222억 원으로 전년 대비 91% 급증하고, 영업이익 약 4억 원(영업이익률 1.6%)으로 흑자 전환에 성공했다. 그러나 2025년에는 글로벌 통신장비 수요 둔화 및 고객사 재고 조정으로 광트랜시버 매출이 급감하는 동시에 XGSPON 2차 ASIC(Wi-Fi 탑재) 개발 연구개발비가 크게 늘면서 연간 매출이 약 106억 원(-52%)으로 추락하고 영업손실은 약 71억 원(영업손실률 -66.4%)까지 확대됐다. 분기별로도 2025년 내내 매출이 Q1 약 31억 원 → Q2 약 27억 원 → Q3 약 21억 원 → Q4 약 28억 원으로 줄고 영업손실이 매 분기 심화됐다. 2025년 말 자기자본은 약 357억 원, 부채는 약 413억 원(부채비율 115.8%)으로 2024년 8월 발행한 330억 원 CB가 재무구조에 본격 반영된 결과다. 2025년 영업현금흐름은 약 +6억 원으로 순손실 대비 대폭 개선된 것은 선수금 등 운전자본 효과로 해석된다. 2026Q1에는 2025년 12월 체결한 230억 원 규모 2차 XGSPON ASIC 계약 매출이 유입되기 시작하면서 분기 매출이 약 52억 원으로 전분기 대비 88% 급증했으며, 순손실도 약 2.5억 원으로 전분기(약 19억 원) 대비 대폭 축소됐다. 이 기간 영업손실(약 15.5억 원)과 순손실(-약 2.5억 원) 사이의 큰 괴리는 CB 조달 자금 운용에 따른 금융수익 등 비영업 손익 효과로 추정되며, 지속 가능성은 추가 확인이 필요하다.",
-  "en": "FY2022 delivered consolidated revenue of ~KRW 16.1B, with a thin operating profit of ~KRW 0.2B (OPM 1.3%) and net income of ~KRW 0.6B. FY2023 saw a revenue decline to ~KRW 11.6B and an operating loss of ~KRW 2.1B (OPM -18.4%), as optical transceiver demand weakened and XGSPON development costs ramped. FY2024 delivered a strong recovery: revenue surged ~91% to ~KRW 22.2B and operating profit turned positive at ~KRW 0.4B (OPM 1.6%), primarily driven by recognition of development revenues from the KRW 16.5B XGSPON ASIC design contract signed in 2023. FY2025 sharply reversed this — revenue fell ~52% to ~KRW 10.6B and the operating loss expanded to ~KRW 7.1B (OPM -66.4%), as the global telecom equipment demand slowdown and customer inventory corrections crushed optical transceiver sales while XGSPON second-project (Wi-Fi-enabled) R&D costs surged. Quarterly revenues eroded throughout 2025: ~KRW 3.1B (Q1) → ~KRW 2.7B (Q2) → ~KRW 2.1B (Q3) → ~KRW 2.8B (Q4), with operating losses widening each quarter. Year-end equity stood at ~KRW 35.7B against liabilities of ~KRW 41.3B (debt ratio 115.8%), reflecting the KRW 33B CB issued in August 2024. Operating cash flow recovered to ~+KRW 0.6B in FY2025 despite the large net loss, likely reflecting advance payments and working capital improvements tied to ASIC contracts. In 2026Q1, revenue rebounded ~88% QoQ to ~KRW 5.2B as the December 2025 KRW 23.05B ASIC contract began contributing development revenue, and net loss narrowed dramatically to ~KRW 0.25B from ~KRW 1.9B in 2025Q4. The large gap between the operating loss (~KRW 1.55B) and net loss (~KRW 0.25B) in 2026Q1 likely reflects significant non-operating income (potentially financial income on CB proceeds held as deposits), and the sustainability of this benefit warrants further monitoring."
+  "ko": "연간 실적은 뚜렷한 등락을 보였다. 2022년 매출 161억원, 영업이익 2.0억원, 순이익 6.2억원의 소규모 흑자를 냈고, 2023년에는 매출이 116억원으로 줄고 영업손실 21.4억원, 순손실 12.7억원의 적자를 기록했다. 2024년에는 매출이 221.7억원으로 전년 대비 크게 늘며 영업이익 3.65억원, 순이익 19.8억원으로 흑자전환에 성공했다. 그러나 2025년에는 광트랜시버 매출 감소와 XGSPON 반도체 개발에 따른 연구개발비 증가로 매출이 106.4억원으로 절반 이상 줄고 영업손실 70.6억원, 순손실 68.4억원으로 다시 적자전환했다. 분기별로 보면 2025년 3분기(매출 20.9억원, 영업손실 19.6억원)와 4분기(매출 27.5억원, 영업손실 21.6억원)까지 적자 규모가 확대되는 흐름이었으나, 2026년 1분기 매출이 51.8억원으로 급증하면서 영업손실이 15.5억원으로 줄었고, 2분기에는 매출 61.0억원, 영업손실 3.1억원까지 적자가 크게 축소됐다. 특히 2026년 2분기 순이익은 1.46억원으로 흑자전환에 성공했는데, 이는 유럽 통신장비사 대상 XGS-PON ASIC 양산발주가 매출에 반영되기 시작한 영향으로 풀이된다. 2025년의 실적 악화는 글로벌 통신장비 시장 수요 둔화와 고객사 재고 조정으로 광트랜시버 매출이 크게 줄고 XGSPON ASIC 개발 및 Wi-Fi 탑재 차세대 제품 설계 비용이 늘어난 것이 주된 원인으로 지목된다.",
+  "en": "Annual results show a clear cycle of swings. In 2022 the company posted a small profit with revenue of KRW 16.1 billion, operating profit of KRW 200 million, and net profit of KRW 620 million, before revenue fell to KRW 11.6 billion in 2023 alongside an operating loss of KRW 2.14 billion and a net loss of KRW 1.27 billion. In 2024, revenue rose sharply to KRW 22.2 billion, and the company turned profitable with operating profit of KRW 365 million and net profit of KRW 1.98 billion. However, 2025 saw revenue nearly halve to KRW 10.6 billion, with an operating loss of KRW 7.06 billion and a net loss of KRW 6.84 billion, as optical transceiver sales declined and R&D spending on XGSPON chip development increased. On a quarterly basis, losses widened through Q3 2025 (revenue KRW 2.09 billion, operating loss KRW 1.96 billion) and Q4 2025 (revenue KRW 2.75 billion, operating loss KRW 2.16 billion), but Q1 2026 revenue jumped to KRW 5.18 billion with the operating loss narrowing to KRW 1.55 billion, and Q2 2026 revenue reached KRW 6.10 billion with the operating loss shrinking further to KRW 314 million. Notably, Q2 2026 net profit turned positive at KRW 146 million, a shift interpreted as reflecting the initial impact of XGS-PON ASIC mass-production orders from the European telecom equipment maker being recognized in revenue. The 2025 downturn was primarily attributed to slowing demand and customer inventory adjustment in the global telecom equipment market, which sharply reduced optical transceiver sales, combined with rising design costs for XGSPON ASIC development and next-generation Wi-Fi-equipped products."
  },
  "industry": {
-  "ko": "전 세계 GPON 칩 연간 수요는 5억 개를 상회하는 대형 시장으로, 글로벌 수동형광통신망(PON) 시장 규모는 2026년 약 201억 달러에서 2034년 약 605억 달러(CAGR 약 14.8%)까지 성장이 전망된다. 현재 10Gbps급(XGSPON) 침투율은 약 25% 수준에 불과하여 1Gbps에서 10Gbps로의 전환이 점증하는 흐름이며, 이 업그레이드 사이클이 자람테크놀로지의 핵심 수혜 구간이다. 5G 스몰셀 시장은 2026년 약 107억 달러에서 2034년 약 1,403억 달러(CAGR 약 38%)로 급성장이 예상되며, XGSPON 스틱은 기지국 프론트홀 연결 솔루션으로 이 시장의 수요를 흡수할 잠재력을 갖는다. 미국에서는 2030년까지 약 425억 달러(약 57조 원)를 투입하는 BEAD 광대역 인프라 프로그램이 진행 중으로, FTTH 확대에 따른 PON 장비 수요 증가의 중장기 촉매로 작용할 전망이다. 공급 구도 면에서 10G PON 칩 시장은 인텔(맥스리니어)·브로드컴·마벨 등 미국 기업들의 과점 구조이나, 미·중 지정학적 갈등 심화로 통신장비사들의 Non-US 칩 수요가 뚜렷하게 증가하는 환경이 조성되고 있다. 자람테크놀로지의 XGSPON 스틱은 세계 최초 2.0W 이하 저전력을 구현한 제품으로 원가·품질 경쟁력이 인정받고 있으나, 글로벌 레퍼런스 및 영업력에서 미국계 대형사와의 격차를 좁히는 것은 여전히 과제다.",
-  "en": "Annual global GPON chip demand exceeds 500 million units, and the passive optical network (PON) market is projected to grow from approximately USD 20.1B in 2026 to USD 60.5B by 2034 (CAGR ~14.8%). The penetration rate of 10Gbps (XGSPON) technology currently stands at only ~25%, meaning the ongoing migration from 1Gbps to 10Gbps systems represents a substantial, multi-year addressable growth runway — Jaram's core market opportunity. The 5G small cell market is forecast to expand from approximately USD 10.7B in 2026 to USD 140.3B by 2034 (CAGR ~38%), and the XGSPON Stick product can serve as a base-station fronthaul connectivity solution, positioning the company to benefit from this high-growth segment. The U.S. BEAD program — approximately USD 42.5B in broadband infrastructure investment running through 2030 — is expected to drive a multi-year acceleration in FTTH deployment, generating durable PON equipment demand. On the competitive front, the 10G PON chip market is heavily concentrated among U.S. firms (Intel/MaxLinear, Broadcom, Marvell), but intensifying U.S.-China geopolitical tensions are driving a visible trend toward supply-chain diversification among telecom equipment makers — a tailwind for Jaram as a credentialed non-U.S. alternative. Jaram's XGSPON Stick has been credited with the world's first sub-2.0W power consumption in its class, supporting a cost and quality edge, though bridging the reference-base and sales-reach gap relative to entrenched U.S. incumbents remains a structural challenge."
+  "ko": "자람테크놀로지가 속한 PON(Passive Optical Network) 통신반도체 시장은 브로드컴과 인텔이 과점해온 구조로, 국내 팹리스 기업으로서는 진입 장벽이 높은 영역으로 평가된다. 다만 데이터 트래픽 급증과 AI 데이터센터 확산으로 25G를 넘어 50G급 광통신 전환이 가속화되는 국면이 새로운 기회 요인으로 부상하고 있다. 증권가에서는 5G 스몰셀 시장이 2026년 107억달러에서 2034년 1403억달러로 연평균 38%의 고성장이 예상된다고 전망하는데, 자람테크놀로지가 이 시장에서 XGSPON과 광트랜시버를 결합한 저전력 제품으로 경쟁력을 확보할 수 있다는 시각이 제기된다. 회사는 산업통상자원부 국책과제를 통해 50G 통신 반도체 핵심 기술 확보에 나섰으며, 이는 6G 네트워크 프론트홀·백홀과 AI 데이터센터 인프라의 고속 데이터 전송 효율을 좌우하는 요소로 거론된다. 경쟁사인 브로드컴, 인텔맥스리니어, 코티나 등 해외 대형 업체가 시장을 과점하는 가운데, 자람테크놀로지는 상대적으로 작은 규모지만 RISC-V 기반 자체 IP·EDA 내재화로 원가 구조에서 차별점을 확보한 것으로 파악된다. 미국의 광대역 인프라 구축 정책(BEAD 프로그램) 등 통신 인프라 투자 확대 흐름도 XGSPON 계열 제품의 수요 기반으로 언급된다.",
+  "en": "The PON (Passive Optical Network) communication chip market that Zaram operates in has long been dominated by Broadcom and Intel, making it a high-barrier segment for a domestic fabless company to penetrate. However, surging data traffic and the spread of AI data centers are accelerating the transition from 25G to 50G-class optical communication, creating a new opportunity. Industry analysts project the 5G small cell market will grow from USD 10.7 billion in 2026 to USD 140.3 billion by 2034, a roughly 38% compound annual growth rate, and some view Zaram's low-power products combining XGSPON with optical transceivers as competitive in this space. The company has pursued core 50G communication chip technology through a Ministry of Trade, Industry and Energy national project, which is cited as a factor influencing high-speed data transmission efficiency for 6G network fronthaul/backhaul and AI data center infrastructure. While large overseas players such as Broadcom, Intel MaxLinear, and Cortina dominate the market, Zaram, despite its smaller scale, appears to have differentiated its cost structure through internalized RISC-V based IP and EDA capability. Expanding telecom infrastructure investment trends, including the U.S. broadband infrastructure policy (the BEAD program), are also cited as a demand base for XGSPON-family products."
  },
  "outlook": {
-  "ko": "2026년 자람테크놀로지 전망의 핵심 변수는 1차 XGSPON ASIC 칩(노키아향)의 양산 매출 전환 여부다. 동사는 2023년 시작한 1차 개발이 완료돼 고객사 퀄리피케이션을 통과했으며, 2026년부터 상업화 매출이 시작될 것이라고 공식적으로 밝힌 바 있다. IBK투자증권 등 증권사 분석에 따르면 1차 제품 양산만으로도 연간 약 500억 원 규모의 반복 매출이 최소 10년 이상 창출될 수 있으며, 2025년 12월 체결한 2차 계약(Wi-Fi 탑재, 230억 원, 계약 기간 2028년 1월까지) 제품이 양산에 돌입하면 별도로 연간 약 500억 원 추가 시장이 열리는 구조다. 두 제품의 양산 매출이 모두 본격화될 경우 연간 약 1,000억 원 규모의 안정적 반복 매출 기반 구축이 중장기 목표다. 차세대 파이프라인으로는 RISC-V 기반 뉴로모픽 AI 프로세서(누멘타·고려대 협력, 총 64.4억 원 과제)의 샘플 칩 제작이 2026년 하반기로 예정돼 있다. 차량용 RISC-V 이더넷 스위치(산업기술기획평가원, 총 54억 원 과제)는 2026년 12월 개발 완료 목표로 진행 중이며, 이르면 2026년 샘플 공급 후 2027~2028년 양산 전환을 목표로 하고 있다. 2026Q1의 순손실 대폭 축소는 긍정적이나 영업손실 구조는 아직 지속되고 있어, 양산 매출 전환 속도와 비용 구조 개선이 올해 실적의 핵심 결정 요인이다.",
-  "en": "The dominant variable in Jaram Technology's 2026 outlook is whether the first XGSPON ASIC chip (for Nokia) transitions to mass-production revenue. The company has publicly stated that the first project — initiated in 2023 under a KRW 16.5B contract — has completed development and passed customer qualification, with commercial (mass-production) revenue expected to commence in 2026. Analysts at IBK Securities project that first-chip mass production alone could sustain approximately KRW 50B in annual revenue for at least a decade; the December 2025 second contract (Wi-Fi-enabled XGSPON, KRW 23.05B, through January 2028) targets a distinct new market, with an expected further ~KRW 50B per year upon development completion. If both products reach full mass-production, the long-term scenario is a recurring annual revenue run-rate of approximately KRW 100B. On the next-generation pipeline, a RISC-V-based neuromorphic AI chip (co-developed with Numenta and Korea University under a ~KRW 6.44B government project) is targeting a sample chip in H2 2026. The RISC-V automotive ethernet switch project (KEIT-funded, ~KRW 5.4B total) is targeting completion by December 2026, with potential sample supply in 2026 and mass production feasible in 2027–2028. While the sharply narrowed net loss in 2026Q1 is encouraging, the operating loss structure persists, making the pace of mass-production revenue materialization and cost normalization the central earnings determinants for 2026."
+  "ko": "자람테크놀로지는 2026년 6월 말 유럽 글로벌 Tier-1 통신장비사로부터 XGS-PON용 ASIC의 첫 양산 발주를 약 13억원 규모로 수주했으며, 이는 2023년 10월 체결한 165억원 규모 설계 계약에 기반한 것으로 개발 단계에서 양산 단계로 전환되는 구간에 들어선 것으로 설명됐다. 이어 약 2주 만인 7월 14일에는 같은 프로젝트에서 두 번째 양산 발주(약 13억원, 계약기간 2026년 7월~2027년 4월, 공급지역 유럽·북미)를 추가로 확보했다. 회사는 이번 첫 양산 PO가 개발 매출(NRE) 중심 구조에서 반복적인 양산 매출 구간으로 진입하는 계기가 된다고 설명했으며, 해당 제품 출하 시점은 2026년 말에서 2027년 초로 예정돼 있다. 재무구조 측면에서는 2024년 7월 발행한 330억원 규모 전환사채 중 264억원이 2026년 4월까지 보통주로 전환됐고, 잔여분 66억원도 7월 31일 매도청구권 행사로 조기 취득해 8월 3일 이사회 결의로 전량 소각하며 상환 부담과 희석 우려를 해소했다. 이에 따라 2026년 반기말 자본총계는 607억원으로 전기말 대비 70% 이상 증가했고 부채비율은 크게 낮아졌다. 회사는 개선된 재무구조를 기반으로 첫 번째 XGS-PON ASIC의 양산 매출 확대와 함께 두 번째 ASIC, 25GS-PON, 모빌리티 반도체 등 차세대 제품 개발을 추진할 계획이라고 밝혔다. 아울러 2025년 5월 정부 국책과제 주관기관으로 선정돼 모빌리티용 네트워크 프로세서 SoC 개발에 착수했으며, 개발 기간은 2026년 12월 31일까지로 예정돼 있다.",
+  "en": "In late June 2026, Zaram secured its first mass-production order for an XGS-PON ASIC from a European global Tier-1 telecom equipment maker, worth about KRW 1.3 billion, based on a KRW 16.5 billion design contract signed in October 2023, marking a transition from the development stage into mass production. About two weeks later, on July 14, the company secured a second mass-production order of similar size (about KRW 1.3 billion, contract period from July 2026 to April 2027, covering Europe and North America) on the same project. The company stated this first mass-production order marks a shift from development-revenue-centered structure (NRE) toward recurring mass-production revenue, with shipment expected between late 2026 and early 2027. On the balance sheet, KRW 26.4 billion of the KRW 33 billion convertible bond issued in July 2024 had been converted into common shares by April 2026, and the remaining KRW 6.6 billion was acquired early via a call option exercised on July 31 and fully retired following a board resolution on August 3, resolving repayment burden and dilution concerns. As a result, total equity at the end of H1 2026 rose more than 70% from the prior year-end to KRW 60.7 billion, and the debt ratio fell substantially. The company stated it plans to pursue expansion of mass-production revenue from its first XGS-PON ASIC alongside development of a second ASIC, 25GS-PON, and mobility semiconductors, building on its improved financial structure. It was also selected in May 2025 as the lead institution for a government national project to develop a mobility network processor SoC, with the development period scheduled to run through December 31, 2026."
  },
  "valuation_comment": {
-  "ko": "현재 주당순자산(BPS)은 7,514원으로 산출되며, 직근 누적 기준 주당순이익(EPS)은 -878원으로 적자 상태다. 이에 따라 PER 산출이 불가능하며, 주가는 순자산 대비 큰 프리미엄 구간에서 형성돼 있다 — XGSPON 양산 매출 전환 시나리오가 상당 부분 주가에 선반영된 것으로 해석된다. 2022년·2024년 간헐적 흑자 기간에도 주가는 역사적으로 높은 배수에서 거래됐으며, 이는 성장 단계 팹리스 기업 특유의 개발 단계 할증이 시장에서 작동한 결과다. 배당은 이제껏 한 번도 지급되지 않았으며(DPS 0원), 성장 단계 기업의 특성상 단기 현금 환원을 기대하기 어렵다. 330억 원 CB 전환청구 가능 기간이 현재 진행 중이어서, 전환 행사 규모에 따라 주당 지표 희석 압력이 추가로 발생할 수 있는 점도 주주 관점에서 주의가 필요하다.",
-  "en": "The current book value per share (BPS) is calculated at KRW 7,514, while the most recent trailing earnings per share (EPS) stands at KRW -878, reflecting an ongoing loss position — leaving the P/E ratio incalculable and the stock trading at a substantial premium to book value. This premium implies the market is pricing in a meaningful probability of successful XGSPON mass-production revenue materialization. Even during the intermittent profitable periods (FY2022 and FY2024), the stock historically traded at high multiples, consistent with the development-stage premium that growth-oriented fabless chip companies often command. No dividends have ever been paid (DPS: KRW 0), and the company's reinvestment-phase profile makes near-term cash returns unlikely. With the KRW 33B convertible bond now in its active conversion window, potential per-share dilution from conversion activity is an additional consideration for assessing the per-share value framework."
+  "ko": "자람테크놀로지는 2025년 대규모 적자 이후 2026년 상반기 매출 회복과 2분기 순이익 흑자전환이 확인되면서 시장의 관심이 실적 개선 지속성에 맞춰져 있다. 주가순자산비율은 전환사채의 대규모 주식 전환으로 자본총계가 늘어난 영향을 함께 살펴볼 필요가 있는데, 자본 확충은 주당 순자산의 기준점 자체를 변화시키는 요인이라는 점에 유의할 만하다. 배당은 최근까지 지급 실적이 없어 배당수익률 관점에서 접근하기 어려운 종목으로 분류된다. 밸류파인더 등 일부 증권가에서는 기가와이어·광트랜시버 등 기존 주력 사업의 견고한 레퍼런스와 캐시카우 기반을 확보했다고 평가하면서도 투자의견과 목표주가는 제시하지 않은 사례가 있다. 실적 변동성이 큰 팹리스 기업 특성상 양산 매출 확대 속도와 후속 수주 여부가 향후 밸류에이션 논의의 핵심 변수가 될 것으로 보인다.",
+  "en": "Following a large loss in 2025, market attention on Zaram has shifted toward the sustainability of the revenue recovery and the return to net profit confirmed in Q2 2026. The price-to-book ratio should be considered alongside the large increase in total equity driven by convertible bond conversion into shares, since such capital expansion itself changes the book-value baseline. The company has had no recent dividend payment record, placing it in a category difficult to assess from a dividend-yield perspective. Some brokerages, such as ValueFinder, have noted that the company's existing core businesses in giga-wire and optical transceivers provide a solid reference base and cash-flow foundation, though in at least one such case no investment rating or target price was issued. Given the inherent earnings volatility of a fabless company at this stage, the pace of mass-production revenue expansion and the pipeline of follow-on orders are likely to remain the key variables in future valuation discussions."
  },
  "bull": [
   {
    "title": {
-    "ko": "XGSPON 양산 전환 — 연간 수백억 원 규모 반복 수익 구조화 시나리오",
-    "en": "XGSPON Mass-Production Transition — Multi-Decade Recurring Revenue Crystallization"
+    "ko": "양산 전환 및 매출 회복",
+    "en": "Shift to Mass Production and Revenue Recovery"
    },
    "body": {
-    "ko": "유럽 고객사와의 XGSPON ASIC 1차 계약(165억 원) 제품이 고객 퀄리피케이션을 통과하고 2026년 양산 전환이 예정돼 있다. 증권사 분석에 따르면 1차 제품 양산만으로도 연간 약 500억 원 이상의 반복 매출이 최소 10년 이상 발생할 수 있다. 2025년 12월 체결한 2차 계약(Wi-Fi 탑재, 230억 원)이 추가 양산 단계로 진입하면 두 제품 합산 연간 약 1,000억 원의 반복 매출 기반이 완성되는 시나리오로, 현재 연간 매출의 약 10배에 달하는 구조적 도약이다.",
-    "en": "The first XGSPON ASIC (KRW 16.5B contract) has reportedly passed customer qualification and is scheduled for mass-production entry in 2026. Industry analysts estimate that first-chip production alone could sustain approximately KRW 50B in annual revenue for at least a decade. With the December 2025 second contract (Wi-Fi-enabled, KRW 23.05B) expected to follow a similar trajectory, the combined scenario would establish a recurring annual revenue base of approximately KRW 100B — a roughly 10x structural step-change from FY2025 revenue levels."
+    "ko": "유럽 Tier-1 통신장비사로부터 XGS-PON ASIC 첫·두 번째 양산발주를 연달아 확보하며 개발 매출 중심에서 반복적 양산 매출 구조로 전환 중이다. 2026년 1분기와 2분기 매출이 각각 51.8억원, 61.0억원으로 급증하며 2025년 부진에서 벗어나는 흐름을 보였다. 2분기 순이익도 1.46억원으로 흑자전환해 손익 개선 속도가 빨라지고 있다.",
+    "en": "Zaram has secured its first and second mass-production orders in succession from a European Tier-1 telecom equipment maker, transitioning from development-revenue-centered structure toward recurring mass-production revenue. Revenue surged to KRW 5.18 billion in Q1 2026 and KRW 6.10 billion in Q2 2026, moving away from the 2025 downturn. Net profit also turned positive at KRW 146 million in Q2, indicating an accelerating pace of earnings improvement."
    }
   },
   {
    "title": {
-    "ko": "Non-US 칩 수요 급증 — 지정학적 공급망 다변화의 직접 수혜",
-    "en": "Rising Non-U.S. Chip Demand — Direct Beneficiary of Geopolitical Supply Diversification"
+    "ko": "재무구조 개선",
+    "en": "Improved Financial Structure"
    },
    "body": {
-    "ko": "인텔·브로드컴·마벨 등 미국 기업들이 10G PON 시장을 과점해온 가운데, 지정학적 갈등 심화로 통신장비사들의 Non-US 칩 수요가 뚜렷하게 증가하고 있다. 자람테크놀로지는 국내 최초 XGSPON SoC 개발·상용화 기업이자 두 차례 대형 ASIC 계약으로 글로벌 고객에게 기술 신뢰성을 검증받은 공급사다. 이는 인텔·브로드컴 공급망에서 이탈을 모색하는 추가 고객사 확보로 이어질 수 있는 구조적 기회다.",
-    "en": "With Intel/MaxLinear, Broadcom, and Marvell effectively dominating the 10G PON chip market, escalating geopolitical tensions are generating a visible trend of telecom equipment makers seeking non-U.S. chip suppliers. Jaram — as Korea's first company to develop and commercialize an XGSPON SoC, with two large-scale ASIC contracts validating its technology with a major global customer — is structurally positioned to capture demand from additional customers seeking to reduce single-source U.S. supply-chain dependence."
+    "ko": "330억원 규모 전환사채 중 264억원이 보통주로 전환되고 잔여분도 조기 소각되면서 상환 부담과 희석 우려가 해소됐다. 이에 따라 2026년 반기말 자본총계가 전기말 대비 70% 이상 늘고 부채비율이 크게 낮아졌다. 재무 리스크가 완화된 만큼 후속 R&D 투자에 여력이 생긴 것으로 평가된다.",
+    "en": "With KRW 26.4 billion of the KRW 33 billion convertible bond converted into common shares and the remainder retired early, repayment burden and dilution concerns have been resolved. As a result, total equity at the end of H1 2026 rose more than 70% from the prior year-end while the debt ratio fell sharply. With financial risk eased, the company appears to have more room for follow-on R&D investment."
    }
   },
   {
    "title": {
-    "ko": "차세대 파이프라인 — 차량용·AI 반도체로 장기 TAM 확장",
-    "en": "Next-Gen Pipeline — Expanding Long-Term TAM into Automotive and AI Semiconductors"
+    "ko": "차세대 파이프라인 다각화",
+    "en": "Diversified Next-Generation Pipeline"
    },
    "body": {
-    "ko": "RISC-V 기반 차량용 이더넷 스위치(산업기술기획평가원 국책과제, 총 54억 원, 개발 기한 2026년 12월)와 AGI 뉴로모픽 AI 프로세서(누멘타·고려대 협력, 총 64.4억 원 규모, 정부지원 60억 원)를 병행 개발 중이다. 미래차 시장의 ECU 통합 트렌드와 엣지 AI 수요 확대는 두 분야 모두 중장기 성장 잠재력이 크다. XGSPON에서 검증된 RISC-V 기술력이 직접 활용되는 구조적 시너지가 있어 외부 신규 기술 도입 비용 없이 파이프라인을 확장할 수 있다.",
-    "en": "Jaram is concurrently developing a RISC-V automotive ethernet switch (KEIT national R&D project, ~KRW 5.4B total, December 2026 deadline) and an AGI neuromorphic AI processor (co-developed with Numenta and Korea University, ~KRW 6.44B total, ~KRW 6.0B in government funding). The transition from MCUs to ECUs in next-generation vehicles and the rapid rise of edge-AI demand both represent large, long-cycle TAM expansions. Critically, RISC-V capabilities proven through the XGSPON SoC translate directly to these domains, enabling pipeline expansion without substantial new technology acquisition costs."
+    "ko": "25G/50G-PON, 모빌리티용 네트워크 프로세서 SoC, AGI 뉴로모픽 반도체 등 여러 국책과제와 자체 개발 프로젝트가 동시에 진행 중이다. 50G급 통신 반도체는 AI 데이터센터 및 6G 인프라의 고속 데이터 전송 효율과 연결되는 기술로 거론된다. 모빌리티 SoC 과제는 2026년 12월 완료를 목표로 진행되며 차량용 반도체 시장 진출의 발판으로 평가된다.",
+    "en": "Multiple national projects and internal development efforts are underway simultaneously, spanning 25G/50G-PON, a mobility network processor SoC, and AGI neuromorphic semiconductors. 50G-class communication chips are cited as technology linked to high-speed data transmission efficiency for AI data centers and 6G infrastructure. The mobility SoC project is targeted for completion by December 2026 and is viewed as a stepping stone into the automotive semiconductor market."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "만성 비용 구조 — 양산 매출 없이는 수익성 개선 한계",
-    "en": "Persistent Cost Structure — Profitability Recovery Constrained Without Mass-Production Revenue"
+    "ko": "2025년 대규모 적자와 실적 변동성",
+    "en": "Large 2025 Loss and Earnings Volatility"
    },
    "body": {
-    "ko": "2023년과 2025년 두 차례 대규모 영업손실을 기록했으며, 2025년 영업손실률이 -66.4%에 달했다. 광트랜시버 등 기존 제품 매출은 글로벌 통신장비 수요 사이클에 크게 노출돼 시황 악화 시 급격히 줄어드는 변동성을 내포한다. XGSPON 양산 매출이 본격화되지 않는 한 고정 연구개발비가 수익성을 지속적으로 압박할 것이며, 양산 전환 시점의 지연은 곧 적자 장기화로 이어질 위험이 있다.",
-    "en": "Jaram recorded large operating losses in two of the last four fiscal years (FY2023: OPM -18.4%; FY2025: OPM -66.4%). Legacy product lines such as optical transceivers carry high exposure to global telecom capex cycles, resulting in sharp revenue swings during downturns. Without the anticipated XGSPON mass-production revenue, elevated fixed R&D costs will continue to compress profitability; any delay in the mass-production timeline risks prolonging the loss period and potentially necessitating additional capital raises."
+    "ko": "2025년 매출은 106억원으로 전년 대비 절반 이상 줄었고 영업손실 70.6억원, 순손실 68.4억원의 대규모 적자를 기록했다. 광트랜시버 매출 감소와 개발비 증가가 동시에 겹치며 손익이 크게 흔들렸다. 소규모 팹리스 기업 특성상 특정 고객사·프로젝트 일정에 실적이 크게 좌우되는 구조다.",
+    "en": "2025 revenue fell to KRW 10.6 billion, down more than half from the prior year, with a large operating loss of KRW 7.06 billion and net loss of KRW 6.84 billion. Earnings swung sharply as declining optical transceiver sales coincided with rising development costs. As a small fabless company, its results remain heavily dependent on the timing of specific customer projects."
    }
   },
   {
    "title": {
-    "ko": "CB 희석 리스크 — 330억 원 전환사채 전환창구 진행 중",
-    "en": "Convertible Bond Dilution Overhang — KRW 33B CB in Active Conversion Window"
+    "ko": "고객 및 매출 집중도",
+    "en": "Customer and Revenue Concentration"
    },
    "body": {
-    "ko": "자람테크놀로지는 2024년 8월 창사 이래 처음으로 330억 원 사모 CB를 발행했으며, 전환청구 가능 기간이 2025년 7월부터 2027년 6월까지 진행 중이다. CB가 전부 전환될 경우 약 73만 주의 신주가 추가 발행돼 기존 주주에 대한 희석 효과가 발생한다. 부채비율도 2023년 6.2%에서 2025년 115.8%로 급등해 재무 레버리지 부담이 늘어난 상황으로, 실적 개선 없이 전환이 진행되면 주주가치에 부정적으로 작용한다.",
-    "en": "In August 2024, Jaram issued its first-ever KRW 33B private CB (0% coupon, 3% at maturity), which entered its conversion window in July 2025 (running through June 2027). Full conversion would result in approximately 733,413 new shares (~11.8% of outstanding shares), creating dilution pressure. The debt ratio has already risen from 6.2% (FY2023) to 115.8% (FY2025) due to this issuance; if conversion proceeds without commensurate earnings improvement, shareholder value could be impaired, and unconverted balances at maturity represent a direct repayment obligation."
+    "ko": "최근 양산 매출 회복은 유럽 Tier-1 통신장비사 한 곳의 프로젝트 진행에 크게 의존하고 있는 것으로 파악된다. 해당 고객사의 제품 개발 일정이나 발주 시점이 변경될 경우 매출 인식 시기에도 영향을 줄 수 있다. 다양한 고객사로의 확산 속도는 아직 확인이 필요한 부분이다.",
+    "en": "Recent mass-production revenue recovery appears heavily reliant on progress at a single European Tier-1 telecom equipment maker's project. Any change in that customer's product development schedule or order timing could affect revenue recognition timing. The pace of diversification to additional customers remains to be confirmed."
    }
   },
   {
    "title": {
-    "ko": "양산 전환 시점 불확실성 — 고객사·시장 사이클에 종속된 매출 가시성",
-    "en": "Mass-Production Timing Uncertainty — Revenue Visibility Subject to Customer and Market Cycle Dependence"
+    "ko": "글로벌 대형 경쟁사와의 격차",
+    "en": "Gap with Large Global Competitors"
    },
    "body": {
-    "ko": "XGSPON 양산 매출 발생 시점과 규모는 자람테크놀로지의 독자적 결정이 아닌 고객사(유럽 통신장비사)의 사업 계획과 통신사 투자 사이클에 좌우된다. 글로벌 통신장비 수요가 예상보다 느리게 회복되거나 고객사 내부 일정이 지연될 경우 2026년 내 양산 매출 가시화가 지연될 수 있다. 또한 팹리스 특성상 삼성전자 파운드리 등 외부 파운드리 수급·비용 변동이 추가 외부 변수로 상존한다.",
-    "en": "The timing and volume of XGSPON mass-production revenue are ultimately determined not by Jaram, but by its European customer's business plans and downstream telco investment cycles. If global telecom capex recovery is slower than expected or if internal customer schedules slip, mass-production revenue may not materialize within 2026. As a fabless company, Jaram also faces ongoing exposure to foundry (e.g., Samsung Foundry) capacity constraints and cost volatility as external risk factors."
+    "ko": "PON SoC 시장은 브로드컴과 인텔 등 자본력과 고객 기반이 훨씬 큰 업체들이 과점하고 있다. 자람테크놀로지는 규모가 작아 대형 고객사 확보와 신제품 양산 전환에 상대적으로 오랜 시간이 걸릴 수 있다. 25G/50G 등 차세대 규격 경쟁에서도 대형 경쟁사들의 기술 투자 속도를 지속적으로 확인할 필요가 있다.",
+    "en": "The PON SoC market remains dominated by companies with far greater capital and customer bases, such as Broadcom and Intel. Given its smaller scale, Zaram may take relatively longer to secure large customers and transition new products into mass production. In the competition over next-generation 25G/50G standards, the pace of technology investment by larger rivals also warrants continued monitoring."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성 및 수익성 위험",
-    "en": "Earnings Volatility and Profitability Risk"
+    "ko": "고객 집중 및 수요 변동",
+    "en": "Customer Concentration and Demand Volatility"
    },
    "body": {
-    "ko": "매출 구조가 일회성 성격의 ASIC 개발 매출과 시황에 민감한 광트랜시버·기가와이어 제품 매출로 이중 구성돼 있어, 어느 한 축이 흔들리면 연간 실적이 급변하는 구조적 취약점을 내포한다. 2023년과 2025년 모두 광트랜시버 시황 악화가 연간 실적 급락의 주요 원인이었다. 양산 매출 전환 전까지 영업적자가 지속될 가능성이 높으며, 이 경우 추가 자본 조달 필요성이 발생할 수 있다.",
-    "en": "The revenue mix — split between lumpy ASIC development fees (one-time in nature) and cycle-sensitive optical transceiver/Giga-Wire product sales — creates structural earnings volatility. In both FY2023 and FY2025, optical transceiver market downturns were the primary driver of sharp annual earnings deterioration. Operating losses are likely to continue until mass-production revenue commences, potentially necessitating additional capital raises and further balance sheet pressure."
+    "ko": "2025년 실적 악화는 글로벌 통신장비 시장 수요 둔화와 고객사 재고 조정에서 비롯됐다. 특정 고객사 발주 일정이 지연되거나 축소될 경우 매출 회복 흐름이 다시 흔들릴 수 있다. 통신장비 업황 전반의 수요 사이클에 대한 노출도가 높은 구조다.",
+    "en": "The 2025 earnings deterioration stemmed from slowing demand in the global telecom equipment market and customer inventory adjustments. If a specific customer's order schedule is delayed or reduced, the revenue recovery trend could be disrupted again. The company remains highly exposed to the broader demand cycle of the telecom equipment industry."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중 및 ASIC 계약 이행 리스크",
-    "en": "Customer Concentration and ASIC Contract Execution Risk"
+    "ko": "차세대 제품 개발 지연 가능성",
+    "en": "Possible Delay in Next-Generation Product Development"
    },
    "body": {
-    "ko": "현재 핵심 성장 동력인 XGSPON ASIC 계약 두 건이 모두 동일 유럽 고객사(노키아 추정)와 체결된 것으로 알려져 있어 고객 집중도가 매우 높다. 해당 고객사의 전략 변경, 사업 구조 재편, 기술 요구사항 변화 시 계약 조건이나 이행 일정에 영향을 받을 수 있다. ASIC 개발은 복잡한 기술적 과정으로, 설계 수정·검증 지연 등 이행 리스크가 내재돼 있다.",
-    "en": "Both major XGSPON ASIC contracts are reportedly with the same European customer (presumed to be Nokia), creating high customer concentration. Any change in that customer's strategic direction, corporate restructuring, or evolving technical requirements could affect contract terms or execution timelines. Additionally, ASIC development is a technically complex process inherently subject to design iteration, specification changes, and validation delays."
+    "ko": "25GS-PON, 50G-PON, 모빌리티 SoC 등 다수의 신제품·국책과제가 동시 진행되면서 연구개발 자원 배분에 부담이 될 수 있다. 개발 일정이 계획 대비 지연되면 후속 양산 발주 시점에도 영향이 미칠 수 있다. 국책과제는 정부 지원금에 의존하는 구조로 정책 변화에 따른 불확실성도 존재한다.",
+    "en": "With multiple new products and national projects — 25GS-PON, 50G-PON, and the mobility SoC — proceeding simultaneously, R&D resource allocation could face strain. Delays relative to planned development schedules could also affect the timing of subsequent mass-production orders. National projects rely on government subsidies, introducing uncertainty tied to policy changes."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지 및 CB 희석 복합 리스크",
-    "en": "Financial Leverage and CB Dilution Compound Risk"
+    "ko": "소규모 기업 특유의 자본·인력 제약",
+    "en": "Capital and Workforce Constraints Typical of a Small Company"
    },
    "body": {
-    "ko": "2024년 8월 발행한 330억 원 CB로 부채비율이 2023년 6.2%에서 2025년 115.8%로 급등했다. CB 전환청구 기간(2025년 7월~2027년 6월)에 전환이 진행될 경우 기존 주주가치 희석이 발생하며, 주가가 전환가액을 하회하는 국면이 길어지면 만기 현금 상환 부담도 현실화된다. 영업 적자가 지속될 경우 유동성 관리 및 추가 자금 조달 필요성이 동시에 증가할 수 있다.",
-    "en": "The KRW 33B CB issued in August 2024 drove the debt ratio from 6.2% (FY2023) to 115.8% (FY2025). Conversions during the active window (July 2025 – June 2027) would dilute existing shareholders, while sustained trading below the conversion price raises the risk of a cash repayment obligation at maturity. Continued operating losses could simultaneously intensify liquidity management pressures and the probability of additional financing needs."
+    "ko": "자람테크놀로지는 대형 경쟁사 대비 인력과 자본 규모가 작아 다수의 개발 프로젝트를 동시에 수행하는 데 제약이 있을 수 있다. 전환사채 소각으로 재무구조는 개선됐으나 향후 추가 투자 재원 확보 방식에 따라 자본조달 부담이 재발할 가능성도 배제할 수 없다. 기술 인력 이탈이나 확보 지연도 개발 일정에 영향을 줄 수 있는 변수다.",
+    "en": "Compared to large competitors, Zaram has a smaller workforce and capital base, which could constrain its ability to carry out multiple development projects simultaneously. While the debt structure has improved following the convertible bond retirement, the possibility of renewed capital-raising pressure cannot be ruled out depending on how future investment funding is secured. Turnover or delays in securing technical personnel are also variables that could affect development schedules."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월 (2026Q2 잠정 실적 발표)",
-    "en": "July–August 2026 (2026Q2 Preliminary Results)"
+    "ko": "2026년 11월 중순(3분기보고서 공시 예상 시점)",
+    "en": "Mid-November 2026 (expected Q3 report disclosure)"
    },
    "what": {
-    "ko": "2026Q1 매출 반등이 2분기에도 지속되는지 확인하고, XGSPON 양산 매출(PO 전환)이 처음으로 분기 실적에 반영됐는지 점검. 영업손실 추이 개선 여부도 핵심 체크포인트.",
-    "en": "Confirm whether the Q1 revenue rebound continues into Q2, and whether XGSPON mass-production revenue (purchase order conversion) appears for the first time in quarterly results. The trend in operating loss narrowing will be a key signal of structural improvement."
+    "ko": "2026년 3분기 매출·손익이 2분기의 흑자전환 흐름을 이어가는지, 양산 매출 비중이 얼마나 확대되는지 확인할 필요가 있다.",
+    "en": "Check whether Q3 2026 revenue and earnings continue the profit-turnaround trend seen in Q2, and how much the share of mass-production revenue expands."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (XGSPON 1차 양산 매출 본격화 여부)",
-    "en": "H2 2026 (XGSPON First-Product Mass-Production Revenue Ramp)"
+    "ko": "2026년 말~2027년 초",
+    "en": "Late 2026 to early 2027"
    },
    "what": {
-    "ko": "1차 XGSPON ASIC(노키아향)의 실제 양산 투입이 시작됐는지, 분기 매출 기여 규모가 어느 수준인지 확인. 양산 개시가 예상보다 지연될 경우 연간 가이던스 수정 및 경영진 코멘트에 주목.",
-    "en": "Monitor whether the first XGSPON ASIC (for Nokia) enters actual mass-production supply and gauge its quarterly revenue contribution scale. If mass-production start is delayed beyond H2 2026, track any revision to full-year guidance or management commentary on timing drivers."
+    "ko": "유럽 Tier-1 고객사향 XGS-PON ASIC 첫 양산분의 실제 출하 시점과 물량을 확인해 매출 반영 규모를 점검할 필요가 있다.",
+    "en": "Confirm the actual shipment timing and volume of the first XGS-PON ASIC mass-production batch to the European Tier-1 customer to assess the revenue impact."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (뉴로모픽 AI 샘플 칩 확보 여부)",
-    "en": "H2 2026 (Neuromorphic AI Sample Chip Milestone)"
+    "ko": "2026년 12월 31일",
+    "en": "December 31, 2026"
    },
    "what": {
-    "ko": "KETI 주관 AGI 뉴로모픽 과제(누멘타·고려대 협력)에서 샘플 칩 확보 여부와 이후 상용화 일정 제시 여부 확인. 성과 발표 여부가 AI 반도체 신사업 신뢰도에 직접 영향을 미친다.",
-    "en": "Check whether the neuromorphic AI chip sample (under the KETI-led project with Numenta and Korea University) is secured on schedule and whether a concrete commercialization timeline is disclosed. Progress on this milestone will directly influence market confidence in the AI semiconductor growth narrative."
+    "ko": "모빌리티용 네트워크 프로세서 SoC 국책과제의 개발 완료 기한으로, 예정대로 마무리되는지와 후속 상용화 계획을 확인할 시점이다.",
+    "en": "This is the completion deadline for the mobility network processor SoC national project; a point to check whether it finishes as planned and what follow-on commercialization plans emerge."
    }
   },
   {
    "when": {
-    "ko": "2026년 12월 (차량용 이더넷 스위치 국책과제 완료 시점)",
-    "en": "December 2026 (Automotive Ethernet Switch R&D Project Completion Deadline)"
+    "ko": "2026년 하반기 중",
+    "en": "During H2 2026"
    },
    "what": {
-    "ko": "산업기술기획평가원 과제(총 54억 원)의 RISC-V 기반 차량용 이더넷 스위치 개발 완료 여부와 국내 자동차 부품 티어1 벤더와의 협의 진전 확인. 샘플 공급 계약 체결 여부가 차량용 반도체 신사업의 첫 이정표다.",
-    "en": "Verify completion of the RISC-V automotive ethernet switch development (KEIT-funded, KRW 5.4B total) and the outcome of ongoing negotiations with a domestic Tier-1 automotive supplier. Any sample supply contract would represent the first concrete milestone for the automotive semiconductor business expansion."
-   }
-  },
-  {
-   "when": {
-    "ko": "2025~2027년 상시 (CB 전환청구 동향 모니터링)",
-    "en": "Ongoing 2025–2027 (CB Conversion Activity Monitoring)"
-   },
-   "what": {
-    "ko": "330억 원 CB(전환청구 기간 2025년 7월~2027년 6월)의 전환 행사 규모 및 신주 발행 공시를 수시로 확인. 전환 규모가 클수록 주당 지표 희석 압력이 커지며, 미전환 잔액은 만기 상환 부담으로 직결된다.",
-    "en": "Track conversion exercise filings and new share issuance disclosures for the KRW 33B CB (conversion window: July 2025 – June 2027). Larger conversion volumes increase per-share dilution pressure, while unconverted balances at maturity translate directly to a cash repayment obligation — both are key inputs to the balance-sheet and per-share valuation framework."
+    "ko": "유럽 고객사향 추가(3차) 양산발주 여부와 25GS-PON·50G-PON 개발 진행 상황에 대한 추가 공시나 IR 자료를 확인할 필요가 있다.",
+    "en": "Watch for additional disclosures or IR materials on a possible third mass-production order from the European customer and on progress in 25GS-PON/50G-PON development."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "자람테크놀로지는 국내 최초 XGSPON SoC 상용화 기업이자 유럽 대형 통신장비사와의 두 차례 ASIC 대형 수주(총 395억 원 이상)로 기술 경쟁력을 글로벌 수준에서 검증받은 통신반도체 팹리스다. 핵심 투자 논거는 명료하다: 현재 개발 단계에서 벌어들이는 개발 매출이 양산 반복 매출로 전환되는 시점에 연간 수익 규모가 구조적으로 도약할 수 있다는 것이다. 2026Q1 매출의 약 88% 분기 반등과 순손실의 대폭 축소는 이 전환 과정이 시작됐을 가능성을 시사하는 첫 신호다. 그러나 2025년의 심각한 영업적자(영업손실률 -66.4%), 330억 원 CB의 전환 희석 리스크, 고객사 일정에 종속된 양산 매출 전환 불확실성은 현재 주가가 내포하는 기대치 달성에 넘어야 할 구체적 장애물이다. PON 시장의 구조적 성장(2034년까지 CAGR 약 14.8%)과 Non-US 칩 수요 확대는 중장기 우호적 환경이며, RISC-V 기반 차량용·AI 반도체로의 다각화는 장기 TAM 확장의 옵션 가치를 갖는다. 결론적으로 자람테크놀로지는 성장 기대치는 높으되 검증이 진행 중인 기업으로, 향후 수 분기의 양산 매출 현실화 여부가 주가 방향성을 결정하는 핵심 변수가 될 것이다.",
-   "en": "Jaram Technology is a communications semiconductor fabless company that has validated its global technical competence through Korea's first XGSPON SoC commercialization and two large-scale ASIC contracts with a major European telecom equipment maker (totaling over KRW 39.5B). The investment thesis is straightforward: the transition from development-phase revenue to mass-production repeating revenue could structurally elevate the annual earnings profile by an order of magnitude. The ~88% sequential revenue rebound and dramatically narrowed net loss in 2026Q1 provide the first concrete signal that this transition may be underway. However, the severe FY2025 operating losses (OPM -66.4%), ongoing CB dilution risk (KRW 33B, active conversion window), and the inherent timing uncertainty of mass-production revenue — ultimately determined by the customer's own readiness — are tangible obstacles between current pricing and embedded expectations. The structural growth of the global PON market (CAGR ~14.8% through 2034) and the rising Non-U.S. chip diversification trend provide a favorable medium-to-long-term backdrop, while the nascent RISC-V automotive and AI chip pipelines represent option value on longer-cycle TAM expansion. In summary, Jaram Technology is a high-expectation, proof-in-progress company; the realization — or delay — of mass-production revenue in the coming quarters will be the dominant driver of its share price trajectory."
+   "ko": "자람테크놀로지는 2025년 대규모 적자를 기록한 뒤 2026년 상반기 들어 매출이 빠르게 회복되고 2분기에는 순이익이 흑자로 전환하는 변화를 보였다. 이 흐름의 핵심은 유럽 Tier-1 통신장비사향 XGS-PON ASIC이 개발 단계에서 양산 단계로 진입하며 반복적 매출 구조가 형성되기 시작했다는 점이다. 동시에 전환사채의 대규모 주식 전환과 조기 소각으로 재무구조가 개선돼 자본 확충의 여력도 생겼다. 다만 2025년의 실적 악화가 보여주듯 소규모 팹리스 기업 특유의 고객·수요 집중 리스크는 여전히 상존하며, 25G/50G-PON과 모빌리티 SoC 등 다수의 신규 파이프라인이 계획대로 진행되는지는 앞으로 확인이 필요한 사안이다. 향후 관전 포인트는 양산 매출 비중의 지속적 확대 여부, 추가 고객사·발주 확보, 그리고 국책과제 개발 일정 준수 여부로 요약된다. 투자자는 분기별 실적 공시와 수주 관련 공시를 지속적으로 점검하며 판단할 필요가 있다.",
+   "en": "Zaram Technology posted a large loss in 2025 before showing rapid revenue recovery in H1 2026 and a shift to net profit in Q2. The core driver behind this shift is the transition of its XGS-PON ASIC for a European Tier-1 telecom equipment maker from the development stage into mass production, beginning to form a recurring revenue structure. At the same time, large-scale conversion and early retirement of convertible bonds improved the balance sheet, providing more room for capital. However, as the 2025 downturn illustrated, the customer- and demand-concentration risk typical of a small fabless company remains present, and whether multiple new pipelines such as 25G/50G-PON and the mobility SoC proceed as planned remains to be confirmed going forward. Key points to watch include whether the share of mass-production revenue continues to expand, whether additional customers and orders are secured, and whether national project development schedules are met. Investors will need to continue monitoring quarterly earnings and order-related disclosures to form their own judgment."
   }
  },
  "sources": [
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1692659394902.pdf",
   "https://m.irgo.co.kr/IR-COMP/389020/",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A389020",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=389020",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A389020&cID=&MenuYn=Y&ReportGB=&NewMenuID=103&stkGb=701",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251114002392&docno=&viewerhost=",
-  "https://www.valueline.co.kr/finance/balancesheet/389020",
-  "https://www.forwarder.kr/krx/A389020",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A389020&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "https://www.catch.co.kr/Comp/CompInfo/150472",
-  "https://zaram.com/kor/",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1692659394902.pdf",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/N213dndyNzA2M1JoenkyRDM0ZThmZz09/company_nm/(%EC%A3%BC)%EC%9E%90%EB%9E%8C%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80",
+  "https://itooza.com/vscore/389020",
   "https://m.thinkpool.com/compDiscuss/cont/1017587",
-  "https://www.finance-scope.com/article/view/scp202512100023",
-  "https://www.catch.co.kr/Comp/CompSummary/150472",
-  "https://marketin.edaily.co.kr/News/ReadE?newsId=02433766642397208",
-  "https://www.newsquest.co.kr/news/articleView.html?idxno=259736",
-  "https://www.butler.works/ko/companies/01365038"
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=389020",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1695254413703.pdf",
+  "https://antwinner.com/stocks_analysis/%EC%9E%90%EB%9E%8C%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80",
+  "https://m.thinkpool.com/stockDiscuss/389020/cont/11762046",
+  "https://alphasquare.co.kr/home/stock-summary?code=389020",
+  "https://www.investing.com/equities/zaram-tech",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260318000760&docno=&viewerhost=",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=70141",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=kcowAmvQB4x33EON",
+  "https://littlebproject.com/stock/389020/290/32863",
+  "https://alphasquare.co.kr/home/stock-issue?code=389020&type=news",
+  "https://littlebproject.com/stock/389020/295/33453",
+  "https://www.stockplus.com/m/stocks/KOREA-A389020"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "389020",
  "name": "자람테크놀로지",
  "name_en": "Zaram Technology,Inc.",
@@ -233,9 +223,9 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-18",
- "reportTs": "2026-06-18 23:44",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 07:36",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 20650,
-   "mcap": 0.1426,
+   "price": 21300,
+   "mcap": 0.1471,
    "shares": 6905082,
    "total_shares": 6197730,
    "wavg_shares": 6199652,
    "per": null,
    "eps": -596,
-   "pbr": 2.1104,
+   "pbr": 2.1768,
    "bps": 9785,
    "roe_ttm": -7.4,
    "ttm_window": "2025Q3~2026Q2",
