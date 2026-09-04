@@ -1803,12 +1803,41 @@ def poll(cl, batch_id, budget=None):
     return False
 
 
+# 배치 단가(USD / 1M 토큰). 배치는 정가의 절반이다. 캐시 읽기는 입력의 10%,
+# 캐시 쓰기는 125% 로 잡는다. 웹 검색은 1,000회에 $10. 청구서가 아니라 규모를
+# 가늠하는 추정이다 — 실제 청구는 콘솔이 답이다.
+_PRICE = {"claude-opus-5": (2.5, 12.5), "claude-sonnet-5": (1.0, 5.0),
+          "claude-opus-4-8": (2.5, 12.5), "claude-sonnet-4-6": (1.5, 7.5)}
+
+
+def _usage_of(message):
+    """응답 하나의 사용량 → dict. 없으면 None."""
+    u = getattr(message, "usage", None)
+    if u is None:
+        return None
+    st = getattr(u, "server_tool_use", None)
+    return {"in": getattr(u, "input_tokens", 0) or 0,
+            "cache_w": getattr(u, "cache_creation_input_tokens", 0) or 0,
+            "cache_r": getattr(u, "cache_read_input_tokens", 0) or 0,
+            "out": getattr(u, "output_tokens", 0) or 0,
+            "search": (getattr(st, "web_search_requests", 0) or 0) if st else 0}
+
+
+def _cost_usd(model, u):
+    pin, pout = _PRICE.get(model, (2.5, 12.5))
+    return ((u["in"] + u["cache_w"] * 1.25 + u["cache_r"] * 0.1) * pin
+            + u["out"] * pout) / 1e6 + u["search"] * 0.01
+
+
 def collect(cl, as_of, state):
     """배치 하나의 결과를 리포트 파일로 쓴다. (성공 수, 실패 수).
 
     성공한 종목은 fail·hold 마커를 뗀다. 오류·스키마 불완전은 fail 횟수를 올린다 —
     FAIL_LIMIT 번 연속이면 자동 백필이 그 종목에 더 돈을 쓰지 않는다(사람이 본다).
     만료·취소는 종목 탓이 아니라 세지 않는다.
+
+    사용량(토큰·검색 횟수)을 모델별로 합쳐 state["usage"] 에 남긴다. 리포트 한 장에
+    얼마가 드는지를 추정이 아니라 실측으로 알기 위해서다.
     """
     batch_id = state["batch_id"]
     data = g.load_stocks()
@@ -1817,8 +1846,18 @@ def collect(cl, as_of, state):
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     ok, fail, done, flagged = 0, 0, [], []
+    usage = {}
     for result in cl.messages.batches.results(batch_id):
         tk = result.custom_id
+        if result.result.type == "succeeded":
+            u = _usage_of(result.result.message)
+            if u:
+                mdl = state.get("models", {}).get(tk) or state.get("model", MODEL)
+                agg = usage.setdefault(mdl, {"n": 0, "in": 0, "cache_w": 0, "cache_r": 0, "out": 0, "search": 0, "usd": 0.0})
+                agg["n"] += 1
+                for k in ("in", "cache_w", "cache_r", "out", "search"):
+                    agg[k] += u[k]
+                agg["usd"] += _cost_usd(mdl, u)
         if result.result.type != "succeeded":
             fail += 1
             if result.result.type == "errored":
@@ -1884,6 +1923,13 @@ def collect(cl, as_of, state):
     log(f"\n✅ v2 회수 완료 · 성공 {ok}/실패 {fail} → data/reports_v2/ ({have}개)")
     if flagged:
         log(f"⚠️ 금지 표현이 남은 {len(flagged)}개 — 다시 만들 대상: {','.join(flagged)}")
+    if usage:
+        for mdl, a in usage.items():
+            a["usd"] = round(a["usd"], 3)
+            log(f"💵 {mdl} {a['n']}건 · 입력 {a['in']:,}(캐시쓰기 {a['cache_w']:,}·읽기 {a['cache_r']:,}) "
+                f"· 출력 {a['out']:,} · 검색 {a['search']} → 약 ${a['usd']:.2f} "
+                f"(장당 ${a['usd'] / a['n']:.3f})")
+        state["usage"] = usage
     return ok, fail
 
 
