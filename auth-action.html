@@ -613,6 +613,7 @@ if(window.KOSi18n) KOSi18n.register({
 
 <script type="module">
 import { auth } from "./firebase-config.js";
+import { safeNext } from "./auth-util.js";
 import { applyActionCode, verifyPasswordResetCode, confirmPasswordReset }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
@@ -620,7 +621,30 @@ const $ = s => document.querySelector(s);
 const params = new URLSearchParams(location.search);
 const mode = params.get('mode');
 const oobCode = params.get('oobCode');
-const continueUrl = params.get('continueUrl') || 'Login.html';
+
+/* 메일의 링크를 누르고 온 사람이 다음에 갈 곳.
+
+   주소에 그대로 실려 오는 값이라 믿으면 안 된다. 여기 있던 값은 검사 없이
+   버튼의 href 에 문자열로 이어 붙고 있었고, 그래서 두 가지가 열려 있었다.
+
+     ① 남의 사이트로 보내기
+        ?continueUrl=https://남의사이트 → 인증을 마친 사람이 '로그인하러
+        가기' 를 누르면 우리 주소에서 시작해 남의 로그인 화면으로 간다.
+        우리 메일을 흉내 낸 피싱에 그대로 쓰인다.
+
+     ② 따옴표를 닫고 코드 심기
+        ?continueUrl=" onfocus="…" autofocus x=" → href 속성을 빠져나와
+        우리 페이지 위에서 스크립트가 돈다. 이 화면은 innerHTML 로 그리므로
+        문자열이 그대로 마크업이 된다.
+
+   safeNext 가 우리 사이트 안의 .html 하나만 통과시킨다 — 로그인·가입 화면이
+   쓰는 것과 같은 자물쇠다. 아래 esc 는 그것을 통과한 값이라도 마크업으로
+   읽히지 않게 한 번 더 막는다(두 겹으로 둔다 — 한쪽이 느슨해져도 남는다). */
+const continueUrl = safeNext(params.get('continueUrl'));
+function esc(s){
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                  .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
 
 // 현재 언어를 매번 읽어 영/한 선택(토글 즉시 반영)
 function curEN(){ try{ return (window.KOSi18n ? window.KOSi18n.lang : localStorage.getItem('kos-lang')) === 'en'; }catch(e){ return false; } }
@@ -630,7 +654,7 @@ const titleEl=$('#acTitle'), descEl=$('#acDesc'), bodyEl=$('#acBody'), errEl=$('
 const CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
 function showErrMsg(msg){ errEl.textContent=msg; errEl.style.display='block'; }
 function clearErr(){ errEl.style.display='none'; errEl.textContent=''; }
-function goBtn(label, href){ return `<div class="submit-row"><a class="btn btn-primary" style="width:100%;justify-content:center;text-decoration:none" href="${href}">${label}</a></div>`; }
+function goBtn(label, href){ return `<div class="submit-row"><a class="btn btn-primary" style="width:100%;justify-content:center;text-decoration:none" href="${esc(href)}">${esc(label)}</a></div>`; }
 
 // 현재 화면 상태 — 언어가 바뀌면 이 상태를 그대로 다시 그린다
 let state = { kind: 'loading' };

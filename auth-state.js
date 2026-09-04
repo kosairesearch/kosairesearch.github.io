@@ -264,13 +264,19 @@ function renderLoggedIn(wrap, user){
   const initial = (email.trim()[0] || 'U').toUpperCase();
   wrap.innerHTML =
     `<div class="acct">
-       <button class="acct-btn" type="button" aria-label="account"><span class="avatar">${initial}</span></button>
+       <button class="acct-btn" type="button" aria-label="account"><span class="avatar"></span></button>
        <div class="menu" role="menu">
-         <div class="em">${email}</div>
+         <div class="em"></div>
          <button type="button" class="settings">설정</button>
          <button type="button" class="logout">로그아웃</button>
        </div>
      </div>`;
+  /* 머리글자와 이메일은 글자로 넣는다 — 위 마크업에 이어 붙이지 않는다.
+     카카오는 이메일을 안 주는 경우가 있어 여기 닉네임이 대신 들어오는데,
+     닉네임은 사용자가 제공자 쪽에서 마음대로 정한 글자다. '<' 하나만
+     들어 있어도 메뉴가 깨지고, 나쁘게 쓰면 우리 페이지 위에서 코드가 돈다. */
+  wrap.querySelector('.avatar').textContent = initial;
+  wrap.querySelector('.em').textContent = email;
   /* 이 메뉴에 '회원 탈퇴'가 같이 있었다. 설정 창 안에 이미 있으므로 같은 곳으로
      가는 문이 둘이 된 셈이다. 문이 둘이면 어느 쪽이 맞는지 고민하게 되고,
      나중에 한쪽만 고치게 된다. 여기는 계정 메뉴이지 설정 목차가 아니다 —
@@ -309,7 +315,12 @@ function renderMobileAuth(user){
   if(user){
     const email = user.email || (user.displayName || '');
     // 데스크톱 메뉴와 같은 구성이다 — 한쪽에만 항목이 더 있으면 안내가 갈린다.
-    el.innerHTML = `<div class="m-em">${email}</div><button type="button" class="m-settings">설정</button><button type="button" class="m-logout">로그아웃</button>`;
+    /* 이메일을 마크업으로 이어 붙이지 않는다. 카카오는 이메일을 안 주는
+       경우가 있어 여기 닉네임이 대신 들어오는데, 닉네임은 사용자가 제공자
+       쪽에서 마음대로 정한 글자다. '<' 하나만 들어 있어도 메뉴가 깨지고,
+       나쁘게 쓰면 우리 페이지 위에서 코드가 돈다. 글자는 글자로 넣는다. */
+    el.innerHTML = `<div class="m-em"></div><button type="button" class="m-settings">설정</button><button type="button" class="m-logout">로그아웃</button>`;
+    el.querySelector('.m-em').textContent = email;
     el.querySelector('.m-settings').addEventListener('click', () => { mm.classList.remove('open'); openSettings(); });
     el.querySelector('.m-logout').addEventListener('click', async () => { try{ await signOut(auth); }catch(e){} location.href = 'Home.html'; });
   } else {

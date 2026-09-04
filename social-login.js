@@ -9,6 +9,7 @@
    클라이언트는 공개 키(REST/Client ID)만 사용하고, 비밀키는 서버에만 있습니다.
    ============================================================ */
 import { app, auth, SOCIAL } from "./firebase-config.js";
+import { safeNext } from "./auth-util.js";
 import { signInWithCustomToken } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
 
@@ -90,7 +91,13 @@ async function completeLogin(code, returnedState, saved, onError){
     if(!data || !data.token) throw new Error("가입을 마치지 못했습니다.");
 
     await signInWithCustomToken(auth, data.token);
-    location.href = saved.next || "Home.html";
+    /* 돌아갈 곳은 반드시 safeNext 를 거친다.
+
+       여기만 그냥 쓰고 있었다. next 는 주소에 실려 오는 값이라
+       Login.html?next=https://남의사이트 로 링크를 만들면, 카카오·네이버로
+       로그인한 사람이 우리 주소에서 시작해 남의 사이트로 넘어간다. 이메일·
+       구글 경로는 goNext() 를 거쳐 막혀 있었는데 이 길만 열려 있었다. */
+    location.href = safeNext(saved.next);
   }catch(err){
     history.replaceState({}, "", location.pathname);
     /* 같은 이메일을 쓰는 계정이 이미 있어 서버가 만들지 않은 경우.

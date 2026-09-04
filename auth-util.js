@@ -94,7 +94,16 @@ export function mapAuthError(err) {
   if (has("account-exists-with-different-credential") || has("email-already-in-use") && has("credential"))
     return T("이 이메일은 다른 방법으로 가입되어 있습니다. 아래 버튼 중 처음 가입하실 때 쓰신 것으로 로그인하여 주시기 바랍니다.");
   if (has("email-already-in-use")) return T("이미 가입된 이메일입니다.");
-  if (has("invalid-credential") || has("wrong-password") || has("user-not-found"))
+  /* invalid-login-credentials 를 빠뜨리고 있었다.
+     이메일 열거 방지가 켜진 프로젝트에서 비밀번호가 틀리면 파이어베이스가
+     invalid-credential 이 아니라 이 코드를 준다. 'invalid-credential' 로는
+     걸리지 않아서(중간에 login 이 끼어 있다) 아래 일반 문구로 떨어졌고,
+     가장 흔한 실패에 '처리 중 오류가 발생했습니다 (auth/invalid-login-
+     credentials)' 가 떴다. 사용자는 비밀번호가 틀린 줄도 모른다.
+     Login.html 은 이 코드를 알고 있었다 — 안내 문구를 고르는 정규식에
+     invalid-login 이 들어 있다. 문구 표만 몰랐다. */
+  if (has("invalid-credential") || has("invalid-login") || has("wrong-password")
+      || has("user-not-found") || has("missing-password"))
     return T("이메일 또는 비밀번호가 올바르지 않습니다.");
   if (has("invalid-email")) return T("이메일 형식이 올바르지 않습니다.");
   if (has("weak-password")) return T("비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.");

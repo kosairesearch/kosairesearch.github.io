@@ -35,6 +35,9 @@ echo "── 결제 (서버 쪽 로직) ──"
 for f in functions/tests/*.mjs; do run "$(basename "$f")" node "$f"; done
 
 echo "── 화면 (스테이징·실사이트) ──"
+# 폴더째 훑으므로 새 검사를 넣으면 여기 손대지 않아도 같이 돈다.
+# auth-table 은 로그인·회원가입 — 화면 넷과 모듈 다섯에 걸쳐 있어
+# 한 화면만 보고 고치면 나머지가 남는다.
 for f in staging/tests/*.mjs; do run "$(basename "$f")" node "$f"; done
 
 echo "── 사이트 전체 ──"
