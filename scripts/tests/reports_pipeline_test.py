@@ -29,6 +29,7 @@ for name in ("OpenDartReader",):
     if name not in sys.modules:
         sys.modules[name] = types.ModuleType(name)
 
+import pandas as PD                   # noqa: E402  — 아래 날짜 패치보다 먼저 들여와야 한다
 import _reports_state as S            # noqa: E402
 import check_valuation as C           # noqa: E402
 import generate_reports_v2 as M       # noqa: E402
@@ -260,6 +261,7 @@ finally:
 ok(df is not None and df.n == 1 and "reprt_code" not in buf.getvalue(), "정상 응답은 그대로, reprt_code 잡음 제거")
 
 # collect_all_quant: 한도에 걸리면 모은 것만 돌려주고 unavailable 을 표시한다
+REAL_COLLECT_QUANT, REAL_CROSS, REAL_KRX, REAL_GET_DART = M.collect_quant, M.cross_check, M.krx_fundamentals, M.g.get_dart
 calls = {"n": 0}
 def quant_or_die(dart, tk, row, stock):
     calls["n"] += 1
@@ -275,6 +277,7 @@ out, errors, unavailable = M.collect_all_quant(STOCKS[:3], {"dataDate": "2026090
 ok(list(out) == ["005930"], "한도에 걸리면 그때까지 모은 것만", str(list(out)))
 ok(unavailable is not None and unavailable.status == "020", "unavailable 에 사유")
 ok(not errors, "종목 오류로 세지 않는다")
+M.collect_quant, M.krx_fundamentals, M.g.get_dart = REAL_COLLECT_QUANT, REAL_KRX, REAL_GET_DART   # cross_check 는 계속 가짜(네이버 호출 없음)
 # 실패 횟수의 유효기간 — 오래된 실패는 0 으로 본다
 S.FAIL_DIR.mkdir(exist_ok=True)
 (S.FAIL_DIR / "000020").write_text("3 2026-08-01", encoding="utf-8")
@@ -405,8 +408,9 @@ os.environ.pop("REPORT_FILL_TO")
 
 # ═══ ⑦ 회수(pickup) ═════════════════════════════════════════════════════
 print("⑦ pickup — 여러 배치, 파일별 한 번, 실패 횟수")
+os.environ["REPORT_REPAIR"] = "0"
 def report_text(tk):
-    para = lambda s: {"ko": (s + " 문장이다. ") * 24, "en": (s + " sentence. ") * 24}
+    para = lambda s: {"ko": (s + " 문장이다. ") * 24, "en": ("Plain English sentence. ") * 24}
     item = {"title": {"ko": "a", "en": "a"}, "body": {"ko": "b" * 20, "en": "b" * 20}}
     rep = {"title": {"ko": f"{tk} 제목", "en": "title"}, "lead": {"ko": "lead", "en": "lead"},
            "keypoints": [{"ko": "k", "en": "k"}] * 4, "business": para("사업"), "earnings": para("실적"),
@@ -495,6 +499,112 @@ try:
     M._die_dart(M.DartUnavailable("800", "점검"))
 except SystemExit as e:
     ok(e.code == M.EXIT_DART_UNAVAILABLE and not S.quota_exhausted_today(), "800 → exit 3, 한도 마커는 안 남김")
+
+# ═══ ⑨ 리포트 품질 — 데이터 보강 · 프롬프트 · 검증 · 교정 ═══════════════
+print("⑨ 품질 보강")
+# (a) 요약재무 폴백 — 전체 재무제표가 없는 해를 채운다
+st = STOCKS[4]
+ann3 = {2025: dict(rev=100, op=10, np=8, np_owner=7, np_nci=1, equity=50, equity_owner=45, equity_nci=5, liab=20, eps=100),
+        2024: dict(rev=90, op=9, np=7, np_owner=6, np_nci=1, equity=45, equity_owner=40, equity_nci=5, liab=18, eps=90),
+        2023: dict(rev=80, op=8, np=6, np_owner=5, np_nci=1, equity=40, equity_owner=36, equity_nci=4, liab=16, eps=80)}
+def summary_2022(dart, ticker, year, reprt):
+    if year != 2022:
+        return None
+    return PD.DataFrame([
+        {"account_nm": "매출액", "fs_div": "CFS", "thstrm_amount": "70"},
+        {"account_nm": "영업이익", "fs_div": "CFS", "thstrm_amount": "7"},
+        {"account_nm": "당기순이익", "fs_div": "CFS", "thstrm_amount": "5"},
+        {"account_nm": "자본총계", "fs_div": "CFS", "thstrm_amount": "35"},
+        {"account_nm": "부채총계", "fs_div": "CFS", "thstrm_amount": "14"},
+    ])
+M._fin_all = fin_factory(ann3)
+M.dart_total_shares = lambda d, t: 1_000_000
+M.dart_dps = lambda d, t: None
+M.g._safe_finstate = summary_2022
+M.g._extract_fin = lambda *a, **k: None
+q = M.collect_quant(None, st["ticker"], None, st)
+yrs = [r["year"] for r in q["annual"]]
+r22 = next((r for r in q["annual"] if r["year"] == 2022), None)
+ok(yrs == [2025, 2024, 2023, 2022], "2022 를 요약재무로 채워 4년이 된다", str(yrs))
+ok(r22 and r22["rev"] == 70 and r22["equity"] == 35 and r22["liab"] == 14 and r22.get("src") == "요약재무", "요약재무 값이 들어간다", str(r22))
+ok(r22 and r22["np_owner"] is None and r22["roe"] is None, "비지배지분이 있는 회사면 요약 해의 지배순이익은 비운다")
+ok(r22 and r22["debt_ratio"] == 40.0 and r22["opm"] == 10.0, "파생값은 재료로 다시 계산된다")
+
+# (b) 분기 지배지분 태그가 없고 비지배지분이 큰 회사 — 자본총계에서 결산 비지배지분을 뺀다
+st = STOCKS[0]
+W = 1_000_000   # 백만원 → 원
+ann_skc = {2025: dict(rev=1_000_000*W, op=10_000*W, np=-60_000*W, np_owner=-50_000*W, np_nci=-10_000*W, equity=2_025_734*W, equity_owner=832_066*W, equity_nci=1_193_667*W, liab=4_710_000*W, eps=-1321),
+           2024: dict(rev=1_000_000*W, op=10_000*W, np=-50_000*W, np_owner=-40_000*W, np_nci=-10_000*W, equity=2_292_732*W, equity_owner=1_172_309*W, equity_nci=1_120_423*W, liab=4_500_000*W, eps=-1056)}
+qs_skc = {(2026, "11012"): dict(rev=500_000*W, op=5_000*W, np=-30_000*W, np_owner=-25_000*W, eps=-660, equity=1_994_000*W),   # equity_owner 없음
+          (2025, "11012"): dict(rev=500_000*W, op=5_000*W, np=-30_000*W, np_owner=-25_000*W, eps=-660, equity=2_200_000*W, equity_owner=1_000_000*W)}
+M._fin_all = fin_factory(ann_skc, qs_skc)
+M.dart_total_shares = lambda d, t: 37_868_298
+M.g._safe_finstate = lambda *a, **k: None
+q = M.collect_quant(None, st["ticker"], None, dict(st, shares=37_868_298, price=20_000, mcap=0.76))
+v = q["valuation"]
+_den = v.get("wavg_shares") or v.get("total_shares")
+ok(v["bps"] is not None and abs(v["bps"] * _den - (1_994_000 - 1_193_667) * W) < _den, "BPS 분자 = 분기 자본총계 − 결산 비지배지분 (SKC: 52,663 이 아니라 ≈21,000)", f"bps={v['bps']} denom={_den}")
+
+# (c) 숨긴 지표의 사유
+ok(v.get("hidden", {}).get("per") == "loss", "적자면 PER 사유 loss", str(v.get("hidden")))
+ok(v.get("hidden", {}).get("dps") == "no_div", "배당 없음 사유 no_div")
+q_imp = run_quant(STOCKS[3], {2025: dict(rev=100, op=-10, np=-20, np_owner=-20, equity=-5, equity_owner=-5, liab=50)}, total_shares=1_000_000)
+ok(q_imp["valuation"].get("hidden", {}).get("bps") == "impaired", "자본잠식이면 BPS 사유 impaired", str(q_imp["valuation"].get("hidden")))
+
+# (d) valid_v2 — 영문이 빠진 항목을 거른다
+good = json.loads(report_text("005930")[len("===JSON_START==="):-len("===JSON_END===")])
+ok(M.valid_v2(good), "정상 구조는 통과")
+bad = json.loads(json.dumps(good)); bad["bull"][0] = {"title": {"ko": "a"}, "body": {"ko": "b" * 20}}
+ok(not M.valid_v2(bad), "bull 항목에 en 이 없으면 실패")
+bad2 = json.loads(json.dumps(good)); bad2["keypoints"][0] = {"ko": "k"}
+ok(not M.valid_v2(bad2), "keypoints 에 en 이 없으면 실패")
+
+# (e) 프롬프트 — 반영 범위·주당 지표 금지·영문 한글 금지
+pr = M.build_prompt_v2(STOCKS[0], q, "2026-09-05 02:00")
+ok("재무 반영 범위" in pr and "2026Q2" in pr and "checkpoints 의 when 은 이 날짜 이후" in pr, "기준 범위·체크포인트 날짜 지시")
+ok("주당 지표(EPS·BPS·DPS)의 수치도" in pr and "valuation.eps·bps" not in pr, "주당 지표 수치 인용 금지")
+ok("한글 문자를 한 글자도" in pr and "증권사명 없이 범위를" in pr, "영문 한글 금지·목표주가 범위 금지")
+
+# (f) 교정 — 가짜 클라이언트가 고친 JSON 을 돌려주면 채택, 모양이 다르면 버린다
+import check_report_text as T
+rep0 = {"lead": {"ko": "저평가된 상태다.", "en": "GC녹십자 is fine."}, "business": {"ko": "본문.", "en": "Body."}}
+hits0 = T.check(rep0)
+ok({h["rule"] for h in hits0} == {"valuejudge", "hangul_en"}, "검사가 둘 다 잡는다", str([h["rule"] for h in hits0]))
+class FakeMsgs:
+    def __init__(self, reply): self.reply = reply
+    def create(self, **kw):
+        assert "===INPUT===" in kw["messages"][0]["content"]
+        return types.SimpleNamespace(content=[types.SimpleNamespace(type="text", text=self.reply)])
+fixed_json = json.dumps({"lead": {"ko": "순자산 대비 할인 폭이 크다.", "en": "GC Biopharma is fine."}}, ensure_ascii=False)
+cl_ok = types.SimpleNamespace(messages=FakeMsgs("===JSON_START===" + fixed_json + "===JSON_END==="))
+res = T.repair(cl_ok, rep0, hits0)
+ok(res is not None and res[0]["lead"]["ko"].startswith("순자산") and res[1] == [] and res[0]["business"] == rep0["business"], "교정 결과 채택·다른 섹션 보존", str(res and res[0]))
+cl_bad = types.SimpleNamespace(messages=FakeMsgs('===JSON_START==={"lead": {"ko": "x"}}===JSON_END==='))
+ok(T.repair(cl_bad, rep0, hits0) is None, "모양이 다르면(en 누락) 버린다")
+cl_same = types.SimpleNamespace(messages=FakeMsgs("===JSON_START===" + json.dumps({"lead": rep0["lead"]}, ensure_ascii=False) + "===JSON_END==="))
+ok(T.repair(cl_same, rep0, hits0) is None, "위반이 줄지 않으면 버린다")
+
+# (g) collect 에서 한자 변환·교정이 실제로 적용된다
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+mk("msgbatch_C", ["000020"])
+cl = FakeClient()
+txt = report_text("000020").replace("실적 문장이다.", "실적은 전년比 개선됐고 저평가된 상태다.", 1)
+cl.messages.batches.store["msgbatch_C"] = batch_obj("msgbatch_C", "ended", [result("000020", text=txt, usage=USAGE)])
+def _repair_stub(cl_, rep, hits, model=None):
+    new = json.loads(json.dumps(rep))
+    for k in ("business", "earnings", "industry", "outlook", "lead", "valuation_comment"):
+        if isinstance(new.get(k), dict):
+            new[k]["ko"] = new[k]["ko"].replace("저평가된 상태다", "순자산을 밑도는 구간이다")
+    rem = T.check(new)
+    return (new, rem) if len(rem) < len(hits) else None
+T.repair = _repair_stub
+os.environ["REPORT_REPAIR"] = "1"
+M.pickup(cl, "2026-09-05 05:00")
+rep = json.loads((S.OUT_DIR / "000020.json").read_text(encoding="utf-8"))
+ok("比" not in rep["earnings"]["ko"] and "전년 대비" in rep["earnings"]["ko"], "한자 '比' 가 '대비' 로", rep["earnings"]["ko"][:60])
+ok("저평가된" not in rep["earnings"]["ko"] and "순자산을 밑도는" in rep["earnings"]["ko"], "교정된 문장이 저장된다")
+ok(not T.check(rep), "저장된 리포트는 검사를 통과한다")
 
 print()
 print(f"통과 {passed} · 실패 {failed}")

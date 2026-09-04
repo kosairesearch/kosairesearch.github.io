@@ -16,6 +16,7 @@
 level 로 구분한다.
 """
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -70,6 +71,32 @@ def _ko(v):
     return v.strip() if isinstance(v, str) else ""
 
 
+def _en(v):
+    if isinstance(v, dict):
+        return (v.get("en") or "").strip()
+    return ""
+
+
+HANGUL = re.compile(r"[가-힣]")
+HANJA = re.compile(r"[一-鿿]")
+
+
+def en_texts(rep):
+    """(섹션명, 영문) 목록 — 영문에 한글이 남았는지 볼 때 쓴다."""
+    out = []
+    for k in PROSE_KEYS + ("title",):
+        out.append((k, _en(rep.get(k))))
+    out.append(("verdict", _en((rep.get("verdict") or {}).get("body"))))
+    for k in LIST_KEYS:
+        for x in (rep.get(k) or []):
+            if isinstance(x, dict):
+                for f in ("title", "what", "when", "body", "cat"):
+                    out.append((k, _en(x.get(f))))
+            else:
+                out.append((k, _en(x)))
+    return [(k, t) for k, t in out if t]
+
+
 def sentences(rep):
     """(섹션명, 문장) 목록. 문장 단위로 봐야 어디가 문제인지 짚어 줄 수 있다."""
     out = []
@@ -121,7 +148,84 @@ def check(rep):
                              "section": sec, "match": "목표주가",
                              "why": "인용 조건 미충족(" + " · ".join(miss) + ")",
                              "sentence": s[:160]})
+    # 영문에 한글이 남으면 영어 화면에서 그 자리만 읽을 수 없다. 118개 리포트가 그랬다
+    # ("continued착공 declines", "GC녹십자 (approx. 50.1% owned)"). 고유명사라도 로마자로.
+    for sec, t in en_texts(rep):
+        m = HANGUL.search(t)
+        if m:
+            i = m.start()
+            hits.append({"rule": "hangul_en", "level": "품질", "section": sec,
+                         "match": t[i:i + 12], "why": "영문에 한글이 남았다 — 로마자/영문 명칭으로",
+                         "sentence": t[max(0, i - 60):i + 60]})
     return hits
+
+
+# ── 교정: 걸린 문장만 다시 쓴다 ──────────────────────────────────────────
+# 프롬프트는 부탁이라 3.9% 가 샌다. 검사에서 걸린 섹션만 작은 모델에 넘겨 위반
+# 문장을 규칙에 맞게 고쳐 쓰게 한다. 사실은 바꾸지 않고 표현만 바꾼다. 고친 결과가
+# 검사를 더 적게 걸려야만 채택하고, 아니면 원문을 그대로 둔다(로그에 남는다).
+REPAIR_MODEL = os.getenv("REPORT_REPAIR_MODEL", "claude-sonnet-5")
+_RULE_TEXT = "\n".join(f"  · {key}: {why}" for key, _lv, _pat, why in RULES) + (
+    "\n  · target_price: 목표주가 숫자는 증권사명과 시점이 같은 문장에 있을 때만. 둘 중 하나라도 없으면"
+    " 그 수치를 지우고 정성 서술로(예: '증권사 목표주가는 큰 폭으로 갈린다')."
+    "\n  · hangul_en: 영어(en) 문장에 한글을 쓰지 말 것 — 고유명사는 로마자/영문 명칭으로.")
+
+
+def _parse_json(text):
+    m = re.search(r"===JSON_START===(.*?)===JSON_END===", text, re.S)
+    chunk = (m.group(1) if m else text).strip()
+    chunk = re.sub(r"^```(?:json)?", "", chunk).strip()
+    chunk = re.sub(r"```$", "", chunk).strip()
+    a, b = chunk.find("{"), chunk.rfind("}")
+    if a >= 0 and b > a:
+        chunk = chunk[a:b + 1]
+    try:
+        return json.loads(chunk)
+    except Exception:
+        from json_repair import repair_json
+        return repair_json(chunk, return_objects=True)
+
+
+def _same_shape(a, b):
+    """고친 값이 원래 값과 같은 모양인가 — 키 집합·리스트 길이·타입."""
+    if isinstance(a, dict):
+        return isinstance(b, dict) and set(a) == set(b) and all(_same_shape(a[k], b[k]) for k in a)
+    if isinstance(a, list):
+        return isinstance(b, list) and len(a) == len(b) and all(_same_shape(x, y) for x, y in zip(a, b))
+    return isinstance(b, type(a)) or (isinstance(a, str) and isinstance(b, str))
+
+
+def repair(cl, rep, hits, model=None):
+    """(고친 리포트, 남은 위반) 또는 None(고치지 못함). 위반이 있는 섹션만 넘긴다."""
+    secs = [k for k in dict.fromkeys(h["section"] for h in hits) if k in rep]
+    if not secs:
+        return None
+    part = {k: rep[k] for k in secs}
+    listing = "\n".join(f"  - [{h['section']}] {h['rule']} — {h['why']}\n    문장: {h['sentence']}" for h in hits[:30])
+    prompt = (
+        "아래는 기업 리서치 리포트의 일부 섹션(JSON)입니다. 표현 규칙 검사에서 다음 위반이 나왔습니다.\n"
+        f"{listing}\n\n규칙:\n{_RULE_TEXT}\n\n"
+        "지시:\n"
+        "1. 위반된 문장만 규칙에 맞게 고쳐 쓰세요. 사실(숫자·고유명사·인과)은 바꾸지 말고 표현만 바꾸세요. "
+        "목표주가는 증권사명·시점을 알 수 없으면 수치를 지우고 정성 서술로 바꾸세요.\n"
+        "2. 위반이 없는 문장은 글자 하나도 바꾸지 마세요. 키 구조·배열 길이·ko/en 짝을 그대로 유지하세요.\n"
+        "3. 영어(en)에 한글이 있으면 로마자 또는 영문 명칭으로 바꾸세요. 한국어(ko)에 한자를 쓰지 마세요.\n"
+        "4. 같은 구조의 JSON 하나만 ===JSON_START=== 와 ===JSON_END=== 사이에 출력하세요. 다른 말은 쓰지 마세요.\n\n"
+        "===INPUT===\n" + json.dumps(part, ensure_ascii=False) + "\n===INPUT_END===")
+    resp = cl.messages.create(
+        model=model or REPAIR_MODEL, max_tokens=16000,
+        thinking={"type": "adaptive"},
+        messages=[{"role": "user", "content": prompt}])
+    text = "".join(getattr(b, "text", "") for b in resp.content if getattr(b, "type", "") == "text")
+    new = _parse_json(text)
+    if not isinstance(new, dict) or not _same_shape(part, new):
+        return None
+    merged = dict(rep)
+    merged.update(new)
+    remaining = check(merged)
+    if len(remaining) < len(hits):
+        return merged, remaining
+    return None
 
 
 def summary_line(ticker, hits):
