@@ -1065,17 +1065,41 @@ def collect_quant(dart, ticker, krx_row, stock):
     eqo_total = _bs(d_cur, "equity")
     eqo_owner = _owner_equity(eqo_owner, eqo_total, _bs(d_cur, "equity_nci"))
     eq_src = "분기말"
-    # 분기 재무상태표에서 지배지분 태그를 못 읽었는데 비지배지분이 큰 회사는 자본총계로
-    # 대신하면 안 된다. SKC 는 자본총계 2.03조 중 비지배가 1.19조라 BPS 가 52,663
-    # (KRX 22,956)으로 2.4배가 됐다 — 34종목이 그랬다. 비지배지분은 분기에 크게
-    # 움직이지 않으므로 결산 비지배지분을 빼서 지배지분으로 본다.
-    if eqo_owner is None and eqo_total is not None and fy_row:
+    # 분기 재무상태표의 지배지분을 그대로 믿으면 안 되는 회사가 둘 있다.
+    #
+    #   ① 지배지분 태그가 아예 없다 — 자본총계로 대신하면 비지배지분까지 얹힌다.
+    #   ② 지배지분 칸에 자본총계를 그대로 적어 놨다 — 태그는 있는데 값이 총계다.
+    #
+    # ②가 실제로 더 많았다. SKC 는 결산이 자본총계 2.03조 중 비지배 1.19조(59%)인데
+    # 분기 지배지분 칸에는 2.03조가 통째로 들어와 BPS 52,664 가 됐다(KRX 22,956).
+    # 갱신된 2,563종목에서 20곳이 그랬고, 그중 15곳은 '결산 지배지분 ÷ 우리 분모' 가
+    # KRX 공식 BPS 를 소수점까지 재현했다 — 분모는 맞고 분자만 오염된 것이다.
+    #   유니온 6,908(KRX 6,907) · CJ CGV 3,444(3,444) · 휴맥스 21,040(21,030) …
+    #
+    # ①만 보던 예전 조건(eqo_owner is None)은 ②를 통과시켰다. 둘 다 잡는다.
+    # 비지배지분은 분기에 크게 움직이지 않으므로 결산 비지배지분을 빼서 본다.
+    #
+    # 분기 지배지분이 총계와 '다르게' 잡히면 손대지 않는다 — 보험사처럼 분기말
+    # 자본이 기타포괄손익으로 크게 뛰는 회사(삼성화재 21.26조 → 36.18조)는
+    # 그 값이 맞고, 여기서 결산으로 되돌리면 오히려 낡은 숫자가 된다.
+    if eqo_total is not None and fy_row:
         _fy_nci, _fy_eq = fy_row.get("equity_nci"), fy_row.get("equity")
-        if _fy_nci and _fy_eq and abs(_fy_nci) > abs(_fy_eq) * 0.01:
-            eqo_owner = eqo_total - _fy_nci / unit       # 연간 값은 이미 단위보정됐다
-            eq_src = "분기말·결산 비지배지분 차감"
-            log(f"  · 분기 지배지분 태그 없음 — 자본총계 {eqo_total * unit / 1e12:,.2f}조에서 "
-                f"결산 비지배지분 {_fy_nci / 1e12:,.2f}조를 뺀다")
+        _same = eqo_owner is not None and abs(eqo_owner - eqo_total) <= abs(eqo_total) * 0.001
+        if (eqo_owner is None or _same) and _fy_nci and _fy_eq \
+                and abs(_fy_nci) > abs(_fy_eq) * 0.01:
+            _cand = eqo_total - _fy_nci / unit           # 연간 값은 이미 단위보정됐다
+            if _cand > 0:
+                eqo_owner, eq_src = _cand, "분기말·결산 비지배지분 차감"
+                log(f"  · 분기 지배지분이 {'총계와 같다' if _same else '없다'} — "
+                    f"자본총계 {eqo_total * unit / 1e12:,.2f}조에서 "
+                    f"결산 비지배지분 {_fy_nci / 1e12:,.2f}조를 뺀다")
+            elif fy_row.get("equity_owner") and fy_row["equity_owner"] > 0:
+                # 빼면 0 이하다 — 분기 표가 별도재무제표로 떨어졌을 수 있다.
+                # 억지로 만들지 말고 결산 지배지분을 쓴다(KRX 도 그 값을 쓴다).
+                eqo_owner = fy_row["equity_owner"] / unit
+                eq_src = f"{fy_row['year']}년말 지배지분"
+                log(f"  · 분기 자본에서 결산 비지배지분을 빼면 0 이하 — "
+                    f"결산 지배지분 {fy_row['equity_owner'] / 1e12:,.2f}조를 쓴다")
     eqo_q = (eqo_owner or eqo_total)
     if eqo_q is not None:
         eqo_q *= unit
@@ -1542,6 +1566,8 @@ _BI_ITEM_FIELDS = {"bull": ("title", "body"), "bear": ("title", "body"),
 _BI_TOP = ("title", "lead", "business", "earnings", "industry", "outlook", "valuation_comment")
 # 저장 뒤에 붙는 메타 키. 곁키를 걷을 때 건드리면 안 된다.
 _KEEP_EN = ("name_en",)
+# 영문을 적어 둔 곁키 — <자리>_en 뒤에 무엇이 붙어도 받는다.
+_EN_SIB = re.compile(r"(?P<base>.+?)_en(?:_[A-Za-z0-9]+)*")
 
 
 def _items(rep, k):
@@ -1621,12 +1647,27 @@ def _absorb_en_siblings(rep):
     if isinstance(side, list) and len(side) == len(kp) and kp:
         for i, s in enumerate(side):
             n += _set_en(kp, i, s if isinstance(s, str) else (s or {}).get("en") if isinstance(s, dict) else None)
-    # ② 곁키 — 최상위와 항목 안 양쪽에 생긴다.
+    # ② 항목 안 en 뭉치 — {"title": …, "body": …, "en": {"title": …, "body": …}}
+    for k, fields in _BI_ITEM_FIELDS.items():
+        for x in _items(rep, k):
+            if isinstance(x, dict) and isinstance(x.get("en"), dict):
+                side = x.pop("en")
+                for f in fields:
+                    n += _set_en(x, f, side.get(f))
+    # ③ 곁키 — 최상위와 항목 안 양쪽에 생긴다. 이름을 미리 다 알 수 없어서
+    #    <자리>_en… 꼴이면 다 받는다: body_en · body_en_placeholder · body_en_note ·
+    #    body_en_unused 를 한 run 안에서 다 봤다. 맨 <자리>_en 을 먼저 믿는다 —
+    #    'placeholder' 라고 써 둔 쪽보다 그쪽이 진짜 영문일 때가 많다.
     for x in [rep] + [y for k in _BI_ITEM_FIELDS for y in _items(rep, k) if isinstance(y, dict)] \
             + ([rep["verdict"]] if isinstance(rep.get("verdict"), dict) else []):
-        for key in [j for j in list(x)
-                    if j.endswith(("_en_placeholder", "_en_note", "_en")) and j not in _KEEP_EN]:
-            n += _set_en(x, key.rsplit("_en", 1)[0], x.pop(key))
+        sib = {}
+        for key in list(x):
+            m = _EN_SIB.fullmatch(key) if key not in _KEEP_EN else None
+            if m:
+                sib.setdefault(m.group("base"), []).append(key)
+        for base, keys in sib.items():
+            for key in sorted(keys, key=len):        # <자리>_en 이 가장 짧다
+                n += _set_en(x, base, x.pop(key))
     return n
 
 
@@ -2370,7 +2411,11 @@ def collect(cl, as_of, state):
                 if not valid_v2(rep):          # 실패 사유는 여기서 로그에 남는다
                     fail += 1
                     n = S.bump_fail(tk)
-                    log(f"  · ⚠️ {tk} 스키마 불완전 — 건너뜀 ({n}번째 실패)")
+                    # 왜 잘렸는지 남긴다 — max_tokens 면 한도를 올릴 일이고,
+                    # end_turn 이면 모델이 스스로 덜 쓴 것이라 프롬프트를 볼 일이다.
+                    why = getattr(result.result.message, "stop_reason", None)
+                    log(f"  · ⚠️ {tk} 스키마 불완전 — 건너뜀 ({n}번째 실패"
+                        f"{', 중단 사유 ' + str(why) if why and why != 'end_turn' else ''})")
                     continue
                 log(f"  · 🈯 {tk} 영문 {moved + filled}곳을 채워 되살렸다")
             srcs = collect_sources_v2(result.result.message)

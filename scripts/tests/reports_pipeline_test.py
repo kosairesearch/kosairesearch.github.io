@@ -564,6 +564,29 @@ v = q["valuation"]
 _den = v.get("wavg_shares") or v.get("total_shares")
 ok(v["bps"] is not None and abs(v["bps"] * _den - (1_994_000 - 1_193_667) * W) < _den, "BPS 분자 = 분기 자본총계 − 결산 비지배지분 (SKC: 52,663 이 아니라 ≈21,000)", f"bps={v['bps']} denom={_den}")
 
+# (b2) 지배지분 태그는 있는데 값이 자본총계와 똑같다 — 실제로 이쪽이 더 많았다(20종목)
+qs_skc2 = {(2026, "11012"): dict(rev=500_000*W, op=5_000*W, np=-30_000*W, np_owner=-25_000*W, eps=-660,
+                                 equity=1_994_000*W, equity_owner=1_994_000*W),   # 지배 = 총계, 비지배 태그 없음
+           (2025, "11012"): dict(rev=500_000*W, op=5_000*W, np=-30_000*W, np_owner=-25_000*W, eps=-660,
+                                 equity=2_200_000*W, equity_owner=1_000_000*W)}
+M._fin_all = fin_factory(ann_skc, qs_skc2)
+q2 = M.collect_quant(None, st["ticker"], None, dict(st, shares=37_868_298, price=20_000, mcap=0.76))
+v2_ = q2["valuation"]
+_den2 = v2_.get("wavg_shares") or v2_.get("total_shares")
+ok(v2_["bps"] is not None and abs(v2_["bps"] * _den2 - (1_994_000 - 1_193_667) * W) < _den2,
+   "지배 칸에 총계가 들어와도 결산 비지배지분을 뺀다(SKC 52,664 가 아니라 ≈21,000)", f"bps={v2_['bps']}")
+
+# (b3) 분기 지배지분이 총계와 다르면 손대지 않는다 — 보험사 분기말 자본은 그 값이 맞다
+qs_ins = {(2026, "11012"): dict(rev=500_000*W, op=5_000*W, np=30_000*W, np_owner=25_000*W, eps=660,
+                                equity=3_000_000*W, equity_owner=2_500_000*W)}
+M._fin_all = fin_factory(ann_skc, qs_ins)
+q3 = M.collect_quant(None, st["ticker"], None, dict(st, shares=37_868_298, price=20_000, mcap=0.76))
+v3 = q3["valuation"]
+_den3 = v3.get("wavg_shares") or v3.get("total_shares")
+ok(v3["bps"] is not None and abs(v3["bps"] * _den3 - 2_500_000 * W) < _den3,
+   "지배 ≠ 총계면 분기 지배지분을 그대로 쓴다", f"bps={v3['bps']}")
+M._fin_all = fin_factory(ann_skc, qs_skc)
+
 # (c) 숨긴 지표의 사유
 ok(v.get("hidden", {}).get("per") == "loss", "적자면 PER 사유 loss", str(v.get("hidden")))
 ok(v.get("hidden", {}).get("dps") == "no_div", "배당 없음 사유 no_div")
@@ -741,6 +764,27 @@ ok(not M.valid_v2(r, quiet=True), "곁키만 있으면 검증 실패")
 n = M.normalize_shape(r)
 ok(n == 1 and M.valid_v2(r, quiet=True), "곁키를 제자리로 옮겨 되살린다", f"n={n}")
 ok(r["risks"][0]["body"]["en"] == "R" * 20 and "body_en_placeholder" not in r["risks"][0], "곁키는 지워진다")
+
+# (a2) 곁키 이름은 미리 다 알 수 없다 — 한 run 에서 본 네 가지를 다 받는다
+for junk, why in (("body_en", "맨 _en"), ("body_en_note", "_en_note"),
+                  ("body_en_unused", "_en_unused"), ("body_en_placeholder", "_en_placeholder")):
+    r = GOODREP()
+    r["bear"][0] = {"title": {"ko": "가", "en": "A"}, "body": {"ko": "b" * 20, "en": ""}, junk: "B" * 20}
+    M.normalize_shape(r)
+    ok(r["bear"][0]["body"]["en"] == "B" * 20 and junk not in r["bear"][0], f"곁키 {why} 흡수")
+r = GOODREP()
+r["bear"][0] = {"title": {"ko": "가", "en": "A"}, "body": {"ko": "b" * 20, "en": ""},
+                "body_en_placeholder": "(TODO)", "body_en": "Real English."}
+M.normalize_shape(r)
+ok(r["bear"][0]["body"]["en"] == "Real English.", "곁키가 둘이면 맨 _en 을 먼저 믿는다", r["bear"][0]["body"]["en"])
+
+# (a3) 항목 안 en 뭉치 — {"title": …, "body": …, "en": {"title": …, "body": …}}
+r = GOODREP()
+r["bull"][0] = {"title": {"ko": "가", "en": ""}, "body": {"ko": "b" * 20, "en": ""},
+                "en": {"title": "Up", "body": "B" * 20}}
+n = M.normalize_shape(r)
+ok(n == 2 and r["bull"][0]["title"]["en"] == "Up" and "en" not in r["bull"][0],
+   "항목 안 en 뭉치를 자리마다 나눠 담는다", f"n={n} {r['bull'][0]}")
 
 # (b) 최상위 bull_en 목록 흡수
 r = GOODREP()
