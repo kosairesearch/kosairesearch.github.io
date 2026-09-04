@@ -672,7 +672,22 @@ refuse(lambda d: d["quarterly"][2].update(np_owner=None), "분기 빈칸이면 �
 refuse(lambda d: d["valuation"].update(bps=None), "BPS 가 없으면 재수집")
 refuse(lambda d: d["valuation"].update(hidden={"eps": "mismatch"}), "추출 문제로 숨겼으면 재수집")
 refuse(lambda d: d["valuation"].update(eps=5, per=200.0), "항등식(EPS×주식수≠TTM)이 깨지면 재수집")
-refuse(lambda d: d["valuation"].update(bps_krx=200.0), "KRX 공표 BPS 와 30% 초과 차이면 재수집")
+# KRX 는 '결산' 지배지분을 쓴다. 분기 사이에 자본이 크게 움직인 회사는 값이 벌어지는
+# 게 정상이다(삼성화재: 우리 850,994 · KRX 500,071 인데 KRX×분모 = 2025년말 지배자본).
+# 분모까지 어긋날 때만 우리 잘못일 수 있다 — 그때만 다시 받는다.
+d = json.loads(json.dumps(GOOD))
+# 결산 자본 3억(분기말은 BPS 500 × 100만주 = 5억). 파생값도 같이 맞춰 둔다 —
+# 안 그러면 '연간파생' 항등식에 먼저 걸려 이 시험이 무엇을 재는지 흐려진다.
+d["annual"][0].update(equity=300_000_000, equity_owner=300_000_000,
+                      roe=round(100_000_000 / 300_000_000 * 100, 1),
+                      debt_ratio=round(200_000_000 / 300_000_000 * 100, 1))
+d["valuation"]["bps_krx"] = 300.0                                     # 300 × 100만주 = 결산 자본
+put("000020", d)
+q, why = M.reusable_quant("000020", STK, today=TODAY)
+ok(q is not None, "KRX 가 결산 기준이라 늦은 것이면 재사용(분모는 맞다)", f"why={why}")
+refuse(lambda d: d["valuation"].update(bps_krx=200.0),
+       "KRX 와 30% 넘게 다르고 분모도 안 맞으면 재수집")
+put("000020", GOOD)
 # 비지배지분까지 나눈 BPS (SKC 형) — 항등식은 통과하지만 재사용하지 않는다
 def nci_bug(d):
     d["annual"][0].update(equity=500_000_000, equity_owner=200_000_000, equity_nci=300_000_000)
