@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-09-05 02:46",
+  "lastUpdated": "2026-09-05 03:27",
   "dataDate": "20260904",
   "stocks": [
     {
@@ -9180,7 +9180,7 @@ window.KOS_LIVE_DATA = {
       "name": "스카이랩스",
       "name_en": "",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "바이오·제약",
       "price": 23500,
       "change": 135.0,
       "volume": 86928032,
@@ -9188,7 +9188,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.4409,
       "shares": 18761977,
       "categories": [
-        "기타"
+        "바이오·제약"
       ],
       "rank": 510
     },
