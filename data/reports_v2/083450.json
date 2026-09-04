@@ -1,227 +1,217 @@
 {
  "title": {
-  "ko": "반도체 CAPEX 재개, 실적 반등 국면 진입",
-  "en": "Capex Rebound Drives Earnings Turnaround"
+  "ko": "AI 냉각 신사업 확장, 반도체 본업 성장 지속",
+  "en": "AI Cooling Push Expands as Core Chip Equipment Grows"
  },
  "lead": {
-  "ko": "GST는 반도체 스크러버·칠러 전문업체로 2026년 1분기 매출·이익이 전년 동기 대비 큰 폭으로 증가하며 반도체 설비투자 확대 수혜를 받고 있다.",
-  "en": "GST, a semiconductor scrubber and chiller specialist, posted sharply higher revenue and profit in Q1 2026 year-on-year, benefiting from expanding chip equipment investment."
+  "ko": "GST는 스크러버·칠러 중심 반도체 장비 본업의 안정적 성장 위에 AI 데이터센터용 액침냉각·직접수냉식(DLC) 신사업을 쌓아가고 있다.",
+  "en": "GST is layering AI data-center immersion and direct liquid cooling businesses on top of a steadily growing core semiconductor scrubber-and-chiller franchise."
  },
  "keypoints": [
   {
-   "ko": "2025년 연간 매출 3,472억원, 영업이익 592억원으로 전년과 유사한 수준에서 정체",
-   "en": "FY2025 revenue of KRW 347.2bn and operating profit of KRW 59.2bn were broadly flat versus the prior year"
+   "ko": "2025년 연결 매출 3,472억원·영업이익 592억원으로 2024년과 비슷한 규모를 유지하며 영업이익률 17%대를 지속했다.",
+   "en": "2025 consolidated revenue of KRW 347.2bn and operating profit of KRW 59.2bn were similar in scale to 2024, keeping the operating margin in the 17% range."
   },
   {
-   "ko": "2026년 1분기 매출 1,159억원(전년 동기 대비 대폭 증가), 영업이익 202억원으로 분기 실적 재가속",
-   "en": "Q1 2026 revenue reached KRW 115.9bn with operating profit of KRW 20.2bn, marking a sharp quarterly re-acceleration"
+   "ko": "2026년 1분기 매출이 1,159억원으로 최근 네 개 분기 중 최고치를 기록한 뒤, 2분기에는 매출 992억원·영업이익 155억원으로 둔화됐다.",
+   "en": "Q1 2026 revenue of KRW 115.9bn was the highest in the recent four-quarter window, before Q2 2026 slowed to KRW 99.2bn in revenue and KRW 15.5bn in operating profit."
   },
   {
-   "ko": "SK하이닉스향 스크러버 양산이 2025년 개시됐으며 공급 공정 수가 늘어나는 추세",
-   "en": "Mass production supply of scrubbers to SK hynix began in 2025, with the number of supplied process steps increasing"
+   "ko": "삼성전자·마이크론 중심의 공급구조에 SK하이닉스가 새로 추가되며 고객 다변화가 진행되고 있다.",
+   "en": "SK hynix has been added to a supply structure previously centered on Samsung Electronics and Micron, advancing customer diversification."
   },
   {
-   "ko": "TSMC·마이크론·인텔 대상 칠러 데모가 진행 중이며 액침냉각 신사업은 에쓰오일·성균관대와 실증을 추진 중",
-   "en": "Chiller demos are underway with TSMC, Micron and Intel, while the immersion cooling business is being validated jointly with S-Oil and Sungkyunkwan University"
+   "ko": "NVIDIA H200 서버 기반 자체 액침냉각 실증과 S-OIL·KTNF와의 냉각 밸류체인 실증 등 데이터센터 냉각 신사업이 검증 단계에서 확대되고 있다.",
+   "en": "The data-center cooling business is expanding at the validation stage, including in-house immersion cooling tests with NVIDIA H200 servers and a joint cooling value-chain trial with S-OIL and KTNF."
   },
   {
-   "ko": "부채비율 20%대 후반의 안정적 재무구조를 유지하고 있다",
-   "en": "The company maintains a stable capital structure with a debt ratio in the high-20% range"
+   "ko": "IBK투자증권은 2026년 8월 6일 보고서에서 2026년 매출 4,353억원, 영업이익 745억원을 추정했다(잠정 추정치).",
+   "en": "IBK Securities estimated 2026 revenue of KRW 435.3bn and operating profit of KRW 74.5bn in an August 6, 2026 report (a preliminary estimate)."
   }
  ],
  "business": {
-  "ko": "GST(글로벌스탠다드테크놀로지)는 반도체·디스플레이 제조 공정에서 배출되는 유해가스를 정화하는 스크러버(Scrubber)와 공정 온도를 일정하게 유지시키는 칠러(Chiller)를 주력 제품으로 하는 장비 업체다. 증권사 리서치에 따르면 제품별 매출 비중은 연도에 따라 다소 변동이 있으나 스크러버가 전체 매출의 약 60~70%를, 칠러가 15~25% 안팎을, 나머지는 유지보수(CS) 용역과 기타 상품이 차지하는 구조다. 주요 고객사는 삼성전자, SK하이닉스, 마이크론, YMTC, CXMT 등 국내외 메모리 반도체 업체이며, 2025년 기준 고객사별 매출 비중은 삼성전자와 마이크론이 절대적인 비중을 차지하는 것으로 파악된다. 국내 스크러버·칠러 제조업체 중 글로벌 대형 반도체 기업에 수출하는 곳은 GST가 유일한 것으로 알려져 있으며, 2004년부터 수출을 시작해 미국, 중국, 대만, 싱가포르 등에 해외 현지법인을 두고 고객사 공장 인근에서 즉각적인 유지보수 서비스를 제공하는 것을 강점으로 내세우고 있다. 경쟁사로는 유니셈, 에프에스티, 지앤비에스엔지니어링 등이 거론되며, 각 사가 삼성전자·중화권 등 서로 다른 고객군에서 점유율 확대를 시도하고 있다. 최근에는 프레온 계열 냉매 규제 강화에 대응해 이산화탄소(CO2) 칠러 등 친환경 냉각 장비를 개발, 미국 소재 글로벌 반도체 기업에 공급을 확정한 바 있다. 2021년부터는 신사업으로 데이터센터 서버용 액침냉각 장비를 개발해왔으며, 2023년 두 가지 모델 개발을 완료한 뒤 고객사와 PoC(개념검증) 및 필드테스트를 이어가고 있다. 지배구조상 최대주주인 대표이사가 지분 약 20%대를 보유하고 있으며 나머지는 대부분 소액주주로 구성되어 있다.",
-  "en": "GST (Global Standard Technology) manufactures scrubbers, which purify harmful gases emitted during semiconductor and display manufacturing processes, and chillers, which maintain stable process temperatures, as its core products. According to brokerage research, the product revenue mix varies by year but scrubbers typically account for roughly 60-70% of sales, chillers around 15-25%, with the remainder from CS maintenance services and other items. Major customers are domestic and overseas memory chipmakers including Samsung Electronics, SK hynix, Micron, YMTC and CXMT, with Samsung Electronics and Micron reportedly accounting for the largest share of 2025 customer-mix revenue. GST is reportedly the only domestic scrubber/chiller maker exporting to major global semiconductor companies, having begun exports in 2004 and established overseas subsidiaries in the US, China, Taiwan and Singapore to provide immediate maintenance services near customer fabs. Competitors include Unisem, FST and GNBS Engineering, each targeting different customer segments such as Samsung Electronics or Chinese chipmakers. In response to tightening refrigerant regulations, GST has developed eco-friendly CO2 chillers and confirmed supply to a US-based global semiconductor company. Since 2021 the company has also pursued a new immersion cooling business for data-center servers, completing two model designs in 2023 and continuing PoC and field testing with customers. In terms of ownership, the CEO as largest shareholder holds roughly a 20%-plus stake, with the remainder mostly held by minority shareholders."
+  "ko": "GST는 반도체·디스플레이 제조공정에서 발생하는 유해가스를 처리하는 스크러버와 공정 장비의 온도를 정밀하게 제어하는 칠러를 주력 사업으로 영위하는 코스닥 상장 반도체 장비 기업이다. GST의 주력사업은 반도체·디스플레이 제조공정에서 발생하는 유해가스를 처리하는 스크러버와 공정장비의 온도를 정밀하게 제어하는 칠러이며, 스크러버가 가장 큰 매출비중을 차지하고 있다. 주요 고객사는 삼성전자와 마이크론이 중심을 이루며, 삼성전자·Micron 중심의 기존 공급구조에 SK하이닉스가 추가되고 스크러버 적용공정이 확대되고 있다. 대만 TSMC를 대상으로는 전기식 칠러 공급이 본격화될 경우 실적 추정치가 추가 상향될 가능성이 있다는 분석도 나온다. 삼성전자의 P4·Taylor Fab, 그리고 마이크론이 미국 아이다호주 보이시에 500억달러를 투입해 신규 팹 2곳을 건설 중이며 뉴욕주 시러큐스에도 1000억달러 규모의 반도체 공장 단지를 조성 중인 점 등 주요 고객사의 대규모 설비투자가 회사 수주 기반으로 이어지고 있다. 사업 다각화 측면에서는 글로벌 탑티어 반도체 제조사들을 주요 고객사로 확보한 가운데 최근 차세대 성장동력으로 AI데이터센터 전용 액체·액침냉각사업을 적극 추진하고 있다. 최근에는 NVIDIA H200 GPU를 탑재한 고성능 AI 서버를 직접 도입해 자체 개발한 6U 액침냉각장비에서 실제 운영에 들어갔다. 9월에는 에쓰오일, 국산 서버 개발전문 기업 KTNF와 함께 AI 데이터센터용 액침냉각 기술 실증 및 협력 강화를 추진하기 시작했으며, 앞서 3월에는 LG유플러스와 액체냉각 분야 솔루션개발 사업협력의 일환으로 MWC 2026 전시관을 통해 AI 확산에 따른 전력 밀도 급증 트렌드에 대응하는 대형 데이터센터용 냉각 솔루션을 선보였다.",
+  "en": "GST is a KOSDAQ-listed semiconductor equipment maker whose core businesses are scrubbers, which treat harmful gases generated in semiconductor and display manufacturing, and chillers, which precisely control the temperature of process equipment. Scrubbers and chillers are GST's core businesses, with scrubbers accounting for the largest share of revenue. Major customers are centered on Samsung Electronics and Micron, and SK hynix has been added to this existing supply structure centered on Samsung Electronics and Micron, with scrubber-applicable processes expanding. For Taiwan's TSMC, analysis suggests earnings estimates could be revised further upward if electric chiller supply is scaled up. Large-scale capital investment by major customers, including Samsung Electronics' P4 and Taylor Fab, and Micron building two new fabs in Boise, Idaho with a USD 50 billion investment and a USD 100 billion semiconductor complex in Syracuse, New York, feeds directly into GST's order base. On diversification, while securing global top-tier semiconductor makers as key customers, GST has recently been actively pursuing liquid and immersion cooling for AI data centers as a next growth driver. The company recently directly introduced a high-performance AI server equipped with NVIDIA H200 GPUs and began actual operation in its self-developed 6U immersion cooling equipment. In September it began a joint effort with S-OIL and domestic server developer KTNF to pursue immersion cooling technology validation and cooperation for AI data centers. Earlier, in March, GST showcased a large-scale data-center cooling solution designed to address surging power density trends at the MWC 2026 exhibition through a partnership with LG Uplus."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 3,471억 5,863만원으로 2024년(3,462억 2,765만원)과 거의 동일한 수준(+0.3%)을 기록했고, 영업이익은 591억 7,231만원으로 전년 590억 8,150만원과 유사했다. 영업이익률은 2025년 17.0%로 2024년 17.1%와 큰 차이가 없었으나, 2023년 15.2%, 2022년 18.2%와 비교하면 최근 2년간 마진이 안정적인 구간에서 유지되고 있음을 보여준다. 지배주주 순이익은 2025년 452억 7,832만원으로 2024년 453억 7,156만원과 거의 같은 수준이었다. 다만 분기별로 보면 흐름이 균일하지 않았는데, 2025년 1분기 매출 747억 5,752만원·영업이익 95억 9,557만원에서 2분기에는 매출 994억 3,578만원·영업이익 173억 4,127만원으로 뛰어올랐다가, 3분기 매출 807억 7,276만원·영업이익 166억 7,576만원, 4분기 매출 921억 9,257만원·영업이익 155억 5,970만원으로 등락을 거듭했다. 특히 2026년 1분기 실적은 매출 1,158억 8,559만원, 영업이익 201억 9,145만원, 지배주주 순이익 173억 2,069만원으로 2025년 1분기 대비 매출은 약 55% 늘었고 영업이익은 약 111%, 순이익은 약 126% 증가하며 뚜렷한 재가속 흐름을 나타냈다. 이는 삼성전자·마이크론 등 주요 고객사의 설비투자 확대가 실제 매출로 반영되기 시작한 결과로 해석할 수 있는 대목이다. 2023년에는 매출이 전년 대비 10.8% 감소하고 영업이익도 25.3% 줄어드는 다운사이클을 겪었던 만큼, 이번 반등이 지속 가능한 추세인지는 향후 분기 실적으로 재확인이 필요하다. 영업활동현금흐름(CFO)은 2025년 415억 9,169만원으로 2024년 544억 781만원 대비 감소했는데, 매출채권·재고 등 운전자본 변동 영향을 받았을 가능성이 있다. 재무구조 측면에서는 부채비율이 2022년 25.1%, 2023년 20.0%, 2024년 24.8%, 2025년 26.8%로 20%대 중반의 안정적 범위 내에서 관리되고 있다.",
-  "en": "FY2025 consolidated revenue came to KRW 347.16bn, essentially flat (+0.3%) versus FY2024's KRW 346.23bn, while operating profit of KRW 59.17bn was similarly in line with the prior year's KRW 59.08bn. The operating margin of 17.0% in 2025 was nearly unchanged from 17.1% in 2024, though comparing to 15.2% in 2023 and 18.2% in 2022 shows margins have stabilized over the past two years. Owners' net income was KRW 45.28bn in 2025, nearly identical to KRW 45.37bn in 2024. Quarterly trends, however, were uneven: Q1 2025 revenue of KRW 74.76bn and operating profit of KRW 9.60bn jumped to KRW 99.44bn and KRW 17.34bn in Q2, before moderating to KRW 80.77bn/KRW 16.68bn in Q3 and KRW 92.19bn/KRW 15.56bn in Q4. Notably, Q1 2026 results showed revenue of KRW 115.89bn, operating profit of KRW 20.19bn and owners' net income of KRW 17.32bn — roughly 55% revenue growth, 111% operating profit growth and 126% net income growth versus Q1 2025, signaling a clear re-acceleration. This can be interpreted as capex expansion by major customers such as Samsung Electronics and Micron beginning to translate into actual revenue. Given that the company experienced a downcycle in 2023 with revenue falling 10.8% and operating profit dropping 25.3% year-on-year, whether this rebound is sustainable will need to be confirmed through subsequent quarters. Operating cash flow (CFO) was KRW 41.59bn in 2025, down from KRW 54.41bn in 2024, potentially reflecting working-capital swings in receivables and inventory. On the balance sheet, the debt ratio has been managed within a stable mid-20% range at 25.1% (2022), 20.0% (2023), 24.8% (2024) and 26.8% (2025)."
+  "ko": "GST의 연결 매출액은 2022년 3,128억원에서 2023년 2,792억원으로 줄었다가 2024년 3,462억원으로 회복했고, 2025년에는 3,472억원으로 비슷한 수준을 유지했다. 영업이익률은 2022년 18.2%에서 2023년 15.2%로 낮아진 뒤 2024년 17.1%, 2025년 17.0%로 다시 올라서며 비교적 안정적인 밴드에서 유지되고 있다. 지배주주 순이익은 2022년 468억원에서 2023년 357억원으로 줄었다가 2024년 454억원, 2025년 453억원으로 회복 흐름을 이어갔다. 분기별로는 2026년 1분기 매출이 1,159억원, 영업이익 202억원으로 최근 네 개 분기 창(2025년 3분기~2026년 2분기) 안에서 가장 높은 수준을 기록했다. 그러나 2026년도 반기보고서에 따르면 2분기 연결기준 매출액은 약 992억원, 영업이익은 155억원, 당기순이익은 122억원으로 집계됐다. 전년 동기 매출 994억3,600만원, 영업이익 173억4,100만원과 비교하면 매출은 약 0.2% 감소해 사실상 보합을 유지했고, 영업이익은 약 10.6% 감소한 반면 순이익은 약 7.3% 증가했다. 업계에서는 1분기의 가파른 실적 확대를 감안하면 2분기 실적은 성장기조 훼손보다는 단기적인 숨고르기에 가까운 모습으로 해석하는 시각도 있다. 실제로 1·2분기를 합산한 상반기 연결기준 매출은 약 2,151억원, 영업이익은 약 357억원에 달해, 기존 연간 매출규모를 감안하면 상반기에 이미 2,000억원 이상의 외형을 확보한 것으로 평가된다. 이런 흐름을 반영해 IBK투자증권은 지난 8월6일 발간한 보고서에서 GST의 2026년 매출액과 영업이익을 각각 4,353억원, 745억원으로 추정했는데, 이는 아직 공시로 확정되지 않은 잠정 추정치임에 유의할 필요가 있다.",
+  "en": "GST's consolidated revenue fell from KRW 312.8bn in 2022 to KRW 279.2bn in 2023, recovered to KRW 346.2bn in 2024, and held at a similar KRW 347.2bn in 2025. The operating margin dipped from 18.2% in 2022 to 15.2% in 2023, then climbed back to 17.1% in 2024 and 17.0% in 2025, staying in a relatively stable band. Owner's net income fell from KRW 46.8bn in 2022 to KRW 35.7bn in 2023, then recovered to KRW 45.4bn in 2024 and KRW 45.3bn in 2025. By quarter, Q1 2026 revenue of KRW 115.9bn and operating profit of KRW 20.2bn were the highest within the recent four-quarter window (Q3 2025 through Q2 2026). However, according to the 2026 semiannual report, Q2 consolidated revenue came to about KRW 99.2bn, operating profit about KRW 15.5bn, and net income about KRW 12.2bn. Compared with the prior-year quarter's revenue of KRW 99.44bn and operating profit of KRW 17.34bn, revenue was essentially flat, down about 0.2%, while operating profit fell about 10.6% and net income rose about 7.3%. Some industry observers interpret this as a short-term pause rather than a breakdown in the growth trend, given the sharp expansion seen in the first quarter. Indeed, combined first-half consolidated revenue reached about KRW 215.1bn with operating profit of about KRW 35.7bn, meaning the company had already secured a top line exceeding KRW 200bn in the first half alone relative to its historical annual scale. Reflecting this trajectory, IBK Securities, in a report published on August 6, estimated GST's 2026 revenue and operating profit at KRW 435.3bn and KRW 74.5bn, respectively, though this remains a preliminary estimate not yet confirmed by official disclosure."
  },
  "industry": {
-  "ko": "반도체 전공정 장비 중에서도 스크러버·칠러는 유해가스 처리 및 온도 제어라는 필수 공정 기능을 담당하는 만큼, 신규 팹 증설이나 라인 전환 시 필연적으로 수반되는 장비군이다. 최근 업계 리서치에 따르면 삼성전자 P4 라인은 여러 Phase로 구성돼 순차적으로 투자가 진행 중이며, 당초 파운드리 라인으로 계획됐던 구간이 D램 설비로 전환되는 등 메모리 투자 비중이 확대되는 흐름이 나타나고 있다. 마이크론 역시 미국 아이다호·뉴욕 등에서 대규모 신규 팹을 건설 중이고 대만 파워칩 공장 인수 등을 통해 추가 증설 여지를 확보한 것으로 전해진다. SK하이닉스향으로는 2025년부터 스크러버 양산 공급이 시작돼 아직 초기 단계이지만 공급 대상 공정 수가 늘어나는 추세로, 국내 3대 메모리 업체 모두를 고객군으로 확보해 나가는 모습이다. 산업 내 경쟁구도는 국내에서는 유니셈·에프에스티·지앤비에스엔지니어링 등이 유사 장비군에서 경쟁하고 있고, 해외에서는 일본·독일·미국계 업체들이 스크러버·칠러 시장에 참여하고 있다. 냉각 분야에서는 AI 서버발 발열 문제 심화로 액체냉각·액침냉각 수요가 부각되면서 기존 반도체 장비 업체들이 데이터센터向 냉각 솔루션으로 사업영역을 확장하려는 움직임이 나타나고 있으며, GST 역시 이 흐름에 대응해 신사업을 추진 중이다. 다만 액침냉각은 아직 상용화 초기 단계로 매출 기여가 본격화되기까지는 시간이 필요한 분야로 평가된다.",
-  "en": "Among front-end semiconductor equipment, scrubbers and chillers perform essential functions of hazardous-gas treatment and temperature control, making them equipment categories that inevitably accompany new fab construction or line conversions. Recent industry research indicates Samsung Electronics' P4 line is being built out in multiple phases, with sections originally planned as foundry lines being converted to DRAM, reflecting an expanding share of memory investment. Micron is also constructing large new fabs in Idaho and New York in the US and has reportedly secured additional expansion capacity through its acquisition of a Taiwan PSMC plant. Mass-production scrubber supply to SK hynix began in 2025 and remains at an early stage, but the number of supplied processes is increasing, suggesting GST is gradually securing all three major domestic memory makers as customers. Domestically, competitors such as Unisem, FST and GNBS Engineering compete in similar equipment categories, while Japanese, German and US firms participate in the global scrubber/chiller market. In the cooling segment, intensifying heat issues from AI servers have spotlighted liquid and immersion cooling demand, prompting existing semiconductor equipment makers, including GST, to expand into data-center cooling solutions. Immersion cooling, however, remains at an early commercialization stage and is expected to take time before contributing meaningfully to revenue."
+  "ko": "글로벌 반도체 시장은 AI 수요를 축으로 한 대규모 설비투자 확대 국면에 있으며, 한 업계 리포트는 2026년 글로벌 반도체 시장이 전년 대비 54.8% 성장한 1.23조 달러를 기록할 것으로 예상했다(WSTS, Trendforce 인용). 로직은 +32.1% YoY, 메모리는 +134.3% YoY로 큰 성장을 이룰 것으로 전망된다. 이런 흐름 속에 AI 중심의 반도체 수요 강세가 이어지며 반도체 공급사의 CAPA 확대가 이루어지고 있다. 고객사별로는 마이크론의 매출 비중이 크게 증가한 것으로 파악되는데, 대만 사이트에서 D램 전환투자가 이루어지면서 번-웻 스크러버 수요가 증가한 영향으로 분석된다. 삼성전자 대상 매출은 P4 중심 투자로 확대되었고 SK하이닉스 대상으로는 스크러버 첫 공급이 이루어졌다. 반면 중국 대상 매출액은 중국 반도체 장비 국산화 영향으로 이미 상당폭 감소한 수준인 것으로 평가된다. 제품 경쟁력 측면에서는 촉매 방식 스크러버 등 친환경 스크러버로 제품 다변화를 이어가고, 칠러도 전기식·CO2 등 친환경 장비 중심으로 해외 고객사 확대가 기대되는 흐름이다. 산업 사이클상으로는 과거 소비자·산업용 수요보다 AI 수요가 시장을 주도하는 국면으로 접어들었다는 평가가 나온다.",
+  "en": "The global semiconductor market is in a phase of large-scale capital expenditure expansion centered on AI demand, and one industry report projected the global semiconductor market would grow 54.8% year-on-year to USD 1.23 trillion in 2026, citing WSTS and Trendforce. Logic is expected to grow 32.1% year-on-year and memory 134.3% year-on-year. Against this backdrop, strong AI-centric semiconductor demand continues, driving capacity expansion among chipmakers. By customer, Micron's revenue share has reportedly increased substantially, driven by rising demand for burn-wet scrubbers as DRAM conversion investment proceeds at its Taiwan site. Samsung Electronics-related revenue expanded on P4-centered investment, while SK hynix received its first scrubber supply. By contrast, China-bound revenue is assessed to have already declined substantially due to China's semiconductor equipment localization. On product competitiveness, the trend includes continued diversification into eco-friendly scrubbers such as catalytic types, alongside expected expansion of overseas customers for electric and CO2 chillers. On the cycle, some assessments suggest the market has entered a phase where AI demand, rather than past consumer and industrial demand, is the primary driver."
  },
  "outlook": {
-  "ko": "회사 측 신규 수주·데모 관련 정보를 종합하면, 우선 SK하이닉스향으로는 공급 대상 공정 수가 2025년 1개에서 2026년 5개로 늘어난 것으로 파악되며, 이에 따라 관련 매출 증가가 기대되는 구간에 진입했다. TSMC와는 칠러 데모가 진행 중이며 2026년 중순경 순차 종료될 예정으로, 결과에 따라 이르면 2026년 말 양산 주문 수주 가능성이 거론된다. 마이크론과는 이산화탄소(CO2) 칠러 데모를 2026년 2분기 초 시작한 것으로 확인되며, 인텔을 대상으로도 전기식 칠러 및 스크러버 데모 협의가 진행되고 있는 것으로 전해진다. 프레온 계열 냉매에 대한 환경 규제 강화 흐름 속에서 냉동기식 칠러를 전기식·CO2 칠러로 교체하려는 수요가 점차 확대되는 추세이며, 이는 대만 등 해외 fab까지 사업 기회가 확장될 여지로 언급된다. 신사업인 액침냉각 부문에서는 2026년 6월 에쓰오일, 성균관대학교 슈퍼컴퓨팅센터와 함께 AI 데이터센터용 액침냉각 기술 실증을 위한 업무협약을 체결했으며, 이 실증은 과학기술정보통신부 과제와 연계돼 2029년 5월까지 진행될 예정이다. 3사는 액침냉각유, 냉각장비, 실제 고성능컴퓨팅 운영 환경을 연계한 통합 실증을 통해 냉각 성능과 안정성, 운영 신뢰성을 검증할 계획이다. 이러한 파이프라인들은 아직 데모·실증·PoC 단계에 머물러 있는 경우가 많아, 실제 양산 매출로 전환되는 시점과 규모는 향후 공시·IR을 통해 추가로 확인이 필요하다.",
-  "en": "Based on available information on new orders and demo programs, the number of processes supplied to SK hynix is reported to have increased from one in 2025 to five in 2026, entering a phase where related revenue growth is expected. A chiller demo with TSMC is underway and scheduled to conclude in stages around mid-2026, with mass-production order wins possibly as early as late 2026 depending on results. A CO2 chiller demo with Micron reportedly began in early Q2 2026, while demo discussions for electric chillers and scrubbers with Intel are also said to be in progress. Amid tightening environmental regulations on freon-based refrigerants, demand to replace refrigeration-type chillers with electric or CO2 chillers is gradually expanding, which is cited as a potential opportunity to extend business into overseas fabs such as those in Taiwan. In the immersion cooling new business, GST signed an MOU in June 2026 with S-Oil and Sungkyunkwan University's Supercomputing Center for AI data-center immersion cooling technology validation, a project linked to a Ministry of Science and ICT initiative scheduled to run through May 2029. The three parties plan to jointly validate cooling performance, stability and operational reliability through integrated testing combining immersion cooling fluid, cooling hardware and real high-performance computing environments. Many of these pipelines remain at demo, validation or PoC stages, so the timing and scale of conversion into actual mass-production revenue will need further confirmation through future disclosures and IR updates."
+  "ko": "회사는 삼성전자의 P4, Taylor Fab과 Micron의 미국 Boise ID1 Fab 투자가 실적에 긍정적인 영향을 끼칠 것으로 전망하며, 두 업체에 대한 스크러버 점유율이 증가하고 있어 과거 대비 투자 규모 대비 수혜가 클 것으로 예상된다. SK하이닉스는 M15x에 연간 투자가 지속될 것으로 보이며, 회사는 2025년 1공정에 스크러버 첫 공급을 개시한 데 이어 2026년은 적용 공정 확대로 공급량이 증가할 것으로 예상된다. 칠러 부문에서는 삼성전자 매출 비중이 절대적인 가운데, NAND 전환 투자 확대에 따라 칠러 수요가 늘어나는 흐름이 나타나고 있다는 분석도 있다. 신사업인 데이터센터 냉각에서는 지난 7월 NVIDIA H200 GPU 서버를 자체 개발한 6U 액침냉각장비에서 실제 운영하며 데이터를 축적하고 있고, 9월에는 '서버(KTNF)-액침냉각유(S-OIL)-장비(GST)'를 연계한 국내 액침냉각 밸류체인을 구축하는 실증에 착수했다. 회사 기술연구소는 2026년까지 자체실험실 운영과 실증사업을 통해 제품 신뢰성 데이터를 완성하고, 고발열 AI서버 수요 증가가 예상되는 2027년을 기점으로 본격적인 상업매출을 가시화하겠다는 목표를 제시했다. 오는 11월에는 데이터센터 전시회에서 새롭게 개발한 직접수냉식(DLC) 장비를 선보일 예정이다. 이런 성장 요인들을 반영해 IBK투자증권은 2026년 매출·영업이익을 각각 4,353억원, 745억원으로 추정했으며, 이는 아직 확정되지 않은 시장 추정치라는 점을 함께 고려할 필요가 있다.",
+  "en": "The company expects that Samsung Electronics' P4 and Taylor Fab investments and Micron's U.S. Boise ID1 Fab investment will positively affect earnings, with scrubber share at both customers rising, implying a larger benefit relative to past investment scale. SK hynix is expected to continue annual investment at M15X, and after its first scrubber supply began in one process in 2025, GST expects supply volume to grow in 2026 as applicable processes expand. In chillers, some analysis suggests Samsung Electronics still accounts for the overwhelming majority of revenue, while chiller demand is rising alongside expanded NAND conversion investment. In the new data-center cooling business, GST has been operating NVIDIA H200 GPU servers in its self-developed 6U immersion cooling equipment since July to accumulate data, and in September it began a trial to build a domestic immersion cooling value chain linking servers (KTNF), immersion cooling fluid (S-OIL), and equipment (GST). The company's technology research center has set a goal to complete product reliability data through in-house lab operation and pilot projects by 2026, and to make commercial revenue visible starting in 2027, when demand for high-heat-density AI servers is expected to rise. In November, GST plans to unveil its newly developed direct liquid cooling (DLC) equipment at a data-center exhibition. Reflecting these growth drivers, IBK Securities estimated 2026 revenue and operating profit at KRW 435.3bn and KRW 74.5bn, respectively, though this remains an unconfirmed market estimate."
  },
  "valuation_comment": {
-  "ko": "GST 주가는 최근 1년간 큰 변동폭을 보였는데, 52주 최고가 70,800원(2026년 5월 11일)과 52주 최저가 18,110원(2025년 7월 23일) 사이를 오가며 실적 개선 기대와 업황 우려가 번갈아 반영된 것으로 파악된다. 현재 밸류에이션 카드에 표시되는 주당순자산(BPS)과 주당순이익(EPS) 헤드라인 값은 각각 17,263원과 3,070원 수준으로, 이를 기준으로 한 순자산 대비 시장가치 배수와 이익 대비 배수는 화면에서 실시간으로 확인할 수 있다. 회사 실적은 2023년 다운사이클에서 2024~2025년 안정 국면을 거쳐 2026년 1분기 뚜렷한 이익 회복 흐름으로 이어지고 있어, 시장의 밸류에이션 부여 수준도 이러한 이익 사이클 변화에 민감하게 반응해온 것으로 보인다. 배당 측면에서는 주당 현금배당금이 공시돼 있으며, 배당수익률은 화면에 표시되는 현재가 대비 값을 참고하되 통상 국내 반도체 장비주 배당수익률과 비교하는 것이 유용하다. 밸류에이션 수준의 고평가·저평가 여부에 대한 단정적 판단은 지양하며, 투자자는 이익 사이클의 방향성과 신규 고객·신사업 파이프라인의 현실화 속도를 함께 고려해 배수 수준을 해석할 필요가 있다.",
-  "en": "GST's share price has swung widely over the past year, trading between a 52-week high of KRW 70,800 (May 11, 2026) and a 52-week low of KRW 18,110 (July 23, 2025), reflecting alternating expectations of earnings improvement and industry-cycle concerns. The headline book value per share (BPS) and earnings per share (EPS) figures currently shown on the valuation card are approximately KRW 17,263 and KRW 3,070 respectively, from which market-to-book and price-to-earnings multiples can be checked in real time on screen. Company earnings moved from a downcycle in 2023 through a stabilization phase in 2024-2025 into a clear earnings recovery trend in Q1 2026, and market valuation levels appear to have been sensitive to these shifts in the earnings cycle. On dividends, a per-share cash dividend has been disclosed, and the dividend yield shown relative to the current price is useful to compare against typical yields for domestic semiconductor equipment stocks. Rather than making a definitive judgment on whether the valuation level is expensive or cheap, investors should interpret the multiple in light of both the direction of the earnings cycle and the pace at which new customer wins and new business pipelines materialize."
+  "ko": "최근 네 개 분기 이익 회복과 2025년 이후 이어진 매출·이익의 안정적 흐름을 감안할 때, 시장은 반도체 유틸리티 장비업 평균보다 다소 높은 배수를 부여해온 편이다. 순자산 대비로는 프리미엄이 실린 구간에서 거래되는 모습이 이어지고 있으며, 이는 스크러버·칠러 본업 외에 액침냉각·DLC 신사업에 대한 성장 기대가 일부 얹혀 있는 결과로 해석할 수 있다. 배당 정책은 이익 규모 대비 보수적인 편으로, 배당수익률은 업종 내 고배당 종목 대비 낮은 축에 속한다. 과거 스크러버·칠러 중심 사업만 영위하던 시기의 거래 밴드와 비교하면, 최근에는 고객 다변화와 신사업 기대가 얹어지며 밸류에이션 논의의 축이 이동하는 모습이다. 다만 이런 프리미엄이 실제 매출 기여로 얼마나 뒷받침될지는 향후 TSMC 칠러 데모, SK하이닉스 공정 확대, 액침냉각 실증 성과 등에 따라 달라질 수 있는 사안이다.",
+  "en": "Given the earnings recovery across the recent four quarters and the stable revenue and profit trend since 2025, the market has tended to assign somewhat higher multiples to GST than the average for semiconductor utility equipment makers. Relative to net asset value, the stock continues to trade at a premium, which can be interpreted as reflecting growth expectations for the immersion cooling and DLC businesses layered on top of the core scrubber and chiller franchise. Dividend policy is relatively conservative relative to the size of earnings, with the dividend yield positioned on the lower side compared with high-dividend peers in the sector. Compared with the trading band from the era when the company operated only the scrubber-and-chiller business, valuation discussion has recently shifted to incorporate customer diversification and new-business expectations. However, how much of this premium will ultimately be supported by actual revenue contribution depends on future developments such as the TSMC chiller demo, SK hynix process expansion, and immersion cooling trial outcomes."
  },
  "bull": [
   {
    "title": {
-    "ko": "주요 고객사 설비투자 확대",
-    "en": "Expanding Capex from Key Customers"
+    "ko": "AI·HBM 캐펙스 확대에 따른 스크러버 수요",
+    "en": "Scrubber Demand from AI/HBM Capex Expansion"
    },
    "body": {
-    "ko": "삼성전자 P4 라인의 순차적 투자 진행과 마이크론의 미국 내 대규모 신규 팹 건설이 이어지면서 스크러버·칠러 수요 기반이 넓어지고 있다. 2026년 1분기 매출과 영업이익이 전년 동기 대비 큰 폭으로 늘어난 점은 이러한 CAPEX 확대가 실제 실적으로 반영되기 시작했음을 시사한다. 메모리 반도체 공급 부족 우려가 부각되는 국면에서는 관련 투자 속도가 더 빨라질 가능성도 있다.",
-    "en": "Sequential investment progress at Samsung Electronics' P4 line and Micron's large-scale new fab construction in the US are broadening the demand base for scrubbers and chillers. The sharp year-on-year rise in Q1 2026 revenue and operating profit suggests this capex expansion is beginning to show up in actual results. In periods when memory supply shortages are highlighted, the pace of related investment could accelerate further."
+    "ko": "삼성전자 P4·Taylor Fab, 마이크론 미국 신규 팹 등 주요 고객사의 대규모 투자가 이어지고 있다. 마이크론은 아이다호주 보이시에 500억달러, 뉴욕주 시러큐스에 1000억달러 규모의 반도체 공장을 조성 중이다. 두 업체에 대한 GST의 스크러버 점유율이 증가하고 있어 과거 대비 투자 규모 대비 수혜가 클 것으로 예상된다. 이는 회사 본업 매출의 기초를 형성한다.",
+    "en": "Major customers continue large-scale investment, including Samsung Electronics' P4 and Taylor Fab and Micron's new U.S. fabs. Micron is building a USD 50 billion complex in Boise, Idaho and a USD 100 billion complex in Syracuse, New York. GST's scrubber share at both customers is rising, implying a larger benefit relative to investment scale than in the past. This underpins the core equipment business."
    }
   },
   {
    "title": {
-    "ko": "SK하이닉스향 신규 진입 확대",
-    "en": "Expanding Entry into SK hynix"
+    "ko": "고객 다변화 진행",
+    "en": "Customer Base Diversification"
    },
    "body": {
-    "ko": "2025년 하반기부터 SK하이닉스향 스크러버 양산 공급이 시작됐으며, 공급 대상 공정 수가 늘어나는 추세로 파악된다. 이는 국내 3대 메모리 업체를 모두 고객군으로 확보하는 계기가 될 수 있어, 고객 다변화 측면에서 긍정적으로 해석될 수 있다. 다만 초기 단계인 만큼 절대 매출 규모는 아직 크지 않은 것으로 보인다.",
-    "en": "Mass-production scrubber supply to SK hynix began in the second half of 2025, with the number of supplied processes reportedly increasing. This could mark securing all three major domestic memory makers as customers, a positive for customer diversification. However, being at an early stage, the absolute revenue scale is likely still modest."
+    "ko": "삼성전자·Micron 중심의 기존 공급구조에 SK하이닉스가 추가되고 스크러버 적용공정이 확대되고 있다. TSMC향 전기식 칠러 공급이 본격화될 경우 실적 추정치가 추가 상향될 가능성이 있다는 분석도 나온다. 이는 특정 고객사 의존도를 낮추는 방향으로 작용할 수 있다.",
+    "en": "SK hynix has been added to the existing supply structure centered on Samsung Electronics and Micron, with scrubber-applicable processes expanding. Analysts also suggest earnings estimates could be revised upward further if electric chiller supply to TSMC scales up. This could reduce reliance on any single customer over time."
    }
   },
   {
    "title": {
-    "ko": "신제품·신사업 파이프라인",
-    "en": "New Product and New Business Pipeline"
+    "ko": "데이터센터 냉각 신사업 확장",
+    "en": "Expansion of Data-Center Cooling Business"
    },
    "body": {
-    "ko": "환경규제 강화에 대응한 이산화탄소(CO2) 칠러, 전기식 칠러가 미국 반도체 기업 등에 공급되거나 데모 단계에 있으며, TSMC·마이크론·인텔 등 해외 대형 고객사와의 데모가 다수 진행 중이다. 액침냉각 신사업은 에쓰오일·성균관대와의 실증 협력을 통해 기술 검증 단계를 밟아가고 있어, 향후 AI 데이터센터 냉각 시장 진입 가능성을 열어두고 있다.",
-    "en": "CO2 chillers and electric chillers developed in response to tightening environmental regulations are being supplied to a US semiconductor firm or are in demo stages, with multiple demos ongoing at large overseas customers including TSMC, Micron and Intel. The immersion cooling new business is progressing through technology validation via collaboration with S-Oil and Sungkyunkwan University, keeping open the possibility of entering the AI data-center cooling market."
+    "ko": "GST는 NVIDIA H200 GPU 서버를 자체 액침냉각장비에 직접 투입해 실제 운영에 들어갔다. 9월에는 에쓰오일·KTNF와 AI 데이터센터용 액침냉각 기술 실증 및 협력 강화를 추진한다고 밝혔고, 앞서 LG유플러스와도 협력해 MWC 2026에서 액침냉각 장비를 선보였다. 이런 레퍼런스 축적은 향후 상용화의 기반이 될 수 있다.",
+    "en": "GST has begun actual operation of NVIDIA H200 GPU servers directly in its own immersion cooling equipment. In September it announced a push to pursue immersion cooling technology validation and cooperation for AI data centers with S-OIL and KTNF, and it had earlier partnered with LG Uplus to showcase immersion cooling equipment at MWC 2026. This growing reference base could form the foundation for future commercialization."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "고객·업황 사이클 민감도",
-    "en": "Sensitivity to Customer and Industry Cycles"
+    "ko": "2분기 실적 둔화",
+    "en": "Q2 Earnings Slowdown"
    },
    "body": {
-    "ko": "매출의 상당 부분이 삼성전자와 마이크론 두 고객사에 집중돼 있어, 이들 고객사의 투자 계획 변화에 실적이 크게 좌우된다. 실제로 2023년에는 매출이 전년 대비 10.8%, 영업이익이 25.3% 감소하는 다운사이클을 겪은 바 있어, 반도체 업황 둔화 국면에서는 유사한 변동성이 재현될 수 있다.",
-    "en": "A significant portion of revenue is concentrated in two customers, Samsung Electronics and Micron, making results highly dependent on changes in their investment plans. In fact, the company experienced a downcycle in 2023 with revenue falling 10.8% and operating profit dropping 25.3% year-on-year, and similar volatility could recur during semiconductor industry downturns."
+    "ko": "2026년 2분기 연결 영업이익은 약 155억원, 순이익은 약 122억원으로 1분기 대비 뚜렷하게 둔화됐다. 영업이익은 전년 동기 대비 약 10.6% 감소했으며, 이는 1분기의 가파른 성장 이후 나타난 조정으로 해석되기도 하지만 성장세가 매 분기 균일하지 않다는 점을 보여준다.",
+    "en": "Q2 2026 consolidated operating profit of about KRW 15.5bn and net income of about KRW 12.2bn slowed notably from Q1. Operating profit fell about 10.6% year-on-year, which some interpret as a correction after Q1's sharp growth, but it also shows that quarter-to-quarter growth has not been uniform."
    }
   },
   {
    "title": {
-    "ko": "매출 성장 정체 구간",
-    "en": "Period of Revenue Growth Stagnation"
+    "ko": "신사업 매출 기여는 아직 이르다",
+    "en": "New Business Revenue Contribution Still Early"
    },
    "body": {
-    "ko": "2025년 연간 매출은 2024년 대비 0.3% 증가에 그쳐 사실상 정체된 모습을 보였다. 2026년 1분기의 강한 반등이 연간 기준으로도 지속될지는 아직 확인되지 않은 상태이며, 분기별 변동성이 큰 만큼 다음 분기 실적을 통한 추세 확인이 필요하다.",
-    "en": "FY2025 annual revenue grew just 0.3% versus 2024, essentially stagnant. Whether the strong Q1 2026 rebound will be sustained on an annual basis remains unconfirmed, and given significant quarterly volatility, trend confirmation through upcoming quarterly results is needed."
+    "ko": "현재 단계에서 데이터센터 액체냉각을 2분기 실적의 주요 성장요인으로 해석하기는 이르며, H200 서버 운영의 목적도 즉각적인 매출확대보다는 냉각성능과 신뢰성을 검증하고 데이터를 확보하는 데 초점이 맞춰져 있다. 상업화 시점은 회사 스스로도 2027년을 목표로 제시하고 있어, 단기간에 매출로 연결되기는 어려운 구조다.",
+    "en": "It is still too early to view data-center liquid cooling as a major growth driver behind Q2 results, and the purpose of operating the H200 server is focused on verifying cooling performance and reliability and gathering data rather than immediate revenue expansion. The company itself has set 2027 as its commercialization target, meaning near-term revenue conversion remains limited."
    }
   },
   {
    "title": {
-    "ko": "신사업 상용화 지연 가능성",
-    "en": "Possible Delay in New Business Commercialization"
+    "ko": "중국 매출 비중 축소",
+    "en": "Shrinking China Revenue Exposure"
    },
    "body": {
-    "ko": "액침냉각, CO2·전기식 칠러 등 신사업 대부분이 아직 데모·PoC·실증 단계에 머물러 있어, 실제 양산 매출로 이어지기까지 상당한 시간이 소요될 수 있다. 에쓰오일·성균관대와의 실증도 2029년 5월까지 진행되는 장기 프로젝트로, 단기간 내 매출 기여를 기대하기는 어려운 구조다.",
-    "en": "Most new businesses such as immersion cooling and CO2/electric chillers remain at demo, PoC or validation stages, meaning it could take considerable time before translating into actual mass-production revenue. The validation project with S-Oil and Sungkyunkwan University is also a long-term initiative running through May 2029, making near-term revenue contribution difficult to expect."
+    "ko": "중국 대상 매출액은 중국 반도체 장비 국산화 영향으로 이미 상당폭 감소한 수준으로 파악된다. 이는 과거 성장축 중 하나였던 중국 고객사 대상 매출이 구조적으로 축소되고 있음을 시사하며, 삼성전자·마이크론·SK하이닉스 등 소수 고객으로의 의존도가 커지는 배경이 된다.",
+    "en": "China-bound revenue is assessed to have already declined substantially due to China's semiconductor equipment localization. This suggests a structural shrinkage in revenue from what was once a growth pillar, increasing reliance on a small number of customers such as Samsung Electronics, Micron, and SK hynix."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "업황·사이클 리스크",
-    "en": "Industry Cycle Risk"
+    "ko": "고객 집중도",
+    "en": "Customer Concentration"
    },
    "body": {
-    "ko": "스크러버·칠러는 반도체 팹 신증설 및 라인 전환에 연동되는 자본재 성격이 강해, 고객사의 CAPEX 계획이 지연되거나 축소될 경우 수주와 매출에 직접적인 영향을 받는다. 과거 2023년 다운사이클에서 실제로 매출과 이익이 큰 폭으로 감소한 사례가 있다.",
-    "en": "As scrubbers and chillers are capital goods closely tied to fab expansions and line conversions, delays or reductions in customer capex plans directly affect orders and revenue. The 2023 downcycle previously saw a substantial decline in both revenue and profit."
+    "ko": "매출이 삼성전자, 마이크론 등 소수의 대형 반도체 제조사에 집중돼 있어 특정 고객사의 투자 일정 변경이나 발주 지연이 실적에 직접적인 영향을 줄 수 있다. 마이크론 매출 비중이 크게 증가한 것처럼 고객사별 비중 변화도 매 분기 실적 변동성을 키우는 요인이다.",
+    "en": "Revenue is concentrated among a small number of large chipmakers such as Samsung Electronics and Micron, so changes in a given customer's investment schedule or order timing can directly affect results. Shifts in customer mix, such as Micron's revenue share increasing significantly, also add quarter-to-quarter volatility."
    }
   },
   {
    "cat": {
-    "ko": "고객·지역 집중 리스크",
-    "en": "Customer and Regional Concentration Risk"
+    "ko": "반도체 캐펙스 사이클",
+    "en": "Semiconductor Capex Cycle"
    },
    "body": {
-    "ko": "매출이 삼성전자와 마이크론 등 소수 대형 고객사에 편중돼 있으며, 중국 고객사 비중은 경쟁 심화 등으로 최근 감소하는 추세로 파악된다. 특정 고객사·지역에 대한 의존도가 높은 구조는 지정학적 이슈나 수출 규제 변화에 따른 리스크에 노출될 수 있다.",
-    "en": "Revenue is concentrated among a small number of large customers such as Samsung Electronics and Micron, and the share from Chinese customers is reportedly declining recently amid intensifying competition. Such heavy dependence on specific customers or regions exposes the company to risks from geopolitical issues or changes in export regulations."
+    "ko": "현재는 2026년 세계 반도체 시장이 전년 대비 54.8% 성장할 것으로 전망되는 확장기이지만, 캐펙스 사이클 특성상 투자 확대 이후 조정기가 도래할 경우 스크러버·칠러 수요도 함께 둔화될 수 있다. 이미 2023년 매출·이익이 전년 대비 크게 축소된 경험이 이런 사이클 리스크를 보여준다.",
+    "en": "The market is currently in an expansion phase, with the global semiconductor market projected to grow 54.8% year-on-year in 2026, but given the cyclical nature of capex, a future downturn following this expansion could also slow scrubber and chiller demand. The sharp decline in revenue and profit in 2023 versus the prior year illustrates this cycle risk."
    }
   },
   {
    "cat": {
-    "ko": "신사업 경쟁·상용화 리스크",
-    "en": "New Business Competition and Commercialization Risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New-Business Execution Risk"
    },
    "body": {
-    "ko": "액침냉각·전기식 칠러 시장에는 다양한 냉각 솔루션 업체들이 진입을 시도하고 있어 경쟁이 심화될 가능성이 있으며, 데모·PoC 단계에서 양산 전환까지 이어지지 못할 리스크도 배제할 수 없다. 신사업 투자에 따른 비용 부담이 단기적으로 수익성에 영향을 줄 수도 있다.",
-    "en": "Various cooling-solution providers are attempting to enter the immersion cooling and electric chiller markets, raising the possibility of intensifying competition, and there is a risk that demo or PoC stages may not successfully transition into mass production. Costs associated with new business investment could also affect near-term profitability."
+    "ko": "데이터센터 냉각사업은 아직 매출기여보다는 기술검증과 레퍼런스 확보단계라는 점에서, 실서버 운전시간, 적용 IT부하, 냉각전력 절감효과, 장기 신뢰성, 고객사 실증 및 첫 상용수주가 사업의 성패를 판단할 핵심지표가 될 전망이다. 실증 결과가 기대에 못 미치거나 경쟁사 대비 기술 검증이 지연될 경우 상업화 일정이 늦춰질 수 있다.",
+    "en": "Since the data-center cooling business is still at the technology-verification and reference-building stage rather than the revenue-contribution stage, actual server operating hours, applied IT load, cooling power savings, long-term reliability, and customer trials and first commercial orders are expected to be the key indicators determining the business's success. If trial results fall short of expectations or technology validation lags peers, the commercialization timeline could be pushed back."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 10월 말경",
-    "en": "Around late October 2026"
+    "ko": "2026년 11월",
+    "en": "November 2026"
    },
    "what": {
-    "ko": "2026년 3분기 잠정실적 공시를 통해 1분기의 강한 반등 흐름이 이어지는지, SK하이닉스향 매출 확대가 실제로 반영되는지 확인이 필요하다.",
-    "en": "Q3 2026 preliminary earnings disclosure will help confirm whether the strong Q1 rebound continued and whether expanded SK hynix sales are actually reflected in results."
+    "ko": "데이터센터 전시회에서 신규 개발한 직접수냉식(DLC) 장비 공개가 예정돼 있어, 신사업 진행 상황과 함께 3분기 실적 발표 시기의 본업 수주 동향도 확인할 시점이다.",
+    "en": "GST is scheduled to unveil its newly developed DLC equipment at a data-center exhibition, making this a point to check both new-business progress and core-business order trends around the Q3 earnings release."
    }
   },
   {
    "when": {
-    "ko": "2026년 중순~연말",
-    "en": "Mid-to-late 2026"
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "TSMC 대상 칠러 데모 종료 결과와 이에 따른 양산 주문 수주 여부를 확인해야 한다.",
-    "en": "The outcome of the TSMC chiller demo and whether it leads to a mass-production order should be monitored."
+    "ko": "TSMC 대상 전기식 칠러 데모 진행 상황과 수주 여부를 확인할 필요가 있다. 공급이 본격화되면 실적 추정치가 추가로 상향될 가능성이 있다는 분석이 나온 바 있다.",
+    "en": "It is worth tracking the progress and any award decision on the electric chiller demo for TSMC, as analysts have noted that scaled-up supply could lead to further upward revisions in earnings estimates."
    }
   },
   {
    "when": {
-    "ko": "2026년 2~3분기",
-    "en": "Q2-Q3 2026"
+    "ko": "2026년 4분기~2027년",
+    "en": "Q4 2026 through 2027"
    },
    "what": {
-    "ko": "마이크론 대상 CO2 칠러 데모 및 인텔 대상 전기식 칠러·스크러버 데모 진행 상황과 결과를 점검할 필요가 있다.",
-    "en": "Progress and outcomes of the CO2 chiller demo with Micron and the electric chiller/scrubber demo discussions with Intel warrant tracking."
+    "ko": "에쓰오일·KTNF와 진행 중인 액침냉각 실증 결과와 상용 수주 전환 여부를 점검할 시점이다.",
+    "en": "This is the window to check the outcome of the immersion cooling trial with S-OIL and KTNF and whether it converts into commercial orders."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 이후",
-    "en": "From H2 2026 onward"
+    "ko": "2027년",
+    "en": "2027"
    },
    "what": {
-    "ko": "에쓰오일·성균관대와의 액침냉각 공동실증 중간 결과나 추가 협력 발표 여부를 확인해 신사업 상용화 진척도를 가늠할 수 있다.",
-    "en": "Checking interim results or additional collaboration announcements from the immersion cooling joint validation with S-Oil and Sungkyunkwan University can gauge progress toward new-business commercialization."
-   }
-  },
-  {
-   "when": {
-    "ko": "수시(공시 기준)",
-    "en": "Ongoing (per disclosures)"
-   },
-   "what": {
-    "ko": "삼성전자 P4 Phase2·4 D램 라인 투자 집행 시점과 관련 발주 소식을 확인해 향후 매출 가시성을 점검해야 한다.",
-    "en": "The timing of Samsung Electronics' P4 Phase 2 and 4 DRAM line capex execution and related order news should be checked to assess future revenue visibility."
+    "ko": "회사가 제시한 액침냉각 상업매출 가시화 목표 시점의 실현 여부를 확인해야 한다.",
+    "en": "The realization of the company's stated goal of making immersion cooling commercial revenue visible starting in this year should be checked."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "GST는 2025년 매출·이익이 전년과 유사한 수준에서 정체됐으나, 2026년 1분기 들어 매출과 이익 모두 전년 동기 대비 큰 폭으로 개선되며 반도체 CAPEX 재개 국면의 수혜 조짐을 보이고 있다. 스크러버·칠러라는 필수 공정장비를 기반으로 삼성전자·마이크론에 대한 의존도가 높은 가운데 SK하이닉스로 고객군을 넓혀가고 있으며, TSMC·인텔 등 해외 대형 고객사와의 데모도 다수 진행 중이다. 다만 매출의 상당 부분이 소수 고객사와 반도체 설비투자 사이클에 연동돼 있어, 2023년과 같은 다운사이클이 재현될 가능성도 배제할 수 없다. 액침냉각·CO2 칠러 등 신사업은 데이터센터 냉각 시장의 성장성과 맞물려 있으나 대부분 데모·PoC·실증 단계에 머물러 있어 매출 기여 시점은 불확실하다. 재무구조는 부채비율 20%대 중반으로 안정적이며 영업활동현금흐름도 꾸준히 창출되고 있다. 투자자는 향후 분기 실적을 통해 2026년 1분기의 반등이 추세적인지, 그리고 신규 고객·신사업 파이프라인이 실제 매출로 전환되는 속도를 함께 확인해 나가는 것이 유용할 것으로 보인다.",
-   "en": "GST's revenue and profit were essentially flat in 2025 versus the prior year, but Q1 2026 showed a marked year-on-year improvement in both metrics, signaling potential benefits from a renewed semiconductor capex cycle. Built on essential process equipment such as scrubbers and chillers, the company remains heavily reliant on Samsung Electronics and Micron while expanding its customer base to include SK hynix, and multiple demos are underway with large overseas customers including TSMC and Intel. However, with a substantial portion of revenue tied to a small number of customers and the semiconductor capex cycle, a repeat of a downcycle similar to 2023 cannot be ruled out. New businesses such as immersion cooling and CO2 chillers align with growth in the data-center cooling market, but most remain at demo, PoC or validation stages, leaving the timing of revenue contribution uncertain. The balance sheet remains stable with a debt ratio in the mid-20% range and consistent operating cash flow generation. It would be useful for investors to track upcoming quarterly results to confirm whether the Q1 2026 rebound is trend-forming and to monitor the pace at which new customer and new business pipelines convert into actual revenue."
+   "ko": "GST는 2024~2025년 매출·영업이익이 비슷한 규모에서 안정화되고 영업이익률이 17% 안팎에서 유지되는 등 반도체 스크러버·칠러 본업의 수익 구조가 견고하게 자리잡은 모습이다. 2026년 1분기는 최근 분기 중 최고 실적을 냈지만 2분기에는 매출·영업이익이 동반 둔화돼, 성장이 매 분기 일정한 속도로 이어지지는 않고 있다. 삼성전자·마이크론 중심 고객구조에 SK하이닉스가 추가되고 TSMC향 전기식 칠러 논의가 진행되는 등 고객 다변화는 진행형이며, IBK투자증권 등은 2026년 사상 최대 실적 가능성을 추정치로 제시하고 있으나 이는 아직 확정되지 않은 잠정치다. 액침냉각·DLC 등 데이터센터 냉각 신사업은 NVIDIA H200 실증, S-OIL·KTNF 협력, LG유플러스와의 전시 등으로 레퍼런스를 쌓아가는 단계지만, 회사 스스로도 상업매출 가시화 시점을 2027년으로 제시하고 있어 당장의 매출 기여보다는 검증 단계에 머물러 있다. 고객 집중도, 반도체 캐펙스 사이클, 신사업 실행 지연 등은 여전히 지켜봐야 할 변수다. 이 보고서는 투자 판단을 위한 정보 제공을 목적으로 하며 매수·매도 의견이나 목표주가를 포함하지 않는다.",
+   "en": "GST's semiconductor scrubber and chiller core business appears to rest on a solid earnings structure, with revenue and operating profit stabilizing at similar scales in 2024-2025 and the operating margin holding around 17%. Q1 2026 delivered the strongest results within the recent quarters, but Q2 saw both revenue and operating profit slow together, indicating growth has not proceeded at a uniform pace every quarter. Customer diversification is ongoing, with SK hynix added to a customer base centered on Samsung Electronics and Micron and discussions continuing on electric chiller supply to TSMC; IBK Securities and others have put forward estimates pointing to a potential record year in 2026, though these remain unconfirmed preliminary figures. The new data-center cooling business, including immersion cooling and DLC, is at the stage of building reference cases through NVIDIA H200 trials, cooperation with S-OIL and KTNF, and exhibitions with LG Uplus, but the company itself has set 2027 as the target for making commercial revenue visible, meaning it remains in a validation phase rather than a near-term revenue contributor. Customer concentration, the semiconductor capex cycle, and potential delays in new-business execution remain variables to watch. This report is provided for informational purposes and does not include a buy or sell opinion or a target price."
   }
  },
  "sources": [
   "https://www.imfnsec.com/upload/R_E08/2026/04/[13073710]_083450.pdf",
   "https://alphasquare.co.kr/home/stock-summary?code=083450",
-  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=895182&gn=1",
-  "https://kr.investing.com/equities/global-standard-technology-co-ltd-earnings",
+  "https://moneyrecipe.blog/gst-2026-q1-export-analysis-samsung-taylor/",
   "https://m.thinkpool.com/compDiscuss/cont/1013956",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A083450",
-  "https://m.irgo.co.kr/IR-COMP/083450/GST-IR-PAGE",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=083450",
-  "https://m.finance.daum.net/quotes/A083450/home",
-  "https://m.thinkpool.com/stockDiscuss/083450/cont/11751628",
-  "https://file.alphasquare.co.kr/media/pdfs/company-report/_10072630-083450.pdf",
-  "http://www.hanuribiz.com/news/articleView.html?idxno=31481",
-  "https://www.myasset.com/sitemanager/upload/2025/0416/070008/20250416070008243_0_ko.pdf",
-  "http://www.bondweb.co.kr/Data/20264/13/menu01/ratingMR_895182.pdf",
-  "https://www.hanaw.com/download/research/FileServer/WEB/industry/industry/2022/01/23/Semi_Scrubber_220124.pdf",
-  "https://littlebproject.com/stock/083450/97/52417",
-  "https://www.tossinvest.com/stocks/A083450/order",
-  "https://littlebproject.com/stock/083450/369/67513"
+  "https://file.alphasquare.co.kr/media/pdfs/company-report/260223_GST.pdf",
+  "https://www.kharn.kr/news/article.html?no=31596",
+  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=895182&gn=1",
+  "https://m.thinkpool.com/compDiscuss/cont/1023005",
+  "https://keyzard.cc/views/nb/Myo8NCZyPD4rZWVtbWtsZm5sb2dma2g",
+  "https://littlebproject.com/stock/083450/369/67513",
+  "https://littlebproject.com/stock/083450/6/62529",
+  "https://littlebproject.com/stock/083450/369/62987",
+  "https://littlebproject.com/stock/083450/430/56433",
+  "https://littlebproject.com/stock/083450/26/247",
+  "https://alphadistill.com/report/539",
+  "https://kr.investing.com/equities/global-standard-technology-co-ltd-earnings",
+  "https://littlebproject.com/stock/083450/299/38384",
+  "https://m.irgo.co.kr/IR-COMP/083450/GST-IR-PAGE"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -233,11 +223,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-15",
- "reportTs": "2026-08-15 18:20",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 05:36",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -248,6 +238,7 @@
     "np_owner": 45278323421,
     "equity": 304655503580,
     "equity_owner": 301182265859,
+    "equity_nci": 3473237721,
     "liab": 81655482807,
     "cfo": 41591693861,
     "eps_basic": 2533,
@@ -263,6 +254,7 @@
     "np_owner": 45371563112,
     "equity": 268293551495,
     "equity_owner": 259509728033,
+    "equity_nci": 8783823462,
     "liab": 66534901575,
     "cfo": 54407810220,
     "eps_basic": 2479,
@@ -278,6 +270,7 @@
     "np_owner": 35681571148,
     "equity": 233100798715,
     "equity_owner": 225489887384,
+    "equity_nci": 7610911331,
     "liab": 46679663926,
     "cfo": 47445747808,
     "eps_basic": 3960,
@@ -293,6 +286,7 @@
     "np_owner": 46807994109,
     "equity": 201348272807,
     "equity_owner": 194937316934,
+    "equity_nci": 6410955873,
     "liab": 50483188213,
     "cfo": 31483896813,
     "eps_basic": 5243,
@@ -334,23 +328,26 @@
    }
   ],
   "valuation": {
-   "price": 43250,
-   "mcap": 0.7971,
+   "price": 43000,
+   "mcap": 0.7925,
    "shares": 18430000,
    "total_shares": 18430000,
    "wavg_shares": 17961490,
-   "per": 13.9,
+   "per": 13.853,
    "eps": 3104,
-   "pbr": 2.41,
+   "pbr": 2.3942,
    "bps": 17960,
    "roe_ttm": 18.7,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 55636308941,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
    "pbr_krx": 2.55,
    "bps_krx": 16838.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 650.0,
-   "div": 1.5
+   "div": 1.51
   }
  }
 }

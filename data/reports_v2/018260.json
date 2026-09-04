@@ -1,147 +1,147 @@
 {
  "title": {
-  "ko": "AI 인프라 전환기, 일회성 비용과 클라우드 성장의 교차",
-  "en": "AI Infrastructure Pivot: One-Off Costs Meet Cloud Growth"
+  "ko": "AI 인프라 투자와 이익률 사이",
+  "en": "AI Infrastructure Buildout Versus Margins"
  },
  "lead": {
-  "ko": "클라우드가 IT서비스 내 최대 매출원으로 올라선 가운데, 2026년 1분기 일회성 퇴직급여 비용과 물류 부진이 이익 흐름을 흔들면서 대규모 AI 인프라 투자와 수익성 회복 속도가 동시에 검증받는 국면이다.",
-  "en": "Cloud has become the largest revenue line within IT services, but a one-off retirement benefit charge and weak logistics in Q1 2026 disrupted the earnings trend, putting the company's large-scale AI infrastructure spending and the pace of margin recovery under simultaneous scrutiny."
+  "ko": "삼성에스디에스는 클라우드·AI 인프라로 성장축을 옮기며 2026년 2분기 매출을 분기 기준 최고 수준으로 끌어올렸지만, 대규모 선행 투자와 경쟁 심화로 영업이익률은 6% 초반에 머물러 외형 성장과 수익성의 균형이 핵심 쟁점으로 남아 있다.",
+  "en": "Samsung SDS has shifted its growth axis toward cloud and AI infrastructure, lifting second-quarter 2026 revenue to a record quarterly level, yet heavy upfront investment and tougher competition kept the operating margin in the low 6% range, leaving the balance between top-line growth and profitability as the central issue."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 13조9,299억원, 영업이익 9,571억원(영업이익률 6.9%)으로 외형은 정체, 마진은 소폭 개선됐다.",
-   "en": "In 2025 consolidated revenue was KRW 13.93tn with operating profit of KRW 957.1bn (6.9% margin): flat top line, slightly better margin."
+   "ko": "2026년 2분기 매출 3조7,178억원, 영업이익 2,318억원으로 매출은 분기 기준 최고 수준을 기록했으나 영업이익 증가폭은 제한적이었다.",
+   "en": "Second-quarter 2026 revenue reached KRW 3.7178 trillion with operating profit of KRW 231.8 billion, a record quarterly top line but only a marginal profit increase."
   },
   {
-   "ko": "2026년 1분기 영업이익은 783억원으로 전 분기(2,261억원) 대비 급감했는데, 회사는 퇴직금 산정 기준 변경에 따른 퇴직급여비용 1,120억원을 일시 반영한 영향이라고 설명했다.",
-   "en": "Q1 2026 operating profit fell to KRW 78.3bn from KRW 226.1bn in the prior quarter; the company attributed this to a one-time KRW 112.0bn retirement benefit provision from a change in severance calculation rules."
+   "ko": "2026년 1분기 영업이익이 783억원으로 급감했다가 2분기에 2,300억원대로 돌아온 점은 1분기 이익 훼손이 일회성 성격이었음을 시사한다.",
+   "en": "Operating profit collapsed to KRW 78.3 billion in the first quarter of 2026 before returning to the KRW 230 billion range in the second, suggesting the first-quarter hit was one-off in nature."
   },
   {
-   "ko": "클라우드 매출이 IT아웃소싱을 넘어 IT서비스 부문 내 최대 비중이 됐고, 2026년 2분기에는 대외 클라우드 매출이 전년 동기 대비 75% 증가했다.",
-   "en": "Cloud revenue overtook IT outsourcing as the largest line within IT services, and in Q2 2026 external (non-affiliate) cloud revenue jumped 75% year on year."
+   "ko": "회사는 현재 110메가와트 수준의 AI 인프라를 2029년 230메가와트, 2031년 800메가와트 이상으로 확대하겠다는 로드맵을 2분기 실적발표에서 공개했다.",
+   "en": "At its second-quarter briefing the company disclosed a roadmap to expand AI infrastructure from about 110 megawatts today to 230 megawatts by 2029 and over 800 megawatts by 2031."
   },
   {
-   "ko": "회사는 2031년까지 AI 인프라·플랫폼·인수합병에 총 10조원 투자 계획을 제시했고, KKR 대상 1.2조원 전환사채로 재원을 일부 확보했다.",
-   "en": "Management laid out a KRW 10tn investment plan through 2031 across AI infrastructure, platforms and M&A, partly funded by a KRW 1.2tn convertible bond issued to KKR."
+   "ko": "클라우드가 성장을 끌고 물류가 사이클에 흔들리는 구조로, 연결 매출은 2023년 이후 13조원대에서 정체돼 있다.",
+   "en": "Cloud drives growth while logistics swings with the freight cycle; consolidated revenue has been stuck in the KRW 13 trillion range since 2023."
   },
   {
-   "ko": "물류 부문은 운임·물동량에 따라 변동성이 크고, 데이터센터 감가상각과 인건비 등 고정비 부담이 마진 방향성의 핵심 변수다.",
-   "en": "Logistics remains volatile with freight rates and volumes, while data center depreciation and labor costs are the key swing factors for margins."
+   "ko": "국가 AI 컴퓨팅센터 착공, 두나무 지분 취득 등 신사업 축이 늘어난 만큼 투자 회수 속도와 감가상각 부담이 동시에 관찰 대상이다.",
+   "en": "With new pillars such as the National AI Computing Center groundbreaking and the Dunamu stake purchase, both the pace of investment recovery and rising depreciation deserve close monitoring."
   }
  ],
  "business": {
-  "ko": "삼성에스디에스의 사업은 크게 IT서비스와 물류로 나뉜다. 물류 부문은 견적·예약·선적·정산을 단일 플랫폼에서 제공하는 디지털 물류 서비스가 골자이며, IT서비스 부문은 2020년 5조3,144억원에서 2025년 6조5,434억원까지 5년 연속 성장해 물류와 달리 우상향 흐름을 유지했다. IT서비스 내부에서는 클라우드가 가장 빠르게 커지고 있다. 2025년 클라우드 매출은 2조6,802억원으로 IT서비스 매출의 41%를 차지했고, 회사는 2026년을 'AI 플랫폼 전환 원년'으로 규정하며 AI 관련 매출을 전년 대비 2배 이상 늘리겠다는 목표를 제시했다. 2026년 1분기 IT서비스 매출은 1조6,105억원, 그중 클라우드 매출은 6,909억원으로 IT아웃소싱 매출을 넘어서며 부문 내 최대 비중을 차지했다. 2026년 2분기에는 IT서비스 매출 1조7,625억원, 클라우드 매출 7,794억원을 기록했고 삼성 클라우드 플랫폼 수요와 공공·민간 GPUaaS 확대로 클라우드 서비스 제공 사업이 24%, 금융권 AI 전환과 조선업 전사적자원관리 구축으로 관리서비스 사업이 17% 성장했다. 같은 분기 물류 매출은 1조9,553억원으로 항공 포워딩과 계약물류, 디지털 물류 플랫폼 첼로스퀘어의 대외 확대에 힘입어 6.6% 증가했다. 고객 구조는 삼성 계열사 기반의 안정적 매출과 확대 중인 대외 고객이 병존하는 형태다. 시장조사기관 IDC 기준 2024년 국내 서비스형 인프라 시장에서 점유율 15.3%로 AWS(52.6%)에 이은 2위 사업자이며 네이버, KT, 마이크로소프트와는 격차를 두고 있다. 국내 경쟁 구도에서는 LG CNS가 2026년 상반기 매출 2조8,358억원, 영업이익 2,221억원에 AI·클라우드 매출 비중 59%를 제시하는 등 대형 IT서비스 업체 간 AI 수익화 경쟁이 본격화되고 있다.",
-  "en": "Samsung SDS operates in two main segments: IT services and logistics. Logistics centers on a digital platform covering quotation, booking, shipping and settlement, while IT services grew for five straight years from KRW 5.31tn in 2020 to KRW 6.54tn in 2025, unlike the swing-prone logistics unit. Within IT services, cloud is the fastest-growing line. Cloud revenue reached KRW 2.68tn in 2025, or 41% of IT services revenue, and the company framed 2026 as the first year of its shift to an AI platform business, targeting more than a doubling of AI-related revenue. In Q1 2026, IT services revenue was KRW 1,610.5bn, of which cloud was KRW 690.9bn, surpassing IT outsourcing to become the largest line in the segment. In Q2 2026, IT services revenue was KRW 1,762.5bn and cloud KRW 779.4bn, with the cloud service provider business up 24% on Samsung Cloud Platform demand and public/private GPUaaS expansion, and managed services up 17% on financial-sector AI transformation and shipbuilding ERP projects. Logistics revenue in the same quarter was KRW 1,955.3bn, up 6.6%, helped by air forwarding, contract logistics and external expansion of the Cello Square platform. The customer base combines steady affiliate demand with a growing external client pool. According to IDC, the company held 15.3% of Korea's infrastructure-as-a-service market in 2024, ranking second behind AWS at 52.6% and ahead of Naver, KT and Microsoft. Competitively, LG CNS posted first-half 2026 revenue of KRW 2,835.8bn and operating profit of KRW 222.1bn with AI and cloud at 59% of sales, underscoring intensifying monetization competition among large IT service firms."
+  "ko": "삼성에스디에스의 사업은 IT서비스와 물류 두 축으로 나뉜다. 물류신문 2026년 1월 보도에 따르면 2025년 IT서비스 부문 매출은 전년 대비 2.2% 증가한 6조5,435억원, 물류 부문은 0.5% 감소한 7조3,864억원이었고, 물류 부문 영업이익은 6.2% 줄어든 1,300억원으로 집계됐다. 같은 자료에서 클라우드 매출은 15.4% 늘어난 2조6,802억원으로 IT서비스 성장을 견인한 것으로 나타났다. 클라우드는 자체 데이터센터와 삼성 클라우드 플랫폼(SCP)을 기반으로 인프라를 직접 제공하는 CSP와, 고객의 클라우드 전환·운영을 대행하는 MSP로 나뉜다. 2026년 2분기에는 IT서비스 매출이 1조7,625억원으로 5% 증가했고 클라우드 매출은 7,794억원으로 17% 늘었으며, 삼성 계열사 외 대외 클라우드 매출이 75% 증가했다고 회사가 밝혔다. 물류는 디지털 포워딩 플랫폼 첼로스퀘어를 축으로 항공 포워딩과 내륙·창고 중심의 계약물류를 확대하고 있으며, 2026년 2분기 물류 매출은 1조9,553억원으로 6.6% 증가했다. 매출 기반은 삼성전자를 비롯한 그룹 계열사 물량이 크지만, 금융·공공·제조 대외 고객 확대가 최근 몇 년의 일관된 방향이다. 경쟁 구도는 국내 인프라형 클라우드에서 글로벌 사업자와 맞서는 형태로, 시장조사기관 IDC 기준 2024년 국내 서비스형 인프라 점유율은 아마존웹서비스 52.6%에 이어 삼성에스디에스가 15.3%로 2위였다고 더벨이 2026년 4월 보도했다. 시스템 통합·운영 영역에서는 국내 대형 IT서비스 기업들과, 기업용 AI 영역에서는 글로벌 소프트웨어 기업들과 경쟁한다.",
+  "en": "Samsung SDS operates along two axes: IT services and logistics. According to a January 2026 report by Korea Logistics News, 2025 IT services revenue rose 2.2% to KRW 6.5435 trillion while logistics fell 0.5% to KRW 7.3864 trillion, with logistics operating profit down 6.2% to KRW 130 billion. The same report showed cloud revenue up 15.4% to KRW 2.6802 trillion, leading IT services growth. The cloud business splits into a CSP arm that supplies infrastructure directly through in-house data centers and the Samsung Cloud Platform, and an MSP arm that migrates and operates client environments. In the second quarter of 2026 the company said IT services revenue rose 5% to KRW 1.7625 trillion and cloud revenue rose 17% to KRW 779.4 billion, with cloud revenue from non-Samsung-affiliate customers up 75%. Logistics is centered on the Cello Square digital forwarding platform, with expansion in air forwarding and inland and warehouse contract logistics; second-quarter 2026 logistics revenue rose 6.6% to KRW 1.9553 trillion. Group affiliates including Samsung Electronics remain a large revenue base, but broadening into financial, public-sector and manufacturing clients outside the group has been the consistent direction in recent years. In domestic infrastructure cloud the company competes with global providers: The Bell reported in April 2026 that, per IDC, Samsung SDS held a 15.3% share of Korea's infrastructure-as-a-service market in 2024, second to Amazon Web Services at 52.6%. It also competes with large domestic IT services firms in systems integration and with global software vendors in enterprise AI."
  },
  "earnings": {
-  "ko": "확정 실적 기준으로 2025년 연결 매출은 13조9,299억원, 영업이익 9,571억원, 지배주주 순이익 7,595억원이었다. 2024년 매출 13조8,282억원·영업이익 9,111억원 대비 외형은 사실상 정체였으나 영업이익률은 6.6%에서 6.9%로 개선됐고, 2023년(매출 13조2,768억원·영업이익 8,082억원, 영업이익률 6.1%)과 비교하면 2년 연속 마진이 올라온 흐름이다. 반면 2022년 매출 17조2,347억원은 물류 운임 급등기의 정점으로, 당시 영업이익률은 5.3%에 그쳤다는 점에서 매출 규모와 수익성의 방향이 반드시 일치하지 않음을 보여준다. 2025년 영업활동현금흐름은 1조2,033억원, 부채비율은 31.1%(2024년 36.4%)로 재무구조는 보수적이며, 2025년 기본주당순이익은 9,819원이었다. 분기 흐름을 보면 2025년 1분기 영업이익 2,685억원 이후 2분기 2,302억원, 3분기 2,323억원, 4분기 2,261억원으로 2,300억원 안팎의 박스권을 유지했다. 그러나 2026년 1분기에는 매출 3조3,529억원, 영업이익 783억원, 지배주주 순이익 918억원으로 이익이 급격히 축소됐다. 회사는 매출이 전년 동기 대비 3.9% 감소했고, 퇴직금 산정 기준 변경에 따른 퇴직급여비용 1,120억원을 일시 반영해 영업이익이 70.8% 줄었다고 설명했다. 이 충당금은 2026년 초 대법원이 목표 인센티브를 평균임금에 포함해야 한다고 판결한 데 따른 삼성 계열 전반의 기준 변경에서 비롯됐으며, 같은 분기 물류 부문 영업이익은 153억원으로 전년 동기 대비 64.1% 감소했다. 이후 회사는 2026년 2분기 매출 3조7,178억원, 영업이익 2,318억원으로 각각 전년 동기 대비 5.9%, 0.7% 증가한 잠정 실적을 공시했다.",
-  "en": "On confirmed figures, 2025 consolidated revenue was KRW 13,929.9bn, operating profit KRW 957.1bn and net profit attributable to owners KRW 759.5bn. Versus 2024 revenue of KRW 13,828.2bn and operating profit of KRW 911.1bn, the top line was essentially flat while the operating margin improved from 6.6% to 6.9%; compared with 2023 (revenue KRW 13,276.8bn, operating profit KRW 808.2bn, 6.1% margin), that marks two consecutive years of margin gains. By contrast, 2022 revenue of KRW 17,234.7bn was the peak of the freight-rate surge, yet the operating margin was only 5.3%, showing that scale and profitability do not always move together. Operating cash flow in 2025 was KRW 1,203.3bn and the debt-to-equity ratio 31.1% (36.4% in 2024), indicating a conservative balance sheet, with 2025 basic earnings per share of KRW 9,819. Quarterly, operating profit ran in a narrow band around KRW 230bn: KRW 268.5bn in Q1 2025, KRW 230.2bn in Q2, KRW 232.3bn in Q3 and KRW 226.1bn in Q4. In Q1 2026, however, revenue was KRW 3,352.9bn with operating profit of just KRW 78.3bn and net profit attributable to owners of KRW 92.4bn. The company said revenue fell 3.9% year on year and operating profit dropped 70.8% because it booked a KRW 112.0bn retirement benefit provision at once following a change in severance calculation rules. That provision stemmed from a group-wide change after an early-2026 Supreme Court ruling requiring target incentives to be included in average wages, and logistics operating profit in the same quarter fell 64.1% year on year to KRW 15.3bn. The company subsequently reported preliminary Q2 2026 revenue of KRW 3,717.8bn and operating profit of KRW 231.8bn, up 5.9% and 0.7% year on year respectively."
+  "ko": "연간 실적을 보면 2022년 매출 17조2,347억원에서 2023년 13조2,768억원으로 급감한 뒤 2024년 13조8,282억원, 2025년 13조9,299억원으로 13조원대에 머물러 있다. 매출이 줄어드는 동안에도 영업이익은 2022년 9,161억원, 2023년 8,082억원, 2024년 9,111억원, 2025년 9,571억원으로 회복돼 영업이익률은 5.3%에서 6.9%로 높아졌다. 이는 저마진 물류 운임 특수가 사라진 자리를 상대적으로 마진이 높은 IT서비스·클라우드가 메워온 구조를 보여준다. 지배주주 순이익은 2022년 1조997억원에서 2023년 6,934억원으로 낮아진 뒤 2024년 7,570억원, 2025년 7,595억원으로 완만히 회복했다. 분기 흐름은 2025년 2분기 영업이익 2,302억원, 3분기 2,323억원, 4분기 2,261억원으로 안정적이었으나 2026년 1분기 783억원으로 급감했고, 2026년 2분기 2,318억원으로 되돌아왔다. 1분기는 매출이 3조3,529억원으로 크게 흔들리지 않았는데 이익만 무너진 형태여서 일회성 비용 성격의 요인이 작용한 것으로 해석되며, 구체적 내역은 회사 공시와 컨퍼런스콜 자료로 확인할 필요가 있다. 2026년 2분기 매출은 3조7,178억원으로 분기 기준 최고 수준이었지만 영업이익률은 6.2% 수준에 그쳐, 회사는 대외 신규사업 확대 투자와 경쟁 심화를 배경으로 설명했다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 매출은 약 14조원, 영업이익은 약 7,685억원으로 합산 영업이익률은 5.5% 수준인데, 여기에는 2026년 1분기의 이익 급감이 포함돼 있다. 재무구조는 2025년 말 자본총계 10조2,629억원, 부채총계 3조1,908억원으로 부채비율 31.1%이며 2022년 41.2%에서 낮아졌고, 영업활동현금흐름은 2023년 1조4,608억원, 2024년 1조2,380억원, 2025년 1조2,033억원으로 1조원대를 유지했다.",
+  "en": "On an annual basis, revenue plunged from KRW 17.2347 trillion in 2022 to KRW 13.2768 trillion in 2023 and has since stayed in the KRW 13 trillion range at KRW 13.8282 trillion in 2024 and KRW 13.9299 trillion in 2025. Even as revenue shrank, operating profit recovered from KRW 916.1 billion in 2022 to KRW 808.2 billion in 2023, KRW 911.1 billion in 2024 and KRW 957.1 billion in 2025, lifting the operating margin from 5.3% to 6.9%. That pattern reflects higher-margin IT services and cloud filling the gap left by the disappearance of the low-margin freight-rate windfall. Net profit attributable to owners fell from KRW 1.0997 trillion in 2022 to KRW 693.4 billion in 2023, then recovered gradually to KRW 757.0 billion in 2024 and KRW 759.5 billion in 2025. Quarterly operating profit was steady at KRW 230.2 billion in the second quarter of 2025, KRW 232.3 billion in the third and KRW 226.1 billion in the fourth, before collapsing to KRW 78.3 billion in the first quarter of 2026 and rebounding to KRW 231.8 billion in the second. Because first-quarter revenue held up at KRW 3.3529 trillion while only profit broke down, a one-off cost item appears to have been at work, and the specifics should be checked against company filings and conference-call materials. Second-quarter 2026 revenue of KRW 3.7178 trillion was a record quarterly level, yet the operating margin was only around 6.2%, which the company attributed to investment in new external business and intensifying competition. Over the latest four quarters, from the third quarter of 2025 to the second quarter of 2026, revenue totaled roughly KRW 14 trillion and operating profit about KRW 768.5 billion, an aggregate margin near 5.5%, a figure that includes the first-quarter 2026 profit slump. The balance sheet showed total equity of KRW 10.2629 trillion and total liabilities of KRW 3.1908 trillion at end-2025, a debt-to-equity ratio of 31.1% versus 41.2% in 2022, while operating cash flow stayed above KRW 1 trillion at KRW 1.4608 trillion in 2023, KRW 1.2380 trillion in 2024 and KRW 1.2033 trillion in 2025."
  },
  "industry": {
-  "ko": "전방 수요는 기업의 클라우드 전환과 생성형 인공지능 도입이라는 두 축에서 확장 국면에 있다. 국내에서는 인공지능 수요 급증에 대응한 초대형 데이터센터 구축 경쟁이 진행 중이며, 삼성에스디에스는 전남 해남·경북 구미·경기 동탄 3개 거점을 중심으로 수십 메가와트급 인공지능 데이터센터를 추진하면서 자국 내 인프라를 직접 보유하는 소버린 인공지능 전략을 내세우고 있다. 첫 고성능 컴퓨팅 기반 시설인 동탄 센터는 3년 전 준공된 동관에 이어 2026년 1분기 서관을 가동해 두 동 합산 수전 용량 40메가와트 수준을 확보했다. 회사는 현재 110메가와트 규모의 인공지능 인프라를 2029년 230메가와트로, 2031년에는 데이터센터 설계·구축·운영 사업을 포함해 800메가와트 이상으로 확대할 계획을 제시했다. 이는 사업 구조가 인력 중심 시스템통합에서 자본집약적 인프라 사업으로 이동하고 있음을 뜻하며, 감가상각과 전력비 등 고정비 성격의 원가 비중이 커진다는 의미도 함께 갖는다. 메리츠증권은 2026년 1분기 IT서비스 마진이 일회성 비용을 제외하고도 경쟁 심화에 따른 판가 인하와 인프라비 증가로 10%로 하락했다고 지적했으며, 회사는 2분기에 11%대로 상승할 것으로 전망했다고 전했다. 물류 쪽 사이클은 방향이 다르다. 2026년 1분기에는 계절적 비수기 외에 중동 지정학 이슈에 따른 물동량 감소, 운임 하락, 전년 관세 대응용 조기 선적의 기저효과가 겹쳤다. 결국 업종 내 포지션은 국내 클라우드 인프라 2위 사업자이자 공공·금융 인공지능 전환 프로젝트의 주요 수행사라는 점에 기반하지만, 글로벌 하이퍼스케일러 및 국내 경쟁사와의 가격·역량 경쟁은 상수로 남아 있다.",
-  "en": "End demand is expanding on two fronts: enterprise cloud migration and generative AI adoption. In Korea, hyperscale data center buildouts are racing to meet surging AI demand, and Samsung SDS is developing tens-of-megawatt AI data centers across Haenam, Gumi and Dongtan under a sovereign AI strategy of owning domestic infrastructure directly. Its first high-performance computing site in Dongtan brought a west wing online in Q1 2026 alongside the east wing completed three years earlier, taking combined power capacity to about 40MW. Management plans to expand AI infrastructure from about 110MW today to 230MW by 2029 and, including data center design-build-operate work, to more than 800MW by 2031. This shifts the business model from labor-based system integration toward capital-intensive infrastructure, which also raises the share of fixed costs such as depreciation and power. Meritz Securities noted that even excluding the one-off charge, the Q1 2026 IT services margin slipped to 10% on price cuts from intensifying competition and higher infrastructure costs, adding that the company guided for a recovery into the 11% range in Q2. The logistics cycle points the other way. Q1 2026 combined seasonal softness with lower cargo volumes tied to Middle East geopolitics, falling freight rates and a high base from early shipments made ahead of US tariffs in 2025. Its industry position rests on being Korea's second-largest cloud infrastructure provider and a lead contractor for public and financial-sector AI projects, but price and capability competition with global hyperscalers and domestic rivals remains a constant."
+  "ko": "국내 IT서비스 산업의 무게중심은 전통적인 시스템 통합에서 클라우드와 AI 인프라로 빠르게 이동하고 있다. 정부는 국가 AI 컴퓨팅센터를 'AI 3대 강국' 전략의 핵심 인프라로 추진하고 있으며, 총사업비 2조5,000억원 규모의 이 사업은 2026년 8월 3일 전남 해남에서 착공했다고 과학기술정보통신부와 코아크가 밝혔다. 금융·공공처럼 보안 규제가 강한 영역에서는 퍼블릭 클라우드 대신 맞춤형·프라이빗 구축 수요가 형성되며, 대형 시스템 구축 경험을 가진 국내 사업자에게 기회가 열리는 구조다. 반면 인프라형 클라우드 시장 자체는 글로벌 사업자가 압도적 점유율을 쥐고 있어, 국내 2위 사업자라 해도 절대 규모 격차는 크다. AI 데이터센터는 전력 확보가 실질적 병목이며, 해남 솔라시도 부지의 경우 변전소와 송전망 구축 일정 조정이 논의되는 등 인프라 여건이 사업 속도를 좌우한다. 물류 쪽 업황은 정반대 성격으로, 2025년에는 해상운임 하락과 미국 관세 정책에 따른 물동량 감소가 실적을 눌렀다가 2026년 2분기에는 항공 포워딩과 계약물류 중심으로 회복되는 흐름이 나타났다. 결국 회사의 사이클 위치는 '물류 정상화 + AI 인프라 초기 투자기'가 겹친 지점에 있으며, 투자 회수 국면 진입 시점이 산업 내 상대 포지션을 가를 변수다. 계열사 반도체·배터리 설비 투자 사이클도 스마트팩토리·시스템 구축 수요에 직결되는 외부 변수다.",
+  "en": "The center of gravity in Korea's IT services industry is shifting rapidly from traditional systems integration toward cloud and AI infrastructure. The government is pursuing the National AI Computing Center as core infrastructure for its ambition to become a top-three AI nation; the Ministry of Science and ICT and KOACC said the KRW 2.5 trillion project broke ground in Haenam, South Jeolla Province on August 3, 2026. In heavily regulated areas such as finance and the public sector, demand skews toward customized and private builds rather than public cloud, opening opportunities for domestic vendors with large-scale integration track records. Conversely, the infrastructure cloud market itself is dominated by global providers, so even the second-ranked domestic player faces a wide absolute gap. Power procurement is the practical bottleneck for AI data centers, and at the Solaseado site in Haenam the timing of substation and transmission construction has been under discussion, meaning infrastructure conditions dictate project pace. The logistics cycle runs the other way: falling ocean freight rates and tariff-driven volume declines weighed on 2025 results, while the second quarter of 2026 showed recovery led by air forwarding and contract logistics. The company therefore sits at the intersection of logistics normalization and the early investment phase of AI infrastructure, and the timing of the shift into a payback phase will shape its relative industry position. Affiliate capital spending cycles in semiconductors and batteries are another external variable tied directly to smart-factory and systems-build demand."
  },
  "outlook": {
-  "ko": "회사가 공식적으로 제시한 방향은 인공지능 풀스택 확대와 대규모 투자다. 2026년 1분기 발표에서 회사는 2분기에 공공 업종 GPUaaS 증가, 금융 업종 매출 상승, 범정부 대상 지능형 인공지능 서비스 확산 등 클라우드 확대에 따른 실적 개선을 전망했고, KKR과의 협력으로 확보한 신규 자금 1.2조원과 현금성 자산 6.6조원 등을 바탕으로 2031년까지 10조원을 투자할 방침이라고 밝혔다. 투자 배분은 구미 인공지능 데이터센터와 국가 인공지능 컴퓨팅센터 등 인프라에 5조원, 인공지능 전환 서비스와 플랫폼·솔루션에 1조원, 신성장 동력과 글로벌 거점 확장을 위한 인수합병에 4조원이다. 구미 데이터센터는 삼성전자 1공장 부지에 총 60메가와트급으로 이사회 승인을 받았고 가동 시점은 2029년 3월을 목표로 하며, 확보 부지는 100메가와트 이상 구축이 가능하다고 회사는 설명했다. 2026년 2분기에는 과학기술정보통신부의 GPU 확보·구축·운용 지원사업 핵심 사업자로 선정됐고, 엔비디아 B300 기반 GPUaaS에 이어 국산 반도체 기반 NPUaaS를 출시했으며 우리은행 인공지능 에이전트 구축과 한국수출입은행 생성형 인공지능 시스템 구축 사업을 수주했다. 하반기 계획은 GPUaaS와 인공지능 데이터센터 구축·운영, 데이터센터 개발·구축·운영 투자 사업 육성에 집중하는 것으로, 이준희 대표는 컨퍼런스콜에서 인공지능 인프라와 플랫폼 사업 확대를 통해 성장 기회를 선점하겠다고 밝혔다. 수익화 측면에서는 7월부터 토큰 기반 과금 체계를 도입해 자원 공유·최적화로 비용 효율과 가격 경쟁력을 높이겠다는 계획도 제시됐다. 다만 이 계획들은 대부분 2028~2031년에 걸친 다년 프로젝트이므로, 단기적으로는 감가상각 증가와 투자 회수 속도의 시차가 손익에 어떻게 반영되는지가 관건이다.",
-  "en": "Management's stated direction is an AI full-stack expansion backed by heavy investment. With its Q1 2026 release, the company guided for improvement in Q2 on cloud expansion, including higher public-sector GPUaaS, stronger financial-sector sales and wider rollout of government-wide intelligent AI services, and said it will invest KRW 10tn through 2031 using KRW 1.2tn of new funds secured through its KKR partnership plus KRW 6.6tn in cash and equivalents. The allocation is KRW 5tn to infrastructure such as the Gumi AI data center and the national AI computing center, KRW 1tn to AI transformation services and platforms/solutions, and KRW 4tn to M&A for new growth engines and global expansion. The Gumi data center received board approval at a total 60MW on the site of a Samsung Electronics plant, targets operation in March 2029, and the secured land can support more than 100MW, according to the company. In Q2 2026 it was selected as a key operator in the Ministry of Science and ICT's GPU procurement and operation program, launched an NPUaaS offering based on a domestic AI chip after its NVIDIA B300-based GPUaaS, and won an AI agent buildout at Woori Bank and a generative AI system project at the Export-Import Bank of Korea. Second-half plans center on GPUaaS, AI data center construction and operation, and nurturing design-build-operate investment work, with CEO Lee Joon-hee saying on the earnings call that the firm will capture growth opportunities by expanding AI infrastructure and platform businesses. On monetization, the company said it would adopt token-based pricing from July, using resource sharing and optimization to improve cost efficiency and price competitiveness. Because most of these initiatives run through 2028-2031, the near-term issue is how rising depreciation and the lag before investment payback flow through the income statement."
+  "ko": "회사는 2026년 2분기 실적발표 컨퍼런스콜에서 현재 110메가와트 수준인 AI 인프라를 2029년 230메가와트로, 2031년에는 800메가와트 이상으로 확대하겠다는 계획을 공개했다. 확대 방식은 자체 설비투자형, 지분투자형, 고객 소유 데이터센터의 설계·구축·운영을 맡는 DBO형 세 가지를 병행하는 구조이며, 2031년 목표치에는 수주 확정 물량뿐 아니라 협의 중이거나 회사가 실현 가능성을 높게 보는 물량도 포함된다고 회사 관계자가 밝혔다. 개관 일정은 2026년 동탄 데이터센터 서관, 2028년 해남 한국AI컴퓨팅센터, 2029년 구미 AI 데이터센터 순으로 제시됐다. 삼성물산과 함께 추진하는 춘천 모듈러 AI 데이터센터는 약 600억원을 투입해 2.4메가와트 규모로 조성하며 2028년 하반기 준공을 목표로 한다고 2026년 7월 보도됐다. AI 컴퓨팅 자원 측면에서는 2026년 3월 엔비디아 B300을 국내 처음으로 출시했고 하반기 최대 가동률 달성을 목표로 제시했으며, 7월에는 퓨리오사AI의 2세대 신경망처리장치를 자사 클라우드 플랫폼에 탑재해 추론 시장 대응에 나섰다. 기업용 AI에서는 우리은행의 175개 이상 AI 에이전트 구축 사업 우선협상대상자로 선정되고 한국수출입은행 생성형 AI 시스템 구축 사업을 수주하는 등 금융권 확산이 진행 중이다. 디지털자산 영역에서는 2026년 5월 삼성증권·삼성카드와 함께 두나무 지분 4%를 총 6,128억원에 취득하기로 결의했고, 삼성에스디에스 지분은 1%이며 회사는 스테이블코인 인프라와 가상자산 기반 금융 시스템 구축을 신규 사업 후보로 제시했다. 투자 규모 측면에서는 2026년 설비투자를 전년 대비 37% 늘리겠다고 밝힌 바 있어, 향후 실적은 매출 증가분과 감가상각·운영비 증가분의 상쇄 관계에 좌우될 가능성이 크다.",
+  "en": "On its second-quarter 2026 earnings call the company outlined a plan to expand AI infrastructure from roughly 110 megawatts today to 230 megawatts by 2029 and more than 800 megawatts by 2031. Expansion runs through three parallel models: direct capital spending, equity investment, and design-build-operate work on client-owned data centers; a company official noted the 2031 target includes not only confirmed orders but volumes under discussion and targets management considers achievable. The opening schedule runs from the west wing of the Dongtan data center in 2026 to the Korea AI Computing Center in Haenam in 2028 and the Gumi AI data center in 2029. A modular AI data center in Chuncheon with Samsung C&T, reported in July 2026, involves about KRW 60 billion for 2.4 megawatts with completion targeted for the second half of 2028. On compute, the company launched Nvidia's B300 in Korea for the first time in March 2026 and set a goal of peak utilization in the second half, and in July it added FuriosaAI's second-generation neural processing unit to its cloud platform to address the inference market. In enterprise AI, it was named preferred bidder for Woori Bank's project to build more than 175 AI agents and won a generative AI system project for the Export-Import Bank of Korea, signaling expansion across financial clients. In digital assets, in May 2026 it resolved with Samsung Securities and Samsung Card to acquire a combined 4% stake in Dunamu for KRW 612.8 billion, of which Samsung SDS takes 1%, and the company has flagged stablecoin infrastructure and crypto-linked financial system integration as candidate new businesses. On spending, management said 2026 capital expenditure would rise 37% from the prior year, so future results will hinge on whether incremental revenue outpaces rising depreciation and operating costs."
  },
  "valuation_comment": {
-  "ko": "화면 카드에 표시되는 이익 대비 주가 배수는 2026년 1분기 일회성 퇴직급여 충당 1,120억원이 포함된 최근 1년 이익을 기반으로 산출된다는 점을 감안해 읽어야 한다. 즉 카드의 주당순이익(8,279원)은 2025년 연간 기본주당순이익보다 낮은 수준이며, 이익이 일회성 요인 이전 수준으로 정상화되는지에 따라 동일 주가에서도 배수 수준이 달라진다. 순자산 기준으로는 주당순자산(128,208원)을 웃도는 프리미엄 구간에서 거래되고 있어, 시스템통합 중심의 저마진 사업으로 인식되던 시기보다 시장이 부여하는 프리미엄이 확대된 상태다. 배당은 직전 결산 주당 3,190원으로, 이를 현재 주가에 대입한 배당수익률은 국내 시장 평균 배당수익률을 밑도는 편이다. 다만 회사는 배당성향을 기존 30% 수준에서 상향해 고배당기업 요건을 맞추고 배당소득 분리과세 혜택으로 주주가치를 제고하겠다는 방침을 밝힌 바 있으며, 중장기적으로는 인공지능·클라우드 투자 확대와 배당 정책 간 균형이 핵심 변수로 지적된다. 한화투자증권 김소혜 연구원은 올해가 자본 활용 전략에 대한 모멘텀을 기대할 수 있는 시기이며 연중 가시적 성과가 확인되면 멀티플 할인 요인이 해소될 것이라고 평가했다. 이는 해당 증권사의 견해이며, 투자 판단은 독자 각자의 몫이다.",
-  "en": "The price-to-earnings multiple shown on the data card is computed on trailing profit that includes the KRW 112.0bn one-off retirement provision booked in Q1 2026, and should be read with that in mind. The card's earnings per share of KRW 8,279 is therefore below the 2025 full-year basic figure, so the multiple level at any given share price will shift depending on whether profit normalizes to pre-charge levels. On a book value basis, the stock trades at a premium to book value per share of KRW 128,208, a wider premium than markets assigned when the company was viewed mainly as a low-margin system integrator. The most recent annual dividend was KRW 3,190 per share, which against the current price implies a yield below the Korean market average. That said, the company has stated it will raise its payout ratio from around 30% to qualify as a high-dividend company and use separate taxation of dividend income to enhance shareholder value, while observers flag the balance between expanding AI and cloud investment and dividend policy as the key medium-term variable. Hanwha Investment & Securities analyst Kim So-hye said this year offers scope for momentum around capital deployment strategy and that visible results during the year would remove the multiple discount. That is the brokerage's view; the assessment is left to each reader."
+  "ko": "화면 카드에 표시되는 주가수익비율은 최근 네 개 분기 합산 이익을 기준으로 계산되는데, 그 구간에 2026년 1분기의 일시적 이익 급감이 포함돼 있어 평상시 수익력으로 환산할 때보다 배수가 높게 잡히는 구조라는 점을 감안할 필요가 있다. 증권가에서 인용되는 과거 밴드와 비교하면, 삼성증권은 2025년 12월 리포트에서 지난 10년 평균 주가수익비율을 20배대 초반으로 제시하며 당시 주가가 그 평균을 밑돈다고 평가한 바 있다. 주가순자산비율은 1배를 웃도는 구간으로 장부상 순자산 대비 프리미엄이 붙어 있으며, 이는 6조원대로 알려진 순현금성 자산과 AI 인프라 확장 계획에 대한 시장의 기대가 함께 반영된 결과로 볼 수 있다. 배당은 2025 사업연도 기준으로 이사회 결의를 통해 전년 대비 10% 상향됐고 회사는 고배당기업 요건을 충족했다고 밝혔으나, 배당수익률 자체는 주가 변동에 따라 매일 달라진다. 목표주가와 관련해서는 한화투자증권이 2026년 8월 31일 리포트에서 목표주가를 29만원에서 30만원으로 상향했다고 밝혔고, LS증권은 2026년 8월 19일 목표주가를 26만3,000원에서 30만7,000원으로 상향했다고 밝혔다. 이는 해당 증권사들의 견해이며, 실제 배수의 정당성은 투자 회수 속도와 이익률 회복 여부에 따라 사후적으로 검증될 사안이다.",
+  "en": "The price-to-earnings figure shown on the data card is computed on the sum of the latest four quarters, a window that includes the one-off profit slump of the first quarter of 2026, so the multiple screens higher than it would on normalized earnings. Against historical bands cited by brokers, Samsung Securities noted in a December 2025 report that the ten-year average price-to-earnings multiple sat in the low 20s and judged the then-prevailing multiple to be below that average. The price-to-book ratio sits above one, implying a premium to book equity, which reflects both the roughly KRW 6 trillion in net cash reported in the press and market expectations for the AI infrastructure expansion plan. For fiscal 2025 the board raised the dividend 10% year on year and the company said it met the criteria for high-dividend company status, though the yield itself moves daily with the share price. On targets, Hanwha Investment and Securities said in an August 31, 2026 report that it raised its target price to KRW 300,000 from KRW 290,000, and LS Securities said on August 19, 2026 that it lifted its target to KRW 307,000 from KRW 263,000. These are the brokers' own views, and whether the prevailing multiple is warranted will only be settled after the fact by the pace of investment payback and margin recovery."
  },
  "bull": [
   {
    "title": {
-    "ko": "클라우드가 최대 매출 축으로 이동",
-    "en": "Cloud becomes the largest revenue pillar"
+    "ko": "클라우드 대외 매출의 가파른 확대",
+    "en": "Rapid growth in external cloud revenue"
    },
    "body": {
-    "ko": "2026년 1분기 클라우드 매출 6,909억원은 IT아웃소싱을 넘어 IT서비스 부문 내 최대 비중을 차지했다. 2분기 클라우드 매출은 7,794억원으로 17% 증가했고, 삼성 계열 외 대외 클라우드 매출은 75% 급증했다. 대외 비중 확대는 계열 의존도를 낮추는 방향의 변화라는 점에서 의미가 있다. 다만 클라우드 성장률과 부문 마진이 동시에 개선되는지 확인이 필요하다.",
-    "en": "Q1 2026 cloud revenue of KRW 690.9bn overtook IT outsourcing to become the largest line within IT services. In Q2, cloud revenue rose 17% to KRW 779.4bn while external, non-affiliate cloud revenue surged 75%. A rising external mix matters because it reduces reliance on group affiliates. Still, investors need to see cloud growth and segment margins improve together."
+    "ko": "2026년 2분기 클라우드 매출은 7,794억원으로 17% 늘었고, 삼성 계열사 외 대외 클라우드 매출은 75% 증가했다고 회사가 밝혔다. 대외 비중 확대는 그룹 투자 사이클에 종속된 매출 구조를 완화하는 방향으로 작용한다. 금융권 인공지능 전환과 조선업 전사적자원관리 구축 등 업종 확산이 매출 증가의 근거로 제시됐다. 계열사 의존도 축소는 회사가 수년간 제시해 온 과제이기도 하다.",
+    "en": "The company said second-quarter 2026 cloud revenue rose 17% to KRW 779.4 billion, with cloud revenue from customers outside Samsung affiliates up 75%. A larger external share works to loosen the revenue structure's dependence on the group's investment cycle. Management cited AI transformation projects in banking and enterprise resource planning builds in shipbuilding as drivers. Reducing affiliate dependence has been a stated objective for several years."
    }
   },
   {
    "title": {
-    "ko": "인공지능 인프라 용량 확장 로드맵",
-    "en": "AI infrastructure capacity roadmap"
+    "ko": "AI 인프라 용량 로드맵의 구체화",
+    "en": "A concrete AI infrastructure capacity roadmap"
    },
    "body": {
-    "ko": "회사는 인공지능 인프라를 현재 110메가와트에서 2029년 230메가와트, 2031년 800메가와트 이상으로 확대하는 계획을 제시했다. 동탄 센터는 2026년 1분기 서관을 가동해 동관과 합산 40메가와트 수전 용량을 확보했다. 증권가에서는 하반기 동탄 신규 데이터센터 가동률이 1분기 25%에서 4분기 75~100%로 확대되고 GPUaaS·NPUaaS 매출 램프업이 본격화될 것으로 기대한다는 분석이 제시됐다. 가동률 상승 여지는 인프라 사업의 마진 개선 여부와 직접 연결된다.",
-    "en": "The company plans to expand AI infrastructure from about 110MW today to 230MW in 2029 and over 800MW by 2031. Dongtan brought its west wing online in Q1 2026, giving roughly 40MW of combined power capacity with the east wing. Brokerage analysis has pointed to utilization at the new Dongtan facility rising from around 25% in Q1 to 75-100% in Q4, with GPUaaS and NPUaaS revenue ramping up. Room for higher utilization ties directly to whether infrastructure margins improve."
+    "ko": "회사는 110메가와트 수준의 현 인프라를 2029년 230메가와트, 2031년 800메가와트 이상으로 늘리겠다는 단계별 계획을 제시했다. 해남 국가 AI 컴퓨팅센터는 2026년 8월 착공해 2028년 준공을 목표로 하며 AI 반도체 1만5,000장 규모로 구축된다. 구미 데이터센터는 60메가와트 규모로 GPU 구독 서비스의 거점으로 활용될 예정이다. 설비투자형·지분투자형·설계구축운영형을 병행해 자본 부담을 분산하려는 구조도 특징이다.",
+    "en": "The company laid out a phased plan to grow infrastructure from about 110 megawatts to 230 megawatts by 2029 and more than 800 megawatts by 2031. The National AI Computing Center in Haenam broke ground in August 2026, targets completion in 2028 and will house roughly 15,000 AI chips. The Gumi data center, at about 60 megawatts, is slated to anchor the GPU-as-a-service business. Running capital-expenditure, equity-investment and design-build-operate models in parallel also spreads the capital burden."
    }
   },
   {
    "title": {
-    "ko": "투자 재원과 보수적 재무구조",
-    "en": "Funding capacity and a conservative balance sheet"
+    "ko": "탄탄한 재무구조와 현금 창출력",
+    "en": "Solid balance sheet and cash generation"
    },
    "body": {
-    "ko": "2025년 영업활동현금흐름은 1조2,033억원, 부채비율은 31.1%로 재무 여력이 유지되고 있다. 회사는 KKR을 대상으로 1.2조원 규모 전환사채를 발행했으며, 전환가액 18만원에 리픽싱 조항이 없고 6년간 양도 제한과 조기 상환 옵션 미부여 구조라는 점이 보고서에서 언급됐다. 이 자금과 현금성 자산 6.6조원 등을 합쳐 2031년까지 10조원 투자 계획을 제시했다. 다만 조달 자금 대부분이 인프라 투자 목적이라는 점에서 실제 여유 자금 규모에 대한 해석은 갈린다.",
-    "en": "Operating cash flow was KRW 1,203.3bn in 2025 and the debt-to-equity ratio 31.1%, leaving financial flexibility intact. The company issued a KRW 1.2tn convertible bond to KKR, with a report noting a KRW 180,000 conversion price, no refixing clause, a six-year transfer restriction and no early call or put options. Together with KRW 6.6tn in cash and equivalents, this funds the KRW 10tn investment plan through 2031. Views differ on true spare liquidity, however, since most of the cash is earmarked for infrastructure."
+    "ko": "2025년 말 부채비율은 31.1%로 2022년 41.2%에서 낮아졌고 자본총계는 10조2,629억원이다. 영업활동현금흐름은 2023년 1조4,608억원, 2024년 1조2,380억원, 2025년 1조2,033억원으로 3년 연속 1조원대를 유지했다. 대규모 데이터센터 투자와 두나무 지분 취득 같은 전략적 투자를 자체 재원으로 감당할 여력이 있다는 의미다. 다만 자금 여력이 곧 투자 성과를 보장하지는 않는다.",
+    "en": "The debt-to-equity ratio fell to 31.1% at end-2025 from 41.2% in 2022, with total equity of KRW 10.2629 trillion. Operating cash flow stayed above KRW 1 trillion for three straight years at KRW 1.4608 trillion in 2023, KRW 1.2380 trillion in 2024 and KRW 1.2033 trillion in 2025. That gives the company capacity to fund large data center investments and strategic moves such as the Dunamu stake from internal resources. Financial capacity, however, does not by itself guarantee investment returns."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "비용 구조와 마진 압력",
-    "en": "Cost structure and margin pressure"
+    "ko": "3년째 이어진 매출 정체",
+    "en": "A third year of flat revenue"
    },
    "body": {
-    "ko": "2026년 1분기 영업이익 783억원은 직전 4개 분기 2,200억~2,700억원대 흐름에서 크게 이탈한 수치다. 회사는 퇴직급여비용 1,120억원 일시 반영을 주된 원인으로 설명했다. 그러나 일회성 비용을 제외해도 IT서비스 마진이 경쟁 심화에 따른 판가 인하와 인프라비 증가로 10%까지 하락했다는 지적이 나왔다. 데이터센터 투자가 늘어나는 국면에서 감가상각과 전력비가 마진을 계속 압박할 수 있다.",
-    "en": "Q1 2026 operating profit of KRW 78.3bn was a sharp break from the KRW 220-270bn range of the prior four quarters. The company cited the one-time KRW 112.0bn retirement benefit charge as the main cause. Even excluding that item, however, analysts flagged that the IT services margin fell to 10% on competitive price cuts and higher infrastructure costs. With data center investment rising, depreciation and power costs could keep pressuring margins."
+    "ko": "연결 매출은 2023년 13조2,768억원, 2024년 13조8,282억원, 2025년 13조9,299억원으로 13조원대에 머물렀다. 2022년 17조2,347억원과 비교하면 여전히 큰 폭으로 낮은 수준이다. 클라우드가 두 자릿수로 성장해도 전체 매출의 절반 이상을 차지하는 물류가 사이클에 눌리면 외형 성장률이 희석된다. 성장 스토리가 실제 연결 매출 증가로 이어지는지 확인이 필요하다.",
+    "en": "Consolidated revenue held in the KRW 13 trillion range at KRW 13.2768 trillion in 2023, KRW 13.8282 trillion in 2024 and KRW 13.9299 trillion in 2025. That remains far below the KRW 17.2347 trillion posted in 2022. Even with double-digit cloud growth, a logistics business accounting for more than half of revenue dilutes overall growth when the freight cycle turns down. Whether the growth narrative translates into higher consolidated revenue still needs verification."
    }
   },
   {
    "title": {
-    "ko": "물류 부문 변동성",
-    "en": "Logistics volatility"
+    "ko": "투자 확대에 눌린 이익률",
+    "en": "Margins pressured by rising investment"
    },
    "body": {
-    "ko": "2022년 매출 17조2,347억원과 2023년 13조2,768억원의 격차는 물류 운임 사이클의 진폭을 보여준다. 2026년 1분기 물류 매출은 첼로스퀘어가 30% 이상 성장했음에도 물동량 감소와 운임 하락으로 전년 동기 대비 7.8% 감소한 1조7,424억원이었다. 물류 부문 영업이익률은 0.9%(일회성 비용 제외 시 1.3%)로 위축됐다. 매출 비중이 큰 사업의 마진이 얇다는 구조적 특성은 그대로 남아 있다.",
-    "en": "The gap between 2022 revenue of KRW 17,234.7bn and 2023's KRW 13,276.8bn shows the amplitude of the freight cycle. In Q1 2026, logistics revenue fell 7.8% year on year to KRW 1,742.4bn on lower volumes and freight rates, even as Cello Square grew more than 30%. The logistics operating margin narrowed to 0.9%, or 1.3% excluding the one-off charge. The structural feature of thin margins in the largest revenue segment remains."
+    "ko": "2026년 2분기 매출이 5.9% 늘었음에도 영업이익 증가율은 0.7%에 그쳤고 영업이익률은 6.2% 수준으로 전년 동기보다 낮아졌다. 회사는 대외 신규사업 확대를 위한 투자와 사업 경쟁 심화를 배경으로 설명했다. 2분기 설비투자액은 1,489억원으로 전분기 대비 88.7% 증가한 것으로 보도됐다. 데이터센터 가동이 본격화되면 감가상각비 부담이 선행해 반영될 수 있다.",
+    "en": "Second-quarter 2026 revenue grew 5.9% but operating profit rose only 0.7%, and the operating margin slipped to around 6.2% from a year earlier. Management attributed this to investment in new external business and intensifying competition. Capital expenditure in the quarter was reported at KRW 148.9 billion, up 88.7% quarter on quarter. As data centers come online, depreciation charges can hit the income statement ahead of the associated revenue."
    }
   },
   {
    "title": {
-    "ko": "대규모 투자의 회수 불확실성",
-    "en": "Uncertain payback on heavy investment"
+    "ko": "물류 부문의 외생 변수 노출",
+    "en": "Logistics exposure to exogenous variables"
    },
    "body": {
-    "ko": "10조원 투자 계획 중 4조원은 인수합병에 배정돼 있어, 대상과 조건이 구체화될 때까지 자본 배분의 성과를 판단하기 어렵다. 데이터센터 3곳 구축에만 약 3조7,000억원이 소요될 것으로 업계는 추정한다. 동시에 성장 투자 국면의 기업이 고배당 기조로 전환하는 것이 적절한지에 대한 시각도 엇갈린다. 투자와 환원을 병행하는 구조는 현금흐름 여력에 대한 지속 점검을 요구한다.",
-    "en": "Of the KRW 10tn plan, KRW 4tn is earmarked for M&A, so capital allocation outcomes cannot be judged until targets and terms are disclosed. Industry estimates put the cost of building three data centers alone at about KRW 3.7tn. At the same time, views are split on whether a company in a growth-investment phase should pivot toward a high-dividend stance. Running investment and shareholder returns in parallel requires continuous monitoring of cash flow headroom."
+    "ko": "2025년 물류 부문은 해상운임 하락과 관세 정책에 따른 물동량 감소로 매출이 0.5% 줄고 영업이익은 6.2% 감소한 1,300억원에 그쳤다고 보도됐다. 첼로스퀘어 가입 고객 수는 늘었지만 운임과 물동량이라는 통제 불가능한 변수의 영향이 크다. 2026년 2분기 회복도 항공 전환 수요 등 일시적 요인이 섞여 있을 수 있다. 물류 이익 기여도가 낮아 전사 이익률 개선 효과는 제한적이다.",
+    "en": "Reports indicate 2025 logistics revenue fell 0.5% and operating profit dropped 6.2% to KRW 130 billion amid weaker ocean freight rates and tariff-driven volume declines. Cello Square's customer count kept rising, but uncontrollable variables such as freight rates and cargo volumes dominate outcomes. The second-quarter 2026 rebound may also contain temporary factors such as shifts from sea to air freight. Because logistics contributes relatively little profit, its recovery has limited effect on company-wide margins."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "인건비·노무 리스크",
-    "en": "Labor cost and industrial relations"
+    "ko": "투자 회수 리스크",
+    "en": "Investment payback risk"
    },
    "body": {
-    "ko": "2026년 초 대법원 판결로 삼성 계열 전반의 퇴직금 산정 기준이 변경되면서 1,120억원 규모의 충당금이 1분기에 반영됐다. 인건비 비중이 높은 IT서비스 사업 특성상 임금·성과급 제도 변화는 손익에 직접 영향을 준다. 회사에서는 첫 노동조합 출범과 성과급 개편안 부결 등 노무 이슈도 보도됐다. 향후 추가적인 인건비 관련 회계 처리나 제도 변경 여부를 확인할 필요가 있다.",
-    "en": "An early-2026 Supreme Court ruling changed severance calculation rules across Samsung affiliates, leading to a KRW 112.0bn provision in Q1. In a labor-intensive IT services business, changes to wage and incentive schemes feed directly into profit. Reports have also covered the launch of the company's first labor union and the rejection of a proposed incentive scheme revision. Investors should watch for further labor-related accounting or policy changes."
+    "ko": "AI 데이터센터는 초기 자본 투입이 크고 전력·냉각 설비까지 수반되는 장기 회수형 자산이다. 2031년 800메가와트 목표에는 수주 확정 물량 외에 협의 중이거나 목표로 잡은 물량이 포함돼 있다고 회사가 설명한 만큼 계획과 실행 사이의 간극이 존재한다. 가동률이 기대에 못 미치면 감가상각 부담이 이익률을 눌러 온다. 계획의 진척은 분기별 설비투자 집행액과 클라우드 매출 증가율로 교차 확인해야 한다.",
+    "en": "AI data centers are long-payback assets requiring heavy upfront capital plus power and cooling facilities. The company said the 800-megawatt target for 2031 includes volumes under negotiation and internal goals alongside confirmed orders, leaving a gap between plan and execution. If utilization falls short, depreciation will weigh on margins. Progress should be cross-checked against quarterly capital spending and cloud revenue growth."
    }
   },
   {
    "cat": {
-    "ko": "정책·공공 프로젝트 의존",
-    "en": "Policy and public project dependence"
+    "ko": "규제·정책 리스크",
+    "en": "Regulatory and policy risk"
    },
    "body": {
-    "ko": "국가 인공지능 컴퓨팅센터 사업과 관련해 회사는 2025년 11월 기술 심사를 통과하고 금융 심사 단계에 있다고 설명했다. 과학기술정보통신부 GPU 지원사업 핵심 사업자 선정 등 공공 부문 비중이 늘어나는 구조다. 공공 사업은 예산·일정·규제 변경에 따라 매출 인식 시점이 달라질 수 있다. 정책 우선순위 변화가 인프라 투자 회수 계획에 영향을 줄 가능성도 있다.",
-    "en": "On the national AI computing center project, the company said it passed technical review in November 2025 and is at the financial review stage. Public-sector exposure is rising, including selection as a key operator in the science ministry's GPU support program. Public projects can shift revenue recognition timing with budgets, schedules and regulatory changes. Shifts in policy priorities could also affect payback plans for infrastructure investment."
+    "ko": "두나무 지분 투자는 금융사와 가상자산사업자 결합에 대한 규제 논의와 맞물려 있으며, 스테이블코인과 토큰증권 제도화 일정에 따라 신사업 개화 시점이 달라진다. 국가 AI 컴퓨팅센터는 정부 예산과 민관 출자, 정책금융 대출이 얽힌 사업이어서 정책 변화에 민감하다. 전력 인프라 구축 일정 지연도 프로젝트 리스크로 남아 있다. 제도화가 지연되면 관련 투자 회수 시점이 뒤로 밀릴 수 있다.",
+    "en": "The Dunamu stake sits alongside ongoing debate over combining financial firms with virtual asset operators, and the timing of stablecoin and tokenized securities legislation will determine when these new businesses open up. The National AI Computing Center depends on government budgets, public-private equity and policy financing, making it sensitive to policy shifts. Delays in power infrastructure construction remain a project-level risk. Slower institutionalization could push back the payback horizon for related investments."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화와 가격 압력",
-    "en": "Competition and pricing pressure"
+    "ko": "고객 집중과 경쟁 심화",
+    "en": "Customer concentration and competition"
    },
    "body": {
-    "ko": "국내 서비스형 인프라 시장은 AWS가 52.6% 점유율로 선두이며, 삼성에스디에스는 2위 사업자다. LG CNS 등 경쟁사도 인공지능·클라우드 매출 비중을 빠르게 높이고 있다. 이미 경쟁 심화에 따른 판가 인하가 IT서비스 마진에 영향을 줬다는 분석이 제시됐다. GPU 자원 확보 비용과 요금 체계 변경이 수익성에 어떻게 작용하는지가 관찰 대상이다.",
-    "en": "AWS leads Korea's infrastructure-as-a-service market with 52.6% share, with Samsung SDS second. Rivals such as LG CNS are also rapidly lifting the AI and cloud share of their revenue. Analysts have already attributed part of the IT services margin decline to price cuts amid intensifying competition. How GPU procurement costs and new pricing schemes affect profitability bears watching."
+    "ko": "매출 기반에서 삼성 계열사 비중이 크기 때문에 그룹의 설비투자 사이클 변동이 IT서비스 수주에 직접 반영된다. 대외 확장은 진행 중이지만 인프라형 클라우드에서는 글로벌 사업자와의 점유율 격차가 크다. 기업용 AI 시장에서는 글로벌 소프트웨어 기업과 국내 IT서비스 기업이 동시에 진입해 가격·기술 경쟁이 강화되는 국면이다. 노사 관계 등 내부 비용 변수도 관찰 대상이다.",
+    "en": "With Samsung affiliates forming a large part of the revenue base, swings in the group's capital spending cycle feed directly into IT services orders. External expansion is under way, but the share gap versus global providers in infrastructure cloud remains wide. In enterprise AI, global software vendors and domestic IT services firms are entering simultaneously, sharpening price and technology competition. Internal cost variables such as labor relations also warrant monitoring."
    }
   }
  ],
@@ -152,76 +152,76 @@
     "en": "Late October 2026"
    },
    "what": {
-    "ko": "3분기 실적 발표. 1분기 일회성 비용 이후 영업이익이 2025년 분기 평균(2,200억~2,700억원) 수준으로 복귀하는지, 클라우드 매출 성장률과 IT서비스 마진이 함께 개선되는지가 핵심 확인 사항이다.",
-    "en": "Q3 results. Key checks are whether operating profit returns toward the 2025 quarterly range of KRW 220-270bn after the Q1 one-off, and whether cloud growth and IT services margins improve together."
+    "ko": "3분기 실적 발표와 컨퍼런스콜. 클라우드 매출 증가율과 대외 매출 비중, 전사 영업이익률이 6%대를 유지하는지, 물류 성수기 효과가 실제 매출로 확인되는지가 핵심 점검 항목이다.",
+    "en": "Third-quarter results and the earnings call. Key items are cloud revenue growth, the external revenue share, whether the company-wide operating margin holds in the 6% range, and whether the logistics peak season shows up in revenue."
    }
   },
   {
    "when": {
     "ko": "2026년 4분기",
-    "en": "Q4 2026"
+    "en": "Fourth quarter of 2026"
    },
    "what": {
-    "ko": "동탄 신규 데이터센터 가동률이 4분기 75~100%까지 올라간다는 시장 기대가 실제 GPUaaS·NPUaaS 매출로 확인되는지 점검할 시점이다. 7월 도입된 토큰 기반 과금 체계가 단가와 원가율에 미친 영향도 함께 볼 필요가 있다.",
-    "en": "A checkpoint for whether market expectations of 75-100% utilization at the new Dongtan data center in Q4 translate into actual GPUaaS and NPUaaS revenue. The impact of the token-based pricing scheme introduced in July on unit prices and cost ratios also merits attention."
+    "ko": "동탄 데이터센터 서관 가동률과 엔비디아 B300 기반 GPU 구독 서비스의 하반기 최대 가동률 목표 달성 여부. 인프라 투자가 매출로 전환되는 속도를 가늠할 1차 지표다.",
+    "en": "Utilization of the Dongtan data center's west wing and whether the Nvidia B300-based GPU subscription service meets its stated goal of peak utilization in the second half. This is the first gauge of how quickly infrastructure investment converts into revenue."
    }
   },
   {
    "when": {
-    "ko": "연중 수시(공시 기준)",
-    "en": "Anytime during the year (via filings)"
+    "ko": "2027년 1월 말",
+    "en": "Late January 2027"
    },
    "what": {
-    "ko": "인수합병에 배정된 4조원의 집행 여부와 대상·조건, 국가 인공지능 컴퓨팅센터 금융 심사 및 본계약 진척이 확인 대상이다. 대형 계약과 지분 취득은 공시로 확인 가능하다.",
-    "en": "Watch for deployment of the KRW 4tn M&A allocation, including targets and terms, and progress on the national AI computing center's financial review and definitive contract. Large contracts and equity acquisitions are verifiable through regulatory filings."
+    "ko": "2026년 연간 실적 발표와 배당 결의, 그리고 2027년 설비투자 계획 공개. 2026년 1분기 일회성 요인을 제외한 연간 이익률 수준과 투자 확대 기조의 지속 여부를 함께 확인할 수 있다.",
+    "en": "Full-year 2026 results, the dividend resolution and the 2027 capital expenditure plan. This will show the annual margin excluding the one-off first-quarter 2026 item and whether the aggressive investment stance continues."
    }
   },
   {
    "when": {
-    "ko": "2027년 1월~3월",
-    "en": "January to March 2027"
+    "ko": "2027년 상반기",
+    "en": "First half of 2027"
    },
    "what": {
-    "ko": "연간 실적 발표와 배당 결의. 회사가 밝힌 배당성향 상향과 고배당기업 요건 충족 방침이 실제 주당 배당금으로 어떻게 반영되는지, 직전 결산 주당 3,190원과 비교해 확인할 수 있다.",
-    "en": "Full-year results and the dividend resolution. Investors can check how the stated intention to raise the payout ratio and meet high-dividend company criteria translates into the actual dividend per share, against the KRW 3,190 declared for the prior year."
+    "ko": "한국예탁결제원 토큰증권 플랫폼 정식 운영 시스템의 2027년 2월 완성 일정과 디지털자산 관련 입법 진행 상황. 두나무 지분 투자와 연계한 신사업의 실제 매출화 여부를 판단할 근거가 된다.",
+    "en": "The scheduled February 2027 completion of the Korea Securities Depository's tokenized securities operating platform and progress on digital asset legislation. These provide the basis for judging whether businesses tied to the Dunamu stake generate actual revenue."
    }
   },
   {
    "when": {
-    "ko": "2029년 3월(목표)",
-    "en": "March 2029 (target)"
+    "ko": "2027년~2028년",
+    "en": "2027 to 2028"
    },
    "what": {
-    "ko": "구미 인공지능 데이터센터 가동 목표 시점으로, 총 60메가와트급 승인과 100메가와트 이상 확장 가능 부지가 계획에 포함돼 있다. 중간 단계의 투자 집행률과 건설 일정 변경 여부를 매 분기 확인할 필요가 있다.",
-    "en": "Target operation date for the Gumi AI data center, approved at 60MW with land capable of supporting more than 100MW. Interim capex execution rates and any schedule changes should be tracked each quarter."
+    "ko": "해남 국가 AI 컴퓨팅센터의 2028년 준공 일정 준수 여부와 전력·송전망 인프라 구축 진척, 구미 AI 데이터센터 투자금액 변경 공시. 용량 로드맵의 신뢰도를 검증하는 구간이다.",
+    "en": "Whether the Haenam National AI Computing Center holds to its 2028 completion date, progress on power and transmission infrastructure, and any filings revising the Gumi AI data center investment amount. This period tests the credibility of the capacity roadmap."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "삼성에스디에스는 2023년 이후 매출 13조원대에서 정체된 대신 영업이익률을 6.1%에서 6.9%까지 끌어올린 흐름을 보였고, 2025년에는 영업이익 9,571억원과 영업활동현금흐름 1조2,033억원, 부채비율 31.1%를 기록했다. 2026년 1분기에는 영업이익이 783억원으로 급감했는데, 회사는 퇴직금 산정 기준 변경에 따른 1,120억원 일시 반영이 주된 원인이라고 설명했고 2분기에는 매출 3조7,178억원·영업이익 2,318억원으로 전년 동기 대비 증가한 잠정치를 공시했다. 사업 축은 클라우드로 이동해 IT서비스 부문 내 최대 매출원이 됐고, 대외 클라우드 매출의 빠른 증가는 계열 의존도 완화 측면에서 의미가 있다. 반면 물류 부문의 운임·물동량 민감도, 경쟁 심화에 따른 판가 압력, 데이터센터 확장에 따른 감가상각과 전력비 부담은 마진 방향성의 반대편 요인이다. 회사는 2031년까지 10조원 투자와 인공지능 인프라 800메가와트 이상 확대라는 장기 계획을 제시했으나, 이는 다년 프로젝트여서 투자 회수 시차가 손익에 어떻게 나타나는지가 관건이다. 밸류에이션은 일회성 비용이 포함된 최근 이익을 기준으로 산출되는 만큼 이익 정상화 여부에 따라 그 해석이 달라질 수 있으며, 순자산 대비로는 프리미엄이 반영된 구간에서 거래되고 있다. 결과적으로 인공지능 인프라 사업자로의 전환 성과와 비용 구조 관리라는 두 축을 분기 실적과 공시로 나누어 검증하는 접근이 필요하다.",
-   "en": "Samsung SDS has kept revenue flat around KRW 13tn since 2023 while lifting its operating margin from 6.1% to 6.9%, and in 2025 posted operating profit of KRW 957.1bn, operating cash flow of KRW 1,203.3bn and a 31.1% debt-to-equity ratio. Q1 2026 operating profit collapsed to KRW 78.3bn, which the company attributed mainly to a one-time KRW 112.0bn charge from the change in severance calculation rules, and it subsequently reported preliminary Q2 revenue of KRW 3,717.8bn and operating profit of KRW 231.8bn, both up year on year. The business center of gravity has shifted to cloud, now the largest revenue line within IT services, and rapid growth in external cloud sales matters as a step toward reduced affiliate dependence. On the other side, logistics sensitivity to freight rates and volumes, pricing pressure from competition, and depreciation and power costs from data center expansion all work against margins. Management has laid out a long-term plan of KRW 10tn in investment through 2031 and AI infrastructure exceeding 800MW, but these are multi-year projects, so the timing lag between spending and returns is the crux. Valuation multiples are calculated on recent profit that includes the one-off charge, so their interpretation shifts with profit normalization, and the shares trade at a premium to book value. In short, the transition to an AI infrastructure provider and the management of the cost structure are two separate threads best verified through quarterly results and regulatory filings."
+   "ko": "삼성에스디에스는 물류 특수가 사라진 2023년 이후 13조원대 매출에 머물러 있지만, 영업이익률은 2022년 5.3%에서 2025년 6.9%로 높아지며 이익 구조는 개선됐다. 2026년 들어서는 1분기 영업이익이 783억원으로 급감했다가 2분기 2,318억원으로 되돌아왔고, 2분기 매출 3조7,178억원은 분기 기준 최고 수준이었다. 성장의 축은 클라우드와 AI 인프라로 이동했으며, 2026년 2분기 클라우드 매출 17% 증가와 대외 클라우드 75% 증가가 그 방향을 보여준다. 동시에 110메가와트에서 2031년 800메가와트 이상으로 가는 인프라 로드맵과 전년 대비 37% 늘린 설비투자 계획은 향후 몇 년간 감가상각과 운영비 부담을 키우는 요인이기도 하다. 강세 관점은 대외 고객 확대와 국가 AI 컴퓨팅센터·구미 데이터센터 같은 확정 프로젝트에, 약세 관점은 정체된 외형과 눌린 이익률, 물류의 외생 변수 노출에 근거를 두고 있다. 재무구조는 부채비율 31.1%에 연간 1조원대 영업활동현금흐름으로 투자 여력을 뒷받침하지만, 자금 여력이 곧 투자 성과는 아니다. 앞으로의 판단은 인프라 투자가 실제 매출과 이익률로 전환되는 속도를 분기별로 확인하는 데 달려 있다.",
+   "en": "Samsung SDS has been stuck in the KRW 13 trillion revenue range since the freight windfall faded in 2023, yet its profit structure improved as the operating margin rose from 5.3% in 2022 to 6.9% in 2025. In 2026, operating profit collapsed to KRW 78.3 billion in the first quarter before rebounding to KRW 231.8 billion in the second, while second-quarter revenue of KRW 3.7178 trillion was a record quarterly level. The growth axis has moved to cloud and AI infrastructure, evidenced by 17% cloud revenue growth and a 75% jump in external cloud revenue in the second quarter of 2026. At the same time, the roadmap from 110 megawatts to more than 800 megawatts by 2031 and a capital expenditure plan up 37% year on year will add depreciation and operating costs over the next several years. The bullish case rests on external customer expansion and confirmed projects such as the National AI Computing Center and the Gumi data center; the bearish case rests on flat top-line growth, compressed margins and logistics exposure to exogenous factors. The balance sheet, with a 31.1% debt-to-equity ratio and annual operating cash flow above KRW 1 trillion, supports the investment program, though financial capacity is not the same as investment success. From here, assessment depends on tracking quarter by quarter how quickly infrastructure spending converts into revenue and margin."
   }
  },
  "sources": [
-  "https://news.samsungsdi.com/ko/articleView?seq=450",
-  "https://www.samsungsdi.co.kr/sdi-now/sdi-news/4887.html",
-  "https://www.thelec.kr/news/articleView.html?idxno=55771",
-  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-1%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C",
-  "https://www.smartn.tech/contents/article_detail?article_idx=36656",
-  "https://www.samsungsdi.co.kr/ir/ir-activity/earning-releases.html",
-  "https://www.instagram.com/p/DXvY8HBk9pw/",
-  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-1%EB%B6%84%EA%B8%B0-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C",
-  "https://www.bloter.net/news/articleView.html?idxno=660732",
-  "https://news.samsungsemiconductor.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-1%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C/",
+  "https://v.daum.net/v/WlcovZHlSL?f=p",
+  "https://www.samsungsdi.co.kr/sdi-now/sdi-news/4941.html",
+  "https://keyzard.cc/views/nb/Mzo6amZuZmVlbW1rbGZsbG5rbGhq",
+  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-2%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C",
+  "https://www.welfarehello.com/community/policyInfo/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-2%EB%B6%84%EA%B8%B0-%EC%98%81%EC%97%85%EC%9D%B4%EC%9D%B5-89%EC%A1%B0%EC%9B%90-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EC%B4%9D%EC%A0%95%EB%A6%AC--d9cead49-01b8-4c4b-a6ae-ee667f80ccb6",
+  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-2%EB%B6%84%EA%B8%B0-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C",
+  "https://images.samsung.com/kdp/ir/events/2026/2026_2Q_conference_kor.pdf",
+  "https://www.thelec.kr/news/articleView.html?idxno=60316",
+  "https://imnews.imbc.com/news/2026/econo/article/6841151_36932.html",
   "https://www.economywave.co/samsungsds-ai-cloud-strategy-part3/",
   "https://www.thebell.co.kr/front/newsview.asp?code=0103&key=202604221433533560101995",
   "https://www.economywave.co/samsungsds-ai-cloud-strategy-part1/",
-  "https://image.samsungsds.com/kr/downloads/download/__icsFiles/afieldfile/2026/06/29/%EC%82%BC%EC%84%B1SDS%20%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EA%B2%BD%EC%98%81%EB%B3%B4%EA%B3%A0%EC%84%9C%202026.pdf?queryString=20260731024351%3FqueryString%3D20260731024351",
-  "https://www.samsungsds.com/us/index.html",
-  "https://www.newspim.com/news/view/20260122001180",
+  "https://car.withnews.kr/economy/samsungsds-cloud-aidc",
   "https://www.newspim.com/news/view/20260730001046",
-  "https://www.thelec.kr/news/articleView.html?idxno=55295"
+  "https://www.ket.kr/mobile/article.html?no=38486",
+  "https://marketgenie2025.net/91",
+  "https://news.jkn.co.kr/post/932866",
+  "https://www.thelec.kr/news/articleView.html?idxno=53349"
  ],
  "v": 2,
  "model": "claude-opus-5",
@@ -233,11 +233,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스피",
- "reportDate": "2026-08-14",
- "reportTs": "2026-08-14 21:54",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 05:36",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -283,7 +283,7 @@
     "equity_nci": 317561706537,
     "liab": 3345453419084,
     "cfo": 1460826705639,
-    "eps_basic": null,
+    "eps_basic": 8965,
     "opm": 6.1,
     "roe": 8.0,
     "debt_ratio": 37.3
@@ -338,25 +338,26 @@
    }
   ],
   "valuation": {
-   "price": 228000,
-   "mcap": 17.6421,
+   "price": 238000,
+   "mcap": 18.4159,
    "shares": 77377800,
    "total_shares": 77377800,
    "wavg_shares": 77357831,
-   "per": 27.182,
+   "per": 28.374,
    "eps": 8388,
-   "pbr": 1.7106,
+   "pbr": 1.7856,
    "bps": 133287,
    "roe_ttm": 6.6,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 648889229716,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.78,
+   "eps_src": "공시",
+   "pbr_krx": 1.86,
    "bps_krx": 128198.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 3190.0,
-   "div": 1.4
+   "div": 1.34
   }
  }
 }
