@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "4년 연속 매출 성장, 고부가 필름 전환이 수익성 열쇠",
-  "en": "Four Consecutive Years of Revenue Growth; High-Value Film Pivot Holds the Key to Margin Recovery"
+  "ko": "매출 1조 첫 진입, 마진은 출렁인 한 해",
+  "en": "Revenue Tops KRW1tn, but Margins Swung Wide"
  },
  "lead": {
-  "ko": "GRT는 중국 정밀코팅 필름 소재 기반의 코스닥 상장 홍콩 지주회사로, FY2022 대비 FY2025 매출이 2배 이상 성장했으나 수익성이 FY2024 정점에서 후퇴했으며, MLCC·OLED 고부가 소재 포트폴리오 전환과 MENA 시장 개척의 성패가 중장기 수익성 복원의 핵심 변수로 부상하고 있다.",
-  "en": "GRT is a KOSDAQ-listed Hong Kong holding company underpinned by China-based precision coating film manufacturing; revenue has more than doubled versus FY2022, yet profitability retreated from its FY2024 peak, with the MLCC/OLED high-value material pivot and MENA market development now the pivotal variables for medium-to-long-term margin recovery."
+  "ko": "GRT는 2025년 연결 매출이 처음으로 1조원을 넘어섰지만, 3분기 영업이익률이 급락하며 연간 지배주주순이익은 오히려 전년보다 줄었다.",
+  "en": "GRT's 2025 consolidated revenue surpassed KRW1 trillion for the first time, yet a sharp Q3 operating margin drop left full-year net profit attributable to owners lower than the prior year."
  },
  "keypoints": [
   {
-   "ko": "FY2022~FY2025 매출 약 23.1억원 → 49.4억원으로 2배 이상 성장, 부채비율도 92.8% → 76.6%로 재무구조 단계적 개선",
-   "en": "Revenue more than doubled from approximately 23.1B KRW in FY2022 to 49.4B KRW in FY2025; debt ratio improved from 92.8% to 76.6% over the same period"
+   "ko": "2025년 매출액은 전년 대비 8.1% 늘며 사상 처음 1조원대에 진입했다.",
+   "en": "2025 revenue grew 8.1% year over year, crossing the KRW1 trillion mark for the first time."
   },
   {
-   "ko": "FY2025 OPM 14.3%로 FY2024(17.4%) 대비 3.1%p 후퇴 — Q3(2025년 1~3월) 매출이 전분기 대비 약 46% 급감하며 연간 수익성 압박의 핵심 요인으로 작용",
-   "en": "FY2025 OPM retreated 3.1pp to 14.3% from FY2024's 17.4%; a steep ~46% quarter-on-quarter revenue drop in Q3 (January–March 2025) was the primary drag on full-year profitability"
+   "ko": "영업이익률은 2024년 17.4%에서 2025년 14.3%로 낮아졌고, 3분기에는 7%대까지 급락했다.",
+   "en": "Operating margin fell from 17.4% in 2024 to 14.3% in 2025, plunging to the 7% range in Q3."
   },
   {
-   "ko": "딥시크(DeepSeek) 핵심 AI 파트너사인 낭조정보에 AI 서버용 열관리 필름 수주(씽크풀 뉴스 인용) — 중국 AI 인프라 투자 확대의 직접 수혜 경로 형성",
-   "en": "Secured thermal management film orders for AI servers from Langjiao Information, a core AI partner of DeepSeek — establishing a direct beneficiary channel within China's expanding AI infrastructure build-out"
+   "ko": "지배주주순이익은 764억원으로 전년보다 22.3% 감소했고, 비지배주주 귀속 이익 비중은 커졌다.",
+   "en": "Net profit attributable to owners fell 22.3% to KRW76.4 billion, while the non-controlling interest share of total profit expanded."
   },
   {
-   "ko": "2025년 3월 사우디아라비아 스카이타워 그룹과 전략적 협약 체결(인포스탁데일리, 2025.3.31) — 사우디 비전 2030 연계 MENA 현지 필름 생산 추진으로 지리적 다각화 모색",
-   "en": "Strategic agreement signed with Saudi Arabia's SkyTower Group in March 2025 (Infostockdaily, 31 March 2025) — pursuing MENA localized film production aligned with Saudi Vision 2030 for geographic diversification"
+   "ko": "영업활동현금흐름은 935억원으로 전년보다 54% 증가했고 부채비율은 76.6%로 낮아졌다.",
+   "en": "Operating cash flow rose 54% to KRW93.5 billion and the debt ratio eased to 76.6%."
   },
   {
-   "ko": "MLCC 이형필름·OLED 생산용 필름·FCCL 등 제4차 산업 고부가 소재로 포트폴리오 확장 중 — 상용화 시점이 다음 수익성 도약의 분기점",
-   "en": "Portfolio expansion into high-value 4th-industrial materials (MLCC release films, OLED production films, FCCL) is underway — the timing of commercialization is the pivotal inflection point for the next profitability step-up"
+   "ko": "MLCC 이형필름·OLED 생산용 필름 등 신규 응용분야로 포트폴리오를 확장하고 있다.",
+   "en": "The company is expanding its portfolio into new applications such as MLCC release film and OLED production film."
   }
  ],
  "business": {
-  "ko": "GRT(900290)는 2012년 홍콩에 설립되고 2016년 코스닥에 상장된 비금융 지주회사로, 코스닥 분류상 '기타 금융업(지주사)'에 속하며 결산월은 6월이다. 실질 영업은 중국 자회사를 통해 이루어지며, 홍콩 지주회사가 중국 WFOE(외상독자기업) 강소통리광학신재료집단유한공사를 100% 소유하고, 이 법인이 핵심 영업 자회사인 강음통리광전과학기술유한공사(통리광전, 100%)와 강소혜지신재료과기유한공사(혜지신재료, 84.81%) 등을 지배하는 다층 구조다(핀업, 2025). 통리광전은 포장필름·광학보호필름·광학접착필름 등 주력 제품을 생산하며, 디스플레이·반도체·자동차·웨어러블 기기·로봇 등 다양한 전방 산업에 납품한다(FnGuide 기업정보). 혜지신재료(3공장 법인)를 통해서는 MLCC용 이형필름, OLED 생산용 필름, FCCL(연성동박적층필름) 등 제4차 산업 소재로 포트폴리오를 확장하고 있다(와이즈리포트, 2025). 주영남 대표는 프라임경제 인터뷰에서 \"애플·BYD 등 글로벌 기업에 공급하며 동반성장에 자신이 있다\"고 밝힌 바 있다. 2025년부터는 딥시크(DeepSeek)의 핵심 AI 파트너사로 알려진 낭조정보에 AI 서버용 열관리 제품을 수주하며 AI 인프라 수요에 대응 중이다. 2024년 DecentralX 지분 취득으로 종속회사 수가 17개로 확대됐으며(와이즈리포트), 같은 해 12월 그레이트리치디밸롭리미티드(GREAT RICH DEVELOP LIMITED)를 100% 자회사로 편입했다. 2025년 3월에는 스카이타워 그룹과 사우디아라비아 현지 생산을 목표로 하는 전략적 협약을 체결했으며, 2026년 1월에는 절강홍위신소재유한공사가 출자한 여수홍위신소재유한공사를 종속회사로 추가 편입해 생산 거점을 확충했다.",
-  "en": "GRT (900290) is a non-financial holding company established in Hong Kong in 2012 and listed on KOSDAQ in 2016, classified under 'Other Financial/Holding Companies' in the KOSDAQ sector taxonomy, with a June fiscal year-end. All actual operations run through Chinese subsidiaries: the Hong Kong holding company wholly owns a China WFOE (Jiangsu Tongli Optical New Material Group Co., Ltd.), which in turn controls the core operating entities—Jiangyin Tongli Optoelectronics Technology Co., Ltd. (Tongli Optoelectronics, 100%) and Jiangsu Huizhi New Material Technology Co., Ltd. (Huizhi New Material, 84.81%)—in a multi-layered structure (Finup, 2025). Tongli Optoelectronics produces the core product range—packaging films, optical protective films, and optical adhesive films—for end markets spanning displays, semiconductors, automotive, wearables, and robotics (FnGuide company profile). Through Huizhi New Material, the third-factory entity, GRT is expanding its portfolio into high-value 4th-industrial materials including MLCC release films, OLED production films, and FCCL (Wisereport, 2025). CEO Zhu Yingnan has stated in a Prime Economic interview that the company supplies global clients including Apple and BYD. Since 2025, GRT has been securing orders for AI-server thermal management materials from Langjiao Information, a key AI partner of DeepSeek. In 2024, a stake acquisition in DecentralX expanded the subsidiary count to 17 (Wisereport), and Great Rich Develop Limited was incorporated as a wholly-owned subsidiary in December 2024. In March 2025, a strategic agreement was signed with Saudi Arabia's SkyTower Group targeting localized specialty film production; in January 2026, Yuyao Hongwei New Material Co., Ltd. was added as a subsidiary to further expand the Chinese production base."
+  "ko": "GRT는 2012년 홍콩에 설립돼 2016년 코스닥에 상장된 비금융 지주회사로, 실질적인 영업은 중국 장쑤성 소재 자회사인 강음통리광전과학기술유한공사(통리광전)와 강소혜지신재료과기유한공사를 통해 이뤄진다. 주력 제품은 포장필름 및 광학보호필름이며, 광학필름을 중심으로 광학보호필름, PE무결정체 보호막, 3D 디스플레이 광학필름 등을 생산한다. 사업영역은 정밀 코팅 접착소재, 정밀 코팅 보호소재, 기능성 코팅소재, 고분자 박막소재 등 4대 부문으로 구성돼 있다. 공급 대상 산업은 평판 디스플레이, 반도체, 자동차 등이며, 최근에는 웨어러블 기기, 로봇, 무인차 등 신규 응용 분야로 판매 저변을 넓히고 있다. 포트폴리오 확장 전략의 하나로 MLCC용 이형필름과 OLED 생산용 필름 등 이른바 4차 산업 관련 필름 코팅소재 비중을 늘리는 중이다. 원재료 측면에서는 PE, PP, PET 등 플라스틱 소재와 원 필름, 접착제를 주로 사용하며, 원 필름 자체 생산과 접착제 배합 기술을 함께 보유한 점이 경쟁력으로 언급된다. 다만 회사는 코스닥에 상장된 외국기업 특례 종목으로 분류돼, 금융감독원 전자공시시스템에 통상적인 사업보고서를 공시하지 않는 구조적 특징을 갖고 있다.",
+  "en": "GRT is a non-financial holding company established in Hong Kong in 2012 and listed on KOSDAQ in 2016, with actual operations conducted through its China-based subsidiaries, Jiangyin Tongli Optoelectronics Technology Co. and Jiangsu Huizhi New Materials Technology Co., in Jiangsu Province. Its core products are packaging film and optical protective film, produced around a core optical film line that includes optical protective film, PE amorphous protective film, and 3D display optical film. The business is organized into four segments: precision coating adhesive materials, precision coating protective materials, functional coating materials, and polymer thin-film materials. End markets include flat-panel displays, semiconductors, and automotive, and the company has recently been expanding sales into new application areas such as wearable devices, robots, and driverless vehicles. As part of its portfolio expansion strategy, it is increasing the share of so-called fourth-industrial-revolution film coating materials, including MLCC release film and OLED production film. On the raw-material side, it primarily uses plastic materials such as PE, PP, and PET along with base films and adhesives, with in-house production of base film and adhesive formulation cited as a competitive strength. However, as a foreign-company special listing on KOSDAQ, the company is structurally exempt from filing the standard business report with Korea's Financial Supervisory Service disclosure system."
  },
  "earnings": {
-  "ko": "GRT의 연결 기준(CFS) 매출은 FY2022(6월 결산) 약 23.1억원에서 FY2023 약 40.4억원(+74.9%), FY2024 약 45.7억원(+13.2%), FY2025 약 49.4억원(+8.1%)으로 4개 회계연도 연속 성장세를 이어왔다. 영업이익은 FY2023 OPM 10.3%(약 4.1억원)에서 FY2024 OPM 17.4%(약 8.0억원)으로 대폭 개선됐으나, FY2025에는 매출 증가에도 불구하고 약 7.1억원(OPM 14.3%)으로 전년 대비 약 11.3% 감소하며 수익성이 후퇴했다. 지배주주 귀속 순이익도 FY2024 약 4.9억원에서 FY2025 약 3.8억원으로 약 22.3% 줄었으며, FY2025 기본주당순이익(EPS)은 5원으로 집계됐다. 분기별로는 Q1(2024년 7~9월) 매출 13.6억원·OPM 16.3%, Q2(10~12월) 15.0억원·OPM 15.7%로 양호했으나, Q3(2025년 1~3월)에 매출이 8.1억원으로 전분기 대비 약 46% 급감하며 OPM이 7.3%까지 하락했다. Q4(4~6월)에 매출 12.7억원·OPM 15.1%로 일부 회복했으나 연간 수익성은 FY2024 수준을 회복하지 못했다. Q3 급락의 구체적 원인은 분기 데이터만으로 특정하기 어려우나 계절적 수요 둔화와 원가 구조 변동의 복합 작용으로 추정된다. FY2025 영업현금흐름(CFO)은 약 4.6억원으로 지배주주 귀속 순이익(약 3.8억원)을 상회해 현금 창출 질은 유지되고 있다. 부채비율은 FY2023 92.8%를 정점으로 FY2025 76.6%까지 단계적으로 개선됐으며, 지배주주 자본도 FY2022 약 35.4억원에서 FY2025 약 44.7억원으로 매년 확대됐다.",
-  "en": "On a consolidated (CFS) basis, GRT's revenue grew from approximately 23.1B KRW in FY2022 (June year-end) to approximately 40.4B KRW in FY2023 (+74.9%), approximately 45.7B KRW in FY2024 (+13.2%), and approximately 49.4B KRW in FY2025 (+8.1%), marking four consecutive fiscal years of growth. Operating profit improved sharply from an OPM of 10.3% (approximately 4.1B KRW) in FY2023 to 17.4% (approximately 8.0B KRW) in FY2024, but declined approximately 11.3% year-over-year in FY2025 to approximately 7.1B KRW (OPM of 14.3%) despite higher revenues. Controlling shareholder net profit also fell approximately 22.3% to approximately 3.8B KRW from approximately 4.9B KRW in FY2024; basic EPS for FY2025 was recorded at 5 KRW. Quarterly performance within FY2025 was solid in Q1 (July–September 2024: revenue 13.6B KRW, OPM 16.3%) and Q2 (October–December 2024: 15.0B KRW, OPM 15.7%), before a steep approximately 46% quarter-on-quarter revenue drop in Q3 (January–March 2025) pushed OPM down to 7.3%. Q4 (April–June 2025) partially recovered to 12.7B KRW and 15.1% OPM, but the full-year margin fell short of FY2024 levels. The Q3 weakness likely reflects seasonal demand softness combined with cost structure pressures, though specific drivers are unconfirmed from quarterly disclosures alone. FY2025 operating cash flow (CFO) of approximately 4.6B KRW exceeded controlling shareholder net income (approximately 3.8B KRW), indicating sound cash conversion. The debt ratio has improved from its FY2023 peak of 92.8% to 76.6% by FY2025, while controlling shareholder equity expanded annually from approximately 35.4B KRW in FY2022 to approximately 44.7B KRW in FY2025."
+  "ko": "2025년 연결 매출액은 전년(9,254억원) 대비 8.1% 증가해 사상 처음으로 1조원을 넘어섰다. 그러나 영업이익은 1,432억원으로 전년 1,615억원보다 11.3% 줄었고, 영업이익률도 2024년 17.4%에서 2025년 14.3%로 낮아졌다. 지배주주순이익은 764억원으로 2024년 982억원 대비 22.3% 감소했는데, 이는 영업이익 감소폭보다 더 큰 축소다. 연결 전체 순이익(1,003억원) 중 지배주주 몫의 비중은 2024년 약 81%에서 2025년 약 76%로 낮아져, 비지배주주 귀속 이익 비중이 상대적으로 커졌다. 분기별로 보면 2025년 1분기(영업이익률 16.3%)와 2분기(15.7%)까지는 견조한 마진을 유지했으나, 3분기에는 매출이 1,641억원으로 줄고 영업이익률이 7.3%까지 급락했다. 다만 3분기 지배주주순이익률은 9.4%로 직전 분기(6.6%)보다 오히려 높아, 영업 외 요인이 순이익을 방어한 것으로 추정된다. 4분기에는 매출 2,578억원, 영업이익률 15.0%로 마진이 다시 회복됐다. 한편 영업활동현금흐름은 2025년 935억원으로 2024년 606억원보다 54% 늘어 순이익 감소와 대조적으로 현금창출력은 개선됐고, 부채비율도 2024년 82.1%에서 2025년 76.6%로 낮아지며 재무구조가 다소 완화됐다.",
+  "en": "2025 consolidated revenue rose 8.1% from KRW925.4 billion in 2024, surpassing KRW1 trillion for the first time. Operating profit, however, fell 11.3% to KRW143.2 billion from KRW161.5 billion, and the operating margin declined from 17.4% in 2024 to 14.3% in 2025. Net profit attributable to owners dropped 22.3% to KRW76.4 billion from KRW98.2 billion in 2024, a steeper decline than the drop in operating profit. The owners' share of total consolidated net profit (KRW100.3 billion) fell from roughly 81% in 2024 to about 76% in 2025, meaning the non-controlling interest share of profit grew relatively larger. On a quarterly basis, margins held up through Q1 2025 (16.3% operating margin) and Q2 (15.7%), before revenue slipped to KRW164.1 billion and operating margin plunged to 7.3% in Q3. Notably, the Q3 net margin attributable to owners actually rose to 9.4% from 6.6% in the prior quarter, suggesting non-operating items cushioned the bottom line. Margins recovered in Q4, with revenue of KRW257.8 billion and an operating margin of 15.0%. Meanwhile, operating cash flow rose 54% to KRW93.5 billion from KRW60.6 billion in 2024, an improvement in cash generation that contrasted with the profit decline, while the debt ratio eased from 82.1% to 76.6%, indicating a somewhat lighter balance sheet."
  },
  "industry": {
-  "ko": "GRT의 핵심 전방 시장인 중국 디스플레이 산업은 OLED 채택 확대에 따라 고기능성 보호·접착 필름 수요가 구조적으로 성장 중이며, 스마트폰·웨어러블·차량용 디스플레이 전반으로 OLED 적용이 확산되고 있다(FnGuide 기업정보). BYD 등 중국 전기차 업체들이 차량 내 디스플레이 및 외장 필름 수요를 이끌면서 자동차 필름 시장 역시 확대 국면에 있으며, 자동차필름 부문 확대가 GRT 실적 개선에 기여한 것으로 평가된다(와이즈리포트, 2025). MLCC 시장은 AI 서버·전장·스마트 기기 수요 증가로 성장세를 이어가고 있으며, 삼성전기 등 주요 MLCC 업체가 AI·전장 수요 견조를 2026년까지 전망하고 있어 MLCC용 이형필름 등 부자재 수요도 동반 성장이 기대된다. 딥시크를 중심으로 한 중국 AI 스타트업 생태계의 급부상은 서버 인프라 투자를 촉진하며 열관리 소재 등 AI 인프라 연관 소재 수요를 새롭게 창출하고 있다. 중국 정밀코팅 필름 시장은 로컬 업체 간 경쟁이 치열하나, OLED 소재·MLCC 이형필름 등 고부가 세그먼트는 기술 차별화가 가능한 초기 진입 기회가 잔존한다고 회사 측은 설명한다(디일렉, 2019). 사우디아라비아 비전 2030 정책에 따른 제조업 현지화 흐름은 건축·자동차·재생에너지 분야 특수 필름 소재 공급사에게 신규 시장 진입 기회를 제공할 수 있으며, GRT는 스카이타워와의 협약을 통해 이 기회를 선점하려는 행보를 보이고 있다.",
-  "en": "GRT's core end market—the Chinese display industry—is experiencing structurally growing demand for high-performance protective and adhesive films as OLED adoption broadens across smartphones, wearables, and in-vehicle displays (FnGuide company profile). Chinese EV manufacturers such as BYD are fueling demand for in-vehicle display and exterior film applications, and automotive film segment expansion has been cited as a key contributor to GRT's recent earnings improvement (Wisereport, 2025). The MLCC market continues to grow driven by AI server, automotive electronics, and smart device demand; major MLCC makers including Samsung Electro-Mechanics have guided for sustained AI and automotive demand strength through 2026, supporting ancillary material demand including release films. The rapid rise of China's AI startup ecosystem, led by DeepSeek, is accelerating server infrastructure investment and generating new demand for AI-infrastructure-related specialty materials including thermal management films. While China's precision coating film market is characterized by intense domestic competition, the company notes that early-mover opportunities remain in the technically differentiated high-value OLED material and MLCC release film segments (The Elec, 2019). Saudi Arabia's Vision 2030-driven manufacturing localization creates potential market entry opportunities for specialty film material suppliers in construction, automotive, and renewable energy applications, and GRT is positioning for early access through its SkyTower agreement."
+  "ko": "글로벌 광학필름 시장은 2023년 기준 약 266억 달러 규모로 추정되며, 2024~2032년 연평균 7.7% 이상의 성장이 전망된다는 시장조사기관의 분석이 있다. GRT의 주력 시장인 디스플레이용 보호필름·광학필름은 TFT-LCD 중심의 성숙 시장으로, 전방산업인 평판 디스플레이 업황과 밀접하게 연동된다. 회사는 디스플레이, 반도체, 자동차 등 다양한 영역에 정밀 코팅 신소재를 공급하며 웨어러블 기기, 로봇, 무인차 등 신규 영역으로 확장을 시도하고 있다. 포트폴리오 확장 전략으로는 MLCC용 이형필름, OLED 생산용 필름 등 제4차 산업 필름 코팅소재로 사업을 넓혀 전방산업 성장에 대응하고 있다. 회사는 중국 장쑤성에 생산기지를 둔 현지 제조업체로서 원가 경쟁력을 가질 수 있으나, 동시에 중국 내수·수출 경기, 위안화 환율, 통상 정책 변수에 노출돼 있다. 경쟁구도상 중국·대만·한국계 필름 소재업체와 경쟁하는 것으로 파악되며, 구체적인 시장점유율은 공개된 자료에서 확인되지 않는다.",
+  "en": "The global optical film market was estimated at roughly USD 26.6 billion in 2023, with a market research firm forecasting a compound annual growth rate above 7.7% between 2024 and 2032. GRT's core market of display protective and optical film is a mature, TFT-LCD-centered segment closely tied to the flat-panel display cycle. The company supplies precision coating materials to display, semiconductor, and automotive applications while expanding into new areas such as wearable devices, robots, and driverless vehicles. As part of its portfolio strategy, it is broadening into fourth-industrial-revolution film coating materials such as MLCC release film and OLED production film to respond to end-market growth. As a local manufacturer based in Jiangsu Province, China, the company may enjoy cost advantages, but it is simultaneously exposed to China's domestic and export demand cycles, renminbi exchange rates, and trade policy variables. It is understood to compete with other Chinese, Taiwanese, and Korean film materials producers, though specific market share figures are not disclosed in available sources."
  },
  "outlook": {
-  "ko": "FY2026(2025년 7월~2026년 6월) 연간 실적은 FY2025 Q3 약세에 따른 낮은 기저 효과를 바탕으로 분기별 편차가 완화될지 여부가 주요 관전 포인트다. 스카이타워 그룹과의 사우디아라비아 현지 생산 프로젝트는 투자·엔지니어링·건설·판매 운영 전 과정을 공동 추진하기로 했으나(인포스탁데일리, 2025.3.31), 투자 규모·착공·양산 일정 등 구체적 수치는 아직 공식 공시에서 확인되지 않은 상태다. MLCC 이형필름·OLED 생산용 필름은 혜지신재료(3공장)를 통해 상용화를 추진 중이나 R&D 및 시생산 단계가 남아 있어 단기 매출 기여는 제한적일 수 있다(와이즈리포트 현황 기준). 2026년 1월 편입된 여수홍위신소재유한공사의 초기 매출 기여 시점과 규모도 FY2026 결산에서 처음으로 확인될 주요 변수다. 딥시크 AI 파트너사 낭조정보를 통한 열관리 필름 수주는 수익성이 높은 신사업 레버로 기대되나, 이 고객 이외의 추가 AI 서버 고객사 확보 여부가 의미 있는 볼륨 확장의 관건이다. 주영남 대표는 \"주주환원 강화와 주가 가치 제고에 힘쓰겠다\"는 입장을 공개 인터뷰에서 밝혔으나(데일리한국 인터뷰), FY2025까지 현금배당이 실시되지 않아 구체적인 환원 방안은 향후 공시로 확인이 필요하다.",
-  "en": "In FY2026 (July 2025–June 2026), the key question is whether quarterly earnings volatility moderates against the low base set by FY2025's weak Q3. The Saudi Arabia local production project with SkyTower Group—covering joint investment, engineering, construction, and sales operations (Infostockdaily, 31 March 2025)—has not yet disclosed confirmed investment amounts, groundbreaking dates, or mass-production timelines in official filings. MLCC release films and OLED production films being commercialized through the third-factory entity (Huizhi New Material) are still progressing through R&D and pilot-production stages, likely constraining near-term revenue contributions (based on current Wisereport descriptions). The initial revenue contribution from Yuyao Hongwei New Material, incorporated in January 2026, is another key variable that will be quantified for the first time in the FY2026 annual report. Thermal management film orders via the DeepSeek partner Langjiao Information represent a high-potential new revenue lever, but broadening the AI customer base beyond a single partner is essential for meaningful volume growth. CEO Zhu Yingnan has publicly expressed intentions to strengthen shareholder returns and enhance stock value (Dailykorea interview), but with no cash dividend paid through FY2025, the concrete execution of any return policy awaits future disclosure."
+  "ko": "회사가 별도로 제시한 수치 가이던스는 확인되지 않으나, 최근 포트폴리오 확장의 초점은 MLCC 이형필름과 OLED 생산용 필름 비중 확대에 맞춰져 있는 것으로 파악된다. 증권정보업체 FnGuide·WiseReport 자료(2026년 접속 기준)에 따르면 최근 회계기간 1분기 연결기준 매출액은 전년동기 대비 20.4% 증가, 영업이익은 34.3% 증가, 당기순이익은 6.3% 증가한 것으로 나타났다. 다만 이 수치는 아직 DART 정기공시로 최종 확정되지 않은 잠정치이며, 위 [확정 재무]에 반영된 2025Q4까지의 확정 실적과는 별도로 참고할 필요가 있다. 같은 계열 자료는 앞선 시점 기준으로 2025년 3분기 누적 전년동기 대비 연결기준 매출액이 8.5% 증가, 영업이익이 35.5% 증가, 당기순이익이 30.8% 증가했다고 언급했는데, 이는 회사의 결산 기준과 공시 시점에 따라 위 확정 데이터와 정확히 일치하지 않을 수 있어 해석에 주의가 필요하다. 신규 응용분야인 웨어러블·로봇·자율주행 관련 매출의 구체적 기여도는 아직 공개되지 않았다. 향후 관전 포인트는 2025년 3분기에 나타난 영업이익률 급락이 일회성이었는지, 아니면 원재료비나 고객 주문 패턴 변화에 따른 구조적 변화인지 여부다.",
+  "en": "No specific numerical guidance from the company was found, but recent portfolio expansion appears focused on increasing the share of MLCC release film and OLED production film. According to financial data providers FnGuide and WiseReport (as accessed in 2026), revenue for the most recent quarterly period rose 20.4% year over year on a consolidated basis, with operating profit up 34.3% and net profit up 6.3%. This figure, however, is a preliminary number not yet finalized through a DART regulatory filing, and should be treated separately from the confirmed results through Q4 2025 used elsewhere in this report. The same family of sources also noted, referencing an earlier period, that cumulative consolidated revenue for the first three quarters of 2025 rose 8.5% year over year, with operating profit up 35.5% and net profit up 30.8%, though this may not exactly align with the confirmed figures above depending on the company's fiscal reporting basis and disclosure timing. The specific revenue contribution from new applications such as wearables, robotics, and autonomous driving has not yet been disclosed. A key point to watch going forward is whether the sharp Q3 2025 operating margin decline was a one-off event or reflects a structural shift tied to raw material costs or changes in customer ordering patterns."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 최근 결산 기준 지배주주 순자산(약 44.7억원)을 대폭 상회하는 수준에서 형성되어 있어, 순자산 대비 상당한 프리미엄이 내재된 구간이다. 4개 회계연도 연속 매출 성장, 부채비율 개선, CFO의 순이익 상회 등 질적 개선 요소는 인정되나, FY2025의 이익 감소와 Q3 마진 급락이 프리미엄 유지의 불확실성을 높이고 있다. 배당수익률은 FY2025까지 현금배당 미실시(DPS 0원)로 사실상 0%이며 동종 업종 평균을 크게 하회하여, 현재 밸류에이션은 수익 분배보다 성장 기대에 의존하는 구조다. AI 열관리 소재·MENA 시장 개척·MLCC·OLED 고부가 필름 등 성장 옵션이 주가에 일정 부분 선반영되어 있는 것으로 보이나, 해당 경로의 매출 반영 시점과 규모가 확정되지 않아 실현 여부는 열린 문제로 남는다.",
-  "en": "The current share price is trading at a substantial premium to the most recently reported controlling shareholder book value (approximately 44.7B KRW), implying a significant premium embedded in the current quotation. Positive qualitative indicators—four consecutive years of revenue growth, a declining debt ratio, and CFO exceeding net income—are acknowledged, but FY2025's earnings decline and the sharp Q3 margin contraction heighten uncertainty about sustaining that premium. The dividend yield is effectively zero as no cash dividend was paid through FY2025 (DPS of zero KRW), placing it well below the sector average and indicating a valuation structure that relies on growth expectations rather than income distribution. Growth options related to AI thermal management materials, MENA market development, and high-value MLCC/OLED film lines appear to be partially priced in, but the timing and scale of their revenue contribution remain unconfirmed, leaving their realization an open question."
+  "ko": "주가 수준을 판단할 때는 절대 수치보다 상대적 위치를 참고하는 편이 유용하다. 시장 정보업체 자료에 따르면 이 종목은 최근 5년 평균 기준으로 주가수익비율이 한 자릿수 초반, 주가순자산비율이 1배를 크게 밑도는 구간에서 거래된 이력이 있다. 최근 4개 분기 실적을 기준으로 계산되는 밸류에이션 지표는 이 과거 밴드와 유사한 범위에 위치한 것으로 파악된다. 배당 측면에서는 최근 확정 자료 기준으로 배당수익률이 낮은 수준에 머물러 있어, 주주환원보다는 재투자·유보에 무게가 실린 정책으로 볼 수 있다. 3분기 실적 변동성과 비지배주주 이익 비중 확대는 지배주주 몫의 이익 안정성을 가늠할 때 함께 살펴볼 요소다.",
+  "en": "When assessing the share price level, it is more useful to consider its relative position than any single point-in-time figure. According to market data providers, this stock has historically traded, on a five-year average basis, at a price-to-earnings ratio in the low single digits and a price-to-book ratio well below 1x. Valuation metrics calculated on the most recent four quarters of results appear to sit in a similar range to that historical band. On the dividend side, based on the most recent confirmed data, the dividend yield has remained low, suggesting a policy weighted more toward reinvestment and retention than shareholder returns. The Q3 earnings volatility and the growing share of profit attributable to non-controlling interests are additional factors worth considering when gauging the stability of the profit accruing to controlling shareholders."
  },
  "bull": [
   {
    "title": {
-    "ko": "중국 AI 인프라·전기차와 직접 연결된 수주 경로",
-    "en": "Direct Order Pipeline Linked to Chinese AI Infrastructure and EV Demand"
+    "ko": "매출 성장세와 4분기 마진 회복",
+    "en": "Revenue Growth and Q4 Margin Recovery"
    },
    "body": {
-    "ko": "GRT는 딥시크의 핵심 AI 파트너사인 낭조정보에 AI 서버용 열관리 필름 제품을 수주하며(씽크풀 뉴스), 중국 AI 인프라 투자 급증의 직접 수혜 경로를 확보했다. BYD 등 전기차 기업에 대한 자동차 필름 공급 기반은 중국 EV 시장 성장과 함께 물량 확대 여지를 내포하며, 실제 FY2025 와이즈리포트는 자동차필름 부문 확대가 실적 개선에 기여했다고 평가한다. 디스플레이·반도체·자동차에 걸친 다변화된 전방 포트폴리오는 특정 산업 침체 시 매출 충격을 완화하는 완충 역할을 한다.",
-    "en": "GRT has secured a direct beneficiary channel within China's AI infrastructure investment boom through thermal management film orders from Langjiao Information, a core DeepSeek AI partner (Thinkpool news). The automotive film supply base serving Chinese EV makers such as BYD carries volume expansion potential aligned with EV market growth; Wisereport's FY2025 assessment notes that automotive film segment expansion contributed to earnings improvement. The diversified end-market exposure across displays, semiconductors, and automotive also provides a buffer against single-industry demand downturns."
+    "ko": "매출액은 2022년 4,674억원에서 2025년 1조원 초반대까지 3년 연속 증가했다. 영업이익률은 2023년 10.3%에서 2024년 17.4%로 크게 개선된 뒤 2025년 3분기 급락을 거쳐 4분기에는 15.0%로 다시 회복됐다. 매출 성장과 마진 회복이 동시에 확인되면서 사업 규모 확대의 지속 가능성을 가늠할 근거가 쌓이고 있다.",
+    "en": "Revenue grew for three consecutive years, from KRW467.4 billion in 2022 to just over KRW1 trillion in 2025. The operating margin improved sharply from 10.3% in 2023 to 17.4% in 2024, then recovered to 15.0% in Q4 2025 after the Q3 slump. The combination of revenue growth and margin recovery provides some evidence for the sustainability of the company's scale expansion."
    }
   },
   {
    "title": {
-    "ko": "고부가 소재 전환 성공 시 수익성 도약 잠재력",
-    "en": "Profitability Step-Up Potential If High-Value Material Pivot Succeeds"
+    "ko": "신규 응용분야로 포트폴리오 다변화",
+    "en": "Portfolio Diversification into New Applications"
    },
    "body": {
-    "ko": "MLCC 이형필름·OLED 생산용 필름·FCCL 등으로의 포트폴리오 전환은 현행 포장·보호 필름 대비 구조적으로 높은 마진을 기대할 수 있는 사업 변화다. 혜지신재료(3공장)를 통한 고부가 소재 상용화가 성공적으로 안착한다면 FY2024 수준의 OPM(17.4%)을 회복하거나 초과할 가능성이 있다. 중국 MLCC·OLED·FPCB 시장의 지속 성장이 예상되어(와이즈리포트, FnGuide) 이 방향의 전략적 당위성은 뒷받침된다.",
-    "en": "The portfolio pivot toward MLCC release films, OLED production films, and FCCL represents a structural shift toward inherently higher-margin products compared to conventional packaging and protective films. Successful commercialization through the third-factory entity (Huizhi New Material) could restore or exceed the peak OPM of 17.4% recorded in FY2024. Sustained growth in China's MLCC, OLED, and FPCB markets (Wisereport, FnGuide) underpins the strategic logic of this direction."
+    "ko": "회사는 MLCC용 이형필름과 OLED 생산용 필름 등 4차 산업 관련 신소재로 제품군을 확대하고 있다. 동시에 웨어러블 기기, 로봇, 무인차 등 신규 응용 분야로 공급을 넓히려는 움직임이 확인된다. 전통적인 TFT-LCD 보호필름 중심 사업 구조에서 벗어나려는 다변화 시도로 해석할 수 있다.",
+    "en": "The company is expanding its product lineup into fourth-industrial-revolution materials such as MLCC release film and OLED production film. It has also been moving to broaden supply into new application areas such as wearable devices, robots, and driverless vehicles. This can be read as an attempt to diversify away from a business structure historically centered on TFT-LCD protective film."
    }
   },
   {
    "title": {
-    "ko": "MENA 시장 진출로 중국 의존도 분산 가능성",
-    "en": "MENA Market Entry as a Path to Reducing China Concentration"
+    "ko": "현금창출력 개선과 재무구조 완화",
+    "en": "Improved Cash Generation and Lighter Balance Sheet"
    },
    "body": {
-    "ko": "2025년 3월 스카이타워 그룹과의 협약은 건축·자동차·재생에너지·저탄소 환경보호 등 분야에서 MENA 시장으로의 필름 소재 사업 확장을 목표로 하며, 사우디 비전 2030 정책과 연동된 정부 지원 가능성도 있다(인포스탁데일리). 지리적 다각화가 실현될 경우 중국 내 규제 변화나 지정학 리스크에 대한 노출 집중도가 완화된다. FY2022 이후 지속된 매출 성장 모멘텀에 MENA라는 새로운 성장 축이 가시화된다면 전체 성장률 가속의 촉매가 될 수 있다.",
-    "en": "The March 2025 agreement with SkyTower Group targets expansion of GRT's film materials business into the MENA region across construction, automotive, renewable energy, and low-carbon environmental applications, with the prospect of government support aligned with Saudi Vision 2030 (Infostockdaily). If geographic diversification materializes, it would reduce the concentration of exposure to Chinese regulatory and geopolitical risks. Adding a MENA growth axis to the revenue momentum sustained since FY2022 could serve as a catalyst for accelerating the overall growth rate."
+    "ko": "영업활동현금흐름은 2022년 345억원에서 2025년 935억원으로 4년 연속 늘었다. 같은 기간 부채비율은 2023년 92.8%로 정점을 찍은 뒤 2025년 76.6%까지 낮아졌다. 순이익이 줄어든 해에도 현금창출력과 재무구조가 함께 개선된 점은 사업의 안정성 측면에서 주목할 부분이다.",
+    "en": "Operating cash flow rose for four consecutive years, from KRW34.5 billion in 2022 to KRW93.5 billion in 2025. Over the same period, the debt ratio peaked at 92.8% in 2023 before falling to 76.6% in 2025. The fact that both cash generation and the balance sheet improved even in a year when net profit declined is notable from a business stability perspective."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "FY2025 수익성 후퇴와 Q3 변동성 패턴",
-    "en": "FY2025 Profitability Retreat and Recurring Q3 Volatility Pattern"
+    "ko": "영업이익률의 큰 분기 변동성",
+    "en": "Large Quarter-to-Quarter Margin Swings"
    },
    "body": {
-    "ko": "매출이 전년 대비 8.1% 증가했음에도 FY2025 영업이익은 약 11.3%, 지배주주 귀속 순이익은 약 22.3% 감소해 외형 성장과 수익성 방향이 엇갈렸다. Q3(2025년 1~3월)에 매출이 전분기 대비 약 46% 급감하고 OPM이 7.3%까지 하락한 사건은 수요 변동성 또는 원가 부담이 예상 이상으로 클 수 있음을 시사한다. 유사한 계절성·구조적 패턴이 FY2026에도 반복된다면 연간 이익 안정성에 대한 시장의 신뢰가 약화될 수 있다.",
-    "en": "Despite an 8.1% year-on-year revenue increase, FY2025 operating income fell approximately 11.3% and controlling shareholder net income declined approximately 22.3%, signaling a divergence between top-line growth and profitability. The approximately 46% quarter-on-quarter revenue drop and OPM compression to 7.3% in Q3 (January–March 2025) suggests that demand volatility or cost pressures could be larger than previously assumed. If a similar seasonal or structural pattern recurs in FY2026, market confidence in annual earnings stability could weaken."
+    "ko": "2025년 영업이익률은 1분기 16.3%, 2분기 15.7%에서 3분기 7.3%로 급락했다가 4분기 15.0%로 되돌아왔다. 단 한 분기 만에 마진이 절반 이하로 줄었다가 다시 회복되는 패턴은 원가나 주문 구조상의 불안정성을 시사한다. 이 변동성이 반복될 경우 연간 실적의 예측 가능성이 낮아질 수 있다.",
+    "en": "The operating margin fell from 16.3% in Q1 2025 and 15.7% in Q2 to just 7.3% in Q3, before rebounding to 15.0% in Q4. A margin that more than halves in a single quarter and then recovers suggests instability in cost structure or order patterns. If this volatility recurs, it could reduce the predictability of annual results."
    }
   },
   {
    "title": {
-    "ko": "복잡한 다층 지배구조와 과거 감사 한정 이력",
-    "en": "Complex Multi-Layered Structure and Historical Qualified Audit Opinion"
+    "ko": "지배주주 귀속이익 감소와 비지배주주 비중 확대",
+    "en": "Declining Owner-Attributable Profit and Growing Minority Share"
    },
    "body": {
-    "ko": "GRT는 한국 상장법인 → 홍콩 지주 → 중국 WFOE → 복수 실질영업법인으로 이어지는 다층 구조로 외부 투자자의 내부 자금 이전·관련 당사자 거래 모니터링을 어렵게 한다. 과거 '감사범위 제한'에 의한 한정 감사의견 수령(KRX 조회공시 요구 사례, 씽크풀 기재) 이력은 회계 정보 신뢰성에 대한 잠재적 의구심을 남긴다. 국내 상장 중국 기업 전반에 걸친 정보 비대칭 문제와 중국 현지 법률·규제의 불확실성도 지속적 리스크 요소다.",
-    "en": "GRT's structure—Korean listed entity → Hong Kong holding → China WFOE → multiple operating entities—makes it difficult for external investors to monitor intra-group fund transfers and related-party transactions. A historical qualified audit opinion received due to scope limitations (cited in KRX disclosure inquiry records and Thinkpool reporting) leaves residual questions about the reliability of accounting information. Structural information asymmetry common to Chinese companies listed in Korea, combined with uncertainty around Chinese local regulations, adds persistent layers of risk."
+    "ko": "2025년 지배주주순이익은 764억원으로 전년 982억원보다 22.3% 줄었는데, 이는 영업이익 감소율(11.3%)보다 크다. 연결 전체 순이익 중 지배주주 몫의 비중은 2024년 약 81%에서 2025년 약 76%로 낮아졌다. 자본 구조상 비지배주주 지분(자기자본)도 2024년 1,439억원에서 2025년 1,843억원으로 더 빠르게 늘어, 향후에도 이익 배분에서 비지배주주 비중이 커질 가능성을 열어둔다.",
+    "en": "Net profit attributable to owners fell 22.3% to KRW76.4 billion in 2025 from KRW98.2 billion, a steeper decline than the 11.3% drop in operating profit. The owners' share of total consolidated net profit fell from roughly 81% in 2024 to about 76% in 2025. Non-controlling interest equity also grew faster, from KRW143.9 billion in 2024 to KRW184.3 billion in 2025, leaving open the possibility that the minority share of profit allocation could continue to grow."
    }
   },
   {
    "title": {
-    "ko": "신사업 매출화 지연과 성장 프리미엄 희석 가능성",
-    "en": "New Business Revenue Delays and the Risk of Growth Premium Erosion"
+    "ko": "정보 접근성과 지역 구조상의 제약",
+    "en": "Information Access and Structural Constraints"
    },
    "body": {
-    "ko": "MLCC 이형필름·OLED 생산용 필름 등 고부가 소재는 R&D 및 시생산 단계를 거쳐야 하는 구조로 상용 매출 기여까지 추가 시간이 소요될 전망이다. MENA 현지 생산 프로젝트도 협약 체결 이후 투자 규모·착공·양산 일정 등 구체적 이행 정보가 공시되지 않아 실현 시점의 불확실성이 높다. 이 같은 신사업 진출 지연이 지속될 경우 현재 주가에 반영된 성장 기대 프리미엄의 정당성이 시간이 지남에 따라 약화될 수 있다.",
-    "en": "High-value materials such as MLCC release films and OLED production films must pass through R&D and pilot-production stages before generating commercial revenue, implying meaningful delays before contribution. The MENA local production project has not disclosed specific investment amounts, groundbreaking dates, or mass-production schedules since the agreement signing, keeping the realization timeline highly uncertain. If these new business delays persist, the growth premium currently embedded in the share price risks erosion over time."
+    "ko": "회사는 코스닥에 상장된 외국기업 특례 종목으로, 국내 사업보고서 공시 의무가 일반 상장사와 다르게 적용된다. 실질 영업이 모두 중국 자회사를 통해 이뤄지는 지주회사 구조상 정보 비대칭이 발생할 여지가 있다. 최신 분기 실적에 대한 정보도 DART 정기공시보다 앞서 시장 정보업체를 통해 잠정치 형태로 먼저 확인되는 경우가 있어, 투자자는 확정 시점을 구분해 참고할 필요가 있다.",
+    "en": "As a foreign-company special listing on KOSDAQ, the company's business report disclosure obligations differ from those of standard domestic listed companies. Because all actual operations run through Chinese subsidiaries under a holding company structure, there is room for information asymmetry. Preliminary figures for the most recent quarters sometimes appear through market data providers before a formal DART filing, so investors need to distinguish between preliminary and confirmed data points."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "환율 및 통화 변환 리스크",
-    "en": "Currency Translation Risk"
+    "ko": "지역·환율 리스크",
+    "en": "Regional and Currency Risk"
    },
    "body": {
-    "ko": "GRT의 모든 영업법인은 중국 위안화(CNY) 기반으로 영업하나, 한국 상장기업으로서 KRW 기준 재무제표가 공시된다. CNY/KRW 환율이 불리하게 변동하면 CNY 기준 실적이 개선되더라도 KRW 환산 매출·이익이 동시에 감소하는 역(逆)효과가 발생할 수 있다. GRT는 과거 공시에서 별도의 환위험 헤지 정책을 마련하고 있지 않다고 밝힌 바 있어(2018년 반기보고서 기재) 환율 변동성이 실적 불확실성을 증폭시키는 구조적 요인이다.",
-    "en": "All of GRT's operating entities generate revenue and costs in Chinese yuan (CNY), while the company publishes KRW-denominated financial statements as a Korean-listed entity. Adverse CNY/KRW exchange rate movements could reduce KRW-translated revenue and profit figures even if underlying CNY performance improves. GRT has stated in prior disclosures (2018 semi-annual report) that it does not maintain a formal foreign currency hedging policy, making exchange rate volatility a structural amplifier of earnings uncertainty."
+    "ko": "실질 영업이 중국 장쑤성 소재 자회사에 집중돼 있어 중국의 산업 정책, 관세·통상 환경, 위안화-원화 환율 변동에 직접 노출된다. 중국 내수 경기나 수출 여건이 악화될 경우 매출과 마진에 즉각적인 영향을 줄 수 있다. 지주회사가 홍콩, 실질 자회사가 중국에 있는 구조는 규제·회계 환경의 이중성도 내포한다.",
+    "en": "Because actual operations are concentrated in China-based subsidiaries in Jiangsu Province, the company is directly exposed to Chinese industrial policy, trade and tariff conditions, and renminbi-won exchange rate movements. A deterioration in China's domestic demand or export environment could immediately affect revenue and margins. The structure of a Hong Kong holding company with operating subsidiaries in mainland China also implies dual exposure to differing regulatory and accounting environments."
    }
   },
   {
    "cat": {
-    "ko": "지배구조 및 회계 투명성 리스크",
-    "en": "Governance and Accounting Transparency Risk"
+    "ko": "실적 변동성 리스크",
+    "en": "Earnings Volatility Risk"
    },
    "body": {
-    "ko": "다층적인 홍콩·중국 지배구조는 내부 거래 모니터링과 소수주주 보호를 어렵게 하며, 과거 감사범위 제한에 따른 한정 감사의견 이력은 회계 정보 완전성에 대한 잠재적 불신을 형성한다. 2024년 이후 종속회사 수가 17개로 늘어남에 따라 그룹 전반의 내부 통제 복잡도도 높아지고 있다. 국내 상장 중국 기업 특유의 공시 한계(DART 공시 의무 이행 수준 등)는 정보 비대칭 리스크를 상시적으로 내포한다.",
-    "en": "The multi-tiered Hong Kong–China holding structure complicates intra-group transaction monitoring and minority shareholder protection, and the historical qualified audit opinion due to scope limitations creates residual doubts about the completeness of financial information. With the subsidiary count expanding to 17 as of 2024, internal control complexity across the group has increased. The structural disclosure limitations common to Chinese companies listed domestically in Korea (including the level of DART disclosure compliance) embed persistent information asymmetry risk."
+    "ko": "2025년 3분기에 나타난 영업이익률 급락은 원재료(PE, PP, PET 등 플라스틱 소재)나 고객사 주문 시점 변화 등 여러 요인이 겹쳐 발생했을 가능성이 있으나 정확한 원인은 공개되지 않았다. 유사한 변동성이 향후에도 재발할 경우 분기별 실적 예측의 신뢰도가 낮아질 수 있다. 4분기 마진 회복이 일시적 반등에 그칠지, 구조적 개선으로 이어질지는 추가 확인이 필요하다.",
+    "en": "The sharp Q3 2025 operating margin decline may have stemmed from a combination of factors such as raw material costs (plastic materials including PE, PP, and PET) or shifts in customer order timing, but the exact cause has not been disclosed. If similar volatility recurs, confidence in quarterly earnings forecasts could be undermined. Whether the Q4 margin recovery was a temporary rebound or the start of a structural improvement requires further confirmation."
    }
   },
   {
    "cat": {
-    "ko": "전방 산업 수요 및 경쟁 심화 리스크",
-    "en": "End-Market Demand and Intensifying Competition Risk"
+    "ko": "지배구조·소액주주 이익배분 리스크",
+    "en": "Governance and Minority Shareholder Allocation Risk"
    },
    "body": {
-    "ko": "중국 스마트폰·디스플레이·전기차 시장의 수요 둔화 또는 재고 조정 사이클이 발생할 경우 광학필름·포장필름 등 핵심 제품 판매에 직접적 타격이 불가피하다. GRT가 진출하려는 MLCC 이형필름·OLED 소재 세그먼트에서도 중국 로컬 업체들의 진입이 빠르게 심화되고 있다고 회사 측이 언급한 바 있다(디일렉, 2019). 미·중 기술 갈등 심화나 중국 정부의 산업정책 변화는 주요 고객사의 투자 계획 및 GRT의 수주 파이프라인에 간접 리스크를 미칠 수 있다.",
-    "en": "A demand slowdown or inventory correction cycle in China's smartphone, display, or EV markets would directly impact sales of core products including optical and packaging films. The company itself has noted accelerating competitive entry by Chinese domestic players in the MLCC release film and OLED material segments it is targeting (The Elec, 2019). Escalating US-China technology tensions or shifts in Chinese industrial policy could indirectly affect key customer investment plans and GRT's order pipeline."
+    "ko": "지배주주 귀속이익 비중이 축소되고 비지배주주 자기자본이 더 빠르게 늘어나는 추세가 이어질 경우, 연결 실적 성장이 지배주주(상장회사 주주) 몫으로 온전히 이어지지 않을 가능성이 있다. 외국기업 특례상장으로 국내 사업보고서 공시 범위가 제한적인 점도 투자자의 정보 검증을 어렵게 하는 요인이다. 지주회사-자회사 간 지분 구조나 거래 관계에 대한 상세 정보가 제한적으로 공개되는 점도 함께 고려할 필요가 있다.",
+    "en": "If the trend of a shrinking owner-attributable profit share alongside faster-growing non-controlling interest equity continues, consolidated growth may not fully translate into gains for controlling (listed company) shareholders. The limited scope of domestic business report disclosure under the foreign-company special listing framework also makes it harder for investors to verify information. The limited public detail on equity structure and transactions between the holding company and its subsidiaries is another factor worth considering."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 9~10월",
-    "en": "September–October 2026"
+    "ko": "2026년 11월경(3분기 실적 공시 예상 시기)",
+    "en": "Around November 2026 (expected Q3 results disclosure)"
    },
    "what": {
-    "ko": "FY2026(2025년 7월~2026년 6월) 사업보고서 공시 예정 — Q3 약세의 기저 효과 속에서 연간 OPM 회복 여부, 여수홍위신소재의 초기 매출 기여, AI 열관리 소재 수주 확대 여부를 확인할 핵심 이벤트.",
-    "en": "Anticipated disclosure of the FY2026 (July 2025–June 2026) annual report — a pivotal event to verify whether OPM has recovered against last year's weak Q3 base, and to assess initial revenue contributions from Yuyao Hongwei New Material and the scaling of AI thermal management film orders."
+    "ko": "2025년 3분기에 나타난 영업이익률 급락이 재발하는지, 4분기의 마진 회복이 이어지는지를 확인할 필요가 있다.",
+    "en": "Check whether the sharp margin decline seen in Q3 2025 recurs, and whether the Q4 margin recovery continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 내 (지속 모니터링)",
-    "en": "Throughout Second Half of 2026 (Ongoing)"
+    "ko": "2026년 하반기 중",
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "사우디아라비아 스카이타워 프로젝트 구체화 공시 확인 — 투자 규모 확정·법인 설립·착공 등 실행 일정이 공시될 경우 MENA 성장 경로의 가시성이 대폭 높아진다.",
-    "en": "Confirmation of concrete Saudi Arabia/SkyTower project disclosures — official announcements of confirmed investment amounts, entity formation, or groundbreaking dates would significantly improve the visibility of the MENA growth pathway."
+    "ko": "MLCC 이형필름·OLED 생산용 필름 등 신규 응용분야 매출이 IR자료나 공시를 통해 구체적으로 공개되는지 확인이 필요하다.",
+    "en": "Watch for whether revenue from new applications such as MLCC release film and OLED production film is disclosed in concrete terms through IR materials or filings."
    }
   },
   {
    "when": {
-    "ko": "2026년 내 (지속 모니터링)",
-    "en": "Throughout 2026 (Ongoing)"
+    "ko": "다음 정기공시 시즌(2026년 하반기~2027년 초)",
+    "en": "The next regular disclosure season (H2 2026 to early 2027)"
    },
    "what": {
-    "ko": "MLCC 이형필름·OLED 생산용 필름 첫 상업 수주 공시 여부 — 혜지신재료(3공장)의 고부가 소재 양산 전환이 확인될 경우, 중장기 수익성 개선 궤도 진입의 첫 신호로 해석 가능.",
-    "en": "Any first commercial order disclosures for MLCC release films or OLED production films — confirmation of a mass-production transition at the third-factory entity (Huizhi New Material) would serve as an early signal of entry into a medium-to-long-term margin improvement trajectory."
+    "ko": "확정 연간 실적과 배당 정책이 DART를 통해 어떻게 공시되는지, 앞서 시장 정보업체가 제시한 잠정 성장률과의 정합성을 확인할 필요가 있다.",
+    "en": "Check how confirmed annual results and dividend policy are disclosed through DART, and whether they align with the preliminary growth figures previously cited by market data providers."
    }
   },
   {
    "when": {
-    "ko": "2026년 내 (지속 모니터링)",
-    "en": "Throughout 2026 (Ongoing)"
+    "ko": "수시(중국 경기·환율 지표 발표 시)",
+    "en": "Ongoing (upon release of China economic and currency indicators)"
    },
    "what": {
-    "ko": "AI 서버 열관리 고객사 다각화 여부 — 낭조정보 외 추가 AI 인프라 고객사 공시가 확인되면 AI 소재 사업이 독립적인 수익 축으로 성장하고 있음을 시사한다.",
-    "en": "Diversification of AI server thermal management customers beyond Langjiao Information — any new AI infrastructure customer disclosures would indicate that the AI materials business is developing into an independent revenue pillar."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 2~3월 (FY2027 반기보고서)",
-    "en": "February–March 2027 (FY2027 Semi-Annual Report)"
-   },
-   "what": {
-    "ko": "FY2027 상반기(2026년 7~12월) 반기보고서 — FY2026 결산 이후 신규 소재 상용화·MENA 진출 성과가 처음으로 반기 매출에 반영될 가능성이 있는 기간으로, 중장기 성장 경로 확인의 중요한 분기점.",
-    "en": "FY2027 first-half (July–December 2026) semi-annual report — the first reporting period after the FY2026 close where new material commercialization and MENA market entry results are most likely to appear in revenue figures, representing a key medium-to-long-term inflection checkpoint."
+    "ko": "중국 디스플레이·반도체 전방산업 재고 사이클과 위안화-원화 환율 추이가 매출·마진에 미치는 영향을 지속적으로 점검할 필요가 있다.",
+    "en": "Continue to monitor how China's display and semiconductor inventory cycle and renminbi-won exchange rate trends affect revenue and margins."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "GRT는 중국 정밀코팅 필름 소재 분야에서 4개 연도 연속 매출 성장을 이어온 코스닥 상장 홍콩 지주회사로, FY2022 대비 FY2025 매출이 약 2배 이상 확대됐으며 부채비율도 단계적으로 개선됐다. 다만 FY2025 수익성(OPM 14.3%, 지배주주 순이익 약 3.8억원)은 FY2024 정점에서 후퇴했고, Q3(2025년 1~3월)의 급격한 매출·마진 하락은 계절적 리스크 또는 구조적 취약성의 가능성을 내포한다. AI 열관리 소재(낭조정보·딥시크 생태계), MENA 시장 개척(스카이타워 협약), MLCC·OLED 고부가 필름 라인업 확대 등 복수의 성장 옵션이 동시에 진행 중이나, 대부분이 매출 반영 이전 단계에 있어 실현 시점과 규모는 아직 미확정이다. 다층적 지배구조, 과거 감사 한정 의견 이력, 환율 변동성은 중국 기업 특유의 구조적 리스크로 상시 점검이 필요하다. FY2026 사업보고서(2026년 9~10월 공시 예정)가 수익성 회복 여부와 신규 성장 동력의 매출화를 최초로 종합 확인할 수 있는 가장 가까운 정보 업데이트 시점이 될 것이다.",
-   "en": "GRT is a KOSDAQ-listed Hong Kong holding company that has maintained four consecutive years of revenue growth in the China-based precision coating film materials sector, with revenue more than doubling versus FY2022 and the debt ratio improving steadily. However, FY2025 profitability (OPM of 14.3%, controlling shareholder net income of approximately 3.8B KRW) retreated from the FY2024 peak, and the sharp Q3 revenue and margin contraction raises the possibility of seasonal risks or structural vulnerabilities. Multiple growth options are simultaneously in progress—AI thermal management materials (via the DeepSeek ecosystem), MENA market development (SkyTower agreement), and the high-value MLCC/OLED film portfolio—but most remain pre-revenue, leaving their timing and scale unconfirmed. The multi-layered holding structure, historical qualified audit opinion, and currency translation volatility represent structural risks inherent to Chinese companies listed in Korea that warrant ongoing monitoring. The FY2026 annual report (expected for disclosure in September–October 2026) will serve as the nearest comprehensive information update to assess whether the profitability recovery trajectory has materialized and whether new growth drivers have begun contributing to revenue."
+   "ko": "GRT는 2025년 연결 매출이 처음으로 1조원을 넘어서는 성장을 보였으나, 3분기 영업이익률 급락으로 연간 지배주주순이익은 전년보다 22.3% 줄었다. 4분기 마진이 15.0%로 회복된 점은 긍정적이지만, 이 회복이 일시적 반등인지 구조적 개선인지는 추가 확인이 필요하다. 영업활동현금흐름 개선과 부채비율 하락은 재무 안정성 측면에서 긍정적 신호이나, 비지배주주 귀속이익 비중이 커지는 추세는 지배주주 몫의 이익 안정성에 대한 관찰을 요한다. 사업 측면에서는 MLCC 이형필름·OLED 필름 등 신규 응용분야 확장이 진행 중이나, 구체적 매출 기여도는 아직 공개되지 않았다. 중국 소재 생산기지에 의존하는 구조와 외국기업 특례상장에 따른 제한적 정보 공시는 투자자가 지속적으로 감안해야 할 요소다. 종합적으로 매출 성장과 마진 변동성이 동시에 나타난 한 해였으며, 향후 실적의 안정성 여부는 다음 분기 실적과 신규 응용분야 매출 공개를 통해 가늠할 수 있을 것으로 보인다.",
+   "en": "GRT posted growth in 2025, with consolidated revenue surpassing KRW1 trillion for the first time, but a sharp Q3 operating margin decline caused full-year net profit attributable to owners to fall 22.3% from the prior year. The Q4 margin recovery to 15.0% is a positive sign, though whether this reflects a temporary rebound or a structural improvement requires further confirmation. Improved operating cash flow and a lower debt ratio are positive signals for financial stability, but the growing share of profit attributable to non-controlling interests warrants continued attention regarding the stability of profit accruing to controlling shareholders. On the business side, expansion into new applications such as MLCC release film and OLED production film is underway, though the specific revenue contribution has not yet been disclosed. The company's reliance on a China-based production structure and the limited disclosure associated with its foreign-company special listing status are factors investors should continue to weigh. Overall, 2025 was a year marked by both revenue growth and margin volatility, and the stability of future results will likely become clearer through upcoming quarterly disclosures and further detail on new application revenue."
   }
  },
  "sources": [
+  "https://www.gminsights.com/industry-analysis/optical-film-market",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A900290",
-  "https://finance.finup.co.kr/Stock/900290",
-  "https://itooza.com/vscore/900290",
-  "https://m.irgo.co.kr/IR-COMP/900290/GRT-IR-PAGE",
-  "https://m.thinkpool.com/compDiscuss/cont/1016245",
-  "http://www.thinkpool.com/itemanal/i/index.jsp?code=900290",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=900290",
-  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=900290",
-  "https://www.kokstock.com/stock/item.asp?item_cd=900290",
-  "https://wcomp.fnguide.com/CompanyInfo/Invest?cmp_cd=900290",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251023000296&docno=&viewerhost=",
-  "http://asp01.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=5&gicode=A900290&cID=&MenuYn=Y&ReportGB=&NewMenuID=105&stkGb=701",
   "https://comp.fnguide.com/svo2/asp/SVD_Main.asp?pGB=1&gicode=A900290&cID=&MenuYn=Y&ReportGB=&NewMenuID=101&stkGb=770",
-  "https://www.k5.co.kr/stock/900290/official_notice_read?sfm_idx=198014",
-  "https://files-scs.pstatic.net/2026/03/09/MEMm48e93b/%EC%82%BC%EC%84%B1%EC%A0%84%EA%B8%B0%2025%EB%85%84_1%EB%B6%84%EA%B8%B0.pdf",
-  "https://thelec.kr/news/articleView.html?idxno=4194",
-  "https://www.fetv.co.kr/news/article.html?no=210660",
-  "https://m.ceoscoredaily.com/page/view/2026012316243907144"
+  "https://itooza.com/vscore/900290",
+  "https://m.thinkpool.com/item/900290",
+  "https://valueline.co.kr/finance/summary/900290",
+  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=900290",
+  "https://www.google.com/finance/beta/quote/900290:KOSDAQ?hl=ko",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=900290",
+  "https://www.stockplus.com/m/stocks/KOREA-A900290",
+  "https://m.irgo.co.kr/IR-COMP/900290/GRT-IR-PAGE",
+  "https://www.k5.co.kr/stock/900290?site_type=p&page=7",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250320001859&rcpno=20250320001301&orgid=F&tran=Y&langTpCd=0",
+  "https://kind.krx.co.kr/external/2025/03/18/001701/20250318007957/11011.htm",
+  "https://kind.krx.co.kr/common/disclsviewer.do?acptno=20250919000225&docno=&method=search&viewerhost=",
+  "https://www.pwc.com/kr/ko/aboutus/samilpwc_business-report_55th.pdf",
+  "https://dart.fss.or.kr/",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260318001981"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "900290",
  "name": "GRT",
  "name_en": "Great Rich Technologies Limited",
@@ -233,23 +223,24 @@
   "금융"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-18",
- "reportTs": "2026-06-18 23:44",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 06:04",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
     "year": 2025,
-    "rev": 1019245931289.2439,
-    "op": 145903008240.12753,
-    "np": 102254633603.13469,
-    "np_owner": 77851225356.93217,
-    "equity": 1109568787985.7585,
-    "equity_owner": 921773684077.6226,
-    "liab": 849377722431.7579,
-    "cfo": 95252581232.35077,
+    "rev": 1000069345276.79,
+    "op": 143157918462.38028,
+    "np": 100330765460.75012,
+    "np_owner": 76386494742.46336,
+    "equity": 1088692824053.6497,
+    "equity_owner": 904430988076.4995,
+    "equity_nci": 184261835977.15018,
+    "liab": 833397119074.6547,
+    "cfo": 93460453090.51956,
     "eps_basic": 5,
     "opm": 14.3,
     "roe": 8.4,
@@ -257,14 +248,15 @@
    },
    {
     "year": 2024,
-    "rev": 943138413148.7194,
-    "op": 164552429270.1229,
-    "np": 123741439581.44179,
-    "np_owner": 100132198757.87999,
-    "equity": 1005402853351.7916,
-    "equity_owner": 858786367173.5555,
-    "liab": 825878275834.9948,
-    "cfo": null,
+    "rev": 925393750799.6448,
+    "op": 161456460263.44235,
+    "np": 121413308277.11876,
+    "np_owner": 98248263131.4039,
+    "equity": 986486717704.255,
+    "equity_owner": 842628745022.8394,
+    "equity_nci": 143857972681.41574,
+    "liab": 810339802434.0424,
+    "cfo": 60576999475.22354,
     "eps_basic": null,
     "opm": 17.4,
     "roe": 11.7,
@@ -272,14 +264,15 @@
    },
    {
     "year": 2023,
-    "rev": 833327686143.9006,
-    "op": 85467074841.08746,
-    "np": 63788591130.831184,
-    "np_owner": 59129344326.94044,
-    "equity": 876794672533.4799,
-    "equity_owner": 788039083053.3815,
-    "liab": 813623729443.8549,
-    "cfo": null,
+    "rev": 817649055933.7372,
+    "op": 83859055950.2494,
+    "np": 62588441719.50477,
+    "np_owner": 58016856238.897446,
+    "equity": 860298233414.1874,
+    "equity_owner": 773212534530.1675,
+    "equity_nci": 87085698884.01984,
+    "liab": 798315819006.8538,
+    "cfo": 54310026373.462326,
     "eps_basic": null,
     "opm": 10.3,
     "roe": 7.5,
@@ -287,14 +280,15 @@
    },
    {
     "year": 2022,
-    "rev": 476399194821.54083,
-    "op": 58193685151.72949,
-    "np": 48232030925.42345,
-    "np_owner": 49045587007.856995,
-    "equity": 812752446351.1149,
-    "equity_owner": 728909738726.441,
-    "liab": 700218409449.5251,
-    "cfo": null,
+    "rev": 467435989911.60974,
+    "op": 57098801008.03492,
+    "np": 47324570163.3022,
+    "np_owner": 48122819608.04233,
+    "equity": 797460928655.7046,
+    "equity_owner": 715195678291.2701,
+    "equity_nci": 82265250364.43456,
+    "liab": 687044161562.8275,
+    "cfo": 34462624768.56017,
     "eps_basic": null,
     "opm": 12.2,
     "roe": 6.7,
@@ -304,54 +298,59 @@
   "quarterly": [
    {
     "q": "2024Q4",
-    "rev": 259658179987.0171,
-    "op": 43437137935.97247,
-    "np_owner": 24356934225.586277
+    "rev": 254772845378.85254,
+    "op": 42619890610.08875,
+    "np_owner": 23898671082.376255
    },
    {
     "q": "2025Q1",
-    "rev": 280282851738.5632,
-    "op": 45752473399.77423,
-    "np_owner": 24780138349.276455
+    "rev": 275009474578.86066,
+    "op": 44891664232.42883,
+    "np_owner": 24313912838.957935
    },
    {
     "q": "2025Q2",
-    "rev": 308980633798.98395,
-    "op": 48435855049.124596,
-    "np_owner": 20252120617.544094
+    "rev": 303167322685.01764,
+    "op": 47524559441.33993,
+    "np_owner": 19871087423.26322
    },
    {
     "q": "2025Q3",
-    "rev": 167199605764.83588,
-    "op": 12159935050.938395,
-    "np_owner": 15647226803.341349
+    "rev": 164053831499.0097,
+    "op": 11931152150.510021,
+    "np_owner": 15352832308.902601
    },
    {
     "q": "2025Q4",
-    "rev": 262782839986.86084,
-    "op": 39554744740.290306,
-    "np_owner": 17171739586.770279
+    "rev": 257838716513.90204,
+    "op": 38810542638.10151,
+    "np_owner": 16848662171.339605
    }
   ],
   "valuation": {
-   "price": 3440,
-   "mcap": 0.2873,
+   "price": 3955,
+   "mcap": 0.3303,
    "shares": 83510544,
    "total_shares": 80850000,
    "wavg_shares": null,
-   "per": 3.5,
-   "eps": 975,
-   "pbr": 0.26,
-   "bps": 13162,
-   "roe_ttm": 7.9,
-   "ttm_window": "2025Q4~2026Q3",
-   "ttm_np_owner": 78846039377.50099,
+   "per": 3.908,
+   "eps": 1012,
+   "pbr": null,
+   "bps": null,
+   "roe_ttm": 8.4,
+   "ttm_window": "2025Q1~2025Q4",
+   "ttm_np_owner": 76386494742.46336,
    "ccy": "CNY",
+   "bps_src": "자체",
+   "eps_src": "공시",
    "pbr_krx": null,
    "bps_krx": null,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "bps": "ref_mismatch"
+   }
   }
  }
 }

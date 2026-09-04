@@ -1,217 +1,217 @@
 {
  "title": {
-  "ko": "반도체 전환 가속, 수익성은 물음표",
-  "en": "Semiconductor Pivot Accelerates, Profitability Still in Question"
+  "ko": "반도체 전환 가속, 이익은 여전히 변동적",
+  "en": "Semiconductor Pivot Advances, Earnings Stay Volatile"
  },
  "lead": {
-  "ko": "펨트론은 SMT 검사장비 중심 사업에서 반도체 후공정 검사장비로 무게중심을 빠르게 옮기고 있으나, 매출 회복에도 불구하고 순이익은 아직 안정적인 흑자 궤도에 들어서지 못했다.",
-  "en": "Pemtron is rapidly shifting its business center of gravity from SMT inspection equipment toward semiconductor back-end inspection gear, but despite revenue recovery, net profit has yet to settle onto a stable profitable track."
+  "ko": "SMT 검사장비 중심에서 HBM·메모리모듈 등 반도체 후공정 검사장비로 사업 축이 옮겨가는 가운데, 영업이익은 흑자로 돌아섰지만 순이익은 비영업 요인으로 분기별 등락이 크다.",
+  "en": "As the business axis shifts from SMT inspection equipment toward semiconductor back-end inspection gear such as HBM and memory-module inspection, operating profit has turned positive, but net income continues to swing sharply on non-operating items."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 698.6억원으로 전년 대비 회복했고 영업이익도 31.8억원으로 흑자 전환했으나, 순이익은 지배주주 기준 -37.9억원으로 적자가 지속됐다.",
-   "en": "2025 revenue recovered to KRW 69.86bn with operating profit turning positive at KRW 3.18bn, but owners' net income remained in the red at -KRW 3.79bn."
+   "ko": "2025년 연결 매출 698.6억원(+22.5% YoY), 영업이익 31.8억원으로 흑자 전환했으나 지배주주 순손실은 37.9억원으로 오히려 확대됐다.",
+   "en": "2025 consolidated revenue reached KRW 69.86bn (+22.5% YoY) and operating profit turned positive at KRW 3.18bn, yet the owners' net loss widened to KRW 3.79bn."
   },
   {
-   "ko": "2025년 매출 비중은 SMT 66.7%, 반도체 33.3%로 알려졌으며, 증권가는 2026년 반도체 부문이 절반 이상을 차지할 수 있다고 전망했다.",
-   "en": "The 2025 revenue mix was reported at SMT 66.7% versus semiconductor 33.3%, with some analysts projecting the semiconductor segment could exceed half of revenue in 2026."
+   "ko": "2025년 4분기 매출 241.9억원·영업이익 48.7억원으로 분기 최대 실적을 냈지만, 2026년 1분기 다시 영업손실로 돌아섰다.",
+   "en": "Q4 2025 posted a quarterly-high of KRW 24.19bn in revenue and KRW 4.87bn in operating profit, but Q1 2026 swung back to an operating loss."
   },
   {
-   "ko": "SK하이닉스 HBM 검사장비, 마이크론 소캠2(SOCAMM2) 검사장비, 글로벌파운드리 웨이퍼 검사장비 등 글로벌 반도체 기업向 수주가 이어지고 있다.",
-   "en": "The company has secured a string of orders from global chipmakers including SK hynix HBM inspection equipment, Micron SOCAMM2 inspection equipment, and GlobalFoundries wafer inspection equipment."
+   "ko": "SK하이닉스, 마이크론 등 글로벌 IDM을 대상으로 HBM·SOCAMM2 검사장비 공급계약을 공시하며 고객 다변화가 진행 중이다.",
+   "en": "The company has disclosed supply contracts for HBM and SOCAMM2 inspection equipment with global IDMs including SK Hynix and Micron, indicating progress in customer diversification."
   },
   {
-   "ko": "부채비율이 2023년 130.1%에서 2025년 316.2%로 급등했고, 영업활동현금흐름은 최근 3개년 연속 마이너스를 기록했다.",
-   "en": "The debt ratio jumped from 130.1% in 2023 to 316.2% in 2025, while operating cash flow has been negative for three consecutive years."
+   "ko": "부채비율이 2024년 155.6%에서 2025년 316.2%로 급등했고, 영업현금흐름도 2024·2025년 연속 순유출을 기록했다.",
+   "en": "The debt ratio jumped from 155.6% in 2024 to 316.2% in 2025, and operating cash flow recorded net outflows in both 2024 and 2025."
   },
   {
-   "ko": "2026년 1분기 영업손실(-10.4억원) 이후 2분기에는 매출 240.0억원, 영업이익 13.9억원으로 회복했지만 순손실(-22.3억원)은 이어졌다.",
-   "en": "After an operating loss of -KRW 1.04bn in Q1 2026, Q2 revenue recovered to KRW 24.0bn with operating profit of KRW 1.39bn, yet net income remained negative at -KRW 2.23bn."
+   "ko": "회사와 업계는 2026년 반도체 부문 매출 비중이 SMT를 처음으로 넘어설 것으로 전망하고 있다.",
+   "en": "The company and industry observers expect the semiconductor segment's revenue share to overtake SMT for the first time in 2026."
   }
  ],
  "business": {
-  "ko": "펨트론은 2002년 설립된 머신비전 기반 3D 정밀공정검사장비 전문기업으로, 산업용 고속 카메라와 영상처리 소프트웨어, AI 딥러닝 기술을 결합해 검사장비를 제조·판매한다. 사업 부문은 크게 SMT 검사장비, 반도체 검사장비, 2차전지 검사장비 세 축으로 구성된다. SMT 부문 주력 제품은 납도포 상태를 검사하는 SPI 장비 'SATURN'과 실장부품 상태를 검사하는 AOI 장비 'ATHENA'이며, 오랜 기간 회사의 핵심 매출원 역할을 해왔다. 반도체 부문에서는 웨이퍼 소잉 전후 검사 장비 '8800WI', 와이어본딩 검사 장비 'ZEUS', 패키지 검사 장비 'APOLLON', 메모리 모듈 검사 장비 'MARS' 등을 갖추고 있으며, 최근에는 HBM 적층 공정 검사에 특화된 '8800WI-HBM'까지 라인업을 확장했다. 2차전지 부문은 배터리 리드탭 검사장비 'Hawk' 시리즈를 공급하고 있으나 매출 비중은 상대적으로 작은 편이다. 고객 기반은 SK하이닉스, 마이크론, 글로벌파운드리 등 글로벌 반도체 기업으로 확대되고 있으며, 회사는 삼성전자, ASE, 파워텍 등과도 신규 파트너십을 추진 중이라고 밝혔다. 검사장비 산업은 고객사가 정보보안과 기술 난이도를 고려해 공정별로 2~3개 업체로 공급망을 제한하는 과점적 구조를 형성하고 있어, 신규 고객사 진입 장벽이 높은 편이다. 회사는 매출의 17% 이상을 연구개발에 투자하고 전체 인력의 절반 이상을 연구인력으로 구성하며 기술 경쟁력 확보에 주력하고 있다.",
-  "en": "Founded in 2002, Pemtron is a machine-vision-based precision 3D process inspection equipment specialist that combines industrial high-speed cameras, image processing software and AI deep-learning technology. Its business is organized around three segments: SMT inspection equipment, semiconductor inspection equipment, and secondary battery inspection equipment. In SMT, its flagship products are the SPI equipment 'SATURN', which inspects solder paste application, and the AOI equipment 'ATHENA', which inspects mounted components; this segment has long served as the company's core revenue source. In semiconductors, the company offers wafer sawing pre/post inspection equipment '8800WI', wire bonding inspection equipment 'ZEUS', package inspection equipment 'APOLLON', and memory module inspection equipment 'MARS', and has recently extended the lineup with the '8800WI-HBM', specialized for HBM stacking process inspection. The battery segment supplies the 'Hawk' series of lead-tab inspection equipment, though its revenue contribution remains comparatively small. The customer base has been expanding to include global chipmakers such as SK hynix, Micron, and GlobalFoundries, and the company has stated it is pursuing new partnerships with Samsung Electronics, ASE, and PowerTech. The inspection equipment industry tends toward an oligopolistic structure, as customers limit suppliers to two or three per process step given information-security and technical-difficulty considerations, creating high barriers for new entrants. The company invests over 17% of revenue in R&D and staffs more than half of its workforce with dedicated research personnel to secure technological competitiveness."
+  "ko": "펨트론은 2002년 설립돼 2022년 코스닥에 상장했으며, 홍콩·미국 등 해외법인을 운영하는 3D 정밀공정검사장비 전문기업이다. 산업용 고속 카메라 기반 머신비전과 2D·3D 비전광학, AI 딥러닝, 메카트로닉스 융합 기술로 SMT, 반도체, 이차전지 3개 부문의 검사장비를 제조·공급한다. 전통적 주력인 SMT 검사장비는 SPI(납도포검사)·AOI(광학검사)·MOI 등으로 구성되며, 지난해 3분기 누계 기준 매출 비중이 약 75%에 달할 정도로 여전히 핵심 매출원이다. 반도체 부문은 와이어본딩 검사장비 ZEUS, 패키지 검사장비 APOLLON, 웨이퍼 검사장비 8800WI(HBM용 8800WIR 포함), 메모리모듈 검사장비 MARS 등으로 구성되며 같은 기간 매출 비중은 약 25% 수준이었다. 이차전지 부문은 리드탭 검사장비 HAWK7300을 통해 배터리 셀 생산공정에 대응한다. 반도체 장비 중 APOLLON·MARS·8800WI는 각각 미국 KLA, 미국 사이버옵틱스, 이스라엘 캠텍의 장비를 국산화한 제품으로, 국내외 OSAT·IDM 고객사를 대상으로 수입 대체 포지셔닝을 취하고 있다. 고객사는 SK하이닉스, 마이크론(말레이시아 법인 포함) 등 국내외 종합반도체기업(IDM)으로 확대되는 추세다. 이차전지 시장은 2030년 3,500억 달러 이상 규모로 성장할 전망이며 배터리 셀 제조업체의 증설 계획에 따라 관련 검사장비 매출 성장 여지도 존재한다.",
+  "en": "Founded in 2002 and listed on KOSDAQ in 2022, Pemtron is a precision 3D process-inspection equipment specialist that operates overseas subsidiaries in Hong Kong and the United States. Using high-speed industrial camera-based machine vision, 2D/3D vision optics, AI deep learning, and mechatronics fusion technology, the company manufactures and supplies inspection equipment across three segments: SMT, semiconductor, and secondary battery. The traditional core SMT lineup includes SPI (solder paste inspection), AOI (automatic optical inspection), and MOI equipment, which still accounted for roughly 75% of revenue on a cumulative basis through the third quarter of last year. The semiconductor segment comprises the ZEUS wire-bonding inspection system, the APOLLON package inspection equipment, the 8800WI wafer inspection equipment (including the HBM-focused 8800WIR variant), and the MARS memory-module inspection equipment, which together made up about 25% of revenue in the same period. The secondary battery segment addresses battery-cell production lines through the HAWK7300 lead-tab inspection equipment. Among the semiconductor products, APOLLON, MARS, and 8800WI are localized versions of equipment from KLA Corporation (US), CyberOptics (US), and Camtek (Israel), respectively, positioning Pemtron as an import-substitute supplier to domestic and overseas OSAT and IDM customers. The customer base has been expanding to global IDMs including SK Hynix and Micron (including its Malaysian subsidiary). The secondary battery market is projected to exceed $350 billion by 2030, and capacity expansion plans by battery-cell makers offer additional room for inspection-equipment sales growth."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 698.6억원으로 2024년 570.0억원 대비 22.5% 증가하며 반등했고, 영업이익은 31.8억원(영업이익률 4.6%)으로 전년의 영업손실 36.2억원에서 흑자 전환했다. 그러나 지배주주 순이익은 -37.9억원으로 적자가 지속됐는데, 이는 2024년 순손실 -19.1억원보다 오히려 확대된 규모다. 앞서 2023년에는 매출 737.2억원, 영업이익 80.6억원, 순이익 71.2억원으로 견조한 실적을 냈으나 2024년 들어 매출이 22.7% 감소하며 영업손실로 돌아섰던 흐름과 비교하면, 2025년은 매출과 영업이익 측면에서는 회복 국면에 들어섰다고 볼 수 있다. 분기별로 보면 2025년 2분기 매출 167.1억원, 영업이익 2.6억원의 소폭 흑자에서 순손실 52.8억원을 기록한 이후, 3분기 매출 178.6억원·영업이익 10.8억원·순이익 7.3억원으로 개선됐고, 4분기에는 매출 241.9억원·영업이익 48.7억원·순이익 30.4억원으로 뚜렷하게 실적이 확대됐다. 그러나 2026년 들어 1분기에는 매출 169.4억원에 영업손실 -10.4억원, 순손실 -14.2억원을 기록하며 재차 부진했고, 2분기에는 매출이 240.0억원으로 회복하고 영업이익도 13.9억원 흑자를 냈지만 순이익은 -22.3억원으로 다시 적자를 보여, 영업이익과 순이익 간 괴리가 반복되고 있다. 이러한 괴리는 영업외 손익 항목의 변동성이 분기 실적에 상당한 영향을 미치고 있음을 시사한다. 자기자본(지배주주 기준)은 2023년 324.1억원에서 2025년 255.6억원으로 줄었고, 부채비율은 같은 기간 130.1%에서 316.2%로 크게 높아졌다. 영업활동현금흐름은 2023년 81.7억원의 플러스에서 2024년 -49.8억원, 2025년 -57.2억원으로 3개년 연속 마이너스를 기록해, 장비 산업 특유의 매출채권·재고 회전 부담이 현금흐름에 부담을 주고 있는 것으로 관찰된다.",
-  "en": "Consolidated 2025 revenue came in at KRW 69.86bn, up 22.5% from KRW 57.00bn in 2024, while operating profit turned positive at KRW 3.18bn (4.6% operating margin), reversing the prior year's operating loss of KRW 3.62bn. However, owners' net income remained negative at -KRW 3.79bn, actually a wider loss than 2024's -KRW 1.91bn. Compared with 2023, when revenue of KRW 73.72bn, operating profit of KRW 8.06bn and net income of KRW 7.12bn marked a solid year before a 22.7% revenue decline dragged the company into an operating loss in 2024, 2025 can be characterized as a recovery phase on the revenue and operating-profit lines. Quarterly, after Q2 2025 revenue of KRW 16.71bn produced a slim operating profit of KRW 0.26bn alongside a net loss of KRW 5.28bn, Q3 improved to revenue of KRW 17.86bn, operating profit of KRW 1.08bn and net income of KRW 0.73bn, and Q4 expanded markedly to revenue of KRW 24.19bn, operating profit of KRW 4.87bn and net income of KRW 3.04bn. Entering 2026, however, Q1 reverted to weakness with revenue of KRW 16.94bn, an operating loss of -KRW 1.04bn and a net loss of -KRW 1.42bn, while Q2 revenue recovered to KRW 24.00bn with operating profit back in the black at KRW 1.39bn, yet net income again turned negative at -KRW 2.23bn, repeating the pattern of divergence between operating and net results. This divergence suggests that volatility in non-operating items has been materially affecting quarterly bottom-line results. Owners' equity fell from KRW 32.41bn in 2023 to KRW 25.56bn in 2025, while the debt ratio rose sharply from 130.1% to 316.2% over the same period. Operating cash flow has been negative for three consecutive years — from a positive KRW 8.17bn in 2023 to -KRW 4.98bn in 2024 and -KRW 5.72bn in 2025 — indicating that receivables and inventory turnover burdens typical of the equipment industry have been weighing on cash generation."
+  "ko": "2025년 연결 매출은 698.6억원으로 전년(570.0억원) 대비 22.5% 늘었고, 영업이익은 31.8억원으로 2024년의 영업손실 36.2억원에서 흑자로 전환했다. 그러나 지배주주 순손실은 37.9억원으로 2024년의 19.1억원 손실보다 오히려 확대됐는데, 이는 영업이익 개선과 순이익 흐름이 엇갈렸음을 보여준다. 분기별로 보면 2025년 2분기 매출 167.1억원, 영업이익 2.6억원의 낮은 마진 구간에서 지배주주 순손실이 52.8억원까지 벌어졌고, 3분기에는 매출 178.6억원, 영업이익 10.8억원으로 개선되며 순이익도 7.3억원 흑자로 돌아섰다. 4분기는 매출 241.9억원, 영업이익 48.7억원(영업이익률 약 20%)으로 분기 최대 실적을 기록했고 순이익도 30.4억원 흑자를 냈다. 그러나 2026년 1분기 매출은 169.4억원으로 다시 줄었고 영업손실 10.4억원, 순손실 14.2억원을 기록했으며, 2분기에는 매출 240.0억원, 영업이익 13.9억원으로 영업단은 회복했지만 순손실은 22.3억원으로 오히려 커졌다. 이처럼 영업이익이 흑자를 낸 분기에도 순이익이 적자를 기록하는 구간이 반복되는 것은 상당한 비영업 요인의 변동성을 시사한다. 재무제표상 부채비율은 2023년 130.1%, 2024년 155.6%에서 2025년 316.2%로 급등했고, 영업현금흐름도 2024년 -49.8억원, 2025년 -57.2억원으로 2년 연속 순유출을 기록해 외형 회복과 별개로 현금창출력과 재무구조는 오히려 부담이 커진 모습이다. 2022~2023년에는 매출 611.6억원→737.2억원, 영업이익률 10.4%→10.9%, 순이익 52.4억원→71.2억원으로 안정적 성장세를 보였던 만큼, 2024~2025년의 실적 변동성은 그 이전 구간과 뚜렷한 대비를 이룬다.",
+  "en": "Consolidated 2025 revenue came in at KRW 69.86bn, up 22.5% from KRW 57.00bn in 2024, and operating profit swung to a positive KRW 3.18bn from an operating loss of KRW 3.62bn in 2024. However, the owners' net loss widened to KRW 3.79bn from KRW 1.91bn in 2024, showing a divergence between improving operating profit and the net-income trend. On a quarterly basis, Q2 2025 revenue of KRW 16.71bn and operating profit of just KRW 0.26bn coincided with an owners' net loss that widened to KRW 5.28bn, before Q3 improved to KRW 17.86bn in revenue and KRW 1.08bn in operating profit, with net income turning positive at KRW 0.73bn. Q4 delivered the strongest quarter on record with KRW 24.19bn in revenue and KRW 4.87bn in operating profit (an operating margin of roughly 20%), and net income of KRW 3.04bn. Yet Q1 2026 revenue fell back to KRW 16.94bn with an operating loss of KRW 1.04bn and a net loss of KRW 1.42bn, and Q2 2026 revenue recovered to KRW 24.00bn with operating profit of KRW 1.39bn, but the net loss actually widened to KRW 2.23bn. This recurring pattern—operating profit turning positive while net income remains in the red—points to meaningful non-operating volatility. On the balance sheet, the debt ratio climbed from 130.1% in 2023 and 155.6% in 2024 to 316.2% in 2025, and operating cash flow posted net outflows for two straight years (-KRW 4.98bn in 2024, -KRW 5.72bn in 2025), suggesting that cash generation and the capital structure have come under greater strain even as the top line recovered. Given the stable growth seen in 2022–2023, when revenue rose from KRW 61.16bn to KRW 73.72bn, operating margin from 10.4% to 10.9%, and net income from KRW 5.24bn to KRW 7.12bn, the volatility of 2024–2025 stands in sharp contrast to that earlier period."
  },
  "industry": {
-  "ko": "전방시장인 AI 서버·HBM·차세대 메모리 모듈 수요 확대는 반도체 검사장비 업계 전반에 우호적인 환경을 제공하고 있다. 트렌드포스·가트너 등 시장조사업체는 글로벌 반도체 시장이 2030년 1조달러 규모를 돌파할 것으로 전망했으며, 산업용 3D 자동 엑스레이 검사 시장도 연평균 6% 이상 성장해 2030년 약 42억달러 규모에 이를 것으로 관측된다. HBM 적층 구조 고도화와 미세 공정 진전으로 결함 탐지 난이도가 높아지면서 기존 2D 광학 검사 방식의 한계가 부각되고 있고, 이는 3D 검사·엑스레이 검사 등 고부가 장비 수요로 이어지고 있다. 다만 회사 관계자는 HBM 시장이 빠르게 성장하고 있지만 기술적으로 개선이 필요한 부분이 남아 있어, 당분간은 D램과 SSD 분야의 수익성이 상대적으로 높다고 설명한 바 있다. 경쟁 구도 측면에서 웨이퍼·패키지 검사 장비 시장은 미국의 KLA, 캠텍(이스라엘), 싸이버옵틱스(미국) 등 해외 선도업체가 오랜 기간 과점해온 영역으로, 펨트론은 이들 장비의 국산화 전략을 통해 점유율을 확대해가는 후발주자 위치에 있다. SMT 검사장비 시장에서는 국내외 경쟁사 대비 늦게 진입했으나 가격 경쟁력을 바탕으로 침투율을 높여온 이력이 있다. 고객사들이 정보보안과 기술 난이도를 이유로 공정별 공급업체를 2~3개사로 제한하는 과점적 조달 관행은 신규 진입자에게는 장벽이지만, 일단 퀄테스트를 통과한 기존 공급사에게는 안정적 매출 기반이 된다.",
-  "en": "Expanding downstream demand for AI servers, HBM, and next-generation memory modules is providing a broadly favorable environment for the semiconductor inspection equipment industry. Market researchers TrendForce and Gartner have projected the global semiconductor market to surpass USD 1 trillion by 2030, while the industrial 3D automated X-ray inspection market is expected to grow at over 6% annually to roughly USD 4.2bn by 2030. As HBM stacking structures become more sophisticated and process geometries shrink, defect-detection difficulty is rising, exposing the limits of conventional 2D optical inspection and driving demand toward higher-value 3D and X-ray inspection equipment. That said, a company representative has noted that while the HBM market is growing rapidly, technical refinements are still needed, and profitability in the DRAM and SSD segments remains comparatively higher for now. On the competitive front, the wafer and package inspection equipment market has long been an oligopoly dominated by established overseas leaders such as KLA (US), Camtek (Israel), and CyberOptics (US), with Pemtron positioned as a later entrant expanding share through a localization strategy for these equipment categories. In the SMT inspection equipment market, the company entered later than domestic and overseas rivals but has raised penetration through price competitiveness. The oligopolistic procurement practice of customers limiting suppliers to two or three per process step, driven by information-security and technical-difficulty concerns, poses a barrier to new entrants but provides a relatively stable revenue base for incumbent suppliers that have already passed qualification testing."
+  "ko": "반도체 후공정 검사·계측 시장은 HBM 적층 고도화와 AI 서버 확산에 따라 구조적으로 성장하는 국면에 있다. 2025년 글로벌 반도체 장비 지출액은 전년 대비 7.7% 증가한 1,210억달러에 이를 것으로 전망되며, 그중 테스트 장비 지출액은 14.7%의 성장률을 기록할 것으로 예상돼 검사·계측 영역의 성장 속도가 장비 산업 평균을 웃돈다. AI 반도체와 전기차 수요 증가로 반도체 패키징 시장이 성장하며 Wafer Bump와 Wire Bonding 검사장비 수요가 확대되는 추세도 이런 흐름을 뒷받침한다. TSV·마이크로범프 미세화와 적층 구조 복잡화로 기존 2D 광학 검사 방식의 한계가 드러나면서, 2D와 3D 계측을 통합한 하이브리드 검사 장비가 첨단 검사장비 시장의 성장을 견인하는 요인으로 지목된다. 이 시장의 기존 강자는 미국 KLA, 미국 사이버옵틱스, 이스라엘 캠텍 등 글로벌 장비사이며, 펨트론은 이들 장비를 국산화한 APOLLON·MARS·8800WI 라인업으로 국내외 OSAT·IDM 고객사 내 대체 공급자 지위를 확보해가고 있다. SMT 검사장비 시장은 상대적으로 성숙한 시장으로 성장률이 낮지만, 안정적 매출 기반으로 반도체 부문 투자를 뒷받침하는 캐시카우 역할을 한다. 국내 경쟁 구도에서는 HBM·SOCAMM 등 차세대 메모리 검사 수요에 대응할 수 있는 국내 업체가 제한적이라는 점이 부각되고 있으며, 이는 펨트론을 포함한 소수 업체에 기회 요인으로 작용할 수 있다.",
+  "en": "The semiconductor back-end inspection and metrology market is in a structural growth phase driven by increasingly sophisticated HBM stacking and the expansion of AI servers. Global semiconductor equipment spending is expected to rise 7.7% year-over-year to $121.0 billion in 2025, with test-equipment spending growing 14.7%, outpacing the broader equipment industry's average growth rate. Growing AI-chip and EV demand is expanding the semiconductor packaging market and boosting demand for Wafer Bump and Wire Bonding inspection equipment, reinforcing this trend. As TSV and micro-bump miniaturization and increasingly complex stacking structures expose the limits of conventional 2D optical inspection, hybrid equipment that integrates 2D and 3D metrology is cited as a key driver of growth in the advanced inspection equipment market. Established incumbents in this market include global equipment makers such as KLA Corporation (US), CyberOptics (US), and Camtek (Israel), and Pemtron has been securing a substitute-supplier position among domestic and overseas OSAT and IDM customers through its localized APOLLON, MARS, and 8800WI product lines. The SMT inspection equipment market is relatively mature with lower growth, but it serves as a stable cash-generating base that supports investment in the semiconductor segment. In the domestic competitive landscape, the limited number of Korean suppliers capable of addressing next-generation memory inspection needs such as HBM and SOCAMM is being highlighted as an opportunity factor for a small group of companies including Pemtron."
  },
  "outlook": {
-  "ko": "회사는 2026년 IR 자료를 통해 SK하이닉스, 마이크론, 글로벌파운드리 등으로부터의 수주를 발판으로 반도체 검사장비 부문 확대를 지속하겠다는 방침을 밝혔다. 마이크론과는 소캠2(SOCAMM2) 검사장비 관련 계약이 2026년 2월부터 11월 16일까지 이어지고 있으며, 2026년 6월에는 추가 공급계약이 체결돼 협력 관계가 확대됐다. SK하이닉스향 HBM 검사장비 계약은 2025년 9월 체결돼 2025년 12월 27일까지의 계약 기간을 거쳤고, 이후 신규 고객사와 HBM·D램 검사장비 공급을 협의 중이라고 밝힌 바 있다. 회사는 삼성전자, ASE, 파워텍 등과도 신규 파트너십을 추진해 고객사 다변화를 꾀하고 있다고 설명했다. 한국IR협의회는 2026년 4월 보고서에서 반도체 부문 매출 비중이 2026년에 절반을 넘어설 수 있다고 전망했으나, 이는 외부 기관의 전망치로 실제 달성 여부는 분기별 실적 공시로 확인이 필요하다. 반도체 패키징 후공정 시장이 2028년까지 연평균 10.6% 성장할 것이라는 관측도 나오고 있어, 관련 장비 수요 기반은 유지될 것으로 보인다. 다만 2026년 1분기의 재차 적자 전환에서 보듯, 분기별 수주·인도 시점에 따른 실적 변동성은 당분간 이어질 가능성이 있다.",
-  "en": "Through its 2026 IR materials, the company has stated a policy of continuing to expand its semiconductor inspection equipment segment, building on orders from SK hynix, Micron, and GlobalFoundries. Its SOCAMM2 inspection equipment contract with Micron runs from February through November 16, 2026, and an additional supply contract was signed in June 2026, broadening the collaboration. The HBM inspection equipment contract with SK hynix, signed in September 2025, ran through December 27, 2025, and the company has since stated it is in discussions with a new customer to supply HBM and DRAM inspection equipment. The company said it is also pursuing new partnerships with Samsung Electronics, ASE, and PowerTech to diversify its customer base. The Korea IR Service Association projected in an April 2026 report that the semiconductor segment's revenue share could exceed half of total revenue in 2026, though this is an external forecast whose actual achievement requires confirmation through quarterly disclosures. Observations that the semiconductor packaging back-end market could grow at a 10.6% annual rate through 2028 suggest the underlying demand base for related equipment should persist. That said, as illustrated by the return to loss in Q1 2026, earnings volatility tied to the timing of order intake and equipment delivery may continue for the time being."
+  "ko": "펨트론은 2025년 9월 SK하이닉스와 100억원 규모의 반도체 검사장비 공급계약을, 2026년 2월에는 마이크론 말레이시아 법인과 31.5억원 규모의 SOCAMM2 검사장비(메모리모듈 AVI) 공급계약을 각각 공시했으며, 후자의 계약기간은 2026년 2월 4일부터 11월 16일까지다. 한국IR협의회는 2026년 4월 보고서에서 펨트론이 고부가가치 반도체 장비 비중 확대를 기반으로 실적과 수익성 모두에서 도약 국면에 진입하고 있다고 분석했으며, 2026년에는 반도체 부문 매출 비중이 SMT를 처음으로 넘어설 것으로 전망했다. 증권가에서는 HBM 검사장비인 8800WIR·8800WI-HBM의 후속 수주 여부와 미국 IDM을 대상으로 진행 중인 메모리모듈 검사장비 MARS의 퀄 테스트 통과 여부를 핵심 변수로 지목하고 있다. 대신증권은 2026년 3월 보고서에서 우주항공 고객사향 SMT 준비와 오버레이 전공정 장비의 2027년 하반기 퀄테스트 진행 등을 향후 모멘텀으로 언급하며, 차세대 GPU(루빈 울트라) 영향으로 2028년 고성능 패키징 수요가 확대될 경우 검사 장비 수요도 구조적으로 늘어날 가능성을 제시했다. 다만 이런 전망은 증권사의 추정치이며 실제 수주·매출 인식 시점은 고객사 내부 절차에 따라 변동될 수 있다는 점에 유의할 필요가 있다. 회사 측은 공급계약 공시에서 \"향후 고객사의 요청에 의해 공급기간 및 공급가액이 변동될 수 있다\"고 밝힌 바 있어, 개별 계약의 이행 시점과 규모에 대한 불확실성이 상존한다.",
+  "en": "Pemtron disclosed a KRW 10bn semiconductor inspection equipment supply contract with SK Hynix in September 2025, and in February 2026 disclosed a KRW 3.15bn SOCAMM2 inspection equipment (memory module AVI) supply contract with Micron's Malaysian subsidiary, with the latter contract running from February 4 to November 16, 2026. The Korea Investors Service and Rating's IR Council stated in an April 2026 report that Pemtron is entering a leap phase in both results and profitability based on its expanding high-value-added semiconductor equipment mix, and projected that the semiconductor segment's revenue share would overtake SMT for the first time in 2026. Securities analysts point to follow-on orders for the HBM inspection equipment 8800WIR/8800WI-HBM and the outcome of ongoing qualification testing for the MARS memory-module inspection equipment at a US IDM customer as key variables to watch. Daishin Securities noted in a March 2026 report that SMT preparations for an aerospace customer and qualification testing for overlay pre-process equipment slated for the second half of 2027 represent future momentum, and suggested that if next-generation GPU-driven (Rubin Ultra) high-performance packaging demand expands in 2028, structural growth in inspection equipment demand could follow. These are analyst estimates, however, and the actual timing of order recognition and revenue booking may shift depending on customer-side internal procedures. The company itself has noted in contract disclosures that supply periods and amounts may change at the customer's request, meaning uncertainty remains around the timing and scale of individual contract execution."
  },
  "valuation_comment": {
-  "ko": "펨트론은 최근 4개 분기 합산 지배주주 순이익이 근소한 흑자 수준에 그쳐, 이를 기준으로 한 주가수익 관계를 안정적으로 해석하기는 쉽지 않은 구간에 있다. 순자산가치 대비로는 시장이 상당한 프리미엄을 부여하고 있는 편으로, 이는 반도체 부문으로의 사업 전환에 대한 기대가 주가에 일부 반영된 결과로 해석될 수 있다. 과거 한 증권사는 2026년 예상 순이익 기준 주가수익비율이 10~20배 구간에서 형성될 수 있다는 분석을 내놓은 바 있어, 참고할 만한 밴드로 볼 수 있다. 회사의 순이익은 2023년 흑자에서 2024년 적자로, 2025년에도 영업이익 흑자에도 불구하고 순손실이 이어지는 등 방향성이 일정하지 않았던 만큼, 이익 회복의 지속성 여부가 향후 밸류에이션 해석의 핵심 변수가 될 것으로 보인다. 배당 측면에서는 주당 50원의 현금배당이 공시된 이력이 있으며, 이는 성장 투자와 배당 정책 간 균형을 어떻게 가져갈지 지켜볼 대목이다. 최종적으로 순자산 대비 거래 수준과 이익 변동성을 함께 고려하는 것이 균형 잡힌 해석에 도움이 될 것으로 판단된다.",
-  "en": "With trailing four-quarter owners' net income only marginally positive, it is difficult to interpret price-to-earnings relationships for Pemtron with much stability at this juncture. Relative to net asset value, the market appears to be assigning a substantial premium, which may partly reflect expectations tied to the company's pivot toward the semiconductor segment. One brokerage previously noted that the stock could trade in a price-to-earnings range of roughly 10 to 20 times based on projected 2026 net income, which may serve as a useful historical reference band. Given that net income swung from a profit in 2023 to a loss in 2024, and remained negative in 2025 despite a return to operating profit, the direction has been inconsistent, making the durability of any earnings recovery a key variable for valuation going forward. On the dividend side, the company has disclosed a cash dividend of KRW 50 per share historically, and how it balances growth investment against dividend policy going forward bears watching. Ultimately, weighing the trading level relative to net assets alongside earnings volatility together should help support a balanced reading."
+  "ko": "최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순이익은 매우 작은 규모에 그쳐, 순이익 기준 밸류에이션 지표는 분기별 실적 변동에 따라 큰 폭으로 출렁일 수 있는 구간에 있다. 순자산가치와 비교하면 주가는 상당한 프리미엄에서 거래되는 편으로, 이는 반도체 검사장비 사업 전환에 대한 시장의 기대가 현재의 이익 규모보다 앞서 반영되고 있음을 보여준다. 배당은 상징적 수준에 머물러 있어 주주환원보다는 재무구조 안정과 신규 장비 개발·양산 대응에 자원이 우선 배분되는 모습이다. 과거 증권사 리포트(대신증권, 2026년 2월 26일)는 2026년 예상 순이익 기준 배수가 글로벌 동종업체 평균보다 낮다고 평가한 바 있으나, 이는 특정 시점의 추정 실적을 전제로 한 견해로 이후 분기 실적의 변동성을 감안해 해석할 필요가 있다. 결국 현재의 밸류에이션은 회사의 사업 구조 전환 스토리와 실제 손익 실현 속도 사이의 간극을 어떻게 좁혀가는지에 따라 계속 재평가될 여지가 있는 구간으로 볼 수 있다.",
+  "en": "Combined owners' net income over the most recent four quarters (Q3 2025 through Q2 2026) has been very small in absolute terms, leaving net-income-based valuation metrics in a range that can swing widely with quarter-to-quarter results. Relative to net asset value, the share price trades at a substantial premium, indicating that market expectations for the semiconductor inspection equipment pivot are running ahead of the company's current profit scale. Dividends remain at a symbolic level, suggesting that resources are being prioritized toward balance-sheet stability and new equipment development and ramp-up rather than shareholder returns. An earlier securities report (Daishin Securities, February 26, 2026) assessed that the multiple based on projected 2026 net income was below the average for global peers, but this view was premised on a specific point-in-time earnings estimate and should be interpreted with the subsequent volatility in quarterly results in mind. Ultimately, the current valuation can be viewed as a range that remains open to reassessment depending on how the gap between the company's business-transition narrative and the actual pace of profit realization narrows."
  },
  "bull": [
   {
    "title": {
-    "ko": "반도체 후공정 검사장비로의 사업 전환",
-    "en": "Pivot Toward Semiconductor Back-End Inspection Equipment"
+    "ko": "HBM·차세대 메모리 검사장비 수주 확대",
+    "en": "Expanding HBM and next-gen memory inspection orders"
    },
    "body": {
-    "ko": "SK하이닉스, 마이크론, 글로벌파운드리 등 글로벌 반도체 기업으로부터 검사장비 수주를 잇달아 확보하며 반도체 부문 비중이 빠르게 확대되고 있다. 2025년 기준 반도체 부문 매출 비중은 33.3%로 전년 대비 상승했고, 일부 분석에서는 2026년 이 비중이 절반을 넘어설 수 있다는 전망도 나온다. 회사는 삼성전자, ASE, 파워텍 등과도 신규 파트너십을 추진해 고객사 다변화를 꾀하고 있다.",
-    "en": "The company has secured a string of inspection equipment orders from global chipmakers including SK hynix, Micron, and GlobalFoundries, rapidly expanding its semiconductor segment. The semiconductor segment's revenue share stood at 33.3% in 2025, up from the prior year, and some forecasts suggest this share could exceed half of revenue in 2026. The company is also pursuing new partnerships with Samsung Electronics, ASE, and PowerTech to diversify its customer base."
+    "ko": "펨트론은 2025년 9월 SK하이닉스, 2026년 2월 마이크론 말레이시아 법인과 각각 HBM·SOCAMM2 검사장비 공급계약을 공시하며 국내외 IDM 고객을 확보했다. 8800WI-HBM은 적층 진행 과정에서 검사가 가능한 장비로 소개되고 있어, HBM4 등 고단 적층이 확대될수록 검사 수요가 늘어날 여지가 있다. 삼성전자·마이크론 등 추가 글로벌 IDM과의 논의도 병행되고 있어 고객 다변화가 이어질 경우 반도체 부문 매출 기반이 넓어질 수 있다.",
+    "en": "Pemtron disclosed HBM and SOCAMM2 inspection equipment supply contracts with SK Hynix in September 2025 and with Micron's Malaysian subsidiary in February 2026, respectively, securing both domestic and overseas IDM customers. The 8800WI-HBM equipment is described as capable of inspecting during the stacking process itself, leaving room for growing inspection demand as high-layer-count stacking such as HBM4 expands. Discussions are reportedly also underway with additional global IDMs including Samsung Electronics and Micron, and continued customer diversification could broaden the semiconductor segment's revenue base."
    }
   },
   {
    "title": {
-    "ko": "HBM·차세대 메모리 검사수요 확대",
-    "en": "Growing Inspection Demand for HBM and Next-Gen Memory"
+    "ko": "SMT 사업의 안정적 현금창출 기반",
+    "en": "SMT business as a stable cash-generating base"
    },
    "body": {
-    "ko": "HBM 적층 구조 고도화와 소캠2(SOCAMM2) 같은 차세대 메모리 모듈 확산으로 정밀 검사 수요가 늘고 있다. 산업용 3D 자동 엑스레이 검사 시장은 연평균 6% 이상 성장해 2030년 약 42억달러 규모에 이를 것으로 전망된다. 회사는 8800WI-HBM, MARS 등 관련 신제품 라인업을 갖추고 시장 공략을 본격화하고 있다.",
-    "en": "Growing sophistication of HBM stacking structures and the spread of next-generation memory modules such as SOCAMM2 are increasing demand for precision inspection. The industrial 3D automated X-ray inspection market is projected to grow over 6% annually to roughly USD 4.2bn by 2030. The company has built out a related new-product lineup including the 8800WI-HBM and MARS, and is stepping up its market push."
+    "ko": "매출의 약 70~75%를 차지하는 SMT 검사장비 사업은 안정적인 현금 창출원으로 실적의 하방을 지지하는 역할을 한다. 이 기반 위에서 웨이퍼, 패키징, 메모리모듈, X-ray 등 반도체 검사장비 영역으로 포트폴리오가 확장되는 구조다. 매출이 안정적인 SMT와 성장성이 높은 반도체 부문이 병행되는 사업 구조는 특정 부문의 부진이 전체 실적에 미치는 충격을 완충할 수 있다.",
+    "en": "The SMT inspection equipment business, which accounts for roughly 70–75% of revenue, serves as a stable cash-generating source that helps support the downside of overall results. On this base, the product portfolio is expanding into semiconductor inspection areas such as wafer, packaging, memory module, and X-ray inspection. A business structure that pairs a stable SMT segment with a higher-growth semiconductor segment can help cushion the impact of weakness in any single segment on overall results."
    }
   },
   {
    "title": {
-    "ko": "매출 회복과 연구개발 투자 지속",
-    "en": "Revenue Recovery and Continued R&D Investment"
+    "ko": "제품 믹스 개선에 따른 레버리지 기대",
+    "en": "Potential leverage from an improving product mix"
    },
    "body": {
-    "ko": "2025년 매출액은 698.6억원으로 전년 대비 22.5% 증가하며 회복세를 보였고, 4분기에는 매출 241.9억원, 영업이익 48.7억원으로 실적이 크게 확대됐다. 회사는 매출의 17% 이상을 연구개발에 투자하며 전체 인력의 절반 이상을 연구인력으로 구성해 기술 경쟁력 확보에 주력하고 있다.",
-    "en": "2025 revenue recovered to KRW 69.86bn, up 22.5% year-over-year, and Q4 results expanded significantly to revenue of KRW 24.19bn and operating profit of KRW 4.87bn. The company invests over 17% of revenue in R&D and staffs more than half of its workforce with dedicated research personnel to secure technological competitiveness."
+    "ko": "HBM 검사장비는 기존 SMT 장비 대비 평균판매가격(ASP)이 수배에서 열 배 이상 높은 고부가 제품군으로 소개되고 있어, 매출 비중이 늘어날 경우 이익 증가폭이 매출 증가폭을 상회할 잠재력이 있다. 장비 산업 특성상 연구개발비와 고정비 비중이 높아 매출 증가 시 영업 레버리지 효과가 크게 작용할 수 있다는 점도 이런 구조를 뒷받침한다. 한국IR협의회는 2026년 반도체 부문 매출 비중이 SMT를 처음으로 넘어설 것으로 전망했는데, 이는 제품 믹스 개선의 방향성을 보여주는 관측이다.",
+    "en": "HBM inspection equipment is described as a high-value-added product category with an average selling price several times to more than ten times higher than existing SMT equipment, suggesting that profit growth could outpace revenue growth if its share of sales rises. Given the equipment industry's high proportion of R&D and fixed costs, revenue growth can produce a pronounced operating-leverage effect, reinforcing this structure. The Korea IR Council projected that the semiconductor segment's revenue share would overtake SMT for the first time in 2026, an observation that points to the direction of the ongoing product-mix improvement."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "순이익 변동성과 지속되는 적자",
-    "en": "Net Income Volatility and Persistent Losses"
+    "ko": "영업이익 흑자에도 지속되는 순손실",
+    "en": "Net losses persisting despite operating profitability"
    },
    "body": {
-    "ko": "2025년 영업이익은 흑자로 전환했으나 지배주주 순이익은 -37.9억원으로 적자가 이어졌고, 2026년에도 1분기 순손실에 이어 2분기에는 영업이익 흑자에도 불구하고 순손실(-22.3억원)이 재차 발생했다. 영업이익과 순이익 간 괴리가 반복되는 만큼 영업외 손익의 변동성이 실적 해석의 변수로 남아 있다.",
-    "en": "Although operating profit turned positive in 2025, owners' net income remained negative at -KRW 3.79bn, and 2026 saw a net loss in Q1 followed by another net loss of -KRW 2.23bn in Q2 despite positive operating profit. With the gap between operating and net income recurring, volatility in non-operating items remains a variable in interpreting results."
+    "ko": "2025년 영업이익은 31.8억원으로 흑자 전환했지만 지배주주 순손실은 37.9억원으로 2024년보다 확대됐다. 2026년 2분기에도 영업이익 13.9억원을 냈음에도 순손실이 22.3억원으로 커지는 등, 영업단과 순이익 간 괴리가 반복적으로 나타난다. 이런 비영업 요인의 변동성이 해소되지 않는다면 영업 실적 개선이 곧바로 주당 수익 개선으로 이어지지 않을 가능성이 있다.",
+    "en": "Operating profit turned positive at KRW 3.18bn in 2025, but the owners' net loss widened to KRW 3.79bn, larger than in 2024. Even in Q2 2026, when operating profit reached KRW 1.39bn, the net loss grew to KRW 2.23bn, illustrating a recurring gap between the operating line and net income. If this non-operating volatility is not resolved, improvements in operating performance may not translate directly into improved per-share earnings."
    }
   },
   {
    "title": {
-    "ko": "재무구조 악화와 현금흐름 부담",
-    "en": "Deteriorating Financial Structure and Cash Flow Pressure"
+    "ko": "재무구조 부담 확대",
+    "en": "Growing balance-sheet strain"
    },
    "body": {
-    "ko": "부채비율은 2023년 130.1%에서 2025년 316.2%로 크게 상승했고, 자기자본(지배주주 기준)은 같은 기간 324.1억원에서 255.6억원으로 줄었다. 영업활동현금흐름은 2023년 이후 3개년 연속 마이너스를 기록해, 장비 산업 특유의 매출채권·재고 회전 부담이 재무구조에 영향을 주고 있다.",
-    "en": "The debt ratio rose sharply from 130.1% in 2023 to 316.2% in 2025, while owners' equity fell from KRW 32.41bn to KRW 25.56bn over the same period. Operating cash flow has been negative for three consecutive years since 2023, reflecting receivables and inventory turnover burdens typical of the equipment industry weighing on the balance sheet."
+    "ko": "부채비율은 2023년 130.1%에서 2025년 316.2%로 급격히 높아졌고, 영업현금흐름도 2024년과 2025년 연속 순유출을 기록했다. 회사는 과거 전환사채(CB) 발행을 통해 유동성을 보강한 바 있어, 향후 추가 자금조달 과정에서 주식 희석 등 주주가치에 영향을 줄 수 있는 요인이 발생할 가능성을 배제할 수 없다. 매출 회복 속도에 비해 재무구조 개선 속도가 더딘 점은 지켜봐야 할 부분이다.",
+    "en": "The debt ratio rose sharply from 130.1% in 2023 to 316.2% in 2025, and operating cash flow recorded net outflows in both 2024 and 2025. The company has previously issued convertible bonds to bolster liquidity, and it cannot be ruled out that further fundraising could involve factors such as share dilution that may affect shareholder value. The fact that the balance sheet is improving more slowly than the pace of revenue recovery is a point that warrants continued monitoring."
    }
   },
   {
    "title": {
-    "ko": "여전히 높은 SMT 의존도와 성장 시차",
-    "en": "Continued SMT Dependence and Growth Lag"
+    "ko": "수주 기반 매출의 변동성과 고객 집중",
+    "en": "Order-based revenue volatility and customer concentration"
    },
    "body": {
-    "ko": "2025년 기준 매출의 66.7%가 여전히 SMT 부문에서 발생해, 반도체 부문 성장이 전체 실적에 본격적으로 반영되기까지는 시차가 있을 수 있다. 삼성전자 등과의 신규 파트너십은 아직 협의·평가 단계에 있어 실제 수주로 이어질지는 확인이 필요하다.",
-    "en": "As of 2025, 66.7% of revenue still came from the SMT segment, meaning there could be a lag before semiconductor segment growth is fully reflected in overall results. New partnerships with companies such as Samsung Electronics remain at the discussion and evaluation stage, and whether they translate into actual orders requires confirmation."
+    "ko": "개별 공급계약 규모가 최근 매출액 대비 5~18% 수준으로 크지 않은 건별 계약이 다수이며, 계약별 공급기간과 공급가액이 고객사 요청에 따라 변동될 수 있다고 회사가 직접 명시하고 있다. 8800WI-HBM 같은 신규 장비의 경우 고객사 내부 절차로 발주(PO) 시점이 지연된 사례가 있었던 것으로 파악된다. 소수의 대형 IDM 고객에 대한 의존도가 높은 구조에서는 특정 고객의 발주 시점 변화가 분기 실적의 큰 변동으로 이어질 수 있다.",
+    "en": "Many individual supply contracts are relatively modest, at roughly 5–18% of recent annual revenue, and the company itself has stated that contract periods and amounts can change at the customer's request. For new equipment such as the 8800WI-HBM, there have reportedly been cases where purchase-order timing was delayed due to the customer's internal procedures. In a structure with high dependence on a small number of large IDM customers, a shift in a single customer's ordering timeline can translate into significant quarterly earnings swings."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객사 집중 리스크",
-    "en": "Customer Concentration Risk"
+    "ko": "실적 변동성 리스크",
+    "en": "Earnings volatility risk"
    },
    "body": {
-    "ko": "개별 공급계약 규모가 매출액 대비 상당한 비중을 차지하는 경우가 많아(SK하이닉스 계약은 매출의 17.58%, 마이크론 계약은 7.2% 수준으로 공시됨) 특정 고객사의 발주 지연이나 계약 축소가 실적에 즉각적인 영향을 줄 수 있다. 소수 대형 고객에 대한 의존도가 높은 사업 구조 특성상 고객사 다변화 진행 상황을 지속적으로 확인할 필요가 있다.",
-    "en": "Individual supply contracts often represent a substantial share of revenue (the SK hynix contract was disclosed at 17.58% of revenue, and the Micron contract at 7.2%), meaning order delays or contract reductions from a single customer could have an immediate impact on results. Given the business structure's reliance on a small number of large customers, progress on customer diversification warrants continued monitoring."
+    "ko": "최근 다섯 개 분기 실적은 영업이익과 순이익이 서로 다른 방향으로 움직이는 구간이 반복돼 예측 가능성이 낮은 편이다. 대형 장비 인식 시점에 따라 특정 분기 매출이 급증하거나 급감할 수 있어 분기 단위 추세를 단순 연장해 해석하기 어렵다. 비영업 항목의 성격과 규모가 공개된 재무제표 부속 정보를 통해 추가로 확인될 필요가 있다.",
+    "en": "Results over the past five quarters have shown a recurring pattern of operating profit and net income moving in opposite directions, making them relatively difficult to predict. Revenue in a given quarter can spike or drop sharply depending on the timing of large equipment recognition, making it difficult to simply extrapolate quarterly trends. The nature and scale of non-operating items warrant further confirmation through disclosed financial-statement notes."
    }
   },
   {
    "cat": {
-    "ko": "환율 및 원자재 조달 리스크",
-    "en": "FX and Component Procurement Risk"
+    "ko": "고객·수주 리스크",
+    "en": "Customer and order risk"
    },
    "body": {
-    "ko": "해외 반도체·전자업체향 수출 비중이 높은 장비업체 특성상 환율 변동이 계약 금액과 손익에 영향을 줄 수 있다. 실제로 대만향 SMT 검사장비 계약 등은 달러화 기준으로 체결되며 환산 시점의 환율이 계약금액에 반영된 바 있다. 부품 조달 지연이나 원가 상승도 마진에 영향을 줄 수 있는 요인이다.",
-    "en": "As an equipment maker with a high share of exports to overseas semiconductor and electronics companies, currency fluctuations can affect contract values and profitability. Indeed, an SMT inspection equipment contract for Taiwan was denominated in US dollars, with the exchange rate at conversion reflected in the contract amount. Delays in component procurement or rising input costs are also factors that could affect margins."
+    "ko": "핵심 성장 동력인 HBM·SOCAMM 계열 장비는 소수의 글로벌 IDM 고객사에 대한 퀄 테스트 통과와 발주 시점에 크게 의존한다. 신규 장비의 경우 고객사 내부 절차로 발주가 지연된 전례가 있어, 예상 시점보다 매출 인식이 늦춰질 가능성이 있다. 특정 계약이 종료되는 시점(예: 2026년 11월 마이크론 계약 만료)에 후속 계약이 이어지지 않을 경우 매출 공백이 발생할 수 있다.",
+    "en": "The core growth drivers—HBM and SOCAMM-related equipment—depend heavily on qualification test outcomes and order timing at a small number of global IDM customers. For new equipment, there have been precedents of order delays due to customer-side internal procedures, raising the possibility that revenue recognition could be pushed back from expected timelines. If a follow-on contract does not materialize when a specific contract expires (for example, the Micron contract ending in November 2026), a revenue gap could result."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화 리스크",
-    "en": "Intensifying Competitive Risk"
+    "ko": "재무구조·자금조달 리스크",
+    "en": "Balance sheet and financing risk"
    },
    "body": {
-    "ko": "웨이퍼·패키지 검사장비 시장은 KLA, 캠텍, 싸이버옵틱스 등 해외 선도업체가 오랜 기간 과점해온 영역으로, 펨트론은 국산화 전략을 통해 후발주자로서 점유율을 확대해가는 위치에 있다. 퀄테스트를 통과하지 못하거나 경쟁사가 기술 격차를 좁힐 경우 신규 고객사 확보 속도가 예상보다 늦어질 수 있다.",
-    "en": "The wafer and package inspection equipment market has long been an oligopoly led by overseas incumbents such as KLA, Camtek, and CyberOptics, with Pemtron positioned as a later entrant expanding share through a localization strategy. If qualification tests are not passed or competitors narrow the technology gap, the pace of securing new customers could be slower than anticipated."
+    "ko": "부채비율이 316.2%까지 상승했고 영업현금흐름이 2년 연속 순유출을 기록한 만큼, 신규 장비 개발과 생산 캐파 확대에 필요한 자금을 외부 조달에 의존할 가능성이 있다. 과거 전환사채 발행 사례가 있었던 점을 고려하면 향후 추가 자금조달 시 주식 수 증가 등 주주가치에 영향을 줄 수 있는 요인이 발생할 수 있다. 재무구조 개선 여부는 향후 분기 현금흐름표를 통해 지속적으로 확인이 필요하다.",
+    "en": "With the debt ratio having risen to 316.2% and operating cash flow posting net outflows for two consecutive years, the company may need to rely on external financing to fund new equipment development and capacity expansion. Given the precedent of convertible bond issuance, further fundraising could involve factors affecting shareholder value, such as an increase in share count. Whether the balance sheet improves will need to be continuously verified through future quarterly cash flow statements."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 초순",
-    "en": "Early November 2026"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "2026년 3분기 잠정실적 공시 예정 시점으로, 반도체 부문 매출 비중이 시장 전망대로 확대되는지와 순이익 흑자 전환 여부를 확인할 시점이다.",
-    "en": "Preliminary Q3 2026 results are expected around this time, a point to check whether the semiconductor segment's revenue share expands as forecast and whether net income turns positive."
+    "ko": "2026년 3분기 잠정실적 공시 예정 시기로, 반도체 부문 매출 비중이 SMT를 넘어섰는지와 영업이익·순이익 간 괴리가 좁혀졌는지를 확인할 필요가 있다.",
+    "en": "This is the expected window for the Q3 2026 preliminary results disclosure; it will be important to check whether the semiconductor segment's revenue share has overtaken SMT and whether the gap between operating profit and net income has narrowed."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 16일",
-    "en": "November 16, 2026"
+    "ko": "2026년 11월 16일 전후",
+    "en": "Around November 16, 2026"
    },
    "what": {
-    "ko": "마이크론 소캠2(SOCAMM2) 검사장비 공급계약 종료 시점으로, 계약 이행 완료 및 후속 수주 여부를 확인할 필요가 있다.",
-    "en": "This is the expiration date of the Micron SOCAMM2 inspection equipment supply contract; completion of contract fulfillment and any follow-on orders should be confirmed."
+    "ko": "마이크론 말레이시아 법인과의 SOCAMM2 검사장비 공급계약 만료 시점으로, 후속 계약 체결 여부가 고객 관계의 지속성을 보여주는 지표가 될 수 있다.",
+    "en": "This marks the expiration of the SOCAMM2 inspection equipment supply contract with Micron's Malaysian subsidiary; whether a follow-on contract is signed could serve as an indicator of the durability of this customer relationship."
    }
   },
   {
    "when": {
-    "ko": "수시(공시 발생 시)",
-    "en": "Ongoing (upon disclosure)"
+    "ko": "2026년 4분기 중",
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "삼성전자, ASE, 파워텍 등과 추진 중인 신규 파트너십 및 신규 고객사향 HBM·D램 검사장비 공급 협의의 구체적 계약 체결 여부를 확인해야 한다.",
-    "en": "Concrete contract signings related to the pursued new partnerships with Samsung Electronics, ASE, and PowerTech, as well as discussions to supply HBM/DRAM inspection equipment to a new customer, should be monitored."
+    "ko": "8800WI-HBM 초도 물량의 국내 IDM 대상 공급 및 매출 인식 여부를 확인해야 하며, 이는 고단가 HBM 장비 매출화의 실질적 개시 시점을 보여줄 수 있다.",
+    "en": "It will be important to confirm whether initial 8800WI-HBM units are supplied to a domestic IDM and recognized as revenue in this period, which could mark the practical starting point for monetizing the high-priced HBM equipment."
    }
   },
   {
    "when": {
-    "ko": "2026년 반기·3분기 재무제표 공시 시점",
-    "en": "Upon H1/Q3 2026 financial statement disclosures"
+    "ko": "2026년 연말까지",
+    "en": "By the end of 2026"
    },
    "what": {
-    "ko": "부채비율과 영업활동현금흐름의 개선 여부를 확인해, 재무구조 안정화가 이뤄지고 있는지 점검할 필요가 있다.",
-    "en": "Check whether the debt ratio and operating cash flow show improvement, to assess whether financial structure stabilization is underway."
+    "ko": "미국 IDM을 대상으로 진행 중인 메모리모듈 검사장비 MARS의 최종 퀄 테스트 통과 여부를 확인해야 하며, 통과 시 후속 수주로 이어지는지도 함께 살펴볼 필요가 있다.",
+    "en": "The outcome of the final qualification test for the MARS memory-module inspection equipment, currently underway at a US IDM, should be confirmed, along with whether a pass leads to follow-on orders."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "펨트론은 SMT 검사장비 중심에서 반도체 후공정 검사장비로 사업 구조를 전환하는 과정에 있으며, SK하이닉스·마이크론·글로벌파운드리 등 글로벌 반도체 기업향 수주가 이어지고 있다는 점은 분명한 강세 요인이다. 2025년 매출은 전년 대비 22.5% 증가하고 영업이익도 흑자로 전환했으나, 순이익은 지배주주 기준 여전히 적자를 벗어나지 못했고 2026년 상반기에도 영업이익과 순이익 간 괴리가 반복되고 있다. 부채비율 상승과 3개년 연속 마이너스 영업활동현금흐름은 재무구조 측면에서 지켜봐야 할 대목이다. 반도체 부문 매출 비중 확대와 신규 고객사 파트너십의 실제 계약 체결 여부가 향후 실적 방향을 가늠하는 핵심 변수가 될 것으로 보인다. 순자산 대비 거래 수준은 시장의 성장 기대를 반영한 프리미엄 구간에 있는 것으로 관찰되며, 이익의 방향성과 지속성이 확인되기까지는 실적 변동성에 유의할 필요가 있다.",
-   "en": "Pemtron is in the midst of transitioning its business structure from SMT-centric inspection equipment toward semiconductor back-end inspection gear, and the continuing stream of orders from global chipmakers such as SK hynix, Micron, and GlobalFoundries is a clear positive factor. 2025 revenue grew 22.5% year-over-year and operating profit turned positive, yet owners' net income remained in the red, and the gap between operating and net income recurred through the first half of 2026. The rising debt ratio and three consecutive years of negative operating cash flow are aspects of the financial structure that warrant continued attention. The expansion of the semiconductor segment's revenue share and whether pursued new customer partnerships actually convert into signed contracts will likely be key variables shaping the earnings trajectory going forward. The trading level relative to net assets appears to sit in a premium range reflecting market growth expectations, and earnings volatility bears watching until the direction and durability of profits are confirmed."
+   "ko": "펨트론은 SMT 검사장비라는 안정적 현금창출 기반 위에서 HBM·SOCAMM 등 차세대 메모리 검사장비로 사업 축을 옮기는 전환기에 있다. 2025년 영업이익이 흑자로 돌아선 점은 긍정적이지만, 같은 기간 지배주주 순손실이 확대되고 부채비율이 급등한 점, 영업현금흐름이 2년 연속 순유출을 기록한 점은 균형 잡힌 시각에서 함께 살펴봐야 할 대목이다. 분기별로는 영업이익과 순이익의 방향이 어긋나는 구간이 반복돼, 향후 실적의 질적 개선 여부를 판단하려면 비영업 항목의 성격이 안정화되는지를 지켜볼 필요가 있다. SK하이닉스·마이크론 등 글로벌 IDM과의 계약 공시는 고객 기반 확대의 증거이지만, 개별 계약 규모가 크지 않고 발주 시점이 고객사 내부 절차에 좌우되는 만큼 수주의 연속성 확인이 중요하다. 회사와 일부 증권사는 2026년에 반도체 부문 매출 비중이 SMT를 넘어설 것으로 전망하고 있으나, 이는 추정치이며 실제 이행 여부는 향후 분기 실적을 통해 순차적으로 확인돼야 한다. 결국 이 종목에 대한 판단은 사업 구조 전환의 속도와 재무구조 안정화, 순이익 회복이 동시에 확인되는지에 달려 있다.",
+   "en": "Pemtron is in a transitional phase, shifting its business axis from the stable cash-generating SMT inspection equipment base toward next-generation memory inspection equipment such as HBM and SOCAMM. The return to operating profitability in 2025 is a positive development, but it should be weighed alongside the widening owners' net loss over the same period, the sharp rise in the debt ratio, and two consecutive years of net operating cash outflows. The recurring divergence between operating profit and net income on a quarterly basis means that judging the qualitative improvement in results going forward will require watching whether non-operating items stabilize. Disclosed contracts with global IDMs such as SK Hynix and Micron are evidence of a broadening customer base, but since individual contract sizes are not large and order timing depends on customer-side internal procedures, confirming the continuity of order flow remains important. The company and some securities firms project that the semiconductor segment's revenue share will overtake SMT in 2026, but this is an estimate whose realization needs to be confirmed sequentially through upcoming quarterly results. Ultimately, an assessment of this stock hinges on whether the pace of business transition, balance-sheet stabilization, and a recovery in net income can all be confirmed together."
   }
  },
  "sources": [
-  "https://m.finance.daum.net/quotes/A168360/news/stock/20260407102754707",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A168360",
-  "https://www.investing.com/equities/pemtron-earnings",
+  "https://m.irgo.co.kr/IR-COMP/168360",
   "https://m.thinkpool.com/compDiscuss/cont/1024283",
-  "https://stocks.pluconnect.com/168360_%ED%8E%A8%ED%8A%B8%EB%A1%A0/",
-  "https://fintel.io/s/kr/168360",
-  "https://markets.hankyung.com/stock/168360",
-  "https://m.irgo.co.kr/IR-COMP/168360/%ED%8E%A8%ED%8A%B8%EB%A1%A0-IR-PAGE",
-  "https://www.etnews.com/20250401000325",
-  "https://www.leadeconomy.co.kr/news/articleView.html?idxno=7018",
-  "https://www.etoday.co.kr/news/view/2596890",
-  "https://www.etoday.co.kr/news/view/2428206",
-  "https://www.etoday.co.kr/news/view/2537523",
-  "https://www.etoday.co.kr/news/view/2478866",
   "https://m.thinkpool.com/compDiscuss/cont/1024215",
-  "https://www.etoday.co.kr/news/view/2592291",
-  "https://www.asiae.co.kr/article/2025091916012989259",
-  "https://news.infostock.co.kr/a"
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1685057917259.pdf",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A168360",
+  "https://m.finance.daum.net/quotes/A168360/news/stock/20260407102754707",
+  "https://m.thinkpool.com/compDiscuss/cont/1026005",
+  "https://marketin.edaily.co.kr/News/ReadE?newsId=03483366645354456",
+  "https://kind.krx.co.kr/external/dst/newListReport/20250630000243500/%ED%95%98%EB%82%98%EC%A6%9D%EA%B6%8C_%ED%8E%A8%ED%8A%B8%EB%A1%A0%20%EB%A6%AC%ED%8F%AC%ED%8A%B8.pdf",
+  "https://m.thinkpool.com/item/168360",
+  "https://m.thinkpool.com/stockDiscuss/168360/cont/11824863",
+  "https://finance.finup.co.kr/Stock/168360",
+  "https://fintel.io/s/kr/168360",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=70213",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=62546",
+  "http://www.ksdaily.co.kr/news/articleView.html?idxno=106555",
+  "https://file.alphasquare.co.kr/media/pdfs/market-report/%ED%8E%A8%ED%8A%B8%EB%A1%A0%EC%A0%81%EC%B8%B520260226%EB%8C%80%EC%8B%A0%EC%A6%9D%EA%B6%8C.",
+  "https://dealsite.co.kr/articles/139234/068020"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -223,11 +223,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 06:04",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -238,6 +238,7 @@
     "np_owner": -3793010941,
     "equity": 25628466193,
     "equity_owner": 25561231414,
+    "equity_nci": 67234779,
     "liab": 81032082501,
     "cfo": -5722460731,
     "eps_basic": -180,
@@ -253,6 +254,7 @@
     "np_owner": -1908161661,
     "equity": 28041378121,
     "equity_owner": 27978290641,
+    "equity_nci": 63087480,
     "liab": 43645846945,
     "cfo": -4977652257,
     "eps_basic": -90,
@@ -268,6 +270,7 @@
     "np_owner": 7118964093,
     "equity": 32468464379,
     "equity_owner": 32410804351,
+    "equity_nci": 57660028,
     "liab": 42228561394,
     "cfo": 8172766773,
     "eps_basic": 669,
@@ -283,6 +286,7 @@
     "np_owner": 5240363309,
     "equity": 26140675230,
     "equity_owner": 26084446052,
+    "equity_nci": 56229178,
     "liab": 46621157314,
     "cfo": 3966502098,
     "eps_basic": 543,
@@ -324,24 +328,26 @@
    }
   ],
   "valuation": {
-   "price": 12160,
-   "mcap": 0.2723,
+   "price": 12740,
+   "mcap": 0.2853,
    "shares": 22392557,
    "total_shares": 21288284,
    "wavg_shares": 21454979,
-   "per": null,
-   "eps": null,
-   "pbr": null,
-   "bps": null,
+   "per": 2123.333,
+   "eps": 6,
+   "pbr": 5.2106,
+   "bps": 2445,
    "roe_ttm": 0.4,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 127724940,
    "ccy": "KRW",
-   "pbr_krx": 10.0,
+   "bps_src": "자체",
+   "eps_src": "순이익÷주식수",
+   "pbr_krx": 10.48,
    "bps_krx": 1216.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 50.0,
-   "div": 0.41
+   "div": 0.39
   }
  }
 }

@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "큐알티 — 신뢰성 독점 지위 위에 우주·AI 전방 확장 가속",
-  "en": "QRT — Monopoly Reliability Position Accelerates Into Aerospace & AI"
+  "ko": "HBM 확산 속 신뢰성 검증 수요 확대",
+  "en": "Reliability Testing Demand Grows Amid HBM Expansion"
  },
  "lead": {
-  "ko": "국내 유일 반도체 신뢰성·방사선 시험 기업으로서 AI 고도화·뉴스페이스 정책·용인 클러스터 확장이라는 세 가지 구조적 전방 수요가 겹치며, 2026년 1분기 영업이익률이 2022년 피크 수준에 근접하는 회복세를 보이고 있다.",
-  "en": "As Korea's sole semiconductor reliability and radiation testing specialist, QRT is seeing operating margins approach 2022 peak levels in Q1 2026, driven by the simultaneous convergence of AI chip advancement, the New Space policy era, and the Yongin semiconductor cluster expansion."
+  "ko": "국내 유일 반도체 신뢰성 검증 전문기업 큐알티는 HBM·CXL 등 차세대 메모리 확산에 따른 검사 수요 확대와 분기별 실적 변동성이 동시에 나타나는 국면에 있다.",
+  "en": "QRT, the only listed semiconductor reliability verification specialist in Korea, is navigating a phase where testing demand tied to next-generation memory such as HBM and CXL is expanding alongside notable quarter-to-quarter earnings volatility."
  },
  "keypoints": [
   {
-   "ko": "2026년 1분기 매출 204억원(전년 동기 대비 +32.7%)·영업이익률 14.6%를 기록해 2022년 이후 최고 수준의 분기 수익성 회복",
-   "en": "Q1 2026 revenue of KRW 20.4B (+32.7% YoY) with a 14.6% operating margin marks the strongest quarterly profitability since the 2022 peak cycle."
+   "ko": "2025년 연결 매출 688.6억원으로 3년 연속 증가했으나 영업이익률은 6.9%로 2022년(17.2%) 대비 낮은 수준에 머물러 있다.",
+   "en": "Consolidated 2025 revenue reached KRW 68.86 billion, up for a third straight year, but the operating margin of 6.9% remains well below the 17.2% recorded in 2022."
   },
   {
-   "ko": "민간 기업 중 국내 유일하게 TID·SEE 우주방사선 시험을 동시 수행 가능 — 뉴스페이스 반도체 검증 시장의 독점적 사업자",
-   "en": "QRT is the only private Korean firm capable of performing both TID and SEE space radiation testing simultaneously, giving it an exclusive position in the nascent domestic space-grade semiconductor verification market."
+   "ko": "2026년 1분기 영업이익 29.8억원(마진 약 14.6%)으로 분기 최고 수익성을 보였으나 2분기에는 12.3억원으로 되돌아가는 등 분기별 편차가 크다.",
+   "en": "Operating profit hit a quarterly high of about KRW 2.98 billion (roughly 14.6% margin) in 1Q26, but fell back to KRW 1.23 billion in 2Q26, underscoring wide quarter-to-quarter swings."
   },
   {
-   "ko": "종합분석 부문이 전년 동기 대비 50% 이상 성장하며 단순 신뢰성 평가 중심에서 고부가가치 분석·장비 복합 구조로 믹스 전환 진행 중",
-   "en": "The comprehensive failure analysis segment has grown 50%+ YoY, gradually shifting the revenue mix from legacy reliability testing toward higher-value analysis and proprietary equipment services."
+   "ko": "HBM3E·HBM4, CXL, SoCAMM2 등 차세대 메모리·인터커넥트 확산이 신뢰성 평가 수요의 구조적 성장 동력으로 지목된다.",
+   "en": "The spread of next-generation memory and interconnect technologies including HBM3E/HBM4, CXL, and SoCAMM2 is cited as a structural growth driver for reliability testing demand."
   },
   {
-   "ko": "중성자 소프트에러 검출 장비·5G RF 수명평가 장비가 2026년 공급 확대 단계에 진입하며 장비 사업 매출이 본격 가시화 구간 도달",
-   "en": "The neutron soft-error detection device and 5G RF lifetime evaluation system both entered commercial supply-expansion phases in 2026, marking the beginning of meaningful equipment segment revenue."
+   "ko": "우주항공·방산 부문과 AI 반도체 팹리스 고객으로 응용처가 다변화되고 있으나 2025년 부채비율은 74.2%로 전년(50.9%) 대비 크게 높아졌다.",
+   "en": "Application areas are diversifying into space/defense and AI chip fabless customers, but the 2025 debt ratio rose sharply to 74.2% from 50.9% a year earlier."
   },
   {
-   "ko": "우주항공청 주춧돌사업(225억원, 2025~2029) 참여·KRISS MOU·SK하이닉스 용인 클러스터 투자 확정 등 전방 정책·인프라 환경이 중기 수요의 제도적 기반 형성",
-   "en": "Selection in the government's KRW 22.5B Footstone Project (2025–2029), a radiation-testing MOU with KRISS, and the confirmed SK Hynix Yongin cluster mega-investment together form an institutional basis for medium-term demand growth."
+   "ko": "KB증권은 2026년 3월 보고서에서 연간 매출 821억원, 영업이익 121억원(OPM 14.7%)을 전망했으나, 상반기 실적은 이에 견줘 진행 중인 단계다.",
+   "en": "KB Securities projected FY2026 revenue of KRW 82.1 billion and operating profit of KRW 12.1 billion (14.7% margin) in a March 2026 report, though first-half results are still tracking toward that outlook."
   }
  ],
  "business": {
-  "ko": "큐알티(QRT)는 SK하이닉스 엔지니어링의 반도체 검사부문이 2014년 분할 설립되어 2022년 코스닥에 상장한 반도체·전자부품 신뢰성 평가·분석 전문 기업이다. 사업 구조는 ①신뢰성 평가(과거 매출의 70% 이상을 차지한 핵심 부문으로 양산 적합성 판단), ②종합분석(불량 원인 규명 및 고난도 첨단 분석), ③장비 사업(자체 개발 평가장비 개발·판매)의 세 축으로 구성된다. 삼성전자·SK하이닉스를 포함한 국내외 약 500여 개 고객사를 보유하고 있으며, 독립 제3자 검증기관으로서 객관적·정밀한 데이터를 제공한다. 적용 분야는 모바일·디스플레이·자동차 전장·5G·AI·우주항공으로 다변화되고 있으며, 미국 국방성 군사표준(MIL-STD) 기반 신뢰성 시험 능력을 갖춘 KOLAS 공인 시험기관으로 인정받고 있다. 민간 기업 중 국내 유일하게 우주방사선 분야의 TID(총 이온화 선량)와 SEE(단일 사건 효과) 시험을 동시 수행할 수 있어 방산·우주 분야에서 높은 진입장벽을 보유한다. 장비 사업 부문에서는 5G 시스템 반도체 수명평가 장비와 중성자 소프트에러 평가 장비를 자체 개발 중이며, 2026년부터 민간 기업 협업 및 공급 확대 단계에 들어갔다. 경기도 수원시 영통구 소재 본사 외에 용인 반도체 클러스터 내 생산 시설 확장도 추진 중이다.",
-  "en": "QRT was established in 2014 when SK Hynix Engineering's semiconductor inspection division was spun off, and the company was listed on KOSDAQ in 2022. Its business is built on three pillars: (1) Reliability Testing—historically the core segment accounting for over 70% of revenue, focused on production qualification; (2) Comprehensive Failure Analysis—identifying defect root causes and performing advanced diagnostics; and (3) Equipment Business—developing and selling proprietary evaluation instruments. QRT serves approximately 500 domestic and international clients, including Samsung Electronics and SK Hynix, operating as an independent third-party verification laboratory. End markets span mobile, display, automotive, 5G, AI, and aerospace. The company is a KOLAS-accredited institution with capabilities compliant with the U.S. MIL-STD military standard. Crucially, QRT is the only private Korean firm equipped to perform both TID (Total Ionizing Dose) and SEE (Single Event Effect) space radiation testing simultaneously, conferring a high entry barrier in space and defense markets. On the equipment side, the 5G RF chip lifetime evaluation system and neutron soft-error detection device entered commercial supply-expansion phases in 2026. Facility expansion within the Yongin semiconductor cluster is also underway alongside the Suwon headquarters."
+  "ko": "큐알티는 SK하이닉스의 전신인 현대전자의 품질보증 부서에서 출발해 2014년 에스케이하이이엔지의 반도체 검사부문이 분할되어 설립됐으며, 2022년 코스닥 시장에 상장됐다. 회사는 반도체 신뢰성 평가, 불량 원인을 규명하는 종합분석, 그리고 자체 개발한 신뢰성 시험 장비 공급을 3대 사업축으로 운영한다. 국내외 주요 반도체 기업을 포함해 약 500여개 고객사를 확보하고 있으며, 고성능·고신뢰성 반도체 수요 확대에 따라 신뢰성 평가가 필수 공정으로 자리 잡으면서 안정적인 사업 기반을 구축하고 있다. 해당 시장은 기술 진입장벽과 평가 단가가 높아 후발주자의 진입이 쉽지 않은 구조로 평가된다. 최근에는 리벨리온, 딥엑스, 모빌린트 등 국내 AI 반도체 팹리스와의 협력이 확대되며 고객 다변화가 진행되고 있고, 우주항공청·항공우주연구원 등 국가기관 및 민간 대기업의 우주·방산 부품 품질검사 수요도 새로운 응용처로 부상하고 있다. 회사는 신뢰성 평가에 더해 종합분석 부문의 성과를 키우기 위해 2022~2024년 100억원, 2025년에는 113억원을 투자한 것으로 알려졌다. SoCAMM(소켓형 메모리 모듈)과 CXL 등 신규 인터커넥트 생태계가 양산 준비 단계에 들어서면서 모듈 단위 신뢰성 검증 수요도 확대되는 추세다. 이처럼 큐알티는 메모리 고도화와 응용처 확장이라는 두 축을 통해 사업 영역을 점진적으로 넓혀가고 있다.",
+  "en": "QRT originated from the quality assurance department of Hyundai Electronics, the predecessor of SK hynix, and was established in 2014 when the semiconductor inspection division of SK hi-tech E&G was spun off; the company listed on KOSDAQ in 2022. Its business rests on three pillars: semiconductor reliability evaluation, comprehensive failure analysis, and supply of self-developed reliability test equipment. The company has secured roughly 500 customers including major domestic and overseas semiconductor firms, and has built a stable business base as reliability evaluation has become an essential process amid demand for high-performance, high-reliability chips. This market is regarded as difficult for new entrants given high technical barriers and evaluation unit pricing. More recently, collaboration has expanded with domestic AI chip fabless firms such as Rebellions, DeepX, and Mobilint, diversifying the customer base, while quality inspection demand for space and defense components from government bodies such as the Korea AeroSpace Administration and the Korea Aerospace Research Institute, along with large private conglomerates, has emerged as a new application area. To grow its comprehensive analysis segment alongside reliability evaluation, the company is reported to have invested about KRW 10 billion between 2022 and 2024 and roughly KRW 11.3 billion in 2025 alone. As new interconnect ecosystems such as SoCAMM (socket-type memory modules) and CXL move toward mass production, demand for module-level reliability verification is also expanding. Through these two axes—memory advancement and application diversification—QRT is gradually broadening its business scope."
  },
  "earnings": {
-  "ko": "2022년 매출 596억원·영업이익률 17.2%로 창사 이래 최고 실적을 기록한 이후, 반도체 업황 악화와 비용 증가가 겹친 2023년에는 매출이 533억원으로 감소하고 영업이익률이 1.4%까지 급락했다. 2024년에는 매출 653억원·영업이익률 7.3%로 빠른 회복세를 나타냈으며, 2025년 연간 매출은 689억원(전년 대비 +5.5%)·영업이익 48억원(+0.3%)으로 성장세를 이어갔으나 영업이익률은 6.9%로 소폭 후퇴했다. 분기별 흐름을 보면 2025년 1분기(매출 154억원·영업이익률 약 3.7%)를 저점으로, 2분기 약 6.8%, 3분기 약 10.7%로 점진적으로 개선되었다가 4분기에는 계절적 비수기로 약 5.8%로 하락했다. 그러나 2026년 1분기에는 매출 204억원(전년 동기 대비 +32.7%)·영업이익 약 30억원으로 영업이익률이 약 14.6%에 달해 2022년 피크 수준(17.2%)에 근접하는 큰 폭의 개선이 이루어졌다. 이러한 회복은 종합분석 부문의 고성장(2025년 상반기 전년 동기 대비 약 +50%), 장비 매출 반영 시작, AI·우주 분야 고부가가치 서비스 확대에 기인한 것으로 파악된다. 한편 영업활동 현금흐름은 2022년 191억원 → 2023년 90억원 → 2024년 160억원 → 2025년 138억원으로 수익성 사이클에 연동되면서도 안정적인 현금 창출을 유지했다. 부채비율은 2024년 50.9%에서 2025년 74.2%로 23%p 이상 상승했는데, 이는 총부채가 460억원에서 663억원으로 200억원 이상 증가한 결과로 시설 확장 투자가 주된 배경으로 분석된다.",
-  "en": "QRT posted record revenue of KRW 59.6B and an operating margin of 17.2% in 2022, but a semiconductor downcycle and rising costs in 2023 pushed revenue down to KRW 53.3B while operating margin collapsed to 1.4%. A swift recovery followed in 2024 with revenue of KRW 65.3B and OPM of 7.3%; full-year 2025 saw revenue of KRW 68.9B (+5.5% YoY) and operating profit of KRW 4.8B (+0.3%), though OPM dipped slightly to 6.9%. On a quarterly basis, Q1 2025 was the weakest (revenue KRW 15.4B, OPM ~3.7%), with steady sequential improvement through Q3 2025 (OPM ~10.7%), followed by a seasonal dip in Q4 2025 (OPM ~5.8%). Q1 2026 then delivered a sharp rebound: revenue of KRW 20.4B (+32.7% YoY) with operating profit of ~KRW 3.0B, implying OPM of ~14.6%—approaching the 2022 peak of 17.2%. This recovery reflects strong growth in the comprehensive failure analysis segment (approximately 50% YoY in 1H 2025), early equipment revenues, and expansion into high-value AI and space-related services. Operating cash flow remained resilient across the cycle: KRW 19.1B (2022), KRW 9.0B (2023), KRW 16.0B (2024), and KRW 13.8B (2025). The debt ratio rose sharply from 50.9% (2024) to 74.2% (2025), as total liabilities increased by over KRW 20B from KRW 46.0B to KRW 66.3B, primarily reflecting stepped-up capital expenditure for facility expansion."
+  "ko": "연결 매출액은 2022년 596.3억원에서 2023년 532.6억원으로 줄었다가 2024년 652.5억원, 2025년 688.6억원으로 2년 연속 회복세를 보였다. 영업이익률은 2022년 17.2%에서 2023년 1.4%로 급락한 뒤 2024년 7.3%, 2025년 6.9%로 개선됐으나 과거 최고 수준에는 미치지 못하고 있다. 지배주주 순이익은 2022년 64.3억원에서 2023년 26.2억원으로 줄었고, 2024년 28.6억원, 2025년 28.9억원으로 완만하게 유지되는 모습이다. 분기별로 보면 2025년 3분기 매출 190.3억원, 영업이익 20.5억원(마진 약 10.7%)으로 개선됐다가 4분기에는 매출 170.8억원, 영업이익 9.9억원, 순이익 3.1억원으로 크게 낮아졌다. 이후 2026년 1분기에는 매출 204.1억원, 영업이익 29.8억원(마진 약 14.6%), 순이익 26.8억원으로 분기 최고 수준의 수익성을 기록했으나, 2분기에는 매출 185.0억원, 영업이익 12.3억원, 순이익 11.1억원으로 다시 낮아졌다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 기준으로는 매출 약 750억원, 영업이익 약 72억원, 지배주주 순이익 약 55억원을 기록해 연간 단위로 환산 시 2025년 실적을 상회하는 수준이다. 부채비율은 2023년 41.7%, 2024년 50.9%에서 2025년 74.2%로 크게 상승했는데, 이는 부채 총액이 459.6억원에서 662.6억원으로 늘어난 데 따른 것으로 설비 투자나 외부 자금 조달 확대와 관련된 것으로 해석된다. 분기별 실적의 진폭이 큰 점은 프로젝트 단위 수주·평가 매출 인식 구조의 특성을 보여준다.",
+  "en": "Consolidated revenue declined from KRW 59.63 billion in 2022 to KRW 53.26 billion in 2023, then recovered for two straight years to KRW 65.25 billion in 2024 and KRW 68.86 billion in 2025. The operating margin plunged from 17.2% in 2022 to 1.4% in 2023, before improving to 7.3% in 2024 and 6.9% in 2025, still below its earlier peak. Net income attributable to owners fell from KRW 6.43 billion in 2022 to KRW 2.62 billion in 2023, then held broadly steady at KRW 2.86 billion in 2024 and KRW 2.89 billion in 2025. On a quarterly basis, 3Q25 revenue of KRW 19.03 billion and operating profit of KRW 2.04 billion (roughly 10.7% margin) improved before falling sharply in 4Q25 to revenue of KRW 17.08 billion, operating profit of KRW 0.99 billion, and net income of KRW 0.31 billion. This was followed by 1Q26, the strongest quarter in the recent window, with revenue of KRW 20.41 billion, operating profit of KRW 2.98 billion (roughly 14.6% margin), and net income of KRW 2.68 billion, before easing again in 2Q26 to revenue of KRW 18.50 billion, operating profit of KRW 1.23 billion, and net income of KRW 1.11 billion. Summed over the most recent four quarters (3Q25–2Q26), revenue totaled about KRW 75.0 billion, operating profit about KRW 7.24 billion, and net income attributable to owners about KRW 5.45 billion, which annualizes above full-year 2025 levels. The debt ratio rose sharply from 41.7% in 2023 and 50.9% in 2024 to 74.2% in 2025, as total liabilities increased from KRW 45.96 billion to KRW 66.26 billion, consistent with expanded facility investment or external financing. The wide swings between quarters reflect the project-based nature of order intake and revenue recognition in the reliability testing business."
  },
  "industry": {
-  "ko": "반도체 신뢰성 평가 시장은 공정 미세화·고집적화·첨단 패키징(HBM·SOCAMM 등) 진전과 함께 AI·자율주행·우주항공·방산 분야의 고신뢰성 수요 급증으로 성장 사이클이 강화되고 있다. SK하이닉스는 용인 클러스터 1기 팹에 약 21조6000억원 투자를 확정하고 클린룸 오픈 시점을 2027년 2월로 앞당겼으며, 이는 인근 신뢰성 시험·분석 수요 증가의 직접적 기반이 된다. AI 반도체 고도화(HBM4·차세대 패키징)는 결함 분석 난도를 높여 종합분석 단가 상승 요인으로 작용한다. 우주 분야에서는 우주항공청 주도의 뉴스페이스 정책과 민간 위성 발사 증가로 방사선 내성 시험 수요가 국내에서 새롭게 형성되고 있다. 우주항공청·항공우주연구원이 추진하는 '주춧돌사업'(2025~2029, 총 225억원)은 우주 부품 6종 국산화와 방사선 시험기술 확보를 목표로 하며, 큐알티가 참여 기관으로 선정되어 있다. 경쟁구도 측면에서 글로벌 독립 시험기관(Intertek·TÜV SÜD 등)과 대형 반도체 기업의 자체 인프라가 잠재 경쟁자이나, 국내 인증 요건·고객 밀착형 서비스 구조상 국내 외부 위탁 수요의 실질적 대안은 제한적이다. 국내 AI 반도체 스타트업(리벨리온·딥엑스·모빌린트 등) 생태계의 성장도 번인 테스트부터 종합분석까지 턴키 서비스 수요를 새롭게 창출하는 요인이다.",
-  "en": "The semiconductor reliability testing market is in a strengthening growth cycle driven by process miniaturization, high-density packaging (HBM, SOCAMM), and surging demand for high-reliability chips in AI, autonomous vehicles, aerospace, and defense. SK Hynix confirmed an approximately KRW 21.6T investment in its Yongin Cluster Fab 1, moving up the clean room opening to February 2027, creating a direct demand base for nearby reliability testing. Advances in AI chip complexity (HBM4, next-generation packaging) are increasing failure analysis difficulty and supporting higher per-unit pricing for analysis services. In the space sector, the Korea Aerospace Administration's New Space policy and growing domestic satellite launches are generating entirely new demand for radiation hardness testing that was previously outsourced overseas. The government-led Footstone Project (2025–2029, KRW 22.5B), in which QRT is a named participant, targets localization of six core space components and development of domestic radiation testing methodologies. While global independent testing houses and in-house semiconductor firm labs present competitive alternatives, domestic regulatory requirements and proximity-driven service models limit effective substitution for locally outsourced demand. The emerging domestic AI chip startup ecosystem (Rebellions, DeepX, Mobilint, etc.) is also creating new turnkey service demand spanning burn-in testing to comprehensive failure analysis."
+  "ko": "세계반도체무역통계기구(WSTS)는 2026년 글로벌 반도체 시장이 전년 대비 25% 이상 성장해 약 9,750억 달러에 이를 것으로 전망하며, 이 중 메모리 부문이 전체 성장률을 상회하는 30%대 증가세를 보일 것으로 내다봤다. BofA는 2026년 HBM 시장 규모를 전년 대비 58% 증가한 546억 달러로 추산했다. 카운터포인트리서치에 따르면 SK하이닉스는 HBM 시장에서 과점적 지위를 유지하고 있으며, SK하이닉스는 2026년 2분기 매출 79조 3,187억원, 영업이익 60조 5,426억원의 분기 사상 최대 실적을 발표하며 AI 서버용 고성능 제품 판매 확대를 실적 개선의 배경으로 제시했다. 삼성전자 역시 2026년 2월 세계 최초로 HBM4를 양산 출하했고, 3분기에는 HBM4 매출을 2분기 대비 3배 이상 확대해 하반기 HBM 매출의 60%를 넘기겠다는 목표를 밝혔다. 이처럼 HBM3E에서 HBM4로의 세대 전환이 가속화되는 국면은 신뢰성 평가 난도와 물량을 동시에 끌어올리는 요인으로 지목된다. 큐알티는 국내에서 상장된 독립 신뢰성 검증 전문기업으로는 유일한 위치에 있어 대형 IDM들의 자체 품질보증 조직과는 차별화된 외주 검증 서비스를 제공하지만, 동시에 고객사의 내부 검사 역량 확충이나 해외 인증기관과의 경쟁 가능성도 함께 존재한다.",
+  "en": "The World Semiconductor Trade Statistics (WSTS) organization projected that the global semiconductor market would grow more than 25% year-on-year in 2026 to roughly $975 billion, with the memory segment expanding at a rate in the 30% range that outpaces the overall market. BofA estimated the 2026 HBM market at $54.6 billion, up 58% year-on-year. According to Counterpoint Research, SK hynix has maintained an oligopolistic position in the HBM market, and SK hynix reported record quarterly results in 2Q26 with revenue of KRW 79.32 trillion and operating profit of KRW 60.54 trillion, attributing the improvement to expanded sales of high-performance products for AI servers. Samsung Electronics also began mass shipment of HBM4 for the first time globally in February 2026 and stated a target to more than triple HBM4 revenue quarter-on-quarter in the third quarter, aiming for HBM4 to exceed 60% of total HBM revenue in the second half. This accelerating generational transition from HBM3E to HBM4 is cited as a factor that raises both the difficulty and volume of reliability evaluation work. QRT holds a unique position as the only listed independent reliability verification specialist in Korea, offering outsourced verification services distinct from large IDMs' in-house quality assurance organizations, though the possibility of customers expanding internal inspection capacity or competition from overseas certification bodies also exists."
  },
  "outlook": {
-  "ko": "2026년 사업 모멘텀은 세 가지 축에서 진행 중이다. 첫째, 중성자 소프트에러 검출 장비는 2026년부터 국내 민간 기업 협업이 개시되었으며, 5G 초고주파 시스템 반도체 수명평가 장비는 같은 해 공급 확대 국면에 진입했다. 둘째, 우주항공청·항우연 주도 주춧돌사업에 참여 기관으로 포함되어 방사선 시험 관련 국책 수주가 중기 매출에 기여할 것으로 기대되며, 한국표준과학연구원(KRISS)과의 MOU 체결을 통해 내방사선 시험 국제표준화 작업에도 함께 참여하게 됐다. 셋째, 소버린 AI 투자 확대와 함께 국내 AI 반도체 기업들과의 협력 확대가 진행 중이다. 복수의 증권사 추정치(공식 가이던스 아님)에 따르면 2026년 연간 매출 820~850억원대, 영업이익률 14% 내외가 전망되며, 일부 리포트는 우주향 매출이 2025년 약 50억원 수준에서 2026년 약 100억원으로 두 배 확대될 것으로 예측하고 있다. 시설 투자 측면에서는 용인 반도체 클러스터 내 생산 인프라 확장이 추진 중으로, 이는 장기 캐퍼시티 확보와 함께 단기적 부채 부담 증가를 수반할 수 있다. 2026년 1분기 영업이익률(약 14.6%) 수준이 연간으로 유지 또는 확대될 경우, 2022년 이후 처음으로 연간 두 자릿수 영업이익률 달성 여부가 핵심 관전 포인트가 된다.",
-  "en": "The 2026 business momentum is driven by three concurrent developments. First, commercial deployment of the neutron soft-error detection device with domestic private-sector partners began in 2026, and the 5G mmWave semiconductor lifetime evaluation system is in an active supply-expansion phase. Second, QRT's participation in the government-led Footstone Project and its newly established MOU with KRISS for radiation test standardization are expected to generate mid-term government contract revenue and advance international certification capabilities. Third, collaboration with domestic AI chip companies is expanding as the sovereign AI ecosystem matures. Sell-side analyst estimates (not official company guidance) published in early 2026 project annual revenue in the KRW 82–85B range with operating margins in the mid-teens, with some forecasts anticipating space-segment revenue doubling from approximately KRW 5B in 2025 to approximately KRW 10B in 2026. On the capex front, facility expansion within the Yongin semiconductor cluster remains in progress, providing long-term capacity at the cost of near-term incremental debt. Whether the Q1 2026 OPM level (~14.6%) can be sustained or expanded over the full year—implying the first double-digit annual OPM since 2022—stands as a key monitoring point."
+  "ko": "KB증권은 2026년 3월 보고서에서 큐알티의 연간 매출액을 821억원(+22.5% YoY), 영업이익을 121억원(+159.7% YoY, OPM 14.7%)으로 전망하며, 우주항공청·항공우주연구원 등 국가기관과 민간기업 대상 우주·방산 관련 매출이 100억원을 돌파하고 HBM4·SOCAMM2 등 차세대 기술 적용에 따른 신뢰성 검사의 영업 레버리지가 나타날 것으로 내다봤다. 더벨은 2026년 2월 보도에서 큐알티가 내부적으로 역대 최대 매출액 달성을 목표로 설정했다고 전했으며, 종전 최대 매출 기록은 2024년의 652.5억원이었다. 2026년 1분기(매출 204.1억원, 영업이익 29.8억원)까지의 실적은 이러한 목표 달성 궤도에 있다는 평가가 가능하지만, 2분기(매출 185.0억원, 영업이익 12.3억원)에는 다시 낮아져 상반기 전체로는 연간 목표 달성 여부를 가늠하기에는 이르다. 회사는 신뢰성 평가에 더해 종합분석 부문의 성과를 키우기 위한 투자를 지속해왔으며, 이를 통해 두 자릿수 영업이익률 회복을 도모하고 있다. AI 반도체 팹리스 고객 및 우주·방산 부문으로의 응용처 확대도 중장기 매출 기반 다변화 요인으로 거론된다.",
+  "en": "KB Securities projected in a March 2026 report that QRT's annual revenue would reach KRW 82.1 billion (+22.5% year-on-year) and operating profit KRW 12.1 billion (+159.7% year-on-year, 14.7% margin), citing space and defense-related revenue from government agencies such as the Korea AeroSpace Administration and the Korea Aerospace Research Institute along with private conglomerates surpassing KRW 10 billion, and operating leverage from reliability testing tied to next-generation technologies such as HBM4 and SOCAMM2. The Bell reported in February 2026 that QRT had internally set a target of achieving record annual revenue, with the prior record being KRW 65.25 billion set in 2024. Results through 1Q26 (revenue of KRW 20.41 billion, operating profit of KRW 2.98 billion) could be viewed as tracking toward that goal, but 2Q26 (revenue of KRW 18.50 billion, operating profit of KRW 1.23 billion) eased again, making it premature to judge full-year target achievement based on first-half results alone. The company has continued investing to grow its comprehensive analysis segment alongside reliability evaluation, aiming to restore double-digit operating margins. Expanding application areas toward AI chip fabless customers and the space/defense sector is also cited as a factor for diversifying the medium-to-long-term revenue base."
  },
  "valuation_comment": {
-  "ko": "현재 주당순이익(EPS)은 451원이며, 주당순자산(BPS)은 7,349원이다. 주가는 순자산 대비 프리미엄 구간에서 거래되고 있으며, 2022년 최고 수익성 사이클 당시 이익 기반으로 역산하면 현행 이익 배수는 상당히 높은 수준임을 시사한다. 다만 2026년 1분기 영업이익률이 2022년 피크 수준으로 빠르게 회복되고 있다는 점은 이익 창출 능력이 구조적으로 개선되고 있음을 의미하며, 이익 회복 속도가 배수 정당성 판단에 중요하다. 배당 측면에서는 최근 공시 주당배당금(DPS)이 480원으로 확인되며, 영업이익률이 회복되는 국면에서 배당 지속 여력은 유지되고 있다. 주가는 최근 52주 변동 범위의 중하단부에 위치하고 있어 사이클 고점 대비 할인된 상태이나, 이는 2025년 연간 이익이 2022년 피크 대비 아직 낮은 수준임을 반영한 결과로 해석된다. 향후 장비·우주 사업의 매출 기여 본격화와 이익 회복의 지속성이 순자산 대비 프리미엄의 정당성을 가늠하는 핵심 변수가 될 것이다.",
-  "en": "Current EPS stands at KRW 451 and BPS at KRW 7,349. The stock trades at a premium to book value, and measured against the earnings base at the 2022 profitability peak, the current earnings multiple implies a significant premium. However, the rapid recovery in operating margin toward 2022 peak levels in Q1 2026 suggests that the underlying earnings capacity is structurally improving—making the pace of that recovery the key variable in assessing multiple justification. On the dividend side, the most recently disclosed DPS of KRW 480 indicates that dividend-paying capacity is being maintained as profitability recovers. The stock currently sits in the lower-to-middle portion of its recent 52-week trading range, reflecting a discount from the cycle high that is largely attributable to full-year 2025 earnings still running below the 2022 peak. The pace at which equipment and space business revenues materialize and whether the earnings recovery proves durable will be the defining variables in evaluating the premium to book value."
+  "ko": "현재 주가는 주당순자산을 상회하는 수준에서 거래되고 있어 순자산 대비 일정한 프리미엄이 형성된 상태로 볼 수 있다. 이익 규모는 2023년 저점을 지나 2024~2025년 완만한 회복 흐름을 보였고 2026년 상반기에도 분기별 편차 속에서 이어지고 있어, 주가수익비율은 이러한 이익 회복 국면을 반영하는 수준에서 형성되고 있다. 회사는 현금배당을 실시해온 이력이 있으나, 배당 관련 지표는 이익 규모 변동에 따라 해마다 달라질 수 있는 점을 감안할 필요가 있다. 밸류에이션 지표는 향후 분기 실적 흐름과 회사가 제시한 연간 목표 달성 여부에 따라 변화할 수 있는 구간에 있다.",
+  "en": "The current share price trades above net asset value per share, indicating a degree of premium relative to book value. Earnings passed through a trough in 2023 and showed a gradual recovery in 2024–2025, a pattern that has continued into the first half of 2026 amid quarterly fluctuations, and the price-to-earnings multiple reflects this earnings-recovery phase. The company has a history of paying cash dividends, though dividend-related metrics can vary from year to year depending on the scale of earnings. Valuation metrics remain in a range that could shift depending on future quarterly results and whether the company's stated annual targets are achieved."
  },
  "bull": [
   {
    "title": {
-    "ko": "2026Q1 이익률 구조적 회복 — 2022년 피크 사이클 재진입 신호",
-    "en": "Structural Margin Recovery in Q1 2026 — Signal of 2022 Peak Cycle Re-entry"
+    "ko": "국내 유일 신뢰성 검증 지위",
+    "en": "Unique domestic reliability verification position"
    },
    "body": {
-    "ko": "2026년 1분기 매출이 204억원으로 전년 동기 대비 32.7% 급증하고 영업이익률이 약 14.6%에 달해 2022년 피크 수준(17.2%)에 근접했다. 이는 단순 계절 효과가 아니라 AI·우주 분야 고부가가치 서비스 믹스 개선과 장비 매출 가세에 따른 구조적 변화로 해석된다. 2025년 1분기의 저점(영업이익률 3.7%)에서 불과 1년 만에 14.6%로 회복된 속도는 영업 레버리지가 본격 작동하기 시작했음을 보여준다.",
-    "en": "Q1 2026 revenue surged 32.7% YoY to KRW 20.4B, and operating margin reached approximately 14.6%—close to the 2022 peak of 17.2%. This is interpreted as a structural improvement in revenue mix driven by high-value AI and space services plus early equipment revenues, rather than a seasonal effect alone. The recovery from a 3.7% OPM trough just one year earlier demonstrates that operating leverage is meaningfully re-engaging."
+    "ko": "큐알티는 국내에서 상장된 유일한 독립 반도체 신뢰성 검증 전문기업으로, 500여개 고객사를 확보하고 높은 기술 진입장벽을 바탕으로 사업 기반을 유지하고 있다. 대다수 반도체 제조사가 자체 품질 기준을 갖고 있음에도 제품 다각화에 따라 신뢰성 평가를 외주화하는 흐름이 이어지고 있다. 이러한 독점적 위치는 경쟁사 진입이 제한적인 시장 구조를 반영한다.",
+    "en": "QRT is the only listed independent semiconductor reliability verification specialist in Korea, maintaining its business base on roughly 500 customers and a high technical entry barrier. Despite most chipmakers having their own quality standards, outsourcing of reliability evaluation has continued as product lines diversify. This near-exclusive position reflects a market structure with limited room for new competitors."
    }
   },
   {
    "title": {
-    "ko": "우주방사선 시험 국내 독점 — 뉴스페이스 수요 직접 수혜 포지션",
-    "en": "Domestic Monopoly in Space Radiation Testing — Direct Beneficiary of New Space Demand"
+    "ko": "HBM4·CXL 세대 전환 수혜",
+    "en": "Beneficiary of HBM4/CXL generational transition"
    },
    "body": {
-    "ko": "큐알티는 민간 기업 중 국내 유일하게 TID·SEE 우주 방사선 시험을 동시 수행할 수 있는 인프라를 갖추고 있다. 우주항공청 주도 225억원 규모 주춧돌사업(2025~2029)의 참여 기관으로 선정되었으며, KRISS와 내방사선 시험·인증 분야 협업 MOU를 체결해 국가 표준 정립의 핵심 주체로 자리잡았다. 우주향 매출의 본격 확대는 현행 반도체 신뢰성 평가 중심 수익 구조에서 고부가가치 방산·우주 믹스로의 전환을 가속시키는 촉매가 된다.",
-    "en": "QRT is the only private Korean firm with infrastructure capable of simultaneously performing both TID and SEE space radiation tests. It has been selected as a participating institution in the government's KRW 22.5B Footstone Project (2025–2029) and has signed a radiation-testing MOU with KRISS, positioning it as a key participant in national standard-setting for space component certification. The scaling of space-segment revenue stands to accelerate a mix shift from legacy reliability testing toward higher-value defense and aerospace services."
+    "ko": "HBM3E에서 HBM4로의 전환과 CXL, SoCAMM2 등 신규 인터커넥트 생태계 확산은 신뢰성 검사의 난도와 물량을 동시에 높이는 요인으로 지목된다. SK하이닉스와 삼성전자 모두 HBM4 양산 확대를 공식화한 만큼, 관련 검증 수요 확대 가능성이 존재한다. 우주항공·방산, AI 반도체 팹리스 등 응용처 다변화도 함께 진행되고 있다.",
+    "en": "The transition from HBM3E to HBM4, along with the spread of new interconnect ecosystems such as CXL and SoCAMM2, is cited as a factor that raises both the difficulty and volume of reliability testing. With both SK hynix and Samsung Electronics having formalized expanded HBM4 mass production, there is potential for related verification demand to grow. Diversification into space/defense and AI chip fabless applications is also underway."
    }
   },
   {
    "title": {
-    "ko": "AI·HBM 복잡도 증가 + 장비 사업 개화 — 복합 성장 동력 가시화",
-    "en": "AI/HBM Complexity Growth + Equipment Business Emergence — Compound Growth Drivers Materializing"
+    "ko": "종합분석 투자로 마진 개선 도모",
+    "en": "Margin improvement effort via comprehensive analysis investment"
    },
    "body": {
-    "ko": "AI 반도체 고도화(HBM4·SOCAMM2 등)는 결함 분석 난도를 높여 종합분석 부문의 단가 상승을 이끌고 있으며, 2025년 상반기 종합분석 매출은 전년 동기 대비 약 50% 성장했다. 5G RF 수명평가 장비와 중성자 소프트에러 검출 장비의 2026년 공급 확대가 장비 매출 비중 상승의 기반을 마련하고 있다. 삼성전자·SK하이닉스 외에 국내 AI 칩 스타트업들과의 협력이 확대되며 고객 기반 다변화도 진행 중이어서 특정 고객 의존 리스크가 점차 완화되는 구조다.",
-    "en": "Advances in AI semiconductor complexity (HBM4, SOCAMM2, etc.) are increasing failure analysis difficulty and driving higher per-unit pricing in the comprehensive analysis segment, which grew approximately 50% YoY in 1H 2025. Commercial supply expansion of the 5G RF lifetime evaluation system and neutron soft-error device in 2026 is laying the groundwork for a growing equipment revenue contribution. Customer base diversification—extending beyond Samsung and SK Hynix to domestic AI chip startups—is also gradually reducing key-customer concentration risk."
+    "ko": "회사는 신뢰성 평가에 더해 종합분석 부문에 2022~2024년 100억원, 2025년 113억원을 투자한 것으로 전해지며, 이를 통해 두 자릿수 영업이익률 회복을 목표로 하고 있다. 2026년 1분기 영업이익률이 약 14.6%까지 개선된 사례는 이러한 투자 성과가 부분적으로 나타난 결과로 해석될 수 있다. 다만 2분기에는 다시 낮아져 지속성은 향후 분기에서 확인이 필요하다.",
+    "en": "The company is reported to have invested about KRW 10 billion in comprehensive analysis capacity between 2022 and 2024 and roughly KRW 11.3 billion in 2025, aiming to restore double-digit operating margins. The improvement to roughly 14.6% operating margin in 1Q26 can be read as a partial reflection of this investment, though the subsequent decline in 2Q26 means sustainability needs to be confirmed in coming quarters."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "부채비율 급등 — 지속적 설비투자에 따른 재무 레버리지 위험",
-    "en": "Rapidly Rising Leverage — Ongoing Capex-Driven Financial Risk"
+    "ko": "분기별 실적 변동성",
+    "en": "Quarter-to-quarter earnings volatility"
    },
    "body": {
-    "ko": "부채비율이 2024년 50.9%에서 2025년 74.2%로 23%p 이상 급등했다. 총부채가 460억원에서 663억원으로 200억원 이상 증가한 반면 자기자본은 900억원 초반대로 감소 추세다. 용인 클러스터 시설 확장, TEM 등 첨단 분석 장비 추가 투자가 지속될 경우 차입이 더 늘어날 수 있으며, 금리 환경에 따라 이자비용이 순이익을 제약하는 압박 요인으로 작용할 수 있다.",
-    "en": "The debt-to-equity ratio surged over 23 percentage points from 50.9% in 2024 to 74.2% in 2025, as total liabilities rose from KRW 46.0B to KRW 66.3B—more than KRW 20B of additional debt—while equity continued its gradual decline. If Yongin cluster facility expansion and continued investment in TEM and other advanced analytical equipment proceed as planned, leverage could rise further, and interest expenses may constrain net income depending on the rate environment."
+    "ko": "2025년 4분기 영업이익은 9.9억원으로 3분기(20.5억원) 대비 크게 낮아졌고, 2026년 2분기 역시 1분기(29.8억원) 대비 절반 이하인 12.3억원으로 줄었다. 프로젝트 단위 수주·평가 매출 인식 구조상 분기별 예측 가능성이 낮다는 점은 투자 판단 시 유의할 부분이다.",
+    "en": "Operating profit fell sharply to KRW 0.99 billion in 4Q25 from KRW 2.04 billion in 3Q25, and again dropped to less than half of the 1Q26 level, at KRW 1.23 billion in 2Q26. The project-based nature of order intake and revenue recognition results in low quarter-to-quarter predictability, which warrants attention."
    }
   },
   {
    "title": {
-    "ko": "반도체 업황 사이클 민감도 — 2023년 OPM 1.4% 재현 가능성",
-    "en": "Semiconductor Cycle Sensitivity — Risk of Repeating the 2023 Sub-2% OPM Collapse"
+    "ko": "부채비율 상승",
+    "en": "Rising debt ratio"
    },
    "body": {
-    "ko": "2023년 반도체 다운사이클 당시 큐알티 영업이익률은 17.2%(2022)에서 1.4%(2023)로 불과 1년 만에 급락한 사례가 있다. 고정비 비중이 높은 검사·분석 산업 특성상 전방 고객의 설비 투자 및 양산 물량이 축소될 경우 매출·이익 동반 급감이 가능하다. AI·HBM 수요가 업황을 지지하고 있으나, 글로벌 반도체 재고 조정이나 주요 고객사의 투자 지연 시 실적 변동성이 다시 확대될 수 있다.",
-    "en": "During the 2023 semiconductor downcycle, QRT's operating margin collapsed from 17.2% to 1.4% in a single year. Given the high fixed-cost structure of testing and analysis businesses, any reduction in customer capex or production volumes can cause a simultaneous revenue and profit decline. While AI/HBM demand currently supports the cycle, a global semiconductor inventory correction or capital expenditure delays at key customers could re-introduce significant earnings volatility."
+    "ko": "2025년 말 부채비율은 74.2%로 2024년(50.9%)보다 크게 높아졌으며, 부채 총액도 459.6억원에서 662.6억원으로 확대됐다. 설비 투자나 외부 자금 조달 확대에 따른 결과로 해석되지만, 재무 레버리지가 빠르게 높아진 점은 향후 이자 부담이나 자본 구조 변화 측면에서 지켜볼 요인이다.",
+    "en": "The debt ratio at end-2025 rose sharply to 74.2% from 50.9% in 2024, with total liabilities expanding from KRW 45.96 billion to KRW 66.26 billion. While this is interpreted as a result of expanded facility investment or external financing, the rapid rise in financial leverage is a factor worth monitoring in terms of future interest burden or capital structure changes."
    }
   },
   {
    "title": {
-    "ko": "고객 집중도 및 절대 시장 규모 한계 — 외형 성장 속도의 구조적 제약",
-    "en": "Customer Concentration & Market Size Constraints — Structural Limits on Revenue Growth"
+    "ko": "회복이 검증 단계에 있는 수익성",
+    "en": "Profitability still in the process of being confirmed"
    },
    "body": {
-    "ko": "삼성전자·SK하이닉스 등 소수 대형 고객사가 매출의 상당 부분을 차지하는 구조적 집중도가 존재한다. 연 매출이 680~690억원 수준으로 절대 시장 규모가 제한적이어서 외형 성장 속도가 주요 고객사 사이클이나 신규 사업(우주·장비) 매출 확대 속도에 종속된다. 코스닥 소형주 특성상 일평균 거래량이 제한적으로 기관·외국인 수급이 취약할 수 있으며, 이는 주가 변동성을 높이는 요인이 된다.",
-    "en": "A structurally high customer concentration exists, with a small number of large clients such as Samsung Electronics and SK Hynix accounting for a significant portion of revenue. With annual revenue in the KRW 68–69B range, the absolute addressable market scale is limited, and top-line growth remains closely tied to key-customer capex cycles and the pace at which new businesses (space, equipment) scale. The stock's small-cap KOSDAQ status also results in thin daily trading volumes, limiting institutional and foreign investor participation and amplifying price volatility."
+    "ko": "영업이익률은 2022년 17.2%에서 2023년 1.4%까지 급락한 뒤 2024~2025년 7% 안팎으로 회복했으나 과거 최고 수준을 아직 회복하지 못했다. 증권사가 제시한 2026년 연간 영업이익률 14.7% 전망과 비교하면, 상반기까지의 흐름은 그 목표에 도달했는지 판단하기에는 이른 단계다.",
+    "en": "The operating margin plunged from 17.2% in 2022 to 1.4% in 2023 before recovering to around 7% in 2024–2025, still short of its earlier peak. Compared with a securities firm's projected 14.7% full-year operating margin for 2026, the trend through the first half is at too early a stage to judge whether that target will be reached."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "업황·수요 사이클 리스크",
-    "en": "Industry Cycle & Demand Risk"
+    "ko": "고객 집중 및 전방산업 의존",
+    "en": "Customer concentration and dependence on upstream industry"
    },
    "body": {
-    "ko": "반도체 신뢰성 평가·분석 수요는 전방 고객사의 R&D·양산 투자 사이클에 직결된다. 글로벌 반도체 재고 조정이나 AI 투자 사이클 둔화 시 수주·매출이 동시에 감소할 수 있으며, 2023년 영업이익률 1.4% 사례가 이를 잘 보여준다. 대형 고객사의 투자 계획 변경이나 생산 일정 지연은 고정비 구조에서 즉각적인 마진 압박으로 이어진다.",
-    "en": "Demand for reliability testing is directly tied to customers' R&D and production investment cycles. A global semiconductor inventory correction or slowdown in AI investment could simultaneously compress orders and revenue, as demonstrated by the 1.4% OPM in 2023. Changes in key customer investment plans or production delays translate quickly into margin pressure given QRT's high fixed-cost structure."
+    "ko": "회사의 기원과 사업 구조상 SK하이닉스 등 소수 대형 반도체 기업에 대한 매출 의존도가 높을 가능성이 있으며, 전방 메모리 업체들의 투자·양산 일정 변화에 실적이 연동될 수 있다. 고객사 다변화가 진행 중이나 아직 절대적인 매출 비중 변화는 확인되지 않았다.",
+    "en": "Given the company's origins and business structure, revenue dependence on a small number of large semiconductor companies such as SK hynix may be significant, and results could be linked to shifts in upstream memory makers' investment and production schedules. Customer diversification is underway, but a definitive shift in revenue concentration has not yet been confirmed."
    }
   },
   {
    "cat": {
-    "ko": "재무·투자 리스크",
-    "en": "Financial & Capital Expenditure Risk"
+    "ko": "재무 레버리지 확대",
+    "en": "Expanding financial leverage"
    },
    "body": {
-    "ko": "부채비율이 2025년 74.2%로 상승한 가운데 용인 클러스터 시설 확장과 첨단 분석 장비 추가 투자가 예고되어 있어 차입 추가 증가가 예상된다. 이자비용 증가와 감가상각 부담이 영업이익률 회복 추세를 상쇄할 가능성이 있으며, 투자한 시설에서 기대한 매출 성장이 지연될 경우 수익성 개선이 늦어질 수 있다.",
-    "en": "With the debt ratio already at 74.2% in 2025, further borrowing is anticipated as Yongin cluster expansion and advanced equipment investments proceed. Rising interest expenses and increased depreciation could partially offset the OPM recovery; if revenue growth from new facilities is delayed, profitability improvement may slow materially."
+    "ko": "2025년 부채비율이 74.2%로 전년 대비 크게 상승한 점은 향후 이자비용 증가나 추가 자금조달 필요성으로 이어질 수 있다. 설비 투자가 지속되는 사업 특성상 자본조달 방식과 시기에 따라 주주가치에 미치는 영향이 달라질 수 있다.",
+    "en": "The debt ratio's sharp rise to 74.2% in 2025 could translate into higher future interest expense or the need for additional financing. Given the capital-intensive nature of the business with ongoing facility investment, the method and timing of financing could have varying effects on shareholder value."
    }
   },
   {
    "cat": {
-    "ko": "규제·정책·우주 사업 리스크",
-    "en": "Regulatory, Policy & Space Business Risk"
+    "ko": "신기술 채택 속도 리스크",
+    "en": "Risk of new technology adoption pace"
    },
    "body": {
-    "ko": "우주·방산 사업 확대는 정부 정책 우선순위와 국책과제 예산 집행 속도에 강하게 의존한다. 우주항공청 주춧돌사업 등 국책과제 일정이 지연되거나 예산이 조정될 경우 우주향 매출 성장이 예상보다 더딜 수 있다. 국제 방사선 시험 인증 표준의 변화나 주요국의 수출 통제 규제 강화는 글로벌 고객사 유치 환경에 영향을 줄 수 있다.",
-    "en": "Space and defense business expansion is heavily dependent on government policy priorities and the pace of state-funded project budget disbursements. Delays or budget revisions to programs such as the Footstone Project could slow space-segment revenue growth beyond analyst expectations. Changes to international radiation testing certification standards or tightening export control regulations by major countries could affect QRT's ability to attract or service global customers."
+    "ko": "HBM4·CXL·SoCAMM2 등 신규 기술의 양산 확대 시점이 지연되거나 예상보다 완만하게 진행될 경우, 관련 신뢰성 검사 수주 물량 증가 시점도 함께 늦춰질 수 있다. 이는 회사가 제시한 실적 개선 목표의 달성 시기에 영향을 줄 수 있는 변수다.",
+    "en": "If the ramp-up of new technologies such as HBM4, CXL, and SoCAMM2 is delayed or proceeds more gradually than expected, the timing of increased order volume for related reliability testing could also be pushed back. This is a variable that could affect the timing of the company's stated earnings improvement targets."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순 (2분기·반기 실적 발표)",
-    "en": "Mid-August 2026 (Q2 / 1H 2026 Earnings Release)"
+    "ko": "2026년 11월 중(3분기 실적 공시 예상 시기)",
+    "en": "Around November 2026 (expected 3Q26 disclosure timing)"
    },
    "what": {
-    "ko": "2026년 2분기 매출·영업이익을 확인해 1분기 고성장(매출 +32.7% YoY·OPM 14.6%)의 지속 여부와 장비 사업 매출 비중 구체화 여부를 점검해야 한다.",
-    "en": "Confirm Q2 2026 revenue and operating profit to assess whether the Q1 surge (+32.7% YoY, ~14.6% OPM) is sustainable and whether the equipment segment is becoming a material revenue contributor."
+    "ko": "3분기 매출·영업이익이 2분기(매출 185.0억원, 영업이익 12.3억원) 대비 개선되는지, 계절적으로 하반기 수주가 몰리는 패턴이 재현되는지 확인이 필요하다.",
+    "en": "Check whether 3Q26 revenue and operating profit improve from 2Q26 levels (revenue KRW 18.50 billion, operating profit KRW 1.23 billion), and whether the seasonal pattern of second-half order concentration repeats."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (중성자 소프트에러 장비·민간 협업 계약 공시)",
-    "en": "2H 2026 (Neutron Soft-Error Device Commercial Contracts)"
+    "ko": "2027년 초(연간 실적 공시 시기)",
+    "en": "Early 2027 (annual results disclosure timing)"
    },
    "what": {
-    "ko": "2026년부터 개시 예정인 중성자 소프트에러 검출 장비의 국내 민간 기업 협업 계약 현황과 매출 반영 규모를 DART 공시를 통해 확인해야 한다.",
-    "en": "Monitor DART disclosures for formal contract details and revenue recognition timelines related to the neutron soft-error detection device's commercial deployment with domestic private-sector partners, which was scheduled to begin in 2026."
+    "ko": "회사가 밝힌 역대 최대 매출(2024년 652.5억원 초과) 달성 여부와 KB증권이 전망한 연간 매출 821억원·영업이익 121억원 대비 실제 결과의 부합 정도를 점검할 필요가 있다.",
+    "en": "Check whether the company achieves its stated goal of surpassing its prior record revenue (KRW 65.25 billion in 2024), and how actual full-year results compare with KB Securities' projection of KRW 82.1 billion revenue and KRW 12.1 billion operating profit."
    }
   },
   {
    "when": {
-    "ko": "2026년 연중 (주춧돌사업 과제 집행·우주향 수주 업데이트)",
-    "en": "Throughout 2026 (Footstone Project Execution & Space Revenue Progress)"
+    "ko": "2026년 하반기 지속 확인",
+    "en": "Ongoing through the second half of 2026"
    },
    "what": {
-    "ko": "우주항공청·항우연 주도 주춧돌사업(225억원, 2025~2029) 내 큐알티 분담 과제의 계약·집행 현황을 확인하고, 우주향 매출 연간 누계치가 증권사 추정치(약 100억원)에 수렴하는지 점검해야 한다.",
-    "en": "Track QRT's specific contract awards and budget disbursements under the KRW 22.5B Footstone Project, and monitor annual cumulative space-segment revenue to assess convergence with analyst forecasts of approximately KRW 10B for 2026."
+    "ko": "SK하이닉스·삼성전자의 HBM4 양산 확대 속도에 따라 관련 신뢰성 검사 물량이 실제로 증가하는지, 우주항공·방산 부문 매출이 KB증권이 언급한 100억원 규모에 근접하는지 살펴볼 필요가 있다.",
+    "en": "Monitor whether reliability testing volume actually increases in line with SK hynix's and Samsung Electronics' HBM4 production ramp-up pace, and whether space/defense segment revenue approaches the roughly KRW 10 billion scale referenced by KB Securities."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (용인 클러스터 시설 투자·부채비율 변화)",
-    "en": "2H 2026 (Yongin Cluster Facility Investment & Leverage Trajectory)"
+    "ko": "2026년 4분기 이후 공시 확인",
+    "en": "From disclosures in 4Q26 onward"
    },
    "what": {
-    "ko": "용인 반도체 클러스터 시설 확장의 투자 금액·완공 일정 및 추가 차입 계획을 DART 공시를 통해 확인하고, 부채비율 74.2% 수준에서 추가 상승 여부와 이자비용 부담 변화를 점검해야 한다.",
-    "en": "Use DART disclosures to confirm the investment amount, completion schedule, and additional borrowing plans for the Yongin cluster facility expansion, and monitor whether the already-elevated 74.2% debt ratio is poised to rise further."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 2월 (SK하이닉스 용인 1기 팹 클린룸 오픈)",
-    "en": "February 2027 (SK Hynix Yongin Fab 1 Clean Room Opening)"
-   },
-   "what": {
-    "ko": "SK하이닉스 용인 1기 팹 클린룸 오픈(2027년 2월 예정) 이후 인접 신뢰성 시험·분석 수요 증가가 큐알티 실적에 구체적으로 반영되기 시작하는지 관찰해야 한다.",
-    "en": "Following the scheduled opening of SK Hynix Yongin Fab 1 clean room in February 2027, monitor whether the proximity-driven increase in reliability testing and analysis demand begins to visibly contribute to QRT's revenue and margins."
+    "ko": "부채비율이 2025년 74.2% 수준에서 추가로 상승하는지, 혹은 안정화되는지를 향후 분기 재무제표를 통해 확인할 필요가 있다.",
+    "en": "Check via upcoming quarterly financial statements whether the debt ratio rises further from the 2025 level of 74.2% or stabilizes."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "큐알티는 국내 유일 반도체 신뢰성·방사선 시험 기업으로서 AI 반도체 고도화, 뉴스페이스 정책 전환, 용인 클러스터 확장이라는 세 가지 구조적 전방 수요가 동시에 강화되는 산업 국면에 위치하고 있다. 2026년 1분기 영업이익률이 14.6%로 급반등하며 2022년 피크 사이클 수준에 근접한 것은 영업 레버리지 회복의 실질적 증거다. 종합분석 부문 고성장, 장비 매출 가시화, 우주·방산 신규 매출원 확대가 복합적으로 작용하며 사업 믹스가 고부가가치 방향으로 전환되고 있다. 반면 부채비율이 2025년 74.2%로 급등했고 지속적 설비투자가 예정되어 있어 재무 레버리지와 이자비용 부담을 면밀히 추적할 필요가 있다. 2023년 사례처럼 반도체 업황 악화 시 이익이 급감할 수 있는 사이클 민감도도 내재되어 있다. 중기적으로는 우주부품 국산화 정책 수혜와 HBM4 등 차세대 반도체 신뢰성 수요가 성장의 방향성을 뒷받침하나, 장비·우주 사업 상업화 속도와 부채 관리 규율이 이익 회복의 지속성을 결정하는 핵심 변수로 작용할 것이다.",
-   "en": "QRT occupies a strategically important position as Korea's sole semiconductor reliability and radiation testing specialist, at an inflection point where three structural demand tailwinds—AI chip advancement, the New Space policy era, and the Yongin semiconductor cluster build-out—are converging simultaneously. The Q1 2026 operating margin rebound to approximately 14.6% is tangible evidence that operating leverage is re-engaging toward 2022 peak levels. The business mix is transitioning toward higher-value services as the comprehensive analysis segment surges, equipment revenues begin to materialize, and space and defense emerge as new revenue streams. On the other side, the debt ratio surge to 74.2% in 2025 and continued planned capex require close monitoring of financial leverage and interest expense burden. The inherent cycle sensitivity—demonstrated by the margin collapse to 1.4% in 2023—remains a structural vulnerability to any semiconductor downturn. Over the medium term, government-backed space component localization programs and next-generation semiconductor reliability demand underpin the growth direction, but the pace of equipment and space business commercialization and the discipline of debt management will be the defining variables for the durability of the earnings recovery."
+   "ko": "큐알티는 국내 유일의 상장 반도체 신뢰성 검증 전문기업으로서 HBM·CXL 등 차세대 메모리 확산에 따른 검사 수요 확대라는 구조적 기회를 갖고 있으며, 우주항공·방산·AI 반도체 팹리스 등으로 응용처를 넓혀가고 있다. 다만 2023년 영업이익률이 1.4%까지 급락했던 이력과 2025년 4분기·2026년 2분기의 실적 둔화 사례는 분기별 변동성이 여전히 크다는 점을 보여준다. 2025년 부채비율이 74.2%로 전년보다 크게 높아진 점도 재무구조 측면에서 함께 살펴봐야 할 부분이다. KB증권은 2026년 연간 매출 821억원, 영업이익 121억원을 전망했으나, 상반기 실적만으로는 해당 목표의 달성 여부를 판단하기 이르다. 향후 분기 실적, HBM4 양산 확대 속도, 부채비율 추이 등이 회사의 실적 개선 지속 여부를 가늠하는 핵심 변수가 될 전망이다.",
+   "en": "As the only listed semiconductor reliability verification specialist in Korea, QRT holds a structural opportunity tied to expanding testing demand from the spread of next-generation memory such as HBM and CXL, and is broadening its application areas into space/defense and AI chip fabless customers. However, the history of operating margin plunging to 1.4% in 2023, along with earnings slowdowns in 4Q25 and 2Q26, illustrates that quarter-to-quarter volatility remains significant. The 2025 debt ratio rising sharply to 74.2% from the prior year is also a financial structure factor worth watching. KB Securities projected FY2026 revenue of KRW 82.1 billion and operating profit of KRW 12.1 billion, but first-half results alone are not sufficient to judge whether that target will be met. Future quarterly results, the pace of HBM4 production ramp-up, and the trajectory of the debt ratio are likely to be key variables in gauging whether the company's earnings improvement can be sustained."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A405100",
-  "https://www.butler.works/ko/companies/01033591",
   "https://kbthink.com/securities-view.html?docId=20260305084618117K",
-  "https://alphasquare.co.kr/home/stock-summary?code=405100",
-  "https://v.daum.net/v/20260111153507558",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A405100&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "https://www.investing.com/equities/qrt",
-  "https://m.thinkpool.com/compDiscuss/cont/1025195",
   "https://kbthink.com/securities-view.html?docId=20250905082652510K",
-  "https://www.koit.co.kr/news/articleView.html?idxno=100265",
-  "https://www.qrtkr.com/kr/equipment/see/equipment_see_analysis.php",
-  "https://www.linkedin.com/company/qrtkr",
-  "https://qrtkr.com/kr/reliability/experiment/vehicle.php",
-  "https://www.etnews.com/20250821000329",
-  "https://www.seoulfn.com/news/articleView.html?idxno=463430",
-  "https://kind.krx.co.kr/corpgeneral/irschedule.do?method=searchIRScheduleMain&gubun=iRSchedule",
-  "https://www.investing.com/equities/qsi-co-ltd",
-  "https://www.38.co.kr/html/forum/board/?code=405100"
+  "https://v.daum.net/v/20260111153507558",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1704669223541.pdf",
+  "https://www.antwinner.com/stocks_analysis/%ED%81%90%EC%95%8C%ED%8B%B0",
+  "https://m.thinkpool.com/compDiscuss/cont/1020942",
+  "https://m.thinkpool.com/compDiscuss/cont/1010931",
+  "https://www.thebell.co.kr/front/newsview.asp?key=202602031510152160106274",
+  "https://m.thinkpool.com/compDiscuss/cont/1010921",
+  "https://m.irgo.co.kr/IR-COMP/405100/",
+  "https://littlebproject.com/stock/405100/249/43404",
+  "https://littlebproject.com/stock/405100/304/39794",
+  "https://www.hkcar.or.kr/7575",
+  "https://news.skhynix.co.kr/2026-market-outlook/",
+  "https://www.38.co.kr/html/forum/board/?code=405100",
+  "https://news.infostock.co.kr/a",
+  "https://littlebproject.com/stock/405100/57/60640",
+  "https://littlebproject.com/stock/405100/292/56180"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "405100",
  "name": "큐알티",
  "name_en": "Quality Reliability Technology Inc.",
@@ -233,9 +223,9 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 00:04",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 06:04",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 9880,
-   "mcap": 0.1214,
+   "price": 13960,
+   "mcap": 0.1716,
    "shares": 12289301,
    "total_shares": 12289301,
    "wavg_shares": 11741954,
-   "per": 21.156,
+   "per": 29.893,
    "eps": 467,
-   "pbr": 1.3102,
+   "pbr": 1.8512,
    "bps": 7541,
    "roe_ttm": 6.3,
    "ttm_window": "2025Q3~2026Q2",
@@ -356,7 +346,7 @@
    "bps_krx": 7641.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 480.0,
-   "div": 4.86
+   "div": 3.44
   }
  }
 }

@@ -1,236 +1,227 @@
 {
  "title": {
-  "ko": "빅배스 넘은 실적 회복, 관전 포인트는 재무구조",
-  "en": "Past the Big Bath: Balance-Sheet Repair Now in Focus"
+  "ko": "이익 회복과 반도체 기대의 교차점",
+  "en": "Where Earnings Recovery Meets Semiconductor Hopes"
  },
  "lead": {
-  "ko": "금호건설은 2024년 대규모 손실 반영(빅배스) 이후 원가 관리와 선별 수주를 통해 분기 연속 흑자 흐름을 이어가고 있으나, 부채비율과 아시아나항공 지분 가치 변동이 여전히 재무구조의 핵심 변수로 남아 있다.",
-  "en": "Kumho Engineering & Construction has sustained a streak of quarterly profits since a large one-off loss (\"big bath\") in 2024 through cost control and selective order-taking, but its debt ratio and the fair-value swings of its Asiana Airlines stake remain the key balance-sheet variables to watch."
+  "ko": "2024년 대규모 적자에서 2025년 흑자로 돌아선 금호건설이 호남권 반도체 산단 기대와 아시아나항공 지분이라는 두 개의 변수를 동시에 안고 있다.",
+  "en": "Kumho Engineering & Construction has swung from a large 2024 loss to a 2025 profit, while simultaneously carrying two swing factors: hopes tied to a Honam-region semiconductor industrial complex and its residual Asiana Airlines stake."
  },
  "keypoints": [
   {
-   "ko": "2024년 영업손실 1,818억원의 빅배스 이후 2025년 흑자 전환, 2026년 1분기까지 분기 연속 이익 개선세 지속",
-   "en": "After an operating loss of about KRW 181.8bn in the 2024 big bath, the company turned profitable in 2025 and has extended sequential earnings improvement through Q1 2026"
+   "ko": "2024년 영업손실 1,818억원에서 2025년 영업이익 471억원으로 흑자 전환, 2026년 상반기까지 원가율 개선이 이어졌다.",
+   "en": "The company swung from an operating loss of KRW 181.8bn in 2024 to operating profit of KRW 47.1bn in 2025, with cost-ratio improvement continuing through H1 2026."
   },
   {
-   "ko": "매출 비중은 주택 42%·토목 40%·건축 17%·해외 1%로 특정 부문 편중이 낮은 균형형 포트폴리오",
-   "en": "Revenue mix is balanced across housing (42%), civil works (40%), building (17%) and overseas (1%), reducing reliance on any single segment"
+   "ko": "광주 군공항 부지가 호남권 반도체 국가산업단지 후보지로 지정되며 지역 인프라 발주 기대가 부각됐지만, 실제 시공계약 수주는 아직 확인되지 않았다.",
+   "en": "The designation of the Gwangju airbase site as a candidate for a Honam-region semiconductor national industrial complex has fueled local infrastructure-order hopes, but no confirmed construction contract has been disclosed yet."
   },
   {
-   "ko": "부채비율은 2024년 588.8%에서 2025년 520.2%로 낮아졌고, 2026년 상반기 공시 기준으로는 400%대 초반까지 추가 개선(뉴스 보도 기준)",
-   "en": "The debt ratio eased from 588.8% (2024) to 520.2% (2025), and news reports based on the H1 2026 disclosure point to further improvement into the low-400% range"
+   "ko": "연결 부채비율은 2026년 3월 499.4% 수준에서 상반기 말 405.5%로 낮아졌으나 여전히 높은 수준이며, 아시아나항공 지분·PF 우발채무 등 재무 변수가 남아있다.",
+   "en": "The consolidated debt ratio eased from around 499.4% in March 2026 to 405.5% at the end of H1 2026, but remains elevated, with the Asiana Airlines stake and PF contingent liabilities still weighing on the balance sheet."
   },
   {
-   "ko": "2025년 결산에서 3년 만에 배당 재개(주당 200원), 신종자본증권 발행 등 자본 확충도 병행",
-   "en": "Dividends resumed for the first time in three years with the FY2025 payout (KRW 200 per share), alongside capital-boosting steps such as hybrid bond issuance"
+   "ko": "아시아나항공 지분 11.12%를 보유 중이며, 대한항공과의 계약상 처분 의무와 12월 통합 대한항공 출범을 계기로 지분 처리 방향이 주목된다.",
+   "en": "The company still holds an 11.12% Asiana Airlines stake, and its contractual obligation to divest, together with the planned December launch of the merged Korean Air, keeps the disposal path in focus."
   },
   {
-   "ko": "아시아나항공 지분(11%) 가치 변동이 기타포괄손익을 통해 자본과 부채비율에 직접 영향을 미치는 구조",
-   "en": "The company's 11% Asiana Airlines stake directly affects equity and the debt ratio through other comprehensive income as its market value fluctuates"
+   "ko": "신규 주택 브랜드 아테라(ARTERA) 분양 확대와 삼성전자 광주사업장 HVAC 생산시설 수주 등으로 사업 다각화를 이어가고 있다.",
+   "en": "The company continues to diversify through expanded presales under its new ARTERA housing brand and by taking on an HVAC production-facility project at Samsung Electronics' Gwangju site."
   }
  ],
  "business": {
-  "ko": "금호건설은 건축·주택·토목·플랜트·환경 등을 영위하는 종합건설사로, 2025년 기준 국내 시공능력평가 24위에 위치해 있다. 사업 부문별 매출 비중은 2025년 말 기준 주택 42%, 토목 40%, 건축 17%, 해외 1% 수준으로, 주택 매출 비중이 70~80%에 달하는 다른 중견 건설사들과 달리 특정 부문에 편중되지 않은 구조를 갖추고 있다. 주택 부문에서는 2024년 새롭게 선보인 통합 브랜드 '아테라(ARTERA)'로 기존 어울림·리첸시아 브랜드를 대체하며 시장 공략에 나서고 있다. 토목 부문은 인천국제공항 등 다수의 공항공사에 참여하며 국내 최고 수준의 기술력을 보유한 것으로 평가되고, 최근에는 LNG복합화력 발전소·전력구 공사 등 에너지 분야로도 영역을 넓히고 있다. 특히 정부의 공공주택 공급 확대 기조에 맞춰 LH·GH 등이 발주하는 민간참여형 공공주택사업(민참사업)에서 두각을 나타내며, 남양주 왕숙, 하남교산, 의왕군포안산 등 3기 신도시 사업을 잇달아 수주했다. 공공 인프라 사업은 물가 상승에 따른 공사비 조정이 상대적으로 원활해 원자재 가격 변동 부담을 완화하는 효과가 있다는 점도 강점으로 꼽힌다. 최대주주는 박세창 부회장 측 금호아시아나그룹이며, 회사는 별도로 아시아나항공 지분 약 11%(2025년 말 기준 약 2,289만주)를 보유하고 있어 항공 부문 자산가치 변동에도 영향을 받는 특수한 구조를 지니고 있다. 경쟁 구도상으로는 현대건설·삼성물산·GS건설 등 대형사와 정비사업·데이터센터 등 신성장 분야에서 직접 경쟁하기보다는, 공공주택과 토목 인프라를 중심으로 한 중견 건설사 포지션을 취하고 있다.",
-  "en": "Kumho Engineering & Construction is a diversified general contractor spanning building, housing, civil works, plant and environmental businesses, ranking 24th among domestic contractors by construction capability as of 2025. As of the end of 2025, revenue was split across housing (42%), civil works (40%), building (17%) and overseas (1%), a more balanced mix than peer mid-tier builders that often derive 70-80% of sales from housing alone. In housing, the company launched its unified brand \"ARTERA\" in 2024 to replace its former Uullim and Richensia brands as it pushes into the market. Its civil works division has participated in numerous airport projects including Incheon International Airport and is regarded as holding top-tier domestic technical capability, while more recently expanding into energy-related work such as LNG combined-cycle power plants and underground power-line tunnels. In line with the government's push to expand public housing supply, the company has stood out in LH- and GH-led private-participation public housing projects, winning a series of Third New Town contracts including Namyangju Wangsuk, Hanam Gyosan and Uiwang-Gunpo-Ansan. Public infrastructure work is seen as an advantage because cost adjustments for inflation tend to be more straightforward, easing the burden of raw-material price swings. The controlling shareholder group is the Kumho Asiana Group under Vice Chairman Park Se-chang, and the company separately holds roughly an 11% stake in Asiana Airlines (about 22.89 million shares as of end-2025), a structure that exposes it to swings in an aviation-sector asset. Competitively, rather than directly rivaling large-cap builders such as Hyundai E&C, Samsung C&T or GS Construction in urban redevelopment or data-center segments, the firm occupies a mid-tier position anchored in public housing and civil infrastructure."
+  "ko": "금호건설은 주택·건축, 토목·플랜트·환경, 해외 부문으로 구성된 종합건설사로, 매출의 상당 부분이 국내 주택·건축 공사에서 발생한다. 자체 주택 브랜드는 기존 브랜드에서 '아테라(ARTERA)'로 전환됐으며, 경기 남양주 왕숙2지구 A-1블록에서 새 브랜드를 처음 적용한 '왕숙 아테라' 견본주택을 열고 분양을 시작했고, 삼성전자 평택캠퍼스 배후 수요를 겨냥한 '고덕신도시 아테라'도 분양을 진행 중이다. 사업 포트폴리오 다변화 차원에서 공공주택과 민간참여 사업을 축으로 하면서 LNG복합화력 발전소·전력구 공사 등 에너지 분야를 포함한 공공 토목·플랜트 사업으로 영역을 확대하고 있다. 최근에는 삼성전자가 광주사업장을 AI 가전과 냉난방공조(HVAC)를 아우르는 생산거점으로 육성하는 프로젝트에 시공사로 참여했다고 밝히며, 첨단 산업시설 시공 경험을 넓혔다고 설명했다. 정비사업(재건축·재개발) 부문에서도 창원 가음3구역 재건축을 1,490억원 규모로 수주하는 등 지방 정비시장 공략을 이어가고 있다. 과거 아시아나항공의 모회사였던 연혁에 따라 현재도 아시아나항공 지분 11.12%(2,289만여 주)를 보유하고 있으며, 이는 회계상 기타포괄손익-공정가치측정금융자산(FVOCI)으로 분류돼 주가 변동에 따른 평가손익이 자본 변동을 통해 재무구조에 영향을 미치는 구조다. 경쟁구도 면에서는 매출·시가총액 규모가 현대건설·삼성물산·GS건설 등 상위 대형 건설사에 크게 못 미치는 중견 건설사로 분류된다. 본점을 전남광주통합특별시 나주시에 둔 대표적인 호남 지역 건설사로서, 지역 기반 공공·지방 물량 확보에 상대적 강점을 지닌다.",
+  "en": "Kumho Engineering & Construction is a general contractor organized around housing/building, civil-plant-environment, and overseas segments, with the bulk of revenue derived from domestic housing and building construction. The company's in-house housing brand has transitioned to 'ARTERA,' and it opened a model house and began presales for 'Wangsuk ARTERA' at Block A-1 of the Wangsuk 2 district in Namyangju—the first project under the new brand—while also selling 'Godeok New Town ARTERA', which targets demand tied to Samsung Electronics' Pyeongtaek campus. As part of portfolio diversification, and centered on public housing and private-participation projects, the company has been expanding into public civil-engineering and plant work including LNG combined-cycle power plants and electrical duct construction. More recently, it said it took part as contractor in a project to develop Samsung Electronics' Gwangju site into a production hub spanning AI appliances and HVAC systems, broadening its experience in advanced industrial-facility construction. In the redevelopment segment, the company won the Changwon Gaeum 3 District reconstruction project worth about KRW 149bn, continuing its push into regional redevelopment markets. Reflecting its history as the former parent of Asiana Airlines, the company still holds an 11.12% stake (roughly 22.89 million shares) in Asiana Airlines, classified under accounting rules as a fair-value-through-other-comprehensive-income (FVOCI) financial asset, meaning share-price swings flow through equity and affect the balance sheet. In terms of competitive positioning, the company ranks as a mid-tier builder whose revenue and market capitalization are well below top-tier peers such as Hyundai Engineering & Construction, Samsung C&T, or GS Engineering & Construction. It is a representative Honam-region builder headquartered in Naju, within the Jeonnam-Gwangju Special Self-Governing City, giving it a relative edge in securing regionally based public and local-government work."
  },
  "earnings": {
-  "ko": "확정 실적 기준으로 2022년 매출 2조485억원·영업이익 559억원(영업이익률 2.7%)에서 2023년 매출 2조2,176억원·영업이익 218억원(1.0%)으로 외형은 늘었지만 수익성은 둔화됐다. 2024년에는 저수익 사업 계약 해지와 회수 가능성이 낮은 대여금 손실 처리 등 이른바 '빅배스'를 단행하면서 매출이 1조9,142억원으로 줄고 영업손실 1,818억원(영업이익률 -9.5%), 지배주주 순손실 2,257억원을 기록해 부채비율도 588.8%까지 치솟았다. 이 손실 반영 이후 2025년에는 매출 2조185억원, 영업이익 470.8억원(영업이익률 2.3%), 지배주주 순이익 623.8억원으로 흑자 전환에 성공했고 부채비율도 520.2%로 낮아졌다. 분기별로 보면 2025년 1분기 영업이익 57.4억원에서 2분기 161.8억원, 3분기 153.7억원으로 개선세가 이어졌으며, 4분기에는 영업이익 97.9억원 대비 지배주주 순이익이 435억원에 달해 영업외 손익 요인이 컸던 것으로 나타난다. 2026년 1분기에는 매출 4,534억원(전년 동기 대비 소폭 감소), 영업이익 121.2억원, 지배주주 순이익 109.3억원을 기록하며 원가율 개선에 따른 이익 확대가 계속됐다. 2025년 2분기부터 2026년 1분기까지의 지배주주 순이익 합계는 약 725억원 수준으로, 분기별 변동성은 있지만 전반적인 이익 회복 궤적을 보여준다. 참고로 2026년 8월 13일 공시된 상반기 실적(뉴스 보도 기준)에서는 매출 9,650억원, 영업이익 286억원, 순이익 244억원으로 전년 동기 대비 영업이익이 30.6% 늘어난 것으로 나타나 이익 개선 흐름이 이어지고 있음을 시사한다. 종합하면 매출 규모는 2023년 정점 이후 정체 국면에 있으나, 원가율 관리와 선별 수주를 통한 수익성 회복이 최근 실적의 핵심 특징으로 자리잡고 있다.",
-  "en": "On a confirmed-earnings basis, revenue rose from KRW 2.0485tn with operating profit of KRW 55.9bn (2.7% margin) in 2022 to KRW 2.2176tn with operating profit of KRW 21.8bn (1.0%) in 2023, showing top-line growth but margin compression. In 2024 the company executed what is described as a \"big bath,\" cancelling low-margin contracts and writing off loans with low recoverability, which cut revenue to KRW 1.9142tn and produced an operating loss of KRW 181.8bn (-9.5% margin) and an owners' net loss of KRW 225.7bn, pushing the debt ratio up to 588.8%. Following that loss recognition, 2025 revenue reached KRW 2.0185tn with operating profit of KRW 47.08bn (2.3% margin) and owners' net income of KRW 62.38bn, marking a return to profit while the debt ratio eased to 520.2%. Quarterly, operating profit improved from KRW 5.74bn in Q1 2025 to KRW 16.18bn in Q2 and KRW 15.37bn in Q3 2025, while Q4 2025 owners' net income of KRW 43.5bn far exceeded the KRW 9.79bn operating profit, indicating a sizeable non-operating contribution that quarter. In Q1 2026, revenue was KRW 453.4bn (a modest year-on-year decline) with operating profit of KRW 12.12bn and owners' net income of KRW 10.93bn, continuing the margin-driven profit expansion. Summed owners' net income from Q2 2025 through Q1 2026 totals roughly KRW 72.5bn, underscoring a broadly recovering profit trajectory despite quarter-to-quarter volatility. For reference, H1 2026 results disclosed on August 13, 2026 (per news reports) showed revenue of KRW 965.0bn, operating profit of KRW 28.6bn and net income of KRW 24.4bn, with operating profit up 30.6% year-on-year, suggesting the improvement trend has persisted. Overall, revenue has plateaued since its 2023 peak, but cost-ratio management and selective order-taking have become the defining features of the recent earnings recovery."
+  "ko": "금호건설의 연간 실적은 2022~2025년 사이 큰 폭의 변동을 겪었다. 매출액은 2022년 2조485억원에서 2023년 2조2176억원으로 늘었다가 2024년 1조9142억원으로 줄었고, 2025년에는 다시 2조185억원으로 늘었다. 영업이익은 2022년 559억원, 2023년 218억원으로 축소된 뒤 2024년에는 -1,818억원까지 악화되며 영업이익률이 -9.5%까지 떨어지는 대규모 적자를 냈다. 이 같은 손실은 2024년 3분기 선제적으로 손실을 반영하는 이른바 '빅배스(Big bath)'를 단행한 데 따른 것으로, 이후 4분기부터 실적이 반등했다고 설명된다. 2025년에는 영업이익 471억원(영업이익률 2.3%), 지배주주순이익 639억원을 기록하며 흑자 전환에 성공했다. 분기별로는 2025년 3분기 영업이익 154억원·지배주주순이익 81억원, 4분기 영업이익 98억원·지배주주순이익 443억원을 거쳐, 2026년 1분기 영업이익 121억원·지배주주순이익 109억원, 2분기 영업이익 165억원·지배주주순이익 141억원으로 개선 흐름이 이어졌다. 2025년 4분기의 지배주주순이익이 영업이익 대비 유독 크게 나타난 점은 영업외 요인이 순이익을 끌어올린 결과로 추정되며, 세부 원인은 추가 공시 확인이 필요한 부분이다. 회사는 과거 원가율이 높았던 현장들이 순차적으로 마무리되고 수익성이 확보된 사업 비중이 확대된 점을 실적 개선의 배경으로 설명했고, 2025년 원가율은 전년 104.93%에서 93.75%로 11.18%포인트 낮아진 것으로 나타났다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산으로는 매출 약 1조9,843억원, 영업이익 약 538억원, 지배주주순이익 약 774억원을 기록해 이익 개선이 여러 분기에 걸쳐 이어지고 있음을 보여준다.",
+  "en": "Kumho Engineering & Construction's annual results swung widely between 2022 and 2025. Revenue rose from KRW 2,048.5bn in 2022 to KRW 2,217.6bn in 2023, fell to KRW 1,914.2bn in 2024, then recovered to KRW 2,018.5bn in 2025. Operating profit narrowed from KRW 55.9bn in 2022 to KRW 21.8bn in 2023, then deteriorated sharply to an operating loss of KRW 181.8bn in 2024, an operating margin of -9.5%. That loss is attributed to a so-called 'big bath'—a preemptive write-down taken in the third quarter of 2024—after which results rebounded starting in the fourth quarter. In 2025 the company returned to profit, posting operating profit of KRW 47.1bn (margin 2.3%) and net profit attributable to owners of KRW 63.9bn. Quarterly, operating profit was KRW 15.4bn with owner net profit of KRW 8.1bn in Q3 2025, KRW 9.8bn operating profit with KRW 44.3bn owner net profit in Q4 2025, then KRW 12.1bn operating profit with KRW 10.9bn owner net profit in Q1 2026 and KRW 16.5bn operating profit with KRW 14.1bn owner net profit in Q2 2026—an improving trend. The unusually large owner net profit relative to operating profit in Q4 2025 appears to reflect non-operating items, the specifics of which would require further disclosure confirmation. The company attributed the improvement to previously cost-heavy job sites being completed in sequence while the share of profitable projects expanded, and its 2025 cost ratio fell 11.18 percentage points to 93.75% from 104.93% a year earlier. Summed over the trailing four quarters (Q3 2025 through Q2 2026), revenue totaled roughly KRW 1,984.3bn, operating profit about KRW 53.8bn, and owner net profit about KRW 77.4bn, indicating the earnings improvement has persisted across multiple quarters."
  },
  "industry": {
-  "ko": "국내 건설업은 2023~2025년 고금리와 착공·인허가 부진으로 장기간 위축세를 겪었으며, 한국건설산업연구원은 2026년 건설투자가 전년 대비 소폭 증가한 269조~266조원 수준에 그치는 제한적 회복을 전망하고 있다. 주택시장은 수도권과 지방의 양극화가 뚜렷해, 수도권은 공급 지연과 매수심리 회복으로 2~4%대 상승이, 지방은 보합 또는 소폭 하락이 예상된다. 건설수주는 2026년 들어 전년 동월 대비 30%대 증가세를 보이는 등 개선 신호가 나타나고 있으나, 건축허가면적과 착공은 여전히 감소세를 보여 수주 개선이 실제 기성 확대로 이어지기까지 시차가 존재하는 구조다. 해외건설 수주는 지정학적 변수로 상반기 위축됐으나 연간 기준으로는 전년 대비 큰 폭의 회복이 전망된다. 증권가에서는 데이터센터, 원전, 해외 플랜트, 주택 원가율 개선을 2026년 하반기 건설업의 핵심 변수로 지목하며, 하나증권은 업종에 대해 비중확대 의견을 유지하고 있다. 이 같은 흐름 속에서 금호건설은 데이터센터·원전 등 대형사 중심 신성장 테마보다는 공공주택(민참사업)과 토목 인프라 중심의 안정적 수주 구조로 업황 변동성을 상대적으로 상쇄하는 포지션에 있다. 다만 2026년부터 산재 발생 건설사에 대한 영업이익 5% 이내 과징금, 등록말소 등 안전규제가 한층 강화되는 점은 업계 전반의 비용 부담 요인으로 지목된다.",
-  "en": "Korea's construction industry endured a prolonged downturn through 2023-2025 amid high rates and weak permits and starts, and the Korea Institute of Construction Industry projects only a limited 2026 recovery, with construction investment reaching roughly KRW 266-269tn, a modest increase from the prior year. The housing market shows clear regional divergence, with Seoul metro prices expected to rise 2-4% on supply delays and improving buying sentiment while regional markets are expected to stay flat or decline slightly. Construction orders have shown improvement signals in 2026, rising over 30% year-on-year in some months, but building-permit area and starts continue to decline, meaning the pickup in orders takes time to flow through to actual construction progress. Overseas construction orders were squeezed in H1 by geopolitical factors but are expected to post a substantial annual recovery. Brokerages point to data centers, nuclear power, overseas plant projects and improving housing cost ratios as the key variables for the construction sector in H2 2026, with Hana Securities maintaining an overweight sector call. Within this backdrop, Kumho E&C is positioned less around large-cap growth themes like data centers or nuclear power and more around a stable order base of public housing (private-participation projects) and civil infrastructure that partly offsets sector volatility. That said, tighter safety regulation from 2026 - including penalties of up to 5% of operating profit and potential registration cancellation for firms with industrial accidents - is flagged as an added cost burden across the industry."
+  "ko": "국내 건설업은 수년간 주택경기 침체와 고금리에 따른 수요 위축을 겪었으나, 2026년에는 회복 조짐이 나타나고 있다. 산업연구원은 2026년 하반기 경제·산업 전망에서 정부의 재정 투입과 선행지표 개선에 힘입어 올해 건설투자가 전년 대비 0.9% 증가할 것으로 내다봤으며, 이는 2020년 이후 6년 만의 증가 전환이라고 설명했다. 다만 민간 주택경기 회복 지연과 지방 건축경기 부진이 이어지는 가운데, 건축공사 매출총이익 개선과 원가 관리로 영업이익이 늘었고 플랜트 부문도 흑자로 전환됐다는 분석이 나온다. 최근 시장의 관심은 정부가 2026년 6월 29일 삼성전자와 SK하이닉스가 광주 군공항 부지에 총 800조원을 투자해 반도체 팹 4기를 조성하는 '서남권 반도체 메가프로젝트'를 발표하고, 2030년 첫 양산을 목표로 군공항 이전과 산업단지 조성을 추진한다고 밝힌 데 이어, 광주 군공항 부지가 호남권 반도체 국가산업단지 후보지로 지정된 사안에 쏠려 있다. 다만 금호건설은 호남권 반도체 클러스터 관련 공사를 아직 수주하지 않았으며, 지역 연고와 시공 경험에 따른 기대가 주가에 반영된 것으로 풀이돼, 실제 수주와 기대감은 구분해서 볼 필요가 있다. 경쟁 구도 면에서는 대형 건설사가 반도체 팹이나 데이터센터 같은 핵심시설을 맡고, 중견 건설사는 전력·용수·정비사업 등 인프라 영역에서 기회를 찾을 가능성이 거론된다. 금호건설은 매출·시가총액 규모에서 상위 대형사에 못 미치지만, 광주·전남 지역 연고를 바탕으로 관련 인프라 발주에서 지역적 위치를 활용할 수 있는 구조에 있다.",
+  "en": "Korea's construction industry has faced years of housing-market slowdown and demand contraction under high interest rates, but signs of recovery emerged in 2026. The Korea Institute for Industrial Economics and Trade projected in its H2 2026 economic and industrial outlook that construction investment would rise 0.9% year-on-year this year on the back of active fiscal spending and improving leading indicators, marking the first annual increase since 2020. Even so, amid continued delays in private housing-market recovery and weak regional building activity, gross profit improvement in building construction and cost management lifted operating profit, while the plant segment also turned profitable, according to one analysis. Market attention has recently centered on the government's June 29, 2026 announcement that Samsung Electronics and SK Hynix would invest a combined KRW 800tn to build four semiconductor fabs on the Gwangju airbase site under a 'southwest semiconductor mega-project,' targeting first production by 2030 alongside airbase relocation and industrial-park development, followed by the designation of the Gwangju airbase site as a candidate for a Honam-region semiconductor national industrial complex. However, Kumho E&C has not yet won any contracts tied to the Honam semiconductor cluster, and the expectations reflected in its share price are said to stem from its regional ties and construction track record rather than confirmed orders, so actual contract wins and market expectations should be distinguished. Competitively, large builders are expected to handle core facilities such as fabs or data centers, while mid-tier builders may find opportunities in infrastructure areas such as power, water, and redevelopment work. Kumho E&C trails top-tier peers in revenue and market capitalization, but its Gwangju/Jeonnam regional ties position it to leverage local advantages in related infrastructure orders."
  },
  "outlook": {
-  "ko": "회사는 2026년 전국 9곳에서 약 4,152가구를 공급할 계획으로, 이는 2022년 이후 최대 규모의 분양 물량이다. '왕숙 아테라'는 남양주 왕숙2지구 첫 본청약 단지로 일반공급 최고 393.6대 1의 경쟁률을 기록했고, 정당계약은 2026년 8월 10일부터 14일까지 진행된다. 앞서 '청주테크노폴리스 아테라 2차'도 2주 만에 전 세대 계약을 완료하며 조기 완판에 성공했고, 이를 계기로 부산 에코델타시티·오산 세교 등 후속 분양이 이어질 예정이다. 수주 측면에서는 2026년 1분기 신규수주가 1조3,955억원으로 전년 동기 대비 152% 증가했으며, LH가 올해 전국 44개 블록·약 2만6,000가구 규모의 민간참여사업을 추진할 계획이어서 관련 파이프라인이 이어질 가능성이 있다. 재무구조 측면에서는 PF 우발부채가 2024년 말 3,780억원에서 2025년 말 1,396억원, 2026년 1분기 684억원으로 빠르게 축소되고 있으며, 회사는 2026년 6월 300억원 규모 신종자본증권 발행으로 자본 확충에도 나섰다. 다만 서울 동작구 상도4동 사업 관련 423억원 규모 출자전환이 2026년 4월 이뤄졌고, 용인 동천2지구 등 잔존 부실 사업장의 손실 확정 및 추가 출자전환 여지가 남아 있어 지분 희석 가능성을 배제할 수 없다. 아시아나항공 지분(약 11%) 매각과 관련해 회사는 구체적 일정이나 방식이 확정되지 않았다고 밝히고 있어, 매각 시점과 방식은 여전히 불확실한 변수로 남아 있다.",
-  "en": "The company plans to supply roughly 4,152 units across nine sites in 2026, its largest presale volume since 2022. \"Wangsuk Artera,\" the first official-subscription complex in Namyangju's Wangsuk 2 district, drew a top competition ratio of 393.6-to-1 in general subscription, with formal contract signing running from August 10-14, 2026. Earlier, \"Cheongju Technopolis Artera Phase 2\" sold out within two weeks of launch, and follow-on presales are planned in Busan Eco Delta City and Osan Segyo, among others. On the order front, Q1 2026 new orders reached KRW 1.3955tn, up 152% year-on-year, and with LH planning roughly 26,000 units of private-participation projects across 44 blocks nationwide this year, the related pipeline could continue. On the balance-sheet side, PF contingent liabilities have shrunk rapidly from KRW 378bn at end-2024 to KRW 139.6bn at end-2025 and KRW 68.4bn in Q1 2026, and the company also issued KRW 30bn of hybrid capital securities in June 2026 to bolster capital. However, a KRW 42.3bn debt-to-equity conversion tied to the Sangdo 4-dong project in Seoul's Dongjak district was carried out in April 2026, and remaining troubled sites such as Yongin Dongcheon 2 district could see further loss confirmation and conversions, leaving some potential for future share dilution. On the roughly 11% Asiana Airlines stake, the company has stated that no concrete timeline or method for a sale has been finalized, leaving the timing and structure of any disposal an unresolved variable."
+  "ko": "회사는 2026년에도 선별 수주와 원가 관리를 통한 수익성 중심 경영을 이어가겠다는 방침을 밝혔다. 2026년 1분기 실적 발표 당시 조완석 대표이사는 \"수익성과 재무 안정성을 동시에 강화하는 경영 기조를 지속하고 있다\"고 언급했다. 주택 부문에서는 신규 브랜드 아테라를 앞세워 왕숙2지구와 고덕신도시 등 수도권 분양을 이어가고 있으며, 산업 인프라 분야에서는 삼성전자 광주사업장 HVAC 생산시설 수주를 계기로 첨단 산업시설 시공 레퍼런스를 넓혔다. 재무 측면에서는 개선 흐름이 이어지고 있는데, 2026년 3월 중순 공시 기준 연결 부채비율은 499.4%로 나타났으며, 2026년 상반기 실적 공시에서는 연결 부채비율이 405.5%로 낮아졌다고 밝혔다. 아시아나항공 지분과 관련해서는 대한항공과 아시아나항공이 정기 이사회에서 합병계약 체결을 승인했고 통합 대한항공은 2026년 12월 17일 출범하며, 합병비율은 대한항공 1대 아시아나항공 0.2736432주로 결정됐다. 회사는 아시아나항공 지분 매각과 관련해 \"아직 구체적인 일정이나 방식이 확정된 단계는 아니다\"라고 밝히면서도, 시장 상황과 기업가치를 종합적으로 고려해 검토할 계획이라는 입장을 유지하고 있다. 통합 법인 출범을 전후로 지분 처리 방향이 구체화될 가능성이 있어 재무구조 개선 속도에 추가 변수가 될 수 있다.",
+  "en": "The company has stated it will continue profitability-focused management through selective order-taking and cost control into 2026. At the Q1 2026 earnings release, CEO Cho Wan-seok said the company \"continues a management stance that strengthens profitability and financial stability at the same time\". In housing, the company continues presales in the greater Seoul area—including the Wangsuk 2 district and Godeok New Town—under its new ARTERA brand, while in industrial infrastructure it has broadened its track record in advanced facility construction through the HVAC production-facility contract at Samsung Electronics' Gwangju site. Financially, the improving trend continues: the consolidated debt ratio stood at 499.4% as of a mid-March 2026 disclosure, and the H1 2026 earnings disclosure showed the consolidated debt ratio had fallen to 405.5%. Regarding the Asiana Airlines stake, Korean Air and Asiana Airlines approved their merger agreement at a regular board meeting, with the merged Korean Air set to launch on December 17, 2026, and a merger ratio of 0.2736432 Asiana shares per one Korean Air share. On the stake sale, the company has said \"no specific timeline or method has been finalized yet\", while maintaining that it will weigh market conditions and corporate value comprehensively. The stake-disposal path could become clearer around the launch of the merged entity, adding a further variable to the pace of balance-sheet improvement."
  },
  "valuation_comment": {
-  "ko": "이익 대비 거래 수준은 과거 적자기(2024년)와 비교해 뚜렷한 이익 회복 국면에 진입한 이후의 구간으로, 이익 회복 초기 단계에서 나타나는 낮은 이익배수 구간에 위치해 있는 것으로 해석될 수 있다. 순자산 대비로는 자체 산출 BPS(6,589원) 대비 현재 거래가가 상당한 프리미엄을 형성하는 구간으로, 부채비율이 여전히 500%를 넘나드는 재무구조를 고려하면 이 프리미엄의 근거를 자산가치보다는 이익 회복 기대에서 찾는 시각이 우세하다. 배당 측면에서는 2025년 결산에서 주당 200원으로 배당이 재개됐지만, 이는 과거 2017~2022년 주당 500~800원을 유지했던 고배당 시기에 비하면 낮아진 수준이며, 배당수익률도 그에 맞춰 낮은 편에 속한다. EPS는 자체 산출 기준 2,032원으로 2024년의 적자에서 벗어나 흑자 구간으로 전환된 흐름을 보여주며, 이 흐름이 이어지는지가 향후 밸류에이션 판단의 핵심 변수가 될 것으로 보인다. 결국 현재의 거래 수준은 이익 정상화에 대한 기대와 재무구조 리스크가 동시에 반영된 구간으로 볼 수 있으며, 두 요인 중 어느 쪽이 우세하게 작용하는지는 향후 분기 실적과 부채비율 추이에 달려 있다.",
-  "en": "Relative to earnings, the shares are trading in a range that reflects an early-stage profit recovery following the 2024 loss year, a phase typically associated with a lower earnings multiple as recovery visibility builds. Relative to net assets, the price sits at a meaningful premium to the self-calculated book value per share (KRW 6,589), and given a debt ratio still hovering above 500%, that premium appears to be driven more by expectations of continued earnings recovery than by asset-value support. On dividends, the payout resumed at KRW 200 per share with the FY2025 settlement, but this remains below the KRW 500-800 per share level maintained during the high-dividend years of 2017-2022, and the dividend yield sits correspondingly on the lower side. EPS on a self-calculated basis stands at KRW 2,032, illustrating the shift from the 2024 loss into a profitable range, and whether this trajectory continues will likely be the central variable for future valuation judgments. Overall, the current trading level appears to reflect both expectations for earnings normalization and lingering balance-sheet risk simultaneously, with the balance between these two forces likely to hinge on upcoming quarterly results and debt-ratio trends."
+  "ko": "금호건설의 주가는 2026년 상반기 이후 실적 개선 소식과 호남권 반도체 산단 관련 기대가 겹치며 큰 변동성을 보였다. 이 기간 동안 주가수익비율(PER)은 과거 수년간 형성된 거래 밴드의 상단을 크게 벗어나는 구간까지 확대된 바 있어, 시세와 실적 개선 속도 사이의 괴리를 어떻게 해석할지가 관심사로 떠올랐다. 주가순자산비율은 2024년 대규모 적자로 자기자본이 크게 줄어든 이후 순자산가치 대비 프리미엄이 부각되는 구간에서 거래되는 경우가 많았다. 배당의 경우 과거 배당 규모가 축소된 이후 최근 다시 배당을 재개하는 흐름을 보이고 있으나, 배당수익률 자체는 업종 평균에 못 미치는 수준에서 형성되는 경우가 많다는 점도 참고할 만하다. 부채비율이 개선되는 흐름과 아시아나항공 지분이라는 변수가 동시에 자본 규모에 영향을 미치고 있다는 점은 밸류에이션을 해석할 때 함께 살펴볼 요소다.",
+  "en": "Kumho E&C's share price has shown considerable volatility since H1 2026 as earnings-improvement news overlapped with expectations tied to the Honam-region semiconductor industrial complex. During this period, the price-earnings ratio expanded well beyond the upper end of its trading band formed over the past several years, raising questions about how to interpret the gap between market price and the pace of earnings recovery. The price-to-book ratio has often traded at a premium to net asset value ever since equity contracted sharply following the large 2024 loss. On dividends, while the payout has recently resumed after a period of reduction, the resulting dividend yield has often sat below the sector average. Both the improving debt-ratio trend and the Asiana Airlines stake continue to influence the size of equity, factors worth weighing together when interpreting valuation."
  },
  "bull": [
   {
    "title": {
-    "ko": "빅배스 이후 이익 정상화 흐름",
-    "en": "Profit normalization after the big bath"
+    "ko": "이익 턴어라운드의 지속",
+    "en": "Continuing Earnings Turnaround"
    },
    "body": {
-    "ko": "2024년 대규모 손실 반영 이후 2025년 흑자 전환에 성공했고, 2026년 1분기까지 원가율 개선을 동반한 이익 개선세가 이어지고 있다. 2026년 8월 발표된 상반기 실적(뉴스 보도 기준)에서도 영업이익이 전년 동기보다 30% 이상 늘어난 것으로 나타나 회복 흐름이 지속되는 모습이다. 과거 고원가 현장이 순차적으로 마무리되고 수익성이 높은 신규 사업 비중이 확대된 점이 개선의 배경으로 꼽힌다."
-   },
-   "en": {
-    "body": ""
+    "ko": "2025년 흑자 전환에 이어 2026년 상반기까지 원가율 개선과 영업이익률 상승이 이어지고 있다. 지배주주순이익도 분기마다 확대되는 흐름을 보이며 회복의 폭과 속도가 커지고 있다. 차입금 감소와 부채비율 하락도 병행되고 있어 재무 부담이 점차 완화되는 모습이다.",
+    "en": "Following the return to profit in 2025, cost-ratio improvement and rising operating margins continued through H1 2026. Owner net profit has also expanded quarter over quarter, with both the scale and pace of recovery increasing. Declining borrowings and a falling debt ratio have accompanied this, gradually easing financial strain."
    }
   },
   {
    "title": {
-    "ko": "균형 잡힌 매출 포트폴리오",
-    "en": "Balanced revenue portfolio"
+    "ko": "호남권 반도체 인프라 발주 기대",
+    "en": "Honam Semiconductor Infrastructure Order Hopes"
    },
    "body": {
-    "ko": "주택 42%, 토목 40%, 건축 17%, 해외 1%로 구성된 매출 구조는 주택 의존도가 70~80%에 달하는 다른 중견 건설사와 차별화된다. 토목·공공 인프라 비중이 높아 민간 주택시장 변동성을 상쇄하는 효과가 있으며, 공공 발주 사업은 공사비 조정이 상대적으로 원활하다는 장점도 있다."
-   },
-   "en": {
-    "body": ""
+    "ko": "정부가 광주 군공항 부지를 호남권 반도체 국가산업단지 후보지로 지정하면서 산단·전력·배후도시 조성이 예정돼 있다. 금호건설은 전남광주통합특별시 나주에 본점을 둔 호남 기반 건설사로서 관련 인프라 발주에 참여할 가능성이 거론된다. 실제로 최근 삼성전자 광주사업장 HVAC 생산시설을 수주하며 첨단 산업시설 시공 레퍼런스를 쌓았다.",
+    "en": "The government's designation of the Gwangju airbase site as a candidate for a Honam-region semiconductor national industrial complex has set the stage for future industrial-park, power, and satellite-city development. As a Honam-based builder headquartered in Naju, Kumho E&C is seen as a potential participant in related infrastructure orders. It has already added to its track record by winning an HVAC production-facility contract at Samsung Electronics' Gwangju site."
    }
   },
   {
    "title": {
-    "ko": "공공주택 강자 지위와 재무구조 개선",
-    "en": "Public-housing strength and improving balance sheet"
+    "ko": "아시아나항공 지분의 잠재적 유동성",
+    "en": "Potential Liquidity from the Asiana Airlines Stake"
    },
    "body": {
-    "ko": "3기 신도시를 중심으로 한 민간참여형 공공주택사업 수주가 이어지고 있고, '아테라' 브랜드는 청주·왕숙 등에서 완판과 높은 청약 경쟁률을 기록하고 있다. PF 우발부채가 2024년 말 3,780억원에서 2026년 1분기 684억원까지 빠르게 축소됐고, 3년 만에 배당도 재개돼 재무·주주환원 측면에서 개선 신호가 나타나고 있다."
-   },
-   "en": {
-    "body": ""
+    "ko": "금호건설은 아시아나항공 지분 11.12%를 보유하고 있으며, 대한항공-아시아나 통합 법인 출범이 다가오면서 지분 처리 시점과 방식에 대한 논의가 진전될 여지가 있다. 지분 매각이 이뤄질 경우 유동성 확보와 부채비율 개선에 기여할 수 있다. 다만 매각 시점과 가격은 통합 대한항공의 주가 흐름에 좌우된다.",
+    "en": "Kumho E&C holds an 11.12% stake in Asiana Airlines, and as the merger of Korean Air and Asiana approaches launch, discussion of the timing and method of disposal could advance. A sale, if executed, could support liquidity and improve the debt ratio. However, the timing and price would depend on the share-price trajectory of the merged Korean Air."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "여전히 높은 부채비율",
-    "en": "Debt ratio remains elevated"
+    "ko": "여전히 높은 부채비율과 우발채무",
+    "en": "Still-Elevated Debt Ratio and Contingent Liabilities"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 520.2%로 2023년 260.2% 대비 여전히 크게 높은 수준이며, 이자보상배율이 1배를 밑돌던 시기도 있었다. 개선 흐름이 뚜렷하다고 해도 절대적인 재무 레버리지 수준은 업종 내 상위권에 속해 금융비용 부담과 자본조달 필요성이 계속 이어질 소지가 있다."
-   },
-   "en": {
-    "body": ""
+    "ko": "부채비율은 2026년 들어 낮아지는 흐름을 보였지만 여전히 높은 수준에 머물러 있다. 부동산 프로젝트파이낸싱(PF) 관련 지급보증·채무인수 등 우발채무 부담도 상존한다. 아시아나항공 지분의 공정가치 변동이 기타포괄손익을 통해 자본 규모에 직접 영향을 주는 구조도 재무 변동성을 키우는 요인이다.",
+    "en": "Although the debt ratio has trended lower through 2026, it remains elevated. Contingent liabilities tied to real-estate project-financing guarantees and debt assumptions also persist. The structure by which fair-value changes in the Asiana Airlines stake flow directly into equity through other comprehensive income adds to financial volatility."
    }
   },
   {
    "title": {
-    "ko": "아시아나항공 지분 변동성 노출",
-    "en": "Exposure to Asiana Airlines stake volatility"
+    "ko": "반도체 산단 수혜는 아직 확정되지 않았다",
+    "en": "Semiconductor-Cluster Benefits Remain Unconfirmed"
    },
    "body": {
-    "ko": "약 11% 규모의 아시아나항공 지분은 주가 변동에 따라 기타포괄손익을 통해 자본과 부채비율에 직접 영향을 미친다. 회사는 매각 일정이나 방식을 아직 확정하지 않았다고 밝혀, 매각 시점의 불확실성과 그 사이의 지분 가치 변동이 재무지표에 부담으로 작용할 수 있다."
-   },
-   "en": {
-    "body": ""
+    "ko": "정부의 반도체 클러스터 발표와 지역 연고 자체가 곧바로 수주로 이어지는 것은 아니다. 금호건설이 관련 산단 공사를 수주했다는 공시는 아직 확인되지 않고 있다. 실제 계약 공시가 나오기 전까지 관련 기대는 실적 추정의 근거가 되기 어렵다.",
+    "en": "A government cluster announcement and regional ties do not automatically translate into contract wins. No disclosure confirming that Kumho E&C has won related industrial-park construction work has emerged yet. Until an actual contract is disclosed, such expectations remain a weak basis for earnings estimates."
    }
   },
   {
    "title": {
-    "ko": "잔존 부실 사업장과 거버넌스 이슈",
-    "en": "Remaining troubled sites and governance issues"
+    "ko": "주택경기 회복 지연",
+    "en": "Delayed Housing-Market Recovery"
    },
    "body": {
-    "ko": "서울 상도4동 사업은 이미 출자전환으로 정리됐지만, 용인 동천2지구 등 손실 확정이 남은 사업장이 존재해 추가 출자전환에 따른 지분 희석 가능성이 있다. 또한 중대재해 발생과 관련한 수주 경쟁력 우려, 경영진의 미등기 임원 신분 등 거버넌스 관련 지적도 함께 제기되고 있다."
-   },
-   "en": {
-    "body": ""
+    "ko": "민간 주택경기 회복 지연과 지방 건축경기 부진은 주택·개발 비중이 큰 금호건설의 매출에 부담이 될 수 있다. 매출액은 2026년 들어서도 전년 동기 대비 줄어드는 흐름을 보이고 있다. 외형보다 수익성 위주로 경영 전략을 짜는 배경이기도 하다.",
+    "en": "Delays in the private housing-market recovery and weak regional building activity can weigh on revenue given the company's large exposure to housing and development. Revenue has continued to decline year-on-year into 2026. This is part of the backdrop for the company's profitability-over-volume management strategy."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무건전성 리스크",
-    "en": "Financial soundness risk"
+    "ko": "재무/유동성 리스크",
+    "en": "Financial/Liquidity Risk"
    },
    "body": {
-    "ko": "부채비율이 500%를 상회하는 구조에서 금리 환경이나 PF 시장 여건이 다시 악화될 경우 자금조달 비용이 늘어날 수 있다. 신종자본증권 발행, 출자전환 등 자본 확충 수단이 반복적으로 동원되고 있다는 점은 재무 여력이 넉넉하지 않음을 시사한다. 신용평가사의 등급 전망 하향 이력도 존재해 신용도 관련 모니터링이 필요하다."
+    "ko": "부채비율이 개선되고 있음에도 여전히 높은 수준이며, PF 관련 우발채무와 아시아나항공 지분 평가 변동이 자본 규모에 계속 영향을 줄 수 있다. 자본 확충 수단을 활용하고 있으나 이는 추가적인 금융비용 부담을 수반할 수 있다.",
+    "en": "Even as the debt ratio improves, it remains high, and PF-related contingent liabilities together with fluctuations in the Asiana Airlines stake valuation can continue to affect equity size. Capital-raising measures used to shore up the balance sheet can carry additional financing costs."
    }
   },
   {
    "cat": {
-    "ko": "업황·정책 리스크",
-    "en": "Sector and policy risk"
+    "ko": "아시아나항공 지분 처리 리스크",
+    "en": "Asiana Airlines Stake Disposal Risk"
    },
    "body": {
-    "ko": "지방 건축경기 부진과 수도권-지방 양극화가 심화되는 가운데 민간 주택경기 회복이 지연되고 있다. 2026년부터 강화되는 안전규제(산재 발생 시 영업이익 대비 과징금, 등록말소 등)는 공사비와 공기에 부담을 줄 수 있다."
+    "ko": "대한항공과의 계약에 따라 금호건설은 아시아나항공 지분을 일정 기간 이후 처분해야 하는 의무를 안고 있다. 매각 시점과 가격은 통합 대한항공의 주가 흐름에 좌우되며, 낮은 가격에 처분할 경우 손실이 확정될 수 있다.",
+    "en": "Under its contract with Korean Air, Kumho E&C carries an obligation to divest its Asiana Airlines stake after a certain period. The timing and price of any sale hinge on the share-price trajectory of the merged Korean Air, and disposal at a depressed price would crystallize a loss."
    }
   },
   {
    "cat": {
-    "ko": "지분 및 거버넌스 리스크",
-    "en": "Equity holdings and governance risk"
+    "ko": "정책·수급 불확실성",
+    "en": "Policy and Order-Flow Uncertainty"
    },
    "body": {
-    "ko": "아시아나항공 지분 가치 변동은 실적과 무관하게 재무지표를 흔들 수 있는 변수다. 잔존 부실 사업장의 출자전환에 따른 지분 희석, 중대재해 관련 수주 제한, 경영진 미등기 이슈 등 비재무적 리스크도 함께 고려할 필요가 있다."
+    "ko": "호남권 반도체 산단은 아직 후보지 지정 및 초기 절차 단계로, 실제 착공과 발주까지는 시간이 소요될 수 있다. 관련 기대감이 과도하게 선반영될 경우 실제 수주 확정 여부에 따라 주가 변동성이 커질 수 있다.",
+    "en": "The Honam semiconductor cluster remains at the candidate-site designation and early-procedure stage, and actual groundbreaking and order-issuance could take time. If related expectations are excessively priced in, share-price volatility could increase depending on whether actual contract wins materialize."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중",
-    "en": "Mid-to-late August 2026"
+    "ko": "2026년 11월 중",
+    "en": "November 2026"
    },
    "what": {
-    "ko": "'왕숙 아테라' 정당계약(8/10~14) 결과와 이후 분양 물량(부산 에코델타시티 8블록 등)의 흥행 여부를 확인해야 한다.",
-    "en": "Check the outcome of the Wangsuk Artera formal contract period (Aug 10-14) and whether follow-on presales, such as Busan Eco Delta City Block 8, continue to draw strong demand."
+    "ko": "2026년 3분기 실적 발표 시점에서 원가율·영업이익률 개선세가 이어지는지, 신규수주 및 수주잔고 변화를 확인해야 한다.",
+    "en": "Check whether cost-ratio and operating-margin improvements persist at the Q3 2026 earnings release, along with changes in new orders and order backlog."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월경(3분기 실적)",
-    "en": "Around November 2026 (Q3 earnings)"
+    "ko": "2026년 12월 17일 전후",
+    "en": "Around December 17, 2026"
    },
    "what": {
-    "ko": "원가율 개선과 부채비율 하락 흐름이 3분기에도 이어지는지, 2026년 상반기 대비 개선세가 지속되는지 점검해야 한다.",
-    "en": "Monitor whether cost-ratio improvement and the declining debt ratio trend continue into Q3 and whether the H1 2026 improvement pace is sustained."
+    "ko": "대한항공-아시아나항공 통합법인 출범을 계기로 금호건설의 아시아나항공 지분 11.12% 처리 방향(매각 여부·시점·방식)에 관한 공시나 발표가 나오는지 확인해야 한다.",
+    "en": "Around the launch of the merged Korean Air-Asiana entity, watch for any disclosure on the direction (whether, when, and how) Kumho E&C will handle its 11.12% Asiana Airlines stake."
    }
   },
   {
    "when": {
-    "ko": "확정 시점 미정",
-    "en": "Timing not yet set"
+    "ko": "2026년 4분기~2027년",
+    "en": "Q4 2026 through 2027"
    },
    "what": {
-    "ko": "아시아나항공 지분 매각과 관련한 구체적 일정·방식 공시 여부를 확인해야 하며, 지분 처분 시 자본 및 부채비율에 미치는 영향을 살펴야 한다.",
-    "en": "Watch for any disclosure specifying a concrete timeline or method for the Asiana Airlines stake sale, and assess the impact on equity and the debt ratio if a disposal proceeds."
+    "ko": "호남권 반도체 국가산업단지의 실시계획 승인 및 후속 절차, 관련 토목·전력·정비 인프라 발주 공시와 금호건설의 실제 수주 여부를 확인해야 한다.",
+    "en": "Track approval of the implementation plan and follow-on procedures for the Honam semiconductor national industrial complex, related civil/power/redevelopment infrastructure order announcements, and whether Kumho E&C actually secures contracts."
    }
   },
   {
    "when": {
-    "ko": "추가 공시 발생 시",
-    "en": "Upon any further disclosure"
+    "ko": "매 분기 공시 시점",
+    "en": "Each quarterly disclosure"
    },
    "what": {
-    "ko": "용인 동천2지구 등 잔존 부실 사업장의 손실 확정 및 출자전환 여부를 확인해야 하며, 이는 기존 주주 지분 희석과 직결될 수 있다.",
-    "en": "Check for loss confirmation or debt-to-equity conversion at remaining troubled sites such as Yongin Dongcheon 2 district, which could directly dilute existing shareholders."
+    "ko": "연결 부채비율, 차입금, PF 우발채무 잔액 변화와 자본조달 관련 조건 변경 여부를 지속적으로 확인해야 한다.",
+    "en": "Continue monitoring changes in the consolidated debt ratio, borrowings, PF contingent-liability balances, and any changes in capital-raising terms."
    }
   },
   {
    "when": {
-    "ko": "정기 신용평가 시점(통상 상·하반기)",
-    "en": "Regular credit-rating review periods (typically semi-annual)"
+    "ko": "2026년 연말 결산 시점",
+    "en": "Year-end 2026"
    },
    "what": {
-    "ko": "한국기업평가 등 신용평가사의 등급·전망 변경 여부를 확인해, 수익성 개선이 실제 신용도 평가에 반영되는지 점검해야 한다.",
-    "en": "Check for rating or outlook changes from agencies such as Korea Ratings to see whether the profitability improvement is being reflected in actual credit assessments."
+    "ko": "배당 정책(재개 여부와 규모) 및 연간 원가율·수주잔고 공시를 확인해야 한다.",
+    "en": "Check the year-end disclosure for dividend policy (whether resumed, and at what level) as well as annual cost-ratio and order-backlog figures."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "금호건설은 2024년 대규모 손실 반영이라는 극단적 조정을 거친 뒤, 원가율 관리와 선별 수주를 통해 2025년과 2026년 상반기까지 뚜렷한 이익 회복 흐름을 보여주고 있다. 주택·토목·건축이 균형을 이루는 매출 구조와 3기 신도시를 중심으로 한 공공주택 수주 경쟁력, '아테라' 브랜드의 분양 흥행은 사업 측면의 긍정적 요인으로 평가된다. 반면 부채비율이 여전히 500%를 넘나드는 재무 레버리지, 아시아나항공 지분 가치 변동에 따른 자본 변동성, 잔존 부실 사업장의 출자전환 가능성은 구조적으로 해소되지 않은 리스크로 남아 있다. 배당 재개와 PF 우발부채 축소, 차입금 감소 등은 재무구조 정상화의 초기 신호로 해석될 수 있으나, 이 흐름이 몇 개 분기 더 이어지는지가 판단의 핵심이 될 것으로 보인다. 투자 판단에 앞서 다음 분기 실적, 부채비율 추이, 아시아나항공 지분 매각 관련 공시 등을 지속적으로 확인하는 것이 필요하다.",
-   "en": "Kumho E&C, after an extreme adjustment via a large one-off loss in 2024, has shown a clear earnings recovery through cost-ratio management and selective order-taking into 2025 and H1 2026. A balanced revenue mix across housing, civil works and building, competitive strength in Third New Town public-housing orders, and strong presale demand for the ARTERA brand stand out as positive business-side factors. On the other hand, financial leverage with a debt ratio still hovering above 500%, equity volatility tied to the fair value of its Asiana Airlines stake, and the possibility of further debt-to-equity conversions at remaining troubled sites remain unresolved structural risks. The resumption of dividends along with declining PF contingent liabilities and borrowings can be read as early signs of balance-sheet normalization, but whether this trend persists for additional quarters will be the key determinant going forward. Before drawing conclusions, it is worth continuously checking upcoming quarterly results, the debt-ratio trajectory, and any disclosure regarding the Asiana Airlines stake sale."
+   "ko": "금호건설은 2024년 대규모 적자를 겪은 뒤 2025년 흑자로 전환했고, 2026년 상반기까지 원가율 개선과 영업이익률 상승이 이어지는 회복 국면에 있다. 동시에 광주 군공항 부지의 호남권 반도체 국가산업단지 후보지 지정이라는 지역 호재가 겹치며 시장의 관심이 높아진 상태다. 다만 반도체 산단 관련 수혜는 아직 실제 시공계약으로 확인되지 않았고, 부채비율은 개선되고 있음에도 여전히 높은 수준이다. 아시아나항공 지분 11.12%는 잠재적 유동성 확보 수단이자 동시에 자본 변동성을 키우는 재무 변수로 함께 작용하고 있으며, 대한항공-아시아나 통합 법인 출범을 계기로 처리 방향이 구체화될 가능성이 있다. 주택경기 회복 지연과 지방 건축경기 부진은 외형 확대보다 수익성 중심 경영을 지속해야 하는 배경이 되고 있다. 종합하면 본업의 실적 회복 흐름과 지역 인프라 발주 기대, 재무구조 개선 여지와 잔존 리스크가 동시에 존재하는 국면으로, 향후 실적 발표와 수주 공시, 지분 처리 관련 소식을 통해 방향성을 가늠할 필요가 있다.",
+   "en": "Kumho E&C has moved from a large 2024 loss to a 2025 profit, and remains in a recovery phase through H1 2026 marked by cost-ratio improvement and rising operating margins. At the same time, regional excitement has built around the designation of the Gwangju airbase site as a candidate for a Honam-region semiconductor national industrial complex. However, the semiconductor-cluster benefit has not yet been confirmed through an actual construction contract, and the debt ratio, while improving, remains elevated. The 11.12% Asiana Airlines stake functions both as a potential source of liquidity and as a source of equity volatility, with its disposal path likely to become clearer around the launch of the merged Korean Air-Asiana entity. Delayed housing-market recovery and weak regional building activity continue to underpin a profitability-over-volume management approach. Taken together, the company sits at a juncture where core-business earnings recovery, regional infrastructure-order hopes, room for balance-sheet improvement, and lingering risks coexist, with future earnings releases, order disclosures, and stake-related news likely to shape the direction from here."
   }
  },
  "sources": [
   "https://www.sankun.com/company-info/1I49CFVBdp2rFQ8vFuHXJw",
   "https://m.irgo.co.kr/IR-ROOM/002990",
-  "https://alphasquare.co.kr/home/stock-summary?code=002990",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=002990",
-  "https://comp.wisereport.co.kr/company/c1080001.aspx?cmp_cd=002990&cn=",
   "https://www.dtoday.co.kr/news/articleView.html?idxno=770777",
-  "https://news.nate.com/view/20260515n15951",
+  "https://comp.wisereport.co.kr/company/c1080001.aspx?cmp_cd=002990&cn=",
   "https://www.kumhoenc.com/invest/reportList.asp",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=002990",
+  "https://news.nate.com/view/20260515n15951",
+  "https://bullstory.io/blog/%EA%B8%88%ED%98%B8%EA%B1%B4%EC%84%A4-%EC%A3%BC%EA%B0%80-1052-%EA%B8%89%EB%93%B1-15470%EC%9B%90-%EC%83%81%ED%95%9C%EA%B0%80-%EC%9D%B4%ED%9B%84-%EC%A7%84%EC%A7%9C-%EC%82%B4-%EB%95%8C%EC%9D%B8%EA%B0%80",
   "https://kind.krx.co.kr/common/disclsviewer.do?method=searchInitInfo&acptNo=20250317000635&docno=",
-  "https://www.stockplus.com/m/stocks/KOREA-A002990",
-  "https://comp.wisereport.co.kr/company/c1070001.aspx?cmp_cd=002990&cn=",
-  "https://www.investing.com/equities/kumho-ind",
-  "https://www.kumhoenc.com/invest/stock01.asp",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260408000870&docno=&viewerhost=",
+  "https://www.bloter.net/news/articleView.html?idxno=632542",
+  "https://www.bloter.net/news/articleView.html?idxno=644754",
+  "http://www.wikileaks-kr.org/news/articleView.html?idxno=182938",
+  "https://www.businesspost.co.kr/BP?command=article_view&num=387110",
+  "https://v.daum.net/v/qvPk9Tvahs",
   "https://www.fetv.co.kr/news/articleView.html?idxno=302865",
-  "https://itooza.com/vscore/002990",
-  "https://m.irgo.co.kr/IR-COMP/002990/%EA%B8%88%ED%98%B8%EA%B1%B4%EC%84%A4-IR-PAGE",
-  "https://www.sankun.com/blog/detail/1287_2026%EB%85%84__%EC%97%85%ED%99%A9_%EB%B0%98%EC%A0%84%EC%9D%98_%ED%95%B4%EA%B0%80_%EB%90%A0%EA%B9%8C____%EA%B1%B4%EC%84%A4_%EC%9E%90%EC%9E%AC_%EB%B6%80%EB%8F%99%EC%82%B0_%EA%B2%BD%EA%B8%B0_%EC%A0%84%EB%A7%9D_%EB%B0%9C%ED%91%9C"
+  "https://www.ebn.co.kr/news/articleView.html?idxno=1680286",
+  "https://www.mt.co.kr/estate/2025/03/14/2025031314311741647",
+  "https://www.businesspost.co.kr/BP?command=article_view&num=438151"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -242,9 +233,9 @@
   "건설·건자재"
  ],
  "market": "코스피",
- "reportDate": "2026-08-15",
- "reportTs": "2026-08-15 18:20",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 06:04",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -343,14 +334,14 @@
    }
   ],
   "valuation": {
-   "price": 14750,
-   "mcap": 0.5496,
+   "price": 16090,
+   "mcap": 0.5995,
    "shares": 37259974,
    "total_shares": 37289026,
    "wavg_shares": 36705902,
-   "per": 6.9,
+   "per": 7.558,
    "eps": 2129,
-   "pbr": 1.88,
+   "pbr": 2.0481,
    "bps": 7856,
    "roe_ttm": 30.0,
    "ttm_window": "2025Q3~2026Q2",
@@ -360,7 +351,7 @@
    "bps_krx": 6840.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 200.0,
-   "div": 1.36
+   "div": 1.24
   }
  }
 }
