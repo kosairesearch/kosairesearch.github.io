@@ -24,6 +24,7 @@ if(window.KOSi18n) window.KOSi18n.register({
   "인증 메일 다시 보내기":"Resend verification email",
   "인증을 완료했습니다":"I've verified — refresh",
   "인증 메일을 다시 보내 드렸습니다. 메일함을 확인하여 주시기 바랍니다.":"Verification email resent. Please check your inbox.",
+  "보내지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"Couldn't send. Please try again in a moment.",
   "로그아웃":"Sign out"
 });
 
@@ -113,7 +114,21 @@ function lockVerify(user){
   ov.appendChild(card); document.body.appendChild(ov);
   if(window.KOSi18n) window.KOSi18n.apply();
   card.querySelector('#kgResend').addEventListener('click', async function(){
-    try{ await sendVerifyEmail(user.email); this.textContent = tt('인증 메일을 다시 보내 드렸습니다. 메일함을 확인하여 주시기 바랍니다.'); }catch(e){}
+    /* 실패를 삼키지 않는다. catch(e){} 였을 때는 눌러도 아무 일이 안
+       일어나고 이유도 안 보였다 — 사람은 고장 난 줄 알고 계속 누른다.
+       메일 횟수 제한이 걸리면 서버가 '약 N분 뒤에' 를 문장으로 보내 주므로
+       그것을 그대로 보여 준다. */
+    const btn = this;
+    btn.disabled = true;
+    try{
+      await sendVerifyEmail(user.email);
+      btn.textContent = tt('인증 메일을 다시 보내 드렸습니다. 메일함을 확인하여 주시기 바랍니다.');
+    }catch(e){
+      btn.disabled = false;
+      btn.textContent = (e && e.code === 'functions/resource-exhausted' && e.message)
+        ? e.message
+        : tt('보내지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.');
+    }
   });
   card.querySelector('#kgRefresh').addEventListener('click', async function(){
     try{ await user.reload(); }catch(e){}

@@ -89,6 +89,18 @@ export function mapAuthError(err) {
   const c = String((err && (err.code || err.message)) || "");
   const has = s => c.includes(s);
 
+  /* 서버가 사람이 읽을 문장을 함께 보낸 경우에는 그것을 그대로 보여 준다.
+
+     메일 발송 횟수 제한이 그렇다 — '약 12분 뒤에 다시 시도하여 주시기
+     바랍니다' 처럼 언제 다시 되는지가 문장 안에 들어 있다. 여기서 코드로
+     바꿔치기하면 그 정보가 사라지고 '처리 중 오류가 발생했습니다
+     (functions/resource-exhausted)' 만 남는다. 사람은 무엇을 기다려야
+     하는지 모른 채 계속 누른다.
+
+     서버가 화면 언어(lang)를 받아 그 언어로 만들어 보내므로 영어 화면에
+     한국어가 뜨지 않는다. */
+  if (has("resource-exhausted") && err && err.message) return err.message;
+
   if (has("api-key") || has("configuration-not-found") || has("operation-not-allowed"))
     return T("Firebase 설정이 필요합니다. firebase-config.js를 확인하여 주시기 바랍니다.");
   if (has("account-exists-with-different-credential") || has("email-already-in-use") && has("credential"))

@@ -58,6 +58,7 @@ await env.withSecurityRulesDisabled(async (c) => {
   await setDoc(doc(db, "report_reads/me_2026-09-04"), { uid: "me", n: 3 });
   await setDoc(doc(db, "reports_paid/005930"), { body: "유료 본문" });
   await setDoc(doc(db, "providerTokens/me"), { refreshToken: "비밀" });
+  await setDoc(doc(db, "mailQuota/reset_abc"), { h: { n: 3, at: 1 } });
 });
 
 console.log("\n── ① 워치리스트 — 본인 것만 ──");
@@ -95,6 +96,10 @@ await cannot(setDoc(doc(me, "report_reads/me_2026-09-04"), { n: 0 }), "열람 �
 await cannot(getDoc(doc(me, "reports_paid/005930")), "유료 리포트 본문을 못 읽는다");
 await cannot(getDoc(doc(me, "providerTokens/me")), "제공자 토큰을 못 읽는다(본인도)");
 await cannot(setDoc(doc(me, "providerTokens/me"), { refreshToken: "x" }), "제공자 토큰을 못 쓴다");
+await cannot(getDoc(doc(me, "mailQuota/reset_abc")), "메일 발송 셈을 못 읽는다");
+await cannot(setDoc(doc(me, "mailQuota/reset_abc"), { h: { n: 0, at: 0 } }),
+             "메일 발송 셈을 못 지운다(지울 수 있으면 제한이 없는 것과 같다)");
+await cannot(deleteDoc(doc(me, "mailQuota/reset_abc")), "메일 발송 셈 문서를 못 지운다");
 
 console.log("\n── ⑤ 규칙에 없는 자리는 막힌다 ──");
 await cannot(getDoc(doc(me, "무엇이든/x")), "규칙이 없는 컬렉션은 읽기가 막힌다");

@@ -104,5 +104,17 @@ service cloud.firestore {
       allow read, write: if false;
     }
 
+    // 메일 발송 횟수 — 아무에게도 열지 않는다.
+    //
+    // 인증·재설정 메일을 한 주소에 몇 통 보냈는지 세는 자리다. 열어 두면
+    // 세어 둔 값을 지우고 다시 보낼 수 있어 제한이 없는 것과 같아진다.
+    // 읽기도 열지 않는다 — 남의 주소에 메일이 몇 통 갔는지는 알 이유가 없고,
+    // 문서 이름이 주소 해시라 있고 없고만으로도 가입 여부가 새어 나간다.
+    //
+    // 세고 쓰는 것은 sendVerifyEmail·sendResetEmail 이 Admin SDK 로 한다.
+    match /mailQuota/{id} {
+      allow read, write: if false;
+    }
+
   }
 }

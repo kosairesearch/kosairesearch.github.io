@@ -1404,6 +1404,100 @@ function marketingRecheckMail(lang, agreedAtText){
 
 function emailOk(e){ return typeof e === "string" && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e); }
 
+/* ── 메일 발송 횟수 제한 ─────────────────────────────────────
+
+   sendVerifyEmail 과 sendResetEmail 은 로그인 없이 부를 수 있고 주소를
+   본문에 실어 보낸다. 그래야 하는 이유가 있다 — 비밀번호를 잊은 사람은
+   로그인할 수 없고, 인증을 못 끝낸 사람은 로그아웃된 상태다.
+
+   그런데 횟수를 안 세고 있었다. 남의 주소를 넣어 되풀이 부르면 그 사람
+   메일함으로 계속 나가고, 발송 요금도 우리가 문다.
+
+   ■ 창을 둘로 나눈 이유
+
+     1시간에 5통    몰아치기를 막는다
+     하루에 20통    총량을 막는다
+
+   하나로는 둘 다 못 막는다. '하루 20통' 만 두면 5분 만에 20통이 몰아칠
+   수 있고, '1시간 5통' 만 두면 하루 120통이 된다.
+
+   ■ 갇히지 않게 만든 것
+
+   이 기능에서 제일 나쁜 결과는 비밀번호를 잊은 사람이 메일을 못 받는
+   것이다. 계정을 되찾을 길이 그것뿐이기 때문이다. 그래서 셋을 뒀다.
+
+     · 넉넉하게 잡았다. 안 와서 다시 눌러 보는 것은 보통 두세 번이다.
+     · 걸리면 언제 다시 되는지 알려 준다. 막연히 '나중에' 라고 하면
+       사람은 계속 누른다.
+     · 셈에 실패하면(파이어스토어 장애 등) 막지 않고 보낸다. 통신이
+       잠깐 끊겼다고 계정 복구를 막는 것보다, 그 사이 몇 통 더 나가는
+       편이 낫다. 이 사이트가 애매할 때 기우는 방향이다.
+
+   ■ 세는 자리를 나눈 이유
+
+   kind 를 열쇠말에 넣어 인증 메일과 재설정 메일을 따로 센다. 가입하다
+   인증 메일을 몇 번 받은 사람이 나중에 비밀번호를 잊었을 때 그것 때문에
+   막히면 안 된다.
+
+   주소는 그대로 두지 않고 해시로 바꿔 문서 이름에 쓴다. 문서 이름은
+   내용보다 새기 쉬운 자리라(색인·로그) 회원 주소를 늘어놓지 않는다. */
+const crypto = require("crypto");
+const MAIL_LIMITS = [
+  { key: "h", ms: 60 * 60 * 1000, max: 5 },        // 1시간에 5통
+  { key: "d", ms: 24 * 60 * 60 * 1000, max: 20 },  // 하루에 20통
+];
+
+async function mailQuotaTake(db, kind, email) {
+  const id = kind + "_" +
+    crypto.createHash("sha256").update(String(email)).digest("hex").slice(0, 40);
+  const ref = db.collection("mailQuota").doc(id);
+  try {
+    return await db.runTransaction(async (tx) => {
+      const cur = (await tx.get(ref)).data() || {};
+      const now = Date.now();
+      const next = {};
+      let waitMs = 0;
+      for (const L of MAIL_LIMITS) {
+        const w = cur[L.key] || {};
+        const at = typeof w.at === "number" ? w.at : 0;
+        const n = typeof w.n === "number" ? w.n : 0;
+        if (now - at >= L.ms) {           // 창이 지났다 — 처음부터 다시 센다
+          next[L.key] = { n: 1, at: now };
+          continue;
+        }
+        if (n >= L.max) waitMs = Math.max(waitMs, at + L.ms - now);
+        next[L.key] = { n: n + 1, at };
+      }
+      if (waitMs > 0) return { ok: false, waitMs };
+      tx.set(ref, next, { merge: true });
+      return { ok: true };
+    });
+  } catch (e) {
+    // 셈을 못 한 것이 계정 복구를 막을 이유는 아니다.
+    console.error("[mailQuota] 셈에 실패 — 막지 않고 보낸다:", e && e.message);
+    return { ok: true };
+  }
+}
+
+/* 걸렸을 때 사람에게 하는 말. 언제 다시 되는지 알려 준다.
+
+   막연히 '나중에' 라고 하면 사람은 계속 누른다. 그러면 갇힌 느낌만 주고
+   횟수는 어차피 안 늘어난다.
+
+   두 함수가 이미 lang 을 받고 있으므로 여기서 언어를 갈라 만든다. 서버
+   문장을 화면이 그대로 보여 주는데, 한국어만 돌려주면 영어 화면에 한국어가
+   뜬다 — 이 사이트에서 여러 번 겪은 자리다. */
+function mailQuotaMessage(waitMs, lang) {
+  const min = Math.max(1, Math.ceil(waitMs / 60000));
+  const hr = Math.ceil(min / 60);
+  if (lang === "en") {
+    const when = min >= 60 ? `about ${hr} hour${hr > 1 ? "s" : ""}` : `about ${min} minute${min > 1 ? "s" : ""}`;
+    return `Too many email requests. Please try again in ${when}.`;
+  }
+  const when = min >= 60 ? `약 ${hr}시간` : `약 ${min}분`;
+  return `메일을 너무 자주 요청하셨습니다. ${when} 뒤에 다시 시도하여 주시기 바랍니다.`;
+}
+
 // 이메일 인증 메일 — 가입 직후/재발송. 이메일 열거·스팸 방지를 위해
 // 사용자가 없거나 이미 인증된 경우엔 조용히 성공 처리(메일 미발송).
 exports.sendVerifyEmail = onCall(
@@ -1416,6 +1510,11 @@ exports.sendVerifyEmail = onCall(
     try{ user = await admin.auth().getUserByEmail(email); }
     catch(e){ return { ok: true }; }            // 없는 사용자 → 열거 방지
     if(user.emailVerified) return { ok: true };  // 이미 인증됨 → 미발송
+    /* 횟수는 실제로 보낼 사람에게만 센다.
+       없는 주소·이미 인증된 주소는 위에서 이미 돌아갔으므로 여기까지 오지
+       않는다 — 아무 주소나 넣어 세는 문서를 만들어 두는 일이 없다. */
+    const q = await mailQuotaTake(admin.firestore(), "verify", email);
+    if(!q.ok) throw new HttpsError("resource-exhausted", mailQuotaMessage(q.waitMs, lang), { waitMs: q.waitMs });
     const link = customActionLink(await admin.auth().generateEmailVerificationLink(email, ACTION_SETTINGS), lang);
     const mail = verifyMail(user.displayName, link, lang);
     const resend = new Resend(RESEND_API_KEY.value());
@@ -1433,12 +1532,16 @@ exports.sendResetEmail = onCall(
     const lang = (req.data && req.data.lang) === "en" ? "en" : "ko";
     if(!emailOk(email)) throw new HttpsError("invalid-argument", "유효한 이메일이 필요합니다.");
     let link;
+    /* 링크를 먼저 만든다. 이것만으로는 메일이 나가지 않으므로, 없는 주소는
+       여기서 조용히 돌려보낸 뒤 실제로 보낼 사람만 센다. */
     try{ link = customActionLink(await admin.auth().generatePasswordResetLink(email, ACTION_SETTINGS), lang); }
     catch(e){
       if(e.code === "auth/user-not-found" || e.code === "auth/email-not-found") return { ok: true };
       console.error("[sendResetEmail] link:", e);
       throw new HttpsError("internal", "요청 처리에 실패했습니다.");
     }
+    const q = await mailQuotaTake(admin.firestore(), "reset", email);
+    if(!q.ok) throw new HttpsError("resource-exhausted", mailQuotaMessage(q.waitMs, lang), { waitMs: q.waitMs });
     const mail = resetMail(link, lang);
     const resend = new Resend(RESEND_API_KEY.value());
     const { error } = await resend.emails.send({ from: MAIL_FROM, to: email, subject: mail.subject, html: mail.html });
