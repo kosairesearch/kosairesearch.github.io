@@ -416,9 +416,12 @@ def report_text(tk):
            "checkpoints": [{"when": {"ko": "w", "en": "w"}, "what": {"ko": "x", "en": "x"}}] * 3,
            "verdict": {"body": {"ko": "종합 " * 50, "en": "verdict " * 30}}}
     return "===JSON_START===" + json.dumps(rep, ensure_ascii=False) + "===JSON_END==="
-def result(tk, kind="succeeded", text=None):
-    msg = types.SimpleNamespace(content=[types.SimpleNamespace(type="text", text=text or report_text(tk), citations=None)])
+def result(tk, kind="succeeded", text=None, usage=None):
+    msg = types.SimpleNamespace(content=[types.SimpleNamespace(type="text", text=text or report_text(tk), citations=None)],
+                                usage=usage)
     return types.SimpleNamespace(custom_id=tk, result=types.SimpleNamespace(type=kind, message=msg))
+USAGE = types.SimpleNamespace(input_tokens=100_000, cache_creation_input_tokens=2_000, cache_read_input_tokens=8_000,
+                              output_tokens=20_000, server_tool_use=types.SimpleNamespace(web_search_requests=5))
 def batch_obj(bid, status, results):
     b = types.SimpleNamespace(id=bid, processing_status=status,
                               request_counts=types.SimpleNamespace(processing=0, succeeded=0, errored=0, expired=0, canceled=0))
@@ -435,7 +438,7 @@ mk("msgbatch_A", ["005930", "000020", "000040", "204840"])
 mk("msgbatch_B", ["276730"])
 cl = FakeClient()
 cl.messages.batches.store["msgbatch_A"] = batch_obj("msgbatch_A", "ended", [
-    result("005930"), result("000020", "errored"), result("000040", "expired"),
+    result("005930", usage=USAGE), result("000020", "errored"), result("000040", "expired"),
     result("204840", text="===JSON_START==={\"title\": 1}===JSON_END==="),
 ])
 cl.messages.batches.store["msgbatch_B"] = batch_obj("msgbatch_B", "in_progress", [])
@@ -452,6 +455,10 @@ ok(S.fail_count("000040") == 0, "expired 는 종목 탓이 아니라 세지 않�
 ok(S.fail_count("204840") == 1 and not (S.OUT_DIR / "204840.json").exists(), "스키마 불완전 → 파일 안 쓰고 실패 +1")
 stA = json.loads(S.batch_path("msgbatch_A").read_text(encoding="utf-8"))
 ok(stA.get("collected") and "quant" not in stA and stA["result"] == {"ok": 1, "fail": 3}, "회수한 배치는 collected 표시 + quant 제거", str(stA.get("result")))
+ua = (stA.get("usage") or {}).get("claude-sonnet-5") or {}
+# (100,000 + 2,000×1.25 + 8,000×0.1) × $1/M + 20,000 × $5/M + 5 × $0.01 = 0.1033 + 0.1 + 0.05
+ok(ua.get("n") == 1 and ua.get("in") == 100_000 and ua.get("search") == 5 and abs(ua.get("usd", 0) - 0.2533) < 0.001,
+   "사용량·추정 비용을 모델별로 남긴다", str(ua))
 stB = json.loads(S.batch_path("msgbatch_B").read_text(encoding="utf-8"))
 ok(not stB.get("collected") and "quant" in stB, "안 끝난 배치는 그대로")
 ok(S.inflight_tickers() == {"276730"}, "회수한 종목은 '진행 중' 에서 빠진다")
