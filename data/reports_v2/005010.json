@@ -1,227 +1,217 @@
 {
  "title": {
-  "ko": "강관업 실적 부진 속 미국 통상 변수 부각",
-  "en": "Steel Pipe Maker Faces Weak Earnings Amid US Trade Crosscurrents"
+  "ko": "적자 전환 강관업체, 관세 리스크와 구조전환 갈림길",
+  "en": "Steel Pipe Maker Turns Loss-Making Amid Tariff Risk and Restructuring"
  },
  "lead": {
-  "ko": "휴스틸은 2025년 연간 기준 순손실로 전환한 데 이어 2026년 상반기에도 분기별 영업손익이 등락하는 가운데, 미국의 통상관세 정책 변화와 반덤핑 판정, 국내 세무소송 결과가 향후 실적의 핵심 변수로 부상하고 있다.",
-  "en": "Husteel swung to a net loss for full-year 2025 and continued to post volatile quarterly operating results through the first half of 2026, with US tariff policy shifts, an antidumping ruling, and a domestic tax lawsuit outcome emerging as key variables for future earnings."
+  "ko": "휴스틸은 2022년 정점 이후 매출과 이익이 구조적으로 축소되며 2025년 연결 순손실로 전환했고, 미국 관세정책 변화와 이전가격 세무소송이라는 두 축의 불확실성을 동시에 안고 있다.",
+  "en": "Husteel's revenue and profit have structurally shrunk since their 2022 peak, turning to a consolidated net loss in 2025, while the company faces twin uncertainties from shifting US tariff policy and a transfer-pricing tax dispute."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 6,125억원(전년 대비 15.3% 감소), 영업이익 35억원(전년 대비 79.6% 감소), 지배주주 순손실 150억원으로 적자전환했다.",
-   "en": "FY2025 consolidated revenue fell 15.3% year-on-year to KRW 612.5 billion, operating profit dropped 79.6% to KRW 3.5 billion, and the company swung to a net loss of KRW 15.0 billion attributable to owners."
+   "ko": "2025년 연결 매출 6,124.9억원, 영업이익 34.9억원(영업이익률 0.6%), 순손실 150.3억원으로 적자 전환",
+   "en": "FY2025 consolidated revenue was KRW 612.5 billion with operating profit of KRW 3.5 billion (0.6% margin) and a net loss of KRW 15.0 billion, marking a swing to loss"
   },
   {
-   "ko": "2026년 1분기 영업손실 52.5억원에 이어 2분기 매출이 2,420억원으로 급증했으나 영업손실 8.1억원, 순손실 142.5억원을 기록해 적자 기조가 이어졌다.",
-   "en": "After a Q1 2026 operating loss of KRW 5.3 billion, Q2 revenue jumped to KRW 242.0 billion but the company still posted an operating loss of KRW 0.8 billion and a net loss of KRW 14.3 billion."
+   "ko": "2025Q3~2026Q2 최근 네 개 분기 지배주주 순손실 합계 약 347억원, 분기별 등락이 큰 실적 흐름",
+   "en": "Over the latest four quarters (2025Q3-2026Q2), cumulative owner net loss totaled roughly KRW 34.7 billion, with sharp quarter-to-quarter swings"
   },
   {
-   "ko": "미국 정부는 2026년 4월과 6월 두 차례에 걸쳐 철강·알루미늄·구리 파생제품 관세체계를 개편했으며, 한국산 유정용강관 반덤핑 예비판정에서 휴스틸은 1.18%의 낮은 마진을 받았다.",
-   "en": "The US government revised its Section 232 tariff framework for steel, aluminum and copper derivatives twice in 2026, and Husteel received a relatively low 1.18% preliminary antidumping margin on Korean OCTG."
+   "ko": "미국 상무부 유정용강관(OCTG) 반덤핑 연례재심에서 한국 업체 전반이 0.00% 덤핑마진 판정을 받았으나, 철강 232조 관세는 25%→50%로 인상되고 무관세 쿼터는 폐지됨",
+   "en": "US Commerce granted Korean OCTG makers a 0.00% dumping margin in the latest review, even as Section 232 tariffs rose from 25% to 50% and Korea's tariff-free quota was abolished"
   },
   {
-   "ko": "국세청과의 이전가격 관련 조세소송에서 2026년 7월 조세심판원이 국세청의 손을 들어주면서 추가 세부담 우려가 남아있다.",
-   "en": "In July 2026, Korea's Tax Tribunal ruled in favor of the tax authority in a transfer-pricing dispute involving Husteel's North American subsidiaries, leaving lingering concerns about additional tax liabilities."
+   "ko": "2026년 7월 조세심판원이 북미 자회사 이전가격 관련 법인세 부과처분을 정당하다고 결정, 회사는 행정소송 제기 여부를 검토 중",
+   "en": "In July 2026 the Tax Tribunal upheld a corporate tax assessment tied to transfer pricing at Husteel's North American subsidiaries, and the company is weighing whether to file an administrative lawsuit"
   },
   {
-   "ko": "대구경 강관 신규 라인(연산 16.5만톤) 완공으로 해상풍력·대구경 파이프라인 시장 진입을 추진하고 있다.",
-   "en": "The company completed a new large-diameter pipe line with annual capacity of 165,000 tons, pursuing entry into offshore wind and large-diameter pipeline markets."
+   "ko": "대구경 강관(SAW) 신규공장 완공으로 연간 약 16.5만톤 생산능력을 확보, 해상풍력·탄소중립 관련 수요 확대에 대응",
+   "en": "Completion of a new large-diameter SAW pipe plant added about 165,000 tonnes of annual capacity, positioning the company for offshore wind and carbon-neutral demand"
   }
  ],
  "business": {
-  "ko": "휴스틸은 1967년 한국강관으로 설립된 이래 강관 한 우물을 지켜온 국내 대표 강관 전문 제조업체로, 인천·당진·대구·군산 등에 생산기지를 두고 있다. 주력 제품은 기계구조용강관, 유정용강관(OCTG), 배관용강관이며, 국내외 에너지 및 건설 시장에 안정적인 공급망을 구축하고 있다. 하나증권이 2025년 3월 초 기준으로 집계한 자료에 따르면 에너지용강관(유정관·송유관) 비중이 44%로 가장 높고, 배관용이 35%, 구조용강관이 15%, 기타 전선관 등이 6%를 차지했다. 원재료는 주로 포스코로부터 공급받는 열연코일이며 그중 일부는 해외에서도 조달하고 있다. 수출 비중이 높은 편으로 특히 미국 시장에 대한 의존도가 커, 미국은 1977년 현지 판매법인을 설립한 이래 40여년 이상의 판매 네트워크를 유지해왔고 이후 캐나다·미국에 별도 법인을 추가로 설립했다. 세계적 에너지 기업 쉘(Shell)의 공급업체로 등록됐으며, 미국 건설사 벡텔과 에너지사 윌리엄스 등에도 공급 승인을 받은 이력이 있다. 국내 강관업계는 세아제강이 매출 규모 기준 1위를 유지하는 가운데 현대스틸파이프, 휴스틸, 넥스틸 등이 뒤를 잇는 과점적 경쟁 구도를 형성하고 있다. 최근에는 포트폴리오 다각화 차원에서 해상풍력 하부구조물과 대구경 송유관 시장 진입을 추진하며 신규 설비 투자를 진행해왔다.",
-  "en": "Founded in 1967 as Korea Steel Pipe, Husteel is a leading domestic steel pipe specialist with production sites in Incheon, Dangjin, Daegu and Gunsan. Its core products are mechanical structural pipe, oil country tubular goods (OCTG), and line/plumbing pipe, supplying stable supply chains to both domestic and overseas energy and construction markets. According to data compiled by Hana Securities as of early March 2025, energy pipe (OCTG and line pipe) accounted for the largest share at 44%, followed by plumbing pipe at 35%, structural pipe at 15%, and other conduit products at 6%. Raw materials are mainly hot-rolled coil sourced from POSCO, with a portion procured overseas. The company has a relatively high export ratio with heavy reliance on the US market, having maintained a sales network there for more than 40 years since establishing a Los Angeles sales subsidiary in 1977, later adding separate entities in Canada and the United States. Husteel has been registered as a supplier to global energy major Shell and has received supplier approval from US firms including Bechtel and Williams. In the domestic pipe industry, SeAH Steel holds the largest revenue share, followed by an oligopolistic structure involving Hyundai Steel Pipe, Husteel, and NEXTEEL. More recently, the company has pursued capacity investments to diversify into offshore wind substructures and large-diameter line pipe markets."
+  "ko": "휴스틸은 ERW(전기저항용접)·SAW(서브머지드아크용접) 방식의 강관을 생산하는 국내 강관 전문업체로, 유정용강관(OCTG)을 포함한 에너지용강관과 배관용강관, 구조용강관, 스테인리스(STS) 강관 등을 만든다. 하나증권이 2025년 3월 리포트에서 제시한 제품 구성을 보면 송유관(OCTG) 비중이 44%로 가장 높았고 배관용강관이 35%, 구조용강관이 15%, 전선관 등 기타 제품이 6%를 차지했다. 회사는 제품 포트폴리오 다각화를 위해 총 2,100억원을 투자해 연간 16.5만톤 생산능력의 대구경 SAW 강관공장을 완공했으며, 이는 해상풍력 하부구조물과 대형 OCTG 시장 진출을 겨냥한 것이다. 대구공장에서는 STS강관을 별도로 생산해 내수 시장 점유율을 유지하고 있다. 주요 판매처는 미국·캐나다 등 북미 오일가스 시추업체와 유통상이며, 이를 위해 북미에 판매법인과 제조법인을 두고 있다. 국내 강관업계에서는 세아제강, 현대제철, 넥스틸, 아주베스틸, 일진제강 등이 주요 경쟁사로, 휴스틸은 이들과 함께 미국 반덤핑 조사 대상에 반복적으로 포함되어 왔다. 회사 매출은 미국 등 해외 수출 비중이 높아 통상정책과 환율 변동에 민감한 구조를 갖고 있다.",
+  "en": "Husteel is a Korean specialty pipe maker producing ERW (electric-resistance-welded) and SAW (submerged-arc-welded) steel pipe, including energy pipe such as OCTG (oil country tubular goods), standard pipe, structural pipe, and stainless (STS) pipe. According to a March 2025 report from Hana Securities, OCTG accounted for the largest share of sales at 44%, followed by standard pipe at 35%, structural pipe at 15%, and other products such as conduit pipe at 6%. To diversify its product portfolio, the company invested a total of KRW 210 billion to complete a large-diameter SAW pipe plant with annual capacity of about 165,000 tonnes, aimed at offshore wind substructures and large-diameter OCTG markets. Its Daegu plant separately produces STS pipe to maintain domestic market share. Major customers are North American oil and gas drillers and distributors, supported by sales and manufacturing subsidiaries in the US and Canada. Domestic competitors include SeAH Steel, Hyundai Steel, NEXTEEL, AJU Besteel, and Iljin Steel, all of which have repeatedly been named alongside Husteel in US anti-dumping investigations. With a high share of overseas exports, particularly to the US, the company's revenue structure is sensitive to trade policy and currency movements."
  },
  "earnings": {
-  "ko": "확정 재무 기준으로 휴스틸의 연결 매출액은 2022년 1조 309억원, 2023년 7,648억원, 2024년 7,231억원, 2025년 6,125억원으로 4년 연속 감소했다. 영업이익은 2022년 2,892억원에서 2023년 1,232억원, 2024년 171억원으로 큰 폭 줄어든 뒤 2025년에는 35억원(영업이익률 0.6%)까지 낮아졌다. 순이익 역시 2022년 2,272억원, 2023년 722억원, 2024년 223억원의 흑자를 이어가다 2025년에는 지배주주 순손실 150억원을 기록하며 적자로 전환했다. 분기별로 보면 2025년 2분기 영업손실 27.4억원, 3분기 영업이익 114.8억원으로 반짝 흑자를 냈으나 4분기 다시 영업손실 47.8억원과 함께 순손실 465.6억원이라는 큰 폭의 적자를 기록했다. 2026년에도 이러한 흐름이 이어져 1분기 영업손실 52.5억원, 순손실 42.8억원을 낸 데 이어 2분기에는 매출이 2,420억원으로 직전 분기(1,479억원) 대비 크게 늘었음에도 영업손실 8.1억원, 순손실 142.5억원을 기록해 적자 기조에서 벗어나지 못했다. 이 같은 실적 흐름은 강관업계 전반의 설비 증설에 따른 공급과잉과 수요 부진, 원재료 제조원가 비중 상승이 겹친 결과로 풀이된다. 아울러 2025년에는 국세청과의 이전가격 관련 세무조사 충당금 약 109억원이 반영되며 순손실 폭을 키운 것으로 전해졌다. 현금흐름 측면에서는 영업활동현금흐름이 2022년 2,063억원에서 2025년 64억원으로 뚜렷하게 줄어들며 이익 감소와 궤를 같이했다.",
-  "en": "Based on confirmed financials, Husteel's consolidated revenue declined for four consecutive years, from KRW 1,030.9 billion in 2022 to KRW 764.8 billion in 2023, KRW 723.1 billion in 2024, and KRW 612.5 billion in 2025. Operating profit fell sharply from KRW 289.2 billion in 2022 to KRW 123.2 billion in 2023 and KRW 17.1 billion in 2024, before dropping further to KRW 3.5 billion (a 0.6% operating margin) in 2025. Net profit likewise moved from gains of KRW 227.2 billion in 2022, KRW 72.2 billion in 2023, and KRW 22.3 billion in 2024 to a net loss of KRW 15.0 billion attributable to owners in 2025. Quarterly results show an operating loss of KRW 2.7 billion in Q2 2025, a brief swing to an operating profit of KRW 11.5 billion in Q3, before reverting to a large operating loss of KRW 4.8 billion and a steep net loss of KRW 46.6 billion in Q4. This pattern continued into 2026, with an operating loss of KRW 5.3 billion and net loss of KRW 4.3 billion in Q1, followed by Q2 revenue surging to KRW 242.0 billion from KRW 147.9 billion in the prior quarter, yet still recording an operating loss of KRW 0.8 billion and a net loss of KRW 14.3 billion. This earnings pattern reflects a combination of industry-wide capacity expansion leading to oversupply, weak demand, and a rising cost-of-materials ratio. Additionally, 2025 results reportedly reflected a tax provision of roughly KRW 10.9 billion related to a transfer-pricing tax audit, widening the net loss. On the cash flow side, operating cash flow declined markedly from KRW 206.3 billion in 2022 to KRW 6.4 billion in 2025, tracking the decline in profitability."
+  "ko": "휴스틸의 연결 매출은 2022년 1조 309.2억원에서 2023년 7,648.4억원, 2024년 7,230.7억원, 2025년 6,124.9억원으로 4년 연속 축소됐다. 같은 기간 영업이익률은 2022년 28.1%에서 2023년 16.1%, 2024년 2.4%, 2025년 0.6%로 가파르게 낮아졌고, 2025년 지배주주 순이익은 -150.3억원으로 2023~2024년의 흑자(각각 722.0억원, 223.1억원)에서 적자로 전환됐다. 분기별로 보면 2025년 3분기 매출 1,620.9억원, 영업이익 114.8억원(영업이익률 7.1%), 순이익 303.7억원으로 반등했으나, 4분기에는 매출 1,408.9억원에 영업손실 47.8억원, 순손실 465.6억원으로 순손실 규모가 영업손실보다 훨씬 컸다. 2026년 1분기는 매출 1,479.3억원, 영업손실 52.5억원, 순손실 42.8억원을 기록했고, 2분기에는 매출이 2,420.2억원으로 크게 늘었음에도 영업손실 8.1억원, 순손실 142.5억원을 이어갔다. 이에 따라 2025년 3분기부터 2026년 2분기까지 최근 네 개 분기 지배주주 순손실 합계는 약 347.3억원에 이른다. 조세금융신문의 2026년 7월 30일 보도에 따르면 회사는 설비투자(유형자산)에 747.1억원을 투입하며 확장을 이어가는 동시에 재무활동으로 394.2억원의 외부자금을 조달했고, 단기차입금이 한 해 동안 약 546억원 늘어 1,204.3억원 규모로 확대됐다. 2025년 영업활동현금흐름은 64.4억원으로 2024년 424.8억원 대비 크게 줄어 이익 감소와 함께 현금창출력도 약화된 모습을 보였다.",
+  "en": "Husteel's consolidated revenue fell for four consecutive years, from KRW 1,030.9 billion in 2022 to KRW 764.8 billion in 2023, KRW 723.1 billion in 2024, and KRW 612.5 billion in 2025. Over the same period, operating margin dropped sharply from 28.1% in 2022 to 16.1% in 2023, 2.4% in 2024, and just 0.6% in 2025, while owner net income swung to a loss of KRW 15.0 billion in 2025 from profits of KRW 72.2 billion and KRW 22.3 billion in 2023 and 2024, respectively. On a quarterly basis, 2025Q3 saw a rebound with revenue of KRW 162.1 billion, operating profit of KRW 11.5 billion (7.1% margin), and net income of KRW 30.4 billion, but 2025Q4 reverted to an operating loss of KRW 4.8 billion on revenue of KRW 140.9 billion, with a net loss of KRW 46.6 billion that was far larger than the operating loss. In 2026Q1, revenue was KRW 147.9 billion with an operating loss of KRW 5.3 billion and a net loss of KRW 4.3 billion, and in 2026Q2 revenue jumped to KRW 242.0 billion yet the company still posted an operating loss of KRW 0.8 billion and a net loss of KRW 14.3 billion. As a result, cumulative owner net loss over the latest four quarters (2025Q3-2026Q2) reached about KRW 34.7 billion. According to a July 30, 2026 report by Tax & Finance News, the company invested KRW 74.7 billion in property and equipment while continuing its expansion, raised KRW 39.4 billion through financing activities, and increased short-term borrowings by roughly KRW 54.6 billion over the year to KRW 120.4 billion. Operating cash flow in 2025 was KRW 6.4 billion, sharply down from KRW 42.5 billion in 2024, indicating that cash generation weakened alongside the profit decline."
  },
  "industry": {
-  "ko": "국내 강관 산업은 최근 수년간 설비 증설에 따른 공급과잉과 건설 경기 부진에 따른 내수 위축이 겹치며 구조적 압박을 받고 있다는 평가가 많다. 2023년 기준 국내 4대 강관 메이저기업의 생산량은 세아제강 93만톤, 현대스틸파이프 60만톤, 휴스틸 48만톤, 넥스틸 40만톤 수준으로, 생산능력 대비 평균 가동률은 50%를 밑돌았다. 대외적으로는 미국이 최대 수출시장으로, 미국 정부는 2026년 4월 2일 철강·알루미늄·구리 파생제품에 대한 무역확장법 232조 관세 부과 방식을 전면 개편해 기존 함량가치 기준을 폐지하고 제품 전체 가격을 기준으로 25~50%의 추가 관세를 부과하는 구조로 전환했다. 이어 6월 1일에는 추가 포고령을 통해 일부 품목의 관세를 완화하고 미국산 철강 사용 기준을 95%에서 85%로 낮추는 등 일부 부담 경감 조치도 함께 나왔다. 반덤핑 조사 측면에서는 미국 상무부가 2026년 3월 한국산 유정용강관에 대한 예비판정에서 넥스틸과 세아제강에 0%의 마진을, 휴스틸에는 1.18%의 상대적으로 낮은 마진을 책정해 국내 업계 전반에 큰 이변은 없었던 것으로 나타났다. 다만 미국 통상정책은 2026년에만 두 차례 개정되는 등 수시로 변경되는 경향을 보였고, 상무부는 이번 조치를 90일 후 재검토할 예정이어서 향후 세부 규정 변화에 따라 업체별 유불리가 달라질 가능성이 있다. 경쟁구도상 휴스틸은 세아제강, 현대스틸파이프에 이어 업계 3~4위권에 위치하며, 생산능력과 미국 수출쿼터 비중 면에서 상위권과는 격차가 있는 편이다.",
-  "en": "Korea's steel pipe industry has faced structural pressure in recent years from capacity-driven oversupply combined with weak domestic demand tied to a sluggish construction sector. As of 2023, production volumes among Korea's four major pipe makers stood at roughly 930,000 tons for SeAH Steel, 600,000 tons for Hyundai Steel Pipe, 480,000 tons for Husteel, and 400,000 tons for NEXTEEL, with average capacity utilization below 50%. Externally, the United States remains the largest export market; on April 2, 2026, the US government overhauled its Section 232 tariff framework for steel, aluminum, copper and derivative products, replacing the metal-content-value basis with a full customs value basis carrying additional tariffs of 25% to 50%. A subsequent June 1 proclamation eased tariffs on certain products and lowered the US-steel-content threshold for preferential treatment from 95% to 85%. On the antidumping front, the US Department of Commerce's March 2026 preliminary ruling on Korean OCTG assigned 0% margins to NEXTEEL and SeAH Steel and a relatively low 1.18% margin to Husteel, suggesting no major surprises for the domestic industry overall. However, US trade policy has shifted frequently, with two revisions in 2026 alone, and the Commerce Department plans a 90-day review of the latest measure, meaning outcomes could vary by company as details evolve. Competitively, Husteel ranks third or fourth behind SeAH Steel and Hyundai Steel Pipe, trailing the top players in both production capacity and share of the US export quota."
+  "ko": "국내 강관업계는 설비 증설에 따른 공급과잉과 건설·에너지 부문 수요 부진이 겹치며 업황이 위축된 상태다. 여기에 더해 2025년 6월 미국이 철강·알루미늄 수입 관세를 기존 25%에서 50%로 인상했고, 한국이 받던 263만톤 규모의 무관세 쿼터도 함께 폐지되면서 대미 수출 환경이 크게 악화됐다. 다만 같은 시기 미국 상무부의 유정용강관(OCTG) 반덤핑 연례재심에서는 현대제철·세아제강·아주스틸·휴스틸·일진제강·넥스틸 등 한국 주요 강관업체 전체가 0.00%의 덤핑마진 판정을 받아, 관세 리스크와 반덤핑 리스크가 서로 다른 방향으로 움직이는 모습을 보였다. 2026년 5월 보도에 따르면 미국의 AI 데이터센터·전력망 투자 확대에 힘입어 4월 미국향 강관 수출이 전년 동월 대비 약 39% 증가하는 등 고관세 부담 속에서도 수출 회복 조짐이 나타났다. 한편 2026년 4월 월스트리트저널 보도를 인용한 국내 매체는 미국 행정부가 완제품·파생제품에 대한 50% 관세를 25%로 낮추는 방안을 검토하고 있다고 전했는데, 이는 아직 확정된 조치가 아니라 검토 단계로 보도된 내용이다. 경쟁구도상 휴스틸은 세아제강 등 대형사에 비해 매출 규모가 작은 중소형 강관업체로, 미국 노출도가 높은 업체일수록 관세·환율 변동에 따른 실적 변동성이 크다는 평가가 나온다.",
+  "en": "Korea's steel pipe industry has been weighed down by overcapacity from prior expansions alongside soft demand from construction and energy sectors. Adding to the pressure, in June 2025 the US raised its Section 232 tariff on steel and aluminum imports from 25% to 50% and simultaneously abolished Korea's 2.63-million-tonne tariff-free quota, sharply worsening the environment for exports to the US. At the same time, however, the US Department of Commerce's OCTG anti-dumping administrative review assigned a 0.00% dumping margin to major Korean pipe makers including Hyundai Steel, SeAH Steel, AJU Steel, Husteel, Iljin Steel, and NEXTEEL, showing tariff risk and anti-dumping risk moving in opposite directions. Reports from May 2026 noted that US pipe exports rose roughly 39% year-on-year in April, driven by expanding AI data center and power grid investment in the US, suggesting signs of export recovery even under high tariffs. Separately, a domestic outlet citing an April 2026 Wall Street Journal report said the US administration was considering lowering the 50% tariff on finished and derivative steel products to 25%, though this was described as still under review rather than a finalized measure. Within the competitive landscape, Husteel is a smaller pipe producer relative to larger players such as SeAH Steel, and companies with higher US exposure are seen as facing greater earnings volatility from tariff and currency swings."
  },
  "outlook": {
-  "ko": "회사는 포트폴리오 다각화 차원에서 총 2,100억원을 투자해 대구경 강관 및 해상풍력 하부구조물용 신규 라인을 완공, 연간 16.5만톤의 추가 생산능력을 확보한 것으로 파악된다. 이를 통해 기존 에너지용·배관용 강관 중심에서 대구경 파이프라인·해상풍력 시장으로 매출처를 넓히려는 시도가 이어지고 있다. 미국 현지에서는 앞서 2019년 생산법인을 설립하고 2023년 초 연산 7.2만톤 규모 유정용강관 조관라인 착공을 발표한 바 있어, 해당 설비의 가동 개시 여부와 초기 가동률이 향후 실적에 영향을 줄 수 있는 변수로 남아있다. 다만 2026년 상반기까지의 실적을 보면 신규 라인 가동에 따른 뚜렷한 수익성 개선은 아직 확인되지 않고 있으며, 회사 측의 구체적인 가이던스도 외부에 상세히 공개되지는 않은 상태다. 통상 측면에서는 미국의 232조 관세 체계가 2026년에도 두 차례 개정되는 등 유동적인 만큼, 향후 규정 변화가 미국향 수출 채산성에 직접적인 영향을 줄 수 있다. 국세청과의 이전가격 조세소송에서 2026년 7월 패소함에 따라 추가 세금 납부나 향후 유사 이슈 재발 가능성도 지켜볼 부분이다. 건설 경기 회복 지연이 계속될 경우 배관용·구조용 강관의 내수 판매 회복도 더딜 수 있다.",
-  "en": "As part of portfolio diversification, the company reportedly invested a total of KRW 210 billion to complete a new large-diameter pipe and offshore wind substructure line, securing an additional 165,000 tons of annual capacity. This is aimed at expanding beyond the traditional energy and plumbing pipe business into large-diameter pipeline and offshore wind markets. In the United States, the company earlier established a production subsidiary in 2019 and announced the start of construction on a 72,000-ton-per-year OCTG pipe-forming line in early 2023, leaving the facility's operational start and initial utilization as a variable that could affect future results. However, through the first half of 2026, no clear profitability improvement tied to the new lines has yet been confirmed, and the company has not disclosed detailed external guidance. On the trade front, the US Section 232 tariff framework has already been revised twice in 2026, meaning further regulatory changes could directly affect the profitability of US-bound exports. Following the July 2026 loss in the transfer-pricing tax dispute, the possibility of additional tax payments or recurrence of similar issues remains a factor to monitor. If the recovery of Korea's construction sector continues to lag, domestic sales recovery for plumbing and structural pipe could also be delayed."
+  "ko": "회사의 향후 실적은 크게 세 가지 축에 걸려 있다. 첫째, 신규 완공한 대구경 SAW 강관공장의 가동률과 수주 실적이다. 위세리포트에 따르면 이 공장은 연간 약 16.5만톤의 생산능력을 확보했으며, 해상풍력 시장 성장과 탄소중립 정책 확산에 따라 대구경 강관 수요가 지속 확대될 것으로 전망되고 있어, 실제 가동률과 수주 성과가 향후 매출 회복의 관전 포인트가 될 것으로 보인다. 둘째, 미국의 통상정책 방향이다. 50% 관세가 유지될지, 보도된 것처럼 완제품·파생제품 관세가 25%로 조정될지, 그리고 다음 OCTG 반덤핑 연례재심에서도 0%대 마진이 유지될지가 대미 수출 채산성에 직접 영향을 준다. 셋째는 2026년 7월 조세심판원 결정에 대한 후속 대응이다. 회사는 판정에 불복해 행정소송을 제기할지 검토 중이라고 밝혔으며, 이미 관련 세금은 납부한 상태로 일부 환급이 발생해 추가 리스크는 제한적이라는 평가도 있다. 아울러 2025년 대규모 설비투자(747억원)를 단기차입 확대로 뒷받침한 만큼, 신규 라인의 매출 기여가 늦어질 경우 재무 부담이 이어질 수 있다는 점도 함께 살펴봐야 한다. 회사가 별도의 정량적 연간 가이던스를 공개적으로 제시한 사실은 확인되지 않았다.",
+  "en": "The company's future performance hinges on three main factors. First is the utilization rate and order intake at the newly completed large-diameter SAW pipe plant; per a Wiseport summary, this facility added roughly 165,000 tonnes of annual capacity, and demand for large-diameter pipe is expected to keep expanding on the back of offshore wind growth and carbon-neutrality policies, making actual utilization and orders a key variable for revenue recovery. Second is the direction of US trade policy — whether the 50% tariff persists, whether tariffs on finished and derivative products are lowered to 25% as reported, and whether the next OCTG anti-dumping administrative review maintains a near-zero margin will directly affect the profitability of US-bound exports. Third is the follow-up to the July 2026 Tax Tribunal ruling; the company said it is reviewing whether to file an administrative lawsuit, and since the related taxes have already been paid with a partial refund arising from the ruling, some observers view the incremental risk as limited. It is also worth monitoring that the large 2025 capital expenditure (KRW 74.7 billion) was partly funded by increased short-term borrowing, meaning financial strain could persist if revenue contribution from the new line is delayed. No specific quantitative annual guidance from the company was confirmed in available disclosures."
  },
  "valuation_comment": {
-  "ko": "휴스틸은 최근 분기 연속 영업적자와 2025년 연간 순손실 전환으로 이익 기반의 밸류에이션 지표를 산출하기 어려운 상태이며, 주가수익비율은 현재 의미 있는 수치로 표시되지 않는다. 주가순자산비율은 과거 흑자 시기 대비 상당히 낮아진 수준에서 거래되고 있어, 순자산가치 대비 할인된 상태가 이어지고 있다는 점이 시장에서 자주 언급되는 대목이다. 주당순자산가치(BPS)는 약 19,563원 수준으로 산출되는데, 이는 과거 이익 누적으로 자기자본이 꾸준히 늘어난 결과이자 동시에 최근 순손실로 자본 증가세가 둔화된 결과이기도 하다. 최근 몇 년간의 실적 흐름을 보면 2022~2023년의 이익 정점 이후 이익 규모가 축소되다 2025년 손실로 전환한 뒤 2026년 상반기까지도 분기별로 적자와 소폭 흑자가 반복되는 모습이다. 배당의 경우 최근 회계연도 기준 주당 배당금이 지급되지 않은 것으로 나타나, 배당을 통한 주주환원 매력은 제한적인 구간으로 볼 수 있다. 이러한 지표들은 향후 실적 회복 속도와 통상환경 변화에 따라 달라질 수 있는 유동적인 성격을 갖는다.",
-  "en": "With consecutive quarterly operating losses and a swing to a net loss for full-year 2025, earnings-based valuation metrics are difficult to calculate for Husteel, and the price-to-earnings ratio does not currently register a meaningful figure. The price-to-book ratio trades well below levels seen during past profitable periods, and the ongoing discount to net asset value is a point frequently noted by market participants. Book value per share (BPS) stands at approximately KRW 19,563, reflecting both the steady buildup of equity from past profits and a recent slowdown in equity growth due to net losses. Looking at the multi-year earnings trajectory, profits peaked in 2022–2023, then shrank before turning to a loss in 2025, with quarterly results through the first half of 2026 continuing to alternate between losses and modest profits. On dividends, no per-share dividend appears to have been paid for the most recent fiscal year, suggesting limited appeal from a shareholder-return perspective at present. These metrics remain fluid and subject to change depending on the pace of earnings recovery and shifts in the trade policy environment."
+  "ko": "휴스틸은 순자산가치 대비 상당한 할인 상태에서 거래되는 편으로, 주가순자산비율이 1배를 크게 밑도는 구간에 위치한다. 최근 4개 분기 기준 순이익이 적자를 지속하고 있어 이익 기준 지표를 통한 비교는 의미가 제한적이며, 과거 2022~2023년의 높은 이익 시기와 비교하면 현재는 이익 회복이 아직 확인되지 않은 국면이다. 배당은 최근 실시되지 않아 배당을 통한 주주환원 매력은 제한적인 상태다. 부채비율은 30% 안팎으로 업종 내에서 상대적으로 낮은 편에 속해 재무 안정성 측면에서는 여유가 있는 편이나, 이는 이익 개선과는 별개의 지표라는 점을 함께 고려할 필요가 있다.",
+  "en": "Husteel tends to trade at a substantial discount to net asset value, with its price-to-book ratio sitting well below 1x. Since net income has remained in loss over the latest four quarters, profitability-based comparisons carry limited meaning, and relative to the high-profit years of 2022-2023, a clear profit recovery has not yet been confirmed. Dividends have not been paid recently, limiting the appeal of shareholder returns through distributions. The debt ratio, at around 30%, is relatively low within the industry, suggesting some balance-sheet flexibility, though this should be considered separately from the trajectory of earnings improvement."
  },
  "bull": [
   {
    "title": {
-    "ko": "포트폴리오 다각화 - 해상풍력·대구경 강관 신사업",
-    "en": "Portfolio Diversification via Offshore Wind and Large-Diameter Pipe"
+    "ko": "반덤핑 0% 판정과 대미 강관 수출 회복 조짐",
+    "en": "Zero Anti-Dumping Margin and Signs of US Pipe Export Recovery"
    },
    "body": {
-    "ko": "대구경 강관·해상풍력 하부구조물용 신규 라인이 완공되어 연간 16.5만톤의 추가 생산능력을 확보했다. 탄소중립 정책 확산과 해상풍력 시장 성장이 이어질 경우 신규 라인의 물량 확보 여지가 있다. 다만 아직 초기 가동 단계로 실적 기여 규모는 확인되지 않았다.",
-    "en": "A new large-diameter pipe and offshore wind substructure line has been completed, adding 165,000 tons of annual capacity. Continued expansion of carbon-neutrality policy and the offshore wind market could provide volume opportunities for the new line. However, the line is still in an early operating stage and its earnings contribution has not yet been confirmed."
+    "ko": "2025년 5월 미국 상무부의 OCTG 반덤핑 연례재심에서 휴스틸을 포함한 한국 주요 강관업체 전체가 0.00% 덤핑마진 판정을 받아 반덤핑 리스크는 크게 완화됐다. 2026년 4월 미국향 강관 수출이 전년 동월 대비 약 39% 늘어난 것으로 보도되는 등, 데이터센터·전력망 투자 확대에 따른 산업용 강관 수요가 고관세 환경에서도 수출 물량을 지지하고 있다. 관세 자체는 50%로 높은 수준이지만 관세 부담을 상회하는 미국 내 가격 상승과 현지 공급 부족이 배경으로 지목된다.",
+    "en": "In the OCTG anti-dumping administrative review announced by the US Commerce Department in May 2025, all major Korean pipe makers including Husteel received a 0.00% dumping margin, substantially easing anti-dumping risk. Reports indicate US-bound pipe exports rose roughly 39% year-on-year in April 2026, as demand for industrial pipe tied to data center and power grid investment supported export volumes even under a high-tariff environment. Although the tariff itself remains high at 50%, rising US domestic prices and local supply shortages that outpace the tariff burden have been cited as underlying factors."
    }
   },
   {
    "title": {
-    "ko": "반덤핑 판정에서 상대적으로 낮은 마진 유지",
-    "en": "Relatively Low Margin in Antidumping Ruling"
+    "ko": "대구경 SAW 강관공장 완공에 따른 제품 다각화",
+    "en": "Product Diversification from Completed Large-Diameter SAW Plant"
    },
    "body": {
-    "ko": "2026년 3월 미국 상무부의 한국산 유정용강관 반덤핑 예비판정에서 휴스틸은 1.18%의 낮은 마진을 받아, 11.70%가 책정된 금강공업 등 일부 업체 대비 상대적으로 낮은 관세 부담 구간에 위치했다. 넥스틸·세아제강의 0% 판정과 함께 국내 주요 강관사 다수가 낮은 마진을 받아 업계 전반의 대미 수출 경쟁력이 유지될 가능성을 시사한다. 다만 이는 예비판정으로 최종판정에서 조정될 수 있다.",
-    "en": "In the US Department of Commerce's March 2026 preliminary antidumping ruling on Korean OCTG, Husteel received a low margin of 1.18%, positioning it favorably relative to companies like Keumkang Industrial, which was assigned 11.70%. Together with 0% margins for NEXTEEL and SeAH Steel, most major Korean pipe makers received low margins, suggesting the industry's US export competitiveness could be maintained. This is a preliminary ruling, however, and could be adjusted in the final determination."
+    "ko": "휴스틸은 총 2,100억원을 투자해 연간 16.5만톤 생산능력의 대구경 SAW 강관공장을 완공했다. 이 설비는 기존 OCTG·배관용 중심 제품군에서 해상풍력 하부구조물과 대형 OCTG 시장으로 사업 영역을 넓히는 데 활용될 수 있다. 해상풍력 시장 성장과 탄소중립 정책 확산에 따라 대구경 강관 수요가 지속 확대될 것으로 전망되는 만큼, 신규 라인 가동은 기존 제품 대비 다른 수요 사이클에 노출되는 효과를 가져올 수 있다.",
+    "en": "Husteel invested a total of KRW 210 billion to complete a large-diameter SAW pipe plant with annual capacity of about 165,000 tonnes. This facility can be used to expand beyond the existing OCTG- and standard-pipe-centered product mix into offshore wind substructures and large-diameter OCTG markets. As demand for large-diameter pipe is expected to keep expanding on offshore wind growth and carbon-neutrality policy, the new line's operation could expose the company to a different demand cycle than its existing products."
    }
   },
   {
    "title": {
-    "ko": "미국 통상 규정 일부 완화 조치",
-    "en": "Partial Easing of US Trade Rules"
+    "ko": "낮은 부채비율과 순자산 대비 할인된 주가",
+    "en": "Low Debt Ratio and Discount to Net Asset Value"
    },
    "body": {
-    "ko": "2026년 6월 미국 정부가 일부 금속 파생상품 관세를 인하하고 미국산 철강 사용 기준을 95%에서 85%로 완화하는 조치를 발표하면서, 일부 품목의 관세 부담이 낮아질 여지가 생겼다. 한국 산업통상부는 이번 관세 인하 대상에 한국이 포함된다고 밝힌 바 있다. 다만 조정 대상 품목이 제한적이어서 회사 전체 실적에 미치는 영향은 품목별로 다를 수 있다.",
-    "en": "In June 2026, the US government announced tariff reductions on certain metal derivative products and eased the US-steel-content threshold from 95% to 85%, creating room for lower tariff burdens on some items. Korea's Ministry of Trade, Industry and Energy stated that Korea is among the countries covered by the reduction. However, since the scope of adjusted items is limited, the overall impact on company results could vary by product."
+    "ko": "2025년 말 부채비율은 29.8%로 낮은 수준을 유지하고 있어 최근 대규모 설비투자와 단기차입 확대에도 재무구조 자체는 아직 여유가 있는 편이다. 주가순자산비율은 1배를 크게 밑도는 수준에서 거래되고 있어, 순자산 대비 시장가치가 낮게 형성된 상태다. 다만 이는 최근 이익 부진과 향후 회복 불확실성이 함께 반영된 결과로 해석될 수 있다.",
+    "en": "The debt ratio stood at 29.8% at the end of 2025, remaining low even after recent large capital expenditures and increased short-term borrowing, leaving the balance sheet with some room. The price-to-book ratio trades well below 1x, meaning market value is set low relative to net assets. This, however, can also be read as reflecting recent earnings weakness and uncertainty over the pace of any future recovery."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "국내외 공급과잉과 수요 부진 지속",
-    "en": "Ongoing Oversupply and Weak Demand"
+    "ko": "구조적 매출 축소와 영업이익률 붕괴",
+    "en": "Structural Revenue Decline and Collapsing Operating Margin"
    },
    "body": {
-    "ko": "강관업계 전반의 설비 증설에 따른 공급과잉과 건설 경기 부진에 따른 내수 위축이 겹치며 매출액이 2022년 이후 4년 연속 감소했다. 2025년 연결 매출은 6,125억원으로 전년 대비 15.3% 줄었고 영업이익률도 0.6%까지 낮아졌다. 국내 4대 강관사의 평균 가동률이 생산능력 대비 50%를 밑돈다는 조사 결과도 있어 구조적 공급과잉 우려가 계속되고 있다.",
-    "en": "Industry-wide capacity expansion combined with weak domestic demand tied to a sluggish construction sector has driven four consecutive years of revenue decline since 2022. FY2025 consolidated revenue fell 15.3% year-on-year to KRW 612.5 billion, and the operating margin slipped to 0.6%. Research also indicates that average capacity utilization among Korea's four major pipe makers is below 50%, keeping structural oversupply concerns alive."
+    "ko": "연결 매출은 2022년 1조 309.2억원에서 2025년 6,124.9억원으로 4년 연속 줄었고, 영업이익률은 같은 기간 28.1%에서 0.6%로 급격히 낮아졌다. 2025년 연간 순이익은 -150.3억원으로 적자 전환했으며, 2026년 1·2분기에도 영업손실과 순손실이 이어지고 있다. 위세리포트는 강관업계의 설비 증설에 따른 공급과잉과 수요 부진을 매출 감소의 주된 배경으로 지목했다.",
+    "en": "Consolidated revenue fell for four straight years, from KRW 1,030.9 billion in 2022 to KRW 612.5 billion in 2025, while operating margin plunged from 28.1% to 0.6% over the same period. Full-year 2025 net income swung to a loss of KRW 15.0 billion, and operating and net losses continued through both quarters of 2026 reported so far. A Wiseport summary cited industry-wide capacity expansion and weak demand as the main drivers of the revenue decline."
    }
   },
   {
    "title": {
-    "ko": "분기 실적의 반복적 적자 전환",
-    "en": "Repeated Quarterly Operating Losses"
+    "ko": "미국 관세정책의 방향 불확실성",
+    "en": "Uncertainty Over the Direction of US Tariff Policy"
    },
    "body": {
-    "ko": "2025년 2분기, 4분기와 2026년 1분기, 2분기 모두 영업손실을 기록하며 최근 다섯 개 분기 중 네 개 분기에서 적자를 냈다. 2026년 2분기에는 매출이 직전 분기 대비 크게 늘었음에도 영업손실과 순손실이 함께 발생해 매출 회복이 곧바로 수익성 개선으로 이어지지 못하는 모습을 보였다. 원재료 비중 상승과 고정비 부담이 반복적인 적자의 배경으로 지목된다.",
-    "en": "The company posted operating losses in Q2 2025, Q4 2025, Q1 2026, and Q2 2026 — four of the last five quarters. In Q2 2026, despite a sharp revenue increase from the prior quarter, both an operating loss and a net loss occurred, showing that revenue recovery did not immediately translate into improved profitability. A rising cost-of-materials ratio and fixed-cost burden are cited as background factors behind the recurring losses."
+    "ko": "2025년 6월 미국은 철강·알루미늄 관세를 25%에서 50%로 올리고 한국의 263만톤 무관세 쿼터를 폐지했다. 2026년 4월에는 완제품·파생제품 관세를 25%로 낮추는 방안이 검토된다는 보도가 나왔으나 아직 확정된 조치는 아니다. 관세 수준이 어느 방향으로 결정되든 대미 매출 비중이 높은 강관업체는 판가와 물량 양쪽에서 영향을 받을 수밖에 없다.",
+    "en": "In June 2025, the US raised steel and aluminum tariffs from 25% to 50% and abolished Korea's 2.63-million-tonne tariff-free quota. A report in April 2026 said a reduction of finished and derivative product tariffs to 25% was under consideration, but this has not been finalized. Whichever direction the tariff level moves, pipe makers with high exposure to the US market are likely to be affected on both price and volume."
    }
   },
   {
    "title": {
-    "ko": "이전가격 조세소송 패소에 따른 추가 부담 우려",
-    "en": "Additional Burden Concerns from Lost Transfer-Pricing Tax Case"
+    "ko": "이전가격 세무소송 패소와 잔여 법적 불확실성",
+    "en": "Loss in Transfer-Pricing Tax Dispute and Residual Legal Uncertainty"
    },
    "body": {
-    "ko": "국세청은 휴스틸 한국 본사와 북미 자회사 간 이전가격이 부당하게 낮게 책정됐다고 판단해 법인세를 추징했고, 조세심판원은 2026년 7월 2일 국세청의 처분이 타당하다고 결론지었다. 이 사안으로 2025년 실적에는 세무조사 관련 충당금 약 109억원이 반영된 것으로 알려졌다. 회사가 행정소송 등 추가 불복 절차를 밟을 경우 관련 비용과 불확실성이 이어질 수 있다.",
-    "en": "Korea's National Tax Service determined that transfer prices between Husteel's Korean headquarters and its North American subsidiaries were set too low and imposed additional corporate tax, and on July 2, 2026, the Tax Tribunal ruled the tax authority's action was valid. The matter reportedly resulted in a tax provision of about KRW 10.9 billion reflected in 2025 results. If the company pursues further appeals such as administrative litigation, related costs and uncertainty could persist."
+    "ko": "2026년 7월 조세심판원은 휴스틸 북미 자회사와의 이전가격을 둘러싼 국세청의 법인세 부과처분이 정당하다고 결정했으며, 대표이사의 개인 경비 처리 건에서도 회사 측이 패소했다. 회사는 행정소송 제기 여부를 검토 중이라고 밝혀, 향후 소송 결과에 따라 추가적인 비용이나 불확실성이 남아 있는 상태다.",
+    "en": "In July 2026, the Tax Tribunal ruled that the National Tax Service's corporate tax assessment related to transfer pricing at Husteel's North American subsidiaries was valid, and the company also lost on an issue involving the CEO's personal expense treatment. The company said it is reviewing whether to file an administrative lawsuit, leaving further costs or uncertainty depending on any future litigation outcome."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "통상/관세 정책 리스크",
+    "ko": "통상·관세 정책 리스크",
     "en": "Trade and Tariff Policy Risk"
    },
    "body": {
-    "ko": "미국의 무역확장법 232조 관세체계가 2026년에만 두 차례 개정되는 등 정책 변동성이 큰 편이며, 90일 후 재검토를 거쳐 세부 내용이 다시 바뀔 가능성이 있다. 유정용강관 반덤핑 최종판정 결과에 따라 관세 마진이 예비판정과 달라질 수 있다. 미국 외 캐나다·멕시코 등에 대한 관세 정책 변화도 간접적으로 시장 가격에 영향을 줄 수 있다.",
-    "en": "The US Section 232 tariff framework has already been revised twice in 2026 alone, reflecting significant policy volatility, and details could change again following a planned 90-day review. The final antidumping determination on OCTG could differ from the preliminary margin. Tariff policy changes affecting Canada, Mexico, and other countries could also indirectly influence market pricing."
+    "ko": "미국의 철강 232조 관세는 50%로 상향된 상태이며, 완제품·파생제품 관세를 25%로 낮추는 방안이 검토된다는 보도가 있지만 아직 확정되지 않았다. 반덤핑 연례재심 결과도 매 조사기간마다 달라질 수 있어, 관세와 반덤핑이라는 두 변수 모두가 대미 매출 채산성에 영향을 줄 수 있다.",
+    "en": "The US Section 232 steel tariff remains at 50%, and while reports suggest a reduction to 25% for finished and derivative products is under consideration, this has not been finalized. Anti-dumping administrative review outcomes can also vary by review period, meaning both tariff and anti-dumping variables can affect the profitability of US-bound sales."
    }
   },
   {
    "cat": {
-    "ko": "세무/소송 리스크",
-    "en": "Tax and Litigation Risk"
+    "ko": "세무·소송 우발부채 리스크",
+    "en": "Tax and Litigation Contingent Liability Risk"
    },
    "body": {
-    "ko": "이전가격 관련 세무소송에서 패소함에 따라 추가 세금 납부 부담이 발생할 수 있으며, 향후 유사한 이슈가 다른 사업연도에 대해서도 제기될 가능성을 배제할 수 없다. 회사 대표의 경비 사용과 관련한 사안도 일부 쟁점이 된 바 있어 지배구조 측면의 점검이 필요하다.",
-    "en": "Having lost the transfer-pricing tax lawsuit, the company may face additional tax payment obligations, and similar issues could resurface for other fiscal years. Matters related to executive expense usage have also been contested, warranting attention to governance practices."
+    "ko": "2026년 7월 조세심판원 결정으로 북미 자회사 이전가격 관련 법인세 부과처분이 유지됐으며, 회사는 행정소송 제기를 검토하고 있다. 소송이 진행될 경우 추가 비용과 불확실성이 발생할 수 있으며, 이미 관련 세금을 납부한 상태라 하더라도 최종 결론이 나기 전까지는 재무적 불확실성이 남아 있다.",
+    "en": "The July 2026 Tax Tribunal decision upheld the corporate tax assessment tied to transfer pricing at the North American subsidiaries, and the company is considering an administrative lawsuit. If litigation proceeds, additional costs and uncertainty could arise, and financial uncertainty remains until a final resolution even though the related taxes have already been paid."
    }
   },
   {
    "cat": {
-    "ko": "업황/수급 리스크",
-    "en": "Industry Supply-Demand Risk"
+    "ko": "산업 공급과잉·수요 사이클 리스크",
+    "en": "Industry Oversupply and Demand-Cycle Risk"
    },
    "body": {
-    "ko": "국내 건설경기 부진이 장기화될 경우 구조용·배관용 강관의 내수 판매 회복이 지연될 수 있다. 강관업계 전반의 설비 증설에 따른 공급과잉이 해소되지 않으면 가격 경쟁이 심화되어 마진 압박이 지속될 수 있다. 원자재인 열연코일 가격 변동은 원가에 직접 영향을 미치는 요인이다.",
-    "en": "A prolonged downturn in Korea's construction sector could delay the recovery of domestic sales for structural and plumbing pipe. If industry-wide capacity-driven oversupply is not resolved, intensified price competition could continue to pressure margins. Fluctuations in hot-rolled coil prices, the key raw material, directly affect production costs."
+    "ko": "국내 강관업계는 설비 증설로 인한 공급과잉과 건설·에너지 부문 수요 부진이 겹쳐 있는 상태다. OCTG 수요는 국제 유가 및 미국 시추 활동과 연동되어 있어, 유가 하락이나 시추 활동 축소 시 수출 물량이 다시 줄어들 가능성을 배제할 수 없다.",
+    "en": "Korea's pipe industry faces overlapping challenges of capacity-driven oversupply and weak demand from construction and energy sectors. OCTG demand is linked to international oil prices and US drilling activity, so a decline in oil prices or drilling activity could reduce export volumes again."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순(예상)",
-    "en": "Mid-November 2026 (expected)"
+    "ko": "2026년 9월 말까지",
+    "en": "By late September 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표 - 2분기의 매출 급증이 영업손익 개선으로 이어지는지, 대구경 강관 신규 라인의 매출 기여 여부를 확인할 시점.",
-    "en": "Q3 2026 earnings release — a point to check whether the Q2 revenue surge translates into improved operating results and whether the new large-diameter pipe line is contributing to sales."
+    "ko": "2026년 7월 2일 조세심판원 결정에 대해 90일 이내 행정소송 제기 여부를 확인. 소송 진행 여부에 따라 향후 재무 리스크의 방향이 달라질 수 있다.",
+    "en": "Check whether Husteel files an administrative lawsuit within the 90-day window following the July 2, 2026 Tax Tribunal decision; the direction of future financial risk may depend on whether litigation proceeds."
    }
   },
   {
    "when": {
-    "ko": "향후 발표 시점 확인 필요",
-    "en": "Timing to be confirmed"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "미국 상무부의 한국산 유정용강관 반덤핑 최종판정 결과 - 예비판정(1.18%) 대비 마진율 변동 여부 확인.",
-    "en": "US Department of Commerce final antidumping determination on Korean OCTG — check whether the margin changes from the 1.18% preliminary rate."
-   }
-  },
-  {
-   "when": {
-    "ko": "공시 발생 시",
-    "en": "Upon disclosure"
-   },
-   "what": {
-    "ko": "이전가격 조세소송 관련 후속 절차(행정소송 제기 여부, 추가 납부세액 확정) 공시 여부.",
-    "en": "Disclosure of follow-up procedures in the transfer-pricing tax case, including whether administrative litigation is filed or additional tax liabilities are confirmed."
+    "ko": "2026년 3분기 실적 공시 예정. 대구경 SAW 강관공장 가동률과 대미 수출 물량 회복 여부가 매출·마진에 어떻게 반영됐는지 확인이 필요하다.",
+    "en": "2026Q3 earnings are due to be disclosed. It will be worth checking how the utilization rate of the new large-diameter SAW plant and any recovery in US export volumes are reflected in revenue and margins."
    }
   },
   {
    "when": {
     "ko": "2026년 하반기 중",
-    "en": "Second half of 2026"
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "미국 상무부의 232조 관세체계 90일 재검토 결과 - 파생제품 세부 관세율 변경 여부.",
-    "en": "Outcome of the US Commerce Department's 90-day review of the Section 232 tariff framework — whether detailed derivative product tariff rates change."
+    "ko": "미국의 철강 완제품·파생제품 관세를 50%에서 25%로 낮추는 방안이 실제 확정되는지 여부를 확인. 확정 여부에 따라 대미 수출 채산성이 달라질 수 있다.",
+    "en": "Watch whether the reported plan to lower US tariffs on finished and derivative steel products from 50% to 25% is actually finalized, as this would affect the profitability of US-bound exports."
    }
   },
   {
    "when": {
-    "ko": "분기별 공시 확인",
-    "en": "Ongoing quarterly disclosures"
+    "ko": "2026년 4분기",
+    "en": "Fourth quarter of 2026"
    },
    "what": {
-    "ko": "대구경 강관·해상풍력 신규 라인의 가동률 및 수주 실적 공개 여부 - 신사업 기여도 파악.",
-    "en": "Whether utilization rates and order intake for the new large-diameter pipe and offshore wind line are disclosed, to gauge the new business's contribution."
+    "ko": "대구경 SAW 강관공장의 수주 현황과 해상풍력·대형 OCTG 대상 실제 매출 기여 여부를 점검할 필요가 있다.",
+    "en": "Review the order book for the large-diameter SAW pipe plant and whether it is actually contributing revenue from offshore wind and large-diameter OCTG projects."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "휴스틸은 2022~2023년 에너지용강관 호황기의 높은 수익성에서 2024~2025년 이익 축소, 그리고 2025년 연간 순손실 전환으로 이어지는 하강 국면을 지나왔다. 2026년 상반기에도 분기별로 적자와 소폭 흑자가 엇갈리는 가운데, 2분기 매출이 직전 분기 대비 크게 늘었음에도 영업손실이 이어지며 매출 회복이 수익성 개선으로 곧바로 연결되지는 못했다. 대구경 강관·해상풍력 신규 라인 완공은 포트폴리오 다각화 시도로 볼 수 있으나 아직 실적 기여가 뚜렷하게 확인되지는 않는다. 대외적으로는 미국의 232조 관세체계 개편과 유정용강관 반덤핑 판정이 반복적으로 발생하는 통상 환경 속에서, 국내 주요 강관사들이 상대적으로 낮은 마진을 받아 당장의 큰 충격은 피한 것으로 보인다. 다만 국세청과의 이전가격 조세소송 패소, 국내 강관업계의 구조적 공급과잉 등은 여전히 해소되지 않은 과제로 남아있다. 향후 3분기 실적 발표와 반덤핑 최종판정, 조세소송 후속 절차 등 예정된 이벤트를 통해 실적 방향성의 변화 여부를 확인할 필요가 있다.",
-   "en": "Husteel has moved from the high profitability of the 2022–2023 energy pipe boom through shrinking profits in 2024–2025 and into a full net loss for 2025. Through the first half of 2026, quarterly results have continued to alternate between losses and modest profits, with Q2 revenue rising sharply from the prior quarter yet an operating loss persisting, meaning revenue recovery has not directly translated into improved profitability. Completion of the new large-diameter pipe and offshore wind line represents a diversification effort, though its earnings contribution has not yet become clearly visible. Externally, amid a trade environment marked by repeated revisions to the US Section 232 tariff framework and an OCTG antidumping ruling, major Korean pipe makers appear to have avoided major immediate shocks by receiving relatively low margins. However, the lost transfer-pricing tax case and structural oversupply in the domestic pipe industry remain unresolved challenges. Upcoming events — the Q3 earnings release, the final antidumping determination, and follow-up procedures in the tax litigation — warrant monitoring for any change in the earnings trajectory."
+   "ko": "휴스틸은 2022년 정점 이후 매출과 영업이익률이 4년 연속 축소되며 2025년 연결 순손실로 전환했고, 2026년 상반기에도 영업손실과 순손실이 이어지는 등 이익 회복이 아직 확인되지 않은 국면에 있다. 한편 미국 OCTG 반덤핑 조사에서 0.00% 마진을 확보하고 데이터센터발 강관 수요 회복 조짐이 나타나는 등 대외 여건 일부는 긍정적으로 움직이고 있지만, 50% 관세와 무관세 쿼터 폐지라는 구조적 부담은 여전히 남아 있다. 여기에 2026년 7월 조세심판원의 이전가격 관련 패소 결정으로 행정소송 여부와 관련 비용이라는 추가 변수가 더해졌다. 대구경 SAW 강관공장 완공은 제품 다각화 측면에서 의미가 있으나, 실제 가동률과 수주로 이어지는 데에는 시간이 필요할 것으로 보인다. 재무구조 측면에서는 부채비율이 30% 안팎으로 상대적으로 낮게 유지되고 있어 확장을 뒷받침할 여력은 있지만, 단기차입 확대와 영업활동현금흐름 축소는 함께 살펴야 할 부분이다. 종합적으로 통상정책, 세무소송, 신규설비 가동이라는 세 갈래의 확인 과제가 향후 실적 방향을 가를 것으로 보인다.",
+   "en": "Husteel's revenue and operating margin have contracted for four consecutive years since their 2022 peak, turning into a consolidated net loss in 2025, and both operating and net losses continued through the first half of 2026, meaning a profit recovery has not yet been confirmed. On the other hand, some external conditions have moved favorably, such as securing a 0.00% margin in the US OCTG anti-dumping review and signs of a pipe demand recovery tied to data center investment, though the structural burden of the 50% tariff and the abolished tariff-free quota remains. Adding to this, the July 2026 Tax Tribunal ruling against the company on transfer pricing introduces further variables around potential litigation and associated costs. Completion of the large-diameter SAW pipe plant is meaningful for product diversification, but translating it into actual utilization and orders will likely take time. On the balance sheet side, the debt ratio remains relatively low at around 30%, providing some capacity to support expansion, though the increase in short-term borrowing and the decline in operating cash flow warrant attention. Overall, trade policy, the tax litigation, and the ramp-up of new capacity stand out as the three threads most likely to determine the direction of future results."
   }
  },
  "sources": [
+  "https://www.judal.co.kr/?view=stockAI&shareToken=PkEcZVakLUHSFpUU",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=005010",
   "https://kr.investing.com/equities/husteel-earnings",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=RfzL6wzqy9UCSVRq",
   "https://www.judal.co.kr/?view=stockAI&shareToken=sgaagdW37LVKZPs7",
   "https://littlebproject.com/stock/005010/161/65018",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=PkEcZVakLUHSFpUU",
-  "https://www.stellantis.com/en/news/press-releases/2026/july/second-quarter-2026-financial-results",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A005010",
-  "https://v.daum.net/v/7ciA3V9UfJ",
-  "https://uskoreatrade.com/category/%EB%AF%B8%EA%B5%AD-%EB%AC%B4%EC%97%AD-%EC%A0%95%EC%B1%85/232%EC%A1%B0-%EC%B2%A0%EA%B0%95/",
-  "https://www.clhs.co.kr/world_tariff/tariffbase.asp?ss=us",
-  "https://www.steelinfosys.com/m/view.php?idx=22112",
-  "https://www.kctdi.or.kr/kctdi/research/research11.do?mode=view&articleNo=5456&title=%5B%ED%86%B5%EC%83%81+%ED%98%84%EC%95%88+%EC%B2%B4%ED%81%AC%5D+%EB%AF%B8+%EC%B2%A0%EA%B0%95%C2%B7%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84+%EA%B4%80%EC%84%B8+%EA%B8%B0%EC%A4%80+%EC%96%B4%EB%96%BB%EA%B2%8C+%EB%8B%AC%EB%9D%BC%EC%A7%80%EB%82%98",
-  "https://www.tariffstool.com/tariffs-on-steel-aluminum",
-  "https://www.acecustoms.co.kr/bbs/board.php?bo_table=research&wr_id=29",
-  "https://imnews.imbc.com/news/2026/world/article/6827250_36925.html",
-  "https://www.census.gov/foreign-trade/Press-Release/steel/steelf_2606.pdf",
-  "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/171691/view"
+  "https://www.judal.co.kr/?view=stockAI&shareToken=RfzL6wzqy9UCSVRq",
+  "https://alphasquare.co.kr/home/stock-summary?code=005010",
+  "https://insight.goover.ai/report/202603/go-public-report-ko-fa3b31b4-a84b-4f91-bc8a-f4556144edac-0-0.html",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=C5zgNdsjf8KoAXKj",
+  "https://www.snmnews.com/news/articleView.html?idxno=475409",
+  "https://www.ferrotimes.com/news/articleView.html?idxno=37327&reply_sc_order_by=I",
+  "https://www.tfmedia.co.kr/news/article.html?no=206089",
+  "https://www.m-i.kr/news/articleView.html?idxno=489383",
+  "https://www.dt.co.kr/article/11669021",
+  "https://www.theguru.co.kr/news/article.html?no=20377",
+  "https://www.hankyung.com/article/201402191975i",
+  "https://www.hyundaimotorgroup.com/ko/news/hyundai-motor-company-2026-q2-earnings",
+  "https://v.daum.net/v/7ciA3V9UfJ"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -233,9 +223,9 @@
   "철강·금속"
  ],
  "market": "코스피",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 06:36",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -334,14 +324,14 @@
    }
   ],
   "valuation": {
-   "price": 3605,
-   "mcap": 0.2026,
+   "price": 3830,
+   "mcap": 0.2152,
    "shares": 56188075,
    "total_shares": 56188075,
    "wavg_shares": 56160986,
    "per": null,
    "eps": -619,
-   "pbr": 0.18,
+   "pbr": 0.1958,
    "bps": 19563,
    "roe_ttm": -3.2,
    "ttm_window": "2025Q3~2026Q2",

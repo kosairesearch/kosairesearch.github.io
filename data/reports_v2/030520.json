@@ -1,227 +1,217 @@
 {
  "title": {
-  "ko": "AI 전환 가속, 자회사 변동성은 숙제",
-  "en": "AI Pivot Gains Speed, Subsidiary Swings Remain"
+  "ko": "AI 전환 가속, 자회사 실적 변동성 상존",
+  "en": "AI Pivot Accelerates, Subsidiary Volatility Persists"
  },
  "lead": {
-  "ko": "한컴은 오피스 소프트웨어 기업에서 AI 에이전틱 OS 기업으로 전환을 추진 중이며, 2026년 2분기 연결 실적이 분기 기준 최대 순이익을 기록했지만 자회사 실적 변동성과 초기 단계의 해외 사업은 여전히 관찰 대상이다.",
-  "en": "Hancom is transitioning from an office software vendor into a sovereign agentic OS company, and posted its highest quarterly net profit in Q2 2026, though subsidiary earnings volatility and early-stage overseas expansion remain points to watch."
+  "ko": "한컴은 오피스 소프트웨어 기업에서 AI 에이전트 플랫폼 기업으로 사업 정체성을 전환하고 있으나, 연결 실적은 방산·안전장비 자회사인 한컴라이프케어의 프로젝트 일정에 따라 분기별로 큰 편차를 보이고 있다.",
+  "en": "Hancom is repositioning itself from an office software company into an AI agent platform firm, but its consolidated results continue to swing sharply from quarter to quarter depending on the project schedule of its defense and safety equipment subsidiary Hancom Life Care."
  },
  "keypoints": [
   {
-   "ko": "2026년 2분기 연결 매출 1,200억원, 지배주주순이익 243억원으로 직전 분기 대비 큰 폭 회복",
-   "en": "Q2 2026 consolidated revenue of about KRW120bn and owners' net profit of about KRW24.3bn marked a sharp rebound from the prior quarter"
+   "ko": "2026년 7월 사명을 '한글과컴퓨터'에서 '한컴'으로, 종목명도 함께 변경하며 AI 기업 전환을 자본시장에 공식화했다.",
+   "en": "In July 2026 the company changed its corporate name from Hangul and Computer to Hancom, along with its stock ticker name, formally signaling its AI transformation to capital markets."
   },
   {
-   "ko": "AI 제품 매출이 상반기 135억원으로 이미 2025년 연간치(89억원)를 넘어섰고 올해 목표는 315억원",
-   "en": "First-half AI product revenue of roughly KRW13.5bn already exceeded full-year 2025 AI revenue of KRW8.9bn, with a full-year 2026 target of KRW31.5bn"
+   "ko": "2026년 상반기 AI 제품 매출이 135억원으로 이미 2025년 연간치(89억원)를 넘어섰고, 2분기 전체 매출 중 AI 비중은 15.7%까지 확대됐다.",
+   "en": "First-half 2026 AI product revenue reached KRW 13.5 billion, already surpassing full-year 2025 AI revenue of KRW 8.9 billion, with AI's share of total quarterly revenue rising to 15.7% in the second quarter."
   },
   {
-   "ko": "2025년 4분기 자회사 방산 공급 지연 등으로 일시 적자를 기록한 뒤 2026년 1분기 저점, 2분기 회복 흐름",
-   "en": "After a one-off Q4 2025 loss tied to delayed defense-product deliveries at a subsidiary, results bottomed in Q1 2026 and recovered in Q2"
+   "ko": "자회사 한컴라이프케어는 2026년 2분기 방산 부문 GLTD 납품 완료로 매출·영업이익이 전년 동기 대비 각각 103%, 168% 급증하며 반등했다.",
+   "en": "Subsidiary Hancom Life Care rebounded sharply in Q2 2026 as completion of GLTD (ground laser target designator) deliveries drove revenue and operating profit up 103% and 168% year-on-year, respectively."
   },
   {
-   "ko": "자회사 한컴라이프케어의 방산·소방 부문이 GLTD 납품 등으로 2분기 매출·영업이익 큰 폭 증가",
-   "en": "Subsidiary Hancom Life Care's defense and firefighting segment saw sharp Q2 revenue and profit growth on GLTD deliveries"
+   "ko": "연결 지배주주 순이익은 2024년 139억원에서 2025년 344억원으로 회복했으나, 2025년 4분기와 2026년 1분기는 자회사 부진으로 실적이 크게 출렁였다.",
+   "en": "Consolidated net income attributable to owners recovered from KRW 13.9 billion in 2024 to KRW 34.4 billion in 2025, but results swung sharply in Q4 2025 and Q1 2026 due to subsidiary weakness."
   },
   {
-   "ko": "4분기 소버린 에이전틱 OS 베타 공개, 2027년 국내·유럽 투트랙 상업화 계획 진행 중",
-   "en": "A beta version of the sovereign agentic OS is planned for Q4 2026, with commercialization in Korea and Europe targeted for 2027"
+   "ko": "하반기 '소버린 에이전틱 OS' 베타 출시와 일본·유럽 시장 진출이 예고돼 있어 사업 구조 전환의 실행력이 시험대에 오를 전망이다.",
+   "en": "A planned beta launch of the 'Sovereign Agentic OS' in the second half, along with expansion into Japan and Europe, will test the company's execution of its business model transition."
   }
  ],
  "business": {
-  "ko": "한컴은 1990년 설립된 오피스 소프트웨어 기업으로, 한글·한쇼·한셀 등 오피스 제품군을 중앙부처와 시·도교육청 등 공공 부문, 그리고 기업·개인 고객에 공급하고 있다. 회사가 보유한 고객 기반은 약 20만곳으로, 이 중 중앙부처를 포함한 공공·정부 부문이 약 1만4,000개사, 전국 시·도 교육청을 포함한 교육 부문이 약 4만개사, 금융·보안 민감 산업이 약 1,500개사, 일반 기업이 약 14만개사로 구성돼 있다. 최근에는 한컴독스AI, 한컴어시스턴트, 한컴피디아 등 AI 제품을 통해 기존 오피스 고객을 AI 패키지로 전환시키는 업셀링 전략을 펴고 있으며, 이 같은 전환 비율은 2026년 1분기 4.2%에서 2분기 6.2%로 상승했다. 국내 오피스 소프트웨어 시장은 오랜 기간 마이크로소프트와 한컴의 양강 체제로 유지돼 왔으며, 특히 공공기관에서는 문서 작성 프로그램으로 한글이, 스프레드시트로는 마이크로소프트 엑셀이 표준처럼 자리잡아온 구조다. 자회사 구성을 보면 2026년 1분기 말 기준 48개 계열회사를 보유하고 있으며, 연결대상 종속회사는 코스피 상장사인 한컴라이프케어를 포함해 20개사(상장 1개, 비상장 19개)다. 한컴라이프케어는 방독면과 공기호흡기 등 국방·소방 안전장비를 제조하는 회사로, 최근에는 프랑스 샤크로보틱스와 5년간 무인소방로봇의 국내 독점 유통 및 기술 협력 계약을 체결하며 피지컬 AI 영역으로 사업을 확장하고 있다. 회사는 자체 거대언어모델을 개발하는 대신 고객이 사용하는 다양한 AI 모델과 연동 가능한 개방형 아키텍처를 통해 여러 AI 제품 간 조율 역할을 하는 방향으로 사업 모델을 짜고 있다. 대표이사는 변성준·김연수 각자대표 체제이며 본사는 경기도 성남시 분당구에 위치한다.",
-  "en": "Founded in 1990, Hancom is an office software company that supplies its Hangul, Hanshow, and Hancell product line to central government ministries, provincial education offices, corporations, and individual users. The company's customer base spans roughly 200,000 organizations, including about 14,000 public/government entities (all central ministries), about 40,000 education-sector customers (all provincial education offices), about 1,500 finance and security-sensitive institutions, and about 140,000 general enterprises. More recently, Hancom has pursued an upselling strategy through AI products such as Hancom Docs AI, Hancom Assistant, and Hancom Pedia, converting existing office customers to AI packages, with the adoption rate among B2B customers rising from 4.2% in Q1 2026 to 6.2% in Q2. The domestic office software market has long operated as a two-way contest between Microsoft and Hancom, with Hangul serving as the de facto standard for document creation and Microsoft Excel for spreadsheets in public institutions. As of the end of Q1 2026 the company had 48 affiliated companies, with 20 consolidated subsidiaries including one listed company, KOSPI-listed Hancom Life Care, and 19 unlisted entities. Hancom Life Care manufactures defense and firefighting safety equipment such as gas masks and air respirators, and recently signed a five-year exclusive domestic distribution and technology-cooperation agreement with France's Shark Robotics for unmanned firefighting robots, extending into physical AI. Rather than developing its own large language model, the company has structured its business around an open architecture that can connect and orchestrate various third-party AI models. The company operates under co-CEOs Byun Seong-jun and Kim Yeon-su, with headquarters in Bundang-gu, Seongnam, Gyeonggi Province."
+  "ko": "한컴은 1990년 설립된 국내 대표 오피스 소프트웨어 기업으로, 2026년 7월 사명을 '한글과컴퓨터'에서 '한컴'으로, 코스닥 종목명도 함께 변경하며 AI 기업으로의 전환을 공식화했다. 핵심 사업은 한컴오피스를 축으로 한 오피스 소프트웨어·솔루션이며, 국내에서 20만 개 이상의 고객 기반을 확보하고 있다. 최근에는 한컴어시스턴트, 한컴피디아 등 AI 제품을 기존 오피스 고객에 업셀링하는 방식으로 AI 매출을 키우고 있으며, 2025년 89억원이던 AI 매출은 2026년 상반기에만 135억원으로 지난해 연간치를 넘어섰다. 보고서 기준일 현재 계열회사는 총 48개사이며, 연결대상 종속회사는 상장 1개사와 비상장 19개사를 포함해 20개사에 이른다. 대표 종속회사인 한컴라이프케어는 코스피 상장사로 방독면·공기호흡기 등 국방·소방 안전장비를 제조하며, 국내 공기호흡기 시장에서 90% 이상의 점유율을 보유하고 있다. 한컴라이프케어는 최근 프랑스 샤크로보틱스와 5년간 무인소방로봇 국내 독점 유통·기술협력 계약을 체결해 로봇 사업으로 영역을 확장하고 있다. 해외 사업은 일본을 전진기지로 삼아 인증·전자결제·영상보안 기업들과 잇따라 제휴를 맺고 있으며, 일본 키라보시 파이낸셜그룹과 금융 합작법인 설립도 추진 중이다. 유럽에서는 폴란드 R&D 기업, 현지 AI 기업과 협력해 에이전틱 OS의 유럽 현지화 개발을 진행하고 있다.",
+  "en": "Founded in 1990, Hancom is Korea's leading office software company, and in July 2026 it formally changed its corporate name from Hangul and Computer to Hancom, along with its KOSDAQ ticker name, to signal its transition into an AI company. Its core business is office software and solutions centered on Hancom Office, backed by a domestic customer base of more than 200,000. The company has been growing AI revenue by upselling AI products such as Hancom Assistant and Hancom Pedia to its existing office customer base, with AI revenue reaching KRW 13.5 billion in the first half of 2026 alone, already exceeding the full-year 2025 figure of KRW 8.9 billion. As of the reporting date, Hancom has 48 affiliated companies in total, including 20 consolidated subsidiaries, one of which is listed and 19 unlisted. Its flagship subsidiary Hancom Life Care, listed on the KOSPI, manufactures defense and fire-safety equipment such as gas masks and air respirators, holding over 90% market share in the domestic air respirator market. Hancom Life Care recently signed a five-year exclusive domestic distribution and technology cooperation agreement with France's Shark Robotics to expand into unmanned firefighting robots. Overseas, the company is using Japan as a beachhead, forming partnerships with authentication, electronic payment, and video security firms, while also pursuing a financial joint venture with Japan's Kiraboshi Financial Group. In Europe, it is working with a Polish R&D firm and a local AI company to localize its agentic OS for the European market."
  },
  "earnings": {
-  "ko": "한컴의 연결 매출액은 2022년 2,420억원에서 2023년 2,711억원, 2024년 3,048억원, 2025년 3,267억원으로 4년 연속 증가세를 이어갔다. 반면 영업이익은 2022년 250억원(영업이익률 10.3%)에서 2023년 341억원(12.6%), 2024년 404억원(13.3%)까지 확대된 뒤 2025년에는 364억원(11.1%)으로 소폭 줄어 마진이 되돌림됐다. 2025년 지배주주순이익은 246억원으로 2024년 139억원 대비 크게 늘었으나, 2023년에는 연결 전체 순이익이 –275억원 적자를 기록한 가운데 지배주주순이익만 151억원 흑자를 낸 특수한 구조가 나타났는데, 이는 비지배주주(자회사 소액주주) 몫 손실이 컸기 때문으로 해석된다. 분기별로 보면 2025년 2분기(매출 864억원, 영업이익 164억원, 지배주주순이익 151억원)와 3분기(매출 841억원, 영업이익 124억원, 순이익 165억원)까지는 견조했으나, 4분기에는 매출 954억원에도 영업이익이 –7.5억원, 지배주주순이익이 –135억원으로 일시 적자로 전환됐다. 2026년 1분기에는 매출 636억원, 영업이익 86억원, 순이익 68억원으로 규모가 줄며 저점을 형성했지만, 2분기에는 매출 1,200억원, 영업이익 143억원, 순이익 243억원으로 뚜렷하게 회복해 최근 5개 분기 중 순이익 최대치를 기록했다. 2분기 순이익 급증에는 자회사 한컴인스페이스 지분 매각에 따른 투자이익 반영이 영향을 준 것으로 알려졌다. 주당순이익(EPS, 기본)은 2022년 1,969원에서 2023년 633원, 2024년 577원으로 낮아졌다가 2025년 1,427원으로 재차 높아지며 회복 흐름을 보였다. 재무 안정성 측면에서 지배주주 자본은 2022년 3,157억원에서 2025년 3,667억원으로 늘었고, 부채비율은 2023년 34.3%에서 2025년 46.7%로 다소 높아졌으며, 영업활동현금흐름은 2022년 238억원에서 2025년 697억원으로 뚜렷하게 확대됐다.",
-  "en": "Hancom's consolidated revenue rose for four consecutive years, from KRW242.0bn in 2022 to KRW271.1bn in 2023, KRW304.8bn in 2024, and KRW326.7bn in 2025. Operating profit, however, expanded from KRW25.0bn (10.3% margin) in 2022 to KRW34.2bn (12.6%) in 2023 and KRW40.4bn (13.3%) in 2024, before dipping to KRW36.4bn (11.1%) in 2025 as margins retraced. Owners' net profit reached KRW24.6bn in 2025, up sharply from KRW13.9bn in 2024, while 2023 presented an unusual pattern in which consolidated net profit as a whole was a loss of KRW27.5bn even as owners' net profit remained positive at KRW15.1bn, reflecting larger losses attributable to non-controlling subsidiary shareholders. On a quarterly basis, results held up through Q2 2025 (revenue KRW86.4bn, operating profit KRW16.4bn, owners' net profit KRW15.1bn) and Q3 2025 (revenue KRW84.1bn, operating profit KRW12.4bn, net profit KRW16.5bn), before swinging to a one-off loss in Q4 2025, with revenue of KRW95.4bn but an operating loss of KRW0.75bn and an owners' net loss of KRW13.5bn. Q1 2026 revenue fell to KRW63.6bn with operating profit of KRW8.6bn and net profit of KRW6.8bn, marking a trough, before Q2 2026 rebounded sharply to revenue of KRW120.0bn, operating profit of KRW14.3bn, and net profit of KRW24.3bn, the highest net profit of the past five quarters. The surge in Q2 net profit is understood to reflect an investment gain from the divestiture of a stake in subsidiary Hancom InSpace. Basic EPS declined from KRW1,969 in 2022 to KRW633 in 2023 and KRW577 in 2024 before recovering to KRW1,427 in 2025. On the balance sheet, owners' equity grew from KRW315.7bn in 2022 to KRW366.7bn in 2025, the debt ratio rose from 34.3% in 2023 to 46.7% in 2025, and operating cash flow expanded markedly from KRW23.8bn in 2022 to KRW69.7bn in 2025."
+  "ko": "연간 실적을 보면 연결 매출은 2022년 2,420억원에서 2023년 2,711억원, 2024년 3,048억원, 2025년 3,267억원으로 꾸준히 확대됐다. 영업이익은 2022년 250억원, 2023년 341억원, 2024년 404억원까지 늘었다가 2025년 364억원으로 소폭 줄어 영업이익률이 13.3%에서 11.1%로 낮아졌다. 반면 지배주주 순이익은 2024년 139억원에서 2025년 344억원으로 크게 늘어 이익 회복이 뚜렷했다. 다만 2023년에는 지배주주 순이익이 151억원이었음에도 연결 전체 순손익은 -275억원을 기록해 비지배주주 손익 요인의 영향이 컸고, 2022년 지배주주 순이익 468억원은 다른 연도 대비 유독 높은 수준을 보였다. 분기별로는 2025년 3분기 매출 841억원, 영업이익 124억원으로 견조했으나, 매출이 954억원으로 늘어난 4분기에는 영업이익이 -7.5억원, 지배주주 순이익이 -37억원으로 적자 전환했다. 2026년 1분기에는 매출 636억원, 영업이익 86억원, 지배주주 순이익 90억원으로 다시 흑자 기조를 회복했고, 2분기에는 매출이 1,200억원 수준으로 급증하며 영업이익 143억원, 지배주주 순이익 221억원으로 최근 다섯 개 분기 중 최대치를 기록했다. 이 같은 2분기 실적 개선은 한컴라이프케어의 방산 부문 매출이 전년 동기 대비 103%, 영업이익이 168% 증가한 데 힘입은 것으로, 지상레이저표적지시기(GLTD) 1·2차 물량 납품이 완료된 영향이 컸다. 지배주주 순이익이 영업이익을 상회하는 흐름은 최근 분기에서도 이어져, 영업 외 부문의 기여가 실적 변동에 함께 작용하고 있음을 보여준다.",
+  "en": "On an annual basis, consolidated revenue expanded steadily from KRW 242.0 billion in 2022 to KRW 271.1 billion in 2023, KRW 304.8 billion in 2024, and KRW 326.7 billion in 2025. Operating profit rose from KRW 25.0 billion in 2022 to KRW 34.2 billion in 2023 and KRW 40.4 billion in 2024, before slipping slightly to KRW 36.4 billion in 2025, with the operating margin declining from 13.3% to 11.1%. Net income attributable to owners, however, jumped from KRW 13.9 billion in 2024 to KRW 34.4 billion in 2025, marking a clear earnings recovery. In 2023, despite owners' net income of KRW 15.1 billion, total consolidated net income was negative KRW 27.5 billion, reflecting a large non-controlling interest effect, while the 2022 owners' net income of KRW 46.8 billion stood notably higher than in other years. On a quarterly basis, Q3 2025 revenue of KRW 84.1 billion and operating profit of KRW 12.4 billion were solid, but Q4 2025, despite revenue rising to KRW 95.4 billion, swung to an operating loss of KRW 0.75 billion and an owners' net loss of KRW 3.7 billion. Q1 2026 returned to profitability with revenue of KRW 63.6 billion, operating profit of KRW 8.6 billion, and owners' net income of KRW 9.0 billion, and Q2 2026 revenue surged to around KRW 120 billion, with operating profit of KRW 14.3 billion and owners' net income of KRW 22.1 billion, the highest of the past five quarters. This Q2 improvement was underpinned by Hancom Life Care's defense segment, where revenue and operating profit grew 103% and 168% year-on-year, respectively, driven largely by completion of first- and second-phase ground laser target designator (GLTD) deliveries. Owners' net income exceeding operating profit has been a recurring pattern in recent quarters, indicating that non-operating contributions have also played a role in earnings swings."
  },
  "industry": {
-  "ko": "국내 오피스 소프트웨어 시장은 마이크로소프트가 압도적 지배력을 가진 세계 시장과 달리 마이크로소프트와 한컴의 양강 체제로 유지돼왔으며, 공공기관을 제외하면 한컴이 마이크로소프트와 실질적 경쟁 구도를 형성한 시장이 거의 없다는 평가가 나온다. 최근에는 정부가 공공 부문에서 HWP 파일 첨부를 제한하는 방침을 밝히고, 웹 브라우저에서 HWP·HWPX 문서를 열람·편집할 수 있는 애플리케이션이 배포되는 등 한글 프로그램 생태계의 개방성이 강화되는 흐름이 나타나고 있다. 여기에 오픈AI가 챗GPT에서 HWP와 HWPX 파일을 지원하겠다고 밝히는 등 외부 사업자의 문서 생태계 진입도 이어지고 있다. 산업 전체로는 데이터를 외부로 내보내지 않고 자체 환경에서 AI를 구동하는 '소버린 AI'와 스스로 판단·실행하는 '에이전틱 AI'가 동시에 부상하는 국면으로, 시장조사기관 마켓츠앤마켓스는 글로벌 에이전틱 AI 시장이 2025년 70억 달러에서 2032년 932억 달러로, 소버린 AI 시장은 2025년 400억 달러에서 2032년 1,480억 달러로 커질 것으로 전망했다. 유럽연합은 인공지능법(AI Act)을 통해 위험도별 의무를 부과하고 있으며, 투명성 의무는 2026년 8월 2일부터, 고위험 시스템 의무는 2027년 12월 2일부터 시행돼 위반 시 전세계 매출의 최대 7%까지 과징금이 부과될 수 있다. 이 같은 규제 강화는 데이터를 외부 클라우드로 이전하기 어려운 공공·금융·의료 부문에서 온프레미스 기반 AI 수요를 자극하는 요인으로 지목된다. 국내에서는 한컴 외에도 폴라리스오피스, 티맥스소프트 등 오피스 소프트웨어 경쟁사가 존재하며, 일부 공공기관을 중심으로 대체 제품을 검토하는 움직임도 관측된다.",
-  "en": "Unlike the global office software market, where Microsoft holds overwhelming dominance, Korea's domestic market has long operated as a two-way contest between Microsoft and Hancom, with observers noting that outside the public sector Hancom has little meaningful competitive presence against Microsoft. More recently, the government has moved to restrict HWP file attachments in the public sector, while applications that allow HWP and HWPX documents to be viewed and edited in web browsers without installation have been released, signaling growing openness in the Hangul document ecosystem. OpenAI has also announced it will support HWP and HWPX files in ChatGPT, marking further entry by outside players into the document ecosystem. Across the broader industry, two trends are converging: \"sovereign AI,"
+  "ko": "국내 소프트웨어 시장은 2024년 기준 전년 대비 7% 성장한 44조 4,000억원 규모로 견조한 성장세를 이어가고 있다. 시장조사기관 KRG에 따르면 2026년 국내 AI 시장 규모는 전년 대비 25% 증가한 6조 4,190억원에 이를 것으로 전망되며, AI 모델이 거대언어모델에서 멀티모달, 나아가 자율적으로 업무를 수행하는 AI 에이전트 모델로 진화하며 전 산업 영역의 업무 자동화가 가속화되고 있다. 오피스 소프트웨어 시장은 글로벌 대안이 존재하는 경쟁 구도지만, 한컴은 국회도서관·국회사무처 등 공공기관 레퍼런스를 다수 보유하고 있다. 다만 정부가 공공 부문에서 HWP 파일 첨부를 제한하는 방침을 발표하고, 오픈AI가 챗GPT에서 HWP·HWPX 파일 지원을 밝히는 등 문서 생태계의 개방화 흐름이 확산되면서 기존 문서 포맷 중심의 경쟁 구도가 변화하고 있다. 국방·안전장비 분야에서는 글로벌 방위 예산 확대 흐름 속 아시아·중동 등 신흥시장 수요가 커지는 국면이며, 한컴라이프케어는 국내 공기호흡기 시장에서 90% 이상의 점유율을 기반으로 이러한 흐름에 대응하고 있다. AI 에이전트 시장에서는 국내외 빅테크와 스타트업의 진출이 활발해지고 있어, 공공·규제 산업을 겨냥한 데이터 주권형 솔루션이 새로운 경쟁 축으로 부상하고 있다.",
+  "en": "Korea's software market grew a solid 7% year-on-year to KRW 44.4 trillion as of 2024. According to market researcher KRG, Korea's AI market is projected to grow 25% year-on-year to KRW 6.419 trillion in 2026, as AI models evolve from large language models to multimodal and, further, to autonomous AI agent models, accelerating workflow automation across industries. The office software market remains competitive given global alternatives, but Hancom holds numerous public-sector references, including the National Assembly Library and the National Assembly Secretariat. However, the government's move to restrict HWP file attachments in the public sector, along with OpenAI's announcement that ChatGPT would support HWP and HWPX files, reflects a broadening openness in the document ecosystem that is reshaping the competitive landscape once centered on proprietary document formats. In defense and safety equipment, rising global defense budgets are driving demand growth in emerging markets such as Asia and the Middle East, with Hancom Life Care leveraging its over-90% share of the domestic air respirator market to respond. In the AI agent space, both global tech giants and startups are increasingly active, making sovereignty-focused, data-secure solutions targeting public and regulated industries an emerging axis of competition."
  },
  "outlook": {
-  "ko": "회사가 밝힌 2026년 별도 기준 실적 목표는 매출 2,100억원, 영업이익 600억원이며, 별도 기준 AI 매출 목표는 315억원으로 제시돼 있다. 실제로 상반기 별도 매출은 986억원, 영업이익은 310억원, AI 제품 매출은 135억원을 기록해 목표 달성 경로를 하반기에서 확인해야 하는 상황이다. 회사는 2026년 3분기 중 소버린 에이전틱 OS의 베타 버전을, 4분기에는 상용화 버전을 공개할 계획이며, 2027년부터는 국내와 유럽을 투트랙으로 공략해 본격적인 상업화에 나설 예정이다. 유럽 진출과 관련해서는 폴란드의 7불스, 알고마인 등 현지 파트너사와 협력해 현지 언어 대응과 기존 시스템 연동, EU 규제 대응 등을 함께 개발하는 방식을 취하고 있다. 자회사 한컴라이프케어는 하반기에 국군에 공급하는 차세대 K5 방독면을 7월부터 10월까지 순차 납품하고, 지상레이저표적지시기(GLTD) 잔여 물량도 추가로 매출에 반영할 예정이다. 프랑스 샤크로보틱스와의 협력을 통해 대형 소방로봇 '콜로서스'와 방화문 차단 로봇에 한컴의 에이전틱 OS를 연동하는 작업도 연말까지 진행할 계획이다. 회사는 이 같은 로봇 연동을 시작으로 물류·건설·방산 등 다양한 산업용 로봇 분야로 사업을 확대한다는 구상을 밝혔다. 다만 이러한 계획들은 대부분 초기 단계이거나 상용화 이전 단계에 있어, 실제 매출 기여 시점과 규모는 향후 분기 실적 발표를 통해 순차적으로 확인해야 한다.",
-  "en": "The company's own stand-alone (non-consolidated) 2026 targets are revenue of KRW210bn and operating profit of KRW60bn, with an AI revenue target of KRW31.5bn. In the first half, stand-alone revenue reached KRW98.6bn, operating profit KRW31.0bn, and AI product revenue KRW13.5bn, leaving the pace of goal achievement to be confirmed in the second half. The company plans to unveil a beta version of its sovereign agentic OS in Q3 2026 and a commercial version in Q4, with full commercialization targeted in Korea and Europe on a two-track basis starting in 2027. For European expansion, Hancom is working with local partners including Poland's 7bulls and Algomine to jointly develop local-language support, integration with existing systems, and compliance with EU regulations. Subsidiary Hancom Life Care plans to deliver next-generation K5 gas masks to the military in sequential shipments from July through October in the second half, and additional Ground Laser Target Designator (GLTD) volumes are also expected to be recognized as revenue. Through the end of the year, the company plans to integrate its agentic OS with Shark Robotics' large firefighting robot \"Colossus\" and a fire-door blocking robot developed with the French partner. The company has stated an intention to extend this robot integration into logistics, construction, and defense-related industrial robotics. Most of these initiatives, however, remain at early or pre-commercial stages, so the timing and scale of actual revenue contribution will need to be confirmed through subsequent quarterly disclosures."
+  "ko": "회사는 영업실적 전망 공시를 통해 2026년 별도 기준 매출 2,100억원, 영업이익 600억원을 목표로 제시한 바 있다. 하반기에는 다양한 AI 에이전트를 통합 관리하는 소버린 에이전틱 OS의 베타 버전을 공개하고, 2027년 상용화를 추진할 계획이다. 유럽에서는 폴란드 R&D 기업 및 현지 AI 기업과 협력해 에이전틱 OS의 현지화를 진행하고 있으며, 일본에서는 인증·전자결제·보안 기업들과의 제휴를 기반으로 시장 기반을 다지고 있다. 한컴라이프케어는 하반기 국군에 공급하는 차세대 K5 방독면을 7월부터 10월까지 순차적으로 납품하며, 약 185억원 규모 계약에 따라 2026년까지 약 8만개를 공급할 예정이다. GLTD 잔여 물량도 하반기에 추가로 매출에 반영되며, 도시지역 교전훈련 사업과 육군 과학화전투훈련체계(KCTC) 관련 매출은 2027년부터 본격 인식될 전망이다. 증권가 전망도 제시되고 있는데, 한국IR협의회 기업리서치센터는 2026년 6월 보고서에서 한컴의 2026년 연결 매출을 3,703억원, 영업이익을 476억원으로 추정했으며, 키움증권은 2026년 6월 리포트에서 2026년 연결 매출 3,654억원, 영업이익 479억원을 전망하고 목표주가 3만 4,000원을 제시했다.",
+  "en": "The company has disclosed an earnings outlook targeting standalone 2026 revenue of KRW 210 billion and operating profit of KRW 60 billion. In the second half, it plans to unveil a beta version of its Sovereign Agentic OS, which integrates and manages multiple AI agents, with commercialization targeted for 2027. In Europe, it is localizing the agentic OS in partnership with a Polish R&D firm and a local AI company, while in Japan it is building a market foundation through alliances with authentication, electronic payment, and security firms. Hancom Life Care will sequentially deliver next-generation K5 gas masks to the military from July through October, supplying roughly 80,000 units by 2026 under a contract worth about KRW 18.5 billion. Remaining GLTD volumes will also be recognized as revenue in the second half, while revenue from urban combat training projects and the Army's Korea Combat Training Center (KCTC) system is expected to be recognized in earnest from 2027. Brokerage forecasts have also emerged: the Korea IR Service's research center estimated in a June 2026 report that Hancom's 2026 consolidated revenue would reach KRW 370.3 billion with operating profit of KRW 47.6 billion, while Kiwoom Securities forecast in a June 2026 report consolidated 2026 revenue of KRW 365.4 billion and operating profit of KRW 47.9 billion, setting a target price of KRW 34,000."
  },
  "valuation_comment": {
-  "ko": "한컴의 헤드라인 주당순자산(BPS)은 16,256원으로 나타나 있어, 주가와 순자산가치의 관계를 살펴볼 때 참고할 수 있는 기준점이 된다. 최근 공시된 연간 주당배당금(DPS)은 400원으로, 코스닥 소프트웨어 업종 내에서 상대적으로 낮은 배당 성향을 보여온 편이다. 증권사들의 실적 전망 기준 밸류에이션 평가는 시점에 따라 엇갈렸는데, 신한투자증권은 2026년 5월 13일 리포트에서 당시 주가가 2025년 EPS 기준 PER 12.0배, 2026년 예상 실적 기준 10.2배 수준이라고 평가했고, 한국IR협의회는 2026년 6월 24일 보고서에서 2026년 예상 실적 기준 PER이 11.3배로 국내 주요 소프트웨어 기업 대비 낮은 수준이라고 밝혔다. 두 평가 모두 실적 개선 기대가 주가에 아직 온전히 반영되지 않았다는 시각을 전제로 하지만, 이는 각 증권사가 제시한 판단이며 실제 반영 여부는 향후 실적과 시장 상황에 따라 달라질 수 있다. 참고로 키움증권이 2026년 6월 2일 집계한 최근 6개월 증권사 평균 목표주가는 34,667원으로, 직전 6개월 평균(33,250원)보다 소폭 높아진 수준이었다. 자회사 한컴라이프케어의 방산·소방 실적 변동성과 AI·해외 사업이 아직 초기 단계라는 점은 밸류에이션을 해석할 때 함께 고려해야 할 요소로 지목된다.",
-  "en": "Hancom's headline book value per share (BPS) stands at KRW16,256, providing a reference point for gauging the relationship between the stock price and net asset value. The most recently disclosed annual dividend per share (DPS) was KRW400, a relatively modest payout within the KOSDAQ software sector. Brokerage valuation assessments based on earnings estimates have varied by timing: Shinhan Investment & Securities noted in a May 13, 2026 report that the stock traded at a PER of 12.0x based on 2025 EPS and 10.2x based on 2026 estimated earnings, while the Korea IR Council stated in a June 24, 2026 report that the stock traded at an estimated PER of 11.3x for 2026, which it characterized as low relative to major domestic software peers. Both assessments premise that earnings-improvement expectations were not yet fully reflected in the share price, though these are the brokers' own judgments and whether that reflects going forward will depend on future results and market conditions. For reference, Kiwoom Securities' June 2, 2026 tally showed the six-month average analyst target price at KRW34,667, slightly above the prior six-month average of KRW33,250. The earnings volatility at subsidiary Hancom Life Care's defense and firefighting segment, together with the still-early stage of the AI and overseas businesses, are factors worth weighing alongside any valuation interpretation."
+  "ko": "한컴의 주가는 오피스 소프트웨어 기업에서 AI 에이전트 플랫폼 기업으로 전환하는 스토리와, 자회사 실적 변동에 따라 출렁이는 연결 실적 사이에서 형성되고 있다. 연간 기준으로는 적자 요인이 있던 2023년을 지나 2024~2025년 이익이 회복되는 흐름을 보였고, 2026년 상반기에는 분기 실적이 다시 뚜렷하게 개선되는 국면에 들어섰다. 순자산 대비 주가 수준에 대해서는 한국IR협의회 기업리서치센터가 2026년 6월 보고서에서 국내 주요 소프트웨어 기업 대비 낮은 수준의 밸류에이션이라고 평가한 바 있다. 배당은 매년 소액의 현금배당을 이어오고 있는 편으로, 이익 성장에 비해 주주환원 비중이 크지 않은 구조다. 목표주가와 관련해서는 키움증권이 2026년 6월 리포트에서 3만 4,000원을 제시한 사례가 있으며, 이는 AI 매출 확대에 따른 실적 개선 기대를 반영한 것으로 풀이된다.",
+  "en": "Hancom's share price is being shaped at the intersection of its transformation narrative from an office software company to an AI agent platform firm, and consolidated results that swing with subsidiary performance. On an annual basis, the company moved past a loss-affected 2023 to a recovering earnings trend in 2024-2025, and quarterly results showed a clear improvement again in the first half of 2026. On relative valuation, the Korea IR Service's research center noted in a June 2026 report that the multiple stood at a lower level compared to major domestic software peers. Dividends have consisted of modest annual cash payouts, with shareholder returns representing a relatively small share relative to earnings growth. On target prices, Kiwoom Securities set a target of KRW 34,000 in a June 2026 report, reflecting expectations for earnings improvement driven by AI revenue expansion."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI 업셀링 매출 고성장",
-    "en": "High-growth AI upselling revenue"
+    "ko": "AI 매출 비중의 구조적 확대",
+    "en": "Structural expansion of AI revenue share"
    },
    "body": {
-    "ko": "한컴의 상반기 AI 제품 매출은 135억원으로 이미 2025년 연간치 89억원을 넘어섰으며, 2분기 전체 매출 내 AI 제품 비중은 15.7%까지 상승했다. 기존 B2B 고객 중 AI 패키지로 전환한 비율도 1분기 4.2%에서 2분기 6.2%로 높아지는 등 기존 20만 고객 기반을 활용한 업셀링 구조가 확인되고 있다. 국회 빅데이터 플랫폼, 한국서부발전, 한국수력원자력 등 공공·에너지 부문 레퍼런스도 늘고 있다.",
-    "en": "Hancom's first-half AI product revenue of KRW13.5bn already exceeded full-year 2025 AI revenue of KRW8.9bn, and AI products' share of total revenue rose to 15.7% in Q2. The share of existing B2B customers converting to AI packages also rose from 4.2% in Q1 to 6.2% in Q2, evidencing an upselling structure built on the existing 200,000-customer base. Public and energy-sector references, including a National Assembly big-data platform, Korea Western Power, and Korea Hydro & Nuclear Power, have also expanded."
+    "ko": "2025년 5%에 못 미치던 AI 매출 비중이 2026년 2분기 전체 매출의 15.7%까지 확대됐다. 기존 20만 고객 기반에 AI 패키지를 업셀링하는 방식으로 신규 고객 확보 비용 없이 고객당 매출을 늘리는 구조다. 하반기 소버린 에이전틱 OS가 베타로 출시되면 공공·국방·금융 등 데이터 주권이 중요한 산업으로 매출 기반이 확장될 여지가 있다.",
+    "en": "AI revenue's share of total sales, below 5% in 2025, expanded to 15.7% of total revenue by Q2 2026. The model relies on upselling AI packages to an existing 200,000-customer base, raising revenue per customer without new customer acquisition costs. If the Sovereign Agentic OS launches in beta in the second half, there is room to expand the revenue base into public, defense, and financial sectors where data sovereignty is critical."
    }
   },
   {
    "title": {
-    "ko": "소버린 AI 규제 환경 수혜 가능성",
-    "en": "Potential beneficiary of sovereign AI regulatory tailwinds"
+    "ko": "한컴라이프케어의 방산 실적 반등",
+    "en": "Defense-driven turnaround at Hancom Life Care"
    },
    "body": {
-    "ko": "유럽연합의 AI Act는 투명성 의무를 2026년 8월부터, 고위험 의무를 2027년 12월부터 시행하며 위반 시 매출의 최대 7%까지 과징금을 부과할 수 있어, 데이터를 외부로 내보내기 어려운 공공·금융·의료 부문의 온프레미스 AI 수요를 자극할 요인으로 지목된다. 한컴은 이러한 흐름에 맞춰 국내에서는 온프레미스 기반 소버린 에이전트 OS로 공공·금융·의료 수요를 공략하고, 해외에서는 폴란드 파트너사와 함께 EU 규제 대응형 제품을 공동 개발하고 있다. 국회도서관·국회사무처 등 국내 공공 레퍼런스도 이 같은 전략의 근거로 제시된다.",
-    "en": "The EU AI Act imposes transparency obligations from August 2026 and high-risk obligations from December 2027, with fines of up to 7% of revenue for violations, a factor cited as likely to stimulate on-premise AI demand in public, financial, and healthcare sectors where data cannot easily move externally. In line with this, Hancom is targeting domestic public, financial, and healthcare demand with an on-premise sovereign agent OS, while jointly developing EU-regulation-compliant products with Polish partners overseas. Domestic public-sector references such as the National Assembly Library and National Assembly Secretariat are cited as supporting evidence for this strategy."
+    "ko": "한컴라이프케어는 2026년 2분기 GLTD 1·2차 물량 납품 완료로 매출과 영업이익이 각각 전년 동기 대비 103%, 168% 급증했다. 하반기에는 K5 방독면 순차 납품과 GLTD 잔여 물량이 추가로 실적에 반영될 예정이다. 프랑스 샤크로보틱스와의 협력을 통한 무인소방로봇 사업도 신규 성장축으로 부상하고 있다.",
+    "en": "Hancom Life Care saw revenue and operating profit jump 103% and 168% year-on-year, respectively, in Q2 2026 upon completion of first- and second-phase GLTD deliveries. Sequential K5 gas mask deliveries and remaining GLTD volumes are set to further support results in the second half. The unmanned firefighting robot business developed with France's Shark Robotics is also emerging as a new growth pillar."
    }
   },
   {
    "title": {
-    "ko": "자회사 방산·소방 부문 회복",
-    "en": "Recovery at the defense and firefighting subsidiary"
+    "ko": "글로벌 시장 진출 발판 마련",
+    "en": "Groundwork laid for global market entry"
    },
    "body": {
-    "ko": "자회사 한컴라이프케어는 2026년 2분기 연결 기준 매출 551억원, 영업이익 76억원으로 전년 동기 대비 각각 103%, 168% 증가했으며, 이는 지상레이저표적지시기(GLTD) 납품과 공정 효율화가 견인한 결과다. 하반기에는 차세대 K5 방독면이 순차 납품되고 GLTD 잔여 물량도 추가로 반영될 예정이며, 프랑스 샤크로보틱스와의 무인소방로봇 독점 유통 계약을 통해 피지컬 AI 영역으로도 사업이 확장되고 있다.",
-    "en": "Subsidiary Hancom Life Care posted Q2 2026 consolidated revenue of KRW55.1bn and operating profit of KRW7.6bn, up 103% and 168% year-on-year respectively, driven by Ground Laser Target Designator (GLTD) deliveries and process efficiency gains. In the second half, next-generation K5 gas masks will be delivered in stages and remaining GLTD volumes will be recognized, while an exclusive distribution agreement with France's Shark Robotics for unmanned firefighting robots extends the business into physical AI."
+    "ko": "일본에서는 인증·전자결제·영상보안 기업들과의 제휴와 금융지주와의 합작법인 추진을 통해 현지 사업 기반을 다지고 있다. 유럽에서는 폴란드 R&D 기업, 현지 AI 기업과 협업해 에이전틱 OS의 현지화 개발을 진행하고 있다. 오픈소스로 공개한 문서 파싱 기술이 글로벌 개발자 커뮤니티에서 주목받으며 기술력을 입증한 사례도 있다.",
+    "en": "In Japan, the company is building a local business foundation through partnerships with authentication, electronic payment, and video security firms, and by pursuing a joint venture with a financial holding company. In Europe, it is localizing its agentic OS in cooperation with a Polish R&D firm and a local AI company. An open-sourced document parsing technology also drew attention from the global developer community, demonstrating technical credibility."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "연결 자회사 실적 변동성",
-    "en": "Consolidated subsidiary earnings volatility"
+    "ko": "자회사 의존형 실적 변동성",
+    "en": "Earnings volatility tied to subsidiary dependence"
    },
    "body": {
-    "ko": "2025년 4분기에는 자회사의 방산 제품 공급 지연 등으로 연결 영업이익과 지배주주순이익이 모두 일시 적자로 전환된 바 있다. 2026년 1분기에도 연결 매출·이익 규모가 직전 분기보다 축소돼 계절적 비수기 영향이 확인됐다. 이러한 변동성은 본사 오피스·AI 사업의 안정적 성장세를 가리는 요인으로 지목돼 왔다.",
-    "en": "In Q4 2025, delayed defense-product deliveries at a subsidiary contributed to a temporary swing to a consolidated operating loss and an owners' net loss. Q1 2026 also saw a seasonal contraction in consolidated revenue and profit compared with the prior quarter. This volatility has been cited as a factor obscuring the steadier growth of the core office and AI business."
+    "ko": "2025년 4분기와 2026년 1분기 연속으로 한컴라이프케어의 방산 프로젝트 지연이 연결 실적을 끌어내린 바 있다. 2분기 실적 개선도 GLTD 프로젝트라는 특정 계약의 완료 시점에 크게 의존했다. 향후에도 방산 프로젝트의 발주·납품 일정에 따라 연결 실적이 분기별로 크게 출렁일 가능성이 있다.",
+    "en": "Delays in Hancom Life Care's defense projects dragged down consolidated results in both Q4 2025 and Q1 2026. The Q2 improvement was also heavily dependent on the completion timing of a specific contract, the GLTD project. Consolidated results could continue to swing significantly by quarter depending on the ordering and delivery schedule of defense projects."
    }
   },
   {
    "title": {
-    "ko": "HWP 생태계 개방화 흐름",
-    "en": "Opening of the HWP document ecosystem"
+    "ko": "AI 사업화의 초기 단계 성격",
+    "en": "Early-stage nature of AI commercialization"
    },
    "body": {
-    "ko": "최근 정부가 공공 부문에서 HWP 파일 첨부를 제한하는 방침을 밝히고, 웹 브라우저에서 HWP·HWPX를 열람·편집할 수 있는 애플리케이션이 배포되는 등 한글 프로그램의 폐쇄적 생태계가 개방되는 흐름이 나타나고 있다. 오픈AI도 챗GPT에서 HWP·HWPX 파일 지원을 발표해 외부 사업자의 문서 접근성이 높아지고 있다. 한컴 측은 이를 AI 전략상 긍정적 변화로 해석하고 있지만, 장기적으로 공공 부문의 한컴오피스 의존도를 낮추는 요인이 될 가능성도 배제할 수 없다.",
-    "en": "The government has recently moved to restrict HWP file attachments in the public sector, while applications enabling HWP and HWPX viewing and editing in web browsers have been released, signaling an opening of what was once a relatively closed Hangul document ecosystem. OpenAI has also announced HWP and HWPX support in ChatGPT, increasing third-party access to the document format. While Hancom characterizes this as a positive development for its AI strategy, it cannot be ruled out that it may over time reduce public-sector dependence on Hancom Office."
+    "ko": "AI 매출 비중이 빠르게 늘고 있지만 절대 규모는 여전히 본사 매출의 10%대에 머물러 있다. 해외 매출 비중도 소프트웨어 부문 전체 매출의 1% 수준에 그쳐 글로벌 사업화는 아직 초기 단계다. 소버린 에이전틱 OS 역시 하반기 베타 단계로, 실질적인 매출 기여는 상용화 이후에나 확인 가능하다.",
+    "en": "While AI revenue's share is growing quickly, its absolute size remains in the low double-digit percentage range of parent-company revenue. Overseas revenue accounts for only about 1% of total software segment revenue, indicating global commercialization is still at an early stage. The Sovereign Agentic OS is also only at the beta stage in the second half, meaning its actual revenue contribution can only be confirmed after commercialization."
    }
   },
   {
    "title": {
-    "ko": "해외 매출 정체 및 초기 단계 사업",
-    "en": "Stagnant overseas revenue and early-stage initiatives"
+    "ko": "문서 생태계 개방화에 따른 경쟁 구도 변화",
+    "en": "Competitive shifts from document ecosystem openness"
    },
    "body": {
-    "ko": "2025년 연결 기준 수출 매출액은 전년 대비 72.8% 반등했지만 2022~2023년 수준에는 미치지 못했으며, 수출 매출의 61.4%가 소방용 호흡기·보호의·방산 관련 제품에서 나와 AI 사업의 해외 매출 기여는 아직 제한적이다. 유럽 진출 역시 파트너사와의 업무협약(MOU) 체결 및 공동 개발 협의 단계에 머물러 있어 실질적인 매출 반영 시점은 불확실하다. AI 사업과 민간 부문 확대, 해외 진출이 모두 초기 단계에 있어 근본적 체질 변화에는 시간이 더 필요하다는 지적도 나온다.",
-    "en": "Consolidated export revenue in 2025 rebounded 72.8% year-on-year but still fell short of 2022-2023 levels, and 61.4% of export revenue came from firefighting respirators, protective gear, and defense-related products, meaning AI's overseas revenue contribution remains limited so far. European expansion also remains at the stage of memoranda of understanding and joint-development discussions with partners, leaving the timing of meaningful revenue recognition uncertain. Observers note that with the AI business, private-sector expansion, and overseas entry all still in early stages, a fundamental shift in the company's earnings structure will likely take more time."
+    "ko": "정부의 HWP 파일 첨부 제한 방침과 오픈AI의 챗GPT HWP·HWPX 지원 발표는 한컴의 전통적 문서 포맷 경쟁력을 희석시킬 가능성이 있다. 회사 측은 이를 AI 전략상 긍정적이라고 해석하지만, 문서 생태계의 개방화가 가속화될 경우 기존 오피스 SW 매출의 방어력이 약화될 여지도 있다.",
+    "en": "The government's policy restricting HWP file attachments and OpenAI's announcement of ChatGPT support for HWP and HWPX files could dilute Hancom's traditional document format competitiveness. While the company frames this positively in terms of its AI strategy, accelerating openness in the document ecosystem could also weaken the defensibility of its existing office software revenue."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "실적/사업 구조 리스크",
-    "en": "Earnings and business-structure risk"
+    "ko": "사업 구조 전환 실행 리스크",
+    "en": "Business model transition execution risk"
    },
    "body": {
-    "ko": "연결 자회사인 한컴라이프케어는 방산 프로젝트의 특성상 계약별 납품 일정 지연이나 수주 시점 변동에 따라 분기별 실적 편차가 커질 수 있다. 2025년 4분기 사례처럼 자회사의 일시적 부진이 연결 실적 전체를 훼손할 가능성이 있으며, 도시지역 교전훈련사업이나 육군과학화전투훈련체계(KCTC) 관련 매출처럼 내년 이후로 이연되는 매출 항목도 존재한다.",
-    "en": "Consolidated subsidiary Hancom Life Care's defense projects can generate significant quarter-to-quarter earnings variability due to contract-specific delivery delays or shifting order timing. As seen in Q4 2025, temporary weakness at the subsidiary can weigh on overall consolidated results, and some revenue items, such as urban combat training and Army Scientific Combat Training system-related sales, are expected to be deferred to next year or beyond."
+    "ko": "한컴은 오피스 SW 기업에서 AI 에이전트 OS 기업으로 정체성을 전환하고 있으나, 핵심 사업인 소버린 에이전틱 OS는 아직 베타 단계다. 연식제 패키지 발매 종료 등 기존 매출 모델의 변화가 단기적으로 매출 구조에 영향을 줄 가능성도 배제할 수 없다. AI 사업과 민간·해외 시장 진출이 모두 초기 단계라 근본적인 체질 변화에는 시간이 더 필요할 수 있다.",
+    "en": "Hancom is transitioning its identity from an office software firm to an AI agent OS firm, but its core Sovereign Agentic OS remains at the beta stage. Changes to the legacy revenue model, such as ending annual-edition packages, could affect the revenue structure in the near term. Since the AI business and expansion into private and overseas markets are all at an early stage, a fundamental transformation may require more time."
    }
   },
   {
    "cat": {
-    "ko": "경쟁/생태계 구조 리스크",
-    "en": "Competitive and ecosystem structure risk"
+    "ko": "자회사 프로젝트 일정 리스크",
+    "en": "Subsidiary project timing risk"
    },
    "body": {
-    "ko": "국내 오피스 소프트웨어 시장은 오랫동안 마이크로소프트와의 양강 체제로 유지돼 왔으나, 폴라리스오피스·티맥스소프트 등 경쟁 제품이 늘고 일부 공공기관이 대체 제품을 검토하는 사례가 관측된다. 정부의 HWP 첨부 제한 방침과 웹 기반 HWP 열람 애플리케이션 확산, 오픈AI의 HWP 지원 등 문서 생태계 개방화 흐름은 중장기적으로 한컴의 공공·개인 고객 락인(lock-in) 구조에 변수가 될 수 있다.",
-    "en": "Korea's domestic office software market has long been a two-way contest with Microsoft, but competing products from Polaris Office and TmaxSoft have increased, and some public institutions have reportedly explored alternatives. The government's restriction on HWP attachments, the spread of web-based HWP viewing applications, and OpenAI's HWP support all represent an opening of the document ecosystem that could, over the medium to long term, affect Hancom's customer lock-in in the public and individual segments."
+    "ko": "한컴라이프케어의 국방 프로젝트는 계약별 납품 일정에 따라 매출 인식 시점이 크게 달라진다. GLTD 프로젝트 지연이 2025년 4분기와 2026년 1분기 실적 부진의 주요 원인이 됐던 사례가 이를 보여준다. 향후에도 K5 방독면, KCTC 등 신규 프로젝트의 발주·납품 지연이 발생하면 연결 실적에 재차 부담이 될 수 있다.",
+    "en": "Hancom Life Care's defense projects see revenue recognition timing vary significantly by contract delivery schedule. Delays in the GLTD project were a key factor behind weak results in Q4 2025 and Q1 2026. Future delays in ordering or delivery for new projects such as K5 gas masks or KCTC could again weigh on consolidated results."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실행 리스크",
-    "en": "New-business execution risk"
+    "ko": "규제·생태계 변화 리스크",
+    "en": "Regulatory and ecosystem change risk"
    },
    "body": {
-    "ko": "소버린 에이전틱 OS는 2026년 4분기 상용화, 2027년 국내·유럽 투트랙 상업화라는 일정이 제시돼 있으나, 아직 베타 버전 공개 이전 단계로 실제 상용화 일정이 지연될 가능성을 배제할 수 없다. 유럽 파트너사와의 협력도 업무협약(MOU) 체결 또는 협의 단계에 있는 곳이 많아, 이것이 실질적 계약과 매출로 이어지기까지는 추가 시간이 필요할 수 있다. 별도 기준 연간 가이던스(매출 2,100억원, 영업이익 600억원)의 달성 여부도 하반기 실적으로 확인해야 하는 상태다.",
-    "en": "The sovereign agentic OS carries a stated schedule of Q4 2026 commercialization and two-track commercialization in Korea and Europe from 2027, but as the beta version has not yet been released, delays to the actual commercialization timeline cannot be ruled out. Many European partnerships remain at the memorandum-of-understanding or discussion stage, meaning additional time may be needed before they translate into binding contracts and revenue. Whether the stand-alone full-year guidance (revenue of KRW210bn, operating profit of KRW60bn) will be met also remains to be confirmed through second-half results."
+    "ko": "정부의 공공부문 HWP 첨부 제한 방침, 웹 기반 무설치 HWP 열람 도구 확산, 오픈AI의 HWP·HWPX 지원 발표 등은 한컴의 전통적 문서 포맷 지배력을 잠식할 수 있는 요인이다. 방산 부문은 방위산업 예가율 등 원가 구조에 대한 제도적 논의가 진행 중으로, 관련 제도 변화가 수익성에 영향을 줄 수 있다.",
+    "en": "The government's restriction on HWP attachments in the public sector, the spread of web-based installation-free HWP viewing tools, and OpenAI's announcement of HWP and HWPX support are all factors that could erode Hancom's traditional document format dominance. In the defense segment, institutional discussions are underway regarding cost structures such as pricing ratios in defense procurement, and related regulatory changes could affect profitability."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 3분기 실적 발표(11월 예상)",
-    "en": "Q3 2026 earnings release (expected November)"
+    "ko": "2026년 11월 중순 전후",
+    "en": "Around mid-November 2026"
    },
    "what": {
-    "ko": "소버린 에이전틱 OS 베타 공개 여부와 AI 매출 목표(315억원) 달성 진행률을 확인할 시점이다.",
-    "en": "This is the point to check whether the sovereign agentic OS beta has been unveiled and how progress toward the KRW31.5bn AI revenue target is tracking."
+    "ko": "정기 공시 일정상 3분기 실적이 공시될 시점으로, AI 매출 비중의 추가 확대 여부와 한컴라이프케어의 K5 방독면·GLTD 잔여 물량 반영 정도를 확인해야 한다.",
+    "en": "Based on the regular disclosure calendar, Q3 results should be disclosed around this time, and it will be important to check whether AI revenue's share continued to expand and how much of Hancom Life Care's K5 gas mask and remaining GLTD volumes were reflected."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Q4 2026"
+    "ko": "2026년 4분기 중",
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "에이전틱 OS 상용화 버전 출시 여부와 한컴라이프케어의 K5 방독면·GLTD 잔여 물량 납품 완료 여부를 확인해야 한다.",
-    "en": "Watch for whether the agentic OS commercial version launches and whether Hancom Life Care completes delivery of remaining K5 gas mask and GLTD volumes."
+    "ko": "소버린 에이전틱 OS 베타 버전 공개 및 시장 반응을 확인해야 한다. 2027년 상용화로 이어질 실질적 매출 기반이 마련되는지가 핵심이다.",
+    "en": "The beta release of the Sovereign Agentic OS and market reaction should be checked. The key is whether a substantive revenue base is being established for the planned 2027 commercialization."
    }
   },
   {
    "when": {
-    "ko": "2026년 연간 실적 확정(2027년 초)",
-    "en": "Full-year 2026 results confirmation (early 2027)"
+    "ko": "2026년 10월까지",
+    "en": "Through October 2026"
    },
    "what": {
-    "ko": "별도 기준 가이던스(매출 2,100억원, 영업이익 600억원) 달성 여부와 연결 실적의 자회사 기여도를 점검할 시점이다.",
-    "en": "This is when achievement of the stand-alone guidance (revenue KRW210bn, operating profit KRW60bn) and the subsidiary contribution to consolidated results can be assessed."
+    "ko": "한컴라이프케어의 K5 방독면 순차 납품 완료 여부를 확인해야 한다. 약 185억원 규모 계약 중 잔여 물량의 납품 완료 시점이 하반기 실적에 직접 영향을 준다.",
+    "en": "Whether Hancom Life Care completes sequential K5 gas mask deliveries should be checked. The completion timing of remaining volumes under the roughly KRW 18.5 billion contract directly affects second-half results."
    }
   },
   {
    "when": {
-    "ko": "2027년 상업화 초기",
-    "en": "Early 2027 commercialization"
+    "ko": "2026년 하반기 중",
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "국내·유럽 투트랙 상업화가 실제로 개시되는지, 유럽 파트너사(7불스·알고마인 등)와의 MOU가 계약으로 전환되는지 확인할 필요가 있다.",
-    "en": "Check whether two-track commercialization in Korea and Europe actually begins, and whether MOUs with European partners such as 7bulls and Algomine convert into binding contracts."
-   }
-  },
-  {
-   "when": {
-    "ko": "분기별 한컴라이프케어 공시",
-    "en": "Hancom Life Care's quarterly disclosures"
-   },
-   "what": {
-    "ko": "방산·소방 부문의 수주·납품 일정이 연결 실적 변동성에 미치는 영향을 분기마다 별도로 확인할 필요가 있다.",
-    "en": "The impact of the defense and firefighting segment's order and delivery schedule on consolidated earnings volatility should be checked separately each quarter."
+    "ko": "일본 키라보시 파이낸셜그룹과의 금융 합작법인 설립 진행 상황과 유럽(폴란드) 에이전틱 OS 현지화 프로젝트의 구체적 성과를 확인해야 한다.",
+    "en": "Progress on the financial joint venture with Japan's Kiraboshi Financial Group and concrete outcomes of the European (Poland) agentic OS localization project should be checked."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "한컴은 오피스 소프트웨어 기반의 안정적 공공·기업 고객군을 바탕으로 AI 업셀링과 소버린 에이전틱 OS라는 새로운 성장축을 구축해가는 과정에 있다. 2025년 연간 실적은 매출 성장과 영업이익률 소폭 하락이 동시에 나타났고, 2026년에는 1분기 저점 이후 2분기에 연결 매출·순이익이 뚜렷하게 회복되는 흐름을 보였다. AI 제품 매출과 B2B 전환율의 상승세, 자회사 한컴라이프케어의 방산·소방 부문 회복은 긍정적 신호로 꼽히지만, 4분기 실적의 일시 적자 사례에서 보듯 연결 자회사의 변동성은 여전한 변수다. 소버린 AI·에이전틱 OS 상용화, 유럽 진출, HWP 생태계 개방화 대응 등 여러 사업 전환 요소가 동시에 진행 중이어서, 이들이 실제 매출과 수익성으로 이어지는 속도와 규모는 향후 분기별 공시를 통해 순차적으로 확인해야 할 사안이다. 증권사들의 실적 전망 기준 밸류에이션 평가는 실적 개선 기대가 반영될 여지가 있다는 시각을 제시했지만, 이는 각 기관의 판단이며 회사 자체의 가이던스 달성 여부와 자회사 실적 안정성에 따라 결과가 달라질 수 있다. 투자 판단에 앞서 다가오는 분기 실적과 신사업 이정표의 실현 여부를 지속적으로 점검할 필요가 있다.",
-   "en": "Hancom is in the process of building new growth pillars—AI upselling and a sovereign agentic OS—on top of a stable base of public and corporate office-software customers. Full-year 2025 results showed simultaneous revenue growth and a modest decline in operating margin, and in 2026 consolidated revenue and net profit troughed in Q1 before rebounding markedly in Q2. Rising AI product revenue and B2B conversion rates, along with the recovery at subsidiary Hancom Life Care's defense and firefighting segment, stand out as positive signals, but the one-off Q4 2025 loss illustrates that consolidated subsidiary volatility remains a live variable. With sovereign AI/agentic OS commercialization, European market entry, and adaptation to an opening HWP ecosystem all underway simultaneously, the pace and scale at which these translate into actual revenue and profitability will need to be confirmed sequentially through future quarterly disclosures. Brokerage valuation assessments based on earnings estimates have suggested room for earnings-improvement expectations to be reflected, but these are each institution's own judgment, and outcomes will depend on whether the company meets its own guidance and on the stability of subsidiary earnings. Ahead of any investment decision, continued monitoring of upcoming quarterly results and the realization of new-business milestones is warranted."
+   "ko": "한컴은 오피스 소프트웨어 기업에서 AI 에이전트 플랫폼 기업으로 사업 정체성을 전환하는 과정에 있으며, 사명·종목명 변경을 통해 이를 자본시장에 공식화했다. AI 매출 비중이 빠르게 늘고 있다는 점은 긍정적이나 절대 규모와 해외 매출 비중은 여전히 초기 단계에 머물러 있다. 연결 실적은 자회사 한컴라이프케어의 방산 프로젝트 납품 일정에 따라 분기별로 큰 편차를 보였는데, 2025년 4분기·2026년 1분기의 부진과 2026년 2분기의 급격한 개선이 이를 잘 보여준다. 연간 기준으로는 2024~2025년 이익 회복 흐름이 이어졌고, 2026년 상반기 들어 다시 뚜렷한 개선세가 나타났다. 하반기에는 소버린 에이전틱 OS 베타 출시와 한컴라이프케어의 K5 방독면 납품 완료가 예정돼 있어, 이들 이벤트의 실행 결과가 다음 분기 실적의 방향을 가늠하는 주요 변수가 될 전망이다. 정부의 문서 생태계 개방화 정책과 방산 프로젝트 일정 리스크는 지속적으로 관찰이 필요한 요인이다.",
+   "en": "Hancom is in the process of transitioning its business identity from an office software company to an AI agent platform firm, a shift it has formalized in capital markets through its corporate and ticker name change. The rapid growth in AI revenue's share is a positive, but its absolute scale and the company's overseas revenue share remain at an early stage. Consolidated results have shown large quarterly swings tied to the delivery schedule of subsidiary Hancom Life Care's defense projects, as illustrated by weakness in Q4 2025 and Q1 2026 followed by a sharp improvement in Q2 2026. On an annual basis, an earnings recovery trend continued through 2024-2025, and a clear improvement reappeared in the first half of 2026. In the second half, a planned beta launch of the Sovereign Agentic OS and completion of K5 gas mask deliveries at Hancom Life Care will be key variables shaping the direction of coming quarterly results. The government's document ecosystem openness policy and defense project scheduling risk remain factors that warrant continued monitoring."
   }
  },
  "sources": [
   "https://www.infostockdaily.co.kr/news/articleView.html?idxno=216447",
+  "https://www.newspim.com/news/view/20260602000312",
   "https://www.ksdaily.co.kr/news/articleView.html?idxno=108494",
   "https://www.newstomato.com/readnews.aspx?no=1299358",
   "https://www.newsprime.co.kr/news/article/?no=725279",
-  "https://www.newspim.com/news/view/20260602000312",
   "https://marketin.edaily.co.kr/News/ReadE?newsId=02246806642168592",
+  "https://www.investing.com/equities/hancom-inc-earnings",
   "https://kr.investing.com/news/global-filings/article-93CH-1942312",
-  "https://alphasquare.co.kr/home/stock-summary?code=030520",
-  "https://www.thepublic.kr/news/articleView.html?idxno=314997",
-  "https://www.newspim.com/news/view/20260730000328",
+  "https://zdnet.co.kr/view/?no=20260724135352",
+  "https://zdnet.co.kr/view/?no=20260519110759",
+  "https://news.bizwatch.co.kr/article/mobile/2026/05/19/0017",
+  "https://www.sentv.co.kr/article/view/sentv202607240053",
+  "https://www.businesspost.co.kr/BP?command=article_view&num=435725",
+  "https://kind.krx.co.kr/external/2026/05/13/000406/20260513000866/11013.htm",
   "https://www.smartbizn.com/news/articleView.html?idxno=151302",
-  "https://www.newspim.com/news/view/20260814000290",
-  "https://www.ddaily.co.kr/page/view/2026073016385811898",
-  "https://zdnet.co.kr/view/?no=20260814140135",
-  "https://www.ajunews.com/view/20260812150911190",
-  "http://www.enewstoday.co.kr/news/articleView.html?idxno=2458622",
+  "https://www.newspim.com/news/view/20260730000328",
   "https://view.asiae.co.kr/uhtml/read.php?idxno=2026051314133157138",
-  "https://www.jobkorea.co.kr/starter/companyreport/view?Inside_No=21278&schCtgr=0&schGrpCtgr=0&Page=1"
+  "https://www.threads.com/@m.d.easy/post/DaZmG5woPbt/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EC%97%85-2026%EB%85%84-2%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C-%EC%9D%BC%EC%A0%95/?hl=ko"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -233,9 +223,9 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 06:36",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-22",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -334,14 +324,14 @@
    }
   ],
   "valuation": {
-   "price": 17110,
-   "mcap": 0.4137,
+   "price": 17410,
+   "mcap": 0.421,
    "shares": 24179744,
    "total_shares": 24179744,
    "wavg_shares": 23767671,
-   "per": 10.4,
+   "per": 10.558,
    "eps": 1649,
-   "pbr": 1.05,
+   "pbr": 1.071,
    "bps": 16256,
    "roe_ttm": 10.4,
    "ttm_window": "2025Q3~2026Q2",
@@ -350,7 +340,7 @@
    "bps_krx": 15357.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 400.0,
-   "div": 2.34
+   "div": 2.3
   }
  }
 }

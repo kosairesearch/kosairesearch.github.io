@@ -1,241 +1,217 @@
 {
  "title": {
-  "ko": "2차 VBP 변곡점과 지배구조 리스크 공존",
-  "en": "VBP Inflection Point Meets Governance Risk"
+  "ko": "중국 회복 신호 속 거버넌스 리스크 공존",
+  "en": "China Rebound Signals Amid Governance Risk"
  },
  "lead": {
-  "ko": "덴티움은 2025년 중국발 수요 위축으로 실적이 크게 꺾인 뒤 2026년 상반기 순이익이 회복세를 보이고 있으나, 중국 2차 VBP(대량구매) 최종 결과와 행동주의 펀드발 지배구조 갈등이 동시에 진행 중인 국면이다.",
-  "en": "Dentium's earnings sharply contracted in 2025 on weak China demand but showed a recovery in net profit in the first half of 2026, even as the outcome of China's second VBP tender and an activist-fund governance dispute remain unresolved."
+  "ko": "덴티움은 2026년 2분기 중국 매출이 5개 분기 만에 반등했지만, 행동주의 펀드와의 소송전이 겹치며 실적 회복과 지배구조 불확실성이 동시에 진행되고 있다.",
+  "en": "Dentium's China revenue rebounded in the second quarter of 2026 for the first time in five quarters, but the earnings recovery is unfolding alongside an escalating legal dispute with an activist fund."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 3,464억원(-15.0%), 영업이익 641억원(-34.9%), 지배주주 순이익 164억원(-77.4%)으로 3개년 연속 이익이 축소됐다",
-   "en": "2025 revenue fell 15.0% to KRW 346.4bn, operating profit fell 34.9% to KRW 64.1bn, and owners' net profit dropped 77.4% to KRW 16.4bn, marking a third straight year of profit contraction"
+   "ko": "2025년 연간 매출은 3,464억 원으로 전년 대비 15% 줄었고 영업이익률도 18.5%로 낮아지며 실적 저점을 통과했다.",
+   "en": "Full-year 2025 revenue fell 15% year over year to KRW346.4 billion, with the operating margin narrowing to 18.5% as earnings passed through a trough."
   },
   {
-   "ko": "2026년 1분기(순이익 172억원)·2분기(139억원) 연속으로 지배주주 순이익이 전년 동기 대비 큰 폭 늘며 회복 흐름이 이어지고 있다",
-   "en": "Owners' net profit rose sharply year-on-year in both Q1 2026 (KRW 17.2bn) and Q2 2026 (KRW 13.9bn), continuing a recovery trend"
+   "ko": "2026년 1분기와 2분기 지배주주 순이익이 각각 172억 원, 139억 원으로 영업이익을 웃돌아 일회성 요인의 영향이 있었던 것으로 보인다.",
+   "en": "Owners' net income in the first and second quarters of 2026 (KRW17.2 billion and KRW13.9 billion) exceeded operating income, suggesting one-off items influenced the results."
   },
   {
-   "ko": "중국 2차 VBP(물량기반조달)는 2026년 7월 세부안 공개에 이어 8월 중 최종 공급업체 선정 결과가 발표될 예정으로, 중국 매출 비중이 높은 덴티움의 핵심 변수다",
-   "en": "China's second VBP framework was unveiled in July 2026, with final supplier selection results expected in August 2026 — a key variable given Dentium's high China revenue exposure"
+   "ko": "2026년 2분기 중국 매출은 전년 동기 대비 늘며 5개 분기 만에 반등했고, 전체 매출의 약 44.6%를 차지했다.",
+   "en": "Second-quarter 2026 China revenue increased year over year, rebounding for the first time in five quarters and accounting for about 44.6% of total revenue."
   },
   {
-   "ko": "행동주의 펀드 얼라인파트너스가 지분을 확대하며 이사회 개편·내부거래 감시를 요구해왔고, 2026년 정기주총 표 대결과 위임장 관련 소송이 진행 중이다",
-   "en": "Activist fund Align Partners has expanded its stake and pushed for board reform and oversight of related-party transactions, with a proxy-fight and litigation over the 2026 AGM still ongoing"
+   "ko": "행동주의 펀드 얼라인파트너스는 지분 10%대를 확보한 뒤 자사주 전량 소각을 이끌어냈고, 최근에는 회계장부 열람 가처분을 신청했다.",
+   "en": "Activist fund Align Partners built a stake exceeding 10%, prompted a full retirement of treasury shares, and recently filed for an injunction to inspect the company's accounting books."
   },
   {
-   "ko": "보유 자사주 22.09% 전량이 2026년 2~3월 앞당겨 소각되며 발행주식수가 줄었고, 경영권 방어 수단은 사실상 소진됐다",
-   "en": "The company's entire 22.09% treasury stake was canceled ahead of schedule in February–March 2026, reducing shares outstanding while effectively eliminating its takeover-defense buffer"
+   "ko": "중국 2차 VBP(중앙집중구매) 정책의 세부 시행 시점과 가격 인하 폭이 여전히 확정되지 않아 실적 변동성의 핵심 변수로 남아 있다.",
+   "en": "The detailed timing and price-cut magnitude of China's second-round VBP (volume-based procurement) policy remain unconfirmed, staying a key variable for earnings volatility."
   }
  ],
  "business": {
-  "ko": "덴티움은 2000년 설립된 치과용 임플란트 중심의 덴탈 솔루션 기업으로, 임플란트 픽스처·상부보철물 외에 CBCT·CAD/CAM 등 디지털 치과장비와 골이식재(OSTEON 등) 바이오재료를 함께 공급한다. 해외 매출 비중이 매출의 78%에 이르는 수출 중심 기업으로, 베트남·중국 현지 생산기지와 유통법인을 통해 약 70개국에서 영업하고 있다. 매출의 상당 부분이 중국에서 발생하는 구조로, 2024년 기준 중국 매출 비중이 47.2%에 달할 만큼 특정 시장 의존도가 높다. 국내 치과용 임플란트 시장에서는 점유율 약 18~20%로 업계 2위 지위를 유지하고 있으며, 중국 시장에서도 과거 오스템임플란트에 이은 2위권 브랜드로 평가받아 왔다. 중국 사업은 상하이 인근 생산기지를 통해 현지 조달가에 대응하는 한편, 스위스 스트라우만 등 프리미엄 브랜드와 중국 로컬 저가 브랜드 사이의 중간 포지션에서 경쟁하고 있다. 원재료 중 지르코니아 등 일부 품목은 창업주 정성민 회장이 최대주주인 관계사 제노스로부터 매입하는 내부거래 구조를 갖고 있어 지배구조 이슈의 배경이 되고 있다. 최근에는 베트남 자회사 ICT VINA를 통한 고체산화물연료전지(SOFC) 신사업에도 진출했으나 아직 매출이 발생하지 않는 투자 단계다. 국내에서는 치과 개원 시장을 겨냥한 실내건축 패키지 등 부가서비스로 사업 영역을 확장하고 있다.",
-  "en": "Founded in 2000, Dentium is a dental solutions company centered on dental implants, also supplying digital dentistry equipment (CBCT, CAD/CAM) and biomaterials such as OSTEON bone graft substitutes alongside implant fixtures and prosthetics. It is an export-driven company with overseas sales accounting for 78% of revenue, operating in roughly 70 countries through production bases and distribution subsidiaries in Vietnam and China. A substantial share of revenue comes from China, where the country accounted for 47.2% of sales as of 2024, reflecting high market concentration. Domestically, the company holds roughly an 18-20% share of the dental implant market, ranking second in the industry, and has historically held a similar second-tier brand position in China behind Osstem Implant. Its China operations rely on a Shanghai-area production base to compete on local pricing, positioning the company between premium brands such as Switzerland's Straumann and low-cost Chinese local brands. Certain raw materials, including zirconia, are sourced from affiliate Genos, majority-owned by founder and chairman Sung-min Jung, a related-party structure that has become a focal point of governance concerns. The company has also entered a new solid oxide fuel cell (SOFC) business through its Vietnamese subsidiary ICT VINA, though this remains at an investment stage with no revenue yet generated. Domestically, it has expanded into value-added services such as interior design packages targeted at new dental clinic openings."
+  "ko": "덴티움은 2000년 설립돼 2017년 코스피에 상장한 치과용 임플란트 전문기업으로, 국내 직판 영업과 24개 해외 법인을 통해 70여 개국에 제품을 공급한다. 매출 구성은 임플란트가 88%로 절대적 비중을 차지하며 디지털 장비 2%, 골이식재 등 바이오 의약품이 10%가량을 차지하는 것으로 파악된다. 매출의 상당 부분이 해외에서 발생하는 수출형 구조로, 국내 매출 비중은 약 20%, 해외 비중은 약 80%에 이르는 것으로 알려져 있다. 지역별로는 중국이 매출의 40%대 중반을 차지하는 최대 시장으로, 국내 임플란트 업계에서는 오스템임플란트에 이어 시장 점유율 2위(약 18~20%)를 지키고 있다. 중국 상하이 인근 펑셴에 자체 생산 공장을 두고 현지 법인도 운영해 가격 경쟁력과 공급 안정성을 확보하고 있다. 회사 관계자에 따르면 자체 제품 판매 비중이 92%에 달해 경쟁사 평균(60%대)보다 높은 수직계열화 구조를 갖추고 있으며, 이는 원가 관리 측면에서 경쟁 우위로 작용한다. 글로벌 경쟁 구도에서는 스트라우만, 덴츠플라이시로나 등 해외 기업과 국내 오스템임플란트·메가젠임플란트 등이 주요 경쟁자다. 회사는 2030년까지 글로벌 상위 3위 임플란트 기업으로 성장하겠다는 중장기 목표를 제시하고 있다.",
+  "en": "Dentium is a dental implant specialist founded in 2000 and listed on the KOSPI in 2017, supplying products to more than 70 countries through domestic direct sales and 24 overseas subsidiaries. Implants account for the overwhelming majority of revenue at about 88%, with digital equipment near 2% and biomaterials such as bone graft substitutes contributing roughly 10%. The company operates an export-oriented structure in which overseas sales are reported to make up roughly 80% of revenue versus about 20% domestically. By region, China is the largest market at roughly the mid-40% range of revenue, where Dentium holds the No. 2 domestic-brand position (an estimated 18-20% share) behind Osstem Implant. The company runs its own manufacturing plant near Fengxian, Shanghai, along with a local subsidiary, supporting price competitiveness and supply stability. According to a company representative, self-manufactured products make up 92% of sales, a higher vertical-integration ratio than the roughly 60% peer average, which supports cost management. In the competitive landscape, global players such as Straumann and Dentsply Sirona compete alongside domestic rivals Osstem Implant and Megagen Implant. The company has stated a medium-term goal of becoming a top-three global implant maker by 2030."
  },
  "earnings": {
-  "ko": "덴티움의 실적은 최근 3개년 연속 위축되는 흐름을 보였다. 2022년 매출 3,558억원·영업이익 1,257억원(영업이익률 35.3%)에서 2023년에는 매출 3,932억원·영업이익 1,383억원으로 외형과 이익이 함께 늘며 지배주주 순이익도 965억원으로 정점을 찍었다. 그러나 2024년에는 매출이 4,078억원으로 소폭 늘었음에도 영업이익은 985억원으로 28.8% 감소했고, 영업이익률도 35.2%에서 24.2%로 큰 폭 하락했다. 2025년에는 매출 3,465억원(-15.0%), 영업이익 641억원(-34.9%), 지배주주 순이익 164억원(-77.4%)으로 감소 폭이 더욱 확대됐고, 영업이익률은 18.5%까지 낮아졌다. 분기별로 보면 2025년 4분기는 매출 1,091억원·영업이익 265억원의 성수기 실적에도 지배주주 순이익이 -50억원의 적자로 전환돼, 영업외 요인 등 일회성 비용의 영향이 있었던 것으로 추정된다. 반면 2026년 1분기는 매출 714억원·영업이익 159억원에 지배주주 순이익 172억원을 기록해 순이익이 영업이익을 웃도는 결과가 나타났고, 2분기에도 매출 893억원·영업이익 147억원·지배주주 순이익 139억원으로 두 분기 연속 순이익 회복이 이어졌다. 언론 보도에 따르면 2026년 2분기 매출과 영업이익은 전년 동기 대비 각각 8.6%, 5.5% 감소했지만 지배주주 순이익은 191.0% 증가했으며, 상반기 누계 기준으로는 매출 1,607억원(+1.0%), 영업이익 305억원(+21.5%), 지배주주 순이익 311억원(+78.8%)으로 이익 개선 폭이 매출 증가 폭을 크게 앞질렀다. 이는 2025년의 대손상각비·재고평가손실 등 일회성 비용 부담이 완화되면서 나타난 기저효과의 성격이 크다는 것이 업계의 해석이다.",
-  "en": "Dentium's earnings contracted for three consecutive years. From revenue of KRW 355.8bn and operating profit of KRW 125.7bn (35.3% margin) in 2022, 2023 saw both revenue (KRW 393.2bn) and operating profit (KRW 138.3bn) rise, with owners' net profit peaking at KRW 96.5bn. In 2024, however, despite a slight revenue increase to KRW 407.8bn, operating profit fell 28.8% to KRW 98.5bn, and the operating margin dropped sharply from 35.2% to 24.2%. In 2025, the decline deepened further: revenue fell 15.0% to KRW 346.5bn, operating profit fell 34.9% to KRW 64.1bn, and owners' net profit plunged 77.4% to KRW 16.4bn, with the operating margin falling to 18.5%. By quarter, Q4 2025 — traditionally a peak season — posted revenue of KRW 109.1bn and operating profit of KRW 26.5bn, yet owners' net profit swung to a loss of KRW 5.0bn, suggesting one-off or non-operating cost items were at play. In contrast, Q1 2026 saw net profit (KRW 17.2bn) exceed operating profit (KRW 15.9bn) on revenue of KRW 71.4bn, and Q2 2026 extended the net profit recovery with revenue of KRW 89.3bn, operating profit of KRW 14.7bn, and owners' net profit of KRW 13.9bn. According to news reports, Q2 2026 revenue and operating profit fell 8.6% and 5.5% year-on-year respectively, while owners' net profit rose 191.0%; on a first-half cumulative basis, revenue rose 1.0% to KRW 160.7bn while operating profit rose 21.5% and owners' net profit rose 78.8%, with profit improvement far outpacing top-line growth. Industry observers attribute much of this to a base effect from the easing of one-off costs such as bad-debt allowances and inventory valuation losses that weighed on 2025 results."
+  "ko": "덴티움의 연간 실적은 2023년을 정점으로 뚜렷한 하락세를 보였다. 2023년 매출 3,932억 원, 영업이익 1,383억 원(영업이익률 35.2%), 지배주주 순이익 965억 원을 기록한 이후, 2024년에는 매출이 4,078억 원으로 늘었음에도 영업이익률이 24.2%로 낮아지며 지배주주 순이익이 727억 원으로 줄었다. 2025년에는 매출이 3,465억 원으로 전년 대비 15% 감소하고 영업이익률도 18.5%까지 낮아지면서 지배주주 순이익이 164억 원까지 급감했다. 분기별로 보면 2025년 3분기 매출 782억 원, 영업이익 125억 원, 지배주주 순이익 40억 원을 기록한 뒤 4분기에는 매출이 1,091억 원으로 늘고 영업이익도 265억 원으로 개선됐지만, 지배주주 순이익은 오히려 49억 원 손실로 전환됐다. 영업이익이 개선된 분기에 순이익이 적자로 돌아선 것은 영업외 손익이나 세무 관련 일회성 요인이 반영된 결과로 추정된다. 2026년 들어서는 1분기 매출 714억 원, 영업이익 159억 원에 지배주주 순이익이 172억 원으로 영업이익을 웃돌았고, 2분기에도 매출 893억 원, 영업이익 147억 원, 지배주주 순이익 139억 원을 기록하며 다시 영업이익을 상회하는 순이익 구조가 나타났다. 이 역시 일회성 요인이 순이익 쪽에 긍정적으로 작용했을 가능성을 시사한다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순이익은 301억 원으로, 2025년 연간 수치보다는 개선된 흐름을 보이고 있다.",
+  "en": "Dentium's annual results peaked in 2023 and have shown a clear downtrend since. After posting revenue of KRW393.2 billion, operating income of KRW138.3 billion (a 35.2% operating margin), and owners' net income of KRW96.5 billion in 2023, revenue rose to KRW407.8 billion in 2024 even as the operating margin fell to 24.2%, pulling owners' net income down to KRW72.7 billion. In 2025, revenue declined 15% year over year to KRW346.5 billion and the operating margin narrowed further to 18.5%, with owners' net income plunging to KRW16.4 billion. On a quarterly basis, third-quarter 2025 revenue was KRW78.2 billion with operating income of KRW12.5 billion and owners' net income of KRW4.0 billion; the fourth quarter saw revenue rise to KRW109.1 billion and operating income improve to KRW26.5 billion, yet owners' net income swung to a loss of KRW5.0 billion. This divergence between an improving operating result and a net loss suggests non-operating or tax-related one-off items were at play. Moving into 2026, first-quarter revenue was KRW71.4 billion with operating income of KRW15.9 billion, while owners' net income of KRW17.2 billion exceeded operating income; the second quarter showed a similar pattern with revenue of KRW89.3 billion, operating income of KRW14.7 billion, and owners' net income of KRW13.9 billion again above operating income. This again points to favorable one-off items flowing into net income. Summed over the most recent four quarters (third quarter of 2025 through second quarter of 2026), owners' net income reached KRW30.1 billion, an improved trend relative to the full-year 2025 figure."
  },
  "industry": {
-  "ko": "중국 치과용 임플란트 시장은 정부 주도의 물량기반조달(VBP) 제도가 산업 구조를 근본적으로 바꿔놓았다. 2023년 시행된 1차 VBP는 임플란트 시술 총비용을 약 50% 낮췄고, 이는 가격에 민감했던 중장년·중소도시 환자층의 수요를 자극해 시장 볼륨 자체를 키우는 효과를 냈다. 그러나 가격 인하 폭이 예상보다 컸던 탓에 한국 기업들의 수익성은 오히려 훼손됐고, 스위스 스트라우만 등 글로벌 프리미엄 브랜드는 접근성 개선을 앞세워 오히려 점유율을 확대하는 역설적 결과가 나타났다. 이 기간 중국 로컬 브랜드도 저가 경쟁력을 앞세워 빠르게 시장을 잠식했으며, 2024년 신규 승인된 임플란트 의료기기 중 중국산 비중이 처음으로 80%를 넘어섰다는 코트라 조사 결과도 있다. 이런 구조 속에서 한국 기업은 프리미엄 브랜드와 중국 로컬 저가 브랜드 사이에서 포지셔닝 압박을 받고 있으며, 이에 대응해 국내 임플란트 기업들은 현지 생산 확대와 디지털 임플란트 등 고부가가치 솔루션 강화 전략을 병행하고 있다. 2026년 진행되는 2차 VBP는 추가 가격 인하와 물량 배정 방식이 동시에 관건으로 꼽히며, 업계에서는 1차 때만큼 가격 인하 폭이 크지 않을 것이라는 관측과 함께 물량 배정 기준이 더 중요해질 것이라는 시각이 나온다. 국내 시장에서는 건강보험 임플란트 급여 대상 확대 가능성이 거론되며 성장 여지가 있다는 평가도 있다.",
-  "en": "China's government-led Volume-Based Procurement (VBP) system has fundamentally reshaped the dental implant industry. The first VBP round implemented in 2023 cut total implant treatment costs by roughly 50%, expanding overall market volume by stimulating demand among price-sensitive middle-aged and lower-tier-city patients. However, because the price cuts were steeper than expected, profitability for Korean firms was undermined, while premium global brands such as Switzerland's Straumann paradoxically gained share as improved affordability broadened their customer base. During this period, Chinese local brands also rapidly gained ground through low-cost competitiveness, with a KOTRA survey finding that Chinese-made products accounted for over 80% of newly approved implant medical devices in 2024 for the first time. Within this structure, Korean companies face positioning pressure squeezed between premium brands and low-cost Chinese local brands, prompting domestic implant makers to expand local production and strengthen high-value-added digital implant solutions in response. The second VBP round underway in 2026 hinges on both further price cuts and volume allocation methodology, with industry views suggesting price cuts may be less severe than in the first round while volume allocation criteria become relatively more important. In the domestic market, there is some view that expanded health insurance coverage for implants could support growth potential."
+  "ko": "중국 치과 임플란트 시장은 정부 주도의 중앙집중구매(VBP) 정책이 산업 구조를 바꾸는 핵심 변수로 작용하고 있다. 2023~2025년 진행된 1차 VBP는 입찰을 통해 공급가를 낮추는 방식으로, 덴티움의 중국 내 공급가도 기존보다 17%가량 낮아진 것으로 알려졌다. 가격 인하로 단기 수익성에는 부담이 됐지만, 임플란트 대중화로 저변이 넓어지며 물량 확대 효과도 함께 나타나고 있다는 분석이 나온다. 2026년에는 쓰촨성을 중심으로 2차 VBP(2026~2028년) 준비가 진행되고 있으나, 전국 단위의 구체적 시행 시점과 추가 가격 인하 폭은 아직 확정되지 않은 상태다. 글로벌 임플란트 업체인 스트라우만, 덴츠플라이시로나 등은 중국 내 공급가가 국내 업체 대비 높은 수준으로, 가격 경�다력에서 국내 업체에 밀리는 구도가 이어지고 있다. 이런 환경에서 덴티움은 현지 생산 기반과 자체 제품 비중이 높은 구조를 바탕으로 원가 경쟁력을 유지하고 있으며, 국내에서는 오스템임플란트에 이어 2위 지위를 지키고 있다. 중국 외 지역에서는 베트남, 러시아, 태국 등 신흥시장에서 매출 성장이 이어지고 있어 중국 의존도를 완화하는 요인으로 거론된다.",
+  "en": "China's dental implant market is being reshaped by a government-led volume-based procurement (VBP) policy, which stands as a key structural variable for the industry. The first round of VBP, conducted from 2023 to 2025, lowered supplier prices through bidding, and Dentium's China supply price reportedly fell by roughly 17% from prior levels. While the price cuts pressured near-term profitability, some analysis points to an offsetting volume effect as implants become more affordable and accessible to a broader population. Preparation for a second round of VBP (2026-2028) is underway, centered on Sichuan province, but the nationwide implementation timing and the scale of any further price reductions have not yet been finalized. Global implant makers such as Straumann and Dentsply Sirona continue to supply China at higher price points than domestic Korean brands, sustaining a price-competitiveness gap that favors local suppliers. Against this backdrop, Dentium maintains cost competitiveness through its local manufacturing base and high self-manufactured product ratio, while holding the No. 2 domestic position behind Osstem Implant. Outside China, revenue growth in emerging markets such as Vietnam, Russia, and Thailand is cited as a factor helping to diversify away from China dependence."
  },
  "outlook": {
-  "ko": "가장 중요한 단기 변수는 중국 2차 VBP의 확정 결과다. 2026년 7월 세부 시행안이 공개된 데 이어 8월 중 최종 공급업체 선정 결과가 발표될 예정으로 알려져 있으며, 정책 확정 이후 그동안 대기했던 수요가 실제 주문으로 얼마나 전환되는지가 하반기 실적의 방향을 좌우할 전망이다. 회사는 상하이 인근 생산기지의 물량 확대를 통해 2차 VBP 입찰 경쟁력을 확보하겠다는 전략을 밝힌 바 있다. 주주환원 측면에서는 2025년 8월 결정된 보유 자사주 22.09% 전량 소각 계획이 원래 2026~2028년 균등 소각으로 예정됐으나 2026년 2~3월 두 차례에 걸쳐 조기에 완료됐으며, 회사는 소각 이후에도 배당 등 추가 주주환원 방안을 검토하겠다고 밝혔다. 지배구조 측면에서는 행동주의 펀드 얼라인파트너스와의 갈등이 이어지고 있어, 2026년 정기주총 표결의 적법성을 다투는 본안 소송 결과와 이사회 구성 변화 여부가 향후 경영 안정성에 영향을 줄 수 있는 변수로 남아있다. 신사업인 고체산화물연료전지(SOFC) 사업은 베트남 생산설비를 기반으로 2026년 하반기 매출 발생을 목표로 하고 있으나, 아직 구체적인 수주나 양산 실적은 확인되지 않고 있다. 종합적으로 회사의 단기 전망은 본업인 임플란트 사업의 중국 정책 리스크 해소 여부와 지배구조 리스크의 관리 여부라는 두 축에 좌우될 것으로 보인다.",
-  "en": "The most important near-term variable is the finalized outcome of China's second VBP round. Following the July 2026 unveiling of the detailed implementation framework, final supplier selection results are expected to be announced in August 2026, and how much pent-up demand converts into actual orders once the policy is confirmed will likely determine the direction of second-half results. The company has stated a strategy of expanding capacity at its Shanghai-area production base to strengthen its competitiveness in the second VBP tender. On shareholder returns, the plan announced in August 2025 to cancel the entire 22.09% treasury stake — originally scheduled for equal cancellation over 2026-2028 — was completed ahead of schedule in two tranches in February and March 2026, with the company stating it would consider additional shareholder return measures including dividends going forward. On governance, the ongoing dispute with activist fund Align Partners remains a factor, with the outcome of litigation contesting the validity of the 2026 AGM vote and any resulting changes to board composition representing variables that could affect management stability going forward. The new solid oxide fuel cell (SOFC) business, based on Vietnamese production facilities, targets revenue generation in the second half of 2026, though no concrete orders or mass-production results have yet been confirmed. Overall, the company's near-term outlook appears to hinge on two axes: resolution of China policy risk in its core implant business, and management of ongoing governance risk."
+  "ko": "회사는 중장기적으로 2030년 글로벌 상위 3위 임플란트 기업 도약을 목표로 제시하고 있으며, 중국을 포함한 신흥시장 확대와 디지털 통합 솔루션(bright CT, bright Implant 등) 라인업 강화를 병행하고 있다. 주주환원 측면에서는 2025년 8월 발표한 보유 자사주(22.09%)의 2026~2028년 3년 균등 소각 계획을 앞당겨, 2026년 2월과 3월 두 차례에 걸쳐 자사주를 전량 소각 완료했다. 회사는 자사주 소각 이후에도 배당 등 다양한 주주환원 방안을 추가로 검토하겠다는 입장을 밝힌 바 있다. 다만 행동주의 펀드 얼라인파트너스와의 갈등은 계속되고 있다. 얼라인은 2026년 3월 정기주주총회에서 감사위원 표 대결에서 근소한 차이로 패한 뒤 주주총회결의취소 소송과 사외이사 직무집행정지 가처분을 잇달아 제기했으나 가처분은 기각됐고, 2026년 9월에는 회계장부 열람·등사 가처분을 새롭게 신청해 세 번째 법적 조치에 나섰다. 이러한 지배구조 관련 소송은 경영 의사결정의 불확실성을 높이는 요인으로 지목된다. 한편 중국 2차 VBP의 구체적 시행 시점과 조건이 확정되면 하반기 이후 중국 매출 흐름에 직접적인 영향을 줄 것으로 예상된다.",
+  "en": "The company has set a medium-term target of becoming a top-three global implant maker by 2030, pursuing emerging-market expansion including China alongside a strengthened digital integrated solutions lineup such as bright CT and bright Implant. On shareholder returns, the equal three-year retirement plan for its treasury shares (22.09% of shares outstanding) announced in August 2025 was accelerated, with the full retirement completed in two tranches in February and March 2026. The company has stated it will consider additional shareholder-return measures, including dividends, following the retirement. However, the conflict with activist fund Align Partners continues. After narrowly losing an audit-committee-member vote at the March 2026 annual general meeting, Align filed a lawsuit to void the AGM resolution and an injunction to suspend the outside director, though the injunction was dismissed; in September 2026 Align filed a new injunction seeking to inspect the company's accounting books, marking a third legal action. Such governance-related litigation is cited as a factor raising uncertainty around management decision-making. Meanwhile, once the specific timing and terms of China's second-round VBP are finalized, they are expected to directly affect the trajectory of China revenue in the second half and beyond."
  },
  "valuation_comment": {
-  "ko": "덴티움의 주가는 주당순자산(69,805원) 대비 낮은 수준에서 거래되는 구간으로, 순자산가치 대비 할인된 상태에서 시장이 평가하고 있는 모습이다. 이익 측면에서는 2025년 지배주주 순이익이 큰 폭으로 줄었다가 2026년 상반기 들어 회복되는 흐름을 보이고 있어, 이 실적 개선 추세가 이어질지가 향후 밸류에이션 판단의 핵심 변수로 거론된다. 배당과 관련해서는 2025 회계연도 기준 주당 600원의 현금배당이 지급된 바 있으며, 회사는 자사주 소각 이후 추가적인 주주환원 방안을 검토하겠다는 입장을 밝힌 상태다. 자사주 22.09% 전량 소각이 2026년 상반기 중 완료되면서 발행주식수가 줄어든 점은 향후 주당 지표 산정 기준에 구조적 변화를 가져오는 요인으로, 이 변화가 재무비율 추이에 어떻게 반영되는지 지켜볼 필요가 있다. 결과적으로 현재 밸류에이션은 중국 2차 VBP의 결과와 지배구조 리스크 해소 여부라는 두 가지 불확실성이 해소되기 전 단계에서 형성되어 있다고 볼 수 있다.",
-  "en": "Dentium's share price trades at a level below its book value per share (KRW 69,805), reflecting a market assessment at a discount to net asset value. On the earnings side, owners' net profit fell sharply in 2025 before showing a recovery trend through the first half of 2026, and whether this improvement trend continues is cited as a key variable for future valuation assessment. Regarding dividends, a cash dividend of KRW 600 per share was paid for fiscal year 2025, and the company has stated it will consider additional shareholder return measures following the treasury share cancellation. The completion of the full 22.09% treasury share cancellation in the first half of 2026, which reduced shares outstanding, represents a structural change to the basis for per-share metrics going forward, and how this change is reflected in financial ratio trends bears watching. Overall, the current valuation appears to be forming ahead of the resolution of two key uncertainties: the outcome of China's second VBP round and the governance risk dispute."
+  "ko": "덴티움의 주가는 2023~2024년 실적 정점기에 형성됐던 거래 밴드보다 낮은 구간에서 움직이고 있으며, 순자산 대비로도 과거 평균 대비 할인된 수준에서 거래되는 편이다. 배당수익률은 업종 평균 대비 낮은 편으로, 회사가 최근 자사주 소각을 우선한 주주환원 정책을 펴온 점과 맞물려 있다. 2025년 순이익이 급감한 뒤 2026년 상반기 들어 순이익이 회복 흐름을 보이고 있다는 점은 밸류에이션 논의에서 주요 참고 요인이다. 삼성증권은 2026년 3월 리포트에서 중국 VBP 2.0 시행 시점을 2분기로 추정해 목표주가를 7만원으로 제시했으나, 이는 이후 시장 상황에 따라 갱신될 수 있는 시점의 추정치임을 감안해야 한다. 밸류에이션 수준에 대한 평가는 이익 회복의 지속성과 중국 정책 변수의 확정 여부에 따라 달라질 수 있다.",
+  "en": "Dentium's shares have traded below the range established during the 2023-2024 earnings peak, and the stock also trades at a discount to its historical average relative to net assets. The dividend yield runs below the sector average, consistent with the company's recent preference for treasury-share retirement over cash dividends as its primary shareholder-return tool. The recovery in net income seen in the first half of 2026, following the sharp 2025 decline, is a key reference point in valuation discussions. Samsung Securities, in a March 2026 report, estimated the timing of China's VBP 2.0 implementation for the second quarter and set a target price of KRW70,000, though this should be understood as a point-in-time estimate subject to revision as conditions evolve. Assessments of the valuation level are likely to hinge on the durability of the earnings recovery and on how China's policy variables are ultimately finalized."
  },
  "bull": [
   {
    "title": {
-    "ko": "이익 회복 흐름의 연속성",
-    "en": "Continuation of Earnings Recovery"
+    "ko": "중국 매출 반등 신호",
+    "en": "China Revenue Rebound Signal"
    },
    "body": {
-    "ko": "2026년 1분기와 2분기 모두 지배주주 순이익이 전년 동기 대비 큰 폭으로 늘며 2개 분기 연속 회복세를 보였다. 상반기 누계 기준으로도 영업이익과 순이익 증가율이 매출 증가율을 크게 앞서, 2025년의 일회성 비용 부담이 완화된 기저효과가 반영된 것으로 해석된다. 이 흐름이 하반기까지 이어질 경우 2025년 대비 연간 실적 개선이 가시화될 수 있다."
-   },
-   "en": {
-    "title": "Continuation of Earnings Recovery",
-    "body": "Owners' net profit rose sharply year-on-year in both Q1 and Q2 2026, marking two consecutive quarters of recovery. On a first-half cumulative basis, operating profit and net profit growth rates far outpaced revenue growth, interpreted as reflecting a base effect from the easing of one-off cost burdens seen in 2025. If this trend continues into the second half, full-year improvement versus 2025 could become visible."
+    "ko": "2026년 2분기 중국 매출은 전년 동기 대비 늘어 5개 분기 만에 반등에 성공했고, 전체 매출의 약 44.6%를 차지했다. 회사는 현지 생산 공장과 법인을 갖추고 있어 2차 VBP로 물량이 늘어날 경우 이를 뒷받침할 기반이 마련돼 있다. 중국 외 아시아·유럽 지역 매출도 견조한 성장을 이어가고 있어 지역 다변화 효과도 함께 나타나고 있다.",
+    "en": "Second-quarter 2026 China revenue rose year over year, rebounding for the first time in five quarters and accounting for roughly 44.6% of total revenue. The company's local manufacturing plant and subsidiary provide a base to support additional volume should the second round of VBP expand demand. Revenue in Asia outside China and in Europe has also continued to grow, adding a regional diversification effect."
    }
   },
   {
    "title": {
-    "ko": "주주환원 정책의 실행력",
-    "en": "Execution of Shareholder Return Policy"
+    "ko": "높은 자체 제조 비중과 원가 구조",
+    "en": "High Self-Manufacturing Ratio and Cost Structure"
    },
    "body": {
-    "ko": "2025년 8월 발표된 자사주 22.09% 전량 소각 계획이 당초 3개년 균등 소각에서 앞당겨져 2026년 2~3월 두 차례에 걸쳐 이미 완료됐다. 회사 측은 소각 이후 배당 등 추가 주주환원 방안을 검토하겠다는 입장을 밝힌 바 있다. 행동주의 펀드의 압박이 지속되고 있어 향후에도 주주환원 강화 압력이 유지될 가능성이 있다."
-   },
-   "en": {
-    "title": "Execution of Shareholder Return Policy",
-    "body": "The full cancellation of the 22.09% treasury stake announced in August 2025, originally planned as equal tranches over three years, was already completed in two rounds in February-March 2026 ahead of schedule. The company has stated it will consider additional shareholder return measures including dividends after the cancellation. Continued activist fund pressure suggests the drive for enhanced shareholder returns could persist."
+    "ko": "덴티움은 자체 제품 판매 비중이 92%에 달해 경쟁사 평균(60%대)보다 수직계열화 수준이 높다. 이는 원가 관리와 마진 방어에 유리한 구조로, 중국 VBP 가격 인하 국면에서도 상대적인 경쟁력을 유지하는 배경으로 지목된다. 자체 생산 기반은 향후 물량 확대 시 대응력도 뒷받침한다.",
+    "en": "Dentium's self-manufactured product ratio reaches 92%, a higher degree of vertical integration than the roughly 60% peer average. This structure supports cost control and margin defense, cited as a factor helping the company maintain relative competitiveness even amid China's VBP-driven price cuts. The in-house manufacturing base also supports responsiveness if volumes expand further."
    }
   },
   {
    "title": {
-    "ko": "글로벌 생산·유통망 기반의 경쟁력",
-    "en": "Competitiveness from Global Production and Distribution Network"
+    "ko": "주주환원 정책 강화",
+    "en": "Strengthened Shareholder Returns"
    },
    "body": {
-    "ko": "베트남·중국 현지 생산기지와 약 70개국에 이르는 유통망을 바탕으로 해외 매출 비중이 78%에 달하는 수출형 사업구조를 갖추고 있다. 상하이 인근 생산기지 확장을 통해 중국 2차 VBP 입찰에서 가격 경쟁력을 확보하려는 전략을 추진 중이며, 국내 임플란트 시장에서도 2위권 지위를 유지하고 있다."
-   },
-   "en": {
-    "title": "Competitiveness from Global Production and Distribution Network",
-    "body": "Built on production bases in Vietnam and China and a distribution network spanning roughly 70 countries, the company maintains an export-oriented business structure with overseas sales at 78% of revenue. It is pursuing capacity expansion at its Shanghai-area production base to secure price competitiveness in China's second VBP tender, while maintaining a second-place position in the domestic implant market."
+    "ko": "회사는 2025년 8월 발표한 자사주 소각 계획을 앞당겨 2026년 2월과 3월 두 차례에 걸쳐 보유 자사주 22.09%를 전량 소각했다. 회사는 소각 이후에도 배당 등 추가 주주환원 방안을 검토한다는 입장을 밝혔다. 이러한 조치는 발행주식 수 감소를 통해 주주가치 제고에 기여하는 요인으로 평가된다.",
+    "en": "The company accelerated its August 2025 treasury-share retirement plan, fully retiring 22.09% of outstanding shares in two tranches during February and March 2026. Management has indicated it will consider additional shareholder-return measures, including dividends, following the retirement. Such actions are viewed as contributing to shareholder value through a reduction in outstanding share count."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "중국 정책 불확실성 지속",
-    "en": "Persistent China Policy Uncertainty"
+    "ko": "중국 정책 불확실성",
+    "en": "China Policy Uncertainty"
    },
    "body": {
-    "ko": "중국 매출 비중이 2024년 기준 47.2%에 달해 정책 변화에 대한 민감도가 높다. 2차 VBP의 최종 물량 배정 및 가격 기준이 아직 확정되지 않은 상태로, 결과에 따라 단기 수익성 변동성이 커질 수 있다. 과거 1차 VBP 당시 예상보다 큰 가격 인하로 국내 기업 수익성이 훼손된 사례가 있어 반복 가능성을 배제할 수 없다."
-   },
-   "en": {
-    "title": "Persistent China Policy Uncertainty",
-    "body": "With China accounting for 47.2% of revenue as of 2024, the company shows high sensitivity to policy changes. Final volume allocation and pricing standards for the second VBP round have not yet been confirmed, and outcomes could increase short-term profitability volatility. There is precedent from the first VBP round, when steeper-than-expected price cuts damaged the profitability of Korean firms, and this cannot be ruled out from recurring."
+    "ko": "중국 2차 VBP의 전국 단위 시행 시점과 가격 인하 폭이 아직 확정되지 않아 실적 예측의 불확실성이 큰 상태다. 쓰촨성을 중심으로 준비가 진행되고 있으나 민영 병원 확대 여부 등 세부 규칙에 따라 수요 공백이 재현될 가능성도 배제할 수 없다. 매출의 40%대 중반을 중국에 의존하는 구조상 정책 변화의 영향이 즉각적으로 실적에 반영된다.",
+    "en": "The nationwide implementation timing and price-cut magnitude of China's second-round VBP remain unconfirmed, creating significant uncertainty for earnings forecasts. While preparations are underway centered on Sichuan province, the possibility of a renewed demand gap cannot be ruled out depending on details such as whether private hospitals are included. With roughly the mid-40% range of revenue dependent on China, policy shifts translate directly and quickly into earnings impact."
    }
   },
   {
    "title": {
-    "ko": "지배구조 갈등의 장기화",
-    "en": "Prolonged Governance Dispute"
+    "ko": "행동주의 펀드와의 지배구조 분쟁",
+    "en": "Governance Dispute With Activist Fund"
    },
    "body": {
-    "ko": "행동주의 펀드 얼라인파트너스와의 갈등이 이사회 의사록 열람 청구, 주총 위임장 관련 증거보전 소송 등으로 확대되며 장기화되는 양상이다. 자사주 전량 소각으로 경영권 방어 수단이 소진된 가운데 표 대결이 반복될 경우 경영 불확실성이 지속될 수 있다. 창업주 관계사와의 내부거래 규모도 지적 대상이 되고 있다."
-   },
-   "en": {
-    "title": "Prolonged Governance Dispute",
-    "body": "The conflict with activist fund Align Partners has escalated into board minutes disclosure requests and litigation over AGM proxy validity, showing signs of prolonging. With the full treasury share cancellation having exhausted takeover-defense buffers, repeated proxy fights could sustain management uncertainty. The scale of related-party transactions with the founder's affiliate has also drawn criticism."
+    "ko": "얼라인파트너스는 2026년 3월 정기주주총회 이후 결의취소 소송, 사외이사 직무정지 가처분에 이어 2026년 9월에는 회계장부 열람·등사 가처분을 새로 신청하며 세 번째 법적 조치에 나섰다. 최대주주 관계사와의 내부거래, 특수관계자 거래 공시 오류 등도 쟁점으로 지적된 바 있다. 이러한 법적 분쟁은 경영 의사결정의 불확실성을 높이는 요인으로 지목된다.",
+    "en": "Following the March 2026 annual general meeting, Align Partners pursued a lawsuit to void the resolution and an injunction to suspend an outside director, and in September 2026 filed a new injunction to inspect the company's accounting books, marking a third legal action. Related-party transactions with entities tied to the controlling shareholder and errors in disclosed related-party transaction figures have also been raised as points of contention. Such litigation is cited as a factor increasing uncertainty around management decision-making."
    }
   },
   {
    "title": {
-    "ko": "이익 변동성 확대",
-    "en": "Increased Earnings Volatility"
+    "ko": "실적 변동성 확대",
+    "en": "Widening Earnings Volatility"
    },
    "body": {
-    "ko": "2025년 4분기에는 영업이익 흑자에도 지배주주 순이익이 적자로 전환되는 등 영업외 요인에 따른 분기별 이익 변동성이 확대되고 있다. 2026년 1분기 역시 순이익이 영업이익을 웃도는 이례적 결과가 나타나, 실적의 질적 지속가능성을 판단하기 위해서는 영업외 손익 구성에 대한 추가 확인이 필요하다."
-   },
-   "en": {
-    "title": "Increased Earnings Volatility",
-    "body": "Quarterly earnings volatility linked to non-operating items has widened, as seen in Q4 2025 when owners' net profit turned negative despite positive operating profit. Q1 2026 also showed an unusual pattern of net profit exceeding operating profit, suggesting further clarification on the composition of non-operating gains and losses is needed to assess the qualitative sustainability of results."
+    "ko": "2025년 4분기에는 영업이익이 265억 원으로 개선됐음에도 지배주주 순이익은 49억 원 손실로 전환됐고, 반대로 2026년 1·2분기에는 순이익이 영업이익을 웃돌며 일회성 요인의 영향이 반복적으로 나타나고 있다. 2025년 연간 순이익은 전년 대비 크게 줄었고, 영업이익률도 2023년 35% 수준에서 2025년 18.5%까지 낮아졌다. 이러한 변동성은 실적 흐름을 예측하기 어렵게 만드는 요인이다.",
+    "en": "In the fourth quarter of 2025, operating income improved to KRW26.5 billion, yet owners' net income swung to a loss of KRW5.0 billion; conversely, in the first and second quarters of 2026 net income exceeded operating income, showing recurring one-off effects. Full-year 2025 net income fell sharply from the prior year, and the operating margin narrowed from roughly 35% in 2023 to 18.5% in 2025. This volatility makes the earnings trajectory difficult to predict."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "정책 리스크",
-    "en": "Policy Risk"
+    "ko": "규제 리스크",
+    "en": "Regulatory Risk"
    },
    "body": {
-    "ko": "중국 2차 VBP의 세부 룰과 물량 배정 기준이 최종 확정되지 않아 가격 및 물량 측면의 불확실성이 남아 있다. 정책이 민영 병원까지 확대 적용될 경우 추가적인 수요 공백이 발생할 가능성도 거론된다. 정책 확정 시점이 지연될 경우 대기 수요로 인한 실적 변동성이 재차 나타날 수 있다."
-   },
-   "en": {
-    "body": "Detailed rules and volume allocation criteria for China's second VBP round have not been finalized, leaving pricing and volume uncertainty. There is also discussion of potential additional demand gaps if the policy is extended to private hospitals. If the policy finalization timeline is delayed, earnings volatility from pent-up demand could reappear."
+    "ko": "중국 2차 VBP의 세부 규칙, 특히 가격 인하 폭과 민영 병원 포함 여부가 확정되지 않은 상태다. 규제가 예상보다 강화될 경우 판매가 추가 하락과 수요 공백이 동시에 발생할 수 있다. 이는 중국 매출 비중이 높은 덴티움에 직접적인 수익성 영향을 줄 수 있다.",
+    "en": "The detailed rules of China's second-round VBP, particularly the scale of price cuts and whether private hospitals will be included, have not been finalized. If regulation tightens more than expected, further price declines and a demand gap could occur simultaneously, directly affecting profitability given Dentium's high China revenue exposure."
    }
   },
   {
    "cat": {
-    "ko": "지배구조 리스크",
-    "en": "Governance Risk"
+    "ko": "지배구조·법적 리스크",
+    "en": "Governance and Legal Risk"
    },
    "body": {
-    "ko": "행동주의 펀드와의 소송이 정기주총 결의의 적법성을 다투는 본안 소송으로 이어질 가능성이 있으며, 결과에 따라 이사회 구성이나 경영진 보수 한도 등 주요 의사결정의 효력이 재검토될 수 있다. 창업주 관계사와의 내부거래 구조도 지속적인 감시 대상이다."
-   },
-   "en": {
-    "body": "Litigation with the activist fund could develop into a full case challenging the legality of AGM resolutions, and depending on the outcome, key decisions such as board composition or executive compensation limits could be subject to review. The related-party transaction structure with the founder's affiliate also remains under ongoing scrutiny."
+    "ko": "행동주의 펀드 얼라인파트너스와의 법적 분쟁이 주주총회 결의취소 소송, 사외이사 직무정지 가처분, 회계장부 열람 가처분 등으로 확대되고 있다. 최대주주 관계사와의 내부거래 관련 공시 오류도 과거 지적된 바 있어, 소송 진행 상황이 경영 안정성에 영향을 줄 수 있다.",
+    "en": "Legal disputes with activist fund Align Partners have expanded to include a lawsuit to void an AGM resolution, an injunction to suspend an outside director, and an injunction to inspect accounting books. Past disclosure errors related to transactions with entities tied to the controlling shareholder have also been flagged, and the progress of litigation could affect management stability."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화 리스크",
-    "en": "Competitive Intensity Risk"
+    "ko": "매출채권·환율 리스크",
+    "en": "Receivables and Foreign Exchange Risk"
    },
    "body": {
-    "ko": "중국 시장에서 프리미엄 브랜드는 가격 현실화로 접근성을 넓히고, 중국 로컬 브랜드는 저가 경쟁력으로 빠르게 점유율을 확대하고 있어 한국 기업의 중간 포지션이 좁아지는 구조적 압박이 지속되고 있다. 신규 승인 임플란트 의료기기 중 중국산 비중이 80%를 넘어섰다는 조사 결과도 있어 장기적인 경쟁 구도 변화에 유의할 필요가 있다."
-   },
-   "en": {
-    "body": "In the China market, premium brands have broadened accessibility through price realignment while Chinese local brands rapidly expand share through low-cost competitiveness, creating structural pressure that narrows the mid-tier position of Korean firms. A survey finding that Chinese-made products exceed 80% of newly approved implant devices underscores the need to watch long-term competitive shifts."
+    "ko": "해외 매출 비중이 높은 구조상 위안화 등 주요국 환율 변동이 실적에 영향을 줄 수 있다. 과거 중국 업황 부진 시기에는 매출채권 회수 관련 대손상각비가 늘어난 사례도 있어, 현지 경기 둔화가 재현될 경우 유사한 부담이 발생할 수 있다.",
+    "en": "Given the high proportion of overseas revenue, fluctuations in the Chinese yuan and other major currencies can affect results. During past periods of weak China business conditions, bad-debt expenses related to receivables collection increased, and a similar burden could recur if local economic conditions weaken again."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중",
-    "en": "August 2026"
+    "ko": "2026년 9월 이후",
+    "en": "After September 2026"
    },
    "what": {
-    "ko": "중국 2차 VBP 최종 공급업체 선정 결과 발표 여부와 덴티움의 배정 물량·가격 수준을 확인해야 한다.",
-    "en": "Check whether China's second VBP final supplier selection results are announced, and Dentium's allocated volume and pricing level."
+    "ko": "얼라인파트너스가 제기한 회계장부 열람·등사 가처분(수원지방법원 2026카합10487)의 심리 및 결정 결과를 확인해야 한다. 결과에 따라 내부거래 관련 정보 공개 범위와 지배구조 리스크의 향방이 달라질 수 있다.",
+    "en": "The hearing and outcome of the accounting books inspection injunction filed by Align Partners (Suwon District Court case 2026Kahap10487) should be monitored. The result could shape the scope of related-party transaction disclosure and the trajectory of governance risk."
    }
   },
   {
    "when": {
-    "ko": "2026년 3분기 실적 발표 시점",
-    "en": "Q3 2026 earnings release"
+    "ko": "2026년 3분기 실적 공시 시점(통상 11월 중)",
+    "en": "Third-quarter 2026 earnings disclosure (typically around November)"
    },
    "what": {
-    "ko": "2차 VBP 확정 이후 대기 수요가 실제 주문으로 전환되는지, 중국 매출과 영업이익률 회복 폭을 확인해야 한다.",
-    "en": "Check whether pent-up demand converts into actual orders after VBP finalization, and the extent of China revenue and margin recovery."
+    "ko": "3분기 중국 매출 반등이 이어지는지, 그리고 2분기까지 나타난 순이익-영업이익 간 괴리가 재현되는지를 확인해야 한다.",
+    "en": "Check whether the China revenue rebound continues into the third quarter, and whether the net income-operating income divergence seen through the second quarter recurs."
    }
   },
   {
    "when": {
-    "ko": "향후 공시 예정",
-    "en": "Upcoming disclosures"
+    "ko": "중국 2차 VBP 전국 시행 세부안 발표 시점",
+    "en": "When China's nationwide VBP 2.0 details are announced"
    },
    "what": {
-    "ko": "얼라인파트너스와의 정기주총 결의 적법성 관련 본안 소송 진행 상황과 이사회 구성 변화 여부를 확인해야 한다.",
-    "en": "Monitor the progress of litigation with Align Partners over AGM resolution validity and any resulting changes in board composition."
+    "ko": "쓰촨성 등 지역별 준비 이후 전국 단위 시행 시점과 가격 인하 폭이 구체화되는지 확인해야 한다. 이는 하반기 중국 매출과 마진 흐름을 좌우하는 핵심 변수다.",
+    "en": "Following regional preparations such as in Sichuan, watch for confirmation of the nationwide implementation timing and price-cut scale. This is the key variable shaping China revenue and margin trends in the second half."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "Second half of 2026"
+    "ko": "2026~2028년 자사주 소각 잔여 일정 진행 시점",
+    "en": "During the remaining 2026-2028 treasury share retirement schedule"
    },
    "what": {
-    "ko": "고체산화물연료전지(SOFC) 신사업의 매출 발생 여부와 규모를 확인해야 한다.",
-    "en": "Check whether and to what extent the new solid oxide fuel cell (SOFC) business begins generating revenue."
+    "ko": "당초 3년 균등 소각 계획이 앞당겨 완료됐으므로, 추가 주주환원(배당 확대 등) 방안이 구체화되는지 확인해야 한다.",
+    "en": "Since the original three-year equal retirement plan was completed ahead of schedule, watch for whether additional shareholder-return measures, such as expanded dividends, are formalized."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "덴티움은 2025년 중국 수요 위축과 정책 불확실성으로 실적이 크게 위축된 이후, 2026년 상반기 들어 순이익 중심의 회복 조짐을 보이고 있다. 다만 이 회복이 2025년 일회성 비용 완화에 따른 기저효과인지, 구조적인 개선인지는 2차 VBP 확정 이후 하반기 실적을 통해 좀 더 명확해질 것으로 보인다. 동시에 행동주의 펀드 얼라인파트너스와의 지배구조 갈등, 자사주 전량 소각에 따른 경영권 완충 소진, 관계사 내부거래 관련 감시 이슈 등은 실적 외적인 불확실성 요인으로 남아있다. 자사주 소각과 향후 주주환원 검토 방침은 재무구조 측면의 긍정적 변화로 평가될 수 있으나, 소송 결과나 이사회 구성 변화에 따라 경영 안정성이 영향을 받을 가능성도 배제할 수 없다. 결과적으로 회사의 향후 경로는 중국 정책 리스크의 해소 속도와 지배구조 이슈의 정리 여부라는 두 축에 크게 좌우될 것으로 판단된다. 투자자는 8월 중 예정된 2차 VBP 결과와 이어지는 분기 실적, 그리고 소송·주총 관련 공시를 함께 주시할 필요가 있다.",
-   "en": "Following a sharp earnings contraction in 2025 driven by weak China demand and policy uncertainty, Dentium has shown signs of net-profit-led recovery in the first half of 2026. Whether this recovery reflects a base effect from the easing of 2025's one-off costs or a more structural improvement should become clearer through second-half results following the finalization of the second VBP round. At the same time, the governance dispute with activist fund Align Partners, the depletion of takeover-defense buffers following the full treasury share cancellation, and scrutiny over related-party transactions remain sources of uncertainty beyond the core business. While the treasury cancellation and stated intent to review further shareholder returns can be viewed as a positive shift in financial structure, the possibility that litigation outcomes or board composition changes could affect management stability cannot be ruled out. Ultimately, the company's path forward appears to hinge heavily on two axes: the pace of resolution of China policy risk and the settlement of governance issues. Investors should watch the second VBP results expected in August, subsequent quarterly earnings, and disclosures related to litigation and the AGM."
+   "ko": "덴티움은 2023년 실적 정점 이후 중국 VBP 1차 시행과 내수 부진의 영향으로 2025년까지 매출과 이익이 뚜렷하게 축소되는 국면을 지나왔다. 2026년 상반기에는 중국 매출이 5개 분기 만에 반등하고 순이익이 영업이익을 웃도는 흐름이 나타나며 회복 신호가 감지되지만, 영업이익과 순이익 간 괴리가 반복되는 점은 일회성 요인의 영향을 시사해 추세적 해석에는 주의가 필요하다. 회사는 자사주 전량 소각을 통해 주주환원 의지를 보였으나, 행동주의 펀드 얼라인파트너스와의 법적 분쟁이 회계장부 열람 가처분으로까지 확대되며 지배구조 불확실성이 이어지고 있다. 중국 2차 VBP의 구체적 시행 시점과 조건이 아직 확정되지 않은 만큼, 하반기 실적의 방향성은 정책 변수와 소송 결과에 크게 영향을 받을 것으로 보인다. 투자자는 다가오는 3분기 실적과 중국 정책 발표, 그리고 얼라인 관련 소송 진행 상황을 함께 살펴볼 필요가 있다.",
+   "en": "Dentium has moved through a period of clearly contracting revenue and earnings from the 2023 peak through 2025, driven by the first round of China's VBP policy and weak domestic demand. In the first half of 2026, China revenue rebounded after five quarters of decline and net income exceeded operating income, signaling a possible recovery, though the recurring gap between operating income and net income points to one-off items and warrants caution in reading a clear trend. The company has demonstrated a commitment to shareholder returns through the full retirement of treasury shares, but governance uncertainty continues as its legal dispute with activist fund Align Partners has expanded to include an injunction to inspect accounting books. With the specific timing and terms of China's second-round VBP still unconfirmed, the direction of second-half earnings is likely to be heavily influenced by both this policy variable and the outcome of ongoing litigation. Investors may wish to monitor the upcoming third-quarter results, China policy announcements, and the progress of the Align Partners litigation together."
   }
  },
  "sources": [
-  "https://kormedi.com/2845174/",
-  "https://www.dentalnews.or.kr/news/article.html?no=47942",
-  "https://www.rapportian.com/news/articleView.html?idxno=239295",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=145720",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A145720",
-  "https://www.dttoday.com/news/articleView.html?idxno=97025",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Consensus.asp?pGB=1&gicode=A145720&cID=&MenuYn=Y&ReportGB=&NewMenuID=108&stkGb=701",
-  "https://www.investing.com/equities/dentium-earnings",
-  "https://buffettlab.co.kr/news/view.php?idx=52252",
-  "https://www.newspim.com/news/view/20260813001101",
-  "http://sateconomy.co.kr/news/view/1065586089980472",
-  "https://www.businesspost.co.kr/BP?command=article_view&num=381923",
+  "https://www.businesspost.co.kr/BP?command=article_view&num=394367",
+  "https://www.hankyung.com/article/202608140965i",
+  "https://pharm.edaily.co.kr/news/read?newsId=01617046635775872",
+  "https://www.dailydental.co.kr/news/article.html?no=138102",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/ZVoxSVF0ZEE0ZHA2V3VESkdwNFRkdz09/company_nm/(%EC%A3%BC)%EB%8D%B4%ED%8B%B0%EC%9B%80",
+  "https://bbn.kiwoom.com/rfCR11714",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20240516001363&docno=&viewerhost=",
   "https://www.businesspost.co.kr/BP?command=article_view&num=444707",
-  "https://www.sedaily.com/article/20056423",
-  "https://pharm.edaily.co.kr/news/read?newsId=01466166635543320",
-  "https://www.mydailybyte.com/post/%EC%9E%84%ED%94%8C%EB%9E%80%ED%8A%B8-2507",
-  "https://www.businesspost.co.kr/BP?command=article_view&num=398081",
-  "https://mpharm.edaily.co.kr/news/read?newsId=01466166635543320&mediaCodeNo=257"
+  "https://m.jobkorea.co.kr/company/1646893/Analysis/View?News_No=21622",
+  "https://marketin.edaily.co.kr/News/ReadE?newsId=02417366642403768",
+  "https://www.investing.com/equities/dentium",
+  "https://buffettlab.co.kr/news/view.php?idx=52252",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=70216",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=CtGbTfawlmkSnij2",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=145720",
+  "https://insight.goover.ai/report/202605/go-public-report-ko-72d92cfb-5c7b-49f9-bd06-e20c1611c74c-0-0.html",
+  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=145720",
+  "https://www.greened.kr/news/articleView.html?idxno=339290"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -247,9 +223,9 @@
   "바이오·제약"
  ],
  "market": "코스피",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 06:36",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -348,14 +324,14 @@
    }
   ],
   "valuation": {
-   "price": 36350,
-   "mcap": 0.3135,
+   "price": 37550,
+   "mcap": 0.3238,
    "shares": 8623891,
    "total_shares": 8623891,
    "wavg_shares": 8539341,
-   "per": 10.3,
+   "per": 10.64,
    "eps": 3529,
-   "pbr": 0.52,
+   "pbr": 0.5379,
    "bps": 69805,
    "roe_ttm": 5.3,
    "ttm_window": "2025Q3~2026Q2",
@@ -364,7 +340,7 @@
    "bps_krx": 65218.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 600.0,
-   "div": 1.65
+   "div": 1.6
   }
  }
 }

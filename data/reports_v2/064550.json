@@ -1,138 +1,147 @@
 {
  "title": {
-  "ko": "매출은 최대치, 수익성은 재차 흔들",
-  "en": "Record Revenue, Shaky Profitability Again"
+  "ko": "흑자전환은 비에날씬, 본업 진단은 적자",
+  "en": "Profit Turn Led by Probiotics, Core Diagnostics Still Lossy"
  },
  "lead": {
-  "ko": "바이오니아는 2026년 2분기 매출이 분기 기준 사상 최대치를 기록했지만 순이익은 다시 적자로 전환되면서, 2025년에 어렵게 되찾은 흑자 기조가 아직 안정적으로 자리잡지 못한 모습을 보이고 있다.",
-  "en": "Bioneer posted its highest-ever quarterly revenue in the second quarter of 2026, yet net profit swung back into the red, suggesting the profitability recovery achieved in 2025 has not yet become firmly established."
+  "ko": "2025년 연결 영업이익이 흑자로 전환했지만 이는 자회사 프로바이오틱스 사업 호조에 힘입은 결과이며, 본업인 분자진단 부문은 구조적 적자와 화장품 규제 리스크에 여전히 노출돼 있다.",
+  "en": "Consolidated operating profit turned positive in 2025, but the swing was driven almost entirely by the probiotics subsidiary, while the core molecular-diagnostics business remains in structural loss and exposed to cosmetics-regulation risk."
  },
  "keypoints": [
   {
-   "ko": "2026년 2분기 매출 961억원으로 분기 최대치를 경신했으나 영업이익은 11.8억원, 순이익은 지배주주 기준 11.0억원 적자를 기록했다.",
-   "en": "Q2 2026 revenue hit a record 96.15 billion won, but operating profit was only 1.18 billion won and net profit attributable to owners posted a 1.10 billion won loss."
+   "ko": "2025년 매출 3,301억원(+12.3%), 영업이익 152억원으로 흑자전환했으나 지배주주 순이익은 -28억원으로 4년 연속 적자.",
+   "en": "2025 revenue rose 12.3% to KRW 330.1bn and operating profit turned positive at KRW 15.2bn, but net income attributable to owners stayed negative at -KRW 2.8bn, a fourth straight loss year."
   },
   {
-   "ko": "2025년 연간 기준으로는 매출 3,301억원, 영업이익 152억원(영업이익률 4.6%)으로 2년 만에 영업흑자와 순이익 흑자를 동시에 회복했다.",
-   "en": "For full-year 2025, the company recovered both operating profit (15.2 billion won, 4.6% margin) and net profit for the first time in two years, on revenue of 330.1 billion won."
+   "ko": "최근 4개 분기(2025Q3~2026Q2) 지배주주 순손실 합계 약 -66.7억원, 분기 손익은 흑자·적자를 오가는 변동성 지속.",
+   "en": "Over the trailing four quarters (2025Q3-2026Q2), owners' net loss totaled roughly -KRW 6.7bn, with quarterly operating results swinging between profit and loss."
   },
   {
-   "ko": "자회사 써나젠테라퓨틱스의 siRNA 신약 후보 SRN-001이 특발성 폐섬유증 국내 임상 1b상을 진행 중이며, 섬유화 외 비만·암으로 적응증 확장을 모색하고 있다.",
-   "en": "Subsidiary Sernagen Therapeutics' siRNA drug candidate SRN-001 is in domestic Phase 1b trials for idiopathic pulmonary fibrosis, with the company exploring expansion into obesity and cancer indications."
+   "ko": "분자진단 부문은 연 약 200억원대 구조적 적자로 파악되며, 회사는 2026년 신규 플랫폼 매출 개시와 2027년 진단부문 흑자전환을 목표로 제시.",
+   "en": "The diagnostics segment reportedly runs a structural loss of roughly KRW 20bn a year, with the company targeting new-platform sales in 2026 and a diagnostics turnaround in 2027."
   },
   {
-   "ko": "분자진단 부문은 HIV·HBV·HCV 정량진단 라인업에 대해 유럽 최고등급 체외진단 인증(CE-IVDR)을 확보하며 글로벌 공공조달 시장 진입을 준비하고 있다.",
-   "en": "The molecular diagnostics unit secured Europe's highest-tier in vitro diagnostics certification (CE-IVDR) for its HIV, HBV and HCV quantitative test lineup, positioning it for entry into global public-procurement markets."
+   "ko": "RNA 탈모완화 화장품 '코스메르나'는 국내 식약처 인허가에서 반복 반려·소송 패소, 2026년 재도전한 이의신청도 기각돼 일반화장품·해외 우선 전략으로 선회.",
+   "en": "The siRNA hair-loss cosmetic CosmeRNA has repeatedly been rejected by Korea's MFDS and lost in court; a 2026 re-appeal was also dismissed, prompting a pivot to general-cosmetic status and an overseas-first strategy."
   },
   {
-   "ko": "자회사 에이스바이옴의 체지방 감소 유산균 '비에날씬'이 시장 경쟁 심화 속에서도 점유율 우위를 유지하며 연결 매출 성장을 견인하고 있다.",
-   "en": "Subsidiary ACEbiome's body-fat-reduction probiotic brand BNRThin has continued to lead consolidated revenue growth while maintaining a leading market position amid intensifying competition."
+   "ko": "유럽에서는 HIV-1에 이어 HBV·HCV 정량진단키트까지 CE-IVDR 최고위험군(Class D) 인증을 획득해 병원·공공조달 시장 진입 기반을 넓혔다.",
+   "en": "In Europe, the company has secured Class D CE-IVDR certification—the highest risk category—for HIV-1 and now HBV/HCV quantitative kits, broadening its access to hospital and public-tender markets."
   }
  ],
  "business": {
-  "ko": "바이오니아는 1992년 한국생명공학연구원 제1호 연구원 창업기업으로 설립돼 2005년 코스닥에 상장한 유전공학 전문기업이다. 사업구조는 생명과학 연구용 장비·시약, 분자진단, 합성생물학 등 바이오헬스케어 전반을 아우른다. 분자진단 부문은 자동화 분자진단 시스템 ExiStation FA 96과 현장형 신속진단 장비 IRON-qPCR을 주력 제품으로 하며, HIV·HBV·HCV 등 감염병 정량진단 키트를 전 세계에 공급한다. 신약 부문은 siRNA 기반 SAMiRNA 플랫폼을 축으로 하며, 자회사 써나젠테라퓨틱스가 특발성 폐섬유증 치료 후보물질 SRN-001을 개발 중이다. 건강기능식품 부문은 자회사 에이스바이옴이 담당하며, 체지방 감소 기능성 유산균 '비에날씬'과 'BNR17' 균주 기반 제품이 주력이다. 2025년 2분기 기준 에이스바이옴은 창립 이래 최대 분기 매출을 기록하며 연결 매출 성장을 이끈 바 있고, 비에날씬은 다수의 경쟁 제품이 출시되는 환경 속에서도 시장 1위 점유율을 유지해왔다. 분자진단사업부는 약 200억원 규모의 설비 투자를 진행했으며, 프로바이오틱스 사업의 성장이 이를 뒷받침하는 구조다. 경쟁구도 측면에서는 씨젠, 랩지노믹스, 진매트릭스, 엑세스바이오 등 국내 분자진단·체외진단 업체들과 시장을 나누고 있으며, 감염병 이슈가 부각될 때마다 진단 관련주 전반이 동반 반응하는 섹터 특성을 보인다.",
-  "en": "Bioneer was established in 1992 as the first researcher-founded venture from the Korea Research Institute of Bioscience and Biotechnology and listed on KOSDAQ in 2005 as a genetic engineering specialist. Its business spans life-science research equipment and reagents, molecular diagnostics, and synthetic biology across the broader bio-healthcare sector. The molecular diagnostics unit's flagship products are the automated ExiStation FA 96 system and the point-of-care IRON-qPCR device, supplying quantitative infectious-disease test kits for HIV, HBV and HCV globally. The drug development arm centers on the siRNA-based SAMiRNA platform, with subsidiary Sernagen Therapeutics developing the idiopathic pulmonary fibrosis candidate SRN-001. The health functional food segment is run through subsidiary ACEbiome, whose flagship products include the body-fat-reduction probiotic BNRThin and BNR17-strain-based products. As of the second quarter of 2025, ACEbiome posted its highest-ever quarterly revenue, driving consolidated revenue growth, while BNRThin has maintained the top market share position despite a wave of competing products entering the category. The molecular diagnostics division carried out roughly 20 billion won in equipment investment, a build-out partly supported by growth in the probiotics business. On the competitive front, the company shares the domestic molecular and in-vitro diagnostics market with players such as Seegene, LabGenomics, Genematrix and Access Bio, and diagnostics-related stocks tend to move together whenever infectious-disease headlines emerge."
+  "ko": "바이오니아는 생명과학 연구용 시약·장비, 분자진단, RNA 신약·화장품, 프로바이오틱스 등 네 개 축으로 구성된 유전자 기술 기반 바이오헬스케어 기업이다. 창업 초기 PCR·프라이머 등 분자생물학 소모품 국산화로 시작한 연구용 시약·장비 사업이 뿌리이며, 이를 토대로 자체 분자진단 플랫폼 ExiStation 시리즈와 실시간 PCR 장비 ExiCycler, 각종 감염병 진단키트를 생산하는 분자진단 부문으로 확장했다. 그러나 실제 연결 손익을 좌우하는 것은 자회사 에이스바이옴이 판매하는 체지방 감소 기능성 유산균 '비에날씬(BNR17)'이다. 관련 분석에 따르면 바이오니아는 유전자·분자진단 기반 기업이지만 실제 손익은 에이스바이옴의 비에날씬이 좌우하며, 2025년에는 프로바이오틱스 부문 매출이 매출 3,070억원(전체의 93%)·영업이익 347억원으로 연결 실적을 견인한 반면 본업인 연구·분자진단 부문은 매출 360억원에 영업손실 217억원을 낸 것으로 파악된다. 매출 10% 이상을 차지하는 상위 고객 4곳이 모두 홈쇼핑·유통업체(현대홈쇼핑, GS리테일, CJ ENM, 홈앤쇼핑)로 집계되며, 이들 합산 매출이 전체의 절반을 넘어서는 등 비에날씬·홈쇼핑 채널 의존도가 높다. 분자진단 부문은 유럽 체외진단의료기기 규정(CE-IVDR)에서 HIV-1에 이어 B형·C형간염바이러스(HBV·HCV) 정량진단키트까지 최고위험군인 Class D 인증을 획득해 유럽 병원·국제 공공조달 시장 공략 기반을 갖췄다. RNA 신약·화장품 축에서는 짧은간섭RNA(siRNA) 기반 탈모완화 화장품 '코스메르나'와 RNAi 신약 파이프라인 개발을 병행하고 있으며, 이 부문은 정부과제·라이선스 매출로 소규모 이익을 내는 구조다. 코스메르나는 국내에서는 식품의약품안전처의 반복된 반려와 행정소송 패소로 기능성화장품 인허가가 막혀 일반화장품·해외 우선 출시로 전략을 선회했으며, 경쟁구도상 분자진단에서는 씨젠·SD바이오센서 등 국내 진단기업들과, 프로바이오틱스에서는 다수의 홈쇼핑 유산균 브랜드들과 경쟁한다.",
+  "en": "Bioneer is a gene-technology-based biohealthcare company built on four pillars: life-science research reagents and equipment, molecular diagnostics, RNA-based drugs and cosmetics, and probiotics. The company's roots lie in localizing PCR and primer consumables, and it later expanded into molecular diagnostics with its own ExiStation platform, the ExiCycler real-time PCR instrument, and a range of infectious-disease diagnostic kits. However, the group's actual consolidated earnings are driven by its subsidiary ACE Biome, which sells the body-fat-reducing probiotic BNRThin (BNR17). According to industry analysis, although Bioneer is positioned as a gene and molecular-diagnostics company, its earnings are actually determined by ACE Biome's BNRThin, and in 2025 the probiotics segment generated revenue of KRW 307bn (93% of the total) and operating profit of KRW 34.7bn, while the core research and molecular-diagnostics segment posted revenue of KRW 36bn against an operating loss of KRW 21.7bn. The top four customers, each accounting for more than 10% of sales, are all home-shopping and retail channels (Hyundai Home Shopping, GS Retail, CJ ENM, and Home&Shopping), together making up more than half of total revenue, underscoring heavy reliance on BNRThin and the home-shopping channel. In molecular diagnostics, the company has secured Class D CE-IVDR certification—Europe's highest risk category—for its HIV-1 and now HBV/HCV quantitative kits, positioning it for European hospital and international public-tender markets. On the RNA drug and cosmetics side, it develops the siRNA-based hair-loss cosmetic CosmeRNA alongside an RNAi drug pipeline, a segment that generates modest profit mainly from government projects and licensing revenue. CosmeRNA's functional-cosmetic approval has repeatedly been rejected by Korea's Ministry of Food and Drug Safety and lost in administrative litigation, prompting a pivot toward general-cosmetic status domestically and an overseas-first launch strategy, while competitively the company faces Seegene and SD Biosensor in diagnostics and numerous home-shopping probiotic brands in the probiotics category."
  },
  "earnings": {
-  "ko": "바이오니아의 연간 실적은 뚜렷한 등락을 보여왔다. 2022년 매출 2,184억원, 영업이익 115억원(영업이익률 5.3%), 지배주주순이익 121억원으로 양호한 흐름을 보였으나, 2023년에는 매출이 2,632억원으로 늘었음에도 영업이익이 8억원(영업이익률 0.3%)으로 급감했고 지배주주순이익은 69억원 적자로 전환됐다. 2024년에는 매출 2,940억원에도 불구하고 영업손실 134억원, 순손실 190억원을 기록하며 적자 폭이 확대됐다. 2025년에는 매출 3,301억원으로 성장세를 이어가는 동시에 영업이익 152억원(영업이익률 4.6%), 지배주주순이익 17억원으로 2년 만에 영업·순이익 동반 흑자 전환에 성공했다. 다만 분기별로 보면 회복의 안정성은 아직 검증 단계에 있다. 2025년 2분기부터 4분기까지는 매출이 883억원, 881억원, 799억원으로 다소 둔화되는 흐름 속에서도 분기별로 소폭이나마 흑자 기조를 유지했으나, 2026년 1분기에는 매출 818억원에 영업손실 5억원, 순손실 28억원을 기록하며 재차 적자로 돌아섰다. 2026년 2분기에는 매출이 962억원으로 분기 사상 최대치를 다시 경신했지만, 영업이익은 12억원에 그치고 순이익은 11억원 적자를 보이며 매출 성장과 수익성 개선이 함께 가지 못하는 모습을 나타냈다. 이 같은 흐름 속에 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주순이익은 약 -67억원으로, 연간 기준 흑자 전환이 분기 단위에서는 아직 일관되게 이어지지 못하고 있음을 보여준다.",
-  "en": "Bioneer's annual results have swung considerably in recent years. In 2022, revenue reached 218.4 billion won with operating profit of 11.5 billion won (5.3% margin) and net profit attributable to owners of 12.1 billion won. In 2023, revenue rose to 263.2 billion won, but operating profit collapsed to 0.8 billion won (0.3% margin) and net profit swung to a 6.9 billion won loss. In 2024, despite revenue of 294.0 billion won, the company posted an operating loss of 13.4 billion won and a net loss of 19.0 billion won, widening the deficit. In 2025, revenue grew further to 330.1 billion won while operating profit recovered to 15.2 billion won (4.6% margin) and net profit attributable to owners returned to positive territory at 1.7 billion won, marking the first simultaneous operating and net profit recovery in two years. However, the stability of this recovery remains under scrutiny at the quarterly level. From the second to fourth quarters of 2025, revenue moderated from 88.3 billion to 88.1 billion to 79.9 billion won, yet the company held onto modest quarterly profits. In the first quarter of 2026, revenue fell to 81.8 billion won alongside an operating loss of 0.5 billion won and a net loss of 2.8 billion won, tipping back into deficit. In the second quarter of 2026, revenue rebounded to a record 96.2 billion won, but operating profit was a thin 1.2 billion won and net profit posted a 1.1 billion won loss, showing that revenue growth and profitability improvement have not moved in tandem. Over the trailing four quarters through Q2 2026, combined net profit attributable to owners stood at roughly negative 6.7 billion won, indicating that the annual-level profit recovery has not yet translated into consistent quarterly performance."
+  "ko": "바이오니아의 연결 매출액은 2022년 2,184억원에서 2023년 2,632억원, 2024년 2,940억원을 거쳐 2025년 3,301억원으로 4년 연속 증가했다. 영업이익은 부침이 컸는데, 2022년 115억원(영업이익률 5.3%) 흑자에서 2023년 7.9억원(0.3%)으로 급격히 축소됐고 2024년에는 -134억원(-4.6%) 영업손실로 전환했다가 2025년 152억원(4.6%)으로 다시 흑자전환했다. 다만 지배주주 순이익은 2022년 120.8억원 흑자를 기록한 이후 2023년 -105.9억원, 2024년 -205.8억원, 2025년에도 -28.1억원으로 4년 연속 적자를 이어갔다. 연결 순이익(17.1억원)과 지배주주 순이익(-28.1억원)의 격차는 비지배지분(에이스바이옴 소수주주) 몫이 이익의 상당 부분을 가져간 데 따른 것으로 풀이된다. 최근 4개 분기(2025년 3분기~2026년 2분기)로 보면 분기별 매출은 880억원→798억원→818억원→961억원 순으로 등락했고, 영업이익도 28.8억원→27.0억원→-5.3억원(적자)→11.8억원으로 재차 흑자·적자를 오갔다. 이 구간 지배주주 순손실은 매 분기 지속돼 합계 약 -66.7억원에 달했으며, 2026년 1분기에는 -31.5억원으로 손실 폭이 일시 확대되기도 했다. 2026년 2분기에는 매출이 분기 기준 역대 최대인 961억원을 기록하며 영업이익도 다시 흑자로 돌아섰는데, 회사는 신약 연구개발비를 전분기보다 오히려 늘리면서도 매출 성장에 따른 규모의 효과로 손익이 개선됐다고 설명했다. 이 같은 흐름은 프로바이오틱스 부문의 견조한 매출 성장과 분자진단 부문의 구조적 적자가 동시에 진행되는 회사의 손익 구조를 보여준다.",
+  "en": "Bioneer's consolidated revenue rose for four consecutive years, from KRW 218.4bn in 2022 to KRW 263.2bn in 2023, KRW 294.0bn in 2024, and KRW 330.1bn in 2025. Operating profit was far more volatile: it fell sharply from KRW 11.5bn (5.3% margin) in 2022 to KRW 0.8bn (0.3%) in 2023, swung to an operating loss of -KRW 13.4bn (-4.6%) in 2024, and then turned positive again at KRW 15.2bn (4.6%) in 2025. Net income attributable to owners, however, has stayed negative for four straight years since a profit of KRW 12.1bn in 2022, posting -KRW 10.6bn in 2023, -KRW 20.6bn in 2024, and -KRW 2.8bn in 2025. The gap between consolidated net income (KRW 1.7bn) and owners' net income (-KRW 2.8bn) reflects the fact that a large share of the profit accrued to non-controlling interests, i.e., minority shareholders of ACE Biome. Over the trailing four quarters (2025Q3-2026Q2), quarterly revenue fluctuated from KRW 88.0bn to KRW 79.8bn, KRW 81.8bn, and KRW 96.1bn, while operating profit swung from KRW 2.88bn to KRW 2.70bn, then an operating loss of -KRW 0.53bn, before recovering to KRW 1.18bn. Owners' net loss persisted every quarter in this window, totaling about -KRW 6.7bn, with the loss temporarily widening to -KRW 3.15bn in the first quarter of 2026. In the second quarter of 2026, revenue hit a record quarterly high of KRW 96.1bn and operating profit turned positive again; the company attributed this to scale effects from revenue growth even as it increased new-drug R&D spending compared to the prior quarter. This pattern illustrates a company whose earnings structure combines solid probiotics revenue growth with a structural loss in molecular diagnostics."
  },
  "industry": {
-  "ko": "바이오니아가 속한 분자진단·바이오헬스케어 산업은 감염병 이슈에 따라 수요와 투자심리가 크게 출렁이는 특성을 가진다. 글로벌 바이럴로드(정량 바이러스 부하) 검사시장은 2025년 기준 약 9조원 규모로 추산되며, 이 가운데 HIV 검사가 가장 큰 비중을 차지하고 HCV 시장도 2026년부터 2030년까지 연평균 성장이 예상된다. 다국적 기업들이 주도해온 이 시장에서 콜드체인 비용과 고위험 검체 취급 부담은 여전히 해결 과제로 꼽히며, 상온 운송이 가능한 자동화 진단 시스템이 차별화 포인트로 부각되고 있다. 국내에서는 씨젠, 랩지노믹스, 진매트릭스, 엑세스바이오 등이 유사한 진단 사업을 영위하며 경쟁하고 있고, 한타바이러스나 신종 감염병 이슈가 불거질 때마다 이들 진단 관련주가 동반 강세를 보이는 테마성 수급 특징도 관찰된다. 건강기능식품 부문에서는 체지방 감소 등 기능성을 내세운 유산균 제품군의 경쟁이 심화되고 있어, 시장 지배력을 유지하려면 마케팅과 유통 채널 확장이 지속적으로 요구되는 상황이다. 신약 개발 영역에서는 siRNA 기반 치료제가 글로벌 빅파마들의 관심을 받는 분야로 부상하고 있으며, 국내 바이오텍들의 초기 임상 데이터가 기술이전 협상의 성패를 가르는 핵심 변수로 작용하고 있다.",
-  "en": "The molecular diagnostics and bio-healthcare industry Bioneer operates in is characterized by demand and investor sentiment that swing sharply with infectious-disease headlines. The global viral load testing market was estimated at roughly 9 trillion won in 2025, with HIV testing accounting for the largest share, while the HCV testing market is expected to grow at a steady annual pace from 2026 through 2030. In this market, long dominated by multinational players, cold-chain costs and the burden of handling high-risk specimens remain unresolved challenges, making room-temperature-compatible automated diagnostic systems a key point of differentiation. Domestically, companies such as Seegene, LabGenomics, Genematrix and Access Bio compete in similar diagnostics businesses, and diagnostics-related stocks have shown a pattern of moving together whenever issues such as hantavirus or emerging infections surface. In the health functional food segment, competition among probiotic products marketed for benefits such as body fat reduction is intensifying, requiring continuous marketing and distribution channel expansion to sustain market position. In drug development, siRNA-based therapeutics have emerged as an area of growing interest among global pharmaceutical companies, with early-stage clinical data from domestic biotechs serving as a critical variable in the success of licensing negotiations."
+  "ko": "분자진단 시장은 코로나19 특수가 소멸한 이후 감염병 상시진단·바이럴로드 검사 등 상시 수요 중심으로 재편되는 국면이다. 글로벌 바이럴로드 검사시장은 2025년 기준 약 62억 달러 규모로 추산되며 HIV 검사가 전체의 42.8%를 차지하고, HCV 검사시장은 2030년까지 연평균 7.4% 성장할 것으로 전망된다. 이 시장에서 바이오니아는 상온 유통이 가능한 동결건조 PCR 시약과 전자동 분자진단 시스템을 앞세워 콜드체인 인프라가 부족한 아프리카·동남아시아·남미 등 신흥시장 공급 경쟁력을 강조하고 있다. 국내 분자진단 업계에는 씨젠, SD바이오센서 등 코로나19 특수를 거친 경쟁사들이 다수 자리하고 있어 포스트 코로나 국면에서 공통적으로 매출 정상화·신규 시장 개척 과제에 직면해 있다. 건강기능식품(프로바이오틱스) 시장은 성숙 단계에 접어들었지만 체지방·다이어트 컨셉의 유산균 카테고리는 홈쇼핑을 중심으로 여전히 활발한 신제품 경쟁이 벌어지고 있다. RNA 기반 화장품·치료제 시장은 아직 초기 단계로, siRNA 등 신물질의 화장품·의약품 경계 획정을 둘러싼 규제 불확실성이 한국을 비롯한 여러 국가에서 진행형 이슈다. 국내 탈모증상완화 화장품 시장은 2021년 3,383억원에서 2025년 4,990억원까지 성장할 것으로 전망된 바 있어, 규제 리스크가 해소될 경우 잠재 시장 자체는 확대되는 흐름이다.",
+  "en": "The molecular diagnostics market is shifting from pandemic-driven demand toward steady-state needs such as routine infectious-disease testing and viral-load monitoring. The global viral-load testing market is estimated at roughly USD 6.2bn as of 2025, with HIV testing accounting for 42.8% of the total, and the HCV testing market is projected to grow at a 7.4% CAGR through 2030. In this market, Bioneer emphasizes supply competitiveness in emerging regions with weak cold-chain infrastructure—such as Africa, Southeast Asia, and Latin America—by promoting freeze-dried, room-temperature-stable PCR reagents and fully automated diagnostic systems. Domestically, competitors such as Seegene and SD Biosensor, which also rode the pandemic wave, face the same post-pandemic challenges of normalizing revenue and finding new markets. The health-supplement probiotics market has matured, but the body-fat/diet-focused probiotic category remains highly competitive, particularly through home-shopping channels. The market for RNA-based cosmetics and therapeutics is still nascent, and regulatory uncertainty over where novel substances like siRNA fall between cosmetics and pharmaceuticals remains an unresolved issue in Korea and elsewhere. Korea's hair-loss-relief cosmetics market has been projected to grow from KRW 338.3bn in 2021 to KRW 499.0bn by 2025, suggesting the addressable market itself continues to expand even as regulatory hurdles persist."
  },
  "outlook": {
-  "ko": "회사는 2025년 하반기 실적 발표 시점에 구조조정과 비용 효율화를 통해 수익성 개선 기반을 마련했다고 밝히며 하반기 흐름 개선을 예고한 바 있으나, 실제로는 2025년 3~4분기 매출이 다소 둔화되고 2026년 1분기에는 재차 적자로 전환되는 등 예고와 실적 사이에 시차와 편차가 있었다. 분자진단사업부는 약 200억원 규모의 설비 투자를 바탕으로 2026년 차세대 장비 매출 본격화, 2027년 흑자전환을 목표로 제시하고 있어, 향후 분기별 진단 부문 매출 추이가 이 목표 달성 여부를 가늠하는 지표가 될 전망이다. 글로벌 시장에서는 HIV·HBV·HCV 3대 만성 바이러스 감염병 정량진단 라인업에 대한 유럽 최고등급 인증(CE-IVDR)을 완성한 데 이어, 세계보건기구 사전적격성평가(WHO PQ) 추진과 글로벌펀드·PEPFAR 등이 주도하는 저·중소득 국가 공공조달시장 진입을 계획하고 있다. 신약 부문에서는 SRN-001의 국내 임상 1b상이 진행 중이며, 회사는 호주에서 완료한 1a상 결과를 근거로 반복투여 시 안전성과 표적 효과를 확인하는 데 주력하고 있다. 동물실험 결과를 토대로 섬유화 적응증 외에 비만과 암으로 파이프라인을 확장할 가능성도 제시됐으나, 이는 아직 임상 단계가 아닌 전임상·동물모델 수준의 초기 데이터에 해당한다. 에이스바이옴은 유통채널 확대와 마케팅 강화를 통해 매출 성장을 이어간다는 방침이며, 이 부문의 안정적 현금창출력이 신약 파이프라인 투자를 뒷받침하는 구조로 이어질지가 관전 포인트다.",
-  "en": "When reporting second-half 2025 results, the company signaled improvement ahead, attributing gains to restructuring and cost efficiency measures, but actual results showed some divergence, with revenue softening in the third and fourth quarters of 2025 and a return to net losses in the first quarter of 2026. The molecular diagnostics division has set a target of ramping up next-generation equipment sales in 2026 and achieving segment breakeven by 2027, built on roughly 20 billion won of equipment investment, making quarterly diagnostics revenue trends a key indicator to watch. Globally, having completed a CE-IVDR-certified quantitative diagnostics lineup covering the three major chronic viral infections HIV, HBV and HCV, the company plans to pursue World Health Organization prequalification and entry into public procurement markets in low- and middle-income countries led by the Global Fund and PEPFAR. In the drug pipeline, SRN-001 is undergoing domestic Phase 1b trials, building on Phase 1a results completed in Australia, with the current focus on confirming safety and target engagement under repeated dosing. Based on animal study results, the company has also floated the possibility of expanding the pipeline beyond fibrosis into obesity and cancer, though this remains early-stage preclinical data rather than clinical evidence. ACEbiome intends to sustain revenue growth through expanded distribution channels and marketing, and whether this segment's cash generation can reliably support continued investment in the drug pipeline remains a point to watch."
+  "ko": "회사는 분자진단 부문에서 2026년 중 차세대 플랫폼(ExiStation FA 96, IRON-qPCR 등) 매출 개시를 목표로 제시했고, 이를 바탕으로 2027년 진단 부문 흑자전환을 지향하는 것으로 파악된다. 유럽에서는 HIV-1에 이어 HBV·HCV 정량진단키트까지 CE-IVDR 최고위험군(Class D) 인증을 획득했고, 4월 ESCMID 2026 학회 참가를 통해 유럽 주요 오피니언 리더 대상 마케팅을 본격화했다. RNA 신약 파이프라인은 임상 1b상이 진행 중이며, 2026년 2분기에는 신약 연구개발비를 전분기보다 늘리는 등 투자를 지속하고 있다. 신규 협업으로는 오가노이드사이언스와 혈액유래 세포 기반 모낭 오가노이드 탈모 치료제를 공동개발하는 업무협약을 체결해 RNA 기술과 오가노이드 기술을 결합한 차세대 파이프라인 확장을 모색하고 있다. 코스메르나는 국내 기능성화장품 재도전이 2026년에도 반려·이의신청 기각으로 이어지면서, 회사는 국내에서는 일반화장품으로 전환 출시하고 이미 인증받은 유럽·영국·일본·싱가포르 등 해외 시장 위주로 사업을 확장하는 투 트랙 전략을 유지하고 있다. 프로바이오틱스 부문은 비에날씬의 홈쇼핑 유통 확대와 해외 판촉 행사를 통해 매출 성장을 이어가겠다는 방침이다. 다만 진단 부문의 대규모 인증·임상 투자가 지속되는 만큼, 연결 손익의 분기별 변동성은 프로바이오틱스 부문의 성장 속도와 진단 부문 투자 집행 시점에 따라 계속될 가능성이 있다.",
+  "en": "The company has set a goal of launching sales from its next-generation diagnostics platform (ExiStation FA 96, IRON-qPCR, etc.) during 2026, with an eye toward turning the diagnostics segment profitable in 2027. In Europe, it has secured Class D CE-IVDR certification—the highest risk tier—for HIV-1 and now HBV/HCV quantitative kits, and it stepped up marketing to European key opinion leaders through its participation in the ESCMID 2026 conference in April. Its RNA drug pipeline is in Phase 1b clinical trials, and the company continued investing in R&D, raising new-drug development spending in the second quarter of 2026 compared with the prior quarter. In a new collaboration, it signed an agreement with Organoid Sciences to co-develop a blood-derived, cell-based hair-follicle organoid treatment, seeking to expand its pipeline by combining RNA technology with organoid science. CosmeRNA's renewed push for domestic functional-cosmetic approval was again rejected and its appeal dismissed in 2026, leading the company to maintain a two-track strategy: launching domestically as a general cosmetic while expanding in overseas markets—Europe, the UK, Japan, and Singapore—where it has already obtained approval. The probiotics segment plans to sustain revenue growth by expanding BNRThin's home-shopping distribution and running overseas promotional events. However, given continued large-scale certification and clinical investment in diagnostics, quarterly volatility in consolidated earnings is likely to persist depending on the pace of probiotics growth versus the timing of diagnostics investment."
  },
  "valuation_comment": {
-  "ko": "현재 주당순이익(EPS) 헤드라인 값은 마이너스 258원으로 산정되어 있어, 최근 분기 순손실 재발의 영향으로 이익 기준 배수 해석 자체가 어려운 구간에 놓여 있다. 반면 주당순자산(BPS)은 8,124원으로 집계되며, 주가는 이 순자산가치를 밑도는 수준에서 거래되는 관계를 보이고 있다. 2025년 연간 기준으로는 영업이익과 지배주주순이익이 모두 흑자로 전환됐던 만큼, 연간 실적만 놓고 보면 이익 회복 국면으로 해석할 여지가 있으나 2026년 상반기 분기 실적은 다시 순손실을 나타내며 이 회복의 연속성에 대한 평가가 엇갈릴 수 있다. 최근 사업연도 기준으로는 현금배당이 실시되지 않아, 주주환원 측면에서 참고할 배당 트랙레코드가 아직 축적되지 않은 상태다. 이익 변동성이 큰 구간에서는 특정 시점의 배수보다 분기별 이익의 방향성과 지속성이 평가의 핵심 변수가 될 가능성이 높다.",
-  "en": "The headline earnings-per-share figure currently stands at negative 258 won, reflecting the return of quarterly net losses, which makes multiple-based interpretation on an earnings basis difficult at this point. Book value per share, meanwhile, is calculated at 8,124 won, with the stock trading at a level below this net asset value. Since both operating profit and net profit attributable to owners turned positive on a full-year 2025 basis, the annual results alone could be read as a profit recovery, but the return to net losses in the first half of 2026 quarters leaves room for differing views on the continuity of that recovery. No cash dividend was paid based on the most recent fiscal year, meaning there is not yet an accumulated dividend track record to reference from a shareholder-return perspective. In a period of high earnings volatility, the direction and persistence of quarterly profit are likely to matter more for assessment than any single-point valuation multiple."
+  "ko": "바이오니아는 최근 수년간 지배주주 순이익이 연속 적자를 기록해 주가수익비율(PER) 산정 자체가 의미를 갖기 어려운 상태이며, 이 때문에 시장에서는 주가와 실적의 연결성을 판단할 때 순자산가치(장부가) 대비 주가 수준을 함께 참고하는 경우가 많다. 현재 주가는 자기자본(순자산) 대비 소폭의 프리미엄이 실린 구간에서 거래되는 것으로 파악되며, 이는 프로바이오틱스 부문의 이익 기여와 진단·신약 부문의 미래 성장 기대가 동시에 반영된 결과로 해석될 수 있다. 회사는 최근 수년간 배당을 지급하지 않아 배당 매력이 제한적인 상태이며, 이 점에서 투자자들은 주로 실적 개선 속도와 신규 사업의 매출 기여 시점에 관심을 두는 편이다. 다년간의 흐름을 보면 연결 영업손익은 적자에서 흑자로, 다시 적자로 반복되다 2025년 흑자전환을 이뤘지만, 지배주주 기준 손익은 여전히 적자 구간에 머물러 있어 외형적 흑자전환과 주주 귀속 이익 회복 사이에는 아직 간극이 존재한다. 과거 수년간의 거래 밴드와 비교했을 때 현재 밸류에이션 수준이 상단인지 하단인지는 이익의 질(지배주주 이익 회복 여부)과 진단 부문 투자 회수 시점에 따라 달라질 수 있는 문제로 남아 있다.",
+  "en": "Bioneer's owners' net income has posted consecutive losses in recent years, making a price-to-earnings ratio calculation largely meaningless, which is why the market often looks instead at the share price relative to net asset (book) value to gauge the link between the stock and fundamentals. The current share price appears to trade at a modest premium to net assets, which can be read as reflecting both the profit contribution from the probiotics segment and expectations for future growth in diagnostics and new-drug development. The company has not paid dividends in recent years, limiting the stock's income appeal, so investors tend to focus more on the pace of earnings improvement and the timing of new-business revenue contribution. Over multiple years, consolidated operating results have swung from loss to profit and back before turning positive again in 2025, yet earnings attributable to owners remain in loss territory, leaving a gap between the headline profit turnaround and the recovery of profit actually accruing to shareholders. Whether the current valuation sits at the upper or lower end of its historical trading range is a question that depends on the quality of earnings (specifically, whether owners' profit recovers) and on the timing of payback from diagnostics-segment investment."
  },
  "bull": [
   {
    "title": {
-    "ko": "글로벌 감염병 진단 인증 확대",
-    "en": "Expanding Global Infectious Disease Diagnostics Certifications"
+    "ko": "프로바이오틱스 부문의 안정적 성장",
+    "en": "Steady Growth in the Probiotics Segment"
    },
    "body": {
-    "ko": "바이오니아는 HIV·HBV·HCV 3대 만성 바이러스 감염병 정량진단 제품에 대해 유럽 최고등급 체외진단 인증(CE-IVDR)을 확보하며 라인업을 완성했다. 이를 기반으로 세계보건기구 사전적격성평가와 글로벌펀드·PEPFAR가 주도하는 저·중소득 국가 공공조달시장 진입을 추진하고 있다. 상온 운송이 가능한 시약과 전자동화 검사 시스템은 콜드체인 비용 부담이 큰 저개발 지역 시장에서 차별화 요소로 작용할 수 있다."
+    "ko": "자회사 에이스바이옴의 비에날씬은 체지방 감소 기능성 유산균 시장에서 높은 인지도를 확보하고 있으며 2026년 2분기에도 분기 기준 최대 매출을 경신했다. 홈쇼핑 채널 확대와 해외 판촉을 통해 매출 기반을 넓히고 있어 연결 실적의 캐시카우 역할을 지속할 잠재력이 있다. 프로바이오틱스 부문의 매출총이익률 회복은 2025년 연결 흑자전환의 핵심 동력이 됐다는 점도 이 사업의 기여도를 보여준다.",
+    "en": "ACE Biome's BNRThin has built strong brand recognition in the body-fat-reducing probiotic category and set a record quarterly revenue in the second quarter of 2026. Expansion of home-shopping distribution and overseas promotions is broadening its revenue base, suggesting it can continue serving as the group's cash cow. The recovery in gross margin within the probiotics segment was also the key driver behind the 2025 consolidated profit turnaround, underscoring the segment's contribution."
    }
   },
   {
    "title": {
-    "ko": "건강기능식품 부문의 안정적 캐시카우",
-    "en": "Stable Cash Flow from the Health Functional Food Segment"
+    "ko": "분자진단 해외 인증 확대",
+    "en": "Expanding Overseas Diagnostics Certifications"
    },
    "body": {
-    "ko": "자회사 에이스바이옴의 체지방 감소 유산균 '비에날씬'은 경쟁 제품이 잇따라 출시되는 환경에서도 시장 1위 점유율을 유지하며 연결 매출 성장을 견인해왔다. 2025년 2분기에는 창립 이래 최대 분기 매출을 기록한 바 있다. 이 부문의 현금창출력은 신약 파이프라인 등 장기 투자를 뒷받침하는 재원으로 활용될 수 있다."
+    "ko": "HIV-1에 이어 HBV·HCV 정량진단키트까지 유럽 CE-IVDR 최고위험군 인증을 획득하며 유럽 병원·국제 공공조달 시장 진입 요건을 갖췄다. 상온 유통이 가능한 동결건조 시약 등 신흥시장 특화 경쟁력을 앞세워 콜드체인이 부족한 국가로 판로를 넓히려 하고 있다. 이러한 인증 확대는 향후 분자진단 부문의 매출 다각화와 지역별 수요처 확보에 기여할 수 있는 요인이다.",
+    "en": "Following HIV-1, the company has secured Class D CE-IVDR certification for HBV and HCV quantitative kits, meeting the requirements for entry into European hospital and international public-tender markets. It is leveraging emerging-market-specific advantages such as room-temperature-stable freeze-dried reagents to expand into countries with weak cold-chain infrastructure. This expanding certification base could contribute to future revenue diversification and broader regional demand for the diagnostics segment."
    }
   },
   {
    "title": {
-    "ko": "siRNA 플랫폼 기반 파이프라인 확장성",
-    "en": "Pipeline Expansion Potential via the siRNA Platform"
+    "ko": "매출 성장 속 R&D 투자 지속",
+    "en": "Continued R&D Investment Amid Revenue Growth"
    },
    "body": {
-    "ko": "자회사 써나젠테라퓨틱스가 개발 중인 SRN-001은 국내 임상 1b상이 진행 중이며, 호주에서 완료한 1a상에서는 최종 임상시험 결과보고서까지 발행됐다. 동물실험 결과를 근거로 섬유화 외 비만·암 영역으로 적응증 확장 가능성도 제시되고 있어, 단일 적응증이 아닌 플랫폼형 신약으로서의 확장 여지가 논의되고 있다. 다만 이는 초기 단계 데이터로, 임상적 검증까지는 추가 단계가 필요하다."
+    "ko": "2026년 2분기 연결 매출은 분기 기준 역대 최대를 기록했고, 이 과정에서 신약 연구개발비를 오히려 늘리면서도 흑자를 냈다는 점은 매출 규모 확대에 따른 비용 레버리지 효과를 시사한다. 오가노이드사이언스와의 공동개발 협약 등 신규 파이프라인 확장도 진행되고 있어 중장기 성장동력 다변화를 모색하는 모습이다.",
+    "en": "Consolidated revenue hit a record quarterly high in the second quarter of 2026, and the fact that the company still posted a profit while increasing new-drug R&D spending suggests a cost-leverage effect from expanding revenue scale. New pipeline expansion, such as the co-development agreement with Organoid Sciences, also points to efforts to diversify medium- to long-term growth drivers."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "분기 수익성의 반복적 변동",
-    "en": "Recurring Volatility in Quarterly Profitability"
+    "ko": "분자진단 본업의 구조적 적자",
+    "en": "Structural Loss in the Core Diagnostics Business"
    },
    "body": {
-    "ko": "2025년 연간 기준 흑자 전환에도 불구하고 2026년 1분기와 2분기에는 각각 28억원, 11억원의 순손실을 기록하며 적자가 재발했다. 2026년 2분기 매출이 분기 최대치를 경신했음에도 영업이익은 12억원에 그쳐 매출 성장과 이익 개선이 함께 가지 못하는 모습이다. 최근 네 개 분기 합산 순이익도 적자 상태에 머물러 있어, 흑자 기조의 안정적 정착 여부는 추가 분기 실적으로 확인이 필요하다."
+    "ko": "진단사업부는 차세대 플랫폼 인증·임상 투자로 연 200억원대 영업손실이 지속되는 것으로 파악되며, 회사가 제시한 2027년 흑자전환 목표가 실현되기 전까지 본업 적자는 이어질 가능성이 있다. 연결 기준 영업이익이 흑자를 내더라도 지배주주 순이익은 여러 해 연속 적자를 벗어나지 못하고 있다.",
+    "en": "The diagnostics division reportedly continues to post an annual operating loss in the range of roughly KRW 20bn due to next-generation platform certification and clinical investment, and the core-business loss could persist until the company's stated 2027 turnaround target is achieved. Even when consolidated operating profit is positive, net income attributable to owners has failed to escape loss territory for several consecutive years."
    }
   },
   {
    "title": {
-    "ko": "다년간 이어진 실적 변동성",
-    "en": "Multi-Year Earnings Volatility"
+    "ko": "코스메르나 인허가 리스크",
+    "en": "CosmeRNA Regulatory Approval Risk"
    },
    "body": {
-    "ko": "2022년 흑자 이후 2023년과 2024년에는 매출 증가에도 불구하고 영업이익률이 크게 낮아지거나 적자로 전환되는 흐름이 반복됐다. 2024년에는 영업손실 134억원, 순손실 190억원까지 확대된 바 있다. 이 같은 이력은 매출 성장이 곧바로 이익 개선으로 이어지지 않을 수 있음을 보여준다."
+    "ko": "코스메르나는 2019년 이후 국내 식약처에 여러 차례 기능성화장품 심사를 신청했으나 반려됐고, 행정소송 1심에서도 패소했다. 2026년 재도전한 심사와 이의신청도 반려·기각으로 이어져, 회사는 국내에서 일반화장품으로 전환 출시하는 방향으로 전략을 선회했다. 이는 국내 시장에서의 기능성 마케팅 제약과 브랜드 확장 속도에 영향을 줄 수 있는 요인이다.",
+    "en": "Since 2019, CosmeRNA has repeatedly applied for functional-cosmetic approval from Korea's MFDS only to be rejected, and it also lost its first-instance administrative lawsuit. A renewed application and appeal in 2026 were again rejected and dismissed, prompting the company to pivot to launching it as a general cosmetic domestically. This could constrain functional-claim marketing and the pace of brand expansion in the domestic market."
    }
   },
   {
    "title": {
-    "ko": "신약 파이프라인의 초기 단계 리스크",
-    "en": "Early-Stage Risk in the Drug Pipeline"
+    "ko": "매출·재무구조의 편중",
+    "en": "Concentration in Revenue and Financial Structure"
    },
    "body": {
-    "ko": "SRN-001은 아직 국내 임상 1b상 단계에 머물러 있으며, 비만·암 적응증 확장은 동물실험 수준의 초기 데이터에 불과하다. 신약 개발은 임상 단계별로 실패 확률이 존재하며, 기술이전이나 공동개발 협상이 성사되지 않을 가능성도 배제할 수 없다. 파이프라인 가치가 아직 매출로 현실화되지 않은 상태다."
+    "ko": "연결 매출의 절반 이상이 홈쇼핑 4개사를 통한 비에날씬 판매에 집중돼 있어 채널·단일제품 의존도가 높은 편이다. 진단·신약 부문 투자 확대 과정에서 차입금이 늘어난 것으로 파악되며, 변동금리 노출이 상당한 것으로 전해진다.",
+    "en": "More than half of consolidated revenue is concentrated in BNRThin sales through four home-shopping partners, reflecting high dependence on a single product and channel. Borrowings reportedly increased alongside expanded investment in diagnostics and drug development, and exposure to floating interest rates is said to be substantial."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "임상·규제 리스크",
-    "en": "Clinical and Regulatory Risk"
+    "ko": "규제·법률 리스크",
+    "en": "Regulatory and Legal Risk"
    },
    "body": {
-    "ko": "SRN-001의 임상 1b상은 안전성과 표적 효과 확인이 목적으로, 유효성 입증까지는 추가 임상 단계가 필요하다. 비만·암 적응증 확장은 동물실험 단계로, 인체 임상으로 이어지기까지 불확실성이 남아있다. 진단 제품의 해외 인증 및 공공조달 등재 과정도 예상보다 지연될 가능성이 있다."
+    "ko": "코스메르나의 국내 기능성화장품 인허가는 2019년부터 반복적으로 반려됐고 행정소송 1심에서도 패소했으며, 2026년 재신청 역시 반려·이의신청 기각으로 이어지고 있다. siRNA 성분의 화장품·의약품 경계를 둘러싼 식약처와의 견해차가 해소되지 않을 경우 국내 사업모델 자체를 재설계해야 할 수 있다.",
+    "en": "CosmeRNA's domestic functional-cosmetic approval has been repeatedly rejected since 2019 and the company also lost its first-instance administrative lawsuit, while a renewed 2026 application and appeal were again rejected and dismissed. If the disagreement with the MFDS over where siRNA sits between cosmetics and pharmaceuticals is not resolved, the company may need to redesign its domestic business model for the product."
    }
   },
   {
    "cat": {
-    "ko": "글로벌 조달시장 진입 리스크",
-    "en": "Global Procurement Market Entry Risk"
+    "ko": "재무 레버리지 리스크",
+    "en": "Financial Leverage Risk"
    },
    "body": {
-    "ko": "세계보건기구 사전적격성평가와 글로벌펀드·PEPFAR 등재는 다국적 경쟁사들이 이미 진입해 있는 시장으로, 등재와 대량 공급계약 확보까지 상당한 시일이 소요될 수 있다. 저·중소득 국가 공공조달 시장은 가격 경쟁이 치열하고 정치·환율 변수에도 노출돼 있다."
+    "ko": "진단·신약 부문의 대규모 인증·임상 투자를 뒷받침하기 위해 차입금이 늘어난 것으로 파악되며, 변동금리 비중이 높은 차입구조는 금리 변동에 따른 이자비용 부담을 키울 수 있다. 신용평가사로부터 투기등급 평가를 받은 상태라는 점도 자금조달 비용에 영향을 줄 수 있는 요인이다.",
+    "en": "Borrowings reportedly increased to fund large-scale certification and clinical investment in diagnostics and drug development, and a debt structure weighted toward floating rates could increase the interest burden if rates move. Having received a speculative-grade credit rating from a rating agency is also a factor that could affect funding costs."
    }
   },
   {
    "cat": {
-    "ko": "재무·수익성 변동 리스크",
-    "en": "Financial and Profitability Volatility Risk"
+    "ko": "사업구조 편중 리스크",
+    "en": "Business Concentration Risk"
    },
    "body": {
-    "ko": "최근 3개 연도 연속으로 영업이익률과 순이익이 큰 폭으로 등락한 이력이 있으며, 2026년 상반기에도 순손실이 재발했다. 건강기능식품 시장의 경쟁 심화로 마케팅 비용 부담이 늘어날 경우 수익성에 추가 압박이 될 수 있다."
+    "ko": "연결 손익이 자회사 에이스바이옴의 비에날씬 단일 제품과 홈쇼핑 채널에 크게 의존하고 있어, 홈쇼핑 송출수수료 정책 변화나 경쟁 유산균 제품 출시가 이익에 직접적 영향을 줄 수 있다. 동시에 본업인 분자진단 부문은 여전히 적자 상태로, 두 사업 간 손익 상쇄 구조가 지속되고 있다.",
+    "en": "Consolidated earnings depend heavily on a single product, ACE Biome's BNRThin, and the home-shopping channel, meaning changes in home-shopping broadcast fee policy or the launch of competing probiotic products could directly affect profit. At the same time, the core molecular-diagnostics business remains in loss, so the offsetting profit-and-loss structure between the two businesses is likely to continue."
    }
   }
  ],
@@ -140,69 +149,69 @@
   {
    "when": {
     "ko": "2026년 10월 말~11월 초",
-    "en": "Late October–Early November 2026"
+    "en": "Late October to early November 2026"
    },
    "what": {
-    "ko": "2026년 3분기 잠정실적 발표 예정 시점으로, 2분기의 매출 성장세와 수익성 부진이 개선되는지 여부를 확인할 필요가 있다.",
-    "en": "Q3 2026 preliminary earnings are expected to be disclosed around this time, an opportunity to check whether Q2's revenue growth and profitability weakness show improvement."
+    "ko": "2026년 3분기 실적 발표 예정 시점으로, 진단부문 적자 축소 여부와 지배주주 순이익의 흑자 전환 여부를 확인할 시점이다.",
+    "en": "Expected timing of the 2026 third-quarter earnings release, when it will be possible to check whether the diagnostics segment's loss is narrowing and whether owners' net income turns positive."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "Second Half of 2026"
+    "ko": "2026년 4분기 중",
+    "en": "During the fourth quarter of 2026"
    },
    "what": {
-    "ko": "SRN-001 국내 임상 1b상의 진행 경과 및 결과 데이터 공개 여부를 확인할 시점으로, 글로벌 파트너십 논의 진전과도 연결될 수 있다.",
-    "en": "A period to watch for progress updates or topline data from SRN-001's domestic Phase 1b trial, which could also relate to progress in global partnership discussions."
+    "ko": "회사가 목표로 제시한 차세대 분자진단 플랫폼(ExiStation FA, IRON-qPCR) 매출 반영 여부와 코스메르나 국내 일반화장품 전환 출시 이후 초기 판매 동향을 확인할 필요가 있다.",
+    "en": "Worth monitoring is whether revenue from the targeted next-generation diagnostics platforms (ExiStation FA, IRON-qPCR) begins to show up, and initial sales trends after CosmeRNA's domestic launch as a general cosmetic."
    }
   },
   {
    "when": {
-    "ko": "수시(공시 확인)",
-    "en": "Ongoing (via disclosures)"
+    "ko": "2026년 말~2027년 초",
+    "en": "Late 2026 to early 2027"
    },
    "what": {
-    "ko": "세계보건기구 사전적격성평가(WHO PQ) 및 글로벌펀드 제품 리스트 등재 여부를 확인해, 저·중소득 국가 공공조달시장 진입이 실제로 성사되는지 살펴볼 필요가 있다.",
-    "en": "Monitor disclosures on WHO prequalification status and Global Fund product listing to assess whether entry into low- and middle-income country procurement markets materializes."
+    "ko": "회사가 제시한 2027년 진단 부문 흑자전환 목표의 진행 상황을 관련 공시·IR 자료를 통해 점검할 시점이다.",
+    "en": "A point to review progress toward the company's stated 2027 diagnostics-segment turnaround target through relevant disclosures and IR materials."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기~2027년",
-    "en": "Q4 2026–2027"
+    "ko": "2027년 상반기",
+    "en": "First half of 2027"
    },
    "what": {
-    "ko": "분자진단사업부가 제시한 2026년 차세대 장비 매출 본격화, 2027년 흑자전환 목표의 달성 여부를 분기별 부문 실적으로 점검할 필요가 있다.",
-    "en": "Track quarterly segment results to assess progress toward the molecular diagnostics division's stated goals of ramping next-generation equipment sales in 2026 and achieving breakeven by 2027."
+    "ko": "연간 실적 발표 시 진단 부문 흑자전환 목표 달성 여부와 프로바이오틱스 부문 성장 지속성을 종합적으로 확인할 시점이다.",
+    "en": "At the annual earnings release, an occasion to comprehensively assess whether the diagnostics turnaround target was achieved and whether probiotics-segment growth has continued."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "바이오니아는 2025년 연간 기준으로 영업이익과 순이익 모두 흑자로 전환하며 회복 신호를 보였으나, 2026년 상반기 두 개 분기에서 다시 순손실을 기록하며 이 회복이 분기 단위에서는 아직 일관되게 이어지지 못하고 있다. 사업구조 측면에서는 건강기능식품 자회사 에이스바이옴의 안정적 매출 기여, 분자진단 부문의 글로벌 인증 확대, siRNA 신약 파이프라인의 초기 임상 진행이라는 세 축이 병존하며 성장 스토리를 구성하고 있다. 다만 진단 부문은 2027년 흑자전환이라는 중기 목표를 향해 가는 과정에 있고, 신약 파이프라인은 아직 임상 1b 단계로 상업화까지는 거리가 있다. 다년간 반복된 이익 변동성과 최근 분기의 순손실 재발은 회복의 지속가능성을 판단하는 데 있어 추가 분기 실적 확인이 필요함을 시사한다. 밸류에이션 측면에서는 순자산 대비 할인 수준에서 거래되는 관계를 보이는 한편, 이익 기준 배수는 최근 손실로 인해 해석이 제한적인 상황이다. 투자자 입장에서는 분기별 매출·이익 추이, 신약 임상 진척, 글로벌 조달시장 진입 성과 등 확인 가능한 이벤트를 통해 판단을 이어가는 접근이 유효해 보인다.",
-   "en": "Bioneer showed signs of recovery in 2025, turning both operating profit and net profit positive on a full-year basis, but the return to net losses in both quarters of the first half of 2026 indicates that this recovery has not yet become consistent at the quarterly level. Structurally, the growth narrative rests on three pillars: stable revenue contribution from health-functional-food subsidiary ACEbiome, expanding global certifications in the molecular diagnostics segment, and early-stage clinical progress in the siRNA drug pipeline. However, the diagnostics segment is still working toward its medium-term target of breakeven by 2027, and the drug pipeline remains at the Phase 1b stage, well short of commercialization. The repeated earnings volatility over multiple years and the recent return to quarterly net losses suggest that further quarterly results will be needed to judge the sustainability of the recovery. On valuation, the stock shows a relationship of trading at a discount to net asset value, while earnings-based multiples remain difficult to interpret given the recent losses. For those following the name, tracking quarterly revenue and profit trends, clinical pipeline progress, and global procurement market entry outcomes appears to be a reasonable way to continue assessing the situation."
+   "ko": "바이오니아는 2025년 연결 매출 3,301억원, 영업이익 152억원으로 외형과 손익 모두 개선되며 2024년의 영업손실에서 벗어났다. 그러나 이 흑자전환은 자회사 에이스바이옴이 판매하는 프로바이오틱스 '비에날씬'에 거의 전적으로 힘입은 것이며, 지배주주 순이익은 2022년 이후 4년 연속 적자를 벗어나지 못했다. 본업인 분자진단 부문은 차세대 플랫폼 인증·임상 투자로 연 200억원대 구조적 적자를 이어가고 있고, 회사는 2026년 신규 플랫폼 매출 개시와 2027년 진단 부문 흑자전환을 목표로 제시한 상태다. RNA 기반 화장품 '코스메르나'는 국내 인허가에서 반복적으로 반려·소송 패소를 겪으며 해외 우선·일반화장품 전환 전략으로 선회했고, 유럽에서는 진단키트 인증 확대로 시장 진입 기반을 넓히고 있다. 최근 4개 분기(2025년 3분기~2026년 2분기)에도 분기별 영업손익은 흑자와 적자를 오갔고 지배주주 순손실은 매 분기 지속돼, 외형 성장과 주주 귀속 이익 회복 사이의 간극이 아직 해소되지 않은 상태다. 투자 판단에 앞서 진단 부문의 손익 개선 속도, 코스메르나의 해외 매출 확대 여부, 그리고 프로바이오틱스 부문의 성장 지속성을 함께 살펴볼 필요가 있다.",
+   "en": "Bioneer's 2025 consolidated revenue rose to KRW 330.1bn and operating profit turned positive at KRW 15.2bn, improving both on the top and bottom line and exiting the 2024 operating loss. However, this turnaround was driven almost entirely by the probiotics product BNRThin sold through subsidiary ACE Biome, and net income attributable to owners has failed to escape loss territory for four straight years since 2022. The core molecular-diagnostics business continues to run a structural loss of roughly KRW 20bn a year due to next-generation platform certification and clinical investment, with the company targeting new-platform sales in 2026 and a diagnostics-segment turnaround in 2027. The RNA-based cosmetic CosmeRNA has faced repeated domestic rejection and litigation losses, prompting a pivot toward an overseas-first, general-cosmetic strategy, while in Europe the company is broadening its market-entry base through expanded diagnostic-kit certifications. Over the trailing four quarters (2025Q3-2026Q2), quarterly operating results continued to swing between profit and loss, and owners' net loss persisted every quarter, meaning the gap between top-line growth and the recovery of profit attributable to shareholders has not yet closed. Before drawing conclusions, it is worth watching the pace of improvement in the diagnostics segment, the trajectory of CosmeRNA's overseas sales, and the durability of growth in the probiotics segment."
   }
  },
  "sources": [
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260515000583&docno=&viewerhost=",
-  "https://v.daum.net/v/u6NwdY2Xtj?f=p",
-  "https://www.newsis.com/view/NISX20230731_0002396086",
   "https://alphasquare.co.kr/home/stock-summary?code=064550",
-  "https://www.straightnews.co.kr/news/articleView.html?idxno=277467",
-  "https://www.fnnews.com/ampNews/202307310844417084",
-  "https://www.investing.com/equities/bioneer-corp",
-  "https://stockplus.newat.biz/stock_detail.php?code=064550&name=%EB%B0%94%EC%9D%B4%EC%98%A4%EB%8B%88%EC%95%84&prev_url=%2Fthemedetail.php%3Fcategory_id%3D1674",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260515000583&docno=&viewerhost=",
   "https://www.judal.co.kr/?view=stockAI&shareToken=18oaIQyd4pypXRdS",
-  "https://www.hellodd.com/news/articleView.html?idxno=72603",
+  "https://www.investing.com/equities/bioneer-corp",
+  "https://littlebproject.com/stock/064550/302/35413",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=UyyoycPkZU2U7k3o",
+  "https://m.thinkpool.com/stockDiscuss/317870/cont/11756610",
+  "https://littlebproject.com/stock/064550/28/4611",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=nymVuJYou0ftcExX",
+  "https://www.medicaltimes.com/Users/News/NewsView.html?ID=1168545",
+  "https://www.openbizdata.com/bioneer/",
+  "https://www.hellodd.com/news/articleView.html?idxno=112600",
+  "https://pharm.edaily.co.kr/news/read?newsId=01318566629185368&mediaCodeNo=257",
   "https://www.econovill.com/news/articleView.html?idxno=558251",
-  "http://www.bosa.co.kr/news/articleView.html?idxno=141063",
-  "https://www.hankyung.com/article/202603098507i",
-  "https://thevc.kr/accessbio",
-  "https://pharm.edaily.co.kr/News/Read?newsId=03116006629119112&mediaCodeNo=257",
-  "https://www.hankyung.com/article/202607203390i",
-  "http://www.newsmp.com/news/articleView.html?idxno=152121",
-  "https://www.medicaltimes.com/Users/News/NewsView.html?ID=1168545"
+  "https://www.bioneer.co.kr/c-diagnostic/c-diag-platform-technologies/mdxkit.html",
+  "https://www.bioneer.co.kr/",
+  "https://thevc.kr/bioneer",
+  "https://keyzard.cc/views/nb/OjtpbmxvZWVtbWxsa2hrb25qZ28"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -214,9 +223,9 @@
   "바이오·제약"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260824",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 06:36",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-24",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -319,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 8960,
-   "mcap": 0.2313,
+   "price": 10390,
+   "mcap": 0.2682,
    "shares": 25810291,
    "total_shares": 25810291,
    "wavg_shares": 25838352,
    "per": null,
    "eps": -258,
-   "pbr": 1.1349,
+   "pbr": 1.316,
    "bps": 7895,
    "roe_ttm": -3.2,
    "ttm_window": "2025Q3~2026Q2",

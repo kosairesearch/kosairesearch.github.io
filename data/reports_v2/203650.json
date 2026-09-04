@@ -1,218 +1,217 @@
 {
  "title": {
-  "ko": "렌탈이 이끌고 양자보안이 붙는 복합기업",
-  "en": "Rental-Led Growth, Quantum Security Add-On"
+  "ko": "양자보안 기대와 재무부담의 이중구도",
+  "en": "Quantum Security Hopes Meet Leverage Strain"
  },
  "lead": {
-  "ko": "드림시큐리티는 매출 대부분이 자회사 한국렌탈의 IT·장비 렌탈에서 나오는 가운데, 국방·양자보안(PQC) 부문이 이익 성장의 새로운 변수로 부상하고 있다.",
-  "en": "Dream Security generates most of its revenue from subsidiary Korea Rental's IT/equipment leasing business, while its defense and post-quantum cryptography (PQC) segments are emerging as new variables for profit growth."
+  "ko": "렌탈 자회사가 매출을 견인하는 가운데 양자내성암호(PQC) 정부 시범사업 참여가 새로운 관심을 모으고 있으나, 본업 수익성 저하와 높은 부채비율이 함께 부각되는 국면이다.",
+  "en": "While the rental subsidiary continues to drive top-line growth, participation in government-led post-quantum cryptography pilot programs has drawn fresh attention, even as core-business profitability erosion and high leverage remain prominent concerns."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 3,188억원으로 전년 대비 증가했으나 영업이익·순이익은 오히려 감소하며 마진이 얇아졌다.",
-   "en": "2025 consolidated revenue rose to KRW 318.8bn year-over-year, but operating and net profit declined, thinning margins."
+   "ko": "2025년 연결 매출은 3,189억원으로 전년 대비 증가했으나 영업이익률은 7.1%로 2023년 14.3% 대비 크게 낮아졌다.",
+   "en": "2025 consolidated revenue rose to KRW 318.9 billion year-on-year, but operating margin fell to 7.1%, sharply down from 14.3% in 2023."
   },
   {
-   "ko": "2026년 상반기 연결 매출 2,167억원으로 반기 기준 역대 최대를 기록했고 국방부문 매출은 전년 동기 대비 190% 이상 증가했다.",
-   "en": "H1 2026 consolidated revenue reached a record KRW 216.7bn for a first half, with the defense segment growing more than 190% year-over-year."
+   "ko": "매출의 대부분은 렌탈 자회사 한국렌탈에서 발생하며, 별도(본사) 기준 솔루션 매출은 수년째 정체 상태다.",
+   "en": "The bulk of revenue comes from rental subsidiary Korea Rental, while the parent company's standalone solution revenue has stagnated for years."
   },
   {
-   "ko": "과학기술정보통신부 PQC 시범전환 사업의 통신 분야 주관사업자로 선정되며 국가 핵심 인프라 양자내성암호 전환 실증에 참여한다.",
-   "en": "The company was selected as the lead contractor for the telecom segment of the government's PQC pilot transition program, joining post-quantum cryptography demonstrations for national core infrastructure."
+   "ko": "2026년 5월 과학기술정보통신부의 국가 핵심 인프라 PQC(양자내성암호) 시범전환 사업에서 통신 분야 수행기관으로 선정됐다.",
+   "en": "In May 2026, the company was selected as the lead performing entity for the telecom sector in the government's national critical-infrastructure PQC pilot conversion program."
   },
   {
-   "ko": "전환사채 조기상환청구권(풋옵션)이 반복적으로 발생해 신규 전환사채 발행으로 대응하는 자금재조달 구조가 이어지고 있다.",
-   "en": "Recurring put-option exercises on convertible bonds have led to a pattern of refinancing through new CB issuance."
+   "ko": "연결 기준 부채비율이 200%대 후반에서 유지되며, 2026년 1분기에는 본사(별도) 기준 영업손실이 발생했다.",
+   "en": "The consolidated debt ratio has remained in the high-200% range, and the parent company (standalone basis) posted an operating loss in the first quarter of 2026."
   },
   {
-   "ko": "매출의 약 80%를 차지하는 한국렌탈에 대한 의존도가 높아 렌탈 경기와 자회사 재무구조가 실적의 핵심 변수다.",
-   "en": "With roughly 80% of revenue tied to Korea Rental, the leasing cycle and the subsidiary's financial structure remain the key swing factors for earnings."
+   "ko": "양자보안 관련 매출은 아직 유의미한 규모로 나타나지 않고 있어, 실적은 여전히 렌탈 부문에 크게 의존하는 구조다.",
+   "en": "Quantum-security-related revenue has not yet become materially significant, meaning earnings still depend heavily on the rental segment."
   }
  ],
  "business": {
-  "ko": "드림시큐리티는 공개키기반구조(PKI)를 기반으로 암호·인증·인식·감시 기술이 적용된 보안 솔루션과 서비스를 제공하는 정보보호 전문기업이다. 그러나 연결 매출 기준으로는 2019년 인수한 종속회사 한국렌탈의 IT기기·고소작업대·산업용 장비 렌탈 사업이 절대적 비중을 차지한다. 2024년 사업보고서 기준 부문별 매출 비중은 렌탈부문이 80.74%로 가장 크고, 그 다음으로 국방부문 8.03%, 솔루션 6.48%, 개인정보보호서비스 4.21%, 운영 0.54% 순이다. 국방부문은 종속회사 시드코어와 드림디엔에스가 담당하며 보안장비·보안솔루션을 국방 대기업에 공급하는 진입장벽이 높은 시장이다. 개인정보보호서비스는 휴대폰 본인확인, 스마트 공동인증 등 본업인 인증보안 솔루션에 해당한다. 종속회사로는 한국렌탈 외에 방송·콘텐츠 보안 솔루션을 제공하는 디지캡, 임베디드 보안 솔루션의 시드코어 등 다수 계열사를 두고 있다. 한국렌탈은 드림시큐리티가 직접 43.4%, 100% 자회사인 인베스트드림을 통해 56.42%를 보유해 실질적으로 완전 지배하는 구조다. 경쟁구도 측면에서 인증보안 부문은 안랩·파수·아톤·라온시큐어 등과 경쟁하며, 렌탈 부문은 별도의 B2B 렌탈 시장 플레이어들과 경쟁한다.",
-  "en": "Dream Security is an information security specialist providing encryption, authentication, recognition, and surveillance solutions built on public key infrastructure (PKI). However, on a consolidated basis, the IT equipment, aerial platform, and industrial equipment leasing business of subsidiary Korea Rental, acquired in 2019, accounts for the overwhelming share of revenue. According to the 2024 annual report, the rental segment made up 80.74% of revenue, followed by defense at 8.03%, solutions at 6.48%, personal information protection services at 4.21%, and operations at 0.54%. The defense segment, run through subsidiaries Seedcore and Dream DNS, supplies security equipment and solutions to major defense contractors in a market with high entry barriers. Personal information protection services correspond to the company's core authentication security business, including mobile identity verification and smart joint certification. Beyond Korea Rental, subsidiaries include Digicap, which provides broadcast and content security solutions, and Seedcore, which handles embedded security solutions. Dream Security effectively fully controls Korea Rental, holding 43.4% directly and an additional 56.42% through its wholly owned subsidiary Investdream. In terms of competitive positioning, the authentication security segment competes with players such as AhnLab, Fasoo, Aton, and Raonsecure, while the rental segment competes within a separate B2B leasing market."
+  "ko": "드림시큐리티는 PKI(공개키 기반 구조) 기술을 축으로 암호·인증·전자서명·생체인증 등 보안 솔루션을 제공하는 정보보호 전문기업이다. 회사는 행정기관, 금융기관, 일반기업을 대상으로 모바일 보안플랫폼과 간편인증, 전자서명 서비스를 제공하며, 주요 종속기업으로 한국렌탈, 디지캡, 시드코어 등 14개 연결대상 종속회사를 보유하고 있다. 사업 구조상 매출의 절대 다수는 렌탈 자회사인 한국렌탈에서 발생하는데, 지난해 연결 매출의 83.55%가 렌탈 부문에서, 솔루션 부문은 6.22%에 그쳤다. 한국렌탈은 사무기기·계측기기·건설장비 등 IT 및 산업 장비를 임대하는 사업으로, 본업인 보안·인증 솔루션과는 별개의 사업 성격을 지닌다. 반면 본사(별도) 기준 매출은 2022년 302억원, 2023년 302억원, 2024년 304억원으로 수년간 정체된 흐름을 보이고 있다. 2026년 1분기에는 국방 부문의 보안장비·솔루션 공급 확대가 연결 매출 성장에 기여했다는 점이 확인된다. 고객 기반은 공공·금융·이동통신·민간 부문에 걸쳐 다수 확보하고 있으며, PKI·FIDO 생체인증·블록체인 기반 DID 등 다양한 인증 기술 포트폴리오를 갖추고 있다. 최근에는 양자내성암호(PQC) 기술을 기존 PKI·TLS·데이터베이스 암호화 제품군에 접목한 '양자보안 풀스택' 포트폴리오를 선보이며 사업 영역 확장을 시도하고 있다.",
+  "en": "Dream Security is an information-security specialist centered on public key infrastructure (PKI) technology, providing encryption, authentication, digital signature, and biometric authentication solutions. The company supplies mobile security platforms, simple authentication, and digital signature services to government agencies, financial institutions, and general enterprises, and holds 14 consolidated subsidiaries including Korea Rental, Digicap, and SeedCore. Structurally, the vast majority of revenue comes from rental subsidiary Korea Rental; last year, rental accounted for 83.55% of consolidated revenue while the solutions segment made up only 6.22%. Korea Rental leases office equipment, measuring instruments, and construction machinery, a business distinct in character from the core security and authentication solutions business. In contrast, the parent company's standalone revenue has stagnated for years, at KRW 30.2 billion in 2022, KRW 30.2 billion in 2023, and KRW 30.4 billion in 2024. In the first quarter of 2026, expanded supply of security equipment and solutions to the defense sector contributed to consolidated revenue growth. The customer base spans public, financial, telecommunications, and private sectors, and the company holds a broad authentication technology portfolio spanning PKI, FIDO biometrics, and blockchain-based decentralized identity (DID). More recently, it has introduced a 'quantum security full-stack' portfolio that integrates post-quantum cryptography (PQC) into its existing PKI, TLS, and database encryption product lines, attempting to expand its business scope."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 3,188억 5,069만원으로 2024년(2,688억 3,912만원) 대비 늘었지만, 영업이익은 224억 8,534만원으로 전년 256억 4,556만원보다 줄었고 지배주주 순이익도 73억 9,187만원으로 전년 120억 7,473만원에서 크게 감소했다. 영업이익률은 2023년 14.3%에서 2024년 9.5%, 2025년 7.1%로 3년째 하락세를 이어갔다. 주당순이익(EPS)도 2023년 444원에서 2024년 261원, 2025년 87원으로 큰 폭 축소됐는데 이는 순이익 감소와 함께 전환사채 전환에 따른 주식수 증가가 함께 작용한 결과다. 분기별로 보면 2025년 2분기 매출 748억 8,177만원, 영업이익 24억 7,208만원에서 3분기 영업이익 39억 9,749만원으로 개선됐고, 4분기에는 매출 946억 7,502만원, 영업이익 100억 8,133만원으로 연중 최대치를 기록해 공공기관 발주가 집중되는 계절성을 다시 확인시켰다. 2026년 들어서는 1분기 매출 1,083억 9,622만원, 영업이익 37억 6,078만원, 순이익 2억 7,567만원으로 이익이 크게 눌렸다가 2분기에는 매출 1,083억 434만원을 유지하면서 영업이익이 81억 6,143만원, 순이익 47억 8,312만원으로 회복됐다. 언론 보도에 따르면 2026년 상반기 연결 매출은 2,167억원으로 창사 이래 최대 반기 실적을 기록했으며 전년 동기 대비 매출 45.4%, 영업이익 41.8% 증가했지만 회사 측은 연구인력 채용과 신사업 투자 확대로 수익성은 다소 둔화됐다고 설명했다. 현금흐름 측면에서는 2025년 영업활동현금흐름이 -147억 8,844만원으로 2024년(-30억 88만원)보다 악화됐고, 2023년의 +207억 3,532만원과는 대조적인 흐름을 보였다. 부채비율은 2022년 357.7%에서 2023년 280.8%, 2024년 263.2%로 낮아졌다가 2025년 281.0%로 다시 높아지며 재무 레버리지가 다시 늘어나는 모습이다.",
-  "en": "Consolidated revenue for 2025 rose to KRW 318.85bn from KRW 268.84bn in 2024, but operating profit fell to KRW 22.49bn from KRW 25.65bn, and net income attributable to owners dropped sharply to KRW 7.39bn from KRW 12.07bn. The operating margin has declined for three consecutive years, from 14.3% in 2023 to 9.5% in 2024 and 7.1% in 2025. Basic EPS also contracted sharply from KRW 444 in 2023 to KRW 261 in 2024 and KRW 87 in 2025, reflecting both the profit decline and an increase in share count from convertible bond conversions. On a quarterly basis, operating profit improved from KRW 2.47bn in Q2 2025 to KRW 4.00bn in Q3, before reaching a full-year peak of KRW 10.08bn on revenue of KRW 94.68bn in Q4, reaffirming the seasonality tied to concentrated public-sector orders. Entering 2026, Q1 revenue reached KRW 108.40bn with operating profit compressed to KRW 3.76bn and net income of just KRW 0.28bn, before Q2 recovered to operating profit of KRW 8.16bn and net income of KRW 4.78bn on similar revenue of KRW 108.30bn. According to media reports, H1 2026 consolidated revenue of KRW 216.7bn marked the company's largest first half ever, up 45.4% year-over-year with operating profit up 41.8%, though the company noted that profitability moderated due to expanded R&D hiring and new business investment. Cash flow from operations deteriorated to negative KRW 14.79bn in 2025 from negative KRW 3.00bn in 2024, a sharp contrast to the positive KRW 20.74bn generated in 2023. The debt ratio, which had declined from 357.7% in 2022 to 280.8% in 2023 and 263.2% in 2024, rose again to 281.0% in 2025, indicating renewed financial leverage."
+  "ko": "연결 매출은 2022년 2,242억원, 2023년 2,327억원, 2024년 2,688억원, 2025년 3,189억원으로 꾸준히 늘었으나, 영업이익은 2023년 333억원(영업이익률 14.3%)을 정점으로 2024년 256억원(9.5%), 2025년 225억원(7.1%)으로 축소되는 추세를 보였다. 지배주주 순이익 역시 2023년 225억원에서 2024년 121억원, 2025년 74억원으로 뚜렷하게 줄어들며 매출 성장과 이익 둔화가 동시에 나타나는 모습이다. 분기별로 보면 2025년 3분기 매출 751억원·영업이익 40억원·지배주주 순이익 38억원을 기록한 뒤, 성수기 효과가 반영된 2025년 4분기에는 매출 947억원·영업이익 101억원으로 크게 확대됐다. 그러나 2026년 1분기에는 매출이 1,084억원으로 늘었음에도 영업이익은 38억원, 순이익은 3억원 수준에 그쳤고, 2026년 2분기에는 매출 1,083억원·영업이익 82억원·순이익 48억원으로 다시 회복되는 등 분기별 수익성 변동성이 큰 편이다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순이익은 약 114억원 수준으로, 연간 실적 개선 흐름이 이어지고 있는지는 다음 분기 실적에서 재확인이 필요하다. 이러한 영업이익률 하락과 순이익 둔화는 한국렌탈 등 렌탈 자회사의 차입금 확대에 따른 이자비용 증가, 그리고 본사 솔루션 매출의 정체가 복합적으로 작용한 결과로 해석된다. 실제로 2026년 1분기 본사(별도) 기준 매출은 65억원에 불과했고 영업손실 23억원, 순손실 30억원을 기록해 전년 동기 대비 적자 폭이 확대된 것으로 보도됐다. 현금흐름 측면에서도 2025년 영업활동현금흐름이 -148억원으로 나타나 2023년 207억원의 양(+)의 흐름과는 대조적인 모습을 보였다.",
+  "en": "Consolidated revenue grew steadily from KRW 224.2 billion in 2022 to KRW 232.7 billion in 2023, KRW 268.8 billion in 2024, and KRW 318.9 billion in 2025, but operating profit peaked at KRW 33.3 billion (14.3% margin) in 2023 before contracting to KRW 25.6 billion (9.5%) in 2024 and KRW 22.5 billion (7.1%) in 2025. Net income attributable to owners also declined sharply, from KRW 22.5 billion in 2023 to KRW 12.1 billion in 2024 and KRW 7.4 billion in 2025, showing revenue growth and profit deceleration occurring simultaneously. By quarter, revenue of KRW 75.1 billion and operating profit of KRW 4.0 billion with owner net income of KRW 3.8 billion in the third quarter of 2025 was followed by a seasonally strong fourth quarter with revenue of KRW 94.7 billion and operating profit of KRW 10.1 billion. However, in the first quarter of 2026, despite revenue rising to KRW 108.4 billion, operating profit was only KRW 3.8 billion and net income just KRW 0.3 billion, before recovering in the second quarter of 2026 to revenue of KRW 108.3 billion, operating profit of KRW 8.2 billion, and net income of KRW 4.8 billion, illustrating considerable quarter-to-quarter profitability volatility. Owner net income summed over the most recent four quarters (Q3 2025 through Q2 2026) was approximately KRW 11.4 billion, and whether this represents a sustained annual improvement will need reconfirmation in coming quarters. This margin and profit deceleration appears attributable to a combination of rising interest expenses from expanded borrowings at rental subsidiary Korea Rental and stagnant parent-company solution revenue. Indeed, media reports indicate that in the first quarter of 2026 the parent company's standalone revenue was only KRW 6.5 billion, with an operating loss of KRW 2.3 billion and a net loss of KRW 3.0 billion, a wider deficit than the year-earlier period. On the cash flow side, 2025 operating cash flow came in at negative KRW 14.8 billion, a contrast to the positive KRW 20.7 billion recorded in 2023."
  },
  "industry": {
-  "ko": "국내 정보보호 산업은 개인정보 유출·해킹 위협 고도화에 따라 수요 기반이 확대되는 추세지만, 성장 속도는 완만한 것으로 평가된다. 최근 산업의 핵심 변수는 양자컴퓨터 상용화에 대응하는 양자내성암호(PQC) 전환으로, 국내에서는 2025년 국내 PQC 표준화 작업 완료, 2029년부터 공공 인프라 고도화가 예정된 로드맵이 제시돼 있다. 미국 국립표준기술연구소(NIST)도 2035년까지 PQC 전면 전환을 목표로 표준화 작업을 추진하고 있어 글로벌 정책 방향이 국내 시장에도 영향을 미치는 구조다. 이 시장에서 드림시큐리티는 미국 CMVP 인증 획득과 국내 최초 양자키관리장비 보안기능확인서 인증 등 기술 검증 이력을 보유하고 있으나, 금융권 등 민간 상용 레퍼런스 확보 측면에서는 미래에셋증권·빗썸 등을 선점한 아톤이나 특허·인증을 앞세운 라온시큐어에 비해 상용화 속도가 뒤처진다는 평가가 나온다. 렌탈 부문이 속한 B2B 장비임대 시장은 자본력과 업력을 바탕으로 한 과점 구도가 형성돼 있지만, 주력 렌탈품목 시장 자체는 정체 국면에 있고 경기변동에 민감하다는 평가가 신용평가사 리포트를 통해 제시된 바 있다. 국방부문은 사이버전 위협 증대와 K-방산 활성화에 힘입어 상대적으로 경기 비탄력적인 안정적 매출 기반을 제공하고 있다.",
-  "en": "Korea's information security industry has an expanding demand base amid rising threats from personal data breaches and increasingly sophisticated hacking, though overall growth is regarded as moderate. The pivotal recent industry variable is the transition to post-quantum cryptography (PQC) in preparation for the commercialization of quantum computers, with a domestic roadmap targeting completion of PQC standardization in 2025 and upgrades to public infrastructure beginning in 2029. The US National Institute of Standards and Technology (NIST) is likewise pursuing a full PQC transition target by 2035, meaning global policy direction feeds directly into the domestic market. In this space, Dream Security holds a track record of technical validation, including US CMVP certification and Korea's first security function confirmation for quantum key management equipment, but is seen as trailing peers in securing commercial references in the financial sector, where Aton has already secured clients such as Mirae Asset Securities and Bithumb, and Raonsecure leads on patents and certifications. The B2B equipment leasing market that houses the rental segment has an oligopolistic structure built on capital strength and operating history, but credit rating agency reports have characterized the core rental product market itself as stagnant and highly sensitive to the business cycle. The defense segment provides a relatively cycle-resilient and stable revenue base, supported by rising cyber warfare threats and the broader activation of Korea's defense industry."
+  "ko": "국내 정보보안 산업은 공공·금융권을 중심으로 한 인증·암호화 수요가 꾸준한 가운데, 양자컴퓨팅 발전에 대응하는 양자내성암호(PQC) 전환이 새로운 성장축으로 부상하고 있다. 과학기술정보통신부와 한국인터넷진흥원(KISA)은 2025년 에너지·행정·의료 3개 분야에서 시작한 PQC 시범전환 사업을 2026년에는 통신·금융·교통·국방·우주 5개 분야로 확대했으며, 드림시큐리티는 통신 분야(KREONET) 수행기관으로 선정됐다. 다만 업계에서는 아직 시장이 초기 단계로, 관련 매출이 본격화되지 않고 있다는 진단이 나온다. 경쟁 구도는 펜타시큐리티, 한국퀀텀컴퓨팅, 케이사인, ICTK 등 다수의 보안·양자기술 기업이 각자의 강점 영역에서 시범사업과 표준화 참여를 병행하는 다자간 경쟁 양상이다. 드림시큐리티는 통신망 분야에서 KT와의 협력 경험 등 레퍼런스를 축적해왔다는 점이 상대적 강점으로 꼽힌다. 한편 렌탈업(한국렌탈)이 속한 IT·산업 장비 임대 시장은 경기 변동에 따라 실적이 좌우되는 특성이 있어, 고소장비·계측기기 등 전방산업 부진 시 임대 자산의 가동률 관리 부담이 커질 수 있다는 평가도 존재한다.",
+  "en": "South Korea's information security industry continues to see steady demand for authentication and encryption centered on the public and financial sectors, while transition to post-quantum cryptography (PQC) in response to advancing quantum computing is emerging as a new growth axis. The Ministry of Science and ICT and the Korea Internet & Security Agency (KISA), which began PQC pilot conversion programs in energy, administration, and healthcare in 2025, expanded the program to five sectors in 2026—telecommunications, finance, transportation, defense, and space—with Dream Security selected as the performing entity for the telecommunications sector (KREONET). However, industry observers note that the market remains at an early stage and related revenue has not yet become substantial. The competitive landscape features multiple security and quantum-technology firms including Penta Security, Korea Quantum Computing, K-sign, and ICTK, each participating in pilot programs and standardization efforts within their respective areas of strength. Dream Security's relative advantage lies in accumulated references in the telecommunications network domain, including collaboration experience with KT. Meanwhile, the IT and industrial equipment rental market to which subsidiary Korea Rental belongs is sensitive to economic cycles, and downturns in front-end industries such as aerial work platforms and measuring instruments can increase the burden of managing utilization rates for rental assets."
  },
  "outlook": {
-  "ko": "드림시큐리티는 2025년 12월 한국지능정보사회진흥원(NIA)이 추진하는 '국산 양자기술 소재·부품·장비 보급·활용 지원사업'의 공급기업으로 선정돼 양자 키 관리 장비, 양자내성 키 생성·관리 장비, PQC 지원 암복호화 장비 등 총 8종의 양자보안 제품을 공급할 수 있게 됐다. 2026년 5월에는 과학기술정보통신부가 주관하는 통신·금융·교통·국방·우주 등 국가 핵심 인프라 PQC 시범전환 사업에서 통신 분야 수행 기관으로 선정돼, 한국과학기술정보연구원(KISTI)이 운영하는 국내 200여 개 연구기관의 백본망인 국가과학기술연구망(KREONET)에 PQC를 적용하는 실증을 수행하게 됐다. 회사는 이번 실증 사업이 향후 대규모 공공 전환 시장에서 레퍼런스로 활용될 것으로 기대하고 있다. 2026년 7월에는 국내 정보보호 전시회 'CISO Korea 2026'에 참가해 양자보안 풀스택 솔루션을 선보였고, 6월에는 중소기업을 겨냥한 생체인증 기반 2차 인증 서비스 '듀오패스'의 3개월 무료 프로모션도 진행했다. 별도 기준 실적은 2026년 상반기 매출 146억원으로 전년 동기 대비 11.7% 증가에 그쳐, 본업인 보안 솔루션 사업의 성장 속도는 연결 전체 성장률에 비해 완만한 상태다. 회사는 미래 성장동력 확보를 위한 연구인력 채용과 신사업 투자를 지속하고 있다고 밝혔는데, 이는 단기적으로 수익성에는 부담이지만 PQC·국방 등 신사업 확대의 기반이 될 수 있는 부분이다.",
-  "en": "In December 2025, Dream Security was selected as a supplier under the National IT Industry Promotion Agency's (NIA) support program for domestic quantum technology materials, parts, and equipment, enabling it to supply eight types of quantum security products including quantum key management equipment and PQC-compatible encryption/decryption gear. In May 2026, the company was selected as the telecom-sector executing agency for the Ministry of Science and ICT's PQC pilot transition program covering national core infrastructure across telecom, finance, transportation, defense, and space, and will conduct a demonstration applying PQC to the National Science & Technology Research Network (KREONET) backbone used by roughly 200 domestic research institutions, operated by the Korea Institute of Science and Technology Information (KISTI). The company expects this demonstration project to serve as a reference for the larger public-sector transition market to come. In July 2026, it participated in the \"CISO Korea 2026\" information security exhibition to showcase a full-stack quantum security solution, and in June it ran a three-month free promotion for \"DuoPass,"
+  "ko": "드림시큐리티는 2026년 4월부터 12월까지 진행되는 KISTI(한국과학기술정보연구원) 국가과학기술연구망(KREONET) PQC 전환 실증 사업을 수행하고 있으며, 이는 물리적 보안(QKD)과 수학적 보안(PQC)을 결합한 하이브리드 모델을 검증하는 사업으로, 향후 공공·국가 인프라 전반으로 확산될 가능성이 있는 레퍼런스로 평가된다. 회사는 ISEC 2026, CISO Korea 2026 등 주요 보안 컨퍼런스에서 데이터베이스 보안·계정관리(IAM)·다요소 인증(MFA)·PKI 등 기존 핵심 제품군에 PQC 기술을 접목한 포트폴리오를 지속적으로 선보이고 있다. 다만 이러한 활동이 실제 상용 계약과 매출로 이어지기까지는 시간이 필요하다는 것이 업계의 공통된 시각이다. 재무적으로는 2026년 7월 0% 금리의 250억원 규모 전환사채(CB)를 발행해 단기 유동성 위험 완화에 나섰으며, 조기상환청구권(풋옵션)은 발행 2년 후인 2028년 7월부터 행사 가능하도록 설계돼 당분간 상환 압박은 제한적일 것으로 보인다. 한국렌탈을 비롯한 자회사들의 실적 개선 여부와 본사 솔루션 부문의 수익성 회복이 향후 연결 실적의 방향을 가를 핵심 변수로 지목된다. 회사 측은 렌탈업 특성상 매출 확대에 따라 레버리지가 동반 상승하는 구조라는 입장을 밝히고 있어, 외형 성장과 재무 건전성 개선을 동시에 달성할 수 있을지가 관전 포인트다.",
+  "en": "Dream Security is carrying out a PQC conversion demonstration project on the Korea Institute of Science and Technology Information's (KISTI) national research network KREONET from April through December 2026, a project verifying a hybrid model combining physical security (quantum key distribution) with mathematical security (PQC), viewed as a reference case with potential for broader expansion across public and national infrastructure. The company continues to showcase its PQC-integrated product portfolio—spanning database security, account and identity management (IAM), multi-factor authentication (MFA), and PKI—at major security conferences such as ISEC 2026 and CISO Korea 2026. However, industry consensus holds that time will be needed before such activities translate into actual commercial contracts and revenue. On the financial side, the company issued a KRW 25 billion zero-coupon convertible bond in July 2026 to ease near-term liquidity risk, with the early redemption (put) option structured to become exercisable from July 2028, two years after issuance, limiting repayment pressure for the time being. Whether performance improves at Korea Rental and other subsidiaries, along with a recovery in profitability at the parent company's solutions segment, is cited as a key variable determining the future direction of consolidated results. Management maintains that leverage naturally rises alongside revenue expansion given the nature of the rental business, making it a point of interest whether the company can achieve both top-line growth and improved financial soundness simultaneously."
  },
  "valuation_comment": {
-  "ko": "드림시큐리티는 연결 매출의 대부분을 저마진 렌탈 사업에서 거두는 복합기업 구조이기 때문에, 순수 보안 솔루션 기업과 동일한 잣대로 배수를 비교하기는 쉽지 않다. 최근 몇 년간 순이익이 2023년을 정점으로 축소되는 흐름을 보인 가운데, 주가는 양자보안·PQC 관련 테마 이슈가 부각될 때마다 단기간에 크게 움직이는 패턴이 반복돼 왔다. 이런 구조에서는 주가순자산비율이 과거 거래 밴드 내 어느 지점에 위치하는지, 그리고 동종 보안업계 평균 배수와 비교해 어느 방향으로 벌어져 있는지를 살펴보는 것이 유용한 참고점이 될 수 있다. 배당 측면에서는 최근 연도 기준 현금배당이 확인되지 않아, 주주환원보다는 재투자와 재무구조 대응에 자금이 우선 배분되는 모습이다. 전환사채의 반복적 전환·재발행으로 유통주식수가 늘어난 점도 주당 지표를 해석할 때 함께 고려할 부분이다.",
-  "en": "Because Dream Security derives most of its consolidated revenue from a lower-margin rental business, comparing its multiples directly against pure-play security companies is not straightforward. Net income has trended down since peaking in 2023, while the share price has repeatedly shown sharp short-term moves whenever quantum security or PQC-related themes have come into focus. In this kind of structure, it can be useful to examine where the price-to-book ratio sits within its historical trading band and how it compares directionally against peer averages in the security industry. On the dividend front, no cash dividend has been confirmed in recent years, suggesting capital has been prioritized toward reinvestment and balance-sheet management rather than shareholder returns. The repeated conversion and reissuance of convertible bonds, which has expanded the share count, is also a factor to weigh when interpreting per-share metrics."
+  "ko": "현재 거래되는 배수는 최근 1~2년간 형성된 거래 밴드 상단권에 위치해 있어, 순자산 대비 프리미엄이 존재하는 구간으로 볼 수 있다. 이익 흐름이 2023년을 정점으로 둔화된 이후 분기별로 다시 회복되는 모습을 보이고 있어, 최근 네 개 분기 실적을 기준으로 한 수익성 지표는 과거 고점 대비 낮은 수준에서 형성돼 있다. 배당은 현재 지급되지 않고 있어, 배당수익률에 기반한 투자 매력도 평가는 해당되지 않는다. 양자보안(PQC) 관련 정부 시범사업 참여 소식이 주가에 영향을 미친 사례가 있었던 만큼, 밸류에이션에는 실제 실적 기여 여부가 확인되지 않은 미래 성장 기대가 일부 반영돼 있을 가능성이 있다. 다만 이는 사업의 상용화 시점과 규모에 대한 불확실성을 동반하므로, 순자산가치와 수익성 지표만으로 현재 거래 수준을 단순 비교하기는 쉽지 않다.",
+  "en": "The multiples at which the stock currently trades sit in the upper range of the trading band formed over the past one to two years, suggesting a segment where a premium exists relative to net asset value. Since profit flows peaked in 2023 and subsequently slowed, before showing quarter-to-quarter recovery more recently, profitability metrics based on the most recent four quarters stand below their prior peak levels. The company does not currently pay a dividend, so dividend-yield-based attractiveness assessments do not apply. Given past instances where news of participation in government-led quantum security (PQC) pilot programs affected the share price, valuation may partly reflect future growth expectations whose actual earnings contribution has not yet been confirmed. However, because this carries uncertainty regarding the timing and scale of commercialization, a simple comparison of current trading levels using net asset value and profitability metrics alone is not straightforward."
  },
  "bull": [
   {
    "title": {
-    "ko": "국가 PQC 전환 사업 참여",
-    "en": "Participation in National PQC Transition Projects"
+    "ko": "국가 주도 PQC 시범사업 수행기관 선정",
+    "en": "Selected as Lead Entity for National PQC Pilot Program"
    },
    "body": {
-    "ko": "과학기술정보통신부 PQC 시범전환 사업의 통신 분야 주관사업자로 선정돼 국가 핵심 인프라 실증에 참여하고 있다. NIA 양자기술 소부장 보급사업 공급기업 선정으로 8종의 양자보안 제품 라인업도 갖췄다. 이러한 실증 사업 수행 경험은 향후 대규모 공공 전환 시장에서 레퍼런스로 활용될 수 있다.",
-    "en": "The company has been selected as the lead contractor for the telecom segment of the government's PQC pilot transition program, participating in demonstrations for national core infrastructure. Selection as a supplier under NIA's quantum technology support program has also given it a lineup of eight quantum security products. This demonstration experience could serve as a reference in the larger public-sector transition market ahead."
+    "ko": "2026년 5월 과학기술정보통신부의 국가 핵심 인프라 PQC 시범전환 사업에서 통신 분야(KREONET) 수행기관으로 선정됐다. 국내 200여개 연구기관이 이용하는 국가 백본망에 양자내성암호를 적용하는 실증 사업으로, 향후 공공·국가 인프라 전반으로 확산될 경우 레퍼런스 확보 효과가 기대된다. 회사는 양자암호기술연구소 설립 이후 약 10년간 관련 알고리즘 개발과 표준화에 참여해온 경험을 갖고 있다.",
+    "en": "In May 2026, the company was selected as the performing entity for the telecommunications sector (KREONET) in the Ministry of Science and ICT's national critical-infrastructure PQC pilot conversion program. The demonstration project applies post-quantum cryptography to the national backbone network used by roughly 200 domestic research institutions, and could yield valuable reference credentials if expanded across public and national infrastructure. The company has approximately a decade of experience in related algorithm development and standardization since establishing its quantum cryptography research institute."
    }
   },
   {
    "title": {
-    "ko": "국방부문의 고성장",
-    "en": "High Growth in the Defense Segment"
+    "ko": "렌탈 자회사 기반 매출 규모 확대",
+    "en": "Revenue Scale Expansion via Rental Subsidiary"
    },
    "body": {
-    "ko": "2026년 상반기 국방부문 매출이 전년 동기 대비 190% 이상 증가하며 그룹 전체 실적을 견인했다. 국방 보안 시장은 진입장벽이 높고 사이버전 위협 증대에 따라 경기 비탄력적인 수요 기반을 제공한다. K-방산 활성화라는 산업 순풍도 배경으로 작용하고 있다.",
-    "en": "Defense segment revenue grew more than 190% year-over-year in H1 2026, driving group-wide results. The defense security market has high entry barriers and provides a demand base that is relatively resilient to the economic cycle amid rising cyber warfare threats, with the broader activation of Korea's defense industry serving as an additional tailwind."
+    "ko": "한국렌탈을 중심으로 연결 매출이 2022년 2,242억원에서 2025년 3,189억원으로 꾸준히 확대되며 외형 성장을 이어가고 있다. 렌탈업은 자본력과 업력을 바탕으로 한 과점적 시장지위를 확보하고 있다는 평가를 받는다. 국방 부문 보안장비·솔루션 공급 확대 등 신규 매출원 발굴도 병행되고 있다.",
+    "en": "Consolidated revenue, driven mainly by Korea Rental, has expanded steadily from KRW 224.2 billion in 2022 to KRW 318.9 billion in 2025, continuing top-line growth. The rental business has been assessed as holding an oligopolistic market position built on capital strength and track record. New revenue sources, such as expanded supply of security equipment and solutions to the defense sector, are also being developed in parallel."
    }
   },
   {
    "title": {
-    "ko": "렌탈 부문의 안정적 현금창출",
-    "en": "Stable Cash Generation from the Rental Segment"
+    "ko": "폭넓은 인증 기술 포트폴리오와 고객 기반",
+    "en": "Broad Authentication Technology Portfolio and Customer Base"
    },
    "body": {
-    "ko": "매출의 약 80%를 차지하는 한국렌탈은 IT기기, 고소작업대, 산업용 장비 렌탈로 자본력과 업력을 바탕으로 한 과점적 시장지위를 보유하고 있다. 2026년 상반기 연결 매출이 창사 이래 최대 반기 실적을 기록한 배경에도 렌탈 실적이 자리한다. 규모의 경제를 갖춘 렌탈 사업은 보안 신사업 투자를 뒷받침하는 캐시카우 역할을 할 수 있다.",
-    "en": "Korea Rental, which accounts for roughly 80% of revenue, holds an oligopolistic market position in IT equipment, aerial platform, and industrial equipment leasing built on capital strength and operating history. The rental business also underpinned the record first-half consolidated revenue in H1 2026. With economies of scale, the rental business can serve as a cash cow supporting investment in new security businesses."
+    "ko": "PKI, FIDO 생체인증, 블록체인 기반 DID 등 다양한 인증 기술을 확보하고 있으며 공공·금융·이동통신·민간 부문에 걸쳐 다수의 고객사를 보유하고 있다. 기존 핵심 제품군에 PQC를 접목한 풀스택 포트폴리오를 지속적으로 고도화하고 있어, 장기적으로 다양한 산업의 암호 전환 수요에 대응할 수 있는 기술적 준비가 갖춰져 있다는 평가다.",
+    "en": "The company holds a diverse authentication technology portfolio spanning PKI, FIDO biometrics, and blockchain-based DID, with a broad customer base across the public, financial, telecommunications, and private sectors. It continues to upgrade a full-stack portfolio integrating PQC into existing core product lines, positioning it, in some assessments, with the technical readiness to address cryptographic transition demand across various industries over the long term."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "이익 마진의 3년 연속 하락",
-    "en": "Three Consecutive Years of Margin Decline"
+    "ko": "높은 부채비율과 차입 부담",
+    "en": "High Debt Ratio and Borrowing Burden"
    },
    "body": {
-    "ko": "영업이익률은 2023년 14.3%에서 2024년 9.5%, 2025년 7.1%로 지속적으로 낮아졌다. 지배주주 순이익도 2023년 224억원을 정점으로 2024년 120억원, 2025년 74억원으로 축소됐다. 매출 성장이 이익 성장으로 이어지지 못하는 구조가 뚜렷하다.",
-    "en": "The operating margin has fallen steadily from 14.3% in 2023 to 9.5% in 2024 and 7.1% in 2025. Net income attributable to owners has also contracted from a peak of KRW 22.4bn in 2023 to KRW 12.0bn in 2024 and KRW 7.4bn in 2025. Revenue growth has clearly failed to translate into profit growth."
+    "ko": "연결 기준 부채비율은 2022년 357.7%에서 2023년 280.8%, 2024년 263.2%, 2025년 281.0%로 200%대 후반에서 지속되고 있다. 렌탈 자산 확대에 따른 차입금 증가가 구조적 원인으로, 2026년 7월에는 유동성 대응을 위해 0% 금리 전환사채를 발행해야 했다.",
+    "en": "The consolidated debt ratio has persisted in the high-200% range, moving from 357.7% in 2022 to 280.8% in 2023, 263.2% in 2024, and 281.0% in 2025. Rising borrowings tied to rental asset expansion are the structural cause, and in July 2026 the company had to issue a zero-coupon convertible bond to address liquidity needs."
    }
   },
   {
    "title": {
-    "ko": "전환사채 리파이낸싱 부담",
-    "en": "Convertible Bond Refinancing Burden"
+    "ko": "영업이익률 하락과 본업 수익성 둔화",
+    "en": "Declining Operating Margin and Weakening Core Profitability"
    },
    "body": {
-    "ko": "조기상환청구권(풋옵션)이 연속적으로 발생해 상환 자금을 신규 전환사채 발행으로 재조달하는 패턴이 반복되고 있다. 2026년 4월에도 전환청구권 행사로 신주가 잇따라 발행되며 총 발행주식수가 늘었다. 이 같은 구조는 주당 지표의 희석과 재무 유연성 저하로 이어질 수 있다.",
-    "en": "Recurring put-option exercises have led to a repeated pattern of refinancing redemption funds through new convertible bond issuance. In April 2026 alone, multiple rounds of conversion increased the total share count. This structure can lead to dilution of per-share metrics and reduced financial flexibility."
+    "ko": "영업이익률은 2023년 14.3%에서 2024년 9.5%, 2025년 7.1%로 지속 하락했다. 2026년 1분기에는 본사(별도) 기준 영업손실이 발생한 것으로 보도돼, 렌탈 부문을 제외한 핵심 보안 솔루션 사업의 자체 수익성이 약화된 모습이 확인된다.",
+    "en": "Operating margin has continued to decline, from 14.3% in 2023 to 9.5% in 2024 and 7.1% in 2025. Media reports indicate the parent company posted a standalone operating loss in the first quarter of 2026, confirming weakened self-sustaining profitability in the core security solutions business excluding the rental segment."
    }
   },
   {
    "title": {
-    "ko": "한국렌탈 의존과 자체 유동성 취약",
-    "en": "Dependence on Korea Rental and Weak Standalone Liquidity"
+    "ko": "PQC 사업의 매출 가시화 지연",
+    "en": "Delayed Revenue Visibility for PQC Business"
    },
    "body": {
-    "ko": "신용평가사 리포트에 따르면 연결 매출액의 약 80%를 한국렌탈이 차지하는 가운데, 드림시큐리티 자체의 유동성 대응력은 취약한 것으로 평가된다. 한국렌탈이 그룹의 실질적 지원 주체로 작용하는 구조여서, 렌탈 경기 둔화 시 그룹 전체 재무부담으로 전이될 가능성이 지적된다.",
-    "en": "According to a credit rating agency report, Korea Rental accounts for approximately 80% of consolidated revenue, while Dream Security's own standalone liquidity response capacity is assessed as weak. Because Korea Rental effectively serves as the group's real support entity, a downturn in the rental cycle could transmit financial strain across the entire group."
+    "ko": "다양한 PQC 관련 제품과 정부 시범사업 참여에도 아직 유의미한 매출은 발생하지 않고 있다는 진단이 나온다. 주가가 해외 양자컴퓨터 관련 종목 흐름에 연동되는 양상을 보인 바 있어, 실질적인 수요 발생 여부가 확인되기까지 시간이 소요될 수 있다.",
+    "en": "Despite various PQC-related products and participation in government pilot programs, assessments indicate that no meaningful revenue has yet materialized. The share price has at times moved in tandem with overseas quantum-computing-related stocks, suggesting it may take time before actual demand materialization can be confirmed."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무구조 리스크",
-    "en": "Financial Structure Risk"
+    "ko": "재무건전성·유동성 리스크",
+    "en": "Financial Soundness and Liquidity Risk"
    },
    "body": {
-    "ko": "2025년 부채비율이 281.0%로 전년 263.2%보다 다시 높아졌고 영업활동현금흐름도 -147억원으로 악화됐다. 전환사채 조기상환청구권의 연속 발생과 재발행 구조가 지속될 경우 자금재조달 위험이 이어질 수 있다. 렌탈자산 확충을 위한 차입 의존도가 높은 구조 특성도 함께 고려할 필요가 있다.",
-    "en": "The debt ratio rose again to 281.0% in 2025 from 263.2% the prior year, while operating cash flow deteriorated to negative KRW 14.79bn. If the pattern of recurring put-option exercises and CB reissuance continues, refinancing risk could persist. The structural reliance on borrowing to expand rental assets should also be factored in."
+    "ko": "연결 기준 부채비율이 200%대 후반에서 유지되고 있으며, 2026년 1분기 기준 보도에 따르면 부채비율이 312.72%까지 상승한 것으로 나타났다. 단기차입금과 유동성 사채 등 1년 내 만기 도래 금융채무 비중이 높아, 리파이낸싱(자금재조달) 위험이 지속적으로 모니터링 대상이다.",
+    "en": "The consolidated debt ratio has remained in the high-200% range, and according to reports as of the first quarter of 2026 it rose to 312.72%. A high proportion of financial liabilities—including short-term borrowings and current portion of bonds—mature within one year, making refinancing risk an ongoing point of monitoring."
    }
   },
   {
    "cat": {
-    "ko": "경기 민감도",
-    "en": "Business Cycle Sensitivity"
+    "ko": "자회사 실적 변동성",
+    "en": "Subsidiary Earnings Volatility"
    },
    "body": {
-    "ko": "매출 대부분을 차지하는 렌탈 부문은 경기변동에 민감하고, 주력 렌탈품목 시장 자체가 정체 국면에 있다는 평가가 있다. 경기 둔화 시 렌탈 수요 축소와 중고 렌탈자산 매각 손실 가능성이 동시에 부담으로 작용할 수 있다.",
-    "en": "The rental segment, which represents the bulk of revenue, is sensitive to economic cycles, and its core product market has been characterized as stagnant. In a downturn, both reduced rental demand and potential losses from selling used rental assets could weigh on results simultaneously."
+    "ko": "한국렌탈, 시드코어, 드림디엔에스 등 주요 종속회사의 실적이 과거 특정 시기 동반 부진했던 사례가 있으며, 렌탈 자산의 가동률은 전방산업 경기에 민감하다. 자회사 실적 부진이 연결 실적 전반에 미치는 영향력이 큰 구조다.",
+    "en": "Major subsidiaries such as Korea Rental, SeedCore, and Dream DNS have in the past experienced concurrent performance weakness, and utilization rates for rental assets are sensitive to front-end industry conditions. This structure means subsidiary performance weakness can have an outsized impact on overall consolidated results."
    }
   },
   {
    "cat": {
-    "ko": "지분 희석 및 내부자 매도",
-    "en": "Equity Dilution and Insider Selling"
+    "ko": "정책·시범사업 의존 리스크",
+    "en": "Policy and Pilot-Program Dependence Risk"
    },
    "body": {
-    "ko": "2026년 4월 전환청구권 행사로 총 발행주식수가 늘어난 가운데, 같은 달 계열회사 대표이사를 포함한 내부자의 장내매도 공시가 확인됐다. 향후 추가 전환사채 물량이 남아있다면 지분 희석이 추가로 발생할 가능성이 있다.",
-    "en": "Following an increase in total share count from CB conversions in April 2026, insider selling disclosures involving an affiliate company's CEO were also confirmed the same month. If additional convertible bond volume remains outstanding, further equity dilution could occur."
+    "ko": "PQC 관련 사업이 상당 부분 정부 예산 지원을 받는 시범전환 사업 형태로 진행되고 있어, 향후 정부 정책 방향이나 예산 배정 변화에 따라 사업 규모와 지속성이 영향을 받을 수 있다. 상용화 시점이 불확실한 만큼 정책 의존도가 높은 사업 구조라는 평가가 나온다.",
+    "en": "Because a significant portion of PQC-related business is conducted in the form of government-budget-supported pilot conversion programs, future changes in government policy direction or budget allocation could affect the scale and continuity of these projects. Given uncertain commercialization timing, the business structure is seen as having relatively high policy dependence."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 3분기 실적 발표(11월경)",
-    "en": "Q3 2026 Earnings Release (around November)"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "2분기 회복세(영업이익 81.6억원)가 3분기에도 이어지는지, 그리고 4분기 계절적 성수기 실적 전망이 어떻게 제시되는지 확인이 필요하다.",
-    "en": "It will be important to check whether the Q2 recovery in operating profit (KRW 8.16bn) continues into Q3, and how guidance for the seasonally strong Q4 is framed."
+    "ko": "2026년 3분기(2026Q3) 실적 공시 확인 — 렌탈 부문의 계절적 성수기 효과와 본사(별도) 솔루션 부문의 흑자 전환 여부를 살펴볼 시점이다.",
+    "en": "Check the third-quarter 2026 (2026Q3) earnings disclosure — a point to observe whether the rental segment's seasonal peak effect materializes and whether the parent company's standalone solutions segment returns to profit."
    }
   },
   {
    "when": {
-    "ko": "KREONET PQC 실증 사업 진행 경과",
-    "en": "Progress of the KREONET PQC Demonstration Project"
+    "ko": "2026년 12월",
+    "en": "December 2026"
    },
    "what": {
-    "ko": "국가과학기술연구망 백본 구간 PQC 적용 실증의 진행 상황과 완료 시점, 이후 대규모 공공 전환 사업으로의 확산 여부를 확인할 필요가 있다.",
-    "en": "It will be worth tracking the progress and completion timeline of the PQC application demonstration on the KREONET backbone, and whether it leads to expansion into a larger-scale public transition project."
+    "ko": "KISTI 국가과학기술연구망(KREONET) PQC 전환 실증 사업 종료 시점 — 사업 성과가 후속 상용 계약이나 추가 수주로 이어지는지 확인이 필요하다.",
+    "en": "Conclusion of the KISTI national research network (KREONET) PQC conversion demonstration project — worth checking whether the results translate into follow-on commercial contracts or additional orders."
    }
   },
   {
    "when": {
-    "ko": "전환사채 조기상환청구권(풋옵션) 관련 공시",
-    "en": "Disclosures Related to CB Put-Option Exercises"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "향후 풋옵션 행사 여부와 이에 대응하는 자금조달 방식(신규 CB 발행, 현금 상환 등)을 확인해 재무부담 추이를 점검할 필요가 있다.",
-    "en": "Future put-option exercises and the funding method used to address them (new CB issuance versus cash redemption) should be monitored to track the trajectory of financial burden."
+    "ko": "과학기술정보통신부의 2027년도 PQC 시범전환 사업 예산·확대 계획 발표 — 정부 주도 양자보안 사업의 지속·확대 여부를 판단할 수 있는 지표다.",
+    "en": "Announcement of the Ministry of Science and ICT's 2027 budget and expansion plans for the PQC pilot conversion program — an indicator for judging whether the government-led quantum security initiative continues or expands."
    }
   },
   {
    "when": {
-    "ko": "한국렌탈 및 디지캡 실적·구조조정 공시",
-    "en": "Korea Rental and Digicap Earnings/Restructuring Disclosures",
-    "en2": ""
+    "ko": "2027년 상반기",
+    "en": "First half of 2027"
    },
    "what": {
-    "ko": "한국렌탈의 렌탈자산 가동률과 디지캡 등 계열사 정리·시너지 관련 공시가 나올 경우 그룹 전체 실적과 재무구조에 미치는 영향을 확인해야 한다.",
-    "en": "Should disclosures emerge regarding Korea Rental's rental asset utilization or restructuring/synergy efforts involving affiliates such as Digicap, their impact on group-wide earnings and financial structure should be checked."
+    "ko": "한국렌탈 등 주요 종속회사에 대한 신용평가기관의 정기 신용평가 결과 — 부채비율, 차입금의존도 등 재무건전성 지표의 추이를 재확인할 수 있는 계기다.",
+    "en": "Regular credit rating results for major subsidiaries such as Korea Rental — an opportunity to reconfirm the trajectory of financial soundness metrics such as debt ratio and borrowing dependence."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "드림시큐리티는 매출 규모 기준으로는 한국렌탈의 IT·장비 렌탈 사업이 지배적인 복합기업이며, 최근 3년간 영업이익률이 지속적으로 낮아지는 가운데 국방부문과 양자보안(PQC) 관련 신사업이 새로운 성장 축으로 부상하고 있다. 2026년 상반기 연결 매출은 역대 최대 반기 실적을 기록했지만, 이는 연구인력 채용 등 신사업 투자 확대와 병행되며 수익성 둔화를 동반했다. 국가 핵심 인프라 PQC 전환 사업 참여, NIA 양자 소부장 공급기업 선정 등은 중장기 사업 확장의 근거가 될 수 있는 사실이나, 아직 상용화 매출로 연결된 규모는 검색 자료로 확인되지 않는다. 반대로 전환사채 풋옵션의 반복적 발생, 부채비율 재상승, 영업활동현금흐름 악화는 재무구조 측면의 부담 요인으로 함께 존재한다. 투자자는 렌탈 경기, 국방부문 매출의 지속성, PQC 실증 사업의 상용화 전환 속도, 그리고 전환사채 관련 지분 희석 추이를 함께 살펴볼 필요가 있다. 본 리포트는 정보 제공을 목적으로 하며 매수·매도 의견이나 목표주가를 포함하지 않는다.",
-   "en": "In terms of revenue scale, Dream Security is a conglomerate dominated by Korea Rental's IT and equipment leasing business, and while the operating margin has declined steadily over the past three years, the defense segment and new quantum security (PQC) initiatives have emerged as new growth axes. H1 2026 consolidated revenue set a record for a first half, but this came alongside expanded investment in new businesses, including research hiring, which was accompanied by softer profitability. Participation in national core infrastructure PQC transition projects and selection as a supplier under NIA's quantum materials/parts/equipment program provide grounds for medium- to long-term business expansion, though the scale of commercialized revenue tied to these has not been confirmed in available sources. On the other hand, recurring convertible bond put-option exercises, a renewed rise in the debt ratio, and deteriorating operating cash flow remain financial structure concerns. Investors may wish to monitor the rental business cycle, the sustainability of defense segment revenue, the pace at which PQC demonstration projects convert into commercial revenue, and trends in equity dilution tied to convertible bonds. This report is for informational purposes only and does not include a buy/sell opinion or price target."
+   "ko": "드림시큐리티는 렌탈 자회사 한국렌탈이 매출의 대부분을 견인하는 구조 속에서, 양자내성암호(PQC) 관련 정부 시범사업 참여를 통해 새로운 성장 스토리를 구축해가고 있다. 2025년까지 연결 매출은 꾸준히 증가했으나 영업이익률과 지배주주 순이익은 2023년을 정점으로 둔화되는 흐름을 보였고, 2026년 들어서는 분기별 수익성 변동성이 커졌다. 연결 기준 부채비율이 200%대 후반에서 유지되는 가운데 2026년 7월에는 유동성 대응을 위한 전환사채 발행이 이뤄지는 등 재무 부담도 지속적으로 관찰되는 요소다. 양자보안 사업은 정부 시범전환 사업의 통신 분야 수행기관으로 선정되는 등 기술적 위상은 확인되고 있으나, 업계에서는 아직 유의미한 매출로 이어지지 않았다는 평가가 지배적이다. 따라서 향후 관전 포인트는 렌탈 부문의 안정적 확대 지속 여부, 본사 솔루션 부문의 수익성 회복, 그리고 PQC 시범사업이 실제 상용 계약으로 전환되는 시점이 될 것으로 보인다. 투자 판단에 앞서 부채구조와 자회사 실적 변동성, 정책 의존적 사업 특성을 균형 있게 고려할 필요가 있다.",
+   "en": "Dream Security is building a new growth narrative through participation in government-led post-quantum cryptography (PQC) pilot programs, even as rental subsidiary Korea Rental continues to drive the majority of revenue. Consolidated revenue grew steadily through 2025, but operating margin and owner net income slowed after peaking in 2023, and quarter-to-quarter profitability volatility increased in 2026. The consolidated debt ratio has persisted in the high-200% range, and the company issued a convertible bond in July 2026 to address liquidity needs, making financial burden a continuously observed factor. While the quantum security business has demonstrated technical standing—including selection as the telecommunications sector performing entity for the government's pilot conversion program—industry assessment generally holds that it has not yet translated into meaningful revenue. Key points to watch going forward will therefore include whether stable expansion of the rental segment continues, whether the parent company's solutions segment profitability recovers, and when the PQC pilot programs might convert into actual commercial contracts. Any investment judgment should balance consideration of the debt structure, subsidiary earnings volatility, and the policy-dependent nature of the business."
   }
  },
  "sources": [
   "https://alphasquare.co.kr/home/stock-summary?code=203650",
-  "https://www.investing.com/equities/shinhan-2nd-special-purpose-acquisi",
-  "https://dealsite.co.kr/articles/159254",
-  "https://www.thebell.co.kr/front/newsview.asp?key=202405292132306480103270",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=203650",
-  "https://goinsider.kr/stock/01038693",
-  "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/Q0JWd3B0RDZZOVluMWkxZ1ZBWitzdz09/company_nm/(%EC%A3%BC)%EB%93%9C%EB%A6%BC%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0",
-  "https://stock1.brokdam.com/%EB%93%9C%EB%A6%BC%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%A3%BC%EA%B0%80-%EC%A0%84%EB%A7%9D-2026-%EC%96%91%EC%9E%90%EB%B3%B4%EC%95%88-%EB%8C%80%EC%9E%A5%EC%A3%BC-%EC%A7%80%EA%B8%88/",
   "https://www.judal.co.kr/?view=stockAI&shareToken=yBx1eRIQziQkGMYR",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=GAVMuOaNCgWNaouA",
-  "https://www.etnews.com/20200513000399?m=1",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/dream1998",
+  "https://www.youtube.com/watch?v=wR4ohO8HkI0",
+  "https://www.msn.com/ko-kr/news/other/%EC%82%BC%EC%84%B1-%EA%B8%88%EC%9C%B5%EA%B6%8C%EB%8F%84-%EC%A3%BC%EB%AA%A9%ED%95%9C-%EC%9D%B4-%EA%B8%B0%EC%88%A0-%EB%93%9C%EB%A6%BC%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%B0%A8%EC%84%B8%EB%8C%80-%EB%B3%B4%EC%95%88-%EB%8F%85%EC%A0%90%ED%95%98%EB%82%98/vi-AA22GiIV",
+  "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/Q0JWd3B0RDZZOVluMWkxZ1ZBWitzdz09/company_nm/(%EC%A3%BC)%EB%93%9C%EB%A6%BC%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=42pIeJ3wX6KbmLAt",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=PYK1BnWdZbbVUehk",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=wuoMvfYH793bkGSp",
+  "https://www.tiktok.com/discover/%EB%93%9C%EB%A6%BC%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-2026%EB%85%84-%EC%A0%84%EB%A7%9D",
   "https://www.dreamsecurity.com/",
   "https://smartcert.kr/",
+  "https://dreamsign.kr/faq",
+  "https://dealsite.co.kr/articles/63199/094046",
   "https://paxnetnews.com/articles/63199",
   "https://www.mobile-ok.com/",
-  "https://play.google.com/store/apps/details?id=com.dreamsecurity.dreamauth&hl=en_US",
-  "https://en.dreamsecurity.com/pr/news/1001",
-  "https://www.dreamsecurity.com/service/mobileok"
+  "https://www.dreamsign.kr/",
+  "https://play.google.com/store/apps/details?id=com.dreamsecurity.dreamauth&hl=en_US"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -224,9 +223,9 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 06:36",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -325,14 +324,14 @@
    }
   ],
   "valuation": {
-   "price": 2030,
-   "mcap": 0.2065,
+   "price": 2025,
+   "mcap": 0.206,
    "shares": 101704484,
    "total_shares": 95632844,
    "wavg_shares": 76648443,
-   "per": 15.6,
+   "per": 15.577,
    "eps": 130,
-   "pbr": 1.4438,
+   "pbr": 1.4403,
    "bps": 1406,
    "roe_ttm": 9.4,
    "ttm_window": "2025Q3~2026Q2",
