@@ -48,8 +48,12 @@ TICKER = re.compile(r"[0-9][0-9A-Za-z]{5}")
 KST = datetime.timezone(datetime.timedelta(hours=9))
 
 
+def now_kst():
+    return datetime.datetime.now(KST)
+
+
 def today_kst():
-    return datetime.datetime.now(KST).date()
+    return now_kst().date()
 
 
 # ── 마커 디렉터리 공통 ─────────────────────────────────────────────────
@@ -164,6 +168,30 @@ def load_failed_out():
 
 
 # ── universe · 리포트 보유 · 갱신 기준일 ────────────────────────────────
+# 상단 그리드(data/valuation.js)의 산식 버전. collect_valuation 과 _sync_grid 가
+# 같은 값을 봐야 서로 상대가 쓴 항목을 '옛 버전' 으로 오해하지 않는다.
+GRID_VERSION = "r8"
+
+
+def grid_summary(val, annual):
+    """리포트 quant → 그리드용 {eps, bps, roe, dps, rev_g} 요약.
+
+    그리드는 리포트의 숫자를 그대로 옮겨 쓴다. 요약 규칙이 두 벌로 갈라지면
+    언젠가 화면과 본문이 어긋나므로 여기 한 곳에만 둔다."""
+    out = {}
+    if val.get("eps") is not None:
+        out["eps"] = val["eps"]
+    if val.get("bps") is not None:
+        out["bps"] = val["bps"]
+    if val.get("roe_ttm") is not None:
+        out["roe"] = val["roe_ttm"]
+    if val.get("dps") is not None:
+        out["dps"] = val["dps"]
+    if len(annual) >= 2 and annual[0].get("rev") and annual[1].get("rev"):
+        out["rev_g"] = round((annual[0]["rev"] - annual[1]["rev"]) / abs(annual[1]["rev"]) * 100, 1)
+    return out
+
+
 def load_universe():
     """data/stocks.js → {ticker: stock}. 못 읽으면 빈 dict(호출자가 안전하게 건너뛴다)."""
     try:

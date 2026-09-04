@@ -27,6 +27,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import _reports_state as S
 import generate_reports as g
 import generate_reports_v2 as v2
 
@@ -62,20 +63,8 @@ def write_out(stocks, data_date):
 REPORTS_V2 = ROOT / "data" / "reports_v2"
 
 
-def _summary_from_valuation(val, annual):
-    """리포트 quant.valuation → 그리드용 {eps,bps,roe,dps,rev_g} 요약."""
-    out = {}
-    if val.get("eps") is not None:
-        out["eps"] = val["eps"]
-    if val.get("bps") is not None:
-        out["bps"] = val["bps"]
-    if val.get("roe_ttm") is not None:
-        out["roe"] = val["roe_ttm"]
-    if val.get("dps") is not None:
-        out["dps"] = val["dps"]
-    if len(annual) >= 2 and annual[0].get("rev") and annual[1].get("rev"):
-        out["rev_g"] = round((annual[0]["rev"] - annual[1]["rev"]) / abs(annual[1]["rev"]) * 100, 1)
-    return out
+# 요약 규칙은 _reports_state 에 있다 — 워치독의 _sync_grid 도 같은 것을 쓴다.
+_summary_from_valuation = S.grid_summary
 
 
 def collect_one(dart, ticker, stock):
@@ -127,7 +116,7 @@ def main():
     # 갱신 정책: 종목별로 산식버전(_v)이 같고 최근 REFRESH_DAYS 이내에 수집했으면 건너뜀.
     #   → 평소엔 종목당 약 한 달마다 자동 재수집(분기 실적을 한 달 내 자동 반영),
     #     산식(VERSION)이 바뀌면 1회 전체 재수집. 매일 전체 재수집하지 않는다.
-    VERSION = "r8"  # + 단위 자동보정(천원/백만원 공시) + 공시EPS 우선
+    VERSION = S.GRID_VERSION  # r8 = 단위 자동보정(천원/백만원 공시) + 공시EPS 우선
     REFRESH_DAYS = int(os.getenv("REFRESH_DAYS", "30"))
     today = datetime.date.today()
     force = os.getenv("FORCE") == "1"
