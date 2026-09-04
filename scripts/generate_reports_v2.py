@@ -1858,16 +1858,31 @@ def reusable_quant(tk, stock, today=None):
         return None, f"항등식 {bad[0][0]}"
     # 옛 코드는 분기 지배지분을 못 읽으면 자본총계(비지배 포함)로 대신했다. 그 값은
     # 항등식을 통과하면서도 틀렸다(SKC BPS 52,663 · KRX 22,956). 되짚어 잡는다.
-    a0, den = a[0], (v.get("wavg_shares") or v.get("total_shares"))
+    a0 = a[0]
+    den = v.get("wavg_shares") or v.get("total_shares")
     eq, eqo, nci = a0.get("equity"), a0.get("equity_owner"), a0.get("equity_nci")
     if den and eq and eqo and nci and abs(nci) > abs(eq) * 0.05:
         imp = v["bps"] * den
         if abs(imp / eq - 1) < 0.15 and abs(imp / eqo - 1) > 0.15:
             return None, "BPS 가 비지배지분까지 나눈 값으로 보임"
-    # KRX 가 매일 공표하는 BPS 와 크게 어긋나면 어느 쪽이 맞는지 여기서 못 가린다.
-    # 이익이 급증한 해에는 우리 쪽이 맞는 경우가 많지만, 확인 없이 옛 값을 물려주지 않는다.
-    if v.get("bps_krx") and v.get("bps_src") == "자체" and abs(v["bps"] / v["bps_krx"] - 1) > 0.30:
-        return None, f"BPS {v['bps']:,} 가 KRX 공표값 {v['bps_krx']:,.0f} 과 30% 초과 차이"
+    # KRX 공표 BPS 와 크게 다를 때 — 분자(자본)가 다른 것인지 분모(주식수)가 다른 것인지 가른다.
+    #
+    # KRX 는 최근 '결산' 지배지분을 쓴다. 우리는 최근 '분기말' 을 쓴다. 그래서 자본이
+    # 반년 사이에 크게 움직인 회사는 값이 벌어지는 게 정상이다 — 삼성화재가 그랬다.
+    # KRX 공표 BPS × 우리 분모 = 21.26조 = 우리 연간 표의 2025년말 지배지분과 정확히
+    # 같았다. 늦은 것은 KRX 고 우리가 맞다.
+    #
+    # 반대로 KRX 가 나눈 주식수(결산 지배지분 ÷ KRX BPS)가 우리 분모와 다르면 분모가
+    # 어긋난 것이고, 그건 우리 잘못일 수 있다 — 다시 받는다.
+    krx = v.get("bps_krx")
+    if krx and v.get("bps_src") == "자체" and abs(v["bps"] / krx - 1) > 0.30:
+        fy_eqo = a[0].get("equity_owner") or a[0].get("equity")
+        implied = (fy_eqo / krx) if (fy_eqo and fy_eqo > 0) else None
+        if not (implied and den and abs(implied / den - 1) <= 0.03):
+            return None, (f"BPS {v['bps']:,} 가 KRX {krx:,.0f} 과 30% 초과 차이 — "
+                          f"분모도 어긋난다(KRX 역산 {implied:,.0f} ↔ 우리 {den:,})"
+                          if implied and den else
+                          f"BPS {v['bps']:,} 가 KRX {krx:,.0f} 과 30% 초과 차이 — 분모를 대조할 수 없다")
     return _repriced(q, stock), None
 
 
