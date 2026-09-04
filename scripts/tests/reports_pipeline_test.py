@@ -101,14 +101,15 @@ def fin_factory(annual_rows, quarters=None, ccy="KRW"):
             if not r:
                 return None
             out = {"_fs": "CFS", "_reprt": reprt, "_ccy": ccy}
+            prev = r.get("_prev") or {}
             for k in ("rev", "op", "np", "np_owner", "np_nci", "cfo"):
                 if r.get(k) is not None:
-                    out[k] = {"amt": r[k], "add": r[k]}
+                    out[k] = {"amt": r[k], "add": r[k], "prv": prev.get(k)}
             for k in ("equity", "equity_owner", "equity_nci", "liab", "assets"):
                 if r.get(k) is not None:
-                    out[k] = {"amt": r[k], "add": None}
+                    out[k] = {"amt": r[k], "add": None, "prv": prev.get(k)}
             if r.get("eps") is not None:
-                out["eps_basic"] = {"amt": r["eps"], "add": r["eps"]}
+                out["eps_basic"] = {"amt": r["eps"], "add": r["eps"], "prv": prev.get("eps")}
             return out
         q = (quarters or {}).get((year, reprt))
         if not q:
@@ -529,6 +530,23 @@ ok(yrs == [2025, 2024, 2023, 2022], "2022 를 요약재무로 채워 4년이 된
 ok(r22 and r22["rev"] == 70 and r22["equity"] == 35 and r22["liab"] == 14 and r22.get("src") == "요약재무", "요약재무 값이 들어간다", str(r22))
 ok(r22 and r22["np_owner"] is None and r22["roe"] is None, "비지배지분이 있는 회사면 요약 해의 지배순이익은 비운다")
 ok(r22 and r22["debt_ratio"] == 40.0 and r22["opm"] == 10.0, "파생값은 재료로 다시 계산된다")
+
+# (a2) 요약재무도 없는 해 — 다음 해 보고서의 전기 비교치로 채운다 (보험사 2022)
+ann_ins = {2025: dict(rev=None, op=26_591, np=21_000, np_owner=20_183, equity=212_000, equity_owner=210_000, equity_nci=2_000, liab=750_000, eps=47_478),
+           2024: dict(rev=None, op=26_496, np=21_500, np_owner=20_736, equity=180_000, equity_owner=178_000, equity_nci=2_000, liab=820_000, eps=48_000),
+           2023: dict(rev=None, op=23_573, np=19_000, np_owner=18_184, equity=160_000, equity_owner=158_000, equity_nci=2_000, liab=680_000, eps=42_000,
+                      _prev=dict(op=20_000, np=16_000, np_owner=15_500, equity=150_000, equity_owner=148_500, equity_nci=1_500, liab=650_000, eps=36_000))}
+M._fin_all = fin_factory(ann_ins)
+M.dart_total_shares = lambda d, t: 43_000_000
+M.g._safe_finstate = lambda *a, **k: None       # 요약재무도 없다
+q = M.collect_quant(None, STOCKS[4]["ticker"], None, STOCKS[4])
+yrs = [r["year"] for r in q["annual"]]
+r22 = next((r for r in q["annual"] if r["year"] == 2022), None)
+ok(yrs == [2025, 2024, 2023, 2022], "2022 를 2023 보고서의 전기 칸으로 채운다", str(yrs))
+_u = (r22["equity"] / 150_000) if r22 else 1          # 단위 자동보정(천원·백만원 공시 추정)이 걸릴 수 있어 배수로 본다
+ok(r22 and r22["op"] == 20_000 * _u and r22["np_owner"] == 15_500 * _u and r22["equity_owner"] == 148_500 * _u and r22.get("src") == "전기 비교치", "전기 비교치가 들어간다", str(r22))
+ok(r22 and r22["eps_basic"] == 36_000 and r22["roe"] == round(15_500 / 148_500 * 100, 1), "주당이익·파생값도 전기 값으로")
+ok(not C.check_quant(q), "check_quant 통과", str(C.check_quant(q)))
 
 # (b) 분기 지배지분 태그가 없고 비지배지분이 큰 회사 — 자본총계에서 결산 비지배지분을 뺀다
 st = STOCKS[0]
