@@ -1,105 +1,95 @@
 {
  "title": {
-  "ko": "단일계약발 실적점프, 후속수주가 관건",
-  "en": "Single-Contract Earnings Jump, Follow-on Orders Key"
+  "ko": "단일계약 특수 이후 지속력이 관전점",
+  "en": "Post-Contract Durability Is the Key Question"
  },
  "lead": {
-  "ko": "보성파워텍은 한국전력공사와 체결한 동해안-신가평 송전선로 강관철탑 단일 계약에 힘입어 2025년 사상 최대 실적을 냈으나, 해당 계약이 2026년 2월 종료된 이후 후속 대형 수주가 아직 공시되지 않은 점이 향후 실적 방향을 가르는 핵심 변수다.",
-  "en": "Bosung Power Tech posted record 2025 earnings driven largely by a single steel-tower supply contract with KEPCO, but with that contract expired in February 2026 and no follow-on mega order yet disclosed, the trajectory of upcoming results remains an open question."
+  "ko": "보성파워텍은 한국전력공사(한전) 동해안-신가평 HVDC 송전선로 강관철탑 단일계약 덕에 2025년 실적이 급격히 개선됐으나, 해당 계약이 2026년 2월 말 종료된 뒤 매출 공백을 새 수주로 메울 수 있는지가 다음 국면의 핵심 관전 포인트다.",
+  "en": "Bosung Power Tech's 2025 earnings surged largely on a single HVDC steel-tower supply contract with Korea Electric Power Corporation (KEPCO), and whether new orders can fill the revenue gap left after that contract ended in late February 2026 is the key question for the next phase."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 1,475억원(전년 대비 91.3%↑), 영업이익 268억원(전년 대비 455.7%↑)으로 사상 최대 실적 달성",
-   "en": "2025 revenue of KRW 147.5bn (+91.3% YoY) and operating profit of KRW 26.8bn (+455.7% YoY) marked a record year"
+   "ko": "2025년 매출 1,474.9억원, 영업이익 268.1억원으로 전년 대비 큰 폭 개선됐으나 대부분 동해안-신가평 HVDC 강관철탑 단일계약에서 발생했다.",
+   "en": "2025 revenue reached KRW 147.5bn and operating profit KRW 26.8bn, a sharp improvement, but most of the gain stemmed from a single Donghaean-Singapyeong HVDC steel-tower contract."
   },
   {
-   "ko": "회사 스스로 실적 개선을 '동해안-신가평 건설사업 하나'로 설명, 후속 대형계약은 사업보고서 시점까지 미확인",
-   "en": "The company itself attributed the improvement to a single project, with no follow-on mega contract confirmed as of the business report filing"
+   "ko": "해당 계약은 2026년 2월 28일로 계약기간이 종료됐으며, 2026년 2분기 매출은 243.9억원으로 직전 분기 대비 줄어들며 공백 우려가 현실화되는 조짐을 보였다.",
+   "en": "That contract's term ended on February 28, 2026, and Q2 2026 revenue fell to KRW 24.4bn from the prior quarter, showing early signs of the anticipated revenue gap."
   },
   {
-   "ko": "2026년 1분기 매출 408억원에서 2분기 244억원으로 축소, 실적 정점 이후 둔화 신호",
-   "en": "Revenue slowed from KRW 40.8bn in Q1 2026 to KRW 24.4bn in Q2 2026, signaling deceleration after the peak"
+   "ko": "세안이엔씨향 173억원 철탑재 공급계약과 소형모듈원전(SMR) 연구시설 철골 공급계약 85억원 등 수주 다변화 시도가 이어지고 있다.",
+   "en": "The company has pursued order diversification, including a KRW 17.3bn steel-tower supply contract with Sean E&C and an KRW 8.5bn steel-frame supply contract for a small modular reactor (SMR) research facility."
   },
   {
-   "ko": "2026년 3월 최대주주가 상속을 통해 변경(임도수 회장 유고)되며 지배구조 이슈 발생",
-   "en": "Controlling shareholder changed via inheritance in March 2026 following the chairman's passing, introducing governance uncertainty"
+   "ko": "2026년 3월 창업자 임도수 회장의 유고로 상속에 따른 최대주주 지분 재편이 이뤄졌다.",
+   "en": "In March 2026, the passing of founder-chairman Im Do-su led to a reshuffling of major-shareholder stakes through inheritance."
   },
   {
-   "ko": "2006년 이후 현금배당 이력이 없고 공식 증권사 커버리지도 형성되지 않은 상태",
-   "en": "No cash dividend has been paid since 2006, and formal sell-side analyst coverage remains largely absent"
+   "ko": "국내 최초 KEPIC 내진 1등급 강구조물 인증과 신고리 3·4호기 철구조물 공급 이력을 바탕으로 원전·SMR 밸류체인 참여 기대가 지속되고 있다.",
+   "en": "Expectations for participation in the nuclear and SMR value chain persist, backed by the company's status as the first domestic firm certified for KEPIC seismic-grade-1 steel structures and its track record supplying steel structures for Shin-Gori Units 3 and 4."
   }
  ],
  "business": {
-  "ko": "보성파워텍은 전력 인프라 기자재를 생산하는 코스닥 상장사로, 사업 구조는 철구조사업과 중전기사업 두 축으로 나뉜다. 철구조사업은 송전철탑, 관형지지물, 발전소·변전소용 철강구조물을 생산하며, 중전기사업은 가스개폐기·주상변압기 등을 포함한다. 2026년 1분기 기준 제품별 매출을 보면 송전철탑이 전체 매출의 77.01%를 차지해 압도적 비중을 이루고, 관형지지물(4.42%)과 개폐기(4.01%), 가공선자재(1.82%), 철강구조물(1.77%), 상품매출(7.09%)이 나머지를 구성한다. 생산시설은 충북 충주와 전남 나주에 위치하며, 국내 철골·강관철탑 분야에서 오랜 업력을 보유한 것으로 알려져 있다. 최대 고객은 한국전력공사이며, 그 외 발전 자회사와 EPC(설계·조달·시공) 업체를 대상으로 공급한다. 2025년에는 한국수력원자력의 신한울 3·4호기 관련 철골 공급 등 원자력 분야 계약 이력도 확인된다. 경쟁구도상 산일전기, 제룡전기, 일진전기, 대한전선 등 전력기자재·중전기 업체들과 함께 전력 인프라 밸류체인에 속해 있으며, 회사는 최근 동남아시아·중동 등 해외 전력 인프라 입찰에도 참여를 지속하고 있는 것으로 파악된다. 2026년 3월에는 최대주주가 임도수 회장의 유고에 따른 상속을 계기로 임재황 외 2인으로 변경됐다.",
-  "en": "Bosung Power Tech is a KOSDAQ-listed manufacturer of power infrastructure equipment, with its business organized around two segments: steel structures and heavy electrical equipment. The steel structure segment produces transmission towers, tubular support structures, and steel structures for power plants and substations, while the heavy electrical equipment segment covers gas switchgear and pole transformers. As of Q1 2026, transmission towers accounted for 77.01% of total revenue, with tubular supports (4.42%), switchgear (4.01%), overhead line materials (1.82%), steel structures (1.77%), and merchandise sales (7.09%) making up the remainder. Its production facilities are located in Chungju, North Chungcheong Province, and Naju, South Jeolla Province. Its largest customer is Korea Electric Power Corporation (KEPCO), supplemented by power generation subsidiaries and EPC contractors. In 2025 the company also recorded a nuclear-related contract for steel structures tied to Hanul Units 3 and 4 operated by Korea Hydro & Nuclear Power. Within the competitive landscape it sits alongside other power equipment makers such as Sanil Electric, Jeryong Electric, Iljin Electric, and Daehan Cable in the broader power infrastructure value chain, and it has continued to pursue overseas bids in Southeast Asia and the Middle East. In March 2026 the largest shareholder position changed to Yim Jae-hwang and two others through inheritance following the passing of former chairman Yim Do-su."
+  "ko": "보성파워텍은 1970년대 창업 이래 송전철탑, 관형지지물(강관전주), 가스개폐기, 가공선자재, 철강구조물 등 전력 기자재를 생산·공급해 온 전력인프라 전문기업이다. 충북 충주공장과 전남 나주공장에서 송배전 자재 및 발전소·변전소용 철골을 직접 생산한다. 2026년 1분기 제품별 매출 구성을 보면 송전철탑이 314.7억원으로 전체 매출의 77.01%를 차지해 최대 매출원이며, 관형지지물 4.42%, 개폐기 4.01%, 가공선자재 1.82%, 철강구조물 1.77%, 상품 매출 7.09% 순이다. 주요 고객은 한국전력공사(한전)이며, 발전 자회사 및 국내외 EPC(설계·조달·시공) 업체로도 공급하고 있다. 국내 최초로 전력산업기술기준(KEPIC) 내진 1등급 강구조물 제작 인증을 획득했으며, 신고리 원전 3·4호기 철구조물 공급 이력도 보유하고 있어 원자력발전소용 기자재 시장에서도 입지를 다져왔다. 최근에는 소형모듈원전(SMR) 연구시설에 철골을 공급하는 계약을 체결하는 등 차세대 원전 분야로도 사업 영역을 넓히고 있다. 회사는 2026년 4월 이크레더블로부터 BBB+ 신용등급을 받았다. 철탑 매출 비중이 특정 프로젝트에 따라 분기별로 크게 출렁이는 구조적 특성상, 매출원 다변화 여부가 사업 안정성을 가늠하는 핵심 변수다.",
+  "en": "Since its founding in the 1970s, Bosung Power Tech has produced and supplied power equipment including transmission towers, tubular support structures, gas switchgear, overhead line materials, and steel structures. The company manufactures transmission and distribution materials and power-plant/substation steel frames directly at its Chungju and Naju plants. In the first quarter of 2026, transmission towers accounted for KRW 31.5bn, or 77.01% of total revenue, the largest single product line, followed by tubular support structures at 4.42%, switchgear at 4.01%, overhead line materials at 1.82%, steel structures at 1.77%, and merchandise sales at 7.09%. Its primary customer is Korea Electric Power Corporation (KEPCO), with additional sales to power-generation subsidiaries and domestic/overseas EPC (engineering, procurement, construction) firms. The company was the first in Korea to obtain KEPIC seismic-grade-1 certification for steel structure fabrication and has a track record supplying steel structures for Shin-Gori Nuclear Units 3 and 4, establishing a foothold in the nuclear power equipment market. It has also expanded into next-generation nuclear technology, signing a contract to supply steel frames for a small modular reactor (SMR) research facility. The company received a BBB+ credit rating from eCredible in April 2026. Because the transmission-tower revenue share can swing sharply by quarter depending on individual projects, order diversification is a key variable for assessing business stability."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 1,474억 8,645만원으로 2024년 770억 6,218만원 대비 91.3% 증가했고, 영업이익은 268억 599만원으로 전년 48억 2,410만원에서 455.7% 급증했다. 지배주주 순이익도 203억 1,442만원으로 전년 59억 5,222만원 대비 크게 늘었으며, 영업이익률은 6.3%에서 18.2%로 대폭 개선됐다. 이 같은 도약은 2025년 9월 30일 한국전력공사와 체결한 234억 5,002만원 규모의 동해안-신가평 송전선로 강관철탑 공급계약이 사실상 전부를 견인한 것으로, 회사 경영본부장도 이 계약을 실적 개선의 유일한 요인으로 직접 언급한 바 있다. 분기별로 보면 2025년 2분기 매출 558억 3,180만원, 영업이익 136억 6,396만원으로 정점을 찍은 뒤 3분기 368억 1,142만원·61억 7,461만원, 4분기 373억 8,830만원·54억 2,032만원으로 점차 축소되는 흐름을 보였다. 2026년 들어서도 1분기 매출 408억 6,392만원·영업이익 59억 5,250만원을 기록했지만 2분기에는 매출이 243억 9,115만원, 영업이익이 47억 2,642만원으로 다시 줄어 계약 종료 이후 실적 둔화 신호가 나타났다. 다만 영업이익률 자체는 2분기에도 19% 안팎을 유지해 수익성은 상대적으로 견조했던 것으로 파악된다. 재무구조 측면에서는 2025년 말 자기자본이 1,102억 3,106만원, 부채총계 230억 4,938만원으로 부채비율이 20.9%에 그쳐 안정적인 수준을 나타냈고, 영업활동현금흐름도 437억원으로 순이익 규모를 상회했다. 2022년(-111억원 적자)과 2023년(43억원), 2024년(60억원)의 부진했던 실적과 비교하면 2025년은 뚜렷한 흑자 확대 국면에 해당하지만, 그 성장의 상당 부분이 단일 프로젝트에 의존했다는 점은 향후 분기 실적의 지속성을 가늠하는 데 중요한 변수로 남는다.",
-  "en": "Consolidated 2025 revenue reached KRW 147.49bn, up 91.3% from KRW 77.06bn in 2024, while operating profit surged 455.7% to KRW 26.81bn from KRW 4.82bn a year earlier. Owner's net income also jumped to KRW 20.31bn from KRW 5.95bn, and the operating margin expanded sharply from 6.3% to 18.2%. This leap was driven almost entirely by a KRW 23.45bn transmission tower supply contract signed with KEPCO on September 30, 2025 for the Donghae-Singapyeong line, with the company's management explicitly identifying this single project as the sole driver of the improvement. On a quarterly basis, revenue peaked at KRW 55.83bn with operating profit of KRW 13.66bn in Q2 2025, then eased to KRW 36.81bn/KRW 6.17bn in Q3 and KRW 37.39bn/KRW 5.42bn in Q4. Into 2026, Q1 revenue was KRW 40.86bn with operating profit of KRW 5.95bn, but Q2 saw revenue fall further to KRW 24.39bn and operating profit to KRW 4.73bn, signaling deceleration after the contract's expiry. Notably, the operating margin held near 19% even in Q2, suggesting profitability remained relatively resilient. On the balance sheet, year-end 2025 equity stood at KRW 110.23bn against total liabilities of KRW 23.05bn, keeping the debt ratio at a modest 20.9%, while operating cash flow of KRW 43.70bn exceeded net income. Compared with the weaker results of 2022 (a loss of KRW 11.11bn), 2023 (KRW 4.35bn), and 2024 (KRW 5.95bn), 2025 marks a clear expansion into profitability, though the heavy reliance on a single project remains a key variable for assessing the sustainability of future quarterly results."
+  "ko": "보성파워텍의 실적은 최근 4년간 극명한 반전을 보였다. 2022년에는 매출 542.0억원, 영업손실 44.9억원, 순손실 111.1억원(영업이익률 -8.3%)을 기록하며 원자재 가격 부담 속 적자를 냈다. 2023년에는 매출 784.9억원, 영업이익 33.5억원, 순이익 43.5억원(영업이익률 4.3%)으로 흑자 전환했고, 2024년에는 매출이 770.6억원으로 소폭 줄었으나 영업이익 48.2억원, 순이익 59.5억원(영업이익률 6.3%)으로 수익성은 다소 개선됐다. 2025년에는 매출이 1,474.9억원으로 전년 대비 급증했고 영업이익 268.1억원, 지배주주 순이익 203.1억원, 영업이익률 18.2%로 이익 규모가 크게 확대됐다. 회사는 사업보고서에서 이 실적을 만든 주역이 동해안-신가평 송전선로 HVDC(고압직류송전) 강관철탑 매출 증가에 따른 수익구조 개선이라고 직접 명시했다. 분기별로 보면 2025년 2분기 매출 558.3억원, 영업이익 136.6억원(영업이익률 24.5%)으로 정점을 찍은 뒤, 3분기 368.1억원·영업이익률 16.8%, 4분기 373.9억원·영업이익률 14.5%로 점차 낮아졌고, 2026년 1분기에는 408.6억원·영업이익률 14.6%로 유지됐으나 2분기에는 243.9억원으로 매출이 크게 줄면서도 영업이익률은 19.4%로 오히려 반등했다. 해당 HVDC 계약은 2025년 9월 234.5억원 규모로 체결돼 2026년 2월 28일까지 공급하도록 계약 기간이 설정됐으며, 회사 경영본부장은 당시 실적 개선을 이끈 요인이 이 건설사업 하나뿐이라고 밝힌 바 있어 매출원 집중도에 대한 우려가 상존한다. 현금흐름 측면에서도 2025년 영업활동현금흐름이 437.0억원으로 크게 개선돼 2024년(-100.0억원)의 마이너스 흐름에서 벗어났다.",
+  "en": "Bosung Power Tech's earnings have swung dramatically over the past four years. In 2022 the company posted revenue of KRW 54.2bn, an operating loss of KRW 4.49bn, and a net loss of KRW 11.11bn (operating margin of -8.3%) amid raw-material cost pressure. In 2023 it turned profitable with revenue of KRW 78.5bn, operating profit of KRW 3.35bn, and net income of KRW 4.35bn (operating margin 4.3%); in 2024 revenue slipped slightly to KRW 77.1bn while profitability improved modestly to operating profit of KRW 4.82bn and net income of KRW 5.95bn (operating margin 6.3%). In 2025, revenue jumped to KRW 147.5bn year over year, with operating profit of KRW 26.8bn, owners' net income of KRW 20.3bn, and an operating margin of 18.2%. The company stated directly in its business report that this performance was driven by improved profit structure from increased sales of HVDC (high-voltage direct current) steel transmission towers for the Donghaean-Singapyeong line. On a quarterly basis, revenue peaked at KRW 55.8bn with an operating margin of 24.5% in Q2 2025, then eased to KRW 36.8bn (16.8% margin) in Q3 and KRW 37.4bn (14.5% margin) in Q4; Q1 2026 held at KRW 40.9bn (14.6% margin), but Q2 2026 revenue dropped sharply to KRW 24.4bn even as the operating margin rebounded to 19.4%. That HVDC contract, signed in September 2025 for KRW 23.45bn, ran through February 28, 2026, and the company's management office head noted at the time that this single construction project was the sole driver of the earnings improvement, underscoring persistent concentration risk in the revenue base. Cash flow also improved markedly, with 2025 operating cash flow of KRW 43.7bn reversing the negative KRW 10.0bn flow recorded in 2024."
  },
  "industry": {
-  "ko": "전력기자재 산업은 한국전력공사의 송변전 설비 투자 계획과 정부의 전력수급기본계획에 크게 좌우되는 수주형 산업이다. 최근에는 AI 데이터센터 확산에 따른 전력 수요 증가와 노후 전력망 교체 수요가 맞물려 HVDC(고압직류송전) 등 대용량 송전 인프라 투자 확대 기대가 부각되고 있다. 정부의 원전 및 SMR(소형모듈원전) 관련 정책 논의도 관련주 전반의 투자 심리에 영향을 미치는 요인으로 작용해왔다. 경쟁구도상 보성파워텍은 산일전기(초고압 변압기), 일진전기(전선), 제룡전기 등과 함께 전력 인프라 공급망에 속해 있으며, 각 업체는 제품군과 매출 규모, 수익성 구조가 서로 다르다. 산업 특성상 개별 기업의 실적은 특정 대형 프로젝트의 계약·착공·준공 시점에 따라 분기별로 크게 출렁이는 경향이 있어, 안정적 매출 기반을 갖춘 대형 경쟁사와 달리 중견 업체는 실적 변동성이 상대적으로 클 수 있다. 해외 시장에서는 동남아시아·중동 등 신흥국의 전력 인프라 투자 수요가 확대되는 추세이며, 국내 업체들의 수출 확대 시도도 이어지고 있다. 다만 관세·물류비 부담과 현지 EPC 업체와의 협력 관계 구축이 해외 수주 확대의 관건으로 지목된다.",
-  "en": "The power equipment industry is an order-driven sector heavily dependent on KEPCO's transmission and substation investment plans and the government's long-term power supply and demand plan. Recently, expectations for expanded investment in high-capacity transmission infrastructure, including HVDC lines, have grown alongside rising power demand from AI data centers and aging grid replacement needs. Government discussions around nuclear power and SMR (small modular reactor) policy have also influenced investor sentiment across related stocks. Competitively, Bosung Power Tech operates within a supply chain alongside firms such as Sanil Electric (ultra-high-voltage transformers), Iljin Electric (cables), and Jeryong Electric, each with different product mixes, revenue scale, and profitability structures. Given the industry's project-based nature, individual companies' results can swing significantly by quarter depending on the timing of contract signing, construction start, and completion of specific large projects, meaning mid-sized suppliers may face relatively greater earnings volatility than larger, more diversified peers. In overseas markets, power infrastructure investment demand is expanding in emerging regions such as Southeast Asia and the Middle East, and domestic suppliers continue efforts to grow exports. However, tariff and logistics cost burdens, along with building partnerships with local EPC contractors, are cited as key challenges to expanding overseas order intake."
+  "ko": "전력 기자재 업종은 최근 인공지능(AI) 데이터센터 확산에 따른 전력 수요 급증과 노후 송전망 교체 수요가 맞물리며 투자 확대 국면에 진입한 것으로 평가된다. 특히 미국 전력 시장이 노후 송전망 교체 주기와 신재생 에너지 발전소 연결을 위한 신규 인프라 투자 수요가 맞물리며 유례없는 호황을 맞이하고 있다는 평가가 나오고 있으며, 이는 국내 전력 기자재 업체들의 수주 잔고 확대 기대로 이어지고 있다. 보성파워텍은 송배전 자재 및 철탑 제작 분야에서 오랜 기술력을 보유하고 있어 이러한 시장 환경의 수혜주로 분류돼 왔다. 한전에 송전 철탑 구조물을 공급해 온 레퍼런스를 바탕으로 향후 데이터센터 전용 송전 인프라 구축 과정에서도 밸류체인 편입 가능성이 거론되고 있다. 다만 이러한 테마성 기대와 실제 실적 연계성 사이에는 시차가 존재한다는 지적도 있다. 수주가 실제 매출로 인식되기까지 상당한 시간이 걸리며, 글로벌 원자재(철강) 가격 상승이 수익성에 부정적 영향을 줄 가능성도 배제할 수 없다. 정부의 에너지 정책 변화나 지정학적 변수에 따른 원자재 가격 변동성도 업종 전반의 불확실성 요인으로 남아 있다. 원자력발전 분야에서도 정책적 관심이 이어지고 있어, KEPIC 인증을 보유한 보성파워텍이 관련 기자재 공급망에서 상대적으로 유리한 위치에 있다는 평가가 나온다.",
+  "en": "The power equipment industry is seen as entering an investment expansion phase as surging power demand from AI data center growth converges with replacement demand for aging transmission networks. In particular, the U.S. power market is described as experiencing an unprecedented boom driven by the aging-grid replacement cycle combined with new infrastructure demand for connecting renewable power plants, which is expected to translate into growing order backlogs for domestic power equipment makers. Bosung Power Tech has long been classified as a beneficiary of this environment given its established technical capability in transmission/distribution materials and tower fabrication. Building on its supply track record with KEPCO, the company has been mentioned as a candidate for inclusion in the value chain for future data-center-dedicated transmission infrastructure projects. However, there is also commentary noting a lag between such thematic expectations and actual earnings linkage. It takes considerable time for orders to be recognized as revenue, and rising global steel prices could weigh negatively on profitability. Volatility in raw material prices driven by energy policy shifts or geopolitical variables also remains a source of industry-wide uncertainty. Continued policy attention to nuclear power has led some to view Bosung Power Tech, with its KEPIC certification, as relatively well positioned within the related equipment supply chain."
  },
  "outlook": {
-  "ko": "보성파워텍의 2026년 실적 방향성은 동해안-신가평 계약 종료(2026년 2월 말) 이후 후속 대형 수주 확보 여부에 크게 달려 있다. 2025년 사업보고서(제출일 기준)에는 '경영상의 주요계약 등은 없음'이라고 명시돼 있어, 사업보고서 제출 시점까지 후속 대형 계약이 공시되지 않았던 점이 확인된다. 2026년 1분기와 2분기 실적에서 매출이 순차적으로 감소한 점은 이러한 계약 공백이 실적에 실제로 반영되고 있음을 시사한다. 회사 측은 과거 언론 인터뷰에서 \"몇 건의 사업 영역이 더 남아있는 만큼 수주를 위해 노력하고 납기를 맞추는 데 최선을 다할 것\"이라고 언급한 바 있어, 추가 수주 확보 노력이 이어지고 있는 것으로 파악된다. 정부의 HVDC 전력망 확충 정책과 AI 데이터센터발 전력 수요 증가는 중장기적으로 회사의 잠재 수주 기반을 넓힐 수 있는 요인으로 거론된다. 다만 이러한 정책·수요 모멘텀이 실제 신규 계약 체결로 이어지는 시점과 규모는 아직 확인되지 않은 상태다. SMR·원전 관련 정부 정책 발표 및 해외 원전 프로젝트 입찰 동향도 회사의 수주 파이프라인에 영향을 줄 수 있는 변수로 지목된다.",
-  "en": "The trajectory of Bosung Power Tech's 2026 results depends heavily on whether a follow-on large contract is secured after the expiry of the Donghae-Singapyeong contract at the end of February 2026. The 2025 business report, as filed, explicitly stated that there were no major ongoing management contracts as of the filing date, confirming that no follow-on mega deal had been disclosed by that point. The sequential revenue decline seen in Q1 and Q2 2026 suggests this contract gap is already showing up in results. Company representatives have previously stated in media interviews that several business areas remain in progress and that the firm will strive to secure orders and meet delivery deadlines, indicating continued efforts to win additional contracts. Government policy to expand HVDC transmission infrastructure and rising power demand driven by AI data centers are cited as factors that could broaden the company's potential order base over the medium to long term. However, the timing and scale at which such policy and demand tailwinds might translate into actual new contracts remain unconfirmed. Government announcements on SMR and nuclear policy, as well as overseas nuclear project bidding trends, are also flagged as variables that could affect the company's order pipeline."
+  "ko": "보성파워텍의 핵심 대형계약이었던 동해안-신가평 HVDC 강관철탑 공급계약은 2026년 2월 말로 종료됐으며, 사업보고서 제출 시점까지 이를 대체할 후속 대형계약은 확보되지 않은 상태였다. 다만 회사 경영본부장은 같은 건설사업과 관련해 앞서 계약이 성사되지 않은 물량 중 이달 내 추가 공시가 나올 수 있는 것들이 있다고 언급한 바 있어, 동일 프로젝트 관련 후속 수주 가능성이 완전히 닫힌 것은 아니다. 실제로 2025년 10월 세안이엔씨와 음성천연가스발전소 송전선로 철탑재 공급계약 173억원을 별도로 체결하며 고객 다변화의 신호를 보였고, 소형모듈원전(SMR) 연구소 철골 공급 계약 85억원도 성사시켰다. 이는 한전 단일 고객 의존도를 낮추고 원전·차세대 에너지 분야로 사업 영역을 넓히려는 시도로 해석된다. 2026년 1분기 매출은 408.6억원으로 HVDC 계약 물량이 상당 부분 반영된 것으로 보이나, 2분기 매출이 243.9억원으로 축소된 점은 해당 계약 종료에 따른 매출 공백이 현실화되고 있음을 보여준다. 향후 실적의 관전 포인트는 세안이엔씨 계약의 매출 인식 속도, 한전의 신규 송전선로 발주 재개 여부, SMR·원전 관련 후속 계약 성사 여부다. 2026년 3월에는 창업자 유고에 따른 상속으로 최대주주 지분 구조가 재편됐는데, 이 과정이 경영 안정성에 미치는 영향도 지켜볼 변수다.",
+  "en": "Bosung Power Tech's key large contract for HVDC steel transmission towers on the Donghaean-Singapyeong line ended in late February 2026, and as of its business report filing, no replacement large contract had yet been secured. However, the company's management office head noted that additional disclosures related to portions of the same construction project not yet contracted could be forthcoming within the month, suggesting the possibility of follow-on orders tied to the same project is not entirely closed. Indeed, in October 2025 the company signed a separate KRW 17.3bn contract with Sean E&C to supply steel tower materials for a transmission line serving the Eumseong natural gas power plant, and secured an KRW 8.5bn contract to supply steel frames for a small modular reactor (SMR) research facility, both signaling efforts toward customer diversification. This can be read as an attempt to reduce dependence on KEPCO as a single customer while expanding into nuclear and next-generation energy segments. Q1 2026 revenue of KRW 40.9bn appears to reflect a substantial portion of the HVDC contract volume, but the drop to KRW 24.4bn in Q2 shows the anticipated revenue gap from the contract's expiry materializing. Key items to watch going forward are the pace of revenue recognition from the Sean E&C contract, whether KEPCO resumes new transmission-line orders, and whether follow-on SMR/nuclear-related contracts are secured. In March 2026, the major-shareholder structure was reorganized through inheritance following the founder's passing, and how this process affects management stability is another variable to monitor."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 순자산가치 대비 상당한 프리미엄이 형성된 구간에서 거래되고 있으며, 이는 2025년 실적의 급격한 회복과 전력·원전 관련 테마성 관심이 반영된 결과로 해석된다. 회사는 2006년 이후 현금배당을 지급한 이력이 없어, 주주환원 측면에서는 업종 평균과 비교할 유의미한 배당 트랙레코드가 없는 상태다. 실적은 적자에서 큰 폭의 흑자로 전환되며 방향성 자체는 뚜렷하게 개선됐으나, 그 개선이 단일 프로젝트에 크게 의존했던 만큼 향후 분기 실적의 지속성에 따라 재무 지표와 시장의 평가 격차가 좌우될 가능성이 있다. 공식 증권사 커버리지가 형성되지 않은 상태로 파악되어, 시장에서 통용되는 정량적 컨센서스나 목표주가 비교 기준이 뚜렷하지 않다는 점도 밸류에이션 판단 시 참고할 부분이다. 결국 현재의 순자산 대비 배수 수준을 어떻게 해석할지는 후속 수주 확보 여부와 실적 지속성 확인에 따라 갈릴 수 있는 문제로 보인다.",
-  "en": "The current share price trades at a notable premium to net asset value, reflecting both the sharp 2025 earnings recovery and thematic interest tied to power and nuclear-related sentiment. The company has not paid a cash dividend since 2006, meaning there is no meaningful shareholder-return track record to compare against sector averages. While the earnings trajectory clearly shifted from losses to substantial profit, that improvement was heavily dependent on a single project, meaning the gap between financial metrics and market valuation could hinge on whether the earnings level proves sustainable in coming quarters. Formal sell-side analyst coverage appears largely absent, meaning there is no well-established quantitative consensus or target-price benchmark commonly used in the market, which is worth noting when assessing valuation. Ultimately, how the current multiple relative to net assets should be interpreted may depend on whether a follow-on order is secured and whether the recent earnings level proves durable."
+  "ko": "보성파워텍의 주가는 2022년 적자에서 2023~2025년 흑자로, 다시 이익 규모가 크게 확대되는 국면을 반영해 재평가돼 온 것으로 보인다. 다만 이 재평가의 상당 부분이 단일 대형계약에서 나온 일시적 이익 확대를 반영하고 있어, 해당 계약 종료 이후의 실적 지속력에 대한 시장의 판단이 향후 밸류에이션 경로에 영향을 줄 수 있다. 현재 회사는 별도의 정기 현금배당을 지급하지 않고 있어, 주가는 배당 매력보다는 실적 모멘텀과 수주 이벤트에 따라 움직이는 경향이 강하다. 순자산가치 대비 주가 수준은 이익 회복 이전 대비 프리미엄이 형성된 구간에 있는 것으로 파악되며, 이는 향후 실적이 이 프리미엄을 뒷받침할 만큼 지속되는지에 따라 재평가되거나 되돌려질 수 있는 사안이다. 소형주 특성상 거래 밴드의 변동성이 크고, 매출원 집중도·지배구조 변화 등 비영업적 이슈도 가격 형성에 영향을 미치는 요인으로 함께 고려할 필요가 있다.",
+  "en": "Bosung Power Tech's valuation appears to have been re-rated in step with its shift from a 2022 loss to profitability in 2023-2025 and the subsequent sharp expansion in earnings. However, much of this re-rating reflects a temporary profit boost from a single large contract, so market judgment on earnings durability after that contract's expiry could influence the valuation path going forward. The company does not currently pay a regular cash dividend, so its share price tends to move more on earnings momentum and order-related events than on dividend appeal. Relative to net asset value, the shares appear to trade at a premium versus the pre-recovery period, a premium that could be reinforced or unwound depending on whether future earnings sustain it. Given the volatility typical of small-cap shares, factors such as revenue-source concentration and governance changes should also be weighed alongside earnings trends as influences on price formation."
  },
  "bull": [
   {
    "title": {
-    "ko": "전력망 투자 확대 수혜 가능성",
-    "en": "Potential Beneficiary of Grid Investment Expansion"
+    "ko": "수주 다변화 시도",
+    "en": "Order Diversification Efforts"
    },
    "body": {
-    "ko": "AI 데이터센터 확산과 노후 전력망 교체 수요가 겹치며 정부의 HVDC 전력망 확충 정책이 추진되고 있다. 보성파워텍은 송전철탑·강관철탑 분야에서 한국전력공사와의 공급 이력을 보유하고 있어 관련 투자 사이클에서 수주 기회를 확보할 잠재력이 있다. 신한울 3·4호기 관련 철골 공급 등 원자력 분야 계약 경험도 향후 원전·SMR 관련 프로젝트 참여 가능성을 뒷받침하는 요소로 거론된다.",
-    "en": "Government policy to expand HVDC grid infrastructure is advancing amid overlapping demand from AI data center growth and aging grid replacement needs. Bosung Power Tech has a supply track record with KEPCO in transmission and steel tower segments, giving it potential order opportunities within this investment cycle. Its prior experience supplying steel structures for the Hanul Units 3 and 4 nuclear project is also cited as supporting potential future participation in nuclear and SMR-related projects."
+    "ko": "세안이엔씨향 173억원 계약과 SMR 연구시설향 85억원 계약 등 한전 단일 의존에서 벗어나려는 움직임이 나타나고 있다. 이러한 다변화가 확대되면 특정 프로젝트 종료에 따른 매출 공백 위험을 완화할 수 있다. 아직 규모는 과거 HVDC 계약 대비 작지만 고객·제품군 확장의 초기 신호로 해석될 수 있다.",
+    "en": "Moves away from sole dependence on KEPCO are emerging, including the KRW 17.3bn Sean E&C contract and the KRW 8.5bn SMR research facility contract. If such diversification expands, it could mitigate the revenue-gap risk from the expiry of any single project. Though still small relative to the past HVDC contract, these can be read as early signs of customer and product-line expansion."
    }
   },
   {
    "title": {
-    "ko": "안정적 재무구조",
-    "en": "Stable Balance Sheet"
+    "ko": "원전·SMR 밸류체인 이력",
+    "en": "Nuclear and SMR Value Chain Track Record"
    },
    "body": {
-    "ko": "2025년 말 부채비율이 20.9%에 불과해 낮은 수준의 레버리지를 유지하고 있다. 영업활동현금흐름도 437억원으로 순이익을 상회해 현금창출력이 개선된 모습을 보였다. 이러한 재무 건전성은 향후 신규 수주에 따른 원재료 구매나 생산 확대에 대응할 여력을 뒷받침할 수 있다.",
-    "en": "The debt ratio stood at just 20.9% at year-end 2025, maintaining low leverage. Operating cash flow of KRW 43.7bn exceeded net income, indicating improved cash generation. This financial soundness could support the company's ability to respond to raw material purchases and production expansion tied to future new orders."
+    "ko": "국내 최초 KEPIC 내진 1등급 강구조물 인증과 신고리 3·4호기 철구조물 공급 이력을 보유하고 있다. 정부의 원전 정책 강화 기조 속에서 SMR 등 차세대 원전 분야 참여 기대가 이어지고 있다. 다만 이는 정책 일정에 따라 실현 시점이 좌우되는 장기 스토리에 가깝다.",
+    "en": "The company holds Korea's first KEPIC seismic-grade-1 certification for steel structures and a track record supplying steel structures for Shin-Gori Units 3 and 4. Amid the government's continued emphasis on nuclear policy, expectations for participation in next-generation nuclear areas such as SMRs persist. That said, this remains more of a long-term story whose realization timing depends on policy schedules."
    }
   },
   {
    "title": {
-    "ko": "낮은 매출 기반 대비 성장 잠재력",
-    "en": "Growth Potential from a Low Revenue Base"
+    "ko": "재무 건전성 및 현금흐름 개선",
+    "en": "Improved Financial Health and Cash Flow"
    },
    "body": {
-    "ko": "2020~2022년 매출이 500억~800억원대에 머물렀던 것과 비교하면 2025년 매출은 이미 이를 크게 상회했다. 절대 매출 규모가 업종 내 대형 경쟁사보다 작은 편이어서, 대형 수주 한 건이 실적에 미치는 영향력이 상대적으로 크게 나타나는 구조다. 이는 향후 추가 계약 확보 시 실적 개선 폭이 두드러질 수 있는 사업 구조적 특성으로 해석된다.",
-    "en": "Compared with the KRW 50-80bn revenue range seen in 2020-2022, 2025 revenue already exceeded that level significantly. Given its smaller absolute revenue scale relative to larger industry peers, a single major order can have a proportionally larger impact on results. This is viewed as a structural characteristic that could translate into a pronounced earnings uplift if additional contracts are secured going forward."
+    "ko": "2025년 부채비율은 20.9%로 낮은 수준을 유지했고, 영업활동현금흐름은 437.0억원으로 2024년의 마이너스 흐름에서 크게 개선됐다. 자기자본도 2022년 807.8억원에서 2025년 1,102.3억원으로 늘어났다. 재무 여력이 확대되면 신규 투자나 수주 대응 능력에 도움이 될 수 있다.",
+    "en": "The 2025 debt ratio remained low at 20.9%, and operating cash flow of KRW 43.7bn marked a sharp improvement from the negative flow in 2024. Equity also grew from KRW 80.8bn in 2022 to KRW 110.2bn in 2025. Expanded financial flexibility could support new investments and the ability to respond to future orders."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "단일 계약 의존 리스크",
-    "en": "Single-Contract Dependency Risk"
+    "ko": "매출원 집중도에 따른 실적 공백 우려",
+    "en": "Revenue Concentration and Earnings Gap Risk"
    },
    "body": {
-    "ko": "2025년 실적 급증의 대부분이 동해안-신가평 송전선로 강관철탑 계약 하나에서 발생했다는 점이 회사 스스로에 의해 확인됐다. 해당 계약은 2026년 2월 말 종료됐고, 사업보고서 제출 시점까지 이를 대체할 후속 대형계약이 공시되지 않았다. 매출 기반이 특정 프로젝트에 편중된 구조는 계약이 종료된 이후 실적 공백으로 이어질 가능성을 내포한다.",
-    "en": "The company itself confirmed that most of the 2025 earnings surge stemmed from a single steel tower contract for the Donghae-Singapyeong transmission line. That contract expired at the end of February 2026, and no replacement large contract had been disclosed as of the business report filing. A revenue base concentrated in a specific project carries the risk of an earnings gap once that contract ends."
-   }
-  },
-  {
-   "title": {
-    "ko": "분기 실적 변동성 확대",
-    "en": "Increasing Quarterly Earnings Volatility"
-   },
-   "body": {
-    "ko": "매출은 2025년 2분기 558억원에서 3분기 368억원, 4분기 374억원으로 점차 줄었고, 2026년에는 1분기 409억원에서 2분기 244억원으로 다시 축소됐다. 수주 산업 특성상 공정 진행 속도와 매출 인식 시점에 따라 분기별 편차가 크게 나타날 수 있음을 시사한다. 이러한 변동성은 향후 실적 추정의 불확실성을 높이는 요인이다.",
-    "en": "Revenue declined from KRW 55.8bn in Q2 2025 to KRW 36.8bn in Q3 and KRW 37.4bn in Q4, then fell further from KRW 40.9bn in Q1 2026 to KRW 24.4bn in Q2. This reflects the order-driven industry's tendency for large quarterly swings depending on project progress and revenue recognition timing. Such volatility adds uncertainty to future earnings projections."
+    "ko": "2025년 실적 개선의 대부분이 동해안-신가평 HVDC 강관철탑 단일계약에서 나왔고, 회사 스스로도 이를 인정한 바 있다. 해당 계약이 2026년 2월 말로 종료된 뒤 2분기 매출이 전 분기 대비 크게 줄었다. 후속 대형계약이 아직 명확히 확보되지 않은 상태에서 이 흐름이 이어질지가 관전 포인트다.",
+    "en": "Most of the 2025 earnings improvement came from a single Donghaean-Singapyeong HVDC steel-tower contract, a point the company itself acknowledged. After that contract ended in late February 2026, Q2 revenue fell sharply from the prior quarter. Whether this trend continues remains to be seen, as a clear replacement large contract has not yet been secured."
    }
   },
   {
@@ -108,120 +98,120 @@
     "en": "Uncertainty from Governance Change"
    },
    "body": {
-    "ko": "2026년 3월 임도수 회장의 유고에 따라 최대주주가 임재황 외 2인으로 변경됐다. 상속에 따른 지배구조 변화는 경영 안정성이나 향후 의사결정 구조에 대한 불확실성을 수반할 수 있다. 최대주주 변경 이후 경영 전략이나 사업 방향에 변화가 있을지 여부는 아직 지켜봐야 하는 상황이다.",
-    "en": "In March 2026, the largest shareholder position changed to Yim Jae-hwang and two others following the passing of Chairman Yim Do-su. A governance change driven by inheritance can introduce uncertainty around management stability and future decision-making structures. Whether the change in controlling shareholder will affect management strategy or business direction remains to be seen."
+    "ko": "2026년 3월 창업자 임도수 회장의 유고로 상속에 따른 최대주주 지분 재편이 이뤄졌다. 상속 재산분할 협의 과정에서 지분 구조가 조정됐으며, 향후 지분 매각 등 추가 변동 가능성을 배제할 수 없다. 경영 승계 과정의 안정성 여부도 지켜볼 필요가 있다.",
+    "en": "In March 2026, the passing of founder-chairman Im Do-su led to a reshuffling of major-shareholder stakes through inheritance. The ownership structure was adjusted during the estate division process, and the possibility of further changes such as future stake sales cannot be ruled out. The stability of the management succession process also warrants monitoring."
+   }
+  },
+  {
+   "title": {
+    "ko": "원자재 가격 및 수주-매출 인식 시차",
+    "en": "Raw Material Prices and Order-to-Revenue Timing Lag"
+   },
+   "body": {
+    "ko": "글로벌 철강 등 원자재 가격 상승은 수익성에 부정적 영향을 줄 수 있다는 지적이 나온다. 수주가 실제 매출로 인식되기까지 시차가 존재해 테마성 기대와 실적 반영 시점 사이에 간극이 생길 수 있다. 정부 에너지 정책 변화나 대외 변수도 불확실성 요인으로 남아 있다.",
+    "en": "Rising global raw material prices, including steel, are cited as a potential negative for profitability. Because there is a time lag before orders are recognized as revenue, a gap can emerge between thematic expectations and when earnings actually reflect them. Changes in government energy policy or external variables also remain sources of uncertainty."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "수주·매출 편중 리스크",
-    "en": "Order and Revenue Concentration Risk"
+    "ko": "고객 집중 리스크",
+    "en": "Customer Concentration Risk"
    },
    "body": {
-    "ko": "매출의 압도적 비중이 소수 대형 프로젝트, 특히 단일 송전철탑 계약에 집중돼 있다. 해당 계약 종료 이후 후속 대형 수주가 공시되지 않은 상태가 지속될 경우 매출 공백이 발생할 수 있다. 특정 발주처(한국전력공사)에 대한 의존도가 높아 발주 시기와 규모 변동에 따른 영향을 크게 받는 구조다.",
-    "en": "An overwhelming share of revenue is concentrated in a small number of large projects, particularly a single transmission tower contract. If no follow-on large order is disclosed following the contract's expiry, a revenue gap could emerge. High dependence on a single client (KEPCO) means the company is significantly exposed to fluctuations in order timing and scale."
+    "ko": "매출이 한국전력공사향 프로젝트에 크게 의존하는 구조로, 특정 대형계약의 시작과 종료에 따라 실적이 크게 출렁일 수 있다. 세안이엔씨·SMR 계약 등 다변화가 진행 중이지만 아직 비중은 제한적이다. 신규 대형 발주가 지연되면 매출 공백이 장기화될 위험이 있다.",
+    "en": "Revenue is heavily dependent on projects for Korea Electric Power Corporation, meaning earnings can swing sharply around the start and end of specific large contracts. Diversification through contracts such as those with Sean E&C and the SMR facility is underway but still limited in scale. Delays in new large orders carry the risk of a prolonged revenue gap."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·최대주주 변경 리스크",
-    "en": "Governance and Controlling Shareholder Change Risk"
+    "ko": "지배구조 리스크",
+    "en": "Governance Risk"
    },
    "body": {
-    "ko": "2026년 3월 상속에 따라 최대주주가 변경되며 지배구조 관련 불확실성이 발생했다. 경영권 승계 과정에서의 의사결정 지연이나 전략 변화 가능성을 배제할 수 없다. 향후 지분 관련 추가 공시나 경영진 변화 여부를 지속적으로 확인할 필요가 있다.",
-    "en": "The March 2026 change in controlling shareholder due to inheritance introduced governance-related uncertainty. The possibility of decision-making delays or strategic shifts during the management succession process cannot be ruled out. Continued monitoring of further equity-related disclosures or management changes is warranted."
+    "ko": "2026년 3월 창업자 유고에 따른 상속으로 최대주주 지분 구조가 변경됐다. 상속재산분할 협의 이후 지분 이동이 추가로 발생할 가능성이 있으며, 이는 수급 측면의 불확실성으로 이어질 수 있다. 경영 승계 과정에서 의사결정 체계의 변화 여부도 확인이 필요하다.",
+    "en": "The major-shareholder structure changed in March 2026 following inheritance after the founder's passing. Further share movements could occur after the estate division agreement, which may translate into supply-demand uncertainty. Whether the decision-making structure changes during the management succession process also needs to be confirmed."
    }
   },
   {
    "cat": {
-    "ko": "테마성 수급 및 정보 비대칭 리스크",
-    "en": "Thematic Trading Flow and Information Asymmetry Risk"
+    "ko": "원자재·환율 리스크",
+    "en": "Raw Material and Foreign Exchange Risk"
    },
    "body": {
-    "ko": "주가가 원전·SMR 등 정책 테마 뉴스에 민감하게 반응하는 패턴을 보여왔으며, 공식 증권사 커버리지가 부재해 정량적 컨센서스 형성이 미흡한 상태다. 이는 정보 비대칭에 따른 가격 변동성을 키울 수 있는 요인이다. 테마성 이슈가 구체적인 계약이나 정책 발표로 이어지지 않을 경우 투자 심리가 빠르게 바뀔 수 있다.",
-    "en": "The share price has shown a pattern of sensitivity to nuclear/SMR-related policy theme news, while the absence of formal sell-side coverage has left quantitative consensus poorly established. This can amplify price volatility stemming from information asymmetry. If thematic issues fail to translate into concrete contracts or policy announcements, investor sentiment could shift rapidly."
+    "ko": "주요 제품인 철탑·관형지지물 등은 철강 가격에 원가가 직결되는 구조다. 글로벌 원자재 가격 변동성이 커질 경우 원가 부담이 확대돼 영업이익률에 부담을 줄 수 있다. 해외 수주 확대 시에는 환율 변동에 따른 손익 영향도 함께 고려해야 한다.",
+    "en": "Key products such as transmission towers and tubular support structures have costs directly linked to steel prices. Increased volatility in global raw material prices could raise cost burdens and pressure operating margins. Should overseas orders expand, the earnings impact of foreign exchange fluctuations would also need to be considered."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중(3분기 실적 발표)",
-    "en": "November 2026 (Q3 earnings release)"
+    "ko": "2026년 11월 중",
+    "en": "November 2026"
    },
    "what": {
-    "ko": "2026년 3분기 매출·영업이익이 2분기(매출 244억원, 영업이익 47억원) 수준에서 추가로 둔화되는지, 아니면 신규 계약으로 반등하는지 확인해야 한다.",
-    "en": "Check whether Q3 2026 revenue and operating profit decelerate further from Q2 levels (KRW 24.4bn revenue, KRW 4.7bn operating profit) or rebound on new contracts."
+    "ko": "2026년 3분기 실적 공시를 통해 HVDC 계약 종료 이후 매출·영업이익률 흐름이 어떻게 이어지는지 확인할 필요가 있다.",
+    "en": "Watch for the Q3 2026 earnings disclosure to see how revenue and operating margin trends evolve after the expiry of the HVDC contract."
    }
   },
   {
    "when": {
-    "ko": "수시 공시 확인 필요",
-    "en": "Ongoing disclosure monitoring"
+    "ko": "2026년 4분기",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "한국전력공사 또는 발전 자회사와의 신규 단일판매·공급계약 공시 여부를 지속적으로 확인해야 한다. 후속 대형 계약 체결이 실적 공백을 메울 핵심 변수다.",
-    "en": "Continuously monitor for new single-sale/supply contract disclosures with KEPCO or power generation subsidiaries. Securing a follow-on large contract is the key variable for filling the earnings gap."
+    "ko": "세안이엔씨향 173억원 계약의 매출 인식 진행 상황과 한전의 신규 송전철탑 발주 재개 여부를 살펴볼 시점이다.",
+    "en": "This is a point to track the revenue recognition progress of the KRW 17.3bn Sean E&C contract and whether KEPCO resumes new transmission-tower orders."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "H2 2026"
+    "ko": "2026년 하반기~2027년",
+    "en": "H2 2026 through 2027"
    },
    "what": {
-    "ko": "정부의 전력수급기본계획 및 HVDC 전력망 확충 관련 정책 발표 일정을 확인해 잠재 수주 기반 확대 여부를 점검해야 한다.",
-    "en": "Track the government's power supply and demand plan and HVDC grid expansion policy announcements to assess whether the potential order base is broadening."
+    "ko": "SMR 연구시설 관련 후속 계약이나 원전 밸류체인 참여 관련 추가 공시가 나오는지 확인이 필요하다.",
+    "en": "Check for follow-on contracts tied to the SMR research facility or additional disclosures on participation in the nuclear value chain."
    }
   },
   {
    "when": {
-    "ko": "지분공시 발생 시",
-    "en": "Upon future equity disclosures"
+    "ko": "2026년 4분기 정기 이사회·주총 전후",
+    "en": "Around the Q4 2026 board meeting and shareholder meeting cycle"
    },
    "what": {
-    "ko": "2026년 3월 최대주주 변경 이후 추가 지분 변동이나 경영진 관련 공시가 있는지 확인해 지배구조 안정화 여부를 점검해야 한다.",
-    "en": "Check for any further equity changes or management-related disclosures following the March 2026 controlling shareholder change to assess governance stability."
-   }
-  },
-  {
-   "when": {
-    "ko": "SMR·원전 정책 발표 시점",
-    "en": "Upon SMR/nuclear policy announcements"
-   },
-   "what": {
-    "ko": "정부의 SMR·원전 관련 정책이나 해외 원전 프로젝트 입찰 결과가 발표될 경우, 회사의 실제 수주 파이프라인에 미치는 영향을 확인해야 한다.",
-    "en": "When government SMR/nuclear policy or overseas nuclear project bidding results are announced, assess the actual impact on the company's order pipeline."
+    "ko": "상속에 따른 최대주주 지분 구조 안정화 여부와 추가 지분 매각 등 오버행 가능성을 점검할 필요가 있다.",
+    "en": "It is worth checking whether the major-shareholder structure stabilizes following the inheritance and whether any further stake sales create overhang risk."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "보성파워텍은 2025년 동해안-신가평 송전선로 강관철탑 단일 계약에 힘입어 매출·영업이익이 사상 최대 수준으로 급증했으며, 부채비율 20.9%의 안정적 재무구조를 바탕으로 재무 체력은 견실한 편이다. 그러나 회사 스스로 인정했듯 실적 개선의 핵심 동력이 단일 프로젝트에 집중돼 있었고, 해당 계약이 2026년 2월 종료된 이후 후속 대형 수주가 아직 공시되지 않아 2026년 1분기에서 2분기로 이어지며 매출이 축소되는 흐름이 확인된다. 여기에 2026년 3월 상속에 따른 최대주주 변경이라는 지배구조 이슈가 더해지면서 경영 안정성에 대한 관심도 커진 상황이다. AI 데이터센터발 전력 수요 증가와 정부의 HVDC 전력망 확충 정책, 원전·SMR 관련 테마는 중장기적으로 회사의 잠재 수주 기반을 넓힐 수 있는 요인으로 거론되지만, 이것이 실제 계약으로 이어지는 시점과 규모는 아직 확인되지 않았다. 공식 증권사 커버리지가 부재한 상태에서 주가는 정책 테마 뉴스에 민감하게 반응해온 패턴을 보여왔다. 결국 향후 관전 포인트는 후속 대형 계약의 확보 여부와 그에 따른 분기 실적의 지속성 확인에 집중된다.",
-   "en": "Bosung Power Tech saw revenue and operating profit surge to record levels in 2025, driven by a single transmission tower contract for the Donghae-Singapyeong line, while maintaining solid financial health with a debt ratio of just 20.9%. However, as the company itself acknowledged, the core driver of the improvement was concentrated in a single project, and with that contract having expired in February 2026 and no follow-on large order yet disclosed, revenue has continued to shrink from Q1 into Q2 2026. Adding to this, a governance issue emerged in March 2026 with a change in controlling shareholder via inheritance, raising attention around management stability. Rising power demand from AI data centers, government HVDC grid expansion policy, and nuclear/SMR-related themes are cited as factors that could broaden the company's potential order base over the medium to long term, but the timing and scale at which these might translate into actual contracts remain unconfirmed. With formal sell-side coverage largely absent, the share price has shown a pattern of reacting sensitively to policy theme news. Ultimately, the key things to watch going forward center on whether a follow-on large contract is secured and whether the resulting quarterly earnings prove sustainable."
+   "ko": "보성파워텍은 2022년 적자에서 2025년 지배주주 순이익 203.1억원으로 이어지는 뚜렷한 실적 회복을 보였으나, 이 회복의 대부분이 한전 동해안-신가평 HVDC 강관철탑 단일계약에서 나왔다는 점이 확인됐다. 해당 계약이 2026년 2월 말 종료된 이후 2분기 매출이 243.9억원으로 축소되며 매출 공백 우려가 일부 현실화되는 모습을 보였다. 세안이엔씨·SMR 연구시설 계약 등 다변화 시도가 있지만 아직 과거 HVDC 계약 규모에는 미치지 못한다. 여기에 2026년 3월 창업자 유고에 따른 상속으로 최대주주 지분 구조가 재편되며 지배구조 측면의 변수도 새롭게 추가됐다. 향후 실적의 지속가능성은 후속 대형계약 확보 여부, 한전의 신규 송전선로 발주 재개, 원전·SMR 밸류체인 참여 성사 여부에 좌우될 것으로 보인다. 재무 건전성(부채비율 20.9%, 개선된 영업활동현금흐름)은 상대적으로 견고한 편이나, 매출원 집중도와 지배구조 변화는 함께 고려해야 할 변수다.",
+   "en": "Bosung Power Tech has shown a clear earnings recovery, moving from a loss in 2022 to owners' net income of KRW 20.3bn in 2025, but it has become evident that most of this recovery came from a single Donghaean-Singapyeong HVDC steel-tower contract with KEPCO. After that contract ended in late February 2026, Q2 revenue shrank to KRW 24.4bn, partially materializing the anticipated revenue gap. Diversification efforts through contracts with Sean E&C and an SMR research facility are underway but remain smaller in scale than the past HVDC contract. Adding to this, the major-shareholder structure was reorganized in March 2026 following inheritance after the founder's passing, introducing a new governance-related variable. The sustainability of future earnings appears to hinge on securing follow-on large contracts, whether KEPCO resumes new transmission-line orders, and progress in nuclear/SMR value chain participation. Financial health (a 20.9% debt ratio and improved operating cash flow) remains relatively solid, but revenue concentration and governance change are variables that should be weighed together."
   }
  },
  "sources": [
-  "https://kr.investing.com/news/global-filings/article-93CH-1947478",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=006910",
-  "https://www.investing.com/equities/bosung-power-technology-co-ltd-earnings",
-  "https://www.investing.com/equities/bosung-power-technology-co-ltd",
-  "https://goinsider.kr/stock/00267881",
-  "https://comp.wisereport.co.kr/company/c1030001.aspx?cmp_cd=006910&cn=",
   "https://stock1.brokdam.com/%EB%B3%B4%EC%84%B1%ED%8C%8C%EC%9B%8C%ED%85%8D-%EC%A3%BC%EA%B0%80-%EC%A0%84%EB%A7%9D-2026%EF%BD%9C-%EB%B0%B0%EB%8B%B9%EA%B8%88%C2%B7%EC%8B%A4%EC%A0%81%C2%B7%EC%88%98%EA%B8%89-%EC%B4%9D%EC%A0%95/",
+  "https://kr.investing.com/news/global-filings/article-93CH-1947478",
   "https://www.sankun.com/company-info/P5mQNlUERgUaIuQuhlhEnw",
+  "https://m.finance.daum.net/quotes/A006910/news/disclosure/20250930077590",
+  "https://alphasquare.co.kr/home/stock-summary?code=006910",
+  "https://www.threads.com/@stockhandbook_friends/post/DV-QNBRlewX/%EB%B3%B4%EC%84%B1%ED%8C%8C%EC%9B%8C%ED%85%8D%EC%9D%80-2026%EB%85%84-2%EC%9B%94-11%EC%9D%BC-%EA%B8%B0%EC%A4%80%EC%9C%BC%EB%A1%9C-%EC%9B%90%EC%A0%84-%EB%B0%8F-%EC%A0%84%EB%A0%A5%EB%A7%9D-%ED%88%AC%EC%9E%90-%EA%B8%B0%EB%8C%80%EA%B8%B0%EA%B4%80-%EC%88%98%EA%B8%89-%EB%B0%8F-%EA%B8%B0%EC%88%A0%EC%A0%81-%EA%B0%95%EC%84%B8%EC%97%90-%EB%94%B0%EB%A5%B8-%EC%A3%BC%EA%B0%80-%EC%83%81%EC%8A%B9%EC%84%B8%EB%A5%BC-%EB%B3%B4%EC%9D%B4%EA%B3%A0-%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4%EC%9B%90%EC%9E%90%EB%A0%A5%EB%B0%9C%EC%A0%84-",
+  "https://m.thinkpool.com/compDiscuss/cont/1023376",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=006910",
+  "https://news.jkn.co.kr/post/905042",
   "https://www.leadeconomy.co.kr/news/articleView.html?idxno=7139",
-  "https://www.electimes.com/news/articleView.html?idxno=332607",
-  "http://www.bosungpower.co.kr/",
-  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=006910",
-  "https://m.thinkpool.com/compDiscuss/cont/1025608",
-  "http://www.bosungpower.co.kr/company/intro.do",
-  "https://m.thinkpool.com/item/006910",
-  "https://dart.fss.or.kr/navi/searchNavi.do?naviCrpCik=00267881&naviCrpNm=%EB%B3%B4%EC%84%B1%ED%8C%8C%EC%9B%8C%ED%85%8D&naviCode=A002",
-  "https://news.jkn.co.kr/post/912650",
-  "https://news.jkn.co.kr/post/908359"
+  "https://m.thinkpool.com/compDiscuss/cont/1021048",
+  "https://goinsider.kr/stock/00267881",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260319001425&docno=&viewerhost=",
+  "https://comp.wisereport.co.kr/company/c1030001.aspx?cmp_cd=006910&cn=",
+  "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202509170918408480107778",
+  "https://www.businesspost.co.kr/BP?command=article_view&num=351028",
+  "https://news.nate.com/view/20260403n16606",
+  "https://comp.wisereport.co.kr/company/c1070001.aspx?cmp_cd=006910&cn="
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -233,9 +223,9 @@
   "건설·건자재"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 05:57",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -334,14 +324,14 @@
    }
   ],
   "valuation": {
-   "price": 6600,
-   "mcap": 0.3243,
+   "price": 6780,
+   "mcap": 0.3331,
    "shares": 49129824,
    "total_shares": 49129824,
    "wavg_shares": 48950413,
-   "per": 18.7,
+   "per": 19.207,
    "eps": 353,
-   "pbr": 2.71,
+   "pbr": 2.7878,
    "bps": 2432,
    "roe_ttm": 15.6,
    "ttm_window": "2025Q3~2026Q2",

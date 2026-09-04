@@ -1,127 +1,127 @@
 {
  "title": {
-  "ko": "D램 증설 사이클 위에 선 증착 장비 기업",
-  "en": "A Deposition Equipment Maker Riding the DRAM Capex Cycle"
+  "ko": "D램 증설 사이클과 ALD 확장의 교차점",
+  "en": "At the Crossroads of DRAM Capex and ALD Expansion"
  },
  "lead": {
-  "ko": "2025년 매출은 늘었지만 이익률이 후퇴했고, 2026년 1분기부터 고객사 전공정 투자 재확대가 실적에 반영되기 시작한 국면이다.",
-  "en": "Revenue grew in 2025 while margins slipped, and from Q1 2026 the renewed front-end capex of memory customers has begun to show up in results."
+  "ko": "LPCVD·플라즈마 처리 장비를 기반으로 D램 선단공정 투자에 직접 연동되는 전공정 장비 기업으로, 분기 매출은 사상 최고 수준까지 올라왔지만 영업이익률은 장비 믹스와 입고 시점에 따라 분기별 진폭이 크다.",
+  "en": "A front-end deposition equipment maker levered directly to leading-edge DRAM capex through LPCVD and plasma treatment tools, with quarterly revenue at record highs but operating margins still swinging widely with tool mix and shipment timing."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 3,503억원으로 전년(3,381억원) 대비 소폭 늘었으나 영업이익은 517억원으로 감소, 영업이익률은 18.1%에서 14.7%로 하락했다.",
-   "en": "2025 revenue rose slightly to KRW 350.3bn from KRW 338.1bn, but operating profit fell to KRW 51.7bn and the operating margin narrowed from 18.1% to 14.7%."
+   "ko": "2026년 2분기 매출 1,221억원으로 제공된 분기 데이터 중 최대 규모를 기록했고, 2025년 3분기의 623억원 저점 이후 세 분기 연속 1,000억원 안팎의 매출 흐름이 이어졌다.",
+   "en": "Second-quarter 2026 revenue of KRW 122.1bn was the highest among the disclosed quarters, and revenue has run near or above KRW 100bn for three straight quarters after the KRW 62.3bn trough in the third quarter of 2025."
   },
   {
-   "ko": "2026년 1분기 매출 1,019억원·영업이익 188억원으로 전년 동기(832억원·92억원) 대비 이익이 두 배 이상 늘었다.",
-   "en": "Q1 2026 revenue was KRW 101.9bn with operating profit of KRW 18.8bn, more than doubling from KRW 9.2bn a year earlier on KRW 83.2bn of sales."
+   "ko": "연간 기준으로는 2025년 매출 3,503억원·영업이익 517억원으로 매출은 늘었으나 영업이익률은 2024년 18.1%에서 14.7%로 낮아졌다.",
+   "en": "On a full-year basis, 2025 revenue of KRW 350.3bn and operating profit of KRW 51.7bn meant top-line growth but an operating margin decline from 18.1% in 2024 to 14.7%."
   },
   {
-   "ko": "주력 제품은 저압화학기상증착(LPCVD)·플라즈마 처리·미니 배치 원자층증착(ALD) 장비이며, 삼성전자·SK하이닉스·마이크론을 모두 고객으로 확보하고 있다.",
-   "en": "Core products are LPCVD, plasma treatment and mini-batch ALD systems, with Samsung Electronics, SK hynix and Micron all in the customer base."
+   "ko": "2026년 2분기 지배주주 순이익 652억원은 같은 분기 영업이익 182억원을 크게 웃돌아 영업외 요인이 개입한 것으로 보이며, 성격은 반기·분기보고서 주석에서 확인이 필요하다.",
+   "en": "Second-quarter 2026 net profit attributable to owners of KRW 65.2bn far exceeded the KRW 18.2bn operating profit for the same quarter, pointing to non-operating items whose nature needs checking in the interim report footnotes."
   },
   {
-   "ko": "부채비율 18.2%, 영업활동현금흐름 665억원으로 재무구조는 무차입에 가까운 안정적 구조를 유지하고 있다.",
-   "en": "A 18.2% debt-to-equity ratio and KRW 66.5bn of operating cash flow point to a conservative, near-debt-free balance sheet."
+   "ko": "전방 투자 환경은 확장 국면으로, SK하이닉스는 2026년 설비투자를 40조원대 후반으로 확대한다고 밝혔고 삼성전자는 평택 P5를 1c D램 전용 라인으로 구축한다는 방침이 보도됐다.",
+   "en": "The end-market backdrop is expansionary: SK hynix has said 2026 capex will rise to the high-KRW 40tn range, while Samsung Electronics has been reported to be building Pyeongtaek P5 as a dedicated 1c DRAM line."
   },
   {
-   "ko": "분기 매출이 623억원(2025년 3분기)에서 1,049억원(2025년 2분기) 사이를 오가는 발주 편차가 크다는 점은 장비주 공통의 변동성 요인이다.",
-   "en": "Quarterly revenue swinging between KRW 62.3bn (Q3 2025) and KRW 104.9bn (Q2 2025) illustrates the order-timing volatility typical of equipment suppliers."
+   "ko": "고객이 D램 3사에 집중돼 있어 특정 팹의 장비 입고 일정 변경이 곧바로 분기 실적 변동으로 이어지는 구조적 민감성이 남는다.",
+   "en": "With customers concentrated among the three DRAM makers, any shift in a single fab's tool-in schedule feeds straight through to quarterly results."
   }
  ],
  "business": {
-  "ko": "유진테크는 2000년 1월 설립된 반도체 전공정 장비 제조·판매 기업으로, 창사 이후 전공정 화학기상증착(CVD) 장비 국산화와 연구개발을 축으로 사업을 키워왔다. 회사가 공개한 제품 라인업은 Thermal LPCVD, Plasma Treatment, Cyclic CVD, Mini Batch ALD System, Dry Cleaning System으로 구성된다. 주력인 저압화학기상증착(LPCVD)은 저압·고온에서 박막을 형성해 두께 균일도와 단차 피복성이 우수하고, D램 선단공정 활용도가 높아 삼성전자·SK하이닉스·마이크론에 공급되고 있다. 원자층증착(ALD)은 2021년부터 확장해온 영역으로, CVD보다 얇은 막을 형성해 선단공정 중심으로 수요가 형성된다. 2021년에는 일본 고쿠사이가 사실상 독점하던 삼성전자 대상 대용량 ALD 장비 공급에 처음 진입해, 고객사의 장비 이원화 구도에 편입된 이력이 있다. 미국 자회사 유지너스(Eugenus)는 메탈 ALD 장비를 주력으로 하며, 2017년 인수 이후 적자를 이어오다 2024년 4분기를 기점으로 흑자 전환한 것으로 증권가는 파악하고 있다. 소재 자회사 EGTM을 통해 D램 커패시터용 고유전율 박막 증착 전구체(프리커서) 사업에도 진출했다. 국내 경쟁 구도에서 LPCVD와 트리트먼트 장비는 상대적으로 겹침이 적었으나 ALD 진출 이후 원익IPS·주성엔지니어링과의 접점이 넓어졌고, 글로벌로는 고쿠사이 등 해외 업체와 경합한다. 고객 구성은 삼성전자와 SK하이닉스 비중이 유사하게 유지돼 왔으나, 한국투자증권은 2026년에는 투자 규모를 고려할 때 삼성전자 비중이 상대적으로 커질 것으로 전망했다.",
-  "en": "Eugene Technology, founded in January 2000, manufactures and sells front-end semiconductor equipment, having built its business around localizing front-end chemical vapor deposition (CVD) tools and continuous R&D. Its disclosed product lineup covers Thermal LPCVD, Plasma Treatment, Cyclic CVD, a Mini Batch ALD System and a Dry Cleaning System. Flagship LPCVD forms thin films at low pressure and high temperature with strong thickness uniformity and step coverage, is heavily used in leading-edge DRAM processes, and is supplied to Samsung Electronics, SK hynix and Micron. Atomic layer deposition (ALD) is an area the company has been expanding since 2021, producing thinner films than CVD and drawing demand centered on advanced nodes. In 2021 it broke into large-capacity ALD supply to Samsung, a slot previously dominated by Japan's Kokusai, becoming part of the customer's dual-sourcing structure. US subsidiary Eugenus focuses on metal ALD tools; after years of losses following the 2017 acquisition, brokerages estimate it turned profitable from Q4 2024. Through materials subsidiary EGTM the group has also entered precursors used for high-k thin-film deposition in DRAM capacitors. Domestically, its LPCVD and treatment tools historically overlapped little with peers, but the ALD push has increased contact points with Wonik IPS and Jusung Engineering, while globally it competes with players such as Kokusai. Customer mix between Samsung and SK hynix had been broadly balanced, though Korea Investment & Securities projected that Samsung's share would rise relatively in 2026 given planned investment scale."
+  "ko": "유진테크는 웨이퍼 위에 박막을 형성하는 반도체 전공정 증착 장비를 개발·제조하는 회사다. 주력 장비는 저압화학기상증착(LPCVD) 장비와 플라즈마 원자층증착(ALD) 계열이며, LPCVD는 저압·고온 공정에서 두께 균일성과 단차 피복성이 우수해 D램 선단공정 활용도가 높고 삼성전자·SK하이닉스·마이크론에 납품하고 있다. 회사가 공시자료에서 소개하는 대표 제품군은 LPCVD 장비 BlueJay와 플라즈마 장비 Albatross다. ALD는 2021년부터 사업을 확장해 온 영역으로, CVD보다 얇은 막을 형성해 선단공정 중심으로 수요가 형성된다. ALD 배치·퍼니스 영역은 과거 일본 고쿠사이일렉트릭 의존도가 높았던 시장으로, 유진테크의 삼성전자 공급은 국내 소자업체의 공급망 이원화 흐름과 맞물려 있다. 제품 구성상 장비 단가가 CVD보다 높은 ALD 비중이 커질수록 대당 매출과 믹스가 달라지는 구조다. 자회사로는 미국에서 메탈 ALD 장비를 개발하는 유지너스(Eugenus)와 반도체용 전구체(프리커서)를 담당하는 소재 자회사를 두고 있어, 장비와 소재를 함께 다루는 포트폴리오를 갖췄다. 과거에는 LPCVD와 트리트먼트(전처리) 장비가 핵심이어서 국내 경쟁사와 겹치는 영역이 적었으나, ALD 진출 이후 원익IPS·주성엔지니어링 등과 경쟁 접점이 늘어난 것으로 업계에서는 평가된다. 다만 부문별·제품별 매출 비중은 공시로 확인 가능한 범위에서만 판단해야 하며, 본 리포트에서는 확정 수치가 확인되지 않아 정성적으로만 서술한다.",
+  "en": "Eugene Technology develops and manufactures front-end semiconductor deposition equipment that forms thin films on wafers. Its core tools are low-pressure chemical vapor deposition (LPCVD) systems and plasma atomic layer deposition (ALD) systems; LPCVD offers superior thickness uniformity and step coverage at low pressure and high temperature, making it heavily used in leading-edge DRAM, and the company supplies Samsung Electronics, SK hynix and Micron. In its disclosures the company highlights the BlueJay LPCVD platform and the Albatross plasma platform as flagship products. ALD is an area the company has been expanding since 2021, forming thinner films than CVD and drawing demand mainly from leading-edge processes. The batch and furnace ALD segment was historically dominated by Japan's Kokusai Electric, so the company's entry into Samsung supply dovetailed with Korean chipmakers' push to dual-source. Because ALD tools carry higher unit prices than CVD, a rising ALD share changes both per-tool revenue and product mix. Subsidiaries include Eugenus in the United States, which develops metal ALD tools, and a materials arm handling semiconductor precursors, giving the group a combined equipment-and-materials portfolio. Historically LPCVD and treatment tools were the core lineup with little overlap with domestic rivals, but industry observers note that entry into ALD has increased points of competition with names such as Wonik IPS and Jusung Engineering. Segment-level revenue splits should only be judged from verifiable disclosures; since confirmed figures were not available, this report describes the mix qualitatively."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 3,503억원으로 2024년 3,381억원 대비 소폭 증가했지만, 영업이익은 612억원에서 517억원으로 줄어 영업이익률이 18.1%에서 14.7%로 3.4%포인트 낮아졌다. 지배주주 순이익도 633억원에서 425억원으로 감소했는데, 2024년에는 순이익(654억원)이 영업이익(612억원)을 웃돌아 영업외 항목의 기여가 컸던 반면 2025년에는 그 효과가 축소된 것으로 보인다(구체 내역은 감사보고서 주석 확인 필요). 사이클 저점이었던 2023년(매출 2,765억원·영업이익 243억원·영업이익률 8.8%)과 비교하면 이익 체력은 뚜렷하게 회복된 수준이며, 2022년(3,106억원·536억원·17.3%)과 비교해도 매출은 더 크지만 마진은 아직 그 수준을 밑돈다. 분기 흐름의 편차가 큰 점이 특징으로, 2025년은 1분기 832억원(영업이익 92억원)→2분기 1,049억원(197억원)→3분기 623억원(52억원)→4분기 999억원(175억원)의 톱니 형태를 보였다. 3분기 영업이익률은 8.3%까지 내려갔다가 4분기 17.6%로 되돌아왔는데, 이는 장비 매출 인식 시점과 제품 믹스에 따른 고정비 흡수 차이가 실적에 그대로 드러나는 구조를 보여준다. 2026년 1분기는 매출 1,019억원, 영업이익 188억원으로 전년 동기 대비 매출은 약 22% 늘고 영업이익은 두 배 이상 증가했으며, 영업이익률은 18.5% 수준으로 개선됐다. DB증권은 이 분기 실적이 시장 예상치를 매출 5%, 영업이익 20% 상회했으며 메모리 호황 속 D램 고객사의 공정 전환과 증설 투자에 따른 LPCVD 등 장비 공급 증가가 배경이라고 분석했다. 2026년 1분기 지배주주 순이익 218억원은 영업이익을 웃돌아 영업외 손익이 다시 플러스로 기여했음을 시사한다. 재무구조는 2025년 말 자기자본 4,914억원·부채 892억원으로 부채비율 18.2%(2024년 23.8%)이며, 영업활동현금흐름은 665억원으로 전년 615억원보다 확대돼 이익의 현금 회수는 원활한 편이다.",
-  "en": "Consolidated 2025 revenue edged up to KRW 350.3bn from KRW 338.1bn in 2024, but operating profit fell from KRW 61.2bn to KRW 51.7bn, compressing the operating margin by 3.4 percentage points to 14.7% from 18.1%. Net profit attributable to owners also declined from KRW 63.3bn to KRW 42.5bn; in 2024 net profit (KRW 65.4bn) exceeded operating profit (KRW 61.2bn), implying a sizeable non-operating contribution that appears to have shrunk in 2025 (details require checking the audit report notes). Against the 2023 trough (revenue KRW 276.5bn, operating profit KRW 24.3bn, 8.8% margin), earnings power has clearly recovered, though the margin still trails 2022 levels (KRW 310.6bn, KRW 53.6bn, 17.3%) despite higher revenue. Quarterly dispersion is a defining feature: 2025 ran KRW 83.2bn (OP 9.2bn) → KRW 104.9bn (19.7bn) → KRW 62.3bn (5.2bn) → KRW 99.9bn (17.5bn). The Q3 margin sank to 8.3% before rebounding to 17.6% in Q4, showing how tool revenue recognition timing and mix-driven fixed-cost absorption feed straight into reported profitability. Q1 2026 delivered KRW 101.9bn of revenue and KRW 18.8bn of operating profit, roughly 22% revenue growth and more than a doubling of operating profit year on year, with the margin improving to about 18.5%. DB Financial Investment noted the quarter beat consensus by 5% on revenue and 20% on operating profit, attributing it to increased LPCVD and related tool supply as DRAM customers pursued node transitions and capacity additions during the memory upturn. Q1 2026 net profit attributable to owners of KRW 21.8bn again exceeded operating profit, suggesting non-operating items contributed positively once more. The balance sheet showed KRW 491.4bn of equity against KRW 89.2bn of liabilities at end-2025, a debt-to-equity ratio of 18.2% (23.8% in 2024), while operating cash flow rose to KRW 66.5bn from KRW 61.5bn, indicating sound cash conversion."
+  "ko": "연간 흐름을 보면 2022년 매출 3,106억원·영업이익 536억원(영업이익률 17.3%)에서 2023년 매출 2,765억원·영업이익 243억원(8.8%)으로 크게 위축됐고, 2024년 매출 3,381억원·영업이익 612억원(18.1%)으로 회복한 뒤 2025년에는 매출 3,503억원·영업이익 517억원(14.7%)을 기록했다. 즉 2025년은 매출은 늘었으나 영업이익은 줄어든 해였고, 이는 장비 믹스와 연구개발·인건비 등 고정비 증가가 동시에 작용한 결과로 해석된다. 분기 데이터에서는 진폭이 더 뚜렷하다. 2025년 2분기 매출 1,049억원·영업이익 197억원(18.8%)에서 3분기 매출 623억원·영업이익 52억원(8.3%)으로 급감했다가, 4분기 999억원·175억원(17.6%), 2026년 1분기 1,019억원·188억원(18.5%)으로 되돌아왔다. 2026년 2분기는 매출 1,221억원으로 제공 구간 내 최대였으나 영업이익은 182억원(14.9%)으로 전분기보다 소폭 줄어, 매출 증가가 곧바로 마진 개선으로 이어지지는 않았음을 보여준다. 최근 네 개 분기(2025년 3분기~2026년 2분기)를 합산하면 매출 약 3,862억원·영업이익 약 597억원으로 연간 2025년 실적을 상회한다. 눈에 띄는 대목은 2026년 2분기 지배주주 순이익 652억원으로, 같은 분기 영업이익 182억원을 크게 웃돌아 영업외 손익의 기여가 컸던 것으로 보이며 반복 가능성은 별도 확인이 필요하다. DB증권은 2026년 5월 리포트에서 1분기 매출·영업이익이 시장 예상치를 각각 5%, 20% 상회했고 D램 고객사들의 공정 전환·증설에 따른 LPCVD 등 장비 공급 증가가 배경이라고 분석했다. 재무구조는 2025년 말 자본총계 4,914억원·부채총계 892억원으로 부채비율 18.2%, 영업활동현금흐름은 665억원으로 2024년 615억원보다 늘어 이익의 현금화는 유지됐다.",
+  "en": "On an annual basis, revenue of KRW 310.6bn with operating profit of KRW 53.6bn (17.3% margin) in 2022 contracted sharply to KRW 276.5bn and KRW 24.3bn (8.8%) in 2023, recovered to KRW 338.1bn and KRW 61.2bn (18.1%) in 2024, and then registered KRW 350.3bn and KRW 51.7bn (14.7%) in 2025. In other words, 2025 combined higher revenue with lower operating profit, consistent with a shift in tool mix alongside rising fixed costs such as R&D and labor. The quarterly series shows even greater amplitude: from KRW 104.9bn revenue and KRW 19.7bn operating profit (18.8%) in the second quarter of 2025 down to KRW 62.3bn and KRW 5.2bn (8.3%) in the third, then back to KRW 99.9bn and KRW 17.5bn (17.6%) in the fourth and KRW 101.9bn and KRW 18.8bn (18.5%) in the first quarter of 2026. The second quarter of 2026 delivered the highest revenue in the disclosed window at KRW 122.1bn, yet operating profit slipped slightly to KRW 18.2bn (14.9%), showing that top-line growth did not translate directly into margin expansion. Summing the four quarters from the third quarter of 2025 through the second quarter of 2026 gives roughly KRW 386.2bn of revenue and KRW 59.7bn of operating profit, above the 2025 full-year totals. Notably, second-quarter 2026 net profit attributable to owners of KRW 65.2bn far exceeded that quarter's KRW 18.2bn operating profit, implying a large non-operating contribution whose repeatability requires separate verification. DB Financial Investment noted in a May 2026 report that first-quarter revenue and operating profit beat consensus by 5% and 20% respectively, driven by increased LPCVD and related tool shipments as DRAM customers pursued node conversion and capacity additions. The balance sheet showed equity of KRW 491.4bn against liabilities of KRW 89.2bn at end-2025, a debt-to-equity ratio of 18.2%, while operating cash flow of KRW 66.5bn exceeded 2024's KRW 61.5bn, keeping cash conversion intact."
  },
  "industry": {
-  "ko": "전방 메모리 시장은 인공지능 인프라 투자 확산으로 고대역폭메모리(HBM)와 고성능 D램 수요가 급증하는 국면에 있으며, 옴디아는 D램 시장 규모가 2024년 1,000억달러에서 2026년 1,700억달러로 커질 것으로 전망했다. 트렌드포스는 2026년 1분기까지 D램 가격이 추가로 18~23% 상승할 것으로 봤고, 공급 측면에서는 HBM에 선단 생산능력이 쏠려 범용 제품 비트그로스가 제약되는 구조가 지적된다. 이에 따라 국내 양사는 신규 팹 가동과 장비 발주 일정을 앞당기고 있는데, SK하이닉스는 2026년 반도체 설비투자를 40조원대 후반까지 확대해 전년보다 약 60% 늘리는 계획으로 전해졌고 삼성전자는 2026년 연구개발·시설에 110조원 이상을 투자하겠다는 큰 방향을 밝혔다. 업계에서는 2026년 한국이 글로벌 반도체 장비 투자 규모에서 대만을 제치고 중국에 이어 세계 2위로 올라설 것이라는 전망도 제시됐다. 사이클 위치로 보면 2023년 전공정 투자 급감기를 지나 공정 전환(1b·1c)과 신규 증설이 동시에 진행되는 확장 구간에 들어선 것으로 해석된다. 유진테크의 포지션은 D램 3사를 모두 고객으로 확보해 테크 전환 수혜가 상대적으로 크다는 점이며, 기존 3세대(1z)에서 4·5세대(1a·1b)로 전환하는 과정에서 LPCVD 적용 공정 수가 약 2배로 늘었고 1c에서는 필요 장비 수가 추가로 늘어날 것으로 관측된 바 있다. 다만 ALD 영역에서는 일본 고쿠사이와 국내 원익IPS·주성엔지니어링 등과 경쟁 접점이 넓어졌고, 글로벌 대형 장비사와의 기술·가격 경쟁도 상수다. 중국 업체들의 D램 추격(CXMT의 DDR5 전환 가속 등)은 장비 수요의 새로운 축이 될 수 있으나 미국과 중국 간 규제 환경이 변수로 남아 있다.",
-  "en": "The end market is in a phase where AI infrastructure spending is driving surging demand for HBM and high-performance DRAM; Omdia has projected the DRAM market growing from USD 100bn in 2024 to USD 170bn in 2026. TrendForce expected DRAM prices to rise a further 18-23% into Q1 2026, while on the supply side leading-edge capacity concentrated on HBM constrains bit growth for other products. Korean memory makers are consequently pulling forward fab ramps and tool orders: SK hynix is reported to be lifting 2026 semiconductor capex toward the high KRW 40tn range, roughly 60% above the prior year, while Samsung has signaled a broad plan to invest over KRW 110tn in R&D and facilities in 2026. Industry forecasts even suggest Korea will overtake Taiwan in 2026 to rank second globally, behind China, in semiconductor equipment spending. In cycle terms, the industry appears to have moved past the 2023 collapse in front-end investment into an expansion phase where node conversions (1b, 1c) and greenfield additions proceed together. Eugene Technology's position rests on serving all three DRAM makers, giving it relatively high leverage to tech migration; the number of LPCVD process steps roughly doubled in the shift from 1z to 1a/1b, and additional tool requirements have been anticipated at 1c. That said, its ALD expansion has widened competitive overlap with Japan's Kokusai and domestic peers such as Wonik IPS and Jusung Engineering, and technology and price competition with large global toolmakers is a constant. Chinese DRAM efforts, including CXMT accelerating its DDR5 transition, could form another demand axis, though the US-China regulatory environment remains a variable."
+  "ko": "전방 시장은 AI 인프라 투자에 연동된 메모리 확장 국면에 있다. 카운터포인트리서치는 2025년 전 세계 반도체 제조 장비 공급업체 매출이 전년 대비 12% 증가한 1,430억달러를 기록했고 2026년에도 약 11% 증가하는 업사이클을 예상했다. 성장 축으로는 리소그래피·증착·식각 등 전통 전공정 장비와 함께 패키징·테스트 장비의 성장 속도가 더 빨라질 것으로 제시됐다. 국내 소자업체의 투자 계획도 확대 방향이다. SK하이닉스는 2026년 반도체 설비투자를 40조원대 후반으로 늘려 전년보다 약 60% 확대한다는 계획과 함께, 청주 M15X 유휴 공간에 장비를 조기 반입해 D램 생산능력을 앞당겨 확대하는 방안을 추진한다고 밝혔다. 삼성전자 역시 평택 P5와 P5 Fab2를 HBM4·HBM4E용 1c D램 전용 라인으로 구축하는 방침 아래 평택 라인 조성을 조기 완료할 예정으로 보도됐다. 경쟁 구도에서는 글로벌 증착 장비 시장이 해외 대형사 중심이고, 배치·퍼니스 ALD에서는 일본 업체가 오랜 기간 주도해 왔다는 점이 유진테크의 위치를 규정한다. 국내 동종업계에서는 ALD 중심의 주성엔지니어링이 중국 수주 공백으로 부진을 겪은 뒤 적자 폭을 줄였고, SK하이닉스 M15X 신규 발주가 하반기 실적 변수로 거론되는 등 업체별 고객 구성에 따라 성과 차이가 나타나고 있다. 결국 사이클 위치는 확장 초·중반으로 읽히지만, 실제 실적은 팹별 장비 발주·입고 타이밍에 따라 업체별로 갈리는 국면이다.",
+  "en": "The end market sits in a memory expansion phase tied to AI infrastructure investment. Counterpoint Research reported that global semiconductor equipment vendor revenue rose 12% year on year to USD 143bn in 2025 and projected roughly 11% further growth in 2026. It flagged that packaging and test equipment should grow even faster alongside traditional front-end tools such as lithography, deposition and etch. Domestic chipmakers' plans also point upward. SK hynix has said it will lift 2026 semiconductor capex into the high-KRW 40tn range, roughly 60% above the prior year, while pulling forward tool installation into unused space at the Cheongju M15X fab to expand DRAM capacity earlier. Samsung Electronics has likewise been reported to be completing Pyeongtaek lines ahead of schedule, with P5 and P5 Fab2 set up as dedicated 1c DRAM lines for HBM4 and HBM4E. Competitively, the global deposition market is dominated by large overseas vendors, and batch or furnace ALD was long led by Japanese suppliers, which frames the company's position. Among domestic peers, ALD-focused Jusung Engineering narrowed losses after a slump caused by a gap in China orders, and new M15X orders from SK hynix have been cited as a second-half swing factor, illustrating how outcomes diverge with each vendor's customer mix. The cycle therefore reads as early-to-mid expansion, yet realized results still hinge on fab-by-fab order and installation timing."
  },
  "outlook": {
-  "ko": "회사가 공식 가이던스를 수치로 제시한 자료는 확인되지 않으며, 향후 실적 경로는 고객사 투자 집행 속도에 좌우되는 구조다. DB증권은 2026년 하반기부터 2028년까지 삼성전자 P4·P5, SK하이닉스 M15X·Y1, 마이크론 ID1 등 대규모 증설을 예상하며 유진테크의 전공정 장비 공급도 함께 늘어날 것으로 전망했고, 2026년 매출 5,172억원·영업이익 971억원, 2027년 매출 6,312억원·영업이익 1,193억원의 추정치를 제시했다(2026년 5월 기준, 추정치는 증권사 전망이며 회사 확정치가 아니다). 확인된 고객사 일정으로는 삼성전자가 평택 P5 착공을 2026년 7월로 앞당기고 2027년 3분기 준공을 계획했다는 보도, P4 페이즈2·4의 구축 마무리 단계 진입이 있다. SK하이닉스는 청주 M15X 유휴 공간에 장비를 조기 반입해 2026년 월 7만5,000~8만장 수준의 웨이퍼 생산능력 확보를 추진하고, 용인 클러스터 1기 팹은 2027년 1분기 클린룸 개방 후 2분기부터 10나노급 6세대(1c) D램 라인 구축에 들어가는 계획으로 전해졌다. 제품 측면에서는 메탈 ALD를 담당하는 미국 자회사 유지너스의 손익 개선 지속 여부와 소재 자회사 EGTM의 프리커서 사업 매출화 속도가 이익 구조 변화의 관전 포인트다. 고객 믹스에서는 2026년 삼성전자 비중이 상대적으로 커질 것이라는 증권사 전망이 제시된 상태로, 실제 분기 매출에서 확인이 필요하다. 반대로 메모리 3사가 과거 두 차례 슈퍼사이클에서 겪은 과잉투자 후유증을 의식해 공격적 투자와 신중한 집행을 병행하고 있다는 점은 발주 시점 지연 가능성으로 이어질 수 있다. 결과적으로 매출 인식은 팹 완공이 아니라 장비 발주·반입 시점에 연동되므로, 발표된 투자 계획과 실제 분기 실적 사이의 시차를 감안해 볼 필요가 있다.",
-  "en": "No numerical company guidance could be verified, so the earnings path hinges on the pace at which customers execute their investment plans. DB Financial Investment expects large-scale expansions from 2H 2026 through 2028 at Samsung's P4/P5, SK hynix's M15X/Y1 and Micron's ID1, with Eugene Technology's front-end tool shipments rising alongside, and modeled 2026 revenue of KRW 517.2bn with operating profit of KRW 97.1bn and 2027 revenue of KRW 631.2bn with operating profit of KRW 119.3bn (as of May 2026; these are brokerage estimates, not company figures). On verified customer timelines, Samsung reportedly moved the P5 groundbreaking forward to July 2026 with completion targeted in Q3 2027, while P4 phases 2 and 4 have entered the final build-out stage. SK hynix is said to be pulling equipment into idle space at Cheongju M15X to reach roughly 75,000-80,000 wafers per month during 2026, and to plan a Q1 2027 cleanroom opening at its first Yongin fab followed by 10nm-class sixth-generation (1c) DRAM line construction from Q2. On the product side, whether US subsidiary Eugenus sustains its metal ALD profitability and how quickly materials subsidiary EGTM commercializes precursors are key swing factors for the profit mix. Brokerages have flagged a relatively larger Samsung share in 2026, which will need confirmation in reported quarterly sales. Conversely, memory makers are pairing aggressive investment with caution after over-investment hangovers in two previous super-cycles, which can translate into order timing slippage. Ultimately revenue recognition tracks order placement and tool move-in rather than fab completion, so the lag between announced plans and reported quarterly results deserves attention."
+  "ko": "확인된 사실을 중심으로 보면, 향후 실적 궤적의 1차 변수는 D램 선단공정 전환과 신규 팹 장비 발주 속도다. DB증권은 2026년 5월 리포트에서 국내외 D램 업체들이 1c나노 위주의 공정 전환과 증설을 확대하고 있고 2026년 하반기부터 2028년까지 삼성전자 P4·P5, SK하이닉스 M15X·Y1, 마이크론 ID1 등 대규모 증설이 예상되며 이에 따라 유진테크의 전공정 장비 공급도 증가할 것으로 전망했다. 같은 리포트는 2026년 매출·영업이익을 5,172억원·971억원, 2027년을 6,312억원·1,193억원으로 전망했다(회사 공식 가이던스가 아닌 증권사 추정치다). SK하이닉스는 용인 반도체 클러스터 1기 공장의 클린룸을 2027년 1분기에 개방하고 2분기부터 1c D램 라인 구축을 추진한다고 밝혔는데, 이는 국내 전공정 장비 발주 일정의 참고점이 된다. 제품 측면에서는 ALD 비중 확대와 메탈 ALD·전구체 등 자회사 사업의 매출 기여도가 믹스와 이익률을 좌우할 변수로 남아 있다. 회사 차원의 공식 연간 가이던스는 확인되지 않으므로, 분기별 매출과 영업이익률의 실제 회복 폭이 검증 대상이다. 반대 방향으로는 메모리 가격이 꺾이거나 고객의 투자 집행이 이연될 경우 2025년 3분기처럼 분기 매출이 급감하는 패턴이 재현될 수 있다는 점도 함께 고려할 필요가 있다. 결과적으로 전방 투자 확대라는 순풍과 고객 집중·입고 변동성이라는 역풍이 동시에 작동하는 구간이다.",
+  "en": "Based on verifiable facts, the primary driver of the earnings path is the pace of leading-edge DRAM conversion and new-fab tool orders. DB Financial Investment said in a May 2026 report that DRAM makers at home and abroad are expanding 1c-centered node conversion and capacity additions, that large build-outs including Samsung's P4 and P5, SK hynix's M15X and Y1, and Micron's ID1 are expected from the second half of 2026 through 2028, and that the company's front-end tool shipments should rise accordingly. The same report forecast 2026 revenue and operating profit of KRW 517.2bn and KRW 97.1bn, and 2027 figures of KRW 631.2bn and KRW 119.3bn, which are brokerage estimates rather than company guidance. SK hynix has stated that the first fab at its Yongin cluster will open its cleanroom in the first quarter of 2027 and begin 1c DRAM line construction from the second quarter, a useful reference point for domestic front-end order timing. On the product side, a rising ALD share and the revenue contribution from metal ALD and precursor subsidiaries remain the variables that will shape mix and margins. No official company-level annual guidance was verified, so the actual trajectory of quarterly revenue and operating margin is what needs testing. In the other direction, a rollover in memory pricing or deferred customer capex could reproduce the pattern seen in the third quarter of 2025, when quarterly revenue dropped sharply. The setup therefore features a tailwind from expanding customer capex alongside headwinds from customer concentration and installation-timing volatility."
  },
  "valuation_comment": {
-  "ko": "현재 주가에 반영된 주가수익비율은 2025년 초 증권가가 언급했던 역사적 밴드 하단(주가수익비율 12배 내외)이나, 국내 반도체 장비 종목의 통상적 10배 전후 수준과 비교하면 크게 위쪽에 위치한 구간이다. 이는 확정 실적보다 2026~2027년 이익 확대 시나리오를 상당 부분 선반영한 결과로 볼 수 있으며, 실제 분기 실적이 그 경로를 따라가는지에 따라 정당성 평가가 달라질 수 있다. 순자산 대비로도 프리미엄이 큰 구간으로, 최근 4개 분기 합산 이익 기준 주당순이익 2,529원과 주당순자산 21,140원이 밸류에이션의 기준선이 된다. 배당은 주당 230원으로, 이익 규모 대비 배당 성향이 낮고 배당수익률도 시장 평균을 밑도는 편이어서 주주환원보다 성장 투자에 무게가 실린 구조다. 이익의 방향성만 보면 2023년 저점 이후 회복 흐름이며 2026년 1분기에는 분기 이익이 뚜렷하게 개선됐지만, 분기별 매출 편차가 큰 장비 업종 특성상 단일 분기 수치로 밸류에이션을 고정하기는 어렵다. 참고로 최근 6개월 증권사 평균 목표 주가는 직전 6개월 평균 대비 76.9% 상향됐는데(2026년 5월 기준), 이는 시장 기대치 자체가 빠르게 이동해 왔다는 사실을 보여준다.",
-  "en": "The multiple embedded in the current share price sits far above both the historical band low of around 12x that brokerages cited in early 2025 and the roughly 10x typically applied to Korean semiconductor equipment names. That suggests a substantial pre-pricing of the 2026-2027 earnings expansion scenario rather than confirmed results, so its justification depends on whether quarterly prints track that path. The premium to net assets is also wide, with trailing four-quarter earnings per share of KRW 2,529 and book value per share of KRW 21,140 forming the valuation baseline. The dividend is KRW 230 per share, implying a low payout relative to earnings and a yield below the market average, consistent with a growth-investment rather than shareholder-return emphasis. Directionally, earnings have recovered from the 2023 trough and improved markedly in Q1 2026, yet the wide quarter-to-quarter revenue swings typical of equipment suppliers make it hard to anchor valuation on any single quarter. For reference, the six-month average of brokerage target prices was raised 76.9% versus the preceding six-month average as of May 2026, showing how quickly market expectations themselves have shifted."
+  "ko": "주가수익비율은 최근 네 개 분기 순이익 기준으로 산출되는데, 그 순이익에는 2026년 2분기의 영업외 이익 성격 항목이 크게 포함돼 있어 영업 실적만으로 환산한 배수보다 낮게 보일 수 있다는 점을 유의해야 한다. 현재 배수는 이 종목이 과거 다운사이클에서 거래됐던 이익 배수 밴드보다 위쪽에 위치하며, 순자산 대비로는 상당한 프리미엄이 부여된 구간이다. 참고로 뉴스핌 집계에 따르면 2026년 5월 기준 최근 6개월 증권사 평균 목표주가는 13만333원으로 직전 6개월 평균 7만3,667원보다 76.9% 상향됐고, 같은 시점 DB증권은 목표주가 173,000원을 제시했다(증권사 견해이며 본 리포트의 의견이 아니다). 배당은 소액의 현금배당을 이어가는 수준으로, 배당수익률은 성장 장비주 특성상 시장 평균을 밑도는 편이어서 총수익의 대부분이 실적 변화에 좌우되는 구조다. 결국 현재 배수의 정당성은 2026년 하반기 이후 매출 성장과 영업이익률이 2024년 수준으로 되돌아오는지, 그리고 순이익의 질(영업 대비 영업외 비중)이 어떻게 확인되는지에 달려 있다.",
+  "en": "The price-to-earnings multiple is calculated on profit from the four most recent quarters, and that profit includes a large apparently non-operating item from the second quarter of 2026, so the headline multiple may look lower than one based on operating results alone. The current multiple sits above the earnings-multiple band at which this stock traded during past down-cycles, and the shares carry a sizable premium to net asset value. For reference, Newspim's tally showed that as of May 2026 the six-month average brokerage target price was KRW 130,333, up 76.9% from KRW 73,667 in the preceding six months, and DB Financial Investment presented a target price of KRW 173,000 at that time; these are brokerage views, not this report's opinion. Dividends continue at a modest cash level, and the yield tends to run below the market average as is typical for growth-oriented equipment names, so total return is dominated by earnings changes. Ultimately, the justification for the current multiple depends on whether revenue growth and operating margin from the second half of 2026 return toward 2024 levels, and on how the quality of net profit, meaning the operating versus non-operating split, is confirmed."
  },
  "bull": [
   {
    "title": {
-    "ko": "D램 3사 동시 공급 구조",
-    "en": "Supplying all three DRAM makers"
+    "ko": "D램 선단공정 투자에 직접 연동",
+    "en": "Direct leverage to leading-edge DRAM capex"
    },
    "body": {
-    "ko": "삼성전자·SK하이닉스·마이크론을 모두 고객으로 확보해 특정 업체의 투자 지연을 다른 고객으로 일부 상쇄할 수 있는 구조다. 증권가는 이러한 고객 구성이 공정 전환기에 상대적으로 안정적인 실적을 가능하게 한 배경으로 지목해 왔다. 2026년에는 투자 규모 차이로 삼성전자 비중이 상대적으로 커질 것이라는 전망도 제시됐다. 다만 어느 고객이든 메모리 사이클 자체의 방향에는 함께 노출된다.",
-    "en": "Having Samsung Electronics, SK hynix and Micron all as customers allows delays at one account to be partly offset by others. Brokerages have cited this customer mix as a reason the company sustained relatively steady results through node transitions. Some expect Samsung's share to rise relatively in 2026 given differing investment scales. Still, all customers share exposure to the same memory cycle direction."
+    "ko": "LPCVD는 D램 선단공정 활용도가 높아 삼성전자·SK하이닉스·마이크론에 모두 공급된다. 과거 1z에서 1a·1b로 전환하는 과정에서 LPCVD 적용 공정 수가 약 2배 늘었고 1c에서는 필요 장비 수가 추가로 늘어날 것으로 예상된 바 있다. 공정 미세화가 장비 대수 증가로 이어지는 구조라면, 동일 규모의 투자에서도 수주 금액이 커질 여지가 있다. 다만 실제 반영 폭은 고객별 발주 스케줄에 좌우된다.",
+    "en": "LPCVD is widely used in leading-edge DRAM and is supplied to Samsung Electronics, SK hynix and Micron alike. In the past migration from 1z to 1a and 1b, the number of LPCVD process steps roughly doubled, and further increases in required tool counts were expected at 1c. If node shrinks keep translating into more tools, order value can rise even for a given capex budget. The actual pass-through, however, depends on each customer's order schedule."
    }
   },
   {
    "title": {
-    "ko": "공정 미세화에 따른 장비 수량 증가",
-    "en": "More tools per node shrink"
+    "ko": "고객 투자 계획의 상향과 조기 집행",
+    "en": "Upsized and accelerated customer capex plans"
    },
    "body": {
-    "ko": "3세대(1z)에서 4·5세대(1a·1b)로 전환하는 과정에서 LPCVD 적용 공정 수가 약 2배로 늘어난 것으로 파악됐다. 6세대(1c) 전환에서는 필요 장비 수가 추가로 늘어날 것으로 관측된 바 있어, 같은 웨이퍼 생산능력에서도 장비 수요가 커지는 구조다. 선단공정 비중이 커질수록 ALD 적용 레이어도 늘어나는 방향으로 언급돼 왔다. 실제 채택 수량과 단가는 고객사 발주에서 확인해야 하는 부분이다.",
-    "en": "The number of LPCVD process steps is understood to have roughly doubled in the shift from 1z to 1a/1b nodes. Additional tool requirements have been anticipated at the 1c transition, meaning equipment demand can grow even at unchanged wafer capacity. Commentary has also pointed to more ALD layers as leading-edge mix rises. Actual adoption volumes and pricing must be verified through customer orders."
+    "ko": "SK하이닉스는 2026년 설비투자를 전년보다 약 60% 늘린 40조원대 후반으로 확대하고 청주 M15X에 장비를 조기 반입한다고 밝혔다. 평택·용인 완공 시점을 앞당기는 계획이 제시되면서 첨단 D램 라인용 전공정 장비 수주가 먼저 확대될 것이라는 관측도 나왔다. 전공정 증착 장비는 라인 구축 초기에 반입되는 품목군에 속해 이런 일정 단축의 영향을 상대적으로 이른 시점에 받는다. 반영 시점과 금액은 분기 실적과 계약 공시로 확인해야 한다.",
+    "en": "SK hynix has said 2026 capex will rise about 60% year on year into the high-KRW 40tn range, with tools moved into Cheongju M15X ahead of plan. As Pyeongtaek and Yongin completion dates were pulled forward, observers expected front-end equipment orders for advanced DRAM lines to expand first. Front-end deposition tools are installed early in a line build, so schedule compression tends to reach them relatively soon. The timing and size of that impact still need confirmation via quarterly results and contract disclosures."
    }
   },
   {
    "title": {
-    "ko": "자회사 손익 개선과 소재 확장",
-    "en": "Subsidiary turnaround and materials push"
+    "ko": "ALD 확장과 소재 자회사라는 포트폴리오 축",
+    "en": "ALD expansion plus a materials arm"
    },
    "body": {
-    "ko": "메탈 ALD 장비를 주력으로 하는 미국 자회사 유지너스는 인수 이후 적자를 이어왔으나 2024년 4분기를 기점으로 흑자 전환한 것으로 증권가는 파악하고 있다. 소재 자회사 EGTM은 D램 커패시터용 고유전율 박막 증착 전구체 사업에 진출해 장비 외 매출축을 준비하고 있다. 장비 단가 상승과 소재 매출이 동시에 붙으면 이익률 개선 여지가 열릴 수 있다. 다만 소재 사업의 매출 기여 규모는 아직 공시로 확인되는 부문 수치가 제한적이다.",
-    "en": "US subsidiary Eugenus, focused on metal ALD tools, had been loss-making since acquisition but is understood by brokerages to have turned profitable from Q4 2024. Materials subsidiary EGTM has entered precursors for high-k thin-film deposition in DRAM capacitors, building a revenue axis beyond equipment. Higher tool prices combined with materials sales could open room for margin improvement. However, disclosed segment figures quantifying the materials contribution remain limited."
+    "ko": "ALD는 회사가 2021년부터 확장해 온 영역으로, CVD보다 얇은 막을 형성해 선단공정 수요가 크다. 업계에서는 일반 CVD 장비 대비 ALD 퍼니스 장비의 대당 가격이 더 높은 것으로 설명돼 왔다. 여기에 미국 메탈 ALD 자회사와 전구체 소재 자회사를 함께 보유해 장비·소재 양쪽에서 매출 기여 경로를 갖는다. 자회사별 매출과 손익 기여는 공시로 확인 가능한 범위 안에서 점검해야 한다.",
+    "en": "ALD is an area the company has expanded since 2021, forming thinner films than CVD and drawing strong leading-edge demand. Industry sources have described ALD furnace tools as carrying higher unit prices than conventional CVD systems. The group also owns a United States metal ALD subsidiary and a precursor materials arm, giving it revenue routes in both equipment and materials. Subsidiary-level revenue and profit contributions should be checked only against verifiable disclosures."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly volatility"
+    "ko": "분기 실적의 큰 진폭",
+    "en": "Wide quarterly swings"
    },
    "body": {
-    "ko": "2025년 분기 매출은 623억원에서 1,049억원까지 오갔고, 영업이익률도 8.3%에서 18.8% 사이에서 크게 흔들렸다. 장비 매출 인식이 발주·반입·검수 일정에 연동되기 때문에 한 분기 실적이 추세를 대표하기 어렵다. 2025년 3분기처럼 특정 분기에 이익이 급감하는 사례가 반복될 수 있다. 연간 기준으로도 2025년 영업이익은 2024년 대비 감소했다.",
-    "en": "Quarterly revenue in 2025 ranged from KRW 62.3bn to KRW 104.9bn, with operating margins swinging between 8.3% and 18.8%. Because tool revenue recognition follows order, move-in and acceptance schedules, a single quarter rarely represents the trend. Sharp profit drops in particular quarters, as in Q3 2025, can recur. On an annual basis too, 2025 operating profit declined versus 2024."
+    "ko": "2025년 2분기 매출 1,049억원에서 3분기 623억원으로 한 분기 만에 40% 이상 줄었고 영업이익은 197억원에서 52억원으로 축소됐다. 장비 입고 인식 시점에 따라 분기 매출이 급변하는 구조이므로 한 분기 호실적을 추세로 단정하기 어렵다. 2026년 2분기는 매출이 최대였으나 영업이익률은 전분기보다 낮아졌다. 분기 변동성 자체가 밸류에이션 논쟁의 상수로 남는다.",
+    "en": "Revenue fell more than 40% in a single quarter, from KRW 104.9bn in the second quarter of 2025 to KRW 62.3bn in the third, with operating profit shrinking from KRW 19.7bn to KRW 5.2bn. Because revenue recognition follows tool installation timing, one strong quarter cannot be read as a trend. In the second quarter of 2026 revenue hit a high while the operating margin slipped from the prior quarter. That quarterly volatility remains a constant in the valuation debate."
    }
   },
   {
    "title": {
-    "ko": "기대치 선반영 부담",
-    "en": "Expectations already priced in"
+    "ko": "이익률 하락과 비용 증가",
+    "en": "Margin decline and rising costs"
    },
    "body": {
-    "ko": "최근 6개월 증권사 평균 목표 주가가 직전 6개월 평균 대비 76.9% 상향됐다는 집계는 시장 기대치가 빠르게 올라왔음을 보여준다. 이는 확정 실적보다 향후 증설 시나리오에 기반한 부분이 크며, 발주 지연이나 실적 미달 시 기대치 조정 폭도 커질 수 있다. 2025년 초에는 같은 종목이 역사적 밴드 하단인 12배 수준으로 평가되기도 했다. 밸류에이션 기준선 자체가 짧은 기간에 이동해 왔다는 점을 감안할 필요가 있다.",
-    "en": "The tally showing brokerage target prices up 76.9% over six months versus the prior six-month average illustrates how fast expectations have risen. Much of that rests on future expansion scenarios rather than confirmed results, so order delays or misses could trigger correspondingly large expectation resets. In early 2025 the same stock was described as trading near a historical band low of about 12x. The valuation reference point itself has shifted within a short span."
+    "ko": "영업이익률은 2024년 18.1%에서 2025년 14.7%로 낮아졌고, 매출은 3,381억원에서 3,503억원으로 늘어난 반면 영업이익은 612억원에서 517억원으로 줄었다. 연구개발·인력 확충 등 고정비가 선행 투입되는 국면에서는 매출 증가가 이익 증가로 바로 이어지지 않는다. 2023년에는 매출 2,765억원·영업이익 243억원으로 영업이익률이 8.8%까지 내려간 이력도 있다. 이익률 회복 여부가 실적 논쟁의 핵심 축이다.",
+    "en": "The operating margin fell from 18.1% in 2024 to 14.7% in 2025, as revenue rose from KRW 338.1bn to KRW 350.3bn while operating profit dropped from KRW 61.2bn to KRW 51.7bn. When fixed costs such as R&D and headcount are added ahead of demand, higher revenue does not automatically lift profit. In 2023, revenue of KRW 276.5bn and operating profit of KRW 24.3bn took the margin down to 8.8%. Whether the margin recovers is the central question for earnings."
    }
   },
   {
    "title": {
-    "ko": "경쟁 접점 확대",
-    "en": "Widening competitive overlap"
+    "ko": "순이익의 질과 경쟁 심화",
+    "en": "Earnings quality and intensifying competition"
    },
    "body": {
-    "ko": "과거 LPCVD와 트리트먼트 장비에서는 국내 경쟁사와 겹침이 적었으나, ALD 진출 이후 원익IPS·주성엔지니어링과의 경쟁 영역이 넓어졌다. ALD에서는 일본 고쿠사이가 기존 공급자로 남아 있어 고객사의 이원화 정책 변화에 따라 물량 배분이 달라질 수 있다. 고객사가 이원화를 통해 구매 협상력을 높이는 구조 자체가 단가 압력으로 작용할 소지도 있다. 신규 장비의 공정 인증에는 통상 수년이 소요된다는 점도 진입 비용 요인이다.",
-    "en": "Overlap with domestic peers was limited in LPCVD and treatment tools, but the ALD move has broadened competition with Wonik IPS and Jusung Engineering. In ALD, Japan's Kokusai remains an incumbent supplier, so volume allocation can shift with customers' dual-sourcing policies. The very structure of dual sourcing, used by customers to strengthen purchasing leverage, can create pricing pressure. New tools typically require several years of process qualification, adding to entry costs."
+    "ko": "2026년 2분기 지배주주 순이익 652억원은 같은 분기 영업이익 182억원의 세 배를 넘어, 영업외 항목이 크게 작용한 것으로 보인다. 이런 항목은 반복성이 낮을 수 있어 이익 지표를 그대로 미래에 투영하기 어렵다. 경쟁 측면에서는 ALD 진출 이후 국내 경쟁사와의 접점이 늘어난 것으로 업계에서 평가되며, 글로벌 배치 ALD 영역에서는 일본 업체와의 경쟁이 이어진다. 기술·가격 경쟁이 이익률에 미치는 영향을 지속 확인해야 한다.",
+    "en": "Second-quarter 2026 net profit attributable to owners of KRW 65.2bn was more than triple the KRW 18.2bn operating profit for the quarter, suggesting a large non-operating contribution. Such items may not repeat, so headline profit metrics cannot simply be projected forward. On competition, industry observers note that entering ALD increased overlap with domestic rivals, while rivalry with Japanese suppliers continues in global batch ALD. The effect of technology and price competition on margins bears ongoing monitoring."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객사 투자 일정 변경",
-    "en": "Customer capex timing"
+    "ko": "고객 집중 리스크",
+    "en": "Customer concentration"
    },
    "body": {
-    "ko": "삼성전자 평택 P4·P5, SK하이닉스 M15X·용인 Y1 등의 세부 일정 상당수는 회사 공시가 아니라 업계 취재와 증권사 전망을 바탕으로 한 내용이다. 실제 장비 발주와 반입 시점은 시황과 경영 판단에 따라 앞당겨지거나 미뤄질 수 있다. 메모리 3사가 과거 슈퍼사이클의 과잉투자 경험을 의식해 신중한 집행을 병행하고 있다는 지적도 있다. 발주 지연은 곧바로 특정 분기 매출 공백으로 이어질 수 있다.",
-    "en": "Many detailed timelines for Samsung's P4/P5 and SK hynix's M15X and Yongin Y1 come from industry reporting and brokerage forecasts rather than company disclosures. Actual order placement and tool move-in can be accelerated or postponed depending on market conditions and management decisions. Observers note memory makers are pairing expansion with caution, mindful of past over-investment cycles. Order slippage can translate directly into a revenue gap in a given quarter."
+    "ko": "주요 고객은 삼성전자·SK하이닉스·마이크론 등 메모리 소자업체에 집중돼 있다. 소수 고객의 투자 계획 변경이나 특정 팹의 장비 입고 지연이 분기 매출에 즉각 반영되는 구조다. 2025년 3분기의 매출 급감은 이러한 민감도를 보여준 사례로 볼 수 있다. 고객 다변화 진척은 사업보고서상 매출처 구성 변화로 점검할 수 있다.",
+    "en": "Key customers are concentrated among memory makers such as Samsung Electronics, SK hynix and Micron. A change in a few customers' capex plans or a delay in one fab's tool installation flows straight into quarterly revenue. The sharp revenue drop in the third quarter of 2025 illustrates that sensitivity. Progress on diversification can be tracked through changes in the customer mix in annual filings."
    }
   },
   {
@@ -130,98 +130,98 @@
     "en": "Memory cycle reversal"
    },
    "body": {
-    "ko": "현재 D램 호황은 인공지능 인프라 투자와 타이트한 공급에 기반하고 있으며, 가격 상승 전망도 이 조건을 전제로 한다. 과거 2018년 사상 최대 실적 직후 2019년 D램 가격이 크게 하락한 사례가 있어 사이클 반전 시 장비 발주는 빠르게 위축될 수 있다. 유진테크의 2023년 실적(매출 2,765억원·영업이익률 8.8%)이 투자 급감기의 민감도를 보여준다. 전방 투자 축소는 매출과 마진에 동시에 영향을 준다.",
-    "en": "The current DRAM upturn rests on AI infrastructure spending and tight supply, and price forecasts assume those conditions persist. After record 2018 profits, DRAM prices fell sharply in 2019, showing how quickly tool orders can contract when the cycle turns. The company's 2023 results (revenue KRW 276.5bn, 8.8% operating margin) illustrate sensitivity to a capex downturn. Reduced customer investment hits revenue and margins simultaneously."
+    "ko": "장비 시장은 2026년 업사이클이 예상되고 있으나, 중국 관련 규제와 기술 전환의 복잡성은 주요 리스크로 함께 지적됐다. 메모리 가격이 꺾이면 소자업체의 설비투자 집행이 이연될 수 있고, 장비사 수주는 시차를 두고 축소된다. 2023년 실적 위축은 투자 축소 국면이 손익에 미치는 영향의 사례다. 사이클 방향은 소자업체의 분기 자본지출 발표로 추적하는 것이 실질적이다.",
+    "en": "The equipment market is expected to be in an upcycle in 2026, yet China-related regulation and the complexity of technology transitions were flagged as key risks. If memory prices roll over, chipmakers can defer capex and equipment orders shrink with a lag. The 2023 earnings contraction shows how a capex downturn feeds through to profit. The practical way to track the cycle is via chipmakers' quarterly capital spending disclosures."
    }
   },
   {
    "cat": {
-    "ko": "규제·지정학 변수",
-    "en": "Regulatory and geopolitical factors"
+    "ko": "규제·지정학 및 신제품 검증 리스크",
+    "en": "Regulatory, geopolitical and product qualification risk"
    },
    "body": {
-    "ko": "중국 메모리 업체들이 D램 전환과 증설을 추진하고 있으나, 미국과 중국 간 갈등으로 첨단 장비 조달이 제한되는 환경이 이어지고 있다. 수출 통제나 고객 국가별 정책 변화는 장비 업체의 지역별 매출 구성에 직접 영향을 줄 수 있다. 국내 지원 정책 역시 직접 보조금보다 정책 금융·세액공제 중심으로 운영되고 있어 제도 변경 여부가 변수다. 회사가 공시로 제시한 지역별·부문별 매출 세부 수치는 분기보고서에서 확인이 필요하다.",
-    "en": "Chinese memory makers are pursuing DRAM conversions and expansion, but US-China friction continues to restrict their access to advanced equipment. Export controls or policy shifts in customer countries can directly reshape an equipment vendor's regional revenue mix. Korea's support framework also centers on policy financing and tax credits rather than direct subsidies, making rule changes a variable. Detailed regional and segment revenue figures should be checked in the company's quarterly report filings."
+    "ko": "수출 규제와 지정학 변화는 장비 판매 지역과 고객 구성에 영향을 줄 수 있는 외부 변수다. 신규 공정용 장비는 개발과 고객 승인에 통상 4~5년이 소요된다고 업계에서 언급돼 왔다. 따라서 신제품의 양산 채택이 지연되면 투자 확대 국면에서도 수혜 시점이 늦어질 수 있다. 미국 자회사와 소재 자회사의 사업 진척 역시 검증에 시간이 필요한 영역이다.",
+    "en": "Export controls and geopolitical shifts are external variables that can affect sales regions and customer mix. Industry sources have noted that tools for new processes typically require four to five years of development and customer approval. So if new products are adopted late for mass production, the benefit can arrive later even during a capex upturn. Progress at the United States subsidiary and the materials arm likewise requires time to verify."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 18일 전후",
-    "en": "Around 18 August 2026"
+    "ko": "2026년 10월 말~11월 중순",
+    "en": "Late October to mid-November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표가 예정돼 있다. 1분기 매출 1,019억원·영업이익 188억원 수준의 개선세가 이어지는지, 영업이익률이 18% 대에서 유지되는지가 확인 포인트다.",
-    "en": "Q2 2026 results are scheduled. Key checks are whether the improvement seen in Q1 (revenue KRW 101.9bn, operating profit KRW 18.8bn) continues and whether the operating margin holds around the 18% area."
+    "ko": "2026년 3분기 실적 발표. 2026년 2분기의 매출 1,221억원 수준이 유지되는지, 영업이익률이 14~15%대에서 2024년 수준으로 회복되는지를 함께 확인할 필요가 있다.",
+    "en": "Third-quarter 2026 results. Watch whether revenue holds near the KRW 122.1bn level of the second quarter and whether the operating margin recovers from the 14-15% area toward 2024 levels."
    }
   },
   {
    "when": {
-    "ko": "2026년 3분기~4분기",
-    "en": "Q3-Q4 2026"
+    "ko": "2026년 10월~11월",
+    "en": "October to November 2026"
    },
    "what": {
-    "ko": "삼성전자 평택 P4 페이즈2·4 마무리와 P5 공사 진행, SK하이닉스 청주 M15X 장비 조기 반입(2026년 월 7만5,000~8만장 목표) 진척도를 점검할 필요가 있다. 장비 발주 시점이 회사 매출 인식 시점과 직결된다.",
-    "en": "Monitor completion of Samsung's P4 phases 2 and 4 and P5 construction progress, plus SK hynix's accelerated tool move-in at Cheongju M15X targeting 75,000-80,000 wafers per month in 2026. Order timing maps directly onto the company's revenue recognition."
+    "ko": "2026년 반기·3분기 보고서 주석에서 2026년 2분기 대규모 순이익의 영업외 항목 성격과 반복 가능성을 확인. 이익의 질을 판단하는 핵심 자료다.",
+    "en": "Check the interim and third-quarter report footnotes for the nature and repeatability of the large non-operating items behind second-quarter 2026 net profit. This is the key material for judging earnings quality."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 (3분기 보고서)",
-    "en": "November 2026 (Q3 report)"
+    "ko": "2026년 4분기",
+    "en": "Fourth quarter of 2026"
    },
    "what": {
-    "ko": "분기보고서에서 수주잔고, 제품별·지역별 매출 구성, 자회사 유지너스와 EGTM의 손익 기여를 확인할 수 있다. 2025년 3분기처럼 이익이 급감하는 패턴이 재현되는지도 함께 볼 부분이다.",
-    "en": "The quarterly filing should reveal order backlog, product and regional revenue mix, and the profit contribution from subsidiaries Eugenus and EGTM. It is also worth checking whether a sharp profit dip like Q3 2025 recurs."
+    "ko": "삼성전자 평택 P5와 SK하이닉스 청주 M15X 관련 장비 발주 흐름 및 단일판매·공급계약 공시 여부. 전공정 증착 장비는 라인 구축 초기 반입 품목이어서 수주 인식 시점의 선행 지표가 된다.",
+    "en": "Order flow tied to Samsung's Pyeongtaek P5 and SK hynix's Cheongju M15X, and any single supply contract disclosures. Front-end deposition tools are installed early in a line build, making them a leading indicator of order recognition."
    }
   },
   {
    "when": {
-    "ko": "2027년 1분기",
-    "en": "Q1 2027"
+    "ko": "2027년 1분기~2분기",
+    "en": "First to second quarter of 2027"
    },
    "what": {
-    "ko": "SK하이닉스 용인 클러스터 1기 팹 클린룸 개방이 예정된 시점으로, 이어 2분기부터 10나노급 6세대(1c) D램 라인 구축이 계획돼 있다. 1c 전환에서 LPCVD·ALD 채택 장비 수가 실제로 늘어나는지가 중기 물량의 핵심이다.",
-    "en": "SK hynix's first Yongin fab is slated to open its cleanroom, with 10nm-class sixth-generation (1c) DRAM line construction planned from Q2. Whether LPCVD and ALD tool counts actually increase at 1c is central to medium-term volumes."
+    "ko": "SK하이닉스가 밝힌 용인 클러스터 1기 클린룸 개방(2027년 1분기)과 1c D램 라인 구축 착수(2027년 2분기) 일정의 실제 이행 여부. 국내 전공정 장비 발주 사이클의 지속성을 가늠할 이벤트다.",
+    "en": "Whether SK hynix executes its stated schedule of opening the first Yongin cluster cleanroom in the first quarter of 2027 and starting 1c DRAM line construction in the second. This is the event that gauges the durability of the domestic front-end order cycle."
    }
   },
   {
    "when": {
-    "ko": "수시 (DART 공시)",
-    "en": "Ongoing (DART filings)"
+    "ko": "2027년 2월~3월",
+    "en": "February to March 2027"
    },
    "what": {
-    "ko": "임원·주요주주 소유상황 보고서에서 내부자 거래가 이어졌다. 2026년 8월 3일 현준진 부사장이 주식매수선택권 행사로 8,180주를 취득(행사가격 3만5,420원), 7월 31일 손동재 상무가 1,000주를 장내 매도(10만1,500원)했다. 사실 확인용 참고 항목이며 단일 거래로 방향성을 판단하기는 어렵다.",
-    "en": "Insider filings have continued. On 3 August 2026 Vice President Hyun Jun-jin acquired 8,180 shares via stock option exercise (exercise price KRW 35,420), and on 31 July an executive sold 1,000 shares on-market at KRW 101,500. These are factual reference points; single transactions do not establish a trend."
+    "ko": "2026년 연간 실적과 사업보고서 공시. 연간 매출·영업이익률, 현금배당 결정, 그리고 ALD·전구체 등 신규 영역의 매출 기여가 공시 수치로 확인되는 시점이다.",
+    "en": "Full-year 2026 results and the annual report. This is when annual revenue and operating margin, the cash dividend decision, and the revenue contribution from newer areas such as ALD and precursors become visible in disclosures."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "유진테크는 LPCVD와 플라즈마 처리를 기반으로 ALD·소재로 영역을 넓혀온 전공정 증착 장비 기업으로, 삼성전자·SK하이닉스·마이크론을 모두 고객으로 확보한 점이 사업 구조의 핵심이다. 확정 실적을 보면 2025년 매출은 3,503억원으로 늘었지만 영업이익은 517억원으로 줄어 영업이익률이 14.7%로 후퇴했고, 지배주주 순이익도 425억원으로 감소했다. 반면 2026년 1분기에는 매출 1,019억원·영업이익 188억원으로 전년 동기 대비 이익이 두 배 이상 늘며 고객사 투자 재확대가 실적에 반영되기 시작한 모습이다. 재무구조는 부채비율 18.2%, 영업활동현금흐름 665억원으로 사이클 변동을 버틸 수 있는 여력을 갖췄다. 강세 논리는 D램 3사 동시 공급, 미세화에 따른 장비 수량 증가, 자회사 손익 개선에 있고, 약세 논리는 분기 실적 편차, 기대치가 빠르게 선반영된 밸류에이션 기준선, ALD 진출로 넓어진 경쟁 접점에 있다. 향후 관전 포인트는 8월 2분기 실적, 평택 P4·P5와 청주 M15X·용인 Y1의 실제 장비 발주 시점, 그리고 1c 전환에서의 장비 채택 수량이다. 발표된 투자 계획이 곧 매출로 직결되지는 않으므로, 계획과 분기 실적 사이의 시차를 확인하며 판단하는 접근이 필요하다.",
-   "en": "Eugene Technology is a front-end deposition equipment maker that has extended from LPCVD and plasma treatment into ALD and materials, with its ability to serve Samsung Electronics, SK hynix and Micron simultaneously as the core of its business model. On confirmed numbers, 2025 revenue rose to KRW 350.3bn while operating profit fell to KRW 51.7bn, taking the margin down to 14.7%, and net profit attributable to owners declined to KRW 42.5bn. In Q1 2026, by contrast, revenue of KRW 101.9bn and operating profit of KRW 18.8bn marked a more than doubling of profit year on year, suggesting renewed customer investment is starting to flow through. The balance sheet, with an 18.2% debt-to-equity ratio and KRW 66.5bn of operating cash flow, provides capacity to absorb cycle swings. The bull case rests on serving all three DRAM makers, rising tool counts from node shrinks and subsidiary profitability; the bear case on quarterly earnings dispersion, a valuation baseline that has already absorbed expectations quickly, and wider competitive overlap from the ALD expansion. Things to watch include the August Q2 results, actual order timing at Pyeongtaek P4/P5, Cheongju M15X and Yongin Y1, and tool adoption counts at the 1c transition. Because announced investment plans do not translate immediately into revenue, tracking the lag between plans and reported quarterly results is essential to forming a view."
+   "ko": "유진테크는 LPCVD와 플라즈마 처리 장비를 축으로 D램 선단공정 투자에 직접 연동되는 전공정 장비 기업이며, ALD와 소재 자회사로 영역을 넓혀 왔다. 확정 실적은 2025년 매출 3,503억원·영업이익 517억원으로 매출은 2024년보다 늘었지만 영업이익률은 18.1%에서 14.7%로 낮아졌다. 분기로는 2025년 3분기 매출 623억원까지 위축된 뒤 2025년 4분기 999억원, 2026년 1분기 1,019억원, 2026년 2분기 1,221억원으로 회복했고, 최근 네 개 분기 합산 매출은 약 3,862억원으로 2025년 연간을 웃돈다. 다만 2026년 2분기 지배주주 순이익 652억원이 같은 분기 영업이익 182억원을 크게 웃돈 만큼, 이익의 질에 대한 확인이 선행돼야 한다. 전방에서는 SK하이닉스의 2026년 설비투자 확대 계획과 삼성전자 평택 P5의 1c D램 전용 라인 구축 방침 등 확장 신호가 이어지는 반면, 고객 집중과 장비 입고 시점에 따른 분기 진폭, 메모리 사이클 반전 가능성은 반대편 요인으로 남는다. 밸류에이션은 과거 다운사이클 시절의 이익 배수 밴드보다 위쪽, 순자산 대비로는 프리미엄이 부여된 구간에서 형성돼 있어, 실적 정상화 속도가 배수의 설명력을 좌우한다. 본 리포트는 정보 제공 목적이며 매수·매도 의견이나 목표주가를 포함하지 않는다.",
+   "en": "Eugene Technology is a front-end equipment maker levered directly to leading-edge DRAM investment through LPCVD and plasma treatment tools, and it has broadened into ALD and materials via subsidiaries. Confirmed results show 2025 revenue of KRW 350.3bn and operating profit of KRW 51.7bn, with revenue above 2024 but the operating margin down from 18.1% to 14.7%. Quarterly revenue troughed at KRW 62.3bn in the third quarter of 2025 before recovering to KRW 99.9bn in the fourth, KRW 101.9bn in the first quarter of 2026 and KRW 122.1bn in the second, so the last four quarters sum to roughly KRW 386.2bn, above the 2025 full-year figure. That said, second-quarter 2026 net profit attributable to owners of KRW 65.2bn far exceeded that quarter's KRW 18.2bn operating profit, so earnings quality needs verification first. On the demand side, expansion signals continue, including SK hynix's plan to enlarge 2026 capex and Samsung's approach of building Pyeongtaek P5 as a dedicated 1c DRAM line, while customer concentration, installation-driven quarterly swings and the possibility of a memory cycle reversal sit on the other side. The shares trade above the earnings-multiple band seen in past down-cycles and at a premium to net asset value, so the pace of earnings normalization determines how much the multiple can be explained. This report is for information only and contains no buy or sell recommendation or target price."
   }
  },
  "sources": [
   "https://kr.investing.com/equities/eugenetechnology-co-ltd-earnings",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=084370",
-  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cn=&cmp_cd=033540",
-  "https://alphasquare.co.kr/home/stock-summary?code=084370",
-  "https://www.newspim.com/news/view/20260518000470",
+  "https://m.irgo.co.kr/IR-COMP/084370/%EC%9C%A0%EC%A7%84%ED%85%8C%ED%81%AC-IR-PAGE",
+  "https://www.valueline.co.kr/finance/balancesheet/240600",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cn=&cmp_cd=240600",
+  "https://comp.wisereport.co.kr/company/c1080001.aspx?cmp_cd=084370&cn=",
   "https://www.investing.com/equities/eugenetechnology-co-ltd",
-  "https://www.youtube.com/watch?v=ef3fP4W5XfU",
-  "https://www.newspim.com/news/view/20260514000281",
+  "https://alphasquare.co.kr/home/stock-issue?code=084370&type=news",
+  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cn=&cmp_cd=033540",
   "https://www.newstomato.com/ReadNewspaper.aspx?epaper=1&no=1082029",
   "https://www.thelec.kr/news/articleView.html?idxno=11808",
-  "https://www.eugenetech.co.kr/recruit/page/sub05-3.php",
+  "https://alphadistill.com/report/245",
   "https://www.bloter.net/news/articleView.html?idxno=623628",
-  "https://m.thinkpool.com/compDiscuss/cont/1017343",
-  "https://www.thelec.kr/news/articleView.html?idxno=11906",
-  "https://eugenetech.co.kr/sub/investment_4.php?aq_id=109&aq_listnum=75&aq_part=&page=b_view&s_table=kor_invest1",
   "https://www.bondweb.co.kr/_research/downloadPage.asp?number=871000&gn=1",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cn=&cmp_cd=240600",
-  "https://www.valueline.co.kr/finance/balancesheet/240600"
+  "https://alphasquare.co.kr/home/stock-summary?code=084370",
+  "https://jasoseol.com/companies/3774/insights",
+  "https://m.thinkpool.com/compDiscuss/cont/1017343",
+  "https://www.thelec.kr/news/articleView.html?idxno=11906"
  ],
  "v": 2,
  "model": "claude-opus-5",
@@ -233,11 +233,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-15",
- "reportTs": "2026-08-15 12:15",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 05:57",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -338,25 +338,26 @@
    }
   ],
   "valuation": {
-   "price": 128500,
-   "mcap": 2.9447,
+   "price": 136500,
+   "mcap": 3.128,
    "shares": 22916042,
    "total_shares": 22916042,
    "wavg_shares": 22621514,
-   "per": 26.049,
+   "per": 27.671,
    "eps": 4933,
-   "pbr": 5.3486,
-   "bps": 24025,
+   "pbr": 5.6813,
+   "bps": 24026,
    "roe_ttm": 23.1,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 111247238953,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 6.32,
+   "eps_src": "공시",
+   "pbr_krx": 6.72,
    "bps_krx": 20320.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 230.0,
-   "div": 0.18
+   "div": 0.17
   }
  }
 }

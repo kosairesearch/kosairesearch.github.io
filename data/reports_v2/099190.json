@@ -1,227 +1,217 @@
 {
  "title": {
-  "ko": "CGM 고성장 속 순이익 변동성 상존",
-  "en": "i-SENS: CGM Growth Amid Non-Operating Earnings Volatility"
+  "ko": "CGM 성장궤도 진입, 순이익 변동성 상존",
+  "en": "CGM Growth Track, Net Income Still Volatile"
  },
  "lead": {
-  "ko": "혈당측정 스트립 중심의 안정적 본업 위에 연속혈당측정기(CGM) 사업이 분기 최대 매출을 경신하며 외형과 수익성이 함께 개선되고 있으나, 해외 종속회사 손상·통화 관련 비영업 손익이 지배주주 순이익의 변동성을 키우고 있다.",
-  "en": "i-SENS's core self-monitoring blood glucose business remains stable while its CGM segment posts record quarterly sales and margin gains, but non-operating items tied to overseas subsidiaries and currency swings continue to add volatility to net income attributable to owners."
+  "ko": "아이센스는 혈당측정 스트립 중심 본업 회복과 연속혈당측정기(CGM) 신사업 확대로 영업이익이 개선되는 흐름이나, 자회사 손상과 해외 채권 리스크 등 일회성 영업외 요인이 순이익 변동성을 키우고 있다.",
+  "en": "i-SENS is showing improving operating profit as its core blood glucose strip business recovers and its continuous glucose monitoring (CGM) business expands, but one-off non-operating items such as subsidiary impairment and an overseas receivable risk have added volatility to net income."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 3,154억원(+8.3%), 영업이익 79억원(+196.7%)으로 본업 수익성이 회복됐으나 지배주주 순손실 51억원을 기록했다.",
-   "en": "2025 consolidated revenue reached KRW 315.4bn (+8.3% YoY) and operating profit KRW 7.9bn (+196.7%), yet net loss attributable to owners was KRW 5.1bn."
+   "ko": "2025년 연결 영업이익은 전년 대비 크게 늘며 회복세를 보였으나, 지배주주 순이익은 2년 연속 적자를 기록했다.",
+   "en": "Consolidated operating profit rose sharply in 2025 from the prior year, but net income attributable to owners remained in the red for a second consecutive year."
   },
   {
-   "ko": "2025년 4분기 지배주주 순손실 82억원은 종속회사 영업권·투자주식 손상 등 비현금성 요인이 주된 원인으로, 2026년 1분기에는 순이익 16억원으로 흑자전환했다.",
-   "en": "The KRW 8.2bn Q4 2025 net loss to owners stemmed largely from non-cash impairments at subsidiaries; net income turned positive again at KRW 1.6bn in Q1 2026."
+   "ko": "2026년 2분기 매출은 분기 기준 최대치를 기록했고, CGM 매출 비중 확대에 따른 제품 믹스 개선이 영업이익률 상승을 이끌었다.",
+   "en": "Second-quarter 2026 revenue hit a quarterly record, and an improved product mix from higher CGM sales contributed to a rise in the operating margin."
   },
   {
-   "ko": "CGM 매출은 2026년 1분기 약 84억원(+172% YoY), 2분기(잠정) 약 94억원으로 분기 최대치를 연이어 경신하며 연간 목표 400억원 달성 궤도에 있다.",
-   "en": "CGM revenue hit a record roughly KRW 8.4bn in Q1 2026 (+172% YoY) and about KRW 9.4bn in preliminary Q2 2026, tracking toward the company's KRW 40bn annual target."
+   "ko": "차세대 CGM '케어센스 에어2'는 국내 식약처 허가와 유럽 CE 인증을 동시에 추진 중이며, 회사는 2027년 1분기 국내·유럽 동시 출시를 목표로 한다.",
+   "en": "The next-generation CGM device 'CareSens Air 2' is pursuing domestic MFDS approval and European CE certification in parallel, with the company targeting a simultaneous domestic and European launch in the first quarter of 2027."
   },
   {
-   "ko": "글로벌 CGM 시장은 애보트·덱스콤·메드트로닉이 사실상 시장을 장악하고 있어, 아이센스는 유럽 보험등재 확대와 2027년 케어센스 에어2 출시로 3위권 진입을 노리고 있다.",
-   "en": "Abbott, Dexcom and Medtronic dominate the global CGM market; i-SENS is targeting a top-3 position via expanded European insurance listings and the 2027 launch of CareSens Air2."
+   "ko": "2025년 순손실은 미국 자회사 CoaguSense의 영업권 손상과 이란 거래처 채권 회수 불확실성 등 비영업적 요인의 영향을 크게 받았다.",
+   "en": "The 2025 net loss was heavily affected by non-operating factors, including a goodwill impairment at U.S. subsidiary CoaguSense and collection uncertainty tied to a receivable from an Iranian customer."
   },
   {
-   "ko": "2026년 2월 공시된 기업가치제고계획에서 회사는 2030년 CGM 매출 1조원, 주주환원율 30% 등을 중장기 목표로 제시했다.",
-   "en": "The February 2026 value-up plan set mid/long-term targets including KRW 1 trillion in CGM revenue and a 30% shareholder return ratio by 2030."
+   "ko": "순자산 대비 주가 수준은 프리미엄이 반영된 구간에 있으며, 최근 4개 분기 합산 순이익이 적자 구간에 머물러 있어 주당 지표 해석에 유의가 필요하다.",
+   "en": "The stock trades at a premium to net asset value, and net income summed over the trailing four quarters remains in a loss position, warranting caution when interpreting per-share metrics."
   }
  ],
  "business": {
-  "ko": "아이센스는 2000년 설립된 전기화학·바이오센서 기술 기반 의료기기 기업으로, 자가혈당측정기(BGM)와 연속혈당측정기(CGM)를 포함하는 혈당측정 사업과 현장진단(POCT) 사업을 영위한다. 주요 사업은 혈당측정기(자가혈당측정기, 연속혈당측정기)와 현장진단(POCT) 부문으로, 혈당측정 부문이 매출의 80% 이상 차지하고 있음. 소모품인 혈당 스트립이 연결 매출의 상당 비중을 차지하는 이른바 '본체는 싸게, 소모품으로 수익을 내는' 구조를 갖고 있다. 동사는 100여개국에 수출하며 매출의 약 80%를 해외에서 달성, 디지털 헬스케어 시대에 맞춰 스마트 당뇨 관리 사업을 확장하고 있음. 국내 자가혈당측정기 시장에서는 선두 지위를 보유하고 있는데, 아이센스는 국내 자가혈당측정기(BGM) 시장 점유율 35%(지난해 기준)로 1위를 차지하고 있다. 2023년에는 국내 최초의 CGM 제품 '케어센스 에어'를 선보이며 신성장동력 육성에 나섰고, 미국 자회사 AgaMatrix와 혈액응고진단기업 CoaguSense를 인수해 글로벌 거점을 확대했다. 일본 Arkray는 지분 약 5%를 보유한 주요주주이자 최대 매출처로, 단일 고객 의존도가 관리 가능한 수준으로 알려져 있다. CGM 생산능력 확충을 위해 송도 제2공장에 자동화 라인을 구축했으며, 이를 통해 연간 생산능력을 200만 개 수준으로 확대했다. 경쟁구도는 글로벌 CGM 시장을 장악한 애보트·덱스콤·메드트로닉과 국내 다른 진단기업들 사이에서 형성되고 있으며, 회사는 가격·편의성 경쟁력을 앞세워 틈새를 공략하는 전략을 취하고 있다.",
-  "en": "Founded in 2000, i-SENS is a medical device company built on electrochemical and biosensor technology, operating in blood glucose monitoring (BGM and CGM) and point-of-care testing (POCT). Its main businesses are blood glucose meters (self-monitoring and continuous glucose monitoring) and point-of-care testing, with the glucose segment accounting for over 80% of revenue. The company follows a razor-and-blade model in which consumable glucose test strips generate recurring revenue. It exports to around 100 countries, with roughly 80% of revenue coming from overseas, and is expanding into smart diabetes management for the digital healthcare era. In the domestic BGM market, i-SENS holds the top position with a 35% market share (as of last year). In 2023 it launched Korea's first domestically developed CGM, CareSens Air, as a new growth driver, and has expanded its global footprint through acquisitions of US-based AgaMatrix and blood-coagulation diagnostics firm CoaguSense. Japan's Arkray holds roughly a 5% equity stake and is also i-SENS's largest single customer, though single-customer concentration is reportedly manageable. To support CGM capacity expansion, the company built an automated line at its Songdo Plant 2, expanding annual production capacity to about 2 million units. Competitively, the global CGM landscape is dominated by Abbott, Dexcom and Medtronic, and i-SENS is pursuing a niche strategy centered on price and usability advantages."
+  "ko": "아이센스는 전기화학 바이오센서 기술을 기반으로 자가혈당측정기(BGM)와 소모품인 검사스트립, 연속혈당측정기(CGM), 병원용 현장진단(POCT) 제품을 개발·제조·판매하는 의료기기 기업이다. 매출 구조는 소모품 성격의 검사스트립이 절대적 비중을 차지하는데, 혈당측정 스트립이 연결 매출의 81%를 차지하는 의료기기 회사로 분류된다. 신사업인 CGM은 아직 매출 비중이 크지 않아 2025년 기준 CGMS 매출은 약 116억 원으로 전체의 3.7% 수준입니다. 지역별로는 수출이 78.3%, 내수가 21.7%다 매출 구조를 보이며, 단일 고객 의존도는 Arkray(일본 5% 주주)가 14.8%로 가장 높지만 100여 개국에 판매망이 분산돼 있다. 생산은 원주공장과 송도 제1·2공장, 중국 공장에서 이뤄지며, 송도 제2공장에는 CGM 전용 생산라인을 구축 중이다. 미국 자회사 CoaguSense를 통해 혈액응고 진단기기 사업도 영위하고 있으나 최근 2개년 연속 순손실을 기록하며 그룹 전체 실적에 부담 요인으로 작용했다. 국내 CGM 시장에서는 덱스콤, 애보트, 메드트로닉 등 글로벌 3사가 이미 자리를 잡은 가운데, 아이센스가 유일한 국산 CGM 공급사로 경쟁에 뛰어든 구도다. 회사는 창업자인 차근식·남학현 각자대표 체제로 운영되며, AgaMatrix(미국)·Arkray(일본) 등 해외 파트너십을 활용해 글로벌 유통망을 확보해왔다.",
+  "en": "i-SENS is a medical device company that develops, manufactures, and sells blood glucose meters (BGM), disposable test strips, continuous glucose monitors (CGM), and hospital point-of-care testing (POCT) products based on electrochemical biosensor technology. Its revenue structure is dominated by consumable test strips, with the company classified as a medical device firm in which blood glucose test strips account for 81% of consolidated revenue. The newer CGM business still represents a relatively small share, with CGMS revenue of roughly 11.6 billion won, or about 3.7% of total revenue, in 2025. Geographically, exports account for 78.3% of sales versus 21.7% domestic, and while Arkray of Japan, a minority shareholder, is the single largest customer at 14.8% of sales, exposure is spread across more than 100 countries. Manufacturing takes place at plants in Wonju and Songdo (plants 1 and 2), as well as a plant in China, with a dedicated CGM production line being built at the Songdo 2 plant. Through its U.S. subsidiary CoaguSense, the company also operates a blood-coagulation diagnostics business, though that unit posted net losses for two consecutive years and has weighed on group results. In the domestic CGM market, global majors Dexcom, Abbott, and Medtronic are already established, and i-SENS competes as the sole domestic CGM manufacturer. The company operates under co-CEOs and founders Cha Geun-sik and Nam Hak-hyeon, and has built out its global distribution network through overseas partnerships including AgaMatrix in the United States and Arkray in Japan."
  },
  "earnings": {
-  "ko": "확정 실적 기준으로 아이센스의 연결 매출은 2022년 2,648억원, 2023년 2,651억원, 2024년 2,911억원을 거쳐 2025년 3,154억원으로 4년 연속 성장했다. 영업이익은 2022년 198억원(영업이익률 7.5%)에서 2023년 109억원(4.1%)으로 줄었다가, 2024년 27억원(0.9%)까지 급감한 뒤 2025년 79억원(2.5%)으로 다시 반등하는 등 변동성이 컸다. 지배주주 순이익은 2022년 161억원 흑자에서 2023년 34억원으로 축소됐고, 2024년(-18억원)과 2025년(-51억원) 2년 연속 순손실을 기록했다. 분기별로 보면 2025년 1~3분기는 각각 22.1억원, 7.8억원, 0.8억원의 지배주주 순이익을 기록하며 완만한 흑자 기조를 유지했으나, 4분기에는 매출 837억원·영업이익 20.5억원의 실적에도 불구하고 지배주주 순손실이 82.2억원으로 급격히 확대됐다. 이는 종속기업투자주식손상 및 영업권 손상 인식에 따른 비현금성 평가손실로, 본업의 영업 성과와는 직접적인 연관은 없다는 것이 회사 측 설명이며, 별도 분석에 따르면 종속회사 CoaguSense의 영업권 손상, 금융자산 평가손실, 통화선도 손실 등 영업외비용이 순이익을 잠식한 것으로 파악된다. 2026년 1분기에는 매출 751억원, 영업이익 9.4억원을 기록했고, 지배주주 순이익은 16억원으로 흑자전환했는데, 당기순이익은 전분기 비현금성 손실 소멸 및 외환차익 영향으로 흑자전환에 성공했다. 시장 공개 정보에 따르면 2026년 2분기(잠정)에는 당기순이익은 전년 동기 대비 341.9% 증가한 35억 원을 기록했으며, 상반기 누적 기준으로는 매출 1636억 원·영업이익 72억 원·당기순이익 51억 원을 달성했다고 밝혀, 영업 측면의 개선 흐름이 이어지고 있는 것으로 보인다. 종합하면 영업이익 레벨의 본업 개선은 뚜렷하지만, 해외 종속회사 관련 손상 및 파생·환율 관련 비영업 손익이 분기별 지배주주 순이익의 방향성을 좌우하는 핵심 변수로 작용하고 있다.",
-  "en": "On a confirmed basis, i-SENS's consolidated revenue grew for four straight years, from KRW 264.8bn (2022) to KRW 265.1bn (2023), KRW 291.1bn (2024) and KRW 315.4bn (2025). Operating profit was volatile: KRW 19.8bn (7.5% margin) in 2022, falling to KRW 10.9bn (4.1%) in 2023, sliding further to KRW 2.7bn (0.9%) in 2024, then rebounding to KRW 7.9bn (2.5%) in 2025. Net income attributable to owners narrowed from a KRW 16.1bn profit in 2022 to KRW 3.4bn in 2023, before turning to losses of KRW 1.8bn in 2024 and KRW 5.1bn in 2025. Quarterly results in 2025 show modest owner net profits of KRW 2.21bn, KRW 0.78bn and KRW 0.08bn in Q1-Q3, but Q4 saw a sharp swing to an KRW 8.22bn net loss despite revenue of KRW 83.7bn and operating profit of KRW 2.05bn. Per the company, the net loss reflected non-cash impairment losses on subsidiary investments and goodwill, unrelated to core operating performance, with independent analysis attributing much of it to goodwill impairment at subsidiary CoaguSense, financial asset valuation losses and currency forward losses. Q1 2026 revenue was KRW 75.1bn, operating profit KRW 0.94bn, and owner net income returned to profit at KRW 1.6bn, as net income turned positive on the disappearance of prior-quarter non-cash losses and foreign exchange gains. Preliminary Q2 2026 figures reportedly showed net income up 341.9% year-on-year to KRW 3.5bn, with first-half cumulative revenue of KRW 163.6bn, operating profit of KRW 7.2bn and net income of KRW 5.1bn, suggesting continued operational improvement. Overall, core operating profit is clearly recovering, but impairments and currency/derivative items tied to overseas subsidiaries remain the key swing factor for quarterly owner net income."
+  "ko": "2025년 연결 매출은 3,154억 원으로 2024년 2,911억 원에서 늘었고, 영업이익은 79억 원으로 2024년 27억 원 대비 크게 개선되며 영업이익률이 0.9%에서 2.5%로 상승했다. 그러나 지배주주 순이익은 -51억 원으로 2024년 -18억 원에 이어 2년 연속 적자를 기록했는데, 이는 종속회사 CoaguSense의 영업권 손상 56억 원, 금융자산 평가손실 39억 원, 통화선도 손실 19억 원 등 영업외비용 244억 원이 순이익을 잠식했기 때문이다. 분기별로 보면 2025년 3분기 영업이익은 9.2억 원으로 위축됐다가 4분기에는 영업이익 20.5억 원을 기록했음에도 지배주주 순이익은 -82.2억 원의 큰 손실을 나타냈는데, 이 시점에 앞서 언급한 자회사 손상과 평가손실이 집중 반영된 것으로 해석된다. 2026년 1분기는 매출 751억 원, 영업이익 9.4억 원으로 다시 위축됐고, 지배주주 순이익은 16.0억 원으로 흑자를 유지했다. 2026년 2분기는 매출 887억 원으로 분기 최대치를 경신했고 영업이익은 66.1억 원, 지배주주 순이익은 42.8억 원으로 뚜렷한 개선세를 보였다. 회사는 2분기 실적 개선의 배경으로 CGM 매출 비중 확대에 따른 제품 믹스 효과를 꼽았는데, 2분기 CGM 매출은 연결 기준 약 94억원(별도 기준 약 105억원)으로 집계됐으며 특히 해외 매출이 전 분기보다 큰 폭으로 증가했다. 이에 따라 매출총이익률은 43.4%를 기록해 전년 동기 대비 2.4%포인트, 직전 분기 대비 1.0%포인트 상승했다. 2022년(영업이익률 7.5%, 지배주주 순이익 161억 원)과 비교하면 최근 3~4년간 이익 규모는 축소된 뒤 다시 회복하는 흐름이며, 2025년 이후 영업 측면의 이익 회복과 순이익 측면의 비영업 변동성이 공존하는 구간으로 볼 수 있다.",
+  "en": "Consolidated revenue rose to 315.4 billion won in 2025 from 291.1 billion won in 2024, and operating profit improved sharply to 7.9 billion won from 2.7 billion won, lifting the operating margin from 0.9% to 2.5%. Net income attributable to owners, however, came in at negative 5.1 billion won, following a loss of 1.8 billion won in 2024, marking a second straight year of losses, as non-operating expenses of 24.4 billion won — including a 5.6 billion won goodwill impairment at subsidiary CoaguSense, a 3.9 billion won loss on financial asset valuation, and a 1.9 billion won loss on currency forwards — eroded profitability. On a quarterly basis, operating profit narrowed to 0.9 billion won in the third quarter of 2025, then recovered to 2.1 billion won in the fourth quarter, yet owners' net income swung to a large loss of 8.2 billion won in that same quarter, consistent with the subsidiary impairment and valuation losses noted above being concentrated in that period. The first quarter of 2026 saw revenue contract to 75.1 billion won with operating profit of 0.9 billion won, though owners' net income remained positive at 1.6 billion won. The second quarter of 2026 then set a quarterly revenue record of 88.7 billion won, with operating profit of 6.6 billion won and owners' net income of 4.3 billion won, showing a clear improvement. The company attributed the second-quarter improvement to a favorable product mix driven by a higher CGM sales contribution; consolidated CGM revenue for the quarter was about 9.4 billion won (roughly 10.5 billion won on a standalone basis), with overseas sales increasing sharply from the prior quarter. As a result, the gross margin reached 43.4%, up 2.4 percentage points year-on-year and 1.0 percentage point quarter-on-quarter. Compared with 2022, when the operating margin stood at 7.5% and owners' net income was 16.1 billion won, profit levels have contracted over the past three to four years before beginning to recover, leaving the company in a period where operating-level improvement coexists with non-operating volatility in net income."
  },
  "industry": {
-  "ko": "글로벌 CGM 시장은 소수 업체가 과점하는 구조로, 유럽 연속혈당 측정기 시장은 애보트 56%, 덱스콤 38%, 메드트로닉 6% 등의 순으로 점유하고 있다. 전 세계 기준으로도 현재는 애보트와 덱스콤 두 회사가 시장점유율의 90%를 차지할 만큼 독점적인 구조로 알려져 있어, 신규 진입자에게는 높은 진입장벽이 존재한다. 반면 시장 자체는 빠르게 팽창하고 있는데, 업계 자료에 따르면 글로벌 CGM 시장 규모는 2018년 3조원에서 지난해 15조원으로 6년 만에 5배 성장했고, 2030년 글로벌 CGM 시장 규모는 30조원에 달할 것으로 전망된다. 이러한 고성장 국면에서 아이센스는 국내 최초 CGM 상용화 경험과 유럽 진출 실적을 바탕으로 틈새를 파고들고 있으며, 자체 개발 제품의 정확도를 나타내는 MARD 값이 9.82%로, MARD 값이 낮을수록 기준 장치와 높은 일치도를 나타낸다는 점에서 기술적 경쟁력을 확보한 것으로 평가된다. 국내 자가혈당측정(BGM) 시장은 CGM 보급 확산으로 이미 성숙기에 접어들어 성장 여력이 제한적인 반면, CGM은 여전히 초기 침투 단계로 국가별 보험등재 여부가 매출 성장의 관건이 되고 있다. 경쟁사인 중국 로컬 업체들의 저가 공세와 애보트·덱스콤의 차세대 제품 출시 속도도 아이센스가 넘어야 할 변수로 지목된다. 결과적으로 아이센스의 산업 내 위치는 '확실한 3위가 부재한' 글로벌 CGM 시장에서 유럽을 우선 교두보로 삼아 점유율을 늘려가는 후발주자 단계로 요약할 수 있다.",
-  "en": "The global CGM market is an oligopoly, with Europe's CGM market split roughly Abbott 56%, Dexcom 38% and Medtronic 6%. Globally, Abbott and Dexcom together are said to hold about 90% of the market, creating a high barrier for new entrants. At the same time, the overall market is expanding rapidly: industry data show that the global CGM market grew fivefold in six years, from KRW 3 trillion in 2018 to KRW 15 trillion last year, and is projected to reach KRW 30 trillion by 2030. Against this backdrop, i-SENS is leveraging its first-mover experience in domestic CGM commercialization and its European track record, with its in-house device reportedly showing a MARD accuracy value of 9.82%, where a lower MARD indicates closer agreement with the reference device, suggesting reasonable technical competitiveness. The domestic BGM market has matured as CGM adoption spreads, limiting further growth there, while CGM remains at an early penetration stage where national insurance reimbursement listings are the key growth lever. Low-cost competition from Chinese local players and the pace of next-generation product launches from Abbott and Dexcom are additional variables i-SENS must navigate. In sum, i-SENS's industry position can be summarized as a later entrant using Europe as a beachhead to build share in a global CGM market that currently lacks a clear third-place player."
+  "ko": "국내 혈당측정기기 시장(CGM 포함)은 2020년 789억원에서 연평균 12.6% 성장해 2024년 1,269억원으로 확대됐으며, 성장의 축은 연속혈당측정기로 빠르게 이동하고 있다. 2024년 기준 국내 시장 점유율은 연속혈당측정기가 45.3%로 가장 크고, 이어 혈당측정기 25.8%, 혈당검사지 19.2% 순이었고, 연속혈당측정기 시장 점유율은 2020년부터 2024년까지 연평균 73.6% 성장했다. 글로벌 CGM 시장 역시 성장세가 이어지고 있는데, 한 시장조사업체는 글로벌 CGM 시장이 2019년 46억달러에서 2026년 311억달러 이상으로 커질 것으로 전망한 바 있다(2023년 보도 기준). 이런 고성장 시장에서도 국산 CGM은 2023년 아이센스가 상용화한 케어센스가 사실상 유일하며, 출시 약 2년 만인 2024년 기준 국내 시장점유율은 7.5%에 그쳤다. 시장에서는 이 수치를 두고 대체로 시장 안착에는 성공했다는 평가가 우세하지만, 정확도 신뢰, 의료진의 임상적 확신, 환자의 지속 사용 경험이라는 세 가지 장벽을 넘어야 한다는 지적도 함께 나온다. 글로벌 CGM 시장은 덱스콤·애보트·메드트로닉 등 소수 선두업체의 점유율이 여전히 높아, 아이센스와 같은 후발주자에게는 국내 안방시장에서의 데이터 축적과 차별화된 사용성(긴 착용 기간, 낮은 가격)을 앞세운 틈새 공략이 현실적 전략으로 거론된다. 기존 BGM 사업은 CGM 확산에 따른 경쟁 심화로 매출 성장세가 둔화되는 국면에 접어들고 있다는 분석도 제기된다.",
+  "en": "The domestic blood glucose device market, including CGM, expanded from 78.9 billion won in 2020 to 126.9 billion won in 2024 at a compound annual growth rate of 12.6%, with growth increasingly concentrated in continuous glucose monitors. As of 2024, CGM held the largest domestic market share at 45.3%, ahead of blood glucose meters at 25.8% and test strips at 19.2%, and the CGM segment's share grew at a compound annual rate of 73.6% between 2020 and 2024. The global CGM market has also continued to expand; one market research firm projected in a 2023 report that the global CGM market would grow from $4.6 billion in 2019 to more than $31.1 billion by 2026. Even amid this high-growth market, i-SENS's CareSens, commercialized in 2023, remains effectively the only domestic CGM product, and its domestic market share stood at just 7.5% as of 2024, roughly two years after launch. Market observers generally view this figure as evidence of successful market entry, though they also note the product must still clear three hurdles: accuracy and reliability, clinical confidence among physicians, and sustained patient usage experience. In the global CGM market, a small group of leaders — Dexcom, Abbott, and Medtronic — continue to hold dominant shares, leaving i-SENS, as a later entrant, to pursue a niche strategy built on domestic real-world data accumulation and differentiated usability such as longer wear time and lower pricing. Some analysts also note that the legacy BGM business is entering a phase of slowing revenue growth as competitive intensity rises with CGM's spread."
  },
  "outlook": {
-  "ko": "회사는 2026년 CGM 매출 목표를 400억원으로 제시했으며, 상반기 누적 연결 기준 CGM 매출은 178억 원으로 회사가 제시한 연간 목표인 400억 원 달성 궤도에 올라섰다고 밝히고 있다. 유럽 시장에서는 4월 독일 및 영국 공보험 등재가 완료되어 유럽 최대 시장에서의 매출 성장이 본격화될 것으로 기대되며, 글로벌 유통 파트너십으로는 지난 2월 글로벌 혈당측정기 기업 라이프스캔(LifeScan)과 체결한 비독점 공급계약에 따라, 2027년 1분기 유럽 4개국을 시작으로 PL(Private Label) 브랜드 '원터치 비타(OneTouch Vita)'를 론칭할 계획이다. 차세대 제품인 케어센스 에어2는 현재 임상 및 인허가 절차를 진행 중이며 2027년 1분기 출시를 목표로 준비하고 있다. 미국 시장 진입은 상대적으로 먼 시계열로, 회사 측은 2028년 FDA 승인을 목표로 임상을 준비 중인 것으로 알려져 있다. 하반기 계획과 관련해서는 2분기 중에는 '케어센스 에어(CareSens Air)'의 소아·청소년 사용 연령 확대를 위한 허가 변경 신청을 완료하고, 올해 호주, 마카오 론칭에 이어 약 9개국 이상의 신규 출시를 추진할 예정이라고 밝혔다. 중장기적으로는 2026년 2월 공시된 기업가치제고계획을 통해 CGM 중장기 매출목표(2030년 1조원) 및 주주환원율 30% 및 자사주 소각 300억원(2030년 누적) 목표를 제시한 바 있다. 다만 이 같은 목표들은 회사가 제시한 계획 및 예측 정보로, 인허가 일정이나 파트너사 역량에 따라 달라질 수 있는 만큼 실제 이행 여부를 지속적으로 확인할 필요가 있다.",
-  "en": "The company has set a 2026 CGM revenue target of KRW 40bn, and reports that first-half cumulative consolidated CGM revenue of KRW 17.8bn puts it on track toward that annual target. In Europe, German and UK public insurance listings completed in April are expected to drive growth in Europe's largest markets, while a global distribution partnership means that under a non-exclusive supply agreement signed with LifeScan in February, the private-label 'OneTouch Vita' brand is set to launch in four European countries starting Q1 2027. The next-generation CareSens Air2 is currently undergoing clinical trials and regulatory approval, targeting a Q1 2027 launch. US market entry is on a longer timeline, with the company reportedly preparing clinical trials toward a 2028 FDA approval target. For the second half, the company stated that it completed a label-expansion application for pediatric/adolescent use of CareSens Air in Q2 and plans to launch in about nine or more new countries this year following Australia and Macau. Longer term, the February 2026 value-up plan set out a mid/long-term CGM revenue target of KRW 1 trillion by 2030 along with a 30% shareholder return ratio and cumulative treasury stock retirement of KRW 30bn by 2030. These targets are forward-looking company plans that depend on regulatory timelines and partner execution, warranting ongoing verification of actual progress."
+  "ko": "회사는 차세대 CGM '케어센스 에어2'의 국내 식품의약품안전처 허가 신청을 완료한 상태로, 내년 1분기 케어센스 에어2의 국내와 유럽 시장 동시 출시를 목표로 하고 있다. 유럽에서는 케어센스 에어2의 신규 CE 인증과 함께 기존 케어센스 에어의 소아·청소년 사용 연령 확대 및 예측 알림 기능 추가를 위한 CE 변경 인증도 신청한 상태다. 미국에서는 2026년 2월 보도를 통해 케어센스 에어2의 FDA 임상에 착수했다고 밝혔으며, 회사는 하반기에는 케어센스 에어 2의 미국 연구임상과 기존 케어센스 에어의 중국 확증임상을 마무리하는 것을 목표로 하고 있다. 생산 측면에서는 송도 제2공장에 약 200억 원을 투자해 케어센스 에어2 전용 생산라인을 구축 중이며, 기존 생산능력까지 합하면 연간 총 약 540만 개의 CGM 생산능력을 확보하게 될 전망이다. 유통 측면에서는 2026년 초 라이프스캔과 CGM PL(private label) 공급 계약을 체결했다고 밝히며 2027년 초 4개국 출시 확정이라고 전한 바 있다. 회사가 제시한 2026년 연간 CGM 매출 목표는 400억원이며, 상반기 누적 CGM 매출은 178억원으로 목표 달성 궤도에 부합하는 흐름을 보이고 있다. 다만 아이센스가 발행한 1회차 전환사채(CB)의 풋옵션 행사가 시작된 가운데 잔여 CB 약 180억원의 추가 조기상환 가능성이 남아 있어, 자금 계획과 생산능력 확대 일정 간의 조율이 계속 주목된다.",
+  "en": "The company has completed its domestic MFDS approval filing for the next-generation CGM 'CareSens Air 2' and is targeting a simultaneous domestic and European launch in the first quarter of next year. In Europe, it has applied for new CE certification for CareSens Air 2, alongside a CE variation application for the existing CareSens Air to expand pediatric and adolescent use and add predictive alert functionality. In the United States, the company disclosed in a February 2026 report that it had begun FDA clinical trials for CareSens Air 2, and it aims to complete both the U.S. research clinical trial for CareSens Air 2 and the China confirmatory trial for the existing CareSens Air in the second half of the year. On the production side, the company is investing roughly 20 billion won at the Songdo 2 plant to build a dedicated CareSens Air 2 production line, which, combined with existing capacity, is expected to bring total annual CGM production capacity to about 5.4 million units. On the distribution side, the company announced a CGM private-label supply agreement with LifeScan in early 2026, stating that a launch in four countries was confirmed for early 2027. Management's stated CGM revenue target for full-year 2026 is 40 billion won, and cumulative CGM revenue in the first half reached 17.8 billion won, a pace consistent with achieving that target. However, with put-option exercises now underway on i-SENS's first-round convertible bonds, the possibility of further early redemption of the roughly 18 billion won in remaining bonds continues to draw attention to how funding plans align with the capacity-expansion schedule."
  },
  "valuation_comment": {
-  "ko": "아이센스는 2024~2025년 2년 연속 지배주주 순손실을 기록해 최근 4개 분기 합산 기준 주당순이익이 마이너스(제공 데이터 기준 -211원)로 나타나며, 이 구간에서는 통상적인 이익 대비 배수 비교가 의미를 갖기 어렵다. 반면 순자산가치(주당 약 11,419원 수준)와 비교하면 현재가는 장부가 대비 일정한 프리미엄이 형성된 상태로, 과거 5년 평균 순자산배수(약 1.7배 안팎으로 알려짐)와 크게 괴리되지 않는 수준에서 거래되고 있는 것으로 보인다. 배당의 경우 주당 100원의 현금배당이 이어지고 있으나, 순이익 적자 국면에서 배당성향 산출 자체가 어려운 구조이며 수익률 수준은 업종 평균을 밑도는 편으로 평가된다. 다년간 흐름을 보면 2022년 흑자에서 2023~2025년 적자 국면으로 전환된 이후, 2026년 1분기부터는 비현금성 손실 소멸과 영업 개선이 맞물리며 이익 회복 조짐이 나타나고 있다. 밸류에이션에 대한 시장의 해석은 갈리는데, 한 증권사는 P/S(주가매출비율) 기준으로 접근하며 현 주가는 12개월 선행 P/S 기준 1.4배로 글로벌 Peer(4.3배) 및 동사의 지난 3년 평균(1.9배) 대비 저평가되어 있다고 평가한 반면, 또 다른 분석에서는 순이익이 적자인 회사에 대해 시장은 CAPEX 부담과 배당 중단 가능성도 함께 할인하는 경향이 있다고 지적한 바 있어, CGM 사업의 실적 기여도가 가시화되기 전까지는 밸류에이션에 대한 시각차가 이어질 수 있다.",
-  "en": "i-SENS has posted net losses attributable to owners for two consecutive years (2024-2025), leaving trailing four-quarter EPS in negative territory (-KRW 211 per the provided data), a range in which conventional earnings multiples are difficult to interpret meaningfully. Relative to book value (roughly KRW 11,419 per share), the current price carries a certain premium, trading at a level not far removed from the company's reported five-year average price-to-book range of around 1.7x. On dividends, the company has maintained a KRW 100 per-share cash payout, but with net income in loss territory, payout-ratio metrics are not meaningful, and the yield level is generally seen as below the sector average. Looking at the multi-year pattern, profitability shifted from a profit in 2022 to losses across 2023-2025, before showing signs of recovery from Q1 2026 as non-cash losses faded and operations improved. Market views on valuation diverge: one brokerage, using a price-to-sales approach, argued that the stock traded at 1.4x forward P/S versus a 4.3x global peer average and the company's own 1.9x three-year average, implying undervaluation, while another analysis noted that the market tends to discount loss-making companies for capex burden and the risk of dividend suspension, suggesting differing perspectives may persist until CGM's earnings contribution becomes more visible."
+  "ko": "최근 4개 분기를 합산한 순이익이 여전히 적자 구간에 머물러 있어 이익 대비 주가 배수를 통상적인 방식으로 해석하기 어려운 상태다. 순자산 대비 주가 수준은 일정한 프리미엄이 반영된 구간으로, 과거 수년간의 거래 밴드 상단권에 가까운 편이다. 배당은 매년 실시되고 있으나 수익률 자체는 업종 평균에 못 미치는 수준으로 알려져 있다. 2025년부터 영업이익이 회복 흐름을 보이고 있는 반면, 순이익 측면은 자회사 손상이나 환율·파생상품 관련 손익 등 비영업적 요인에 따라 등락이 커, 영업실적 개선과 순이익 방향성 사이의 괴리를 함께 살펴볼 필요가 있다. CGM 매출 확대가 이어지며 제품 믹스가 개선되는 점은 향후 이익 구조 변화의 방향성을 판단하는 데 참고할 만한 요소다.",
+  "en": "Because net income summed over the trailing four quarters remains in a loss position, conventional earnings-based valuation multiples are difficult to interpret in the usual way. The stock's level relative to net asset value reflects a degree of premium and sits closer to the upper end of its trading range over the past several years. Dividends are paid annually, though the yield itself is reported to run below the sector average. While operating profit has shown a recovery trend since 2025, net income has swung more sharply due to non-operating factors such as subsidiary impairments and currency or derivative-related gains and losses, making it worth tracking the gap between operating-level improvement and the direction of net income. The continued expansion of CGM sales and the resulting improvement in product mix is a factor worth monitoring for how the company's profit structure may evolve going forward."
  },
  "bull": [
   {
    "title": {
-    "ko": "CGM 분기 최대 매출 경신 지속",
-    "en": "Record CGM Quarterly Revenue Streak"
+    "ko": "CGM 매출 고성장과 믹스 개선",
+    "en": "High CGM Revenue Growth and Mix Improvement"
    },
    "body": {
-    "ko": "CGM 매출은 2026년 1분기와 2분기(잠정) 연속으로 분기 최대치를 경신하며 성장 속도가 빨라지고 있다. 유럽 보험등재 확대, 리시버 출시, 신규 출시국 확대가 동시에 진행되며 해외 매출 비중이 커지고 있다. 제품 믹스 개선에 따라 매출총이익률과 영업이익률도 함께 상승하는 흐름이 확인된다.",
-    "en": "CGM revenue set consecutive quarterly records in Q1 and preliminary Q2 2026, with growth accelerating. Expanded European insurance listings, receiver launches, and new country entries are simultaneously driving overseas revenue mix higher. Gross and operating margins are also improving in tandem with the better product mix."
+    "ko": "2026년 2분기 연결 기준 CGM 매출은 약 94억원으로 전 분기 대비 해외 매출이 크게 늘었고, 이에 따라 매출총이익률이 43.4%까지 상승했다. 상반기 누적 CGM 매출은 178억원으로 회사가 제시한 연간 목표 400억원 달성 궤도에 부합한다. CGM 비중 확대가 이어질 경우 전사 수익성 구조 개선에 긍정적으로 작용할 여지가 있다.",
+    "en": "Consolidated CGM revenue was about 9.4 billion won in the second quarter of 2026, with overseas sales rising sharply from the prior quarter, lifting the gross margin to 43.4%. Cumulative first-half CGM revenue of 17.8 billion won is on a pace consistent with the company's stated full-year target of 40 billion won. Continued growth in the CGM mix has the potential to support further improvement in the company's overall profitability structure."
    }
   },
   {
    "title": {
-    "ko": "글로벌 파트너십과 생산능력 확충",
-    "en": "Global Partnerships and Capacity Expansion"
+    "ko": "차세대 제품·글로벌 인허가 파이프라인",
+    "en": "Next-Generation Product and Global Approval Pipeline"
    },
    "body": {
-    "ko": "라이프스캔과의 비독점 공급계약을 통해 2027년부터 유럽 PL 브랜드 판매가 예정돼 있어 유통망이 다변화되고 있다. 송도 2공장 자동화 라인 구축으로 연간 CGM 생산능력이 200만개 수준까지 확대됐다. 대형 파트너사와의 협업이 확대될 경우 규모의 경제 효과가 기대된다.",
-    "en": "A non-exclusive supply deal with LifeScan is set to diversify distribution through a European private-label brand from 2027. Automated line construction at Songdo Plant 2 has expanded annual CGM capacity to about 2 million units. Expanded collaboration with major partners could bring economies of scale."
+    "ko": "케어센스 에어2는 착용 기간을 15일에서 18일로 늘리고 센서 부피를 약 70% 줄이는 등 사용성을 개선했으며, 국내 허가 신청과 유럽 CE 신청이 동시에 진행되고 있다. 미국 FDA 임상과 중국 확증임상도 함께 추진되며 다지역 인허가 파이프라인을 구축하고 있다. 라이프스캔과의 PL 공급계약으로 2027년 초 4개국 출시가 예정돼 있어 지역 다변화가 기대된다.",
+    "en": "CareSens Air 2 has improved usability by extending wear time from 15 to 18 days and reducing sensor volume by about 70%, and it is undergoing domestic approval review and European CE certification review simultaneously. U.S. FDA clinical trials and a China confirmatory trial are also underway in parallel, building a multi-region approval pipeline. A private-label supply agreement with LifeScan has scheduled a launch in four countries for early 2027, pointing to further geographic diversification."
    }
   },
   {
    "title": {
-    "ko": "본업 회복과 자회사 정상화",
-    "en": "Core Business Recovery and Subsidiary Normalization"
+    "ko": "안정적 캐시카우인 스트립 소모품 사업",
+    "en": "Stable Cash-Generating Strip Consumables Business"
    },
    "body": {
-    "ko": "연결 영업이익은 2024년 저점 이후 2025년, 2026년 1분기로 이어지며 회복 흐름을 보이고 있다. 인수 초기 대규모 적자를 냈던 AgaMatrix가 흑자로 전환되는 등 해외 자회사의 수익성 정상화 사례도 나타나고 있다. CoaguSense 영업권을 전액 손상 처리함에 따라 향후 관련 추가 손상 리스크는 줄어든 상태다.",
-    "en": "Consolidated operating profit has been on a recovery path since the 2024 trough, continuing through 2025 and Q1 2026. Overseas subsidiary profitability is also normalizing, as seen in AgaMatrix's swing from heavy initial losses to profitability. With CoaguSense goodwill fully written off, the risk of further related impairment charges has diminished."
+    "ko": "검사스트립은 연결 매출의 81%를 차지하는 반복 구매형 소모품 사업으로, 100여 개국에 판매망을 갖추고 있어 특정 국가나 고객에 대한 편중도가 제한적이다. 단일 최대 고객인 Arkray 의존도도 14.8%로 관리 가능한 수준으로 평가된다. 이 같은 기존 사업의 현금흐름이 CGM 투자 확대의 재원으로 활용되고 있다.",
+    "en": "Test strips, a recurring-purchase consumable business, account for 81% of consolidated revenue and are sold through a network spanning more than 100 countries, limiting concentration in any single country or customer. Dependence on Arkray, the single largest customer, is assessed as manageable at 14.8%. Cash flow from this legacy business is being used to help fund the expansion of CGM investment."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "비영업 손익의 높은 변동성",
-    "en": "High Volatility in Non-Operating Items"
+    "ko": "비영업 손실에 흔들리는 순이익",
+    "en": "Net Income Swayed by Non-Operating Losses"
    },
    "body": {
-    "ko": "2025년 4분기처럼 영업이익이 플러스임에도 종속회사 손상, 통화선도 손실 등 비영업 요인으로 대규모 지배주주 순손실이 발생한 전례가 있다. 이러한 항목은 예측이 어렵고 분기별로 재현될 가능성을 배제할 수 없다. 순이익 변동성이 커질 경우 밸류에이션 지표 해석에도 어려움이 지속될 수 있다.",
-    "en": "As seen in Q4 2025, even with positive operating profit, non-operating items such as subsidiary impairments and currency forward losses drove a large net loss to owners. Such items are difficult to forecast and could recur in future quarters. Persistent net income volatility could continue to complicate valuation interpretation."
+    "ko": "2025년에는 CoaguSense 영업권 손상 56억원, 금융자산 평가손실 39억원, 통화선도 손실 19억원 등 영업외비용 244억원이 발생해 영업이익 개선에도 순이익은 적자를 기록했다. 이런 비영업적 항목은 예측이 어렵고 매년 규모와 성격이 달라질 수 있다. 영업 실적 개선이 곧바로 순이익 개선으로 이어지지 않을 가능성을 열어둘 필요가 있다.",
+    "en": "In 2025, non-operating expenses of 24.4 billion won — including a 5.6 billion won goodwill impairment at CoaguSense, a 3.9 billion won financial asset valuation loss, and a 1.9 billion won currency forward loss — resulted in a net loss despite improved operating profit. Such non-operating items are difficult to predict and can vary in size and nature each year. It is worth keeping in mind that operating improvement may not necessarily translate directly into net income improvement."
    }
   },
   {
    "title": {
-    "ko": "이란 채권 등 미회수 리스크",
-    "en": "Uncollectible Receivable Risk Including Iran"
+    "ko": "글로벌 선두업체와의 경쟁 격차",
+    "en": "Competitive Gap With Global Leaders"
    },
    "body": {
-    "ko": "이란 거래처向 채권에 대해 회사는 미국-이란 관계 불확실성을 이유로 회수 가능성을 낮게 보고 있으며, 미상각 잔액이 남아 있어 추가 대손 발생 시 영업외비용으로 반영될 수 있다. 전체 매출 대비 비중은 크지 않으나 반복적인 영업외 손실 요인으로 작용할 가능성이 있다.",
-    "en": "The company has flagged low recoverability for a receivable tied to an Iranian client, citing uncertainty in US-Iran relations, with an unamortized balance still outstanding that could trigger further non-operating losses if additional write-offs occur. While small relative to total revenue, it represents a recurring source of non-operating loss risk."
+    "ko": "국내 CGM 시장에서 아이센스의 점유율은 출시 약 2년 만인 2024년 기준 7.5%에 머물러 있고, 덱스콤·애보트·메드트로닉 등 글로벌 3사가 여전히 시장 대부분을 차지하고 있다. 정확도에 대한 신뢰, 의료진의 임상적 확신, 환자의 지속 사용 경험이라는 장벽을 넘어야 한다는 지적도 나온다. 해외 시장에서는 아직 후발주자로서 브랜드 인지도와 유통망 확보 과제가 남아 있다.",
+    "en": "i-SENS's share of the domestic CGM market stood at just 7.5% as of 2024, roughly two years after launch, with global majors Dexcom, Abbott, and Medtronic still holding most of the market. Observers note the company must still clear barriers related to accuracy and reliability, clinical confidence among physicians, and sustained patient usage experience. In overseas markets, the company remains a later entrant that still faces challenges in building brand recognition and distribution networks."
    }
   },
   {
    "title": {
-    "ko": "경쟁 심화와 진입장벽",
-    "en": "Intensifying Competition and Entry Barriers"
+    "ko": "2년 연속 순손실과 이익 불확실성",
+    "en": "Two Straight Years of Net Losses and Earnings Uncertainty"
    },
    "body": {
-    "ko": "글로벌 CGM 시장은 애보트·덱스콤·메드트로닉이 대부분을 장악하고 있어 신규 진입자의 점유율 확보가 쉽지 않다. 중국 로컬 업체들의 저가 경쟁과 글로벌사의 신제품 출시 속도도 변수다. 미국 시장 진입은 FDA 승인 등 절차상 시간이 더 필요해 성과 가시화까지 시일이 걸릴 수 있다.",
-    "en": "Abbott, Dexcom and Medtronic dominate most of the global CGM market, making share gains difficult for new entrants. Low-cost competition from Chinese local players and the pace of incumbents' new product launches are additional variables. US market entry requires FDA approval and other procedural steps, meaning visible results could take time."
+    "ko": "지배주주 순이익은 2024년, 2025년 모두 적자를 기록했고, 최근 4개 분기를 합산한 순이익 역시 적자 구간에 있다. 2026년 1분기에는 매출과 영업이익이 다시 위축되는 등 분기별 실적 변동성이 크게 나타난다. 이런 변동성은 향후 실적 추정의 신뢰도를 낮추는 요인으로 지목될 수 있다.",
+    "en": "Owners' net income was negative in both 2024 and 2025, and net income summed over the trailing four quarters also remains in a loss position. In the first quarter of 2026, both revenue and operating profit contracted again, illustrating significant quarter-to-quarter volatility in results. This volatility could be cited as a factor reducing confidence in future earnings estimates."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무구조·CB 상환",
-    "en": "Financial Structure / CB Redemption"
+    "ko": "해외 거래선·지정학 리스크",
+    "en": "Overseas Counterparty and Geopolitical Risk"
    },
    "body": {
-    "ko": "부채비율은 2025년 70.7%로 높은 편이며, 전환사채(CB) 풋옵션 행사가 시작돼 잔여 CB에 대한 조기상환 가능성이 남아 있다. 아이센스가 발행한 1회차 전환사채(CB)의 풋옵션 행사가 시작됐다. 잔여 CB 약 180억원의 추가 조기상환 가능성이 남아 있지만 연속혈당측정기(CGM) 생산능력 확대는 기존 계획대로 추진한다. CGM 관련 CAPEX와 R&D 지출이 지속되는 가운데 현금흐름 관리가 중요한 변수가 될 수 있다.",
-    "en": "The debt ratio stood at 70.7% in 2025, and put options on convertible bonds have begun to be exercised, leaving potential for early redemption of the remaining balance. Put options on i-SENS's first convertible bond issue have started to be exercised; roughly KRW 18bn in remaining CBs could still be redeemed early, though CGM capacity expansion continues as planned. With ongoing CGM-related capex and R&D spending, cash flow management could be an important variable."
+    "ko": "이란 거래처 Rayan Tajhiz Kara에 대한 채권 중 대손충당금을 설정한 후에도 미상각 잔액이 82억 원 남아 있으며, 사업보고서는 미국-이란 관계 불확실성을 이유로 회수가능성을 낮게 평가했다. 다만 이는 전체 매출 대비 2.6% 수준으로 본업에 치명적인 영향까지는 아닌 것으로 분석된다. 다만 추가 대손이 발생할 경우 영업외비용으로 추가 반영될 수 있어 지속적인 모니터링이 필요하다.",
+    "en": "Even after allowance for doubtful accounts, an unamortized receivable balance of 8.2 billion won remains outstanding from Iranian customer Rayan Tajhiz Kara, and the company's business report cited uncertainty in U.S.-Iran relations as a reason for assessing low collectability. This is described as amounting to about 2.6% of total revenue, not seen as critical to the core business, but any additional write-off could be reflected as further non-operating expense, warranting continued monitoring."
    }
   },
   {
    "cat": {
-    "ko": "손상차손 재발 가능성",
-    "en": "Recurrence of Impairment Losses"
+    "ko": "종속회사 손상 리스크",
+    "en": "Subsidiary Impairment Risk"
    },
    "body": {
-    "ko": "2025년 CoaguSense 영업권 손상과 같은 비현금성 손상차손이 재발할 경우 지배주주 순이익의 변동성이 다시 커질 수 있다. 해외 종속회사가 다수(12개사)인 만큼 개별 자회사의 실적 부진이 연결 순이익에 영향을 줄 소지가 있다. 이는 영업이익 개선 흐름과 별개로 작용하는 요인이다.",
-    "en": "A recurrence of non-cash impairment charges, similar to the 2025 CoaguSense goodwill write-off, could again increase volatility in net income attributable to owners. With numerous overseas subsidiaries (12 in total), underperformance at any individual unit could affect consolidated net income, independent of the operating profit improvement trend."
+    "ko": "미국 자회사 CoaguSense는 2024년과 2025년 2개년 연속 순손실을 기록했고, 2025년에는 영업권 56억 원이 전액 손상 처리됐다. 유형자산과 사용권자산에서도 추가 손상이 발생한 바 있어, 해당 자회사의 실적이 부진할 경우 향후에도 유사한 비용 인식이 반복될 가능성을 배제할 수 없다.",
+    "en": "U.S. subsidiary CoaguSense recorded net losses for two consecutive years in 2024 and 2025, and in 2025 its entire 5.6 billion won of goodwill was written off. Additional impairment was also recognized on tangible and right-of-use assets, and the possibility of similar cost recognition recurring cannot be ruled out if the subsidiary's performance remains weak."
    }
   },
   {
    "cat": {
-    "ko": "환율·파생상품 변동성",
-    "en": "FX and Derivative Volatility"
+    "ko": "환율·자본조달 리스크",
+    "en": "Foreign Exchange and Capital Funding Risk"
    },
    "body": {
-    "ko": "해외 매출 비중이 높은 사업구조상 환율 변동, 통화선도 계약 등 파생상품 평가손익이 분기 실적에 미치는 영향이 크다. 2025년에는 통화선도 손실이 순이익 악화 요인으로 작용했고, 2026년 1분기에는 반대로 외환차익이 흑자전환에 기여했다. 이러한 항목은 예측 가능성이 낮아 분기별 실적 변동의 주요 리스크로 남아 있다.",
-    "en": "Given the high share of overseas revenue, currency fluctuations and derivative valuation gains/losses from forward contracts have a significant impact on quarterly results. Currency forward losses weighed on 2025 net income, while FX gains conversely contributed to the Q1 2026 return to profit. Such items have low predictability and remain a key risk factor for quarter-to-quarter earnings volatility."
+    "ko": "수출이 매출의 78.3%를 차지해 다양한 통화에 대한 환율 노출이 크고, 통화선도 등 파생상품 손익이 실적에 영향을 미친 바 있다. 아울러 1회차 전환사채의 풋옵션 행사가 시작되며 잔여 약 180억원의 추가 조기상환 가능성이 남아 있어, 자금 계획 측면에서 주의가 필요하다.",
+    "en": "With exports making up 78.3% of revenue, the company has significant exposure to multiple currencies, and gains or losses on derivatives such as currency forwards have previously affected results. In addition, put-option exercises on the first-round convertible bonds have begun, leaving the possibility of further early redemption of roughly 18 billion won in remaining bonds, which warrants attention from a funding-plan perspective."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 10월 말 전후",
-    "en": "Around late October 2026"
+    "ko": "2026년 10월 말~11월 중",
+    "en": "Late October to November 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표 시 CGM 매출이 연간 목표 400억원 달성 궤도를 유지하는지, 영업이익률 개선 흐름이 이어지는지 확인이 필요하다.",
-    "en": "At the Q3 2026 earnings release, check whether CGM revenue remains on track for the KRW 40bn annual target and whether the operating margin improvement trend continues."
+    "ko": "2026년 3분기 잠정 실적 공시 확인 — CGM 매출 비중과 매출총이익률 추세가 2분기 개선세를 이어가는지가 관전 포인트다.",
+    "en": "Watch for the disclosure of preliminary third-quarter 2026 results, with a focus on whether the CGM revenue mix and gross margin trend continue the improvement seen in the second quarter."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
+    "ko": "2026년 하반기 중",
     "en": "Second half of 2026"
    },
    "what": {
-    "ko": "케어센스 에어의 소아·청소년 적응증 확대 허가와 호주·마카오 등 9개국 이상 신규 출시 진행 상황을 확인할 필요가 있다.",
-    "en": "Track progress on pediatric/adolescent indication approval for CareSens Air and the planned launch in nine or more new countries including Australia and Macau."
+    "ko": "케어센스 에어2의 미국 연구임상과 케어센스 에어의 중국 확증임상 완료 여부를 확인 — 다지역 인허가 파이프라인 진행 속도를 가늠할 수 있다.",
+    "en": "Confirm whether the U.S. research clinical trial for CareSens Air 2 and the China confirmatory trial for CareSens Air are completed, which would indicate the pace of the multi-region approval pipeline."
    }
   },
   {
    "when": {
-    "ko": "2027년 1분기 전후",
-    "en": "Around Q1 2027"
+    "ko": "2026년 4분기~2027년 1분기",
+    "en": "Fourth quarter 2026 to first quarter 2027"
    },
    "what": {
-    "ko": "차세대 제품 케어센스 에어2의 국내외 인허가 완료 및 출시 일정, 라이프스캔向 원터치 비타 유럽 4개국 론칭 개시 여부를 점검해야 한다.",
-    "en": "Verify the regulatory approval completion and launch timeline for the next-generation CareSens Air2, and whether the LifeScan-branded OneTouch Vita launch begins in four European countries."
+    "ko": "케어센스 에어2의 국내 식약처 허가 승인과 유럽 CE 인증 결과, 그리고 목표한 국내·유럽 동시 출시 일정이 실제로 지켜지는지 확인이 필요하다.",
+    "en": "Check whether CareSens Air 2 receives domestic MFDS approval and European CE certification, and whether the targeted simultaneous domestic-European launch schedule is actually met."
    }
   },
   {
    "when": {
-    "ko": "수시(공시 발생 시)",
-    "en": "Ongoing (upon disclosure)"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "잔여 전환사채(약 180억원)의 조기상환 여부와 이란 거래처 채권의 추가 대손 발생 여부 등 비영업 손익 관련 공시를 지속 모니터링해야 한다.",
-    "en": "Continue monitoring disclosures on potential early redemption of the remaining ~KRW 18bn convertible bond and any additional write-offs related to the Iranian client receivable."
-   }
-  },
-  {
-   "when": {
-    "ko": "연중 (밸류업 이행 점검)",
-    "en": "Throughout the year (value-up plan execution)"
-   },
-   "what": {
-    "ko": "2026년 2월 공시된 기업가치제고계획상 배당정책 확대, 자사주 소각 등 주주환원 이행 상황을 정기적으로 확인할 필요가 있다.",
-    "en": "Regularly check progress on shareholder return commitments—dividend policy expansion and treasury stock retirement—under the value-up plan disclosed in February 2026."
+    "ko": "라이프스캔과의 PL 공급계약에 따른 4개국 출시가 실제로 이뤄지는지, 그리고 잔여 전환사채 조기상환 여부가 자금 계획에 미치는 영향을 확인할 필요가 있다.",
+    "en": "Confirm whether the four-country launch under the LifeScan private-label supply agreement is actually realized, and monitor how any early redemption of remaining convertible bonds affects the company's funding plan."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "아이센스는 안정적인 혈당측정 본업 위에 CGM 사업이 빠르게 성장하며 외형과 영업이익률이 함께 개선되는 국면에 있다. 다만 2024~2025년 2년 연속 지배주주 순손실에서 보듯, 해외 종속회사 손상과 통화·파생상품 관련 비영업 손익이 분기별 순이익의 방향을 크게 좌우해왔다. 2026년 1분기 흑자전환과 2분기(잠정) 실적 개선은 긍정적 신호지만, 이 같은 비현금성 항목의 재발 가능성은 여전히 열려 있다. CGM 사업은 유럽을 중심으로 보험등재와 파트너십을 확대하며 연간 목표 달성 궤도에 있고, 2027년 케어센스 에어2 출시와 2028년 미국 진출 목표 등 중장기 성장 스토리도 구체화되고 있다. 동시에 부채비율 70%대, 잔여 전환사채 조기상환 가능성, 이란 채권 리스크 등 재무적 변수도 함께 존재한다. 투자 판단에 앞서 다음 분기 실적에서 영업 개선 흐름과 비영업 손익 안정화 여부를 함께 확인하는 것이 중요해 보인다.",
-   "en": "i-SENS is in a phase where its stable core glucose monitoring business is being complemented by rapidly growing CGM sales, improving both revenue scale and operating margins. However, as shown by two consecutive years of net losses attributable to owners in 2024-2025, impairments at overseas subsidiaries and currency/derivative-related non-operating items have heavily influenced the direction of quarterly net income. The return to profit in Q1 2026 and improved preliminary Q2 results are encouraging signs, but the possibility of similar non-cash items recurring remains open. The CGM business is on track toward its annual target through expanded European insurance listings and partnerships, with a mid/long-term growth story taking shape via the planned 2027 CareSens Air2 launch and a 2028 US market entry goal. At the same time, financial variables persist, including a debt ratio in the 70% range, potential early redemption of remaining convertible bonds, and receivable risk tied to an Iranian client. Ahead of any investment decision, it appears important to monitor whether operating improvement continues alongside stabilization of non-operating items in coming quarters."
+   "ko": "아이센스는 스트립 중심 본업의 안정적 현금창출력을 바탕으로 CGM 신사업을 키우는 전형적인 성장 전환기 기업의 모습을 보이고 있다. 2025년과 2026년 상반기 실적은 영업이익 측면에서 뚜렷한 회복세를 보였고, CGM 매출 비중 확대에 따른 매출총이익률 개선도 확인됐다. 그러나 지배주주 순이익은 2년 연속 적자를 기록했고, 이는 CoaguSense 손상이나 이란 채권 리스크와 같은 비영업적 요인이 반복적으로 등장하는 구조에서 비롯된다. 케어센스 에어2의 다지역 인허가와 라이프스캔과의 공급계약 등 성장 파이프라인은 구체적인 일정과 함께 진행되고 있으나, 실제 매출 기여 시점은 2027년 이후로 예상된다. 투자자 입장에서는 영업 실적의 개선 흐름과 순이익의 변동성을 함께 살펴보는 균형적 시각이 필요하며, 향후 분기 실적 발표와 글로벌 인허가 일정을 통해 추세를 지속적으로 검증하는 것이 중요하다. 본 리포트는 정보 제공을 목적으로 하며 매수·매도 의견을 포함하지 않는다.",
+   "en": "i-SENS presents a typical picture of a company in growth transition, using the stable cash generation of its core strip business to fund an expanding CGM business. Results in 2025 and the first half of 2026 showed a clear recovery at the operating profit level, along with confirmed gross margin improvement driven by a higher CGM revenue mix. However, net income attributable to owners has been negative for two consecutive years, a pattern stemming from recurring non-operating factors such as the CoaguSense impairment and the Iranian receivable risk. Growth pipeline items such as the multi-region approval process for CareSens Air 2 and the supply agreement with LifeScan are progressing with concrete timelines, but their actual revenue contribution is expected to materialize from 2027 onward. Investors should take a balanced view that weighs the improving operating trend against net income volatility, and continue to verify the trajectory through upcoming quarterly results and global approval milestones. This report is provided for informational purposes only and does not constitute a buy or sell recommendation."
   }
  },
  "sources": [
-  "https://www.bosoop.com/d5388427-c000-438d-8c7a-6d5e3f5cecbf/",
-  "https://i-sens.co.kr/%EC%95%84%EC%9D%B4%EC%84%BC%EC%8A%A4-%EC%9E%91%EB%85%84-%EB%A7%A4%EC%B6%9C-3157%EC%96%B5-%EC%9B%90-cgm-%EB%A7%A4%EC%B6%9C-%EC%97%B0%EC%B4%88-%EB%AA%A9%ED%91%9C-%EC%83%81%ED%9A%8C/",
-  "http://m.yakup.com/news/?mode=view&cat=12&cat2=121&cat3=0&nid=326518",
-  "https://www.medigatenews.com/news/2877399069",
-  "https://securities.miraeasset.com/bbs/maildownload/20250306144940873_155",
-  "https://pharm.edaily.co.kr/News/Read?newsID=03437446645349536",
-  "https://www.getnews.co.kr/news/articleView.html?idxno=876144",
-  "https://news.nate.com/view/20260225n29325",
-  "https://www.rapportian.com/news/articleView.html?idxno=238696",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=099190",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Finance.asp?pGB=5&gicode=A099190&cID=S1&MenuYn=N&NewMenuID=103&stkGb=701",
+  "https://www.bosoop.com/d5388427-c000-438d-8c7a-6d5e3f5cecbf/",
   "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A099190",
-  "https://itooza.com/vscore/099190",
-  "https://pharm.edaily.co.kr/News/Read?newsId=02335366642364408&mediaCodeNo=257",
-  "https://i-sens.co.kr/%EC%95%84%EC%9D%B4%EC%84%BC%EC%8A%A4-2028%EB%85%84-%EC%BC%80%EC%96%B4%EC%84%BC%EC%8A%A4-%EC%97%90%EC%96%B4%EB%A1%9C-%E7%BE%8E-fda-%EB%9A%AB%EB%8A%94%EB%8B%A4%EB%B3%B8%EA%B2%A9%EC%A0%81/",
-  "https://pharm.edaily.co.kr/News/Read?newsId=01718726639053904&mediaCodeNo=257",
-  "https://news.nate.com/view/20251117n06734",
-  "https://pharm.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02066406642139400"
+  "https://alphasquare.co.kr/home/stock-summary?code=099190",
+  "https://securities.miraeasset.com/bbs/maildownload/20250306144940873_155",
+  "https://m.thinkpool.com/item/099190",
+  "https://m.irgo.co.kr/IR-COMP/099190/%EC%95%84%EC%9D%B4%EC%84%BC%EC%8A%A4-IR-PAGE",
+  "https://www.newspim.com/news/view/20240716000187",
+  "https://www.finance-scope.com/article/view/scp202607130006",
+  "https://i-sens.co.kr/",
+  "https://www.asiae.co.kr/article/2023091208305326843",
+  "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3007070",
+  "https://www.mdtoday.co.kr/news/view/1065581024050715",
+  "https://www.news1.kr/bio/healthcare/6066085",
+  "https://pharm.edaily.co.kr/news/read?newsId=01184086645346256",
+  "https://v.daum.net/v/3iIruCbDpm",
+  "https://kr.investing.com/equities/i-sens-inc-consensus-estimates",
+  "https://markets.hankyung.com/stock/099190/consensus"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -233,9 +223,9 @@
   "바이오·제약"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-15",
- "reportTs": "2026-08-15 18:20",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 05:57",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-22",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -334,14 +324,14 @@
    }
   ],
   "valuation": {
-   "price": 17500,
-   "mcap": 0.5033,
+   "price": 16470,
+   "mcap": 0.4736,
    "shares": 28757309,
    "total_shares": 28645268,
    "wavg_shares": 28432014,
    "per": null,
    "eps": -106,
-   "pbr": 1.46,
+   "pbr": 1.3773,
    "bps": 11958,
    "roe_ttm": -0.7,
    "ttm_window": "2025Q3~2026Q2",
@@ -350,7 +340,7 @@
    "bps_krx": 11419.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 100.0,
-   "div": 0.57
+   "div": 0.61
   }
  }
 }

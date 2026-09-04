@@ -1,227 +1,217 @@
 {
  "title": {
-  "ko": "MLCC 턴어라운드와 유상증자 그림자",
-  "en": "MLCC Turnaround Meets Rights Offering Strain"
+  "ko": "AI MLCC 전환점, 숫자는 아직 진행형",
+  "en": "AI MLCC Pivot: The Numbers Are Still Catching Up"
  },
  "lead": {
-  "ko": "아모텍은 2025년 3년 만에 연간 흑자로 돌아섰지만 2026년 2분기 다시 영업손실을 기록했고, AI·전장용 MLCC 성장 기대와 유상증자에 따른 재무 부담이 동시에 진행 중이다.",
-  "en": "Amotech returned to annual profit in 2025 after three years of losses, but posted an operating loss again in Q2 2026, leaving AI/automotive MLCC growth expectations and rights-offering-related financial strain running in parallel."
+  "ko": "아모텍은 2025년 연간 흑자 전환에 성공했지만 2026년 들어 분기 실적은 등락을 거듭하며, AI서버용 MLCC 사업이 안정적인 수익 구조로 자리잡기까지는 아직 시간이 필요함을 보여주고 있다.",
+  "en": "Amotech returned to annual profit in 2025, but its 2026 quarterly results have swung between gains and losses, showing that its AI-server MLCC business has not yet settled into a stable earnings structure."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 2,537억 6,500만원, 영업이익 55억원으로 2023~2024년 연속 적자에서 흑자 전환했다.",
-   "en": "2025 consolidated revenue reached KRW 253.77 billion with operating profit of KRW 5.5 billion, turning positive after consecutive losses in 2023-2024."
+   "ko": "2025년 연결 매출 2,538억원, 영업이익 55억원으로 2022~2024년 3년 연속 적자에서 흑자로 전환",
+   "en": "2025 consolidated revenue reached KRW 253.8bn with operating profit of KRW 5.5bn, turning profitable after three straight years of losses from 2022-2024"
   },
   {
-   "ko": "그러나 2026년 2분기 매출 623억원에도 영업손실 5.75억원, 순손실 24.09억원을 기록해 흑자 흐름이 단절됐다.",
-   "en": "Yet Q2 2026 revenue of KRW 62.3 billion came with an operating loss of KRW 0.575 billion and a net loss of KRW 2.41 billion, interrupting the profit streak."
+   "ko": "2026년 1분기 흑자(순이익 5억원) 이후 2분기 매출은 늘었으나 다시 영업손실·순손실로 전환",
+   "en": "After a profitable 2026 Q1 (net income of KRW 0.5bn), Q2 revenue rose but operating and net income both swung back to losses"
   },
   {
-   "ko": "351억원 규모 유상증자를 추진했으나 주가 하락으로 최종 발행가가 8,700원으로 확정되며 조달액이 당초 계획 대비 약 58% 줄었다.",
-   "en": "A planned KRW 35.1 billion rights offering saw its final issue price fixed at KRW 8,700 due to share price declines, cutting proceeds by roughly 58% versus the original plan."
+   "ko": "미국 팹리스 마벨에 AI용 MLCC 초도물량 공급을 시작, 광네트워크 대상 매출도 초기 발생",
+   "en": "Began supplying initial volumes of AI-grade MLCCs to US fabless chipmaker Marvell, with early revenue also emerging from optical-network customers"
   },
   {
-   "ko": "최대주주인 김병규 대표가 배정 물량의 70%를 청약할 계획이며, 신주는 2026년 8월 25일 상장 예정이다.",
-   "en": "Largest shareholder and CEO Kim Byung-gyu plans to subscribe to 70% of his allotted shares, with new shares set to list on August 25, 2026."
+   "ko": "AI MLCC 증설 재원 마련을 위해 약 350억원 유상증자(최종 발행가 8,700원)를 완료, 8월 25일 신주 상장",
+   "en": "Completed a roughly KRW 35bn rights offering (final issue price of KRW 8,700) to fund AI MLCC capacity expansion, with new shares listed on August 25"
   },
   {
-   "ko": "미국 팹리스 업체향 AI용 MLCC 초도 양산을 시작했으며, 회사는 MLCC 매출을 2026년 500~600억원, 2027년 이후 1,000억원 이상으로 확대한다는 목표를 제시했다.",
-   "en": "The company began initial mass production of AI-use MLCCs for a U.S. fabless customer and set a target of KRW 50-60 billion in MLCC revenue for 2026, rising above KRW 100 billion from 2027."
+   "ko": "IBK투자증권은 2026년 5월 목표주가를 2만원에서 4만2,000원으로 상향, 키움증권은 2026년 매출·영업이익 두 자릿수·세 자릿수 성장 전망",
+   "en": "IBK Investment & Securities raised its target price from KRW 20,000 to KRW 42,000 in May 2026, while Kiwoom Securities forecast double- and triple-digit growth in 2026 revenue and operating profit"
   }
  ],
  "business": {
-  "ko": "아모텍은 1994년 설립된 전자부품 전문기업으로 세라믹 칩 부품(EMC)과 안테나 부품, BLDC 모터를 3대 축으로 사업을 영위한다. 초기에는 ESD/EMI 필터, 칩바리스터, 콤보 모듈 등 모바일용 부품이 주력이었으나 스마트폰 시장 성장 둔화에 따라 전장·산업용으로 사업 구조를 재편해왔다. 키움증권은 2025년 추정 부문별 매출 비중을 EMC 부문 20%, 안테나 부문 39%, 모터 부문 33%, 기타 부문 8%로 제시한 바 있다. EMC 부문 내에서는 2018년부터 추진해온 MLCC(적층세라믹콘덴서) 사업이 신성장동력으로 부상하고 있으며, 초기에는 전기차·전장용에 집중해 중국 최대 전기차 업체 등을 고객사로 확보했다. 최근에는 미국 팹리스 업체 마벨을 대상으로 AI 데이터센터용 MLCC 초도 물량 양산에 돌입하며 고부가가치 시장으로 영역을 넓히고 있다. 안테나·BLDC 모터 부문은 전장용 팝업 디스플레이 액추에이터 모터, ESS용 쿨링팬 모듈 등 신제품 개발을 통해 완성차 및 Tier1 부품업체향 매출 기반을 다지고 있다. MLCC 시장은 무라타, 삼성전기, TDK, 야게오 등 소수 업체가 과점하는 구조로 진입장벽이 높은 편이며, 아모텍은 후발주자로서 전장·네트워크·AI 특화 제품으로 차별화를 시도하고 있다. 전방 고객 다변화와 대형 업체 대비 규모의 경제 확보 여부가 사업 구조의 핵심 변수다.",
-  "en": "Founded in 1994, Amotech is an electronic components maker built around three pillars: ceramic chip components (EMC), antenna parts, and BLDC motors. The company originally focused on mobile-use ESD/EMI filters, chip varistors, and combo modules, but restructured toward automotive and industrial applications as smartphone growth slowed. Kiwoom Securities estimated the 2025 revenue mix at 20% EMC, 39% antenna, 33% motor, and 8% other segments. Within EMC, the MLCC (multilayer ceramic capacitor) business pursued since 2018 has emerged as a new growth driver, initially concentrated on EV and automotive applications with a major Chinese EV maker among its customers. More recently, the company began initial-lot production of AI-data-center-use MLCCs for U.S. fabless customer Marvell, expanding into higher-value-added markets. The antenna and BLDC motor segments are building revenue with automakers and Tier-1 suppliers through new products such as automotive pop-up display actuator motors and ESS cooling fan modules. The MLCC market is dominated by a handful of players including Murata, Samsung Electro-Mechanics, TDK, and Yageo, creating high entry barriers, and Amotech, as a late entrant, is differentiating through automotive-, network-, and AI-specialized products. Customer diversification and achieving scale relative to larger rivals remain the key variables for the business structure."
+  "ko": "아모텍은 1994년 설립된 세라믹 소재 기반 종합 전자부품 기업으로, 사업은 크게 EMC(세라믹 칩) 부문, 안테나 부문, BLDC 모터 부문, 그리고 신사업인 MLCC 부문으로 구성돼 있다. 세라믹 칩 부품 사업은 전자기기의 정전기(ESD)와 전자파(EMI)를 방지하는 부품을 생산하고, 안테나 부품 사업은 블루투스·GPS·NFC 등 무선통신용 안테나를, BLDC 모터 사업은 가전·자동차용 저소음·고효율 모터를 각각 생산·판매한다. 주력 제품은 안테나와 세라믹 칩 부품, 브러시리스(BLDC) 모터, MLCC 등이며 주요 고객사는 삼성전자와 LG전자, 현대모비스, ZTE, 미국 전기차 회사 등이다. 2018년부터 신사업으로 육성해온 MLCC는 초기 전장용 중심으로 성장해 배터리관리시스템(BMS)에 탑재되는 제품으로 중국 1위 전기차 업체에 공급을 시작했고, 북미 글로벌 전기차 업체로부터도 MLCC 공급 최종 승인을 받아 1차 협력사를 통한 공급을 진행해왔다. 이후 아모텍은 인공지능(AI)용 MLCC 양산에 착수해 미국 팹리스 반도체 기업 마벨에 초도 물량을 공급했으며, 해당 제품은 데이터센터 인터커넥터용 디지털신호처리기(DSP)에 탑재되는 AI 서버 핵심 부품이다. 키움증권은 2025년 실적 기준 부문별 매출 비중을 EMC 부문 20%, 안테나 부문 39%, 모터 부문 33%, 기타 부문(MLCC 포함) 8%로 추정했다. 글로벌 고사양 MLCC 시장은 일본 무라타제작소와 삼성전기 등 상위 업체의 점유율이 높은 구조로, 아모텍은 상대적으로 후발주자로서 전장·통신·AI 인터커넥트 등 특화 영역을 공략하는 전략을 취하고 있다. 안테나·모터 부문은 스마트폰과 가전이라는 성숙 시장에 기반해 있어 상대적으로 안정적인 매출 기반 역할을 하는 반면, MLCC 부문이 향후 성장의 핵심 변수로 꼽힌다.",
+  "en": "Founded in 1994, Amotech is a ceramics-materials-based electronic components maker organized into four segments: EMC (ceramic chip) components, antenna components, BLDC motors, and its newer MLCC business. The ceramic chip business makes components that protect electronic devices from electrostatic discharge (ESD) and electromagnetic interference (EMI), the antenna business makes wireless communication antennas for Bluetooth, GPS and NFC, and the BLDC motor business produces low-noise, high-efficiency motors for home appliances and automobiles. Core products span antennas, ceramic chip components, brushless (BLDC) motors and MLCCs, with major customers including Samsung Electronics, LG Electronics, Hyundai Mobis, ZTE, and a US electric-vehicle maker. MLCC, nurtured as a new business since 2018, initially grew around automotive applications, beginning supply of battery-management-system (BMS) components to China's top EV maker and receiving final supply approval from a North American global EV maker through a tier-one supplier. Amotech has since begun mass-producing AI-grade MLCCs, supplying initial volumes to US fabless chipmaker Marvell, with the product used in digital signal processors (DSPs) for data-center interconnects—a core AI server component. Kiwoom Securities estimated 2025 segment revenue mix at 20% for EMC, 39% for antenna, 33% for motors, and 8% for other segments including MLCC. The global high-spec MLCC market is dominated by leading players such as Japan's Murata Manufacturing and Samsung Electro-Mechanics, positioning Amotech as a relative latecomer pursuing niche areas in automotive, telecom, and AI interconnect applications. The antenna and motor segments, anchored in the mature smartphone and appliance markets, serve as a relatively stable revenue base, while the MLCC segment is viewed as the key variable for future growth."
  },
  "earnings": {
-  "ko": "아모텍의 연간 실적은 뚜렷한 변곡점을 보였다. 2022년 매출 2,157억원, 영업손실 43억원(영업이익률 -2.0%)에서 2023년 매출 1,868억원, 영업손실 260억원(-13.9%)으로 적자 폭이 크게 확대됐고, 2024년에는 매출 2,294억원, 영업손실 239억원(-10.4%)으로 2년 연속 대규모 적자를 기록했다. 이후 2025년 매출 2,537억원(전년 대비 10.6% 증가), 영업이익 55억원(영업이익률 2.2%), 순이익 79억원으로 흑자 전환에 성공했으며 주당순이익은 542원을 기록했다. 영업활동현금흐름도 2022년 34억원, 2023년 33억원, 2024년 66억원에서 2025년 166억원으로 크게 개선되며 이익의 질도 함께 나아졌다. 다만 분기별로 보면 흐름이 균질하지 않다. 2025년 2분기 매출 594억원, 영업이익 12.7억원에 순이익은 70.1억원으로 영업이익 대비 순이익이 큰 폭으로 웃돌아 영업외 요인이 실적에 상당히 기여한 것으로 보인다. 이후 2025년 3분기 매출 567억원·영업이익 7.8억원·순손실 0.5억원, 4분기 매출 536억원·영업손실 4.5억원·순손실 15.4억원으로 다시 적자권에 진입했다. 2026년 들어 1분기에는 매출 610억원, 영업이익 5.7억원, 순이익 5.3억원으로 소폭 흑자를 냈으나, 2분기에는 매출 623억원으로 외형은 늘었음에도 영업손실 5.75억원, 순손실 24.1억원을 기록하며 흑자 전환의 지속성에 물음표가 붙었다. 부채비율은 2022년 117.2%에서 2024년 138.4%까지 높아졌다가 2025년 126.2%로 다소 낮아졌으나 여전히 100%를 상회하는 수준을 유지하고 있다.",
-  "en": "Amotech's annual results show a clear inflection point. From an operating loss of KRW 4.3 billion (operating margin -2.0%) on revenue of KRW 215.7 billion in 2022, the loss widened sharply to KRW 26.0 billion (-13.9%) on revenue of KRW 186.8 billion in 2023, followed by another large loss of KRW 23.9 billion (-10.4%) on revenue of KRW 229.4 billion in 2024. The company then turned profitable in 2025 with revenue of KRW 253.8 billion (up 10.6% year over year), operating profit of KRW 5.5 billion (margin 2.2%), net profit of KRW 7.9 billion, and basic EPS of KRW 542. Operating cash flow also improved markedly, rising from KRW 3.4 billion in 2022 and KRW 3.3 billion in 2023 to KRW 6.6 billion in 2024 and KRW 16.6 billion in 2025, indicating better earnings quality. Quarterly trends, however, were uneven. In Q2 2025, revenue was KRW 59.4 billion with operating profit of KRW 1.27 billion, yet net profit reached KRW 7.01 billion, a gap suggesting non-operating factors contributed significantly to the bottom line. The company then slipped back into losses in Q3 2025 (revenue KRW 56.7 billion, operating profit KRW 0.78 billion, net loss KRW 0.05 billion) and Q4 2025 (revenue KRW 53.6 billion, operating loss KRW 0.45 billion, net loss KRW 1.54 billion). In 2026, Q1 posted a modest profit (revenue KRW 61.0 billion, operating profit KRW 0.57 billion, net profit KRW 0.53 billion), but Q2 saw revenue grow to KRW 62.3 billion while the company swung back to an operating loss of KRW 0.575 billion and a net loss of KRW 2.41 billion, raising questions about the durability of the turnaround. The debt ratio rose from 117.2% in 2022 to 138.4% in 2024 before easing to 126.2% in 2025, remaining above 100%."
+  "ko": "아모텍의 연간 실적은 2022~2024년 3년 연속 영업손실을 기록한 뒤 2025년 흑자로 전환됐다. 매출액은 2022년 2,157억원에서 2023년 1,868억원으로 줄었다가 2024년 2,294억원, 2025년 2,538억원으로 회복세를 보였고, 영업이익은 2022년 -43억원, 2023년 -260억원, 2024년 -239억원의 적자를 이어간 뒤 2025년 55억원으로 흑자 전환했다. 지배주주 순이익 역시 2022~2024년 각각 -92억원, -147억원, -198억원의 적자에서 2025년 79억원으로 돌아섰다. 다만 분기별로 보면 흐름이 매끄럽지 않다. 2025년 2분기에는 매출 594억원, 영업이익 13억원을 기록한 가운데 순이익은 70억원으로 영업이익 대비 크게 웃돌아 영업외 요인이 반영된 것으로 해석된다. 이후 2025년 3분기(매출 567억원, 영업이익 8억원, 순이익 -0.5억원)와 4분기(매출 536억원, 영업이익 -4억원, 순이익 -15억원)에는 다시 이익이 줄거나 적자로 돌아섰다. 2026년 1분기에는 매출 610억원, 영업이익 6억원, 순이익 5억원으로 재차 흑자를 기록했지만, 2026년 2분기에는 매출 623억원으로 매출 자체는 늘었음에도 영업이익 -6억원, 순이익 -24억원으로 다시 적자를 냈다. 이에 따라 가장 최근 네 개 분기(2025년 3분기~2026년 2분기)를 합산한 지배주주 순이익은 -35억원으로 여전히 적자 구간에 머물러 있어, 연간 기준 흑자 전환이 분기 단위의 안정적인 이익 구조로까지는 아직 이어지지 못하고 있음을 보여준다.",
+  "en": "Amotech posted three consecutive years of operating losses from 2022 to 2024 before turning profitable in 2025. Revenue fell from KRW 215.7bn in 2022 to KRW 186.8bn in 2023, then recovered to KRW 229.4bn in 2024 and KRW 253.8bn in 2025, while operating profit remained in the red at -KRW 4.3bn (2022), -KRW 26.0bn (2023) and -KRW 23.9bn (2024) before turning positive at KRW 5.5bn in 2025. Net income attributable to owners followed a similar path, moving from losses of -KRW 9.2bn, -KRW 14.7bn and -KRW 19.8bn in 2022-2024 to a profit of KRW 7.9bn in 2025. The quarterly pattern, however, has been far from smooth. In Q2 2025, revenue reached KRW 59.4bn with operating profit of KRW 1.3bn, while net income of KRW 7.0bn far exceeded operating profit, suggesting a significant contribution from non-operating items. Profit then narrowed or reversed into losses in Q3 2025 (revenue KRW 56.7bn, operating profit KRW 0.8bn, net income -KRW 0.05bn) and Q4 2025 (revenue KRW 53.6bn, operating profit -KRW 0.4bn, net income -KRW 1.5bn). Q1 2026 returned to profit with revenue of KRW 61.0bn, operating profit of KRW 0.6bn and net income of KRW 0.5bn, but Q2 2026 revenue rose to KRW 62.3bn while operating profit and net income both reversed into losses of -KRW 0.6bn and -KRW 2.4bn, respectively. As a result, net income attributable to owners across the most recent four quarters (Q3 2025 through Q2 2026) totaled -KRW 3.5bn, still in loss territory—indicating that the annual return to profitability has not yet translated into a stable quarter-to-quarter earnings structure."
  },
  "industry": {
-  "ko": "MLCC 산업은 인공지능(AI) 서버·데이터센터 투자 확대를 계기로 새로운 수요 사이클에 진입했다는 평가가 나온다. 업계에 따르면 AI 서버 한 대에 탑재되는 MLCC 수량은 일반 서버 대비 최대 100배 수준으로 추산되며, 이에 따라 한국산 MLCC 현물 가격이 최근 상당폭 상승한 것으로 알려졌다. MLCC 시장은 여전히 무라타, 삼성전기, TDK, 야게오 등 소수 대형 업체가 물량과 기술을 과점하는 구조이며, 아모텍은 이들 대비 매출 규모가 크지 않지만 전장·네트워크·AI향 특화 제품으로 틈새 시장을 공략하고 있다. 아모텍의 MLCC 사업은 2018년 진출 이후 품질 이슈로 부침을 겪었으나, 2024년 하반기 중국 최대 전기차 업체향 재승인을 획득하고 2025년부터 분기 기준 흑자 기조를 이어가는 등 정상화 단계에 접어들었다는 평가가 나온다. 전방산업별로는 2025년까지 전기차향 매출 비중이 높았던 반면, 2026년부터는 AI 관련 매출 비중이 확대될 것으로 업계는 전망하고 있으며 광 네트워크용 칩 지원 제품을 시작으로 GPU·ASIC용까지 적용 범위가 넓어질 것이라는 관측도 있다. 다만 신규 진입 산업의 특성상 고객 승인과 물량 확대 속도가 계획보다 늦어질 수 있다는 점은 업계 전반에서 공통적으로 지적되는 변수다. AI 관련 MLCC 수요 확대 기대감으로 삼화콘덴서, 코칩, 삼성전기 등 관련주가 동반 강세를 보인 사례도 있어, 업종 전반의 관심이 높아진 국면으로 파악된다.",
-  "en": "The MLCC industry is seen as entering a new demand cycle driven by expanding AI server and data center investment. Industry sources estimate that an AI server can require up to roughly 100 times more MLCCs than a standard server, and Korean-made MLCC spot prices have reportedly risen considerably as a result. The market remains dominated by a handful of large players—Murata, Samsung Electro-Mechanics, TDK, and Yageo—who control most volume and technology, with Amotech operating at a much smaller scale but targeting niche automotive, network, and AI-specialized applications. Amotech's MLCC business, launched in 2018, went through setbacks from quality issues, but is seen as stabilizing after regaining approval from a major Chinese EV maker in the second half of 2024 and sustaining quarterly profitability from 2025. While EV-related revenue accounted for the larger share through 2025, industry observers expect AI-related revenue to expand from 2026, starting with products supporting optical network chips before broadening to GPU- and ASIC-related applications. A common caveat across the industry is that customer qualification and volume ramp-up for newly entered businesses can lag behind plans. Related stocks including Samwha Capacitor, Cosem, and Samsung Electro-Mechanics have rallied together on AI-driven MLCC demand expectations, reflecting heightened sector-wide attention."
+  "ko": "아모텍의 전방 시장은 스마트폰용 안테나·NFC, 가전·자동차용 BLDC 모터, 전기차·통신장비용 MLCC, 그리고 최근 부상한 AI 서버·데이터센터용 MLCC로 나뉜다. 스마트폰 시장은 성숙기에 접어들어 안테나·NFC 사업의 성장 여력이 제한적인 것으로 평가되는 반면, 전기차 전장화에 따라 고전압 전장용 MLCC는 배터리, 충전시스템, 파워트레인 등에서 매해 수요가 늘어나는 추세다. 2023년에는 아모텍이 대형 고객사 확보를 앞두고 MLCC 라인 확대에 나섰고, 베트남 MLCC 라인 증설을 추진했다. 최근에는 AI 데이터센터 확산이 새로운 수요처로 떠오르면서, 아모텍은 데이터센터 인터커넥터용 DSP에 탑재되는 MLCC를 통해 AI 인프라용 부품 시장 공략을 강화하고 있다. 글로벌 고사양 MLCC 시장은 일본 무라타제작소와 삼성전기 등 상위 업체의 영향력이 큰 구조로, 아모텍은 매출 규모 면에서 후발주자에 해당하며 전장·통신·AI 인터커넥트 등 상대적으로 틈새 영역에서 고객사를 확대해가는 전략을 취하고 있다. 통신장비 쪽에서는 2021년 중국 통신장비업체 ZTE를 시작으로 이후 북미 전기차 기업, 중국 1위 전기차 기업과도 MLCC 공급 계약을 맺는 데 성공했다. 이처럼 여러 산업군에 걸친 고객 다변화가 진행 중이지만, 아직 매출 기여도가 큰 산업은 제한적이어서 사이클 초기 단계에 있다는 평가가 나온다.",
+  "en": "Amotech's end markets span smartphone antennas and NFC, home appliance and automotive BLDC motors, EV and telecom-equipment MLCCs, and the recently emerging AI server and data-center MLCC market. The smartphone market is considered mature, limiting growth in the antenna and NFC business, while rising vehicle electrification has driven growing annual demand for high-voltage automotive MLCCs across batteries, charging systems and powertrains. In 2023, Amotech expanded its MLCC lines ahead of securing large customers and pursued capacity expansion at its Vietnam MLCC line. More recently, the spread of AI data centers has emerged as a new demand driver, with Amotech strengthening its push into AI infrastructure components through MLCCs used in data-center interconnect DSPs. The global high-spec MLCC market remains heavily influenced by leading players such as Japan's Murata Manufacturing and Samsung Electro-Mechanics, positioning Amotech as a smaller, later entrant pursuing customer expansion in relatively niche areas such as automotive, telecom, and AI interconnects. On the telecom equipment side, the company began supplying MLCCs to China's ZTE in 2021 before going on to sign supply agreements with a North American EV maker and China's largest EV maker. While customer diversification is underway across multiple industries, the revenue contribution from any single new industry remains limited, suggesting the company is still in an early stage of this growth cycle."
  },
  "outlook": {
-  "ko": "아모텍은 2026년 5월 AI 데이터센터용 MLCC 생산능력 확충과 모터 신제품 개발을 위해 351억원 규모의 주주배정 후 일반공모 유상증자를 결정했다. 조달 자금은 시설자금 300억원, 운영자금 51억원으로 설계됐으나, 주가 하락에 따라 7월 말 최종 발행가액이 8,700원으로 확정되면서 모집총액이 206억원으로 줄었고, 이에 따라 시설자금 집행 규모도 축소됐다. 신주는 8월 25일 상장 예정이며, 최대주주인 김병규 대표는 배정 물량의 70%를 청약할 계획이다. 회사 관계자는 올해 MLCC 부문에서 500~600억원 매출을 목표로 하고, 2027년 이후에는 1,000억원 이상의 매출 체력을 갖춘 주력 아이템으로 육성하겠다는 방침을 밝힌 바 있다. AI향 매출은 2025년 연내 약 100억원을 목표로 했으며, 2027년 이후 800억원 이상으로 확대한다는 계획도 제시된 바 있다. 유상증자 자금 일부는 전장용 팝업 디스플레이 액추에이터 모터와 ESS용 중대형 쿨링팬 모듈 개발에도 투입될 예정으로, 모터 부문의 신규 성장동력 확보도 병행되고 있다. 다만 조달 규모 축소로 자체 자금과 차입 의존도가 높아질 가능성이 있어, 투자 속도와 재무 부담 관리가 향후 실행의 관건이 될 것으로 보인다.",
-  "en": "In May 2026, Amotech decided on a KRW 35.1 billion shareholder-allocation-plus-public-offering rights issue to expand AI-data-center MLCC production capacity and develop new motor products. Proceeds were originally earmarked for KRW 30 billion in facility investment and KRW 5.1 billion in operating funds, but after the share price declined, the final issue price was fixed at KRW 8,700 in late July, cutting total proceeds to KRW 20.6 billion and shrinking the planned facility investment. New shares are scheduled to list on August 25, with CEO and largest shareholder Kim Byung-gyu planning to subscribe to 70% of his allotment. Company officials have stated a goal of KRW 50-60 billion in MLCC segment revenue this year, aiming to build it into a core product line generating over KRW 100 billion from 2027 onward. AI-related revenue was targeted at roughly KRW 10 billion within 2025, with plans to expand beyond KRW 80 billion from 2027. Part of the rights-offering proceeds will also fund development of automotive pop-up display actuator motors and large ESS cooling fan modules, pursuing new growth drivers in the motor segment in parallel. However, the reduced fundraising scale raises the likelihood of greater reliance on internal funds and borrowing, making investment pacing and balance-sheet management key execution variables going forward."
+  "ko": "아모텍은 AI 인프라향 MLCC 생산능력 확충을 위해 2026년 5월 22일 약 350억원 규모, 보통주 237만 주(증자비율 16.22%)의 유상증자를 공시했다. 확보 자금은 인공지능(AI) MLCC 생산능력 증설에 투입되며 약 3년에 걸친 시설투자로 계획돼 있다. 회사 측은 2027년부터 2029년까지 AI 데이터센터향 MLCC 부문에서 1,500억원 규모의 매출을 전망한다고 밝혔다. 유상증자 최종 발행가는 보통주 1주당 8,700원으로 확정돼 총 모집금액은 약 206억원이며, 신주는 8월 25일 상장됐다. 같은 자금은 전장·ESS용 신제품 개발에도 함께 투입될 예정이다. IBK투자증권은 2026년 5월 27일 기존 목표주가 2만원을 4만2,000원으로 상향하고 매수 의견을 유지한다고 밝혔다. 다만 같은 보고서는 2025년 말 기준 현금 수준이 328억원으로, 운영자금을 제외한 투자를 집행하기에는 부족한 규모라고 지적했다. 키움증권은 2026년 연간 실적으로 매출액 2,835억원(전년 대비 16% 증가), 영업이익 186억원(전년 대비 205% 증가)을 전망하며, MLCC 부문 매출이 2025년 250억원에서 2026년 550억원, 2027년 948억원으로 늘어날 것으로 추정했다.",
+  "en": "To expand AI-infrastructure MLCC capacity, Amotech disclosed a rights offering of roughly KRW 35bn on May 22, 2026, issuing 2.37 million new common shares (a 16.22% increase in outstanding shares). The proceeds are earmarked for capacity expansion in AI MLCC production, planned as a facility investment spanning roughly three years. The company stated it expects MLCC revenue for AI data centers to reach approximately KRW 150bn between 2027 and 2029. The final issue price for the rights offering was set at KRW 8,700 per share, raising a total of approximately KRW 20.6bn, with new shares listed on August 25. The same proceeds are also slated for new product development in automotive and ESS (energy storage system) motors. IBK Investment & Securities said on May 27, 2026 that it raised its target price from KRW 20,000 to KRW 42,000 while maintaining a buy rating. The same report noted, however, that the company's cash position stood at KRW 32.8bn at the end of 2025, a level it deemed insufficient to fund investment beyond operating needs. Kiwoom Securities forecast 2026 annual revenue of KRW 283.5bn (up 16% year-on-year) and operating profit of KRW 18.6bn (up 205% year-on-year), estimating that MLCC segment revenue would grow from KRW 25.0bn in 2025 to KRW 55.0bn in 2026 and KRW 94.8bn in 2027."
  },
  "valuation_comment": {
-  "ko": "아모텍은 2025년 흑자 전환과 2026년 1분기 이익 유지에도 2분기 다시 손실로 돌아서면서, 이익 안정성에 대한 시장의 평가가 분기별로 크게 출렁이는 모습을 보이고 있다. 주가순자산비율은 KRX 기준 순자산가치 대비 일정한 프리미엄이 반영된 수준에서 거래되고 있으며, 이는 흑자 전환과 AI·전장용 MLCC 성장 스토리에 대한 기대가 일부 반영된 결과로 해석될 수 있다. 배당 측면에서는 최근 현금배당 실적이 없어 배당수익률에 기반한 평가는 제한적이다. 유상증자에 따른 신주 발행으로 유통주식 수가 늘어나는 점은 향후 주당 지표 해석 시 함께 고려할 요인이다. 증권가에서는 2026~2027년 MLCC·AI 관련 매출 성장을 전제로 한 이익 추정치가 다수 제시되고 있으나, 추정치 간 편차가 크고 실제 분기 실적의 변동성도 상당해 추정치의 실현 여부를 지속적으로 확인할 필요가 있다.",
-  "en": "Despite turning profitable in 2025 and sustaining a profit in Q1 2026, Amotech swung back to a loss in Q2, reflecting significant quarter-to-quarter volatility in the market's assessment of earnings stability. The price-to-book ratio trades at a level reflecting a certain premium over KRX-based net asset value, which can be interpreted as partly reflecting expectations around the profit turnaround and the AI/automotive MLCC growth narrative. On the dividend side, the absence of recent cash dividend payouts limits dividend-yield-based assessment. The increase in shares outstanding from the rights offering is a factor to weigh when interpreting per-share metrics going forward. While brokerages have published various earnings estimates premised on 2026-2027 MLCC and AI-related revenue growth, the estimates diverge considerably and actual quarterly results have shown substantial swings, warranting continued monitoring of whether these estimates materialize."
+  "ko": "최근 네 개 분기 기준으로는 순이익이 적자 구간에 머물러 있어 통상적인 주가수익비율 해석이 쉽지 않은 상태다. 주가순자산비율은 순자산가치에 근접하거나 소폭의 프리미엄을 반영하는 수준에서 형성돼 있어, 과거 실적 부진기에 형성된 밸류에이션 밴드와 비교할 때 극단적인 할인이나 프리미엄 구간은 아닌 것으로 보인다. 배당은 최근 수년간 지급 이력이 없어, 배당수익률 관점에서는 매력이 크지 않은 편이다. 증권사들은 2026~2027년 MLCC·광네트워크 매출 확대를 가정해 실적 전망을 제시하고 있으며, 일부는 목표주가를 상향 조정했지만, 이는 신규 사업의 성과 속도에 크게 의존하는 전망이라는 점도 함께 짚고 있다. 최근 유상증자와 무상증자로 유통주식 수가 늘어난 점도 주당 지표 해석 시 함께 고려할 부분이다.",
+  "en": "On a trailing four-quarter basis, net income remains in loss territory, making conventional price-to-earnings analysis difficult to apply. The price-to-book ratio sits at a level close to net asset value or reflecting only a modest premium, which does not appear to represent an extreme discount or premium relative to the valuation bands seen during the company's past periods of weak earnings. The company has not paid dividends in recent years, limiting its appeal from a dividend-yield perspective. Brokerages have issued earnings forecasts premised on MLCC and optical-network revenue growth in 2026-2027, and some have raised target prices, while also noting that these outlooks depend heavily on how quickly the new businesses deliver results. The recent rights and bonus share issuances, which increased shares outstanding, are also a factor to consider when interpreting per-share metrics."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI 데이터센터용 MLCC 신규 매출 개시",
-    "en": "New AI Data Center MLCC Revenue Launch"
+    "ko": "AI MLCC 신규 매출원 확보",
+    "en": "New AI MLCC Revenue Stream Secured"
    },
    "body": {
-    "ko": "아모텍은 미국 팹리스 업체 마벨을 대상으로 AI용 MLCC 초도 물량 양산에 돌입했다. 광 네트워크용 칩을 지원하는 제품에서 시작해 향후 GPU·ASIC용까지 적용 범위가 확대될 수 있다는 관측이 나온다. 회사는 안정적 납품 실적을 기반으로 고객사 확대를 추진한다는 방침을 밝혔다. 다만 신규 고객 확보 속도는 아직 확인이 필요한 단계다.",
-    "en": "Amotech began initial-lot production of AI-use MLCCs for U.S. fabless customer Marvell. Starting with products supporting optical network chips, observers note the application range could expand to GPU and ASIC uses. The company has stated a plan to pursue customer expansion based on stable delivery track record, though the pace of securing new customers still needs to be confirmed."
+    "ko": "아모텍은 미국 팹리스 반도체기업 마벨에 AI용 MLCC 초도물량을 공급하며 데이터센터 인터커넥터 시장에 진입했다. 광네트워크 칩 관련 스위치·커넥터 업체로도 매출이 발생하기 시작했으며 칩 고객으로 직접 공급도 개시했다. 회사는 2027~2029년 AI 데이터센터향 MLCC 매출 1,500억원을 목표로 제시했다.",
+    "en": "Amotech entered the data-center interconnect market by supplying initial volumes of AI-grade MLCCs to US fabless chipmaker Marvell. Revenue has also begun to emerge from optical-network chip-related switch and connector makers, along with direct supply to chip customers. The company has set a target of KRW 150bn in AI data-center MLCC revenue for 2027-2029."
    }
   },
   {
    "title": {
-    "ko": "전장용 MLCC 고객 기반 확대",
-    "en": "Expanding Automotive MLCC Customer Base"
+    "ko": "2025년 실적 턴어라운드",
+    "en": "2025 Earnings Turnaround"
    },
    "body": {
-    "ko": "아모텍은 2024년 하반기 중국 최대 전기차 업체향 MLCC 재승인을 획득하고 2025년부터 분기 기준 흑자 흐름을 이어왔다. 국내 전장 시장 진입도 추진되고 있어 지역·고객 다변화가 진행 중이다. 전장용 팝업 디스플레이 액추에이터 모터 등 신제품 개발도 병행되고 있다.",
-    "en": "Amotech regained MLCC supply approval from a major Chinese EV maker in the second half of 2024 and has maintained quarterly profitability since 2025. Entry into the domestic automotive market is also being pursued, indicating regional and customer diversification, alongside new product development such as automotive pop-up display actuator motors."
+    "ko": "2022~2024년 3년 연속 영업손실을 낸 뒤 2025년 매출 2,538억원, 영업이익 55억원으로 흑자 전환에 성공했다. 지배주주 순이익도 79억원으로 돌아서며 재무구조 개선의 발판을 마련했다. 전장용 MLCC 공급 확대가 흑자전환의 주요 배경으로 꼽힌다.",
+    "en": "After three straight years of operating losses from 2022-2024, Amotech turned profitable in 2025 with revenue of KRW 253.8bn and operating profit of KRW 5.5bn. Net income attributable to owners also swung to a profit of KRW 7.9bn, laying groundwork for improved financial footing. Expanded supply of automotive MLCCs is cited as a key driver of the turnaround."
    }
   },
   {
    "title": {
-    "ko": "영업현금흐름 개선과 이익 체질 변화",
-    "en": "Improved Operating Cash Flow and Earnings Quality"
+    "ko": "증권가의 긍정적 재평가 흐름",
+    "en": "Positive Analyst Re-rating"
    },
    "body": {
-    "ko": "영업활동현금흐름은 2022년 34억원에서 2025년 166억원으로 크게 늘어나며 이익의 질이 개선되는 모습을 보였다. 2023~2024년의 대규모 재고자산평가손실 반영 이후 2025년부터는 분기 기준 흑자 기조가 이어지고 있다. 최대주주가 유상증자 배정 물량의 70%를 청약할 계획을 밝힌 점도 책임 경영 의지로 해석될 수 있는 사실관계다.",
-    "en": "Operating cash flow rose sharply from KRW 3.4 billion in 2022 to KRW 16.6 billion in 2025, indicating improving earnings quality. Since large inventory valuation losses were recognized in 2023-2024, the company has sustained quarterly profitability from 2025. The largest shareholder's stated plan to subscribe to 70% of his rights-offering allotment is a factual data point that can be read as a commitment signal."
+    "ko": "IBK투자증권은 2026년 5월 목표주가를 2만원에서 4만2,000원으로 상향하고 매수 의견을 유지했다. 키움증권도 2026년 매출과 영업이익이 각각 두 자릿수, 세 자릿수 성장할 것으로 추정했다. 이는 MLCC 부문 성장에 대한 증권가 기대가 반영된 결과로 해석된다.",
+    "en": "IBK Investment & Securities raised its target price from KRW 20,000 to KRW 42,000 in May 2026 while maintaining a buy rating. Kiwoom Securities also estimated double- and triple-digit growth, respectively, in 2026 revenue and operating profit. This reflects analyst expectations for MLCC segment growth."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2026년 2분기 재차 영업손실 전환",
-    "en": "Return to Operating Loss in Q2 2026"
+    "ko": "분기 실적의 변동성",
+    "en": "Quarterly Earnings Volatility"
    },
    "body": {
-    "ko": "2026년 1분기 소폭 흑자를 냈던 아모텍은 2분기 매출이 늘었음에도 영업손실 5.75억원, 순손실 24.09억원을 기록했다. 이는 2025년 흑자 전환 이후 이익 흐름의 지속성에 대한 의문을 남긴다. 분기별 실적 변동 폭이 여전히 크다는 점도 확인된다.",
-    "en": "After a modest profit in Q1 2026, Amotech posted an operating loss of KRW 0.575 billion and a net loss of KRW 2.41 billion in Q2 despite higher revenue, raising questions about the sustainability of the profit trend since the 2025 turnaround. Quarterly earnings volatility remains substantial."
+    "ko": "2025년 3분기 이후 최근 네 개 분기 지배주주 순이익 합계는 -35억원으로 여전히 적자 구간이다. 2026년 1분기 흑자를 기록했던 흐름이 2분기에는 매출 증가에도 영업이익과 순이익이 모두 적자로 돌아서며 이어지지 못했다. 연간 흑자 전환이 아직 분기 단위의 안정적 수익 구조로 정착되지는 않았다.",
+    "en": "Net income attributable to owners over the most recent four quarters since Q3 2025 totaled -KRW 3.5bn, still in loss territory. The profitability seen in Q1 2026 failed to carry through to Q2, when both operating and net income reversed into losses despite higher revenue. The annual return to profit has not yet settled into a stable quarterly earnings structure."
    }
   },
   {
    "title": {
-    "ko": "유상증자 조달 규모 급감",
-    "en": "Sharp Reduction in Rights Offering Proceeds"
+    "ko": "유상증자에 따른 지분 희석",
+    "en": "Dilution from the Rights Offering"
    },
    "body": {
-    "ko": "당초 488억원을 목표로 했던 유상증자는 주가 하락으로 최종 발행가가 8,700원에 그치며 조달액이 206억원으로 약 58% 줄었다. 이에 따라 시설자금 집행 규모가 절반가량 축소됐고, 부족 재원은 자체 자금과 차입으로 메워야 하는 상황이다. 회사도 증권신고서에서 자금 운용에 차질이 생길 수 있음을 명시했다.",
-    "en": "The rights offering, originally targeting KRW 48.8 billion, saw proceeds cut by about 58% to KRW 20.6 billion after the final issue price was fixed at just KRW 8,700 amid a falling share price. This has roughly halved planned facility investment, requiring the company to cover the shortfall with internal funds and borrowing, a risk the company itself acknowledged in its securities registration statement."
+    "ko": "아모텍은 2026년 5월 약 350억원, 기존 유통주식의 16.22%에 해당하는 신주를 발행하는 유상증자를 결정했고, 여기에 1주당 0.1주의 무상증자도 병행했다. 최종 발행가는 8,700원으로 확정돼 총 206억원을 조달했다. 신주 발행에 따른 지분 희석은 주당 지표에 부담 요인으로 작용할 수 있다.",
+    "en": "Amotech decided in May 2026 on a rights offering of roughly KRW 35bn, equal to 16.22% of shares then outstanding, alongside a bonus issue of 0.1 new shares per existing share. The final issue price was set at KRW 8,700, raising a total of KRW 20.6bn. The resulting dilution from the new shares could weigh on per-share metrics."
    }
   },
   {
    "title": {
-    "ko": "기존 사업 부진 지속",
-    "en": "Continued Weakness in Legacy Businesses"
+    "ko": "경쟁 구도상 후발주자 지위",
+    "en": "Late-Mover Position in a Concentrated Market"
    },
    "body": {
-    "ko": "모바일용 부품과 근거리무선통신(NFC) 사업은 고객사 스마트폰 판매 부진 등의 영향으로 축소 흐름이 이어지고 있다는 평가가 나온다. 증권가에서도 NFC 사업 부진이 2026년 실적에 일부 부담 요인으로 작용할 것으로 언급된 바 있다. 신사업 성장이 기존 사업 축소분을 상쇄하는 속도가 관건이다.",
-    "en": "The mobile components and NFC businesses are seen as continuing to shrink amid weak customer smartphone sales. Brokerages have noted that NFC business weakness could weigh somewhat on 2026 results. The pace at which new-business growth offsets the decline in legacy businesses remains a key question."
+    "ko": "글로벌 고사양 MLCC 시장은 일본 무라타제작소와 삼성전기 등 상위 업체의 영향력이 크며, 아모텍은 매출 규모 면에서 후발주자에 해당한다. AI·전장용 MLCC로의 사업 확장은 진행 중이지만 아직 검증 초기 단계로, 대형 고객사 승인과 양산 안정화에는 시간이 필요하다.",
+    "en": "The global high-spec MLCC market is heavily influenced by leading players such as Japan's Murata Manufacturing and Samsung Electro-Mechanics, and Amotech remains a smaller, later entrant by revenue scale. Its expansion into AI and automotive MLCCs is underway but still at an early validation stage, requiring time for large-customer approvals and production stabilization."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무구조",
-    "en": "Financial Structure"
+    "ko": "신규 고객·물량 확대의 불확실성",
+    "en": "Uncertainty over New Customers and Volume Ramp"
    },
    "body": {
-    "ko": "부채비율은 2024년 138.4%까지 상승했다가 2025년 126.2%로 소폭 낮아졌으나 여전히 100%를 상회한다. 유상증자 조달액이 계획보다 크게 줄면서 향후 차입 의존도가 높아질 가능성이 있다. 재무 부담 확대는 신규 설비투자 속도에도 영향을 줄 수 있다.",
-    "en": "The debt ratio rose to 138.4% in 2024 before easing slightly to 126.2% in 2025, still above 100%. With rights-offering proceeds falling well short of plan, reliance on borrowing may increase going forward, which could also affect the pace of new facility investment."
+    "ko": "AI용 MLCC는 아직 초도물량 공급 단계로, 마벨 외 추가 고객사 승인 절차가 진행 중이며 그 결과가 확정되지 않았다. 신규 산업 진출의 성과 속도가 예상보다 늦어질 경우 매출 기여 시점이 지연될 수 있다.",
+    "en": "AI-grade MLCC supply remains at an initial-volume stage, with approval processes for additional customers beyond Marvell still underway and their outcomes unconfirmed. If the pace of progress in new industries proves slower than expected, the timing of revenue contribution could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "신규 사업 실행 리스크",
-    "en": "New Business Execution Risk"
+    "ko": "재무·자금 조달 리스크",
+    "en": "Financial and Funding Risk"
    },
    "body": {
-    "ko": "MLCC 사업은 2018년 진출 이후 품질 이슈로 두 차례 어려움을 겪은 이력이 있다. AI·전장향 고객 승인과 물량 확대 속도가 계획에 미치지 못할 경우 실적 변동성이 커질 수 있다. 신규 진출 산업의 성과 속도는 증권가에서도 공통적으로 지적하는 변수다.",
-    "en": "The MLCC business has faced quality-related setbacks twice since its 2018 launch. If customer approval and volume ramp-up for AI and automotive applications lag behind plans, earnings volatility could increase. The pace of success in newly entered businesses is a variable commonly flagged by brokerages."
+    "ko": "회사는 AI MLCC 증설을 위해 유상증자를 실시했으나, 2025년 말 기준 현금 수준은 328억원으로 운영자금 외 투자 집행에는 여력이 제한적이라는 분석이 나온다. 향후 추가적인 자금 조달이 필요해질 경우 지분 희석이 재차 발생할 가능성이 있다.",
+    "en": "While the company raised capital via a rights offering to fund AI MLCC expansion, its year-end 2025 cash position of KRW 32.8bn has been assessed as leaving limited room for investment beyond operating needs. Should further fundraising be required, additional share dilution could occur."
    }
   },
   {
    "cat": {
-    "ko": "주주가치 희석",
-    "en": "Shareholder Dilution"
+    "ko": "전방 산업 사이클 민감도",
+    "en": "Sensitivity to End-Market Cycles"
    },
    "body": {
-    "ko": "이번 유상증자로 신주 237만주가 발행되며 기존 유통주식 수 대비 약 16%의 증자 비율이 적용됐다. 무상증자도 병행되어 주식 수 변화 폭이 더 커질 수 있다. 신주 상장 이후 수급과 주당 지표 변화를 함께 살펴볼 필요가 있다.",
-    "en": "The rights offering will issue 2.37 million new shares, an increase of about 16% relative to existing shares outstanding, and a concurrent bonus issue could further increase the share count. Supply-demand dynamics and per-share metrics should be monitored following the new share listing."
+    "ko": "스마트폰용 안테나·NFC 사업은 성숙 시장에 기반해 있어 성장 여력이 제한적이며, 전기차·AI 서버 수요 역시 매크로 환경과 고객사의 재고 조정에 따라 변동성이 있다. 전방 산업의 수요 사이클 변화는 분기 실적의 등락으로 이어질 수 있다.",
+    "en": "The smartphone antenna and NFC business is anchored in a mature market with limited growth potential, while EV and AI server demand is also subject to volatility from macro conditions and customer inventory adjustments. Shifts in end-market demand cycles can translate directly into quarter-to-quarter earnings swings."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 25일",
-    "en": "August 25, 2026"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "유상증자 신주 상장 예정일로, 발행주식 수 증가에 따른 수급 및 지표 변화를 확인할 시점이다.",
-    "en": "Scheduled listing date for rights-offering new shares; a point to check supply-demand and per-share metric changes from the increased share count."
+    "ko": "2026년 3분기 실적 공시 예정으로, MLCC·광네트워크 매출 기여도와 영업이익률 개선 여부를 확인할 시점이다.",
+    "en": "Q3 2026 earnings are due to be disclosed, offering a chance to assess MLCC and optical-network revenue contribution and any improvement in operating margin."
    }
   },
   {
    "when": {
-    "ko": "2026년 3분기 실적 발표 시점",
-    "en": "Q3 2026 earnings release"
+    "ko": "2026년 4분기",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "2분기 재차 영업손실을 기록한 만큼, 3분기에 흑자로 복귀하는지와 MLCC 매출 회복 여부를 확인할 필요가 있다.",
-    "en": "Given the return to an operating loss in Q2, it is worth checking whether Q3 returns to profit and whether MLCC revenue recovers."
+    "ko": "5월 유상증자로 확보한 자금을 활용한 AI MLCC 생산라인 증설 진행 상황과 초기 가동률 추이를 점검할 필요가 있다.",
+    "en": "Progress on the AI MLCC production line expansion funded by the May rights offering, and the initial utilization trend, will need to be checked."
    }
   },
   {
    "when": {
-    "ko": "수시 공시",
-    "en": "Ongoing disclosures"
+    "ko": "2027년 이후",
+    "en": "From 2027 onward"
    },
    "what": {
-    "ko": "AI용 MLCC 신규 고객사 승인이나 추가 공급 계약 관련 공시·뉴스 여부를 확인해야 한다.",
-    "en": "Watch for disclosures or news on new AI-use MLCC customer approvals or additional supply contracts."
+    "ko": "회사가 제시한 2027~2029년 AI 데이터센터향 MLCC 매출 1,500억원 목표의 연도별 달성 경로를 지속적으로 확인해야 한다.",
+    "en": "The year-by-year progress toward the company's stated goal of KRW 150bn in AI data-center MLCC revenue for 2027-2029 warrants ongoing monitoring."
    }
   },
   {
    "when": {
-    "ko": "하반기 중",
-    "en": "Second half of 2026"
+    "ko": "2026년 4분기~2027년 상반기",
+    "en": "Q4 2026 through H1 2027"
    },
    "what": {
-    "ko": "전장용 MLCC 중국 고객사 물량 확대 및 국내 전장 시장 신규 진입 여부를 점검할 시점이다.",
-    "en": "A period to check for expanded volumes with the Chinese automotive MLCC customer and progress on entering the domestic automotive market."
-   }
-  },
-  {
-   "when": {
-    "ko": "유상증자 자금 집행 이후",
-    "en": "After rights offering fund deployment"
-   },
-   "what": {
-    "ko": "축소된 조달금액 내에서 시설투자 계획이 어떻게 조정되는지, 차입 확대 여부를 확인해야 한다.",
-    "en": "Check how facility investment plans are adjusted within the reduced fundraising amount, and whether borrowing increases."
+    "ko": "마벨 외 추가 미국·중화권 팹리스 고객사의 승인절차 완료 및 신규 공급계약 체결 여부를 확인할 시점이다.",
+    "en": "This period will be a key window to confirm whether approval processes with additional US and Greater China fabless customers beyond Marvell are completed and whether new supply agreements are signed."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "아모텍은 2025년 3년 만에 연간 흑자로 전환하며 영업현금흐름도 함께 개선됐으나, 2026년 2분기 다시 영업손실로 돌아서며 이익 안정성에 대한 확인이 더 필요한 상태다. AI 데이터센터향 MLCC 초도 양산 개시와 전장용 MLCC 고객 기반 확대는 성장 스토리의 핵심 축이지만, 아직 실적 기여도는 제한적이다. 동시에 351억원 규모로 계획했던 유상증자가 주가 하락으로 조달액이 약 58% 줄어들면서 설비투자 축소와 재무 부담 확대 우려가 함께 제기되고 있다. 증권가에서는 2026~2027년 MLCC·AI 매출 성장을 전제로 한 낙관적 추정치가 다수 제시돼 있으나, 실제 분기 실적의 변동 폭이 커 추정치와 실제 성과 간 괴리 가능성을 함께 살펴야 한다. 8월 25일 신주 상장과 3분기 실적 발표는 향후 흐름을 가늠할 주요 이벤트다. 강세 요인과 약세 요인이 함께 존재하는 국면인 만큼, 투자 판단은 독자 스스로 추가 정보를 확인하며 내리는 것이 바람직하다.",
-   "en": "Amotech returned to annual profitability in 2025 for the first time in three years, accompanied by improved operating cash flow, but swung back to an operating loss in Q2 2026, leaving earnings stability in need of further confirmation. The launch of initial AI-data-center MLCC production and the expanding automotive MLCC customer base form the core of the growth narrative, though their contribution to results remains limited so far. At the same time, the planned KRW 35.1 billion rights offering saw proceeds cut by roughly 58% due to share price declines, raising concerns about reduced facility investment and greater financial strain. Brokerages have published a range of optimistic estimates premised on 2026-2027 MLCC and AI revenue growth, but given the substantial swings in actual quarterly results, the potential gap between estimates and actual performance also warrants attention. The August 25 new share listing and the Q3 earnings release are key upcoming events to gauge the trajectory ahead. With both bullish and bearish factors present, readers are encouraged to review additional information before forming their own judgment."
+   "ko": "아모텍은 2025년 연간 기준 3년간의 적자에서 벗어나 흑자로 전환했으며, 이 배경에는 전장용 MLCC 공급 확대와 스마트폰 고객사 볼륨모델 진입이 있다. 그러나 2026년 들어 분기 실적은 1분기 흑자, 2분기 적자로 다시 등락을 보이며, 최근 네 개 분기 합산 기준으로는 지배주주 순이익이 여전히 적자 구간에 머물러 있다. 회사는 AI 서버용 MLCC를 새로운 성장축으로 삼아 마벨 등 미국 팹리스 고객사에 초도물량을 공급하기 시작했고, 350억원 규모 유상증자를 통해 생산능력 증설과 2027~2029년 1,500억원 매출 목표를 제시했다. 이 과정에서 신주 발행에 따른 지분 희석이 발생했으며, 신규 사업의 성과 속도와 고객사 확대 여부가 향후 실적의 핵심 변수로 남아 있다. 증권가는 IBK투자증권의 목표주가 상향 등 긍정적 시각을 보이고 있지만, 이는 아직 검증되지 않은 성장 스토리에 대한 기대가 상당 부분 반영된 전망이라는 점도 함께 고려할 필요가 있다. 다가오는 분기 실적과 신규 고객사 확보 소식을 지속적으로 확인하는 것이 향후 판단에 중요할 것으로 보인다.",
+   "en": "Amotech emerged from three years of annual losses to post a profit in 2025, driven by expanded automotive MLCC supply and entry into a smartphone customer's volume model. However, 2026 quarterly results have again fluctuated—profitable in Q1, loss-making in Q2—and net income attributable to owners over the trailing four quarters remains negative. The company has made AI-server MLCCs a new growth pillar, beginning initial supply to US fabless customers such as Marvell, and raised roughly KRW 35bn through a rights offering to fund capacity expansion toward its 2027-2029 target of KRW 150bn in related revenue. This process has resulted in share dilution, and the pace of progress in these new businesses and customer expansion remain the key variables for future results. While the brokerage community has shown a positive tilt, including IBK's target price increase, this outlook also reflects considerable expectations for a growth story that has not yet been fully validated. Continued monitoring of upcoming quarterly results and new customer wins will be important for future assessment."
   }
  },
  "sources": [
-  "https://alphasquare.co.kr/home/stock-summary?code=052710",
   "https://m.thinkpool.com/compDiscuss/cont/1024304",
   "https://m.thinkpool.com/compDiscuss/cont/1024171",
+  "https://littlebproject.com/stock/052710",
   "https://m.thinkpool.com/compDiscuss/cont/1024436",
   "https://bbn.kiwoom.com/rfCR11945",
+  "https://stock1.brokdam.com/%EC%95%84%EB%AA%A8%ED%85%8D-%EC%A3%BC%EA%B0%80-%EC%A0%84%EB%A7%9D-2026%EF%BD%9C-%EB%B0%B0%EB%8B%B9%EA%B8%88%C2%B7%EC%8B%A4%EC%A0%81%C2%B7%EC%88%98%EA%B8%89-%EC%B4%9D%EC%A0%95%EB%A6%AC-%EF%BD%9C-ai/",
+  "https://alphasquare.co.kr/home/stock-summary?code=052710",
+  "https://littlebproject.com/stock/052710/1/66941",
+  "https://www.imfnsec.com/upload/R_E08/2025/11/%5B24070648%5D_052710.pdf",
+  "https://m.thinkpool.com/stockDiscuss/052710/cont/11868267",
+  "https://www.newspim.com/news/view/20260220000138",
+  "https://m.thinkpool.com/stockDiscuss/052710/cont/11858687",
+  "https://www.jobkorea.co.kr/Recruit/GI_Read/48671018?Oem_Code=C1&PageGbn=ST&sc=541",
+  "https://www.asiae.co.kr/article/2022053110265190273",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=46518",
+  "https://m.thinkpool.com/stockDiscuss/052710/cont/11860634",
   "https://news.infostock.co.kr/a",
-  "https://v.daum.net/v/y6wriXyOho?f=p",
-  "https://www.threads.com/@moneaver.insta/post/DZB76hwHR-U/%EC%95%84%EB%AA%A8%ED%85%8D-%EC%A3%BC%EA%B0%80%EC%A0%84%EB%A7%9D%EA%B3%BC-%EB%AA%A9%ED%91%9C%EC%A3%BC%EA%B0%80%EB%A5%BC-ai-%EC%84%9C%EB%B2%84-mlcc-%EA%B4%91-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%A7%A4%EC%B6%9C-%EC%9C%A0%EC%83%81%EC%A6%9D%EC%9E%90-%ED%88%AC%EC%9E%90%EA%B2%BD%EA%B3%A0-%EB%A6%AC%EC%8A%A4%ED%81%AC-%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A6%AC%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4/",
-  "https://file.alphasquare.co.kr/media/pdfs/company-report/%ED%95%98%EC%9D%B420220817%EC%95%84%EB%AA%A8%ED%85%8D.pdf",
-  "https://www.hanaw.com/download/research/FileServer/WEB/info/small_cap/2025/08/03/250804_AmoTech_F.pdf",
-  "https://bbn.kiwoom.com/bbs/jsp/upload/newres/CorpAnal/201808/1533076929331.pdf",
-  "https://www.imfnsec.com/upload/R_E08/2025/04/%5B02074914%5D_052710.pdf",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20240321001775&docno=&viewerhost=",
-  "https://marketin.edaily.co.kr/News/ReadE?newsId=03034006645453184",
-  "https://www.kofia.or.kr/brd/m_186/view.do?seq=6&srchFr=&srchTo=&srchWord=&srchTp=&multi_itm_seq=0&itm_seq_1=0&itm_seq_2=0&company_cd=&company_nm=&page=51",
-  "https://v.daum.net/v/2GvbUMQ9Eu",
-  "https://www.bloter.net/news/articleView.html?idxno=663639",
-  "https://www.ibtomato.com/ExternalView.aspx?type=1&no=19086"
+  "https://www.iprovest.com/weblogic/RSNewsServlet?scr_id=5&gubun=&srch_db=0&DT1=&DT2=&pageNum=5303"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -233,9 +223,9 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 05:57",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -334,14 +324,14 @@
    }
   ],
   "valuation": {
-   "price": 11220,
-   "mcap": 0.164,
-   "shares": 14612546,
+   "price": 11290,
+   "mcap": 0.2109,
+   "shares": 18680800,
    "total_shares": 14615109,
    "wavg_shares": 14645435,
    "per": null,
    "eps": -237,
-   "pbr": 1.02,
+   "pbr": 1.0313,
    "bps": 10947,
    "roe_ttm": -2.2,
    "ttm_window": "2025Q3~2026Q2",
