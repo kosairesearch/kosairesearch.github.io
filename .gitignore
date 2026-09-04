@@ -18,3 +18,7 @@ package-lock.json
 # 테스트가 잠깐 만드는 작업 폴더.
 staging/tests/.work/
 staging/tests/.work-co/
+
+# 에뮬레이터가 돌 때 남기는 기록. 검사용이라 저장소에 넣지 않는다.
+firestore-debug.log
+ui-debug.log

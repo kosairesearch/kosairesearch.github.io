@@ -10,7 +10,7 @@
 #
 # 처음 한 번은 검사용 꾸러미를 깔아야 한다(저장소에는 넣지 않는다).
 #
-#   npm install --no-save jsdom playwright-core
+#   npm install --no-save jsdom playwright-core firebase firebase-tools @firebase/rules-unit-testing
 set -uo pipefail
 cd "$(dirname "$0")/.."
 
@@ -48,6 +48,10 @@ run "SEO·구조"      python3 scripts/check_seo.py
 # 모르므로(실제로 7·8월 예정 실행이 아무것도 안 하고 성공으로 끝났다)
 # 요금 창구·일정·화면 안내가 서로 맞는지 여기서 본다.
 run "업종 분석"     python3 scripts/check_sectors.py
+# 접근 규칙은 화면과 서버 사이의 마지막 문이다. 여기가 열려 있으면 앞의
+# 검사를 아무리 통과해도 소용이 없다 — 콘솔에서 구독을 PRO 로 고쳐 쓴다.
+# 에뮬레이터(자바)가 없으면 스스로 건너뛴다.
+run "접근 규칙"     bash scripts/check_rules.sh
 # 자바스크립트를 고쳐 놓고 캐시 주소를 안 바꾸면, 다시 온 사람은 옛 파일을
 # 계속 쓴다. 코드는 고쳐졌는데 화면은 안 바뀌는, 원인을 찾기 제일 어려운
 # 종류의 버그다. 올리기 전에 여기서 잡는다.
