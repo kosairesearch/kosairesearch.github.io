@@ -61,6 +61,8 @@ PAUSE_FILE = S.PAUSE_FILE
 SKIP_DIR = S.SKIP_DIR
 load_skip = S.load_skip
 add_skip = S.add_skip
+# BPS·PBR 을 빈칸으로 둘 종목. 여기 없는 종목은 하나도 달라지지 않는다.
+BPS_SUPPRESS = S.load_bps_suppress()
 
 # 종료 코드. 워크플로가 이 값으로 '무엇이 막았는지' 를 가른다.
 EXIT_DART_UNAVAILABLE = 3     # DART 한도 초과·점검·키 문제 — 종목 탓이 아니다. skip 을 남기지 않는다.
@@ -1374,6 +1376,22 @@ def collect_quant(dart, ticker, krx_row, stock):
                          "equity_check" if eq_broken else "mismatch" if eps_hidden else "no_equity")
     if valuation["dps"] is None:
         hidden["dps"] = "no_div"
+
+    # 목록에 적힌 종목은 BPS·PBR 을 내보내지 않는다. 삼각 대조에서 어느 기준으로도
+    # 설명되지 않은 값들이다(삼성물산 645,042 vs KRX 305,019). 고치는 규칙을 아직
+    # 못 찾았고, 확실하지 않은 규칙으로 2,500종목을 건드리느니 틀린 줄 아는 값을
+    # 안 보여 주는 편이 낫다 — 자세한 사정은 data/bps_suppress.txt 머리말에 있다.
+    #
+    # 사유는 남기지 않는다. hidden 에 적으면 화면이 '표시하지 않은 값: BPS — …' 를
+    # 붙이는데, 지금은 우리도 원인을 모르므로 적을 말이 없다. 그냥 빈칸으로 둔다.
+    # 이 블록은 hidden 을 다 채운 뒤에 온다 — 앞에 두면 bps 가 None 이 되면서
+    # 위에서 사유가 자동으로 붙어 버린다.
+    if ticker in BPS_SUPPRESS:
+        valuation["bps"] = None
+        valuation["pbr"] = None
+        hidden.pop("bps", None)
+        hidden.pop("pbr", None)
+
     if hidden:
         valuation["hidden"] = hidden
 
@@ -2116,7 +2134,9 @@ def reusable_quant(tk, stock, today=None):
         return None, f"연간 표가 {len(a)}년치"
     if len(qs) < 5 or any(x.get("np_owner") is None or x.get("rev") is None for x in qs):
         return None, "분기 표에 빈칸"
-    if v.get("eps") is None or v.get("bps") is None:
+    # 가리기로 한 종목은 BPS 가 없는 것이 정상이다. 여기서 걸러 버리면 그 88종목만
+    # 매번 DART 를 다시 부르게 된다 — 다시 받아 와도 어차피 같은 자리에서 지운다.
+    if v.get("eps") is None or (v.get("bps") is None and tk not in BPS_SUPPRESS):
         return None, "EPS·BPS 가 없음"
     # hidden 은 {지표: 사유} 다. 막아야 하는 것은 '사유' 가 추출 문제일 때다
     # (적자·무배당은 회사 사정이라 다시 받아도 그대로다).
@@ -2131,7 +2151,7 @@ def reusable_quant(tk, stock, today=None):
     a0 = a[0]
     den = v.get("wavg_shares") or v.get("total_shares")
     eq, eqo, nci = a0.get("equity"), a0.get("equity_owner"), a0.get("equity_nci")
-    if den and eq and eqo and nci and abs(nci) > abs(eq) * 0.05:
+    if v.get("bps") and den and eq and eqo and nci and abs(nci) > abs(eq) * 0.05:
         imp = v["bps"] * den
         if abs(imp / eq - 1) < 0.15 and abs(imp / eqo - 1) > 0.15:
             return None, "BPS 가 비지배지분까지 나눈 값으로 보임"
@@ -2145,7 +2165,7 @@ def reusable_quant(tk, stock, today=None):
     # 반대로 KRX 가 나눈 주식수(결산 지배지분 ÷ KRX BPS)가 우리 분모와 다르면 분모가
     # 어긋난 것이고, 그건 우리 잘못일 수 있다 — 다시 받는다.
     krx = v.get("bps_krx")
-    if krx and v.get("bps_src") == "자체" and abs(v["bps"] / krx - 1) > 0.30:
+    if krx and v.get("bps") and v.get("bps_src") == "자체" and abs(v["bps"] / krx - 1) > 0.30:
         fy_eqo = a[0].get("equity_owner") or a[0].get("equity")
         implied = (fy_eqo / krx) if (fy_eqo and fy_eqo > 0) else None
         if not (implied and den and abs(implied / den - 1) <= 0.03):

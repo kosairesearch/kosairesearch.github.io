@@ -1055,6 +1055,65 @@ def dup_report(ticker, kind, year, code):
 ok(M.dart_total_shares(types.SimpleNamespace(report=dup_report), "095720", today=SEP) == 57_827_085,
    "같은 구분이 두 줄이어도 더하지 않는다(보통주 최대 + 우선주)")
 
+
+# ═══ ⑮ BPS 를 가리기로 한 종목 ══════════════════════════════════════════
+#
+# 삼각 대조에서 BPS 가 어느 기준으로도 설명되지 않은 88종목은 값을 내보내지
+# 않는다(삼성물산 645,042 vs KRX 305,019). 고치는 규칙을 아직 못 찾아서, 틀린
+# 줄 아는 값을 안 보여 주는 쪽을 택했다.
+#
+# 여기서 지키는 것은 두 가지다.
+#   · 사유를 붙이지 않는다 — hidden 에 적으면 화면이 '표시하지 않은 값: BPS — …'
+#     를 붙이는데, 우리도 원인을 모르므로 적을 말이 없다. 그냥 빈칸이어야 한다.
+#   · 목록에 없는 종목은 하나도 달라지지 않는다 — 이 기능을 고른 이유가 그것이다.
+print("\n⑮ BPS 가리기 — 값만 지우고 사유는 안 붙인다")
+# 앞 절(회수 경로)이 collect_quant 를 가짜로 갈아 끼우고 되돌리지 않았다. 그대로
+# 두면 여기서 진짜 대신 그 가짜를 재게 된다 — 처음에 그래서 'BPS 가 안 지워진다'
+# 는 거짓 실패가 났다. 진짜를 되돌려 놓고 잰다.
+M.collect_quant = REAL_COLLECT_QUANT
+REAL_SUPPRESS = M.BPS_SUPPRESS
+_ann = {2025: dict(rev=100_000_000_000, op=10_000_000_000, np=8_000_000_000, np_owner=8_000_000_000,
+                   equity=50_000_000_000, equity_owner=50_000_000_000, liab=30_000_000_000, eps=800),
+        2024: dict(rev=90_000_000_000, op=9_000_000_000, np=7_000_000_000, np_owner=7_000_000_000,
+                   equity=42_000_000_000, equity_owner=42_000_000_000, liab=28_000_000_000, eps=700),
+        2023: dict(rev=80_000_000_000, op=8_000_000_000, np=6_000_000_000, np_owner=6_000_000_000,
+                   equity=36_000_000_000, equity_owner=36_000_000_000, liab=26_000_000_000, eps=600),
+        2022: dict(rev=70_000_000_000, op=7_000_000_000, np=5_000_000_000, np_owner=5_000_000_000,
+                   equity=31_000_000_000, equity_owner=31_000_000_000, liab=24_000_000_000, eps=500)}
+_st = STOCKS[1]
+
+M.BPS_SUPPRESS = set()
+_plain = run_quant(_st, _ann, total_shares=10_000_000)["valuation"]
+ok(_plain.get("bps") is not None, "목록이 비면 BPS 가 그대로 나온다", str(_plain.get("bps")))
+
+M.BPS_SUPPRESS = {_st["ticker"]}
+_hid = run_quant(_st, _ann, total_shares=10_000_000)["valuation"]
+ok(_hid.get("bps") is None, "목록에 있으면 BPS 가 빈칸", str(_hid.get("bps")))
+ok(_hid.get("pbr") is None, "PBR 도 함께 빈칸(주가÷BPS 라 남겨 둘 수 없다)", str(_hid.get("pbr")))
+ok("bps" not in (_hid.get("hidden") or {}), "사유를 붙이지 않는다",
+   str(_hid.get("hidden")))
+ok(_hid.get("eps") == _plain.get("eps") and _hid.get("per") == _plain.get("per"),
+   "EPS·PER 은 건드리지 않는다",
+   f"{_hid.get('eps')}/{_hid.get('per')} vs {_plain.get('eps')}/{_plain.get('per')}")
+
+M.BPS_SUPPRESS = {"999999"}
+_other = run_quant(_st, _ann, total_shares=10_000_000)["valuation"]
+ok(_other.get("bps") == _plain.get("bps") and _other.get("pbr") == _plain.get("pbr"),
+   "목록에 없는 종목은 한 값도 달라지지 않는다",
+   f"{_other.get('bps')} vs {_plain.get('bps')}")
+
+# 목록 파일 읽기 — 주석과 빈 줄을 걸러야 한다
+_f = DATA / "bps_suppress.txt"
+_f.write_text("# 머리말\n\n000660  # SK하이닉스\n028260\n# 끝\n", encoding="utf-8")
+_real_file = S.BPS_SUPPRESS_FILE
+S.BPS_SUPPRESS_FILE = _f
+ok(S.load_bps_suppress() == {"000660", "028260"}, "목록 파일에서 주석·빈 줄을 걸러 읽는다",
+   str(S.load_bps_suppress()))
+S.BPS_SUPPRESS_FILE = DATA / "없는파일.txt"
+ok(S.load_bps_suppress() == set(), "목록 파일이 없으면 아무것도 안 가린다")
+S.BPS_SUPPRESS_FILE = _real_file
+M.BPS_SUPPRESS = REAL_SUPPRESS
+
 print()
 print(f"통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)
