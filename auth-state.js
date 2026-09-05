@@ -301,7 +301,7 @@ function renderLoggedIn(wrap, user){
    페이지에 실리는데, 설정 창은 눌러야 열린다. 누르는 순간 받아 온다. */
 async function openSettings(){
   try{
-    const m = await import("./settings-panel.js?v=d79cfdfa");
+    const m = await import("./settings-panel.js?v=f8f066b7");
     m.openSettings();
   }catch(e){
     console.warn("[settings] 불러오지 못했습니다:", e && e.message);

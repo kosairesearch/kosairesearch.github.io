@@ -581,7 +581,7 @@ let saved='dark';try{saved=localStorage.getItem('kos-theme')||'dark'}catch(e){}
 applyTheme(saved);
 if(themeBtn)themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 </script>
-<script type="module" src="auth-state.js?v=af26373e"></script>
+<script type="module" src="auth-state.js?v=158e9651"></script>
 
 <script type="module">
 /* 설정 화면은 settings-panel.js 한 곳에만 있다.
@@ -591,7 +591,7 @@ if(themeBtn)themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('
    그러면 창에는 있는 항목이 페이지에는 없는 상태가 된다. */
 import { auth, isConfigured } from "./firebase-config.js?v=7b8f27a5";
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { renderSettings } from "./settings-panel.js?v=d79cfdfa";
+import { renderSettings } from "./settings-panel.js?v=f8f066b7";
 
 const box = document.getElementById('setCard');
 if(!isConfigured){

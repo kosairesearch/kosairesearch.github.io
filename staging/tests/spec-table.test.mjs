@@ -37,13 +37,13 @@ rmSync(TMP, { recursive: true, force: true });
 mkdirSync(TMP, { recursive: true });
 writeFileSync(TMP + "/payment-config.js", readFileSync(STAGING + "/payment-config.js"));
 writeFileSync(TMP + "/demo.js", readFileSync(STAGING + "/demo-backend.js", "utf8")
-  .replace(/from "\.\/firebase-config\.js"/g, 'from "./stub.js"')
+  .replace(/from "\.\/firebase-config\.js(?:\?v=[0-9a-f]+)?"/g, 'from "./stub.js"')
   .replace(/from "https:\/\/www\.gstatic\.com\/firebasejs\/[^"]+"/g, 'from "./stub.js"'));
 writeFileSync(TMP + "/panel.js", readFileSync(STAGING + "/settings-panel.js", "utf8")
-  .replace(/from "\.\/firebase-config\.js"/g, 'from "./stub.js"')
+  .replace(/from "\.\/firebase-config\.js(?:\?v=[0-9a-f]+)?"/g, 'from "./stub.js"')
   .replace(/from "https:\/\/www\.gstatic\.com\/firebasejs\/[^"]+"/g, 'from "./stub.js"')
-  .replace(/from "\.\/consent\.js"/g, 'from "./stub-consent.js"')
-  .replace(/from "\.\/subscription-api\.js"/g, 'from "./stub-api.js"'));
+  .replace(/from "\.\/consent\.js(?:\?v=[0-9a-f]+)?"/g, 'from "./stub-consent.js"')
+  .replace(/from "\.\/subscription-api\.js(?:\?v=[0-9a-f]+)?"/g, 'from "./stub-api.js"'));
 writeFileSync(TMP + "/stub-consent.js", `
 export const getMarketing = async () => true;
 export const setMarketing = async () => {};

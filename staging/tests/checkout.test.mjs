@@ -42,8 +42,9 @@ mkdirSync(TMP, { recursive: true });
 
 const swap = (name, out) => {
   let s = readFileSync(join(STAGING, name), "utf8");
-  s = s.replace(/import "\.\/paywall\.js";/g, "");           // 대역이 이미 깔았다
-  s = s.replace(/from "\.\/firebase-config\.js"/g, 'from "./stub-fb.js"');
+  // 대역이 이미 깔았다. 주소에 캐시 판본이 붙어 있어도 지운다.
+  s = s.replace(/import "\.\/paywall\.js(?:\?v=[0-9a-f]+)?";/g, "");
+  s = s.replace(/from "\.\/firebase-config\.js(?:\?v=[0-9a-f]+)?"/g, 'from "./stub-fb.js"');
   s = s.replace(/from "https:\/\/www\.gstatic\.com\/firebasejs\/[^"]+"/g, 'from "./stub-fb.js"');
   writeFileSync(join(TMP, out), s);
 };

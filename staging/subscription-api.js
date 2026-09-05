@@ -6,7 +6,7 @@
    두 군데에 따로 넣어야 한다. 한쪽만 고치면 미리보기에서 한 화면은 되고
    한 화면은 안 되는 상태가 된다. 진입점을 여기 하나로 모은다.
    ============================================================ */
-import { app, isConfigured, SOCIAL } from "./firebase-config.js";
+import { app, isConfigured, SOCIAL } from "./firebase-config.js?v=7b8f27a5";
 import { getFunctions, httpsCallable }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
 

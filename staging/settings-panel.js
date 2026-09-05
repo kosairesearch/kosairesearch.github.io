@@ -34,13 +34,13 @@
    이 파일은 눈으로 확인할 수 없는 것이 많다(브라우저가 없는 데서 고친다).
    staging/tests/subscription.test.mjs 가 대신 본다 — 고치면 돌릴 것.
    ============================================================ */
-import { app, auth, isConfigured } from "./firebase-config.js";
+import { app, auth, isConfigured } from "./firebase-config.js?v=7b8f27a5";
 import { onAuthStateChanged, signOut }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { getMarketing, setMarketing, accountInfo } from "./consent.js";
-import { call } from "./subscription-api.js";
+import { getMarketing, setMarketing, accountInfo } from "./consent.js?v=206cdd28";
+import { call } from "./subscription-api.js?v=7e5d7618";
 import { PLANS, planOf, won, fmtDay, payReady, upgradeDiff, MIN_CHARGE }
-  from "./payment-config.js";
+  from "./payment-config.js?v=4ae73997";
 
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
 const EN = () => (window.KOSi18n ? window.KOSi18n.lang : "ko") === "en";
@@ -236,6 +236,29 @@ function css() {
 :root[data-theme="dark"] .ks-nav button:hover{background:rgba(255,255,255,.06)}
 .ks-nav button[aria-selected="true"]{background:rgba(47,109,246,.1);color:var(--brand-blue,#2f6df6)}
 .ks-panel{flex:1;min-width:0;overflow:auto;padding:18px 22px 22px}
+/* 스크롤바 — 내용이 길면 오른쪽에 띠가 선다. 기본 스크롤바는 바탕이
+   밝은 색이라, 어두운 창을 세로로 가르는 밝은 줄이 하나 더 생긴다.
+   바탕을 지우고 손잡이만 남긴다.
+
+   scrollbar-color 는 물려받는 성질이라 .ks-card 에 한 번 걸어 두면 그
+   안에서 넘치는 칸이 무엇이든 따라온다 — 나중에 스크롤되는 칸이 하나 더
+   생겨도 여기를 다시 고칠 일이 없다. */
+/* scrollbar-color 는 물려받지만 scrollbar-width 는 물려받지 않는다 —
+   굵기는 실제로 넘치는 칸에 하나씩 걸어 준다. */
+.ks-card,.ks-dlg-card{--ks-thumb:rgba(0,0,0,.28);
+  scrollbar-color:var(--ks-thumb) transparent}
+.ks-nav,.ks-panel,.ks-hist,.ks-dlg-card{scrollbar-width:thin}
+:root[data-theme="dark"] .ks-card,
+:root[data-theme="dark"] .ks-dlg-card{--ks-thumb:rgba(255,255,255,.26)}
+/* scrollbar-color 를 모르는 곳(사파리)을 위해 한 벌 더 둔다. 손잡이에
+   속이 비치는 테두리를 둘러 가장자리에서 살짝 띄운다 — 종목 화면의
+   가로 스크롤(.tbl-scroll)이 쓰는 것과 같은 방법이다. */
+.ks-card ::-webkit-scrollbar,.ks-dlg-card::-webkit-scrollbar{width:10px;height:10px}
+.ks-card ::-webkit-scrollbar-track,.ks-dlg-card::-webkit-scrollbar-track{background:transparent}
+.ks-card ::-webkit-scrollbar-thumb,.ks-dlg-card::-webkit-scrollbar-thumb{
+  background:var(--ks-thumb);border-radius:9999px;
+  border:3px solid transparent;background-clip:content-box}
+.ks-card ::-webkit-scrollbar-corner,.ks-dlg-card::-webkit-scrollbar-corner{background:transparent}
 .ks-sec{padding:0 0 16px}
 /* 앞 칸과 성격이 다른 칸. 구독 상태·버튼 바로 아래에 '결제 내역' 머리가
    붙어 버려 안내 문구와 표 제목이 한 덩어리로 읽혔다. 줄 하나로 끊는다. */

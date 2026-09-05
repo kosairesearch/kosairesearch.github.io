@@ -16,8 +16,8 @@
    구독 문서는 subscriptions/{uid}. 서버(Functions)만 쓰고 클라이언트는 읽기만
    한다 — 사용자가 자기 문서의 plan 을 pro 로 고쳐 쓸 수 있으면 안 된다.
    ============================================================ */
-import { app, auth, isConfigured, SOCIAL } from "./firebase-config.js";
-import { PLANS } from "./payment-config.js";
+import { app, auth, isConfigured, SOCIAL } from "./firebase-config.js?v=7b8f27a5";
+import { PLANS } from "./payment-config.js?v=4ae73997";
 import { onAuthStateChanged }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getFirestore, doc, onSnapshot }

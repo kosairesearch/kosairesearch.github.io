@@ -183,6 +183,22 @@ ok("다크에서도 .ks-main 에 정의된다",
 ok("좁은 화면에서는 아래쪽 선으로 눕는다",
    /border-right:0;border-bottom:1px solid var\(--ks-line\)/.test(style));
 
+/* 스크롤바. 내용이 창보다 길면 오른쪽에 띠가 서는데, 기본 스크롤바는 바탕이
+   밝아 어두운 창을 세로로 가르는 밝은 줄이 하나 더 생긴다. 바탕을 지우고
+   손잡이만 남긴다.
+
+   눈으로는 대신 못 본다 — 고치는 자리(헤드리스 크로미움)는 겹치는 스크롤바를
+   써서 화면에도 스크린샷에도 아예 안 나온다. 규칙이 제자리에 있는지를 본다. */
+ok("바탕이 없다 — 손잡이 색과 '투명'을 함께 준다",
+   /scrollbar-color:var\(--ks-thumb\) transparent/.test(style));
+ok("손잡이 색이 두 테마 모두 있다",
+   /--ks-thumb:rgba\(0,0,0,\.28\)/.test(style) && /--ks-thumb:rgba\(255,255,255,\.26\)/.test(style));
+ok("넘치는 칸마다 굵기를 준다(scrollbar-width 는 물려받지 않는다)",
+   /\.ks-nav,\.ks-panel\{scrollbar-width:thin\}/.test(style));
+ok("scrollbar-color 를 모르는 곳(사파리)에도 바탕이 없다",
+   /::-webkit-scrollbar-track\{background:transparent\}/.test(style));
+ok("실사이트에는 확인 대화상자가 없으므로 그 규칙도 없다", !/ks-dlg/.test(style));
+
 /* ── ⑧ Settings.html 이 창과 같은 폭을 갖고 있는가 ───────────────── */
 const setHtml = readFileSync(join(ROOT, "Settings.html"), "utf8");
 ok("Settings.html 의 카드가 두 칸을 담을 만큼 넓다",

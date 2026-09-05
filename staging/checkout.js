@@ -15,9 +15,9 @@
    금액은 여기서 정하지 않는다. 클라이언트가 보낸 금액을 믿으면 9,900원짜리를
    100원에 파는 요청을 만들 수 있다. 서버가 plan 만 받아 자기 표에서 금액을 읽는다.
    ============================================================ */
-import "./paywall.js";
-import { app, auth, isConfigured, SOCIAL } from "./firebase-config.js";
-import { PLANS, TOSS, payReady as _payReady, planOf, won } from "./payment-config.js";
+import "./paywall.js?v=01294faf";
+import { app, auth, isConfigured, SOCIAL } from "./firebase-config.js?v=7b8f27a5";
+import { PLANS, TOSS, payReady as _payReady, planOf, won } from "./payment-config.js?v=4ae73997";
 const payReady = window.__KOSDEMO ? true : _payReady;
 import { getFunctions, httpsCallable }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";

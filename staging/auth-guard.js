@@ -7,10 +7,10 @@
       이 모듈이 로그인 상태를 확인해 통과(unlock) 또는 게이트(lockPage) 처리합니다.
    2) window.KOSGate.showLoginPopup(msg) — 워치리스트 추가 등 액션 차단용 팝업.
    ============================================================ */
-import { auth, isConfigured } from "./firebase-config.js";
+import { auth, isConfigured } from "./firebase-config.js?v=7b8f27a5";
 import { onAuthStateChanged, signOut }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { sendVerifyEmail } from "./auth-emails.js";
+import { sendVerifyEmail } from "./auth-emails.js?v=bce0955f";
 
 if(window.KOSi18n) window.KOSi18n.register({
   "로그인이 필요합니다":"Sign-in required",
