@@ -17,7 +17,7 @@
    빼는 편이 낫다 — 소셜 버튼 셋이 바로 위에 보이는 화면이라, 어느 것을
    누를지는 이 한 줄로 이미 분명하다. 시키는 말을 더 얹으면 문장만 길어진다.
    ============================================================ */
-import { app, SOCIAL } from "./firebase-config.js";
+import { app, SOCIAL } from "./firebase-config.js?v=7b8f27a5";
 import { getFunctions, httpsCallable }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
 

@@ -250,7 +250,13 @@ console.log("\n── ⑤ 실사이트와 스테이징이 갈라져 있지 않�
 {
   /* 같은 도메인의 같은 코드다. 한쪽만 고치면 나머지가 남고, 남은 쪽은
      사람이 그 주소를 밟기 전까지 아무도 모른다. 실사이트의 열린
-     리다이렉트를 고치고도 스테이징에는 그대로 있었다. */
+     리다이렉트를 고치고도 스테이징에는 그대로 있었다.
+
+     캐시 주소(?v=1a2b3c4d)는 빼고 본다. 그것은 사람이 쓴 코드가 아니라
+     stamp_assets.py 가 그 파일의 내용에서 뽑아 붙인 것이고, 두 사이트는
+     서로 다른 파일을 갖고 있으므로 해시도 당연히 다르다. 그대로 맞대면
+     도장을 찍을 때마다 '갈라졌다' 고 하는데, 정작 갈라진 것은 없다. */
+  const bare = t => t.replace(/\?v=[0-9a-f]{8}/g, "");
   for (const f of ["social-login.js", "auth-util.js", "auth-guard.js",
                    "auth-emails.js", "consent.js"]) {
     let a = null, b = null;
@@ -258,7 +264,7 @@ console.log("\n── ⑤ 실사이트와 스테이징이 갈라져 있지 않�
     try { b = read("staging/" + f); } catch (_) {}
     ok(a !== null, `실사이트에 ${f} 가 있다`);
     ok(b !== null, `스테이징에 ${f} 가 있다`);
-    if (a !== null && b !== null) ok(a === b, `${f} — 두 곳이 한 글자까지 같다`);
+    if (a !== null && b !== null) ok(bare(a) === bare(b), `${f} — 두 곳이 한 글자까지 같다`);
   }
 }
 

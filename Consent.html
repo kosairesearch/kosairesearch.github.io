@@ -675,11 +675,11 @@ if(window.KOSi18n) KOSi18n.register({
  * 여기서 동의를 받아야 가입이 성립한다. 동의하지 않으면 계정을 지운다 —
  * 동의 기록 없는 계정을 남기지 않는 것이 consent.js 전체의 원칙이다.
  */
-import { auth } from "./firebase-config.js";
+import { auth } from "./firebase-config.js?v=7b8f27a5";
 import { onAuthStateChanged, deleteUser, signOut }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { renderConsent, saveConsent, consentStage, deleteMyAccount } from "./consent.js";
-import { sendVerifyEmail } from "./auth-emails.js";
+import { renderConsent, saveConsent, consentStage, deleteMyAccount } from "./consent.js?v=206cdd28";
+import { sendVerifyEmail } from "./auth-emails.js?v=bce0955f";
 
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
 const errBox = document.getElementById('authErr');
@@ -830,7 +830,7 @@ document.getElementById('agreeBtn').addEventListener('click', async () => {
          같은 한 줄을 쓴다. */
       let msg = '';
       try{
-        const { hintText } = await import('./auth-hint.js?v=b796a504');
+        const { hintText } = await import('./auth-hint.js?v=f7531b46');
         msg = hintText((e && e.details && e.details.method) || '');
       }catch(_){}
       errBox.textContent = (msg || (e && e.message) || T('이미 다른 방법으로 가입된 이메일입니다.')) + ' ';
@@ -956,6 +956,6 @@ document.getElementById('cancelBtn').addEventListener('click', async () => {
   location.replace('Home.html');
 });
 </script>
-<script type="module" src="auth-state.js?v=5ee242a5"></script>
+<script type="module" src="auth-state.js?v=af26373e"></script>
 </body>
 </html>

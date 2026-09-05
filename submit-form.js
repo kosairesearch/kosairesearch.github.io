@@ -3,7 +3,7 @@
    window.KOSsubmitForm(payload) 로 호출. payload:
      { kind:'contact'|'feedback', name, email, category, rating, message, page, hp }
    ============================================================ */
-import { app, SOCIAL } from "./firebase-config.js";
+import { app, SOCIAL } from "./firebase-config.js?v=7b8f27a5";
 import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
 
 const fns = getFunctions(app, SOCIAL.functionsRegion);

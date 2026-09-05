@@ -23,10 +23,10 @@
      openSettings()          지금 화면 위에 창으로 띄운다
      renderSettings(box)     주어진 자리에 그린다 (Settings.html 이 쓴다)
    ============================================================ */
-import { app, auth, isConfigured } from "./firebase-config.js";
+import { app, auth, isConfigured } from "./firebase-config.js?v=7b8f27a5";
 import { onAuthStateChanged, signOut }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { getMarketing, setMarketing, accountInfo } from "./consent.js";
+import { getMarketing, setMarketing, accountInfo } from "./consent.js?v=206cdd28";
 
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
 

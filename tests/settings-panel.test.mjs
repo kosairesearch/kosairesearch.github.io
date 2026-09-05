@@ -42,10 +42,12 @@ try {
 const SRC = readFileSync(join(ROOT, "settings-panel.js"), "utf8");
 rmSync(TMP, { recursive: true, force: true });
 mkdirSync(TMP, { recursive: true });
+/* 주소에는 캐시용 판본(?v=1a2b3c4d)이 붙어 있다 — stamp_assets.py 가 붙인다.
+   그 부분까지 같이 받아 줘야 도장을 다시 찍을 때마다 이 검사가 깨지지 않는다. */
 writeFileSync(join(TMP, "panel.js"), SRC
-  .replace(/from "\.\/firebase-config\.js"/g, 'from "./stub.js"')
+  .replace(/from "\.\/firebase-config\.js(?:\?v=[0-9a-f]+)?"/g, 'from "./stub.js"')
   .replace(/from "https:\/\/www\.gstatic\.com\/firebasejs\/[^"]+"/g, 'from "./stub.js"')
-  .replace(/from "\.\/consent\.js"/g, 'from "./stub-consent.js"'));
+  .replace(/from "\.\/consent\.js(?:\?v=[0-9a-f]+)?"/g, 'from "./stub-consent.js"'));
 writeFileSync(join(TMP, "stub-consent.js"), `
 let fail = false;
 export const _failNext = () => { fail = true; };
@@ -185,6 +187,21 @@ ok("좁은 화면에서는 아래쪽 선으로 눕는다",
 const setHtml = readFileSync(join(ROOT, "Settings.html"), "utf8");
 ok("Settings.html 의 카드가 두 칸을 담을 만큼 넓다",
    /\.set-card\{max-width:860px/.test(setHtml));
+
+/* ── ⑨ 캐시 주소 ─────────────────────────────────────────────────
+   창을 두 칸으로 새로 짜고 배포했는데 화면은 옛 창이었다. 이 파일만
+   저장소 어디에서도 판본이 안 붙어 있어서, 브라우저가 받아 둔 옛 파일을
+   계속 쓰고 있었다. stamp_assets.py 가 그 뒤로 세 모양을 모두 보지만,
+   못 보는 모양이 또 생기면 --check 는 아무 말도 하지 않는다(맨 주소는
+   '최신이 아닌 해시' 가 아니라 '해시 없음' 이라 눈에 안 띈다).
+   그래서 여기서 직접 본다. */
+const authSrc = readFileSync(join(ROOT, "auth-state.js"), "utf8");
+const vOf = t => (t.match(/settings-panel\.js\?v=([0-9a-f]{8})/) || [])[1];
+ok("auth-state.js 가 부르는 주소에 판본이 붙어 있다", !!vOf(authSrc),
+   (authSrc.match(/import\("\.\/settings-panel[^)]*\)/) || ["없음"])[0]);
+ok("Settings.html 이 부르는 주소에도 붙어 있다", !!vOf(setHtml));
+ok("두 곳의 판본이 같다 — 갈리면 창이 두 벌로 뜬다", vOf(authSrc) === vOf(setHtml),
+   `${vOf(authSrc)} vs ${vOf(setHtml)}`);
 
 rmSync(TMP, { recursive: true, force: true });
 console.log(`\n통과 ${pass} · 실패 ${fail}`);
