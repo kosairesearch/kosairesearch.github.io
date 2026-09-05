@@ -1,229 +1,230 @@
 {
  "title": {
-  "ko": "갤럭시 수혜로 외형 2배 도약, 수익성 회복 속도 주목",
-  "en": "Revenue Doubled on Galaxy Momentum — Margin Recovery in Focus"
+  "ko": "무선충전 본업 위 EV·게이밍 신사업 이식 중",
+  "en": "Grafting EV and Gaming Growth onto a Wireless Charging Core"
  },
  "lead": {
-  "ko": "삼성전자 1차 협력사로서 갤럭시 S25 시리즈 공급 호조에 힘입어 2025년 매출이 약 86% 급증했으나, M&A 통합 비용이 영업이익률을 1%대로 압박하고 부채비율도 급등해 수익성·재무 건전성 회복이 2026년의 핵심 관전 포인트로 부상했다.",
-  "en": "Wits nearly doubled its revenue in 2025 on robust Galaxy S25 supply, but M&A integration costs compressed the operating margin to just 1.5% while the debt ratio surged, making profitability and balance-sheet normalization the defining tests for 2026."
+  "ko": "위츠는 삼성전자 갤럭시 무선충전 모듈 공급을 축으로 매출은 늘었지만, EV충전기·게이밍 디스플레이 신사업 이식 과정에서 분기별 이익 변동성이 크게 확대되고 있다.",
+  "en": "Wits has grown revenue on the back of its Samsung Electronics Galaxy wireless-charging module business, but quarterly earnings volatility has widened sharply as it grafts on new EV charger and gaming display businesses."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 약 1,687억원으로 전년(약 908억원) 대비 약 86% 급증 — 갤럭시 S25 플래그십 라인업 납품 확대가 핵심 성장 동인",
-   "en": "2025 revenue surged ~86% YoY to ~₩168.7bn, led by expanded supply to Samsung Galaxy S25 flagship models"
+   "ko": "2025년 연결 매출 1,687억원으로 전년(908억원) 대비 크게 늘었으나 영업이익률은 1.5%로 2023년 10.3%보다 크게 낮아졌다.",
+   "en": "2025 consolidated revenue reached KRW 168.7bn, up sharply from KRW 90.8bn a year earlier, but operating margin fell to 1.5% versus 10.3% in 2023."
   },
   {
-   "ko": "영업이익률 2024년 2.4% → 2025년 1.5%로 하락, 4분기 영업손실 전환 — KG모빌리티·LG 디스플레이 사업 통합 비용이 직접적 원인",
-   "en": "OPM contracted from 2.4% to 1.5% YoY; Q4 2025 swung to an operating loss, driven by dual M&A integration charges"
+   "ko": "2026년 1분기 지배주주순이익 29.7억원에서 2분기 순손실 33.7억원으로 분기 간 실적 편차가 크게 나타났다.",
+   "en": "Owners' net profit swung from KRW 2.97bn in Q1 2026 to a net loss of KRW 3.37bn in Q2 2026."
   },
   {
-   "ko": "2026년 1분기 매출 약 549억원·영업이익 약 15억원·지배주주 순이익 약 25억원 — 분기 최고 순이익과 함께 수익성 회복 신호 발신",
-   "en": "Q1 2026 posted record quarterly net income (~₩2.5bn) alongside revenue of ~₩54.9bn and operating profit ~₩1.5bn — a clear recovery signal"
+   "ko": "GS에너지·GS네오텍이 약 50억원을 전략 투자했고, GS차지비와 EV충전기 공급 협약을 맺어 3년 내 매출 1,000억원을 목표로 제시했다.",
+   "en": "GS Energy and GS Neotek made a roughly KRW 5bn strategic investment, and Wits signed an EV charger supply deal with GS Chargev, targeting KRW 100bn in charger revenue within three years."
   },
   {
-   "ko": "2025년 부채비율 245%(전년 139.6%) 및 영업현금흐름 약 -286억원 — M&A 재원 조달·운전자본 급증으로 재무 레버리지 대폭 확대",
-   "en": "Debt ratio jumped to 245% from 139.6%, with operating cash outflow of ~₩28.6bn, reflecting acquisition financing and working capital build"
+   "ko": "갤럭시 S26 울트라에 국내 최초 25W 고출력 무선충전 RX 모듈을 공급했고, 게이밍 디스플레이는 미국 카지노 기기업체 대상 공급을 확대 중이다.",
+   "en": "Wits supplied the domestic market's first 25W high-power wireless charging RX module for the Galaxy S26 Ultra, and is expanding gaming display supply to U.S. casino equipment makers."
   },
   {
-   "ko": "KG모빌리티 전력통신제어·LG 디스플레이 사업권 인수로 전장·가전 부문 진출 — 중장기 삼성전자 의존도 완화 여부가 구조적 핵심",
-   "en": "Entry into automotive power control (KG Mobility) and display (LG Electronics) signals medium-term diversification away from single-customer dependence"
+   "ko": "2024~2025년 영업활동현금흐름이 2년 연속 마이너스를 기록했고 부채비율은 245%까지 상승했다.",
+   "en": "Operating cash flow was negative for two consecutive years in 2024-2025, and the debt ratio rose to 245%."
   }
  ],
  "business": {
-  "ko": "위츠는 2019년 모회사 켐트로닉스가 삼성전기의 무선충전 사업을 인수하며 설립된 전력전송 솔루션 전문기업으로, 자기유도 방식의 NFC 안테나·MST 안테나·무선충전 수신(Rx)·송신(Tx) 모듈을 스마트폰 및 웨어러블 기기에 공급하는 것이 주력이다. 삼성전자의 1차 협력사로 등록돼 있으며, 갤럭시 S·Z 폴드·Z 플립·워치 시리즈 등 주요 플래그십 전 라인업에 무선충전 부품을 납품하고, 삼성전자향 송신용(TX) 시장점유율은 70~80%, 수신용(RX)은 30~40% 수준으로 추정된다. 삼성전기 인수 당시 함께 이전받은 전력전송 관련 특허 약 700건이 기술 진입장벽을 형성하고 있다. 스마트폰 외에도 현대기아차·KG모빌리티·GM·Honda·Volvo 등 글로벌 완성차에 차량 내장형 스마트폰 무선충전기를 공급하며 전장 시장에도 진출해 있다. 2024년에는 켐트로닉스 자회사로부터 KG모빌리티향 CGW·BCM·SKM·ETCS 등 전력통신제어모듈 사업권을 양수해 전장 포트폴리오를 확장했고, 2025년에는 자회사 비욘드아이를 통해 LG전자향 게이밍·가전 디스플레이 관련 사업권도 인수해 고객 다변화를 추진 중이다. 핵심 제품 생산은 베트남 법인 위츠비나(WITS VINA)에서 이루어지며, 생산 자동화와 수율 개선을 통해 원가 경쟁력을 유지하고 있다. 삼성전자 SMAPP 인증을 획득한 자체 브랜드 무선충전기 세트를 글로벌 유통망으로 공급하고 있으며, 차세대 빔포밍 기반 무선충전·전기차 무선충전 등으로 적용 분야를 확대하는 중장기 로드맵도 추진 중이다.",
-  "en": "Wits Co. was established in 2019 when its parent Chemtronics acquired Samsung Electro-Mechanics' wireless charging business, and specializes in power transmission solutions — primarily supplying NFC antennas, MST antennas, and wireless charging receiver (Rx) and transmitter (Tx) modules for smartphones and wearables. As a registered tier-1 supplier to Samsung Electronics, Wits provides components across all major flagship lines including the Galaxy S, Z Fold, Z Flip, and Watch series; its estimated share within Samsung's wireless charging supply chain stands at 70–80% for transmitters and 30–40% for receivers. Approximately 700 power transmission patents acquired alongside the Samsung Electro-Mechanics business form a meaningful technological barrier to entry. Beyond smartphones, Wits supplies in-car wireless smartphone chargers to global automakers including Hyundai-Kia, KG Mobility, GM, Honda, and Volvo. In 2024, it acquired KG Mobility's power control module business (CGW, BCM, SKM, ETCS) from a Chemtronics subsidiary, formalizing its automotive electronics segment; in 2025, subsidiary Beyondi acquired LG Electronics' gaming and home appliance display-related business rights, furthering customer diversification. Core manufacturing takes place at WITS VINA in Vietnam, with ongoing automation and yield improvements supporting cost competitiveness. Samsung SMAPP-certified wireless charging set products are distributed through global retail channels, and the company is pursuing a medium-to-long-term roadmap into next-generation beamforming wireless charging and EV wireless charging."
+  "ko": "위츠는 2019년 삼성전기의 무선충전 사업부를 인수하며 설립된 전력전송 솔루션 전문기업으로, 코스닥 상장사이자 켐트로닉스의 종속회사다. 삼성전자 스마트폰·웨어러블 기기에 탑재되는 무선충전 수신(RX) 모듈과 무선충전기(TX)를 공급하는 1차 협력사로, 전력전송 관련 특허를 약 700여 건 보유하고 있다. 2026년 2월 출시된 갤럭시 S26 울트라에는 국내 최초로 25W 고출력 무선충전 RX 모듈을 공급했으며, 폴더블 모델인 갤럭시 Z 트라이폴드에도 무선충전모듈을 탑재했다. 자체 브랜드 '3in1 무선충전기'로 B2C 시장에도 진출해 삼성닷컴을 통해 국내외 23개국에 판매하고 있다. 신사업으로는 전기차(EV) 충전기와 게이밍 디스플레이를 두 축으로 키우고 있는데, EV충전기는 현대케피코향 7kW 완속충전기 공급을 시작했고 GS차지비와 공동개발·공급 협약을 체결했다. 게이밍 디스플레이는 모기업 켐트로닉스의 디스플레이 식각 기술을 접목해 커브드·미니LED 방식으로 개발했고, 미국 카지노 기기업체 아루제(Aruze) 등에 공급 중이다. 이 외에 로봇용 전력전송 솔루션 사업화를 모색 중이며, 국내 로봇 부품 업계 협의체에도 참여해 사업 기회를 타진하고 있다. 경쟁구도는 무선충전 모듈에서는 대형 부품사와, EV충전기에서는 중소 제조사와, 게이밍 디스플레이는 미국·아시아 소수 업체와 경합하는 구조다.",
+  "en": "Wits is a power transmission solutions company established in 2019 when it acquired Samsung Electro-Mechanics' wireless charging business; it is listed on KOSDAQ and is a subsidiary of Chemtronics. As a first-tier supplier, it provides wireless charging receiver (RX) modules and chargers (TX) for Samsung Electronics smartphones and wearables, and holds roughly 700 patents related to power transmission. For the Galaxy S26 Ultra launched in February 2026, Wits supplied the domestic market's first 25W high-power wireless charging RX module, and it also supplies wireless charging modules for the foldable Galaxy Z Trifold. The company has entered the consumer (B2C) market with its own '3-in-1 wireless charger' brand, sold through Samsung.com across 23 countries including Korea. It is building two new growth pillars in electric vehicle (EV) chargers and gaming displays: on the EV side, it began supplying 7kW slow chargers to Hyundai Kefico and signed a joint-development and supply agreement with GS Chargev. Its gaming display business applies parent company Chemtronics' display etching technology to develop curved and mini-LED displays, currently supplied to U.S. casino equipment maker Aruze and others. Wits is also exploring commercialization of power transmission solutions for robots, participating in a domestic robot-parts industry council to seek business opportunities. Competitively, it faces large component makers in wireless charging modules, small and mid-sized manufacturers in EV chargers, and a handful of U.S. and Asian players in gaming displays."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 약 1,687억원으로 전년(약 908억원) 대비 약 86% 증가했으며, 갤럭시 S25 시리즈를 포함한 삼성전자 플래그십 납품 확대와 KG모빌리티 전력통신제어 사업의 연결 편입이 성장을 이끌었다. 그러나 영업이익은 약 26억원(OPM 1.5%)에 그쳐 전년(약 22억원, OPM 2.4%) 대비 마진이 오히려 후퇴했는데, 사업권 인수 과정에서 발생한 고용승계·고정비 급증이 수익성을 압박한 직접적 원인으로 지목된다. 분기별로는 2025년 3분기에 매출 약 557억원·영업이익 약 16억원으로 연중 정점을 기록했으나, 4분기에 매출 약 446억원임에도 영업이익이 약 -20억원으로 적자 전환되며 연간 이익의 상당 부분을 잠식했다. 지배주주 귀속 순이익은 연간 약 19억원이었으며, 연결 기준 총 당기순이익(약 28.5억원)은 이연법인세 효과 등 영업외 항목이 더해지면서 영업이익을 상회했다. 2025년 영업현금흐름은 약 -286억원으로 전년(-40억원) 대비 현금 소진이 크게 확대됐으며, 이는 M&A 통합 비용 및 운전자본 급증을 반영한다. 총 부채가 570억원에서 1,124억원으로 거의 두 배 증가하며 부채비율이 245%로 상승했고, 이는 인수 재원 조달 과정에서의 차입 확대에 기인한다. 2026년 1분기는 매출 약 549억원·영업이익 약 15억원·지배주주 순이익 약 25억원으로 분기 기준 최고 순이익을 달성하며, 갤럭시 S26 수혜와 일회성 비용 소멸 효과가 동시에 작용한 회복 신호를 발신했다.",
-  "en": "Consolidated full-year 2025 revenue reached approximately ₩168.7bn, up roughly 86% from ₩90.8bn in 2024, driven by expanded Galaxy S25 shipments and the first-time consolidation of KG Mobility's power control module operations. Despite the top-line surge, operating profit was only about ₩2.6bn (OPM 1.5%), a nominal increase from ₩2.2bn but a meaningful margin compression from 2.4% in the prior year, as mandatory employee retention and elevated fixed costs from M&A integrations weighed heavily on SG&A. Quarterly trends show revenue peaked at approximately ₩55.7bn in Q3 2025 with operating profit of about ₩1.6bn, before Q4 2025 registered an operating loss of approximately ₩2.0bn on revenues of about ₩44.6bn, significantly eroding the cumulative annual operating profit. Net income attributable to the controlling interest reached approximately ₩1.9bn for the year, while total consolidated net income of approximately ₩2.85bn exceeded operating profit due to deferred tax benefits and other below-the-line items. Operating cash flow was approximately −₩28.6bn for 2025 versus −₩4.0bn in 2024, reflecting M&A-related outlays and working capital expansion. Total liabilities nearly doubled from ₩57.0bn to ₩112.4bn, pushing the debt ratio from 139.6% to 245%, driven primarily by acquisition financing. Q1 2026 marked a notable rebound with revenue of approximately ₩54.9bn, operating profit of about ₩1.5bn, and record quarterly controlling-interest net income of approximately ₩2.5bn, as Galaxy S26 demand ramped and one-time integration charges dissipated."
+  "ko": "2025년 연결 매출액은 1,687억 2,244만원으로 2024년 907억 6,392만원 대비 크게 늘었으나, 2023년 995억 3,381만원과 비교하면 사업 구조가 저마진 매출 중심으로 이동했음을 보여준다. 영업이익률은 2023년 10.3%에서 2024년 2.4%, 2025년 1.5%로 3년 연속 낮아졌고, 영업이익 규모도 2023년 102억 5,446만원에서 2025년 25억 9,096만원으로 축소됐다. 지배주주순이익은 2025년 19억 3,360만원으로 2024년 15억 4,775만원보다 늘었지만 2023년 76억 1,156만원에는 크게 못 미친다. 분기별로 보면 2025년 3분기 매출 557억원, 영업이익 15억 8,000만원을 기록한 뒤 4분기에는 매출이 446억원으로 줄면서 영업손실 19억 8,000만원을 냈다. 2026년 1분기에는 매출 549억원, 영업이익 15억원을 기록했고 지배주주순이익은 29억 7,000만원으로 뛰었는데, 영업이익 대비 순이익 증가폭이 큰 점은 일회성 비영업 요인이 반영됐을 가능성을 시사한다. 그러나 2026년 2분기에는 매출이 427억원으로 줄고 영업손실 12억 4,000만원, 지배주주순손실 33억 7,000만원을 기록하며 다시 적자로 돌아섰다. 이에 따라 최근 네 개 분기(2025년 3분기~2026년 2분기) 누적 지배주주순이익은 12억 5,300만원 수준으로, 분기 간 편차가 매우 큰 흐름을 보이고 있다. 영업활동현금흐름은 2024년 -40억 2,300만원, 2025년 -285억 7,000만원으로 2년 연속 마이너스를 기록해 매출 성장이 현금창출로 이어지지 못하고 있으며, 2023년 +203억 3,300만원과는 대조적이다. 부채비율은 2024년 139.6%에서 2025년 245.0%로 급등해 외형 확장 과정에서 재무 레버리지도 함께 늘어난 모습이다.",
+  "en": "2025 consolidated revenue was KRW 168.72bn, up sharply from KRW 90.76bn in 2024, though compared with KRW 99.53bn in 2023 it shows the revenue mix has shifted toward lower-margin sales. Operating margin fell for three straight years, from 10.3% in 2023 to 2.4% in 2024 and 1.5% in 2025, with operating profit shrinking from KRW 10.25bn in 2023 to KRW 2.59bn in 2025. Owners' net profit was KRW 1.93bn in 2025, up from KRW 1.55bn in 2024 but well below the KRW 7.61bn recorded in 2023. By quarter, revenue was KRW 55.7bn with operating profit of KRW 1.58bn in Q3 2025, before revenue fell to KRW 44.6bn and the company posted an operating loss of KRW 1.98bn in Q4 2025. In Q1 2026, revenue was KRW 54.9bn with operating profit of KRW 1.5bn, while owners' net profit jumped to KRW 2.97bn — a gap between operating and net profit growth that suggests a one-off, non-operating factor may have been at play. However, in Q2 2026 revenue slipped to KRW 42.7bn and the company swung back to losses, posting an operating loss of KRW 1.24bn and an owners' net loss of KRW 3.37bn. As a result, cumulative owners' net profit over the trailing four quarters (Q3 2025-Q2 2026) stands at roughly KRW 1.25bn, reflecting very large swings between quarters. Operating cash flow was negative for two straight years — KRW -4.02bn in 2024 and KRW -28.57bn in 2025 — meaning revenue growth has not translated into cash generation, in contrast to the positive KRW 20.33bn recorded in 2023. The debt ratio jumped from 139.6% in 2024 to 245.0% in 2025, indicating financial leverage rose alongside the top-line expansion."
  },
  "industry": {
-  "ko": "글로벌 무선충전 시장은 2026년 약 559억 달러 규모로 성장하고, 연평균 약 22.8%의 성장률을 유지하며 2035년 약 3,552억 달러에 달할 것으로 전망되는 고성장 산업이다. 2024년 기준 전 세계 25억 대 이상의 기기에 무선충전이 탑재됐으며, 삼성전자의 갤럭시 S26 플래그십 출시와 A57·A37 미드레인지 확대가 2026년 부품 수요를 지속 뒷받침하고 있다. 자동차 부문이 2026년 무선충전 시장 내 가장 높은 매출 비중(약 31.9%)을 차지할 것으로 전망되며, EV 내 스마트폰 무선충전과 전기차 배터리 무선충전이 새로운 고성장 응용 영역으로 주목받고 있다. 아시아·태평양이 글로벌 무선충전 시장의 약 53%를 점유하고 있어, 위츠의 한국-베트남 제조 벨트와 삼성 중심 공급망은 지리적으로 유리한 위치에 있다. 위츠는 삼성전기 인수를 통해 확보한 약 700개 특허와 수십 년간의 공동 개발 이력을 바탕으로 삼성전자 에코시스템 내 차별적 입지를 유지하고 있으나, 중국 경쟁사의 원가 우위와 신규 공급사 진입 가능성은 장기적 가격 압박 요인으로 상존한다. 전기차 충전 인프라 시장도 2024년 약 254억 달러에서 2033년 약 834억 달러로 성장할 전망이어서, 위츠의 KG모빌리티 전력통신제어 사업권 확보와 EV 무선충전 기술 개발은 이 성장 사이클 편입을 위한 초기 포석으로 볼 수 있다.",
-  "en": "The global wireless charging market is projected to reach approximately $55.9bn in 2026 and grow at a CAGR of about 22.8% to reach roughly $355bn by 2035, ranking it among the fastest-expanding subsectors in electronics components. Wireless charging was embedded in over 2.5 billion devices worldwide as of 2024; Samsung's Galaxy S26 flagship launch and mid-range A57/A37 expansion continue to underpin near-term module demand. The automotive segment is expected to generate the highest revenue share within wireless charging (approximately 31.9% in 2026), with both in-cabin smartphone chargers and EV battery wireless charging gaining traction as high-growth application areas. Asia-Pacific commands approximately 53% of global wireless charging revenues, aligning well with Wits' Korea–Vietnam manufacturing footprint and Samsung-centric supply chain. Wits maintains a differentiated position within the Samsung ecosystem through ~700 acquired patents and decades of co-development history, though Chinese competitors' structural cost advantages and potential new-entrant pressure represent a persistent medium-to-long-term pricing risk. The EV charging infrastructure market — expected to grow from approximately $25.4bn in 2024 to $83.4bn by 2033 — provides strategic rationale for the company's KG Mobility power control acquisition and ongoing EV wireless charging technology development."
+  "ko": "무선충전 모듈의 핵심 전방시장인 삼성전자 갤럭시 스마트폰은 2026년 갤럭시 S26 시리즈가 국내 사전판매 135만대로 역대 최다를 기록했고, 이 중 고성능 울트라 모델 비중이 약 70%에 달해 고부가 제품 수요가 견조하다. 보급형 모델까지 무선충전 기능 탑재가 확대되는 추세는 모듈 공급사에 물량 기반을 넓혀줄 수 있는 우호적 요인이다. EV충전기 시장은 정부 보조금 정책에 의존하는 구조 속에서 원가 상승과 충전요금 통제가 겹쳐 완속충전기 사업자 다수가 적자를 면치 못하는 상황이며, GS차지비·에버온 등 규모의 경제를 갖춘 상위 사업자로 재편이 진행되고 있다. 위츠는 이 시장에서 직접 운영 사업자가 아닌 제조 파트너로 참여해 GS차지비·현대케피코에 완속충전기를 공급하는 구조로, 충전 인프라 운영 리스크보다는 제조·공급 물량 확보가 관건이다. 게이밍 디스플레이는 미국 라스베이거스 G2E 전시회를 중심으로 카지노 기계업체를 고객사로 확보하는 산업으로, 진입장벽이 있는 니치 시장이라 소수 업체 간 경쟁이 이뤄진다. EV무선충전은 아직 상용화 초기 단계로, 인증 절차 완화와 규제 샌드박스 실증 등 제도적 지원이 이제 막 갖춰지는 단계다. 전반적으로 위츠는 성숙한 모바일 무선충전 시장에서의 안정적 지위와, 아직 검증 중인 EV충전기·게이밍 디스플레이·로봇 전력전송이라는 초기 성장 시장 진입이 겹쳐 있는 위치에 있다.",
+  "en": "In Wits' core end market, the Galaxy S26 series set a record for domestic pre-order sales at 1.35 million units in 2026, with the high-performance Ultra model accounting for about 70% of that volume, indicating solid demand for premium features. The trend of wireless charging spreading into mid-range models is a favorable factor that could broaden the volume base for module suppliers. The EV charger market is dependent on government subsidy policy, and rising costs combined with regulated charging fees mean many slow-charger operators struggle to turn a profit, driving consolidation toward scaled players such as GS Chargev and Everon. Wits participates in this market as a manufacturing partner rather than an infrastructure operator, supplying slow chargers to GS Chargev and Hyundai Kefico, so its key variable is securing manufacturing and supply volume rather than operating risk. Gaming displays are a niche market centered on the G2E exhibition in Las Vegas, where casino equipment makers are the customer base, and competition is limited to a handful of players due to entry barriers. EV wireless charging is still at an early commercialization stage, with institutional support such as eased certification procedures and regulatory sandbox pilots only just taking shape. Overall, Wits sits at the intersection of a stable position in the mature mobile wireless-charging market and early-stage entry into still-unproven growth markets in EV chargers, gaming displays, and robotic power transmission."
  },
  "outlook": {
-  "ko": "삼성전자 MX 사업부는 갤럭시 S26 울트라 판매 비중 확대와 갤럭시 A57·A37 등 신규 미드레인지 모델 출시를 통해 2026년 전년 대비 금액 기준 매출 성장을 추진한다고 밝혀, 위츠의 모바일 무선충전 모듈 수요 기반이 연간 지속될 것으로 기대된다. 위츠 경영진은 2025년 3분기 실적 발표 시점에 '2026년 한 단계 더 높은 수익성 확보'를 목표로 공식화했으며, 베트남 법인 위츠비나의 생산 효율화·수율 향상이 원가 구조 개선의 핵심 레버로 작동하고 있다. LG전자 디스플레이 관련 사업의 베트남 이관이 검토·추진 중으로, 완료 시 국내 고정비가 절감되며 하반기 수익성 개선의 촉매가 될 수 있다. KG모빌리티향 전력통신제어모듈(CGW·BCM·SKM·ETCS) 공급이 점차 정상화되고 있어 전장 부문 매출 기여도가 점진적으로 높아질 전망이다. 삼성전자가 갤럭시 S26 기본 모델 일부에 엑시노스 2600을 탑재하고 A57·A37에 신규 엑시노스 SoC를 공급하는 전략을 실행 중이어서, 모델별 무선충전 탑재 확대가 위츠 물량에 긍정적으로 작용할 수 있다. 다만 삼성전자 MX 부문 자체가 메모리 가격 상승에 따른 원가 압박으로 수익률 감소가 불가피하다고 밝힌 만큼, 부품 단가 인하 압력이 공급망으로 전가될 가능성도 배제할 수 없어 마진 개선 속도에 영향을 줄 수 있다.",
-  "en": "Samsung's MX division has confirmed plans to grow 2026 revenue through expanded Galaxy S26 Ultra sales mix and new mid-range launches (A57, A37), providing a sustaining demand backdrop for Wits' mobile wireless charging modules across the full year. Wits management formally committed to achieving a further step up in profitability in 2026 at the time of its Q3 2025 earnings release, with WITS VINA production efficiency gains and yield improvements serving as the primary operational lever for cost structure improvement. The potential migration of LG Electronics' display operations to Vietnam is under active consideration; if completed, it would reduce domestic fixed costs and could serve as a catalyst for second-half 2026 margin recovery. The KG Mobility power control module business (CGW, BCM, SKM, ETCS) is expected to contribute incrementally higher revenues as integration stabilizes and supply relationships normalize. Samsung's deployment of Exynos 2600 in Galaxy S26 base models and new Exynos SoCs across the A57/A37 broadens the device count using wireless charging modules, which could benefit Wits' shipment volumes. However, Samsung's MX division has acknowledged that rising memory costs will inevitably compress its own margins in 2026, raising the possibility that component price pressure could be partially passed down to suppliers, capping the pace of near-term margin improvement."
+  "ko": "회사는 GS에너지·GS네오텍으로부터 약 50억원 규모의 전략적 투자를 유치하고 GS차지비와 EV충전기 공급 협약을 맺으며 3년 내 EV충전기 매출 1,000억원을 목표로 제시했다. 목표 달성을 위해 중속·급속 충전기와 초경량·고출력 EV무선충전(WPT) 라인업 확대를 계획하고 있으며, 2023년 체결한 와이트리시티(WiTricity)와의 기술 라이선싱을 바탕으로 KG모빌리티와 자율주행·자동발렛 충전 연계 상용화 로드맵을 준비 중이다. 게이밍 디스플레이 사업은 기존 고객사 아루제 외에 신규 고객사로부터 초도 물량 공급 계약을 확보했다는 증권사 리포트가 나왔고, 하반기 선주문 물량 확보가 이어지고 있다는 평가도 있다. 신한투자증권은 곡면 기술 경쟁력을 바탕으로 공급 양산이 시작됐고 고마진 게이밍 매출 비중 확대가 전사 수익 개선에 기여할 것으로 내다봤다. IBK투자증권은 미니 LED 기반 커브드 게이밍 디스플레이 시장에 진입해 북미 카지노 게이밍 장비 업체 대상 공급을 확대할 예정이며 신규 고객사와 테스트가 진행 중이라고 짚었다. 로봇 분야는 아직 사업화 초기로, 로봇부품기업협의회 참여를 통해 사업 기회를 모색하는 단계에 머물러 있다. 다만 KB증권은 주요 고객사의 모바일 기기 판매 부진이나 전기차·충전시설 보조금 변화가 실적 변동성을 키울 수 있다고 짚었다.",
+  "en": "The company secured roughly KRW 5bn in strategic investment from GS Energy and GS Neotek and signed an EV charger supply agreement with GS Chargev, setting a target of KRW 100bn in EV charger revenue within three years. To reach that goal, it plans to expand its lineup into medium- and fast-speed chargers and lightweight, high-power EV wireless power transfer (WPT), building on a 2023 technology licensing agreement with WiTricity to prepare a commercialization roadmap with KG Mobility linking autonomous driving and automated valet charging. In gaming displays, brokerage reports have noted that, beyond existing customer Aruze, Wits secured an initial supply contract with a new customer, with some assessments pointing to continued advance-order intake in the second half. Shinhan Investment Corp said mass production had begun on the strength of curved-display technology and that a rising share of high-margin gaming revenue would contribute to company-wide profitability improvement. IBK Securities noted that Wits has entered the mini-LED-based curved gaming display market and plans to expand supply to North American casino gaming equipment makers, with testing underway with new customers. The robotics business remains at an early commercialization stage, with Wits exploring opportunities through participation in a domestic robot-parts industry council. KB Securities, however, cautioned that weak device sales at key customers or changes in EV and charging-infrastructure subsidies could increase earnings volatility."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 2024년 11월 공모가(6,400원) 아래에서 거래되고 있어, 상장 첫날 급등 이후 이어진 조정이 상당 폭 진행된 상태다. 주당순자산(BPS, KRX 기준 3,373원) 대비로는 소폭 프리미엄이 붙은 구간이며, 주당순이익(EPS 364원)을 기준으로 한 이익 배수는 코스닥 소형 전자부품 업체들의 통상적 거래 배수 범위 내에 위치하는 것으로 판단된다. 주당 현금배당금(DPS 300원)을 기준으로 한 배당수익률은 코스닥 전자부품 업종 평균을 상당 폭 상회하는 수준이어서, 배당 측면의 기초 지지 요인이 작동하고 있다. 2026년 1분기 이익 회복이 가시화된 만큼, 이 추세가 분기를 넘어 지속되면 수익성 개선 기대를 반영한 주가 재평가가 점진적으로 이루어질 여지가 있다. 다만 2025년 영업이익률이 1%대에 머물고 부채비율이 200%를 크게 웃도는 현 재무 구조는, 이익과 현금흐름이 실질적으로 정상화되기 전까지 배수 확장의 속도를 제약하는 요인으로 남을 수 있다.",
-  "en": "The stock currently trades below the November 2024 IPO price of ₩6,400, having undergone a meaningful correction after the sharp post-listing surge. Against book value per share (BPS, ₩3,373 per KRX), the shares trade at a modest premium, while the implied earnings multiple based on headline EPS of ₩364 falls within the typical trading range for small-cap KOSDAQ electronic components companies. Annual cash dividends per share (DPS ₩300) imply a yield that substantially exceeds the KOSDAQ electronics sector average, providing a degree of income-based valuation support. With the Q1 2026 profit recovery now visible, a sustained improvement over subsequent quarters could gradually enable a re-rating toward a higher earnings multiple. However, an operating margin still in the low single digits and a debt ratio well above 200% are likely to constrain the pace of multiple expansion until both earnings and cash flow demonstrate meaningful normalization."
+  "ko": "주가는 주당 순자산 대비 소폭의 프리미엄이 형성된 구간에서 거래되고 있어, 순자산가치보다 높은 가격에 시장이 매겨져 있는 모습이다. 분기별 실적이 흑자와 적자를 오가는 구조이다 보니 최근 네 개 분기 합산 순이익을 기준으로 산출하는 수익성 지표는 분기 실적 발표 시마다 변동성이 클 수 있다. 배당은 매년 지급 실적이 있으나 이익 규모 대비 배당 정책의 일관성을 지속적으로 확인해야 하는 단계로, 이익 회복이 배당 여력 확대로 이어질지가 관찰 포인트다. 2023년의 두 자릿수 영업이익률 국면과 비교하면 최근 2년은 외형 성장에도 마진이 얇아진 시기로, 시장이 부여하는 밸류에이션은 신사업(EV충전기·게이밍 디스플레이)의 성장 스토리와 본업의 마진 회복 여부를 함께 반영하고 있는 것으로 해석된다. 결국 현재 거래 수준을 어떻게 볼지는 신사업 매출이 본업의 마진 하락을 상쇄할 수 있느냐에 달려 있다.",
+  "en": "The stock trades at a modest premium to per-share net asset value, meaning the market is pricing it above book value. Because quarterly results swing between profit and loss, profitability metrics calculated on trailing four-quarter earnings can be quite volatile from one earnings release to the next. Dividends have been paid annually, but the consistency of payout policy relative to the scale of earnings is something that still needs ongoing confirmation, and whether an earnings recovery translates into greater dividend capacity remains a point to watch. Compared with the double-digit operating margin seen in 2023, the past two years have been a period of thinner margins despite top-line growth, so the valuation the market assigns appears to reflect both the growth narrative of new businesses (EV chargers, gaming displays) and whether the core business's margin can recover. Ultimately, how one views the current trading level depends on whether new-business revenue can offset the margin decline in the core business."
  },
  "bull": [
   {
    "title": {
-    "ko": "갤럭시 플래그십·미드레인지 동반 성장으로 물량 확대 지속",
-    "en": "Sustained Volume Upside from Galaxy Flagship and Mid-Range Dual Growth"
+    "ko": "플래그십 무선충전 프리미엄화",
+    "en": "Flagship Wireless Charging Premiumization"
    },
    "body": {
-    "ko": "삼성전자는 갤럭시 S26 울트라 비중 확대와 A57·A37 신모델 출시를 병행해 2026년 모바일 매출 성장을 추진하고 있어, 위츠의 무선충전 모듈 공급 물량이 연간 증가세를 유지할 가능성이 높다. 2026년 1분기 매출이 약 549억원으로 역대 최대 수준에 근접한 것은 이 수혜가 이미 구체화되고 있음을 시사한다. AI폰 확산에 따른 고출력 충전(25W 이상) 채택 가속화는 단위 모듈 단가 상승으로 이어질 수 있어, 물량 증가와 믹스 개선의 이중 수혜도 기대된다.",
-    "en": "Samsung's plan to expand Galaxy S26 Ultra mix alongside mid-range A57/A37 launches is expected to sustain an annual increase in Wits' wireless charging module volumes through 2026. The approximately ₩54.9bn Q1 2026 revenue — near a record quarterly high — signals this tailwind is already materializing. Accelerating adoption of higher-wattage charging (25W+) in AI-enabled smartphones could also drive per-unit ASP improvement, providing a combined volume and product-mix benefit."
+    "ko": "갤럭시 S26 울트라에 25W 고출력 RX 모듈을 국내 최초로 공급하며 하이엔드 스펙 부품사 지위를 강화했다. 갤럭시 S26 시리즈는 국내 사전판매 135만대, 울트라 비중 약 70%로 프리미엄 수요가 견조했다. 보급형 모델까지 무선충전이 확대되면 모듈 공급 물량 기반이 넓어질 수 있다.",
+    "en": "Wits reinforced its status as a high-end component supplier by providing the domestic market's first 25W high-power RX module for the Galaxy S26 Ultra. The Galaxy S26 series recorded 1.35 million domestic pre-orders with the Ultra accounting for about 70%, showing solid premium demand. If wireless charging spreads further into mid-range models, the module supply volume base could widen."
    }
   },
   {
    "title": {
-    "ko": "일회성 통합 비용 소멸 → 영업 레버리지 본격 발현 기대",
-    "en": "One-Time Integration Costs Fading — Operating Leverage Potential Emerging"
+    "ko": "GS차지비 동맹을 통한 EV충전기 사업 확장",
+    "en": "EV Charger Expansion via GS Chargev Alliance"
    },
    "body": {
-    "ko": "2025년 4분기의 약 -20억원 영업손실은 사업권 인수 관련 고정비·판관비가 집중된 결과였으나, 2026년 1분기에 영업이익 약 15억원으로 빠르게 정상화됐다. LG 디스플레이 사업의 베트남 이전이 완료되면 국내 고정비가 절감되고, 위츠비나 자동화·수율 개선으로 원가율도 점진적으로 낮아질 수 있다. 매출 성장이 지속되는 가운데 고정비 부담이 줄면 영업 레버리지 효과가 발현되어, 이익 증가율이 매출 증가율을 상회하는 국면 진입이 가능하다.",
-    "en": "The approximately ₩2.0bn Q4 2025 operating loss was driven by concentrated integration-related fixed costs and SG&A spikes, which rapidly reversed to roughly ₩1.5bn operating profit in Q1 2026. Completion of the Vietnam migration for LG display operations would further reduce domestic fixed costs, while WITS VINA automation and yield gains should gradually lower the unit cost structure. If revenue growth continues alongside declining fixed-cost burdens, operating leverage could begin to amplify profit growth relative to revenue expansion."
+    "ko": "GS에너지·GS네오텍의 전략적 투자와 GS차지비 공급 협약으로 3년 내 매출 1,000억원이라는 구체적 목표가 제시됐다. 현대케피코에는 이미 7kW 완속충전기 공급을 시작했다. 향후 EV무선충전(WPT)까지 사업 영역을 넓히기 위한 기술·제도적 토대도 갖춰지고 있다.",
+    "en": "The strategic investment from GS Energy and GS Neotek plus the supply agreement with GS Chargev has set a concrete target of KRW 100bn in revenue within three years. Wits has already begun supplying 7kW slow chargers to Hyundai Kefico. Technical and institutional groundwork is also being laid to extend the business into EV wireless power transfer (WPT)."
    }
   },
   {
    "title": {
-    "ko": "전장·가전으로 고객 다변화 — 삼성 사이클 의존 구조적 완화 가능성",
-    "en": "Automotive and Home Appliance Diversification May Structurally Reduce Samsung Cycle Dependency"
+    "ko": "게이밍 디스플레이 등 고마진 신사업 다각화",
+    "en": "High-Margin Diversification into Gaming Displays"
    },
    "body": {
-    "ko": "글로벌 무선충전 시장에서 자동차 부문 매출 비중이 2026년 약 31.9%로 가장 높아지는 추세 속에서, 위츠는 KG모빌리티 전력통신제어 협력을 통해 전장 수익 기반을 구축하고 있다. LG전자 디스플레이 사업권 인수는 게이밍 모니터·가전 등 새로운 고객 기반을 확보하는 발판이 된다. 이 신사업들이 안정적인 수익 기여 단계로 진입할 경우, 삼성전자 스마트폰 사이클에 따른 연간 실적 변동성이 구조적으로 낮아질 수 있다.",
-    "en": "With automotive projected to account for approximately 31.9% of global wireless charging revenues in 2026 — the largest vertical share — Wits is building an automotive revenue base through its KG Mobility power control collaboration. The acquisition of LG Electronics' display business rights establishes a foothold in gaming monitors and home appliances. If these newer segments achieve stable profitability, Wits' exposure to Samsung's smartphone volume cycle would structurally diminish, reducing annual earnings volatility."
+    "ko": "켐트로닉스의 디스플레이 식각 기술을 접목한 커브드·미니LED 게이밍 디스플레이가 미국 카지노 기기업체향 공급을 확대하고 있다. 복수 증권사가 신규 고객사 확보와 선주문 물량 증가를 긍정적으로 평가했다. 대당 단가가 높은 니치 제품인 만큼 물량이 늘어나면 전사 마진 개선에 기여할 수 있는 구조다.",
+    "en": "Curved and mini-LED gaming displays, built on parent company Chemtronics' display etching technology, are expanding supply to U.S. casino equipment makers. Multiple brokerages have positively assessed the addition of new customers and rising advance orders. As a high-unit-price niche product, growing volume could contribute to company-wide margin improvement."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "삼성전자 집중도 — 단일 고객 의존의 구조적 리스크",
-    "en": "Samsung Concentration — Structural Risk of Single-Customer Dependency"
+    "ko": "얇아진 영업마진과 분기 변동성",
+    "en": "Thin Operating Margin and Quarterly Volatility"
    },
    "body": {
-    "ko": "매출의 압도적 비중이 삼성전자 갤럭시 시리즈향으로 구성돼 있어, 판매 부진·모델 변경·공급사 교체 등 어떤 변수에도 실적이 직접적으로 영향받는다. 삼성전자 MX 사업부는 메모리 가격 상승에 따른 원가 압박으로 2026년 수익률 감소가 불가피하다고 밝혔는데, 이는 공급망 부품 단가 인하 압력으로 위츠에 전가될 수 있다. 중국 무선충전 모듈 경쟁사의 원가 우위도 중장기 단가 하락 압력으로 상존한다.",
-    "en": "An overwhelming share of revenue is tied to Samsung Galaxy, meaning any slowdown in Galaxy sell-through, model specification changes, or supplier substitution would directly impact results. Samsung's MX division explicitly noted that rising memory costs will inevitably compress its own 2026 margins, potentially translating into component pricing pressure passed down to suppliers including Wits. Chinese wireless charging module competitors' structural cost advantages persist as a medium-to-long-term pricing overhang."
+    "ko": "영업이익률이 2023년 10.3%에서 2025년 1.5%로 낮아졌고, 2025년 4분기와 2026년 2분기에는 각각 영업손실을 기록했다. 매출 규모가 커졌음에도 이익의 질이 개선되지 못하고 있다는 뜻이다. 2026년 1분기의 순이익 급증도 영업이익 증가폭과 괴리가 있어 일회성 요인 가능성을 배제할 수 없다.",
+    "en": "Operating margin fell from 10.3% in 2023 to 1.5% in 2025, and the company posted operating losses in both Q4 2025 and Q2 2026. This means the quality of earnings has not improved even as revenue scale has grown. The sharp jump in Q1 2026 net profit also diverged from the modest rise in operating profit, so a one-off factor cannot be ruled out."
    }
   },
   {
    "title": {
-    "ko": "높은 레버리지·음의 영업현금흐름 — 재무 유연성 제약",
-    "en": "Elevated Leverage and Negative Operating Cash Flow — Constrained Financial Flexibility"
+    "ko": "2년 연속 마이너스 영업현금흐름",
+    "en": "Two Straight Years of Negative Operating Cash Flow"
    },
    "body": {
-    "ko": "2025년 부채비율 245%·영업현금흐름 약 -286억원은 추가 성장 투자나 금리 변동 시 재무 부담이 급격히 커질 수 있음을 시사한다. 차입금 만기 집중이나 차환 조건 변동이 발생할 경우 유동성 압박으로 이어질 수 있으며, 최악의 경우 추가 자본 조달(유상증자 등)로 기존 주주 지분이 희석될 가능성도 배제할 수 없다. 영업현금흐름의 플러스 전환이 확인되기 전까지 재무 구조 리스크는 시장 우려 요인으로 남을 수 있다.",
-    "en": "A 245% debt ratio and operating cash outflow of approximately −₩28.6bn in 2025 indicate that additional growth investments or interest rate changes could rapidly intensify financial stress. Concentration of debt maturities or deteriorating refinancing terms could introduce liquidity pressures, and in an adverse scenario, an equity offering that dilutes existing shareholders cannot be entirely ruled out. Until operating cash flow turns sustainably positive, balance-sheet risk will remain a concern for market participants."
+    "ko": "영업활동현금흐름은 2024년 -40억원, 2025년 -285억원으로 2년 연속 마이너스를 기록했다. 2023년 +203억원과 비교하면 현금창출력이 크게 약화된 상태다. 외형 성장이 오히려 재고·매출채권 등 운전자본 부담으로 이어지고 있을 가능성을 점검할 필요가 있다.",
+    "en": "Operating cash flow was negative for two consecutive years, at KRW -4.02bn in 2024 and KRW -28.57bn in 2025. Compared with the positive KRW 20.33bn in 2023, cash-generating capacity has weakened significantly. It is worth checking whether top-line growth is instead translating into a working-capital burden from inventory and receivables."
    }
   },
   {
    "title": {
-    "ko": "M&A 통합 리스크 — 복수 사업 동시 통합의 실행 불확실성",
-    "en": "M&A Integration Risk — Execution Uncertainty from Simultaneous Multi-Business Assimilation"
+    "ko": "신사업의 아직 작은 매출 기반",
+    "en": "Still-Small Revenue Base for New Businesses"
    },
    "body": {
-    "ko": "단기간 내 KG모빌리티 전력통신제어와 LG전자 디스플레이 사업권을 연속 인수해 포트폴리오가 빠르게 확장됐지만, LG 디스플레이 사업권의 공정가치가 아직 미확정 상태여서 재무제표에 추가 조정 가능성이 남아 있다. 전장·가전 신규 고객군에서의 수익 기여 안정화에는 추가 시간이 필요해 단기 수익성 불확실성이 이어질 수 있다. 베트남 이관 일정 지연이나 고용승계 비용 장기화 등 통합 과정상 리스크가 현실화될 경우 수익성 회복 시점이 후퇴할 수 있다.",
-    "en": "Rapid back-to-back acquisitions of KG Mobility's power control and LG Electronics' display businesses have expanded the portfolio quickly, but the fair value of the LG display acquisition has yet to be finalized, leaving residual balance-sheet adjustment risk. New customer segments — automotive and home appliance — may require additional time to achieve stable profitability, sustaining near-term earnings uncertainty. Delays in the Vietnam migration timeline or a prolonged tail of employee retention costs could push back the anticipated profitability recovery schedule."
+    "ko": "EV충전기 매출 1,000억원, 게이밍 디스플레이 매출 비중 10% 등은 회사·증권사가 제시한 목표치이며 현재 부문별 매출액이 검색으로 별도 확인되지는 않는다. EV충전 인프라 업계 전반은 보조금 통제와 원가 상승으로 다수 사업자가 적자를 면치 못하는 구조여서 제조 파트너인 위츠의 물량 확보 속도도 이런 업황에 영향을 받을 수 있다. 게이밍 디스플레이 역시 소수 고객사 의존도가 높은 초기 단계다.",
+    "en": "Targets such as KRW 100bn in EV charger revenue and a 10% gaming display revenue share are figures put forward by the company and brokerages, and current segment-level revenue could not be separately confirmed via search. The broader EV charging infrastructure industry is one where many operators struggle to turn a profit due to subsidy controls and rising costs, so the pace at which manufacturing partner Wits secures order volume could be affected by that industry backdrop. Gaming displays are also still at an early stage with high dependence on a small number of customers."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 및 수급 사이클 리스크",
-    "en": "Customer Concentration and Demand Cycle Risk"
+    "ko": "고객 집중도",
+    "en": "Customer Concentration"
    },
    "body": {
-    "ko": "삼성전자 갤럭시 시리즈의 연간 판매 사이클이 위츠의 분기별 실적 변동성을 거의 결정하는 구조여서, 글로벌 스마트폰 시장 위축이나 삼성의 점유율 변화가 즉각적인 매출 충격으로 이어진다. 갤럭시 신모델에서 무선충전 규격 변경이나 공급사 재편이 발생할 경우 위츠의 물량이 단기간에 크게 변동할 수 있다. 중국 경쟁사의 원가 우위와 삼성전자 자체의 원가 절감 압력이 맞물릴 경우 단가 하락 폭이 예상보다 커질 수 있다.",
-    "en": "Samsung Galaxy's annual volume cycle essentially determines Wits' quarterly earnings trajectory, making any contraction in the global smartphone market or Samsung market share erosion a direct revenue shock. A specification change or supplier reshuffle within a key Galaxy model could rapidly alter Wits' shipment volumes. If Chinese competitors' cost advantages intersect with Samsung's own cost-reduction initiatives, the magnitude of unit price declines could exceed current expectations."
+    "ko": "본업인 무선충전 모듈은 삼성전자 갤럭시 시리즈 판매 사이클에 크게 의존하고 있어, 특정 모델의 판매 부진이 실적에 직접 영향을 줄 수 있다. KB증권도 주요 고객사의 모바일 기기 판매 부진을 실적 변동 요인으로 지목했다. 게이밍 디스플레이 역시 아루제 등 소수 고객사 비중이 높다.",
+    "en": "The core wireless charging module business depends heavily on the sales cycle of Samsung Electronics' Galaxy series, so weak sales of a particular model could directly affect results. KB Securities also flagged weak device sales at key customers as a factor that could cause earnings volatility. Gaming displays likewise carry high concentration in a small number of customers such as Aruze."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지 및 유동성 리스크",
-    "en": "Financial Leverage and Liquidity Risk"
+    "ko": "재무 레버리지 확대",
+    "en": "Rising Financial Leverage"
    },
    "body": {
-    "ko": "부채비율 245%·영업현금흐름 마이너스 상태에서 차입금 만기 집중 또는 금리 상승이 발생하면 이자 비용이 이익을 잠식하고 유동성 위기로 비화될 수 있다. 추가 M&A나 설비 투자 수요가 생길 경우 외부 자금 조달에 의존할 수밖에 없으며, 이는 차입 조건 악화 또는 신주 발행에 따른 지분 희석 위험을 동반한다. 2025년의 대규모 운전자본 증가가 재고·미수금 관리 실패에서 비롯된 것이라면 구조적 문제로 해석될 수 있어 원인 파악이 중요하다.",
-    "en": "With a 245% debt ratio and negative operating cash flow, a concentration of debt maturities or an increase in interest rates could cause financing costs to erode the earnings base and potentially trigger a liquidity event. Any need for additional M&A or capex investment would require external funding, introducing the risk of deteriorating borrowing terms or equity dilution via new share issuance. If the large 2025 working capital build reflects poor receivables or inventory management, it may signal a structural rather than transitory issue."
+    "ko": "부채비율이 2024년 139.6%에서 2025년 245.0%로 크게 높아졌고, 2년 연속 영업현금흐름이 마이너스를 기록해 외부 자금조달 의존도가 커질 수 있다. GS 대상 제3자배정 유상증자 등 자본 조달이 이어지고 있어 향후 주주가치 희석 가능성도 함께 살펴야 한다.",
+    "en": "The debt ratio rose sharply from 139.6% in 2024 to 245.0% in 2025, and two consecutive years of negative operating cash flow could increase reliance on external financing. Capital raises such as the third-party share issuance to GS have continued, so the potential for shareholder dilution going forward is also worth monitoring."
    }
   },
   {
    "cat": {
-    "ko": "기술 전환 및 표준 변화 리스크",
-    "en": "Technology Transition and Standards Change Risk"
+    "ko": "정책·보조금 민감도",
+    "en": "Policy and Subsidy Sensitivity"
    },
    "body": {
-    "ko": "Qi·MagSafe 등 무선충전 국제 표준의 세대 교체나 충전 방식의 근본적 변화가 이루어질 경우, 기존 특허와 양산 설비의 일부가 진부화될 위험이 있다. 전기차 무선충전 표준이 아직 통일되지 않은 상태여서 대규모 수주까지 시간이 걸릴 수 있으며, 경쟁사가 먼저 표준 채택을 확보할 경우 시장 진입 타이밍을 놓칠 수 있다. AI폰·폴더블 등 새로운 폼팩터에 적합한 충전 솔루션을 경쟁사보다 빠르게 개발·납품하지 못하면 삼성 공급망 내 점유율 유지가 어려워질 수 있다.",
-    "en": "A generational shift in wireless charging standards (Qi, MagSafe, etc.) or fundamental changes in charging methodology could partially obsolete existing patents and production equipment. EV wireless charging standards remain fragmented, potentially delaying large-scale order wins and risking competitors securing standard adoption ahead of Wits. Failure to develop and qualify wireless charging solutions for new form factors — AI phones, foldables — faster than competitors could erode the company's supply share within Samsung's evolving product lineup."
+    "ko": "EV충전기 시장은 환경부의 충전요금 통제와 보조금 정책에 실적이 민감하게 반응하는 구조로, 완속충전기 사업자 다수가 적자를 면치 못하고 있다는 업계 분석도 있다. 정부의 EV무선충전 규제 완화·인증 절차 개선 속도 역시 신사업 상용화 시점에 영향을 줄 수 있다.",
+    "en": "The EV charger market is one where results are sensitive to government-controlled charging fees and subsidy policy, and industry analysis has noted that many slow-charger operators struggle to turn a profit. The pace of government deregulation and certification-process improvements for EV wireless charging could also affect the timing of new-business commercialization."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7월 말 (2026년 2분기 실적 발표)",
-    "en": "Late July 2026 (Q2 2026 Earnings Release)"
+    "ko": "2026년 10월 초(G2E 라스베이거스 전시회)",
+    "en": "Early October 2026 (G2E Las Vegas exhibition)"
    },
    "what": {
-    "ko": "갤럭시 S26 출하 성수기인 2분기의 매출·영업이익률을 점검해 1분기 회복세가 지속되는지 확인한다. 4분기 일회성 비용의 완전 소멸 여부와 신규 사업(KG모빌리티·LG 디스플레이)의 수익 기여도 추이가 핵심 지표다.",
-    "en": "Verify whether Q1 2026's recovery carries into Q2 — the peak Galaxy S26 shipment quarter — by tracking revenue and OPM. Full dissipation of Q4 2025 one-time charges and the profit contribution trend from new businesses (KG Mobility, LG display) are the key metrics to watch."
+    "ko": "게이밍 디스플레이 신규 고객사 확보 및 선주문 물량 확대 여부를 확인할 시점이다.",
+    "en": "A point to check whether Wits secures new gaming display customers and expands advance-order volume."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (갤럭시 폴드·플립·FE 및 워치 시리즈 출시)",
-    "en": "H2 2026 (Galaxy Fold/Flip/FE and Watch Series Launches)"
+    "ko": "2026년 11월 중순(3분기 실적 발표 예상)",
+    "en": "Mid-November 2026 (expected Q3 earnings release)"
    },
    "what": {
-    "ko": "폴더블·갤럭시 FE 등 하반기 주요 모델에서 위츠 무선충전 모듈 탑재 여부와 물량을 확인한다. 2025년 3분기 매출 약 557억원을 기준점으로 삼아 하반기 성장 지속 여부를 평가할 수 있다.",
-    "en": "Confirm Wits' module inclusion and shipment volumes in second-half Samsung launches including Foldable, FE, and Watch series. The ~₩55.7bn Q3 2025 revenue serves as a useful benchmark for assessing whether H2 2026 momentum is growing or stalling."
+    "ko": "2026년 2분기의 영업손실·순손실이 일회성인지 지속되는지, EV충전기·게이밍 디스플레이의 매출 기여도가 얼마나 늘었는지 확인해야 한다.",
+    "en": "Investors should check whether the Q2 2026 operating and net losses were one-off or persisted, and how much EV chargers and gaming displays contributed to revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 연내 (LG 디스플레이 사업권 공정가치 확정 DART 공시)",
-    "en": "During 2026 (DART Disclosure: Final Fair-Value of LG Display Business Rights)"
+    "ko": "2026년 하반기~2027년 상반기",
+    "en": "H2 2026 through H1 2027"
    },
    "what": {
-    "ko": "비욘드아이를 통해 인수한 LG전자 디스플레이 사업권의 공정가치가 확정되면 재무제표에 반영되고 자기자본·부채비율이 추가 변동될 수 있다. DART 공시를 통해 확정 금액과 인수 조건 전체 규모를 재검토해야 한다.",
-    "en": "The final fair-value determination of the LG Electronics display business rights will be reflected in financials, with potential adjustments to equity and the debt ratio. The DART filing disclosing this determination warrants close scrutiny to fully assess acquisition terms and total integration cost."
+    "ko": "GS차지비향 EV충전기 공급 물량 확대와 3년 내 매출 1,000억원 목표의 달성 경로를 점검할 필요가 있다.",
+    "en": "Progress toward expanding EV charger supply volume to GS Chargev and the path to the three-year KRW 100bn revenue target should be monitored."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 초 (베트남 LG 디스플레이 사업 이전 완료 여부)",
-    "en": "H2 2026–Early 2027 (Completion of Vietnam Migration for LG Display Operations)"
+    "ko": "2026년 하반기",
+    "en": "H2 2026"
    },
    "what": {
-    "ko": "LG 디스플레이 관련 사업의 베트남 이전이 실제로 완료되면 국내 고정비가 감소하고 마진 개선 속도가 빨라질 수 있다. 이관 완료 시점 및 관련 비용 확정 여부를 DART 공시와 분기 실적 발표를 통해 추적해야 한다.",
-    "en": "Actual completion of the LG display operations' Vietnam transfer would reduce domestic fixed costs and accelerate margin recovery. Track the stated completion timeline and associated cost confirmation through DART disclosures and quarterly earnings commentary."
+    "ko": "보급형 스마트폰의 무선충전 탑재 확대 여부와 삼성전자 신모델향 추가 공급 계약 여부를 확인해야 한다.",
+    "en": "Watch for whether wireless charging spreads further into mid-range smartphones and whether Wits secures additional supply contracts for new Samsung Electronics models."
    }
   },
   {
    "when": {
-    "ko": "2026년 말~2027년 초 (연간 부채비율·영업현금흐름 방향성 확인)",
-    "en": "End-2026 to Early 2027 (Annual Debt Ratio and Operating Cash Flow Directional Check)"
+    "ko": "2026년 하반기 이후",
+    "en": "From H2 2026 onward"
    },
    "what": {
-    "ko": "2025년 급등한 부채비율(245%)이 2026년 말 기준으로 하락 궤도에 진입했는지, 영업현금흐름이 플러스로 전환됐는지를 연간 결산 데이터로 확인한다. 이 두 지표의 개선이 확인돼야 재무 건전성에 대한 시장 우려가 구조적으로 해소될 수 있다.",
-    "en": "Confirm via full-year 2026 financials whether the 245% debt ratio has entered a declining trajectory and whether operating cash flow has turned positive. Improvement in both indicators is required to structurally alleviate market concerns about the company's financial health."
+    "ko": "KG모빌리티와의 EV무선충전 자동발렛 상용화 로드맵 진전과 로봇용 전력전송 사업화 구체화 여부를 지켜봐야 한다.",
+    "en": "Progress on the EV wireless charging and automated valet commercialization roadmap with KG Mobility, and any concretization of the robotics power-transmission business, should be watched."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "위츠는 삼성전자 무선충전 에코시스템에서 독보적인 1차 협력사 지위를 보유해 갤럭시 성수기마다 직접 수혜를 받는 구조적 강점이 있다. 2025년 매출이 약 86% 급증하며 외형 도약을 달성했으나, M&A 통합 비용과 차입 확대로 수익성·재무 지표가 동시에 역행하는 부조화가 드러났다. 2026년 1분기 분기 최고 순이익 달성은 갤럭시 S26 효과와 일회성 비용 소멸이 맞물린 회복 신호이나, 이 궤도가 지속될지는 향후 분기 실적으로 검증해야 한다. 전장·가전·EV 충전 분야로의 다각화는 중장기 성장성과 삼성 의존도 완화를 동시에 추구하는 전략이지만, 복수 M&A의 통합 완결과 재무 레버리지 정상화에는 추가 시간이 필요하다. 부채비율 하락 궤도 진입, 영업현금흐름 플러스 전환, 영업이익률 회복이라는 세 가지 확인 포인트를 분기별로 점검하는 것이 합리적 접근 방식이다.",
-   "en": "Wits Co. holds a structurally privileged position as Samsung Electronics' tier-1 wireless charging supplier, capturing direct upside with every Galaxy demand cycle. The approximately 86% revenue surge in 2025 demonstrated clear top-line momentum, but M&A integration costs and sharply rising leverage simultaneously pressured both profitability and balance-sheet metrics — a notable divergence between scale and quality of growth. The record quarterly net income achieved in Q1 2026 — as Galaxy S26 demand ramped and one-time charges abated — is an encouraging recovery signal, but its sustainability needs to be validated over subsequent quarters. Diversification into automotive, home appliance, and EV charging pursues both medium-term growth and a reduction in single-customer concentration, though completing the integration of multiple acquisitions and normalizing financial leverage will take additional time. Monitoring three quarterly checkpoints — a declining debt ratio trajectory, a return to positive operating cash flow, and a sustained recovery in operating margin — provides a rational framework for tracking the evolution of the investment case."
+   "ko": "위츠는 삼성전자 갤럭시 무선충전 모듈이라는 안정적 본업 위에 EV충전기·게이밍 디스플레이라는 두 개의 신사업 축을 쌓고 있는 전환기 기업이다. 2025년 매출은 전년 대비 크게 늘었지만 영업이익률은 1.5%까지 낮아졌고, 2025년 4분기와 2026년 2분기에는 영업손실을 기록하는 등 분기별 편차가 크다. 2026년 1분기의 순이익 급증과 2분기의 순손실이 한 해 안에서 교차한 점은 실적의 질을 판단할 때 분기 단위보다 연간·다년 흐름을 함께 봐야 함을 시사한다. GS차지비와의 협력, 갤럭시 S26 울트라향 25W 모듈 공급, 게이밍 디스플레이 신규 고객사 확보 등은 성장 스토리의 근거가 되지만, 대부분 회사·증권사가 제시한 목표치이며 부문별 매출 기여는 아직 공시로 세분화되어 확인되지 않는다. 영업현금흐름이 2년 연속 마이너스를 기록하고 부채비율이 245%까지 오른 점은 외형 확장의 재무적 대가로 함께 살펴봐야 할 부분이다. 이후 실적 발표와 EV충전기·게이밍 디스플레이의 매출 기여 확대 속도가 신사업 전환의 성패를 가늠하는 핵심 변수가 될 것으로 보인다.",
+   "en": "Wits is a company in transition, building two new growth pillars in EV chargers and gaming displays on top of its stable core business of wireless charging modules for Samsung Electronics Galaxy devices. 2025 revenue grew sharply year over year, but operating margin fell to 1.5%, and the company posted operating losses in both Q4 2025 and Q2 2026, reflecting large quarterly swings. The fact that a sharp Q1 2026 net profit and a Q2 2026 net loss occurred within the same year suggests that judging earnings quality requires looking at annual and multi-year trends rather than single quarters. The GS Chargev partnership, the 25W module supply for the Galaxy S26 Ultra, and new gaming display customer wins provide a basis for the growth narrative, but most of these are targets set by the company or brokerages, and segment-level revenue contribution has not yet been separately confirmed through disclosures. Operating cash flow being negative for two straight years and the debt ratio rising to 245% are the financial cost of top-line expansion that should be weighed alongside the growth story. Going forward, upcoming earnings releases and the pace at which EV chargers and gaming displays contribute to revenue will be the key variables in determining whether the new-business transition succeeds."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A459100",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02689606645414152",
+  "https://www.butler.works/ko/companies/01445440",
+  "https://marketin.edaily.co.kr/News/ReadE?newsId=02689606645414152",
+  "https://v.daum.net/v/20260408083704113",
   "https://m.irgo.co.kr/IR-COMP/459100/%EC%9C%84%EC%B8%A0-IR-PAGE",
-  "https://finance.finup.co.kr/Stock/459100",
-  "https://valueline.co.kr/finance/summary/459100",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03558806645354784",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01718726642108896",
+  "https://www.venturesquare.net/1075267",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Corp.asp?gicode=A459100&NewMenuID=102",
+  "https://news.infostock.co.kr/a",
   "https://www.investing.com/equities/wits",
-  "https://dealsite.co.kr/articles/156927",
-  "https://www.datatooza.com/article/20250905081406779252ef3eafd8_80",
-  "https://m.finance.daum.net/quotes/A459100/news/stock/20241120175701030",
-  "https://alphasquare.co.kr/home/stock-summary?code=459100",
-  "https://www.ewits.co.kr/",
-  "https://kind.krx.co.kr/external/2024/03/18/001292/20240318005661/11011.htm",
-  "https://moneypie.net/wiki/v/%EC%BC%90%ED%8A%B8%EB%A1%9C%EB%8B%89%EC%8A%A4",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/witsolutions",
-  "https://kind.krx.co.kr/external/2023/11/14/001009/20231114002092/11013.htm",
-  "https://www.witsolutions.co.kr/",
-  "https://www.jobkorea.co.kr/company/45805852",
-  "https://www.hanaw.com/main/research/research/download.cmd?bbsSeq=1274899&attachFileSeq=1&bbsId=&dbType=&bbsCd=2210"
+  "https://valueline.co.kr/finance/summary/459100",
+  "https://www.betanews.net/article/view/beta202608130001",
+  "https://www.stockplus.com/m/stocks/KOREA-A459100",
+  "https://cbonds.com/company/588929/",
+  "https://rc.kbsec.com/main.able",
+  "https://kbthink.com/investment.html",
+  "https://rc.kbsec.com/today/index.able"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "459100",
  "name": "위츠",
  "name_en": "WITS Co., Ltd.",
@@ -232,11 +233,11 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 02:25",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:40",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -270,6 +271,23 @@
     "opm": 2.4,
     "roe": 3.8,
     "debt_ratio": 139.6
+   },
+   {
+    "year": 2023,
+    "rev": 99533806983,
+    "op": 10254455371,
+    "np": 7611556263,
+    "np_owner": 7611556263,
+    "equity": 25573707314,
+    "equity_owner": 25573707314,
+    "equity_nci": null,
+    "liab": 47959404180,
+    "cfo": 20333336968,
+    "eps_basic": 750,
+    "src": "전기 비교치",
+    "opm": 10.3,
+    "roe": 29.8,
+    "debt_ratio": 187.5
    }
   ],
   "quarterly": [
@@ -305,25 +323,26 @@
    }
   ],
   "valuation": {
-   "price": 4295,
-   "mcap": 0.0578,
+   "price": 4050,
+   "mcap": 0.0545,
    "shares": 13466100,
    "total_shares": 13466100,
    "wavg_shares": 12721052,
-   "per": 43.827,
-   "eps": 98,
-   "pbr": 1.2941,
-   "bps": 3319,
+   "per": 40.909,
+   "eps": 99,
+   "pbr": 1.2199,
+   "bps": 3320,
    "roe_ttm": 3.2,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 1253102705,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.27,
+   "eps_src": "순이익÷주식수",
+   "pbr_krx": 1.2,
    "bps_krx": 3373.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 300.0,
-   "div": 6.98
+   "div": 7.41
   }
  }
 }

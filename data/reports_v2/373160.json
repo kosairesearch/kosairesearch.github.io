@@ -1,229 +1,220 @@
 {
  "title": {
-  "ko": "수익 체질 전환 완료, 글로벌·B2G가 다음 성장 축",
-  "en": "Structural Turnaround Complete — Global and B2G Drive the Next Growth Phase"
+  "ko": "흑자전환 후 AX 확장, 2분기 다시 적자",
+  "en": "After Turning Profitable, AX Pivot Meets a Q2 Loss"
  },
  "lead": {
-  "ko": "2024년 영업적자에서 2025년 사상 최대 영업이익으로 전환한 데이원컴퍼니는 OSMU 전략과 AI 현지화 기술로 공헌이익률 50%를 최초 돌파했으며, KAIST 국방 AI 컨소시엄 참여와 6개국 추가 글로벌 진출이라는 두 가지 성장 모멘텀을 2026년 핵심 과제로 제시하고 있다.",
-  "en": "Having reversed from an operating loss in 2024 to a record operating profit in 2025 via its OSMU strategy and AI localization technology, Day1 Company crossed the 50% contribution margin threshold for the first time—with participation in the KAIST Defense AI consortium and expansion into 6 additional global markets set as the two key growth catalysts for 2026."
+  "ko": "성인교육 기업 데이원컴퍼니는 2025년 연간 기준 흑자 전환에 성공했지만 2026년 2분기 다시 영업손실로 돌아섰고, 같은 시기 기업용 AI전환(AX) 사업 확장과 대규모 개인정보 유출 사고가 겹쳐 있다.",
+  "en": "Adult education company Day1 Company turned profitable on an annual basis in 2025 but swung back to an operating loss in the second quarter of 2026, a period that also saw both its push into enterprise AI transformation (AX) and a large-scale personal data breach."
  },
  "keypoints": [
   {
-   "ko": "2025년 연간 영업이익 약 46억 원으로 흑자 전환 및 사상 최대 달성, 부채비율도 157.8%→80.3%로 재무구조 대폭 개선",
-   "en": "FY2025 operating profit reached a company-record ~KRW 4.6 bn (turning profitable), with the debt ratio improving sharply from 157.8% to 80.3%"
+   "ko": "2025년 연결 매출 1,238.6억원, 영업이익 45.7억원(영업이익률 3.7%)으로 2024년 영업손실에서 흑자 전환했다.",
+   "en": "In 2025, consolidated revenue was KRW 123.86 billion and operating profit was KRW 4.57 billion (3.7% margin), turning profitable after a 2024 operating loss."
   },
   {
-   "ko": "OSMU 전략으로 공헌이익률 2022년 32%→2026년 1분기 53.1%(사상 최고), B2B·B2G 부문 공헌이익률 60% 초과 달성",
-   "en": "Contribution margin surged from 32% in 2022 to an all-time high of 53.1% in Q1 2026 via OSMU strategy; B2B/B2G contribution margin exceeded 60%"
+   "ko": "2026년 2분기 매출 267.9억원, 영업손실 30.4억원으로 최근 4개 분기 중 유일하게 적자를 기록했다.",
+   "en": "In Q2 2026, revenue was KRW 26.79 billion with an operating loss of KRW 3.04 billion, the only loss quarter in the trailing four-quarter window."
   },
   {
-   "ko": "패스트캠퍼스, KAIST 주관 '2026 국방 AI 인재양성 사업' 컨소시엄 참여 — 5년간 총 225억 원 규모 정부 수주 파이프라인 가시화",
-   "en": "Fast Campus joins KAIST-led '2026 Defense AI Talent Development' consortium — KRW 22.5 bn government contract pipeline over 5 years becoming visible"
+   "ko": "엔터프라이즈 AX 기업 스페이스와이를 인수하고 'DAY1 AI Deployment Company' 사업을 출범, 100명 규모 공개채용을 진행 중이다.",
+   "en": "The company acquired enterprise AX firm Spacewy and launched the 'DAY1 AI Deployment Company' business, running a public hiring drive for around 100 professionals."
   },
   {
-   "ko": "글로벌 매출(일본·미국·대만)이 2025년 3분기 전년 동기 대비 64% 급증, 2026년 6개국 추가 진출로 전사 성장 핵심 동력화 추진",
-   "en": "Global revenue (Japan, US, Taiwan) surged 64% YoY in Q3 2025; targeting 6 additional country entries in 2026 to make global the company's primary growth driver"
+   "ko": "2026년 5~6월 깃허브 마스터 계정 키 탈취로 인한 개인정보 유출 사고가 발생해 이름·연락처 등이 노출됐고, 계좌·여권번호 등 추가 노출 가능성도 확인됐다.",
+   "en": "A May-June 2026 breach stemming from a stolen GitHub master account key exposed names and contact information, with possible additional exposure of bank account and passport data later confirmed."
   },
   {
-   "ko": "2026년 5월 GitHub 마스터키 탈취 개인정보 유출 사고 발생, IPO(공모가 1만 3,000원) 대비 주가 대폭 하락 상태로 FI 엑시트 부담 상존",
-   "en": "GitHub master key breach (May 2026) caused a personal data leak; share price remains well below the IPO price of KRW 13,000, with ongoing financial investor exit overhang"
+   "ko": "2023~2025년 부채비율이 -212.1%→157.8%→80.3%로 개선되며 상장 전후 자본구조가 재편됐다.",
+   "en": "The debt ratio improved from -212.1% to 157.8% to 80.3% across 2023-2025, reflecting a reworked capital structure around the listing."
   }
  ],
  "business": {
-  "ko": "데이원컴퍼니는 2014년 사내벤처로 출발해 2017년 법인으로 전환한 성인 실무교육 콘텐츠 기업으로, 2025년 1월 코스닥에 상장했다. 주요 브랜드는 IT·직무 교육 플랫폼 '패스트캠퍼스', 크리에이티브 직업교육 '콜로소', IT 부트캠프 '스노우볼', 어학 플랫폼 '레모네이드' 등이다. 사업은 B2C(개인 수강생), B2B(기업 맞춤형 교육), B2G2C(K-디지털 트레이닝 등 정부 지원 교육), 글로벌(해외 현지화 콘텐츠)의 4개 축으로 구성된다. 핵심 전략은 'OSMU(원소스 멀티유즈)'로, B2C에서 검증된 콘텐츠를 B2B·B2G·글로벌에 추가 제작비 없이 재활용해 수익을 확장한다. 매출은 구독료·강의 수수료·기업 계약·정부 과정 운영비 등으로 구성되며, 콘텐츠 기획·제작은 자체 전문 조직이 주도하고 강사는 스타강사보다 현업 실무자를 활용해 비용 효율성을 높였다. 대표 CEO 이강민은 IPO 당시 \"B2C에서 손실 없이 콘텐츠를 만들고, B2B·B2G·해외에서 이익을 만드는 구조\"를 핵심 비즈니스 모델로 강조했다. 2026년 1분기 기준 매출 구성은 교육서비스 약 95%, 기타 3%, 교재 2%로 교육서비스가 압도적이다. 경쟁사로는 클래스101(2024년 흑자 전환)·인프런(이용자 150만 명 돌파)이 있으며, 데이원컴퍼니는 업종 내 최대 매출 규모와 B2B·B2G·글로벌 멀티채널 구조로 차별화한다. 현재 일본·미국·대만에 진출해 있으며, 캐나다·영국·프랑스·호주·태국·중국 추가 진출을 연내 추진 중이다.",
-  "en": "Day1 Company originated as an in-house venture in 2014, incorporated as a standalone entity in 2017, and listed on KOSDAQ in January 2025. Key brands include 'Fast Campus' (IT and job-skills education), 'Coloso' (creative professional training), 'Snowball' (IT bootcamp), and 'Lemonade' (language learning). Operations span four pillars: B2C (individual learners), B2B (corporate training), B2G2C (government-supported programs such as K-Digital Training), and Global (localized overseas content). The core strategy is OSMU (One Source Multi Use), which recycles B2C-validated content across B2B, B2G, and global channels without incremental production costs. Revenue comes from subscriptions, course fees, enterprise contracts, and government program operations. Content planning and production are handled in-house, and practicing professionals are used as instructors rather than star lecturers to improve cost efficiency. The CEO articulated a model where B2C generates content without losses while B2B, B2G, and overseas markets generate profits. As of Q1 2026, education services account for approximately 95% of revenue. Competitors include Class101 (turned profitable in 2024) and Inflearn (over 1.5 million users); Day1 differentiates through the largest revenue base in the sector and its multi-channel B2B/B2G/Global structure. The company currently operates in Japan, the US, and Taiwan, with plans to enter Canada, the UK, France, Australia, Thailand, and China within 2026."
+  "ko": "데이원컴퍼니는 성인을 대상으로 학습 콘텐츠를 기획·개발·유통하는 실무교육 기업으로, 개인(B2C)·기업(B2B)·정부 유관기관(B2G2C)·해외(Global) 네 개 사업 영역으로 조직을 구성하고 있다. 대표 브랜드로는 AI·디지털 실무 교육을 담당하는 패스트캠퍼스, 디자인·영상·미용·요리 등 창의·예술 분야의 콜로소, IT·대기업 취업 연계 부트캠프인 제로베이스, 그리고 마이라이트·PODO 등이 있다. 2024년 기준 국내 B2C 부문이 778억원으로 매출 성장을 견인했고 B2B·B2G 부문은 합산 348억원, 해외 사업은 151억원으로 전체의 약 12%를 차지했다. B2B 사업은 원소스 멀티유즈 전략으로 기업 맞춤형 교육과 온라인 구독 서비스를 제공하며, B2G2C 사업은 K-디지털 트레이닝 등 정부의 디지털 인재 양성 사업에 참여한다. 최근 회사는 엔터프라이즈 AX 기업 스페이스와이를 인수하며 기존 교육 역량에 AI 에이전트 구축·현장 적용(FDE) 역량을 결합한 'DAY1 AI Deployment Company' 사업을 신설했다. 이와 함께 2026년 3월에는 신해동·김동혁 공동대표 체제로 전환하고 기존 대표였던 이강민은 최고AI책임자(CAIO)로 이동해 조직 구조를 개편했다. 다만 2026년 5~9일 시스템에 최초 침입이 발생, 6월 초 인지된 대규모 개인정보 유출 사고로 이름·이메일·전화번호·암호화된 비밀번호 등이 노출되었고 이후 조사 과정에서 계좌번호·여권번호 등 금융·신분 정보의 추가 노출 가능성도 확인되어 신뢰 회복이 과제로 남아 있다.",
+  "en": "Day1 Company plans, develops, and distributes learning content for adults, organizing its business into four areas: individual (B2C), corporate (B2B), government-affiliated institutions (B2G2C), and overseas (Global). Its flagship brands include Fast Campus for AI and digital practical training, Colosso for design, video, beauty, and culinary fields, Zero Base for IT and large-corporate job-linked bootcamps, and MyLight and PODO. As of 2024, the domestic B2C segment generated KRW 77.8 billion and drove revenue growth, while combined B2B/B2G revenue was KRW 34.8 billion and overseas business was KRW 15.1 billion, roughly 12% of total revenue. The B2B business applies an original-source, multi-use strategy to provide customized corporate training and online subscription services, while B2G2C participates in government digital-talent programs such as K-Digital Training. The company recently acquired enterprise AX firm Spacewy and launched a new 'DAY1 AI Deployment Company' business that combines its existing education capabilities with AI agent-building and field deployment (FDE) capabilities. In March 2026 it also shifted to a co-CEO structure under Shin Hae-dong and Kim Dong-hyuk, with former CEO Lee Kang-min moving to Chief AI Officer to lead an organizational restructuring. However, a system intrusion first occurring in May 2026 led to a large-scale personal data breach recognized in early June, exposing names, emails, phone numbers, and encrypted passwords, with subsequent investigation confirming possible additional exposure of bank account and passport information, leaving trust recovery as an outstanding task."
  },
  "earnings": {
-  "ko": "2024년 연결 매출은 약 1,277억 원이었으나 2025년 약 1,239억 원으로 소폭(-2.9%) 감소했다. 이는 2025년 1분기 수익 인식 기준 변경에 따른 일시적 영향으로, 본질적 사업 축소와는 구분된다. 핵심 변화는 수익성이다: 영업이익이 2024년 약 -2.9억 원(영업손실, 영업이익률 -0.2%)에서 2025년 약 45.7억 원(영업이익률 3.7%)으로 사상 최대 흑자 전환했다. 당기순이익도 2024년 약 -16.1억 원에서 2025년 약 47.4억 원으로 전환됐으며, 부채비율이 157.8%→80.3%로 낮아져 재무 안정성이 크게 강화됐다. 분기별로는 2025년 1분기 매출 약 271억 원·영업손실 약 12.8억 원으로 출발했지만, 2분기(매출 약 292억 원·영업이익 약 4억 원)에 흑자 전환했다. 3분기는 매출 약 337억 원·영업이익 약 34.3억 원으로 분기 최대를 기록했으며, 4분기에도 매출 약 339억 원·영업이익 약 20.2억 원으로 흑자 기조를 유지했다. 2026년 1분기는 매출 약 303억 원(전년 동기 대비 약 12% 증가)·영업이익 약 3.9억 원으로, 계절적으로 약한 분기임에도 흑자를 유지했다. 공헌이익률은 2022년 32.4%→2023년 38.1%→2024년 41.7%에서 2025년 3분기 51%로 지속 상승했고, 2026년 1분기에 53.1%로 사상 최고치를 경신했다. 영업현금흐름도 2024년 약 30억 원에서 2025년 약 83억 원으로 약 2.8배 확대되며 이익의 현금 전환력이 입증됐다.",
-  "en": "Consolidated revenue declined slightly from ~KRW 127.7 bn in 2024 to ~KRW 123.9 bn in 2025 (-2.9%), driven primarily by a one-time impact from a change in revenue recognition standards in Q1 2025—distinct from any fundamental business contraction. The pivotal shift was in profitability: operating profit swung from ~KRW -2.9 bn in 2024 (OPM: -0.2%) to a record ~KRW 4.6 bn in 2025 (OPM: 3.7%). Net income reversed from ~KRW -1.6 bn in 2024 to ~KRW 4.7 bn in 2025, while the debt ratio dropped from 157.8% to 80.3%, significantly strengthening the balance sheet. On a quarterly basis, Q1 2025 started with ~KRW 27.1 bn revenue and an operating loss of ~KRW 1.3 bn, but the company returned to profitability in Q2 (~KRW 29.2 bn revenue, ~KRW 0.4 bn operating profit). Q3 2025 was the standout quarter with ~KRW 33.7 bn revenue and a then-record ~KRW 3.4 bn operating profit, and Q4 2025 sustained the positive trend with ~KRW 33.9 bn revenue and ~KRW 2.0 bn operating profit. Q1 2026 delivered ~KRW 30.3 bn revenue (up ~12% YoY) and ~KRW 0.4 bn operating profit, maintaining profitability despite being a seasonally weaker quarter. The contribution margin rose steadily from 32.4% in 2022 through 38.1% (2023) and 41.7% (2024) to 51% in Q3 2025, reaching an all-time high of 53.1% in Q1 2026. Operating cash flow expanded from ~KRW 3.0 bn in 2024 to ~KRW 8.3 bn in 2025 (~2.8x), confirming the quality of the earnings improvement."
+  "ko": "연간 실적을 보면 2023년 매출 1,165.9억원, 영업이익 11.2억원(영업이익률 1.0%)이었으나 순이익은 -79.1억원의 큰 손실을 기록했다. 2024년에는 매출이 1,276.8억원으로 늘었음에도 영업손실 -2.9억원, 순손실 -16.1억원으로 영업 단계에서 적자로 전환했다. 2025년에는 매출이 1,238.6억원으로 소폭 줄었지만 영업이익 45.7억원(영업이익률 3.7%), 순이익 47.4억원을 기록하며 연간 기준 흑자 전환에 성공했다. 분기별로는 2025년 2분기 매출 291.8억원에 영업이익 4.1억원(마진 약 1.4%)으로 낮은 수익성을 보이다가, 3분기에는 매출 337.0억원, 영업이익 34.3억원(마진 약 10.2%)으로 크게 개선됐고, 4분기에도 매출 338.8억원, 영업이익 20.2억원(마진 약 6.0%)의 흑자 흐름이 이어졌다. 그러나 2026년 1분기에는 매출 303.2억원, 영업이익 3.9억원(마진 약 1.3%)으로 다시 낮은 수익성으로 되돌아갔고, 2분기에는 매출이 267.9억원으로 줄어든 가운데 영업손실 -30.4억원, 순손실 -31.6억원을 기록하며 최근 4개 분기 창 중 유일하게 적자로 전환했다. 이 시기는 5~6월 발생한 대규모 개인정보 유출 사고 공지·조사 시점과 겹치는데, 매출 감소와 손실 확대가 일회성 비용 또는 사고 대응 관련 요인과 얼마나 연관되는지는 아직 공시상 명확히 구분되지 않았다. 현금흐름 측면에서는 영업활동현금흐름이 2023년 134.5억원, 2024년 30.0억원, 2025년 82.8억원으로 순이익 적자 연도에도 양(+)의 현금창출력을 유지해 왔다는 점이 특징적이다.",
+  "en": "On an annual basis, 2023 revenue was KRW 116.59 billion with operating profit of KRW 1.12 billion (1.0% margin), yet net income showed a large loss of KRW -7.91 billion. In 2024, despite revenue rising to KRW 127.68 billion, the company swung to an operating loss of KRW -0.29 billion and a net loss of KRW -1.61 billion. In 2025, revenue declined slightly to KRW 123.86 billion, but operating profit reached KRW 4.57 billion (3.7% margin) and net income was KRW 4.74 billion, marking a full-year turnaround to profitability. On a quarterly basis, Q2 2025 showed low profitability with revenue of KRW 29.18 billion and operating profit of KRW 0.41 billion (about 1.4% margin), before improving sharply in Q3 to revenue of KRW 33.70 billion and operating profit of KRW 3.43 billion (about 10.2% margin), with the profitable trend continuing into Q4 at revenue of KRW 33.88 billion and operating profit of KRW 2.02 billion (about 6.0% margin). However, Q1 2026 reverted to low profitability with revenue of KRW 30.32 billion and operating profit of KRW 0.39 billion (about 1.3% margin), and Q2 2026 saw revenue decline to KRW 26.79 billion alongside an operating loss of KRW -3.04 billion and a net loss of KRW -3.16 billion, the only loss quarter in the trailing four-quarter window. This period overlaps with the disclosure and investigation of the large-scale personal data breach that occurred in May-June, though the extent to which the revenue decline and widened loss relate to one-off costs or breach-response factors is not yet clearly delineated in disclosures. On the cash flow side, operating cash flow remained positive at KRW 13.45 billion in 2023, KRW 3.00 billion in 2024, and KRW 8.28 billion in 2025, a notable feature given net losses in two of those years."
  },
  "industry": {
-  "ko": "국내 성인 직무교육 시장은 AI·디지털 기술 전환 수요, 정부의 디지털 인재양성 정책, 재직자 재교육 수요 증가를 배경으로 구조적 성장 국면에 있다. 패스트캠퍼스의 AI 강의 매출만 해도 2020년 약 3억 원에서 2024년 약 85억 원으로 급증하며 기업·개인 모두의 AI 역량 수요를 반영했다. 정부 B2G 시장도 확대되고 있으며, 국방부는 2026년 50억 원 등 5년간 225억 원을 투입해 KAIST 주관 '국방 AI 인재양성 플랫폼'을 구축할 계획이어서 수주 파이프라인이 가시화되고 있다. 글로벌 에듀테크 시장에서는 AI 기반 자막·번역·더빙 자동화가 현지화 비용 구조를 근본적으로 변화시키고 있어, 콘텐츠 IP를 보유한 기업의 해외 확장이 빨라지고 있다. 국내 경쟁 구도는 데이원컴퍼니가 매출 규모 1위를 유지하는 가운데, 클래스101의 흑자 전환(2024년)·인프런의 이용자 150만 명 돌파로 경쟁이 전반적으로 심화되고 있다. 업계 전반에서 단순 강의 수강에서 구독·자격증·AI 역량 인증 모델로 진화가 가속화 중이며, AI 직무 역량 인증시험(APEX 등) 시장이 새로운 B2C 부가가치 창출 수단으로 떠오르고 있다. 학령인구 감소보다 성인 재교육 수요의 구조적 확대가 에듀테크 기업의 장기 성장 배경으로 작용한다는 점에서 업황 방향성은 긍정적으로 평가된다.",
-  "en": "The domestic adult vocational education market is in a structural growth phase, driven by surging demand for AI and digital skills, government digital talent development policies, and rising reskilling demand among working adults. Fast Campus AI lecture revenue alone jumped from ~KRW 3 bn in 2020 to ~KRW 85 bn in 2024, reflecting both corporate and individual demand for AI capabilities. The government B2G market is also expanding, with the Ministry of National Defense planning to invest a total of KRW 22.5 bn over five years (starting with KRW 5 bn in 2026) to build a KAIST-led Defense AI Talent Development platform, making the contract pipeline increasingly visible. In the global edtech market, AI-powered automation of subtitling, translation, and dubbing is fundamentally altering localization cost structures, accelerating overseas expansion for content IP holders. Domestically, Day1 Company retains the largest revenue base, but competition is intensifying with Class101's profitability turnaround (2024) and Inflearn surpassing 1.5 million users. The industry is broadly shifting from single-course purchase models to subscription, certification, and AI competency credential frameworks, with AI aptitude testing (such as APEX) emerging as a new B2C value-add. The structural expansion of adult reskilling—more relevant than the declining school-age population—provides a favorable long-term backdrop for the sector."
+  "ko": "성인 실무교육 시장은 재취업·이직 수요와 기업의 디지털 인재 양성 예산 확대에 힘입어 성장해 왔으며, 최근에는 AI 활용 역량 강화가 핵심 수요로 부상하고 있다. 실제로 2025년 기준 기업 출강 교육 중 AI 교육 비중은 56.7%로 과반을 넘어섰고, 기업 내부 데이터를 활용한 교육 수요도 전년 대비 크게 늘어난 것으로 나타났다. 이러한 흐름 속에서 데이원컴퍼니는 교육을 넘어 기업의 AI 도입 전 과정을 지원하는 AX 시장으로 사업 영역을 넓히고 있으며, 스페이스와이 인수를 통해 미국 팔란티어가 활용해온 FDE(현장 파견 엔지니어) 모델을 국내 대기업 대상 사업에 적용하고 있다. 경쟁 구도 측면에서는 러닝스푼즈·코드잇 등 성인·직무교육 스타트업과 크레버스·정상제이�미엘에스 등 기존 교육기업들이 유사 시장에서 경쟁하고 있으며, 엔터프라이즈 AX 영역에서는 국내외 다수의 AI 솔루션·컨설팅 기업들이 빠르게 진입하고 있어 경쁄 강도가 높아지는 국면이다. 데이원컴퍼니는 100만명 이상의 기존 회원 기반과 다수 대기업과의 기존 교육 거래 관계를 AX 영업의 발판으로 삼으려 하고 있으나, 이 시장에서의 실적 검증은 아직 초기 단계다. 한편 2026년 상반기 발생한 개인정보 유출 사고는 업계 전반의 보안 신뢰도 이슈로도 번져, 위탁 교육업체의 보안 관리 체계에 대한 기업 고객들의 점검 요구가 커지는 계기가 됐다.",
+  "en": "The adult vocational education market in Korea has grown on the back of re-employment and job-transition demand as well as expanding corporate budgets for digital talent development, with AI proficiency recently emerging as a core driver of demand. As of 2025, AI-related training accounted for 56.7% of corporate on-site training revenue, surpassing half, and demand for training using internal company data also rose sharply year over year. Amid this shift, Day1 Company is expanding beyond education into the AX market that supports companies' entire AI adoption process, applying the field-deployed-engineer (FDE) model used by Palantir in the U.S. to domestic large-corporate projects through its acquisition of Spacewy. In terms of competitive landscape, startups such as Learning Spoons and Codeit as well as established education firms such as Cleverse and Junior JLS compete in similar markets, while numerous domestic and global AI solution and consulting firms are rapidly entering the enterprise AX space, intensifying competition. Day1 Company aims to leverage its existing base of over one million members and established training relationships with large corporations as a springboard for AX sales, though performance validation in this market remains at an early stage. Meanwhile, the personal data breach that occurred in the first half of 2026 spread into a broader industry trust issue around security, prompting corporate clients to increase scrutiny of outsourced training vendors' security management systems."
  },
  "outlook": {
-  "ko": "경영진은 2026년을 '글로벌 성인 교육 시장에서의 지속 가능한 성장 실현' 원년으로 제시하며, 핵심 전략으로 ▲AI 기술의 콘텐츠 기획·운영 전반 적용 ▲핵심 사업 중심 포트폴리오 재편 ▲글로벌 확장 가속화를 내세웠다. 글로벌 측면에서는 현재 진출 중인 일본·미국·대만에 더해 연내 캐나다·영국·프랑스·호주·태국·중국 등 6개국에 추가 진출해 글로벌을 전사 매출 성장의 핵심 동력으로 전환할 계획이다. AI 기반 자막·번역·더빙 자동화로 콘텐츠 분당 제작비를 90% 가까이 절감하는 체계를 이미 구축해 확장 비용 부담을 크게 낮췄다. B2G 부문에서는 KAIST 주관 '2026 국방 AI 인재양성 사업' 컨소시엄 참여를 통해 올해 50억 원 예산을 시작으로 5년간 225억 원 규모의 안정적인 수주 파이프라인을 확보했다. B2B 수주의 선행지표인 6개월 계약 체결액이 2026년 1분기에 전년 동기 대비 약 19% 증가해 향후 매출 가시성이 높아지고 있다. 2025년 12월 공시를 통해 향후 3년간 연결 순이익의 최소 30%를 자사주 매입·소각·현금배당으로 환원하겠다는 주주환원 로드맵을 발표했으나, 아직 실행 단계에 있지 않아 이행 여부에 대한 지속 모니터링이 필요하다. 업스테이지 주관 K-AI 모델 컨소시엄(솔라 WBL)에도 데이원컴퍼니가 참여 기관으로 이름을 올려, 국내 AI 생태계와의 협업 접점도 넓혀가고 있다.",
-  "en": "Management has positioned 2026 as a pivotal year for sustainable growth in the global adult education market, centered on three strategic pillars: applying AI across content planning and operations, restructuring the portfolio around core businesses, and accelerating global expansion. On the global front, the company plans to extend its existing presence in Japan, the US, and Taiwan by entering Canada, the UK, France, Australia, Thailand, and China within the year, aiming to make global the primary driver of overall revenue growth. The already-deployed AI-powered automation system for subtitling, translation, and dubbing—which cuts per-minute production costs by ~90%—substantially lowers the cost of expansion. On the B2G front, participation in the KAIST-led '2026 Defense AI Talent Development' consortium secures a stable pipeline of KRW 22.5 bn over five years beginning with KRW 5 bn in 2026. The 6-month contract signing volume (a leading indicator for B2B revenue) grew ~19% YoY in Q1 2026, improving forward revenue visibility. The company announced in December 2025 a shareholder return roadmap to distribute at least 30% of consolidated net profit over three years through share buybacks, cancellations, and cash dividends—though execution has yet to begin and warrants continued monitoring. Day1 Company is also a participating institution in Upstage's K-AI model consortium (Solar WBL), broadening its engagement with the domestic AI ecosystem."
+  "ko": "회사는 2026년 8월 'DAY1 AI Deployment Company' 사업을 공식 출범하며 AX 진단·전략 수립부터 교육·변화관리, AI 기술 구축, 현장 적용, 운영·확산까지 전 과정을 지원하는 체계를 구축한다고 밝혔고, 이를 위한 전문 인력 100명 공개채용을 진행 중이다. 회사 측은 사업 실행력이 높아지고 규모와 독립성이 충분히 확보되면 향후 별도 법인으로 분리하는 방안도 검토하겠다고 언급했다. 스페이스와이는 인수 전 국내 주요 대기업 대상 AX 프로젝트에서 재계약률 100%를 기록한 것으로 알려져, 기존 교육 고객 기반과의 교차 판매 가능성이 주목된다. 조직 측면에서는 2026년 3월 공동대표 체제로 전환해 브랜드별로 분산된 사업구조를 통합하고 실행력을 높이는 방향으로 개편이 진행 중이다. 다만 개인정보 유출 사고에 대한 정확한 피해 규모와 보상안은 아직 확정되지 않았으며, 회사는 유출 피해 규모가 확정된 후 보상안을 마련할 예정이라고 밝힌 상태다. 글로벌 사업은 2025년 기준 일본·미국 진출에 이어 대만·유럽 등 추가 지역 확장이 언급된 바 있으나 최신 진행 상황은 추가 확인이 필요하다.",
+  "en": "In August 2026, the company officially launched its 'DAY1 AI Deployment Company' business, stating it would build a system supporting the full range of AX diagnosis and strategy formulation, training and change management, AI technology deployment, field application, and operation and scaling, and is conducting a public hiring drive of about 100 specialists for this purpose. The company has indicated it would consider spinning the business off into a separate legal entity in the future once execution capability, scale, and independence are sufficiently secured. Spacewy reportedly achieved a 100% contract renewal rate on AX projects for major domestic corporations prior to the acquisition, raising the prospect of cross-selling with Day1's existing education client base. Organizationally, the shift to a co-CEO structure in March 2026 is intended to consolidate a previously brand-fragmented business structure and improve execution. However, the exact scale of damage and compensation plan from the personal data breach have not yet been finalized, with the company stating it would prepare a compensation plan once the extent of the breach is confirmed. On the global front, expansion into Japan and the U.S. as of 2025 was followed by mentions of further expansion into Taiwan and Europe, though the latest progress requires further confirmation."
  },
  "valuation_comment": {
-  "ko": "2024년 적자에서 2025년 흑자로 전환하며 EPS는 487원을 기록하고 있고, BPS 3,318원 기준으로 주가는 순자산 대비 소폭 웃도는 구간에 위치한다. 코스닥 에듀테크·콘텐츠 업종은 통상 성장성 기대가 더해질 때 순자산 대비 상당한 프리미엄이 형성되나, 현재 구간에서의 프리미엄은 제한적인 수준이다. 2025년 1월 공모가(1만 3,000원) 대비 주가가 크게 하락한 상태에서, 이익 레버리지 지속 여부와 글로벌·B2G 성장의 실현 속도가 재평가의 핵심 변수로 꼽힌다. 배당은 아직 실시되지 않아 배당수익률은 업종 평균을 크게 하회하며, 2025년 12월 발표한 주주환원 정책(3년간 순이익 30%)의 실행 여부가 향후 밸류에이션 재평가의 촉매 역할을 할 수 있다. B2G·글로벌 매출 고성장이 현실화돼 이익 레버리지가 가시화될 경우, 현재의 낮은 순자산 프리미엄 구간에서 시장의 재평가 가능성을 주목할 필요가 있다.",
-  "en": "Following the turnaround from losses in 2024 to profitability in 2025, EPS stands at KRW 487, and with BPS at KRW 3,318, the stock is trading at a modest premium to book value. KOSDAQ edtech and content stocks typically carry significant premiums to book when growth expectations are elevated, but the current premium remains limited. With the stock having declined sharply from the January 2025 IPO price of KRW 13,000, the sustainability of profit leverage and the pace of B2G and global growth realization are the key variables for any re-rating. No dividend has yet been paid, leaving the dividend yield well below the sector average; execution of the December 2025 shareholder return policy (30% of net profit over 3 years) could serve as a meaningful re-rating catalyst. If the high growth in B2G and global revenue materializes and profit leverage becomes visible, the current low book-value premium zone warrants attention for a potential market re-rating."
+  "ko": "회사의 순자산 대비 주가 관계는 대체로 순자산 수준에 근접한 구간에서 거래되어 온 것으로 나타나며, 특정 프리미엄이나 할인이 뚜렷하게 형성돼 있다고 단정하기는 어렵다. 이익 측면에서는 2024년 연간 순손실에서 2025년 연간 순이익으로 방향이 전환됐고, 2026년 들어서는 1분기 소폭 흑자에서 2분기 손실로 다시 방향이 바뀌는 등 분기별 변동성이 크게 나타나는 점이 밸류에이션 해석의 변수로 작용한다. 배당 측면에서는 회사가 아직 현금배당을 실시하지 않고 있어 배당을 통한 주주환원 지표는 형성되어 있지 않다. 최근 몇 년간의 실적 변동성과 신규 사업(AX) 및 보안사고 이슈가 동시에 진행되고 있다는 점에서, 시장이 이 회사에 부여하는 가치 평가는 기존 교육사업의 안정적 수익성 회복 여부와 신규 AX 사업의 초기 성과 검증 결과에 따라 달라질 수 있는 구간으로 볼 수 있다.",
+  "en": "The relationship between the company's share price and its net asset value has generally traded in a range close to book value, making it difficult to conclude that a distinct premium or discount is firmly established. On the earnings side, the direction shifted from a full-year net loss in 2024 to full-year net profit in 2025, and then reversed again within 2026 from a modest first-quarter profit to a second-quarter loss, with this quarter-to-quarter volatility acting as a key variable in valuation interpretation. On the dividend side, the company has not yet implemented a cash dividend, so no shareholder-return metric via dividends has been established. Given that recent years of earnings volatility have coincided with both a new AX business initiative and a security-incident issue, the value the market assigns to this company can be seen as a range that will depend on whether the core education business's stable profitability is restored and how the new AX business's early performance is validated."
  },
  "bull": [
   {
    "title": {
-    "ko": "OSMU 기반 이익 레버리지 구조 확립",
-    "en": "OSMU-Driven Profit Leverage Structure Firmly in Place"
+    "ko": "연간 기준 흑자 전환과 자본구조 개선",
+    "en": "Full-Year Profit Turnaround and Improved Capital Structure"
    },
    "body": {
-    "ko": "B2C에서 검증된 콘텐츠를 B2B·B2G·글로벌에 재활용하는 OSMU 전략으로 공헌이익률이 2022년 32.4%에서 2026년 1분기 53.1%로 사상 최고치를 경신했다. B2B·B2G 부문은 강사료·제작비·마케팅비 투입이 최소화돼 공헌이익률 60%를 넘어서며 고효율 수익 구조를 형성하고 있다. 매출이 일정 수준 이상으로 증가할수록 이익 증가 폭이 더 커지는 레버리지 효과가 실현 가능한 비용 구조가 이미 갖춰진 것이다. AI 기술을 활용한 콘텐츠 운영 최적화가 이 구조를 더욱 공고히 하고 있어 향후 확장 시 마진 방어력이 높다.",
-    "en": "The OSMU strategy—reusing B2C-validated content across B2B, B2G, and global channels—drove the company-wide contribution margin from 32.4% in 2022 to an all-time high of 53.1% in Q1 2026. B2B and B2G segments minimize instructor, production, and marketing costs, achieving contribution margins above 60% for a high-efficiency profit structure. The cost architecture now enables significant profit leverage as revenue grows beyond a certain threshold. AI-powered content operations optimization reinforces this structure, providing strong margin defensibility during future expansion."
+    "ko": "2025년 연결 영업이익 45.7억원, 순이익 47.4억원으로 2024년 적자에서 흑자로 전환했다. 부채비율도 2023년 -212.1%에서 2024년 157.8%, 2025년 80.3%로 꾸준히 낮아지며 상장을 계기로 재무구조가 안정화됐다. 영업활동현금흐름도 최근 3개 연도 모두 양(+)의 흐름을 유지해 이익의 질을 뒷받침한다.",
+    "en": "In 2025, consolidated operating profit reached KRW 4.57 billion and net income KRW 4.74 billion, turning profitable from a 2024 loss. The debt ratio also steadily declined from -212.1% in 2023 to 157.8% in 2024 and 80.3% in 2025, stabilizing the capital structure around the listing. Operating cash flow remained positive across all three most recent years, supporting the quality of earnings."
    }
   },
   {
    "title": {
-    "ko": "B2G 수주 가시성 확대 — 국방 AI 등 정부 수요 구조적 성장",
-    "en": "Expanding B2G Pipeline Visibility — Structural Growth in Government Demand Including Defense AI"
+    "ko": "AX 신사업을 통한 사업 영역 확장",
+    "en": "Business Expansion Through the New AX Venture"
    },
    "body": {
-    "ko": "패스트캠퍼스는 KAIST 주관 '2026 국방 AI 인재양성 사업' 컨소시엄에 참여하며 5년간 총 225억 원(올해 50억 원 포함) 규모의 안정적인 B2G 수주를 확보했다. B2G 매출은 2026년 1분기에 전년 동기 대비 97% 급증한 약 71억 원을 기록하며 전체 실적 개선의 핵심 역할을 담당했다. 정부의 AI 인재양성 정책 기조가 강화될수록 B2G 파이프라인 추가 확대 가능성이 높아지며, 민간 계약 대비 장기적·예측 가능한 수익 구조를 제공한다. 국방부 'AX 거점' 사업 본격화 등 AI 관련 정부 발주 확대 흐름도 이 부문에 우호적으로 작용한다.",
-    "en": "Fast Campus has secured a stable B2G pipeline of KRW 22.5 bn over five years (including KRW 5 bn this year) through participation in the KAIST-led '2026 Defense AI Talent Development' consortium. B2G revenue surged 97% YoY to approximately KRW 7.1 bn in Q1 2026, playing a critical role in overall performance improvement. As the government intensifies AI talent development policies, the B2G pipeline is likely to expand further, offering longer-term and more predictable revenue than private contracts. The Defense Ministry's acceleration of 'AI Transformation Hub' initiatives also provides a favorable backdrop for this segment."
+    "ko": "엔터프라이즈 AX 기업 스페이스와이 인수를 통해 기존 교육 사업을 넘어 기업의 AI 구축·현장 적용을 지원하는 시장으로 영역을 넓히고 있다. 스페이스와이는 인수 전 국내 대기업 대상 프로젝트에서 재계약률 100%를 기록한 것으로 알려져 있다. 100만명 이상의 기존 교육 회원과 대기업 고객 기반은 신사업의 교차 판매 기반이 될 수 있다.",
+    "en": "Through the acquisition of enterprise AX firm Spacewy, the company is expanding beyond its existing education business into the market supporting corporate AI deployment and field application. Spacewy reportedly achieved a 100% contract renewal rate on projects for domestic large corporations before the acquisition. The existing base of over one million education members and large-corporate clients could serve as a cross-selling foundation for the new business."
    }
   },
   {
    "title": {
-    "ko": "글로벌 고성장 — AI 현지화로 비용 절감과 시장 확장 동시 달성",
-    "en": "High-Growth Global Business — AI Localization Cuts Costs While Accelerating Market Entry"
+    "ko": "AI 교육 수요 확대라는 구조적 흐름",
+    "en": "Structural Tailwind from Rising AI Education Demand"
    },
    "body": {
-    "ko": "2025년 3분기 글로벌 매출이 전년 동기 대비 64% 급증한 약 56억 원을 기록했으며, 일본·미국·대만에서의 성과가 검증됐다. AI 자막·번역·더빙 자동화로 분당 제작비를 90% 가까이 절감해 6개국 추가 진출의 비용 부담을 낮췄다. 일본은 전체 글로벌 매출의 59%를 차지하는 주력 시장으로 안착했으며, 영미권·동남아 시장 침투 가속화 시 추가 성장 동력이 될 수 있다. 글로벌 사업이 전사 매출의 핵심 성장 축으로 자리매김할 경우 국내 시장 성숙에 따른 성장 한계를 상쇄할 수 있다.",
-    "en": "Global revenue surged 64% YoY to approximately KRW 5.6 bn in Q3 2025, with proven traction in Japan, the US, and Taiwan. AI-powered automation of subtitling, translation, and dubbing has cut per-minute production costs by ~90%, lowering the cost barrier for entering 6 additional countries. Japan has become the dominant global market at 59% of global revenue, and accelerating penetration in English-speaking and Southeast Asian markets represents further upside. If global solidifies as the primary growth pillar, it can offset maturation constraints in the domestic market."
+    "ko": "2025년 기준 기업 출강 교육 중 AI 교육 비중이 56.7%로 과반을 넘어섰고 기업 내부 데이터 활용 교육 수요도 크게 늘었다. 회사는 AI 워크숍·해커톤·리더십 교육 등 신규 프로그램을 확대해 이 수요에 대응하고 있다. 이러한 흐름은 기존 B2B 교육 매출과 AX 신사업 모두에 우호적인 환경을 제공할 수 있다.",
+    "en": "As of 2025, AI training accounted for 56.7% of corporate on-site training revenue, surpassing half, with demand for training using internal company data also rising significantly. The company is responding by expanding new programs such as AI workshops, hackathons, and leadership training. This trend could provide a favorable environment for both existing B2B education revenue and the new AX business."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "낮은 절대 영업이익률과 계절성 기반 수익 변동 리스크",
-    "en": "Low Absolute Operating Margin and Seasonal Earnings Volatility Risk"
+    "ko": "분기 실적의 높은 변동성",
+    "en": "High Quarter-to-Quarter Earnings Volatility"
    },
    "body": {
-    "ko": "2025년 연간 영업이익률 3.7%는 흑자 전환에 의미가 있으나, 절대 수준은 낮다. 분기별로는 2025년 1분기(-12.8억 원 영업손실), 2026년 1분기(영업이익 3.9억 원)처럼 상반기에 수익이 상대적으로 낮게 집중되는 계절성이 뚜렷하다. 이번 수익성 개선이 매출 증가보다 비용 절감에 주로 기인했기 때문에, 글로벌·콘텐츠 투자를 재가속할 경우 마진 압박이 재현될 수 있다. 글로벌 신규 국가 진출 비용(현지화·마케팅 초기 투자)이 단기적으로 이익을 희석시킬 위험도 내재한다.",
-    "en": "The FY2025 operating margin of 3.7% marks a meaningful turnaround, but the absolute level remains low. Pronounced seasonality is evident, with H1 quarters (Q1 2025 operating loss of ~KRW 1.3 bn; Q1 2026 operating profit of ~KRW 0.4 bn) significantly weaker than H2. Since the margin improvement was largely cost-driven rather than revenue-led, a renewed acceleration of global and content investment could re-introduce margin pressure. The near-term costs of entering new global markets (localization and initial marketing investment) also pose a margin dilution risk."
+    "ko": "2025년 3분기 영업이익 34.3억원까지 개선됐던 실적이 2026년 1분기 3.9억원, 2분기 -30.4억원으로 급격히 흔들렸다. 매출도 2025년 4분기 338.8억원에서 2026년 2분기 267.9억원으로 줄어 성장세가 꺾인 모습이다. 연간 흑자 전환이 분기 단위로는 아직 안정적으로 자리 잡지 못했다는 신호로 해석될 수 있다.",
+    "en": "Operating profit, which had improved to KRW 3.43 billion in Q3 2025, swung sharply to KRW 0.39 billion in Q1 2026 and then to a loss of KRW -3.04 billion in Q2 2026. Revenue also declined from KRW 33.88 billion in Q4 2025 to KRW 26.79 billion in Q2 2026, suggesting a loss of growth momentum. This can be read as a signal that the annual turnaround to profit has not yet stabilized on a quarterly basis."
    }
   },
   {
    "title": {
-    "ko": "IPO 이후 주가 급락 — 재무적 투자자 엑시트 부담 상존",
-    "en": "Sharp Post-IPO Price Decline — Financial Investor Exit Overhang Persists"
+    "ko": "개인정보 유출 사고의 여진",
+    "en": "Aftershocks of the Personal Data Breach"
    },
    "body": {
-    "ko": "2025년 1월 상장 공모가 1만 3,000원 대비 주가가 크게 하락해 있어, 높은 기업가치로 투자한 재무적 투자자(VC·한화생명 등)의 잠재적 매도 부담이 주가에 지속적인 압력을 행사할 수 있다. 시리즈D 당시 기업가치 약 2,750억 원으로 투자한 투자자들의 청산 부담이 현재 시가총액 수준과의 괴리를 형성하고 있다. 배당 미실행 상태에서 주주환원 정책의 실질적 효과가 아직 체감되지 않아 시장의 재평가가 지연되고 있다. 공모가 대비 급락에 따른 거래량 감소와 시장 주목도 저하도 유동성 디스카운트 요인으로 작용할 수 있다.",
-    "en": "The stock has fallen sharply from the January 2025 IPO price of KRW 13,000, and potential selling pressure from financial investors (VCs, Hanwha Life, etc.) who invested at elevated valuations could continue to weigh on the share price. Series D investors entered at an enterprise value of approximately KRW 275 bn, creating a significant gap with the current market capitalization level. With no dividends paid yet, the tangible impact of the shareholder return policy has yet to be felt, delaying market re-rating. Reduced trading volume and lower market visibility stemming from the post-IPO decline may also contribute to a liquidity discount."
+    "ko": "2026년 5월 최초 침입 이후 6월 공지된 개인정보 유출 사고는 이름·연락처뿐 아니라 계좌번호·여권번호 등 금융·신분 정보까지 추가 노출 가능성이 확인됐다. 삼성전자 등 대기업 사내교육 수강생까지 영향권에 포함된 것으로 알려져 파장이 확산됐다. 정확한 피해 규모와 보상안은 아직 확정되지 않아 향후 비용·신뢰도 부담으로 이어질 수 있다.",
+    "en": "Following an initial intrusion in May 2026, the breach disclosed in June revealed not only names and contact details but also confirmed possible additional exposure of financial and identity information such as bank account and passport numbers. The impact reportedly extended to corporate training participants at large firms including Samsung Electronics. The exact scale of damage and compensation plan remain unconfirmed, which could translate into future cost and trust burdens."
    }
   },
   {
    "title": {
-    "ko": "2026년 5월 개인정보 유출 사고 — 브랜드 신뢰도·규제 리스크",
-    "en": "May 2026 Personal Data Breach — Brand Trust and Regulatory Risk"
+    "ko": "재무적 투자자(FI) 오버행 우려",
+    "en": "Financial Investor Overhang Concerns"
    },
    "body": {
-    "ko": "2026년 5월, 깃허브(GitHub) 마스터 계정 키 탈취로 회원 개인정보가 유출되는 보안 사고가 발생했다. 회원 100만 명 이상의 데이터를 보유한 플랫폼에서의 사고인 만큼 고객 신뢰도 및 브랜드 이미지에 부정적 영향이 불가피하다. 개인정보보호법에 따른 과징금·시정명령·소송 리스크가 후속 비용 부담으로 이어질 수 있다. B2C 이탈률 증가나 신규 가입자 감소로 연결될 경우 OSMU 전략의 근간인 B2C 콘텐츠 검증 구조 자체에도 압력이 가해질 수 있다.",
-    "en": "In May 2026, a security breach involving theft of a GitHub master account key led to the leakage of member personal information. For a platform with over 1 million member records, the incident is likely to have a negative impact on customer trust and brand image. Fines, corrective orders, and litigation under the Personal Information Protection Act could result in follow-on cost burdens. If the breach translates into increased B2C churn or slower new subscriber growth, it could put pressure on the very B2C content validation infrastructure that underpins the OSMU strategy."
+    "ko": "시리즈D 투자에 참여한 한화생명, 미래에셋증권 등 재무적 투자자들이 상장 이전 상대적으로 높은 가격에 투자한 것으로 알려져 있으며, 상장 이후 실적 부진이 이어지면서 투자금 회수에 어려움을 겪고 있다는 지적이 나온 바 있다. 이는 향후 지분 매각 압력이나 시장 신뢰 저하로 이어질 수 있는 요인이다.",
+    "en": "Financial investors that participated in the Series D round, including Hanwha Life and Mirae Asset Securities, reportedly invested at relatively high valuations before listing, and it has been noted that continued post-listing earnings weakness has made it difficult for them to recoup their investments. This could translate into future pressure for share disposals or diminished market confidence."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "B2G 정책·예산 변동 리스크",
-    "en": "B2G Policy and Budget Change Risk"
+    "ko": "보안·개인정보 리스크",
+    "en": "Security and Data Privacy Risk"
    },
    "body": {
-    "ko": "B2G 매출은 정부 예산 편성 사이클과 정책 방향에 직접 연동된다. 국방 AI 사업 등 핵심 수주 과제에서 정책 우선순위 변경이나 예산 삭감이 발생할 경우 B2G 매출이 급격히 감소할 위험이 있다. B2G는 2026년 1분기 전년 동기 대비 97% 급성장한 만큼, 이 성장률을 유지하지 못할 경우 실적 기대치와의 괴리가 커진다. 또한 정부 조달 사업 특성상 수주 후 매출 인식까지 시차가 발생해 분기 실적 변동성이 높아질 수 있다.",
-    "en": "B2G revenue is directly tied to government budget cycles and policy priorities. Any shift in policy direction or budget cuts affecting key contracts such as the Defense AI program could cause a sharp decline in B2G revenue. Given that B2G surged 97% YoY in Q1 2026, any failure to maintain this growth rate would create a meaningful gap with earnings expectations. Additionally, the time lag between contract award and revenue recognition typical of government procurement may increase quarterly earnings volatility."
+    "ko": "깃허브 마스터 계정 키 탈취로 촉발된 이번 유출 사고는 조사가 진행되며 노출 항목이 계속 늘어나는 양상을 보였다. 개인정보보호 당국의 조사 결과에 따라 과징금·행정처분 등이 부과될 가능성이 있으며, 피해자 보상 비용도 아직 확정되지 않았다. 위탁교육업체로서의 보안 신뢰도 저하는 B2B 고객 이탈로 이어질 수 있다.",
+    "en": "The breach, triggered by the theft of a GitHub master account key, saw the scope of exposed information continue to expand as the investigation progressed. Depending on the findings of the data protection authority's investigation, fines or administrative sanctions could be imposed, and victim compensation costs have not yet been finalized. Diminished security credibility as an outsourced training vendor could lead to B2B client attrition."
    }
   },
   {
    "cat": {
-    "ko": "콘텐츠 IP 노후화·경쟁 심화 리스크",
-    "en": "Content IP Obsolescence and Intensifying Competition Risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New Business Execution Risk"
    },
    "body": {
-    "ko": "성인 실무교육 시장에서 AI·데이터 등 기술 분야의 빠른 변화 속도는 콘텐츠 노후화 위험을 높이며, 콘텐츠 업데이트에 지속적 투자가 필요하다. 경쟁사 대비 콘텐츠 품질이나 주제 다양성이 뒤처질 경우 B2C 수강생 감소 → OSMU 효과 약화의 연쇄 영향이 발생한다. 클래스101·인프런 등 경쟁사의 수익성 개선과 이용자 확대가 가속화되면 마케팅비 상승 압력도 커진다. 스타강사 의존을 낮추는 실무자 강사 모델은 비용 효율적이지만, 강사 이탈 시 재제작 비용이 수익성에 부담이 될 수 있다.",
-    "en": "In adult vocational education, the rapid pace of change in fields such as AI and data increases the risk of content obsolescence, requiring continuous reinvestment in content updates. If content quality or topical breadth falls behind competitors, a decline in B2C learners could weaken the OSMU effect in a cascading fashion. Accelerating profitability and user growth at competitors such as Class101 and Inflearn may also drive up marketing cost pressures. While the practitioner-instructor model is cost-efficient by reducing dependence on star lecturers, significant instructor churn could create re-production cost burdens on margins."
+    "ko": "AX 사업은 스페이스와이 인수 이후 아직 초기 단계로, 100명 규모 채용과 조직 통합이 계획대로 진행될지가 관건이다. 엔터프라이즈 AI 전환 시장에는 다수의 국내외 경쟁자가 빠르게 진입하고 있어 차별화된 성과를 내지 못할 경우 투자 비용 대비 수익 창출이 지연될 수 있다.",
+    "en": "The AX business remains at an early stage following the Spacewy acquisition, with execution of the planned 100-person hiring and organizational integration a key variable. Numerous domestic and international competitors are rapidly entering the enterprise AI transformation market, and failure to achieve differentiated results could delay returns relative to investment costs."
    }
   },
   {
    "cat": {
-    "ko": "글로벌 현지화 실패·단일국 의존 리스크",
-    "en": "Global Localization Failure and Single-Country Concentration Risk"
+    "ko": "핵심 교육사업의 수요 변동성",
+    "en": "Demand Volatility in the Core Education Business"
    },
    "body": {
-    "ko": "현재 글로벌 매출의 59%가 일본에 집중돼 있어 엔화 환율 변동이나 일본 시장 경쟁 심화 시 직접적인 영향을 받는다. 2026년 6개국 추가 진출 목표가 실현되지 않거나 현지화 비용이 예상을 초과할 경우 수익성 개선 흐름이 훼손될 수 있다. 미국·영국 등 영어권 시장은 Coursera·Udemy 등 글로벌 플레이어와의 경쟁이 치열해 가격·품질 경쟁력의 충분한 검증이 필요하다. 중국 시장 진입은 현지 파트너사 의존도가 높아 수익 배분 구조와 콘텐츠 IP 보호 리스크를 수반한다.",
-    "en": "With 59% of global revenue currently concentrated in Japan, the company is directly exposed to yen exchange rate volatility and any intensification of competition in the Japanese market. If the target of entering 6 additional countries in 2026 fails to materialize or localization costs exceed expectations, the margin improvement trajectory could be disrupted. English-speaking markets such as the US and UK face fierce competition from global players like Coursera and Udemy, requiring thorough validation of price-quality competitiveness. Entry into China via a local partner introduces revenue-sharing structure and content IP protection risks."
+    "ko": "국내 B2C 교육 수요는 고용시장 상황과 기업 교육예산 배정에 민감하게 반응하는 경향이 있다. 2026년 1~2분기 매출이 전 분기 대비 둔화된 만큼, 핵심 사업의 성장 모멘텀이 약화될 경우 신사업 투자를 뒷받침할 현금 창출력에도 부담이 될 수 있다.",
+    "en": "Domestic B2C education demand tends to be sensitive to employment market conditions and corporate training budget allocations. With revenue slowing in Q1-Q2 2026 relative to prior quarters, weaker growth momentum in the core business could also strain the cash-generating capacity needed to support new business investment."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월",
-    "en": "July–August 2026"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표: B2G(2026 1분기 전년 대비 97% 성장) 및 글로벌(전년 대비 33% 성장) 고성장 지속 여부 확인. 2분기는 계절적으로 수익성이 높아지는 구간이므로 영업이익률의 1분기 대비 개선 폭이 흑자 안정성을 가늠하는 핵심 지표.",
-    "en": "Q2 2026 earnings release: confirm whether B2G (up 97% YoY in Q1 2026) and global (up 33% YoY) high-growth trajectories persist. Q2 is seasonally stronger for profitability, so the degree of operating margin improvement versus Q1 is the key indicator of earnings stability."
+    "ko": "2026년 3분기(2026Q3) 실적 공시 예정 — 2분기 적자가 일회성 요인이었는지, 매출·수익성이 재차 회복되는지 확인이 필요하다.",
+    "en": "Q3 2026 earnings are expected to be disclosed — key to check whether the Q2 loss was a one-off factor and whether revenue and profitability recover again."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "H2 2026"
+    "ko": "2026년 4분기 중",
+    "en": "In Q4 2026"
    },
    "what": {
-    "ko": "캐나다·영국·프랑스·호주·태국·중국 등 6개국 추가 글로벌 진출 완료 여부와 초기 현지 매출 성과 확인. 일본 의존도 완화 및 영미권 시장 침투 속도가 글로벌 사업의 지속 성장 가능성을 가늠하는 핵심 변수.",
-    "en": "Confirmation of entry into 6 additional countries (Canada, UK, France, Australia, Thailand, China) and initial local revenue traction. The pace of Japan concentration reduction and English-speaking market penetration are key indicators for the sustainability of global growth."
+    "ko": "DAY1 AI Deployment Company의 초기 수주·매출 기여 공개 여부와 100명 채용 진행 상황을 확인할 필요가 있다.",
+    "en": "Worth monitoring whether the company discloses initial orders or revenue contribution from DAY1 AI Deployment Company, and the progress of the 100-person hiring plan."
    }
   },
   {
    "when": {
-    "ko": "2026년 연내",
-    "en": "Within 2026"
+    "ko": "2026년 하반기 중",
+    "en": "In the second half of 2026"
    },
    "what": {
-    "ko": "KAIST '2026 국방 AI 인재양성 사업' 컨소시엄(올해 예산 50억 원)의 매출 인식 시점 및 규모 확인. 추가 B2G 수주 공시가 이어질 경우 B2G 부문 실적 가속화 시그널로 해석 가능.",
-    "en": "Confirmation of revenue recognition timing and magnitude from the KAIST '2026 Defense AI Talent Development' consortium (KRW 5 bn budget this year). Additional B2G contract announcements would signal accelerating performance in this segment."
+    "ko": "개인정보보호위원회 등 당국의 조사 결과와 피해 보상안 확정 여부, 관련 비용 규모를 확인해야 한다.",
+    "en": "The findings of the data protection authority's investigation, confirmation of a victim compensation plan, and the scale of related costs should be checked."
    }
   },
   {
    "when": {
-    "ko": "2026년 연내",
-    "en": "Within 2026"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "2025년 12월 공시한 '3년간 순이익 30% 주주환원(자사주 매입·소각·배당)' 정책의 첫 실행 여부 확인. 미실행 시 주주환원 기대감 소멸이 밸류에이션 재평가에 부정적 신호로 작용할 수 있음.",
-    "en": "Confirmation of the first execution of the 'return 30% of net profit over 3 years' policy (share buyback, cancellation, or dividends) announced in December 2025. Non-execution could dampen shareholder return expectations and serve as a negative signal for valuation re-rating."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 3분기 이후",
-    "en": "Q3 2026 Onward"
-   },
-   "what": {
-    "ko": "2026년 5월 발생한 GitHub 마스터키 탈취 개인정보 유출 사고의 후속 영향 가시화 여부 점검 — 개인정보보호위원회 과징금·소송·B2C 이탈률 변화 등. 해당 사고가 신규 수강생 유입이나 기업 계약에 미치는 영향이 3분기 실적에 반영되는지 모니터링.",
-    "en": "Monitoring of follow-on impact from the May 2026 GitHub master key breach — including Personal Information Protection Commission fines, lawsuits, and changes in B2C churn rates. Track whether any impact on new learner acquisition or enterprise contract renewals begins to appear in Q3 2026 earnings."
+    "ko": "2026년 연간(FY2026) 실적 공시 — 2025년 흑자 전환이 2026년에도 연간 기준으로 유지되는지 확인이 핵심이다.",
+    "en": "Disclosure of full-year FY2026 results — the key check is whether the 2025 profit turnaround is sustained on a full-year basis in 2026."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "데이원컴퍼니는 2024년 영업적자에서 2025년 사상 최대 영업이익으로 전환하며 OSMU 전략 기반 수익 체질 개선을 숫자로 증명했다. 공헌이익률 50% 돌파, 영업현금흐름 약 2.8배 확대, 부채비율 대폭 하락 등 재무 지표 전반이 개선됐다는 점은 긍정적이다. 2026년은 B2G(국방 AI 컨소시엄), 글로벌(6개국 추가 진출), 주주환원(순이익 30%) 세 가지 모멘텀의 실현 여부가 실적과 시장 재평가를 결정하는 분수령이 될 전망이다. 반면 낮은 절대 영업이익률, 수익 집중의 계절성, IPO 이후 주가 급락에 따른 투자자 엑시트 부담, 2026년 5월 개인정보 유출 사고, 일본 집중의 글로벌 매출 구조는 지속적으로 모니터링이 필요한 약세 요인이다. 매출 성장보다 비용 절감에 의존한 수익성 개선이 성장 투자 재가속 시에도 유지될 수 있느냐는 중기 핵심 과제다. 구조적 변화와 불확실성이 공존하는 전환기임을 감안해, 분기별 수익 지속성·B2G 수주 동향·글로벌 확장 속도·주주환원 실행 여부를 종합적으로 점검하는 접근이 합리적이다.",
-   "en": "Day1 Company demonstrated tangible business model improvement by reversing from an operating loss in 2024 to a record operating profit in 2025, with the OSMU strategy delivering measurable results. The crossing of the 50% contribution margin threshold, ~2.8x expansion in operating cash flow, and sharp deleveraging are collectively positive financial developments. In 2026, three catalysts—B2G (Defense AI consortium), Global (6 new country entries), and shareholder returns (30% of net profit)—will be the defining factors for both earnings performance and any market re-rating. On the other hand, the low absolute operating margin, seasonal earnings concentration, post-IPO investor exit overhang, the May 2026 personal data breach, and Japan-heavy global revenue mix are ongoing concerns requiring close monitoring. Whether the cost-driven margin improvement can be sustained when growth investment is re-accelerated remains the key medium-term question. Given that the company sits at a structural inflection point where opportunity and uncertainty coexist, a comprehensive approach monitoring quarterly earnings continuity, B2G contract pipeline, global expansion pace, and shareholder return execution is the most prudent course."
+   "ko": "데이원컴퍼니는 2025년 연간 기준 영업이익과 순이익 모두 흑자로 전환하고 부채비율을 큰 폭으로 낮추며 상장 이후 재무구조를 개선했다. 그러나 2026년에는 1분기 저수익, 2분기 손실로 분기별 변동성이 뚜렷하게 나타났고, 이 시기에 발생한 대규모 개인정보 유출 사고는 아직 피해 규모와 보상안이 확정되지 않은 채 진행형 이슈로 남아 있다. 동시에 회사는 스페이스와이 인수와 'DAY1 AI Deployment Company' 출범을 통해 기존 교육사업을 넘어선 엔터프라이즈 AX 시장으로 사업 영역을 넓히는 전환점에 서 있다. 기존 B2C·B2B 교육사업의 안정적 수익 회복 여부, AX 신사업의 초기 성과, 보안사고 후속 처리 결과가 향후 실적과 시장의 평가에 함께 영향을 미칠 변수로 꼽힌다. 배당은 아직 실시되지 않고 있어 주주환원 측면의 참고 지표는 형성되어 있지 않다. 투자자는 다음 분기 실적 공시와 신사업·보안사고 관련 후속 공시를 함께 확인할 필요가 있다.",
+   "en": "Day1 Company turned both operating profit and net income positive on a full-year basis in 2025 while sharply lowering its debt ratio, improving its capital structure since listing. In 2026, however, quarter-to-quarter volatility became pronounced with low profitability in Q1 and a loss in Q2, and the large-scale personal data breach that occurred during this period remains an ongoing issue with the scale of damage and a compensation plan still unconfirmed. At the same time, the company stands at a turning point, expanding beyond its existing education business into the enterprise AX market through the Spacewy acquisition and the launch of 'DAY1 AI Deployment Company.' Whether the core B2C/B2B education business can restore stable profitability, how the new AX business performs in its early stages, and how the security incident's aftermath is resolved are variables that will jointly influence future earnings and market assessment. Dividends have not yet been implemented, so no shareholder-return reference metric has been established. Investors should monitor both the next quarterly earnings disclosure and follow-up disclosures related to the new business and the security incident."
   }
  },
  "sources": [
-  "https://thevc.kr/day1company",
-  "https://www.valueline.co.kr/finance/summary/373160",
-  "https://www.valueline.co.kr/finance/income/373160",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A373160&cID=&MenuYn=Y&ReportGB=&NewMenuID=101&stkGb=701",
-  "https://www.valueline.co.kr/finance/mri/373160",
-  "https://www.wanted.co.kr/company/49",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A373160&cID=&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A373160&cID=&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
-  "https://byline.network/2025/01/10-428/",
-  "https://ibabynews.com/news/articleView.html?idxno=148011",
-  "https://www.etnews.com/20251115000022",
-  "https://www.discoverynews.kr/news/articleView.html?idxno=1084271",
-  "https://www.venturesquare.net/1036728/",
-  "https://platum.kr/archives/274938",
-  "https://zdnet.co.kr/view/?no=20251113155049",
-  "https://m.finance.daum.net/quotes/A373160/news/stock/20251114083628892",
-  "https://v.daum.net/v/20251115165847995"
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A373160&cID=&MenuYn=Y&ReportGB=&NewMenuID=101&stkGb=701",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A373160&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
+  "https://www.valueline.co.kr/finance/summary/373160",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A373160&cID=&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/fastonelang",
+  "https://thevc.kr/day1company",
+  "https://m.thinkpool.com/item/373160",
+  "https://www.innoforest.co.kr/company/CP00000793/%EB%8D%B0%EC%9D%B4%EC%9B%90%EC%BB%B4%ED%8D%BC%EB%8B%88",
+  "https://www.catch.co.kr/Comp/CompInfo/IP5001",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/UkRGb0RjcVJqRUhRUHluVFIwd3lyQT09/company_nm/(%EC%A3%BC)%EB%8D%B0%EC%9D%B4%EC%9B%90%EC%BB%B4%ED%8D%BC%EB%8B%88",
+  "https://markets.hankyung.com/stock/373160/financial-summary",
+  "https://outstanding.kr/press/2193/20260820",
+  "https://besuccess.com/?p=185568",
+  "https://www.discoverynews.kr/news/articleView.html?idxno=1099096",
+  "https://elec4.co.kr/contents/article_detail?article_idx=38014",
+  "https://www.newstap.co.kr/news/articleView.html?idxno=332563",
+  "https://www.newsworks.co.kr/news/articleView.html?idxno=850361"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "373160",
  "name": "데이원컴퍼니",
  "name_en": "Day1 Company Inc.",
@@ -232,11 +223,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 02:25",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:40",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -270,6 +261,23 @@
     "opm": -0.2,
     "roe": -6.8,
     "debt_ratio": 157.8
+   },
+   {
+    "year": 2023,
+    "rev": 116589559474,
+    "op": 1122169574,
+    "np": -7907327155,
+    "np_owner": -7907327155,
+    "equity": -63858803273,
+    "equity_owner": -63858803273,
+    "equity_nci": null,
+    "liab": 135460299377,
+    "cfo": 13453995913,
+    "eps_basic": -943,
+    "src": "전기 비교치",
+    "opm": 1.0,
+    "roe": null,
+    "debt_ratio": -212.1
    }
   ],
   "quarterly": [
@@ -305,21 +313,22 @@
    }
   ],
   "valuation": {
-   "price": 2865,
-   "mcap": 0.0396,
+   "price": 3000,
+   "mcap": 0.0414,
    "shares": 13807469,
-   "total_shares": 13805219,
+   "total_shares": 13807469,
    "wavg_shares": 13714922,
-   "per": 12.038,
+   "per": 12.605,
    "eps": 238,
-   "pbr": 0.9512,
+   "pbr": 0.996,
    "bps": 3012,
    "roe_ttm": 8.0,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 3235781608,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.87,
+   "eps_src": "공시",
+   "pbr_krx": 0.91,
    "bps_krx": 3285.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,

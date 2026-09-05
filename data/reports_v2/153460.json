@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "이음5G 레퍼런스 확장 — 하반기 수주가 연간 실적 분수령",
-  "en": "Private 5G Reference Expansion — H2 Order Execution Is the Annual Earnings Hinge"
+  "ko": "네이블, 통신인프라 넘어 5G특화망 확장",
+  "en": "Nable Extends Beyond Legacy Networks Into Private 5G"
  },
  "lead": {
-  "ko": "중소기업 최초 이음5G 기간통신사업자로 자리잡은 네이블은 2025년 영업이익률 13.6%로 이익 회복을 확인했으나, 2026년 1분기 영업손실이 전년 동기 대비 두 배 이상 확대되면서 하반기 대형 수주·납품 모멘텀의 중요성이 한층 부각되고 있다.",
-  "en": "Nable, Korea's first SME-class private 5G (e-Um 5G) carrier, restored its operating margin to 13.6% in FY2025, but a Q1 2026 operating loss that more than doubled year-on-year puts the spotlight firmly on second-half contract execution as the fulcrum of annual earnings."
+  "ko": "네이블은 기업용 통신 인프라 구축·유지보수를 기반으로 삼성전자와 협력해 5G 특화망 사업으로 영역을 넓히고 있으나, 2025년 흑자전환 이후 2026년 상반기 다시 영업손실로 돌아서는 등 프로젝트성 매출 구조에 따른 실적 변동성이 뚜렷하다.",
+  "en": "Nable, built on enterprise network infrastructure deployment and maintenance, is expanding into private 5G networks in partnership with Samsung Electronics, but its project-based revenue structure has produced sharp earnings swings, turning profitable in 2025 before reverting to operating losses in the first half of 2026."
  },
  "keypoints": [
   {
-   "ko": "2022년 국내 4번째·중소기업 최초 이음5G 기간통신사업자 등록, 삼성전자 장비 기반 특화망 구축 레퍼런스(반도체 공장·병원·철도·금융)를 확보하며 진입장벽 형성",
-   "en": "Registered as Korea's 4th and first SME e-Um 5G carrier in 2022; built deployment references across semiconductor fabs, hospitals, railways, and financial institutions using Samsung Electronics equipment, establishing meaningful barriers to entry"
+   "ko": "2025년 연결 매출 191.9억원(전년 대비 +11.6%), 영업이익 26.1억원으로 흑자전환하며 영업이익률 13.6%를 기록했다.",
+   "en": "2025 consolidated revenue reached KRW 19.19bn (+11.6% YoY) with operating profit of KRW 2.61bn, marking a return to profit with a 13.6% operating margin."
   },
   {
-   "ko": "2025년 연간 매출 191.89억원·영업이익 26.12억원·OPM 13.6%로 2023년 영업적자(-21.01억원) 이후 2년 만에 완전 이익 회복 달성",
-   "en": "FY2025 revenue of KRW 19.2bn, operating profit of KRW 2.6bn, and OPM of 13.6% represent a full earnings recovery two years after the FY2023 operating loss of KRW -2.1bn"
+   "ko": "2026년 1분기와 2분기 연속으로 영업손실(각각 -11.2억원, -5.5억원)을 기록하며 2025년 하반기의 이익 개선세가 이어지지 못했다.",
+   "en": "The company posted consecutive operating losses in 2026Q1 and Q2 (KRW -1.12bn and -0.55bn respectively), interrupting the profit momentum built in the second half of 2025."
   },
   {
-   "ko": "강한 계절성 구조: 2025년 매출의 약 39%가 4분기(74.1억원)에 집중되는 반면, 1분기는 구조적 손실 발생 구간(2025Q1 -4.74억원, 2026Q1 -11.18억원)으로 하반기 수주 이행이 연간 실적을 좌우",
-   "en": "Pronounced seasonality: ~39% of FY2025 revenue was generated in Q4 (KRW 7.4bn), while Q1 is structurally loss-making (Q1 2025: KRW -474mn OP; Q1 2026: KRW -1.12bn OP), making H2 contract execution the dominant annual earnings driver"
+   "ko": "삼성전자의 5G 특화망 장비(Core/RAN) 비즈니스 파트너로서 반도체·제조 공장 대상 사업 확대를 추진 중이다.",
+   "en": "The company is working as a business partner for Samsung Electronics' private 5G network equipment (Core/RAN) business, targeting expansion into semiconductor and manufacturing plants."
   },
   {
-   "ko": "2026년 6월 SKT와 하나금융그룹 5G 특화망 공급 계약(24.09억원, 납품기한 2026년 12월) 체결—금융권 수직 확장을 시사; 스타링크 위성통신 연동·삼성전자 반도체 공장 기술 검증도 완료",
-   "en": "Signed a KRW 2.4bn supply contract with SKT for Hana Financial Group's private 5G network in June 2026 (delivery deadline: December 2026), signaling vertical expansion into finance; also completed PoC integrating Starlink satellite backhaul and Samsung semiconductor fab deployment"
+   "ko": "기존 기업용 Centrex 통신 인프라·유지보수 사업이 매출 기반을 이루는 가운데, 신사업인 5G 특화망이 성장축으로 부각되고 있다.",
+   "en": "While the legacy enterprise Centrex communication infrastructure and maintenance business remains the revenue base, the private 5G network segment is emerging as a new growth axis."
   },
   {
-   "ko": "2023~2025년 3개년 연속 영업현금흐름(CFO) 마이너스(-25.63억원→-6.53억원→-7.06억원)로 이익 대비 현금 창출 능력의 괴리가 지속되며 모니터링 필요",
-   "en": "Operating cash flow (CFO) turned negative for three consecutive years—KRW -2.6bn (2023), KRW -653mn (2024), and KRW -706mn (2025)—despite positive net income in 2024–2025, a persistent earnings-to-cash divergence that warrants ongoing scrutiny"
+   "ko": "주가순자산비율은 순자산 대비 소폭의 프리미엄이 있는 수준에서 거래되며, 배당은 현재 지급되지 않고 있다.",
+   "en": "The price-to-book ratio trades at a modest premium to net asset value, and the company currently pays no dividend."
   }
  ],
  "business": {
-  "ko": "네이블(구 네이블커뮤니케이션즈)은 2003년 설립된 유무선융합 통신 솔루션 전문기업으로, 2024년 3월 정기주주총회를 통해 현재의 상호로 변경하였다. 사업은 ① 4G·5G 기반 스마트 네트워크 솔루션(이음5G 특화망 구축·운영), ② 재난안전통신망 코어를 담당하는 MCPTT 솔루션(MPGW·Presence Server·Recording Server 등), ③ 기업용 통신서비스를 제공하는 Enterprise VoIP(IP-Centrex·SBC·IP-PBX), ④ 공공안전·스마트시티 대상 AIoT 솔루션의 4개 사업부로 구성된다. 해외 영업은 전략1사업부(MCPTT 수출 포함), 국내는 전략2사업부(스마트 네트워크·ICT 컨버전스·IoT·VoIP 보안)가 담당한다. 2022년 8월 과기정통부로부터 이음5G 주파수를 할당받아 국내 4번째이자 중소기업 최초 이음5G 기간통신사업자가 됐으며, 삼성전자 5G 특화망 장비의 공급사 파트너 지위를 보유한다. 구축 레퍼런스는 이대목동병원, 공항철도, 코미코·미코세라믹스(반도체 제조), 하나금융그룹(2026년 6월 신규 계약)에 걸쳐 있어 수요처 다각화가 이루어지고 있다. 주요 판매처는 SKT·KT·LGU+ 등 통신사업자와 전국 공공기관·기업이다. 최근에는 생성형 AI와 기존 솔루션을 결합한 AICC 서비스(초기 구축비 면제형 월정액)와 AI 기반 특허관리 플랫폼 'Smart Patent'를 출시하며 AI 사업으로 영역을 넓히고 있다. 직원 수는 약 100명 규모의 소형 SW 전문기업이다.",
-  "en": "Nable (formerly Nable Communications) was founded in 2003 as a converged communication solution specialist and officially renamed at its March 2024 AGM. Its business spans four segments: ① Smart Network (e-Um 5G private network deployment and operation based on 4G/5G), ② MCPTT (public-safety network core solutions: MPGW, Presence Server, Recording Server), ③ Enterprise VoIP (IP-Centrex, SBC, IP-PBX for carriers and enterprises), and ④ AIoT (safety and smart-city IoT platforms). The international division manages MCPTT exports, while the domestic division covers smart network, ICT convergence, IoT, and VoIP security. In August 2022, Nable secured an e-Um 5G spectrum license from the Ministry of Science and ICT, becoming Korea's 4th—and first SME—private 5G carrier, backed by a Samsung Electronics equipment supply partnership. Deployment references span Ewha Womans University Mokdong Hospital, Airport Railroad, semiconductor manufacturers Comico and MiCo Ceramics, and Hana Financial Group (new contract, June 2026). Primary customers include domestic carriers (SKT, KT, LGU+), public institutions, and enterprises. The company is also expanding into AI via a subscription-based AI contact center (AICC) and the Smart Patent AI-powered patent management platform. Headcount stands at approximately 100 employees."
+  "ko": "네이블은 코스닥 상장 IT 서비스·소프트웨어 기업으로, 과거 네이블커뮤니케이션즈라는 사명에서 보듯 기업용 통신 인프라 구축과 운용을 핵심 사업으로 영위해왔다. 대표 사업 영역은 기업 내부 통신망인 Centrex 인프라의 구축·증설·유지보수이며, 통신사와 대기업 고객을 대상으로 한 장기 계약형 매출이 안정적인 기반을 이룬다. 최근에는 스마트팩토리 고도화에 따른 5G 특화망(프라이빗 5G) 수요 증가에 대응해 신사업 영역을 확장하고 있다. 삼성전자의 5G 특화망 장비(Core·RAN 등) 비즈니스 파트너로서 관련 장비를 전문적으로 셋업·운용할 수 있는 기술 인력을 보유하고 있다는 점이 회사 측 설명이다. 회사는 스마트팩토리가 고도화될수록 와이파이 중심 무선 환경에서 5G 특화망 기반 통신 인프라로 전환하는 흐름이 가속화될 것으로 보고 있으며, 보안 요구 수준이 높은 제조·방산·반도체 공장을 중심으로 도입이 확산할 가능성을 주목하고 있다. 특히 로봇과 휴머노이드가 공정에 투입되기 위해서는 안정적인 5G 특화망이 필수적이라는 점을 신사업의 성장 논리로 제시하고 있다. 주요 거래 상대방으로는 삼성전자, KT, SK텔레콤 등 대형 통신·전자 기업이 언급되며, 이들과의 수주·공급 계약이 매출의 상당 부분을 좌우하는 구조다. 경쟁 구도상 통신장비·인프라 유지보수 시장은 다수의 중소 IT 서비스 업체가 참여하고 있어, 신사업인 5G 특화망 분야에서의 기술력과 대형 고객사와의 관계가 차별화 요소로 작용할 수 있다.",
+  "en": "Nable is a KOSDAQ-listed IT services and software company that, as reflected in its former name Nable Communications, has built its core business around the construction and operation of enterprise communication infrastructure. Its principal business is the construction, expansion, and maintenance of Centrex enterprise communication networks, with long-term contract-based revenue from telecom carriers and large corporate clients forming a stable base. More recently, the company has expanded into private 5G networks in response to growing demand tied to the advancement of smart factories. According to the company, it employs technical personnel specialized in setting up and operating Samsung Electronics' private 5G network equipment, including Core and RAN systems, as a business partner. The company anticipates that as smart factories advance, the shift from Wi-Fi-centric wireless environments toward private 5G-based communication infrastructure will accelerate, particularly in manufacturing, defense, and semiconductor plants where security requirements are high. It has positioned the deployment of robots and humanoid units on production lines, which it says require stable private 5G connectivity, as the core growth logic behind this new business line. Major counterparties cited include large telecom and electronics firms such as Samsung Electronics, KT, and SK Telecom, and contracts with these clients significantly influence overall revenue. In the competitive landscape, the telecom equipment and infrastructure maintenance market includes numerous small and mid-sized IT service providers, meaning technical capability and relationships with major clients in the new private 5G segment could serve as differentiating factors."
  },
  "earnings": {
-  "ko": "연간 실적은 2022년 고점(매출 182.99억원, 영업이익 33.62억원, OPM 18.4%)에서 2023년 급락(매출 134.44억원, 영업손실 -21.01억원, OPM -15.6%)을 거쳐, 2024년 부분 회복(매출 172.00억원, 영업이익 3.85억원, OPM 2.2%)과 2025년 완전 회복(매출 191.89억원, 영업이익 26.12억원, OPM 13.6%)으로 이어졌다. 2023년 적자는 주력 기업통화 시장의 수요 위축과 신사업 투자비용 증가가 복합된 결과였으며, 2025년 회복은 5G 무선 서비스 가입자 증가·B2B 기업 통화 매출 성장·클라우드 기반 B2B 상품 대체 수요 확대가 주요 원인으로 작용했다. 분기별로는 뚜렷한 계절성이 관찰된다. 2025년 1분기(매출 30.0억원, 영업손실 -4.74억원)와 2분기(36.0억원, 영업이익 5.83억원)의 합산 매출 비중이 전체의 약 34%에 불과한 반면, 3분기(51.8억원, 영업이익 10.71억원)와 4분기(74.1억원, 영업이익 14.33억원)가 약 66%를 차지하며 4분기 단독으로 연간 영업이익의 절반 이상을 창출했다. 2026년 1분기는 매출 28.51억원, 영업손실 -11.18억원으로 전년 동기(매출 30.0억원, 영업손실 -4.74억원) 대비 수익성 훼손이 뚜렷이 확대됐다. 현금흐름 측면에서는 2022년 CFO 72.28억원(양호)이었으나 2023년(-25.63억원), 2024년(-6.53억원), 2025년(-7.06억원)으로 3년 연속 마이너스가 이어졌다. 이익의 현금 전환에 시차가 발생하는 원인으로는 특화망 구축 특성상의 매출채권 확대 가능성이 있다. 부채비율은 2025년 13.4%로 매우 낮아 재무 안전성 자체는 유지되고 있다.",
-  "en": "The annual earnings trajectory moved from a 2022 peak (revenue KRW 18.3bn, operating profit KRW 3.4bn, OPM 18.4%) through a 2023 trough (revenue KRW 13.4bn, operating loss KRW -2.1bn, OPM -15.6%), followed by a partial 2024 recovery (revenue KRW 17.2bn, OP KRW 385mn, OPM 2.2%) and a full 2025 restoration (revenue KRW 19.2bn, OP KRW 2.6bn, OPM 13.6%). The 2023 slump reflected a contraction in the core B2B telephony market combined with elevated new-business investment costs; the 2025 recovery was driven by rising 5G wireless B2B subscribers, enterprise telephony growth, and expanding cloud-based B2B product substitution demand. Quarterly results reveal pronounced seasonality: in 2025, Q1 (KRW 3.0bn revenue, OP KRW -474mn) and Q2 (KRW 3.6bn, OP KRW 583mn) together accounted for only ~34% of annual revenue, while Q3 (KRW 5.2bn, OP KRW 1.07bn) and Q4 (KRW 7.4bn, OP KRW 1.43bn) contributed ~66%, with Q4 alone generating more than half of full-year operating profit. Q1 2026 came in at revenue KRW 2.85bn and operating loss KRW -1.12bn—materially worse than Q1 2025's KRW -474mn on both dimensions. On the cash-flow front, 2022 CFO was a healthy KRW +7.2bn, but turned negative in each of the subsequent three years (2023: KRW -2.6bn; 2024: KRW -653mn; 2025: KRW -706mn), likely reflecting receivables build-up tied to project-based revenue recognition. The debt ratio remains low at 13.4% (FY2025), preserving balance-sheet resilience."
+  "ko": "네이블의 연간 실적은 뚜렷한 등락을 보였다. 2022년 매출 183.0억원, 영업이익 33.6억원(영업이익률 18.4%), 순이익 52.8억원으로 견조했으나, 2023년에는 매출이 134.4억원으로 급감하며 영업손실 -21.0억원(영업이익률 -15.6%), 순손실 -14.4억원을 기록해 적자로 전환했다. 2024년에는 매출이 172.0억원으로 회복됐지만 영업이익은 3.9억원(영업이익률 2.2%)에 그쳐 수익성 회복은 더딘 모습이었고, 순이익 12.9억원은 영업외 요인의 기여가 있었던 것으로 추정된다. 2025년에는 매출 191.9억원(전년 대비 +11.6%), 영업이익 26.1억원(영업이익률 13.6%), 순이익 25.2억원으로 뚜렷한 이익 회복이 나타났다. 분기별로 보면 2025년 3분기(매출 51.8억원, 영업이익 10.7억원)와 4분기(매출 74.1억원, 영업이익 14.3억원)에 실적이 집중되며 연간 실적을 견인했는데, 이는 프로젝트성 매출이 하반기, 특히 연말에 집중되는 업종 특성을 반영한다. 그러나 2026년 1분기 매출은 28.5억원으로 급감하며 영업손실 -11.2억원을 기록했고, 2분기에도 매출 34.5억원, 영업손실 -5.5억원으로 손실이 이어져 상반기 연속 적자를 보였다. 이 결과 자체 산출 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순이익은 약 8.9억원 수준으로, 2025년 한 해의 이익 규모에 비해 크게 줄어든 흐름을 보이고 있다. 이러한 실적 패턴은 회사의 매출이 대형 고객사의 발주 시점에 좌우되는 프로젝트형 구조를 갖고 있음을 시사하며, 연간 실적 해석 시 분기 편차를 감안할 필요가 있다.",
+  "en": "Nable's annual results have shown pronounced swings. In 2022 the company posted revenue of KRW 18.30bn, operating profit of KRW 3.36bn (18.4% operating margin), and net profit of KRW 5.28bn — a solid year — but revenue fell sharply to KRW 13.44bn in 2023, turning into an operating loss of KRW -2.10bn (-15.6% margin) and a net loss of KRW -1.44bn. In 2024, revenue recovered to KRW 17.20bn, though operating profit was a modest KRW 385mn (2.2% margin), indicating a slow profitability recovery, while net profit of KRW 1.29bn appears to have benefited from non-operating factors. In 2025, revenue rose to KRW 19.19bn (+11.6% YoY), operating profit reached KRW 2.61bn (13.6% margin), and net profit came to KRW 2.52bn, marking a clear profit recovery. On a quarterly basis, results were concentrated in the third quarter of 2025 (revenue of KRW 5.18bn, operating profit of KRW 1.07bn) and the fourth quarter (revenue of KRW 7.41bn, operating profit of KRW 1.43bn), reflecting the industry characteristic of project-based revenue clustering in the second half, particularly year-end. However, revenue fell sharply to KRW 2.85bn in the first quarter of 2026, producing an operating loss of KRW -1.12bn, and losses continued into the second quarter with revenue of KRW 3.45bn and an operating loss of KRW -0.55bn, resulting in consecutive losses through the first half of 2026. As a result, the sum of attributable net profit over the trailing four quarters (2025Q3 through 2026Q2), calculated internally, stands at roughly KRW 0.89bn, notably smaller than the full-year 2025 profit level. This earnings pattern suggests that the company's revenue is heavily influenced by the timing of orders from large clients, and quarterly variance should be taken into account when interpreting annual results."
  },
  "industry": {
-  "ko": "이음5G(5G 특화망) 시장은 과기정통부가 2021년 말 제도화한 이후 주파수 할당 사업자 수가 초기 4개에서 8개 이상(네이버클라우드·LG CNS·SK네트웍스서비스·네이블·CJ올리브네트웍스·KT MOS·세종텔레콤·위즈코어 등)으로 빠르게 확대됐으며, 2027년까지 연평균 37.8% 성장이 전망된다. 초기 수요는 AI·로봇·자율주행 결합의 스마트팩토리·의료·물류·철도·공공안전 등으로 다변화되고 있으며, 반도체 공장 등 제조 산업의 초저지연·고신뢰망 수요가 핵심 성장 동력이다. 경쟁 구도는 대기업 IT 계열사(LG CNS, SK네트웍스서비스, CJ올리브네트웍스, 삼성SDS, 포스코DX, 현대오토에버 등)와 전문 중소 사업자(네이블, 위즈코어, 큐비콤 등)가 혼재한다. 삼성전자가 국내 이음5G 장비 생태계를 독점적으로 공급하고 있어 삼성전자 파트너 지위가 수주 경쟁력의 핵심 변수다. 글로벌 MCPTT 시장은 공공안전망 현대화 수요를 바탕으로 별도 성장 동력을 제공하며, 기업 IoT 시장도 성장세가 지속되고 있다. 다만 대형 SI 사업자들의 이음5G 진입 가속화와 라이선시 수 증가로 인해 사업자 간 경쟁 강도는 점진적으로 높아지는 국면이다.",
-  "en": "Korea's e-Um 5G (private 5G) market, formalized by the Ministry of Science and ICT in late 2021, has expanded from four initial spectrum licensees to more than eight (Naver Cloud, LG CNS, SK Networks Service, Nable, CJ OliveNetworks, KT MOS, Sejong Telecom, Wizcore, and others), with the market projected to grow at a CAGR of 37.8% through 2027. Early deployment use cases are diversifying across AI/robot-integrated smart factories, healthcare, logistics, railways, and public safety, with manufacturing and semiconductor fabs driving near-term demand through requirements for ultra-low-latency, high-reliability networks. The competitive landscape mixes large IT conglomerates (LG CNS, SK Networks Service, CJ OliveNetworks, Samsung SDS, POSCO DX, Hyundai AutoEver) with specialized SME operators (Nable, Wizcore, Cubicom, etc.). Samsung Electronics' near-exclusive domestic supply of private 5G equipment makes Samsung partner status a critical competitive differentiator. The global MCPTT market offers a separate secular growth engine underpinned by public-safety network modernization, and enterprise IoT demand continues to expand. However, the accelerating entry of large SI affiliates and the rising number of spectrum licensees are gradually intensifying competitive pressure across the ecosystem."
+  "ko": "네이블이 속한 국내 통신 인프라·IT 서비스 산업은 통신사와 대기업의 설비 투자 주기에 영향을 받는 구조로, 매출이 특정 프로젝트나 발주 시점에 집중되는 경향이 있다. 기존 Centrex 등 기업용 통신망 유지보수 시장은 성숙기에 접어들었으며, 성장의 상당 부분은 신규 인프라 전환 수요에서 나온다. 최근 주목받는 흐름은 스마트팩토리의 고도화에 따른 5G 특화망(프라이빗 5G) 시장의 확대로, 보안성과 저지연 통신이 요구되는 반도체·제조·방산 분야에서 도입 확대가 논의되고 있다. 특히 로봇과 휴머노이드의 공정 투입이 확산될 경우 이들 기기 간 통신을 위한 5G 특화망 인프라 수요가 함께 늘어날 수 있다는 시각이 업계에서 제기된다. 이 시장에서는 삼성전자, SK텔레콤, KT 등 대형 통신장비·통신사업자가 장비·솔루션을 공급하고, 네이블과 같은 파트너사가 구축·운용 서비스를 담당하는 분업 구조가 형성돼 있다. 경쟁사로는 통신장비·네트워크 인프라 분야의 다수 중소기업이 존재하며, 각 사가 보유한 기술 인증·고객 관계에 따라 시장 점유가 갈리는 구조다. 산업 전반적으로 AI·로봇 확산에 따른 통신 인프라 고도화 수요가 커지는 추세이나, 이는 아직 초기 단계로 시장 규모나 성장 속도에 대한 공식적인 통계는 제한적이다.",
+  "en": "The domestic communication infrastructure and IT services industry in which Nable operates is influenced by the capital expenditure cycles of telecom carriers and large corporations, with revenue tending to concentrate around specific projects or order timing. The existing enterprise communication network maintenance market, including Centrex, has entered a mature phase, with much of the growth now coming from demand for infrastructure transition. A notable recent trend is the expansion of the private 5G network market driven by the advancement of smart factories, with adoption being discussed particularly in semiconductor, manufacturing, and defense sectors that require security and low-latency communication. Industry observers have suggested that as robots and humanoid units become more common on production lines, demand for private 5G infrastructure to support communication between these devices could increase in tandem. In this market, a division of labor has formed in which large telecom equipment makers and carriers such as Samsung Electronics, SK Telecom, and KT supply equipment and solutions, while partner firms like Nable handle deployment and operation services. Competitors include numerous small and mid-sized firms in the telecom equipment and network infrastructure space, with market share divided according to each firm's technical certifications and client relationships. Overall, demand for upgraded communication infrastructure driven by AI and robotics adoption is growing, though this trend remains at an early stage, and official statistics on market size or growth rate remain limited."
  },
  "outlook": {
-  "ko": "2026년 6월 체결한 SKT·하나금융그룹 5G 특화망 공급 계약(24.09억원)은 납품 기한이 2026년 12월 31일로, 2025년 매출 기준 12.55%에 해당하는 단일 계약이 하반기 실적에 직접 반영될 예정이다. 이는 특화망 사업이 기존 제조·의료·철도에서 금융권으로 수요처를 넓혔다는 사업 다각화 측면에서 긍정적 신호다. 스타링크 위성통신과 5G 특화망을 결합한 기술 검증(PoC) 완료는 유선 인프라 부재 현장(건설·자원 개발·해상 등)이라는 새로운 시장으로의 확장 가능성을 시사한다. AI 신사업인 AICC(초기 구축비 면제 월정액형)와 Smart Patent 플랫폼은 초기 단계이나, 구독 수익 모델로 전환될 경우 계절성 완화에 기여할 수 있다. 2025년 계절 패턴이 반복된다면 2분기부터 영업이익 흑자 전환이 기대되나, 2026년 1분기 손실 폭 확대(-11.18억원)는 고정비 상승 또는 수주 시점 이연 가능성을 내포하고 있어 후속 분기 공시를 통한 확인이 필요하다. 삼성전자 반도체 공장 추가 수주 및 MCPTT 해외 신규 계약 여부도 하반기 실적 가시성을 높이는 핵심 변수다.",
-  "en": "The KRW 2.4bn Hana Financial Group private 5G supply contract signed with SKT in June 2026, with a delivery deadline of December 31, 2026, represents a single contract equivalent to ~12.6% of FY2025 revenue and is set to flow directly into H2 2026 results. This expansion into financial services—beyond the existing strongholds in manufacturing, healthcare, and railways—is a constructive sign of vertical diversification. The completed Starlink satellite-5G integration PoC opens addressable markets in environments lacking wired infrastructure (construction sites, resource development, maritime operations). The new AI offerings—subscription-based AICC with no upfront installation cost and the Smart Patent platform—are at an early stage, but if they gain traction as recurring-revenue streams, they could help dampen the company's pronounced seasonality. If 2025's seasonal pattern repeats, operating income should turn positive from Q2 2026 onward; however, the wider-than-expected Q1 2026 loss (KRW -1.12bn) may signal higher fixed-cost absorption or order-timing slippage, details requiring confirmation from subsequent quarterly disclosures. Additional Samsung semiconductor fab orders and new MCPTT export wins represent further H2 2026 upside wildcards."
+  "ko": "네이블은 5G 특화망 사업을 신성장축으로 제시하며, 삼성전자의 관련 장비 비즈니스 파트너 지위를 바탕으로 반도체·제조 현장을 대상으로 한 구축 사업 확대를 기대하고 있다고 밝혔다. 회사 관계자는 최근 스마트팩토리에서 보안성과 연결성을 확보하는 기술로 5G에 대한 고객사 문의가 늘고 있다고 언급했다. 삼성전자와 협력해 반도체 제조 현장에 초고속 통신망을 구축한 사례가 2026년 4월 언론에 보도된 바 있다. 다만 이러한 신사업 관련 구체적인 수주 규모나 매출 기여 시점에 대한 공식 가이던스는 확인되지 않았다. 기존 사업인 통신 인프라 유지보수는 안정적인 매출 기반으로 작용할 것으로 보이나, 신사업의 매출 반영 시점과 규모에 따라 향후 실적의 방향성이 갈릴 수 있다. 2026년 상반기 연속 영업손실을 기록한 만큼, 하반기 프로젝트 매출 반영 여부가 연간 실적 회복의 관건이 될 것으로 판단된다. 회사의 향후 공시와 수주 계약 관련 발표를 통해 신사업 진행 상황을 확인할 필요가 있다.",
+  "en": "Nable has presented its private 5G network business as a new growth pillar, stating that it expects to expand deployment work targeting semiconductor and manufacturing sites based on its position as a business partner for Samsung Electronics' related equipment business. A company representative noted that customer inquiries about 5G technology for securing both security and connectivity in smart factories have been increasing. A case of the company partnering with Samsung Electronics to build high-speed communication networks at semiconductor manufacturing sites was reported in the media in April 2026. However, no specific official guidance has been confirmed regarding the scale of related orders or the timing of their revenue contribution from this new business. The existing communication infrastructure maintenance business is expected to continue serving as a stable revenue base, but the future direction of earnings may hinge on when and how much revenue the new business generates. Given the consecutive operating losses recorded in the first half of 2026, whether project revenue materializes in the second half is likely to be key to any annual earnings recovery. Further disclosures and contract announcements from the company will need to be monitored to track progress in this new business."
  },
  "valuation_comment": {
-  "ko": "현재 주당순자산(BPS 5,448원) 대비 주가는 소폭의 프리미엄을 얹은 구간에 위치해 있어 순자산 기준 밸류에이션 부담은 상대적으로 낮은 편이다. 주당순이익(EPS 293원)은 직전 4개 분기(2025Q2~2026Q1) 누적치를 반영한 것으로, 계절적 저점인 2026년 1분기 대규모 손실이 포함되어 있어 2025년 연간 확정 이익 수준과 괴리가 있다. 이익의 적자→흑자 전환이라는 방향성 회복이 현 밸류에이션에 일정 수준 반영되어 있으나, 이익 배율은 코스닥 소프트웨어 업종 평균을 상회하는 구간에 형성되어 있어 이익 지속성에 대한 프리미엄이 내포되어 있다고 볼 수 있다. 무배당(DPS 0원) 기조가 지속되고 있어 배당수익률은 업종 평균을 크게 하회하는 수준이다. 3년 연속 마이너스 영업현금흐름과 2026년 1분기 손실 폭 확대는 이익의 실질 현금 기여도를 재점검하게 만드는 요인으로, 하반기 수주 이행과 CFO 개선 여부가 밸류에이션 신뢰도의 관건이다.",
-  "en": "The current share price carries a modest premium relative to book value per share (BPS: KRW 5,448), implying limited stress from a net-asset perspective. The headline EPS of KRW 293 reflects the cumulative sum of the four most recent quarters (Q2 2025 through Q1 2026)—including the large Q1 2026 loss—and therefore diverges from the FY2025 confirmed earnings power. The recovery direction from losses to profits appears to be partially priced in, but the per-share earnings multiple sits above the KOSDAQ software sector average, implying a premium for earnings sustainability that still needs to be validated. With zero dividends (DPS: KRW 0), yield compares unfavorably with sector peers. Three consecutive years of negative operating cash flow and the widening Q1 2026 loss raise legitimate questions about earnings quality; H2 2026 contract delivery and a reversal in CFO trends are the most consequential variables for underpinning valuation credibility."
+  "ko": "네이블의 주가는 과거 연간 실적이 적자와 흑자를 오갔던 만큼 특정 시점의 이익 수준을 기준으로 한 가격 배수 해석에 유의가 필요하다. 최근 네 개 분기 기준으로 산출한 이익 대비 주가 배수는 2025년 하반기의 높은 이익 수준이 반영된 뒤 2026년 상반기 연속 손실로 이익 기여가 줄어든 구간에 해당해, 과거 이익이 안정적이던 시기의 거래 배수와 단순 비교하기 어렵다. 순자산 대비로는 소폭의 프리미엄이 있는 수준에서 거래되고 있어, 장부가치를 웃도는 가격이 형성돼 있는 편이다. 배당은 현재 지급되지 않아 배당 관련 수익률 비교는 의미를 갖기 어렵다. 종합적으로 볼 때, 이 종목의 가치 평가는 신사업인 5G 특화망의 매출 반영 시점과 규모, 그리고 기존 통신 인프라 사업의 안정성이 함께 반영되는 구조로 이해할 필요가 있다.",
+  "en": "Because Nable's annual results have alternated between losses and profits, care is needed when interpreting price multiples based on any single period's earnings level. The trailing four-quarter earnings multiple reflects a period in which the strong profit levels of the second half of 2025 were followed by consecutive losses in the first half of 2026, making simple comparison with multiples from periods of more stable earnings difficult. Relative to net asset value, the shares trade at a modest premium, meaning the price sits above book value. The company currently pays no dividend, so dividend yield comparisons carry limited meaning. Overall, valuation of this stock should be understood as reflecting both the timing and scale of revenue contribution from the new private 5G business and the stability of the existing communication infrastructure business."
  },
  "bull": [
   {
    "title": {
-    "ko": "이음5G 선발 지위와 삼성전자 파트너십",
-    "en": "Early-Mover Position in Private 5G Backed by Samsung Partnership"
+    "ko": "5G 특화망 신사업 확장 가능성",
+    "en": "Potential Expansion of the Private 5G Business"
    },
    "body": {
-    "ko": "국내 4번째·중소기업 최초 이음5G 기간통신사업자로서 삼성전자 장비 기반 독점적 파트너십이 초기 진입장벽을 형성한다. 반도체 공장·병원·철도·금융에 걸친 레퍼런스 다각화는 단일 산업 노출을 낮추고 영업 확장 기반을 제공한다. 2027년까지 연평균 37.8% 성장이 전망되는 시장에서 선발 사업자 효과가 중장기 매출 성장을 뒷받침할 수 있다.",
-    "en": "As Korea's fourth and first SME e-Um 5G operator, Nable holds a privileged Samsung Electronics equipment partnership that creates meaningful barriers to entry. Deployment references spanning semiconductor fabs, hospitals, railways, and financial institutions reduce single-industry concentration and provide a broad sales expansion base. Early-mover advantages in a market projected to grow at a 37.8% CAGR through 2027 underpin the medium- to long-term growth narrative."
+    "ko": "네이블은 삼성전자의 5G 특화망 장비 비즈니스 파트너로서 반도체·제조 공장을 대상으로 한 구축 사업 확대를 기대하고 있다. 스마트팩토리 고도화와 로봇·휴머노이드 도입 확산이 관련 인프라 수요를 늘릴 수 있다는 논리가 제시되고 있다. 2026년 4월에는 삼성전자와의 협력을 통해 반도체 제조 현장에 통신망을 구축한 사례가 보도됐다. 이 신사업이 본격적으로 매출에 반영될 경우 기존 사업 대비 성장 속도가 달라질 수 있다.",
+    "en": "Nable, as a business partner of Samsung Electronics for 5G private network equipment, expects to expand its deployment business targeting semiconductor and manufacturing plants. The logic presented is that the advancement of smart factories and the spread of robot/humanoid adoption could increase demand for related infrastructure. In April 2026, it was reported that, through collaboration with Samsung Electronics, a communication network was built at a semiconductor manufacturing site. If this new business is fully reflected in revenue, the growth pace could differ from that of the existing business."
    }
   },
   {
    "title": {
-    "ko": "이익 회복 확인과 저부채 재무 구조",
-    "en": "Confirmed Earnings Recovery and Low-Leverage Balance Sheet"
+    "ko": "2025년 이익 회복 확인",
+    "en": "Confirmed Profit Recovery in 2025"
    },
    "body": {
-    "ko": "2023년 영업적자(-21.01억원)의 저점에서 2025년 영업이익 26.12억원, OPM 13.6%로 회복하며 수익성 복원 능력을 검증했다. 부채비율 13.4%, 자기자본 361.10억원으로 레버리지 부담이 극히 낮아 추가 투자 여력과 금리 리스크 방어력이 높다. 재무적 안전마진이 확보된 상태에서 5G 특화망 시장 성장에 편승할 수 있는 구조적 토대를 갖추고 있다.",
-    "en": "The rebound from an operating loss of KRW -2.1bn in 2023 to operating profit of KRW 2.6bn with a 13.6% OPM in 2025 validates the company's capacity to restore profitability. A debt ratio of only 13.4% and equity of KRW 36.1bn leave ample room for incremental investment with minimal interest-rate exposure. This financial resilience provides a solid base from which to capture growth in the expanding private 5G market."
+    "ko": "2023년 영업손실을 기록했던 네이블은 2024년을 거쳐 2025년 영업이익률 13.6%까지 수익성을 회복했다. 매출도 2025년 191.9억원으로 전년 대비 두 자릿수 성장을 기록했다. 이는 회사의 기존 통신 인프라 사업이 다시 견조한 수주를 확보했음을 보여준다.",
+    "en": "Nable, which recorded an operating loss in 2023, recovered profitability through 2024 and reached an operating margin of 13.6% in 2025. Revenue also grew by double digits year-over-year to KRW 19.19 billion in 2025. This shows that the company's existing telecom infrastructure business secured solid orders again."
    }
   },
   {
    "title": {
-    "ko": "MCPTT 해외 수출·AI 신사업의 중장기 성장 옵션",
-    "en": "MCPTT Export and AI New Businesses as Medium-Term Growth Options"
+    "ko": "대형 고객사와의 관계",
+    "en": "Relationships With Major Clients"
    },
    "body": {
-    "ko": "글로벌 MCPTT 시장은 공공안전망 현대화 수요와 함께 지속 성장하고 있으며, 해외 영업 조직이 수출 파이프라인을 관리하고 있다. 생성형 AI 기반 AICC·Smart Patent는 구독 수익 모델 전환 시 계절적 편중을 완화할 수 있는 잠재력을 갖는다. 스타링크 위성통신과 5G 특화망 결합 기술 검증 완료는 유선 인프라 부재 현장으로의 시장 확장 가능성을 높이며 신규 수요처 개발을 지원한다.",
-    "en": "The global MCPTT market continues to expand on public-safety network modernization demand, with Nable's international sales division actively managing the export pipeline. Generative-AI-driven AICC and Smart Patent services have the potential to shift toward recurring subscription revenue, which could smooth the company's structural seasonal earnings variance. The completed Starlink-5G integration PoC opens addressable markets in environments without fixed-line infrastructure—construction, resource extraction, and maritime—broadening the new-customer development pipeline."
+    "ko": "삼성전자, KT, SK텔레콤 등 국내 대형 통신·전자 기업과의 거래 관계는 신규 사업 진입의 기반이 될 수 있다. 특히 삼성전자와의 협력은 5G 특화망 장비 셋업·운용이라는 기술적 신뢰를 바탕으로 이뤄지고 있다. 이러한 관계는 소규모 경쟁사 대비 진입장벽으로 작용할 수 있다.",
+    "en": "Transactional relationships with major domestic telecom and electronics companies such as Samsung Electronics, KT, and SK Telecom can serve as a foundation for entering new businesses. In particular, the collaboration with Samsung Electronics is based on technical trust built through the setup and operation of 5G private network equipment. Such relationships may act as an entry barrier compared to smaller competitors."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2026년 1분기 손실 심화와 구조적 계절성",
-    "en": "Deepening Q1 2026 Loss and Structural Seasonality"
+    "ko": "2026년 상반기 연속 영업손실",
+    "en": "Consecutive Operating Losses in H1 2026"
    },
    "body": {
-    "ko": "2026년 1분기 영업손실은 -11.18억원으로 전년 동기(-4.74억원) 대비 두 배 이상 확대됐고, 매출도 소폭 감소(30.0억원→28.51억원)하면서 단순 비용 증가를 넘어 수주 이연 가능성도 시사한다. 연간 매출의 약 39%가 4분기에 집중되는 편향 구조는 수주 시점·납품 일정의 변화에 실적이 크게 흔들릴 수 있는 취약점이다. 이 계절성이 해소되지 않으면 중간 분기 실적의 반복적 변동성이 투자자 신뢰도에 부정적 영향을 줄 수 있다.",
-    "en": "The Q1 2026 operating loss widened to KRW -1.12bn from KRW -474mn in Q1 2025—more than double on a year-over-year basis—and revenue also slipped slightly (from KRW 3.0bn to KRW 2.85bn), suggesting the deterioration extends beyond cost pressures and may reflect order timing shifts. The underlying structural concentration of ~39% of annual revenue in Q4 makes full-year results acutely sensitive to any slippage in contract awards or delivery schedules. If this seasonality is not moderated, recurring mid-year volatility may persistently weigh on investor confidence."
+    "ko": "2026년 1분기와 2분기 모두 영업손실을 기록하며 2025년의 이익 회복세가 이어지지 못했다. 매출 역시 2025년 4분기 74.1억원에서 2026년 1분기 28.5억원으로 크게 줄었다. 프로젝트성 매출 구조상 특정 분기의 수주 부재가 곧바로 손익에 영향을 미치는 것으로 해석된다.",
+    "en": "Both Q1 and Q2 of 2026 recorded operating losses, failing to continue the profit recovery trend seen in 2025. Revenue also fell sharply from KRW 7.41 billion in Q4 2025 to KRW 2.85 billion in Q1 2026. Given the project-based revenue structure, the absence of orders in a particular quarter is interpreted as directly affecting profit and loss."
    }
   },
   {
    "title": {
-    "ko": "3년 연속 마이너스 영업현금흐름",
-    "en": "Three Consecutive Years of Negative Operating Cash Flow"
+    "ko": "실적 변동성과 프로젝트 의존 구조",
+    "en": "Earnings Volatility Tied to Project-Based Structure"
    },
    "body": {
-    "ko": "순이익이 플러스로 전환된 2024·2025년에도 영업현금흐름(CFO)은 각각 -6.53억원, -7.06억원으로 마이너스가 이어졌다. 이익과 현금 사이의 괴리는 특화망 프로젝트 특성상 매출채권·재고 증가에서 비롯될 수 있으며, 잉여현금흐름 창출 능력에 대한 의문을 낳는다. 신사업 투자 확대 시 외부 자금 조달 필요성이 발생할 경우 주주 희석 또는 이자 비용 증가로 연결될 수 있다.",
-    "en": "Even in 2024 and 2025—years when net income turned positive—operating cash flow (CFO) remained negative at KRW -653mn and KRW -706mn, respectively. The persistent earnings-to-cash divergence likely reflects working capital build-up (receivables and inventory growth inherent in project-based private 5G deployments), casting doubt on underlying free-cash-flow generation capacity. If new-business investment accelerates, recourse to external financing could result in shareholder dilution or higher interest costs."
+    "ko": "네이블의 연간 실적은 2022년 흑자, 2023년 적자, 2024년 소폭 흑자, 2025년 흑자 확대로 등락을 반복했다. 매출이 특정 시점의 대형 계약 체결 여부에 좌우되는 구조는 예측 가능성을 낮춘다. 신사업인 5G 특화망 역시 아직 구체적인 매출 기여 규모가 공개되지 않아 불확실성이 남아 있다.",
+    "en": "Nable's annual performance fluctuated repeatedly, posting a profit in 2022, a loss in 2023, a slight profit in 2024, and an expanded profit in 2025. A structure in which revenue depends on whether large-scale contracts are signed at particular points in time lowers predictability. Uncertainty remains regarding the new 5G private network business as well, since the specific scale of its revenue contribution has not yet been disclosed."
    }
   },
   {
    "title": {
-    "ko": "대기업 IT 계열사와의 경쟁 심화 및 소형주 유동성 제약",
-    "en": "Intensifying Large-Cap IT Competition and Micro-Cap Liquidity Constraints"
+    "ko": "배당 부재",
+    "en": "Absence of Dividends"
    },
    "body": {
-    "ko": "이음5G 사업자 수는 빠르게 증가했으며 삼성SDS·포스코DX·현대오토에버 등 대기업 IT 계열사도 포함된다. 네이버클라우드·LG CNS 등과의 수주 경쟁에서 자본력·브랜드·인력 측면의 열위가 있을 수 있고, 이는 수주 단가 압박으로 연결될 수 있다. 시가총액 약 438억원 수준의 소형주는 거래량이 제한적이어서 기관·외국인 수급에 따른 주가 변동성이 높고, 증권사 커버리지도 매우 제한적이어서 정보 비대칭이 상존한다.",
-    "en": "The pool of e-Um 5G licensees has grown rapidly and now includes large IT conglomerates such as Samsung SDS, POSCO DX, and Hyundai AutoEver. Head-to-head bidding against scale players like Naver Cloud and LG CNS may expose disadvantages in financial firepower, brand, and talent depth, potentially pressuring contract pricing. As a micro-cap with a market capitalization of approximately KRW 44bn, limited daily trading volume amplifies share-price swings from institutional and foreign-investor flows, and minimal sell-side analyst coverage sustains structural information asymmetry."
+    "ko": "회사는 현재 배당을 지급하지 않고 있어 주주환원 측면에서 확인할 지표가 제한적이다. 이익이 재투자나 신사업 확장에 활용되는 구조로 보이나, 관련 공시를 통한 확인이 필요하다.",
+    "en": "The company currently does not pay dividends, limiting the indicators available to assess shareholder returns. It appears that profits are being used for reinvestment or expansion into new businesses, but this needs to be confirmed through related disclosures."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "수주 집중도 및 납품 시점 리스크",
-    "en": "Order Concentration and Delivery Timing Risk"
+    "ko": "매출 집중·고객사 편중",
+    "en": "Revenue Concentration in Major Clients"
    },
    "body": {
-    "ko": "소수 대형 수주가 연간 실적의 상당 부분을 결정하는 구조에서 단일 계약의 지연이나 취소는 매출과 영업이익에 즉각적 영향을 준다. 2026년 하나금융 5G 계약(24.09억원)은 2025년 매출 대비 약 12.6%에 해당하는 단일 수주로, 납품 기한(2026년 12월 31일) 준수 여부가 연간 실적의 핵심 변수다. 공공 조달 특성상 예산 배정·인허가 지연으로 수주 시점이 이연될 가능성도 상존한다.",
-    "en": "A business model dominated by a small number of large contracts makes Nable's annual results acutely sensitive to any single order's delay or cancellation. The 2026 Hana Financial contract (KRW 2.4bn)—representing ~12.6% of FY2025 revenue—makes on-time delivery (deadline: December 31, 2026) a pivotal annual earnings variable. Budget allocation and permitting delays inherent in public and financial-sector procurement create ongoing order-timing risk."
+    "ko": "매출의 상당 부분이 삼성전자, KT, SK텔레콤 등 소수 대형 고객사와의 계약에 의존하는 것으로 보인다. 특정 고객사의 발주 축소나 계약 지연이 발생할 경우 실적에 직접적인 영향을 줄 수 있다. 다변화되지 않은 고객 구조는 분기별 실적 변동성을 확대하는 요인이다.",
+    "en": "A significant portion of revenue appears to depend on contracts with a small number of major customers such as Samsung Electronics, KT, and SK Telecom. If a particular customer reduces orders or delays contracts, it could directly affect performance. A customer base that is not diversified is a factor that increases quarterly earnings volatility."
    }
   },
   {
    "cat": {
-    "ko": "기술 표준 진화 및 삼성전자 장비 의존 리스크",
-    "en": "Technology Standards Evolution and Samsung Equipment Dependency Risk"
+    "ko": "신사업 불확실성",
+    "en": "Uncertainty Around the New Business"
    },
    "body": {
-    "ko": "5G 코어·특화망 기술은 3GPP 표준의 지속적 진화(5G-Advanced, 6G 로드맵)에 따라 제품 사이클 압박을 받는다. 삼성전자 장비 플랫폼에 대한 높은 의존도는 삼성전자의 전략 변화, 경쟁 장비사의 국내 진입 확대, 파트너십 조건 변경 등에 노출되는 구조적 취약점이다. 해외 MCPTT 시장에서 신흥 경쟁사의 저가 공세는 수출 계약 마진을 압박할 수 있다.",
-    "en": "5G core and private-network technology faces continuous product-cycle pressure from evolving 3GPP standards (5G-Advanced, the emerging 6G roadmap). The company's strong dependence on Samsung Electronics' equipment platform is a structural vulnerability to shifts in Samsung's product or partnership strategy and to the entry of competing gear vendors into the domestic market. In the global MCPTT segment, aggressive pricing from emerging competitors may compress export contract margins."
+    "ko": "5G 특화망 사업은 아직 초기 단계로, 구체적인 수주 규모나 매출 반영 시점에 대한 공식 가이던스가 확인되지 않았다. 경쟁사의 시장 진입이나 기술 표준 변화에 따라 사업 전개 속도가 달라질 수 있다. 정부의 주파수 할당·특화망 관련 정책 변화도 사업 확장에 영향을 줄 수 있는 변수다.",
+    "en": "The 5G private network business is still in its early stages, and no official guidance has been confirmed regarding the specific scale of orders or the timing of revenue recognition. The pace of business development may vary depending on competitors' market entry or changes in technical standards. Changes in government policy related to spectrum allocation and private networks are also a variable that could affect business expansion."
    }
   },
   {
    "cat": {
-    "ko": "AI 신사업 성과 불확실성 및 비용 선행 리스크",
-    "en": "AI New-Business Execution Uncertainty and Front-Loaded Cost Risk"
+    "ko": "분기 실적 편차에 따른 해석 리스크",
+    "en": "Interpretation Risk From Quarterly Earnings Volatility"
    },
    "body": {
-    "ko": "AICC·Smart Patent 등 AI 신사업은 매출 기여가 아직 초기 단계로, 고정비 증가를 야기하면서 단기 수익성을 추가 압박할 수 있다. 생성형 AI 솔루션 시장은 네이버·카카오·대형 클라우드 사업자 등 자본력이 강한 경쟁자가 포진해 있어 차별화된 포지셔닝 확보가 중요하다. AI 투자 비용 대비 매출 회수 기간이 장기화될 경우 2025년 이후 확인된 이익 마진 회복세를 저해하는 요인이 될 수 있다.",
-    "en": "AI new businesses (AICC, Smart Patent) are still at an embryonic revenue-contribution stage and are adding to fixed costs, creating additional near-term profitability headwinds. The generative AI solutions market in Korea features well-capitalized incumbents—Naver, Kakao, and major cloud providers—making differentiated positioning essential. If the payback period on AI investment extends significantly, it could impede the operating-margin recovery confirmed in 2025."
+    "ko": "프로젝트성 매출 구조상 특정 분기의 실적만으로 연간 추세를 판단하기 어렵다. 2025년 하반기의 높은 이익과 2026년 상반기의 연속 손실이 혼재하는 만큼, 향후 실적을 해석할 때 분기별 변동성을 충분히 감안해야 한다.",
+    "en": "Given the project-based revenue structure, it is difficult to judge the annual trend based solely on the results of a particular quarter. As high profits in the second half of 2025 and consecutive losses in the first half of 2026 coexist, quarterly volatility should be sufficiently taken into account when interpreting future performance."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중(3분기 정기공시 예상 시기)",
+    "en": "Around November 2026 (expected Q3 regular disclosure period)"
    },
    "what": {
-    "ko": "2026년 2분기 실적 공시: 계절적 흑자 전환 여부 및 영업이익 수준을 2025년 2분기(영업이익 5.83억원)와 비교해 회복 속도를 점검. 하나금융 5G 계약 납품 진행 현황도 동시 확인 요망.",
-    "en": "Q2 2026 earnings release: assess whether operating income turns positive (seasonally expected) and compare the magnitude against Q2 2025 (OP: KRW 583mn) to gauge recovery velocity; cross-check progress on the Hana Financial private 5G contract delivery."
+    "ko": "2026년 3분기 실적이 공시되면 상반기 연속 손실 흐름이 이어지는지, 하반기 프로젝트 매출이 반영되는지를 확인할 필요가 있다.",
+    "en": "When Q3 2026 results are disclosed, it will be important to check whether the consecutive losses from the first half continue or whether second-half project revenue is reflected."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "향후 수주·공급계약 공시 시점",
+    "en": "Upon future order or supply contract disclosures"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시: 매출 규모(2025Q3 51.82억원)와 영업이익률을 통해 5G 수주·납품 모멘텀 지속 여부를 확인. 특히 계절 성수기 진입 초입 시점의 이익률 추이를 통해 고정비 흡수력을 점검.",
-    "en": "Q3 2026 earnings release: verify whether private 5G contract momentum sustains the revenue trajectory (Q3 2025: KRW 5.2bn) and assess OPM trends as a gauge of fixed-cost absorption heading into the seasonal peak quarter."
+    "ko": "삼성전자 등 대형 고객사와의 5G 특화망 관련 신규 수주 공시가 나올 경우 신사업의 매출 기여 규모를 가늠할 수 있는 근거가 된다.",
+    "en": "Any new disclosure of orders related to private 5G networks with major clients such as Samsung Electronics would provide a basis for gauging the revenue contribution of the new business."
    }
   },
   {
    "when": {
-    "ko": "2026년 12월 31일",
-    "en": "December 31, 2026"
+    "ko": "정부의 5G 특화망 관련 정책·주파수 할당 발표 시",
+    "en": "Upon government announcements on private 5G policy or spectrum allocation"
    },
    "what": {
-    "ko": "하나금융그룹 5G 특화망 납품 기한: 계약 이행 여부와 2025년 매출의 12.6% 규모 수익 인식 확인. 금융권 레퍼런스 확보에 따른 후속 파이프라인(은행·보험·증권사 등) 형성 여부도 주목.",
-    "en": "Hana Financial Group private 5G delivery deadline: confirm on-time fulfillment and recognition of revenue representing ~12.6% of FY2025 sales; monitor whether this financial-sector reference catalyzes follow-on pipeline opportunities (banks, insurers, securities firms)."
+    "ko": "특화망 시장의 제도적 환경 변화는 신사업 확장 속도에 영향을 줄 수 있어 관련 정책 동향을 확인할 필요가 있다.",
+    "en": "Changes in the institutional environment for the private 5G market could affect the pace of new business expansion, warranting attention to related policy developments."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중 수시",
-    "en": "Ad hoc disclosures, H2 2026"
+    "ko": "차기 사업보고서·반기보고서 공시 시",
+    "en": "Upon the next annual or semiannual business report disclosure"
    },
    "what": {
-    "ko": "신규 5G 특화망·MCPTT 수주 공시: 삼성전자 반도체 공장 추가 계약, 해외 MCPTT 신규 수출 계약, 또는 AICC·Smart Patent 기업 공급 계약 공시가 2026년 연간 실적 가시성을 높이는 핵심 이벤트.",
-    "en": "Spot supply-contract disclosures: additional Samsung semiconductor fab orders, new MCPTT export contracts, or enterprise AICC/Smart Patent agreements would materially improve FY2026 earnings visibility and serve as the primary near-term catalyst."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월 (2026년 사업보고서)",
-    "en": "March 2027 (FY2026 Annual Report)"
-   },
-   "what": {
-    "ko": "2026년 연간 영업현금흐름(CFO): 3년 연속 마이너스이던 CFO가 플러스로 전환됐는지 확인. 이익의 현금 전환율 개선 여부가 재무 건전성과 밸류에이션 신뢰도 제고의 가장 핵심적인 확인 지표.",
-    "en": "FY2026 operating cash flow: determine whether the three-year run of negative CFO reverses to positive. Improvement in the earnings-to-cash conversion ratio is the single most important indicator for reassessing the company's financial quality and lending greater credibility to the current valuation."
+    "ko": "부문별 매출 구성이나 신사업 관련 세부 내용이 공개될 경우 기존 통신 인프라 사업과 5G 특화망 사업의 비중 변화를 확인할 수 있다.",
+    "en": "If segment-level revenue breakdowns or details on the new business are disclosed, it would allow tracking of the shifting balance between the legacy communication infrastructure business and the private 5G business."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "네이블은 2022년 국내 4번째·중소기업 최초 이음5G 기간통신사업자 지위 확보 이후 삼성전자 파트너십과 다분야 레퍼런스를 바탕으로 국내 5G 특화망 시장의 선발 경쟁자로 자리잡았다. 2025년에는 2023년 영업적자(-21.01억원) 이후 2년 만에 영업이익률 13.6%로 이익 회복을 확인했고, 2026년 6월 하나금융그룹 5G 계약 체결로 금융권이라는 새 수요처를 개척하며 사업 다각화 진전도 이루었다. 그러나 2026년 1분기 영업손실이 전년 동기 대비 두 배 이상 확대된 것과 3년 연속 마이너스 영업현금흐름은 이익 회복의 지속성과 현금 창출 능력에 대한 의문을 남긴다. 연간 매출의 약 39%가 4분기에 집중된 강한 계절성은 하반기 수주·납품 이행 여부에 연간 실적이 크게 좌우됨을 의미한다. 이음5G 시장 고성장 전망과 MCPTT·AI 신사업 확장 잠재력은 중장기 성장 동력이지만, 대기업 IT 계열사와의 경쟁 강도 심화와 소형주 특유의 수급 변동성은 공존하는 리스크 요인이다. 2026년 하반기 신규 수주 공시, 2분기 이후 분기별 이익 흑자 전환 여부, 연간 영업현금흐름 개선 여부가 사업 방향성과 밸류에이션 신뢰도를 가늠할 핵심 체크포인트다.",
-   "en": "Nable has established itself as an early-mover competitor in Korea's private 5G market, leveraging its Samsung Electronics partnership and multi-sector deployment references since becoming the country's fourth—and first SME—e-Um 5G carrier in 2022. The FY2025 OPM recovery to 13.6% confirmed the earnings comeback from the FY2023 loss year, and the June 2026 Hana Financial contract opened the financial services vertical as a new demand source, advancing business diversification. However, the more-than-doubling of the Q1 2026 operating loss and three consecutive years of negative operating cash flow raise legitimate questions about the sustainability of the earnings recovery and the company's underlying free-cash-flow generation capacity. The heavy fourth-quarter revenue concentration (~39% of annual sales) makes full-year results acutely dependent on H2 contract execution. The high-growth trajectory of the private 5G market and the optionality embedded in MCPTT exports and AI new businesses represent the key long-term value drivers, while intensifying competition from large IT conglomerates and the structural liquidity constraints of a micro-cap name present co-existing headwinds. H2 2026 contract disclosures, sequential quarterly return to operating profitability from Q2 onward, and a reversal of the multi-year negative CFO trend are the three most consequential checkpoints for assessing the direction of fundamentals and the credibility of the current valuation."
+   "ko": "네이블은 기업용 통신 인프라 구축·유지보수를 기반으로 한 안정적 사업과, 삼성전자와의 협력을 통한 5G 특화망 신사업이라는 두 축을 갖고 있다. 2025년에는 매출과 이익 모두 뚜렷한 회복을 보이며 영업이익률 13.6%를 기록했으나, 2026년 상반기에는 다시 연속 영업손실로 전환되며 실적의 변동성이 재확인됐다. 이는 프로젝트성 매출이 특정 분기에 집중되는 사업 구조에서 비롯된 것으로 해석되며, 연간 실적 해석 시 분기별 편차를 충분히 감안해야 한다. 신사업인 5G 특화망은 반도체·제조 공장을 중심으로 확산 가능성이 제기되고 있으나, 구체적인 수주 규모나 매출 기여 시점은 아직 공식적으로 확인되지 않았다. 밸류에이션 측면에서는 순자산 대비 소폭의 프리미엄이 있는 수준에서 거래되고 있으며, 최근 이익 흐름의 변동성을 고려한 해석이 필요하다. 향후 3분기 실적 공시와 신사업 관련 수주 소식이 실적 방향성을 가늠하는 중요한 확인 지점이 될 것으로 보인다.",
+   "en": "Nable operates on two pillars: a stable business of enterprise communication infrastructure construction and maintenance, and a new private 5G network business developed in partnership with Samsung Electronics. In 2025, both revenue and profit showed a clear recovery, with an operating margin of 13.6%, but the first half of 2026 reverted to consecutive operating losses, reaffirming the volatility in the company's results. This appears to stem from a business structure in which project-based revenue concentrates in specific quarters, meaning quarterly variance should be fully considered when interpreting annual results. The new private 5G business has been cited as having potential to spread across semiconductor and manufacturing plants, but specific order volumes or revenue contribution timing have not yet been officially confirmed. In terms of valuation, the shares trade at a modest premium to net asset value, and this should be interpreted with the recent volatility in earnings trends in mind. Upcoming Q3 earnings disclosures and news of orders related to the new business are likely to serve as key checkpoints for gauging the direction of future performance."
   }
  },
  "sources": [
-  "https://m.irgo.co.kr/IR-COMP/153460/%EB%84%A4%EC%9D%B4%EB%B8%94-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A153460&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A153460&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A153460&MenuYn=Y&NewMenuID=102&stkGb=701",
-  "https://www.newstnt.com/news/articleView.html?idxno=706368",
   "https://www.butler.works/ko/companies/00842585",
-  "https://markets.hankyung.com/stock/153460",
-  "http://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=153460",
-  "https://m.thinkpool.com/item/153460/stockIndicator",
+  "https://m.irgo.co.kr/IR-COMP/153460/%EB%84%A4%EC%9D%B4%EB%B8%94-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
+  "https://m.thinkpool.com/item/153460",
   "https://valueline.co.kr/finance/mri/153460",
+  "https://www.google.com/finance/quote/153460:KOSDAQ?hl=en",
+  "http://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=153460",
+  "https://www.investing.com/equities/nable-communications-inc-earnings",
   "http://www.thinkpool.com/itemanal/i/index.jsp?code=153460",
-  "https://www.investing.com/equities/nable-communications-inc",
-  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EB%84%A4%EC%9D%B4%EB%B2%84%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EA%B5%AD%EB%82%B4-1%ED%98%B8-%EC%9D%B4%EC%9D%8C-5g-%EC%83%81%EC%9A%A9%ED%99%94-%ED%98%91",
-  "https://www.fnnews.com/news/202206021808309911",
-  "https://www.koit.co.kr/news/articleView.html?idxno=102372",
-  "https://www.nablecomm.com/solution_5gnet.php?tab1=2",
-  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EC%9D%B4%EC%9D%8C-5g-5g-%ED%8A%B9%ED%99%94%EB%A7%9D-%EC%A0%84%EC%9A%A9-%EC%9E%A5%EB%B9%84-%EC%B6%9C%EC%8B%9C",
-  "https://www.newswire.co.kr/newsRead.php?no=945478"
+  "https://www.kosfarm.re.kr/www/brd/m_279/down.do?brd_id=pds&seq=41&data_tp=A&file_seq=1",
+  "https://m.thinkpool.com/item/153460/stockIndicator",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A153460&cID=&MenuYn=Y&ReportGB=&NewMenuID=102&stkGb=701",
+  "https://navercorp.com/media/pressReleasesDetail?seq=10034577",
+  "https://markets.hankyung.com/stock/153460",
+  "https://kaurika.com/category/%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8C%9C-%ED%86%B5%EC%8B%A0-%EC%A0%9C%EC%96%B4-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/nb-iot/",
+  "https://m.thinkpool.com/stockDiscuss/153460/list",
+  "http://comp.fnguide.com/SVO2/ASP/SVD_Disclosure.asp?pGB=S7&gicode=A153460&NewMenuID=107&cID=S7",
+  "http://www.thedailymoney.com/news/articleView.html?idxno=1137547",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=443033"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "153460",
  "name": "네이블",
  "name_en": "Nable Inc.",
@@ -233,9 +223,9 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 04:07",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:40",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 6040,
-   "mcap": 0.0394,
+   "price": 5910,
+   "mcap": 0.0386,
    "shares": 6530014,
    "total_shares": 6530014,
    "wavg_shares": 6459120,
-   "per": 43.453,
+   "per": 42.518,
    "eps": 139,
-   "pbr": 1.1193,
+   "pbr": 1.0953,
    "bps": 5396,
    "roe_ttm": 2.6,
    "ttm_window": "2025Q3~2026Q2",

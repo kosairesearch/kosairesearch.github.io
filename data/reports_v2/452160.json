@@ -1,229 +1,220 @@
 {
  "title": {
-  "ko": "삼성 파운드리 회복 수혜 기대, 수익성 복원이 관건",
-  "en": "Samsung Foundry Recovery in Sight, Profitability Restoration Remains the Key Variable"
+  "ko": "삼성 파운드리 파트너, 이익 변동성 지속",
+  "en": "Samsung Foundry Partner, Earnings Swings Continue"
  },
  "lead": {
-  "ko": "20년간 삼성전자 생산라인의 표준 진공 스태커 공급사로 자리잡았으나, 2025년 영업이익률이 21%에서 1.2%로 급락하고 2026년 1분기까지 손실이 이어지면서 수익성 회복 속도가 기업가치 재평가의 핵심 변수로 부상했다.",
-  "en": "A 20-year sole-source vacuum stacker supplier to Samsung Electronics' production lines, JNB saw its operating margin collapse from 21% to 1.2% in 2025 with losses extending through Q1 2026, making the pace of profit recovery the pivotal variable for any meaningful re-rating."
+  "ko": "삼성전자 반도체 생산라인에 진공 스태커를 20년 넘게 공급해온 제이엔비는 2025년 다시 적자로 돌아선 뒤 2026년 2분기 영업이익 흑자 전환 조짐을 보이고 있다.",
+  "en": "JNB, which has supplied vacuum stacker systems to Samsung Electronics' semiconductor lines for over two decades, swung back to a loss in 2025 before showing signs of an operating profit rebound in Q2 2026."
  },
  "keypoints": [
   {
-   "ko": "스태커 시스템·초정밀 부품의 삼성전자 전속 20년 공급: 삼성 파운드리 가동률 변화가 실적에 직결되는 캡티브 마켓 구조",
-   "en": "20-year sole-source supplier of stacker systems and ultra-precision parts to Samsung Electronics — earnings directly tied to Samsung foundry utilization via a captive-market structure"
+   "ko": "핵심 제품은 반도체 진공펌프 연동 스태커 시스템과 초고진공펌프용 정밀 부품이며, 주요 고객은 삼성전자다.",
+   "en": "Core products are vacuum-pump-linked stacker systems and precision parts for ultra-high vacuum pumps, with Samsung Electronics as the key customer."
   },
   {
-   "ko": "2025년 영업이익 약 1.75억원(OPM 1.2%)으로 전년 33.6억원(OPM 21.0%) 대비 95% 축소, 2026년 1분기도 영업손실(-3.7억원) 지속",
-   "en": "2025 operating profit collapsed to ~₩175M (OPM 1.2%) from ₩3.36B (OPM 21.0%) the prior year — a ~95% decline — with operating losses continuing into Q1 2026 at –₩370M"
+   "ko": "2022~2024년 20%대였던 영업이익률이 2025년 1.2%까지 급락하며 지배주주 순손실 3.5억원을 기록했다.",
+   "en": "Operating margin, which stood in the 20%-plus range in 2022-2024, fell sharply to 1.2% in 2025, resulting in a controlling-interest net loss of KRW 0.35 billion."
   },
   {
-   "ko": "삼성전자 테일러 팹(S6 라인, 4나노) 스태커 개발 진행 중 — 계약 체결 시 기존 오스틴 수주 대비 약 4배 규모의 도약 가능성",
-   "en": "S6-line stacker for Samsung's Texas Taylor Fab (4nm) under development since 2022 — a formal contract could represent ~4x the scale of prior Austin engagements"
+   "ko": "2025년 3분기부터 2026년 1분기까지 세 개 분기 연속 영업손실을 낸 뒤 2026년 2분기 매출 49.3억원, 영업이익 2.65억원으로 흑자 전환했다.",
+   "en": "After three consecutive quarters of operating losses from Q3 2025 to Q1 2026, the company returned to operating profit in Q2 2026 with revenue of KRW 4.93 billion and operating profit of KRW 0.265 billion."
   },
   {
-   "ko": "2026년 반도체 장비 시장 약 11% 성장 전망(카운터포인트, 2026년 4월), 삼성 파운드리 2026년 하반기 흑자 전환 기대 — 전방 업황은 개선 신호",
-   "en": "Semiconductor equipment market projected to grow ~11% in 2026 (Counterpoint Research, April 2026); Samsung foundry targeted for H2 2026 profitability — upstream conditions showing improvement"
+   "ko": "2022년부터 삼성전자 미국 텍사스 테일러 신규 파운드리 공장에 적용할 스태커 개발을 진행 중이다.",
+   "en": "Since 2022, the company has been developing a stacker system for Samsung Electronics' new foundry plant in Taylor, Texas."
   },
   {
-   "ko": "발행주식 약 961만 주의 소형 품절주 특성: 삼성 파운드리 뉴스에 대한 주가 민감도가 매우 높고 유동성 리스크 상존",
-   "en": "~9.62M shares outstanding creates a 'scarce-float' dynamic — high share-price sensitivity to Samsung foundry newsflow and elevated liquidity risk"
+   "ko": "최근 네 개 분기(2025년 3분기~2026년 2분기) 지배주주순손실 합계는 24.3억원에 달한다.",
+   "en": "Over the most recent four quarters (Q3 2025 to Q2 2026), the cumulative controlling-interest net loss reached KRW 2.43 billion."
   }
  ],
  "business": {
-  "ko": "제이엔비(JNB)는 2002년 창사해 2023년 11월 DB금융스팩9호와의 스팩소멸합병 방식으로 코스닥에 상장된 반도체 진공 유틸리티 전문기업이다. DART 업종 코드상 '자동차'로 분류되나, 실질 주력 사업은 반도체 제조 시설용 진공펌프 연동 스태커 시스템(Stacker System) 제조와 초고진공펌프용 초정밀 가공 부품 공급에 집중된다. 스태커 시스템은 Fab 내 진공펌프의 진동·소음을 흡수하고 전력·냉각수·부대장치를 통합 공급하는 핵심 유틸리티 플랫폼으로, 제이엔비는 2003년 자체 개발 이후 삼성전자 생산라인의 표준 장비로 20년 이상 납품해 왔다. 초정밀 가공 부품 사업은 1μm 단위 정밀 가공 장비와 0.1μm 수준의 3차원 측정 장비를 기반으로 운용되며, 초고진공펌프에 필요한 고난도 부품을 생산한다. 핵심 고객은 사실상 삼성전자로, 미국 텍사스 오스틴 SAS(Samsung Austin Semiconductor) 공장의 14nm·28nm 공정 스태커 시스템 설계 및 제조를 완료한 바 있다. 2022년부터는 테일러 팹 S6 라인(4나노)에 적용할 신규 스태커를 개발 중이며, SEMI-S2·UL 인증 및 텍사스주 법령 충족을 목표로 설계를 진행하고 있다. 부가 제품으로 양/음압 및 저/고진공 챔버, 전력 분배함(Power Distribution Box)도 제조한다. 경기도 평택시 진위2산단에 본사와 생산 시설을 두고 있으며, ISO9001·ISO14001 인증 및 기술혁신형 중소기업(INNO-BIZ) 인증을 보유한다.",
-  "en": "JNB (452160) was founded in 2002 and listed on KOSDAQ in November 2023 through a SPAC merger with DB Financial SPAC No. 9. Although officially categorized under the 'Automotive' DART industry code, the company's actual primary business centers on vacuum pump stacker systems and ultra-precision machined parts for semiconductor manufacturing facilities. The Stacker System — a utility platform integrating vibration absorption, noise suppression, and supply of power and cooling water to fab vacuum pumps — has served as a production-line standard at Samsung Electronics for over 20 years since JNB developed it in 2003. The ultra-precision parts segment employs 1μm-grade machining equipment and 0.1μm-level 3D measurement tools to produce components for ultra-high vacuum pumps. Samsung Electronics is effectively the sole customer; JNB completed the design and manufacture of stacker systems for the 14nm/28nm Samsung Austin Semiconductor (SAS) fab in Texas and has been developing a next-generation stacker for Samsung's Taylor Fab S6 line (4nm process) since 2022, targeting SEMI-S2, UL certification, and Texas state regulatory compliance. Additional products include vacuum and pressure chambers and power distribution units. The company operates from its Pyeongtaek, Gyeonggi-do facility and holds ISO9001/ISO14001 and INNO-BIZ certifications."
+  "ko": "제이엔비는 2005년 설립되어 반도체 장비, LCD 및 산업용 진공 시스템의 제조·판매를 영위하며, 2023년 코스닥에 상장했다. 핵심 제품은 반도체 제조시설의 진공펌프와 연동되는 유틸리티 플랫폼인 스태커 시스템(stacker system)과 초고진공펌프용 부품이며, 온툴 세팅 키트(on tool setting kit)도 제조한다. 정밀 가공장비와 3차원측정 장비를 통해 진공펌프 부품을 안정적으로 공급하고 있다. 주요 고객사는 삼성전자로, 한 증권사 관계자는 제이엔비의 스태커 시스템이 20년 넘게 삼성전자 생산라인 내 표준으로 인정받았다고 밝혔다. 회사는 2022년부터 삼성전자의 미국 텍사스 테일러 신규 파운드리 공장에 적용할 'S6 라인 진공펌프용 스태커' 개발을 진행해왔으며, 해당 장비는 SEMI-S2 인증과 UL 인증, 텍사스주 법령 등을 충족하도록 설계되고 있다. 이에 앞서 삼성전자의 14나노·28나노 공정용 전력·통신반도체를 생산하는 미국 텍사스 오스틴 공장에 적용될 스태커 시스템의 설계·제조도 완료한 바 있다. 부문별 매출 비중 등 세부 데이터는 공개 자료에서 확인되지 않으며, 매출은 진공 스태커 장비와 정밀 가공 부품 공급이 중심을 이룬다. 상장주식수는 약 962만 주로 코스닥 반도체 장비 업종 내에서는 유통 규모가 작은 소형주에 속한다.",
+  "en": "JNB was established in 2005 and manufactures and sells semiconductor equipment, LCD equipment, and industrial vacuum systems, listing on KOSDAQ in 2023. Its core products are the stacker system, a utility platform linked to vacuum pumps at semiconductor fabs, and precision parts for ultra-high vacuum pumps, along with on-tool setting kits. The company supplies vacuum pump components reliably through precision machining and three-dimensional measurement equipment. Its main customer is Samsung Electronics, and one securities industry source stated that JNB's stacker system has been recognized as a standard piece of equipment in Samsung Electronics production lines for more than 20 years. Since 2022, the company has been developing a stacker for the S6 Line vacuum pumps to be applied at Samsung Electronics' new foundry plant in Taylor, Texas, designed to meet SEMI-S2 certification, UL certification, and Texas state regulatory requirements. Prior to that, it had already completed design and manufacturing of a stacker system for Samsung Electronics' Austin, Texas facility, which produces power and communication semiconductors on 14nm and 28nm processes. Detailed segment revenue breakdowns are not disclosed in public materials, and revenue is centered on vacuum stacker equipment and precision machined parts. With roughly 9.62 million shares outstanding, the company is a smaller-cap name within the KOSDAQ semiconductor equipment sector in terms of float."
  },
  "earnings": {
-  "ko": "2023~2025년 연간 흐름을 보면, 매출은 153억→160억→149억원으로 완만한 등락에 그쳤으나 영업이익률은 21.5%→21.0%→1.2%로 급락했다. 2025년 영업이익은 약 1.75억원으로 2024년 33.6억원 대비 95% 가까이 축소됐으며, 지배주주 순손실은 약 3.5억원으로 2024년 흑자(약 19.9억원)에서 재차 적자로 전환됐다. 2023년에도 영업이익은 32.9억원을 기록했음에도 비영업 손실로 순손실 25.4억원이 발생한 바 있어, 순손실이 이번에 처음은 아니다. 분기별로는 2025Q1 매출 44.0억원에 영업이익 11.4억원을 기록하며 연간 중 유일하게 두 자리 이익을 거뒀으나, Q2 이후 가파르게 악화돼 Q3(-6.5억원)·Q4(-4.7억원) 연속 영업손실로 이어졌다. 2026년 1분기도 매출 35.4억원에 영업손실 -3.7억원으로 손실 기조가 지속됐다. 수익성 급락의 주원인으로는 삼성전자 파운드리 가동률 부진에 따른 주문 감소와 고정비 부담 확대가 지목된다. 영업활동 현금흐름은 2025년 약 25.2억원으로 플러스를 유지해 즉각적인 현금 소진 우려는 낮다. 2025년 말 지배주주 자본은 약 392.8억원, 부채비율 80.1%로 재무적 완충은 당분간 유지될 전망이다.",
-  "en": "Across the 2023–2025 period, revenue moved only modestly — ₩153B → ₩160B → ₩149B — while the operating margin collapsed from 21.5% → 21.0% → 1.2%. Full-year 2025 operating profit of approximately ₩175M represented a ~95% decline from the ₩3.36B posted in 2024, and the owner-attributable net result swung to a loss of ~₩348M after recording a profit of ~₩1.99B in 2024. Worth noting, 2023 had also produced a net loss of ~₩2.54B despite healthy operating profit, indicating recurring non-operating charges. On a quarterly basis, Q1 2025 was the sole standout — revenue of ₩44.0B and operating profit of ₩11.4B — before a sharp deterioration from Q2 resulted in operating losses of –₩6.5B and –₩4.7B in Q3 and Q4 respectively. Q1 2026 continued the loss streak at –₩3.7B operating on ₩35.4B in revenue. Reduced order volume tied to lower Samsung foundry utilization and rigid fixed-cost leverage are the primary drivers of the margin implosion. Importantly, operating cash flow remained positive at ~₩2.52B for full-year 2025, limiting immediate liquidity concerns. Owners' equity of ~₩39.3B and a debt ratio of 80.1% at end-2025 preserve a near-term financial buffer."
+  "ko": "연간 실적을 보면 2022년 매출 165.5억원, 영업이익 50.3억원(영업이익률 30.4%), 지배주주순이익 52.2억원으로 호조를 보였다. 2023년에는 매출이 153.1억원으로 줄고 영업이익률이 21.5%로 낮아졌으며, 지배주주순손실 25.4억원을 기록하며 손익이 적자로 전환됐다. 2024년은 매출 160.3억원(전년 대비 +4.7%), 영업이익 33.6억원(영업이익률 21.0%), 지배주주순이익 19.9억원으로 흑자 전환에 성공했다. 그러나 2025년 매출은 149.0억원으로 다시 줄었고, 영업이익은 1.75억원(영업이익률 1.2%)까지 낮아졌으며, 지배주주순손실 3.48억원으로 다시 적자로 돌아섰다. 분기별로는 2025년 3분기 영업손실 6.53억원, 4분기 영업손실 4.73억원, 2026년 1분기 영업손실 3.69억원으로 세 개 분기 연속 적자를 냈다. 2026년 2분기에는 매출이 49.29억원으로 최근 다섯 개 분기 중 가장 컸고 영업이익도 2.65억원으로 흑자로 돌아섰으나, 지배주주순손실은 1.06억원으로 손실이 이어졌다. 이에 따라 2025년 3분기부터 2026년 2분기까지 최근 네 개 분기 지배주주순손실 합계는 24.3억원에 달한다. 영업이익률이 2022~2024년 21~30%대에서 2025년 1%대로 급락한 것은 매출 감소에 따른 고정비 부담 확대를 시사한다.",
+  "en": "Annual results show revenue of KRW 16.55 billion, operating profit of KRW 5.03 billion (operating margin 30.4%), and controlling-interest net profit of KRW 5.22 billion in 2022, a strong year. In 2023, revenue fell to KRW 15.31 billion, operating margin declined to 21.5%, and the company posted a controlling-interest net loss of KRW 2.54 billion, swinging into deficit. In 2024, revenue rose to KRW 16.03 billion (up 4.7% year over year), operating profit was KRW 3.36 billion (operating margin 21.0%), and controlling-interest net profit reached KRW 1.99 billion, marking a return to profit. However, 2025 revenue fell again to KRW 14.90 billion, operating profit dropped to KRW 0.175 billion (operating margin 1.2%), and the company posted a controlling-interest net loss of KRW 0.35 billion, reverting to deficit. On a quarterly basis, operating losses of KRW 0.653 billion in Q3 2025, KRW 0.473 billion in Q4 2025, and KRW 0.369 billion in Q1 2026 marked three consecutive quarters of operating losses. In Q2 2026, revenue reached KRW 4.93 billion, the largest of the last five quarters, and operating profit turned positive at KRW 0.265 billion, though the controlling-interest net loss of KRW 0.106 billion meant losses persisted at the bottom line. As a result, the cumulative controlling-interest net loss over the most recent four quarters (Q3 2025 through Q2 2026) reached KRW 2.43 billion. The sharp drop in operating margin from the 21-30% range in 2022-2024 to roughly 1% in 2025 suggests rising fixed-cost burden amid declining revenue."
  },
  "industry": {
-  "ko": "카운터포인트리서치에 따르면 2025년 글로벌 반도체 제조 장비 시장은 전년 대비 12% 성장한 1,430억달러를 기록했으며, 2026년에도 약 11%의 추가 성장이 전망된다(2026년 4월). AI 인프라 투자 확대에 따른 첨단 로직·HBM·첨단 패키징 장비 수요가 핵심 성장 동력이다. 제이엔비의 직접 전방 시장인 글로벌 건식 진공펌프 시장은 연평균 10.67% 성장해 2028년 약 20.4억달러 규모에 이를 것으로 예상된다. 삼성전자 파운드리는 2025년 한때 50%를 밑돌았던 전체 라인 가동률이 80%를 돌파했으며, 하나증권은 2026년 하반기 삼성 파운드리 사업부의 흑자 전환을 전망했다(2026년 5월). 엔비디아의 '그로크3 LPU'가 삼성 파운드리 4나노 공정에서 생산 중임이 공개됐고(GTC 2026), 테슬라 AI칩의 삼성 2나노 공정 시제품 생산도 확인됐다. 삼성 파운드리 가동률 회복은 소재·부품·장비 공급사의 수주 증가로 이어지는 구조적 연결 고리다. 다만 지정학적 변수와 2나노 공정 전환의 기술적 복잡성은 업사이클의 속도에 불확실성을 더한다.",
-  "en": "According to Counterpoint Research (April 2026), the global semiconductor manufacturing equipment market reached $143B in 2025, up 12% YoY, with a further ~11% growth projected for 2026. AI infrastructure investment is the key demand driver, particularly for advanced logic, HBM, and advanced packaging equipment. JNB's direct addressable market — the global dry vacuum pump segment — is projected to grow at a CAGR of 10.67%, reaching ~$2.04B by 2028. Samsung's foundry division, whose overall fab utilization had slipped below 50% at points in 2025, has since recovered above 80%, with Hana Securities forecasting a return to profitability for the unit in H2 2026 (May 2026). NVIDIA publicly confirmed at GTC 2026 that Samsung is manufacturing its Groq 3 LPU on the 4nm process, and Tesla AI chip prototypes using Samsung's 2nm process have also been verified. Foundry utilization recovery structurally translates into higher order flows for captive parts and equipment suppliers. However, geopolitical headwinds and the technical complexity of the 2nm process transition add uncertainty to the pace of the upcycle."
+  "ko": "반도체 제조 장비 시장은 반도체 시장과 사이클이 유사하며, 수요·공급과 설비투자 규모 변화에 큰 영향을 받는다. 글로벌 반도체 제조용 건식 진공펌프 시장은 연평균 10.67% 성장해 2028년 20억 4천만 달러 규모에 이를 것으로 전망되어, 중장기 성장 잠재력이 있다는 평가가 나온다. 2025년 3분기 누적 기준 전년동기 대비 연결 매출은 2.6% 줄고 영업이익과 순이익은 각각 72.6%, 63.7% 감소해, 장비 투자 둔화 국면에서 실적 압박이 확인된다. 2026년 들어 삼성전자 파운드리 사업이 테슬라·엔비디아·애플에 이어 앤트로픽까지 고객군을 넓힐 수 있다는 기대가 커지며, 삼성전자 생산라인에 진공 스태커를 공급하는 제이엔비가 관련 수혜 기대주로 다시 부각됐다. 삼성전자는 2026년 1분기에 DS부문이 AI 고부가가치 제품 판매 확대와 메모리 가격 상승에 힘입어 역대 최대 분기 실적을 냈고, 파운드리도 고성능 컴퓨팅 시장 중심으로 수주를 이어가고 있다고 밝혔다. 이는 전방 반도체 제조사의 설비 가동률과 캐파 투자가 장비·부품 협력사 매출에 직접 영향을 미치는 산업 구조를 보여준다.",
+  "en": "The semiconductor manufacturing equipment market moves in a cycle similar to the broader semiconductor market and is heavily influenced by changes in supply-demand balance and the scale of capital investment. The global dry vacuum pump market for semiconductor manufacturing is forecast to grow at a compound annual rate of 10.67%, reaching USD 2.04 billion by 2028, suggesting mid-to-long-term growth potential. On a cumulative basis through Q3 2025, consolidated revenue fell 2.6% year over year while operating profit and net profit dropped 72.6% and 63.7%, respectively, confirming earnings pressure amid a slowdown in equipment investment. In 2026, expectations grew that Samsung Electronics' foundry business could expand its client base beyond Tesla, Nvidia, and Apple to include Anthropic, which brought renewed attention to JNB as a supplier of vacuum stackers to Samsung's production lines. Samsung Electronics reported that its Device Solutions division posted record quarterly results in Q1 2026, driven by expanded sales of high-value-added AI products and rising memory prices, while its foundry business continued to win orders centered on high-performance computing. This illustrates an industry structure in which utilization rates and capacity investment at upstream chipmakers directly affect the revenue of equipment and component partners."
  },
  "outlook": {
-  "ko": "가장 중요한 중기 성장 트리거는 삼성전자 미국 테일러 팹(S6 라인)의 본격 가동이다. 2026년 6월 현재 테일러 팹은 장비 반입 및 시운전 단계에 공식 진입했으며, ASML·Lam Research·Tokyo Electron 등 글로벌 장비사 엔지니어가 현장에 투입됐다. S6 라인은 A2 라인 대비 약 4배 규모의 4나노 첨단 공정 대응을 목표로 하며, 제이엔비가 납품 계약을 확보할 경우 기존 오스틴 SAS 수주를 크게 상회하는 매출 기회가 열린다. 다만 스태커 납품 계약의 공식 체결 여부와 시점은 2026년 6월 기준으로 공시되지 않았다. 국내 삼성전자 파운드리 가동률 회복도 단기 수주 흐름에 선행 변수로 작용하며, 하반기 흑자 전환 실현 여부가 협력사 발주 재개의 트리거가 될 것으로 보인다. 주당배당금(DPS) 100원 유지를 위해서는 이익 회복이 선행 조건이며, 손실 기조가 장기화될 경우 배당 정책에 대한 재검토 가능성도 배제하기 어렵다. 신규 고객 다변화 전략에 관한 공개 언급이 없는 상황에서 삼성전자 의존 구조는 당분간 지속될 전망이다.",
-  "en": "The most consequential medium-term growth catalyst is the ramp-up of Samsung Electronics' Taylor Fab (S6 line) in Texas. As of June 2026, the facility has officially entered its equipment installation and commissioning phase, with engineers from ASML, Lam Research, and Tokyo Electron deployed on-site. The S6 line targets 4nm advanced processing at roughly four times the scale of the A2 line, meaning a confirmed JNB stacker supply agreement would open a revenue opportunity materially larger than previous Austin SAS engagements. However, no formal stacker supply contract has been publicly disclosed as of June 2026. Domestically, recovery in Samsung's foundry utilization is a leading indicator for near-term order flows, and an H2 2026 foundry breakeven at Samsung would likely trigger supplier re-ordering. Sustaining the ₩100 DPS will require a demonstrable return to profitability; prolonged losses could prompt a reassessment of the dividend policy. Without publicly disclosed customer diversification initiatives, the near-total reliance on Samsung Electronics appears likely to persist in the near term."
+  "ko": "회사는 2022년부터 삼성전자의 미국 텍사스 테일러 파운드리 신공장에 적용할 진공펌프용 스태커 개발을 진행하고 있으며, 해당 라인은 삼성전자 A2 라인 대비 약 4배 규모로 4나노미터급 첨단 공정 대응을 목표로 하는 것으로 알려졌다. 제이엔비 측은 스태커 개발과 상용화를 위한 연구를 지속하고 있으며, 샘플과 도면 작성까지 마친 '오더 메이드' 방식으로 1차 고객사 요청이 오면 대응할 수 있다는 입장을 밝힌 바 있다. 업계 관계자는 삼성전자 테일러 팹이 본격 가동되면 AI 반도체용 첨단 생산라인 확대와 함께 진공 스태커·반도체 자동화 장비 수요도 빠르게 늘어날 것으로 내다봤다. 글로벌 건식 진공펌프 시장이 2028년까지 연평균 10%대로 성장할 것으로 전망되는 점도 중장기 수요 기반으로 거론된다. 다만 회사 차원의 구체적인 수주 규모나 매출 가이던스는 별도로 공개되지 않았으며, 스태커 수주는 고객사의 요청 시점에 좌우되는 주문 기반 구조라는 점이 확인된다. 따라서 향후 실적 회복 속도는 삼성전자 등 주요 고객사의 파운드리·메모리 투자 재개 시점과 맞물릴 것으로 보인다.",
+  "en": "Since 2022, the company has been developing a vacuum pump stacker for Samsung Electronics' new foundry plant in Taylor, Texas, a line reportedly about four times the size of Samsung's A2 line and targeting advanced 4-nanometer-class process capability. JNB has stated that it continues research toward stacker commercialization and, having already completed samples and drawings under an order-made approach, can respond once the initial customer places a request. An industry source noted that once the Samsung Taylor fab is fully operational, demand for vacuum stackers and semiconductor automation equipment is expected to rise quickly alongside the expansion of advanced production lines for AI chips. The prospect of the global dry vacuum pump market growing at roughly a 10% annual rate through 2028 is also cited as a mid-to-long-term demand driver. However, the company has not separately disclosed specific order volumes or revenue guidance, and stacker orders are confirmed to follow an order-based structure that depends on the timing of customer requests. Accordingly, the pace of any earnings recovery is likely to be tied to the timing of renewed foundry and memory investment by major customers such as Samsung Electronics."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당 순자산(BPS 4,291원)에 근접한 수준으로, 회사가 과거 영업이익률 21% 전후의 고수익 구간을 유지하던 시기에 시장이 적용했던 이익 배수 대비 현저히 낮은 구간에 있다. 2025~2026년 1분기까지의 연속 순손실로 인해 이익 기준 주가 배수 산출 자체가 의미를 잃었으며, 이익 회복의 시점과 규모가 멀티플 재평가의 전제 조건이다. 주당배당금(DPS) 100원 기준 배당수익률은 코스닥 동종 소형 성장주 평균 및 절대 금리 환경과 비교할 때 상대적으로 양호한 수준으로, 현 주가의 하방 지지 요소 중 하나다. 순자산 수준에 근접한 거래는 이론적 자산 하방은 제한하지만, 이익 회복 가시화 없이는 상방 재평가 여지도 함께 제한된다는 점을 유의해야 한다.",
-  "en": "The current share price trades in close proximity to book value per share (BPS ₩4,291), placing it materially below the earnings multiples the market assigned during the company's prior high-margin phase (operating margins around 21%). Consecutive net losses through Q1 2026 render an earnings-based multiple calculation meaningless; the timing and magnitude of a profit recovery are thus preconditions for any multiple re-rating. The ₩100 DPS offers a dividend yield that compares relatively favorably against KOSDAQ small-cap growth peers and the prevailing interest-rate environment, providing a modest near-term price floor. However, trading near asset value simultaneously limits the re-rating upside absent a demonstrable return to profitability — the two constraints are symmetric."
+  "ko": "최근 네 개 분기(2025년 3분기~2026년 2분기) 동안 지배주주 순손실이 이어져, 이 구간을 기준으로 한 주가수익비율은 산출되지 않는 구간에 놓여 있다. 주가순자산비율은 순자산가치를 밑도는 수준에서 거래되고 있어, 과거 이익이 컸던 시기의 밸류에이션 밴드와는 괴리가 있다. 2022~2024년 20%대 영업이익률을 기록했던 흐름과 2025년 이후 이익이 크게 축소된 최근 실적 사이의 간극이 밸류에이션 판단에서 핵심 변수로 남아 있다. 2026년 2분기 매출 확대와 영업이익 흑자 전환이 확인됐지만, 지배주주 순이익 기준으로는 아직 손실 구간을 벗어나지 못해 추세적 회복 여부는 다음 분기 실적으로 확인이 필요하다. 배당은 최근 확정 실적 기준으로 지급된 바 있으나, 손익 변동성이 큰 구간에서는 배당 지속 여부에 대한 판단도 함께 실적 흐름을 지켜볼 필요가 있다.",
+  "en": "With controlling-interest net losses persisting over the most recent four quarters (Q3 2025 through Q2 2026), a price-to-earnings ratio based on this window is not meaningfully calculable. The price-to-book ratio trades below net asset value, a gap from the valuation range seen during periods of stronger past profitability. The divergence between the roughly 20%-plus operating margins recorded in 2022-2024 and the sharply reduced profitability since 2025 remains a key variable in any valuation assessment. While Q2 2026 showed revenue growth and a return to operating profit, the company has yet to exit loss territory on a controlling-interest net income basis, so whether this marks a sustained recovery will need confirmation in coming quarters. Dividends have been paid based on recent confirmed results, but in a period of high earnings volatility, the continuation of dividend payments also warrants monitoring alongside the earnings trend."
  },
  "bull": [
   {
    "title": {
-    "ko": "삼성 테일러 팹 S6 라인 납품 계약 체결 시 실적 구조 변화",
-    "en": "Taylor Fab S6-Line Contract Win as a Structural Step-Change in Earnings"
+    "ko": "삼성 파운드리 밸류체인 편입",
+    "en": "Embedded in Samsung's Foundry Value Chain"
    },
    "body": {
-    "ko": "S6 라인은 기존 오스틴 A2 라인 대비 약 4배 규모로, 납품 계약이 현실화될 경우 단일 프로젝트로 기존 수준을 크게 상회하는 매출 기여가 예상된다. 2026년 6월 현재 테일러 팹이 장비 반입·시운전 단계에 진입하면서 납품 결정의 시계가 가시화되고 있다. 제이엔비는 2022년부터 SEMI-S2·UL 인증을 목표로 S6 라인용 스태커를 개발해온 유일한 사전 개발 협력사다.",
-    "en": "The S6 line is roughly four times the scale of the prior Austin A2 engagement; a confirmed supply contract would represent a structural step-up in single-project revenue contribution. With the Taylor Fab officially entering its equipment installation phase as of June 2026, the decision timeline is becoming more visible. JNB is the only identified pre-development partner for the S6-line stacker, having worked toward SEMI-S2 and UL certification since 2022."
+    "ko": "제이엔비는 삼성전자 반도체 생산라인에 진공 스태커 시스템을 20년 넘게 표준 장비로 공급해온 핵심 협력사로 꼽힌다. 2022년부터는 삼성전자 미국 텍사스 테일러 신공장에 적용할 스태커 개발을 진행 중이며, SEMI-S2·UL 인증 등 현지 기준을 충족하도록 설계되고 있다. 2026년에는 삼성전자 파운드리의 고객군 확대 기대감과 함께 관련 수혜주로 다시 부각된 바 있다.",
+    "en": "JNB is regarded as a key partner that has supplied vacuum stacker systems as standard equipment on Samsung Electronics' semiconductor production lines for over 20 years. Since 2022, it has been developing a stacker for Samsung's new Taylor, Texas foundry plant, designed to meet local requirements such as SEMI-S2 and UL certification. In 2026, it was again highlighted as a potential beneficiary amid expectations of an expanding customer base for Samsung's foundry business."
    }
   },
   {
    "title": {
-    "ko": "삼성 파운드리 가동률 회복과 AI 수주 확대",
-    "en": "Samsung Foundry Utilization Recovery Driven by AI Order Expansion"
+    "ko": "구조적으로 성장하는 진공장비 시장",
+    "en": "Structurally Growing Vacuum Equipment Market"
    },
    "body": {
-    "ko": "삼성전자 파운드리 라인 가동률이 2025년 저점 50% 미만에서 80% 이상으로 회복됐고, 엔비디아 그로크3 LPU·테슬라 AI칩 등 고부가 수주가 가동률 상승을 뒷받침한다. 파운드리 가동률 상승은 진공펌프 스태커 및 소모성 부품의 교체 사이클을 단축시켜 제이엔비의 단기 수주에도 직접 반영된다. 2026년 하반기 삼성 파운드리 흑자 전환이 실현될 경우 협력사 발주 가속화가 동반될 가능성이 있다.",
-    "en": "Samsung foundry utilization has recovered from below-50% lows in 2025 to above 80%, underpinned by high-value orders including NVIDIA's Groq3 LPU and Tesla AI chips. Higher utilization shortens vacuum stacker and consumable component replacement cycles, creating direct near-term order upside for JNB. An H2 2026 foundry profitability recovery at Samsung could trigger an acceleration in supplier ordering activity."
+    "ko": "글로벌 반도체 제조용 건식 진공펌프 시장은 연평균 10.67% 성장해 2028년 20억 4천만 달러 규모에 이를 것으로 전망된다. 이는 반도체 제조 공정의 미세화·고집적화가 진행될수록 정밀 진공장비 수요가 함께 늘어나는 구조를 시사한다. 제이엔비의 정밀 가공·측정 기술 기반 부품 공급 역량은 이 같은 수요 확대와 맞물릴 수 있는 지점이다.",
+    "en": "The global dry vacuum pump market for semiconductor manufacturing is projected to grow at a 10.67% compound annual rate to reach USD 2.04 billion by 2028. This suggests a structural pattern in which demand for precision vacuum equipment rises alongside continued miniaturization and integration in semiconductor processes. JNB's component supply capability, built on precision machining and measurement technology, positions it to potentially benefit from this expanding demand."
    }
   },
   {
    "title": {
-    "ko": "글로벌 건식 진공펌프 시장의 구조적 성장 수혜",
-    "en": "Structural Beneficiary of the Global Dry Vacuum Pump Market's Long-Term Expansion"
+    "ko": "2026년 2분기 실적 반등 신호",
+    "en": "Signs of Earnings Rebound in Q2 2026"
    },
    "body": {
-    "ko": "글로벌 건식 진공펌프 시장은 연평균 10.67% 성장해 2028년 20.4억달러 규모가 예상되며, AI·데이터센터·전장 반도체 수요가 첨단 파운드리 투자 확대를 통해 시장을 견인하고 있다. 제이엔비는 삼성전자 생산라인 표준 20년 이상의 검증된 기술력과 레퍼런스를 보유하고 있어, 시장 성장의 구조적 수혜를 기대할 수 있다. 장기적으로는 삼성전자 외 고객사 확보 가능성도 이 기술 레퍼런스를 기반으로 전개될 수 있다.",
-    "en": "The global dry vacuum pump market is projected to grow at a CAGR of 10.67% to ~$2.04B by 2028, driven by AI, data center, and automotive semiconductor demand channeled through advanced foundry investment. JNB's 20-plus years as a verified Samsung production-line standard provides the technical credentials and reference base to benefit structurally from this expansion. Over the longer term, these same credentials could form the foundation for customer diversification beyond Samsung Electronics."
+    "ko": "2026년 2분기 매출은 49.29억원으로 최근 다섯 개 분기 중 가장 컸고, 영업이익도 2.65억원으로 세 분기 연속 적자에서 흑자로 돌아섰다. 직전 세 개 분기(2025년 3분기~2026년 1분기) 연속 영업손실을 냈던 흐름과 비교하면 개선 조짐으로 해석될 수 있다. 다만 지배주주 순이익 기준으로는 여전히 손실을 기록해, 회복이 이익 전반으로 확산됐는지는 다음 분기 확인이 필요하다.",
+    "en": "Revenue in Q2 2026 reached KRW 4.93 billion, the largest of the past five quarters, and operating profit turned positive at KRW 0.265 billion after three consecutive quarters of losses. Compared with the preceding three quarters (Q3 2025 through Q1 2026) of consecutive operating losses, this can be read as a sign of improvement. However, the company still posted a controlling-interest net loss, so whether the recovery has spread to the bottom line will require confirmation in coming quarters."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2025~2026Q1 연속 영업손실과 마진 구조 훼손",
-    "en": "Persistent Operating Losses Across 2025–Q1 2026 Signal Structural Margin Impairment"
+    "ko": "2025년 이후 수익성 급락",
+    "en": "Sharp Profitability Decline Since 2025"
    },
    "body": {
-    "ko": "2025년 영업이익률은 21.0%에서 1.2%로 수직 낙하했으며, 2026년 1분기까지 5개 분기 연속으로 이익이 악화됐다. 매출 감소(-7%)를 훨씬 상회하는 이익 감소(-95%)는 단순 레버리지 효과를 넘어 고정비 구조의 경직성을 시사한다. 삼성 파운드리 가동률 회복이 수주로 실제 반영되기 전까지 단기 이익 반등의 구체적 근거가 부재한 상태다.",
-    "en": "The operating margin fell from 21.0% to 1.2% in 2025, with earnings deteriorating across five consecutive quarters through Q1 2026. A ~95% earnings decline on only a ~7% revenue decline points beyond simple operating leverage to a rigid fixed-cost structure. Until Samsung foundry utilization recovery translates into actual purchase orders, there is no concrete near-term catalyst for a profit rebound."
+    "ko": "영업이익률은 2022년 30.4%, 2023년 21.5%, 2024년 21.0%로 20%대를 유지했으나 2025년에는 1.2%까지 떨어졌다. 같은 기간 지배주주순이익도 2024년 19.9억원 흑자에서 2025년 3.5억원 손실로 다시 적자 전환했다. 매출 감소 국면에서 고정비 부담이 이익에 직접 반영되는 구조로 해석된다.",
+    "en": "Operating margin stayed in the 20%-plus range at 30.4% in 2022, 21.5% in 2023, and 21.0% in 2024, but fell to just 1.2% in 2025. Over the same period, controlling-interest net income swung from a KRW 1.99 billion profit in 2024 to a KRW 0.35 billion loss in 2025. This is interpreted as reflecting a structure where fixed-cost burden weighs directly on profit during periods of declining revenue."
    }
   },
   {
    "title": {
-    "ko": "삼성전자 단일 고객 집중 리스크",
-    "en": "Extreme Customer Concentration Risk Tied to Samsung Electronics"
+    "ko": "고객 집중 및 주문 기반 매출 구조",
+    "en": "Customer Concentration and Order-Based Revenue Structure"
    },
    "body": {
-    "ko": "사업 구조상 삼성전자가 사실상 유일한 고객으로, 삼성 파운드리의 투자 사이클·조달 정책·내재화 방향 변화가 실적에 즉각 전이된다. 삼성전자의 파운드리 투자 일정 추가 지연, 발주 축소, 부품 내재화 전략 선택 등은 제이엔비에 대한 수주 감소로 직결될 수 있다. 매출 다변화 또는 비삼성 고객 확보에 관한 공시 없이 이 리스크는 지속적으로 상존한다.",
-    "en": "Samsung Electronics is effectively the sole customer, meaning Samsung foundry's capex cycle, procurement policies, and in-sourcing decisions flow directly into JNB's financials. Further delays in Samsung's fab investment schedule, order reductions, or in-sourcing of stacker capabilities could immediately translate into materially reduced revenues for JNB. Without public disclosure of diversification progress or non-Samsung customer wins, this concentration risk remains structurally embedded."
+    "ko": "회사의 스태커 공급은 삼성전자에 집중돼 있고, 신규 라인 적용은 '오더 메이드' 방식으로 1차 고객사 요청 시점에 좌우된다. 이는 고객사의 투자 결정 시점이 지연되면 매출 인식도 함께 늦춰질 수 있는 구조적 리스크로 이어진다. 2025년 3분기 누적 실적에서 매출과 이익이 동시에 크게 줄었던 사례가 이런 민감도를 보여준다.",
+    "en": "The company's stacker supply is concentrated with Samsung Electronics, and application to new lines follows an order-made approach dependent on the timing of the initial customer's request. This creates a structural risk in which delayed customer investment decisions can also delay revenue recognition. The cumulative Q3 2025 results, in which both revenue and profit fell sharply at the same time, illustrate this sensitivity."
    }
   },
   {
    "title": {
-    "ko": "소형 품절주의 테마-펀더멘털 괴리 및 유동성 리스크",
-    "en": "Thin-Float 'Theme Premium': Narrative-Fundamental Divergence and Liquidity Risk"
+    "ko": "네 개 분기 연속 순손실 및 소형주 변동성",
+    "en": "Four Straight Quarters of Net Losses and Small-Cap Volatility"
    },
    "body": {
-    "ko": "상장주식수 약 961만 주의 소형주로, 삼성전자 파운드리 관련 뉴스에 주가가 단기 급등락하는 패턴이 반복돼 왔다. 실제 납품 계약 체결이나 수익성 회복과 무관한 뉴스 테마 주도의 주가 상승은 기업 펀더멘털과 주가 간 괴리를 확대시킨다. 테마 소멸 시 유동성 부족으로 주가 하방 변동성이 크게 증폭될 수 있다.",
-    "en": "With ~9.62M shares outstanding, the stock has repeatedly exhibited sharp news-driven spikes tied to Samsung foundry announcements — independent of actual contract awards or earnings recovery. Share price rallies detached from fundamental improvements widen the gap between narrative and business reality. When thematic momentum fades, the thin float can significantly amplify downside price volatility."
+    "ko": "2025년 3분기부터 2026년 2분기까지 최근 네 개 분기 지배주주순손실 합계는 24.3억원에 달한다. 상장주식수가 약 962만 주로 코스닥 반도체 장비주 중에서도 유통 규모가 작은 편에 속해, 수급에 따른 가격 변동성이 커질 수 있다. 이 같은 특성은 실적 신호와 무관하게 주가가 급등락할 가능성을 동반한다.",
+    "en": "The cumulative controlling-interest net loss over the most recent four quarters, from Q3 2025 through Q2 2026, reached KRW 2.43 billion. With roughly 9.62 million shares outstanding, the company has a relatively small float even among KOSDAQ semiconductor equipment names, which can amplify price volatility driven by supply and demand. This characteristic carries the possibility of sharp price swings that may not track earnings signals."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "삼성 파운드리 투자 지연 및 수주 변동성",
-    "en": "Samsung Foundry Capex Delay and Order Volatility"
+    "ko": "고객 집중 리스크",
+    "en": "Customer Concentration Risk"
    },
    "body": {
-    "ko": "삼성전자 테일러 팹의 본격 가동 일정은 과거 수차례 연기된 전례가 있으며, 고객사 확보 속도와 수율 안정화 진행에 따라 추가 지연 가능성이 잔존한다. 스태커 납품 계약 미체결 상태에서 가동이 지연되면 S6 관련 개발 비용이 매출 기여 없이 장기화될 수 있다. 반도체 투자 사이클의 본질적 변동성은 중소형 전속 공급사의 실적 변동폭을 구조적으로 확대한다.",
-    "en": "Samsung's Taylor Fab ramp-up has been delayed multiple times, and further delays remain plausible depending on customer acquisition and yield stabilization. If the fab's commissioning slips before a stacker supply contract is signed, JNB's S6 development expenditure could extend without near-term revenue contribution. The inherent volatility of semiconductor capex cycles structurally amplifies earnings swings for captive small-cap suppliers."
+    "ko": "매출의 핵심 고객사가 삼성전자에 편중돼 있어, 특정 고객사의 파운드리·메모리 투자 스케줄 변경이 실적에 직접적인 영향을 준다. 스태커 공급은 주문 기반으로 진행되며 1차 고객사 요청 시점에 따라 매출 인식이 좌우된다. 고객사 다변화가 제한적인 만큼 특정 발주 지연이 실적 전체에 영향을 줄 수 있다.",
+    "en": "With a core customer base concentrated in Samsung Electronics, changes to that single customer's foundry or memory investment schedule directly affect earnings. Stacker supply follows an order-based model, with revenue recognition dependent on the timing of the initial customer's request. Given limited customer diversification, a delay in a specific order could affect overall results."
    }
   },
   {
    "cat": {
-    "ko": "미·중 무역 마찰 및 반도체 수출 규제",
-    "en": "U.S.–China Trade Tensions and Semiconductor Export Controls"
+    "ko": "반도체 업황 사이클 리스크",
+    "en": "Semiconductor Industry Cycle Risk"
    },
    "body": {
-    "ko": "미국의 대중 반도체 수출 규제 강화는 글로벌 Fab 투자 지형을 변화시키고 있으며, CHIPS Act 이행 조건 변화 등은 삼성전자 테일러 팹 가동 일정에 불확실성을 더할 수 있다. 지정학적 리스크가 글로벌 반도체 장비 공급망 전반에 미치는 파급 효과는 제이엔비 단독으로 통제하기 어려운 외생 변수다. 반도체 설비 투자 환경이 급변할 경우 삼성전자의 투자 우선순위 조정도 배제할 수 없다.",
-    "en": "Tightening U.S. export controls on advanced semiconductors are reshaping global fab investment patterns, and changes in CHIPS Act compliance conditions could introduce uncertainty into Samsung's Taylor Fab commissioning timeline. These geopolitical dynamics represent exogenous variables outside JNB's control that can cascade through the broader equipment supply chain. A sharp shift in the semiconductor capex environment could prompt Samsung to revise its own investment priorities."
+    "ko": "반도체 제조 장비 시장은 반도체 시장과 사이클이 유사해 수요·공급, 설비투자 규모 변화에 민감하다. 업황 하강기에는 장비·부품 발주가 지연되거나 축소될 수 있다. 2025년 3분기 누적 실적에서 매출과 이익이 동시에 큰 폭으로 줄어든 사례는 이러한 사이클 민감성을 뒷받침한다.",
+    "en": "The semiconductor manufacturing equipment market moves in a cycle similar to the broader chip market and is sensitive to shifts in supply-demand balance and the scale of capital investment. During industry downturns, equipment and component orders can be delayed or reduced. The sharp simultaneous decline in revenue and profit through cumulative Q3 2025 results supports this cyclical sensitivity."
    }
   },
   {
    "cat": {
-    "ko": "수익성 장기 부진 시 재무 완충 소모 리스크",
-    "en": "Balance Sheet Buffer Erosion Under Prolonged Earnings Weakness"
+    "ko": "수익성 변동성 및 소형주 특성",
+    "en": "Profitability Volatility and Small-Cap Characteristics"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 80.1%로 상승했으며, 영업손실이 장기화될 경우 자본 잠식 없이 버틸 수 있는 여력이 축소된다. 2025년 영업활동 현금흐름은 약 25.2억원으로 플러스를 유지해 즉각적인 유동성 위기 가능성은 낮다. 다만 손실 구조가 다년간 지속될 경우 차입 증가 또는 유상증자 등 재무 구조 변화 가능성을 중장기적으로 배제하기 어렵다.",
-    "en": "The debt ratio edged up to 80.1% at end-2025; a prolonged loss trajectory will gradually erode the capital buffer. Positive operating cash flow of ~₩2.52B in 2025 limits the near-term liquidity risk. However, if the loss structure persists over multiple years, the possibility of incremental borrowing or equity issuance cannot be ruled out over the medium to longer term."
+    "ko": "영업이익률이 2022~2024년 20%대에서 2025년 1%대로 급락한 사례처럼, 매출 규모 변화에 따라 이익이 크게 흔들리는 구조다. 상장주식수가 적어 유통 물량이 제한적인 만큼, 거래량 변화에 따른 가격 변동성도 함께 고려할 필요가 있다. 이 같은 구조는 실적 전망뿐 아니라 수급 요인도 함께 살펴야 한다는 점을 시사한다.",
+    "en": "As seen in the drop in operating margin from the 20%-plus range in 2022-2024 to roughly 1% in 2025, profit swings significantly with changes in revenue scale. With a limited number of shares outstanding, float is constrained, meaning price volatility tied to changes in trading volume should also be considered. This structure suggests that both earnings outlook and supply-demand factors warrant attention."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 10월 말",
+    "en": "Late October 2026"
    },
    "what": {
-    "ko": "2026년 2분기(4~6월) 분기보고서 공시. 영업손실 지속 여부와 매출 회복 속도를 점검해 수익성 반등의 첫 신호를 포착하는 것이 핵심.",
-    "en": "2026 Q2 quarterly report (April–June). Key check: whether operating losses persist and at what pace revenue recovers — the first potential signal of a profitability inflection point."
+    "ko": "삼성전자 2026년 3분기 실적 발표에서 파운드리·DS부문 투자 방향과 가동률 관련 언급을 확인할 필요가 있다.",
+    "en": "Check Samsung Electronics' Q3 2026 earnings release for commentary on foundry and Device Solutions investment direction and utilization rates."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (상시)",
-    "en": "H2 2026 (Ongoing)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "DART 수시 공시를 통한 삼성전자 테일러 팹 S6 라인 스태커 납품 계약 체결 여부 확인. 계약 규모와 납품 일정이 명시될 경우 중기 실적 전망이 크게 재편될 수 있음.",
-    "en": "Monitor DART ad-hoc disclosures for a supply agreement announcement covering JNB's S6-line stacker at Samsung's Taylor Fab. A confirmed contract with disclosed volume and delivery schedule would materially reshape the medium-term earnings outlook."
+    "ko": "제이엔비의 2026년 3분기 실적(잠정) 공시를 통해 2분기에 나타난 영업이익 흑자 전환이 이어지는지 확인해야 한다.",
+    "en": "Check JNB's preliminary Q3 2026 earnings disclosure to see whether the operating profit turnaround seen in Q2 2026 continued."
    }
   },
   {
    "when": {
-    "ko": "2026년 10~11월",
-    "en": "October–November 2026"
+    "ko": "2026년 4분기 중",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "삼성전자 2026년 3분기 실적 발표 시 파운드리 사업부 손익 확인. 파운드리 흑자 전환 실현 여부가 제이엔비의 하반기 수주 흐름에 선행 지표로 작용한다.",
-    "en": "Samsung Electronics Q3 2026 earnings release — specifically the foundry division P&L. Confirmation of a foundry unit breakeven or profitability would serve as a leading indicator for JNB's H2 order flow."
+    "ko": "삼성전자 테일러 신공장 가동 및 S6 라인 관련 스태커 발주 여부가 구체화되는지 지켜볼 시점이다.",
+    "en": "Watch for concrete developments regarding the operation of Samsung Electronics' new Taylor plant and any stacker orders related to the S6 Line."
    }
   },
   {
    "when": {
-    "ko": "2027년 1월 말",
-    "en": "Late January 2027"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "2026년 연간 실적 잠정치 또는 가이던스 공시. 연간 기준 영업이익 흑자 전환 여부를 통해 수익성 회복이 구조적인지 일회성인지 판단하는 중요한 근거가 된다.",
-    "en": "2026 full-year preliminary earnings disclosure. Whether the company achieves a full-year return to operating profitability will be the key determinant of whether the recovery is structural or merely a temporary quarter-by-quarter bounce."
-   }
-  },
-  {
-   "when": {
-    "ko": "분기별 (상시)",
-    "en": "Quarterly (Ongoing)"
-   },
-   "what": {
-    "ko": "비삼성전자 신규 고객 수주 공시 여부 모니터링. 고객 집중 리스크 완화의 첫 신호로, 매출 다변화 진전이 확인된다면 사업 안정성 평가의 근거가 크게 달라진다.",
-    "en": "Monitor DART disclosures for any non-Samsung supply agreements. Any confirmed new customer win would be the first concrete signal of customer concentration risk reduction and would meaningfully change the business stability assessment."
+    "ko": "2026년 연간 실적 및 배당 공시를 통해 손익 회복 흐름이 연간 단위로 이어졌는지 점검해야 한다.",
+    "en": "Review 2026 full-year earnings and dividend disclosures to assess whether the earnings recovery trend was sustained on an annual basis."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "제이엔비는 삼성전자 파운드리 생산라인에 20년 이상 진공 스태커 시스템을 전속 공급해온 검증된 전문 기업으로, 기술 진입장벽과 캡티브 마켓이라는 명확한 구조적 강점을 보유하고 있다. 그러나 2025년 영업이익률이 21%에서 1.2%로 급락하고 2026년 1분기까지 영업손실이 이어지면서 수익성 훼손이 현실화됐다. 삼성전자 파운드리의 가동률 회복과 테일러 팹 S6 라인 스태커 납품 계약 체결이 단기·중기 실적 반전의 핵심 트리거이며, 두 변수의 실현 속도가 향후 기업가치 방향성을 결정짓는다. 현재 주가는 순자산 수준에 근접해 있어 이론적 자산 하방은 제한되나, 이익 회복 가시화 없이는 밸류에이션 재평가 여지도 제한적이다. 삼성 파운드리 관련 뉴스에 대한 주가의 높은 민감도와 소형주 유동성 특성을 감안할 때, 공식 수주 공시 및 분기 실적 개선의 실제 확인이 선행되어야 전망 판단의 신뢰도가 높아진다.",
-   "en": "JNB is a niche specialist with genuine structural competitive advantages — having served as the sole-source vacuum stacker supplier to Samsung Electronics' production lines for over 20 years. However, the operating margin's collapse from 21% to 1.2% in 2025 and continued operating losses through Q1 2026 have made near-term earnings weakness a tangible reality, not merely a concern. The two pivotal variables are: (1) the pace of Samsung foundry utilization recovery and (2) formal confirmation of a S6-line stacker supply contract for the Taylor Fab — the speed at which both materialize will determine the trajectory of the company's earnings and valuation. Trading near book value provides a theoretical asset floor while simultaneously capping upside without demonstrated earnings recovery. Given the stock's pronounced sensitivity to Samsung foundry newsflow and the thin-float liquidity constraints, confirmation of actual supply contracts and sequential quarterly profitability improvement would materially raise the reliability of any forward-looking assessment."
+   "ko": "제이엔비는 삼성전자 반도체 생산라인에 진공 스태커 시스템과 정밀 진공펌프 부품을 20년 넘게 공급해온 코스닥 반도체 장비업체다. 2022~2024년에는 20%대 영업이익률을 유지했으나 2025년 매출이 149.0억원으로 줄면서 영업이익률이 1.2%까지 낮아지고 지배주주순손실 3.5억원을 기록하며 다시 적자로 전환했다. 2025년 3분기부터 2026년 1분기까지 세 개 분기 연속 영업손실을 낸 뒤, 2026년 2분기에는 매출 49.3억원과 영업이익 2.65억원으로 흑자 전환에 성공했으나 지배주주 순이익 기준으로는 여전히 손실을 벗어나지 못했다. 회사는 삼성전자의 미국 텍사스 테일러 신규 파운드리 공장에 적용할 스태커 개발을 2022년부터 진행 중이며, 관련 수혜 기대감이 반복적으로 주가 테마로 부각된 바 있다. 다만 스태커 공급은 주문 기반 구조로 고객사 요청 시점에 좌우되며, 반도체 장비 시장 자체가 반도체 업황 사이클에 민감하다는 점은 구조적 리스크로 남아있다. 향후 실적 회복의 지속 여부는 삼성전자 등 주요 고객사의 투자 재개 시점과 다음 분기 실적으로 확인될 필요가 있다.",
+   "en": "JNB is a KOSDAQ-listed semiconductor equipment company that has supplied vacuum stacker systems and precision vacuum pump components to Samsung Electronics' production lines for over 20 years. It maintained an operating margin in the 20%-plus range in 2022-2024, but 2025 revenue fell to KRW 14.90 billion, operating margin dropped to 1.2%, and the company posted a controlling-interest net loss of KRW 0.35 billion, swinging back into deficit. After three consecutive quarters of operating losses from Q3 2025 through Q1 2026, the company returned to operating profit in Q2 2026 with revenue of KRW 4.93 billion and operating profit of KRW 0.265 billion, though it remained in loss territory on a controlling-interest net income basis. The company has been developing a stacker for Samsung Electronics' new Taylor, Texas foundry plant since 2022, and related expectations have repeatedly resurfaced as a stock market theme. However, structural risks remain in that stacker supply follows an order-based model dependent on customer request timing, and the semiconductor equipment market itself is sensitive to the broader chip industry cycle. Whether the earnings recovery proves durable will need to be confirmed through the timing of renewed investment by major customers like Samsung Electronics and through upcoming quarterly results."
   }
  },
  "sources": [
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A452160",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A452160",
-  "https://m.thinkpool.com/compDiscuss/cont/1023004",
+  "https://m.thinkpool.com/item/452160",
   "https://www.valueline.co.kr/finance/mri/452160",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A452160&cID=&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A452160",
+  "https://stocktong.co.kr/Web/Item.aspx?t=s&l=1&code=452160",
   "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=452160",
+  "https://littlebproject.com/stock/452160",
+  "https://m.thinkpool.com/compDiscuss/cont/1023004",
   "https://finance.finup.co.kr/Stock/452160",
-  "http://www.jnbeng.com/page/company/greeting.html",
-  "http://www.jnbkorea.com/",
-  "https://alphasquare.co.kr/home/stock-summary?code=452160",
-  "https://www.tossinvest.com/stocks/A452160/order",
-  "http://www.jnbeng.com/",
-  "https://paxnet.co.kr/tbbs/list?id=452160&tbbsType=L",
-  "https://news.bizwatch.co.kr/article/market/2026/05/15/0001",
-  "https://m.thinkpool.com/compDiscuss/cont/1011073",
-  "https://theviewers.co.kr/View.aspx?No=4013339",
-  "https://www.apnews.kr/news/articleView.html?idxno=3048835"
+  "https://www.butler.works/ko/companies/01309421",
+  "https://www.investing.com/equities/jnb",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A452160",
+  "https://www.apnews.kr/news/articleView.html?idxno=3048835",
+  "https://www.fnnews.com/news/202404150904250541",
+  "https://www.shinyoung.com/files/20240530/ce7b0ae43a8a9.pdf",
+  "https://data.krx.co.kr/",
+  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-1%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C",
+  "https://www.samsungpop.com/ux/kor/invest/o2Info/contentsDetail.do?boardId=2167"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "452160",
  "name": "제이엔비",
  "name_en": "JNB Co.,Ltd",
@@ -232,11 +223,11 @@
   "자동차"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 04:07",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:40",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -286,6 +277,23 @@
     "opm": 21.5,
     "roe": -7.4,
     "debt_ratio": 72.9
+   },
+   {
+    "year": 2022,
+    "rev": 16550325313,
+    "op": 5025838342,
+    "np": 5220171984,
+    "np_owner": 5220171984,
+    "equity": 22707930798,
+    "equity_owner": 22707930798,
+    "equity_nci": null,
+    "liab": 28759211962,
+    "cfo": 4094809159,
+    "eps_basic": 724,
+    "src": "전기 비교치",
+    "opm": 30.4,
+    "roe": 23.0,
+    "debt_ratio": 126.6
    }
   ],
   "quarterly": [
@@ -321,25 +329,29 @@
    }
   ],
   "valuation": {
-   "price": 3100,
-   "mcap": 0.0298,
+   "price": 3135,
+   "mcap": 0.0302,
    "shares": 9617527,
    "total_shares": 9617527,
    "wavg_shares": 9670195,
    "per": null,
    "eps": -263,
-   "pbr": 0.7967,
+   "pbr": 0.8057,
    "bps": 3891,
    "roe_ttm": -6.2,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": -2426310173,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.76,
+   "eps_src": "공시",
+   "pbr_krx": 0.77,
    "bps_krx": 4084.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 100.0,
-   "div": 3.23
+   "div": 3.19,
+   "hidden": {
+    "per": "loss"
+   }
   }
  }
 }

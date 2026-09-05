@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "적자 3년 만에 분기 흑자 전환 — 신제품 상용화가 분수령",
-  "en": "First Quarterly Profit After Three Loss Years — New Product Commercialization Is the Pivotal Test"
+  "ko": "적자 축소 흐름 속 유리기판·HBM 신소재 전환점",
+  "en": "Narrowing Losses Meet a Glass-Substrate and HBM Pivot Point"
  },
  "lead": {
-  "ko": "2026년 1분기 연결 기준 영업이익·순이익 동반 흑자 전환으로 실적 반등의 첫 신호를 보냈으나, 2025년 4분기 대규모 비경상 손실과 가파르게 오른 부채비율이 재무 체력의 검증 과제로 남아 있다.",
-  "en": "A simultaneous return to operating and net profit in 2026 Q1 marks the first concrete turnaround signal, but a large non-recurring Q4 2025 charge and a sharply elevated debt ratio leave financial resilience as the key open question."
+  "ko": "램테크놀러지는 반도체·디스플레이용 식각액·박리액 사업의 만성적 적자를 겪어왔으나, 2026년 상반기 매출 회복과 영업이익 흑자 전환이 이어지는 가운데 TGV(유리기판 관통전극)·HBM용 신소재로 사업 재편을 시도하고 있다.",
+  "en": "Ramtech Corporation has struggled with chronic losses in its etchant and stripper business for semiconductors and displays, but revenue recovery and a return to operating profit through the first half of 2026 coincide with a business pivot toward new materials for TGV (through-glass via) and HBM applications."
  },
  "keypoints": [
   {
-   "ko": "2026년 1분기 연결 매출 116.6억 원(+10.9% YoY), 영업이익 4.7억 원, 지배 순이익 1.8억 원으로 수년 만에 분기 흑자 달성",
-   "en": "2026 Q1 consolidated revenue of KRW 11.66B (+10.9% YoY), operating income KRW 473M, attributable net income KRW 182M — the first profitable quarter in several years"
+   "ko": "2026년 1분기 순이익이 흑자로 전환됐고, 2분기까지 매출은 3개 분기 연속 순증세를 이어갔다.",
+   "en": "Net profit turned positive in Q1 2026, and revenue extended a three-quarter streak of sequential gains through Q2."
   },
   {
-   "ko": "2025년 4분기에 지배 순손실 75.3억 원이 집중 발생 — 비현금성 비경상 손실 추정되나 연간 부채비율은 157.6%로 급등",
-   "en": "An attributable net loss of KRW 7.53B was concentrated in 2025 Q4, likely non-cash in nature, yet the full-year debt-to-equity ratio surged to 157.6%"
+   "ko": "2025년 4분기에 지배주주순손실 75억원대의 대규모 일회성 손실이 발생하며 연간 순손실이 전년보다 확대됐다.",
+   "en": "A large one-off net loss of roughly KRW 7.5 billion attributable to owners in Q4 2025 widened the full-year net loss versus the prior year."
   },
   {
-   "ko": "HBM·TSV·TGV·전력반도체향 전용 제품 라인업 확장 중; 금산공장 스마트팩토리 신규 생산시설 2026년 하반기 증설 완료 목표",
-   "en": "Dedicated product lineup for HBM, TSV, TGV, and power semiconductor applications expanding; Geumsan smart factory capacity expansion targeted for completion in H2 2026"
+   "ko": "10년 넘게 표류하던 당진 석문산단 불산공장 건축 인허가 소송은 2024년 대법원에서 최종 기각돼 사실상 백지화됐다.",
+   "en": "The decade-long legal battle over the Dangjin hydrofluoric acid plant permit ended with a final Supreme Court dismissal in 2024, effectively shelving the project."
   },
   {
-   "ko": "삼성전기와 공동 개발한 TGV용 불산계 식각액 기본 스펙 평가 완료 — 양산 시점은 고객사 일정 연동으로 2027년 이후 가능성도 상존",
-   "en": "TGV hydrofluoric acid-based etchant (co-developed with Samsung Electro-Mechanics) has completed basic spec validation; mass production timing remains contingent on customer schedule, with some analyses pointing to 2027 or later"
+   "ko": "금산공장 리모델링·증설(총 90억원)은 2026년 9월 30일을 투자 종료일로 재조정했으며, 3분기 내 건축물 사용승인을 목표로 하고 있다.",
+   "en": "The Geumsan plant remodeling and expansion project (KRW 9 billion total) has a revised investment deadline of September 30, 2026, with a target of completing building-use approval within Q3."
   },
   {
-   "ko": "2025년 영업활동 현금흐름 +81.4억 원으로 전년 대비 급반전 — Q4 대규모 손실이 비현금 손상 중심임을 시사",
-   "en": "2025 CFO of KRW +8.14B sharply reversed from the prior year, strongly suggesting that the Q4 loss spike was driven by non-cash impairment items rather than operating cash outflows"
+   "ko": "유리기판 TGV용 식각액 샘플을 국내 유리기판 업체에 공급 중이며, HBM·인산 정제 관련 특허도 다수 출원했다.",
+   "en": "The company is supplying TGV etchant samples for glass substrates to a domestic glass substrate maker and has filed multiple patents related to HBM and phosphoric acid purification."
   }
  ],
  "business": {
-  "ko": "램테크놀러지는 2001년 반도체용 식각액·박리액 제조를 목적으로 설립돼 2013년 코스닥에 상장한 공정 화학소재 전문기업이다. 반도체·디스플레이(LCD·OLED)·2차전지·태양전지 등 IT 제조 전 공정에 투입되는 식각액(Etchant), 박리액(Stripper), 세정액(Cleaner), 증착액 등 프로세스 케미컬이 주력 제품군이다. SK하이닉스, 삼성SDI, LG디스플레이 등 국내 주요 반도체·디스플레이·배터리 제조사를 핵심 고객으로 두고 있으며, 중국 현지 법인을 통해 해외 매출 기반도 확대하고 있다. 주요 생산 거점은 충남 금산공장으로, 2024년 90억 원 규모의 설비 리모델링 및 증설을 통해 HBM·TGV·TSV 전용 생산 라인을 구축 중이며 2026년 하반기 완료를 목표로 스마트팩토리 고도화를 진행하고 있다. 2023년 6월에는 용인 반도체 클러스터 입주심의 합격 후 555억 원 규모의 신규 스마트팩토리 투자를 결정해 중장기 생산 능력 확충 계획도 추진 중이다. 신성장 분야로는 초고순도 인산 양자(Quantum) 정제 기술(특허 5건 출원)과 삼성전기와 공동 개발한 TGV(유리관통전극)용 불산계 식각액이 있으며, 기본 스펙 평가를 완료한 것으로 알려진다. 당진 석문국가산업단지 내 불산공장 건축허가 불허에 대해서는 대법원 상고를 진행 중이며, 이 결과는 불산 자체 생산을 통한 원가 경쟁력 확보에 직결된다. 업종 내 솔브레인 등 대형사 대비 규모는 소형이나, 첨단 패키징 및 차세대 반도체 공정 특화 소재 개발로 차별화를 추진하고 있다.",
-  "en": "RAM Technology was established in 2001 to manufacture semiconductor etchants and strippers, and was listed on KOSDAQ in 2013. Its core product range comprises etchants, strippers, cleaning agents, and deposition chemicals — process consumables used in the fabrication of semiconductors, displays (LCD/OLED), secondary batteries, and solar cells. Key customers include SK Hynix, Samsung SDI, and LG Display, while a China subsidiary provides a growing overseas revenue stream. The primary domestic production base is the Geumsan factory in South Chungcheong Province, which underwent a KRW 9.0B renovation and expansion in 2024 to build dedicated production lines for HBM, TGV, and TSV applications; further smart factory upgrades are targeted for completion in H2 2026. In June 2023, the company committed to a KRW 55.5B smart factory investment within the Yongin Semiconductor Cluster, representing a significant long-term capacity commitment. Key emerging technologies include an ultra-high-purity phosphoric acid quantum purification process (five patent applications filed) and a hydrofluoric acid-based TGV etching solution co-developed with Samsung Electro-Mechanics, for which basic specification validation has reportedly been completed. An ongoing Supreme Court appeal against a construction permit denial for a hydrogen fluoride factory in Dangjin's Seokmuem National Industrial Complex could meaningfully affect the company's cost structure if resolved favorably. Relative to large peers such as Soulbrain, the company is smaller in scale, but is pursuing differentiation through specialization in materials for advanced packaging and next-generation semiconductor processes."
+  "ko": "램테크놀러지는 2001년 설립돼 2013년 코스닥에 상장한 화학소재 전문기업으로, 경기 용인 본사와 충남 금산 생산공장을 기반으로 반도체·디스플레이·2차전지 공정용 식각액, 박리액, 세정액 등을 제조한다. 사업 초기 반도체 화학약품 제조를 기반으로 성장했으며, 이후 디스플레이(LCD·OLED), 2차전지, 태양전지 분야로 제품군을 확장해왔다. 핵심 고객사로는 SK하이닉스, 삼성SDI 등이 있으며, IT 기초 화학약품 공급업체로서 시장 내 입지를 다져왔다. 최근에는 차세대 패키징 기판으로 주목받는 유리기판(Glass Substrate)의 TGV(유리관통전극) 식각액 시장에 진출해 국내 유리기판 업체에 샘플을 공급 중이며, 불산계 제품의 기본 스펙 개발을 완료한 상태다. 아울러 TGV용 케미칼, 초고순도 인산 양자(Quantum) 정제 기술, 금속불순물 제거용 케미칼, HBM용 케미칼, 반도체 패키징용 케미칼 등 신제품군에 대한 특허를 다수 출원하며 포트폴리오 고도화를 시도하고 있다. 회사의 오랜 숙제였던 충남 당진 석문국가산업단지 내 불산공장 신설은 주민 반대와 인허가 불허 처분에 따른 행정소송에서 2024년 대법원이 최종 기각 판결을 내리며 사실상 무산됐고, 회사는 투자 방향을 금산공장 리모델링·증설과 용인 반도체 클러스터 신규 투자로 전환했다. 2023년 6월에는 용인 반도체 클러스터 내 555억원 규모의 신규 시설투자를 결정하며 스마트팩토리 구축을 통한 성장모멘텀 확보를 추진한 바 있다. 경쟁 구도상 솔브레인, 이엔에프테크놀로지 등 국내 불화수소·습식화학 소재 업체들과 시장을 나눠 갖고 있으며, 신공정(TGV·HBM·TSV) 진입 속도가 향후 사업 재편의 관건으로 꼽힌다.",
+  "en": "Founded in 2001 and listed on KOSDAQ in 2013, Ramtech Corporation is a specialty chemical materials company that manufactures etchants, strippers and cleaning solutions for semiconductor, display and secondary battery processes, operating out of its Yongin headquarters and Geumsan production plant. The company grew from semiconductor chemical manufacturing and later expanded into display (LCD/OLED), secondary battery and solar cell applications. Its core customers include SK hynix and Samsung SDI, and it has built a market position as a supplier of foundational IT chemicals. More recently, the company has entered the TGV (through-glass via) etchant market for glass substrates, a next-generation packaging material, supplying samples to a domestic glass substrate maker with basic specification development for its hydrofluoric-acid-based product already completed. It has also filed multiple patents covering TGV chemicals, ultra-high-purity phosphoric acid quantum purification technology, metal-impurity-removal chemicals, HBM chemicals and semiconductor packaging chemicals as it works to upgrade its product portfolio. The company's long-standing project to build a hydrofluoric acid plant in the Seokmun National Industrial Complex in Dangjin was effectively shelved after the Supreme Court issued a final dismissal in 2024 following years of litigation over resident opposition and permit denials, prompting the company to redirect investment toward the Geumsan plant remodeling and a new facility in the Yongin semiconductor cluster. In June 2023, it decided on a KRW 55.5 billion new facility investment within the Yongin semiconductor cluster, aimed at securing growth momentum through smart-factory construction. Competitively, the company shares the domestic hydrofluoric acid and wet chemical materials market with players such as Soulbrain and ENF Technology, and the pace of its entry into new processes such as TGV, HBM and TSV is seen as key to its business realignment."
  },
  "earnings": {
-  "ko": "2022년은 회사 역대 최고 실적으로, 매출 670.2억 원에 영업이익 69.0억 원(OPM 10.3%), 지배 순이익 60.6억 원을 달성했다. 반도체 업황 급락과 고객사 재고 조정이 맞물리며 2023년 매출이 429.8억 원(-35.8% YoY)으로 급감하고 영업손실 -29.5억 원(OPM -6.9%), 지배 순손실 -28.7억 원으로 적자 전환했다. 2024년에는 매출이 445.0억 원으로 소폭 회복됐으나 영업손실 -16.5억 원(OPM -3.7%), 지배 순손실 -25.6억 원으로 적자가 이어졌다. 2025년 매출은 426.8억 원(-4.1% YoY)으로 재차 소폭 감소했으나 영업손실은 -9.5억 원(OPM -2.2%)으로 꾸준히 축소됐다. 다만 지배주주 순손실은 -83.7억 원으로 전년 대비 3배 이상 확대됐는데, 이는 2025년 4분기에만 지배 순손실 75.3억 원이 집중됐기 때문이다. 한편 2025년 CFO는 +81.4억 원으로 전년(-24.1억 원) 대비 급반전해, Q4 손실이 현금 유출을 수반하지 않는 비현금성 요인(자산 손상차손 등)에서 비롯된 것임을 강하게 시사한다. 분기별로는 2025년 1~3분기에 각각 영업이익 1.6억·0.1억·0.9억 원의 소폭 흑자를 유지하다 Q4에 -12.1억 원의 손실이 발생했고, 2026년 1분기에는 매출 116.6억 원(+10.9% YoY), 영업이익 4.7억 원(OPM 4.1%), 지배 순이익 1.8억 원으로 수년 만에 분기 흑자에 성공했다. 부채비율은 2022년 60.3%에서 설비투자 확대와 누적 적자 영향으로 2025년 157.6%까지 상승했다.",
-  "en": "The company's all-time best results were achieved in 2022: revenue of KRW 67.02B, operating income of KRW 6.90B (OPM 10.3%), and attributable net profit of KRW 6.06B. A sharp semiconductor market correction compounded by customer inventory destocking drove 2023 revenue down 35.8% YoY to KRW 42.98B, pushing operating profit into a loss of KRW -2.95B (OPM -6.9%) and attributable net loss of KRW -2.87B. Revenue modestly recovered to KRW 44.50B in 2024, but operating loss persisted at KRW -1.65B (OPM -3.7%) and attributable net loss at KRW -2.56B. In 2025, revenue edged down again to KRW 42.68B (-4.1% YoY), yet the operating loss further narrowed to KRW -954M (OPM -2.2%), reflecting gradual cost improvements. However, the attributable net loss widened sharply to KRW -8.37B — more than three times the 2024 level — almost entirely because KRW -7.53B was concentrated in Q4 2025 alone. The concurrent CFO recovery to KRW +8.14B (from KRW -2.41B in 2024) strongly implies that this Q4 hit stemmed from non-cash items such as asset impairments rather than operational cash outflows. On a quarterly basis, 2025 Q1–Q3 each recorded small positive operating profits (KRW 161M, 11M, 88M respectively), before Q4 reversed to KRW -1.21B. The most recent quarter, 2026 Q1, delivered revenue of KRW 11.66B (+10.9% YoY), operating income of KRW 473M (OPM 4.1%), and attributable net income of KRW 182M — the first profitable quarter in several years. The debt-to-equity ratio has climbed from 60.3% in 2022 to 157.6% in 2025, driven by accumulated losses and expanded capital expenditure."
+  "ko": "연간 실적을 보면 2022년 매출 670억원, 영업이익 69억원(영업이익률 10.3%), 순이익 60.6억원으로 견조했으나, 2023년 매출이 430억원으로 급감하며 영업손실 29.5억원, 순손실 28.7억원으로 적자 전환했다. 2024년에는 매출이 445억원으로 소폭 늘었지만 영업손실 16.5억원, 순손실 25.6억원으로 적자가 이어졌고, 2025년에는 매출이 426.8억원으로 다시 줄었지만 영업손실은 9.5억원으로 전년보다 축소된 반면 순손실은 83.7억원으로 오히려 크게 확대됐다. 이는 2025년 4분기에 발생한 대규모 일회성 순손실(지배주주순손실 75.3억원)이 연간 실적을 끌어내린 결과로, 같은 분기 영업손실도 12.1억원으로 확대됐던 점과 맞물린다. 분기별로 보면 2025년 2분기부터 3분기까지는 매출이 107억원대에서 정체됐고 영업이익도 1억원 안팎의 미미한 수준에 머물렀으나, 2026년 1분기에는 매출이 116.6억원으로 늘고 영업이익이 4.7억원으로 개선되면서 순이익도 1.8억원으로 흑자 전환했다. 2026년 2분기에는 매출이 121.6억원으로 5개 분기 중 최대치를 기록했고 영업이익도 3.0억원으로 양호한 수준을 유지했으나, 순이익은 소폭(-0.6억원) 적자로 다시 돌아섰다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주순이익은 -79.1억원으로, 2025년 4분기의 일회성 손실이 이 구간 실적의 상당 부분을 차지하고 있어 해당 요인을 제외한 흐름은 점진적 개선에 가깝다고 볼 수 있다. 재무구조 측면에서는 부채비율이 2022년 60.3%에서 2023년 90.2%, 2024년 117.6%, 2025년 157.6%로 매년 상승했는데, 이는 신규 시설투자를 위한 차입 확대와 연속된 순손실에 따른 자본 잠식 효과가 함께 반영된 결과로 해석된다. 다만 2025년 영업활동현금흐름은 81.4억원의 순유입을 기록해 2023~2024년의 현금흐름 부진(각각 -0.8억원, -24.1억원)에서 벗어난 점은 긍정적인 신호로 꼽힌다.",
+  "en": "Annual results show a solid 2022 with revenue of KRW 67.0 billion, operating profit of KRW 6.9 billion (10.3% operating margin) and net profit of KRW 6.1 billion, followed by a sharp swing to losses in 2023 as revenue fell to KRW 43.0 billion with an operating loss of KRW 3.0 billion and a net loss of KRW 2.9 billion. In 2024, revenue rose modestly to KRW 44.5 billion but losses persisted, with an operating loss of KRW 1.7 billion and a net loss of KRW 2.6 billion; in 2025, revenue declined again to KRW 42.7 billion while the operating loss narrowed to KRW 1.0 billion, yet the net loss widened sharply to KRW 8.4 billion. This divergence stemmed from a large one-off net loss attributable to owners of roughly KRW 7.5 billion in Q4 2025, a quarter in which the operating loss also widened to KRW 1.2 billion. On a quarterly basis, revenue was flat around KRW 10.7-10.8 billion from Q2 to Q3 2025 with operating profit hovering near a marginal KRW 100 million, before revenue rose to KRW 11.7 billion in Q1 2026 with operating profit improving to KRW 470 million and net profit turning positive at KRW 180 million. Revenue climbed further to KRW 12.2 billion in Q2 2026, the highest of the five quarters shown, with operating profit holding at a solid KRW 300 million, though net profit slipped back into a small loss of about KRW 57 million. Over the trailing four quarters (Q3 2025 through Q2 2026), the combined net loss attributable to owners was KRW 7.9 billion, a figure heavily skewed by the Q4 2025 one-off charge, suggesting the underlying trend excluding that item is closer to gradual improvement. On the balance sheet, the debt ratio climbed steadily from 60.3% in 2022 to 90.2% in 2023, 117.6% in 2024 and 157.6% in 2025, reflecting a combination of borrowing for new facility investments and the erosion of equity from consecutive net losses. On a more positive note, operating cash flow turned to a net inflow of KRW 8.1 billion in 2025, a marked improvement from the weak cash flows of 2023 and 2024 (KRW -0.08 billion and KRW -2.4 billion, respectively)."
  },
  "industry": {
-  "ko": "반도체 공정 화학소재(프로세스 케미컬)는 웨이퍼 제조의 식각·세정·박리 등 필수 단계에 투입되는 소모성 재료로, 설비 투자 사이클과 달리 반복 수요 성격이 강해 경기 변동 민감도가 장비 산업보다 낮다. 2022~2023년 메모리 다운사이클에서 고객사가 가동률을 낮추자 소재 업체 매출도 동반 하락했으나, 2024년 이후 AI·데이터센터 수요 주도의 HBM 확산으로 DRAM 생산라인 가동률이 회복되며 수요가 반등하고 있다. HBM·TSV·첨단 패키징 공정은 범용 공정 대비 고순도·고정밀 케미컬을 요구해 단가와 공급 선택성이 높아지는 구조적 전환이 진행 중이다. 유리기판(Glass Core Substrate) 시장은 차세대 AI 반도체 패키징의 핵심 과제로 부상했으나, 인텔·엔비디아·AMD 등 최종 고객의 로드맵 공개가 늦어지고 있어 TGV 식각액의 매출 가시화 시점은 2027년 이후로 늦춰질 수 있다는 분석도 있다. 국내 반도체 화학소재 시장에서는 솔브레인이 CMP 슬러리·식각액·세정액 분야의 선도 기업 지위를 유지하고 있으며, 이엔에프테크놀로지, 램테크놀러지 등 중소 전문업체들이 틈새 공정·응용 분야에서 경쟁하는 구도다. AI 반도체 투자 확대로 소재 수요는 확장 국면에 있으나, 관세·지정학 리스크와 고객사 공급망 재편이 수요 예측의 불확실성 요인으로 작용하고 있다.",
-  "en": "Semiconductor process chemicals are consumables used in essential fabrication steps — etching, cleaning, and stripping — exhibiting lower cyclicality than capital equipment because they are replenished continuously regardless of new tool purchases. When memory customers cut utilization rates during the 2022–2023 downcycle, materials revenues fell in proportion; from 2024, AI- and datacenter-driven HBM demand has lifted DRAM line utilization rates, directly benefiting process chemical suppliers. Advanced packaging architectures including HBM, TSV, and sophisticated packaging structures demand ultra-high-purity, precision-grade chemicals beyond commodity process standards, driving a structural shift toward higher unit prices and increased supply selectivity. The glass core substrate market has emerged as the next major challenge in AI semiconductor packaging, though delayed roadmap disclosures from Intel, Nvidia, and AMD suggest TGV etchant revenues may not materialize at scale until 2027 or beyond. In the domestic market, Soulbrain maintains leadership across CMP slurry, etchant, and cleaning solution segments, while mid-tier specialists such as ENF Technology and RAM Technology compete in niche application and process areas. While AI-driven semiconductor capex supports expanding materials demand, tariff pressures, geopolitical risks, and customer supply chain realignment add uncertainty to demand forecasting."
+  "ko": "램테크놀러지가 속한 반도체·디스플레이용 습식화학 소재 산업은 메모리·파운드리 업황과 밀접하게 연동되는 특성을 지니며, 최근에는 AI·데이터센터용 반도체 수요 확대가 새로운 성장축으로 부각되고 있다. 회사 관련 자료에 따르면 AI, 데이터센터, 전기차, 차세대 디스플레이 등 신규 산업 성장으로 관련 소재 수요가 확대되고 있는 것으로 파악된다. 특히 유리기판(Glass Substrate)은 기존 플립칩-볼그리드어레이(FC-BGA) 패키지 기판을 대체할 차세대 기판으로 주목받고 있으며, 코어를 유리로 바꿔 계면 박리나 다이 균열 문제를 줄이고 별도 인터포저 없이 칩을 실장할 수 있다는 장점이 있다. 다만 유리기판 양산은 인텔, 엔비디아, AMD 등 주요 고객사가 구체적인 도입 로드맵을 아직 공개하지 않아 양산 시점이 늦춰질 수 있다는 분석도 함께 제기된다. 국내에서는 SK하이닉스, 삼성SDI 등 대형 반도체·배터리 업체가 핵심 수요처이며, 세정·식각 소재 시장에서는 솔브레인, 이엔에프테크놀로지 등이 안정적으로 불화수소를 생산하며 경쟁하고 있다. 램테크놀러지는 규모의 경�제 면에서 상대적으로 작은 편이지만, TGV·HBM·인산정제 등 신공정 소재에 대한 조기 특허 출원으로 향후 시장 재편에서 입지를 확보하려는 전략을 취하고 있다.",
+  "en": "The wet chemical materials industry for semiconductors and displays in which Ramtech operates is closely tied to the memory and foundry cycle, with AI and data-center-related semiconductor demand emerging as a new growth driver. According to company-related disclosures, demand for related materials is expanding on the back of growth in AI, data centers, electric vehicles and next-generation displays. Glass substrates in particular are drawing attention as a next-generation packaging material that could replace conventional flip-chip ball grid array (FC-BGA) substrates, offering advantages such as reduced interfacial delamination and die cracking by replacing the resin core with glass, and enabling chip mounting without a separate interposer. However, some analyses suggest mass production timelines could slip because major customers such as Intel, Nvidia and AMD have not yet disclosed concrete adoption roadmaps for glass substrates. Domestically, large semiconductor and battery makers such as SK hynix and Samsung SDI are key demand sources, while in the cleaning and etching materials market, companies such as Soulbrain and ENF Technology compete by stably producing hydrofluoric acid. Ramtech is relatively small in scale within this landscape, but it is pursuing a strategy of filing early patents for new-process materials such as TGV, HBM and phosphoric acid purification to secure a position ahead of potential market realignment."
  },
  "outlook": {
-  "ko": "회사는 2026년 하반기 금산공장 신규 생산시설 증설 완료를 목표로 HBM·TGV·TSV 전용 라인 및 양자 정제 인산 생산 설비 구축을 진행 중이며, 증설 완료 후 생산능력 확대와 스마트 공정 고도화를 통한 실적 성장을 기대하고 있다. 2026년 1분기에는 메모리 반도체 고객사 공급 물량 확대, 전력반도체·TGV 분야 공급 증가, 중국 법인 매출 성장이 동시에 흑자 전환을 이끌었으며, 경영진은 이 흐름이 하반기로 이어질 것으로 전망했다. TGV 식각액은 삼성전기와의 공동 개발을 통해 기본 스펙 평가를 완료한 상태이나, 유리기판 양산 시점은 최종 고객(인텔·엔비디아·AMD 등)의 공급망 확정 여부에 달려 있어 일부 분석에서는 실질적 매출 반영을 2027년 이후로 보고 있다. 당진 불산공장 건축허가 관련 대법원 상고가 진행 중으로, 상고 인용 시 불산 자체 생산을 통한 TGV 식각액 등 핵심 제품 원가 경쟁력 향상이 가능해진다. 용인 반도체 클러스터 555억 원 투자는 중장기 성장 동력이나, 현재 시가총액을 웃도는 대규모 자금 소요는 재무 레버리지 부담으로 작용할 수 있다. 2026년 연간 기준 영업이익 흑자 전환 여부 — 2022년 수준의 매출 없이도 원가 효율화로 흑자를 달성할 수 있는지 — 가 핵심 관전 포인트다.",
-  "en": "The company is on track to complete new production facility expansion at the Geumsan factory in H2 2026, building dedicated lines for HBM, TGV, TSV, and quantum-purified phosphoric acid applications; management anticipates that increased capacity and smart process upgrades will drive more durable earnings growth. The 2026 Q1 profitability was supported by higher memory customer supply volumes, expanding power semiconductor and TGV contributions, and growing China subsidiary revenues — a confluence management expects to sustain into the second half. The TGV etchant has completed basic specification evaluation with Samsung Electro-Mechanics, but mass production timing depends on when major end customers such as Intel, Nvidia, and AMD formalize glass substrate adoption roadmaps; some analyses point to meaningful TGV revenue contributions only from 2027 onwards. A Supreme Court appeal remains pending regarding the construction permit denial for the hydrogen fluoride factory in Dangjin; a favorable ruling would improve cost competitiveness for fluoride-based products including TGV etchants. The KRW 55.5B Yongin Semiconductor Cluster investment is a meaningful long-term growth lever, but the scale of capital commitment relative to the company's current equity base adds to financial leverage pressure. Whether the company can achieve full-year operating profitability in 2026 — even without a full recovery to 2022 revenue levels — is the key performance milestone for this fiscal year."
+  "ko": "회사의 단기 과제는 금산공장 리모델링·증설을 계획대로 마무리하는 데 있다. 2024년 7월 결정된 총 90억원 규모의 이 투자는 당초 2026년 3월 31일 종료를 목표로 했으나 설비 입고 지연 등으로 2026년 9월 30일로 재조정됐으며, 정정 공시 시점(2026년 2월 27일) 기준 약 74.7억원이 집행된 상태였다. 회사는 건축물 사용승인을 2026년 3분기 내 완료하는 것을 목표로 하고 있다고 밝혔으나, 향후 공정 일정과 경영환경 변화에 따라 준공 일정이 재차 변동될 수 있음을 함께 언급했다. 이 증설은 캐파 확대보다는 HBM·TGV·TSV용 신공정 제품 생산설비와 불산 자동화 생산설비 구축에 초점이 맞춰져 있어, 완공 이후 신제품 매출 기여 여부가 향후 실적의 관건이 될 전망이다. 2023년 6월 결정된 555억원 규모의 용인 반도체 클러스터 투자는 스마트�acotory 구축을 통한 성장모멘텀 확보를 목표로 하고 있으나, 최근 진행 현황에 대한 구체적인 공시 업데이트는 확인되지 않았다. 유리기판 TGV 식각액 부문에서는 기본 스펙 개발이 완료된 상태로, 고객사인 국내 유리기판 업체의 양산 시점(2026년 목표로 알려짐)이 확정되는지가 매출 기여 시점을 좌우할 변수로 남아 있다. 당진 불산공장 프로젝트가 대법원에서 최종 기각된 만큼, 향후 생산능력 확대는 금산·용인 두 거점을 중심으로 재편될 것으로 보인다.",
+  "en": "In the near term, the company's key task is completing the Geumsan plant remodeling and expansion as planned. This KRW 9 billion investment, decided in July 2024, was originally targeted to conclude by March 31, 2026, but was pushed back to September 30, 2026 due to delays in equipment delivery, with approximately KRW 7.47 billion executed as of the amended filing date of February 27, 2026. The company has stated its goal of completing building-use approval within Q3 2026, while also noting that the completion schedule could shift further depending on process timelines and changes in the business environment. This expansion is focused not on capacity expansion but on building production facilities for new-process products for HBM, TGV and TSV applications along with automated hydrofluoric acid production facilities, making the contribution of new products to revenue after completion a key factor for future performance. The KRW 55.5 billion Yongin semiconductor cluster investment decided in June 2023 aims to secure growth momentum through smart-factory construction, though no specific disclosure update on its recent progress could be confirmed. In the TGV etchant business for glass substrates, basic specification development has been completed, and whether the customer's mass production timeline (reportedly targeted for 2026) is confirmed remains a variable that will determine the timing of any revenue contribution. With the Dangjin hydrofluoric acid plant project having been finally dismissed by the Supreme Court, future capacity expansion appears likely to be realigned around the Geumsan and Yongin sites."
  },
  "valuation_comment": {
-  "ko": "3개 연속 연간 영업손실과 2025년 4분기 대규모 비경상 손실로 이익 기반 밸류에이션 지표(PER) 산출이 불가한 상태이며, 지배주주 EPS는 현재 -584원으로 적자 상태가 반영돼 있다. 주가는 주당순자산(BPS 2,866원)에 크게 벗어나지 않는 수준에서 형성돼 있어, 시장이 자산가치를 주요 참조점으로 삼는 국면임을 시사한다. 다만 2022년 이후 누적 적자와 설비투자 확대로 자기자본이 꾸준히 감소하면서 BPS 자체가 하향 추세임을 주의해야 한다 — 과거 주주 자본은 516억 원(2022년)에서 397억 원(2025년)으로 축소됐다. 확정 배당 이력이 없어(DPS 0원) 배당수익률은 사실상 0%로, 업종 내 주요 소재 기업 대비 크게 낮은 수준이다. 2026년 1분기 흑자 전환이 연간·다년간 기준으로 지속·확대되는지 확인되어야 이익 기반 밸류에이션 지표 복원 논의가 가능해진다.",
-  "en": "Three consecutive years of operating losses and the large Q4 2025 non-recurring charge preclude any meaningful earnings-based (P/E) valuation; the headline attributable EPS stands at KRW -584, reflecting continued losses in the reported period. The share price is trading with limited divergence from stated book value per share (BPS of KRW 2,866), suggesting the market is anchoring to asset-value reference points. However, BPS itself has been on a declining path — shareholders' equity contracted from KRW 51.6B (2022) to KRW 39.7B (2025) — as accumulated deficits and heavy capex have steadily eroded the book-value floor. With no dividend payment history (DPS of KRW 0), the dividend yield is effectively zero, falling well below sector peers among listed specialty materials companies. Demonstrating that the 2026 Q1 profit represents the start of durable, multi-year improvement — rather than a single-quarter rebound — is a prerequisite for meaningful earnings-multiple discussion to resume."
+  "ko": "회사는 2023년부터 2025년까지 3개 연속 사업연도 순손실을 기록해 통상적인 주가수익비율(PER) 산출이 어려운 구간에 있으며, 이 때문에 밸류에이션 판단은 주가와 자산가치의 관계를 중심으로 봐야 한다. 주가는 주당 순자산가치에 근접한 수준에서 거래되고 있어, 순자산 대비 뚜렷한 프리미엄이나 큰 폭의 할인 없이 형성돼 있는 편이다. 배당은 최근 연도 기준으로 지급되지 않아 배당수익률 관점의 비교는 해당되지 않는다. 과거 수년간의 실적 흐름을 보면 2022년의 흑자 구간에서 2023~2025년의 적자 구간으로 방향이 바뀌었고, 2026년 상반기 들어서는 영업이익 흑자가 이어지며 이익 회복의 초기 신호가 관찰된다. 다만 2025년 4분기의 대규모 일회성 손실처럼 실적 변동성이 여전히 크다는 점은 자산가치 대비 주가 수준을 해석할 때 함께 고려할 부분이다.",
+  "en": "The company recorded net losses in three consecutive fiscal years from 2023 through 2025, putting it in a range where a conventional price-earnings ratio is difficult to compute, so valuation judgments here should focus on the relationship between share price and asset value rather than earnings multiples. The stock trades at a level close to its book value per share, without a pronounced premium or steep discount relative to net assets. No dividend has been paid in recent years, so a dividend-yield comparison is not applicable. Looking at the multi-year earnings trajectory, the company shifted from a profitable 2022 into a loss-making stretch from 2023 through 2025, and the return to operating profit through the first half of 2026 offers an early signal of earnings recovery. That said, the continued volatility evident in the large one-off loss recorded in Q4 2025 is a factor worth weighing alongside any comparison of share price to asset value."
  },
  "bull": [
   {
    "title": {
-    "ko": "분기 흑자 전환 — 업황 회복과 자체 개선의 복합 신호",
-    "en": "Quarterly Profit Restored — Converging Signals of Industry Recovery and Self-Help"
+    "ko": "이익 회복의 초기 신호",
+    "en": "Early Signs of Earnings Recovery"
    },
    "body": {
-    "ko": "2026년 1분기 영업이익 4.7억 원, 지배 순이익 1.8억 원으로 수 분기 만에 흑자 전환에 성공했다. 메모리 반도체 고객사 공급 물량 확대, 전력반도체·TGV 공급 다변화, 금산 스마트팩토리 효율화, 중국 법인 성장이 동시에 기여했다. AI·HBM 수요 주도로 DRAM 생산라인 가동률이 회복세를 보이고 있어, 2023년 이후 이어진 실적 하강 곡선의 구조적 반전 가능성을 높이고 있다.",
-    "en": "The company returned to profitability in 2026 Q1 with operating income of KRW 473M and attributable net income of KRW 182M, ending a multi-quarter streak of losses. Growth in memory customer supply volumes, power semiconductor and TGV supply diversification, Geumsan smart factory efficiency gains, and a growing China subsidiary all contributed simultaneously. With DRAM production utilization recovering on AI- and HBM-driven demand, the downward earnings trajectory since 2023 shows structural signs of reversal."
+    "ko": "2026년 1분기 순이익이 흑자로 전환됐고, 2분기 매출은 121.6억원으로 최근 5개 분기 중 최대치를 기록했다. 영업이익도 2026년 1분기 4.7억원, 2분기 3.0억원으로 2025년의 미미한 수준(분기당 1억원 안팎)보다 뚜렷이 개선됐다. 2025년 영업활동현금흐름도 81.4억원 순유입으로 전환돼 자금 조달 부담을 일부 완화했다.",
+    "en": "Net profit turned positive in Q1 2026, and Q2 revenue reached KRW 12.2 billion, the highest of the trailing five quarters. Operating profit also improved markedly to KRW 470 million in Q1 and KRW 300 million in Q2 2026, well above the marginal levels of roughly KRW 100 million per quarter seen in 2025. Operating cash flow also swung to a net inflow of KRW 8.1 billion in 2025, easing some funding pressure."
    }
   },
   {
    "title": {
-    "ko": "TGV·HBM 특화 제품 — 차세대 패키징 소모성 시장 선점 포지셔닝",
-    "en": "TGV and HBM Specialty Products — Consumable Market Positioning for Next-Gen Packaging"
+    "ko": "신소재 진입에 따른 사업 다변화",
+    "en": "Business Diversification via New Materials"
    },
    "body": {
-    "ko": "삼성전기와의 공동 개발로 TGV용 불산계 식각액 기본 스펙 평가를 완료했고, TGV 관련 특허 및 초고순도 인산 양자 정제 기술 특허 5건을 축적하며 독자 IP 기반을 구축했다. 유리기판 시장이 본격화되면 TGV 식각액은 반복 소비되는 소모성 소재 특성상 안정적인 반복 매출 구조를 기대할 수 있다. 금산공장 증설을 통해 전용 생산 라인을 선제적으로 구축하고 있어, 고객사 양산 수주 발생 시 빠른 볼륨 대응이 가능한 구조다.",
-    "en": "Basic specification validation of the TGV etching solution (HF-based) has been completed jointly with Samsung Electro-Mechanics, and the company has accumulated proprietary IP including five phosphoric acid quantum purification patents and TGV-related patents. If the glass substrate market develops as projected, TGV etchant could generate stable recurring revenue given its consumable nature — replenished with every production run. Pre-built dedicated production lines at the Geumsan expansion allow for rapid volume response once mass production orders materialize."
+    "ko": "유리기판 TGV용 식각액 샘플을 국내 업체에 공급 중이며 기본 스펙 개발을 마쳤다. HBM용 케미칼, 초고순도 인산 정제 기술 등 여러 특허를 출원해 신공정 진입을 준비하고 있다. 이러한 신제품군이 상용화되면 기존 범용 식각액 대비 부가가치가 높은 사업 구조로 전환될 잠재력이 있다.",
+    "en": "The company is supplying TGV etchant samples for glass substrates to a domestic customer and has completed basic specification development. It has filed multiple patents covering HBM chemicals and ultra-high-purity phosphoric acid purification technology as it prepares to enter new processes. If commercialized, these new product lines have the potential to shift the business toward a higher value-added structure compared with conventional general-purpose etchants."
    }
   },
   {
    "title": {
-    "ko": "현금창출력 유지 — 대규모 회계 손실 속에서도 CFO 흑자 전환",
-    "en": "Sustained Cash Generation — Positive CFO Despite Large Accounting Losses"
+    "ko": "장기 소송 리스크 해소",
+    "en": "Resolution of a Long-Running Legal Overhang"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름(CFO)은 +81.4억 원으로 전년(-24.1억 원) 대비 대폭 회복됐다. 이는 2025년 대규모 지배 순손실(-83.7억 원)이 현금 유출을 수반하지 않는 비현금성 손상차손 등 일회성 회계 처리에서 비롯됐음을 강하게 시사한다. 손익계산서상 손실과 달리 실질 현금창출 능력이 유지되고 있다는 점은 운전자본 관리와 재투자 여력 측면에서 긍정적 시그널이다.",
-    "en": "Operating cash flow (CFO) recovered strongly to KRW +8.14B in 2025, sharply reversing from KRW -2.41B in 2024. This strongly implies that the KRW -8.37B attributable net loss was driven predominantly by non-cash items such as asset impairments rather than actual cash outflows. The divergence between reported accounting losses and sustained real cash generation is a constructive signal for working capital management and the company's capacity to fund near-term investment commitments."
+    "ko": "10년 가까이 표류하던 당진 불산공장 인허가 소송이 2024년 대법원에서 최종 확정돼 불확실성 하나가 제거됐다. 이에 따라 회사는 투자 자원을 금산공장 리모델링과 용인 반도체 클러스터로 재배치할 수 있게 됐다. 신규 투자가 신공정 제품 위주로 재편된 만큼, 향후 자본배분의 효율성이 개선될 가능성이 있다.",
+    "en": "The nearly decade-long litigation over the Dangjin hydrofluoric acid plant permit was finally settled by the Supreme Court in 2024, removing one source of uncertainty. This has allowed the company to redirect investment resources toward the Geumsan plant remodeling and the Yongin semiconductor cluster. With new investment now realigned toward new-process products, there is potential for improved capital allocation efficiency going forward."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "부채비율 급등 — 재무 레버리지 리스크 확대",
-    "en": "Soaring Debt Ratio — Rising Financial Leverage Risk"
+    "ko": "누적된 재무구조 부담",
+    "en": "Accumulated Balance-Sheet Strain"
    },
    "body": {
-    "ko": "부채비율은 2022년 60.3%에서 2025년 157.6%로 2.6배 급등했다. 용인 반도체 클러스터 555억 원, 금산공장 90억 원 등 공격적 설비투자와 3년간 누적 손실(-134.9억 원)이 자기자본을 516억 원(2022년)에서 397억 원(2025년)으로 줄인 결과다. 향후 추가 적자 발생이나 투자 집행 시 재무 완충 역할을 할 자기자본 규모가 제한적이라는 점은 신용 리스크 측면에서 지속 모니터링이 필요하다.",
-    "en": "The debt-to-equity ratio has surged 2.6-fold from 60.3% (2022) to 157.6% (2025), driven by aggressive capital expenditures (KRW 55.5B in the Yongin cluster, KRW 9.0B at Geumsan) and three years of cumulative losses (totaling approximately KRW 13.49B) that shrank equity from KRW 51.6B to KRW 39.7B. The shrinking equity buffer available to absorb further losses or investment outlays represents a credit-risk factor requiring continued monitoring."
+    "ko": "부채비율이 2022년 60.3%에서 2025년 157.6%로 4년 연속 상승했다. 연속된 순손실로 자기자본이 2022년 516억원에서 2025년 397억원으로 줄어든 점도 재무 완충력을 약화시키는 요인이다. 신규 투자를 위한 차입 확대가 이어질 경우 이자비용 부담이 이익 개선 속도를 상쇄할 수 있다.",
+    "en": "The debt ratio rose for four consecutive years, from 60.3% in 2022 to 157.6% in 2025. Equity also declined from KRW 51.6 billion in 2022 to KRW 39.7 billion in 2025 due to consecutive net losses, weakening the company's financial buffer. If borrowing for new investments continues to expand, interest expense could offset the pace of any earnings improvement."
    }
   },
   {
    "title": {
-    "ko": "매출 회복 정체 — 2022년 피크 대비 36% 낮은 수준에서 박스권",
-    "en": "Revenue Recovery Stalled — Stuck ~36% Below the 2022 Peak"
+    "ko": "일회성 손실의 재발 가능성",
+    "en": "Risk of Recurring One-Off Losses"
    },
    "body": {
-    "ko": "2025년 연간 매출 426.8억 원은 2022년 피크(670.2억 원) 대비 약 36% 낮은 수준이며, 2023~2025년 3년 동안 400~445억 원 박스권에 갇혀 있다. 주력 고객사의 단가 인하 압력, 범용 제품 경쟁 심화, 공정 전환에 따른 제품 교체 리스크가 복합적으로 작용한다. TGV 등 신사업 매출 가시화 전까지 과거 피크 수익성 수준으로의 복귀는 어려울 수 있다.",
-    "en": "Annual revenue of KRW 42.68B in 2025 remains approximately 36% below the 2022 peak of KRW 67.02B, and has been rangebound between KRW 43–45B for three consecutive years. Downward unit price pressure from key customers, intensifying competition in commodity process chemicals, and product substitution risks from process node migrations are acting as concurrent headwinds. Without meaningful contribution from TGV or other new-business areas, a return to prior-peak profitability levels may prove elusive."
+    "ko": "2025년 4분기에 지배주주순손실 75억원대의 대규모 일회성 손실이 발생하며 분기 실적의 변동성이 매우 크다는 점이 드러났다. 최근 네 개 분기 합산 순이익이 -79.1억원으로, 영업이익 개선세와 달리 순손실 구간이 여전히 지속되고 있다. 유사한 비경상적 요인이 재발할 경우 실적 회복의 신뢰도에 부담을 줄 수 있다.",
+    "en": "A large one-off net loss of roughly KRW 7.5 billion attributable to owners in Q4 2025 revealed just how volatile quarterly results can be. The trailing four-quarter net result remained a loss of KRW 7.9 billion, meaning the net-loss stretch has persisted even as operating profit has improved. A recurrence of similar non-recurring items could undermine confidence in the earnings recovery."
    }
   },
   {
    "title": {
-    "ko": "유리기판 상용화 지연 리스크 — 기대와 현실의 시간 차이",
-    "en": "Glass Substrate Commercialization Delay — Gap Between Expectations and Revenue Reality"
+    "ko": "신규 투자·신사업의 실현 불확실성",
+    "en": "Execution Uncertainty in New Investments and Businesses"
    },
    "body": {
-    "ko": "인텔·엔비디아·AMD 등 최종 고객의 유리기판 도입 로드맵이 구체화되지 않으면서, TGV 식각액의 본격 양산 매출 반영은 일부 분석에서 2027년 이후로 전망된다. 삼성전기의 유리기판 양산 일정이 지연되면 램테크놀러지의 TGV 매출 실현 시점도 직접 밀린다. 당진 불산공장 소송 패소 확정 시 핵심 원료인 불산 자체 생산 계획이 전면 수정돼야 해, TGV 식각액 원가 경쟁력 확보에도 차질이 생긴다.",
-    "en": "With Intel, Nvidia, and AMD yet to disclose firm glass substrate adoption roadmaps, some market analyses project that TGV etchant revenues will not materialize at scale until 2027 or later. Delays in Samsung Electro-Mechanics' glass substrate mass production schedule would directly push back RAM Technology's TGV revenue recognition. Should the Supreme Court ultimately confirm the construction permit denial for the Dangjin HF factory, the self-production plan for this key raw material would require a complete overhaul, impairing cost competitiveness for TGV etchants."
+    "ko": "금산공장 증설은 이미 한 차례 완공 일정이 미뤄졌고, 회사 스스로도 추가 지연 가능성을 열어두고 있다. 유리기판 양산 시점은 인텔·엔비디아·AMD 등 고객사의 로드맵 미공개로 늦춰질 수 있다는 분석도 있다. 555억원 규모 용인 투자의 구체적 진행 현황도 최근 공시로 확인되지 않아 집행 속도에 대한 불확실성이 남아 있다.",
+    "en": "The Geumsan plant expansion has already been delayed once, and the company itself has left open the possibility of further delays. Analysts have also noted that glass substrate mass production timelines could slip because key customers such as Intel, Nvidia and AMD have not disclosed their adoption roadmaps. The specific progress of the KRW 55.5 billion Yongin investment has not been confirmed through recent disclosures, leaving uncertainty around its execution pace."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "반도체 업황 사이클 리스크",
-    "en": "Semiconductor Demand Cycle Risk"
+    "ko": "재무·유동성 리스크",
+    "en": "Financial and Liquidity Risk"
    },
    "body": {
-    "ko": "메모리 반도체 업황은 AI·데이터센터 수요를 바탕으로 회복 중이나, 거시경제 둔화·공급 과잉·지정학 갈등이 재현될 경우 고객사 가동률 하락이 소재 수요 급감으로 직결된다. 2022~2023년 경험에서 보듯 업황 하강 시 회사 매출은 단기간에 30% 이상 급감할 수 있다. 미국의 대중국 반도체 수출 규제 강화가 국내 주요 고객사의 중국 생산 계획에 영향을 줄 경우 해외 법인 매출에도 간접 리스크가 발생한다.",
-    "en": "Memory semiconductor demand is recovering on AI and datacenter tailwinds, but a renewed down-cycle triggered by macroeconomic deceleration, oversupply, or geopolitical escalation could rapidly reduce customer utilization rates, causing sharp declines in materials demand. As the 2022–2023 experience showed, a downturn can compress the company's revenue by over 30% within a single year. Tightened U.S. semiconductor export controls directed at China could indirectly affect domestic customers' China production plans and the company's China subsidiary revenues."
+    "ko": "부채비율이 4년 연속 상승해 2025년 157.6%에 이르렀고, 연속된 순손실로 자기자본이 축소되고 있다. 차입 확대에 따른 이자비용 부담이 커질 경우 신규 투자 재원 조달에 제약이 생길 수 있다. 향후 분기별 순이익 흐름과 차입 규모 변화를 함께 살펴볼 필요가 있다.",
+    "en": "The debt ratio has risen for four consecutive years to 157.6% in 2025, while equity has shrunk due to successive net losses. Growing interest expense from expanded borrowing could constrain the funding available for new investments. Future quarterly net profit trends and changes in borrowing levels warrant close monitoring."
    }
   },
   {
    "cat": {
-    "ko": "재무 건전성 및 유동성 리스크",
-    "en": "Balance Sheet and Liquidity Risk"
+    "ko": "투자 및 인허가 지연 리스크",
+    "en": "Investment and Permitting Delay Risk"
    },
    "body": {
-    "ko": "부채비율 157.6%(2025년)는 동업종 내 상대적으로 높은 수준이며, 용인 반도체 클러스터 대규모 투자의 자금 조달 구조와 집행 일정이 아직 완전히 가시화되지 않은 상황에서 재무 압박이 심화될 수 있다. 2025년 4분기 대규모 비경상 손실의 구체적 원인과 재발 가능성이 충분히 공개되지 않아 투자자 입장에서 불확실성이 남아 있다. 추가적인 영업 적자나 비경상 손실이 발생할 경우 자기자본의 추가 감소와 BPS 하락으로 이어진다.",
-    "en": "A debt-to-equity ratio of 157.6% (2025) is elevated relative to sector peers, and financial pressure could intensify if the funding structure and execution timeline for the large Yongin cluster investment remains incompletely disclosed. The specific cause and recurrence risk of the large Q4 2025 non-recurring loss have not been fully detailed in publicly available summaries, leaving residual uncertainty for investors. Any additional operating losses or non-recurring charges would further erode equity and push BPS lower."
+    "ko": "금산공장 증설은 이미 한 차례 준공 일정이 연장된 바 있어 추가 지연 가능성을 배제할 수 없다. 과거 당진 불산공장 사례처럼 지역 사회와의 갈등이나 인허가 이슈가 신규 투자에서 재발할 위험도 존재한다. 이는 신공정 제품의 상용화 시점을 늦춰 매출 기여를 지연시킬 수 있다.",
+    "en": "The Geumsan plant expansion has already seen its completion schedule extended once, and further delays cannot be ruled out. There is also a risk that conflicts with local communities or permitting issues, similar to the earlier Dangjin plant case, could recur in future investments. This could delay the commercialization of new-process products and push back their revenue contribution."
    }
   },
   {
    "cat": {
-    "ko": "신기술·신제품 상용화 실패 또는 지연 리스크",
-    "en": "New Technology and Product Commercialization Failure or Delay Risk"
+    "ko": "고객사 로드맵 의존 리스크",
+    "en": "Customer Roadmap Dependency Risk"
    },
    "body": {
-    "ko": "TGV 식각액, 양자 정제 인산 등 신기술 제품군은 현재 고객사 인증 또는 개발 단계에 있어 매출 기여 시점과 규모가 불확실하다. 유리기판 상용화가 지연되거나 경쟁사 유사 제품 개발이 가속화되면 선행 R&D 투자와 설비투자의 회수 기간이 예상보다 길어질 수 있다. 당진 불산공장 대법원 판결에서 패소가 확정될 경우 핵심 원료 자체 조달 계획이 좌절되고 원가 경쟁력 개선 로드맵의 재수립이 불가피하다.",
-    "en": "TGV etchants and quantum-purified phosphoric acid remain in customer qualification or development stages, leaving the timing and scale of their revenue contributions uncertain. If glass substrate commercialization takes longer than anticipated or competitors accelerate development of equivalent products, the payback period on front-loaded R&D and capital expenditures could extend significantly beyond initial assumptions. A confirmed Supreme Court loss on the hydrogen fluoride factory permit would frustrate the self-production procurement strategy and force a redesign of the cost competitiveness improvement roadmap."
+    "ko": "유리기판 TGV 식각액 사업의 매출 기여 시점은 고객사인 유리기판 업체의 양산 일정에 전적으로 좌우된다. 인텔, 엔비디아, AMD 등 최종 수요 고객사가 구체적인 도입 로드맵을 아직 공개하지 않아 양산 시점이 늦춰질 가능성이 지적된다. 이 경우 관련 신소재 매출화 시점도 함께 이연될 수 있다.",
+    "en": "The timing of revenue contribution from the TGV etchant business for glass substrates depends entirely on the mass production schedule of its glass substrate customer. Since end-demand customers such as Intel, Nvidia and AMD have not yet disclosed concrete adoption roadmaps, there is a risk that mass production timing could slip, which would likewise defer the monetization of the related new material."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순 (2026년 2분기 실적 공시)",
-    "en": "Mid-August 2026 (2026 Q2 Earnings Release)"
+    "ko": "2026년 9월 30일",
+    "en": "September 30, 2026"
    },
    "what": {
-    "ko": "연속 분기 흑자 달성 여부와 영업이익률 추이를 확인한다. 메모리 고객사 가동률 및 HBM·TGV 전용 제품 납품 동향도 함께 파악해 실적 개선의 지속성을 점검한다.",
-    "en": "Verify whether consecutive quarterly profitability is sustained and track the OPM trend. Also assess memory customer utilization rates and HBM/TGV-dedicated supply momentum to evaluate the durability of the earnings improvement."
+    "ko": "금산공장 리모델링·증설 투자 종료일로, 건축물 사용승인 완료 여부와 신공정(HBM·TGV·TSV) 설비 가동 개시 시점을 확인해야 한다.",
+    "en": "This is the revised deadline for the Geumsan plant remodeling and expansion investment; watch for whether building-use approval is completed and when the new-process (HBM/TGV/TSV) facilities begin operating."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (금산공장 신규 생산시설 증설 완료 목표)",
-    "en": "H2 2026 (Target Completion of Geumsan Factory Expansion)"
+    "ko": "2026년 11월 중순(3분기보고서 공시 예정 시점)",
+    "en": "Mid-November 2026 (expected Q3 report filing)"
    },
    "what": {
-    "ko": "HBM·TGV·TSV 전용 및 양자 정제 인산 생산 라인 가동 개시 여부와 증설 규모를 확인한다. 증설 완료 후 매출·마진에 미치는 효과 및 관련 공시를 모니터링한다.",
-    "en": "Confirm whether HBM, TGV, TSV, and quantum phosphoric acid production lines commence operations as planned, and assess the capacity scale. Monitor related disclosures and the pace at which the expansion translates into incremental revenue and margin improvement."
+    "ko": "2026년 3분기 실적에서 매출 증가세와 영업이익 흑자, 순이익 흐름이 이어지는지, 그리고 2025년 4분기와 유사한 일회성 항목이 재발하는지를 점검해야 한다.",
+    "en": "Check the Q3 2026 results for whether the revenue growth trend, operating profit and net income trajectory continue, and whether any one-off items similar to Q4 2025 recur."
    }
   },
   {
    "when": {
-    "ko": "2026~2027년 (TGV 유리기판 고객사 양산 전환 공시)",
-    "en": "2026–2027 (Customer TGV Glass Substrate Mass Production Announcement)"
+    "ko": "2026년 4분기~2027년 초",
+    "en": "Q4 2026 to early 2027"
    },
    "what": {
-    "ko": "삼성전기 등 유리기판 고객사의 파일럿 라인 양산 전환 선언 또는 대규모 수주 공시가 TGV 식각액 매출 가시화의 트리거다. 인텔·엔비디아 등 최종 고객의 유리기판 공식 로드맵 발표 여부도 함께 추적한다.",
-    "en": "A mass production conversion announcement or large-scale order from a glass substrate customer (likely Samsung Electro-Mechanics) would be the trigger for TGV etchant revenue visibility. Also track whether Intel, Nvidia, or other end customers formally disclose glass substrate adoption roadmaps."
+    "ko": "TGV 식각액을 공급받는 국내 유리기판 고객사의 양산 개시 여부와 시점을 확인해, 관련 신소재 매출화 진행 상황을 판단해야 한다.",
+    "en": "Confirm whether and when the domestic glass substrate customer receiving TGV etchant supply begins mass production, to gauge progress on monetizing the related new material."
    }
   },
   {
    "when": {
-    "ko": "미정 (당진 불산공장 대법원 판결)",
-    "en": "TBD (Supreme Court Ruling on Dangjin HF Factory Permit)"
+    "ko": "2027년 3월경(2026년 사업보고서 공시 예정 시점)",
+    "en": "Around March 2027 (expected FY2026 annual report filing)"
    },
    "what": {
-    "ko": "대법원 상고 판결은 불산 자체 생산을 통한 원가 절감 가능 여부를 결정짓는다. 패소 확정 시 당진 투자 계획의 전면 수정이나 대체 부지 검토가 필요해지며, 인용 시 TGV·세정 소재 원가 경쟁력 개선 로드맵이 구체화된다.",
-    "en": "The Supreme Court ruling will determine whether self-production of HF chemicals and associated cost reductions are achievable. A confirmed loss would require a complete revision of Dangjin investment plans or evaluation of alternative sites, while a favorable ruling would enable the company to advance its cost competitiveness roadmap for TGV and cleaning material products."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026~2027년 (용인 반도체 클러스터 투자 집행 진행 현황)",
-    "en": "2026–2027 (Yongin Semiconductor Cluster Investment Execution Progress)"
-   },
-   "what": {
-    "ko": "555억 원 규모 용인 반도체 클러스터 스마트팩토리의 자금 조달 구조와 착공·완공 일정을 공시를 통해 확인한다. 투자 집행 가속화는 설비 증설 기대로 연결되나, 외부 조달 비중이 클 경우 재무 레버리지가 추가 상승할 수 있다.",
-    "en": "Monitor the financing structure and groundbreaking/completion schedule for the KRW 55.5B Yongin Semiconductor Cluster smart factory through company disclosures. Accelerating investment execution signals capacity expansion intent, but a high reliance on external financing could push the debt ratio higher still."
+    "ko": "2026년 전체 연간 실적에서 부채비율 추이와 순이익 흑자 전환 지속 여부, 그리고 용인 반도체 클러스터 투자 진행 현황에 대한 추가 공시를 확인해야 한다.",
+    "en": "Review the full-year 2026 results for the debt ratio trend, whether the return to net profit is sustained, and any additional disclosures on the progress of the Yongin semiconductor cluster investment."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "램테크놀러지는 반도체 식각·세정·박리 화학소재를 공급하는 코스닥 소형 전문기업으로, 2022년 피크 이후 3년간의 실적 부진을 거쳐 2026년 1분기 분기 흑자라는 첫 번째 변곡점을 만들었다. 영업손실 폭은 2023년 OPM -6.9%에서 2025년 -2.2%까지 꾸준히 개선됐고, 2026년 1분기에는 4.1%로 반등했다. 그러나 2025년 4분기 집중 손실로 연간 순손실이 크게 확대됐고, 부채비율은 2022년 대비 두 배 이상으로 올랐다. HBM·TSV 전용 제품 판매 확대와 금산 스마트팩토리 증설(2026년 하반기 완료 목표)은 단기 실적 개선 동력이며, TGV 식각액 및 양자 정제 인산은 유리기판 시장 개화 시 중장기 성장 옵션이다. 반면 유리기판 양산 타임라인 불확실성, 가파른 재무 레버리지, 매출이 2022년 피크 대비 여전히 36%를 밑도는 구조적 부진이 상존한다. 연간 기준 흑자 전환과 BPS 하락 방어 — 이 두 가지가 시장 신뢰 회복의 핵심 조건이 될 것이다.",
-   "en": "RAM Technology is a small-cap KOSDAQ specialist in semiconductor etchants, cleaning agents, and strippers that has navigated three years of earnings weakness since its 2022 peak, now producing its first quarterly profit in 2026 Q1 as a concrete inflection signal. Operating margin improvement has been gradual but consistent — from -6.9% (2023) to -2.2% (2025), recovering to +4.1% in the most recent quarter. Yet a large Q4 2025 non-recurring charge inflated the full-year net loss sharply, and the debt-to-equity ratio has more than doubled since 2022. Near-term improvement drivers include growing HBM/TSV dedicated product volumes and the Geumsan smart factory capacity expansion targeting H2 2026 completion, while TGV etchants and quantum-purified phosphoric acid represent medium-to-long-term growth options contingent on glass substrate market development. Concurrent headwinds include uncertainty over glass substrate mass production timelines, elevated financial leverage, and revenue still running approximately 36% below the 2022 peak. Achieving sustainable full-year operating profitability and halting the erosion of book value per share will be the minimum conditions for rebuilding market confidence in the company's earnings recovery narrative."
+   "ko": "램테크놀러지는 2023~2025년 3개 연속 사업연도 순손실을 기록하며 재무구조가 악화됐으나, 2026년 상반기 들어 매출 증가와 영업이익 흑자가 이어지는 등 회복의 초기 신호를 보이고 있다. 다만 2025년 4분기의 대규모 일회성 손실 사례처럼 분기별 변동성이 여전히 크고, 부채비율은 4년 연속 상승해 재무 부담이 누적된 상태다. 오랜 숙제였던 당진 불산공장 소송은 대법원 판결로 종결됐고, 회사는 금산공장 증설과 용인 반도체 클러스터 투자로 자원을 재배치하며 TGV·HBM 등 신공정 소재로 사업 다변화를 시도하고 있다. 이들 신사업의 매출 기여는 금산공장 완공 일정과 고객사의 유리기판 양산 시점 등 외부 변수에 크게 의존한다. 투자자는 향후 분기 실적에서 이익 개선의 지속성과 일회성 요인의 재발 여부, 그리고 신규 시설투자의 완공·가동 일정을 함께 지켜볼 필요가 있다.",
+   "en": "Ramtech Corporation's financial structure deteriorated through three consecutive years of net losses from 2023 to 2025, but the first half of 2026 has shown early signs of recovery, with revenue growth and a return to operating profit. Still, quarterly volatility remains high, as illustrated by the large one-off loss in Q4 2025, and the debt ratio has risen for four straight years, reflecting accumulated financial strain. The long-running Dangjin hydrofluoric acid plant litigation was finally resolved by the Supreme Court, and the company is redirecting resources toward the Geumsan plant expansion and the Yongin semiconductor cluster investment as it diversifies into new-process materials such as TGV and HBM. Revenue contribution from these new businesses depends heavily on external variables, including the Geumsan plant completion schedule and the customer's glass substrate mass production timing. Investors will want to monitor upcoming quarterly results for the persistence of earnings improvement, the potential recurrence of one-off items, and the completion and ramp-up schedule of new facility investments."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A171010&cID=&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/ramtech",
+  "https://alphasquare.co.kr/home/stock-summary?code=171010",
   "https://www.ramtech.co.kr/",
-  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=171010",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=5&gicode=A171010&cID=21&MenuYn=N&NewMenuID=102&stkGb=701",
-  "https://m.finance.daum.net/quotes/A171010/news/stock/20251218140504667",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1703202374218.pdf",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A171010&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "https://www.ramtech.co.kr/m12.php",
-  "https://stockuniverse.co.kr/themed/semiconductor-materials/",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A171010",
   "https://www.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=240623",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=Z0iP6CaPBT1DNLhf",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=635339",
+  "https://www.jobplanet.co.kr/companies/35969/reviews/%EB%9E%A8%ED%85%8C%ED%81%AC%EB%86%80%EB%9F%AC%EC%A7%80",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=upvHOqvicmhdsep5",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251113000672",
+  "https://m.thinkpool.com/item/171010",
+  "https://www.valueline.co.kr/finance/summary/171010",
   "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250318001724",
-  "https://stockstalker.co.kr/semiconductor-materials/",
-  "https://stockstalker.co.kr/semiconductor-equipment/",
-  "https://www.pcbasic.com/ko/blog/semiconductor_companies_usa.html",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1703202374218.pdf",
+  "https://markets.hankyung.com/stock/171010",
+  "https://www.stockplus.com/m/stocks/KOREA-A171010",
   "https://www.thelec.kr/news/articleView.html?idxno=28841",
   "https://tmsstory.co.kr/tgv-%EA%B4%80%EB%A0%A8%EC%A3%BC-%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%9C%A0%EB%A6%AC%EA%B8%B0%ED%8C%90-%ED%95%B5%EC%8B%AC-%EB%8C%80%EC%9E%A5%EC%A3%BC/",
-  "https://www.sptatimeskorea.com/post/%EC%A0%9C20260617-te-01%ED%98%B8-2026%EB%85%84-6%EC%9B%94-17%EC%9D%BC-%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%9E%A5%EB%B9%84-%EA%B4%80%EB%A0%A8-%EC%A3%BC%EC%9A%94-%EB%89%B4%EC%8A%A4-%EC%9A%94%EC%95%BD"
+  "https://thejntc.com/ko/product/J0101.do"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "171010",
  "name": "램테크놀러지",
  "name_en": "RAM TECHNOLOGY CO., LTD.",
@@ -233,9 +223,9 @@
   "화학"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 04:07",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:40",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 2680,
-   "mcap": 0.0383,
+   "price": 2650,
+   "mcap": 0.0379,
    "shares": 14298752,
    "total_shares": 14298752,
    "wavg_shares": 13953494,
    "per": null,
    "eps": -553,
-   "pbr": 0.8987,
+   "pbr": 0.8887,
    "bps": 2982,
    "roe_ttm": -17.9,
    "ttm_window": "2025Q3~2026Q2",
