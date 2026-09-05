@@ -1,229 +1,220 @@
 {
  "title": {
-  "ko": "적자 급감·화장품 과반 — 수익 구조 전환 변곡점 탐색",
-  "en": "Loss Shrinks Sharply, Cosmetics Hits Revenue Majority — Testing a Profitability Inflection"
+  "ko": "매출 성장 속 손익 개선 흐름",
+  "en": "Revenue Growth Amid Narrowing Losses"
  },
  "lead": {
-  "ko": "2026년 1분기 영업손실이 전년 동기 대비 90% 이상 급감하며 수익성 변곡점이 가시화되고 있으나, 4년 연속 마이너스 영업현금흐름과 2025년 부채비율 급등이라는 재무 과제가 동시에 병존한다.",
-  "en": "A near-90% year-on-year contraction in 2026Q1 operating loss marks an emerging profitability inflection, yet four consecutive years of negative operating cash flow and a sharply rising 2025 debt ratio present unresolved financial challenges."
+  "ko": "내츄럴엔도텍은 백수오 건강기능식품과 니들리 화장품 두 축으로 매출 성장을 이어가며 영업손실을 꾸준히 줄여왔으나, 2026년 2분기까지도 완전한 손익 흑자 전환에는 이르지 못한 상태다.",
+  "en": "Naturalendo Tech has continued to grow revenue through its Baeksuo health food and NEEDLY cosmetics businesses while steadily narrowing operating losses, but as of the second quarter of 2026 it has not yet achieved a full turn to sustained profitability."
  },
  "keypoints": [
   {
-   "ko": "2026년 1분기 영업손실 약 0.7억원으로 전년 동기(약 7.3억원) 대비 90% 이상 급감 — 연간 영업 흑자 전환 가능성 부상",
-   "en": "2026Q1 operating loss narrowed to ~₩70M from ~₩726M in 2025Q1, a ~90% YoY reduction — raising the prospect of a full-year operating breakeven"
+   "ko": "2022년부터 2025년까지 연간 매출은 139.5억원에서 222.3억원으로 늘었고, 영업손실률은 -60.5%에서 -14.8%로 축소되는 흐름을 보였다.",
+   "en": "Annual revenue rose from KRW 13.95 billion in 2022 to KRW 22.26 billion in 2025, while the operating margin improved from -60.5% to -14.8% over the same period."
   },
   {
-   "ko": "화장품(NEEDLY) 부문이 2026Q1 매출의 50.9%를 처음으로 돌파 — 단일 원료(백수오) 의존 구조 탈피 및 포트폴리오 다각화 진행 중",
-   "en": "Cosmetics (NEEDLY) exceeded 50% of 2026Q1 revenue for the first time, signalling meaningful portfolio diversification away from single-ingredient dependency"
+   "ko": "2026년 1분기에는 지배주주 순이익이 약 1억원 흑자로 일시 전환됐으나, 2분기에는 다시 약 3.1억원의 순손실로 되돌아갔다.",
+   "en": "Net income attributable to owners briefly turned positive at roughly KRW 100 million in the first quarter of 2026, but reverted to a net loss of about KRW 312 million in the second quarter."
   },
   {
-   "ko": "백수오 복합추출물(EstroG-100)의 미국 FDA·캐나다·유럽 등 12개국 인허가 — 독점적 원료 지위 기반의 글로벌 수출 경쟁력 보유",
-   "en": "EstroG-100 holds regulatory clearance in 12 countries (US FDA-NDI, Canada NPN, EU EFSA) — providing a proprietary global ingredient export platform with a meaningful regulatory moat"
+   "ko": "2026년 1분기 기준 매출 비중은 화장품 50.9%, 백수오 관련 제품 36.8%로, 화장품이 주력 매출원으로 부상했다.",
+   "en": "As of the first quarter of 2026, cosmetics accounted for 50.9% of revenue and Baeksuo-related products 36.8%, with cosmetics emerging as the primary revenue source."
   },
   {
-   "ko": "2025년 부채비율 54.1%(전년 24.1%)로 급등·영업현금흐름 –56.6억원(전년 –21.4억원)으로 악화 — 재무 완충력 축소가 핵심 모니터링 과제",
-   "en": "Debt ratio surged from 24.1% in 2024 to 54.1% in 2025; operating cash outflow worsened from –₩2.14B to –₩5.66B — financial cushion compression is a key monitoring concern"
+   "ko": "니들리 브랜드와 마이크로니들 패치의 해외 유통망이 확대되고 있으며, 2026년 4월 캐나다 코스트코 입점 등 신규 채널 진입 사례가 확인된다.",
+   "en": "The NEEDLY brand and microneedle patch products are expanding overseas distribution, including a confirmed listing at Costco Canada in April 2026."
   },
   {
-   "ko": "자회사 엔도더마 마이크로니들 패치 기술·AI 웰니스 플랫폼 전략이 중기 성장 동력으로 제시되나, 상업화 성과 및 이익 기여 시점의 구체화 필요",
-   "en": "Subsidiary Endoderma's microneedle technology and an AI wellness platform are cited as mid-term growth engines, but commercial traction and revenue contribution timelines require confirmation"
+   "ko": "최근 언론 보도에서 이사회에 사외이사가 부재하다는 지배구조 이슈가 제기됐다.",
+   "en": "Recent media reports have raised a governance concern regarding the absence of any outside directors on the board."
   }
  ],
  "business": {
-  "ko": "내츄럴엔도텍은 2001년 물리·화학·생물학 연구개발업을 목적으로 설립된 코스닥 상장 바이오·헬스케어 기업으로, 경기도 성남시 분당구 판교에 본사를 두고 있다. 사업은 건강기능식품, 화장품, 원료(백수오 복합추출물) 수출, 기타(OEM·임대) 네 부문으로 구성된다. 건강기능식품 브랜드 NEEDIN(니드인)은 효소·다이어트·항산화·갱년기 솔루션 등 이너뷰티 제품군을 다루며, 화장품 브랜드 NEEDLY(니들리)는 클렌징·더마코스메틱·피부 진정 라인을 앞세워 SNS 바이럴 마케팅을 통해 민감 피부 맞춤 브랜드 이미지를 구축하고 있다. 핵심 독점 원료인 EstroG-100(백수오 등 복합추출물)은 갱년기 여성 건강 기능성 소재로, 미국 FDA NDI·캐나다 NPN·유럽 EFSA 노블푸드 등 12개국 인허가를 획득한 글로벌 고부가 소재다. 2026년 1분기 기준 매출 구성은 화장품 50.9%, 백수오 관련 36.8%, 식품 2.7%, 기타 OEM·임대 9.6%로, 화장품 부문이 처음으로 전체 매출의 과반을 차지했다(출처: Investing.com, 2026.05.15 공시 기반). 자회사 엔도더마(지분 약 44%)는 히알루론산 기반 마이크로니들 패치를 생산하며, 국내외 30여 개국에 피부침투 약물전달기술(TTDS) 관련 특허를 보유하고 있다. EstroG-100 원료는 캐나다·미국·동남아시아 등 해외 거래처에 주로 공급되며, 세계 1·2위 약국 체인 월그린·CVS 등 선진국 유통망에 이미 진입한 이력이 있다. 2026년 기준 임직원 약 83명의 소규모 기업으로, AI 기반 웰니스 플랫폼과 유전자 분석 항노화 서비스를 신성장 축으로 추진하며 기술 중심 헬스케어·뷰티 융합 플랫폼 기업으로의 전환을 지향하고 있다.",
-  "en": "Naturalendo Tech is a KOSDAQ-listed bio-healthcare company founded in 2001 in Bundang, Seongnam, for physical, chemical, and biological R&D. Its four business segments are health functional foods, cosmetics, raw ingredient (백수오 complex extract) exports, and other (OEM/rental). The NEEDIN health-food brand covers enzyme, diet, antioxidant, and menopause solutions under an inner-beauty umbrella, while the NEEDLY cosmetics brand targets domestic and international consumers with cleansing, derma-cosmetic, and skin-soothing lines, building a sensitive-skin brand identity through SNS-driven viral marketing. The proprietary ingredient EstroG-100 (백수오 complex extract) holds multi-country regulatory clearance—US FDA-NDI, Canada NPN, EU EFSA novel food—across 12 countries, making it a globally differentiated premium ingredient for women's menopause health. As of 2026Q1, the revenue split was cosmetics 50.9%, 백수오-related 36.8%, food 2.7%, and other OEM/rental 9.6%—the first quarter in which cosmetics exceeded half of total sales (source: Investing.com, based on May 2026 filing). Subsidiary Endoderma (~44% stake) produces hyaluronic acid-based microneedle patches and holds transdermal drug-delivery system (TTDS) patents in 30+ countries. EstroG-100 is distributed primarily through overseas partners in Canada, the US, and Southeast Asia, with a historical presence in leading pharmacy chains such as Walgreens and CVS. With approximately 83 employees, the company is positioning itself as an integrated healthcare-beauty platform, with AI-based wellness solutions and gene-analysis anti-aging services as next-generation growth engines."
+  "ko": "내츄럴엔도텍은 천연물 소재 연구개발을 기반으로 건강기능식품과 화장품(코스메슈티컬)을 함께 공급하는 헬스케어·뷰티 기업이다. 건강기능식품 브랜드 NEEDIN(니드인)과 화장품 브랜드 NEEDLY(니들리)를 주력으로 운영하며, 자회사 엔도더마를 통해 히알루론산 기반 마이크로니들 패치를 생산한다. 2026년 1분기 기준 매출 구성은 화장품 부문이 29억200만원으로 전체의 50.9%를 차지해 가장 크고, 백수오 등 복합추출물 관련 제품이 20억9,500만원으로 36.8%를 기록했으며, 이 제품은 캐나다·미국·동남아시아 등 해외 거래처에 주로 판매된다. 식품 부문은 1억5,600만원(2.7%), 기타 OEM 및 임대수익 등이 5억4,900만원(9.6%)을 차지했다. 니들리는 토너패드, 클렌징 효소 파우더, 시카치드 앰플 등을 주요 제품으로 하며 미국, 싱가포르, 태국, 말레이시아, 우크라이나, 러시아, 체코, 폴란드, 영국, 캐나다 등으로 오프라인 수출을 진행 중이다. 마이크로니들 패치는 북미·유럽(독일, 스위스, 프랑스)과 호주, 러시아, 일본, 베트남 등으로 수출국 확대를 추진하고 있다. 기술 경쟁력 측면에서는 여성 건강 관련 헬스케어 특허를 다수 보유하고, 마이크로니들 관련 특허를 국내외 약 30개국에 출원·등록해 진입장벽을 형성하고 있다. 건강기능식품 원료 대형사 및 화장품 원료·ODM 업체들과 경쟁하는 구도이며, 특정 천연물 원료(백수오 복합추출물)의 독자 인허가 이력을 차별화 포인트로 삼고 있다.",
+  "en": "Naturalendo Tech is a healthcare and beauty company built on natural-ingredient research and development, supplying both health functional foods and cosmeceutical products. It operates the health food brand NEEDIN and the cosmetics brand NEEDLY, while its subsidiary Endoderma manufactures hyaluronic-acid-based microneedle patches. As of the first quarter of 2026, cosmetics was the largest segment at KRW 2.902 billion, or 50.9% of revenue, followed by Baeksuo complex-extract products at KRW 2.095 billion, or 36.8%, which are sold mainly to overseas buyers in Canada, the United States, and Southeast Asia. Food products contributed KRW 156 million (2.7%), and other items including OEM and rental income added KRW 549 million (9.6%). NEEDLY's key products include toner pads, cleansing enzyme powder, and Cicachid ampoules, and the brand is pursuing offline exports to the United States, Singapore, Thailand, Malaysia, Ukraine, Russia, Czech Republic, Poland, the United Kingdom, and Canada. The microneedle patch business is expanding into North America, Europe (Germany, Switzerland, France), Australia, Russia, Japan, and Vietnam. On the technology side, the company holds numerous women's health-related healthcare patents and has filed or registered microneedle-related patents in roughly 30 countries, forming a competitive barrier. It competes against larger health-food ingredient makers and cosmetics ODM/ingredient suppliers, differentiating itself through the proprietary approval history of its Baeksuo complex extract."
  },
  "earnings": {
-  "ko": "2022년 연결 매출 139.5억원, 영업손실 84.4억원(OPM –60.5%)에서 출발해 2023년 매출 187.9억원·영업손실 40.8억원(OPM –21.7%), 2024년 매출 222.6억원·영업손실 37.7억원(OPM –16.9%)으로 매출 성장과 함께 적자폭이 꾸준히 축소됐다. 2025년에는 매출 222.3억원으로 전년 대비 0.2% 소폭 감소하며 성장이 정체됐으나, 영업손실은 32.9억원(OPM –14.8%)으로 전년 대비 12.6% 추가 개선됐다. 2022~2025년 4년 합산 영업손실은 약 196억원에 달한다. 그러나 2025년에는 영업현금흐름이 –56.6억원으로 전년(–21.4억원) 대비 크게 악화됐고, 총부채가 64.7억원에서 125.8억원으로 약 1.9배 증가하며 부채비율이 24.1%에서 54.1%로 급등해 재무 안전마진이 축소됐다. 지배주주 귀속 자기자본은 2022년 365.8억원에서 2025년 239.8억원으로 4년간 약 34.5% 감소했다. 분기별로는 2025년 2분기에 영업손실이 10.5억원으로 분기 최대 손실을 기록했으며, 3분기(6.8억원)·4분기(8.3억원)로 다소 회복됐다. 2026년 1분기는 매출 57.0억원, 영업손실 약 0.7억원으로 전년 동기(7.3억원) 대비 90% 이상 급감하는 획기적 개선을 기록했으며, 지배주주 귀속 순손실도 약 0.7억원으로 크게 축소됐다. 화장품 부문 비중 확대에 따른 매출 믹스 개선과 고정비 효율화가 복합 작용한 결과로 분석되나, 단일 분기 데이터이므로 추세의 지속 여부에 대한 추가 확인이 필요하다.",
-  "en": "Starting from 2022 revenue of ₩13.95B with an operating loss of ₩8.44B (OPM –60.5%), the company progressively narrowed its deficit: 2023 revenue ₩18.79B, operating loss ₩4.08B (OPM –21.7%); 2024 revenue ₩22.26B, operating loss ₩3.77B (OPM –16.9%). In 2025, revenue was nearly flat at ₩22.23B (–0.2% YoY), yet the operating loss continued to narrow to ₩3.29B (OPM –14.8%), a 12.6% YoY improvement. Cumulative operating losses for 2022–2025 total approximately ₩19.6B. However, 2025 operating cash outflow worsened sharply to –₩5.66B from –₩2.14B in 2024, and total liabilities nearly doubled from ₩6.47B to ₩12.58B, pushing the debt ratio from 24.1% to 54.1%. Controlling-interest equity declined approximately 34.5% from ₩36.58B in 2022 to ₩23.98B in 2025. On a quarterly basis, 2025Q2 saw the largest operating loss (₩1.05B), with partial improvement in Q3 (₩684M) and Q4 (₩831M). The standout result is 2026Q1: operating loss collapsed to approximately ₩70M from ₩726M in 2025Q1—a ~90% YoY reduction—with controlling-interest net loss also shrinking to approximately ₩69M. Improved cosmetics revenue mix and fixed-cost discipline are the primary attributed drivers, though a single quarter is insufficient to confirm the trend as structural."
+  "ko": "연간 실적을 보면 매출은 2022년 139.5억원에서 2023년 187.9억원, 2024년 222.6억원으로 꾸준히 늘었고 2025년에는 222.3억원으로 전년과 거의 같은 수준을 유지했다. 같은 기간 영업손실은 -84.4억원(2022, 영업이익률 -60.5%) → -40.8억원(2023, -21.7%) → -37.7억원(2024, -16.9%) → -32.9억원(2025, -14.8%)으로 지속적으로 축소됐다. 지배주주 순손실도 2022년 -106.9억원에서 2025년 -32.2억원으로 크게 줄어드는 흐름을 보였다. 다만 영업활동현금흐름(CFO)은 2024년 -21.4억원에서 2025년 -56.6억원으로 오히려 악화돼, 손익 개선과 현금흐름 사이에 괴리가 나타난다. 분기 흐름을 보면 매출은 2025년 2분기 50.5억원에서 2025년 3분기 57.5억원, 4분기 51.8억원을 거쳐 2026년 1분기 57.0억원, 2분기 61.5억원으로 대체로 증가세를 이어갔다. 영업손실 규모는 2025년 2분기 -10.5억원에서 2026년 1분기 -0.7억원까지 크게 좁혀졌으나 2분기에는 -1.9억원으로 다시 확대됐다. 특히 2026년 1분기에는 영업손실이 거의 손익분기점에 근접했음에도 지배주주 순이익은 +1.1억원으로 흑자 전환했는데, 이는 영업외 항목의 영향으로 해석되며 2분기에는 순손실 -3.1억원으로 재차 돌아섰다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 지배주주 순손실 합계는 약 -16.3억원으로, 연간 손실 규모가 과거 대비 축소된 구간에 있음을 보여준다.",
+  "en": "Annual revenue rose steadily from KRW 13.95 billion in 2022 to KRW 18.79 billion in 2023 and KRW 22.26 billion in 2024, then held roughly flat at KRW 22.23 billion in 2025. Over the same period, the operating loss narrowed continuously: -KRW 8.44 billion (2022, operating margin -60.5%), -KRW 4.08 billion (2023, -21.7%), -KRW 3.77 billion (2024, -16.9%), and -KRW 3.29 billion (2025, -14.8%). The net loss attributable to owners also shrank sharply, from -KRW 10.69 billion in 2022 to -KRW 3.22 billion in 2025. However, operating cash flow actually worsened, from -KRW 2.14 billion in 2024 to -KRW 5.66 billion in 2025, showing a gap between income-statement improvement and cash generation. On a quarterly basis, revenue generally trended upward, from KRW 5.05 billion in the second quarter of 2025 to KRW 5.75 billion in the third quarter, KRW 5.18 billion in the fourth quarter, KRW 5.70 billion in the first quarter of 2026, and KRW 6.15 billion in the second quarter of 2026. The operating loss narrowed sharply from -KRW 1.05 billion in the second quarter of 2025 to just -KRW 70 million in the first quarter of 2026, before widening again to -KRW 194 million in the second quarter. Notably, in the first quarter of 2026, despite the operating loss nearing breakeven, net income attributable to owners turned positive at about KRW 108 million, likely reflecting non-operating items, before reverting to a net loss of about KRW 312 million in the second quarter. Over the trailing four quarters (third quarter of 2025 through second quarter of 2026), the cumulative net loss attributable to owners was about -KRW 1.63 billion, indicating the annual loss scale has moved into a narrower range than in prior years."
  },
  "industry": {
-  "ko": "글로벌 K-뷰티 시장은 2025년 기준 약 147억 달러 규모로, 2034년까지 연평균 8.43%의 성장이 전망되며, K-팝·K-드라마 소프트파워를 기반으로 동남아·미국·유럽으로 수요 저변이 확대되고 있다. 2025년 한국 화장품 수출은 연 누계 104억 달러를 돌파하며 세계 2위 수출국으로 도약했다. 국내 건강기능식품 시장도 2025년 약 6조 4,000억원 규모(전년 대비 +5.2%)로 성장했으며, 2026~2028년 연평균 4.8~6.2%의 안정적 성장이 전망된다. 65세 이상 인구 비율이 2025년 19.2%에 달하는 고령화 심화와 예방 중심 건강 관리 트렌드, 개인 맞춤형 영양 수요 증가가 복합 성장 동인이다. 마이크로니들 기술은 피부 침투형 유효성분 전달의 효율성을 바탕으로 뷰티·의약품 시장 모두에서 고성장 기술 영역으로 주목받고 있다. K-뷰티 시장은 아모레퍼시픽·LG생활건강 등 대형사와 에이피알 등 자본력 있는 인디 브랜드가 공존하는 고경쟁 구도로, 중소형 기업은 차별화된 원료 기술과 틈새 채널 전략으로 포지션을 방어해야 한다. 중국 의존도가 높은 기업들이 구조적 어려움을 겪는 반면, 미국·일본·동남아 시장 다변화 기업들이 성장 탄력을 유지하고 있어 채널 다각화 전략이 업계 내 주요 차별화 기준으로 부상했다.",
-  "en": "The global K-beauty market, valued at approximately USD 14.74 billion in 2025, is projected to grow at a CAGR of 8.43% through 2034, with K-pop and K-drama soft power expanding demand across Southeast Asia, the US, and Europe. Korea's cosmetics exports surpassed USD 10.4 billion in 2025, cementing Korea as the world's second-largest cosmetics exporter. The domestic health functional food market reached approximately ₩6.4 trillion in 2025 (+5.2% YoY), with 4.8–6.2% annual growth forecast for 2026–2028, driven by aging demographics (65+ population at 19.2% in 2025), preventive health trends, and personalised nutrition demand. Microneedle technology is a high-growth area across both the beauty and pharmaceutical drug-delivery markets given its efficacy in transdermal active-ingredient delivery. The K-beauty market is intensely competitive, with large incumbents and agile indie brands competing on digital marketing scale, making proprietary ingredient technology and niche channel strategy essential for smaller operators. Companies diversifying into the US, Japan, and Southeast Asian markets are outperforming China-heavy peers, and channel diversification has emerged as the primary competitive differentiator in the sector."
+  "ko": "내츄럴엔도텍이 속한 건강기능식품·코스메슈티컬 산업은 국내 홈쇼핑·이커머스 채널과 해외 K-뷰티·건기식 수출 수요에 동시에 노출돼 있다. 회사는 2026년 3월 K-수출스타 500 기업으로 선정됐고, 같은 해 4월 니들리 데일리 토너 패드가 캐나다 코스트코에 런칭되는 등 해외 리테일 채널 확보 사례가 나타나고 있다. 마이크로니들 기반 경피약물전달(TDDS) 기술은 미용뿐 아니라 기능성 성분 전달로 확장 가능성이 있는 분야로, 국내외 다수의 마이크로니들 기업들과 기술 경쟁이 이뤄지는 영역이다. 백수오 등 복합추출물은 특정 인허가(FDA NDI, 캐나다 NPN 등)를 보유한 원료로 니치 시장을 형성하고 있으나, 전체 건기식 시장에서는 대형 원료·완제품 업체들과 경쟁해야 하는 위치에 있다. 회사는 최근 유전자 분석 기반 항노화 솔루션, AI 기반 맞춤형 웰니스 등 신성장 축을 모색하고 있다고 언론에 소개된 바 있다. 산업 전반적으로는 해외 수출 다변화와 원료 신뢰성(추적관리) 강화가 경쟁력의 핵심 요소로 꼽힌다.",
+  "en": "The health functional food and cosmeceutical industry in which Naturalendo Tech operates is exposed both to domestic home-shopping and e-commerce channels and to overseas demand for K-beauty and K-health products. The company was selected as a K-Export Star 500 company in March 2026, and in April of the same year its NEEDLY Daily Toner Pad was listed at Costco Canada, illustrating progress in securing overseas retail channels. Microneedle-based transdermal drug delivery system (TDDS) technology has potential applications beyond cosmetics into functional ingredient delivery, an area where the company competes with multiple domestic and overseas microneedle players. Baeksuo complex-extract products occupy a niche built on specific regulatory approvals, including FDA New Dietary Ingredient status and Canadian Natural Product Number certification, but the company still competes against larger ingredient and finished-product makers across the broader health-food market. Media coverage has described the company exploring new growth areas such as genetic-analysis-based anti-aging solutions and AI-driven personalized wellness. Across the industry, export diversification and strengthened raw-material traceability are cited as key competitive factors."
  },
  "outlook": {
-  "ko": "회사는 헬스케어 기능식품·스킨케어·바이오 신소재·AI 기반 분석 기술을 연계한 통합 웰니스 플랫폼으로의 전환 전략을 공식화했다. NEEDLY 화장품 브랜드는 클린 포뮬러와 SNS 바이럴 전략을 통해 국내외 인지도를 높이고 있으며, 2026년 1분기 매출 비중 50.9%로 핵심 성장 동력임이 실적으로 확인됐다. EstroG-100 원료 수출은 캐나다·미국·동남아시아 기존 거래처 매출 확대와 함께 신규 국가 인허가 추진이 병행되고 있으며, 다국 인허가 포트폴리오가 경쟁사 진입 장벽으로 기능한다. 자회사 엔도더마를 통한 마이크로니들 패치 사업은 글로벌 뷰티·약물전달 시장에서 장기 성장 잠재력이 크나, 상업 규모의 수익화 진전 속도가 중기 기업가치 평가의 관건이다. 유전자 분석 기반 맞춤형 항노화 솔루션은 AI 트렌드와 부합하는 차별화 전략으로 개발 중이나, 구체적 서비스 출시 일정과 매출 기여 시점은 아직 공개되지 않았다. 2026년 1분기의 영업손실 급감이 연간 흑자 전환 가능성을 열어 두었으나, 지속 가능한 성장을 위해서는 영업현금흐름의 플러스 전환과 부채비율 안정화가 선결 조건이다.",
-  "en": "The company has formalised a strategic pivot toward an integrated wellness platform combining health functional foods, skincare, bio-sourced ingredients, and AI-driven personalisation. The NEEDLY cosmetics brand is gaining recognition through clean-formula positioning and SNS-driven marketing, confirmed as the top revenue driver at 50.9% of 2026Q1 sales. EstroG-100 ingredient exports are expanding in existing markets (Canada, US, Southeast Asia) while new-country regulatory submissions are ongoing, with the multi-country approval portfolio functioning as a competitive moat. Subsidiary Endoderma's microneedle patch business holds significant long-term potential in global beauty and pharmaceutical drug delivery, but the pace of commercial-scale monetisation will be a key medium-term valuation determinant. Gene-analysis-based personalised anti-aging solutions are under development as an AI-aligned differentiator, though specific launch timelines and revenue contribution schedules remain undisclosed. While 2026Q1 results leave open the possibility of a full-year operating breakeven, a turn to positive operating cash flow and stabilisation of the debt ratio remain prerequisites for a sustainable financial recovery."
+  "ko": "회사는 2026년 3월 K-수출스타 500 기업으로 선정된 데 이어 4월 니들리 데일리 토너 패드의 캐나다 코스트코 입점을 확인시켰고, 니들리 오프라인 수출은 미국·싱가포르·태국·말레이시아·우크라이나·러시아·체코·폴란드·영국·캐나다 등으로 진행 중이며 마이크로니들 패치는 북미·유럽·호주·러시아·일본·베트남 등으로 수출국 확대를 추진 중이라고 공시했다. 이러한 채널 확장이 매출 성장의 주요 동력으로 작용할 수 있는 반면, 신규 시장 진입에는 마케팅비·인증비 등 비용 부담이 동반될 수 있다. 회사는 또한 유전자 분석 기반 항노화 솔루션과 AI 기반 맞춤형 웰니스 등을 향후 성장 분야로 언급한 바 있으나, 구체적 매출 기여 시점이나 규모는 아직 공시되지 않았다. 분기별로 매출 성장세가 이어지고 영업손실이 축소되는 구간이 확인되지만, 2026년 2분기처럼 순이익이 다시 손실로 돌아서는 변동성도 함께 나타나고 있어 손익 안정화 여부를 다음 분기 실적에서 확인할 필요가 있다. 지배구조 측면에서 사외이사 부재가 언론에서 지적된 만큼, 향후 이사회 구성 변화 여부도 확인 대상이다.",
+  "en": "Following its selection as a K-Export Star 500 company in March 2026, the company confirmed in April that its NEEDLY Daily Toner Pad was listed at Costco Canada, and it has disclosed that NEEDLY offline exports are proceeding to the United States, Singapore, Thailand, Malaysia, Ukraine, Russia, Czech Republic, Poland, the United Kingdom, and Canada, while microneedle patch exports are being expanded toward North America, Europe, Australia, Russia, Japan, and Vietnam. Such channel expansion could serve as a key driver of revenue growth, though entering new markets typically carries added marketing and certification costs. The company has also mentioned genetic-analysis-based anti-aging solutions and AI-driven personalized wellness as future growth areas, though specific timing or scale of revenue contribution has not been disclosed. While quarterly revenue growth has continued and operating losses have narrowed in some periods, volatility remains, as seen in the second quarter of 2026 when net income reverted to a loss, making it necessary to watch upcoming quarterly results for signs of profit stabilization. Given media reports pointing to the absence of outside directors, any future changes to board composition also warrant monitoring."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당순자산(BPS 762원) 대비 상당한 시장 프리미엄을 반영하고 있어, 미래 이익 개선 기대와 성장 옵션이 가격에 선반영된 구조임을 보여 준다. 순손실이 지속되는 상황에서 PER 산출이 불가능하며, 이익 지표 기반 절대 가치 비교는 제한적이다. 최근 4개 분기 누계 기준 주당순손실(EPS –73원)은 꾸준히 개선 방향을 보이고 있으며, 2026년 1분기의 극적인 손실 축소는 EPS 방향 전환의 신호로 해석된다. 배당금은 지급되지 않아 배당수익률이 업종 평균을 크게 하회하며, 이익 회복 이전까지 배당 정책 변화는 기대하기 어렵다. 52주 거래 구간이 매우 넓어 가격 변동성이 높고, 현재 주가 수준은 해당 구간의 하단부에 근접해 있어 시장 기대치가 보수적으로 재조정된 구간으로 볼 수 있으며, 손익 개선이 추가 확인될수록 순자산 대비 프리미엄의 지속 여부가 시장의 핵심 평가 기준이 될 것이다.",
-  "en": "The current market price incorporates a significant premium over net asset value per share (BPS ₩762), implying that future earnings recovery and growth optionality are embedded in the valuation. With net losses ongoing, no PER-based comparison is meaningful, and absolute earnings-metric valuation remains constrained. The headline EPS (–₩73) reflects cumulative recent-quarter losses, but 2026Q1's dramatic per-share loss reduction signals a potential directional shift. No dividends are paid, and the dividend yield materially underperforms the sector average; a change in dividend policy is unlikely until profitability is restored. The wide 52-week trading range highlights significant price volatility; the current price near the lower end of that range suggests market expectations have been conservatively recalibrated, and incremental confirmation of earnings improvement will be the key factor in determining whether the premium to book value is sustainable."
+  "ko": "현재 주가는 회사의 주당순자산 대비 뚜렷한 프리미엄이 반영된 구간에서 거래되고 있는 것으로 파악된다. 이는 손실 규모가 다년간 꾸준히 축소돼 온 흐름과 화장품·마이크로니들 부문의 해외 채널 확장에 대한 기대가 일부 반영된 결과로 볼 수 있다. 다만 회사는 최근 몇 년간 연속으로 영업손실과 순손실을 기록해왔고 2026년 1분기의 일시적 순이익 흑자 전환도 2분기 들어 다시 순손실로 돌아선 만큼, 손익 안정성 측면에서는 아직 변동성이 남아 있다. 배당은 최근 지급되지 않은 것으로 파악되어 배당 관련 매력은 낮은 편이며, 밸류에이션은 향후 실적 개선의 지속성 여부에 좌우될 가능성이 크다.",
+  "en": "The current share price appears to trade at a level that reflects a clear premium relative to the company's net asset value per share. This can be read as partly reflecting the multi-year trend of narrowing losses and expectations tied to the overseas channel expansion of the cosmetics and microneedle businesses. That said, the company has posted consecutive operating and net losses in recent years, and the brief return to net profit in the first quarter of 2026 reversed into a net loss again in the second quarter, so volatility remains in the stability of its earnings. Dividends have not been paid recently, making the dividend-related appeal limited, and valuation is likely to hinge on whether the recent earnings improvement proves durable."
  },
  "bull": [
   {
    "title": {
-    "ko": "2026Q1 영업손실 90% 급감 — 수익성 변곡점 가시화",
-    "en": "2026Q1 Operating Loss Shrinks ~90% — Profitability Inflection Now Visible"
+    "ko": "해외 유통 채널 확대",
+    "en": "Expanding Overseas Distribution Channels"
    },
    "body": {
-    "ko": "2026년 1분기 영업손실이 약 0.7억원으로 전년 동기(7.3억원) 대비 90% 이상 감소하는 획기적 개선이 기록됐다. 이는 2022년 이후 지속된 손실 축소 흐름이 2026년 들어 가속화됐음을 보여 주며, 화장품 부문 비중 확대에 따른 매출 믹스 개선과 고정비 효율화가 복합 작용한 결과로 분석된다. 2~3개 분기 연속으로 추세가 확인된다면 연간 영업 흑자 전환 가능성이 현실화된다.",
-    "en": "2026Q1 operating loss contracted to approximately ₩70M from ₩726M in 2025Q1, a ~90% YoY improvement that accelerates the loss-narrowing trend in place since 2022. An improved cosmetics revenue mix and fixed-cost discipline are the primary attributed drivers. Confirmation of this trend across two to three consecutive quarters would substantially raise the probability of a full-year operating breakeven."
+    "ko": "니들리 브랜드와 마이크로니들 패치가 미국, 캐나다, 유럽, 동남아시아 등으로 수출국을 넓히고 있으며, 2026년 4월 캐나다 코스트코 입점이 확인됐다. K-수출스타 500 선정 등 정부 지원 프로그램 참여도 이어지고 있다. 이러한 채널 다변화는 매출 성장의 지속 가능성을 뒷받침할 수 있는 요인이다.",
+    "en": "The NEEDLY brand and microneedle patches are expanding export markets into the United States, Canada, Europe, and Southeast Asia, with a confirmed Costco Canada listing in April 2026. The company has also continued to participate in government support programs such as the K-Export Star 500 selection. This channel diversification could support the sustainability of revenue growth."
    }
   },
   {
    "title": {
-    "ko": "12개국 인허가 EstroG-100 — 진입 장벽 높은 글로벌 원료 독점성",
-    "en": "12-Country-Approved EstroG-100 — Proprietary Global Ingredient with High Regulatory Barriers"
+    "ko": "다년간 손실 축소 흐름",
+    "en": "Multi-Year Trend of Narrowing Losses"
    },
    "body": {
-    "ko": "EstroG-100은 국내 바이오 소재 최초로 미국 FDA NDI·캐나다 NPN·유럽 EFSA 노블푸드 등 12개국 인허가를 획득한 갱년기 여성 건강 기능성 원료로, 다국 인허가 포트폴리오는 경쟁사가 단기간에 복제하기 어려운 규제 진입 장벽을 형성한다. 글로벌 고령화와 여성 건강 시장의 구조적 성장이 원료 수출 수요를 뒷받침하고 있다. 기존 캐나다·미국 채널의 점유율 확대와 신규 시장 공략이 중기 수익원 다각화의 핵심 경로가 된다.",
-    "en": "EstroG-100 holds regulatory clearance in 12 countries (US FDA-NDI, Canada NPN, EU EFSA novel food), constituting a regulatory moat that competitors cannot quickly replicate. Structural global aging trends and the growing women's health market underpin sustainable ingredient export demand. Incremental penetration of existing markets (Canada, US) and new-country entry represent key medium-term revenue diversification levers."
+    "ko": "2022년부터 2025년까지 영업이익률이 -60.5%에서 -14.8%로 꾸준히 개선됐고, 지배주주 순손실도 큰 폭으로 줄었다. 2026년 1분기에는 영업손실이 거의 손익분기점에 근접하기도 했다. 매출 규모 확대와 함께 고정비 부담이 완화되는 구조적 개선의 신호로 해석될 수 있다.",
+    "en": "From 2022 to 2025, the operating margin steadily improved from -60.5% to -14.8%, and the net loss attributable to owners also shrank substantially. In the first quarter of 2026, the operating loss came close to breakeven. This can be interpreted as a signal of structural improvement as fixed-cost burden eases alongside revenue growth."
    }
   },
   {
    "title": {
-    "ko": "K-뷰티 고성장 수혜 — NEEDLY 화장품 매출 과반 달성",
-    "en": "Riding Global K-Beauty Growth — NEEDLY Achieves Revenue Majority"
+    "ko": "기술·특허 기반 진입장벽",
+    "en": "Technology and Patent-Based Barriers to Entry"
    },
    "body": {
-    "ko": "글로벌 K-뷰티 시장은 2034년까지 연평균 8.43% 성장이 전망되며, 한국이 2025년 세계 2위 화장품 수출국으로 올라서는 등 거시 업황 환경이 긍정적이다. NEEDLY는 민감 피부 맞춤 클린 포뮬러 전략으로 차별화된 포지셔닝을 추구하고 있으며, 2026년 1분기 화장품 매출 비중이 50.9%에 달하면서 사업 포트폴리오 다각화가 실적으로 입증됐다. K-뷰티 수요의 미국·동남아 확산 흐름이 지속될 경우 NEEDLY의 해외 채널 확장 잠재력도 함께 높아진다.",
-    "en": "The global K-beauty market is projected to grow at a CAGR of 8.43% through 2034, and Korea's 2025 ascent to second-largest global cosmetics exporter provides a broadly supportive backdrop. NEEDLY differentiates through a clean-formula, sensitive-skin positioning, and its 50.9% revenue share in 2026Q1 demonstrably validates ongoing business diversification. If K-beauty demand continues to penetrate the US and Southeast Asian markets, NEEDLY's international channel expansion potential would increase commensurately."
+    "ko": "회사는 여성 건강 관련 헬스케어 특허를 다수 보유하고 있으며, 마이크로니들 관련 특허를 국내외 약 30개국에 출원·등록했다. 백수오 복합추출물은 FDA NDI, 캐나다 NPN 등 별도 인허가를 보유해 원료 차별성을 갖추고 있다. 이러한 지적재산과 인허가 이력은 후발 경쟁사 진입에 일정한 장벽으로 작용할 수 있다.",
+    "en": "The company holds numerous women's health-related healthcare patents and has filed or registered microneedle-related patents in roughly 30 countries. Its Baeksuo complex extract carries distinct regulatory approvals, including FDA New Dietary Ingredient status and Canadian Natural Product Number certification, giving it ingredient differentiation. This intellectual property and approval history could serve as a barrier to entry for later competitors."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4년 연속 영업·현금흐름 적자 — 구조적 수익성 아직 미검증",
-    "en": "Four Consecutive Years of Operating and Cash-Flow Losses — Structural Profitability Unproven"
+    "ko": "손익 불안정성 지속",
+    "en": "Persistent Earnings Instability"
    },
    "body": {
-    "ko": "2022~2025년 4년 합산 영업손실이 약 196억원에 달하며, 영업현금흐름도 4년 연속 마이너스였다. 2025년 영업현금흐름은 –56.6억원으로 전년(–21.4억원) 대비 크게 악화됐다. 2026년 1분기 영업손실 급감은 고무적이나, 단 1개 분기의 결과로 4년에 걸친 구조적 적자가 해소됐다고 판단하기는 이르다.",
-    "en": "Cumulative operating losses for 2022–2025 total approximately ₩19.6B, with operating cash flow negative in all four years. The 2025 operating cash outflow worsened to –₩5.66B from –₩2.14B in 2024. While 2026Q1 improvement is encouraging, a single quarter of dramatically reduced losses does not validate that four years of structural deficits have been definitively resolved."
+    "ko": "영업손실이 다년간 축소돼 왔지만 2026년 2분기까지도 완전한 영업흑자에는 도달하지 못했다. 2026년 1분기의 순이익 흑자 전환도 2분기에는 다시 순손실로 돌아서는 등 분기별 변동성이 여전히 크다. 안정적인 흑자 구조가 정착됐다고 보기에는 아직 이르다.",
+    "en": "While the operating loss has narrowed over multiple years, the company had still not reached full operating profitability as of the second quarter of 2026. The return to net profit in the first quarter of 2026 reversed into a net loss again in the second quarter, showing continued quarter-to-quarter volatility. It is still premature to conclude that a stable profit structure has taken hold."
    }
   },
   {
    "title": {
-    "ko": "부채비율 급등 및 자기자본 침식 — 재무 완충력 약화",
-    "en": "Surging Debt Ratio and Equity Erosion — Financial Buffer Weakening"
+    "ko": "현금흐름 악화",
+    "en": "Deteriorating Cash Flow"
    },
    "body": {
-    "ko": "2025년 총부채가 125.8억원으로 전년(64.7억원) 대비 약 1.9배 증가해 부채비율이 24.1%에서 54.1%로 급등했다. 지배주주 귀속 자기자본은 2022년 365.8억원에서 2025년 239.8억원으로 4년간 약 34.5% 감소했다. 순손실과 부채 증가가 동시에 지속될 경우 추가 유상증자·전환사채 발행 등 주식 희석 이벤트 가능성이 부각된다.",
-    "en": "Total liabilities nearly doubled in 2025 to ₩12.58B from ₩6.47B, pushing the debt ratio from 24.1% to 54.1%. Controlling-interest equity declined approximately 34.5% from ₩36.58B in 2022 to ₩23.98B in 2025. Concurrent ongoing losses and rising debt increase the risk of dilutive equity capital raises, such as rights offerings or convertible bond issuances."
+    "ko": "영업활동현금흐름은 2024년 -21.4억원에서 2025년 -56.6억원으로 오히려 악화됐다. 손익상 손실 규모가 줄어드는 것과 달리 실제 현금 유출은 확대돼, 재고·매출채권 등 운전자본 부담이 커졌을 가능성이 있다. 지속적인 현금 소진은 향후 자금 조달 필요성을 높일 수 있다.",
+    "en": "Operating cash flow actually worsened from -KRW 2.14 billion in 2024 to -KRW 5.66 billion in 2025. Unlike the narrowing income-statement loss, actual cash outflow expanded, suggesting a possible increase in working-capital burden from inventory or receivables. Continued cash consumption could raise the need for future financing."
    }
   },
   {
    "title": {
-    "ko": "순자산 대비 시장 프리미엄 — 이익 회복 지연 시 가격 하방 압력",
-    "en": "Premium to Book Value — Downside Pressure if Earnings Recovery Stalls"
+    "ko": "지배구조 우려",
+    "en": "Governance Concerns"
    },
    "body": {
-    "ko": "주가는 주당순자산(BPS 762원) 대비 수 배의 시장 프리미엄을 내포하고 있어, 미래 이익 개선 기대가 이미 가격에 상당 부분 반영된 상태다. 적자 기업의 순자산 대비 프리미엄은 손익 개선이 뒷받침되지 않으면 유지되기 어려운 구조다. 52주 거래 구간이 매우 넓어 투자자 기대치가 급격히 조정될 경우 가격 변동성이 확대될 수 있다.",
-    "en": "The current price embeds a multiple-times premium over book value (BPS ₩762), meaning substantial earnings recovery expectations are already priced in. For a loss-making company, a premium to net assets is fragile if profitability improvements stall or reverse. The wide 52-week trading range implies high price volatility that could amplify on the downside if investor sentiment recalibrates rapidly."
+    "ko": "2026년 7월 보도에 따르면 이사회에 사외이사가 한 명도 없는 것으로 나타나 사업 재편기 독립적 견제 장치에 대한 우려가 제기됐다. 사업 구조가 화장품 중심으로 재편되는 과정에서 이러한 지배구조 공백은 주요 의사결정의 투명성에 영향을 줄 수 있다.",
+    "en": "According to a July 2026 report, the board of directors had no outside directors, raising concerns about the adequacy of independent oversight during a period of business restructuring. As the business structure shifts toward a cosmetics-centered model, this governance gap could affect the transparency of major decisions."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "규제·제품 신뢰 리스크",
-    "en": "Regulatory & Product Credibility Risk"
+    "ko": "실적·현금흐름",
+    "en": "Earnings and Cash Flow"
    },
    "body": {
-    "ko": "백수오 제품은 2015년 이엽우피소 혼입 논란으로 시장 신뢰가 급락한 전례가 있다. 식약처 검사명령제 도입 및 품질 관리 체계 재정비로 현재는 안전성이 확인됐으나, 원료 품질·안전성 관련 이슈가 재발할 경우 국내외 매출에 직접적인 타격이 우려된다. 12개국 인허가 유지·갱신 비용과 각국 규제 환경 변화도 지속적인 비용 부담 요인이다.",
-    "en": "The 백수오 product line experienced a major trust collapse in 2015 following an ingredient adulteration scare; safety has since been validated and quality management overhauled under MFDS testing mandates. However, any recurrence of safety or authenticity issues could directly and materially impair domestic and overseas sales. Ongoing multi-country regulatory maintenance costs and evolving international food/supplement standards also represent persistent cost burdens."
+    "ko": "연속된 영업손실과 순손실, 그리고 2025년 확대된 영업활동현금흐름 유출은 자금 조달 부담으로 이어질 수 있다. 손익 개선이 일회성 요인에 의존할 경우 다음 분기에 다시 악화될 가능성도 배제할 수 없다.",
+    "en": "Consecutive operating and net losses, along with the widened operating cash outflow in 2025, could lead to financing pressure. If earnings improvement depends on one-off factors, the possibility of renewed deterioration in coming quarters cannot be ruled out."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화 및 마케팅 비용 리스크",
-    "en": "Intensifying Competition & Marketing Cost Risk"
+    "ko": "지배구조",
+    "en": "Governance"
    },
    "body": {
-    "ko": "K-뷰티 시장은 아모레퍼시픽·LG생활건강 등 대형사와 에이피알 등 자본력 있는 인디 브랜드가 디지털 마케팅 역량을 앞세워 경쟁하는 고경쟁 구도다. 임직원 83명의 소규모 기업으로, 연구개발비와 광고선전비 증가가 영업손실의 주요 원인으로 작용해 왔다. 브랜드 인지도 유지를 위한 마케팅 투자와 수익성 개선 사이의 균형이 지속적 과제로 남아 있다.",
-    "en": "The K-beauty market is highly competitive, with large players (AmorePacific, LG H&H) and well-capitalised indie brands competing aggressively on digital marketing. As a company with approximately 83 employees, Naturalendo Tech faces a material scale disadvantage; rising R&D and advertising spend have historically been primary contributors to operating losses. Balancing marketing investment to maintain brand awareness against the need to improve profitability is an ongoing structural tension."
+    "ko": "사외이사 부재라는 지적이 최근 언론에서 제기된 만큼, 이사회의 독립적 감독 기능에 대한 우려가 있다. 사업 재편 과정에서 주요 의사결정의 신뢰성에 영향을 줄 수 있는 요인이다.",
+    "en": "Recent media reports pointing to the absence of outside directors raise concerns about the board's capacity for independent oversight. This could be a factor affecting the credibility of major decisions during the ongoing business restructuring."
    }
   },
   {
    "cat": {
-    "ko": "유동성·자금 조달 리스크",
-    "en": "Liquidity & Capital Raise Risk"
+    "ko": "원재료·수출 규제",
+    "en": "Raw Materials and Export Regulations"
    },
    "body": {
-    "ko": "4년 연속 영업현금흐름 마이너스와 2025년 부채 급증이 중첩돼 자금 조달 부담이 점증하고 있다. 연구개발비·마케팅비 유지 및 자회사 엔도더마 지원에 추가 자금이 필요할 경우 유상증자·전환사채 발행 등 주식 희석 이벤트 가능성을 배제할 수 없다. 부채 증가에 따른 이자 비용 상승은 영업 외 손익에도 부정적 영향을 미칠 수 있다.",
-    "en": "Four consecutive years of negative operating cash flow combined with a near-doubling of liabilities in 2025 increase capital pressure meaningfully. Additional funding requirements for R&D, marketing, and Endoderma subsidiary support could trigger dilutive equity offerings or convertible bond issuances. Rising interest costs from the expanding debt burden pose an additional risk to non-operating income, potentially widening reported net losses even as operating results improve."
+    "ko": "백수오, 한속단, 당귀 등 식물성 원료는 작황에 따라 가격이 변동될 수 있다. 해외 수출 비중이 높은 만큼 개별 국가의 건강기능식품·화장품 인허가 및 통상 규제 변화도 사업에 영향을 줄 수 있는 변수다.",
+    "en": "Plant-based raw materials such as Baeksuo, Hansokdan, and Angelica are subject to price volatility depending on crop conditions. Given the significant share of overseas exports, changes in individual countries' health-food and cosmetics approval requirements or trade regulations are also variables that could affect the business."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "2026년 2분기(4~6월) 분기 실적 공시 — 1분기의 영업손실 90% 급감 추세가 2분기에도 지속되는지, 화장품 부문 매출 비중이 50% 이상을 유지하는지 확인이 필요하다. 연간 영업 흑자 전환 가능성의 핵심 데이터 포인트다.",
-    "en": "2026Q2 (Apr–Jun) quarterly results filing — Verify whether the ~90% operating-loss reduction of 2026Q1 carries into Q2 and whether cosmetics maintains above-50% revenue share. This is the critical data point for any full-year operating breakeven thesis."
+    "ko": "3분기보고서 공시를 통해 2026년 3분기 매출 성장세와 영업손익 추이가 이어지는지 확인이 필요하다.",
+    "en": "The third-quarter report filing should be checked to see whether the revenue growth trend and operating loss trajectory continued into the third quarter of 2026."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "H2 2026"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "영업현금흐름(CFO) 방향 전환 여부 — 2025년 CFO가 –56.6억원으로 급격히 악화된 만큼, 2026년 반기 및 연간 CFO가 플러스로 전환되는지 여부가 재무 건전성 회복의 핵심 지표다.",
-    "en": "Operating cash flow (CFO) inflection — Given the sharp 2025 deterioration to –₩5.66B, whether the 2026 half-year and annual CFO turns positive is the single most critical indicator of genuine financial health restoration."
+    "ko": "2026년 사업보고서를 통해 화장품·백수오 등 부문별 매출 비중 변화와 마이크로니들 패치의 신규 수출국 진입 현황을 확인할 수 있다.",
+    "en": "The 2026 annual business report should reveal changes in the revenue mix across cosmetics, Baeksuo, and other segments, as well as progress on new export-country entries for microneedle patches."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 수시",
-    "en": "H2 2026 (as announced)"
+    "ko": "2027년 3월경 정기주주총회",
+    "en": "Around March 2027 Annual Shareholders' Meeting"
    },
    "what": {
-    "ko": "부채비율 추이 및 자본 조달 DART 공시 모니터링 — 2025년 부채비율 54.1%로의 급등 배경(차입 목적·만기 구조)을 확인하고, 추가 유상증자·전환사채 발행 등 자본 관련 공시 출현 여부를 주시해야 한다.",
-    "en": "Debt ratio trajectory and DART capital-raise filings — Clarify the drivers behind the 2025 debt ratio surge (borrowing purpose and maturity structure) and monitor for any DART disclosures related to equity offerings, convertible bonds, or additional borrowings that could affect shareholder value."
+    "ko": "이사회에 사외이사가 신규 선임되는지 등 지배구조 개선 조치 여부를 확인할 필요가 있다.",
+    "en": "It will be worth checking whether the board adds any outside directors or takes other governance improvement measures."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 상반기",
-    "en": "H2 2026 – H1 2027"
+    "ko": "지속 확인 사항",
+    "en": "Ongoing Monitoring"
    },
    "what": {
-    "ko": "EstroG-100 신규 거래처 계약 및 신시장 인허가 공시 — 캐나다·미국·동남아 이외 신규 국가 진출 또는 신규 글로벌 파트너십 계약 체결이 원료 수출 매출의 추가 성장 촉매로 작용할 수 있다.",
-    "en": "New EstroG-100 supply contracts and new-market regulatory filings — Entry beyond Canada, US, and Southeast Asia, or new global distribution partnerships, would be meaningful catalysts for incremental ingredient-export revenue growth."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026~2027년 수시",
-    "en": "2026–2027 (as announced)"
-   },
-   "what": {
-    "ko": "자회사 엔도더마 마이크로니들 상업화 이정표 공시 — 글로벌 주요 유통사 납품 계약 체결 또는 신규 시장 론칭이 연결 실적 기여 확대와 자회사 가치 부각의 핵심 이벤트가 된다.",
-    "en": "Endoderma microneedle commercialisation milestones — Supply agreements with major global distributors or new-market product launches would be key events establishing the subsidiary's incremental contribution to consolidated revenue and overall company valuation."
+    "ko": "캐나다 코스트코 등 신규 리테일 채널에서 니들리 제품의 판매 실적과 추가 유통망 확대 여부를 지속적으로 확인할 필요가 있다.",
+    "en": "Sales performance of NEEDLY products at new retail channels such as Costco Canada, and any further distribution expansion, warrant ongoing monitoring."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "내츄럴엔도텍은 천연물 기반 건강기능식품·화장품·바이오 소재 기업으로, 2022년 영업손실률 –60.5%에서 출발해 2025년 –14.8%까지 4년간 꾸준한 적자 축소 흐름을 이어 왔다. 특히 2026년 1분기 영업손실이 전년 동기 대비 90% 급감하고 화장품 부문이 매출의 과반을 차지하면서, 오랜 기간의 과제였던 수익성 변곡점 진입과 포트폴리오 다각화가 동시에 실적으로 가시화되고 있다. EstroG-100의 12개국 다중 인허가라는 독점적 원료 경쟁력과 NEEDLY 브랜드의 K-뷰티 시장 성장 수혜 가능성은 중기 성장의 긍정적 토대다. 반면 4년 연속 음(-)의 영업현금흐름, 2025년 부채비율의 급등(24.1%→54.1%), 자회사 엔도더마의 상업화 불확실성은 여전히 해소되지 않은 구조적 리스크다. 향후 2~3개 분기 연속으로 손실 축소 추세가 확인되고 영업현금흐름이 플러스로 전환되는지 여부가 재무 안정성 회복 여부의 핵심 시험대가 될 것이다.",
-   "en": "Naturalendo Tech has progressively narrowed its operating loss margin from –60.5% in 2022 to –14.8% in 2025, and the near-90% year-on-year operating-loss reduction in 2026Q1—alongside cosmetics surpassing the revenue majority—provides tangible evidence that the long-awaited profitability inflection and business diversification are converging. The 12-country regulatory moat of EstroG-100 and NEEDLY's positioning in the high-growth global K-beauty market provide a credible medium-term growth foundation. Against this, four consecutive years of negative operating cash flow, a sharply rising 2025 debt ratio (24.1% to 54.1%), and unresolved commercialisation risk at Endoderma represent material structural challenges that have not yet been resolved. Whether the loss-narrowing trend persists across the next two to three quarters and whether operating cash flow turns positive will be the definitive tests of a genuine and sustainable financial recovery."
+   "ko": "내츄럴엔도텍은 2022년부터 2025년까지 매출 성장과 영업손실 축소를 동시에 이뤄낸 흐름을 보였고, 2026년 상반기에도 매출 성장세는 이어졌다. 다만 2026년 1분기의 일시적 순이익 흑자 전환이 2분기 순손실로 되돌아간 데서 보듯 손익의 완전한 안정화에는 아직 이르지 못했다. 영업활동현금흐름이 2025년 오히려 악화된 점과 이사회의 사외이사 부재라는 지배구조 이슈는 균형 잡힌 시각에서 함께 살펴볼 대목이다. 반면 니들리·마이크로니들 패치의 해외 유통망 확대, K-수출스타 500 선정, 캐나다 코스트코 입점 등은 성장 동력을 뒷받침하는 사실로 확인된다. 주가는 순자산가치 대비 프리미엄이 반영된 구간에서 거래되고 있어, 향후 실적 개선의 지속성이 핵심 관전 포인트가 될 것으로 보인다. 투자 판단은 이러한 강세·약세 요인을 종합적으로 검토한 뒤 독자 스스로 내려야 한다.",
+   "en": "Naturalendo Tech showed a pattern of simultaneous revenue growth and narrowing operating losses from 2022 through 2025, and revenue growth continued into the first half of 2026. However, full earnings stabilization has not yet been achieved, as illustrated by the reversal from a brief net profit in the first quarter of 2026 back to a net loss in the second quarter. The worsening of operating cash flow in 2025 and the governance issue of an all-insider board are points that deserve balanced consideration. On the other hand, the expansion of NEEDLY and microneedle patch distribution overseas, the K-Export Star 500 selection, and the Costco Canada listing are confirmed facts supporting growth momentum. The share price trades at a level reflecting a premium to net asset value, making the durability of future earnings improvement the key point to watch. Investment decisions should be made by readers themselves after weighing these bullish and bearish factors in combination."
   }
  },
  "sources": [
-  "https://markets.hankyung.com/stock/168330/chart",
-  "https://itooza.com/vscore/168330",
-  "https://www.investing.com/equities/naturalendo-tech-co-ltd-earnings",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A168330",
   "https://kr.investing.com/news/global-filings/article-93CH-1947374",
+  "https://www.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=207970",
+  "https://m.jobkorea.co.kr/company/42690320",
+  "https://m.sedaily.com/NewsView/1HT093480G",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=227950",
   "https://m.thinkpool.com/item/168330",
-  "https://kr.tradingview.com/symbols/KRX-168330/",
-  "https://www.k5.co.kr/stock/168330",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=403269",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/naturalendo",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/ZjVTUWMzVmUrM2dvaklNQU1aWWMzUT09/company_nm/(%EC%A3%BC)%EB%82%B4%EC%B8%84%EB%9F%B4%EC%97%94%EB%8F%84%ED%85%8D",
-  "https://www.incruit.com/company/1682178299/",
+  "https://www.betanews.net/article/view/beta202202140388",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=6e081MnR3hiwHCcc",
   "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20240318000775&docno=&viewerhost=",
-  "https://insc.kisc.org/motie/cor2/cor_view.jsp?corp_id=K0306534&k_name=%EC%8A%A4%EC%9C%84%EC%8A%A4",
-  "https://stockplus.com/m/stocks/KOREA-A168330",
-  "https://news.infostock.co.kr/a",
-  "https://m.sedaily.com/NewsView/1HT093480G"
+  "https://www.jobkorea.co.kr/recruit/co_read/c/naturalendo",
+  "https://www.incruit.com/company/1682178299/",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A168330",
+  "https://m.finance.daum.net/quotes/A168330/news/disclosure/20250317024370",
+  "https://www.investing.com/equities/naturalendo-tech-co-ltd-earnings",
+  "https://kind.krx.co.kr/external/2026/03/16/002563/20260316007209/11011.htm",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/ZjVTUWMzVmUrM2dvaklNQU1aWWMzUT09/company_nm/(%EC%A3%BC)%EB%82%B4%EC%B8%84%EB%9F%B4%EC%97%94%EB%8F%84%ED%85%8D",
+  "https://insite.newsworker.co.kr/news/articleView.html?idxno=401647",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?pGB=1&gicode=A168330&cID=&MenuYn=Y&ReportGB=&NewMenuID=101&stkGb="
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "168330",
  "name": "내츄럴엔도텍",
  "name_en": "Naturalendo Tech Co., Ltd",
@@ -232,9 +223,9 @@
   "바이오·제약"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 02:25",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:08",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -337,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 2130,
-   "mcap": 0.0676,
+   "price": 2190,
+   "mcap": 0.0695,
    "shares": 31754900,
    "total_shares": 31754900,
    "wavg_shares": 31583960,
    "per": null,
    "eps": -51,
-   "pbr": 2.8324,
+   "pbr": 2.9122,
    "bps": 752,
    "roe_ttm": -6.6,
    "ttm_window": "2025Q3~2026Q2",

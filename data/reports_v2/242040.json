@@ -1,243 +1,233 @@
 {
  "title": {
-  "ko": "흑자전환 나무기술, 고점 대비 급락",
-  "en": "NamuTech: Profit Turnaround, Sharp Pullback"
+  "ko": "흑자 전환 뒤 남은 과제, AI 인프라 확장 속도",
+  "en": "After the Swing to Profit, the Pace of AI Infrastructure Growth"
  },
  "lead": {
-  "ko": "나무기술은 하드웨어 중심 사업을 클라우드·AI 소프트웨어로 재편하며 3년 만에 연결 흑자전환에 성공했으나, 이익의 질과 극심한 주가 변동성이 함께 관찰되는 구간이다.",
-  "en": "NamuTech achieved its first consolidated operating profit in three years by shifting from hardware to cloud and AI software, but questions remain about earnings quality amid extreme share-price swings."
+  "ko": "나무에이엑스는 가상화·클라우드 본업의 회복과 AI 인프라 신사업 확장이 겹치며 2025년 영업이익 흑자 전환에 성공했으나, 지배주주 순이익은 여전히 분기별로 등락하고 있다.",
+  "en": "NAMU AX returned to operating profit in 2025 as its core virtualization and cloud business recovered alongside AI infrastructure expansion, but net income attributable to owners still swings between profit and loss quarter to quarter."
  },
  "keypoints": [
   {
-   "ko": "2024년까지 3년 연속 영업손실을 기록했으나 2025년 3분기 분기 영업이익 29.6억원으로 뚜렷한 반전을 보였다",
-   "en": "After three straight years of operating losses through 2024, the company posted a sharp Q3 2025 operating profit of about KRW 2.96bn."
+   "ko": "2025년 연결 매출 1,022.7억원, 영업이익 22.5억원으로 2년 연속 적자에서 흑자로 전환",
+   "en": "2025 consolidated revenue reached KRW 102.27bn with operating profit of KRW 2.25bn, swinging back to profit after two years of operating losses"
   },
   {
-   "ko": "2026년 1분기 매출 369.6억원, 영업이익 4.2억원, 지배주주순이익 2.5억원으로 흑자 기조를 이어갔다",
-   "en": "Q1 2026 revenue reached KRW 36.96bn with operating profit of KRW 0.42bn and owners' net income of KRW 0.25bn, extending the profitable trend."
+   "ko": "2025Q3~2026Q2 최근 네 개 분기 동안 매출은 322억~370억원대로 안정적으로 확대",
+   "en": "Over the latest four quarters (2025Q3-2026Q2), revenue expanded steadily in the KRW 32-37bn range per quarter"
   },
   {
-   "ko": "일부 보도는 연결 흑자의 상당 부분이 클라우드·AI 본업이 아닌 포장자동화 자회사 실적에서 나왔다고 지적한다",
-   "en": "Some reports note that a meaningful part of the consolidated profit came from a packaging-automation subsidiary rather than the core cloud/AI business."
+   "ko": "구독형 매출 비중이 2024년 11.6%에서 2025년 28.6%로 상승했다는 리서치 분석 존재",
+   "en": "A research report noted the subscription revenue mix rose from 11.6% in 2024 to 28.6% in 2025"
   },
   {
-   "ko": "주가는 2026년 6월 초 52주 최고가(11,100원)를 찍은 뒤 투자경고종목 지정과 함께 급락해 현재 3,800원 수준에 있다",
-   "en": "The stock hit a 52-week high of KRW 11,100 in early June 2026 before plunging following an investment-warning designation, and now trades around KRW 3,800."
+   "ko": "지배주주 순이익은 2025Q4(-7.5억원), 2026Q2(-3.1억원)처럼 영업흑자에도 순손실을 기록한 분기가 존재",
+   "en": "Net income attributable to owners posted losses in some quarters despite operating profit, such as 2025Q4 (-KRW 0.75bn) and 2026Q2 (-KRW 0.31bn)"
   },
   {
-   "ko": "글로벌 반도체 대기업 S사의 클라우드 네이티브 전환 사업 우선협상대상자로 선정돼 3년 이상의 장기 레퍼런스를 확보했다",
-   "en": "The company was selected as the preferred bidder for a major global semiconductor firm's cloud-native transformation project, securing a reference contract spanning more than three years."
+   "ko": "AI 데이터센터·서버 기업들과 잇따른 업무협약(MOU) 체결로 사업영역을 AI 인프라로 확대 중",
+   "en": "The company is expanding into AI infrastructure through a series of memoranda of understanding with AI data center and server firms"
   }
  ],
  "business": {
-  "ko": "나무기술은 2001년 설립된 가상화·클라우드 네이티브 전문 IT 인프라 기업으로, 2016년 코스닥에 상장했다. 핵심 제품은 클라우드 네이티브 플랫폼 '칵테일 클라우드', 클라우드 서비스 관리 솔루션 'SPERO', 쿠버네티스 기반 가상화 솔루션 '칵테일 버트', 엔터프라이즈 AI 플랫폼 'NAA' 등이다. 클라우드 네이티브 전환 사업의 주요 고객으로는 질병관리청, 환경공단, 특허청, LH와 함께 현대카드, 신한은행, NH농협은행 등 국내 최대 금융 레퍼런스를 확보하고 있다. 프라이빗 쿠버네티스 플랫폼 시장에서는 레드햇 오픈시프트, VM웨어 탄주, 맨텍 아코디언 등과 경쟁하는 구도다. 최근에는 브로드컴의 VM웨어 인수로 인한 라이선스 비용 부담을 노려 VM웨어 인프라를 유지하면서 클라우드 네이티브로 전환할 수 있는 가상화 '윈백' 전략을 펴고 있다. 자회사로는 하드웨어 공급을 담당하는 나무ICT, 컨테이너 SI를 수행하는 칵테일아이오(구 아콘소프트), 식품·제약·화장품 산업용 액상 충전·포장 자동화 설비를 공급하는 에스케이팩 등이 있다. 매출 구성에서 서버·스토리지 등 하드웨어 비중이 여전히 상당하나 최근 축소되는 추세이며, 클라우드·가상화 소프트웨어 비중이 확대되고 있다. 자회사 칵테일아이오는 2025년 5월 국내 반도체 대기업 S사의 핵심 클라우드 전환 사업 우선협상대상자로 선정돼 3년 이상의 장기 프로젝트 레퍼런스를 확보했다.",
-  "en": "Founded in 2001, NamuTech is an IT infrastructure company specializing in virtualization and cloud-native solutions, and it listed on KOSDAQ in 2016. Its core products include the cloud-native platform 'Cocktail Cloud,' the multi/hybrid cloud management solution 'SPERO,' the Kubernetes-based virtualization solution 'Cocktail Virt,' and the enterprise AI platform 'NAA.' Key clients for cloud-native transformation projects include the Korea Disease Control and Prevention Agency, the Korea Environment Corporation, the Korean Intellectual Property Office, and LH, alongside major financial references such as Hyundai Card, Shinhan Bank, and NongHyup Bank. In the private Kubernetes platform market, the company competes with Red Hat OpenShift, VMware Tanzu, and ManTech's Accordion. It has also pursued a virtualization 'win-back' strategy targeting companies burdened by rising VMware license costs following Broadcom's acquisition of VMware, allowing customers to migrate to cloud-native architecture while retaining existing VMware infrastructure. Subsidiaries include NamuICT, which supplies hardware; Cocktail.io (formerly Acorn Software), which performs container systems integration; and SK Pack, which supplies liquid filling and packaging automation equipment for the food, pharmaceutical, and cosmetics industries. Hardware such as servers and storage still accounts for a substantial share of revenue, though this share has been declining as cloud and virtualization software expand. In May 2025, subsidiary Cocktail.io was selected as the preferred bidder for a major domestic semiconductor company's core cloud transformation project, securing a long-term reference spanning more than three years."
+  "ko": "나무에이엑스는 2026년 6월 주주총회에서 사명을 기존 나무기술에서 나무에이엑스(NAMU AX Corp.)로 변경하며 AI 전문기업으로의 전환을 공식화했다. 회사는 시트릭스 엔진 기반 VDI(가상 데스크톱 인프라)를 근간으로 망분리·재택근무 인프라를 제공해왔고, 2016년 출시한 PaaS 플랫폼 '칵테일 클라우드'와 멀티클라우드 관리 솔루션 '스페로(SPERO)'를 자체 제품군으로 보유하고 있다. 최근에는 기업용 에이전틱 AI 플랫폼 'NAA(NAMU Agentic AI)'와 피지컬 AI용 엣지 AI 시스템을 출시하며 AI 사업 영역을 넓히고 있다. 2분기 개별 매출 기준으로는 가상화·클라우드 사업이 전체의 약 50%를 차지하는 것으로 파악된다. 종속회사로는 칵테일아이오, 나무아이씨티(나무ICT), 액상 제품용기 포장설비 전문기업 에스케이팩, NamuJapan 등을 보유하고 있으며, 이 중 나무ICT는 시스템 개발·운영과 클라우드 구축 등 IT 서비스를 제공한다. 최대주주 및 특별관계인은 이수병 외 4인으로 지분율은 약 17.79%로 파악된다. 경쟁구도로는 국내 클라우드·가상화 솔루션 기업인 오케스트로, 이노그리드 등이 유사 영역에서 경쟁하고 있다. 회사는 브로드컴의 VMware 가격정책 개편에 따른 대체 수요를 겨냥해 자체 서버 가상화 플랫폼 'namuVIRT'를 출시했다.",
+  "en": "In June 2026, the company changed its name from NAMU TECH to NAMU AX Corp. at its shareholders' meeting, formalizing its transition into an AI-focused enterprise. The company has long provided network-separation and remote-work infrastructure based on Citrix-engine VDI (virtual desktop infrastructure), and it holds its own product lineup including the PaaS platform Cocktail Cloud, launched in 2016, and the multi-cloud management solution SPERO. More recently it has expanded into AI with the enterprise agentic AI platform NAA (NAMU Agentic AI) and an Edge AI System for physical AI applications. On a standalone quarterly basis, virtualization and cloud business is estimated to account for roughly half of revenue. Subsidiaries include Cocktail.io, NAMU ICT, packaging-equipment maker SK PAC, and NAMU Japan, with NAMU ICT providing system development, operation, and cloud-build IT services. The largest shareholder group, led by Lee Su-byeong and four others, is estimated to hold about 17.79% of shares. Competitors in the domestic cloud and virtualization solution space include Orchestro and Innogrid. The company has launched its own server virtualization platform, namuVIRT, to capture demand shifting away from VMware following Broadcom's pricing policy changes."
  },
  "earnings": {
-  "ko": "연결 매출은 2022년 1,062억원에서 2023년 906억원, 2024년 914억원으로 정체된 반면, 영업손익은 2022년 +21.8억원(영업이익률 2.1%)에서 2023년 -7.5억원(-0.8%), 2024년 -22.3억원(-2.4%)으로 3년 연속 적자를 이어갔다. 지배주주순이익도 2022년 +3.4억원에서 2023년 -31.5억원, 2024년 -53.1억원으로 손실 규모가 확대됐다. 2025년에도 상반기 부진은 이어져 1분기 매출 170.2억원에 영업손실 6.6억원·지배주주순손실 12.1억원, 2분기 매출 180.5억원에 영업손실 12.2억원·순손실 20.0억원을 기록했다. 그러나 3분기 매출이 322.3억원으로 급증하며 영업이익 29.6억원, 지배주주순이익 11.5억원을 냈는데, 이는 2019년 4분기 이후 분기 기준 최대 영업이익 규모였다. 이러한 하반기 집중 구조는 상반기 수주분이 하반기에 매출로 인식되는 사업 특성이 반영된 결과라는 설명이다. 언론 보도에 따르면 2025년 전체 연결 매출은 1,023억원(전년 대비 +11.9%), 영업이익은 22.5억원으로 3년 만에 흑자 전환했고 당기순손실은 18.0억원으로 전년(-55.0억원)보다 손실 규모가 줄었다. 다만 일부 분석은 이 흑자 전환의 상당 부분이 클라우드·AI 본업이 아닌 포장자동화 자회사 에스케이팩 등에서 나왔다고 지적하며, 모회사 별도 기준으로는 여전히 영업손실이 이어졌다고 보도했다. 2026년 1분기에는 매출 369.6억원, 영업이익 4.2억원, 지배주주순이익 2.5억원을 기록해 흑자 기조를 유지했으며, 이는 전년 동기(1분기 매출 170.2억원) 대비 매출이 크게 늘어난 결과다. 회사측은 가상화 환경 재구축과 멀티클라우드 전환 수요 확대, 나무ICT의 하드웨어 공급 증대, 칵테일아이오의 흑자 전환이 이 같은 실적 개선을 이끌었다고 설명했다.",
-  "en": "Consolidated revenue was largely flat, moving from KRW 106.2bn in 2022 to KRW 90.6bn in 2023 and KRW 91.4bn in 2024, while operating profit swung from +KRW 2.18bn (2.1% margin) in 2022 to -KRW 0.75bn (-0.8%) in 2023 and -KRW 2.23bn (-2.4%) in 2024, marking three consecutive years of operating losses. Net income attributable to owners followed a similar path, from +KRW 0.34bn in 2022 to -KRW 3.15bn in 2023 and -KRW 5.31bn in 2024. Weakness continued into the first half of 2025, with Q1 revenue of KRW 17.02bn alongside an operating loss of KRW 0.66bn and an owners' net loss of KRW 1.21bn, followed by Q2 revenue of KRW 18.05bn with an operating loss of KRW 1.22bn and a net loss of KRW 2.00bn. Revenue then jumped to KRW 32.23bn in Q3, generating operating profit of KRW 2.96bn and owners' net income of KRW 1.15bn—reportedly the largest quarterly operating profit since Q4 2019. This second-half concentration reflects the business's characteristic pattern of orders booked in the first half being recognized as revenue in the second half. According to media reports, full-year 2025 consolidated revenue reached KRW 102.3bn (+11.9% year-on-year), operating profit was KRW 2.25bn—the first annual operating profit in three years—and the net loss narrowed to KRW 1.80bn from KRW 5.50bn a year earlier. However, some analyses note that a substantial portion of this turnaround stemmed from the packaging-automation subsidiary SK Pack rather than the core cloud/AI business, and that the parent company on a standalone basis continued to post an operating loss. In Q1 2026, revenue reached KRW 36.96bn with operating profit of KRW 0.42bn and owners' net income of KRW 0.25bn, sustaining the profitable trend and representing a sharp increase from the prior-year quarter's KRW 17.02bn in revenue. The company attributed the improvement to rebuilding virtualization environments, expanding multi-cloud conversion demand, greater hardware supply through NamuICT, and Cocktail.io's turn to profitability."
+  "ko": "연간 실적을 보면 2022년 매출 1,062.2억원, 영업이익 21.8억원으로 흑자였다가 2023년 매출 905.6억원, 영업손실 7.5억원으로 적자 전환했고, 2024년에도 매출 914.2억원, 영업손실 22.3억원을 기록하며 2년 연속 적자를 이어갔다. 2025년에는 매출이 1,022.7억원으로 늘어나고 영업이익도 22.5억원으로 흑자 전환에 성공했으나, 지배주주 순이익은 -28.1억원으로 여전히 적자였다. 최근 네 개 분기(2025Q3~2026Q2)로 좁혀 보면 매출은 322.3억원, 349.8억원, 369.6억원, 354.8억원으로 30억원대 후반 수준에서 안정적으로 유지되고 있다. 다만 분기별 손익의 등락은 뚜렷한데, 2025Q3에는 영업이익 29.6억원, 지배주주 순이익 11.3억원으로 뚜렷한 흑자를 냈지만 2025Q4에는 영업이익 11.8억원에도 지배주주 순이익이 -7.5억원으로 순손실을 기록했다. 2026년 들어서도 1분기 영업이익 4.2억원·순이익 2.5억원으로 흑자를 냈다가 2분기에는 영업이익 3.4억원을 내면서도 순이익은 -3.1억원으로 재차 적자를 보였다. 이는 영업외 손익이나 종속회사 실적 변동, 비지배지분 배분 등 영업이익과 지배주주 순이익 사이의 괴리를 만드는 요인이 지속되고 있음을 시사한다. 부채비율은 2024년 142.6%에서 2025년 119.3%로 낮아졌지만 100%를 웃도는 수준은 유지되고 있다.",
+  "en": "On an annual basis, revenue was KRW 106.22bn with operating profit of KRW 2.18bn in 2022, before swinging to an operating loss of KRW 0.75bn on revenue of KRW 90.56bn in 2023, and a wider operating loss of KRW 2.23bn on revenue of KRW 91.42bn in 2024, marking two consecutive years of operating losses. In 2025, revenue grew to KRW 102.27bn and operating profit turned positive at KRW 2.25bn, though net income attributable to owners remained negative at -KRW 2.81bn. Looking at the latest four quarters (2025Q3-2026Q2), revenue held in a stable range of KRW 32.2bn, 35.0bn, 37.0bn, and 35.5bn. Quarterly profitability, however, has swung noticeably: 2025Q3 posted a clear operating profit of KRW 2.96bn and owners' net income of KRW 1.13bn, while 2025Q4 recorded an operating profit of KRW 1.18bn but a net loss attributable to owners of -KRW 0.75bn. Into 2026, the first quarter posted an operating profit of KRW 0.42bn and net income of KRW 0.25bn, but the second quarter again showed a gap, with operating profit of KRW 0.34bn alongside a net loss of -KRW 0.31bn. This pattern suggests non-operating items, subsidiary performance swings, or non-controlling interest allocations continue to create a gap between operating profit and owners' net income. The debt ratio eased from 142.6% in 2024 to 119.3% in 2025, though it remains above 100%."
  },
  "industry": {
-  "ko": "국내 클라우드 네이티브 시장은 쿠버네티스 기반 PaaS를 중심으로 레드햇, VM웨어, 나무기술, 맨텍, 티맥스클라우드 등이 경쟁하는 구도를 형성하고 있다. 클라우드 도입은 서비스형 인프라(IaaS) 중심의 '1기'를 지나 컨테이너·쿠버네티스 기반 '클라우드 네이티브' 단계로 이동하는 흐름이 이어지고 있다. 최근에는 브로드컴의 VM웨어 인수로 라이선스 비용 부담이 커지면서 기업·공공 부문의 가상화 인프라 재편 수요가 확대되고 있어, 국산 가상화·컨테이너 솔루션 업체에는 우호적 환경이 조성되고 있다. 공공·금융권에서는 데이터 주권 확보를 이유로 외부 클라우드 의존에서 벗어나 자체 AI 인프라를 구축하려는 '소버린 AI' 수요가 늘고 있으며, 나무기술은 자체 GPU 오케스트레이션 기술로 이 흐름에 대응하고 있다. 다만 이 시장에는 대형 통신·SI 기업들도 관심을 갖고 있어, 중소형 솔루션사로서는 대형 사업자와의 경쟁 속에서 점유율을 방어하는 것이 과제로 남아 있다. VDI·서버 가상화 등 레거시 사업에서 출발한 나무기술은 이런 환경 변화에 맞춰 컨테이너와 VM을 통합 관리하는 신제품 '칵테일 버트'를 새롭게 출시하며 포지셔닝을 강화하고 있다.",
-  "en": "Korea's cloud-native market centers on Kubernetes-based PaaS offerings, with competition among Red Hat, VMware, NamuTech, ManTech, and TmaxCloud. The broader shift continues from infrastructure-as-a-service-centered 'first-generation' cloud toward container and Kubernetes-based 'cloud-native' adoption. Rising license costs following Broadcom's acquisition of VMware have increased demand among enterprises and public institutions to restructure virtualization infrastructure, creating a favorable environment for domestic virtualization and container solution providers. Public and financial institutions are increasingly pursuing 'sovereign AI' infrastructure to reduce reliance on external clouds for data-sovereignty reasons, and NamuTech is addressing this trend with its GPU orchestration technology. However, large telecom and systems-integration companies are also active in this space, meaning smaller solution providers face the ongoing challenge of defending market share against larger competitors. Having started from legacy VDI and server virtualization businesses, NamuTech has strengthened its positioning by launching 'Cocktail Virt,' a new product that integrates management of containers and virtual machines in response to these industry shifts."
+  "ko": "국내 IT 인프라 시장은 브로드컴의 VMware 가격정책 개편에 따른 가상화 솔루션 교체 수요와 기업의 AI 전환(AX) 투자 확대가 동시에 진행되는 국면에 있다. 한 리서치 보고서는 글로벌 VMware 사용자의 약 30%가 2028년까지 이탈할 것으로 전망했으며, 국내에서도 VM웨어 구독형 계약이 순차적으로 만료되는 가운데 하반기부터 관련 수요가 발생할 것으로 예상했다. 정부 정책 측면에서는 2026년 AI 예산이 9조 9,000억원으로 확대됐고 이 중 AX(AI 전환) 부문 예산은 전년 1조 5,000억원에서 2조 4,000억원으로 늘어난 것으로 파악된다. 이러한 흐름은 나무에이엑스와 같이 가상화·클라우드·AI를 아우르는 풀스택 역량을 갖춘 기업에 우호적인 환경으로 평가된다. 다만 국내 클라우드·가상화 시장에는 오케스트로, 이노그리드 등 경쟁사가 다수 존재하며, AI 인프라 분야는 아직 초기 단계라 다수의 협약(MOU)이 실제 매출로 전환되는 속도가 향후 경쟁 우위를 가르는 변수가 될 것으로 보인다. 회사는 삼성동 코엑스에서 열린 델 테크놀로지스 포럼 2026에 실버 파트너사로 참가하고, 관계부처가 공동 주최한 AIDC 얼라이언스 출범식에도 데이터센터(DC) 운영 소프트웨어 분야 기업으로 참여하는 등 업계 네트워크 형성에도 나서고 있다.",
+  "en": "Korea's IT infrastructure market is undergoing simultaneous shifts driven by virtualization-solution replacement demand tied to Broadcom's VMware pricing changes and expanding corporate AI transformation (AX) investment. One research report projected that roughly 30% of global VMware users will migrate away by 2028, and expected related demand in Korea to emerge from the second half as VMware subscription contracts expire in sequence. On the policy side, Korea's 2026 AI budget was expanded to KRW 9.9 trillion, with the AX-specific portion rising from KRW 1.5 trillion the prior year to KRW 2.4 trillion. This backdrop is viewed as favorable for full-stack players like NAMU AX that span virtualization, cloud, and AI. Still, the domestic cloud and virtualization market includes multiple competitors such as Orchestro and Innogrid, and the AI infrastructure segment remains at an early stage, making the pace at which memoranda of understanding convert into actual revenue a key competitive differentiator going forward. The company has participated as a silver partner at Dell Technologies Forum 2026 in Seoul and joined the government-backed AIDC Alliance launch event as a data-center operating software firm, building out its industry network."
  },
  "outlook": {
-  "ko": "회사는 2026년 소버린 AI 시장 공략을 핵심 전략으로 내세우며, 자체 GPU 오케스트레이션 기술로 공공·금융 기관의 AI 인프라 수요를 흡수하겠다는 계획을 밝혔다. 하반기에는 엔터프라이즈 AI 플랫폼 'NAA(Namu AI Agent)'의 확산을 추진해 소버린 AI 기반 풀스택 구조 구축까지 사업 영역을 넓힐 방침이다. 글로벌 반도체 대기업 S사의 대규모 클라우드 네이티브 전환 프로젝트는 2025년 우선협상대상자 선정 이후 자회사 칵테일아이오를 통해 수행 중이며, 3년 이상의 장기 매출 인식이 예상된다. 2026년 4월에는 공동대표 체제로 전환해 신임 사장을 선임하는 등 AI 전환(AX) 사업 강화를 위한 조직 개편도 이뤄졌다. 비상장 자회사 에스케이팩은 스팩(SPAC) 합병 상장을 준비 중이며, 상장을 통해 확보한 자금을 연구개발자금(70억원), 시설자금(60억원), 운영자금(13억원) 등에 배정할 계획이라고 밝혔다. 회사측은 가상화 환경 재구축과 멀티클라우드 전환 수요가 이어지는 가운데 안정적인 외형 성장을 지속하겠다는 방침을 밝혔다. 다만 상반기 수주분이 하반기에 매출로 인식되는 계절성이 되풀이될 경우, 다가오는 상반기 실적이 다시 둔화될 가능성도 함께 유의해야 하는 부분이다.",
-  "en": "The company has positioned targeting the sovereign AI market as its core strategy for 2026, aiming to capture public and financial-sector AI infrastructure demand through its proprietary GPU orchestration technology. In the second half, it plans to expand adoption of its enterprise AI platform, 'NAA (Namu AI Agent),' broadening its business scope toward building a full-stack sovereign AI architecture. The large-scale cloud-native transformation project for a major global semiconductor company, for which the company was selected as preferred bidder in 2025, is being carried out through subsidiary Cocktail.io and is expected to generate revenue recognition over more than three years. In April 2026, the company shifted to a co-CEO structure with the appointment of a new president, reorganizing to strengthen its AI transformation (AX) business. Unlisted subsidiary SK Pack is preparing for a SPAC merger listing, with plans to allocate proceeds toward R&D funding (KRW 7.0bn), facility investment (KRW 6.0bn), and operating capital (KRW 1.3bn). The company has stated its intention to sustain stable top-line growth amid continuing demand for virtualization rebuilding and multi-cloud migration. However, if the seasonal pattern of first-half order intake being recognized as second-half revenue repeats, upcoming first-half results could again show softness, a point worth monitoring."
+  "ko": "회사는 2026년 상반기 연결 매출이 전년 동기 대비 106.3% 늘어난 724억원, 영업이익 8억원, 순이익 10억원을 기록하며 상반기 기준 흑자전환에 성공했다고 밝혔다. 경영진은 하반기에는 기존 고객 기반과 제품 경쟁력을 바탕으로 AI 인프라 플랫폼 사업의 성과를 구체화해 성장성과 수익성을 함께 높이겠다는 방향을 제시했다. 하드웨어·소프트웨어 결합 전략으로는 AI·HPC 서버 기업 코코링크와 국산 AI 서버 어플라이언스를 공동 기획해 코코링크의 서버에 자사 AI 인프라 운영 플랫폼을 사전 탑재하는 협력을 추진하고 있으며, 아이에이클라우드와도 소형 모듈형 AI 데이터센터 플랫폼 관련 협력을 위한 MOU를 체결했다. 자체 서버 가상화 플랫폼 'namuVIRT'는 VM웨어 대체 수요를 겨냥해 교육·의료·공공 시장을 중심으로 VDI 사업 확대에 활용될 계획이다. 한 리서치는 회사가 1,100개 이상의 고객 레퍼런스를 기반으로 가상화·클라우드·AI 사업 간 교차 판매가 가능한 구조를 갖추고 있다고 짚었다. ARC리서치는 2026년 7월 보고서에서 \"구독형 매출 확대와 AI 사업 성과가 본격화될 경우 기업가치 재평가가 가능할 것\"이라고 밝혔다. 다만 이러한 협력들이 대부분 구속력이 낮은 업무협약 단계에 머물러 있어, 실제 수주·매출 전환 시점과 규모는 아직 확인이 필요한 상태다.",
+  "en": "The company reported that first-half 2026 consolidated revenue rose 106.3% year over year to KRW 72.4bn, with operating profit of KRW 0.8bn and net income of KRW 1.0bn, marking a swing to profit on a first-half basis. Management indicated it plans to build on its existing customer base and product competitiveness in the second half to translate AI infrastructure platform initiatives into concrete results, aiming to lift both growth and profitability together. On the hardware-software integration front, the company is working with AI/HPC server firm Kocolink to co-develop a domestic AI server appliance that pre-installs its AI infrastructure operating platform on Kocolink's servers, and it has also signed an MOU with IA Cloud related to a small modular AI data center platform. Its proprietary server virtualization platform, namuVIRT, is intended to target VMware-replacement demand and expand VDI business centered on education, healthcare, and public-sector markets. One research report noted the company's ability to cross-sell virtualization, cloud, and AI offerings based on more than 1,100 customer references. ARC Research stated in a July 2026 report that \"if subscription revenue expansion and AI business results materialize, a re-rating of corporate value could be possible.\" That said, most of these collaborations remain at the non-binding memorandum stage, so the timing and scale of actual order conversion still needs confirmation."
  },
  "valuation_comment": {
-  "ko": "나무기술 주가는 2026년 상반기 소버린 AI·GPU 오케스트레이션 테마와 흑자전환 소식에 힘입어 단기간 52주 최고가(11,100원)까지 치솟았으나, 이후 투자경고종목 지정과 차익 매물 출회 속에 급락해 52주 저점(1,308원) 대비로도, 최고점 대비로도 매우 큰 폭의 등락을 겪었다. 이 과정에서 한 해외 리서치 플랫폼은 6월 초 고점 구간을 두고 나무기술을 \"상당히 과대평가된\" 종목으로 지목했다고 보도됐으며, 실제로 이후 주가는 상당히 되돌림했다. 현재 가격 수준은 이런 급등락을 거친 이후의 구간으로, 순자산가치(주당 장부가 1,131원 안팎) 대비로는 여전히 상당한 프리미엄이 반영돼 있는 편이다. 회사는 별도의 현금배당을 지급하지 않는 무배당 정책을 유지하고 있어 배당 매력은 낮은 수준이다. 3년 연속 적자에서 벗어나 이익이 회복되는 흐름이 확인되고 있으나, 이 흐름이 얼마나 이어질지, 그리고 소버린 AI 관련 신규 수주가 실제 매출로 얼마나 가시화될지는 향후 분기 실적과 공시를 통해 계속 확인이 필요한 부분이다.",
-  "en": "NamuTech's share price surged to a 52-week high of KRW 11,100 in the first half of 2026 on sovereign AI/GPU orchestration themes and news of the profit turnaround, before plunging amid an investment-warning designation and profit-taking, resulting in extremely large swings relative to both its 52-week low (KRW 1,308) and its peak. During this period, one overseas research platform reportedly flagged the company as \"significantly overvalued\" around its early-June peak, and the share price subsequently pulled back substantially. The current price level follows this volatility and still reflects a considerable premium relative to net asset value (book value per share of roughly KRW 1,131). The company maintains a no-dividend policy with no cash distributions, leaving dividend appeal limited. While the shift from three consecutive years of losses to a recovering earnings trend has been confirmed, how durable this trend proves and how much of the sovereign AI pipeline actually converts into visible revenue remain points that require continued verification through upcoming quarterly results and disclosures."
+  "ko": "현재 시장에서 거래되는 배수는 회사의 최근 몇 년간 반복된 적자 국면과 2025년 이후 나타난 이익 회복 흐름이 동시에 반영되는 구간으로 볼 수 있다. 순자산 대비 주가는 과거 적자기 대비 프리미엄이 형성된 편으로, 이는 AI 인프라 신사업에 대한 기대가 일부 가격에 얹혀 있음을 시사한다. 배당은 이어지지 않고 있어 주주환원보다는 재투자·성장 전략에 무게가 실린 구조로 해석할 수 있다. 과거 실적이 적자와 흑자를 오간 이력이 있는 만큼, 최근 네 개 분기의 이익 회복이 일관된 추세로 이어질지가 향후 밸류에이션 재평가 여부를 가르는 핵심 변수가 될 것으로 보인다.",
+  "en": "The multiples at which the shares currently trade can be viewed as reflecting both the company's recurring loss years in the recent past and the profit-recovery trend that has emerged since 2025. The share price carries a premium relative to net asset value compared with the earlier loss-making period, suggesting that some expectation for the AI infrastructure business is already embedded in the price. The absence of ongoing dividend payouts points to a structure weighted toward reinvestment and growth rather than shareholder returns. Given the company's history of alternating between losses and profits, whether the profit recovery seen over the latest four quarters proves durable will likely be a key variable in any future valuation reassessment."
  },
  "bull": [
   {
    "title": {
-    "ko": "체질 개선에 따른 흑자전환",
-    "en": "Profit Turnaround via Business Mix Shift"
+    "ko": "본업 회복과 흑자 전환",
+    "en": "Core Business Recovery and Return to Profit"
    },
    "body": {
-    "ko": "저마진 하드웨어 중심 사업을 클라우드·가상화 소프트웨어 중심으로 재편하면서 클라우드 부문이 역대 최대 매출을 기록했다. 2024년 -22.3억원이던 영업손실이 2025년 흑자로 전환되고 2026년 1분기까지 흑자 기조가 이어지고 있다. 하드웨어 및 기타 매출 비중이 축소되는 반면 고부가가치 소프트웨어 비중이 확대되는 구조적 변화가 진행 중이다.",
-    "en": "The shift from low-margin hardware toward cloud and virtualization software has driven record cloud-segment revenue. The 2024 operating loss of about KRW 2.23bn turned into a profit in 2025, and profitability has continued through Q1 2026. Hardware's share of revenue is shrinking while higher-value-added software expands, a structural change now underway."
+    "ko": "2025년 연결 영업이익이 22.5억원으로 2년 연속 적자에서 벗어났고, 최근 네 개 분기 매출은 320억~370억원대에서 안정적으로 유지되고 있다. 2026년 상반기에도 매출이 전년 동기 대비 106.3% 늘어난 724억원을 기록하며 성장세가 이어졌다. 가상화·클라우드 사업이 본업 매출의 절반가량을 차지하는 만큼 이 부문의 회복이 실적 개선의 기반이 되고 있다.",
+    "en": "Consolidated operating profit of KRW 2.25bn in 2025 broke a two-year streak of operating losses, and revenue over the latest four quarters has held steady in the KRW 32-37bn range per quarter. Growth continued into first-half 2026, with revenue up 106.3% year over year to KRW 72.4bn. Since virtualization and cloud make up roughly half of core revenue, the recovery in this segment underpins the overall earnings improvement."
    }
   },
   {
    "title": {
-    "ko": "소버린 AI·GPU 오케스트레이션 포지셔닝",
-    "en": "Sovereign AI and GPU Orchestration Positioning"
+    "ko": "구독형 매출 비중 확대",
+    "en": "Growing Subscription Revenue Mix"
    },
    "body": {
-    "ko": "데이터 주권 확보를 위해 자체 AI 인프라를 구축하려는 공공·금융 기관 수요가 늘어나는 가운데, 나무기술은 GPU 오케스트레이션 기술로 이 흐름을 흡수하고 있다. 하반기에는 엔터프라이즈 AI 플랫폼 'NAA'를 확산해 풀스택 구조로 사업을 확장할 계획이다. 국내 순수 클라우드 네이티브 플레이어로서 정책 수혜 가능성이 있는 위치에 있다.",
-    "en": "As public and financial institutions increasingly seek to build their own AI infrastructure for data sovereignty, NamuTech is capturing this demand with its GPU orchestration technology. It plans to expand its 'NAA' enterprise AI platform in the second half to broaden into a full-stack structure. As a domestic pure cloud-native player, it is positioned to potentially benefit from related policy trends."
+    "ko": "한 리서치 분석에 따르면 구독형 매출 비중이 2024년 11.6%에서 2025년 28.6%로 상승했다. 반복매출 비중이 커지면 매출의 예측 가능성이 높아지는 효과가 있다. 자회사 나무ICT도 매출이 전년 대비 52.6% 성장하며 전사 외형 확대에 기여한 것으로 파악된다.",
+    "en": "According to one research analysis, the subscription revenue mix rose from 11.6% in 2024 to 28.6% in 2025. A larger share of recurring revenue tends to improve the predictability of top-line results. Subsidiary NAMU ICT is also estimated to have grown revenue 52.6% year over year, contributing to consolidated top-line expansion."
    }
   },
   {
    "title": {
-    "ko": "글로벌 대형 고객 레퍼런스 확보",
-    "en": "Major Global Customer Reference Secured"
+    "ko": "AI 인프라 사업으로의 영역 확장",
+    "en": "Expansion into AI Infrastructure"
    },
    "body": {
-    "ko": "2025년 5월 국내 반도체 대기업 S사의 핵심 클라우드 전환 사업 우선협상대상자로 선정돼 3년 이상의 장기 프로젝트를 확보했다. 이는 대기업 클라우드 네이티브 전환 시장에서 기술 신뢰도를 입증한 사례로 평가된다. 자회사 칵테일아이오를 통해 수행되며, 향후 유사 대형 프로젝트 수주의 발판이 될 수 있다.",
-    "en": "In May 2025, the company was selected as preferred bidder for a major domestic semiconductor company's core cloud transformation project, securing a long-term contract spanning more than three years. This is viewed as evidence of proven technical credibility in the enterprise cloud-native transformation market. Carried out through subsidiary Cocktail.io, it could serve as a springboard for winning similar large-scale projects."
+    "ko": "회사는 코코링크와 국산 AI 서버 어플라이언스를 공동 개발하고, 아이에이클라우드·솔로몬텍 등과 잇따라 AI 인프라 관련 업무협약을 체결하며 사업영역을 넓히고 있다. 정부의 2026년 AX 부문 예산이 전년 대비 확대된 점도 우호적 정책 환경으로 꼽힌다. VMware 가격정책 변화에 따른 대체 수요를 겨냥한 자체 가상화 플랫폼 namuVIRT도 새로운 매출원으로 기대되고 있다.",
+    "en": "The company is broadening its footprint by co-developing a domestic AI server appliance with Kocolink and signing a series of AI infrastructure-related MOUs with firms such as IA Cloud and Solomontech. The Korean government's expanded 2026 AX budget compared with the prior year is also cited as a favorable policy backdrop. Its proprietary virtualization platform, namuVIRT, aimed at capturing demand shifting away from VMware, is also viewed as a potential new revenue source."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "이익의 질 - 비핵심 자회사 의존",
-    "en": "Earnings Quality: Reliance on a Non-Core Subsidiary"
+    "ko": "지배주주 순이익의 지속적인 등락",
+    "en": "Continued Volatility in Owners' Net Income"
    },
    "body": {
-    "ko": "일부 보도는 2025년 연결 흑자전환의 실질적 원동력이 클라우드·AI 본업이 아닌 포장자동화 자회사 에스케이팩이었다고 지적한다. 모회사 별도 기준으로는 여전히 영업손실이 이어졌으며 별도 순손실은 오히려 확대됐다. 클라우드·AI 본업의 독자적인 이익 창출력이 아직 충분히 검증되지 않았다는 우려가 제기된다.",
-    "en": "Some reports note that the real driver of the 2025 consolidated turnaround was the packaging-automation subsidiary SK Pack rather than the core cloud/AI business. On a standalone parent basis, the operating loss continued, and the standalone net loss actually widened. This raises concerns that the core cloud/AI business's independent profit-generating capacity has not yet been sufficiently validated."
+    "ko": "영업이익이 흑자를 낸 분기에도 지배주주 순이익이 손실을 기록한 사례가 반복되고 있다. 2025Q4에는 영업이익 11.8억원에도 순이익이 -7.5억원, 2026Q2에는 영업이익 3.4억원에도 순이익이 -3.1억원을 기록했다. 이는 영업외 손익이나 종속회사·비지배지분 요인이 실적의 변동성을 키우고 있음을 보여준다.",
+    "en": "There have been repeated cases where owners' net income posted a loss even in quarters with operating profit. In 2025Q4, operating profit was KRW 1.18bn but net income was -KRW 0.75bn, and in 2026Q2 operating profit was KRW 0.34bn while net income was -KRW 0.31bn. This indicates non-operating items or subsidiary/non-controlling-interest factors continue to add volatility to results."
    }
   },
   {
    "title": {
-    "ko": "극단적 주가 변동성과 투자경고",
-    "en": "Extreme Share Price Volatility and Warning Designation"
+    "ko": "높은 부채비율과 소형 시가총액",
+    "en": "Elevated Debt Ratio and Small Market Capitalization"
    },
    "body": {
-    "ko": "주가는 52주 저점(1,308원)에서 최고가(11,100원)까지 치솟은 뒤, 투자경고종목 지정과 함께 다시 큰 폭으로 급락했다. 코스닥 시장에서 투자경고종목으로 지정된 이력이 있으며, 이는 단기 과열에 대한 거래소 차원의 경계 신호로 해석될 수 있다. 이런 변동성은 실적 확인 이전에 테마성 수급이 주가를 크게 움직였음을 시사한다.",
-    "en": "The stock surged from a 52-week low of KRW 1,308 to a high of KRW 11,100 before falling sharply again alongside an investment-warning designation. It has a history of being flagged as an investment-warning stock on KOSDAQ, which can be read as an exchange-level signal of short-term overheating. This volatility suggests theme-driven flows moved the price significantly ahead of fundamental confirmation."
+    "ko": "부채비율은 2024년 142.6%, 2025년에도 119.3%로 100%를 웃도는 수준을 유지하고 있다. 시가총액이 상대적으로 작은 코스닥 소형주로서 유동성과 정보 접근성 측면의 제약이 있을 수 있다. 유상증자 관련 신주배정 이슈가 지분현황 자료에 언급된 만큼 향후 자본조달 방식도 지켜볼 필요가 있다.",
+    "en": "The debt ratio stood at 142.6% in 2024 and remained above 100% at 119.3% in 2025. As a relatively small-cap KOSDAQ-listed company, there may be constraints around liquidity and information access. Shareholding data has referenced a rights-offering share allocation matter, so the method of any future capital raising also warrants monitoring."
    }
   },
   {
    "title": {
-    "ko": "낮은 영업이익률과 실적 계절성",
-    "en": "Thin Operating Margins and Earnings Seasonality"
+    "ko": "협약 중심 사업의 실행 불확실성",
+    "en": "Execution Uncertainty in an MOU-Driven Business Pipeline"
    },
    "body": {
-    "ko": "2025년 연결 영업이익률은 매출 1,023억원에 영업이익 22.5억원으로 약 2.2%에 불과해 흑자전환에도 절대 이익 규모는 여전히 작다. 2024년까지 3년 연속 적자를 기록했던 만큼 이익 안정성은 아직 짧은 트랙레코드에 근거하고 있다. 매출이 상반기보다 하반기에 집중되는 계절성이 반복될 경우 다시 상반기 실적 둔화가 나타날 수 있다.",
-    "en": "The 2025 consolidated operating margin was only about 2.2% (KRW 2.25bn on KRW 102.3bn revenue), meaning the absolute profit remains small despite the turnaround. Having posted losses for three straight years through 2024, the stability of this profitability rests on a still-short track record. If the pattern of revenue concentrating in the second half repeats, first-half results could weaken again."
+    "ko": "코코링크, 아이에이클라우드, 솔로몬텍 등과의 협력은 대부분 구속력이 낮은 업무협약 단계에 머물러 있다. 국내 클라우드·가상화 시장에는 오케스트로, 이노그리드 등 경쟁사가 다수 존재해 유사 제품군 간 경쟁이 심화될 가능성이 있다. 협약이 실제 매출과 수익으로 전환되는 속도와 규모는 아직 확인되지 않은 변수다.",
+    "en": "Most of the company's collaborations with Kocolink, IA Cloud, and Solomontech remain at the non-binding memorandum stage. The domestic cloud and virtualization market includes numerous competitors such as Orchestro and Innogrid, raising the possibility of intensified competition among similar product lines. The speed and scale at which these agreements convert into actual revenue and profit remain unconfirmed variables."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer Concentration Risk"
+    "ko": "사업 실행 리스크",
+    "en": "Business Execution Risk"
    },
    "body": {
-    "ko": "글로벌 반도체 대기업 S사와의 대규모 클라우드 전환 프로젝트가 향후 실적에 미치는 영향이 커질 수 있는 구조다. 특정 대형 고객에 대한 매출 의존도가 높아질 경우, 계약 규모 변경이나 일정 지연이 발생하면 실적 변동성이 확대될 수 있다. 고객 다변화가 충분히 진행되지 않은 상태에서의 대형 프로젝트 의존은 양날의 검이 될 수 있다.",
-    "en": "The large-scale cloud transformation project with a major global semiconductor customer could increasingly influence future results. If revenue dependence on this single large customer grows, contract scope changes or scheduling delays could amplify earnings volatility. Reliance on a large project without sufficient customer diversification can be a double-edged sword."
+    "ko": "다수의 AI 인프라 관련 MOU가 실제 수주나 매출로 전환되지 않을 가능성이 있다. AI 신사업에 대한 투자가 지속되는 가운데 매출 회수 시점이 지연되면 수익성 개선 속도가 늦춰질 수 있다. 경영진이 밝힌 하반기 성과 구체화 목표의 달성 여부도 확인이 필요한 사안이다.",
+    "en": "There is a risk that a number of AI infrastructure-related MOUs may not convert into actual orders or revenue. If revenue recovery from continued investment in new AI businesses is delayed, the pace of profitability improvement could slow. Whether management's stated goal of concretizing second-half results is achieved also requires confirmation."
    }
   },
   {
    "cat": {
-    "ko": "자본구조·희석 리스크",
-    "en": "Capital Structure and Dilution Risk"
+    "ko": "재무 구조 리스크",
+    "en": "Financial Structure Risk"
    },
    "body": {
-    "ko": "2026년 들어 제8회 교환사채의 교환권 행사로 보유 중이던 자기주식 137만여 주가 전량 교부됐다. 같은 기간 자회사 에스케이팩과 나무ICT에 대한 지분율이 각각 71.07%→53.10%, 60.00%→50.01%로 낮아졌다. 향후 추가적인 사채 전환이나 자회사 지분 변동, 스팩 상장 관련 구조 변화가 주주가치에 영향을 줄 수 있다.",
-    "en": "In 2026, the exercise of exchange rights on the eighth-series exchangeable bonds resulted in the full delivery of about 1.37 million shares of treasury stock previously held. Over the same period, the company's stakes in subsidiaries SK Pack and NamuICT declined from 71.07% to 53.10% and from 60.00% to 50.01%, respectively. Further bond conversions, subsidiary stake changes, or structural shifts related to the SPAC listing could affect shareholder value going forward."
+    "ko": "부채비율이 100%를 웃도는 수준을 지속하고 있어 이자 비용 등 재무 부담이 이어질 수 있다. 지배주주 순이익이 분기별로 손익을 오가는 만큼 향후 추가 자본조달 필요성이 발생할 경우 지분 희석 우려도 배제할 수 없다. 지분현황 자료에 언급된 유상증자 관련 신주배정 이슈도 지켜봐야 할 사항이다.",
+    "en": "The debt ratio has persisted above 100%, which could sustain financial burdens such as interest expense. Since owners' net income has swung between profit and loss on a quarterly basis, dilution concerns cannot be ruled out if additional capital raising becomes necessary going forward. The rights-offering share allocation matter referenced in shareholding data also warrants continued attention."
    }
   },
   {
    "cat": {
-    "ko": "시장 감시·규제 리스크",
-    "en": "Market Surveillance and Regulatory Risk"
+    "ko": "경쟁·기술 변화 리스크",
+    "en": "Competitive and Technology Change Risk"
    },
    "body": {
-    "ko": "2026년 5월 코스닥 시장에서 투자경고종목으로 지정된 이력이 있으며, 이는 단기 급등에 대한 거래소의 시장 관리 조치였다. 향후 유사한 시장 감시 조치가 재발할 경우 거래 제한이나 추가적인 가격 변동성으로 이어질 수 있다. 공공기관 대상 사업 비중이 높은 만큼 예산 배정이나 발주 일정과 관련한 정책·규제 변수도 상시 점검이 필요하다.",
-    "en": "The stock was designated an investment-warning issue on KOSDAQ in May 2026, an exchange market-management measure taken in response to a sharp short-term rally. Recurrence of similar surveillance actions could lead to trading restrictions or further price volatility. Given the significant share of business tied to public-sector projects, policy and regulatory variables related to budget allocation and procurement timing also warrant ongoing monitoring."
+    "ko": "가상화·클라우드 시장은 오케스트로, 이노그리드 등 국내 경쟁사와 글로벌 하이퍼스케일러의 영향을 함께 받는 구조다. VMware 가격정책 변화에 따른 대체 수요가 예상보다 더디게 나타날 경우 namuVIRT 등 신제품의 매출 기여가 지연될 수 있다. AI 인프라 분야의 기술 표준과 고객 요구가 빠르게 변화하는 점도 지속적인 투자 부담으로 이어질 수 있다.",
+    "en": "The virtualization and cloud market is shaped both by domestic competitors such as Orchestro and Innogrid and by global hyperscalers. If replacement demand tied to VMware's pricing policy changes emerges more slowly than expected, revenue contribution from new products such as namuVIRT could be delayed. Rapidly evolving technology standards and customer requirements in the AI infrastructure space could also translate into an ongoing investment burden."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중(잠정)",
-    "en": "Around August 2026 (tentative)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표 - 1분기 흑자 기조가 이어지는지, 과거처럼 상반기 실적이 둔화되는 계절성이 재현되는지 확인이 필요하다.",
-    "en": "Q2 2026 earnings release - check whether the Q1 profitable trend continues or whether the historical pattern of first-half softness reappears."
-   }
-  },
-  {
-   "when": {
-    "ko": "수시(공시 기준)",
-    "en": "Ongoing (per disclosures)"
-   },
-   "what": {
-    "ko": "글로벌 S사 클라우드 전환 프로젝트의 매출 인식 진행 상황과 추가 수주 관련 공시를 확인할 필요가 있다.",
-    "en": "Monitor disclosures on revenue recognition progress for the global semiconductor client's cloud transformation project and any additional order announcements."
-   }
-  },
-  {
-   "when": {
-    "ko": "스팩 합병 상장 일정 확정 시",
-    "en": "Upon confirmation of SPAC merger listing schedule"
-   },
-   "what": {
-    "ko": "비상장 자회사 에스케이팩의 스팩 상장 진행 상황과 상장 후 지분율 변화, 조달 자금 사용 계획 이행 여부를 점검한다.",
-    "en": "Track the progress of unlisted subsidiary SK Pack's SPAC listing, resulting changes in equity stakes, and execution of the planned use of proceeds."
+    "ko": "2026년 3분기 실적 발표를 통해 최근 이어진 매출 성장과 이익 회복 흐름이 지속되는지, 지배주주 순이익의 등락 패턴이 안정화되는지를 확인할 필요가 있다.",
+    "en": "The 2026 third-quarter earnings release should be checked to see whether the recent revenue growth and profit-recovery trend continues, and whether the volatility pattern in owners' net income stabilizes."
    }
   },
   {
    "when": {
     "ko": "2026년 하반기 중",
-    "en": "In the second half of 2026"
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "엔터프라이즈 AI 플랫폼 'NAA' 정식 확산 및 상용화 진행 상황을 확인한다.",
-    "en": "Check the progress of the full-scale rollout and commercialization of the enterprise AI platform 'NAA.'"
+    "ko": "코코링크·아이에이클라우드·솔로몬텍 등과 체결한 MOU가 실제 공급계약이나 수주로 전환되는지, 그 규모와 시점을 확인할 필요가 있다.",
+    "en": "It is worth monitoring whether the MOUs signed with Kocolink, IA Cloud, and Solomontech convert into actual supply contracts or orders, and at what scale and timing."
    }
   },
   {
    "when": {
-    "ko": "수시",
-    "en": "Ongoing"
+    "ko": "2026년 하반기 중",
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "투자경고종목 지정·해제 등 거래소 시장관리 조치와 최대주주 등 주요주주 지분 변동 공시를 계속 확인해야 한다.",
-    "en": "Continue to monitor exchange market-management actions such as investment-warning designations/removals, as well as disclosures on changes in major shareholders' stakes."
+    "ko": "자체 가상화 플랫폼 namuVIRT의 상용화 이후 실제 매출 기여도와 VM웨어 대체 수요의 현실화 정도를 점검할 필요가 있다.",
+    "en": "Following the commercialization of the namuVIRT virtualization platform, its actual revenue contribution and the degree to which VMware-replacement demand materializes should be checked."
+   }
+  },
+  {
+   "when": {
+    "ko": "향후 신주 배정 관련 공시 시점",
+    "en": "At the time of any future rights-offering disclosure"
+   },
+   "what": {
+    "ko": "지분현황 자료에 언급된 유상증자 신주배정 일정과 규모가 구체화되는지, 지분 희석 정도를 확인할 필요가 있다.",
+    "en": "It is worth confirming whether the timing and scale of the rights-offering share allocation referenced in shareholding data are finalized, and assessing the resulting degree of dilution."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "나무기술은 하드웨어 중심 사업구조에서 클라우드·가상화 소프트웨어 중심으로 재편하며 2022년 이후 3년 만에 연결 영업이익 흑자전환을 이뤄냈고, 2026년 1분기까지 흑자 기조를 이어가고 있다. 다만 2025년 흑자전환의 상당 부분이 포장자동화 자회사 등에서 나왔다는 지적이 있어, 클라우드·AI 본업의 독자적 수익성은 앞으로의 분기 실적으로 계속 확인해야 하는 과제로 남아 있다. 소버린 AI·GPU 오케스트레이션이라는 테마성 기대와 글로벌 대형 고객 레퍼런스 확보는 긍정적 요인이지만, 고객 집중, 자본구조 희석 가능성, 실적 계절성은 함께 고려해야 할 부담이다. 주가는 2026년 상반기 테마 부각과 함께 급등한 뒤 투자경고종목 지정과 차익매물 속에 크게 되돌림해, 짧은 기간 안에 매우 큰 폭의 등락을 경험했다. 순자산가치 대비로는 여전히 프리미엄이 반영된 구간이며, 무배당 정책으로 배당 매력은 낮은 편이다. 결국 이 종목에 대한 평가는 이익 회복의 지속성, 대형 프로젝트 매출 인식 속도, 그리고 향후 수주 뉴스의 실현 여부에 달려 있으며, 다가오는 분기 실적과 공시를 통한 지속적인 확인이 필요하다.",
-   "en": "NamuTech has restructured from a hardware-centric business toward cloud and virtualization software, achieving its first consolidated operating profit in three years since 2022, with the profitable trend continuing through Q1 2026. However, since a meaningful portion of the 2025 turnaround reportedly came from a packaging-automation subsidiary, the independent profitability of the core cloud/AI business remains a matter to be confirmed through upcoming quarterly results. Thematic expectations around sovereign AI and GPU orchestration, along with a major global customer reference, are positive factors, but customer concentration, potential capital-structure dilution, and earnings seasonality are counterbalancing concerns. The share price surged as the theme gained attention in the first half of 2026, then pulled back sharply amid an investment-warning designation and profit-taking, resulting in very large swings within a short period. The stock still trades at a premium to net asset value, and its no-dividend policy limits income appeal. Ultimately, assessment of this name hinges on the durability of the earnings recovery, the pace of revenue recognition from major projects, and whether future order announcements materialize, warranting continued verification through upcoming quarterly results and disclosures."
+   "ko": "나무에이엑스는 2025년 영업이익 흑자 전환과 2026년 상반기 매출 성장을 바탕으로 가상화·클라우드 본업의 회복세를 확인시켰다. 동시에 구독형 매출 비중 확대와 AI 인프라 사업으로의 영역 확장을 통해 사업 포트폴리오를 다각화하려는 시도가 이어지고 있다. 다만 지배주주 순이익은 분기별로 등락을 반복하고 있고, 부채비율도 100%를 웃도는 수준을 유지하고 있어 이익의 질과 재무 안정성 측면에서는 추가 확인이 필요하다. 다수의 AI 인프라 관련 협약이 아직 구속력 낮은 MOU 단계에 머물러 있는 점도 실행 리스크로 남아 있다. 향후 분기 실적에서 매출 성장과 이익 회복이 일관되게 유지되는지, 협약들이 실제 매출로 전환되는 속도가 어떠한지가 핵심 관찰 포인트가 될 것으로 보인다.",
+   "en": "NAMU AX confirmed a recovery in its core virtualization and cloud business, underpinned by a swing to operating profit in 2025 and continued revenue growth in first-half 2026. At the same time, the company is pursuing portfolio diversification through a growing subscription revenue mix and expansion into AI infrastructure. However, owners' net income has repeatedly swung between profit and loss on a quarterly basis, and the debt ratio remains above 100%, warranting further scrutiny of earnings quality and financial stability. The fact that many of its AI infrastructure-related collaborations remain at the non-binding MOU stage also leaves execution risk unresolved. Whether revenue growth and profit recovery remain consistent in coming quarters, and how quickly these agreements convert into actual revenue, will likely be the key points to watch going forward."
   }
  },
  "sources": [
-  "https://zdnet.co.kr/view/?no=20230927113716",
-  "https://www.comworld.co.kr/news/articleView.html?idxno=50757",
-  "https://www.nutanix.com/info/what-is-cloud-native",
-  "https://www.venturesquare.net/967960",
-  "http://www.itdaily.kr/news/articleView.html?idxno=206181",
-  "https://www.news2day.co.kr/article/20250409500213",
-  "https://v.daum.net/v/WAgiuicph5",
-  "https://www.namutech.co.kr/k-paas-%EA%B8%B0%EB%B0%98-%EA%B5%AD%EB%82%B4-%EA%B0%9C%EB%B0%A9%ED%98%95-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%83%9D%ED%83%9C%EA%B3%84-%ED%99%95%EC%9E%A5%EC%9D%84-%EC%9C%84%ED%95%B4-%EC%98%A4/",
-  "https://www.datanet.co.kr/news/articleView.html?idxno=201147",
-  "http://m.ddaily.co.kr/m/m_article/?no=187619",
-  "http://comp.fnguide.com/SVO2/ASP/SVD_main.asp?pGB=1&gicode=A242040&cID=&MenuYn=Y&ReportGB=&NewMenuID=11&stkGb=&strResearchYN=",
-  "https://stock1.brokdam.com/%EB%82%98%EB%AC%B4%EA%B8%B0%EC%88%A0-%EC%A3%BC%EA%B0%80-%EC%96%B4%EB%94%94%EA%B9%8C%EC%A7%80-%ED%99%95%EC%9E%A5%EB%90%A0%EA%B9%8C-%EC%86%8C%EB%B2%84%EB%A6%B0-ai-%EC%8B%9C%EB%8C%80%EC%9D%98-%ED%95%B5/",
-  "https://www.threads.com/@stockhandbook_friends/post/DVQmaJnkQVT/%EB%82%98%EB%AC%B4%EA%B8%B0%EC%88%A0%EC%9D%98-%EC%B5%9C%EA%B7%BC-11%EA%B1%B0%EB%9E%98%EC%9D%BC-%EC%A3%BC%EA%B0%80-%EC%83%81%EC%8A%B9%EC%9D%80%EC%8B%A4%EC%A0%81-%ED%84%B4%EC%96%B4%EB%9D%BC%EC%9A%B4%EB%93%9C-%EC%82%AC%EC%97%85%EA%B5%AC%EC%A1%B0-%EC%9E%AC%ED%8E%B8-ai-%EB%B0%8F-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%9D%98-%EB%AA%A8%EB%A9%98%ED%85%80-%EA%B0%95%ED%99%94%EB%A1%9C-%EB%B6%84%EC%84%9D2025%EB%85%84-%EC%97%B0%EA%B2%B0-%EB%A7%A4%EC%B6%9C%EC%9D%B4-1023%EC%96%B5-%EC%9B%90%EA%B3%BC?hl=ko",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=630605",
-  "https://www.koit.co.kr/news/articleView.html?idxno=205586",
-  "https://v.daum.net/v/20260212121942714",
-  "https://www.leadeconomy.co.kr/news/articleView.html?idxno=6778",
-  "https://www.thebell.co.kr/front/newsview.asp?key=202602130008007410103713"
+  "https://www.tossinvest.com/stocks/A242040/order",
+  "https://thevc.kr/namuax",
+  "https://valueline.co.kr/finance/balancesheet/242040",
+  "https://m.thinkpool.com/item/242040",
+  "https://market.edaily.co.kr/stock/242040/",
+  "https://news.nate.com/view/20260814n05358?mid=n0607",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05192246645519768",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=679662",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03312806645547320",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260318001394",
+  "https://www.epnc.co.kr/news/articleView.html?idxno=405572",
+  "https://www.itdaily.kr/news/articleView.html?idxno=240534",
+  "https://www.itdaily.kr/news/articleView.html?idxno=240985",
+  "https://www.koit.co.kr/news/articleView.html?idxno=208470",
+  "https://zdnet.co.kr/view/?no=20260813133804",
+  "https://www.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=HO7972",
+  "https://dart.fss.or.kr/",
+  "https://judal.co.kr/?shareToken=j6llfvs2kaz3J2k4&view=stockAI"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
  "ticker": "242040",
- "name": "나무기술",
+ "name": "나무에이엑스",
  "name_en": "NAMU TECH CO.,LTD.",
  "sector": "IT·소프트웨어",
  "categories": [
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-07-27",
- "reportTs": "2026-07-27 22:47",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:08",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -338,21 +328,22 @@
    }
   ],
   "valuation": {
-   "price": 3250,
-   "mcap": 0.1125,
+   "price": 3030,
+   "mcap": 0.1049,
    "shares": 34606264,
    "total_shares": 34506544,
    "wavg_shares": null,
-   "per": 361.111,
+   "per": 336.667,
    "eps": 9,
-   "pbr": 2.7151,
+   "pbr": 2.5313,
    "bps": 1197,
    "roe_ttm": 0.9,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 319400552,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 3.11,
+   "eps_src": "순이익÷주식수",
+   "pbr_krx": 2.9,
    "bps_krx": 1045.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,

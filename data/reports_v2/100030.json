@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "금융 SW 1위·케이뱅크 지분 가치가 맞물리다",
-  "en": "Fintech SW Leader Meets Embedded K-Bank Asset Value"
+  "ko": "케이뱅크 지분평가익, 순이익 뒤흔들다",
+  "en": "K bank Stake Gains Reshape Net Income"
  },
  "lead": {
-  "ko": "국내 금융권 AI OCR·전자서식 솔루션 1위 사업자로서 구독형 유지보수 매출이 안정성을 높이는 가운데, 케이뱅크 지분 공정가치 평가이익이 보고 순이익을 크게 끌어올리는 복합 자산 구조를 갖추고 있으며, 2026년 1분기 코어 영업이익이 전년 동기 대비 152% 성장하며 핵심 수익성 회복을 확인 중이다.",
-  "en": "InziSoft is Korea's leading AI OCR and electronic-form solutions provider for the financial sector; a layered asset structure—combining subscription-based maintenance revenue with K-Bank equity fair-value gains—has substantially amplified reported net income, while 2026 Q1 core operating profit surging 152% year-on-year confirms that underlying profitability is on a meaningful recovery path."
+  "ko": "본업인 금융권 OCR·전자서식 솔루션은 매출 정체 국면이나, 케이뱅크 지분의 공정가치 변동이 최근 순이익을 크게 좌우하는 구조다.",
+  "en": "Core financial-sector OCR and e-form solution revenue has stagnated, while fair-value swings tied to the K bank equity stake now drive most of net income."
  },
  "keypoints": [
   {
-   "ko": "2026년 1분기 영업이익 전년 동기 대비 +152%, 매출 +8.1%로 코어 사업 회복세 뚜렷",
-   "en": "2026 Q1 operating profit +152% YoY and revenue +8.1% YoY confirm a clear core business recovery"
+   "ko": "2025년 연결 매출은 189.2억원으로 전년(188.9억원)과 비슷했지만 영업이익은 23.4억원으로 전년(10.6억원) 대비 2배 넘게 늘며 마진이 회복됐다.",
+   "en": "Consolidated 2025 revenue of KRW 18.92 billion was roughly flat versus 2024's KRW 18.89 billion, while operating profit more than doubled to KRW 2.34 billion from KRW 1.06 billion, lifting margin."
   },
   {
-   "ko": "보고 순이익의 대부분이 케이뱅크 등 금융자산 공정가치 평가이익 — 이익 질 지속 점검 필요",
-   "en": "The bulk of reported net income stems from K-Bank equity fair-value revaluation gains, warranting ongoing earnings-quality scrutiny"
+   "ko": "2025년 지배주주 순이익은 213.9억원으로 전년(26.2억원)보다 크게 늘었는데, 금융자산 공정가치 평가 반영 효과가 상당 부분을 차지한 것으로 파악된다.",
+   "en": "2025 net income attributable to owners jumped to KRW 21.39 billion from KRW 2.62 billion a year earlier, a move largely tied to fair-value gains on financial assets."
   },
   {
-   "ko": "주당순자산(BPS) 30,689원 대비 할인 구간 거래; DPS 1,126원으로 코스닥 IT 업종 대비 높은 배당 매력",
-   "en": "Shares trade at a discount to stated BPS of KRW 30,689; DPS of KRW 1,126 delivers a dividend yield well above the KOSDAQ IT sector average"
+   "ko": "2026년 2분기 지배주주 순이익은 474.7억원으로 같은 분기 영업이익(12.2억원)을 크게 웃돌았으며, 이는 2026년 3월 코스피에 상장한 케이뱅크 지분과 연관된 것으로 해석된다.",
+   "en": "Owners' net income in Q2 2026 reached KRW 47.47 billion versus quarterly operating profit of only KRW 1.22 billion, a gap linked to the K bank stake, which listed on the KOSPI in March 2026."
   },
   {
-   "ko": "매출이 2022~23년 정점 대비 약 22% 감소한 수준에서 정체 중이나 구독·유지보수 비중 확대로 예측 가능성 제고 중",
-   "en": "Revenue remains ~22% below its 2022–23 peak and is essentially flat, though a rising share of subscription/maintenance contracts is improving revenue predictability"
+   "ko": "2025년 기준 부채비율은 19.4%로 낮아 무차입에 가까운 건전한 재무구조를 유지하고 있다.",
+   "en": "The debt ratio stood at a low 19.4% in 2025, reflecting a largely debt-free balance sheet."
   },
   {
-   "ko": "글로벌 지능형 문서처리(IDP) 시장 연 26% 고성장, 금융 부문이 최대 수요처 — 직접 수혜 포지션",
-   "en": "The global Intelligent Document Processing (IDP) market is growing at ~26% CAGR with finance as the dominant end-market, positioning InziSoft as a direct structural beneficiary"
+   "ko": "케이뱅크 주가는 상장 이후 변동성을 보이고 있어, 인지소프트가 보유한 지분의 평가가치도 등락에 노출돼 있다.",
+   "en": "K bank's share price has been volatile since its listing, exposing the valuation of Inzisoft's stake to swings in either direction."
   }
  ],
  "business": {
-  "ko": "인지소프트(구 모바일리더)는 2000년 설립, 2010년 코스닥 상장 후 2022년 현 사명으로 변경됐다. 광학문자인식(OCR) 기술과 전자서식 플랫폼을 핵심 자산으로 시중은행·인터넷은행·특수은행 등 국내 금융권을 주 고객으로 한다. 대표 제품은 AI OCR(신분증·금융서류 스캔 및 텍스트 자동 추출), BPR(이미지 프로세싱), 전자서식 솔루션으로, 복수의 증권사 리서치가 국내 금융 전산 자동화 분야에서 독보적 시장점유율을 보유하고 있다고 평가한다. 사업 모델은 초기 SW 솔루션 납품(프로젝트 수주) 및 시스템 구축과 구독형·유지보수 서비스 두 축으로 구성되며, 최근 구독·유지보수 비중을 높여 매출 안정성을 강화하는 방향으로 전략을 전환 중이다. 하반기에는 금융권 대상 영업을 강화하고 신분증 사본 판별 솔루션 수주를 확대하는 것으로 알려져 있다. 경쟁 구도상 AI OCR 영역에서 업스테이지·네이버·카카오 등 플랫폼·AI 기업의 진입 압력이 존재하나, 인지소프트는 20년 이상의 금융 특화 레거시 시스템 연동 레퍼런스를 통해 고객 전환 비용을 높이는 차별화 해자를 유지하고 있다. 재무 구조적으로는 케이뱅크 지분 등 금융자산을 공정가치로 측정·보유하고 있어, 비영업 이익이 보고 순이익의 상당 부분을 구성하는 복합적 특성을 지닌다.",
-  "en": "InziSoft (formerly MobileLeader, rebranded in 2022) was founded in 2000 and listed on KOSDAQ in 2010. Its intellectual property centers on optical character recognition (OCR) and electronic-form platforms, with domestic commercial, internet, and specialized banks as its primary customers. Flagship products include AI OCR (automated data extraction from ID documents and financial forms), BPR (image processing), and electronic-form solutions; multiple brokerage research reports cite the company as holding a dominant market share in Korea's financial back-office automation segment. The business model operates on two pillars: initial software solution delivery (project-based contracts with system integration) and subscription/maintenance services; the company is actively rebalancing toward higher-margin recurring revenue to improve top-line stability. In H2, the company has reportedly been intensifying financial-sector sales and expanding contracts for ID forgery-detection solutions. Competitive pressure exists from AI-native firms such as Upstage and large platform players like Naver and Kakao, but InziSoft's two-decade track record of deep legacy-system integrations within Korean financial institutions creates meaningful switching costs and a durable competitive moat. The company also holds financial assets—most notably a stake in K-Bank—measured at fair value through profit or loss, giving it a dual character as both a software operator and a financial asset holder."
+  "ko": "인지소프트는 2000년 설립돼 2010년 코스닥에 상장했으며, 2022년 (구)모바일리더에서 현재의 사명으로 변경했다. 회사는 광학문자인식(OCR)과 전자서식 기술을 기반으로 은행·증권 등 금융권을 대상으로 디지털 창구 시스템, 이미지 프로세싱 시스템, 비대면 본인확인 솔루션 등 SW 솔루션을 공급하고 관련 시스템 구축·유지보수 사업을 함께 영위한다. 매출은 최초 프로젝트 구축에 따른 시스템통합(SI) 매출과 이후 발생하는 유지보수·구독형 매출로 구성되는 구조를 갖고 있다. 2023년 KB증권 리포트는 회사에 대해 비대면 본인 확인 솔루션과 이미지 시스템의 경우 국내 1금융권 및 2금융권내 거의 독점적 점유율을 유지하고 있다고 평가했으며, 디지털 창구 시스템 부문에서도 국내 상위권 점유율을 기록해온 것으로 소개됐다. 핵심 고객은 은행·증권사 등 국내 주요 금융기관이며, 신분증 인식·서류 스캔·이미지 데이터화에 특화된 AI OCR·AI OSP 모듈이 기술 차별화 요소로 꼽힌다. 사업 특성상 대형 시스템통합업체나 범용 AI 벤더와 직접 경쟁하기보다는 금융권 특화 이미지·문서 처리 영역에서 좁고 깊은 시장 지위를 구축해온 것으로 파악된다. 한편 회사는 본업인 SW·IT서비스 사업과 별개로 인터넷전문은행 케이뱅크 지분을 보유하고 있어, 해당 금융자산의 평가·처분 손익이 실적에 함께 반영되는 특징을 갖는다.",
+  "en": "Inzisoft was founded in 2000, listed on KOSDAQ in 2010, and changed its name from Mobileleader to Inzisoft in 2022. The company supplies financial institutions, mainly banks and securities firms, with software solutions built on optical character recognition (OCR) and electronic-form technology, including digital branch systems, image-processing systems, and non-face-to-face identity verification solutions, alongside related system-build and maintenance services. Revenue is generated first through system-integration work for initial project builds, followed by recurring maintenance and subscription revenue in later years. A 2023 KB Securities report stated that the company maintains a near-monopoly domestic market share in non-face-to-face identity verification and image systems among both first-tier and second-tier financial institutions, and also noted a leading share in digital branch systems. Its core clients are major domestic banks and securities firms, and its AI OCR and AI OSP modules for ID recognition, document scanning, and image digitization are cited as key technical differentiators. Rather than competing head-on with large system integrators or general-purpose AI vendors, the company appears to have built a narrow but entrenched position in financial-sector image and document processing. Separately from its core software and IT-service business, Inzisoft also holds an equity stake in internet-only bank K bank, so gains and losses from the valuation or disposal of that financial asset flow through its reported results alongside core operations."
  },
  "earnings": {
-  "ko": "연간 실적 추이를 보면, 2022년 매출 235.6억 원·영업이익 48.6억 원(OPM 20.6%)으로 정점을 찍은 뒤 2024년 매출 188.9억 원·영업이익 10.6억 원(OPM 5.6%)으로 크게 수축했다. 2024년 수익성 급락은 SW솔루션 및 IT서비스 부문 매출 감소와 비용 부담이 복합적으로 작용한 결과였다. 2025년에는 매출 189.2억 원으로 전년과 유사한 수준을 유지하면서도 영업이익이 23.4억 원(OPM 12.4%)으로 두 배 이상 회복됐으며, 비용 절감과 매출 믹스 개선이 마진 반등을 주도했다. 그러나 2025년 지배주주 귀속 순이익은 213.9억 원으로 영업이익의 약 9배에 달했는데, 이는 케이뱅크 등 금융자산의 공정가치 평가이익이 대규모로 반영된 데 기인한다. 분기별로는 2025년 4분기 매출 57.8억 원·영업이익 11.5억 원으로 계절적 연간 최강 분기가 확인됐고, 2026년 1분기는 매출 46.1억 원(전년 동기 42.6억 원 대비 +8.1%), 영업이익 8.6억 원(전년 동기 3.4억 원 대비 +152%)을 기록해 코어 사업 모멘텀 강화가 이어지고 있음을 보여 준다. 2026년 1분기 순이익 역시 101.7억 원으로 영업이익 대비 현저히 컸는데, 이 또한 금융자산 평가이익이 주를 이룬 것으로 파악된다. 영업현금흐름은 2025년 61.2억 원으로 2024년 44.5억 원 대비 약 37.6% 개선돼 기저 현금 창출력 회복을 뒷받침하며, 2025년 말 부채비율 19.4%로 재무 건전성은 안정적으로 유지되고 있다.",
-  "en": "On an annual basis, revenue and operating profitability peaked in 2022 (revenue KRW 23.56 billion, operating profit KRW 4.86 billion, OPM 20.6%), before compressing sharply to revenue KRW 18.89 billion and operating profit KRW 1.06 billion (OPM 5.6%) in 2024, driven by weakness in SW-solution and IT-service sales alongside rising cost pressures. In 2025, revenue was nearly flat at KRW 18.92 billion, but operating profit rebounded to KRW 2.34 billion (OPM 12.4%), as cost restructuring and a more favorable revenue mix drove margin recovery. Reported net income attributable to controlling shareholders surged to KRW 21.39 billion—roughly nine times operating profit—due to large fair-value gains on financial assets, principally the K-Bank stake. Quarterly momentum has been encouraging: 2025 Q4 delivered revenue of KRW 5.78 billion and operating profit of KRW 1.15 billion, confirming the seasonal year-end pattern, while 2026 Q1 posted revenue of KRW 4.61 billion (+8.1% YoY from KRW 4.26 billion) and operating profit of KRW 858 million (+152% YoY from KRW 340 million), demonstrating continued traction in core operations. Net income in 2026 Q1 reached KRW 10.17 billion—again far exceeding operating profit—reflecting continued financial asset fair-value recognition. Operating cash flow improved to KRW 6.12 billion in 2025 from KRW 4.45 billion in 2024 (+37.6%), corroborating the underlying cash-generation recovery, while the debt ratio of 19.4% at end-2025 confirms a conservatively leveraged balance sheet."
+  "ko": "연결 매출액은 2022년 235.6억원, 2023년 242.1억원으로 정점을 찍은 뒤 2024년 188.9억원, 2025년 189.2억원으로 낮아진 수준에서 유지되고 있다. 영업이익은 2022년 48.6억원(영업이익률 20.6%), 2023년 38.1억원(15.7%)에서 2024년 10.6억원(5.6%)까지 크게 낮아졌다가 2025년 23.4억원(12.4%)으로 회복됐다. 지배주주 순이익은 이와 다른 궤적을 그렸는데, 2022년 37.3억원, 2023년 53.5억원, 2024년 26.2억원에서 2025년에는 213.9억원으로 급증했다. FnGuide는 2025년 3분기 누적 실적에 대해 금융자산의 공정가치평가 반영으로 당기순이익이 증가했으나, SW솔루션 및 IT서비스 부문 매출 감소로 전체 매출이 하락했다고 설명했다. 분기별로 보면 2025년 2분기 지배주주 순이익 63.0억원, 3분기 48.5억원, 4분기 85.8억원으로 매 분기 영업이익(6.6억원, 1.9억원, 11.5억원)을 크게 웃돌았고, 이 흐름은 2026년 들어 1분기 101.7억원, 2분기 474.7억원으로 한층 확대됐다. 특히 2026년 2분기는 매출 45.2억원, 영업이익 12.2억원 수준에서 지배주주 순이익만 474.7억원에 달해, 본업 영업활동과 순이익 규모 사이의 괴리가 가장 크게 나타났다. 이 같은 순이익 확대는 케이뱅크 지분 등 보유 금융자산의 공정가치 변동 및 처분손익이 반영된 결과로 해석되며, 매 분기 반복되는 영업손익이라기보다는 비영업적 성격이 짙은 항목으로 볼 필요가 있다. 이 기간 지배주주 자기자본도 2024년 말 523.5억원에서 2025년 말 695.3억원으로 늘어나며 순이익 증가분이 자본에 누적된 모습이 확인된다.",
+  "en": "Consolidated revenue peaked at KRW 23.56 billion in 2022 and KRW 24.21 billion in 2023 before stepping down to KRW 18.89 billion in 2024 and KRW 18.92 billion in 2025, where it has since held steady. Operating profit fell sharply from KRW 4.86 billion (a 20.6% margin) in 2022 and KRW 3.81 billion (15.7%) in 2023 to just KRW 1.06 billion (5.6%) in 2024, before recovering to KRW 2.34 billion (12.4%) in 2025. Net income attributable to owners followed a different path, moving from KRW 3.73 billion in 2022 and KRW 5.35 billion in 2023 to KRW 2.62 billion in 2024 and then surging to KRW 21.39 billion in 2025. Regarding the nine-month period through Q3 2025, FnGuide noted that net income rose on the fair-value remeasurement of financial assets, even as total revenue declined on lower software-solution and IT-service sales. On a quarterly basis, owners' net income came to KRW 6.30 billion in Q2 2025, KRW 4.85 billion in Q3 2025, and KRW 8.58 billion in Q4 2025, each far above the corresponding operating profit of KRW 0.66 billion, KRW 0.19 billion, and KRW 1.15 billion, and this gap widened further into 2026, reaching KRW 10.17 billion in Q1 and KRW 47.47 billion in Q2. Q2 2026 in particular saw revenue of just KRW 4.52 billion and operating profit of KRW 1.22 billion alongside owners' net income of KRW 47.47 billion, the widest divergence between core operations and bottom-line profit in the period reviewed. This pattern appears tied to fair-value changes and disposal gains related to the company's financial assets, including its K bank stake, and should be viewed as largely non-operating rather than a recurring feature of results. Owners' equity grew accordingly, from KRW 52.35 billion at end-2024 to KRW 69.53 billion at end-2025, reflecting accumulation of that net-income gain into capital."
  },
  "industry": {
-  "ko": "글로벌 지능형 문서처리(IDP) 시장은 2026년 141.6억 달러에서 2034년 910.2억 달러로 연평균 26.2% 성장이 전망되며, 금융·회계 부문이 전체 시장의 약 45%를 점유할 것으로 예측된다. 국내 금융 AI 시장은 한국신용정보원 보고서 기준 2026년까지 연평균 38.2% 고성장하며 3.2조 원 규모를 형성할 것으로 전망됐다. OCR·AI 기반 문서 자동화 기술은 은행권의 비대면 고객 온보딩, KYC(고객 확인), AML(자금세탁 방지) 프로세스 자동화 수요와 맞물려 채택이 확대되고 있다. 인지소프트는 국내 금융권 내 오랜 레퍼런스를 바탕으로 이 시장에서 선도적 위치를 점하고 있으나, 글로벌·국내 빅테크의 클라우드 AI OCR 서비스 출시로 경쟁 강도가 점진적으로 높아지는 추세다. 국내 패키지SW와 IT서비스 시장에서 금융 부문이 최대 비중을 차지하고 있어, 금융권 IT 투자 사이클 변동이 인지소프트 실적에 직접 영향을 미친다. 금융당국의 디지털 전환 가이드라인 강화와 인터넷·챌린저 뱅크 확산은 신규 고객군 창출 측면에서 잠재적 수요 확대 요인으로 작용할 수 있다.",
-  "en": "The global Intelligent Document Processing (IDP) market is projected to expand from USD 14.16 billion in 2026 to USD 91.02 billion by 2034 at a CAGR of 26.2%, with the finance and accounting segment expected to account for approximately 45% of global demand. Korea's financial AI market was forecast by the Korea Credit Information Services to grow at a 38.2% CAGR toward KRW 3.2 trillion by 2026. Demand for AI-OCR and document automation is being amplified by banks' accelerating shift toward contactless customer onboarding, KYC, and AML process automation. InziSoft's deep reference base within Korea's financial sector positions it well to capture this expansion, but rising competition from global cloud-native AI OCR services and domestic big-tech entrants is progressively intensifying the competitive environment. The company's revenues are closely tied to the domestic financial sector's IT investment cycle, meaning any freeze in bank capex can have an outsized impact on project-based revenue. On the positive side, regulatory mandates for digital transformation and the continued growth of internet banks represent incremental demand catalysts."
+  "ko": "금융권 OCR·전자서식·비대면 인증 솔루션 시장은 은행·증권사의 디지털 전환(DX) 예산에 연동되는 특성을 가져, 금융권 IT 투자 사이클에 따라 수주 물량이 좌우되는 편이다. 신분증 진위 확인, 비대면 실명확인, 문서 자동화 등은 인터넷은행·핀테크 확산과 함께 지속적으로 수요가 발생하는 영역이나, 이미 상당수 1금융권에 구축이 완료돼 신규 대형 프로젝트보다는 유지보수·고도화·구독형 매출 비중이 커지는 성숙기 국면에 가까워지고 있다는 평가도 있다. 경쟁구도 측면에서는 이미지 처리·비대면 인증에 특화된 인지소프트 외에 범용 AI·RPA 솔루션 업체, 대형 SI업체들도 금융권 자동화 사업에 참여하고 있어 중장기적으로 경쟁 압력이 존재한다. 회사는 과거 보도에서 신분증 인식과 이미지 프로세싱 분야의 국내 금융권 내 우위를 지속해온 것으로 평가받았으나, 이 같은 지위가 매출 성장으로 이어지기보다는 최근 몇 년간 매출 정체 국면에 머물러 있다는 점도 함께 봐야 한다. 아울러 인지소프트는 본업과 별개로 인터넷전문은행 케이뱅크 지분을 보유한 재무적투자자(FI) 성격도 갖고 있어, 인터넷은행 업황과 상장 후 주가 흐름이 회사 실적에 직접 영향을 미치는 특이한 구조를 갖는다. 케이뱅크는 2026년 3월 코스피 상장 이후 사업 확장(사장님 대출 비중 확대 등)과 업비트 제휴 재계약 등 굵직한 이벤트를 앞두고 있어, 관련 뉴스 흐름이 인지소프트의 지분가치 평가에도 함께 영향을 줄 수 있는 구조다.",
+  "en": "The market for OCR, electronic-form, and non-face-to-face verification solutions in the financial sector tends to move in line with banks' and brokerages' digital-transformation IT budgets, so order volume is closely tied to the financial-sector IT investment cycle. Demand for ID verification, non-face-to-face account opening, and document automation continues to grow alongside the spread of internet banks and fintech, but with most major banks already having such systems in place, the market appears to be maturing toward a mix weighted more toward maintenance, upgrades, and subscription revenue rather than large new builds. On the competitive front, alongside Inzisoft's specialization in image processing and non-face-to-face verification, general-purpose AI and RPA vendors as well as large system integrators have also entered financial-sector automation, creating ongoing competitive pressure over the medium term. Past coverage credited the company with sustained domestic leadership in ID recognition and image processing within the financial sector, but that position has coincided with several years of stagnant revenue rather than renewed growth. Beyond its core business, Inzisoft also functions as a financial investor holding a stake in internet-only bank K bank, giving it an unusual profit structure in which internet-banking sector conditions and post-listing share-price movements feed directly into its own results. Since listing on the KOSPI in March 2026, K bank faces notable upcoming events, including expansion of its small-business lending mix and renegotiation of its partnership with Upbit, whose news flow could also affect how Inzisoft's stake is valued."
  },
  "outlook": {
-  "ko": "2026년 1분기 매출과 영업이익이 나란히 전년 동기를 크게 웃돌며 코어 사업 회복 궤도가 확인됐다. 구독형·유지보수 서비스 매출 비중 확대 전략은 분기 실적 변동성을 줄이고 예측 가능한 매출 기반을 강화하는 방향으로 작용할 것으로 보인다. 신분증 사본 판별 솔루션 수주 확대와 하반기 금융권 집중 영업이 2026년 하반기 실적 견인 역할을 할 것으로 기대되며, 4분기 실적 집중의 계절성이 2026년에도 반복될 가능성이 크다. 비영업 이익 측면에서는 케이뱅크가 코스피 상장 이후 지분 공정가치의 시장 연동성이 높아진 상황으로, 케이뱅크 주가 방향에 따라 인지소프트의 순이익 변동성이 지속될 전망이다. 케이뱅크는 2025년 NIM이 1.40%로 3년 연속 하락하는 등 수익성 압박이 지속되고 있어, 관련 지분 가치의 방향성에 대한 모니터링이 필요하다. AI·클라우드·로봇 업무자동화(RPA)를 연계한 신규 솔루션 라인업 확장은 중장기 성장의 잠재적 모멘텀이 될 수 있으며, 기존 금융기관 관계망이 유통 채널로서 유리하게 작용할 수 있다.",
-  "en": "The 2026 Q1 results—with both revenue and operating profit significantly exceeding year-earlier levels—confirm that the core software business is on a recovery trajectory. The strategic push toward subscription and maintenance-based revenue should progressively reduce quarterly earnings volatility and build a more predictable revenue foundation. New ID forgery-detection solution contract wins and intensified H2 financial-sector sales activity are expected to contribute to stronger second-half performance, and the historical Q4-heavy seasonal pattern is likely to repeat in 2026. On the non-operating side, K-Bank's KOSPI listing means that changes in K-Bank's share price now directly and transparently feed into InziSoft's reported fair-value income; K-Bank's NIM declined to 1.40% in 2025—a third consecutive year of contraction—introducing uncertainty into this earnings stream. The expansion of an integrated AI, cloud, and robotic process automation (RPA) solution suite represents a medium-term growth optionality lever, with existing financial-institution relationships offering a built-in distribution advantage."
+  "ko": "회사는 과거 IR 자료를 통해 구독형·유지보수 매출 비중 확대를 통한 실적 안정성 강화를 전략 방향으로 제시해왔고, 신분증 사본판별 등 신규 솔루션을 통한 금융권 대상 영업 강화도 사업 확대 방향으로 언급된 바 있다. 다만 이 같은 방향성이 실제 매출 성장으로 뚜렷하게 이어졌는지는 최근 몇 년간의 매출 정체 흐름을 볼 때 계속 확인이 필요한 부분이다. 배당과 관련해서는 회사가 2025년 8월 중간배당을 결정·공시한 사례가 있어, 안정적 현금흐름을 바탕으로 한 배당 기조가 이어지고 있는 것으로 파악된다. 2024년 9월 한국IR협의회 관련 보도는 안정적인 현금흐름을 바탕으로 높은 배당성향을 보유한 점도 긍정적이라고 평가한 바 있다. 회사가 보유한 케이뱅크 지분의 향후 가치는 케이뱅크의 사업 성과, 특히 2026년 10월로 예정된 업비트와의 제휴 계약 재협상 결과와 상장 이후 오버행(대량 매물 출회) 리스크에 영향을 받을 것으로 보인다. 인지소프트 자체의 신규 수주·증설 계획에 대해서는 이번 조사 시점 기준으로 구체적인 추가 공시나 가이던스가 확인되지 않았다.",
+  "en": "The company has previously outlined, through past IR materials, a strategy of strengthening earnings stability by expanding the share of subscription and maintenance revenue, and has also referenced financial-sector sales expansion through new solutions such as ID-copy authentication tools. Whether this direction has clearly translated into revenue growth remains something to keep verifying, given the stagnant revenue trend of recent years. On dividends, the company disclosed an interim dividend decision in August 2025, suggesting a continuation of its dividend policy supported by stable cash flow. A September 2024 report citing the Korea IR Council stated that the company's stable cash flow and high payout ratio were also positive factors. The future value of Inzisoft's K bank stake is likely to depend on K bank's own business performance, particularly the outcome of the Upbit partnership renegotiation scheduled for October 2026, and on overhang risk from post-listing share supply. As of this review, no additional specific disclosures or guidance regarding new orders or capacity expansion at Inzisoft itself have been confirmed."
  },
  "valuation_comment": {
-  "ko": "현 주가는 주당순자산(BPS 30,689원) 대비 의미 있는 할인 구간에서 거래 중이며, 시장이 보고 자산 가치를 온전히 인정하지 않고 있다는 점에서 케이뱅크 지분 처분 가능성 및 지속 가능 이익 수준에 대한 불확실성이 복합적으로 반영된 결과로 볼 수 있다. 코어 SW 사업의 영업이익이 보고 순이익의 일부에 불과한 구조상, 전통적 수익배수(PER) 방식의 단순 적용은 왜곡을 초래할 수 있어 영업이익 기준 수익성과 보유 금융자산 가치를 분리 평가하는 접근이 유효하다. DPS 1,126원은 코스닥 IT 업종 평균 배당수익률을 큰 폭으로 상회하며, 견조한 영업현금흐름에 의해 뒷받침되는 주주환원 요소다. 한편 자기자본이 금융자산 공정가치 평가이익 누적으로 크게 확대된 만큼 BPS 자체의 실질적 안정성도 금융자산 시가 변동에 노출되어 있다는 점에 유의가 필요하다. 케이뱅크 지분의 실제 처분 시점과 가격, 그리고 코어 SW 사업의 매출 회복 속도가 향후 자산 가치 재평가의 핵심 변수가 될 것이다.",
-  "en": "The current share price trades at a meaningful discount to the stated book value per share (BPS KRW 30,689), suggesting the market is not fully crediting the balance sheet at face value—likely reflecting combined uncertainty around the sustainability of financial asset fair-value gains and the flat trajectory of core software revenues. Because operating profit constitutes only a fraction of reported net income, straightforward application of traditional earnings-multiple analysis risks distortion; a more informative approach separately appraises the recurring operating profit contribution and the embedded value of the K-Bank stake. DPS of KRW 1,126 supports a dividend yield that substantially exceeds the KOSDAQ IT sector average, underpinned by solid operating cash flow generation. Importantly, because equity has grown significantly through accumulated fair-value revaluation gains, BPS itself is exposed to movements in the K-Bank share price—meaning the apparent discount to book is partly contingent on sustained financial asset values. The timing and realized price of any K-Bank stake disposal, alongside the pace of core SW revenue recovery, are the primary variables governing any forward re-rating of asset value."
+  "ko": "최근 발표된 분기 실적에는 금융자산 관련 평가·처분이익이 큰 비중으로 반영돼 있어, 이를 기준으로 산출한 주가수익비율은 회사의 통상적인 영업 실적만으로는 설명하기 어려운 수준까지 낮아져 있다. 즉 최근 네 개 분기 순이익이 일회성 요인으로 부풀려진 상태이기 때문에, 이 수치를 과거 10~20배 수준에서 형성됐던 거래 밴드와 단순 비교하기는 어렵다. 주가와 주당순자산의 관계로 보면, 현재 주가는 주당순자산 대비 할인된 구간에서 거래되고 있는 것으로 파악된다. 배당 측면에서는 회사가 안정적 현금흐름을 근거로 매년 배당을 지급해온 이력이 있으나, 배당수익률은 주가에 따라 계속 달라지는 값이므로 특정 시점의 절대 수준을 단정하기보다는 배당 정책의 일관성 자체에 주목할 필요가 있다. 결국 밸류에이션을 해석할 때는 본업(SW솔루션·IT서비스)의 영업이익률 회복 추이와, 케이뱅크 지분을 포함한 금융자산의 평가가치 변동을 구분해서 볼 필요가 있다.",
+  "en": "Recent quarterly results include a substantial contribution from gains related to financial-asset valuation and disposal, so a price-to-earnings ratio calculated on that basis falls to a level that is difficult to explain through ordinary operating performance alone. In other words, because net income over the most recent four quarters has been inflated by non-recurring items, comparing that figure directly with the roughly 10-to-20-times band in which the stock has historically traded is not straightforward. Looking at the relationship between share price and net assets per share, the stock currently appears to trade at a discount to book value. On the dividend side, the company has a history of paying annual dividends supported by stable cash flow, but because dividend yield is a function of the ever-changing share price, it is more useful to focus on the consistency of the payout policy itself rather than any absolute yield level at a given moment. Ultimately, assessing valuation here requires separating the trend in core software and IT-service operating margin from swings in the fair value of financial assets, including the K bank stake."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI OCR 금융 시장 독보적 1위 해자",
-    "en": "Unchallenged Moat as AI OCR Leader in Korean Financial Sector"
+    "ko": "견조한 재무 건전성",
+    "en": "Solid Balance Sheet"
    },
    "body": {
-    "ko": "인지소프트는 AI OCR 및 이미지 프로세싱(BPR) 분야에서 국내 금융권 내 독보적 시장점유율을 확보하고 있다고 다수의 증권사 리서치가 평가한다. 20년 이상 축적된 금융 레거시 시스템 연동 레퍼런스는 신규 진입자가 단기에 복제하기 어려운 진입장벽이며, 구독·유지보수 확대로 고객 전환 비용도 높아지는 추세다. 글로벌 IDP 시장의 연 26%대 고성장과 국내 금융 AI 투자 확대는 핵심 고객 기반에 직접적인 수요 순풍으로 작용한다.",
-    "en": "Multiple brokerage research reports characterize InziSoft as holding a dominant—in some evaluations, unrivaled—market share in AI OCR and BPR for Korea's financial sector. More than two decades of legacy-system integration depth makes this position difficult for new entrants to replicate on a short timescale, and the growing maintenance/subscription mix is progressively raising customer switching costs. Structural tailwinds from the global IDP market expanding at ~26% CAGR and rising domestic financial AI investment levels translate directly into demand growth for InziSoft's core customer base."
+    "ko": "2025년 기준 부채비율은 19.4%로 낮은 수준을 유지하고 있으며, 최근 4개 연도 모두 20%대 초반을 넘지 않는 안정적인 재무구조를 이어가고 있다. 영업활동현금흐름도 2022~2025년 매년 40억원 이상을 기록하며 꾸준한 현금창출력을 보여줬다. 이 같은 건전성은 외부 자금조달 없이도 사업을 지속할 수 있는 기반이 된다.",
+    "en": "The debt ratio stood at a low 19.4% in 2025, and the company has kept its ratio in the low-to-mid 20% range or below throughout the past four years. Operating cash flow has also exceeded KRW 4 billion in every year from 2022 to 2025, showing consistent cash generation. This soundness provides a foundation for continuing operations without relying on external financing."
    }
   },
   {
    "title": {
-    "ko": "영업이익 회복 가속 및 운영 레버리지",
-    "en": "Accelerating Operating Profit Recovery and Operating Leverage"
+    "ko": "영업이익률 회복 흐름",
+    "en": "Operating Margin Recovery"
    },
    "body": {
-    "ko": "2025년 영업이익률은 12.4%로 전년(5.6%) 대비 두 배 이상 개선됐고, 2026년 1분기에는 영업이익이 전년 동기 대비 152% 급증하며 회복 모멘텀이 가속되고 있다. 비용 절감과 매출 믹스 개선이 마진 레버리지로 작용하고 있으며, 매출이 연 200억 원 수준을 회복할 경우 영업이익의 비선형적 성장 가능성이 열린다. 2025년 영업현금흐름도 2024년 대비 37.6% 개선돼 현금 창출력의 구조적 회복을 뒷받침한다.",
-    "en": "The operating margin rebounded from 5.6% in 2024 to 12.4% in 2025, and 2026 Q1 operating profit surged 152% YoY, confirming that the recovery is not only sustaining but accelerating. Cost restructuring and a more favorable revenue mix are generating significant operating leverage, and a return of annual revenues toward the KRW 20 billion level could unlock non-linear operating income expansion. Operating cash flow improved 37.6% YoY in 2025, corroborating the structural nature of the cash-generation recovery."
+    "ko": "영업이익률은 2024년 5.6%까지 낮아졌다가 2025년 12.4%로 회복됐고, 2026년 1분기(약 18.6%)와 2분기(약 26.9%)에도 개선 흐름이 이어졌다. 이는 매출 회복이 뚜렷하지 않은 가운데서도 비용 효율화를 통해 수익성을 관리하고 있음을 보여준다. 다만 매출 자체의 성장 없이는 이 같은 개선이 지속되기 어려울 수 있다는 점도 함께 고려해야 한다.",
+    "en": "Operating margin fell to 5.6% in 2024 before recovering to 12.4% in 2025, and the improvement continued into 2026 with margins of roughly 18.6% in Q1 and 26.9% in Q2. This suggests the company has managed profitability through cost efficiency even without a clear revenue recovery. However, sustaining this improvement without underlying revenue growth may prove difficult over time."
    }
   },
   {
    "title": {
-    "ko": "순자산 할인 + 케이뱅크 지분 내재 가치 + 고배당",
-    "en": "Sub-Book Valuation, Embedded K-Bank Asset Value, and High Dividend"
+    "ko": "금융자산(케이뱅크 지분 등) 가치",
+    "en": "Financial Asset Holdings (K bank Stake)"
    },
    "body": {
-    "ko": "주가가 BPS 대비 유의미한 할인 구간에서 거래되고 있어, 케이뱅크 지분 등 금융자산의 시장 가치가 충분히 반영되지 않았다는 시각이 존재한다. 케이뱅크 상장 완료 후 지분 가치의 투명성이 높아졌으며, 향후 지분 처분 시 추가 현금 유입과 특별 배당 가능성도 내재되어 있다. DPS 1,126원의 높은 배당 매력은 소득 지향 투자자들에게 하방 지지력으로도 작용한다.",
-    "en": "The share price trading at a meaningful discount to BPS suggests that the market may not be fully pricing the fair value of K-Bank and other financial assets held on the balance sheet. K-Bank's KOSPI listing has elevated the transparency and measurability of this embedded stake, and a future partial or full disposal could generate incremental cash proceeds with potential for a special dividend distribution. The DPS of KRW 1,126 provides tangible income support and represents a meaningful downside cushion for income-oriented investors."
+    "ko": "회사는 인터넷전문은행 케이뱅크 지분을 보유하고 있으며, 케이뱅크는 2026년 3월 코스피에 상장해 공모금액 4,980억원, 상장 후 시가총액 약 3조 3,673억원을 기록했다. 해당 지분의 공정가치 변동은 최근 분기 순이익 급증의 주요 배경으로 파악되며, 2025년 이후 자기자본이 크게 늘어난 배경이기도 하다. 다만 이는 케이뱅크 주가 흐름에 연동되는 만큼 방향이 바뀔 경우 반대의 효과도 낼 수 있는 양면적 요인이다.",
+    "en": "The company holds an equity stake in internet-only bank K bank, which listed on the KOSPI in March 2026 with total proceeds of KRW 498 billion and a post-listing market capitalization of about KRW 3.367 trillion. Fair-value changes in that stake appear to be the main driver behind the recent surge in quarterly net income and the sharp increase in owners' equity since 2025. Because this is tied to K bank's share-price movements, however, it is a two-sided factor that could work in the opposite direction if the trend reverses."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 성장 정체와 코어 사업 구조적 한계",
-    "en": "Revenue Stagnation and Core Business Structural Constraints"
+    "ko": "본업 매출 정체",
+    "en": "Core Revenue Stagnation"
    },
    "body": {
-    "ko": "매출이 2022~23년 연 240억 원 수준에서 2024~25년 약 189억 원으로 약 22% 감소한 후 정체 중이며, 뚜렷한 반등 촉매가 아직 확인되지 않는다. 국내 금융권이라는 단일 업종 집중도가 높아 금융기관 IT 예산 사이클에 따른 수주 공백 리스크가 상존한다. 글로벌 클라우드 기반 AI OCR 서비스의 보급 확대가 중장기적으로 가격 경쟁 압력을 심화시킬 수 있다.",
-    "en": "Revenue has contracted roughly 22% from the 2022–23 peak and has plateaued around KRW 19 billion, with no confirmed catalyst for a significant top-line inflection visible yet. High concentration in a single industry—Korean financial services—creates sustained vulnerability to cyclical swings in bank IT capital expenditure budgets. The broader diffusion of cloud-native AI OCR services from global providers may exert incremental pricing pressure over the medium term."
+    "ko": "연결 매출액은 2023년 242억원에서 2024~2025년 189억원 안팎으로 낮아진 뒤 답보 상태에 머물러 있다. FnGuide에 따르면 2025년 3분기 누적 매출 감소는 SW솔루션 및 IT서비스 부문 매출 감소가 주된 원인으로 지목됐다. 신규 대형 수주 없이는 매출 성장 모멘텀을 회복하기 어려운 구조로 보인다.",
+    "en": "Consolidated revenue fell from KRW 24.2 billion in 2023 to roughly KRW 18.9 billion in 2024 and 2025, and has remained stagnant since. According to FnGuide, the revenue decline through the first nine months of 2025 was mainly attributed to lower software-solution and IT-service sales. Without new large-scale contracts, the company appears to face difficulty regaining revenue growth momentum."
    }
   },
   {
    "title": {
-    "ko": "이익 질 우려: 금융자산 평가이익 의존도",
-    "en": "Earnings Quality Concern: Dependence on Financial Asset Revaluation Gains"
+    "ko": "순이익의 낮은 반복성",
+    "en": "Low Recurring Quality of Net Income"
    },
    "body": {
-    "ko": "2025년 순이익 213.9억 원 중 영업이익은 23.4억 원에 불과하며, 2026년 1분기에도 동일한 구조가 반복됐다. 금융자산 공정가치 평가이익은 시장가격에 연동되어 언제든 역전될 수 있는 변동성이 높은 항목이다. 케이뱅크 자체도 2025년 순이익이 전년 대비 12.1% 감소하는 등 수익성 부진이 지속되면 지분 가치에 하방 압력이 가해질 수 있다.",
-    "en": "Of the KRW 21.39 billion net income reported in 2025, operating profit accounted for only KRW 2.34 billion; the same structural pattern recurred in 2026 Q1. Fair-value gains on financial assets are market-price sensitive and can reverse sharply in adverse conditions. K-Bank itself reported a 12.1% decline in 2025 net income, and continued profitability headwinds at K-Bank could exert downward pressure on the associated asset valuation flowing through InziSoft's financials."
+    "ko": "2025~2026년 순이익 급증분의 상당 부분은 금융자산 평가·처분 관련 비영업 손익에서 발생한 것으로 파악되며, 2026년 2분기의 경우 영업이익(12.2억원) 대비 순이익(474.7억원)의 격차가 특히 크다. 이런 이익 구조는 매 분기 반복되는 실적으로 보기 어려워, 향후 금융자산 가치가 안정되거나 축소될 경우 순이익 레벨이 다시 낮아질 가능성이 있다. 영업 실적만 놓고 보면 여전히 매출 정체와 상대적으로 낮은 마진 구간에 머물러 있다.",
+    "en": "A large share of the net-income surge in 2025-2026 appears to stem from non-operating gains tied to financial-asset valuation and disposal, and the gap between operating profit (KRW 1.22 billion) and net income (KRW 47.47 billion) was especially wide in Q2 2026. Such an earnings structure is difficult to view as recurring, meaning net income could decline again if the value of those financial assets stabilizes or shrinks. On operating performance alone, the company still sits in a zone of stagnant revenue and comparatively modest margins."
    }
   },
   {
    "title": {
-    "ko": "소형주 유동성 제약 및 정보 비대칭",
-    "en": "Micro-Cap Liquidity Constraints and Information Asymmetry"
+    "ko": "케이뱅크 지분가치의 하락 리스크",
+    "en": "Downside Risk in K bank Stake Value"
    },
    "body": {
-    "ko": "총발행주식 약 328만 주, 시가총액 600억 원대의 소형주로서 일평균 거래량이 제한적이어 대형 포지션 진입·청산 시 가격 영향이 크게 발생할 수 있다. 기관·외국인 커버리지가 협소해 가격 발견 기능이 약하고 정보 접근성이 제한적이다. 케이뱅크 락업 해제 후 지분 처분 규모와 방식에 따라 단기 주가 변동성이 증폭될 가능성도 배제할 수 없다.",
-    "en": "With total shares outstanding of approximately 3.28 million and a market capitalization in the KRW 60 billion range, InziSoft is a micro-cap stock where large position entries or exits can have outsized price impact. Institutional and foreign investor coverage is limited, which may impair price discovery and restrict information accessibility. Depending on the scale and method of any K-Bank stake disposal after lock-up expiry, short-term share price volatility could be amplified."
+    "ko": "케이뱅크는 2026년 3월 상장 후 장중 9,880원까지 올랐던 주가가 이후 중동 리스크 확산과 오버행 우려 속에 하락세를 이어가며 4월 말 기준 6,220원대로 내려앉았다. 상장 후 유통 가능 물량이 단계적으로 늘어나는 구조여서 추가적인 물량 출회 시 주가 변동성이 커질 수 있다. 인지소프트가 보유한 지분의 평가가치도 이 같은 케이뱅크 주가 흐름에 그대로 노출돼 있다.",
+    "en": "After K bank's shares touched an intraday high of KRW 9,880 on its March 2026 listing day, the stock subsequently declined amid Middle East risk and overhang concerns, falling to around KRW 6,220 by late April. Because tradable share supply increases in stages after listing, additional lockup releases could add further volatility. The valuation of Inzisoft's stake remains directly exposed to these movements in K bank's share price."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "케이뱅크 주가 변동 리스크",
-    "en": "K-Bank Share Price Volatility Risk"
+    "ko": "비영업 손익 의존 리스크",
+    "en": "Reliance on Non-Operating Gains"
    },
    "body": {
-    "ko": "인지소프트는 상장된 케이뱅크 지분을 공정가치로 측정하고 있어, 케이뱅크 주가 변동이 인지소프트의 순이익과 자기자본에 직접 영향을 미친다. 케이뱅크의 NIM(순이자마진)이 2023년 2.35%에서 2025년 1.40%로 3년 연속 하락하는 등 핵심 수익성 지표가 후퇴하고 있으며, 이 추세가 지속될 경우 지분 가치에 하방 압력이 발생할 수 있다. 케이뱅크 IPO 락업 종료 후 대주주 매각이 발생할 경우 케이뱅크 주가 하락이 인지소프트 순자산 감소로 연쇄적으로 이어질 수 있다.",
-    "en": "InziSoft measures its K-Bank stake at fair value through profit or loss; movements in K-Bank's share price therefore flow directly into InziSoft's reported net income and equity. K-Bank's NIM contracted from 2.35% in 2023 to 1.40% in 2025—a third consecutive year of decline—and continued profitability headwinds could depress the stake's market value. Any major share disposal by K-Bank's primary shareholders following post-IPO lock-up expiry could depress K-Bank's share price and in turn reduce InziSoft's net asset value."
+    "ko": "최근 순이익 증가의 핵심 동력이 금융자산 공정가치 평가에 있다는 점은 실적의 질적 측면에서 리스크 요인이다. 관련 자산 가치가 하락하면 순이익도 동반 축소될 수 있으며, 이는 배당 여력이나 자기자본 규모에도 영향을 줄 수 있다.",
+    "en": "The fact that the recent surge in net income is primarily driven by financial-asset fair-value gains is a risk factor from an earnings-quality perspective. If the value of those assets declines, net income could contract accordingly, which could also affect dividend capacity and the size of shareholders' equity."
    }
   },
   {
    "cat": {
-    "ko": "금융권 IT 투자 사이클 리스크",
-    "en": "Financial Sector IT Investment Cycle Risk"
+    "ko": "본업 성장성 정체 리스크",
+    "en": "Core Business Growth Stagnation"
    },
    "body": {
-    "ko": "인지소프트의 코어 SW 매출은 국내 금융기관의 IT 예산 집행에 높은 의존도를 보인다. 금리 환경 변화, 금융당국 규제 대응, 또는 금융기관 경영 환경 악화로 IT 투자가 둔화될 경우 프로젝트 수주와 매출에 직접적 압박이 가해진다. 2024년 매출이 전년 대비 약 22% 급감했던 사례가 이 사이클 리스크의 현실화 사례였다는 점에서 재발 가능성을 배제할 수 없다.",
-    "en": "Core software revenues are highly correlated with IT budget allocations at domestic financial institutions. A slowdown in bank IT spending—triggered by interest rate shifts, regulatory compliance demands, or deteriorating bank profitability—would directly compress project-based contract revenues and overall top-line performance. The ~22% revenue decline recorded in 2024 is a real-world example of this cyclical risk materializing, and the conditions for recurrence cannot be ruled out."
+    "ko": "매출액이 2023년 이후 뚜렷한 성장 없이 189억원 안팎에서 정체돼 있어, 금융권 IT 예산 축소나 경쟁 심화 시 추가적인 매출 하락 압력에 노출될 수 있다. 유지보수·구독형 매출 비중 확대가 실적 안정화에 기여할 수 있으나, 신규 대형 프로젝트 수주가 뒤따르지 않으면 저성장 기조가 장기화될 가능성이 있다.",
+    "en": "Revenue has stagnated around KRW 18.9 billion since 2023 without clear growth, leaving the company exposed to further downside if financial-sector IT budgets shrink or competition intensifies. Growing the share of maintenance and subscription revenue could help stabilize results, but a low-growth trend could persist if new large-scale project wins do not follow."
    }
   },
   {
    "cat": {
-    "ko": "AI 경쟁 심화 및 기술 대체 리스크",
-    "en": "Intensifying AI Competition and Technology Displacement Risk"
+    "ko": "소형주 유동성·집중도 리스크",
+    "en": "Small-Cap Liquidity and Concentration Risk"
    },
    "body": {
-    "ko": "생성형 AI 및 멀티모달 모델의 급격한 발전으로 클라우드 기반 AI OCR 서비스의 성능이 빠르게 향상되고 있다. 네이버·카카오 등 대형 플랫폼과 업스테이지 같은 AI 스타트업들이 금융권에 OCR 솔루션을 공급하기 시작하면서 경쟁 구도가 복잡해지고 있다. 인지소프트의 온프레미스 중심 솔루션이 금융권의 클라우드 전환 가속 흐름에 충분히 적응하지 못할 경우 장기적으로 시장점유율이 잠식될 위험이 있다.",
-    "en": "The rapid advancement of generative AI and multimodal models is continuously improving the capability of cloud-native AI OCR services. Domestic platform companies such as Naver and Kakao, alongside AI specialists like Upstage, have begun supplying OCR solutions directly to the financial sector, making the competitive landscape more complex. If InziSoft's predominantly on-premise solution architecture fails to keep pace with the accelerating cloud-migration trend in financial services, its market share could face gradual erosion over the longer term."
+    "ko": "시가총액이 약 0.1조원 수준의 소형주로, 거래량이 제한적일 경우 매매 시 가격 충격이 클 수 있다. 케이뱅크 지분이라는 단일 자산의 가치 변동이 회사 전체 순이익과 자기자본에 큰 영향을 미치는 구조여서, 자산 집중도에 따른 리스크도 함께 고려해야 한다.",
+    "en": "With a market capitalization of roughly KRW 100 billion, this is a small-cap stock where limited trading volume could lead to significant price impact on trades. Because the value of a single asset, the K bank stake, has such a large effect on the company's overall net income and equity, risks related to asset concentration should also be considered."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 9월 중",
+    "en": "September 2026"
    },
    "what": {
-    "ko": "2026년 2분기 영업(잠정)실적 발표 확인. 1분기에 이은 매출·영업이익 증가세 지속 여부가 핵심이며, 금융자산 공정가치 평가손익의 규모와 방향성도 함께 점검해 이익 구조 변화를 파악해야 한다.",
-    "en": "Monitor 2026 Q2 preliminary earnings to confirm whether the revenue and operating profit recovery momentum observed in Q1 is sustaining; simultaneously check the direction and magnitude of financial asset fair-value adjustments to gauge structural changes in earnings composition."
+    "ko": "케이뱅크 상장 6개월 시점의 보호예수 해제(약 20.68% 추가 물량)에 따른 유통물량 확대와 케이뱅크 주가 변동성이 인지소프트의 지분 평가가치에 미치는 영향을 확인할 필요가 있다.",
+    "en": "Watch how the six-month post-listing lockup release for K bank (roughly 20.68% of additional shares) and any resulting share-price volatility affect the valuation of Inzisoft's stake."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 수시",
-    "en": "H2 2026 (Rolling)"
+    "ko": "2026년 10월",
+    "en": "October 2026"
    },
    "what": {
-    "ko": "신분증 사본판별 솔루션 및 구독형 서비스 신규 수주 공시 여부 모니터링. 수주 규모와 신규 고객사 범위가 2027년 매출 가시성 제고의 핵심 선행 지표가 된다.",
-    "en": "Monitor DART disclosures for new contract wins in ID forgery-detection and subscription-based services; the contract size and breadth of new customer logos are the primary leading indicators for 2027 revenue visibility."
+    "ko": "케이뱅크와 업비트 간 제휴 계약 만료 및 재계약 결과는 케이뱅크 실적과 인지소프트 보유 지분가치에 직접 영향을 줄 수 있는 변수다.",
+    "en": "The expiration and renegotiation outcome of K bank's partnership agreement with Upbit is a variable that could directly affect K bank's performance and the value of Inzisoft's stake."
    }
   },
   {
    "when": {
-    "ko": "케이뱅크 락업 종료 전후",
-    "en": "Around K-Bank Lock-Up Expiry"
+    "ko": "2026년 11월경",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "케이뱅크 IPO 후 락업 종료 시점에 인지소프트의 케이뱅크 지분 처분 여부 및 처분 가격을 확인. 처분 시 인지소프트의 실현이익, 현금 유입 규모, 특별 배당 가능성을 점검한다.",
-    "en": "At and after K-Bank IPO lock-up expiry, track any DART disclosure from InziSoft regarding stake disposal, including the price and volume of shares sold; a disposal event would crystallize realized gains, generate cash inflows, and raise the possibility of a special dividend."
+    "ko": "2026년 3분기 실적 공시 시점에 영업이익률 개선의 지속 여부와 금융자산 관련 비영업 손익의 정상화 여부를 확인할 필요가 있다.",
+    "en": "At the Q3 2026 earnings disclosure, check whether the operating-margin improvement continues and whether non-operating gains tied to financial assets begin to normalize."
    }
   },
   {
    "when": {
-    "ko": "2026년 11~12월",
-    "en": "November–December 2026"
+    "ko": "2027년 2~3월경",
+    "en": "Around February-March 2027"
    },
    "what": {
-    "ko": "국내 주요 시중은행의 차기 연도 IT 예산 공고 및 발주 동향 모니터링. 금융권 IT 투자 규모가 인지소프트 2027년 수주 파이프라인을 결정하는 핵심 선행 지표다.",
-    "en": "Monitor major domestic bank IT budget announcements for the next fiscal year; the scale of financial-sector IT spending commitments is the primary leading indicator for InziSoft's 2027 project-order pipeline and revenue outlook."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월 말",
-    "en": "Late March 2027"
-   },
-   "what": {
-    "ko": "2026년 연간 사업보고서(DART 공시) 확인. 영업이익 기준 연간 수익성 추세, 부문별 매출 비중 변화, 케이뱅크 지분 잔고 및 공정가치 변동을 종합적으로 점검한다.",
-    "en": "Review the 2026 annual business report filed on DART for the full-year operating profit trend, any shift in segment revenue mix, and the residual K-Bank stake balance alongside its fair-value evolution—providing a comprehensive picture of both the core business and embedded asset trajectories."
+    "ko": "2026년 결산실적 및 배당 확정, 정기주주총회 공시를 통해 배당 정책의 일관성 유지 여부를 점검할 시점이다.",
+    "en": "The FY2026 full-year results, dividend confirmation, and annual general meeting disclosures will be a point to check whether the dividend policy remains consistent."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "인지소프트는 국내 금융권 AI OCR·전자서식 자동화 분야에서 확립된 선도적 시장 지위와 케이뱅크 지분이라는 비영업 자산 가치를 동시에 보유한 복합 자산 기업이다. 2026년 1분기 코어 영업이익이 전년 동기 대비 152% 성장하며 2024년 저점 이후 뚜렷한 회복 궤도를 확인했고, 구독·유지보수 매출 비중 확대로 예측 가능한 이익 기반도 점진적으로 강화되고 있다. 그러나 보고 순이익의 대부분이 케이뱅크 지분 공정가치 평가이익에 기인해 이익의 질에 대한 지속적 모니터링이 필요하며, 코어 매출이 과거 정점 대비 낮은 수준에서 정체 중이라는 점은 성장 재가속의 핵심 과제로 남아 있다. 주당순자산 대비 할인 구간 거래와 업종 평균을 크게 웃도는 배당수익률은 주주환원 측면의 매력 요소이지만, 소형주 유동성 제약과 케이뱅크 주가 연동 리스크를 함께 고려해야 한다. 중기적으로 글로벌 IDP 시장의 고성장과 국내 금융 AI 투자 확대가 수요 측 순풍으로 작용할 수 있으며, 신규 수주 확보 속도와 케이뱅크 지분의 실현 여부가 향후 기업 가치 재평가의 핵심 가늠자가 될 것이다.",
-   "en": "InziSoft is a dual-character company, combining an established leadership position in Korea's AI OCR and electronic-form automation market with meaningful non-operating asset value in the form of its K-Bank equity stake. The core business is demonstrably on a recovery path—2026 Q1 operating profit rising 152% YoY from a 2024 trough—and the growing contribution of subscription and maintenance contracts is progressively improving the predictability of the earnings base. However, the dominant contribution of financial asset fair-value gains to reported net income necessitates continuous earnings-quality scrutiny, and the plateau of core revenues well below the historical peak remains the central challenge for re-acceleration. The sub-book-value share price and an above-sector-average dividend yield represent tangible shareholder-return attractions, but these must be weighed against micro-cap liquidity constraints and the inherent sensitivity of reported financials to K-Bank's market valuation. Over the medium term, structural tailwinds from high-growth global IDP markets and expanding domestic financial AI investment could provide meaningful demand support; the pace of new contract wins and the eventual realization of the K-Bank stake will be the most consequential variables governing any forward reassessment of intrinsic value."
+   "ko": "인지소프트는 금융권 OCR·전자서식 기반 SW 솔루션이라는 본업과, 인터넷전문은행 케이뱅크 지분이라는 재무적 자산을 함께 보유한 독특한 손익 구조를 갖고 있다. 본업 매출은 2023년 242억원에서 2024~2025년 189억원 안팎으로 낮아진 뒤 정체돼 있는 반면, 영업이익률은 2024년 5.6%에서 2025년 12.4%로 회복되는 흐름을 보였다. 순이익은 이와 별개로 2025년 213.9억원, 2026년 1분기 101.7억원, 2분기 474.7억원까지 급격히 늘었는데, 이는 금융자산 공정가치 평가·처분과 관련된 비영업적 성격이 짙은 것으로 파악된다. 재무구조는 부채비율 19.4%(2025년)의 건전한 수준을 유지하고 있으며, 배당도 안정적으로 지급해온 이력이 있다. 다만 밸류에이션 지표를 해석할 때는 일회성 이익이 반영된 순이익 기준 수치와, 본업의 실제 영업 실적을 구분해서 볼 필요가 있다. 향후 케이뱅크의 주가 흐름과 업비트 제휴 재계약, 회사 본업의 매출 회복 여부가 함께 관찰해야 할 핵심 변수다. 이 보고서는 정보 제공을 목적으로 작성되었으며 특정 종목에 대한 매수·매도 의견을 포함하지 않는다.",
+   "en": "Inzisoft has an unusual profit structure combining its core OCR- and e-form-based financial-sector software business with a financial asset in the form of its stake in internet-only bank K bank. Core revenue fell from KRW 24.2 billion in 2023 to roughly KRW 18.9 billion in 2024-2025 and has since stagnated, while operating margin recovered from 5.6% in 2024 to 12.4% in 2025. Separately, net income surged to KRW 21.39 billion in 2025 and further to KRW 10.17 billion in Q1 2026 and KRW 47.47 billion in Q2 2026, a pattern that appears largely non-operating and tied to fair-value changes and disposals in financial assets. The balance sheet remains sound, with a debt ratio of 19.4% in 2025, and the company has a history of paying stable dividends. That said, interpreting valuation metrics requires distinguishing between net-income figures inflated by non-recurring gains and the company's actual core operating performance. Key variables to watch going forward include the trajectory of K bank's share price, the outcome of its Upbit partnership renegotiation, and whether Inzisoft's core revenue recovers. This report is prepared for informational purposes only and does not include a buy or sell recommendation on any security."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A100030",
   "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A100030&MenuYn=Y&NewMenuID=102",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A100030&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "https://valueline.co.kr/finance/mri/100030",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A100030",
   "https://m.thinkpool.com/item/100030",
-  "https://www.k5.co.kr/stock/100030/cash_dividend",
-  "https://www.google.com/finance/quote/100030:KOSDAQ?hl=en",
-  "https://m.irgo.co.kr/IR-ROOM/100030",
-  "https://www.investing.com/equities/mobileleader-co-ltd",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A100030&cID=&MenuYn=Y&ReportGB=&NewMenuID=102&stkGb=",
-  "https://www.k5.co.kr/stock/100030/official_notice_read?sfm_idx=510547",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A100030&cID=&MenuYn=Y&ReportGB=&NewMenuID=103&stkGb=701",
-  "https://data.krx.co.kr/contents/MDC/MAIN/main/index.cmd",
-  "https://www.samili.com/acc/IfrsKijun.asp?bCode=1978-1113",
-  "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003076136",
-  "https://customsacademy.co.kr/examInfo/adminBoard/download?code=exam_archive&sequence=1413",
-  "https://m.joseilbo.com/news/view.htm?newsid=498949",
-  "https://files-scs.pstatic.net/2025/12/23/FhQP9SHDXS/2025%20%ED%95%9C%EA%B5%AD%20%EB%B6%80%EC%9E%90%20%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf"
+  "https://rdata.kbsec.com/pdf_data/20230308150109907K.pdf",
+  "https://alpha-lenz.com/ko/companies/inzisoft-co-ltd",
+  "https://valueline.co.kr/finance/mri/100030",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A100030&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
+  "https://m.irgo.co.kr/IR-COMP/100030/%EB%AA%A8%EB%B0%94%EC%9D%BC%EB%A6%AC%EB%8D%94-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
+  "https://news.infostock.co.kr/a",
+  "https://www.samsung.com/sec/ir/ir-events-presentations/events/",
+  "https://v.daum.net/v/5WqcbA9HEs",
+  "https://infostock.co.kr/",
+  "https://kr.investing.com/earnings-calendar",
+  "https://www.samsungpop.com/common.do?cmd=down&saveKey=research.pdf&fileName=1010/2026022712412028K_02_02.pdf",
+  "https://www.stocktitan.net/news/INBS/intelligent-bio-solutions-reports-fiscal-2026-full-year-revenue-s4gvqez2iuqu.html",
+  "https://securities.miraeasset.com/bbs/download/2140069.pdf?attachmentId=2140069",
+  "https://www.kbam.co.kr/board/view/869",
+  "https://file.myasset.com/sitemanager/upload/2026/0511/131638/20260511131638730_0_ko.pdf"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "100030",
  "name": "인지소프트",
  "name_en": "Inzisoft Co., Ltd.",
@@ -233,9 +223,9 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 02:25",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:08",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -334,14 +324,14 @@
    }
   ],
   "valuation": {
-   "price": 19840,
-   "mcap": 0.0651,
+   "price": 20200,
+   "mcap": 0.0663,
    "shares": 3283714,
    "total_shares": 3283714,
    "wavg_shares": 2577241,
-   "per": 0.7,
+   "per": 0.736,
    "eps": 27447,
-   "pbr": 0.41,
+   "pbr": 0.4183,
    "bps": 48288,
    "roe_ttm": 76.8,
    "ttm_window": "2025Q3~2026Q2",
@@ -350,7 +340,7 @@
    "bps_krx": 26761.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 1126.0,
-   "div": 5.68
+   "div": 5.57
   }
  }
 }

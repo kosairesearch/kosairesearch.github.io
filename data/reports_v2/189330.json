@@ -1,217 +1,227 @@
 {
  "title": {
-  "ko": "3대 AI 사업 성장, 적자도 함께 확대",
-  "en": "Three AI Units Grow, Losses Widen Too"
+  "ko": "대형 GPU 수주 확보, 매출 전환은 진행형",
+  "en": "Large GPU Orders Secured, Revenue Conversion Still Unfolding"
  },
  "lead": {
-  "ko": "씨이랩은 AI Infra·Vision AI·Digital Twin 3개 사업이 매출 성장을 이어가고 있지만, 조직 확충과 선제적 투자로 영업손실이 재차 커지는 국면에 있다.",
-  "en": "XIIlab's AI Infra, Vision AI, and Digital Twin businesses continue to grow revenue, but operating losses have widened again amid organizational expansion and preemptive investment."
+  "ko": "씨이랩은 2026년 삼성SDS·비엔아이엔씨 대상 총 3,458억원 규모 GPU 인프라 계약을 확보했지만, 실제 매출 인식은 초기 단계이며 영업손실은 여전히 이어지고 있다.",
+  "en": "C-Lab secured a combined 345.8 billion won in GPU infrastructure contracts with Samsung SDS and B&I NC in 2026, but actual revenue recognition remains at an early stage and operating losses continue."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 102.7억원으로 전년 대비 13.0% 증가했으나 영업손실 32.3억원으로 4년 연속 적자.",
-   "en": "2025 consolidated revenue rose 13.0% YoY to KRW 10.27bn, but the operating loss of KRW 3.23bn marked a fourth straight year of losses."
+   "ko": "2025년 매출 102.7억원, 영업손실 32.3억원으로 4개년 연속 적자이나 손실 규모는 점차 축소되는 흐름.",
+   "en": "2025 revenue was 10.27 billion won with an operating loss of 3.23 billion won, marking a fourth straight year of losses though the loss size has been narrowing."
   },
   {
-   "ko": "2026년 1분기 별도 매출 11.1억원으로 전년 동기 대비 42% 증가, AI Infra·Vision AI·Digital Twin 3대 부문이 동반 성장.",
-   "en": "Q1 2026 standalone revenue grew 42% YoY to KRW 1.11bn, with all three business lines expanding."
+   "ko": "2026년 7월 삼성SDS 대상 3,151억원, 비엔아이엔씨 대상 307억원 등 총 3,458억원 규모 GPU 인프라 구축·소프트웨어 공급계약을 체결.",
+   "en": "In July 2026 the company signed a combined 345.8 billion won in GPU infrastructure and software supply contracts with Samsung SDS (315.1 billion won) and B&I NC (30.7 billion won)."
   },
   {
-   "ko": "2026년 2분기 매출은 20.1억원으로 회복됐지만 영업손실은 27.2억원으로 제공된 분기 데이터 중 최대 규모.",
-   "en": "Q2 2026 revenue recovered to KRW 2.01bn, but the operating loss of KRW 2.72bn was the largest in the disclosed quarterly data."
+   "ko": "2026년 2분기 매출은 20.1억원으로 전분기 대비 늘었으나 영업손실은 27.2억원으로 오히려 확대.",
+   "en": "Second-quarter 2026 revenue rose to 2.01 billion won quarter-on-quarter, yet the operating loss widened to 2.72 billion won."
   },
   {
-   "ko": "Digital Twin 사업은 NVIDIA 옴니버스 기반 프로젝트를 3년 연속 수주하며 대형 고객 레퍼런스를 축적.",
-   "en": "The Digital Twin business has won NVIDIA Omniverse-based projects for three consecutive years, building large-client references."
+   "ko": "2026년 5월 엔비디아 소프트웨어 부문 최고 등급 '엘리트 파트너'로 승급, GPU 오케스트레이션 솔루션 '아스트라고'가 핵심 변수로 지목.",
+   "en": "The company was upgraded to NVIDIA's top software tier, Elite Partner, in May 2026, with its GPU orchestration solution AstraGo cited as a key variable."
   },
   {
-   "ko": "2025년 말 자본총계 251억원, 부채비율 17.2%로 재무구조는 비교적 안정적인 편.",
-   "en": "Year-end 2025 equity stood at KRW 25.1bn with a debt ratio of 17.2%, a relatively stable financial structure."
+   "ko": "무배당 정책을 유지하고 있으며, 주가는 순자산가치 대비 프리미엄이 존재하는 구간에서 거래된다.",
+   "en": "The company maintains a no-dividend policy, and shares trade at a premium relative to net asset value."
   }
  ],
  "business": {
-  "ko": "씨이랩은 'Seeing the Unseen: Vision AI'라는 슬로건 아래 영상 등 비정형 데이터를 AI로 분석해 가치를 창출하는 코스닥 상장 AI 기업으로, 사업은 AI Infra·Vision AI·Digital Twin 3개 부문으로 나뉘며 5개 핵심 솔루션을 공급한다. AI Infra 부문은 GPU 자원 활용도를 높이는 오케스트레이션 솔루션 'AstraGo'를 축으로 하며, 2019년 엔비디아와 공식 파트너십을 체결한 뒤 HPE·Dell 등 글로벌 인프라 제조사와 협력해 GPU 어플라이언스를 공급한다. Vision AI 부문은 CCTV·대용량 미디어 영상을 분석해 특정 객체·상황을 검출하는 'XAIVA'와 'VidiGo'를 중심으로 제조 현장의 안전장비 착용 탐지, 이물·불량 판정 등을 지원한다. Digital Twin 부문은 합성데이터 생성 솔루션 'X-GEN'과 엔비디아 옴니버스 플랫폼을 결합해 현실과 동일한 가상 환경을 구현하며 반도체·제조·모빌리티·물류 등 산업에 적용된다. 실제 대기업 사례로 포스코DX가 언급되며, AstraGo 도입 이후 GPU 월평균 활용률이 약 80% 개선됐다는 성과가 공개된 바 있다. 디지털트윈 사업은 엔비디아 옴니버스 플랫폼 구축 프로젝트를 3년 연속 수주하며 피지컬 AI 시뮬레이션 분야에서 입지를 다졌다는 평가를 받았다. 회사는 최근 파트너사 35곳을 초청한 행사를 열고 엔터프라이즈 AI 인프라 패키징과 공동 영업 모델을 통한 시장 침투 전략을 공식화했다. 경쟁구도는 GPU 인프라 관리, 비전 AI, 디지털트윈 각 영역에 국내외 다수 사업자가 혼재하는 구조로, 씨이랩은 세 영역을 동시에 보유한 밸류체인형 모델을 차별점으로 내세운다.",
-  "en": "Under the slogan 'Seeing the Unseen: Vision AI,' XIIlab is a KOSDAQ-listed AI company that analyzes unstructured data such as video to create value, organized into three segments—AI Infra, Vision AI, and Digital Twin—offering five core solutions. The AI Infra segment centers on 'AstraGo,' a GPU orchestration solution, built on an official NVIDIA partnership signed in 2019 and cooperation with global infrastructure makers such as HPE and Dell to supply GPU appliances. The Vision AI segment, anchored by 'XAIVA' and 'VidiGo,' analyzes CCTV and large-volume media footage to detect specific objects or situations, supporting safety-gear detection and defect inspection at manufacturing sites. The Digital Twin segment combines the synthetic-data generation solution 'X-GEN' with the NVIDIA Omniverse platform to replicate real-world virtual environments for semiconductor, manufacturing, mobility, and logistics applications. A notable enterprise reference is POSCO DX, which reported roughly an 80% improvement in average monthly GPU utilization after adopting AstraGo. The Digital Twin business has won NVIDIA Omniverse platform-build projects for three consecutive years, strengthening its position in physical-AI simulation. The company recently hosted an event with 35 partner firms, formalizing a market-penetration strategy built on enterprise AI infrastructure packaging and joint sales models. Competitively, GPU infrastructure management, Vision AI, and Digital Twin each feature a mix of domestic and global players, and XIIlab positions its simultaneous presence across all three as a value-chain differentiator."
+  "ko": "씨이랩은 'Full-Stack AI Partner'를 표방하며 AI Infra, Vision AI, Digital Twin 3개 사업부문을 운영한다. AI Infra 사업은 GPU 오케스트레이션 솔루션 '아스트라고(AstraGo)'를 중심으로 HPE, Dell, Lenovo 등 글로벌 인프라 기업과 협력해 엔터프라이즈 시장을 공략하고 있다. Vision AI 사업은 실시간 영상 인식 기술 기반의 XAIVA와 클라우드 기반 VidiGo를 통해 산업안전·보안 분야로 영역을 넓히고 있으며, Digital Twin 사업은 엔비디아 옴니버스 기반 X-GEN 솔루션으로 글로벌 반도체 기업 대상 프로젝트를 다년간 확대 수행하고 있다. 회사는 2019년 국내 소프트웨어 기업 최초로 엔비디아 프리퍼드 파트너 자격을 획득했고, 이후 2026년 5월 최고 등급인 엘리트 파트너로 승격됐다. 주요 고객으로는 삼성SDS를 비롯한 국내 대기업과 공공기관이 있으며, 최근에는 국가 AI 컴퓨팅 자원 인프라 강화 사업의 하위 계약자로 참여하고 있다. 동일한 국가 프로젝트에는 데이타솔루션 등 경쟁사도 삼성SDS 대상 별도 계약(4,381억원 규모)으로 참여하고 있어, GPU 인프라 구축·운영 영역에서 복수 사업자가 경쟁하는 구도가 형성돼 있다. 씨이랩은 2025년 9월 190억원 규모의 주주배정 유상증자를 청약률 257.95%로 완료하며 GPU 관리 소프트웨어 고도화와 R&D, 인프라 확장 자금을 확보한 바 있다. 사업 구조상 하드웨어 발주·구축 성격의 대형 계약과, 상대적으로 수익성이 높은 자체 소프트웨어·운영 서비스가 혼재돼 있어 매출 구성의 질적 변화가 향후 관전 포인트로 꼽힌다.",
+  "en": "C-Lab operates under a 'Full-Stack AI Partner' vision across three business segments: AI Infra, Vision AI, and Digital Twin. The AI Infra segment is centered on its GPU orchestration solution AstraGo and partners with global infrastructure vendors including HPE, Dell, and Lenovo to target enterprise markets. The Vision AI segment expands into industrial safety and security through real-time video recognition products XAIVA and cloud-based VidiGo, while the Digital Twin segment has run multi-year expanding projects for global semiconductor companies using its NVIDIA Omniverse-based X-GEN solution. The company became the first Korean software firm to achieve NVIDIA Preferred Partner status in 2019 and was later upgraded to the top tier, Elite Partner, in May 2026. Its key customers include large domestic conglomerates such as Samsung SDS and public institutions, and it recently joined as a subcontractor in South Korea's national AI Computing Resource Infrastructure Enhancement Project. Within the same national program, competitor Datasolution has secured a separate 438.1 billion won contract with Samsung SDS, indicating a multi-vendor competitive structure in GPU infrastructure build-out and operations. In September 2025, C-Lab completed a 19 billion won rights offering with a subscription rate of 257.95%, raising funds for software upgrades, R&D, and infrastructure expansion. The business mix combines large hardware-heavy build contracts with relatively higher-margin proprietary software and operations services, making the qualitative shift in revenue composition a key point to monitor going forward."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 102억7,232만원으로 2024년 90억9,336만원 대비 13.0% 증가했으나, 영업손실은 32억2,508만원(영업이익률 -31.4%)으로 4년 연속 적자를 이어갔다. 다만 손실 규모는 2023년 69억1,078만원, 2024년 52억8,496만원에서 점차 줄어드는 흐름을 보였으며, 실제로 2024년 영업손실과 지배주주 순손실은 전년 대비 각각 23.5%, 19.7% 감소한 것으로 나타났다. 2023년에는 매출이 36억6,344만원까지 줄며 영업이익률이 -188.6%까지 악화된 바 있어, 이후 매출 회복이 손실 축소의 핵심 동력이 됐다. 분기별로는 프로젝트성 계약 특성상 매출 인식 편차가 크게 나타난다. 2025년 3분기 매출은 38억3,899만원, 4분기는 49억3,278만원으로 하반기에 집중됐던 반면, 2026년 1분기는 11억1,223만원으로 다시 줄었고 영업손실은 19억2,744만원으로 확대됐다. 회사는 매출 단위로 재편한 영업·수행 조직 확충과 운영 인프라 투자, AI 네이티브 조직 전환에 따른 도구 도입, 인증 수수료 등 일회성 비용이 반영됐다고 설명했다. 2026년 2분기 매출은 20억1,391만원으로 전분기 대비 회복됐지만 영업손실은 27억2,002만원, 지배주주 순손실은 25억7,066만원으로 제공된 분기 데이터 중 가장 큰 손실 규모를 기록했다. 현금흐름 측면에서도 2025년 영업활동현금흐름은 -7억1,199만원으로 2024년 -36억2,151만원보다 유출 규모가 줄었으나 여전히 음수 기조를 유지하고 있다.",
-  "en": "2025 consolidated revenue was KRW 10.27bn, up 13.0% from KRW 9.09bn in 2024, but the operating loss of KRW 3.23bn (operating margin -31.4%) marked a fourth consecutive year of losses. Loss size had been narrowing from KRW 6.91bn in 2023 to KRW 5.28bn in 2024, with the 2024 operating loss and owner net loss shrinking 23.5% and 19.7% year-over-year, respectively. In 2023, revenue had fallen to KRW 3.66bn with the operating margin deteriorating to -188.6%, making the subsequent revenue recovery the key driver of loss reduction. Quarterly figures show wide swings tied to project-based revenue recognition. Q3 2025 revenue was KRW 3.84bn and Q4 was KRW 4.93bn, concentrated in the second half, while Q1 2026 fell back to KRW 1.11bn with the operating loss widening to KRW 1.93bn. The company attributed this to expanded sales and delivery organizations, operating infrastructure investment, tools introduced under an AI-native organizational shift, and one-off certification fees. Q2 2026 revenue recovered to KRW 2.01bn, but the operating loss reached KRW 2.72bn and the owner net loss KRW 2.57bn, the largest quarterly loss in the disclosed data. On a cash-flow basis, 2025 operating cash flow was -KRW 712m, an improvement from -KRW 3.62bn in 2024, but remained negative."
+  "ko": "연간 실적을 보면 2022년 매출 98.97억원에서 2023년 36.63억원으로 급감했고, 영업이익률은 -49.8%에서 -188.6%까지 악화됐다. 이후 2024년 매출 90.93억원으로 회복됐지만 영업손실은 52.85억원으로 오히려 커졌다. 2025년에는 매출 102.72억원으로 전년 대비 늘었고 영업손실은 32.25억원, 영업이익률은 -31.4%로 개선되며 4개년 중 손실 규모가 가장 작은 해를 기록했다. 분기별로는 2025년 3분기 매출 38.39억원, 4분기 49.33억원으로 크게 늘며 영업손실도 각각 -6.62억원, -2.48억원까지 줄었으나, 2026년 1분기에는 매출이 11.12억원으로 다시 축소되고 영업손실은 -19.27억원으로 확대됐다. 2026년 2분기 매출은 20.14억원으로 전분기 대비 늘었지만 영업손실은 -27.20억원으로 오히려 더 커져, 대형 계약 실행에 따른 선행 비용 부담이 반영된 것으로 해석된다. 지배주주 순손실도 2025년 3분기 -5.95억원에서 2026년 2분기 -25.71억원까지 확대되는 흐름을 보였다. 최근 4개 분기(2025년 3분기~2026년 2분기) 누적 지배주주 순손실은 약 53.76억원으로, 연간 단위로 환산해도 여전히 적자 구조에서 벗어나지 못했음을 보여준다. 재무구조 측면에서는 부채비율이 2023년 21.6%에서 2024년 39.5%로 높아졌다가 2025년 17.2%로 다시 낮아졌으며, 영업활동현금흐름은 4개년 모두 순유출을 기록했다.",
+  "en": "Annual results show revenue fell sharply from 9.90 billion won in 2022 to 3.66 billion won in 2023, with the operating margin deteriorating from -49.8% to -188.6%. Revenue recovered to 9.09 billion won in 2024, yet the operating loss widened to 5.28 billion won. In 2025, revenue rose to 10.27 billion won and the operating loss narrowed to 3.23 billion won with an operating margin of -31.4%, marking the smallest loss of the four years. On a quarterly basis, revenue jumped to 3.84 billion won in Q3 2025 and 4.93 billion won in Q4 2025, with operating losses shrinking to -0.66 billion won and -0.25 billion won respectively, but Q1 2026 revenue contracted again to 1.11 billion won while the operating loss widened to -1.93 billion won. Q2 2026 revenue rose to 2.01 billion won quarter-on-quarter, yet the operating loss widened further to -2.72 billion won, which appears to reflect upfront costs tied to executing large-scale contracts. Net loss attributable to owners also widened from -0.60 billion won in Q3 2025 to -2.57 billion won in Q2 2026. Cumulative net loss attributable to owners over the trailing four quarters (Q3 2025 to Q2 2026) totaled roughly 5.38 billion won, indicating the company has yet to escape its loss-making structure even on an annualized basis. On the balance sheet, the debt ratio rose from 21.6% in 2023 to 39.5% in 2024 before falling back to 17.2% in 2025, while operating cash flow recorded net outflows in all four years."
  },
  "industry": {
-  "ko": "AI 산업은 크게 GPU 인프라 효율화, 영상 기반 비전 AI, 산업용 디지털트윈(피지컬 AI) 세 흐름으로 재편되고 있다. 기업들의 AI 투자가 급증하면서 'GPU 운영 비용 절감'과 '효율성 극대화'가 시장의 핵심 화두로 떠올랐고, 씨이랩은 이 수요를 겨냥한 AstraGo로 대응하고 있다. 실제 포스코DX 사례에서 AstraGo 도입 이후 GPU 월평균 활용률이 약 80% 개선됐다는 성과가 공개되며 엔터프라이즈 시장 확대의 레퍼런스로 활용되고 있다. Vision AI 영역은 안전·품질 검사 수요를 바탕으로 공공·국방 분야로 채널이 확장되는 추세다. Digital Twin·피지컬 AI 영역은 엔비디아 옴니버스 생태계를 축으로 반도체·자동화 산업까지 저변이 넓어지고 있으며, 씨이랩은 관련 프로젝트에서 3년 연속 수주 레퍼런스를 쌓았다. 경쟁 강도 측면에서는 GPU 오케스트레이션·비전AI·디지털트윈 각 영역에 특화된 국내외 사업자가 다수 존재해, 소형업체인 씨이랩이 3개 영역을 동시에 보유한 점이 차별점이자 동시에 자원 분산의 부담이 될 수 있다. 데이터센터·AI 인프라 확충이라는 전방산업 성장 사이클은 우호적이지만, 씨이랩의 매출 규모 자체는 아직 산업 성장 속도에 비해 작은 편이다.",
-  "en": "The AI industry is reorganizing around three broad trends: GPU infrastructure efficiency, video-based Vision AI, and industrial digital twins (physical AI). As corporate AI investment surges, 'GPU operating cost reduction' and 'efficiency maximization' have become central market themes, which XIIlab addresses through AstraGo. The POSCO DX case, where GPU average monthly utilization reportedly improved about 80% after AstraGo adoption, has been cited as a reference for enterprise-market expansion. The Vision AI segment is expanding into public and defense channels on the back of safety and quality-inspection demand. The Digital Twin/physical AI segment is broadening from the NVIDIA Omniverse ecosystem into semiconductor and automation industries, where XIIlab has built a three-consecutive-year project-win track record. Competitively, numerous domestic and global players specialize in each of GPU orchestration, Vision AI, and digital twins, making XIIlab's simultaneous presence across all three both a differentiator and a potential resource-allocation burden. While the underlying growth cycle in data-center and AI-infrastructure buildout is favorable, XIIlab's own revenue scale remains small relative to the pace of industry growth."
+  "ko": "국내 AI 데이터센터 구축은 정부 주도의 'AI 컴퓨팅 자원 활용 기반 강화 사업'을 계기로 본격화되고 있으며, 삼성SDS 등 민간 사업자가 국가 프로그램의 주요 시행사로 선정돼 있다. 엔비디아는 하반기 차세대 아키텍처인 베라 루빈(Vera Rubin) 세대로 전환하면서 GPU 단품이 아닌 GPU·CPU·네트워크·냉각장치를 통합한 '슈퍼팟(SuperPod)' 방식으로 공급 체계를 바꾸고 있어, 시스템 통합·검증 역량을 갖춘 인증 파트너의 중요성이 커지고 있다. 이런 흐름 속에서 씨이랩은 엔비디아 엘리트 파트너 자격과 아스트라고 오케스트레이션 솔루션을 앞세워 국내 GPU 인프라 구축·운영 시장에 진입했다. 다만 같은 국가 프로그램 내에서 데이타솔루션이 삼성SDS 대상으로 별도의 4,381억원 규모 계약을 확보하는 등, 복수의 사업자가 유사한 하위 계약을 나눠 수행하는 구조여서 시장 자체가 특정 한 기업에 집중되는 형태는 아니다. 정부의 2026년 인공지능 전환(AX) 사업은 제조 현장의 생산·품질·설비 문제를 AI 에이전트 기반으로 해결하는 방향으로 확대되고 있어, 피지컬 AI·비전 AI 수요가 함께 늘어날 수 있는 환경이 조성되고 있다. 산업 사이클상으로는 GPU 인프라 구축 수요가 막 실행 단계에 들어선 초기 국면으로, 실제 매출 인식과 수익성 개선은 아직 확인 전 단계에 있다.",
+  "en": "South Korea's AI data center build-out is gaining momentum through the government-led AI Computing Resource Infrastructure Enhancement Project, with private operators including Samsung SDS selected as major implementers of the national program. NVIDIA is shifting supply structures toward its next-generation Vera Rubin architecture and integrated 'SuperPod' systems combining GPU, CPU, networking, and cooling rather than standalone GPU units, raising the importance of certified partners with system integration and validation capabilities. Against this backdrop, C-Lab entered the domestic GPU infrastructure build-and-operate market leveraging its NVIDIA Elite Partner status and AstraGo orchestration solution. However, within the same national program, competitor Datasolution secured a separate 438.1 billion won contract with Samsung SDS, indicating that multiple vendors are splitting similar subcontracts rather than the market concentrating around a single player. The government's 2026 AI transformation (AX) initiative is expanding toward solving manufacturing production, quality, and equipment issues via AI agents, creating an environment where physical AI and vision AI demand could grow in tandem. In terms of industry cycle positioning, GPU infrastructure build demand has just entered its execution phase, and actual revenue recognition and profitability improvement remain to be confirmed."
  },
  "outlook": {
-  "ko": "회사는 2026년을 '피지컬 AI 원스톱 밸류체인 기반의 글로벌 확장 원년'으로 제시했다. 윤세혁 대표는 2026년이 준비해온 피지컬 AI 밸류체인을 통해 실질적인 실적 성장을 증명하는 해가 될 것이라며 \"대폭적인 실적 개선과 함께 턴어라운드를 반드시 달성하겠다\"고 밝혔다. 2026년 2월에는 GPU 비용절감 솔루션 'AstraGo 2.0'을 출시하고 로봇기업 오리온스타와 협력해 피지컬 AI 시장 공략을 발표했다. 5월에는 6개 기업과 호남권 AI 데이터센터 구축을 위한 MOU를 체결했다. 1분기 실적발표 시점에는 산업별 확장과 해외 시장 진출에 속도를 내겠다는 계획을 재확인했다. 8월에는 주요 파트너사 35곳을 초청한 '씨이랩 파트너 서밋 2026'을 열고 엔터프라이즈 AI 시장 공략을 위한 파트너 생태계 확대 전략을 공식화했다. 2025년 상반기 실적 발표 당시 회사는 하반기에 계약 이행과 AI 기반 솔루션 공급이 본격화되며 매출 성장과 수익성 개선을 기대한다고 밝힌 바 있어, 유사한 상저하고 흐름이 재현되는지가 관전 포인트다.",
-  "en": "The company has framed 2026 as 'a founding year of global expansion built on a one-stop physical-AI value chain.' CEO Yoon Se-hyeok stated that 2026 would be the year to demonstrate tangible earnings growth through the physical-AI value chain the company had prepared, pledging to achieve a turnaround with substantial earnings improvement. In February 2026, the company launched the GPU cost-reduction solution 'AstraGo 2.0' and announced a partnership with robotics firm Orion Star to pursue the physical-AI market. In May, it signed an MOU with six companies to build an AI data center in the Honam region. At its Q1 earnings release, the company reaffirmed plans to accelerate industry-specific expansion and overseas market entry. In August, it hosted the 'XIIlab Partner Summit 2026' with 35 partner companies, formalizing a partner-ecosystem expansion strategy for the enterprise AI market. When reporting first-half 2025 results, the company had said it expected revenue growth and profitability improvement as contract execution and AI-based solution supply ramped up in the second half—making it worth watching whether a similar back-half-loaded pattern recurs."
+  "ko": "회사는 2026년 하반기 사업 전략을 AI 데이터센터와 피지컬 AI 두 축으로 제시했으며, 윤세혁 대표는 하반기에 이를 계약과 매출로 전환하는 데 집중하겠다고 밝혔다. 실행 측면에서는 2026년 7월 29일 이사회 결의를 통해 에즈웰에이아이, 에이치에스효성인포메이션시스템, 아이크래프트, 에스넷시스템 등 4개 공급사에 총 1,505억원의 선급금을 지급하며 GPU·핵심 장비 발주를 시작했다. SK증권은 2026년 8월 리포트에서 확보한 대규모 수주가 내년부터 본격적으로 매출에 반영되며 외형 성장과 영업 레버리지 효과가 동시에 나타날 것이라고 전망했다. 같은 리포트는 정부 사업을 넘어 민간 AI 데이터센터로 확장하는지와 아스트라고의 침투 속도가 실적과 기업가치를 결정하는 핵심 변수라고 짚었다. 한국투자증권은 2026년 8월 말 리포트에서 대규모 계약금액 전체가 곧바로 높은 수익성으로 이어지는 것은 아니며, 실제 매출 인식 속도와 자체 소프트웨어 매출 비중, 매출총이익률 변화가 실적의 질을 판단하는 핵심 변수라고 지적하면서 2027년을 주요 관전 포인트로 제시했다. 기술 측면에서는 2026년 7월 세계 3대 머신러닝 학회인 ICML 워크숍에서 온디바이스 비전AI 경량화 연구를 발표했고, 같은 달 글로벌 컴퓨터 비전 경진대회 'AI City Challenge' 특정 트랙에서 공개 리더보드 1위를 기록하며 기술 경쟁력을 대외에 알렸다. 다만 이 모든 계약과 기술 성과가 실제 재무제표상 이익 개선으로 연결되는 시점은 회사와 증권가 모두 2027년 이후로 보고 있어, 단기적으로는 실행 단계의 비용 부담이 먼저 나타날 가능성이 있다.",
+  "en": "The company outlined AI data centers and physical AI as the two pillars of its second-half 2026 strategy, with CEO Yoon Se-hyeok stating the focus for the second half would be converting this into contracts and revenue. On the execution side, following a board resolution on July 29, 2026, the company began GPU and core equipment procurement by disbursing a total of 150.5 billion won in advance payments to four suppliers: AZWell AI, HS Hyosung Information Systems, iCraft, and S-Net Systems. SK Securities projected in an August 2026 report that the large-scale orders secured would be substantially reflected in revenue starting next year, producing simultaneous top-line growth and operating leverage effects. The same report noted that expansion beyond government projects into private AI data centers and the penetration speed of AstraGo would be the key variables determining performance and enterprise value. Korea Investment & Securities noted in a late-August 2026 report that the full contract value does not immediately translate into high profitability, pointing to the pace of actual revenue recognition, the proportion of proprietary software revenue, and changes in gross margin as key variables for judging earnings quality, and identified 2027 as a key point to watch. On the technology front, the company presented on-device vision AI compression research at an ICML 2026 workshop in July and ranked first on the public leaderboard of a specific track in the global 'AI City Challenge' computer vision competition the same month, showcasing its technical competitiveness externally. However, both the company and securities analysts view actual translation of these contracts and technical achievements into improved financial results as occurring from 2027 onward, meaning execution-stage costs may appear first in the near term."
  },
  "valuation_comment": {
-  "ko": "씨이랩은 여전히 영업손실을 이어가고 있어 통상적인 주가수익비율 산정이 어려운 구조이며, 밸류에이션 논의는 주로 주가순자산비율(PBR)과 재무 건전성에 초점이 맞춰진다. 제공된 헤더 기준 주당순자산(BPS)은 2,229원으로, 최근 주가는 이 순자산가치 대비 상당한 프리미엄이 반영된 구간에서 거래되는 편이다. 배당은 최근 지급 실적이 없어 배당수익률 측면에서는 매력이 크지 않은 구조다. 다만 2025년 말 자본총계가 251억원으로 전년 96억원 대비 크게 늘고 부채비율이 17.2%로 낮아진 점은 재무구조상의 완충력을 보여준다. 매출이 두 자릿수 성장을 이어가는 동시에 영업손실 규모도 재차 커지는 국면이어서, 주가와 실적 사이의 관계를 판단할 때는 이익 회복의 지속성 여부가 핵심 변수로 남아 있다.",
-  "en": "XIIlab remains in an operating-loss position, which makes a conventional price-earnings comparison difficult, so valuation discussion tends to center on the price-to-book ratio and financial soundness. The provided headline book value per share is KRW 2,229, and the recent share price trades at a level that reflects a sizable premium over this net-asset value. With no recent dividend payments, the dividend-yield angle offers limited appeal relative to book value. That said, year-end 2025 equity rose sharply to KRW 25.1bn from KRW 9.6bn a year earlier, and the debt ratio fell to 17.2%, indicating a financial cushion. As double-digit revenue growth continues alongside a renewed widening of operating losses, the persistence of any earnings recovery remains the key variable in assessing the relationship between price and fundamentals."
+  "ko": "씨이랩은 4개년 연속 영업적자를 이어오고 있어 이익 기반 밸류에이션 지표를 적용하기 어려운 구간에 있다. 순자산가치와 비교하면 주가는 여전히 상당한 프리미엄이 형성돼 있는데, 아이투자 자료 기준 최근 5년 평균 주가순자산비율(PBR)은 4.89배 수준으로 나타난다. 이는 회사의 실제 이익 창출보다는 GPU 인프라 대형 수주, 정부 AI 전환 사업 참여 등 성장 스토리에 대한 시장의 기대가 가격에 상당 부분 반영돼 있음을 시사한다. 배당 측면에서는 별도의 배당 지급 이력이 확인되지 않아 배당 매력을 기대하기는 어려운 구조다. 향후 밸류에이션의 방향을 좌우할 변수는 3,458억원 규모 계약의 실제 매출 인식 속도와 아스트라고 등 자체 소프트웨어 비중 확대에 따른 이익 구조 개선 여부이며, 이는 아직 재무제표로 확인되지 않은 상태다.",
+  "en": "C-Lab has posted operating losses for four consecutive years, placing it in a range where earnings-based valuation metrics are difficult to apply. Relative to net asset value, the stock continues to trade at a substantial premium, with the five-year average price-to-book ratio reported by Itooza standing at 4.89 times. This suggests the market price reflects considerable expectations tied to the growth narrative around large GPU infrastructure orders and participation in government AI transformation projects, rather than actual profit generation. On the dividend front, no dividend payment history has been confirmed, limiting income appeal. The key variable that will shape the valuation trajectory going forward is the actual pace of revenue recognition from the 345.8 billion won in contracts and whether the profit structure improves as proprietary software such as AstraGo gains share, neither of which has yet been confirmed in the financial statements."
  },
  "bull": [
   {
    "title": {
-    "ko": "3대 사업 동반 성장과 고객 확보",
-    "en": "Simultaneous Growth Across Three Segments"
+    "ko": "초대형 GPU 인프라 계약 확보",
+    "en": "Securing Ultra-Large GPU Infrastructure Contracts"
    },
    "body": {
-    "ko": "2026년 1분기 AI Infra, Vision AI, Digital Twin 3대 부문이 각각 60.7%, 55.6%, 18.7% 성장하며 고른 매출 확대를 보였다. AI Infra 부문은 분기 중 11개사의 신규 고객을 확보했고, Vision AI 부문은 공공기관·글로벌 시장으로 채널을 넓히고 있다. 세 사업이 동시에 성장세를 보이는 구조는 특정 부문 부진 시 다른 부문이 보완할 수 있는 완충 역할을 할 수 있다.",
-    "en": "In Q1 2026, AI Infra, Vision AI, and Digital Twin grew 60.7%, 55.6%, and 18.7%, respectively, showing broad-based revenue expansion. The AI Infra segment secured 11 new corporate customers during the quarter, and Vision AI is broadening its channels into public institutions and global markets. Having three segments grow simultaneously can provide a buffer if any single segment underperforms."
+    "ko": "씨이랩은 2026년 삼성SDS 대상 3,151억원, 비엔아이엔씨 대상 307억원 등 총 3,458억원 규모의 GPU 인프라 구축 및 소프트웨어 공급계약을 확보했다. 이는 2025년 연결 매출액의 약 34배에 달하는 규모로, 국가 AI 컴퓨팅 자원 인프라 강화 사업의 하위 계약자로 참여하며 얻은 성과다. 계약 기간이 2031년까지로 장기간 설정돼 있어 향후 여러 해에 걸친 매출 기반이 될 수 있다.",
+    "en": "In 2026 C-Lab secured combined GPU infrastructure build and software supply contracts worth 345.8 billion won, comprising 315.1 billion won with Samsung SDS and 30.7 billion won with B&I NC. This is roughly 34 times its 2025 consolidated revenue, achieved through participation as a subcontractor in the national AI Computing Resource Infrastructure Enhancement Project. The contracts run through 2031, potentially serving as a multi-year revenue base."
    }
   },
   {
    "title": {
-    "ko": "검증된 엔비디아 파트너십과 대형 레퍼런스",
-    "en": "Proven NVIDIA Partnership and Large-Client References"
+    "ko": "엔비디아 최고 등급 파트너십",
+    "en": "Top-Tier NVIDIA Partnership Status"
    },
    "body": {
-    "ko": "씨이랩은 2019년부터 엔비디아와 공식 파트너십을 맺고 있으며, 옴니버스 기반 디지털트윈 프로젝트를 3년 연속 수주했다. 포스코DX 사례에서는 AstraGo 도입 이후 GPU 월평균 활용률이 약 80% 개선됐다는 성과가 공개돼 엔터프라이즈 영업에 활용될 수 있는 레퍼런스로 평가된다. 이러한 대형 고객 검증 사례는 향후 유사 수요를 가진 기업·공공기관 대상 영업 확대의 기반이 될 수 있다.",
-    "en": "XIIlab has held an official NVIDIA partnership since 2019 and has won Omniverse-based digital-twin projects for three consecutive years. In the POSCO DX case, AstraGo reportedly improved average monthly GPU utilization by about 80%, providing a reference usable in enterprise sales. Such validated large-client cases could form a basis for expanding sales to companies and public institutions with similar needs."
+    "ko": "씨이랩은 2019년 국내 소프트웨어 기업 최초로 엔비디아 프리퍼드 파트너 자격을 획득한 데 이어, 2026년 5월 소프트웨어 부문 최고 등급인 엘리트 파트너로 승격됐다. 이는 GPU 오케스트레이션 솔루션 아스트라고의 기술력을 엔비디아로부터 공인받은 결과로 해석된다. 파트너십 등급 상승은 대형 인프라 구축 사업 수주 경쟁에서 신뢰도를 높이는 요인으로 작용할 수 있다.",
+    "en": "C-Lab became the first Korean software company to achieve NVIDIA Preferred Partner status in 2019, and was upgraded to the top software tier, Elite Partner, in May 2026. This is interpreted as NVIDIA's certification of the technical capability of its GPU orchestration solution AstraGo. The upgraded partnership tier could enhance credibility when competing for large infrastructure build contracts."
    }
   },
   {
    "title": {
-    "ko": "개선된 재무 완충력",
-    "en": "Improved Financial Cushion"
+    "ko": "글로벌 기술 경쟁력 입증",
+    "en": "Demonstrated Global Technical Competitiveness"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 251억원으로 전년 96억원에서 크게 늘었고, 부채비율은 17.2%로 낮은 수준을 유지했다. 이는 지속된 영업손실에도 단기적인 자금 압박이 상대적으로 크지 않을 수 있는 여력을 시사한다. 재무 완충력은 회사가 밝힌 선제적 투자와 조직 확장 전략을 이어갈 수 있는 기반이 될 수 있다.",
-    "en": "Year-end 2025 equity rose sharply to KRW 25.1bn from KRW 9.6bn a year earlier, while the debt ratio remained low at 17.2%. This suggests the company may have relatively less near-term funding pressure despite ongoing operating losses. This financial cushion could support the continuation of the preemptive investment and organizational expansion strategy the company has outlined."
+    "ko": "씨이랩은 2026년 7월 글로벌 컴퓨터 비전 경진대회 'AI City Challenge'의 텍스트 기반 인물 이상 탐색 부문에서 평균 정밀도 99.30%를 기록해 참가팀 28곳 중 공개 리더보드 1위에 올랐다. 같은 달 세계 3대 머신러닝 학회인 ICML 워크숍에서도 온디바이스 비전AI 경량화 연구를 발표했다. 이러한 성과는 회사의 핵심 기술이 학계·업계에서 검증받고 있음을 보여준다.",
+    "en": "In July 2026, C-Lab recorded a mean average precision of 99.30% in the text-based person anomaly search track of the global 'AI City Challenge' computer vision competition, ranking first on the public leaderboard among 28 participating teams. That same month, the company also presented on-device vision AI compression research at an ICML workshop, one of the world's three major machine learning conferences. These achievements demonstrate that the company's core technology is being validated by both academia and industry."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4년 연속 적자, 손실 재확대",
-    "en": "Fourth Straight Year of Losses, Losses Widening Again"
+    "ko": "4개년 연속 영업적자 지속",
+    "en": "Four Consecutive Years of Operating Losses"
    },
    "body": {
-    "ko": "2022~2025년 4개 연도 모두 영업손실을 기록했고, 2026년 들어서도 1분기 -19.3억원, 2분기 -27.2억원으로 손실 규모가 다시 확대되고 있다. 2024년 손실이 전년 대비 줄어드는 흐름을 보였던 것과 달리, 2026년 상반기는 조직 확충과 투자 집행으로 손실이 재차 커진 국면이다. 손익 개선 시점을 특정하기 어려운 구간이 이어지고 있다.",
-    "en": "The company posted operating losses in all four years from 2022 to 2025, and losses widened again in 2026, at -KRW 1.93bn in Q1 and -KRW 2.72bn in Q2. Unlike 2024, when losses had narrowed from the prior year, the first half of 2026 saw losses re-expand due to organizational buildout and investment execution. The timing of any profitability inflection remains difficult to pin down."
+    "ko": "씨이랩은 2022년부터 2025년까지 매년 영업손실을 기록했으며, 2026년 1분기와 2분기에도 각각 -19.27억원, -27.20억원의 영업손실을 냈다. 매출이 늘어난 분기에도 손실 규모가 오히려 확대되는 경우가 나타나, 수익성 개선이 아직 뚜렷하게 확인되지 않고 있다. 대형 계약 실행에 따른 선행 투자·비용 부담이 단기적으로 실적에 부담을 줄 가능성이 있다.",
+    "en": "C-Lab has posted operating losses every year from 2022 through 2025, and also recorded operating losses of -1.93 billion won and -2.72 billion won in Q1 and Q2 2026, respectively. In some quarters, the loss actually widened even as revenue grew, meaning a clear profitability improvement has not yet been confirmed. Upfront investment and cost burdens tied to executing large contracts could weigh on near-term results."
    }
   },
   {
    "title": {
-    "ko": "프로젝트성 매출의 큰 분기 편차",
-    "en": "Large Quarter-to-Quarter Swings from Project-Based Revenue"
+    "ko": "매출 인식 지연과 마진 불확실성",
+    "en": "Delayed Revenue Recognition and Margin Uncertainty"
    },
    "body": {
-    "ko": "2025년 3분기(38.4억원)와 4분기(49.3억원)에 매출이 집중됐다가 2026년 1분기(11.1억원)로 급감하는 등 매출 인식이 프로젝트 완료 시점에 좌우되는 구조가 뚜렷하다. 이런 변동성은 특정 분기 실적만으로 사업의 방향성을 판단하기 어렵게 만든다. 매출 기반의 안정성이 아직 충분히 검증되지 않았다는 평가가 가능하다.",
-    "en": "Revenue was concentrated in Q3 2025 (KRW 3.84bn) and Q4 2025 (KRW 4.93bn) before sharply dropping to KRW 1.11bn in Q1 2026, reflecting a structure where revenue recognition depends heavily on project completion timing. This volatility makes it difficult to judge business direction from any single quarter's results. The stability of the revenue base has arguably not yet been fully proven."
+    "ko": "한국투자증권은 대규모 계약금액 전체가 곧바로 높은 수익성으로 이어지는 것은 아니라고 지적했다. GPU와 서버 등 외부 장비 비중이 높은 인프라 사업의 특성상 매출총이익률이 낮게 형성될 가능성이 있으며, 실제 매출 인식은 계약 시점보다 늦은 2027년부터 본격화될 것으로 전망된다. 계약금액 자체와 실질적인 이익 기여 사이에 시차와 격차가 존재할 수 있다.",
+    "en": "Korea Investment & Securities noted that the full contract value does not immediately translate into high profitability. Given the high proportion of external equipment such as GPUs and servers in the infrastructure business, gross margins could come in relatively low, and actual revenue recognition is projected to ramp up meaningfully only from 2027, later than the contract signing date. There may be a lag and gap between the headline contract value and its actual profit contribution."
    }
   },
   {
    "title": {
-    "ko": "소형주 특성과 수급 변동성",
-    "en": "Small-Cap Characteristics and Flow-Driven Volatility"
+    "ko": "자금조달·희석 이력",
+    "en": "History of Capital Raises and Dilution"
    },
    "body": {
-    "ko": "씨이랩은 시가총액이 작은 코스닥 소형주로, AI·데이터센터 관련 테마 확산에 따라 실적과 무관한 수급 변화가 주가에 큰 영향을 줄 수 있다. 최근 1년 사이 주가는 큰 폭의 등락을 반복한 것으로 관찰된다. 이런 변동성은 실적 펀더멘털과 주가 흐름 사이의 관계를 해석하기 어렵게 만든다.",
-    "en": "XIIlab is a small-cap KOSDAQ stock whose share price can be significantly affected by flow-driven demand tied to AI and data-center themes, independent of fundamentals. Over the past year, the stock has been observed to swing sharply in both directions. This volatility can make it difficult to interpret the relationship between earnings fundamentals and share-price movement."
+    "ko": "씨이랩은 2025년 9월 190억원 규모의 주주배정 유상증자를 완료하며 R&D와 인프라 확장 자금을 조달한 바 있다. 지속적인 영업손실 구조와 대형 계약 실행에 필요한 선급 투자 부담을 감안하면, 향후에도 추가 자금조달이 필요해질 가능성을 배제할 수 없다. 이 경우 기존 주주의 지분 희석 이슈가 다시 부각될 수 있다.",
+    "en": "C-Lab completed a 19 billion won rights offering in September 2025 to fund R&D and infrastructure expansion. Given the persistent operating loss structure and the upfront investment burden required to execute large contracts, the possibility of additional future capital raises cannot be ruled out. Should this occur, existing shareholder dilution could again become a concern."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "지속적 손실에 따른 자금조달 부담",
-    "en": "Funding Pressure from Ongoing Losses"
+    "ko": "실행 리스크",
+    "en": "Execution Risk"
    },
    "body": {
-    "ko": "4년 연속 영업손실과 음(-)의 영업활동현금흐름이 지속되고 있어, 투자 확대를 뒷받침할 추가 자금조달 필요성이 상존한다. 유상증자나 전환사채 발행 등이 이루어질 경우 기존 주주의 지분 희석 가능성이 있다. 재무 완충력이 개선됐다 해도 손실이 장기화될 경우 이 여력은 다시 줄어들 수 있다.",
-    "en": "With four consecutive years of operating losses and negative operating cash flow, the need for additional funding to support expanded investment persists. Rights offerings or convertible bond issuance, if pursued, could dilute existing shareholders. Even though the financial cushion has improved, prolonged losses could erode it again."
+    "ko": "대규모 GPU 인프라 계약은 외주 생산 방식으로 수행되며, 계약금액의 50%는 선금, 30%는 중도금, 20%는 잔금으로 지급되는 구조다. 시스템 통합·검증 등 엔지니어링 역량이 요구되는 만큼, 구축 과정에서의 지연이나 품질 이슈가 발생하면 매출 인식 시점과 마진에 영향을 줄 수 있다. 엔비디아의 베라 루빈 세대 전환에 따른 기술적 복잡성 증가도 실행 부담 요인이다.",
+    "en": "The large-scale GPU infrastructure contracts are executed via an outsourced production model, with 50% of the contract value paid as a down payment, 30% as an interim payment, and 20% as a final payment. Given the engineering capability required for system integration and validation, delays or quality issues during construction could affect the timing of revenue recognition and margins. Increased technical complexity from NVIDIA's transition to the Vera Rubin generation is also an execution burden factor."
    }
   },
   {
    "cat": {
-    "ko": "프로젝트·고객 집중 리스크",
-    "en": "Project and Customer Concentration Risk"
+    "ko": "매출 인식 시점 리스크",
+    "en": "Revenue Recognition Timing Risk"
    },
    "body": {
-    "ko": "매출이 특정 대형 프로젝트나 엔비디아 생태계 관련 고객군에 상당 부분 의존하는 구조로 보인다. 특정 분기의 매출 급감·급증은 개별 프로젝트의 완료·지연 시점에 좌우될 수 있다. 고객·프로젝트 다변화가 충분히 이루어지지 않으면 실적 예측 가능성이 낮아질 수 있다.",
-    "en": "Revenue appears to depend significantly on specific large projects and customers linked to the NVIDIA ecosystem. Sharp quarter-to-quarter swings in revenue can be driven by the completion or delay of individual projects. Without sufficient customer and project diversification, earnings predictability could remain limited."
+    "ko": "계약 기간이 2031년까지로 장기간에 걸쳐 있어 연도별 매출 인식 규모의 편차가 커질 수 있다. SK증권과 한국투자증권 모두 실질적인 매출 반영은 2027년부터 본격화될 것으로 보고 있어, 2026년 하반기까지는 계약 규모와 실제 재무 실적 사이의 간극이 지속될 가능성이 있다.",
+    "en": "Because the contract period extends over a long horizon through 2031, the annual scale of revenue recognition could vary significantly year to year. Both SK Securities and Korea Investment & Securities expect substantive revenue reflection to begin only from 2027, meaning a gap between headline contract size and actual financial results could persist through the second half of 2026."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화",
-    "en": "Intensifying Competition"
+    "ko": "경쟁·수급 리스크",
+    "en": "Competitive and Market Structure Risk"
    },
    "body": {
-    "ko": "GPU 오케스트레이션, 비전 AI, 디지털트윈 각 영역에 국내외 다수의 사업자가 진입해 있어 경쟁이 심화될 가능성이 있다. 씨이랩보다 자본력이 큰 대기업 계열사나 글로벌 기업이 유사 솔루션을 확대할 경우 가격·영업 경쟁이 격화될 수 있다. 세 영역을 동시에 운영하는 전략이 자원 분산으로 이어질 위험도 배제할 수 없다.",
-    "en": "Numerous domestic and global players operate in GPU orchestration, Vision AI, and digital twins, raising the potential for intensifying competition. If larger, better-capitalized conglomerate affiliates or global firms expand similar solutions, price and sales competition could intensify. The risk that operating across all three segments simultaneously leads to resource dispersion cannot be ruled out."
+    "ko": "같은 국가 AI 컴퓨팅 자원 인프라 강화 사업에는 데이타솔루션 등 경쟁사도 삼성SDS 대상 별도 계약을 확보해 참여하고 있어, 시장이 특정 한 기업에 집중되는 구조가 아니다. 정부 사업 의존도가 높은 상황에서 향후 민간 시장으로의 확장 속도가 예상보다 늦어질 경우 성장 스토리의 지속성에 영향을 줄 수 있다.",
+    "en": "Within the same national AI Computing Resource Infrastructure Enhancement Project, competitor Datasolution has also secured a separate contract with Samsung SDS, meaning the market is not structured around a single dominant player. Given the current high dependence on government projects, if the pace of expansion into private markets lags expectations, it could affect the sustainability of the growth narrative."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월경(3분기 실적)",
-    "en": "Around November 2026 (Q3 earnings)"
+    "ko": "2026년 9월 중",
+    "en": "September 2026"
    },
    "what": {
-    "ko": "2025년 하반기와 유사하게 3분기 매출이 재차 확대되는지, 그리고 영업손실 축소 여부를 확인할 필요가 있다.",
-    "en": "Check whether Q3 revenue re-expands similarly to H2 2025 and whether the operating loss narrows."
+    "ko": "글로벌 컴퓨터 비전 경진대회 'AI City Challenge' Track 4의 최종 순위 및 ECCV 현장 시상 결과를 확인해 기술 경쟁력의 대외 검증 수준을 가늠할 수 있다.",
+    "en": "Check the final ranking and award results for Track 4 of the global 'AI City Challenge' computer vision competition at the ECCV venue to gauge external validation of the company's technical competitiveness."
    }
   },
   {
    "when": {
-    "ko": "지속 확인",
-    "en": "Ongoing"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "8월 파트너 서밋에서 언급된 35개 파트너사와의 협력이 실제 수주·매출로 이어지는지 관련 공시를 추적할 필요가 있다.",
-    "en": "Track disclosures on whether cooperation with the 35 partner firms mentioned at the August summit translates into actual orders and revenue."
+    "ko": "2026년 3분기보고서 제출 시점에 GPU 인프라 계약의 매출 인식 진행 상황과 영업손실 추이 변화를 확인해야 한다.",
+    "en": "At the time of the Q3 2026 quarterly report filing, monitor the progress of revenue recognition from the GPU infrastructure contracts and any change in the operating loss trend."
    }
   },
   {
    "when": {
-    "ko": "MOU 후속 일정",
-    "en": "Follow-up to the MOU"
+    "ko": "2026년 하반기~연말",
+    "en": "Second half through year-end 2026"
    },
    "what": {
-    "ko": "5월 체결된 호남권 AI 데이터센터 구축 MOU가 실제 계약이나 수주 공시로 구체화되는지 확인이 필요하다.",
-    "en": "Verify whether the May MOU for a Honam-region AI data center build-out materializes into concrete contracts or order disclosures."
+    "ko": "선급금이 집행된 GPU·핵심 장비의 실제 발주·인도 및 베라 루빈 세대 시스템 구축 진행 상황을 확인할 필요가 있다.",
+    "en": "Monitor the actual procurement and delivery of GPU and core equipment for which advance payments were disbursed, along with progress on building Vera Rubin-generation systems."
    }
   },
   {
    "when": {
-    "ko": "분기별 손익 발표 시",
-    "en": "At each quarterly earnings release"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "선제적 투자로 인한 일회성 비용이 언제까지 지속되는지, 그리고 회사가 밝힌 2026년 턴어라운드 목표 달성 경로를 점검할 필요가 있다.",
-    "en": "Monitor how long one-off costs from preemptive investment persist and track progress toward the company's stated 2026 turnaround goal."
+    "ko": "SK증권과 한국투자증권이 언급한 삼성SDS·비엔아이엔씨 대상 계약의 매출 인식 개시 시점 및 자체 소프트웨어(아스트라고) 매출 비중 확대 여부를 확인해야 한다.",
+    "en": "Confirm the start of revenue recognition from the Samsung SDS and B&I NC contracts referenced by SK Securities and Korea Investment & Securities, and whether the share of proprietary software (AstraGo) revenue expands."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 9월 이후",
+    "en": "After September 2026"
+   },
+   "what": {
+    "ko": "정부 AI 전환(AX) 사업 및 민간 AI 데이터센터 대상 신규 공급계약 공시 여부를 지속적으로 확인해야 한다.",
+    "en": "Continue to check for new supply contract disclosures tied to the government's AI transformation (AX) initiative and private-sector AI data centers."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "씨이랩은 AI Infra·Vision AI·Digital Twin 3개 사업이 2025년 13% 매출 성장과 2026년 1분기 42% 성장을 보이며 외형은 확대되고 있지만, 2026년 2분기 영업손실이 27.2억원으로 재차 커지면서 손익 개선 경로는 아직 불확실하다. 매출은 프로젝트 완료 시점에 따라 분기별 편차가 크게 나타나, 특정 분기 실적만으로 추세를 판단하기 어려운 구조다. 엔비디아 파트너십과 포스코DX 등 대형 레퍼런스는 사업 검증의 근거가 되지만, 아직 매출 규모 자체는 산업 성장 속도에 비해 작다. 2025년 말 자본총계 확대와 낮은 부채비율은 재무 완충력을 뒷받침하지만, 지속되는 영업손실과 음(-)의 현금흐름은 자금조달 필요성을 상시적인 변수로 남긴다. 회사는 2026년을 피지컬 AI 밸류체인 기반 턴어라운드의 해로 제시하며 데이터센터 MOU, 파트너 생태계 확대 등 후속 이벤트를 예고하고 있다. 이러한 이벤트들의 실제 매출·수익성 반영 여부가 향후 실적 추세를 가르는 핵심 관찰 포인트가 될 것으로 보인다.",
-   "en": "XIIlab's three businesses—AI Infra, Vision AI, and Digital Twin—expanded revenue by 13% in 2025 and 42% in Q1 2026, yet the path to profitability remains uncertain as the Q2 2026 operating loss widened again to KRW 2.72bn. Revenue shows large quarter-to-quarter swings tied to project completion timing, making it difficult to judge trends from any single quarter. Large references such as the NVIDIA partnership and the POSCO DX case validate the business model, but overall revenue scale remains small relative to the pace of industry growth. The expanded year-end 2025 equity base and low debt ratio support a financial cushion, but persistent operating losses and negative cash flow keep funding needs as an ongoing variable. The company has framed 2026 as a turnaround year built on a physical-AI value chain, signaling follow-up events such as the data-center MOU and partner-ecosystem expansion. Whether these events translate into actual revenue and profitability will likely be the key factor shaping future earnings trends."
+   "ko": "씨이랩은 2026년 삼성SDS·비엔아이엔씨 대상 총 3,458억원 규모의 GPU 인프라 계약을 확보하며 국가 AI 컴퓨팅 자원 인프라 강화 사업의 주요 참여자로 부상했다. 엔비디아 엘리트 파트너 승급과 ICML·AI City Challenge 등에서의 기술 검증은 회사의 기술 경쟁력을 뒷받침하는 요인이다. 그러나 재무제표상으로는 2022년부터 2025년까지 4개년 연속 영업적자가 이어졌고, 2026년 1·2분기에도 손실 규모가 확대되는 모습을 보였다. 대형 계약의 실제 매출 인식은 SK증권과 한국투자증권 모두 2027년부터 본격화될 것으로 전망하고 있어, 계약 체결과 실적 개선 사이에는 상당한 시차가 존재한다. 같은 국가 프로그램 내 데이타솔루션 등 경쟁사도 유사한 규모의 별도 계약을 확보하고 있어 시장이 단일 기업에 집중되는 구조는 아니다. 투자자는 계약 규모라는 헤드라인 숫자와, 실제 매출 인식 속도·자체 소프트웨어 비중 확대에 따른 마진 개선이라는 실질 변수를 구분해 살펴볼 필요가 있다.",
+   "en": "C-Lab emerged as a major participant in South Korea's national AI Computing Resource Infrastructure Enhancement Project by securing a combined 345.8 billion won in GPU infrastructure contracts with Samsung SDS and B&I NC in 2026. Its upgrade to NVIDIA Elite Partner status and technical validation at events such as ICML and the AI City Challenge support the company's technological credibility. However, on the financial statements, operating losses persisted for four consecutive years from 2022 through 2025, and the loss size widened further in both Q1 and Q2 2026. Both SK Securities and Korea Investment & Securities project that actual revenue recognition from the large contracts will only ramp up meaningfully from 2027, indicating a substantial time lag between contract signing and earnings improvement. Within the same national program, competitors such as Datasolution have secured separate contracts of comparable scale, meaning the market is not structured around a single dominant player. Investors should distinguish between the headline contract value and the substantive variables of actual revenue recognition speed and margin improvement driven by expanding proprietary software share."
   }
  },
  "sources": [
   "https://kr.investing.com/equities/xiilab-co-ltd-earnings",
   "https://bullstory.io/blog/%EC%94%A8%EC%9D%B4%EB%9E%A9-%EC%A3%BC%EA%B0%80-%EA%B8%89%EB%93%B1-%EC%9D%B4%EC%9C%A0-%EC%98%A4%EB%8A%98-%EC%9E%A5%EC%A4%91-20-%ED%8F%AD%EB%93%B1%EC%97%90-%EC%88%A8%EC%9D%80-%EC%A7%84%EC%A7%9C-%EB%B0%B0%EA%B2%BD",
+  "https://www.hellot.net/news/article.html?no=114608",
   "https://m.thinkpool.com/item/189330",
   "https://m.irgo.co.kr/IR-COMP/189330/",
-  "https://eureka.hankyung.com/search/189330",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260319000748&docno=&viewerhost=",
-  "https://www.valueline.co.kr/finance/summary/189330",
   "https://www.investing.com/equities/xiilab-co-ltd",
+  "https://eureka.hankyung.com/search/189330",
   "https://itooza.com/vscore/189330",
-  "https://www.bloter.net/news/articleView.html?idxno=662238",
-  "https://zdnet.co.kr/view/?no=20260514075329",
-  "https://zdnet.co.kr/view/?no=20260213143902",
-  "https://www.newspim.com/news/view/20260513001282",
-  "https://v.daum.net/v/KIhTRdiB5N?f=p",
-  "https://www.hellot.net/news/article.html?no=104250",
-  "https://www.jobkorea.co.kr/Recruit/Co_Read/C/xiilab/Company_name/%E3%88%9C%EC%94%A8%EC%9D%B4%EB%9E%A9",
-  "https://marketin.edaily.co.kr/News/ReadE?newsId=02952006645347568",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1688685090045.pdf"
+  "https://markets.hankyung.com/stock/189330",
+  "https://www.hellot.net/news/article.html?no=114079",
+  "https://www.newspim.com/news/view/20260716000122",
+  "http://www.emoneynews.co.kr/news/articleView.html?idxno=128174",
+  "https://kr.investing.com/news/global-filings/article-93CH-1942605",
+  "https://www.newspim.com/news/view/20260807000059",
+  "https://www.bloter.net/news/articleView.html?idxno=669496",
+  "https://www.bloter.net/news/articleView.html?idxno=643435",
+  "https://www.newspim.com/news/view/20260715001057",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03870406645482048"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -224,9 +234,9 @@
   "인공지능(AI)"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:08",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -325,14 +335,14 @@
    }
   ],
   "valuation": {
-   "price": 16600,
-   "mcap": 0.1557,
+   "price": 11530,
+   "mcap": 0.1082,
    "shares": 9382284,
    "total_shares": 9382284,
    "wavg_shares": 9380224,
    "per": null,
    "eps": -546,
-   "pbr": 7.45,
+   "pbr": 5.1727,
    "bps": 2229,
    "roe_ttm": -37.8,
    "ttm_window": "2025Q3~2026Q2",
