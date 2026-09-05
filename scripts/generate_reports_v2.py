@@ -1423,11 +1423,29 @@ def fx_to_krw(ccy):
     return rate
 
 
-def dart_total_shares(dart, ticker):
-    """발행주식총수(보통주+우선주) — 네이버·토스와 같은 주당지표 분모.
-    최신 분기보고서 → 직전 사업보고서 순으로 시도. 실패 시 None."""
-    cur = datetime.date.today().year
-    for year, code in ((cur, "11013"), (cur - 1, "11011")):
+def dart_total_shares(dart, ticker, today=None):
+    """발행주식총수(보통주+우선주) — 주당지표 분모. 실패하면 None.
+
+    가장 최근에 나온 보고서부터 본다. 예전에는 1분기(11013) 다음에 곧바로 작년
+    사업보고서로 내려갔다 — 반기(11012)와 3분기(11014)를 아예 묻지 않았다.
+    그래서 2분기에 증자한 회사는 6월부터 '증자 전' 주식수를 들고 있게 된다.
+    분자(분기말 자본)는 증자 뒤 값이라 BPS 가 그만큼 부풀어 오른다.
+
+      SKC 2026 반기   지배지분 1.99조 ÷ 37,868,298주(1분기 기준) = BPS 52,664
+                      실제 주식수 49,598,298 로 나누면 40,209
+                      자본금이 1,893억 → 2,480억(1.31배)인데 주식수 비도 1.31배 —
+                      두 출처가 같은 배수를 가리킨다. 분모만 낡았던 것이다.
+
+    2,563종목 중 106종목이 시장 주식수보다 적은 발행총수를 들고 있었다.
+    (부스타·삼양엔씨켐은 정확히 2배 — 액면분할 뒤 옛 주식수를 그대로 쓰고 있었다.)
+
+    아직 안 나온 보고서는 묻지 않는다(_reprt_available). 가장 최근 것에서 값을
+    얻으면 거기서 끝내므로 평소 호출 수는 예전과 같다."""
+    today = today or datetime.date.today()
+    cur = today.year
+    tries = [(cur, c) for c in ("11014", "11012", "11013") if _reprt_available(c, cur, today)]
+    tries += [(cur - 1, "11011"), (cur - 1, "11014"), (cur - 1, "11012")]
+    for year, code in tries:
         df = _dart_call(dart.report, ticker, "주식총수", year, code)
         if df is None or getattr(df, "empty", True):
             continue

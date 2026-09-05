@@ -61,6 +61,8 @@ S.QUOTA_FILE = DATA / "dart_quota_exhausted"
 # 새 전역 마커를 여기 안 넣으면 검사가 진짜 저장소의 파일을 읽는다. 실제로
 # 그랬다 — 잔액 마커가 저장소에 생긴 날 ⑥ 주문 검사가 통째로 무너졌다.
 S.CREDIT_FILE = DATA / "anthropic_credit_exhausted"
+# 뒤쪽 절에서 가짜로 갈아 끼우는 함수들 — 원본을 미리 잡아 둔다.
+REAL_TOTAL_SHARES = M.dart_total_shares
 S.STOCKS_JS = DATA / "stocks.js"
 M.OUT_DIR = S.OUT_DIR
 M.BATCH_DIR = S.BATCH_DIR
@@ -1001,6 +1003,57 @@ ok(S.credit_exhausted_today(), "회수 중 감지해도 마커를 남긴다")
 S.CREDIT_FILE.unlink(missing_ok=True)
 for p in S.BATCH_DIR.glob("*.json"):
     p.unlink()
+
+
+print()
+print("⑭ 주식수는 가장 최근 보고서에서 — 증자 뒤 분모가 낡으면 BPS 가 부푼다")
+M.dart_total_shares = REAL_TOTAL_SHARES      # 앞 절에서 가짜로 바꿔 놨다
+class FakeDF:
+    """DART 주식총수 표 흉내 — empty 와 iterrows 만 있으면 된다."""
+    def __init__(self, rows): self.rows = rows
+    @property
+    def empty(self): return not self.rows
+    def iterrows(self): return enumerate(self.rows)
+
+def shares_dart(table):
+    """{(year, code): 보통주 수} 로 응답하는 가짜 DART. 물어본 순서를 함께 돌려준다."""
+    asked = []
+    def report(ticker, kind, year, code):
+        asked.append((year, code))
+        n = table.get((year, code))
+        return FakeDF([{"se": "보통주", "istc_totqy": str(n)}] if n else [])
+    return types.SimpleNamespace(report=report), asked
+
+SEP = REAL_DATE(2026, 9, 5)     # 반기까지 나온 시점 · 3분기는 아직
+# 증자가 2분기에 있었다 — 1분기 37,868,298 · 반기 49,598,298 (SKC 실제 값)
+d, asked = shares_dart({(2026, "11013"): 37_868_298, (2026, "11012"): 49_598_298,
+                        (2025, "11011"): 36_252_000})
+ok(M.dart_total_shares(d, "011790", today=SEP) == 49_598_298, "반기 주식수를 쓴다(1분기 값이 아니라)")
+ok(asked[0] == (2026, "11012"), "3분기는 아직이라 묻지 않고 반기부터 묻는다", str(asked))
+
+# 반기에 값이 없으면 1분기로 내려간다
+d, asked = shares_dart({(2026, "11013"): 37_868_298, (2025, "11011"): 36_252_000})
+ok(M.dart_total_shares(d, "011790", today=SEP) == 37_868_298, "반기가 비면 1분기로")
+ok(asked == [(2026, "11012"), (2026, "11013")], "반기 → 1분기 순서", str(asked))
+
+# 올해 것이 하나도 없으면 작년 사업보고서
+d, asked = shares_dart({(2025, "11011"): 36_252_000})
+ok(M.dart_total_shares(d, "011790", today=SEP) == 36_252_000, "올해 게 없으면 작년 사업보고서")
+
+# 10월 말이면 3분기부터 묻는다
+d, asked = shares_dart({(2026, "11014"): 51_000_000, (2026, "11012"): 49_598_298})
+ok(M.dart_total_shares(d, "011790", today=REAL_DATE(2026, 10, 26)) == 51_000_000, "3분기가 나왔으면 그것부터")
+ok(asked[0] == (2026, "11014"), "10월 말엔 3분기부터", str(asked))
+
+# 같은 구분이 여러 줄로 와도 두 배가 되지 않는다(웅진씽크빅) — 기존 보호가 살아 있는가
+def dup_report(ticker, kind, year, code):
+    if (year, code) != (2026, "11012"):
+        return FakeDF([])
+    return FakeDF([{"se": "보통주", "istc_totqy": "56827085"},
+                   {"se": "보통주", "istc_totqy": "56827085"},
+                   {"se": "우선주", "istc_totqy": "1000000"}])
+ok(M.dart_total_shares(types.SimpleNamespace(report=dup_report), "095720", today=SEP) == 57_827_085,
+   "같은 구분이 두 줄이어도 더하지 않는다(보통주 최대 + 우선주)")
 
 print()
 print(f"통과 {passed} · 실패 {failed}")
