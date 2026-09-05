@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "전력기기 섹터 수혜, 본업 수익성 회복이 관건",
-  "en": "Power Equipment Sector Tailwind — Core Profitability Recovery Is the Key Hurdle"
+  "ko": "전력망 훈풍 속 본업 적자는 여전한 숙제",
+  "en": "Power-Grid Tailwinds, But Core Business Losses Persist"
  },
  "lead": {
-  "ko": "서전기전은 배전반·MCC 중심의 종합 전력기자재 제조사로 글로벌 전력 인프라 투자 확대라는 구조적 기회를 안고 있으나, 본업 영업적자가 지속되는 가운데 2026년 상반기 공공기관 입찰 제한이 단기 수익성에 추가 부담을 주고 있다.",
-  "en": "Seojeon Electric is a full-range switchgear and MCC manufacturer positioned to benefit from the global power infrastructure build-out, but sustained core operating losses and a public procurement suspension through June 2026 weigh on near-term profitability."
+  "ko": "서전기전은 AI 데이터센터·노후 전력망 교체 수요라는 업종 훈풍을 받고 있지만, 2025년에도 영업손실이 이어졌고 순이익 개선은 서울사무소 매각이라는 일회성 요인에 기댄 결과였다.",
+  "en": "Seojeon Electric Machinery is riding sector tailwinds from AI data-center and aging grid replacement demand, but its 2025 operating loss persisted and the net-profit turnaround relied on a one-off Seoul office disposal gain."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 681억원(+7.5% YoY)으로 최근 4년 최고치를 경신했으나, 영업손실은 88억원(OPM -12.9%)으로 원자재·제조원가 상승이 수익성을 압박했다.",
-   "en": "FY2025 consolidated revenue reached KRW 68.1 bn (+7.5% YoY), the highest in four years, but operating loss widened to KRW 8.8 bn (OPM -12.9%) as raw material and manufacturing cost inflation squeezed margins."
+   "ko": "2025년 매출은 681억원으로 전년 대비 늘었지만 영업손실은 88억원으로 오히려 확대됐다.",
+   "en": "2025 revenue rose to KRW 68.1 billion year over year, yet the operating loss widened to KRW 8.8 billion."
   },
   {
-   "ko": "2025년 당기순이익(지배주주) 69.4억원은 서울 마곡 사무소 유형자산 매각에 따른 영업외 일회성 이익이 핵심으로, 본업 영업현금흐름은 -39.7억원으로 부정적이다.",
-   "en": "FY2025 net profit attributable to owners of KRW 6.9 bn was driven almost entirely by a one-time gain from the Seoul Magok office disposal; core operating cash flow remained negative at KRW -4.0 bn."
+   "ko": "2025년 3분기 지배주주 순이익 181억원은 서울 마곡 사무소 매각(297억원) 완료 시점과 겹쳐 일회성 이익 성격이 강하다.",
+   "en": "The KRW 18.1 billion attributable net profit in Q3 2025 coincided with the completion of the KRW 29.7 billion Magok Seoul office sale, indicating a largely one-off gain."
   },
   {
-   "ko": "2020년 KEPIC-EN 원전 인증 취득 후 기장 연구로(~2027) 납품 진행 중 — 신한울 3·4호기 및 SMR 시장을 중장기 성장 동력으로 공식 추진.",
-   "en": "KEPIC-EN nuclear certification obtained in 2020; currently supplying switchgear to the Gijang Research Reactor through 2027, with stated ambitions to enter the Shin-Hanul 3/4 and SMR markets as medium-term growth pillars."
+   "ko": "2026년 상반기(1·2분기)는 매출이 각각 74억원, 120억원에 그치며 다시 영업적자·순손실을 기록했다.",
+   "en": "In H1 2026, quarterly revenue fell to KRW 7.4 billion (Q1) and KRW 12.0 billion (Q2), with both quarters returning to operating and net losses."
   },
   {
-   "ko": "2026년 3월 31일~6월 30일 공공기관·국가계약 입찰 3개월 제한 — 해당 거래처 매출 258억원 규모로 상반기 수주 공백 우려.",
-   "en": "A 3-month public procurement suspension (March 31–June 30, 2026) covers ~KRW 25.8 bn in customer revenues, creating a near-term order gap in H1 2026."
+   "ko": "부채비율은 2024년 101.5%에서 2025년 79.4%로 낮아졌으나, 2025년 연간 영업활동현금흐름은 -40억원으로 다시 유출 전환했다.",
+   "en": "The debt ratio eased from 101.5% in 2024 to 79.4% in 2025, but full-year operating cash flow reversed to an outflow of KRW 4.0 billion."
   },
   {
-   "ko": "2026년 3월 코스닥 소속부가 투자주의 환기종목에서 중견기업부로 변경되어 기업 건전성 개선 신호를 발신, AI·재생에너지 주도 전력기기 섹터 모멘텀과 결합.",
-   "en": "Reclassified from KOSDAQ 'investment-alert' to the 'mid-cap' segment in March 2026, signaling improved corporate standing amid broad momentum in the AI/renewables-driven power equipment sector."
+   "ko": "철도 통신 시스템 진출 등 신사업 다각화가 보도됐으나 매출 기여 규모는 아직 공시로 확인되지 않았다.",
+   "en": "Media reports cite a move into rail communication systems as a diversification effort, but the revenue contribution has not yet been confirmed in disclosures."
   }
  ],
  "business": {
-  "ko": "서전기전은 1988년 설립된 종합 중전기기 제조기업으로, 경기도 이천시 대월 일반산업단지에 생산거점을 두고 있다. 핵심 제품은 수배전반(고압·저압), 전동기제어반(MCC), 분전반 등 배전반 계열이며, 한국전력공사와 발전 5개사 유자격 공급업체로 등록되어 국내 공공·산업 부문 납품을 지속해 왔다. 솔루션 부문에서는 배전자동화시스템, FACTS(유연송전시스템), 분산전원장치, 계측제어 시스템 등 고부가 디지털 전력 솔루션도 제공한다. 2020년 원자력발전소용 고압·저압 배전반 및 MCC에 KEPIC-EN(원자력 전기부문) 인증을 취득해 원전 시장 진입 자격을 확보했고, 현재 기장 연구용 원자로(2027년 완공 예정)에 수배전반을 납품 중이다. SF6 가스를 대체하는 Dry-Air 방식 GIS(가스절연개폐장치) 관련 환경부 녹색기술인증도 보유하고 있으며, UN 공통조달플랫폼(UNGM) 및 싱가포르 전자조달(GeBiz)에 벤더로 등록되어 해외 시장 진입 기반을 갖추고 있다. 2009년 부설연구소 설립 이후 지식재산권 확보와 각종 인증을 통해 하이엔드 전력기기 시장으로 제품 포트폴리오를 넓혀왔다. 국내 경쟁사로는 LS ELECTRIC, 제일일렉트릭, 광명전기 등 배전반 제조사가 있으며, 서전기전은 원전 인증 보유와 FACTS 솔루션 기술을 주요 차별점으로 내세운다. 공공기관 계약 의존도가 높은 사업 구조상, 공기업 발주 사이클과 구리·철강 원자재 가격 변동이 수익성에 직접적인 영향을 미친다.",
-  "en": "Seojeon Electric Co., Ltd. (est. 1988) is a comprehensive medium/high-voltage electrical equipment manufacturer headquartered at the Icheon Daewol General Industrial Complex in Gyeonggi-do. Core products include high-voltage and low-voltage switchgear, motor control centers (MCCs), and distribution boards, supplied to KEPCO and the five major power-generation subsidiaries under an approved vendor framework. The solutions segment offers higher-value products such as distribution automation systems, FACTS (Flexible AC Transmission Systems), distributed power sources, and measurement and control systems. In 2020, the company obtained KEPIC-EN certification for nuclear-grade switchgear and MCCs, enabling entry into the nuclear power market; it is currently supplying switchgear to the Gijang Research Reactor (completion 2027). The company holds a green technology certification for SF6-free Dry-Air GIS and is registered as a vendor on UNGM and Singapore's GeBiz, underpinning nascent overseas ambitions. Since establishing an in-house R&D center in 2009, Seojeon has steadily expanded intellectual property and certifications to address high-end power equipment markets. Domestic competitors include LS ELECTRIC, Jeil Electric, and Gwangmyung Electric; Seojeon differentiates through its KEPIC-EN nuclear credentials and FACTS expertise. Given significant reliance on public-sector contracts, the company's profitability is closely tied to public utility procurement cycles and copper/steel price trends."
+  "ko": "서전기전은 1988년 설립된 전력변환기기 전문기업으로, 발전소에서 생산된 전력이 송변전계통을 거쳐 최종 소비자에게 공급되는 배전계통에 필요한 수배전반과 전력기자재를 제조·납품한다. 주요 제품은 수배전반, 고압 배전반, 저압 배전반, MCC(전동기제어반), 분전반 등이며, 솔루션으로는 배전자동화시스템, 분산전원장치, 전력수송, 전력관리, 계측제어, FACTS(유연송전시스템) 등을 보유하고 있다. 생산기지는 경기도 이천시 대월면에 위치한다. 최근에는 철도 통신 시스템 사업에 진출해 에너지 솔루션 중심의 사업 포트폴리오를 다각화하려는 움직임이 보도됐다. 회사는 부설 연구소를 중심으로 지식재산권을 확보하고 기술 중심 경영을 표방하고 있다. 2025년 8월에는 서울 강서구 마곡 소재 서울사무소(연구개발센터) 부지를 297억원에 매각 완료했고, 매각대금 일부로 서울 송파구 오금로 소재 부동산을 115억원에 양수하기로 결정하며 사업장 재편을 진행했다. 경쟁 구도상 LS ELECTRIC 등 대형 전력기기 업체와 비교하면 매출 규모가 작은 중소형 배전반 전문업체에 해당한다. 부문별 정확한 매출 비중은 별도로 확인되지 않아, 수배전반 중심의 전통 사업과 신사업의 매출 기여도는 향후 공시를 통해 확인이 필요하다.",
+  "en": "Founded in 1988, Seojeon Electric Machinery is a power conversion equipment specialist that manufactures and supplies switchgear and power materials needed in the distribution network through which electricity generated at power plants reaches end users via transmission systems. Its core products include switchgear, high-voltage and low-voltage distribution panels, motor control centers (MCC), and distribution boards, alongside solutions such as distribution automation systems, distributed power units, power transmission, power management, instrumentation and control, and flexible AC transmission systems (FACTS). The company's production base is located in Daewol-myeon, Icheon, Gyeonggi Province. It has recently been reported to have entered the rail communication systems business as part of an effort to diversify its portfolio around energy solutions. The company operates an in-house R&D center and positions itself around a technology-driven management approach. In August 2025, it completed the sale of its Seoul office (R&D center) site in Magok, Gangseo-gu for KRW 29.7 billion, and separately decided to acquire a property in Ogeum-ro, Songpa-gu for KRW 11.5 billion using part of the proceeds, reorganizing its facility footprint. Relative to larger power equipment makers such as LS ELECTRIC, the company is a smaller-scale switchgear specialist. Precise segment-level revenue splits between the traditional switchgear business and newer initiatives have not been separately confirmed and warrant future disclosure."
  },
  "earnings": {
-  "ko": "최근 4개 사업연도의 실적은 외형 성장과 수익성 회복 사이의 지속적인 괴리를 보여준다. 2022년 매출 507억원에서 2023년 432억원으로 역성장하며 영업손실 34.6억원, 순손실 37.4억원을 기록했다. 2024년은 매출이 633억원으로 반등했고 영업이익이 6.1억원(OPM 1.0%)으로 소폭 흑자 전환했으나, 안정적인 수익 기반으로 보기에는 이익 규모가 미미했다. 2025년 연결 매출은 681억원으로 +7.5% 성장했음에도 영업손실이 88억원(OPM -12.9%)으로 다시 크게 확대됐는데, 원자재 비용 상승과 제조원가 증가가 주된 원인이다. 반면 당기순이익(지배주주)은 69.4억원으로 흑자를 기록했는데, 이는 서울 마곡 사무소 유형자산 매각에 따른 영업외 일회성 이익이 반영된 결과다. 실제로 2025년 3분기 단일 분기에 순이익(지배주주) 181억원이 집중됐고, 나머지 분기는 모두 적자였다. 분기별 매출 패턴은 2025년 1분기 44억원 → 2분기 112억원 → 3분기 203억원 → 4분기 323억원으로, 매출의 절반 이상이 4분기에 몰리는 강한 하반기 집중 계절성을 보인다. 2026년 1분기 매출은 74억원으로 전년 동기(44억원) 대비 증가했으나, 영업손실 42억원·순손실(지배주주) 41억원으로 적자 기조가 이어지며 계절성을 감안해도 공백이 지속되고 있다. 영업현금흐름은 2025년 -39.7억원, 2022년 -38.2억원으로 두 해에 마이너스를 기록해 본업 차원의 현금 창출이 취약하다. 부채비율은 2024년 101.5%에서 2025년 79.4%로 개선됐는데, 이는 자산 매각으로 자본이 확충된 효과다.",
-  "en": "Financials over the past four fiscal years illustrate a persistent gap between top-line growth and core profitability. Revenue declined from KRW 50.7 bn in FY2022 to KRW 43.3 bn in FY2023, accompanied by an operating loss of KRW 3.5 bn and a net loss of KRW 3.7 bn. FY2024 saw revenue recover to KRW 63.3 bn with a slim operating profit of KRW 0.6 bn (OPM 1.0%), but the margin base remained fragile. In FY2025, consolidated revenue grew 7.5% to KRW 68.1 bn while operating loss widened sharply to KRW 8.8 bn (OPM -12.9%), driven by raw material and construction cost inflation. Net profit attributable to owners reached KRW 6.9 bn, but this was almost entirely due to the one-time gain from the Seoul Magok office disposal — KRW 18.1 bn of net income was concentrated in Q3 2025 alone, while the remaining quarters were all loss-making. Quarterly revenue displayed pronounced H2 seasonality: KRW 4.4 bn (Q1) → KRW 11.2 bn (Q2) → KRW 20.3 bn (Q3) → KRW 32.3 bn (Q4). Q1 2026 revenue of KRW 7.4 bn exceeded the Q1 2025 base, yet operating and net losses were approximately KRW 4.2 bn and KRW 4.1 bn respectively, confirming the operating loss trend has not reversed. Operating cash flow was negative in both FY2025 (KRW -4.0 bn) and FY2022 (KRW -3.8 bn), underscoring weak underlying cash generation. The debt-to-equity ratio improved from 101.5% in FY2024 to 79.4% in FY2025, reflecting equity accretion from the asset disposal."
+  "ko": "연간 매출은 2022년 507억원, 2023년 433억원으로 줄었다가 2024년 633억원, 2025년 681억원으로 2년 연속 회복세를 보였다. 그러나 영업이익은 2022년 -29억원, 2023년 -35억원의 적자를 내다 2024년 6.1억원으로 흑자 전환했으나, 2025년에는 매출 증가에도 불구하고 -88억원으로 적자 폭이 크게 확대됐다. 반면 지배주주 순이익은 2022년 -32억원, 2023년 -37억원 적자에서 2024년 11억원, 2025년 69억원으로 개선됐는데, 이는 영업손익 흐름과 뚜렷한 괴리를 보인다. 분기 데이터를 보면 2025년 3분기 지배주주 순이익이 181억원으로 급증했는데, 이 시기는 서울 마곡 사무소 매각대금 지급 및 소유권이전등기가 완료된 시점과 겹쳐 일회성 자산처분이익이 크게 반영된 것으로 해석된다. 실제 같은 분기 영업이익은 2.9억원에 불과해 순이익 규모와 큰 차이를 보였다. 2025년 4분기에는 매출이 323억원으로 연중 최대치를 기록했음에도 영업손실 -3.7억원, 순손실 -24억원을 기록하며 다시 적자로 돌아섰고, 2026년 1분기(매출 74억원, 영업손실 -42억원, 순손실 -41억원)와 2분기(매출 120억원, 영업손실 -9.5억원, 순손실 -9.2억원) 모두 매출 규모가 축소되며 적자가 이어졌다. 자기자본은 2025년 말 384억원으로 전년 대비 늘었고 부채비율도 101.5%에서 79.4%로 낮아졌으나, 연간 영업활동현금흐름은 2024년 +4.9억원에서 2025년 -40억원으로 다시 유출 전환해 현금창출력 측면에서는 개선이 뚜렷하지 않다.",
+  "en": "Annual revenue declined from KRW 50.7 billion in 2022 to KRW 43.3 billion in 2023, then recovered for two consecutive years to KRW 63.3 billion in 2024 and KRW 68.1 billion in 2025. Operating profit, however, told a different story: after losses of KRW -2.9 billion in 2022 and KRW -3.5 billion in 2023, it turned positive at KRW 0.6 billion in 2024, but swung back to a much larger loss of KRW -8.8 billion in 2025 despite the revenue growth. Attributable net income, by contrast, improved from losses of KRW -3.2 billion (2022) and KRW -3.7 billion (2023) to gains of KRW 1.1 billion (2024) and KRW 6.9 billion (2025), diverging sharply from the operating trend. Quarterly data show attributable net income spiking to KRW 18.1 billion in Q3 2025, a period that coincided with the payment settlement and title transfer completion for the Magok Seoul office sale, suggesting the figure was heavily driven by a one-off disposal gain. Indeed, operating profit in that same quarter was only KRW 0.29 billion, far below the net income figure. In Q4 2025, revenue reached a full-year high of KRW 32.3 billion, yet the company posted an operating loss of KRW -0.37 billion and a net loss of KRW -2.4 billion, returning to negative territory. Both Q1 2026 (revenue KRW 7.4 billion, operating loss KRW -4.2 billion, net loss KRW -4.1 billion) and Q2 2026 (revenue KRW 12.0 billion, operating loss KRW -0.9 billion, net loss KRW -0.9 billion) saw shrinking revenue alongside continued losses. Equity rose to KRW 38.4 billion at year-end 2025 and the debt ratio eased from 101.5% to 79.4%, but annual operating cash flow reversed from KRW +0.5 billion in 2024 to KRW -4.0 billion in 2025, indicating no clear improvement in cash-generating capability."
  },
  "industry": {
-  "ko": "글로벌 전력 기자재 시장은 AI 데이터센터의 전력 수요 폭증, 재생에너지 확대, 노후 전력망 교체 수요가 동시에 맞물리며 수급 불균형이 심화되고 있다. 국내 변압기 중심 전력기기 업계에서는 3~4년 치 수주가 적체될 정도의 쇼티지가 보고될 만큼 수요 초과 국면이 이어지고 있으며, 주요 업체들의 수주잔고가 역대 최고치를 경신하고 있다는 평가다. 배전반은 미국 Section 232 철강 관세 비대상 품목으로 관세 리스크가 낮고, AI발 데이터센터 수요 증가와 함께 고사양 배전반의 단가 상승 흐름도 관찰된다. 국내 신정부는 2030년 RE100 목표 아래 태양광·해상풍력 벨트 조성과 원자력 병행 정책을 추진 중이어서 전력 설비 중장기 수요 기반이 확대될 전망이다. 다만 서전기전은 대형 변압기 수출 중심의 LS ELECTRIC, HD현대일렉트릭, 산일전기 등과 달리 배전반·제어반 내수 위주의 사업 구조를 유지해, 글로벌 수출 모멘텀을 직접 향유하기 어렵다. 원전 전기기기 분야는 KEPIC-EN 인증 문턱이 높아 진입 경쟁이 제한되어 있으며, 서전기전은 기장 연구로 납품 실적을 기반으로 상업용 원전 및 SMR 시장으로 포트폴리오를 확장하려 하고 있다. 배전자동화·FACTS 등 디지털 솔루션 부문은 에너지 전환 정책과 맞물려 점진적으로 고부가 수요가 늘어나는 방향성을 보이고 있다.",
-  "en": "The global power equipment market is experiencing deepening supply-demand imbalances as AI data-center load growth, renewable energy build-out, and aging grid replacement converge simultaneously. South Korean power equipment makers — particularly in the transformer segment — report order backlogs extending three to four years, with leading players recording all-time high backlogs. Switchgear and distribution boards are excluded from U.S. Section 232 steel tariffs, providing relative cost insulation, and premium-spec switchboards are benefiting from price escalation driven by data center demand. South Korea's new government is pursuing a parallel renewables-plus-nuclear strategy targeting RE100 by 2030, underpinning structural demand growth for power infrastructure. However, Seojeon's business mix — centered on domestic switchgear and MCCs rather than large transformer exports — limits its direct participation in the export momentum enjoyed by LS ELECTRIC, HD Hyundai Electric, and Sanil Electric. The nuclear electrical equipment segment is protected by high KEPIC-EN certification barriers, and Seojeon is leveraging its Gijang Research Reactor track record to pursue commercial nuclear and SMR opportunities. The distribution automation and FACTS solutions segment is expected to see gradual volume growth driven by the energy transition policy backdrop."
+  "ko": "글로벌 AI 데이터센터 확산에 따라 전력 수요가 빠르게 늘면서 변압기·전선·배전반 등 전력기기 밸류체인 전반에 걸쳐 수주 확대 기대감이 형성되고 있다. 국내에서도 새 정부가 2030년 RE100 목표 아래 재생에너지 확대, 태양광·해상풍력 벨트 조성, 원자력 병행 정책을 추진 중인 것으로 파악된다. 국내 데이터센터 전력 수요는 2028년까지 연평균 두 자릿수 성장이 전망되는 것으로 보고돼, 배전 인프라 투자 확대의 배경이 되고 있다. 다만 이 같은 업종 재평가는 주로 LS ELECTRIC, 일진전기, 제룡전기 등 초고압 변압기·대용량 전력기기 분야의 경쟁력을 갖춘 기업 중심으로 거론되는 경향이 있다. 서전기전은 2026년 3월 국내 원전 산업 육성 정책 기대감이 부각되며 업종 내 상승률 상위 종목으로 언급된 바 있으나, 당시에도 업종 전문가는 실제 이익 성장 여부를 분기 실적으로 확인하는 과정이 필요하다는 견해를 낸 것으로 보도됐다. 서전기전은 저압·고압 배전반 중심의 중소형 전문업체로, 대형 발주 프로젝트에서는 대형사와의 가격·기술 경쟁에 노출돼 있다. 신사업으로 거론되는 철도 통신 시스템 분야는 국가철도공단 등 공공 발주 프로젝트가 지속적으로 공고되는 시장으로, 진입 초기 단계로 판단된다.",
+  "en": "The rapid expansion of global AI data centers is driving faster power demand growth, fueling expectations of expanded order intake across the power equipment value chain including transformers, cables, and switchgear. In Korea, the new government is reported to be pursuing renewable energy expansion, solar and offshore wind belt development, and parallel nuclear power policies under a 2030 RE100 target. Domestic data-center power demand is projected to grow at a double-digit annual rate through 2028 according to industry research, underpinning distribution infrastructure investment. However, this sector re-rating tends to be discussed mainly around companies with competitiveness in ultra-high-voltage transformers and large-capacity power equipment, such as LS ELECTRIC, Iljin Electric, and Jeryong Electric. Seojeon Electric Machinery was cited in March 2026 as one of the top gainers within the sector amid expectations tied to domestic nuclear industry promotion policy, though an industry expert quoted at the time noted the need to confirm actual earnings growth through quarterly results before further chasing the rally. Seojeon Electric Machinery is a smaller specialist centered on low- and high-voltage switchgear, exposed to price and technology competition with larger players on major project tenders. Its reported new rail communication systems business operates in a market with ongoing public tenders from bodies such as the Korea National Railway, and appears to be at an early entry stage."
  },
  "outlook": {
-  "ko": "2026년 단기 전망에서 가장 주목할 불확실성은 공공기관·국가계약 입찰 참가 제한(2026년 3월 31일~6월 30일)이다. 해당 거래처 매출 규모가 258억원으로 확인되어, 3개월 제한이 상반기 수주 공백으로 이어질 가능성이 높다. 제한 기간 종료 후 하반기에는 수주 회복 가능성이 있으며, 역사적으로 3·4분기에 매출이 집중되는 계절성이 재현될 경우 하반기 실적이 상반기 손실을 일부 보완할 수 있다. 원전 사업의 경우, 기장 연구로 납품이 2027년까지 진행될 예정이며, 회사는 신한울 3·4호기 초고압 전력기기 수주와 SMR 특화 배전반 개발을 명시적 중장기 목표로 제시하고 있다. 한국전력공사 등을 상대로 제기된 20억원 규모 손해배상 소송의 진행 결과도 주요 고객 관계와 향후 수주에 영향을 미칠 수 있어 지속적인 모니터링이 필요하다. 새 정부의 RE100·재생에너지 정책이 배전자동화시스템 및 분산전원장치 수요 확대로 이어질 경우 솔루션 부문 부가가치 향상이 기대된다. 반면 원자재 가격 상승이 지속된다면 영업원가 개선이 지연되고, 공공발주 경쟁 심화 시 단가 전가 능력이 제한될 수 있다.",
-  "en": "The most significant near-term uncertainty is the public procurement suspension (March 31–June 30, 2026), which covers ~KRW 25.8 bn in customer revenues and is likely to create an H1 order shortfall. Following expiry of the restriction, a recovery in public-sector orders combined with pronounced H2 revenue seasonality could support a second-half rebound, partially offsetting H1 losses. In the nuclear segment, the Gijang Research Reactor supply continues through 2027; the company has explicitly targeted Shin-Hanul 3/4 high-voltage equipment and SMR-specific switchgear development as medium-term growth axes. The progress of the KRW 2.0 bn damage suit against KEPCO and nine others warrants ongoing monitoring given the potential impact on key customer relationships. The new government's RE100 and renewables policy could expand demand for distribution automation and distributed energy resource systems, potentially lifting the solutions segment's margin contribution. Conversely, persistent raw material (copper, steel) cost inflation would delay operating margin recovery, and intensifying public-sector competition could constrain pricing power."
+  "ko": "회사는 서울사무소 매각대금 일부를 활용해 2025년 5월 서울 송파구 오금로 소재 부동산을 115억원에 양수하기로 결정한 바 있어, 사업장 재편에 따른 조직·운영 효율화 효과가 향후 실적에 어떻게 반영되는지 지켜볼 필요가 있다. 언론 보도를 통해 철도 통신 시스템 사업 진출이 확인됐으나, 구체적 수주 규모나 매출 인식 시점은 아직 공시로 확인되지 않아 향후 발표를 지켜봐야 한다. 업종 차원에서는 AI 데이터센터·노후 전력망 교체·원전 정책 확대라는 구조적 수요가 이어지고 있어, 전력기자재 전반의 발주 환경은 우호적인 흐름으로 언급되고 있다. 다만 회사 자체의 2025년 영업손실 확대와 2026년 상반기 매출 축소는 이러한 업종 훈풍이 아직 본업 실적으로 충분히 전이되지 않았음을 보여준다. 원자재값(구리 등) 변동과 인플레이션에 따른 원가 부담이 과거 수익성 악화의 주된 요인으로 지목된 바 있어, 향후 원가 관리 능력이 관전 포인트다. 재무구조 측면에서는 부채비율이 낮아진 점이 긍정적이나, 영업활동현금흐름이 다시 유출로 전환한 만큼 현금창출력 회복 여부가 다음 분기 이후 실적에서 확인돼야 한다.",
+  "en": "The company decided in May 2025 to acquire a property in Ogeum-ro, Songpa-gu for KRW 11.5 billion using part of the proceeds from the Seoul office sale, and how this facility restructuring translates into organizational and operational efficiency gains going forward remains to be seen in future results. Media reports have confirmed the company's entry into rail communication systems, but specific order sizes or revenue recognition timing have not yet been confirmed through disclosures, warranting attention to upcoming announcements. At the sector level, structural demand from AI data centers, aging grid replacement, and expanded nuclear policy is described as an ongoing tailwind for the broader power equipment order environment. However, the company's own widening 2025 operating loss and shrinking H1 2026 revenue show that this sector tailwind has not yet sufficiently translated into the core business's results. Raw material cost volatility, particularly for copper, along with inflation-driven cost pressure, has been cited as a key factor behind past profitability deterioration, making cost management capability a key point to watch. On the balance sheet, the lower debt ratio is a positive, but the reversal of operating cash flow to an outflow means that a recovery in cash generation needs to be confirmed in subsequent quarterly results."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당순자산(BPS 3,532원)을 상당 폭 웃도는 순자산 프리미엄 구간에 위치해 있다. 주당순이익(EPS 774원)은 서울 사무소 매각에 따른 일회성 이익이 포함된 최근 결산 기준이므로, 경상적 이익 창출력을 기준으로 한 실질 이익 배수는 표면상 배수보다 의미 있게 높다고 봐야 한다. 회사는 2022~2025년 4개 사업연도 중 영업이익 흑자를 낸 해가 2024년 단 1년에 불과하며, 연간 영업흑자 지속성이 아직 확인되지 않은 상태다. 배당은 공시 기준 지급 실적이 없어 배당 수익률 기반 가치 지지를 현재로서는 기대하기 어렵다. 전력기기 섹터 전반에 AI·인프라 투자 모멘텀이 밸류에이션 재평가를 이끌고 있는 가운데, 서전기전이 이 프리미엄을 지속적으로 향유하려면 본업 영업흑자 전환과 현금 창출 개선이 선행 확인돼야 할 것이다.",
-  "en": "The current share price sits at a meaningful premium to stated book value per share (BPS: KRW 3,532). The headline earnings per share figure (EPS: KRW 774) reflects the most recently completed fiscal year, which includes a material one-time real estate disposal gain; the implied earnings multiple based on recurring core earnings is therefore substantially higher than the headline figure suggests. Over the four fiscal years 2022–2025, the company posted an operating profit in only one year (FY2024), leaving the durability of core operating profitability unverified. With no dividend history on record, yield-based valuation support is currently absent. The broader power equipment sector is experiencing valuation re-rating driven by AI and infrastructure investment momentum; for Seojeon to sustain a sector premium, a verifiable transition to recurring operating profit and positive operating cash flow will likely serve as the critical re-rating catalysts."
+  "ko": "최근 네 개 분기 순이익에는 2025년 3분기에 반영된 서울사무소 매각 관련 일회성 처분이익의 영향이 크게 남아 있어, 이를 걷어낸 core 영업실적 대비로 현재 거래 배수를 해석할 때는 유의가 필요하다. 순자산 대비 주가는 과거 몇 년간 실적 부진기와 일회성 이익 반영 구간이 반복되며 시장이 부여하는 배수도 그때그때 출렁이는 경향을 보였다. 회사는 최근 수년간 배당을 지급하지 않고 있으며, 이는 2022~2023년의 연간 순손실 및 누적 결손 부담과 맞물린 정책으로 풀이된다. 다년간의 실적을 보면 영업손익은 적자와 소폭 흑자를 오가는 등 뚜렷한 방향성을 아직 확립하지 못한 상태이며, 순이익은 적자에서 흑자로 전환됐으나 그 질적 구성(일회성 vs 지속 영업이익)에 대한 구분이 중요하다. 밸류에이션 판단 시에는 이러한 일회성 요인의 영향을 감안해 지속가능한 이익창출력을 함께 살펴볼 필요가 있다.",
+  "en": "Net income over the trailing four quarters remains heavily influenced by the one-off disposal gain from the Seoul office sale recognized in Q3 2025, so caution is warranted when interpreting current trading multiples relative to that figure versus core operating performance. The share price relative to net assets has tended to fluctuate over the past several years as periods of weak operating results alternated with quarters carrying one-off gains, causing the multiples the market assigns to swing accordingly. The company has not paid dividends in recent years, a policy that appears linked to the net losses and accumulated deficit burden from 2022-2023. Looking at multi-year results, operating profit has yet to establish a clear directional trend, alternating between losses and modest profit, while net income has turned from losses to gains—though the composition of that turnaround (one-off versus recurring operating profit) matters for interpretation. When assessing valuation, it is worth weighing this one-off influence alongside the company's sustainable earnings power."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI·재생에너지 주도 전력 인프라 수요 구조적 확대",
-    "en": "Structural Surge in AI/Renewables-Driven Power Infrastructure Demand"
+    "ko": "전력 인프라 슈퍼사이클 편입",
+    "en": "Positioned Within the Power Infrastructure Supercycle"
    },
    "body": {
-    "ko": "AI 데이터센터 전력 수요, 재생에너지 확대, 노후 전력망 교체가 동시에 맞물리면서 배전반·제어반 시장의 중장기 수요 기반이 확장되고 있다. 배전반은 미국 Section 232 관세 비대상 품목으로 무역 장벽 리스크가 상대적으로 낮아, 수출 시장 진출 시 비용 경쟁력을 유지할 수 있다. 서전기전은 UN 공통조달플랫폼과 싱가포르 GeBiz에 벤더 등록이 완료돼 있어, 신흥 해외 수주 기반이 이미 마련돼 있다.",
-    "en": "AI data-center load growth, renewable energy expansion, and aging grid replacement are converging to structurally widen the mid-to-long-term demand base for switchgear and MCCs. Switchgear and distribution boards are excluded from U.S. Section 232 tariffs, providing relative cost competitiveness for potential export expansion. Seojeon's vendor registrations on UNGM and Singapore's GeBiz provide an established platform for international public procurement opportunities."
+    "ko": "AI 데이터센터 확산과 노후 전력망 교체, 원전 정책 확대 등 구조적 수요가 전력기자재 업종 전반의 발주 환경을 우호적으로 만들고 있다. 서전기전은 수배전반·전력기자재 전문기업으로 이러한 발주 확대의 잠재적 수혜 범위 안에 있다. 2026년 3월에는 원전 산업 육성 정책 기대감으로 업종 내 상승률 상위 종목으로 언급된 바 있다.",
+    "en": "Structural demand from AI data-center expansion, aging grid replacement, and expanded nuclear policy is creating a favorable order environment across the power equipment sector. As a switchgear and power materials specialist, Seojeon Electric Machinery falls within the potential beneficiary range of this order expansion. In March 2026, it was cited as one of the top gainers within the sector amid expectations tied to nuclear industry promotion policy."
    }
   },
   {
    "title": {
-    "ko": "원전·SMR 시장 진입을 위한 인증 기반과 납품 실적 확보",
-    "en": "Nuclear Credentials and Delivery Track Record Supporting SMR Market Entry"
+    "ko": "부채비율 하락과 자산 재편",
+    "en": "Lower Debt Ratio and Asset Restructuring"
    },
    "body": {
-    "ko": "서전기전은 2020년 KEPIC-EN 인증을 취득해 원자력 전기설비 시장에서 Q-CLASS 수준의 납품 자격을 확보했다. 기장 연구로(2027년 완공 예정) 수배전반 납품 실적은 상업용 원전 및 SMR 수주 경쟁에서 기술 신뢰성의 근거로 활용될 수 있다. 신한울 3·4호기와 국내외 SMR 프로젝트 확대 시 수주 파이프라인이 중기적으로 유의미하게 확충될 가능성이 있다.",
-    "en": "Seojeon obtained KEPIC-EN nuclear electrical certification in 2020, qualifying it for Q-CLASS nuclear facility supply. The ongoing Gijang Research Reactor contract (through 2027) builds a verifiable delivery track record to support bids for commercial nuclear plants and SMR projects. An expanding domestic and export SMR pipeline could meaningfully strengthen the medium-term order book."
+    "ko": "2025년 서울사무소 매각으로 297억원의 현금이 유입되며 부채비율이 2024년 101.5%에서 2025년 79.4%로 낮아졌다. 회사는 매각대금 일부를 활용해 서울 송파구 부동산을 양수하는 등 사업장 재편을 진행했다. 자기자본도 2024년 315억원에서 2025년 384억원으로 늘었다.",
+    "en": "The 2025 sale of the Seoul office brought in KRW 29.7 billion in cash, lowering the debt ratio from 101.5% in 2024 to 79.4% in 2025. The company used part of the proceeds to acquire property in Songpa-gu, Seoul, proceeding with a facility restructuring. Equity also rose from KRW 31.5 billion in 2024 to KRW 38.4 billion in 2025."
    }
   },
   {
    "title": {
-    "ko": "코스닥 중견기업부 재편입과 재무 건전성 개선",
-    "en": "KOSDAQ Re-reclassification and Improved Balance Sheet Health"
+    "ko": "신사업을 통한 포트폴리오 다각화",
+    "en": "Portfolio Diversification Through New Businesses"
    },
    "body": {
-    "ko": "2026년 3월 한국거래소는 서전기전을 투자주의 환기종목에서 코스닥 중견기업부로 재편입했다. 이는 재무 건전성 및 공시 요건 충족을 반영하는 조치로, 기관 투자자 접근성 개선이 기대된다. 부채비율도 2024년 101.5%에서 2025년 79.4%로 하락해 재무 구조가 명확히 개선됐다.",
-    "en": "In March 2026, KRX reclassified Seojeon from the 'investment-alert' roster to the KOSDAQ mid-cap segment, reflecting improved financial health and disclosure compliance, and potentially lowering the threshold for institutional participation. The debt-to-equity ratio also improved markedly from 101.5% in FY2024 to 79.4% in FY2025, driven by the equity accretion from the asset disposal."
+    "ko": "언론 보도에 따르면 서전기전은 철도 통신 시스템 사업에 진출하며 전통적인 수배전반 중심 사업구조에서 벗어나려는 시도를 하고 있다. 이는 매출처 다변화와 공공 발주 시장 접근성 확대로 이어질 여지가 있다. 다만 구체적 수주 규모와 매출 기여 시점은 아직 공시로 확인되지 않았다.",
+    "en": "According to media reports, Seojeon Electric Machinery has entered the rail communication systems business, attempting to move beyond its traditional switchgear-centered structure. This could lead to revenue diversification and expanded access to public tender markets. However, specific order sizes and revenue contribution timing have not yet been confirmed through disclosures."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "본업 영업적자 지속 및 일회성 이익 의존 구조",
-    "en": "Persistent Core Operating Losses and Reliance on Non-Recurring Gains"
+    "ko": "본업 영업손실 지속·확대",
+    "en": "Persistent and Widening Core Operating Losses"
    },
    "body": {
-    "ko": "2025년 영업손실 88억원(OPM -12.9%)으로 2024년의 1년짜리 흑자 전환이 되돌려졌으며, 원자재·제조원가 상승이 핵심 원인이다. 2025년 당기순이익 69.4억원은 마곡 사무소 매각 일회성 이익이 없었다면 적자였을 수치이며, 영업현금흐름도 -39.7억원으로 음수였다. 2022~2025년 4개 연도 중 영업흑자를 낸 해가 2024년 1년뿐이어서, 본업 수익성의 지속성이 확인되지 않고 있다.",
-    "en": "FY2025 operating loss of KRW 8.8 bn (OPM -12.9%) reversed the FY2024 recovery, driven by raw material and manufacturing cost inflation. Reported FY2025 net profit of KRW 6.9 bn would have been negative absent the Magok office disposal gain, and operating cash flow was also negative at KRW -4.0 bn. With an operating profit recorded in only one of the past four fiscal years (FY2024), the durability of core profitability remains unproven."
+    "ko": "2025년 매출이 늘었음에도 영업손실은 88억원으로 2023년보다도 확대됐다. 2026년 1분기와 2분기 모두 영업손실이 이어지며 흑자 전환의 뚜렷한 신호는 아직 확인되지 않고 있다. 매출 증가와 수익성 개선이 함께 나타나지 않고 있다는 점이 핵심 과제다.",
+    "en": "Despite higher 2025 revenue, the operating loss widened to KRW 8.8 billion, larger than in 2023. Both Q1 and Q2 2026 continued to post operating losses, with no clear signal of a turnaround to profitability yet confirmed. The lack of simultaneous revenue growth and profitability improvement remains the core challenge."
    }
   },
   {
    "title": {
-    "ko": "공공기관 입찰 제한·한전 소송 이중 부담",
-    "en": "Double Headwind: Public Procurement Suspension and KEPCO Litigation"
+    "ko": "분기 실적의 높은 변동성",
+    "en": "High Quarterly Earnings Volatility"
    },
    "body": {
-    "ko": "2026년 3월 31일~6월 30일 공공기관·국가 계약 입찰 참가가 3개월간 제한되며, 영향 거래처 매출이 258억원으로 전체 연간 매출의 약 38% 수준에 달한다. 한국전력공사 등 9개사를 상대로 한 20억원 손해배상 소송은 주요 고객과의 관계에 영향을 미칠 수 있다. 두 이슈가 겹쳐 2026년 상반기 수주·매출 공백이 불가피하며, 입찰 제한 해제 후 관계 복원에도 시간이 필요할 수 있다.",
-    "en": "The public procurement ban (March 31–June 30, 2026) covers ~KRW 25.8 bn in customer revenues, equivalent to roughly 38% of FY2025 revenue. The ongoing KRW 2.0 bn damage suit against KEPCO and nine co-defendants risks straining key customer relationships. The overlap of these two issues makes an H1 2026 order and revenue shortfall unavoidable, and repairing key account relationships post-suspension may take time."
+    "ko": "분기별 매출은 74억원에서 323억원까지 큰 폭으로 오르내리며 수주산업 특성상 예측이 쉽지 않다. 2026년 1분기 매출은 74억원으로 직전 분기의 4분의 1 수준까지 급감했다. 이러한 변동성은 실적 추세를 판단하는 데 어려움을 더한다.",
+    "en": "Quarterly revenue has swung widely between KRW 7.4 billion and KRW 32.3 billion, making forecasting difficult given the order-driven nature of the business. Q1 2026 revenue plunged to about a quarter of the prior quarter's level. This volatility complicates assessment of the underlying earnings trend."
    }
   },
   {
    "title": {
-    "ko": "강한 계절성과 소형 시가총액에 따른 변동성 리스크",
-    "en": "High Revenue Seasonality and Small-Cap Price Volatility"
+    "ko": "순이익 개선의 일회성 성격",
+    "en": "One-Off Nature of the Net Income Improvement"
    },
    "body": {
-    "ko": "매출의 절반 이상이 4분기에 집중되는 강한 계절성으로 인해 상반기 재무제표는 구조적으로 적자를 보이기 쉬워, 분기 실적 발표 때마다 시장에 부정적 신호가 반복될 수 있다. 발행주식 수 969만 주의 소형 시가총액 구조는 외국인·기관 수급이 얇아 주가 변동성이 높다. 섹터 테마 부각 시 단기 급등락이 반복됐으며(2026년 6월 단기 투자주의 지정 사례), 펀더멘털과 유리된 가격 변동성 리스크를 내포한다.",
-    "en": "Pronounced H2 seasonality — with over half of annual revenue concentrated in Q4 — means H1 financial statements are structurally loss-making, likely generating repetitive negative market signals at quarterly releases. With only ~9.7 million shares outstanding and a small market cap, institutional and foreign investor flows are thin, amplifying price volatility. The stock has experienced sharp short-term swings tied to sector thematic momentum (including a one-day investment-warning designation in June 2026), reflecting a disconnect between fundamentals and near-term trading behavior."
+    "ko": "2025년 순이익 개선은 서울사무소 매각이라는 일회성 자산처분이익에 크게 의존한 것으로 해석된다. 같은 기간 영업이익은 오히려 적자가 확대돼 본업의 이익창출력과는 괴리가 있다. 향후 유사한 일회성 이익이 재발하지 않는다면 순이익 규모가 다시 위축될 가능성이 있다.",
+    "en": "The 2025 net income improvement is interpreted as heavily dependent on the one-off asset disposal gain from the Seoul office sale. Operating profit over the same period actually saw a widening loss, diverging from the core business's earnings power. If similar one-off gains do not recur, net income could shrink again."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "원자재 가격 리스크",
-    "en": "Raw Material Cost Risk"
+    "ko": "원자재·원가 리스크",
+    "en": "Raw Material and Cost Risk"
    },
    "body": {
-    "ko": "배전반·MCC 제조의 주요 원자재인 구리(동)와 철강 가격이 글로벌 수급 변화와 지정학적 요인에 따라 급등할 경우 제조원가가 즉각 상승한다. 2025년 영업손실 확대의 주된 원인이 원자재 비용 상승과 인플레이션에 따른 원가 부담이었던 점에서 반복 리스크가 크다. 공공기관 발주의 특성상 원가 상승분을 수주 단가에 전가하는 능력이 제한적이어서, 원자재 가격 상승기에 마진 압박이 가중될 수 있다.",
-    "en": "Copper and steel, the principal raw materials in switchgear and MCC production, are subject to sharp price swings driven by global supply-demand shifts and geopolitical factors. Rising input costs were the primary driver of the widened FY2025 operating loss, making recurrence risk material. Limited pricing power in public-sector contracts constrains the ability to pass cost increases on to customers, amplifying margin pressure during commodity price upcycles."
+    "ko": "과거 러시아·우크라이나 전쟁에 따른 원자재값 폭등과 인플레이션이 수익성 악화의 주요 요인으로 지목된 바 있다. 구리 등 전력기자재 핵심 원재료의 가격 변동은 향후에도 원가 부담으로 이어질 수 있다. 원가 관리 능력이 영업손익 개선의 관건이다.",
+    "en": "Past surges in raw material costs linked to the Russia-Ukraine conflict and inflation have been cited as key factors behind profitability deterioration. Price fluctuations in core power equipment materials such as copper could continue to weigh on costs. Cost management capability remains key to any operating profit improvement."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중 및 공공 의존 리스크",
-    "en": "Customer Concentration and Public-Sector Dependency"
+    "ko": "경쟁 심화 리스크",
+    "en": "Intensifying Competition Risk"
    },
    "body": {
-    "ko": "한전·발전 5개사 등 공공 에너지 기관이 주요 매출처로, 공공기관 예산 삭감·발주 지연 또는 입찰 제한이 매출에 직접 타격을 준다. 2026년 3개월 입찰 제한이 이 구조적 취약점을 단적으로 보여준다. 민간 산업용 및 해외 고객 다변화가 단기간에 이루어지기 어렵다는 점도 구조적 한계로 작용한다.",
-    "en": "KEPCO and the five power-generation subsidiaries constitute the bulk of revenue; any public-sector budget cuts, procurement delays, or contract restrictions directly impair top-line results. The three-month 2026 suspension concretely illustrates this structural vulnerability. Rapid diversification toward private industrial or international customers is unlikely in the short term, reinforcing the concentration risk."
+    "ko": "LS ELECTRIC 등 대형 전력기기 업체와 비교해 매출 규모가 작은 중소형 전문업체로서, 대형 발주 프로젝트에서 가격·기술 경쟁에 노출돼 있다. 업종 재평가는 초고압 변압기 등 대용량 제품 경쟁력을 갖춘 업체 중심으로 거론되는 경향이 있어, 상대적 입지 강화가 과제로 남는다.",
+    "en": "As a smaller-scale specialist compared to large power equipment makers such as LS ELECTRIC, the company is exposed to price and technology competition on major tender projects. Sector re-rating tends to be discussed mainly around companies with competitiveness in large-capacity products such as ultra-high-voltage transformers, leaving relative positioning as an ongoing challenge."
    }
   },
   {
    "cat": {
-    "ko": "원전·SMR 시장 진출 불확실성과 경쟁 심화",
-    "en": "Uncertainty in Nuclear Market Entry and Intensifying Competition"
+    "ko": "현금창출력·재무 리스크",
+    "en": "Cash Generation and Financial Risk"
    },
    "body": {
-    "ko": "원전 전기설비 시장은 KEPIC-EN 인증 취득 이후에도 실제 상업 납품까지 긴 검증 기간이 요구되며 기존 공급업체들의 진입 방어도 강하다. SMR 시장은 기술 표준 및 규제 체계가 정립 단계에 있어 수주 현실화까지 시간이 걸릴 수 있다. 대형 전력기기 업체들이 배전반·MCC 분야로 포트폴리오를 확장함에 따라 서전기전의 핵심 세그먼트에서도 경쟁이 심화될 가능성이 있다.",
-    "en": "Nuclear electrical equipment requires extended verification periods beyond initial KEPIC-EN certification before commercial deliveries materialize, and incumbent suppliers are deeply entrenched. The SMR market remains in an early stage of technical standardization and regulatory framework development, extending the timeline to order realization. Large-cap power equipment companies are broadening their portfolios into switchgear and MCCs, potentially intensifying competitive pressure in Seojeon's core segment."
+    "ko": "2025년 영업활동현금흐름이 -40억원으로 유출 전환하며 순이익 개선과 실제 현금창출력 사이에 괴리가 확인됐다. 부채비율은 낮아졌으나 영업손실이 계속될 경우 재무구조 개선의 지속성이 시험대에 오를 수 있다.",
+    "en": "Operating cash flow reversed to an outflow of KRW 4.0 billion in 2025, revealing a gap between the net income improvement and actual cash generation. While the debt ratio has declined, continued operating losses could test the sustainability of the balance sheet improvement."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7월 초",
-    "en": "Early July 2026"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "공공기관·국가계약 입찰 참가 제한(3/31~6/30) 종료 후 한전 및 발전 5개사 대상 수주 재개 여부와 3개월 공백으로 인한 수주 규모 영향을 점검해야 한다.",
-    "en": "Confirm whether public procurement re-entry occurred smoothly following the June 30 suspension expiry and assess the magnitude of the order shortfall attributable to the three-month ban on KEPCO and related entity contracts."
+    "ko": "2026년 3분기 실적 발표(분기보고서 제출)를 통해 상반기에 이어진 영업손실이 축소되는지, 매출 회복 흐름이 나타나는지 확인해야 한다.",
+    "en": "The Q3 2026 quarterly report should reveal whether the operating losses seen in H1 2026 are narrowing and whether revenue is showing signs of recovery."
    }
   },
   {
    "when": {
-    "ko": "2026년 8월 중 (2026년 2분기 실적 발표)",
-    "en": "Mid-August 2026 (Q2 2026 Earnings Release)"
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "2026년 2분기 매출·영업손익 발표를 통해 입찰 제한 기간의 재무적 충격과 계절성 회복 시동 여부를 확인한다. 2025년 2분기 매출 112억원 대비 개선 폭이 회복 속도의 가늠자가 된다.",
-    "en": "The Q2 2026 earnings release will quantify the financial impact of the procurement suspension and reveal whether the seasonal revenue ramp has begun. Improvement versus the Q2 2025 baseline of KRW 11.2 bn will serve as a key recovery signal."
+    "ko": "2026년 사업보고서를 통해 연간 영업손익 방향과 영업활동현금흐름의 정상화 여부, 마곡 매각대금 활용 및 오금로 부동산 이전 효과를 종합적으로 확인해야 한다.",
+    "en": "The 2026 annual business report should be checked for the full-year operating profit direction, whether operating cash flow normalizes, and the combined effect of the Magok sale proceeds usage and the Ogeum-ro property relocation."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (신한울 3·4호기 및 SMR 관련 입찰 공고)",
-    "en": "H2 2026 (Shin-Hanul 3/4 and SMR Bid Announcements)"
+    "ko": "2026년 9월 이후 공시 발생 시",
+    "en": "Upon future disclosures from September 2026 onward"
    },
    "what": {
-    "ko": "한수원 발주 신한울 3·4호기 초고압 전력기기 입찰 공고 여부와 서전기전의 수주 참여 소식을 추적해야 한다. 실제 수주 성사 여부는 원전 사업 확장 전략의 현실성을 검증하는 핵심 지표다.",
-    "en": "Monitor KHNP's bid announcements for Shin-Hanul 3/4 high-voltage equipment and any confirmation of Seojeon's bidding participation. A contract award would serve as the most direct validation of the company's nuclear business expansion strategy."
+    "ko": "철도 통신 시스템 등 신사업 관련 구체적 수주계약 공시가 발생하는지, 발생 시 수주 규모와 매출 인식 시점을 확인해야 한다.",
+    "en": "Watch for specific order or contract disclosures related to the rail communication systems business, and if they occur, check the order size and revenue recognition timing."
    }
   },
   {
    "when": {
-    "ko": "2026년 연중 (한전 등 손해배상 소송 진행)",
-    "en": "Ongoing Through 2026 (KEPCO Damage Suit Progress)"
+    "ko": "분기별 공시 시점마다",
+    "en": "At each quarterly disclosure"
    },
    "what": {
-    "ko": "한국전력공사 등 9개사를 상대로 제기된 20억원 손해배상 청구 소송의 법원 일정 및 중간 판결을 모니터링해야 한다. 소송 결과는 주요 고객 관계와 향후 공공기관 수주 가능성에 영향을 줄 수 있다.",
-    "en": "Track court schedules and interim rulings in the KRW 2.0 bn damage suit against KEPCO and nine co-defendants. The outcome could affect long-term key customer relationships and future public procurement eligibility."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 11월 중 (2026년 3분기 실적 발표)",
-    "en": "Mid-November 2026 (Q3 2026 Earnings Release)"
-   },
-   "what": {
-    "ko": "서전기전의 역사적 강세 분기인 3분기 영업이익 흑자 전환 여부를 확인한다. 2025년 3분기는 일회성 자산 매각 이익이 포함됐으므로, 2026년 3분기는 본업 기반 이익 구조 개선 여부를 가늠하는 가장 깨끗한 시험대가 된다.",
-    "en": "Confirm whether operating profit returned to positive territory in Q3 2026, historically Seojeon's strongest quarter. Since Q3 2025 was inflated by the property disposal gain, Q3 2026 results will provide the cleanest read on whether the underlying earnings structure is recovering."
+    "ko": "부채비율, 영업활동현금흐름 등 재무구조 지표가 안정적으로 개선되는지, 일회성 요인 없이도 순이익이 유지되는지를 지속적으로 점검해야 한다.",
+    "en": "Continue monitoring whether balance-sheet metrics such as the debt ratio and operating cash flow show stable improvement, and whether net income can be sustained without one-off factors."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "서전기전은 배전반·MCC 중심의 종합 전력기자재 제조사로, AI·재생에너지·원전 확대라는 구조적 수요 성장 환경에 놓여 있다. 그러나 최근 4개 사업연도 중 영업흑자를 낸 해가 2024년 단 1년에 불과하고, 2025년 당기순이익은 서울 사무소 매각 일회성 이익 덕분에 흑자가 된 것이어서 본업 수익성의 지속성이 확인되지 않았다. 2026년 상반기에는 공공기관 입찰 참가 제한(3개월)과 한전 소송이라는 이중 부담이 겹쳐 단기 수주·매출 공백이 불가피하다. 반면 KEPIC-EN 원전 인증을 토대로 기장 연구로를 납품 중인 점, 그리고 신한울 3·4호기와 SMR 시장을 향한 사업 확장 전략은 중기 성장 가능성을 내포한다. 코스닥 중견기업부 재편입으로 기업 건전성 신호가 개선됐고 부채비율도 낮아진 점은 긍정적이다. 궁극적으로 영업이익 흑자의 지속성 확보와 영업현금흐름 플러스 전환이 이 기업의 시장 재평가를 견인할 핵심 관문이 될 것이다.",
-   "en": "Seojeon Electric is a full-range domestic switchgear and MCC manufacturer operating in a structurally favorable environment driven by AI, renewables, and nuclear expansion. However, of the past four fiscal years, only FY2024 produced an operating profit, and FY2025's reported net profit was almost entirely attributable to a non-recurring real estate gain, leaving core earnings durability unverified. H1 2026 faces a dual headwind from the three-month public procurement suspension and the KEPCO litigation, making a near-term order and revenue gap unavoidable. On the other side, the KEPIC-EN-backed Gijang Research Reactor contract and stated ambitions in the SMR and Shin-Hanul 3/4 markets offer credible medium-term growth optionality. The KOSDAQ reclassification to the mid-cap segment and a meaningfully reduced debt ratio signal improved corporate health. Ultimately, sustained operating profit and a transition to positive operating cash flow will be the critical milestones needed for any meaningful market re-rating."
+   "ko": "서전기전은 AI 데이터센터·노후 전력망 교체·원전 정책 확대라는 업종 차원의 구조적 수요 확대 국면에 위치한 중소형 배전반 전문기업이다. 그러나 2025년 매출 증가에도 영업손실이 오히려 확대됐고, 순이익 개선은 서울사무소 매각이라는 일회성 요인에 크게 의존한 결과로 해석된다. 2026년 상반기에는 매출 규모가 축소되며 영업손실과 순손실이 다시 나타나, 업종 훈풍이 본업 실적으로 아직 충분히 전이되지 않은 모습이다. 부채비율 하락 등 재무구조 개선 신호가 있지만 영업활동현금흐름은 다시 유출로 전환해 현금창출력에 대한 확인이 필요하다. 철도 통신 시스템 등 신사업 진출은 포트폴리오 다각화 시도로 평가되나, 구체적 수주 성과는 아직 공시로 뒷받침되지 않았다. 향후 분기 실적에서 일회성 요인 없이도 영업손익과 현금흐름이 개선되는지가 핵심 관전 포인트다.",
+   "en": "Seojeon Electric Machinery is a small-cap switchgear specialist positioned within a sector-wide structural demand expansion driven by AI data centers, aging grid replacement, and expanded nuclear policy. However, despite higher 2025 revenue, its operating loss widened, and the net income improvement is interpreted as heavily dependent on the one-off gain from the Seoul office sale. In H1 2026, revenue contracted and both operating and net losses reappeared, suggesting the sector tailwind has not yet sufficiently translated into core business results. While signs of balance-sheet improvement such as a lower debt ratio exist, operating cash flow reversed to an outflow, warranting further verification of cash-generating capability. The reported move into rail communication systems is viewed as a diversification attempt, but concrete order results have not yet been substantiated through disclosures. The key point to watch going forward is whether operating profit and cash flow can improve in future quarters without relying on one-off factors."
   }
  },
  "sources": [
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=189860",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A189860",
-  "https://news.nate.com/view/20260212n19270",
+  "https://m.thinkpool.com/item/189860",
   "https://goinsider.kr/stock/00869272",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=189860",
+  "https://www.investing.com/equities/seojeon-electric-machinery-co-ltd",
+  "https://littlebproject.com/stock/189860",
   "https://alphasquare.co.kr/home/stock-summary?code=189860",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=5&gicode=A189860&cID=21&MenuYn=N&ReportGB=&NewMenuID=102&stkGb=701",
+  "https://kr.investing.com/equities/seojeon-electric-machinery-co-ltd-earnings",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A189860",
   "https://www.sankun.com/company-info/2ZXC8fiGdOke8U0AFQ0Fxg",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A189860&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
   "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/N0RtM0VRLzg0V2xjRkh4VEhHSXJvQT09/company_nm/(%EC%A3%BC)%EC%84%9C%EC%A0%84%EA%B8%B0%EC%A0%84?nomo=1",
-  "https://news.nate.com/search?q=%EC%84%9C%EC%A0%84%EA%B8%B0%EC%A0%84&page=1",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=438519",
-  "https://file.myasset.com/sitemanager/upload/2025/1012/131733/20251012131733050_0_ko.pdf",
-  "https://alphasquare.co.kr/home/theme-factor?theme-id=330",
-  "https://www.dailyinvest.kr/news/articleView.html?idxno=68186",
-  "https://www.judal.co.kr/?view=stockList&themeIdx=599",
-  "https://m.thinkpool.com/stockDiscuss/062040/cont/11828472",
-  "https://www.kepco-enc.com/menu.es?mid=a10304020200",
-  "https://stockstalker.co.kr/ess/"
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250319000522&rcpno=20250319000540&orgid=F&tran=Y&langTpCd=0",
+  "https://www.sankun.com/company-info/zgIaFyKTM74IM9FaUfOrNA",
+  "https://www.sankun.com/company-info/i1HH6jqaBaSTJmHZGN3Bqw",
+  "https://alphasquare.co.kr/home/stock-issue?code=189860&type=news",
+  "https://www.innno.co.kr/2026/05/data-center-grid-stocks.html",
+  "https://kbthink.com/investment/issues/ai-power-infrastructure-data-centers.html",
+  "https://www.keaj.kr/news/articleView.html?idxno=6049",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=439169"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "189860",
  "name": "서전기전",
  "name_en": "SEOJEON ELECTRIC MACHINERY Co.,Ltd.",
@@ -233,9 +223,9 @@
   "전기장비"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:46",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 21:16",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 4080,
-   "mcap": 0.0396,
+   "price": 4195,
+   "mcap": 0.0407,
    "shares": 9698780,
    "total_shares": 9698780,
    "wavg_shares": 9704373,
-   "per": 3.723,
+   "per": 3.828,
    "eps": 1096,
-   "pbr": 1.1867,
+   "pbr": 1.2202,
    "bps": 3438,
    "roe_ttm": 37.9,
    "ttm_window": "2025Q3~2026Q2",

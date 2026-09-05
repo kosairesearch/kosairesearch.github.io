@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "자회사 재편 완료 후 교통카드 본업 집중 국면",
-  "en": "Post-Restructuring Refocus: Back to Core Transit Terminal Business"
+  "ko": "매출 축소기, 수익구조 재편 국면",
+  "en": "Revenue Contraction, Margin Realignment Phase"
  },
  "lead": {
-  "ko": "에이텍모빌리티는 2024~2025년 금융·물류 자회사를 대거 정리해 연결 외형이 크게 줄었으나, 교통카드단말기·역무자동화 핵심 사업 집중과 태그리스 기술 확산을 발판으로 이익률 개선과 수주 회복을 도모하는 중이다.",
-  "en": "After divesting most financial and logistics subsidiaries in 2024–2025, Atec Mobility has significantly reduced its revenue base, but is now focused on recovering profitability through its core transit terminal and station automation business while leveraging emerging tagless payment technology."
+  "ko": "교통카드·모빌리티 솔루션 기업 에이텍모빌리티는 물류자동화 계열사 이탈로 매출 기반이 크게 축소된 가운데, 최근 분기 들어 본업 중심의 수익성 회복을 모색하고 있다.",
+  "en": "ATEC Mobility, a transit-card and mobility solutions provider, has seen its consolidated revenue base shrink sharply after divesting logistics-automation subsidiaries, and is now seeking a profitability recovery centered on its core business in recent quarters."
  },
  "keypoints": [
   {
-   "ko": "자회사 대거 정리: 에이텍에이피·알파엔지니어링·태양알앤피 지배력 상실로 2025년 연결 매출이 643억 원으로 급감(2023년 2,010억 원 대비 약 68% 감소)",
-   "en": "Major subsidiary divestitures: loss of control over Atec-AP, Alpha Engineering, and Taeyang RNP slashed 2025 consolidated revenue to KRW 64.3 billion, down ~68% from the 2023 peak of KRW 201 billion"
+   "ko": "연결 매출은 2023년 2,010억원까지 늘었으나 물류자동화 계열사 지배력 상실로 2024년 1,042억원, 2025년 643억원으로 2년 연속 축소됐다.",
+   "en": "Consolidated revenue grew to KRW 201.0bn in 2023 but shrank for two straight years to KRW 104.2bn in 2024 and KRW 64.3bn in 2025 after the loss of control over logistics-automation subsidiaries."
   },
   {
-   "ko": "영업이익률 역대 최고: 매출 규모 축소에도 2025년 영업이익률 9.6%로 2022년(4.3%) 대비 두 배 이상 개선되어 핵심 사업의 내재 수익성이 상대적으로 견고함을 시사",
-   "en": "Record operating margin: despite shrinking revenue, the 2025 operating margin reached 9.6%, more than doubling from 4.3% in 2022, affirming the stronger inherent profitability of the refocused core business"
+   "ko": "2025년 영업이익률은 9.6%로 매출 감소에도 오히려 개선돼, 핵심 사업의 수익구조는 상대적으로 유지됐다.",
+   "en": "The 2025 operating margin improved to 9.6% despite the revenue decline, suggesting the core business retained a relatively stable profit structure."
   },
   {
-   "ko": "태그리스·역무자동화 신규 수주: 2026년 3월 수인분당선 역무자동화설비 개량 계약 수주, 서울시 시내버스 태그리스 시범 노선 운영 중(2026년 3월 기준)",
-   "en": "New order wins in tagless and station automation: March 2026 Bundang Line station automation contract awarded; Seoul's tagless bus pilot program actively expanding as of March 2026"
+   "ko": "2025년 4분기 영업손실로 전환한 뒤 2026년 1분기·2분기 연속 소폭 흑자를 냈지만, 최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주 순이익 합계는 적자다.",
+   "en": "After swinging to an operating loss in Q4 2025, the company posted small operating profits in both Q1 and Q2 2026, but cumulative net income attributable to owners over the latest four quarters (Q3 2025-Q2 2026) remains negative."
   },
   {
-   "ko": "재무 구조 단순화·안정화: 부채비율 2023년 79.2% → 2025년 37.1%로 하락, 자회사 정리 후 재무 건전성 향상",
-   "en": "Simplified and stabilized financial structure: debt-to-equity ratio fell from 79.2% in 2023 to 37.1% in 2025, reflecting a cleaner balance sheet following subsidiary exits"
+   "ko": "부채비율은 2023년 79.2%에서 2025년 37.1%로 뚜렷하게 낮아지며 재무구조가 안정화됐다.",
+   "en": "The debt-to-equity ratio fell markedly from 79.2% in 2023 to 37.1% in 2025, indicating a more stable balance sheet."
   },
   {
-   "ko": "분기 수익성 변동 극심: 2025년 3분기 영업이익 44억 원 vs. 4분기 영업적자 -0.4억 원으로 프로젝트성 매출 특성에 따른 분기 쏠림 현상 지속",
-   "en": "High quarterly earnings volatility: Q3 2025 operating profit of KRW 4.4 billion contrasted sharply with a near-breakeven Q4, reflecting the project-driven lumpy revenue structure of the business"
+   "ko": "2026년 들어 인천 버스단말기 공급계약, 수인분당선 역무자동화설비 개량 계약 등 신규 공공 프로젝트를 잇달아 수주했다.",
+   "en": "In 2026 the company won new public-sector projects in succession, including an Incheon bus terminal supply contract and a Suin-Bundang Line station automation equipment upgrade contract."
   }
  ],
  "business": {
-  "ko": "에이텍모빌리티는 2015년 에이텍의 교통카드솔루션 사업 부문이 인적 분할되어 설립됐으며, 2023년 3월 현재의 사명으로 변경했다. RFID 기반 스마트카드 교통요금 결제단말기(교통카드 충전기, 버스운전자단말기, 버스승하차단말기, 버스정보안내기 등)의 제조·공급·유지보수를 주요 사업으로 영위한다. 티머니가 국내에 설치한 모든 버스·택시·충전단말기를 유지·보수하는 독점적 사업자 지위를 보유하고 있다. 서울시설공단·알톤스포츠·CJ CGV 등에 공유자전거 단말기, 무인주문키오스크, 포토프린터 등도 납품하며 모빌리티 생태계 전반으로 사업 영역을 넓혀왔다. 2017년에는 에이텍과 공동으로 LG CNS의 ATM 사업부문을 인수해 금융자동화기기 사업에 진출했고, 물류자동화는 2022년 신규 계열회사의 편입으로 새로 생겨난 부문이다. 그러나 2024년 주요 종속기업인 에이텍에이피가 주요 사업인 금융자동화사업을 양도했고, 2025년에는 에이텍에이피·알파엔지니어링·태양알앤피의 지배력을 상실(주식 양도)하면서 연결 범위가 대폭 축소됐다. 2026년 3월에는 수인분당선 역무자동화설비 개량 제조설치 계약을 수주했으며, 2025년 11월에는 '중소기업 기술개발(R&D) 우수성과 50선'에 선정되며 기술 역량을 공식 인정받았다. 서울시는 2026년 3월 기준 시내버스 태그리스 시범사업 노선을 운영 중이며, 에이텍모빌리티는 이 기술의 핵심 공급자로 부상하고 있다.",
-  "en": "Atec Mobility was established in 2015 as a spin-off from Atec's transportation card solution division and adopted its current name in March 2023. Its principal business is the manufacture, supply, and maintenance of RFID-based smart card transit payment terminals—including card chargers, bus driver terminals, passenger boarding/alighting terminals, and bus information displays. The company serves as the exclusive maintenance contractor for all Tmoney-branded bus, taxi, and charging terminals deployed domestically. It also supplies shared bicycle terminals, unmanned kiosks, and photo printers to clients such as the Seoul Facilities Corporation, Alton Sports, and CJ CGV. In 2017, Atec Mobility co-acquired LG CNS's ATM business unit with its parent company Atec, entering the financial automation market. A logistics automation segment was added in 2022 through the integration of newly incorporated group companies. However, in 2024, Atec-AP divested its core financial automation business, and in 2025, Atec Mobility relinquished controlling interests in Atec-AP, Alpha Engineering, and Taeyang RNP through share transfers, significantly narrowing the consolidation scope. In March 2026, the company secured a contract for the renovation of station automation equipment on the Bundang Line, and in November 2025, it was recognized as one of the top 50 SME R&D achievements in Korea. Seoul has been running a tagless bus pilot program as of March 2026, with Atec Mobility positioned as a key technology supplier."
+  "ko": "에이텍모빌리티는 2015년 에이텍의 교통카드솔루션 사업부문이 인적분할되어 설립됐으며, 2023년 사명을 에이텍티앤에서 현재의 이름으로 변경했다. 주력 사업은 모빌리티 솔루션으로, 교통카드 판매·충전기와 버스운전자단말기 등을 생산하며 H/W 제조, S/W 개발, 유지보수 서비스를 아우르는 역량을 보유하고 있다. 회사는 티머니가 국내에 설치한 모든 버스·택시·충전단말기의 통합 유지보수 사업자로 선정된 이력이 있어 대중교통 결제 인프라 유지보수 시장에서 기반을 갖고 있다. 주요 고객은 지자체 및 공공기관으로, 서울시 버스단말기교체사업 등 대형 프로젝트에 참여하며 실적 개선을 이끈 바 있다. 2022~2023년에는 알파엔지니어링, 태양알앤피 등 물류자동화 계열사를 편입하면서 한때 물류자동화 부문이 연결 매출의 상당 비중을 차지했다. 그러나 2024년 6월 두 자회사에 대한 지배력을 상실(주식 양도)하면서 해당 부문이 연결 실적에서 제외돼, 현재 사업구조는 모빌리티(교통카드·버스단말기)와 금융자동화(ATM·키오스크류) 중심으로 재편됐다. 경쟁구도는 공공기관 중심 발주 구조에서 구축 경험과 레퍼런스 확보가 수주 경쟁력의 핵심으로 작용하는 시장이다. 2026년에는 인천 버스단말기 공급계약(6월)과 수인분당선 역무자동화설비 개량 제조설치 계약(3월)을 잇달아 수주해 신규 프로젝트 라인을 확보했다.",
+  "en": "ATEC Mobility was established in 2015 through a spin-off of the transit-card solutions division of ATEC, and changed its name from ATEC T&C to the current name in 2023. Its core business is mobility solutions, manufacturing transit-card sale and charging terminals and bus driver terminals, with capabilities spanning hardware manufacturing, software development, and maintenance services. The company has a history of being selected as the integrated maintenance provider for all bus, taxi, and charging terminals installed by T-money nationwide, giving it a foothold in the transit payment infrastructure maintenance market. Its main customers are local governments and public agencies, and it has participated in large projects such as Seoul's bus terminal replacement program, which has previously driven earnings improvement. Between 2022 and 2023 the company consolidated logistics-automation affiliates such as Alpha Engineering and Taeyang R&P, and for a period the logistics-automation segment accounted for a meaningful share of consolidated revenue. However, in June 2024 the company lost control over the two subsidiaries through a share transfer, removing that segment from consolidated results, and the business structure has since been realigned around mobility (transit cards and bus terminals) and financial automation (ATM and kiosk equipment). Competition centers on a market where order flow is dominated by public-sector agencies, and track record and reference projects are key to winning contracts. In 2026 the company secured new project lines in succession, including an Incheon bus terminal supply contract in June and a Suin-Bundang Line station automation equipment upgrade contract in March."
  },
  "earnings": {
-  "ko": "연결 매출은 2022년 1,505억 원에서 2023년 2,010억 원으로 33.6% 성장했다. 알파엔지니어링과 태양알앤피의 실적이 연간 기준 온기에 반영된 효과가 주요 원인이었다. 2024년에는 에이텍에이피 금융자동화사업 양도 영향으로 매출이 1,042억 원으로 줄었으나, 영업이익률 7.6%는 유지됐고 지배주주 순이익은 108억 원으로 늘었다. 2025년에는 추가 자회사 지배력 상실로 연결 범위가 더욱 축소되면서 매출이 643억 원으로 급감했다. 주목할 점은 영업이익률이 오히려 9.6%로 역대 최고치를 기록해, 자회사 정리 후 핵심 사업의 이익 구조가 더욱 선명해졌음을 시사한다는 것이다. 분기별로는 2025년 3분기에 매출 231억 원과 영업이익 44억 원을 집중 달성했으나, 4분기는 매출 181억 원에도 영업적자(-0.4억 원)와 지배주주 순손실(-41억 원)이 발생하며 연간 수익성을 크게 훼손했다. 4분기 순손실은 자회사 정리 관련 일회성 평가·처분 손실이 반영된 것으로 추정된다. 2026년 1분기는 매출 120억 원, 영업이익 0.7억 원으로 수익성 회복이 아직 제한적인 수준이다. 연간 영업현금흐름은 2022년 154억 원, 2023년 182억 원에서 2024년 24억 원, 2025년 -24억 원으로 감소 추세가 지속됐다.",
-  "en": "Consolidated revenue grew 33.6% from KRW 150.5 billion in 2022 to KRW 201.0 billion in 2023. This was primarily driven by the full-year consolidation of Alpha Engineering and Taeyang RNP. In 2024, revenue declined to KRW 104.2 billion following Atec-AP's financial automation divestiture, yet the operating margin held steady at 7.6% and controlling shareholders' net profit rose to KRW 10.8 billion. In 2025, further subsidiary exits caused revenue to fall sharply to KRW 64.3 billion. Notably, the operating margin actually improved to a record 9.6%, suggesting the leaner core business carries stronger intrinsic profitability. Quarterly performance was highly uneven: Q3 2025 generated KRW 23.1 billion in revenue and KRW 4.4 billion in operating profit, while Q4 swung to a near-zero operating loss and a KRW 4.1 billion net loss attributable to controlling shareholders, likely reflecting one-time charges related to subsidiary restructuring. Q1 2026 remained subdued with KRW 12.0 billion in revenue and only KRW 0.07 billion in operating profit. Operating cash flow trended from positive KRW 15.4 billion in 2022 and KRW 18.2 billion in 2023 to KRW 2.4 billion in 2024 and negative KRW 2.4 billion in 2025."
+  "ko": "연결 매출액은 2022년 1,504.8억원에서 2023년 2,010.3억원으로 늘었으나, 2024년 1,041.8억원, 2025년 642.8억원으로 2년 연속 크게 줄었다. 이는 앞서 언급한 물류자동화 계열사 지배력 상실이 주요 배경으로, 연결 범위 축소가 매출 감소의 핵심 요인이다. 영업이익은 2022년 65.3억원, 2023년 153.6억원으로 늘었다가 2024년 78.7억원, 2025년 61.7억원으로 줄었지만, 영업이익률은 2024년 7.6%에서 2025년 9.6%로 오히려 개선돼 매출 규모가 줄어든 가운데서도 수익구조는 견고했음을 보여준다. 지배주주 순이익은 2022년 43.1억원, 2023년 64.4억원, 2024년 107.9억원으로 늘었는데, 2024년의 경우 총순이익(196.8억원)과 지배주주 순이익 간 격차가 커 비지배주주(당시 물류자동화 자회사) 관련 일회성 요인이 반영된 것으로 해석된다. 2025년 지배주주 순이익은 6.8억원으로 크게 줄었고, 비지배지분이 사라진 만큼 총순이익과 지배주주 순이익이 동일한 수준으로 수렴했다. 분기별로는 2025년 3분기 매출 231.0억원, 영업이익 43.6억원으로 영업이익률이 크게 개선됐다가 2025년 4분기 매출 180.9억원에 영업손실(약 -0.35억원)로 전환했다. 2026년 1분기(매출 120.0억원, 영업이익 0.7억원)와 2분기(매출 114.1억원, 영업이익 5.0억원)는 매출 규모가 더 작아진 가운데서도 연속 흑자를 유지했다. 다만 최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주 순이익 합계는 -1.4억원으로 적자이며, 영업활동현금흐름도 2025년 -24.0억원으로 2022~2024년의 양(+)의 흐름에서 전환돼 자금 흐름 측면의 부담이 나타났다.",
+  "en": "Consolidated revenue rose from KRW 150.5bn in 2022 to KRW 201.0bn in 2023, but then fell sharply for two consecutive years to KRW 104.2bn in 2024 and KRW 64.3bn in 2025. This decline stems mainly from the loss of control over logistics-automation subsidiaries described above, which shrank the scope of consolidation. Operating profit rose to KRW 15.4bn in 2023 from KRW 6.5bn in 2022, then declined to KRW 7.9bn in 2024 and KRW 6.2bn in 2025; notably, the operating margin actually improved from 7.6% in 2024 to 9.6% in 2025, indicating the underlying profit structure held up even as revenue shrank. Net income attributable to owners rose from KRW 4.3bn in 2022 to KRW 6.4bn in 2023 and KRW 10.8bn in 2024; the large gap between 2024's total net income (KRW 19.7bn) and owners' net income suggests one-off items related to non-controlling interests in the logistics-automation subsidiaries at the time. In 2025, net income attributable to owners fell sharply to KRW 0.68bn, and with non-controlling interests eliminated, total and owners' net income converged. On a quarterly basis, revenue reached KRW 23.1bn with operating profit of KRW 4.36bn in Q3 2025 (a notably higher margin), before swinging to an operating loss of roughly KRW -35mn on revenue of KRW 18.1bn in Q4 2025. Q1 2026 (revenue KRW 12.0bn, operating profit KRW 0.07bn) and Q2 2026 (revenue KRW 11.4bn, operating profit KRW 0.5bn) maintained consecutive small profits even as revenue scale shrank further. However, cumulative net income attributable to owners over the latest four quarters (Q3 2025-Q2 2026) was a loss of KRW -0.14bn, and operating cash flow turned negative at KRW -2.4bn in 2025, a reversal from the positive cash flows seen between 2022 and 2024."
  },
  "industry": {
-  "ko": "국내 교통카드단말기 시장은 공공 인프라 특성상 교체 주기가 길고 안정적인 공공 발주 구조를 유지한다. 2000년대 중후반에 설치된 교통카드 단말기들이 노후화되면서 각 시도별로 교체 프로젝트 수주가 이어지고 있다. 서울시는 2026년 3월 기준 시내버스 태그리스 시범사업 노선을 운영 중이며, 이 기술이 전국으로 보급될 경우 단말기 전면 교체 수요를 창출할 수 있다. 정부는 2030년까지 전국 고속도로·국도·지방도 11만km에 차세대 지능형교통체계(C-ITS)를 구축할 계획으로, ITS 기반 버스·택시 단말기 공급 역량을 보유한 에이텍모빌리티에 중장기 수혜가 기대된다. 주요 제품인 버스운전자단말기·교통정보안내기·택시단말기 등은 실시간 교통정보 제공 및 교차로 제어, 버스 간격 조정을 가능케 하는 ITS 기반 인프라로 활용되고 있다. 철도 역무자동화 분야에서도 기존 설비 노후화에 따른 개량 발주가 증가 추세다. 다만 공공 조달 입찰 특성상 가격 경쟁 압력이 상존하며, 모바일 결제·후불 교통카드·애플페이 연동 등 비접촉 결제 기술의 급속한 보급은 하드웨어 중심 단말기 수요 구조에 장기적 변화를 초래할 수 있다.",
-  "en": "The domestic transit card terminal market features long hardware replacement cycles and a stable public-sector procurement structure. Terminals installed across Korea's public transit network in the mid-to-late 2000s are systematically aging out, generating a rolling wave of replacement contracts from regional governments. Seoul's tagless bus pilot program has been in active operation as of March 2026, and a nationwide rollout could trigger a broad upgrade cycle. The government plans to deploy next-generation C-ITS infrastructure across 110,000 km of roads nationwide by 2030, presenting medium-to-long-term demand for ITS-compatible transit terminals in which Atec Mobility has demonstrated delivery capability. Key products such as bus driver terminals, traffic information displays, and taxi terminals are already deployed as ITS base infrastructure enabling real-time traffic information sharing, intersection control, and bus interval management. The railway station automation segment is also seeing an uptick in refurbishment orders driven by aging equipment. However, public procurement constrains pricing power, and the rapid expansion of NFC mobile payments, post-pay transit cards, and Apple Pay integration may structurally alter long-term hardware terminal demand."
+  "ko": "국내 교통카드·ITS 단말기 산업은 지자체 및 공공기관의 발주에 크게 의존하는 구조로, 구축 경험과 레퍼런스 확보가 수주 경쟁력의 핵심이다. 2000년대 중후반 설치된 교통카드 단말기의 노후화로 각 지자체별 교체 프로젝트가 순차적으로 이어지고 있어, 교체 수요 자체는 꾸준한 흐름을 보이는 편이다. 정부는 미래모빌리티산업을 국가전략산업으로 육성하며 2030년까지 전국 고속도로·국도·지방도 11만km에 차세대 지능형교통체계(C-ITS)를 구축하겠다는 계획을 밝힌 바 있어, 관련 인프라 투자가 이어질 여지가 있다. 친환경 정책 확대에 따른 스마트 교통 인프라 투자 지속도 업황에 긍정적인 배경으로 꼽힌다. 다만 이 시장은 소수의 전문업체가 공공 발주를 나눠 갖는 구조로, 특정 대형 프로젝트의 수주·완료 시점에 따라 개별 기업의 매출·이익이 크게 출렁이는 특성이 있다. 애플페이-티머니 연동과 같은 결제방식 변화는 인프라 유지보수 사업자로서의 존재감을 부각시키는 계기가 되지만, 단말기 자체의 교체 없이 소프트웨어적으로 해결되는 경우 매출 기여가 제한적일 수 있다는 시각도 존재한다.",
+  "en": "Korea's transit-card and ITS terminal industry is heavily dependent on orders from local governments and public agencies, where track record and reference projects are the key to winning contracts. Terminal replacement projects across regions are proceeding sequentially as transit-card devices installed in the mid-to-late 2000s become obsolete, providing a fairly steady stream of replacement demand. The government has designated future mobility as a national strategic industry and announced plans to build a next-generation intelligent transport system (C-ITS) across 110,000 km of highways and roads nationwide by 2030, leaving room for continued infrastructure investment. Continued expansion of eco-friendly policy is also cited as a positive backdrop for smart transport infrastructure spending. However, this market is structured around a small number of specialized firms sharing public-sector orders, meaning individual companies' revenue and profit can swing significantly depending on the timing of specific large project wins and completions. Payment-method shifts such as Apple Pay's integration with T-money highlight the company's role as an infrastructure maintenance provider, though some views note that if such integration is achieved via software without terminal replacement, the revenue contribution could be limited."
  },
  "outlook": {
-  "ko": "2026년 3월 수인분당선 역무자동화설비 개량 제조설치 계약 수주는 철도 분야로의 사업 확장을 실질적으로 뒷받침하는 성과다. 서울시의 태그리스 시범사업이 2026년 3월 기준 노선별로 확대 운영 중이며, 전국 확산 시 기존 단말기의 대규모 교체 및 신규 설비 설치 발주로 연결될 가능성이 있다. 2025년 11월 '중소기업 R&D 우수성과 50선' 선정은 정부 과제 수주 경쟁력을 높이는 기반이 될 수 있다. 재무 면에서 부채비율 37.1%는 추가 수주·설비 투자 시 차입 여력을 제공한다. 단기 리스크로는 2026년 1분기 영업이익이 0.7억 원에 그친 만큼, 2분기 이후 수익성 회복 속도가 핵심 관전 포인트다. 자회사 재편이 마무리된 이후 에이텍오토(물류자동화)는 관계기업으로 지분법 이익에 반영되므로, 해당 기업의 실적 회복 여부가 에이텍모빌리티의 손익에 간접적 영향을 줄 것이다. 분기별 수주·매출 공시를 통해 모빌리티 본업의 성장 속도를 지속 검증하는 것이 적절하다.",
-  "en": "The March 2026 contract for the renovation of station automation equipment on the Bundang Line provides tangible evidence of the company's expansion into the railway segment. Seoul's tagless bus pilot program is being actively extended across multiple routes as of March 2026, and a citywide or nationwide rollout could generate significant procurement demand for terminal upgrades and new installations. Recognition among the top 50 SME R&D achievements in November 2025 strengthens competitiveness in government-funded project bids. Financially, the 37.1% debt-to-equity ratio leaves headroom for incremental borrowing to support new orders or capital investment. In the near term, the key question is whether the subdued Q1 2026 profitability (operating profit of KRW 69 million) can recover meaningfully in subsequent quarters. With the subsidiary restructuring largely complete, Atec Auto (logistics automation) is now accounted for as a related company through the equity method, making its own operational performance a secondary but relevant contributor to Atec Mobility's earnings. Monitoring new order disclosures and quarterly revenue reports remains the most reliable way to gauge the pace of core business recovery."
+  "ko": "2026년 들어 회사는 인천 버스단말기 공급계약(6월)과 수인분당선 역무자동화설비 개량 제조설치 계약(3월)을 잇달아 수주하며 공공 프로젝트 라인을 확보했다. 별도기준으로는 2026년 1분기 한국철도공사 교통카드발매기 매출 증가가 매출 성장의 주요 요인으로 지목됐으나, 비용 부담으로 수익성은 소폭 하락한 것으로 파악된다. 2025년 3분기 누적 별도기준으로는 서울시 버스단말기교체사업 등 주요 프로젝트 참여 효과로 매출과 영업이익이 모두 증가한 반면 당기순이익은 감소한 바 있어, 프로젝트별 매출 인식 시점과 비용 구조가 분기 손익에 미치는 영향이 크다는 점이 확인된다. 애플페이와 티머니 간 협업 진전 소식이 반복적으로 회사에 대한 시장의 관심을 환기시켜온 만큼, 향후 상용화 범위와 방식이 유지보수 매출에 어떤 영향을 줄지가 관찰 대상이다. 회사 자체로는 자율주행 시스템 등 ITS 기반 서비스를 통합 제공할 수 있는 역량을 갖추고 있다고 밝히고 있어, 중장기적으로 서비스형 모빌리티(MaaS) 영역 확장을 도모하고 있는 것으로 파악된다. 다만 이러한 신사업 확장이 매출로 가시화되는 시점과 규모는 아직 공시된 수치로 확인되지 않아, 당분간은 기존 공공 프로젝트 수주·이행 흐름이 실적의 중심 변수로 남을 것으로 보인다.",
+  "en": "In 2026 the company secured a pipeline of public-sector projects in succession, including an Incheon bus terminal supply contract in June and a Suin-Bundang Line station automation equipment upgrade contract in March. On a separate (non-consolidated) basis, growth in Korail transit-card issuance machine sales was cited as the main driver of Q1 2026 revenue growth, though profitability reportedly declined slightly due to cost burdens. Cumulative separate-basis figures through Q3 2025 showed both revenue and operating profit rising on the back of projects such as Seoul's bus terminal replacement program, while net income declined, underscoring how project-specific revenue recognition timing and cost structure can heavily influence quarterly results. Given that news of progress in Apple Pay's collaboration with T-money has repeatedly drawn market attention to the company, how the eventual scope and method of commercialization affects maintenance revenue remains a point to watch. The company states it has the capability to provide integrated ITS-based services including autonomous driving systems, suggesting a medium-to-long-term push into mobility-as-a-service (MaaS) areas. However, the timing and scale at which such new business expansion becomes visible in disclosed figures has not yet been confirmed, so the existing flow of public-sector project wins and execution is likely to remain the central variable for near-term results."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당 순자산가치(BPS 13,448원) 대비 할인된 구간에서 형성되어 있어, 시장이 현시점에서 기업의 순자산 가치에 디스카운트를 적용하고 있는 상황이다. 주당 배당금(DPS 300원)을 기준으로 산출되는 배당수익률은 코스닥 중소형주 업종 평균과 비교해 양호한 수준으로 평가된다. 다만 이익 정상화가 확인되지 않은 재편 과도기에서는 이익 기반 밸류에이션 지표의 신뢰도가 제한적이므로, 현재 수준의 주가 배수는 핵심 사업 수주 동향 및 분기 이익 흐름이 확인된 이후 재평가가 가능하다. 과거 주가는 저점 대비 수 배에 달하는 폭넓은 밴드를 형성했으며, 현 주가 수준은 그 역사적 밴드의 하단 구간에 위치해 있다.",
-  "en": "The current share price is trading at a discount to book value per share (BPS: KRW 13,448), indicating that the market is applying a discount to the company's net asset value—a pattern typical of businesses in an earnings recovery transition. The dividend per share of KRW 300 supports a yield that compares favorably with KOSDAQ small-cap peers. However, in the absence of confirmed earnings normalization, profit-based valuation multiples carry limited interpretive reliability, and any meaningful rerating would require validation through tangible order wins and sequential improvement in quarterly operating results. Historically, the stock has traded across a very wide multi-year range, and the current price level resides toward the lower end of that historical band."
+  "ko": "현재 주가는 순자산 대비로는 할인된 수준에서 거래되고 있어, 장부상 자기자본 대비로는 낮은 배수가 적용돼 있는 편이다. 최근 4개 분기 기준으로는 지배주주 순이익이 적자를 기록해 통상적인 이익 배수 잣대를 적용하기 어려운 구간에 놓여 있다. 배당은 실적 변동성이 큰 가운데서도 주당 현금배당을 유지해 온 편으로, 이익 흐름 대비 배당 정책의 일관성을 확인할 수 있는 지점이다. 부채비율이 2023년 79.2%에서 2025년 37.1%로 낮아진 점은 재무 건전성 측면에서 긍정적으로 볼 수 있는 변화다. 다만 연결 매출 자체가 계열사 편입·이탈에 따라 크게 출렁여 온 만큼, 밸류에이션을 논할 때는 매출·이익의 절대 규모 변화를 함께 살펴볼 필요가 있다.",
+  "en": "The current share price trades at a discount to book net asset value, implying a relatively low multiple applied to shareholders' equity on the balance sheet. Over the latest four quarters, net income attributable to owners has been in loss territory, making conventional earnings-multiple comparisons difficult to apply in this window. The company has maintained per-share cash dividends even amid significant earnings volatility, which points to a degree of consistency in dividend policy relative to earnings flow. The decline in the debt-to-equity ratio from 79.2% in 2023 to 37.1% in 2025 can be viewed as a positive change from a balance-sheet health perspective. That said, since consolidated revenue itself has swung sharply due to the consolidation and deconsolidation of affiliates, any valuation discussion needs to be considered alongside the absolute changes in revenue and earnings scale."
  },
  "bull": [
   {
    "title": {
-    "ko": "노후 교통단말기 교체 사이클 수혜",
-    "en": "Beneficiary of Aging Transit Terminal Replacement Cycle"
+    "ko": "재무구조 개선",
+    "en": "Improving Balance Sheet"
    },
    "body": {
-    "ko": "2000년대 중후반에 전국 대중교통망에 설치된 교통카드 단말기들이 노후화되면서 각 시도별로 교체 프로젝트 발주가 이어지고 있다. 에이텍모빌리티는 티머니 단말기 유지·보수 독점적 지위와 축적된 납품 실적을 바탕으로 입찰 경쟁력을 갖추고 있다. 이 교체 수요는 지역별로 분산·연속되는 특성을 지녀 중기적으로 안정적인 수주 기반을 제공할 가능성이 높다.",
-    "en": "Transit card terminals installed across Korea's public transit network in the mid-to-late 2000s are systematically aging out, generating a rolling wave of replacement contracts from regional governments. Atec Mobility's entrenched position as the exclusive Tmoney terminal maintenance contractor, combined with its accumulated delivery track record, positions it competitively in successive bids. This replacement demand tends to be geographically distributed and phased, providing a relatively stable medium-term order pipeline."
+    "ko": "부채비율이 2023년 79.2%에서 2025년 37.1%로 뚜렷하게 낮아졌다. 물류자동화 계열사 이탈로 매출 규모는 줄었지만, 재무 건전성 측면에서는 부담이 완화된 모습이다. 지배주주 자기자본도 2024년 693.7억원에서 2025년 695.3억원으로 소폭이나마 늘어 자본 기반은 유지되고 있다.",
+    "en": "The debt-to-equity ratio fell markedly from 79.2% in 2023 to 37.1% in 2025. Although revenue scale shrank following the departure of logistics-automation subsidiaries, the burden on balance-sheet health has eased. Equity attributable to owners also edged up slightly from KRW 69.4bn in 2024 to KRW 69.5bn in 2025, keeping the capital base intact."
    }
   },
   {
    "title": {
-    "ko": "태그리스 기술 상용화 및 C-ITS 정책 수혜",
-    "en": "Tagless Technology Commercialization and C-ITS Policy Tailwind"
+    "ko": "공공 인프라 교체수요 지속",
+    "en": "Continued Public Infrastructure Replacement Demand"
    },
    "body": {
-    "ko": "에이텍모빌리티가 개발한 태그리스 결제 기술은 서울시 시내버스 시범 노선에 이미 적용 중이며, 전국 확산 시 기존 단말기의 대규모 교체 수요를 창출할 수 있다. 정부는 2030년까지 전국 11만km 도로에 C-ITS를 구축할 계획으로, 에이텍모빌리티의 ITS 기반 버스·택시 단말기 제품군과의 접점이 넓다. 애플페이-티머니 협력 확대에 따른 유지보수 사업자 지위 강화도 중기 매출 성장 동인이 될 수 있다.",
-    "en": "Atec Mobility's tagless payment technology is already deployed in Seoul's bus pilot program, and a nationwide rollout would trigger a broad hardware upgrade cycle. The government plans to build out C-ITS infrastructure across 110,000 km of roads by 2030, directly aligning with Atec Mobility's ITS-compatible product portfolio for buses and taxis. The expanded Tmoney–Apple Pay collaboration further reinforces the company's maintenance contractor role, providing incremental medium-term revenue visibility."
+    "ko": "교통카드 단말기의 노후화에 따른 순차적 교체수요가 지자체별로 이어지고 있다. 2026년 들어 인천 버스단말기 공급계약, 수인분당선 역무자동화설비 개량 계약 등 신규 프로젝트 수주가 이어졌다. 정부의 C-ITS 인프라 구축 계획도 관련 시장의 수요 기반을 뒷받침하는 요인이다.",
+    "en": "Sequential replacement demand tied to aging transit-card terminals continues across local governments. In 2026 the company has won new projects in succession, including an Incheon bus terminal supply contract and a Suin-Bundang Line station automation upgrade contract. The government's C-ITS infrastructure buildout plan also underpins the demand base for this market."
    }
   },
   {
    "title": {
-    "ko": "재무 구조 개선 및 핵심 사업 이익률 제고",
-    "en": "Improved Balance Sheet and Higher Core Business Profitability"
+    "ko": "결제 인프라 유지보수 지위",
+    "en": "Payment Infrastructure Maintenance Position"
    },
    "body": {
-    "ko": "자회사 정리 후 부채비율이 2023년 79.2%에서 2025년 37.1%로 낮아져 재무 안정성이 향상됐다. 복잡한 연결 구조에서 탈피해 핵심 모빌리티 사업에 집중함으로써 영업이익률이 9.6%로 역대 최고 수준을 기록했다. 순자산 대비 할인된 주가 수준은 이익 정상화 시 밸류에이션 재평가의 잠재적 여지를 내포한다.",
-    "en": "The debt-to-equity ratio fell markedly from 79.2% in 2023 to 37.1% in 2025 following subsidiary exits, materially improving balance sheet resilience. The exit from a complex multi-segment structure and refocus on the core mobility terminal business contributed to a record operating margin of 9.6% in 2025. The stock's current discount to book value embeds potential for a rerating should earnings normalization be demonstrated in coming quarters."
+    "ko": "회사는 티머니가 국내에 설치한 모든 버스·택시·충전단말기의 통합 유지보수 사업자로 선정된 이력을 갖고 있다. 애플페이-티머니 연동 논의가 이어질 때마다 이러한 유지보수 사업자 지위가 시장의 관심을 환기시켜왔다. 결제 생태계가 확장될 경우 인프라 유지보수 수요 역시 함께 늘어날 잠재력이 있다.",
+    "en": "The company has a track record of being selected as the integrated maintenance provider for all bus, taxi, and charging terminals installed by T-money nationwide. Whenever discussions of Apple Pay's integration with T-money progress, this maintenance-provider status has repeatedly drawn market attention. If the payment ecosystem expands, there is potential for infrastructure maintenance demand to grow alongside it."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "외형 급감과 분기 이익 변동성 지속",
-    "en": "Steep Revenue Contraction and Persistent Quarterly Earnings Volatility"
+    "ko": "매출 기반 축소",
+    "en": "Shrinking Revenue Base"
    },
    "body": {
-    "ko": "연결 매출이 2023년 2,010억 원에서 2025년 643억 원으로 3년 만에 3분의 1 이하로 줄었으며, 2026년 1분기도 120억 원에 그쳐 빠른 외형 회복을 기대하기 어렵다. 2025년 분기별 영업이익은 3분기 44억 원에서 4분기 -0.4억 원으로 급격히 전환되는 등 프로젝트성 매출 구조에서 비롯된 극심한 변동성이 존재한다. 2025년 영업현금흐름 -24억 원은 핵심 사업만으로의 현금 창출력이 아직 제한적임을 시사한다.",
-    "en": "Consolidated revenue contracted from KRW 201 billion in 2023 to KRW 64.3 billion in 2025—down nearly two-thirds in three years—with Q1 2026 at only KRW 12.0 billion indicating no imminent revenue recovery. Quarterly operating profit swung from KRW 4.4 billion in Q3 2025 to near zero in Q4, highlighting the extreme volatility inherent in the project-based, lumpy revenue model. Operating cash flow turning negative at KRW -2.4 billion in 2025 signals that the core business alone has yet to demonstrate consistent cash generation capacity."
+    "ko": "연결 매출은 2023년 2,010억원에서 2025년 643억원으로 3분의 1 수준으로 줄었다. 이는 물류자동화 계열사 지배력 상실에 따른 연결 범위 축소가 주된 원인이다. 매출 규모 자체가 급격히 작아진 만큼, 향후 신규 사업이 이를 얼마나 대체할 수 있을지가 관건이다.",
+    "en": "Consolidated revenue fell to about one-third of its 2023 level, from KRW 201.0bn to KRW 64.3bn in 2025. This is mainly due to the shrinkage in consolidation scope following the loss of control over logistics-automation subsidiaries. With the revenue base having contracted sharply, the key question is how much new business can offset this going forward."
    }
   },
   {
    "title": {
-    "ko": "공공 입찰 의존에 따른 수익성 제약",
-    "en": "Profitability Constraints from Public Tender Dependency"
+    "ko": "이익 변동성",
+    "en": "Earnings Volatility"
    },
    "body": {
-    "ko": "주요 매출 대부분이 정부·공공기관 발주 입찰을 통해 이루어지므로, 수주 단가 인하 압력과 예산 삭감 리스크에 항상 노출되어 있다. 입찰 구조가 경쟁사 진입 장벽을 어느 정도 제공하지만, 낙찰가 경쟁이 치열할 경우 마진 훼손으로 이어질 수 있다. 2026년 1분기 영업이익률이 약 0.6% 수준에 그친 것은 최근 수주 원가 구조의 타이트함을 보여준다.",
-    "en": "The majority of revenue is derived from government and public-sector procurement, making earnings persistently vulnerable to contract price reductions and public budget constraints. While the bidding structure provides some barrier to new entrants, competitive pricing pressure on awarded contracts can erode margins materially. Q1 2026's operating margin of approximately 0.6% reflects the tight cost structure inherent in recently awarded contracts."
+    "ko": "2025년 3분기 영업이익 43.6억원에서 4분기 영업손실로 급격히 전환됐다. 2026년 1·2분기 연속 흑자를 냈지만 규모는 각각 0.7억원, 5.0억원으로 작은 수준이다. 최근 4개 분기 지배주주 순이익 합계도 적자를 기록해, 분기별 손익의 변동성이 큰 편이다.",
+    "en": "Operating profit swung sharply from KRW 4.36bn in Q3 2025 to an operating loss in Q4 2025. Although Q1 and Q2 2026 posted consecutive profits, the amounts were small at KRW 0.07bn and KRW 0.5bn respectively. Cumulative net income attributable to owners over the latest four quarters was also a loss, reflecting significant quarter-to-quarter volatility."
    }
   },
   {
    "title": {
-    "ko": "성장 동력 다변화 축소 및 고객 집중 리스크",
-    "en": "Reduced Growth Diversification and Key Customer Concentration Risk"
+    "ko": "현금흐름 부담",
+    "en": "Cash Flow Pressure"
    },
    "body": {
-    "ko": "자회사 정리 이후 성장 동력이 교통카드 단말기 단일 사업 중심으로 수렴됐다. 티머니 생태계에 대한 높은 의존도는 NFC 모바일 결제 확대·차세대 결제 플랫폼 전환 등 구조적 변화가 장기적으로 하드웨어 수요를 잠식할 리스크를 내포한다. 연결 범위 축소로 규모의 경제 효과가 약화되면서, 고정비 레버리지를 통한 이익 증폭 효과도 과거 대비 제한적이다.",
-    "en": "Following the subsidiary restructuring, growth drivers have converged onto the single core transit terminal business. Heavy dependence on the Tmoney ecosystem creates structural sensitivity to long-term hardware demand erosion driven by expanding NFC mobile payments and next-generation payment platform transitions. The narrowed consolidation scope also diminishes fixed-cost leverage, limiting the profit amplification effect that supported stronger earnings in prior peak-revenue years."
+    "ko": "영업활동현금흐름이 2025년 -24.0억원으로, 2022~2024년의 양(+)의 흐름에서 전환됐다. 공공 프로젝트 특성상 대금 회수 시점이 불규칙할 수 있어, 장부상 이익과 실제 현금 창출 사이에 괴리가 나타날 가능성이 있다. 이러한 흐름이 지속될 경우 재무 여력에 부담을 줄 수 있다.",
+    "en": "Operating cash flow turned negative at KRW -2.4bn in 2025, reversing the positive flows seen between 2022 and 2024. Given the nature of public-sector projects, payment collection timing can be irregular, raising the possibility of a gap between book earnings and actual cash generation. If this pattern persists, it could pressure financial flexibility."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "공공 예산 및 정책 리스크",
-    "en": "Public Budget and Policy Risk"
+    "ko": "실적 변동성 리스크",
+    "en": "Earnings Volatility Risk"
    },
    "body": {
-    "ko": "정부 및 지방자치단체의 교통 인프라 예산 삭감이나 사업 우선순위 변경은 교통단말기 교체·역무자동화 발주 일정을 지연시킬 수 있다. C-ITS 구축, 태그리스 전국 확산 등 정책 기반 수요는 예산 편성 우선순위에서 밀릴 경우 기대치보다 늦게 실현될 수 있다. 정책 수혜 시나리오를 선반영한 기대감이 실제 수주로 연결되지 않을 경우 실망 리스크가 존재한다.",
-    "en": "Budget cuts or shifts in public expenditure priorities by central or local governments could delay transit terminal replacement projects and station automation orders. Policy-driven demand—including C-ITS deployment and nationwide tagless adoption—is contingent on sustained budgetary commitment and may be deferred if infrastructure spending priorities shift. If market expectations premised on policy tailwinds are not validated by actual order wins, a downside surprise risk arises."
+    "ko": "공공기관 발주 특성상 프로젝트 수주·매출 인식 시점에 따라 분기 실적이 크게 출렁인다. 2025년 3분기 강한 영업이익 이후 4분기 곧바로 영업손실로 전환된 사례가 이를 보여준다. 특정 분기 실적을 근거로 연간 추세를 단정하기 어려운 구조다.",
+    "en": "Given the nature of public-sector orders, quarterly results can swing significantly depending on project award and revenue recognition timing. The swing from strong operating profit in Q3 2025 to an operating loss immediately in Q4 2025 illustrates this. It is difficult to extrapolate an annual trend from any single quarter's results."
    }
   },
   {
    "cat": {
-    "ko": "기술 및 결제 플랫폼 전환 리스크",
-    "en": "Technology and Payment Platform Transition Risk"
+    "ko": "사업구조·지배구조 변화 리스크",
+    "en": "Business and Ownership Structure Change Risk"
    },
    "body": {
-    "ko": "스마트폰 NFC·QR코드 결제, 후불 교통카드, 애플페이 티머니 연동 등 비접촉 결제 기술의 급속한 보급은 장기적으로 기존 RF 카드 기반 단말기의 하드웨어 수요를 잠식할 수 있다. 차세대 결제 플랫폼이 현행 단말기와 호환되지 않는 방향으로 표준화될 경우 수요 구조 자체가 변할 수 있다. 태그리스 기술이 시장 표준으로 자리 잡지 못하면 R&D 투자 회수가 지연될 위험도 있다.",
-    "en": "The rapid adoption of contactless payment technologies—including NFC smartphones, QR codes, post-pay transit cards, and Apple Pay via Tmoney—poses a long-term structural threat to hardware-centric terminal demand. If next-generation payment platforms standardize on approaches incompatible with current terminal architectures, the overall hardware market could shrink structurally. Additionally, if tagless technology fails to achieve broad market adoption, the return on R&D investment in this area may be materially delayed."
+    "ko": "2022~2024년 사이 물류자동화 계열사의 편입과 이탈이 반복되며 연결 실적의 예측 가능성이 낮아졌다. 소수의 대형 공공 발주처(지자체, 공공기관)에 매출이 집중돼 있어 특정 고객·프로젝트 의존도가 높은 편이다. 향후 유사한 지분 변동이 재발할 경우 연결 매출·이익 규모가 다시 크게 바뀔 수 있다.",
+    "en": "The repeated consolidation and deconsolidation of logistics-automation affiliates between 2022 and 2024 have reduced the predictability of consolidated results. Revenue is concentrated among a small number of large public-sector clients (local governments and agencies), leading to relatively high dependence on specific customers and projects. If similar equity changes recur, consolidated revenue and profit scale could shift significantly again."
    }
   },
   {
    "cat": {
-    "ko": "포트폴리오 단순화에 따른 집중 리스크",
-    "en": "Business Concentration Risk from Narrowed Portfolio"
+    "ko": "결제방식 변화 리스크",
+    "en": "Payment Method Transition Risk"
    },
    "body": {
-    "ko": "금융자동화·물류자동화 자회사 정리 이후 매출 기반이 교통카드 단말기 사업 중심으로 집중됐다. 단일 사업 의존도가 높아진 상황에서 핵심 사업의 업황 악화나 주요 고객 이탈은 실적에 직접적인 충격을 줄 수 있다. 향후 성장을 위한 신규 M&A나 사업 확장 추진 시 과거 자회사 편입·정리 과정에서 반복된 일회성 비용과 연결 구조 변동 리스크가 재발할 가능성도 배제하기 어렵다.",
-    "en": "Following the exit of financial and logistics automation subsidiaries, the revenue base has become concentrated in the single core transit terminal business. With elevated single-segment dependency, any deterioration in the core business environment or loss of a major customer would deliver a direct earnings impact. Any future M&A activity or business expansion could also reintroduce execution and financial risks—including one-time restructuring costs and consolidation scope changes—similar to those incurred during the prior acquisition and divestiture cycle."
+    "ko": "애플페이-티머니 연동이 단말기 교체 없이 소프트웨어적으로 해결될 경우, 유지보수 사업자로서의 매출 기여가 기대만큼 크지 않을 수 있다는 시각이 존재한다. 결제 규격 변화가 오히려 기존 단말기의 교체 수요를 줄이는 방향으로 작용할 가능성도 배제할 수 없다. 이러한 불확실성은 관련 뉴스가 나올 때마다 주가 변동성을 키우는 요인으로도 작용해왔다.",
+    "en": "There is a view that if Apple Pay's integration with T-money is resolved via software without terminal replacement, the revenue contribution for the company as a maintenance provider may be smaller than expected. It cannot be ruled out that changes in payment specifications could actually reduce demand for replacing existing terminals. This uncertainty has also been a factor that has amplified share price volatility whenever related news emerges."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중",
+    "en": "November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표: 수인분당선 역무자동화 수주 매출 인식 여부 및 영업이익률 회복 속도 확인이 핵심. 1분기의 낮은 이익률(약 0.6%)이 2분기에 개선되는지가 본업 수익성 회복의 첫 번째 검증 시점.",
-    "en": "Q2 2026 earnings release: verify whether revenue from the Bundang Line station automation contract is being recognized, and assess whether the subdued Q1 operating margin (~0.6%) is recovering—this is the first key checkpoint for confirming core business profitability normalization."
+    "ko": "2026년 3분기 실적 발표 예정으로, 2026년 1·2분기에 이어 흑자 기조가 유지되는지 확인이 필요하다.",
+    "en": "Q3 2026 results are expected to be announced; it will be worth checking whether the profitable trend seen in Q1 and Q2 2026 continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 수시 공시",
-    "en": "H2 2026 – As Announced"
+    "ko": "2026년 4분기 중",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "추가 역무자동화·교통단말기 교체 수주 공시 여부: 수주 규모와 납기 일정이 단기 매출 가시성을 결정하는 핵심 지표이며, 수주 공백이 길어질 경우 분기 실적 변동성이 재차 확대될 수 있다.",
-    "en": "New contract disclosures for station automation or transit terminal replacements: order size and delivery schedules are the primary indicators of near-term revenue visibility; an extended gap between orders would re-amplify quarterly earnings volatility."
+    "ko": "6월에 수주한 인천 버스단말기 공급계약의 진행·매출 인식 상황을 점검할 시점이다.",
+    "en": "This is the point to check progress and revenue recognition on the Incheon bus terminal supply contract won in June 2026."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 지속 모니터링",
-    "en": "H2 2026 Ongoing"
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "서울시 태그리스 시범사업 확대 공지 및 전국 확산 일정 발표: 시범 노선 수 확대나 전국 확산 입찰 공고가 나올 경우 에이텍모빌리티의 단말기 교체 수주 기회가 본격화될 수 있다.",
-    "en": "Watch for Seoul Metropolitan Government announcements on expanding the tagless bus pilot or confirming a timeline for nationwide rollout; any expansion in pilot routes or a national procurement tender would signal a meaningful order opportunity for Atec Mobility."
+    "ko": "3월 수주한 수인분당선 역무자동화설비 개량 프로젝트의 이행 경과와 애플페이-티머니 연동 상용화 여부·범위를 함께 확인할 필요가 있다.",
+    "en": "It is worth monitoring the progress of the Suin-Bundang Line station automation upgrade project won in March, alongside whether and to what extent Apple Pay's integration with T-money is commercialized."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표: 전년 동기(2025년 3분기 매출 231억 원, 영업이익 44억 원)와의 비교를 통해 수주 집중 분기 패턴의 지속성 및 본업 이익 기반의 강도를 검증.",
-    "en": "Q3 2026 earnings release: compare against the high-water mark of Q3 2025 (revenue KRW 23.1 billion, operating profit KRW 4.4 billion) to assess whether the order-driven quarterly concentration pattern persists and the underlying earnings base is strengthening."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 초 사업보고서 공시 시",
-    "en": "Early 2027 – Annual Report Disclosure"
-   },
-   "what": {
-    "ko": "2026년 연간 영업현금흐름 흑자 전환 여부 확인: 2025년 -24억 원에서 흑자로 돌아설 경우 핵심 사업의 실질적인 현금 창출력 회복이 입증되는 중요한 재무 마일스톤.",
-    "en": "Verify whether 2026 annual operating cash flow turns positive, recovering from KRW -2.4 billion in 2025; a return to positive cash generation would serve as a key financial milestone confirming restored earnings power in the core business."
+    "ko": "2026년 4분기 및 연간 결산 실적이 공시될 예정으로, 부채비율·영업활동현금흐름 등 재무구조 개선 흐름이 지속되는지 확인이 필요하다.",
+    "en": "Q4 and full-year 2026 results are expected to be disclosed; it will be important to check whether improvements in the debt ratio and operating cash flow continue."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "에이텍모빌리티는 2024~2025년 금융·물류 자회사를 대거 정리하면서 연결 매출이 2023년 2,010억 원에서 2025년 643억 원으로 급감하는 외형 축소를 겪었으나, 영업이익률은 9.6%로 역대 최고치를 기록해 핵심 사업의 수익 구조가 상대적으로 견고함을 확인했다. 서울시 시내버스 태그리스 시범사업 확대, 2026년 3월 수인분당선 역무자동화 수주, C-ITS 정책 기반 수요는 중기적 성장 동인이지만, 이들이 실제 수주 공시와 분기 실적으로 가시화되는 속도가 핵심 검증 과제다. 재무 구조는 부채비율 37.1%로 안정됐고 주가는 주당 순자산가치(BPS 13,448원) 대비 할인된 구간에 있으나, 2026년 1분기 영업이익이 0.7억 원에 그친 만큼 이익 정상화까지 시간이 필요한 상황이다. 프로젝트성 매출 특성에 따른 분기별 실적 변동성과 공공 입찰 의존 구조는 지속적인 모니터링이 필요한 리스크 요인이다. 종합하면, 자회사 재편 완료라는 구조적 전환점을 지난 에이텍모빌리티는 현재 이익 정상화 여부를 시장이 검증하는 과도기적 국면에 있으며, 향후 수주 공시와 분기 수익성 흐름이 기업 가치 재평가의 핵심 변수가 될 것이다.",
-   "en": "Atec Mobility completed a major structural shift through subsidiary divestitures in 2024–2025, with consolidated revenue contracting sharply from KRW 201 billion in 2023 to KRW 64.3 billion in 2025. Against this backdrop, a record operating margin of 9.6% in 2025 confirmed that the core transit terminal business carries stronger inherent profitability than the more diversified prior structure. Medium-term catalysts—including Seoul's expanding tagless bus program, the March 2026 Bundang Line station automation contract, and government C-ITS infrastructure spending—are credible, but their translation into tangible order wins and quarterly earnings improvement remains the central validation task. The balance sheet is clean at a 37.1% debt ratio and the stock trades at a discount to book value per share (BPS: KRW 13,448), yet Q1 2026's subdued profitability signals that full earnings normalization requires further time. The lumpy, project-dependent revenue structure and reliance on public procurement remain persistent risk factors requiring ongoing monitoring. In summary, Atec Mobility stands at a structural turning point following its restructuring, with the market currently assessing whether earnings normalization is underway; new order disclosures and the sequential trajectory of operating margins will be the decisive variables for any valuation rerating."
+   "ko": "에이텍모빌리티는 물류자동화 계열사의 편입과 이탈을 거치며 연결 매출이 2023년 2,010억원에서 2025년 643억원으로 크게 줄어든 반면, 영업이익률은 같은 기간 오히려 개선되며 본업의 수익구조는 상대적으로 견고함을 보였다. 부채비율이 79.2%에서 37.1%로 낮아진 점은 재무 건전성 측면의 긍정적 변화지만, 2025년 영업활동현금흐름이 마이너스로 전환된 점은 함께 살펴볼 필요가 있는 대목이다. 분기 실적은 2025년 3분기 강한 영업이익 이후 4분기 손실로 전환되고 2026년 1·2분기 소폭 흑자를 내는 등 변동성이 크며, 최근 4개 분기 지배주주 순이익 합계는 적자 상태다. 2026년 들어 인천 버스단말기, 수인분당선 역무자동화설비 등 신규 공공 프로젝트 수주가 이어지고 있어 향후 매출 기여 여부가 관찰 대상이다. 애플페이-티머니 연동을 비롯한 결제 생태계 변화는 회사의 유지보수 사업자 지위를 부각시키는 동시에, 매출 기여의 불확실성도 함께 내포하고 있다. 종합적으로 이 종목은 매출 기반 재편과 수익성 회복 시도가 동시에 진행되는 국면에 있으며, 공공 프로젝트의 수주·이행 흐름과 분기별 손익 변동을 함께 지켜볼 필요가 있는 상황이다.",
+   "en": "ATEC Mobility saw consolidated revenue shrink sharply from KRW 201.0bn in 2023 to KRW 64.3bn in 2025 as it went through the consolidation and deconsolidation of logistics-automation affiliates, while its operating margin actually improved over the same period, showing the core business's profit structure held up relatively well. The decline in the debt ratio from 79.2% to 37.1% is a positive change in balance-sheet health, though the shift to negative operating cash flow in 2025 is a point that warrants attention alongside it. Quarterly results have been volatile, swinging from a strong operating profit in Q3 2025 to a loss in Q4 2025 and then to small profits in Q1 and Q2 2026, with cumulative net income attributable to owners over the latest four quarters remaining in loss. New public-sector project wins, including the Incheon bus terminal contract and the Suin-Bundang Line station automation upgrade, have continued into 2026, and their eventual revenue contribution is worth watching. Changes in the payment ecosystem, including the Apple Pay-T-money integration, highlight the company's maintenance-provider status while also carrying uncertainty over the actual revenue contribution. Overall, the company appears to be in a phase where a restructured revenue base and an attempted profitability recovery are unfolding simultaneously, making it worthwhile to keep tracking the flow of public-project awards and execution alongside quarterly earnings volatility."
   }
  },
  "sources": [
   "https://www.butler.works/ko/companies/01099861",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A224110",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/atectn",
   "https://m.thinkpool.com/compDiscuss/cont/1011570",
-  "https://m.finance.daum.net/quotes/A224110",
   "https://m.thinkpool.com/item/224110",
-  "https://www.valueline.co.kr/finance/investment/224110",
-  "https://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=224110",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/atectn",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=224110",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A224110&cID=&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
-  "https://www.atecmobility.com/",
-  "https://www.etoday.co.kr/news/view/2337759",
+  "https://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=224110",
+  "https://news.nate.com/view/20250311n31891",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A224110&cID=&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
   "https://www.saramin.co.kr/zf_user/company-info/view/csn/b1Raa205YzRCRHBTS2l0b0hYcFV1QT09/company_nm/(%EC%A3%BC)%EC%97%90%EC%9D%B4%ED%85%8D%EB%AA%A8%EB%B9%8C%EB%A6%AC%ED%8B%B0",
-  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=224110&cn=",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A045660",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/OG5sVVdjNXNCUm45MXB4TUFVcUJ1UT09/company_nm/(%EC%A3%BC)%EC%97%90%EC%9D%B4%ED%85%8D%EC%97%90%EC%9D%B4%ED%94%BC",
-  "https://news.seoul.go.kr/traffic/archives/515614",
-  "https://www.jobplanet.co.kr/companies/315806/reviews/%EC%97%90%EC%9D%B4%ED%85%8D%EB%AA%A8%EB%B9%8C%EB%A6%AC%ED%8B%B0"
+  "https://www.atecmobility.com/",
+  "https://atecmobility.com/info/ir.html",
+  "https://atecmobility.com/promotion/media.html?bmain=view&uid=24",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=414252",
+  "http://www.cvinfo.com/news/articleList.html?page=4&total=3619&box_idxno=&sc_section_code=&sc_sub_section_code=&sc_serial_code=&sc_area=&sc_level=&sc_article_type=&sc_view_level=&sc_sdate=&sc_edate=&sc_serial_number=&sc_word=&sc_word2=&sc_andor=&sc_order_by=I&view_type=sm",
+  "https://antwinner.com/stock/%EC%97%90%EC%9D%B4%ED%85%8D",
+  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx",
+  "https://markets.hankyung.com/consensus",
+  "https://securities.miraeasset.com/bbs/board/message/list.do?categoryId=1521"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "224110",
  "name": "에이텍모빌리티",
  "name_en": "ATEC MOBILITY Co., Ltd",
@@ -233,11 +223,11 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:46",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 21:16",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -316,47 +306,51 @@
     "q": "2025Q3",
     "rev": 23103985432,
     "op": 4363138999,
-    "np_owner": 3667869301
+    "np_owner": null
    },
    {
     "q": "2025Q4",
     "rev": 18088397244,
     "op": -35319562,
-    "np_owner": -4141013883
+    "np_owner": null
    },
    {
     "q": "2026Q1",
     "rev": 12004217696,
     "op": 69849163,
-    "np_owner": 181635303
+    "np_owner": null
    },
    {
     "q": "2026Q2",
     "rev": 11406963639,
     "op": 500169375,
-    "np_owner": 153340182
+    "np_owner": null
    }
   ],
   "valuation": {
-   "price": 8940,
-   "mcap": 0.0454,
+   "price": 8880,
+   "mcap": 0.0451,
    "shares": 5080386,
    "total_shares": 5080386,
    "wavg_shares": 5070658,
    "per": null,
    "eps": -30,
-   "pbr": 0.6593,
-   "bps": 13560,
+   "pbr": 0.6548,
+   "bps": 13561,
    "roe_ttm": -0.2,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": -138169097,
    "ccy": "KRW",
    "bps_src": "자체",
+   "eps_src": "공시",
    "pbr_krx": 0.65,
    "bps_krx": 13687.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 300.0,
-   "div": 3.36
+   "div": 3.38,
+   "hidden": {
+    "per": "loss"
+   }
   }
  }
 }

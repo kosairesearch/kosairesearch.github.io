@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "글로벌 완성차 납품 기반, 수익 반전 여부가 관건",
-  "en": "Established OEM Supply Credentials; Revenue Recovery Is the Defining Test"
+  "ko": "감사의견 거절·경영권 분쟁 속 실적 부진",
+  "en": "Audit Disclaimer, Governance Feud Amid Weak Results"
  },
  "lead": {
-  "ko": "BMW·아우디에 레이더 블랙박스·HUD·ADAS를 동시 공급하는 국내 유일 기업으로 기술력을 입증했으나, 4개년 연속 매출 감소와 2026년 1분기 역대 최악 분기 실적으로 사업 회복력이 핵심 시험대에 올랐다.",
-  "en": "As the only Korean company concurrently supplying radar dashcams, HUDs, and ADAS to BMW and Audi, Mobile Appliance has a proven technology track record, yet four consecutive years of declining revenue and its worst-ever quarterly results in Q1 2026 place operational recovery at the center of any analysis."
+  "ko": "모바일어플라이언스는 4년 연속 매출 감소와 2026년 반기 감사의견 거절, 반복된 최대주주·경영진 교체라는 복합 리스크 속에서 자율주행·전장 신사업으로의 전환을 시도하고 있다.",
+  "en": "Mobile Appliance is attempting a pivot toward autonomous-sensor and electronics businesses while facing four straight years of revenue decline, a disclaimer of opinion on its 2026 half-year review, and repeated changes in controlling shareholder and management."
  },
  "keypoints": [
   {
-   "ko": "BMW·아우디에 레이더 블랙박스·HUD·ADAS 3개 제품군을 동시 납품하는 국내 유일 기업으로, ADAS 분야에서 글로벌 1위 모빌아이(Mobileye)를 공개 입찰에서 제치고 BMW 수주에 성공한 이력 보유",
-   "en": "Sole Korean company simultaneously supplying radar dashcams, HUDs, and ADAS to BMW and Audi; won a BMW ADAS contract against global leader Mobileye in a competitive open bid"
+   "ko": "2026년 반기보고서에서 전년 '적정'에서 '의견거절'로 감사의견이 바뀌며 계속기업 불확실성이 부각됐다.",
+   "en": "The 2026 half-year review report shifted from an unqualified opinion a year earlier to a disclaimer of opinion, highlighting going-concern uncertainty."
   },
   {
-   "ko": "연간 매출이 2022년 524.7억원에서 2025년 349.4억원으로 4개년 연속 감소(-33%), 2026년 1분기에는 전년 동기 대비 약 47% 추가 급락",
-   "en": "Annual revenue fell 33% cumulatively from ₩52.5 billion (2022) to ₩34.9 billion (2025); Q1 2026 revenue plunged a further ~47% year-on-year"
+   "ko": "매출액은 2022년 524.7억원에서 2025년 349.4억원까지 4년 연속 감소했고, 2025년에는 영업손실·순손실로 전환했다.",
+   "en": "Revenue fell for four consecutive years from KRW 52.47 billion in 2022 to KRW 34.94 billion in 2025, and the company swung to an operating and net loss in 2025."
   },
   {
-   "ko": "2026년 1분기 영업손실 28.7억원·영업손실률 약 -64%로 분기 역대 최악을 기록, 2026년 2월 제3자배정 증자로 약 90억원 운영자금 조달(신주 2026년 5월 29일 상장)",
-   "en": "Q1 2026 delivered a record operating loss of ₩2.9 billion (OPM ~-64%), prompting a ₩9 billion third-party allotment in February 2026 to replenish operating funds (new shares listed May 29, 2026)"
+   "ko": "2026년 들어 최대주주가 대광→반대매매→이재신 전 대표로 재변경되는 등 지배구조 혼란이 지속됐다.",
+   "en": "Control changed hands multiple times in 2026 — from founder Lee Jae-shin to Daegwang and back to Lee after a forced margin-call sale — reflecting persistent governance turmoil."
   },
   {
-   "ko": "2025년 말 부채비율(부채/자본) 24.3%로 2023년 68.1% 대비 대폭 개선, 2023~2025년 연간 영업현금흐름 3개년 연속 플러스(각 73.3억·50.6억·46.7억원)",
-   "en": "Debt-to-equity ratio improved sharply from 68.1% (2023) to 24.3% (end-2025); annual operating cash flow was positive for three consecutive years at ₩7.3B, ₩5.1B, and ₩4.7B in 2023–2025"
+   "ko": "M&A를 통해 자율주행 센서·AI 전장 솔루션, 항공우주 등 신규 사업목적을 대거 추가했으나 기존 사업과의 연관성 검증이 필요하다.",
+   "en": "Through M&A the company added numerous new business purposes spanning autonomous sensors, AI electronics and aerospace, though their relevance to the core business remains to be proven."
   },
   {
-   "ko": "미국의 커넥티드카 중국·러시아산 부품 금지 규제(소프트웨어 2027년식, 하드웨어 2030년식)가 비중국 공급망으로서의 동사에 잠재적 수혜 시나리오를 제공, 트럼프 행정부도 2026년 4월 규제 유지 방침 재확인",
-   "en": "U.S. ban on Chinese/Russian connected-car software (from 2027 models) and hardware (from 2030) creates a potential supply-chain realignment opportunity; the Trump administration reaffirmed the policy in April 2026"
+   "ko": "2025Q3~2026Q2 4개 분기 연속 영업손실이 이어지며 최근 4개 분기 지배주주순손실 합계가 확대됐다.",
+   "en": "Operating losses persisted for four consecutive quarters from 2025Q3 to 2026Q2, widening the cumulative net loss attributable to owners over that trailing window."
   }
  ],
  "business": {
-  "ko": "모바일어플라이언스는 2004년 설립된 차량 전장 솔루션 전문기업으로, 영상기록장치(블랙박스)·HUD(전방표시장치)·ADAS(첨단운전자보조시스템)·내비게이션을 개발·제조한다. 핵심 판매 방식은 PDIO(Port/Dealer Installed Option, 반순정) 형태로, 글로벌 완성차 딜러망을 통해 독일 BMW·아우디 본사에 제품을 납품하는 국내 유일 기업이다. 대표 제품인 레이더 탑재 초저전력 블랙박스는 외부 물체 접근 시에만 전원이 켜지는 독자 기술로 배터리 과방전 문제를 해결했으며, BMW 전 차종 및 아우디에 채택돼 약 30개국에 판매된다. HUD는 BMW·아우디 브랜드로 미주·유럽 지역에 공급되며, ADAS는 글로벌 1위 업체 모빌아이와의 공개 입찰 경쟁을 제치고 BMW 납품을 수주한 이력을 보유한다. 딥러닝 기반 영상인식 알고리즘, IoT 연동 커넥티드 블랙박스, AI 음성인식 등 차세대 기술을 병행 개발하고 있다. 자회사 현대폰터스를 통해 내수 시판 블랙박스·내비게이션 유통을 담당하며, 현대모비스 등 국내 완성차 부품사에도 납품한다. 2016년 현대엠엔소프트로부터 '폰터스(PONTUS)' 브랜드를 인수해 자회사를 설립함으로써 유통 채널과 브랜드를 강화했다. 2026년 1월 기준 임직원 수는 약 48명의 소규모 정예 체제로, 고정비 구조와 수익 규모 사이의 균형이 사업 성과의 핵심 변수다.",
-  "en": "Mobile Appliance, founded in 2004, is a specialist developer and manufacturer of automotive electronic solutions including dashcams (black boxes), Head-Up Displays (HUDs), Advanced Driver Assistance Systems (ADAS), and navigation units. Its defining competitive position is as the only Korean company supplying all three product categories—dashcams, HUDs, and ADAS—to both BMW and Audi headquarters via a PDIO (Port/Dealer Installed Option, semi-OEM) format through global dealer networks. Its flagship radar-integrated ultra-low-power parking dashcam activates only upon detecting approaching objects, solving the battery drain problem endemic to conventional dashcams; the technology has been adopted across all BMW models and by Audi, with sales in approximately 30 countries. HUDs are distributed under the BMW and Audi brands in the Americas and Europe, while the company's ADAS system was awarded to BMW after defeating global ADAS leader Mobileye in a competitive open bid. Next-generation technology development initiatives include deep learning-based image recognition, IoT-connected dashcams, and AI voice recognition interfaces. Through its subsidiary Hyundai Pontus, the company manages domestic retail distribution of dashcams and navigation units, and also supplies domestic tier-1 suppliers including Hyundai Mobis. The company acquired the Pontus brand from Hyundai MnSoft in 2016 to strengthen its distribution infrastructure and brand presence. With approximately 48 employees as of January 2026, the lean organizational structure makes the balance between fixed costs and revenue volume a critical determinant of profitability."
+  "ko": "모바일어플라이언스는 2004년 설립돼 2017년 코스닥에 상장한 회사로, 주요 제품은 자동차용 영상기록장치(블랙박스)와 내비게이션이다. 스마트카·자율주행차 기반 기술인 레이다 영상기록장치, ADAS(첨단운전자보조시스템), HUD(헤드업디스플레이) 등을 개발해 BMW, Audi, Benz 등 글로벌 완성차 업체에 공급하는 B2B 모델을 갖고 있다. 다만 블랙박스·내비게이션 시장이 성숙 단계에 접어들며 신규 수요 창출이 쉽지 않은 상황이다. 회사는 2026년 초 최대주주 변경을 계기로 M&A를 추진해 기존 블랙박스·내비게이션 중심 포트폴리오를 넘어 자율주행 핵심 센서 및 AI 기반 전장 솔루션으로 사업 영역을 확장했다고 밝혔다. 아울러 임시주주총회를 통해 항공기·우주선 및 관련 부품 제조업, 위성·무선통신 사업, AI·로봇 장비 판매, 데이터센터 구축 및 클라우드 인프라 사업, 블록체인 기반 소프트웨어 개발 등 총 12개의 신규 사업목적을 정관에 추가할 예정이라고 공시했다. 이는 기존 전장부품 사업과는 이질적인 영역으로, 실행력과 수익화 여부에 대한 시장의 검증이 필요한 대목이다. 경쟁구도 측면에서는 글로벌 완성차 대상 ADAS·HUD 공급 이력이 진입장벽으로 작용할 수 있지만, 국내외 전장·블랙박스 업체들과의 경쟁 심화도 상수로 남아 있다.",
+  "en": "Mobile Appliance was founded in 2004 and listed on KOSDAQ in 2017, with its core products being automotive video recorders (dashcams) and navigation systems. The company develops radar video recorders, ADAS (advanced driver assistance systems) and HUD (head-up display) technologies for smart and autonomous vehicles, supplying them under a B2B model to global automakers including BMW, Audi and Mercedes-Benz. The dashcam and navigation markets, however, have matured, making it difficult to generate new demand. Following a change of controlling shareholder in early 2026, the company pursued M&A and stated it had expanded beyond its traditional dashcam-and-navigation portfolio into autonomous-driving sensors and AI-based electronics solutions. It also disclosed plans, approved at an extraordinary shareholders' meeting, to add twelve new business purposes to its articles of incorporation, including aircraft and spacecraft component manufacturing, satellite and wireless communications, AI and robotics equipment sales, data center and cloud infrastructure, and blockchain-based software development. These areas are largely unrelated to its existing electronics business, leaving execution and monetization to be validated by the market. In terms of competitive positioning, its track record of supplying ADAS and HUD to global automakers may serve as a barrier to entry, but intensifying competition from domestic and overseas electronics and dashcam suppliers remains a constant factor."
  },
  "earnings": {
-  "ko": "연간 매출은 2022년 524.7억원을 고점으로 2023년 498.0억원, 2024년 404.8억원, 2025년 349.4억원으로 4개년 연속 내리막이며, 누적 감소율은 33%에 달한다. 연간 영업이익률은 2022년 -1.4%, 2023년 +0.9%, 2024년 +2.4%로 소폭 개선세를 보였으나, 2025년에는 -2.6%(영업손실 9.0억원)로 재차 적자 전환해 마진 회복의 지속성에 의문을 남겼다. 2025년 지배주주 귀속 순손실은 5.7억원으로, 영업손실(9.0억원)보다 작아 일부 영업외 수익이 손실을 상쇄했다. 분기 흐름을 보면, 2025년 2분기(매출 110.9억원·영업이익 2.6억원·순이익 16.8억원)가 연내 최고 실적이었으나, 순이익과 영업이익의 큰 괴리는 대규모 영업외 수익의 존재를 시사한다. 2025년 3·4분기는 각각 영업손실 5.6억원이었으나, 4분기에는 지배주주 귀속 순손실이 25.3억원으로 영업손실을 크게 초과해 약 19.7억원의 추가 비영업 손실(자산 손상 등 추정)이 발생했을 가능성이 높다. 2026년 1분기는 매출 44.6억원(전년 동기 83.9억원 대비 약 -47%), 영업손실 28.7억원(영업손실률 약 -64%)으로 분기 역대 최악의 실적을 기록했으며, 지배주주 귀속 순손실도 29.9억원에 달했다. 한편, 연간 영업현금흐름(CFO)은 2023년 73.3억원, 2024년 50.6억원, 2025년 46.7억원으로 3개년 연속 플러스를 유지해 손익보다 실제 현금 창출 기반이 양호했으나, 2026년의 현금흐름 추이는 면밀한 추적이 필요하다.",
-  "en": "Annual revenue fell for four consecutive years from a peak of ₩52.5 billion in 2022 to ₩49.8 billion (2023), ₩40.5 billion (2024), and ₩34.9 billion (2025), a cumulative decline of 33%. The annual operating profit margin posted a modest recovery from -1.4% (2022) to +0.9% (2023) and +2.4% (2024), before reverting to -2.6% (operating loss of ₩0.9 billion) in 2025, raising questions about the durability of the earlier improvement trend. The 2025 attributable net loss was ₩0.6 billion, smaller than the operating loss of ₩0.9 billion, indicating that non-operating income partially absorbed the shortfall. At the quarterly level, Q2 2025 was the standout period—revenue of ₩11.1 billion, operating profit of ₩0.3 billion, net income of ₩1.7 billion—though the wide gap between net income and operating profit implies recognition of significant non-operating gains during the quarter. Q3 and Q4 2025 each recorded operating losses of approximately ₩0.6 billion; however, Q4's attributable net loss of ₩2.5 billion far exceeded its operating loss, implying approximately ₩2.0 billion of additional non-operating charges—likely impairments or write-offs. Q1 2026 marked the worst single quarter on record: revenue of ₩4.5 billion (down approximately 47% year-on-year from ₩8.4 billion in Q1 2025) against an operating loss of ₩2.9 billion, producing an operating loss margin of approximately -64%, with attributable net loss reaching ₩3.0 billion. On a more constructive note, annual operating cash flow (CFO) remained positive for three consecutive years at ₩7.3 billion (2023), ₩5.1 billion (2024), and ₩4.7 billion (2025), demonstrating that underlying cash generation held up better than headline profit figures during that period, though 2026 cash flow trends now require close scrutiny."
+  "ko": "연간 실적을 보면 매출액은 2022년 524.7억원, 2023년 498.0억원, 2024년 404.8억원, 2025년 349.4억원으로 4년 연속 감소했다. 영업손익은 2022년 -7.2억원(영업이익률 -1.4%)에서 2023년 4.5억원(0.9%), 2024년 9.7억원(2.4%)으로 흑자 전환했다가 2025년 다시 -9.0억원(-2.6%)의 손실로 돌아섰다. 지배주주순이익도 2022~2023년 각 21.1억원 수준에서 2024년 14.0억원으로 줄었고, 2025년에는 -5.7억원의 순손실을 기록했다. 분기 흐름을 보면 2025년 2분기 매출 110.9억원, 영업이익 2.6억원, 순이익 16.8억원으로 비교적 양호했으나, 이후 2025년 3분기(매출 78.8억원, 영업손실 -5.6억원, 순손실 -1.0억원)와 4분기(매출 75.8억원, 영업손실 -5.6억원, 순손실 -25.3억원)에 걸쳐 손익이 악화됐다. 2026년 1분기에는 매출이 44.6억원까지 줄고 영업손실이 -28.7억원, 순손실이 -29.9억원으로 크게 확대됐는데, 회사는 이를 M&A 진행 과정의 일회성 비용, 신규 전략사업을 위한 연구개발·인프라 투자 확대, 퇴직금 지급 등으로 설명했다. 2026년 2분기에는 매출이 86.7억원으로 전분기 대비 회복됐지만 영업손실 -28.1억원, 순손실 -31.7억원으로 손실 규모는 유사한 수준을 유지했다. 이에 따라 2025년 3분기부터 2026년 2분기까지 4개 분기 연속 영업손실이 이어졌고, 이 기간 지배주주순손실 합계는 -87.8억원에 달한다. 한편 2025년 말 기준 부채총계는 119.4억원으로 2024년 302.0억원에서 크게 줄어 부채비율이 61.6%에서 24.3%로 낮아졌고, 영업활동현금흐름은 순손실에도 불구하고 46.7억원의 양(+)의 흐름을 유지했다.",
+  "en": "Annual revenue fell for four straight years, from KRW 52.47 billion in 2022 to KRW 49.80 billion in 2023, KRW 40.48 billion in 2024, and KRW 34.94 billion in 2025. Operating profit moved from a loss of KRW 0.72 billion (margin -1.4%) in 2022 to profits of KRW 0.45 billion (0.9%) in 2023 and KRW 0.97 billion (2.4%) in 2024, before reverting to a loss of KRW 0.90 billion (-2.6%) in 2025. Net income attributable to owners similarly declined from about KRW 2.11 billion in both 2022 and 2023 to KRW 1.40 billion in 2024, turning into a net loss of KRW 0.57 billion in 2025. On a quarterly basis, 2025Q2 was relatively strong with revenue of KRW 11.09 billion, operating profit of KRW 0.26 billion and net income of KRW 1.68 billion, but results deteriorated through 2025Q3 (revenue KRW 7.88 billion, operating loss KRW 0.56 billion, net loss KRW 0.10 billion) and 2025Q4 (revenue KRW 7.58 billion, operating loss KRW 0.56 billion, net loss KRW 2.53 billion). In 2026Q1, revenue shrank further to KRW 4.46 billion while the operating loss widened sharply to KRW 2.87 billion and the net loss to KRW 2.99 billion, which the company attributed to one-off M&A-related costs, expanded R&D and infrastructure investment for new strategic businesses, and severance payments. Revenue recovered to KRW 8.67 billion in 2026Q2, but the operating loss of KRW 2.81 billion and net loss of KRW 3.17 billion remained at a similar scale. As a result, operating losses persisted for four consecutive quarters from 2025Q3 through 2026Q2, with cumulative net losses attributable to owners over that window reaching KRW 8.78 billion. Separately, total liabilities fell sharply to KRW 11.94 billion at the end of 2025 from KRW 30.20 billion in 2024, lowering the debt ratio from 61.6% to 24.3%, while operating cash flow remained positive at KRW 4.67 billion despite the net loss."
  },
  "industry": {
-  "ko": "글로벌 차량 전장 시장은 안전 법규 강화, ADAS·자율주행 기술 확산, 전기차 전환에 따른 전장 부품 비중 확대를 배경으로 중장기 성장세를 이어가고 있다. 국내에서는 국토교통부의 차로이탈경고장치(LDWS) 장착 의무화 등 안전 규제 확대가 ADAS 내수 수요를 지지하고 있다. 미국 상무부는 2025년 1월 중국·러시아산 커넥티드카 소프트웨어를 2027년식부터, 하드웨어를 2030년식부터 단계 금지하는 최종 규정을 확정했으며, 트럼프 행정부도 2026년 4월 해당 규제를 유지하겠다는 방침을 재확인했다. 이에 따라 완성차 업체들이 중국산 부품을 대체하는 과정에서 한국·유럽 등 비중국 공급망에 새로운 수요가 발생할 수 있다는 분석이 제기된다. 반면, 글로벌 완성차 업체들이 SDV(소프트웨어정의차량) 체제로 전환하면서 인포테인먼트·ADAS의 내재화와 대형 플랫폼 업체(구글, 퀄컴 등) 집중이 가속화돼, 소규모 독립 공급업체에는 구조적 압력이 증가하는 이중 구도가 형성되고 있다. 국내 경쟁사로는 유니트론텍·넥스트칩 등 전장 전문기업이 있으며, 글로벌로는 모빌아이·보쉬·콘티넨탈 등 대형 Tier-1이 ADAS 시장을 주도하고 있다. BMW·아우디의 신차 출시 사이클과 전기차 라인업 확대에 따른 전장 수요 변화가 동사 실적에 직결되며, 최근 글로벌 완성차 업계의 재고 조정과 전기차 보급 속도 둔화가 부품업체 전반의 실적 변동성을 확대하고 있다.",
-  "en": "The global automotive electronics market continues on a medium-to-long-term growth trajectory, driven by tightening safety regulations, the proliferation of ADAS and autonomous-driving technology, and growing electronics content per vehicle accelerated by the EV transition. Domestically, ADAS demand is underpinned by Korean government mandates such as the compulsory installation of Lane Departure Warning Systems (LDWS) on commercial vehicles. The U.S. Department of Commerce finalized rules in January 2025 banning Chinese/Russian-origin connected-car software from the 2027 model year and hardware from the 2030 model year; the Trump administration reaffirmed its intent to maintain these regulations as recently as April 2026. Analysts note that as automakers are compelled to replace Chinese-origin components, demand could emerge for non-Chinese suppliers from Korea and Europe across infotainment, ADAS, and communication modules. In parallel, the accelerating shift toward Software-Defined Vehicles (SDVs) is driving automakers to in-source infotainment and ADAS capabilities or concentrate them with large technology platform partners such as Google and Qualcomm—a structural headwind for smaller independent suppliers that creates a dual dynamic for the industry. Domestically, key competitors include Unitrontech and Nextchip, while globally, Tier-1 giants Mobileye, Bosch, and Continental dominate the ADAS segment. BMW and Audi new-model cycles and EV lineup evolution are direct determinants of component demand for the company, while recent global inventory corrections and moderating EV adoption rates have broadly elevated earnings volatility across the automotive supplier ecosystem."
+  "ko": "FnGuide는 2026년 1분기 실적과 관련해 전년 동기 대비 연결 매출액이 46.9% 감소하고 영업손실이 크게 늘었으며 당기순이익이 적자로 전환했다고 분석하면서, 그 배경으로 영상기록장치 및 내비게이션 시장의 포화로 B2B 신규 수요 견인이 어려워진 점을 지목했다. 다만 같은 자료는 IoT, 스마트카, 의료 분야의 임베디드 시스템 시장이 성장할 전망이라며, 회사가 커넥티드카 및 전기차 관련 제품에 대해 글로벌 자동차 본사와 협의 중이라고 전했다. 회사의 핵심 경쟁력은 레이다 영상기록장치, ADAS, HUD 등을 BMW, Audi, Benz 등 글로벌 완성차에 공급해온 이력에 있으며, 이는 진입장벽으로 작용할 수 있는 요소다. 반면 전방산업인 완성차 업계의 자율주행·전장 투자 우선순위가 대형 티어1 부품사나 반도체 업체로 옮겨가는 흐름 속에서, 상대적으로 규모가 작은 회사가 기존 고객 관계를 신사업 매출로 전환하는 데는 시간이 걸릴 수 있다. 회사가 추진하는 자율주행 센서·AI 전장 솔루션, 항공우주 등 신규 영역은 아직 매출 기여가 확인되지 않은 상태로, 산업 내 포지셔닝은 재정립 단계에 있다고 볼 수 있다.",
+  "en": "FnGuide's analysis of the 2026Q1 results noted that consolidated revenue fell 46.9% year on year and the operating loss widened sharply while net income turned negative, attributing this to market saturation in video recorders and navigation that has made it difficult to generate new B2B demand. The same source noted that the IoT, smart-car and medical embedded-systems markets are expected to grow, and that the company is in discussions with global automaker headquarters regarding connected-car and electric-vehicle products. The company's core competitive strength lies in its track record of supplying radar video recorders, ADAS and HUD to global automakers such as BMW, Audi and Mercedes-Benz, which can act as a barrier to entry. On the other hand, as automakers increasingly direct autonomous-driving and electronics investment toward large Tier-1 suppliers and semiconductor makers, it may take time for a relatively small supplier to convert existing customer relationships into revenue from new businesses. The new areas the company is pursuing — autonomous sensors, AI-based electronics, and aerospace — have not yet shown confirmed revenue contribution, suggesting the company's industry positioning is still in a stage of redefinition."
  },
  "outlook": {
-  "ko": "가장 시급한 과제는 2026년 1분기에 나타난 매출 급락(전년 동기 대비 약 -47%)과 영업손실률 급등(약 -64%)의 원인을 해소하고 사업 정상화 궤도에 진입하는 것이다. 2026년 2월 에어로스페이스코리아 조합을 대상으로 한 제3자배정 유상증자(발행가 1,925원, 4,675,324주)를 통해 약 90억원의 운영자금을 조달했으며, 신주는 2026년 5월 29일 상장됐다. 조달 자금이 원재료비·R&D비·인건비 등 운영비용에 사용될 예정이어서, 이번 증자는 성장 투자보다는 현금 소진 방어에 방점이 찍혀 있다. BMW·아우디와의 기존 PDIO 계약 갱신 및 신모델 채택 여부가 2026년 하반기 이후 매출 방향을 결정할 핵심 변수이며, 이에 대한 공식 발표나 공시는 아직 확인되지 않고 있다. 미국 커넥티드카 규제(2027년식 소프트웨어 금지)가 예정대로 시행될 경우, BMW·아우디 등 기존 고객사가 중국산 부품을 대체하는 과정에서 추가 수주 기회가 발생할 수 있다. 자회사 현대폰터스를 통한 내수 시판 채널은 단기 기저 매출을 지지하지만, 전체 매출 규모 회복을 위해서는 해외 PDIO 물량 회복이 필수적이다. 중장기적으로는 딥러닝·AI 기반 차세대 제품이 순정 OEM 납품 전환의 단초가 될 수 있으나, 단기적으로는 현금흐름 방어와 기존 고객 유지가 최우선 과제다.",
-  "en": "The most immediate challenge is resolving the root causes of the sharp revenue decline (~-47% year-on-year) and extreme operating loss margin (~-64%) in Q1 2026 and returning the business to a normalized trajectory. In February 2026, the company raised approximately ₩9 billion through a third-party allotment to 에어로스페이스코리아 조합 (issue price ₩1,925 per share, 4,675,324 new shares), with new shares listed on May 29, 2026. Proceeds are earmarked for raw materials, R&D, and personnel costs, indicating the raise was primarily defensive—focused on managing cash burn rather than funding growth initiatives. The renewal of existing PDIO contracts with BMW and Audi and adoption into new model lines will be the pivotal determinant of the revenue trajectory in H2 2026 and beyond; however, no formal announcements on this front have been confirmed. If the U.S. connected-car regulation (banning Chinese-origin software from 2027 model-year vehicles) proceeds as planned, it could prompt key customers to accelerate supply-chain diversification, potentially generating incremental orders for the company as a proven non-Chinese supplier. The domestic retail channel through Hyundai Pontus provides a baseline revenue floor in the near term, but recovery of overseas PDIO volumes is essential for a meaningful top-line rebound. Over the medium term, deep learning and AI-powered product development could serve as a pathway toward direct OEM supply relationships, though near-term priorities center on cash flow preservation and retaining existing customer relationships."
+  "ko": "회사는 M&A를 통해 자율주행 센서·AI 전장 솔루션으로 사업 영역을 넓혔다고 밝히며, 하반기에는 신규 사업의 시너지와 원가 절감을 통해 실적과 주주가치를 끌어올리겠다는 방침을 제시했다. 실제로 전사적인 원가 절감 및 경영 효율화 작업에 착수하고 신규 사업의 가시적인 성과를 조속히 실현하겠다는 입장을 내놓은 바 있다. 자금 조달 측면에서는 2026년 2월 19일 이사회가 보통주 467만5324주를 발행해 약 90억원을 조달하는 제3자배정 유상증자를 결정했고, 조달 자금은 원재료비·연구개발비·인건비 등 일반관리비용으로 사용할 계획이라고 공시했다. 여기에 전환사채(CB) 100억원 발행 계획도 함께 제시된 바 있어, 총 190억원 규모의 신사업 재원 마련이 추진 중이다. 다만 최대주주였던 대광의 지분이 주식담보대출 관련 반대매매로 대거 시장에 출회되며 지분율이 급감하고 경영권이 다시 창업주 측으로 넘어가는 등 지배구조 불확실성이 자금 조달 및 신사업 실행 일정에 영향을 줄 수 있는 변수로 남아 있다. 2026년 반기보고서에서 나온 감사의견 거절이 연간 감사보고서에서도 반복될 경우 상장 적격성 심사로 이어질 수 있어, 향후 감사인과의 협의를 통한 회계 투명성 회복 여부가 신사업 추진의 전제 조건이 될 것으로 보인다.",
+  "en": "The company has stated that its M&A activity has expanded its business into autonomous-driving sensors and AI-based electronics solutions, and outlined plans to lift performance and shareholder value in the second half through new-business synergies and cost reduction. It has said it has already begun company-wide cost-cutting and management-efficiency efforts, aiming to quickly deliver visible results from its new businesses. On the funding side, the board decided on February 19, 2026 to raise roughly KRW 9 billion through a third-party allotment of about 4.68 million new common shares, with proceeds earmarked for raw material costs, R&D and personnel expenses among other general administrative costs. A plan for an additional KRW 10 billion convertible bond issuance was presented alongside this, bringing total planned new-business funding to roughly KRW 19 billion. However, governance uncertainty remains a variable that could affect the funding and execution timeline: shares held by former controlling shareholder Daegwang were sold off en masse following a margin call on pledged stock, sharply reducing its stake and returning control to the founder's side. If the disclaimer of opinion seen in the 2026 half-year review recurs in the annual audit report, it could trigger a listing-eligibility review, making the restoration of accounting transparency through consultation with the auditor a precondition for advancing the new businesses."
  },
  "valuation_comment": {
-  "ko": "현 주가는 주당순자산(BPS 1,387원)을 크게 하회하는 구간에 위치해 있어, 시장이 현재의 손실 기조 지속 가능성과 자산 회수 불확실성을 반영하고 있는 것으로 해석된다. 주당순이익(EPS)이 -121원으로 적자 상태인 만큼 손익 배수 기반의 비교는 현 시점에서 유의미한 참고지표로 활용하기 어렵다. 2026년 2월 유상증자 발행가(1,925원)와 현재 주가의 큰 괴리는, 시장이 그 시점 이후 급격히 악화된 실적과 재무 불확실성을 강하게 가격에 반영했음을 보여주는 사례다. 배당은 실시되지 않고 있으며, 이는 코스닥 자동차 전장 업종 내 유사 기업들의 배당 수준과 비교해도 낮은 포지션이다. 향후 BMW·아우디 수주 재개나 분기 실적의 가시적 회복이 확인될 경우, 현재 순자산 대비 할인 수준의 변화 여부가 재평가의 핵심 단서가 될 것이다.",
-  "en": "The current share price sits at a pronounced discount relative to book value per share (BPS of ₩1,387), reflecting the market's pricing-in of ongoing loss risk and uncertainty over asset quality and recovery prospects. With EPS at -₩121, earnings-based valuation multiples are not a meaningful comparative reference at this juncture. The wide gap between the February 2026 rights-offering issue price of ₩1,925 and current market levels illustrates how sharply the market has repriced the company in response to the deterioration in results since that issuance. The company currently pays no dividends, placing it at a lower yield position than the average seen among comparable KOSDAQ automotive electronics peers. Should concrete evidence emerge of BMW/Audi order renewals or a sustained quarterly earnings recovery, the trajectory of the current discount to book value will serve as a key barometer of any potential fundamental re-rating."
+  "ko": "회사는 2025년과 2026년 들어 순손실을 지속하고 있어 통상적인 주가수익비율(PER) 산출 자체가 어려운 상태다. 주가순자산비율은 1배를 밑돌며 주당순자산 대비 할인된 수준에서 거래되고 있는데, 이는 반복된 지배구조 이슈와 감사의견 거절 등 회계 신뢰성 리스크가 반영된 결과로 해석할 수 있다. 최근 수년간 배당이 지급되지 않아 배당수익률 관점에서 비교할 지표 자체가 부재한 상황이며, 이는 이익 안정성이 아직 회복되지 않았음을 보여주는 대목이다. 부채비율이 2024년 61.6%에서 2025년 24.3%로 낮아진 점은 재무 부담을 완화하는 요인이지만, 이는 순이익 흑자 전환과는 별개의 지표라는 점에 유의할 필요가 있다. 결국 현재 밸류에이션은 신사업 전환의 성패와 회계·지배구조 리스크 해소 여부에 따라 다르게 해석될 수 있는 구간에 있다.",
+  "en": "Because the company has posted continued net losses through 2025 and into 2026, a conventional price-to-earnings ratio is difficult to calculate at present. The price-to-book ratio sits below 1x, meaning the stock trades at a discount to book value per share — a pattern that can be read as reflecting repeated governance issues and accounting-credibility risk stemming from the disclaimer of opinion. No dividends have been paid in recent years, so there is no dividend-yield benchmark to compare against, underscoring that earnings stability has not yet been restored. The decline in the debt ratio from 61.6% in 2024 to 24.3% in 2025 eases the balance-sheet burden, but it should be noted that this is a separate metric from a return to net profitability. Ultimately, the current valuation sits in a range that can be read differently depending on whether the new-business pivot succeeds and whether the accounting and governance risks are resolved."
  },
  "bull": [
   {
    "title": {
-    "ko": "미국 커넥티드카 규제의 잠재적 수혜 포지션",
-    "en": "Potential Beneficiary of U.S. Connected-Car Regulatory Shift"
+    "ko": "글로벌 완성차 공급 이력",
+    "en": "Track record supplying global automakers"
    },
    "body": {
-    "ko": "미국은 중국·러시아산 커넥티드카 소프트웨어를 2027년식부터, 하드웨어를 2030년식부터 단계 금지하기로 확정했고, 트럼프 행정부도 2026년 4월 이 규제를 유지하겠다고 재확인했다. BMW·아우디에 블랙박스·HUD·ADAS를 직접 납품해온 동사는, 이들 고객사가 중국산 부품을 비중국 공급망으로 대체하는 과정에서 추가 물량을 확보할 수 있는 위치에 있다. 실제 수주로 연결되기까지 불확실성이 있으나, 기존 납품 이력과 규제 환경 변화의 방향이 맞물릴 경우 중기 성장 시나리오에 유의미한 긍정 변수가 될 수 있다.",
-    "en": "The U.S. finalized rules banning Chinese/Russian connected-car software from the 2027 model year and hardware from the 2030 model year, with the Trump administration reaffirming the policy as recently as April 2026. Having established direct supply relationships with BMW and Audi across dashcams, HUDs, and ADAS, the company is positioned to benefit should these OEM customers accelerate the replacement of Chinese-origin components with non-Chinese alternatives. While translating this regulatory environment into concrete orders carries execution uncertainty, the favorable alignment between the company's supply credentials and the regulatory direction represents a credible medium-term upside scenario."
+    "ko": "회사는 레이다 영상기록장치, ADAS, HUD 등을 BMW, Audi, Benz 등 글로벌 완성차에 공급해온 이력을 갖고 있다. 이러한 공급 관계는 신규 진입자에 비해 상대적인 진입장벽으로 작용할 수 있으며, 커넥티드카·전기차 관련 제품에 대한 글로벌 자동차 본사와의 협의도 진행 중인 것으로 전해졌다. 다만 이러한 협의가 실제 매출로 연결되는 시점과 규모는 아직 확인되지 않았다.",
+    "en": "The company has a track record of supplying radar video recorders, ADAS and HUD to global automakers such as BMW, Audi and Mercedes-Benz. This supplier relationship can act as a relative barrier to entry against new competitors, and discussions with global automaker headquarters on connected-car and EV-related products are reportedly underway. However, the timing and scale at which these discussions might translate into actual revenue have not yet been confirmed."
    }
   },
   {
    "title": {
-    "ko": "재무 구조 개선과 안정적 자산 기반",
-    "en": "Improved Balance Sheet and Solid Asset Base"
+    "ko": "신사업 확장을 통한 포트폴리오 다변화",
+    "en": "Portfolio diversification through new-business expansion"
    },
    "body": {
-    "ko": "부채비율(부채/자본)이 2023년 68.1%에서 2025년 말 24.3%로 대폭 낮아졌으며, 총 부채는 2024년 302.0억원에서 2025년 119.4억원으로 크게 감소했다. 2025년 말 자기자본은 491.2억원을 유지해, 단기적인 영업 손실을 일정 기간 흡수할 수 있는 완충 역할을 한다. 2023~2025년 연간 영업현금흐름이 각각 73.3억·50.6억·46.7억원으로 3개년 연속 플러스를 기록해, 재무 기반이 손익 지표보다 양호했음을 나타낸다.",
-    "en": "The debt-to-equity ratio declined dramatically from 68.1% in 2023 to 24.3% by end-2025, with total liabilities falling from ₩30.2 billion in 2024 to ₩11.9 billion in 2025. Equity stood at ₩49.1 billion at year-end 2025, providing a buffer to absorb near-term operating losses over an extended period before reaching a critical threshold. Annual operating cash flow remained positive for three consecutive years—₩7.3 billion, ₩5.1 billion, and ₩4.7 billion in 2023–2025 respectively—indicating that underlying cash generation has been more resilient than headline profitability figures alone suggest."
+    "ko": "회사는 M&A를 통해 기존 블랙박스·내비게이션 중심 포트폴리오를 넘어 자율주행 핵심 센서 및 AI 기반 전장 솔루션으로 사업 영역을 확장했다고 밝혔다. 정관 변경을 통해 항공우주, 위성통신, AI·로봇, 데이터센터 등 12개의 신규 사업목적도 추가할 예정이다. 이는 성숙기에 접어든 기존 사업의 한계를 신사업으로 보완하려는 시도로 해석된다.",
+    "en": "The company stated that through M&A it expanded beyond its traditional dashcam-and-navigation portfolio into core autonomous-driving sensors and AI-based electronics solutions. It also plans to add twelve new business purposes to its articles of incorporation covering aerospace, satellite communications, AI and robotics, and data centers. This can be read as an attempt to offset the limitations of its maturing core business with new growth areas."
    }
   },
   {
    "title": {
-    "ko": "BMW·아우디 동시 납품으로 입증된 차별화 기술력",
-    "en": "Differentiated Technology Proven Across Both BMW and Audi"
+    "ko": "자금 조달을 통한 재원 확보 시도",
+    "en": "Capital-raising efforts to secure funding"
    },
    "body": {
-    "ko": "세계 최초 레이더 탑재 블랙박스 개발과 글로벌 ADAS 1위 모빌아이를 제치고 BMW 수주에 성공한 이력은, 동사의 기술력이 글로벌 수준에서 인정받았다는 강력한 근거가 된다. 딥러닝·AI 음성인식·IoT 연동 등 차세대 기술 개발을 병행하고 있어, 현재 실적 악화가 기술 역량의 문제보다는 수주 공백과 시장 구조 변화에 기인했을 가능성이 있다. 자율주행 레벨 확대에 따른 ADAS·HUD 수요 성장이 이어질 경우, 이 기술 기반이 중장기 사업 재건의 핵심 자산이 될 수 있다.",
-    "en": "The world-first development of a radar-integrated dashcam and the successful competitive win over global ADAS leader Mobileye for a BMW supply contract stand as strong evidence that the company's technology capability is globally recognized. Continued investment in next-generation capabilities including deep learning, AI voice recognition, and IoT connectivity suggests that the current operational crisis may reflect demand-side factors and market-structure changes rather than deterioration in underlying technology competency. Should ADAS and HUD demand continue to expand alongside advancing autonomous-driving adoption, these technology assets could form the foundation for a medium-to-long-term operational rebuild."
+    "ko": "이사회는 2026년 2월 제3자배정 유상증자를 통해 약 90억원을 조달하기로 결정했고, 전환사채 100억원 발행 계획도 함께 제시됐다. 조달 자금은 원재료비, 연구개발비, 인건비 등에 사용될 예정이라고 공시됐다. 이는 신사업 추진을 위한 재원을 미리 확보하려는 움직임으로 볼 수 있다.",
+    "en": "The board decided in February 2026 to raise roughly KRW 9 billion through a third-party allotment capital increase, alongside a plan to issue KRW 10 billion in convertible bonds. The company disclosed that the proceeds would be used for raw material costs, R&D expenses and personnel costs. This can be viewed as an effort to secure funding in advance for pursuing new businesses."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4개년 연속 매출 감소, 구조적 하락 우려",
-    "en": "Four Consecutive Years of Revenue Decline: Structural Risk"
+    "ko": "감사의견 거절에 따른 계속기업 불확실성",
+    "en": "Going-concern uncertainty following the disclaimer of opinion"
    },
    "body": {
-    "ko": "연간 매출이 2022년 524.7억원에서 2025년 349.4억원으로 33% 감소했으며, 2026년 1분기에는 전년 동기 대비 약 47%가 추가로 급락했다. 단순 경기 사이클이 아닌, 고객사 제품 라인업 변화·계약 구조 재편·경쟁 심화 등 구조적 요인이 개입했을 가능성을 배제하기 어렵다. 매출 회복 시점과 규모에 대한 공식 가이던스나 구체적 수주 계획이 확인되지 않아, 반전 시나리오의 가시성이 낮은 상황이다.",
-    "en": "Annual revenue has contracted 33% from ₩52.5 billion in 2022 to ₩34.9 billion in 2025, with Q1 2026 revenue plunging a further ~47% year-on-year, accelerating the declining trend. It is difficult to rule out structural factors—such as changes in OEM customer product lineups, contract restructuring, or intensifying competition—as contributors to the decline beyond a mere cyclical downturn. The absence of official management guidance or specific order announcements regarding a revenue recovery renders the path to a business inflection difficult to assess with confidence."
+    "ko": "2026년 반기보고서에서 감사인은 전년 '적정'에서 '의견거절'로 의견을 바꿨다. 감사인은 전 경영진 등에 대한 부정 혐의가 재무제표 전반에 미치는 불확실성, 일부 자금거래의 타당성, 내부통제 취약점으로 인한 부외부채 및 우발상황, 계속기업가정 관련 중요한 불확실성 등을 사유로 제시했다. 이러한 의견이 연간 감사보고서에서도 반복될 경우 상장적격성 실질심사로 이어질 수 있다.",
+    "en": "In the 2026 half-year review, the auditor changed its opinion from unqualified a year earlier to a disclaimer. The auditor cited uncertainty from fraud allegations against former management affecting the financial statements as a whole, the validity of certain fund transactions, off-balance-sheet liabilities and contingencies stemming from internal control weaknesses, and material uncertainty related to the going-concern assumption. If the same opinion recurs in the annual audit report, it could trigger a listing-eligibility review."
    }
   },
   {
    "title": {
-    "ko": "2026년 1분기 실적의 질적 충격",
-    "en": "Q1 2026: A Qualitatively Distinct Earnings Shock"
+    "ko": "반복된 지배구조 혼란과 경영권 분쟁",
+    "en": "Repeated governance turmoil and control disputes"
    },
    "body": {
-    "ko": "2026년 1분기 영업손실 28.7억원은 매출 44.6억원을 크게 상회하는 수준으로, 영업손실률이 약 -64%에 달한다. 2025년 전체 연간 영업손실(9.0억원)을 단 한 분기에 3배 이상 초과하는 규모로, 일시적 비용 집중이나 수주 공백 이상의 근본적 변화 가능성을 시사한다. 2025년 4분기에도 영업손실(5.6억원) 대비 지배주주 순손실(25.3억원)이 크게 확대된 데 이어, 2026년 1분기 영업손실 자체가 사상 최고 수준으로 치솟아 재무적 불확실성이 누적되고 있다.",
-    "en": "The Q1 2026 operating loss of ₩2.9 billion exceeded the quarter's total revenue of ₩4.5 billion, producing an operating loss margin of approximately -64%. This single-quarter operating loss exceeded the entire full-year 2025 operating loss (₩0.9 billion) by more than three times, suggesting a qualitatively different level of deterioration beyond cyclical order weakness or temporary cost concentration. Following Q4 2025's already elevated net loss (far exceeding its operating loss), Q1 2026's record-level operating loss itself represents a further accumulation of financial uncertainty that warrants serious attention."
+    "ko": "2026년 들어 최대주주가 이재신 전 대표에서 대광으로, 다시 반대매매를 거쳐 이재신 전 대표 측으로 재변경되는 등 경영권 관련 혼란이 이어졌다. 대표이사도 여러 차례 교체됐고, 일부 경영진은 횡령·배임 혐의로 피소된 상태다. 이러한 분쟁은 경영 안정성과 신사업 실행력에 부정적 영향을 줄 수 있다.",
+    "en": "Since early 2026, control has shifted repeatedly — from founder Lee Jae-shin to Daegwang and back to Lee's side following a forced margin-call sale — amid ongoing dispute. The chief executive position has changed hands multiple times, and some members of management have been named in lawsuits alleging embezzlement and breach of trust. Such disputes could weigh on management stability and the ability to execute new businesses."
    }
   },
   {
    "title": {
-    "ko": "자금 소진 리스크 및 추가 희석 가능성",
-    "en": "Cash Burn Risk and Potential for Further Dilution"
+    "ko": "4개 분기 연속 영업손실과 매출 기반 약화",
+    "en": "Four straight quarters of operating losses and a shrinking revenue base"
    },
    "body": {
-    "ko": "2026년 2월 발행가 1,925원으로 약 90억원을 제3자배정 유상증자로 조달했으나, 현 주가는 발행가를 대폭 하회하고 있어 향후 추가 자금 조달이 필요할 경우 기존 주주의 희석 부담이 심화될 수 있다. 조달 자금이 원재료비·R&D·인건비 등 운영비용 충당에 집중돼 있어, 수익 기반 확대를 위한 성장 투자 여력이 제한적이다. 2026년 1분기 수준의 현금 소진이 지속된다면 현재 조달된 자금만으로는 충분하지 않을 수 있어, 재무 여건에 대한 지속적 모니터링이 요구된다.",
-    "en": "The February 2026 third-party allotment raised approximately ₩9 billion at an issue price of ₩1,925, but the current share price trades far below this level, meaning any future capital raise would likely impose more severe dilution on existing shareholders. The proceeds are earmarked entirely for operating expenses—raw materials, R&D, and personnel—leaving limited capital available for growth-oriented investments that could expand the revenue base. If the cash consumption rate seen in Q1 2026 persists, the funds raised may prove insufficient, requiring continuous and close monitoring of the company's liquidity position."
+    "ko": "2025년 3분기부터 2026년 2분기까지 4개 분기 연속 영업손실이 이어졌으며, 이 기간 지배주주순손실 합계는 -87.8억원에 달한다. 연간 매출액도 2022년 524.7억원에서 2025년 349.4억원으로 4년 연속 줄어드는 등 기존 사업의 매출 기반이 약화되고 있다. 신사업이 아직 매출로 가시화되지 않은 상태에서 기존 사업 축소가 계속되면 재무 부담이 커질 수 있다.",
+    "en": "Operating losses persisted for four consecutive quarters from 2025Q3 through 2026Q2, with cumulative net losses attributable to owners over that period reaching KRW 8.78 billion. Annual revenue also declined for four straight years, from KRW 52.47 billion in 2022 to KRW 34.94 billion in 2025, indicating a weakening revenue base in the core business. If the core business continues to shrink before new businesses show visible revenue contribution, the financial burden could increase."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer Concentration Risk"
+    "ko": "회계·상장 리스크",
+    "en": "Accounting and listing risk"
    },
    "body": {
-    "ko": "BMW와 아우디로의 매출 집중도가 높아, 이들 완성차 업체의 구매 결정 변화·신모델 채택 지연·계약 구조 변경 시 매출 타격이 과도하게 증폭될 수 있다. 글로벌 완성차 업체들이 SDV 전환과 함께 인포테인먼트·ADAS 내재화를 가속할 경우, PDIO 방식 외부 공급업체의 납품 기회 자체가 구조적으로 축소될 위험이 있다. 신규 완성차 고객 확보 또는 현대모비스 등 국내 부품사 채널 확대를 통한 고객 다변화 진척 여부가 리스크 분산의 핵심 지표다.",
-    "en": "High revenue concentration in BMW and Audi means that any change in purchasing decisions, new-model adoption delays, or contract restructuring by these OEM customers could have a disproportionately large impact on the company's top line. As global automakers accelerate the in-sourcing of infotainment and ADAS capabilities as part of the SDV transition, the addressable opportunity for PDIO-format external suppliers may structurally narrow over time. Progress on customer diversification—whether through new OEM relationships or expanded supply to domestic tier-1 suppliers such as Hyundai Mobis—is a key indicator to monitor for risk mitigation."
+    "ko": "2026년 반기보고서에서 받은 의견거절이 연간 감사보고서에서도 반복될 경우 상장규정상 상장적격성 실질심사 대상이 될 수 있다. 계속기업가정에 대한 불확실성이 감사의견 사유로 제시된 만큼, 향후 감사인과의 협의 결과를 지속적으로 확인할 필요가 있다.",
+    "en": "If the disclaimer of opinion received in the 2026 half-year review recurs in the annual audit report, the company could become subject to a listing-eligibility review under exchange rules. Since uncertainty about the going-concern assumption was cited as a reason for the opinion, the outcome of future consultations with the auditor warrants continued monitoring."
    }
   },
   {
    "cat": {
-    "ko": "글로벌 경기·환율 변동성",
-    "en": "Global Macro and Foreign Exchange Volatility"
+    "ko": "경영권·법적 분쟁 리스크",
+    "en": "Control dispute and litigation risk"
    },
    "body": {
-    "ko": "BMW·아우디에 연동된 해외 매출 비중이 높아, 유럽·북미 자동차 수요 사이클 및 원화 대비 유로·달러 환율 변동이 매출과 마진에 직접 영향을 미친다. 글로벌 완성차 업계의 재고 조정 사이클이 장기화되거나 프리미엄 차종 수요가 위축될 경우, 이미 위축된 수주 물량이 추가로 감소할 수 있다. 미국의 관세 정책 변화가 완성차 업체들의 글로벌 공급망 재편을 가속할 경우, 동사에 기회 요인이 될 수도 있으나 단기적으로는 공급망 불안정성을 높이는 위험으로도 작용할 수 있다.",
-    "en": "With a significant share of revenue tied to BMW and Audi, fluctuations in European and North American automotive demand cycles, as well as KRW/EUR and KRW/USD exchange-rate movements, directly affect both top-line revenue and margins. If inventory correction cycles in the global automotive industry extend, or if demand for premium vehicles moderates amid the broader EV transition, already-reduced order volumes could face additional pressure. Changes in U.S. tariff policy could serve as either a catalyst—by reshaping global supply chains in ways that benefit Korean suppliers—or an additional source of supply-chain instability for the company in the near term."
+    "ko": "전·현직 경영진이 횡령·배임 혐의 등으로 피소된 상태이며, 최대주주 및 이사회 구성을 둘러싼 분쟁이 법원의 검사인 선임으로까지 이어졌다. 이러한 법적 불확실성이 해소되지 않으면 경영 안정성과 신사업 추진 일정에 부정적 영향을 줄 수 있다.",
+    "en": "Current and former management have been named in lawsuits alleging embezzlement and breach of trust, and disputes over the controlling shareholder and board composition have escalated to the point of a court-appointed inspector. Unless this legal uncertainty is resolved, it could adversely affect management stability and the timeline for executing new businesses."
    }
   },
   {
    "cat": {
-    "ko": "기술 경쟁 심화 및 사업 지속성",
-    "en": "Intensifying Technology Competition and Business Continuity Risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New-business execution risk"
    },
    "body": {
-    "ko": "모빌아이·보쉬·콘티넨탈 등 대형 Tier-1 업체와 구글·퀄컴 등 대형 플랫폼 기업들이 ADAS·인포테인먼트 시장에 막대한 자원을 투입하고 있어, 소규모 독립 공급업체의 기술 우위가 중장기적으로 희석될 수 있다. 임직원 약 48명 규모에서 딥러닝·AI 등 첨단 기술 분야의 지속적 R&D 투자 여력이 대형 경쟁사에 비해 구조적으로 제한적이다. 2026년 1분기 수준의 실적 악화가 장기화될 경우, 기술 인재 유지와 R&D 투자 지속이 어려워져 경쟁력 유지 자체가 위협받을 수 있다.",
-    "en": "Large Tier-1 suppliers such as Mobileye, Bosch, and Continental, together with major technology platform companies like Google and Qualcomm, are committing substantial resources to the ADAS and infotainment segments, potentially eroding the technology advantages of smaller independent suppliers over the medium to long term. With approximately 48 employees, the company's R&D investment capacity in advanced areas such as deep learning and AI is structurally limited relative to larger competitors. If the degree of operational deterioration seen in Q1 2026 persists over an extended period, retaining key technical personnel and sustaining meaningful R&D investment could become increasingly difficult, ultimately threatening the company's competitive positioning."
+    "ko": "자율주행 센서·AI 전장 솔루션에 더해 항공우주, 위성통신, 데이터센터 등 기존 사업과 연관성이 낮은 영역까지 사업목적이 확대됐다. 신사업의 실질적 매출 기여 여부와 실행력이 아직 검증되지 않았다는 점에서, 계획과 실제 성과 간 격차가 발생할 위험이 있다.",
+    "en": "Beyond autonomous-driving sensors and AI electronics, the scope of business purposes has expanded into areas with low relevance to the core business, such as aerospace, satellite communications and data centers. Since the actual revenue contribution and execution capability of these new businesses have not yet been verified, there is a risk of a gap between plans and actual results."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 9월~10월",
+    "en": "September–October 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 공시 — Q1 2026의 급격한 악화가 일시적인지 구조적인지를 판단하는 첫 번째 시금석으로, 매출 회복 규모와 영업비용 구조 변화가 핵심 관찰 포인트다.",
-    "en": "Q2 2026 earnings release — the first key test of whether the sharp Q1 2026 deterioration was transitory or structural; revenue recovery trajectory and operating cost structure are the primary variables to assess."
+    "ko": "경영권 분쟁 관련 법원 검사인 조사 결과 및 이사회·주주총회 후속 조치를 확인할 필요가 있다.",
+    "en": "Watch for the outcome of the court-appointed inspector's review of the control dispute and any follow-up board or shareholder meeting actions."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (수시 공시)",
-    "en": "H2 2026 (ongoing disclosures)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "BMW·아우디 PDIO 계약 갱신 및 신모델 채택 여부 — 기존 계약 만기 일정과 신모델 라인업에 동사 제품 포함 여부가 확인되면, 향후 1~2년 매출 방향성을 가늠할 수 있다.",
-    "en": "BMW and Audi PDIO contract renewals and new-model adoption — confirmation of existing contract renewals or inclusion in new model lineups would provide concrete visibility into the revenue trajectory for the next 1–2 years."
+    "ko": "2026년 3분기 분기보고서 공시 시점으로, 매출 회복 지속 여부와 영업손실 축소 여부를 확인해야 한다.",
+    "en": "The 2026Q3 quarterly report filing deadline; check whether revenue continues to recover and whether the operating loss narrows."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년",
-    "en": "H2 2026–2027"
+    "ko": "2026년 하반기 중",
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "미국 커넥티드카 규제 시행 준비 동향 및 실질적 수주 성과 — 2027년식 소프트웨어 금지 적용을 앞두고 BMW·아우디 등 고객사의 공급망 재편이 가시화될 경우, 동사가 신규 물량을 수주하는지 여부가 중기 성장 시나리오의 현실화를 가늠하는 핵심 기준이 된다.",
-    "en": "Progress on U.S. connected-car Chinese-component ban implementation and any resulting order wins — as the 2027 model-year software ban approaches, evidence that BMW, Audi, or other customers are restructuring supply chains and directing incremental orders to the company will be the decisive test of the medium-term upside scenario."
+    "ko": "제3자배정 유상증자 및 전환사채(CB) 발행의 실제 납입·집행 여부와 자금 사용 내역 공시를 확인해야 한다.",
+    "en": "Confirm whether the third-party capital increase and convertible bond issuance are actually paid in and executed, and monitor disclosures on the use of proceeds."
    }
   },
   {
    "when": {
-    "ko": "2026년 3분기 말~4분기",
-    "en": "Q3–Q4 2026"
+    "ko": "2027년 3월 말",
+    "en": "Late March 2027"
    },
    "what": {
-    "ko": "유상증자 조달 자금 소진 속도 및 잔여 유동성 확인 — 2026년 4월 조달된 약 90억원의 활용 현황을 분기 보고서나 공시를 통해 파악함으로써, 추가 자금 조달 필요성을 조기에 감지할 수 있다.",
-    "en": "Cash burn rate monitoring and residual liquidity — tracking the utilization of the approximately ₩9 billion raised in April 2026 through quarterly filings will provide early warning of whether additional capital raising may become necessary."
-   }
-  },
-  {
-   "when": {
-    "ko": "수시 (DART 공시)",
-    "en": "Ongoing (DART filings)"
-   },
-   "what": {
-    "ko": "신규 수주·계약 체결·지분 변동 등 주요 사항 공시 — 완성차 업체와의 신규 계약 또는 자금 조달 관련 공시가 사업 회복의 선행 지표 역할을 하므로 DART 정기 모니터링이 필요하다.",
-    "en": "Material event disclosures on DART including new OEM contracts, significant ownership changes, or additional fundraising — these filings serve as leading indicators of business recovery and warrant ongoing monitoring."
+    "ko": "2026 사업연도 연간 감사보고서 제출 시점으로, 반기 의견거절이 반복될 경우 상장적격성 실질심사로 이어질 수 있어 감사의견 결과를 확인해야 한다.",
+    "en": "The filing deadline for the FY2026 annual audit report; if the disclaimer of opinion recurs from the half-year review, it could trigger a listing-eligibility review, making the audit opinion outcome important to confirm."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "모바일어플라이언스는 BMW·아우디에 레이더 블랙박스·HUD·ADAS를 동시 납품하는 독보적 기술 이력을 보유하고 있으나, 2022년 이후 4개년 연속 매출 감소와 2026년 1분기의 역대 최악 영업손실률(약 -64%)로 사업 지속가능성에 대한 시장의 우려가 심화되고 있다. 2025년 말 기준 부채비율 24.3%의 개선된 재무 구조와 2026년 4월 조달된 약 90억원의 운영자금은 단기 유동성 위기를 일정 부분 완화하지만, 2026년 1분기 수준의 현금 소진이 지속된다면 추가 자금 조달 필요성이 부각될 수 있다. 미국의 커넥티드카 중국 부품 금지 규제(2027년식부터 단계 적용)는 비중국 공급망으로서의 동사에 잠재적 수혜 시나리오를 제공하나, 실제 수주 성과까지는 상당한 시간과 실행 불확실성이 남아 있다. 현재 주가는 주당순자산(BPS 1,387원) 대비 상당한 할인 구간에 위치해 자산 관점에서의 상대적 저평가를 나타내지만, 손익 회복이 뒷받침되지 않으면 재평가 실현이 제한될 수 있다. 2026년 2분기 이후 분기 실적 반등 여부, BMW·아우디와의 계약 갱신, 연간 영업현금흐름의 플러스 유지 여부가 중기 전망을 결정할 핵심 지표다.",
-   "en": "Mobile Appliance carries a distinctive track record as the only Korean company simultaneously supplying radar dashcams, HUDs, and ADAS to both BMW and Audi, but four consecutive years of revenue contraction and its worst-ever quarterly operating loss margin (~-64%) in Q1 2026 have materially intensified market concerns about business sustainability. The improved balance sheet (debt-to-equity ratio of 24.3% as of end-2025) and the approximately ₩9 billion raised in April 2026 provide some near-term liquidity relief, but if the cash consumption rate seen in Q1 2026 persists, additional measures may be required. The phased U.S. ban on Chinese-origin connected-car components (software from the 2027 model year onward) offers a credible potential structural tailwind as a non-Chinese supplier to premium OEMs, though translating this into actual order wins involves meaningful time and execution risk. The current share price stands at a meaningful discount to book value per share (BPS of ₩1,387), suggesting relative asset undervaluation, but a fundamental re-rating will require visible evidence of an earnings recovery. A rebound in quarterly earnings from Q2 2026 onward, BMW and Audi contract renewals, and the maintenance of positive annual operating cash flow are the defining metrics that will determine the company's medium-term trajectory."
+   "ko": "모바일어플라이언스는 글로벌 완성차 대상 ADAS·HUD 공급 이력을 바탕으로 자율주행 센서·AI 전장 솔루션 등 신사업으로 포트폴리오를 넓히려는 시도를 진행하고 있다. 그러나 2022년부터 2025년까지 4년 연속 매출이 감소했고 2025년에는 영업손실·순손실로 전환했으며, 2025년 3분기부터 2026년 2분기까지는 4개 분기 연속 영업손실이 이어졌다. 여기에 2026년 반기보고서에서 감사의견이 '의견거절'로 바뀌면서 계속기업 불확실성이 부각됐고, 같은 해 최대주주가 여러 차례 바뀌는 경영권 분쟁과 전·현직 경영진에 대한 횡령·배임 혐의 소송까지 겹쳤다. 회사는 유상증자와 전환사채 발행을 통해 신사업 재원을 확보하려 하고 있으나, 지배구조와 회계 신뢰성 이슈가 해소되지 않으면 이러한 자금 조달과 신사업 실행 일정에 차질이 생길 수 있다. 결국 이 회사에 대한 평가는 기존 전장 사업의 경쟁력 유지 여부, 신사업의 실질적 매출 기여, 그리고 연간 감사보고서에서의 의견 결과라는 세 가지 축에 따라 달라질 수 있는 상황이다. 투자자는 위 세 요소에 대한 후속 공시를 지속적으로 확인할 필요가 있다.",
+   "en": "Mobile Appliance is attempting to broaden its portfolio into new businesses such as autonomous-driving sensors and AI-based electronics, building on its track record of supplying ADAS and HUD to global automakers. However, revenue declined for four consecutive years from 2022 through 2025, the company swung to an operating and net loss in 2025, and operating losses persisted for four straight quarters from 2025Q3 through 2026Q2. Compounding this, the auditor's opinion on the 2026 half-year review shifted to a disclaimer, raising going-concern uncertainty, while the same year saw repeated changes in controlling shareholder amid a control dispute and lawsuits alleging embezzlement and breach of trust against current and former management. The company is seeking to secure funding for its new businesses through a capital increase and convertible bond issuance, but unresolved governance and accounting-credibility issues could disrupt this funding and the execution timeline for new businesses. Ultimately, how this company is assessed may hinge on three factors: whether its core electronics business retains competitiveness, whether new businesses deliver tangible revenue contribution, and the outcome of the audit opinion in the annual report. Investors should continue to monitor subsequent disclosures on these three factors."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A087260&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
+  "https://www.mt.co.kr/stock/2026/05/15/2026051517090771788",
+  "https://thevc.kr/mobileappliance",
   "https://www.investing.com/equities/mobile-appliance-inc",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251114001653&docno=&viewerhost=",
+  "https://alphasquare.co.kr/home/stock-summary?code=087260",
   "https://finance.finup.co.kr/Stock/087260",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A087260",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=JrjDhO2ANL4IuQA7",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=aXF5L1mt7fi8BNO0",
+  "https://www.newspim.com/news/view/20260515001047",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A087260",
+  "https://m.finance.daum.net/quotes/A087260/news/disclosure/20260706075029",
   "https://m.thinkpool.com/item/087260",
   "https://www.digitaltoday.co.kr/news/articleView.html?idxno=632273",
-  "https://kr.tradingview.com/symbols/KRX-087260/",
-  "http://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=087260",
-  "https://comp.fnguide.com/SVO2/asp/SVD_shareanalysis.asp?pGB=1&gicode=A087260&cID=&MenuYn=Y&ReportGB=&NewMenuID=109&stkGb=701",
-  "https://www.investing.com/equities/mobile-appliance-inc-earnings",
-  "https://www.thinkpool.com/stockDiscuss/087260/list?code=087260&Gcode=001_008_002",
-  "https://www.mobileappliance.co.kr/strategy",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1641174894072.pdf",
-  "http://www.dasuong.com/?act=info.page&pcode=sub1_2",
-  "http://www.pontus.co.kr/board/notice/view/5926",
-  "https://www.etnews.com/20180627000285",
-  "https://thevc.kr/furonteer",
-  "https://www.newsprime.co.kr/news/article/?no=385658"
+  "https://thinkpool.com/itemanal/i/index.jsp?Gcode=001_041_003&code=087260",
+  "https://markets.hankyung.com/stock/087260",
+  "http://comp.fnguide.com/SVO2/asp/SVD_Main.asp?pGB=1&gicode=A087260&cID=&MenuYn=Y&ReportGB=&NewMenuID=101&stkGb=",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=06792886645547320",
+  "https://www.ajunews.com/view/20260819142842652"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "087260",
  "name": "모바일어플라이언스",
  "name_en": "MOBILE APPLIANCE, INC.",
@@ -233,9 +223,9 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 05:32",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 21:16",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
