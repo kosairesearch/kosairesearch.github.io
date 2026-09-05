@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "지주 전환·자회사 적자 이중고, 핵심 기술력과 재무 회복이 관건",
-  "en": "Holding Restructuring & Subsidiary Losses: Recovery Hinges on Core Technology"
+  "ko": "지주사 전환기, 테슬라 노출 속 실적 변동성",
+  "en": "Holding Company Transition Amid Tesla-Linked Earnings Swings"
  },
  "lead": {
-  "ko": "현대·기아차의 핵심 차체 부품 공급사에서 지주사로 전환한 엠에스오토텍은 2024년 구조 개편과 자회사 명신의 전기차 위탁생산 실패 후유증이 겹치며 2025년 지배주주 귀속 순손실로 전환됐고, 2026년 1분기 영업이익 반등 속에서도 그룹 유동성 부담 해소가 실적 정상화의 최대 변수로 부상했다.",
-  "en": "MS Autotech, a cornerstone supplier of automotive body parts to Hyundai-Kia that converted to a holding structure, recorded an attributable net loss in 2025 as the 2024 restructuring overlapped with fallout from subsidiary Myungshin's failed EV contract manufacturing; even as operating profit rebounded in Q1 2026, resolving group-level liquidity pressure remains the pivotal variable for earnings normalization."
+  "ko": "엠에스오토텍은 2024년 지주회사 체제로 전환한 자동차 차체부품 그룹으로, 핵심 종속회사 명신산업의 테슬라 공급 물량 및 전기차 업황에 실적이 크게 연동되는 구조를 보이고 있다.",
+  "en": "MS Autotech is an auto body-part group that converted to a holding company structure in 2024, with earnings heavily linked to core subsidiary Myoung Shin Industrial's Tesla-related shipments and the broader electric vehicle cycle."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 영업이익률 1.8%로 급락(2023년 8.4%), 지배주주 귀속 순손실 749억 원 기록—적자 전환",
-   "en": "Consolidated operating margin collapsed to 1.8% in 2025 (vs. 8.4% in 2023); attributable net loss of KRW 74.9B marks a full loss reversal"
+   "ko": "2024년 8월 물적분할로 지주회사(엠에스오토텍)와 사업회사(엠에스오토시스)로 분리, 명신산업 등을 종속회사로 지배하는 구조",
+   "en": "In August 2024 the company split into a holding entity (MS Autotech) and an operating entity (MS Autosys) via spin-off, now controlling subsidiaries including Myoung Shin Industrial."
   },
   {
-   "ko": "2024년 최대주주 심원 흡수합병·경주공장 물적분할로 지주사 체제 완성, 합병비율 논란 등 지배구조 이슈 병존",
-   "en": "Completed holding company transition in 2024 via merger with major shareholder Shimwon and physical spin-off of the Gyeongju plant, alongside ongoing corporate governance controversy over the merger ratio"
+   "ko": "2025년 연결 매출 1.74조원, 영업이익 313억원(영업이익률 1.8%), 지배주주순손실 -1,086억원으로 적자전환",
+   "en": "2025 consolidated revenue was KRW 1.74tn with operating profit of KRW 31.3bn (1.8% margin), while net loss attributable to owners was KRW -108.6bn, a swing to loss."
   },
   {
-   "ko": "자회사 명신, 전기차 위탁생산 실패 후 스마트물류·자동화 설비로 전환—그룹 유동성의 핵심 부담 변수",
-   "en": "Subsidiary Myungshin pivoting from failed EV contract manufacturing to smart logistics and automation, remaining the primary drag on group-wide liquidity"
+   "ko": "최근 4개 분기(2025Q3~2026Q2) 중 2026년 2분기 영업이익 355억원으로 해당 구간 내 최고치를 기록",
+   "en": "Among the trailing four quarters (2025Q3-2026Q2), operating profit peaked at KRW 35.5bn in 2026Q2."
   },
   {
-   "ko": "핫스탬핑 독자 기술(1.5GPa급)과 현대·기아차 장기 거래관계가 사업 안정성의 근간",
-   "en": "Proprietary hot-stamping technology (1.5 GPa-grade forming) and entrenched Hyundai-Kia relationships underpin operational resilience"
+   "ko": "종속회사 명신산업은 북미 전기차 고객사(테슬라 중심) 매출 비중이 약 60%에 달해 특정 고객 의존도가 높은 편",
+   "en": "Subsidiary Myoung Shin Industrial derives roughly 60% of sales from North American EV customers centered on Tesla, indicating meaningful customer concentration."
   },
   {
-   "ko": "2026년 1분기 영업이익 119억 원으로 2025년 4분기 영업손실 반등—완전한 수익성 회복은 구조조정 실행 속도에 달려 있음",
-   "en": "Q1 2026 operating profit of KRW 11.9B marks a sequential rebound from the Q4 2025 operating loss; full earnings recovery depends on the pace of group restructuring execution"
+   "ko": "테슬라 사이버캡이 2026년 초 텍사스 기가팩토리에서 생산을 시작했으나 초기 생산 속도는 더딘 것으로 전해짐",
+   "en": "Tesla's Cybercab began production at Giga Texas in early 2026, though initial output has reportedly been slow."
   }
  ],
  "business": {
-  "ko": "엠에스오토텍은 1990년 자동차 차체 부품 제조·판매 목적으로 설립돼 2010년 코스닥에 상장했으며, 2024년 최대주주 심원을 흡수합병하고 경주공장 사업부문을 물적분할(엠에스경주)해 지주사 체제로 전환했다. 연결 그룹 사업구조는 ①자동차 차체 부품 제조·판매(별도·엠에스경주) ②핫스탬핑 기반 부품 공급(유가증권 상장 자회사 명신산업) ③전기차 위탁생산 실패 후 스마트물류·자동화 설비로 전환 중인 자회사 명신 ④브라질·인도·중국 등 해외 생산 법인으로 구성된다. 주력 제품은 FLOOR류(배선 고정 구조물), SIDE류(차체 기둥 구조물), MOVING류(도어·방진 부품) 등 자동차 골격을 이루는 차체 부품이며, 원재료인 코일류는 현대·기아차가 직접 구매해 공급하는 특수한 거래 구조를 갖고 있다. 핵심 기술인 핫스탬핑은 금속을 900~950℃ 고온에서 성형한 뒤 금형 내 급속 냉각해 강도를 극대화하는 공법으로, 동사는 1.5GPa급 고강도 소재 성형 기술을 독자 확보해 국내외 특허를 지속 출원·등록하고 있다. 주요 매출처는 현대·기아자동차이며, 플랫폼 공용화 정책 속에서 설비 가동 구조가 결정되면 제품 라이프사이클 기간 동안 경쟁 구도가 쉽게 바뀌지 않는 산업 특성이 사업 기반을 방어한다. 경쟁사로는 성우하이텍, 세원정공, 일지테크 등 현대차그룹 협력사들이 있으며, 성우하이텍이 미국 테네시 공장 기반으로 북미 전기차 시장을 확장하는 방향으로 차별화하는 반면, 동사는 현재 그룹 내 유동성 문제 해결에 역량을 집중하고 있다. 현대차와 2007년 인도 첸나이에 현지 공장을 공동 건립했고 브라질(2012년)에도 동반 진출했으며, 코스피 상장 자회사 명신산업은 테슬라 등 글로벌 전기차 업체에 핫스탬핑 차체 부품을 공급하며 그룹 수익성의 주요 축을 담당했다.",
-  "en": "MS Autotech was established in 1990 for automotive body parts manufacturing and listed on KOSDAQ in 2010; in 2024 it completed a holding company transition by absorbing major shareholder Shimwon and physically spinning off the Gyeongju plant as MS Gyeongju. The consolidated group comprises: (1) automotive body-parts manufacturing at the standalone and MS Gyeongju level; (2) hot-stamping-based parts supplied by KOSPI-listed subsidiary Myungshin Industry; (3) Myungshin, pivoting from failed EV contract manufacturing to smart logistics and automation equipment; and (4) overseas production subsidiaries in Brazil, India, and China. Core products include FLOOR parts (wire-harness fixtures), SIDE parts (body pillars), and MOVING parts (door and anti-vibration components), with steel coils purchased and supplied directly by Hyundai-Kia—a distinctive supply-chain arrangement. The proprietary hot-stamping process heats metal to approximately 900–950 °C before rapid in-die quenching, and MS Autotech has independently developed 1.5 GPa-grade high-strength forming capability, backed by continuously filed domestic and international patents. Primary customers are Hyundai and Kia Motors; the industry's platform-sharing policy locks in competitive configurations for the duration of a product lifecycle, providing a structural floor for orders. Key rivals—Sungwoo Hitech, Sewon, and Iljitec—compete as fellow Hyundai-Kia body-part suppliers, though Sungwoo has differentiated itself with North American EV capacity at its Tennessee plant while MS Autotech remains focused on resolving group-level issues. A Chennai co-plant with Hyundai Motor was established in 2007, Brazil followed in 2012, and KOSPI-listed Myungshin Industry—supplying hot-stamped body parts to Tesla and other global EV makers—has been a key pillar of group profitability."
+  "ko": "엠에스오토텍은 1990년 설립된 자동차 차체부품 제조기업으로, 2010년 코스닥에 상장됐다. 2024년 8월 물적분할을 통해 존속법인인 엠에스오토텍과 신설법인 엠에스오토시스로 사업구조를 재편하며 지주회사 체제로 전환했다. 지주회사로서 배당수익, 임대수익, 경영자문수수료 등을 주된 수입원으로 하며, 종속회사인 명신산업, 엠에스오토시스, 명신, 심원테크 등을 통해 실질적인 자동차 차체부품 사업을 영위하고 있다. 핵심 종속회사인 명신산업은 유가증권시장 상장사로 핫스탬핑(Hot Stamping) 공법을 활용해 자동차 보닛, 도어, 사이드 멤버 등 경량 고강도 차체 부품을 생산한다. 핫스탬핑은 900도 이상 고온으로 가열한 금속을 프레스 성형 후 급속 냉각시켜 강도를 두 배 이상 높이면서 두께를 줄이는 공법으로, 전기차 경량화·주행거리 개선에 유리한 기술로 꼽힌다. 주요 매출처는 현대자동차·기아이며, 명신산업은 이와 별도로 미국 텍사스 현지 법인(심원 노스아메리카)을 통해 테슬라에 직납하는 구조를 갖추고 있다. 경쟁 구도는 성우하이텍(자회사 삼영핫스탬핑), 신영, 일지테크 등 국내 핫스탬핑 업체들과 경쟁하는 양상이다. 지주회사 특성상 연결재무제표에는 명신산업 등 종속회사의 실적이 반영되지만, 소액주주 지분이 큰 비지배지분(NCI) 비중이 상당해 지배주주 귀속 순이익과 연결 전체 순이익 간 괴리가 발생하는 구조적 특징이 있다.",
+  "en": "MS Autotech is an auto body-part manufacturer founded in 1990 and listed on KOSDAQ in 2010. In August 2024, the company restructured through a spin-off into a surviving holding entity, MS Autotech, and a newly established operating entity, MS Autosys, converting to a holding-company structure. As a holding company, its main income sources are dividend income, rental income, and management advisory fees, while the group's substantive auto body-part business is carried out through subsidiaries including Myoung Shin Industrial, MS Autosys, Myoung Shin, and Simwon Tech. The core subsidiary, Myoung Shin Industrial, is listed on the KOSPI and uses the Hot Stamping process to produce lightweight, high-strength body parts such as hoods, doors, and side members. Hot stamping heats metal above 900 degrees Celsius before press-forming and rapid cooling, more than doubling strength while reducing thickness, a technique favored for EV lightweighting and range improvement. Its major customers are Hyundai Motor and Kia, while Myoung Shin Industrial separately ships directly to Tesla through its US Texas-based entity, Simwon NA. The competitive landscape includes domestic hot-stamping peers such as Sungwoo Hitech (via subsidiary Samyoung Hot Stamping), Sinyoung, and Iljitech. Due to its holding structure, the consolidated financial statements reflect subsidiaries' results, but a substantial non-controlling interest portion creates a structural gap between net income attributable to owners and total consolidated net income."
  },
  "earnings": {
-  "ko": "연간 매출은 2023년 2조 817억 원을 정점으로 2024년 1조 7,775억 원(-14.5%), 2025년 1조 7,406억 원(-2.1%)으로 2년 연속 감소했으며, 같은 기간 영업이익은 1,748억 원→963억 원→313억 원으로 급락해 영업이익률이 8.4%→5.4%→1.8%로 축소됐다. 2025년 지배주주 귀속 순손실은 749억 원으로 순이익 기준 적자 전환했는데, 전기차 위탁생산 실패로 누적 손실이 쌓인 자회사 명신의 손실이 연결 재무제표에 반영된 영향이 컸다. 분기별로는 2025년 2분기에 영업이익 70억 원에도 불구하고 지배주주 귀속 순손실이 452억 원에 달하는 이례적 비영업 손실(관계사 손상 및 금융 비용 추정)이 집중됐고, 4분기에는 영업이익마저 -123억 원으로 적자 전환했다. 2026년 1분기는 매출 4,201억 원(전년 동기 대비 +4.4%), 영업이익 119억 원으로 전분기 영업 적자에서 반등했으나, 지배주주 귀속 순손실은 48억 원으로 여전히 지속됐다. 지배주주 귀속 자기자본은 2024년 2,963억 원에서 2025년 1,833억 원으로 38% 감소해 자본 기반이 크게 약화됐으나 완전 자본잠식 상태는 아니다. 부채비율은 2022년 233.9%에서 2025년 166.2%로 점진 개선됐고, 영업활동 현금흐름은 2025년 1,049억 원으로 순손실 규모 대비 기초 현금 창출 능력을 방어했다. 연간 주당순이익(EPS)은 2022년 997원, 2023년 268원, 2024년 32원으로 하락 추세를 이어가다 2025년에는 손실로 전환해 EPS 산출이 불가능한 상태다.",
-  "en": "Annual revenue peaked at KRW 2.08T in 2023, declining to KRW 1.78T (−14.5%) in 2024 and KRW 1.74T (−2.1%) in 2025; over the same period, operating profit plummeted from KRW 174.8B → KRW 96.3B → KRW 31.3B, compressing the operating margin from 8.4% to 5.4% then 1.8%. The 2025 attributable net loss of KRW 74.9B represented a full earnings reversal, driven largely by subsidiary Myungshin's accumulated EV-contract-manufacturing losses flowing through the consolidated income statement. Quarterly, the most acute pressure surfaced in Q2 2025: despite KRW 7.0B in operating profit, the attributable net loss hit KRW 45.2B—implying extraordinary non-operating charges (likely affiliate impairments and financial costs)—while Q4 2025 was further hit by a KRW 12.3B operating loss. Q1 2026 showed early stabilization: revenue of KRW 420.1B (+4.4% YoY) and operating profit of KRW 11.9B marked a sequential rebound, though the attributable net loss of KRW 4.8B persisted. Owner-attributable equity contracted 38%, from KRW 296.3B in 2024 to KRW 183.3B in 2025, meaningfully weakening the capital base though not triggering full impairment. The debt ratio improved from 233.9% (2022) to 166.2% (2025), and operating cash flow of KRW 104.9B in 2025 preserved basic cash-generation capacity despite the net loss. Annual EPS declined from KRW 997 (2022) through KRW 268 (2023) and KRW 32 (2024), before turning to a loss in 2025 with no EPS calculable."
+  "ko": "연간 실적을 보면 2022년 매출 2.03조원, 영업이익 1,491억원(영업이익률 7.4%), 지배주주순이익 434억원의 견조한 흐름을 보였고, 2023년에는 매출 2.08조원, 영업이익 1,748억원(영업이익률 8.4%)으로 정점을 찍었다. 이후 2024년 매출이 1.78조원으로 줄고 영업이익도 963억원(영업이익률 5.4%)으로 하락했으며, 지배주주순이익은 15.9억원 수준까지 축소됐다. 2025년에는 매출 1.74조원, 영업이익 313억원(영업이익률 1.8%)으로 수익성이 더 크게 훼손됐고, 지배주주순손실 -1,086억원을 기록하며 적자로 전환했다. 분기별로는 2025년 2분기 매출 4,418억원·영업이익 70억원·지배주주순손실 -510억원, 3분기 매출 4,675억원·영업이익 139억원·순손실 -163억원, 4분기에는 매출 4,289억원에 영업이익이 -123억원으로 적자를 기록하며 순손실이 -286억원까지 확대됐다. 2026년 들어서는 1분기 매출 4,201억원·영업이익 119억원·순손실 -48억원으로 적자 폭이 축소됐고, 2분기에는 매출이 5,048억원으로 늘고 영업이익도 355억원으로 최근 4개 분기 구간(2025Q3~2026Q2) 중 최고치를 기록했으나 순손실은 -140억원으로 여전히 적자 상태를 벗어나지 못했다. 이 구간의 지배주주순손실 합계는 -636억원 수준이다. 종속회사 명신산업이 2026년 2월 25일 공시한 2025년 연결 잠정실적에서는 관세 증가와 상각비 부담 등 비용 요인으로 영업이익과 순이익이 전년 대비 각각 32%, 49% 감소했다고 밝힌 바 있어, 그룹 전반의 수익성 훼손이 관세·고정비 부담과 맞물려 있음을 시사한다.",
+  "en": "Annual results show revenue of KRW 2.03tn in 2022 with operating profit of KRW 149.1bn (7.4% margin) and net income attributable to owners of KRW 43.4bn, followed by a peak in 2023 with revenue of KRW 2.08tn and operating profit of KRW 174.8bn (8.4% margin). Revenue then declined to KRW 1.78tn in 2024 with operating profit falling to KRW 96.3bn (5.4% margin), while net income attributable to owners shrank to about KRW 1.6bn. In 2025, revenue fell further to KRW 1.74tn and operating profit dropped sharply to KRW 31.3bn (1.8% margin), with the company swinging to a net loss attributable to owners of KRW -108.6bn. On a quarterly basis, 2025Q2 posted revenue of KRW 441.8bn, operating profit of KRW 7.0bn, and an owners' net loss of KRW -51.0bn; Q3 showed revenue of KRW 467.5bn, operating profit of KRW 13.9bn, and a net loss of KRW -16.3bn; Q4 saw revenue of KRW 428.9bn with an operating loss of KRW -12.3bn and the net loss widening to KRW -28.6bn. Into 2026, Q1 revenue was KRW 420.1bn with operating profit of KRW 11.9bn and a narrower net loss of KRW -4.8bn, while Q2 revenue rose to KRW 504.8bn and operating profit reached KRW 35.5bn, the highest within the trailing four-quarter window (2025Q3-2026Q2), though the net loss of KRW -14.0bn persisted. Cumulative owners' net loss over this window totaled roughly KRW -63.6bn. Subsidiary Myoung Shin Industrial's preliminary 2025 consolidated results, disclosed on February 25, 2026, cited increased tariffs and rising depreciation as factors behind a 32% drop in operating profit and a 49% drop in net income year-over-year, suggesting group-wide profitability pressure tied to tariffs and fixed-cost burden."
  },
  "industry": {
-  "ko": "한국 자동차 부품 산업은 2022~2023년 완성차 생산 반등으로 수혜를 누렸으나 2024년부터 전기차 캐즘(일시적 수요 둔화), 미국 관세 불확실성, 완성차사의 해외 현지 조달 확대가 복합 악재로 작용하고 있다. 2026년 한국 완성차 내수는 개별소비세 감면 연장 전제 하에 전년 대비 소폭(약 0.8~2.5%) 증가가 예상되나, 수출은 관세 부담과 현대·기아차의 미국 현지 생산 확대로 역성장 가능성이 거론된다. 국내 완성차의 부품 현지 조달 확대로 자동차 부품 수출 역시 감소 압력을 받는 상황으로, 업계 전반의 매출 성장성이 제한적인 환경이 지속되고 있다. 2026년 기준 현대차그룹의 글로벌 생산량은 2019년 대비 약 95% 수준으로 완전 회복에는 아직 거리가 있다는 분석이 있어, 국내 1차 협력사들의 수주 볼륨도 피크 대비 제한된 상태다. 핫스탬핑 기술은 전기차 배터리 중량을 상쇄하기 위한 차체 경량화 수요와 안전 규제 강화로 적용 범위가 꾸준히 확대되는 구조적 성장 요인을 보유하며, 볼보·BMW·토요타 등 글로벌 완성차들이 핫스탬핑 채용 비율을 지속 높이고 있다. 경쟁사인 성우하이텍은 미국 테네시 공장을 기반으로 북미 전기차 수주 확대를 통해 차별화된 현금 창출력을 확보한 반면, 동사는 현재 그룹 내 구조조정 과제 해결에 집중하는 대조적인 상황이다. 중국산 전기차가 국내 수입차 시장에서 2025년 기준 점유율을 빠르게 늘리며 현대·기아차 판매를 잠식하는 추세는 한국 내 차체 부품 협력사 전반에 장기 수요 리스크 요인으로 작용한다.",
-  "en": "South Korea's auto parts industry benefited from the 2022–2023 production rebound but has since been weighed down by a compound set of headwinds: the EV demand chasm, US tariff uncertainty, and rising local-content ratios at Hyundai-Kia overseas plants. Korea's domestic new-car market is expected to grow modestly in 2026 (+0.8–2.5%, contingent on individual excise tax relief continuation), but exports face downside risk from tariffs and OEMs' push to expand US local production. Increasing local-content procurement by Korean automakers abroad has placed structural downward pressure on domestic parts export volumes, capping industry-wide growth prospects. Hyundai-Kia Group's global production in 2026 is projected at roughly 95% of pre-COVID 2019 levels, meaning Korean first-tier suppliers remain constrained below peak order volumes. Hot stamping retains a structural demand growth narrative tied to lightweighting for EV battery-mass offset and tightening crash-safety standards; global OEMs—Volvo, BMW, and Toyota among them—continue expanding hot-stamping part ratios. Competitor Sungwoo Hitech has differentiated with its Tennessee plant-based North American EV wins, contrasting sharply with MS Autotech's current restructuring focus. Chinese EV brands' rapid domestic market-share gains—eroding Hyundai-Kia volumes—represent a structural long-term demand risk for Korean body-parts suppliers broadly."
+  "ko": "국내 자동차 부품업계의 전방산업은 현대차·기아를 중심으로 한 완성차 생산과 글로벌 전기차 업체의 생산 사이클에 좌우된다. 명신산업을 비롯한 국내 핫스탬핑 업체들은 전기차 경량화 수요를 성장 동력으로 삼아왔으나, 2023년 이후 전기차 캐즘(수요 둔화)이 본격화하며 업황이 정체됐다. 명신산업의 경우 북미 전기차 고객사(테슬라 중심) 매출 비중이 약 60%에 달해, 특정 고객사의 생산 사이클에 실적이 크게 좌우되는 구조적 특징을 지닌다. 테슬라의 텍사스 기가팩토리는 모델 Y, 사이버트럭에 이어 완전자율주행 전용차량 사이버캡까지 생산기지로 활용하고 있으며, 2026년 초 사이버캡 생산이 시작됐으나 초기 생산 속도는 더딘 것으로 전해진다. 경쟁구도는 성우하이텍(삼영핫스탬핑), 신영, 일지테크 등 국내 핫스탬핑 업체들과의 경쟁이며, 각 업체는 현대·기아 및 해외 완성차·전기차 업체로 매출처를 다변화하려는 시도를 지속하고 있다. 명신산업의 공장가동률은 2023년 85.7%에서 2024년 75.2%로 하락한 것으로 파악되며, 이는 텍사스 신규 공장 등 설비 증설이 수요 회복 속도를 앞서간 결과로 해석된다. 업계 전반적으로는 관세 등 통상 이슈, 완성차 업체의 생산 조정, 전기차 수요 회복 시점이 향후 실적의 주요 변수로 꼽힌다.",
+  "en": "The domestic auto parts industry's end-market demand is driven by Hyundai and Kia's vehicle production alongside the production cycles of global EV makers. Domestic hot-stamping suppliers including Myoung Shin Industrial have leaned on EV lightweighting demand as a growth driver, but industry momentum stalled as the EV demand slowdown, often called the 'chasm,' took hold from 2023 onward. Myoung Shin Industrial derives roughly 60% of its sales from North American EV customers centered on Tesla, a structural feature that ties its results closely to a single customer's production cycle. Tesla's Giga Texas facility has been used to produce the Model Y and Cybertruck, and more recently the fully autonomous Cybercab, whose production began in early 2026 though initial output has reportedly been slow. The competitive landscape includes domestic hot-stamping peers Sungwoo Hitech (via Samyoung Hot Stamping), Sinyoung, and Iljitech, each attempting to diversify customer bases toward Hyundai/Kia as well as overseas automakers and EV makers. Myoung Shin Industrial's plant utilization rate reportedly fell from 85.7% in 2023 to 75.2% in 2024, a result interpreted as new capacity additions such as the Texas plants outpacing the pace of demand recovery. Across the industry, tariff-related trade issues, OEM production adjustments, and the timing of an EV demand recovery are cited as key variables for future performance."
  },
  "outlook": {
-  "ko": "엠에스오토텍의 2026년 최우선 과제는 자회사 명신의 신사업(스마트물류·자동화 설비) 전환 속도 가시화와 그룹 차원의 유동성 확보다. 명신은 전기차 위탁생산을 공식 종료하고 구 한국GM 군산공장 인프라를 활용해 스마트물류·자동화 설비 사업으로 방향을 전환했으나, 2024년 기준 영업손실 455억 원·누적 결손금 838억 원의 재무 상태를 고려할 때 조기 수주 확보가 사업 재건의 관건이다. 그룹은 오너 일가 보유 지분·계열사 부동산을 담보로 약 1,300억 원 규모 사모사채 발행을 추진 중인 것으로 알려졌으며, 이 자금 조달의 성패가 명신의 운영 지속성과 그룹 전반의 단기 재무 안정성을 결정할 핵심 변수다. 코스피 상장 자회사 명신산업은 테슬라향 핫스탬핑 부품 공급 비중이 높아(매출의 약 70% 추정), 테슬라의 미국 텍사스 제2공장 가동 확대와 글로벌 전기차 수요 회복이 명신산업 및 엠에스오토텍 그룹 수익성 개선의 외부 트리거로 작용할 수 있다. 현대·기아차 향 핵심 차체 부품 사업은 플랫폼 공용화 구조 속에서 기존 수주 기반을 안정적으로 유지하고 있으며, 2026년 제네시스 GV90, 기아 셀토스 등 신차 출시 사이클이 부품 공급 물량을 지지하는 요인이 될 수 있다. 2026년 1분기 영업이익의 전분기 대비 흑자 전환은 원가 구조 개선 노력의 초기 신호로 해석될 수 있으나, 비영업 손실(관계사 지원, 금융 비용)을 통제하지 못할 경우 영업이익 개선이 순이익 전환으로 이어지기 어렵다.",
-  "en": "MS Autotech's top 2026 priorities are demonstrating tangible progress in Myungshin's pivot to smart logistics and automation, and securing group-level liquidity. Myungshin has officially exited EV contract manufacturing and is repositioning former GM Korea Gunsan plant assets for smart-logistics and automation equipment, but with a KRW 45.5B operating loss and KRW 83.8B accumulated deficit as of 2024, securing early contracts is existential. The group is reportedly pursuing approximately KRW 130B in private-placement bonds secured against founding family stakes and affiliate real estate; the outcome of this fundraising will be the most decisive near-term determinant of Myungshin's operational continuity and group financial stability. KOSPI-listed Myungshin Industry derives an estimated 70% of revenue from Tesla-related hot-stamping parts, making Tesla's Texas Gigafactory 2 ramp-up and any recovery in EV production volumes a potential external earnings catalyst for the group. The core Hyundai-Kia body-parts business remains anchored by platform-sharing order commitments, with 2026 new model launches—including Genesis GV90 and the Kia Seltos HEV—providing a demand floor. Q1 2026's sequential operating profit recovery may reflect early cost-restructuring progress, but non-operating losses from intra-group financial support and borrowing costs must be controlled for this improvement to translate into a net profit."
+  "ko": "회사 측 공식 가이던스는 제한적으로 공개되어 있으나, 확인된 사업 진행 상황을 종합하면 몇 가지 관전 포인트가 있다. 첫째, 명신산업의 미국 텍사스 신규 공장(심원 노스아메리카)이 가동 중이며, 텍사스 기가팩토리향 부품 공급이 사이버트럭·사이버캡 등으로 확장될 가능성이 거론된다. 둘째, 테슬라의 사이버캡은 2026년 초 텍사스에서 생산을 시작했으나, 머스크 최고경영자 스스로 초기 생산 속도가 더딜 것이라고 언급한 바 있어 실질적인 물량 확대 시점은 아직 불확실하다. 셋째, 회사는 핫스탬핑 관련 국내외 특허를 지속적으로 확보하고 있으며, 전기차 배터리 열폭주 차단 시스템 등 신기술 특허 출원을 통해 미래 모빌리티 시장 대응을 준비하고 있는 것으로 파악된다. 넷째, 2026년 1분기 실적에서는 자동차부품 사업 매출이 증가했음에도 원가 부담과 비용 상승으로 수익성이 악화된 바 있어, 관세 등 비용 요인이 완전히 해소됐는지 여부가 향후 실적의 핵심 변수로 남아 있다. 다섯째, 2026년 2분기 영업이익이 최근 4개 분기 중 최고치를 기록한 점은 일부 개선 신호로 해석될 수 있으나, 순이익 단위에서는 여전히 적자가 지속되고 있어 추가 확인이 필요하다.",
+  "en": "While formal company guidance disclosure is limited, several confirmed developments merit attention. First, Myoung Shin Industrial's new Texas plant (via Simwon NA) is operating, with the possibility of expanded parts supply to the Giga Texas facility covering the Cybertruck and Cybercab. Second, Tesla's Cybercab began production in Texas in early 2026, but CEO Elon Musk himself has indicated that initial production would be slow, leaving the timing of meaningful volume ramp-up uncertain. Third, the company continues to secure domestic and international patents related to hot stamping, and is reportedly preparing for future mobility markets through new technology patent filings including an EV battery thermal-runaway prevention system. Fourth, in the 2026 Q1 results, auto-parts segment revenue increased even as profitability deteriorated due to cost burdens and rising expenses, leaving whether tariff-related cost pressures have fully eased as a key variable for upcoming results. Fifth, the 2026 Q2 operating profit reaching the highest level within the trailing four quarters could be read as a partial improvement signal, though net losses have persisted, warranting further confirmation."
  },
  "valuation_comment": {
-  "ko": "주당순자산(BPS) 3,003원 대비 현재 주가는 장부가치를 하회하는 구간에 위치해 있으며, 이는 2022~2023년 영업이익률 7~8%대를 달성하던 시기의 장부가 프리미엄 국면과 대조적이다. 2025년 연결 지배주주 귀속 순손실이 확인된 상황에서 수익 배수(PER) 기반의 가치 비교는 현시점에서 적용하기 어렵고, 회사가 순이익 흑자로 복귀하는 시점의 이익 규모가 중요한 관전 포인트다. 배당은 2025년 기준 무배당(DPS 0원)으로, 과거 수익성 국면 대비 주주 환원 요소가 부재한 상태다. 그룹 유동성 부담 해소와 영업이익 기조 회복이 병행될 경우 장부가 대비 할인폭은 축소될 여지가 있으나, 자회사 명신의 신사업 전환 실행력과 연결 비영업 손실의 재발 가능성이 가시성을 제약하는 요인으로 남는다. 향후 수익성 복원 시점과 속도에 대한 시장의 확신이 높아지는 것이 현재의 장부가 할인 상태 해소 조건이 될 것이다.",
-  "en": "The stock is currently trading below book value per share (BPS: KRW 3,003), contrasting with the book-value premium seen when the company achieved operating margins of 7–8% in 2022–2023. With a confirmed consolidated attributable net loss in 2025, earnings-multiple (PER) comparisons are not applicable at this stage; the scale of earnings at the point of a net-profit return will be the key reference. Dividends were suspended in 2025 (DPS: KRW 0), marking a full absence of shareholder-return support relative to profitable prior periods. Should group liquidity pressures ease and operating profitability recover sustainably, the discount to book value could narrow; however, execution risk around Myungshin's new business and the potential for recurring non-operating losses continue to limit earnings visibility. A narrowing of the below-book discount will require the market to gain conviction on the timing and pace of profitability restoration."
+  "ko": "현재 주가는 주당 순자산 대비 상당한 할인 상태에서 거래되고 있어, 주가순자산비율이 1배를 크게 밑도는 구간에 위치한다. 2025년 지배주주 순손실 전환에 이어 최근 4개 분기 누적 기준으로도 순손실이 이어지고 있어, 순이익 기준 밸류에이션 지표는 산출이 어려운 상태다. 과거 2022~2023년 영업이익률이 7~8%대에 이르렀던 흐름과 비교하면 2025년 이후의 마진 수준은 뚜렷하게 낮아진 편이며, 이러한 이익 체력 변화가 순자산 대비 주가 수준에도 영향을 미치는 것으로 보인다. 배당의 경우 최근 별도의 현금배당이 이뤄지지 않고 있어, 배당 관련 지표는 업종 내에서 유의미한 비교 기준으로 삼기 어렵다. 지주회사 구조상 비지배지분 비중이 큰 점도 지배주주 귀속 지표 해석 시 참고할 부분이다.",
+  "en": "The current share price trades at a meaningful discount to book value per share, with the price-to-book ratio positioned well below 1x. Following the 2025 swing to a net loss attributable to owners, losses have continued on a trailing four-quarter basis, making net-income-based valuation metrics difficult to compute meaningfully. Compared with the 7-8% operating margins seen in 2022-2023, margins from 2025 onward have clearly narrowed, a shift in earnings power that appears to be reflected in the price-to-book level as well. No cash dividend has recently been paid, making dividend-related metrics of limited use for sector comparison at this time. The holding-company structure's substantial non-controlling interest also warrants consideration when interpreting metrics attributable to owners."
  },
  "bull": [
   {
    "title": {
-    "ko": "핫스탬핑 독자 기술력과 현대·기아 장기 수주 기반",
-    "en": "Proprietary Hot-Stamping Technology and Structural Hyundai-Kia Order Anchor"
+    "ko": "미국 전기차 밸류체인 노출",
+    "en": "Exposure to the US EV Value Chain"
    },
    "body": {
-    "ko": "동사는 1.5GPa급 고강도 소재 성형이 가능한 핫스탬핑 기술을 독자 개발해 국내외 특허를 지속 확보하고 있으며, 현대·기아차의 플랫폼 공용화 정책 속에서 차량 라이프사이클 기간 동안 안정적인 수주 구조를 유지한다. 차체 경량화 수요와 글로벌 안전 규제 강화가 지속되는 한 핫스탬핑 부품의 수요 기반은 내연기관·전기차 플랫폼 모두에서 유지될 구조적 성장 요인이 있다. 인도·브라질·중국 등 현대·기아차 해외 공장과 연계된 글로벌 생산 거점은 완성차 고객사의 해외 생산 확대에도 수주를 동반할 수 있는 구조적 기반을 제공한다.",
-    "en": "MS Autotech has independently developed 1.5 GPa-grade hot-stamping forming capability supported by a growing domestic and international patent portfolio, with Hyundai-Kia platform-sharing arrangements locking in stable orders throughout each model's lifecycle. Structural tailwinds—lightweighting demand from EV battery mass and tightening global crash-safety standards—ensure a durable demand base for hot-stamped body parts across both ICE and EV platforms. Global plants co-located with Hyundai-Kia overseas factories in India, Brazil, and China provide a structural order anchor even as OEMs expand offshore production."
+    "ko": "종속회사 명신산업은 텍사스 현지 공장을 통해 테슬라에 직납하는 구조를 갖추고 있으며, 사이버트럭에 이어 사이버캡까지 부품 공급 가능성이 거론된다. 핫스탬핑 강판은 부피가 크고 운송비 부담이 커 현지 생산 체제가 경쟁 우위로 작용할 수 있다. 테슬라의 생산 확대가 본격화될 경우 그룹 실적에 긍정적 영향을 줄 수 있는 구조다.",
+    "en": "Subsidiary Myoung Shin Industrial has a direct-supply structure to Tesla through its Texas-based plant, with potential for parts supply extending from the Cybertruck to the Cybercab. Because hot-stamped steel panels are bulky with high transport costs, local production capacity could serve as a competitive advantage. Should Tesla's production expand meaningfully, this structure could positively affect group earnings."
    }
   },
   {
    "title": {
-    "ko": "2026년 1분기 영업이익 반등과 부채비율 점진 개선",
-    "en": "Q1 2026 Operating Profit Rebound and Progressive Balance-Sheet Improvement"
+    "ko": "최근 분기 영업이익 개선 신호",
+    "en": "Signs of Operating Profit Improvement in Recent Quarters"
    },
    "body": {
-    "ko": "2025년 4분기 영업손실(-123억 원)에서 2026년 1분기 영업이익(+119억 원)으로의 반등은 원가 및 판관비 구조 개선 노력이 초기 성과를 내고 있음을 시사한다. 부채비율도 2022년 233.9%에서 2025년 166.2%로 4년 연속 하락해 재무 구조 방향성이 꾸준히 개선 추세에 있다. 영업활동 현금흐름이 2025년 1,049억 원을 유지해, 순손실 상황에서도 기초적인 현금 창출 능력이 보존되고 있다는 점은 사업 기초 체력 측면에서 의미 있는 신호다.",
-    "en": "The sequential swing from a KRW 12.3B operating loss in Q4 2025 to a KRW 11.9B operating profit in Q1 2026 indicates that cost and SG&A restructuring efforts are beginning to bear fruit. The debt ratio has declined for four consecutive years—from 233.9% (2022) to 166.2% (2025)—reflecting a consistent positive direction in balance-sheet structure. Operating cash flow of KRW 104.9B in 2025 confirms that despite the net loss, basic cash-generation capacity remains intact, a meaningful indicator of underlying operational resilience."
+    "ko": "2026년 2분기 영업이익은 355억원으로 최근 4개 분기(2025Q3~2026Q2) 구간 중 가장 높은 수치를 기록했다. 2025년 4분기의 영업손실 상태에서 2026년 1·2분기 연속으로 영업이익 흑자를 이어간 점도 주목할 부분이다. 다만 순이익 단위에서는 여전히 적자가 이어지고 있어 개선의 지속성은 추가 확인이 필요하다.",
+    "en": "Operating profit in 2026Q2 reached KRW 35.5bn, the highest level within the trailing four-quarter window (2025Q3-2026Q2). Notably, operating profit returned to positive territory in both 2026Q1 and Q2 following an operating loss in 2025Q4. Net income, however, remained in loss territory, so the durability of this improvement warrants further confirmation."
    }
   },
   {
    "title": {
-    "ko": "지주사 체제 하에서 수익·구조조정 사업 분리 경영 가능",
-    "en": "Holding Structure Enables Cleaner Separation Between Profitable and Turnaround Units"
+    "ko": "기술 경쟁력과 신기술 특허 확보",
+    "en": "Technological Competitiveness and New Patent Filings"
    },
    "body": {
-    "ko": "지주사 전환을 통해 핫스탬핑 차체 부품(명신산업 등)과 구조조정 대상(명신 등)을 분리해 각 사업부문의 책임경영 강화가 가능해졌으며, 부실 계열사 정리가 완료될 경우 연결 기준 비영업 손실 요인이 제거돼 영업이익과 순이익 간 괴리가 축소될 수 있다. 명신산업이 테슬라 등 글로벌 전기차 업체와의 핫스탬핑 부품 공급 관계를 유지하고 있어 전기차 시장이 회복 국면에 진입할 경우 그룹 전체 수익성 개선을 선도할 수 있다. 그룹이 추진 중인 1,300억 원 규모 자금 조달이 완료될 경우 명신 재건에 필요한 운영 자금이 확보돼 연결 손실 구조 개선의 속도가 빨라질 여지가 있다.",
-    "en": "The holding structure enables a cleaner separation between profitable units (hot-stamping body parts via Myungshin Industry) and turnaround candidates (Myungshin), facilitating subsidiary-level accountability; resolution of intra-group distressed assets would eliminate recurring non-operating loss contributors and close the gap between operating profit and net income. Myungshin Industry's ongoing supply relationship with Tesla and other global EV makers positions it to lead group profitability improvement when the EV demand cycle recovers. Successful completion of the group's ~KRW 130B fundraising would provide working capital for Myungshin's rebuilding, accelerating improvement in the consolidated loss structure."
+    "ko": "동사는 핫스탬핑 공정 관련 국내외 특허를 지속적으로 확보하고 있으며, 전기차 배터리 열폭주 차단 시스템 등 신기술 특허 출원을 통해 미래 모빌리티 시장 대응을 준비하고 있는 것으로 파악된다. 하이브리드 핫스탬핑 등 독자 공법을 바탕으로 국내 핫스탬핑 시장에서 선도적 위치를 유지해온 이력도 있다.",
+    "en": "The company continues to secure domestic and international patents related to the hot-stamping process, and is reportedly preparing for future mobility markets by filing new technology patents including an EV battery thermal-runaway prevention system. It also has a track record of maintaining a leading position in the domestic hot-stamping market based on proprietary processes such as hybrid hot stamping."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "자회사 명신의 그룹 유동성 블랙홀 리스크 지속",
-    "en": "Subsidiary Myungshin Continues as a Persistent Group-Level Liquidity Drain"
+    "ko": "특정 고객사 의존 리스크",
+    "en": "Customer Concentration Risk"
    },
    "body": {
-    "ko": "자회사 명신은 2019년 이후 6년 연속 적자이며 2024년 기준 영업손실 455억 원, 누적 결손금 838억 원에 달해 그룹 전체 유동성을 흡수하는 구조가 지속되고 있다. 전기차 위탁생산에서 스마트물류·자동화 설비로 사업을 전환하는 데 기존 차입금 상환과 신사업 투자 재원을 동시에 마련해야 하는 이중 자금 부담이 존재한다. 명신산업(코스피 상장 자회사)까지 그룹 자금 지원에 동원된 상황에서, 신사업 수주가 지연될 경우 그룹 전체의 연결 손실이 장기화될 위험이 있다.",
-    "en": "Myungshin has been loss-making for six consecutive years since 2019, posting a KRW 45.5B operating loss and KRW 83.8B accumulated deficit as of 2024, structurally absorbing group-wide liquidity. Its pivot from EV contract manufacturing to smart logistics entails the double burden of repaying existing debt and funding new business investment simultaneously. With listed subsidiary Myungshin Industry also mobilized for group support, delayed new contract wins risk prolonging consolidated losses across the group."
+    "ko": "핵심 종속회사 명신산업은 북미 전기차 고객사, 특히 테슬라향 매출 비중이 약 60%에 달하는 것으로 파악된다. 테슬라의 판매 둔화나 생산 계획 변경이 발생할 경우 그룹 실적에 직접적인 영향을 줄 수 있는 구조다. 사이버캡의 초기 생산 속도가 더딘 것으로 전해지는 점도 향후 물량 확대 시점의 불확실성을 키운다.",
+    "en": "Core subsidiary Myoung Shin Industrial reportedly derives about 60% of its revenue from North American EV customers, particularly Tesla. Any slowdown in Tesla sales or changes to its production plans could directly affect group earnings. Reports that Cybercab's initial production pace has been slow also add uncertainty to the timing of future volume expansion."
    }
   },
   {
    "title": {
-    "ko": "매출 감소와 마진 압축의 구조적 동시 진행",
-    "en": "Structural Coexistence of Revenue Decline and Margin Compression"
+    "ko": "마진 훼손과 적자 지속",
+    "en": "Margin Erosion and Continued Losses"
    },
    "body": {
-    "ko": "매출은 2023년 2조 817억 원에서 2025년 1조 7,406억 원으로 2년간 16.4% 감소했고, 같은 기간 영업이익률은 8.4%에서 1.8%로 급락해 수익성 회복이 시급하다. 미국 자동차 관세 정책이 현대·기아차의 해외 생산 확대를 가속할 경우 국내 부품 협력사의 공급 물량은 추가로 감소할 수 있어 매출 성장성이 구조적으로 제한된다. 매출 감소 국면에서 고정비 부담으로 인한 역(逆) 영업레버리지가 작동하고 있어, 원가 절감 노력만으로 2023년 수준의 마진을 단기간에 복원하기는 구조적으로 어렵다.",
-    "en": "Revenue fell 16.4% from KRW 2.08T in 2023 to KRW 1.74T in 2025, while the operating margin collapsed from 8.4% to 1.8%, making profitability recovery urgent. Should US tariff policy accelerate Hyundai-Kia's offshore production push, domestic parts demand would decline further, structurally capping revenue growth prospects. Negative operating leverage—fixed costs against a shrinking revenue base—means cost-cutting alone is unlikely to restore 2023-level margins in the near term."
+    "ko": "2025년 지배주주순손실이 -1,086억원으로 적자전환했고, 최근 4개 분기 누적으로도 순손실이 이어지고 있다. 관세 증가와 상각비 부담 등 비용 요인이 수익성 훼손의 주된 원인으로 지목되고 있다. 2022~2023년 7~8%대였던 영업이익률이 2025년 1.8%까지 크게 낮아진 점도 이익 체력 저하를 보여준다.",
+    "en": "The 2025 net loss attributable to owners swung to KRW -108.6bn, and losses have continued on a trailing four-quarter basis. Rising tariffs and depreciation burdens have been cited as key factors behind the profitability erosion. The operating margin, which stood at 7-8% in 2022-2023, fell sharply to 1.8% in 2025, underscoring the decline in earnings power."
    }
   },
   {
    "title": {
-    "ko": "지배구조 불확실성과 소액주주 신뢰 훼손",
-    "en": "Governance Uncertainty and Eroded Minority Shareholder Trust"
+    "ko": "지주회사 구조상 이익 배분 왜곡",
+    "en": "Profit Allocation Distortion from Holding Structure"
    },
    "body": {
-    "ko": "2024년 최대주주 심원과의 합병 과정에서 합병비율이 오너 일가에 유리하다는 소액주주 이의 제기가 이어졌으며, 이는 시장 신뢰 훼손으로 이어졌다. 향후 엠에스경주의 명신산업 편입이 공식화될 경우 적자 사업 부문을 수익성 있는 상장 자회사에 전가한다는 비판이 재점화될 수 있다. 지주사 전환 이후에도 계열사 간 자금 이동·부동산 담보 사모사채 발행이 이어지면서 지배구조 불확실성이 주가 할인 요인으로 지속될 가능성이 있다.",
-    "en": "The 2024 Shimwon merger drew significant minority shareholder objections over an allegedly founding-family-favorable merger ratio, damaging market trust. Should the potential transfer of MS Gyeongju into listed Myungshin Industry be formalized, concerns about shifting loss-making assets into a profitable listed entity could reignite. Post-restructuring, continued intra-group cash transfers and real-estate-backed private bond issuances sustain governance uncertainty as a persistent valuation discount factor."
+    "ko": "연결재무제표상 비지배지분(NCI) 비중이 지배주주 지분보다 큰 편으로, 2025년 자본총계 6,374억원 중 비지배지분이 4,541억원에 달한다. 이는 명신산업 등 종속회사에 대한 지분율이 제한적이라는 의미로, 연결 전체 실적 개선이 지배주주 귀속 실적으로 온전히 전이되지 않을 가능성이 있다.",
+    "en": "In the consolidated financial statements, non-controlling interests exceed the owners' equity portion, with NCI reaching KRW 454.1bn out of total equity of KRW 637.4bn in 2025. This reflects a relatively limited ownership stake in subsidiaries such as Myoung Shin Industrial, meaning improvements in overall consolidated results may not fully translate into results attributable to owners."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "유동성·재무 리스크",
-    "en": "Liquidity and Financial Risk"
+    "ko": "고객 편중 리스크",
+    "en": "Customer Concentration Risk"
    },
    "body": {
-    "ko": "그룹은 오너 일가 지분·부동산을 담보로 약 1,300억 원 규모 사모사채 발행을 추진 중이며, 조달 실패 시 명신의 신사업 전환이 차질을 빚고 그룹 전체 재무 부담이 가중될 수 있다. 명신산업이 발행한 교환사채(EB)의 교환청구 기간 개시로 지분 희석 가능성이 잠재 변수로 남아 있다. 연결 기준 총부채가 1조 595억 원 수준에서 유지되는 가운데 이자 비용이 영업이익 회복을 상쇄하는 구조가 지속될 수 있다.",
-    "en": "The group is pursuing ~KRW 130B in private-placement bonds secured against founding-family stakes and affiliate real estate; failure to raise this capital would disrupt Myungshin's new business transition and compound group-wide financial strain. The commencement of the exchangeable bond conversion period for investor Maison LLC introduces latent dilution risk for Myungshin Industry shareholders. With consolidated total liabilities remaining near KRW 1.06T, ongoing interest expense risks offsetting operating profit improvement."
+    "ko": "명신산업의 매출은 현대차·기아와 테슬라를 중심으로 한 북미 전기차 고객사에 집중되어 있다. 특정 고객사의 생산 조정이나 수요 변화가 그룹 전체 실적에 미치는 영향이 크다.",
+    "en": "Myoung Shin Industrial's sales are concentrated among Hyundai/Kia and North American EV customers centered on Tesla. Production adjustments or demand shifts at a specific customer can have an outsized impact on overall group results."
    }
   },
   {
    "cat": {
-    "ko": "대외 업황 리스크 (미국 관세·전기차 수요 둔화)",
-    "en": "External Industry Risk (US Tariffs & Prolonged EV Demand Softness)"
+    "ko": "통상·관세 리스크",
+    "en": "Trade and Tariff Risk"
    },
    "body": {
-    "ko": "미국의 자동차 관세 정책이 현대·기아차의 국내 생산·수출 비중을 추가로 축소할 경우 동사 차체 부품의 국내 공급 수요도 연동해 감소할 수 있다. 전기차 캐즘의 장기화로 명신산업의 테슬라 향 핫스탬핑 부품 수요 회복이 지연될 경우, 그룹 전체의 수익성 개선 시점도 밀릴 수 있다. 중국산 전기차가 국내 수입차 시장 점유율을 빠르게 확대해 현대·기아차 국내 판매를 잠식하면 국내 부품 협력사 전반에 부정적 파급 효과가 전달된다.",
-    "en": "Should US tariff policy further reduce Hyundai-Kia's domestic production and export share, demand for MS Autotech's domestically supplied body parts would decline in tandem. Prolonged EV demand softness could defer the recovery of Myungshin Industry's Tesla-related hot-stamping volumes, pushing back the group-wide earnings recovery timeline. Accelerated Chinese EV market-share gains in South Korea eroding Hyundai-Kia domestic volumes would transmit negatively to Korean body-parts suppliers broadly."
+    "ko": "미국 관세 정책 변화가 최근 종속회사 실적 악화의 주요 원인으로 지목된 바 있다. 향후 관세 정책 방향에 따라 원가 부담이 추가로 확대되거나 완화될 수 있다.",
+    "en": "Changes in US tariff policy have been cited as a major factor behind recent deterioration in subsidiary results. Future cost burdens could expand or ease depending on the direction of tariff policy."
    }
   },
   {
    "cat": {
-    "ko": "신사업 전환 실행 리스크 (명신 스마트물류·자동화 설비)",
-    "en": "Business Transformation Execution Risk (Myungshin Smart Logistics & Automation)"
+    "ko": "지주회사-자회사 구조 리스크",
+    "en": "Holding-Subsidiary Structural Risk"
    },
    "body": {
-    "ko": "명신의 스마트물류·자동화 설비 사업은 기존 전기차 위탁생산과 전혀 다른 업종으로, 경쟁력 확보 및 초기 계약 수주까지 상당한 시간이 소요될 수 있다. 군산 공장 인프라가 신사업에 최적화돼 있는지, 재무적 여력이 소진되기 전에 고객 확보가 가능한지가 핵심 불확실성이다. 신사업 전환이 지연될 경우 명신의 손실이 계속 연결에 유입돼 그룹 전체의 순이익 회복 시점이 더 미뤄질 위험이 있다.",
-    "en": "Myungshin's new smart-logistics and automation equipment business is an entirely different sector from EV contract manufacturing, and establishing competitive capability and winning initial contracts could require considerable time. Whether Gunsan plant infrastructure is well-suited to the new business and whether customer acquisition can occur before financial resources are exhausted remain key uncertainties. Delayed execution would continue feeding Myungshin losses into the consolidated P&L, pushing back the group-level net-profit recovery timeline."
+    "ko": "지주회사 체제 전환 이후 종속회사 실적이 연결재무제표에 반영되는 과정에서 비지배지분 비중이 크게 나타나고 있다. 계열사 간 자금·자원 배분 방식이나 지배구조 변화가 지배주주 귀속 실적에 추가적인 변동성을 줄 수 있다.",
+    "en": "Since converting to a holding-company structure, a substantial non-controlling interest portion appears when subsidiary results are reflected in the consolidated financial statements. Changes in intra-group capital and resource allocation or governance structure could introduce additional volatility to results attributable to owners."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 초·중순",
-    "en": "Early–mid August 2026"
+    "ko": "2026년 10월 하순",
+    "en": "Late October 2026"
    },
    "what": {
-    "ko": "2026년 2분기 연결 실적 발표: 영업이익 개선 기조 지속 여부와 지배주주 귀속 순손실 규모 축소 여부가 명신 연결 손실 구조의 개선 진도를 가늠하는 척도다.",
-    "en": "Q2 2026 consolidated earnings release: whether operating profit recovery is sustained and the attributable net loss narrows will gauge the pace of improvement in Myungshin's consolidated loss contribution."
+    "ko": "테슬라의 다음 분기 실적 발표에서 사이버캡 생산 램프업 속도와 텍사스 공장 가동 현황을 확인할 필요가 있다.",
+    "en": "Tesla's next quarterly earnings release should be checked for the pace of Cybercab production ramp-up and the status of Texas plant operations."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
+   },
+   "what": {
+    "ko": "엠에스오토텍의 2026년 3분기 분기보고서 공시를 통해 관세·비용 부담 완화 여부와 영업이익 개선 흐름의 지속성을 확인해야 한다.",
+    "en": "MS Autotech's 2026 Q3 quarterly report disclosure should be checked for whether tariff and cost burdens have eased and whether the operating profit improvement trend continues."
    }
   },
   {
    "when": {
     "ko": "2026년 하반기 중",
-    "en": "H2 2026"
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "명신 스마트물류·자동화 설비 신규 수주 공시: 계약 규모와 고객사 공개가 신사업 전환의 실행력을 검증하는 첫 번째 이정표가 된다.",
-    "en": "Official new order announcements for Myungshin's smart-logistics or automation equipment business: contract size and customer quality will be the first concrete milestone validating the business-turnaround timeline."
+    "ko": "명신산업 텍사스 2공장의 가동률 추이와 테슬라향 물량 변화를 통해 북미 전기차 고객사 매출 비중 변화를 점검할 필요가 있다.",
+    "en": "The utilization rate trend at Myoung Shin Industrial's Texas plant and changes in Tesla-bound volumes should be monitored to track shifts in North American EV customer revenue exposure."
    }
   },
   {
    "when": {
-    "ko": "2026년 연중 수시",
-    "en": "Rolling 2026"
+    "ko": "2027년 2월경",
+    "en": "Around February 2027"
    },
    "what": {
-    "ko": "그룹 사모사채(약 1,300억 원) 발행 완료 공시: 자금 조달 성공 여부가 명신 운영 지속성과 그룹 유동성 안정의 최우선 점검 지표다.",
-    "en": "Disclosure of completed ~KRW 130B private-bond issuance: successful capital raising is the single most critical indicator of Myungshin's operational continuity and group liquidity stability."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기~2027년 초",
-    "en": "H2 2026–early 2027"
-   },
-   "what": {
-    "ko": "엠에스경주의 명신산업 편입 계획 관련 추가 공시: 편입이 공식화될 경우 명신산업 소수주주에 대한 재무 부담 전이 가능성을 면밀히 점검할 필요가 있다.",
-    "en": "Disclosure on the potential transfer of MS Gyeongju into KOSPI-listed Myungshin Industry: if formalized, the financial burden implications for Myungshin Industry minority shareholders warrant close scrutiny."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기 지속 모니터링",
-    "en": "Ongoing H2 2026"
-   },
-   "what": {
-    "ko": "미국 자동차 관세 최종 협상 결과 및 현대·기아차 국내 생산 계획 업데이트: 관세 수준과 현지 생산 확대 속도가 동사 국내 공장의 부품 공급 물량에 직결되는 핵심 변수다.",
-    "en": "Final US auto tariff developments and Hyundai-Kia domestic production guidance updates: tariff levels and the pace of local-content expansion are the most direct external determinants of MS Autotech's Korean plant order volumes."
+    "ko": "명신산업의 2026년 연결 잠정실적 공시 시점에 관세 영향이 얼마나 반영됐는지, 연간 영업이익률 회복 여부를 확인할 수 있다.",
+    "en": "At the time of Myoung Shin Industrial's preliminary 2026 consolidated results disclosure, the extent of tariff impact and whether the annual operating margin has recovered can be assessed."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "엠에스오토텍은 핫스탬핑 독자 기술과 현대·기아차와의 장기 협력이라는 사업 기초 위에, 2024년 지주사 전환과 자회사 명신의 전기차 위탁생산 실패 후유증이 중첩돼 2025년 지배주주 귀속 순손실 749억 원을 기록했다. 매출은 2년간 16% 이상 감소하고 영업이익률도 8%대에서 1%대로 급락해 수익성 회복이 시급하나, 2026년 1분기 영업이익의 전분기 대비 흑자 전환은 원가 구조 개선의 초기 신호로 해석할 수 있다. 그러나 순손실 지속의 근본 원인인 명신의 신사업 전환이 가시적 성과를 내기 전까지는 그룹 유동성 부담과 비영업 손실이 연결 실적의 불확실성을 지속 높일 것이다. 부채비율이 233.9%(2022년)에서 166.2%(2025년)로 점진 개선됐고 영업활동 현금흐름 1,049억 원이 기초 체력을 유지하고 있으나, 약 1,300억 원 규모 사모사채 발행 성패가 단기 재무 안정성의 관건이다. 지배구조 논란(합병비율 이슈)과 명신 신사업 전환 지연 가능성이 하방 요인으로, 핫스탬핑 수요 구조적 확대와 전기차 시장 회복 시 명신산업을 통한 수혜 가능성이 상방 요인으로 작용하는 복합 국면으로, 구조조정의 실행력 여부가 중장기 방향성을 결정할 것이다.",
-   "en": "MS Autotech's operational foundation—proprietary hot-stamping technology and entrenched Hyundai-Kia relationships—is overlaid by the dual burden of a 2024 holding-company restructuring and fallout from subsidiary Myungshin's failed EV contract manufacturing, resulting in a KRW 74.9B attributable net loss in 2025. Revenue fell more than 16% over two years and operating margins collapsed from the 8% range to 1.8%, making profitability recovery urgent; however, Q1 2026's sequential return to positive operating profit offers an early cost-restructuring signal. Until Myungshin's new smart-logistics business generates tangible contract wins, group liquidity pressures and non-operating losses will continue to elevate earnings uncertainty. The debt ratio has progressively improved from 233.9% (2022) to 166.2% (2025), and operating cash flow of KRW 104.9B in 2025 defends basic financial capacity, but the success or failure of the group's ~KRW 130B private-bond fundraising is the most critical near-term financial checkpoint. Governance controversy—over the merger ratio—and execution risk on Myungshin's new business serve as downside factors, while structural growth in hot-stamping demand and the EV-cycle recovery optionality via Myungshin Industry represent upside factors; the ultimate medium-to-long-term direction will be determined by how effectively the group executes on its restructuring agenda."
+   "ko": "엠에스오토텍은 2024년 지주회사 체제로 전환한 이후, 핵심 종속회사 명신산업을 통해 실질적인 자동차 차체부품 사업을 영위하고 있으며, 실적은 명신산업의 테슬라향 공급 물량과 전기차 업황에 크게 좌우되는 구조를 보인다. 2022~2023년 두 자릿수에 가까운 영업이익률을 기록했던 것과 달리, 2024년 이후 매출 감소와 마진 축소가 이어지며 2025년에는 지배주주순손실로 적자전환했다. 최근 4개 분기(2025Q3~2026Q2)에서는 2026년 2분기 영업이익이 구간 내 최고치를 기록하는 등 일부 개선 조짐이 나타났지만, 순이익 기준으로는 여전히 적자가 지속되고 있다. 관세 부담과 상각비 증가 등 비용 요인이 수익성 훼손의 주된 원인으로 지목되며, 이러한 요인의 완화 여부가 향후 실적 방향을 가를 핵심 변수로 보인다. 테슬라 사이버캡의 생산 램프업 속도, 텍사스 공장 가동률, 관세 정책 변화 등이 앞으로 확인해야 할 주요 지표다. 지주회사 구조상 비지배지분 비중이 커, 연결 전체 실적과 지배주주 귀속 실적 간의 괴리를 함께 살펴볼 필요가 있다.",
+   "en": "Since converting to a holding-company structure in 2024, MS Autotech has operated its substantive auto body-part business through core subsidiary Myoung Shin Industrial, with results heavily tied to Tesla-bound shipment volumes and the broader EV cycle. In contrast to the near double-digit operating margins recorded in 2022-2023, revenue declines and margin compression since 2024 led to a swing into a net loss attributable to owners in 2025. Within the trailing four quarters (2025Q3-2026Q2), some improvement signs emerged, with 2026Q2 operating profit reaching the highest level in the window, though net losses have persisted. Tariff burdens and rising depreciation have been cited as primary drivers of profitability erosion, and whether these factors ease will be a key variable for future earnings direction. The pace of Tesla Cybercab production ramp-up, Texas plant utilization rates, and tariff policy changes are important indicators to monitor going forward. Given the holding structure's substantial non-controlling interest, the gap between consolidated results overall and results attributable to owners also warrants continued attention."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A123040&MenuYn=Y&NewMenuID=105&stkGb=701",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A123040",
-  "https://m.irgo.co.kr/ir-room/2610",
-  "https://www.k5.co.kr/stock/123040",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Finance.asp?pGB=1&gicode=A123040&cID=&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
-  "https://www.valueline.co.kr/finance/mri/123040",
-  "https://finance.finup.co.kr/Stock/123040",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=330998",
   "https://ssl.pstatic.net/imgstock/upload/research/company/1618531331725.pdf",
-  "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202103041406535760106693&lcode=00",
-  "http://www.hanuribiz.com/news/articleView.html?idxno=32488",
+  "https://plus.hankyung.com/apps/newsinside.view?aid=202406247586i&category=&sns=y",
+  "https://mfinance.finup.co.kr/Stock/123040",
+  "https://m.irgo.co.kr/IR-COMP/123040/%EC%97%A0%EC%97%90%EC%8A%A4%EC%98%A4%ED%86%A0%ED%85%8D-IR-PAGE",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A123040",
+  "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/UldsYUMrUkMza2R6eDgra1hvRVhDQT09/company_nm/(%EC%A3%BC)%EC%97%A0%EC%97%90%EC%8A%A4%EC%98%A4%ED%86%A0%ED%85%8D",
   "https://www.ms-global.com/newsletter/01_03.html",
-  "https://paxnetnews.com/articles/65985",
-  "https://moneypie.net/wiki/v/엠에스오토텍",
-  "https://www.seoulfn.com/news/articleView.html?idxno=311975",
-  "https://www.edaily.co.kr/News/Read?newsId=01689206638893512&mediaCodeNo=257",
-  "https://www.topdaily.kr/articles/98476",
-  "https://biz.newdaily.co.kr/site/data/html/2024/07/04/2024070400195.html"
+  "https://www.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=111128",
+  "https://www.etnews.com/20170329000244",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=123040",
+  "https://www.jobkorea.co.kr/company/1768749",
+  "https://m.irgo.co.kr/IR-COMP/179290",
+  "https://m.thinkpool.com/item/123040",
+  "https://www.investing.com/equities/ms-autotech-co-ltd-earnings",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A123040&MenuYn=Y&NewMenuID=105&stkGb=701",
+  "https://thevc.kr/msautotech",
+  "https://www.thelec.kr/news/articleView.html?idxno=15397",
+  "https://dealsite.co.kr/articles/128992/068026"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "123040",
  "name": "엠에스오토텍",
  "name_en": "MS AUTOTECH COMPANY, LIMITED",
@@ -233,9 +223,9 @@
   "자동차"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:58",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:08",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 1725,
-   "mcap": 0.108,
+   "price": 1714,
+   "mcap": 0.1073,
    "shares": 62628299,
    "total_shares": 62628299,
    "wavg_shares": 55002383,
    "per": null,
    "eps": -1016,
-   "pbr": 0.4873,
+   "pbr": 0.4842,
    "bps": 3540,
    "roe_ttm": -30.5,
    "ttm_window": "2025Q3~2026Q2",

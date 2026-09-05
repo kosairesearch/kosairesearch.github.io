@@ -1,229 +1,220 @@
 {
  "title": {
-  "ko": "디지털금융 플랫폼 회복, STO·스테이블코인 도약 전야",
-  "en": "Digital Finance Platform Rebounding—On the Eve of STO and Stablecoin Growth"
+  "ko": "흑자전환 이룬 핀테크, STO 신사업이 관전 포인트",
+  "en": "Fintech Turnaround Eyes STO as Next Growth Driver"
  },
  "lead": {
-  "ko": "스마트 금융 플랫폼 선두 기업 핑거는 2025년 매출 약 916억원·영업흑자 전환으로 사이클 저점을 통과했지만, Q4 2025·Q1 2026 연속 영업적자, 500억원 규모 CB 대규모 발행에 따른 지분 희석 우려, STO 법제화 지연이 수익성 정상화 일정에 실질적인 불확실성을 더하고 있다.",
-  "en": "Finger, Korea's leading smart financial platform provider, passed its cyclical trough with approximately ₩91.6 billion in revenue and a return to operating profit in 2025, but consecutive operating losses in Q4 2025 and Q1 2026, dilution risk from a ₩50 billion convertible bond, and delayed STO legislation add material uncertainty to the profitability normalization timeline."
+  "ko": "핑거는 2025년 연간 영업이익 흑자전환에 성공했으나 분기별 실적 편차가 크고, 토큰증권(STO)·스테이블코인 인프라 신사업의 상용화 시점이 향후 주가 및 펀더멘털의 핵심 변수로 부상하고 있다.",
+  "en": "Finger returned to annual operating profit in 2025, but quarterly earnings remain volatile, and the commercialization timeline for its new security token offering (STO) and stablecoin infrastructure business has become the key variable for its fundamentals."
  },
  "keypoints": [
   {
-   "ko": "2025년 연매출 약 916억원(전년 716억원 대비 +28%)으로 4년치 최고치 경신·영업흑자(OPM 1.6%) 전환 성공",
-   "en": "2025 revenue of approximately ₩91.6 billion (+28% YoY from ₩71.6 billion in 2024) hit a four-year high, with a successful return to operating profit at an OPM of 1.6%"
+   "ko": "2025년 연결 매출 916억원, 영업이익 14.7억원으로 2024년 영업손실에서 흑자전환",
+   "en": "2025 consolidated revenue reached KRW 91.6 billion with operating profit of KRW 1.47 billion, turning around from the 2024 operating loss"
   },
   {
-   "ko": "Q3 2025 이후 수익성 불안정: Q4 2025(영업손실 3.5억)·Q1 2026(영업손실 3.3억) 연속 적자 재현으로 연간 이익 회복의 가시성이 핵심 과제",
-   "en": "Profitability instability post-Q3 2025: consecutive operating losses in Q4 2025 (₩-350mn) and Q1 2026 (₩-326mn) make the visibility of full-year profit recovery the central challenge"
+   "ko": "2026년 2분기 지배주주순이익이 67.2억원으로 급증했으나 영업이익은 3.7억원 수준에 그쳐 비영업적 요인의 영향이 큰 것으로 추정",
+   "en": "Q2 2026 net income attributable to owners surged to KRW 6.72 billion while operating profit stayed around KRW 0.37 billion, suggesting a large non-operating contribution"
   },
   {
-   "ko": "2026년 4월 문페이·성호전자 컨소시엄의 약 1,100억원 전략 투자 계약 공시 — 글로벌 스테이블코인·크립토 결제 인프라와의 사업 융합 가능성 부각",
-   "en": "April 2026 disclosure of approximately ₩110 billion in strategic investment by a Moonpay and Sungho Electronics consortium—highlighting potential integration with global stablecoin and crypto payment infrastructure"
+   "ko": "전자증권법·자본시장법 개정안이 2026년 1월 국회를 통과해 STO 제도화 기반이 마련됐으며, 시행은 2027년 1월로 예정",
+   "en": "Amendments to the Electronic Securities Act and Capital Markets Act passed the National Assembly in January 2026, laying the legal groundwork for STO, with implementation slated for January 2027"
   },
   {
-   "ko": "500억원 사모 전환사채(전환가액 12,509원) 발행으로 최대 42.49% 지분 희석 잠재 리스크 내재",
-   "en": "A ₩50 billion private CB (conversion price ₩12,509) creates a latent dilution risk of up to 42.49% of the current share base"
+   "ko": "2026년 4월 500억원 규모 사모 전환사채 발행을 결정해 최대 42.49%의 잠재 희석 물량이 존재",
+   "en": "A KRW 50 billion private convertible bond issuance decided in April 2026 carries potential dilution of up to 42.49% of pre-issue shares"
   },
   {
-   "ko": "STO 사업 수익화는 회사 자체 가이던스 기준 '2026년 하반기 또는 2027년'으로 제시 — 법제화 진행 속도가 신사업 가치 실현의 결정 변수",
-   "en": "Company guidance places STO revenue materialization at 'H2 2026 or 2027 at the earliest'—the pace of legislation is the decisive variable for new business value realization"
+   "ko": "네이버클라우드·신한DS·현대요트 등과 STO·Web3 관련 업무협약을 잇달아 체결하며 사업 확장을 추진",
+   "en": "The company has signed a series of STO/Web3-related MOUs with partners including Naver Cloud, Shinhan DS, and Hyundai Yacht"
   }
  ],
  "business": {
-  "ko": "핑거는 2000년 설립된 B2B·B2C 핀테크 전문기업으로, 금융기관에 스마트 뱅킹 플랫폼 구축·운영 서비스를 제공하는 것이 핵심 사업이다. 주력인 플랫폼 사업부는 상장 전후 공개 자료 기준으로 전체 매출의 80% 후반대를 차지하며, 오케스트라(Orchestra) 모바일뱅킹 플랫폼과 BIG 스크래핑 시스템이 핵심 솔루션이다. 고객사는 신한·우리·국민·농협·하나은행 등 5대 시중은행을 비롯해 IBK기업은행, OK저축은행, 롯데캐피탈 등 1·2금융권 전반에 걸쳐 있어 레퍼런스 기반이 넓다. 금융기관이 모바일·인터넷뱅킹 서비스를 구현할 때 핑거 플랫폼 위에서 서비스를 운영하는 방식으로, 직원이 해당 금융기관에 상주하며 운영을 지원하는 전담반 모델도 병행한다. 핀테크 부문에서는 2017년 출시한 해외송금 서비스 렐레트랜스퍼(ReLe Transfer), 마이데이터·대안신용평가를 담당하는 자회사 핀테크, 소액대출 플랫폼 렌딩사이언스 등이 B2C 수익원을 보완한다. 2023년에는 클라우드 기반 중소기업 전용 ERP 솔루션 '파로스(Pharos)'를 출시하며 기업용 SaaS 시장에 진출, 반복 매출 구조 다변화를 추구하고 있고, '핑거페이' 론칭과 2026년 4월 한패스(Hanpass)와의 해외송금 MOU 체결로 수수료 기반 수익 기반도 강화하고 있다. 해외 사업은 2017년 설립한 베트남 법인 핑거비나를 중심으로 동남아·대만 진출 금융기관 대상 모바일뱅킹 솔루션을 제공하는 방식으로 전개된다. 2023년부터는 STO·CBDC·블록체인을 담당하는 전략사업단을 구성하고, MPC 기반 키관리 솔루션과 특허 NFT 거래 플랫폼 구축 경험을 바탕으로 디지털자산 인프라 시장 진입을 준비 중이다.",
-  "en": "Finger is a B2B and B2C fintech specialist established in 2000, with smart banking platform construction and operation for financial institutions as its core business. The platform division, which historically has accounted for roughly 87% of total revenue based on pre-listing and early-listing disclosures, centers on the Orchestra mobile banking platform and the BIG scraping system. The client roster spans all five major commercial banks—Shinhan, Woori, Kookmin, NH, and Hana—as well as IBK Industrial Bank, OK Savings Bank, Lotte Capital, and a broad array of second-tier lenders, providing a wide reference base. Financial institutions run their mobile and internet banking services on Finger's platform, with Finger staff frequently embedded on-site at client institutions under a dedicated team model. On the fintech side, the ReLe Transfer overseas remittance service (launched 2017), the Fintech Co. subsidiary handling MyData and alternative credit scoring, and the Lending Science P2P lending platform together supplement B2C revenue. In 2023, Finger entered the enterprise SaaS market with Pharos, a cloud-based ERP solution for SMEs, and has been building fee-based payment revenue through FingerPay and a strategic overseas remittance MOU with Hanpass signed in April 2026. Overseas operations are anchored by the Vietnam subsidiary Finger Vina, which supports financial institutions expanding into Southeast Asia and Taiwan. Since 2023, a dedicated strategic business unit has been assembled for STO, CBDC, and blockchain initiatives, leveraging experience from building a patent NFT trading platform and MPC-based key management solutions to prepare for digital asset infrastructure markets."
+  "ko": "핑거는 2000년 설립된 종합 핀테크 기업으로, 은행 등 제1·2금융권을 대상으로 스마트 금융 플랫폼을 구축·운영하는 것이 핵심 사업이다. 위즈리포트에 따르면 핀테크 기술과 금융업무 노하우를 중심으로 다양한 금융기관에 스마트 금융 플랫폼을 제공하고 있으며, 플랫폼 사업이 전체 매출의 68.4%를 차지한다. 세부적으로는 풀뱅킹, 금융포탈, 오픈뱅킹, 글로벌뱅킹 등 플랫폼 관련 매출이 큰 비중을 이루고, 그 외 컨설팅, 수수료·CMS·빅데이터 중개·해외송금, 보이스피싱방지 등 솔루션 매출이 나머지를 구성한다. 금융시장에서 축적된 업무경험과 기술력을 기반으로 이커머스, 모빌리티 등 비금융시장으로도 페이·결제·Open API 서비스를 확장하고 있다. 최근에는 토큰증권(STO)과 스테이블코인 인프라, 모바일신분증 등 신사업 영역으로 사업 다각화를 추진 중이며, 위즈리포트는 STO 관련 법 개정으로 규제 불확실성이 해소되며 금융기관 대상 STO 플랫폼 사업을 본격 추진하고 모바일신분증 사업으로 주요 시중은행과 협력을 확대 중이라고 밝혔다. 신사업 관련해서는 네이버클라우드와 클라우드 기반 STO 통합 서비스 제공을 위한 업무협약을 체결했고, 신한DS와도 Web3 디지털 자산 시장 공략을 위한 협력을 진행했으며, 현대요트와는 해양 레저 실물자산 기반 STO 공동사업을 위한 업무협약을 맺었다. 경쟁 구도상 핑거는 블록체인 기술을 보유한 핀테크 기업으로 분류되며, 유사한 STO 관련 인프라 기업으로 갤럭시아머니트리, 아이티센, 케이엘넷 등이 함께 거론된다. 고객 기반은 여전히 국내 은행 및 제2금융권이 중심이나, 최근 비금융권 진출과 신사업 파트너십으로 매출처 다변화를 모색하고 있다.",
+  "en": "Founded in 2000, Finger is a comprehensive fintech company whose core business is building and operating smart financial platforms for banks and other first- and second-tier financial institutions. According to WiseReport, the company provides smart financial platforms to various financial institutions based on its fintech technology and banking expertise, with the platform business accounting for 68.4% of total revenue. In detail, platform-related revenue from full banking, financial portals, open banking, and global banking makes up the largest share, while the remainder consists of consulting, fees, CMS, big-data brokerage, overseas remittance, and solutions such as voice-phishing prevention. Building on accumulated experience and technology in the financial market, the company has also expanded pay, payment, and Open API services into non-financial markets such as e-commerce and mobility. More recently, Finger has been diversifying into new business areas including security token offerings (STO), stablecoin infrastructure, and mobile IDs; WiseReport noted that regulatory uncertainty around STO has eased following legal amendments, allowing the company to actively pursue STO platform business for financial institutions and expand cooperation with major commercial banks on mobile ID projects. On the new business front, Finger signed an MOU with Naver Cloud for a cloud-based integrated STO service, cooperated with Shinhan DS on Web3 digital asset market initiatives, and signed an MOU with Hyundai Yacht for a marine-leisure real-asset STO joint business. Competitively, Finger is classified as a fintech firm with blockchain technology, often mentioned alongside similar STO-infrastructure names such as Galaxia Money Tree, ITSC, and KL-Net. Its customer base remains centered on domestic banks and secondary financial institutions, though it is seeking to diversify revenue sources through non-financial-sector expansion and new business partnerships."
  },
  "earnings": {
-  "ko": "2022년은 연매출 약 901억원·OPM 6.0%(영업이익 약 54억원)로 최근 4개년 중 이익 체력이 가장 견조했던 시기다. 2023년에는 매출이 약 831억원으로 소폭 줄었고 OPM이 4.4%(영업이익 약 37억원)로 낮아졌으나 흑자 기조를 유지했다. 2024년에는 매출이 약 716억원으로 전년비 14% 감소하며 영업이익이 약 -4.7억원으로 적자 전환했고, 영업활동 현금흐름도 약 10.9억원으로 크게 위축됐다. 2025년은 매출이 약 916억원(+28% YoY)으로 반등해 4년치 최고치를 기록했으며, 영업이익 약 14.7억원(OPM 1.6%)으로 흑자전환에 성공했다. 분기별로는 Q1(매출 206억·영업이익 2.0억)→Q2(218억·5.3억)→Q3(253억·10.9억)으로 뚜렷한 개선세가 이어졌으나, Q4(240억·영업손실 3.5억)에서 대형 프로젝트 비용 집중 등의 영향으로 급반전됐다. 2026년 1분기에도 매출 205억원·영업손실 3.3억원으로 부진이 지속되어, 계절성과 비용 구조 관리가 하반기 수익성 회복의 관건으로 부상했다. 영업활동 현금흐름(CFO)은 2025년 약 70억원으로 전년의 10.9억원 대비 크게 개선되어 실질적 현금 창출 능력은 회복 기미를 보인다. 부채비율은 2023년 25.8%→2024년 32.2%→2025년 41.7%로 지속 상승 중이며, 2026년 4월 CB 납입이 완료됨에 따라 추가 변화가 예상된다.",
-  "en": "In 2022, Finger posted revenue of approximately ₩90.1 billion and an operating margin of 6.0% (operating profit of approximately ₩54 billion), representing the strongest profitability of the past four years. Revenue slipped modestly to ₩83.1 billion in 2023 and the operating margin narrowed to 4.4% (approximately ₩36.7 billion in operating profit), though profitability remained sound. In 2024, revenue contracted sharply by approximately 14% to ₩71.6 billion, tipping operating income into a loss of approximately ₩-4.7 billion, while operating cash flow fell to only ₩1.1 billion. A strong recovery materialized in 2025, with revenue rebounding to approximately ₩91.6 billion (+28% YoY)—a four-year high—and operating income of approximately ₩14.7 billion (OPM 1.6%) marking a successful return to profit. Quarterly momentum was striking: Q1 (₩20.6bn revenue / ₩200mn op income) through Q2 (₩21.8bn / ₩528mn) to Q3 (₩25.3bn / ₩1.09bn) showed consistent improvement, before a sharp reversal in Q4 (₩23.9bn / ₩-350mn) attributed in part to concentrated project cost recognition. Weakness persisted into Q1 2026 (₩20.5bn revenue / ₩-326mn operating loss), putting cost structure and seasonality management at the center of the H2 2026 recovery narrative. Operating cash flow recovered significantly to approximately ₩7.0 billion in 2025 from ₩1.1 billion in 2024, confirming genuine improvement in underlying cash generation. The debt ratio has risen steadily from 25.8% in 2023 to 32.2% in 2024 and 41.7% in 2025, with further change expected following CB settlement in May 2026."
+  "ko": "핑거의 연간 실적은 뚜렷한 등락을 보였다. 2022년 매출 901억원, 영업이익 54.0억원(영업이익률 6.0%)을 기록한 뒤 2023년에는 매출이 831억원으로 줄었지만 영업이익 36.7억원(4.4%), 지배주주순이익 44.5억원으로 상대적으로 견조했다. 2024년에는 매출이 716억원으로 축소되고 영업손실 4.7억원(영업이익률 -0.7%)을 기록하며 적자로 전환했으나, 지배주주순이익은 8.0억원으로 소폭의 이익을 유지했다. 2025년에는 매출이 916억원으로 전년 대비 크게 늘고 영업이익도 14.7억원(1.6%)으로 다시 흑자전환했지만, 지배주주순이익은 2.96억원에 그쳐 영업이익 대비 낮은 수준을 보였다. 분기별로 보면 2025년 3분기 매출 253억원, 영업이익 10.9억원, 지배주주순이익 14.4억원으로 호조를 보였으나, 4분기에는 매출 239억원에 영업손실 3.5억원, 지배주주순이익은 -22.1억원의 적자를 기록하며 큰 편차를 드러냈다. 2026년 1분기에는 매출 205억원, 영업손실 3.3억원으로 다시 적자를 기록했으나 지배주주순이익은 0.49억원으로 근소한 흑자를 유지했다. 2026년 2분기에는 매출 226억원, 영업이익 3.7억원으로 본업은 소폭 개선됐지만, 지배주주순이익이 67.2억원으로 크게 늘어 영업이익 대비 이례적으로 큰 폭의 이익이 나타났는데, 이는 영업외 요인의 비중이 컸음을 시사한다. 이러한 흐름을 반영해 최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주순이익 합계는 60.0억원으로, 연간 단위로 보면 2025년 전체(2.96억원)보다 크게 확대된 모습이다. 현금흐름 측면에서는 2025년 영업활동현금흐름이 70.0억원으로 2024년(10.9억원)보다 크게 개선돼 손익상 이익 규모보다 현금창출력이 견조했음을 보여준다.",
+  "en": "Finger's annual results have shown clear swings. After posting revenue of KRW 90.1 billion and operating profit of KRW 5.4 billion (6.0% operating margin) in 2022, revenue declined to KRW 83.1 billion in 2023, though operating profit of KRW 3.67 billion (4.4%) and net income attributable to owners of KRW 4.45 billion remained relatively solid. In 2024, revenue contracted further to KRW 71.6 billion and the company swung to an operating loss of KRW 0.47 billion (-0.7% margin), while net income attributable to owners still posted a modest KRW 0.80 billion profit. In 2025, revenue rebounded sharply to KRW 91.6 billion and operating profit returned to positive territory at KRW 1.47 billion (1.6%), but net income attributable to owners was only KRW 0.30 billion, below the operating profit level. On a quarterly basis, Q3 2025 was strong with revenue of KRW 25.3 billion, operating profit of KRW 1.09 billion, and owners' net income of KRW 1.44 billion, but Q4 2025 reverted to an operating loss of KRW 0.35 billion on revenue of KRW 23.9 billion, with owners' net income swinging to a loss of KRW 2.21 billion, illustrating substantial quarterly volatility. Q1 2026 again posted an operating loss of KRW 0.33 billion on revenue of KRW 20.5 billion, though owners' net income remained marginally positive at KRW 0.05 billion. In Q2 2026, revenue of KRW 22.6 billion and operating profit of KRW 0.37 billion showed a modest improvement in the core business, but owners' net income jumped to KRW 6.72 billion, an unusually large figure relative to operating profit, suggesting a significant non-operating contribution. Reflecting this pattern, the sum of owners' net income over the trailing four quarters (Q3 2025 through Q2 2026) reached KRW 6.0 billion, notably larger than the full-year 2025 figure of KRW 0.30 billion. On the cash flow side, 2025 operating cash flow rose sharply to KRW 7.0 billion from KRW 1.09 billion in 2024, indicating cash generation was more robust than the reported profit figures alone would suggest."
  },
  "industry": {
-  "ko": "한국 금융시장은 코로나19 이후 비대면 채널 고도화 투자가 본격화되었고, 금융기관들의 디지털 전환 예산은 지속 확대되는 구조적 흐름을 보이고 있다. 제2금융권(저축은행·캐피탈·상호금융 등)의 플랫폼 도입 확산과 비금융 기업들의 내재 금융 서비스 구축 수요가 새로운 시장을 열고 있다. STO 시장은 22대 국회에서 여야가 경쟁적으로 관련 법안을 발의하는 등 법제화 기대감이 고조되어 있으며, 업계는 2026년 하반기 이후를 인프라 투자 개시의 현실적 기점으로 본다. 이재명 정부의 디지털자산 친화 정책(비트코인 현물 ETF 도입, 원화 스테이블코인 추진, ICO 허용 검토 등)은 가상자산 관련 인프라 수요 확대의 정책적 기반이 되고 있다. 핑거는 독립 핀테크로서 스마트 금융 플랫폼 분야에서 선도적 위치를 유지하고 있으나, 삼성SDS·LG CNS 등 대형 SI의 금융 역량 강화와 카카오페이·토스 등 빅테크의 기술 내재화가 경쟁 지형을 복잡하게 만들고 있다. 인터넷전문은행의 성장과 시중은행 앱의 지속적 고도화는 모바일 플랫폼 솔루션 수요를 안정적으로 유지시키는 구조적 배경이 된다. 규모가 작은 핀테크 스타트업과 비교할 때, 핑거가 쌓아온 금융기관 레퍼런스·특허 포트폴리오·운영 경험은 보수적인 금융권의 신규 솔루션 채택에 유리한 진입 장벽을 형성한다.",
-  "en": "The digital transformation of Korean financial institutions has accelerated since COVID-19, with financial institutions consistently expanding budgets for upgrading non-face-to-face digital channels. Adoption by second-tier financial entities such as savings banks, captive finance companies, and mutual finance cooperatives, alongside embedded finance initiatives by non-financial companies, is generating new sources of platform demand. STO legislation has gained strong momentum, with competing bills submitted by both major political parties in the 22nd National Assembly; the industry broadly expects a realistic market opening from H2 2026. The current administration's pro-digital-asset policy agenda—including Bitcoin spot ETF introduction, a won-denominated stablecoin program, and discussion of ICO permissions—is creating a favorable policy foundation for digital asset infrastructure demand. Finger maintains a leadership position among independent fintech platform providers, but large SI firms such as Samsung SDS and LG CNS and big-tech platforms including Kakao Pay and Toss are intensifying competition through in-house technology development. The continued growth of internet-only banks and ongoing app upgrades at commercial banks provide a structurally stable demand backdrop for mobile platform solutions. Relative to smaller fintech startups, Finger's accumulated financial institution reference base, patent portfolio, and 25-plus years of operational experience form meaningful entry barriers for conservative financial sector clients."
+  "ko": "핑거가 속한 금융IT·핀테크 산업은 국내 은행 및 제2금융권의 디지털 전환 투자에 크게 의존한다. FnGuide는 2025년 3분기 누적 기준 연결 매출액이 전년동기 대비 31.8% 증가하고 영업이익이 흑자전환했다고 밝히며, 이는 금융기관의 디지털 전환과 비대면 채널 확대로 스마트 금융 플랫폼 구축 수요가 증가한 데 따른 것이라고 설명했다. 산업의 새로운 성장축으로는 토큰증권(STO)과 스테이블코인 인프라가 부각되고 있다. 2026년 1월 15일 전자증권법 및 자본시장법 개정안이 국회를 통과하며 분산원장 기술을 활용한 증권의 발행·유통에 대한 법적 근거가 마련됐고, 시행은 공포 후 1년 뒤인 2027년 1월로 예정돼 있다. 증권사들 중에서는 신한투자증권, 미래에셋증권, KB증권 등 대형사와 한화증권 등 중소형사가 STO 시장 선점 경쟁을 벌이고 있으며, 블록체인 기술을 보유한 핀테크 기업들이 인프라 구축 단계에서 우선 수혜를 볼 수 있다는 분석도 제기된다. 이런 흐름 속에서 핑거는 특허권 NFT 발행·거래 플랫폼 구축 경험과 다수의 자산 유동화 관련 특허를 보유하고 있어 STO 발행·유통 인프라 공급업체로 이름이 오르내리고 있다. 다만 STO 시장은 아직 시행령 정비, 라이선스 발급 등 제도적 절차가 진행 중인 초기 단계로, 실질적인 매출 기여 시점은 규제 일정에 따라 달라질 수 있다.",
+  "en": "The financial IT and fintech industry in which Finger operates is heavily dependent on digital transformation investment by domestic banks and secondary financial institutions. FnGuide noted that cumulative consolidated revenue through Q3 2025 rose 31.8% year over year and operating profit turned positive, attributing this to rising demand for smart financial platform construction driven by financial institutions' digital transformation and expansion of non-face-to-face channels. Security token offerings (STO) and stablecoin infrastructure have emerged as a new growth axis for the industry. On January 15, 2026, amendments to the Electronic Securities Act and Capital Markets Act passed the National Assembly, establishing a legal basis for the issuance and distribution of securities using distributed ledger technology, with implementation scheduled for January 2027, one year after promulgation. Among brokerages, large firms such as Shinhan Investment & Securities, Mirae Asset Securities, and KB Securities, along with smaller players such as Hanwha Securities, are competing to establish an early position in the STO market, and some analysis suggests fintech firms with blockchain technology could see early benefits during the infrastructure-building phase. Against this backdrop, Finger has been named as an STO issuance/distribution infrastructure provider, given its experience building patent-NFT issuance and trading platforms and its holdings of multiple asset-tokenization-related patents. However, the STO market remains at an early stage, with enabling decrees and license issuance still in progress, meaning the timing of meaningful revenue contribution will depend on the regulatory schedule."
  },
  "outlook": {
-  "ko": "핑거의 2025년 사업보고서는 STO 수익화 시점을 '2025년 내 제도화가 되더라도 유예기간을 거쳐야 하므로 2026년 하반기 또는 2027년에 본격적인 사업화가 가능'하다고 명시했으며, 금융사와의 협력을 통한 시장 선점 전략을 공식화했다. 2026년 4월 공시된 문페이·성호전자·판토스홀딩스 컨소시엄의 약 1,100억원 전략적 투자 계약은 핑거의 국내 금융 소프트웨어 네트워크와 문페이의 스테이블코인 발행·국경 간 결제 인프라를 결합하는 한국 원화 스테이블코인 생태계 구축을 목표로 한다. 단기적으로는 IBK기업은행 개인 스마트뱅킹 전면개편 등 기존 수주 프로젝트의 매출 인식이 2026년 영업이익 회복에 직접 영향을 미치는 핵심 변수다. 2026년 4월 한패스와 체결한 렐레트랜스퍼 고도화 MOU는 해외송금 서비스의 경쟁력 강화와 수수료 매출 확대 가능성을 높이는 계기가 됐다. 중기적으로는 파로스 ERP SaaS와 핑거페이를 통한 반복 수익 구조 다변화가 이익률 개선의 구조적 토대가 될 수 있다. 광동제약과의 투자계약증권 발행 추진, 하이파이브랩과의 기술 협력, MPC 키관리 솔루션 개발 등 STO 생태계 구축 작업은 법제화 이후 빠른 사업화 대응을 위한 기반 마련 성격이 강하다. 다만 STO·CBDC 관련 신사업에서 실질 매출 기여가 나타나기 전까지는 기존 플랫폼 사업의 이익률이 전체 실적을 좌우하는 구조가 지속될 전망이다.",
-  "en": "Finger's 2025 annual business report explicitly stated that even if STO legislation is enacted in 2025, a required grace period means full commercialization is realistic only from H2 2026 or 2027, while formalizing a strategy to capture early market share through preemptive technology development and financial institution partnerships. The April 2026 disclosure of approximately ₩110 billion in strategic investment from a consortium of Moonpay, Sungho Electronics, and Pantos Holdings targets the construction of a Korean won stablecoin ecosystem by combining Finger's domestic financial software network with Moonpay's stablecoin issuance and cross-border payment infrastructure. In the near term, revenue recognition from existing awarded projects—including the IBK Industrial Bank personal smart banking overhaul—is the most direct determinant of 2026 operating profit recovery. The April 2026 MOU with Hanpass on ReLe Transfer enhancement and foreign exchange technology cooperation provides a pathway to strengthening remittance competitiveness and fee revenue. Over the medium term, recurring revenue from Pharos ERP SaaS subscriptions and FingerPay transaction fees have the structural potential to improve the margin mix. Ongoing STO ecosystem preparation—including a securities issuance collaboration with Kwangdong Pharmaceutical, technology partnerships with HiFive Lab, and MPC key management solution development—positions the company for rapid commercialization once legislation clears. However, until meaningful STO and CBDC revenue contributions emerge, the existing platform business margin structure will continue to dominate overall results."
+  "ko": "핑거는 2026년 정기 주주총회를 통해 STO와 스테이블코인을 신규 성장 엔진으로 공식화했다고 알려져 있으며, 향후 사업의 방향성은 이 신사업의 상용화 속도에 크게 좌우될 것으로 보인다. 단기적으로는 네이버클라우드와의 STO 통합 솔루션이 실제 계약·매출로 이어지는지, 현대요트와의 해양 레저 STO 공동사업이 구체적인 상품 출시로 진전되는지가 관찰 포인트다. 제도적으로는 전자증권법·자본시장법 개정안의 2027년 1월 시행을 앞두고 금융위원회의 시행령 마련과 발행인 계좌관리기관 등 세부 라이선스 발급 절차가 관건이 될 전망이다. 자금 측면에서는 2026년 4월 결의한 500억원 규모 전환사채 발행을 통해 운영자금을 확충했으며, 전환가액은 12,509원으로 설정돼 향후 주가 흐름에 따라 전환 여부가 좌우될 수 있다. 모바일신분증 사업에서는 주요 시중은행과의 협력 확대가 진행 중인 것으로 파악된다. 다만 회사 측이 구체적인 매출·수주 가이던스를 시장에 공개적으로 제시한 사례는 확인되지 않아, 향후 실적은 분기별 공시와 개별 계약 공시를 통해 확인이 필요하다.",
+  "en": "Finger is reported to have formalized STO and stablecoins as new growth engines at its 2026 annual general shareholders' meeting, and the company's future direction will likely hinge heavily on the pace of commercialization for these new businesses. In the near term, key points to watch include whether the STO integrated solution with Naver Cloud translates into actual contracts and revenue, and whether the marine-leisure STO joint business with Hyundai Yacht progresses to concrete product launches. On the regulatory front, ahead of the January 2027 implementation of the amended Electronic Securities Act and Capital Markets Act, the Financial Services Commission's preparation of enforcement decrees and detailed licensing procedures such as issuer account management institution designation will be critical. On the funding side, the company bolstered working capital through a KRW 50 billion convertible bond decided in April 2026, with a conversion price of KRW 12,509, meaning future conversion will depend on stock price movements. In the mobile ID business, cooperation with major commercial banks is reportedly expanding. However, no specific public revenue or order-backlog guidance from the company has been confirmed, so future performance will need to be tracked through quarterly disclosures and individual contract announcements."
  },
  "valuation_comment": {
-  "ko": "주당 순자산(BPS 4,853원) 기준으로 현재 주가는 장부가 대비 약 3배에 근접하는 프리미엄 구간에 위치해 있으며, 이는 STO·디지털자산 인프라 등 신사업 성장 기대를 시장이 선반영하는 구조로 해석된다. 최근 누적 기준 주당순손실(EPS -19원)이 발생하고 있는 상황에서, 이익 지표보다 자산·성장 기대에 의존하는 가격 구조는 신사업 실현 여부가 중요한 기준점임을 의미한다. 주당배당금(DPS) 100원 기준 배당수익률은 코스닥 IT·소프트웨어 업종 평균 대비 낮은 편으로, 배당보다 성장 기대가 지배하는 종목의 특성을 반영한다. 2026년 4월 공시된 전환사채 전환가액(12,509원)이 현재 시장 가격을 하회하는 수준으로 설정되어 있어, 전환청구 기간(2027년 5월~2029년 4월) 중 기존 주주의 지분이 최대 42.49% 희석될 가능성이 내재돼 있다. 과거 OPM 4~6% 수준(2022~2023년)이 복원되고 STO 등 신사업 매출이 가시화될 경우 현재의 순자산 대비 프리미엄이 재정당화될 여지가 있으나, 이익 정상화 궤도 확인 전까지는 신사업 기대치가 밸류에이션의 주요 지지 요인이라는 점을 인식할 필요가 있다.",
-  "en": "Based on the book value per share (BPS of ₩4,853), the current stock price trades at a premium approaching three times net asset value, a level that appears to reflect market anticipation of new business growth in STO and digital asset infrastructure. With the most recent accumulated earnings per share standing at a net loss (EPS of -₩19), the valuation's reliance on asset value and growth expectations rather than current earnings power makes the realization of new business a critical reference point. The annual cash dividend of ₩100 per share translates to a yield below the KOSDAQ IT and software sector average, consistent with the growth-expectation profile of the stock. The conversion price on the April 2026 convertible bond (₩12,509 per share) is set below the current market price, meaning that up to 42.49% dilution of the current share base could materialize during the conversion window (May 2027–April 2029). A return to the 4–6% operating margins achieved in 2022–2023, combined with visible STO revenue contributions, could re-justify the current premium to book value; until a confirmed path to earnings normalization emerges, however, the prevailing valuation level rests heavily on new business optionality."
+  "ko": "핑거의 밸류에이션은 실적 회복 국면 진입과 함께 최근 몇 년간 적자에서 흑자로, 다시 분기별로 등락을 반복하는 구조를 반영해 변동성이 큰 편이다. 주가는 주당 순자산가치에 근접한 수준에서 형성돼 있어, 순자산 대비 과도한 프리미엄이나 할인이 뚜렷하게 나타나는 구간은 아닌 것으로 보인다. 다만 산출 기준에 따라 주가순자산비율 결과가 다르게 나타날 수 있는데, 이는 최근의 전환사채 발행 등 자본구조 변화가 반영되는 시점과 방식의 차이에서 기인하는 것으로 판단된다. 최근 4개 분기 순이익 기준으로 산출한 주가수익비율은 과거 적자·저이익 국면에서 형성된 밴드보다는 낮아진 모습이나, 2026년 2분기의 이례적인 순이익 급증이 향후에도 반복될 성격의 이익인지는 불확실하다. 배당 측면에서는 주당 소액의 현금배당을 유지하는 정책을 이어가고 있어, 배당수익률 자체가 투자 매력의 핵심 변수는 아닌 것으로 판단된다.",
+  "en": "Finger's valuation has been volatile, reflecting a business that has swung from losses to profits and back again on a quarterly basis over the past few years amid an ongoing earnings recovery. The stock trades at a level close to its per-share net asset value, suggesting neither a pronounced premium nor a steep discount to net assets at present. That said, price-to-book results can differ depending on the calculation basis used, likely reflecting differences in how recent capital-structure changes such as the convertible bond issuance are incorporated and timed. The price-to-earnings ratio calculated on trailing four-quarter earnings appears lower than the band formed during past loss-making or low-profit periods, though it remains uncertain whether the unusually large net income recorded in Q2 2026 reflects a recurring earnings pattern. On dividends, the company has maintained a policy of small per-share cash payouts, suggesting dividend yield itself is unlikely to be the central driver of investment appeal."
  },
  "bull": [
   {
    "title": {
-    "ko": "STO·디지털자산 인프라 선점 포지셔닝",
-    "en": "First-Mover Positioning in STO and Digital Asset Infrastructure"
+    "ko": "STO·스테이블코인 신사업 확장",
+    "en": "Expansion into STO and Stablecoin New Businesses"
    },
    "body": {
-    "ko": "핑거는 2021년부터 KISA 지원으로 블록체인 기반 특허 NFT 거래 플랫폼을 구축한 경험을 보유하고, 2023년 STO 전담 전략사업단을 구성하며 AI·CBDC 시장 대응까지 포함하는 인프라 준비를 선행했다. 증권사가 STO 거래 플랫폼을 구축할 때 핑거의 플랫폼과 솔루션을 활용할 가능성이 높다는 증권사 분석이 나오고 있으며, 이미 SK증권 등과 MOU를 통한 협업 구조를 갖췄다. STO 시장이 2026년 하반기 이후 본격 개화할 경우, 기존 주력 플랫폼 사업에 고마진 솔루션 매출이 추가되며 이익률의 구조적 확장이 기대된다.",
-    "en": "Finger gained hands-on experience building a blockchain-based patent NFT trading platform with KISA support from 2021 and proactively established a dedicated STO strategic business unit in 2023 covering AI and CBDC market response as well. Sell-side analysis indicates a high likelihood that Finger's platform and solutions will be adopted when securities firms build STO trading infrastructure, and the company has already established cooperative frameworks through MOUs with firms including SK Securities. If the STO market opens from H2 2026 onward, the addition of high-margin solution revenue to the existing platform business could drive a structural expansion of operating margins."
+    "ko": "전자증권법·자본시장법 개정안 통과로 STO 제도화가 진전되면서 핑거는 관련 인프라 공급업체로 이름이 오르내리고 있다. 네이버클라우드, 신한DS, 현대요트 등과의 잇따른 업무협약은 향후 발행·유통 플랫폼 사업의 구체적 성과로 이어질 수 있는 발판이 될 수 있다. 특허권 NFT 플랫폼 구축 등 축적된 블록체인 기술 경험은 경쟁사 대비 진입장벽으로 작용할 여지가 있다.",
+    "en": "With STO institutionalization advancing following the passage of amended Electronic Securities Act and Capital Markets Act, Finger has been named among related infrastructure providers. A series of MOUs with Naver Cloud, Shinhan DS, and Hyundai Yacht could serve as a foundation for concrete outcomes in future issuance and distribution platform business. Accumulated blockchain technology experience, including patent-NFT platform construction, may function as an entry barrier relative to competitors."
    }
   },
   {
    "title": {
-    "ko": "문페이 컨소시엄의 약 1,100억원 전략 투자",
-    "en": "Approximately ₩110 Billion Strategic Investment from the Moonpay Consortium"
+    "ko": "핵심 사업의 흑자전환",
+    "en": "Core Business Turnaround to Profitability"
    },
    "body": {
-    "ko": "2026년 4월, 전 세계 180개국·3,000만 명 이상 사용자를 보유한 글로벌 크립토 결제 인프라 기업 문페이와 성호전자·판토스홀딩스가 핑거에 약 1,100억원을 투자하는 계약을 공시했다. 이번 투자의 목적은 핑거의 국내 금융 소프트웨어 네트워크와 문페이의 스테이블코인 발행·스왑·국경 간 결제 인프라를 결합해 한국 원화 스테이블코인 발행부터 실사용까지의 인프라를 구축하는 데 있다. 성공적으로 연계될 경우 국내 핀테크 영역을 넘어 글로벌 디지털 결제 플레이어로의 도약이 가시화될 수 있으며, 투자자의 규모와 성격 자체가 핑거 플랫폼 자산의 가치를 확인해주는 신호로 해석될 수 있다.",
-    "en": "In April 2026, a consortium consisting of Moonpay—a global crypto payment infrastructure company with over 30 million users across 180 countries—Sungho Electronics, and Pantos Holdings disclosed a contract to invest approximately ₩110 billion in Finger. The stated objective is to combine Finger's domestic financial software network with Moonpay's stablecoin issuance, swap, and cross-border payment infrastructure to build an end-to-end Korean won stablecoin ecosystem. If the collaboration executes as envisioned, it could accelerate Finger's transformation into a global digital payments participant beyond domestic fintech, and the scale and quality of the investor consortium itself serves as meaningful external validation of Finger's platform asset value."
+    "ko": "2024년 영업손실에서 2025년 영업이익 14.7억원으로 흑자전환에 성공했고, 매출도 716억원에서 916억원으로 확대됐다. 2025년 3분기에는 매출과 영업이익이 동반 호조를 보이며 FnGuide 기준 순이익이 큰 폭으로 늘었다는 점도 확인된다. 은행권의 디지털 전환 투자 수요가 이어지는 한 본업의 회복 흐름이 지속될 가능성이 있다.",
+    "en": "The company turned around from an operating loss in 2024 to operating profit of KRW 1.47 billion in 2025, with revenue expanding from KRW 71.6 billion to KRW 91.6 billion. Q3 2025 saw both revenue and operating profit improve together, with FnGuide noting a sharp rise in net income for that period. As long as banks' digital transformation investment demand continues, the recovery trend in the core business could persist."
    }
   },
   {
    "title": {
-    "ko": "2025년 매출 V자 반등과 현금흐름 회복",
-    "en": "V-Shaped Revenue Rebound and Operating Cash Flow Recovery in 2025"
+    "ko": "견조한 영업현금흐름",
+    "en": "Solid Operating Cash Flow"
    },
    "body": {
-    "ko": "2024년 약 716억원으로 급락했던 매출이 2025년 약 916억원으로 28% 반등하며 4년치 최고치를 기록했고, 이는 금융기관의 디지털 전환 수요 회복과 제2금융권·비금융권 수주 확대가 맞물린 결과다. 영업활동 현금흐름도 2025년 약 70억원으로 전년의 10.9억원 대비 크게 개선되어 실질적 현금 창출 능력이 회복됐다. 수주 파이프라인 확장과 프로젝트 계절성 관리가 병행된다면 2026년 연간 영업흑자 유지도 기대해볼 수 있는 수준이다.",
-    "en": "Revenue staged a sharp V-shaped rebound to approximately ₩91.6 billion in 2025 (+28% from ₩71.6 billion in 2024), marking a four-year high driven by a combination of renewed digital transformation spending at financial institutions and broadening project wins in second-tier and non-financial clients. Operating cash flow also recovered substantially to approximately ₩7.0 billion in 2025 from only ₩1.1 billion in 2024, confirming a genuine improvement in underlying cash generation. If the project pipeline continues to expand alongside improved management of quarterly revenue seasonality, maintaining a full-year operating profit in 2026 is a plausible outcome."
+    "ko": "2025년 영업활동현금흐름은 70.0억원으로 2024년의 10.9억원 대비 크게 개선됐다. 손익상 순이익 규모보다 현금창출력이 견조하다는 점은 신사업 투자를 위한 재무적 여력을 뒷받침할 수 있는 요인이다.",
+    "en": "Operating cash flow in 2025 rose sharply to KRW 7.0 billion from KRW 1.09 billion in 2024. Cash generation being more robust than the reported net income figure could support the company's financial capacity to invest in new businesses."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "Q4 2025·Q1 2026 연속 영업적자 — 수익성 회복 불안정",
-    "en": "Consecutive Operating Losses in Q4 2025 and Q1 2026—Profitability Recovery Remains Fragile"
+    "ko": "분기별 실적 변동성",
+    "en": "Quarter-to-Quarter Earnings Volatility"
    },
    "body": {
-    "ko": "Q3 2025까지 탄탄하게 이어지던 분기별 개선세가 Q4 2025(영업손실 3.5억)와 Q1 2026(영업손실 3.3억)에서 연속으로 꺾였으며, 2025년 연간 OPM 1.6%는 2022년 6.0%에 비해 여전히 크게 낮다. 분기별 수익성 변동성이 높다는 점은 프로젝트성 매출 의존도가 높고 고정비 대비 이익 레버리지가 낮음을 시사한다. 신사업 투자 비용이 중첩될 경우 추가적인 영업적자 구간이 이어질 가능성을 배제하기 어렵다.",
-    "en": "The steady quarterly improvement through Q3 2025 reversed sharply in Q4 2025 (operating loss of ₩-350mn) and continued into Q1 2026 (operating loss of ₩-326mn), while the full-year 2025 OPM of 1.6% still falls well short of the 6.0% achieved in 2022. The high quarter-to-quarter earnings volatility signals heavy reliance on project-based revenue recognition with limited operating leverage against fixed costs. If new business investment costs layer on before incremental revenue streams materialize, further quarters of operating losses cannot be ruled out."
+    "ko": "2025년 4분기 영업손실 3.5억원, 지배주주순이익 -22.1억원의 적자 이후 2026년 1분기에도 영업손실이 이어졌다. 2026년 2분기에는 영업이익이 3.7억원에 그친 반면 지배주주순이익이 67.2억원으로 크게 늘어 영업외 요인의 영향이 컸던 것으로 추정된다. 이러한 변동성은 실적의 지속성을 예측하기 어렵게 만드는 요인이다.",
+    "en": "Following an operating loss of KRW 0.35 billion and a loss of KRW 2.21 billion in owners' net income in Q4 2025, the operating loss continued into Q1 2026. In Q2 2026, operating profit was only KRW 0.37 billion while owners' net income jumped to KRW 6.72 billion, suggesting a large non-operating contribution. This volatility makes it difficult to project the continuity of earnings."
    }
   },
   {
    "title": {
-    "ko": "500억원 CB 발행에 따른 잠재적 지분 희석",
-    "en": "Potential Share Dilution from the ₩50 Billion Convertible Bond"
+    "ko": "STO 상용화 지연 리스크",
+    "en": "Risk of Delayed STO Commercialization"
    },
    "body": {
-    "ko": "2026년 4월 이사회가 결의한 500억원 사모 전환사채는 전환가액 주당 12,509원으로, 전환 시 최대 3,997,120주(현재 발행주식 대비 42.49%)가 신규 발행될 수 있다. 이는 기존 주주의 주당 순자산과 이익 지분을 상당히 희석시키는 요인이며, 이미 2023년 25.8%에서 2025년 41.7%로 오른 부채비율이 추가로 악화될 수 있다. 전환청구 기간(2027년 5월~2029년 4월)이 도래하기 전 기업이 수익성 개선으로 CB 희석 효과를 상쇄할 수 있는지가 핵심 과제다.",
-    "en": "The ₩50 billion private CB approved by the board in April 2026 carries a conversion price of ₩12,509 per share, implying up to 3,997,120 new shares—equivalent to 42.49% of the current outstanding share count—upon full conversion. This represents a meaningful dilution of per-share book value and future earnings for existing shareholders, while the debt ratio—already elevated from 25.8% in 2023 to 41.7% in 2025—could deteriorate further following settlement. Whether the company can generate sufficient earnings improvement before the conversion window opens (May 2027–April 2029) to offset the dilutive impact is a critical monitoring question."
+    "ko": "전자증권법·자본시장법 개정안의 실제 시행은 2027년 1월로 예정돼 있으며, 시행령 마련과 라이선스 발급 등 세부 절차가 아직 진행 중이다. 규제 일정이 지연되거나 세부 요건이 예상과 다르게 확정될 경우 신사업의 매출 기여 시점이 늦어질 수 있다.",
+    "en": "Actual implementation of the amended Electronic Securities Act and Capital Markets Act is scheduled for January 2027, with enforcement decrees and license issuance procedures still in progress. If the regulatory timeline is delayed or detailed requirements differ from expectations, the revenue contribution timing of the new business could be pushed back."
    }
   },
   {
    "title": {
-    "ko": "STO 법제화 지연 — 신사업 수익화 시점 불확실",
-    "en": "Delayed STO Legislation—Uncertain Timeline for New Business Revenue"
+    "ko": "낮은 본업 수익성과 지분 희석 부담",
+    "en": "Low Core Profitability and Dilution Burden"
    },
    "body": {
-    "ko": "핑거는 STO 인프라 기술 개발에 상당한 자원을 투입해왔으나, 21대 국회 임기 종료로 관련 법안이 폐기되어 법적 기반 마련이 지연됐다. 회사 자체 사업보고서에서도 '2026년 하반기 또는 2027년에 본격적인 사업화가 가능'하다고 명시했으며, 법제화 이후에도 금융기관의 예산 집행·시스템 구축까지는 추가 시간이 소요된다. 신사업 기대감이 현재 주가에 선반영되어 있는 상태에서 추가 지연이 발생할 경우 성장 기대치 재평가 압력이 발생할 수 있다.",
-    "en": "Finger has invested heavily in STO infrastructure technology, but the legislative foundation was set back when related bills lapsed with the expiry of the 21st National Assembly. The company itself stated in its annual report that full STO commercialization requires a mandatory grace period even after legislation passes, placing a realistic start at H2 2026 at the earliest. Even after enactment, financial institutions' budget approval and system buildout cycles typically add further delay before revenue converts to cash, and any additional legislative slippage could trigger reassessment of the growth expectations embedded in the current price."
+    "ko": "2025년 영업이익률은 1.6%에 그쳐 2022년(6.0%), 2023년(4.4%)보다 낮은 수준이다. 또한 2026년 4월 결의한 500억원 규모 전환사채는 전환 시 최대 42.49%에 이르는 지분 희석 물량을 내포하고 있어, 향후 주식 수 증가에 따른 주당 지표 희석 가능성이 존재한다.",
+    "en": "Operating margin in 2025 was only 1.6%, lower than 6.0% in 2022 and 4.4% in 2023. In addition, the KRW 50 billion convertible bond decided in April 2026 carries potential dilution of up to 42.49% of shares if converted, raising the possibility of per-share metric dilution as share count increases in the future."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "규제·정책 리스크 — 디지털자산 법제화 불확실성",
-    "en": "Regulatory and Policy Risk—Digital Asset Legislation Uncertainty"
+    "ko": "재무·자본구조 리스크",
+    "en": "Financial and Capital Structure Risk"
    },
    "body": {
-    "ko": "토큰증권·CBDC·스테이블코인 등 디지털자산 관련 규제 환경은 정권·국회 일정에 따라 급변할 수 있으며, 세부 규정 확정까지는 상당한 시간이 소요될 수 있다. 규제 방향 또는 세부 요건에 따라 핑거 솔루션의 사업화 가능 범위가 달라질 수 있고, 금융위원회의 마이데이터·오픈뱅킹 정책 변화도 핵심 플랫폼 사업에 영향을 미칠 수 있다. 정부 주도 디지털 금융 인프라 사업의 방향 변화는 핑거가 축적한 레퍼런스 활용 범위와 직결된다.",
-    "en": "The regulatory framework for digital assets—including STO, CBDC, and stablecoins—is highly sensitive to legislative calendar and political administration changes, and detailed rulemaking could take considerable time. The scope of Finger's commercialization may be constrained depending on how specific regulations are structured, while changes in FSC policy on MyData and open banking could affect the core platform business. Shifts in the direction of government-led digital finance infrastructure programs directly affect the strategic relevance of Finger's accumulated reference base."
+    "ko": "2025년 부채비율은 41.7%로 2023년(25.8%), 2024년(32.2%)보다 높아졌다. 500억원 규모 전환사채 발행에 따라 만기(2029년 5월) 도래 시 상환 부담이나 전환 시 지분 희석이 동시에 존재하는 구조다.",
+    "en": "The debt ratio rose to 41.7% in 2025, up from 25.8% in 2023 and 32.2% in 2024. The KRW 50 billion convertible bond issuance creates a structure with both repayment burden at maturity (May 2029) and potential share dilution upon conversion."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 리스크 — 대형 SI·빅테크의 금융 플랫폼 확장",
-    "en": "Competitive Risk—Large SI Firms and Big-Tech Platforms Expanding in Financial Solutions"
+    "ko": "규제·제도 리스크",
+    "en": "Regulatory and Institutional Risk"
    },
    "body": {
-    "ko": "삼성SDS·LG CNS 등 대형 IT 서비스 기업들이 금융 SI 사업의 역량을 지속 강화하고 있으며, 카카오페이·토스·네이버파이낸셜 등 빅테크 기반 금융 플랫폼의 기술 내재화가 가속되고 있다. 금융기관이 자체 개발 역량을 강화할 경우 핑거의 외주 수요가 줄어들 위험이 있고, STO 시장에서도 대형 SI나 증권사 계열이 직접 인프라를 구축할 경우 핑거의 포지셔닝이 약화될 수 있다. 소형주 특성상 인력·R&D 규모에서 대형 경쟁사 대비 열위가 발생할 가능성을 배제할 수 없다.",
-    "en": "Large IT service firms such as Samsung SDS and LG CNS are continuously enhancing their financial SI capabilities, while big-tech-affiliated platforms including Kakao Pay, Toss, and Naver Financial are accelerating technology internalization. Financial institutions building in-house development capacity could reduce the pipeline of outsourced platform work, and if major SI firms or securities-affiliated entities choose to construct STO infrastructure directly, Finger's preferred-vendor positioning may be weakened. As a small-cap company, Finger faces inherent disadvantages in staffing and R&D scale relative to larger competitors."
+    "ko": "STO 관련 법 개정은 이뤄졌으나 시행은 2027년 1월로 예정돼 있으며, 시행령과 라이선스 발급 등 세부 제도가 아직 정비 중이다. 규제 불확실성이 완전히 해소되지 않은 상태에서 신사업 추진이 이뤄지고 있다는 점은 사업 불확실성으로 남아 있다.",
+    "en": "While STO-related laws have been amended, implementation is scheduled for January 2027, and detailed systems such as enforcement decrees and license issuance are still being finalized. The fact that new business initiatives are proceeding while regulatory uncertainty has not been fully resolved remains a source of business risk."
    }
   },
   {
    "cat": {
-    "ko": "재무·지분 구조 리스크 — CB 희석·경영권 변동",
-    "en": "Financial and Ownership Structure Risk—CB Dilution and Control Change"
+    "ko": "수익성·실적 변동성 리스크",
+    "en": "Profitability and Earnings Volatility Risk"
    },
    "body": {
-    "ko": "500억원 CB 납입 완료 이후 재무 레버리지 상승과 최대 42.49%의 잠재적 지분 희석이 동시에 발생할 수 있으며, 이미 상승 중인 부채비율(2025년 41.7%)이 추가 악화될 수 있다. 문페이 컨소시엄의 약 1,100억원 투자로 인한 경영권 구조 변화는 기존 사업 전략의 연속성과 주주가치 배분 정책에 불확실성을 수반한다. 신규 지배주주가 기존 B2B 핀테크 플랫폼 사업 모델과 충돌하는 방향으로 사업 전략 전환을 요구할 가능성도 잠재적 리스크로 관리돼야 한다.",
-    "en": "Following CB settlement, the company faces simultaneous increases in financial leverage and potential dilution of up to 42.49%, further pressuring a debt ratio already elevated at 41.7% in 2025. The ownership change resulting from the approximately ₩110 billion Moonpay consortium investment introduces uncertainty around continuity of existing business strategy and future capital allocation policies toward existing shareholders. The risk that new controlling shareholders seek a strategic pivot conflicting with the established B2B fintech platform revenue model must also be monitored as a potential risk factor."
+    "ko": "연간 영업이익률이 2022~2025년 사이 6.0%에서 -0.7%, 다시 1.6%로 등락을 거듭했다. 분기별로도 흑자와 적자가 반복되는 패턴이 나타나 실적의 예측 가능성이 낮은 편이다.",
+    "en": "The annual operating margin fluctuated from 6.0% to -0.7% and back to 1.6% between 2022 and 2025. A recurring pattern of quarterly profits and losses also appears, making earnings predictability relatively low."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7월 말",
-    "en": "Late July 2026"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "Q2 2026 실적 발표에서 2분기 연속 영업적자 구간 탈출 여부를 확인한다. Q2는 프로젝트 매출 인식이 집중되는 계절적 강세 분기로, 영업흑자 복귀 여부가 2026년 연간 수익성 회복의 가시성을 결정한다.",
-    "en": "The Q2 2026 earnings release will reveal whether the company has exited the consecutive operating loss streak from Q4 2025 and Q1 2026; Q2 is seasonally a stronger quarter for project revenue recognition, and a return to operating profit would significantly improve confidence in full-year profitability."
+    "ko": "2026년 3분기 분기보고서 공시를 통해 영업이익률 회복 여부와 2분기 순이익 급증이 일회성이었는지 재발성이었는지를 확인할 필요가 있다.",
+    "en": "Check the Q3 2026 quarterly report disclosure to see whether operating margin recovery continues and whether the Q2 net income surge was one-off or recurring."
    }
   },
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2027년 1월 전후",
+    "en": "Around January 2027"
    },
    "what": {
-    "ko": "반기보고서 공시를 통해 CB 납입 완료 이후 변화한 재무구조(부채비율·자본총계)와 문페이 컨소시엄 투자의 구체적 조건(지분율·이사회 구성 변화 등)을 확인해야 한다.",
-    "en": "The H1 2026 semi-annual report filing will provide the first full picture of balance sheet changes post-CB settlement (debt ratio, total equity) and may also disclose specific terms of the Moonpay consortium investment such as ownership stake and board composition changes."
+    "ko": "전자증권법·자본시장법 개정안의 실제 시행 및 금융위원회 시행령·라이선스 발급 절차 진행 상황을 확인해 STO 신사업의 제도적 기반이 예정대로 마련되는지 점검할 필요가 있다.",
+    "en": "Check whether the amended Electronic Securities Act and Capital Markets Act take effect as scheduled and monitor the Financial Services Commission's enforcement decree and license issuance progress to assess whether the institutional groundwork for the STO business is established on schedule."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (국회 회기 중)",
-    "en": "H2 2026 (During National Assembly Session)"
+    "ko": "2027년 5월 21일 이후",
+    "en": "From May 21, 2027"
    },
    "what": {
-    "ko": "22대 국회에서 토큰증권 관련 자본시장법 개정안 및 전자증권법 개정안의 본회의 통과 여부를 주시해야 한다. 법안 통과 시 핑거의 STO 솔루션 수주 가시화 시점이 앞당겨질 수 있고, 추가 지연 시 신사업 기대치 재평가가 불가피하다.",
-    "en": "Passage of the Capital Markets Act amendment and Electronic Securities Act amendment related to STO in the 22nd National Assembly is the single most important regulatory trigger; legislation would accelerate Finger's STO solution order pipeline, while further delay would likely prompt a rerating of new business growth expectations."
+    "ko": "전환사채의 전환청구기간이 개시되는 시점으로, 전환가액 12,509원 대비 주가 수준에 따라 실제 전환 및 지분 희석 규모가 어떻게 진행되는지 확인이 필요하다.",
+    "en": "This marks the start of the convertible bond's conversion request period; it will be necessary to check how actual conversion and dilution unfold depending on the stock price relative to the KRW 12,509 conversion price."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 중",
-    "en": "H2 2026–2027"
+    "ko": "2026년 하반기 중",
+    "en": "In the second half of 2026"
    },
    "what": {
-    "ko": "문페이 협업을 통한 파로스 ERP와 스테이블코인 결제 연동, 원화 스테이블코인 인프라 구축의 구체적 사업화 진전 여부를 공시 및 IR을 통해 모니터링해야 한다. 구체적 매출 기여 또는 파트너십 마일스톤이 확인될 경우 중장기 성장 시나리오의 신뢰도가 높아진다.",
-    "en": "Progress on the Moonpay collaboration—specifically, linking Pharos ERP to stablecoin payment rails and building a Korean won stablecoin ecosystem—should be tracked through disclosures and IR communications; any concrete revenue contribution or verifiable partnership milestone would strengthen the credibility of the medium-to-long-term growth scenario."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 4~5월 (CB 전환청구 개시 전)",
-    "en": "April–May 2027 (Prior to CB Conversion Window Opening)"
-   },
-   "what": {
-    "ko": "CB 전환청구 기간이 2027년 5월 21일부터 시작되므로, 그 이전까지 영업이익 방향성 회복과 EPS 개선 여부를 추적해야 한다. 전환가액(12,509원) 대비 주가 수준과 수익성 회복의 연동이 희석 영향의 실질적 크기를 결정한다.",
-    "en": "With CB conversion rights exercisable from May 21, 2027, tracking the trajectory of operating income recovery and per-share earnings improvement ahead of that date is important; the relationship between the conversion price (₩12,509) and the prevailing share price at that time will determine the magnitude of realized dilution for existing shareholders."
+    "ko": "네이버클라우드와의 STO 통합 솔루션, 현대요트와의 해양 레저 STO 공동사업 등이 실제 계약·상품 출시로 이어지는지 관련 공시 및 보도를 통해 확인할 필요가 있다.",
+    "en": "It will be necessary to track disclosures and news coverage on whether the STO integrated solution with Naver Cloud and the marine-leisure STO joint business with Hyundai Yacht progress into actual contracts and product launches."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "핑거는 2000년 설립 이후 한국 스마트 금융 플랫폼 시장에서 1·2금융권을 아우르는 포괄적 레퍼런스와 블록체인·SaaS·디지털자산 등 신사업 포트폴리오를 동시에 보유한 코스닥 IT·소프트웨어 소형주다. 2025년 매출이 약 916억원으로 4년치 최고치를 기록하며 영업흑자를 회복한 것은 사이클 저점 통과를 확인하는 긍정적 신호이나, Q4 2025·Q1 2026의 연속 영업적자와 OPM 1.6%는 수익성의 완전 정상화가 현재진행형임을 보여준다. STO·CBDC·스테이블코인 등 신사업 수익화는 법제화 일정에 종속되어 있으며, 회사 자체 가이던스 기준으로도 2026년 하반기 이후가 현실적 출발선이다. 2026년 4월 공시된 문페이 컨소시엄의 약 1,100억원 전략 투자와 500억원 CB 발행은 글로벌 디지털 결제 인프라와의 결합 기회를 열었지만, 최대 42.49% 지분 희석과 경영 방향 불확실성이라는 이중 리스크를 내포한다. 종합적으로 현재 핑거는 디지털금융 인프라 전환의 수혜 위치를 유지하면서, 단기 수익성 안정화·CB 희석 대응·STO 법제화 시점이라는 세 변수가 동시에 기업가치의 방향을 결정하는 분기점에 서 있다. 분기 실적 발표, STO 관련 법안의 국회 진행 상황, 문페이 협업의 구체적 사업화 진전을 종합적으로 모니터링하면서 각 변수의 방향을 판단하는 것이 적절하다.",
-   "en": "Finger is a small-cap KOSDAQ IT and software company with over 25 years of fintech platform deployment spanning both tier-one and tier-two financial institutions, complemented by a growing portfolio of blockchain, SaaS, and digital asset initiatives. The four-year revenue high of approximately ₩91.6 billion and return to operating profit in 2025 confirm passage of a cyclical trough, but consecutive operating losses in Q4 2025 and Q1 2026 and an OPM of 1.6% demonstrate that full profitability normalization remains a work in progress. New business revenue from STO, CBDC, and stablecoin infrastructure is fundamentally contingent on legislative timelines, with the company's own guidance pointing to H2 2026 at the earliest as a realistic starting point. The April 2026 disclosure of approximately ₩110 billion in strategic investment from the Moonpay consortium and a ₩50 billion CB issuance opens pathways to global digital payment integration, but simultaneously introduces up to 42.49% dilution risk and uncertainty about strategic continuity. In aggregate, Finger stands at a juncture where three variables—near-term profitability stabilization, CB dilution management, and STO legislative timing—will jointly determine the company's trajectory. Monitoring quarterly earnings releases, progress of STO-related bills in the National Assembly, and tangible milestones in the Moonpay collaboration is the appropriate framework for ongoing assessment."
+   "ko": "핑거는 2025년 연결 매출 916억원, 영업이익 14.7억원으로 전년 적자에서 흑자전환하며 본업 회복의 신호를 보였으나, 분기별로는 2025년 4분기와 2026년 1분기 연속 영업손실을 기록하는 등 편차가 뚜렷하다. 2026년 2분기에는 영업이익이 3.7억원에 그친 반면 지배주주순이익이 67.2억원으로 급증해 영업외 요인의 비중이 컸던 것으로 추정되며, 이 이익의 지속 가능성은 아직 확인되지 않았다. 회사는 STO·스테이블코인·모바일신분증 등 신사업으로 성장축을 다변화하고 있고, 관련 법 제도가 2026년 1월 정비돼 2027년 1월 시행을 앞두고 있어 중장기적 사업 기회가 열려 있다. 다만 실제 시행령·라이선스 절차가 아직 진행 중이라는 점과 500억원 규모 전환사채 발행에 따른 지분 희석 가능성, 낮은 본업 영업이익률은 함께 고려해야 할 변수다. 종합하면 핑거는 재무적으로는 회복 국면에, 사업적으로는 신사업 전환기에 있는 회사로, 향후 분기 실적의 지속성과 STO 제도화 진행 속도가 펀더멘털 판단의 핵심 변수가 될 것으로 보인다.",
+   "en": "Finger posted 2025 consolidated revenue of KRW 91.6 billion and operating profit of KRW 1.47 billion, turning around from the prior year's loss and signaling a recovery in its core business, though quarterly results remain clearly uneven, with consecutive operating losses in Q4 2025 and Q1 2026. In Q2 2026, operating profit was only KRW 0.37 billion while owners' net income surged to KRW 6.72 billion, suggesting a substantial non-operating contribution whose sustainability has not yet been confirmed. The company is diversifying its growth base into new businesses such as STO, stablecoins, and mobile IDs, and with related legislation finalized in January 2026 ahead of implementation in January 2027, medium-to-long-term business opportunities appear to be opening up. However, the fact that actual enforcement decrees and licensing procedures are still in progress, the potential share dilution from the KRW 50 billion convertible bond issuance, and the low operating margin of the core business are all factors that must be weighed together. On balance, Finger is a company in a financial recovery phase and a business transition period toward new growth areas, with the continuity of future quarterly earnings and the pace of STO institutionalization likely to be the key variables for assessing its fundamentals going forward."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A163730",
+  "https://littlebproject.com/stock/163730",
+  "https://kr.investing.com/equities/finger-earnings",
+  "https://littlebproject.com/stock/163730/326/60630",
   "https://m.thinkpool.com/item/163730",
-  "https://www.google.com/finance/quote/163730:KOSDAQ?hl=en",
-  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=163730",
-  "https://finance.finup.co.kr/Stock/163730",
-  "https://m.irgo.co.kr/IR-COMP/163730",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A163730&MenuYn=Y",
   "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A163730",
-  "https://markets.hankyung.com/stock/163730",
-  "http://www.econovill.com/news/articleView.html?idxno=520089",
-  "https://www.jobkorea.co.kr/Recruit/Co_Read/C/finger21",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/QkwweVY3bjJDQW5NNXFjWTRMTEJPQT09/company_nm/(%EC%A3%BC)%ED%95%91%EA%B1%B0",
-  "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202002051701398520102974&lcode=00",
-  "http://m.ddaily.co.kr/m/m_article/?no=197413",
-  "https://moneypie.net/wiki/v/핑거",
-  "https://edaily.co.kr/news/read?mediaCodeNo=257&newsId=01430086625838784",
-  "https://m.thinkpool.com/stockDiscuss/163730/cont/11795908"
+  "https://unips.co.kr/%ED%95%91%EA%B1%B0-%EC%A3%BC%EA%B0%80%EC%A0%84%EB%A7%9D-%EC%B0%A8%EC%84%B8%EB%8C%80-%EA%B8%88%EC%9C%B5-%ED%94%8C%EB%9E%AB%ED%8F%BC-%ED%95%B5%EC%8B%AC%EC%A3%BC-%EA%B0%80%EB%8A%A5%EC%84%B1/",
+  "https://alphasquare.co.kr/home/stock-summary?code=163730",
+  "https://m.irgo.co.kr/IR-COMP/163730/%ED%95%91%EA%B1%B0-IR-PAGE",
+  "https://www.k5.co.kr/stock/163730",
+  "https://www.valueline.co.kr/finance/bicchart/163730",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A163730",
+  "https://m.thinkpool.com/stockDiscuss/163730/cont/11612258",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=163730",
+  "https://www.k5.co.kr/stock/163730/official_notice_read?sfm_idx=373291",
+  "https://www02.finance-scope.com/article/view/scp202603110011",
+  "https://m.thebell.co.kr/m/newsview.asp?newskey=202307101529078040103741",
+  "https://www02.finance-scope.com/article/view/scp202601280006",
+  "https://www.asiae.co.kr/article/2023120413502762507"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "163730",
  "name": "핑거",
  "name_en": "Finger Inc.",
@@ -232,11 +223,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:58",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:08",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -337,21 +328,22 @@
    }
   ],
   "valuation": {
-   "price": 9620,
-   "mcap": 0.1156,
+   "price": 9570,
+   "mcap": 0.115,
    "shares": 12015717,
    "total_shares": 9406568,
    "wavg_shares": 9855646,
-   "per": 15.954,
+   "per": 15.871,
    "eps": 603,
-   "pbr": 1.0128,
+   "pbr": 1.0076,
    "bps": 9498,
    "roe_ttm": 8.6,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 6001938222,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.94,
+   "eps_src": "공시",
+   "pbr_krx": 1.93,
    "bps_krx": 4960.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 100.0,

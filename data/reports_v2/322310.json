@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "계측 국산화 선두주자, 저점 돌파 기대와 실적 가시성 사이",
-  "en": "Metrology Nationalization Pioneer: Navigating Between Recovery Hope and Earnings Visibility"
+  "ko": "오버레이 국산화 강자, 실적 변동성 확대",
+  "en": "Overlay Metrology Localization Leader Faces Earnings Volatility"
  },
  "lead": {
-  "ko": "2024년 사상 최대 실적 이후 주력 제품 수요 급감으로 2025년 연간 영업손실이 전환됐고, 2026년 1분기에도 매출 68억원에 영업손실 68억원이 재현되며 회복 모멘텀의 가시성이 현저히 낮아진 상황이나, HBM 후공정 계측·박막계측 장비 포트폴리오 확장과 해외 시장 개척이 중장기 반등 근거로 주목받고 있다.",
-  "en": "Following record results in 2024, Aurostechnology swung to a full-year operating loss in 2025 as flagship product demand collapsed; Q1 2026 saw revenue and operating loss both near 6.8 bn KRW, materially dimming near-term earnings visibility—while HBM back-end packaging metrology, Thin Film Metrology expansion, and geographic diversification underpin the medium-to-long-term recovery thesis."
+  "ko": "오로스테크놀로지는 국내 유일 오버레이 계측장비 국산화 기업으로 삼성전자·SK하이닉스 등에서 하이브리드 본딩 관련 신규 수주를 확보했지만, 분기별 실적 변동성이 커지고 있다.",
+  "en": "Auros Technology, the sole domestic localizer of overlay metrology equipment, has secured new hybrid-bonding-related orders from customers including Samsung Electronics and SK hynix, but its quarterly earnings have become increasingly volatile."
  },
  "keypoints": [
   {
-   "ko": "국내 유일 12인치 전공정 오버레이 계측장비 양산 기업으로, 주요 고객사 내 50% 이상 점유율 유지 (흥국증권 2025.12 추정)",
-   "en": "Korea's sole mass-producer of 12-inch front-end overlay metrology equipment, with over 50% share at key customers (Heungkuk Securities, Dec 2025 estimate)"
+   "ko": "오버레이 계측 장비는 전세계 3개 업체만 양산 가능한 기술 장벽이 높은 시장으로, 오로스테크놀로지는 국내 유일 국산화 업체다.",
+   "en": "Overlay metrology equipment is a high-barrier market with only three global producers, and Auros Technology is the sole domestic localizer."
   },
   {
-   "ko": "2024년 매출 614억·영업이익 61억(OPM 9.9%) 사상 최대 → 2025년 매출 521억·영업손실 84억(OPM -16.1%)으로 급반전",
-   "en": "Record 2024 results (revenue 61.4 bn KRW, operating profit 6.1 bn KRW, OPM 9.9%) sharply reversed to a 2025 operating loss of 8.4 bn KRW (OPM -16.1%) on revenue of 52.1 bn KRW"
+   "ko": "2024년 흑자전환(영업이익률 9.9%) 후 2025년 다시 적자전환(영업이익률 -16.1%)하며 분기별 매출·이익 편차가 크게 나타나고 있다.",
+   "en": "After swinging to profit in 2024 (9.9% operating margin), the company reverted to a loss in 2025 (-16.1% operating margin), with wide swings in quarterly revenue and earnings."
   },
   {
-   "ko": "2026년 1분기 매출 68억·영업손실 68억으로 업황 회복 지연 확인, 2~4분기 수주 반등이 연간 실적의 관건",
-   "en": "Q1 2026 revenue and operating loss both near 6.8 bn KRW confirm recovery lag; H2 2026 order momentum is the decisive variable for full-year performance"
+   "ko": "2025년 11월 삼성전자로부터 HBM 하이브리드 본딩용 IR 오버레이 장비 'HE-900IR' 등을 수주한 것으로 확인됐다.",
+   "en": "In November 2025, the company was confirmed to have received an order from Samsung Electronics for its 'HE-900IR' infrared overlay equipment used in HBM hybrid bonding."
   },
   {
-   "ko": "HBM 패키징 Overlay(OL-900nw)·Warpage(WaPIS-30) 신제품으로 후공정 시장 진출, 박막계측(Thin Film Metrology) 장비 상용화 단계 진행 중",
-   "en": "Entered back-end markets with HBM packaging overlay (OL-900nw) and warpage inspection (WaPIS-30); Thin Film Metrology commercialization at advanced qualification stage"
+   "ko": "일본 키옥시아, 중국 YMTC·CXMT 등으로 고객 다변화를 진행하며 SK하이닉스 편중 구조를 완화하는 중이다.",
+   "en": "The company is diversifying its customer base with Japan's Kioxia and China's YMTC and CXMT, easing its historical concentration on SK hynix."
   },
   {
-   "ko": "중국향 매출 비중 급증(2023년 기준 약 50% 수준)은 핵심 성장 원동력이자 미중 수출 규제의 최대 리스크",
-   "en": "China's elevated revenue share (~50% in 2023) is both a growth driver and the focal point of U.S.-China export control risk"
+   "ko": "주가는 순자산가치 대비 프리미엄이 있는 구간에서 거래되고 있으며, 배당은 지급되지 않고 있다.",
+   "en": "The stock trades at a premium to book value, and the company does not currently pay a dividend."
   }
  ],
  "business": {
-  "ko": "오로스테크놀로지는 2009년 설립된 반도체 전공정 계측장비 전문 기업으로, 2011년 국내 최초로 12인치 오버레이(Overlay) 계측장비 독자 개발에 성공해 KLA·ASML 중심의 글로벌 과점 시장에 국산화 대안을 제시했다. 오버레이 계측장비는 반도체 노광공정에서 회로 패턴 적층 시 수직 정렬도를 나노미터 단위로 측정·제어하는 핵심 장비로, 공정 수율과 직결되는 전략 품목이다. 흥국증권(2025.12) 추정 기준 주요 고객사 내 오버레이 장비 점유율 50% 이상을 유지하며 국내 1위 양산 지위를 확보하고 있다. 주력 제품은 12인치 전공정 오버레이 장비(OL-12inch 계열)이며, 동일 보고서 추정 기준 2025년 매출 구성은 전공정 Overlay 57%, 패키징 장비 32%로 후공정 비중이 빠르게 확대되는 추세다. 고객 포트폴리오는 상장 초기 SK하이닉스가 매출의 대부분을 차지했으나, 삼성전자 신규 편입(전공정·첨단 패키징 장비)과 중국 메모리·파운드리 업체(CXMT, JHICC 등)로 다변화됐으며, 2023년 기준 중국 매출 비중이 전체의 약 50% 수준까지 상승한 바 있다. 후공정 시장에서는 HBM용 Pad Overlay 장비(OL-900nw)와 웨이퍼 휨 검사 장비(WaPIS-30) 라인업을 구축해 첨단 패키징 수요에 대응하고 있으며, 삼성전자에 패키징용 Warpage 장비를 납품한 이력도 보유한다. 박막(Thin Film) 계측장비는 증착·식각·세정 등 다공정 대응이 가능한 차세대 제품으로, 오버레이 대비 큰 시장을 형성한 것으로 업계에서 추정하고 있으며 현재 상용화 단계를 진행 중이다. 중국법인(Auros Tech Wuxi)과 미국법인(AUROS Technology USA)을 보유하며 글로벌 영업망을 구축 중이고, 연세대와의 공동연구센터를 통해 차세대 계측 기술 역량도 강화하고 있다. 요약하면 전공정 Overlay 중심에서 후공정 패키징·박막계측·글로벌 고객으로의 4방향 확장이 진행 중이나, 현재 핵심 매출은 전공정 OL-12inch 수요 사이클에 집중되어 있어 해당 장비의 고객 투자 집행 타이밍이 분기 실적을 사실상 결정한다.",
-  "en": "Founded in 2009, Aurostechnology pioneered the domestic manufacture of 12-inch overlay metrology equipment in Korea in 2011, offering a domestically-produced alternative to the KLA–ASML global duopoly. Overlay metrology tools measure and control the nanometer-level vertical alignment accuracy of circuit pattern layers during photolithography, making them directly critical to process yield. The company holds the top domestic position in overlay metrology mass production, retaining over 50% market share at key customers per Heungkuk Securities (December 2025 estimates). The flagship OL-12inch front-end overlay series remains the primary revenue driver; per the same report, front-end overlay accounted for approximately 57% of estimated 2025 revenue, with packaging tools rising rapidly to approximately 32%, reflecting accelerating back-end penetration. Customer diversification has progressed from near-100% SK Hynix concentration at the time of listing to include Samsung Electronics (both front-end and packaging tools) and Chinese memory and foundry customers (CXMT, JHICC); China reportedly represented approximately 50% of revenues as of 2023. In the back-end segment, the OL-900nw HBM Pad Overlay and WaPIS-30 wafer warpage inspection tools address advanced packaging demand, backed by a proven delivery record to Samsung Electronics. Thin Film Metrology equipment—applicable across deposition, etch, and clean processes—is in late-stage development and is estimated to address a market larger than overlay metrology alone. Wholly-owned subsidiaries in China (Auros Tech Wuxi) and the United States (AUROS Technology USA), combined with a joint R&D center established with Yonsei University, underpin the global expansion strategy. In sum, the business is executing a four-directional expansion from front-end overlay into back-end packaging, thin-film metrology, and new geographies, yet current revenue remains highly sensitive to the OL-12inch front-end capex cycle."
+  "ko": "오로스테크놀로지는 2009년 설립돼 반도체 전공정 노광 공정에서 회로 패턴의 수직 정렬 상태를 측정하는 오버레이 계측장비를 주력으로 생산한다. 회사는 지난 2011년 국내 최초로 오버레이 계측 장비 국산화에 성공했고, 오버레이 장비 시장은 현재 오로스테크놀로지를 비롯해 미국, 네덜란드 등 전세계 3개 업체만이 생산할 만큼 기술 장벽이 높다. 오버레이 계측 장비 시장에서는 미국 KLA가 점유율 60% 이상을 차지하며 독점적 지위를 유지하고 있어, 오로스테크놀로지는 후발 국산화 사업자로서 점유율 확대를 추진하는 위치에 있다. 주력 제품은 전공정용 'OL-12inch' 장비이며, 후공정 영역에서는 웨이퍼 레벨 패키지(WLP)용 'OL-900nw', 하이브리드 본딩용 적외선(IR) 오버레이 장비 'HE-900IR', 웨이퍼 휨 검사 장비 'WaPIS-30' 등으로 라인업을 확장하고 있다. 2025년 매출 비중은 전공정 Overlay 57%, 패키징 장비 32%로 예상된다. 고객 구조는 SK하이닉스 매출 비중이 높은 편이며, 최근 삼성전자에도 장비 공급을 확대했고, YMTC·CXMT 등 중국의 주요 메모리 회사들을 거래선으로 확보하며 해외 매출 비중도 지속해서 늘리는 추세다. 일본 시장에서는 낸드플래시 기업 키옥시아에 오버레이 계측 장비 'OL-1000n'을 공급하는 등 고객 다변화 노력을 이어가고 있다. 종합하면 회사는 전공정 오버레이라는 핵심 원천기술을 바탕으로 패키징·하이브리드 본딩 등 후공정 계측 영역으로 사업 영역을 확장하는 전략을 취하고 있다.",
+  "en": "Auros Technology was founded in 2009 and primarily manufactures overlay metrology equipment that measures the vertical alignment of circuit patterns during front-end lithography processes. The company achieved Korea's first localization of overlay metrology equipment in 2011, and the overlay equipment market remains highly barrier-protected, with only three global producers including Auros Technology, a US firm, and a Dutch firm. In the overlay metrology market, KLA of the United States maintains a dominant position with more than 60% market share, positioning Auros Technology as a later entrant seeking to expand its foothold through localization. Its flagship product is the front-end 'OL-12inch' system, while its back-end lineup has expanded to include the wafer-level package (WLP) 'OL-900nw', the infrared (IR) overlay system 'HE-900IR' for hybrid bonding, and the wafer warpage inspection tool 'WaPIS-30'. For 2025, revenue mix is estimated at 57% front-end overlay and 32% packaging equipment. On the customer side, SK hynix has historically accounted for a high share of revenue, while supply to Samsung Electronics has recently expanded, and the company has secured China's major memory makers YMTC and CXMT as customers, steadily increasing its overseas revenue share. In Japan, the company has supplied its 'OL-1000n' overlay metrology equipment to NAND flash maker Kioxia as part of ongoing customer diversification efforts. Overall, the company is pursuing a strategy of expanding from its core front-end overlay technology into back-end metrology areas such as packaging and hybrid bonding."
  },
  "earnings": {
-  "ko": "최근 4개년 연간 실적은 극단적인 변동성을 보인다. 2022년에는 매출 354억원, 영업손실 33억원(OPM -9.3%), 순손실 30억원으로 반도체 업황 부진 속 적자를 기록했고, 영업활동 현금흐름도 -92억원의 대규모 유출이었다. 2023년에는 중국 고객사 확대를 중심으로 매출이 455억원(+29% YoY)으로 반등하며 영업이익 24억원(OPM 5.2%), 순이익 34억원으로 흑자전환에 성공했고, 영업활동 현금흐름도 +74억원으로 크게 개선됐다. 2024년에는 삼성전자 신규 납품 본격화와 중국 매출 급증이 맞물려 매출 614억원(+35% YoY), 영업이익 61억원(OPM 9.9%), 순이익 59억원의 사상 최대 실적을 기록했다. 그러나 2025년에는 주력 제품인 OL-12inch 장비 수요 급감과 반도체 업황 전반의 침체로 매출이 521억원(-15.1% YoY)으로 축소됐고, 원가 부담 증가와 고정비 압박이 겹쳐 영업손실 84억원(OPM -16.1%), 순손실 64억원으로 급격히 악화됐다. 분기별로는 2025년 1분기 169억(영업손실 3억)으로 시작해 2분기 139억(손실 7억)으로 완만히 악화됐다가, 3분기에 76억(손실 58억)으로 급격히 침체됐다. 2025년 4분기에는 138억(손실 16억)으로 일부 회복하며 지배순이익이 +4억원으로 소폭 흑자를 기록했다. 그러나 2026년 1분기에는 매출 68억원·영업손실 68억원으로 재급락하며 회복 모멘텀이 지연됐다. 2025년 3분기와 2026년 1분기에서 영업손실이 매출액과 거의 동일한 수준까지 확대된 것은 과도한 고정비 구조와 함께 일회성 손상·재고 조정 비용이 반영됐을 가능성을 시사하며, 2025년 영업활동 현금흐름이 순손실(64억원)에도 불구하고 +17억원의 양(+)을 유지한 점이 이를 뒷받침한다.",
-  "en": "Annual financials over the past four years reflect extreme earnings volatility. In 2022, revenue of 35.4 bn KRW produced an operating loss of 3.3 bn KRW (OPM -9.3%) and a net loss of 3.0 bn KRW, with operating cash flow deeply negative at -9.2 bn KRW. A 2023 recovery—driven by expanded Chinese customer revenues—lifted sales to 45.5 bn KRW (+29% YoY) and swung results to profitability: operating profit 2.4 bn KRW (OPM 5.2%), net profit 3.4 bn KRW, and operating cash flow surging to +7.4 bn KRW. In 2024, the ramp of Samsung Electronics deliveries and Chinese customer growth drove record results: revenue 61.4 bn KRW (+35% YoY), operating profit 6.1 bn KRW (OPM 9.9%), and net profit 5.9 bn KRW. The sharp 2025 reversal saw revenue contract 15.1% to 52.1 bn KRW as OL-12inch demand slumped; rising fixed-cost absorption and cost pressure turned operations into a loss of 8.4 bn KRW (OPM -16.1%) with a net loss of 6.4 bn KRW. Quarterly, 2025 deteriorated progressively: Q1 16.9 bn KRW revenue / -0.3 bn KRW operating; Q2 13.9 bn / -0.7 bn; Q3 7.6 bn / -5.8 bn (the cyclical nadir); Q4 13.8 bn / -1.6 bn, with the attributable net income briefly positive at +0.4 bn KRW. The Q1 2026 print of approximately 6.8 bn KRW revenue against an operating loss of approximately 6.8 bn KRW confirms that recovery has not yet materialized—revenue in Q1 2026 actually fell below even the 2025 Q3 trough level. The disproportionate losses in 2025 Q3 and Q1 2026 suggest both heavy fixed-cost drag and possible non-cash charges; the marginally positive 2025 operating cash flow (+1.7 bn KRW) versus the 6.4 bn KRW net loss supports the presence of significant non-cash expense components and provides some near-term liquidity reassurance."
+  "ko": "연간 실적을 보면 2022년 매출 354.0억원, 영업손실 32.9억원(영업이익률 -9.3%)에서 2023년 매출 455.3억원, 영업이익 23.7억원(영업이익률 5.2%)으로 흑자전환했다. 2024년에는 매출이 614.1억원까지 늘고 영업이익 60.8억원(영업이익률 9.9%)으로 이익 회복이 이어졌으나, 2025년에는 매출이 521.4억원으로 줄고 영업손실 83.7억원(영업이익률 -16.1%), 순손실 64.2억원을 기록하며 다시 적자로 돌아섰다. 분기별로는 편차가 더 뚜렷하다. 2025년 2분기 매출 138.7억원에서 3분기 75.7억원으로 급감하며 영업손실 58.1억원, 순손실 54.2억원의 큰 손실을 기록했고, 4분기에는 매출이 138.2억원으로 회복됐음에도 영업손실 15.9억원을 이어갔지만 순이익은 3.7억원으로 소폭 흑자를 냈다. 2026년 1분기에는 매출이 68.1억원으로 다시 크게 줄며 영업손실 68.2억원, 순손실 51.1억원으로 최근 분기 중 가장 부진한 실적을 기록했고, 2분기에는 매출이 113.7억원으로 회복됐으나 영업손실 22.9억원, 순손실 35.7억원이 이어졌다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순손실은 137.3억원에 달해, 2024년의 이익 회복 국면에서 다시 손실 구간으로 진입한 모습이다. 현금흐름 측면에서는 2025년 영업활동현금흐름이 16.7억원으로 순이익 적자에도 플러스를 기록했는데, 이는 재고·매출채권 등 운전자본 변동의 영향으로 보인다. 부채비율은 2022년 14.1%에서 2025년 45.2%까지 높아지며 재무 레버리지가 다소 확대된 모습이다.",
+  "en": "On an annual basis, revenue grew from 35.40 billion won with an operating loss of 3.29 billion won (-9.3% operating margin) in 2022 to 45.53 billion won with operating profit of 2.37 billion won (5.2% margin) in 2023, marking a swing to profitability. In 2024, revenue rose further to 61.41 billion won with operating profit of 6.08 billion won (9.9% margin), extending the earnings recovery, but in 2025 revenue fell to 52.14 billion won with an operating loss of 8.37 billion won (-16.1% margin) and a net loss of 6.42 billion won, reverting back to losses. The quarterly pattern shows even sharper swings. Revenue fell from 13.87 billion won in the second quarter of 2025 to 7.57 billion won in the third quarter, producing a large operating loss of 5.81 billion won and a net loss of 5.42 billion won, while the fourth quarter saw revenue recover to 13.82 billion won yet still post an operating loss of 1.59 billion won, though net income turned slightly positive at 0.37 billion won. In the first quarter of 2026, revenue dropped sharply again to 6.81 billion won, generating the weakest recent quarterly result with an operating loss of 6.82 billion won and a net loss of 5.11 billion won, before revenue recovered to 11.37 billion won in the second quarter alongside an operating loss of 2.29 billion won and a net loss of 3.57 billion won. Combined attributable net loss over the most recent four quarters (Q3 2025 through Q2 2026) reached 13.73 billion won, indicating the company has re-entered a loss phase after its 2024 earnings recovery. On the cash flow side, 2025 operating cash flow was positive at 1.67 billion won despite the net loss, likely reflecting working-capital movements in inventory and receivables. The debt ratio rose from 14.1% in 2022 to 45.2% in 2025, indicating somewhat greater financial leverage."
  },
  "industry": {
-  "ko": "글로벌 반도체 계측·검사 장비 시장은 2025년 약 149억 달러에서 2026년 158억 달러, 2034년 276억 달러로 연평균 약 7.2% 성장이 전망된다(Fortune Business Insights). 시장은 KLA가 압도적 1위를 유지하며, 상위 5개사 합산 점유율이 약 77%에 달하는 과점 구조다. 박막(Thin Film) 계측 세그먼트는 2026년 시장 내 약 30.8%의 최대 비중을 형성할 것으로 예측되며, AI·HBM·첨단 패키징 투자 확대가 계측 장비 전반의 수요 기반을 강화하고 있다. 반도체 회로가 3D 적층 및 초미세 공정으로 진화할수록 공정 단계별 정렬도 관리의 중요성이 커져 오버레이 계측 장비의 전략적 가치는 구조적으로 상승하는 추세다. 국내 동종사로는 넥스틴, 인텍플러스, 펨트론, 파크시스템스 등이 계측·검사 분야에서 경쟁하며, 후공정 계측에서는 Onto Innovation·Camtek 등 글로벌 전문사도 HBM 패키징 장비 수주를 늘리고 있다. 미국의 대중국 반도체 장비 수출 규제 강화는 중국 고객사와의 거래에 불확실성을 더하지만, KLA 등 외산 장비의 중국 공급이 제한될수록 오로스테크놀로지 장비에 대한 대체 수요가 늘어나는 이중 효과도 존재한다. QYResearch는 반도체 계측·검사 장비 글로벌 시장이 2025~2031년 연평균 7.6% 성장해 2031년 280억 달러에 달할 것으로 내다봤으며, AI·고성능 컴퓨팅·자동차 전장 수요가 성장 동인으로 작용하고 있다. 결국 한국·일본·미국의 반도체 설비투자 사이클과 HBM 생산 확대 속도가 오로스테크놀로지 장비 수요의 핵심 선행지표다.",
-  "en": "The global semiconductor metrology and inspection equipment market is projected to grow from approximately $14.9 billion in 2025 to $15.8 billion in 2026 and $27.6 billion by 2034, at a CAGR of approximately 7.2% (Fortune Business Insights). The market is a concentrated oligopoly, with KLA maintaining dominant global leadership and the top five players collectively accounting for approximately 77% of revenues. The Thin Film Metrology sub-segment is forecast to be the largest at approximately 30.8% of the market in 2026, buoyed by AI, HBM, and advanced packaging investment. As semiconductor architectures advance to 3D stacking and sub-5nm nodes, yield-critical overlay measurement becomes structurally more valuable at each process step. Korean peers include Nextin, Intekplus, Femtron, and Park Systems, while global back-end specialists such as Onto Innovation and Camtek are also capturing growing shares of HBM packaging metrology orders. U.S.-led export controls on semiconductor equipment for China introduce dual dynamics: near-term transactional uncertainty for China-directed sales, but potential demand substitution in Aurostechnology's favor if KLA and other Western tools face broader restrictions. QYResearch projects the global market to grow at a CAGR of 7.6% through 2031, reaching approximately $28 billion, driven by AI, high-performance computing, and automotive semiconductor expansion. Ultimately, capex cycles across Korean, Japanese, and U.S. semiconductor manufacturers remain the primary leading indicator for Aurostechnology's equipment demand."
+  "ko": "반도체 산업에서는 AI 가속기용 고대역폭메모리(HBM)의 적층 단수가 높아지면서 후공정 계측의 중요성이 커지고 있다. 삼성전자가 차기작인 HBM4E(7세대)부터 하이브리드 본딩 기술을 일부 도입하는 방안을 추진 중인 가운데, SK하이닉스도 내부적으로 기술 완성도를 높이며 대응 체제를 갖추는 모습이다. 다만 올해 초 JEDEC이 HBM 적층 높이 한계를 상향 조정하는 결정을 내리면서 HBM4는 상대적으로 단순한 마이크로범프 방식을 유지할 수 있게 됐고, 하이브리드 본딩의 본격 도입은 HBM4E와 HBM5 세대 말미로 늦춰질 것으로 관측된다. TC 본더 시장 점유율 70% 이상을 차지하는 한미반도체는 하이브리드 본딩 기술에 1000억원을 투자하며 투트랙 전략을 공식화했고, 한화세미텍 등도 관련 장비 개발에 뛰어들고 있어 국내 후공정 장비 업계 전반의 기술 경쟁이 치열해지는 국면이다. 해외에서는 미국 어플라이드 머티어리얼즈가 네덜란드 베시와 함께 다이 투 웨이퍼 하이브리드 본딩 통합 시스템 '키넥스'를 개발해 초기 시장을 주도할 것으로 업계는 보고 있다. 오버레이 계측 장비 자체 시장에서는 KLA가 여전히 절대적 점유율을 유지하고 있어, 오로스테크놀로지는 국내 유일의 국산화 사업자라는 지위와 신규 패키징·하이브리드 본딩용 제품 라인업으로 틈새를 파고드는 전략을 취하고 있다. 시장조사기관에 따르면 세계 하이브리드 본딩 장비 시장 규모는 2024년 15억달러에서 2033년 32억달러로 2배 이상 확대될 것으로 전망되며, 이는 오버레이 계측을 포함한 관련 후공정 계측 장비 수요 확대로 이어질 가능성이 있다.",
+  "en": "In the semiconductor industry, rising stack heights in high-bandwidth memory (HBM) for AI accelerators are increasing the importance of back-end metrology. Samsung Electronics is pursuing partial adoption of hybrid bonding technology starting with its next-generation HBM4E (seventh generation), while SK hynix is also strengthening internal technology readiness. However, a JEDEC decision earlier this year to raise the HBM stack-height limit allows HBM4 to remain on the relatively simpler microbump approach, deferring hybrid bonding's full-scale arrival to the HBM4E and HBM5 generations. Hanmi Semiconductor, which holds more than 70% of the TC bonder market, has formalized a dual-track strategy by investing 100 billion won in hybrid bonding technology, and Hanwha Semitech and others are also entering equipment development, intensifying technology competition across the domestic back-end equipment industry. Overseas, Applied Materials of the United States, working with BESI of the Netherlands, has developed the integrated die-to-wafer hybrid bonding system 'Kinex' and is expected by the industry to lead the early market. In the overlay metrology equipment market itself, KLA continues to hold an overwhelming share, positioning Auros Technology as the sole domestic localizer pursuing a niche strategy through new packaging and hybrid-bonding product lines. According to market research, the global hybrid bonding equipment market is projected to more than double from 1.5 billion dollars in 2024 to 3.2 billion dollars by 2033, which could translate into expanded demand for related back-end metrology equipment including overlay systems."
  },
  "outlook": {
-  "ko": "흥국증권은 2025년 12월 신규 커버리지 보고서에서 2026년 매출액 853억원(2025년 실적 대비 +64%), 영업이익 139억원(흑자전환)을 제시했으며, 2027년에는 영업이익이 312억원(전년 대비 +124%)까지 성장할 것으로 내다봤다. 다만 2026년 1분기 실적(매출 68억원·영업손실 68억원)이 이미 공개된 현 시점에서, 남은 3개 분기에 연간 목표를 달성하려면 매우 빠른 수주 반등이 필요하며 당초 컨센서스의 현실성은 재검토가 불가피하다. 전공정 Overlay 부문에서는 SK하이닉스·삼성전자의 HBM 생산능력 증설 및 첨단 패키징 투자 집행 타이밍이 수주 회복의 핵심 트리거다. 후공정에서는 HBM용 Pad Overlay·Warpage 장비 수주가 증가 추세이며, 하이브리드 본딩(Hybrid Bonding)용 IR Overlay 장비가 글로벌 고객의 관심을 받고 있어 중장기 성장 동력으로 평가된다. 박막(Thin Film) 계측장비는 고객 퀄리피케이션 테스트를 진행 중으로, 본격 매출 발생 시점이 추가 상방 모멘텀을 제공하는 핵심 이벤트가 될 것이다. 지역 다변화 측면에서는 일본 반도체 기업 및 글로벌 파운드리를 대상으로 수주 활동을 진행 중이며, 2026년부터 관련 매출이 가시화될 것으로 회사 측은 전망하고 있다. 결국 2026년 하반기 수주 흐름이 연간 실적 방향성을 결정하는 가장 중요한 관전 포인트다.",
-  "en": "Heungkuk Securities' December 2025 initiation report projected 2026 revenue at 85.3 bn KRW (+64% vs. 2025 actuals), operating profit at 13.9 bn KRW (profit turnaround), and 2027 operating profit at 31.2 bn KRW (+124% YoY), underpinned by new customer wins and back-end portfolio expansion. However, with Q1 2026 actuals already showing revenue of only 6.8 bn KRW alongside a near-equivalent operating loss, achieving full-year consensus requires a very steep recovery across the remaining three quarters—making reassessment of the consensus timeline unavoidable. On the front-end, HBM capacity expansion and advanced packaging capex execution by SK Hynix and Samsung Electronics are the primary triggers for order recovery. In back-end markets, HBM Pad Overlay and WaPIS-30 warpage inspection orders are on an upward trend, and IR Overlay tools for Hybrid Bonding are attracting global customer interest as a medium-term catalyst. Thin Film Metrology is progressing through customer qualification, with the commencement of commercial revenues representing a meaningful incremental earnings upside event. Geographically, active order prospecting targeting Japanese semiconductor firms and global foundries is ongoing, with management guiding for visible revenue contributions from 2026. The trajectory of H2 2026 order intake will be the single most important determinant of whether 2026 marks a genuine inflection year or a continued trough."
+  "ko": "회사는 2025년 11월 삼성전자로부터 HBM 하이브리드 본딩 계측 장비와 후공정 계측 장비를 연이어 수주한 것으로 확인됐으며, 적외선(IR) 오버레이 장비 'HE-900IR'의 전체 수주액은 60억원가량으로 2024년 매출액(614억원) 대비 약 9.8% 수준으로 파악된다. 이번 수주를 계기로 SK하이닉스 협력사로 알려졌던 회사가 삼성전자의 전공정과 하이브리드 본딩, 후공정을 모두 아우르는 계측 장비 공급사로 자리매김했다는 평가가 나온다. 일본 시장에서는 지난 7월 현지 사무소를 설립하고 키옥시아 기타카미 팹을 지원하는 태스크포스를 파견하는 등 영업을 강화해 왔으며, 업계 관계자는 키옥시아의 대규모 투자가 이어지는 만큼 추가 성과를 기대할 수 있을 것이라고 언급했다. 흥국증권은 지난해 12월 리포트에서 2026년 매출액을 853억원(전년 대비 +39%), 영업이익을 139억원(흑자전환)으로 전망하며 전공정 Overlay 매출이 신규 고객사 투자 확대에 힘입어 52% 성장할 것으로 내다봤는데, 이는 발표 시점 기준 전망치로 이후 공시된 2026년 1분기·2분기 실적과는 괴리가 있어 실제 진행 상황은 향후 분기 실적으로 확인이 필요하다. 회사는 전공정 오버레이 중심에서 HBM용 Pad Overlay, WLP용 Warpage 장비 등 후공정용 포트폴리오 확대를 지속하며 신규 고객사 확보를 추진하고 있다. 하이브리드 본딩용 IR 오버레이 장비가 글로벌 고객사의 관심을 받고 있다는 평가도 나오는 만큼, 관련 수주의 실제 매출 반영 시점과 규모가 향후 실적의 핵심 변수가 될 것으로 보인다.",
+  "en": "The company was confirmed in November 2025 to have received consecutive orders from Samsung Electronics for HBM hybrid bonding metrology equipment and back-end metrology equipment, with the total order for its infrared (IR) overlay system 'HE-900IR' estimated at about 6 billion won, roughly 9.8% of 2024 revenue of 61.4 billion won. This order is seen by some in the industry as marking the company's evolution from a supplier known mainly to SK hynix into a metrology equipment provider spanning Samsung's front-end, hybrid bonding, and back-end processes. In Japan, the company established a local office last July and has dispatched a task force to support Kioxia's Kitakami fab, with an industry source noting that additional gains could be expected given Kioxia's large-scale investment. Heungkuk Securities projected in a December 2025 report that 2026 revenue would reach 85.3 billion won (up 39% year-on-year) with operating profit of 13.9 billion won (a swing to profit), forecasting 52% growth in front-end overlay revenue on expanded investment from existing and new customers; however, this forecast has diverged from the first- and second-quarter 2026 results reported since then, so actual progress needs to be confirmed through upcoming quarterly results. The company continues to expand its back-end portfolio with HBM pad overlay and WLP warpage equipment beyond its core front-end overlay business while pursuing new customer acquisitions. Given assessments that its IR overlay equipment for hybrid bonding is drawing interest from global customers, the timing and scale of actual revenue recognition from related orders are likely to be a key variable for future earnings."
  },
  "valuation_comment": {
-  "ko": "주당순손실(EPS) -1,208원, 주당순자산(BPS) 6,353원을 기준으로, 손실 구간에서는 PER이 산출되지 않으며 주가는 순자산 대비 상당한 프리미엄 구간에 형성되어 있다. 이는 시장이 현재 적자 상황보다 중장기 실적 회복 기대를 선반영하고 있음을 나타내며, 흑자전환 시점과 신제품 상용화 일정에 주가가 매우 민감하게 반응하는 구조다. 배당은 2025년 기준 무배당(DPS 0원)으로, 수익이 복구되기 전까지 배당수익률은 업종 평균을 크게 하회하는 수준이다. 52주 주가 범위(18,390~44,850원)에서 확인되듯 오버레이 계측 장비 수급 기대감의 진폭이 크고, 수주 공시·고객사 투자 발표 등 이벤트에 연동한 주가 변동성이 높게 유지되는 특성이 있다. 안정적 실적을 바탕으로 높은 밸류에이션 배수를 유지하는 글로벌 경쟁사 KLA와 달리, 오로스테크놀로지에 대한 시장의 프리미엄 평가는 후공정·박막계측 신사업의 상용화 성과와 적자 구간 탈출 속도에 직결되어 있다.",
-  "en": "With an EPS of -1,208 KRW and BPS of 6,353 KRW, PER is not calculable in the current loss period; the shares trade at a substantial premium to book value, indicating that the market is pricing in meaningful forward earnings recovery rather than current fundamentals. This premium makes the stock price acutely sensitive to the timing of the profit turnaround and new product commercialization milestones. No dividend was paid in 2025 (DPS: 0 KRW), leaving the dividend yield well below sector averages until profitability is restored. The 52-week trading range of approximately 18,390 to 44,850 KRW reflects large sentiment-driven swings tied to order announcements and customer capex news, underscoring the event-driven nature of the stock's price behavior. Unlike global peer KLA—which commands a sustained premium on consistent earnings—the market-assigned premium on Aurostechnology is contingent on demonstrating credible back-end and Thin Film Metrology commercialization success and a visible path back to operating profitability."
+  "ko": "회사는 최근 순손실이 이어지고 있어 주가수익비율(PER)은 산정되지 않는 상태이며, 주가순자산비율(PBR)은 순자산가치 대비 프리미엄이 있는 구간에서 거래되고 있다. 이는 반도체 계측장비 국산화라는 희소성과 삼성전자·SK하이닉스 등 국내 대형 고객사 기반, 후공정·하이브리드 본딩으로의 사업 확장 기대가 일부 반영된 결과로 해석될 수 있다. 다만 2024년의 이익 회복 이후 2025년과 2026년 상반기에 다시 손실 구간에 진입한 점을 고려하면, 순자산 대비 프리미엄의 근거가 되는 미래 이익 개선 속도에 대한 시장의 기대와 실제 실적 간 간극을 지켜볼 필요가 있다. 배당은 현재 지급되지 않고 있어, 주주환원보다는 재투자와 성장에 자금이 집중되는 구조로 볼 수 있다. 향후 분기 실적에서 영업이익률이 개선되는 흐름이 확인되는지가 프리미엄의 지속 여부를 판단하는 데 중요한 변수가 될 것으로 보인다.",
+  "en": "With recent net losses, the company's price-to-earnings ratio (PER) is not meaningful, and its price-to-book ratio (PBR) trades at a premium to net asset value. This can be interpreted as partly reflecting the scarcity value of being a domestic localizer of semiconductor metrology equipment, its base of large domestic customers including Samsung Electronics and SK hynix, and expectations for business expansion into back-end and hybrid bonding areas. However, given that the company reverted to losses in 2025 and the first half of 2026 after its 2024 earnings recovery, it is worth monitoring the gap between market expectations for future profit improvement, which underpin the premium to book value, and actual reported results. The company currently pays no dividend, suggesting capital is being directed toward reinvestment and growth rather than shareholder returns. Whether an improving trend in operating margin materializes in coming quarters will likely be an important variable in assessing whether the current premium persists."
  },
  "bull": [
   {
    "title": {
-    "ko": "독점적 국산화 지위와 고객사 내 방어적 점유율",
-    "en": "Dominant Nationalization Position and Defensible Customer Share"
+    "ko": "과점 시장의 국산화 지위",
+    "en": "Localization Status in an Oligopolistic Market"
    },
    "body": {
-    "ko": "오로스테크놀로지는 국내 유일의 전공정 12인치 오버레이 계측장비 양산 기업으로, SK하이닉스의 '기술혁신 강소기업' 선정 이력에서 보듯 핵심 공급업체로서의 신뢰를 구축했다. KLA 대비 경쟁력 있는 가격과 신속한 현지 서비스가 핵심 차별점이며, 일단 고객 팹에 장비가 설치되면 교체 비용과 재퀄리피케이션 부담으로 교체 저항이 높아 점유율 유지가 용이하다. 미국 주도 대중국 수출 규제로 KLA 등 외산 대안이 제한될수록 오로스테크놀로지 장비에 대한 중국 고객의 의존도가 역설적으로 높아지는 구조적 이점도 상존한다.",
-    "en": "Aurostechnology is Korea's sole mass-producer of 12-inch front-end overlay metrology equipment, with a proven track record as an SK Hynix-designated Technology Innovation SME establishing deep customer trust. Competitive pricing versus KLA and rapid local service responsiveness are core differentiators; once qualified and installed within a customer fab, the high switching costs and re-qualification burden make installed-base retention structurally robust. As U.S.-led export controls tighten, the resulting restriction on KLA and other foreign alternatives paradoxically increases Chinese customers' reliance on Aurostechnology—a structural upside optionality."
+    "ko": "오버레이 계측 장비는 전세계 3개 업체만 양산 가능한 높은 기술 장벽을 가진 시장으로, 오로스테크놀로지는 국내 유일 국산화 사업자다. 삼성전자가 최근 하이브리드 본딩용 IR 오버레이 장비를 발주하며 SK하이닉스에 편중됐던 고객 구조가 삼성전자까지 확대되는 모습이다. 진입장벽이 높은 시장에서 확보한 지위는 신규 경쟁자의 단기 진입을 어렵게 하는 요인으로 작용할 수 있다.",
+    "en": "Overlay metrology equipment is a market with only three global producers due to high technical barriers, and Auros Technology is the sole domestic localizer. Samsung Electronics' recent order for hybrid-bonding IR overlay equipment shows the customer base expanding beyond its historical concentration on SK hynix. This position in a high-barrier market may make near-term entry by new competitors more difficult."
    }
   },
   {
    "title": {
-    "ko": "HBM·첨단 패키징 수요 확대가 여는 후공정 신시장",
-    "en": "Back-End Market Opportunity Unlocked by HBM and Advanced Packaging Demand"
+    "ko": "후공정·하이브리드 본딩으로 사업 확장",
+    "en": "Expansion into Back-End and Hybrid Bonding"
    },
    "body": {
-    "ko": "생성형 AI 확산에 따른 HBM 투자 급증은 첨단 패키징 공정 내 Overlay 계측 수요의 구조적 증가를 이끌고 있으며, 키움증권은 HBM TSV 공정 투자 확대가 오로스테크놀로지의 후공정 장비 수요를 이끌 것으로 분석했다. 회사는 패키징 Overlay 장비(OL-900nw)와 웨이퍼 휨 검사 장비(WaPIS-30)로 이 시장에 진입했으며, 삼성전자에 Warpage 장비를 납품한 실적을 보유한다. 하이브리드 본딩용 IR Overlay 장비가 글로벌 고객의 관심을 받고 있어, 전공정 Overlay에 집중됐던 수익 구조가 점차 분산되며 업황 사이클 의존도를 완화하는 완충 역할이 기대된다.",
-    "en": "The generative AI-driven HBM investment surge is creating a structural increase in overlay metrology demand within advanced packaging processes; Kiwoom Securities noted that expanding HBM TSV process investments should drive back-end equipment demand for Aurostechnology. The company has entered this segment with the OL-900nw packaging overlay and WaPIS-30 wafer warpage inspection tools, backed by a delivery record with Samsung Electronics. IR Overlay tools for Hybrid Bonding are attracting global customer interest, and their commercialization would diversify the revenue mix away from exclusive front-end capex cycle dependency."
+    "ko": "회사는 전공정 오버레이 중심에서 패키징용 OL-900nw, 하이브리드 본딩용 HE-900IR, 웨이퍼 휨 검사 WaPIS-30 등으로 제품 라인업을 확대하고 있다. HBM 적층 단수 증가에 따라 후공정 내 오버레이 장비 도입이 늘고 있다는 평가가 나오는 만큼, 관련 제품군의 매출 비중 확대 여지가 있다. 2025년 매출 비중에서 패키징 장비가 32%까지 늘어난 것으로 추정되는 점도 이런 흐름을 뒷받침한다.",
+    "en": "The company is expanding its product lineup from core front-end overlay equipment into packaging-focused OL-900nw, hybrid-bonding-focused HE-900IR, and wafer warpage inspection tool WaPIS-30. As industry sources note growing adoption of overlay equipment in back-end processes amid rising HBM stack counts, there is room for these product lines to increase their revenue contribution. The estimated rise in packaging equipment's revenue share to 32% in 2025 supports this trend."
    }
   },
   {
    "title": {
-    "ko": "박막계측 신사업 및 일본·글로벌 고객 확장으로 성장 기반 확대",
-    "en": "Thin Film Metrology and Japan/Global Customer Expansion Broadening the Growth Foundation"
+    "ko": "고객·지역 다변화 진행",
+    "en": "Ongoing Customer and Regional Diversification"
    },
    "body": {
-    "ko": "개발 중인 박막(Thin Film) 계측장비는 오버레이보다 큰 시장을 형성한 것으로 업계에서 추정하며, 증착·식각·세정 등 다공정에 적용 가능해 수익 다각화 잠재력이 높다. 일본 반도체 기업 등 글로벌 고객 개척이 진행 중이며, 2026년부터 해당 지역 매출 가시화가 예고됨에 따라 SK하이닉스·삼성전자 의존도를 낮추고 고객 집중 리스크를 완화하는 데 기여할 수 있다. 연세대와의 공동연구센터 설립을 통해 차세대 계측 기술 역량을 강화하고 있다는 점도 장기 기술 경쟁력 측면에서 긍정적이다.",
-    "en": "Thin Film Metrology equipment under development is estimated by industry observers to address a market larger than overlay metrology, with broad applicability across deposition, etch, and clean processes offering substantial revenue diversification potential. Active prospecting of Japanese semiconductor firms and global foundries aims to reduce SK Hynix and Samsung Electronics concentration risk, with visible revenue contributions anticipated from 2026. A jointly established R&D center with Yonsei University further underscores the company's sustained investment in next-generation metrology technology capabilities."
+    "ko": "회사는 SK하이닉스 편중 구조에서 벗어나 삼성전자, 중국 YMTC·CXMT, 일본 키옥시아 등으로 고객사를 넓히고 있다. 지난해 일본 현지 사무소를 설립하고 키옥시아 기타카미 팹 지원 태스크포스를 운영하는 등 해외 영업을 강화하고 있다. 특정 고객사에 대한 매출 의존도가 낮아지면 실적의 안정성이 개선될 잠재력이 있다.",
+    "en": "The company is broadening its customer base beyond its historical concentration on SK hynix to include Samsung Electronics, China's YMTC and CXMT, and Japan's Kioxia. It has strengthened overseas sales efforts, including establishing a local office in Japan last year and operating a task force supporting Kioxia's Kitakami fab. Reduced dependence on any single customer has the potential to improve the stability of results over time."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "실적 회복 지연과 극단적 손익 변동성",
-    "en": "Delayed Earnings Recovery and Extreme P&L Volatility"
+    "ko": "분기별 실적 변동성 확대",
+    "en": "Widening Quarterly Earnings Volatility"
    },
    "body": {
-    "ko": "2026년 1분기 매출 68억원·영업손실 68억원은 연간 회복 시나리오와 큰 괴리를 보이며 실적 가시성을 현저히 낮췄다. 최근 4년간 영업이익률이 -9.3% → +5.2% → +9.9% → -16.1%로 극단적으로 반복되는 구조는 소규모 매출 기반에 과도한 고정비가 맞물린 결과이며, 수주 공백이 장기화될 경우 손실이 더 확대될 수 있다. 부채비율이 2023년 19.0%에서 2025년 45.2%로 빠르게 상승한 점은 적자 기간이 길어질수록 재무 완충력이 소진될 가능성을 시사한다.",
-    "en": "Q1 2026 revenue and operating loss both near 6.8 bn KRW represent a stark deviation from consensus recovery expectations and materially reduce near-term earnings visibility. The extreme OPM cycle—from -9.3% (2022) to +9.9% (2024) and back to -16.1% (2025)—reflects a high fixed-cost structure relative to the revenue base that amplifies losses during order troughs; prolonged gaps could deepen losses further. The rapid rise in debt ratio from 19.0% (2023) to 45.2% (2025) signals progressively tightening financial headroom if the loss period extends."
+    "ko": "2025년 3분기 매출이 75.7억원까지 급감하고 2026년 1분기에도 68.1억원으로 다시 크게 줄어드는 등 분기별 매출과 이익의 편차가 매우 크게 나타나고 있다. 장비 인식 시점이 특정 분기에 집중되는 수주형 매출 구조상 예측 가능성이 낮다는 점이 부담 요인이다. 최근 네 개 분기 합산으로는 순손실이 지속되고 있다.",
+    "en": "Quarterly revenue and earnings have shown very wide swings, including a sharp drop to 7.57 billion won in the third quarter of 2025 and another steep decline to 6.81 billion won in the first quarter of 2026. The order-driven revenue structure, where equipment recognition concentrates in specific quarters, results in low predictability, which is a burden factor. Net losses have persisted on a trailing four-quarter combined basis."
    }
   },
   {
    "title": {
-    "ko": "중국 수출 규제 리스크와 지역 집중 구조",
-    "en": "China Export Control Risk Compounded by Geographic Revenue Concentration"
+    "ko": "하이브리드 본딩 상용화 지연 가능성",
+    "en": "Possible Delay in Hybrid Bonding Commercialization"
    },
    "body": {
-    "ko": "2023년 기준 중국 매출 비중이 전체의 약 50%까지 상승한 것으로 알려져 있어, 미국 주도 대중국 반도체 장비 수출 규제가 확대될 경우 주요 성장 동력이 직격탄을 맞을 수 있다. 중국 메모리·파운드리 고객사와의 거래가 제한되면 단기적으로 일본이나 미주 수주로 대체하기 어려워 상당한 매출 공백이 발생할 가능성이 있다. 지정학적 리스크는 회사가 통제 불가능한 외부 변수로, 비중국 고객 비중의 빠른 확대 없이는 이 리스크가 구조적 취약점으로 지속된다.",
-    "en": "With China reportedly accounting for approximately 50% of revenues as of 2023, any expansion of U.S.-led export controls on advanced semiconductor equipment for China could directly impair the company's primary growth driver. Restrictions on transactions with Chinese memory and foundry customers would create near-term revenue gaps that cannot be quickly offset by orders from Japan or the Americas. As geopolitical risk lies entirely outside management's control, the absence of rapid non-China customer growth would leave China exposure as a persistent structural vulnerability."
+    "ko": "올해 초 JEDEC의 HBM 적층 높이 한계 상향 결정으로 HBM4는 상대적으로 단순한 마이크로범프 방식을 유지할 수 있게 됐고, 하이브리드 본딩의 본격 도입은 HBM4E·HBM5 세대 말미로 늦춰질 것으로 관측된다. 이는 하이브리드 본딩용 IR 오버레이 장비의 매출 반영 시점이 예상보다 늦어질 가능성을 의미한다. 관련 신제품에 대한 성장 기대가 실제 매출로 이어지는 시점을 지켜볼 필요가 있다.",
+    "en": "A JEDEC decision earlier this year to raise the HBM stack-height limit allows HBM4 to remain on the relatively simpler microbump approach, with hybrid bonding's full-scale adoption expected to be pushed back to the later HBM4E and HBM5 generations. This implies that revenue recognition timing for hybrid-bonding IR overlay equipment could be later than anticipated. It will be important to monitor when growth expectations for these new products actually translate into revenue."
    }
   },
   {
    "title": {
-    "ko": "글로벌 경쟁사 대비 기술·규모 격차",
-    "en": "Technology and Scale Gaps Versus Global Peers"
+    "ko": "경쟁 심화와 점유율 방어 부담",
+    "en": "Intensifying Competition and Share-Defense Pressure"
    },
    "body": {
-    "ko": "오버레이 계측 시장은 KLA와 ASML이 글로벌 기술 선도를 유지하며 상위 5개사가 전체 시장의 약 77%를 점유하는 과점 구조다. 오로스테크놀로지는 가격과 서비스에서 차별화하지만, EUV 등 최첨단 노광공정 영역에서의 기술 격차를 해소하지 못할 경우 상단 시장 침투에 한계가 있다. 박막계측·후공정 장비 분야에서는 Onto Innovation·Camtek 등 글로벌 전문사와 새로이 경쟁해야 하며, 고객 퀄리피케이션에 소요되는 긴 리드타임이 신규 시장 진입 속도를 제한하는 요인으로 작용한다.",
-    "en": "The global overlay metrology market is dominated by KLA and ASML, with the top five vendors controlling approximately 77% of the market. Aurostechnology's competitive edge lies in price and service, but failure to close the technology gap with KLA in EUV and other leading-edge processes could cap its addressable market ceiling. In back-end and thin-film segments, it now competes against established global specialists such as Onto Innovation and Camtek, where extended customer qualification lead times constrain the pace of market entry."
+    "ko": "오버레이 계측 장비 시장에서 KLA가 여전히 60% 이상의 절대적 점유율을 유지하고 있다. 후공정 하이브리드 본딩 장비 분야에서는 미국 어플라이드 머티어리얼즈·네덜란드 베시의 통합 시스템 '키넥스'와 국내 한미반도체·한화세미텍 등 대형 장비사들의 투자가 확대되고 있어 경쟁이 한층 치열해지는 국면이다. 상대적으로 자본력이 제한적인 오로스테크놀로지로서는 연구개발 투자 부담이 커질 수 있다.",
+    "en": "KLA continues to hold an overwhelming share of more than 60% in the overlay metrology equipment market. In the back-end hybrid bonding equipment segment, competition is intensifying as Applied Materials of the US and BESI of the Netherlands expand their integrated 'Kinex' system and as large domestic equipment makers such as Hanmi Semiconductor and Hanwha Semitech increase investment. For Auros Technology, which has relatively limited capital resources, the burden of R&D investment could grow."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "지정학·수출 규제 리스크",
-    "en": "Geopolitical and Export Control Risk"
+    "ko": "실적 변동성",
+    "en": "Earnings Volatility"
    },
    "body": {
-    "ko": "미국 주도 대중국 반도체 장비 수출 규제의 점진적 강화는 오로스테크놀로지의 중국향 장비 공급에 직접적 제약을 가할 수 있으며, 규제 범위가 오버레이 계측 장비까지 확대될 경우 매출이 단기에 급감할 위험이 있다. 외산 장비의 중국 접근이 제한되면 대체 수요가 발생할 수 있다는 양면성도 있으나, 규제 조치의 속도와 범위에 따라 결과가 달라진다. 이 리스크는 회사가 통제 불가능한 외부 요인이므로, 비중국 고객 다변화 속도가 실질적인 완충 효과를 결정한다.",
-    "en": "Progressively tightening U.S.-led export controls on semiconductor equipment for China could directly restrict Aurostechnology's China-directed supply capability; if restrictions expand to cover overlay metrology tools more broadly, a rapid near-term revenue decline becomes a realistic scenario. The dual dynamic—potential substitution demand if Western tools face broader restrictions—offers some offset, but outcomes depend heavily on the pace and scope of regulatory actions. As this risk is entirely exogenous, the speed of non-China customer diversification determines the effective buffer."
+    "ko": "수주형 매출 구조 특성상 특정 분기에 장비 인식이 집중되며 매출과 이익의 분기별 편차가 크게 나타난다. 2025년과 2026년 상반기에 걸쳐 적자와 소폭 흑자가 반복되는 패턴이 이어지고 있어, 단기 실적만으로 사업 방향성을 판단하기 어렵다. 향후 여러 분기에 걸친 흐름을 함께 확인할 필요가 있다.",
+    "en": "Due to the order-driven revenue structure, equipment recognition concentrates in specific quarters, producing large quarterly swings in revenue and earnings. A pattern of alternating losses and small profits has continued through 2025 and the first half of 2026, making it difficult to judge business direction from short-term results alone. It is necessary to review the trend across multiple upcoming quarters together."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중 및 투자 사이클 리스크",
-    "en": "Customer Concentration and Capex Cycle Risk"
+    "ko": "기술·경쟟 리스크",
+    "en": "Technology and Competition Risk"
    },
    "body": {
-    "ko": "SK하이닉스·삼성전자의 반도체 설비투자 사이클이 분기 매출을 사실상 결정하는 구조로, 두 고객의 투자 집행 지연이 즉각적인 수주 공백으로 연결된다. 2025년 실적 급락과 2026년 1분기 재급락이 이 구조적 취약성을 실증했으며, 장비 업체 특성상 수주 발생에서 매출 인식까지 리드타임이 존재해 공백의 영향이 수 분기 이어질 수 있다. 분기별 수주 공시가 실적의 핵심 선행지표로 작용하므로 지속적 모니터링이 필수적이다.",
-    "en": "SK Hynix's and Samsung Electronics' capex decisions effectively determine Aurostechnology's quarterly revenue; investment deferrals by either customer create immediate order gaps, as vividly demonstrated by the sharp declines in 2025 and Q1 2026. Given the inherent lead time between order intake and revenue recognition in equipment businesses, the impact of order gaps can persist for multiple quarters. Monitoring quarterly order announcement disclosures is essential, as they serve as the primary leading indicator for earnings outcomes."
+    "ko": "하이브리드 본딩 상용화 시점이 업계 전망에 따라 늦춰질 가능성이 있고, 이 경우 관련 신제품의 매출 기여가 지연될 수 있다. 동시에 글로벌 대형 장비사와 국내 후발 경쟁사들이 관련 기술 투자를 확대하고 있어 향후 점유율 경쟁이 심화될 가능성이 있다. 기술 검증·양산 적용까지 걸리는 시간도 불확실성 요인이다.",
+    "en": "The timing of hybrid bonding commercialization could be delayed relative to industry forecasts, potentially pushing back revenue contribution from related new products. At the same time, large global equipment makers and domestic latecomer competitors are expanding investment in related technology, raising the possibility of intensifying share competition going forward. The time required for technology validation and mass-production adoption is also a source of uncertainty."
    }
   },
   {
    "cat": {
-    "ko": "신제품 상용화 지연 및 기술 실행 리스크",
-    "en": "New Product Commercialization Delay and Technology Execution Risk"
+    "ko": "고객 집중도",
+    "en": "Customer Concentration"
    },
    "body": {
-    "ko": "박막(Thin Film) 계측장비와 하이브리드 본딩용 IR Overlay 장비는 중장기 성장의 핵심 동력이지만, 고객 퀄리피케이션 통과 시점이나 초도 수주 규모가 예상보다 지연·축소될 위험이 있다. 글로벌 경쟁사가 이미 트랙레코드를 보유한 시장에 신규 진입하는 만큼 인증 과정이 길어질 수 있으며, R&D 비용이 지속 발생하는 가운데 상용화가 지연되면 고정비 부담이 적자 구간을 연장하는 요인으로 작용한다. 기술 개발 성공 여부와 시장 수용 속도가 이 리스크의 핵심 변수다.",
-    "en": "Thin Film Metrology and Hybrid Bonding IR Overlay tools are central to the long-term growth thesis, but qualification timelines and initial order sizes may disappoint if customers take longer than expected to qualify new suppliers in segments where global competitors already hold established track records. Ongoing R&D spending sustains fixed-cost overhead; delays in commercialization would prolong the loss period. The ultimate pace of technology delivery and market adoption are the controlling variables for this risk."
+    "ko": "매출 비중에서 SK하이닉스가 여전히 높은 편이며, 최근 삼성전자·중국·일본 고객사로 다변화가 진행 중이지만 아직 완전히 분산되지는 않은 것으로 보인다. 특정 고객사의 투자 계획 변경이나 발주 지연이 발생하면 실적에 직접적인 영향을 줄 수 있다. 신규 고객사와의 계약이 안정적인 반복 매출로 이어지는지 확인이 필요하다.",
+    "en": "SK hynix still accounts for a relatively high share of revenue, and while diversification toward Samsung Electronics and customers in China and Japan is underway, the base does not yet appear fully dispersed. Changes in a specific customer's investment plans or order delays could directly affect results. It will be necessary to confirm whether contracts with new customers translate into stable, recurring revenue."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 분기 실적 공시: 매출 반등 및 영업손익 개선 폭 확인. 상반기 합산 실적이 연간 회복 시나리오의 현실성을 판단하는 핵심 기준점이 되며, 1분기 수준의 지속 여부 vs. 계절적 반등 여부가 분기점이다.",
-    "en": "Q2 2026 earnings release: assess revenue rebound and narrowing of operating losses. The H1 2026 aggregate is the benchmark for judging full-year recovery credibility; the key question is whether Q1 trough levels persist or a seasonal order upturn materializes."
+    "ko": "2026년 3분기 분기보고서 공시 시점으로, 최근 이어진 손실 흐름이 지속되는지 또는 개선되는지를 확인할 수 있다.",
+    "en": "This is the expected filing date for the third-quarter 2026 quarterly report, allowing confirmation of whether the recent loss trend continues or improves."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "H2 2026"
+    "ko": "2026년 4분기 중",
+    "en": "During the fourth quarter of 2026"
    },
    "what": {
-    "ko": "박막(Thin Film) 계측장비 고객 퀄리피케이션 완료 및 초도 수주 공시: 신제품 상용화 시점이 중장기 성장 기대치 재평가의 기준이 되며, 성공 시 영업 레버리지 확대와 포트폴리오 다변화 효과를 검증하는 중요한 이정표다.",
-    "en": "Thin Film Metrology customer qualification completion and first commercial order announcement: the commercialization timeline of this product line is the basis for reassessing long-term growth expectations and, if successful, validates the earnings leverage and portfolio diversification thesis."
+    "ko": "삼성전자·SK하이닉스의 HBM4E 하이브리드 본딩 검증 진행 상황과 관련 계측 장비 추가 발주 여부를 확인할 필요가 있다.",
+    "en": "It will be worth checking the progress of Samsung Electronics' and SK hynix's HBM4E hybrid bonding validation and whether additional related metrology equipment orders follow."
    }
   },
   {
    "when": {
-    "ko": "2026년 3~4분기",
-    "en": "Q3–Q4 2026"
+    "ko": "2026년 4분기~2027년 초",
+    "en": "Fourth quarter of 2026 through early 2027"
    },
    "what": {
-    "ko": "일본·글로벌 파운드리 고객사 수주 공시 확인: 2026년부터 가시화될 것으로 예고된 해외 신규 매출의 실현 규모가 지역 집중도 리스크 완화의 실질적 신호탄이 될 전망이다.",
-    "en": "New order announcements from Japanese semiconductor firms and global foundry customers: the size and timing of guided overseas revenue materializing from 2026 will serve as a concrete signal of progress in reducing geographic concentration risk."
+    "ko": "키옥시아 등 일본 고객사 대상 추가 수주 및 테스트 장비의 정식 양산 장비 전환 여부를 확인해야 한다.",
+    "en": "Additional orders from Japanese customers such as Kioxia and whether test equipment converts into formal mass-production orders should be monitored."
    }
   },
   {
    "when": {
-    "ko": "수시 모니터링",
-    "en": "Ongoing"
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "미국 BIS 규정 및 동맹국의 대중국 반도체 장비 수출 규제 추가 강화 여부: 중국 매출 비중이 높은 구조에서 규제 범위의 확대는 즉각적인 실적 영향 요인으로 작용하므로 관련 정책 공표를 주의 깊게 추적해야 한다.",
-    "en": "U.S. BIS regulations and allied-country export control updates targeting semiconductor equipment for China: given the elevated China revenue exposure, any expansion of restricted equipment categories will have immediate earnings implications and demands continuous policy monitoring."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 연중 SK하이닉스·삼성전자 IR 이벤트",
-    "en": "Throughout 2026: SK Hynix and Samsung Electronics IR Events"
-   },
-   "what": {
-    "ko": "두 핵심 고객의 공식 반도체 설비투자 가이던스 및 HBM 증설 계획 발표: 이들의 투자 집행 타이밍이 전공정·후공정 장비 수주의 선행지표로 작용하며, 구체적인 투자 확대 발표는 수주 반등의 유효한 확인 신호다.",
-    "en": "Official semiconductor capex guidance and HBM capacity expansion plans from SK Hynix and Samsung Electronics: their investment execution timing serves as the primary leading indicator for Aurostechnology's front-end and back-end order flow, and announced capex increases are a meaningful positive signal for earnings recovery."
+    "ko": "2026년 연간 사업보고서 공시를 통해 흥국증권 등이 제시했던 2026년 매출·이익 전망치와 실제 실적 간 격차를 확인할 수 있다.",
+    "en": "The 2026 annual business report filing will allow confirmation of the gap between 2026 revenue and profit forecasts previously issued by securities firms such as Heungkuk Securities and actual results."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "오로스테크놀로지는 반도체 전공정 오버레이 계측장비의 국내 유일 양산 기업으로서 독점적 기술 지위를 보유하고 있으며, 2024년 매출 614억원·영업이익 61억원의 사상 최대 실적으로 그 성장 잠재력을 입증했다. 그러나 2025년 영업손실 84억원에 이어 2026년 1분기에도 매출 68억원·영업손실 68억원이 재현되면서 회복 모멘텀의 가시성이 현저히 낮아졌으며, 부채비율이 2023년 19.0%에서 2025년 45.2%로 빠르게 상승해 재무 완충력도 줄어들고 있다. HBM 후공정 계측 수요 확대, 박막계측 장비 상용화, 일본·글로벌 고객 다변화라는 중장기 성장 동력은 방향성 측면에서 여전히 유효하고, 2025년 영업활동 현금흐름이 소폭 양(+)을 유지한 점은 현금 기반의 일정 방어력을 시사한다. 핵심 관전 포인트는 ① 2026년 하반기 수주 흐름의 반등 여부, ② 박막계측 장비 고객 퀄리피케이션 통과 시점, ③ 대중국 수출 규제의 적용 범위 변화이며, 이 세 이벤트의 실현 속도가 강세·약세 시나리오의 분기점을 결정한다. 현 시점에서 투자자는 분기 수주 공시와 핵심 고객사의 설비투자 가이던스를 면밀히 추적하는 것이 최우선 과제이며, 실적 가시성 확보 없이 기대를 앞서는 구간에 대해서는 신중한 접근이 필요하다.",
-   "en": "Aurostechnology occupies a uniquely defensible position as Korea's sole mass-producer of front-end overlay metrology equipment, with 2024's record revenue of 61.4 bn KRW and operating profit of 6.1 bn KRW validating its structural growth potential. However, the 2025 operating loss of 8.4 bn KRW followed by a near-equivalent Q1 2026 revenue-to-loss situation has materially reduced near-term earnings visibility, while the debt ratio's rapid rise from 19.0% (2023) to 45.2% (2025) progressively narrows the financial cushion. The medium-to-long-term growth levers—HBM back-end metrology, Thin Film Metrology commercialization, and geographic diversification into Japan and the Americas—remain directionally intact, and the marginally positive 2025 operating cash flow provides some near-term cash resilience. The three defining milestones are: (1) whether H2 2026 order intake shows a genuine rebound, (2) the timing of Thin Film Metrology customer qualification completion, and (3) the evolving scope of China export controls. The pace at which these events unfold will determine whether 2026 marks a true inflection or a prolonged trough; close monitoring of quarterly order announcements and anchor customer capex guidance represents the most critical analytical discipline for observers of this stock."
+   "ko": "오로스테크놀로지는 오버레이 계측 장비 국산화라는 희소한 기술 지위를 바탕으로 삼성전자·SK하이닉스 등 국내 대형 반도체 업체와 일본·중국 고객사로 거래 기반을 넓혀왔다. 그러나 2024년의 이익 회복 이후 2025년과 2026년 상반기에 다시 적자 국면으로 돌아섰고, 분기별 매출과 이익의 편차가 매우 크게 나타나는 점은 사업 특성상 반복적으로 관찰되는 패턴이다. 삼성전자로부터의 하이브리드 본딩용 IR 오버레이 장비 수주는 고객 기반 확장의 긍정적 신호로 평가되지만, 하이브리드 본딩 자체의 산업 내 상용화 시점이 업계 전망에 따라 늦춰질 가능성도 함께 존재한다. 후공정·패키징 장비로의 포트폴리오 확장은 성장 동력으로 거론되지만, 실제 매출 기여 규모와 시점은 향후 분기 실적을 통해 순차적으로 확인돼야 한다. 주가는 순자산가치 대비 프리미엄이 있는 구간에서 거래되고 있어, 향후 영업이익률 개선의 지속성이 시장의 기대와 실제 실적 간 간극을 좁히는 핵심 변수가 될 것으로 보인다. 투자자는 다가오는 분기 실적 공시와 주요 고객사의 하이브리드 본딩 관련 발주 동향을 균형 있게 지켜볼 필요가 있다.",
+   "en": "Auros Technology has built its customer base among major domestic semiconductor makers such as Samsung Electronics and SK hynix, as well as customers in Japan and China, on the back of its rare technological position as a domestic localizer of overlay metrology equipment. However, after its earnings recovery in 2024, the company returned to losses in 2025 and the first half of 2026, and the very wide quarter-to-quarter swings in revenue and profit are a recurring pattern tied to its business model. The order for hybrid-bonding IR overlay equipment from Samsung Electronics is viewed as a positive signal of customer base expansion, but there is also a possibility that the industry-wide commercialization timing of hybrid bonding itself could be delayed relative to current forecasts. Portfolio expansion into back-end and packaging equipment is cited as a growth driver, but the actual scale and timing of its revenue contribution need to be confirmed sequentially through upcoming quarterly results. The stock trades at a premium to book value, and the sustainability of any future improvement in operating margin is likely to be the key variable in narrowing the gap between market expectations and actual results. Investors will want to monitor upcoming quarterly earnings disclosures and order trends related to hybrid bonding among major customers in a balanced way."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A322310",
-  "https://alphasquare.co.kr/home/stock-summary?code=322310",
-  "https://www.valueline.co.kr/finance/summary/322310",
   "https://www.investing.com/equities/aurostechnology",
-  "https://www.stockplus.com/m/stocks/KOREA-A322310",
-  "https://m.thinkpool.com/item/322310",
-  "https://m.irgo.co.kr/IR-COMP/322310/",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/auros71",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/T3k3OC9GRmpTa2JCRTRpdEtudXZoZz09/company_nm/(%EC%A3%BC)%EC%98%A4%EB%A1%9C%EC%8A%A4%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80",
-  "https://www.aurostech.com/",
-  "https://thevc.kr/os",
-  "https://www.catch.co.kr/Comp/CompSummary/471849",
-  "https://www.thelec.kr/news/articleView.html?idxno=24928",
-  "https://www.jobplanet.co.kr/companies/62606/landing/%EC%98%A4%EB%A1%9C%EC%8A%A4%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80",
-  "https://www.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=471849",
-  "https://news.infostock.co.kr/a",
   "https://news.nate.com/view/20251209n06202",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=663318"
+  "https://alphasquare.co.kr/home/stock-summary?code=322310",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A322310",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=663318",
+  "https://www.mt.co.kr/stock/2025/12/30/2025123014557087625",
+  "https://m.irgo.co.kr/IR-COMP/322310/%EC%98%A4%EB%A1%9C%EC%8A%A4%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80-IR-PAGE",
+  "https://alphasquare.co.kr/home/stock-issue?code=322310&type=news",
+  "https://judal.co.kr/?shareToken=ZTXN2LULXYLhZoNG&view=stockAI",
+  "https://m.thinkpool.com/stockDiscuss/322310/cont/11600937",
+  "https://www.thelec.kr/news/articleView.html?idxno=29447",
+  "https://www.thelec.kr/news/articleView.html?idxno=20900",
+  "https://www.thelec.kr/news/articleView.html?idxno=15933",
+  "https://www.thelec.kr/news/articleView.html?idxno=19194",
+  "https://m.ddaily.co.kr/page/view/2023050811053031513",
+  "https://www.thelec.kr/news/articleView.html?idxno=511",
+  "https://www.aurostech.com/new/company/menu_01.html",
+  "https://m.thinkpool.com/item/322310"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "322310",
  "name": "오로스테크놀로지",
  "name_en": "AUROS TECHNOLOGY, INC.",
@@ -233,9 +223,9 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-18",
- "reportTs": "2026-06-18 23:35",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:08",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 13140,
-   "mcap": 0.1231,
+   "price": 12330,
+   "mcap": 0.1155,
    "shares": 9366542,
    "total_shares": 9366542,
    "wavg_shares": 9238996,
    "per": null,
    "eps": -1487,
-   "pbr": 2.1853,
+   "pbr": 2.0506,
    "bps": 6013,
    "roe_ttm": -22.3,
    "ttm_window": "2025Q3~2026Q2",

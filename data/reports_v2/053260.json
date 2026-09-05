@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "수익성 바닥 확인, 질서 회복 기대와 구조적 한계 공존",
-  "en": "Profitability Floor Tested — Recovery Hopes Tempered by Structural Limits"
+  "ko": "이익 회복 흐름과 테마 변동성의 공존",
+  "en": "Earnings Recovery Amid Thematic Stock Volatility"
  },
  "lead": {
-  "ko": "금강철강은 포스코 지정 냉연 가공센터로서 2022~2025년 매출·마진 동반 하락을 겪었으나, 반덤핑 관세 효과와 분기 이익 회복세로 저점 통과 여부가 주목된다.",
-  "en": "As POSCO's designated cold-rolled steel processing center, Keum Kang Steel endured concurrent revenue and margin declines from 2022 to 2025, but recovering quarterly earnings and anti-dumping tariff tailwinds are drawing attention to a potential cycle trough."
+  "ko": "매출은 4년 연속 축소됐지만 2025년 하반기 이후 분기 실적은 점진적으로 회복되는 흐름을 보이고 있으며, 주가는 실적보다 포스코·중국 감산 관련 테마 뉴스에 더 민감하게 반응해왔다.",
+  "en": "Revenue has contracted for four consecutive years, but quarterly earnings have shown a gradual recovery since the second half of 2025, while the stock price has often reacted more to POSCO- and China-production-cut-related theme news than to underlying earnings."
  },
  "keypoints": [
   {
-   "ko": "POSCO 지정 가공센터: 원재료 열연 코일 전량을 POSCO로부터 공급받아 냉연 코일로 가공·판매하는 철강 유통·가공 전문 기업으로, 자동차·가전·건설·산업용기가 주요 수요처다.",
-   "en": "POSCO-Designated Processor: Receives 100% of hot-rolled coil inputs from POSCO and converts them into cold-rolled coil products; automotive, home appliance, construction, and industrial container sectors are primary end-markets."
+   "ko": "2025년 매출 1,772억원으로 전년 대비 감소, 영업이익률은 0.8%까지 하락했으나 2025년 2분기 대규모 순손실 이후 3개 분기 연속 흑자를 이어감",
+   "en": "2025 revenue fell to KRW 177.2bn with operating margin dropping to 0.8%, but the company returned to net profit for three consecutive quarters after a large net loss in Q2 2025"
   },
   {
-   "ko": "이익 저점 근접: 2025년 연간 지배순손익이 사실상 손익분기 수준에서 마감됐으나, 2026년 1분기 지배순이익 흑자 전환이 이익 회복의 초기 신호를 제공하고 있다.",
-   "en": "Near Earnings Trough: FY2025 parent net profit ended near breakeven, while 2026Q1 parent net income turned positive — an early signal of nascent recovery."
+   "ko": "2026년 2분기 매출 520억원, 영업이익 11.8억원으로 최근 다섯 개 분기 중 매출·영업이익 모두 최대치 기록",
+   "en": "Q2 2026 revenue of KRW 52.0bn and operating profit of KRW 1.18bn marked the highest levels among the past five quarters"
   },
   {
-   "ko": "반덤핑 관세·중국 수출허가제: 정부의 중국산 열연·후판 반덤핑 관세와 중국의 철강 수출허가제(2026년 1월 시행)가 저가 수입재 유입을 억제하며 국내 유통 가격 안정화를 견인하고 있다.",
-   "en": "Anti-Dumping Shields: Government tariffs on Chinese hot-rolled and heavy-plate steel, combined with China's steel export-licensing regime effective January 2026, are curtailing low-price import flows and stabilizing domestic pricing."
+   "ko": "POSCO 냉연코일 가공·유통(SSC)을 주력으로 하며, 강관 도소매·무역·창고·포장·부동산 임대 등 부가사업도 겸영",
+   "en": "Core business is POSCO cold-rolled coil processing and distribution (steel service center), supplemented by steel pipe wholesale/trading, warehousing, packaging, and real estate leasing"
   },
   {
-   "ko": "초저부채·순자산 할인: 2025년 부채비율 19.3%의 탄탄한 재무 구조를 유지하면서도 주가는 순자산 대비 할인된 영역에서 거래되고 있다.",
-   "en": "Low Leverage, Below-Book Pricing: A debt-to-equity ratio of 19.3% (FY2025) underpins financial stability, yet shares trade at a discount to reported book value."
+   "ko": "주가는 포스코의 아르헨티나 리튬 염호 관련 뉴스, 중국 철강 감산 이슈 등에 연동돼 단기 급등락을 반복하는 테마성 변동성이 뚜렷함",
+   "en": "The stock has repeatedly shown sharp, theme-driven short-term swings tied to news on POSCO's Argentina lithium salt lake and China steel production cuts"
   },
   {
-   "ko": "건설 경기 장기 침체: 국내 철강 내수 기반 축소와 건설 경기 부진이 구조적 리스크로 잔존하며, 단기 내 전방 수요의 급반등을 기대하기 어렵다.",
-   "en": "Structural Construction Weakness: Shrinking domestic steel consumption and a prolonged construction-sector slump represent persistent structural headwinds, with limited scope for a near-term demand surge."
+   "ko": "주가는 주당순자산을 밑도는 수준에서 거래되는 한편, 배당은 매년 이어지고 있음",
+   "en": "The stock trades below its net asset value per share, while dividends have continued to be paid annually"
   }
  ],
  "business": {
-  "ko": "금강철강(053260)은 1977년 설립되어 2002년 1월 코스닥에 상장한 철강 유통·가공 전문 기업이다. 포스코의 지정 가공센터로서 열연 코일을 원재료로 전량 포스코로부터 공급받아 냉연 코일로 가공·판매하는 것이 핵심 사업이다. 완성된 냉연 코일은 자동차 패널, 가전 외장재, 건설용 강재, 산업용기 등에 폭넓게 사용되는 산업 원자재로 납품된다. 자동화 설비를 활용한 전·절단 가공과 수요자 맞춤 규격 공급 서비스가 주요 경쟁력이며, 오랜 경험에서 비롯된 품질 안정성과 신속한 납기 대응도 차별점이다. 원재료를 단일 공급처인 포스코에 전적으로 의존하는 구조는 수급 안정성을 보장하는 동시에 가격 교섭력 측면에서 구조적 제약을 내포한다. 동종 포스코 유통망 업체인 문배철강, 부국철강 등과 경쟁하며, 유통·가공 마진 특성상 영업이익률은 통상 1~2% 수준에 머문다. 계열사로 케이인베스트먼트, 금강에코너지, 씨엘피라이트닝사모투자합자회사를 보유하고 있다. 총 발행주식 1,872만 주 가운데 자사주 비중이 약 16%에 달해 실질 유통 주식 수는 가중평균 약 1,571만 주 수준이다. 12월 결산법인으로 2025년 말 기준 연결 자본 총계 약 1,269억원에 부채 약 245억원으로 재무 구조가 견실하다.",
-  "en": "Keum Kang Steel (053260) was founded in 1977 and listed on KOSDAQ in January 2002, specializing in the processing and distribution of flat steel products. Operating as a POSCO-designated processing center, the company sources 100% of its hot-rolled coil inputs from POSCO and converts them into cold-rolled coil products for downstream customers. Finished cold-rolled coil is sold as an industrial material for automotive panels, home-appliance exteriors, construction steel, and industrial containers. Core competitive advantages include automated slitting and cutting lines, custom-dimension fulfillment capabilities, and a track record of consistent quality and fast delivery. The single-supplier dependency on POSCO for raw materials guarantees supply-chain continuity but structurally limits pricing negotiating power. The company competes within POSCO's distribution network alongside peers such as Munbae Steel and Buguk Steel, and the inherently thin-margin distribution model confines operating margins to the 1–2% range. Subsidiaries include K-Investment, Geumgang Ecoenergy, and CLP Lighting Private Equity. Of 18.72 million total shares outstanding, approximately 16% are held as treasury stock, reducing the weighted-average effective share count to roughly 15.71 million. As of year-end 2025, consolidated equity stood at approximately ₩126.9bn against liabilities of approximately ₩24.5bn, reflecting a predominantly equity-funded capital structure."
+  "ko": "금강철강은 포스코의 냉연강판 가공센터(SSC)로서, 자동차·가전·건설·산업용기 등 산업 원자재로 쓰이는 냉연코일을 공급받아 전단·절단 가공 후 고객사가 원하는 규격으로 재판매하는 철강 유통 서비스 회사다. 이와 함께 강관 도소매, 무역, 창고·포장·충전, 부동산 임대 등을 겸영하고 있어 단순 유통 외에 물류·부동산 부문에서도 일부 수익을 창출한다. 회사는 24시간 생산·출하 체제를 갖춘 가공센터를 운영하며 신속한 납기 대응을 경쟁력으로 내세운다. 국내 포스코 계열 판매망에는 부국철강, 문배철강, 하이스틸, 한일철강, 세운철강, SIMPAC, 기보스틸, 아주스틸 등 다수의 경쟁 대리점·가공센터가 존재해 시장 경쟁이 치열한 구조다. 금강철강그룹 내에는 금강기계공업 등 계열사가 있어 그룹 차원의 사업 다각화도 일부 이뤄지고 있다. 회사 규모는 코스닥 상장 철강 유통업체 중에서도 소형에 속하며, 시가총액이 1천억원대 초반 수준으로 유동성이 크지 않은 편이다. 매출 구조상 포스코로부터의 원재료 소싱 의존도가 높아 포스코의 생산·판매 정책, 원재료 가격 변동에 실적이 직접 연동되는 특성을 지닌다. 최종 수요처는 자동차, 가전, 건설, 산업용기 등 전통 제조업 전방산업에 집중돼 있어 이들 업종의 경기 흐름에 민감하다.",
+  "en": "Kumkang Steel operates as a POSCO-affiliated cold-rolled steel service center (SSC), sourcing cold-rolled coil used as industrial material for automotive, appliance, construction, and industrial container applications, then slitting and cutting it to customer specifications for resale. Alongside this core distribution business, the company also engages in steel pipe wholesale and trading, warehousing, packaging, filling, and real estate leasing, generating some revenue outside pure steel distribution. The company operates a processing center with a round-the-clock production and shipment system, positioning fast delivery as a key competitive strength. Within POSCO's domestic sales network, numerous competing agencies and processing centers exist, including Bukook Steel, Munbae Steel, Hi-Steel, Hanil Steel, Sewoon Steel, SIMPAC, Kibo Steel, and Aju Steel, making the market highly competitive. The Kumkang Steel Group also includes affiliates such as Kumkang Machinery Industry, reflecting some degree of group-level diversification. In scale, the company is a relatively small player among KOSDAQ-listed steel distributors, with a market capitalization in the low hundreds of billions of won range and limited trading liquidity. Given its heavy reliance on POSCO for raw material sourcing, earnings are directly tied to POSCO's production and sales policies as well as raw material price movements. Its end markets are concentrated in traditional manufacturing sectors such as automotive, appliances, and construction, making it sensitive to the business cycles of these downstream industries."
  },
  "earnings": {
-  "ko": "2022~2025년 연간 실적은 매출·이익 모두 뚜렷한 하강 추세를 보였다. 매출액은 2022년 2,442억원을 정점으로 2023년 2,254억원, 2024년 2,011억원, 2025년 1,772억원으로 4년간 약 27% 감소했다. 영업이익은 같은 기간 49억원(2022년) → 53억원(2023년) → 38억원(2024년) → 15억원(2025년)으로 줄어 영업이익률은 2.0%에서 0.8%까지 압축됐다. 지배주주 귀속 순이익은 2022년 55억원, 2023년 46억원, 2024년 69억원을 기록한 뒤 2025년 -0.6억원으로 사실상 손익분기 수준에서 마감됐다. 분기별로는 2025년 1분기 영업이익 11억원·지배순이익 12억원으로 출발했으나, 2분기에 영업이익은 -0.9억원(거의 손익분기)에 머문 반면 지배순이익이 -43억원의 대규모 손실을 기록했다—영업 외 비용(관계사 평가손실 또는 자산 손상 추정)이 주원인으로 분석된다. 이후 3분기 영업이익 0.6억원, 4분기 3.5억원으로 점진적 회복세가 확인됐다. 2026년 1분기는 매출 424억원·영업이익 0.3억원으로 영업이익은 제한적이었으나, 지배순이익 19억원은 비영업 항목의 반등을 시사한다. 한편 부채비율은 2024년 27.7%에서 2025년 19.3%로 추가 개선됐으며, 2025년 영업활동현금흐름은 55억원으로 이익 감소 대비 현금 창출력을 일정 수준 유지했다.",
-  "en": "Annual results from 2022 to 2025 showed a consistent downward trajectory across both revenue and profit lines. Revenue peaked at ₩244.2bn in 2022, retreating to ₩225.4bn in 2023, ₩201.1bn in 2024, and ₩177.2bn in 2025—a cumulative decline of approximately 27% over four years. Operating profit contracted from ₩4.9bn (2022) and ₩5.3bn (2023) to ₩3.8bn (2024) and ₩1.5bn (2025), compressing the operating margin from 2.0% to 0.8%. Parent net income was ₩5.5bn in 2022, ₩4.6bn in 2023, and ₩6.9bn in 2024, before effectively reaching breakeven at –₩64m in 2025. At the quarterly level, 2025 began with a solid 1Q—operating profit of ₩1.1bn and parent net income of ₩1.2bn—before 2Q deteriorated sharply: operating income barely missed breakeven at –₩86m, while parent net income registered a large loss of –₩4.3bn, attributable primarily to non-operating charges (estimated equity-method or impairment losses on associates). Recovery ensued in 3Q (₩62m OP) and 4Q (₩349m OP). 2026Q1 reported revenue of ₩42.4bn with limited operating income of ₩31m, yet parent net income of ₩1.9bn indicates a reversal of prior non-operating headwinds. The debt ratio improved further from 27.7% (2024) to 19.3% (2025), and FY2025 operating cash flow remained ₩5.5bn—a respectable outcome relative to thin reported earnings."
+  "ko": "연간 매출은 2022년 2,442억원에서 2023년 2,254억원, 2024년 2,011억원, 2025년 1,772억원으로 4년 연속 축소됐다. 영업이익률도 2022년 2.0%, 2023년 2.3%에서 2024년 1.9%, 2025년 0.8%로 뚜렷하게 낮아지며 유통업 특유의 박마진 구조가 심화됐다. 특히 2025년은 지배주주 순손실 6,362만원을 기록해 사실상 손익분기 수준에 머물렀는데, 이는 2025년 2분기에 지배주주 순손실 43억 3,500만원이라는 큰 일회성 손실이 반영된 영향이 크다. 실제로 2025년 3분기부터는 분기별로 뚜렷한 회복세가 나타나, 3분기 지배주주 순이익 3.4억원, 4분기 26.6억원, 2026년 1분기 18.9억원, 2분기 14.8억원으로 4개 분기 연속 흑자를 이어갔다. 매출액 역시 2025년 3분기 398억원에서 2026년 2분기 520억원으로 반등하며 최근 다섯 개 분기 중 최대치를 기록했다. 영업이익 역시 2025년 2분기 -900만원 수준의 적자에서 2026년 2분기 11억 7,500만원으로 개선돼 최근 구간 중 가장 양호한 수준을 보였다. 다만 이러한 회복이 2024년 이전의 영업이익률(1.9~2.3%) 수준까지 완전히 되돌아왔다고 보기는 아직 이르며, 분기별 변동성도 여전히 큰 편이다. 현금흐름 측면에서는 2025년 영업활동현금흐름이 55억원으로 순이익 대비 양호했던 반면, 2023년에는 영업활동현금흐름이 -107억원의 마이너스를 기록한 적도 있어 연도별 편차가 크다.",
+  "en": "Annual revenue contracted for four straight years, from KRW 244.2bn in 2022 to KRW 225.4bn in 2023, KRW 201.1bn in 2024, and KRW 177.2bn in 2025. Operating margin also declined markedly, from 2.0% in 2022 and 2.3% in 2023 to 1.9% in 2024 and 0.8% in 2025, deepening the thin-margin structure typical of steel distribution. Notably, 2025 ended with a net loss attributable to owners of just KRW 63.6 million, essentially a break-even result, largely because a large one-off net loss of KRW 4.34bn was recorded in the second quarter of 2025. From the third quarter of 2025 onward, however, a clear recovery emerged, with owner net profit of KRW 336 million in Q3 2025, KRW 2.66bn in Q4 2025, KRW 1.89bn in Q1 2026, and KRW 1.48bn in Q2 2026 -- four consecutive profitable quarters. Revenue also rebounded from KRW 39.8bn in Q3 2025 to KRW 52.0bn in Q2 2026, the highest level among the past five quarters. Operating profit likewise improved from a small loss of about KRW 9 million in Q2 2025 to KRW 1.18bn in Q2 2026, the best result in the recent window. Still, it is premature to conclude that margins have fully returned to pre-2024 levels of 1.9-2.3%, and quarter-to-quarter volatility remains substantial. On the cash flow side, operating cash flow was a solid KRW 5.5bn in 2025 relative to net income, whereas 2023 saw negative operating cash flow of KRW 10.7bn, underscoring significant year-to-year variability."
  },
  "industry": {
-  "ko": "국내 철강 유통·가공 업계는 2022년 이후 철강 가격 하락과 수요 위축의 이중 압박을 받아왔다. 중국 부동산 경기 침체로 남아도는 중국산 물량이 한국 시장에 쏟아지면서 열연·냉연 가격이 원가 이하로 떨어지는 상황이 연출됐다. 2026년 들어 구조가 일부 바뀌고 있다. 정부는 중국산 후판에 27~38%, 열연강판에 28~33%의 반덤핑 관세를 부과했고, 중국도 2026년 1월부터 약 300여 개 철강 품목에 수출허가제를 시행하면서 저가 수입재 유입 속도가 크게 둔화됐다. 한국철강협회에 따르면 2026년 1~4월 중국산 철강 수입량은 전년 동기 대비 4.5% 감소했으며, 특히 열연강판 수입은 2026년 1분기 기준 전년 동기 대비 90% 이상 급감했다. 세계철강협회(WSA)는 2026년 세계 철강 수요가 전년 대비 약 1% 초반대 증가할 것으로 전망해 글로벌 저점 통과 가능성을 시사했다. 다만 업황 개선은 품목별로 양분되는 양상이다—조선·자동차용 판재 수요는 상대적으로 견조한 반면, 건설용 봉형강과 범용 판재의 회복은 더딜 것으로 분석된다. 국내 건설업 부진은 여전히 깊어 2026년 1분기 건설업 폐업 건수가 1,000건을 넘어서는 등 수요 기반이 취약한 상태다.",
-  "en": "The domestic flat-steel distribution and processing sector has faced a dual squeeze of falling prices and weakening demand since 2022. Surplus Chinese production—driven by its own property-sector contraction—flooded Korean markets, pushing hot- and cold-rolled coil prices below cost for extended periods. The environment began shifting in 2026. The government imposed anti-dumping duties of 27–38% on Chinese heavy plate and 28–33% on Chinese hot-rolled coil, while China introduced a steel export-licensing system covering approximately 300 product lines effective January 2026, decelerating low-price import flows. According to Korea Iron & Steel Association data, Chinese steel imports fell 4.5% year-on-year in January–April 2026, with hot-rolled coil imports down more than 90% in 2026Q1 alone. The World Steel Association (WSA) forecast global steel demand growing approximately 1% in 2026, suggesting a gradual global trough passage. Industry recovery is bifurcating, however: demand for shipbuilding and automotive flat steel remains comparatively resilient, while recovery in construction-grade long products and generic flat steel is expected to remain sluggish. Domestic construction weakness persists, with more than 1,000 construction-sector closures recorded in 2026Q1, highlighting a fragile underlying demand base."
+  "ko": "국내 철강 유통업은 대형 제철사(포스코, 현대제철)의 원재료를 가공·재판매하는 구조적 특성상 마진이 얇고 경기 민감도가 높은 산업으로 꼽힌다. 세계철강협회는 2026년 세계 철강 수요가 전년 대비 1.3% 증가한 17억 7,250만톤에 이를 것으로 전망했으나, OECD는 2027년까지 글로벌 초과 생산능력이 7억 2,100만톤까지 확대될 수 있다고 경고한 바 있어 공급 과잉 우려가 병존한다. 국내에서는 중국산 도금강판·컬러강판에 대한 반덤핑 조사가 진행 중으로, 2026년 4월 말 예비판정과 5월 말 전후 잠정관세 적용 가능성이 업계에서 거론된 바 있어 최종 판정 결과가 수입재와 경쟁하는 국내 유통업체들의 가격 경쟁력에 영향을 줄 수 있다. 금강철강이 속한 포스코 계열 판매점군에는 부국철강, 문배철강, 하이스틸 등 다수 업체가 경쟁하고 있어 개별 업체의 시장 지배력은 제한적이다. 한편 포스코홀딩스는 철강 본업 외에 이차전지소재·리튬 사업을 병행하고 있으며, 아르헨티나 염호 리튬 생산 램프업과 가격 반등이 그룹 차원의 관심사로 부각되고 있는데, 이 소식이 전해질 때마다 금강철강을 비롯한 포스코 계열 유통주들이 '포스코 리튬 관련주'로 함께 급등락하는 패턴이 반복돼 왔다. 이러한 테마 연동은 2021년에도 나타난 바 있어 이번이 처음이 아니며, 실질적인 사업 연관성보다는 계열 연상 효과에 기인한 것으로 풀이된다.",
+  "en": "Domestic steel distribution is structurally a thin-margin, cycle-sensitive industry, given that it processes and resells raw materials sourced from large integrated steelmakers such as POSCO and Hyundai Steel. The World Steel Association has forecast global steel demand to reach 1.7725 billion tons in 2026, up 1.3% year-on-year, while the OECD has warned that global excess capacity could expand to 721 million tons by 2027, meaning oversupply concerns persist alongside the demand recovery. Domestically, an anti-dumping investigation into Chinese coated and color-coated steel sheets has been underway, with industry sources citing a preliminary ruling around late April 2026 and possible provisional tariffs around late May 2026, meaning the final ruling outcome could affect the price competitiveness of domestic distributors competing with imports. Within the POSCO-affiliated distributor group to which Kumkang Steel belongs, numerous competitors such as Bukook Steel, Munbae Steel, and Hi-Steel operate, limiting any single company's market power. Separately, POSCO Holdings runs a battery materials and lithium business alongside its core steel operations, with the ramp-up of lithium production from its Argentina salt lake and lithium price rebounds drawing group-wide attention; whenever such news breaks, Kumkang Steel and other POSCO-affiliated distributor stocks have repeatedly surged and swung together as so-called 'POSCO lithium plays.' This theme-driven co-movement is not new, having also appeared in 2021, and appears to stem more from brand-affiliation association than from any direct business linkage to lithium."
  },
  "outlook": {
-  "ko": "2026년 금강철강의 핵심 화두는 마진 회복의 지속 가능성이다. 반덤핑 관세 효과로 국내 열연 유통가격은 2026년 4월 기준 톤당 90만원대로 연초 대비 약 10% 반등했으며, 이 흐름이 하반기까지 이어진다면 냉연 가공 마진 개선으로 연결될 수 있다. 포스코의 2025년 원가 혁신 성과가 2026년 공급 가격 안정으로 이어진다면 원재료 투입 부담도 일정 부분 완화될 여지가 있다. 자동차·조선 등 주요 전방 수요처의 생산 기조 유지는 냉연 코일 기반 물량의 안정성을 뒷받침한다. 반면 국내 철강 연간 내수 소비량이 약 4,510만 톤 수준으로 구조적으로 축소된 환경은 유통 판매 단가 상승폭을 제한할 수 있으며, 건설 수요의 단기 회복은 기대하기 어렵다. 회사 차원의 공식 가이던스나 대규모 설비 증설 계획은 확인되지 않는다. 2025 회계연도 주당 현금배당금(DPS)은 170원으로 확정됐으며, 2026 회계연도 배당 수준은 하반기 수익성 회복 강도에 달려 있다. 계열사 케이인베스트먼트 및 금강에코너지 등의 비철강 사업이 연결 순이익에 미치는 비영업 손익 변동성도 향후 주시할 필요가 있다.",
-  "en": "The central question for Keum Kang Steel in 2026 is whether the margin recovery can be sustained. Anti-dumping duties and China's export-licensing system have helped push domestic hot-rolled distribution prices back above ₩900,000 per tonne by April 2026—approximately 10% above early-year lows—and a continuation into the second half could improve cold-rolled processing margins. Should POSCO's 2025 cost-innovation progress translate into stable procurement pricing in 2026, Keum Kang Steel would benefit from eased input-cost pressure. Steady production levels at major downstream customers in automotive and shipbuilding underpin cold-rolled volume stability. On the other hand, structurally contracted domestic steel consumption (estimated ~45.1 million tonnes for 2026) may cap distribution-price upside, and a near-term construction rebound is unlikely. No formal company earnings guidance or major capacity-expansion plans are publicly available. The FY2025 cash dividend per share (DPS) was confirmed at ₩170; the FY2026 level will depend on the pace of second-half profitability recovery. Non-operating earnings volatility from subsidiaries K-Investment and Geumgang Ecoenergy also warrants monitoring, given its historical capacity to amplify or distort headline net income."
+  "ko": "회사 측이 별도의 수치 가이던스를 공개적으로 제시한 내용은 확인되지 않아, 전망은 최근 분기 흐름과 업황 변수에 근거해 판단할 필요가 있다. 2026년 1분기와 2분기 연속으로 영업이익과 지배주주 순이익이 흑자를 유지한 점은 2025년의 부진에서 벗어나는 흐름을 시사한다. 다만 2026년 하반기 철강 수요는 '물량은 회복되지만 마진은 경계해야 하는' 국면으로 진단되는 경우가 있어, 매출 회복이 곧바로 마진 개선으로 이어질지는 불확실하다. 중국산 도금강판·컬러강판 반덤핑 최종 판정 결과에 따라 수입재 유입 속도와 국내 유통 가격이 달라질 수 있어 이 변수의 진행 상황을 지켜볼 필요가 있다. 포스코의 철강 부문 판매가격 인상 시도와 원가 부담 완화 여부도 하위 유통망인 금강철강의 매입 원가와 판매 마진에 간접적으로 영향을 줄 수 있는 요인이다. 자동차·건설 등 전방산업의 수요 강도, 특히 건설 경기 둔화가 이어질 경우 냉연코일 가공 물량 확대에는 제약이 있을 수 있다.",
+  "en": "No explicit numerical guidance from the company has been identified in public disclosures, so the outlook should be assessed based on recent quarterly trends and industry variables. The fact that both operating profit and owner net profit remained positive for two consecutive quarters in early 2026 suggests a move away from the weak 2025 performance. However, some industry assessments characterize second-half 2026 steel demand as a phase where volume recovers but margins warrant caution, meaning revenue recovery may not automatically translate into margin improvement. The final outcome of the anti-dumping investigation into Chinese coated and color-coated steel sheets could alter the pace of import inflows and domestic distribution pricing, making this a variable worth monitoring. Whether POSCO's attempts to raise steel product prices and ease cost pressures succeed could also indirectly affect Kumkang Steel's procurement costs and distribution margins further down the supply chain. Demand strength in downstream sectors such as automotive and construction is another factor, and continued weakness in construction activity could constrain growth in cold-rolled coil processing volumes."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당 순자산(BPS 8,062원) 대비 할인된 영역에서 거래되고 있으며, 동사의 최근 5년 평균 PBR 밴드(약 0.85배 수준)에도 미치지 못하는 수준이다. 이익이 손익분기에 근접한 상황에서 유효한 PER 지표를 산출하기 어렵고, 주가 수준에 대한 평가는 순자산 대비 할인폭과 이익 회복 속도가 핵심 기준이 된다. 확정된 2025 회계연도 DPS 170원은 이익 회복 없이 배당이 유지될 경우 배당 지속 가능성이 관심 요인이 되지만, 반대로 이익 부진이 장기화하면 배당 조정 리스크가 잠재할 수 있다. 철강 유통·가공 업종 특성상 영업이익률이 1~2%대 수준에 머무는 박리다매 구조가 지속되면, 풍부한 자산 규모에 비해 수익 창출력이 낮은 국면이 장기화될 수 있다. 부채비율 19.3%의 탄탄한 재무 안전성은 밸류에이션 하방을 지지하는 요인이나, 업종 평균을 지속적으로 하회하는 수익성은 할인 요인으로 상존한다는 점을 균형 있게 고려해야 한다.",
-  "en": "Shares are currently trading at a discount to book value (BPS: ₩8,062), sitting below the five-year average PBR band of approximately 0.85x. With earnings close to breakeven, a meaningful price-to-earnings multiple cannot be meaningfully computed; the primary valuation anchors become the depth of the book-value discount and the speed of earnings recovery. The confirmed FY2025 cash dividend per share of ₩170 means that if the payout is maintained without a commensurate profit recovery, dividend sustainability becomes a point of focus—though sustained earnings weakness carries latent dividend-adjustment risk. The structurally thin operating-margin profile of the steel distribution and processing sector—consistently in the 1–2% range—implies that asset-based earning power may remain suppressed for an extended period despite a sizable equity base. The robust financial position (debt ratio 19.3%) provides a floor to valuation, yet persistently below-sector-average profitability remains a standing discount factor that should be weighed alongside structural strengths."
+  "ko": "현재 주가는 회사의 주당순자산에 못 미치는 수준에서 형성돼 있어, 시장이 순자산가치 전액을 온전히 인정하지 않고 있음을 보여준다. 이는 철강 유통업 전반이 구조적으로 낮은 마진과 실적 변동성을 안고 있다는 점, 그리고 2025년 연간 기준으로는 거의 손익분기에 머물렀다는 점이 반영된 결과로 해석할 수 있다. 최근 네 개 분기 동안 이익이 적자에서 흑자로 전환되며 회복 흐름을 보인 점은 향후 시장의 재평가 여부를 가늠하는 참고 지표가 될 수 있다. 배당은 매년 꾸준히 지급돼 온 편이나, 그 자체가 주가 판단의 결정적 근거가 되기는 어렵다. 다만 시가총액이 작고 유통 주식 수가 많지 않아 거래량과 수급 변화에 따른 주가 변동성이 실적 변화보다 크게 나타나는 경우가 많았다는 점은 염두에 둘 필요가 있다.",
+  "en": "The current share price sits below the company's net asset value per share, indicating that the market has not fully priced in the entirety of its book value. This can be interpreted as reflecting both the structurally thin margins and earnings volatility inherent to the steel distribution business, as well as the fact that full-year 2025 results were essentially at break-even. The shift from losses to consecutive profitable quarters over the past four quarters offers a reference point for gauging any future re-rating by the market. Dividends have been paid consistently on an annual basis, though this alone is not a decisive basis for judging the share price. It is also worth noting that, given the small market capitalization and limited free float, price swings driven by trading volume and supply-demand shifts have often been larger than those driven by underlying earnings changes."
  },
  "bull": [
   {
    "title": {
-    "ko": "중국산 반덤핑 규제의 구조적 가격 안정 효과",
-    "en": "Structural Price Support from Anti-Dumping Measures"
+    "ko": "4개 분기 연속 흑자 전환",
+    "en": "Four Straight Quarters of Profitability"
    },
    "body": {
-    "ko": "정부의 중국산 열연강판·후판 반덤핑 관세 부과와 중국의 철강 수출허가제(2026년 1월 시행)가 맞물리면서 저가 수입재 유입이 크게 억제되고 있다. 한국철강협회에 따르면 2026년 1분기 중국산 열연강판 수입이 전년 동기 대비 90% 이상 급감한 것이 이를 뒷받침한다. 규제 효과가 하반기까지 지속된다면 냉연 유통 가격의 안정적 회복이 금강철강의 가공 스프레드 개선으로 연결될 수 있다.",
-    "en": "Government anti-dumping duties on Chinese hot-rolled and heavy-plate steel, combined with China's steel export-licensing regime effective January 2026, have sharply curtailed low-price import flows. Korea Iron & Steel Association data shows Chinese hot-rolled coil imports fell more than 90% year-on-year in 2026Q1, providing tangible evidence of the regulatory effect. Should this protective environment persist into the second half, stable domestic cold-rolled pricing could improve Keum Kang Steel's processing spread."
+    "ko": "2025년 2분기의 대규모 순손실 이후 2025년 3분기부터 2026년 2분기까지 지배주주 순이익이 4개 분기 연속 흑자를 기록했다. 특히 2026년 2분기는 매출과 영업이익 모두 최근 다섯 개 분기 중 최고치를 나타내며 회복 흐름이 뚜렷해지고 있다. 2025년의 실적 부진이 상당 부분 특정 분기의 일회성 요인에서 기인했다면, 이후 정상화 국면이 이어질 여지가 있다.",
+    "en": "Following the large net loss in Q2 2025, attributable net income to controlling shareholders returned to profitability for four consecutive quarters from Q3 2025 through Q2 2026. In particular, Q2 2026 recorded both the highest revenue and operating profit among the most recent five quarters, making the recovery trend increasingly evident. If the poor performance in 2025 was largely attributable to one-off factors in a specific quarter, there is room for a continued normalization phase going forward."
    }
   },
   {
    "title": {
-    "ko": "견고한 재무 구조와 꾸준한 현금 창출력",
-    "en": "Robust Balance Sheet and Sustained Cash Generation"
+    "ko": "순자산 대비 낮은 주가",
+    "en": "Share Price Below Net Asset Value"
    },
    "body": {
-    "ko": "2025년 기준 부채비율 19.3%로 업종 내 재무 안전성이 매우 높은 편이다. 연간 영업이익이 크게 감소한 상황에서도 영업활동현금흐름은 2024년 81억원, 2025년 55억원을 유지했다. 자본 총계 약 1,269억원은 사업 충격에 대한 완충 역할을 하며, 순자산 대비 할인된 주가는 자산가치 관점의 안전마진을 제공한다.",
-    "en": "With a debt ratio of 19.3% in 2025, Keum Kang Steel maintains one of the strongest balance sheets in its peer group. Despite significantly compressed operating profits, operating cash flow held at ₩8.2bn in 2024 and ₩5.5bn in 2025. Total equity of approximately ₩126.9bn provides a substantial buffer against business shocks, and the current share-price discount to net asset value offers a margin of safety from an asset-valuation standpoint."
+    "ko": "현재 주가는 회사의 주당순자산보다 낮은 수준에서 거래되고 있어, 자산가치 측면에서는 일정한 완충 구간이 존재한다는 해석이 가능하다. 부채비율도 2025년 기준 19.3%로 4개 연도 중 가장 낮은 수준을 나타내 재무 안정성 측면에서는 개선된 모습이다. 매년 배당을 지급해온 이력도 참고할 만한 요인이다.",
+    "en": "The current share price is trading below the company's book value per share, which can be interpreted as providing a certain cushion in terms of asset value. The debt ratio also stood at 19.3% in 2025, the lowest among the four years examined, indicating improvement in financial stability. The track record of paying dividends every year is also a factor worth noting."
    }
   },
   {
    "title": {
-    "ko": "자동차·조선 수요 안정이 기반 물량 보호",
-    "en": "Stable Automotive and Shipbuilding Demand Shields Base Volumes"
+    "ko": "포스코 계열 안정적 공급망",
+    "en": "Stable Supply Chain via POSCO Affiliation"
    },
    "body": {
-    "ko": "금강철강의 주요 수요처인 자동차·조선 부문은 2025~2026년에도 상대적으로 견조한 생산 기조를 유지하고 있다. 이 두 전방 산업이 냉연 코일 기반 물량을 방어함으로써 건설 수요 부진에도 매출의 급격한 추가 하락을 제한하는 역할을 한다. 특히 국내 조선업의 수주 회복 기조가 이어질 경우 관련 강재 수요가 점진적으로 확대될 수 있다.",
-    "en": "The automotive and shipbuilding sectors—two of Keum Kang Steel's primary end-markets—have maintained relatively stable production rates through 2025–2026. These two downstream sectors underpin baseline cold-rolled coil demand, limiting the risk of a further sharp revenue contraction even amid persistent construction weakness. An ongoing recovery in domestic shipbuilding orders could provide incremental demand uplift for flat steel products."
+    "ko": "포스코 냉연강판 가공센터로서 오랜 기간 공급망을 유지해온 만큼, 원재료 조달의 안정성과 품질 신뢰도는 경쟁 우위 요소로 꼽힌다. 24시간 생산·출하 체제를 통한 신속한 납기 대응력도 고객사 유지에 기여하는 부분이다. 세계철강협회가 제시한 2026년 철강 수요 소폭 증가 전망이 현실화될 경우 물량 측면의 우호적 환경이 조성될 수 있다.",
+    "en": "As a cold-rolled steel sheet processing center for POSCO that has maintained its supply chain over a long period, stable raw material procurement and quality reliability are considered competitive advantages. The 24-hour production and shipping system, which enables prompt delivery response, also contributes to customer retention. If the World Steel Association's forecast of a slight increase in 2026 steel demand materializes, a favorable environment in terms of volume could be created."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 감소 추세와 박리다매 구조의 수익성 취약성",
-    "en": "Prolonged Revenue Decline and Structural Profitability Fragility"
+    "ko": "4년 연속 매출 축소",
+    "en": "Four Consecutive Years of Revenue Decline"
    },
    "body": {
-    "ko": "2022년 2,442억원이던 매출이 2025년 1,772억원으로 4년간 약 27% 줄어들었으며, 영업이익률은 2.0%에서 0.8%로 압축됐다. 유통·가공 사업의 구조적 특성상 매출 감소가 이익 감소로 직결되며, 마진 회복의 폭도 사업 모델의 구조적 한계로 제한된다. 전방 수요의 본격 회복 없이는 외형 반등 속도가 기대에 미치지 못할 가능성이 있다.",
-    "en": "Revenue contracted approximately 27% over four years—from ₩244.2bn in 2022 to ₩177.2bn in 2025—while the operating margin compressed from 2.0% to 0.8% over the same period. The distribution-and-processing business model structurally links revenue declines to earnings pressure, and the structural ceiling on margin recovery limits upside under the current business model. Without a meaningful rebound in downstream end-market demand, the pace of revenue recovery may fall short of expectations."
+    "ko": "매출액은 2022년 2,442억원에서 2025년 1,772억원까지 매년 감소하며 4년 연속 축소됐다. 영업이익률 역시 2022년 2.0%에서 2025년 0.8%로 뚜렷하게 낮아져 외형 축소와 마진 압박이 동시에 진행됐다. 이러한 구조적 축소 흐름이 최근의 분기별 회복만으로 완전히 역전됐다고 보기는 이르다.",
+    "en": "Revenue declined every year from KRW 244.2 billion in 2022 to KRW 177.2 billion in 2025, contracting for four consecutive years. The operating margin also fell noticeably from 2.0% in 2022 to 0.8% in 2025, indicating that top-line contraction and margin pressure occurred simultaneously. It is premature to conclude that this structural contraction trend has been fully reversed by the recent quarterly recovery alone."
    }
   },
   {
    "title": {
-    "ko": "POSCO 단일 공급처 의존과 원가 전가 제한",
-    "en": "Single-Supplier Dependency and Limited Input-Cost Pass-Through"
+    "ko": "테마 연동에 따른 주가 변동성",
+    "en": "Theme-Driven Share Price Volatility"
    },
    "body": {
-    "ko": "원재료 열연 코일을 포스코로부터 100% 조달하는 구조는 수급 안정성을 제공하지만, 포스코의 가격 인상을 수요처에 그대로 전가하기 어렵다. 마진 스프레드가 불리하게 형성될 경우 이익 압박이 증폭될 수 있으며, 공급 정책이나 단가 조정에 대한 협상력이 제한적이다. 이는 철강 유통·가공 업종이 원가 부담과 판가 사이에서 지속적인 스프레드 압박을 받아온 구조적 배경과도 일맥상통한다.",
-    "en": "Procuring 100% of hot-rolled coil inputs from a single supplier (POSCO) provides supply certainty but severely limits the ability to pass through raw-material price hikes to downstream customers. Unfavorable margin-spread dynamics can amplify profit pressure, and the company has limited negotiating leverage over POSCO's pricing and supply policies. This structural constraint is consistent with the broader steel distribution sector's chronic struggle between input costs and realized selling prices."
+    "ko": "금강철강 주가는 실적 발표보다 중국 철강 감산, 포스코 아르헨티나 리튬 염호 관련 뉴스 등 테마성 이슈에 더 크게 반응해온 이력이 있다. 이런 테마 연동은 2021년과 2026년 모두 반복적으로 나타났으며, 짧은 기간 상한가와 급락이 교차하는 패턴을 보였다. 실질적 사업 연관성이 크지 않은 이슈에 주가가 좌우될 경우 펀더멘털과 주가 흐름 간 괴리가 커질 수 있다.",
+    "en": "Kumkang Steel's share price has historically reacted more strongly to thematic issues such as China's steel production cuts and news related to POSCO's lithium brine project in Argentina than to earnings announcements. This theme-linked pattern recurred in both 2021 and 2026, showing a repeated pattern of upper-limit price surges and sharp declines within short periods. When the share price is driven by issues with little actual business relevance, the gap between fundamentals and price movement can widen."
    }
   },
   {
    "title": {
-    "ko": "건설 경기 장기 침체와 내수 구조 축소",
-    "en": "Prolonged Construction Slump and Structural Domestic Demand Contraction"
+    "ko": "박마진 유통업 구조·경쟁 심화",
+    "en": "Thin-Margin Distribution Structure and Intense Competition"
    },
    "body": {
-    "ko": "국내 철강 연간 내수 소비량이 약 4,510만 톤으로 구조적으로 축소된 상황에서 건설 경기 부진은 단기 내 반전을 기대하기 어렵다. 준공 후 미분양 물량이 2012년 이후 처음으로 3만 가구를 넘어섰고, 2026년 1분기 건설업 폐업 건수도 1,000건을 상회한다. 건설 부문 회복 지연은 금강철강의 관련 강재 판매 물량과 수익성에 직접적인 하방 압력으로 작용한다.",
-    "en": "Domestic Korean steel consumption has structurally contracted to an estimated 45.1 million tonnes in 2026, and a near-term construction rebound is unlikely. Post-completion unsold housing inventory exceeded 30,000 units for the first time since 2012, and construction-sector closures surpassed 1,000 in 2026Q1, signaling entrenched demand weakness. Delayed construction recovery exerts direct downward pressure on construction-linked flat steel sales volumes and profitability."
+    "ko": "철강 유통업은 대형 제철사에서 원재료를 공급받아 재판매하는 구조상 마진이 얇고 원자재 가격 변동에 취약하다. 포스코 계열 판매망 내에도 다수의 경쟁 대리점·가공센터가 존재해 가격 경쟁이 상시적으로 벌어진다. 중국산 저가 수입재 유입이 확대될 경우 국내 유통업체의 판매 마진에 추가 압박이 가해질 수 있다.",
+    "en": "The steel distribution business, which involves supplying raw materials from large steelmakers for resale, has thin margins and is vulnerable to raw material price fluctuations. Within POSCO's affiliated sales network, numerous competing agencies and processing centers exist, leading to constant price competition. If the inflow of low-priced imported steel from China expands, additional pressure could be placed on the sales margins of domestic distributors."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "원자재·유통가격 리스크",
-    "en": "Raw Material and Distribution Pricing Risk"
+    "ko": "원자재 가격·수급 리스크",
+    "en": "Raw Material Price and Supply Risk"
    },
    "body": {
-    "ko": "국내 철강 유통가격은 중국산 수입재 동향, 반덤핑 규제 변화, 글로벌 원자재 가격에 민감하게 반응한다. 반덤핑 관세가 연장되지 않거나 중국 수출허가제의 실효성이 약화될 경우 저가 수입재 재유입으로 스프레드가 재차 압축될 수 있다. 포스코의 열연 코일 공급가격 변동도 원가 구조에 직접 영향을 준다.",
-    "en": "Domestic steel distribution prices are highly sensitive to Chinese import flows, changes in anti-dumping regulatory posture, and global raw-material price swings. Should anti-dumping duties not be extended or China's export-licensing regime prove less effective, low-price import re-entry could re-compress processing spreads. POSCO's hot-rolled coil supply-price adjustments are another direct driver of the company's cost structure."
+    "ko": "회사는 포스코로부터 냉연코일을 공급받아 가공·판매하는 구조로, 원재료 가격 변동과 포스코의 판매 정책 변화에 실적이 직접 노출된다. 원재료 가격이 급등하거나 급락할 경우 재고 평가 손익을 통해 단기 실적에 영향을 줄 수 있다. 2025년 2분기의 대규모 순손실도 이러한 변동성과 무관하지 않을 가능성이 있다.",
+    "en": "The company operates under a structure in which it receives cold-rolled coils from POSCO for processing and sale, directly exposing its performance to raw material price fluctuations and changes in POSCO's sales policies. Sharp increases or decreases in raw material prices can affect short-term performance through inventory valuation gains or losses. The large net loss in Q2 2025 may not be unrelated to this volatility."
    }
   },
   {
    "cat": {
-    "ko": "전방 수요 리스크",
-    "en": "End-Market Demand Risk"
+    "ko": "수입재 및 통상 리스크",
+    "en": "Import Competition and Trade Policy Risk"
    },
    "body": {
-    "ko": "자동차·가전·건설·조선 등 전방 산업의 업황 변동이 금강철강의 판매 물량과 단가에 직접 영향을 미친다. 건설 경기 부진이 예상보다 길어지거나 자동차·가전 수요가 글로벌 경기 침체로 위축될 경우 매출의 추가 감소가 불가피하다. 특정 전방 산업에 대한 집중 노출 구조에서 단일 섹터의 급격한 침체는 수익성에 불균형한 충격을 줄 수 있다.",
-    "en": "Demand fluctuations across downstream industries—automotive, home appliances, construction, and shipbuilding—directly affect Keum Kang Steel's volumes and realized prices. A more-prolonged-than-expected construction slump, or a cyclical downturn in automotive and appliance demand driven by global economic weakness, could trigger further revenue contraction. Where the customer base is concentrated by sector, a sharp downturn in any single downstream industry can deliver disproportionate earnings damage."
+    "ko": "중국산 도금강판·컬러강판에 대한 반덤핑 조사가 진행 중이며, 최종 판정 결과에 따라 수입재 유입 규모와 가격이 달라질 수 있다. 반덤핑 관세가 예상보다 낮게 책정되거나 지연될 경우 저가 수입재와의 가격 경쟁이 심화될 위험이 있다. 통상 환경 변화는 국내 유통업체 전반의 마진에 영향을 미치는 구조적 변수다.",
+    "en": "An anti-dumping investigation into Chinese galvanized steel sheets and color-coated steel sheets is underway, and the scope and pricing of imported steel inflows may change depending on the final ruling. If anti-dumping tariffs are set lower than expected or delayed, there is a risk of intensified price competition with low-priced imports. Changes in the trade environment are a structural variable affecting the margins of domestic distributors overall."
    }
   },
   {
    "cat": {
-    "ko": "비영업 손익 변동성 리스크",
-    "en": "Non-Operating Earnings Volatility Risk"
+    "ko": "소형주 유동성·수급 리스크",
+    "en": "Small-Cap Liquidity and Supply-Demand Risk"
    },
    "body": {
-    "ko": "2025년 2분기 지배순이익이 -43억원을 기록한 주원인은 영업 외 비용(관계사 평가손실 또는 자산 손상 추정)으로 분석된다. 계열사 케이인베스트먼트·금강에코너지 등의 실적 변동성이 연결 순이익의 예측 가능성을 낮출 수 있다. 또한 2026년 1분기에도 영업이익과 지배순이익 간의 큰 괴리가 재현됐는데, 이는 비영업 항목 변동성이 상존함을 시사하며 배당 및 실적 예측을 어렵게 하는 요인이다.",
-    "en": "The 2025Q2 parent net loss of –₩4.3bn was not driven by operating results but by non-operating charges (estimated equity-method losses or asset impairments on associates). Earnings volatility from subsidiaries K-Investment and Geumgang Ecoenergy can reduce the predictability of consolidated net income. Similarly, the wide divergence between operating income and net income in 2026Q1 signals ongoing non-operating-item volatility, complicating both earnings and dividend forecasting."
+    "ko": "시가총액이 작고 유통 주식 수가 제한적인 소형주 특성상 테마성 수급에 따른 단기 변동성이 크게 나타난 이력이 있다. 단기과열종목 지정, 변동성완화장치(VI) 발동 등이 반복적으로 발생한 바 있어 거래 안정성 측면에서 유의가 필요하다. 이러한 변동성은 실적 펀더멘털과 무관하게 나타날 수 있다.",
+    "en": "As a small-cap stock with a small market capitalization and limited float, it has a history of significant short-term volatility driven by thematic supply and demand. Designations as a short-term overheated stock and triggering of volatility interruption mechanisms (VI) have occurred repeatedly, warranting caution in terms of trading stability. Such volatility can occur independently of earnings fundamentals."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 6~7월 (중국산 열연강판 반덤핑 잠정관세 연장 결정)",
-    "en": "June–July 2026 (Chinese Hot-Rolled Coil Anti-Dumping Tariff Extension Decision)"
+    "ko": "2026년 10월 말",
+    "en": "Late October 2026"
    },
    "what": {
-    "ko": "일본·중국산 열연강판에 대한 잠정 덤핑방지관세 부과 기간(6월 22일 만료 예정)의 연장 여부가 결정된다. 연장 시 국내 유통 가격 안정 지속, 미연장 시 저가 수입재 재유입 리스크가 부상한다.",
-    "en": "The extension decision for provisional anti-dumping duties on Japanese and Chinese hot-rolled coil (expiring around June 22) will shape the near-term pricing environment. Renewal supports distribution-price stability; non-renewal risks re-entry of low-cost imports and margin re-compression."
+    "ko": "포스코홀딩스의 2026년 3분기 실적 발표 시 철강 부문 마진과 리튬 사업 진행 상황을 확인하면 금강철강의 원재료 조달 여건과 테마 연동 가능성을 가늠할 수 있다.",
+    "en": "POSCO Holdings' Q3 2026 earnings release will reveal steel segment margin trends and lithium business progress, offering clues to Kumkang Steel's raw material sourcing environment and potential theme-driven co-movement."
    }
   },
   {
    "when": {
-    "ko": "2026년 8월 중 (2026년 2분기 실적 발표)",
-    "en": "Mid-August 2026 (2Q 2026 Earnings Release)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2분기 영업이익률이 반등 추세를 이어가는지, 반덤핑 관세 효과가 냉연 유통 마진 개선으로 실제 전환되고 있는지 확인. 2025년 2분기 대비 순이익 정상화 여부도 핵심 체크포인트다.",
-    "en": "Verify whether the operating-margin recovery trend continues in 2Q 2026, and whether anti-dumping tariff effects are translating into tangible improvement in cold-rolled processing margins. Normalization of net income versus the large 2Q 2025 loss is a key comparator."
+    "ko": "금강철강의 2026년 3분기 분기보고서 공시를 통해 최근 이어진 흑자 흐름이 지속되는지, 매출 회복세가 유지되는지 확인할 필요가 있다.",
+    "en": "Kumkang Steel's Q3 2026 quarterly report filing should be checked to see whether the recent streak of profitability and revenue recovery continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (국내 건설 수요 회복 신호 점검)",
-    "en": "2H 2026 (Domestic Construction Demand Recovery Signals)"
+    "ko": "2026년 4분기 중",
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "반도체 팹·3기 신도시 관련 특수 수요와 일반 주거·상업용 건설 경기가 회복되는지 여부가 건설 관련 강재 수요의 방향을 결정한다. 건설업 착공 통계 및 주요 건설사 수주잔고 추이를 모니터링해야 한다.",
-    "en": "Indicators of construction-sector recovery—including semiconductor fab/new-town construction starts and residential/commercial sector trends—will determine second-half direction for construction-linked flat steel demand. Track monthly construction-start statistics and major contractors' backlog changes."
+    "ko": "중국산 도금강판·컬러강판 반덤핑 조사의 최종 판정 여부와 관세 확정 수준을 확인하면 국내 철강 유통 가격 경쟁 구도의 변화를 예측하는 데 참고가 된다.",
+    "en": "Monitoring the final ruling and confirmed tariff level in the anti-dumping investigation into Chinese coated and color-coated steel sheets will help gauge changes in the domestic steel distribution pricing competition landscape."
    }
   },
   {
    "when": {
-    "ko": "2026년 연말~2027년 초 (2026 회계연도 배당 공시 예상)",
-    "en": "End-2026 / Early 2027 (FY2026 Dividend Announcement)"
+    "ko": "2027년 2~3월",
+    "en": "February-March 2027"
    },
    "what": {
-    "ko": "2025 회계연도 DPS 170원 수준이 유지·증가·감소 중 어느 방향으로 결정될지 확인. 2026년 연간 수익성 회복 강도가 배당 결정의 핵심 변수다.",
-    "en": "Whether the FY2025 DPS of ₩170 is maintained, raised, or cut in FY2026. The strength of full-year 2026 profitability recovery will be the primary driver of the dividend decision."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기 (포스코 공급가격 및 계열사 비영업 손익 동향)",
-    "en": "2H 2026 (POSCO Supply Price and Subsidiary Non-Operating Income Trends)"
-   },
-   "what": {
-    "ko": "포스코의 하반기 열연 코일 공급가격 조정 방향이 금강철강의 원가 구조에 직접 영향을 미치며, 계열사 케이인베스트먼트·금강에코너지의 손익 안정화 여부도 연결 순이익 예측 가능성을 좌우한다.",
-    "en": "POSCO's second-half hot-rolled coil supply-price adjustments directly affect Keum Kang Steel's cost structure, while the earnings stabilization of subsidiaries K-Investment and Geumgang Ecoenergy will determine the predictability of consolidated net income."
+    "ko": "2026년 사업보고서 및 배당 관련 공시를 통해 연간 실적 회복이 온전한 흑자 전환으로 이어졌는지, 배당 정책에 변화가 있는지 점검할 필요가 있다.",
+    "en": "The FY2026 annual business report and dividend-related disclosures should be reviewed to check whether the earnings recovery translated into a full annual net profit and whether dividend policy has changed."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "금강철강은 포스코 지정 냉연 가공센터라는 안정적인 공급망 지위를 기반으로 40년 이상 사업을 영위해 온 철강 유통·가공 전문 기업이다. 2022~2025년 4년 연속 매출과 이익이 동반 하락했으나, 2025년 연간 지배순손익은 사실상 손익분기 수준에서 저점을 확인했고, 2026년 1분기 지배순이익 흑자 전환은 이익 회복의 초기 신호로 해석된다. 중국산 반덤핑 관세·수출허가제 효과가 유통 가격 안정화에 기여하고 있으며, 부채비율 19.3%의 탄탄한 재무 구조는 사이클 하강 국면에서의 내구력을 입증한다. 반면 영업이익률 1% 안팎에 머무는 박리다매 유통 구조, 건설 경기의 구조적 침체, POSCO 단일 공급처 의존에 따른 가격 협상력 제한, 계열사 비영업 손익 변동성 등은 여전히 상존하는 구조적 제약이다. 결론적으로 재무 안전성과 순자산 대비 할인이 하방 지지력을 제공하고 있으나, 이익 회복 속도와 업황 개선의 지속성이 향후 실적 궤도를 결정할 핵심 변수로 남는다.",
-   "en": "Keum Kang Steel has operated for more than four decades as a POSCO-designated cold-rolled processing center, sustaining a stable position within the domestic flat steel supply chain. Four consecutive years of declining revenue and profits (2022–2025) culminated in an apparent trough at near-breakeven profitability in FY2025, while the return to a positive parent net income in 2026Q1 may mark the early stages of an earnings recovery. Anti-dumping tariffs on Chinese steel and China's export-licensing system are contributing to domestic distribution-price stabilization, and a debt ratio of 19.3% demonstrates resilience through the cycle trough. On the other hand, a structurally thin operating margin of approximately 1%, a prolonged domestic construction slump, limited pricing leverage against the sole raw-material supplier POSCO, and non-operating earnings volatility from subsidiaries represent persistent structural constraints. In summary, financial robustness and the book-value discount provide a valuation floor, but the pace of earnings recovery and the durability of sector improvement remain the decisive variables for the future earnings trajectory."
+   "ko": "금강철강은 포스코 계열 냉연강판 가공센터로서 4년 연속 매출 축소와 마진 압박을 겪었으나, 2025년 2분기의 대규모 순손실 이후 3개 분기, 그리고 2026년 상반기까지 총 4개 분기 연속으로 흑자를 이어가는 회복 흐름을 보이고 있다. 다만 이러한 회복이 2024년 이전 수준의 영업이익률로 완전히 복귀했다고 보기는 아직 이르며, 철강 유통업 특유의 박마진 구조와 경쟁 심화는 여전한 구조적 부담이다. 주가는 실적보다 포스코의 리튬 사업, 중국 철강 감산 등 테마성 뉴스에 더 크게 반응해온 이력이 있어 펀더멘털과 주가 흐름 간 괴리가 발생할 수 있다는 점을 인식할 필요가 있다. 현재 주가는 주당순자산에 못 미치는 수준에서 거래되고 있으며, 부채비율은 4개 연도 중 가장 낮은 수준으로 재무 안정성은 상대적으로 개선된 모습이다. 향후에는 3분기 분기보고서를 통한 실적 지속성 확인, 중국산 도금강판 반덤핑 최종 판정, 포스코의 철강·리튬 사업 동향 등이 주요 관찰 포인트가 될 것으로 보인다. 본 보고서는 투자 의견이나 매수·매도 추천을 포함하지 않으며, 정보 제공 목적으로만 작성됐다.",
+   "en": "As a POSCO-affiliated cold-rolled steel processing center, Kumkang Steel has faced four consecutive years of revenue decline and margin pressure, but has shown a recovery trend with four consecutive profitable quarters following a large net loss in Q2 2025 through the first half of 2026. It remains premature, however, to conclude that this recovery has fully restored operating margins to pre-2024 levels, and the thin-margin, competitive structure inherent to steel distribution remains a persistent structural burden. The stock has a history of reacting more strongly to theme-driven news, such as POSCO's lithium business and China's steel production cuts, than to underlying earnings, meaning a gap between fundamentals and share price movement can emerge. The current share price trades below net asset value per share, while the debt ratio stands at its lowest level among the four years shown, indicating relatively improved financial stability. Going forward, key points to watch include confirming earnings continuity through the Q3 quarterly report, the final ruling on anti-dumping measures against Chinese coated steel, and developments in POSCO's steel and lithium businesses. This report does not include an investment opinion or a buy/sell recommendation and is provided for informational purposes only."
   }
  },
  "sources": [
-  "https://kr.investing.com/equities/keum-kang-steel-co-ltd-earnings",
+  "https://markets.hankyung.com/stock/053260",
   "https://m.thinkpool.com/item/053260",
+  "https://www.kokstock.com/stock/item.asp?item_cd=053260",
+  "https://finance.finup.co.kr/Stock/053260",
+  "https://www.newspim.com/news/view/20260409000341",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A053260&cID=&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
-  "https://steelinfosys.com/m/listkey.php?idx=1464&key_idx=699",
-  "https://dartpoint.ai/00123781",
-  "https://m.irgo.co.kr/IR-COMP/004020",
-  "https://www.investing.com/equities/keum-kang-steel-co-ltd",
-  "https://files-scs.pstatic.net/2026/04/16/T3klAWtzUZ/260416(%EB%AA%A9)%20Signal%20Report.pdf",
-  "http://www.dongil.co.kr/chtml/board.php?template=bizdemo55059&com_board_basic=file_download&com_board_id=13&com_board_idx=33&com_board_file_seq=2",
-  "https://kosa.or.kr/",
-  "https://www.snmnews.com/",
-  "https://www.snmnews.com/news/articleView.html?idxno=516099",
-  "https://www.pinpointnews.co.kr/news/articleViewAmp.html?idxno=450976",
+  "https://m.jobkorea.co.kr/company/42637142",
+  "https://www.jobkorea.co.kr/company/1363726",
+  "https://www.snmnews.com/news/articleView.html?idxno=345849",
+  "https://www.kosa.or.kr/",
+  "https://www.seahlns.co.kr/business/steel_bs.asp",
+  "https://jasoseol.com/companies/5365",
+  "http://www.kksteel.co.kr/",
   "https://kosa.or.kr/sub/steel_info/sub02.jsp",
-  "https://www.hyster.com/ko-kr/asia-pacific/%EC%A7%80%EC%9B%90-%EB%B0%8F-%EC%9E%90%EC%9B%90/%EB%B0%B1%EC%84%9C/%EC%B2%A0%EA%B0%95-%EC%9C%A0%ED%86%B5-%ED%9A%A8%EC%9C%A8%EC%84%B1-%EA%B0%9C%EC%84%A0/",
-  "https://tips.energy.or.kr/overconsector/overconsector_view_02.do?code_num=MI&ch_code_num=MI02",
-  "https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1152",
-  "https://m.irgo.co.kr/IR-COMP/022100"
+  "https://www.infostockdaily.co.kr/news/articleView.html?idxno=215580",
+  "https://ko.tradingeconomics.com/commodity/lithium",
+  "http://www.sporbiz.co.kr/news/articleView.html?idxno=513813",
+  "https://v.daum.net/v/t9KFgdlwXr"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "053260",
  "name": "금강철강",
  "name_en": "KEUM KANG STEEL CO., LTD",
@@ -233,9 +223,9 @@
   "철강·금속"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:58",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:08",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 5380,
-   "mcap": 0.1007,
+   "price": 6030,
+   "mcap": 0.1129,
    "shares": 18720000,
    "total_shares": 18720000,
    "wavg_shares": 15713147,
-   "per": 13.284,
+   "per": 14.889,
    "eps": 405,
-   "pbr": 0.6601,
+   "pbr": 0.7399,
    "bps": 8150,
    "roe_ttm": 5.1,
    "ttm_window": "2025Q3~2026Q2",
@@ -356,7 +346,7 @@
    "bps_krx": 8115.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 170.0,
-   "div": 3.16
+   "div": 2.82
   }
  }
 }

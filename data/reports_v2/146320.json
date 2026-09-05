@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "합성쿼츠 수직계열화 — 소재기업 전환 실적 검증",
-  "en": "Synthetic Quartz Vertical Integration — Validating the Parts-to-Materials Pivot"
+  "ko": "합성쿼츠 흑자전환, 증설·신소재가 다음 변수",
+  "en": "Synthetic Quartz Turns Profitable; Capacity and New Materials Next"
  },
  "lead": {
-  "ko": "비씨엔씨는 세계 최초 반도체 식각용 합성쿼츠 QD9을 필두로 QD9+·보론카바이드 CD9·실리콘 잉곳 SD9까지 식각 공정 핵심 소재 3종을 자체 내재화한 국내 유일 업체로, 2024년 영업적자를 딛고 2025년 흑자 전환에 성공하였으나 수익성 회복 속도와 부채 증가가 핵심 모니터링 포인트다.",
-  "en": "BCNC is Korea's only company to have vertically integrated all three core etch-process materials — synthetic quartz (QD9/QD9+), boron carbide (CD9), and silicon ingot (SD9) — and returned to profitability in FY2025 after an operating loss year in 2024, with the pace of margin recovery and rising leverage as the key watch items."
+  "ko": "비씨엔씨는 2025년 연결 영업이익이 흑자로 전환됐고 2026년 2분기까지 매출 성장세가 이어지고 있으나, 순이익은 영업이익 대비 상대적으로 낮은 수준에 머물러 있다.",
+  "en": "BC&C returned to consolidated operating profit in 2025 and has continued to post revenue growth through the second quarter of 2026, though net income has remained relatively subdued compared with operating profit."
  },
  "keypoints": [
   {
-   "ko": "2025년 연간 영업이익 흑자 전환(OPM 4.5%) 달성 — 2024년 OPM -2.7%에서 반등하였으나, 2022년 고점(14.1%) 회복까지는 여전히 상당한 거리가 존재",
-   "en": "FY2025 returned to operating profit (OPM 4.5%) from –2.7% in FY2024, yet remains well below the 2022 peak OPM of 14.1%"
+   "ko": "2025년 연결 매출 875.8억원(+13.2% YoY), 영업이익 39.3억원으로 전년 영업손실에서 흑자로 전환됐다.",
+   "en": "2025 consolidated revenue reached KRW 87.58 billion (+13.2% YoY), with operating profit of KRW 3.93 billion turning positive from the prior year's loss."
   },
   {
-   "ko": "식각 공정 3대 핵심 소재 수직계열화 — QD9+(합성쿼츠), CD9(보론카바이드), SD9(실리콘 잉곳) 국산화로 원가경쟁력 및 공급 안정성 확보한 국내 유일 업체",
-   "en": "Full vertical integration of the three key etch materials — QD9+ (synthetic quartz), CD9 (boron carbide), and SD9 (silicon ingot) — making BCNC the only domestic company with this capability"
+   "ko": "2026년 2분기 매출은 267.7억원으로 확인 가능한 분기 창(2025Q3~2026Q2) 내 최대치를 기록했다.",
+   "en": "Second-quarter 2026 revenue reached KRW 26.77 billion, the highest level within the disclosed quarterly window (2025Q3-2026Q2)."
   },
   {
-   "ko": "2026년 말까지 160억원 규모 소재 생산시설 신증축 진행 중 — 증설 완료 후 캐파 확대가 중장기 매출 성장의 핵심 레버로 작용",
-   "en": "KRW 16 billion materials plant expansion ongoing through end-2026 — post-completion output capacity is the primary lever for medium-term revenue growth"
+   "ko": "합성쿼츠(QD9·QD9+)가 2025년 매출의 67%를 차지하는 핵심 제품군이며, 삼성전자·SK하이닉스·TSMC·인텔 등을 고객사로 두고 있다.",
+   "en": "Synthetic quartz (QD9/QD9+) accounted for 67% of 2025 revenue, with Samsung Electronics, SK Hynix, TSMC and Intel among key customers."
   },
   {
-   "ko": "부채비율 51.3%(2022) → 125.3%(2025)로 급증 — 지속적 시설 투자에 따른 재무 부담이 단기 리스크 요인으로 부각",
-   "en": "Debt-to-equity ratio surged from 51.3% (2022) to 125.3% (2025) — sustained capex-driven leverage is a key near-term financial risk"
+   "ko": "신소재 CD9(보론카바이드)과 실리콘 잉곳 국산화로 제품 다각화를 진행 중이다.",
+   "en": "The company is diversifying its product line through the new boron-carbide-based material CD9 and localized silicon ingot production."
   },
   {
-   "ko": "SK하이닉스 HBM 라인향 CD9 PO 수령(2024년 8월) 확인 — AI 수요 확대에 연동된 고마진 신소재 매출 본격화 여부가 중단기 수익성 변수",
-   "en": "CD9 purchase order from SK Hynix's HBM production line confirmed (August 2024) — full ramp-up of this high-margin new material is a key medium-term profitability catalyst"
+   "ko": "160억원 규모 생산시설 증설이 2026년 말까지 진행 중이며, 부채비율은 2022년 51.3%에서 2025년 125.3%로 상승했다.",
+   "en": "A KRW 16.0 billion facility expansion is underway through the end of 2026, while the debt ratio rose from 51.3% in 2022 to 125.3% in 2025."
   }
  ],
  "business": {
-  "ko": "비씨엔씨는 2003년 경기도 이천에서 설립된 반도체 제조공정용 소모성 부품·소재 전문기업으로, 2022년 3월 코스닥에 상장했다. 핵심 제품은 반도체 식각(에칭) 및 박막 증착 공정에서 소모되는 Ring, Tube, Dome 등이며, 2025년 기준 소재별 매출 비중은 합성쿼츠(QD9·QD9+) 67%, 천연쿼츠 16%, 실리콘 7%, 세라믹 5%, 기타 5%다. 동사는 2007년부터 반도체용 합성쿼츠 QD9을 세계 최초로 상용화하여 삼성전자·SK하이닉스·인텔·TSMC 등 글로벌 반도체 제조사 및 세메스 등 장비 업체에 납품하고 있으며, 국내 쿼츠 시장점유율 1위를 보유한 것으로 알려져 있다. QD9 잉곳 소재 국산화에 성공한 차세대 소재 QD9+는 2023년 말부터 국내외 양산 공급이 시작되었으며, 원재료 내재화에 따른 원가 절감 및 초고순도 특성으로 주 고객사 침투율이 확대되고 있다. 기존 CVD-SiC를 대체하는 보론카바이드(B4C) 기반 포커스링 CD9은 수명이 SiC 대비 30% 이상 길고 내마모성이 뛰어나며, 2024년 8월 SK하이닉스 HBM 라인으로 첫 PO를 수령해 양산 공급 단계에 진입했다. 단결정·다결정 실리콘 잉곳(SD9) 국산화도 완료되어 북미 고객사 양산 공급을 본격화하였다. 경기도 이천 본사에 M1~M5 제조동 및 소재 생산동(Q1)을 운영하며, 2025년 9월 착공한 160억원 규모 신증축 투자(2026년 12월 완공 예정)로 소재 캐파를 추가 확보하고 있다. 세라믹, 실리콘, 쿼츠 기반 소재·부품 일괄 생산 체계를 갖춘 '소재 기업으로의 제2 도약'이 장기 성장 스토리의 핵심이다.",
-  "en": "BCNC, established in 2003 in Icheon, Gyeonggi-do, is a specialist manufacturer of consumable semiconductor process parts and materials, listed on KOSDAQ in March 2022. Its core products — Rings, Tubes, and Domes — are consumed in semiconductor etching and thin-film deposition processes, with a 2025 revenue mix of synthetic quartz (QD9/QD9+) 67%, natural quartz 16%, silicon 7%, ceramic 5%, and others 5%. Since 2007, BCNC has been the world's first commercial supplier of synthetic quartz for semiconductor etching, supplying global chipmakers including Samsung Electronics, SK Hynix, Intel, and TSMC, as well as equipment makers such as SEMES; BCNC holds the top domestic market share in the quartz segment. QD9+, the next-generation synthetic quartz with domestically sourced ingots, entered volume production for domestic and overseas customers from late 2023, delivering cost savings through in-house input materials and enhanced ultra-high-purity characteristics. CD9, a boron carbide (B4C)-based focus ring that replaces CVD-SiC with over 30% longer service life and superior wear resistance, received its first purchase order from SK Hynix's HBM production line in August 2024 and has entered the volume supply phase. Domestic production of single-crystal and polycrystalline silicon ingot (SD9) has been completed, with volume supply to North American customers underway. The company currently operates M1–M5 manufacturing buildings and a materials facility (Q1) at its Icheon headquarters, with a KRW 16 billion expansion program (commenced September 2025, targeted completion December 2026) adding further materials capacity. The long-term growth story centers on the transformation from a parts manufacturer into an integrated materials company across ceramic, silicon, and quartz."
+  "ko": "비씨엔씨는 2003년 설립돼 2022년 코스닥에 상장한 반도체 제조공정용 소모성 부품 전문기업이다. 반도체 식각 및 박막 증착 공정에서 사용되는 링(Ring), 튜브(Tube), 돔(Dome) 등의 부품을 쿼츠·실리콘·세라믹 소재로 생산한다. 세계 최초로 개발한 반도체용 합성쿼츠(QD9)를 통해 기존 천연쿼츠 시장을 대체하며 전세계 시장점유율 1위를 기록하고 있다. 2025년 기준 매출 구성은 QD9·QD9+ 67%, 천연쿼츠 16%, 실리콘 7%, 세라믹 5%, 기타 5%로, 합성쿼츠 계열이 압도적 비중을 차지한다. 주요 고객사는 삼성전자, SK하이닉스, TSMC, 인텔 등 글로벌 주요 플레이어이며, 반도체 장비사에도 부품을 공급한다. 최근에는 합성쿼츠 개발 및 실리콘 잉곳 소재 국산화로 북미 고객사 공급 중이며, 신소재·수입 대체 프로젝트를 통해 사업 영역을 확장하고 있다. 신소재 CD9은 옥사이드 에칭 공정에 쓰이는 보론카바이드 기반 소재로, 2024년 8월 글로벌 반도체 기업으로부터 퀄 테스트를 성공적으로 마무리하고 첫 구매주문서(PO)를 받았다. 이로써 쿼츠·실리콘·SiC 대체 소재까지 식각 공정 3대 소재를 자체 개발·양산하는 구조를 갖추게 됐다. 경쟁구도상으로는 국내 반도체 소모성 부품 업체들과 함께 시장 점유율을 다투고 있으며, 합성쿼츠 분야에서는 독자적인 국산화 지위를 확보하고 있다.",
+  "en": "BC&C, founded in 2003 and listed on KOSDAQ in 2022, is a specialist maker of consumable parts used in semiconductor manufacturing processes. It produces rings, tubes and domes used in etching and thin-film deposition processes using quartz, silicon and ceramic materials. Through synthetic quartz (QD9), which it developed for the first time in the world, the company has replaced the existing natural quartz market and holds the number one global market share. As of 2025, revenue composition was QD9/QD9+ at 67%, natural quartz at 16%, silicon at 7%, ceramics at 5%, and other at 5%, with the synthetic quartz line accounting for the overwhelming majority. Key customers include Samsung Electronics, SK Hynix, TSMC, Intel and other major global players, and the company also supplies parts to semiconductor equipment makers. More recently, through synthetic quartz development and localization of silicon ingot materials, the company is supplying a North American customer, and it continues to expand its business through new material and import-substitution projects. The new material CD9, a boron-carbide-based material used in oxide etching, successfully completed qualification testing and received its first purchase order from a global semiconductor company in August 2024. This gives BC&C an in-house development and mass-production structure covering all three major etch-process material categories: quartz, silicon and SiC-replacement material. Competitively, it vies for share with other domestic semiconductor consumable-parts makers, while holding a distinctive localized position in the synthetic quartz segment."
  },
  "earnings": {
-  "ko": "2022년은 연결 매출 820억원, 영업이익 116억원(OPM 14.1%)으로 상장 이후 최고 수익성을 기록한 기준선 해다. 반도체 업황 침체와 신규 제품 투자 비용 증가가 맞물린 2023년에는 매출이 653억원으로 급감하며 영업이익이 -0.4억원(OPM -0.1%)으로 사실상 손익분기 수준에 머물렀다. 2024년에는 매출이 774억원으로 전년 대비 18.5% 반등했음에도 대규모 생산능력 증설, 인력 채용, 연구개발 비용 선행 집행으로 영업손실이 -20.6억원(OPM -2.7%)으로 심화됐다. 2025년에는 합성쿼츠 QD9+ 소재 내재화에 따른 원가 절감, CD9 신소재 부품 양산 확대, 단결정·다결정 실리콘 잉곳 북미 공급 본격화가 복합적으로 작용하며 매출 876억원(+13.2% YoY), 영업이익 39.3억원(OPM 4.5%)으로 흑자 전환에 성공했다. 분기 흐름을 보면 2025년 1분기는 영업적자(-0.65억원)였으나 2분기(16.1억원)부터 흑자 전환 후 3분기(13.8억원)·4분기(10.0억원)로 영업이익이 점진적으로 감소하였다. 2026년 1분기는 매출 237억원(전년 동기 대비 약 20% 증가)을 기록하며 외형 성장세를 유지했으나 영업이익은 8.0억원으로 전분기 대비 추가 둔화하였고, OPM이 3.4%까지 낮아지는 추세가 지속되고 있어 비용 압력이 완전히 해소되지 않음을 시사한다. 지배주주 귀속 순이익은 2025년 기준 11.5억원에 그쳐 영업이익(39.3억원) 대비 크게 낮은데, 이는 금융비용과 세부담이 상당함을 반영한다. 부채비율은 2022년 51.3%에서 2025년 125.3%로 급상승하여 지속적 시설 투자가 재무구조에 미치는 영향을 주시할 필요가 있다.",
-  "en": "FY2022 was the peak reference year, with consolidated revenue of KRW 82.0 billion and operating profit of KRW 11.6 billion (OPM 14.1%). The semiconductor down-cycle combined with rising new-product investment costs in FY2023 drove revenue down sharply to KRW 65.3 billion, with operating income barely above breakeven at –KRW 0.04 billion (OPM –0.1%). In FY2024, a 18.5% revenue rebound to KRW 77.4 billion was offset by aggressive front-loaded spending on capacity expansion, hiring, and R&D, deepening the operating loss to –KRW 2.1 billion (OPM –2.7%). FY2025 saw a combination of lower QD9+ input costs from in-house ingot production, expanded CD9 volume shipments, and commencement of silicon ingot supply to North American customers, delivering revenue of KRW 87.6 billion (+13.2% YoY) and operating income of KRW 3.9 billion (OPM 4.5%). On a quarterly basis, Q1 2025 remained in operating loss (–KRW 0.065 billion), with a return to profit from Q2 (KRW 1.6 billion); however, operating income declined sequentially through Q3 (KRW 1.4 billion) and Q4 (KRW 1.0 billion). Q1 2026 maintained ~20% YoY revenue growth at KRW 23.7 billion but operating income slipped further to KRW 0.8 billion (OPM 3.4%), indicating that cost pressures have not yet been fully absorbed. FY2025 owner-attributable net income of KRW 1.2 billion was significantly below operating income of KRW 3.9 billion, reflecting substantial financing costs and taxes. The debt-to-equity ratio surged from 51.3% in 2022 to 125.3% in 2025, underscoring the cumulative financial impact of sustained capital expenditure."
+  "ko": "연간 실적은 반도체 업황 사이클을 뚜렷하게 반영한다. 2022년 매출 820.5억원, 영업이익률 14.1%로 호황기를 누렸으나, 2023년에는 매출이 653.1억원(-20.4%)으로 급감하며 영업이익이 소폭 적자(-0.4억원)로 전환됐다. 2024년에는 매출이 773.7억원(+18.5%)으로 회복됐음에도 영업손실이 20.6억원으로 확대됐는데, 이는 생산시설 투자 부담과 신제품 초기 비용이 반영된 결과로 해석된다. 2025년에는 매출 875.8억원(+13.2%), 영업이익 39.3억원(영업이익률 4.5%), 지배주주순이익 11.5억원으로 매출과 이익이 동시에 흑자 전환됐다. 최근 분기 흐름을 보면 2025년 2분기 매출 219.4억원에서 2026년 2분기 267.7억원으로 확대됐고, 영업이익률은 2025년 2분기 7.3%에서 2025년 4분기 4.2%, 2026년 1분기 3.4%로 낮아졌다가 2026년 2분기 6.9%로 다시 올라오는 등 분기별 변동성이 뚜렷하다. 특히 지배주주순이익은 영업이익 흐름과 항상 같은 방향으로 움직이지 않았는데, 2025년 3분기에는 영업이익(13.8억원) 대비 순이익(15.1억원)이 오히려 더 큰 반면 2025년 4분기 이후에는 순이익이 영업이익을 밑도는 구간이 이어졌다. 회사는 과거 실적 설명에서 영업외비용에 현금유출이 없는 전환사채 이자비용과 외화환산손실이 반영됐다고 밝힌 바 있어, 비영업적 요인이 순이익 변동성을 키우는 구조로 판단된다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산으로는 매출 약 963억원, 영업이익 약 50억원, 지배주주순이익 약 29.7억원 수준으로, 연간 영업이익률 개선 흐름이 이어지고 있는 모습이다.",
+  "en": "Annual results clearly reflect the semiconductor industry cycle. In 2022, the company posted revenue of KRW 82.05 billion and an operating margin of 14.1% during an upcycle, but in 2023 revenue fell sharply to KRW 65.31 billion (-20.4%) and operating profit swung to a small loss of KRW 42 million. In 2024, even as revenue recovered to KRW 77.37 billion (+18.5%), the operating loss widened to KRW 2.06 billion, which can be interpreted as reflecting the burden of production-facility investment and initial costs tied to new products. In 2025, revenue reached KRW 87.58 billion (+13.2%), operating profit was KRW 3.93 billion (a 4.5% operating margin), and net income attributable to owners was KRW 1.15 billion, with both revenue and profit turning positive simultaneously. Looking at recent quarters, revenue expanded from KRW 21.94 billion in the second quarter of 2025 to KRW 26.77 billion in the second quarter of 2026, while the operating margin fell from 7.3% in Q2 2025 to 4.2% in Q4 2025 and 3.4% in Q1 2026 before recovering to 6.9% in Q2 2026, showing notable quarter-to-quarter volatility. Notably, net income attributable to owners did not always move in the same direction as operating profit: in the third quarter of 2025, net income (KRW 1.51 billion) actually exceeded operating profit (KRW 1.38 billion), whereas from the fourth quarter of 2025 onward net income trailed operating profit. In explaining past results, the company noted that non-cash convertible-bond interest expense and foreign-currency translation losses were reflected in non-operating expenses, suggesting that non-operating factors amplify net income volatility. Summed over the most recent four quarters (Q3 2025 through Q2 2026), revenue totaled roughly KRW 96.3 billion, operating profit about KRW 5.0 billion, and net income attributable to owners about KRW 2.97 billion, indicating a continuing trend of annual operating margin improvement."
  },
  "industry": {
-  "ko": "반도체 식각 공정 소모성 부품·소재 시장은 전방인 칩 메이커의 가동률 및 설비 투자 사이클에 직접 연동된다. 글로벌 반도체 시장은 2024년 약 6,270억 달러에서 2030년 1조 달러 이상으로 성장이 전망되며, 2026년만도 약 17.8% 성장해 9,000억 달러를 넘어설 것으로 분석된다. 특히 메모리 반도체는 2026년 약 33.8% 급증하며 전체 성장을 주도할 것으로 예상된다. AI 반도체 수요 확대로 HBM 생산이 늘어나면서 기존 D램 대비 복잡한 식각 공정이 반복되어 소모성 부품 교체 주기가 구조적으로 빨라지는 수혜 구도가 형성되고 있다. 반도체 미세화·고단화 트렌드는 공정 중 불순물·파티클에 대한 민감도를 높여 천연쿼츠 대비 순도와 수명이 우수한 합성쿼츠의 채택을 가속하고 있으며, 현재 식각 시장 내 합성쿼츠 침투율은 10% 이하로 추정되어 구조적 성장 여지가 크다. 비씨엔씨의 경쟁 구도는 글로벌 소재 대기업(Heraeus, Shin-Etsu Quartz 등) 및 국내 유사 업체들로 구성되나, 동사는 QD9/QD9+ 합성쿼츠에서 세계시장점유율 1위를 확보한 것으로 알려진다. CD9(보론카바이드) 부문은 기존 CVD-SiC 대비 내마모성이 뛰어나고 수명이 길어 200단 이상 낸드 식각 등 초미세화 공정에서 채택이 확대되는 추세다.",
-  "en": "The consumable semiconductor etch parts and materials market is directly tied to chipmakers' utilization rates and capex cycles. The global semiconductor market is forecast to grow from approximately $627 billion in 2024 to over $1 trillion by 2030, with 2026 expected to see growth of approximately 17.8%, surpassing $900 billion, led by a roughly 33.8% surge in memory. Expanding HBM production for AI accelerators structurally accelerates replacement cycles for consumable parts, as HBM fabrication requires far more complex etch sequences than conventional DRAM. The trend toward finer geometries and taller NAND stacks heightens particle sensitivity, systematically accelerating adoption of purity-superior synthetic quartz over natural quartz; synthetic quartz penetration in the etch market is estimated at below 10%, indicating substantial structural room for expansion. BCNC's competitive landscape consists of global materials companies (Heraeus, Shin-Etsu Quartz, etc.) and domestic peers, though BCNC is recognized as the global market leader in QD9/QD9+ synthetic quartz for semiconductor etch. The CD9 (boron carbide) segment benefits from superior wear resistance and longer service life versus CVD-SiC, with adoption expanding in advanced-node processes such as 200-plus-layer NAND etching."
+  "ko": "반도체 식각 공정용 소모성 부품 시장은 미세공정 전환과 적층 단수 증가에 따라 부품 교체 주기가 짧아지면서 구조적으로 수요가 늘어나는 산업으로 평가된다. 특히 합성쿼츠는 기존 천연쿼츠보다 파티클 발생이 적고 수명이 길어 첨단 공정에서 채택이 확대되는 추세이며, 국내 합성쿼츠 침투율은 2023년 기준 약 10% 수준으로 향후 확장 가능성이 있는 것으로 평가된 바 있다. 비씨엔씨는 이 시장에서 세계 최초 개발사로서의 지위를 갖고 있으나, 국내에는 티씨케이·하나머티리얼즈·원익QnC 등 반도체 소모성 부품 업체들이 경쟁 및 협력 관계로 존재한다. CD9이 겨냥하는 SiC(실리콘카바이드) 대체 시장과 관련해서는, 글로벌 SiC 소자 시장이 2025년 약 40.2억 달러 규모에서 2034년까지 두 자릿수 성장률로 확대될 것으로 추정되는 등 전방 시장 자체의 성장이 예상되고 있다. 전방 고객인 메모리·파운드리 업체들의 가동률과 증설 속도가 소모성 부품 수요를 좌우하는 핵심 변수이며, 회사의 실적도 이 사이클에 연동돼 2023년 업황 부진기에 매출이 급감했다가 2025년 들어 회복되는 흐름을 보였다. 합성쿼츠·CD9·실리콘 잉곳까지 소재를 수직계열화한 점은 경쟁사와 차별화 요인으로 꼽히지만, 대형 반도체 제조사들이 벤더를 다변화하려는 정책도 동시에 존재해 점유율 경쟁은 지속될 것으로 보인다.",
+  "en": "The market for semiconductor etch-process consumable parts is generally viewed as one with structurally growing demand, as process miniaturization and increasing layer counts shorten part replacement cycles. Synthetic quartz in particular is being adopted more widely in advanced processes because it generates fewer particles and lasts longer than natural quartz, and domestic synthetic quartz penetration was assessed at around 10% as of 2023, with room seen for further expansion. BC&C holds a position as the world's first developer in this market, though domestic peers such as TCK, Hana Materials, and Wonik QnC exist as both competitors and, in some respects, collaborators in the broader consumable-parts space. Regarding the SiC (silicon carbide) replacement market targeted by CD9, the front-end market itself is expected to grow, as the global SiC devices market was valued at roughly $4.02 billion in 2025 and is projected to expand at a double-digit growth rate through 2034. Utilization rates and capacity expansion pace at memory and foundry customers are the key variables driving consumable-parts demand, and the company's results have tracked this cycle closely, with revenue sharply declining during the 2023 downturn before recovering from 2025. Vertical integration across synthetic quartz, CD9, and silicon ingot materials is cited as a differentiating factor versus competitors, but large semiconductor manufacturers' ongoing efforts to diversify their vendor base mean share competition is likely to continue."
  },
  "outlook": {
-  "ko": "신한투자증권은 2026년 2월 리포트에서 비씨엔씨가 2025년 실적 턴어라운드를 기점으로 2026~2027년 성장 가속화 구간에 진입할 것으로 분석하였으며, 주요 고객사 수요 증가로 합성쿼츠 가동률이 2026년 하반기 78%까지 상승하며 매출 성장이 이어질 것으로 전망했다. 2025년 9월 착공한 소재 생산시설 신증축 및 설비투자(총 160억원, 2026년 12월 완공 예정)가 마무리되면 부품·소재 캐파 확대로 중장기 매출 성장의 기반이 마련될 것으로 보인다. QD9+ 소재 국산화에 따른 원가 절감 효과는 2025년부터 이익 개선으로 가시화되기 시작했으며, 주 고객사 침투율 확대가 지속될 경우 수익성 레버리지가 점진적으로 높아질 수 있다. CD9(보론카바이드 포커스링)은 SK하이닉스 HBM 라인 공급을 시작으로 국내외 복수 고객사 확대 테스트가 진행 중이며, 양산 물량 증가가 고마진 제품 매출 비중을 높이는 구조적 변화로 이어질 수 있다. 2026년 6월 30일 100% 자회사 비씨엔씨머터리얼즈 흡수합병(합병 등기 예정: 2026년 7월 8일)이 완료되면 경영 효율화와 사업 경쟁력 강화 효과가 기대되며, 자본금 변동 없이 무증자 방식으로 진행돼 주주 희석은 없다. 다만 부채비율이 125%를 초과한 상황에서 추가 시설 투자가 진행 중이므로, 영업 현금흐름 개선을 통한 자체 자금 조달 능력 확보가 재무 건전성 확보의 핵심 과제로 남아 있다.",
-  "en": "Shinhan Investment Securities noted in its February 2026 research report that BCNC's 2025 turnaround marks the beginning of an accelerating growth phase through 2026–2027, forecasting that primary customer demand growth will push synthetic quartz capacity utilization to 78% in the second half of 2026, sustaining revenue momentum. The KRW 16 billion materials plant expansion (commenced September 2025, targeted completion December 2026) is expected to establish the capacity base for medium- to long-term revenue growth once completed. Cost savings from in-house QD9+ ingot production began to positively impact margins in 2025, and further penetration of the higher-margin QD9+ product is expected to provide incremental profitability leverage. CD9 supply, which began with SK Hynix's HBM line, is progressing with qualification tests at additional domestic and overseas customers; a sustained ramp in CD9 volumes could meaningfully lift the contribution of high-margin products to total sales. The absorption merger of 100%-owned subsidiary BCNC Materials — effective June 30, 2026, with merger registration scheduled July 8, 2026 — is aimed at improving operational efficiency and competitive strength, with no new shares issued and no shareholder dilution. However, with the debt-to-equity ratio exceeding 125% and capex ongoing, improving operating cash flow to finance growth internally remains the critical near-term challenge."
+  "ko": "회사는 2025년 9월 24일 이사회 결의를 통해 반도체 소재 생산시설 신증축 및 설비투자에 160억원을 투자한다고 공시했으며, 이는 2024년 말 연결 자기자본 대비 21.8% 규모로 투자기간은 2025년 9월 24일부터 2026년 12월 31일까지다. 이 증설이 완료되면 합성쿼츠 및 관련 소재의 생산능력 확대가 예상된다. CD9은 2024년 8월 글로벌 반도체 기업으로부터 퀄 테스트를 통과하고 첫 구매주문서를 받은 이후 추가 고객사와의 퀄 테스트가 순차적으로 진행되고 있는 것으로 파악되며, 향후 이들 테스트의 통과 여부와 양산 확대 속도가 실적에 영향을 줄 변수다. 실리콘 잉곳의 북미 고객사 공급도 초기 단계로, 공급 물량 확대 여부가 확인 대상이다. 2026년 상반기까지의 분기 실적은 매출 성장이 이어지는 가운데 영업이익률이 등락을 반복하는 모습을 보였는데, 증설 투자가 마무리되는 2026년 말 이후 원가 구조와 가동률에 어떤 변화가 나타나는지가 관전 포인트다. 순이익 측면에서는 전환사채 관련 비영업 비용의 향후 소멸 또는 지속 여부도 실적 가시성에 영향을 줄 수 있는 요인이다.",
+  "en": "On September 24, 2025, the company's board approved a plan to invest KRW 16.0 billion in new construction and equipment for semiconductor material production facilities, equivalent to 21.8% of consolidated equity at the end of 2024, with the investment period running from September 24, 2025 through December 31, 2026. Once complete, this expansion is expected to increase production capacity for synthetic quartz and related materials. For CD9, after passing qualification testing and receiving its first purchase order from a global semiconductor company in August 2024, additional customer qualification tests appear to be proceeding sequentially, and the pace of further qualification and mass-production ramp-up will be a variable to watch. Silicon ingot supply to the North American customer is also at an early stage, and whether shipment volumes expand is something to confirm going forward. Quarterly results through the first half of 2026 showed continued revenue growth alongside fluctuating operating margins, making it worth watching how the cost structure and utilization rates evolve once the facility expansion is completed at the end of 2026. On the net income side, whether non-operating costs tied to convertible bonds fade or persist is another factor that could affect earnings visibility."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 BPS(주당순자산가치) 6,483원을 기준으로 순자산 대비 소폭 프리미엄 구간에 형성되어 있으며, 이는 수직계열화 완성 및 신소재 성장 기대가 장부가치 이상의 평가를 받고 있음을 나타낸다. 이익 기준 멀티플은 2022년 고점 OPM 14.1% 대비 현재 회복 초기 단계의 이익 수준(2025년 연간 OPM 4.5%, 2026년 1분기 3.4%)에 높게 형성되어 있어, 과거 수익성 호황기 대비 이익 배수 부담이 큰 구간임을 의미한다. 직전 사업연도 주당현금배당(DPS)은 0원으로 배당이 없어 배당수익률 측면의 수익 보완은 기대하기 어렵고, 업종 평균을 하회하는 수준이다. 중장기적으로 QD9+ 침투율 상승, CD9·SD9 신소재 매출 본격화, 증설 완료 후 이익 레버리지가 복합적으로 실현될 경우 현재 멀티플에 대한 정당성이 점진적으로 높아질 수 있다. 그러나 그 실현 시기와 속도가 불확실한 가운데 2026년 1분기 OPM 둔화 흐름이 지속되고 있어, 분기별 이익 회복 여부가 현 구간 밸류에이션을 뒷받침하는 핵심 체크포인트가 될 것이다.",
-  "en": "The share price trades at a modest premium to net asset value relative to a BPS (book value per share) of KRW 6,483, reflecting market expectations for the completed vertical integration and new-materials growth that extend beyond the book value of assets. The earnings-based multiple is elevated relative to the current early-stage recovery earnings level — FY2025 OPM of 4.5% and Q1 2026 OPM of 3.4% — marking a significant departure from the 2022 peak OPM of 14.1%, when valuation multiples were more contained. With DPS at zero for the most recent fiscal year, there is no yield support to offset the earnings multiple, placing dividend income below the sector average. Over the medium to long term, accelerating QD9+ penetration, full ramp-up of CD9/SD9 revenues, and post-expansion earnings leverage could progressively justify the current premium; however, given the continued sequential decline in quarterly OPM through Q1 2026, the pace of profitability recovery remains the pivotal variable in supporting the present valuation level."
+  "ko": "비씨엔씨는 자기자본 대비 시장에서 순자산보다 높은 값으로 거래되는 구간에 있으며, 이는 2022년 순이익 정점 이후 2023~2024년 적자를 거쳐 2025년 흑자로 전환된 실적 궤적과 함께 살펴볼 필요가 있다. 과거 상장 이후 순이익 변동성이 커서 주가수익비율은 통상적인 업종 평균보다 높은 밴드에서 형성돼 온 편으로 파악된다. 회사는 별도의 현금배당을 지급하지 않고 있어, 배당을 통한 주주환원보다는 실적 개선과 재무구조 변화가 주가 관련 논의의 중심이 되는 편이다. 부채비율이 2022년 51.3%에서 2025년 125.3%로 뚜렷하게 상승한 점은 순자산 대비 주가 수준을 판단할 때 함께 고려할 재무적 배경이다. 이익이 적자에서 흑자로 전환된 지 아직 오래되지 않은 만큼, 향후 분기별 이익 안정성이 확인되는 정도에 따라 시장의 평가 눈높이가 달라질 수 있다.",
+  "en": "BC&C currently trades at a level above its net asset value on a per-share basis, which should be considered alongside its earnings trajectory—peak profit in 2022, losses in 2023-2024, and a return to profit in 2025. Because net income has historically been volatile since listing, the price-to-earnings multiple has tended to sit in a band above typical sector averages. The company does not currently pay a cash dividend, so discussions around its shares tend to center more on earnings recovery and balance-sheet changes than on shareholder returns via dividends. The debt ratio's clear rise from 51.3% in 2022 to 125.3% in 2025 is a financial backdrop worth weighing alongside any assessment of the share price relative to net assets. Given that the swing from loss to profit is still relatively recent, how the market values the stock going forward may depend on the degree to which quarterly earnings stability is confirmed over time."
  },
  "bull": [
   {
    "title": {
-    "ko": "식각 3대 소재 수직계열화 — 국내 독보적 경쟁 우위",
-    "en": "Vertical Integration of Three Key Etch Materials — Unmatched Domestic Competitive Moat"
+    "ko": "실적 턴어라운드 진행",
+    "en": "Earnings Turnaround Underway"
    },
    "body": {
-    "ko": "비씨엔씨는 반도체 식각 공정의 3대 핵심 소재인 합성쿼츠(QD9+)·보론카바이드(CD9)·실리콘(SD9)을 모두 자체 내재화한 국내 유일 업체로, 경쟁사 대비 차별화된 공급 안정성과 원가경쟁력을 확보하고 있다. QD9+ 잉곳 국산화는 기존 수입산 대비 원가 절감 효과를 만들어 합성쿼츠 시장 내 가격 경쟁력을 강화하고 침투율 확대를 가속할 수 있는 구조다. 특허 포트폴리오(CD9 국내외 22건 등록·출원) 기반의 기술 장벽이 신규 경쟁자의 진입을 억제하는 방어 해자로 기능한다.",
-    "en": "BCNC is Korea's only company to have fully in-sourced all three key etch-process materials — synthetic quartz (QD9+), boron carbide (CD9), and silicon (SD9) — providing differentiated supply security and cost competitiveness versus rivals. Domestication of QD9+ ingot production creates structural cost savings versus imported alternatives, enabling more competitive pricing and faster market penetration of synthetic quartz. A robust patent portfolio — with 22 CD9 patents registered or filed domestically and internationally — creates a meaningful technology barrier against new entrants."
+    "ko": "2025년 연결 영업이익이 39.3억원으로 흑자 전환했고, 2026년 2분기 매출은 267.7억원으로 확인 가능한 분기 창 내 최고치를 기록했다. 2026년 1분기 3.4%까지 낮아졌던 영업이익률이 2분기 6.9%로 다시 오른 점도 이익 회복의 방향성을 보여준다. 최근 네 개 분기 합산 영업이익률도 개선 추세를 나타내고 있다.",
+    "en": "Consolidated operating profit turned positive at KRW 3.93 billion in 2025, and second-quarter 2026 revenue of KRW 26.77 billion was the highest within the disclosed quarterly window. The operating margin, which had fallen to 3.4% in Q1 2026, recovered to 6.9% in Q2, underscoring a direction toward profit recovery. The trailing four-quarter aggregate operating margin also shows an improving trend."
    }
   },
   {
    "title": {
-    "ko": "AI·HBM 수요 구조 변화 — 소모성 부품 교체 사이클 구조적 가속",
-    "en": "AI and HBM Demand Shift — Structural Acceleration of Consumable Replacement Cycles"
+    "ko": "신소재 라인업 다각화",
+    "en": "New Material Lineup Diversification"
    },
    "body": {
-    "ko": "AI 가속기 수요 확대에 따른 HBM 생산 증가는 기존 D램 대비 복잡한 식각 공정 반복 횟수를 늘려 소모성 부품 교체 주기를 구조적으로 단축시키고 있다. 반도체 미세화·고단화 트렌드는 공정 중 파티클 오염에 대한 민감도를 높여 합성쿼츠의 천연쿼츠 대체를 가속하며, CD9은 초고단화 낸드 식각 공정에서 기존 SiC 대비 30% 이상 긴 수명을 제공해 고객사 교체 비용을 절감하는 이점을 갖는다. SK하이닉스 HBM 라인의 CD9 PO 수령(2024년 8월)은 이 구조적 수혜의 첫 가시적 증거로, 향후 복수 고객사·복수 제품으로 확산될 경우 실적 성장 동력이 강화될 수 있다.",
-    "en": "Growing AI accelerator demand is driving HBM production, which requires far more complex etching sequences than conventional DRAM, structurally shortening consumable replacement intervals. Finer nodes and taller NAND stacks heighten particle sensitivity, systematically accelerating synthetic quartz adoption over natural quartz, while CD9's 30%+ service life advantage versus SiC directly reduces replacement costs for customers in advanced-node etch. The SK Hynix HBM line CD9 purchase order in August 2024 is the first concrete proof of this structural tailwind; expansion to additional customers and products could significantly amplify the earnings growth impact."
+    "ko": "합성쿼츠(QD9/QD9+)에 이어 SiC 대체 소재 CD9과 실리콘 잉곳까지 식각 공정 3대 소재를 자체 개발·양산하는 구조를 갖췄다. CD9은 2024년 8월 글로벌 반도체 기업으로부터 첫 구매주문서를 받아 양산 공급을 시작한 바 있다. 실리콘 잉곳은 북미 고객사에 공급 중으로, 제품 포트폴리오 확장을 통한 매출원 다변화가 진행되고 있다.",
+    "en": "Beyond synthetic quartz (QD9/QD9+), the company has built an in-house development and mass-production structure spanning the SiC-replacement material CD9 and silicon ingots—all three major etch-process materials. CD9 began mass-production supply after receiving its first purchase order from a global semiconductor company in August 2024. Silicon ingots are being supplied to a North American customer, reflecting ongoing diversification of revenue sources through portfolio expansion."
    }
   },
   {
    "title": {
-    "ko": "합성쿼츠 침투율 확대 여력 — 현재 10% 미만에서 장기 구조적 상승 가능",
-    "en": "Synthetic Quartz Penetration Well Below Potential — Long-term Structural Upside Intact"
+    "ko": "생산능력 확충 진행 중",
+    "en": "Capacity Expansion in Progress"
    },
    "body": {
-    "ko": "현재 식각 공정 내 합성쿼츠 침투율은 10% 이하로 추정되어 천연쿼츠에서 합성쿼츠로의 대체가 가속화될 경우 구조적 수요 증가 여지가 상당히 크다. 합성쿼츠는 천연쿼츠 대비 수명(약 1,500시간 vs. 1,000시간)이 길고 마이크로버블로 인한 파티클 발생이 없어 수율 측면에서 우수하며, QD9+ 국산화로 가격 경쟁력이 높아지면 채택 속도를 더욱 높일 수 있다. 비씨엔씨는 합성쿼츠 QD9 글로벌시장점유율 1위로서, 침투율 구조적 상승 시 가장 직접적인 수혜자 위치에 있다.",
-    "en": "Synthetic quartz penetration in semiconductor etching is estimated below 10%, leaving substantial structural room for demand growth as displacement of natural quartz accelerates. Synthetic quartz outperforms natural quartz on service life (~1,500 hours vs. ~1,000 hours) and yield through elimination of micro-bubble-induced particle generation; QD9+ domestication further improves pricing competitiveness, which can accelerate adoption. As the acknowledged global market leader in QD9 synthetic quartz, BCNC is positioned to be the most direct beneficiary of a structural rise in penetration rates."
+    "ko": "2025년 9월 이사회 결의로 160억원 규모의 생산시설 신증축 투자를 진행 중이며, 이는 2024년 말 자기자본의 21.8%에 해당하는 규모다. 투자기간은 2026년 12월 31일까지로, 증설이 계획대로 마무리되면 향후 수요 확대에 대응할 수 있는 물리적 기반이 갖춰진다. 세계 유일의 식각 공정 3대 소재 수직계열화 기업이라는 지위도 유지된다.",
+    "en": "Since a September 2025 board resolution, the company has been carrying out a KRW 16.0 billion facility expansion investment, equivalent to 21.8% of equity at the end of 2024. The investment period runs through December 31, 2026, and if completed as planned, it would provide a physical foundation to respond to future demand growth. The company also maintains its position as a vertically integrated supplier across the three major etch-process material categories."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "수익성 회복 더딤 — 분기 OPM 하락 추세가 우려",
-    "en": "Slow Profitability Recovery — Declining Quarterly OPM Trend Raises Concern"
+    "ko": "이익 변동성과 비영업 비용 부담",
+    "en": "Earnings Volatility and Non-Operating Cost Burden"
    },
    "body": {
-    "ko": "2025년 연간 OPM 4.5%는 2022년 고점 14.1% 대비 여전히 크게 낮으며, 분기 흐름을 보면 2025년 2분기(7.3%) 이후 3분기(6.3%), 4분기(4.2%), 2026년 1분기(3.4%)로 OPM이 지속 하락하고 있다. 매출이 꾸준히 증가하고 있음에도 비용 압력이 가시지 않는 것은 증설 감가상각, 인력 증가, 연구개발비가 고정비 부담을 높이기 때문으로 분석된다. 영업이익 대비 순이익 괴리가 크게 지속되는 상황에서, 고마진 신제품 기여 없이는 수익성 회복 모멘텀이 다시 꺾일 위험이 있다.",
-    "en": "The FY2025 OPM of 4.5% remains well below the 2022 peak of 14.1%, and on a quarterly basis OPM has declined consistently since Q2 2025 (7.3%), through Q3 (6.3%), Q4 (4.2%), and Q1 2026 (3.4%). Despite steady revenue growth, the persistent cost pressure reflects higher depreciation from expansion, growing headcount, and R&D expenses elevating the fixed-cost base. With a significant gap between operating and net income remaining, the risk of profitability momentum stalling again exists unless high-margin new product contributions accelerate."
+    "ko": "지배주주순이익은 영업이익과 항상 같은 방향으로 움직이지 않았으며, 2025년 4분기 이후에는 순이익이 영업이익을 밑도는 구간이 이어졌다. 회사는 전환사채 이자비용과 외화환산손실 등 비영업 비용이 실적에 반영됐다고 설명한 바 있다. 이런 비영업 요인이 지속되면 영업 실적 개선이 그대로 순이익 개선으로 이어지지 않을 수 있다.",
+    "en": "Net income attributable to owners has not always moved in the same direction as operating profit, and from the fourth quarter of 2025 onward net income has trailed operating profit. The company has explained that non-operating costs such as convertible-bond interest expense and foreign-currency translation losses were reflected in results. If such non-operating factors persist, operating improvement may not fully translate into net income improvement."
    }
   },
   {
    "title": {
-    "ko": "부채비율 급증 — 지속적 투자가 재무 건전성 압박",
-    "en": "Surging Leverage — Continuous Investment Pressures Financial Health"
+    "ko": "고객 집중도 및 사이클 의존",
+    "en": "Customer Concentration and Cycle Dependence"
    },
    "body": {
-    "ko": "부채비율이 2022년 51.3%에서 2025년 125.3%로 크게 상승했으며, 160억원 규모 증설 투자가 2026년 12월까지 지속될 예정이어서 단기간 내 부채 감소를 기대하기 어렵다. 자기자본 788억원 대비 부채 987억원으로 재무 레버리지가 높아진 상황에서 금리 변화나 영업 현금흐름 부진이 지속될 경우 추가 외부 자금 조달(유상증자·차입 증가)이 불가피해질 수 있다. 영업이익(2025년 39.3억원) 대비 순이익(11.5억원)의 큰 격차는 금융비용 등 현금 유출이 상당함을 시사하며, 이는 향후 재무구조 개선의 속도를 제한할 수 있다.",
-    "en": "The debt-to-equity ratio has risen sharply from 51.3% in 2022 to 125.3% in 2025, and with KRW 16 billion in capex running through end-2026, near-term deleveraging is unlikely. With total liabilities of KRW 98.7 billion against equity of KRW 78.8 billion, higher leverage makes the company more sensitive to interest rate changes or sustained operating cash flow weakness, potentially necessitating additional external funding. The large gap between operating income (KRW 3.9 billion in FY2025) and net income (KRW 1.2 billion) reflects substantial financing costs that could limit the pace of financial structure improvement going forward."
+    "ko": "매출이 삼성전자, SK하이닉스, TSMC, 인텔 등 소수 대형 고객사의 설비투자·가동률 사이클에 크게 의존하는 구조다. 2023년 반도체 업황 부진기에 매출이 20% 이상 감소했던 사례가 이런 의존성을 보여준다. 전방 고객사의 투자 속도가 둔화될 경우 소모성 부품 수요도 함께 줄어들 수 있다.",
+    "en": "Revenue is heavily dependent on the capital-spending and utilization cycles of a small number of large customers, including Samsung Electronics, SK Hynix, TSMC and Intel. The more-than-20% revenue decline during the 2023 semiconductor downturn illustrates this dependence. If customer investment pace slows, demand for consumable parts could decline in tandem."
    }
   },
   {
    "title": {
-    "ko": "신제품 상용화 일정 반복 지연 — 실적 모멘텀 전환 시기 불확실",
-    "en": "Repeated New-Product Launch Delays — Uncertainty Over Earnings Inflection Timing"
+    "ko": "재무구조 부담 확대",
+    "en": "Rising Balance-Sheet Leverage"
    },
    "body": {
-    "ko": "CD9(보론카바이드), SD9(실리콘 잉곳), QD9+ 등 신제품의 양산 및 고객사 확대 일정이 당초 계획 대비 수차례 지연된 전례가 있으며, 퀄리피케이션 과정의 불확실성이 여전히 존재한다. 반도체 제조사의 투자 사이클이 하강 전환하거나 고객사 발주가 감소할 경우 신제품 채택 결정 또한 추가 연기될 가능성이 있다. 주 고객사가 합성쿼츠 내재화 또는 공급사 다변화를 추진할 경우 비씨엔씨의 공급 물량이 감소할 구조적 리스크도 배제할 수 없다.",
-    "en": "The volume ramp and customer expansion timelines for new products — including CD9, SD9, and QD9+ — have been delayed multiple times versus original schedules, and qualification process uncertainties persist. If the semiconductor capex cycle turns down or customer orders decline, new product adoption decisions could be pushed back further. Additionally, there is a structural risk that if primary customers pursue in-house materials production or diversify their supplier base, BCNC's order volumes could decline."
+    "ko": "부채비율이 2022년 51.3%에서 2025년 125.3%로 크게 상승했다. 진행 중인 생산시설 증설(160억원)과 신소재 개발에 따른 추가 자금 소요가 재무구조에 부담을 줄 가능성이 있다. 전환사채 관련 이자비용이 매 분기 반영되는 구조도 순이익 변동성을 키우는 요인이다.",
+    "en": "The debt ratio rose sharply from 51.3% in 2022 to 125.3% in 2025. The ongoing facility expansion (KRW 16.0 billion) and additional funding needs tied to new material development could add further pressure to the balance sheet. The recurring quarterly reflection of convertible-bond-related interest expense is also a factor amplifying net income volatility."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "반도체 업황 사이클 리스크",
-    "en": "Semiconductor Demand Cycle Risk"
+    "ko": "업황/사이클 리스크",
+    "en": "Industry Cycle Risk"
    },
    "body": {
-    "ko": "반도체 소모성 부품 수요는 칩 메이커의 가동률 및 설비 투자에 직결되어 경기 사이클에 민감하다. 비씨엔씨는 2023~2024년 업황 침체 기간에 영업적자를 경험하며 사이클 민감성을 이미 확인했다. AI 중심의 구조적 수요 증가에도 불구하고 메모리 수급 불균형 또는 전방 고객사 투자 조정이 발생하면 매출과 수익성이 급격히 악화될 수 있다. 삼성전자·SK하이닉스 등 소수 대형 고객사 의존도가 높아 이들의 구매 감소가 동사 실적에 즉각적으로 반영되는 구조다.",
-    "en": "Demand for semiconductor consumable parts is directly linked to chipmaker utilization rates and capital expenditure, making BCNC highly sensitive to industry cycles. The company already experienced operating losses during the 2023–2024 semiconductor downturn, demonstrating this vulnerability. Despite structurally growing AI-driven demand, any memory supply-demand imbalance or investment pullback at leading customers could rapidly deteriorate revenue and margins. High customer concentration around Samsung Electronics and SK Hynix means that order reductions by these accounts have an immediate impact on BCNC's results."
+    "ko": "반도체 다운턴이 재발할 경우 전방 고객사의 가동률 저하로 소모성 부품 수요가 다시 위축될 수 있다. 2023년 사례처럼 매출이 급감하면서 영업이익이 손익 균형점 아래로 내려간 전례가 있다. 메모리·파운드리 업체들의 투자 계획 변경은 실적에 직접적인 영향을 줄 수 있다.",
+    "en": "A recurrence of a semiconductor downturn could reduce demand for consumable parts as front-end customers' utilization rates fall. As seen in 2023, a sharp revenue decline previously pushed operating profit below breakeven. Changes to memory and foundry customers' investment plans could directly affect results."
    }
   },
   {
    "cat": {
-    "ko": "재무 건전성 및 자본 조달 리스크",
-    "en": "Financial Health and Capital Raising Risk"
+    "ko": "재무구조 리스크",
+    "en": "Balance-Sheet Risk"
    },
    "body": {
-    "ko": "2025년 말 기준 부채비율 125.3%는 상장 시점(51.3%) 대비 크게 높아졌으며, 160억원 증설 투자가 2026년 말까지 지속될 예정이다. 영업 현금흐름이 충분히 창출되지 않을 경우 추가 외부 차입 또는 유상증자를 통한 자금 조달이 필요해질 수 있으며, 이는 기존 주주 희석 또는 이자 부담 증가로 이어질 수 있다. 자기자본 788억원 대비 설비 투자 규모와 부채 수준을 감안할 때, 영업 현금흐름의 조기 개선이 재무 안정성 확보의 핵심 과제다.",
-    "en": "The debt-to-equity ratio of 125.3% at end-2025 represents a sharp increase from the IPO level of 51.3%, with a KRW 16 billion capex program running through end-2026. If operating cash flow generation remains insufficient, additional external borrowing or equity issuance may be required, potentially leading to shareholder dilution or higher interest burdens. Given the scale of capital expenditure and debt relative to equity of KRW 78.8 billion, early improvement in operating cash flow is the critical variable in maintaining financial stability."
+    "ko": "부채비율이 최근 3년간 지속적으로 상승해 2025년 125.3%에 이르렀다. 진행 중인 대규모 시설투자와 전환사채 관련 이자비용이 재무 부담을 키울 수 있다. 향후 추가 자금 조달이 필요할 경우 주주가치에 영향을 줄 수 있는 이슈가 발생할 가능성이 있다.",
+    "en": "The debt ratio has risen steadily over the past three years, reaching 125.3% in 2025. Large ongoing facility investment and convertible-bond-related interest expense could add to financial burden. Any need for additional future financing could raise issues that affect shareholder value."
    }
   },
   {
    "cat": {
-    "ko": "기술 경쟁 및 고객 다변화 리스크",
-    "en": "Technology Competition and Customer Diversification Risk"
+    "ko": "경쟁/기술 리스크",
+    "en": "Competitive and Technology Risk"
    },
    "body": {
-    "ko": "합성쿼츠 및 신소재 분야에서 글로벌 소재 대기업(Heraeus, Shin-Etsu Quartz 등)과 국내 경쟁사들이 유사 제품 개발을 추진 중이어서 비씨엔씨의 기술 선점 우위가 장기적으로 유지될 보장이 없다. QD9+·CD9 특허가 경쟁사의 회피 설계에 의해 침식될 경우 가격 경쟁 심화와 마진 압박으로 이어질 수 있다. 주 고객사가 소재 내재화 또는 공급사 다변화를 추진할 경우 비씨엔씨의 공급 물량이 감소하는 구조적 위험도 존재한다.",
-    "en": "Global materials companies including Heraeus and Shin-Etsu Quartz, as well as domestic competitors, are actively developing similar products in synthetic quartz and advanced etch materials, providing no guarantee that BCNC's first-mover advantage will be sustained long-term. If competitors circumvent BCNC's patents for QD9+ and CD9, intensified price competition and margin compression could follow. Additionally, if primary customers pursue materials in-sourcing or diversify their supplier base, BCNC's supply volumes could decline structurally."
+    "ko": "국내 반도체 소모성 부품 업체들과의 경쟁이 지속되고 있으며, 대형 고객사들의 벤더 다변화 정책도 존재한다. CD9 등 신소재는 아직 다수 고객사와의 퀄 테스트가 진행 중인 단계로, 양산 확대까지 시간이 더 필요할 수 있다. 신소재 기술이 예상보다 늦게 상용화되거나 경쟁사가 유사 소재를 먼저 상용화할 가능성도 배제할 수 없다.",
+    "en": "Competition with other domestic semiconductor consumable-parts makers continues, and large customers also maintain vendor-diversification policies. New materials such as CD9 are still undergoing qualification testing with multiple customers, and further time may be needed before mass-production scales up. The possibility that new-material commercialization is delayed beyond expectations, or that a competitor commercializes a similar material first, cannot be ruled out."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7월 초",
-    "en": "Early July 2026"
+    "ko": "2026년 11월 중",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "비씨엔씨머터리얼즈 흡수합병 등기 완료 예정(2026년 7월 8일). 합병 후 자회사 손실 해소 여부와 경영 효율화 효과가 연결 재무제표에 반영되는 첫 시점이 될 2026년 2분기 실적에서 확인 가능하다.",
-    "en": "BCNC Materials absorption merger registration due July 8, 2026. The Q2 2026 consolidated earnings will be the first reporting period to reflect any efficiency gains and elimination of the subsidiary's losses post-merger."
+    "ko": "2026년 3분기 실적 공시 확인 — 매출 성장세 지속 여부와 영업이익-순이익 간 격차가 좁혀지는지가 관전 포인트다.",
+    "en": "Check the disclosure of third-quarter 2026 results — whether revenue growth continues and whether the gap between operating profit and net income narrows will be worth watching."
    }
   },
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 12월 31일",
+    "en": "December 31, 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표 — 영업이익률의 분기 반등 여부, QD9+ 및 CD9 매출 비중 변화, 매출 성장 지속성이 핵심 확인 사항이다. 2026년 1분기까지 지속된 OPM 하락 추세가 반전되는지가 밸류에이션 지지의 관건이다.",
-    "en": "Q2 2026 earnings release — the key items are whether quarterly OPM reverses its declining trend, the evolving share of QD9+ and CD9 revenues, and continued top-line growth momentum. A sequential rebound in operating income margin is the pivotal data point for validating the current valuation."
+    "ko": "160억원 규모 생산시설 증설 투자기간 종료 시점 — 증설 완료 여부와 이후 가동률 반영 여부를 확인해야 한다.",
+    "en": "End of the KRW 16.0 billion facility expansion investment period — confirmation is needed on whether the expansion is completed and how it affects subsequent utilization rates."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "2H 2026"
+    "ko": "2026년 4분기 중",
+    "en": "Fourth quarter of 2026"
    },
    "what": {
-    "ko": "신한투자증권이 전망한 합성쿼츠 가동률 78% 달성 여부와 160억원 증설 투자 완공 진행 상황이 확인 포인트다. 증설 완료 후 매출 기여 시점이 2027년 실적 가시성을 좌우할 핵심 변수다.",
-    "en": "Verify whether synthetic quartz capacity utilization reaches the 78% level forecast by Shinhan for H2 2026, and track progress toward completing the KRW 16 billion expansion. The timing of post-expansion revenue contributions is pivotal for establishing FY2027 earnings visibility."
+    "ko": "CD9(보론카바이드) 추가 고객사 퀄 테스트 통과 및 신규 양산 공급 관련 공시 여부를 확인할 필요가 있다.",
+    "en": "Watch for disclosures regarding CD9 (boron carbide) qualification test results with additional customers and any new mass-production supply agreements."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 ~ 2027년 상반기",
-    "en": "2H 2026 – 1H 2027"
+    "ko": "2027년 2월경",
+    "en": "Around February 2027"
    },
    "what": {
-    "ko": "CD9(보론카바이드) SK하이닉스 HBM 라인 외 신규 국내외 고객사로의 PO 확대 수령 여부와 SD9(실리콘 잉곳) 북미 공급 물량 증가 추이가 핵심 모멘텀이다. 신소재 매출 비중이 전체 매출에서 의미 있게 상승하면 수익성 구조 변화의 신호로 해석할 수 있다.",
-    "en": "Monitor whether CD9 secures additional POs from new domestic and overseas customers beyond SK Hynix's HBM line, and track the volume ramp of SD9 silicon ingot supply to North American customers. A meaningful rise in new-materials revenue as a share of total sales would signal a structural shift in the profitability mix."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월 (2026년 DART 사업보고서)",
-    "en": "March 2027 (FY2026 DART Annual Report)"
-   },
-   "what": {
-    "ko": "2026년 연간 부채비율과 영업현금흐름 확인이 재무 건전성 판단의 핵심이다. 증설 투자가 진행 중임에도 부채비율이 안정화되거나 하락하고 영업현금흐름이 개선되는지 여부가 장기 재무 지속 가능성의 결정적 시험대가 된다.",
-    "en": "Confirming FY2026 annual debt-to-equity ratio and operating cash flow is the critical test of financial sustainability. Whether leverage stabilizes or declines despite ongoing capex, and whether operating cash flow improves, will be the definitive indicators of BCNC's long-term financial durability."
+    "ko": "2026년 연간 잠정 실적 공시 예상 시점 — 2025년에 이어 흑자 기조가 연간 단위로 이어지는지 확인해야 한다.",
+    "en": "Expected timing for preliminary full-year 2026 results — this will confirm whether the return to profit seen in 2025 continues on an annual basis."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "비씨엔씨는 반도체 식각 공정에서 합성쿼츠(QD9·QD9+), 보론카바이드(CD9), 실리콘 잉곳(SD9) 3종의 핵심 소재 수직계열화를 완성한 코스닥 중소형 부품·소재 기업으로, '부품 제조사에서 소재 기업으로의 전환'이라는 장기 성장 스토리를 실적으로 검증하는 단계에 있다. 2025년 영업이익 흑자 전환(OPM 4.5%)은 가시적 성과이지만, 분기 OPM이 2025년 2분기 이후 지속 하락해 2026년 1분기 3.4%에 이른 점은 비용 구조의 개선이 아직 충분하지 않음을 보여준다. 한편 AI 수요 확대로 인한 HBM 생산 증가, 합성쿼츠 침투율의 구조적 확대 여지, SK하이닉스 HBM 라인 CD9 공급 개시는 중장기 성장을 뒷받침하는 유력한 근거다. 부채비율이 125%를 초과하고 160억원 증설 투자가 진행 중인 재무 환경에서 영업 현금흐름 개선 여부가 재무 리스크 관리의 핵심이다. 2026년 하반기 증설 완료, 비씨엔씨머터리얼즈 합병 마무리, 2분기 이후 실적 발표가 단기 모멘텀 확인의 주요 이벤트로 대기 중이다. 수직계열화 완성이라는 장기 스토리와 현재 수익성 회복 속도, 재무 레버리지 간의 균형이 이 종목의 핵심 투자 논점으로 남는다.",
-   "en": "BCNC is a KOSDAQ small-mid cap parts-and-materials company that has completed vertical integration across the three core etch-process materials — synthetic quartz (QD9/QD9+), boron carbide (CD9), and silicon ingot (SD9) — and is currently validating its long-term 'parts-to-materials' transformation through actual earnings. The FY2025 return to operating profitability (OPM 4.5%) is a tangible milestone, but the sequential quarterly decline in OPM since Q2 2025 — reaching 3.4% in Q1 2026 — signals that the cost structure has not yet been fully streamlined. On the positive side, HBM production growth driven by AI demand, the structural potential for synthetic quartz penetration, and the commencement of CD9 supply to SK Hynix's HBM line are credible pillars for medium- to long-term growth. In a financial environment where the debt-to-equity ratio exceeds 125% and the KRW 16 billion expansion program remains ongoing, improvement in operating cash flow is the critical risk management variable. The second-half 2026 completion of the expansion, the closure of the BCNC Materials merger, and post-Q2 2026 earnings releases are the near-term catalysts to monitor. The balance between the long-term vertical integration story and the pace of profitability recovery against rising financial leverage is the central investment debate for this stock."
+   "ko": "비씨엔씨는 합성쿼츠를 중심으로 반도체 식각 공정용 소모성 부품을 공급하는 기업으로, 2022년 실적 정점 이후 2023~2024년의 부진을 거쳐 2025년 매출과 영업이익 모두 흑자로 전환됐다. 2026년 상반기까지 분기 매출은 성장세를 유지했으나 영업이익률은 분기마다 등락을 보였고, 지배주주순이익은 전환사채 관련 비영업 비용 등의 영향으로 영업이익과 다른 궤적을 그리는 경우가 있었다. 회사는 CD9(보론카바이드), 실리콘 잉곳 국산화 등 신소재 라인업을 확장하며 식각 공정 3대 소재 수직계열화를 진행 중이고, 160억원 규모의 생산시설 증설도 2026년 말까지 이어진다. 다만 부채비율이 2022년 51.3%에서 2025년 125.3%로 뚜렷하게 상승한 점, 주요 고객사에 대한 매출 의존도가 높다는 점은 함께 짚어야 할 재무·구조적 요인이다. 향후 3분기 실적과 증설 완료 시점, CD9의 추가 고객사 확보 여부가 실적 궤적을 가늠하는 핵심 변수가 될 것으로 보인다.",
+   "en": "BC&C supplies consumable parts for semiconductor etch processes, centered on synthetic quartz, and after peak results in 2022 followed by weakness in 2023-2024, both revenue and operating profit turned positive in 2025. Quarterly revenue continued to grow through the first half of 2026, but operating margins fluctuated quarter to quarter, and net income attributable to owners at times followed a different trajectory than operating profit due to non-operating costs tied to convertible bonds. The company is expanding its new-material lineup—including the boron-carbide material CD9 and localized silicon ingots—while pursuing vertical integration across the three major etch-process materials, and a KRW 16.0 billion facility expansion is set to continue through the end of 2026. That said, the clear rise in the debt ratio from 51.3% in 2022 to 125.3% in 2025, along with high revenue dependence on a small number of major customers, are financial and structural factors that warrant attention. Third-quarter results, the timing of the facility expansion's completion, and progress in securing additional customers for CD9 are likely to be key variables shaping the company's earnings trajectory going forward."
   }
  },
  "sources": [
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A146320",
-  "https://m.irgo.co.kr/IR-COMP/146320/",
-  "https://file.alphasquare.co.kr/media/pdfs/company-report/%EB%A9%94%EB%A6%AC%EC%B8%A020240105%EB%B9%84%EC%94%A8%EC%97%94%EC%94%A8.pdf",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03552246642303400",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A146320&MenuYn=Y",
+  "https://www.eugenefn.com/common/files/amail/20220216_B_jongsun.park_1568.pdf",
   "https://www.eugenefn.com/common/files/amail/20230918_146320_jongsun.park_1938.pdf",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=659250",
-  "https://assets.kpmg.com/content/dam/kpmgsites/kr/pdf/2025/eri/business_focus/%EC%82%BC%EC%A0%95KPMG-2026%EB%85%84-%EA%B2%BD%EC%A0%9C-%EB%B0%8F-%EC%82%B0%EC%97%85-%EC%A0%84%EB%A7%9D-20251204.pdf.coredownload.inline.pdf",
-  "https://kita.net/researchTrade/report/tradeBrief/downloadTradeBriefFile.do;JSESSIONID_KITA=6258EC877AA45CE1F56C5709D544D6A2.Hyper?no=960BC4669ECB61EC1C90F592AD863E03&fileSeq=B0721B9F23054DDC7FE56C2811A12715",
-  "https://www.38.co.kr/html/forum/board/?code=146320",
-  "https://www.bcnc.co.kr/",
-  "http://www.bcnc.co.kr/kr/business/list.php",
-  "https://www.komachine.com/ko/companies/bcnc",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/bcnc126",
-  "http://www.bcnc.co.kr/kr/company/greeting.php",
-  "http://www.bcnc.co.kr/kr/company/partners.php",
-  "https://www.komachine.com/ko/companies/bcnc/products/53387-quartz-for-semiconductor-mfg-equipment-products",
-  "http://www.bcnc.co.kr/kr/competencies/manufacturing.php"
+  "https://m.irgo.co.kr/IR-COMP/146320/%EB%B9%84%EC%94%A8%EC%97%94%EC%94%A8-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
+  "https://dolfin.plus/stock/146320/financials",
+  "https://m.finance.daum.net/quotes/A146320/news/stock/20240703085912594",
+  "https://itooza.com/vscore/146320",
+  "https://news.infostock.co.kr/a",
+  "https://m.irgo.co.kr/IR-COMP/146320/",
+  "https://www.datatooza.com/article/20260429054552728cd1e7df0be_80",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=582483",
+  "https://stockinfo7.com/etc/report/today/view/4971",
+  "https://www.betanews.net/article/view/beta202608110030",
+  "https://www.nc.com/",
+  "https://files-scs.pstatic.net/2026/02/27/ylhsXS1t2b/260227(%EA%B8%88)%20%EC%A6%9D%EA%B6%8C%EC%82%AC%EB%A6%AC%ED%8F%AC%ED%8A%B8.pdf",
+  "https://m.irgo.co.kr/IR-COMP/146320/%EB%B9%84%EC%94%A8%EC%97%94%EC%94%A8-IR-PAGE",
+  "https://m.shinhansec.com/mweb/invt/shrh/ishrh1001",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=O2RIC2eA0MZc7GZ0"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "146320",
  "name": "비씨엔씨",
  "name_en": "BCnC Co., Ltd.",
@@ -233,9 +223,9 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:58",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:08",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 9680,
-   "mcap": 0.1239,
+   "price": 9440,
+   "mcap": 0.1208,
    "shares": 12797923,
    "total_shares": 12797923,
    "wavg_shares": 12759550,
-   "per": 41.545,
+   "per": 40.515,
    "eps": 233,
-   "pbr": 1.5545,
+   "pbr": 1.516,
    "bps": 6227,
    "roe_ttm": 3.8,
    "ttm_window": "2025Q3~2026Q2",

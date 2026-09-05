@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "AI 교육 전환기, 수익성 저점 확인이 선결 과제",
-  "en": "AI Education Pivot: Profitability Trough Confirmation Is the Priority"
+  "ko": "성장 정체 속 이익 방어력 시험대",
+  "en": "Growth Plateau Tests Profit Resilience"
  },
  "lead": {
-  "ko": "4년 연속 영업이익 감소와 2026년 1분기 수익성 급락으로 구조적 전환 비용을 치르는 가운데, 자체 AI 실습 플랫폼 'AI 스튜디오' 본격 운영과 SSAFY 2.0 고도화가 중장기 반등의 열쇠를 쥐고 있다.",
-  "en": "Absorbing structural transition costs through four consecutive years of operating profit decline and a sharp 2026Q1 profitability collapse, while the full commercial launch of proprietary 'AI Studio' and the SSAFY 2.0 upgrade hold the key to a medium-term rebound."
+  "ko": "매출과 영업이익률이 4년 연속 둔화된 가운데 재무 건전성은 오히려 강화되고 있어, 실적 회복 속도가 향후 관전 포인트다.",
+  "en": "Revenue and operating margin have softened for four straight years even as the balance sheet has strengthened, making the pace of earnings recovery the key thing to watch."
  },
  "keypoints": [
   {
-   "ko": "4년 연속 영업이익 하락: 2022년 410억 원에서 2025년 319억 원으로 약 22% 감소, 영업이익률 11.5%→9.6%로 지속 축소",
-   "en": "Four consecutive years of operating profit decline: from KRW 41.0bn in 2022 to KRW 31.9bn in 2025 (~-22%), with operating margin contracting from 11.5% to 9.6%"
+   "ko": "2025년 매출 3,308억원(전년 대비 -6.2%), 영업이익 319억원(-18.1%)으로 4년 연속 매출·이익률 둔화가 이어졌다.",
+   "en": "2025 revenue came in at KRW 330.8bn (-6.2% YoY) and operating profit at KRW 31.9bn (-18.1%), extending a four-year streak of softer sales and margins."
   },
   {
-   "ko": "2026년 1분기 충격: 매출 807억 원(전년비 +6.3% 성장)에도 영업이익 6.4억 원으로 전년비 약 86% 급락 — 비용 구조 변화 원인 분석 및 2분기 회복 여부가 핵심 관전 포인트",
-   "en": "2026Q1 shock: Revenue rose +6.3% YoY to KRW 80.7bn, yet operating profit collapsed ~86% YoY to KRW 0.6bn — identifying cost structure causes and 2026Q2 recovery confirmation are the defining watch items"
+   "ko": "2026년 1분기 영업이익이 6.4억원까지 급감했으나 2분기에는 88.1억원으로 전년 동기(87.9억원) 수준을 회복했다.",
+   "en": "Operating profit plunged to KRW 0.64bn in Q1 2026 before recovering to KRW 8.81bn in Q2, roughly matching the year-earlier KRW 8.79bn."
   },
   {
-   "ko": "AI 전환 공세: 2026년 3월 VM 기반 AI 실습 플랫폼 'AI 스튜디오' 출시·6월 본격 운영, GPT-5.2 기반 AI 코딩튜터 탑재로 기업 AX 교육 시장 공략 본격화",
-   "en": "AI offensive: 'AI Studio' launched March 2026 and commercially operational from June 2026, featuring a VM-based practice environment and a GPT-5.2-powered AI coding tutor targeting enterprise AX upskilling"
+   "ko": "부채비율은 2022년 69.3%에서 2025년 36.8%로 4년 연속 하락하며 재무구조가 뚜렷하게 개선됐다.",
+   "en": "The debt ratio fell for four straight years, from 69.3% in 2022 to 36.8% in 2025, marking a clear improvement in the balance sheet."
   },
   {
-   "ko": "SSAFY 위탁 운영 기반 유지: 2025년 'SSAFY 2.0'으로 AI 과정 8개 신규 도입, 삼성SDS 모-자 관계에서 비롯된 안정적 수주 기반이 매출 하방을 지지",
-   "en": "Stable SSAFY delegation base: Eight new AI curriculum tracks added under 'SSAFY 2.0' in 2025; parent Samsung SDS relationship anchors core contracted revenue"
+   "ko": "삼성 계열 HRD 전문기업으로 기업교육·외국어평가(OPIc)·지식서비스(SERICEO)를 축으로 사업을 영위한다.",
+   "en": "As a Samsung-affiliated HRD specialist, the company runs corporate training, the OPIc foreign-language assessment, and the SERICEO knowledge service as its core businesses."
   },
   {
-   "ko": "견고한 재무 구조: 부채비율 2022년 69.3%→2025년 36.8%로 개선, 연간 영업현금흐름 400억~590억 원 수준, DPS 1,350원으로 높은 배당 유지",
-   "en": "Sound financial structure: Debt ratio improved from 69.3% (2022) to 36.8% (2025); annual CFO of KRW 44–59bn; DPS of KRW 1,350 sustaining a high dividend yield"
+   "ko": "생성형 AI를 탑재한 러닝플랫폼(MLP)과 삼성클라우드플랫폼 전환 등 디지털 전환 투자가 진행 중이다.",
+   "en": "Digital-transformation investment is underway, including a generative-AI-equipped learning platform (MLP) and a migration to the Samsung Cloud Platform."
   }
  ],
  "business": {
-  "ko": "멀티캠퍼스는 삼성SDS의 교육 전문 자회사로, 크게 교육서비스와 외국어서비스 두 부문에서 사업을 영위한다. 교육서비스 부문은 대기업·공공기관 재직자 대상 IT·디지털·AI 역량 교육, 정부 국민내일배움카드(KDT) 기반 부트캠프, 그리고 삼성이 주관하고 고용노동부가 후원하는 삼성청년SW·AI아카데미(SSAFY) 위탁 운영을 핵심 축으로 한다. 외국어서비스 부문은 기업 인사·채용 평가에 사용되는 OPIc(외국어 말하기 능력 평가) 시험 사업 및 삼성 계열사 임직원 어학 연수를 담당한다. SSAFY는 2018년 12월 출범 이후 1기~13기까지 총 11,750명이 참여했으며, 1~11기 수료생의 85%가 취업에 성공한 대형 위탁 프로그램으로 서울·대전·광주·구미·부산울산경남 5개 지역 캠퍼스를 통해 운영된다. 2025년부터는 'SSAFY 2.0'으로 업그레이드되어 AI 활용 개발자 육성을 위한 8개 신규 AI 교육 과정이 도입됐다. 최대 고객이자 모회사인 삼성SDS와의 관계가 수익 안정성과 위탁 수주에 핵심 역할을 하나, 삼성그룹 내 인사·채용 정책 변화에 실적이 민감하게 반응하는 구조적 특성도 존재한다. 경쟁사로는 휴넷, 에듀윌, 패스트캠퍼스 등이 있으나 삼성 계열 인하우스 교육 수탁 포지션에서는 독보적 지위를 보유하고 있다. 2026년 3월에는 VM 기반 실습 환경과 GPT-5.2 기반 AI 코딩튜터를 탑재한 자체 플랫폼 'AI 스튜디오'를 출시해 기업 임직원 업스킬링·리스킬링 및 AX 역량 진단 교육 시장 공략을 본격화했으며, 독일 베를린 IDZ의 'UX 디자인 어워즈 2026' 본선 진출로 초기 시장 평가는 긍정적이다.",
-  "en": "Multicampus is the education-focused subsidiary of Samsung SDS, operating across two core segments: Educational Services and Foreign Language Services. The Educational Services segment encompasses IT/digital/AI upskilling courses for employees of large corporations and public entities, government-funded KDT (National Tomorrow Learning Card) bootcamps, and the operation of Samsung's SSAFY (Samsung Software & AI Academy for Youth) program on behalf of Samsung, co-sponsored by the Ministry of Employment and Labor. The Foreign Language Services segment manages the OPIc (Oral Proficiency Interview by Computer) testing business and corporate language training for Samsung Group affiliates. SSAFY, launched in December 2018, has enrolled 11,750 participants across its 13 cohorts, with 85% of graduates from cohorts 1–11 securing employment; it operates across five regional campuses. In 2025, SSAFY was upgraded to 'SSAFY 2.0', introducing eight new AI curriculum tracks. While the parent-subsidiary relationship with Samsung SDS provides a stable contracted revenue base and competitive moat in Samsung in-house delegation, it also creates structural sensitivity to shifts in Samsung Group HR and hiring policies. Competitors include Hunet, Eduwill, and Fastcampus, though Multicampus holds an unrivalled position in Samsung-anchored B2B delegation. In March 2026, the company launched 'AI Studio', a proprietary platform featuring a VM-based practice environment and a GPT-5.2-powered AI coding tutor for enterprise AX upskilling — reaching the finals of Berlin IDZ's 'UX Design Awards 2026', reflecting positive early market reception."
+  "ko": "멀티캠퍼스는 2000년 삼성인력개발원에서 분사해 설립된 뒤 2016년 현재 사명으로 변경한 삼성 계열의 HRD(인적자원개발) 전문기업이다. 사업은 기업·공공기관 대상 교육서비스, 외국어평가·교육서비스, 지식서비스 세 축으로 구성되며, 최근 공시 기준 IT·직무교육 등 운영서비스·러닝플랫폼·HRD컨설팅·지식콘텐츠 부문이 매출의 약 73%, 외국어말하기평가·외국어 생활관·콘텐츠 부문이 약 27%를 차지하는 것으로 파악된다. 대표 서비스로는 리더십·법정의무·IT·외국어 교육과 국내 경영진 대상 지식서비스인 SERICEO가 있으며, 국제공인 외국어 말하기 평가시험인 OPIc의 국내 주관사이기도 하다. 고객 기반은 삼성 계열사를 포함한 대기업·공공기관이 중심으로, 제조·금융·유통 등 다양한 산업의 임직원 교육을 수행한다. 경쟁구도는 일반 교육기업인 메가스터디교육·크레버스 등과 달리 B2B 기업교육 시장에서의 지위가 핵심이며, 2017년부터 과학기술정보통신부·고용노동부의 청년 IT인재 양성사업에 지속 선정되며 정부 위탁교육 트랙도 보유하고 있다. 최근에는 자사 러닝플랫폼(MLP)에 생성형 AI 기반의 'AI Advisor', 'AI Tutor' 기능을 결합하고 삼성클라우드플랫폼으로 인프라를 전환하는 등 디지털 학습 경험 고도화를 추진해왔다. 채용 공고에서도 AI 엔지니어, AI 데이터분석, AI 에이전트 엔지니어 등 AI 관련 직무 채용이 이어지고 있어 조직 내부적으로도 AI 역량 확충이 진행 중임을 시사한다.",
+  "en": "Multicampus was spun off from Samsung's HRD Institute in 2000 and adopted its current name in 2016; it operates as a Samsung-affiliated human resource development (HRD) specialist. The business is organized around three pillars: corporate and public-sector training services, foreign-language assessment and education, and knowledge services, with recent disclosures indicating that IT/job training operations, the learning platform, HRD consulting and knowledge content account for roughly 73% of revenue, while foreign-language speaking assessment and related content make up about 27%. Flagship offerings include leadership, statutory, IT and foreign-language training along with SERICEO, a knowledge service for domestic executives, and the company is the domestic operator of the OPIc internationally recognized speaking test. Its customer base is centered on large corporations and public institutions, including Samsung group affiliates, spanning manufacturing, finance and retail. Unlike general education companies such as Megastudy Education or Cravers, its competitive position rests on B2B corporate training, and it has continuously been selected for government-sponsored youth IT talent programs run by the Ministry of Science and ICT and the Ministry of Employment and Labor since 2017. More recently, the company has embedded generative-AI features, 'AI Advisor' and 'AI Tutor', into its Multicampus Learning Platform (MLP) and migrated infrastructure to the Samsung Cloud Platform as part of a broader push to upgrade the digital learning experience. Ongoing hiring for AI engineer, AI data analyst and AI agent engineer roles also suggests the organization is continuing to build internal AI capabilities."
  },
  "earnings": {
-  "ko": "연간 기준으로 매출액은 2023년 3,586억 원을 근접 고점으로 2025년 3,308억 원까지 3년 연속 하락했다. 영업이익은 2022년 410억 원(영업이익률 11.5%)에서 2023년 403억 원(11.2%), 2024년 389억 원(11.0%), 2025년 319억 원(9.6%)으로 4년 연속 감소하며 이익 훼손이 심화됐다. 2025년 영업이익 감소율(-18.1%)이 매출 감소율(-6.2%)을 크게 상회해 영업 레버리지가 역방향으로 작동했으며, 교육서비스 비수기 계절성 심화와 외국어서비스 부문의 인사제도 변경·채용 시즌 외 OPIc 수요 감소가 주요 원인으로 지목됐다. 지배주주 귀속 순이익도 2023년 315억 원 → 2024년 311억 원 → 2025년 262억 원으로 감소 추세가 이어졌다. 연간 영업현금흐름(CFO)은 2025년 436억 원으로 순이익을 상회하는 현금 창출력을 유지했고, 부채비율도 2022년 69.3%에서 2025년 36.8%로 지속 개선됐다. 분기별로 2025년 영업이익은 Q1 47억 → Q2 88억 → Q3 80억 → Q4 104억의 전형적인 상반기 약세·하반기 강세 계절성을 보였다. 2026년 1분기는 매출이 807억 원으로 전년 동기(759억 원) 대비 6.3% 증가했음에도 영업이익이 6.4억 원에 그쳐 전년 동기(47억 원) 대비 약 86% 급락했다. 지배주주 귀속 순이익도 13.6억 원으로 전년 동기(42.6억 원)를 크게 밑돌았다. 매출 성장과 이익 급락의 괴리는 AI 스튜디오 론칭 관련 선행 투자 비용 집중, 인건비 증가, 또는 사업 믹스 변화 등 복합적 비용 요인이 작용했을 가능성을 시사하나, 구체적 원인은 2분기 실적을 통해 확인해야 한다.",
-  "en": "Annual revenue peaked near KRW 358.6bn in 2023 and fell to KRW 330.8bn in 2025 — three consecutive years of decline. Operating profit declined for four successive years: KRW 41.0bn (OPM 11.5%) in 2022, KRW 40.3bn (11.2%) in 2023, KRW 38.9bn (11.0%) in 2024, and KRW 31.9bn (9.6%) in 2025. The 2025 operating profit decline (-18.1%) substantially outpaced the revenue drop (-6.2%), reflecting negative operating leverage driven by deeper Educational Services seasonality and weakening OPIc demand from HR policy shifts and off-cycle corporate hiring. Net income attributable to controlling shareholders followed a similar path: KRW 31.5bn (2023) → KRW 31.1bn (2024) → KRW 26.2bn (2025). Annual operating cash flow (CFO) remained healthy at KRW 43.6bn in 2025, exceeding reported net income, while the debt ratio improved steadily from 69.3% (2022) to 36.8% (2025). Within 2025, quarterly operating profit followed a typical seasonal pattern: Q1 KRW 4.7bn → Q2 KRW 8.8bn → Q3 KRW 8.0bn → Q4 KRW 10.4bn. In 2026Q1, revenue grew 6.3% YoY to KRW 80.7bn, yet operating profit collapsed to KRW 0.6bn — down roughly 86% from KRW 4.7bn in 2025Q1. Net income attributable to controlling shareholders fell similarly to KRW 1.4bn from KRW 4.3bn. The stark divergence between revenue growth and profit implosion suggests elevated front-loaded costs tied to the AI Studio launch, rising personnel expenses, and/or revenue mix shifts; specific causes await confirmation in the 2026Q2 results."
+  "ko": "연간 실적은 2022~2023년 매출 3,570억원대로 정점을 찍은 뒤 2024년 3,527억원, 2025년 3,308억원으로 2년 연속 감소했다. 영업이익률도 2022년 11.5%, 2023년 11.2%, 2024년 11.0%에서 2025년 9.6%로 꾸준히 낮아지는 흐름을 보였다. 특히 2025년은 전년 대비 매출 -6.2%, 영업이익 -18.1%, 지배주주순이익 -15.7%의 감소를 기록했는데, 이는 교육서비스 부문의 비수기 계절성에 따른 매출 감소와 외국어서비스 부문의 인사제도 변경 및 채용 시즌 외 수요 감소가 겹친 결과로 파악된다. 분기 흐름을 보면 2025년 2분기 영업이익 87.9억원, 3분기 79.9억원, 4분기 104.0억원으로 견조했던 흐름이 2026년 1분기 6.4억원으로 급격히 꺾였다가, 2분기 88.1억원으로 전년 동기(87.9억원)와 유사한 수준까지 회복했다. 2026년 1분기의 경우 영업이익(6.4억원)보다 지배주주순이익(13.6억원)이 더 큰 역전 현상이 나타났는데, 이는 영업외 부문의 비영업 손익이 순이익을 견인한 결과로 해석되며 일회성 성격일 가능성을 배제할 수 없다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 매출 합계는 약 3,384억원으로 2025년 연간 매출(3,308억원)을 웃돌아 외형 자체는 저점을 지나 완만하게 개선되는 모습이나, 같은 기간 영업이익 합계(약 278억원)는 2025년 연간 영업이익(319억원)에 못 미쳐 이익률 회복은 아직 더 확인이 필요한 단계다. 자기자본(지배주주지분)은 2022년 1,691억원에서 2025년 2,305억원으로 매년 증가했고, 부채비율은 같은 기간 69.3%에서 36.8%로 낮아지며 이익 감소 국면에도 재무구조는 오히려 견고해졌다. 영업활동현금흐름은 2023년 594억원을 정점으로 2024년 465억원, 2025년 436억원으로 다소 줄었으나 순이익 대비 여전히 안정적인 현금창출력을 유지하고 있다.",
+  "en": "Annual revenue peaked around KRW 357-359bn in 2022-2023 before declining for two straight years, to KRW 352.7bn in 2024 and KRW 330.8bn in 2025. Operating margin also eased steadily from 11.5% in 2022 and 11.2% in 2023 to 11.0% in 2024 and 9.6% in 2025. In particular, 2025 saw revenue fall 6.2% year-on-year, operating profit fall 18.1%, and owner net income fall 15.7%, a result attributed to off-season seasonality in the education-service segment combined with reduced demand in the foreign-language segment tied to HR policy changes and periods outside the hiring season. On a quarterly basis, operating profit held up at KRW 8.79bn in Q2 2025, KRW 7.99bn in Q3 and KRW 10.40bn in Q4, before plunging sharply to KRW 0.64bn in Q1 2026 and then recovering to KRW 8.81bn in Q2 2026, close to the KRW 8.79bn recorded a year earlier. In Q1 2026, owner net income of KRW 1.36bn actually exceeded operating profit of KRW 0.64bn, a reversal attributable to non-operating items that boosted the bottom line, a pattern that cannot be ruled out as one-off in nature. Summed revenue over the most recent four quarters (Q3 2025-Q2 2026) reached roughly KRW 338.4bn, above full-year 2025 revenue of KRW 330.8bn, suggesting the top line has passed a trough and is gradually improving, while operating profit over the same four quarters totaled about KRW 27.8bn, still short of full-year 2025's KRW 31.9bn, indicating margin recovery still needs further confirmation. Owner's equity rose every year, from KRW 169.1bn in 2022 to KRW 230.5bn in 2025, while the debt ratio fell over the same period from 69.3% to 36.8%, meaning the balance sheet actually strengthened even as earnings softened. Operating cash flow peaked at KRW 59.4bn in 2023 before easing to KRW 46.5bn in 2024 and KRW 43.6bn in 2025, but cash generation remains stable relative to net income."
  },
  "industry": {
-  "ko": "글로벌 에듀테크 시장은 연평균 11.4% 성장해 약 7,600억 달러 규모로 확대될 전망이며, 국내 이러닝 시장도 AI·디지털 전환 수요를 바탕으로 지속 성장세를 이어가고 있다. AI 대전환 기조 속에서 기업들의 임직원 업스킬링·리스킬링 수요가 구조적으로 확대되고 있어 B2B 기업 교육 플랫폼 사업자에게 중장기 성장 기회가 형성되고 있다. 정부는 2026년 디지털튜터 양성센터 6개소를 신규 선정하고 전문대학을 AI 교육 거점으로 육성하는 정책을 시행하는 등 AI 인재 양성 지원을 강화하고 있어 공공 교육 수주 기회도 존재한다. 반면 B2B 기업 교육 시장은 경기 사이클에 민감해, 경기 둔화 시 교육·연수 예산이 우선 삭감되는 경향이 있어 매출 변동성 요인이 된다. OPIc 등 외국어 평가 사업은 기업 채용 규모와 인사제도 변화에 직결되어 삼성그룹 채용 정책의 구조적 변화가 실적에 직접 반영된다. 교육서비스 상장기업 브랜드 평판(2026년 6월 기준)에서 멀티캠퍼스는 메가스터디교육(1위), 대교(2위)에 이어 3위를 유지하고 있으며, 사회공헌지수와 시장지수에서는 차별화된 강점을 보이고 있다. 한편 패스트캠퍼스·코드스테이츠 등 에듀테크 스타트업과 글로벌 플랫폼의 기업 교육 시장 진입이 가속화되며 경쟁 강도가 높아지고 있다.",
-  "en": "The global edtech market is projected to expand at an 11.4% CAGR to approximately USD 760 billion, and Korea's domestic e-learning market continues to grow on the back of AI and digital transformation demand. The structural upswing in enterprise AI upskilling and reskilling creates medium- to long-term growth opportunities for B2B corporate education platforms. Policy tailwinds are meaningful: in 2026, the Ministry of Education designated six new Digital Tutor Training Centers and is expanding AI talent development at vocational universities, creating public-sector education contract opportunities. However, B2B enterprise training markets are cyclically sensitive — training budgets are typically among the first to be cut when business conditions deteriorate. The foreign language evaluation business, including OPIc, is structurally tied to corporate hiring volumes, making Samsung Group's recruitment strategy a direct earnings driver. In the June 2026 brand reputation index for listed Korean education services companies, Multicampus ranked third (behind Megastudy Education and Daekyo), showing particular strength in social contribution and market indices. Competitive intensity is rising as domestic edtech startups and global platforms accelerate their B2B corporate training market entry."
+  "ko": "글로벌 에듀테크 시장은 연평균 약 11.4% 성장해 7,600억 달러 규모로 확대될 것으로 전망되며, 국내 이러닝 시장도 지속적인 성장세를 이어가고 있는 것으로 파악된다. 기업교육 시장은 경기 사이클에 상대적으로 후행하는 특성이 있어, 기업들의 교육예산 편성 시기와 규모가 연간 실적의 계절성을 좌우하는 핵심 변수로 작용한다. 국내 기업교육 부문에서 멀티캠퍼스는 오랜 업력과 삼성 계열 네트워크를 바탕으로 선도적 지위를 유지해온 것으로 알려져 있으며, B2C 중심의 메가스터디교육·크레버스 등과는 사업모델이 다르다. 최근에는 생성형 AI를 활용한 맞춤형·초개인화 학습, AI 튜터·어드바이저 등 기술 기반 서비스가 업계 전반의 경쟁 축으로 부상하고 있다. 동시에 기업들이 사내에 자체 AI 학습도구나 사내 LLM 기반 교육 콘텐츠를 구축할 수 있는 여지가 커지고 있어, 외부 위탁교육 수요의 일부를 대체할 잠재 요인도 상존한다. 정부의 K-디지털 트레이닝, 첨단산업 인재양성 부트캠프 등 공공 위탁교육 사업은 여전히 활발하게 공고되고 있어, 이 채널의 수주 지속 여부도 업황을 가늠하는 지표가 된다.",
+  "en": "The global edtech market is projected to grow at roughly an 11.4% average annual rate to reach about USD 760bn, and the domestic e-learning market is also understood to be on a continued growth path. Corporate training demand tends to lag the broader economic cycle to some degree, making the timing and scale of corporate training budgets a key driver of seasonality in annual results. In the domestic corporate training segment, Multicampus is understood to have maintained a leading position on the back of its long track record and Samsung group network, differing in business model from B2C-focused players such as Megastudy Education and Cravers. More recently, technology-driven services such as personalized and hyper-individualized learning powered by generative AI, including AI tutors and advisors, have emerged as a key competitive axis across the industry. At the same time, growing corporate capability to build in-house AI learning tools or LLM-based training content poses a potential factor that could substitute for a portion of outsourced training demand. Government-sponsored public training programs, including K-Digital Training and advanced-industry talent bootcamps, continue to be actively announced, making the continuity of orders through this channel another useful gauge of industry conditions."
  },
  "outlook": {
-  "ko": "'AI 스튜디오'는 2026년 3월 출시 후 6월부터 본격 상용 운영 중이며, 별도 설치 불필요한 VM 기반 실습 환경과 GPT-5.2 기반 AI 코딩튜터로 비개발자의 AI 교육 진입 장벽을 낮추는 데 초점을 맞췄다. 독일 베를린 IDZ 'UX 디자인 어워즈 2026' 본선 진출로 초기 시장 평가는 긍정적이며, 실습 결과물을 실제 업무에 연결하는 커리큘럼 설계가 기업 고객 만족도를 높이는 요인으로 평가된다. SSAFY 2.0의 8개 신규 AI 과정은 2025년부터 도입되어 AI 활용 SW 개발자 육성 역량을 강화하고 있으며, 위탁 교육의 질적 수준 제고로 장기 계약 유지에 기여할 수 있다. 삼성 계열사들의 AX 가속화는 내부 임직원 AI 역량 교육 수요를 늘리는 방향으로 작용할 가능성이 높다. 외국어서비스 부문은 하반기 삼성그룹 대졸 채용 시즌을 맞아 OPIc 수요 회복 가능성이 있고, 계절적으로 하반기가 상반기 대비 강세를 보이는 패턴이 2026년에도 재현될 수 있다. 다만 2026년 1분기의 수익성 급락 원인이 아직 확인되지 않아, 2분기 실적 발표 전까지 전망의 불확실성이 높은 상태다.",
-  "en": "'AI Studio' entered full commercial operation in June 2026 following its March launch, focusing on lowering the AI education barrier for non-developers through an installation-free VM-based practice environment and a GPT-5.2-powered AI coding tutor. Its selection as a finalist at Berlin IDZ's 'UX Design Awards 2026' reflects positive initial market reception, and its curriculum design — linking practice outputs directly to real-world work applications — is expected to drive enterprise client satisfaction. SSAFY 2.0's eight new AI curriculum tracks, introduced in 2025, are enhancing the program's AI developer training capability and supporting long-term contract retention. The accelerating AX transformation across Samsung affiliates is likely to generate incremental in-house AI upskilling demand. In Foreign Language Services, Samsung Group's H2 graduate recruitment cycle offers a potential OPIc demand recovery window, and the historically stronger H2 seasonal pattern may repeat in 2026. However, with the root cause of the 2026Q1 profit collapse yet unconfirmed, near-term outlook uncertainty remains elevated ahead of the 2026Q2 earnings release."
+  "ko": "2026년 1분기의 급격한 이익 둔화가 계절적 비수기 요인에 크게 기인한 것으로 보이는 가운데, 2분기 실적이 전년 동기 수준으로 회복된 점은 하반기 반등 가능성을 뒷받침하는 신호로 해석될 수 있다. 회사는 러닝플랫폼(MLP)에 생성형 AI 기능을 결합하고 삼성클라우드플랫폼으로 인프라를 전환하는 등 디지털 학습 경험 고도화를 지속하고 있으며, 이러한 투자가 신규 고객 확보나 기존 고객사 재계약률 제고로 이어지는지가 향후 관전 포인트다. AI 엔지니어·AI 데이터분석 등 AI 관련 직무 채용이 이어지고 있어, 내부적으로 AI 기반 신규 서비스·콘텐츠 개발 역량을 확충하려는 움직임이 감지된다. 정부의 K-디지털 트레이닝, 첨단산업 인재양성 부트캠프 등 위탁교육 사업 선정 결과도 매출 기여 측면에서 확인이 필요한 변수다. 회사가 2026년 구체적인 매출·이익 가이던스를 별도로 제시했는지는 확인되지 않았으며, 현재로서는 과거 4개년의 매출·이익률 둔화 흐름이 이어질지, 혹은 2026년 2분기와 같은 회복이 하반기까지 이어질지가 핵심 관찰 지점이다. 재무구조가 지속적으로 개선되어 온 만큼, 실적 변동성에 대응할 수 있는 재무적 여력은 상대적으로 확보된 상태로 평가된다.",
+  "en": "While the sharp earnings slowdown in Q1 2026 appears largely attributable to seasonal off-peak factors, the recovery to year-earlier levels in Q2 can be read as a signal supporting the possibility of a second-half rebound. The company continues to advance its digital learning upgrade by embedding generative-AI features into its learning platform (MLP) and migrating infrastructure to the Samsung Cloud Platform, and whether this investment translates into new customer wins or higher renewal rates among existing clients is worth watching going forward. Continued hiring for AI-related roles such as AI engineers and AI data analysts points to an internal push to build capacity for new AI-based services and content. Results from government-sponsored outsourced training programs, including K-Digital Training and advanced-industry talent bootcamps, are also a variable to confirm in terms of their revenue contribution. It is not confirmed whether the company has issued specific 2026 revenue or profit guidance, and for now the key thing to observe is whether the four-year trend of softening revenue and margins continues, or whether the Q2 2026-style recovery extends through the second half. With the balance sheet having continuously strengthened, the company appears to have relatively more financial capacity to absorb earnings volatility."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당 순자산(BPS 37,979원)을 하회하는 구간에서 거래되고 있어, 시장이 장부가치에 상당한 할인을 반영하고 있다. 이는 4년 연속 영업이익 감소와 2026년 1분기 수익성 급락이 복합적으로 작용한 결과로, 과거 동종업계 및 자사 역사적 배수 범위와 비교했을 때 현재 배수 수준은 눌려 있는 구간에 해당한다. 한편 주당현금배당금(DPS) 1,350원은 최근 주가 수준 기준으로 업종 평균을 큰 폭 웃도는 배당수익률을 형성해 현금 환원 측면의 매력은 주목할 만하다. 부채비율 36.8%와 연간 400억 원 이상의 영업현금흐름은 주당 수익력(EPS 3,929원) 및 순자산(BPS 37,979원)의 하방 안정성을 지지한다. 수익성 회복이 가시화될 경우 현재의 배수 압축이 재평가의 기반이 될 수 있으나, 이익 추세가 반전되지 않는 한 재평가 촉매는 제한적이다.",
-  "en": "The stock is trading below book value per share (BPS KRW 37,979), reflecting the market's meaningful discount to net asset value. Four consecutive years of operating profit decline combined with the 2026Q1 profitability implosion have pushed the current earnings multiple below historical norms for the company and comparable peers. On the other hand, the annual DPS of KRW 1,350 generates a dividend yield materially above the sector average at prevailing price levels, making cash return to shareholders a notable point of interest. A debt ratio of 36.8% and annual operating cash flow exceeding KRW 40bn support the downside stability of per-share earnings (EPS KRW 3,929) and book value (BPS KRW 37,979). Should profitability recovery materialise, the currently compressed multiple could serve as a re-rating base; absent an earnings trend reversal, however, re-rating catalysts remain limited."
+  "ko": "최근 몇 년간 매출과 영업이익률이 둔화되는 국면에서도 자기자본은 매년 증가하고 부채비율은 지속적으로 낮아져, 순자산 기준의 재무적 완충력은 오히려 커진 상태다. 이 때문에 시장에서 매겨지는 주가는 순자산 대비 할인된 구간에서 거래되는 경향이 나타나는 것으로 파악되며, 이는 최근의 이익 둔화를 시장이 일정 부분 반영한 결과로도 볼 수 있다. 이익 대비 주가 배수 역시 과거 실적이 정점이었던 시기와 비교하면 낮은 편에 속하는 것으로 나타나지만, 이는 최근 4개 분기의 순이익이 전년 동기 대비 줄어든 점과 함께 해석해야 한다. 배당은 매년 지속적으로 실시되어 온 것으로 파악되며, 업종 내에서 상대적으로 안정적인 배당 성향을 유지해온 편에 속한다. 다만 배당 수익률의 매력도는 주가 변동에 따라 달라지므로, 절대적인 수준에 대한 판단은 독자가 최신 시세를 기준으로 별도로 확인할 필요가 있다.",
+  "en": "Even as revenue and operating margin have softened in recent years, owner's equity has grown every year and the debt ratio has continued to decline, meaning the balance sheet's net-asset cushion has actually expanded. As a result, the market-assigned price tends to trade at a discount to net asset value, which can also be read as the market having already priced in a portion of the recent earnings slowdown. The earnings multiple likewise appears low relative to periods when past performance was at its peak, but this should be interpreted alongside the fact that net income over the most recent four quarters has declined from the year-earlier period. Dividends appear to have been paid consistently every year, and the company has maintained a relatively stable payout tendency within its industry. That said, the attractiveness of the dividend yield varies with the share price, so readers should separately check the current level against up-to-date quotes."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI 교육 선점: AI 스튜디오와 SSAFY 2.0의 시너지",
-    "en": "AI Education First-Mover: AI Studio and SSAFY 2.0 Synergy"
+    "ko": "재무 건전성 지속 개선",
+    "en": "Continuously Improving Financial Health"
    },
    "body": {
-    "ko": "2026년 3월 출시한 AI 스튜디오는 VM 기반 실습 환경과 GPT-5.2 기반 AI 코딩튜터를 탑재해 비개발자도 진입 장벽 없이 AI 교육을 받을 수 있도록 설계됐으며, 'UX 디자인 어워즈 2026' 본선 진출로 글로벌 수준의 UX 경쟁력을 인정받았다. SSAFY 2.0의 8개 신규 AI 과정과 맞물려 기업 AI 교육 시장에서 차별화된 포지셔닝이 가능하다. 글로벌 에듀테크 시장의 연평균 11.4% 성장 전망과 국내 기업들의 AX 가속화에 따른 임직원 AI 역량 교육 수요 확대는 멀티캠퍼스의 사업 확장에 중장기 우호 환경을 제공한다.",
-    "en": "AI Studio, launched in March 2026 with a VM-based practice environment and a GPT-5.2-powered AI coding tutor, lowers the entry barrier for non-developers and earned finalist recognition at the 'UX Design Awards 2026' (IDZ Berlin), signalling globally competitive UX. Combined with SSAFY 2.0's expanded AI curriculum, differentiated positioning in the enterprise AI education market becomes achievable. The global edtech market's projected CAGR of 11.4% and accelerating enterprise AX demand for employee AI upskilling provide a structurally favorable medium- to long-term backdrop."
+    "ko": "부채비율이 2022년 69.3%에서 2025년 36.8%로 4년 연속 낮아졌고, 지배주주지분도 매년 증가해왔다. 이익이 둔화되는 국면에서도 재무구조가 견고해진 점은 외부 충격에 대한 완충력을 높이는 요인이다. 영업활동현금흐름도 매년 300억원대 후반~500억원대 이상을 유지하며 안정적인 현금창출력을 보여주고 있다.",
+    "en": "The debt ratio fell for four consecutive years, from 69.3% in 2022 to 36.8% in 2025, while owner's equity has risen every year. A stronger balance sheet even during a period of softer earnings adds a buffer against external shocks. Operating cash flow has also stayed in a range from the high-KRW-30bn to over KRW 50bn each year, showing stable cash generation."
    }
   },
   {
    "title": {
-    "ko": "삼성SDS 계열 안정 수주 기반과 높은 배당 매력",
-    "en": "Stable Samsung SDS-Anchored Revenue and High Dividend Attraction"
+    "ko": "삼성 계열 네트워크와 안정적 고객 기반",
+    "en": "Samsung Group Network and Stable Client Base"
    },
    "body": {
-    "ko": "SSAFY 위탁 운영, OPIc 시험 사업, 삼성 계열사 교육 수탁 등 삼성SDS 모-자 관계에서 비롯된 안정적 수주 기반이 매출 상당 부분을 뒷받침한다. 연간 영업현금흐름(CFO)은 2022~2025년 연평균 500억 원 수준을 유지하며 잉여현금 창출 능력을 검증했다. DPS 1,350원은 최근 주가 수준에서 업종 평균을 크게 상회하는 배당수익률을 형성하고 있으며, 부채비율 36.8%의 재무 건전성이 배당 지속가능성을 지지한다.",
-    "en": "A substantial share of revenue is anchored by stable contracted work — SSAFY delegation, OPIc testing, and Samsung affiliate training — flowing from the parent-subsidiary Samsung SDS relationship. Annual operating cash flow averaged approximately KRW 50bn over 2022–2025, confirming robust free cash generation. A DPS of KRW 1,350 yields well above the sector average at prevailing price levels, supported by a healthy debt ratio of 36.8% that underpins dividend sustainability."
+    "ko": "삼성 계열사로서 확보한 고객 네트워크와 오랜 업력을 바탕으로 국내 기업교육 시장에서 지위를 유지해온 것으로 알려져 있다. OPIc 국내 주관, SERICEO 등 진입장벽이 있는 서비스를 보유해 단순 콘텐츠 경쟁과는 차별화된 요소를 갖고 있다. 정부 위탁교육 사업에도 지속적으로 선정되며 공공 채널의 매출 기반도 확보하고 있다.",
+    "en": "The company is understood to have maintained its position in the domestic corporate training market on the back of its client network as a Samsung group affiliate and its long track record. It holds services with entry barriers, such as being the domestic operator of OPIc and running SERICEO, differentiating it from simple content competition. It has also continued to be selected for government-outsourced training programs, securing a public-channel revenue base."
    }
   },
   {
    "title": {
-    "ko": "재무 구조 개선과 순자산 대비 할인 구간의 재평가 여지",
-    "en": "Balance Sheet Improvement and Re-rating Potential from Net Asset Discount"
+    "ko": "AI 기반 서비스 고도화 진행",
+    "en": "Ongoing AI-Driven Service Upgrades"
    },
    "body": {
-    "ko": "부채비율이 2022년 69.3%에서 2025년 36.8%로 꾸준히 낮아지며 재무 안전성이 강화됐다. 지배주주 귀속 자기자본은 2022년 1,691억 원에서 2025년 2,305억 원으로 4년간 36% 성장해 장부가치가 착실히 확대됐다. 현재 주가가 BPS(37,979원)를 하회하는 구간에서 거래되고 있어, 수익성 회복이 가시화될 경우 상향 재평가 여지가 존재한다.",
-    "en": "The debt ratio has declined steadily from 69.3% (2022) to 36.8% (2025), reinforcing balance sheet resilience. Equity attributable to controlling shareholders grew from KRW 169.1bn to KRW 230.5bn over four years — a 36% increase in book value. With the stock trading below BPS (KRW 37,979), meaningful re-rating potential exists if and when profitability recovery materialises."
+    "ko": "러닝플랫폼(MLP)에 생성형 AI 기반 'AI Advisor', 'AI Tutor'를 결합하고 삼성클라우드플랫폼으로 인프라를 전환하는 등 학습 경험 고도화를 추진해왔다. AI 엔지니어·AI 데이터분석 등 관련 직무 채용도 이어지고 있어 내부 역량 확충이 진행 중인 것으로 보인다. 이러한 투자가 향후 고객사 재계약률이나 신규 수주 확대로 이어지는지가 관찰 포인트다.",
+    "en": "The company has pursued learning-experience upgrades by combining generative-AI-based 'AI Advisor' and 'AI Tutor' features into its MLP platform and migrating infrastructure to the Samsung Cloud Platform. Continued hiring for AI engineer and AI data analyst roles suggests internal capability-building is underway. Whether this investment translates into higher client renewal rates or expanded new orders is a point to watch."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4년 연속 수익성 훼손과 2026Q1 급락의 구조적 우려",
-    "en": "Four-Year Profitability Erosion and 2026Q1 Structural Concern"
+    "ko": "4년 연속 매출·이익률 둔화",
+    "en": "Four Straight Years of Softer Revenue and Margins"
    },
    "body": {
-    "ko": "영업이익은 2022년 410억 원에서 2025년 319억 원으로 4년간 약 22% 감소했으며, 영업이익률도 11.5%에서 9.6%로 지속 축소됐다. 2026년 1분기에는 매출이 성장했음에도 영업이익이 6.4억 원으로 전년 동기 대비 약 86% 급락해 수익성 훼손이 더욱 심화됐다. 이익 하락 추세가 이어진다면 중장기 실적 회복에 대한 기대를 뒷받침하는 근거가 크게 약화된다.",
-    "en": "Operating profit declined roughly 22% over four years from KRW 41.0bn (2022) to KRW 31.9bn (2025), with operating margin compressing from 11.5% to 9.6%. In 2026Q1, operating profit plunged approximately 86% YoY to just KRW 0.6bn despite revenue growth, deepening the concern. If this earnings erosion trend continues, the case for medium- to long-term recovery becomes materially harder to substantiate."
+    "ko": "매출은 2023년 3,586억원을 정점으로 2024년, 2025년 연속 감소해 3,308억원까지 낮아졌다. 영업이익률도 2022년 11.5%에서 2025년 9.6%로 꾸준히 하락하는 흐름을 보였다. 최근 네 개 분기의 이익 합계도 여전히 2025년 연간 수준에 못 미쳐 회복이 완전히 확인된 단계는 아니다.",
+    "en": "Revenue peaked at KRW 358.6bn in 2023 before declining in both 2024 and 2025 to KRW 330.8bn. Operating margin has also steadily fallen, from 11.5% in 2022 to 9.6% in 2025. The sum of profit over the most recent four quarters still falls short of the full-year 2025 level, so a full recovery is not yet confirmed."
    }
   },
   {
    "title": {
-    "ko": "삼성그룹 의존 구조: 채용·인사 정책 변화에 구조적으로 취약",
-    "en": "Samsung Dependency: Structurally Exposed to Hiring and HR Policy Shifts"
+    "ko": "뚜렷한 계절성과 실적 변동성",
+    "en": "Pronounced Seasonality and Earnings Volatility"
    },
    "body": {
-    "ko": "매출 구조상 삼성 계열 고객 집중도가 높아 삼성그룹의 채용 규모 축소나 인사제도 변경이 교육서비스와 외국어서비스 양 부문에 직접적인 타격을 줄 수 있다. 2025년 실적 하락의 주요 원인도 외국어서비스 부문의 인사제도 변경과 채용 시즌 외 OPIc 수요 감소였다. 삼성 이외 고객 다변화가 충분히 진행되지 않는 한 의존도 리스크는 지속될 가능성이 크다.",
-    "en": "Revenue is heavily concentrated in Samsung Group customers, making both segments directly sensitive to Samsung's hiring volumes and HR policy changes. The 2025 earnings decline was partly driven by HR policy shifts and off-cycle OPIc demand weakness in Foreign Language Services — a risk that has already materialised. Without meaningful customer diversification beyond Samsung, this concentration risk is likely to persist."
+    "ko": "2026년 1분기 영업이익은 6.4억원까지 급감해 전 분기(104.0억원) 대비 큰 폭으로 위축됐다. 이는 교육서비스 부문의 비수기 계절성과 기업 교육예산 집행 시기에 실적이 크게 좌우되는 사업 구조를 보여준다. 분기별 실적 예측 가능성이 낮다는 점은 투자 판단 시 유의할 요소다.",
+    "en": "Operating profit collapsed to KRW 0.64bn in Q1 2026, a sharp contraction from KRW 10.40bn in the prior quarter. This reflects a business structure heavily influenced by off-season seasonality in the education segment and the timing of corporate training budget execution. Low quarter-to-quarter predictability is a factor worth noting."
    }
   },
   {
    "title": {
-    "ko": "B2B 교육 시장 경쟁 심화와 경기 민감성",
-    "en": "Intensifying B2B Competition and Cyclical Sensitivity"
+    "ko": "고객사 정책 변화에 따른 수요 변동",
+    "en": "Demand Swings Tied to Client Policy Changes"
    },
    "body": {
-    "ko": "AI·디지털 교육 시장에는 패스트캠퍼스, 코드스테이츠 등 에듀테크 스타트업과 Coursera for Business, Udemy Business 등 글로벌 플랫폼이 빠르게 진입하며 경쟁이 격화되고 있다. B2B 기업 교육 예산은 경기 침체 시 우선 삭감 항목으로, 2020년 코로나 국면에서도 기업 교육 예산 감소로 실적이 크게 타격받은 선례가 있다. 멀티캠퍼스가 AI 스튜디오 등 차별화 플랫폼으로 프리미엄 포지셔닝에 성공하지 못하면 가격 경쟁 압박이 가중될 수 있다.",
-    "en": "The AI and digital education market faces intensifying competition from domestic edtech startups (Fastcampus, Code States) and global platforms (Coursera for Business, Udemy Business). B2B training budgets are historically the first to be cut in downturns — a vulnerability confirmed during COVID-19, when reduced corporate education spending materially hurt Multicampus earnings. If AI Studio fails to achieve premium positioning, pricing pressure is likely to intensify."
+    "ko": "2025년 외국어서비스 부문은 고객사의 인사제도 변경과 채용 시즌 외 기간의 수요 감소로 실적이 하락한 바 있다. 이는 매출의 상당 부분이 소수 대형 고객사의 내부 정책에 의존하는 구조적 취약성을 보여준다. 향후에도 유사한 정책 변화가 실적에 영향을 줄 수 있다.",
+    "en": "In 2025, the foreign-language service segment saw results decline due to clients' HR policy changes and reduced demand outside the hiring season. This illustrates a structural vulnerability in which a meaningful share of revenue depends on the internal policies of a small number of large clients. Similar policy shifts could affect results again going forward."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "삼성그룹 채용·예산 변화 리스크",
-    "en": "Samsung Group Hiring & Budget Change Risk"
+    "ko": "산업/수요 리스크",
+    "en": "Industry/Demand Risk"
    },
    "body": {
-    "ko": "삼성그룹의 채용 규모 축소 또는 대졸 공채 제도 변화는 OPIc 응시 수요와 SSAFY 관련 교육 예산에 직접적인 영향을 미친다. 2025년 외국어서비스 부문의 실적 하락은 인사제도 변경에 따른 수요 감소로 이미 현실화된 리스크다. 향후 삼성그룹의 경영 전략 변화에 따라 위탁 교육 계약의 규모나 조건이 변경될 가능성도 상존한다.",
-    "en": "A reduction in Samsung Group hiring volumes or changes to its graduate recruitment system directly impact OPIc demand and SSAFY-linked education budgets. The 2025 Foreign Language Services earnings decline — driven by HR policy shifts — represents a risk that has already materialised. Future Samsung Group strategy changes also carry the risk of alterations to the scale or terms of delegated education contracts."
+    "ko": "기업교육 시장은 기업들의 교육예산 편성과 경기 상황에 영향을 받는다. 경기 둔화 시 기업들이 교육·훈련 예산을 우선적으로 축소할 가능성이 있어 매출 변동성을 키울 수 있다. 정부 위탁교육 사업 예산 규모의 변화도 공공 채널 매출에 영향을 줄 수 있다.",
+    "en": "The corporate training market is influenced by companies' training budgets and the broader economic environment. In an economic slowdown, companies may cut training and development budgets first, which could increase revenue volatility. Changes in the scale of government-outsourced training program budgets could also affect public-channel revenue."
    }
   },
   {
    "cat": {
-    "ko": "AI 스튜디오 상업화 및 투자 회수 불확실성",
-    "en": "AI Studio Commercialization and ROI Uncertainty"
+    "ko": "경쟁/대체 리스크",
+    "en": "Competitive/Substitution Risk"
    },
    "body": {
-    "ko": "AI 스튜디오는 2026년 6월부터 본격 운영을 시작했으며, 초기 투자 비용 집중이 2026년 1분기 수익성 급락의 요인 중 하나로 추정된다. B2B 수주 확보 속도가 투자 비용을 충분히 상쇄하지 못할 경우 수익성 회복이 지연될 수 있다. 빠르게 변화하는 AI 기술 환경에서 플랫폼 경쟁력 유지를 위한 지속적인 업그레이드 투자도 필요하다.",
-    "en": "AI Studio entered full commercial operation in June 2026, and upfront investment costs are suspected to have contributed to the 2026Q1 profitability collapse. If B2B contract wins fail to sufficiently offset investment outlays, profitability recovery could be materially delayed. In a rapidly evolving AI technology landscape, maintaining platform competitiveness will require ongoing upgrade investment."
+    "ko": "생성형 AI의 발달로 기업들이 자체적으로 사내 AI 학습도구나 LLM 기반 콘텐츠를 구축할 수 있는 여지가 커지고 있어, 외부 위탁교육 수요를 일부 대체할 가능성이 있다. 메가스터디교육, 크레버스 등 교육서비스 기업들의 B2B 영역 확장 시도도 경쟁 강도를 높일 수 있는 요인이다.",
+    "en": "The advance of generative AI increases companies' ability to build in-house AI learning tools or LLM-based content, which could substitute for a portion of outsourced training demand. Attempts by education companies such as Megastudy Education and Cravers to expand into the B2B segment could also intensify competition."
    }
   },
   {
    "cat": {
-    "ko": "경기 둔화에 따른 기업 교육 예산 삭감 리스크",
-    "en": "Cyclical Risk: Corporate Training Budget Cuts in Economic Slowdown"
+    "ko": "계열/거래 구조 리스크",
+    "en": "Affiliate/Transaction Structure Risk"
    },
    "body": {
-    "ko": "B2B 기업 교육 시장은 경기 사이클에 민감해 경기 둔화 시 교육·연수 예산이 우선 삭감되는 경향이 있다. 글로벌 경기 불확실성이 지속될 경우 단기적인 매출·이익 하방 압력으로 작용할 수 있으며, 이미 수익성이 압박받는 상황에서 수요 충격이 더해질 경우 실적 변동성이 확대될 수 있다. 삼성 이외 고객 기반의 다변화 정도에 따라 경기 민감도가 결정된다.",
-    "en": "B2B enterprise training markets are cyclically sensitive; training and development budgets are typically cut first in economic slowdowns. Ongoing global macroeconomic uncertainty poses additional near-term downside risk to revenue and earnings. With profitability already under pressure, a demand shock could amplify earnings volatility — the severity of which will depend on the degree of customer diversification beyond Samsung."
+    "ko": "삼성 계열사로서 관계사 매출 비중이 상당할 것으로 추정되며, 관계사의 교육 정책이나 예산 변화가 실적에 직접 영향을 줄 수 있다. 소수 대형 고객사에 대한 매출 의존도가 높을 경우, 특정 고객사의 정책 변화 하나로도 실적 변동성이 확대될 수 있다.",
+    "en": "As a Samsung group affiliate, a substantial portion of revenue is presumed to come from related-party transactions, and changes in an affiliate's training policy or budget could directly affect results. High reliance on a small number of large clients means a single client's policy change could meaningfully amplify earnings volatility."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 잠정 실적 발표 — 2026Q1 영업이익 급락이 일시적 비용 집중인지 구조적 훼손인지 판단하는 핵심 기준점. 영업이익이 계절적 강세(Q2>Q1)를 회복하는지, 2025Q2(88억 원) 수준에 근접하는지 확인 필요.",
-    "en": "2026Q2 preliminary earnings release — the defining data point to determine whether the 2026Q1 collapse was a temporary cost spike or structural deterioration. Key: whether Q2 operating profit recovers seasonally (Q2 > Q1) and approaches the KRW 8.8bn level recorded in 2025Q2."
+    "ko": "2026년 3분기 분기보고서 공시 예정 시기로, 2분기의 회복 흐름이 3분기에도 이어지는지, 계절적 성수기 효과가 반영되는지를 확인할 시점이다.",
+    "en": "Around the expected filing date for the Q3 2026 quarterly report, this is the point to check whether the Q2 recovery trend continues into Q3 and whether seasonal peak-period effects show up."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기(7~9월)",
-    "en": "H2 2026 (July–September)"
+    "ko": "2026년 4분기",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "삼성그룹 하반기 대졸 공채 시즌 진행 및 OPIc 수요 회복 신호 — 외국어서비스 부문 실적 반등의 선행 지표이며, 채용 규모 변화는 2026년 하반기 및 2027년 연간 실적 방향의 핵심 변수.",
-    "en": "Samsung Group H2 graduate recruitment cycle and early OPIc demand recovery signals — a leading indicator for the Foreign Language Services earnings rebound; changes in Samsung's hiring scale will be key determinants of H2 2026 and full-year 2027 earnings direction."
+    "ko": "기업들의 연간 교육예산이 집중 집행되는 시기로, 과거 4분기 실적(2025년 4분기 영업이익 104.0억원)과 비교해 회복 강도를 가늠할 수 있는 구간이다.",
+    "en": "This is the period when companies typically concentrate execution of annual training budgets, allowing a comparison against the prior Q4 2025 operating profit of KRW 10.40bn to gauge the strength of any recovery."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 내",
-    "en": "Within H2 2026"
+    "ko": "2027년 2월~3월",
+    "en": "February-March 2027"
    },
    "what": {
-    "ko": "AI 스튜디오 B2B 계약 수주 실적 공시 또는 IR 자료 공개 — 론칭 약 6개월 후 기업 고객 확보 현황(계약 수·수강 기업 규모 등)이 플랫폼 매출화 속도와 투자 비용 상쇄 여부를 평가하는 핵심 지표.",
-    "en": "AI Studio B2B contract win disclosures via public filings or IR materials — approximately six months post-launch, contracted enterprise client count and program scale will be the key indicators of platform monetization speed and whether investment outlays are being offset by new revenue."
+    "ko": "2026년 4분기 및 연간 잠정·확정 실적과 배당 관련 공시가 예상되는 시기로, 연간 매출·이익률 둔화 흐름이 반전되는지와 배당 정책의 유지 여부를 확인할 필요가 있다.",
+    "en": "Provisional and confirmed Q4 and full-year 2026 results along with dividend-related disclosures are expected around this time, making it necessary to check whether the multi-year trend of softer revenue and margins reverses and whether the dividend policy is maintained."
    }
   },
   {
    "when": {
-    "ko": "2026년 10~11월",
-    "en": "October–November 2026"
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "SSAFY 차기 기수 위탁 운영 계약 공시 — 계약 연장 및 규모·수수료 조건 변화는 향후 안정 매출 기반에 직접 영향을 미치며, 과거 SSAFY 수주 공시(548.5억 원 규모) 수준과 비교해 위탁 사업의 방향성을 확인할 수 있다.",
-    "en": "SSAFY next-cohort delegation contract announcement — renewal terms and scale directly affect the stable contracted revenue base; comparing against prior SSAFY contract disclosures (reference: KRW 54.85bn) will help gauge the trajectory of the delegation business."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3~4월",
-    "en": "March–April 2027"
-   },
-   "what": {
-    "ko": "2026년 결산 배당 공시(DPS) 및 연간 실적 확정 — DPS 유지(1,350원) 여부와 2026년 연간 영업이익 회복 방향성이 배당 지속가능성 평가 및 밸류에이션 방향에 직결.",
-    "en": "2026 full-year earnings confirmation and DPS announcement — whether the dividend is maintained at KRW 1,350 and whether annual operating profit recovers will directly determine investor assessments of dividend sustainability and the direction of any valuation re-rating."
+    "ko": "MLP 생성형 AI 기능의 정식 서비스 확대 여부와 K-디지털 트레이닝·첨단산업 인재양성 부트캠프 등 정부 위탁교육 사업 신규 선정 결과가 매출에 기여하는지 살펴볼 시점이다.",
+    "en": "This is the point to watch whether the MLP's generative-AI features expand into full-scale service and whether new selections under government-outsourced programs such as K-Digital Training and advanced-industry talent bootcamps begin contributing to revenue."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "멀티캠퍼스는 삼성SDS 계열의 안정적 수주 기반, SSAFY·OPIc 등 검증된 사업 모델, DPS 1,350원의 높은 배당 매력을 보유한 국내 B2B 기업 교육의 대표 플레이어다. 그러나 4년 연속 영업이익 감소와 2026년 1분기의 영업이익 약 86% 급락은 현 시점의 가장 큰 불확실성 요인이며, AI 스튜디오 투자 비용이 수익성에 미치는 영향의 규모와 기간이 아직 불명확하다. 긍정적 측면에서는 AI 스튜디오의 본격 운영, SSAFY 2.0 고도화, 부채비율 36.8%의 견고한 재무 구조가 중장기 반등의 기반으로 작용할 수 있다. 반면 삼성그룹 채용·인사 정책 의존도, 에듀테크 경쟁 심화, 이익 추세 반전 시점의 불확실성은 밸류에이션 재평가를 제약하는 요인으로 남아 있다. 투자자 입장에서는 2026년 2분기 실적을 통한 영업이익 회복 여부, AI 스튜디오 B2B 수주 성과, 삼성그룹 하반기 채용 규모 세 가지 지표를 집중 추적하는 것이 가장 중요한 선결 과제다.",
-   "en": "Multicampus is a leading Korean B2B corporate education provider anchored by a stable Samsung SDS-linked revenue base, proven platforms in SSAFY and OPIc, and an attractive DPS of KRW 1,350. However, four consecutive years of operating profit decline and a roughly 86% YoY collapse in 2026Q1 operating profit represent the central uncertainty at this juncture, with the scale and duration of AI Studio investment costs on profitability still unclear. On the positive side, the full commercial launch of AI Studio, the SSAFY 2.0 curriculum upgrade, and a sound balance sheet (debt ratio 36.8%) provide potential foundations for a medium-term recovery. Structural exposure to Samsung Group HR and hiring policy changes, intensifying edtech competition, and uncertainty over the timing of an earnings trend reversal continue to constrain re-rating catalysts. For investors, the three most critical data points to track are: the operating profit trajectory in the 2026Q2 earnings release, AI Studio B2B contract momentum, and the scale of Samsung Group's H2 2026 hiring activity."
+   "ko": "멀티캠퍼스는 삼성 계열 HRD 전문기업으로 기업교육·외국어평가·지식서비스를 축으로 안정적인 사업 기반을 갖추고 있으나, 2022년 이후 매출과 영업이익률이 4년 연속 둔화되는 흐름을 보여왔다. 2026년 1분기에는 계절적 비수기 효과로 영업이익이 크게 위축됐지만 2분기에는 전년 동기 수준으로 회복되며 하반기 흐름에 대한 관심이 모이고 있다. 이 같은 실적 둔화 국면에서도 부채비율은 지속적으로 낮아지고 자기자본은 매년 증가해, 재무적 완충력은 오히려 강화된 상태다. 회사는 생성형 AI 기반 학습 플랫폼과 클라우드 전환 등 디지털 역량 투자를 지속하고 있으며, 이것이 매출 회복으로 이어지는지가 핵심 관찰 변수다. 소수 대형 고객사에 대한 의존도와 계절적 실적 변동성은 구조적으로 유의해야 할 요소로 남아있다. 향후 분기 실적과 연간 결산, 배당 정책 발표를 통해 실적 회복의 지속성과 재무 건전성의 방향을 함께 확인해야 한다.",
+   "en": "Multicampus, a Samsung-affiliated HRD specialist, has a stable business base centered on corporate training, foreign-language assessment and knowledge services, but revenue and operating margin have softened for four consecutive years since 2022. Operating profit contracted sharply in Q1 2026 due to seasonal off-peak effects but recovered to year-earlier levels in Q2, drawing attention to the second-half trajectory. Even amid this earnings slowdown, the debt ratio has continued to fall and owner's equity has risen every year, meaning the financial buffer has actually strengthened. The company continues to invest in digital capabilities, including a generative-AI-based learning platform and cloud migration, and whether this translates into a revenue recovery is the key variable to watch. Reliance on a small number of large clients and seasonal earnings volatility remain structural factors worth noting. Going forward, upcoming quarterly results, the annual financial close, and dividend policy announcements should be checked together to gauge both the sustainability of any earnings recovery and the direction of financial health."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A067280&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
-  "http://www.thinkpool.com/itemanal/i/index.jsp?code=067280",
-  "https://m.thinkpool.com/item/067280",
   "https://www.investing.com/equities/multicampus-corp-earnings",
+  "https://m.thinkpool.com/item/067280",
   "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A067280",
-  "https://www.google.com/finance/quote/067280:KOSDAQ?hl=en",
-  "https://www.kokstock.com/stock/item.asp?item_cd=067280",
   "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=067280",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Finance.asp?pGB=1&gicode=A067280&MenuYn=Y&ReportGB=D&NewMenuID=103&stkGb=701",
-  "https://v.daum.net/v/20260613090135853",
-  "https://www.ice.go.kr/common/nttFileDownload.do?fileKey=70af7ce736fa1fd168b5f91d558a4b58",
-  "https://www.i-award.or.kr/AiS/Assess/FinalCandidateView.aspx?REG_SEQNO=13716",
-  "https://www.showala.com/ex/ex_detail.php?idx=2662",
-  "https://youth.seoul.go.kr/infoData/sprtInfo/view.do?key=2309130006&sprtInfoId=66401",
-  "https://eiec.kdi.re.kr/policy/materialView.do?num=269777",
-  "https://m.multicampus.com/",
-  "https://webst.edunet.net/AIDT/%EB%94%94%EC%A7%80%ED%84%B8%20%EA%B8%B0%EB%B0%98%20%EA%B5%90%EC%9C%A1%ED%98%81%EC%8B%A0%20%EB%B0%A9%EC%95%88.pdf",
-  "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=105277&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N"
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A067280&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
+  "https://markets.hankyung.com/stock/067280/financial-summary",
+  "https://www.kokstock.com/stock/item.asp?item_cd=067280",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Finance.asp?pGB=1&gicode=A067280&cID=&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
+  "https://www.catch.co.kr/Comp/CompSummary/145888",
+  "https://www.jobkorea.co.kr/Company/1894617/Info",
+  "https://kind.krx.co.kr/corpgeneral/irschedule.do?method=searchIRScheduleMain&gubun=iRSchedule",
+  "https://www.incruit.com/company/14885302/",
+  "https://www.jobplanet.co.kr/companies/52364/landing/%EB%A9%80%ED%8B%B0%EC%BA%A0%ED%8D%BC%EC%8A%A4",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/WkZqZW9IQmd6SHdUZ1lNSlFCN2pDUT09/company_nm/(%EC%A3%BC)%EB%A9%80%ED%8B%B0%EC%BA%A0%ED%8D%BC%EC%8A%A4",
+  "https://news.infostock.co.kr/a",
+  "https://securities.miraeasset.com/bbs/board/message/list.do?categoryId=1521",
+  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx",
+  "https://m.multicampus.com/course/corsList?clsfCd1=101002009000000"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "067280",
  "name": "멀티캠퍼스",
  "name_en": "Multicampus Corporation",
@@ -233,9 +223,9 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:58",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:08",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 23500,
-   "mcap": 0.1393,
+   "price": 23950,
+   "mcap": 0.1419,
    "shares": 5926779,
    "total_shares": 5926779,
    "wavg_shares": 5926274,
-   "per": 6.075,
+   "per": 6.192,
    "eps": 3868,
-   "pbr": 0.5998,
+   "pbr": 0.6113,
    "bps": 39180,
    "roe_ttm": 10.3,
    "ttm_window": "2025Q3~2026Q2",
@@ -356,7 +346,7 @@
    "bps_krx": 38888.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 1350.0,
-   "div": 5.74
+   "div": 5.64
   }
  }
 }

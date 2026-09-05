@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "비핵심 매각 완료, OTT·DOOH 중심 본업 재도약의 시험대",
-  "en": "Non-Core Divestitures Done: Testing the OTT & DOOH Platform Pivot"
+  "ko": "디지털광고 턴어라운드, 커머스 CPS가 이끈다",
+  "en": "Digital Ad Turnaround Led by Commerce CPS Growth"
  },
  "lead": {
-  "ko": "플레이디·태국법인 매각으로 디지털 미디어렙 본업에 집중하는 구조를 완성한 케이티나스미디어는 Big3 OTT 통합 바잉과 서울 지하철 DOOH 신규 수주를 발판으로 2026년 수익성 회복 궤도에 진입하고 있다.",
-  "en": "Having completed the divestiture of PlayD and its Thailand subsidiary to refocus on its core digital media rep business, KT nasmedia is entering a profitability recovery trajectory in 2026, anchored by its integrated OTT buying position and newly won Seoul Metro DOOH concessions."
+  "ko": "KT나스미디어는 2025년 적자에서 2026년 들어 분기 흑자 기조로 전환했으며, 커머스 CPS 광고와 플랫폼 부문 성장이 이익 개선을 이끌고 있다.",
+  "en": "KT Nasmedia has shifted from a 2025 net loss to quarterly profitability in 2026, driven by commerce CPS advertising and platform segment growth."
  },
  "keypoints": [
   {
-   "ko": "2025년 3월 자회사 플레이디 지분 46.92%(약 490억원)를 SOOP에 매각하고 태국법인도 정리해 연결 종속회사 없는 별도법인 체제로 전환, 비핵심 사업 구조 정리 완료.",
-   "en": "Completed the divestiture of a 46.92% PlayD stake (~KRW 49 billion) to SOOP in March 2025 and wound down the Thailand entity, transitioning to a standalone structure with no consolidated subsidiaries."
+   "ko": "2026년 1분기·2분기(잠정) 연속으로 매출과 영업이익이 전년 동기 대비 두 자릿수 성장세를 보였다",
+   "en": "Both Q1 and Q2 (preliminary) 2026 showed double-digit year-over-year growth in revenue and operating profit"
   },
   {
-   "ko": "넷플릭스·티빙·쿠팡플레이 등 국내 Big3 OTT 플랫폼의 유일한 통합 미디어렙 파트너로, OTT·커머스향 광고 취급고 성장이 실적 회복의 핵심 동력.",
-   "en": "As the sole integrated media rep for South Korea's Big3 OTT platforms (Netflix, Tving, Coupang Play), OTT and commerce-oriented ad volume growth is the primary driver of the earnings recovery."
+   "ko": "플랫폼(커머스 CPS 등) 부문이 디지털 광고 대행 부문보다 빠르게 성장하며 수익 구조를 바꾸고 있다",
+   "en": "The platform segment (including commerce CPS) is growing faster than traditional digital ad brokerage, reshaping the revenue mix"
   },
   {
-   "ko": "2025년 2월 서울 지하철 1·2·5·7·8호선 DOOH 광고 사업권 신규 수주로 옥외플랫폼 취급고가 전년 동기 대비 50% 이상 급성장, 플랫폼 부문 고성장 확인.",
-   "en": "New DOOH concessions for Seoul Metro lines 1, 2, 5, 7, and 8 won in February 2025 drove outdoor ad volume up more than 50% YoY, confirming high-growth momentum in the Platform segment."
+   "ko": "자회사 플레이디 매각 이후 미디어렙 본업과 플랫폼 사업에 집중하는 구조로 재편됐다",
+   "en": "Following the divestiture of subsidiary PLAYD, the company has restructured to focus on core media rep and platform businesses"
   },
   {
-   "ko": "2025년 연결 영업이익률 10.4%로 2022년(21.7%) 대비 반토막 수준이나, 2026년 1분기 영업이익이 전년 동기 대비 36.5% 성장하며 수익성 개선 신호 포착.",
-   "en": "While the 2025 operating margin of 10.4% is roughly half the 2022 peak of 21.7%, 1Q26 operating profit grew 36.5% YoY, signaling an emerging profitability recovery."
+   "ko": "국내 미디어렙 시장 1위 지위를 유지하고 있으나 SK텔레콤 계열 인크로스, CJ ENM 계열 메조미디어와의 경쟁이 지속되고 있다",
+   "en": "The company maintains the No.1 position in Korea's media rep market, but competition continues with SK Telecom-affiliated Incross and CJ ENM-affiliated Mezzomedia"
   },
   {
-   "ko": "DPS 700원으로 코스닥 미디어 업종 대비 상당한 배당 매력을 보유하며, 순현금이 시가총액에 근접하거나 상회하는 수준이 보고되면서 자본배분 전략 변화 여부가 시장의 관심사로 부각.",
-   "en": "A DPS of KRW 700 offers notable yield relative to KOSDAQ media peers; reported net cash approaching or exceeding market capitalization is drawing market attention to potential changes in capital allocation strategy."
+   "ko": "자사주 소각을 통한 주주환원 확대 움직임이 시작됐다",
+   "en": "Shareholder return efforts have expanded, including the retirement of treasury shares"
   }
  ],
  "business": {
-  "ko": "케이티나스미디어(구 나스미디어)는 2000년 설립·2013년 코스닥 상장된 국내 최대 디지털 미디어렙사로, 인터넷·모바일·IPTV·디지털 옥외광고(DOOH) 매체의 광고 판매 대행 수수료를 주 수익원으로 한다. 사업은 크게 ①OTT·IPTV·온라인 DA 등을 포괄하는 '디지털광고' 부문과 ②DOOH·모바일 플랫폼을 포함하는 '플랫폼 광고' 부문으로 구분된다. 1,000여개 매체사와 4,400여개 광고주·대행사 네트워크를 기반으로 국내 광고 취급고 규모 1위 지위를 유지하고 있다. 특히 넷플릭스·티빙·쿠팡플레이 등 국내 Big3 OTT의 유일한 통합 미디어렙 파트너라는 차별적 포지션이 핵심 경쟁력이다. DOOH 부문에서는 N.square, KT스퀘어, 서울 지하철 1·2·5·7·8호선, 수원 KT 위즈파크, 가로변 버스쉘터 등 다양한 옥외매체 커버리지를 확보하고 있다. 2025년 3월 사명을 케이티나스미디어로 변경하는 동시에 자회사 플레이디(검색광고 대행)와 태국법인을 각각 매각해 별도법인 체제로 전환, 비핵심 사업 정리를 완료했다. 2024년 5월 구글 애드 매니저·애드몹 MCM 공식 파트너사 선정, 같은 해 11월 국내 최초 구글 마케팅 플랫폼 리셀러 선정 등 글로벌 플랫폼 생태계 내 입지도 강화하고 있다. 중장기 전략으로는 KT와의 AI 협력을 통한 통합 데이터 플랫폼 구축, AI 문맥 맞춤 광고, 프로그래매틱 광고 플랫폼 고도화를 통해 '디지털 마케팅 플랫폼 컴퍼니'로의 전환을 추진 중이다.",
-  "en": "KT nasmedia (formerly Nasmedia), established in 2000 and KOSDAQ-listed in 2013, is South Korea's largest digital media representative, earning revenues primarily from advertising sales commissions across internet, mobile, IPTV, and DOOH channels. Its business divides broadly into ① a 'Digital Advertising' segment covering OTT, IPTV, and online display ads, and ② a 'Platform Advertising' segment encompassing DOOH and mobile platforms. Its network of 1,000+ media partners and 4,400+ advertisers and agencies underpins its position as South Korea's No. 1 media rep by ad volume. A key differentiator is its role as the sole integrated media rep for all three major domestic OTT platforms—Netflix, Tving, and Coupang Play. In DOOH, the company manages coverage across N.square, KT Square, Seoul Metro lines 1/2/5/7/8, Suwon KT Wiz Park, and roadside bus shelters. In March 2025, it rebranded, sold subsidiary PlayD and its Thailand entity, and transitioned to a standalone legal entity with no consolidated subsidiaries. Strategic milestones include being named the official Google Ad Manager/AdMob MCM partner (May 2024) and the first domestic Google Marketing Platform reseller (November 2024). Long-term strategy centers on building an AI-integrated data platform with KT, advancing AI contextual advertising, and transforming into a 'digital marketing platform company.'"
+  "ko": "KT나스미디어는 KT그룹의 디지털 마케팅 플랫폼 기업으로, KT가 최대주주로서 지분을 보유하고 있다. 사업 구조는 크게 디지털 광고(모바일, IPTV, OTT), 옥외 광고(지하철, 디지털 사이니지), SSP 플랫폼 세 부문으로 나뉜다. 국내 온라인·모바일 광고 미디어렙 시장에서 오랫동안 점유율 1위를 지켜온 사업자로, 경쟁사로는 SK텔레콤 계열의 인크로스, CJ ENM 계열의 메조미디어, SBS 계열의 디엠씨미디어 등이 있다. 특히 OTT 광고 부문에서는 넷플릭스, 티빙, 쿠팡플레이 등 국내 대표 OTT 3사의 광고 인벤토리를 모두 확보하고 있으며, 2026년 2월에는 쿠팡플레이 광고 독점 판매사로 선정됐다. 옥외광고에서는 서울 지하철 1·2·5·7·8호선의 독점 광고 운영권을 확보해 자체 매체를 보유한 광고 채널을 운영 중이다. 플랫폼 부문은 판매당 광고비 부과 방식인 CPS(Cost Per Sales) 광고를 중심으로 지마켓, 쿠팡, SSG 등 커머스 플랫폼과 연계된 성과형 광고 사업을 확대하고 있다. 과거 검색광고 대행 자회사였던 플레이디는 매각을 통해 연결 실적에서 제외됐으며, 이를 통해 회사는 미디어렙 본업과 플랫폼 사업 경쟁력 강화에 자원을 집중하는 구조로 재편됐다.",
+  "en": "KT Nasmedia is a digital marketing platform company within the KT Group, with KT holding the largest ownership stake. Its business is organized into three segments: digital advertising (mobile, IPTV, OTT), out-of-home advertising (subway, digital signage), and SSP platform. The company has long held the No.1 market share position in Korea's online and mobile advertising media rep market, competing against SK Telecom-affiliated Incross, CJ ENM-affiliated Mezzomedia, and SBS-affiliated DMC Media. In the OTT advertising segment, the company holds advertising inventory across all three major domestic OTT platforms—Netflix, Tving, and Coupang Play—and was selected in February 2026 as the exclusive ad sales agency for Coupang Play. In out-of-home advertising, it secured exclusive operating rights for Seoul Subway Lines 1, 2, 5, 7, and 8, running proprietary advertising channels. The platform segment is expanding performance-based advertising tied to commerce platforms such as Gmarket, Coupang, and SSG, centered on CPS (Cost Per Sales) advertising. PLAYD, a former search-ad subsidiary, was divested and removed from consolidated results, restructuring the company to focus resources on strengthening its core media rep business and platform competitiveness."
  },
  "earnings": {
-  "ko": "2022년 매출액 1,524억원·영업이익 331억원(OPM 21.7%)을 정점으로 수익 구조가 뚜렷이 하강했다. 2023년 매출액 1,468억원·영업이익 205억원(OPM 14.0%), 2024년 매출액 1,426억원·영업이익 199억원(OPM 14.0%)으로 마진 저하가 이어졌으며, 2024년에는 일회성 대손 및 자회사 관련 손상 등의 영향으로 지배주주 순이익이 -46.4억원으로 적자 전환했다. 2025년은 플레이디 매각에 따른 연결 범위 축소로 매출액 1,179억원·영업이익 123억원(OPM 10.4%)으로 외형이 줄었으나, 영업현금흐름은 352.9억원으로 견조하게 유지됐고 지배주주 순이익은 67.4억원으로 흑자 회복에 성공했다. 분기별로는 2025년 3분기(매출 312억원·영업이익 38억원)와 4분기(매출 369억원·영업이익 35억원)에 하반기 계절성이 집중됐으나, 2025년 2·4분기 지배주주 순이익이 각각 -4.7억원·-5.9억원으로 마이너스를 기록하는 등 순이익 변동성이 높다. 2026년 1분기는 매출액 264.5억원(+12.5% YoY)·영업이익 33.2억원(+36.5% YoY)으로 수익성이 뚜렷이 개선됐으며, DOOH 신규 매체 취급고 급증, 지상파 광고 물량 확보, 인건비 효율화가 주요 원인으로 파악됐다. 부채비율은 2023년 104.5%에서 2025년 118.3%로 소폭 상승했으나, 미디어렙 사업 특성상 광고 취급 관련 유동부채(예수금·선수금) 비중이 커 실질 재무 레버리지는 수치보다 낮게 볼 수 있다.",
-  "en": "Revenue and operating profit peaked in 2022 at KRW 152.4 billion and KRW 33.1 billion (OPM 21.7%), respectively, before a sustained downturn. OPM held flat at 14.0% in both 2023 (revenue KRW 146.8B, OP KRW 20.5B) and 2024 (revenue KRW 142.6B, OP KRW 19.9B), while net profit attributable to controlling shareholders swung to a loss of KRW 4.6 billion in 2024 due to one-time bad debts and subsidiary impairments. In 2025, deconsolidation of PlayD reduced revenue to KRW 117.9 billion and operating profit to KRW 12.3 billion (OPM 10.4%); however, operating cash flow remained robust at KRW 35.3 billion and net profit recovered to KRW 6.7 billion. Quarterly data reveals pronounced back-half seasonality—3Q25 (revenue KRW 31.2B, OP KRW 3.8B) and 4Q25 (revenue KRW 36.9B, OP KRW 3.5B) were the two strongest quarters—yet net profit for 2Q25 and 4Q25 turned negative at -KRW 0.5B and -KRW 0.6B respectively, highlighting persistent bottom-line volatility. 1Q26 delivered a clear inflection: revenue of KRW 26.4B (+12.5% YoY) and operating profit of KRW 3.3B (+36.5% YoY), driven by the ramp-up of new DOOH concessions, secured terrestrial broadcast ad volumes, and labor cost savings. The debt ratio edged up to 118.3% in 2025 from 104.5% in 2023, but media reps carry large ad-processing current liabilities—client deposits and advance billings—rather than financial debt, so effective leverage is structurally lower than the headline ratio implies."
+  "ko": "KT나스미디어의 연간 실적은 2022년 매출 1,523억원, 영업이익 330억원(영업이익률 21.7%)의 정점을 지나 2023년(매출 1,467억원, 영업이익 205억원), 2024년(매출 1,425억원, 영업이익 199억원)까지 매출과 이익이 동반 축소되는 흐름을 보였다. 특히 2024년에는 지배주주 순이익이 -64.5억원으로 적자를 기록했는데, 이는 자회사 매각 관련 평가손실 및 손상차손 등 일회성 요인이 반영된 결과다. 2025년에는 매출 1,179억원으로 전년 대비 감소했으나 영업이익률은 10.4%로 지배주주 순이익이 67.4억원으로 흑자 전환했다. 분기별로 보면 2025년 1분기 매출 235억원, 영업이익 24.2억원, 지배주주 순이익 29.1억원을 기록한 이후 2025년 3분기에는 매출 312억원, 영업이익 37.5억원, 지배주주 순이익 49.0억원으로 개선세가 확인됐고, 2026년 1분기에는 매출 264억원, 영업이익 33.2억원, 지배주주 순이익 36.6억원으로 전년 동기 대비 성장세를 이어갔다. 최근 4개 분기(2025년 2분기~2026년 1분기) 기준 지배주주 순이익은 약 74.9억원 수준으로 집계된다. 언론 보도에 따르면(공시 잠정치, 2026년 8월 6일 기준) 2026년 2분기 매출은 322.64억원(전년 동기 대비 22.8% 증가), 영업이익 78.2억원(전년 동기 대비 200.8% 증가), 당기순이익은 68.18억원으로 전년 동기 순손실에서 흑자 전환한 것으로 전해지는데, 이는 아직 확정 공시 반영 전 잠정치임을 유의할 필요가 있다.",
+  "en": "KT Nasmedia's annual results peaked in 2022 with revenue of KRW 152.3 billion and operating profit of KRW 33.0 billion (operating margin 21.7%), then declined through 2023 (revenue KRW 146.7 billion, operating profit KRW 20.5 billion) and 2024 (revenue KRW 142.5 billion, operating profit KRW 19.9 billion). Notably, 2024 recorded a net loss attributable to owners of KRW -6.45 billion, reflecting one-time factors including valuation losses and impairment charges related to a subsidiary divestiture. In 2025, revenue declined year-over-year to KRW 117.9 billion, but the operating margin reached 10.4% and net income attributable to owners returned to profit at KRW 6.74 billion. On a quarterly basis, revenue of KRW 23.5 billion, operating profit of KRW 2.4 billion, and owner net income of KRW 2.9 billion were recorded in Q1 2025, improving to revenue of KRW 31.2 billion, operating profit of KRW 3.8 billion, and owner net income of KRW 4.9 billion in Q3 2025, with the growth trend continuing into Q1 2026 at revenue of KRW 26.4 billion, operating profit of KRW 3.3 billion, and owner net income of KRW 3.7 billion. Over the trailing four quarters (Q2 2025 through Q1 2026), net income attributable to owners totaled approximately KRW 7.49 billion. According to media reports citing a preliminary disclosure as of August 6, 2026, Q2 2026 revenue reached KRW 32.264 billion (up 22.8% year-over-year), operating profit KRW 7.82 billion (up 200.8%), and net income KRW 6.818 billion, turning profitable from a prior-year net loss—though this remains a preliminary figure pending final confirmation."
  },
  "industry": {
-  "ko": "한국방송광고진흥공사(코바코)에 따르면 2025년 국내 총광고비는 약 17.3조원으로 소폭 증가했으나, 온라인·디지털 광고가 전체의 약 60%를 차지하는 구조적 디지털 전환이 심화됐다. 방송광고는 전년 대비 약 13% 감소하며 구조적 조정 국면에 진입했고, 2026년 총광고비는 약 17.9조원으로 완만한 성장이 예상되는 가운데 디지털 중심의 양극화는 더욱 심화될 전망이다. OTT 시장에서는 구독자 확보에서 광고 수익 창출로 경쟁 축이 이동하고 있어 광고 인벤토리가 빠르게 확대되고 있으며, 이는 통합 OTT 미디어렙인 케이티나스미디어의 취급고 확대 기회로 직결된다. DOOH는 디지털 전환·규제 완화·프로그래매틱 연동 확산에 힘입어 2025년에도 2% 이상 성장세를 유지했고, AI 기반 pDOOH(프로그래매틱 DOOH)로의 고도화가 가속화될 전망이다. 경쟁사로는 CJ메조미디어, 인크로스가 주요 경합사이며, 케이티나스미디어는 KT그룹 통신 데이터와 AI 기술을 결합한 타겟팅 솔루션으로 차별화를 추구한다. 한편 네이버·카카오 등 국내 빅테크가 DOOH 시장 통합에 나서고 있는 점은 중장기 경쟁 강도를 높이는 요인으로 주목할 필요가 있다.",
-  "en": "According to KOBACO, South Korea's total ad expenditure reached approximately KRW 17.3 trillion in 2025—a marginal increase—but the structural shift toward digital intensified, with online/digital ads accounting for roughly 60% of the total. Broadcast advertising contracted by approximately 13% year-on-year, entering a structural adjustment phase; 2026 total ad spend is projected at approximately KRW 17.9 trillion with further polarization toward digital expected. OTT platforms are shifting competitive focus from subscriber growth to ad revenue generation, rapidly expanding inventory and creating incremental volume opportunities for KT nasmedia as the integrated OTT media rep. DOOH grew more than 2% in 2025, driven by digitalization, regulatory easing, and expanding programmatic connectivity, with AI-based pDOOH expected to accelerate further. Key competitors include CJ Mezzomedia and Incross; KT nasmedia differentiates through KT Group telecom data assets and AI-powered targeting. However, Naver and Kakao's moves into DOOH platform aggregation represent a meaningful medium-to-long-term competitive threat."
+  "ko": "국내 디지털 미디어렙 시장은 KT 계열의 나스미디어가 오랜 기간 1위 지위를 유지해온 가운데, CJ ENM 계열 메조미디어, SK텔레콤 계열 인크로스가 2·3위권을 형성하는 구도다. 광고 산업은 경기에 민감하게 반응하는 대표적 업종으로, 최근 몇 년간 국내 광고 경기 부진이 이어지면서 전통적인 디지털 배너·검색광고 대행 매출은 정체 또는 역성장하는 모습을 보였다. 반면 이용자의 동영상 소비가 OTT·CTV·숏폼으로 다변화하면서 DSP 기반의 영상매체 통합 구매 수요가 커지고 있고, 커머스 플랫폼과 연계된 CPS(성과보상형) 광고가 미디어렙사들의 새로운 성장축으로 부상하고 있다. 나스미디어는 넷플릭스·티빙·쿠팡플레이 등 국내 주요 OTT 3사의 광고 인벤토리를 모두 확보한 유일한 사업자라는 지점에서 경쟁사와 차별화된 포지션을 갖고 있다. 다만 인크로스는 SK텔레콤의 통신 인프라와 AI 기술을 결합한 티딜 등 커머스 사업에서, 메조미디어는 CJ 계열 콘텐츠·글로벌 제휴를 통해 각각 독자적 성장 전략을 펴고 있어 3사 간 경쟁은 지속될 전망이다. 산업 전반적으로는 생성형 AI 기반 검색·에이전트의 확산이 광고 지면과 구매 방식을 구조적으로 바꾸는 요인으로 지목되고 있으며, 이는 미디어렙사들에게 새로운 기회와 대응 과제를 동시에 제시하고 있다.",
+  "en": "In Korea's digital media rep market, KT-affiliated Nasmedia has long held the No.1 position, with CJ ENM-affiliated Mezzomedia and SK Telecom-affiliated Incross forming the second and third tiers. Advertising is a highly cyclical industry, and traditional digital banner and search-ad brokerage revenue has stagnated or declined amid recent domestic advertising slumps. Meanwhile, as video consumption diversifies across OTT, CTV, and short-form formats, demand for DSP-based integrated video media buying is growing, and performance-based CPS advertising tied to commerce platforms has emerged as a new growth axis for media rep companies. Nasmedia holds a differentiated position as the only operator with advertising inventory across all three major domestic OTT platforms—Netflix, Tving, and Coupang Play. However, Incross is pursuing its own growth strategy through commerce ventures like T-Deal, leveraging SK Telecom's telecom infrastructure and AI technology, while Mezzomedia leverages CJ Group content and global partnerships, suggesting competition among the three players will continue. Industry-wide, the spread of generative AI-based search and agents is cited as a structural factor reshaping ad inventory and purchasing methods, presenting both new opportunities and challenges for media rep companies."
  },
  "outlook": {
-  "ko": "회사는 플레이디·태국법인 매각 완료 이후 디지털 미디어렙 본업과 AI·플랫폼 사업 고도화에 전략적 자원을 집중한다는 방향을 명확히 했다. OTT 통합 바잉 포지셔닝을 강화해 넷플릭스·티빙·쿠팡플레이 취급고 확대를 지속 추진하는 동시에, IPTV·CTV 등 디지털 방송광고 영역으로의 리포지셔닝도 병행할 계획이다. DOOH 부문에서는 2025년 2월 서울 지하철 5개 호선 신규 수주로 매체 커버리지를 대폭 확충했으며, 카카오모빌리티와의 DOOH 프로그래매틱 연동 MOU(2025년 11월 체결)를 통해 AI 기반 자동 입찰 광고 집행 역량을 확대하고 있다. 플랫폼 부문에서는 구글 MCM 공식 파트너십을 활용한 모바일 플랫폼 신사업 확대가 진행 중이며, KT와의 AI 협력을 통한 통합 데이터 플랫폼 구축이 중기 수익원으로 기대된다. 증권사 추정에 따르면 대손 이슈가 없다는 전제 하에 2026년 영업이익률이 전년 대비 3~4%p 개선될 수 있다고 보는데, 2026년 1분기 실적이 이를 일부 확인하고 있다. 다만 국내 광고 업황의 회복 속도가 여전히 더딘 점을 감안하면 매출 성장률은 한 자릿수 초반으로 제한될 수 있다는 점이 변수다.",
-  "en": "Following completion of the PlayD and Thailand divestitures, the company has clearly stated its intent to concentrate strategic resources on the core digital media rep business and AI/platform advancement. It plans to deepen OTT integrated buying and expand volume for Netflix, Tving, and Coupang Play, while simultaneously repositioning into digital broadcast advertising such as IPTV and CTV. In DOOH, the February 2025 win of five Seoul Metro line concessions significantly extended media coverage, and the November 2025 MOU with Kakao Mobility is expanding AI-driven programmatic ad execution capabilities. The Platform segment is pursuing mobile platform new-business expansion via the Google MCM partnership, and the AI integrated data platform being co-developed with KT is expected to become a mid-term revenue driver. Sell-side estimates suggest operating margin could recover by 3–4 percentage points year-on-year in 2026, assuming no recurrence of bad debt issues—a trajectory partially validated by 1Q26 results. Nevertheless, the gradual pace of domestic ad market recovery may cap top-line growth in the low single digits."
+  "ko": "회사는 2026년 상반기 결산 보고서를 통해 하반기 디지털 미디어·마케팅 시장의 핵심 변화로 AI 기반 검색 광고 지면 확대, AI 자동화 운영 방식으로의 전환, DSP 기반 영상매체 통합 구매 확대를 제시했다. 이에 대응해 하나의 캠페인을 국내 프리미엄 영상 지면에 통합 집행할 수 있는 'nap dsp plus' 서비스를 2026년 3분기 중 출시할 예정이라고 밝혔다. 증권사 리포트에 따르면 KB증권은 2026년 5월 7일 리포트에서 CPS 광고 비중이 전체 매출의 50% 내외로 추정되며 향후 더 확대될 것으로 전망했다. DB증권은 2026년 8월 21일 리포트에서 3분기에는 광고 비수기 영향으로 영업이익률이 2분기보다 낮아지지만 4분기에는 광고 성수기와 커머스 CPS 증가로 영업이익이 개선될 것으로 전망했다. 디지털광고 부문의 성장은 넷플릭스·티빙 등 OTT향 취급고가 크게 늘어난 데 힘입은 것으로 분석되며, 하반기에도 이 흐름이 이어질지가 관전 포인트다. 회사는 최근 취득한 자사주 일부를 소각하기로 결정하며 주주환원 확대에 나선 것으로 전해졌다.",
+  "en": "In its first-half 2026 report, the company identified expanding AI-based search advertising inventory, the shift toward AI-driven automated ad operations, and growing DSP-based integrated video media buying as key themes shaping the second half of the digital media and marketing market. In response, it plans to launch the 'nap dsp plus' service, which enables unified campaign execution across premium domestic video inventory, in the third quarter of 2026. According to a brokerage report, KB Securities estimated in a May 7, 2026 report that CPS advertising accounts for roughly 50% of total revenue and is expected to expand further. DB Securities projected in an August 21, 2026 report that the operating margin would decline slightly in Q3 due to seasonally weaker advertising demand before improving in Q4 amid the advertising peak season and rising commerce CPS volume. Growth in the digital advertising segment has been attributed to a substantial increase in transaction volume tied to OTT platforms like Netflix and Tving, and whether this momentum continues into the second half remains a key point to watch. The company reportedly decided to retire a portion of recently acquired treasury shares, expanding shareholder returns."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당순자산(BPS 16,894원)을 상당 폭 하회하는 수준으로, 순자산 대비 할인 구간에 형성돼 있다. KB증권(2026년 3월)은 순현금이 시가총액에 근접하거나 상회하는 수준이라고 분석했으며, 이는 자산 가치 관점의 하방 지지 논리를 제공한다. 주당순이익(EPS 647원)은 2024년 적자에서 흑자 전환한 것으로, 이익 회복의 지속성이 밸류에이션 재평가의 핵심 전제 조건이다. 과거 주가수익배수(PER)는 광고 업황 호조기에 20배를 상회하고, 불황기엔 10배 수준에서도 거래된 적이 있어 역사적 밴드 폭이 넓다. DPS 700원 기준 배당수익률은 코스닥 미디어 업종 평균을 크게 상회하는 수준으로, 배당 수취 관점의 관심을 지속 유지시키는 요인이다. 다만 매출·마진 회복의 지속성과 중장기 성장 가시성이 확인되어야 순자산 대비 할인 폭이 의미 있게 축소될 수 있다.",
-  "en": "The current share price sits at a meaningful discount to book value (BPS KRW 16,894), placing it in a net-asset discount zone. KB Securities (March 2026) noted that net cash approaches or exceeds market capitalization, providing an asset-level valuation floor argument. Earnings per share (EPS KRW 647) represents a return to profitability after a 2024 loss year, and the sustainability of this earnings recovery is the key prerequisite for any meaningful re-rating. Historically, the stock has traded above 20x price-to-earnings during advertising boom periods and at around 10x during downturns, reflecting a wide historical valuation range. At the confirmed DPS of KRW 700, the dividend yield materially surpasses the KOSDAQ media sector average, sustaining income-oriented investor interest. However, a durable narrowing of the net-asset discount will likely require confirmed sustainability in revenue and margin recovery alongside greater medium-to-long-term growth visibility."
+  "ko": "회사는 2024년 순손실에서 2025년 순이익으로 전환했고, 2026년 들어서도 분기 실적 개선세가 이어지는 흐름을 보이고 있다. 시가총액이 순자산 규모에 못 미치는, 즉 주가순자산비율이 1배를 밑도는 수준에서 거래되는 것으로 파악되며, 이는 과거 이 종목이 기록했던 거래 밴드의 하단권에 해당한다. 배당 측면에서는 최근 자사주 소각과 함께 주주환원을 확대하려는 움직임이 나타났다는 점이 증권사 리포트에서 긍정적으로 언급된 바 있다. 다만 광고 업황 자체가 경기 변동에 민감한 산업 특성을 지니고 있어, 이익 회복의 지속성 여부가 밸류에이션 판단에서 중요한 변수로 남아 있다. 증권가 목표주가는 시점에 따라 편차가 있는데, DB증권은 2026년 8월 21일 리포트에서 목표주가를 기존 14,000원에서 16,500원으로 상향 조정했다고 밝혔다.",
+  "en": "The company transitioned from a net loss in 2024 to net profit in 2025, and this improvement trend has continued into 2026's quarterly results. Market capitalization appears to trade below net asset value, meaning the price-to-book ratio sits under 1x, which corresponds to the lower end of this stock's historical trading range. On the dividend front, brokerage reports have positively noted recent moves to retire treasury shares alongside broader efforts to expand shareholder returns. However, given that the advertising industry is inherently sensitive to economic cycles, the durability of the earnings recovery remains an important variable in valuation assessments. Brokerage target prices vary by timing; DB Securities stated in an August 21, 2026 report that it raised its target price from KRW 14,000 to KRW 16,500."
  },
  "bull": [
   {
    "title": {
-    "ko": "OTT 독점 미디어렙 지위와 DOOH 매체 대폭 확충",
-    "en": "Exclusive OTT Media Rep Status & Substantially Expanded DOOH Coverage"
+    "ko": "커머스 CPS 광고 고성장",
+    "en": "High-Growth Commerce CPS Advertising"
    },
    "body": {
-    "ko": "넷플릭스·티빙·쿠팡플레이 Big3 OTT의 유일한 통합 미디어렙이라는 희소성 높은 포지션은 OTT 광고 시장 성장의 직접 수혜를 가능케 한다. 2025년 서울 지하철 1·2·5·7·8호선 DOOH 사업권 신규 수주로 옥외 매체 취급고가 전년 동기 대비 50% 이상 급성장하는 등 플랫폼 사업부문의 고성장세가 실적으로 확인됐다. OTT와 DOOH 모두 코바코의 2026년 전망에서 성장 매체로 분류돼, 전방 시장의 구조적 수혜가 지속될 가능성이 높다.",
-    "en": "The distinctive position as the sole integrated media rep for South Korea's Big3 OTT platforms enables direct benefit from OTT advertising market growth. New DOOH concessions for five Seoul Metro lines drove outdoor ad volume up more than 50% YoY, confirming high-growth momentum in the Platform segment in actual results. Both OTT and DOOH are classified as growth media in KOBACO's 2026 outlook, suggesting structurally favorable upstream tailwinds are likely to persist."
+    "ko": "쿠팡, 지마켓, SSG 등 커머스 플랫폼과 연계된 CPS(판매당 부과) 광고가 플랫폼 부문 매출을 견인하고 있다. 증권사 리포트에 따르면 CPS 광고 비중이 전체 매출의 상당 부분을 차지하며 향후 더 확대될 것으로 전망되고 있다. 성과형 광고는 전환율 개선과 취급고 증가가 동시에 발생할 경우 이익 레버리지가 크게 나타날 수 있는 구조다.",
+    "en": "CPS (cost-per-sale) advertising tied to commerce platforms such as Coupang, Gmarket, and SSG is driving platform segment revenue. Brokerage reports indicate CPS advertising already accounts for a substantial share of total revenue and is expected to expand further. Performance-based advertising can generate significant profit leverage when conversion rates improve alongside rising transaction volume."
    }
   },
   {
    "title": {
-    "ko": "비핵심 자산 정리로 집중력 강화 및 수익성 개선 기반 확보",
-    "en": "Strengthened Focus & Improved Profitability Foundation After Divestitures"
+    "ko": "OTT 광고 인벤토리 독점적 확보",
+    "en": "Exclusive OTT Advertising Inventory Position"
    },
    "body": {
-    "ko": "플레이디 지분 46.92% 매각(약 490억원)과 태국법인 정리로 비핵심 자산을 모두 정리하고 미디어렙 본업에 경영 자원을 집중할 수 있는 환경이 마련됐다. 자회사 관련 일회성 손실 요인이 제거됨에 따라 영업이익이 순이익으로 이어지는 연결 구조가 단순화됐다. 지상파 광고 물량 확보와 인건비 효율화 등 내부 비용 개선도 2026년 1분기 수익성 개선에 기여하고 있어, 구조 개편의 효과가 실적으로 가시화되고 있다.",
-    "en": "The divestiture of 46.92% of PlayD (~KRW 49 billion) and the Thailand entity cleared all non-core assets, freeing management resources to focus on the core media rep business. Removal of subsidiary-related one-time loss factors has simplified the earnings conversion structure from operating profit to net profit. Internal cost improvements—securing terrestrial broadcast volumes and labor efficiency—are already visible in 1Q26 results, indicating that restructuring benefits are materializing."
+    "ko": "넷플릭스, 티빙, 쿠팡플레이 등 국내 주요 OTT 3사의 광고 인벤토리를 모두 확보한 것으로 알려진 유일한 미디어렙사다. 2026년 2월에는 쿠팡플레이 광고 독점 판매사로 선정됐다. OTT 관련 취급고 증가는 최근 디지털광고 부문 성장의 핵심 요인으로 분석됐다.",
+    "en": "The company is reportedly the only media rep firm to hold advertising inventory across Korea's three major OTT platforms—Netflix, Tving, and Coupang Play. In February 2026, it was selected as the exclusive ad sales agent for Coupang Play. Rising OTT-related transaction volume has been identified as a key driver of recent digital advertising segment growth."
    }
   },
   {
    "title": {
-    "ko": "순자산 대비 할인 구조와 높은 배당 매력",
-    "en": "Net Asset Discount & High Dividend Appeal"
+    "ko": "사업 구조 재편과 주주환원 확대",
+    "en": "Business Restructuring and Expanded Shareholder Returns"
    },
    "body": {
-    "ko": "주가가 주당순자산(BPS)을 크게 하회하는 구간에서 거래되고 있으며, 순현금이 시가총액에 근접하거나 상회한다는 분석은 자산 가치 측면의 하방 지지를 제공한다. DPS 700원으로 배당수익률이 코스닥 미디어 업종 평균을 큰 폭 상회해 배당 수취 투자자의 관심을 끌고 있다. 이익 회복 흐름이 지속된다면 주주환원 정책 강화(배당 확대·자사주 매입) 여지가 존재하며, 이는 자본 효율성 관점에서 긍정적 신호가 될 수 있다.",
-    "en": "The share price trades well below BPS, and reported net cash approaching or exceeding market capitalization provides a valuation floor from an asset perspective. A DPS of KRW 700 generates a dividend yield that materially surpasses the KOSDAQ media sector average, sustaining income-oriented investor interest. Should the earnings recovery persist, there is scope for enhanced shareholder return policies (increased dividends or buybacks), which would be a positive signal from a capital efficiency standpoint."
+    "ko": "종속기업 매각을 통해 미디어렙 본업과 플랫폼 사업에 자원을 집중하는 구조로 재편됐다. 최근에는 취득한 자사주 일부를 소각하기로 결정하며 주주환원 확대 움직임이 시작된 것으로 전해진다.",
+    "en": "Through the divestiture of a subsidiary, the company has restructured to concentrate resources on its core media rep and platform businesses. Recently, it reportedly decided to retire a portion of acquired treasury shares, marking the start of expanded shareholder return efforts."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출·마진 하강 추세와 회복 속도 불확실성",
-    "en": "Sustained Revenue & Margin Decline with Uncertain Recovery Pace"
+    "ko": "광고 업황 민감성",
+    "en": "Sensitivity to Advertising Market Conditions"
    },
    "body": {
-    "ko": "매출액이 2022년 1,524억원에서 2025년 1,179억원으로 4년간 지속 감소했으며, 영업이익률도 21.7%에서 10.4%로 절반 수준으로 하락했다. 광고 업황 회복이 더딘 환경에서 2026년 매출 성장률이 한 자릿수 초반에 그칠 것이라는 시장 전망은 외형 정상화의 한계를 시사한다. 대형 광고주의 예산 집행 재개가 대외 경기 변수에 좌우되는 구조는 회복 모멘텀의 지속성을 불확실하게 만든다.",
-    "en": "Revenue declined steadily from KRW 152.4 billion in 2022 to KRW 117.9 billion in 2025, while operating margin halved from 21.7% to 10.4%. Market consensus projecting low single-digit revenue growth in 2026 amid a slow ad market recovery suggests limited near-term scope for top-line normalization. The reliance of recovery momentum on major advertisers resuming budget execution—itself dependent on macro conditions—introduces persistent uncertainty."
+    "ko": "광고 산업은 경기 변동에 민감하게 반응하는 대표적 업종으로, 전통적인 디지털 배너·검색광고 부문은 여전히 부진한 업황의 영향을 받고 있다. 증권사 리포트에서는 디지털 부문의 역성장 추세가 이어질 것으로 전망하기도 했다. 경기 둔화가 심화될 경우 광고주의 예산 축소로 이어질 수 있다.",
+    "en": "The advertising industry is highly sensitive to economic cycles, and traditional digital banner and search advertising segments continue to face soft demand. Some brokerage reports have projected continued year-over-year decline in the digital segment. A deeper economic slowdown could lead advertisers to cut budgets further."
    }
   },
   {
    "title": {
-    "ko": "디지털광고 부문 역성장과 경쟁 심화",
-    "en": "Digital Advertising Segment Contraction & Intensifying Competition"
+    "ko": "경쟁 심화",
+    "en": "Intensifying Competition"
    },
    "body": {
-    "ko": "2025년 하반기부터 플랫폼(DOOH) 부문이 25% 이상 성장한 반면 디지털광고 부문은 오히려 마이너스 성장을 보이는 양극화가 발생했다. 구글·메타 등 글로벌 플랫폼의 직접 영업 확대와 네이버·카카오의 DOOH 시장 진입은 취급고 점유율에 압박을 가하는 구조적 요인이다. KT 그룹 지배구조 재편이 진행 중인 상황에서 모회사의 전략적 우선순위 변화가 나스미디어의 사업 방향에 미칠 영향도 지속 모니터링이 필요하다.",
-    "en": "Since the second half of 2025, a divergence has emerged: the Platform (DOOH) segment grew 25%+ while the Digital Advertising segment contracted, creating an internal structural imbalance. Expanding direct sales by global platforms (Google, Meta) and the entry of domestic tech giants (Naver, Kakao) into DOOH constitute structural competitive headwinds on ad volume market share. Ongoing KT Group restructuring warrants continued monitoring, as shifts in the parent's strategic priorities could affect KT nasmedia's business direction."
+    "ko": "SK텔레콤 계열 인크로스는 통신 인프라와 AI 기술을 결합한 커머스 사업으로, CJ ENM 계열 메조미디어는 콘텐츠·글로벌 제휴를 통해 각각 차별화 전략을 펴고 있다. 과거 인크로스는 영업이익률 측면에서 나스미디어를 상회한 시기도 있었던 만큼, 수익성 경쟁에서 뒤처질 가능성을 배제할 수 없다.",
+    "en": "SK Telecom-affiliated Incross is pursuing differentiation through commerce ventures combining telecom infrastructure and AI technology, while CJ ENM-affiliated Mezzomedia leverages content and global partnerships. Incross has at times posted a higher operating margin than Nasmedia, so the possibility of falling behind in profitability competition cannot be ruled out."
    }
   },
   {
    "title": {
-    "ko": "순이익 변동성과 비영업 손익의 불규칙성",
-    "en": "Net Income Volatility & Irregular Non-Operating Items"
+    "ko": "일회성 요인 재발 가능성",
+    "en": "Possible Recurrence of One-Time Items"
    },
    "body": {
-    "ko": "영업이익이 흑자임에도 2025년 2·4분기 지배주주 순이익이 각각 -4.7억원·-5.9억원으로 마이너스를 기록하는 등 분기 단위 순이익 변동성이 높다. 2024년에는 일회성 대손 및 자회사 관련 손상으로 적자 전환한 전례가 있어, 비영업 손익의 불규칙성은 이익 예측 가시성을 낮춘다. 플레이디 매각 후에도 잔여 지분(23.46%)을 보유 중이므로, 관련 지분법 손익이 하방 리스크 요인으로 남아 있다.",
-    "en": "Despite positive operating profit, net income attributable to controlling shareholders turned negative in 2Q25 (-KRW 0.5B) and 4Q25 (-KRW 0.6B), indicating significant quarterly bottom-line volatility. The 2024 swing to net loss—driven by one-time bad debts and subsidiary impairments—illustrates that non-operating items can be materially disruptive to earnings, reducing predictability. A residual 23.46% stake in PlayD remains post-divestiture, keeping equity-method earnings risk on the table."
+    "ko": "2024년에는 종속기업 매각 관련 평가손실 및 손상차손 등 일회성 비용이 반영돼 순손실을 기록한 바 있다. 향후 추가적인 사업 재편이나 자회사·투자 관련 손상차손이 발생할 경우 이익 개선 흐름에 변수가 될 수 있다.",
+    "en": "In 2024, one-time costs including valuation losses and impairment charges related to a subsidiary divestiture led to a net loss. Any future business restructuring or additional impairment related to subsidiaries or investments could disrupt the ongoing earnings improvement trend."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "광고 경기 민감도 및 매크로 리스크",
-    "en": "Advertising Cycle Sensitivity & Macro Risk"
+    "ko": "매체 계약 의존도",
+    "en": "Dependence on Media Contracts"
    },
    "body": {
-    "ko": "미디어렙 사업은 광고주의 마케팅 예산 결정에 직접 연동돼 경기 변동에 취약하다. 국내외 경기 침체, 미·중 무역 갈등 심화, 국내 소비 위축 등의 요인이 대형 광고주의 집행 축소로 이어지면 취급고와 수수료 수익이 빠르게 감소할 수 있다. 특히 2025년 하반기 대외 불확실성 확대가 일부 광고주 집행 감소로 나타난 바 있어, 경기 회복 지연 시 재발 가능성을 배제할 수 없다.",
-    "en": "The media rep business is directly tied to advertiser marketing budget decisions, making it inherently cyclical. A domestic or global downturn, escalating US-China trade tensions, or weakening domestic consumption could cause major advertisers to cut spending, rapidly reducing ad volumes handled and commission revenues. This sensitivity was evident in late 2025, when macro uncertainty contributed to reduced spending from select advertisers, and could recur if recovery stalls."
+    "ko": "OTT 독점 판매권이나 지하철 광고 운영권 등 주요 매체 계약이 갱신되지 않거나 조건이 불리하게 변경될 경우 매출 기반에 영향을 줄 수 있다. 특정 대형 플랫폼(넷플릭스, 쿠팡플레이 등)에 대한 의존도가 높아질수록 이러한 리스크는 커진다.",
+    "en": "If key media contracts such as OTT exclusive sales rights or subway advertising operating rights are not renewed or terms change unfavorably, the revenue base could be affected. This risk grows as reliance on specific large platforms such as Netflix and Coupang Play increases."
    }
   },
   {
    "cat": {
-    "ko": "KT 그룹 지배구조 변화 리스크",
-    "en": "KT Group Governance & Structural Change Risk"
+    "ko": "모회사 KT그룹 정책 리스크",
+    "en": "Parent Company KT Group Policy Risk"
    },
    "body": {
-    "ko": "KT가 AICT 기업 전환 과정에서 비핵심 계열사 정리를 지속하고 있어, 케이티나스미디어에 대한 추가 지분 변동이나 합병·분할 등의 구조 변화 가능성을 완전히 배제하기 어렵다. 모회사 KT가 약 43% 지분을 보유한 최대주주로서 전략적 의사결정이 소액주주 이익과 상충할 수 있다. 모회사의 그룹 광고 물량 배분 정책이나 AI 사업 시너지 우선순위 변화도 케이티나스미디어의 사업 기회에 영향을 미칠 수 있다.",
-    "en": "As KT advances its AICT transformation, ongoing non-core asset divestitures make it difficult to entirely rule out additional structural changes at KT nasmedia, such as stake reductions or corporate restructuring. With KT holding approximately 43% as the controlling shareholder, strategic decisions could conflict with minority shareholder interests. Changes in the parent group's intragroup ad volume allocation policies or AI business synergy priorities could also affect KT nasmedia's business opportunities."
+    "ko": "KT가 최대주주로서 그룹 차원의 사업 재편 방향에 따라 지배구조나 자회사 관계가 변동될 가능성이 있다. 과거 자회사 플레이디 매각 사례처럼 그룹 전략에 따른 구조 변화가 재차 발생할 수 있다.",
+    "en": "As KT holds the largest ownership stake, group-level business restructuring decisions could affect governance structure or subsidiary relationships. As seen with the past divestiture of subsidiary PLAYD, further structural changes driven by group strategy could recur."
    }
   },
   {
    "cat": {
-    "ko": "글로벌 플랫폼 직접 영업 및 기술 대체 위험",
-    "en": "Global Platform Direct Sales & Technology Disintermediation Risk"
+    "ko": "경기 민감성에 따른 실적 변동성",
+    "en": "Earnings Volatility from Economic Sensitivity"
    },
    "body": {
-    "ko": "구글·메타 등 글로벌 플랫폼의 국내 광고주 직접 영업 확대는 미디어렙의 매개 역할을 점진적으로 축소시킬 수 있다. 프로그래매틱 광고와 AI 자동화 기술의 발전으로 광고주·매체사 간 직거래가 증가하는 구조적 흐름이 중장기적으로 미디어렙 사업 모델 자체에 압력을 가한다. 케이티나스미디어가 AI·Ad Tech 내재화를 통해 이에 대응하고 있으나, 기술 전환의 성공 여부와 수익화 속도는 아직 시장 검증이 필요한 단계다.",
-    "en": "Expanding direct sales efforts by global platforms (Google, Meta) to domestic advertisers risk gradually diminishing the intermediary role of media reps. The structural trend toward direct advertiser-publisher transactions enabled by programmatic advertising and AI automation exerts medium-to-long-term pressure on the media rep business model itself. While KT nasmedia is pursuing AI and Ad Tech internalization to counter this, the success and monetization speed of this technological transition remain unverified by the market."
+    "ko": "광고 예산은 기업 마케팅 지출과 직결되어 경기 둔화 국면에서 큰 폭으로 축소될 수 있다. 분기별 실적의 계절성(광고 성수기·비수기)도 상존해 단기 실적 변동성이 존재한다.",
+    "en": "Advertising budgets are directly tied to corporate marketing spending and can contract sharply during economic downturns. Seasonal patterns in advertising demand (peak versus off-peak periods) also create quarter-to-quarter earnings volatility."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 초",
-    "en": "Early August 2026"
+    "ko": "2026년 9월 중",
+    "en": "September 2026"
    },
    "what": {
-    "ko": "2026년 2분기 잠정 실적 발표: 1분기의 수익성 개선 추세가 계절적 비수기인 2분기에도 지속되는지, 디지털광고 부문의 역성장이 반전되는지 여부가 연간 전망의 관건.",
-    "en": "Release of 2Q26 preliminary results: confirm whether the 1Q26 profitability recovery trend persists through the seasonally soft second quarter, and whether the Digital Advertising segment's contraction is reversing—both are key determinants of full-year guidance."
+    "ko": "'nap dsp plus' 서비스 정식 출시 여부와 초기 광고주 반응을 확인할 필요가 있다. DSP 기반 영상매체 통합 구매 확대 전략의 실행력을 가늠할 수 있는 지표다.",
+    "en": "Confirmation of the official launch of the 'nap dsp plus' service and initial advertiser response should be checked, as this will gauge execution of the DSP-based integrated video media buying strategy."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "H2 2026"
+    "ko": "2026년 11월경(3분기 실적 발표)",
+    "en": "Around November 2026 (Q3 earnings release)"
    },
    "what": {
-    "ko": "서울 지하철 DOOH 신규 매체의 수익화 성과 검증: 2025년 2월 수주한 지하철 1·2·5·7·8호선 사업권의 실제 취급고 기여가 연간 실적에서 유의미하게 반영되는지 확인.",
-    "en": "Verify monetization of newly won Seoul Metro DOOH concessions: assess whether the February 2025-won concessions for Metro lines 1/2/5/7/8 are contributing meaningfully to full-year ad volumes and whether the 50%+ YoY growth rate in outdoor is being sustained."
+    "ko": "3분기는 광고 비수기로 영업이익률이 2분기 대비 낮아질 것으로 증권사가 전망한 바 있어, 실제 결과가 이 전망에 부합하는지 확인이 필요하다.",
+    "en": "Brokerage estimates project a lower operating margin in Q3 versus Q2 due to seasonally weak advertising demand; actual results should be checked against this projection."
    }
   },
   {
    "when": {
-    "ko": "2026년 9~10월",
-    "en": "September–October 2026"
+    "ko": "2026년 4분기 실적 발표 시점",
+    "en": "Q4 2026 earnings release"
    },
    "what": {
-    "ko": "카카오모빌리티 MOU 기반 DOOH 프로그래매틱 연동 상용화 여부: 2025년 11월 체결한 MOU의 실제 서비스 출시 일정 및 초기 거래 규모 공개 여부를 점검.",
-    "en": "Commercialization progress of the Kakao Mobility DOOH programmatic integration: monitor whether the November 2025 MOU has progressed to a live service launch and whether initial transaction volumes have been disclosed."
+    "ko": "광고 성수기와 커머스 CPS 증가에 따른 영업이익 개선 전망이 실제로 확인되는지, 그리고 연간 이익 회복이 지속되는지를 점검할 시점이다.",
+    "en": "This will be a point to check whether the anticipated operating profit improvement from the advertising peak season and rising commerce CPS materializes, and whether the annual earnings recovery continues."
    }
   },
   {
    "when": {
-    "ko": "2027년 2월경 (2026년 연간 실적 발표)",
-    "en": "Circa February 2027 (FY2026 Earnings Release)"
+    "ko": "향후 주주환원 정책 발표 시",
+    "en": "Upon future shareholder return policy announcements"
    },
    "what": {
-    "ko": "2026년 연간 영업이익률 및 DPS 결정 확인: 증권사가 전망한 3~4%p 영업이익률 개선이 실현됐는지, 배당 정책(DPS 유지·확대 여부)을 통해 주주환원 의지를 재검증.",
-    "en": "Confirm FY2026 operating margin and DPS decision: verify whether the 3–4pp OPM improvement forecast by sell-side analysts materialized, and reassess shareholder return commitment via the dividend policy (whether DPS is maintained or increased)."
-   }
-  },
-  {
-   "when": {
-    "ko": "수시 모니터링",
-    "en": "Ongoing"
-   },
-   "what": {
-    "ko": "KT 그룹 지배구조 재편 동향 및 잔여 플레이디 지분 관련 공시: KT의 추가 자회사 정리 또는 케이티나스미디어 지분 변동, 플레이디 잔여 지분(23.46%) 처리 공시 발생 시 전략적 영향을 즉시 점검.",
-    "en": "Monitor KT Group restructuring developments and PlayD residual stake disclosures: should additional KT subsidiary divestitures, changes to KT's stake in KT nasmedia, or disposal of the residual 23.46% PlayD stake be announced, immediately assess the strategic implications."
+    "ko": "자사주 소각 확대나 배당 정책 변화가 추가로 공시되는지 확인할 필요가 있다.",
+    "en": "Monitor whether further treasury share retirement or changes to dividend policy are disclosed."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "케이티나스미디어는 2025년 플레이디·태국법인 매각을 통해 사업 구조를 국내 디지털 미디어렙 본업으로 단순화하고, Big3 OTT 통합 미디어렙이라는 희소성 높은 포지션과 서울 지하철 DOOH 신규 수주를 기반으로 2026년 수익성 회복에 나서고 있다. 2026년 1분기 매출 +12.5%·영업이익 +36.5%(YoY)는 구조 개편 효과가 실적에 가시화되기 시작했음을 보여주는 긍정적 신호다. 그러나 매출액은 2022년 정점 대비 축소 흐름이 지속되고 있고, 영업이익률도 역사적 고점의 절반 수준에 머물러 완전한 수익성 정상화까지는 시간이 필요하다. 글로벌 플랫폼의 직접 영업 확대, 더딘 광고 경기 회복, KT 그룹 지배구조 변화 가능성은 중기 위험 요인으로 상존한다. 주당순자산(BPS 16,894원) 대비 현저한 주가 할인과 DPS 700원의 높은 배당 매력은 자산·소득 관점의 지속적인 관심을 유지시키나, 이익 회복의 지속성과 성장 가시성이 밸류에이션 재평가의 전제 조건임을 유의해야 한다.",
-   "en": "KT nasmedia successfully simplified its business structure in 2025 via the PlayD and Thailand divestitures, refocusing entirely on its core digital media rep business, and is pursuing a 2026 profitability recovery anchored by its position as the sole integrated media rep for South Korea's Big3 OTT platforms and its newly won Seoul Metro DOOH concessions. The 1Q26 results—revenue +12.5% and operating profit +36.5% YoY—provide encouraging early evidence that restructuring benefits are materializing in financial metrics. Nevertheless, revenue has trended below 2022 peak levels and operating margin remains roughly half its historical highs, suggesting full normalization still requires time. Global platform direct sales expansion, gradual domestic ad market recovery, and potential KT Group governance changes remain medium-term risk factors. A meaningful discount to BPS (KRW 16,894) and a generous DPS (KRW 700) sustain asset-value and income-oriented interest, but confirmed sustainability of earnings recovery and enhanced growth visibility remain prerequisites for a meaningful valuation re-rating."
+   "ko": "KT나스미디어는 2022~2024년 매출과 이익이 축소되는 흐름을 겪은 뒤, 2025년 흑자 전환을 시작으로 2026년 들어 분기별 실적 개선이 이어지는 국면에 있다. 이 개선은 전통적인 디지털 광고 대행보다는 커머스 CPS 광고와 OTT 관련 취급고 증가가 이끌고 있다는 점이 특징이다. 자회사 플레이디 매각을 통한 사업 재편, 쿠팡플레이 광고 독점권 확보, 지하철 옥외광고 운영권 확대 등 구조적 변화가 동시에 진행되고 있다. 다만 광고 산업 자체가 경기에 민감하고 SK텔레콤·CJ ENM 계열 경쟁사와의 점유율 경쟁이 지속되는 만큼, 이익 회복의 지속성과 산업 내 지위 유지 여부가 향후 확인해야 할 핵심 변수로 남아 있다. 증권사들은 실적 개선을 근거로 목표주가를 상향 조정하는 리포트를 잇달아 내놓고 있으나, 이는 각 증권사의 독립적인 판단이며 투자 결정은 독자 개인의 분석과 판단에 따라야 한다.",
+   "en": "After a period of declining revenue and profit from 2022 through 2024, KT Nasmedia returned to profitability in 2025 and has continued to show quarterly earnings improvement into 2026. This recovery is notably driven by commerce CPS advertising and rising OTT-related transaction volume rather than traditional digital ad brokerage. Structural changes are occurring simultaneously, including the divestiture of subsidiary PLAYD, securing exclusive advertising rights for Coupang Play, and expanding subway out-of-home advertising operating rights. However, given that the advertising industry remains cyclical and competition with SK Telecom- and CJ ENM-affiliated rivals continues, the durability of the earnings recovery and the company's ability to maintain its industry position remain key variables to monitor going forward. Several brokerages have raised target prices citing earnings improvement, but these represent each firm's independent assessment, and investment decisions should rely on readers' own analysis and judgment."
   }
  },
  "sources": [
-  "https://samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&fileName=2010%2F2026052116340983K_02_02.pdf&inlineYn=Y&saveKey=research.pdf",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=663274",
-  "https://www.eugenefn.com/common/files/amail/20250523_089600_jongsun.park_2383.pdf",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Finance.asp?pGB=5&gicode=A089600&cID=21&MenuYn=N&ReportGB=B&NewMenuID=103&stkGb=701",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A089600",
-  "https://www.nasmedia.co.kr/%ED%88%AC%EC%9E%90%EC%A0%95%EB%B3%B4/ir-%EC%9E%90%EB%A3%8C%EC%8B%A4/",
   "https://kbthink.com/securities-view.html?docId=20260329170345047K",
-  "https://m.thinkpool.com/item/089600",
+  "https://www.newspim.com/news/view/20260630000170",
+  "https://www.smedaily.co.kr/news/articleView.html?idxno=360408",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=690706",
+  "https://www.ajunews.com/view/20260821080806212",
+  "https://m.irgo.co.kr/IR-COMP/089600/-IR-PAGE",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=663274",
+  "https://www.nasmedia.co.kr/%ED%88%AC%EC%9E%90%EC%A0%95%EB%B3%B4/ir-%EC%9E%90%EB%A3%8C%EC%8B%A4/",
+  "https://kbthink.com/securities-view.html?docId=20260507200001930K",
   "https://comp.wisereport.co.kr/company/c1080001.aspx?cmp_cd=089600&cn=",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A089600&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "https://recruit.kt.com/interview/18",
-  "https://www.jobkorea.co.kr/Super/nasmedia",
-  "https://www.jobkorea.co.kr/company/1384163",
-  "https://www.fntimes.com/html/view.php?ud=2025111711524228407fd637f543_18",
-  "https://www.kakaomobility.com/newsroom/detail/%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%AA%A8%EB%B9%8C%EB%A6%AC%ED%8B%B0-%EB%AF%B8%EB%94%94%EC%96%B4%EB%A0%99-3%EC%82%AC%EC%99%80-DOOH-%EC%97%B0%EB%8F%99-MOU%EA%B4%91%EA%B3%A0%ED%95%99%ED%9A%8C-%EC%A3%BC%EC%B5%9C-%EB%94%94%EC%A7%80%ED%84%B8-%ED%98%81%EC%8B%A0%EC%83%81-%EC%88%98%EC%83%81-336",
-  "https://kind.krx.co.kr/external/2025/08/14/003002/20250814009329/11012.htm",
-  "https://www.nasmedia.co.kr/en/",
-  "https://www.nasmedia.co.kr/wp-content/uploads/2025/03/%EB%82%98%EC%8A%A4%EB%AF%B8%EB%94%94%EC%96%B4%EC%82%AC%EC%97%85%EB%B3%B4%EA%B3%A0%EC%84%9C2025.03.20-1.pdf"
+  "https://www.nasmedia.co.kr/%EC%A0%95%EA%B8%B0%EB%B3%B4%EA%B3%A0%EC%84%9C/2025%EB%85%84-12%EC%9B%94-2026-%EB%94%94%EC%A7%80%ED%84%B8-%EB%AF%B8%EB%94%94%EC%96%B4-%EB%A7%88%EC%BC%80%ED%8C%85-%EC%A0%84%EB%A7%9D/",
+  "https://www.nasmedia.co.kr/%EB%B3%B4%EB%8F%84%EC%9E%90%EB%A3%8C/2026%EB%85%84-%EA%B4%91%EA%B3%A0-%ED%8A%B8%EB%A0%8C%EB%93%9C%EB%8A%94-%EC%9D%B8%EC%95%B1-%EC%A0%84%EB%9E%B5-%EA%B2%BD%ED%97%98-%EB%A3%A8%ED%94%84kt%EB%82%98%EC%8A%A4%EB%AF%B8/",
+  "https://www.nasmedia.co.kr/%EB%82%98%EC%8A%A4%EB%A6%AC%ED%8F%AC%ED%8A%B8/%EC%A0%95%EA%B8%B0%EB%B3%B4%EA%B3%A0%EC%84%9C/",
+  "https://www.nasmedia.co.kr/wp-content/uploads/2024/11/2025%EB%85%84-%EB%94%94%EC%A7%80%ED%84%B8-%EB%AF%B8%EB%94%94%EC%96%B4-%EB%A7%88%EC%BC%80%ED%8C%85-%EC%A0%84%EB%A7%9D_nasmedia_1127F.pdf",
+  "https://www.nasmedia.co.kr/%EC%A0%95%EA%B8%B0%EB%B3%B4%EA%B3%A0%EC%84%9C/2026%EB%85%84-2%EC%9B%94-media-market-issue/",
+  "https://www.nasmedia.co.kr/%ED%9A%8C%EC%82%AC%EC%86%8C%EA%B0%9C/%EB%B3%B4%EB%8F%84%EC%9E%90%EB%A3%8C/",
+  "http://www.dhns.co.kr/news/articleView.html?idxno=344215",
+  "https://www.joongangenews.com/news/articleView.html?idxno=401600"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "089600",
  "name": "KT나스미디어",
  "name_en": "kt nasmedia Co., Ltd.",
@@ -233,11 +223,11 @@
   "미디어·엔터"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:58",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:08",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -251,7 +241,7 @@
     "equity_nci": 0,
     "liab": 238575531491,
     "cfo": 35289833979,
-    "eps_basic": null,
+    "eps_basic": 1113,
     "opm": 10.4,
     "roe": 3.3,
     "debt_ratio": 118.3
@@ -338,25 +328,30 @@
    }
   ],
   "valuation": {
-   "price": 12360,
-   "mcap": 0.143,
+   "price": 13060,
+   "mcap": 0.1511,
    "shares": 11568163,
    "total_shares": 11568163,
-   "wavg_shares": null,
-   "per": 19.104,
-   "eps": 647,
-   "pbr": 0.7316,
-   "bps": 16894,
+   "wavg_shares": 11254341,
+   "per": null,
+   "eps": null,
+   "pbr": null,
+   "bps": null,
    "roe_ttm": 3.8,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": 7490740002,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.69,
+   "eps_src": null,
+   "pbr_krx": 0.73,
    "bps_krx": 17839.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 700.0,
-   "div": 5.66
+   "div": 5.36,
+   "hidden": {
+    "eps": "mismatch",
+    "bps": "mismatch"
+   }
   }
  }
 }

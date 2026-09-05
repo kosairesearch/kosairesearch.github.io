@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "적자 충격 후 수주 재개 — 실적 정상화 경로를 타진",
-  "en": "Testing the Recovery Path After Record Losses: Order Momentum Returns"
+  "ko": "적자전환 속 액침냉각 신사업 주목",
+  "en": "Loss-Making Turn Meets an Emerging Immersion-Cooling Bet"
  },
  "lead": {
-  "ko": "전기차 캐즘·반도체 투자 둔화·SOC 예산 감소가 동시에 겹친 2025년 연간 영업손실 620억 원의 충격을 딛고, 2026년 1분기 소폭 영업흑자 전환과 PowerCo 스페인 직접 턴키 수주를 발판 삼아 실적 정상화 가능성을 타진 중이다.",
-  "en": "After absorbing a KRW 62B annual operating loss in 2025 — the product of a simultaneous EV slowdown, semiconductor capex freeze, and SOC budget cuts — K Ensol returned to marginal operating profitability in 2026 Q1 and secured a landmark direct turnkey order from PowerCo Battery Spain, opening a cautious path toward earnings normalization."
+  "ko": "반도체·이차전지 클린룸·드라이룸 전문기업 케이엔솔은 2025년 대규모 공사손실로 적자전환했고, 2026년에도 전방 투자 지연이 이어지는 가운데 액침냉각 신사업의 실질적 매출화 여부가 다음 관전 포인트다.",
+  "en": "K Ensol, a specialist in semiconductor cleanrooms and secondary-battery dry rooms, swung to a large loss in 2025 on project cost overruns, and with 2026 client investment still delayed, whether its emerging immersion-cooling business turns into real revenue is the next thing to watch."
  },
  "keypoints": [
   {
-   "ko": "2025년 연간 영업손실 620억·순손실 544억 — 특히 4분기에 영업손실 675억이 집중 발생(일회성 비용 포함 추정)",
-   "en": "Full-year 2025 operating loss of KRW 62B and parent net loss of KRW 54.3B, with KRW 67.5B of operating loss concentrated in Q4 2025, likely including material one-time charges"
+   "ko": "2025년 연결 매출 4,635억원, 영업손실 620억원으로 전년 흑자(264억원)에서 적자전환",
+   "en": "2025 consolidated revenue was KRW 463.5bn with an operating loss of KRW 62.0bn, swinging from the prior year's operating profit of KRW 26.4bn"
   },
   {
-   "ko": "2026년 1분기 매출 1,152억·영업이익 58억(OPM 0.5%)으로 흑자 전환, 마진 회복의 첫 단서 확보",
-   "en": "2026 Q1 delivered KRW 115.2B in revenue and KRW 5.8B operating profit (OPM 0.5%), returning to the black for the first time and providing early evidence of recovery"
+   "ko": "2025년 4분기 단독 영업손실 675억원으로 주요 프로젝트 원가율 상승과 대손상각비 인식이 주된 원인",
+   "en": "The fourth quarter of 2025 alone posted an operating loss of KRW 67.5bn, driven mainly by rising cost ratios on key projects and bad-debt provisioning"
   },
   {
-   "ko": "2025년 5월 PowerCo Battery Spain 1,685억 직접 턴키 수주 — 국내 드라이룸 업계 최초의 글로벌 완성차 OEM 직접 계약",
-   "en": "May 2025 direct turnkey contract with PowerCo Battery Spain (Volkswagen subsidiary) for KRW 168.5B — the first such direct OEM order by a Korean dry room specialist"
+   "ko": "2026년 1분기는 반도체·디스플레이 고객사 투자 지연, 이차전지 드라이룸도 전기차 수요 정체로 매출·이익 동반 축소",
+   "en": "In the first quarter of 2026 both revenue and profit contracted as semiconductor/display clients delayed investment and secondary-battery dry-room demand stayed weak amid EV demand stagnation"
   },
   {
-   "ko": "AI·HBM 투자 재개로 반도체 클린룸 수주 회복 기대 vs. 전기차 캐즘 장기화에 따른 드라이룸 수주 부진 지속",
-   "en": "Semiconductor cleanroom demand recovering on AI/HBM capex momentum, partially offset by ongoing EV demand weakness that continues to suppress dry room order intake"
+   "ko": "스페인 서브머(Submer)와 협력한 데이터센터 액침냉각 사업은 아직 솔루션 소개·테스트 단계로, 실질 매출 반영은 확인되지 않음",
+   "en": "The data-center immersion-cooling business, pursued with Spain's Submer, remains at the solution-introduction/testing stage, with no confirmed material revenue yet"
   },
   {
-   "ko": "글로벌 액침냉각 1위 서브머(Submer)와 협력한 AI 데이터센터 냉각 사업이 잠재 성장축이나, 상용화까지는 추가 시간 필요",
-   "en": "Partnership with Submer — the global immersion cooling leader — represents a credible longer-term growth option for AI data center thermal management, though commercial scale-up remains a medium-term milestone"
+   "ko": "자본총계가 2024년 1,859억원에서 2025년 1,239억원으로 줄고 부채비율은 123.6%에서 212.9%로 상승",
+   "en": "Total equity fell from KRW 185.9bn in 2024 to KRW 123.9bn in 2025, while the debt-to-equity ratio rose from 123.6% to 212.9%"
   }
  ],
  "business": {
-  "ko": "케이엔솔(구 원방테크)은 1989년 설립된 공조 및 클린룸 엔지니어링 전문 기업으로, 2020년 코스닥에 상장하고 2023년 사명을 변경하며 글로벌 엔지니어링 솔루션 기업으로 재포지셔닝하였다. 핵심 사업은 산업용 클린룸(반도체·디스플레이), 드라이룸(2차전지), 바이오 클린룸, 교량 건설 등 4개 영역으로 구성된다. 2025년 1분기 기준 클린룸이 매출의 약 50%, 드라이룸이 약 33%를 차지하며 양대 축을 형성하고, 나머지를 바이오·교량 등이 구성한다. 클린룸 부문의 핵심 고객사는 삼성전자와 SK하이닉스이며, 반도체 팹 증설 사이클에 따라 수주가 집중된다. 드라이룸 부문에서는 LG에너지솔루션·SK온·삼성SDI 등 국내 배터리 3사와 그 북미·유럽 합작법인 프로젝트를 수행해 왔으며, 미국·헝가리·폴란드 등에 현지 법인을 운영 중이다. 노점온도 -60℃ 구현·30% 이상 에너지 절감 기술 등의 초저노점 드라이룸 기술이 핵심 경쟁력이며, 이는 전고체 배터리 양산 환경에서도 차별적 우위가 될 수 있다. 2025년 5월에는 폭스바겐 배터리 자회사 PowerCo Battery Spain과 1,685억 원 규모의 클린룸·드라이룸 턴키 계약을 체결, 국내 업계 최초의 글로벌 완성차 OEM 직접 수주 레퍼런스를 확보하였다. 신사업으로는 글로벌 액침냉각 선두기업 서브머(Submer)와 협력하여 AI 데이터센터 이머전쿨링 시장에 진입하고 있으며, 바이오 CMO·CDMO 증설 수요에 대응한 GMP 클린룸 사업도 확장 중이다.",
-  "en": "K Ensol (formerly Wonbang Tech) was established in 1989 as a specialist in HVAC and cleanroom engineering, listed on KOSDAQ in September 2020, and rebranded in 2023 to reposition itself as a global engineering solutions company. Its four core business lines are industrial cleanrooms (semiconductor and display), dry rooms (secondary batteries), bio cleanrooms, and bridge construction. Based on 2025 Q1 data, industrial cleanrooms account for roughly 50% of revenue and dry rooms roughly 33%, with the remainder from bio and bridge segments. Key cleanroom customers are Samsung Electronics and SK Hynix, whose fab expansion cycles drive concentrated project awards. On the dry room side, the company has executed major projects for the Korean battery cell makers — LGES, SK On, and Samsung SDI — and their overseas JVs, supported by subsidiaries in the US, Hungary, and Poland. The company's proprietary ultra-low dew point technology (−60°C) and over 30% energy efficiency advantage are core differentiators and are seen as potentially critical for solid-state battery manufacturing environments. In May 2025, K Ensol signed a KRW 168.5B direct turnkey contract with PowerCo Battery Spain, a Volkswagen subsidiary — the first such direct OEM engagement in the Korean dry room industry. New growth initiatives include a partnership with Submer, the global leader in single-phase immersion cooling, for AI data center thermal management, alongside an expanding GMP cleanroom business targeting the growing bio CMO and CDMO market."
+  "ko": "케이엔솔은 1989년 설립되어 반도체·디스플레이 등 산업용 클린룸과 이차전지 드라이룸 설계·시공을 주력으로 하는 업체로, 옛 사명은 원방테크였다. 클린룸은 외조기, 시스템 실링, FFU(Fan Filter Unit) 등으로 구성되며 반도체 팹 내부의 초미세 입자를 관리하는 인프라로, 초기 기술자문부터 설계, 시공, 감리, 기자재 구매·검사, 시운전까지 토탈 솔루션을 제공한다. 최대 고객사는 삼성전자와 SK하이닉스이며, 클린룸 산업에서는 경쟁사 신성이엔지와 함께 과점 구조를 형성하고 있다. 드라이룸은 배터리·전해액 등 이차전지 제조 공정에서 온·습도 유지를 위한 필수 인프라로, 국내 배터리 업체들의 북미 진출에 맞춰 해외 사업이 확대되어 왔다. 하나증권이 2024년 7월 제시한 추정 기준으로는 클린룸(반도체)이 매출의 약 61%, 드라이룸이 약 21%, 바이오클린룸이 약 3%, 건설 부문이 약 15%를 차지하는 구조였다. 2019년 삼현에이치 인수를 계기로 교량 건설업에도 진출했으며, 2022년 10월에는 종속회사 원방삼현이 삼현에이치를 흡수합병해 교량거더 산업을 영위하고 있다. 최근에는 바이오 클린룸과 데이터센터 냉동공조·액침냉각 시스템 등으로 사업 영역을 넓히며 다각화를 추진 중이다. 회사는 스스로 2030년 매출 1조 5천억원 달성을 중장기 목표로 제시한 바 있다.",
+  "en": "K Ensol, established in 1989 under its former name Wonbang Tech, specializes in designing and building industrial cleanrooms for semiconductor and display fabs as well as dry rooms for secondary-battery manufacturing. A cleanroom system comprises outside air conditioners, system ceilings and Fan Filter Units (FFUs) that control ultra-fine particles inside semiconductor fabs, and the company provides a total solution spanning early-stage technical consulting, design, construction, supervision, equipment procurement/inspection and commissioning. Its largest customers are Samsung Electronics and SK Hynix, and together with rival Shinsung Enji it forms a duopoly in the domestic cleanroom industry. Dry rooms maintain the temperature and humidity control required for battery and electrolyte manufacturing, and the company's overseas business has expanded alongside Korean battery makers' push into North America. Under estimates presented by Hana Securities in July 2024, cleanroom (semiconductor) accounted for roughly 61% of revenue, dry room about 21%, bio cleanroom about 3%, and construction about 15%. The 2019 acquisition of Samhyeon-H brought the company into bridge construction, and in October 2022 subsidiary Wonbang Samhyeon absorbed Samhyeon-H to operate the bridge-girder business. More recently the company has been diversifying into bio cleanrooms and data-center cooling, including immersion cooling systems. Management has set a longer-term goal of reaching KRW 1.5 trillion in revenue by 2030."
  },
  "earnings": {
-  "ko": "2022년 매출 3,888억 원·영업이익 220억 원(OPM 5.6%)으로 근래 수익성의 정점을 기록한 뒤, 2023년 매출 4,174억 원(+7.4%)으로 소폭 성장했으나 바이오 인력 확충 등 고정비 증가로 영업이익은 185억 원(OPM 4.4%)으로 하락하였다. 2024년은 2023년 역대 최대 수주 잔고(약 7,374억 원)가 매출로 인식되며 연결 매출 5,792억 원(+38.8%)으로 도약했고, 영업이익 264억 원(OPM 4.6%)·지배주주 순이익 136억 원을 기록했으나 마진율은 규모 확대에 비해 제한적이었다. 2025년에는 전기차 캐즘으로 인한 드라이룸 수주 급감, 반도체 투자 둔화로 인한 클린룸 매출 감소, SOC 예산 축소에 따른 교량 부문 부진이 동시에 겹치며 매출이 4,635억 원(-20.0%)으로 후퇴하였다. 특히 2025년 4분기에만 영업손실 675억 원이 집중 발생하며 연간 영업손실 620억 원(OPM -13.4%), 지배주주 귀속 순손실 543억 원이라는 이례적 대규모 적자를 기록하였고, 자산손상·미수금 대손 등 일회성 비용이 상당 부분을 차지한 것으로 추정된다. 분기별로 보면 2025년 1·3분기는 각각 영업이익 35억·36억의 소폭 흑자를 달성하였으나, 2분기(-17억)와 4분기(-675억)에 손실이 집중되어 연간 기준을 왜곡하였다. 영업현금흐름도 2022년 +402억에서 2025년 -359억으로 크게 악화되었고, 부채비율은 같은 기간 101.4%에서 212.9%로 급등하며 재무 레버리지가 뚜렷하게 확대되었다. 2026년 1분기에는 매출 1,152억 원·영업이익 58억 원(OPM 0.5%)으로 손실 국면에서 벗어나 소폭 흑자를 회복하였으나, 지배주주 귀속 순이익이 11억 원에 그쳐 마진 회복의 지속성은 향후 분기에서 추가 검증이 필요하다.",
-  "en": "K Ensol posted a near-term profitability peak in 2022 with revenue of KRW 388.8B and operating profit of KRW 22.0B (OPM 5.6%). In 2023, revenue grew modestly to KRW 417.4B (+7.4%) but operating profit slipped to KRW 18.5B (OPM 4.4%) as the company expanded its bio cleanroom workforce ahead of anticipated orders. Revenue surged to KRW 579.2B (+38.8%) in 2024 as the record 2023 order backlog was recognized into revenue, lifting operating profit to KRW 26.4B (OPM 4.6%) and parent net profit to KRW 13.6B, though margin improvement remained limited relative to the revenue scale-up. In 2025, a triple headwind — the EV slowdown depressing dry room orders, semiconductor investment deceleration cutting cleanroom revenue, and SOC budget cuts hurting the bridge segment — drove revenue down 20.0% to KRW 463.5B. Critically, Q4 2025 alone recorded an operating loss of KRW 67.5B, driving the full-year operating loss to KRW 62.0B (OPM −13.4%) and a parent net loss of KRW 54.3B, with one-time charges such as asset impairments and bad debt provisions estimated to be significant contributors. Intra-year, Q1 and Q3 of 2025 each maintained marginal profitability (operating profit of KRW 3.5B and KRW 3.6B respectively), underscoring that the Q4 loss was highly concentrated and likely non-recurring in part. Operating cash flow deteriorated from +KRW 40.2B in 2022 to −KRW 35.9B in 2025, while the debt ratio climbed from 101.4% to 212.9% over the same period, marking a significant expansion in financial leverage. The Q1 2026 results showed a return to marginal operating profit of KRW 5.8B (OPM 0.5%) on revenue of KRW 115.2B, but parent net income of only KRW 1.1B signals that the road to normalized margins remains long."
+  "ko": "2025년 연결 매출은 4,635억원으로 전년(5,792억원) 대비 감소했고, 영업손익은 -620억원으로 전년의 264억원 흑자에서 적자전환했으며 순이익도 -544억원(지배주주 -543억원)을 기록했다. 이 같은 급격한 실적 악화의 핵심은 4분기에 집중됐는데, 2025년 4분기 단독 매출은 1,023억원(전년 동기 대비 -30%), 영업손실은 675억원에 달했다. 회사 측은 주요 프로젝트의 원가율 상승에 따른 공사손실 반영과 대손상각비 인식 등 일회성 비용을 이익 감소의 주된 원인으로 설명했다. 분기별로 보면 2025년 2분기 영업손실 16.5억원, 3분기 영업이익 36.3억원(순이익 29.4억원)으로 일시 회복했다가 4분기에 대규모 손실이 발생했고, 2026년 1분기에는 매출 1,152억원, 영업이익 5.8억원, 순이익 1.3억원으로 손익은 미미하게 흑자를 유지했으나 전년 동기 대비로는 매출 -11.1%, 영업이익 -83.7%, 순이익 -97.1% 감소했다. 2026년 2분기에는 매출 1,370억원으로 늘었음에도 영업손실 55.5억원, 순이익 -65.8억원을 기록해 다시 적자로 돌아섰다. 최근 네 개 분기(2025년 3분기~2026년 2분기)를 합산한 지배주주 순이익은 -633억원으로, 연간 기준 적자 기조가 이어지고 있음을 보여준다. 이 과정에서 자본총계는 2024년 1,859억원에서 2025년 1,239억원으로 줄고 부채비율은 123.6%에서 212.9%로 뛰었으며, 영업활동현금흐름도 2025년 -359억원으로 순유출을 기록해 2024년의 +192억원에서 반전됐다.",
+  "en": "Consolidated revenue in 2025 came to KRW 463.5bn, down from KRW 579.2bn in 2024, while operating profit swung to a loss of KRW 62.0bn from a profit of KRW 26.4bn, with net income also turning negative at KRW -54.4bn (KRW -54.3bn attributable to owners). The deterioration was concentrated in the fourth quarter, when standalone revenue fell 30% year on year to KRW 102.3bn and the operating loss reached KRW 67.5bn. Management attributed the profit decline mainly to rising cost ratios on key projects that triggered construction-loss recognition, along with one-off bad-debt allowance charges. On a quarterly basis, the operating loss of KRW 1.65bn in the second quarter of 2025 gave way to a brief recovery with an operating profit of KRW 3.63bn (net income KRW 2.94bn) in the third quarter, before the massive fourth-quarter loss; the first quarter of 2026 stayed marginally profitable with revenue of KRW 115.2bn, operating profit of KRW 0.58bn and net income of KRW 0.13bn, though this represented year-on-year declines of 11.1% in revenue, 83.7% in operating profit and 97.1% in net income. In the second quarter of 2026, revenue rose to KRW 137.0bn but the company reported an operating loss of KRW 5.55bn and a net loss of KRW 6.58bn, tipping back into the red. Summing the most recent four quarters (Q3 2025 through Q2 2026), net income attributable to owners totaled KRW -63.3bn, underscoring a persistent loss trend. Over this period total equity fell from KRW 185.9bn in 2024 to KRW 123.9bn in 2025, the debt-to-equity ratio jumped from 123.6% to 212.9%, and operating cash flow reversed to a net outflow of KRW -35.9bn in 2025 from an inflow of KRW 19.2bn in 2024."
  },
  "industry": {
-  "ko": "케이엔솔이 속한 클린룸·드라이룸 엔지니어링 시장은 반도체·이차전지·바이오 등 첨단 제조업의 설비투자 사이클에 직접 연동된다. 반도체 부문에서는 AI·HBM 수요 확대를 배경으로 삼성전자·SK하이닉스의 국내 팹 증설 투자가 2025~2026년에 재가동되고 있으며, 헤럴드경제(2026년 4월) 등 언론은 반도체 슈퍼사이클의 온기가 협력사로 확산 중이라고 평가하였다. 이차전지 드라이룸 시장은 전기차 캐즘 장기화로 글로벌 배터리 3사의 CAPEX 감축 기조가 이어지고 있으나, 북미 IRA 혜택을 겨냥한 선별적 해외 투자와 유럽 OEM 배터리 내재화 움직임은 발주 기회를 완전히 소멸시키지 않고 있다. AI 데이터센터의 폭발적 성장은 클린룸 시공 수요뿐 아니라 액침냉각 시스템이라는 신규 수요처를 만들어 내고 있으며, 수랭식 냉각시스템의 비중 확대 전망이 이를 뒷받침한다. 바이오 CMO·CDMO 분야는 글로벌 위탁생산 시장 확대에 힘입어 GMP 클린룸 수요가 구조적으로 증가하는 추세로, 케이엔솔의 신성장 수직시장으로 부상하고 있다. 경쟁 구도 측면에서 케이엔솔은 초저노점 드라이룸 기술과 설계·시공·운영의 토탈 솔루션 역량을 앞세워 국내 클린룸·드라이룸 시장에서 선도적 지위를 유지하고 있다. SOC 예산은 2026년 21.1조 원으로 4년 만에 최대치를 회복할 것으로 전망되어, 교량 건설 부문의 업황 반전 변수가 될 수 있다.",
-  "en": "The cleanroom and dry room engineering market in which K Ensol operates is directly tied to capital expenditure cycles in advanced manufacturing — semiconductors, secondary batteries, and biopharmaceuticals. In the semiconductor segment, Samsung Electronics and SK Hynix are resuming domestic fab investment in 2025–2026 on the back of AI and HBM demand, with industry media noting in April 2026 that semiconductor supercycle benefits are beginning to flow through to equipment partners. The secondary battery dry room market remains subdued amid prolonged EV demand weakness and battery maker capex cuts, though selective North American IRA-driven investments and European OEM battery internalization efforts maintain a residual pipeline. The explosive growth of AI data centers is creating demand not only for cleanroom construction but also for liquid cooling solutions, with projections indicating a substantial shift toward liquid-based data center cooling over the medium term. Bio cleanroom demand is rising structurally as global CMO and CDMO capacity expansions accelerate, representing an emerging vertical for K Ensol. Competitively, the company differentiates through its proprietary ultra-low dew point technology and fully integrated design-to-operations capability in the domestic market. Korea's SOC budget is expected to recover to a four-year high of KRW 21.1 trillion in 2026, providing a potential tailwind for the bridge construction segment."
+  "ko": "케이엔솔이 속한 클린룸·드라이룸 인프라 산업은 반도체·디스플레이·이차전지 등 첨단 제조업의 설비투자(CAPEX) 사이클에 직접 연동되는 전형적인 후방 산업이다. fnguide 기업정보는 AI 반도체 수요 증가와 정부의 메가클러스터 지원으로 클린룸 수요 확대가 예상되며, 북미·유럽 배터리 공장 건설로 드라이룸 수주 기회도 지속될 것으로 전망했다. 다만 같은 자료는 2026년 1분기 실적 부진의 배경으로 반도체·디스플레이 고객사의 설비투자 지연과 전기차 수요 정체에 따른 이차전지 투자 지연을 지목해, 업황 회복의 시점이 아직 명확하지 않음을 보여준다. 경쟁구도 측면에서는 클린룸 분야에서 신성이엔지와 과점을 이루고 있으며, 데이터센터 냉각 분야에서는 GST, 인성정보 등이 함께 언급되는 등 경쟁 구도가 넓어지고 있다. 액침냉각을 포함한 데이터센터 열관리 시장은 AI 서버의 발열 밀도 증가에 힘입어 중장기 성장 스토리로 부각되고 있으나, 한 시장 분석 매체는 케이엔솔의 액침냉각 매출이 아직 별도 사업부 숫자로 공시되지 않고 있으며, 회사가 스페인 서브머의 솔루션을 소개하는 단계에 있다고 짚었다. 즉 산업 자체의 성장 잠재력과 개별 기업의 실제 매출 반영 시점 사이에는 시차가 존재하는 상황이다.",
+  "en": "The cleanroom and dry-room infrastructure industry that K Ensol operates in is a classic downstream sector tied directly to the capital-expenditure cycles of advanced manufacturers in semiconductors, displays and secondary batteries. FnGuide's company profile projects that cleanroom demand will expand on the back of rising AI-chip demand and government support for mega semiconductor clusters, and that dry-room order opportunities will continue with battery plant construction in North America and Europe. The same source, however, points to delayed capital spending by semiconductor and display clients, as well as EV demand stagnation weighing on secondary-battery investment, as the reasons behind the weak first-quarter 2026 results, indicating that the timing of an industry-wide recovery remains unclear. In terms of competitive positioning, K Ensol and rival Shinsung Enji form a duopoly in the cleanroom segment, while the competitive field is widening in data-center cooling, where names such as GST and Inzent Information are also frequently mentioned. Data-center thermal management, including immersion cooling, is emerging as a longer-term growth story driven by rising heat density in AI servers, but one market analysis outlet noted that K Ensol's immersion-cooling revenue is not yet disclosed as a separate segment figure and that the company remains at the stage of introducing Submer's solution. In other words, there appears to be a gap between the industry's growth potential and the timing of actual revenue recognition at the individual company level."
  },
  "outlook": {
-  "ko": "2025년 5월 체결된 PowerCo Battery Spain 1,685억 원 계약(계약 기간 2025년 5월~2026년 5월)은 2026년 상반기 매출 인식에 기여하고 있으며, 국내 드라이룸 업계 최초의 글로벌 완성차 OEM 직접 턴키 수주 레퍼런스를 확보함으로써 유럽·북미 다른 OEM(GM, Ford, Stellantis 등)으로의 수주 다각화 가능성이 열렸다. 반도체 클린룸 부문에서는 삼성전자 P4·P5 프로젝트, SK하이닉스 M15X 및 용인 반도체 클러스터 개발 등 중장기 대형 발주가 대기하고 있어, 해당 프로젝트 입찰 결과가 2026년 이후 수주 잔고 회복의 핵심 변수가 된다. 드라이룸 분야는 전기차 캐즘이 지속되고 있으나, 전고체 배터리 양산 준비 과정에서 초저노점(-60℃) 환경 구현 기술이 차별적 경쟁력으로 부각될 수 있다. 액침냉각 사업은 서브머와의 협력 체계를 구축했으나 국내 데이터센터 업체향 샘플 납품·데이터 수집 단계로, 본격 상용 매출 발생까지 추가적인 기술·시장 검증이 필요하다. 교량 건설 부문은 2026년 SOC 예산 확대로 발주 환경이 개선될 것으로 기대된다. 2026년 1분기 소폭 영업흑자가 확인되었으나, 2025년 4분기에 집중된 대규모 일회성 손실 원인 해소와 신규 수주 잔고의 매출 인식이 본격화되는 하반기부터 마진 정상화 여부를 판단할 수 있을 것으로 보인다.",
-  "en": "The KRW 168.5B PowerCo Battery Spain contract (May 2025 – May 2026) is contributing to H1 2026 revenue recognition, and securing this landmark direct OEM reference opens a pathway to pursue further direct orders from other global automakers such as GM, Ford, and Stellantis in Europe and North America. On the semiconductor cleanroom front, major pending projects — Samsung Electronics' P4/P5 fabs, SK Hynix's M15X, and the government-led Yongin semiconductor cluster — represent a substantial multi-year pipeline whose award timing will be the key swing factor for post-2026 order backlog recovery. The dry room segment continues to face EV-related headwinds, though the company's ultra-low dew point (-60°C) technology may emerge as a strategic differentiator as solid-state battery commercialization accelerates globally. The liquid immersion cooling business, built on the Submer partnership, remains in a sample-delivery and data-collection phase with domestic data center clients, and requires further technical and market validation before generating meaningful commercial revenue. The bridge construction unit should benefit from the anticipated recovery in Korea's SOC budget in 2026. While the Q1 2026 return to marginal profitability is encouraging, clarity on the full resolution of Q4 2025 one-time charges and confirmation of sustained order backlog conversion in H2 2026 will be the definitive milestones for establishing a credible recovery narrative."
+  "ko": "회사와 시장은 2025~2026년에 걸쳐 삼성전자 및 SK하이닉스의 반도체 인프라 투자가 집중될 것으로 기대해왔으며, fnguide는 정부 주도의 메가클러스터 지원이 클린룸 수요 확대의 배경이 될 수 있다고 짚었다. 이차전지 부문에서는 과거 현대차-SK온 조지아 합작공장, SK온 서산공장 등 대형 드라이룸 수주 경험이 있으나, 최근에는 전기차 수요 정체로 관련 투자가 지연되는 흐름이 이어지고 있다. 데이터센터 액침냉각은 회사가 스페인 서브머와 협력해 진출을 추진 중인 신사업으로, 시장에서는 AI 서버의 발열 밀도 증가에 따른 성장 스토리로 주목받고 있으나 아직 상용화·매출화 단계에는 이르지 못한 것으로 파악된다. 회사는 반도체·이차전지·바이오 성장에 힘입어 2030년 매출 1조 5천억원 달성을 중장기 목표로 제시한 바 있다. 다만 2025년 4분기의 대규모 공사손실 반영에서 확인되듯, 수주 확대가 실제 이익으로 연결되기까지는 프로젝트별 원가 관리와 대손 리스크가 변수로 작용하고 있다. 2026년 들어서도 반도체·디스플레이 고객사의 투자 지연이 매출 성장의 제약 요인으로 지목되고 있어, 하반기 이후 발주 재개 시점과 원가율 안정화 여부가 향후 실적 흐름을 가를 핵심 변수가 될 것으로 보인다.",
+  "en": "The company and the market have long expected semiconductor infrastructure investment by Samsung Electronics and SK Hynix to concentrate over 2025-2026, and FnGuide has noted that government-led mega-cluster support could underpin expanding cleanroom demand. In the secondary-battery segment, the company has a track record of large dry-room orders such as the Hyundai Motor-SK On joint venture plant in Georgia and SK On's Seosan plant, but related investment has recently been delayed amid EV demand stagnation. Data-center immersion cooling is a new business the company is pursuing in partnership with Spain's Submer, and while the market has highlighted it as a growth story tied to rising heat density in AI servers, it appears not to have reached commercialization or meaningful revenue recognition yet. The company has set a longer-term target of reaching KRW 1.5 trillion in revenue by 2030, supported by growth in semiconductors, secondary batteries and biopharma. However, as the large construction-loss recognition in the fourth quarter of 2025 illustrates, translating order growth into actual profit still depends on project-level cost control and bad-debt risk. Delayed investment by semiconductor and display clients continues to be cited as a constraint on revenue growth in 2026, making the timing of renewed orders and the stabilization of cost ratios in the second half key variables for the earnings trajectory ahead."
  },
  "valuation_comment": {
-  "ko": "2025년 연간 대규모 손실로 인해 헤드라인 EPS는 -4,537원, ROE는 -37.9%로 이익 기반 밸류에이션 지표가 현 시점에서는 의미 있는 참조치가 되기 어렵다. 순자산(BPS 9,562원) 대비 현재 주가는 20% 이상의 프리미엄 구간에서 형성되어 있으며, 이는 2025년 적자로 크게 훼손된 자본 기반에도 불구하고 미래 이익 회복에 대한 기대가 주가에 반영되어 있음을 시사한다. 과거 회사가 이익 정상화 국면에 있을 때 통상 코스닥 기계·장비 업종 평균 멀티플 수준에서 거래된 경향이 있으며, 대형 수주 및 신사업 모멘텀 시기에는 이를 상회하는 프리미엄이 부여된 바 있다. 주당 배당금(DPS 300원) 기준 배당수익률은 코스닥 소형주 전반과 비교해 의미 있는 수준이나, 2025년 대규모 손실 이후 배당 정책의 지속 가능성은 실적 회복 속도와 재무구조 개선 여부에 달려 있어 모니터링이 필요하다. 부채비율이 최근 수년래 최고 수준으로 상승한 점은 재무적 여력 측면에서 중요한 제약 변수이며, 신규 수주 확보 및 증설 투자 가능성을 평가할 때 함께 고려해야 한다.",
-  "en": "With headline EPS at −KRW 4,537 and ROE at −37.9% reflecting the 2025 annual loss, earnings-based valuation multiples are not a meaningful reference at this juncture. The current share price trades at a premium of over 20% to book value per share (BPS KRW 9,562), implying the market is pricing in future earnings recovery despite the significant capital erosion in 2025. Historically, when the company operated in a normalized earnings environment, the stock tended to trade broadly in line with KOSDAQ machinery and equipment sector averages, with premium expansion observed during peak order cycle and new business momentum periods. The indicated DPS of KRW 300 generates a dividend yield that is meaningful relative to the Korean small-cap universe broadly, but the sustainability of that payout following the 2025 mega-loss warrants close monitoring against the pace of earnings and balance sheet recovery. The debt ratio's rise to a multi-year high represents an important financial constraint to factor into assessments of the company's capacity to pursue new large-scale orders and investments."
+  "ko": "2025년 순손실 전환으로 통상적인 이익 대비 주가 비교 지표는 산출이 어려운 상태이며, 이는 최근 실적 부진이 밸류에이션 해석 자체를 제약하고 있음을 보여준다. 주가와 주당 순자산의 관계를 보면 주가가 주당순자산가치에 다소 못 미치는 수준에서 거래되고 있어, 순자산 대비 할인된 구간으로 볼 수 있다. 과거 배당을 지급해온 이력이 있으나 2025년 적자전환에 따라 향후 배당 지속 여부와 규모는 실적 회복 속도에 좌우될 가능성이 있다. 이익 추이만 놓고 보면 2022~2024년 흑자 기조에서 2025년 큰 폭의 적자로 전환한 뒤 2026년 상반기에도 손익이 분기별로 등락하는 불안정한 모습을 보이고 있어, 방향성 판단보다는 손익 안정화 여부를 우선 확인해야 하는 국면이다.",
+  "en": "Because of the swing to a net loss in 2025, conventional profit-based valuation comparisons are difficult to compute, reflecting how the recent earnings weakness itself constrains valuation interpretation. Looking at the relationship between the share price and book value per share, the stock trades somewhat below its per-share net asset value, which can be read as a discount to net assets. The company has a history of paying dividends, but following the 2025 loss, whether and how much it continues to pay going forward may depend on the pace of earnings recovery. Looking purely at the profit trend, the shift from profitability in 2022-2024 to a sizable loss in 2025, followed by an unstable pattern of quarter-to-quarter swings in the first half of 2026, suggests that confirming whether earnings stabilize should take priority over any directional judgment."
  },
  "bull": [
   {
    "title": {
-    "ko": "반도체 슈퍼사이클 재가동 — 클린룸 수주 최대 수혜 후보",
-    "en": "Semiconductor Supercycle Reboot: Prime Beneficiary of Cleanroom Order Recovery"
+    "ko": "반도체 인프라 투자 재개 기대",
+    "en": "Expectations for renewed semiconductor infrastructure investment"
    },
    "body": {
-    "ko": "AI·HBM 수요 확대를 배경으로 삼성전자·SK하이닉스의 국내 팹 증설 투자가 2025~2026년에 재개되고 있으며, 케이엔솔은 이들 고객사의 반도체 클린룸 핵심 공급사 지위를 유지하고 있다. 삼성전자 P4·P5, SK하이닉스 M15X 및 용인 반도체 클러스터 개발 등 대형 발주 파이프라인이 가시화되면 수주 잔고 회복 속도가 빨라질 수 있다. 2024년 연간 매출(5,792억 원) 수준으로의 회귀를 포함한 중기 성장 시나리오를 뒷받침하는 핵심 구조적 동력이다.",
-    "en": "Samsung Electronics and SK Hynix are resuming domestic fab investment in 2025–2026 amid surging AI and HBM demand, and K Ensol retains its established position as a key cleanroom supplier to both. Major pending projects — including Samsung's P4/P5 fabs, SK Hynix's M15X, and the Yongin semiconductor cluster — represent a substantial visible pipeline that could meaningfully accelerate order backlog recovery. This structural tailwind underpins a medium-term recovery scenario that could approach the 2024 revenue peak of KRW 579.2B."
+    "ko": "삼성전자와 SK하이닉스는 케이엔솔의 최대 고객사로, 클린룸 산업에서는 신성이엔지와 함께 과점적 지위를 확보하고 있다. 정부 주도의 메가클러스터 지원과 AI 반도체 수요 증가가 맞물릴 경우 클린룸 발주가 재개될 여지가 있다. 반도체 설비는 신규 라인 증설뿐 아니라 장비 교체·고도화 시에도 클린룸 재공사가 필요해 수요가 반복적으로 발생하는 구조다.",
+    "en": "Samsung Electronics and SK Hynix are K Ensol's largest customers, and the company holds a duopolistic position with Shinsung Enji in the cleanroom industry. If government-led mega-cluster support coincides with rising AI-chip demand, there is room for renewed cleanroom orders. Semiconductor facilities require cleanroom re-construction not only for new line additions but also whenever equipment is replaced or upgraded, creating a recurring source of demand."
    }
   },
   {
    "title": {
-    "ko": "글로벌 OEM 직접 수주 개막 — 수주처 다각화로 성장 기반 확대",
-    "en": "Direct Global OEM Orders: New Chapter of Customer Diversification"
+    "ko": "액침냉각 등 신사업 다각화",
+    "en": "New-business diversification including immersion cooling"
    },
    "body": {
-    "ko": "2025년 5월 PowerCo Battery Spain 1,685억 원 직접 턴키 수주는 국내 배터리 3사 경유 간접 수주 모델에서 벗어난 전략적 전환점으로, 글로벌 완성차 OEM으로부터의 직접 수주 레퍼런스를 국내 최초로 확보한 사례다. 이를 발판으로 미국·유럽의 다른 OEM(GM, Ford, Stellantis 등)으로의 수주 확산 가능성이 열렸으며, 북미 현지 법인 네트워크가 이를 뒷받침한다. 직접 계약 구조는 중장기적으로 마진 개선 가능성도 내포하고 있다.",
-    "en": "The May 2025 direct turnkey contract with PowerCo Battery Spain marks a strategic inflection — the first-ever direct OEM engagement for a Korean dry room company, breaking the traditional model of routing orders through domestic battery cell makers. This reference position opens the door to pursuing direct awards from GM, Ford, Stellantis, and other global OEMs, supported by K Ensol's existing local subsidiaries across North America and Europe. Direct contract structures also carry the potential for structurally improved margins over time."
+    "ko": "케이엔솔은 스페인 서브머와 협력해 데이터센터 액침냉각 시장 진입을 추진하고 있으며, 바이오 클린룸 등으로도 사업 영역을 넓히고 있다. AI 서버의 발열 밀도가 높아지는 흐름은 열관리 인프라 수요의 구조적 확대로 이어질 수 있는 요인이다. 다만 이는 아직 초기 단계로, 실제 매출화 여부는 향후 공시를 통해 확인이 필요하다.",
+    "en": "K Ensol is pursuing entry into the data-center immersion-cooling market in partnership with Spain's Submer, while also broadening into areas such as bio cleanrooms. Rising heat density in AI servers is a factor that could translate into structurally greater demand for thermal-management infrastructure. That said, this remains an early-stage effort, and whether it converts into actual revenue needs to be confirmed through future disclosures."
    }
   },
   {
    "title": {
-    "ko": "AI 데이터센터 액침냉각 — 중기 성장 옵션 가치",
-    "en": "AI Data Center Immersion Cooling: Valuable Medium-Term Growth Option"
+    "ko": "배터리 해외 진출 동반 수주 이력",
+    "en": "Track record of orders tied to battery makers' overseas expansion"
    },
    "body": {
-    "ko": "케이엔솔은 글로벌 액침냉각 1위 기업 서브머(Submer)와 협력해 AI 데이터센터 이머전쿨링 시장에 진입했으며, 엔비디아 블랙웰 등 고발열 AI 칩의 확산이 액체 냉각 수요를 구조적으로 끌어올리는 환경이다. 공조·냉각 분야 35년 이상의 기술 역량이 신사업으로의 전환을 가속할 수 있으며, 바이오 GMP 클린룸 등 신규 수직시장 확장도 매출 다각화에 기여한다. 단기보다는 중기 성장동력으로 접근할 때 실질적인 옵션 가치로서 긍정적 요소가 된다.",
-    "en": "K Ensol has entered the AI data center immersion cooling market through its partnership with Submer, the global segment leader, at a time when high-heat AI chips like NVIDIA's Blackwell are structurally expanding demand for liquid thermal management. Over 35 years of HVAC and environmental control expertise provides a credible technological foundation for this adjacency, and the expanding bio GMP cleanroom business adds further revenue diversification. Viewed as a medium-term rather than near-term driver, this represents meaningful option value layered on top of the core recovery story."
+    "ko": "국내 배터리 업체들의 북미 진출에 맞춰 케이엔솔의 해외 드라이룸 사업이 확대되어 왔으며, 과거 현대차-SK온 조지아 합작공장 등 대형 수주 경험을 보유하고 있다. 이러한 해외 동반 진출 구조는 전기차 수요가 다시 살아날 경우 수주 회복의 발판이 될 수 있다.",
+    "en": "K Ensol's overseas dry-room business has expanded alongside Korean battery makers' push into North America, and the company has a track record of large orders such as the Hyundai Motor-SK On joint venture plant in Georgia. This pattern of accompanying overseas expansion could serve as a foothold for order recovery if EV demand picks back up."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "전기차 캐즘 장기화 — 드라이룸 수주 부진 지속 위험",
-    "en": "Prolonged EV Slowdown: Risk of Sustained Dry Room Order Weakness"
+    "ko": "2025년 대규모 공사손실로 인한 신뢰 훼손",
+    "en": "Credibility strain from the large 2025 construction loss"
    },
    "body": {
-    "ko": "글로벌 전기차 수요 둔화로 배터리 3사의 CAPEX 감축 기조가 이어지며 드라이룸 신규 수주가 2023년 정점 대비 크게 감소한 상태이다. 미국 트럼프 행정부의 IRA 세제지원 축소·관세 정책 변화 가능성이 북미 배터리 공장 투자 불확실성을 추가적으로 높이고 있다. 드라이룸 매출 비중이 약 33%에 달한다는 점을 고려할 때, 수주 공백이 지속될 경우 2026년 하반기 실적 가시성이 재차 저하될 수 있다.",
-    "en": "Continued EV demand weakness has prompted major battery cell makers to cut capex, reducing new dry room orders materially compared to the 2023 peak. US policy risks — including potential IRA subsidy reductions and tariff-related uncertainty under the Trump administration — add another layer of concern for North American battery investment decisions. Given that dry rooms represent roughly one-third of K Ensol's revenue, a prolonged order gap could limit revenue visibility for H2 2026 and constrain the pace of earnings recovery."
+    "ko": "2025년 4분기 영업손실 675억원은 주요 프로젝트 원가율 상승과 대손상각비 인식이라는 일회성 요인에서 비롯됐으나, 규모가 커 향후 유사한 원가 리스크가 재발할 가능성을 배제할 수 없다. 이 과정에서 자본총계가 크게 줄고 부채비율이 급등해 재무 건전성에 부담이 커졌다.",
+    "en": "The KRW 67.5bn operating loss in the fourth quarter of 2025 stemmed from one-off factors—rising cost ratios on key projects and bad-debt provisioning—but the scale of the loss means similar cost risks recurring in the future cannot be ruled out. In the process, total equity declined sharply and the debt ratio surged, adding pressure on financial soundness."
    }
   },
   {
    "title": {
-    "ko": "2025년 4분기 대규모 손실 — 재무 건전성 훼손과 원인 불투명성",
-    "en": "Q4 2025 Mega-Loss: Weakened Balance Sheet and Lingering Uncertainty"
+    "ko": "전방 투자 지연의 지속",
+    "en": "Continued delays in client capital spending"
    },
    "body": {
-    "ko": "2025년 4분기에 영업손실 675억 원이 집중 발생하며 부채비율이 212.9%로 급등하고 자기자본이 크게 훼손되었다. 일회성 비용(자산손상, 미수금 대손 등)의 성격과 규모가 충분히 해소되지 않으면 재발 우려가 잔존하며, 신규 대형 프로젝트 이행보증 등을 위한 자금 조달 여력이 약화될 수 있다. 2026년 1분기 OPM이 0.5%에 불과해 정상 궤도와의 거리가 여전히 크다.",
-    "en": "The KRW 67.5B operating loss in Q4 2025 caused the debt ratio to spike to 212.9% and materially eroded the equity base. Unless the nature and scope of the one-time charges — likely asset impairments and bad debt provisions — are fully disclosed and resolved, the risk of recurrence lingers. A weakened balance sheet may also constrain the company's ability to provide performance bonds and secure financing for new large-scale projects. The 0.5% OPM in 2026 Q1 highlights that full margin normalization remains a distant target."
+    "ko": "2026년 1분기 실적 악화는 반도체·디스플레이 고객사의 설비투자 지연과 이차전지 부문의 전기차 수요 정체가 원인으로 지목됐다. 이러한 지연이 예상보다 길어질 경우 매출 회복 시점 자체가 뒤로 밀릴 수 있다.",
+    "en": "The deterioration in first-quarter 2026 results was attributed to delayed capital spending by semiconductor and display clients and EV demand stagnation weighing on the secondary-battery segment. If these delays persist longer than expected, the timing of a revenue recovery itself could be pushed further back."
    }
   },
   {
    "title": {
-    "ko": "프로젝트 원가·수행 리스크 — 대형 해외 공사의 마진 훼손 가능성",
-    "en": "Project Cost and Execution Risk: Margin Erosion Potential in Large Overseas Contracts"
+    "ko": "액침냉각 신사업의 매출화 시차",
+    "en": "Lag before immersion cooling turns into revenue"
    },
    "body": {
-    "ko": "클린룸·드라이룸 사업은 수주 후 진행률에 따라 매출을 인식하는 구조로, 공사비 상승(인건비·자재비)이나 공기 지연 시 마진이 급격히 악화될 수 있다. 2024년에 매출이 38.8% 급증했음에도 OPM이 4.6%에 그친 패턴은 대형 프로젝트 수행 시 원가 통제 난이도가 높음을 시사한다. 해외 법인(미국·헝가리·폴란드) 운영에 수반되는 환율 변동과 현지 노무비 상승도 실적 예측 가능성을 낮추는 요인이다.",
-    "en": "The cleanroom and dry room business recognizes revenue based on project completion rates, making margins highly sensitive to construction cost overruns — from labor inflation to material price spikes — and schedule delays. The pattern of OPM remaining at just 4.6% despite 38.8% revenue growth in 2024 suggests inherent difficulty in cost control at scale. Exchange rate volatility and local labor cost inflation across overseas subsidiaries in the US, Hungary, and Poland further reduce earnings predictability, particularly for long-duration international projects."
+    "ko": "한 시장 분석 매체는 케이엔솔의 액침냉각 매출이 아직 별도 사업부 숫자로 공시되지 않고 있으며, 회사가 서브머 솔루션을 소개하는 단계에 머물러 있다고 지적했다. 신사업 기대감과 실제 계약·매출 반영 사이에는 시차가 존재할 수 있어, 다음 분기보고서에서 관련 수주·매출 반영 여부를 확인하는 것이 중요하다.",
+    "en": "One market analysis outlet noted that K Ensol's immersion-cooling revenue is not yet disclosed as a separate segment figure and that the company remains at the stage of introducing Submer's solution. There can be a lag between expectations for the new business and actual contract or revenue recognition, making it important to check the next quarterly report for whether related orders and revenue materialize."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "전방 산업 업황·정책 리스크",
-    "en": "End-Market Cycle and Policy Risk"
+    "ko": "프로젝트 원가 관리 리스크",
+    "en": "Project cost-management risk"
    },
    "body": {
-    "ko": "전기차 캐즘 심화나 미국 IRA 수혜 요건 변경은 드라이룸 수주 규모를 추가 감소시킬 수 있다. 반도체 설비투자 사이클이 다시 하강하거나 삼성전자·SK하이닉스의 팹 투자 계획이 지연될 경우 클린룸 발주 회복세가 꺾일 수 있다. 두 전방 산업이 동시에 약화되는 시나리오에서는 2025년 수준의 실적 재현 위험이 존재한다.",
-    "en": "A deepening EV demand slump or changes to US IRA eligibility criteria could further reduce dry room order volumes. If the semiconductor capex cycle turns down again or Samsung/SK Hynix delay fab investment plans, the cleanroom order recovery could stall. A scenario where both primary end markets weaken simultaneously would risk repeating 2025 performance levels."
+    "ko": "클린룸·드라이룸 시공은 진행률 기준으로 매출이 인식되는 장기 프로젝트형 사업으로, 원가율이 예상보다 상승하면 공사손실이 한꺼번에 반영될 수 있다. 2025년 4분기 대규모 손실이 이러한 리스크를 실제로 보여준 사례다.",
+    "en": "Cleanroom and dry-room construction is a long-cycle, percentage-of-completion business, meaning that if cost ratios rise more than expected, construction losses can be recognized all at once. The large loss in the fourth quarter of 2025 was an actual manifestation of this risk."
    }
   },
   {
    "cat": {
-    "ko": "프로젝트 원가 초과·수행 실패 리스크",
-    "en": "Cost Overrun and Project Execution Failure Risk"
+    "ko": "고객사 편중 및 발주 지연 리스크",
+    "en": "Customer concentration and order-delay risk"
    },
    "body": {
-    "ko": "PowerCo 스페인 등 대형 해외 프로젝트에서 공기 지연, 설계 변경, 자재비·인건비 급등이 발생할 경우 추가 손실이 발생할 수 있다. 2025년 4분기 대규모 손실의 원인이 프로젝트 원가 초과였을 가능성을 배제할 수 없으며, 동일 리스크가 현재 진행 중인 프로젝트에도 잠재할 수 있다. 수주 잔고가 회복되더라도 원가 통제 실패 시 실적 개선 효과가 반감된다.",
-    "en": "Large overseas projects such as the PowerCo Spain contract are exposed to schedule delays, design changes, and cost escalation in materials and labor that could trigger additional losses. It cannot be ruled out that Q4 2025's massive loss was partly driven by project cost overruns, and the same risk may linger in ongoing contracts. Even if the order backlog rebuilds strongly, poor cost execution could significantly undercut the margin improvement that investors are expecting."
+    "ko": "매출이 삼성전자, SK하이닉스 등 소수 대형 고객사의 설비투자 일정에 크게 의존하는 구조로, 고객사의 투자 지연이나 캐즘이 발생하면 매출과 수주 모두 즉각적인 영향을 받는다. 2026년 1분기 실적 부진이 이러한 구조적 리스크를 보여준다.",
+    "en": "Revenue depends heavily on the capital-spending schedules of a small number of large customers such as Samsung Electronics and SK Hynix, so any delay in their investment or a demand chasm immediately affects both revenue and order intake. The weak first-quarter 2026 results illustrate this structural risk."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지 및 유동성 리스크",
-    "en": "Financial Leverage and Liquidity Risk"
+    "ko": "재무 건전성 및 자본 완충력 저하",
+    "en": "Deteriorating financial soundness and capital buffer"
    },
    "body": {
-    "ko": "부채비율이 212.9%로 높아진 상황에서 금리 상승이나 차환 리스크가 발생할 경우 재무 부담이 가중될 수 있다. 2025년 영업현금흐름이 -359억 원을 기록한 만큼, 추가 자금 조달 또는 자산 매각이 필요해질 수 있다. 대형 프로젝트 수행 시 요구되는 이행보증 등 우발채무도 재무 안정성 측면에서 지속적인 모니터링이 필요하다.",
-    "en": "With the debt ratio elevated to 212.9%, K Ensol is more vulnerable to interest rate increases and refinancing risk. The KRW −35.9B operating cash flow in 2025 signals the potential need for external financing or asset disposals to sustain liquidity. Contingent liabilities from performance bonds required on large-scale construction contracts also warrant ongoing monitoring for their potential impact on overall financial stability."
+    "ko": "2025년 대규모 순손실로 자본총계가 줄고 부채비율이 123.6%에서 212.9%로 크게 높아졌으며, 영업활동현금흐름도 순유출로 전환됐다. 향후 추가적인 손실이 발생할 경우 자본 완충력이 더 약화될 수 있다.",
+    "en": "The large net loss in 2025 reduced total equity and pushed the debt-to-equity ratio sharply higher from 123.6% to 212.9%, while operating cash flow also turned to a net outflow. Any further losses going forward could weaken the capital buffer even more."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표 — 영업흑자 기조가 유지되는지, OPM이 1분기(0.5%)를 의미 있게 상회하여 마진 회복 궤도가 확인되는지 점검. 2분기 연속 흑자 여부가 실적 정상화 신뢰도의 분수령이다.",
-    "en": "2026 Q2 earnings release: verify whether operating profitability is sustained and whether OPM exceeds Q1's 0.5% by a meaningful margin, confirming a genuine recovery trajectory. Back-to-back quarters of profitability would significantly strengthen the normalization thesis."
+    "ko": "2026년 3분기 실적 공시 예정으로, 4분기 대규모 손실 이후 원가율이 안정화되고 있는지, 액침냉각 관련 매출이 반영되기 시작했는지를 확인해야 한다.",
+    "en": "The third-quarter 2026 results are due to be disclosed, and it will be worth checking whether cost ratios have stabilized after the large fourth-quarter 2025 loss and whether any immersion-cooling-related revenue has begun to appear."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (수시 공시)",
-    "en": "H2 2026 (rolling disclosures)"
+    "ko": "2026년 하반기~2027년 초",
+    "en": "Second half of 2026 through early 2027"
    },
    "what": {
-    "ko": "반도체 클린룸 신규 수주 공시 — 삼성전자 P4/P5, SK하이닉스 M15X 등 대형 프로젝트 발주 여부가 2027년 매출 가시성과 실적 정상화 속도를 결정하는 핵심 변수이며, 수주 규모와 수익성 기여도를 함께 확인해야 한다.",
-    "en": "Semiconductor cleanroom order announcements: awards from Samsung Electronics (P4/P5) and SK Hynix (M15X) are the primary determinants of 2027 revenue visibility and the pace of earnings normalization; monitor both order size and implied margin contribution."
+    "ko": "삼성전자 P4·테일러 공장 및 SK하이닉스 용인 클러스터 등 대형 반도체 프로젝트의 실제 발주·집행 시기를 추적해 클린룸 수주 재개 여부를 판단할 필요가 있다.",
+    "en": "Tracking the actual order timing and execution of large semiconductor projects such as Samsung's P4 and Taylor plants and SK Hynix's Yongin cluster will help gauge whether cleanroom orders resume."
    }
   },
   {
    "when": {
-    "ko": "2026년 6~12월 (PowerCo 계약 완공 시점)",
-    "en": "June–December 2026 (PowerCo Spain project completion)"
+    "ko": "2026년 4분기 이후",
+    "en": "From the fourth quarter of 2026"
    },
    "what": {
-    "ko": "PowerCo Battery Spain 계약(계약 기간 2025년 5월~2026년 5월 예정)의 납기 준수 및 정산 결과 확인 — 원가 초과 없이 완공될 경우 글로벌 OEM 직접 수주 확대의 발판이 되며, 유럽·북미 차기 OEM 발주 연계 여부를 모니터링해야 한다.",
-    "en": "Track the completion and financial settlement of the PowerCo Battery Spain contract: on-time delivery without cost overruns would validate K Ensol's global OEM execution capability and its ability to pursue follow-on direct orders from European and North American automakers."
+    "ko": "정부 주도 반도체 메가클러스터 관련 인프라 투자 예산 집행 일정과 이차전지 업체들의 북미·유럽 증설 재개 여부가 드라이룸 신규 수주로 이어지는지 확인이 필요하다.",
+    "en": "It will be important to confirm whether the budget execution schedule for government-led semiconductor mega-cluster infrastructure and any resumption of battery makers' expansion in North America and Europe translate into new dry-room orders."
    }
   },
   {
    "when": {
-    "ko": "2026년 연간 (수시 공시)",
-    "en": "Full Year 2026 (ongoing disclosures)"
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "액침냉각(이머전쿨링) 사업의 첫 상용 매출 발생 시점 및 계약 규모 확인 — 현재 샘플 납품·데이터 수집 단계에서 실질적 상업 계약 전환이 이루어지면 신사업 모멘텀이 주가 재평가 요인으로 작용할 수 있다.",
-    "en": "Watch for the first meaningful commercial revenue disclosure from the immersion cooling business: a transition from the current sample-and-data-collection phase to binding commercial contracts would mark a significant de-risking of this growth option and could serve as a re-rating catalyst."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 초 (2026년 연간 사업보고서)",
-    "en": "Early 2027 (FY2026 Annual Report)"
-   },
-   "what": {
-    "ko": "2025년 4분기 대규모 손실 원인의 세부 공시(자산손상 내역, 대손 항목, 프로젝트별 원가 정산 등)와 부채비율 개선 속도 점검 — 일회성 비용의 완전한 해소와 재무구조 회복 여부가 중장기 투자 신뢰도에 직결된다.",
-    "en": "Review the FY2026 annual report for full disclosure on Q4 2025 mega-loss root causes (impairment details, bad debt items, project-level cost settlements) and evidence of material debt ratio improvement: the pace and completeness of financial structure normalization directly determines medium-term credibility."
+    "ko": "2026년 결산 실적과 함께 배당 지속 여부가 공시될 예정으로, 2025년 적자전환 이후 배당 정책의 변화 여부를 확인해야 한다.",
+    "en": "Full-year 2026 results and whether dividends continue will be disclosed, making it important to check for any change in dividend policy following the 2025 loss."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "케이엔솔은 반도체 클린룸과 2차전지 드라이룸 시장에서 35년 이상 축적한 기술력과 국내외 주요 고객사와의 깊은 관계를 보유한 엔지니어링 기업이나, 2025년에는 전기차 캐즘·반도체 투자 둔화·SOC 예산 감소·4분기 일회성 비용이 겹쳐 연간 영업손실 620억 원, 지배주주 순손실 543억 원이라는 이례적 충격을 기록하였다. 2026년 1분기 소폭 영업흑자 복귀와 PowerCo 스페인 직접 수주라는 전략적 성과는 회복의 첫 단초를 제시하나, OPM 0.5%와 부채비율 212.9%는 정상화까지 갈 길이 멀음을 수치로 보여준다. 반도체 슈퍼사이클 재가동, 글로벌 OEM 직접 수주 다각화, AI 데이터센터 냉각 신사업은 중장기 성장 스토리를 구성하며 과거 이익 체력 복원 가능성을 뒷받침한다. 반면 전기차 캐즘 장기화, 대형 프로젝트 원가 리스크, 재무 레버리지 확대는 단기 실적 불확실성을 높이는 구조적 약점으로 작용한다. 수주 잔고 회복 속도와 마진 지속성이 병행 검증되는 2026년 하반기가 실질적인 회복 판단의 분수령이 될 것이며, 투자자는 분기 실적과 신규 수주 공시를 면밀히 모니터링하는 접근이 유효하다.",
-   "en": "K Ensol is a technically accomplished engineering company with over 35 years of cleanroom and dry room expertise and deeply established relationships with leading semiconductor and battery clients domestically and abroad. However, 2025 delivered an exceptional shock — an annual operating loss of KRW 62B and parent net loss of KRW 54.3B — as the EV slowdown, semiconductor capex pause, SOC budget cuts, and concentrated Q4 one-time charges converged simultaneously. The return to marginal operating profit in Q1 2026 and the landmark PowerCo Spain direct order represent the first tangible evidence of recovery, but an OPM of 0.5% and a debt ratio of 212.9% make clear that full normalization remains a work-in-progress. The medium-to-long-term growth narrative — powered by the semiconductor supercycle, direct global OEM channel expansion, and AI data center cooling adjacency — provides a credible basis for restoring historical profitability levels. That said, structural headwinds including prolonged EV market softness, project execution risks in overseas contracts, and elevated financial leverage maintain meaningful near-term earnings uncertainty. The second half of 2026 will be the critical inflection test: whether sustained order backlog conversion and durable margin improvement can together validate the recovery thesis and build investor confidence."
+   "ko": "케이엔솔은 반도체·이차전지 클린룸·드라이룸 시공에서 삼성전자, SK하이닉스 등 대형 고객사를 기반으로 한 과점적 지위를 갖고 있으나, 2025년 4분기의 대규모 공사손실로 연간 실적이 적자전환했고 2026년 들어서도 전방 고객사의 투자 지연으로 손익이 불안정한 흐름을 보이고 있다. 자본총계 감소와 부채비율 상승은 이 같은 실적 악화가 재무구조에도 영향을 미치고 있음을 보여준다. 반면 액침냉각을 비롯한 데이터센터 냉각 신사업과 정부 주도 반도체 메가클러스터 지원, 배터리 업체들의 해외 진출 동반 수주 이력은 중장기 성장 스토리의 근거로 거론된다. 다만 액침냉각 사업은 아직 솔루션 소개·테스트 단계에 머물러 있어 실제 매출화까지는 시차가 있을 것으로 보인다. 결국 투자 판단에 앞서 확인해야 할 핵심은 프로젝트별 원가 관리가 안정화되는지, 반도체·이차전지 고객사의 발주가 실제로 재개되는지, 그리고 신사업이 공시상 매출로 확인되는지 세 가지로 요약된다.",
+   "en": "K Ensol holds a duopolistic position in semiconductor and secondary-battery cleanroom and dry-room construction, anchored by large customers such as Samsung Electronics and SK Hynix, but a massive construction loss in the fourth quarter of 2025 tipped full-year results into a loss, and earnings remained unstable into 2026 amid delayed investment by client companies. The decline in total equity and the rise in the debt ratio show that this earnings deterioration has also affected the balance sheet. On the other hand, the emerging data-center cooling business including immersion cooling, government-led support for semiconductor mega-clusters, and a track record of orders tied to battery makers' overseas expansion are cited as grounds for a longer-term growth story. That said, the immersion-cooling business still appears to be at the solution-introduction and testing stage, suggesting there will be a lag before it converts into actual revenue. Ultimately, the key items to confirm before forming any investment judgment can be summarized as three: whether project-level cost management stabilizes, whether semiconductor and secondary-battery clients actually resume ordering, and whether the new business is confirmed as revenue in future disclosures."
   }
  },
  "sources": [
   "https://www.hanaw.com/download/research/FileServer/WEB/info/small_cap/2024/07/18/240719_KE.pdf",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A053080",
+  "https://m.thinkpool.com/compDiscuss/cont/1011636",
+  "https://wcomp.fnguide.com/CompanyInfo/Snapshot?cmp_cd=053080",
+  "https://www.k5.co.kr/stock/053080",
   "https://www.butler.works/ko/companies/00304076",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A053080&MenuYn=Y",
+  "https://m.thinkpool.com/compDiscuss/cont/1011612",
   "https://m.irgo.co.kr/IR-COMP/053080",
-  "https://www.investing.com/equities/wonbang-tech-co-ltd",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=searchInitInfo&acptNo=20251111000500&docno=",
-  "https://wcomp.fnguide.com/CompanyInfo/Information?cmp_cd=053080",
-  "https://www.stockplus.com/m/stocks/KOREA-A053080",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=053080",
-  "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/NE1QaVdKMFBRSnFoREF6cXNpTysyQT09/company_nm/%EC%BC%80%EC%9D%B4%EC%97%94%EC%86%94(%EC%A3%BC)?nomo=1",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=y3eoqNaXPDc6GqjQ",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=wDjfJYSmTR0Lg5tK",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=TbHgWM73UCwIQ3Lj",
-  "https://kr.investing.com/equities/wonbang-tech-co-ltd-earnings",
+  "https://itooza.com/vscore/053080",
   "https://alphasquare.co.kr/home/stock-summary?code=053080",
-  "https://jasoseol.com/companies/4184/insights",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=567051",
-  "https://needinfo.co.kr/%EC%BC%80%EC%9D%B4%EC%97%94%EC%86%94-%EC%A3%BC%EA%B0%80-%EC%A0%84%EB%A7%9D-26%EB%85%84-%EC%BC%80%EC%9D%B4%EC%97%94%EC%86%94-%EB%B0%B0%EB%8B%B9%EA%B8%88-%EC%95%A1%EC%B9%A8%EB%83%89%EA%B0%81-%EA%B8%B0/"
+  "https://www.judal.co.kr/?view=stockAI&shareToken=wDjfJYSmTR0Lg5tK",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=053080",
+  "https://www.investing.com/equities/wonbang-tech-co-ltd",
+  "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/NE1QaVdKMFBRSnFoREF6cXNpTysyQT09/company_nm/%EC%BC%80%EC%9D%B4%EC%97%94%EC%86%94(%EC%A3%BC)?nomo=1",
+  "https://kr.investing.com/equities/wonbang-tech-co-ltd-earnings",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=TbHgWM73UCwIQ3Lj",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=y3eoqNaXPDc6GqjQ",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=WoAHNyMSJP5JZtdW"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "053080",
  "name": "케이엔솔",
  "name_en": "K-ENSOL CO., LTD.",
@@ -233,9 +223,9 @@
   "기계·장비"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-17",
- "reportTs": "2026-06-17 07:02",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:08",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 9010,
-   "mcap": 0.1171,
+   "price": 8580,
+   "mcap": 0.1115,
    "shares": 12999807,
    "total_shares": 12999807,
    "wavg_shares": 12952817,
    "per": null,
    "eps": -4867,
-   "pbr": 0.9821,
+   "pbr": 0.9353,
    "bps": 9174,
    "roe_ttm": -42.6,
    "ttm_window": "2025Q3~2026Q2",
@@ -356,7 +346,7 @@
    "bps_krx": 9562.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 300.0,
-   "div": 3.33
+   "div": 3.5
   }
  }
 }
