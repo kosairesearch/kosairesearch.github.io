@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "K-뷰티·비료 투트랙, 재무 재건이 선결 과제",
-  "en": "K-Beauty & Fertilizer Dual-Track: Balance-Sheet Repair Is the Prerequisite"
+  "ko": "화장품 부진 속 비료 신사업과 반복 조달",
+  "en": "Cosmetics Weakness, Fertilizer Pivot, Repeat Financing"
  },
  "lead": {
-  "ko": "글로본은 화장품(RUE KWAVE)과 비료 원료 트레이딩이라는 이종 사업을 결합한 초소형 코스닥 기업으로, 2024년 일시적 흑자 이후 2025년 영업손실이 다시 사상 최대 수준으로 확대되고 부채비율도 급등하면서 수익성 회복의 구조적 과제를 안고 있다.",
-  "en": "Globon is a micro-cap KOSDAQ company combining a cosmetics brand (RUE KWAVE) with fertilizer raw-material trading; after a brief profit turnaround in 2024, operating losses widened to a record in 2025 while the debt ratio surged, leaving structural profitability recovery as the overriding challenge."
+  "ko": "화장품 본업의 매출 회복 조짐과 신규 비료 파생원료 사업의 대형 계약 확보가 나타나는 동시에, 부채비율 급등과 연이은 유상증자·전환사채 발행 등 재무 재조달이 반복되고 있다.",
+  "en": "Globon shows early signs of cosmetics revenue recovery and has secured a large new fertilizer-derivative contract, even as its debt ratio has surged and it continues to rely on repeated rights offerings and convertible bond issuance."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출은 129.5억원으로 2023년 대비 약 36% 줄었고 영업손실은 48.3억원으로 조사 기간 최대를 기록했다.",
-   "en": "2025 revenue contracted to KRW 12.95 bn (roughly 36% below the 2023 level), while the operating loss of KRW 4.83 bn was the largest in the four-year reviewed period."
+   "ko": "2025년 연결 매출 129억원, 영업손실 48억원으로 2024년의 일시 흑자에서 다시 적자 전환",
+   "en": "2025 consolidated revenue of KRW 12.9bn with an operating loss of KRW 4.8bn, reversing the brief 2024 profit"
   },
   {
-   "ko": "2025년 4분기 단일 분기에 영업손실 30.4억원·지배주주 순손실 43.6억원이 집중되어 대규모 일회성 비용 발생이 강하게 시사된다.",
-   "en": "In 2025Q4 alone, the operating loss totaled KRW 3.04 bn and the net loss attributable to controlling interests reached KRW 4.36 bn, strongly suggesting a concentration of one-time charges."
+   "ko": "2026년 1~2분기 매출은 순차 회복(27.8억→32.3억원)했으나 영업손실은 지속",
+   "en": "Revenue recovered sequentially in 1Q-2Q 2026 (KRW 2.78bn to KRW 3.23bn) but operating losses persisted"
   },
   {
-   "ko": "2025년 부채가 22.6억원에서 121.8억원으로 급증하며 부채비율이 20.2%에서 112.7%로 뛰었고, 4년 연속 영업현금흐름도 마이너스다.",
-   "en": "Total liabilities surged from KRW 2.26 bn to KRW 12.18 bn in 2025, pushing the debt ratio from 20.2% to 112.7%; operating cash flow has been negative for four consecutive years."
+   "ko": "필리핀 기업과 38억원 규모 무수암모니아 공급계약 체결, 비료 파생원료 신사업 첫 성과",
+   "en": "Signed a KRW 3.8bn anhydrous ammonia supply contract with a Philippine company, the first concrete result of the new fertilizer-derivative business"
   },
   {
-   "ko": "2026년 1분기 별도기준 매출이 전년 동기 대비 24% 증가했으나 영업손실이 69.3% 더 커져, 외형 회복과 수익성 회복의 괴리가 확인된다.",
-   "en": "2026Q1 standalone revenue rose 24% year-on-year, yet the operating loss widened 69.3%, revealing a clear divergence between top-line recovery and profitability."
+   "ko": "2026년 초 대표이사 대상 50억원 유상증자, 이어 42억원 전환사채 발행 등 반복적 자금조달",
+   "en": "A KRW 5.0bn rights offering to the CEO in early 2026 was followed by a KRW 4.2bn convertible bond issuance, continuing a pattern of repeated fundraising"
   },
   {
-   "ko": "K-뷰티 수출이 2025년 약 114억 달러로 사상 최대를 기록하며 업종 호황이 지속되지만, 글로본은 중국 의존적 브랜드 구조로 산업 전반의 수혜를 충분히 향유하지 못하고 있다.",
-   "en": "K-beauty exports hit a record approximately USD 11.4 bn in 2025, sustaining sector tailwinds, but Globon's China-centric brand structure limits its ability to capture the broader industry upswing."
+   "ko": "부채비율 2024년 20.2%→2025년 112.7%로 급등, 자본총계도 축소",
+   "en": "Debt ratio jumped from 20.2% in 2024 to 112.7% in 2025, while total equity also shrank"
   }
  ],
  "business": {
-  "ko": "글로본은 1986년 한국창업투자(주)로 설립되어 1992년 코스닥에 상장했으며, 수차례 사명 변경을 거쳐 2015년 현재의 상호로 바꾸고 최대주주도 교체됐다. 주요 사업은 크게 두 축으로 나뉜다. 첫째, 화장품 사업이다. 'RUE KWAVE' 브랜드를 중심으로 기초화장품·마스크팩·화장품 용기를 OEM·ODM 방식으로 제조·판매하며, 한류를 선호하는 중국·동남아시아·중동지역 여성 고객을 핵심 타겟으로 삼고 있다. 중국위생허가를 보유한 마스크팩·크림 제품군이 주요 포트폴리오를 구성하고, 알리바바 티몰 등 온라인 플랫폼을 통한 유통도 병행한다. 둘째, 비료 산업 파생 원료 사업이다. 필리핀인산비료공사(Philippine Phosphate Fertilizer Corporation) 등 3년 이상 거래 관계를 유지한 기존 거래처를 대상으로 인산(P₂O₅) 원료를 트레이딩하는 방식으로 매출을 창출하며, 관련 투자도 병행한다. 또한 중소·벤처기업 투자를 목적으로 투자조합을 운영하며 LP로부터 자금을 유치하는 복합적 수익 구조를 가진다. 이러한 이종 사업의 결합은 제조업과 금융업이 혼재된 형태로, 각 사업 부문별 수익성 파악이 상대적으로 어렵다는 특성을 지닌다.",
-  "en": "Globon was established in 1986 as Korea Venture Capital Co. and listed on KOSDAQ in 1992, undergoing multiple name changes before adopting its current name in 2015, at which point the controlling shareholder also changed. The company operates along two primary business lines. First, its cosmetics segment manufactures and sells skincare products, sheet masks, and cosmetic containers under the RUE KWAVE brand via OEM/ODM arrangements, targeting female consumers in China, Southeast Asia, and the Middle East who are drawn to K-culture. Key products hold Chinese hygiene certification, and the brand is also distributed through online platforms including Alibaba Tmall. Second, its fertilizer-derived raw-material segment generates revenue primarily through phosphoric acid (P₂O₅) trading with established counterparties such as the Philippine Phosphate Fertilizer Corporation, with which it has maintained a relationship of over three years, supplemented by related investments. Additionally, the company operates investment partnerships that pool capital from limited partners to invest in small and venture enterprises, creating a hybrid manufacturing-financial structure. This combination of dissimilar businesses makes segment-level profitability analysis relatively opaque for external stakeholders."
+  "ko": "글로본은 1986년 설립돼 1992년 코스닥에 상장한 화장품 전문기업으로 출발했다. 주력 브랜드 'RUE KWAVE'를 통해 기초화장품과 마스크팩을 중국·동남아시아·중동지역의 한류 선호 여성 고객층에 판매하고 있다. 제품은 자체 생산이 아닌 OEM·ODM 방식으로 화장품 원료·용기를 제조·판매하는 구조를 취하고 있다. 최대주주는 한상호 대표이사로, 2015년 경영권을 인수한 이후 회사를 이끌고 있다. 회사는 화장품 외에도 신재생에너지, 수소플랜트, 2차전지, 메타버스 등 다양한 신사업을 추진해왔으나 대부분 실질적 사업화로 이어지지 못했다. 2026년 초 정기주주총회에서 정관 변경을 통해 비철금속, 화학비료, 석유류, 전기지게차, 투자 사업 등 5개 사업목적을 추가하며 다각화를 재시도했다. 이 가운데 비료산업 파생원료 사업이 트레이딩과 투자를 포함한 형태로 실제 매출로 연결되기 시작했으며, 최근 필리핀 소재 비료업체와 무수암모니아 공급계약을 체결했다. 화장품과 비료 트레이딩이라는 이질적인 두 사업이 병존하는 구조가 현재 글로본의 사업 포트폴리오를 특징짓는다.",
+  "en": "Globon was founded in 1986 and listed on KOSDAQ in 1992 as a cosmetics specialist. Through its flagship brand 'RUE KWAVE,' the company sells basic skincare and mask packs to Korean-wave-favoring female consumers in China, Southeast Asia, and the Middle East. Rather than in-house manufacturing, it operates on an OEM/ODM model, producing and selling cosmetic materials and containers. The controlling shareholder is CEO Han Sang-ho, who has led the company since taking over management control in 2015. Beyond cosmetics, the company has pursued various new ventures including renewable energy, hydrogen plants, secondary batteries, and the metaverse, most of which did not translate into substantive operations. In early 2026, at its annual general shareholders' meeting, the company amended its articles of incorporation to add five new business objectives including non-ferrous metals, chemical fertilizer, petroleum, electric forklifts, and investment. Among these, the fertilizer-derivative trading and investment business has begun generating actual revenue, and the company recently signed an anhydrous ammonia supply contract with a Philippine fertilizer company. The coexistence of two disparate businesses—cosmetics and fertilizer trading—now characterizes Globon's business portfolio."
  },
  "earnings": {
-  "ko": "글로본의 최근 4개 사업연도 실적은 2024년을 제외하면 만성 영업적자 구조를 벗어나지 못하고 있다. 2022년에는 매출 184.8억원에 영업손실 40.9억원(영업손실률 -22.1%), 지배주주 순손실 64.0억원을 기록했다. 2023년에는 매출이 203.1억원으로 늘었으나 영업손실 39.9억원(-19.7%)이 지속됐고 순손실도 44.9억원이었다. 2024년에는 매출이 173.3억원으로 줄었음에도 영업이익 2.4억원, 지배주주 순이익 5.5억원으로 반전에 성공했으나, 이는 일회성 요인에 기댄 기저 효과로 추정된다. 2025년에는 매출이 129.5억원으로 전년 대비 약 25% 줄었고, 영업손실은 48.3억원(-37.3%)으로 조사 기간 최대를 기록했으며 순손실도 57.6억원에 달했다. 특히 분기별로 보면 2025년 1~3분기 영업손실 합계가 약 17.8억원인 반면, 4분기 단 한 분기에만 영업손실 30.4억원·지배주주 순손실 43.6억원이 집중돼 대규모 일회성 비용이 발생한 것으로 강하게 시사된다. 2026년 1분기 연결 기준 매출은 27.8억원으로 전년 동기(22.4억원) 대비 회복세를 보였으나, 영업손실은 8.4억원으로 전년 동기보다 확대됐다. 영업현금흐름은 2022년 -47.4억원, 2023년 -23.2억원, 2024년 -18.4억원, 2025년 -39.8억원으로 4년 연속 마이너스를 지속했으며, 2025년 부채가 121.8억원으로 급증하면서 부채비율이 112.7%로 높아진 것도 주목해야 할 재무 변화다.",
-  "en": "Globon's earnings history across the most recent four fiscal years reveals a chronic operating loss structure, broken only briefly in 2024. In 2022, revenue was KRW 18.48 bn with an operating loss of KRW 4.09 bn (OPM -22.1%) and a net loss attributable to controlling interests of KRW 6.40 bn. Revenue rose to KRW 20.31 bn in 2023, but the operating loss persisted at KRW 3.99 bn (-19.7%), with a net loss of KRW 4.49 bn. In 2024, despite a revenue decline to KRW 17.33 bn, the company posted an operating profit of KRW 244 mn and a controlling-interest net profit of KRW 553 mn—a reversal likely aided by non-recurring factors. In 2025, revenue fell a further 25% to KRW 12.95 bn, the operating loss widened to a record KRW 4.83 bn (-37.3% margin), and the net loss reached KRW 5.76 bn. The quarterly breakdown is particularly striking: the cumulative operating loss for 2025Q1–Q3 was approximately KRW 1.78 bn, while 2025Q4 alone recorded an operating loss of KRW 3.04 bn and a net loss of KRW 4.36 bn, strongly implying a substantial one-time charge. In 2026Q1, consolidated revenue recovered to KRW 2.78 bn (up from KRW 2.24 bn a year earlier), but the operating loss widened to KRW 843 mn. Operating cash flow remained negative across all four years (-KRW 4.74 bn, -2.32 bn, -1.84 bn, -3.98 bn in 2022–2025), and a surge in total liabilities to KRW 12.18 bn in 2025 pushed the debt ratio to 112.7%—a significant deterioration in financial health."
+  "ko": "2025년 연결 매출액은 129억 4,812만원으로 2024년 173억 2,930만원 대비 감소했다. 영업손익은 2025년 -48억 3,019만원의 손실을 기록해, 2024년 2억 4,443만원의 영업이익에서 다시 적자로 전환했다. 2024년은 매출 173억원, 영업이익 2억원, 순이익 5억 5,317만원을 기록하며 최근 4개 연도 중 유일하게 흑자를 낸 해였다. 반면 2025년 지배주주 순손실은 57억 5,900만원에 달해 2022년(-64억 470만원), 2023년(-44억 9,288만원)에 이어 다시 대규모 적자를 냈다. 분기별로 보면 2025년 2분기 매출 13억 8,440만원, 영업손실 5억 6,301만원에서 3분기 매출 41억 4,791만원으로 늘었으나 영업손실도 7억 2,452만원으로 커졌다. 2025년 4분기에는 매출이 51억 7,323만원까지 늘었지만 영업손실이 30억 4,447만원, 순손실이 43억 6,133만원으로 4개 분기 중 가장 큰 손실을 기록했다. 2026년 들어서는 1분기 매출 27억 8,190만원, 영업손실 8억 4,257만원, 2분기 매출 32억 3,491만원, 영업손실 6억 6,250만원으로 매출은 순차 회복되는 한편 손실 규모는 4분기 저점보다 줄어드는 흐름을 보였다. 영업활동현금흐름은 2022년부터 2025년까지 매년 마이너스를 지속했고, 특히 2025년에는 -39억 8,490만원으로 현금 유출이 이어졌다. 부채비율은 2024년 20.2%에서 2025년 112.7%로 급등했고 자본총계도 111억 4,411만원에서 108억 420만원으로 줄어 재무구조가 빠르게 악화됐다.",
+  "en": "2025 consolidated revenue came to KRW 12.948bn, down from KRW 17.329bn in 2024. The operating result swung to a loss of KRW 4.830bn in 2025, reversing from an operating profit of KRW 244mn in 2024. 2024 was the only year of the past four with profitability, posting revenue of KRW 17.3bn, operating profit of KRW 244mn, and net income of KRW 553mn. By contrast, the 2025 owner's net loss reached KRW 5.759bn, marking another large deficit following losses of KRW 6.405bn in 2022 and KRW 4.493bn in 2023. On a quarterly basis, revenue rose from KRW 1.384bn with an operating loss of KRW 563mn in 2Q 2025 to KRW 4.148bn in 3Q 2025, though the operating loss also widened to KRW 725mn. In 4Q 2025, revenue climbed further to KRW 5.173bn, but the operating loss deepened to KRW 3.044bn and the net loss reached KRW 4.361bn, the largest of the four quarters. Moving into 2026, 1Q revenue was KRW 2.782bn with an operating loss of KRW 843mn, and 2Q revenue was KRW 3.235bn with an operating loss of KRW 662mn—revenue recovered sequentially while the loss narrowed from the 4Q trough. Operating cash flow remained negative every year from 2022 through 2025, with a cash outflow of KRW 3.985bn in 2025 alone. The debt ratio jumped from 20.2% in 2024 to 112.7% in 2025, and total equity shrank from KRW 11.144bn to KRW 10.804bn, reflecting a rapidly deteriorating financial structure."
  },
  "industry": {
-  "ko": "K-뷰티 산업은 2025년 수출액이 약 114억 달러로 사상 최대를 경신하며 글로벌 화장품 시장에서 세계 2위 수출국으로 도약했다. 특히 미국 수출이 사상 처음으로 중국을 추월해 최대 수출 시장이 됐으며, 동남아시아·중동·유럽 등 다변화된 지역에서 K-뷰티 수요가 가파르게 증가하고 있다. 반면 중국 시장은 수입 화장품 등록 제도 강화, 로컬 브랜드 부상, 소비 심리 회복 지연 등으로 불확실성이 높아지고 있어 중국 의존도가 높은 브랜드에 불리한 환경이 조성됐다. 코스맥스·한국콜마 등 대형 ODM사는 가동률 상승과 생산능력 확대로 수혜를 누리는 반면, 소규모 브랜드는 마케팅 비용 급증과 판로 경쟁 심화로 수익성 압박이 가중되는 구조적 양극화가 뚜렷하다. 글로본이 타겟으로 삼는 중국·동남아 시장은 중저가 기능성 스킨케어 위주의 수요가 형성돼 있으나, 현지 경쟁 브랜드와의 가격 압박이 지속되고 있다. 비료 원료 트레이딩 사업은 글로벌 농산물 가격 및 인산 수급 사이클에 연동되어 화장품 사업과 상이한 경기 사이클을 보이며, 시장 내 독자적 지위보다는 트레이딩 네트워크에 의존하는 구조다.",
-  "en": "The K-beauty industry recorded approximately USD 11.4 bn in exports in 2025, a new all-time high, elevating Korea to the world's second-largest cosmetics exporter. US exports overtook China for the first time to become the top destination, while demand from Southeast Asia, the Middle East, and Europe is accelerating rapidly. In contrast, the Chinese market faces rising uncertainty from tightened import registration requirements, the surge of domestic brands, and sluggish consumer sentiment recovery—creating headwinds for China-centric brands. Large ODM players such as Cosmax and Kolmar Korea benefit from rising utilization rates and capacity additions, while smaller brands face structural margin erosion from escalating marketing costs and intensifying competition for shelf space—a bifurcation that is increasingly pronounced. Globon's primary target markets of China and Southeast Asia are dominated by demand for mid-to-low-priced functional skincare, where price competition with local rivals remains fierce. The fertilizer raw-material trading segment is tied to global agricultural commodity cycles and phosphoric acid supply-demand dynamics, giving it a distinct cyclical profile from the cosmetics business, and it depends on trading networks rather than any proprietary market position."
+  "ko": "국내 화장품 산업은 최근 K-뷰티에 대한 해외 수요 확대를 배경으로 성장세를 이어가고 있다는 평가가 나온다. 실제로 화장품 업종 리서치에서는 \"K-Beauty는 기능성과 합리적 가격으로 선진 시장 인지도가 상승하고 신흥 시장 진출이 확대되며, K-Contents 소비 증가로 미국·유럽 온라인 판매 및 오프라인 진출이 가속화될 전망\"이라는 분석이 제시됐다. 다만 이 흐름의 수혜는 브랜드력과 유통망을 갖춘 상위 업체와 일부 인디 브랜드에 집중되는 경향이 있어, 소형 브랜드사인 글로본의 직접적 수혜 폭은 제한적일 수 있다. 글로본이 새로 진출한 화학비료 파생원료(무수암모니아 등) 트레이딩 사업은 국제 원자재 가격과 물류, 환율 변동에 실적이 크게 좌우되는 구조를 갖는다. 이 사업은 비료산업 파생원료 사업에서의 마진이 크지 않은 것으로 시장에서 평가되고 있어, 매출 기여와 손익 기여가 반드시 비례하지는 않을 수 있다. 회사의 자산 규모는 과거 약 400억원대에서 170억원으로 절반 넘게 줄었다는 평가가 있어, 화장품과 비료 트레이딩 두 업종 내에서 모두 소형 사업자에 해당한다. 경쟁구도 측면에서 화장품 부문은 대형 브랜드사와 인디 브랜드가 혼재하는 시장에서 경쟁하며, 비료 트레이딩 부문은 진입장벽이 상대적으로 낮은 사업 특성상 다수의 트레이딩 업체와 경쟁한다.",
+  "en": "Korea's cosmetics industry is generally seen as continuing to grow on the back of expanding overseas demand for K-beauty. Sector research notes that K-beauty's functional appeal and reasonable pricing are lifting brand awareness in advanced markets while expansion into emerging markets continues, and rising K-content consumption is accelerating online sales and offline entry in the U.S. and Europe. However, the benefits of this trend tend to concentrate among larger players with strong brand power and distribution networks, or select indie brands, meaning a small brand company like Globon may see limited direct upside. Globon's newly entered chemical fertilizer-derivative (anhydrous ammonia, etc.) trading business is a structure whose performance is heavily influenced by global commodity prices, logistics, and exchange rates. This business is viewed in the market as having limited margins in the fertilizer-derivative trading business, meaning revenue contribution does not necessarily translate proportionally into profit. The company's asset base is reported to have shrunk by more than half to KRW 17bn from roughly KRW 40bn previously, positioning it as a small player in both the cosmetics and fertilizer-trading industries. In terms of competitive structure, the cosmetics segment competes in a market where large brand companies and indie brands coexist, while the fertilizer-trading segment, given its relatively low entry barriers, competes against numerous other trading firms."
  },
  "outlook": {
-  "ko": "회사 측은 국내 화장품 사업에 집중하겠다는 방향을 제시했으며, 2026년 3분기 흑자 전환을 목표로 한다는 언급이 확인된다. 2026년 1분기 별도기준 매출이 전년 동기 대비 24% 증가했다는 점은 화장품 부문 외형 회복의 초기 신호로 해석할 수 있으나, 비용 부담이 동반 확대되면서 영업손실이 오히려 커진 점은 해결해야 할 과제다. K-뷰티 산업 전반에서 미국·유럽·동남아 수출 확대 추세가 이어지고 있어, 중장기적으로 글로본의 채널·지역 다각화 전략에 우호적 환경을 제공할 수 있다. 비료 원료 부문에서는 기존 거래처와의 지속적 거래가 유지될 경우 화장품 사업의 계절성 변동성을 일부 완충하는 효과를 기대할 수 있다. 그러나 2025년 말 부채비율 112.7%, 4년 연속 마이너스 영업현금흐름이라는 재무 환경에서 추가 자금 조달 필요성이나 차입금 상환 부담이 중요한 변수로 남는다. 공시 지연 이력(과거 사업보고서·감사보고서 제출 기한 미준수)도 투명성 측면에서 지속 모니터링이 필요한 사항이다.",
-  "en": "Management has indicated its intention to refocus on the domestic cosmetics business and has referenced a target of returning to profitability by the third quarter of 2026. The 24% year-on-year revenue recovery in 2026Q1 on a standalone basis can be interpreted as an early top-line signal for the cosmetics segment, but the concurrent widening of operating losses indicates that cost discipline remains an unresolved challenge. The continued expansion of K-beauty exports to the US, Europe, and Southeast Asia provides a structurally favorable medium-to-long-term backdrop for geographic diversification efforts. Sustained transactions with existing counterparties in the fertilizer raw-material segment could provide a partial buffer against the seasonal volatility of the cosmetics business. However, with a debt ratio of 112.7% at end-2025 and four consecutive years of negative operating cash flow, additional financing needs or debt service obligations remain a critical variable. Past disclosure delays—specifically late submissions of annual and audit reports—continue to require ongoing transparency monitoring."
+  "ko": "가장 가시적인 단기 이벤트는 2026년 8월 24일 공시된 필리핀 Philippine Phosphate Fertilizer Corporation과의 무수암모니아 공급계약으로, 계약 규모는 38억원이며 약 4개월간 이행될 예정이다. 이는 글로본의 직전 사업연도 매출액 대비 28.7%에 달하는 상당한 비중을 차지해, 단기적으로 매출 규모를 끌어올릴 여지가 있다. 자금 측면에서는 2026년 초 한상호 대표이사를 대상으로 한 50억원 규모의 3자배정 유상증자에 이어, 같은 해 42억원 규모의 5회차 전환사채가 추가로 발행됐다. 해당 CB는 전환가액 2,863원, 표면이자율 1%·만기이자율 3%로 설정됐으며, 풋옵션은 2026년 10월 5일부터, 전환권은 2026년 11월 7일부터 행사가 가능하다. 특이하게도 이번 CB에는 콜옵션(매도청구권) 조항이 빠졌으며, 통상적인 30% 수준의 콜옵션을 포기한 점이 눈에 띈다. 언론 질의에 대해 회사 측이 CB 발행 이유와 신사업 수익성에 대한 질문에 답변하지 않았다는 점은 향후 신사업 진행 상황에 대한 정보 공개 수준을 지켜볼 필요가 있음을 시사한다. 화장품 부문은 해외 온라인·오프라인 채널 확대라는 산업 흐름에 올라탈 수 있는지가, 비료 트레이딩 부문은 이번 필리핀 계약 이후 후속 계약을 확보할 수 있는지가 각각 핵심 변수다.",
+  "en": "The most visible near-term event is the anhydrous ammonia supply contract with Philippine Phosphate Fertilizer Corporation disclosed on August 24, 2026, valued at KRW 3.8bn and set to run for about four months. This represents a substantial 28.7% of Globon's prior fiscal-year revenue, giving it potential to lift near-term sales. On the financing side, a KRW 5.0bn third-party rights offering to CEO Han Sang-ho in early 2026 was followed by the issuance of a fifth-series convertible bond worth KRW 4.2bn the same year. This CB carries a conversion price of KRW 2,863, a 1% coupon and 3% maturity yield, with the put option exercisable from October 5, 2026 and the conversion right exercisable from November 7, 2026. Notably, this CB lacks a call-option clause, forgoing the customary roughly 30% call option typically used to safeguard controlling ownership. The fact that the company did not respond to press inquiries about the reasons for the CB issuance and the profitability of the new business suggests the level of disclosure around the new venture's progress warrants continued attention. Key variables going forward are whether the cosmetics segment can ride the industry trend of expanding overseas online and offline channels, and whether the fertilizer-trading segment can secure follow-on contracts after this Philippine deal."
  },
  "valuation_comment": {
-  "ko": "글로본은 영업손실 상태가 지속되어 PER 산출이 불가능하며, 주당순자산(BPS 754원)을 상당히 웃도는 프리미엄 구간에서 주가가 형성되고 있다. 이는 사업 전환 기대감이나 K-뷰티 섹터 프리미엄이 선반영된 것으로 볼 수 있으나, 실제 수익력 회복이 뒷받침되지 않는 한 지속되기 어려운 수준이다. 4년 연속 적자인 가운데 배당은 전혀 없어 배당 기여가 없으며, 이는 수익 공유 측면에서 업종 내 대비 불리한 조건에 해당한다. 주가는 52주 기준 1,700~3,345원의 넓은 범위에서 등락했고, 극소형 유통주식과 낮은 평균 거래량을 감안할 때 변동성이 특히 높다. 수익성 정상화 여부가 밸류에이션 재평가의 핵심 선행 조건이다.",
-  "en": "Persistent operating losses render a price-to-earnings multiple incalculable, and the current share price trades at a notable premium to book value per share (BPS KRW 754). This premium may reflect expectations of a business turnaround or a sectoral K-beauty re-rating, but it is difficult to sustain without demonstrable earnings recovery. With four consecutive deficit years and no dividend paid, income yield contribution is zero—a disadvantage relative to sector peers from an income-sharing perspective. The stock has traversed a wide 52-week range of KRW 1,700–3,345, and given the small free float and low average daily turnover, price volatility is elevated. A return to sustainable profitability is the key prerequisite for any credible valuation re-rating."
+  "ko": "글로본은 최근 4개 연도 중 세 개 연도(2022, 2023, 2025)에서 지배주주 순손실을 기록해, 이익 기준 배수로 주가 수준을 가늠하기 어려운 구간에 놓여 있다. 주가순자산비율은 자본총계가 줄어드는 가운데서도 순자산 대비 일정한 프리미엄이 있는 구간에서 거래되는 것으로 나타난다. 2024년에서 2025년 사이 자본총계가 줄고 부채비율이 크게 뛴 만큼, 순자산을 기준으로 삼는 지표는 앞으로도 분기별 손익에 따라 변동성이 커질 수 있다. 최근 수년간 배당을 지급하지 않은 상태가 이어지고 있어 배당수익률 관점의 비교는 의미가 제한적이다. 아울러 최근 발행된 전환사채의 전환가액이 2,863원으로 확정돼 있어, 향후 전환권 행사 여부에 따라 유통주식수와 주당 지표가 달라질 수 있다는 점도 함께 고려할 필요가 있다.",
+  "en": "Globon posted an owner's net loss in three of the past four years (2022, 2023, and 2025), placing it in a range where earnings-based multiples are difficult to use as a gauge of share price level. Its price-to-book ratio appears to trade at a certain premium to net asset value even as total equity has been shrinking. Given that equity declined and the debt ratio jumped sharply between 2024 and 2025, book-value-based metrics are likely to remain volatile depending on quarterly earnings going forward. The company has not paid dividends in recent years, limiting the relevance of dividend-yield comparisons. It is also worth noting that the recently issued convertible bond has a fixed conversion price of KRW 2,863, meaning that shares outstanding and per-share metrics could change depending on whether the conversion right is exercised going forward."
  },
  "bull": [
   {
    "title": {
-    "ko": "K-뷰티 산업의 장기 구조적 성장",
-    "en": "Structural Long-Term Growth of the K-Beauty Industry"
+    "ko": "화장품 매출 회복 조짐",
+    "en": "Signs of Cosmetics Revenue Recovery"
    },
    "body": {
-    "ko": "2025년 한국 화장품 수출이 약 114억 달러로 사상 최대를 기록하고 수출 대상국이 202개국으로 다변화됐으며, 2026년에도 수출 확대 추세가 지속될 것으로 전망된다. K-콘텐츠 소비 증가에 따른 글로벌 브랜드 인지도 상승은 RUE KWAVE가 타겟으로 하는 아시아 여성 소비자에게도 긍정적 환경을 조성한다. 동남아·중동 등 신흥 시장에서 K-뷰티 수요가 폭발적으로 늘고 있어 글로본의 지역 다각화 전략이 탄력을 받을 수 있는 구간이다.",
-    "en": "Korean cosmetics exports reached approximately USD 11.4 bn in 2025—a new all-time high—reaching 202 countries, with growth expected to continue in 2026. Rising global brand recognition driven by K-content consumption creates a favorable environment for RUE KWAVE's target demographic of Asian female consumers. Explosive K-beauty demand growth in emerging markets such as Southeast Asia and the Middle East offers a supportive backdrop for Globon's geographic diversification strategy."
+    "ko": "2026년 1분기와 2분기 매출이 각각 27억 8,190만원, 32억 3,491만원으로 순차 증가했고, 영업손실 규모도 2025년 4분기의 30억 4,447만원보다는 완화된 6억~8억원대로 줄었다. 이는 화장품 사업의 저점 통과 가능성을 시사하는 신호로 해석될 수 있다. 다만 두 분기 모두 여전히 영업손실 상태를 벗어나지 못했다는 점은 유의할 부분이다.",
+    "en": "Revenue rose sequentially to KRW 2.782bn and KRW 3.235bn in 1Q and 2Q 2026, respectively, and the operating loss narrowed to the KRW 600-800mn range from KRW 3.044bn in 4Q 2025. This could be read as a signal that the cosmetics business may be moving past its trough. However, both quarters still failed to escape an operating loss, which warrants attention."
    }
   },
   {
    "title": {
-    "ko": "비료 원료 트레이딩의 사업 다각화 효과",
-    "en": "Revenue Diversification via Fertilizer Raw-Material Trading"
+    "ko": "비료 신사업의 대형 계약 확보",
+    "en": "Large Contract Win in New Fertilizer Business"
    },
    "body": {
-    "ko": "화장품과 독립적인 수급 사이클을 가진 인산 원료 트레이딩은 화장품 사업의 계절성·수요 변동성을 일부 완충하는 효과를 제공한다. 필리핀인산비료공사 등 3년 이상 지속된 기존 거래처는 신규 영업 대비 상대적으로 안정적인 매출 기반을 제공할 수 있다. 글로벌 농산물 가격 상승 국면에서는 원료 트레이딩 부문의 마진 개선을 기대해볼 수 있는 구조다.",
-    "en": "Phosphoric acid trading, which operates on a supply-demand cycle independent of cosmetics, provides a partial buffer against the seasonality and demand volatility of the cosmetics segment. Established relationships of over three years with counterparties such as the Philippine Phosphate Fertilizer Corporation offer a relatively stable revenue base compared with new business development. In periods of rising global agricultural commodity prices, margin improvement in the raw-material trading segment is a plausible upside scenario."
+    "ko": "2026년 8월 필리핀 Philippine Phosphate Fertilizer Corporation과 38억원 규모의 무수암모니아 공급계약을 체결하며 매출원 다각화 시도가 구체적 성과로 이어졌다. 이 계약 규모는 직전 사업연도 매출액의 28.7%에 달해 단기 매출 확대에 기여할 수 있다. 후속 계약이 이어질 경우 신사업이 안정적인 매출 축으로 자리잡을 가능성도 있다.",
+    "en": "In August 2026, Globon signed a KRW 3.8bn anhydrous ammonia supply contract with Philippine Phosphate Fertilizer Corporation, turning its revenue diversification effort into a concrete result. The contract size equals 28.7% of the prior fiscal year's revenue, potentially boosting near-term sales. If follow-on contracts materialize, the new business could become a more stable revenue pillar."
    }
   },
   {
    "title": {
-    "ko": "화장품 매출 반등 조짐과 집중 전략 전환",
-    "en": "Early Revenue Recovery and Strategic Refocus on Cosmetics"
+    "ko": "K-뷰티 해외수요 확대 기조",
+    "en": "Favorable K-Beauty Export Trend"
    },
    "body": {
-    "ko": "2026년 1분기 별도기준 화장품 매출이 전년 동기 대비 24% 증가한 것은 매출 바닥 통과 가능성을 시사하는 초기 신호다. 다각화에서 국내 화장품 집중으로의 전략 전환은 기존 사업 분산에 따른 비용 효율화를 통해 손익분기점에 근접할 가능성을 높인다. 외형 회복이 선행하고 비용 구조 개선이 뒤따를 경우 수익성 회복의 경로가 점진적으로 열릴 수 있다.",
-    "en": "The 24% year-on-year rise in standalone cosmetics revenue in 2026Q1 is an early indicator of a potential revenue trough. The strategic pivot from diversification to a focused domestic cosmetics model could improve cost efficiency by reducing the overhead previously spread across disparate businesses, thereby raising the likelihood of approaching breakeven. If top-line recovery continues to lead and cost structure improvements follow, a gradual path to profitability may emerge."
+    "ko": "리서치 자료에 따르면 K-뷰티는 기능성과 합리적인 가격을 바탕으로 해외 시장에서 인지도가 높아지고 있으며, K-콘텐츠 소비 확대에 힘입어 온라인·오프라인 진출이 가속화될 것으로 전망되고 있다. 이러한 산업 전반의 우호적 흐름은 RUE KWAVE 브랜드를 보유한 글로본에도 사업 기회로 작용할 수 있다.",
+    "en": "Sector research indicates K-beauty is gaining recognition overseas on the strength of functional benefits and reasonable pricing, with online and offline expansion expected to accelerate alongside growing K-content consumption. This broadly favorable industry trend could present business opportunities for Globon, which owns the RUE KWAVE brand."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "만성 적자와 현금 소진 구조",
-    "en": "Chronic Losses and Persistent Cash Drain"
+    "ko": "반복되는 적자와 자본 훼손",
+    "en": "Repeated Losses Eroding Capital"
    },
    "body": {
-    "ko": "영업현금흐름이 2022년부터 2025년까지 4년 연속 마이너스를 기록했고, 2025년 영업손실은 48.3억원으로 조사 기간 최대다. 2025년 4분기 단일 분기에 집중된 대규모 손실(영업손실 30.4억원, 순손실 43.6억원)의 성격이 일회성인지 구조적인지 아직 확인되지 않았다. 현금 창출 능력 없이 사업을 지속할 경우 추가 차입이나 주주 희석이 불가피하다.",
-    "en": "Operating cash flow has been negative for four consecutive years (2022–2025), and the 2025 operating loss of KRW 4.83 bn was the largest in the reviewed period. The nature of the outsized 2025Q4 loss (operating loss KRW 3.04 bn, net loss KRW 4.36 bn)—whether one-time or structural—remains unconfirmed. Sustaining operations without cash generation will likely require additional borrowing or equity dilution, both of which carry their own costs."
+    "ko": "2025년 영업손실은 48억 3,019만원, 지배주주 순손실은 57억 5,900만원에 달했고, 부채비율은 2024년 20.2%에서 2025년 112.7%로 급등했다. 자본총계도 111억원에서 108억원으로 줄어드는 등 재무구조가 빠르게 악화됐다. 영업활동현금흐름 역시 4개 연도 연속 마이너스를 기록해, 손익뿐 아니라 현금창출력 측면에서도 부담이 이어지고 있다.",
+    "en": "In 2025 the operating loss reached KRW 4.830bn and the owner's net loss reached KRW 5.759bn, while the debt ratio surged from 20.2% in 2024 to 112.7% in 2025. Total equity also declined from KRW 11.1bn to KRW 10.8bn, reflecting a rapidly deteriorating financial structure. Operating cash flow was negative for four consecutive years, indicating pressure on cash generation as well as earnings."
    }
   },
   {
    "title": {
-    "ko": "부채 급증과 재무 건전성 훼손",
-    "en": "Surging Liabilities and Deteriorating Financial Health"
+    "ko": "연이은 외부 자금조달과 희석 우려",
+    "en": "Repeated External Financing and Dilution Risk"
    },
    "body": {
-    "ko": "2025년 부채가 22.6억원에서 121.8억원으로 99억원 이상 급증하면서 부채비율이 112.7%로 뛰었다. 금리 부담이 이어지는 환경에서 이자비용이 수익성을 추가로 압박할 수 있으며, 차입 상환 일정에 따라 단기 유동성 리스크도 배제할 수 없다. 자기자본 잠식이 가속화될 경우 상장 적격성 및 감사 의견 측면에서도 위험 요인이 될 수 있다.",
-    "en": "Total liabilities surged by over KRW 9.9 bn in 2025 to KRW 12.18 bn, pushing the debt ratio to 112.7%. In a still-elevated interest-rate environment, rising interest costs could further erode profitability, and depending on repayment schedules, short-term liquidity risks cannot be excluded. If equity erosion accelerates, risks to continued listing eligibility and adverse audit opinions may also materialize."
+    "ko": "회사는 2026년 초 대표이사 대상 50억원 규모 3자배정 유상증자에 이어 42억원 규모의 전환사채를 추가로 발행했다. CB 전환가액은 2,863원으로 향후 전환권 행사 시 유통주식수가 늘어날 수 있으며, 이번 CB에는 지배력 안전판 역할을 하는 콜옵션 조항도 빠져 있다. 반복적인 자금조달은 운영자금 부족이 상시적이라는 점을 보여준다.",
+    "en": "The company followed a KRW 5.0bn third-party rights offering to its CEO in early 2026 with an additional KRW 4.2bn convertible bond issuance. The CB's conversion price of KRW 2,863 means shares outstanding could increase if the conversion right is exercised, and this CB also lacks the call-option clause typically used as a control safeguard. The repeated fundraising suggests chronic shortfalls in operating capital."
    }
   },
   {
    "title": {
-    "ko": "중국 의존 화장품 구조와 경쟁 심화",
-    "en": "China-Dependent Cosmetics Structure Amid Intensifying Competition"
+    "ko": "신사업 수익성 불확실성",
+    "en": "Uncertain Profitability of New Businesses"
    },
    "body": {
-    "ko": "RUE KWAVE 브랜드는 중국·동남아를 핵심 시장으로 하나, 중국은 수입 화장품 규제 강화와 로컬 브랜드 부상으로 외부 환경이 불리해졌다. 마케팅 예산과 유통 네트워크 측면에서 대형 K-뷰티 인디 브랜드 및 ODM사와 격차를 좁히기 어려워 경쟁력 유지가 쉽지 않다. 초소형 시가총액은 글로벌 유통 파트너십 유치나 브랜드 투자 확대에도 구조적 걸림돌로 작용한다.",
-    "en": "The RUE KWAVE brand is anchored in China and Southeast Asia, but the Chinese market has become increasingly challenging due to tighter import regulations and the growing strength of domestic brands. Closing the gap with larger K-beauty indie brands and ODM players in marketing budgets and distribution networks is structurally difficult. The company's extremely small market capitalization also acts as a structural barrier to securing global distribution partnerships or expanding brand investment."
+    "ko": "비료산업 파생원료 트레이딩 사업은 마진이 크지 않은 것으로 시장에서 평가되고 있으며, 과거 신재생에너지·수소플랜트 등 다수의 신사업 시도가 실질적 사업화나 지속적 수익 창출로 이어지지 못한 전례가 있다. 신규 사업목적 추가와 실제 사업 성과 사이의 간극이 반복돼 왔다는 점에서 비료 사업의 지속가능성도 지켜볼 필요가 있다.",
+    "en": "The fertilizer-derivative trading business is viewed in the market as having limited margins, and the company has a track record of prior new-business attempts—renewable energy, hydrogen plants, and others—that failed to translate into substantive, sustained operations. Given the recurring gap between newly added business objectives and actual results, the sustainability of the fertilizer business also warrants continued monitoring."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무·유동성 리스크",
-    "en": "Financial & Liquidity Risk"
+    "ko": "재무·지배구조 투명성 리스크",
+    "en": "Financial and Governance Transparency Risk"
    },
    "body": {
-    "ko": "4년 연속 마이너스 영업현금흐름과 2025년 부채 급증으로 자금 조달 압박이 높아진 상황이다. 추가 차입 시 이자비용 증가로 순손실이 확대될 수 있으며, 유상증자 시에는 기존 주주 지분 희석이 발생한다. 감사보고서 적정 의견 변경이나 계속기업 가정 관련 주석 등 공시 리스크도 지속적인 모니터링이 필요하다.",
-    "en": "Four consecutive years of negative operating cash flow combined with the 2025 surge in liabilities heighten refinancing pressure. Additional borrowing could widen net losses through higher interest charges, while equity issuances would dilute existing shareholders. Potential audit-opinion modifications or going-concern disclosures in forthcoming auditor reports also warrant close monitoring."
+    "ko": "최근 1년 6개월간 정기주주총회 결과, 매출액·손익구조 변동 등 관련 공시에서 총 4건의 기재정정 이력이 확인됐고, 2026년 3월에는 감사보고서 제출 지연 공시도 있었다. 잦은 공시 정정과 지연은 정보 신뢰도에 대한 의문으로 이어질 수 있다.",
+    "en": "Over the past 18 months, four disclosure amendments were identified related to filings such as annual general shareholders' meeting results and revenue/profit-structure changes, and in March 2026 the company disclosed a delay in submitting its audit report. Frequent disclosure corrections and delays can raise questions about information reliability."
    }
   },
   {
    "cat": {
-    "ko": "중국 규제·시장 리스크",
-    "en": "China Regulatory & Market Risk"
+    "ko": "유동성 및 자본조달 구조 리스크",
+    "en": "Liquidity and Capital Structure Risk"
    },
    "body": {
-    "ko": "중국은 수입 화장품 등록 제도 강화, 기능성 원료 사전심사 확대 등 규제 강화 추세가 지속되고 있다. 중국 소비 경기 둔화 및 로컬 브랜드 부상으로 K-뷰티 수입 시장이 축소될 가능성이 있으며, 물류·재고 리스크도 동반 증가하고 있다. 중국 집중적 채널 구조를 단기간에 다각화하기 어렵다는 점에서 매출 변동성이 클 수밖에 없다.",
-    "en": "China is experiencing escalating regulatory risks, including stricter import registration requirements and expanded pre-approval processes for functional cosmetic ingredients. A slowdown in Chinese consumer spending and the rise of local brands may further compress the K-beauty import market, while logistics and inventory risks are also intensifying. The difficulty of rapidly diversifying away from a China-centric channel structure leaves revenue highly exposed to changes in that market."
+    "ko": "42억원 규모 CB의 풋옵션은 2026년 10월 5일부터, 전환권은 11월 7일부터 행사 가능해 자금 재상환 또는 지분 희석 중 하나의 이벤트가 임박해 있다. 콜옵션 조항이 빠진 구조여서 회사 측의 대응 여력이 상대적으로 제한적일 수 있다.",
+    "en": "The put option on the KRW 4.2bn CB becomes exercisable from October 5, 2026, and the conversion right from November 7, 2026, meaning either a cash repayment event or a dilution event is approaching. The absence of a call-option clause could leave the company with relatively limited room to respond."
    }
   },
   {
    "cat": {
-    "ko": "공시 투명성·거버넌스 리스크",
-    "en": "Disclosure Transparency & Governance Risk"
+    "ko": "사업 집중·계약 지속성 리스크",
+    "en": "Business Concentration and Contract Continuity Risk"
    },
    "body": {
-    "ko": "과거 사업보고서 및 감사보고서를 기한 내에 제출하지 않은 이력이 있어 투자자 신뢰도에 영향을 미친다. 화장품·비료 트레이딩·투자조합이라는 이종 사업 복합 구조는 부문별 실적 파악을 어렵게 해 정보 비대칭을 높인다. 소규모 유통주식과 낮은 평균 거래량은 주가 급변 리스크를 높이는 구조적 요인이다.",
-    "en": "Past instances of late annual and audit report submissions reduce investor confidence in the company's disclosure practices. The conglomerate structure spanning cosmetics, fertilizer trading, and investment partnerships makes segment-level performance assessment difficult, amplifying information asymmetry. The small free float and low average daily trading volume are structural factors that elevate the risk of sharp and disorderly price movements."
+    "ko": "필리핀 대상 공급계약 하나가 직전 사업연도 매출의 28.7%에 달할 정도로 단일 계약 의존도가 높아, 계약 종료 이후 후속 물량을 확보하지 못하면 매출 공백이 발생할 수 있다. 화장품 본업 역시 매출 회복이 아직 손익 개선으로 이어지지 않고 있어 두 사업 모두 지속성 검증이 필요한 단계다.",
+    "en": "Reliance on a single contract is high, with the Philippine supply deal alone equal to 28.7% of prior fiscal-year revenue, creating a potential revenue gap if follow-on volume is not secured after the contract ends. In the core cosmetics business, revenue recovery has not yet translated into improved profitability, meaning both segments are at a stage where continuity needs to be verified."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 10월 5일",
+    "en": "October 5, 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 공시 예정. 화장품 국내 집중 전략이 영업손실 축소로 이어지는지, 계절적 매출 회복이 고정비를 상회하는지 확인이 필요하다.",
-    "en": "Expected release of 2026Q2 results; key check on whether the domestic cosmetics refocus is translating into meaningful operating loss reduction and whether seasonal revenue recovery is outpacing fixed costs."
+    "ko": "42억원 규모 CB의 풋옵션 행사기간 개시. 사채권자의 조기상환청구 여부와 규모를 확인해야 한다.",
+    "en": "The put option on the KRW 4.2bn CB becomes exercisable. Watch whether and to what extent bondholders request early redemption."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월경",
-    "en": "Around November 2026"
+    "ko": "2026년 11월 7일",
+    "en": "November 7, 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표. 회사가 언급한 '3분기 흑자 전환' 목표의 달성 여부를 확인하는 핵심 시점으로, 달성 실패 시 연간 실적 개선 가시성이 크게 낮아질 수 있다.",
-    "en": "2026Q3 results release; the definitive checkpoint for management's stated goal of returning to profitability by Q3 2026. Failure to achieve this target would substantially reduce visibility into full-year earnings improvement."
+    "ko": "동 CB의 전환권 행사기간 개시. 실제 전환 물량이 발생하면 유통주식수와 지배구조에 변화가 생길 수 있다.",
+    "en": "The conversion right on the same CB becomes exercisable. Any actual conversion would change shares outstanding and ownership structure."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 상시",
-    "en": "Ongoing in H2 2026"
+    "ko": "2026년 11월 중순(3분기 실적 발표 예상 시점)",
+    "en": "Mid-November 2026 (expected 3Q results release)"
    },
    "what": {
-    "ko": "2025년 말 급증한 부채(121.8억원)의 상환 일정, 신규 차입·전환사채·유상증자 등 자본 조달 이벤트 발생 시 재무 구조 변화를 주시해야 한다.",
-    "en": "Continuous monitoring of the liability repayment schedule (KRW 12.18 bn as of end-2025) and any new capital-raising events—new borrowings, convertible bond issuances, or rights offerings—that could alter the balance-sheet structure."
+    "ko": "필리핀 대상 무수암모니아 공급계약분 매출이 3분기 실적에 얼마나 반영되는지, 비료 사업의 실제 마진을 확인해야 한다.",
+    "en": "Check how much of the Philippine anhydrous ammonia supply contract flows into 3Q results and what actual margin the fertilizer business generates."
    }
   },
   {
    "when": {
-    "ko": "수시 (DART 공시 모니터링)",
-    "en": "Ongoing (DART Filing Monitoring)"
+    "ko": "2026년 12월경",
+    "en": "Around December 2026"
    },
    "what": {
-    "ko": "비료 원료 단일 공급계약 등 중요 계약 공시, 최대주주 지분 변동, 사업 구조 변경 등 중요 공시를 지속적으로 확인해야 한다.",
-    "en": "Continuous monitoring of material contract disclosures (such as phosphoric acid supply agreements), changes in controlling shareholder holdings, and any significant corporate restructuring announcements."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월 말 (2026 사업연도 보고서 제출 기한)",
-    "en": "End of March 2027 (2026 Annual Report Deadline)"
-   },
-   "what": {
-    "ko": "과거 공시 지연 이력을 감안해 2026 사업연도 사업보고서·감사보고서의 적시 제출 여부와 감사 의견의 내용을 확인할 필요가 있다.",
-    "en": "Given prior disclosure delays, timely submission of the 2026 annual report and auditor's report must be verified, along with the nature and content of the audit opinion issued."
+    "ko": "약 4개월간 진행되는 필리핀 대상 공급계약의 이행 종료 시점. 계약 완수 여부와 후속 계약 체결 여부를 확인해야 한다.",
+    "en": "The roughly four-month Philippine supply contract is expected to conclude around this time. Confirm whether the contract was fulfilled and whether follow-on contracts were signed."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "글로본은 K-뷰티 화장품 브랜드와 비료 원료 트레이딩을 결합한 초소형 코스닥 기업으로, 업종 전반의 수출 호조에도 불구하고 자체 수익성 회복은 아직 요원한 상황이다. 2024년 일시적 흑자 전환 이후 2025년 영업손실이 다시 사상 최대 수준으로 확대됐고, 특히 4분기에 집중된 대규모 손실과 부채비율의 급격한 상승이 재무 안정성에 대한 의문을 높이고 있다. 2026년 1분기 매출 회복 신호는 긍정적이나, 영업손실이 동반 확대되어 수익성 개선의 구체적 증거로 보기에는 시기상조다. K-뷰티 업종의 미국·동남아 수출 다변화라는 구조적 기회가 존재하는 반면, 중국 규제 강화와 인디 브랜드 경쟁 심화는 핵심 시장 리스크로 계속 작용한다. 비료 원료 트레이딩은 사업 다각화 기능을 하지만 복합 구조에 따른 실적 가시성 저하는 외부 투자자 입장에서 분석의 불확실성을 높인다. 향후 핵심 관찰 포인트는 ① 관리 목표인 '3분기 흑자 전환' 달성 여부, ② 부채 해소 또는 재무 구조 개선의 구체적 방안, ③ 화장품 사업의 지역·채널 다각화 실행 속도다.",
-   "en": "Globon is a micro-cap KOSDAQ company combining a K-beauty cosmetics brand with fertilizer raw-material trading—a structure that has thus far prevented meaningful profitability despite sector-wide export tailwinds. Following a brief profit in 2024, operating losses widened sharply to a record in 2025, with a concentration of large charges in Q4 and a sudden surge in liabilities raising balance-sheet concerns. The 2026Q1 revenue recovery signal is encouraging, but its coincidence with widening operating losses makes it premature to treat as evidence of sustainable improvement. Structural opportunities exist in the global shift of K-beauty demand toward the US and Southeast Asia, while regulatory tightening in China and intensifying indie brand competition remain core market risks. The fertilizer trading segment adds revenue diversification but also reduces earnings transparency for external stakeholders due to the complexity of the combined business model. The three key forward indicators to monitor are: (1) whether management's stated Q3 2026 profitability target is achieved; (2) the specifics of any liability reduction or balance-sheet remediation plan; and (3) the pace of execution in diversifying the cosmetics segment's geography and channel mix."
+   "ko": "글로본은 화장품 전문기업에서 출발해 최근 비료산업 파생원료 트레이딩까지 사업 영역을 넓히고 있는 소형 코스닥 상장사다. 2025년 연결 매출은 129억원, 영업손실 48억원, 지배주주 순손실 58억원으로 2024년의 일시적 흑자에서 다시 적자로 돌아섰고, 부채비율도 크게 뛰었다. 2026년 들어 분기 매출은 회복세를 보이고 영업손실 규모도 4분기 저점보다 줄었지만, 여전히 손실 국면을 벗어나지 못했다. 필리핀 기업과 체결한 38억원 규모 무수암모니아 공급계약은 신사업의 첫 구체적 성과이나, 매출의 상당 부분을 단일 계약에 의존하는 구조라는 한계도 함께 갖고 있다. 50억원 유상증자와 42억원 CB 발행이 이어지는 자금조달 패턴은 회사의 상시적인 자금 부족 상황을 반영하며, CB의 풋옵션·전환권 행사 시점이 각각 10월과 11월로 다가와 있다. 화장품 본업의 손익 개선 여부와 비료 신사업의 수익성·지속성이 향후 실적의 방향을 가를 핵심 변수로 남아 있다.",
+   "en": "Globon is a small KOSDAQ-listed company that began as a cosmetics specialist and has recently expanded into fertilizer-derivative trading. 2025 consolidated revenue was KRW 12.9bn, with an operating loss of KRW 4.8bn and an owner's net loss of KRW 5.8bn, reversing from the brief 2024 profit as the debt ratio also surged. Quarterly revenue has shown a recovery trend in 2026 and the operating loss has narrowed from its 4Q trough, but the company has yet to exit loss territory. The KRW 3.8bn anhydrous ammonia supply contract signed with a Philippine company is the new business's first concrete result, but it also carries the limitation of heavy reliance on a single contract for a large share of revenue. The pattern of a KRW 5.0bn rights offering followed by a KRW 4.2bn CB issuance reflects the company's persistent need for capital, with the CB's put option and conversion right exercise dates approaching in October and November, respectively. Whether the core cosmetics business can improve its profitability, and whether the new fertilizer business proves profitable and sustainable, remain the key variables that will determine the direction of future results."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A019660",
-  "https://alphasquare.co.kr/home/stock-summary?code=019660",
-  "https://thevc.kr/globon",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=019660&cn=",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A019660",
+  "https://thevc.kr/globon",
+  "https://meerae.ai/atlas/019660/",
+  "https://stockcatcher.co.kr/%ea%b8%80%eb%a1%9c%eb%b3%b8-%ec%a3%bc%ec%8b%9d-%ec%a3%bc%ea%b0%80-%eb%b6%84%ec%84%9d-%ed%85%8c%eb%a7%88%ec%a3%bc-%ea%b4%80%eb%a0%a8%ec%a3%bc-%ec%a0%95%eb%a6%ac-%ea%b8%b0%ec%97%85-%ec%a0%84%eb%a7%9d/",
+  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=019660",
   "https://www.investing.com/equities/globon-co-ltd",
+  "https://dealsite.co.kr/articles/141055/068030",
+  "https://www.kokstock.com/stock/item.asp?item_cd=019660",
+  "https://m.thinkpool.com/item/019660",
   "https://www.msn.com/ko-kr/money/markets?id=ajnxvh&tab=TopGainers&ocid=HPDHP",
-  "https://markets.hankyung.com/stock/019660/chart",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/globon019660",
-  "http://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=019660",
-  "https://infostock.co.kr/",
-  "https://www.investing.com/economic-calendar",
-  "https://data.krx.co.kr/",
-  "https://imnews.imbc.com/replay/2026/nw930/article/6827686_36996.html",
-  "https://www.daishin.com/g.ds?p=3647&v=2694&m=88",
-  "https://kr.investing.com/indices/kosdaq",
-  "https://alphasquare.co.kr/home/market-summary",
-  "https://kr.investing.com/indices/kospi-historical-data",
-  "https://dart.fss.or.kr/"
+  "https://dealsite.co.kr/articles/150806/089059",
+  "https://www.dailyan.com/news/article.html?no=776383",
+  "https://zuzu.network/resource/blog/economywave-capital-reduction/",
+  "https://m.finance.daum.net/quotes/A044480/news/disclosure/20260401041162",
+  "https://www.quorumbio.com/%EC%9D%B4%EA%B6%8C%EB%B6%80-%EB%AC%B4%EB%B3%B4%EC%A6%9D-%EC%82%AC%EB%AA%A8-%EC%A0%84%ED%99%98%EC%82%AC%EC%B1%84-%EB%B0%9C%ED%96%89-%EC%9D%B4%EC%82%AC%ED%9A%8C-%EC%9D%98%EC%82%AC/",
+  "https://kind.krx.co.kr/external/2026/05/18/000323/20260518000510/11013.htm",
+  "https://m.finance.daum.net/quotes/A158430/news/disclosure/20251120089082"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "019660",
  "name": "글로본",
  "name_en": "GLOBON CO., LTD.",
@@ -233,9 +223,9 @@
   "유통·소비재"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 04:07",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 19:39",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 1516,
-   "mcap": 0.0211,
+   "price": 1521,
+   "mcap": 0.0212,
    "shares": 13944333,
    "total_shares": 13944333,
    "wavg_shares": 13300226,
    "per": null,
    "eps": -473,
-   "pbr": 2.1203,
+   "pbr": 2.1273,
    "bps": 715,
    "roe_ttm": -51.4,
    "ttm_window": "2025Q3~2026Q2",
