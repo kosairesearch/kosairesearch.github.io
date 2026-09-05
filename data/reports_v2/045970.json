@@ -1,231 +1,220 @@
 {
  "title": {
-  "ko": "4년 연속 적자 탈출 기로, AI 칩렛 수주가 관건",
-  "en": "CoAsia at Inflection Point: AI Chiplet Contracts to Determine Loss Exit"
+  "ko": "매출 성장 속 적자 축소, AI칩렛 기대",
+  "en": "Revenue Growth, Narrowing Losses, Chiplet Bets"
  },
  "lead": {
-  "ko": "코아시아는 2022년 이후 4년 연속 영업 적자를 이어왔으나, 자회사 코아시아세미가 텐스토렌트·리벨리온 등 글로벌 AI 반도체 팹리스와 잇달아 대형 칩렛 양산 계약을 체결하면서 전자부품 제조 중심에서 시스템반도체 설계·양산 솔루션 기업으로의 구조 전환이 본격화되고 있다.",
-  "en": "Despite four consecutive years of operating losses since 2022, CoAsia is accelerating a structural pivot as subsidiary CoAsia SEMI secures major AI chiplet mass-production contracts with Tenstorrent and Rebellions, marking a decisive shift from electronics manufacturing toward system semiconductor design-and-production solutions."
+  "ko": "코아시아는 삼성 파운드리·Arm 파트너십을 기반으로 한 시스템반도체 설계 자회사와 카메라모듈 자회사를 축으로 매출 성장과 적자 축소가 동시에 진행되고 있으나, 최근 분기에는 영업손실이 재발하는 등 이익의 질은 아직 안정되지 않았다.",
+  "en": "CoAsia is seeing both revenue growth and narrowing losses through its system semiconductor design subsidiary built on Samsung Foundry and Arm partnerships and its camera module unit, though operating losses have resurfaced in the most recent quarters, leaving earnings quality still unsettled."
  },
  "keypoints": [
   {
-   "ko": "시스템반도체 매출 비중이 2024년 9% → 2025년 연간 16.2% → 2026년 1분기 29.9%로 빠르게 상승하며 사업 믹스 전환이 가속화 중",
-   "en": "System semiconductor revenue share surged from 9% (FY2024) to 16.2% (FY2025) to 29.9% (Q1 2026), signaling an accelerating business mix shift toward higher-value services."
+   "ko": "2025년 연결 매출 3,751억원으로 전년 대비 소폭 증가, 영업손실은 22.4억원으로 2024년 396억원 대비 대폭 축소",
+   "en": "2025 consolidated revenue reached KRW375.1bn, up slightly year over year, while the operating loss narrowed sharply to KRW2.24bn from KRW39.6bn in 2024"
   },
   {
-   "ko": "코아시아세미, CES 2026에서 텐스토렌트와 AI 칩렛 양산 전환 계약 체결 — 회사는 해당 프로젝트로 1,400억 원 이상의 매출을 기대",
-   "en": "CoAsia SEMI signed an AI chiplet mass-production contract with Tenstorrent at CES 2026, with the company projecting over KRW 140bn in cumulative revenue from the deal."
+   "ko": "2026년 1분기·2분기 연속 지배주주순이익 흑자(각각 22.3억원, 3.7억원) 전환, 다만 영업손익은 두 분기 모두 적자",
+   "en": "Net income attributable to owners turned positive for two straight quarters in 2026 (KRW2.23bn in Q1, KRW0.37bn in Q2), even as operating profit remained negative in both quarters"
   },
   {
-   "ko": "2025년 연간 영업손실률 -0.6%로 2024년(-11.1%) 대비 대폭 개선됐으나, 2026년 1분기 판관비 24.3% 급증으로 영업손실(-20억 원)이 재발해 흑자 전환 시점이 여전히 불확실",
-   "en": "FY2025 operating margin improved sharply to -0.6% from -11.1% in FY2024, but Q1 2026 swung back to an operating loss of -KRW 2.0bn as SGA costs surged 24.3% YoY, leaving the breakeven timeline uncertain."
+   "ko": "자회사 코아시아세미, 리벨리온과 데이터센터용 AI 칩렛 공동개발 진행 중이며 2026년 말 개발·검증 완료를 목표로 제시",
+   "en": "Subsidiary CoAsia SEMI is jointly developing a data-center AI chiplet with Rebellions, targeting completion of development and verification by the end of 2026"
   },
   {
-   "ko": "2025년 영업현금흐름(CFO) +130억 원으로 흑자 전환, 2024년의 -393억 원 대비 현금 창출 구조가 뚜렷하게 개선",
-   "en": "FY2025 operating cash flow turned positive at +KRW 13.0bn from -KRW 39.3bn in FY2024, signaling meaningful working-capital and earnings-quality improvement."
+   "ko": "자회사 코아시아씨엠은 삼성전자 갤럭시 카메라모듈 공급을 기반으로 분기 흑자 기조를 이어가고 있으나 2026년 2분기는 전방산업 재고조정 영향으로 수익성이 일시 둔화",
+   "en": "Subsidiary CoAsia CM has maintained quarterly profitability on the back of Samsung Galaxy camera module supply, though Q2 2026 profitability softened temporarily due to downstream inventory adjustments"
   },
   {
-   "ko": "부채비율이 2022년 151.5% → 2025년 195.9%로 상승세이며, 양산 매출이 본격 인식되기 전까지 레버리지 부담이 지속될 전망",
-   "en": "The debt-to-equity ratio has risen from 151.5% (2022) to 195.9% (2025), sustaining balance-sheet pressure until mass-production revenues are firmly recognized."
+   "ko": "주가순자산비율은 1배를 밑돌아 순자산가치 대비 할인 구간에서 거래되며, 최근 회계연도 기준 배당은 실시되지 않고 있음",
+   "en": "The price-to-book ratio sits below 1x, placing the stock in a discount range relative to net asset value, and the company has not paid dividends in the most recent fiscal years"
   }
  ],
  "business": {
-  "ko": "코아시아(045970)는 1993년 설립·2000년 코스닥 상장 기업으로, 대만 코아시아전자(CoAsia Electronics Corp.)를 그룹 모태로 하는 범아시아 IT·반도체 그룹의 한국 상장 지주사 역할을 수행한다. 사업은 ①시스템반도체(DSP), ②IT부품 유통, ③LED, ④카메라 모듈, ⑤음향부품(2021년 이후 사실상 정리) 등 5개 부문으로 구성되어 있다. 핵심 성장 축인 시스템반도체 부문은 자회사 코아시아세미(CoAsia SEMI)가 주도하며, 삼성전자 파운드리 SAFE 공식 디자인 솔루션 파트너(DSP)이자 영국 Arm의 최고 등급 공식 디자인 파트너(AADP)로 선단 공정 칩 설계·검증·양산 연계 원스톱 솔루션을 제공한다. 계열사 코아시아넥셀은 삼성전자 엑시노스 공식 파트너사로 SoC 디자인 플랫폼 서비스를 담당하고, 자회사 C&CI 파트너스는 신기술사업금융업(신기사) 면허를 취득해 반도체 생태계 투자 기능을 병행한다. 전자부품 부문에서는 베트남 법인 CoAsia CM VINA가 삼성전자 갤럭시 스마트폰용 카메라·렌즈 모듈을 공급하고, CoAsia ITSWELL VINA는 전장용 스마트 LED 사업을 영위한다. 코아시아세미는 텐스토렌트의 AI 칩렛 개발·양산, 리벨리온과의 PIM 서버 반도체 개발, 독일 이노바(Inova Semiconductors)와의 차량용 ISELED 웨이퍼 라이선스 계약 등으로 글로벌 수주 기반을 확대하고 있다. 경쟁사로는 국내 DSP 동종업체인 가온칩스·에이디테크놀로지 등이 있으며, 칩렛·첨단 패키지 분야에서는 대만 글로벌 유니칩(Global Unichip) 등과 사업 모델이 유사하다.",
-  "en": "CoAsia (045970), founded in 1993 and listed on KOSDAQ in 2000, serves as the Korean listed holding company for a pan-Asian IT and semiconductor group anchored by Taiwan-based CoAsia Electronics Corp. The group operates across five business segments: (1) system semiconductors (DSP), (2) IT components distribution, (3) LED, (4) camera modules, and (5) audio components (largely wound down since 2021). The key growth engine, the system semiconductor segment, is led by subsidiary CoAsia SEMI, which holds official Design Solution Partner (DSP) status in Samsung Foundry's SAFE ecosystem and Arm's highest-tier Arm Approved Design Partner (AADP) designation, providing end-to-end chip design, verification, and mass-production linkage. Affiliate CoAsia NEXELL is an official Samsung Exynos partner for SoC design platform services, while subsidiary C&CI Partners, licensed as a specialist technology finance company, supports the semiconductor ecosystem through venture investing. In electronics manufacturing, Vietnam-based CoAsia CM VINA produces camera and lens modules for Samsung Galaxy smartphones, while CoAsia ITSWELL VINA makes smart automotive LED systems. CoAsia SEMI has been building global order momentum through the Tenstorrent AI chiplet production contract, a PIM semiconductor development project with Rebellions, and an ISELED wafer licensing agreement with Germany's Inova Semiconductors. Domestic DSP peers include GAONCHIPS and ADTechnology; on a global basis the chiplet and advanced packaging-oriented DSP model closely resembles Taiwan's Global Unichip."
+  "ko": "코아시아는 시스템반도체, 전자부품 제조, 신기술사업금융을 영위하는 사업지주회사로, 여러 자회사를 통해 사업을 전개한다. 핵심 자회사인 코아시아세미는 삼성전자 파운드리 SAFE 내 디자인 솔루션 파트너(DSP)이자 영국 Arm의 최고 등급 공식 디자인 파트너(AADP)로서 시스템반도체 설계 및 첨단 패키징 서비스를 제공한다. 계열사 코아시아넥셀은 삼성전자 엑시노스 프로세서 공식 파트너사로 고객 맞춤형 SoC와 자율주행 국제규격(ISO26262) 기반 차량용 AP 설계에 특화되어 있다. 카메라모듈·광학렌즈 사업을 담당하는 코아시아씨엠은 삼성전자 갤럭시 스마트폰에 중저가부터 플래그십 모델까지 렌즈와 카메라 모듈을 공급하는 1차 공급사 지위를 갖고 있으며, 최근에는 망원·광각·초광각 등 프리미엄 광학 제품 비중 확대를 추진하고 있다. 이 외에도 전장용·생활가전용 LED 사업과 IT부품 유통, AI·시스템반도체·전장 솔루션 등 고성장 분야에 투자하는 신기술사업금융 부문을 보유하고 있다. 매출 구조상 삼성전자 그룹에 대한 의존도가 상당히 높은 편이며, 이는 삼성의 파운드리·모바일 사업 사이클에 코아시아 실적이 연동되는 배경이 된다. 경쟁 구도 면에서 코아시아세미는 국내 파운드리 디자인하우스 영역에서, 코아시아씨엠은 광학모듈 시장에서 국내외 경쟁사들과 경합하고 있다.",
+  "en": "CoAsia is an operating holding company engaged in system semiconductors, electronic component manufacturing, and new-technology business financing, running its business through multiple subsidiaries. Its core subsidiary, CoAsia SEMI, is a Design Solution Partner (DSP) within Samsung Electronics' Foundry SAFE ecosystem and holds the highest-tier Approved Arm Design Partner (AADP) status, providing system semiconductor design and advanced packaging services. Affiliate CoAsia NEXELL is an official partner for Samsung's Exynos processors, specializing in customized SoCs and automotive application processors built to the ISO 26262 safety standard. CoAsia CM, which handles camera modules and optical lenses, holds a primary supplier position for lenses and camera modules across Samsung Galaxy smartphones from mid-tier to flagship models, and has recently been expanding its share of premium optics such as telephoto, wide, and ultra-wide lenses. The group also runs automotive and home-appliance LED businesses, IT component distribution, and a new-technology investment arm targeting high-growth areas such as AI, system semiconductors, and automotive solutions. In terms of revenue mix, the group carries considerable dependence on the Samsung Electronics ecosystem, which links CoAsia's performance closely to Samsung's foundry and mobile business cycles. Competitively, CoAsia SEMI contends with other domestic foundry design houses, while CoAsia CM competes in the optical module market against both domestic and overseas rivals."
  },
  "earnings": {
-  "ko": "연결 매출액은 2022년 4,597억 원을 정점으로 2023년 3,776억 원, 2024년 3,578억 원으로 2년 연속 감소한 뒤, 2025년에는 3,751억 원으로 소폭 회복됐다. 영업손실은 2022년 -226억 원, 2023년 -255억 원, 2024년 -396억 원(영업손실률 -11.1%)으로 매년 악화됐으나, 2025년에는 -22억 원(손실률 -0.6%)으로 대폭 축소됐다. 분기별로는 2025년 Q1·Q2에 각각 +18억 원, +37억 원의 영업이익을 기록해 반기 합산 55억 원으로 2021년 이후 4년 만에 반기 영업 흑자를 달성했으나, Q3(-12억 원)·Q4(-66억 원)에 재차 손실로 전환됐다. 지배주주 귀속 순손실은 2024년 -469억 원에서 2025년 -140억 원으로 크게 축소됐다. 2026년 1분기는 매출액이 1,218억 원으로 전년 동기(1,040억 원) 대비 17.1% 성장했으며, 이 중 시스템반도체 부문 매출은 364억 원으로 전체의 29.9%를 차지해 2025년 연간 반도체 매출(608억 원)의 60%에 해당하는 수치를 단일 분기에 달성했다(블로터 2026년 5월 보도 기준). 그러나 판관비가 전년 동기 160억 원에서 199억 원으로 24.3% 급증하며 영업손실 -20억 원이 재발했다. 영업현금흐름(CFO)은 2024년 -393억 원에서 2025년 +130억 원으로 반등했고, 부채비율은 2025년 말 195.9%로 상승했다. 순손실 지속에도 CFO 흑자 전환과 영업손실 축소의 동시 발생은 구조적 개선이 시작되고 있음을 시사한다.",
-  "en": "Consolidated revenue peaked at KRW 459.7bn in 2022, then declined to KRW 377.6bn (2023) and KRW 357.8bn (2024), before a partial recovery to KRW 375.1bn in FY2025. Operating losses widened from -KRW 22.6bn (2022) to -KRW 25.5bn (2023) and -KRW 39.6bn (2024, margin: -11.1%), before narrowing sharply to -KRW 2.24bn in FY2025 (margin: -0.6%). Quarterly, the first half of 2025 delivered operating profits of +KRW 1.83bn (Q1) and +KRW 3.70bn (Q2)—totaling +KRW 5.5bn, the first semi-annual operating profit since 2021—but Q3 (-KRW 1.18bn) and Q4 (-KRW 6.58bn) pulled the full year back into net operating loss. Controlling-interest net losses shrank from -KRW 46.9bn (2024) to -KRW 14.0bn (2025). Q1 2026 revenue surged 17.1% YoY to KRW 121.8bn, with the system semiconductor segment contributing KRW 36.4bn (29.9% of the total), equivalent to 60% of the full-year 2025 semiconductor revenue of KRW 60.8bn in a single quarter (per Bloter, May 2026). However, SGA expenses jumped 24.3% YoY to KRW 19.9bn from KRW 16.0bn, driving a recurring operating loss of -KRW 2.0bn. Operating cash flow recovered decisively to +KRW 13.0bn in FY2025 from -KRW 39.3bn in FY2024, while the debt-to-equity ratio climbed to 195.9%. The simultaneous CFO recovery and operating loss contraction represent early-stage structural improvement signals despite the persistent net loss."
+  "ko": "코아시아의 연결 매출액은 2022년 4,597억원에서 2023년 3,776억원, 2024년 3,578억원으로 감소세를 보이다가 2025년 3,751억원으로 다시 증가로 전환했다. 영업손익은 2022년 -226억원, 2023년 -255억원, 2024년 -396억원으로 적자가 확대되었으나 2025년에는 -22.4억원으로 적자 규모가 대폭 축소되며 손익 개선의 전환점을 보였다. 지배주주순이익 역시 2024년 -469억원에서 2025년 -140억원으로 적자폭이 크게 줄었다. 분기 흐름을 보면 2025년 2분기 영업이익 37.0억원으로 일시적 흑자를 기록했으나 3분기(-11.8억원), 4분기(-65.8억원)에는 다시 적자로 돌아섰고, 2026년 1분기(-20.3억원), 2분기(-30.4억원)에도 영업손익은 적자를 지속했다. 반면 지배주주순이익은 2026년 1분기 22.3억원, 2분기 3.7억원으로 두 분기 연속 흑자를 기록했는데, 이는 영업손익과의 괴리가 커 비영업적 요인(지분법이익, 금융손익, 비지배지분 조정 등)이 순이익 전환에 상당한 영향을 미쳤을 가능성을 시사한다. 매출 규모는 2026년 1분기 1,218억원, 2분기 1,321억원으로 전년 동기 대비 뚜렷한 증가세를 보이며 외형 확장은 이어지고 있다. 다만 매출 성장이 영업이익 개선으로 온전히 연결되지 못하는 구간이 반복되고 있어, 이익의 질적 안정성은 아직 검증이 필요한 상태다. 최근 4개 분기(2025년 3분기~2026년 2분기) 누적 지배주주순이익은 -60.1억원으로, 연간 단위로는 적자가 이어지고 있다.",
+  "en": "CoAsia's consolidated revenue declined from KRW459.7bn in 2022 to KRW377.6bn in 2023 and KRW357.8bn in 2024, before turning back up to KRW375.1bn in 2025. Operating losses widened from KRW22.6bn in 2022 to KRW25.5bn in 2023 and KRW39.6bn in 2024, but the loss narrowed sharply to just KRW2.24bn in 2025, marking a turning point in earnings trend. Net income attributable to owners also improved markedly, from a loss of KRW46.9bn in 2024 to a loss of KRW14.0bn in 2025. On a quarterly basis, operating profit briefly turned positive at KRW3.70bn in Q2 2025 before reverting to losses of KRW1.18bn in Q3 and KRW6.58bn in Q4, and operating losses persisted into 2026 at KRW2.03bn in Q1 and KRW3.04bn in Q2. By contrast, net income attributable to owners posted two consecutive profitable quarters in 2026 — KRW2.23bn in Q1 and KRW0.37bn in Q2 — a divergence from operating results that suggests non-operating factors such as equity-method gains, financial income, or minority-interest adjustments played a meaningful role in the swing to net profit. Revenue scale continued to expand, reaching KRW121.8bn in Q1 2026 and KRW132.1bn in Q2 2026, both showing clear year-over-year growth. Even so, the recurring gap between top-line growth and operating profitability means the quality and durability of earnings still require further confirmation. Over the trailing four quarters (Q3 2025 through Q2 2026), cumulative net income attributable to owners stood at a loss of KRW6.01bn, indicating the company remained in a net loss position on an annualized basis."
  },
  "industry": {
-  "ko": "글로벌 AI 반도체 수요 확대는 파운드리 생태계 내 디자인 솔루션 파트너(DSP) 기업들의 성장 환경을 근본적으로 바꾸고 있다. AI 칩렛·고대역폭메모리(HBM) 연계 첨단 패키지 기술이 차세대 AI 가속기의 핵심으로 부상하면서, 팹리스와 파운드리를 연결하는 DSP의 부가가치가 높아지고 있다. 삼성전자 파운드리 SAFE 생태계 안에서 형성된 국내 DSP 시장은 가온칩스·에이디테크놀로지·코아시아 등이 경쟁하며, 대만 글로벌 유니칩의 성장 궤적을 벤치마크로 하는 성장 기대가 높다. 코아시아세미가 진출한 2.5D 실리콘 인터포저 및 첨단 패키지 분야는 TSMC CoWoS 등 선단 패키징 기술의 확산과 함께 파운드리 협력사의 새로운 부가가치 영역이 되고 있다. 카메라 모듈 부문은 삼성 갤럭시 Z6 시리즈 출시 및 AI 기능 스마트폰 수요 확대로 외형을 유지하고 있으나, 중화권 모듈 업체와의 단가 경쟁이 수익성을 압박하는 구조다. 전장용 스마트 LED 부문은 전기차·자율주행 차량의 내부 조명 고사양화 추세를 수혜로 연결하려 하나, 글로벌 자동차 수요 불확실성이 단기 변수로 작용한다. 전반적으로 AI 서버·데이터센터향 시스템반도체 수요는 2026년에도 강한 성장세를 유지할 것으로 전망된다.",
-  "en": "The global surge in AI semiconductor demand is fundamentally reshaping the growth environment for Design Solution Partners (DSPs) within the foundry ecosystem. As AI chiplets and HBM-integrated advanced packaging emerge as critical enablers of next-generation AI accelerators, the value-add of DSPs bridging fabless designers and foundries continues to expand. Within the Samsung Foundry SAFE ecosystem, domestic DSPs including GAONCHIPS, ADTechnology, and CoAsia compete with strong growth expectations benchmarked against Taiwan's Global Unichip precedent. CoAsia SEMI's move into 2.5D silicon interposer and advanced packaging—parallel to the proliferation of TSMC CoWoS-type technologies—represents an emerging value-creation tier for foundry partners. The camera module segment maintains revenue from Samsung Galaxy Z6 and AI-enabled smartphone demand, but pricing pressure from Chinese module makers remains a structural margin headwind. The automotive smart LED segment aims to capitalize on premiumization of in-cabin lighting in EVs and autonomous vehicles, while near-term OEM demand uncertainty is a constraining variable. Overall, AI server and data-center system semiconductor demand is broadly expected to sustain strong growth through 2026."
+  "ko": "코아시아세미가 속한 시스템반도체 디자인하우스 시장은 파운드리 고객사의 다품종 소량생산 수요 증가와 AI 반도체·칩렛 아키텍처 확산이라는 구조적 성장 동력을 갖고 있다. 특히 데이터센터용 AI 반도체 수요가 늘면서 여러 개의 소형 칩을 결합하는 칩렛·첨단 패키징 기술에 대한 관심이 커지고 있으며, 코아시아세미는 2.5D 실리콘 인터포저 등 관련 기술력을 보유하고 삼성 파운드리, Arm 생태계와 연계된 위치에 있다. 다만 이 시장은 글로벌 대형 OSAT·디자인하우스 업체들과의 경쟁이 상존하며, 상업화까지의 시간과 검증 리스크가 존재한다. 카메라모듈·광학렌즈 사업은 스마트폰 시장의 성숙화와 프리미엄화 트렌드에 영향을 받는데, 코아시아씨엠은 저수익 모델 비중을 줄이고 망원·광각 등 고부가 광학 제품 중심으로 포트폴리오를 전환하며 대응하고 있다. 최근에는 로보틱스·전장·3D 카메라 등 '피지컬 AI' 영역이 광학모듈 산업의 새로운 응용처로 부각되고 있어, 전통적인 모바일 중심 매출 구조에서 다변화가 진행 중이다. 전방산업인 스마트폰 시장은 여전히 고객사 재고조정 등 단기 수요 변동에 노출되어 있어, 코아시아씨엠의 분기 실적도 이러한 변동성의 영향을 받는다. 전체적으로 코아시아는 파운드리·AI반도체 사이클과 모바일 광학 사이클이라는 두 개의 서로 다른 산업 흐름에 동시에 노출된 구조를 갖고 있다.",
+  "en": "The system semiconductor design house market in which CoAsia SEMI operates carries structural growth drivers from rising demand for low-volume, high-mix production among foundry customers and the spread of AI semiconductor and chiplet architectures. Rising demand for data-center AI semiconductors in particular has increased interest in chiplet and advanced packaging technologies that combine multiple smaller chips, and CoAsia SEMI holds related capabilities such as 2.5D silicon interposer technology while positioned within the Samsung Foundry and Arm ecosystems. That said, this market involves ongoing competition from large global OSAT and design house players, and carries execution and verification risk before commercialization is reached. The camera module and optical lens business is affected by the maturation and premiumization trend in the smartphone market, and CoAsia CM has been responding by reducing its exposure to low-margin models and shifting its portfolio toward higher value-added optics such as telephoto and wide-angle lenses. More recently, \"physical AI\" applications such as robotics, automotive, and 3D cameras have emerged as new addressable markets for the optical module industry, driving diversification away from a traditionally mobile-centric revenue base. The downstream smartphone market remains exposed to short-term demand swings such as customer inventory adjustments, and CoAsia CM's quarterly results are affected by this volatility. Overall, CoAsia is structurally exposed to two distinct industry cycles simultaneously: the foundry/AI semiconductor cycle and the mobile optics cycle."
  },
  "outlook": {
-  "ko": "가장 주목되는 이벤트는 자회사 코아시아세미가 2026년 1월 CES에서 텐스토렌트(Tenstorrent)와 체결한 AI 칩렛 양산 전환 계약으로, 회사는 이 프로젝트에서 향후 총 1,400억 원 이상의 매출을 기대하고 있다. 텐스토렌트 CEO 짐 켈러는 코아시아세미를 '신뢰도 높은 파트너'로 공개 언급했으며, 이는 추가 글로벌 수주 가능성을 높이는 신호로 해석된다. 코아시아세미는 리벨리온과도 차세대 AI 반도체 REBEL 기반 칩렛 개발·공급 계약을 체결했으며, 양사는 2026년 말까지 개발·검증을 완료하고 AI 데이터센터에 양산 물량을 공급하는 것을 목표로 한다. 아울러 한국전자통신연구원(ETRI) 주관의 PIM 반도체 국책 과제(총 86억 원, 2025년 4월~2028년 12월)에도 리벨리온과 함께 참여 중이다. 코아시아세미는 미국 Tier-1 고객사와의 개발·양산 공급 계약도 추진 중이라고 공개 언급한 바 있어 수주 파이프라인 다변화 가능성이 주목된다. 전자부품 부문은 삼성 갤럭시 Z6 시리즈 출시 효과와 로보틱스·전장 등 피지컬 AI 시장 대응 신제품 개발을 통해 매출 하방을 지지하는 구조다. 다만 반도체 설계의 특성상 테이프아웃 전까지 인건비·IP 비용이 선투입되는 만큼, 수익성 회복 시점은 텐스토렌트 양산 물량 인식 속도에 달려 있다.",
-  "en": "The most closely watched catalyst is the AI chiplet mass-production contract with Tenstorrent signed by CoAsia SEMI at CES 2026 in January, for which the company projects cumulative revenue exceeding KRW 140bn. Tenstorrent CEO Jim Keller publicly described CoAsia SEMI as a 'trusted partner,' reinforcing prospects for additional global design wins. CoAsia SEMI also holds a chiplet development-and-supply agreement with Rebellions targeting the completion of design and verification by end-2026, with mass supply to AI data centers as the objective. The company is co-participating in an 8.6bn-won ETRI-led PIM semiconductor national R&D program running from April 2025 through December 2028. CoAsia SEMI has also publicly indicated it is finalizing a development-and-production supply contract with a U.S. Tier-1 customer, which would represent meaningful pipeline diversification. The electronics manufacturing segment continues to provide a revenue floor via Samsung Galaxy Z6 camera module supply and new product development targeting robotics and automotive physical AI applications. Given the front-loaded cost structure of semiconductor design work, the pace of Tenstorrent mass-production revenue recognition will ultimately determine when consolidated profitability is achieved."
+  "ko": "코아시아세미는 2025년 4월 리벨리온과 멀티페타플롭스급 PIM 서버 반도체 칩렛 개발 국책과제를 공동 수주한 데 이어, 같은 해 7월 데이터센터용 AI 칩렛 및 소프트웨어 솔루션 개발·공급 계약을 체결했으며, 양사는 2026년 말까지 개발·검증을 완료하고 국내외 AI 데이터센터에 양산 물량을 공급한다는 목표를 제시했다. 코아시아세미는 2025년 10월 'Arm 언락드 서울 2025'에서 자체 칩렛 플랫폼 'CoAsia 칩렛 솔루션(CoCs)'을 처음 공개하며 설계 역량을 외부에 알리기도 했다. 자회사 코아시아씨엠은 2026년 반기 매출 1,339억원, 영업이익 19억원을 기록했으며, 회사 측은 전방산업 재고조정으로 2분기 수익성이 일시 둔화됐지만 하반기부터 모바일 광학 사업의 수익성 개선을 전망한다고 밝혔다. 코아시아씨엠은 로봇·AI 인프라 영역의 신규 응용처 개척과 글로벌 고객사 확대를 향후 성장 전략으로 제시했다. 코아시아세미는 독일 이노바와 ISELED 웨이퍼 라이선스 계약을 체결한 바 있어 자동차 조명·전장 분야로의 응용 확장도 진행 중인 것으로 파악된다. 이러한 계획들이 실제 매출로 반영되는 시점과 규모는 향후 공시를 통해 확인이 필요한 사안이다.",
+  "en": "CoAsia SEMI jointly secured a government-backed development project with Rebellions in April 2025 for a multi-petaflops PIM server semiconductor chiplet, followed in July of the same year by a contract to develop and supply data-center AI chiplets and software solutions, with both companies setting a target of completing development and verification by the end of 2026 and supplying mass-production volumes to domestic and overseas AI data centers. CoAsia SEMI also unveiled its proprietary chiplet platform, \"CoAsia Chiplet Solution (CoCs),"
  },
  "valuation_comment": {
-  "ko": "주가는 BPS(주당순자산) 3,382원에 근접한 수준으로, 4년 연속 손실 국면임에도 AI 반도체 성장 기대가 일정 수준 반영된 결과로 해석된다. 주당 손익(EPS)이 -444원으로 적자가 지속되는 가운데 배당도 없어(DPS 0원), 현금흐름이나 이익 기반의 전통적 밸류에이션 지표로는 가치를 산정하기 어려운 구간이다. 역사적으로 코아시아 주가는 AI·반도체 테마 사이클에 민감하게 반응해 순자산 대비 수 배의 프리미엄이 형성됐다가 실적 기대 실망 시 BPS 수준으로 수렴하는 높은 변동성을 보여왔다. 흑자 전환에 성공한 국내외 동종 DSP 기업들의 시장 배수가 현재 코아시아보다 유의미하게 높은 수준에서 형성되어 있다는 점에서, 이익 전환이 확인될 경우 재평가 여지가 존재한다. 다만 4년 연속 순손실과 부채비율 상승이 현 시점의 프리미엄 확장을 제한하고 있으며, 텐스토렌트 양산 매출 인식 속도가 그 임계점을 좌우할 핵심 변수다.",
-  "en": "The share price currently trades near the book value per share (BPS: KRW 3,382), suggesting that some AI semiconductor growth expectation is priced in despite four consecutive loss years. With EPS at -444 won and no dividend paid (DPS: 0 won), conventional earnings- or income-based valuation metrics are inapplicable in the current period. Historically, CoAsia shares have been highly sensitive to AI and semiconductor thematic cycles—multiples expanded well above book value during growth expectation peaks before mean-reverting toward BPS when execution disappointed, reflecting wide price volatility. Profitable domestic and international DSP peers currently command valuation multiples meaningfully higher than CoAsia's present near-BPS level, implying re-rating potential if a sustained earnings turnaround is confirmed. However, four consecutive years of net losses and a rising debt-to-equity ratio constrain premium expansion at this stage; the pace of Tenstorrent mass-production revenue recognition is the critical variable that will determine when that re-rating threshold is crossed."
+  "ko": "코아시아의 주가순자산비율은 1배에 못 미치는 수준에서 형성되어 있어, 장부상 순자산가치 대비 할인된 상태에서 거래되고 있다. 회사는 최근 회계연도 기준 배당을 실시하지 않고 있어, 배당 매력을 근거로 한 접근보다는 실적 회복 여부에 초점이 맞춰지는 구간으로 볼 수 있다. 주당순이익 기준 밸류에이션 지표는 최근 4개 분기 기준으로 순손실 상태가 이어지고 있어 산출이 제한적이며, 이는 이익 안정화가 아직 완료되지 않았음을 보여준다. 다년간 추이를 보면 연간 단위 적자가 2022년부터 2025년까지 이어지고 있으나 적자 규모는 뚜렷하게 축소되는 방향으로 움직여왔다. 시장에서의 재평가 여부는 향후 분기별 영업손익의 흑자 전환 지속성과 신사업(AI 칩렛 등) 매출화 여부에 달려 있는 것으로 보인다.",
+  "en": "CoAsia's price-to-book ratio sits below 1x, meaning the stock trades at a discount to its book net asset value. The company has not paid dividends in recent fiscal years, so any assessment tends to center less on dividend appeal and more on the trajectory of earnings recovery. Per-share earnings-based valuation metrics are constrained given the trailing four-quarter net loss position, underscoring that earnings stabilization has not yet been completed. Looking at the multi-year trend, annual losses have persisted from 2022 through 2025, though the scale of those losses has clearly narrowed over time. Whether the market re-rates the stock going forward appears tied to whether quarterly operating profitability can sustain a turnaround and whether new initiatives such as the AI chiplet business translate into actual revenue."
  },
  "bull": [
   {
    "title": {
-    "ko": "텐스토렌트 양산 계약 — 개발에서 양산으로의 전환 실증",
-    "en": "Tenstorrent Production Contract: From Development to Mass Production Proven"
+    "ko": "연간 적자 규모의 구조적 축소",
+    "en": "Structural Narrowing of Annual Losses"
    },
    "body": {
-    "ko": "코아시아세미가 CES 2026에서 텐스토렌트와 체결한 AI 칩렛 양산 전환 계약은 단순 개발 수주를 넘어 설계·패키징·파운드리 연계 원스톱 역량이 실제 양산으로 이어진 첫 대형 레퍼런스다. 회사는 이 계약에서 향후 1,400억 원 이상의 매출을 기대하며, 짐 켈러 CEO의 공개 파트너 인정은 후속 글로벌 수주 가능성을 높이는 신호다. 리벨리온과의 AI 칩렛 개발 계약 및 미국 Tier-1 고객사와의 계약 추진이 더해지면 수주 파이프라인의 규모와 다양성이 크게 확대될 수 있다.",
-    "en": "CoAsia SEMI's AI chiplet mass-production contract with Tenstorrent at CES 2026 represents the first large-scale reference proving its end-to-end DSP capability—from chip design and advanced packaging to foundry linkage and mass supply. The company projects KRW 140bn+ in revenue from this single contract, and CEO Jim Keller's public endorsement strengthens the pipeline for additional global wins. Combined with the Rebellions AI chiplet development agreement and an anticipated U.S. Tier-1 contract, the scale and diversity of the order pipeline could expand substantially."
+    "ko": "영업손실은 2024년 396억원에서 2025년 22.4억원으로 급격히 줄었고, 지배주주순손실도 2024년 469억원에서 2025년 140억원으로 크게 축소됐다. 이는 원가구조 개선과 판관비 절감, 고부가 제품 비중 확대가 맞물린 결과로 해석된다. 매출 역시 2024년 3,578억원에서 2025년 3,751억원으로 증가로 전환하며 외형과 수익성 개선이 동시에 나타났다.",
+    "en": "Operating losses shrank sharply from KRW39.6bn in 2024 to KRW2.24bn in 2025, and net losses attributable to owners also narrowed substantially from KRW46.9bn to KRW14.0bn over the same period. This appears to reflect a combination of improved cost structure, reduced SG&A, and a growing mix of higher-value products. Revenue also turned upward, rising from KRW357.8bn in 2024 to KRW375.1bn in 2025, showing simultaneous improvement in scale and profitability."
    }
   },
   {
    "title": {
-    "ko": "반도체 매출 비중 급상승 — 사업 믹스 전환의 가속",
-    "en": "Semiconductor Revenue Share Surging: Rapid Business Mix Transformation"
+    "ko": "AI 칩렛·첨단 패키징 신사업 파이프라인",
+    "en": "AI Chiplet and Advanced Packaging Pipeline"
    },
    "body": {
-    "ko": "시스템반도체 매출 비중이 2024년 9%, 2025년 연간 16.2%, 2026년 1분기 29.9%로 가파르게 상승하고 있다. 텐스토렌트 양산 물량이 본격화되면 반도체 비중이 절반을 초과할 가능성이 있으며, 이 경우 저마진 전자부품의 수익 희석 효과가 줄어들며 그룹 전체 이익률이 개선될 수 있다. 코아시아씨엠도 5분기 연속 흑자를 기록하며 전자부품 부문의 안정적 현금 창출 기능도 강화되고 있다.",
-    "en": "System semiconductor revenue share has risen sharply from 9% (FY2024) to 16.2% (FY2025) to 29.9% (Q1 2026). If Tenstorrent volumes ramp fully, semiconductor could exceed half of consolidated revenue, reducing the dilutive effect of lower-margin electronics manufacturing and improving group-level profitability. Subsidiary CoAsia CM has also delivered five consecutive quarters of operating profit, reinforcing the electronics segment as a reliable cash generation base."
+    "ko": "코아시아세미는 리벨리온과 데이터센터용 AI 칩렛 공동개발 계약을 체결하고 2026년 말까지 개발·검증 완료를 목표로 제시했다. Arm의 최고 등급 공식 디자인 파트너 지위와 2.5D 실리콘 인터포저 기술을 바탕으로 첨단 패키징 생태계에 참여하고 있다. Arm 언락드 서울 2025에서 자체 칩렛 플랫폼을 공개하며 기술력을 외부에 알린 점도 긍정적 신호다.",
+    "en": "CoAsia SEMI signed a contract with Rebellions to jointly develop a data-center AI chiplet, targeting completion of development and verification by the end of 2026. Backed by its top-tier Approved Arm Design Partner status and 2.5D silicon interposer technology, the company participates in the advanced packaging ecosystem. Unveiling its own chiplet platform at Arm Unlocked Seoul 2025 was also a positive signal of its technical capability."
    }
   },
   {
    "title": {
-    "ko": "영업현금흐름 반등 — 투자 선행 국면에서 수익화 전환 신호",
-    "en": "CFO Recovery: Early Signal of Shift from Investment Phase to Monetization"
+    "ko": "카메라모듈 자회사의 흑자 기조 유지",
+    "en": "Sustained Profitability at the Camera Module Subsidiary"
    },
    "body": {
-    "ko": "2025년 영업현금흐름(CFO)이 +130억 원으로 흑자 전환된 것은 2024년(-393억 원)의 대규모 현금 소진 구간이 마무리되는 신호다. 삼성전자 파운드리 SAFE DSP 및 Arm AADP라는 이중 파트너십을 기반으로 고객 파이프라인이 넓어질수록 수주 기반의 현금 창출 기반도 강해진다. 2025년 영업손실률이 -0.6%까지 축소된 점은 추가 매출 성장 시 고정비 레버리지로 이익이 빠르게 개선될 수 있는 임계치에 근접했음을 시사한다.",
-    "en": "FY2025 CFO recovering to +KRW 13.0bn from -KRW 39.3bn in FY2024 signals that the worst cash outflow phase is likely past. As the customer pipeline deepens through dual-anchor partnerships—Samsung Foundry SAFE DSP and Arm AADP—order-driven cash generation should strengthen. With FY2025 operating margin at -0.6%, the business is approaching a threshold where incremental revenue growth could trigger meaningful fixed-cost leverage and rapid margin improvement."
+    "ko": "코아시아씨엠은 삼성전자 갤럭시 카메라모듈 1차 공급사 지위를 바탕으로 분기 흑자 기조를 이어가고 있으며, 저수익 모델 비중을 줄이고 프리미엄 광학 제품 중심으로 포트폴리오를 고도화하고 있다. 로보틱스·전장·3D 카메라 등 피지컬 AI 영역으로의 응용처 확대도 추진되고 있어, 모바일 중심 매출 구조의 다변화가 진행 중이다.",
+    "en": "CoAsia CM has maintained quarterly profitability on the strength of its primary supplier position for Samsung Galaxy camera modules, while upgrading its portfolio toward premium optics and reducing exposure to low-margin models. Expansion into physical AI applications such as robotics, automotive, and 3D cameras is also underway, diversifying the business away from a purely mobile-centric revenue base."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4년 연속 지배주주 귀속 순손실 — 구조적 수익성 부재",
-    "en": "Four Consecutive Years of Controlling-Interest Net Losses"
+    "ko": "영업손익의 재차 적자 전환",
+    "en": "Operating Profit Slipping Back Into the Red"
    },
    "body": {
-    "ko": "코아시아는 2022년~2025년 4년 연속으로 지배주주 귀속 순손실을 기록했다(-272억 원, -264억 원, -469억 원, -140억 원). 이 기간 동안 자기자본이 지속적으로 잠식됐으며, 부채비율은 151.5%에서 195.9%로 상승했다. 2026년 1분기에도 영업손실이 재발하는 등 흑자 전환 시점의 가시성이 낮아, 이익 기반의 가치 증명 없이는 밸류에이션 프리미엄 확장에 한계가 있다.",
-    "en": "CoAsia has reported controlling-interest net losses for four straight years (KRW -27.2bn, -26.4bn, -46.9bn, -14.0bn, 2022–2025), steadily eroding equity while the debt-to-equity ratio rose from 151.5% to 195.9%. An operating loss resurfacing in Q1 2026 underscores the limited near-term earnings breakeven visibility, constraining premium valuation expansion absent demonstrated profitability."
+    "ko": "2025년 2분기 일시 흑자를 기록했던 영업손익은 3분기부터 다시 적자로 돌아섰고 2026년 1분기, 2분기에도 적자가 이어졌다. 매출은 늘었지만 영업이익 개선으로 연결되지 않는 구간이 반복되며, 이익의 지속성에 대한 의문이 남아 있다.",
+    "en": "After briefly turning positive in Q2 2025, operating profit reverted to losses starting in Q3 2025 and remained negative through Q1 and Q2 2026. Revenue has grown, but the failure to translate that growth into operating profit improvement recurs, leaving questions about the sustainability of earnings."
    }
   },
   {
    "title": {
-    "ko": "판관비 선행 증가 — 수익화 지연 위험",
-    "en": "SGA Front-Loading Creates Profitability Delay Risk"
+    "ko": "순이익 개선의 비영업적 성격 가능성",
+    "en": "Possible Non-Operating Nature of the Net Income Improvement"
    },
    "body": {
-    "ko": "시스템반도체 설계 사업은 테이프아웃 완료 전까지 엔지니어 인건비와 IP 구매 비용이 선투입되는 구조여서, 수주 증가가 즉각적인 이익 개선으로 연결되지 않는다. 2026년 1분기 판관비가 전년 동기 대비 24.3% 급증(160억 원→199억 원)해 매출총이익을 잠식한 것이 이를 단적으로 보여준다. 텐스토렌트 양산 물량 인식이 예상보다 지연될 경우 판관비 증가로 인한 적자 확대가 불가피하다.",
-    "en": "System semiconductor design requires substantial upfront investment in engineering headcount and IP licensing prior to tape-out and revenue recognition. Q1 2026's 24.3% YoY SGA surge (from KRW 16.0bn to KRW 19.9bn) directly illustrates how cost acceleration can erode gross margins before production revenues arrive. If Tenstorrent mass-production revenue recognition lags guidance, the accelerating SGA run-rate could widen losses rather than narrow them."
+    "ko": "2026년 1분기와 2분기 지배주주순이익은 흑자를 기록했지만, 같은 기간 영업손익은 적자였다. 영업과 순이익 흐름의 괴리는 지분법이익, 금융손익, 비지배지분 조정 등 비영업적 요인이 순이익 전환에 상당한 영향을 미쳤을 가능성을 시사하며, 이런 항목은 반복성이 낮을 수 있다.",
+    "en": "Net income attributable to owners was positive in both Q1 and Q2 2026, even though operating profit was negative in the same periods. This divergence suggests non-operating factors — such as equity-method gains, financial income, or minority-interest adjustments — may have played a significant role in the swing to net profit, and such items may not be recurring."
    }
   },
   {
    "title": {
-    "ko": "높아진 부채비율과 레버리지 — 재무 건전성 부담 지속",
-    "en": "Elevated Leverage and Debt: Sustained Financial Health Concerns"
+    "ko": "고객사 집중과 소형주 특성",
+    "en": "Customer Concentration and Small-Cap Characteristics"
    },
    "body": {
-    "ko": "2025년 말 부채비율 195.9%는 코스닥 전자·반도체 동종업체 내 높은 수준이며, 보도에 따르면 단기차입금도 상당한 규모로 유동성 부담이 지속되고 있다(블로터 2026년 5월 보도). 순손실이 지속될수록 자본 잠식이 진행되어 부채비율이 추가 상승할 수 있다. 양산 계약 매출이 확실히 인식되기 전까지는 유상증자 등 추가 자본 조달 가능성도 배제하기 어려운 상황이다.",
-    "en": "The FY2025 debt-to-equity ratio of 195.9% is elevated relative to KOSDAQ electronics/semiconductor sector peers, and media reports indicate short-term borrowings are at a substantial level, sustaining liquidity management requirements (Bloter, May 2026). Continued net losses will further erode equity and could push leverage higher. Until mass-production contract revenues are firmly recognized, dilutive capital raises cannot be ruled out."
+    "ko": "코아시아의 매출은 삼성전자 그룹에 대한 의존도가 높아, 삼성의 파운드리·모바일 사업 사이클 변화에 실적이 민감하게 반응할 수 있다. 시가총액이 상대적으로 작은 코스닥 종목인 만큼 유동성과 수급 변동성도 상대적으로 크게 나타날 수 있다.",
+    "en": "CoAsia's revenue carries considerable dependence on the Samsung Electronics group, making its results sensitive to shifts in Samsung's foundry and mobile business cycles. As a relatively small-cap KOSDAQ stock, liquidity and demand-supply volatility can also be comparatively pronounced."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 및 양산 전환 실행 위험",
-    "en": "Customer Concentration and Mass-Production Execution Risk"
+    "ko": "고객 집중 리스크",
+    "en": "Customer Concentration Risk"
    },
    "body": {
-    "ko": "전자부품 부문은 삼성전자 갤럭시 공급에 대한 의존도가 높고, 반도체 부문 신규 성장 동력도 텐스토렌트·리벨리온 등 소수 고객사에 집중되어 있다. 반도체 업계에서 개발 단계에서 양산으로의 전환 실패 사례는 드물지 않으며, 프로젝트 지연·취소·수율 문제가 발생하면 예상 매출이 실현되지 않을 수 있다. AI 팹리스 고객사의 자금 조달 환경 변화나 전략 수정도 수주 파이프라인에 영향을 줄 수 있는 외부 리스크다.",
-    "en": "The electronics segment is heavily reliant on Samsung Galaxy supply volumes, while the semiconductor segment's near-term growth is concentrated in a handful of clients such as Tenstorrent and Rebellions. In the semiconductor industry, transitions from development to mass production carry material execution risk—delays, cancellations, or yield issues could prevent projected revenues from materializing. Changes in funding conditions or strategic direction at AI fabless customers represent additional external pipeline risks."
+    "ko": "코아시아세미와 코아시아씨엠 모두 삼성전자 그룹에 대한 매출 의존도가 높은 구조다. 삼성의 파운드리 가동률이나 갤럭시 스마트폰 판매·재고 정책 변화가 코아시아의 실적에 직접적인 영향을 줄 수 있다. 고객 다변화 진행 상황을 지속적으로 확인할 필요가 있다.",
+    "en": "Both CoAsia SEMI and CoAsia CM carry high revenue dependence on the Samsung Electronics group. Changes in Samsung's foundry utilization or Galaxy smartphone sales and inventory policies can directly affect CoAsia's results. Progress on customer diversification warrants ongoing monitoring."
    }
   },
   {
    "cat": {
-    "ko": "삼성 파운드리 경쟁력 변화 위험",
-    "en": "Samsung Foundry Competitiveness Risk"
+    "ko": "신사업 상용화 실행 리스크",
+    "en": "New Business Commercialization Execution Risk"
    },
    "body": {
-    "ko": "코아시아세미의 사업 모델은 삼성전자 파운드리 SAFE 생태계 내 DSP 지위를 근간으로 한다. 글로벌 팹리스 고객사들이 TSMC 공정 또는 TSMC의 첨단 패키징 생태계를 선호하는 방향으로 이동할 경우, 코아시아세미의 신규 수주 창출 역량이 제약될 수 있다. 삼성 파운드리의 수율 개선 속도와 선단 공정 경쟁력은 코아시아의 장기 성장 가능성과 직결되는 핵심 외생 변수다.",
-    "en": "CoAsia SEMI's business model is anchored in DSP status within Samsung Foundry's SAFE ecosystem. If global fabless customers continue gravitating toward TSMC processes or TSMC's CoWoS-type advanced packaging ecosystem, CoAsia SEMI's new order generation capacity could be structurally constrained. Samsung Foundry's yield trajectory and advanced-node competitiveness therefore represent a direct and material exogenous risk to CoAsia's long-term growth prospects."
+    "ko": "리벨리온과의 AI 칩렛 공동개발은 2026년 말 완료를 목표로 하고 있으나, 개발·검증 단계에 있는 프로젝트로 실제 양산 및 매출화 시점과 규모는 아직 확정되지 않았다. 첨단 패키징·칩렛 시장은 글로벌 경쟁이 치열해 상용화 지연이나 계약 변경 가능성도 배제할 수 없다.",
+    "en": "The joint AI chiplet development with Rebellions targets completion by the end of 2026, but the project remains at the development and verification stage, with the actual timing and scale of mass production and revenue generation still unconfirmed. The advanced packaging and chiplet market is highly competitive globally, and the possibility of commercialization delays or contract changes cannot be ruled out."
    }
   },
   {
    "cat": {
-    "ko": "거시·환율·무역 정책 위험",
-    "en": "Macro, FX, and Trade Policy Risk"
+    "ko": "재무구조 및 손익 변동성",
+    "en": "Financial Structure and Earnings Volatility"
    },
    "body": {
-    "ko": "그룹 매출의 상당 부분이 베트남 현지 법인(카메라 모듈·LED)에서 발생하며, 달러 기준 원가 구조로 원/달러 환율 변동에 노출된다. 미·중 반도체 무역 규제 강화는 글로벌 팹리스 고객사의 파운드리 선택에 영향을 미치며, 이는 코아시아의 DSP 수주 파이프라인에도 간접 파급될 수 있다. 글로벌 IT 수요 둔화나 스마트폰 교체 주기 지연은 카메라 모듈 부문 물량과 단가 양면에서 추가 역풍이 될 수 있다.",
-    "en": "A significant share of group revenues originates from Vietnam-based manufacturing subsidiaries (camera modules, LED), exposing the company to KRW/USD exchange-rate fluctuations given their dollar-denominated cost structures. Escalating U.S.-China semiconductor trade restrictions can influence foundry selection decisions by global fabless customers, with indirect ripple effects on CoAsia's DSP order pipeline. A global IT demand slowdown or delayed smartphone upgrade cycles would create volume and pricing headwinds for the camera module segment."
+    "ko": "코아시아는 2022년부터 2025년까지 매년 지배주주순손실을 기록해왔으며, 자본구성에서 비지배지분 비중도 상당한 수준이다. 분기별로 영업손익과 순이익의 방향이 어긋나는 사례가 반복되고 있어, 손익 구조의 예측 가능성이 상대적으로 낮은 편이다.",
+    "en": "CoAsia has recorded a net loss attributable to owners every year from 2022 through 2025, and non-controlling interests make up a substantial portion of its equity structure. Cases where operating profit and net income move in opposite directions have recurred on a quarterly basis, making the predictability of the earnings structure relatively low."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순 (2026년 2분기 실적 발표)",
-    "en": "Mid-August 2026 (Q2 2026 earnings release)"
+    "ko": "2026년 11월 중",
+    "en": "November 2026"
    },
    "what": {
-    "ko": "텐스토렌트 양산 계약 매출이 분기 실적에 반영됐는지, 시스템반도체 매출 비중이 30%를 상회·유지했는지를 확인한다. 판관비 증가세가 안정화됐는지도 단기 흑자 전환 가시성 판단에 핵심이다.",
-    "en": "Confirm whether Tenstorrent production-stage revenue has been recognized in Q2 results and whether the system semiconductor revenue share holds above 30%. Assess whether the SGA cost surge is stabilizing—this is critical for gauging near-term breakeven visibility."
+    "ko": "2026년 3분기 잠정실적 공시를 통해 영업손익의 흑자 전환 여부와 매출 성장세 지속 여부를 확인할 필요가 있다.",
+    "en": "Watch the Q3 2026 preliminary earnings disclosure to check whether operating profit turns positive and whether revenue growth continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중 (텐스토렌트 양산 물량 본격화 여부)",
-    "en": "H2 2026 (Tenstorrent mass-production volume ramp)"
+    "ko": "2026년 4분기(연말)까지",
+    "en": "By the fourth quarter of 2026 (year-end)"
    },
    "what": {
-    "ko": "1,400억 원 이상 예상 매출의 구체적 인식 일정과 분기별 누적 수주잔고를 점검한다. 양산 물량이 예정대로 진행되는지가 2026~2027년 연간 흑자 전환 여부를 좌우하는 단일 최대 변수다.",
-    "en": "Monitor the specific revenue recognition schedule for the KRW 140bn+ Tenstorrent contract and quarterly order backlog updates. Whether mass-production volumes proceed on schedule is the single most important variable determining a potential 2026–2027 annual earnings turnaround."
+    "ko": "코아시아세미-리벨리온 AI 칩렛 개발·검증 완료 목표 시점 도달 여부와 양산 공급계약 체결 관련 공시를 확인해야 한다.",
+    "en": "Check whether the CoAsia SEMI-Rebellions AI chiplet development and verification target is met and whether any mass-production supply contract disclosures follow."
    }
   },
   {
    "when": {
-    "ko": "2026년 중 (미국 Tier-1 고객사 계약 공시 여부)",
-    "en": "2026 (U.S. Tier-1 customer contract disclosure)"
+    "ko": "2026년 하반기 중",
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "코아시아세미가 공개 언급한 미국 Tier-1 고객사와의 개발·양산 공급 계약이 공시되면, 반도체 수주 파이프라인의 규모 확대와 다변화를 직접 확인할 수 있다. 계약 규모와 적용 공정(선단 여부)이 사업 구조 재평가의 핵심 정보가 될 것이다.",
-    "en": "If CoAsia SEMI's previously announced U.S. Tier-1 customer development-and-production contract is officially disclosed, it would directly validate the scale and diversification of the semiconductor order pipeline. Contract size and applicable process node would be critical inputs for any re-assessment of the business structure."
+    "ko": "코아시아씨엠이 언급한 하반기 모바일 광학 수익성 개선과 피지컬 AI 신규 응용처 매출 반영 여부를 분기 실적으로 점검할 필요가 있다.",
+    "en": "Track quarterly results to verify whether CoAsia CM's expected second-half improvement in mobile optics profitability and revenue contribution from new physical AI applications materialize."
    }
   },
   {
    "when": {
-    "ko": "2026년 말 (리벨리온 AI 칩렛 개발·검증 완료 목표 시점)",
-    "en": "End-2026 (Rebellions AI chiplet development and verification completion target)"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "코아시아세미와 리벨리온이 공동 목표한 AI 칩렛 개발·검증 완료 및 AI 데이터센터 양산 공급 착수 여부를 확인한다. 양산 계약으로 이어질 경우 텐스토렌트 이후의 중기 매출 성장 가시성이 높아진다.",
-    "en": "Track whether the joint CoAsia SEMI and Rebellions AI chiplet development and verification reaches completion and transitions to AI data-center mass-production supply as targeted. A successful handoff to production would meaningfully enhance visibility into post-Tenstorrent medium-term revenue growth."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 11월 말 (2026년 3분기 실적 발표)",
-    "en": "Late November 2026 (Q3 2026 earnings release)"
-   },
-   "what": {
-    "ko": "2025년에 나타난 상반기 흑자·하반기 적자 계절성 패턴이 2026년에도 반복되는지, 아니면 반도체 양산 매출이 하반기 수익성을 보강해 연간 흑자 전환이 현실화되는지를 평가하는 핵심 시점이 된다.",
-    "en": "Determine whether the 2025 H1-profit/H2-loss seasonality pattern repeats in 2026, or whether semiconductor mass-production revenues provide sufficient H2 2026 earnings support to achieve a full-year operating turnaround—making this the pivotal earnings checkpoint of the year."
+    "ko": "2026년 연간 사업보고서·감사보고서 공시를 통해 연간 확정 실적과 적자 축소 흐름의 지속 여부를 최종 확인해야 한다.",
+    "en": "Confirm the finalized annual results and whether the loss-narrowing trend persisted, through the 2026 annual business and audit report filings."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "코아시아는 2022년 이후 4년 연속 영업·순손실을 이어왔으나, 2025년에는 영업손실이 22억 원 수준으로 대폭 축소되고 영업현금흐름이 흑자로 전환되는 등 구조적 개선의 가장 뚜렷한 신호가 나타났다. 텐스토렌트 AI 칩렛 양산 계약(예상 매출 1,400억 원 이상) 체결과 2026년 1분기 반도체 매출 비중의 29.9% 달성은 전자부품 제조에서 시스템반도체 설계·양산 솔루션으로의 구조 전환이 실체화되고 있음을 보여주는 가장 구체적인 증거다. 재무적으로는 부채비율이 195.9%에 달하고 EPS는 -444원으로 음수를 유지하며, 2026년 1분기에도 판관비 급증으로 영업손실이 재발해 단기 흑자 전환 시점의 불확실성이 여전하다. 삼성전자 파운드리 SAFE DSP 및 Arm AADP라는 이중 글로벌 파트너십 기반, 리벨리온·ETRI 국책 과제 참여, 미국 Tier-1 추가 계약 추진 등은 중장기 수주 확대 가능성을 지지하는 요소다. 반면 고객 집중도 리스크, 삼성 파운드리 경쟁력 변수, 양산 전환 실행 리스크는 실질적인 제약 요인으로 존재한다. 텐스토렌트 양산 물량 인식 속도와 판관비 증가세의 안정화 여부가 향후 손익분기점 달성 시점을 결정하는 핵심 변수이며, 이 두 지표에 대한 지속적인 모니터링이 필요하다.",
-   "ko_extra": "",
-   "en": "CoAsia has endured four consecutive years of operating and net losses since 2022, yet FY2025 produced the clearest structural improvement signals to date—operating losses narrowing to KRW 2.24bn and operating cash flow turning positive at KRW 13.0bn. The Tenstorrent AI chiplet mass-production contract (projecting KRW 140bn+ in revenue) and the semiconductor segment reaching 29.9% of Q1 2026 revenue represent the most tangible evidence that the pivot from electronics manufacturing to system semiconductor design and production solutions is becoming real. Financially, a debt-to-equity ratio approaching 200%, a negative EPS of -444 won, and a re-emerging Q1 2026 operating loss driven by SGA cost acceleration leave the near-term profitability timeline uncertain. The dual anchor of Samsung Foundry SAFE DSP and Arm AADP partnerships, combined with participation in the Rebellions and ETRI PIM national R&D program and the anticipated U.S. Tier-1 contract, supports the medium-to-long-term order pipeline thesis. Counterbalancing risks—customer concentration, Samsung Foundry competitiveness uncertainty, and mass-production execution risk—remain material considerations. The pace of Tenstorrent revenue recognition and the stabilization of SGA growth are the two variables that will ultimately determine when the earnings breakeven threshold is reached, making them the central monitoring priorities for this evolving structural transition story."
+   "ko": "코아시아는 2022년부터 2025년까지 이어진 연간 적자 구조에서 벗어나기 위한 개선 흐름을 보여왔으며, 2025년 영업손실이 대폭 축소되고 2026년 1·2분기 지배주주순이익이 연속 흑자를 기록한 점은 긍정적 신호다. 그러나 같은 기간 영업손익은 여전히 적자에 머물러 있어 순이익 개선이 영업 본질의 개선인지 비영업적 요인에 의한 것인지는 추가 확인이 필요하다. 자회사 코아시아세미의 AI 칩렛·첨단 패키징 사업과 코아시아씨엠의 프리미엄 광학·피지컬 AI 확장은 중장기 성장 스토리를 뒷받침하는 요소지만, 아직 상용화 초기 단계로 매출 기여 시점은 불확실하다. 삼성전자 그룹에 대한 높은 매출 의존도는 실적의 변동성을 키우는 구조적 요인으로 남아 있다. 밸류에이션 측면에서는 주가순자산비율이 1배를 밑도는 수준에서 거래되고 있으며, 향후 방향은 분기별 영업손익 흑자 전환의 지속성과 신사업 매출화 여부에 좌우될 것으로 보인다. 투자자는 다가오는 분기 실적 공시와 AI 칩렛 프로젝트의 진행 상황을 함께 살펴볼 필요가 있다.",
+   "en": "CoAsia has shown an improving trend as it works to break out of the annual loss structure that persisted from 2022 through 2025, with the sharp narrowing of the 2025 operating loss and two consecutive quarters of positive net income attributable to owners in Q1 and Q2 2026 standing out as positive signals. However, operating profit remained negative over the same period, so further confirmation is needed on whether the net income improvement reflects genuine operational progress or non-operating factors. The AI chiplet and advanced packaging business at subsidiary CoAsia SEMI, along with premium optics and physical AI expansion at CoAsia CM, support a medium- to long-term growth narrative, but both remain at an early commercialization stage with uncertain timing for revenue contribution. High revenue dependence on the Samsung Electronics group remains a structural factor that amplifies earnings volatility. On valuation, the stock trades with a price-to-book ratio below 1x, and its future direction appears likely to hinge on whether quarterly operating profit turnarounds prove sustainable and whether new businesses translate into actual revenue. Investors will want to monitor both upcoming quarterly earnings disclosures and the progress of the AI chiplet project."
   }
  },
  "sources": [
-  "https://www.investing.com/equities/co-asia-holdings-co-ltd",
-  "https://m.thinkpool.com/compDiscuss/cont/1020270",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A045970&MenuYn=Y",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250319001344",
-  "https://w4.kirs.or.kr/download/aireport/AI_%EB%B3%B4%EA%B3%A0%EC%84%9C_20251113_%EC%BD%94%EC%95%84%EC%8B%9C%EC%95%84(045970).pdf",
-  "https://securities.miraeasset.com/bbs/download/2124096.pdf?attachmentId=2124096",
+  "https://www.threads.com/@choi.openai/post/DaCt7pxD8V-/10-%EA%B7%B8-%EC%9E%AC%ED%8E%B8%EC%9D%98-%EB%AC%B4%EA%B2%8C%EB%A5%BC-%ED%95%9C%EA%B5%AD-%EA%B2%BD%EC%A0%9C-%EC%A0%84%EC%B2%B4%EA%B0%80-%EB%96%A0%EC%95%88%EA%B3%A0-%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4%EB%B0%98%EB%8F%84%EC%B2%B4%EB%8A%94-%ED%95%9C%EA%B5%AD-%EC%88%98%EC%B6%9C%EC%9D%98-4%EB%B6%84%EC%9D%98-1-%EA%B0%80%EA%B9%8C%EC%9D%B4%EB%A5%BC-%EC%B0%A8%EC%A7%80%ED%95%98%EB%8A%94-%EC%82%B0%EC%97%85%EC%9D%B4-%EB%90%90%EC%8A%B5%EB%8B%88%EB%8B%A4-%EB%B0%98%EB%8F%84%EC%B2%B4%EA%B0%80-%EC%A2%8B%EC%9C%BC%EB%A9%B4-%EC%88%98%EC%B6%9C-",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=9bx25JMC56iLmZ4Z",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=IZDTOHPysP78Hsuj",
+  "https://www.instagram.com/p/DXISpmaEvG0/",
+  "https://www.valley.town/space/@eager-griffin-mh1bo0koood/articles/6a1a8eb156315920f6f71793",
+  "https://m.thinkpool.com/compDiscuss/cont/1022992",
+  "https://kita.net/researchTrade/report/tradeBrief/downloadTradeBriefFile.do;JSESSIONID_KITA=6258EC877AA45CE1F56C5709D544D6A2.Hyper?no=960BC4669ECB61EC1C90F592AD863E03&fileSeq=B0721B9F23054DDC7FE56C2811A12715",
+  "https://eureka.hankyung.com/insight/detail/16880",
+  "https://file.alphasquare.co.kr/media/pdfs/market-report/%EA%B8%B0%ED%83%802026%EB%85%8420260528SK%EC%A6%9D%EA%B6%8C.pdf",
+  "https://www.hmsec.com/documents/research/20250401080723153_ko.pdf",
+  "https://m.thinkpool.com/compDiscuss/cont/1021045",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=5&gicode=A045970&cID=21&MenuYn=N&NewMenuID=102&stkGb=701",
+  "https://www.k5.co.kr/stock/045970",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A045970",
   "https://deepsearch.com/analytics/company-analysis/KRX:045970",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20241114002639",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=37491",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1710119386074.pdf",
-  "https://www.asiae.co.kr/article/2021021508401832117",
-  "https://www.hellot.net/news/article.html?no=104307",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=57644",
-  "https://v.daum.net/v/zySo9n8B8J?f=p",
-  "https://moneypie.net/wiki/v/코아시아",
-  "https://www.news2day.co.kr/article/20210215500086",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/S2lSTElaN3V3ODR6SHkyUW1IWExMUT09/company_nm/(%EC%A3%BC)%EC%BD%94%EC%95%84%EC%8B%9C%EC%95%84",
-  "https://thevc.kr/coasianexell"
+  "https://www.kokstock.com/stock/item.asp?item_cd=045970",
+  "https://comp.kisline.com/hi/HI0100M010GE.nice?stockcd=045970&nav=1&custom=sedaily",
+  "https://m.irgo.co.kr/IR-ROOM/045970/%EC%BD%94%EC%95%84%EC%8B%9C%EC%95%84-IR-ROOM"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "045970",
  "name": "코아시아",
  "name_en": "CoAsia Corporation",
@@ -234,9 +223,9 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 02:18",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 17:56",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -339,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 2930,
-   "mcap": 0.0771,
+   "price": 3035,
+   "mcap": 0.0799,
    "shares": 26314876,
    "total_shares": 26314876,
    "wavg_shares": 24964104,
    "per": null,
    "eps": -242,
-   "pbr": 0.8679,
+   "pbr": 0.899,
    "bps": 3376,
    "roe_ttm": -7.3,
    "ttm_window": "2025Q3~2026Q2",

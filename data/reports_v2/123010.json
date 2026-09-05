@@ -1,241 +1,231 @@
 {
  "title": {
-  "ko": "영업흑자 복귀 vs. 반복 지배구조 변동",
-  "en": "Operating Turnaround Meets Governance Turbulence"
+  "ko": "카메라모듈서 미사일 방산으로 정체성 전환",
+  "en": "From Camera Module Parts to Missile Defense Pivot"
  },
  "lead": {
-  "ko": "2025년 3년 연속 대규모 적자 구조에서 벗어나 영업흑자 전환에 성공했으나, 2026년 들어 수개월 내 세 차례 최대주주 교체·사업목적 급변이 이어지며 실적 개선과 지배구조 불확실성이 동시에 부각되고 있다.",
-  "en": "FY2025 delivered a long-awaited operating profit turnaround after three consecutive years of heavy losses, but three controlling-shareholder changes and abrupt business-purpose pivots within just six months of 2026 have placed governance uncertainty squarely alongside the fundamental recovery."
+  "ko": "MSDI(구 알엔티엑스)는 이미지센서 패키징·모바일 카메라모듈 도장 등 기존 전자부품 사업을 유지한 채 2026년 8월 사명 변경과 함께 미사일 종합 방산기업 전환을 공식 선언했다.",
+  "en": "MSDI (formerly RNT-X) has kept its existing electronic components businesses such as image sensor packaging and mobile camera module painting while officially declaring a pivot to become a comprehensive missile defense company, marking the move with a corporate name change in August 2026."
  },
  "keypoints": [
   {
-   "ko": "2025년 영업이익 약 2.1억 원(OPM +0.5%) 흑자 전환 — 영업현금흐름도 2024년 -31.7억 원에서 2025년 +47.2억 원으로 대폭 반등, 3년 연속 적자 구조 실질 개선 확인",
-   "en": "FY2025 operating income turned positive (~KRW 208 million, OPM +0.5%), and operating cash flow swung from -KRW 3.2 billion in FY2024 to +KRW 4.7 billion — confirming a genuine structural improvement after three consecutive loss years."
+   "ko": "2026년 8월 3일 임시주총에서 사명을 엠에스디아이(MSDI)로 변경하고 미사일 개발·양산·MRO를 아우르는 종합 방산기업 전환을 공식화했다.",
+   "en": "At an extraordinary shareholders' meeting on August 3, 2026, the company changed its name to MSDI and formally declared its transition into a comprehensive defense company spanning missile development, production, and MRO."
   },
   {
-   "ko": "모바일 카메라 스티프너 도장 부문이 2025년 매출의 약 79%(약 303억 원 추정)를 차지하는 핵심 수익 기반 — LG이노텍 공급망 집중으로 단일 고객 편중 리스크 상존",
-   "en": "The mobile camera module stiffener coating segment drives an estimated 79% (~KRW 30.3 billion) of FY2025 revenue, but heavy reliance on the LG Innotek supply chain sustains pronounced single-customer concentration risk."
+   "ko": "기존 매출의 절대 다수는 모바일 카메라모듈용 부품 도장 사업에서 발생하며, 이미지센서 패키징·자동차 HVAC부품 임가공이 뒤를 잇는다.",
+   "en": "The vast majority of existing revenue comes from the mobile camera module component painting business, followed by image sensor packaging and automotive HVAC component contract manufacturing."
   },
   {
-   "ko": "NeoPAC® 3D 기반 QRNG(양자난수생성기) 칩을 2020년 상반기부터 국내 휴대폰 고객사에 양산 공급 중 — 양자보안 시장과의 검증된 기술 접점이나 공시상 매출 기여 규모는 미확인",
-   "en": "QRNG chips based on NeoPAC® 3D technology have been in mass-production supply to a domestic smartphone maker since H1 2020, providing a verified quantum-security foothold whose precise revenue contribution is not separately disclosed in DART filings."
+   "ko": "2025년 연결 영업이익은 소폭 흑자로 전환했으나 지배주주 순이익은 2022년 이후 4개 연도 모두 적자를 지속했다.",
+   "en": "Consolidated operating profit turned slightly positive in 2025, but net income attributable to owners has remained in the red every year from 2022 through 2025."
   },
   {
-   "ko": "2026년 1~5월 사이 최대주주 세 차례 교체·사업목적 급변(양자·초전도체→방산) — CB·유상증자 반복 발행에 따른 주식 희석과 경영 불안정 우려 심화",
-   "en": "Three controlling-shareholder changes between January and May 2026, combined with rapid business-purpose pivots (quantum/superconductor → defense), intensify governance instability and dilution risk from repeated CB and equity issuances."
+   "ko": "방산 신사업은 방위사업청 군수품 무역대리업체 지정 등 제도적 기반은 마련됐으나 아직 매출·투자계획이 구체화되지 않았다.",
+   "en": "The defense business has secured an institutional foothold—including designation as a munitions trading agent by the Defense Acquisition Program Administration—but revenue and investment plans have not yet been concretized."
   },
   {
-   "ko": "2026년 1분기 매출 96.8억 원·영업이익 13.5억 원(OPM ~14%)·순이익 13.6억 원 달성 — 계절적 Q2 약세를 앞두고 연간 수익성 지속 여부가 핵심 관전 포인트",
-   "en": "Q1 2026 delivered revenue of KRW 9.7 billion, operating income of KRW 1.4 billion (OPM ~14%), and net income of KRW 1.4 billion; sustaining profitability through the traditionally weak Q2 is the key near-term question."
+   "ko": "전환사채·유상증자 등 자금조달 일정이 잇달아 지연되며 신사업 실행을 위한 자금 확보가 관건으로 남아있다.",
+   "en": "Repeated delays in convertible bond issuances and rights offerings leave securing funding for the new business as a key open question."
   }
  ],
  "business": {
-  "ko": "알엔티엑스(구 아이윈플러스·옵토팩)는 2003년 이미지센서 패키징 특허기술을 기반으로 설립됐으며 2016년 코스닥에 상장한 전자부품 기업이다. 사업 구조는 ① 이미지센서 CSP 패키징, ② 자동차 공조부품 임가공, ③ 모바일 카메라모듈용 부품 도장, ④ IT·로봇자동화시스템의 네 개 부문으로 구성된다. 매출의 약 79%(2025년 기준 약 303억 원 추정)를 차지하는 스티프너 도장 부문은 2023년 1월 에이티솔루션 편입을 통해 추가됐으며, 덕우전자→LG이노텍으로 이어지는 공급망에 납품하는 구조다. 이 부문은 절연 테이프 대신 지그 방식 도장 공정을 적용해 다양한 형상의 스티프너 가공이 가능하며, 스티프너는 카메라모듈의 전자파 차단과 무선기기 수신감도 향상에 기여하는 핵심 부품이다. 이미지센서 CSP 패키징 부문은 자체 등록상표 NeoPAC®(I→II→Encap→3D) 시리즈를 보유하며 SK하이닉스·Sony·TI 등 글로벌 센서 업체에 서비스를 제공하고, 2025년 매출 비중은 약 10.8%(약 41억 원)로 추정된다. 특히 NeoPAC® 3D 기반 QRNG 칩은 2020년 상반기부터 국내 휴대폰 고객사에 양산 공급 중으로, 양자보안 시장과의 실질적 기술 접점을 보유한다. 자동차용 공조부품(헤더콘덴서) 임가공은 안정적 매출 기반을 제공하나 단순 임가공 특성상 부가가치가 낮고, IT·로봇자동화시스템 부문은 자동차·디스플레이·공작기계 등 다양한 제조현장을 대상으로 하나 수주 변동성이 높다. 2026년 1월 사명을 알엔티엑스(RNT-X, 'Radical New Technology-X')로 변경하며 첨단 신기술 기업으로의 전환을 공식화했으나, 잦은 대주주 교체와 맞물려 2026년 내 사명 재변경 가능성도 거론되고 있다.",
-  "en": "AlRNTX (formerly iWinPlus and Optopak) was founded in 2003 on image sensor packaging patents and listed on KOSDAQ in 2016. Its four business segments are: (1) image sensor CSP packaging, (2) automotive HVAC component processing, (3) mobile camera module stiffener coating, and (4) IT/robot automation systems. The stiffener coating segment — estimated at roughly 79% (~KRW 30.3 billion) of FY2025 revenue — was added via the consolidation of AT Solution in January 2023 and supplies into a Duckwoo Electronics→LG Innotek chain. The segment uses jig-based coating processes rather than conventional insulating tape, enabling diverse stiffener geometries; stiffeners serve to shield against electromagnetic interference and improve wireless reception in camera modules. The image sensor CSP packaging segment operates under the proprietary NeoPAC® family (I→II→Encap→3D), serving customers such as SK Hynix, Sony, and TI — estimated at roughly 10.8% (~KRW 4.1 billion) of FY2025 revenue. NeoPAC® 3D-based QRNG chips have been in mass-production supply to a domestic smartphone maker since H1 2020, providing a verified quantum-security foothold. The automotive HVAC processing segment (header condensers) offers stable but low-value-add contract-processing revenue, while IT/robot automation systems serve diverse manufacturing environments with higher order-volume volatility. In January 2026 the company was renamed AlRNTX ('Radical New Technology-X') to signal an advanced-technology orientation; a further name change was reportedly on the agenda for the May 2026 EGM under the incoming ownership group."
+  "ko": "MSDI는 이미지센서 칩스케일패키지(CSP) 패키징, 자동차 공조부품(HVAC) 임가공, 모바일 카메라모듈용 부품 도장, IT·로봇자동화시스템 등 네 개 사업부문을 영위해온 전자부품 기업이다. 이 중 모바일 카메라모듈용 스티프너 도장 사업이 매출의 절대적 비중을 차지하는데, 2026년 1분기 연결 매출 97억원 가운데 이 사업이 77억원으로 79.9%를 차지했고 이미지센서 부문은 10억원으로 10.3%였다. 이미지센서 패키징은 자체 개발한 웨이퍼레벨 패키징 기술인 'NeoPAC®'을 기반으로 하며, 이미지센서·조도센서·근접센서·ToF센서·광학용 지문센서 등 다양한 포토센서에 대한 패키징·테스트 서비스를 제공한다. 자동차 HVAC 부문은 자동차 에어컨 시스템의 핵심 부품인 헤더콘덴서를 임가공·조립해 공급하는 구조다. 회사는 2026년 1월 최대주주가 변경되며 사명을 아이윈플러스에서 알엔티엑스로 바꾼 데 이어, 같은 해 8월 3일 임시주주총회를 통해 다시 사명을 MSDI로 변경하고 본점 소재지도 이전할 계획을 발표했다. 새 경영진은 방위사업청 정밀유도무기사업부장 출신 대표이사를 중심으로 구성됐으며, 회사는 지난 7월 29일 방위사업청으로부터 군수품 무역 대리업체 지정을 받아 글로벌 방산업체와의 협력 토대를 마련했다고 밝혔다. 회사 측은 유럽의 미사일 전문기업들과 중장거리 공대지·공대공 미사일의 공동개발 및 국내 생산, 라이선스 생산 등을 협의 중이라고 설명하고 있다. 다만 기존 이미지센서·카메라모듈·자동차부품 사업과 미사일 방산 사업 간의 기술적·사업적 연결고리는 아직 크지 않은 상태다.",
+  "en": "MSDI is an electronic components company that has operated four business segments: image sensor chip-scale package (CSP) packaging, automotive HVAC component contract manufacturing, mobile camera module component painting, and IT/robot automation systems. Among these, the mobile camera module stiffener painting business accounts for the overwhelming majority of revenue; in the first quarter of 2026, this segment generated KRW 7.7 billion of the company's KRW 9.7 billion in consolidated revenue, or 79.9%, while the image sensor segment contributed KRW 1.0 billion, or 10.3%. Image sensor packaging is based on the company's proprietary wafer-level packaging technology, NeoPAC®, providing packaging and testing services for various photo sensors including image sensors, ambient light sensors, proximity sensors, ToF sensors, and optical fingerprint sensors. The automotive HVAC segment involves contract manufacturing and assembly of header condensers, a key component of vehicle air conditioning systems. Following a change in largest shareholder in January 2026, the company renamed itself from IWinPlus to RNT-X, and then on August 3, 2026, held an extraordinary shareholders' meeting to rename itself again to MSDI and announced plans to relocate its headquarters. The new management team is led by a CEO who formerly headed the precision guided weapons program office at the Defense Acquisition Program Administration, and the company stated that on July 29 it received designation as a munitions trading agent from the Defense Acquisition Program Administration, establishing a foundation for cooperation with global defense companies. The company has said it is in discussions with European missile specialist firms on joint development and domestic production, as well as licensed production, of medium- and long-range air-to-surface and air-to-air missiles. However, the technical and business linkage between the existing image sensor, camera module, and automotive parts businesses and the new missile defense business remains limited at this stage."
  },
  "earnings": {
-  "ko": "2022년 매출 163.3억 원(영업이익률 -30.2%)에서 출발해, 2023년 에이티솔루션 편입으로 매출이 322.9억 원으로 97.7% 급증했으나 영업이익률은 -31.4%로 오히려 악화됐다. 2024년에는 매출 393.5억 원으로 성장했음에도 영업손실 68.8억 원(OPM -17.5%), 순손실 146.0억 원이 지속되며 지배주주 자기자본이 303.4억 원으로 급감했다. 2025년이 실질적 전환점으로, 매출이 383.8억 원으로 소폭(-2.5%) 감소했음에도 영업이익 약 2.1억 원(OPM +0.5%)으로 흑자 전환에 성공했으며, 순손실도 -32.9억 원으로 전년 대비 77.4% 줄었다. 영업현금흐름(CFO)은 2024년 -31.7억 원에서 2025년 +47.2억 원으로 크게 반등해 현금창출력 회복을 확인시켜 줬다. 분기별로는 Q3 2025(매출 119.3억 원, OPM +22.1%)가 연중 최강인 반면, Q2(매출 77.7억 원, OPM -22.9%)와 Q4(매출 79.0억 원, OPM -9.6%)가 뚜렷한 약세 계절성을 보인다. 2026년 1분기는 매출 96.8억 원에 영업이익 13.5억 원(OPM ~14%)·순이익 13.6억 원을 달성했으며, 전년 동기(매출 107.8억 원, OPM 1.1%) 대비 매출은 10.2% 줄었음에도 이익률이 대폭 개선됐다. 4년간 누적 순손실로 지배주주 자기자본은 2022년 말 546.8억 원에서 2025년 말 264.2억 원으로 약 절반 수준으로 축소됐고, 부채비율은 44.9%에서 75.2%로 상승했다. 이처럼 재무 체력이 점진적으로 소모된 상황에서, 2026년의 흑자 지속 여부와 자본 구조 회복이 핵심 과제로 남아 있다.",
-  "en": "Starting from FY2022 revenue of KRW 16.3 billion (OPM -30.2%), the consolidation of AT Solution drove FY2023 revenue up 97.7% to KRW 32.3 billion, but OPM worsened to -31.4%. FY2024 saw top-line growth to KRW 39.4 billion yet yielded an operating loss of KRW 6.9 billion (OPM -17.5%) and a net loss of KRW 14.6 billion, sharply eroding controlling-shareholder equity to KRW 30.3 billion. FY2025 was the genuine turning point: revenue edged down 2.5% to KRW 38.4 billion while operating income turned positive at ~KRW 208 million (OPM +0.5%), and the net loss narrowed 77.4% to -KRW 3.3 billion. Operating cash flow rebounded from -KRW 3.2 billion in FY2024 to +KRW 4.7 billion in FY2025, confirming a real recovery in cash generation. Quarterly seasonality is pronounced: Q3 2025 (revenue KRW 11.9 billion, OPM +22.1%) was the peak, while Q2 (KRW 7.8 billion, OPM -22.9%) and Q4 (KRW 7.9 billion, OPM -9.6%) posted meaningful losses. Q1 2026 delivered revenue of KRW 9.7 billion, operating income of KRW 1.4 billion (OPM ~14%), and net income of KRW 1.4 billion — margins improved sharply versus Q1 2025 (revenue KRW 10.8 billion, OPM 1.1%) despite a 10.2% revenue decline. Cumulative losses over four years halved controlling-shareholder equity from KRW 54.7 billion at end-FY2022 to KRW 26.4 billion at end-FY2025 while the debt ratio climbed from 44.9% to 75.2%, making the continuation of profitability and balance-sheet restoration the defining financial priorities for 2026."
+  "ko": "연간 실적을 보면 매출은 2022년 163억원에서 2023년 323억원, 2024년 394억원으로 늘었다가 2025년 384억원으로 소폭 줄었다. 영업이익은 2022년 -49억원, 2023년 -101억원, 2024년 -69억원의 적자를 이어오다 2025년 2.1억원으로 흑자 전환했으며, 영업이익률도 2023년 -31.4%, 2024년 -17.5%에서 2025년 0.5%로 개선됐다. 다만 지배주주 순이익은 2022년 -53억원, 2023년 -122억원, 2024년 -146억원, 2025년 -33억원으로 4개 연도 모두 적자를 벗어나지 못했다. 분기별로는 변동성이 크게 나타난다. 2025년 2분기 매출 78억원에 영업손실 -18억원, 순손실 -19억원을 기록한 뒤 3분기에는 매출이 119억원으로 늘며 영업이익 26억원, 순이익 24억원의 뚜렷한 흑자를 냈다. 그러나 4분기에는 매출이 79억원으로 줄고 영업손실 -8억원에 순손실은 -38억원으로 크게 확대됐는데, 이는 일회성 요인이 순이익에 반영된 결과로 보인다. 2026년 1분기에는 매출 97억원, 영업이익 14억원, 순이익 14억원으로 다시 흑자를 냈으나 2분기에는 매출 85억원, 영업이익 5억원의 흑자에도 순이익은 -2억원으로 소폭 적자를 기록했다. 이처럼 분기 실적은 영업이익 차원에서는 개선 흐름을 보이는 구간이 있었지만, 순이익 차원에서는 일회성 항목의 영향으로 등락이 반복되는 모습이다.",
+  "en": "On an annual basis, revenue rose from KRW 16.3 billion in 2022 to KRW 32.3 billion in 2023 and KRW 39.4 billion in 2024, before edging down to KRW 38.4 billion in 2025. Operating profit remained negative through 2022 (-KRW 4.9 billion), 2023 (-KRW 10.1 billion), and 2024 (-KRW 6.9 billion) before turning positive at KRW 0.2 billion in 2025, with the operating margin improving from -31.4% in 2023 and -17.5% in 2024 to 0.5% in 2025. Net income attributable to owners, however, remained negative in all four years: -KRW 5.3 billion in 2022, -KRW 12.2 billion in 2023, -KRW 14.6 billion in 2024, and -KRW 3.3 billion in 2025. Quarterly results show considerable volatility. After posting revenue of KRW 7.8 billion with an operating loss of -KRW 1.8 billion and a net loss of -KRW 1.9 billion in the second quarter of 2025, the company swung to a clear profit in the third quarter with revenue rising to KRW 11.9 billion, operating profit of KRW 2.6 billion, and net income of KRW 2.4 billion. In the fourth quarter, however, revenue fell back to KRW 7.9 billion, the operating loss widened to -KRW 0.8 billion, and the net loss expanded sharply to -KRW 3.8 billion, which appears to reflect one-off items affecting the bottom line. The first quarter of 2026 returned to profit with revenue of KRW 9.7 billion, operating profit of KRW 1.4 billion, and net income of KRW 1.4 billion, while the second quarter posted revenue of KRW 8.5 billion and operating profit of KRW 0.5 billion but a modest net loss of -KRW 0.2 billion. Overall, while there have been periods of improvement at the operating profit level, net income has continued to swing due to the impact of one-off items."
  },
  "industry": {
-  "ko": "이미지센서 CSP 패키징은 OSAT(위탁 반도체 패키징·테스트) 시장의 일부로, ASE·Amkor·JCET 등 대형 글로벌 업체 대비 규모의 열위 속에서 틈새 시장을 공략하는 구조다. CSP 방식은 고화소 프리미엄 스마트폰보다 저해상도 센서 및 특수 패키지 응용처에서 비교 우위를 가지며, 자동차향 NeoPAC® Encap(AEC-Q100 인증)과 QRNG 칩 등 고부가 응용 분야로의 확장이 진행 중이다. 모바일 카메라모듈용 스티프너 도장 시장은 중저가 스마트폰 보급 확대와 카메라 탑재 수 증가에 힘입어 성장세를 이어가고 있으며, 이는 현재 알엔티엑스 주력 수익원의 전방 시장 배경이 된다. 글로벌 QRNG 칩 시장은 2024년 약 1.5억 달러에서 2033년 약 20억 달러로 연평균 34.5% 성장이 전망되며(Verified Market Reports 기준), 양자보안 수요의 구조적 확대가 기대된다. 양자컴퓨팅 산업 전반으로는 엔비디아·구글·마이크로소프트 등 글로벌 빅테크의 공격적 투자가 이어지며 2026년 코스닥 최대 테마 중 하나로 부상했고, LS증권은 양자컴퓨터 산업이 2032년까지 연평균 43% 성장해 약 30조 원 규모에 이를 것으로 전망한 바 있다. 자동차 HVAC 부품 시장은 전장화 트렌드와 함께 안정적 수요가 유지되나 단순 임가공 특성상 수익성 개선 여지는 제한적이다. 주요 전방 시장인 스마트폰 제조의 계절 출하 변동성이 알엔티엑스의 분기 실적 기복에 직결돼, 핵심 고객의 생산 계획 변동이 단기 실적의 가장 직접적 변수로 작용한다.",
-  "en": "Image sensor CSP packaging is a niche within the broader OSAT market, where AlRNTX competes at a meaningful scale disadvantage versus global leaders such as ASE, Amkor, and JCET. CSP holds a relative edge in low-resolution sensors and specialty-package applications rather than high-megapixel premium smartphones, and the company is extending the technology into higher-value applications including automotive NeoPAC® Encap (AEC-Q100 certified) and QRNG chips. The mobile camera module stiffener coating market continues to grow on accelerating mid-to-low-end smartphone penetration and rising camera counts per device, providing a structural tailwind to AlRNTX's primary revenue segment. The global QRNG chip market is projected to grow at a 34.5% CAGR from approximately USD 150 million in 2024 to USD 2 billion by 2033 (Verified Market Reports), reflecting structural demand growth in quantum security. Quantum computing broadly has emerged as one of the dominant KOSDAQ themes in 2026, driven by aggressive investment from NVIDIA, Google, and Microsoft; LS Securities has projected the quantum computer industry to grow at a 43% CAGR through 2032 toward approximately KRW 30 trillion. Automotive HVAC component demand remains stable under the vehicle electrification trend, but the contract-processing nature of the segment limits meaningful margin improvement. Smartphone production seasonality flows directly into AlRNTX's quarterly revenue swings, making major customer order patterns the most immediate near-term variable."
+  "ko": "기존 사업의 전방시장을 보면 모바일 카메라모듈용 부품 도장 사업은 중저가 스마트폰 보급 확대에 따른 카메라모듈 수요 증가의 수혜를 받고 있는 것으로 설명된다. 이미지센서 CSP 패키징 시장은 웨이퍼레벨 칩스케일패키지 기술을 활용한 경박단소형 솔루션 경쟁이 치열한 성숙 시장으로, 다수의 국내외 패키징 업체와 경쟁하는 구도다. 자동차 HVAC 부품 임가공은 완성차·부품 협력사 공급망 내에서 안정적이지만 부가가치가 낮은 임가공 특성상 이익 기여도가 제한적인 사업으로 분류된다. 새롭게 추진하는 미사일 방산 사업은 국내 대형 방산업체들이 오랜 기간 국방과학연구소 주도의 개발·양산 체계에서 성장해온 산업이며, 한화에어로스페이스·LIG넥스원 등 기존 방산 대기업들이 유도무기 분야에서 확고한 지위를 갖고 있다. 이런 구도에서 MSDI는 정부 주도 개발 체계에서 벗어나 유럽 미사일 전문기업과의 공동개발·라이선스 생산이라는 다른 접근을 표방하는 신규 진입자에 해당한다. K-방산 수출이 최근 몇 년간 확대되며 정밀유도무기·미사일 분야에 대한 관심이 높아진 산업 환경은 신규 진입 시도의 배경이 되고 있다. 다만 미사일 개발·생산·MRO에는 높은 기술적 진입장벽과 정부 인증·계약 절차가 수반되는 만큼, 신규 진입자가 실제 매출로 연결시키기까지는 상당한 시간과 검증 과정이 필요할 것으로 보인다.",
+  "en": "In the existing businesses' end markets, the mobile camera module component painting business is described as benefiting from rising demand for camera modules tied to the expansion of low- and mid-priced smartphones. The image sensor CSP packaging market is a mature market with intense competition in wafer-level, chip-scale packaging solutions, involving numerous domestic and international packaging players. Automotive HVAC component contract manufacturing offers a stable but low value-added position within the automaker and parts supplier chain, with limited profit contribution given the nature of contract manufacturing. The newly pursued missile defense business operates in an industry where large domestic defense contractors have long grown within a development and production system led by the Agency for Defense Development, with established players such as Hanwha Aerospace and LIG Nex1 holding solid positions in guided weapons. Against this backdrop, MSDI positions itself as a new entrant pursuing a different approach—joint development and licensed production with European missile specialist firms—outside the traditional government-led development framework. The broader industry backdrop of expanding K-defense exports in recent years and growing interest in precision guided weapons and missiles provides context for the new entry attempt. However, missile development, production, and MRO involve high technical barriers to entry along with government certification and contracting processes, meaning a new entrant would likely require considerable time and validation before translating this into actual revenue."
  },
  "outlook": {
-  "ko": "2026년 1분기 분기 흑자 달성으로 양호한 출발을 보였으나, 스마트폰 카메라 모듈 수요의 계절적 약세가 예상되는 2분기 실적이 연간 수익성 유지의 첫 번째 시험대가 된다. 이미지센서 패키징 부문에서는 NeoPAC® Encap의 자동차향 양산 확대와 NeoPAC® 3D의 브랜드 모바일 시장 진입이 추진 중으로, 실현될 경우 단가·마진 개선의 동력이 될 수 있다. QRNG 칩은 2020년 이후 국내 휴대폰 고객사에 양산 공급 중이며, 회사는 추가 휴대폰 모델 적용과 해외 고객으로의 공급 확대를 기대하고 있으나 구체적 수주 규모는 공시상 미확인이다. 2026년 5월 29일 임시주주총회에서 초전도체 관련 사업목적이 삭제되고 항공기·미사일·군수품 등 방위산업 사업목적이 추가됐으며, 황성환 신임 대표이사 체제로의 전환이 공식화됐다. 신경영진 체제 하에서 200억 원 규모 제3자배정 유상증자·200억 원 규모 7회차 CB·100억 원 규모 8회차 CB 등 총 500억 원 규모의 자금조달 계획이 추진 중이지만, 앞선 납입 일정이 수차례 지연된 이력이 있어 실제 완결 여부를 면밀히 확인해야 한다. 방산 신사업은 현재 정관 추가 단계에 불과하며 실제 매출 발생까지 상당한 준비 기간이 필요하다. 핵심 수익원인 스티프너 도장 부문의 LG이노텍 발주 동향이 단기 실적에 가장 직접적인 영향을 미치는 변수로 남아 있다.",
-  "en": "Q1 2026 marked a positive start, but the seasonally weak Q2 will be the first real test of whether full-year profitability can be sustained. On the image sensor side, the automotive production ramp of NeoPAC® Encap and the branded-mobile market entry of NeoPAC® 3D are ongoing, with potential to lift unit prices and margins if realized. QRNG chip supply to a domestic smartphone customer has continued since 2020, and the company targets expansion to additional phone models and overseas customers, though specific order volumes remain undisclosed in DART filings. At the May 29, 2026 EGM, superconductor-related business purposes were removed and defense industry purposes (aircraft, missiles, and military goods) were added, with Hwang Seong-hwan formally installed as the new CEO. Under the new controlling shareholders, a KRW 50 billion fundraising plan (KRW 20 billion third-party equity placement, KRW 20 billion 7th CB, KRW 10 billion 8th CB) is under way, but given that prior payment deadlines were delayed multiple times, actual completion warrants close monitoring. The defense pivot remains at the charter-amendment stage, with meaningful revenue contributions likely requiring years to materialize. LG Innotek's order trajectory for camera module stiffeners remains the most direct near-term determinant of quarterly results."
+  "ko": "회사는 미사일 개발·양산·MRO를 단일 체계로 수행하는 '수명 전주기 원스톱 솔루션'을 목표로 제시하고 있으며, 이를 위한 연구개발센터·MRO센터·생산기지 조성 부지를 복수의 지방자치단체와 협의 중이라고 밝혔다. 회사 측은 유럽의 미사일 전문기업들과 장거리·중거리 공대지 미사일, 장거리 공대공 미사일의 공동개발 및 국내 생산을 협의하고 있으며, 기존 검증된 미사일의 라이선스 생산도 사업계획에 포함돼 있다고 설명한다. 이와 함께 공동개발한 공대지 미사일과 국내 전투기의 체계통합, 그리고 지대지 순항 미사일의 독자 개발 추진도 언급된 바 있다. 다만 이러한 계획들은 아직 구체적인 계약 체결이나 부지 확정 발표로 이어지지 않은 단계이며, 방산 부문의 매출 기여 시점과 규모는 불확실하다. 신사업 투자 재원 마련을 위해 회사는 전환사채·신주인수권부사채 발행 한도를 정관상 크게 확대했으나, 실제 자금 유입은 계획보다 지연되고 있는 것으로 나타났다. 기존 사업 측면에서는 모바일 카메라모듈 도장 사업이 최근 성장세를 보인 만큼 이 부문의 매출 기여가 당분간 회사 실적의 핵심 변수로 남을 전망이다.",
+  "en": "The company has set a goal of a single-system 'lifecycle one-stop solution' encompassing missile development, production, and MRO, stating that it is in discussions with multiple local governments over sites for R&D centers, MRO centers, and production facilities. The company says it is negotiating with European missile specialist firms on joint development and domestic production of medium- and long-range air-to-surface missiles and long-range air-to-air missiles, with licensed production of already-proven missiles also included in its business plans. It has also referenced pursuing system integration of jointly developed air-to-surface missiles with domestic fighter jets, as well as independent development of a surface-to-surface cruise missile. However, none of these plans have yet resulted in concrete contract signings or confirmed site announcements, and the timing and scale of any revenue contribution from the defense segment remain uncertain. To fund the new business, the company has substantially expanded its articles-of-incorporation limits for convertible bond and bond-with-warrant issuance, but actual funding inflows have reportedly been delayed relative to plan. On the existing business side, given the recent growth in the mobile camera module painting segment, this segment's revenue contribution is likely to remain a key variable for the company's near-term results."
  },
  "valuation_comment": {
-  "ko": "주당순자산(BPS) 840원에 대해 현재 주가는 순자산 대비 상당한 프리미엄 구간에 위치하고 있으며, 이는 양자보안·방산 신사업에 대한 시장 기대가 상당 부분 선반영된 것으로 해석된다. 주당순이익(EPS)은 -59원으로 적자권에 있어 이익 기반 밸류에이션 지표(PER)가 산출되지 않는 단계이며, 배당금(DPS)도 수년간 지급된 바 없어 배당수익률이 업종 평균을 크게 밑돌고 있다. 2025년 영업흑자 전환과 2026년 1분기 순흑자 달성은 이익 회복의 첫 신호이나, 영업이익률이 아직 한 자릿수 초반에 불과해 신사업 기대 프리미엄이 상당 부분 내포된 구간으로 볼 수 있다. CB·유상증자 반복 발행이 현실화될 경우 BPS와 EPS가 추가 희석될 수 있어 지분 가치 변동 가능성을 함께 고려해야 한다. 투자경고종목 지정 이력에서 드러나듯 단기 테마 수급에 따른 주가 변동성이 크므로, 펀더멘털 기반 지표와 시장 기대치 간의 간극을 병행 점검하는 것이 중요하다.",
-  "en": "At a book value per share (BPS) of KRW 840, the current share price trades at a substantial premium to net assets, suggesting significant market expectations for quantum-security and defense businesses are already embedded in the price. With earnings per share (EPS) at -KRW 59, the stock remains in loss territory and earnings-based multiples are not computable; dividends (DPS) have been zero for multiple consecutive years, placing dividend yield well below sector norms. The FY2025 operating turnaround and Q1 2026 net profit represent meaningful early signals of earnings recovery, but with OPM still in the low single digits, a notable new-business expectation premium appears embedded in current pricing. Repeated CB and equity issuances, if executed, could further dilute BPS and EPS, introducing an ongoing dilution dynamic into the valuation framework. Given the repeated investment-warning designations, theme-driven price volatility can be pronounced, making it important to monitor the gap between fundamental metrics and market pricing concurrently."
+  "ko": "MSDI는 최근 5년간 배당을 지급한 이력이 없으며, 지속된 영업적자와 누적 결손금 상황을 고려하면 당분간 배당 재원 확보도 쉽지 않은 구조로 보인다. 주가순자산비율 측면에서는 순자산 대비 일정한 프리미엄이 반영된 상태로 거래되고 있으며, 이는 방산 신사업 전환 기대감이 밸류에이션에 일부 반영된 결과로 해석될 수 있다. 회사의 다년간 실적 흐름은 적자에서 부분적 이익 회복 국면으로 이동하는 모습을 보였으나, 순이익 기준으로는 아직 안정적인 흑자 기조를 확립하지 못한 상태다. 시가총액이 작은 소형주인 만큼 유통주식 수, 전환사채 물량 등 수급 요인이 주가에 미치는 영향이 상대적으로 크게 나타날 수 있는 구조다.",
+  "en": "MSDI has not paid dividends over the past five years, and given its persistent operating losses and accumulated deficit, securing the resources for future dividends does not appear straightforward in the near term. In terms of price-to-book, the stock trades at a level reflecting a certain premium over net asset value, which may partly reflect expectations tied to the defense business pivot being incorporated into the valuation. The company's multi-year earnings trajectory has shown a shift from losses toward partial profit recovery, but on a net income basis a stable profitable trend has not yet been established. As a small-cap stock, supply-and-demand factors such as float and outstanding convertible bond volume can have a relatively outsized influence on the share price."
  },
  "bull": [
   {
    "title": {
-    "ko": "영업흑자 전환·영업현금흐름 플러스 복귀",
-    "en": "Operating Profit Turnaround and Positive Operating Cash Flow Recovery"
+    "ko": "방산 전환 제도적 기반 마련",
+    "en": "Institutional Groundwork Laid for Defense Pivot"
    },
    "body": {
-    "ko": "2025년 영업이익 약 2.1억 원(OPM +0.5%)은 절대 규모는 작지만, 3년 연속 대규모 영업적자(2022년 -49.2억→2023년 -101.2억→2024년 -68.8억 원)에서 완전히 벗어났다는 점에서 구조 개선의 명확한 신호다. 영업현금흐름도 2024년 -31.7억 원에서 2025년 +47.2억 원으로 반등해 실질적인 현금창출력 회복이 확인됐다. 2026년 1분기에는 매출 96.8억 원에 영업이익 13.5억 원(OPM ~14%)·순이익 13.6억 원을 달성하며, 이익률 측면에서 분기 단위 수익성이 뚜렷이 자리를 잡고 있다.",
-    "en": "FY2025 operating income of ~KRW 208 million (OPM +0.5%) is small in absolute terms, but it ended three consecutive years of deep operating losses (FY2022: -KRW 4.9 billion, FY2023: -KRW 10.1 billion, FY2024: -KRW 6.9 billion), signaling a clear structural shift. Operating cash flow turned positive at +KRW 4.7 billion in FY2025 versus -KRW 3.2 billion in FY2024, confirming a real recovery in cash generation. Q1 2026 built further on this with revenue of KRW 9.7 billion, operating income of KRW 1.4 billion (OPM ~14%), and net income of KRW 1.4 billion, suggesting quarterly profitability is establishing a firmer foothold."
+    "ko": "회사는 방위사업청으로부터 군수품 무역대리업체 지정을 받았고, 방위사업청 정밀유도무기사업부장 출신 대표이사를 영입해 방산 전문성을 보강했다. 유럽 방산기업 경력을 가진 이사도 합류하며 해외 네트워크 기반을 마련하고 있다고 밝혔다. 이는 신규 진입자로서 필요한 제도적·인적 기반을 단계적으로 갖춰가는 과정으로 해석할 수 있다.",
+    "en": "The company received munitions trading agent designation from the Defense Acquisition Program Administration and brought in a CEO who previously headed the agency's precision guided weapons program office to strengthen defense expertise. It also stated that a director with experience at a European defense firm has joined, laying groundwork for an overseas network. This can be read as a step-by-step process of building the institutional and personnel foundation needed as a new entrant."
    }
   },
   {
    "title": {
-    "ko": "QRNG 양산 이력과 글로벌 양자보안 시장 구조적 성장",
-    "en": "Proven QRNG Production Track Record and Structural Quantum-Security Market Growth"
+    "ko": "기존 캐시카우 사업의 성장세",
+    "en": "Growth in the Core Existing Business"
    },
    "body": {
-    "ko": "NeoPAC® 3D 기반 QRNG 칩의 2020년 이래 국내 휴대폰 고객사 양산 공급은 단순 테마가 아닌 실체적 기술 접점을 의미하며, 양자보안 부품 분야에서 선발자 지위를 확보한 것으로 평가된다. 글로벌 QRNG 칩 시장이 2033년까지 연평균 34.5% 성장이 전망되는 가운데, 패키징 역량을 활용해 해외 고객 및 자동차·IoT 등 추가 응용처로 수주가 확대될 경우 실적 기여도가 높아질 수 있다. NeoPAC® Encap(AEC-Q100 인증)의 자동차향 양산 확대 역시 고단가·고마진 매출 비중을 늘리기 위한 병행 경로다.",
-    "en": "Mass-production supply of QRNG chips based on NeoPAC® 3D technology to a domestic smartphone maker since 2020 represents a genuine technology foothold rather than a purely thematic claim, positioning AlRNTX as an established quantum-security component supplier. The global QRNG chip market's projected 34.5% CAGR through 2033 provides a structural growth backdrop, and order expansion to overseas customers or automotive/IoT applications could materially raise the segment's revenue contribution. The automotive ramp of NeoPAC® Encap (AEC-Q100 certified) offers a parallel pathway to higher unit-value and higher-margin revenue."
+    "ko": "모바일 카메라모듈용 부품 도장 사업은 회사 매출의 핵심 축으로, 1분기 기준 전체 매출의 약 80%를 차지할 만큼 비중이 크다. 중저가 스마트폰 보급 확대라는 산업 배경 속에서 이 사업이 견조한 흐름을 유지한다면 방산 신사업 투자 기간 동안 현금흐름을 뒷받침하는 역할을 할 수 있다.",
+    "en": "The mobile camera module component painting business is the company's core revenue driver, accounting for about 80% of total revenue as of the first quarter. If this business maintains solid momentum amid the industry backdrop of expanding low- and mid-priced smartphone adoption, it could help support cash flow during the investment period for the new defense business."
    }
   },
   {
    "title": {
-    "ko": "중저가 스마트폰 보급 확대 속 스티프너 도장 수요 지속",
-    "en": "Sustained Stiffener Coating Demand from Mid-Low Smartphone Penetration"
+    "ko": "연간 영업이익 흑자 전환",
+    "en": "Annual Operating Profit Turned Positive"
    },
    "body": {
-    "ko": "중저가 스마트폰 보급 가속화와 카메라 탑재 수 증가 추세는 스티프너 수요 저변을 꾸준히 넓히고 있으며, 이는 매출의 약 79%를 차지하는 주력 사업에 직접적인 수요 기반을 제공한다. 지그 방식 도장 공정의 형상 자유도는 고객사 설계 다양화에 유연하게 대응할 수 있어 일정 수준의 전환 비용과 공급 관계 안정성을 형성한다. 시장 성장 환경 속에서 핵심 고객과의 공급 관계가 유지된다면 기저 매출의 점진적 확대가 기대된다.",
-    "en": "Accelerating penetration of mid-to-low-end smartphones and the trend toward more cameras per device continuously broaden the base of stiffener demand, directly supporting the segment that accounts for roughly 79% of revenue. The jig-based coating process's flexibility in handling diverse geometries provides a degree of switching cost and supply-relationship stability with key customers. In a growing end market, maintaining the anchor supply relationship could support gradual core-revenue expansion."
+    "ko": "2025년 연결 영업이익은 2.1억원으로 흑자 전환했고, 영업이익률도 2024년 -17.5%에서 2025년 0.5%로 개선됐다. 분기 기준으로도 2025년 3분기, 2026년 1분기, 2분기에 연속 영업흑자를 기록해 최근 수익성 개선 흐름이 나타나고 있다.",
+    "en": "Consolidated operating profit turned positive at KRW 0.2 billion in 2025, with the operating margin improving from -17.5% in 2024 to 0.5% in 2025. On a quarterly basis, the company also posted consecutive operating profits in the third quarter of 2025 and the first and second quarters of 2026, indicating a recent trend of improving profitability."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "반복적 최대주주 교체·주식 희석 리스크",
-    "en": "Repeated Controlling Shareholder Changes and Share Dilution Risk"
+    "ko": "방산 신사업 구체성 부족",
+    "en": "Lack of Concreteness in the New Defense Business"
    },
    "body": {
-    "ko": "2026년 1월부터 5월 사이 최대주주가 아이윈→알엔투테크놀로지→위드윈투자조합91호로 세 차례 교체됐으며, 교체마다 CB·유상증자 계획이 뒤따라 기존 주주의 지분 희석이 진행형이다. 신주인수권부사채(BW) 발행 한도를 1,000억 원에서 2,000억 원으로 상향해 추가 희석 가능성을 열어뒀고, 주주총회에서 이사 선임 안건이 부결되는 등 경영 안정성 훼손 사례도 확인됐다. 전환청구권 행사와 신주 발행이 현실화될 경우 지분 가치 희석과 주가 하방 압력이 지속될 수 있다.",
-    "en": "Three controlling-shareholder changes between January and May 2026 — from iWin to RNT Technologies to the Withwin Investment Consortium — were each accompanied by CB and equity plans that impose ongoing dilution on existing shareholders. Doubling the BW issuance ceiling to KRW 200 billion keeps potential dilution capacity wide open, and a failed director-election vote at one AGM highlighted concrete management stability concerns. Conversion right exercises and new share placements can sustain downward pressure on per-share values."
+    "ko": "미사일 공동개발·라이선스 생산 등의 계획은 아직 구체적인 계약이나 생산기지 부지 확정으로 이어지지 않았다. 기존 이미지센서·카메라모듈·자동차부품 사업과 미사일 방산 사업 간 기술적 연결고리도 뚜렷하지 않아, 신사업이 실제 매출로 전환되기까지 상당한 시간과 검증이 필요할 수 있다.",
+    "en": "Plans for missile joint development and licensed production have not yet resulted in concrete contracts or confirmed production site locations. There is also no clear technical linkage between the existing image sensor, camera module, and automotive parts businesses and the new missile defense business, meaning considerable time and validation may be needed before the new business translates into actual revenue."
    }
   },
   {
    "title": {
-    "ko": "신사업 구체화 지연·테마 의존 구조",
-    "en": "New Business Delays and Theme-Dependent Valuation Structure"
+    "ko": "지속된 순손실과 자본 감소",
+    "en": "Persistent Net Losses and Declining Equity"
    },
    "body": {
-    "ko": "초전도체 사업목적은 추가된 지 약 두 달 만에 삭제됐고, 방산 신사업 역시 정관 추가 단계에 불과하다. QRNG 관련 매출 기여도가 공시상 명확히 확인되지 않아, 주가가 펀더멘털보다 테마 수급에 크게 의존하는 구조가 이어지고 있다. 양자·방산 테마 수급이 약화될 경우 주가가 실적 기반의 적정 수준으로 빠르게 수렴할 수 있으며, 투자경고종목 반복 지정 이력이 이러한 변동성 패턴을 보여준다.",
-    "en": "The superconductor business purpose was removed within roughly two months of its addition, and the defense pivot is similarly confined to a charter amendment at this stage. QRNG revenue contribution is not separately quantified in DART filings, meaning the share price leans heavily on thematic capital flows over underlying fundamentals. A fading of quantum or defense thematic interest could produce a rapid reversion toward earnings-based intrinsic value, a pattern already evidenced by the stock's repeated investment-warning designations."
+    "ko": "지배주주 순이익은 2022년부터 2025년까지 4개 연도 모두 적자를 기록했다. 자본총계도 2022년 552억원에서 2025년 264억원으로 줄어드는 추세를 보였는데, 이는 누적된 순손실이 자기자본을 지속적으로 갉아먹은 결과로 해석된다.",
+    "en": "Net income attributable to owners posted losses in all four years from 2022 through 2025. Total equity has also declined from KRW 55.2 billion in 2022 to KRW 26.4 billion in 2025, a trend that reflects accumulated net losses steadily eroding shareholders' equity."
    }
   },
   {
    "title": {
-    "ko": "취약한 이익률·고객 집중·재무 레버리지 상승",
-    "en": "Thin Margins, Customer Concentration, and Rising Financial Leverage"
+    "ko": "자금조달 지연과 지배구조 변동성",
+    "en": "Funding Delays and Governance Volatility"
    },
    "body": {
-    "ko": "2025년 연간 영업이익률 0.5%는 원재료·인건비·환율 등 원가 변수가 소폭만 악화돼도 즉시 적자로 전환될 수 있는 취약한 수준이다. 매출의 약 79%가 LG이노텍 공급망에 집중돼 있어 주요 고객의 발주 감소나 단가 압박 시 실적이 직격탄을 맞는 구조다. 4년간 누적 순손실로 부채비율이 44.9%(2022년)에서 75.2%(2025년)로 상승해 이자 부담이 증가했으며, 500억 원 규모 자금조달이 완결되지 않을 경우 재무 유동성 위험이 현실화될 수 있다.",
-    "en": "A full-year OPM of just 0.5% in FY2025 means even modest adverse moves in raw materials, labor, or exchange rates can quickly flip results back into the red. With roughly 79% of revenue tied to the LG Innotek supply chain, any reduction in orders or pricing pressure from this anchor customer would deliver an immediate earnings shock. Four years of cumulative net losses pushed the debt ratio from 44.9% (FY2022) to 75.2% (FY2025), raising interest charges; if the KRW 50 billion fundraising plan faces further delays, liquidity risk could materialize."
+    "ko": "전환사채와 유상증자 등 계획된 자금조달 일정이 당초 계획보다 지연되는 사례가 반복됐다. 최대주주 변경과 사명 변경이 짧은 기간 내 여러 차례 이어진 점도 지배구조 안정성 측면에서 지켜봐야 할 요인이다.",
+    "en": "Planned fundraising through convertible bonds and rights offerings has repeatedly been delayed relative to original schedules. Multiple changes in largest shareholder and corporate name within a short period are also factors worth monitoring from a governance stability standpoint."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "지배구조·주식 희석",
-    "en": "Governance and Share Dilution"
+    "ko": "사업 실행 리스크",
+    "en": "Execution Risk"
    },
    "body": {
-    "ko": "5개월 내 세 차례 최대주주 교체는 경영 연속성과 전략적 일관성을 크게 훼손하며, 각 전환마다 대규모 CB·유상증자 계획이 수반돼 기존 주주 지분 희석이 진행형이다. BW 발행 한도 2,000억 원은 잠재적 희석 규모가 현 시가총액을 크게 상회할 수 있음을 의미한다. 전환청구권이 행사되면 BPS와 EPS가 동시에 하락하는 이중 부담이 발생하며, 새 경영진 체제 안정화에 상당한 시간이 소요될 것으로 예상된다.",
-    "en": "Three controlling-shareholder changes within five months severely undermine management continuity and strategic consistency, with each transition accompanied by large-scale CB and equity plans that impose ongoing dilution. A KRW 200 billion BW issuance ceiling implies a potential dilution capacity that can materially exceed current market capitalization. If conversion rights are exercised, BPS and EPS can decline simultaneously, creating compounded impact on existing shareholders, and meaningful time will be required for the new management team to stabilize."
+    "ko": "미사일 방산 사업은 아직 계약·부지·투자계획이 구체화되지 않은 초기 단계이며, 정부 인증과 국방 관련 규제 절차를 통과해야 한다. 계획 대비 실행이 지연되거나 무산될 경우 사업 재편에 따른 기대가 실적으로 이어지지 않을 수 있다.",
+    "en": "The missile defense business is still at an early stage where contracts, sites, and investment plans have not been finalized, and it must pass through government certification and defense-related regulatory procedures. If execution is delayed or falls through relative to plan, expectations tied to the business realignment may not translate into actual results."
    }
   },
   {
    "cat": {
-    "ko": "테마 소멸·주가 변동성",
-    "en": "Theme Fade and Share Price Volatility"
+    "ko": "자금조달·재무구조 리스크",
+    "en": "Funding and Financial Structure Risk"
    },
    "body": {
-    "ko": "양자컴퓨팅·방산 테마는 글로벌 빅테크 이벤트나 규제·정책 변화에 민감하게 반응하며, 테마 수급 이탈 시 주가 급락 위험이 높다. 투자경고종목 지정·매매거래 일시 정지 등 거래소 규제 조치가 반복될 경우 유동성 위험이 증폭된다. 양자 관련 실제 매출이 전체 매출에서 미미한 비중으로 추정되는 만큼, 테마 프리미엄의 지속 가능성은 본질적으로 제한적이다.",
-    "en": "Quantum computing and defense themes are highly sensitive to big-tech event catalysts and policy/regulatory shifts; a sudden fading of thematic momentum could produce sharp share price declines. Repeated investment-warning designations and possible temporary trading suspensions amplify liquidity risk during volatile episodes. Given that quantum-related actual revenue is estimated at a small fraction of total sales, the sustainability of thematic premiums is inherently limited."
+    "ko": "전환사채·신주인수권부사채 발행 한도가 정관상 크게 확대됐고, 실제 CB·유상증자 납입이 계획보다 지연되는 사례가 있었다. 자기자본이 지속적으로 감소하는 가운데 향후 추가 자금조달 시 주식 희석이 발생할 수 있다.",
+    "en": "The articles-of-incorporation limit for convertible bonds and bonds with warrants has been substantially expanded, and there have been instances where actual CB and rights offering payments were delayed relative to plan. Amid a continuing decline in shareholders' equity, further fundraising could result in equity dilution going forward."
    }
   },
   {
    "cat": {
-    "ko": "원가 구조·재무 레버리지 취약성",
-    "en": "Cost Structure and Balance Sheet Fragility"
+    "ko": "고객·매출 집중 리스크",
+    "en": "Customer and Revenue Concentration Risk"
    },
    "body": {
-    "ko": "연간 영업이익률 0.5% 수준에서는 외부 원가 변수 소폭 악화만으로도 즉시 적자 전환이 가능하다. 부채비율 75.2%와 영업외 금융비용 부담은 영업이익이 순이익 전환에 충분하지 않은 구조적 제약을 내포한다. 500억 원 규모 자금조달 계획이 완전히 이행되지 않을 경우 신사업 투자 여력 제한과 재무 안정성 저하가 동시에 발생할 수 있다.",
-    "en": "At an OPM of only 0.5%, minor adverse moves in input costs or revenue can rapidly tip results back to a loss. A debt ratio of 75.2% and significant non-operating financial charges mean operating income may not reliably translate into positive net income — an embedded structural constraint. If the KRW 50 billion fundraising plan is not fully executed, investment capacity will be constrained and financial stability could simultaneously deteriorate."
+    "ko": "매출의 핵심인 모바일 카메라모듈 도장 사업은 특정 공급망 고객에 집중된 구조로 알려져 있다. 스마트폰 시장 수요 변화나 주요 고객의 생산 조정이 있을 경우 회사 실적에 직접적인 영향을 줄 수 있다.",
+    "en": "The core revenue-generating mobile camera module painting business is known to be concentrated around specific supply chain customers. Changes in smartphone market demand or production adjustments by key customers could have a direct impact on the company's results."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중 (2026년 2분기 실적 발표)",
-    "en": "August 2026 (Q2 FY2026 Earnings Release)"
+    "ko": "2026년 11월 중순(3분기보고서 공시 예정 시점)",
+    "en": "Mid-November 2026 (expected third-quarter report filing)"
    },
    "what": {
-    "ko": "2분기 매출·영업이익 확인 — 전년 동기(Q2 2025: 매출 77.7억 원, OPM -22.9%)가 연중 계절적 저점이었으므로, 개선 폭이 2026년 연간 흑자 유지 여부를 가늠하는 핵심 기준점이 된다.",
-    "en": "Review Q2 2026 revenue and operating income — with Q2 2025 (revenue KRW 7.8 billion, OPM -22.9%) as the seasonal trough, the year-over-year change is the primary indicator of whether full-year profitability is on track."
+    "ko": "2026년 3분기 실적 공시에서 기존 사업 매출·이익 추이와 방산 신사업의 매출 반영 여부를 확인할 필요가 있다.",
+    "en": "The third-quarter 2026 earnings disclosure should be checked for trends in the existing business's revenue and profit as well as whether the new defense business begins to show any revenue contribution."
    }
   },
   {
    "when": {
-    "ko": "2026년 6~7월 (500억 원 자금조달 납입 완결 여부)",
-    "en": "June–July 2026 (KRW 50 Billion Fundraising Completion)"
+    "ko": "향후 공시 시점(미확정)",
+    "en": "Upcoming disclosure (date unconfirmed)"
    },
    "what": {
-    "ko": "제3자배정 유증(200억)·7회차 CB(200억)·8회차 CB(100억) 납입 완결 여부 — 납입 완결 시 재무 안정성 개선과 투자 여력 확보, 추가 지연·취소 시 재무 유동성 위험의 적색 신호로 해석.",
-    "en": "Confirm whether the KRW 20 billion equity placement, KRW 20 billion 7th CB, and KRW 10 billion 8th CB are fully funded — completion signals improved financial stability; further delays or cancellations would be a direct red flag for liquidity."
+    "ko": "미사일 연구개발·MRO센터 및 생산기지 부지에 대한 지방자치단체와의 협의 결과가 최종 확정·공시되는지 확인할 필요가 있다.",
+    "en": "It is worth monitoring whether discussions with local governments over sites for the missile R&D, MRO center, and production facility are finalized and formally disclosed."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (QRNG 추가 수주·자동차 패키징 양산 공시)",
-    "en": "H2 2026 (QRNG New Orders and Automotive Packaging Production Disclosures)"
+    "ko": "향후 공시 시점(미확정)",
+    "en": "Upcoming disclosure (date unconfirmed)"
    },
    "what": {
-    "ko": "QRNG 칩의 해외 고객 공급 개시 또는 NeoPAC® Encap 자동차향 양산 본격화 공시 여부 — 이 두 이벤트는 테마에서 실적으로의 전환을 확인시켜 줄 핵심 촉매이며, 부재 시 신사업 기여 타임라인이 지연 중이라는 신호다.",
-    "en": "Watch for QRNG chip supply to overseas customers or a formal automotive NeoPAC® Encap production ramp announcement — both would confirm a theme-to-fundamentals transition; absence of such disclosures implies continued delay in new-business revenue contribution."
+    "ko": "유럽 미사일 전문기업과의 공동개발 또는 라이선스 생산 계약 체결 여부와 구체적 조건이 공시되는지 확인이 필요하다.",
+    "en": "Whether a joint development or licensed production agreement with a European missile specialist firm is signed, and the specific terms disclosed, warrants monitoring."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (방산 신사업 구체화·투자 계획 공시)",
-    "en": "H2 2026 (Defense Business Concretization and Investment Plan Disclosures)"
+    "ko": "향후 자금조달 관련 공시 시점",
+    "en": "Upcoming funding-related disclosures"
    },
    "what": {
-    "ko": "방산 기업 전환 의도가 실제 투자 계획·협력사·수주 공시로 이어지는지 확인 — 정관 추가에 머무는지, 자원 배분이 수반된 실질적 사업화로 진전되는지를 판단하는 기준점.",
-    "en": "Assess whether the defense industry pivot translates from a charter amendment into concrete investment plans, disclosed partnerships, or order announcements — the key determining factor between substantive diversification and thematic posturing."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3~4월 (2026년 연간 실적·재무구조 확인)",
-    "en": "March–April 2027 (FY2026 Annual Results and Balance Sheet Review)"
-   },
-   "what": {
-    "ko": "2026년 연간 영업이익률·순손익·부채비율·자기자본 추이 확인 — 2025년 영업흑자 전환이 2026년에도 이어지고 4년간의 자본 침식이 멈추는지가 재무 신뢰도 회복의 핵심 척도다.",
-    "en": "Review FY2026 full-year OPM, net income/loss, debt ratio, and equity — whether the FY2025 operating turnaround is sustained and whether the multi-year capital erosion has stabilized are the definitive metrics for assessing durable financial recovery."
+    "ko": "지연되고 있는 전환사채·유상증자 등의 실제 납입 완료 여부와 조달 자금의 구체적 사용 계획을 확인할 필요가 있다.",
+    "en": "It is important to check whether the delayed convertible bond issuances and rights offering are actually completed, and to see the specific plans for use of the raised funds."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "알엔티엑스는 2025년 연간 영업흑자 전환과 영업현금흐름 플러스 복귀라는 구체적 실적 개선을 달성했으며, 2026년 1분기에도 이 흐름이 이어지고 있다. 그러나 연간 영업이익률 0.5%는 절대적으로 낮은 수준이며, 매출의 약 79%가 단일 고객 공급망에 집중돼 있어 수익성의 지속 가능성은 추가 검증이 필요한 단계다. NeoPAC® 3D 기반 QRNG 칩의 2020년 이래 양산 공급 이력은 양자보안 시장과의 실질적 기술 접점을 보여주지만, 전사 실적에서의 기여 규모는 공시상 불투명하고 초전도체·방산 신사업은 정관 추가 단계에 머물고 있다. 가장 두드러진 리스크는 지배구조로, 5개월 내 세 차례 최대주주 교체와 반복적 CB·유상증자 발행이 경영 연속성과 주식 희석 측면에서 중대한 불확실성을 내재하고 있다. 중장기적으로는 글로벌 양자보안 시장의 구조적 성장, 자동차향 고신뢰성 패키징 수요, 중저가 스마트폰 카메라 확대가 성장 동력이 될 수 있으나, 이를 실적으로 구현하려면 경영 안정화와 구체적 수주 공시가 선행돼야 한다. 투자자는 2분기 실적, 500억 원 자금조달 완결 여부, QRNG·자동차 패키징 수주 가시화라는 세 가지 이정표를 기준으로 기업 가치 방향성을 판단하는 것이 유효하다.",
-   "en": "AlRNTX delivered concrete fundamental improvement in FY2025 — an operating profit turnaround and a return to positive operating cash flow — with Q1 2026 continuing that trajectory. However, a full-year OPM of just 0.5% is inherently fragile, and with roughly 79% of revenue tied to a single customer supply chain, the sustainability of profitability remains to be validated. The QRNG chip production record since 2020 demonstrates a genuine quantum-security foothold, but its group-level revenue contribution is opaque from public filings, and both the superconductor and defense pivots remain at the charter-amendment stage. The most pronounced risk is governance: three controlling-shareholder changes within five months and repeated CB and equity issuances embed material uncertainty around management continuity and shareholder dilution. Over the medium-to-long term, structural growth in global quantum security, automotive high-reliability packaging demand, and mid-low smartphone camera penetration could provide real growth catalysts — but translating them into reported earnings requires management stabilization and tangible order disclosures as prerequisites. Investors would benefit from tracking three concrete signposts: Q2 2026 results, the KRW 50 billion fundraising completion, and disclosed QRNG or automotive packaging orders."
+   "ko": "MSDI는 이미지센서 패키징·모바일 카메라모듈 도장·자동차 HVAC부품 임가공이라는 기존 전자부품 사업 위에, 2026년 들어 미사일 방산이라는 전혀 다른 신사업을 얹으려는 회사다. 기존 사업은 2025년 영업이익 흑자 전환과 카메라모듈 도장 사업의 성장세라는 긍정적 신호를 보였지만, 지배주주 순이익은 4개 연도 연속 적자를 벗어나지 못했고 자기자본도 꾸준히 줄어드는 추세다. 방산 전환은 방위사업청 지정, 전문 경영진 영입 등 제도적 기반은 갖춰가고 있으나, 유럽 기업과의 공동개발·라이선스 생산·생산기지 조성 등 핵심 계획들은 아직 계약이나 부지 확정으로 이어지지 않은 초기 단계에 머물러 있다. 여기에 전환사채·유상증자 등 자금조달 일정이 반복적으로 지연되는 점은 신사업 실행의 재원 확보 측면에서 지켜볼 대목이다. 결국 이 회사에 대한 평가는 안정적으로 성장하는 카메라모듈 도장 사업의 현금창출력과, 아직 매출로 연결되지 않은 방산 신사업의 실행 속도 사이의 간극을 어떻게 좁혀 나가는지에 달려 있다. 투자자로서는 다가오는 분기 실적과 방산 부문의 구체적 계약·부지 확정 소식을 함께 확인하는 것이 중요해 보인다.",
+   "en": "MSDI is a company layering an entirely new missile defense business, launched in 2026, on top of its existing electronic components operations in image sensor packaging, mobile camera module painting, and automotive HVAC component contract manufacturing. The existing business showed positive signals in 2025, including a swing to operating profit and growth in the camera module painting segment, but net income attributable to owners has remained negative for four consecutive years, and shareholders' equity has been steadily declining. The defense pivot has been building an institutional foundation through the Defense Acquisition Program Administration's designation and the recruitment of specialized management, but core plans such as joint development with European firms, licensed production, and establishing production facilities remain at an early stage without confirmed contracts or finalized sites. Repeated delays in fundraising schedules for convertible bonds and rights offerings are also a point worth watching in terms of securing resources to execute the new business. Ultimately, an assessment of this company hinges on how the gap is closed between the steady cash generation of the growing camera module painting business and the execution pace of the defense business, which has yet to translate into revenue. For observers, it will be important to track upcoming quarterly results alongside any concrete contract or site-confirmation news from the defense segment."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A123010&NewMenuID=101",
-  "https://deepsearch.com/analytics/company-analysis/KRX:123010?c-symbol=KRX%3A123010",
-  "https://littlebproject.com/stock/123010/290/42135",
-  "https://www.valueline.co.kr/finance/summary/123010",
-  "https://markets.hankyung.com/stock/123010",
-  "https://www.xn--9v2b23mi6ckvf86n.com/report/637",
-  "https://kpinfo.kr/stock/123010",
-  "https://alphasquare.co.kr/home/stock-summary?code=059120",
-  "https://alphasquare.co.kr/home/stock-summary?code=090710",
-  "https://www.youtube.com/watch?v=q25PyWNCFvU",
-  "https://www.threads.com/@keynes_class/post/DXK-9KQE7Yy/1-%EC%B5%9C%EA%B7%BC-%EC%96%91%EC%9E%90%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B4%80%EB%A0%A8%EC%A3%BC-%EA%B8%89%EB%93%B1-%EB%B0%B0%EA%B2%BDpqc%EC%96%91%EC%9E%90-%EB%82%B4%EC%84%B1-%EC%95%94%ED%98%B8-%EC%9D%98%EB%AC%B4%ED%99%94-%EA%B0%80%EC%86%8D-%EB%AF%B8%EA%B5%AD%EC%9D%B4-%EC%97%B0%EB%B0%A9-%EC%A0%95%EB%B6%80-%EC%A0%84%EC%82%B0%EB%A7%9D%EC%9D%98-%EC%95%94%ED%98%B8-%EC%B2%B4%EA%B3%84%EB%A5%BC-%EC%96%91%EC%9E%90-%EB%82%B4%EC%84%B1-%EC%95%94%ED%98%B8%EB%A1%9C-%EC%A0%84%ED%99%98%ED%95%98%EB%8A%94-%EC%8B%9C%EC%A0%90%EC%9D%84-",
-  "https://www.youtube.com/watch?v=kWP7E6Dfi78",
-  "https://www.instagram.com/p/DLrJCs9z8EQ/",
-  "https://www.youtube.com/watch?v=MIh5gfwy730",
-  "https://ele.kyocera.com/en/topics/kavx/",
-  "https://needinfo.co.kr/rnt-x-annual-report-target-price-quantum-theme-stock/",
-  "https://www.sedaily.com/article/20038188",
-  "https://m.thebell.co.kr/m/newsview.asp?newskey=202604210836443300104976"
+  "https://www.samsungsdi.co.kr/upload/download/ir/SDI_Report_01_2024.05.16_kor.pdf",
+  "https://www.samsungsdi.co.kr/upload/download/ir/SDI_Report_2022.12_kor.pdf",
+  "https://www.samsungsdi.co.kr/upload/download/ir/SDI_Report_2021.9_kor.pdf",
+  "https://www.samsungsdi.co.kr/upload/download/ir/SDI_Report_01_2023.05.15_kor.pdf",
+  "https://kind.krx.co.kr/external/2023/03/22/000004/20230322000039/11011.htm",
+  "https://www.kradarsystem.kr/1d49a0cc-04d4-80ae-9fd1-e07de0aa7700",
+  "https://www.samsungsdi.co.kr/upload/download/ir/SDI_Report_02_2022.08.16_kor.pdf",
+  "https://www.samsungsdi.co.kr/upload/download/ir/SDI_Report_2020.6_kor.pdf",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250318001363&docno=&viewerhost=",
+  "https://securities.miraeasset.com/bbs/download/2140069.pdf?attachmentId=2140069",
+  "https://news.infostock.co.kr/a",
+  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx",
+  "https://stocks.pluconnect.com/086960_mds%ED%85%8C%ED%81%AC/",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=086960",
+  "https://alphasquare.co.kr/home/stock-summary?code=086960",
+  "https://file.myasset.com/sitemanager/upload/2026/0511/131638/20260511131638730_0_ko.pdf",
+  "https://www.samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&inlineYn=Y&saveKey=research.pdf&fileName=2010%2F2026020217311431K_02_08.pdf",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260318001422&rcpno=20260318001050&orgid=F&tran=Y&langTpCd=0"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "123010",
- "name": "알엔티엑스",
+ "name": "MSDI",
  "name_en": "RNT-X CO.,LTD.",
  "sector": "전자·부품",
  "categories": [
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:46",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 17:56",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 1974,
-   "mcap": 0.0399,
+   "price": 2355,
+   "mcap": 0.0476,
    "shares": 20215767,
    "total_shares": 32658542,
    "wavg_shares": 16533921,
    "per": null,
    "eps": -7,
-   "pbr": 1.0693,
+   "pbr": 1.2757,
    "bps": 1846,
    "roe_ttm": -0.8,
    "ttm_window": "2025Q3~2026Q2",

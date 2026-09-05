@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "전통주 선도 브랜드, 순자산 할인 속 수익성 방향성 회복",
-  "en": "Korea's Traditional Liquor Pioneer: Profitability Directional Recovery at a Deep NAV Discount"
+  "ko": "적자 축소·순이익 흑자 전환, 본업 재편 진행 중",
+  "en": "Narrowing Losses, Net Income Turns Positive as Core Business Resets"
  },
  "lead": {
-  "ko": "4년 연속 매출 감소와 영업적자가 지속되는 가운데, 영업손실 규모 축소 및 지배주주 귀속 순이익의 흑자 전환·확대라는 방향성 개선이 뚜렷하나, 영업 현금흐름의 적자 전환과 국내 주류 시장의 구조적 수축은 중단기 핵심 과제로 남아 있다.",
-  "en": "Amid a fourth consecutive year of revenue decline and sustained operating losses, operating loss is narrowing and controlling-interest net income has turned positive and expanded, yet negative operating cash flow and structural domestic market contraction remain critical near-term challenges."
+  "ko": "국순당은 영업손실이 이어지는 가운데도 지배주주 순이익이 2년 연속 흑자를 내며 방향을 틀었고, 탁주(막걸리) 중심으로 사업 구조가 재편되고 있다.",
+  "en": "Kooksoondang continues to post operating losses, yet owner net income has turned positive for two straight years, while the business mix keeps shifting toward makgeolli-led rice wine."
  },
  "keypoints": [
   {
-   "ko": "2025년 지배주주 귀속 순이익 약 62.4억 원으로 전년(약 13.7억 원) 대비 대폭 확대; 영업손실은 2024년 약 22.8억 원에서 2025년 약 8.3억 원으로 축소되며 수익성 방향성 개선",
-   "en": "Net income attributable to controlling shareholders expanded significantly to approx. KRW 6.24 bn in 2025 from KRW 1.37 bn in 2024; operating loss narrowed from approx. KRW 2.28 bn to KRW 0.83 bn, signaling directional profitability improvement."
+   "ko": "2025년 매출 674.99억원으로 4년 연속 감소했으나 영업손실은 전년 -22.79억원에서 -8.32억원으로 축소",
+   "en": "2025 revenue fell to KRW 67.5bn, a fourth straight annual decline, while the operating loss narrowed from KRW -2.28bn to KRW -0.83bn"
   },
   {
-   "ko": "2026년 4월 막걸리 업계 최초 500mL 캔 출시·'2026 대한민국 주류대상' 3종 대상 수상으로 제품 포트폴리오 경쟁력 재확인",
-   "en": "April 2026 debut of the industry's first 500 mL canned makgeolli and three Grand Prize wins at the 2026 Korea Liquor Awards reaffirm product portfolio competitiveness."
+   "ko": "지배주주 순이익은 2023년 -38.98억원, 2024년 13.75억원, 2025년 62.44억원으로 2년 연속 흑자 확대",
+   "en": "Owner net income moved from KRW -3.9bn in 2023 to KRW 1.37bn in 2024 and KRW 6.24bn in 2025, expanding for a second straight year"
   },
   {
-   "ko": "지배주주 순자산 약 2,372억 원(BPS 15,094원), 부채비율 8.0%의 무차입에 가까운 재무 구조로 재무 안정성이 업종 최상위 수준",
-   "en": "Controlling-interest equity of approx. KRW 237.2 bn (BPS KRW 15,094) and a near-zero-leverage balance sheet (8.0% debt ratio) rank financial health at the top of the sector."
+   "ko": "매출 비중은 탁주 44.43%, 기타 22.11%, 약주(백세주) 19.74%, 와인 13.73% 순",
+   "en": "Revenue mix is led by rice wine/makgeolli at 44.43%, followed by other products at 22.11%, yakju including Baeksaeju at 19.74%, and wine at 13.73%"
   },
   {
-   "ko": "세계 50개국 이상 수출 네트워크, 3년 연속 수출액 100억 원 돌파로 K-전통주 해외 수요 선점 기반 확립",
-   "en": "An export network spanning 50+ countries and more than three consecutive years of annual export revenues exceeding KRW 10 bn establish a first-mover position in overseas K-traditional liquor demand."
+   "ko": "2026년 2분기 매출 147.02억원, 영업손실 14.26억원으로 확대됐으나 순이익은 7.45억원으로 흑자 유지",
+   "en": "In Q2 2026, revenue was KRW 14.70bn and the operating loss widened to KRW -1.43bn, yet net income stayed positive at KRW 0.75bn"
   },
   {
-   "ko": "연결 매출 2022년 약 746억 원→2025년 약 675억 원 4년 연속 감소 지속, 2025년 영업 현금흐름(CFO) 약 -13.5억 원 적자 전환으로 이익의 질(quality of earnings) 점검 필요",
-   "en": "Consolidated revenues fell for a fourth consecutive year (approx. KRW 74.6 bn in 2022 to KRW 67.5 bn in 2025); operating cash flow (CFO) turned negative at approx. KRW -1.35 bn in 2025, necessitating scrutiny of earnings quality."
+   "ko": "부채비율 8.0%로 낮은 수준이나 2025년 영업활동현금흐름은 -13.55억원으로 순이익과 괴리",
+   "en": "The debt ratio remains low at 8.0%, but 2025 operating cash flow was KRW -1.35bn, diverging from the positive net income"
   }
  ],
  "business": {
-  "ko": "국순당(043650)은 막걸리(탁주), 약주(백세주), 소주(려), 과실주(복분자주) 등 한국 전통주 전 카테고리를 아우르는 코스닥 상장 전통주 전문 기업이다. 대표 제품인 '국순당 쌀막걸리'는 1996년 출시 이후 꾸준한 품질 개선을 거쳐 현재 750mL 페트병·350mL 캔·500mL 캔(2026년 4월 신규 출시)의 3종 라인업을 갖추고 있으며, 막걸리 업계 최초 캔 제품 출시(1993년 '바이오탁')의 기술적 유산을 계승하고 있다. 프리미엄 라인은 2018년 출시 이후 누적 850만 병 이상 판매된 '1000억 유산균 막걸리' 시리즈가 대표하며, 유산균 기능성을 전면에 내세워 3,000~3,500원대 고단가 포지셔닝에 성공적으로 안착했다. 고급 전통주 브랜드 '박봉담'은 복합문화공간과 연계해 체험형 마케팅을 전개하고, 전통주 역사·문화 체험공간 '주향로'와 함께 단순 제조기업을 넘어 전통주 문화 플랫폼을 지향하고 있다. 생산 거점은 강원도 횡성에 위치하며, 유통 채널은 대형마트·편의점 중심에서 퀵커머스(배민B마트)·온라인으로 다변화가 진행 중이다. 수출은 세계 50개국 이상으로, 3년 연속 수출액 100억 원을 돌파하며 백세주와 막걸리를 K-전통주 대표 제품으로 알리고 있다. 경쟁 구도는 서울장수막걸리·지평주조 등 막걸리 전문 업체와 함께 수제 전통주·소규모 양조 스타트업의 급증으로 프리미엄 세그먼트 내 경쟁이 심화되고 있다.",
-  "en": "Kooksoondang (043650) is a KOSDAQ-listed traditional Korean liquor specialist with a portfolio spanning makgeolli (rice wine), yakju (Baekseju herb wine), soju (Ryeo), and fruit wines (bokbunja). Its flagship 'Kooksoondang Ssal Makgeolli' has been continuously refined since its 1996 launch and now offers three SKUs: 750 mL PET, 350 mL can, and the newly introduced 500 mL can (April 2026), building on its heritage as the pioneer of canned makgeolli in Korea (Biotac, 1993). The premium tier is anchored by the '100 Billion Lactic Acid Bacteria' makgeolli series — launched in 2018 and exceeding cumulative sales of 8.5 million bottles — successfully commanding a KRW 3,000–3,500 price point by foregrounding probiotic functionality. The premium 'Bakbongdam' label is integrated with an experiential cultural complex, and the 'Juhyangro' traditional liquor heritage space advances the company's ambition beyond manufacturing toward becoming a traditional liquor culture platform. Production is anchored in Hoengseong, Gangwon Province. Distribution channels are diversifying from offline hypermarkets and convenience stores toward quick-commerce (Baemin B-mart) and online. Exports cover 50+ countries, with annual export revenues exceeding KRW 10 bn for three consecutive years, positioning Baekseju and makgeolli as representative K-traditional liquor exports globally. Competition from established rivals such as Seoul Jangsu and Jipyeong Brewing is being intensified by a surge of craft traditional liquor start-ups in the premium segment."
+  "ko": "국순당은 1983년 설립돼 1992년 현재 상호로 변경한 주류 전문기업으로, 강원도 횡성 공장을 중심으로 약주·탁주·와인 등을 생산·판매한다. 최근 매출 구성을 보면 국순당생막걸리 등 탁주 제품이 전체의 44.43%로 가장 크고, 기타 제품이 22.11%, 백세주가 속한 약주가 19.74%, 까르피네토 등 와인이 13.73%를 차지한다. 대표 제품 백세주는 1992년 출시돼 한때 매출 대부분을 견인했지만 최근 몇 년간 약주 카테고리 자체가 위축되며 상반기 기준 약주 매출액이 2022년 87억원에서 2023년 71억원, 2024년 63억원으로 매년 감소했고, 이에 회사는 백세주의 주질과 병 디자인을 재단장해 반등을 시도했다. 반대로 탁주 부문은 국내외에서 판매를 끌어올리며 비교적 순항해, 2024년 상반기 탁주 매출은 167억원으로 2년 전보다 10.6% 늘었고 매출 비중도 39.6%에서 47.7%까지 상승했다. 회사는 2019년 해태앤컴퍼니(옛 해태산업) 인수로 와인 사업에 진출했으며, 2024년 상반기 기준 와인 사업부 매출 비중은 전체의 14.4% 수준이었다. 이 외에도 캔달 제너의 '818 데킬라' 유통, 영국 프리미엄 스파클링 티 '사이초' 국내 독점 론칭, 스페셜티 커피 브랜드와의 협업 등으로 주류 이외 F&B 영역까지 포트폴리오를 확장하고 있다. 유통은 자체 영업망과 '백세주마을' 직영 매장, 복합문화공간 '박봉담', 역사문화체험 공간 '주향로' 등을 통해 브랜드 경험을 넓히고 있으며, 지역 농가 계약재배로 원료를 조달하고 해외 수출도 병행한다. 경쟁구도는 막걸리 시장에서 서울장수막걸리·지평주조, 전체 주류 시장에서 하이트진로·무학·진로발효·보해양조 등과 마주하는 구조다.",
+  "en": "Founded in 1983 and renamed to its current title in 1992, Kooksoondang is a beverage-alcohol specialist centered on its Hoengseong, Gangwon-do plant, producing yakju (refined rice wine), makgeolli, and wine. By recent revenue mix, rice-wine/makgeolli products led by Kooksoondang Saeng Makgeolli account for 44.43% of sales, other products 22.11%, yakju including Baeksaeju 19.74%, and wine such as Carpineto 13.73%. Baeksaeju, launched in 1992, once drove the bulk of revenue, but as the yakju category itself has shrunk, first-half yakju sales fell from KRW 8.7bn in 2022 to KRW 7.1bn in 2023 and KRW 6.3bn in 2024, prompting the company to overhaul the product's quality and bottle design in an attempt to reverse the decline. In contrast, the rice-wine/makgeolli segment has fared comparatively well both at home and abroad, with first-half 2024 sales up 10.6% from two years earlier to KRW 16.7bn and its revenue share rising from 39.6% to 47.7%. The company entered the wine business in 2019 through its acquisition of Haitai & Company (formerly Haitai Industrial), and the wine unit accounted for about 14.4% of total sales in the first half of 2024. Beyond alcohol, it has broadened its F&B portfolio via distribution of Kendall Jenner's 818 Tequila, an exclusive domestic launch of the UK premium sparkling tea brand Saicho, and a collaboration with a specialty coffee brand. Distribution runs through its own sales network, the Baeksaeju Village directly operated outlets, the Bakbongdam cultural complex, and the Juhyangno heritage experience space, alongside raw-material sourcing via contract farming and ongoing export activity. Competitively, it faces Seoul Jangsoo Makgeolli and Jipyeong Brewery in the makgeolli market, and Hite Jinro, Muhak, Jinro Fermentation, and Bohae Brewery across the broader liquor market."
  },
  "earnings": {
-  "ko": "연결 매출은 2022년 약 746억 원→2023년 약 704억 원→2024년 약 688억 원→2025년 약 675억 원으로 4년 연속 감소해, 국내 주류 시장의 구조적 수축을 반영하고 있다. 영업이익은 2022년 약 91.5억 원(OPM 12.3%)에서 2023년 약 44.6억 원(6.3%)으로 반감되고, 2024년 약 -22.8억 원(-3.3%)으로 영업적자에 진입한 뒤 2025년 약 -8.3억 원(-1.2%)으로 손실 폭이 축소됐다. 지배주주 귀속 순이익은 2022년 약 -46.4억 원, 2023년 약 -39.0억 원으로 적자였다가 2024년 약 13.7억 원으로 흑자 전환한 후 2025년 약 62.4억 원으로 대폭 확대됐다. 영업손실(-8.3억 원)과 순이익(+62.4억 원)의 큰 괴리는 이자·투자수익 등 비영업 수익이 순이익을 상당 부분 지지하는 구조임을 시사하며, 이 수익의 반복 가능성을 별도로 점검할 필요가 있다. 분기 계절성은 두드러지는데, 성수기인 2025년 3분기(매출 약 188억 원, 영업이익 약 2.0억 원)와 비수기인 4분기(매출 약 146억 원, 영업손실 약 11.9억 원)의 편차가 크다. 2026년 1분기 매출은 약 174억 원으로 전년동기(약 172억 원) 대비 소폭 증가하며 4년간의 하락세 완화 조짐을 보였고, 영업이익도 약 0.4억 원으로 흑자를 유지했다. 다만 영업 현금흐름(CFO)은 2022년 약 38.0억 원→2023년 약 13.9억 원→2024년 약 11.8억 원으로 축소된 데 이어 2025년 약 -13.5억 원으로 적자 전환해, 실질 현금 창출력의 회복 여부가 중요한 모니터링 과제로 부각됐다.",
-  "en": "Consolidated revenues declined for four consecutive years: from approx. KRW 74.6 bn (2022) to KRW 70.5 bn (2023), KRW 68.8 bn (2024), and KRW 67.5 bn (2025), reflecting broad structural contraction in the domestic liquor market. Operating profit eroded sharply from approx. KRW 9.15 bn (OPM 12.3%) in 2022 to KRW 4.46 bn (6.3%) in 2023, turning to an operating loss of approx. KRW -2.28 bn (-3.3%) in 2024, then narrowing to approx. KRW -0.83 bn (-1.2%) in 2025. Net income attributable to controlling shareholders swung from losses of approx. KRW -4.64 bn (2022) and KRW -3.90 bn (2023) to a KRW 1.37 bn profit in 2024, expanding substantially to approx. KRW 6.24 bn in 2025. The wide divergence between the operating loss (-KRW 0.83 bn) and net profit (+KRW 6.24 bn) strongly implies substantial contributions from non-operating income (interest, investment returns), the recurring nature of which warrants independent verification. Seasonal patterns are pronounced: Q3 2025 was the strongest quarter (revenue approx. KRW 18.8 bn, operating profit approx. KRW 0.2 bn), while Q4 2025 was the weakest (revenue approx. KRW 14.6 bn, operating loss approx. KRW -1.19 bn). Q1 2026 revenue of approx. KRW 17.5 bn edged slightly above the prior-year quarter (approx. KRW 17.2 bn), offering an early sign of easing top-line pressure, with operating profit holding positive at approx. KRW 0.04 bn. However, operating cash flow (CFO) declined from approx. KRW 3.8 bn (2022) to KRW 1.4 bn (2023), KRW 1.18 bn (2024), and turned negative at approx. KRW -1.35 bn in 2025, raising earnings-quality concerns that require close monitoring."
+  "ko": "연간 매출은 2022년 746.19억원, 2023년 704.84억원, 2024년 688.19억원, 2025년 674.99억원으로 4년 연속 감소하는 흐름을 이어갔다. 영업이익은 2022년 91.45억원, 2023년 44.65억원으로 흑자였으나 2024년 -22.79억원, 2025년 -8.32억원으로 2년 연속 적자를 냈고, 다만 2025년 적자 규모는 전년보다 축소됐다. 반면 지배주주 순이익은 2022년 -46.41억원, 2023년 -38.98억원 적자에서 2024년 13.75억원, 2025년 62.44억원으로 2년 연속 흑자 전환·확대되며 영업손익과는 다른 방향성을 보였는데, 이는 영업외 손익 요인이 순이익 회복을 견인했음을 시사한다. 분기별로는 계절성이 뚜렷하다. 2025년 3분기(매출 187.59억원, 영업이익 19.68억원, 지배주주 순이익 31.83억원)는 최근 다섯 개 분기 중 가장 양호했고, 2025년 4분기는 매출 146.13억원, 영업손실 11.91억원, 순손실 8.03억원으로 뚜렷하게 부진했다. 2026년 1분기에는 매출 174.62억원, 영업이익 3.54억원, 순이익 10.68억원으로 소폭 흑자를 회복했으나, 2026년 2분기 들어 매출이 147.02억원으로 줄고 영업손실이 14.26억원으로 오히려 확대됐음에도 순이익은 7.45억원으로 흑자를 유지했다. 최근 4개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순이익은 41.93억원이다. 재무 건전성은 안정적인 편으로 2025년 말 부채비율이 8.0%에 그쳤지만, 같은 해 영업활동현금흐름은 -13.55억원을 기록해 손익상 순이익 흑자와 현금창출력 사이에 괴리가 나타났다.",
+  "en": "Annual revenue declined for a fourth straight year, from KRW 74.6bn in 2022 to KRW 70.5bn in 2023, KRW 68.8bn in 2024, and KRW 67.5bn in 2025. Operating profit was positive in 2022 (KRW 9.15bn) and 2023 (KRW 4.46bn) but swung to losses in 2024 (KRW -2.28bn) and 2025 (KRW -0.83bn), though the 2025 loss was smaller than the prior year's. Owner net income, by contrast, moved in the opposite direction to operating profit: from losses of KRW -4.64bn in 2022 and KRW -3.90bn in 2023 to gains of KRW 1.37bn in 2024 and KRW 6.24bn in 2025, a two-year streak of expanding profitability that suggests non-operating items drove much of the recovery. Quarterly results show clear seasonality. Q3 2025 (revenue KRW 18.76bn, operating profit KRW 1.97bn, owner net income KRW 3.18bn) was the strongest of the last five quarters, while Q4 2025 (revenue KRW 14.61bn, operating loss KRW -1.19bn, net loss KRW -0.80bn) was notably weak. Q1 2026 saw a modest recovery to a small profit (revenue KRW 17.46bn, operating profit KRW 0.35bn, net income KRW 1.07bn), but in Q2 2026 revenue fell to KRW 14.70bn and the operating loss widened to KRW -1.43bn, even as net income stayed positive at KRW 0.75bn. Summed over the trailing four quarters (Q3 2025 through Q2 2026), owner net income totaled KRW 4.19bn. Balance-sheet health remains solid, with a debt ratio of just 8.0% at end-2025, though operating cash flow that year was KRW -1.35bn, a gap between the accounting profit and actual cash generation."
  },
  "industry": {
-  "ko": "국내 주류 시장은 음주 패러다임 전환(건강 의식 증대·음주인구 감소·규제 강화)으로 구조적 수축 국면에 진입해 있으며, 막걸리 시장은 2011년 약 4,000억 원 피크에서 현재 절반 수준으로 장기 감소했다. 반면 뉴트로(복고) 트렌드와 저도주 문화 확산은 전통주에 새로운 기회를 제공하고 있다. 소주 도수가 20도에서 16도대로 낮아진 것처럼 막걸리도 6%에서 5% 수준으로 하향됐으며, 국순당은 이 흐름에 맞춰 막걸리를 '부담 없이 즐기는 술'로 확장하고 있다. 전통주 프리미엄화 트렌드는 세련된 디자인·기능성 성분·스토리텔링을 결합한 고단가 제품 수요를 키우고 있으며, 대형마트 프리미엄 섹션과 퓨전 음식점 등에서 고가 전통주 판매가 증가하는 추세다. K-푸드·K-컬처의 글로벌 확산은 해외에서 막걸리·백세주 수요를 구조적으로 확대하고 있어, 국순당의 50개국+ 수출 네트워크는 선도적 입지를 지지한다. 퀵커머스·D2C 채널의 확대로 전통주 소비 접근성이 높아지는 점은 MZ세대 신규 소비층 유입에 중장기 우호 요인으로 작용한다. 다만 소규모 수제 양조 스타트업의 급증으로 프리미엄 세그먼트 내 경쟁 강도가 높아지고 있어, 브랜드 인지도와 유통망 규모가 진입 장벽으로서의 역할을 유지하는지가 중요해지고 있다.",
-  "en": "The domestic liquor market has entered a phase of structural contraction, driven by shifting drinking paradigms — heightened health consciousness, a shrinking drinking-age population, and tighter enforcement. The makgeolli market has roughly halved from its peak of approximately KRW 400 bn in 2011. Against this backdrop, the newtro (retro revival) trend and a cultural shift toward lower-alcohol beverages offer structural tailwinds for traditional liquors. Just as soju alcohol content has declined from 20% to the mid-16% range, makgeolli has drifted from 6% to approximately 5%, which Kooksoondang is leveraging to reposition the category as a low-burden consumption experience. The premiumization of traditional liquor is driving demand for higher-priced products combining contemporary design, functional ingredients (probiotics, heritage fermentation), and cultural storytelling, with premium traditional spirits gaining traction in hypermarket premium sections and fusion restaurants. The global spread of K-food and K-culture is structurally expanding overseas demand for makgeolli and Baekseju, supporting Kooksoondang's 50+ country export network as a first-mover advantage. Expanding quick-commerce and D2C channels improve accessibility for the MZ generation, representing a medium-to-long-term structural tailwind for new customer acquisition. However, the proliferation of small craft traditional liquor start-ups in the premium segment intensifies competition, placing heightened emphasis on established brand recognition and distribution scale as defensible moats."
+  "ko": "국내 주류 시장은 음주 패러다임 전환의 영향으로 구조적 수축 국면에 들어섰다는 평가가 나온다. 낮은 도수를 선호하는 문화가 자리잡으며 소주는 과거 20도 수준에서 16도대까지 낮아졌고, 막걸리 도수 역시 전통적인 6% 내외에서 최근 5% 수준까지 내려오는 등 전 주종에서 도수 하향 평준화가 진행되고 있다. 이런 환경에서 국순당은 '전통의 현대화'를 핵심 전략으로 내세워 프리미엄 발효주로서 브랜드 재정의를 시도하고 있다. 경쟁 강도 측면에서는 막걸리 시장에서 서울장수막걸리·지평주조 등 전통 강자와, 소주·맥주 등 주력 주종에서 하이트진로·무학·진로발효·보해양조 등 대형사와 병존해야 하는 구조다. 다만 제품력 측면에서는 국순당이 2026년 '대한민국 주류대상'에서 대중형 국순당 쌀막걸리, 준프리미엄 1000억 유산균막걸리, 프리미엄 박봉담 쌀쌀막걸리 등 3개 제품 모두 탁주 각 부문 대상을 수상하며 라인업 전반의 품질 경쟁력을 인정받았다. 전방 소비 측면에서는 명절 등 계절적 성수기 선물세트 수요와 저알코올·기능성(유산균 등) 트렌드가 핵심 변수로 작용하고 있으며, 해외에서는 K-푸드·K-컬처 확산에 따른 전통주 수출 기회가 존재하는 반면 경기 둔화와 고가 주류 수요 감소, 규제 강화라는 복합적 압력도 상존한다.",
+  "en": "Some observers argue the domestic liquor market has entered a phase of structural contraction driven by a broader shift in drinking habits. As lower-alcohol preferences take hold, soju has moved down from around 20 percent alcohol to the high-teens, while makgeolli, traditionally near 6 percent, has recently come down to about 5 percent, reflecting an alcohol-content downshift across categories. Against this backdrop, Kooksoondang has adopted 'modernizing tradition' as a core strategy, seeking to redefine its brand as a premium fermented beverage. Competitively, it must contend with established makgeolli players such as Seoul Jangsoo Makgeolli and Jipyeong Brewery, as well as larger diversified rivals like Hite Jinro, Muhak, Jinro Fermentation, and Bohae Brewery across soju and beer. On product quality, however, Kooksoondang had all three of its entered products—the mass-market Kooksoondang Rice Makgeolli, the semi-premium probiotic makgeolli, and the premium Bakbongdam Ssalssal Makgeolli—win grand prizes across separate rice-wine categories at the 2026 Korea Liquor Awards, underscoring lineup-wide quality recognition. On the demand side, seasonal gift-set demand around holidays and low-alcohol/functional (e.g., probiotic) trends are key swing factors, while overseas there are export opportunities tied to the spread of K-food and K-culture, offset by simultaneous pressures from a slowing economy, softer demand for premium liquor, and tightening regulation."
  },
  "outlook": {
-  "ko": "'전통의 현대화'를 핵심 화두로 표방하는 국순당은 2026년에도 제품·채널·해외 3축에서 전략적 행보를 이어가고 있다. 제품 측면에서 2026년 4월 막걸리 업계 최초 500mL 캔 출시로 350mL·500mL·750mL 라인업을 완성, 캔 막걸리 시장 점유 확대를 도모하고 있으며 창고형 대형마트를 시작으로 편의점 등 유통 채널로 순차 확대할 계획이다. 2026 대한민국 주류대상에서 쌀막걸리·1000억 유산균 막걸리·박봉담 쌀쌀막걸리 3종이 각 부문 대상을 수상해 대중·준프리미엄·프리미엄 전 구간에 걸친 품질 경쟁력을 대외적으로 입증했다. 채널 측면에서 배민B마트를 통한 퀵커머스 확대와 복합문화공간 '박봉담'·전통주 체험공간 '주향로'를 통한 경험 마케팅이 병행되며, Z세대 콜라보레이션(바밤바밤 등) 제품은 SNS 기반 신규 소비층 유입 창구로 계속 활용될 전망이다. 해외 수출은 기존 50개국+ 네트워크를 바탕으로 유럽·북미 등 프리미엄 전통주 소비 시장으로의 확대가 기대된다. 공식 수치 가이던스는 제시된 바 없어 정량적 전망은 제한적이며, 2026년 1분기 매출의 소폭 증가 반전이 하반기 성수기까지 이어질 수 있는지 여부가 단기 핵심 관전 포인트다.",
-  "en": "Kooksoondang continues to execute a three-pronged strategy — products, channels, and overseas — under the 'Modernization of Tradition' banner heading into 2026. On the product front, the April 2026 debut of the industry's first 500 mL canned makgeolli completes a three-size can lineup (350 mL, 500 mL, 750 mL PET), targeting broader share in the canned makgeolli segment, with a phased rollout from warehouse retailers to convenience store chains. Three Grand Prize wins at the 2026 Korea Liquor Awards across mass (Ssal Makgeolli), semi-premium (1 Billion LAB Makgeolli), and premium (Bakbongdam Ssalssalmakgeolli) tiers externally validated quality competitiveness across the full portfolio spectrum. On channels, the Baemin B-mart quick-commerce listing extends accessibility to the MZ generation, while the Bakbongdam cultural complex and Juhyangro heritage space deepen experiential engagement; cross-brand collaborations (e.g., Babambabam) will continue serving as SNS-driven Gen Z acquisition vehicles. Export expansion into premium Western markets (Europe, North America) is expected to build on the existing 50+ country network. No formal annual guidance has been issued; whether the modest top-line recovery observed in Q1 2026 extends through peak-season Q3 is the key near-term variable to monitor."
+  "ko": "국순당은 2026년 추석(9월 25일, 연휴 9월 24일~26일)을 앞두고 1만원대 실속형부터 30만원대 프리미엄까지 다양한 가격대의 선물세트를 출시했다. 이 중 '백세고'는 쌀 증류소주 원액과 5년 숙성한 백세주 술지게미 증류 원액을 혼합한 고급 증류주로, 2022년 백세주 30주년 기념 한정판 이후 매 명절마다 소량씩 판매되는 희소성 있는 제품이다. 이런 명절 선물세트 판매 성과는 계절성이 뚜렷한 실적 구조상 3분기 실적에 직접 영향을 미칠 수 있는 변수다. 회사는 '전통의 현대화'라는 화두 아래 대표 제품 리뉴얼과 브랜드 이미지 재정립을 지속하는 한편, 복합문화공간 '박봉담'과 역사문화체험 공간 '주향로' 등을 통한 소비자 경험 확대, 해외 시장에서의 단계적 확장 전략을 이어갈 계획이라고 밝혔다. 제품 포트폴리오 측면에서는 기존 약주·탁주·와인에 더해 데킬라·스파클링 티·스페셜티 커피 등 비주류 F&B로도 협업을 확대하며 매출원 다변화를 시도하고 있다. 회사 관계자는 앞으로 프리미엄 및 고부가가치 제품뿐 아니라 맛과 용량에서 차별화된 다양한 제품을 선보이겠다고 밝힌 바 있다. 이러한 시도가 매출 감소 흐름을 반전시키고 영업손익을 개선하는 성장 동력으로 이어질 수 있을지는 향후 분기 실적과 부문별 매출 공시를 통해 확인이 필요하다.",
+  "en": "Ahead of the 2026 Chuseok holiday (falling on September 25, with the holiday period running September 24-26), Kooksoondang rolled out gift sets spanning price points from budget items in the low tens of thousands of won to premium products priced around KRW 300,000. Among them, Baeksaego is a high-end distilled spirit blending distilled rice soju with distillate from five-year-aged Baeksaeju lees, a scarce item sold in small quantities each holiday since its limited-edition debut marking Baeksaeju's 30th anniversary in 2022. Given the company's pronounced seasonality, how well these holiday gift sets perform is a variable that could directly affect third-quarter results. Under its 'modernizing tradition' theme, the company has said it will continue renewing flagship products and repositioning its brand image, while expanding consumer experiences through spaces like the Bakbongdam cultural complex and the Juhyangno heritage venue, alongside a phased overseas expansion strategy. On the portfolio side, it is diversifying revenue sources by extending collaborations beyond its core yakju, makgeolli, and wine lines into non-alcohol F&B areas such as tequila, sparkling tea, and specialty coffee. A company representative has stated plans to introduce a wider range of products differentiated by taste and volume in addition to premium, higher-value offerings. Whether these efforts translate into a reversal of the multi-year revenue decline and an improvement in operating profitability will need to be confirmed through upcoming quarterly results and segment-level disclosures."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 BPS 15,094원 대비 현저히 낮은 구간에 위치하며, 코스닥 음식료 업종 평균 PBR을 크게 하회하는 수준이다. 이 깊은 순자산 할인의 주된 원인은 4년 연속 매출 감소, 영업적자 지속, 영업 현금흐름의 부진으로 해석할 수 있다. EPS 369원 기준의 순이익 흑자 기반은 회복됐으나, 이익의 상당 부분이 비영업 수익에서 기인하는 구조라는 점에서 영업 본업의 이익 창출력 회복 속도가 배수 재평가의 핵심 변수로 작용할 전망이다. 배당은 DPS 80원 기준으로 지급되고 있으며, 현 배당수익률은 코스닥 음식료 업종 평균 수준과 유사하거나 소폭 상회하는 편이다. 부채비율 8%의 무차입에 가까운 재무 구조는 유사 규모 경쟁사 대비 재무 위험이 현저히 낮다는 점에서 순자산 할인 폭을 일정 부분 완화하는 요인으로 인식될 수 있다.",
-  "en": "The current share price reflects a deep discount to BPS of KRW 15,094, well below the KOSDAQ food and beverage sector's average price-to-book ratio. The primary drivers of this wide discount to book value are four consecutive years of revenue decline, persistent operating losses, and weak operating cash flow. While a net profit base has been restored — with EPS of KRW 369 — the significant reliance on non-operating income to sustain that profitability means the pace of core operating profit recovery will be the pivotal catalyst for any valuation re-rating. A dividend of KRW 80 per share (DPS) is being paid, placing the current dividend yield at roughly in line with or slightly above the KOSDAQ food and beverage sector average. The near-zero-leverage balance sheet (debt ratio of 8%) presents materially lower financial risk versus peers of comparable revenue scale, a factor that may partially temper the book-value discount."
+  "ko": "국순당의 순자산가치 대비 주가 수준을 나타내는 지표는 자체 산출 기준과 KRX 공식 기준 모두 1배를 밑돌아, 주가가 장부상 순자산가치보다 낮게 형성돼 있는 구간에 해당한다. 이익 측면에서는 영업이익이 2년 연속 적자를 이어가는 가운데 지배주주 순이익이 적자에서 흑자로 전환된 뒤 그 규모를 키워온 최근 흐름이, 시장이 부여하는 이익 배수 산정에 영향을 주는 요인으로 작용할 수 있다. 배당 측면에서는 국순당이 과거 영업적자 국면에서도 배당 정책을 유지해온 이력이 있어, 주주환원에 대한 회사의 태도가 비교적 꾸준했다는 점은 참고할 만하다. 다만 영업이익 적자와 영업활동현금흐름 마이너스가 동시에 나타난 최근 연도 실적을 감안하면, 순이익 회복이 본업의 현금창출력 개선으로 이어지는지를 함께 살펴볼 필요가 있다. 밸류에이션에 대한 구체적 평가나 방향성 판단은 투자자 개인의 몫으로 남겨두는 것이 적절하다.",
+  "en": "Kooksoondang's price-to-book level, whether measured on a self-calculated or KRX official basis, sits below 1x, placing the stock in a range where its market price is lower than its recorded net asset value. On the earnings side, the recent pattern—operating losses persisting for two straight years even as owner net income turned from loss to profit and has kept expanding—can be a relevant input into how the market assigns an earnings multiple. On dividends, it is worth noting that Kooksoondang has a history of maintaining its dividend policy even during periods of operating losses, suggesting a relatively consistent stance on shareholder returns. That said, given that recent years combined an operating loss with negative operating cash flow, it is worth watching whether the net income recovery is accompanied by an actual improvement in the core business's cash-generating ability. Any specific valuation judgment or directional call is best left to individual investors."
  },
  "bull": [
   {
    "title": {
-    "ko": "무차입 재무구조와 넓은 순자산 할인 폭",
-    "en": "Near-Zero Leverage and Wide Net Asset Value Discount"
+    "ko": "순이익 2년 연속 흑자 확대",
+    "en": "Owner Net Income Expanding for a Second Straight Year"
    },
    "body": {
-    "ko": "지배주주 귀속 자기자본 약 2,372억 원(BPS 15,094원)에 비해 현재 주가가 크게 낮은 구간에 위치하며, 부채비율 8%의 건전한 재무 구조가 하방 리스크를 제한한다. 영업적자가 지속되는 구간에서도 재무 안정성은 업종 최상위 수준으로, 유사 매출 규모 경쟁사 대비 구조적 우위를 보인다. 순자산 할인 구간에서 영업 수익성이 플러스로 전환될 경우, 주가 재평가 여지가 크다.",
-    "en": "Shares trade at a deep discount to controlling-interest equity of approx. KRW 237.2 bn (BPS KRW 15,094), while an 8% debt ratio provides a strong financial floor that limits downside risk. Even amid ongoing operating losses, balance-sheet health ranks among the sector's strongest, offering a structural advantage over peers of similar revenue scale. A return to positive operating profit from a current discounted-to-book baseline would create significant re-rating potential."
+    "ko": "지배주주 순이익이 2023년 -38.98억원에서 2024년 13.75억원, 2025년 62.44억원으로 뚜렷하게 개선됐다. 2026년 상반기에도 1분기 10.68억원, 2분기 7.45억원으로 두 분기 모두 순이익 흑자를 유지했다. 영업이익이 여전히 적자인 상황에서도 순이익 개선이 이어지고 있다는 점은 재무구조 측면의 긍정적 신호로 해석될 수 있다.",
+    "en": "Owner net income improved markedly from KRW -3.90bn in 2023 to KRW 1.37bn in 2024 and KRW 6.24bn in 2025. Both quarters of the first half of 2026 stayed in the black, with KRW 1.07bn in Q1 and KRW 0.75bn in Q2. The continued net income improvement despite an ongoing operating loss can be read as a positive signal on the financial structure."
    }
   },
   {
    "title": {
-    "ko": "프리미엄화 전략 성과와 수상 이력으로 입증된 제품 경쟁력",
-    "en": "Premiumization Track Record and Award-Validated Product Competitiveness"
+    "ko": "탁주 중심 포트폴리오 재편",
+    "en": "Portfolio Rebalancing Toward Rice Wine and Makgeolli"
    },
    "body": {
-    "ko": "1000억 유산균 막걸리 시리즈는 출시 이후 누적 850만 병 이상 판매하며 프리미엄 막걸리 시장에 성공적으로 안착했다. 2026 대한민국 주류대상에서 3개 제품이 대중·준프리미엄·프리미엄 각 부문 대상을 수상하며 전 가격대의 품질 경쟁력을 공식 인증받았다. 2026년 4월 막걸리 업계 최초 500mL 캔 출시로 소비 상황별 라인업을 완성, 경쟁이 심화되는 시장에서 방어적 해자(moat)로 기능할 수 있다.",
-    "en": "The '100 Billion Lactic Acid Bacteria' series has achieved cumulative sales of over 8.5 million bottles, validating successful premiumization of the makgeolli category. Three Grand Prize wins at the 2026 Korea Liquor Awards spanning mass, semi-premium, and premium tiers formally certify quality competitiveness across the full price ladder. The April 2026 debut of the first 500 mL canned makgeolli in the industry completes a multi-SKU lineup addressing diverse consumption occasions, reinforcing a defensible competitive moat."
+    "ko": "매출의 44.43%를 차지하는 탁주 부문이 국내외 판매 확대를 바탕으로 상대적으로 안정적인 성장을 보여왔다. 2026년 대한민국 주류대상에서 대중형·준프리미엄·프리미엄 막걸리 3종이 모두 탁주 부문 대상을 수상하며 제품력을 다시 확인했다. 약주 의존도가 낮아지는 구조적 변화가 진행 중이다.",
+    "en": "The rice-wine and makgeolli segment, at 44.43% of revenue, has shown comparatively stable growth on the back of domestic and overseas sales gains. At the 2026 Korea Liquor Awards, three makgeolli products spanning mass-market, semi-premium, and premium tiers all won grand prizes in the rice-wine category, reaffirming product quality. A structural shift away from dependence on the yakju category is underway."
    }
   },
   {
    "title": {
-    "ko": "K-전통주 수출 기반과 해외 성장 잠재력",
-    "en": "K-Traditional Liquor Export Foundation and Overseas Growth Potential"
+    "ko": "낮은 부채비율과 사업 다각화",
+    "en": "Low Leverage and Business Diversification"
    },
    "body": {
-    "ko": "세계 50개국 이상 수출 네트워크를 갖추고 3년 연속 수출액 100억 원을 돌파하며 전통주업계 수출을 선도하고 있다. K-푸드·K-컬처의 글로벌 확산과 건강 기능성 발효 음료에 대한 해외 소비자 관심 증가는 막걸리·백세주의 구조적 해외 수요를 뒷받침한다. 해외 수출은 국내 시장 수축의 부분적 상쇄 역할을 하며, 프리미엄 SKU 수출 비중 확대 시 수익성 개선에도 기여할 수 있다.",
-    "en": "With exports spanning 50+ countries and annual export revenues exceeding KRW 10 bn for three consecutive years, Kooksoondang leads traditional liquor exports from Korea. The global spread of K-food and K-culture, combined with rising overseas consumer interest in fermented functional beverages, supports sustained structural demand growth for makgeolli and Baekseju internationally. Export growth partially offsets domestic market contraction, and a shift toward premium SKUs in the export mix could enhance margin contribution over time."
+    "ko": "2025년 말 부채비율은 8.0%로 매우 낮은 수준을 유지하고 있어 재무적 여력이 있는 편이다. 와인·데킬라·스파클링 티·스페셜티 커피 등으로 사업 영역을 넓히며 주류 단일 카테고리 의존도를 낮추려는 시도가 이어지고 있다. 명절 선물세트 등 계절 이벤트를 활용한 프리미엄 라인 강화도 병행되고 있다.",
+    "en": "The debt ratio stood at a very low 8.0% at end-2025, leaving the company with financial flexibility. It continues to broaden its business scope into wine, tequila, sparkling tea, and specialty coffee, reducing reliance on a single alcohol category. It has also been strengthening its premium lineup around seasonal events such as holiday gift sets."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4년 연속 매출 감소와 2년 연속 영업적자",
-    "en": "Four Consecutive Years of Revenue Decline and Two-Year Operating Loss Streak"
+    "ko": "매출 4년 연속 감소, 영업손실 지속",
+    "en": "Revenue Down for a Fourth Straight Year, Operating Losses Persist"
    },
    "body": {
-    "ko": "연결 매출은 2022년 약 746억 원에서 2025년 약 675억 원으로 4년간 약 9% 감소했으며, 영업적자는 2024~2025년 2년 연속으로 이어지고 있다. 국내 주류 시장의 구조적 수축을 반영하는 이 추세는 단기간 내 반전이 쉽지 않은 환경이다. 영업이익률(-1.2%)이 아직 플러스로 전환되지 못한 상태에서 매출 감소 시 이익이 즉각 악화되는 구조적 취약성이 존재한다.",
-    "en": "Consolidated revenue contracted approximately 9% over four years (from approx. KRW 74.6 bn in 2022 to KRW 67.5 bn in 2025), with operating losses persisting for a second consecutive year in 2024–2025. This trend reflects structural domestic market contraction rather than isolated execution failures, making near-term reversal difficult. With OPM still negative at -1.2%, incremental volume declines translate quickly into deteriorating bottom-line outcomes."
+    "ko": "연간 매출은 2022년 746.19억원에서 2025년 674.99억원까지 4년 연속 줄었다. 영업이익도 2024년 -22.79억원, 2025년 -8.32억원으로 2년 연속 적자다. 2026년 2분기에는 영업손실이 -14.26억원으로 전 분기보다 오히려 확대됐다.",
+    "en": "Annual revenue fell for a fourth consecutive year, from KRW 74.6bn in 2022 to KRW 67.5bn in 2025. Operating profit was also negative for a second straight year, at KRW -2.28bn in 2024 and KRW -0.83bn in 2025. In Q2 2026, the operating loss widened to KRW -1.43bn, worse than the prior quarter."
    }
   },
   {
    "title": {
-    "ko": "순이익의 비영업 수익 의존 구조와 영업 현금흐름 적자 전환",
-    "en": "Non-Operating Income Dependency and Negative Operating Cash Flow"
+    "ko": "약주(백세주) 카테고리 구조적 위축",
+    "en": "Structural Decline in the Yakju (Baeksaeju) Category"
    },
    "body": {
-    "ko": "2025년 영업손실(-8.3억 원)과 지배주주 순이익(+62.4억 원)의 큰 괴리는 이자·투자수익 등 비영업 수익이 순이익을 상당 부분 지지하는 구조임을 시사한다. 영업 현금흐름(CFO)은 2025년 약 -13.5억 원으로 전년 약 11.8억 원에서 적자 전환, 이익의 실질 현금 창출력에 대한 의문을 제기한다. 비영업 수익의 감소 또는 일회성 소멸 시 순이익이 급격히 하락할 수 있어 이익 기반의 안정성 점검이 필요하다.",
-    "en": "The wide divergence between the 2025 operating loss of approx. KRW -0.83 bn and net income of approx. KRW +6.24 bn strongly implies heavy reliance on non-operating income (interest, investment returns) to sustain profitability. Operating cash flow (CFO) deteriorated from approx. KRW 1.18 bn in 2024 to approx. KRW -1.35 bn in 2025, raising fundamental concerns about the underlying cash generation capacity. A reduction or one-time disappearance of non-operating income contributions could cause net income to fall sharply, making the durability of the earnings base a key risk."
+    "ko": "회사의 상징적 제품인 백세주가 속한 약주 카테고리는 상반기 매출액이 2022년 87억원에서 2024년 63억원으로 매년 빠르게 줄었다. 백세주 재단장 이후 반등 효과가 실적에 얼마나 반영됐는지는 아직 부문별 매출로 확인되지 않았다. 저도수·소주 순화 등 경쟁 주종의 변화도 약주 시장 축소를 부추기는 요인이다.",
+    "en": "The yakju category containing Baeksaeju, the company's signature product, has shrunk quickly, with first-half sales falling from KRW 8.7bn in 2022 to KRW 6.3bn in 2024. How much of a rebound the post-rebranding effort has produced has not yet been confirmed in segment-level sales disclosures. Changes in competing categories, such as smoother, lower-proof soju, are also contributing to the shrinking yakju market."
    }
   },
   {
    "title": {
-    "ko": "구조적 음주 감소 트렌드와 심화되는 프리미엄 경쟁",
-    "en": "Structural Decline in Alcohol Consumption and Intensifying Premium Competition"
+    "ko": "순이익과 영업활동현금흐름의 괴리",
+    "en": "Divergence Between Net Income and Operating Cash Flow"
    },
    "body": {
-    "ko": "음주인구 감소·건강 의식 향상·음주운전 단속 강화 등 복합 요인이 주류 시장의 장기 수요를 구조적으로 제약하고 있다. 수제 전통주·소규모 양조 스타트업의 급증으로 프리미엄 막걸리 세그먼트 내 경쟁 강도가 높아져 마케팅 비용 증가와 가격 경쟁 압력으로 이어질 수 있다. 대규모 맥주·소주 업체 대비 유통망 규모의 열위가 오프라인 진열 공간 확보에 지속적인 제약으로 작용한다.",
-    "en": "A confluence of a shrinking drinking-age population, growing health consciousness, and stricter drunk-driving enforcement structurally constrains long-term domestic liquor demand. The proliferation of craft traditional liquor start-ups intensifies competition in the premium makgeolli segment, potentially driving up marketing outlays and pricing pressure. Scale disadvantages relative to large beer and soju conglomerates represent a persistent constraint on securing shelf space in mainstream offline distribution."
+    "ko": "2025년 지배주주 순이익은 62.44억원으로 흑자였으나 같은 해 영업활동현금흐름은 -13.55억원으로 마이너스를 기록했다. 이는 순이익 개선이 영업외 요인에 의존하고 있으며 본업의 실제 현금창출력은 아직 뒤따르지 못하고 있음을 시사한다. 현금흐름 개선 여부는 향후 재무 안정성을 판단하는 데 중요한 변수다.",
+    "en": "2025 owner net income was a positive KRW 6.24bn, but the same year's operating cash flow was negative at KRW -1.35bn. This suggests the net income improvement leans on non-operating factors and that the core business's actual cash generation has yet to catch up. Whether cash flow improves is an important variable for assessing future financial stability."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "주류 시장 구조적 수축 위험",
-    "en": "Structural Contraction of the Domestic Liquor Market"
+    "ko": "업황 리스크",
+    "en": "Industry Risk"
    },
    "body": {
-    "ko": "국내 음주 패러다임 전환은 주류 시장의 구조적 장기 수축을 야기하고 있으며, 이는 국순당 매출 감소의 근본 원인으로 작용하고 있다. 단기 정책 변화나 트렌드로 해소되기 어려운 구조적 요인이라는 점에서 중장기 매출 성장 경로에 불확실성이 크다. 전통주 세제 혜택 등 정책 지원이 수요를 부분적으로 지지할 수 있으나, 근본적인 음주량 감소 추세를 역전시키기는 어렵다.",
-    "en": "A paradigm shift in domestic drinking culture — health-driven moderation and a declining drinking-age population — is the structural root cause of Kooksoondang's multi-year revenue decline. This long-term structural headwind is unlikely to be reversed by short-term policy measures or trend shifts, creating significant uncertainty around the medium-to-long-term revenue growth path. Tax benefits or regulatory relaxation for traditional liquors may partially support demand but are unlikely to reverse the underlying consumption trend."
+    "ko": "국내 음주 인구 감소와 저도수 선호 트렌드로 주류 시장 전체가 구조적 수축 국면에 있다는 평가가 나온다. 약주·전통 소주 등 국순당의 주력 카테고리가 이런 흐름의 직접적 영향을 받고 있다. 시장 전체 파이가 줄어드는 환경에서는 개별 제품 리뉴얼만으로 반전을 이루기 쉽지 않을 수 있다.",
+    "en": "The overall liquor market is said to be in a phase of structural contraction due to a declining drinking population and a preference for lower alcohol content. Kooksoondang's core categories, including yakju and traditional rice spirits, are directly affected by this trend. In an environment where the overall market pie is shrinking, product-level renewals alone may not be enough to reverse the trend."
    }
   },
   {
    "cat": {
-    "ko": "국내산 쌀 원재료 가격 변동 리스크",
-    "en": "Domestic Rice Raw Material Price Volatility"
+    "ko": "경쟁 리스크",
+    "en": "Competitive Risk"
    },
    "body": {
-    "ko": "국순당은 100% 국내산 쌀을 핵심 원재료로 사용하며, 이는 브랜드 정체성의 핵심 요소이기도 하다. 국내산 쌀 가격 급등 시 원가 구조에 직접적인 압박이 발생하고, 대중 제품 세그먼트에서 소비자 가격 인상이 어려워 수익성 하방 압력으로 이어질 수 있다. 기후 변화에 따른 벼 수확량 변동성도 원재료 수급 불안 요인으로 작용할 가능성이 있다.",
-    "en": "Kooksoondang relies on 100% domestically sourced rice as its core raw material, a cornerstone of its brand identity. Sharp increases in domestic rice prices would directly pressure the cost structure, particularly in the mass-market segment where retail price pass-through is constrained. Harvest yield volatility driven by climate change could further amplify raw material supply and cost risks over time."
+    "ko": "막걸리 시장에서는 서울장수막걸리·지평주조 등 전통 강자와 경쟁해야 하고, 전체 주류 시장에서는 하이트진로·무학 등 대형사의 자본력·유통망과 맞서야 한다. 신규 F&B 협업(데킬라·스파클링 티·커피 등)은 매출 다변화에 기여할 수 있으나 각 영역에서도 별도의 경쟁자가 존재한다. 브랜드력 유지와 신제품 성공 여부가 지속적인 과제로 남아있다.",
+    "en": "In the makgeolli market, the company must compete with established players such as Seoul Jangsoo Makgeolli and Jipyeong Brewery, while across the broader liquor market it faces the capital strength and distribution networks of larger firms like Hite Jinro and Muhak. New F&B collaborations in tequila, sparkling tea, and coffee can contribute to revenue diversification, but each of these areas also has its own set of competitors. Maintaining brand strength and successfully launching new products remain ongoing challenges."
    }
   },
   {
    "cat": {
-    "ko": "비영업 수익 지속성 및 이익 품질 리스크",
-    "en": "Non-Operating Income Sustainability and Earnings Quality Risk"
+    "ko": "실적 변동성·현금흐름 리스크",
+    "en": "Earnings Volatility and Cash Flow Risk"
    },
    "body": {
-    "ko": "영업손실에도 순이익 흑자가 지속되는 구조는 비영업 수익(이자·배당·투자자산 관련 손익 등)에 대한 의존도가 높음을 시사한다. 이러한 비영업 수익이 감소하거나 일회성으로 소멸될 경우 순이익이 급격히 악화될 수 있다. 2025년 영업 현금흐름(-13.5억 원)의 적자가 일시적이 아닌 구조적으로 지속될 경우, 중장기적으로 배당 지속 가능성과 재무 유동성에도 영향을 줄 수 있다.",
-    "en": "Net profitability sustained despite ongoing operating losses points to significant reliance on non-operating income (interest, dividends, investment-related gains). Should these contributions diminish or prove one-time in nature, net income could deteriorate sharply, undermining current earnings-based valuation stability. If the 2025 negative operating cash flow (approx. KRW -1.35 bn) is structural rather than transitory, dividend sustainability and financial liquidity could eventually come under pressure over the medium to long term."
+    "ko": "분기별 실적의 계절성이 커서 4분기·2분기처럼 특정 분기에 영업손실이 집중되는 패턴이 반복되고 있다. 영업이익 적자와 영업활동현금흐름 마이너스가 겹친 해가 있어, 순이익 흑자에도 실제 현금 여력에는 주의가 필요하다. 원재료(쌀 등) 가격, 주세 등 정책 변수도 원가에 영향을 줄 수 있는 변수다.",
+    "en": "Quarterly results show pronounced seasonality, with a recurring pattern of operating losses concentrated in specific quarters such as the fourth and second quarters. In years when an operating loss coincided with negative operating cash flow, actual cash availability warrants attention even when net income is positive. Raw material costs (such as rice) and policy variables like liquor tax are additional factors that can affect costs."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 초~중순",
-    "en": "Early-to-Mid August 2026"
+    "ko": "2026년 9월 24일~27일 추석 연휴 전후",
+    "en": "Around the September 24-27, 2026 Chuseok holiday"
    },
    "what": {
-    "ko": "2026년 2분기(4~6월) 실적 발표 예정. 전년동기(영업이익 약 0.6억 원, 지배주주 순이익 약 23.9억 원) 대비 매출 회복세 지속 여부와 영업이익 흑자 유지 여부가 하반기 성수기 진입 전 방향성 확인의 핵심 지표.",
-    "en": "Q2 2026 (Apr–Jun) earnings due. Whether revenue recovery versus the year-ago quarter (operating profit approx. KRW 0.06 bn, net income approx. KRW 2.39 bn) is sustained and whether operating profit remains positive are the key directional indicators before the peak Q3 season."
+    "ko": "명절 선물세트(백세고, 법고창신 등) 판매 성과가 계절성이 큰 3분기 실적에 어떻게 반영되는지 확인이 필요하다.",
+    "en": "Check how holiday gift set sales (Baeksaego, Beopgochangsin, and others) feed through into the seasonally significant third-quarter results."
    }
   },
   {
    "when": {
-    "ko": "2026년 10월 말~11월 초",
-    "en": "Late October–Early November 2026"
+    "ko": "2026년 11월 중(3분기 보고서 공시 예상)",
+    "en": "Around November 2026 (expected Q3 report filing)"
    },
    "what": {
-    "ko": "2026년 3분기(7~9월) 실적 발표 예정. 전통적으로 연간 최대 성수기(2025Q3 매출 약 188억 원, 영업이익 약 2.0억 원)로, 전년 대비 매출·영업이익 증감이 연간 실적 방향성을 좌우하는 핵심 분기.",
-    "en": "Q3 2026 (Jul–Sep) earnings due. Q3 is historically the strongest seasonal quarter (Q3 2025: revenue approx. KRW 18.8 bn, operating profit approx. KRW 0.2 bn), making year-on-year performance comparisons a pivotal determinant of the full-year earnings trajectory."
+    "ko": "2026년 3분기 매출·영업손익·순이익 확정치와 부문별(약주·탁주·와인) 매출 비중 변화를 확인해 백세주 리뉴얼 효과와 탁주 성장세 지속 여부를 점검할 필요가 있다.",
+    "en": "Review the confirmed Q3 2026 revenue, operating result, net income, and segment-level sales mix (yakju, rice wine/makgeolli, wine) to assess the effect of the Baeksaeju renewal and whether rice-wine growth continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 상시 모니터링",
-    "en": "Ongoing Monitoring Through H2 2026"
+    "ko": "2026년 4분기~2027년 초 결산 시즌",
+    "en": "Q4 2026 through early 2027 year-end reporting season"
    },
    "what": {
-    "ko": "2026년 4월 출시된 500mL 캔 신제품의 창고형 대형마트 판매 성과와 편의점 확대 일정 확인 필요. 신제품이 캔 막걸리 라인업 강화에 실질적으로 기여하는지 여부가 매출 하락세 완화의 가늠자 역할을 한다.",
-    "en": "Track the sales traction of the 500 mL canned makgeolli launched in April 2026, beginning at warehouse-format retailers and expanding to CVS chains. Whether the new SKU meaningfully strengthens the canned makgeolli lineup will indicate the potential to arrest the multi-year top-line decline."
+    "ko": "영업이익 적자가 4분기에도 반복되는지, 그리고 결산배당 정책이 유지되는지 여부를 공시를 통해 확인할 필요가 있다.",
+    "en": "Check disclosures for whether the operating loss pattern repeats in the fourth quarter and whether the year-end dividend policy is maintained."
    }
   },
   {
    "when": {
-    "ko": "2027년 초 2026년 연간 배당 결정(주주총회)",
-    "en": "Early 2027 — FY2026 Dividend Decision (AGM)"
+    "ko": "향후 정기보고서(분기·반기) 공시 시점",
+    "en": "At upcoming quarterly and semiannual report filings"
    },
    "what": {
-    "ko": "2025년 DPS 80원 기준 배당이 유지·확대·축소 여부. 영업 현금흐름이 2025년 적자 전환한 상황에서, 배당 정책의 방향성이 경영진의 이익 지속성 신뢰도와 재무 유동성 방향성을 파악하는 중요한 시그널.",
-    "en": "Whether the FY2026 dividend per share (DPS) maintains, increases, or is cut from the 2025 level of KRW 80. Given that operating cash flow turned negative in 2025, the dividend policy decision will serve as a key signal of management's confidence in earnings sustainability and financial liquidity outlook."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 초 2026년 연간 수출 실적 확인",
-    "en": "Early 2027 — FY2026 Annual Export Results"
-   },
-   "what": {
-    "ko": "3년 연속 수출액 100억 원 돌파 이후 성장 모멘텀의 지속 여부 확인. 해외 수출이 국내 매출 부진의 상쇄 역할을 맡고 있는 만큼, 유럽·북미 프리미엄 시장 침투 성과가 중장기 매출 회복 thesis의 핵심 단서.",
-    "en": "Confirm whether growth momentum is sustained following three consecutive years of export revenues exceeding KRW 10 bn. As overseas sales partially offset domestic weakness, progress in penetrating premium Western markets (Europe, North America) will be a critical data point for the medium-term revenue recovery thesis."
+    "ko": "영업활동현금흐름이 순이익 흑자와 함께 개선되는지, 즉 손익과 현금창출력 간 괴리가 좁혀지는지를 지속적으로 확인해야 한다.",
+    "en": "Continue to monitor whether operating cash flow improves alongside positive net income, that is, whether the gap between reported profit and actual cash generation narrows."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "국순당은 4년 연속 매출 감소와 2년 연속 영업적자라는 사업적 역풍 속에서도 영업손실 규모 축소, 지배주주 귀속 순이익 흑자 전환·확대, 부채비율 8%의 건전한 재무 기반이라는 긍정적 변화를 동시에 보이고 있다. 프리미엄화 전략(1000억 유산균 막걸리 시리즈·박봉담), 캔 라인업 확장(2026년 4월 500mL 캔), 세계 50개국+ 수출 네트워크는 중장기 경쟁력 기반으로 유효하며, 2026년 주류대상 3관왕은 제품 차별화 역량을 재확인했다. 그러나 2025년 영업 현금흐름의 적자 전환과 순이익의 비영업 수익 의존 구조는 이익의 질 측면에서 면밀한 추가 검토를 요한다. 순자산 대비 큰 폭의 주가 할인은 주로 영업 수익성 회복 지연에서 비롯된 것으로, 영업이익의 플러스 전환과 영업 현금흐름 회복이 재평가의 핵심 변수가 될 전망이다. 국내 주류 시장의 구조적 수축은 단기 해소가 어려운 만큼, 해외 수출 확대와 프리미엄 포트폴리오 강화가 장기 성장 경로의 두 축이다. 이 보고서는 정보 제공 목적으로 작성되었으며, 투자의견 및 목표주가를 제시하지 않는다.",
-   "en": "Kooksoondang faces persistent structural headwinds — four consecutive years of revenue decline and two years of operating losses — yet simultaneously exhibits meaningful positive changes: narrowing operating losses, a return to and significant expansion of net profitability, and a near-debt-free balance sheet with an 8% debt ratio. Strategic assets including the premiumization portfolio (100 Billion LAB Makgeolli, Bakbongdam), an expanded can lineup (500 mL SKU, April 2026), and a 50+ country export network remain credible pillars of long-term competitiveness, reaffirmed by three Grand Prize wins at the 2026 Korea Liquor Awards. However, the 2025 turn to negative operating cash flow and meaningful reliance on non-operating income for net profitability require rigorous scrutiny of earnings quality. The wide share price discount to book value is primarily attributable to delayed operating profitability recovery; accordingly, a sustained return to positive operating profit and positive operating cash flow will be the central re-rating catalysts. As structural domestic market contraction is unlikely to reverse quickly, overseas export growth and continued premiumization are the essential twin axes of the long-term revenue recovery thesis. This report is prepared for informational purposes only and does not constitute an investment recommendation or target price."
+   "ko": "국순당은 매출이 4년 연속 감소하고 영업손실이 2년째 이어지는 어려운 국면에 있지만, 지배주주 순이익은 2024년과 2025년 연이어 흑자를 내며 개선되는 모습을 보였다. 사업 구조는 전통적 주력이던 약주(백세주)의 위축과 탁주(막걸리) 부문의 상대적 강세가 뚜렷하게 대비되며, 여기에 와인·데킬라·스파클링 티 등 비주류 F&B로의 다각화가 더해지고 있다. 재무 건전성은 낮은 부채비율(8.0%)로 안정적인 편이나, 순이익 흑자에도 영업활동현금흐름이 마이너스를 기록한 점은 실제 현금창출력 측면에서 추가 확인이 필요한 부분이다. 산업 측면에서는 저도수·구조적 수축이라는 업황 압력 속에서도 2026년 대한민국 주류대상 3개 부문 대상 수상 등 제품력은 유지되고 있다. 다가오는 추석 성수기 선물세트 판매와 3분기 실적, 그리고 부문별 매출 비중 변화가 향후 방향성을 가늠하는 데 중요한 확인 지표가 될 것으로 보인다. 이 리포트는 투자 의견이나 목표주가를 제시하지 않으며, 정보 제공을 목적으로 작성됐다.",
+   "en": "Kooksoondang faces a challenging stretch, with revenue down for a fourth straight year and operating losses persisting for a second year, yet owner net income improved in both 2024 and 2025, turning from loss to a growing profit. Its business mix shows a clear contrast between the contraction of its traditional yakju (Baeksaeju) core and the relative strength of the rice-wine/makgeolli segment, alongside expanding diversification into non-alcohol F&B areas such as wine, tequila, and sparkling tea. Financial health remains fairly stable given a low debt ratio of 8.0%, though negative operating cash flow despite positive net income is a point warranting further scrutiny regarding actual cash generation. On the industry side, product quality has held up—evidenced by grand prizes across three categories at the 2026 Korea Liquor Awards—even amid pressure from a low-alcohol, structurally contracting market. Upcoming Chuseok-season gift set sales, third-quarter results, and shifts in segment revenue mix will likely serve as important indicators for gauging future direction. This report offers no investment opinion or target price and is intended for informational purposes only."
   }
  },
  "sources": [
-  "https://consent.google.com/m?continue=https%3A%2F%2Fwww.google.com%2Ffinance%2Fquote%2F043650%3AKOSDAQ%3Fhl%3Den&gl=DE&m=0&pc=fgc&cm=2&hl=en",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A043650&cID=&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
-  "https://m.thinkpool.com/item/043650",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=043650",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A043650&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "http://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=043650",
-  "https://comp.wisereport.co.kr/company/c1030001.aspx?cmp_cd=043650&cn=",
+  "https://thevc.kr/kooksoondang",
+  "https://alphasquare.co.kr/home/stock-summary?code=043650",
+  "https://core.asiae.co.kr/article/2024082715570268563",
+  "https://www.hankyung.com/article/2019021366361",
+  "https://moneypie.net/wiki/v/국순당",
+  "https://www.intn.co.kr/news/articleView.html?idxno=25554",
+  "https://view.asiae.co.kr/article/2026090310164480987",
   "https://www.news1.kr/industry/distribution/6111770",
-  "https://www.thinkfood.co.kr/news/articleView.html?idxno=89838",
-  "https://www.realfoods.co.kr/article/2801736",
-  "https://www.foodbank.co.kr/news/articleView.html?idxno=54143",
-  "https://www.thereport.co.kr/news/articleView.html?idxno=36280",
-  "https://www.startuptoday.co.kr/news/articleView.html?idxno=590111",
-  "https://www.foodicon.co.kr/news/articleView.html?idxno=11606",
-  "https://www.nongmin.com/article/20240719500081",
-  "https://www.m-i.kr/news/articleView.html?idxno=1020743",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=439582",
   "https://www.econonews.co.kr/news/articleView.html?idxno=432365",
-  "https://www.finance-scope.com/article/view/scp202511100001"
+  "https://www.kdsn.co.kr/news/article.html?no=48735",
+  "https://www.seoultimes.news/news/article.html?no=2000094138",
+  "https://www.startuptoday.co.kr/news/articleView.html?idxno=590111",
+  "https://www.sayweee.com/ko/grocery-near-me/korean-lang/explore/%E1%84%80%E1%85%AE%E1%86%A8%E1%84%89%E1%85%AE%E1%86%AB%E1%84%83%E1%85%A1%E1%86%BC%E1%84%86%E1%85%A1%E1%86%A8%E1%84%80%E1%85%A5%E1%86%AF%E1%84%85%E1%85%B5",
+  "https://www.weee.com/ko/grocery-near-me/korean-lang/explore/%E1%84%80%E1%85%AE%E1%86%A8%E1%84%89%E1%85%AE%E1%86%AB%E1%84%83%E1%85%A1%E1%86%BC%E1%84%89%E1%85%A2%E1%86%BC%E1%84%86%E1%85%A1%E1%86%A8%E1%84%80%E1%85%A5%E1%86%AF%E1%84%85%E1%85%B5",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A043650&MenuYn=Y&NewMenuID=105&stkGb=701",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=043650",
+  "https://markets.hankyung.com/consensus"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "043650",
  "name": "국순당",
  "name_en": "KOOK SOON DANG CO.,LTD",
@@ -233,9 +223,9 @@
   "식음료"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:46",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 17:56",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -334,14 +324,14 @@
    }
   ],
   "valuation": {
-   "price": 3545,
-   "mcap": 0.0633,
+   "price": 3555,
+   "mcap": 0.0635,
    "shares": 17858304,
    "total_shares": 17858304,
    "wavg_shares": 15494057,
-   "per": 13.2,
+   "per": 13.265,
    "eps": 268,
-   "pbr": 0.23,
+   "pbr": 0.2317,
    "bps": 15344,
    "roe_ttm": 1.8,
    "ttm_window": "2025Q3~2026Q2",
@@ -350,7 +340,7 @@
    "bps_krx": 15068.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 80.0,
-   "div": 2.26
+   "div": 2.25
   }
  }
 }

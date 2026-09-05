@@ -1,229 +1,220 @@
 {
  "title": {
-  "ko": "수주 변곡점 진입, 마진 회복이 열쇠",
-  "en": "At an Order Inflection Point: Margin Recovery Holds the Key"
+  "ko": "실적 변동성 속 수출망 다각화 지속",
+  "en": "Earnings Volatility Amid Export Diversification"
  },
  "lead": {
-  "ko": "국내 메디칼·덴탈 X-ray 시장 점유율 1위 제노레이는 2025년 4분기 분기 역대 최대 매출과 영업이익 흑자 전환으로 회복 신호를 발신하였으나, 2026년 1분기 영업적자 재진입과 덴탈 CT 수요 불안으로 이익 정상화 시계는 여전히 불투명하다.",
-  "en": "Genoray, the domestic market share leader in both medical and dental X-ray imaging, signaled a recovery in Q4 2025 with record quarterly sales and a return to operating profit, but the timeline for full earnings normalization remains uncertain after a renewed operating loss in Q1 2026 and softening dental CT demand."
+  "ko": "제노레이는 메디칼(C-arm·유방촬영)과 덴탈(CT·파노라마) 양대 영상진단장비 사업을 국내 유일하게 병행하며 수출 비중이 높은 구조를 유지하고 있으나, 최근 분기 실적은 덴탈 CT 수요 둔화로 흑자·적자를 오가는 변동성을 보이고 있다.",
+  "en": "Genoray runs both medical (C-arm, mammography) and dental (CT, panorama) imaging device businesses—a combination unique among Korean listed peers—and maintains a high export ratio, but recent quarterly results have swung between profit and loss amid softening dental CT demand."
  },
  "keypoints": [
   {
-   "ko": "2025년 4분기 매출 약 341억 원(분기 역대 최대)·영업이익 약 14억 원 흑자 전환 — 러시아·튀르키예·레바논 정부 입찰 대형 수주 인식이 주도",
-   "en": "Q4 2025 revenue hit a record quarterly high of ~KRW 34.1bn with operating profit turning positive at ~KRW 1.4bn, driven by large government procurement order recognition from Russia, Turkey, and Lebanon."
+   "ko": "2025년 연간 매출은 1,080억원으로 전년 대비 소폭 증가했으나 영업이익은 적자로 전환, 당기순이익(지배주주)은 소폭 흑자를 유지했다.",
+   "en": "Full-year 2025 revenue rose modestly to KRW 108.0 billion, but operating profit turned negative while net income attributable to owners stayed marginally positive."
   },
   {
-   "ko": "2026년 1분기 영업손실 약 16억 원 재진입 — 메디칼 C-arm 매출 증가에도 덴탈 CT 수요 위축이 수익성 발목을 잡아",
-   "en": "Q1 2026 returned to an operating loss of ~KRW 1.6bn as dental CT demand weakness offset growth in medical C-arm sales."
+   "ko": "2025Q3~2026Q2 최근 네 개 분기 동안 영업이익은 적자·흑자를 반복했고, 순이익도 분기별로 큰 폭의 등락을 보였다.",
+   "en": "Over the four most recent quarters (2025Q3-2026Q2), operating profit alternated between losses and gains, and net income also swung sharply quarter to quarter."
   },
   {
-   "ko": "2026년 초 약 170억 원 신규 수주 계약 체결, CE인증 추진으로 글로벌 입찰 참여국 확대 계획",
-   "en": "Genoray secured ~KRW 17bn in new contracts in early 2026 and is pursuing CE certification to expand eligible global government tender markets."
+   "ko": "튀르키예 보건부 유방촬영장치 입찰 낙찰, 일본 시마즈와의 Mobile C-Arm ODM 계약 등 해외 채널 다변화가 이어지고 있다.",
+   "en": "Overseas channel diversification continues, including a win in a Turkish Ministry of Health mammography tender and a Mobile C-Arm ODM agreement with Japan's Shimadzu."
   },
   {
-   "ko": "신제품 BELLIGER ACE·시마즈(SHIMADZU) ODM 계약·중기부 도약 프로그램 선정 등 복수의 성장 레버 가동 중",
-   "en": "Multiple growth levers are in play: the new BELLIGER ACE C-arm, a Mobile C-arm ODM contract with Japan's Shimadzu, and selection for Korea's government Jump-Up SME scale-up program."
+   "ko": "부채비율은 2022년 20.7%에서 2025년 56.7%로 매년 상승하는 추세다.",
+   "en": "The debt-to-equity ratio has risen every year, from 20.7% in 2022 to 56.7% in 2025."
   },
   {
-   "ko": "2022년 18.1%였던 영업이익률이 2025년 -0.2%로 급락, 부채비율도 20.7%→56.7%로 상승해 투자 사이클의 흔적이 재무 전반에 반영",
-   "en": "Operating margin collapsed from 18.1% in 2022 to -0.2% in 2025 amid an investment cycle, with the debt ratio rising concurrently from 20.7% to 56.7%."
+   "ko": "덴탈 부문에서는 GT300 CBCT 신제품과 동물용 진단기기 베테라(VETERA) 등 신제품을 통한 라인업 확장을 추진 중이다.",
+   "en": "In the dental segment, the company is expanding its lineup through new products such as the GT300 CBCT and the VETERA veterinary imaging device."
   }
  ],
  "business": {
-  "ko": "제노레이는 2001년 설립된 X-ray 영상진단 의료기기 전문 중견기업으로 2018년 코스닥에 상장하였다. 사업은 병원을 대상으로 하는 메디칼(Medical) 부문과 치과를 대상으로 하는 덴탈(Dental) 부문으로 구성된다. 메디칼 부문의 주력 제품은 수술 현장에서 실시간 투시 영상을 제공하는 이동형 X선 장치(C-arm), 국내 최초 디지털 유방촬영 단층합성(DBT) 인증을 획득한 유방촬영장치(HESTIA), 이비인후과용 CT(ENT CT)이며, 2025년 결산 기준 세 제품 모두 국내 누적 시장 점유율 1위를 기록하고 있다. 덴탈 부문에서는 치과용 파노라마·CBCT 등을 공급하며, 치과용 CAD/CAM 연동형 소프트웨어 사업도 기획·연구개발 중이다. 판매 채널은 국내외 B2B 영업을 주축으로 하며, 미국·러시아 등 약 80여 개국에 수출하고 있다. 일본 정밀기기 기업 시마즈 제작소(SHIMADZU)와 Mobile C-arm ODM 공급 계약을 체결하여 안정적인 수출 물량을 확보하였으며, 튀르키예 보건부 유방촬영기 공개 입찰에서 HESTIA가 낙찰되는 등 신흥국 정부 조달 시장에서도 입지를 강화하고 있다. 경쟁 구도 면에서 글로벌 메디칼 시장에서는 GE 헬스케어, 지멘스 헬시니어스, 후지필름 등 대형 다국적 기업과 경쟁하고, 국내 덴탈 시장에서는 바텍 등 전문 업체와 시장을 나누고 있다. AI 딥러닝 자동진단 기술과 C-arm 3D CT 등 하이엔드 제품 개발도 병행하여 제품 포트폴리오 고도화를 추진 중이다.",
-  "en": "Genoray is a mid-sized Korean medical imaging device company founded in 2001 and listed on KOSDAQ in 2018. Its business is divided into two segments: Medical (targeting hospitals) and Dental (targeting dental clinics). The Medical segment's flagship products are the Mobile C-arm (intraoperative real-time fluoroscopy), the HESTIA mammography system (Korea's first DBT-certified digital mammography), and an ENT CT device — all holding the cumulative domestic market share top position as of the 2025 annual results. The Dental segment offers panoramic X-rays and CBCT equipment, with CAD/CAM-linked dental software also in planning and R&D stages. Sales are conducted primarily through B2B channels across approximately 80 countries including the US and Russia. Genoray has a Mobile C-arm ODM supply agreement with Japan's Shimadzu Corporation for stable export volumes, and its HESTIA product won a government-tendered mammography bid from Turkey's Ministry of Health, reinforcing its position in emerging-market procurement. In the competitive landscape, Genoray competes against global majors such as GE HealthCare, Siemens Healthineers, and Fujifilm in the medical imaging space, while sharing the domestic dental market with peers such as Vatech. The company is also developing AI deep learning diagnostic technology and high-end C-arm 3D CT products to upgrade its portfolio."
+  "ko": "제노레이는 2001년 설립되어 2018년 코스닥에 상장한 의료용 X-ray 영상진단장비 전문기업으로, 메디칼 부문(C-arm, 유방촬영장치 Mammography)과 덴탈 부문(파노라마, CT, 포터블 X-ray)을 동시에 영위하는 국내 유일의 기업이다. 국내 이동형 C-arm 시장에서 높은 점유율을 보유한 것으로 알려져 있으며, 회사 측은 2025년 결산 기준 C-arm·Mammography·ENT(이비인후과용 CT) 등 3개 주력 제품군에서 국내 누적 시장 점유율 1위를 기록했다고 밝혔다. 핵심 부품인 X선 발생기(Generator)와 CMOS FPD 센서를 자체 기술로 내재화해 원가 경쟁력과 품질을 동시에 확보하고 있다. 글로벌 네트워크 측면에서는 미국·독일·일본·튀르키예·중국에 5개 해외 법인과 150개 이상의 파트너사를 두고 전 세계 80여 개국에 제품을 수출하며, 전체 매출의 약 75%가 해외에서 발생하는 수출 중심 구조를 갖고 있다. 최근에는 일본 GC코퍼레이션과의 전략적 협력을 통해 GC의 일본 내 영업망을 활용한 ODM 방식 수출을 확대하고 있고, 중국에서는 HMD사·상해전기·컬러풀그룹 등과 덴탈 CT 공급 및 기술협력 계약을 맺었다. 국내 상장 치과용 영상진단기기 기업으로는 바텍, 레이, 뷰웍스 등이 있어 경쟁 구도를 형성하고 있으며, 메디칼 부문에서는 별도의 C-arm·유방촬영 전문 경쟁사들과도 경쟁한다. 매년 매출의 8~10% 수준을 연구개발에 투자해 저선량·고해상도 영상 기술과 AI 딥러닝 기반 자동진단 기술 개발에 집중하고 있다.",
+  "en": "Founded in 2001 and listed on KOSDAQ in 2018, Genoray is a medical X-ray imaging device specialist and the only Korean company that simultaneously operates both a medical segment (C-arm, mammography) and a dental segment (panorama, CT, portable X-ray). The company has said it held the No.1 cumulative domestic market share in three core product lines—C-arm, mammography, and ENT (ear-nose-throat) CT—based on full-year 2025 results. Genoray has internalized core components such as X-ray generators and CMOS FPD sensors, securing both cost competitiveness and quality. On the global network side, the company operates five overseas subsidiaries in the United States, Germany, Japan, Turkey, and China with over 150 partner companies, exporting to more than 80 countries, with roughly 75% of total revenue generated overseas. More recently, Genoray has expanded ODM exports to Japan through a strategic partnership with GC Corporation, leveraging GC's local sales network, while in China it has signed dental CT supply and technology-cooperation agreements with HMD, Shanghai Electric, and the Colorful Group. Listed domestic peers in dental imaging include Vatech, Ray, and Vieworks, while the medical segment competes with separate specialists in C-arm and mammography equipment. The company invests roughly 8-10% of revenue annually in R&D, focusing on low-dose, high-resolution imaging and AI deep-learning-based automated diagnostics."
  },
  "earnings": {
-  "ko": "연결 기준 매출액은 2022년 826억 원 → 2023년 979억 원 → 2024년 1,070억 원 → 2025년 1,080억 원으로 꾸준히 증가하였으나, 영업이익률은 같은 기간 18.1% → 13.0% → 6.1% → -0.2%로 가파르게 하락하였다. 수익성 저하의 주요 원인은 공격적인 설비투자·R&D 비용 확대 및 글로벌 시장 진출에 따른 판매관리비 증가로 추정된다. 2024년에는 영업이익이 65억 원으로 전년의 절반 수준으로 줄었고, 지배주주 귀속 순이익은 -18억 원으로 전환되었으며 이는 영업외 투자손실이 영업이익을 상회한 결과다. 2025년 연간 영업이익은 -2억 원으로 사실상 손익분기를 맴돌았고, 지배주주 귀속 순이익은 약 6억 원으로 흑자 전환에 성공하였다. 분기별로는 2025년 1분기(+1억 원)·2분기(-0.4억 원)·3분기(-17억 원)의 부진 이후, 4분기 매출 341억 원(분기 역대 최대)·영업이익 14억 원으로 대폭 개선되어 러시아·튀르키예·레바논 정부 입찰 대형 수주 인식 효과가 확인되었다. 그러나 2026년 1분기는 매출 254억 원(전년 동기 대비 +0.9%)·영업이익 -16억 원으로 재차 악화되었는데, 메디칼 C-arm 매출은 증가하였으나 덴탈 CT 매출 감소가 수익성 회복을 지연시켰다. 영업현금흐름은 2022년 148억 원에서 2023년 36억 원으로 급감한 후 2024년 133억 원으로 회복되었다가, 2025년 53억 원으로 재차 둔화되어 이익의 현금 전환 효율이 불안정함을 보여준다. 부채비율은 2022년 20.7%에서 매년 상승하여 2025년 56.7%에 이르렀으며, 지배주주 귀속 자기자본은 2023년 953억 원에서 2025년 845억 원으로 점진적으로 감소하였다.",
-  "en": "Consolidated revenue grew steadily from KRW 82.6bn in 2022 to KRW 97.9bn in 2023, KRW 107.0bn in 2024, and KRW 108.0bn in 2025, but operating margin fell sharply from 18.1% to 13.0% to 6.1% to -0.2% over the same period. The margin compression is primarily attributed to aggressive capital expenditure, rising R&D costs, and higher selling and administrative expenses tied to global market expansion. In 2024, operating profit fell by nearly half to KRW 6.5bn, while net income attributable to owners turned negative at -KRW 1.8bn as non-operating investment losses exceeded operating income. In 2025, annual operating profit of -KRW 0.24bn was barely at breakeven, while net income attributable to owners recovered to +KRW 0.63bn. Quarterly performance showed persistent losses in Q2 and Q3 2025, followed by a Q4 2025 turnaround with record-high quarterly revenue of KRW 34.1bn and operating profit of KRW 1.4bn, driven by recognition of large government procurement orders from Russia, Turkey, and Lebanon. Q1 2026, however, reverted to an operating loss of KRW 1.6bn as dental CT sales declined despite improving C-arm demand. Operating cash flow was volatile — strong at KRW 14.8bn in 2022, slumped to KRW 3.6bn in 2023, recovered to KRW 13.3bn in 2024, then moderated to KRW 5.3bn in 2025. The debt ratio climbed from 20.7% in 2022 to 56.7% in 2025, while equity attributable to owners declined from KRW 95.3bn in 2023 to KRW 84.5bn in 2025."
+  "ko": "2025년 연결 매출액은 1,080.4억원으로 2024년 1,069.8억원 대비 소폭 늘었으나, 영업이익은 -2.4억원으로 전년(65.1억원, 영업이익률 6.1%) 대비 적자로 전환했다. 다만 지배주주 순이익은 7.6억원으로 소폭이나마 흑자를 지켰는데, 이는 2024년 지배주주 순손실 -18.0억원에서 개선된 결과다. 2022년(매출 826.0억원, 영업이익률 18.1%)과 2023년(매출 979.0억원, 영업이익률 13.0%)의 두 자릿수 영업이익률과 비교하면 최근 2개년의 수익성 하락이 뚜렷하다. 분기별로 보면 변동성이 더 두드러진다. 2025년 3분기 매출 218.3억원에 영업손실 16.6억원, 순손실 10.0억원을 기록했고, 2025년 4분기에는 매출이 340.5억원으로 크게 늘며 영업이익 13.8억원, 순이익은 이보다 훨씬 큰 34.0억원으로 집계됐다. 2026년 1분기에는 매출 253.9억원에 영업손실 15.8억원, 순손실 4.1억원으로 다시 적자를 냈고, 2분기에는 매출 266.2억원, 영업이익 2.5억원, 순이익 6.1억원으로 흑자 전환했다. 영업이익과 순이익 간의 격차(특히 2025년 4분기)는 영업외 손익 요인이 분기 실적에 상당한 영향을 미쳤음을 시사한다. 현금흐름 측면에서는 영업활동현금흐름이 2022년 148.4억원, 2023년 35.5억원, 2024년 132.7억원, 2025년 52.6억원으로 등락을 보이며 손익보다도 변동폭이 크게 나타났다.",
+  "en": "Consolidated 2025 revenue came to KRW 108.04 billion, a modest increase from KRW 106.98 billion in 2024, but operating profit turned negative at KRW -243 million, reversing from KRW 6.51 billion (a 6.1% operating margin) the prior year. Net income attributable to owners nonetheless stayed marginally positive at KRW 758 million, an improvement from a net loss of KRW 1.80 billion in 2024. Compared with double-digit operating margins in 2022 (18.1% on revenue of KRW 82.60 billion) and 2023 (13.0% on revenue of KRW 97.90 billion), the profitability decline of the past two years stands out. Quarterly figures show even more pronounced swings: third-quarter 2025 revenue was KRW 21.83 billion with an operating loss of KRW 1.66 billion and a net loss of KRW 998 million, while fourth-quarter 2025 revenue jumped to KRW 34.05 billion with operating profit of KRW 1.38 billion and net income of KRW 3.40 billion—a figure notably larger than the operating profit itself. First-quarter 2026 reverted to losses, with revenue of KRW 25.39 billion, an operating loss of KRW 1.58 billion, and a net loss of KRW 407 million, before second-quarter 2026 swung back to profit with revenue of KRW 26.62 billion, operating profit of KRW 249 million, and net income of KRW 606 million. The gap between operating and net income, especially in the fourth quarter of 2025, suggests non-operating items had a meaningful effect on quarterly results. Operating cash flow also fluctuated more than earnings, at KRW 14.84 billion in 2022, KRW 3.55 billion in 2023, KRW 13.27 billion in 2024, and KRW 5.26 billion in 2025."
  },
  "industry": {
-  "ko": "글로벌 모바일 C-arm 시장은 2025년 약 17억 달러 규모로, 2034년까지 연평균 5.5% 성장이 전망되는 안정적 성장 산업이다. 성장 동인은 고령화에 따른 수술 건수 증가, 최소침습 시술 확대, 만성질환 증가에 따른 영상진단 수요 확대다. 한국 유방촬영 시장도 연평균 약 9.4% 성장이 예상되는 고성장 세그먼트로, 3D DBT 방식으로의 기술 전환이 교체 수요를 자극하고 있다. 국내 의료 영상장비 시장은 GE 헬스케어·지멘스·필립스·후지필름 등 글로벌 대형사가 프리미엄 구간을 장악하고 있어, 국내 기업들은 원가 경쟁력과 현지화 서비스로 차별화를 추구한다. 제노레이는 국내 C-arm·Mammography·ENT CT에서 누적 점유율 1위를 유지하며, 핵심부품 내재화로 확보한 가격 경쟁력을 신흥국 정부 입찰 시장 공략의 무기로 활용하고 있다. 신흥국 정부 입찰 중심의 사업 모델은 대형 계약 인식 타이밍에 따라 분기별 실적 변동성을 높이는 구조적 특성을 가지나, 진입 후에는 중장기 시장 지위 확보에 유리하다. 덴탈 영상 시장은 디지털·3D CBCT 전환 수요가 구조적 성장 동인이지만, 치과 개원 경기와 환자 소비 심리에 민감하게 반응해 단기 수요 변동성이 상대적으로 크다.",
-  "en": "The global mobile C-arm market is estimated at approximately USD 1.7 billion in 2025 and is projected to grow at a CAGR of 5.5% through 2034, driven by aging demographics, rising minimally invasive procedures, and growing chronic disease prevalence. Korea's mammography market is a high-growth subsegment with an expected CAGR of approximately 9.4%, as the shift toward 3D digital breast tomosynthesis stimulates equipment replacement. In Korea's medical imaging market, global majors such as GE HealthCare, Siemens Healthineers, Philips, and Fujifilm dominate the premium tier, while domestic players compete on cost competitiveness and localized service. Genoray holds cumulative domestic top market share in C-arm, Mammography, and ENT CT, leveraging in-house component development to undercut global peers in price-sensitive emerging-market tenders. Its government-tender-centric model creates structural quarterly earnings volatility tied to large-contract delivery timing, but offers significant long-term market positioning advantages once bids are won. The dental imaging market benefits from a structural tailwind as clinics transition from analog to digital and 3D CBCT, though near-term demand is sensitive to clinic opening trends and patient spending sentiment. Asia-Pacific is among the fastest-growing C-arm regions globally, offering Genoray incremental export opportunities over the medium term."
+  "ko": "치과·의료용 영상진단장비 산업은 고령화에 따른 진단·시술 수요 증가와 신흥국의 의료 인프라 확충이 장기 성장 축으로 꾸준히 언급된다. 회사 측에 따르면 고령화로 인한 C-arm 수요는 견조하지만, 덴탈 CT 수요는 변동성이 커 최근 실적에 부담이 되고 있다. 국내 시장은 이미 높은 장비 보급률로 성장이 제한적이라는 평가가 나오는 반면, 해외에서는 정부 입찰 중심의 조달 시장(튀르키예 등)과 파트너사를 통한 ODM·유통망 확대(일본 GC, 중국 HMD·상해전기)가 성장 경로로 활용되고 있다. 국내 상장 치과용 영상진단기기 동종업계로는 바텍이 규모 면에서 가장 크며, 뷰웍스·레이 등도 유사 사업을 영위한다. 해외 대형 치과용 의료기기 기업으로는 헨리 샤인, 덴츠플라이 시로나 등이 있다. 산업 내에서는 신제품 인증(중국·유럽·미국 등)과 신흥국 인증 확보 속도가 매출 확대의 핵심 변수로 꼽힌다. 동물용 진단기기 시장 진출과 같은 인접 시장 확장도 업계 전반의 성장 전략 중 하나로 나타나고 있다.",
+  "en": "The dental and medical imaging device industry is generally cited as having long-term growth drivers tied to rising diagnostic and procedural demand from an aging population and expanding healthcare infrastructure in emerging markets. According to the company, C-arm demand tied to an aging population has stayed resilient, while dental CT demand has been more volatile, weighing on recent results. Some assessments suggest the domestic market's growth is limited given already-high equipment penetration, while overseas government-tender markets (such as Turkey) and partner-driven ODM and distribution expansion (Japan's GC, China's HMD and Shanghai Electric) serve as growth channels. Among listed domestic dental imaging peers, Vatech is the largest by scale, with Vieworks and Ray operating similar businesses. Larger global dental device makers include Henry Schein and Dentsply Sirona. Within the industry, the pace of securing new-product certifications in markets such as China, Europe, and the United States is considered a key variable for revenue expansion. Expansion into adjacent markets, such as veterinary imaging devices, has also emerged as one of several industry-wide growth strategies."
  },
  "outlook": {
-  "ko": "2026년 초 약 170억 원 규모의 신규 수주 계약을 체결하여 하반기 매출 인식에 따른 실적 회복 기반이 마련되고 있다. CE인증 획득이 추진 중으로, 인증 완료 시 유럽을 포함한 더 넓은 국가의 공공 입찰 참여가 가능해져 중장기 수주 파이프라인 확대에 긍정적이다. C-arm 신제품 BELLIGER ACE는 핵심부품 내재화를 통한 가격 경쟁력, One-Body 디자인, 저선량 고화질 영상을 강점으로 내세우며 글로벌 C-arm 시장 점유율 확장을 목표로 하고 있다. 시마즈 제작소와의 ODM 계약은 안정적인 수출 물량 기반을 제공하며 수출 매출의 예측 가능성을 높이는 요소다. 덴탈 부문에서는 치과용 CAD/CAM 연동 소프트웨어 개발을 병행하여 하드웨어 판매 의존도를 줄이고 소프트웨어·서비스 기반의 반복 수익으로 비즈니스 모델을 다각화하는 중장기 전략을 추진하고 있다. 중기부 도약 프로그램 지원 기업 선정을 통해 기술·사업 분야에서 종합적인 정부 지원을 받게 되어 스케일업 역량 강화가 가속될 전망이다. 다만 정부 입찰 중심의 사업 특성상 수주 인식 타이밍 편차가 크고 덴탈 CT 수요 회복 속도에 따라 단기 분기 실적은 여전히 높은 변동성을 내포하고 있다.",
-  "en": "In early 2026, Genoray secured approximately KRW 17bn in new contracts, providing a foundation for revenue recognition and earnings recovery in the second half of 2026. CE certification is actively being pursued; its completion would allow participation in a broader range of public tenders including those in Europe, strengthening the medium-term order pipeline. The new BELLIGER ACE C-arm, featuring in-house component cost competitiveness, a One-Body design, and low-dose high-quality imaging, is positioned as a key product for domestic and international C-arm share expansion. The ODM agreement with Shimadzu provides a stable export volume base, improving revenue predictability. In the Dental segment, ongoing development of CAD/CAM-linked software reflects a medium-to-long-term strategy to shift the business model toward recurring software and service revenues beyond hardware sales. Selection for the government's Jump-Up scale-up program provides institutional support for technology and business capability development. However, the inherent lumpiness of government procurement order recognition and the uncertain pace of dental CT demand recovery mean that near-term quarterly earnings volatility is likely to persist."
+  "ko": "회사는 치과용 CBCT 신제품 GT300이 국내 식품의약품안전처 인증을 획득하고 출시됐다고 밝혔으며, 추가적으로 중국·유럽·미국 인증을 통해 해외 매출을 확대하겠다는 계획을 제시했다. 사업영역 확장 측면에서는 동물용 엑스레이 진단기기 베테라(VETERA)를 출시해 수의사·동물병원 대상 시장에 진입하겠다는 방침을 밝힌 바 있다. 해외에서는 튀르키예 보건부가 발주한 유방촬영장치(Mammography) 입찰에서 자사 제품 'HESTIA'의 낙찰을 확정지었다고 공시했으며, 일본 시마즈 제작소와 대규모 Mobile C-Arm 공급을 위한 ODM 계약을 체결했다고 밝혔다. 한국IR협의회는 2025년 4월 리포트에서 벨리저(신제품) 출시와 하반기 동물용 진단기기 시장 진출을 통해 국내 매출 성장을 이어갈 것이라는 전망을 제시했으며, 투자의견과 목표주가는 제시하지 않았다. 회사는 치과용 CAD/CAM 연동형 소프트웨어 사업 기획 및 연구개발도 진행 중이라고 밝혔다. 다만 이러한 신제품·신시장 전략이 최근 분기 실적의 변동성을 얼마나 완화할 수 있을지는 향후 분기 공시를 통해 확인이 필요하다.",
+  "en": "The company has stated that its new dental CBCT product, the GT300, received certification from Korea's Ministry of Food and Drug Safety and was launched domestically, with plans to expand overseas sales through additional certifications in China, Europe, and the United States. On business expansion, the company previously announced plans to enter the veterinary imaging market with its VETERA veterinary X-ray device targeting veterinarians and animal hospitals. Overseas, Genoray disclosed that it secured a mammography tender win with its HESTIA product from Turkey's Ministry of Health, and separately announced an ODM agreement with Japan's Shimadzu Corporation to supply Mobile C-Arm units at scale. In an April 2025 report, the Korea Investors Relations Service projected that new product launches and entry into the veterinary imaging market in the second half would sustain domestic revenue growth, without providing an investment rating or target price. The company also said it is developing a dental CAD/CAM-integrated software business. Whether these new-product and new-market initiatives can meaningfully reduce the recent quarterly earnings volatility remains something to be confirmed through upcoming quarterly disclosures."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당순자산(BPS 6,552원)을 큰 폭으로 하회하는 구간에서 거래되고 있어 순자산 대비 할인 밸류에이션이 형성된 상태다. 2022~2023년 두 자릿수 영업이익률을 시현하던 시기에 비하면 현재 이익 창출력이 현저히 낮아진 상태로, 당시 형성되었던 높은 밸류에이션 밴드로의 회귀 여부는 이익 정상화 속도에 달려 있다. 최근 순이익이 흑자로 전환하였으나 절대 규모가 매우 소규모여서 이익 배수(PER) 기반 접근보다는 자산 기반 평가와 이익 회복 모멘텀이 주된 평가 축이 되는 구간이다. 주당 배당금(DPS) 150원은 자본준비금 감액에 의한 비과세 방식으로 지급되어 수취자 입장에서의 실질 수혜는 명목 배당수익률보다 높게 체감된다는 점이 특징이다. 실적 회복의 지속성과 CE인증·신규 수주 등 사업 모멘텀의 구체화 시점이 재평가 여부를 결정할 핵심 변수다.",
-  "en": "The current share price is trading at a significant discount to book value (BPS: KRW 6,552), placing the stock firmly in net asset discount territory. Compared to the 2022–2023 period when double-digit operating margins were delivered, current earnings power is markedly lower, and any re-rating toward the valuation levels seen during those years hinges on the pace of margin normalization. While the company has returned to modest profitability, the absolute earnings magnitude is small, making asset-based metrics and earnings recovery momentum more relevant valuation frameworks than earnings multiples at this stage. The declared DPS of KRW 150 is paid via capital reserve reduction, making it non-taxable for individual shareholders and thus providing a higher effective yield than the nominal figure implies. The sustainability of earnings recovery and the concrete timeline for CE certification and order expansion are the key variables that would determine any re-rating of the company."
+  "ko": "제노레이의 순자산가치 대비 주가 수준은 과거 여러 해 동안 자본총계(지배주주 기준)가 900억원대에서 800억원대로 완만히 축소되는 흐름과 함께 살펴볼 필요가 있다. 최근 몇 년간 영업이익은 두 자릿수 이익률에서 적자로, 순이익은 흑자와 적자를 오가며 방향성이 반복적으로 바뀌었다는 점이 밸류에이션 해석에서 고려할 변수다. 동종 치과용 영상진단기기 업종 내에서는 규모가 더 큰 경쟁사가 존재하며, 과거 증권가 비교분석에서는 동종업계 평균 배수와의 격차가 언급된 바 있으나 제노레이 자체에 대한 최신 컨센서스 밸류에이션은 확인되지 않는다. 배당의 경우 회사는 최근 연도에 주당 현금배당을 실시한 이력이 있으며, 이는 업종 내 배당 정책과 함께 참고할 요소다. 결국 현재 거래되는 가치 수준을 판단할 때는 실적의 방향성 전환 여부와 신제품·해외 계약의 매출 반영 시점이 함께 검토되어야 한다.",
+  "en": "Genoray's share price relative to net asset value should be considered alongside the gradual decline in owners' equity from the KRW 90-billion range to the KRW 80-billion range over recent years. A relevant factor for valuation interpretation is that operating profit has shifted from double-digit margins to losses in recent years, while net income has alternated repeatedly between gains and losses. Within the dental imaging device peer group, larger competitors exist, and past brokerage comparative analyses have referenced gaps versus peer-average multiples, though no current consensus valuation specific to Genoray was identified. On dividends, the company has a recent history of paying a per-share cash dividend, which is a relevant reference alongside sector dividend practices. Ultimately, assessing the current trading level requires weighing both the direction of earnings turns and the timing at which new products and overseas contracts are reflected in revenue."
  },
  "bull": [
   {
    "title": {
-    "ko": "국내 시장 점유율 1위 + 신흥국 정부 입찰 수주 확대",
-    "en": "Domestic Market Leadership and Expanding Emerging-Market Government Procurement"
+    "ko": "국내 유일 메디칼·덴탈 겸업 구조",
+    "en": "Only Domestic Player Spanning Both Medical and Dental"
    },
    "body": {
-    "ko": "C-arm·Mammography·ENT CT 3개 제품군에서 국내 누적 점유율 1위를 유지하여 교체 수요와 신규 납품에서 높은 브랜드 신뢰도를 바탕으로 경쟁한다. 러시아·튀르키예·레바논 등 신흥국 정부 입찰 수주를 꾸준히 확대해 왔으며, 2026년 초 약 170억 원 규모 신규 수주가 하반기 매출로 인식될 가능성이 높다. 핵심부품 내재화를 통한 가격 경쟁력은 신흥국 공개 입찰에서 글로벌 대형사 대비 비용 우위를 제공한다.",
-    "en": "Genoray holds the cumulative domestic top market share in C-arm, Mammography, and ENT CT, providing strong brand credibility for replacement and new installation cycles. Government procurement wins in Russia, Turkey, and Lebanon have been growing, with ~KRW 17bn in new contracts from early 2026 expected to be recognized as revenue in H2 2026. In-house component development gives the company a cost advantage over global majors in price-sensitive public tender environments."
+    "ko": "제노레이는 국내에서 메디칼(C-arm, 유방촬영)과 덴탈(CT, 파노라마)을 동시에 영위하는 유일한 상장사로, 회사 측은 2025년 결산 기준 C-arm·Mammography·ENT CT 3개 제품군에서 국내 시장 점유율 1위를 기록했다고 밝혔다. 두 사업부의 기술·영업 역량을 상호 활용할 수 있다는 점이 구조적 강점으로 꼽힌다. 이는 특정 제품군의 수요 둔화 충격을 다른 제품군이 일부 상쇄할 수 있는 여지를 제공한다.",
+    "en": "Genoray is the only listed Korean company that simultaneously operates in medical (C-arm, mammography) and dental (CT, panorama) imaging, and the company said it held the No.1 domestic market share in three product lines—C-arm, mammography, and ENT CT—as of full-year 2025. Cross-utilization of technical and sales capabilities between the two segments is cited as a structural strength. This can provide some offset when demand softens in one product category but not another."
    }
   },
   {
    "title": {
-    "ko": "CE인증·BELLIGER ACE·ODM으로 복수의 글로벌 성장 레버 확보",
-    "en": "Multiple Global Growth Levers via CE Certification, BELLIGER ACE, and ODM"
+    "ko": "해외 채널 다변화 진행",
+    "en": "Ongoing Overseas Channel Diversification"
    },
    "body": {
-    "ko": "진행 중인 CE인증 취득은 유럽을 포함한 더 넓은 국가의 공공 입찰 참여를 가능하게 해 중장기 수주 파이프라인 확대의 열쇠다. 신제품 BELLIGER ACE는 One-Body 디자인과 저선량 고화질 영상을 내세워 국내외 C-arm 점유율 확장을 겨냥하고 있다. 시마즈 제작소와의 ODM 계약은 예측 가능한 수출 물량을 제공하며 글로벌 유통망의 안정성을 보완한다.",
-    "en": "Ongoing CE certification will unlock public tender access in a broader range of countries including Europe, serving as a key catalyst for the medium-to-long-term order pipeline. The new BELLIGER ACE C-arm targets domestic and international share gains with its One-Body design and low-dose high-quality imaging capabilities. The ODM contract with Shimadzu provides predictable export volumes, adding resilience to the global distribution base."
+    "ko": "튀르키예 보건부 유방촬영장치 입찰에서 HESTIA 제품이 낙찰됐고, 일본 시마즈 제작소와는 Mobile C-Arm 대규모 ODM 계약을 체결했다고 공시했다. 중국에서는 HMD사, 상해전기, 컬러풀그룹 등과 덴탈 CT 공급·기술협력 계약을 이어가고 있으며, 일본에서는 GC코퍼레이션과의 전략적 파트너십을 통한 판매 확대를 추진 중이다. 정부 조달, ODM, 파트너십 등 다양한 경로로 해외 매출원을 넓히고 있는 점이 특징이다.",
+    "en": "Genoray's HESTIA product won a Turkish Ministry of Health mammography tender, and the company disclosed a large-scale Mobile C-Arm ODM agreement with Japan's Shimadzu Corporation. In China, it continues dental CT supply and technology-cooperation agreements with HMD, Shanghai Electric, and the Colorful Group, while in Japan it is pursuing expanded sales through a strategic partnership with GC Corporation. A notable feature is the broadening of overseas revenue sources through government procurement, ODM, and partnership channels."
    }
   },
   {
    "title": {
-    "ko": "비과세 배당과 순자산 대비 할인 구간의 자산 기반",
-    "en": "Non-Taxable Dividend and Substantial Net Asset Backing"
+    "ko": "신제품 라인업 확장",
+    "en": "Expanding New Product Lineup"
    },
    "body": {
-    "ko": "주당 150원 배당을 자본준비금 감액 방식으로 지급해 개인 주주의 배당소득세 부담이 없는 구조로, 명목 배당수익률보다 실질 수혜가 크다. 지배주주 귀속 순자산이 약 845억 원 수준으로, 현 시가총액 대비 현저히 높은 자산 기반이 존재한다. 이익 회복이 구체화될 경우 자산 기반을 반영한 주주환원 정책 강화 여지도 남아 있다.",
-    "en": "A DPS of KRW 150 is paid via capital reserve reduction, making it non-taxable for individual shareholders and providing an effective yield above the nominal figure. Equity attributable to controlling shareholders of approximately KRW 84.5bn stands substantially above the current market capitalization, offering a significant net asset cushion. If earnings recovery solidifies, further shareholder return enhancement remains a meaningful option."
+    "ko": "치과용 CBCT 신제품 GT300이 국내 인증을 획득해 출시됐고, 회사는 중국·유럽·미국 인증을 통한 해외 매출 확대 계획을 밝혔다. 동물용 엑스레이 진단기기 베테라(VETERA) 출시를 통한 사업영역 확장도 제시된 바 있다. 신제품군이 다변화되면 기존 덴탈 CT 수요 변동에 대한 의존도를 낮출 잠재적 여지가 있다.",
+    "en": "The new dental CBCT product, GT300, has received domestic certification and launched, with the company outlining plans to expand overseas sales through certifications in China, Europe, and the United States. The company has also outlined business expansion through the launch of the VETERA veterinary X-ray device. A more diversified new-product lineup carries potential to reduce reliance on existing dental CT demand fluctuations."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "덴탈 CT 수요 불안정과 분기 실적 변동성 지속",
-    "en": "Unstable Dental CT Demand and Persistent Quarterly Earnings Volatility"
+    "ko": "분기 실적의 높은 변동성",
+    "en": "High Quarterly Earnings Volatility"
    },
    "body": {
-    "ko": "2026년 1분기에 덴탈 CT 매출 감소로 메디칼 부문 성장이 상쇄되어 영업이익이 다시 적자로 전환되었다. 덴탈 수요는 치과 개원 경기와 환자 소비 심리에 민감하여 단기 예측 가능성이 낮다. 정부 입찰 기반의 매출 구조상 납품 시점 집중에 따른 분기별 실적 요철이 반복될 구조적 특성을 안고 있어 연간 이익의 안정성 확보가 쉽지 않다.",
-    "en": "In Q1 2026, a decline in dental CT sales offset medical segment growth, pushing operating profit back into negative territory. Dental demand is sensitive to clinic opening trends and patient spending sentiment, making near-term forecasting inherently challenging. The government-tender-driven revenue model concentrates deliveries in certain quarters, structurally producing recurring lumpiness that makes consistent annual profitability difficult to sustain."
+    "ko": "2025년 3분기부터 2026년 2분기까지 최근 네 개 분기 동안 영업이익은 적자와 흑자를 반복했고, 순이익도 분기별로 큰 폭의 등락을 보였다. 2025년 4분기처럼 순이익이 영업이익을 크게 상회하는 구간과, 2026년 1분기처럼 영업손실과 순손실이 동시에 나타나는 구간이 혼재해 있어 실적의 예측 가능성이 제한적이다. 덴탈 CT 매출 감소가 최근 영업이익 하락의 주된 요인으로 언급됐다.",
+    "en": "Over the four most recent quarters from third-quarter 2025 through second-quarter 2026, operating profit alternated between losses and gains, and net income also fluctuated sharply on a quarterly basis. Periods where net income significantly exceeded operating profit, such as in the fourth quarter of 2025, coexisted with periods of simultaneous operating and net losses, such as the first quarter of 2026, limiting earnings predictability. A decline in dental CT sales has been cited as the main factor behind the recent decline in operating profit."
    }
   },
   {
    "title": {
-    "ko": "영업이익률 회복 경로의 불투명성",
-    "en": "Uncertain Path to Operating Margin Recovery"
+    "ko": "영업이익과 순이익 간 괴리",
+    "en": "Gap Between Operating and Net Income"
    },
    "body": {
-    "ko": "영업이익률은 2022년 18.1%를 정점으로 2025년 -0.2%까지 3년간 가파르게 하락하였으며, 단기간 내 과거 수준으로의 회복을 뒷받침할 근거는 아직 충분하지 않다. 설비투자·R&D·글로벌 마케팅 비용 확대에 따른 고정비 기반 확대가 손익분기 매출 수준을 높인 상태다. 2026년 1분기에 영업적자로 재진입한 사실은 수익성 회복 신뢰도에 의문을 남기고 있다.",
-    "en": "Operating margin fell steeply from a peak of 18.1% in 2022 to -0.2% in 2025, and there is insufficient evidence to project a rapid return to prior levels. Elevated fixed costs from capex, R&D, and global marketing have raised the revenue breakeven threshold significantly. The return to operating loss in Q1 2026 raises questions about the durability of the recovery signaled by Q4 2025."
+    "ko": "2024년에는 영업이익이 65.1억원으로 흑자였음에도 지배주주 순이익은 -18.0억원의 손실을 기록했고, 2025년 4분기에는 영업이익 13.8억원 대비 순이익이 34.0억원으로 크게 웃돌았다. 이러한 괴리는 영업외 손익 항목이 분기·연간 실적에 상당한 영향을 미치고 있음을 시사하며, 본업의 수익성만으로 실적을 판단하기 어렵게 만드는 요인이다.",
+    "en": "In 2024, despite an operating profit of KRW 6.51 billion, net income attributable to owners was a loss of KRW 1.80 billion, and in the fourth quarter of 2025, net income of KRW 3.40 billion significantly exceeded operating profit of KRW 1.38 billion. This gap suggests non-operating items have a substantial effect on both quarterly and annual results, making it harder to gauge performance based on core profitability alone."
    }
   },
   {
    "title": {
-    "ko": "부채비율 상승과 자기자본 감소 추세",
-    "en": "Rising Debt Ratio and Declining Equity Base"
+    "ko": "상승하는 부채비율",
+    "en": "Rising Debt Ratio"
    },
    "body": {
-    "ko": "부채비율이 2022년 20.7%에서 2025년 56.7%로 지속 상승하고 있으며, 절대 부채 규모는 같은 기간 약 182억 원에서 약 475억 원으로 2.6배 증가하였다. 지배주주 귀속 자기자본은 2023년 953억 원에서 2025년 845억 원으로 감소하여 재무 완충 여력이 줄어들고 있다. 이익 창출력이 약화된 상태에서 차입 의존도가 높아진다면 이자 부담과 재무 유연성 제약이 향후 경영에 부담이 될 수 있다.",
-    "en": "The debt ratio has risen continuously from 20.7% in 2022 to 56.7% in 2025, with total liabilities increasing approximately 2.6-fold from ~KRW 18.2bn to ~KRW 47.5bn over the same period. Equity attributable to owners declined from KRW 95.3bn in 2023 to KRW 84.5bn in 2025, reducing the financial buffer available to the company. If borrowings continue to increase while earnings power remains subdued, interest burdens and constraints on financial flexibility could become a material headwind."
+    "ko": "부채비율은 2022년 20.7%에서 2023년 30.1%, 2024년 44.8%, 2025년 56.7%로 매년 상승했다. 같은 기간 자본총계(지배주주 기준)는 2022년 879.6억원에서 2025년 844.9억원으로 오히려 소폭 줄었다. 매출 성장과 함께 부채 의존도가 높아지는 흐름이 이어지고 있어, 향후 재무구조 변화를 지켜볼 필요가 있다.",
+    "en": "The debt ratio rose every year, from 20.7% in 2022 to 30.1% in 2023, 44.8% in 2024, and 56.7% in 2025. Over the same period, owners' equity actually declined slightly, from KRW 87.96 billion in 2022 to KRW 84.49 billion in 2025. A pattern of rising reliance on debt alongside revenue growth continues, warranting attention to future changes in the balance sheet."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "지정학·신흥국 리스크",
-    "en": "Geopolitical and Emerging-Market Risk"
+    "ko": "환율 리스크",
+    "en": "Foreign Exchange Risk"
    },
    "body": {
-    "ko": "매출의 주요 원천인 러시아·중동·동유럽 정부 입찰은 지정학적 긴장, 국제 제재, 환율 변동에 직접 노출되어 있다. 특히 러시아 시장은 서방 제재 환경 변화에 따라 대금 회수 및 납품 리스크가 상존하며, 외교 상황 급변 시 수주 취소나 계약 이행 차질이 발생할 수 있다. 국가 집중도를 낮추는 시장 다변화 전략이 중요하며, CE인증을 통한 유럽 시장 진출은 이에 대한 대응 방향 중 하나다.",
-    "en": "Revenue from government tenders in Russia, the Middle East, and Eastern Europe is directly exposed to geopolitical tensions, international sanctions, and currency fluctuations. The Russian market in particular carries ongoing payment collection and delivery risks contingent on evolving Western sanctions, with the potential for order cancellations or contract disruptions in the event of sudden diplomatic changes. Geographic diversification, including EU market entry via CE certification, is an important risk mitigation strategy."
+    "ko": "해외 매출 비중이 약 75%에 달해 원/달러, 원/유로, 원/리라 등 다수 통화의 환율 변동에 실적이 노출된다. 튀르키예, 중국 등 신흥국 매출이 늘어날수록 환리스크의 폭도 함께 커질 수 있다.",
+    "en": "With overseas revenue accounting for roughly 75% of total sales, results are exposed to exchange-rate fluctuations across multiple currencies including the won-dollar, won-euro, and won-lira rates. As sales in emerging markets such as Turkey and China grow, the scope of currency risk could expand as well."
    }
   },
   {
    "cat": {
-    "ko": "글로벌 대형 의료기기 기업과의 경쟁 심화",
-    "en": "Intensifying Competition from Global Medical Device Majors"
+    "ko": "해외 인증·규제 리스크",
+    "en": "Overseas Certification and Regulatory Risk"
    },
    "body": {
-    "ko": "GE 헬스케어, 지멘스 헬시니어스, 후지필름 등 대형 글로벌 기업들은 브랜드·R&D·유통망에서 구조적 우위를 갖고 있어 신흥국 시장에서도 경쟁이 심화되는 추세다. 이들 기업의 가격 인하 또는 신제품 출시가 제노레이의 가격 경쟁력 우위를 약화시킬 수 있다. AI·디지털 헬스케어 기술을 접목한 차세대 영상장비로의 전환이 가속되면 기술 격차 확대로 이어질 위험도 있다.",
-    "en": "Global majors such as GE HealthCare, Siemens Healthineers, and Fujifilm have structural advantages in brand recognition, R&D resources, and global distribution networks, and competition is intensifying even in emerging markets. Aggressive pricing moves or new product launches by these players could erode Genoray's cost competitiveness. Accelerating development of next-generation AI and digital health-integrated imaging equipment could widen the technology gap over time."
+    "ko": "신제품 GT300 CBCT의 중국·유럽·미국 인증 확대 계획이 제시됐으나, 각국 의료기기 인증 절차는 시간이 소요되고 결과가 불확실할 수 있다. 인증 지연이나 규제 강화는 신제품을 통한 해외 매출 확대 시점을 늦출 수 있는 요인이다.",
+    "en": "While the company has outlined plans to expand certifications for the GT300 CBCT in China, Europe, and the United States, medical device certification procedures in each country can be time-consuming and uncertain in outcome. Delays in certification or tightened regulation are factors that could push back the timing of overseas revenue expansion from new products."
    }
   },
   {
    "cat": {
-    "ko": "환율·원자재 가격 변동 리스크",
-    "en": "Foreign Exchange and Input Cost Risk"
+    "ko": "파트너·ODM 의존 리스크",
+    "en": "Partner and ODM Dependency Risk"
    },
    "body": {
-    "ko": "매출의 상당 부분이 글로벌 수출에서 발생함에 따라 원화 환율 변동이 수익성에 직접적인 영향을 준다. 핵심 부품의 원재료 가격 상승은 원가율 상승으로 이어져 이미 낮아진 영업이익률을 추가로 압박할 수 있다. 헤지 정책과 공급망 다각화 수준에 따라 이 리스크의 크기가 달라지므로 DART 공시를 통한 세부 확인이 필요하다.",
-    "en": "Given that a significant portion of revenue is generated from global exports, KRW exchange rate movements have a direct impact on profitability. Rising raw material or key component costs would further compress the already-thin operating margin. The magnitude of this risk depends on the company's hedging policy and supply chain diversification, details that warrant ongoing verification through DART disclosures."
+    "ko": "일본 GC코퍼레이션, 중국 HMD사, 일본 시마즈 제작소 등 특정 파트너사와의 ODM·유통 계약에 의존하는 매출 구조는 해당 파트너사의 전략 변화나 계약 조건 변경에 따라 영향을 받을 수 있다. 파트너십 관계의 지속성이 매출 안정성에 중요한 변수로 작용한다.",
+    "en": "A revenue structure that relies on ODM and distribution agreements with specific partners such as Japan's GC Corporation, China's HMD, and Japan's Shimadzu Corporation can be affected by changes in those partners' strategies or contract terms. The durability of these partnership relationships is an important variable for revenue stability."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 말 (2026년 2분기 실적 발표)",
-    "en": "Late August 2026 (Q2 2026 Earnings Release)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 초 체결된 약 170억 원 수주 물량의 2분기 매출 인식 여부와 덴탈 CT 수요가 1분기 저점에서 반등하였는지를 확인해야 한다. 두 지표 모두 실적 회복 궤도 진입 여부를 판단하는 핵심 증거가 된다.",
-    "en": "Key indicators are whether the ~KRW 17bn of early-2026 order contracts are being recognized in Q2 revenue and whether dental CT demand has rebounded from the Q1 2026 trough — both are critical evidence points for assessing whether earnings have entered a sustained recovery trajectory."
+    "ko": "2026년 3분기 실적 공시 시점으로, 덴탈 CT 수요 회복 여부와 영업이익 흑자 지속 여부를 확인할 필요가 있다.",
+    "en": "Timing of the third-quarter 2026 earnings disclosure, when it will be worth checking whether dental CT demand has recovered and whether operating profit remains positive."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (CE인증 획득 공시 시점)",
-    "en": "H2 2026 (CE Certification Announcement)"
+    "ko": "2026년 4분기",
+    "en": "Fourth quarter of 2026"
    },
    "what": {
-    "ko": "CE인증 획득 공시와 함께 신규로 진입 가능한 글로벌 입찰 국가의 구체적인 범위가 공개될 경우, 중장기 수주 파이프라인 전망을 재산정할 수 있다. 인증 지연은 수주 확대 시나리오의 하향 조정 요인이 된다.",
-    "en": "The timing of CE certification and the specific list of newly accessible tender markets, if disclosed, will allow for a reassessment of the medium-to-long-term order pipeline outlook. Any delay in certification represents a potential downward revision to the growth scenario."
+    "ko": "일본 시마즈와의 Mobile C-Arm ODM 계약에 따른 초기 물량 매출 반영 시점과 규모를 확인할 필요가 있다.",
+    "en": "Timing and scale of initial revenue recognition from the Mobile C-Arm ODM agreement with Japan's Shimadzu should be checked."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (BELLIGER ACE 수출 계약 및 판매 성과)",
-    "en": "H2 2026 (BELLIGER ACE Export Contracts and Sales Traction)"
+    "ko": "2026년 하반기~2027년",
+    "en": "Second half of 2026 through 2027"
    },
    "what": {
-    "ko": "BELLIGER ACE의 수출 계약 체결 규모와 지역 다변화 수준이 IR 자료나 공시를 통해 확인되면 신제품 사이클의 실체를 가늠할 수 있다. 초기 수주 규모와 단가 수준이 C-arm 사업 성장성의 핵심 선행 지표다.",
-    "en": "Early export contract disclosures or IR updates on BELLIGER ACE sales volume and geographic spread will reveal the real scale of the new product cycle. The size and unit pricing of initial orders are key leading indicators for the C-arm segment's growth prospects."
+    "ko": "GT300 CBCT의 중국·유럽·미국 인증 진행 상황과, 이를 통한 해외 매출 확대 여부를 점검할 필요가 있다.",
+    "en": "Progress on GT300 CBCT certifications in China, Europe, and the United States, and whether these translate into expanded overseas sales, should be monitored."
    }
   },
   {
    "when": {
-    "ko": "2027년 초 (2026년 연간 실적 및 수주잔고 공시)",
-    "en": "Early 2027 (FY2026 Annual Earnings and Order Backlog Disclosure)"
+    "ko": "2027년 2월경",
+    "en": "Around February 2027"
    },
    "what": {
-    "ko": "2026년 연간 매출·영업이익이 수주 잔고 인식 속도에 부합하는지 확인이 필요하다. 연간 사업보고서에 포함된 부문별 매출 구성과 수주잔고 규모 변화가 이익 정상화 가시성을 높이는 데 핵심적 역할을 한다.",
-    "en": "Full-year 2026 revenue and operating profit should be tracked against the expected pace of order backlog recognition. Segment-level revenue composition and changes in the disclosed order backlog are critical for improving earnings visibility and confirming whether the recovery has been sustained."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기~2027년 (덴탈 CAD/CAM 소프트웨어 사업화 일정)",
-    "en": "H2 2026–2027 (Dental CAD/CAM Software Commercialization Timeline)"
-   },
-   "what": {
-    "ko": "치과용 CAD/CAM 연동 소프트웨어의 개발 완료·출시 일정과 초기 계약 체결 여부가 덴탈 부문의 비즈니스 모델 전환 속도를 가늠하는 지표다. 반복 수익 기반 확보 여부는 중장기 수익성 안정화의 핵심 변수다.",
-    "en": "The development completion and launch timeline for dental CAD/CAM-linked software, along with any initial contract announcements, will indicate the pace of business model diversification in the Dental segment toward recurring software revenues — a key variable for long-term earnings stability."
+    "ko": "2026년 연간 사업보고서 공시 시점으로, 부채비율 추이와 연간 영업이익·순이익의 방향성 전환 여부를 확인할 필요가 있다.",
+    "en": "Timing of the full-year 2026 annual report disclosure, when the trend in the debt ratio and whether annual operating and net income have turned direction should be checked."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "제노레이는 국내 메디칼·덴탈 X-ray 시장 점유율 1위 지위와 약 80개국 수출 네트워크를 갖춘 의료기기 전문기업으로, 2025년 4분기 분기 최대 매출과 영업이익 흑자 전환을 통해 투자 사이클 이후 첫 회복 신호를 발신하였다. 그러나 2026년 1분기 영업이익 재적자와 덴탈 CT 수요 부진은 이익 정상화가 아직 확인 단계에 있음을 보여준다. CE인증 취득, BELLIGER ACE 신제품 출시, 시마즈 ODM 계약, 2026년 초 약 170억 원 신규 수주 등 복수의 성장 레버가 가동 중이어서 중장기 사업 모멘텀은 긍정적으로 평가할 수 있다. 반면 3년에 걸친 영업이익률 급락(18.1% → -0.2%)과 부채비율 상승(20.7% → 56.7%)은 구조적 비용 부담이 완전히 해소되지 않았음을 시사한다. 순자산 대비 할인 구간에서 거래 중이라는 점과 비과세 배당 방침은 방어적 요소이나, 이익 회복의 지속성과 속도가 재평가의 실질 촉매가 될 것이다. 투자자는 2026년 2분기 실적, CE인증 획득 타이밍, 신규 수주 동향을 면밀히 점검하며 이익 정상화 경로를 지속적으로 검증해 나가는 것이 바람직하다.",
-   "en": "Genoray is a specialized medical imaging company with domestic market share leadership and an export network spanning approximately 80 countries. Its Q4 2025 record quarterly revenue and return to operating profit provided the first recovery signal following an extended investment cycle. However, Q1 2026's renewed operating loss and softening dental CT demand indicate that earnings normalization is still in a verification phase rather than confirmed recovery. Multiple growth levers — CE certification, the new BELLIGER ACE C-arm, the Shimadzu ODM agreement, and ~KRW 17bn in contracts signed in early 2026 — support a constructive medium-to-long-term business momentum view. At the same time, a three-year collapse in operating margin from 18.1% to -0.2% and a rising debt ratio from 20.7% to 56.7% indicate that structural cost pressures remain unresolved. Trading at a discount to net asset value and the non-taxable dividend policy offer defensive attributes, but the pace and sustainability of earnings recovery will be the actual catalyst for any meaningful re-rating. Investors should closely monitor Q2 2026 results, CE certification timing, and new order announcements as the primary indicators for validating the recovery trajectory."
+   "ko": "제노레이는 국내 유일의 메디칼·덴탈 겸업 구조와 높은 수출 비중을 바탕으로 튀르키예, 일본, 중국 등에서 신규 계약·파트너십을 이어가고 있다. 다만 최근 네 개 분기 실적은 영업이익 적자·흑자를 반복하고 순이익도 큰 폭으로 등락하는 등 변동성이 뚜렷하며, 덴탈 CT 수요 둔화가 주된 요인으로 지목된다. 2024~2025년에는 영업이익과 순이익 방향이 어긋나는 구간이 나타나 영업외 요인의 영향력도 확인된다. 부채비율은 4년 연속 상승했고 자본총계는 소폭 감소하는 흐름을 보이고 있어 재무구조 변화를 함께 살필 필요가 있다. GT300 CBCT, 베테라 등 신제품과 해외 인증 확대 계획이 실적 안정화에 기여할지는 향후 분기 공시를 통해 순차적으로 확인해야 할 사안이다. 본 리포트는 제공된 확정 재무자료와 공개된 뉴스·공시에 기반한 정보 제공을 목적으로 작성되었다.",
+   "en": "Genoray continues to pursue new contracts and partnerships in Turkey, Japan, and China, leveraging its unique combination of medical and dental imaging businesses and a high export ratio. However, results over the four most recent quarters have shown clear volatility, with operating profit alternating between losses and gains and net income fluctuating sharply, with softening dental CT demand cited as the main factor. Between 2024 and 2025, periods emerged where operating and net income moved in opposite directions, confirming the influence of non-operating factors. The debt ratio has risen for four consecutive years while owners' equity has edged lower, warranting continued attention to balance-sheet changes. Whether new products such as the GT300 CBCT and VETERA, along with plans to expand overseas certifications, contribute to earnings stabilization is something that will need to be confirmed sequentially through upcoming quarterly disclosures. This report is intended for informational purposes based on the provided confirmed financial data and publicly available news and disclosures."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A122310",
-  "https://thevc.kr/genoray",
-  "https://m.irgo.co.kr/ir-room/3601",
-  "https://www.investing.com/equities/genoray",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A122310&cID=AA&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
-  "https://deepsearch.com/analytics/company-analysis/KRX:122310?c-name=%EC%A0%9C%EB%85%B8%EB%A0%88%EC%9D%B4&c-symbol=KRX:122310&cd-cat=topic&cd-df=2024-02-12&cd-dt=2024-02-19",
-  "https://www.fnnews.com/news/202602121059467877",
   "https://markets.hankyung.com/stock/122310/financial-summary",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A122310",
+  "https://m.irgo.co.kr/IR-COMP/122310/%EC%A0%9C%EB%85%B8%EB%A0%88%EC%9D%B4-IR-PAGE",
+  "https://thevc.kr/genoray",
   "http://www.thinkpool.com/itemanal/i/index.jsp?code=122310",
-  "https://moneyrecipe.blog/company-exports/zenoray/",
-  "https://www.kmdia.or.kr/KO/document/center/center01.asp",
-  "http://ibi.cmc.or.kr/lib/down/lib/96",
-  "https://www.mfds.go.kr/brd/m_386/view.do?seq=33103",
-  "https://khiss.go.kr/fileDownload?titleId=10141&fileId=1&fileDownType=C&paramMenuId=MENU00305",
-  "https://www.cku.ac.kr/bbs/cku/414/141701/artclView.do",
-  "https://www.mordorintelligence.kr/industry-reports/south-korea-digital-x-ray-market",
-  "http://www.bosa.co.kr/news/articleView.html?idxno=2056643"
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A122310&cID=AA&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
+  "https://awakeplus.co.kr/data/view/20240321000651",
+  "https://kind.krx.co.kr/disclosureSimpleSearch.do?method=disclosureSimpleSearchMain&repIsuSrtCd=A122310&isurCd=12231&searchCorpName=%EC%A0%9C%EB%85%B8%EB%A0%88%EC%9D%B4",
+  "https://www.investing.com/equities/genoray",
+  "https://www.komachine.com/ko/companies/genoray",
+  "http://www.dentistnews.kr/news/articleView.html?idxno=5361",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=65989",
+  "https://www.hankyung.com/article/202407183091O",
+  "https://file.alphasquare.co.kr/media/pdfs/company-report/240821_%EB%B0%94%ED%85%8D_final.pdf",
+  "https://www.dtissue.com/news/articleView.html?idxno=7448",
+  "https://www.komachine.com/ko/companies/genoray/products/8154-panoramic-and-ceph-papaya",
+  "https://www.khanews.com/news/articleView.html?idxno=206729",
+  "https://www.medicaltimes.com/Main/News/NewsView.html?ID=1155525"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "122310",
  "name": "제노레이",
  "name_en": "GENORAY Co., LTD.",
@@ -232,9 +223,9 @@
   "기계·장비"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:46",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 17:56",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -337,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 3260,
-   "mcap": 0.0474,
+   "price": 3360,
+   "mcap": 0.0489,
    "shares": 14553844,
    "total_shares": 14553844,
    "wavg_shares": 12448897,
-   "per": 15.598,
+   "per": 16.077,
    "eps": 209,
-   "pbr": 0.4961,
+   "pbr": 0.5113,
    "bps": 6571,
    "roe_ttm": 3.2,
    "ttm_window": "2025Q3~2026Q2",
@@ -355,7 +346,7 @@
    "bps_krx": 6636.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 150.0,
-   "div": 4.6
+   "div": 4.46
   }
  }
 }

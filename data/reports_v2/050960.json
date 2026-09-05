@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "SSL 가시성 1위, 클라우드 전환·해외 성과 관건",
-  "en": "SSL Visibility Leader at NAV Discount — Cloud Transition and Overseas Execution Are Key"
+  "ko": "망분리 완화 수혜주, 실적 변동성 공존",
+  "en": "N2SF Tailwind Meets Earnings Volatility"
  },
  "lead": {
-  "ko": "국내 SSL 복호화 솔루션 1위이자 통신사 공유단말관리 유일 사업자인 수산아이앤티는 2025년 매출 15% 성장을 달성했으나 영업이익률은 2년 연속 하락세이며, 2026년에는 클라우드 SaaS 전환과 유럽·동남아 해외 진출의 실질 성과가 밸류에이션 방향성을 결정할 핵심 변수로 부상했다.",
-  "en": "Korea's sole ISP shared-terminal management provider and domestic #1 in SSL decryption grew FY2025 revenue 15%, yet operating margins declined for a second consecutive year; the pace of SaaS migration and first overseas revenue contribution will be the defining catalysts for 2026 valuation."
+  "ko": "수산아이앤티는 SSL 트래픽 분석·가시성 기술을 기반으로 국가 망보안체계(N2SF) 전환의 정책적 수혜가 기대되는 네트워크 보안 전문기업이지만, 분기별 영업이익과 순이익 간 괴리가 커지는 등 실적의 질을 함께 들여다볼 필요가 있다.",
+  "en": "Soosan INT is a network security specialist positioned to benefit from the policy shift toward Korea's National Network Security Framework (N2SF), but a widening gap between quarterly operating profit and net income warrants a closer look at earnings quality."
  },
  "keypoints": [
   {
-   "ko": "SSL 복호화(ePrism SSL VA) 국내 점유율 1위(2018년~), 공유단말접속관리 독점 공급 구조 — 경쟁사가 존재하지 않는 두 축이 안정적 매출 기반을 형성",
-   "en": "Domestic #1 in SSL decryption (ePrism SSL VA, 2018–present) and sole provider of ISP shared-terminal management (zero domestic competitors) form a dual moat underpinning stable revenue."
+   "ko": "2025년 연간 매출은 307억원으로 전년 대비 15% 이상 늘었으나, 영업이익률은 16.6%로 2023년 27.1%보다 낮아지며 이익률 하락세가 이어졌다.",
+   "en": "2025 annual revenue reached KRW 30.7 billion, up more than 15% year-on-year, but operating margin fell to 16.6% from 27.1% in 2023, extending a margin decline."
   },
   {
-   "ko": "2025년 연결 매출 307억원(+15.2% YoY)·순이익 52억원(+17.9% YoY)이나, 영업이익률은 16.6%로 2023년 고점(27.1%) 대비 10.5%p 하락 — 성장·마진 간 괴리 확대",
-   "en": "FY2025 consolidated revenue KRW 30.7 bn (+15.2% YoY) and net profit KRW 5.2 bn (+17.9% YoY), yet operating margin contracted to 16.6% from the 2023 peak of 27.1%, widening the growth-versus-profitability gap."
+   "ko": "2026년 2분기 지배주주순이익은 38.7억원으로 전분기(12.3억원) 대비 크게 늘었지만, 같은 기간 영업이익은 6.5억원에 그쳐 영업외 요인의 기여가 컸던 것으로 보인다.",
+   "en": "Owners' net income in 2026Q2 jumped to KRW 3.87 billion from KRW 1.23 billion in the prior quarter, while operating profit remained modest at KRW 0.65 billion, suggesting a large non-operating contribution."
   },
   {
-   "ko": "과기부 2025년 우수 정보보호기술 지정, 독일 NEOX NETWORKS ODM 계약 테스트 완료 단계, 인도네시아·싱가포르 PoC 진행 — 해외·공공 모멘텀 초기 가시화",
-   "en": "2025 'Excellent Information Security Technology' designation from the Ministry of Science, near-completed ODM testing with Germany's NEOX NETWORKS, and active PoC campaigns in Indonesia and Singapore mark early-stage tangible overseas momentum."
+   "ko": "2026년 5월 물리적 망분리 규정이 삭제되고 국가 망보안체계(N2SF)가 공식 시행되며, SSL 가시성·제로트러스트 기반 보안 수요 확대가 정책적으로 뒷받침되고 있다.",
+   "en": "In May 2026 the physical network-separation rule was removed and the National Network Security Framework (N2SF) was formally implemented, providing policy support for expanded demand for SSL-visibility and zero-trust security."
   },
   {
-   "ko": "Q4 매출 집중 구조(2025Q4 = 연간 매출의 37%, 영업이익의 45%), 2026Q1 영업이익률 약 7% — 하반기 공공 발주 여부가 연간 실적을 좌우하는 계절성 리스크",
-   "en": "Pronounced Q4 concentration (FY2025 Q4 = 37% of annual revenue, 45% of operating profit), with 2026Q1 operating margin at ~7%, underscores meaningful earnings risk tied to H2 public-sector procurement timing."
+   "ko": "2024년 자회사 수산에너솔 지분을 전량 매각해 에너지 사업에서 철수하고 네트워크 보안 본업에 역량을 집중하는 사업 재편을 진행했다.",
+   "en": "In 2024 the company divested its entire stake in subsidiary Soosan Energy Solutions, exiting the energy business to concentrate resources on its core network security operations."
   },
   {
-   "ko": "부채비율 8.1%(2025), 자기자본 912억원의 무차입 재무구조와 DPS 310원 배당 정책이 하방 안정성을 제공",
-   "en": "Near-debt-free balance sheet (debt ratio 8.1%, equity KRW 91.2 bn) and annual DPS of KRW 310 provide structural downside support."
+   "ko": "부채비율은 2025년 8.1%로 매우 낮고 영업활동현금흐름이 4개년 연속 양(+)을 유지하는 등 재무구조는 안정적인 편이다.",
+   "en": "The debt ratio stood at a very low 8.1% in 2025, and operating cash flow has stayed positive for four consecutive years, pointing to a stable financial structure."
   }
  ],
  "business": {
-  "ko": "수산아이앤티는 인터넷 트래픽 필터링 기술을 핵심으로 두 개의 사업 축을 운영한다. 첫째, ISP 협력사업 부문에서는 KT·SK브로드밴드·LG유플러스 통신 3사와 협력해 공유단말접속관리서비스 및 모바일 유해정보 차단 서비스를 제공한다. 공유단말접속관리서비스는 국내 유일 독점 공급 구조(경쟁사 없음)이며, 기업 고객 비중이 높아 해지율이 낮고 경기 변동에 덜 민감한 안정적 경상 매출을 창출한다. 둘째, 보안솔루션 부문에서는 SSL/TLS 트래픽 복호화 솔루션(ePrism SSL VA)을 주력으로, 보안 웹게이트웨이(eWalker SWG), 내부정보유출방지(eWalker DLP), 웹방화벽(WAF), SSL VPN 등 네트워크 보안 미들박스 제품군을 공공기관·금융기관·기업에 공급한다. ePrism SSL VA는 2018년 이후 국내 SSL 복호화 솔루션 점유율 1위를 유지하고 있으며 누적 고객사 1,600여 곳에 달하고, 2024년에만 300여 건을 수주했다. 국가정보자원관리원 전 거점(대전·광주·공주·대구)에 납품한 이력이 대표 공공 레퍼런스다. 2026년에는 SaaS 보안 게이트웨이(eWalker SSG)와 생성형 AI 보안 솔루션(eSafe AI) 등 클라우드 네이티브 신제품 출시와 함께 국내 주요 CSP 및 아마존 클라우드에 제품 등록을 완료해 구독형 매출 기반을 구축 중이며, 에너지 자회사 수산에너솔(지분 44.43%)도 보유하고 있다.",
-  "en": "Soosan I&T operates two business pillars anchored in internet traffic filtering technology. The ISP Cooperation segment provides shared-terminal access management and mobile harmful-content blocking services in partnership with Korea's three major ISPs — KT, SK Broadband, and LG Uplus. The company is the sole domestic provider of shared-terminal management, a structural monopoly backed by continuous R&D and patent ownership with zero domestic competitors; the high share of corporate subscribers results in low churn and resilience to economic cycles. The Security Solution segment delivers a portfolio of network security middlebox products: the SSL/TLS decryption solution ePrism SSL VA (flagship), secure web gateway eWalker SWG, data loss prevention eWalker DLP, a web application firewall, and SSL VPN — supplied to public agencies, financial institutions, and enterprises. ePrism SSL VA has maintained domestic market leadership in SSL decryption since 2018, with over 1,600 cumulative enterprise clients and approximately 300 new contracts in 2024 alone; full-scope deployment across all four National Information Resource Service centers stands as the flagship public-sector reference. In 2026, the company is transitioning to cloud-native monetization, having completed the SaaS security gateway eWalker SSG and generative-AI solution eSafe AI, and having registered products on major domestic CSPs and Amazon Web Services. A 44.43% stake in energy subsidiary Soosan Enersol rounds out the corporate structure."
+  "ko": "수산아이앤티는 1998년 설립돼 2016년 코스닥에 상장한 네트워크 보안 전문기업으로, 핵심 기술은 트래픽 분석과 SSL 암호화 통신을 들여다보는 SSL 가시성 기술이다. 회사는 SSL 복호화 솔루션과 유해사이트 차단 솔루션 분야에서 시장점유율 1위를 표방하고 있으며, 이를 기반으로 웹 보안, 내부정보유출방지(DLP), SSL VPN, 공유단말접속관리 등 미들박스 제품군을 운영한다. 사업보고서 기반 매출 구성을 보면 보안솔루션이 매출의 상당 비중(약 71%)을 차지하고, 통신사업자와 연계한 공유단말접속관리서비스가 그다음(약 27%)을 차지하는 구조로, 나머지는 기타 수입이다. 주요 고객군은 공공기관·금융기관·기업이며, 최근에는 KT·LGU+ 등 통신사와의 부가서비스 제휴, 시도교육청 스쿨넷 사업과 같은 공공 인프라 프로젝트에도 참여하고 있다. 2024년에는 에너지 저장 및 응용 기술 분야의 자회사 수산에너솔 지분을 전량 매각하며 비핵심 사업을 정리하고 네트워크 보안 본업에 집중하는 방향으로 사업 포트폴리오를 재편했다. 2026년 4월에는 일본에서 주요 파트너사를 초청한 '파트너스데이 2026'을 열어 SaaS 보안통제 솔루션 'eWalker SSG'와 생성형 AI 보안 솔루션 'eSafe AI', 그리고 OCR 기능이 추가된 'eWalker DLP' 등 신제품·신기능을 공개했다. 경쟁구도는 국내 네트워크 보안·망분리 시장에서 다수의 전문기업이 각자의 강점 영역(망연계, 제로트러스트, DLP 등)에서 경쟁하는 다변화된 구조이며, 최근에는 제로트러스트·SASE 기반 신생 솔루션 기업들의 진입도 늘고 있다. 회사는 국내 중소기업기본법상 중소기업으로 분류되며, 별도의 부설연구소를 통해 지속적인 연구개발을 수행하고 있다.",
+  "en": "Founded in 1998 and listed on KOSDAQ in 2016, Soosan INT is a network security specialist whose core technology is traffic analysis combined with SSL visibility, the ability to inspect encrypted SSL traffic. The company positions itself as the No.1 player in SSL-decryption solutions and harmful-site blocking solutions, and builds on this base with a suite of network security middlebox products including web security, data-loss prevention (DLP), SSL VPN, and shared-device access management. Based on disclosed revenue composition, security solutions account for the large majority of sales (roughly 71%), followed by the shared-device access management service tied to telecom carriers (roughly 27%), with the remainder from other income. Core customers span public institutions, financial firms, and enterprises, and the company also participates in telecom carrier value-added service partnerships with KT and LG U+ as well as public infrastructure projects such as provincial education offices' SchoolNet program. In 2024 the company fully divested its stake in subsidiary Soosan Energy Solutions, which specialized in energy storage and application technology, exiting that non-core business to refocus its portfolio on core network security operations. In April 2026 the company held its 'Partners Day 2026' event in Japan for key partners, unveiling the SaaS security control solution 'eWalker SSG,' the generative-AI security solution 'eSafe AI,' and an OCR feature added to 'eWalker DLP.' The competitive landscape in Korea's network security and network-separation market is fragmented, with numerous specialist vendors competing across areas such as network linkage, zero trust, and DLP, and newer zero-trust/SASE-focused entrants have been increasing. The company is classified as a small-and-medium enterprise under Korean law and maintains an in-house R&D institute for continued product development."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 307억원으로 전년(267억원) 대비 15.2% 증가하며 4개년 최고 매출을 경신했다. 그러나 영업이익은 51억원으로 전년(57억원) 대비 10.1% 감소해 영업이익률이 16.6%까지 하락했는데, 이는 2023년 고점(27.1%) 대비 10.5%p 축소된 것이다. 순이익은 52억원으로 전년(44억원) 대비 17.9% 증가해, 비영업 수익(풍부한 자산에서 발생하는 이자·투자 수익)이 영업이익 감소를 상쇄했다. 분기별로는 2025Q1에 매출 71억원·영업이익 17억원(영업이익률 약 24%)으로 강하게 출발했으나, 2025Q2(매출 61억원·영업이익 6억원)와 2025Q3(매출 61억원·영업이익 5억원)에서 급격히 약화됐다. 공공기관 예산 집행이 집중되는 2025Q4에서 매출 115억원·영업이익 23억원으로 반등하며 연간 영업이익의 약 45%를 단 한 분기에 창출했다. 2026Q1 매출은 66억원으로 전년 동기(71억원) 대비 6.3% 감소했고 영업이익은 5억원(영업이익률 약 7%)에 머물러, 이익 개선 모멘텀은 아직 가시화되지 않고 있다. 2025년 영업현금흐름(CFO)은 76억원으로 전년(95억원) 대비 줄었으나 순이익을 상회하며 안정적 현금 창출 능력을 유지했고, 부채비율은 2023년 15.5%에서 2025년 8.1%로 추가 개선됐다.",
-  "en": "FY2025 consolidated revenue reached KRW 30.7 bn (+15.2% YoY from KRW 26.7 bn), the highest annual revenue in four years. Operating profit, however, declined 10.1% YoY to KRW 5.1 bn, compressing the operating margin to 16.6% — a 10.5 percentage-point contraction from the 2023 peak of 27.1%. Net profit rose 17.9% YoY to KRW 5.2 bn, as non-operating income (interest and investment income on the company's substantial cash and equity position) offset the operating shortfall. Quarterly, 2025 opened strongly with Q1 revenue of KRW 7.1 bn and operating profit of KRW 1.7 bn (margin ~24%), before weakening sharply in Q2 (revenue KRW 6.1 bn, OP KRW 0.6 bn) and Q3 (revenue KRW 6.1 bn, OP KRW 0.5 bn). A seasonal surge in Q4, driven by public-sector budget execution, delivered KRW 11.5 bn in revenue and KRW 2.3 bn in operating profit — roughly 45% of the full-year operating profit in a single quarter. In 2026Q1, revenue of KRW 6.6 bn declined 6.3% YoY versus 2025Q1, with operating profit of KRW 0.5 bn (margin ~7%), providing no early signal of a margin inflection. FY2025 operating cash flow of KRW 7.6 bn — though lower than FY2024's KRW 9.5 bn — continued to exceed reported net income, and the debt ratio further improved from 15.5% in 2023 to 8.1% in 2025, underscoring a near-debt-free balance sheet."
+  "ko": "연간 실적을 보면 매출은 2022년 256억원에서 2023년 239억원으로 줄었다가 2024년 267억원, 2025년 307억원으로 2년 연속 증가하며 회복세를 보였다. 반면 영업이익률은 2022년 13.6%에서 2023년 27.1%로 크게 개선된 뒤, 2024년 21.3%, 2025년 16.6%로 두 해 연속 낮아지는 흐름을 보이고 있어, 매출 성장과 별개로 원가·비용 구조에 변화가 있었던 것으로 해석된다. 지배주주순이익은 2022년 25억원에서 2023년 56억원으로 급증했는데, 이는 당시 연결 대상이던 수산에너솔의 비지배지분(4.8억원)이 반영되기 이전 지배주주 몫이 상대적으로 컸던 영향이 있다. 2024년 수산에너솔 매각 이후에는 비지배지분이 소멸해 지배주주순이익과 전체 순이익이 사실상 같아졌으며, 2024년 44억원에서 2025년 52억원으로 이익이 다시 늘었다. 분기 흐름을 보면 2025년 4분기 매출이 115억원으로 다른 분기(60~77억원대)보다 뚜렷하게 높았고 영업이익도 23억원으로 급증했는데, 이는 공공 부문 예산 집행이 연말에 몰리는 계절성과 연관이 있는 것으로 보인다. 2026년 들어서는 1분기 매출 66억원·영업이익 4.6억원, 2분기 매출 77억원·영업이익 6.5억원으로 매출은 완만히 늘었으나 영업이익 개선은 제한적이었다. 그런데 2026년 2분기 지배주주순이익은 38.7억원으로 직전 분기(12.3억원) 대비 세 배 이상 뛰었는데, 같은 기간 영업이익 증가폭(약 1.8억원)과 비교하면 영업외 요인이 순이익 증가를 크게 견인한 것으로 판단되며, 구체적 성격은 후속 공시를 통해 확인이 필요하다. 최근 4개 분기(2025년 3분기~2026년 2분기) 합산 지배주주순이익은 73.2억원으로, 이 중 2026년 2분기 한 분기가 절반 이상을 차지해 분기별 편차가 큰 편이다. 현금흐름 측면에서는 영업활동현금흐름이 2022년 42억원에서 2023~2024년 91~95억원대로 늘었다가 2025년 76억원으로 소폭 줄었으나, 4개 연도 모두 순이익을 상회하는 양(+)의 흐름을 유지했다.",
+  "en": "On an annual basis, revenue declined from KRW 25.6 billion in 2022 to KRW 23.9 billion in 2023, then rose for two consecutive years to KRW 26.7 billion in 2024 and KRW 30.7 billion in 2025, marking a recovery in top-line growth. Operating margin, however, moved in the opposite direction after peaking: it improved sharply from 13.6% in 2022 to 27.1% in 2023, then declined for two straight years to 21.3% in 2024 and 16.6% in 2025, suggesting a shift in the cost structure that ran counter to revenue growth. Owners' net income surged from KRW 2.5 billion in 2022 to KRW 5.6 billion in 2023, a period when non-controlling interests from then-consolidated Soosan Energy Solutions (about KRW 0.48 billion) reduced the minority share, leaving a relatively larger portion attributable to owners. After the 2024 divestment of Soosan Energy Solutions, non-controlling interests effectively disappeared, making owners' net income and total net income nearly identical, and profit rose again from KRW 4.4 billion in 2024 to KRW 5.2 billion in 2025. Looking at quarterly patterns, 2025Q4 revenue of KRW 11.5 billion stood out clearly above other quarters (roughly KRW 6.0-7.7 billion), with operating profit also jumping to KRW 2.3 billion, a pattern that appears linked to the seasonality of year-end public-sector budget execution. In 2026, revenue grew modestly to KRW 6.6 billion in Q1 (operating profit KRW 0.46 billion) and KRW 7.7 billion in Q2 (operating profit KRW 0.65 billion), but the improvement in operating profit was limited. Notably, owners' net income in 2026Q2 jumped to KRW 3.87 billion, more than triple the prior quarter's KRW 1.23 billion, while the increase in operating profit over the same period was only about KRW 0.18 billion, indicating that non-operating factors drove most of the net income gain; the specific nature of this item requires confirmation through subsequent disclosures. Over the most recent four quarters (2025Q3 through 2026Q2), combined owners' net income totaled KRW 7.32 billion, with the single quarter of 2026Q2 accounting for more than half of that total, reflecting sizable quarter-to-quarter variability. On a cash flow basis, operating cash flow rose from KRW 4.2 billion in 2022 to the KRW 9.1-9.5 billion range in 2023-2024, then eased to KRW 7.6 billion in 2025, but remained positive and above net income in every one of the four years."
  },
  "industry": {
-  "ko": "인터넷 트래픽의 90% 이상이 SSL/TLS로 암호화된 현 환경에서 암호화 트래픽 내 위협을 탐지하는 SSL 가시성 솔루션의 전략적 가치는 구조적으로 확대되고 있다. 사이버 위협 고도화·원격근무 일상화·생성형 AI를 악용한 해킹 증가는 공공·금융·기업 전 섹터의 네트워크 보안 투자를 지속적으로 자극하고 있다. 한편 제로트러스트 아키텍처(ZTNA)·SASE 확산과 클라우드 전환 가속은 기존 온프레미스 장비 중심 보안 업체들에게 '구독형 서비스 전환'이라는 구조적 도전을 안기고 있으며, 서비스형 전환이 경쟁력을 좌우하는 분기점이 됐다. 국내 사이버보안 상장사 가운데 수산아이앤티는 2023년 매출·영업이익·순이익 3개 지표 동시 개선 그룹에 포함됐으나, 2025년 상반기에는 업계 전반에 영업이익률 압박이 감지됐다. SSL 복호화 분야에서 Keysight(구 Ixia)·Gigamon 등 글로벌 플레이어와의 경쟁이 있으나, 수산아이앤티는 1,600여 누적 고객사와 국가 핵심 기관 레퍼런스로 차별화된 진입장벽을 유지한다. 2027년부터 의무화 예정인 공급망 보안 컨설팅 수요와 국내 ISP들의 AI 인프라 투자 확대는 중기적 신규 수요 발생의 잠재 요인이다.",
-  "en": "With over 90% of internet traffic now encrypted via SSL/TLS, the strategic necessity of SSL visibility solutions for detecting concealed threats is structurally expanding. Escalating cyber threats, the normalization of remote work, and AI-weaponized attacks are continuously stimulating network security investment across public, financial, and enterprise sectors. The broader industry shift toward Zero Trust (ZTNA) and SASE, combined with cloud-first infrastructure, poses a structural imperative for traditional network security vendors to pivot from on-premise appliance sales to subscription-based managed services — a transition that is now a competitive differentiator. Among domestic cybersecurity listed companies, Soosan I&T achieved simultaneous growth across all three financial metrics in 2023, though industry-wide operating margin pressure became evident in H1 2025. In SSL decryption, global competitors such as Keysight (formerly Ixia) and Gigamon are present, but Soosan I&T's 1,600+ installed-base customers and flagship government data center references represent meaningful barriers to displacement. The impending 2027 mandate on supply-chain security consulting and expanding AI infrastructure investments by domestic ISPs represent incremental demand catalysts over the medium term."
+  "ko": "국내 공공부문 정보보안 정책은 2026년 5월 물리적 망분리 의무 조항이 삭제되고, 이를 대체하는 국가 망보안체계(N2SF)가 정식 시행되며 큰 전환점을 맞았다. N2SF는 업무정보를 기밀(C)·민감(S)·공개(O) 등급으로 분류해 등급별로 차등화된 보안통제를 적용하는 프레임워크로, 생성형 AI와 클라우드 활용을 안전하게 늘리려는 정책 목표를 담고 있다. 이러한 전환은 획일적 차단 위주였던 기존 망분리 장비 수요를 제로트러스트·아이덴티티 기반 접근통제·SSL 가시성 기술 중심으로 재편할 유인으로 작용하고 있으며, 한국인터넷진흥원(KISA)은 2026년 국가·공공기관과 보안기업이 참여하는 컨소시엄을 선정해 N2SF 도입·실증 사업을 추진하고 있다. 국정원도 국가·공공기관 사이버보안 평가에 N2SF 구축 가산점을 신규 반영하는 등 정책적 유인을 강화하고 있어, 관련 예산 집행이 이어질 경우 보안 소프트웨어 업계 전반에 긍정적 영향이 예상된다. 다만 시장은 다수의 전문기업이 경쟁하는 파편화된 구조로, 최근 CISO 대상 설문에서는 망연계 분야 선호도 상위 3개사가 시장의 약 60%를 차지하는 것으로 나타나 특정 영역에서는 이미 선도기업이 자리를 잡고 있다. 수산아이앤티는 SSL 복호화·가시성 기술이라는 오랜 강점을 보유하고 있으나, N2SF가 요구하는 제로트러스트·SASE·통합인증 등 신규 통제 영역에서의 경쟁력 확보가 향후 시장 지위를 좌우할 변수로 꼽힌다. 종합하면 정책 환경은 업종 전반에 우호적인 방향으로 바뀌고 있으나, 개별 기업의 수혜 정도는 신제품 대응력과 공공 발주 참여 성과에 따라 갈릴 가능성이 크다.",
+  "en": "Korea's public-sector information security policy reached a major turning point in May 2026, when the mandatory physical network-separation clause was removed and the replacement National Network Security Framework (N2SF) was formally implemented. N2SF classifies work information into Classified, Sensitive, and Open tiers and applies differentiated security controls by tier, reflecting a policy goal of safely expanding the use of generative AI and cloud services. This shift is redirecting demand away from uniform, block-everything network-separation appliances toward zero-trust, identity-based access control, and SSL-visibility technologies, and the Korea Internet & Security Agency (KISA) has selected consortia of public institutions and security vendors in 2026 to carry out N2SF adoption and pilot projects. The National Intelligence Service has also reinforced policy incentives by newly awarding bonus points for N2SF implementation in public-sector cybersecurity evaluations, which should support continued budget execution and benefit the broader security software industry if sustained. That said, the market remains fragmented, with numerous specialist vendors competing; a recent CISO survey found that the top three preferred vendors in the network-linkage segment together commanded roughly 60% of preference share, indicating that leaders have already emerged in some sub-segments. Soosan INT holds a long-standing strength in SSL decryption and visibility technology, but its ability to build competitiveness in the newer zero-trust, SASE, and unified-authentication control areas required by N2SF is likely to be a key variable determining its future market position. Overall, the policy backdrop is shifting in a favorable direction for the industry as a whole, but the extent to which individual companies benefit is likely to hinge on their ability to respond with new products and win public-sector contracts."
  },
  "outlook": {
-  "ko": "회사는 2026년 전략 키워드로 '고객 중심·AI 내재화·지속 가능한 성장'을 제시하며 현장 중심 종합 정보보안 기업으로의 전환을 선언했다. 해외 사업과 관련해 2025년을 진출 원년으로, 2026년을 실질 매출 전환 원년으로 명확히 목표를 설정했다. 독일 NEOX NETWORKS ODM 테스트가 거의 완료 단계에 있으며, 인도네시아·싱가포르에서 PoC가 진행 중이고, 유럽·중동·미국까지 판매망 확장 계획을 수립했다. 신제품 측면에서는 2026년 4월 일본 구마모토에서 개최된 파트너스데이에서 eWalker SSG·eSafe AI·DLP OCR 기능 등의 기술 로드맵이 공개됐으며, 국내 주요 CSP 및 아마존 클라우드 등록을 완료해 SaaS 신규 수주 채널이 열렸다. 2027년 의무화 예정인 공급망 보안 컨설팅 서비스도 준비 중이어서 중장기 수익 다변화 기반을 마련하고 있다. 다만 신규 매출이 재무제표에 유의미하게 반영되기까지는 시차가 존재하고, 하반기(특히 Q4) 공공 발주에 대한 구조적 의존도는 여전하다. 2026년 연간 실적은 Q3~Q4 국내 공공 수주와 첫 해외 상업 납품 실현 여부에 따라 결정될 가능성이 높다.",
-  "en": "For 2026, the company has articulated 'customer-centricity, AI internalization, and sustainable growth' as its strategic pillars, declaring the transition toward a field-focused, comprehensive security services company. Management has explicitly designated 2025 as the overseas launch year and 2026 as the year of actual revenue conversion. The ODM test program with Germany's NEOX NETWORKS is nearing completion, PoC campaigns in Indonesia and Singapore are active, and a sales expansion roadmap covering Europe, the Middle East, and the United States is in place. On the product side, the April 2026 Partners Day event in Kumamoto, Japan unveiled roadmaps for eWalker SSG, eSafe AI, and AI-enhanced DLP with OCR capabilities; registration on major domestic CSPs and Amazon cloud platforms has created a new SaaS sales channel. Supply-chain security consulting services — ahead of the 2027 regulatory mandate — are also in preparation, providing a medium-to-long-term revenue diversification foundation. However, revenue contribution from these new streams is likely to materialize with a lag, and structural reliance on H2 public-sector procurement (especially Q4) persists. Full-year 2026 results will largely depend on Q3-Q4 public-sector contract volume and the timing of the first overseas commercial deliveries."
+  "ko": "회사는 2026년 4월 파트너스데이에서 2025년 사업 성과와 2026년 사업 전략을 공유하며 AI·클라우드 확산에 대응하는 신제품 로드맵을 제시했다. 구체적으로는 SaaS 환경의 보안통제를 위한 'eWalker SSG', 생성형 AI 이용 환경을 위한 보안 솔루션 'eSafe AI', 문자인식(OCR) 기능이 추가된 'eWalker DLP' 등이 공개돼, N2SF 전환에 따른 신규 수요를 겨냥한 제품 라인업 확장이 진행되고 있다. 다만 이들 신제품이 실제 매출로 얼마나, 언제부터 반영될지는 아직 공시나 실적으로 구체화되지 않았다. 회사는 2026년 3월 이사회에서 기업가치제고계획을 자율공시했는데, 세부 이행 성과는 향후 정기 공시를 통해 확인할 필요가 있다. 공공부문에서는 KISA의 N2SF 도입 지원사업과 국정원의 사이버보안 평가 가산점 정책이 맞물리며 관련 발주가 확대될 여건이 조성되고 있어, 회사의 기존 공공 레퍼런스(스쿨넷 사업 등)가 신규 수주로 이어질지가 관전 포인트다. 2025년 4분기와 같은 계절적 매출 집중 패턴이 반복될 경우 연간 실적의 상당 부분이 4분기에 좌우될 수 있어, 분기별 실적을 볼 때는 연간 누적치를 함께 참고하는 것이 합리적이다. 2026년 2분기에 나타난 순이익-영업이익 간 괴리가 일회성 요인에 의한 것인지, 아니면 반복될 수 있는 구조인지는 다음 분기 공시를 통해 가늠할 수 있을 것으로 보인다.",
+  "en": "At its April 2026 Partners Day, the company shared 2025 business results and its 2026 strategy while presenting a new-product roadmap aimed at the AI and cloud shift. Specifically, it unveiled 'eWalker SSG' for SaaS environment security control, the generative-AI-oriented security solution 'eSafe AI,' and an OCR-enabled version of 'eWalker DLP,' expanding its product lineup toward demand created by the N2SF transition. However, how much revenue these new products will generate and when has not yet been quantified in disclosures or reported earnings. The company voluntarily disclosed a corporate value-up plan approved by its board in March 2026, and the details of its execution will need to be confirmed through future regular disclosures. In the public sector, the combination of KISA's N2SF adoption support program and the National Intelligence Service's bonus-point policy for cybersecurity evaluations is creating conditions for expanded procurement, making it worth watching whether the company's existing public-sector references, such as the SchoolNet program, translate into new contract wins. If the seasonal revenue concentration seen in 2025Q4 repeats, a large portion of annual results could again hinge on the fourth quarter, so it is reasonable to weigh cumulative annual figures alongside quarterly results. Whether the net income-operating profit gap seen in 2026Q2 stems from a one-off item or a recurring structural factor should become clearer through subsequent quarterly disclosures."
  },
  "valuation_comment": {
-  "ko": "현 주가는 BPS 13,537원 대비 상당한 할인 구간에 형성되어 있으며, 이는 부채비율 8.1%라는 극히 낮은 레버리지를 감안하면 주목할 만한 순자산 대비 디스카운트다. 최근 4개 분기 기준 EPS 704원은 2022년 이익 저점 대비 뚜렷한 이익 회복을 반영하고 있으며, 코스닥 소형 보안 소프트웨어 섹터 평균 이익 배수와 비교해 과도한 프리미엄 영역에 있지 않다. 연간 DPS 310원에 기반한 배당은 코스닥 소형 IT 업종 기준 업종 평균을 상회하는 수익률 구간에 해당하며, 무차입 재무구조가 배당 지속 가능성을 뒷받침한다. 다만 영업이익률 하락 추세가 지속된다면 이익 창출력 재평가가 이루어질 수 있으며, 클라우드·해외 신규 매출 가시화 없이는 순자산 할인 폭이 축소되기 어렵다는 시각도 유효하다. 정치 테마주로 분류됨에 따른 비펀더멘털 주가 변동성도 밸류에이션 해석 시 함께 고려해야 할 요인이다.",
-  "en": "The current share price is at a material discount to the confirmed BPS of KRW 13,537 — a notable concession to net asset value given the near-zero leverage profile (debt ratio 8.1%). The EPS of KRW 704 reflects a clear earnings recovery from the 2022 trough and does not place the stock in an excessive premium zone relative to comparable small-cap security software peers on KOSDAQ. The annual DPS of KRW 310, supported by the debt-free balance sheet, generates a dividend yield above the KOSDAQ small-cap IT sector average at current price levels. On the other hand, persistent operating margin compression may invite downward earnings revisions, and absent visible progress in SaaS and overseas revenue streams, the discount to book value may prove structural rather than temporary. Non-fundamental volatility stemming from political-theme stock classification is an additional factor to consider when evaluating valuation signals."
+  "ko": "현재 주가는 순자산 대비 할인된 수준에서 거래되고 있으며, 최근 4개 분기 합산 순이익을 기준으로 산출한 배수는 과거 이 종목이 형성했던 거래 밴드의 하단부에 가까운 편이다. 다만 2026년 2분기처럼 영업외 요인이 순이익을 크게 좌우한 구간이 포함돼 있어, 이 배수를 해석할 때는 영업이익 기준 수익성 추이를 함께 살펴보는 것이 유용하다. 배당수익률은 소형 보안 소프트웨어 업종 내에서 낮지 않은 편으로 평가되나, 배당 규모는 회사의 순이익 변동성에 연동돼 매년 달라질 수 있다. 2025년 영업이익률이 2023년보다 낮아진 점을 고려하면, 시장이 부여하는 밸류에이션에는 이익의 지속성과 질에 대한 판단이 일부 반영돼 있는 것으로 보인다. 향후 밸류에이션에 대한 판단은 N2SF 관련 신규 수주 흐름과 다음 분기 실적에서 영업이익-순이익 간 괴리가 재현되는지를 확인한 뒤 내리는 것이 합리적이다.",
+  "en": "The current share price trades at a discount to net asset value, and the multiple calculated on combined net income over the most recent four quarters sits closer to the lower end of the trading band this stock has historically formed. However, because the most recent four-quarter window includes a period like 2026Q2 in which non-operating factors heavily influenced net income, it is useful to examine the trend in operating-profit-based profitability alongside this multiple. The dividend yield is regarded as not low relative to other small-cap security software names, but the absolute dividend amount can vary year to year in line with the company's earnings volatility. Given that the 2025 operating margin was lower than in 2023, the valuation the market assigns appears to partly reflect judgments about the sustainability and quality of earnings. Any further view on valuation is best formed after observing the flow of N2SF-related contract wins and checking whether the gap between operating profit and net income seen recently recurs in coming quarters."
  },
  "bull": [
   {
    "title": {
-    "ko": "SSL 가시성 독점 레퍼런스와 공공 시장 신뢰도",
-    "en": "SSL Decryption Monopoly and Entrenched Public-Sector Credibility"
+    "ko": "정책 전환에 따른 구조적 수요 확대",
+    "en": "Structural Demand Shift from Policy Change"
    },
    "body": {
-    "ko": "수산아이앤티는 2018년 이후 국내 SSL 복호화 시장 1위를 유지하며 누적 고객사 1,600여 곳을 확보했고, 과기부 2025년 우수 정보보호기술 지정으로 공공 판로 지원과 KISA 사업 가점 혜택을 추가로 확보했다. 국가정보자원관리원 4개 거점 전량 납품은 국가 보안 인프라 핵심 공급사로서의 위상을 공고히 한다. 인터넷 암호화율이 90%를 넘는 현 구조에서 SSL 가시성 수요는 구조적으로 확대될 전망이며, 독점 공유단말관리 사업과의 시너지로 안정적 현금흐름 기반을 유지한다.",
-    "en": "Soosan I&T has maintained domestic #1 in SSL decryption since 2018, accumulating 1,600+ enterprise clients, and the 2025 Ministry of Science 'Excellent Infosec Technology' designation unlocks public-market access support and KISA project bonus points. Full deployment across all four National Information Resource Service data centers cements its status as a core supplier to the country's security infrastructure. With internet encryption rates exceeding 90%, structural SSL visibility demand continues to expand, and the synergy with the monopoly shared-terminal management business maintains a robust recurring cash flow base."
+    "ko": "2026년 5월 물리적 망분리 의무가 삭제되고 N2SF가 정식 시행되면서 SSL 가시성·제로트러스트 기반 보안 솔루션에 대한 정책적 수요 유인이 생겼다. 회사의 핵심 기술인 SSL 복호화·트래픽 분석은 이러한 신규 정보서비스 모델 구축에 활용될 여지가 있다. KISA와 국정원의 지원사업·평가 가산점 정책이 이어질 경우 공공부문 발주 확대가 뒤따를 수 있다.",
+    "en": "With the mandatory physical network-separation rule removed and N2SF formally implemented in May 2026, a policy-driven incentive has emerged for SSL-visibility and zero-trust-based security solutions. The company's core SSL decryption and traffic analysis technology has potential applications in building these new information service models. If KISA and the National Intelligence Service's support programs and evaluation bonus-point policies continue, expanded public-sector procurement could follow."
    }
   },
   {
    "title": {
-    "ko": "클라우드 SaaS 전환 및 글로벌 진출 초기 모멘텀",
-    "en": "Early-Stage SaaS Transition and Tangible Global Expansion Momentum"
+    "ko": "실적 회복과 안정적 재무구조",
+    "en": "Earnings Recovery and Stable Balance Sheet"
    },
    "body": {
-    "ko": "3년간의 클라우드 네이티브 개발을 완료하고 eWalker SSG·eSafe AI 등 SaaS 신제품이 출시됐으며, 국내 주요 CSP와 아마존 클라우드 등록으로 구독형 수익 채널이 열렸다. 독일 NEOX NETWORKS ODM 테스트는 거의 완료 단계이고, 인도네시아·싱가포르 PoC가 진행 중이며, 회사는 2026년을 실질 해외 매출 전환 원년으로 목표했다. 기존 온프레미스 설치 기반(1,600여 곳)의 SaaS 전환 잠재 수요와 해외 SOC 구축 수요는 중장기 성장 동력으로 발전할 여지가 있다.",
-    "en": "Following three years of cloud-native development, SaaS products eWalker SSG and eSafe AI have launched, and registration on major domestic CSPs including Amazon Web Services opens a subscription revenue channel. German ODM partner NEOX NETWORKS has nearly completed product testing, PoC campaigns in Indonesia and Singapore are active, and management targets 2026 as the year of actual overseas revenue conversion. The SaaS migration potential within the existing 1,600+ on-premise installed base and overseas SOC build-out demand represent credible medium-to-long-term growth engines."
+    "ko": "매출은 2023년 저점 이후 2024년, 2025년 2년 연속 증가하며 회복 흐름을 보였다. 부채비율이 8.1%로 매우 낮고 영업활동현금흐름이 4개 연도 모두 양(+)을 유지해 재무 안정성이 뒷받침된다. 배당을 통한 주주환원도 병행되고 있다.",
+    "en": "Revenue has recovered for two consecutive years in 2024 and 2025 after bottoming in 2023. A very low debt ratio of 8.1% and consistently positive operating cash flow across all four years underpin financial stability. Shareholder returns through dividends have also continued alongside this."
    }
   },
   {
    "title": {
-    "ko": "무차입 재무구조와 안정적 주주환원",
-    "en": "Net-Cash Balance Sheet and Consistent Shareholder Return"
+    "ko": "본업 집중과 신제품 라인업 확장",
+    "en": "Core-Business Focus and Expanding Product Lineup"
    },
    "body": {
-    "ko": "2025년 부채비율 8.1%, 자기자본 912억원으로 사실상 무차입 구조를 유지하고 있으며, 영업현금흐름(76억원)이 순이익을 꾸준히 상회한다. 연간 DPS 310원 배당 정책이 지속되고 있으며, 무차입 재무구조가 배당 지속 가능성과 잠재적 추가 주주환원 여력을 뒷받침한다. 대규모 설비투자 없이 현금을 창출하는 자산 경량 모델은 사업 전환기 중에도 재무 안정성을 유지하는 핵심 강점이다.",
-    "en": "With a debt ratio of 8.1% in FY2025 and equity of KRW 91.2 bn, the company operates virtually debt-free, while operating cash flow of KRW 7.6 bn consistently exceeds reported net income. The DPS policy of KRW 310 annually continues, with the debt-free structure underpinning both dividend sustainability and potential incremental returns to shareholders. The capital-light operating model — generating meaningful cash without significant capex — is a core resilience factor during the business model transition."
+    "ko": "2024년 비핵심 자회사 수산에너솔을 매각해 네트워크 보안 본업에 자원을 집중하는 사업 재편을 완료했다. 2026년에는 SaaS 보안통제 솔루션 'eWalker SSG'와 생성형 AI 보안 솔루션 'eSafe AI' 등 신제품을 공개해 AI·클라우드 확산에 대응하고 있다. 기존 공공·통신사 레퍼런스를 기반으로 신제품을 확산시킬 채널을 보유하고 있다.",
+    "en": "In 2024 the company completed a portfolio realignment by divesting non-core subsidiary Soosan Energy Solutions to concentrate resources on its core network security business. In 2026 it unveiled new products including the SaaS security control solution 'eWalker SSG' and the generative-AI security solution 'eSafe AI' to address the spread of AI and cloud adoption. It has existing public-sector and telecom-carrier reference channels through which to distribute these new products."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "영업이익률 2년 연속 하락과 비용 구조 확대",
-    "en": "Two Consecutive Years of Operating Margin Decline and Rising Cost Base"
+    "ko": "이익률 하락 추세",
+    "en": "Declining Margin Trend"
    },
    "body": {
-    "ko": "영업이익률은 2023년 27.1%에서 2024년 21.3%, 2025년 16.6%로 2년 연속 하락했고, 2026Q1에는 약 7%까지 내려갔다. 매출이 증가함에도 영업이익이 감소하는 구조는 고정비·R&D 비용·마케팅 투자 부담이 확대되고 있음을 시사한다. 클라우드 전환과 해외 진출을 위한 추가 투자가 지속될 경우 단기적으로 마진 회복이 지연될 위험이 크다.",
-    "en": "Operating margins declined two consecutive years — from 27.1% in 2023 to 21.3% in 2024 and 16.6% in 2025 — with 2026Q1 margin dropping to approximately 7%. The structural divergence of revenue growth and operating profit decline indicates expanding fixed-cost, R&D, and marketing burdens. Continued investment in cloud SaaS development and overseas market cultivation is likely to delay near-term margin recovery."
+    "ko": "영업이익률은 2023년 27.1%에서 2024년 21.3%, 2025년 16.6%로 2년 연속 낮아졌다. 매출은 늘었지만 원가·비용 부담이 함께 커진 것으로 해석돼, 매출 성장이 곧바로 이익 성장으로 이어지지 않는 구간이 지속되고 있다.",
+    "en": "Operating margin has declined for two straight years, from 27.1% in 2023 to 21.3% in 2024 and 16.6% in 2025. This suggests that cost and expense burdens have grown alongside revenue, meaning revenue growth has not translated directly into proportional profit growth."
    }
   },
   {
    "title": {
-    "ko": "ISP 협력사업 성숙기 진입과 통신사 환경 불확실성",
-    "en": "ISP Cooperation Business Maturity and Telecom Partner Uncertainty"
+    "ko": "영업외 요인에 대한 순이익 의존",
+    "en": "Net Income Reliance on Non-Operating Factors"
    },
    "body": {
-    "ko": "공유단말접속관리서비스는 초고속인터넷 가입자 포화로 시장 성장이 구조적으로 제한돼 있다. 2025년 SKT 유심 해킹 사태로 드러났듯이 통신사 자체의 경영 불확실성이 확대될 경우 협력 사업의 예산과 계약 갱신 일정에 부정적 영향을 줄 수 있다. ISP 3사 의존도 집중에 따른 협상력 약화와 계약 조건 불리화 리스크는 고객 다변화가 본격화되기 전까지 상존하는 잠재 변수다.",
-    "en": "Growth of the shared-terminal management service is structurally capped by broadband subscriber market saturation. As demonstrated by the 2025 SK Telecom USIM data breach, systemic disruptions to telecom partners' operations can cascade into cooperation project budgets and contract renewal timelines. Concentrated dependence on the three major ISPs carries inherent negotiating-power vulnerability and unfavorable renegotiation risk, which will persist until meaningful customer diversification is established."
+    "ko": "2026년 2분기 지배주주순이익이 38.7억원으로 급증했으나 영업이익은 6.5억원에 불과해 순이익 증가의 상당 부분이 영업외 요인에서 나온 것으로 보인다. 이러한 일회성 성격의 항목은 다음 분기에 재현되지 않을 수 있어, 핵심 영업 수익력만을 놓고 보면 개선 속도가 완만하다.",
+    "en": "2026Q2 owners' net income jumped to KRW 3.87 billion while operating profit was only KRW 0.65 billion, indicating that a large share of the net income increase came from non-operating factors. Because such items can be one-off in nature, the pace of improvement looks modest when judged on core operating profitability alone."
    }
   },
   {
    "title": {
-    "ko": "Q4 편중 계절성과 상반기 실적 가시성 부재",
-    "en": "Q4-Concentrated Seasonality and Lack of H1 Earnings Visibility"
+    "ko": "매출 계절성과 공공 의존도",
+    "en": "Revenue Seasonality and Public-Sector Dependence"
    },
    "body": {
-    "ko": "2025년 Q2·Q3 합산 영업이익은 연간 영업이익의 약 21%에 불과해 상반기 실적 가시성이 낮다. 2026Q1 매출은 전년 동기 대비 6.3% 감소하며 이익 반전의 조기 신호가 보이지 않는다. Q4 한 분기에 연간 영업이익의 약 45%가 집중되는 구조는 연말 공공 발주 지연이나 경쟁 심화 시 연간 실적이 단기간에 크게 훼손될 수 있는 구조적 취약점이다.",
-    "en": "Q2 and Q3 2025 operating profit combined accounted for only approximately 21% of full-year operating profit, signaling very limited H1 earnings visibility. 2026Q1 revenue declined 6.3% YoY without any early inflection signal. The structural concentration of ~45% of annual operating profit into a single quarter (Q4) creates meaningful earnings risk if public-sector procurement is delayed or competitive intensity at year-end intensifies."
+    "ko": "2025년 4분기 매출이 다른 분기보다 뚜렷하게 높게 나타나는 등 공공부문 예산 집행 시기에 따른 매출 편차가 존재한다. 매출의 상당 비중이 보안솔루션과 통신사 연계 서비스에 집중돼 있어, 관련 정책이나 계약 조건이 바뀌면 실적에 미치는 영향이 클 수 있다.",
+    "en": "Revenue displays notable variation tied to the timing of public-sector budget execution, as seen in the markedly higher 2025Q4 figure relative to other quarters. Because a large share of revenue is concentrated in security solutions and telecom-carrier-linked services, changes in related policy or contract terms could have a significant impact on results."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 및 ISP 계약 갱신 리스크",
-    "en": "Customer Concentration and ISP Contract Renewal Risk"
+    "ko": "정책·규제 리스크",
+    "en": "Policy and Regulatory Risk"
    },
    "body": {
-    "ko": "매출의 상당 부분이 KT·SK브로드밴드·LG유플러스 3사와의 협력 계약에 의존하고 있어 계약 갱신 거부 또는 조건 변경 시 ISP 협력 부문 매출이 큰 폭으로 감소할 수 있다. 2025년 SKT 해킹 사태에서 드러났듯이 통신사 자체의 사업 환경 변화가 수산아이앤티의 파트너십 조건에 파급될 수 있다. MSO·해외 고객 다변화가 본격화되기 전까지 이 구조적 취약성은 지속된다.",
-    "en": "A substantial share of revenues depends on cooperation agreements with the three major ISPs; contract non-renewal or unfavorable renegotiation could materially reduce ISP segment revenues. The 2025 SK Telecom hacking incident illustrated how systemic disruptions to telecom partners' operations can cascade into partnership terms and budgets. This structural vulnerability persists until meaningful diversification via MSO or overseas customers is established."
+    "ko": "N2SF 시행 속도와 세부 가이드라인 적용 방식이 기관별로 달라질 수 있어, 예상보다 예산 집행이 지연되거나 등급 분류가 보수적으로 이뤄질 경우 신규 투자 유인이 약화될 수 있다. 정책 변화에 따른 수요 창출 시점과 규모는 아직 불확실성이 남아 있다.",
+    "en": "The pace of N2SF implementation and the way detailed guidelines are applied may vary by institution, and if budget execution is delayed or data classification is applied conservatively, the incentive for new investment could weaken. The timing and scale of demand creation from this policy shift still carry uncertainty."
    }
   },
   {
    "cat": {
-    "ko": "글로벌 보안 벤더의 번들 전략에 따른 전문 솔루션 수요 잠식",
-    "en": "Global Vendor Bundling Threat to Standalone SSL Visibility Demand"
+    "ko": "경쟁 심화 리스크",
+    "en": "Competitive Intensity Risk"
    },
    "body": {
-    "ko": "Palo Alto Networks·Zscaler 등 SASE·ZTNA 플랫폼 대형 벤더들이 SSL 복호화 기능을 번들로 통합하는 전략은 장기적으로 전문 솔루션 수요를 잠식할 수 있다. Keysight(구 Ixia)·Gigamon 등 글로벌 SSL 가시성 전문 업체와의 경쟁도 지속되며, 클라우드 환경에서의 경쟁 구도는 더욱 복잡해질 전망이다. 국내 온프레미스 레퍼런스 우위가 클라우드 네이티브 전환 이후에도 그대로 유지될 것인지는 불확실하다.",
-    "en": "Large SASE/ZTNA platform vendors such as Palo Alto Networks and Zscaler are increasingly bundling SSL decryption functionality, posing a long-term structural risk to standalone solution demand. Competition from global SSL visibility specialists Keysight (Ixia) and Gigamon persists, and the competitive dynamic is expected to become more complex in cloud-native environments. Whether domestic on-premise incumbent advantages translate cleanly into the cloud era remains a key uncertainty."
+    "ko": "제로트러스트·SASE·망연계 등 신규 보안 통제 영역에서 다수의 전문기업이 경쟁하고 있으며, 최근 설문에서는 망연계 분야 상위 3개사가 시장 선호도의 약 60%를 차지하는 것으로 나타났다. 회사가 강점을 지닌 SSL 가시성 기술 외 영역에서 경쟁력을 확보하지 못하면 신규 수요의 상당 부분을 다른 업체가 흡수할 가능성이 있다.",
+    "en": "Numerous specialist vendors compete in newer security control areas such as zero trust, SASE, and network linkage, and a recent survey found the top three vendors in the network-linkage segment held roughly 60% of preference share. If the company fails to build competitiveness outside its traditional strength in SSL-visibility technology, a significant portion of new demand could be captured by other vendors."
    }
   },
   {
    "cat": {
-    "ko": "정치 테마주 분류에 따른 비펀더멘털 주가 변동성",
-    "en": "Non-Fundamental Price Volatility from Political-Theme Stock Classification"
+    "ko": "실적 변동성·공시 불확실성",
+    "en": "Earnings Volatility and Disclosure Uncertainty"
    },
    "body": {
-    "ko": "수산아이앤티는 일부 시장에서 정치 테마주로 분류되어, 2025년 3월 이재명 대표 무죄 판결 시 하루 거래대금이 794% 급증하는 등 기업 펀더멘털과 무관한 급등락을 경험했다. 정치적 이벤트에 따라 주가가 내재 가치와 크게 괴리될 수 있으며, 이는 펀더멘털 분석에 기반한 적정 가치 평가를 교란할 수 있다. 투자자는 정치 이슈 연동으로 인한 유동성 급변 및 가격 변동성 리스크를 별도로 인지해야 한다.",
-    "en": "Soosan I&T has been classified as a political-theme proxy in certain market segments, resulting in a 794% single-day surge in trading volume in March 2025 following a court ruling favorable to the Democratic Party leader — entirely disconnected from company fundamentals. Political events can cause share price to diverge significantly from intrinsic value, distorting fundamental-based valuation frameworks. Investors should separately account for the incremental liquidity and volatility risk associated with this non-fundamental classification."
+    "ko": "2026년 2분기와 같이 영업이익과 순이익 간 괴리가 큰 분기가 반복될 경우, 표면적인 순이익 증가만으로 사업 개선 여부를 판단하기 어려워진다. 해당 항목의 구체적 성격은 아직 상세 공시로 확인되지 않아, 투자자는 후속 분기보고서와 주석 사항을 통해 직접 점검할 필요가 있다.",
+    "en": "If quarters with a large gap between operating profit and net income, as seen in 2026Q2, recur, headline net income growth alone becomes an unreliable gauge of underlying business improvement. The specific nature of this item has not yet been confirmed through detailed disclosure, so investors would need to verify it directly through subsequent quarterly reports and footnotes."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중",
-    "en": "August 2026"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026Q2 실적 발표. Q1의 매출·영업이익 약세가 계절적 요인인지 구조적 추세인지를 판단하는 핵심 지표. 특히 영업이익률 회복 여부와 매출 YoY 성장 전환 여부에 주목.",
-    "en": "2026Q2 earnings release — critical to determine whether Q1's revenue and operating profit softness reflects seasonal timing or a structural trend; operating margin recovery and YoY revenue growth resumption are the key metrics."
+    "ko": "3분기보고서 공시를 통해 2026년 2분기 순이익 급증이 일회성 요인이었는지, 영업이익 개선 흐름이 이어지는지 확인.",
+    "en": "Check the Q3 2026 quarterly report to see whether the sharp Q2 2026 net income increase was a one-off factor and whether operating profit improvement continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "H2 2026"
+    "ko": "2026년 4분기",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "독일 NEOX NETWORKS ODM 최종 납품 실적 및 공시 여부. 해외 매출이 최초로 재무제표에 반영되는 분기가 될 수 있으며, 글로벌 확장 전략의 실질 검증 분기점.",
-    "en": "Commercial delivery under the Germany NEOX NETWORKS ODM agreement and associated revenue disclosure — potentially the first overseas contribution to financial statements and the pivotal test of the global expansion strategy."
+    "ko": "KISA 'N2SF 도입지원사업' 컨소시엄의 실증 결과 공개 및 후속 공공 발주 확대 여부 점검.",
+    "en": "Monitor the release of pilot results from KISA's N2SF adoption support program consortia and whether follow-on public-sector procurement expands."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 초",
-    "en": "H2 2026 – Early 2027"
+    "ko": "2026년 4분기~2027년 초",
+    "en": "Q4 2026 to early 2027"
    },
    "what": {
-    "ko": "인도네시아·싱가포르 PoC의 상업 계약 전환 결과. 성공 시 동남아 매출 가시성이 크게 높아지며, 전환 실패 시 글로벌 전략 타임라인 재점검이 필요하다.",
-    "en": "PoC-to-commercial contract conversion in Indonesia and Singapore — success would sharply raise overseas revenue visibility, while failure would necessitate a reassessment of the global expansion timeline."
+    "ko": "'eWalker SSG', 'eSafe AI' 등 신제품의 실제 수주·매출 반영 여부를 공시 및 실적으로 확인.",
+    "en": "Verify through disclosures and reported earnings whether new products such as 'eWalker SSG' and 'eSafe AI' begin generating actual orders and revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월~2027년 2월",
-    "en": "November 2026 – February 2027"
+    "ko": "2027년 3월 정기주주총회 전후",
+    "en": "Around the March 2027 annual shareholders' meeting"
    },
    "what": {
-    "ko": "Q4 2026 공공 발주 규모 확정 및 연간 실적 발표. ISP 협력사업 계약 갱신 동향과 함께 연간 영업이익률 반전 여부가 밸류에이션 재평가의 핵심 트리거.",
-    "en": "Q4 2026 public-sector procurement volume and annual earnings finalization. Together with ISP contract renewal trends, a reversal of the multi-year operating margin decline would be the primary catalyst for a valuation re-rating."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 연내",
-    "en": "Throughout 2027"
-   },
-   "what": {
-    "ko": "공급망 보안 의무화 시행에 따른 컨설팅·서비스 수주 실적. 신규 서비스 매출 비중의 유의미한 확대 여부가 사업 구조 다변화 진전의 측정 지표.",
-    "en": "Consulting and managed service contract wins following the supply-chain security regulatory mandate — meaningful contribution from this new revenue line would validate the business model diversification thesis."
+    "ko": "2026년 3월 공시된 기업가치제고계획의 이행 성과와 배당 정책 발표 내용을 점검.",
+    "en": "Review the execution results of the corporate value-up plan disclosed in March 2026 and any dividend policy announcements."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "수산아이앤티는 국내 SSL 복호화 1위와 공유단말관리 독점이라는 두 개의 강력한 해자 위에서 2025년 4개년 최고 매출을 달성했다. 그러나 영업이익률이 2년 연속 하락하고 2026Q1 실적도 약세를 지속하고 있어, 매출 성장이 수익성 개선으로 이어지지 않는 구조적 과제가 명확하다. 클라우드 SaaS 전환·독일 ODM·동남아 PoC 등 신성장 전략은 방향성은 유효하나, 실제 매출로 가시화되기까지의 시차를 주시해야 한다. 무차입에 가까운 재무구조(부채비율 8.1%)와 BPS 13,537원 대비 상당한 순자산 할인 거래, 연간 DPS 310원 배당 정책은 하방 안정성을 제공하지만, 재평가 촉진을 위해서는 영업이익률 반전 또는 해외 매출 첫 가시화라는 이익 모멘텀이 필요하다. 2026년 하반기 Q4 공공 발주, 독일 첫 상업 납품, 동남아 계약 전환 여부가 단기 실적과 중장기 성장 스토리를 동시에 검증할 핵심 이벤트가 될 것이다.",
-   "en": "Soosan I&T delivered a four-year revenue high in FY2025, built on its dual structural advantages: domestic SSL decryption market leadership and a monopoly in ISP shared-terminal management. However, two consecutive years of operating margin contraction and a soft 2026Q1 make clear the structural challenge of converting top-line growth into bottom-line improvement. Its growth strategy — SaaS cloud transition, German ODM, and ASEAN PoC campaigns — is directionally sound, but execution lag before financial contribution materializes warrants careful monitoring. The near-debt-free balance sheet (debt ratio 8.1%), the material discount to the confirmed BPS of KRW 13,537, and the annual DPS of KRW 310 provide meaningful downside support; however, a re-rating catalyst — either an operating margin inflection or the first visible overseas revenue — has yet to emerge. The defining near-to-medium term events are: Q4 2026 public-sector procurement volume, first commercial delivery under the Germany ODM agreement, and the outcomes of Southeast Asia PoC conversions."
+   "ko": "수산아이앤티는 SSL 트래픽 분석·가시성 기술을 오래 축적한 네트워크 보안 전문기업으로, 2026년 5월 시행된 N2SF 정책 전환은 업계 전반에 우호적인 환경을 제공하고 있다. 연간 매출은 2023년 저점 이후 2년 연속 회복되며 개선 흐름을 보였지만, 영업이익률은 오히려 2023년 27.1%에서 2025년 16.6%로 낮아지는 상반된 모습을 나타냈다. 2026년 2분기에는 지배주주순이익이 크게 늘었으나 영업이익 증가는 제한적이어서, 순이익 증가분의 상당 부분이 영업외 요인에서 비롯된 것으로 보이며 이 항목의 성격은 후속 공시로 확인이 필요하다. 부채비율이 매우 낮고 영업활동현금흐름이 꾸준히 양(+)을 유지하는 점은 재무 안정성 측면에서 긍정적이다. 반면 매출의 상당 부분이 공공부문·통신사 연계 서비스에 집중돼 있어 계절성과 정책 변화에 대한 민감도가 있고, 제로트러스트·SASE 등 신규 보안 통제 영역에서는 경쟁이 치열해지고 있다. 투자자는 N2SF 관련 공공 발주 성과, 신제품의 실제 매출 반영 시점, 그리고 영업이익과 순이익 간 괴리가 향후 분기에도 반복되는지를 함께 살펴보는 것이 유용할 것으로 보인다.",
+   "en": "Soosan INT is a network security specialist with a long track record in SSL traffic analysis and visibility technology, and the N2SF policy shift implemented in May 2026 provides a broadly favorable backdrop for the industry. Annual revenue has recovered for two consecutive years since bottoming in 2023, but operating margin has moved in the opposite direction, falling from 27.1% in 2023 to 16.6% in 2025. In 2026Q2, owners' net income rose sharply while operating profit growth was limited, suggesting that a substantial portion of the net income increase stemmed from non-operating factors whose exact nature requires confirmation through subsequent disclosures. A very low debt ratio and consistently positive operating cash flow are positives for financial stability. On the other hand, a large share of revenue is concentrated in public-sector and telecom-carrier-linked services, creating sensitivity to seasonality and policy changes, and competition is intensifying in newer security control areas such as zero trust and SASE. Investors may find it useful to track N2SF-related public procurement outcomes, the timing at which new products begin contributing actual revenue, and whether the gap between operating profit and net income recurs in coming quarters."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?gicode=A050960&NewMenuID=102",
-  "https://m.irgo.co.kr/IR-COMP/050960/-IR-PAGE",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A050960",
-  "https://www.k5.co.kr/stock/050960",
-  "https://m.thinkpool.com/item/050960",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Finance.asp?pGB=1&gicode=A050960&cID=&MenuYn=Y&ReportGB=&NewMenuID=103&stkGb=701",
-  "https://www.thinkpool.com/item/050960/news/16554346",
-  "https://finance.finup.co.kr/Stock/050960",
   "https://www.jobkorea.co.kr/recruit/co_read/c/plus1645",
-  "https://m.boannews.com/html/detail.html?idx=140055",
-  "https://m.boannews.com/html/detail.html?idx=137107&kind=3",
-  "https://www.soosanint.com/board/board_view.php?board_id=news&no=90",
-  "https://www.jobkorea.co.kr/Recruit/Co_Read/C/plus1645/Company_name/%E3%88%9C%EC%88%98%EC%82%B0%EC%95%84%EC%9D%B4%EC%95%A4%ED%8B%B0",
-  "https://zdnet.co.kr/view/?no=20250203161733",
-  "https://www.soosanint.com/contents.php?con_id=partner",
-  "https://www.thefairnews.co.kr/news/articleView.html?idxno=50675",
-  "https://www.soosanint.com/board/board_view.php?board_id=news&no=42&page=3",
-  "https://www.soosanint.com/board/board_view.php?board_id=news&no=36"
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/WkNjeEhJaW9PNHpjcXNZK3ZKaVljdz09/company_nm/(%EC%A3%BC)%EC%88%98%EC%82%B0%EC%95%84%EC%9D%B4%EC%95%A4%ED%8B%B0",
+  "https://m.irgo.co.kr/IR-COMP/050960/%EC%88%98%EC%82%B0%EC%95%84%EC%9D%B4%EC%95%A4%ED%8B%B0-IR-PAGE",
+  "https://news.infostock.co.kr/a",
+  "https://kind.krx.co.kr/corpgeneral/irschedule.do?method=searchIRScheduleMain&gubun=iRSchedule",
+  "https://file.alphasquare.co.kr/media/pdfs/market-report/%EC%95%84%EC%9D%B4%ED%8B%B0%EC%84%BC%EC%97%94%ED%85%8D1Q2620260521%EC%9C%A0%EC%A7%84%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C.",
+  "https://www.jobplanet.co.kr/companies/4474/landing/%EC%88%98%EC%82%B0%EC%95%84%EC%9D%B4%EC%95%A4%ED%8B%B0",
+  "https://file.alphasquare.co.kr/media/pdfs/market-report/%EA%B8%B0%ED%83%802026%EB%85%8420260528SK%EC%A6%9D%EA%B6%8C.pdf",
+  "https://moneypie.net/wiki/v/수산아이앤티",
+  "https://m.irgo.co.kr/LC/3382/%EC%88%98%EC%82%B0%EC%95%84%EC%9D%B4%EC%95%A4%ED%8B%B0",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A050960",
+  "https://www.youtube.com/channel/UCg-OAzbxWJv1HijwFmDqk3w",
+  "https://www.soosanint.com/",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20240514000948",
+  "https://m.boannews.com/html/detail.html?idx=53337",
+  "https://www.inews24.com/view/1005111",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=304951",
+  "https://www.sksquare.com/kor/ir/return.do"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "050960",
  "name": "수산아이앤티",
  "name_en": "SOOSAN INT Co., LTD.",
@@ -233,9 +223,9 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:46",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 17:56",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 8930,
-   "mcap": 0.0603,
+   "price": 8950,
+   "mcap": 0.0604,
    "shares": 6751000,
    "total_shares": 6751000,
    "wavg_shares": null,
-   "per": 8.238,
+   "per": 8.256,
    "eps": 1084,
-   "pbr": 0.638,
+   "pbr": 0.6395,
    "bps": 13996,
    "roe_ttm": 7.9,
    "ttm_window": "2025Q3~2026Q2",
@@ -356,7 +346,7 @@
    "bps_krx": 13514.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 310.0,
-   "div": 3.47
+   "div": 3.46
   }
  }
 }
