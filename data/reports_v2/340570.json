@@ -227,7 +227,7 @@
  "reportTs": "2026-09-05 09:16",
  "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -238,6 +238,7 @@
     "np_owner": 38074883027,
     "equity": 201160254767,
     "equity_owner": 201160254767,
+    "equity_nci": 0,
     "liab": 15917238922,
     "cfo": 37691797461,
     "eps_basic": null,
@@ -253,6 +254,7 @@
     "np_owner": 46407511867,
     "equity": 171436202690,
     "equity_owner": 171436202690,
+    "equity_nci": 0,
     "liab": 25638971666,
     "cfo": 46569584536,
     "eps_basic": null,
@@ -268,6 +270,7 @@
     "np_owner": 27438682343,
     "equity": 129553114080,
     "equity_owner": 129553114080,
+    "equity_nci": 0,
     "liab": 12554887185,
     "cfo": 32591101671,
     "eps_basic": null,
@@ -283,6 +286,7 @@
     "np_owner": 21117565122,
     "equity": 106072409874,
     "equity_owner": 106072409874,
+    "equity_nci": 0,
     "liab": 10924859570,
     "cfo": 15407303760,
     "eps_basic": null,
@@ -296,13 +300,13 @@
     "q": "2025Q2",
     "rev": 38764776964,
     "op": 9966207584,
-    "np_owner": 7552329316
+    "np_owner": 7833700170
    },
    {
     "q": "2025Q3",
     "rev": 40673004849,
     "op": 12140441673,
-    "np_owner": 11614508593
+    "np_owner": 11333137739
    },
    {
     "q": "2025Q4",
@@ -329,18 +333,24 @@
    "shares": 16070120,
    "total_shares": 8128000,
    "wavg_shares": null,
-   "per": 4.721,
-   "eps": 6281,
+   "per": 4.746,
+   "eps": 6247,
    "pbr": 1.0749,
-   "bps": 27584,
-   "roe_ttm": 24.7,
+   "bps": 27585,
+   "roe_ttm": 24.6,
    "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 51059432118,
+   "ttm_np_owner": 50778061264,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "순이익÷주식수",
    "pbr_krx": 2.34,
    "bps_krx": 12698.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": null,
-   "div": null
+   "div": null,
+   "hidden": {
+    "dps": "ref_mismatch"
+   }
   }
  }
 }
