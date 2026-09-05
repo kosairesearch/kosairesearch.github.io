@@ -109,6 +109,13 @@ jobs:
             echo "⏳ DART 하루 호출 한도 초과 — 자정(KST) 이후 자동 재개" >> $GITHUB_STEP_SUMMARY
             exit 0
           fi
+          # 모델 계정이 막힌 날도 마찬가지다. 재가동하면 종목 100개의 정량을 DART 에서
+          # 받은 뒤 배치 생성에서 죽어 DART 한도만 태운다(2026-09-05 에 실제로 그랬다).
+          if python -c "import sys; sys.path.insert(0,'scripts'); import _reports_state as S; sys.exit(0 if S.credit_exhausted_today() else 1)"; then
+            echo "⛔ 오늘 Anthropic 계정이 막혔다 — 재가동하지 않는다."
+            echo "⛔ Anthropic 크레딧 부족 — 충전 뒤 data/anthropic_credit_exhausted 를 지우면 재개" >> $GITHUB_STEP_SUMMARY
+            exit 0
+          fi
           echo "→ 진행 $running < $SHARDS + 남은 $remaining개 → 샤드 ${SHARDS}개 병렬 백필 재가동"
           i=0
           while [ "$i" -lt "$SHARDS" ]; do

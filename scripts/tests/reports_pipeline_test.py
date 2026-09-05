@@ -930,6 +930,77 @@ G.OUT.write_text("망가진 파일", encoding="utf-8")
 G.main()
 ok(G.OUT.read_text(encoding="utf-8") == "망가진 파일", "못 읽는 그리드는 건드리지 않는다")
 
+
+print()
+print("⑬ 계정이 막힌 날 — 바깥 탓을 종목 탓으로 적지 않는다")
+import anthropic                                        # noqa: E402
+
+def _err(cls, msg, status=400):
+    """anthropic 예외를 만든다 — 생성자 시그니처가 판마다 달라 우회한다."""
+    e = cls.__new__(cls)
+    Exception.__init__(e, msg)
+    e.status_code = status
+    return e
+
+CREDIT = _err(anthropic.BadRequestError,
+              "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', "
+              "'message': 'Your credit balance is too low to access the Anthropic API.'}}")
+BADCONTENT = _err(anthropic.BadRequestError, "Error code: 400 - messages.0: too long")
+ok(M._api_unavailable(CREDIT) and M._no_credit(CREDIT), "잔액 부족은 '바깥이 막힘'")
+ok(not M._api_unavailable(BADCONTENT) and not M._no_credit(BADCONTENT), "내용 탓 400 은 종목 문제")
+ok(M._api_unavailable(_err(anthropic.InternalServerError, "boom", 500)), "5xx 도 바깥이 막힘")
+ok(not M._api_unavailable(ValueError("json")), "파싱 오류는 종목 문제")
+
+# 마커는 날짜라서 다음 날 저절로 풀린다
+S.CREDIT_FILE = DATA / "anthropic_credit_exhausted"
+M.S.CREDIT_FILE = S.CREDIT_FILE
+S.mark_credit_exhausted("테스트")
+ok(S.credit_exhausted_today(), "마커를 남기면 오늘은 막힌 것으로 본다")
+S.CREDIT_FILE.write_text("2026-09-01\n", encoding="utf-8")
+ok(not S.credit_exhausted_today(), "어제 날짜 마커는 오늘을 막지 않는다")
+
+# submit 은 DART 를 부르기 전에 마커부터 본다 — run 하나가 600 호출을 태우지 않게
+S.mark_credit_exhausted("테스트")
+called = []
+REAL_PICK = M.pick_targets
+M.pick_targets = lambda *a, **k: (called.append("dart"), ({}, []))[1]
+r = M.submit(types.SimpleNamespace(), "2026-09-05 10:00")
+ok(r.get("no_credit") and called == [], "잔액 마커가 오늘이면 정량 수집도 하지 않는다", str(called))
+M.pick_targets = REAL_PICK
+S.CREDIT_FILE.unlink(missing_ok=True)
+
+# 회수 중에 막히면 — 실패로 세지 않고, 배치를 버리지도 않는다
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+(S.OUT_DIR / "000020.json").unlink(missing_ok=True)
+S.clear_fail("000020")
+mk("msgbatch_NOCREDIT", ["000020"])
+noen = GOODREP()
+for x in noen["bull"]:
+    x["title"]["en"] = ""; x["body"]["en"] = ""
+class DeadMsgs:
+    def create(self, **kw):
+        raise CREDIT
+cl4 = FakeClient(); cl4.messages.create = DeadMsgs().create
+cl4.messages.batches.store["msgbatch_NOCREDIT"] = batch_obj("msgbatch_NOCREDIT", "ended", [
+    result("000020", text="===JSON_START===" + json.dumps(noen, ensure_ascii=False) + "===JSON_END===")])
+try:
+    M.pickup(cl4, "2026-09-05 10:00")
+    raised = None
+except M.ApiUnavailable as e:
+    raised = e
+except SystemExit as e:
+    raised = e
+ok(isinstance(raised, M.ApiUnavailable), "회수 중 잔액이 막히면 ApiUnavailable 로 멈춘다", type(raised).__name__)
+ok(S.fail_count("000020") == 0, "그 종목에 실패를 적지 않는다", str(S.fail_count("000020")))
+st = json.loads((S.BATCH_DIR / "msgbatch_NOCREDIT.json").read_text(encoding="utf-8"))
+ok(S.is_pending(st) and "abandoned" not in st and "collected" not in st,
+   "배치는 그대로 둔다 — 충전 뒤 다시 받는다", str(sorted(st)))
+ok(S.credit_exhausted_today(), "회수 중 감지해도 마커를 남긴다")
+S.CREDIT_FILE.unlink(missing_ok=True)
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+
 print()
 print(f"통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)
