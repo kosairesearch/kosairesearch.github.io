@@ -1,230 +1,230 @@
 {
  "title": {
-  "ko": "AIOps 선점 → 헬스케어 전환: 재무 체력이 최대 관건",
-  "en": "AIOps Pioneer Pivots to Healthcare: Financial Endurance Is the Critical Test"
+  "ko": "매출 둔화·재무 부담 속 구조개선 과제",
+  "en": "Revenue Slowdown Meets Balance-Sheet Strain"
  },
  "lead": {
-  "ko": "2022년 영업흑자를 끝으로 3년 연속 적자가 확대 중인 모아데이타는 AI 이상탐지 원천 기술을 헬스케어·해외 시장으로 이식하는 전략적 전환을 추진 중이나, 부채비율 급등·지속적 현금 유출·동전주 규제 압박이 전환 속도를 제약하는 핵심 변수로 부각되고 있다.",
-  "en": "Having posted its last operating profit in 2022, MoaData is pursuing a strategic pivot from its core AIOps anomaly-detection technology into digital healthcare and overseas markets, yet a surging debt ratio, persistent cash outflows, and imminent penny-stock regulatory pressure are emerging as the binding constraints on the pace of that transition."
+  "ko": "AIOps 본업의 매출 둔화와 순손실 확대, 메자닌 오버행이 겹치며 재무구조 개선이 핵심 과제로 떠올랐다.",
+  "en": "A slowdown in the core AIOps business, widening net losses, and a heavy mezzanine overhang have made balance-sheet repair the central issue for the company."
  },
  "keypoints": [
   {
-   "ko": "2015년 국내 최초 AIOps 솔루션 '페타온 포캐스터' 상용화 이후 300여 개 기업·공공 고객사를 확보한 선발주자지만, 2025년 매출이 전년 대비 32.6% 급감하며 외형 수축이 뚜렷해졌다.",
-   "en": "A domestic first-mover since commercializing 'PETAON Forecaster' in 2015 with ~300 enterprise and public-sector clients, MoaData nevertheless saw 2025 revenue contract by 32.6% YoY, signaling a marked top-line deterioration."
+   "ko": "2025년 매출은 231.7억원으로 전년(343.7억원) 대비 큰 폭 감소했고 영업손실과 순손실이 함께 확대됐다.",
+   "en": "2025 revenue fell sharply to KRW 23.17 billion from KRW 34.37 billion a year earlier, with both operating and net losses widening."
   },
   {
-   "ko": "2025년 영업손실 59억 원(OPM -25.6%), 지배주주 순손실 197억 원으로 손실이 전년 대비 각각 346%·484% 확대됐으며, 부채비율은 303.8%로 2022년(50.5%) 대비 6배 이상 악화됐다.",
-   "en": "Operating loss widened to KRW 5.9bn (OPM -25.6%) and net owner-attributable loss to KRW 19.7bn in 2025—expanding 346% and 484% YoY respectively—while the debt-to-equity ratio surged to 303.8%, more than six times the 50.5% recorded in 2022."
+   "ko": "2026년 2분기까지 최근 4개 분기 누적 지배주주 순손실이 약 267억원에 달해 자본총계가 크게 줄었다.",
+   "en": "Cumulative owners' net loss over the most recent four quarters through 2026Q2 reached roughly KRW 26.7 billion, sharply eroding total equity."
   },
   {
-   "ko": "태국 아세안 최대 병원 네트워크 BDMS 산하 내셔널헬스케어와 AI 건강관리 플랫폼 계약을 체결, 2026년 6월부터 약 500만 명 고객 대상 서비스 적용 확대 예정으로 해외 헬스케어 매출 첫 가시화 여부가 주목된다.",
-   "en": "A service agreement with National Healthcare (a BDMS affiliate and part of the largest ASEAN hospital network) targets expanding the AI health management platform to ~5 million customers from June 2026, marking a potential first meaningful materialization of overseas healthcare revenue."
+   "ko": "기발행 전환사채·신주인수권부사채 잔액이 시가총액을 웃도는 수준으로 알려져 있어 잠재 희석 부담이 크다.",
+   "en": "Outstanding convertible bonds and bonds with warrants have been reported at a level exceeding market capitalization, implying significant potential dilution."
   },
   {
-   "ko": "2026년 7월 1일부터 주가 1,000원 미만 동전주 관리·퇴출 기준이 강화되고 코스닥 상장 유지 시총 요건이 200억 원으로 상향되는 등 규제 환경 변화가 자본구조 개선 압박을 가중시키고 있다.",
-   "en": "From July 1, 2026, strengthened management and delisting criteria apply to sub-1,000-won stocks, and the KOSDAQ market-cap threshold for continued listing rises to KRW 20bn, intensifying pressure on capital structure repair."
+   "ko": "최대주주 한상진 대표 및 회사 보유 주식·지분에 대한 담보 설정이 반복돼 지배구조 관련 모니터링이 필요하다.",
+   "en": "Repeated share-pledge arrangements involving controlling shareholder Han Sang-jin and company-held stakes warrant ongoing governance monitoring."
   },
   {
-   "ko": "회사는 2026년 2분기 턴어라운드를 공개 목표로 제시했으나, 2026년 1분기 영업손실이 23억 원으로 전년 동기(-4억 원) 대비 크게 악화돼 목표 달성 가시성이 아직 제한적이다.",
-   "en": "Management has publicly targeted a turnaround in Q2 2026, yet the Q1 2026 operating loss of KRW 2.3bn was a significant deterioration from the KRW 430mn loss in Q1 2025, leaving near-term visibility on that goal limited."
+   "ko": "코스닥 동전주 관리기준 및 시가총액 유지요건 강화 흐름 속에서 회사는 액면병합 등 자본구조 개선을 검토 중이다.",
+   "en": "Amid tightening KOSDAQ penny-stock and market-cap maintenance rules, the company is reviewing capital-structure measures such as a reverse stock split."
   }
  ],
  "business": {
-  "ko": "모아데이타는 2014년 설립된 AI 기반 이상탐지 전문기업으로, 2015년 국내 최초로 AIOps 솔루션 '페타온 포캐스터(PETAON Forecaster)'를 상용화하며 ICT 인프라 장애 예측 시장을 선점했다. 핵심 기술은 비정형 이벤트 데이터를 딥러닝 알고리즘으로 실시간 분석해 시스템 이상 현상을 선제적으로 탐지하고 원인을 분석하는 것으로, 대기업 그룹사 및 공공기관을 포함한 300여 개 고객사를 확보하고 있다. 2022년 자회사 세이지앤컴퍼니 설립, 2023년 1월 디지털 헬스케어 전문기업 메디에이지 인수를 통해 AI 이상탐지에서 디지털 헬스케어로 사업 영역을 확장했다. 디지털 헬스케어 부문에서는 웨어러블 디바이스 '플로핏(FLOFIT)'과 2026년 4월 출시된 초경량 스마트링 '플로핏 플러스(FLOFIT+)'를 통해 실시간 생체 데이터 수집·분석 서비스를 공급한다. 메디에이지를 통해서는 생체나이 분석, 유전자 분석(프롬에이지), 개인 건강검진 데이터 분석 서비스를 B2B 형태로 공공·기업·병원에 제공하며, 정신건강 분야로도 영역을 넓혀 AI 맞춤형 정신건강 플랫폼 '마음(MAEUM)'을 토스 미니앱을 통해 출시했다. 세이지앤컴퍼니를 통한 디지털 펫 헬스케어 사업('펫스케치' 앱 등)은 2025년 파트너사 코코스퀘어의 파산으로 차질을 겪었다. ICT 투자가 하반기에 집중되는 강한 계절성이 존재하며, AI 이상탐지 부문과 디지털 헬스케어 부문의 투트랙 전략을 병행 추진 중이다.",
-  "en": "Founded in 2014, MoaData is an AI-based anomaly detection specialist that commercialized Korea's first AIOps solution, 'PETAON Forecaster,' in 2015, establishing a first-mover position in the ICT infrastructure fault-prediction market. Its core capability lies in real-time deep-learning analysis of unstructured event data to proactively detect and diagnose system anomalies, with a client base of approximately 300 large enterprise and public-sector customers. The company extended its footprint from AI anomaly detection to digital healthcare through the establishment of subsidiary Sage & Company in 2022 and the acquisition of digital healthcare firm Mediage in January 2023. Within digital healthcare, it supplies real-time biometric data collection and analysis via the 'FLOFIT' wearable device and the ultra-light 'FLOFIT+' smart ring launched in April 2026. Through Mediage, it provides biological age analysis, genetic analysis (FromAge), and personalized health checkup data services on a B2B basis to public institutions, corporations, and hospitals; it has also entered the mental health space with 'MAEUM,' an AI-powered personalized wellness platform available on the Toss mini-app. Digital pet healthcare operations through Sage & Company (including the 'PetSketch' app) suffered a setback in 2025 following the bankruptcy of business partner Coco Square. The business exhibits strong seasonality concentrated in the second half of the year due to the timing of ICT procurement cycles, and management is executing a dual-track growth strategy spanning the AI anomaly detection and digital healthcare segments."
+  "ko": "모아데이타는 2014년 설립돼 2022년 3월 코스닥 기술특례로 상장한 AI 소프트웨어 기업으로, 핵심 사업은 ICT 시스템 장애를 사전에 예측하는 AIOps(AI for IT Operations) 솔루션 '페타온 포캐스터'다. 이 솔루션은 2015년 국내 최초로 상용화됐고 딥러닝 기술을 적용해 현재 300여 개 고객사를 확보하고 있다. 매출은 대부분 이 이상탐지·모니터링 솔루션에서 발생하며 2024년 1분기 기준 사업 부문별 매출 비중은 AI 이상탐지 90.2%, 디지털 헬스케어 9.8%였다. 회사는 2023년 1월 디지털 헬스케어 전문 기업 메디에이지를 인수하며 디지털 헬스케어 시장에 본격 진출했다. 메디에이지와 공동 개발한 헬스케어 플랫폼은 신체 센서 데이터와 건강검진 데이터 분석을 융합한 서비스로 2024 국제전자제품박람회(CES)에서 디지털헬스케어 분야 혁신상을 수상했다. 이후 신약개발·의약품 유통기업인 코스닥 상장사 비엘(현 모아라이프플러스)의 지분 19.2%를 확보하며 최대주주로 올랐다. 이를 통해 회사는 AIOps 중심의 IT 인프라 사업과 헬스케어·바이오 사업이라는 두 개의 축을 운영하는 구조로 변모했다. 경쟁구도는 국내 IT 인프라 모니터링·AIOps 소프트웨어 업체들과 헬스케어 데이터 스타트업이 혼재하는 형태이며, 회사는 이상탐지 원천기술을 스마트팩토리 등 인접 산업으로 확장하는 전략을 취하고 있다.",
+  "en": "Founded in 2014 and listed on KOSDAQ in March 2022 under the technology special listing track, MoaData's core business is 'PETAON Forecaster,' an AIOps (AI for IT Operations) solution that predicts ICT system failures before they occur. Commercialized domestically for the first time in 2015 using deep-learning technology, the solution has secured roughly 300 client companies to date. Most revenue is generated from this anomaly-detection and monitoring solution, and as of the first quarter of 2024, the revenue mix was 90.2% from AI anomaly detection and 9.8% from digital healthcare. The company entered the digital healthcare market in earnest in January 2023 by acquiring digital-health specialist Mediage. A health platform co-developed with Mediage, combining wearable sensor data with health checkup data analysis, won an innovation award in digital healthcare at CES 2024. Subsequently, the company acquired a 19.2% stake in KOSDAQ-listed drug-development and pharmaceutical distribution firm BL Corp (now MoaLifePlus), becoming its largest shareholder. Through these moves, MoaData has evolved into a two-pillar structure spanning AIOps-centered IT infrastructure and healthcare/bio businesses. The competitive landscape is a mix of domestic IT infrastructure monitoring/AIOps software vendors and healthcare-data startups, and the company is pursuing a strategy of extending its anomaly-detection core technology into adjacent industries such as smart factories."
  },
  "earnings": {
-  "ko": "모아데이타는 2022년 매출 217억 원, 영업이익 11억 원(OPM 5.0%), 순이익 18억 원으로 유일한 흑자 연도를 기록했다. 2023년에는 매출이 245억 원으로 성장했으나 영업손실 4억 원(OPM -1.5%)으로 적자 전환됐고, 2024년에는 매출 344억 원으로 외형이 확대되었음에도 영업손실 13억 원(OPM -3.9%)으로 손실이 확대됐다. 2025년에는 매출이 232억 원으로 전년 대비 32.6% 급감했고, 영업손실은 59억 원(OPM -25.6%)으로 전년 대비 346% 확대됐으며, 지배주주 순손실은 197억 원으로 484% 급증했다. 2025년 손실 급증의 주요 원인 중 하나는 반려동물 브랜드 코코스퀘어 파산에 따른 대손충당금 인식으로, 특히 4분기에 지배주주 귀속 순손실이 115억 원에 달해 연간 순손실의 절반 이상이 단일 분기에 집중됐다. AI 이상탐지 부문은 발주 축소로 매출이 감소했고, 디지털 헬스케어 부문은 R&D 및 데이터 비즈니스 기반으로 일부 매출이 증가했으나 기술 고도화 비용 증가로 전반적 수익성 개선에 기여하지 못했다. 현금흐름 측면에서도 영업활동현금흐름이 2022년 +17억 원에서 2025년 -18억 원으로 전환됐다. 2026년 1분기에는 매출 44억 원, 영업손실 23억 원, 지배주주 순손실 35억 원을 기록해 전년 동기(매출 61억 원, 영업손실 4억 원) 대비 양면에서 악화가 지속됐다. 2022년 50.5%였던 부채비율이 2025년 303.8%까지 치솟아 자본 잠식 우려가 높아진 상황이다.",
-  "en": "MoaData recorded its only profitable year in 2022, with revenue of KRW 21.7bn, operating income of KRW 1.1bn (OPM 5.0%), and net income of KRW 1.8bn. Revenue grew to KRW 24.5bn in 2023, but the company slipped into a KRW 360mn operating loss (OPM -1.5%), and while revenue expanded further to KRW 34.4bn in 2024, the operating loss widened to KRW 1.3bn (OPM -3.9%). In 2025, revenue fell sharply by 32.6% YoY to KRW 23.2bn, while the operating loss expanded by 346% to KRW 5.9bn (OPM -25.6%) and the net loss attributable to owners surged by 484% to KRW 19.7bn. A major driver of the 2025 loss spike was bad-debt recognition stemming from the bankruptcy of pet-brand partner Coco Square; Q4 2025 alone absorbed a net owner-attributable loss of KRW 11.5bn, concentrating more than half the full-year total in a single quarter. The AI anomaly detection segment saw revenue decline due to order reductions, while digital healthcare posted some revenue growth through data business and R&D activities but could not offset the margin drag from rising technology development costs. Operating cash flow turned negative, falling from +KRW 1.7bn in 2022 to -KRW 1.8bn in 2025. In Q1 2026, revenue fell to KRW 4.4bn, the operating loss remained at KRW 2.3bn, and the net owner-attributable loss was KRW 3.5bn—a deterioration on all measures compared with the KRW 6.1bn revenue and KRW 430mn operating loss posted in Q1 2025. The debt-to-equity ratio, which stood at 50.5% in 2022, surged to 303.8% by end-2025, significantly heightening concerns about the trajectory of financial soundness."
+  "ko": "연간 실적을 보면 2022년 매출 217.1억원, 영업이익 10.8억원, 지배주주 순이익 17.9억원으로 흑자 기조였으나, 2023년에는 매출이 245.4억원으로 늘었음에도 영업이익은 -3.6억원으로 적자로 돌아섰고 지배주주 순이익은 2.4억원의 작은 흑자로 줄었다. 2024년에는 매출이 343.7억원까지 늘었지만 영업손실이 -13.3억원으로 확대되고 지배주주 순손실도 -33.8억원을 기록했다. 2025년에는 매출이 231.7억원으로 크게 줄면서 영업손실 -59.3억원, 지배주주 순손실 -197.4억원으로 손익이 동시에 악화됐다. 분기별로 보면 2025년 3분기 매출 70.1억원에서 4분기 64.4억원, 2026년 1분기 43.9억원으로 매출이 계속 줄었다가 2분기에는 65.3억원으로 다소 회복됐지만, 영업손실은 4개 분기 모두 -14억원에서 -23억원 수준에서 벗어나지 못했다. 특히 지배주주 순손실은 2025년 4분기 -114.5억원, 2026년 2분기 -93.1억원으로 영업손실 규모를 크게 웃돌았는데, 이는 영업 외 손상평가나 관계·종속회사 관련 비용이 반영된 결과로 해석된다. 밸류라인 자료(2026년 3월 24일 게재, 잠정치)는 2025년 4분기 순손실을 110억원 안팎으로 언급했는데, 이후 확정된 지배주주 순손실 -114.5억원과 방향이 일치한다. 결과적으로 최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주 순손실 합계는 약 267억원에 달해 자본총계가 2024년 말 381.7억원에서 2025년 말 193.7억원으로 절반 가까이 줄었고, 부채비율도 같은 기간 136.4%에서 303.8%로 뛰었다. 영업활동현금흐름도 2022~2023년 양(+)에서 2024~2025년 연속 음(-)으로 전환돼, 이익뿐 아니라 현금창출력도 함께 약화된 모습이다.",
+  "en": "Annual results show a profitable 2022 with revenue of KRW 21.71 billion, operating profit of KRW 1.08 billion, and owners' net income of KRW 1.79 billion, but in 2023, despite revenue rising to KRW 24.54 billion, operating profit turned negative at -KRW 0.36 billion, while owners' net income shrank to a small positive KRW 0.24 billion. In 2024, revenue climbed further to KRW 34.37 billion, yet the operating loss widened to -KRW 1.33 billion and owners' net loss reached -KRW 3.38 billion. In 2025, revenue fell sharply to KRW 23.17 billion while both the operating loss (-KRW 5.93 billion) and owners' net loss (-KRW 19.74 billion) deepened simultaneously. On a quarterly basis, revenue declined from KRW 7.01 billion in 2025Q3 to KRW 6.44 billion in Q4 and KRW 4.39 billion in 2026Q1, before recovering somewhat to KRW 6.53 billion in Q2, while the operating loss stayed persistently in the range of roughly -KRW 1.4 billion to -KRW 2.3 billion across all four quarters. Notably, owners' net losses of -KRW 11.45 billion in 2025Q4 and -KRW 9.31 billion in 2026Q2 far exceeded the corresponding operating losses, suggesting the impact of non-operating impairment charges or costs tied to affiliated/subsidiary entities. A Valueline note (dated March 24, 2026, flagged as preliminary) cited a 2025Q4 net loss of roughly KRW 11.0 billion, directionally consistent with the confirmed owners' net loss of -KRW 11.45 billion. As a result, cumulative owners' net loss over the trailing four quarters (2025Q3–2026Q2) reached approximately KRW 26.7 billion, cutting total equity nearly in half from KRW 38.17 billion at end-2024 to KRW 19.37 billion at end-2025, while the debt ratio jumped from 136.4% to 303.8% over the same period. Operating cash flow also flipped from positive in 2022–2023 to negative in both 2024 and 2025, indicating that cash-generating capacity weakened alongside profitability."
  },
  "industry": {
-  "ko": "모아데이타가 영위하는 AIOps 시장은 2016년 가트너가 개념을 정의한 이후 빠르게 성장 중인 초기 시장으로, 글로벌 시장은 연평균 약 20% 수준의 고성장을 지속하고 있다. 클라우드 전환 가속화, IT 인프라 복잡성 증대, 자동화 수요 증가가 핵심 성장 동인이며 아시아태평양 지역의 성장 속도도 빠르다. 국내 AIOps 시장은 데이터센터 인프라 확대와 대기업·공공부문의 IT 안정성 수요를 배경으로 성장하고 있으나, IBM·Dynatrace·Datadog·Splunk 등 글로벌 대형 벤더와의 경쟁 압박이 상존한다. 국내 시장은 아직 초기 단계로 표준 벤치마크도 정립되어 있지 않아 기술 차별화가 경쟁 우위의 핵심이며, 이 점에서 모아데이타의 선발 레퍼런스는 일정한 방어막을 제공한다. 생성형 AI·LLM 기술이 AIOps 플랫폼에 통합되는 추세가 빠르게 가속화되고 있어, 기술 우위를 유지하기 위한 지속적 R&D 투자가 요구된다. 디지털 헬스케어 시장도 AI 기반 분석·웨어러블 보급 확대와 맞물려 고성장 구간에 있으며, 동남아시아 의료관광 시장과의 접점이 새로운 성장 기회로 부상하고 있다. AIOps 투자가 하반기에 집중되는 계절성은 모아데이타의 분기별 실적 변동성을 확대하는 구조적 요인으로 작용한다.",
-  "en": "The AIOps market that MoaData operates in is a fast-growing nascent segment formally defined by Gartner in 2016, with the global market expanding at an annual rate of approximately 20%. Accelerating cloud migration, rising IT infrastructure complexity, and growing automation demand are the core growth drivers, with the Asia-Pacific region also exhibiting strong momentum. The Korean market is developing against a backdrop of domestic data center infrastructure expansion and demand for IT stability from large enterprises and public-sector institutions, though persistent competitive pressure from global majors such as IBM, Dynatrace, Datadog, and Splunk remains a structural overhang. The domestic market is still at an early stage with no established performance benchmarks, making technology differentiation the decisive competitive variable—a context in which MoaData's first-mover reference base provides a certain degree of defense. The rapid acceleration of generative AI and LLM integration into AIOps platforms requires continuous R&D investment to maintain a technological edge. The digital healthcare market is also on a high-growth trajectory, supported by expanding AI-based analytics demand and wearable device adoption, with Southeast Asia's medical tourism market emerging as a new growth opportunity. The seasonality of AIOps procurement—heavily concentrated in the second half of the year—amplifies MoaData's quarterly earnings volatility as a structural factor."
+  "ko": "회사가 속한 AIOps 및 ICT 인프라 모니터링 시장은 데이터센터·클라우드 확산에 따른 시스템 복잡성 증가로 구조적 수요가 존재하는 영역이다. AIOps 시장은 2028년 324억 달러 규모로 성장할 것으로 전망되며, 의료데이터 분야는 연평균 45.99% 성장률이 기대되는 것으로 알려져 있다. 회사는 이 두 성장 축을 동시에 겨냥해 대형 레퍼런스 확보와 전국 영업망 구축을 추진해 왔다. 다만 시장 성장 전망과 별개로 개별 기업 실적은 발주 시기·규모에 따라 분기별 변동성이 크게 나타나는 특성이 있으며, 실제로 2025년에는 AI이상탐지 부문이 발주 축소로 매출이 줄고, 디지털 헬스케어 부문은 데이터 비즈니스와 연구개발 확대로 매출이 늘었으나 전반적 실적은 악화된 것으로 파악된다. 경쟁사 대비 포지션을 보면 회사는 자체 이상탐지 알고리즘이라는 원천기술을 보유하고 있어 기술적 차별화 요소는 있지만, 코스닥 소형 소프트웨어 업체 다수가 유사한 AI·데이터 분석 테마로 경쟁하고 있어 시장점유율을 정량적으로 특정하기는 어렵다. 헬스케어 부문은 아직 초기 단계로 국내외 주요 대형 사업자와 직접 경쟁하기보다는 특정 응용 영역(웨어러블 기반 건강관리, 검진 데이터 분석)에서 니치 시장을 공략하는 모습이다. 산업 사이클 측면에서는 AI·데이터 관련 테마에 대한 시장의 관심이 이어지고 있지만, 회사 개별 실적은 이러한 테마 성장과 별개로 최근 2년간 뚜렷한 하락 흐름을 보이고 있어 산업 성장성과 개별 기업 실적 간 괴리가 존재하는 상황이다.",
+  "en": "The AIOps and ICT infrastructure monitoring market the company operates in has structural demand tied to rising system complexity from data center and cloud expansion. The AIOps market is projected to reach USD 32.4 billion by 2028, and the medical data segment is reported to be expected to grow at an average annual rate of 45.99%. The company has pursued both growth axes simultaneously, building large reference accounts and a nationwide sales network. Separately from the broader market outlook, individual company performance shows considerable quarterly volatility depending on order timing and size; indeed, in 2025 the AI anomaly-detection segment reportedly saw revenue decline due to reduced order volumes, while the digital healthcare segment's revenue grew on data business and R&D expansion, but overall performance worsened. In terms of competitive positioning, the company holds proprietary anomaly-detection algorithms as a technical differentiator, but numerous small KOSDAQ-listed software firms compete under similar AI/data-analytics themes, making quantitative market-share estimates difficult. The healthcare segment remains at an early stage, targeting niche applications—wearable-based health management and checkup-data analysis—rather than directly competing with major domestic or global healthcare data providers. On the industry-cycle front, market interest in AI and data-related themes has persisted, but the company's own results have shown a clear downward trend over the past two years, separate from broader thematic growth, indicating a gap between industry growth potential and individual company performance."
  },
  "outlook": {
-  "ko": "회사는 2026년 2분기 턴어라운드를 공개 목표로 제시했으나, 2026년 1분기 실적이 전년 동기 대비 큰 폭으로 악화된 점은 이 목표의 가시성을 낮춘다. 태국 사업은 BDMS 계열 내셔널헬스케어와의 계약을 바탕으로 2026년 6월부터 약 500만 명 고객 대상 AI 건강관리 플랫폼 서비스 적용을 확대할 계획이어서, 실제 매출 전환 규모와 속도가 하반기 실적의 중요한 변수다. 2026년 4월 출시된 스마트링 '플로핏 플러스'는 태국 사업과 연계된 디바이스로, 국내외 B2B 공급 계약 확보 현황이 성과 지표로 주목된다. 동전주 규제 대응 차원에서 회사는 액면병합을 포함한 자본구조 개선 방안 및 주주환원 방안을 검토 중으로, 구체적 계획의 공시 여부가 단기 이벤트로 주목된다. 2026년 6월 26일 임시주주총회에서 사내이사 선임이 예정되어 있어 경영진 구성 변화 여부가 모니터링 포인트다. 2026년 3월 시점 기준 약 241억 원 규모로 보고된 메자닌 증권의 전환·상환 일정은 주주 희석 리스크와 유동성 리스크를 동시에 내포하며 향후 자본 구조에 영향을 미칠 수 있다.",
-  "en": "Management has publicly guided for a turnaround in Q2 2026, yet the sharp deterioration in Q1 2026 results relative to the year-ago period materially reduces near-term visibility on that target. The Thailand initiative, grounded in the service agreement with National Healthcare (a BDMS affiliate), is scheduled to extend AI health platform services to approximately 5 million customers from June 2026, making the scale and pace of actual revenue conversion a critical variable for second-half results. The 'FLOFIT+' smart ring launched in April 2026 is the linked device for the Thailand project, and the track record in securing domestic and overseas B2B supply contracts will be a key performance gauge. In response to penny-stock regulatory pressure, the company is reviewing capital structure measures including a reverse stock split and shareholder return initiatives—the timing of formal announcements on these plans is a near-term event to watch. The extraordinary general shareholder meeting on June 26, 2026, scheduled to elect a new internal director, is a governance milestone to monitor. Mezzanine securities reported at approximately KRW 24.1bn as of March 2026 carry simultaneous dilution and liquidity risks from their potential conversion or redemption schedule, which could meaningfully influence the future capital structure."
+  "ko": "회사는 재무구조 개선을 위한 조치를 병행하고 있다. 2026년 4월 이사회는 보유하고 있던 제7회차 자기 전환사채를 매도하기로 결정했으며, 이는 경영 효율성 제고와 재무구조 개선을 목적으로 한다고 공시했다. 회사는 이번 매도를 통해 확보한 자금을 바탕으로 재무 건전성을 확보할 방침이라고 밝혔다. 또한 최근 액면병합을 비롯한 자본구조 개선과 기업가치 제고 방안 마련에 착수했으며, 향후 구체적인 전략을 수립해 동전주 관련 제도 변화에 대응한다는 구상을 갖고 있다고 알려졌다. 다만 이는 아직 검토 초기 단계로 확정된 사안은 없는 것으로 전해졌다. 이러한 움직임의 배경에는 금융당국이 하반기부터 동전주 관리 기준을 강화할 예정이며 코스닥 상장 유지 시가총액 요건도 기존 150억원에서 200억원으로 상향된다는 규제 변화가 있다. 사업 측면에서는 페타온 포캐스터의 고객사 확대와 헬스케어 부문의 데이터 비즈니스·연구개발이 계속되고 있는 것으로 파악되나, 구체적인 신규 대형 수주나 해외 진출 일정에 대한 최근 공시는 확인되지 않는다. 향후 실적 개선 여부는 본업인 이상탐지 솔루션의 수주 회복 속도와 헬스케어 부문의 매출 기여 확대, 그리고 재무구조 개선 조치의 실질적 효과에 좌우될 것으로 보인다.",
+  "en": "The company is concurrently pursuing measures to improve its balance sheet. In April 2026, the board decided to sell the company's own 7th-series convertible bonds that it held, disclosing that the decision was aimed at improving management efficiency and financial structure. The company stated it intends to use the proceeds from this sale to strengthen its financial soundness. Separately, it has reportedly begun preparing capital-structure improvement and value-enhancement measures, including a possible reverse stock split, with plans to formulate a detailed strategy in response to regulatory changes affecting penny stocks. However, this is said to still be at an early review stage with nothing yet finalized. The backdrop to these moves includes a regulatory shift in which financial authorities are set to tighten penny-stock management standards from the second half of the year, raising the KOSDAQ market-cap maintenance requirement from KRW 15 billion to KRW 20 billion. On the business side, expansion of the PETAON Forecaster client base and continued data-business/R&D activity in the healthcare segment appear to be ongoing, though no recent disclosures confirm specific new large-scale orders or overseas expansion timelines. Whether performance improves going forward will likely hinge on the pace of recovery in core anomaly-detection orders, the growing revenue contribution from the healthcare segment, and the practical effectiveness of the financial-structure improvement measures."
  },
  "valuation_comment": {
-  "ko": "현재 주당순자산(BPS)은 455원으로, 2022년 이후 3년간의 누적 순손실로 장부가치가 큰 폭 하락한 수준이다. 현재 주가는 이 BPS를 상당히 상회하는 프리미엄 구간에서 형성되어 있어, 미래 실적 개선 및 헬스케어·해외 사업 성장에 대한 기대가 선반영되어 있음을 시사한다. 주당순이익(EPS)은 -620원으로 깊은 적자 상태이며, 수익 기반이 마련되지 않은 구간에서의 순자산 프리미엄은 실적 불확실성이 해소되지 않으면 지속적인 리스크 요인이 된다. 배당은 지급되고 있지 않으며, 손실이 지속되는 현 상황에서 단기 배당 재개 가능성은 낮아 배당수익률은 업종 평균을 현저히 하회하는 수준이다. 이익 회복 시점과 해외 헬스케어 매출 가시화 속도가 밸류에이션 재평가의 핵심 변수가 될 것으로 판단된다.",
-  "en": "The current book value per share (BPS) stands at KRW 455, materially reduced from prior-year levels by three years of accumulated net losses since 2022. The stock is currently trading at a meaningful premium to this BPS, implying that future earnings improvement and growth in healthcare and overseas businesses are to some extent priced in. With EPS at -620 won, the company remains in deep loss territory, and a premium-to-book multiple without an earnings foundation could serve as a persistent risk factor if profitability uncertainty remains unresolved. The company pays no dividends, and a near-term resumption of distributions is unlikely given the ongoing loss environment, leaving the dividend yield well below the sector average. The timing of earnings recovery and the pace at which overseas healthcare revenue becomes visible will be the decisive variables in any revaluation of the stock."
+  "ko": "회사의 주가는 자체 산출 기준 순자산 대비 할인 또는 프리미엄 여부가 시점에 따라 엇갈리게 나타나는 구간에 있으며, 외부 데이터(KRX 보완치)와 자체 산출치 사이에도 차이가 존재해 지표 산출 방식에 따라 해석이 달라질 수 있다. 과거 다년간의 실적 흐름을 보면 2022년 흑자에서 2023~2025년 연속 적자로, 그리고 적자 규모 자체가 매년 확대되는 방향으로 이동해 왔다는 점이 밸류에이션 해석의 기초가 된다. 배당은 최근 회계연도 기준으로 지급 내역이 없어 배당 관련 지표를 판단할 근거가 제한적이다. 시가총액 규모 자체가 작고 메자닌(전환사채·신주인수권부사채) 잠재 물량이 상당한 것으로 알려져 있어, 밸류에이션을 논할 때는 희석 가능성과 자본총계 변동성을 함께 고려할 필요가 있다. 결국 현재 거래되는 가격 수준을 절대적인 저평가·고평가로 단정하기보다는, 실적 개선 여부와 재무구조 조정 결과가 향후 밸류에이션 해석의 방향을 좌우할 변수로 보인다.",
+  "en": "The stock's relationship to net asset value has shifted between discount and premium depending on the measurement point, and there is a divergence between externally sourced figures and self-calculated figures, meaning interpretation can vary depending on methodology. The multi-year earnings trajectory—from a profitable 2022 to consecutive losses from 2023 through 2025, with the scale of losses widening each year—forms the basic backdrop for valuation interpretation. No dividend has been paid based on the most recent fiscal year, limiting the basis for assessing dividend-related metrics. Given the company's small market capitalization and a reportedly substantial pool of potential mezzanine (convertible bond/bond-with-warrant) dilution, any valuation discussion needs to account for dilution risk and equity volatility together. Ultimately, rather than characterizing the currently traded price level as definitively cheap or expensive, whether earnings improve and how the balance-sheet adjustment plays out appear to be the key variables shaping future valuation interpretation."
  },
  "bull": [
   {
    "title": {
-    "ko": "AIOps 원천 기술 선점과 레퍼런스 자산",
-    "en": "First-Mover AIOps Technology and Reference Asset Base"
+    "ko": "이상탐지 원천기술의 사업 확장성",
+    "en": "Expansion Potential of Core Anomaly-Detection Technology"
    },
    "body": {
-    "ko": "2015년 국내 최초 AIOps 솔루션 상용화 이후 딥러닝 기반 이상탐지 알고리즘에 대한 다수의 특허를 보유하고 있으며, 대기업·공공기관을 포함한 300여 개 고객사 레퍼런스는 신규 영업의 강력한 진입 장벽으로 기능한다. 글로벌 AIOps 시장이 연평균 20% 내외로 고성장하는 구조적 성장 환경은 선발주자인 모아데이타에 유리한 외부 환경이다. 국내 시장의 벤치마크 미정립 단계에서 축적된 레퍼런스와 알고리즘 고도화가 중장기 기술 우위로 이어질 가능성이 있다.",
-    "en": "Since commercializing Korea's first AIOps solution in 2015, MoaData has accumulated numerous patents covering deep-learning-based anomaly detection algorithms, while its reference base of approximately 300 enterprise and public-sector clients provides a strong barrier to entry in new sales engagements. The global AIOps market's structural tailwind of roughly 20% annual growth creates a favorable external environment for this domestic first-mover. In a market where performance benchmarks remain undefined, accumulated references and ongoing algorithm enhancement could translate into a sustainable medium-to-long-term technological advantage."
+    "ko": "회사는 2015년 국내 최초로 상용화한 이상탐지 알고리즘을 보유하고 있으며, 이를 활용해 300여 개 고객사를 확보한 IT 인프라 모니터링 사업과 헬스케어 사업을 함께 운영하고 있다. 헬스케어 부문에서는 CES 2024에서 혁신상을 수상한 플랫폼을 보유하고 있어 기술력에 대한 외부 인증도 일부 확보한 상태다. 원천기술 하나를 여러 산업(IT 운영, 헬스케어, 스마트팩토리 등)에 적용할 수 있다는 점은 사업 다각화의 기반이 된다.",
+    "en": "The company holds an anomaly detection algorithm that it first commercialized domestically in 2015, and using this technology it operates an IT infrastructure monitoring business with around 300 client companies alongside a healthcare business. In the healthcare segment, the company holds a platform that won an Innovation Award at CES 2024, securing some external certification of its technological capabilities. The fact that a single core technology can be applied across multiple industries (IT operations, healthcare, smart factory, etc.) provides a foundation for business diversification."
    }
   },
   {
    "title": {
-    "ko": "태국 헬스케어 계약: 해외 플랫폼 수출 모델의 첫 검증",
-    "en": "Thailand Healthcare Deal: First Validation of an Overseas Platform Export Model"
+    "ko": "전방시장의 구조적 성장 전망",
+    "en": "Structural Growth Outlook in End Markets"
    },
    "body": {
-    "ko": "아세안 최대 병원 네트워크 BDMS 계열 내셔널헬스케어와 AI 건강관리 플랫폼 '라이프스케치' 계약을 체결, 2026년 6월부터 약 500만 명 고객 대상 서비스 확대를 계획하고 있다. 태국을 교두보로 의료관광 인프라가 발달한 동남아시아 시장 확장이 가시화된다면 중장기 성장 동력이 될 수 있다. 스마트링 '플로핏 플러스'와 AI 건강관리 플랫폼의 통합 공급 모델은 하드웨어-소프트웨어 번들로 고객 이탈률을 낮추는 효과도 기대된다.",
-    "en": "A service agreement for the AI health management platform 'LifeSketch' with National Healthcare (a BDMS affiliate) is set to expand service to approximately 5 million customers from June 2026. If Thailand serves as a bridgehead for broader penetration of the well-developed Southeast Asian medical tourism market, it could become a meaningful medium-to-long-term growth driver. The integrated delivery of the 'FLOFIT+' smart ring alongside the AI health platform creates a hardware-software bundle that could improve customer retention."
+    "ko": "AIOps 시장은 2028년까지 324억 달러 규모로, 의료데이터 분야는 연평균 45.99% 성장할 것으로 전망되는 것으로 알려져 있다. 데이터센터·클라우드 확산에 따른 IT 인프라 복잡성 증가와 고령화에 따른 헬스케어 데이터 수요 증가는 회사가 속한 두 사업 부문 모두에 우호적인 거시 환경을 제공한다. 다만 이러한 시장 성장이 회사의 개별 매출로 즉시 이어지는지는 향후 분기 실적으로 확인이 필요하다.",
+    "en": "The AIOps market is reportedly projected to reach USD 32.4 billion by 2028, while the medical data sector is expected to grow at a CAGR of 45.99%. Increasing IT infrastructure complexity driven by the expansion of data centers and cloud computing, along with growing demand for healthcare data due to population aging, provide a favorable macro environment for both of the company's business segments. However, whether this market growth translates immediately into the company's individual revenue needs to be confirmed through future quarterly results."
    }
   },
   {
    "title": {
-    "ko": "AI 핵심 기술의 수직 확장 가능성",
-    "en": "Vertical Extensibility of the Core AI Technology"
+    "ko": "재무구조 개선을 위한 자체 조치",
+    "en": "Self-Directed Financial Restructuring Actions"
    },
    "body": {
-    "ko": "ICT 인프라 이상탐지에서 검증된 딥러닝 알고리즘을 신체 이상 탐지, 스마트팩토리 설비 감지 등으로 수직 확장하는 전략은 동일한 기술 기반에서 복수의 시장을 공략하는 레버리지 구조다. 메디에이지의 대규모 건강 데이터와 모아데이타의 AI 알고리즘 결합이 시너지를 낸다면, 국내외 헬스케어 기관의 데이터 분석 수요를 포착할 수 있다. 토스 미니앱을 통한 정신건강 플랫폼 '마음' 출시는 B2C 채널 확장과 사용자 데이터 확보의 발판이 될 수 있다.",
-    "en": "The strategy of vertically extending deep-learning anomaly-detection algorithms—validated in ICT infrastructure—into body anomaly detection and smart factory equipment diagnostics creates a leveraged model that targets multiple markets from a single technology base. If the combination of Mediage's extensive health datasets and MoaData's AI algorithms yields meaningful synergies, the company could capture demand from domestic and overseas healthcare institutions for data analytics. The launch of the AI mental health platform 'MAEUM' on the Toss mini-app could serve as a foothold for expanding B2C channels and building a proprietary user data asset."
+    "ko": "회사는 2026년 4월 자기 전환사채 매도를 결정하며 확보한 자금으로 재무 건전성을 강화하겠다는 방침을 공시했다. 또한 액면병합을 포함한 자본구조 개선 방안을 검토 중인 것으로 알려져 있어, 회사 스스로 재무·주가 관리 필요성을 인식하고 대응에 나서고 있는 모습이다.",
+    "en": "In April 2026, the company disclosed a plan to strengthen its financial soundness using funds secured from the decision to sell its own convertible bonds. It is also reportedly reviewing capital structure improvement measures including a reverse stock split, indicating that the company itself recognizes the need for financial and share price management and is taking action accordingly."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "급격한 재무 건전성 악화와 지속적 현금 유출",
-    "en": "Rapid Financial Deterioration and Persistent Cash Burn"
+    "ko": "매출 감소와 손실 확대의 동시 진행",
+    "en": "Simultaneous Revenue Decline and Widening Losses"
    },
    "body": {
-    "ko": "2022년 흑자 이후 3년 연속 적자가 확대되며 2025년 부채비율이 303.8%까지 치솟았고, 자기자본은 2022년 371억 원에서 2025년 194억 원으로 크게 감소했다. 영업활동현금흐름도 2022년 +17억 원에서 2025년 -18억 원으로 전환돼 본업의 현금 창출력이 소실된 상태다. 2026년 3월 기준 약 241억 원 수준으로 보고된 메자닌 증권은 전환 시 주주 희석, 상환 시 유동성 압박이라는 이중 리스크를 내포한다.",
-    "en": "Following the 2022 profit, losses have widened for three consecutive years, pushing the 2025 debt-to-equity ratio to 303.8% while equity contracted from KRW 37.1bn in 2022 to KRW 19.4bn in 2025. Operating cash flow turned negative—from +KRW 1.7bn in 2022 to -KRW 1.8bn in 2025—indicating the core business has ceased to generate cash. Mezzanine securities reported at approximately KRW 24.1bn as of March 2026 carry a dual-risk structure: conversion risk (shareholder dilution) and redemption risk (liquidity strain)."
+    "ko": "2025년 매출은 231.7억원으로 전년(343.7억원) 대비 크게 줄었고, 영업손실은 -13.3억원에서 -59.3억원으로, 지배주주 순손실은 -33.8억원에서 -197.4억원으로 동시에 확대됐다. 2026년 들어서도 분기별 영업손실이 -14억원에서 -23억원대에서 벗어나지 못하고 있어 단기간 내 손익 구조 개선 신호는 아직 뚜렷하지 않다.",
+    "en": "2025 revenue came in at KRW 23.17 billion, sharply down from KRW 34.37 billion the previous year, while operating loss widened from -KRW 1.33 billion to -KRW 5.93 billion, and net loss attributable to controlling shareholders expanded from -KRW 3.38 billion to -KRW 19.74 billion at the same time. Even into 2026, quarterly operating losses have remained in the range of -KRW 1.4 billion to -KRW 2.3 billion, showing no clear signs yet of near-term improvement in the profit and loss structure."
    }
   },
   {
    "title": {
-    "ko": "매출 역성장 지속과 2026년 1분기 악화",
-    "en": "Continued Revenue Contraction and Deteriorating Q1 2026 Results"
+    "ko": "메자닌 오버행에 따른 희석 부담",
+    "en": "Dilution Overhang from Outstanding Mezzanine Securities"
    },
    "body": {
-    "ko": "2025년 매출이 전년 대비 32.6% 급감한 232억 원에 그쳤고, 2026년 1분기에도 44억 원으로 전년 동기(61억 원) 대비 역성장이 이어지고 있다. AIOps 부문의 발주 축소와 코코스퀘어 파산 여파가 단기 내 정상화되기 어려운 구조적 부담으로 남아 있다. 회사가 목표로 한 2분기 턴어라운드 달성 시점까지 추가적인 매출·손실 압박이 지속될 가능성이 있다.",
-    "en": "Revenue fell sharply by 32.6% YoY to KRW 23.2bn in 2025, and the negative trend continued into Q1 2026, where revenue of KRW 4.4bn compared unfavorably with KRW 6.1bn in Q1 2025. The contraction in AIOps orders and the lingering fallout from the Coco Square bankruptcy represent structural headwinds that are unlikely to normalize quickly. Additional revenue and operating loss pressure could persist through the period leading up to the company's self-guided Q2 2026 turnaround target."
+    "ko": "2026년 3월 중순 기준 기발행 메자닌(전환사채) 잔액은 221억원, 신규 발행분을 포함하면 241억원으로 당시 시가총액(약 220억원)을 웃도는 수준이며 이는 발행주식총수 기준 약 60%에 달하는 잠재 물량으로 파악됐다. 이후 일부 회차의 매도·처분이 있었지만, 잠재 희석 규모 자체가 시가총액과 견줄 만큼 크다는 점은 구조적 부담으로 남아있다.",
+    "en": "As of mid-March 2026, the outstanding balance of previously issued mezzanine securities (convertible bonds) stood at KRW 22.1 billion, and including new issuances this rises to KRW 24.1 billion, exceeding the market capitalization at the time (approximately KRW 22 billion); this was found to represent potential dilution of about 60% based on total shares outstanding. While some tranches have since been sold or disposed of, the fact that the scale of potential dilution itself is comparable to market capitalization remains a structural burden."
    }
   },
   {
    "title": {
-    "ko": "규제 변화: 동전주 기준 강화 임박",
-    "en": "Regulatory Risk: Imminent Enforcement of Penny-Stock Rules"
+    "ko": "반복되는 정정공시와 지배구조 불확실성",
+    "en": "Recurring Restatements and Governance Uncertainty"
    },
    "body": {
-    "ko": "2026년 7월 1일부터 주가 1,000원 미만 종목에 대한 관리·퇴출 기준이 본격 시행되며, 코스닥 상장 유지 시가총액 요건도 기존 150억 원에서 200억 원으로 상향된다. 현재 주가가 기준선 부근에서 등락하는 만큼 조건 충족 여부가 지속적인 모니터링 대상이다. 액면병합 등 구조적 대응이 늦어질 경우 투자자 불확실성이 고조되고 관리종목 지정 리스크가 현실화될 수 있다.",
-    "en": "From July 1, 2026, strengthened management and delisting criteria take full effect for sub-1,000-won stocks, and the KOSDAQ minimum market-cap requirement for continued listing rises from KRW 15bn to KRW 20bn. With the current share price fluctuating near the threshold, eligibility compliance is a continuous monitoring concern. Delays in implementing structural remedies such as a reverse stock split could heighten investor uncertainty and increase the risk of a managed-issue designation."
+    "ko": "DART에 집계된 최근 공시 목록에서는 정정·후속 공시가 다수 반복돼 21건에 이르는 정정공시가 확인됐다. 또한 감사보고서는 연속해 적정의견을 받았지만 핵심감사사항으로 종속·관계회사 주식 손상평가와 영업권 손상평가가 기재돼 회계추정의 불확실성이 지적됐다. 최대주주 및 회사 보유 지분에 대한 담보 설정도 반복적으로 이뤄지고 있어 지배구조 안정성에 대한 확인이 계속 필요하다.",
+    "en": "Among the recent disclosure list compiled on DART, corrective and follow-up disclosures have repeatedly occurred, with a total of 21 corrective disclosures confirmed. In addition, while the audit report received an unqualified opinion in consecutive years, key audit matters cited impairment assessments of shares in subsidiaries/affiliates and impairment assessment of goodwill, pointing to uncertainty in accounting estimates. Collateral has also been repeatedly placed on shares held by the largest shareholder and the company itself, requiring continued monitoring of governance stability."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "유동성·자본 구조 위험",
-    "en": "Liquidity and Capital Structure Risk"
+    "ko": "재무·유동성 리스크",
+    "en": "Financial and Liquidity Risk"
    },
    "body": {
-    "ko": "2025년 말 부채 589억 원, 자기자본 194억 원으로 부채비율 303.8%에 달하며, 현금흐름도 적자 기조다. 2026년 3월 기준 약 241억 원 수준으로 보고된 메자닌 증권의 전환·상환 일정이 도래하면 상당한 주식 희석 또는 유동성 압박이 발생할 수 있다. 추가 외부 투자 유치나 유상증자 여부가 자본구조의 방향을 결정하는 핵심 변수이며, 자금 조달 성패가 사업 전환 속도를 좌우한다.",
-    "en": "As of end-2025, liabilities of KRW 58.9bn against equity of KRW 19.4bn yields a debt-to-equity ratio of 303.8%, with cash flow remaining in negative territory. The potential conversion or redemption of mezzanine securities reported at approximately KRW 24.1bn as of March 2026 could trigger significant share dilution or liquidity strain. Whether the company successfully secures additional external investment or conducts a rights offering is the decisive variable determining the trajectory of its capital structure and the pace of its business pivot."
+    "ko": "2025년 말 자본총계는 193.7억원으로 2024년 말 381.7억원 대비 절반 가까이 줄었고, 부채비율은 136.4%에서 303.8%로 급등했다. 영업활동현금흐름도 2024~2025년 연속 음(-)을 기록해, 영업에서 현금을 창출하지 못하고 외부 조달(전환사채·신주인수권부사채 등)에 의존하는 구조가 이어지고 있다.",
+    "en": "Total equity at the end of 2025 stood at KRW 19.37 billion, nearly halved from KRW 38.17 billion at the end of 2024, while the debt ratio surged from 136.4% to 303.8%. Operating cash flow was also negative in both 2024 and 2025, continuing a structure in which the company fails to generate cash from operations and relies instead on external financing (convertible bonds, bonds with warrants, etc.)."
    }
   },
   {
    "cat": {
-    "ko": "사업 다각화 실행 리스크",
-    "en": "Business Diversification Execution Risk"
+    "ko": "지배구조·지분 담보 리스크",
+    "en": "Governance and Share-Pledge Risk"
    },
    "body": {
-    "ko": "디지털 헬스케어 및 해외 시장 진출에는 지속적인 R&D 비용과 시장 개척 비용이 수반되며, 이미 기술 고도화 비용 증가가 수익성을 압박하고 있다. 태국 헬스케어 계약이 실제 의미 있는 매출로 전환되는 속도와 규모는 아직 검증 단계에 있다. 코코스퀘어 파산 사례처럼 신규 사업 파트너의 재무 리스크가 모아데이타에 전이되는 거래처 부실 리스크도 잠재적 위험으로 남아 있다.",
-    "en": "Expansion into digital healthcare and overseas markets continues to demand substantial R&D and market development expenditures, with rising technology advancement costs already pressuring profitability. The pace and scale at which the Thailand healthcare contract converts to meaningful revenue has yet to be validated. As illustrated by the Coco Square bankruptcy, counterparty credit risk—where a new business partner's financial difficulties transfer losses to MoaData—remains a latent exposure."
+    "ko": "최대주주인 모아데이타는 보유 중인 모아라이프플러스 주식 724만4268주(지분율 18.16%) 전량을 담보로 제공했으며, 담보권이 전부 실행될 경우 모아데이타의 모아라이프플러스 보유 지분은 0%로 감소해 최대주주가 변경될 수 있다. 회사 및 최대주주 개인의 주식 담보 설정 계약이 반복적으로 체결·정정되고 있어 담보권 실행 조건(채무상환 기한이익 상실 등) 발생 시 지분구조가 급변할 가능성이 있다.",
+    "en": "The largest shareholder, Moa Data, has pledged its entire holding of 7,244,268 shares (18.16% stake) in Moa Life Plus as collateral, and if the collateral rights are fully exercised, Moa Data's stake in Moa Life Plus would fall to 0%, potentially resulting in a change of the largest shareholder. Share collateral agreements involving both the company and the largest shareholder individually have been repeatedly executed and revised, raising the possibility of a sudden shift in the ownership structure should collateral enforcement conditions (such as acceleration of debt repayment) occur."
    }
   },
   {
    "cat": {
-    "ko": "경쟁·기술 심화 리스크",
-    "en": "Competitive Intensity and Technology Obsolescence Risk"
+    "ko": "상장유지 요건 리스크",
+    "en": "Listing Maintenance Requirement Risk"
    },
    "body": {
-    "ko": "AIOps 시장에서 IBM·Dynatrace·Datadog·Splunk 등 자본력과 글로벌 브랜드를 겸비한 대형 벤더와의 경쟁이 심화될 수 있으며, 이들의 국내 시장 진출 심화 시 소규모 기업이 받는 압박은 커진다. 생성형 AI·LLM 기술이 AIOps 플랫폼에 빠르게 통합되는 추세에서 기술 우위 유지를 위한 투자가 지속적으로 요구된다. 헬스케어 분야의 의료데이터 보호 규제 강화 및 의료기기 인허가 요건도 사업 진행 속도에 영향을 미칠 수 있다.",
-    "en": "Competitive pressure from large global AIOps vendors—including IBM, Dynatrace, Datadog, and Splunk—combining significant capital resources with strong brand recognition could intensify, amplifying the strain on smaller players if these firms deepen their domestic market focus. The rapid pace of generative AI and LLM integration into AIOps platforms requires continuous investment to maintain a differentiated technological position. Stricter medical data protection regulations and medical device approval requirements in the healthcare domain could also slow the company's execution in that segment."
+    "ko": "금융당국은 2026년 하반기부터 동전주 관리 기준을 강화하고 코스닥 상장 유지 시가총액 요건을 기존 150억원에서 200억원으로 상향할 예정인 것으로 알려졌다. 회사의 시가총액 규모와 낮은 주가 수준을 고려하면 강화된 기준 충족 여부에 대한 지속적인 확인이 필요하며, 회사가 검토 중인 액면병합 등 대응책의 실행 여부도 관찰 대상이다.",
+    "en": "Financial authorities are reportedly set to tighten management standards for penny stocks starting in the second half of 2026 and raise the KOSDAQ listing maintenance market capitalization requirement from the existing KRW 15 billion to KRW 20 billion. Given the company's market capitalization size and low share price level, continued monitoring is needed as to whether it will meet the strengthened requirements, and whether the response measures under review, such as a reverse stock split, will actually be implemented is also something to watch."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 6월 26일",
-    "en": "June 26, 2026"
+    "ko": "2026년 11월 중순(3분기보고서 제출 시한 전후)",
+    "en": "Mid-November 2026 (around the Q3 report filing deadline)"
    },
    "what": {
-    "ko": "임시주주총회에서 사내이사 선임 안건 처리. 경영진 구성 변화 및 향후 전략 방향성에 대한 시그널을 확인할 수 있는 이벤트다.",
-    "en": "Extraordinary general meeting to elect a new internal director. The outcome provides a signal on changes in management composition and the forward strategic direction of the company."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 7월 1일",
-    "en": "July 1, 2026"
-   },
-   "what": {
-    "ko": "금융위원회의 동전주 관리·퇴출 기준 본격 시행일. 주가 1,000원 미만 지속 및 시가총액 200억 원 미충족 시 관리종목 지정·상장폐지 심사 대상이 될 수 있어 주가 수준과 시총 추이를 면밀히 모니터링해야 한다.",
-    "en": "Effective date of the FSC's enhanced penny-stock management and delisting rules, including the KOSDAQ market-cap threshold increase to KRW 20bn. Persistent sub-1,000-won pricing or failure to meet the market-cap threshold could trigger a managed-issue designation or delisting review, making share price and market capitalization trends a critical tracking item."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 8월 초~중순 (예정)",
-    "en": "Early-to-Mid August 2026 (expected)"
-   },
-   "what": {
-    "ko": "2026년 2분기 실적 발표. 회사가 목표로 한 '2분기 턴어라운드' 달성 여부를 판단하는 핵심 시점으로, 매출 회복 폭, 영업손익 방향 전환, 헬스케어 부문 매출 가시화 여부가 가장 중요한 지표다.",
-    "en": "Expected Q2 2026 earnings release. This is the decisive checkpoint for assessing whether management's Q2 turnaround guidance is achieved; the degree of revenue recovery, the direction of operating profit/loss, and the materialization of healthcare segment revenue are the most critical metrics."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 6월~9월",
-    "en": "June–September 2026"
-   },
-   "what": {
-    "ko": "태국 BDMS 계열 내셔널헬스케어와의 AI 건강관리 플랫폼 서비스 확대 이행 현황. 약 500만 명 고객 적용이 계획대로 진행되는지, 추가 레퍼런스나 계약으로 연결되는지 확인이 필요하다.",
-    "en": "Progress on executing the AI health management platform expansion with Thailand's National Healthcare (BDMS affiliate). Key checks include whether the planned rollout to ~5 million customers proceeds on schedule and whether it generates additional references or follow-on contracts."
+    "ko": "2026년 3분기 실적이 공시되면 매출 회복 지속 여부와 영업손실 축소 여부를 확인해야 한다.",
+    "en": "Once 2026Q3 results are disclosed, it will be important to check whether the revenue recovery continues and whether the operating loss narrows."
    }
   },
   {
    "when": {
     "ko": "2026년 하반기 중",
-    "en": "During H2 2026"
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "액면병합 등 주가·자본구조 개선 방안의 구체적 공시 여부, 및 메자닌 증권 전환·상환 일정 관련 공시 모니터링. 이는 주주 희석 규모와 유동성 확보 여부를 판단하는 핵심 정보다.",
-    "en": "Monitor for formal announcements on capital structure improvement measures (including a potential reverse stock split) and disclosures on the mezzanine securities conversion and redemption schedule. These are key inputs for assessing the extent of potential shareholder dilution and the adequacy of liquidity."
+    "ko": "강화된 코스닥 시가총액 유지요건(200억원) 충족 여부와 관리종목 지정 관련 이슈 발생 여부를 점검해야 한다.",
+    "en": "It is worth monitoring whether the company satisfies the strengthened KOSDAQ market-cap maintenance requirement (KRW 20 billion) and whether any administrative-issue designation risk emerges."
+   }
+  },
+  {
+   "when": {
+    "ko": "회사의 이사회 결의 등 공시 시점",
+    "en": "At the time of any related board resolution or disclosure"
+   },
+   "what": {
+    "ko": "액면병합 등 자본구조 개선 방안이 구체화·확정되는지 여부와 세부 내용을 확인해야 한다.",
+    "en": "It will be necessary to confirm whether and how capital-structure measures such as a reverse stock split become finalized and their specific terms."
+   }
+  },
+  {
+   "when": {
+    "ko": "메자닌 잔존 물량의 전환청구·풋옵션 행사 공시 시점",
+    "en": "At the time of disclosures on conversion requests or put-option exercises of outstanding mezzanine securities"
+   },
+   "what": {
+    "ko": "잔존 전환사채·신주인수권부사채의 전환·행사 여부에 따라 추가 희석 규모를 확인해야 한다.",
+    "en": "The scale of any additional dilution should be checked based on whether outstanding convertible bonds or bonds with warrants are converted or exercised."
+   }
+  },
+  {
+   "when": {
+    "ko": "모아라이프플러스 관련 담보권 처리 공시 시점",
+    "en": "At the time of disclosures regarding the handling of the MoaLifePlus-related share pledge"
+   },
+   "what": {
+    "ko": "담보권 실행 여부와 그에 따른 모아라이프플러스 최대주주 변경 가능성을 확인해야 한다.",
+    "en": "It is necessary to confirm whether the pledge is executed and the resulting possibility of a change in MoaLifePlus's largest shareholder."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "모아데이타는 2015년 국내 최초로 AIOps 솔루션을 상용화한 선발주자로서의 기술 원천 역량과 300여 개 기업·공공 레퍼런스를 보유하고 있으나, 2022년 흑자 이후 3년 연속 적자 확대와 부채비율 급등으로 재무 구조가 크게 취약해진 상태다. 2025년에는 코코스퀘어 파산 여파와 AIOps 발주 축소가 겹치며 매출이 32.6% 급감하고 손실이 폭발적으로 확대됐으며, 2026년 1분기에도 개선의 신호가 포착되지 않고 있다. 태국 BDMS 계열 내셔널헬스케어와의 헬스케어 플랫폼 계약, 스마트링 '플로핏 플러스' 출시 등 해외 확장 시도는 중기 성장 스토리의 토대가 될 수 있으나, 실제 매출 전환과 수익성 기여까지는 추가적인 검증이 필요하다. 2026년 7월부터 동전주 관리 기준 강화와 코스닥 시총 유지 요건 상향이라는 규제 환경 변화가 자본구조 개선 압박을 가중시키고 있으며, 메자닌 증권의 전환·상환 일정은 잠재적 주주 희석과 유동성 리스크를 동시에 내포한다. 전략적 전환의 잠재력과 재무적 취약성이 공존하는 시기로, 향후 분기 실적, 태국 사업 이행, 자본구조 개선 방안 공시 여부가 핵심 관전 포인트다.",
-   "en": "MoaData possesses foundational technology capabilities as Korea's first AIOps solution commercializer since 2015, supported by approximately 300 enterprise and public-sector references, but three years of consecutive loss widening following its 2022 profit have materially weakened its financial structure, with the debt-to-equity ratio surging to 303.8%. In 2025, the combined effects of the Coco Square bankruptcy fallout and a reduction in AIOps orders caused revenue to plunge 32.6% while losses expanded dramatically, and the adverse trend showed no signs of reversal in Q1 2026. The Thailand BDMS healthcare platform agreement and the 'FLOFIT+' smart ring launch are potential foundations for a medium-term overseas growth story, but actual revenue conversion and profitability contribution still require validation. Regulatory headwinds—the July 2026 enforcement of penny-stock management rules and the raised KOSDAQ market-cap listing requirement—are adding further urgency to capital structure repair, while the mezzanine securities conversion and redemption schedule carries simultaneous dilution and liquidity risks. The company is at a juncture where strategic pivoting potential and financial fragility coexist, making quarterly earnings results, the pace of Thailand business execution, and the substance of any capital structure announcements the pivotal focal points for ongoing assessment."
+   "ko": "모아데이타는 국내 최초 상용화한 AIOps 이상탐지 솔루션을 기반으로 IT 인프라 모니터링과 디지털 헬스케어라는 두 사업 축을 운영하는 코스닥 소프트웨어 기업이다. 그러나 확정 재무를 보면 2022년 흑자에서 2023~2025년 연속 적자로 전환했고, 2025년에는 매출이 32.6% 줄면서 영업손실과 순손실이 동시에 확대되는 등 실적 악화가 뚜렷하다. 최근 4개 분기 지배주주 순손실 합계가 약 267억원에 이르면서 자본총계가 1년 만에 거의 반토막 났고 부채비율도 300%를 넘어섰다. 여기에 시가총액을 웃도는 규모로 알려진 메자닌 잠재 물량, 최대주주 및 회사 보유 지분에 대한 반복적인 담보 설정, 다수의 정정공시 등 지배구조·공시 신뢰성 관련 이슈도 함께 존재한다. 회사는 자기 전환사채 매도와 액면병합 검토 등 재무구조 개선 조치를 취하고 있으나 아직 초기 단계이며, 강화된 코스닥 시가총액 유지요건 충족 여부도 지켜봐야 하는 변수다. 결국 AIOps·헬스케어 시장의 구조적 성장 전망과 회사의 실제 실적·재무구조 개선 속도 사이의 간극을 어떻게 좁혀가는지가 향후 관찰의 핵심이 될 것으로 보인다.",
+   "en": "MoaData is a KOSDAQ-listed software company operating two business pillars—IT infrastructure monitoring and digital healthcare—built around its domestically first-commercialized AIOps anomaly-detection solution. However, confirmed financials show a shift from profitability in 2022 to consecutive losses from 2023 through 2025, with 2025 revenue falling 32.6% while both operating and net losses widened simultaneously, marking a clear deterioration in performance. Cumulative owners' net loss over the trailing four quarters reached roughly KRW 26.7 billion, nearly halving total equity within a year and pushing the debt ratio above 300%. Compounding this are governance and disclosure-reliability issues, including a reportedly substantial pool of potential mezzanine dilution exceeding market capitalization, recurring share-pledge arrangements involving the controlling shareholder and company-held stakes, and numerous restated filings. The company has taken steps such as selling its own convertible bonds and reviewing a reverse stock split to improve its financial structure, but these remain at an early stage, and whether it meets the strengthened KOSDAQ market-cap maintenance requirement is another variable to watch. Ultimately, how the gap between the structural growth outlook for the AIOps and healthcare markets and the company's actual earnings and balance-sheet repair pace narrows will likely be the key point to observe going forward."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A288980&cID=&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
-  "https://dealsite.co.kr/articles/158446",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/leehosun2000",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A288980",
+  "https://itooza.com/vscore/288980",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A288980",
   "https://www.investing.com/equities/moadata",
-  "https://m.irgo.co.kr/IR-COMP/288980/",
+  "https://valueline.co.kr/finance/summary/288980",
+  "https://fintel.io/s/kr/288980",
+  "https://littlebproject.com/stock/288980/150/9916",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=288980",
   "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=288980",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1698361786257.pdf",
   "https://www.digitaltoday.co.kr/news/articleView.html?idxno=664887",
+  "https://www.datatooza.com/article/20260416143421116352ef32b590_80",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/leehosun2000",
+  "https://www.moadata.co.kr/report/ir-report-list",
   "https://alphasquare.co.kr/home/stock-summary?code=288980",
-  "https://www.38.co.kr/html/forum/board/?code=288980",
-  "https://www.asiae.co.kr/article/2026042113273904208",
-  "http://www.businessreport.kr/news/articleView.html?idxno=49251",
-  "https://www.thebell.co.kr/free/Content/ArticleView.asp?key=202510231423240960105213&svccode=04",
-  "https://www.asiae.co.kr/article/2025050210140588974",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=59131",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=443500"
+  "https://www.digitaltoday.co.kr/news/articleView.html",
+  "https://kind.krx.co.kr/external/2026/04/07/001096/20260407002912/11212.htm",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=naORTe6Q8Cp2E1Ao",
+  "https://www.dailyan.com/news/article.html?no=775148",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=59131"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "288980",
  "name": "모아데이타",
  "name_en": "Moadata Co., Ltd.",
@@ -233,9 +233,9 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 07:50",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 19:36",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +338,14 @@
    }
   ],
   "valuation": {
-   "price": 395,
-   "mcap": 0.0144,
+   "price": 308,
+   "mcap": 0.0112,
    "shares": 36381379,
    "total_shares": 36381379,
    "wavg_shares": 35572657,
    "per": null,
    "eps": -762,
-   "pbr": 1.1898,
+   "pbr": 0.9277,
    "bps": 332,
    "roe_ttm": -124.4,
    "ttm_window": "2025Q3~2026Q2",
