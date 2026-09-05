@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "산업용 AX 플랫폼 성장, 극단적 계절성 극복이 관건",
-  "en": "Industrial AX Platform in Growth Phase — Conquering Extreme Seasonality Is the Core Challenge"
+  "ko": "산업용AI 매출 성장, 분기 변동성 지속",
+  "en": "Industrial AI Revenue Grows, Quarterly Swings Persist"
  },
  "lead": {
-  "ko": "심플랫폼은 산업용 AX 플랫폼 '누비슨(NUBISON AX)'으로 고객 저변을 빠르게 확대하고 있으나, 연간 매출의 70% 이상이 4분기에 집중되는 극단적 계절성과 지속되는 연간 영업손실이 단기 재무 불확실성의 핵심 변수다.",
-  "en": "Simplatform is rapidly expanding its customer base with the industrial AX platform NUBISON, but extreme Q4 revenue concentration—accounting for over 70% of annual sales—and sustained operating losses remain the primary sources of near-term financial uncertainty."
+  "ko": "심플랫폼은 산업용 AIoT 플랫폼 '누비슨'을 앞세워 매출 성장을 이어가고 있으나, 프로젝트 단위 매출 인식 구조로 인한 분기별 실적 기복과 지속되는 영업손실이 여전한 과제로 남아 있다.",
+  "en": "Simplatform continues to grow revenue with its industrial AIoT platform NUBISON, but project-based revenue recognition drives sharp quarterly swings and operating losses remain an unresolved challenge."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 약 104억원(전년 대비 +44%) 달성했으나, 영업손실은 약 27억원(OPM -25.6%)으로 인력·R&D 비용 확대로 인해 오히려 악화",
-   "en": "2025 consolidated revenue reached ~KRW 10.4 bn (+44% YoY), but operating loss widened to ~KRW 2.7 bn (OPM -25.6%) due to aggressive headcount and R&D expansion"
+   "ko": "연결 매출액은 2023년 44억원에서 2025년 104억원으로 3년 연속 증가했으나 영업손실은 지속되고 있다.",
+   "en": "Consolidated revenue rose from KRW 4.4bn in 2023 to KRW 10.4bn in 2025 for three straight years of growth, but operating losses have persisted."
   },
   {
-   "ko": "2025Q4 매출 약 75억원·영업이익 약 25억원으로 연간 전체 수익을 단 한 분기에 집중 인식하는 강한 계절성 확인",
-   "en": "Q4 2025 revenue of ~KRW 7.5 bn and operating profit of ~KRW 2.5 bn confirm extreme back-end loading, with nearly all annual profitability concentrated in a single quarter"
+   "ko": "2025년 4분기 매출이 75억원까지 급증해 유일하게 분기 흑자를 냈으나, 2026년 1분기 매출은 4.7억원으로 급감했다.",
+   "en": "Q4 2025 revenue spiked to KRW 7.5bn for the only quarterly profit, before falling sharply to KRW 0.47bn in Q1 2026."
   },
   {
-   "ko": "IPO 공모자금 유입으로 자기자본 약 148억원(전년 약 28억원)·부채비율 32.0%(전년 161.8%)로 재무 구조 대폭 개선",
-   "en": "IPO proceeds drove equity to ~KRW 14.8 bn (from ~KRW 2.8 bn in 2024) and reduced the debt ratio sharply to 32.0% from 161.8%"
+   "ko": "2025년 3월 코스닥 상장으로 자본총계가 자본잠식 상태에서 148억원 수준으로 개선됐다.",
+   "en": "The March 2025 KOSDAQ listing lifted total equity out of capital impairment to roughly KRW 14.8bn."
   },
   {
-   "ko": "누적 고객사 수 2025년 3Q 기준 89개로 가파르게 증가, 반도체·디스플레이에서 공공·헬스케어·스마트농업으로 전방 산업 다변화 진행 중",
-   "en": "Cumulative customer count reached 89 as of Q3 2025, with vertical diversification progressing from semiconductors and displays into public sector, healthcare, and smart agriculture"
+   "ko": "CTR, DB하이텍, 인피니언 등 국내외 제조·반도체 대기업과의 실증·수주 사례가 확대되고 있다.",
+   "en": "The company is expanding proof-of-concept and order references with manufacturing and semiconductor majors including CTR, DB HiTek, and Infineon."
   },
   {
-   "ko": "2026년 6월 경기형 스마트공장 구축지원사업 수주, 과기정통부 AI 반도체 해외 실증 사업 선정 등 정부 주도 파이프라인 지속 확보",
-   "en": "Government-backed pipeline continues to build, including a June 2026 Gyeonggi smart factory deployment contract and selection for MSIT's AI semiconductor overseas validation program"
+   "ko": "2026년 산업부 제조·산업 AX 예산이 전년 대비 두 배로 늘어나며 정책 수혜 기대가 형성되고 있다.",
+   "en": "South Korea's 2026 manufacturing/industrial AX budget doubled year-on-year, raising expectations of policy tailwinds."
   }
  ],
  "business": {
-  "ko": "심플랫폼은 2011년 설립된 산업용 AI·IoT 플랫폼 전문 기업으로, 2025년 3월 기술성장기업 특례 제도를 통해 코스닥에 상장했다. 핵심 제품은 산업용 AX(AI Transformation) 플랫폼 '누비슨(NUBISON AX)'으로, 원천기술인 'Thing Driver'를 기반으로 데이터 수집·분석·예측·운영 전주기를 통합 제공한다. 사업 모델은 프로젝트 완료 납품형과 클라우드 기반 구독형이 혼재하며, 구독형 비중 확대가 수익 안정성 제고의 핵심 과제다. 주요 고객군은 반도체·디스플레이 밸류체인에서 시작했으나 의료기관, 공공기관, 축산·스마트농업으로 빠르게 확장 중이며, 2025년 3분기 말 기준 누적 고객사는 89개에 달한다. 경쟁 구도는 지멘스·하니웰·슈나이더일렉트릭 등 글로벌 대형 자동화 기업과 국내 산업용 AI 스타트업들로 이원화돼 있으며, 심플랫폼은 중소·중견 제조사를 겨냥한 NoCode AI 운영 시스템과 낮은 초기 도입 비용이 차별점이다. Amazon Web Services(AWS)의 공식 파트너사로서 클라우드 채널 레버리지를 확보하고 있으며, 과기정통부 AI 반도체 해외 실증 사업 선정으로 글로벌 레퍼런스 확보 기회도 열렸다. 최대주주는 임대근 대표이사(기술 본부 총괄)이며, 강태신 공동대표(사업 본부 총괄)와 이원화 체제로 운영된다.",
-  "en": "Simplatform, founded in 2011, is an industrial AI and IoT platform specialist that listed on KOSDAQ in March 2025 under Korea's technology-growth enterprise special listing scheme. Its flagship offering, NUBISON AX (AI Transformation platform), integrates data collection, analysis, prediction, and operations management across the full AIoT lifecycle, built on the proprietary Thing Driver middleware technology. The business model blends project-based delivery with cloud subscription services, with growing the subscription mix identified as the key lever for earnings stability. The primary customer base originated in the semiconductor and display value chain but has expanded rapidly into healthcare, public institutions, livestock, and smart agriculture, with cumulative customers reaching 89 as of Q3 2025. The competitive landscape is bifurcated between global industrial automation giants (Siemens, Honeywell, Schneider Electric) and domestic AI startups; Simplatform's differentiation lies in its cost-effective, No-Code AI operation system targeting small- and mid-sized manufacturers. As a registered AWS partner, the company holds a cloud channel advantage, and selection for MSIT's AI semiconductor overseas validation program opens a path to global reference wins. Co-CEOs Im Dae-geun (technology) and Kang Tae-shin (business) lead a dual executive structure, with the founding CEO holding the largest shareholder stake alongside related parties at approximately 36%."
+  "ko": "심플랫폼은 2011년 설립된 산업용 AI·AIoT 플랫폼 기업으로, 자체 개발한 '누비슨(NUBISON)' 플랫폼을 통해 산업 현장의 설비·공정 데이터를 수집·분석해 품질검사, 예지보전, 공급망 최적화 등의 솔루션을 제공한다. 사업모델은 구축형(온프레미스) 솔루션 매출이 중심이며, 프로젝트가 완료되는 시점에 매출이 인식되는 구조상 특정 분기, 특히 4분기에 매출이 몰리는 경향이 있다. 주요 고객사로는 현가·구동·조향 시스템을 생산하며 현대차, 기아, GM, 스텔란티스, 포드, 도요타 등에 공급하는 글로벌 자동차 부품기업 CTR을 비롯해 DB하이텍 반도체 팹, 독일 반도체 기업 인피니언(PoC), 금형 제조업체 한국알프스 등이 있다. 회사는 임대근·강태신 공동대표 체제로 운영되며, 창업자인 임대근 대표가 최대주주로 지분 39.04%를 보유해 경영권을 유지하고 있다. 2025년 3월 21일 코스닥 시장에 기술특례로 상장했으며 상장 주관사는 KB증권이었다. 상장 전에는 네이버클라우드, IBK캐피탈 등을 투자자로 유치한 바 있다. 정부 과제 참여도 확대되고 있는데, 고용노동부 산하 한국산업인력공단이 주관하는 중소 제조업 AI 전환 사업 수행기업으로 선정됐고, K-문샷 프로젝트를 통해 핵융합·차세대 원전 분야에도 산업용 AI를 공급하는 등 적용 범위를 넓히고 있다. 경쟁구도에서는 마키나락스, 원프레딕트, 애자일소다 등 국내 산업용 AI 기업들과 유사한 시장을 두고 경쟁하고 있으며, 구독형(SaaS) 매출 확대를 추진하는 경쟁사들과 비교해 사업모델의 반복 매출 비중이 상대적으로 낮다는 지적이 상장 당시부터 있었다.",
+  "en": "Founded in 2011, Simplatform is an industrial AI/AIoT platform company that provides quality inspection, predictive maintenance, and supply chain optimization solutions by collecting and analyzing equipment and process data through its proprietary NUBISON platform. Its business model centers on project-based (on-premise) solution revenue, which is recognized upon project completion, creating a tendency for revenue to concentrate in specific quarters, particularly the fourth quarter. Key clients include CTR, a global auto parts maker producing suspension, drive, and steering systems that supplies Hyundai, Kia, GM, Stellantis, Ford, and Toyota, as well as DB HiTek's semiconductor fab and the German semiconductor company Infineon, with which it is running a proof-of-concept. The company operates under a co-CEO structure with founder Lim Dae-geun and Kang Tae-sin, with Lim as the largest shareholder holding a 39.04% stake and control of management. It listed on KOSDAQ under the technology special listing track on March 21, 2025, with KB Securities as lead underwriter, having previously attracted investment from Naver Cloud and IBK Capital, among others. Government project participation is also expanding, as the company was selected to carry out an AI transition program for small and mid-sized manufacturers under the Korea Human Resources Development Institute, part of the Ministry of Employment and Labor, and it is broadening its application scope through the K-Moonshot project into nuclear fusion and next-generation nuclear power. In the competitive landscape, the company competes with domestic industrial AI firms such as Makinarocks, OnePredict, and Agilesoda, and observers noted at the time of listing that its construction-type revenue model carries a relatively lower share of recurring revenue compared with rivals pursuing SaaS-based subscription growth."
  },
  "earnings": {
-  "ko": "2025년 연결 기준 매출액은 약 104억원으로 전년(약 72억원) 대비 44% 증가했으나, 영업손실은 약 27억원(OPM -25.6%)으로 2024년 약 -1.4억원(OPM -2.0%)에 비해 오히려 확대됐다. 개발·영업 인력 충원에 따른 고정비 증가가 외형 성장의 수익 레버리지를 압도한 결과다. 분기별 패턴이 계절성을 극명하게 보여주는데, 2025Q1 매출 약 1억원·영업손실 약 11억원, Q2 매출 약 9억원·영업손실 약 10억원, Q3 매출 약 19억원·영업손실 약 31억원으로 비수기 3분기 누적 영업손실이 약 52억원에 달한다. 반면 2025Q4는 매출 약 75억원·영업이익 약 25억원을 기록, 연간 전체 수익성을 단독으로 견인했다. 2025년 당기순손실은 약 25억원으로 영업손실과 근접한 수준이다. 이와 달리 2024년 당기순손실은 약 80억원으로 영업손실(약 1.4억원)과의 괴리가 매우 크며, 전환사채·파생상품 공정가치 등 비영업성 일회성 손실이 대규모 반영된 것으로 추정된다. 자본 측면에서 2025년 IPO 공모자금 유입으로 자기자본이 약 28억원에서 약 148억원으로 급증하고, 부채비율이 161.8%에서 32.0%로 개선됐다. 2026Q1은 매출 약 4.7억원·영업손실 약 24억원으로 비수기 적자 구조가 지속됐으며, 영업 현금흐름도 2024년 약 -20억원에서 2025년 약 -7.6억원으로 개선됐으나 여전히 마이너스다.",
-  "en": "In 2025, consolidated revenue reached approximately KRW 10.4 bn, up 44% from approximately KRW 7.2 bn in 2024, but the operating loss widened to approximately KRW 2.7 bn (OPM -25.6%) from KRW 143 mn (OPM -2.0%) in the prior year, as the rise in fixed costs from developer and sales headcount additions outpaced revenue growth leverage. Quarterly patterns illustrate the seasonality starkly: Q1 2025 posted revenue of ~KRW 100 mn with an operating loss of ~KRW 1.1 bn; Q2 ~KRW 910 mn revenue with ~KRW 1.0 bn loss; Q3 ~KRW 1.9 bn revenue with a ~KRW 3.1 bn operating loss, bringing the combined three off-season quarters to approximately KRW 5.2 bn in cumulative operating losses. Q4 2025 reversed this with revenue of ~KRW 7.5 bn and an operating profit of ~KRW 2.5 bn, single-handedly determining full-year profitability. The 2025 net loss of approximately KRW 2.5 bn closely tracks the operating loss. By contrast, the 2024 net loss of approximately KRW 8.0 bn dramatically exceeded the operating loss of approximately KRW 143 mn, implying a large one-time non-operating charge—likely fair-value adjustments on convertible bonds or derivatives—was recognized that year. On the balance sheet, IPO proceeds drove equity from ~KRW 2.8 bn to ~KRW 14.8 bn and slashed the debt ratio from 161.8% to 32.0%. Q1 2026 recorded revenue of ~KRW 470 mn and an operating loss of ~KRW 2.4 bn, confirming the off-season loss cycle continues; operating cash flow improved from KRW -2.0 bn in 2024 to KRW -760 mn in 2025 but remains negative."
+  "ko": "연결 매출액은 2023년 43억9,000만원에서 2024년 72억3,000만원, 2025년 104억원으로 3년 연속 증가세를 이어갔다. 반면 영업손익은 2023년 -15억4,000만원, 2024년 -1억4,000만원으로 적자폭이 크게 줄었다가 2025년에는 -26억6,000만원으로 다시 확대됐다. 지배주주 순이익 역시 2023년 -11억9,000만원에서 2024년 -80억2,000만원으로 대규모 손실을 기록한 뒤 2025년 -25억3,000만원으로 손실 규모가 줄었다. 분기별로 보면 2025년 4분기 매출이 75억2,000만원까지 급증하며 영업이익 25억1,000만원, 순이익 25억6,000만원으로 조사 기간 중 유일하게 분기 흑자를 기록했는데, 이는 구축형 프로젝트의 매출 인식이 4분기에 집중되는 사업 특성이 반영된 결과로 해석된다. 그러나 2026년 1분기 매출은 4억7,000만원으로 직전 분기 대비 급감하며 영업손실 23억7,000만원을 기록했고, 2026년 2분기에는 매출이 22억5,000만원으로 회복됐지만 영업손실 14억4,000만원이 지속됐다. 이러한 분기별 기복은 프로젝트 완료 시점에 따라 매출이 좌우되는 구조에서 비롯된 것으로, 연간 기준 매출 성장과 분기별 실적 변동성이 동시에 나타나는 특징을 보여준다. 영업활동현금흐름은 2023년 -10억6,000만원, 2024년 -19억9,000만원, 2025년 -7억6,000만원으로 3개년 모두 마이너스를 기록해 아직 안정적인 현금창출력을 확보하지 못했음을 나타낸다. 자본총계는 2023년 자본잠식(-17억7,000만원)에서 2024년 27억9,000만원, 2025년 148억원으로 크게 개선됐는데, 이는 2025년 3월 코스닥 상장을 통한 자금 조달 효과가 반영된 것으로 볼 수 있다.",
+  "en": "Consolidated revenue rose for three consecutive years, from KRW 4.39bn in 2023 to KRW 7.23bn in 2024 and KRW 10.4bn in 2025. Operating profit, however, moved from a loss of KRW 1.54bn in 2023 to a much narrower loss of KRW 143mn in 2024, before widening again to a loss of KRW 2.66bn in 2025. Net income attributable to owners followed a similar pattern, swinging from a loss of KRW 1.19bn in 2023 to a large loss of KRW 8.02bn in 2024, then narrowing to a loss of KRW 2.53bn in 2025. On a quarterly basis, Q4 2025 revenue surged to KRW 7.52bn, producing an operating profit of KRW 2.51bn and net income of KRW 2.56bn, the only quarter of profitability in the observed window, reflecting the business's tendency to recognize project-based revenue concentrated in the fourth quarter. Revenue then plunged to KRW 0.47bn in Q1 2026, alongside an operating loss of KRW 2.37bn, before recovering to KRW 2.25bn in Q2 2026, though the operating loss of KRW 1.44bn persisted. These quarterly swings stem from a revenue structure tied to project completion timing, illustrating how annual revenue growth and quarterly earnings volatility can coexist. Operating cash flow was negative across all three years — KRW -1.06bn in 2023, KRW -1.99bn in 2024, and KRW -0.76bn in 2025 — indicating the company has yet to secure stable cash generation. Total equity improved markedly from a capital-impaired KRW -1.77bn in 2023 to KRW 2.79bn in 2024 and KRW 14.8bn in 2025, a shift attributable to the capital raised through the March 2025 KOSDAQ listing."
  },
  "industry": {
-  "ko": "글로벌 스마트팩토리 시장은 2025년 약 1,308억 달러 규모로, 2035년까지 연평균 약 11% 성장이 전망되는 구조적 성장 업종이다. 한국 스마트팩토리 시장도 2025~2033년 연평균 약 9.8% 성장이 예측돼 정책·수요 양면에서 기반이 탄탄하다. 한국 정부는 스마트팩토리 구축지원사업·2026년 AI 기본법 시행·디지털 뉴딜 정책을 통해 제조 현장 AI 전환을 가속화하고 있어 산업용 AI 솔루션 기업의 정책 수혜가 기대된다. 글로벌 산업용 AIoT 시장은 2021년 약 9.6조원에서 2027년 약 37.3조원으로 연평균 25%대 성장이 예상되는 고성장 세부 시장이다. 경쟁 구도는 지멘스·하니웰 등 글로벌 대형 자동화 기업이 상단에, 국내외 AI 스타트업들이 틈새를 공략하는 이중 구조다. 심플랫폼은 NoCode 구독형 모델로 중소·중견 제조사 중심의 포지셔닝을 취하나, 규모 경쟁에서 글로벌 대기업과의 격차가 여전하다. AWS의 CSAP 취득 이후 공공 클라우드 시장이 개방되며 AWS 파트너사로서의 간접 수혜 가능성이 부각되고 있다.",
-  "en": "The global smart factory market, estimated at roughly USD 131 bn in 2025, is forecast to grow at approximately 11% CAGR through 2035—a structurally expanding sector. Korea's smart factory market is projected to grow at approximately 9.8% CAGR from 2025 to 2033, underpinned by strong policy and demand fundamentals. The Korean government is accelerating AI adoption in manufacturing through smart factory deployment subsidies, the AI Basic Act effective in 2026, and the Digital New Deal, creating a favorable policy tailwind for industrial AI solution providers. The global industrial AIoT sub-market is expected to grow from approximately KRW 9.6 tn in 2021 to roughly KRW 37.3 tn by 2027, representing an even faster-growing niche. The competitive landscape is tiered: global automation majors (Siemens, Honeywell, Schneider Electric) occupy the top end, while domestic and international AI startups compete for niche segments. Simplatform's No-Code subscription model targets small- and mid-sized manufacturers, but a material scale gap versus global incumbents persists. AWS's CSAP certification opening Korea's public cloud market to foreign providers has highlighted indirect benefits for Simplatform as an official AWS partner."
+  "ko": "글로벌 산업용 AIoT 시장은 2021년 약 9.6조원에서 2027년 약 37.3조원까지 연평균 25.3% 성장할 것으로 전망되며, 신기술 개발과 기존 기술 고도화에 따라 수요가 확대될 것으로 예상된다. 국내에서는 2026년 산업통상자원부의 제조·산업 AX(AI 전환) 예산이 전년 대비 두 배로 늘어난 1조1,000억원으로 편성돼 AI 팩토리 선도 프로젝트와 산업단지 AX 전환 사업 등이 확대될 것으로 알려졌다. 이는 중견·중소 제조업체 중심의 산업용 AI 도입을 촉진하는 정책적 배경으로 작용하고 있다. 경쟁구도에서는 마키나락스, 원프레딕트, 애자일소다 등 국내 산업용 AI 기업들이 유사한 시장을 두고 경쟁하고 있으며, 각 기업이 특화된 산업군이나 알고리즘 코어를 강조하며 차별화를 시도하고 있다. 심플랫폼은 특정 산업 전용이 아닌 범용 AI 플랫폼 구조를 갖춰 13개 산업 AI 패키지를 하나의 알고리즘 코어 기반으로 운영하고 있다는 점을 경쟁력으로 제시하고 있다. 사업모델 측면에서는 구축형 매출이 중심인 심플랫폼과 구독형(SaaS) 매출 확대를 추진하는 경쟁사 간 반복 매출 확보 방식의 차이가 상장 당시부터 시장의 관심사였다. 제조업의 AI 전환과 피지컬 AI 확산이라는 산업 사이클 초기 국면에서, 대기업뿐 아니라 중소 제조기업으로의 확산 속도가 관련 기업들의 성장 경로를 가를 핵심 변수로 꼽힌다.",
+  "en": "The global industrial AIoT market is projected to grow from roughly KRW 9.6tn in 2021 to about KRW 37.3tn by 2027, an estimated compound annual growth rate of 25.3%, driven by new technology development and upgrades to existing solutions. In South Korea, the Ministry of Trade, Industry and Energy's 2026 manufacturing/industrial AX (AI transformation) budget was set at KRW 1.1tn, double the prior year, reportedly expanding AI Factory pilot projects and industrial park AX transition programs. This policy backdrop is designed to accelerate industrial AI adoption centered on mid-sized and small manufacturers. In the competitive landscape, domestic industrial AI firms such as Makinarocks, OnePredict, and Agilesoda compete in a similar market, each emphasizing specialized industry focus or algorithmic cores for differentiation. Simplatform positions its general-purpose AI platform architecture, running 13 industry-specific AI packages on a single algorithmic core, as a source of competitive advantage. On the business model side, the market has watched closely how Simplatform's construction-type revenue base compares with rivals pursuing SaaS-based recurring revenue since the company's listing. In this early phase of the manufacturing AI transformation and physical AI diffusion cycle, the pace at which adoption spreads beyond large corporations into small and mid-sized manufacturers stands out as a key variable shaping the growth path of companies in this space."
  },
  "outlook": {
-  "ko": "2026년 들어 심플랫폼은 산업용 AX 플랫폼 사업을 지속적으로 확대하고 있다. 2026년 6월 '2026 경기형 스마트공장 구축지원사업'을 통해 편광필름 제조사 더화에 NUBISON AX를 클라우드 구독형으로 공급하는 계약을 체결해 정부 지원 사업 기반의 수주 저변을 넓혔다. 과기정통부 AI 반도체 해외 실증 지원사업에도 선정돼 2년간 국내 AI 반도체 기업과 컨소시엄을 구성, 해외 기관 서버 기술 실증 기회를 확보했다. 회사는 플랫폼 명칭을 'AIoT'에서 'AX(AI Transformation)'로 리브랜딩하며 피지컬 AI 기반 제조 혁신과 자율제조 확산을 중기 전략 방향으로 제시하고 있다. 매출 인식이 4분기 프로젝트 완료에 집중되는 구조상 2026년 전반기 적자는 불가피하며, 연간 수익성은 사실상 4분기 대형 프로젝트 수주 및 납품 실행 여부에 달려 있다. 구독형 매출 비중 확대와 반도체·디스플레이 외 공공·헬스케어 분야 신규 고객 확보가 계절성을 완화하는 구조 개선의 핵심이다. 정부의 스마트팩토리 지원 정책 지속, AWS 파트너십을 통한 공공 클라우드 시장 확대, 글로벌 제조 AI 트렌드가 중기 사업 기회를 뒷받침하는 요인으로 작용하고 있다.",
-  "en": "In 2026, Simplatform continues to expand its industrial AX platform business. In June 2026, the company signed a contract to supply NUBISON AX on a cloud subscription basis to polarizing film manufacturer Dohwa under the 2026 Gyeonggi Smart Factory Deployment Support Program, broadening its government-backed project pipeline. It was also selected for MSIT's AI Semiconductor Overseas Validation Support Project, securing a two-year consortium opportunity alongside domestic AI chip companies to validate its technology on overseas institutional servers. The company has rebranded its platform from 'AIoT' to 'AX (AI Transformation),' articulating a medium-term strategic direction centered on physical AI-based manufacturing innovation and autonomous factory enablement. Given the structural Q4 concentration of revenue recognition, first-half 2026 losses are structurally unavoidable; full-year profitability effectively hinges on large Q4 project award and delivery execution. Expanding the subscription revenue share and securing new customers in public-sector and healthcare verticals beyond semiconductors and displays are the structural prerequisites for reducing seasonal earnings dependency. Sustained government smart factory policy support, public cloud market expansion through the AWS partnership, and global manufacturing AI trends collectively provide a supportive medium-term business backdrop."
+  "ko": "회사의 향후 성과는 다수의 실증(PoC) 사업이 본계약으로 얼마나 빠르게 전환되는지에 달려 있다. CTR 창원공장을 대상으로 한 '제조 AI 품질예측·통합운영 플랫폼 실증사업'은 2026년까지 진행되며, 종료 후에는 CTR 협력사 및 경남 지역 자동차 부품 클러스터 전반으로 기술 확산이 추진될 예정이다. 글로벌 반도체 기업 인피니언과도 생산공정에 AI를 적용하는 실증 프로젝트를 진행하고 있으며, 최근 한국알프스와는 약 25억원 규모의 AI 기반 금형 제조 공정 최적화 계약을 체결했다. 정부 과제 측면에서는 고용노동부 산하 한국산업인력공단이 주관하는 중소 제조업 AI 전환 사업 수행기업으로 선정됐고, DB하이텍 반도체 팹으로의 적용 확장과 K-문샷 프로젝트를 통한 핵융합·차세대 원전 분야 공급 등으로 고난도 산업 영역 적용 범위를 넓히고 있다. 해외 매출 측면에서는 AX 플랫폼이 탑재된 서버 수출을 위한 선적을 최근 진행했으며, 회사는 이를 해외 매출 발생의 원년으로 삼겠다는 방침을 밝혔다. 이는 해외 주요 반도체 업체와 체결한 PoC 계약의 일환으로, PoC가 본계약으로 전환될 경우 말레이시아 공장 등으로 확대 적용돼 추가 매출이 발생할 것으로 회사는 전망하고 있다. 회사 측은 상반기 수주한 프로젝트들이 순차적으로 매출로 인식되고 있으며 제조·반도체 분야를 중심으로 산업 현장의 AI 도입 수요가 확대되고 있는 만큼 하반기에도 성장 흐름을 이어갈 것으로 기대한다고 밝혔다.",
+  "en": "The company's future performance hinges on how quickly its multiple proof-of-concept (PoC) projects convert into full contracts. The 'Manufacturing AI Quality Prediction and Integrated Operations Platform' demonstration project targeting CTR's Changwon plant runs through 2026, after which technology diffusion to CTR's partner companies and the broader Gyeongnam automotive parts cluster is planned. The company is also running a demonstration project applying AI to production processes with global semiconductor firm Infineon, and it recently signed a roughly KRW 2.5bn contract with Korea Alps for AI-based mold manufacturing process optimization. On the government project front, the company was selected to carry out an AI transition program for small and mid-sized manufacturers under the Korea Human Resources Development Institute, while expanding into higher-complexity industrial domains through extended application at DB HiTek's semiconductor fab and supply of industrial AI to nuclear fusion and next-generation nuclear power fields via the K-Moonshot project. On the overseas revenue front, the company recently shipped servers equipped with its AX platform for export and stated its intention to make this the inaugural year of overseas revenue generation. This stems from a PoC contract signed with a major overseas semiconductor company, and management expects that if the PoC converts to a full contract, expanded application to facilities such as a Malaysian plant would generate additional revenue. The company has said that projects contracted in the first half are being recognized as revenue in stages, and that with AI adoption demand expanding across manufacturing and semiconductor sites, it expects the growth trend to continue into the second half."
  },
  "valuation_comment": {
-  "ko": "현 주가는 주당순자산(BPS 2,054원) 대비 상당한 프리미엄 구간에서 거래되고 있어, 순자산 기준으로는 중장기 플랫폼 성장에 대한 높은 기대치가 선반영된 상태다. 주당순이익(EPS -570원)이 음수인 상황에서 수익 기반 멀티플 산출이 불가하므로, 시장은 사실상 플랫폼 확장성·고객 증가 속도·구독형 매출 전환 등 비재무적 지표를 핵심 평가 변수로 삼고 있다. 자기자본은 2025년 IPO 공모자금 유입으로 2024년 대비 5배 이상 확대됐으나, 분기 적자 누적이 이어지면 순자산이 감소 압력을 받을 수 있어 BPS 방어 추이가 중기 밸류에이션의 하방 기준선 역할을 한다. 배당 이력이 없어 배당수익률 측면의 투자 매력은 없으며, 투자 내러티브는 AI·스마트팩토리 성장 시나리오와 플랫폼 비즈니스 모델 전환 기대에 집중돼 있다. 코스닥 소프트웨어·플랫폼 유사 기업군 대비 순자산 기준 프리미엄이 높은 편으로, 이는 기술특례 상장 초기 기업 특성과 AI 테마 프리미엄이 복합 반영된 구간이라 할 수 있다.",
-  "en": "The current share price trades at a substantial premium to book value (BPS: KRW 2,054), indicating that considerable medium- to long-term platform growth expectations are already priced in. With earnings per share (EPS: KRW -570) in negative territory, earnings-based multiples cannot be calculated, and the market is effectively using non-financial metrics—platform scalability, customer acquisition pace, and subscription revenue conversion—as its primary valuation anchors. Equity surged more than fivefold from 2024 levels following IPO proceeds, but continued quarterly losses risk eroding the book value base, making BPS defense a key medium-term valuation reference floor. With no dividend history, there is no yield-based investment appeal, and the investment narrative is almost entirely predicated on an AI and smart factory growth scenario with a platform business model transition. The premium to book value is elevated relative to comparable KOSDAQ software and platform peers, reflecting a combination of the post-listing premium typical of technology-exception listings and the AI thematic premium embedded in the sector."
+  "ko": "심플랫폼은 아직 연간 기준 영업이익을 내지 못해 통상적인 주가수익비율 비교가 어려운 구간에 있다. 주가는 순자산가치 대비 프리미엄이 형성된 수준에서 거래되고 있는데, 이는 흑자전환 기대와 산업용 AI 성장 테마에 대한 시장의 기대가 일부 반영된 결과로 해석될 수 있다. 배당은 현재 지급되지 않고 있으며, 회사는 상장을 통해 조달한 자금을 연구개발과 신규 인력 채용 등 성장 투자에 우선 배분하는 모습을 보이고 있다. 신한투자증권은 2026년 5월 28일 보고서에서 심플랫폼의 매출 대비 기업가치(EV/Sales) 배수가 국내외 산업용 AI 기업들과 비교해 낮은 수준이라고 평가했다. 다만 이러한 비교는 특정 시점의 분석 결과로, 이후 주가와 실적 변화에 따라 배수 수준은 달라질 수 있다.",
+  "en": "Simplatform has yet to post an annual operating profit, putting it in territory where a conventional price-to-earnings comparison is difficult to apply. The stock trades at a level that reflects a premium over net asset value, which can be interpreted as partly capturing market expectations around a potential swing to profitability and the broader industrial AI growth theme. The company currently pays no dividend, instead prioritizing capital raised through its listing toward growth investments such as R&D and new hiring. Shinhan Investment & Securities stated in a May 28, 2026 report that Simplatform's enterprise-value-to-sales multiple was low compared with domestic and overseas industrial AI companies. That comparison, however, reflects analysis at a specific point in time, and the multiple could shift as the share price and earnings evolve going forward."
  },
  "bull": [
   {
    "title": {
-    "ko": "고객 저변 급성장과 수직 다변화",
-    "en": "Rapid Customer Base Growth and Vertical Diversification"
+    "ko": "정부 AX 예산 확대에 따른 수주 기반 확대",
+    "en": "Expanding order pipeline on larger government AX budgets"
    },
    "body": {
-    "ko": "누적 고객사 수가 2021년 11개에서 2025년 3분기 89개로 가파르게 증가하며 플랫폼 확장성을 수치로 입증했다. 반도체·디스플레이 레퍼런스를 기반으로 의료·축산·공공·스마트농업으로 전방 산업을 다변화해 특정 산업 사이클 의존도를 낮추는 방향으로 진화 중이다. 각 신규 산업군에서의 레퍼런스 확보는 유사 고객으로의 수주 파급 효과를 내며 성장 곡선의 기울기를 강화하는 구조다.",
-    "en": "Cumulative customers grew sharply from 11 in 2021 to 89 by Q3 2025, providing numerical evidence of platform scalability. Building on semiconductor and display reference wins, the company is diversifying into healthcare, livestock, public services, and smart agriculture, reducing dependence on any single industry cycle. Reference wins in each new vertical create a multiplier effect by lowering sales friction with similar customers, steepening the growth curve over time."
+    "ko": "2026년 산업부 제조·산업 AX 예산이 전년 대비 두 배로 늘어난 1조1,000억원으로 편성되며 중소·중견 제조기업의 산업용 AI 도입 프로젝트가 확대될 잠재 수요가 커졌다. 회사는 이미 고용노동부 산하 한국산업인력공단의 중소 제조업 AI 전환 사업 수행기업으로 선정됐다. 이러한 정책 수혜가 실적으로 현실화될지는 개별 프로젝트의 본계약 전환 속도에 달려 있다.",
+    "en": "South Korea's 2026 manufacturing/industrial AX budget doubled year-on-year to KRW 1.1tn, raising potential demand for AI adoption projects among small and mid-sized manufacturers. The company has already been selected to carry out an AI transition program for small manufacturers under the Korea Human Resources Development Institute. Whether this policy tailwind translates into earnings depends on the pace at which individual projects convert into full contracts."
    }
   },
   {
    "title": {
-    "ko": "정부 정책 수혜와 공공 파이프라인 확대",
-    "en": "Government Policy Tailwind and Expanding Public Sector Pipeline"
+    "ko": "대형 고객사 레퍼런스 확보 및 해외 진출 시도",
+    "en": "Growing reference clients and early overseas push"
    },
    "body": {
-    "ko": "한국 정부의 스마트팩토리 구축지원사업·AI 기본법(2026 시행)·디지털 뉴딜 정책이 산업용 AI 솔루션 수요를 정책적으로 견인하고 있다. 2025년 과기정통부 AI 반도체 해외 실증 사업 선정과 2026년 경기형 스마트공장 사업 수주 등 정부 과제 참여가 지속되며 안정적 기저 수주 파이프라인을 확보 중이다. AWS의 CSAP 취득 이후 공공 클라우드 시장이 개방되면서 AWS 파트너사로서의 공공 수주 가능성이 구조적으로 확대됐다.",
-    "en": "Korean government initiatives—smart factory deployment subsidies, the AI Basic Act effective 2026, and the Digital New Deal—provide structural policy-driven demand for industrial AI solutions. Continued participation in government programs, including the 2025 MSIT AI Semiconductor Overseas Validation Project and the 2026 Gyeonggi Smart Factory contract, builds a stable baseline order pipeline. AWS's CSAP certification opening Korea's public cloud market to foreign providers has structurally expanded public-sector contract opportunities for Simplatform as an official AWS partner."
+    "ko": "CTR, DB하이텍, 인피니언 등 국내외 대형 제조·반도체 기업들과의 협업이 이어지고 있다. 인피니언과의 PoC를 비롯해 AX 플랫폼이 탑재된 서버의 해외 선적을 진행하며 해외 매출 확대를 모색하고 있다. 다만 해외 매출은 아직 초기 단계로, 본계약 전환과 실제 매출 반영 시점은 앞으로 확인이 필요하다.",
+    "en": "Collaboration continues with large domestic and overseas manufacturing and semiconductor companies including CTR, DB HiTek, and Infineon. Alongside the Infineon PoC, the company is exploring overseas revenue growth through server shipments equipped with its AX platform. Overseas revenue remains at an early stage, however, and the timing of PoC-to-contract conversion and actual revenue recognition still needs to be confirmed."
    }
   },
   {
    "title": {
-    "ko": "구독형 모델 전환과 재무 구조 개선",
-    "en": "Subscription Model Transition and Improved Balance Sheet"
+    "ko": "매출 성장세와 자본구조 개선",
+    "en": "Revenue growth and improved capital structure"
    },
    "body": {
-    "ko": "클라우드 기반 구독형 모델은 프로젝트 납품형 대비 반복 수익 기반이 강하고 계절성을 장기적으로 완화할 잠재력을 지닌다. 2025년 IPO를 통해 부채비율이 32.0%로 대폭 낮아지고 자기자본 기반이 확충됨에 따라 중단기 운영 자금 여력이 크게 개선됐다. 영업 현금흐름도 2024년 약 -20억원에서 2025년 약 -7.6억원으로 개선되며 현금 소진 속도가 둔화되는 추세를 보이고 있다.",
-    "en": "The cloud subscription model offers stronger recurring revenue characteristics than project delivery and holds the potential to reduce extreme seasonality over time. The 2025 IPO dramatically lowered the debt ratio to 32.0% and substantially expanded the equity base, significantly improving the medium-term operating capital runway. Operating cash flow improved from approximately KRW -2.0 bn in 2024 to approximately KRW -760 mn in 2025, signaling a decelerating pace of cash burn."
+    "ko": "연결 매출액은 2023년 43억9,000만원에서 2025년 104억원으로 3년간 꾸준히 증가했다. 2025년 3월 코스닥 상장을 통한 자금 조달로 자본총계가 자본잠식 상태에서 148억원 수준까지 개선됐다. 매출 성장이 이어지면서 영업레버리지가 발생할 경우 손익 구조 개선 가능성이 존재한다.",
+    "en": "Consolidated revenue rose steadily from KRW 4.39bn in 2023 to KRW 10.4bn in 2025 over three years. Capital raised through the March 2025 KOSDAQ listing lifted total equity from a capital-impaired state to around KRW 14.8bn. If continued revenue growth generates operating leverage, there is potential for the profit-and-loss structure to improve."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "극단적 계절성과 프로젝트 실행 리스크",
-    "en": "Extreme Seasonality and Project Execution Risk"
+    "ko": "매출 인식의 4분기 편중과 분기별 변동성",
+    "en": "Q4-skewed revenue recognition and quarterly volatility"
    },
    "body": {
-    "ko": "2025년 연간 매출의 약 72%가 4분기 단 한 분기에 집중됐으며, 비수기 3분기(Q1~Q3) 누적 영업손실이 약 52억원에 달했다. 프로젝트 완료 시점 매출 인식 구조상 소수 계약의 지연만으로도 연간 실적이 급변할 수 있고, 2026Q1 영업손실이 약 24억원으로 비수기 적자 구조가 반복되고 있다. 계절성 완화에 필수적인 구독형 매출 비중 확대의 속도가 확인되지 않는 한, 이 구조적 취약성은 지속된다.",
-    "en": "Approximately 72% of full-year 2025 revenue was recognized in Q4 alone, with cumulative off-season operating losses across Q1–Q3 reaching approximately KRW 5.2 bn. The project-completion recognition model means that a small number of delayed contracts can dramatically swing annual results, and the Q1 2026 operating loss of approximately KRW 2.4 bn confirms the off-season loss cycle continues. Unless the pace of subscription revenue mix expansion accelerates, this structural vulnerability persists."
+    "ko": "회사의 매출은 프로젝트 완료 시점에 인식되는 구축형 매출이 중심으로, 과거 매출의 약 80%가 4분기에 집중되는 구조를 보였다. 실제로 2025년 4분기 매출은 75억원까지 급증해 유일한 분기 흑자를 기록했으나, 2026년 1분기에는 매출이 4억7,000만원으로 급감했다. 이러한 계절성은 분기별 실적 예측의 불확실성을 높이는 요인이다.",
+    "en": "Revenue is centered on construction-type sales recognized at project completion, and past revenue was roughly 80% concentrated in the fourth quarter. Indeed, Q4 2025 revenue surged to KRW 7.5bn for the only quarterly profit, only to plunge to KRW 0.47bn in Q1 2026. This seasonality raises uncertainty in forecasting quarterly results."
    }
   },
   {
    "title": {
-    "ko": "지속되는 적자와 현금 소진 속도",
-    "en": "Persistent Operating Losses and Cash Burn Rate"
+    "ko": "지속되는 영업손실과 현금 소진",
+    "en": "Persistent operating losses and cash burn"
    },
    "body": {
-    "ko": "2025년 영업손실 약 27억원, 2026Q1 영업손실 약 24억원으로 비수기 고정비 부담이 매우 크며, 영업 현금흐름도 연속 마이너스다. IPO 공모자금이 영업 적자 보전에 사용되는 구조에서 흑자 전환이 지연될 경우 추가 자본 조달 필요성이 부각될 수 있다. 기술특례 상장 특성상 R&D·인력 투자 축소가 어려워 규모의 경제 달성 전까지 적자가 지속될 가능성이 높다.",
-    "en": "Operating losses of approximately KRW 2.7 bn in 2025 and approximately KRW 2.4 bn in Q1 2026 alone illustrate the heavy fixed-cost burden during off-peak periods, with operating cash flow consistently negative. If the path to profitability extends, IPO proceeds being consumed by operating losses could eventually necessitate additional capital raises. As a technology-exception listed company, cuts to R&D and headcount investment are structurally difficult, sustaining the likelihood of continued losses until scale economics materialize."
+    "ko": "2023~2025년 3개년 연속 영업손실을 기록했고, 영업활동현금흐름도 같은 기간 계속 마이너스를 나타냈다. 2025년 영업손실은 26억6,000만원으로 오히려 전년보다 확대됐다. 매출 성장에도 불구하고 수익성 전환 시점은 아직 명확히 확인되지 않았다.",
+    "en": "The company recorded operating losses for three straight years from 2023 to 2025, and operating cash flow remained negative throughout the same period. The 2025 operating loss of KRW 2.66bn actually widened from the prior year. Despite revenue growth, the timing of a shift to profitability has yet to be clearly established."
    }
   },
   {
    "title": {
-    "ko": "소규모 매출 기반과 글로벌 경쟁 압력",
-    "en": "Limited Revenue Scale Against Global Competitive Pressure"
+    "ko": "경쟁 심화와 사업모델 전환 리스크",
+    "en": "Intensifying competition and business-model transition risk"
    },
    "body": {
-    "ko": "2025년 연간 매출 약 104억원으로 아직 소규모 사업자 수준에 머물러 지멘스·하니웰·슈나이더일렉트릭 등 글로벌 대형 자동화 기업과의 규모 격차가 현저하다. 글로벌 기업들이 스마트팩토리 AI 솔루션 투자를 확대하면서 국내 중소형 AIoT 전문 기업에 대한 경쟁 압력이 높아질 수 있다. 팔란티어 등 글로벌 데이터 플랫폼 선도 기업의 아시아 진출도 중장기적 위협 요인이다.",
-    "en": "With annual revenue of approximately KRW 10.4 bn, the company remains a small-scale operator, dwarfed by global industrial automation majors such as Siemens, Honeywell, and Schneider Electric. Increased AI investment in smart factory solutions by global incumbents could intensify competitive pressure on small domestic AIoT specialists. The expansion of global data platform leaders such as Palantir into Asia represents a longer-term structural threat to the addressable market."
+    "ko": "심플랫폼의 매출은 구축형(온프레미스) 솔루션 비중이 높아, 구독형(SaaS) 매출 확대를 추진하는 경쟁사와의 경쟁에서 성장성이 제한될 수 있다는 우려가 상장 당시부터 제기됐다. 마키나락스, 원프레딕트, 애자일소다 등 국내 산업용 AI 기업들과의 고객·인력 확보 경쟁도 지속되고 있다. 구독형 매출 비중 확대 여부는 향후 실적의 질을 가늠하는 지표가 될 수 있다.",
+    "en": "Because Simplatform's revenue leans heavily toward construction-type (on-premise) solutions, concerns have been raised since its listing that growth could be constrained relative to rivals pursuing SaaS-based subscription revenue expansion. Competition for clients and talent also continues against domestic industrial AI firms such as Makinarocks, OnePredict, and Agilesoda. Whether the company can expand the share of subscription-based revenue may serve as a gauge of future earnings quality."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객·프로젝트 집중 및 실적 변동성 리스크",
-    "en": "Customer and Project Concentration and Earnings Volatility Risk"
+    "ko": "실적 변동성·계절성 리스크",
+    "en": "Earnings volatility and seasonality risk"
    },
    "body": {
-    "ko": "매출의 상당 부분을 소수 대형 프로젝트에 의존하는 구조에서 특정 고객의 예산 삭감이나 프로젝트 취소가 연간 실적에 즉각적이고 큰 충격을 줄 수 있다. 반도체·디스플레이 고객 비중이 여전히 높아 해당 산업의 경기 하강 사이클에 노출돼 있다. 수주 파이프라인의 투명한 공시가 제한적이어서 실적 예측 가시성이 낮고, 이는 시장의 정보 비대칭을 심화시킨다.",
-    "en": "Revenue dependence on a small number of large projects means that a budget cut or cancellation by a key customer can deliver an immediate and material hit to annual results. The continued high weighting of semiconductor and display customers leaves the company exposed to downturns in those cyclical industries. Limited public disclosure of the project pipeline reduces earnings predictability and deepens information asymmetry for investors."
+    "ko": "프로젝트 단위 매출 인식 구조상 특정 분기 실적이 연간 실적을 좌우할 수 있어, 분기별 실적만으로 추세를 판단하기 어렵다. 2025년 4분기와 2026년 1분기의 매출 낙차(75억원→4억7,000만원)는 이러한 변동성을 보여준다. 신규 프로젝트의 착수·완료 시점이 지연될 경우 특정 분기 실적이 예상보다 부진할 수 있다.",
+    "en": "Because revenue is recognized on a project-by-project basis, a single quarter's results can dominate the full-year outcome, making it difficult to judge trends from quarterly figures alone. The revenue drop between Q4 2025 and Q1 2026 (from KRW 7.5bn to KRW 0.47bn) illustrates this volatility. If new project start or completion timing is delayed, a given quarter's results could fall short of expectations."
    }
   },
   {
    "cat": {
-    "ko": "자금 소진 및 추가 자본 조달 리스크",
-    "en": "Capital Depletion and Additional Financing Risk"
+    "ko": "재무 건전성 리스크",
+    "en": "Financial soundness risk"
    },
    "body": {
-    "ko": "영업 현금흐름이 지속적으로 마이너스인 상황에서 IPO 공모자금이 영업 적자 보전에 사용되고 있어, 흑자 전환이 지연될 경우 추가 자본 조달 가능성이 대두될 수 있다. 소형 시가총액 특성상 대규모 기관 참여가 제한적이어서 추가 자금 조달 시 기존 주주 희석 위험이 존재한다. 자기자본 규모(약 148억원)가 분기 손실 절대금액 대비 크지 않아 여러 분기 연속 대규모 손실 발생 시 재무 안정성 재평가가 필요하다.",
-    "en": "With operating cash flow persistently negative and IPO proceeds being used to fund operating losses, the need for additional capital financing could emerge if the path to profitability extends. Limited institutional participation due to small market capitalization means any future capital raise carries meaningful existing shareholder dilution risk. The equity base of approximately KRW 14.8 bn is not large relative to the quarterly loss magnitude, meaning several consecutive quarters of sizable losses would warrant a reassessment of financial stability."
+    "ko": "회사는 2023년까지 자본잠식 상태였으며, 상장 이후 자본은 개선됐으나 영업활동현금흐름은 여전히 마이너스를 기록하고 있다. 추가 성장 투자나 손실이 지속될 경우 외부 자금조달 필요성이 다시 제기될 수 있다. 결손금 규모와 향후 손익 개선 속도를 함께 살펴볼 필요가 있다.",
+    "en": "The company was in a state of capital impairment through 2023, and although equity improved after listing, operating cash flow remains negative. If growth investment continues or losses persist, the need for additional external funding could resurface. The scale of accumulated deficit and the pace of any future profit improvement both warrant continued monitoring."
    }
   },
   {
    "cat": {
-    "ko": "기술·보안·규제 리스크",
-    "en": "Technology, Security, and Regulatory Risk"
+    "ko": "경쟁 및 사업모델 리스크",
+    "en": "Competitive and business-model risk"
    },
    "body": {
-    "ko": "산업 현장 데이터 플랫폼 특성상 CSAP·ISO 클라우드 보안 인증 및 개인정보보호법 등 규제 요건을 지속 충족해야 하며, 보안 사고 발생 시 신뢰도 훼손과 법적 책임이 동반된다. AI 기본법(2026 시행)에 따른 AI 시스템 투명성·안전성 기준 강화가 새로운 컴플라이언스 부담으로 작용할 수 있다. 핵심 기술 인력 이탈이나 특허 분쟁 발생 시 Thing Driver 등 원천기술의 경쟁력이 훼손될 위험도 배제할 수 없다.",
-    "en": "As an industrial data platform, the company must continuously satisfy cloud security certifications (CSAP, ISO 27017) and data protection regulations; any security incident could inflict reputational damage and legal liability. The enforcement of the AI Basic Act in 2026 introduces new compliance obligations around AI system transparency and safety that could raise operational costs. Loss of key technical personnel or patent disputes could undermine the company's core technological advantages embedded in the Thing Driver and related proprietary technologies."
+    "ko": "구축형 매출 중심의 사업모델은 SaaS 기반 경쟁사 대비 반복 매출 확보에 상대적으로 불리할 수 있다는 지적이 상장 당시부터 있었다. 산업용 AI 시장에 다수의 국내외 기업이 진입하고 있어 가격 경쟁과 인력 유치 경쟁이 심화될 가능성이 있다. 대형 고객사 의존도가 높아질 경우 특정 계약의 지연·해지가 실적에 미치는 영향도 커질 수 있다.",
+    "en": "Observers have noted since listing that the construction-type revenue model may be relatively disadvantaged in securing recurring revenue compared with SaaS-based competitors. As numerous domestic and overseas firms enter the industrial AI market, price competition and competition for talent could intensify. If dependence on large clients increases, the impact of any single contract's delay or cancellation on results could also grow."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월경",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "2026Q2 분기보고서 공시: 비수기 영업손실 규모 및 매출 회복 속도 확인. Q2 매출이 전년 동기(약 9억원) 대비 개선되는지, 고정비 증가 속도가 완화되는지가 연간 전망의 선행 지표다.",
-    "en": "Q2 2026 quarterly report filing: check the magnitude of off-season operating losses and pace of revenue recovery. Whether Q2 revenue improves versus the prior year (~KRW 910 mn) and whether fixed cost growth is decelerating are leading indicators for full-year earnings trajectory."
+    "ko": "2026년 3분기 실적(잠정) 공시 시점으로, 매출 성장세 지속 여부와 4분기 편중 완화 여부를 확인할 필요가 있다.",
+    "en": "Timing of the preliminary Q3 2026 earnings disclosure, when it will be worth checking whether the revenue growth trend continues and whether Q4 revenue concentration eases."
    }
   },
   {
    "when": {
-    "ko": "2026년 9~11월",
-    "en": "September–November 2026"
+    "ko": "2026년 내",
+    "en": "Within 2026"
    },
    "what": {
-    "ko": "4분기 대형 프로젝트 수주 공시 여부: 연간 수익성 확보 여부를 결정짓는 계약 체결 소식이 이 시기에 집중될 가능성이 높다. 수주 규모와 납품 일정이 2026 전체 실적을 사실상 결정하는 핵심 변수다.",
-    "en": "Q4 large project contract disclosures: signings that will determine full-year profitability tend to cluster in this window. The size of contracts and their delivery timelines will effectively determine 2026 annual results and should be monitored as a top priority."
+    "ko": "CTR 창원공장 대상 실증사업 종료 및 경남 지역 자동차 부품 클러스터로의 기술 확산 여부를 점검할 시점이다.",
+    "en": "A point to check whether the demonstration project at CTR's Changwon plant concludes as planned and whether technology diffusion to the Gyeongnam auto parts cluster proceeds."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "Second Half of 2026"
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "과기정통부 AI 반도체 해외 실증 지원사업 중간 성과 및 경기형 스마트공장 사업 완료 일정 확인. 정부 과제 수행 실적은 신규 공공 수주 확대의 레퍼런스로 작용하므로 진행 상황 모니터링이 중요하다.",
-    "en": "Interim results of the MSIT AI Semiconductor Overseas Validation Project and completion schedule of the Gyeonggi Smart Factory program. Government project execution serves as a reference for expanding future public-sector contract opportunities and should be monitored regularly."
+    "ko": "인피니언과의 PoC가 본계약으로 전환되는지와 해외 매출이 실제로 반영되는 시점을 확인할 필요가 있다.",
+    "en": "Worth confirming whether the Infineon PoC converts into a full contract and when overseas revenue is actually recognized."
    }
   },
   {
    "when": {
-    "ko": "2027년 3월 말",
-    "en": "Late March 2027"
+    "ko": "2028년 3월",
+    "en": "March 2028"
    },
    "what": {
-    "ko": "2026년 연간 사업보고서(DART 공시): 연간 영업이익 흑자 전환 여부, 구독형 매출 비중 변화, 누적 고객사 수 증가 속도, 연간 영업 현금흐름의 플러스 전환 여부가 핵심 확인 지표다.",
-    "en": "2026 annual report (DART filing): key metrics to verify include whether operating profit turns positive, the shift in subscription revenue mix, the rate of cumulative customer growth, and whether annual operating cash flow crosses into positive territory."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 중 수시",
-    "en": "Ongoing, 2026"
-   },
-   "what": {
-    "ko": "신규 수주 공시 모니터링: 반도체·디스플레이 외 의료·공공·농업 분야 신규 계약 체결이 고객 다변화 속도를 가늠하는 척도. 글로벌 경쟁사의 한국 시장 진출 동향도 경쟁 구도 변화의 선행 신호로 주목 필요.",
-    "en": "Ongoing monitoring of new contract disclosures: agreements in healthcare, public sector, and agriculture outside the traditional semiconductor and display base serve as benchmarks for vertical diversification pace. Moves by global competitors entering the Korean market are worth tracking as early signals of competitive landscape shifts."
+    "ko": "임대근·강태신 공동대표의 자발적 보호예수(3년) 만료 예정 시점으로, 이후 지분 매도 가능성을 점검할 필요가 있다.",
+    "en": "The scheduled expiration of the co-CEOs' voluntary three-year share lock-up, after which potential share sales should be monitored."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "심플랫폼은 산업용 AX 플랫폼 '누비슨'을 통해 제조 현장 디지털 전환 수요와 정부 스마트팩토리 정책이라는 구조적 성장 기회에 올라탄 기술특례 초기 상장 기업이다. 2025년 매출 약 104억원(전년 대비 +44%) 달성으로 외형 성장은 가시화됐으나, 영업손실 확대(-27억원, OPM -25.6%)와 연간 매출의 72%가 4분기에 집중되는 극단적 계절성은 수익 구조의 취약점으로 남아 있다. IPO를 통한 재무 구조 개선(부채비율 32.0%, 자기자본 약 148억원)은 중단기 운영 자금 여력을 확보한다는 측면에서 긍정적이나, 분기 적자가 지속되는 상황에서 자본 소진 속도 관리가 필수적이다. 누적 고객사 89개(2025Q3)와 반도체·디스플레이에서 헬스케어·공공까지 이어지는 수직 다변화는 플랫폼 확장성의 실질적 증거이며, 정부 과제 참여와 AWS 파트너십이 파이프라인을 보완하고 있다. 연간 수익성을 입증하기 위해서는 2026년 4분기 대형 프로젝트 수주 실행이 필수적이고, 구독형 매출 비중의 유의미한 확대가 구조적 계절성 의존도를 낮추는 핵심 과제다. 현재 주가는 순자산 대비 높은 프리미엄 구간으로, AI·스마트팩토리 성장 시나리오와 플랫폼 BM 전환 기대가 반영된 수준이며, 이 기대가 실적으로 가시화되는 속도와 규모가 기업가치 방향성을 결정하는 핵심 변수다.",
-   "en": "Simplatform is an early-stage technology-exception listed company positioned at the intersection of manufacturing digitalization demand and government smart factory policy through its industrial AX platform NUBISON. Revenue growth of 44% to approximately KRW 10.4 bn in 2025 provides visible top-line momentum, but a widening operating loss (KRW -2.7 bn, OPM -25.6%) and extreme Q4 revenue concentration—72% of annual sales in a single quarter—remain structural weaknesses in the earnings profile. The IPO-driven balance sheet improvement (debt ratio 32.0%, equity ~KRW 14.8 bn) secures a medium-term operating runway, but managing the rate of capital consumption under continued losses is an essential discipline. Cumulative customers reaching 89 by Q3 2025 and vertical diversification from semiconductors and displays into healthcare and the public sector provide tangible evidence of platform scalability, with government project participation and the AWS partnership augmenting the pipeline. Demonstrating sustainable full-year profitability will require successful execution of large Q4 2026 contracts, while a meaningful increase in subscription revenue mix is the structural prerequisite for reducing seasonal dependency. The share price trades at a significant premium to book value, embedding expectations for an AI and smart factory growth scenario alongside a platform business model transition; the speed and scale at which these expectations are validated in reported financial results will be the decisive factor in determining the direction of enterprise value."
+   "ko": "심플랫폼은 산업용 AIoT 플랫폼 '누비슨'을 기반으로 제조·반도체 대기업과의 실증·수주 사례를 넓혀가며 연간 매출 성장세를 이어왔다. 다만 프로젝트 완료 시점에 매출이 인식되는 사업 구조상 4분기 편중과 분기별 실적 기복이 뚜렷하며, 2023~2025년 3개년 연속 영업손실과 마이너스 영업현금흐름이 지속됐다. 2025년 3월 코스닥 상장을 통한 자금 조달로 자본잠식에서 벗어나며 재무 안정성은 개선됐지만, 흑자전환 시점은 아직 확정되지 않았다. 인피니언·CTR·한국알프스 등과의 실증사업이 본계약으로 전환되는 속도, 정부 AX 예산 확대에 따른 정책 수혜의 실현 여부가 향후 실적의 핵심 변수로 꼽힌다. 신한투자증권 등 일부 증권사는 산업용 AI 시장 성장과 정책 수혜에 대한 기대를 제시했으나, 이는 특정 시점의 분석이며 실제 실현 여부는 향후 공시와 계약 진행 상황을 통해 확인이 필요하다. 투자자는 분기별 실적의 계절성과 현금흐름, 신규 계약의 구체적 전환 여부를 지속적으로 점검할 필요가 있다.",
+   "en": "Simplatform has sustained annual revenue growth by expanding proof-of-concept and order references with manufacturing and semiconductor majors through its NUBISON industrial AIoT platform. However, because revenue is recognized upon project completion, quarterly results show pronounced Q4 concentration and volatility, and the company posted three consecutive years of operating losses and negative operating cash flow from 2023 through 2025. Capital raised through the March 2025 KOSDAQ listing lifted the balance sheet out of capital impairment and improved financial stability, though the timing of any swing to profitability remains unconfirmed. The key variables for future earnings are the pace at which demonstration projects with Infineon, CTR, and Korea Alps convert into full contracts, and whether the expanded government AX budget translates into realized policy benefits. Some brokerages, including Shinhan Investment & Securities, have expressed expectations tied to industrial AI market growth and policy tailwinds, but these reflect analysis at specific points in time, and actual realization needs to be confirmed through future disclosures and contract progress. Investors should continue to monitor quarterly earnings seasonality, cash flow, and the concrete conversion of new contracts."
   }
  },
  "sources": [
-  "https://file.alphasquare.co.kr/media/pdfs/company-report/251014_%EC%8B%AC%ED%94%8C%EB%9E%AB%ED%8F%BC.pdf",
-  "https://thevc.kr/simplatform",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A444530",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A444530",
-  "https://www.valueline.co.kr/finance/summary/444530",
-  "https://www.butler.works/ko/companies/01590980",
+  "https://marketin.edaily.co.kr/News/ReadE?newsId=02945446642170560",
   "https://m.thinkpool.com/item/444530",
-  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=444530",
   "https://m.thinkpool.com/compDiscuss/cont/1018168",
-  "https://dart.fss.or.kr/dsac001/mainK.do",
-  "https://kind.krx.co.kr/corpgeneral/irschedule.do?method=searchIRScheduleMain&gubun=iRSchedule",
+  "https://www.sedaily.com/article/20023047",
+  "https://www.butler.works/ko/companies/01590980",
+  "https://thevc.kr/simplatform",
+  "https://www.sedaily.com/article/20022654",
+  "https://bbn.kiwoom.com/rfSN3576",
+  "https://www.catch.co.kr/Comp/CompSummary/E94455",
+  "https://www.newspim.com/news/view/20260814001064",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A444530",
+  "https://www.newspim.com/news/view/20260528000213",
+  "https://www.jobplanet.co.kr/companies/69556/landing/%EC%8B%AC%ED%94%8C%EB%9E%AB%ED%8F%BC",
   "https://m.irgo.co.kr/IR-ROOM/222800",
-  "https://kind.krx.co.kr/corpgeneral/irschedule.do?method=searchIRScheduleMain&gubun=iRMaterials",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_comp_calendar.asp?pGB=1&gicode=A005930&gcd=&gnm=&curdt=&ctp=&cID=&MenuYn=Y&ReportGB=&NewMenuID=701&stkGb=",
-  "https://www.skinnovation.com/ir/earning",
-  "https://kind.krx.co.kr/listinvstg/listinvstginfo.do?method=searchListInvstgInfoMain",
-  "https://www.38.co.kr/html/forum/board/?code=444530",
-  "https://www.sedaily.com/article/20046191"
+  "https://www.investing.com/equities/simmtech-co-ltd-earnings",
+  "https://kr.investing.com/ipo-calendar/",
+  "https://www.ajunews.com/view/20250212152512319",
+  "https://kind.krx.co.kr/listinvstg/listingcompany.do?method=searchListingTypeMain"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "444530",
  "name": "심플랫폼",
  "name_en": "Simplatform Co., Ltd.",
@@ -233,11 +223,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:37",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:44",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -271,6 +261,23 @@
     "opm": -2.0,
     "roe": -287.9,
     "debt_ratio": 161.8
+   },
+   {
+    "year": 2023,
+    "rev": 4389632354,
+    "op": -1540097008,
+    "np": -1193400696,
+    "np_owner": -1193400696,
+    "equity": -1773124703,
+    "equity_owner": -1773124703,
+    "equity_nci": null,
+    "liab": 8130751833,
+    "cfo": -1056027035,
+    "eps_basic": -286,
+    "src": "전기 비교치",
+    "opm": -35.1,
+    "roe": null,
+    "debt_ratio": -458.6
    }
   ],
   "quarterly": [
@@ -306,25 +313,29 @@
    }
   ],
   "valuation": {
-   "price": 4350,
-   "mcap": 0.028,
+   "price": 4465,
+   "mcap": 0.0287,
    "shares": 6431786,
-   "total_shares": 6397223,
+   "total_shares": 6418644,
    "wavg_shares": 6080782,
    "per": null,
    "eps": -636,
-   "pbr": 2.3654,
-   "bps": 1839,
+   "pbr": 2.4266,
+   "bps": 1840,
    "roe_ttm": -32.3,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": -4159613139,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.88,
+   "eps_src": "공시",
+   "pbr_krx": 1.93,
    "bps_krx": 2315.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
  }
 }

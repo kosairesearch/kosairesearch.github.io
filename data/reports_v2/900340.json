@@ -1,229 +1,220 @@
 {
  "title": {
-  "ko": "수익성 하강 속 동남아·나스닥 이중 성장 검증",
-  "en": "Profitability Under Pressure—Southeast Asia and Nasdaq Dual Momentum on Trial"
+  "ko": "이익률 3년 연속 하락, 상장유지 리스크 부각",
+  "en": "Margin Decline for Three Straight Years, Listing Risk Emerges"
  },
  "lead": {
-  "ko": "영업이익률이 2023년 최고점(13.9%) 대비 절반 수준으로 낮아진 가운데, 동남아 유통망 구축과 나스닥 듀얼 상장이 새로운 성장 모멘텀으로 부상하고 있어 이익 회복 시기와 해외 매출 가시화 여부가 핵심 관전 포인트다.",
-  "en": "With operating margins roughly halved from their 2023 peak of 13.9%, the central questions are when profitability will stabilize and whether the company's nascent Southeast Asian distribution push and Nasdaq dual listing can translate into tangible new revenue streams."
+  "ko": "광둥성 기반 육가공업체 윙입푸드는 영업이익률이 3개년 연속 하락하는 가운데, 코스닥 상장유지 요건 강화에 따른 관리종목 지정 우려와 경영진의 방어적 자본 확충이 동시에 진행되고 있다.",
+  "en": "Guangdong-based meat processor Wing Yip Food is navigating three consecutive years of operating margin decline while management pursues defensive capital measures amid concerns over tightened KOSDAQ listing-maintenance requirements."
  },
  "keypoints": [
   {
-   "ko": "FY2025 연간 매출 971,702,858원(-6.6% YoY)·영업이익률 7.8%로 2023년 최고점(13.9%) 대비 수익성이 뚜렷하게 악화—원가 부담·수요 둔화 이중 압박 지속",
-   "en": "FY2025 revenue fell 6.6% YoY to 971,702,858 with operating margin of 7.8%, well below the 2023 peak of 13.9%, reflecting dual headwinds of rising costs and slowing demand"
+   "ko": "2025년 연결 매출 1,963억원, 영업이익률 7.8%로 2023년 13.9%에서 3년 연속 하락",
+   "en": "2025 consolidated revenue reached KRW 196.3bn with an operating margin of 7.8%, down from 13.9% in 2023 for a third straight year of decline"
   },
   {
-   "ko": "2026년 1분기 매출 -12.2% YoY·영업이익 -57.7% YoY로 실적 둔화 가속—수익성 저점 통과 여부 불확실",
-   "en": "Q1 2026 revenue fell 12.2% YoY and operating profit dropped 57.7% YoY, accelerating the earnings deceleration with no clear bottom yet in sight"
+   "ko": "최근 네 개 분기(2025Q3~2026Q2) 지배주주 순이익 약 82.6억원으로 2025년 연간 113.2억원에 못 미쳐 이익 회복이 아직 진행형",
+   "en": "Owner net profit over the latest four quarters (2025Q3-2026Q2) totaled roughly KRW 8.26bn, below the full-year 2025 figure of KRW 11.3bn, indicating earnings recovery remains incomplete"
   },
   {
-   "ko": "2026년 6월 THAIFEX 2026 참가 계기로 동남아 유통사 ArtTogether International Limited와 연간 2,500만 위안(약 56억원) 규모 공급 LOI 체결—해외 매출 다변화 첫 신호",
-   "en": "LOI signed with Southeast Asian distributor ArtTogether International Limited for an estimated CNY 25 million annual supply at THAIFEX 2026, representing the company's first tangible overseas diversification move"
+   "ko": "2026년 7월 강화된 코스닥 상장유지 요건에 따라 시가총액·주가 미달 우려 공시가 발생, 대표이사 자사주 매입과 최대주주의 제3자배정 유상증자 참여로 대응",
+   "en": "Following tightened KOSDAQ listing-maintenance rules from July 2026, the company disclosed concerns over falling below market-cap and price thresholds, prompting the CEO's treasury share purchases and the controlling shareholder's participation in a third-party share placement"
   },
   {
-   "ko": "2024년 11월 나스닥(WYHG) 듀얼 상장 성공—코스닥 상장 중국기업 최초, ADR·원주 1:1 교환비율 적용으로 글로벌 투자자 기반 확대",
-   "en": "Successfully completed Nasdaq dual listing (WYHG) in November 2024—first KRX-listed Chinese company to do so, with a 1:1 ADR-to-original-share conversion ratio"
+   "ko": "2018년 11월 국내 상장 중국계 식품기업 최초로 코스닥에 상장, 2024년 11월에는 나스닥에도 동시 상장",
+   "en": "The company became the first Chinese food company to list on KOSDAQ in November 2018, and additionally listed on Nasdaq in November 2024"
   },
   {
-   "ko": "부채비율 2022~2025년 23~26% 유지로 재무 안정성 확보되나, FY2025 영업활동현금흐름 22,973,352원으로 전년(117,669,523원) 대비 급감해 현금 창출력 모니터링 필요",
-   "en": "Low financial leverage (debt ratio 23–26% throughout 2022–2025) provides a cushion, but operating cash flow collapsed to 22,973,352 in FY2025 from 117,669,523 in FY2024, warranting close attention to cash generation quality"
+   "ko": "돈육·가금육 가공식품을 67개 대리상과 티몰·징동 등 온라인, 대형마트 오프라인 채널로 유통",
+   "en": "Processed pork and poultry products are distributed through 67 dealers alongside online channels such as Tmall and JD.com and offline supermarket partnerships"
   }
  ],
  "business": {
-  "ko": "윙입푸드(Wing Yip Food Holdings Group Limited)는 2015년 4월 홍콩에서 설립된 지주회사로, 2018년 11월 코스닥에 상장하며 중국 식품기업 최초의 코스닥 입성 사례가 됐다. 실질 영업은 자회사인 광동영업식품유한공사와 훠얼궈스영업식품유한공사를 통해 이루어지며, 수익의 대부분이 돼지고기·가금류를 원재료로 한 건조·훈연·염장·조리 방식의 전통 육가공품 판매에서 발생한다. 제품군은 중국 광동(廣東) 지역 전통 살라미·소시지 계통으로, 고유의 풍미와 제조 방식으로 시장 차별화를 추구한다. 유통 채널은 67개 대리상을 기반으로 하며, 텐마오몰(天猫)·징동(京東) 등 주요 온라인 플랫폼과 대형마트를 병행 활용한다. ISO22000 및 HACCP 인증을 보유하고 있으며 생산 설비 기계화와 품질 향상에 지속 투자하고 있다. 2024년 11월에는 코스닥 상장 중국기업 최초로 나스닥(WYHG)에 ADR 방식으로 듀얼 상장해 글로벌 투자자 기반을 확대했으며, ADR과 원주 교환비율은 1대 1로 설정됐다. 중장기 성장 축으로는 웰빙 소시지·채식주의자용 식물성 대체육 제품 개발을 표방하고 있으며, 2025년 11월 심천에 자회사(심천첸하이먀오위과학기술유한공사)를 설립해 동남아 현지 유통채널 구축 작업을 본격화했다. 코스닥 업종 분류상 '금융'으로 등재된 것은 홍콩 지주회사 구조에서 비롯한 행정적 특수성이며, 실질 사업은 육가공 제조업에 해당한다.",
-  "en": "Wing Yip Food Holdings Group Limited is a Hong Kong-incorporated holding company established in April 2015 that became the first Chinese food company to list on KOSDAQ when it debuted in November 2018. Actual operations are conducted through subsidiaries Guangdong Wing Yip Food Co. and Hoerguosi Wing Yip Food Co., with virtually all revenues derived from traditional processed meat products made from pork and poultry through drying, smoking, salting, and cooking. Products are rooted in Guangdong-style traditional sausage and salami traditions and are differentiated by regional flavor profiles and proprietary processing methods. Distribution encompasses 67 agents alongside major online platforms including Tmall and JD.com, supplemented by large-format retail stores. The company holds ISO22000 and HACCP certifications and continues to invest in production mechanization and quality improvement. In November 2024, it became the first KRX-listed Chinese company to achieve a Nasdaq dual listing (ticker: WYHG) via ADR at a 1:1 conversion ratio, broadening its global investor base. Medium-term growth pillars include wellness sausages and plant-based meat alternatives; a Shenzhen subsidiary was established in November 2025 to spearhead Southeast Asian distribution. The KOSDAQ sector classification of 'Financial' reflects the administrative treatment of its Hong Kong holding company structure rather than its actual business, which is processed meat manufacturing."
+  "ko": "윙입푸드홀딩스는 2015년 홍콩에 설립된 지주회사로, 중국 광둥성을 기반으로 돼지고기와 가금류를 가공하는 식품기업이다. 영업 자회사인 광둥영업식품은 2010년, 손자회사인 해남영업식품은 2020년에 각각 설립되어 생산을 담당한다. 주요 제품은 전통식품, 간편식품, 냉동식품으로 구분되며, 전통 소시지 맛을 살린 간편식품 5종을 개발해 제품 라인을 다각화하고 있다. 유통은 67개 대리상을 통한 오프라인 채널과 티몰·징동 등 온라인 플랫폼, 대형마트 입점을 병행하는 구조다. 생산설비 기계화와 품질관리 투자를 병행해 ISO22000 및 HACCP 인증을 취득했다. 2018년 11월 국내 증시에 상장한 중국계 식품기업 중 최초로 코스닥에 상장했으며, 2024년 11월에는 나스닥에도 동시 상장해 이중 상장 구조를 갖추게 됐다. 광둥성 역내 브랜드로서 지역 밀착형 유통망을 강점으로 삼고 있으나, 전국구 대형 육가공 브랜드 대비 규모의 경쟁에서는 상대적으로 작은 편이다. 원재료인 돈육 가격 변동에 실적이 민감하게 반응하는 업종 특성을 지닌다.",
+  "en": "Wing Yip Food Holdings is a holding company established in Hong Kong in 2015 that processes pork and poultry through operations centered in Guangdong province, China. Its operating subsidiary Guangdong Wing Yip Food was founded in 2010, and its sub-subsidiary Hainan Wing Yip Food was founded in 2020, both handling production. Core products span traditional foods, convenience foods, and frozen foods, including a line of five convenience products developed around traditional sausage flavors to diversify the portfolio. Distribution combines an offline network of 67 dealers with online platforms such as Tmall and JD.com and placements in large supermarkets. The company has invested in production mechanization and quality control, obtaining ISO22000 and HACCP certifications. It became the first Chinese food company to list on KOSDAQ in November 2018, and it added a Nasdaq listing in November 2024, giving it a dual-listing structure. As a regional Guangdong brand, its strength lies in localized distribution relationships, though it remains smaller in scale than nationwide meat-processing brands. The business is inherently sensitive to swings in raw pork prices, a common characteristic of the industry."
  },
  "earnings": {
-  "ko": "연결 기준 연간 매출은 2022년 880,081,908원에서 2023년 949,326,501원(+7.9%), 2024년 1,040,710,982원(+9.6%)으로 2년 연속 성장했으나, 2025년에는 971,702,858원으로 전년 대비 6.6% 감소 전환됐다. 영업이익률은 2023년 13.9%(131,788,172원)로 정점을 찍은 뒤 2024년 10.3%(107,618,777원), 2025년 7.8%(75,487,056원)로 3년 연속 압축되며 원가 구조 악화와 판매 단가 압력을 반영했다. 지배주주 귀속 순이익도 2022년 85,327,967원·2023년 84,897,768원(정체)·2024년 75,573,992원·2025년 56,032,053원으로 감소 흐름이 뚜렷하다. 분기별로는 2025년 3분기 영업이익이 217,667원(OPM 약 0.09%)으로 사실상 손익분기점 수준까지 급락했다가 4분기 27,292,490원(OPM 11.7%)으로 반등했다. 그러나 2026년 1분기에는 매출 219,191,036원(-12.2% YoY)·영업이익 12,698,052원(-57.7% YoY)·OPM 5.8%로 다시 위축돼, 4분기 반등이 추세 전환으로 이어지지 않고 있다. 지배주주 귀속 순이익도 2026년 1분기 3,310,248원으로 전년 동기 대비 80.9% 급감했다. 영업활동현금흐름(CFO)은 2023년 179,995,495원을 정점으로 2024년 117,669,523원, 2025년 22,973,352원으로 가파르게 감소해 이익의 현금 실현률이 크게 낮아진 점이 유의된다. 재무 구조 면에서 부채비율은 2022년 23.2%·2023년 27.5%·2024년 24.6%·2025년 25.8%로 안정적 수준을 유지하고 있다.",
-  "en": "Consolidated annual revenues grew consecutively—880,081,908 (2022) to 949,326,501 (+7.9% in 2023) and 1,040,710,982 (+9.6% in 2024)—before declining 6.6% to 971,702,858 in 2025. Operating margins peaked at 13.9% (operating profit 131,788,172) in 2023, then compressed to 10.3% (107,618,777) in 2024 and 7.8% (75,487,056) in 2025, reflecting worsening cost structure and price pressure. Attributable net income has declined continuously from 85,327,967 (2022) and 84,897,768 (2023, effectively flat) to 75,573,992 (2024) and 56,032,053 (2025). Quarterly, Q3 2025 operating profit nearly evaporated to 217,667 (OPM ~0.09%), before rebounding to 27,292,490 (OPM 11.7%) in Q4 2025. However, Q1 2026 delivered revenue of 219,191,036 (−12.2% YoY), operating profit of 12,698,052 (−57.7% YoY) and OPM of 5.8%, signaling that the Q4 rebound did not mark a sustained trend reversal. Q1 2026 attributable net income of 3,310,248 fell 80.9% YoY, meaning a meaningful annual recovery would require substantial improvement from Q2 2026 onward. Operating cash flow declined precipitously from 179,995,495 (2023) to 117,669,523 (2024) and 22,973,352 (2025), raising questions about the cash realization rate of reported earnings. Encouragingly, the debt ratio held stable between 23–28% throughout the period, limiting balance-sheet risk."
+  "ko": "연간 실적을 보면 매출은 2022년 1,778억원에서 2023년 1,918억원, 2024년 2,103억원으로 증가했다가 2025년 1,963억원으로 소폭 감소했다. 반면 영업이익은 2023년 266억원을 정점으로 2024년 217억원, 2025년 153억원으로 2년 연속 줄었고, 영업이익률도 2023년 13.9%에서 2024년 10.3%, 2025년 7.8%로 하락 흐름이 뚜렷하다. 지배주주 순이익 역시 2022년 172억원, 2023년 172억원 수준을 유지하다 2024년 153억원, 2025년 113억원으로 이익 규모가 축소됐다. 분기 흐름을 보면 2025년 2분기 매출 523억원, 영업이익 36억원, 순이익 30억원을 기록한 뒤 2025년 3분기에는 매출이 464억원으로 줄고 영업이익이 4.4억원에 그치며 순이익은 -1.7억원의 적자를 기록했다. 이후 2025년 4분기에는 매출 472억원, 영업이익 55억원, 순이익 50억원으로 뚜렷하게 회복했으나, 2026년 1분기에는 매출 443억원, 영업이익 26억원, 순이익 6.7억원으로 다시 위축됐다. 2026년 2분기에는 매출 440억원으로 전분기와 유사했지만 영업이익이 55억원으로 회복되며 순이익도 28억원으로 개선됐다. 이런 분기별 등락은 원가 부담과 판매 시점에 따른 변동성이 함께 작용한 결과로 해석된다. 최근 네 개 분기(2025Q3~2026Q2) 누적 지배주주 순이익은 약 83억원으로 2025년 연간치인 113억원에 못 미쳐, 연간 기준 이익 규모가 아직 완전히 회복되지 않았음을 보여준다. 현금흐름 측면에서도 영업활동현금흐름이 2023년 364억원, 2024년 238억원에서 2025년 46억원으로 크게 줄어든 점은 수익성 둔화와 함께 주목할 대목이다.",
+  "en": "Annual revenue rose from KRW 177.8bn in 2022 to KRW 191.8bn in 2023 and KRW 210.3bn in 2024, before edging down to KRW 196.3bn in 2025. Operating profit, however, peaked at KRW 26.6bn in 2023 and then declined for two straight years to KRW 21.7bn in 2024 and KRW 15.3bn in 2025, with the operating margin falling clearly from 13.9% in 2023 to 10.3% in 2024 and 7.8% in 2025. Owner net profit held near KRW 17.2bn in both 2022 and 2023 before shrinking to KRW 15.3bn in 2024 and KRW 11.3bn in 2025. On a quarterly basis, revenue of KRW 52.3bn, operating profit of KRW 3.6bn, and net profit of KRW 3.0bn in 2025Q2 gave way to a weaker 2025Q3, when revenue fell to KRW 46.4bn, operating profit was only KRW 0.04bn, and the company posted a net loss of KRW 0.17bn. The business then recovered clearly in 2025Q4 with revenue of KRW 47.2bn, operating profit of KRW 5.5bn, and net profit of KRW 5.0bn, only to soften again in 2026Q1 to revenue of KRW 44.3bn, operating profit of KRW 2.6bn, and net profit of KRW 0.7bn. In 2026Q2, revenue of KRW 44.0bn was similar to the prior quarter, but operating profit recovered to KRW 5.5bn and net profit improved to KRW 2.8bn. This quarter-to-quarter volatility appears to reflect a combination of cost pressures and timing effects in sales recognition. Cumulative owner net profit over the latest four quarters (2025Q3-2026Q2) came to roughly KRW 8.3bn, still below the full-year 2025 figure of KRW 11.3bn, suggesting annualized earnings have not fully recovered. Operating cash flow also fell sharply, from KRW 36.4bn in 2023 and KRW 23.8bn in 2024 to KRW 4.6bn in 2025, a notable development alongside the profitability slowdown."
  },
  "industry": {
-  "ko": "2025년 글로벌 식품시장 규모는 약 9조 달러로 전년 대비 약 7% 성장했으며, 중국이 약 1조 6,000억 달러로 세계 최대 단일 식품시장을 형성하고 있다. 육류는 글로벌 식품시장 내 최대 품목(약 16.9% 비중)으로, 2026년에도 중국 전통 식품 시장 확장과 함께 안정적 성장이 기대된다. 중국 내수에서는 창고형·회원제 매장 이용 확대와 함께 대용량·실속형 육가공품 수요가 늘고 있으며, 동시에 건강·웰빙 트렌드에 따른 저지방·고단백 가공육 시장도 성장하고 있다. 반면 중국 소비자들의 가성비 추구 심화와 내수 경기 둔화는 전통 육가공제품의 판매 단가에 하방 압력으로 작용하고 있어 전반적 마진 환경이 우호적이지 않다. 중국 정부의 식품 과대포장 규제 강화 및 식품 안전기준 개정은 중소 육가공업체에 추가 비용 부담이 될 수 있다. 동남아 식품시장은 인구 증가·중산층 확대·MZ세대 가공식품 소비 증가를 배경으로 빠른 성장세를 보이고 있어, 중국 내수 의존도 완화 전략의 유효한 대안 시장으로 부상하고 있다. 나스닥 상장을 계기로 미국 투자자들의 중국 관련 소형 F&B 기업에 대한 접근성이 높아진 환경은 기업가치 재평가 측면에서 주목할 변수다.",
-  "en": "The global food market reached approximately USD 9 trillion in 2025, growing around 7% YoY, with China accounting for roughly USD 1.6 trillion as the world's single-largest food market. Meat is the largest global food category at approximately 16.9% of total value, with stable growth expected through 2026 alongside expansion in China's traditional food segment. In China's domestic market, rising use of warehouse and membership-format retail is driving demand for bulk, value-oriented processed meats, while a parallel health and wellness trend is fostering growth in low-fat, high-protein processed meat products. However, intensifying value-seeking behavior and a moderating domestic growth environment are exerting downward pressure on processed meat prices, creating a challenging margin backdrop. Tightening Chinese government regulations on food packaging and ongoing revisions to food safety standards represent incremental compliance cost risks for mid-size processors. Southeast Asian food markets are growing rapidly on demographic tailwinds and rising middle-class processed food consumption, making the region a compelling diversification destination for companies seeking to reduce China dependence. The Nasdaq listing environment has increased US investor access to small-cap F&B names with China exposure, which could be a re-rating factor."
+  "ko": "중국 육가공 산업은 돼지고기 가격의 사이클성 변동에 원가가 크게 좌우되는 구조로, 사료 가격과 돈육 공급량 변화가 업체별 마진에 직접적인 영향을 미친다. 소비 측면에서는 도시화와 맞벌이 가구 증가에 따라 간편식·냉동식품 수요가 꾸준히 늘고 있으며, 온라인 유통 채널의 비중 확대가 업계 공통의 트렌드로 자리잡고 있다. 경쟁 구도는 전국 단위의 대형 브랜드와 지역 기반의 중소 브랜드가 공존하는 형태로, 윙입푸드는 광둥성을 중심으로 한 지역 밀착형 유통망을 강점으로 삼는 후자에 해당한다. 대형 전국구 브랜드와 비교하면 규모의 경제 측면에서는 열위에 있을 수 있으나, 지역 소비자 접점과 대리상 네트워크를 통한 안정적 판매 기반을 갖추고 있다. 최근 몇 년간 원가 부담이 이어지면서 업계 전반의 마진 압박이 관찰되고 있으며, 이는 윙입푸드의 영업이익률 하락 추세와도 궤를 같이한다. 온라인 대형 플랫폼(티몰·징동)으로의 채널 확장은 업계 공통의 대응 전략으로, 오프라인 대리상 의존도를 낮추는 방향으로 진행되고 있다.",
+  "en": "China's meat-processing industry is heavily exposed to cyclical swings in hog prices, with feed costs and pork supply directly affecting individual companies' margins. On the demand side, urbanization and dual-income households have steadily lifted demand for convenience and frozen foods, while the expansion of online distribution channels has become a common industry trend. The competitive landscape features large nationwide brands coexisting with regional players, with Wing Yip Food falling into the latter category, leveraging a localized distribution network centered on Guangdong province. Compared with major nationwide brands, the company may be at a disadvantage in scale economics, but it maintains a stable sales base through regional consumer relationships and its dealer network. Sustained cost pressures in recent years have produced margin compression across the sector, consistent with Wing Yip Food's own declining operating margin trend. Expanding into major online platforms such as Tmall and JD.com is a common industry response aimed at reducing reliance on offline dealers."
  },
  "outlook": {
-  "ko": "2026년 6월 초 태국 방콕의 아시아 최대 식품전시회 THAIFEX 2026 참가를 계기로 동남아 유통기업 ArtTogether International Limited와 연간 2,500만 위안(약 56억원) 규모의 제품 공급 협력의향서(LOI)를 체결했다(서울경제, 2026.6.4). 회사는 2025년 11월 설립한 심천 자회사를 동남아 진출의 거점 법인으로 삼아 현지 유통채널 구축과 신규 거래선 확보를 지속 추진하고 있다. 2024년 11월 나스닥 공모자금의 약 48%는 생산라인·설비 확충에 투자할 방침으로, 이에 따른 생산 효율화가 향후 원가율 개선에 기여할 여지가 있다. 식물성 대체육 설비 라인 확대와 웰빙 소시지 신제품 개발로 중장기 포트폴리오를 건강식품 방향으로 다변화한다는 계획도 유효하다. 다만 LOI는 구속력 없는 의향서 단계로, 세부 공급 조건·물량·일정은 향후 협의 결과에 따라 달라질 수 있어 실질 매출 반영까지 시차가 존재한다. 2026년 하반기에는 동남아 첫 공급 계약 확정 여부와 생산 설비 투자 집행 현황이 전략 실현 가능성을 가늠하는 중요한 가이던스 포인트가 될 전망이다.",
-  "en": "In early June 2026, the company participated in THAIFEX 2026 in Bangkok and signed an LOI with Southeast Asian distributor ArtTogether International Limited for an estimated annual supply of CNY 25 million (approximately KRW 5.6 billion) (Seoul Economy, June 4, 2026). The Shenzhen subsidiary established in November 2025 will serve as the operational hub for Southeast Asian market entry, focusing on local distribution channel development and new account acquisition. Approximately 48% of the November 2024 Nasdaq IPO proceeds are earmarked for production line and equipment investment, which could yield manufacturing efficiency improvements and help arrest the cost ratio deterioration. Plans to expand plant-based meat equipment lines and develop wellness sausage products for a medium-term portfolio pivot toward health-oriented offerings remain active. However, the LOI is a non-binding letter of intent, and final supply terms, volumes, and timelines remain subject to negotiation—implying potential lags before actual revenue recognition. In H2 2026, whether a binding Southeast Asian supply contract is signed and the pace of capex deployment will be the key strategic milestones to watch."
+  "ko": "윙입푸드는 2026년 7월부터 강화된 코스닥 상장유지 제도의 영향으로 시가총액과 주가 요건 미달 우려 공시를 받은 바 있으며, 이에 대응해 대표이사가 자사주를 장내 매수하고 최대주주 등이 제3자배정 유상증자에 참여해 총 230만 주를 인수하기로 했다. 이러한 조치는 상장유지 요건 충족을 위한 방어적 성격이 강하며, 실적 개선을 직접 겨냥한 것은 아니라는 점을 구분해 볼 필요가 있다. 또한 2026년 3월 30일에는 주식병합 결정 공시가 이루어진 바 있어, 관련 절차의 실제 시행 여부와 시점을 추가로 확인할 필요가 있다. 회사는 온라인 유통채널(티몰·징동) 확대와 오프라인 대리상 네트워크 다각화를 지속하고 있는 것으로 파악된다. 2024년 나스닥 상장을 통해 확보한 이중 상장 구조는 향후 추가 자본조달 채널로 활용될 가능성이 있다. 다만 향후 매출·이익 가이던스나 구체적인 증설·신제품 출시 일정에 대한 공식 발표는 확인되지 않아, 다음 정기 공시와 분기 실적 발표를 통한 확인이 필요하다.",
+  "en": "Since July 2026, Wing Yip Food has been subject to disclosures flagging concerns over falling below KOSDAQ's tightened market-cap and share-price maintenance thresholds, prompting the CEO to purchase treasury shares in the open market and the controlling shareholder and others to subscribe to a third-party placement totaling 2.3 million shares. These actions are largely defensive in nature, aimed at meeting listing-maintenance requirements rather than directly targeting earnings improvement, a distinction worth noting. Separately, a stock consolidation decision was disclosed on March 30, 2026, and the actual implementation timeline of that process warrants further confirmation. The company appears to be continuing to expand online distribution channels such as Tmall and JD.com while diversifying its offline dealer network. The dual-listing structure established through the November 2024 Nasdaq listing could potentially serve as an additional capital-raising channel going forward. However, no official guidance on future revenue or profit, nor concrete capacity-expansion or new-product timelines, has been confirmed, making upcoming regular disclosures and quarterly results important points to verify."
  },
  "valuation_comment": {
-  "ko": "BPS·PBR·EPS·PER가 현재 모두 산출되지 않아 전통적인 배수 비교가 제한적이며, 배당 이력도 확인되지 않아 배당수익률은 공시 기준 영(0)에 해당한다. DART 공시 순자산 규모와 현 시가총액 사이의 현저한 괴리는 코스닥 상장 중국기업 특유의 지배구조·정보 접근성 할인이 지속적으로 반영된 구조로, 이 구조적 할인이 단기간에 해소되기는 쉽지 않다. 수익성이 최고점 대비 크게 낮아진 현 구간에서 이익 기반 밸류에이션 배수는 과거 정상 이익 시기보다 크게 확대된 상태다. 나스닥 상장 당시 공모가 기준 기업가치가 당시 코스닥 시가총액을 현저히 상회했다는 점은 미국 시장에서의 가치 인식이 코스닥 대비 훨씬 높다는 구조적 사실을 보여 주며, ADR-원주 간 차익거래 가능성이 코스닥 유통 물량에 영향을 줄 수 있는 잠재 변수다. 이익 방향 전환이 확인될 경우 배수 압축 여지가 있으나, 현 구간에서는 수익성 저점 통과 여부 자체가 먼저 확인되어야 한다.",
-  "en": "Traditional multiple-based valuation is constrained because BPS, PBR, EPS, and PER are all currently unavailable, and no dividend has been declared, implying a zero dividend yield on a public disclosure basis. The substantial gap between DART-reported net assets and the current market capitalization reflects a persistent governance and information accessibility discount typical of KRX-listed Chinese companies—a structural discount unlikely to dissipate quickly. With profitability significantly below its historical peak, earnings-based valuation multiples have expanded materially relative to the company's prior normal-earnings periods. The fact that the Nasdaq IPO-implied enterprise value materially exceeded the prevailing KOSDAQ market cap at the time of listing underscores a structural valuation divergence between the two markets, with ADR-to-original-share arbitrage remaining a potential factor in KOSDAQ float dynamics. Should a sustained earnings recovery materialize, multiple compression would be plausible, but the first prerequisite is confirmation that the profitability trough has been definitively passed."
+  "ko": "윙입푸드는 지배주주 순이익이 2023년 이후 매년 축소되는 흐름을 보이다 최근 분기 들어 완만한 이익 회복 조짐을 나타내고 있다. 이 회사는 별도의 현금배당을 지급하지 않는 구조로, 배당 매력을 기대하기 어려운 종목에 해당한다. 최근 상장유지 요건 이슈에 대응한 제3자배정 유상증자로 유통주식수가 확대된 점은 주당 지표 해석 시 참고할 부분이다. 순자산 대비 주가 수준이나 이익 대비 주가 수준을 판단할 때는, 이익이 3년 연속 축소된 배경과 최근 분기의 회복 조짐을 함께 고려하는 것이 합리적이다. 동종 식품업종과 비교할 때 이 회사의 밸류에이션 지표가 어떤 수준에 있는지는 화면에 표시되는 실시간 수치를 통해 확인하는 것이 정확하다.",
+  "en": "Wing Yip Food's owner net profit has contracted each year since 2023, though recent quarters show tentative signs of a gradual earnings recovery. The company does not pay a cash dividend, a structural feature that limits any dividend-related appeal. The recent third-party placement conducted in response to the listing-maintenance issue expanded the outstanding share count, a factor worth keeping in mind when interpreting per-share metrics. When assessing the share price relative to net assets or earnings, it is reasonable to weigh both the three-year profit contraction and the tentative recovery seen in recent quarters. For an accurate read on how this company's valuation metrics compare with food-sector peers, referring to the real-time figures displayed on screen is the more reliable approach."
  },
  "bull": [
   {
    "title": {
-    "ko": "동남아 진출로 매출 기반 다변화 첫 발",
-    "en": "Southeast Asia Entry Opens First Real Revenue Diversification"
+    "ko": "온라인·오프라인 유통망 다각화",
+    "en": "Diversified Online and Offline Distribution"
    },
    "body": {
-    "ko": "2026년 6월 THAIFEX 2026을 계기로 동남아 유통사와 연간 2,500만 위안 규모의 공급 LOI를 체결하며 해외 매출 창구를 처음으로 확보했다. 2025년 11월 설립된 심천 자회사를 통해 동남아 현지 유통채널 구축이 진행 중이며, 이 법인이 신규 거래선 확보의 실질적 거점 역할을 맡고 있다. 중국 내수에만 의존하는 현 구조에서 동남아 수출 매출이 가시화될 경우 매출 기반 확대와 지역 리스크 분산 효과를 동시에 기대할 수 있다.",
-    "en": "The LOI signed at THAIFEX 2026 for an estimated CNY 25 million annual supply is the company's first tangible overseas revenue pipeline. The Shenzhen subsidiary established in November 2025 is actively building Southeast Asian distribution channels and securing new accounts as an operational hub. If Southeast Asian export revenues materialize, the company can reduce near-total dependence on China's domestic market while expanding its overall revenue base."
+    "ko": "회사는 67개 대리상을 통한 오프라인 유통과 함께 티몰·징동 등 온라인 플랫폼 진출을 병행하며 판매 채널을 다변화하고 있다. 이는 특정 유통 채널에 대한 의존도를 낮추는 방향으로, 소비 트렌드 변화에 대한 대응력을 높이는 요인이 될 수 있다. 대형마트 입점 확대도 함께 진행되고 있어 접점이 넓어지고 있다.",
+    "en": "The company is diversifying its sales channels by expanding into online platforms such as Tmall and JD.com alongside offline distribution through 67 agents. This can be seen as a factor that reduces dependence on specific distribution channels and enhances responsiveness to changes in consumption trends. Expansion into large discount stores is also underway, broadening points of contact with consumers."
    }
   },
   {
    "title": {
-    "ko": "낮은 레버리지와 꾸준히 증가한 순자산—재무 방어선 탄탄",
-    "en": "Low Leverage and Growing Net Equity Provide a Solid Financial Cushion"
+    "ko": "이중 상장을 통한 자본조달 채널 확보",
+    "en": "Secured Capital-Raising Channels via Dual Listing"
    },
    "body": {
-    "ko": "부채비율은 2022~2025년 내내 23~26% 수준을 유지하며 재무 구조가 보수적으로 관리되고 있다. 지배주주 귀속 자본은 2022년 926,488,562원에서 2025년 1,199,461,729원으로 꾸준히 증가해 왔다. 이익 압박이 지속되는 국면에서도 재무 위기 가능성이 낮다는 점은 주주가치가 급격히 훼손될 위험을 제한하는 구조적 완충 역할을 한다.",
-    "en": "The debt ratio has held in the 23–26% range throughout 2022–2025, reflecting a consistently conservative balance sheet. Shareholders' equity attributable to controlling interests grew steadily from 926,488,562 (2022) to 1,199,461,729 (2025). Even under sustained earnings pressure, limited risk of financial distress provides a structural buffer against rapid shareholder value impairment."
+    "ko": "2018년 코스닥 상장에 이어 2024년 나스닥에도 상장하며 이중 상장 구조를 갖췄다. 이는 향후 자본조달 시 활용할 수 있는 채널이 하나 더 늘어난 것으로 해석될 수 있다. 실제로 최근 제3자배정 유상증자를 통해 자본을 확충한 사례가 있다.",
+    "en": "Following its 2018 KOSDAQ listing, the company also listed on NASDAQ in 2024, establishing a dual-listing structure. This can be interpreted as adding one more channel that can be utilized for future capital raising. In fact, there has been a recent case of capital expansion through a third-party allotment capital increase."
    }
   },
   {
    "title": {
-    "ko": "나스닥 듀얼 상장—글로벌 투자자 유입과 기업가치 재평가 잠재력",
-    "en": "Nasdaq Dual Listing Creates Potential for Global Investor Inflows and Valuation Re-rating"
+    "ko": "경영진·최대주주의 적극적 대응",
+    "en": "Active Response from Management and Controlling Shareholder"
    },
    "body": {
-    "ko": "2024년 11월 나스닥 상장(WYHG)은 코스닥 상장 중국기업 최초의 사례로, 미국 투자자들에 대한 접근성을 크게 높였다. 나스닥 공모 당시 기업가치는 같은 시기 코스닥 시가총액을 현저히 상회하게 책정됐으며, 이는 미국 F&B 소형주 시장에서의 가치 인식이 더 높다는 점을 시사한다. 공모자금을 활용한 생산 효율화와 신제품 출시가 실적 회복으로 이어질 경우, ADR 거래를 통한 해외 투자자 유입이 코스닥 원주에도 긍정적 파급 효과를 줄 수 있다.",
-    "en": "The November 2024 Nasdaq listing (WYHG) was the first for a KRX-listed Chinese company, substantially increasing accessibility to US investors. The implied enterprise value at the Nasdaq IPO materially exceeded the prevailing KOSDAQ market cap, suggesting higher valuation recognition potential in US markets. If IPO proceeds drive production efficiency and new product launches that translate into an earnings recovery, international ADR investors could create positive spillover effects for the KOSDAQ-listed shares."
+    "ko": "상장유지 요건 미달 우려가 불거지자 대표이사가 직접 자사주를 매입하고 최대주주가 제3자배정 유상증자에 참여해 230만 주를 인수했다. 이는 경영진과 대주주가 상장유지 이슈에 즉각적으로 대응할 의지를 보인 사례로 해석할 수 있다. 다만 이러한 조치가 실적 개선과는 별개의 방어적 성격이라는 점은 구분해서 볼 필요가 있다.",
+    "en": "As concerns arose over failing to meet listing maintenance requirements, the CEO directly purchased treasury shares, and the largest shareholder participated in a third-party allotment capital increase, acquiring 2.3 million shares. This can be interpreted as a case showing management's and the major shareholder's willingness to respond immediately to listing maintenance issues. However, it should be noted separately that such measures are defensive in nature and distinct from actual earnings improvement."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "3년 연속 영업이익률 하락—수익성 구조 악화 지속",
-    "en": "Three Consecutive Years of Margin Compression—Structural Profitability Deterioration"
+    "ko": "영업이익률 3년 연속 하락",
+    "en": "Operating Margin Decline for Three Consecutive Years"
    },
    "body": {
-    "ko": "영업이익률이 2023년 13.9%→2024년 10.3%→2025년 7.8%로 꾸준히 낮아진 데 이어 2026년 1분기에는 5.8%까지 더 떨어졌다. 2025년 3분기 영업이익이 217,667원으로 사실상 손익분기점에 수렴했다는 점은 계절성 외에 구조적 비용 압박이 존재함을 시사한다. 이익 회복을 위한 가격 인상 또는 원가 절감의 가시적 성과가 확인되기 전까지 수익성 저점 통과 여부는 불확실한 상황이다.",
-    "en": "Operating margins compressed steadily from 13.9% (2023) to 10.3% (2024) and 7.8% (2025), declining further to 5.8% in Q1 2026. The near-zero operating profit of just 217,667 in Q3 2025 points to structural cost pressures beyond mere seasonality. Without visible evidence of pricing power recovery or meaningful cost reduction, it remains uncertain whether the earnings trough has definitively been reached."
+    "ko": "영업이익률은 2023년 13.9%에서 2024년 10.3%, 2025년 7.8%로 계속 낮아졌다. 매출 증가에도 원가 부담이 이어지며 수익성이 구조적으로 약화되는 모습이다. 이런 흐름이 이어질 경우 절대 이익 규모의 회복이 더 지연될 수 있다.",
+    "en": "The operating margin continued to decline, from 13.9% in 2023 to 10.3% in 2024 and 7.8% in 2025. Despite revenue growth, cost pressures persisted, resulting in structurally weakening profitability. If this trend continues, the recovery of absolute profit levels could be further delayed."
    }
   },
   {
    "title": {
-    "ko": "2026년 1분기 매출·영업이익 동반 급감—실적 회복 신호 부재",
-    "en": "Q1 2026 Revenue and Operating Profit Both Plunge—No Recovery Signal Yet"
+    "ko": "분기 실적의 큰 변동성",
+    "en": "High Quarterly Earnings Volatility"
    },
    "body": {
-    "ko": "2026년 1분기 매출 219,191,036원은 전년 동기 대비 12.2% 감소했고, 영업이익은 12,698,052원으로 57.7% 급감했다. 1분기는 전통적으로 성수기에 해당함에도 이처럼 크게 악화된 것은 단순 계절 요인으로만 해석하기 어렵다. 지배주주 귀속 순이익(3,310,248원) 역시 전년 동기 대비 80.9% 급감했으며, 연간 이익 기반의 의미 있는 회복을 위해서는 2분기 이후 실적 개선이 선행되어야 한다.",
-    "en": "Q1 2026 revenue of 219,191,036 fell 12.2% YoY, while operating profit of 12,698,052 plunged 57.7% YoY. Given that Q1 is typically a seasonally stronger period, the magnitude of the YoY decline is difficult to attribute solely to seasonality. Net profit attributable to controlling shareholders (3,310,248) collapsed 80.9% YoY, meaning a substantial improvement from Q2 2026 onward is required for any meaningful annual earnings recovery."
+    "ko": "2025년 3분기에는 순손실(-1.7억원)을 기록했다가 4분기 순이익 50억원으로 급반등했고, 2026년 1분기 다시 6.7억원으로 위축된 뒤 2분기 28억원으로 재차 개선되는 등 분기별 편차가 크다. 이러한 변동성은 실적 흐름을 예측하기 어렵게 만드는 요인이다.",
+    "en": "In Q3 2025, the company recorded a net loss (-KRW 170 million), which sharply rebounded to a net profit of KRW 5.0 billion in Q4, then contracted again to KRW 670 million in Q1 2026, before improving once more to KRW 2.8 billion in Q2, showing significant quarter-to-quarter volatility. Such volatility is a factor that makes it difficult to predict earnings trends."
    }
   },
   {
    "title": {
-    "ko": "코스닥 상장 중국기업 특유의 정보 비대칭·지배구조 할인 고착",
-    "en": "Entrenched Information Asymmetry and Governance Discount Typical of KRX-Listed Chinese Companies"
+    "ko": "상장유지 요건 미달 리스크의 지속 가능성",
+    "en": "Potential Persistence of Listing-Maintenance Risk"
    },
    "body": {
-    "ko": "코스닥에 상장된 중국기업은 구조적으로 정보 접근성이 낮고, 중국 현지 사업의 실질적 검증이 어려워 지배구조 위험에 대한 할인이 지속되는 경향이 있다. ADR과 코스닥 원주 간 가격 괴리가 확대될 경우 차익거래를 위한 ADR→원주 전환 후 코스닥 시장 매도 물량이 발생할 수 있어 수급 리스크가 상존한다. 회사의 기능통화(위안화)와 코스닥 상장 통화(원화) 간 환율 변동은 KRW 환산 실적에 추가적인 변동성 요인으로 작용할 수 있다.",
-    "en": "Chinese companies listed on KOSDAQ structurally face limited information accessibility and difficulty in independent verification of Chinese operations, sustaining a persistent governance discount. A significant price gap between Nasdaq ADRs and KOSDAQ original shares could trigger arbitrage-driven ADR-to-original-share conversions and subsequent domestic market selling, creating supply-side pressure on the Korean stock price. Currency fluctuation between the company's functional currency (CNY) and the KOSDAQ listing currency (KRW) adds an additional layer of earnings volatility for Korean investors."
+    "ko": "2026년 7월 강화된 코스닥 규정에 따라 시가총액 200억원 미만 또는 주가 1,000원 미만 상태가 30거래일 지속되면 관리종목으로 지정될 수 있다. 최근 경영진 대응으로 일시적으로 완화됐더라도, 향후 주가나 시가총액이 다시 기준을 하회할 경우 동일한 우려가 재발할 수 있다.",
+    "en": "Under the strengthened KOSDAQ regulations effective July 2026, if market capitalization falls below KRW 20 billion or share price stays below KRW 1,000 for 30 consecutive trading days, the company could be designated as an administrative issue. Even though recent management responses have temporarily alleviated the situation, the same concern could recur if the share price or market capitalization falls below the threshold again in the future."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "중국 내수 수요 둔화 및 원재료 가격 리스크",
-    "en": "China Domestic Demand Slowdown and Raw Material Cost Risk"
+    "ko": "거래소 규제 리스크",
+    "en": "Exchange Regulatory Risk"
    },
    "body": {
-    "ko": "중국 소비 시장의 경기 둔화와 가성비 소비 트렌드 심화는 전통 육가공품의 판매 단가와 물량에 동시에 하방 압력을 가할 수 있다. 창고형 매장 중심의 대용량·저단가 제품 선호 현상은 고부가 전통 육가공 시장을 점진적으로 잠식할 위험이 있다. 아프리카돼지열병(ASF) 등 원재료 수급 불안 요인이 재발할 경우 원가 부담이 추가로 상승해 이미 낮아진 영업이익률이 더 압박받을 수 있다.",
-    "en": "China's economic slowdown and deepening value-seeking consumer behavior may simultaneously weigh on both the selling price and volume of traditional processed meats. The growing preference for bulk, lower-priced products in warehouse-format retail channels risks gradually eroding the premium traditional processed meat segment. A recurrence of African Swine Fever (ASF) or other raw material supply disruptions could further pressure an already-compressed operating margin."
+    "ko": "2026년 7월부터 강화된 코스닥 상장유지 요건에 따라 시가총액이나 주가가 기준을 하회하는 상태가 일정 기간 지속되면 관리종목 지정, 이후 상장폐지 절차로 이어질 수 있다. 이미 한 차례 우려 공시가 있었던 만큼 향후 유사한 상황이 재발할 가능성을 배제할 수 없다. 이는 실적과 별개로 주식 자체의 거래 지속성에 영향을 줄 수 있는 요인이다.",
+    "en": "Under the strengthened KOSDAQ listing maintenance requirements effective from July 2026, if market capitalization or share price remains below the threshold for a certain period, the company could be designated as an administrative issue, potentially leading to delisting procedures. Given that a warning disclosure has already occurred once, the possibility of a similar situation recurring in the future cannot be ruled out. This is a factor that could affect the continuity of stock trading itself, separate from earnings performance."
    }
   },
   {
    "cat": {
-    "ko": "해외 시장 진출 실현 불확실성",
-    "en": "Overseas Market Entry Execution Risk"
+    "ko": "원가(돈육 가격) 변동 리스크",
+    "en": "Raw Material (Pork Price) Volatility Risk"
    },
    "body": {
-    "ko": "동남아 진출의 핵심 근거인 ArtTogether International와의 LOI는 구속력 없는 의향서 단계로, 본계약 체결 실패 또는 조건 변경 가능성이 있다. 동남아 현지의 브랜드 인지도 부재, 식품 규제 차이, 현지 유통 파트너 의존도 등은 초기 시장 진입 비용과 불확실성을 높인다. 생산라인 설비 투자 집행 이후 신규 매출이 기대에 미치지 못할 경우 자본 비효율성과 잉여 생산능력 문제가 발생할 수 있다.",
-    "en": "The LOI with ArtTogether International—the cornerstone of the Southeast Asian expansion narrative—is a non-binding letter of intent, leaving open the risk of failed contract negotiation or changed terms. Lack of brand recognition in Southeast Asia, differing food safety regulations, and reliance on local distribution partners elevate entry costs and execution uncertainty. If new revenues fall short of expectations following production line investment, concerns about capital inefficiency and excess capacity could emerge."
+    "ko": "육가공업은 돈육 가격의 사이클성 변동에 원가가 크게 노출되는 산업 특성을 지닌다. 최근 3년간 영업이익률이 지속적으로 낮아진 배경에는 원가 부담이 영향을 미쳤을 가능성이 있다. 원재료 가격이 추가로 상승할 경우 마진 압박이 재차 심화될 수 있다.",
+    "en": "The meat processing industry has an inherent characteristic of being heavily exposed to cost fluctuations driven by the cyclical nature of pork prices. The continuous decline in operating margin over the past three years may have been influenced by such cost pressures. If raw material prices rise further, margin pressure could intensify again."
    }
   },
   {
    "cat": {
-    "ko": "ADR-원주 가격 괴리 및 유통 물량 증가 리스크",
-    "en": "ADR-to-Original-Share Price Gap and Domestic Float Expansion Risk"
+    "ko": "이중 상장·정보 비대칭 리스크",
+    "en": "Dual-Listing and Information Asymmetry Risk"
    },
    "body": {
-    "ko": "나스닥 ADR과 코스닥 원주 간의 가격 괴리가 확대될 경우, 투자자들이 ADR을 원주로 전환한 뒤 코스닥에서 매도하는 차익거래가 발생해 유통 물량이 증가할 수 있다. 이는 주가에 구조적 하방 압력으로 작용하는 메커니즘이다. 미·중 지정학 긴장이나 무역 갈등이 심화될 경우 나스닥 투자자들의 중국 관련 소형 F&B 종목 회피 성향이 강해져 ADR 측 매도 압력이 코스닥 원주로 전이될 수 있다.",
-    "en": "If the price gap between Nasdaq ADRs and KOSDAQ original shares widens, investors may convert ADRs into original shares for sale on KOSDAQ, increasing domestic float and creating downward price pressure. This arbitrage mechanism is a structural feature of the dual-listing arrangement. Heightened US-China geopolitical or trade tensions could intensify risk aversion toward small-cap China-linked F&B names on Nasdaq, potentially transmitting ADR-side selling pressure to the KOSDAQ original shares."
+    "ko": "코스닥과 나스닥에 동시 상장된 구조는 자본조달 채널을 넓히는 장점이 있으나, 두 시장 간 공시 시점이나 정보 전달 속도 차이로 투자자 간 정보 비대칭이 발생할 가능성이 있다. 또한 중국 소재 자회사의 회계·통관·규제 환경 변화도 실적에 영향을 줄 수 있는 변수다.",
+    "en": "The dual-listing structure on both KOSDAQ and NASDAQ has the advantage of broadening capital-raising channels, but differences in disclosure timing and information delivery speed between the two markets could create information asymmetry among investors. In addition, changes in the accounting, customs, and regulatory environment of the China-based subsidiary are also variables that could affect earnings."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월",
-    "en": "July–August 2026"
+    "ko": "2026년 9월 중",
+    "en": "September 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 공시 예정. 영업이익률이 2026년 1분기(5.8%) 대비 회복됐는지, 매출 감소세가 둔화됐는지가 핵심이다. CFO와 영업이익 간 괴리가 좁혀지는지도 이익의 질 측면에서 점검이 필요하다.",
-    "en": "Q2 2026 earnings release expected. Key items: whether operating margins recover from Q1 2026's 5.8%, whether the revenue decline rate moderates, and whether the gap between reported operating profit and operating cash flow begins to narrow as a quality-of-earnings indicator."
+    "ko": "코스닥 상장유지 요건(시가총액 200억원, 주가 1,000원) 재충족 여부를 지속 확인 — 기준 미달이 재발할 경우 관리종목 지정 절차가 진행될 수 있다.",
+    "en": "Continue monitoring whether the company sustains compliance with KOSDAQ listing-maintenance thresholds (market cap of KRW 20bn, share price of KRW 1,000) — renewed shortfalls could trigger administrative-issue designation procedures."
    }
   },
   {
    "when": {
-    "ko": "2026년 3분기 내",
-    "en": "Within Q3 2026"
+    "ko": "2026년 11월경",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "ArtTogether International Limited와의 LOI가 구속력 있는 공급 계약으로 전환되는지, 실제 첫 출하가 이루어지는지 확인이 필요하다. 동남아 수익이 분기 실적에 처음으로 반영될 경우 외형 성장 재가속 여부를 판단할 수 있는 중요 데이터가 된다.",
-    "en": "Watch for conversion of the LOI with ArtTogether International into a binding supply contract and commencement of actual shipments. If Southeast Asian revenues begin appearing in quarterly results for the first time, it will provide critical evidence on whether geographic diversification can re-accelerate top-line growth."
+    "ko": "2026년 3분기 실적 공시 예정 — 최근 네 개 분기의 이익 회복 흐름이 이어지는지 확인할 필요가 있다.",
+    "en": "2026Q3 results are expected to be disclosed — worth checking whether the earnings recovery seen over the trailing four quarters continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "H2 2026"
+    "ko": "일정 미확정",
+    "en": "Timing not yet confirmed"
    },
    "what": {
-    "ko": "나스닥 IPO 공모자금의 생산설비 투자 집행 현황을 추적해야 한다. 설비 투자 완료 후 단위당 생산비용이 의미 있게 낮아질 경우 향후 마진 회복의 구조적 기반이 형성됐음을 확인할 수 있다.",
-    "en": "Track the pace of production equipment investment using Nasdaq IPO proceeds and any resulting improvements in manufacturing capacity and cost efficiency. A meaningful reduction in per-unit production costs following capex completion would indicate a structural foundation for future margin recovery."
+    "ko": "2026년 3월 공시된 주식병합 결정의 실제 시행 여부와 시점 — 시행 시 유통주식수와 주당 지표 산정 방식에 변화가 생길 수 있다.",
+    "en": "Actual implementation status and timing of the stock consolidation decision disclosed in March 2026 — if executed, it could change the outstanding share count and per-share metric calculations."
    }
   },
   {
    "when": {
-    "ko": "2027년 초 (FY2026 연간 실적 발표)",
-    "en": "Early 2027 (FY2026 Annual Earnings)"
+    "ko": "향후 공시 시점",
+    "en": "Upon future disclosure"
    },
    "what": {
-    "ko": "2026년 연간 영업이익률이 2025년(7.8%) 대비 개선됐는지, 동남아 신규 매출의 실질적 기여가 확인됐는지가 중장기 성장 가설 검증의 핵심이다. CFO 회복 여부도 이익의 실현 가능성을 평가하는 데 중요한 지표다.",
-    "en": "FY2026 annual results will be the definitive test of whether operating margins improved from 2025's 7.8% and whether Southeast Asian revenues contributed meaningfully to the top line—the core validation points for the medium-term growth thesis. Operating cash flow recovery will also be a critical quality-of-earnings test."
-   }
-  },
-  {
-   "when": {
-    "ko": "수시 (공시·ADR 모니터링)",
-    "en": "Ongoing (DART Filings & ADR Monitoring)"
-   },
-   "what": {
-    "ko": "나스닥 WYHG ADR 가격과 코스닥 원주 가격 간 괴리율 확대 여부를 지속 모니터링해야 한다. 식물성 대체육·웰빙 소시지 관련 제품 출시나 계약 체결 관련 DART 수시 공시 발생 시 신제품 사업화 일정 구체화 여부를 확인할 수 있다.",
-    "en": "Continuously monitor the price gap between Nasdaq WYHG ADRs and KOSDAQ original shares; a significant widening raises the risk of conversion-and-sell arbitrage increasing domestic float. Also watch DART ad-hoc disclosures for announcements related to plant-based meat and wellness sausage product launches or commercial agreements, which would indicate progress on the product diversification roadmap."
+    "ko": "제3자배정 유상증자 대금 납입 완료 및 신주 상장 여부 — 자본 확충이 실제로 완료되는지 확인이 필요하다.",
+    "en": "Completion of payment for the third-party share placement and listing of new shares — worth confirming whether the capital reinforcement is actually completed."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "윙입푸드는 중국 광동 전통 육가공 제품을 주력으로 하는 코스닥 상장 홍콩 지주회사로, 2022~2024년 매출 성장 이후 원가 압박과 수요 둔화가 맞물리며 수익성이 가파르게 하락하는 국면에 놓여 있다. 영업이익률이 3년 연속 하락해 2026년 1분기 5.8%까지 낮아진 상황에서 이익 추세 반전의 신호가 확인되기 전까지는 재무 성과에 신중한 시각이 요구된다. 동시에 동남아 진출 LOI 체결, 나스닥 듀얼 상장 완료, 심천 자회사 설립 등 사업 다각화 포석은 중장기 성장 옵션으로서의 가치가 있다. 낮은 부채비율과 꾸준히 증가해 온 지배주주 귀속 자본은 재무 안정성 측면의 완충 기능을 한다. 단기적으로는 2026년 2분기 실적과 동남아 첫 공급 계약 확정 여부가 이익 방향성을 가늠하는 핵심 지표가 될 것이며, 중기적으로는 나스닥 ADR 동향과 동남아 매출 실현 속도가 코스닥 원주 가격에 영향을 미치는 주요 변수다. 본 리포트는 투자 권유 없이 공시·뉴스·시장 데이터에 기반한 정보 제공만을 목적으로 한다.",
-   "en": "Wing Yip Food is a KOSDAQ-listed Hong Kong holding company centered on traditional Guangdong processed meats, currently navigating a sharp earnings downcycle following top-line growth in 2022–2024 as cost pressures and slowing demand converge. With operating margins declining for three consecutive years to 5.8% in Q1 2026, a cautious view on financial performance is warranted until a clear earnings trend reversal emerges. At the same time, the Southeast Asian LOI, completed Nasdaq dual listing, and Shenzhen subsidiary establishment represent viable medium-term growth options worth monitoring. A low debt ratio and consistently growing controlling shareholders' equity provide a meaningful balance-sheet buffer. In the near term, Q2 2026 earnings and confirmation of the first Southeast Asian binding supply contract will be the critical directional indicators; in the medium term, Nasdaq ADR dynamics and the pace of Southeast Asian revenue materialization are the key variables likely to influence KOSDAQ share price behavior. This report is provided solely for informational purposes based on public disclosures, news, and market data, and does not constitute investment advice."
+   "ko": "윙입푸드는 광둥성을 기반으로 한 돈육·가금육 가공업체로, 코스닥과 나스닥에 이중 상장된 독특한 구조를 지니고 있다. 재무적으로는 2023년 이후 영업이익률이 13.9%에서 7.8%까지 3년 연속 낮아지며 이익 규모가 축소됐고, 최근 네 개 분기 지배주주 순이익도 2025년 연간치에 미치지 못해 이익 회복이 완전하지 않은 상태다. 다만 분기별로는 2025년 4분기와 2026년 2분기에 이익이 개선되는 모습도 함께 나타났다. 2026년 7월 강화된 코스닥 상장유지 요건에 따른 관리종목 지정 우려가 불거지면서 경영진과 최대주주가 자사주 매입과 제3자배정 유상증자로 대응한 점은 이 종목의 최근 핵심 이슈다. 유통망 다각화와 이중 상장 구조는 장기적 성장 기반이 될 수 있는 요소지만, 원가 변동성과 거래소 규제 리스크는 지속적으로 관찰이 필요한 변수다. 투자 판단에 앞서 상장유지 요건 충족 여부와 향후 분기 실적 발표를 함께 확인하는 것이 바람직하다.",
+   "en": "Wing Yip Food is a Guangdong-based pork and poultry processor with a distinctive dual-listing structure spanning KOSDAQ and Nasdaq. Financially, its operating margin has declined for three consecutive years from 13.9% in 2023 to 7.8% in 2025, shrinking overall profit, and owner net profit over the trailing four quarters still falls short of the full-year 2025 figure, indicating an incomplete earnings recovery. That said, quarterly profitability did improve in both 2025Q4 and 2026Q2. The key recent issue for this stock has been the concern over administrative-issue designation stemming from tightened KOSDAQ listing-maintenance rules from July 2026, to which management and the controlling shareholder responded with treasury share purchases and a third-party placement. Distribution diversification and the dual-listing structure could serve as a longer-term growth foundation, but raw material cost volatility and exchange regulatory risk remain variables requiring ongoing observation. Ahead of any investment decision, it would be prudent to check both listing-maintenance compliance and upcoming quarterly results."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A900340",
-  "https://m.irgo.co.kr/IR-COMP/900340/",
-  "https://alphasquare.co.kr/home/stock-summary?code=900340",
-  "https://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=900340",
-  "https://www.investing.com/equities/wing-yip-food-china-holdings-gr-ltd",
-  "https://www.sedaily.com/article/20051695",
   "https://m.thinkpool.com/item/900340",
-  "https://www.valueline.co.kr/finance/mri/900340",
-  "https://finance.daum.net/quotes/A900340",
-  "http://www.wingyip-food.co.kr/",
-  "https://m.kati.net/file/down.do?path=/board/2022/09/&fileName=%EA%B5%AD%EB%82%B4%EC%99%B8%EA%B8%B0%EC%97%85+%EB%B2%A0%ED%8A%B8%EB%82%A8+%ED%98%84%EC%A7%80%ED%99%94+%EC%A7%84%EC%B6%9C+%EC%84%B1%EA%B3%B5%EC%82%AC%EB%A1%80+%EC%A1%B0%EC%82%AC.pdf.pdf",
-  "https://dart.fss.or.kr/html/search/SearchCompanyIR_M.html?textCrpNM=900340",
-  "https://kocham.kr/bbs/board.php?bo_table=notice&wr_id=1111&page=31",
-  "https://daily.hankooki.com/news/articleView.html?idxno=1107013",
-  "https://m.newsprime.co.kr/section_view.html?no=664394&menu=1",
-  "https://m.ekn.kr/view.php?key=20241125022186473",
-  "https://news.infostock.co.kr/a"
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A900340",
+  "https://markets.hankyung.com/stock/900340/consensus",
+  "https://www.investing.com/equities/wing-yip-food-china-holdings-gr-ltd",
+  "https://www.google.com/finance/beta/quote/900340:KOSDAQ?hl=ko",
+  "http://www.thinkpool.com/itemanal/i/index.jsp?code=900340",
+  "https://alphasquare.co.kr/home/stock-summary?code=900340",
+  "https://m.irgo.co.kr/IR-COMP/900340/",
+  "https://www.youtube.com/watch?v=Jye4PdjWMrE",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=searchInitInfo&acptNo=20241125000228&docno=",
+  "https://ideal-life.co.kr/1681",
+  "https://v.daum.net/v/tEvkO6PKDh",
+  "https://kind.krx.co.kr/investwarn/investattentwarnrisky.do?method=investattentwarnriskyMain",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260330001314&docno=&viewerhost=",
+  "https://kr.investing.com/news/stock-market-news/article-2053127",
+  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=853208&gn=1",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=searchInitInfo&acptNo=20240508000602&docno=",
+  "https://www.samsungpop.com/common.do?cmd=down&saveKey=research.pdf&fileName=1010%2F2026073015434545K_02_01.pdf"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "900340",
  "name": "윙입푸드",
  "name_en": "WING YIP FOOD HOLDINGS GROUP LIMITED",
@@ -232,24 +223,24 @@
   "금융"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 04:49",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:44",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
     "year": 2025,
-    "rev": 200351104732.2505,
-    "op": 15564341442.520752,
-    "np": 11553000617.97905,
-    "np_owner": 11553000617.97905,
-    "equity": 247311696688.66534,
-    "equity_owner": 247311696688.66534,
+    "rev": 196343272567.80087,
+    "op": 15252991683.131233,
+    "np": 11321893893.938166,
+    "np_owner": 11321893893.938166,
+    "equity": 242364462811.62704,
+    "equity_owner": 242364462811.62704,
     "equity_nci": null,
-    "liab": 63694134017.433846,
-    "cfo": 4736773608.010584,
+    "liab": 62419993805.7141,
+    "cfo": 4642018983.885744,
     "eps_basic": null,
     "opm": 7.8,
     "roe": 4.7,
@@ -257,15 +248,15 @@
    },
    {
     "year": 2024,
-    "rev": 214579583906.79678,
-    "op": 22189438555.591557,
-    "np": 15582266390.973463,
-    "np_owner": 15582266390.973463,
-    "equity": 233935633184.1795,
-    "equity_owner": 233935633184.1795,
+    "rev": 210287124629.5436,
+    "op": 21745560067.010094,
+    "np": 15270558060.139824,
+    "np_owner": 15270558060.139824,
+    "equity": 229255974660.01306,
+    "equity_owner": 229255974660.01306,
     "equity_nci": null,
-    "liab": 57435608038.36533,
-    "cfo": 24261757318.37454,
+    "liab": 56286663651.01838,
+    "cfo": 23776424075.632507,
     "eps_basic": null,
     "opm": 10.3,
     "roe": 6.7,
@@ -273,15 +264,15 @@
    },
    {
     "year": 2023,
-    "rev": 195737422876.81107,
-    "op": 27172818967.713524,
-    "np": 17504694432.114456,
-    "np_owner": 17504694432.114456,
-    "equity": 208533263907.0991,
-    "equity_owner": 208533263907.0991,
+    "rev": 191821883003.74402,
+    "op": 26629252721.831783,
+    "np": 17154529767.598896,
+    "np_owner": 17154529767.598896,
+    "equity": 204361755476.62927,
+    "equity_owner": 204361755476.62927,
     "equity_nci": null,
-    "liab": 57382950306.4092,
-    "cfo": 37112473194.02066,
+    "liab": 56235059286.6098,
+    "cfo": 36370073675.095894,
     "eps_basic": null,
     "opm": 13.9,
     "roe": 8.4,
@@ -289,15 +280,15 @@
    },
    {
     "year": 2022,
-    "rev": 181460187207.4218,
-    "op": 22950236493.69785,
-    "np": 17593395256.852287,
-    "np_owner": 17593395256.852287,
-    "equity": 191028569474.98465,
-    "equity_owner": 191028569474.98465,
+    "rev": 177830249774.18997,
+    "op": 22491138970.257236,
+    "np": 17241456217.202274,
+    "np_owner": 17241456217.202274,
+    "equity": 187207225709.03036,
+    "equity_owner": 187207225709.03036,
     "equity_nci": null,
-    "liab": 44335199585.4121,
-    "cfo": 18509319586.7034,
+    "liab": 43448316335.3638,
+    "cfo": 18139058357.1444,
     "eps_basic": null,
     "opm": 12.6,
     "roe": 9.2,
@@ -306,56 +297,60 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q1",
-    "rev": 51465778141.75661,
-    "op": 6185712989.381435,
-    "np_owner": 3569390515.285448
-   },
-   {
     "q": "2025Q2",
-    "rev": 53380482059.186646,
-    "op": 3706431133.8352966,
-    "np_owner": 3069411133.867148
+    "rev": 52312656587.31544,
+    "op": 3632287525.127202,
+    "np_owner": 3008010500.7901683
    },
    {
     "q": "2025Q3",
-    "rev": 47332759791.44779,
-    "op": 44879793.812189,
-    "np_owner": -168372371.125602
+    "rev": 46385913217.39047,
+    "op": 43982016.475674,
+    "np_owner": -165004242.931332
    },
    {
     "q": "2025Q4",
-    "rev": 48172084739.859436,
-    "op": 5627317525.49183,
-    "np_owner": 5082571339.952057
+    "rev": 47208448273.232445,
+    "op": 5514748422.32478,
+    "np_owner": 4980899363.041362
    },
    {
     "q": "2026Q1",
-    "rev": 45194028038.97741,
-    "op": 2618155051.415484,
-    "np_owner": 682525360.7906159
+    "rev": 44289964747.398796,
+    "op": 2565781364.5291443,
+    "np_owner": 668872093.953456
+   },
+   {
+    "q": "2026Q2",
+    "rev": 43976713586.21263,
+    "op": 5503933106.122231,
+    "np_owner": 2774365724.563392
    }
   ],
   "valuation": {
-   "price": 1598,
-   "mcap": 0.0201,
+   "price": 1395,
+   "mcap": 0.0176,
    "shares": 12582732,
    "total_shares": 12582732,
    "wavg_shares": null,
-   "per": 2.323,
-   "eps": 688,
-   "pbr": 0.0811,
-   "bps": 19709,
-   "roe_ttm": 3.6,
-   "ttm_window": "2025Q2~2026Q1",
-   "ttm_np_owner": 8666135463.484219,
+   "per": 2.127,
+   "eps": 656,
+   "pbr": 0.0714,
+   "bps": 19535,
+   "roe_ttm": 3.4,
+   "ttm_window": "2025Q3~2026Q2",
+   "ttm_np_owner": 8259132938.626879,
    "ccy": "CNY",
    "bps_src": "자체",
+   "eps_src": "순이익÷주식수",
    "pbr_krx": null,
    "bps_krx": null,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": null,
-   "div": null
+   "div": null,
+   "hidden": {
+    "dps": "no_div"
+   }
   }
  }
 }

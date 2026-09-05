@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "거래정지·상폐 리스크 속 분기 매출 급반등",
-  "en": "Trading Halt and Delisting Risk Amid Quarterly Revenue Surge"
+  "ko": "경영권 교체 속 감사의견거절 리스크 상존",
+  "en": "Ownership Shake-up Clouded by Audit Disclaimer Risk"
  },
  "lead": {
-  "ko": "2025 회계연도 외부감사 의견거절로 상장폐지 사유가 발생하고 2026년 6월 거래정지까지 이어진 가운데, 2026년 1분기 연결 매출이 전년 연간 대비 2.5배를 초과하며 사업 구조 전환 가능성을 동시에 시사하고 있다.",
-  "en": "A 2025 auditor disclaimer triggered a delisting event and ultimately a trading halt as of June 2026, yet 2026 Q1 consolidated revenue surged to more than 2.5x the full-year 2025 figure, simultaneously hinting at a possible business model transformation."
+  "ko": "롤링스톤은 체외진단 전문기업에서 최대주주 변경과 반복된 공시 번복을 거치며 감사의견거절에 따른 상장폐지 사유가 발생한 상태로, 최근 분기 매출은 급증했지만 감독당국의 심사 결과가 아직 남아 있다.",
+  "en": "RollingStone, an in-vitro diagnostics company that underwent a controlling-shareholder change and repeated disclosure reversals, currently carries a delisting cause from an audit opinion disclaimer, and while recent quarterly revenue has surged sharply, the exchange's review outcome remains pending."
  },
  "keypoints": [
   {
-   "ko": "2025 회계연도 감사의견 거절로 코스닥 상장폐지 사유 발생 → 2026년 6월 12일 거래정지 조치, 상폐 절차 진행 중",
-   "en": "A 2025 auditor disclaimer triggered a KOSDAQ delisting event, leading to a trading halt on June 12, 2026; delisting proceedings are underway."
+   "ko": "2025년 9월 '더바이오메드'에서 '롤링스톤'으로 사명을 바꾸고 같은 해 최대주주가 제이비에셋매니지먼트로 변경되며 지배구조가 급변했다.",
+   "en": "The company changed its name from The BioMed to RollingStone in September 2025, and its controlling shareholder shifted to JB Asset Management the same year, triggering a major governance shift."
   },
   {
-   "ko": "2026년 1분기 연결 매출 279억 원 — 전년 연간(109억 원)의 2.5배 이상이며, 영업손실률도 약 -9%로 이전 연도들 대비 대폭 개선",
-   "en": "2026 Q1 consolidated revenue hit KRW 27.9 billion (2.5x full-year 2025), with the operating margin narrowing sharply to approximately -9% versus prior-year ranges of -91% to -414%."
+   "ko": "2025사업연도 감사보고서에서 의견거절을 받아 상장폐지 사유가 발생했고, 2026년 반기 검토보고서에서도 다시 의견거절을 받았다.",
+   "en": "The FY2025 audit report received a disclaimer of opinion, creating a delisting cause, and the 2026 interim review report also received a disclaimer of opinion."
   },
   {
-   "ko": "4년 연속 영업적자·영업현금흐름 마이너스 지속, 지배주주 자기자본은 2023년 370억 원에서 2025년 159억 원으로 축소",
-   "en": "Four consecutive years of operating losses and negative operating cash flow; controlling-shareholder equity shrank from approximately KRW 37 billion (2023) to KRW 15.9 billion (2025)."
+   "ko": "유형자산 양수 결정을 철회하는 공시 번복으로 불성실공시법인 지정 예고를 받았으며, 주식은 2026년 6월 12일 이후 거래가 정지된 상태다.",
+   "en": "A disclosure reversal involving the withdrawal of a tangible-asset acquisition decision led to a preliminary unfaithful-disclosure designation, and shares have been halted from trading since June 12, 2026."
   },
   {
-   "ko": "분자·면역·생화학진단 융복합 IVD 전문기업에서 동물의약·유전체분석·화장품 등 다변화 추진 중, 랩칩 기반 기술로 선진 17개국 특허 보유",
-   "en": "Diversifying beyond its IVD core (molecular, immunological, biochemical) into animal pharma, genomics, and cosmetics, backed by LabChip-based technology patents in 17 developed markets."
+   "ko": "연간 매출은 2022년 161억원에서 2023~2024년 40~50억원대로 줄었다가 2025년 109억원으로 다시 늘었고, 영업손실 규모는 2022년 259억원에서 2025년 99억원으로 축소됐다.",
+   "en": "Annual revenue fell from KRW 16.1 billion in 2022 to the KRW 4-5 billion range in 2023-2024 before rebounding to KRW 10.9 billion in 2025, while the operating loss narrowed from KRW 25.9 billion in 2022 to KRW 9.9 billion in 2025."
   },
   {
-   "ko": "최대주주 제이비에셋매니지먼트 지분 38.56%, 전환사채 조기상환·풋옵션 행사로 지분 변동 지속 — 오버행 리스크 상존",
-   "en": "Largest shareholder JB Asset Management holds 38.56%; ongoing convertible bond redemptions and put-option exercises continue to create equity overhang risk."
+   "ko": "2026년 1분기와 2분기 매출은 각각 279억원, 337억원으로 직전 분기 대비 크게 늘었으나 영업손실과 순손실은 계속됐다.",
+   "en": "Revenue in the first and second quarters of 2026 came to KRW 27.9 billion and KRW 33.7 billion, respectively, sharply higher than prior quarters, though operating and net losses continued."
   }
  ],
  "business": {
-  "ko": "롤링스톤(구 미코바이오메드 → 더바이오메드)은 2009년 의료진단기기 제조업으로 설립된 체외진단(IVD) 전문기업으로, 2020년 10월 코스닥에 상장했다. 핵심 사업은 분자진단·면역진단·생화학진단을 복합적으로 영위하는 현장진단(POCT) 솔루션이며, 주요 제품 라인업은 분자진단기기(PCR), 면역진단기기, 생화학진단기기 및 진단시약으로 구성된다. 대표 플랫폼인 opti96™은 미세유체흐름 원리를 활용해 5μL 소량 시료로 30~60분 내 신속진단이 가능한 ELISA 기반 면역진단 키트다. 트로포닌·마이오글로빈 등 심혈관·감염병 표지인자를 항원항체반응으로 검출하는 체외진단의료기기도 주요 라인업에 포함된다. 랩칩(LabChip) 기술 기반 혁신적 분자진단 기술로 선진국 17개국에 특허를 등록했으며, 미국 자회사 Micobiomed-USA를 통해 글로벌 시장에 진출하고 있다. 사업 다변화 전략으로 동물의약·유전체분석·맞춤형 건강관리·화장품·교육·모빌리티 타워까지 포트폴리오 확장을 추진 중이며, 2026년 2월에는 진단키트 인허가 경험이 풍부한 전문 인력을 부사장으로 영입해 글로벌 인허가 역량 강화에 나섰다. 최대주주 제이비에셋매니지먼트(38.56%)가 지배구조의 정점에 있으며, 계열사 이아이디(이화전기 계열)와 금전대여(60억 원, 연 5%) 관계를 맺고 있다. KRX 업종 분류상 '전기장비'로 등재되어 있으나, 실질 사업 영역은 의료기기(체외진단)여서 분류 괴리가 존재한다.",
-  "en": "Rolling Stone (formerly Micobiomed → The Biomed) was founded in 2009 for medical diagnostic device manufacturing and listed on KOSDAQ in October 2020. Its core business is POCT solutions that combine molecular, immunological, and biochemical diagnostics, with a product portfolio spanning molecular diagnostic instruments (PCR), immunodiagnostic instruments, biochemical diagnostic instruments, and diagnostic reagents. The flagship opti96™ platform applies microfluidic flow technology to enable rapid immunodiagnosis (30–60 minutes) from only 5 μL of sample via ELISA-based kits. The company also produces IVD devices that detect cardiovascular and infectious disease markers such as troponin and myoglobin through antigen-antibody reactions. Its innovative LabChip-based molecular diagnostics technology is patented in 17 developed countries, and global market entry is pursued through U.S. subsidiary Micobiomed-USA. A business diversification strategy is expanding the portfolio into animal pharmaceuticals, genomics, personalized healthcare, cosmetics, education, and mobility towers; a regulatory specialist with extensive IVD approval experience was appointed as Executive Vice President in February 2026. Largest shareholder JB Asset Management holds 38.56%, and the company maintains a financial link with affiliate EID (E-Group) through a KRW 6 billion intercompany loan at 5% per annum. The KRX sector classification of 'Electrical Equipment' diverges from its actual medical-device (IVD) operations."
+  "ko": "롤링스톤은 2009년 의료진단기기 제조업을 목적으로 설립돼 2020년 코스닥시장에 상장한 체외진단(IVD) 전문기업이며, 분자진단·면역진단·생화학진단 기술을 복합적으로 영위한다. 주요 제품은 자체 개발한 VERI-Q PCR 시스템, 핵산 추출 기구, 랩칩(lab-on-a-chip) 기반 진단기기와 관련 진단시약 등이다. 2025년 9월 회사는 사업영역 확대와 이미지 제고를 목적으로 사명을 '더바이오메드'에서 '롤링스톤 주식회사'로 변경했다. 같은 시기 최대주주가 제이비에셋매니지먼트로 바뀌면서 지배구조가 크게 재편됐는데, 이 법인의 상위 대주주는 이아이디이며 이아이디는 이화전기공업 관련 지분 구조와 연결돼 있는 것으로 보도됐다. 이 과정에서 이른바 이그룹 계열에서 활동한 인물들이 롤링스톤 경영진에 다수 참여한 것으로 알려졌다. 2026년 2월에는 진단키트 인허가 경험이 있는 이민전 박사를 부사장으로 영입해 제품 인허가 및 포트폴리오 강화를 추진하고 있다. 코스닥 시장 분류상으로는 전기장비 업종으로 표기되어 있으나, 실제 사업 실체는 체외진단기기·시약 판매를 중심으로 하고 있어 업종 분류와 사업 내용 사이에 다소 괴리가 있다. 경쟁구도는 랩지노믹스, 수젠텍 등 국내 진단키트 업체들과 겹치며, 감염병 이슈가 부각될 때 관련 테마주로 함께 거론되는 특성을 보인다.",
+  "en": "RollingStone was established in 2009 to manufacture medical diagnostic devices and listed on KOSDAQ in 2020 as an in-vitro diagnostics (IVD) company operating across molecular, immunological, and biochemical diagnostics. Its core products include a proprietary VERI-Q PCR system, nucleic-acid extraction devices, lab-on-a-chip-based diagnostic equipment, and related diagnostic reagents. In September 2025 the company changed its name from The BioMed to RollingStone Co., Ltd. to broaden its business scope and improve its corporate image. Around the same time, its controlling shareholder changed to JB Asset Management, whose own major shareholder is EID, which has been reported as linked to the ownership structure of Lee Hwa Electric. Individuals reported to have been active within the so-called E Group network reportedly took on multiple management roles at RollingStone during this transition. In February 2026 the company hired Dr. Lee Min-jeon, who has experience with roughly 150 diagnostic-kit regulatory approvals, as vice president to strengthen its product-approval pipeline. On the KOSDAQ market's industry classification the company is listed under electric equipment, even though its actual business remains centered on diagnostic devices and reagents, creating a mismatch between sector labeling and operating reality. Competitively, it overlaps with domestic diagnostic-kit makers such as Lab Genomics and Sugentech, and its shares tend to be grouped with infectious-disease theme stocks when related news emerges."
  },
  "earnings": {
-  "ko": "연간 매출은 2022년 161억 원에서 2023년 54억 원, 2024년 46억 원으로 급감했다가 2025년 109억 원으로 반등했다. 영업손실은 같은 기간 259억 원 → 194억 원 → 192억 원 → 99억 원으로 줄었으며, 영업손실률은 -160.8%(2022) → -361.0%(2023) → -414.5%(2024) → -91.3%(2025) 경로로 2023~2024년에 한층 악화된 후 2025년에 크게 개선됐다. 지배주주 귀속 순손실은 2022년 389억 원, 2023년 258억 원, 2025년 241억 원으로 여전히 대규모 적자가 지속됐다. 분기별로는 2025년 2분기에 매출이 -6억 원(환입·반품 등 이례적 조정)을 기록하는 이상값이 발생했고, 4분기에 74억 원으로 급회복하며 연간 실적 반등을 견인했다. 2026년 1분기에는 연결 매출이 279억 원으로 급증해 전년 연간 합계(109억 원)의 2.5배 이상을 단일 분기에 달성했으며, 영업손실은 26억 원에 그쳐 손실률이 약 -9%로 대폭 개선됐다. 영업현금흐름은 2022~2025년 4개년 연속 -101억~-140억 원 수준으로 일관되게 마이너스를 기록, 외부 자금에 대한 의존도가 지속됐다. 지배주주 자기자본은 2023년 370억 원에서 2025년 159억 원으로 축소됐으며, 부채비율은 2022년 226.0%에서 2025년 59.1%로 개선됐으나 이는 자본과 부채가 동시에 감소한 결과다.",
-  "en": "Annual revenue fell sharply from KRW 16.1 billion in 2022 to KRW 5.4 billion in 2023 and KRW 4.6 billion in 2024, before rebounding to KRW 10.9 billion in 2025. Operating losses contracted over the same period—KRW 25.9 billion, KRW 19.4 billion, KRW 19.2 billion, and KRW 9.9 billion—while operating margins worsened from -160.8% in 2022 to -414.5% in 2024 before sharply improving to -91.3% in 2025. Controlling-shareholder net losses remained large at KRW 38.9 billion (2022), KRW 25.8 billion (2023), and KRW 24.1 billion (2025). On a quarterly basis, 2025 Q2 reported an unusual negative revenue of KRW -0.6 billion (likely reflecting returns or accounting reversals), while Q4 recovered to KRW 7.4 billion, driving the annual rebound. In 2026 Q1, consolidated revenue surged to KRW 27.9 billion—over 2.5x the full-year 2025 figure—with the operating loss narrowing to KRW 2.6 billion and the margin improving dramatically to approximately -9%. Operating cash flow remained consistently negative at KRW -10 to -14 billion annually from 2022 to 2025, sustaining reliance on external financing. Controlling-shareholder equity declined from KRW 37.0 billion (2023) to KRW 15.9 billion (2025), and the debt ratio improved from 226.0% (2022) to 59.1% (2025) as both liabilities and equity contracted simultaneously."
+  "ko": "연간 매출은 2022년 161.1억원에서 2023년 53.7억원, 2024년 46.4억원으로 줄었다가 2025년 108.8억원으로 다시 늘었다. 영업손실은 2022년 259.0억원, 2023년 193.8억원, 2024년 192.3억원, 2025년 99.4억원으로 절대 규모가 축소되는 흐름을 보였고, 영업이익률도 2024년 -414.5%에서 2025년 -91.3%로 손실률이 크게 완화됐다. 다만 지배주주 순손실은 2022년 389.2억원, 2023년 257.9억원을 기록했고 2024년은 수치가 확정되지 않았으며 2025년에는 241.0억원의 순손실을 기록해 매출 규모를 훨씬 웃도는 손실이 이어졌다. 자본총계(지배주주 기준)는 2022년 176.9억원에서 2023년 369.8억원으로 늘었다가 2024년 258.9억원, 2025년 159.4억원으로 다시 줄었고, 부채비율은 2022년 226.0%에서 2023년 68.8%, 2024년 110.4%, 2025년 59.1%로 등락했다. 영업활동현금흐름은 2022년부터 2025년까지 매년 -100억원대 초중반 수준의 유출을 지속해, 매출 규모나 손익 개선 여부와 무관하게 현금 소진이 이어진 점이 눈에 띈다. 분기 단위로는 2025년 3분기 매출 16.6억원, 영업손실 17.6억원이었던 데 비해 2026년 1분기에는 매출 278.8억원, 영업손실 25.5억원, 지배주주 순손실 27.1억원, 2026년 2분기에는 매출 336.7억원, 영업손실 16.8억원, 지배주주 순손실 19.0억원으로 매출 규모가 급격히 커졌다. 이는 직전 분기들과 비교해 20배 안팎의 매출 증가로, 지배구조 변화 및 신규 사업 관련 움직임과 시기적으로 맞물려 있다. 다만 회사가 2025사업연도 감사보고서와 2026년 반기 검토보고서에서 모두 의견거절을 받은 상태이기 때문에, 이 시기의 재무 수치는 최종 확정 감사의견이 나오기 전까지 해석에 신중함이 필요하다.",
+  "en": "Annual revenue declined from KRW 16.11 billion in 2022 to KRW 5.37 billion in 2023 and KRW 4.64 billion in 2024, before rebounding to KRW 10.88 billion in 2025. The operating loss narrowed in absolute terms from KRW 25.90 billion in 2022 to KRW 19.38 billion in 2023, KRW 19.23 billion in 2024, and KRW 9.94 billion in 2025, with the operating margin improving from -414.5% in 2024 to -91.3% in 2025. Net loss attributable to owners, however, remained large relative to revenue, at KRW 38.92 billion in 2022 and KRW 25.79 billion in 2023, with the 2024 figure undisclosed and a KRW 24.10 billion loss recorded in 2025. Owners' equity rose from KRW 17.69 billion in 2022 to KRW 36.98 billion in 2023 before falling back to KRW 25.89 billion in 2024 and KRW 15.94 billion in 2025, while the debt ratio fluctuated from 226.0% in 2022 to 68.8% in 2023, 110.4% in 2024, and 59.1% in 2025. Operating cash flow stayed negative every year from 2022 through 2025, in the low-to-mid tens of billions of won range annually, indicating persistent cash burn regardless of revenue or margin trends. On a quarterly basis, revenue of KRW 1.66 billion and an operating loss of KRW 1.76 billion in the third quarter of 2025 compare with revenue of KRW 27.88 billion, an operating loss of KRW 2.55 billion, and a net loss attributable to owners of KRW 2.71 billion in the first quarter of 2026, followed by revenue of KRW 33.67 billion, an operating loss of KRW 1.68 billion, and a net loss attributable to owners of KRW 1.90 billion in the second quarter of 2026. This represents roughly a twentyfold jump in quarterly revenue that coincided in timing with the ownership change and related corporate developments. Because both the FY2025 audit report and the 2026 interim review received disclaimers of opinion, however, these figures warrant caution in interpretation until a definitive audit opinion is issued."
  },
  "industry": {
-  "ko": "글로벌 체외진단(IVD) 시장은 코로나19 이후 POCT 수요의 구조 조정 단계를 거치면서 단기 수요 공백이 발생했으나, 감염병 상시 대비 체계 강화·만성질환 조기진단·동물의약 진단 수요 증가에 힘입어 중장기 성장 궤도로 복귀하는 흐름에 있다. 국내 IVD 시장은 씨젠·SD바이오센서 등 글로벌 인허가 네트워크와 대규모 생산 캐파를 갖춘 선발기업이 시장을 주도하고 있어, 중소형 후발사의 진입 장벽이 높은 구조다. 롤링스톤이 집중하는 POCT 면역진단 세그먼트는 병원 외(약국·가정·이동진단) 채널 확장을 배경으로 저가격·고편의성 제품 간 경쟁이 심화되고 있다. 동물의약·유전체분석 신사업은 성장성은 높지만 규제 허가·전문 인력·설비 투자에 상당한 시간과 자본이 소요돼 규모의 경제 확보가 관건이다. 한편 회사가 KRX 업종상 전기장비로 분류된 점은 IVD·바이오 섹터 기준으로 투자하는 기관의 편입 가능성을 제약하는 요인이다. 회사 IR에서 사우디아라비아 한국 산단 관련 보도가 언급된 점은 중동 시장 진출 의향을 시사하나, 구체적인 계약·수주 내역은 공식 확인된 바 없다.",
-  "en": "The global IVD market experienced a transient demand gap following the post-COVID-19 POCT normalization cycle, but is returning to a medium-to-long-term growth track driven by pandemic preparedness infrastructure, early chronic-disease detection, and rising animal diagnostics demand. In Korea, large incumbents such as Seegene and SD Biosensor dominate with established global regulatory networks and large-scale production capacity, creating high barriers to entry for smaller competitors. The POCT immunodiagnostics segment—Rolling Stone's primary focus—is seeing intensifying competition among low-cost, high-convenience products targeting out-of-hospital channels (pharmacies, home, and mobile). New business lines in animal pharmaceuticals and genomics offer strong growth potential but require substantial time and capital for regulatory approvals, specialized talent, and equipment, making the achievement of economies of scale the key challenge. The company's KRX classification as 'Electrical Equipment' may limit inclusion by institutional investors mandated to invest in IVD or biopharmaceutical sectors. While company IR materials reference media coverage of a Korea-Saudi Arabia industrial park, no confirmed contracts or orders in the Middle East have been publicly disclosed."
+  "ko": "체외진단(IVD) 산업은 코로나19 팬데믹 기간의 대규모 진단 수요가 소멸된 이후 국내 중소형 진단키트 업체들이 매출 기반 축소에 직면한 업황이다. 감염병 이슈가 발생할 때마다 랩지노믹스, 수젠텍, 현대바이오 등과 함께 관련 테마주로 시장에서 함께 거론되는 경우가 있어, 개별 기업의 실적보다 이슈 발생 여부에 따라 주가가 동반 움직이는 경향이 관찰된다. 이 같은 흐름은 실제 감염병 확산 여부와 무관하게 관련주가 단기적으로 함께 반응하는 패턴을 보여준다. 진단기기·시약 시장은 인허가 절차가 까다롭고 대형 업체와의 경쟁이 심화되어 있어, 소형 업체들은 신제품 인허가와 판로 확보에 상당한 시간과 자원이 소요된다. 롤링스톤은 이 시장에서 자체 PCR·랩칩 기술을 보유하고 있으나, 최근 몇 년간 매출 규모가 축소된 뒤 다시 반등하는 등 변동성이 컸고, 감사의견 문제와 지배구조 변화가 겹치면서 산업 내 경쟁력보다 기업 존속 이슈가 시장의 주된 관심사가 되고 있다. 신규 경영진의 인허가 전문성 확충 시도는 산업 경쟁력 회복을 위한 방향성으로 볼 수 있으나, 아직 구체적인 신제품 인허가나 매출 성과로 확인되지는 않았다.",
+  "en": "The in-vitro diagnostics (IVD) industry has faced shrinking revenue bases among smaller domestic diagnostic-kit makers since the large-scale COVID-19 testing demand faded. Whenever infectious-disease issues resurface, related stocks including Lab Genomics, Sugentech, and Hyundai Bioscience have at times moved together as a theme group, a pattern in which share prices react in tandem with news flow rather than individual company results. Such moves illustrate how theme-driven trading can occur independent of each company's actual outbreak-related fundamentals. The diagnostic device and reagent market involves demanding regulatory approval processes and intensifying competition from larger players, requiring smaller companies to commit significant time and resources to new product approvals and distribution. RollingStone holds proprietary PCR and lab-chip technology in this space, but its revenue scale has swung from contraction to a sharp rebound over recent years, and with audit-opinion issues and governance changes overlapping, corporate survival concerns have become a more prominent market focus than industry competitiveness. The new management's effort to build out regulatory-approval expertise represents a direction toward strengthening industry competitiveness, though it has not yet been confirmed through specific new product approvals or revenue outcomes."
  },
  "outlook": {
-  "ko": "2026년 6월 12일 거래정지가 발동된 상황에서, 상장폐지 절차의 귀결이 모든 중기 전망의 선행 조건이다. 감사의견 거절 해소를 위해서는 종속회사 재무자료 제공 등 공시 정상화가 이루어져야 하며, 이의신청 결과와 개선 기간 부여 여부가 핵심 분기점이다. 사업 측면에서는 2026년 1분기 매출 급증(279억 원)의 지속 가능성 여부가 최대 관전 포인트로, 2026년 반기 실적 발표에서 그 추세가 확인될 경우 사업 전환 논거가 강화된다. 2026년 2월 진단키트 인허가 전문가 영입은 글로벌 시장 확대 전략의 실행력을 높이는 조치로 평가되나, 실제 매출 기여 시점은 아직 공식 가이던스로 제시되지 않았다. 동물의약·유전체분석·화장품 등 신사업의 구체적 수익화 일정과 투자 규모도 공시된 바 없어 정성적 판단에 의존할 수밖에 없는 상황이다. 계열사 이아이디에 대한 60억 원 대여(만기 2026년 12월, 연 5%)는 이자수익 창출을 기대하나, 이아이디 자체가 당기순손실(-99억 원, 2025년 기준) 상태여서 회수 불확실성을 내포한다. 최대주주 지분 변동(전환사채 조기상환·풋옵션 행사)이 지속되는 한 주식 수급 측면의 오버행 압력도 해소되지 않는다.",
-  "en": "With a trading halt effective June 12, 2026, the outcome of the delisting process is the prerequisite for any medium-term outlook. Resolving the auditor disclaimer requires normalizing disclosures—including the provision of subsidiary financial data—and the result of the appeal process and any improvement period granted will be the key pivot point. On the business side, the sustainability of the 2026 Q1 revenue surge (KRW 27.9 billion) is the central question; confirmation of this trend in the H1 2026 results would substantially strengthen the business-transformation narrative. The February 2026 appointment of an IVD regulatory specialist as Executive Vice President is a positive execution signal for global market expansion, though no official timeline for revenue contribution has been guided. Monetization schedules and investment scales for new business lines—animal pharmaceuticals, genomics, cosmetics—have also not been formally disclosed, leaving assessment largely qualitative. The KRW 6 billion intercompany loan extended to EID (due December 2026 at 5%) carries meaningful recovery risk given EID's own net loss position of KRW 9.9 billion (2025). Ongoing shareholder overhang from convertible bond redemptions and put-option exercises by the largest shareholder continues to pose supply-side pressure."
+  "ko": "회사는 2026년 2월 진단키트 인허가 경험이 풍부한 부사장을 영입해 제품 포트폴리오와 인허가 대응력을 강화하려는 움직임을 보이고 있다. 한편 2026년 4월에는 계열사 이아이디에 60억원을 대여하기로 결정했는데, 유휴자금의 안정적 이자수익 확보를 목적으로 하며 이율은 5%, 대여기간은 2026년 4월 13일부터 같은 해 12월 31일까지로 설정됐다. 이는 회사가 보유 현금을 신제품 개발이나 영업 확장보다는 계열사 자금 지원 및 이자수익 확보에 사용하고 있음을 보여준다. 가장 중요한 변수는 2025사업연도 감사보고서 의견거절에 따른 상장폐지 사유로, 회사는 이의신청을 거쳐 개선기간을 부여받은 상태이며 개선기간 종료 후 기업심사위원회의 심의를 통해 상장폐지 여부가 최종 결정될 예정이다. 여기에 2026년 반기 검토보고서에서도 다시 의견거절을 받으면서 상장 유지를 둘러싼 불확실성이 추가로 누적된 상태다. 2026년 6월 12일 이후 주식 거래가 정지되어 있어, 거래 재개 여부와 시점에 대한 후속 공시 확인이 필요하다. 매출 규모가 2026년 들어 크게 늘어난 점은 사업 확장의 신호로 해석될 수 있으나, 그 배경이 되는 구체적 거래 내용은 공개된 자료로 충분히 확인되지 않아 향후 사업보고서·감사보고서를 통한 검증이 필요한 상황이다.",
+  "en": "In February 2026 the company brought in a vice president with extensive diagnostic-kit regulatory approval experience, signaling an effort to strengthen its product portfolio and regulatory response capability. Separately, in April 2026 the company decided to lend KRW 6.0 billion to affiliate EID, aimed at securing stable interest income on idle cash, with an interest rate of 5% and a loan period running from April 13, 2026 through December 31, 2026. This indicates that available cash is currently being directed toward intercompany financing and interest income rather than new product development or sales expansion. The most significant variable remains the delisting cause arising from the disclaimer of opinion on the FY2025 audit report; the company has filed an objection and been granted an improvement period, after which the Corporate Examination Committee will make a final delisting determination. This uncertainty has compounded further after the 2026 interim review also received a disclaimer of opinion. Shares have been halted from trading since June 12, 2026, making it necessary to monitor follow-up disclosures regarding the timing and conditions of any resumption. While the sharp rise in revenue scale during 2026 could be read as a sign of business expansion, the specific transactions underlying this increase have not been fully clarified in public disclosures, warranting verification through future business and audit reports."
  },
  "valuation_comment": {
-  "ko": "4년 연속 영업손실로 주당순이익(EPS)이 산출되지 않아 PER 기반 비교는 적용 불가하며, 주당순자산(BPS) 대비 주가 수준이 현재 주요 밸류에이션 참조 지표다. 장부가치 대비 프리미엄 구간에서 가격이 형성되어 있다는 점은, 사업 전환 기대나 낮은 유동성이 반영된 것으로 해석될 수 있으나, 현재 거래정지 상태에서 시장 가격 발견 기능 자체가 중단된 상황임을 유의해야 한다. 배당은 전혀 지급된 바 없으며, 지속적인 현금 소진 구조(연간 영업현금흐름 -100억~-140억 원)상 단기 내 배당 재개 가시성은 없다. 상장폐지 사유 발생이라는 구조적 불확실성은 일반적인 성장주 밸류에이션 논리의 적용을 원천적으로 어렵게 하며, 감사 의견 정상화와 상장 유지 결정이 정상적인 가치 평가의 선행 조건이다. 2026년 1분기 매출 급증에 따른 손실률 개선이 지속된다면 적자 탈출 시점이 중기 재평가의 핵심 촉매가 될 수 있다.",
-  "en": "With no reportable EPS due to four consecutive years of losses, PER-based comparisons are not applicable; price relative to net asset value per share is the primary valuation reference. The stock traded at a premium to book value prior to the trading halt, which could reflect business-transformation expectations or low-liquidity dynamics—though the halt itself means price discovery is currently suspended. No dividends have ever been paid, and the sustained negative operating cash flow profile (approximately KRW -10 to -14 billion annually) makes near-term dividend visibility nonexistent. The structural uncertainty of an active delisting trigger makes conventional growth-company valuation frameworks difficult to apply; normalization of the auditor opinion and a confirmed decision to maintain listing are prerequisites for any meaningful valuation assessment. Should the dramatic operating margin improvement seen in 2026 Q1 prove durable, the timeline to profitability would become the central re-rating catalyst."
+  "ko": "회사는 최근 4년 연속 순손실을 기록하고 있어 통상적인 이익 기반 밸류에이션 지표를 적용하기 어려운 구조다. 주가와 자체 산출 순자산가치 간의 관계는 시장 자료 간 산출 기준 차이가 존재해 참고 시 유의가 필요한 상태로 확인된다. 배당은 최근 실적 기준으로 지급 실적이 없어 배당 관련 지표로 접근하기도 어렵다. 다년간 흐름을 보면 영업손실 규모는 축소되는 방향으로 움직였으나 순손실은 여전히 매출 규모를 크게 웃도는 수준에서 벗어나지 못했다. 감사의견거절과 상장폐지 사유, 거래정지라는 비재무적 요인이 주가 형성에 중요한 변수로 작용하고 있어, 통상적인 재무비율만으로 주가 수준을 판단하기에는 한계가 있다.",
+  "en": "The company has posted net losses for four consecutive years, making conventional earnings-based valuation metrics difficult to apply in a meaningful way. The relationship between the share price and self-calculated net asset value shows discrepancies across different data sources, warranting caution when referencing such figures. There has been no recent dividend payout on record, which also limits the usefulness of dividend-related metrics. Looking at the multi-year trend, the operating loss has moved in a narrowing direction, but the net loss has remained well in excess of revenue scale throughout. Non-financial factors—including the audit opinion disclaimer, the resulting delisting cause, and the ongoing trading halt—are significant variables shaping how the share price is set, meaning conventional financial ratios alone offer a limited basis for assessing the current valuation level."
  },
  "bull": [
   {
    "title": {
-    "ko": "2026년 1분기 매출 급증 — 손익 개선의 잠재적 변곡점",
-    "en": "2026 Q1 Revenue Surge — Potential Inflection Toward Profitability"
+    "ko": "영업손실 축소와 부채비율 하향 흐름",
+    "en": "Narrowing Operating Loss and Lower Debt Ratio"
    },
    "body": {
-    "ko": "2026년 1분기 연결 매출 279억 원은 전년 연간 합계(109억 원)의 2.5배 이상을 단일 분기에 달성한 이례적 수치다. 같은 분기 영업손실이 26억 원에 그쳐 손실률이 약 -9%로 수렴하면서, 이전 연도들의 -91%~-414% 손실률 대비 근본적인 구조 변화 가능성을 시사한다. 이 추세가 이어진다면 영업 흑자 전환 시나리오가 현실화될 수 있다.",
-    "en": "2026 Q1 consolidated revenue of KRW 27.9 billion exceeded the entire 2025 annual figure by more than 2.5x in a single quarter. With an operating loss of only KRW 2.6 billion, the operating margin converged to approximately -9%, suggesting a potential structural shift from the prior-year range of -91% to -414%. If sustained, this trajectory makes an operating profitability scenario increasingly plausible."
+    "ko": "영업손실은 2022년 259.0억원에서 2025년 99.4억원으로 줄었고, 영업이익률도 2024년 -414.5%에서 2025년 -91.3%로 손실률이 크게 완화됐다. 부채비율 역시 2022년 226.0%에서 2025년 59.1%로 낮아지는 흐름을 보였다. 매출 규모도 2024년 46.4억원에서 2025년 108.8억원으로 늘어난 점이 확인된다.",
+    "en": "The operating loss narrowed from KRW 25.90 billion in 2022 to KRW 9.94 billion in 2025, with the operating margin improving markedly from -414.5% in 2024 to -91.3% in 2025. The debt ratio also declined from 226.0% in 2022 to 59.1% in 2025. Revenue likewise grew from KRW 4.64 billion in 2024 to KRW 10.88 billion in 2025."
    }
   },
   {
    "title": {
-    "ko": "기술 특허 기반 IVD 경쟁력 및 인허가 역량 강화",
-    "en": "Patented IVD Technology and Enhanced Regulatory Capabilities"
+    "ko": "신규 경영진의 인허가 전문성 확충",
+    "en": "New Management Bringing Regulatory Approval Expertise"
    },
    "body": {
-    "ko": "랩칩 기반 분자진단 기술이 선진국 17개국에 특허로 등록되어 있어 기술적 진입 장벽의 기반이 된다. 2026년 2월 진단키트 분야 인허가 전문가를 부사장으로 영입하며 해외 규제 대응력을 강화했고, 미국 자회사를 통한 글로벌 채널도 보유 중이다. 동물의약·유전체분석 등 신사업 다각화는 단일 IVD 수요 사이클 의존도를 낮추는 방향성을 제공한다.",
-    "en": "LabChip-based molecular diagnostics technology is patented in 17 developed countries, providing a technological barrier to entry. The February 2026 appointment of an IVD regulatory specialist as Executive Vice President strengthens overseas approval capabilities, supplemented by a U.S. subsidiary for global channel access. Diversification into animal pharmaceuticals and genomics reduces dependence on a single IVD demand cycle."
+    "ko": "2026년 2월 진단키트 인허가 150건 경험을 보유한 이민전 박사가 부사장으로 영입돼 제품 포트폴리오 확대와 인허가 대응력 강화를 시도하고 있다. 이는 기존 체외진단 기술 자산을 실제 매출로 전환하기 위한 방향성으로 볼 수 있다. 다만 구체적인 신제품 인허가나 매출 기여는 아직 공개적으로 확인되지 않았다.",
+    "en": "In February 2026 the company hired Dr. Lee Min-jeon, who has experience with roughly 150 diagnostic-kit regulatory approvals, as vice president to expand its product portfolio and strengthen regulatory response capability. This represents a direction aimed at converting existing IVD technology assets into actual revenue. Specific new product approvals or their revenue contribution, however, have not yet been publicly confirmed."
    }
   },
   {
    "title": {
-    "ko": "부채비율 대폭 개선 및 재무구조 경량화",
-    "en": "Sharply Lower Debt Ratio and Leaner Balance Sheet"
+    "ko": "2026년 1~2분기 매출 규모의 급격한 확대",
+    "en": "Sharp Revenue Expansion in Q1-Q2 2026"
    },
    "body": {
-    "ko": "부채비율이 2022년 226.0%에서 2025년 59.1%로 크게 낮아졌으며, 총부채도 399억 원에서 94억 원으로 감소했다. 전환사채 조기상환으로 잠재적 희석 물량 일부가 해소되고 있다. 재무 부담이 경감된 구조에서 신사업에 집중할 수 있는 자원 배분 여력이 상대적으로 커질 수 있다.",
-    "en": "The debt ratio fell from 226.0% in 2022 to 59.1% in 2025, with total liabilities declining from KRW 39.9 billion to KRW 9.4 billion. Early redemptions of convertible bonds are partially reducing the potential dilution overhang. A lighter debt burden provides relatively greater resource flexibility to direct toward new business initiatives."
+    "ko": "2026년 1분기 매출은 278.8억원, 2분기 매출은 336.7억원으로 2025년 3분기 16.6억원 대비 크게 늘었다. 매출 규모 확대는 지배구조 변화 이후 사업 다변화가 진행되고 있음을 시사할 수 있는 대목이다. 다만 이 시기 감사의견거절이 이어지고 있어 매출 증가의 구체적 성격은 향후 확정 재무제표를 통해 확인이 필요하다.",
+    "en": "Revenue reached KRW 27.88 billion in the first quarter of 2026 and KRW 33.67 billion in the second quarter, sharply higher than the KRW 1.66 billion recorded in the third quarter of 2025. This expansion could suggest business diversification progressing following the change in control. However, given the disclaimers of opinion during this period, the specific nature of the revenue increase requires confirmation through future finalized financial statements."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "거래정지·상장폐지 절차 진행 — 투자금 전액 손실 가능성",
-    "en": "Trading Halt and Active Delisting Process — Risk of Total Capital Loss"
+    "ko": "2년 연속 감사의견거절에 따른 상장폐지 리스크",
+    "en": "Delisting Risk from Consecutive Audit Opinion Disclaimers"
    },
    "body": {
-    "ko": "2025 회계연도 외부감사 의견거절로 코스닥 상장폐지 사유가 발생했고, 2026년 6월 12일부터 거래정지가 발동됐다. 2024년 반기 보고서에서도 종속회사 자료 미제공을 이유로 의견거절이 있었던 전례가 있어, 감사 의견 정상화 가능성에 높은 불확실성이 존재한다. 최종 상장폐지가 결정될 경우 투자원금 전액 손실 위험에 직접 노출된다.",
-    "en": "A 2025 auditor disclaimer triggered a KOSDAQ delisting event, and a trading halt took effect on June 12, 2026. The company had previously received a disclaimer for its 2024 half-year report due to non-submission of subsidiary data, creating substantial uncertainty about audit opinion normalization. If delisting is ultimately confirmed, investors face the risk of total capital loss."
+    "ko": "2025사업연도 감사보고서에서 의견거절을 받아 상장폐지 사유가 발생했고, 회사는 이의신청을 거쳐 개선기간을 부여받은 상태다. 그러나 2026년 반기 검토보고서에서도 다시 의견거절을 받으면서 상장 유지에 대한 불확실성이 추가로 쌓였다. 개선기간 종료 후에는 기업심사위원회 심의를 거쳐 상장폐지 여부가 최종 결정된다.",
+    "en": "The FY2025 audit report received a disclaimer of opinion, creating a delisting cause, and the company has filed an objection and been granted an improvement period. However, the 2026 interim review also received a disclaimer of opinion, adding further uncertainty over continued listing. After the improvement period ends, the Corporate Examination Committee will make the final determination on delisting."
    }
   },
   {
    "title": {
-    "ko": "4년 연속 대규모 적자 및 자기자본 지속 감소",
-    "en": "Four Consecutive Years of Large Losses and Sustained Equity Erosion"
+    "ko": "거래정지와 불성실공시법인 지정 이력",
+    "en": "Trading Halt and Prior Unfaithful-Disclosure Designation"
    },
    "body": {
-    "ko": "영업손실은 2022~2025년 연간 99억~259억 원으로 매출 규모와 대등하거나 이를 초과하는 수준을 기록했다. 지배주주 자기자본은 2023년 370억 원에서 2025년 159억 원으로 급감했으며, 영업현금흐름도 4년 내내 -101억~-140억 원으로 일관되게 마이너스다. 현금 창출 없이 자본을 지속 소진하는 구조는 추가 자금 조달 가능성을 상시 내포한다.",
-    "en": "Operating losses ranged from KRW 9.9 billion to KRW 25.9 billion annually over 2022–2025, often matching or exceeding revenue. Controlling-shareholder equity plunged from KRW 37.0 billion (2023) to KRW 15.9 billion (2025), and operating cash flow was consistently negative at KRW -10 to -14 billion per year throughout the period. A structure that consumes capital without generating cash keeps the need for additional financing perpetually at risk."
+    "ko": "유형자산 양수 결정을 철회하는 공시 번복으로 불성실공시법인 지정 예고 및 벌점 4점 부과를 받았다. 주식은 2026년 6월 12일 이후 거래가 정지된 상태로, 재개 시점과 조건이 아직 확인되지 않았다. 반복된 공시 번복은 시장의 신뢰를 훼손하는 요인으로 작용할 수 있다.",
+    "en": "A disclosure reversal involving the withdrawal of a tangible-asset acquisition decision led to a preliminary unfaithful-disclosure designation and a four-point penalty. Shares have been halted from trading since June 12, 2026, with the timing and conditions of any resumption not yet confirmed. Repeated disclosure reversals can undermine market confidence in the company."
    }
   },
   {
    "title": {
-    "ko": "지배구조 불안정 및 오버행·불성실공시 이력",
-    "en": "Governance Instability, Equity Overhang, and Unfaithful Disclosure History"
+    "ko": "매출 대비 과도한 순손실과 지속적 현금 유출",
+    "en": "Net Losses Far Exceeding Revenue and Persistent Cash Outflow"
    },
    "body": {
-    "ko": "최대주주 제이비에셋매니지먼트가 2026년 3월 풋옵션 행사로 약 96만주를 처분하며 지분율이 43.61%에서 38.56%로 줄었고, 계열사 전환사채 전환도 잠재적 주식 공급 압력으로 작용한다. 2025년 12월 거래소의 불성실공시법인 지정 예고(유형자산 양수 결정 철회 등 번복)는 경영 투명성에 대한 신뢰를 훼손한다. 지배구조·공시 신뢰성 두 가지 측면 모두 구조적 취약점으로 남아 있다.",
-    "en": "Largest shareholder JB Asset Management exercised put options in March 2026 to dispose of approximately 956,000 shares, reducing its stake from 43.61% to 38.56%; potential conversions of affiliate convertible bonds add further supply-side pressure. The Korea Exchange's December 2025 notice designating the company as a potential 'unfaithful disclosure entity' (due to reversal of an asset acquisition decision) damages confidence in management transparency. Both governance structure and disclosure credibility remain structural vulnerabilities."
+    "ko": "지배주주 순손실은 2022년 389.2억원, 2023년 257.9억원, 2025년 241.0억원으로 각 연도 매출 규모를 훨씬 웃돌았다. 영업활동현금흐름은 2022년부터 2025년까지 매년 약 100억~140억원 규모의 유출을 지속해 매출 반등에도 현금 소진이 이어지고 있다. 이 같은 흐름은 사업 자체의 수익성 회복이 지연되고 있음을 보여준다.",
+    "en": "Net losses attributable to owners far exceeded annual revenue in each year, reaching KRW 38.92 billion in 2022, KRW 25.79 billion in 2023, and KRW 24.10 billion in 2025. Operating cash flow remained negative every year from 2022 through 2025, in the roughly KRW 10-14 billion range annually, meaning cash continued to drain even as revenue rebounded. This pattern indicates that a recovery in underlying profitability has yet to materialize."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "상장폐지·거래정지 리스크",
-    "en": "Delisting and Trading Suspension Risk"
+    "ko": "상장폐지·감사의견 리스크",
+    "en": "Delisting and Audit Opinion Risk"
    },
    "body": {
-    "ko": "2026년 6월 12일부로 거래정지가 발동된 상태로, 투자 원금 회수 수단이 사실상 차단되어 있다. 이의신청 결과 및 개선 기간 부여 여부에 따라 상장 유지 또는 즉시 폐지 어느 방향으로도 귀결될 수 있다. 거래 재개가 이루어지더라도 누적된 악재가 주가에 한꺼번에 반영되는 '갭 하락' 리스크가 상존한다.",
-    "en": "A trading halt effective June 12, 2026 has de facto blocked the means of recovering invested capital. Depending on the appeal outcome and whether an improvement period is granted, the process could result in either maintained listing or immediate delisting. Even if trading resumes, the accumulated negative news could produce a sharp gap-down, with all outstanding negatives priced in simultaneously."
+    "ko": "2025사업연도 감사보고서와 2026년 반기 검토보고서에서 모두 의견거절을 받아 상장폐지 사유가 중첩된 상태다. 개선기간 종료 후 기업심사위원회 심의 결과에 따라 상장폐지가 최종 결정될 수 있다. 감사의견거절이 해소되지 않으면 거래정지가 장기화될 가능성도 배제할 수 없다.",
+    "en": "Both the FY2025 audit report and the 2026 interim review received disclaimers of opinion, layering multiple delisting causes on the company. Following the improvement period, the Corporate Examination Committee's review could result in a final delisting decision. If the audit opinion disclaimer is not resolved, an extended trading halt cannot be ruled out."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달·희석 리스크",
-    "en": "Funding and Equity Dilution Risk"
+    "ko": "지배구조·관계사 거래 리스크",
+    "en": "Governance and Related-Party Transaction Risk"
    },
    "body": {
-    "ko": "영업현금흐름이 4년 연속 마이너스로, 자금 조달 없이는 사업 지속이 어려운 구조다. 전환사채 발행 이력과 잔여 전환 물량에 따라 주식 수 증가로 인한 지분 희석이 발생할 수 있다. 계열사 이아이디에 대한 60억 원 대여의 미회수 시 추가 손실 계상 가능성도 재무 안정성을 위협한다.",
-    "en": "Four consecutive years of negative operating cash flow mean the company cannot sustain operations without external financing. Residual convertible bond balances and potential share issuances could further dilute existing shareholders. Non-recovery of the KRW 6 billion intercompany loan to EID could trigger additional loss recognition, further threatening financial stability."
+    "ko": "최대주주가 제이비에셋매니지먼트로 변경된 이후 이아이디, 이화전기공업 등과 연결된 지배구조가 형성됐고, 이른바 이그룹 계열 인물들이 경영에 참여한 것으로 보도됐다. 2026년 4월에는 계열사 이아이디에 60억원을 대여하기로 결정해 자기자본 대비 15.07%에 이르는 관계사 자금거래가 이뤄졌다. 이러한 관계사 거래 구조는 소수주주 이익 보호 측면에서 주의가 필요한 부분이다.",
+    "en": "Following the change of controlling shareholder to JB Asset Management, a governance structure linked to EID and Lee Hwa Electric was formed, and individuals reportedly associated with the E Group network took on management roles. In April 2026 the company decided to lend KRW 6.0 billion to affiliate EID, a related-party transaction equal to 15.07% of the company's own equity. Such related-party transaction structures warrant attention from a minority-shareholder protection standpoint."
    }
   },
   {
    "cat": {
-    "ko": "사업 전환 실행 및 수익화 불확실성",
-    "en": "Business Transformation Execution and Monetization Uncertainty"
+    "ko": "재무 데이터 신뢰성 리스크",
+    "en": "Financial Data Reliability Risk"
    },
    "body": {
-    "ko": "2026년 1분기 매출 급증의 원인과 지속 가능성이 공식 공시로 명확히 설명되지 않아 투자자의 독립적 검증이 어렵다. 동물의약·유전체분석·화장품 등 신사업은 각각 별도의 인허가·전문 인력·설비 투자가 필요하며 수익화까지 장기간이 소요된다. IVD 기존 시장에서도 씨젠·SD바이오센서 등 대형 선발기업 대비 인지도와 규모 측면에서 열위에 있어, 다변화 전략의 성과 실현은 미지수다.",
-    "en": "The cause and sustainability of the 2026 Q1 revenue surge have not been clearly explained through official disclosures, making independent investor verification difficult. Each new business line—animal pharmaceuticals, genomics, cosmetics—requires separate regulatory approvals, specialized talent, and capital expenditure, with lengthy monetization timelines. Even in the core IVD market, the company remains disadvantaged relative to large incumbents such as Seegene and SD Biosensor in brand recognition and scale, leaving the ultimate success of its diversification strategy uncertain."
+    "ko": "2025사업연도와 2026년 반기 모두 의견거절을 받은 상태이므로, 최근 급증한 매출 등 공시된 재무 수치의 신뢰성에 대해 확정 감사의견이 나오기 전까지는 유의가 필요하다. 감사인은 종속회사 자료 미제공 등 검토범위 제한을 의견거절 사유로 제시한 바 있다. 향후 정정 사업보고서나 재감사 결과에 따라 과거 공시 수치가 변경될 가능성도 있다.",
+    "en": "Because both the FY2025 and 2026 interim reviews received disclaimers of opinion, caution is warranted regarding the reliability of recently disclosed financial figures, including the sharp revenue increase, until a definitive audit opinion is issued. Auditors have previously cited scope limitations, including a lack of data provided by subsidiaries, as grounds for disclaimers. Previously disclosed figures could also be subject to change pending amended business reports or re-audit results."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7월 이내",
-    "en": "By July 2026"
+    "ko": "2026년 9~10월 중",
+    "en": "September-October 2026"
    },
    "what": {
-    "ko": "상장폐지 이의신청 결과 및 개선 기간 부여 여부 — 거래 재개 또는 폐지 절차 가속화를 결정짓는 최우선 관찰 포인트.",
-    "en": "Outcome of the delisting appeal and whether an improvement period is granted — the highest-priority checkpoint that will determine either trading resumption or accelerated delisting."
+    "ko": "6월 12일부터 이어진 거래정지 관련 후속 공시(거래 재개 여부·조건)를 확인해야 한다.",
+    "en": "Follow-up disclosures regarding the trading halt in place since June 12 (whether and under what conditions trading may resume) should be checked."
    }
   },
   {
    "when": {
-    "ko": "2026년 8월 중",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중",
+    "en": "November 2026"
    },
    "what": {
-    "ko": "2026년 반기 실적 및 외부감사인 검토 의견 — 1분기 매출 급증(279억 원)의 2분기 지속 여부와 의견거절 해소 여부가 핵심 지표.",
-    "en": "H1 2026 financial results and external auditor's review opinion — whether the Q1 revenue surge (KRW 27.9 billion) continues into Q2 and whether the audit disclaimer is resolved are the key indicators."
+    "ko": "3분기보고서 제출 시점으로, 2026년 3분기 매출·손익 추이와 감사(검토)의견 관련 진행 상황을 확인할 필요가 있다.",
+    "en": "This is the expected filing window for the third-quarter report, warranting a check on Q3 2026 revenue and profit trends as well as progress on the audit/review opinion situation."
    }
   },
   {
    "when": {
-    "ko": "2026년 12월 31일",
-    "en": "December 31, 2026"
+    "ko": "2026년 하반기 중(구체적 일정 미확정)",
+    "en": "Second half of 2026 (specific date not yet set)"
    },
    "what": {
-    "ko": "계열사 이아이디에 대한 60억 원 금전대여 만기 — 원리금 정상 회수 여부가 재무 안정성에 직결되며, 미회수 시 추가 손실 계상 가능.",
-    "en": "Maturity of the KRW 6 billion intercompany loan to EID — normal recovery of principal and interest is critical for financial stability; failure to collect could trigger additional loss recognition."
+    "ko": "감사의견거절에 따른 개선기간 종료 후 기업심사위원회 심의 결과가 나올 예정으로, 상장폐지 여부의 최종 방향을 확인해야 한다.",
+    "en": "The Corporate Examination Committee's review, following the end of the improvement period granted after the audit opinion disclaimer, is expected to determine the final direction on delisting."
    }
   },
   {
    "when": {
-    "ko": "2027년 3월~4월",
-    "en": "March–April 2027"
+    "ko": "2026년 4분기",
+    "en": "Fourth quarter of 2026"
    },
    "what": {
-    "ko": "2026 회계연도 사업보고서 및 외부감사 의견 — 연속 의견거절 여부가 상장 유지의 최대 관건이며, 흑자 전환 여부도 재무 신뢰 회복의 기준점.",
-    "en": "2026 annual report and external audit opinion — whether the auditor issues another disclaimer is decisive for continued listing; any return to profitability would mark a key milestone for financial credibility."
-   }
-  },
-  {
-   "when": {
-    "ko": "수시 모니터링",
-    "en": "Ongoing"
-   },
-   "what": {
-    "ko": "최대주주 지분 변동·전환사채 전환·상환 공시 및 신사업(동물의약·유전체분석 등) 수주·계약 공시 여부 — 수급 변동과 실적 가시성의 조기 신호.",
-    "en": "Ongoing monitoring of shareholder stake changes, convertible bond conversions/redemptions, and any disclosed contracts in new business lines (animal pharma, genomics, etc.) — early signals for supply-demand dynamics and earnings visibility."
+    "ko": "계열사 이아이디 대여금(60억원, 만기 2026년 12월 31일)의 회수 여부 및 관계사 거래 관련 추가 공시를 확인할 필요가 있다.",
+    "en": "Whether the KRW 6.0 billion loan to affiliate EID (maturing December 31, 2026) is recovered, along with any further related-party transaction disclosures, should be checked."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "롤링스톤은 체외진단(IVD) 기술을 핵심으로 다각화를 추진 중인 소형 코스닥 기업이나, 4년 연속 영업적자·의견거절 감사보고서·거래정지라는 복합적 위기 국면에 있다. 2026년 1분기 매출 급증과 영업손실률의 대폭 개선은 잠재적 사업 전환의 긍정적 신호이나, 그 원인과 지속 가능성이 공식적으로 검증되지 않은 상태에서 단정적 결론은 이르다. 상장폐지 이의신청 결과와 감사 의견 정상화 여부는 모든 다른 사업·재무적 판단보다 우선하는 최대 관건으로, 이 이벤트의 귀결 이전에는 의미 있는 기업 가치 평가 자체가 어렵다. 재무구조 경량화(부채비율 226.0% → 59.1%)와 인허가 전문가 영입 등 긍정적 변화도 존재하나, 현금 창출 능력 부재와 지배구조·공시 신뢰성 문제가 구조적 취약점으로 병존한다. 본 보고서는 투자 권유가 아닌 정보 제공 목적이며, 거래정지 상태에서 투자 판단은 충분한 자기 책임 원칙 하에 신중하게 이루어져야 한다.",
-   "en": "Rolling Stone is a small KOSDAQ company pursuing diversification from its IVD diagnostics core, but it currently faces a compound crisis of four consecutive years of operating losses, a 2025 auditor disclaimer, and an active trading halt. The 2026 Q1 revenue surge and dramatic operating margin improvement are encouraging signals of a potential business transformation, yet drawing firm conclusions before the cause and sustainability are officially verified would be premature. The outcome of the delisting appeal and normalization of the audit opinion take absolute precedence over all other business and financial considerations; meaningful valuation analysis is not feasible until that process is resolved. Positive changes—including a sharply lower debt ratio and the appointment of an IVD regulatory specialist—do exist, but the absence of cash-generating capability and ongoing governance and disclosure concerns remain as structural vulnerabilities. This report is for informational purposes only and does not constitute investment advice; under the current trading halt, any investment decision must be made with extreme caution and under the full principle of personal responsibility."
+   "ko": "롤링스톤은 체외진단 전문기업이라는 사업 정체성을 유지하면서도 2025년 사명 변경과 최대주주 교체를 거치며 지배구조가 급변했고, 그 과정에서 공시 번복에 따른 불성실공시법인 지정과 2년 연속 감사의견거절이라는 중대한 비재무 리스크가 누적됐다. 연간 실적을 보면 영업손실 규모는 2022년 259억원에서 2025년 99억원으로 축소되고 부채비율도 낮아지는 등 일부 개선 신호가 있었으나, 순손실은 매년 매출 규모를 크게 웃돌았고 영업활동현금흐름은 4년 연속 유출을 지속했다. 2026년 1~2분기 매출이 직전 분기 대비 급격히 늘어난 점은 눈에 띄는 변화지만, 같은 기간 회사가 반기 검토보고서에서 다시 의견거절을 받은 만큼 이 수치의 성격은 향후 확정 감사의견을 통해 재확인이 필요하다. 현재 주식은 거래가 정지된 상태이며, 개선기간 종료 후 기업심사위원회 심의를 통해 상장폐지 여부가 결정될 예정이어서 이 결과가 향후 가장 중요한 변수로 남아 있다. 종합하면 사업 측면의 일부 개선 시도와 지배구조·회계 신뢰성 측면의 중대한 불확실성이 동시에 존재하는 상황으로, 투자 판단에 앞서 상장 적격성 심사 결과와 정정·확정 재무제표 공시를 지속적으로 확인하는 것이 필요하다.",
+   "en": "RollingStone has retained its identity as an in-vitro diagnostics company, but its governance structure changed dramatically through the 2025 name change and controlling-shareholder transition, during which disclosure reversals led to an unfaithful-disclosure designation and disclaimers of audit opinion for two consecutive periods—both significant non-financial risks. Annual results show some improvement signals, with the operating loss narrowing from KRW 25.9 billion in 2022 to KRW 9.9 billion in 2025 and the debt ratio declining, yet net losses exceeded revenue by a wide margin every year and operating cash flow remained negative for four consecutive years. The sharp jump in revenue during the first and second quarters of 2026 stands out as a notable change, but because the company again received a disclaimer of opinion on its interim review during the same period, the character of these figures requires reconfirmation through a future definitive audit opinion. Shares are currently halted from trading, and the outcome of the Corporate Examination Committee's review following the improvement period remains the most important variable going forward. On balance, the company shows some signs of operational improvement alongside substantial uncertainty over governance and accounting reliability, making it important to continue monitoring the listing-eligibility review outcome and any amended or finalized financial statement disclosures before drawing conclusions."
   }
  },
  "sources": [
+  "https://stocktong.co.kr/Web/Item.aspx?t=s&amp=&l=1&amp=&code=214610&amp=&item_code=214610&amp=&item_name=%EB%AF%B8%EC%BD%94%EB%B0%94%EC%9D%B4%EC%98%A4%EB%A9%94%EB%93%9C",
   "https://www.stockplus.com/m/stocks/KOREA-A214610",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04601846642403768",
+  "https://marketin.edaily.co.kr/News/ReadE?newsId=04601846642403768",
   "https://www.digitaltoday.co.kr/news/articleView.html?idxno=656438",
-  "https://news.nate.com/view/20260403n30638",
-  "https://kind.krx.co.kr/common/disclsviewer.do?acptNo=20251128000627&docno=&method=searchInitInfo",
-  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cn=&cmp_cd=025750",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04126246642301432",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04601846642403768",
+  "https://rollingstone.co.kr/",
+  "https://www.facebook.com/p/Rolling-Stone-Korea-100069005838042/",
+  "https://alphasquare.co.kr/home/stock-summary?code=090710",
+  "https://comp.wisereport.co.kr/company/c1040001.aspx?cmp_cd=454910",
+  "https://finance.yahoo.com/quote/214610.KQ/",
+  "https://www.dailyan.com/news/article.html?no=770777",
+  "https://zdnet.co.kr/view/?no=20260612011002",
+  "https://news.nate.com/view/20260409n16636",
   "https://m.news.nate.com/view/20260409n16636?sect=etc&list=rank&cate=interest",
-  "https://news.infostock.co.kr/a",
-  "https://www.sedaily.com/NewsView/2GZ7Q44ZZ0",
-  "https://kind.krx.co.kr/corpgeneral/corpList.do?method=download&searchType=13",
-  "https://innobiz.net/app/CodeType02.asp?Type02=28",
-  "https://www.lsmtron.com/kr/ko",
-  "https://www.lsmtron.com/kr/ko/company/intro",
-  "https://www.lsmtron.com/kr/ko/business/injection",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250328002339&rcpno=20250328001583&orgid=F&tran=Y&langTpCd=0",
-  "https://www.ls-electric.com/ko/company/data/2020_half.pdf",
-  "https://www.lsmtron.com/kr/ko/company/global",
-  "https://www.rolling-stone.co.kr/kr/index.php"
+  "https://pharm.edaily.co.kr/news/read?newsId=01820406645549944",
+  "https://www.sedaily.com/article/20014356",
+  "https://www.sedaily.com/NewsView/2GZ7Q44ZZ0"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "214610",
  "name": "롤링스톤",
  "name_en": "RollingStone Co., Ltd.",
@@ -233,11 +223,11 @@
   "전기장비"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 04:49",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:44",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -344,7 +334,7 @@
    "total_shares": 8383322,
    "wavg_shares": null,
    "per": null,
-   "eps": -2874,
+   "eps": -2875,
    "pbr": null,
    "bps": null,
    "roe_ttm": -151.2,
@@ -352,11 +342,16 @@
    "ttm_np_owner": -24099001800,
    "ccy": "KRW",
    "bps_src": "자체",
+   "eps_src": "순이익÷주식수",
    "pbr_krx": 1.2,
    "bps_krx": 1903.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss",
+    "bps": "ref_mismatch"
+   }
   }
  }
 }

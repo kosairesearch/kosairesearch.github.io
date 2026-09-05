@@ -1,230 +1,230 @@
 {
  "title": {
-  "ko": "CESS 독점 위상 재확인, 하반기 수주 가시성이 회복 경로 좌우",
-  "en": "CESS Monopoly Reaffirmed — H2 Order Visibility Determines Recovery Path"
+  "ko": "매출 회복세 속 분기 실적 널뛰기",
+  "en": "Revenue Recovers, Quarterly Earnings Swing"
  },
  "lead": {
-  "ko": "글로벌 1위 전해액 중앙공급시스템(CESS) 기술을 바탕으로 2025년 하반기 실적 저점을 통과한 에이아이코리아가 2026년 1분기 분기 영업흑자를 회복했으며, 테슬라·폭스바겐 계열 신규 수주와 ESS·AMR 신사업 가시화가 회복 모멘텀의 지속 여부를 가늠할 핵심 변수로 부각되고 있다.",
-  "en": "Armed with globally dominant CESS technology, AI Korea appears to have troughed in H2 2025 and returned to operating profitability in Q1 2026, with new orders from Tesla- and Volkswagen-affiliated factories and emerging ESS/AMR ventures serving as key tests of whether recovery can be sustained."
+  "ko": "에이아이코리아는 2차전지 CESS를 핵심 사업으로 두고 로봇·ESS·데이터센터 냉각 등 신사업을 확장하는 가운데, 2025년 매출 감소와 순손실을 겪은 뒤 2026년 들어 분기 매출은 네 개 분기 연속 늘고 있지만 영업이익은 분기마다 흑자와 적자를 오가고 있다.",
+  "en": "AI Korea, whose core business is the CESS system for secondary batteries, is expanding into robotics, ESS, and data center cooling, and while quarterly revenue has grown for four straight quarters into 2026 after a 2025 sales decline and net loss, operating profit has swung between gains and losses each quarter."
  },
  "keypoints": [
   {
-   "ko": "CESS 글로벌 1위: 국내 배터리 3사 발주의 약 95% 수주, 7년 누적 수주 3,400억원의 독보적 시장 지위 보유",
-   "en": "Global CESS leader: ~95% of domestic battery-trio orders captured; ₩340bn cumulative backlog over seven years"
+   "ko": "핵심 사업은 2차전지 중앙전해액공급시스템(CESS)·프로세스 파이핑이며, 로봇·ESS·데이터센터 냉각으로 신사업을 확장 중",
+   "en": "Core business is the CESS system and process piping for secondary batteries, with expansion into robotics, ESS, and data center cooling"
   },
   {
-   "ko": "2025년 하반기 실적 저점 통과 후 2026년 1분기 매출 188억원·영업이익 6.0억원으로 뚜렷한 분기 반등",
-   "en": "Post-H2 2025 trough, Q1 2026 rebound: quarterly revenue ₩18.8bn and operating profit ₩0.60bn signal clear inflection"
+   "ko": "2025년 매출 869억원(전년 1,146억원 대비 감소), 지배주주순손실 -7.8억원으로 적자전환",
+   "en": "2025 revenue was 86.9bn won, down from 114.6bn won in 2024, with the company swinging to a net loss attributable to owners of -0.78bn won"
   },
   {
-   "ko": "2026년 1분기 수주잔고 523억원 확인 — 테슬라 ESS 공장 172억원, 유럽(헝가리·스페인) 340억원 이상 포함",
-   "en": "Q1 2026 order backlog of ₩52.3bn confirmed — comprising ₩17.2bn Tesla ESS factory and ₩34bn+ European (Hungary/Spain) contracts"
+   "ko": "2025년 3분기~2026년 2분기 매출이 108억→152억→188억→216억원으로 4개 분기 연속 증가, 영업이익은 적자-적자-흑자-적자로 요동",
+   "en": "Quarterly revenue rose for four straight quarters from 3Q25 to 2Q26 (10.8bn→15.2bn→18.8bn→21.6bn won), while operating profit alternated between losses and a single profitable quarter"
   },
   {
-   "ko": "LFP 기반 ESS 운영 사업·자율이동로봇(AMR) 상용화·데이터센터 냉각 시스템 진출로 배터리 장비 단일 의존도 분산 추진",
-   "en": "Diversification underway via LFP ESS operations, AMR commercialization, and data-center cooling — reducing single-vertical battery-equipment dependency"
+   "ko": "2026년 1분기 기준 누적 수주잔고 522억원, 북미(테슬라 ESS 공장)·유럽(헝가리·스페인)으로 수주 지역 확대",
+   "en": "Cumulative order backlog stood at 52.2bn won as of 1Q26, with orders expanding into North America (a Tesla ESS plant) and Europe (Hungary, Spain)"
   },
   {
-   "ko": "2025년 순손실 전환으로 수익 기반 배수 산출이 제한적; BPS 7,573원 대비 주가가 순자산 아래에서 거래 중",
-   "en": "2025 net loss renders earnings-based multiples incalculable; shares currently trade at a discount to reported BPS of ₩7,573"
+   "ko": "부채비율이 93.9%(2024)에서 47.9%(2025)로 낮아지고 영업현금흐름이 흑자로 전환되며 재무구조는 개선",
+   "en": "The debt ratio fell from 93.9% in 2024 to 47.9% in 2025, and operating cash flow turned positive, improving the financial structure"
   }
  ],
  "business": {
-  "ko": "에이아이코리아는 2003년 설립되어 2025년 4월 한국제14호스팩과 합병을 통해 코스닥에 상장한 2차전지·반도체·디스플레이 공정 자동화 설비 전문 기업이다. 핵심 제품인 전해액 중앙공급시스템(CESS, Centralized Electrolyte Supply System)은 회사가 세계 최초로 개발했으며, 배터리 생산 공정에서 전해액을 외부 탱크로부터 자동 공급·회수하는 설비로 글로벌 시장점유율 1위를 차지하고 있다. 기존 캐니스터 교체 방식 대비 연속 공급이 가능해 무인 자동화와 비용 절감에서 뚜렷한 경쟁 우위를 보유하며, 현재 전 세계 배터리 공장 11곳에 도입된 상태다. 두 번째 사업 축인 프로세스 파이핑(PP)은 배터리 공장 전체 배관의 설계·조달·시공을 일괄 수행하는 인프라 사업으로 CESS와의 시너지가 높고, 준공 후 유지보수 계약을 통해 반복 매출을 창출할 수 있다는 점이 수익 구조상 강점이다. 세 번째 부문인 건식세정장비 사업에서는 반도체·디스플레이용 대기압 플라즈마(AP Plasma), 초음파 건식세정기(USC), 집진기·포집기 등을 공급하며 삼성SDI 등 주요 고객사에서 양산 검증을 받고 있다. 주요 고객은 LG에너지솔루션, SK온, 삼성SDI 등 국내 배터리 3사 전부와 이들의 미국 합작법인인 얼티엄셀즈(LG+GM), 스타플러스에너지(삼성+스텔란티스)이며, 국내 3사 CESS 발주 물량의 약 95%를 수주하는 독점에 가까운 지위를 유지하고 있다. 경쟁사로는 사업구조가 유사한 코스닥 상장사 오션브릿지가 있으나, 국내 CESS 공급사는 에이아이코리아를 포함해 3곳 내외에 불과해 진입장벽이 높은 과점 시장이다. 신사업으로는 LFP 기반 컨테이너형 ESS 설계·설치·운영, AI 비전 기술 기반 자율이동로봇(AMR), 암모니아 크래커(수소 연료 시스템), 데이터센터 수냉식 냉각 시스템을 병행 추진 중이다.",
-  "en": "AI Korea was founded in 2003 and listed on the KOSDAQ in April 2025 via a merger with Korea SPAC No. 14. Its flagship product, the Centralized Electrolyte Supply System (CESS), was developed by the company as a world first, automatically supplying and recovering electrolyte in battery manufacturing; it holds the global number-one market position and is now installed at 11 battery factories worldwide. Versus the conventional canister-swap approach, CESS enables continuous, unmanned electrolyte delivery, providing clear cost and efficiency advantages at scale. The second business pillar, Process Piping (PP), covers end-to-end EPC (design, procurement, construction) of process pipelines in battery plants—a segment that synergizes closely with CESS and generates recurring post-commissioning maintenance revenue. The third segment, dry-cleaning equipment, supplies atmospheric-pressure plasma (AP Plasma) systems, ultrasonic dry cleaners (USC), dust collectors, and fume traps for semiconductor and display processes, with production references at major clients including Samsung SDI. Key customers encompass all three major Korean battery makers—LG Energy Solution, SK On, and Samsung SDI—along with their U.S. joint ventures Ultium Cells (LG+GM) and StarPlus Energy (Samsung+Stellantis), with AI Korea capturing an estimated 95% of domestic battery-trio CESS allocations. The competitive set for CESS is limited to roughly three domestic suppliers, with Ocean Bridge (KOSDAQ) being the most structurally similar peer. New initiatives include LFP-based containerized ESS installation and operation services, AI-vision-enabled AMR, ammonia cracker systems for hydrogen fuel, and data-center water-cooled cooling solutions."
+  "ko": "에이아이코리아는 2차전지 생산설비의 중앙전해액공급시스템(CESS)과 프로세스 파이핑·소방사업을 인프라 부문의 핵심으로 하며, 반도체·디스플레이 제조용 건식세정장비 사업을 함께 영위한다. 전기차 시장 확대로 대량 전해액 주입에 적합한 CESS 방식이 주요 배터리 제조시설에 도입되고 있으며, 회사는 최초 양산 경험과 고객 맞춤형 설비 대응력을 바탕으로 시장 지위를 확보해왔다고 알려졌다. CESS에서 축적한 엔지니어링 역량을 발판으로 배관 설계·제작·시공을 담당하는 프로세스 파이핑 사업을 미국 시장까지 확장하고 있다. 2003년 설립된 회사는 2025년 4월 코스닥에 상장했으며, 상장 당시 로봇·이차전지·암모니아 크래커 등 고부가 신사업을 미래 성장동력으로 제시했다. 신사업 축에서는 자율주행로봇(AMR)과 비전 기반 지게차를 개발해 2026년 하반기부터 클로봇 등과 협력해 초도 공급을 계획하고 있다. 아울러 리튬인산철(LFP) 기반 에너지저장시스템(ESS)을 설계·설치·운영하는 신사업도 준비 중이며, 중국 냉각 전문기업 엔비쿨과의 MOU를 바탕으로 국내 대형 데이터센터를 대상으로 수냉식 냉각시스템 공급을 추진하고 있다. 지역별로는 북미에서 테슬라향 ESS 공장에 CESS를 공급하는 계약을 체결했고, 유럽에서는 헝가리·스페인 법인을 통해 폭스바겐 계열 배터리 공장 프로젝트 등에 참여하며 해외 매출 기반을 넓히고 있다. 고객군은 국내외 배터리·반도체·디스플레이 톱티어 제조사로 구성되며, 안전성과 레퍼런스를 중시하는 발주 특성상 신규 진입이 쉽지 않은 시장으로 평가된다.",
+  "en": "AI Korea's core infrastructure business centers on the Centralized Electrolyte Supply System (CESS) for secondary battery production, along with process piping and fire-protection work, and it also operates a dry-cleaning equipment business for semiconductor and display manufacturing. As electric vehicle demand expands, CESS methods suited to bulk electrolyte injection have been adopted at major battery plants, and the company is said to have built its market position on early mass-production experience and customized equipment capability. Building on the engineering expertise accumulated in CESS, the company has expanded its process piping business, which covers pipe design, fabrication and installation, into the U.S. market. Founded in 2003, the company listed on KOSDAQ in April 2025, at which point it presented robotics, secondary batteries and ammonia crackers as high-value-added new growth businesses. On the new-business front, it has developed an autonomous mobile robot (AMR) and a vision-based forklift, and plans initial deliveries in cooperation with partners such as Klobot from the second half of 2026. It is also preparing a new business to design, install and operate lithium iron phosphate (LFP)-based energy storage systems (ESS), and based on an MOU with China's cooling specialist Envicool, is pursuing supply of water-cooled cooling systems to large domestic data centers. Regionally, the company has signed a contract to supply CESS to a Tesla ESS plant in North America, and in Europe is expanding its overseas revenue base through Hungarian and Spanish subsidiaries participating in projects including a Volkswagen-affiliated battery plant. Its customer base consists of top-tier domestic and global battery, semiconductor and display manufacturers, and the market is considered to have entry barriers given order practices that prioritize safety track record and reference projects."
  },
  "earnings": {
-  "ko": "2025년 연결 기준 매출액은 약 869억원, 영업이익 28.2억원(OPM 3.2%), 지배주주 귀속 순손실 7.8억원을 기록했다. 분기별 흐름을 보면, 상반기(Q1+Q2, 연간 확정치에서 역산)가 약 610억원의 매출과 약 51.5억원의 영업이익으로 양호하게 출발했으나, 3분기에 매출이 108억원으로 급감하고 영업손실이 18.8억원으로 확대됐다. 회사가 2025년 8월 자체 발표한 상반기 매출(약 610억원, 전년 동기 대비 29% 증가) 및 영업이익(약 51.5억원, 118% 급증) 수치와 연간·분기 확정치가 일치하며, 이는 하반기 집중적인 수주 공백이 연간 수익성을 잠식한 구조임을 확인시킨다. 전기차 시장 수요 회복 지연과 북미 배터리 제조사들의 투자 조정이 하반기 발주 공백을 야기한 주원인으로 파악된다. 4분기에도 매출 152억원, 영업손실 4.5억원이 지속됐다. 다만 2025년 연간 영업현금흐름(CFO)이 213.1억원을 기록해 실질적인 현금 창출력은 견조하게 유지됐으며, 부채비율 47.9%로 재무 안정성은 훼손되지 않았다. 상장 전 언론 보도 기준 2024년 매출 약 1,145억원·영업이익 약 88억원 대비 2025년 실적은 외형과 수익성 모두 크게 축소됐다. 2026년 1분기에는 매출 188.1억원, 영업이익 6.0억원을 달성하며 분기 기준 흑자 전환에 성공했고, 지배주주 귀속 순이익도 26.6억원으로 크게 개선됐다. 이는 미주 테슬라 ESS 공장 CESS 프로젝트와 유럽 신규 수주의 본격 매출 인식에 따른 것으로 판단된다. 분기별 매출 추이(Q3 2025 108억 → Q4 152억 → Q1 2026 188억)가 점진적 회복 경로를 시사한다.",
-  "en": "On a consolidated basis in FY2025, AI Korea reported revenue of approximately ₩86.95bn (~₩870bn), operating profit of ₩2.82bn (OPM 3.2%), and a net loss attributable to controlling shareholders of ₩0.78bn. Quarterly dynamics reveal a sharp divergence: H1 2025 (Q1+Q2 implied from the confirmed annual and quarterly figures) generated approximately ₩61bn in revenue and ₩5.15bn in operating profit—corroborated by the company's own August 2025 disclosure citing H1 revenue up 29% year-on-year and operating profit up 118%. However, Q3 2025 saw revenue plunge to ₩10.80bn with an operating loss of ₩1.88bn, as EV market demand delays and North American battery-maker capex deferrals created a sharp order gap. Q4 2025 saw partial stabilization (revenue ₩15.20bn) but retained an operating loss of ₩0.45bn. Despite the profit deterioration, full-year operating cash flow (CFO) held firm at ₩21.31bn, evidencing solid underlying cash generation, while the debt ratio of 47.9% signals a conservatively leveraged balance sheet. Compared to the pre-IPO record year (press-reported FY2024: revenue ~₩114.5bn, operating profit ~₩8.8bn), FY2025 represented a meaningful step-back in both scale and profitability. Q1 2026 marked a clear inflection: revenue of ₩18.81bn and operating profit of ₩0.60bn, with controlling-shareholder net income surging to ₩2.66bn—driven by execution of North American Tesla ESS and European contract deliveries. The sequential revenue trend (Q3 2025: ₩10.8bn → Q4: ₩15.2bn → Q1 2026: ₩18.8bn) traces an encouraging recovery trajectory."
+  "ko": "2025년 연결 매출액은 869억5천만원으로 2024년 1,145억6천만원 대비 뒷걸음쳤고, 영업이익은 88억1천만원에서 28억2천만원으로 줄어 영업이익률이 7.7%에서 3.2%로 낮아졌다. 순손익은 2024년 122억8천만원 순이익에서 2025년 지배주주 기준 -7억7천만원 손실로 적자전환했다(전체 순손실은 -10억7천만원). 다만 영업활동현금흐름은 2024년 -120억원에서 2025년 +213억1천만원으로 뚜렷하게 개선되며 현금창출력은 오히려 나아졌다. 분기별로 보면 2025년 3분기 매출 약 108억원에 영업손실 약 18억8천만원을 기록한 뒤, 4분기에는 매출 약 152억원·영업손실 약 4억5천만원으로 손실폭이 줄었고 지배주주순이익은 3억1천만원으로 흑자를 냈다. 2026년 1분기에는 매출 약 188억1천만원, 영업이익 약 6억원으로 흑자전환했고 지배주주순이익도 27억7천만원으로 뛰었다. 그러나 2026년 2분기 매출은 약 215억5천만원으로 4개 분기 연속 증가했음에도 영업손실이 약 25억8천만원으로 확대됐고, 지배주주순손익은 -0.19억원의 소폭 적자를 나타냈다. 이 같은 흐름은 매출 규모가 꾸준히 커지는 동안에도 프로젝트별 원가·매출 인식 시점에 따라 분기 손익이 크게 출렁이는 구조를 보여준다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주순이익은 약 31억원으로 흑자 기조를 유지하고 있다.",
+  "en": "Consolidated 2025 revenue came to 86.95bn won, down from 114.56bn won in 2024, while operating profit fell from 8.81bn won to 2.82bn won, lowering the operating margin from 7.7% to 3.2%. The bottom line swung from a net profit of 12.28bn won in 2024 to a net loss attributable to owners of -0.78bn won in 2025 (total net loss was -1.07bn won). Operating cash flow, however, improved markedly from -12.00bn won in 2024 to +21.31bn won in 2025, indicating stronger cash generation despite the reported loss. On a quarterly basis, 3Q25 revenue was about 10.8bn won with an operating loss of about 1.88bn won, before 4Q25 revenue rose to about 15.2bn won with a narrower operating loss of about 0.45bn won and a net profit attributable to owners of 0.31bn won. In 1Q26, revenue reached about 18.81bn won and operating profit turned positive at about 0.6bn won, with net profit attributable to owners jumping to 2.77bn won. Yet in 2Q26, revenue rose again to about 21.55bn won—the fourth consecutive quarterly increase—while the operating loss widened to about 2.58bn won and the net result attributable to owners slipped to a small loss of -0.019bn won. This pattern shows that even as revenue has steadily grown, quarterly profit and loss swing sharply depending on project-specific cost and revenue-recognition timing. Summed over the most recent four quarters (3Q25–2Q26), net profit attributable to owners totaled about 3.14bn won, remaining in positive territory."
  },
  "industry": {
-  "ko": "에이아이코리아가 속한 2차전지 장비·인프라 시장은 2025년 글로벌 전기차 수요 캐즘(일시적 수요 둔화)과 배터리 제조사들의 설비 투자 재조정 여파로 발주가 둔화된 구간을 통과했다. 그러나 2026년 이후에는 AI 데이터센터의 폭발적 전력 수요 확대를 배경으로 ESS 수요가 업황 반등의 강력한 촉매로 부상하고 있다. 미국 빅테크 기업들이 2030년까지 탄소무부하에너지(CFE) 달성을 목표로 ESS 도입을 가속화하면서 배터리 제조사들의 대형 ESS 전용 공장 증설이 재개되는 추세다. CESS 설비 공급사는 국내에 에이아이코리아를 포함해 3곳 안팎에 불과하며, 배터리 공장 증설 규모가 커질수록 CESS+프로세스 파이핑 패키지 발주 금액이 함께 확대되는 구조다. 배터리 고객사들이 원가 절감을 위해 설계·조달·시공을 단일 업체에 일괄 위탁하는 EPC 발주 방식을 선호하는 추세 역시 종합 솔루션을 보유한 에이아이코리아에 구조적으로 유리한 환경이다. 유럽에서는 폭스바겐 계열 등 전통 완성차 업체들의 배터리 공장 투자가 재개되고 있어 지리적 수주 다변화 기회도 열리고 있다. 다만 글로벌 무역 환경 변화(관세 정책 등)가 북미 투자 속도에 영향을 줄 수 있고, 중국계 배터리 업체의 CESS 자체 개발 가능성은 중장기 경쟁 리스크로 잠재해 있다.",
-  "en": "The battery equipment and infrastructure market endured a demand slowdown in 2025 as global EV adoption faced a 'chasm' and battery makers deferred capital expenditures. From 2026 onward, however, ESS demand driven by AI data-center power requirements is emerging as a powerful structural counter-driver. U.S. big-tech companies are accelerating ESS adoption to meet 2030 carbon-free energy (CFE) targets, prompting battery manufacturers to resume large-scale ESS-dedicated factory investments. The domestic CESS supply base remains concentrated at roughly three players, meaning that as battery plant scale grows, CESS+Process Piping bundled order values expand commensurately. Broader industry adoption of single-contractor EPC bundling—motivated by cost discipline—further favors AI Korea's integrated offering. In Europe, resumed investments by Volkswagen-affiliated and other traditional OEM battery ventures are opening geographic diversification opportunities. Key risks include potential changes to U.S. trade and tariff policy affecting North American battery capex timelines, and the latent threat of Chinese battery makers developing CESS capabilities in-house."
+  "ko": "2차전지 전해액 공급 방식은 기존 캐니스터(소용량 용기교체) 방식에서 대량 자동주입이 가능한 중앙공급시스템(CESS)으로 전환되는 흐름이 이어지고 있으며, 안전성과 무인화 효율을 중시하는 배터리셀 제조사들의 요구에 부합한다는 평가를 받는다. 유화증권은 8월 16일 리포트에서 에이아이코리아가 국내 주요 배터리 3사 발주 물량의 95%를 수주했으며 지난 7년간 누적 수주 총액이 3,400억원, 2020년부터 2024년까지 연평균 매출 성장률이 36.2%에 달한다고 밝혔다. 다만 2차전지 업계는 전기차 수요 둔화와 완성차·배터리사의 투자 속도 조절 국면을 거치고 있어, 설비 발주 시점과 규모가 예년만큼 안정적이지 않다는 점이 장비·인프라 협력사 전반의 공통된 변수로 지목된다. 이런 가운데 회사는 북미·유럽으로 고객 기반을 넓히며 특정 지역·고객 의존도를 낮추는 방향으로 대응하고 있다. 동시에 생성형 AI 확산에 따른 데이터센터 전력 수요 증가는 에너지저장장치(ESS)와 냉각 인프라 수요를 새로운 성장 축으로 부상시키고 있으며, 회사도 LFP 기반 ESS 설치·운영과 수냉식 데이터센터 냉각 사업으로 영역을 넓히고 있다. 다만 이 신사업들은 아직 MOU·소규모 검증 단계에 머물러 있어 매출 기여가 본격화되기까지는 시간이 필요하다는 점도 함께 고려해야 한다. 경쟁구도 측면에서는 CESS 분야의 레퍼런스 진입장벽이 있는 반면, 로봇·ESS·데이터센터 냉각 분야는 국내외 다수 업체가 이미 진출해 있어 경쟁 강도가 상대적으로 높은 편이다.",
+  "en": "In electrolyte supply for secondary batteries, the industry trend continues to shift from the older canister (small-container replacement) method toward centralized supply systems (CESS) capable of bulk automated injection, which is seen as aligning with battery cell makers' priorities on safety and unmanned efficiency. In an August 16 report, Yuhwa Securities said AI Korea has won 95% of order volume from Korea's three major battery makers, with cumulative orders over the past seven years reaching 340bn won and average annual revenue growth of 36.2% from 2020 through 2024. That said, the secondary battery industry is going through a period of slower EV demand and moderated investment pace by automakers and battery makers, meaning the timing and scale of equipment orders have become less predictable than in prior years—a common variable across equipment and infrastructure suppliers. Against this backdrop, the company is broadening its customer base into North America and Europe, reducing dependence on any single region or customer. At the same time, rising data center power demand driven by generative AI is elevating energy storage systems (ESS) and cooling infrastructure as new growth pillars, and the company is expanding into LFP-based ESS installation/operation and water-cooled data center cooling. However, these new businesses remain at the MOU or small-scale validation stage, so it will take time before they contribute meaningfully to revenue. In terms of competitive positioning, the CESS segment carries reference-based entry barriers, while the robotics, ESS and data center cooling segments already have numerous domestic and global players, making competitive intensity relatively higher."
  },
  "outlook": {
-  "ko": "2026년 1분기 기준 누적 수주잔고는 523억원으로 확인됐다. 북미 지역에서는 테슬라 ESS 공장 CESS 제작·설치 계약(132억원)에 추가 40억원을 더해 총 172억원의 수주를 확보했으며, 이는 신규 고객사 다변화의 중요한 이정표다. 유럽에서는 헝가리 법인을 통해 241억원 규모의 외주·인프라 계약을 체결했고, 스페인 법인을 통해 폭스바겐 계열 2차전지 공장에서 100억원 이상의 추가 수주를 진행 중이다. 로봇 사업은 AI 비전 기반 이중 목적 포크리프트형 AMR 개발을 완료해 클로봇 등과 협력한 2026년 하반기 초도 납품을 목표로 하고 있으며, 두봇(Dobot)과의 협업으로 향후 휴머노이드 로봇까지 사업 영역 확장을 도모하고 있다. 데이터센터 신사업은 중국 엔비쿨(Envicool)과의 MOU를 기반으로 수냉식 풀체인 냉각 시스템의 대형 국내 데이터센터 공급을 추진 중이며, 수도권 전력 제약을 고려해 지방 소재 데이터센터를 초기 타깃으로 설정하고 있다. ESS 신사업은 그리드위즈·이지스자산운용과의 협업을 통해 2026년 하반기 소규모 초도 수주를 목표로 하고 있다. 2026년 3월에는 경기도 수원시 신사옥 토지·건물(90억원)을 양수해 업무 공간 확보와 생산 역량 확충에 나섰다. 배터리 3사의 북미·유럽 증설 재개와 ESS 시장 성장이 핵심 성장 동력이며, 2026년 상반기 중 신규 수주 공시 여부가 연간 실적 방향성의 핵심 신호가 될 것이다.",
-  "en": "As of Q1 2026, cumulative order backlog stood at ₩52.3bn. In North America, a ₩13.2bn CESS manufacturing and installation contract for a Tesla ESS factory, supplemented by an additional ₩4.0bn agreement, brought total North American orders to ₩17.2bn—a meaningful customer-diversification milestone. In Europe, the Hungarian subsidiary secured ₩24.1bn in outsourcing and infrastructure contracts, while the Spanish subsidiary is pursuing over ₩10bn in orders for a Volkswagen-affiliated battery factory. On the robotics front, the company has completed development of a vision-based dual-purpose forklift AMR and targets initial deliveries in H2 2026 in cooperation with Klobot, with a longer-term aspiration to enter the humanoid robot market via its Dobot partnership. The data-center cooling initiative—underpinned by an MOU with China's Envicool for water-cooled full-chain technology—targets initial supply to large-scale regional data centers, focusing on locations outside the congested Seoul metropolitan grid. LFP ESS new business, developed in cooperation with GridWiz and Igis Asset Management, targets a small-scale pilot order in H2 2026. Domestically, the March 2026 acquisition of land and buildings in Suwon (₩9.0bn) expands production and office capacity. New order announcements in H1–H2 2026 will serve as the critical near-term indicators of the recovery's durability."
+  "ko": "회사는 2026년 1분기 기준 누적 수주잔고 522억 3천만원을 확보했다고 밝혔으며, 북미에서는 테슬라향 ESS 공장에 132억원 규모 CESS 제작·설치 계약에 추가 40억원 계약을 더해 총 172억원의 수주를 쌓았다. 유럽에서는 헝가리 법인을 통한 외주·인프라 계약이 241억원 규모로 체결됐고, 스페인 법인은 폭스바겐 계열 배터리 공장 프로젝트에서 100억원 이상의 수주를 진행 중이라고 전했다. 로봇 사업에서는 국내 최초로 비전 기반 상하차용 유·무인 겸용 지게차를 개발했으며, 2026년 하반기부터 클로봇 등과 협력해 초도 공급을 진행할 계획이라고 밝혔다. 데이터센터 냉각 신사업은 중국 엔비쿨과의 MOU를 기반으로 수냉식 풀체인 기술을 적용해 국내 대규모 데이터센터에 냉각시스템을 공급하는 방안을 추진 중이다. 유화증권은 8월 16일 리포트에서 LFP 기반 ESS 설치·운영 신사업이 준비 막바지에 있으며 그리드위즈, 이지스자산운용과의 협업을 통해 연말까지 소규모 수주가 기대된다고 전망했다. 같은 리포트는 중국 로봇암 업체와의 MOU를 바탕으로 연말까지 소규모 수주 가능성과 향후 휴머노이드 로봇으로의 확장 계획도 언급했다. 다만 이들 신사업 일정은 MOU·협의 단계에서 실제 계약·매출로 이어지는 데 시차가 있을 수 있어, 진행 상황을 분기별로 확인할 필요가 있다.",
+  "en": "The company said it had secured a cumulative order backlog of 52.23bn won as of 1Q26, having won contracts totaling 17.2bn won in North America—a 13.2bn won contract to manufacture and install CESS for a Tesla ESS plant plus an additional 4.0bn won contract. In Europe, it signed outsourcing and infrastructure contracts worth 24.1bn won through its Hungarian subsidiary, while its Spanish subsidiary is pursuing over 10bn won in orders on a Volkswagen-affiliated battery plant project. In robotics, the company said it developed Korea's first vision-based dual-purpose (manned/unmanned) loading forklift and plans initial deliveries from the second half of 2026 in cooperation with partners such as Klobot. Its new data center cooling business is pursuing supply of water-cooled full-chain cooling systems to large domestic data centers, based on an MOU with China's Envicool. In its August 16 report, Yuhwa Securities said the LFP-based ESS installation/operation business is nearing readiness and that small-scale orders are expected by year-end through cooperation with Gridwiz and Igis Asset Management. The same report also mentioned the possibility of small-scale orders by year-end and future expansion into humanoid robots, based on an MOU with a Chinese robotic-arm maker. However, since these new-business timelines are still at the MOU or discussion stage, there may be a lag before they translate into actual contracts and revenue, warranting quarter-by-quarter monitoring of progress."
  },
  "valuation_comment": {
-  "ko": "2025년 연간 순손실 전환으로 수익 기반의 주가 배수 산출이 현재 어려운 상태다. 제공된 BPS 7,573원 기준으로 주가는 순자산 대비 할인 구간에서 거래되고 있어, 이익 회복이 진행 중인 기업의 순자산 밸류에이션으로는 주목할 수 있는 위치다. 배당은 DART 공시 기준 DPS 0원으로 현금 환원이 없는 단계이며, 수익성이 회복되기 전까지 배당 기반 평가도 제한적이다. 2026년 1분기 지배주주 귀속 순이익이 26.6억원으로 대폭 개선됐고 분기 매출이 연속 증가하는 점은, 이익 회복세가 지속될 경우 순자산 대비 할인 폭이 축소될 여지를 시사한다. 상장 직후 형성됐던 높은 주가 수준에서 상당 폭 조정된 현재 구간에서, 2026년 하반기 실적 데이터와 신규 수주 공시가 쌓이면 시장의 밸류에이션 재평가가 이루어질 가능성이 있다. 다만 소형주 특성상 수급 변동성이 크고 애널리스트 커버리지가 제한적이라는 점은 정보 접근성 측면에서 주의가 필요하다.",
-  "en": "The 2025 net loss renders earnings-based valuation multiples incalculable at present. Against a reported BPS of ₩7,573, shares are trading at a discount to net asset value—a level that merits attention relative to the ongoing profit recovery. No cash dividend has been paid (DPS: ₩0), making yield-based analysis inapplicable until profitability normalizes. The sharp improvement in Q1 2026 controlling-shareholder net income (₩2.66bn) and consecutive quarterly revenue growth suggest that a sustained earnings recovery could progressively narrow the discount to book. Shares have corrected substantially from post-IPO highs, and accumulation of H2 2026 financial results alongside new order announcements may trigger a fresh market reassessment. However, limited analyst coverage and micro-cap liquidity dynamics mean information asymmetry and price volatility remain elevated risks for investors."
+  "ko": "주가는 주당순자산가치에도 못 미치는 수준에서 거래되고 있다. 2025년 연간 지배주주순손실을 기록한 이후 2026년 들어 분기별로 흑자와 적자를 오가며 이익이 점진적으로 회복되는 흐름을 보이고 있다. 회사는 현재 배당을 지급하지 않고 있어 주주환원보다 신사업 투자와 해외 수주 확대에 자금을 우선 배분하는 모습이다. 분기별 이익 변동성이 큰 편이어서, 시장이 부여하는 밸류에이션도 실적 발표 시점마다 함께 움직일 수 있다. 결국 CESS 중심 본업의 회복 속도와 로봇·ESS·데이터센터 냉각 등 신사업의 매출 가시화 시점이 향후 밸류에이션을 좌우할 핵심 변수로 꼽힌다.",
+  "en": "The share price trades below the company's per-share net asset value. After posting a net loss attributable to owners for full-year 2025, earnings have shown a gradual recovery pattern into 2026, alternating between quarterly profits and losses. The company currently pays no dividend, suggesting capital is being prioritized for new-business investment and overseas order expansion rather than shareholder returns. Given the significant quarter-to-quarter earnings volatility, the valuation the market assigns may also move around each earnings release. Ultimately, the pace of recovery in the core CESS business alongside the timing of revenue materialization from robotics, ESS and data center cooling are likely to be the key variables shaping future valuation."
  },
  "bull": [
   {
    "title": {
-    "ko": "CESS 세계 최초·글로벌 1위의 독점적 기술 해자",
-    "en": "World-First CESS Technology with Global No. 1 Moat"
+    "ko": "해외 수주 확대",
+    "en": "Overseas order expansion"
    },
    "body": {
-    "ko": "에이아이코리아는 세계 최초로 개발한 CESS 기술로 글로벌 시장점유율 1위를 차지하고 있으며, 국내 배터리 3사 발주 물량의 약 95%를 독점에 가깝게 수주하는 높은 진입장벽을 구축했다. 7년 누적 수주 3,400억원은 고객과의 장기 신뢰 관계와 검증된 납품 이력을 입증한다. CESS는 배터리 공장 핵심 인프라로, 설치 후 유지보수 및 추가 증설 수요가 반복 발생해 안정적인 반복 매출 기반을 제공한다.",
-    "en": "AI Korea's world-first CESS technology has earned it the globally leading market position and an estimated 95% capture of domestic battery-trio CESS allocations—a structural moat with high barriers to entry. Seven years of cumulative orders totaling ₩340bn attest to deep customer relationships and validated delivery performance. As essential battery-plant infrastructure, CESS generates recurring maintenance and expansion-phase revenues post-installation, underpinning revenue stability."
+    "ko": "2026년 1분기 기준 누적 수주잔고가 522억원으로 집계됐으며, 북미 테슬라향 ESS 공장 CESS 계약과 유럽 헝가리·스페인 법인을 통한 배터리·인프라 프로젝트 수주가 이어지고 있다. 특정 고객·지역에 국한되지 않고 해외로 저변을 넓히는 점은 매출 기반 다변화 요인으로 볼 수 있다.",
+    "en": "The company reported a cumulative order backlog of 52.2bn won as of 1Q26, with continued order wins including a CESS contract for a Tesla ESS plant in North America and battery/infrastructure projects through Hungarian and Spanish subsidiaries in Europe. Broadening the customer and regional base beyond any single market can be viewed as a factor diversifying the revenue base."
    }
   },
   {
    "title": {
-    "ko": "ESS·AI 데이터센터 수요 구조적 성장의 직접 수혜",
-    "en": "Direct Beneficiary of Structural ESS and AI Data-Center Demand Growth"
+    "ko": "신사업 다각화",
+    "en": "New business diversification"
    },
    "body": {
-    "ko": "AI 데이터센터 전력 수요 폭증이 북미·유럽 ESS 시장의 구조적 성장을 견인하고 있으며, 에이아이코리아는 이미 테슬라 ESS 공장 및 폭스바겐 계열 유럽 배터리 공장이라는 신규 고객을 확보하며 수주 다변화를 달성했다. 2026년 1분기 기준 523억원의 수주잔고는 단기 매출 가시성을 제공한다. 미국 빅테크 기업들의 2030 CFE 목표 달성을 위한 대규모 ESS 투자가 지속될 경우 CESS 발주 규모의 추가 확대가 예상된다.",
-    "en": "The AI-driven surge in power demand is propelling structural growth in North American and European ESS markets, and AI Korea has already diversified its client base to include a Tesla ESS factory and a Volkswagen-affiliated European battery plant. The Q1 2026 order backlog of ₩52.3bn provides near-term revenue visibility. Large-scale ESS investments by U.S. big-tech companies targeting 2030 carbon-free energy goals could further expand CESS order volumes."
+    "ko": "CESS 중심 본업 외에 자율주행로봇·비전 지게차, LFP 기반 ESS 설치·운영, 데이터센터 수냉식 냉각시스템 등으로 사업 영역을 넓히고 있다. 각 신사업은 클로봇, 엔비쿨, 그리드위즈 등 파트너와의 협업 구조로 진행되고 있어 자체 역량 부족 부분을 외부와 결합해 보완하는 형태다.",
+    "en": "Beyond the core CESS business, the company is expanding into autonomous robots and vision-based forklifts, LFP-based ESS installation/operation, and water-cooled data center cooling systems. Each new business is being pursued in partnership structures with companies such as Klobot, Envicool and Gridwiz, combining external capabilities to supplement its own."
    }
   },
   {
    "title": {
-    "ko": "신사업 3축(ESS·AMR·데이터센터)의 가시화로 사업 포트폴리오 다변화",
-    "en": "Three New Business Axes (ESS, AMR, Data Centers) Add Portfolio Diversification"
+    "ko": "재무구조 개선",
+    "en": "Improved financial structure"
    },
    "body": {
-    "ko": "LFP 기반 ESS 사업은 단순 납품이 아닌 설비 설치·운영 구독형 모델을 지향해, 성공 시 안정적 반복 수익원이 될 수 있다. AMR 사업은 2026년 하반기 초도 납품을 앞두고 있어 상용화가 임박했으며, 두봇과의 협업은 협동·휴머노이드 로봇 시장으로의 확장 경로를 제공한다. 데이터센터 냉각 시스템 신사업은 엔비쿨 MOU를 기반으로 AI 인프라 투자 급증에 편승할 포지셔닝이 구체화되고 있다.",
-    "en": "The LFP ESS segment targets a subscription-style installation-and-operation model rather than simple equipment sales, offering potential for stable recurring revenue if it scales. The AMR business is approaching first deliveries in H2 2026, with the Dobot partnership providing a pathway into collaborative and humanoid robot markets. The data-center cooling initiative, backed by the Envicool MOU, is building positioning to capture a share of the surging AI infrastructure investment wave."
+    "ko": "부채비율이 2024년 93.9%에서 2025년 47.9%로 크게 낮아졌고, 영업활동현금흐름도 2024년 마이너스에서 2025년 213억원 플러스로 전환됐다. 순손실을 기록한 해임에도 현금창출력과 재무건전성 지표는 오히려 개선된 모습이다.",
+    "en": "The debt ratio fell sharply from 93.9% in 2024 to 47.9% in 2025, and operating cash flow turned from negative in 2024 to a positive 21.3bn won in 2025. Despite recording a net loss for the year, cash-generation capacity and financial soundness indicators actually improved."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "배터리 고객사 투자 조정에 따른 수주 변동성 및 집중 리스크",
-    "en": "High Customer Concentration and Order Volatility from Battery Capex Adjustments"
+    "ko": "수익성 변동성",
+    "en": "Profitability volatility"
    },
    "body": {
-    "ko": "2025년 하반기 실적 급락은 배터리 3사의 투자 조정이 에이아이코리아 매출에 즉각적이고 심각한 충격을 줄 수 있음을 입증했다. 전기차 보급 속도 불확실성이 지속될 경우 고객사들은 CESS 및 프로세스 파이핑 신규 발주를 재차 지연할 가능성이 있다. 미국 관세 정책 변화나 IRA 보조금 축소는 고객사의 북미 증설 의사결정에 직접적인 외생 리스크로 작용한다.",
-    "en": "The H2 2025 earnings collapse vividly demonstrated how quickly battery-trio capex adjustments can translate into severe revenue shocks for AI Korea. Persistent uncertainty in EV adoption rates could prompt battery makers to again defer CESS and Process Piping orders. Changes to U.S. tariff policy or IRA incentive structures represent direct exogenous risks to customer North American investment decisions."
+    "ko": "2025년 3분기부터 2026년 2분기까지 영업손익은 적자-적자-흑자-적자를 반복했으며, 연간 영업이익률도 2024년 7.7%에서 2025년 3.2%로 낮아졌다. 매출이 늘어나는 국면에도 분기별 손익이 안정적이지 않은 점은 비용 관리와 원가 예측의 난이도를 보여준다.",
+    "en": "From 3Q25 to 2Q26, operating results alternated between losses, losses, a profit, then a loss again, and the annual operating margin fell from 7.7% in 2024 to 3.2% in 2025. The fact that quarterly results remain unstable even as revenue grows highlights the difficulty of cost management and cost forecasting."
    }
   },
   {
    "title": {
-    "ko": "신사업 수익화 시점 불확실성과 초기 투자 비용 부담",
-    "en": "Uncertain New Business Monetization Timeline and Front-Loaded Investment Costs"
+    "ko": "순이익 적자전환",
+    "en": "Swing to a net loss"
    },
    "body": {
-    "ko": "ESS 사업은 아직 소규모 초도 수주 단계이며 매출 기여까지 상당한 시간이 필요하다. AMR은 국내외 대형 플레이어들이 이미 높은 기술력을 보유한 시장에 후발 진입하는 구조여서 초기 침투에 어려움이 예상된다. 신사업 추진을 위한 R&D·인프라 투자(90억원 규모 신사옥 취득 포함)는 단기 현금 흐름에 부담을 줄 수 있으며, 성과 가시화가 예상보다 늦어질 경우 성장 기대가 희석될 수 있다.",
-    "en": "The ESS segment remains at an early pilot-order stage and meaningful revenue contribution is likely still some time away. AMR entry positions AI Korea as a late mover in a market where domestic and international players already hold substantial technology advantages. R&D and infrastructure investment—including the ₩9.0bn Suwon facility acquisition—may weigh on near-term cash flows, and if new business traction takes longer than expected, elevated growth expectations could be revised downward."
+    "ko": "2024년 122억8천만원의 순이익을 냈던 회사는 2025년 지배주주 기준 -7억7천만원의 순손실로 돌아섰다. 2026년 2분기에도 매출 성장에도 불구하고 순손익은 소폭 적자를 나타내며 완전한 이익 정상화까지는 시간이 더 필요함을 시사한다.",
+    "en": "After posting a net profit of 12.28bn won in 2024, the company swung to a net loss attributable to owners of -0.78bn won in 2025. Even in 2Q26, despite revenue growth, the net result was a small loss, suggesting full earnings normalization may still take more time."
    }
   },
   {
    "title": {
-    "ko": "소형주 특성: 낮은 유동성·제한적 커버리지·수급 변동성",
-    "en": "Micro-Cap Characteristics: Low Liquidity, Limited Coverage, Elevated Volatility"
+    "ko": "신사업 초기 단계",
+    "en": "New businesses still at an early stage"
    },
    "body": {
-    "ko": "발행 주식수가 약 830만 주에 불과하고 시가총액이 소형주 수준이어서 기관 투자자 참여가 제한적이다. 유동성이 낮은 환경에서는 단기 수급 변동만으로도 주가 변동성이 크게 확대될 수 있다. 2025년 4월 SPAC 합병 상장 이후 공시·실적 이력이 짧고 증권사 리포트 커버리지도 제한적이어서 정보 비대칭이 높다.",
-    "en": "With approximately 8.3 million shares outstanding and a micro-cap market capitalization, institutional investor participation is limited. In a low-liquidity environment, even modest supply-demand shifts can sharply amplify price volatility. Having listed via SPAC merger only in April 2025, the company's disclosure history is short and sell-side analyst coverage remains thin, resulting in elevated information asymmetry."
+    "ko": "로봇 지게차, LFP 기반 ESS, 데이터센터 냉각시스템 등은 대부분 MOU 체결이나 초도 공급 계획 단계에 머물러 있으며, 실제 매출로 연결되는 시점과 규모는 아직 확인되지 않았다. 신사업이 본업의 실적 변동성을 상쇄할 만큼 성장하기까지는 추가 확인이 필요하다.",
+    "en": "The robotic forklift, LFP-based ESS and data center cooling businesses are mostly still at the MOU or initial-delivery-planning stage, and the timing and scale of their conversion into actual revenue have yet to be confirmed. Further confirmation is needed before these new businesses grow large enough to offset the core business's earnings volatility."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 및 수주 공백 리스크",
-    "en": "Customer Concentration and Order Gap Risk"
+    "ko": "전방산업 투자 둔화",
+    "en": "Slower capex in end markets"
    },
    "body": {
-    "ko": "매출의 대부분이 배터리 3사 및 이들과 연관된 프로젝트에서 발생하며, 2025년 하반기 사례에서 보듯 프로젝트 간 수주 공백이 발생하면 분기 실적이 급격히 악화된다. 특정 고객의 투자 지연·삭감 또는 공급 관계 변동 시 즉각적인 매출 충격이 발생할 수 있다. 신규 고객(테슬라, 폭스바겐 계열) 다변화가 진행 중이나 아직 기존 3사 의존도를 상쇄하기에는 미흡한 단계다.",
-    "en": "The bulk of revenue is concentrated in battery-trio and affiliated projects. As illustrated in H2 2025, inter-project order gaps can rapidly and severely deteriorate quarterly results. Any investment deferral, budget cut, or change in supply relationships with a key customer can produce an immediate revenue shock. Customer diversification into Tesla and Volkswagen-affiliated projects is underway but not yet sufficient to meaningfully offset the existing concentration."
+    "ko": "2차전지 업계는 전기차 수요 둔화 국면에서 완성차·배터리사들의 투자 속도를 조절하고 있어, CESS 등 설비 발주 시점과 규모가 지연되거나 축소될 가능성이 있다. 이는 회사의 핵심 매출원인 인프라 사업 전반에 영향을 줄 수 있는 변수다.",
+    "en": "Amid slower EV demand, automakers and battery makers are moderating their investment pace, which could delay or reduce the timing and scale of equipment orders such as CESS. This is a variable that could affect the infrastructure business broadly, the company's core revenue source."
    }
   },
   {
    "cat": {
-    "ko": "기술·경쟁 심화 리스크",
-    "en": "Technology and Competitive Intensification Risk"
+    "ko": "프로젝트성 매출의 분기 편차",
+    "en": "Quarterly variance from project-based revenue"
    },
    "body": {
-    "ko": "CESS는 선구자적 제품이나 시장 성장과 함께 중국 배터리 업체의 자체 개발이나 글로벌 대형 장비사의 시장 진입 시 점유율이 위협받을 수 있다. AMR 시장은 이미 레인보우로보틱스, 두산로보틱스 등 강력한 경쟁자가 포진해 있어 후발 진입 리스크가 존재한다. 신사업 선점을 위한 기술 개발 속도가 경쟁사보다 느릴 경우 시장 입지 확보가 어려워질 수 있다.",
-    "en": "CESS is a first-mover product, but as the market grows, self-development by Chinese battery makers or market entry by large global equipment conglomerates could erode market share. The AMR sector is already populated by formidable competitors—including Rainbow Robotics and Doosan Robotics—placing AI Korea in a disadvantaged late-follower position. If technology development pace for new businesses lags competitors, market position could be difficult to establish."
+    "ko": "매출이 개별 프로젝트의 진행률과 인도 시점에 따라 인식되는 구조여서 분기별 손익 편차가 크게 나타난다. 2025년 3분기부터 2026년 2분기까지 반복된 흑자·적자 전환은 이러한 구조적 변동성을 보여준다.",
+    "en": "Because revenue is recognized based on individual project progress and delivery timing, quarter-to-quarter profit and loss variance can be large. The repeated swings between profit and loss from 3Q25 through 2Q26 illustrate this structural volatility."
    }
   },
   {
    "cat": {
-    "ko": "정책·지정학·환율 리스크",
-    "en": "Policy, Geopolitical, and FX Risk"
+    "ko": "신규사업 경쟁·계약 미확정 리스크",
+    "en": "Competition and non-binding agreement risk in new businesses"
    },
    "body": {
-    "ko": "미국의 IRA 세제 혜택 변경이나 배터리 관련 수입 규제 강화는 고객사의 북미 투자 결정에 영향을 준다. 헝가리·스페인 법인을 통한 유럽 사업 확대는 환율 변동과 현지 노무·규제 리스크를 수반한다. 두봇(Dobot) 등 중국 파트너사와의 협력은 미·중 무역 갈등 심화 시 공급망과 기술 협력에 불확실성을 초래할 수 있다.",
-    "en": "Changes to U.S. IRA tax credits or tightening of battery-related import regulations could directly affect customer North American capex plans. European business expansion through Hungarian and Spanish subsidiaries introduces foreign exchange exposure and local labor and regulatory risks. Partnerships with Chinese counterparts such as Dobot carry supply-chain and technology-collaboration uncertainty in the context of escalating U.S.-China trade tensions."
+    "ko": "로봇·ESS·데이터센터 냉각 등 신사업 다수가 MOU 단계에 머물러 있어 실제 구속력 있는 계약으로 전환되지 않을 가능성이 있다. 또한 해당 분야는 국내외 경쟁사가 다수 존재해 가격·기술 경쟁이 치열할 수 있다.",
+    "en": "Many of the new businesses in robotics, ESS and data center cooling remain at the MOU stage, and there is a possibility they may not convert into binding contracts. These fields also have numerous domestic and global competitors, which could result in intense price and technology competition."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월",
-    "en": "July–August 2026"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표: 분기 영업이익 흑자가 지속되는지, Q1 대비 매출 성장세가 이어지는지 확인. 수주잔고 소화 속도와 신규 수주 공시 여부도 병행 점검.",
-    "en": "Q2 2026 earnings: confirm whether operating profit remains positive and revenue grows sequentially vs Q1; check order backlog execution pace and any new order announcements."
+    "ko": "2026년 3분기 실적 발표 예정 — 매출 성장세가 5개 분기 연속으로 이어지는지, 영업이익이 다시 흑자로 전환되는지 확인이 필요하다.",
+    "en": "3Q26 earnings are expected to be released — worth checking whether revenue growth extends to a fifth consecutive quarter and whether operating profit returns to positive territory."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (상시)",
-    "en": "H2 2026 (Ongoing)"
+    "ko": "2026년 하반기 중",
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "AMR 초도 납품 및 ESS 소규모 수주 가시화: 클로봇과 협력한 AMR 제품 첫 납품 계약 성사 여부, LFP ESS 신사업 첫 수주 발생 시점이 신사업 수익화의 첫 번째 증거가 된다.",
-    "en": "AMR first delivery and ESS pilot orders: execution of the initial AMR supply agreement with Klobot and booking of the first LFP ESS order will serve as the first concrete proof points for new business monetization."
+    "ko": "클로봇 등과 협력한 비전 기반 지게차의 초도 공급이 실제로 개시되는지, 매출로 인식되는 규모는 어느 정도인지 확인할 시점이다.",
+    "en": "A point to confirm whether initial deliveries of the vision-based forklift, in cooperation with partners such as Klobot, actually begin, and at what revenue scale."
    }
   },
   {
    "when": {
-    "ko": "2026년 3~4분기",
-    "en": "Q3–Q4 2026"
+    "ko": "2026년 연말까지",
+    "en": "By the end of 2026"
    },
    "what": {
-    "ko": "배터리 3사 북미·유럽 증설 재개 여부 및 추가 CESS 수주 공시: 얼티엄셀즈·스타플러스에너지 등 기존 고객사의 증설 재개나 신규 CESS 계약 공시는 중기 매출 방향성을 확인하는 핵심 신호다.",
-    "en": "Battery-trio North America/Europe capacity restarts and additional CESS orders: announcements of resumed expansion by Ultium Cells or StarPlus Energy—or new CESS contract disclosures—would confirm the medium-term revenue outlook."
+    "ko": "그리드위즈·이지스자산운용과의 협업을 통한 LFP 기반 ESS 소규모 수주가 실제 체결되는지, 유화증권이 8월 16일 언급한 전망이 현실화되는지 지켜볼 필요가 있다.",
+    "en": "Worth monitoring whether the small-scale LFP-based ESS orders through cooperation with Gridwiz and Igis Asset Management are actually signed, confirming whether the outlook mentioned by Yuhwa Securities on August 16 materializes."
    }
   },
   {
    "when": {
-    "ko": "2026년 연중",
-    "en": "Throughout 2026"
+    "ko": "2026년 하반기 이후",
+    "en": "From the second half of 2026 onward"
    },
    "what": {
-    "ko": "스페인 법인 폭스바겐 계열 수주 확정 공시: 100억원 이상으로 진행 중인 계약이 정식 체결·공시되면 유럽 매출 기반의 본격적인 확장을 확인할 수 있다.",
-    "en": "Spain subsidiary Volkswagen-affiliate contract confirmation: formal execution and DART disclosure of the >₩10bn contract under negotiation would validate the European revenue expansion thesis."
+    "ko": "중국 엔비쿨과의 MOU를 기반으로 한 데이터센터 수냉식 냉각시스템 공급이 실제 계약으로 이어지는지 확인이 필요하다.",
+    "en": "Whether the water-cooled data center cooling system supply based on the MOU with China's Envicool progresses into an actual contract needs to be confirmed."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "H2 2026"
+    "ko": "지속 확인 사항",
+    "en": "Ongoing item to monitor"
    },
    "what": {
-    "ko": "수원 신사옥 활용 계획 구체화 및 IR 확인: 2026년 4월 등기 완료 예정인 신사옥이 생산 능력 확대·운영 효율 개선에 실질적으로 기여하는지를 실적 설명회와 IR 자료를 통해 점검.",
-    "en": "Suwon facility ramp-up details: verify via earnings calls and IR materials whether the new facility (registry completed April 2026) tangibly expands production capacity and improves operational efficiency, as stated at acquisition."
+    "ko": "북미(테슬라)·유럽(헝가리·스페인) 수주 물량이 실제 매출로 인식되는 시점과 규모를 분기별 공시를 통해 추적할 필요가 있다.",
+    "en": "The timing and scale at which the North American (Tesla) and European (Hungary, Spain) orders are recognized as actual revenue should be tracked through quarterly disclosures."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "에이아이코리아는 세계 최초로 개발한 CESS 기술로 국내 배터리 3사 발주의 약 95%를 독점하고 7년 누적 수주 3,400억원을 달성한 기술 집약형 소형 장비 기업이다. 2025년에는 전기차 시장 캐즘과 배터리 고객사 투자 조정 여파로 하반기 실적이 급락해 연간 순손실을 기록했으나, 2026년 1분기에는 매출·영업이익 모두 반등에 성공했다. 테슬라 ESS 공장, 유럽 폭스바겐 계열 등 신규 고객 확보와 523억원의 수주잔고는 단기 매출 가시성을 높이는 긍정적 신호다. ESS 운영 사업·AMR·데이터센터 냉각 시스템 등 신사업 3축은 배터리 장비 단일 의존도를 낮추는 방향으로 사업 포트폴리오를 다변화하는 전략적 시도이나, 수익화 시점의 불확실성은 여전히 남아 있다. 순자산 대비 할인 구간에서 거래되고 있으며, 수익 기반 배수는 적자 전환으로 현재 산출이 어렵다. 2026년 하반기의 실적 지속성, 신사업 초도 수주 성공 여부, 배터리 3사의 증설 재개 신호가 에이아이코리아 회복 스토리의 신뢰도를 검증할 핵심 이벤트로 주목된다.",
-   "en": "AI Korea is a technology-intensive micro-cap equipment maker that has leveraged its world-first CESS innovation to capture approximately 95% of domestic battery-trio CESS allocations and accumulate ₩340bn in cumulative orders over seven years. The company suffered a sharp H2 2025 earnings setback—pushing FY2025 into a net loss—as EV market caution and battery-maker capex deferrals created a pronounced order gap. Q1 2026 marked a clear rebound in both revenue and operating profit, supported by initial execution on Tesla ESS factory and European project deliveries. New customer wins and a ₩52.3bn order backlog improve near-term revenue visibility, while three new business axes (ESS operations, AMR, and data-center cooling) represent strategic steps toward reducing single-vertical dependency. Shares are currently trading at a discount to book value with earnings-based multiples incalculable given the 2025 net loss. The critical tests for AI Korea's recovery narrative will be H2 2026 earnings continuity, proof of new business first orders, and signals of resumed capex from the battery-trio customer base."
+   "ko": "에이아이코리아는 2차전지 CESS를 핵심 축으로 두고 로봇·ESS·데이터센터 냉각 등 신사업을 통해 사업 영역을 넓히고 있으며, 2026년 들어 분기 매출이 네 개 분기 연속 증가하는 흐름을 보이고 있다. 다만 영업이익은 분기마다 적자와 흑자를 오가며 큰 편차를 나타내고 있고, 2025년 연간 기준으로는 지배주주순손실을 기록하며 전년 흑자에서 적자로 전환됐다. 재무구조 측면에서는 부채비율이 낮아지고 영업현금흐름이 흑자로 돌아서는 등 개선된 모습도 함께 나타났다. 해외에서는 북미 테슬라향 ESS 공장과 유럽 헝가리·스페인 법인을 통한 수주가 이어지며 매출 기반을 넓히고 있으나, 로봇·ESS·데이터센터 냉각 등 신사업은 대부분 MOU·초기 검증 단계에 머물러 있어 실제 매출 기여 시점은 아직 확인되지 않았다. 결국 본업인 CESS의 수익성 회복 속도와 신사업들의 계약 전환 여부가 향후 실적 궤적을 가늠하는 핵심 변수가 될 것으로 보인다. 투자 판단에 앞서 분기별 공시와 수주 관련 후속 소식을 지속적으로 확인하는 것이 필요하다.",
+   "en": "AI Korea has the CESS business for secondary batteries as its core, while broadening into robotics, ESS and data center cooling, and quarterly revenue has grown for four straight quarters into 2026. However, operating profit has swung sharply between losses and profits quarter to quarter, and on a full-year basis the company posted a net loss attributable to owners in 2025, reversing from a profit the prior year. On the financial structure side, there were signs of improvement, including a lower debt ratio and a swing to positive operating cash flow. Overseas, orders have continued from a Tesla ESS plant in North America and through Hungarian and Spanish subsidiaries in Europe, broadening the revenue base, but most new businesses in robotics, ESS and data center cooling remain at the MOU or early-validation stage, and the timing of their actual revenue contribution has not yet been confirmed. Ultimately, the pace of profitability recovery in the core CESS business and whether the new businesses convert into binding contracts are likely to be the key variables shaping the earnings trajectory ahead. Continued monitoring of quarterly disclosures and follow-up news on orders is warranted before drawing any investment conclusions."
   }
  },
  "sources": [
-  "https://dartpoint.ai/01307593",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A364950&cID=&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
   "https://www.valueline.co.kr/finance/summary/364950",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=648443",
-  "https://m.thinkpool.com/compDiscuss/cont/1021285",
   "https://m.thinkpool.com/compDiscuss/cont/1021385",
   "https://m.thinkpool.com/item/364950",
   "https://www.kokstock.com/stock/item.asp?item_cd=364950",
+  "https://m.thinkpool.com/compDiscuss/cont/1021285",
+  "https://stocks.pluconnect.com/364950_%EC%97%90%EC%9D%B4%EC%95%84%EC%9D%B4%EC%BD%94%EB%A6%AC%EC%95%84/",
+  "https://dartpoint.ai/01307593",
   "https://www.fnnews.com/news/202504290819595608",
-  "https://www.thelec.kr/news/articleView.html?idxno=35473",
-  "https://alphasquare.co.kr/home/theme-factor?theme-id=67",
-  "https://www.thebell.co.kr/front/newsview.asp?click=F&key=202302281028540320105752",
-  "https://www.judal.co.kr/?view=stockList&themeIdx=127",
-  "https://stockstalker.co.kr/robot/",
-  "https://alphasquare.co.kr/home/theme-factor?theme-id=407",
-  "https://www.irobotnews.com/news/articleView.html?idxno=43272",
-  "https://alphasquare.co.kr/home/theme-factor?theme-id=76",
-  "https://littlebproject.com/stock/364950/79/47535"
+  "https://kr.investing.com/equities/ai-korea",
+  "https://littlebproject.com/stock/364950/79/47535",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=d0YFBEGbUoW9nxb2",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=vUFiETQoLX2RQ1gq",
+  "https://judal.co.kr/?shareToken=iyeEZsGutjJQTyJx&view=stockAI",
+  "https://www.investing.com/equities/aju-ib-investment-co-ltd",
+  "https://www.venturesquare.net/1064506",
+  "http://www.aik.co.kr/board/",
+  "https://m.finance.daum.net/quotes/A222080/news/disclosure/20260323033995",
+  "https://goinsider.kr/en/stock/01090471"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "364950",
  "name": "에이아이코리아",
  "name_en": "AI Korea Co., Ltd.",
@@ -234,11 +234,11 @@
   "인공지능(AI)"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:37",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:44",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -256,6 +256,23 @@
     "opm": 3.2,
     "roe": -1.4,
     "debt_ratio": 47.9
+   },
+   {
+    "year": 2024,
+    "rev": 114555344263,
+    "op": 8813931719,
+    "np": 12282228644,
+    "np_owner": 12282228644,
+    "equity": 44249357501,
+    "equity_owner": 44249357501,
+    "equity_nci": null,
+    "liab": 41563983454,
+    "cfo": -12001485363,
+    "eps_basic": 1774,
+    "src": "전기 비교치",
+    "opm": 7.7,
+    "roe": 27.8,
+    "debt_ratio": 93.9
    }
   ],
   "quarterly": [
@@ -269,7 +286,7 @@
     "q": "2025Q3",
     "rev": 10797716629,
     "op": -1876602039,
-    "np_owner": -73858791
+    "np_owner": null
    },
    {
     "q": "2025Q4",
@@ -291,21 +308,22 @@
    }
   ],
   "valuation": {
-   "price": 3305,
-   "mcap": 0.0274,
+   "price": 3410,
+   "mcap": 0.0283,
    "shares": 8296445,
    "total_shares": 8296445,
    "wavg_shares": 8301753,
-   "per": 8.496,
+   "per": 8.766,
    "eps": 389,
-   "pbr": 0.4548,
-   "bps": 7267,
+   "pbr": 0.4633,
+   "bps": 7361,
    "roe_ttm": 5.4,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 3143141155,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.48,
+   "eps_src": "공시",
+   "pbr_krx": 0.5,
    "bps_krx": 6879.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
