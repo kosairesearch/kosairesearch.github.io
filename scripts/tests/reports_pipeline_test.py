@@ -58,6 +58,9 @@ S.LEGACY_STATE = DATA / "batch_state_v2.json"
 S.REFRESH_FILE = DATA / "reports_v2_refresh"
 S.PAUSE_FILE = DATA / "reports_paused"
 S.QUOTA_FILE = DATA / "dart_quota_exhausted"
+# 새 전역 마커를 여기 안 넣으면 검사가 진짜 저장소의 파일을 읽는다. 실제로
+# 그랬다 — 잔액 마커가 저장소에 생긴 날 ⑥ 주문 검사가 통째로 무너졌다.
+S.CREDIT_FILE = DATA / "anthropic_credit_exhausted"
 S.STOCKS_JS = DATA / "stocks.js"
 M.OUT_DIR = S.OUT_DIR
 M.BATCH_DIR = S.BATCH_DIR
@@ -952,8 +955,6 @@ ok(M._api_unavailable(_err(anthropic.InternalServerError, "boom", 500)), "5xx �
 ok(not M._api_unavailable(ValueError("json")), "파싱 오류는 종목 문제")
 
 # 마커는 날짜라서 다음 날 저절로 풀린다
-S.CREDIT_FILE = DATA / "anthropic_credit_exhausted"
-M.S.CREDIT_FILE = S.CREDIT_FILE
 S.mark_credit_exhausted("테스트")
 ok(S.credit_exhausted_today(), "마커를 남기면 오늘은 막힌 것으로 본다")
 S.CREDIT_FILE.write_text("2026-09-01\n", encoding="utf-8")

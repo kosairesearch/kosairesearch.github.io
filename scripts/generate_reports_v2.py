@@ -82,6 +82,15 @@ _CREDIT_RE = re.compile(r"credit balance is too low|insufficient (?:credit|quota
                         r"|billing|payment required", re.I)
 
 
+def _rel(path):
+    """로그에 쓰기 좋은 짧은 경로. 저장소 밖이면 그대로 쓴다 — 로그 한 줄이
+    ValueError 를 던져 run 을 죽이면 안 된다(검사에서 실제로 그랬다)."""
+    try:
+        return path.relative_to(ROOT)
+    except ValueError:
+        return path
+
+
 def _api_unavailable(e):
     """이 예외가 '바깥이 막힌 것' 인가 — 잔액·인증·한도·연결·5xx."""
     import anthropic
@@ -378,11 +387,23 @@ def _fin_all(dart, ticker, year, reprt):
             out["np_owner"] = dict(out["np"])
     if _dump_on:
         with open(ROOT / "data" / "_debug_eps.txt", "a", encoding="utf-8") as fp:
-            fp.write(f"  >>> 최종 선택 {reprt}: ")
+            fp.write(f"  >>> 최종 선택 {reprt}({fs}): ")
             for k in ("np", "np_owner", "np_nci", "eps_basic"):
                 v = out.get(k)
                 fp.write(f"{k}={'없음' if not v else (str(v['amt'])+'/'+str(v['add']))}  ")
             fp.write("\n")
+            # 재무상태표도 같이 남긴다. BPS 가 어긋날 때 분자를 어디서 집었는지
+            # 로그만 보고는 알 수가 없었다 — SKC 는 '지배지분 칸에 자본총계' 도,
+            # '지배지분 태그 없음' 도 아닌 제3의 모양이었는데 그게 무엇인지
+            # 원문 행을 보지 않고는 좁혀지지 않았다.
+            fp.write("      재무상태표 선택: ")
+            for k in ("assets", "liab", "equity", "equity_owner", "equity_nci"):
+                v = out.get(k)
+                fp.write(f"{k}={'없음' if not v else v['amt']}  ")
+            fp.write("\n")
+            for aid, anm, sj, amt, add, prv in rows:
+                if sj == "BS" and ("자본" in anm or "지분" in anm or "총계" in anm):
+                    fp.write(f"      BS 행 | {anm} | id={aid} | 당기={amt}\n")
     if not out:
         return None
     # 이 숫자가 연결(CFS)인지 별도(OFS)인지 남긴다. 누적 차감으로 단일 분기를 만들 때
@@ -2200,7 +2221,7 @@ def submit(cl, as_of):
     # 마커에 적힌 날짜가 오늘일 때만 막으므로 다음 날 저절로 풀린다.
     if S.credit_exhausted_today():
         log("⛔ 오늘은 모델 계정이 막혔다(잔액 부족) — 주문을 건너뛴다.")
-        log(f"    {S.CREDIT_FILE.relative_to(ROOT)} 를 지우거나 크레딧을 충전하면 다시 돈다.")
+        log(f"    {_rel(S.CREDIT_FILE)} 를 지우거나 크레딧을 충전하면 다시 돈다.")
         result["no_credit"] = True
         return result
     data, targets = pick_targets()
@@ -2282,7 +2303,7 @@ def submit(cl, as_of):
         if _no_credit(e):
             S.mark_credit_exhausted(f"{as_of} · {type(e).__name__}: {str(e)[:200]}")
             log(f"⛔ 배치를 만들지 못했다 — 계정 잔액이 부족하다: {e}")
-            log(f"    {S.CREDIT_FILE.relative_to(ROOT)} 에 오늘 날짜를 적어 둔다 — "
+            log(f"    {_rel(S.CREDIT_FILE)} 에 오늘 날짜를 적어 둔다 — "
                 f"오늘은 더 시도하지 않고 DART 호출을 아끼자.")
             result["no_credit"] = True
             return result
