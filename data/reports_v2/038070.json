@@ -1,229 +1,220 @@
 {
  "title": {
-  "ko": "서린바이오 — 수익성 저점 확인 vs. CB 희석 우려 공존",
-  "en": "Seoulin Bioscience — Margin Floor Testing Against CB Dilution Concerns"
+  "ko": "실적 변동성 속 사업 다각화 나선 서린바이오",
+  "en": "SeouLin Bioscience Diversifies Amid Earnings Volatility"
  },
  "lead": {
-  "ko": "코로나19 특수 소멸로 2022년 피크 대비 매출이 약 25% 줄고 영업이익률이 1% 미만으로 내려앉은 가운데, 40년 고객 기반을 바탕으로 오믹스·디지털PCR 등 신사업 다각화를 추진 중이나 전환사채 희석 부담과 마진 회복의 불확실성이 공존한다.",
-  "en": "Post-COVID demand normalization has eroded revenue by ~25% from the 2022 peak and compressed operating margins to below 1%, while a 40-year customer base supports new ventures into omics and digital PCR services — yet convertible bond dilution risks and an uncertain margin recovery path coexist."
+  "ko": "생명과학 소재·기기 유통업체 서린바이오는 2025년 연간 매출과 영업이익이 소폭 회복됐으나 분기별로는 흑자와 적자가 반복되는 불안정한 실적 흐름을 보이고 있다.",
+  "en": "SeouLin Bioscience, a life-science reagent and equipment distributor, saw modest annual revenue and operating profit recovery in 2025, but quarterly results continue to swing between profit and loss."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 771억 원으로 전년 대비 소폭 반등(+2.2%)했으나 영업이익률은 0.9%로, 2022년(8.4%)에 비해 7.5%포인트 이상 낮아진 상태가 지속되고 있다.",
-   "en": "FY2025 consolidated revenue of ₩77.1bn recovered modestly (+2.2% YoY), yet operating margin of 0.9% reflects a cumulative 7.5-percentage-point compression from the 2022 peak of 8.4%."
+   "ko": "2025년 매출 770.9억원으로 전년 대비 소폭 증가했으나 영업이익률은 0.9%에 그쳤다",
+   "en": "2025 revenue reached KRW 77.09 billion, up slightly year-on-year, but operating margin was only 0.9%"
   },
   {
-   "ko": "2025년 말 부채비율이 38.1%로 전년(16.9%)에서 급등한 것은 약 150억 원 규모의 사모 전환사채(CB) 발행이 주요 원인이며, CB 전환 시 잠재 희석 리스크가 존재한다.",
-   "en": "The debt ratio surged to 38.1% in FY2025 from 16.9% in FY2024, driven primarily by a ~₩15bn private convertible bond issuance, creating potential share dilution risk upon future conversion."
+   "ko": "2025Q3 영업이익 7.8억원 흑자 이후 2025Q4·2026Q2 영업손실 재발로 분기 실적이 불안정하다",
+   "en": "After a KRW 785 million operating profit in Q3 2025, operating losses recurred in Q4 2025 and Q2 2026, showing quarterly instability"
   },
   {
-   "ko": "2026년 1분기 매출 195억 원·영업이익 1.7억 원으로 미약하나 흑자 기조를 유지했으며, 3분기 집중 쏠림(2025Q3 영업이익 7.9억 원)이 반복될지 여부가 연간 손익의 핵심 변수다.",
-   "en": "Q1 2026 posted revenue of ₩19.5bn and operating income of ₩175m, maintaining a thin positive trend; whether the sharp Q3 seasonality peak (Q3 2025: ₩785m OP) recurs will be the key annual earnings variable."
+   "ko": "POCUS 오믹스 분석, Bio-Rad 신규 브랜드 판매권, ecoTree 위생살균장비 등으로 사업 다각화를 추진 중",
+   "en": "The company is diversifying through the POCUS omics analysis brand, a new Bio-Rad distribution deal, and the ecoTree hygiene/disinfection equipment business"
   },
   {
-   "ko": "알츠하이머 항체 치료제·GLP-1 비만·당뇨 치료제의 글로벌 급성장은 CDMO·연구소의 시약·소모품 수요를 구조적으로 견인, 간접 수혜 가능성이 있다.",
-   "en": "The global surge in Alzheimer's antibody treatments and GLP-1 obesity/diabetes therapies is structurally expanding CDMO and research institute demand for reagents and consumables, offering indirect demand tailwinds."
+   "ko": "33.35억원 규모 자기주식 교환대상 사모 교환사채 발행 결정이 공시됐다",
+   "en": "The company disclosed a decision to issue KRW 3.335 billion privately placed exchangeable bonds backed by treasury shares"
   },
   {
-   "ko": "2025년 11월 바질바이오텍 오믹스 분석서비스 계약, SOL과의 디지털PCR MOU 등 고부가가치 서비스 영역으로의 다각화 초기 단계에 있으나, 매출 기여 가시성은 아직 낮다.",
-   "en": "Diversification into higher-margin services — omics analysis (Bazil Biotech, Nov 2025) and digital PCR (SOL MOU) — is in early stages, with revenue visibility from these initiatives still limited."
+   "ko": "주가는 주당순자산가치를 밑도는 수준에서 거래되며 순이익 규모는 2022년 대비 크게 축소된 상태다",
+   "en": "The stock trades below its book value per share, while net income remains far smaller than the 2022 level"
   }
  ],
  "business": {
-  "ko": "서린바이오사이언스는 1984년 설립 이후 40년 이상 바이오산업 전반에 시약·기기·소모품·서비스를 공급하는 국내 대표 '바이오 토탈 솔루션' 유통 전문기업이다. 2025년 3분기까지의 매출 구성은 시약 62%, 기기 약 20%, 소모품 약 14%, 헬스케어기기 및 기타 약 4%로, 시약이 핵심 수익원이다. 백신·항체 기반 치료제·세포치료제·면역세포치료제·혈액제제·진단시약 등 다양한 바이오 분야의 연구·생산 원재료 및 기기를 공급하며, 글로벌 원제조사와의 파트너십을 통해 미국·유럽·아시아산 고품질 제품을 국내에 소개하는 역할을 한다. 주요 고객군은 삼성바이오로직스·LG화학·녹십자 등 국내 주요 바이오·제약 기업을 비롯해, 서울대·연세대·고려대 등 전국 대학 연구실, 아산병원·삼성의료원·서울대병원 등 병원 연구기관, 질병관리청·농촌진흥청 등 공공기관까지 광범위하다. 본사는 경기 성남 판교 코리아바이오파크에, 서린글로벌센터는 경기 화성 동탄에 위치하며 임직원은 약 110명이다. 자체 브랜드인 친환경 살균수 제조장비 'ecoTree'를 보유하고 서린생명과학연구소를 통해 분자진단 R&D도 병행한다. 2025년 11월 바질바이오텍과 오믹스 분석서비스 계약을 체결했고, 4월에는 스타온메디컬(구 서린메디케어) 주식을 양수하는 등 사업 영역을 지속 확장 중이다. 뷰키코리아와의 공급 계약 체결로 화학·제약 분야 실험 장비 라인업도 강화했다.",
-  "en": "Founded in 1984, Seoulin Bioscience has operated as a comprehensive domestic bio-distribution specialist for over four decades, supplying reagents, instruments, consumables, and services across the life sciences. Based on data through Q3 2025, revenue is split approximately: reagents 62%, instruments ~20%, consumables ~14%, and healthcare devices/other ~4%, making reagents the dominant revenue driver. The company serves vaccine, antibody-based therapeutics, cell therapy, immune cell therapy, blood product, and diagnostic reagent segments, leveraging global manufacturer partnerships to introduce U.S., European, and Asian products to the domestic market. Its blue-chip customer base spans Samsung BioLogics, LG Chem, and Greencross on the corporate side; Seoul National, Yonsei, and Korea universities; major hospital research centers including Asan, Samsung Medical Center, and Seoul National University Hospital; and public agencies such as the KDCA and RDA. Headquarters are in the Korea BioParK at Pangyo (Seongnam) with a second facility in Dongtan (Hwaseong), employing approximately 110 people. The company holds its own eco-friendly sterilization device brand, ecoTree, and conducts molecular diagnostics R&D through the Seoulin Life Science Research Institute. In November 2025, it signed an omics analysis services contract with Bazil Biotech, and in April 2025 it acquired shares of StarOn Medical (formerly Seoulin MediCare), expanding its business scope. A supply agreement with Buki Korea has further broadened the chemical/pharma lab instrument lineup."
+  "ko": "서린바이오사이언스는 1984년 설립된 생명과학 소재·기기 전문 유통기업으로, 시약·기기·소모품 공급부터 기술지원까지 아우르는 토탈 솔루션을 제공한다. 매출 구성은 시약이 약 62%로 가장 크고, 기기 20%, 소모품 14%, 헬스케어기기외 2%, 기타 2% 순으로 나타나 시약 유통이 핵심 수익원임을 보여준다. BD Biosciences, Cell Signaling Technology(CST) 항체 등 글로벌 브랜드의 국내 공식 대리점 역할을 수행해왔고, 최근에는 글로벌 생명과학기업 Bio-Rad의 국내 판매권을 확보해 신규 브랜드로 공식 출시했다. 위생·살균 솔루션 부문에서는 자회사 격 브랜드인 ecoTree(에코트리)를 통해 미산성 차아염소산수 생성장치를 제조·판매하며 동물병원 등 헬스케어 현장으로 접점을 넓히고 있다. AI 기반 오믹스 분석 브랜드 'POCUS'를 통해 혈액 단백질체 심층 분석 서비스도 새롭게 추가해 기초연구 중심 공급업에서 유전체·단백체 분석 서비스로 사업 영역을 확장하고 있다. 고객군은 대학·연구기관, 국내 대기업 및 바이오텍의 의약품 파이프라인, 최근에는 동물병원까지 포괄한다. 경쟁 구도상 유사 사업을 영위하는 국내 기업으로는 녹십자엠에스, 엑세스바이오코리아, 코사이언스 등이 거론되며, 유통업 특성상 해외 원제조사와의 대리점 계약 유지가 핵심 경쟁력으로 꼽힌다.",
+  "en": "Founded in 1984, SeouLin Bioscience is a life-science materials and equipment distributor offering total solutions spanning reagents, equipment, consumables, and technical support. Reagents account for roughly 62% of revenue, followed by equipment at 20%, consumables at 14%, healthcare devices at 2%, and other items at 2%, underscoring reagent distribution as the core revenue driver. The company has long served as the official domestic distributor for global brands such as BD Biosciences and Cell Signaling Technology (CST) antibodies, and recently secured domestic distribution rights for Bio-Rad, launching it as a new brand. In the hygiene and disinfection segment, its ecoTree brand manufactures and sells slightly acidic hypochlorous acid water generators, expanding its footprint into veterinary clinics and other healthcare sites. Through its AI-based omics brand POCUS, the company added an in-depth blood proteomics analysis service, extending beyond basic-research-stage supply into genomics and proteomics analysis services. Its customer base spans universities, research institutes, domestic conglomerates and biotech pipelines, and more recently veterinary clinics. Among domestic peers cited for similar businesses are GC Biopharma Medical Science, Access Bio Korea, and Cosaience, with maintaining agency contracts with overseas principal manufacturers seen as a key competitive factor in this distribution-driven industry."
  },
  "earnings": {
-  "ko": "2022년은 코로나19 특수 정점으로 연결 매출 1,024억 원, 영업이익 86억 원(OPM 8.4%), 지배주주 귀속 순이익 95억 원을 기록한 역대 최고 수준이었다. 엔데믹 전환 이후 2023년 매출은 896억 원으로 12.5% 감소했고 영업이익도 25억 원(OPM 2.8%)으로 급락했으며, 지배주주 귀속 순이익은 소폭 적자(-1.2억 원)로 전환됐다. 2024년은 매출이 754억 원으로 추가 하락해 2022년 대비 약 26% 감소했고, 영업이익도 10억 원(OPM 1.3%)까지 위축됐으나 지배주주 귀속 순이익은 29억 원으로 회복됐다. 2025년은 매출 771억 원으로 소폭 반등했음에도 영업이익은 7억 원(OPM 0.9%)으로 오히려 전년보다 줄어, 외형 회복에 비해 수익성 회복이 더딘 구조가 확인됐다. 2025년 분기별로는 2분기(-3.3억 원 영업손실)가 가장 부진했고, 3분기(매출 229억·영업이익 7.9억)에서 뚜렷한 계절성 반등을 보인 뒤 4분기(1.4억 원)로 다시 둔화됐다. 2026년 1분기는 매출 195억 원·영업이익 1.7억 원으로 전년 동기(매출 180억·영업이익 1억) 대비 소폭 개선됐다. 2025년 영업현금흐름(CFO)은 48억 원으로 2024년(-46억)에서 플러스 전환해 현금 창출력은 일부 회복됐으나, 반복적 CFO 변동성(2022년 -44억→2023년 +9억→2024년 -46억→2025년 +48억)은 운전자본 관리의 계절적 특성을 반영한다.",
-  "en": "FY2022 was the COVID-era peak: consolidated revenue of ₩102.4bn, operating income of ₩8.58bn (OPM 8.4%), and net profit attributable to owners of ₩9.54bn. Post-endemic normalization drove revenue down 12.5% to ₩89.6bn in FY2023 and operating income fell sharply to ₩2.49bn (OPM 2.8%), with parent-company net income sliding to a marginal loss of ₩-118m. FY2024 saw revenue fall further to ₩75.4bn — some 26% below the 2022 peak — with operating income of ₩953m (OPM 1.3%), though parent net income recovered to ₩2.91bn on non-recurring items. FY2025 delivered a modest top-line recovery to ₩77.1bn, yet operating income fell further to ₩692m (OPM 0.9%), indicating that revenue recovery has outpaced margin improvement. Quarterly, Q2 2025 registered an operating loss of ₩332m; Q3 2025 delivered a sharp seasonal rebound (revenue ₩22.9bn, OP ₩785m); Q4 2025 moderated to ₩142m OP. Q1 2026 showed incremental improvement (revenue ₩19.5bn, OP ₩175m) versus the year-ago period (revenue ₩18.0bn, OP ₩97m). FY2025 operating cash flow turned positive at ₩4.76bn after -₩4.61bn in FY2024, partially restoring cash generation visibility, though the recurring CFO volatility pattern reflects working-capital seasonality typical in distribution-focused businesses."
+  "ko": "2025년 연결 매출은 770.9억원으로 2024년 754.1억원에서 소폭 증가했으나, 2022년 1,024.1억원 대비로는 상당히 축소된 규모다. 영업이익은 2025년 6.9억원(영업이익률 0.9%)으로 2024년 9.5억원(1.3%), 2023년 24.9억원(2.8%), 2022년 85.8억원(8.4%)과 비교하면 다년간 마진이 꾸준히 축소돼온 흐름이 확인된다. 지배주주순이익은 2025년 7.3억원으로 2024년 29.1억원에서 큰 폭 감소했으며, 2023년에는 -1.2억원의 순손실을 기록한 바 있어 최근 4개년 손익이 등락을 반복해왔다. 분기별로 보면 2025Q2 영업손실 3.3억원, 지배주주순손실 0.6억원을 기록한 뒤 2025Q3에는 매출 228.7억원, 영업이익 7.8억원, 순이익 7.7억원으로 뚜렷한 개선을 보였다. 그러나 2025Q4에는 영업이익 1.4억원의 소폭 흑자에도 순손실 3.6억원을 기록했고, 2026Q1에는 영업이익 1.7억원과 순이익 1.6억원의 소규모 흑자를 냈다가 2026Q2에는 매출 208.0억원임에도 영업손실 6.0억원이 재발해 순이익은 3.4억원으로 나타났다. 최근 4개 분기(2025Q3~2026Q2) 지배주주순이익 합계는 9.2억원 수준으로, 분기별 부침이 큰 가운데 연간 누적으로는 완만한 이익 기조를 유지하고 있다. 현금흐름 측면에서는 2025년 영업활동현금흐름이 47.6억원 순유입을 기록해 2024년의 -46.1억원 순유출에서 개선된 모습을 보였다.",
+  "en": "Consolidated revenue in 2025 came to KRW 77.09 billion, a slight increase from KRW 75.41 billion in 2024, but still well below the KRW 102.41 billion recorded in 2022. Operating profit was KRW 692 million in 2025 (0.9% margin), compared with KRW 953 million (1.3%) in 2024, KRW 2.49 billion (2.8%) in 2023, and KRW 8.58 billion (8.4%) in 2022, showing a multi-year margin compression trend. Net income attributable to owners fell sharply to KRW 732 million in 2025 from KRW 2.91 billion in 2024, after a net loss of KRW 118 million in 2023, reflecting swings across the past four years. On a quarterly basis, an operating loss of KRW 332 million and a net loss of KRW 56 million in Q2 2025 was followed by a clear improvement in Q3 2025, with revenue of KRW 22.87 billion, operating profit of KRW 785 million, and net income of KRW 767 million. However, Q4 2025 posted only a marginal operating profit of KRW 142 million alongside a net loss of KRW 356 million, and Q1 2026 delivered a small profit of KRW 175 million in operating income and KRW 163 million in net income, before an operating loss of KRW 597 million recurred in Q2 2026 despite revenue of KRW 20.80 billion, with net income at KRW 342 million. Over the trailing four quarters (Q3 2025 to Q2 2026), cumulative net income attributable to owners totaled roughly KRW 917 million, indicating a modest but volatile earnings trajectory. On the cash flow side, operating cash flow turned to a net inflow of KRW 4.76 billion in 2025, an improvement from the net outflow of KRW 4.61 billion in 2024."
  },
  "industry": {
-  "ko": "글로벌 생명과학 시약 시장은 2025년 약 669억 달러 규모에서 2035년 1,210억 달러 이상으로 연평균 6.1% 성장이 전망된다. 코로나19 특수 소멸로 인한 단기 조정 이후, 알츠하이머 항체 치료제와 GLP-1 기반 비만·당뇨 치료제의 급성장이 관련 R&D 및 생산 원재료 수요를 새로운 성장 동력으로 창출하고 있다. 정밀의료·바이오 빅데이터 활용 확대, 세포·유전자 치료제 분야의 지속적 R&D 투자 증가도 시약·소모품·기기 유통 시장에 구조적 수요를 더하는 요소다. 정부의 국가 생명과학 연구개발 사업 확대는 대학·공공연구기관의 시약·기기 구매 수요를 안정적으로 지지하는 기반 역할을 한다. 경쟁 구도 측면에서 서린바이오는 녹십자엠에스·아이젠텍·엑세스바이오코리아·코사이언스 등 진단·시약 분야 전문 기업과 경쟁하며, 의료기기 도매업 내 약 29위권의 매출 위상을 갖는다. 유통 비즈니스 모델 특성상 Thermo Fisher, Merck(Sigma-Aldrich), BD Biosciences 등 글로벌 원제조사와의 국내 독점 또는 우선 공급 계약 유지가 경쟁 우위의 핵심이며, 글로벌 제조사의 직판 전략 전환이나 온라인 유통 확대는 잠재적 구조 변화 요인이다.",
-  "en": "The global life science reagents market is projected to grow from approximately $66.9bn in 2025 to over $120.9bn by 2035, at a ~6.1% CAGR. Following the post-COVID demand correction, new structural growth drivers have emerged: rapid global uptake of Alzheimer's antibody therapies and GLP-1-based obesity/diabetes treatments is expanding both R&D and manufacturing material demand at CDMOs and biotech companies. Continuing investments in precision medicine, bio-big data, and cell/gene therapy R&D further support structural demand for reagents, consumables, and instruments. Government-backed national life science R&D programs provide a stable demand floor through university and public institute procurement. Competitively, Seoulin faces peers including Greencross MS, Aijentec, Access Bio Korea, and Coscience in the diagnostics/reagent segment, ranking approximately 29th by revenue within the domestic medical device wholesale sector. The sustainability of domestic exclusive or preferred supply agreements with global reagent principals — Thermo Fisher, Merck/Sigma-Aldrich, BD Biosciences — remains the structural competitive moat, while a shift to direct-sales or online distribution by major manufacturers represents a medium-term structural risk to the intermediary model."
+  "ko": "국내 생명과학 소재·기기 유통업은 대학·연구기관과 바이오텍의 R&D 투자 규모에 성과가 직결되는 구조다. 팬데믹 특수가 사라진 이후 코로나19 관련 진단·백신 제품군 수요가 축소되며 업계 전반의 매출 기저가 낮아졌다는 점이 최근 실적 부진의 배경으로 꼽힌다. 반면 알츠하이머 항체 치료제, 비만·당뇨 치료제 등 신약 파이프라인이 성장하고 정밀의료·바이오 빅데이터 활용을 위한 R&D 투자가 활발해지는 흐름은 새로운 수요처로 부각되고 있다. 생명과학 시장은 기존 기초연구 단계 중심의 실험용 소모품 공급에서 공정개발(Process Development)과 품질관리(QC) 단계까지 적용 범위가 확대되는 추세이며, 이에 따라 장비·시약·소모품 수요도 유전체(Genomics)와 단백체(Proteomics) 분석 등으로 고도화·다변화되고 있다. 이 시장에서 서린바이오는 BD, CST, Bio-Rad 등 해외 브랜드의 국내 대리점 지위를 활용한 유통 채널과, ecoTree·POCUS 등 자체 브랜드 다각화를 병행하는 전략을 취하고 있다. 경쟁은 국내 유사 유통기업들과의 대리점 경쟁 및 가격 경쟁 형태로 나타나며, 원제조사와의 계약 조건 변화가 마진에 영향을 미칠 수 있는 구조다.",
+  "en": "The domestic life-science materials and equipment distribution business is directly tied to R&D spending levels at universities, research institutes, and biotech companies. The fading of pandemic-driven demand has been cited as a key factor behind lower industry-wide revenue bases, as demand for COVID-19-related diagnostic and vaccine product lines has declined. On the other hand, growth in drug pipelines such as Alzheimer's antibody therapies and obesity/diabetes treatments, along with rising R&D investment in precision medicine and bio big data, are emerging as new demand drivers. The life-science market is expanding beyond basic-research-stage consumable supply into process development and quality control stages, and demand for equipment, reagents, and consumables is becoming more sophisticated and diversified toward genomics and proteomics analysis. Within this landscape, SeouLin Bioscience pursues a strategy that combines its distribution channels—leveraging agency status for overseas brands such as BD, CST, and Bio-Rad—with diversification through in-house brands like ecoTree and POCUS. Competition takes the form of agency and pricing rivalry among similar domestic distributors, with changes in contract terms with principal manufacturers capable of affecting margins."
  },
  "outlook": {
-  "ko": "2026년 1분기 매출 195억 원·영업이익 1.7억 원으로 전년 동기 대비 소폭 개선 흐름이 이어지고 있다. 2025년 11월 체결한 바질바이오텍과의 오믹스 분석서비스 계약은 고부가가치 서비스 매출 확대를 위한 시도로, 단순 유통 중심 모델에서 서비스·솔루션형으로의 다각화를 보여준다. 스타온메디컬(구 서린메디케어) 주식 양수는 헬스케어기기 부문 강화 의지를 반영하며, 향후 자회사 손익이 연결 실적의 변수로 작용할 수 있다. 뷰키코리아와의 공급 계약 체결로 화학·제약 분야 실험 장비 포트폴리오가 확장됐으며, 중기 매출 다각화에 기여할 것으로 기대된다. 알츠하이머 항체 치료제와 GLP-1 치료제의 글로벌 수요 급증은 국내 CDMO·연구소의 R&D 투자를 자극해 시약·소모품 수요의 간접 수혜로 이어질 가능성이 있다. 다만 2025년 사모 CB 150억 원 발행에 따른 부채 부담 및 잠재 전환권 행사 가능성은 향후 자본구조 변화의 주요 모니터링 요인으로, DART 공시를 통한 전환 조건 추적이 필요하다.",
-  "en": "Q1 2026 delivered revenue of ₩19.5bn and operating income of ₩175m, continuing a modest improvement trend versus the prior-year period. The November 2025 omics analysis services contract with Bazil Biotech represents a step toward higher-value service revenues, reflecting a strategic push to diversify beyond pure product distribution toward service/solution offerings. The April 2025 acquisition of StarOn Medical (formerly Seoulin MediCare) signals intent to strengthen the healthcare device segment, with subsidiary profitability becoming a variable for consolidated results. The Buki Korea supply agreement has broadened the chemical/pharma lab instrument lineup and is expected to contribute to medium-term revenue diversification. On the demand side, the global surge in Alzheimer's antibody and GLP-1 therapies may stimulate domestic CDMO and research laboratory investment, creating indirect tailwinds for reagent and consumable procurement. Conversely, the ₩15bn private CB issuance and potential exercise of conversion rights remain key capital structure variables that warrant ongoing monitoring through DART filings."
+  "ko": "회사는 2026년 4월 'BIO KOREA 2026'에서 Bio-Rad 정밀분석 토탈 솔루션을 선보였고, 앞서 3월에는 'KOREA LAB 2026'에서 바이오 분석 통합 서비스를 공개하며 신규 브랜드·서비스 홍보에 나섰다. 위생·살균 사업에서는 충청북도수의사회, 한국고양이수의사회(KSFM) 등과 잇달아 업무협약을 체결해 ecoTree 장비의 동물병원 현장 적용을 확대하려는 행보를 이어가고 있다. 렌즈프리 디지털 이미징 기술기업 SOL과의 업무협약을 통해 디지털 얼라이저, 디지털 진단키트, 디지털 PCR 등 바이오 소재·부품·장비(소부장) 분야 신규사업 공동개발도 추진 중이다. 아울러 Thermo Fisher Scientific과 유전자 전달체 제품 대량 생산 서비스 사업을 위한 실시 계약을 체결한 바 있어, 유전자치료제·세포유전자치료제(CGT) 관련 원부재료 공급 확대 가능성도 열려 있다. 회사는 최근 33.35억원 규모의 자기주식을 교환 대상으로 하는 사모 교환사채 발행을 결정했다고 공시했는데, 이는 향후 유통주식 수 변화나 자금 조달 목적과 연계해 지켜볼 필요가 있는 이벤트다. 다만 이러한 신사업들이 매출 비중에서 유의미한 규모로 반영되는 시점과 규모는 아직 공시상 구체적으로 확인되지 않아, 향후 분기 실적 발표를 통한 확인이 필요하다.",
+  "en": "In April 2026, the company showcased its Bio-Rad precision analysis total solution at 'BIO KOREA 2026,' having earlier presented an integrated bio-analysis service at 'KOREA LAB 2026' in March, as part of efforts to promote new brands and services. In its hygiene and disinfection business, the company has signed a series of memoranda of understanding with organizations including the Chungbuk Veterinary Medical Association and the Korean Society of Feline Medicine (KSFM), continuing efforts to expand ecoTree equipment adoption in veterinary clinics. Through a partnership with lens-free digital imaging firm SOL, the company is also pursuing joint development of new businesses in bio materials, parts, and equipment, including digital analyzers, digital diagnostic kits, and digital PCR. It has additionally signed an implementation agreement with Thermo Fisher Scientific for mass production services of gene delivery vehicle products, opening potential for expanded supply of raw materials related to gene and cell-and-gene therapies. The company recently disclosed a decision to issue privately placed exchangeable bonds worth KRW 3.335 billion backed by treasury shares, an event worth monitoring in relation to potential changes in outstanding share count or funding purposes. However, the specific timing and scale at which these new businesses will meaningfully contribute to revenue have not yet been clearly confirmed in disclosures, warranting attention to upcoming quarterly results."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당 순자산(BPS 9,928원)을 크게 하회하는 구간에서 거래되고 있으며, 이는 2022년 고점 대비 이익 기반이 현저히 후퇴한 상황을 시장이 반영한 결과로 볼 수 있다. 수익성 회복 시점이 가시화되기 전까지 순자산 할인 구간의 재평가 촉매는 제한적일 수 있다. 연간 배당금(DPS 100원)은 낮은 이익 환경에서도 유지됐으며, 현 주가 수준에서 업종 평균 대비 양호한 배당 수익률 구간을 형성한다. 최근 집계 기준 주당순이익(EPS 59원)은 과거 최고 이익 시기와의 간극이 매우 크고, 분기별 변동성도 높아 단일 연도 이익 기반의 밸류에이션 산정에 유의가 필요하다. CB 전환으로 인한 주식 수 증가 시 주당 순자산 등 단위 지표가 희석될 수 있으므로, 전환 일정 및 전환 가액 확인이 정확한 밸류에이션 판단의 전제가 된다.",
-  "en": "The stock currently trades at a meaningful discount to per-share net asset value (BPS: ₩9,928), reflecting the market's pricing of the substantial retreat in earnings power from the 2022 peak. The rerating catalyst appears limited until a clearer and more durable profitability recovery materializes. The annual cash dividend (DPS: ₩100) has been maintained through the low-earnings period, placing the dividend yield at a comparatively favorable level relative to sector averages at current price levels. The headline earnings per share (EPS: ₩59) reflects a wide gap versus the historical peak earnings period, compounded by high quarterly earnings volatility, warranting caution when applying single-year earnings-based valuation multiples. CB conversion would reduce per-share net assets and other unit metrics, making verification of the conversion schedule and conversion price a prerequisite for accurate per-share valuation analysis."
+  "ko": "현재 주가는 주당순자산가치를 밑도는 수준에서 거래되고 있어 순자산 대비 할인된 구간으로 볼 수 있다. 반면 순이익 규모가 2022년 흑자 정점 이후 크게 줄어든 상태에서 주가 대비 이익 배수는 과거 흑자가 안정적이던 시기보다 높아진 구간에 위치해 있다. 이는 최근 분기별로 흑자와 적자가 반복되는 실적 불안정성이 이익 기준 밸류에이션 해석을 어렵게 만드는 요인으로 작용한다. 배당의 경우 회사는 현금배당을 지급해왔으나, 그 수준이 주가 흐름에 따라 매년 달라질 수 있어 절대적인 수익률 수준을 단정하기는 어렵다. 종합하면 자산가치 측면과 이익가치 측면의 신호가 서로 다른 방향을 가리키고 있어, 투자자는 두 지표를 함께 살펴볼 필요가 있다.",
+  "en": "The current share price trades below the company's book value per share, placing it in a discount range relative to net assets. At the same time, with net income sharply reduced from its 2022 profit peak, the price-to-earnings multiple sits at a level higher than during the period when profits were more stable. This is compounded by the recent pattern of alternating quarterly profits and losses, which complicates interpretation of earnings-based valuation. On dividends, the company has paid cash dividends, though the resulting yield level shifts with the share price and cannot be characterized in absolute terms. Overall, asset-value and earnings-value signals point in somewhat different directions, suggesting investors may want to weigh both metrics together."
  },
  "bull": [
   {
    "title": {
-    "ko": "전방 수요의 구조적 회복 가능성",
-    "en": "Structural Recovery Potential in Upstream Demand"
+    "ko": "3분기 실적 회복 신호",
+    "en": "Signs of Q3 Earnings Recovery"
    },
    "body": {
-    "ko": "알츠하이머 항체 치료제·GLP-1 비만·당뇨 치료제의 글로벌 급성장은 삼성바이오로직스 등 CDMO와 바이오텍의 R&D 예산을 확대시키고 있다. 관련 연구·생산 원재료 수요 회복은 서린바이오의 핵심 고객군 구매력 증대로 이어질 수 있다. 글로벌 생명과학 시약 시장이 향후 10년간 연평균 6%대 성장이 전망되어, 구조적 수요 기반이 중장기적으로 지지된다.",
-    "en": "The global surge in Alzheimer's antibody and GLP-1-based treatments is expanding R&D budgets at CDMOs — including Samsung BioLogics — and biotech companies. A corresponding recovery in research and manufacturing material demand could directly lift purchasing volumes from Seoulin's core customer base. With the global life science reagents market projected to grow at ~6% CAGR over the next decade, the structural long-term demand foundation remains supportive."
+    "ko": "2025Q2 영업손실 이후 2025Q3에는 매출 228.7억원, 영업이익 7.8억원으로 뚜렷한 개선이 나타났다. 2026Q1에도 영업이익과 순이익이 동시에 흑자를 기록해 최근 4개 분기 누적 지배주주순이익은 약 9.2억원으로 집계됐다. 이는 코로나19 이후 실적 저점을 지나 점진적인 이익 회복 국면에 있을 가능성을 시사한다.",
+    "en": "After an operating loss in Q2 2025, Q3 2025 showed clear improvement with revenue of KRW 22.87 billion and operating profit of KRW 785 million. Q1 2026 also posted simultaneous operating and net profits, bringing cumulative net income attributable to owners over the trailing four quarters to roughly KRW 917 million. This suggests the company may be passing through a post-pandemic earnings trough toward gradual profit recovery."
    }
   },
   {
    "title": {
-    "ko": "순자산 할인 구간과 40년 고객 자산 가치",
-    "en": "Discount to Book Value and 40-Year Customer Relationship Asset"
+    "ko": "신사업 다각화 진행",
+    "en": "New Business Diversification Underway"
    },
    "body": {
-    "ko": "현재 주가는 주당 순자산(BPS 9,928원)에 비해 상당한 할인 구간에 있어, 이익 사이클이 저점을 벗어날 때 재평가 여지가 존재한다. 1984년 창업 이후 구축된 삼성바이오로직스·녹십자·국내 주요 대학·병원과의 장기 거래 관계는 신규 진입자가 단기간에 대체하기 어려운 진입장벽이다. 배당금(DPS 100원)이 수익성 저하 환경에서도 지속 유지된 점도 경영진의 주주환원 의지를 시사한다.",
-    "en": "With the stock at a notable discount to per-share net assets (BPS: ₩9,928), upside potential exists as the earnings cycle recovers from the trough. Long-standing client relationships built since 1984 — spanning Samsung BioLogics, Greencross, leading universities, and hospital research centers — constitute a durable competitive moat that is difficult for new entrants to replicate. The sustained cash dividend (DPS: ₩100) through the low-earnings period also signals management's commitment to shareholder returns."
+    "ko": "Bio-Rad 신규 브랜드 판매권 확보, POCUS 혈액 단백질체 분석 서비스, ecoTree 위생살균 장비 등 전통적 시약 유통을 넘어선 사업 다각화가 진행되고 있다. 동물병원 대상 MOU 체결과 SOL과의 디지털 진단 공동개발 협력도 신규 매출원 확보 시도로 볼 수 있다. 이러한 다각화가 성공적으로 매출에 반영될 경우 사업 구조의 안정성이 개선될 여지가 있다.",
+    "en": "The company is diversifying beyond traditional reagent distribution through securing new Bio-Rad brand distribution rights, the POCUS blood proteomics analysis service, and ecoTree hygiene and disinfection equipment. MOUs targeting veterinary clinics and joint development with SOL on digital diagnostics represent attempts to secure new revenue sources. If these diversification efforts are successfully reflected in revenue, there is room for improved stability in the business structure."
    }
   },
   {
    "title": {
-    "ko": "오믹스·디지털PCR 신사업이 여는 마진 개선 경로",
-    "en": "Omics and Digital PCR New Ventures Opening a Margin Recovery Path"
+    "ko": "글로벌 브랜드 대리점 지위",
+    "en": "Distribution Status for Global Brands"
    },
    "body": {
-    "ko": "바질바이오텍 오믹스 분석서비스 계약(2025년 11월), SOL과의 디지털PCR MOU 등 서비스·솔루션 영역으로의 다각화가 초기 진행 중이다. 서비스형 매출은 단순 제품 유통 대비 마진율이 높아 영업이익률 회복에 구조적으로 기여할 수 있다. 뷰키코리아 공급 계약을 통한 화학·제약 분야 장비 라인업 추가도 고객군 확대와 중기 매출 다각화 효과를 제공한다.",
-    "en": "Early-stage diversification into service/solution models — the Bazil Biotech omics services contract (November 2025), the SOL digital PCR MOU, and the Buki Korea supply agreement — lays groundwork for higher-margin revenue streams. Service-type revenues structurally carry higher margins than product distribution, offering a potential path to operating margin recovery over the medium term. Expanding the chemical/pharma instrument lineup also broadens the addressable customer base."
+    "ko": "BD Biosciences, CST 항체, Bio-Rad 등 글로벌 생명과학 브랜드의 국내 공식 대리점 지위를 확보하고 있어 안정적인 공급 채널을 갖추고 있다. Thermo Fisher Scientific과의 유전자 전달체 대량생산 서비스 계약도 유전자치료제 관련 원부재료 공급 확장의 기반이 될 수 있다. 이러한 글로벌 파트너십은 신규 고객 확보와 제품 포트폴리오 확장에 기여할 수 있다.",
+    "en": "The company holds official domestic distribution status for global life-science brands including BD Biosciences, CST antibodies, and Bio-Rad, providing a stable supply channel. Its agreement with Thermo Fisher Scientific for mass production services of gene delivery vehicles could also serve as a foundation for expanding supply of gene-therapy-related raw materials. These global partnerships can contribute to acquiring new customers and expanding the product portfolio."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "영업이익률 구조적 저하와 회복 불투명",
-    "en": "Structural Margin Compression and Unclear Recovery Path"
+    "ko": "다년간 마진 축소",
+    "en": "Multi-Year Margin Compression"
    },
    "body": {
-    "ko": "영업이익률이 2022년 8.4%에서 2025년 0.9%로 4년간 7.5%포인트 이상 낮아졌다. 이는 코로나19 특수 소멸뿐 아니라 시약·기기 유통의 구조적 저마진 특성과 경쟁 심화가 복합된 결과로 보인다. 2026년 1분기 영업이익 1.7억 원은 안정적 수익성 회복을 입증하기에 아직 미흡한 수준이다.",
-    "en": "Operating margin fell more than 7.5 percentage points over four years, from 8.4% in FY2022 to 0.9% in FY2025. This reflects not only the COVID-era demand fade but the structurally low-margin nature of reagent/equipment distribution and rising competition. Q1 2026 operating income of ₩175m remains too modest to signal a durable margin recovery."
+    "ko": "영업이익률은 2022년 8.4%에서 2023년 2.8%, 2024년 1.3%, 2025년 0.9%로 매년 낮아지는 흐름을 보였다. 매출 역시 2022년 1,024억원에서 2025년 771억원으로 축소돼 코로나19 특수 이후 사업 규모가 눈에 띄게 줄었다. 이러한 다년간의 마진·매출 축소는 유통업 특성상 원가 부담이나 가격 경쟁 심화를 반영할 수 있다.",
+    "en": "Operating margin declined each year, from 8.4% in 2022 to 2.8% in 2023, 1.3% in 2024, and 0.9% in 2025. Revenue also shrank from KRW 102.4 billion in 2022 to KRW 77.1 billion in 2025, a marked contraction in business scale after the pandemic-driven boom faded. This multi-year margin and revenue contraction may reflect cost pressures or intensifying price competition inherent to the distribution business."
    }
   },
   {
    "title": {
-    "ko": "전환사채 발행에 따른 재무 부담과 희석 리스크",
-    "en": "CB-Related Financial Burden and Dilution Risk"
+    "ko": "분기 실적 불안정성",
+    "en": "Quarterly Earnings Instability"
    },
    "body": {
-    "ko": "2025년 사모 전환사채 150억 원 발행으로 부채비율이 38.1%로 급등하고 이자 부담이 늘었다. 영업이익이 제한적인 상황에서 금융 비용 증가는 순이익 추가 압박 요인이다. 전환가액 이상으로 주가가 회복되면 주식 수 증가에 따른 주당 가치 희석이 발생할 수 있다.",
-    "en": "The ₩15bn private CB issuance pushed the debt ratio to 38.1% and increased interest costs. In an already thin-margin environment, rising financing costs add further pressure to net income. If the share price recovers above the conversion price, the resulting increase in shares outstanding will dilute per-share metrics."
+    "ko": "2025Q2와 2025Q4, 2026Q2에 걸쳐 영업손실 또는 순손실이 반복적으로 발생했다. 2025Q3와 2026Q1의 흑자가 지속적인 개선인지, 일시적 반등인지는 향후 분기 실적으로 확인이 필요한 상황이다. 이러한 부침은 실적 예측 가능성을 낮추는 요인이다.",
+    "en": "Operating or net losses recurred across Q2 2025, Q4 2025, and Q2 2026. Whether the profits seen in Q3 2025 and Q1 2026 represent a sustained improvement or a temporary rebound remains to be confirmed through future quarterly results. This volatility reduces the predictability of earnings."
    }
   },
   {
    "title": {
-    "ko": "수입 의존 구조의 환율·공급망 취약성",
-    "en": "FX and Supply Chain Vulnerability from Import Dependence"
+    "ko": "유통업 구조적 마진 제약",
+    "en": "Structural Margin Constraints of the Distribution Business"
    },
    "body": {
-    "ko": "매출의 상당 부분을 미국·유럽산 시약·기기 수입으로 충당하는 구조상 원/달러 환율 상승은 매입 원가 상승으로 직결된다. 이미 1% 미만인 영업이익률 하에서 추가적 환율 상승은 영업손실 전환 가능성을 높인다. 글로벌 원제조사의 국내 직판 전략 전환이나 공급 계약 변경 시 매출에 직접적 영향을 받는 구조적 취약점도 존재한다.",
-    "en": "With a significant portion of procurement sourced from U.S. and European manufacturers, KRW depreciation directly inflates cost of goods sold. With operating margins already below 1%, further FX headwinds meaningfully raise the risk of an operating loss. Additionally, any shift in principal manufacturers' domestic direct-sales strategy or supply contract renegotiations could materially impact revenue."
+    "ko": "서린바이오의 매출 대부분은 해외 원제조사 제품의 국내 유통에서 발생해, 자체 제조 마진보다는 대리점 마진에 의존하는 구조다. 원제조사와의 계약 조건 변경이나 경쟁 유통업체 진입은 마진에 직접적인 영향을 줄 수 있다. 시약 비중이 62%로 매출의 절대다수를 차지해 사업 포트폴리오의 다각화가 아직 초기 단계에 있다.",
+    "en": "Most of SeouLin's revenue derives from domestic distribution of overseas-manufactured products, making the business dependent on agency margins rather than manufacturing margins of its own. Changes in contract terms with principal manufacturers or entry of competing distributors could directly affect margins. With reagents accounting for 62% of revenue, portfolio diversification remains at an early stage."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "전환사채 희석 및 자본구조 변화",
-    "en": "Convertible Bond Dilution and Capital Structure Change"
+    "ko": "환율 및 원가",
+    "en": "Foreign Exchange and Cost Risk"
    },
    "body": {
-    "ko": "2025년 발행된 사모 전환사채 150억 원은 전환권 행사 시 기존 주주의 지분 가치를 희석시킨다. 전환가액과 전환 청구 기간은 DART 공시를 통해 확인이 필요하며, CB 이자 비용은 이미 낮은 순이익을 추가로 압박한다. CB 만기 구조에 따라 단기적 재무 부담이 가중될 가능성도 있다.",
-    "en": "The ₩15bn private CB, upon conversion, will increase shares outstanding and dilute existing shareholders' equity value. Conversion price and request window must be verified through DART filings. CB interest costs further pressure already thin net income, and depending on the maturity structure, near-term financial burden could intensify."
+    "ko": "수입 시약·기기 비중이 높아 원/달러 환율 변동이 매출원가와 마진에 직접적인 영향을 줄 수 있다. 해외 원제조사와의 공급가격 협상력에 따라 원가 구조가 좌우된다. 환율 급등 시 수익성 악화 가능성이 있다.",
+    "en": "With a high proportion of imported reagents and equipment, KRW/USD exchange rate fluctuations can directly affect cost of goods sold and margins. The cost structure is influenced by negotiating power with overseas principal manufacturers on supply prices. A sharp rise in the exchange rate could worsen profitability."
    }
   },
   {
    "cat": {
-    "ko": "환율 상승과 수입 원가 압박",
-    "en": "KRW Weakness and Import Cost Pressure"
+    "ko": "R&D 투자 사이클 의존",
+    "en": "Dependence on R&D Investment Cycles"
    },
    "body": {
-    "ko": "시약·기기의 해외 수입 비중이 높은 사업 특성상 원/달러 환율 급등은 매출원가율을 직접 끌어올린다. 1% 미만의 영업이익률 구조에서 환율 불확실성은 분기별 손익 방향을 결정하는 민감도가 높은 변수다. 미국 통화정책, 글로벌 달러 강세 지속 여부가 단기 실적에 직접 영향을 미친다.",
-    "en": "The high import content of reagents and instruments means that KRW depreciation directly raises the cost of goods sold. With operating margins below 1%, FX volatility is a high-sensitivity variable that can swing quarterly earnings between profit and loss. U.S. monetary policy and global dollar dynamics thus have direct near-term earnings implications."
+    "ko": "매출이 대학·연구기관·바이오텍의 R&D 예산 집행에 연동돼 정부 R&D 예산이나 민간 투자 축소 시 수요가 줄어들 수 있다. 코로나19 관련 제품 수요 감소가 최근 실적 부진의 주된 배경으로 지목된 바 있다. 특정 질환 치료제 개발 트렌드 변화에 따라 수요 품목이 이동할 수 있다.",
+    "en": "Revenue is tied to R&D budget execution by universities, research institutes, and biotech firms, so a reduction in government R&D budgets or private investment could reduce demand. A decline in demand for COVID-19-related products has been cited as a major factor behind recent earnings weakness. Demand items may shift with changing trends in disease treatment development."
    }
   },
   {
    "cat": {
-    "ko": "고객사 R&D 예산 삭감 및 경쟁 심화",
-    "en": "Customer R&D Budget Cuts and Competitive Intensification"
+    "ko": "자본조달 및 지분 변동",
+    "en": "Capital Raising and Share Structure Risk"
    },
    "body": {
-    "ko": "국내 제약·바이오 기업의 R&D 예산 삭감이나 경기 침체에 따른 대학·연구소의 정부 연구비 삭감은 시약·기기 구매 수요를 위축시킨다. 글로벌 원제조사의 직판 확대나 온라인 유통 채널 성장은 중간 유통 업체의 마진 압박 요인이다. 신규 경쟁자의 시장 진입과 기존 경쟁사의 공격적 가격 전략도 영업이익률 회복을 어렵게 할 수 있다.",
-    "en": "Reductions in R&D budgets at domestic pharma/biotech companies or cuts to government research funding at universities and institutes during an economic downturn would dampen reagent and instrument demand. Expansion of direct-to-customer sales by global manufacturers or growth of online procurement platforms could structurally erode the intermediary's margin. New entrants and aggressive pricing from existing competitors also present headwinds to margin recovery."
+    "ko": "회사는 33.35억원 규모의 자기주식을 교환 대상으로 하는 사모 교환사채 발행을 공시했다. 교환사채는 향후 교환권 행사 시 유통주식 수 변화나 자기주식 매각으로 이어질 수 있어 지분 구조 변동 요인으로 지켜볼 필요가 있다. 추가적인 자본조달이 필요할 경우 기존 주주에게 영향을 줄 수 있다.",
+    "en": "The company disclosed a decision to issue privately placed exchangeable bonds worth KRW 3.335 billion backed by treasury shares. Exercise of the exchange right in the future could lead to changes in outstanding share count or sale of treasury shares, warranting attention as a factor affecting the ownership structure. Additional capital raising, if needed, could affect existing shareholders."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순 (2026년 2분기 실적 발표)",
-    "en": "Mid-August 2026 (Q2 2026 Earnings Release)"
+    "ko": "2026년 9월~10월 중",
+    "en": "September–October 2026"
    },
    "what": {
-    "ko": "2025년 2분기는 영업손실(-3.3억 원)이 발생한 연중 최약 분기였던 만큼, 2026년 2분기의 흑자 전환 여부와 매출 회복 강도가 연간 이익 방향성을 가늠하는 핵심 리트머스 시험이 된다.",
-    "en": "Q2 2025 was the weakest quarter of the year (operating loss of ₩332m), making Q2 2026 results a critical litmus test: whether year-on-year profit improvement is becoming durable and how strongly revenues are recovering versus the low base will set the tone for full-year expectations."
+    "ko": "사모 교환사채 발행 관련 후속 공시(교환가격, 교환기간 등) 확인이 필요하다.",
+    "en": "Follow-up disclosures on the privately placed exchangeable bonds (exchange price, exchange period, etc.) should be checked."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (전환사채 전환 청구 기간 모니터링)",
-    "en": "H2 2026 (CB Conversion Window Monitoring)"
+    "ko": "2026년 11월 중",
+    "en": "November 2026"
    },
    "what": {
-    "ko": "DART 공시에서 CB 전환 청구 기간·전환가액·미전환 잔액을 정기적으로 확인해 잠재 희석 규모와 자본구조 변화를 사전 점검해야 한다.",
-    "en": "Regular review of DART disclosures for CB conversion request windows, conversion price, and remaining unconverted balance is necessary to assess the potential magnitude of share dilution and anticipate changes to the company's capital structure."
+    "ko": "2026년 3분기 실적 공시를 통해 2025Q3~2026Q1의 이익 회복 흐름이 지속되는지 확인이 필요하다.",
+    "en": "The Q3 2026 earnings release should be checked to see whether the profit recovery trend seen from Q3 2025 through Q1 2026 continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 연중 (오믹스·디지털PCR 신사업 매출 기여 가시화)",
-    "en": "Throughout 2026 (Omics/Digital PCR Revenue Contribution Visibility)"
+    "ko": "2026년 4분기 중",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "바질바이오텍 오믹스 분석서비스 및 SOL과의 디지털PCR 사업이 분기 실적에 실질적 매출로 나타나는지, 서비스 마진이 전체 영업이익률 개선에 기여하는지를 분기 보고서와 공시를 통해 검증할 필요가 있다.",
-    "en": "It is worth tracking whether the Bazil Biotech omics services contract and SOL digital PCR partnership generate measurable revenue contributions in quarterly reports, and whether their service margins are beginning to lift the overall operating margin — validating the diversification strategy's earnings impact."
+    "ko": "Bio-Rad 신규 브랜드, POCUS 오믹스 서비스 등 신사업의 매출 반영 여부와 규모를 확인할 필요가 있다.",
+    "en": "The extent to which new businesses such as the Bio-Rad brand and POCUS omics service begin contributing to revenue should be checked."
    }
   },
   {
    "when": {
-    "ko": "2026년 3분기 (계절성 반등 강도 확인)",
-    "en": "Q3 2026 (Strength of Seasonal Rebound)"
+    "ko": "2027년 3월 중",
+    "en": "March 2027"
    },
    "what": {
-    "ko": "2025년 3분기(매출 229억·영업이익 7.9억)가 연간 이익의 대부분을 차지했던 만큼, 2026년 3분기의 매출 및 영업이익이 전년 동기와 비교해 개선·유지·둔화 중 어느 방향인지 확인하는 것이 연간 수익성 복원 여부 판단에 중요하다.",
-    "en": "Since Q3 2025 (revenue ₩22.9bn, OP ₩785m) accounted for the bulk of annual operating income, comparing Q3 2026 results against the year-ago period — whether improving, stable, or weakening — will be a key indicator of whether a meaningful annual profitability recovery is underway."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 초 (2026년 연간 배당 결정 및 연간 실적 발표)",
-    "en": "Early 2027 (FY2026 Annual Dividend Decision and Full-Year Results)"
-   },
-   "what": {
-    "ko": "DPS 100원의 배당 지속 여부는 경영진의 주주환원 의지와 실제 배당 가능 이익 규모를 동시에 시사하며, 연간 영업이익률이 의미 있는 회복 단계에 진입했는지를 확인하는 중요한 지표다.",
-    "en": "Whether management sustains the ₩100 per-share cash dividend for FY2026 will signal both shareholder return commitment and the company's underlying distributable earnings capacity — and whether annual operating margins have entered a meaningfully higher recovery phase."
+    "ko": "2026 사업연도 연간 사업보고서 및 감사보고서 공시를 통해 연간 매출·이익 최종 확정치를 확인할 필요가 있다.",
+    "en": "The FY2026 annual business report and audit report should be checked to confirm final annual revenue and profit figures."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "서린바이오사이언스는 1984년 창업 이후 40년 이상 국내 바이오·제약 생태계의 시약·기기 유통 인프라를 구축해 온 기업으로, 삼성바이오로직스·LG화학·녹십자 등 블루칩 고객 기반이 핵심 자산이다. 그러나 코로나19 특수 소멸에 따른 수요 정상화로 2022년 대비 매출이 약 25%, 영업이익이 90% 이상 줄어 영업이익률이 1% 미만으로 낮아진 상태가 지속되고 있다. 2026년 1분기에도 미약한 흑자 기조를 유지하는 수준이며, 구조적 수익성 회복이 가시화되지 않은 점이 현재의 본질적 과제다. 알츠하이머 항체 치료제·GLP-1 치료제 수요 급증이 중장기 전방 수요를 지지하고, 오믹스·디지털PCR 등 신사업 다각화가 마진 개선 경로를 열 수 있다는 점은 중기 전망에서 주목할 긍정 요소다. 반면 150억 원 규모 사모 CB 발행에 따른 재무 레버리지 증가와 잠재 희석 리스크, 수입 의존 구조의 환율 취약성은 주요 리스크로 상시 점검이 필요하다. 주가가 주당 순자산 대비 상당한 할인 구간에 위치하고 배당(DPS 100원)이 유지되고 있다는 점은 일부 하방 지지 요소이나, 이익 기반 회복이 명확해지기 전까지 재평가 촉매는 제한적일 수 있다. 향후 분기 영업이익률의 방향성, CB 전환 일정, 신사업 매출 가시화가 주요 점검 항목이다.",
-   "en": "Seoulin Bioscience has built domestic bio-distribution infrastructure since 1984, with a blue-chip customer base — including Samsung BioLogics, LG Chem, and Greencross — as its core asset. However, post-COVID demand normalization has compressed revenue by ~25% and operating income by over 90% from the 2022 peak, leaving operating margins below 1%. Q1 2026 maintains only a thin profitable trend, and the absence of a clear structural profitability recovery remains the company's most pressing fundamental challenge. On the positive side, structural demand tailwinds from the global surge in Alzheimer's antibody and GLP-1 therapies support medium-to-long-term upstream demand, and early-stage diversification into omics services and digital PCR offers a potential margin recovery pathway. Conversely, the increased financial leverage and dilution risk from the ₩15bn private CB, along with FX vulnerability inherent in the import-dependent business model, are persistent risks requiring ongoing monitoring. The stock's meaningful discount to per-share net assets and the sustained cash dividend (DPS: ₩100) provide a partial downside floor, but rerating catalysts are likely to remain limited until earnings recovery becomes more clearly established. Quarterly operating margin direction, CB conversion timing, and new business revenue visibility are the principal items to track going forward."
+   "ko": "서린바이오는 코로나19 특수 이후 매출과 영업이익률이 다년간 축소돼왔으나, 2025Q3와 2026Q1에 흑자를 기록하며 회복 조짐을 보였고 2025Q4와 2026Q2에는 다시 손실이 발생하는 등 분기별 부침이 이어지고 있다. 최근 4개 분기 누적 지배주주순이익은 약 9.2억원으로 완만한 흑자 기조를 유지하고 있으나, 2022년의 이익 규모에는 크게 못 미치는 수준이다. 회사는 전통적인 시약·기기 유통업에서 벗어나 Bio-Rad 신규 브랜드, POCUS 오믹스 서비스, ecoTree 위생살균 장비 등으로 사업 다각화를 추진하고 있으며, 이는 향후 매출 구조 변화의 잠재 요인이다. 다만 이러한 신사업이 실적에 유의미하게 반영되는 시점은 아직 공시상 명확히 확인되지 않았다. 자산가치 측면에서는 주가가 주당순자산가치를 밑도는 구간에 있는 반면, 이익가치 측면에서는 최근 순이익 축소로 인해 이익 배수가 과거 안정적 흑자기보다 높아진 상태다. 사모 교환사채 발행 등 자본구조 관련 이벤트와 다가오는 분기 실적 발표가 향후 방향성을 가늠할 주요 확인 포인트다.",
+   "en": "SeouLin Bioscience has seen multi-year contraction in revenue and operating margin following the fading of pandemic-era demand, though signs of recovery emerged with profits in Q3 2025 and Q1 2026, only for losses to recur in Q4 2025 and Q2 2026, reflecting ongoing quarterly volatility. Cumulative net income attributable to owners over the trailing four quarters stood at roughly KRW 917 million, maintaining a modest profit trend but still well below 2022 profit levels. The company is pursuing diversification beyond traditional reagent and equipment distribution through the new Bio-Rad brand, the POCUS omics service, and ecoTree hygiene and disinfection equipment, which represent potential factors for future revenue structure change, though the timing of their meaningful contribution to earnings has not yet been clearly confirmed in disclosures. From an asset-value perspective, the share price sits below book value per share, while from an earnings-value perspective, the earnings multiple has risen above levels seen during more stable profit periods due to the recent decline in net income. Capital-structure events such as the privately placed exchangeable bond issuance and upcoming quarterly earnings releases stand as key points to monitor for gauging future direction."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A038070",
-  "https://www.seoulin.co.kr/ir/post/?mod=document&uid=543",
-  "https://www.investing.com/equities/seoulin-bioscience-co-ltd",
-  "https://securities.miraeasset.com/bbs/download/2103639.pdf?attachmentId=2103639",
-  "https://m.thinkpool.com/item/038070",
-  "https://thevc.kr/seorinbioscience",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/seoulin",
-  "http://www.thinkpool.com/itemanal/i/index.jsp?code=038070",
-  "https://www.valueline.co.kr/finance/balancesheet/038070",
-  "https://www.seoulin.co.kr/products/mainitems/",
-  "https://thevc.kr/seorinbioscience/products",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/cDBqR0hVUXlwTVZTZlFNMUdVZktVQT09/company_nm/(%EC%A3%BC)%EC%84%9C%EB%A6%B0%EB%B0%94%EC%9D%B4%EC%98%A4%EC%82%AC%EC%9D%B4%EC%96%B8%EC%8A%A4",
-  "https://www.ibric.org/biomarket/new_protech/compview.php?iduserid=290357&BackLink=L2Jpb21hcmtldC9uZXdfcHJvdGVjaC9jb21wbGlzdC5waHA%2Fb3J0eT3sgqw%3D",
-  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=038070&cn=",
-  "https://www.bioplusinterphex.co.kr/en-us/visitor/exhibitor_directory/Exhibitor_detail.html",
+  "https://judal.co.kr/?shareToken=Gu0Tz3fp7kpxY9dC&view=stockAI",
   "https://www.seoulin.co.kr/ir/stockinfo/",
-  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cmp_cd=294870"
+  "https://www.investing.com/equities/seoulin-bioscience-co-ltd",
+  "https://alphasquare.co.kr/home/stock-issue?code=038070&type=news",
+  "https://m.thinkpool.com/item/038070",
+  "https://alphasquare.co.kr/home/stock-summary?code=092190",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/seoulin",
+  "https://moneypie.net/wiki/v/%EC%84%9C%EB%A6%B0%EB%B0%94%EC%9D%B4%EC%98%A4",
+  "https://www.seoulin.co.kr/ir/stock/",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A038070",
+  "https://securities.miraeasset.com/bbs/download/2103639.pdf?attachmentId=2103639",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20240320002230",
+  "https://thevc.kr/seorinbioscience",
+  "http://www.thinkpool.com/itemanal/i/index.jsp?code=038070&Gcode=001_008_001",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260318001208&docno=&viewerhost=",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/cDBqR0hVUXlwTVZTZlFNMUdVZktVQT09/company_nm/(%EC%A3%BC)%EC%84%9C%EB%A6%B0%EB%B0%94%EC%9D%B4%EC%98%A4%EC%82%AC%EC%9D%B4%EC%96%B8%EC%8A%A4",
+  "https://seoulin.co.kr/ir/media/",
+  "https://www.newsprime.co.kr/news/article/?no=655913"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "038070",
  "name": "서린바이오",
  "name_en": "SeouLinBioscienceCO.,LTD.",
@@ -232,9 +223,9 @@
   "바이오·제약"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:37",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:02",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -337,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 4230,
-   "mcap": 0.0393,
+   "price": 4265,
+   "mcap": 0.0397,
    "shares": 9300676,
    "total_shares": 9300676,
    "wavg_shares": 8866187,
-   "per": 40.286,
+   "per": 40.619,
    "eps": 105,
-   "pbr": 0.4476,
+   "pbr": 0.4513,
    "bps": 9451,
    "roe_ttm": 1.1,
    "ttm_window": "2025Q3~2026Q2",
@@ -355,7 +346,7 @@
    "bps_krx": 9559.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 100.0,
-   "div": 2.36
+   "div": 2.34
   }
  }
 }

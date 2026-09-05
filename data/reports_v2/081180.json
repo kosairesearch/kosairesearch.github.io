@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "수주 급증·고정비 충돌, 2026 하반기 반전 여부 주목",
-  "en": "Surging Backlog Meets Rising Fixed Costs — H2 2026 Inflection in Focus"
+  "ko": "전자빔 기술 확장 속 커지는 손실 부담",
+  "en": "E-Beam Tech Expands, Losses Widen"
  },
  "lead": {
-  "ko": "쎄크는 국내 유일 전자빔 원천기술로 HBM·배터리·방산 시장을 동시에 공략하고 있으나, 2025년 연간 영업적자와 2026년 1분기 손실 재확대가 이어지고 있으며, 2026년 5~6월 한화에어로스페이스와의 LINAC 수주 확정(합계 약 135억원)과 북미 반도체 수주 협의 진전이 하반기 실적 반전의 핵심 변수다.",
-  "en": "SAEC deploys Korea's only proprietary electron-beam platform across HBM, battery, and defense markets simultaneously, yet back-to-back annual operating losses and a widened Q1 2026 shortfall highlight persistent profitability pressure; the conversion pace of its recently confirmed KRW ~13.5 bn LINAC backlog from Hanwha Aerospace, combined with nascent North American semiconductor negotiations, will determine whether earnings inflect in the second half."
+  "ko": "쎄크는 HBM·유리기판·방산 등으로 전자빔 검사장비 응용 영역을 넓히고 있지만, 2026년 들어 두 개 분기 연속 매출이 줄고 영업손실은 오히려 확대되는 모습을 보이고 있다.",
+  "en": "SEC is expanding its e-beam inspection technology into HBM, glass substrates and defense applications, yet revenue has declined for two straight quarters in 2026 while operating losses have widened rather than narrowed."
  },
  "keypoints": [
   {
-   "ko": "2025년 분기 실적은 1분기(-22.7억원 영업손실)에서 4분기(+10.3억원)까지 뚜렷하게 개선됐으나, 연간 기준 영업손실 30.6억원·당기순손실 37.9억원을 기록했고 2026년 1분기에 영업손실이 –37.5억원으로 재확대됐다.",
-   "en": "2025 quarterly operating profit improved sequentially from –KRW 2.3 bn in Q1 to +KRW 1.0 bn in Q4, yet the full year ended with a KRW 3.1 bn operating loss, and Q1 2026 reversed sharply to –KRW 3.8 bn — the largest single-quarter loss in recent history."
+   "ko": "2025년 연결 매출은 592.06억원으로 전년(539.31억원) 대비 늘었지만 영업이익은 -30.64억원으로 적자 전환했다.",
+   "en": "2025 consolidated revenue rose to KRW 59.2 billion from KRW 53.9 billion a year earlier, but operating profit swung to a loss of KRW 3.06 billion."
   },
   {
-   "ko": "2026년 5월 93억원, 6월 42억원 등 한화에어로스페이스와의 LINAC 방산 검사장비 계약 2건(합계 약 135억원)이 연달아 확정됐고, 1분기 기준 방산 LINAC 수주잔고(133억원)를 합산하면 약 268억원 규모로 추정된다.",
-   "en": "Back-to-back LINAC defense supply contracts with Hanwha Aerospace — KRW 9.3 bn in May and KRW 4.2 bn in June 2026 — totaling approximately KRW 13.5 bn, added to the Q1 2026 LINAC backlog base of ~KRW 13.3 bn, brings estimated LINAC backlog to roughly KRW 26.8 bn."
+   "ko": "2026년 1분기(-37.54억원)와 2분기(-39.64억원) 영업손실이 연속 확대됐고, 같은 기간 매출은 97.35억원에서 75.55억원으로 줄었다.",
+   "en": "Operating losses widened in both Q1 2026 (KRW -3.75 billion) and Q2 2026 (KRW -3.96 billion), while revenue fell from KRW 9.7 billion to KRW 7.6 billion over the same period."
   },
   {
-   "ko": "글로벌 반도체사 N사에 대한 X-ray 성능 평가를 통과한 이후 HBM 검사장비 NF120 추가 수주 협의가 진행 중이며, GPU 전수 검사장비 수주 가능성도 거론되고 있다.",
-   "en": "Following a successful X-ray performance evaluation at global semiconductor firm 'Company N,' ongoing negotiations for additional HBM inspection (NF120) orders are underway, with GPU 100%-inspection supply also being discussed as a potential contract."
+   "ko": "반도체(HBM), 배터리, 방산(LINAC), 유리기판(TGV) 등으로 사업 영역을 넓히며 국내 유일의 X-ray Tube 자체 생산 기술을 보유하고 있다.",
+   "en": "The company is expanding into semiconductor HBM, battery, defense (LINAC) and glass-substrate (TGV) applications while holding the only domestic in-house X-ray tube manufacturing technology."
   },
   {
-   "ko": "2025년 부채비율 137.5%, 영업현금흐름 –53.1억원으로 재무 레버리지가 높으며, IPO 공모자금이 공장 신설·R&D·차입금 상환에 분산 투입되고 있어 수주의 실질 매출 전환 속도가 자금 여건의 완충 여부를 결정한다.",
-   "en": "With a 2025 debt-to-equity ratio of 137.5% and operating cash flow of –KRW 5.3 bn, the balance sheet remains stretched; IPO proceeds are being deployed simultaneously into new factory capacity, R&D, and debt repayment, making the backlog-to-revenue conversion pace a critical liquidity buffer."
+   "ko": "한화에어로스페이스, 제이앤티씨(JNTC) 등과 신규 계약을 체결했으나, 매출 인식 방식 변경 이후 분기별 실적 변동성이 커졌다.",
+   "en": "New contracts were signed with Hanwha Aerospace and JNTC, but quarterly earnings volatility has increased since a change in revenue recognition method."
   },
   {
-   "ko": "플래시 암치료기, TGV e빔 가공기(삼성 유리기판 인터포저 연계), 전자빔 식품용기 살균기(샘표 참여 국책과제) 등 신사업이 상용화·국책과제 단계에 진입해 전자빔 플랫폼의 중장기 다각화 가능성을 열고 있다.",
-   "en": "New electron-beam applications — a flash cancer therapy device, a TGV e-beam processor linked to Samsung's glass-substrate interposer program, and a food-container sterilizer under a government R&D grant with Sempio Foods — have entered commercialization or advanced R&D stages, broadening long-term platform diversification."
+   "ko": "무배당 정책을 유지하고 있으며, 상장 당시 제시한 실적 목표는 이후 여러 차례 하향 조정된 전례가 있다.",
+   "en": "The company maintains a no-dividend policy, and its original IPO-stage earnings targets have been revised downward multiple times since listing."
   }
  ],
  "business": {
-  "ko": "쎄크는 2000년에 설립된 전자빔(e-beam) 원천기술 기반 검사·분석·가공장비 전문기업으로, 전자총(E-gun) 설계, 전자빔 제어, 진공·고전압 시스템, AI 영상 분석 알고리즘까지 핵심 부품을 수직 내재화하고 있다. 주요 제품은 ① 반도체·배터리용 X-ray 시스템, ② 방위산업용 선형가속기(LINAC) 시스템, ③ 인라인 SEM(주사전자현미경), ④ 컨테이너 검색 시스템 등 신규 사업으로 구성된다. 반도체 부문에서는 HBM의 TSV·Micro-bump 접합 불량 및 SMT 공정 PCB·BGA 검사가 주력이며, HBM 검사 전용 NF120 모델이 핵심 제품이다. 배터리 부문에서는 2019년 LG에너지솔루션을 첫 고객사로 확보한 뒤 모든 폼팩터에 검사장비를 공급하고 있으며, 전기차 시장 확대와 함께 46파이 배터리 전용 고속 인라인 3D CT 검사기를 세계 최초로 개발·공급하고 있다. 방위산업 부문에서는 LINAC 기반 고에너지 X-ray 비파괴 검사장비를 국내 방산 대기업 및 군부대에 공급하고 있으며, 방산 매출 비중이 2021년 약 2%(7억원)에서 2025년 3분기 누적 기준 약 24%(86억원)까지 빠르게 확대됐다. 검사 소프트웨어에 AI 딥러닝 기술을 적용해 검사 정확도 99.9%, 과검률 0.1% 미만을 구현하고 있으며, 전 세계 10여개국에 40대 이상 장비를 납품한 글로벌 레퍼런스를 보유하고 있다. LINAC 기반 고에너지 방산 비파괴 검사 분야는 글로벌 공급사가 극소수이며, 미국산 장비의 전략물자 지정 및 중국산 장비의 신뢰성 이슈가 쎄크의 시장 진입 기회를 구조적으로 넓히고 있다.",
-  "en": "Founded in 2000, SAEC is an electron-beam inspection, analysis, and processing equipment company that fully internalizes its core technology — from electron-gun design, beam control, and vacuum/high-voltage systems to AI image-analysis algorithms — in a vertically integrated architecture. Its four main product lines are: (i) X-ray systems for semiconductors and batteries, (ii) LINAC (linear accelerator) systems for defense, (iii) inline SEM (scanning electron microscopy), and (iv) container inspection systems under development. In semiconductors, the flagship NF120 model targets HBM TSV/Micro-bump defect inspection, complemented by SMT/PCB/BGA inspection for electronics manufacturing. In batteries, SAEC has supplied equipment for all cell form-factors since securing LG Energy Solution in 2019, and it developed the world's first high-speed inline 3D CT inspector for 46φ cylindrical cells. In defense, LINAC-based high-energy NDT systems are delivered to major Korean defense primes and military units; defense revenue has grown from ~2% of total sales (~KRW 0.7 bn) in 2021 to ~24% on a Q1–Q3 2025 cumulative basis (~KRW 8.6 bn). AI deep-learning inspection software achieves a claimed 99.9% accuracy with a false-reject rate below 0.1%, backed by more than 40 shipments across over 10 countries. The LINAC high-energy defense NDT niche has very few global suppliers, with U.S. export-control designations on Western rivals and reliability concerns about Chinese alternatives creating a structural opening for SAEC."
+  "ko": "쎄크는 2000년 설립돼 산업용 전자빔 기술을 기반으로 X-ray Tube와 가속관 등 핵심 부품을 자체 개발·생산하는 기술 중심 기업으로, 2025년 4월 28일 기술특례 트랙으로 코스닥에 상장했다. 당사는 산업용 X-ray System 내 핵심 부품인 X-ray Tube를 2006년 국내 최초로 개발·상용화했으며, 현재까지 국내 X-ray System 업계 중 유일하게 이를 자체 생산·판매할 수 있다. 이 원천기술을 바탕으로 반도체 및 배터리 산업용 X-ray System, 방위 산업용 LINAC(선형가속기) System, 연구·분석용 Tabletop SEM 등 세 가지 축으로 제품을 구분해 판매하고 있다. 대신증권이 2026년 4월 21일 보고서에서 인용한 직전 연도 기준 매출 비중은 반도체 36%, 배터리 24%, 방산 23%, 기타 17%로, 반도체 중심에서 산업 전반으로 포트폴리오를 확장하는 모습이 확인된다. 주요 고객사로는 삼성전자, SK하이닉스, 미국 앰코 등 글로벌 반도체 후공정 업체와 배터리 제조사가 있으며, 최근에는 방산 고객군까지 넓어지고 있다. 반도체용 X-ray System은 HBM 반도체의 TSV 및 마이크로범프 접합 불량 검사, SMT 공정의 PCB·BGA 결함 검사를 수행한다. 배터리·방산 분야에서는 검사장비 경쟁사로 이노메트리, SFA, 테크밸리 등이 있으며, 유리기판(TGV) 검사 분야에서는 제이앤티씨(JNTC)에 국내 최초로 자동검사장비를 공급하며 초기 시장 선점을 시도하고 있다. 방위산업 분야에서는 선형가속기 기반 비파괴검사 시스템을 통해 군 부대 및 한화에어로스페이스 등에 공급하고 있으며, 2021년부터 2024년까지 해당 사업의 연평균 성장률이 136%에 달했다는 점이 회사 측에서 언급됐다. 최근에는 전자빔 응용 범위를 유리기판 가공(TGV 드릴링), 의료용 방사선치료기 등으로 넓히며 신사업 진출을 준비하고 있다.",
+  "en": "Founded in 2000, SEC is a technology-focused company that develops and manufactures core components such as X-ray tubes and accelerator tubes based on industrial e-beam technology, and it listed on KOSDAQ via the technology special listing track on April 28, 2025. The company achieved Korea's first domestic development and commercialization of the X-ray tube, a core component of industrial X-ray systems, in 2006, and remains the only domestic X-ray system company capable of in-house production and sale of this component. Built on this core technology, the company sells products across three main lines: X-ray systems for the semiconductor and battery industries, LINAC (linear accelerator) systems for the defense industry, and tabletop SEM units for research and analysis. According to an April 21, 2026 report by Daishin Securities, the prior year's revenue mix was roughly 36% semiconductor, 24% battery, 23% defense and 17% other, showing a shift from a semiconductor-centric base toward a broader industrial portfolio. Major customers include Samsung Electronics, SK Hynix and Amkor of the United States among global semiconductor back-end players, along with battery manufacturers, with the defense customer base also expanding recently. Its semiconductor X-ray systems inspect TSV and micro-bump bonding defects in HBM chips and PCB/BGA defects in SMT processes. Competitors in the battery and defense inspection space include Innometry, SFA and Techvalley, while in glass-substrate (TGV) inspection SEC has supplied Korea's first automated inspection equipment to JNTC in an attempt to secure early leadership in a nascent market. In defense, LINAC-based non-destructive inspection systems have been supplied to military units and Hanwha Aerospace, with the company citing a 136% average annual growth rate for this business between 2021 and 2024. More recently, the company has been preparing to expand its e-beam applications into glass-substrate processing (TGV drilling) and medical radiation therapy equipment."
  },
  "earnings": {
-  "ko": "2025년 연결 기준 매출액은 약 592억원으로 회사의 반기보고서 가이던스(653억원)를 하회했으며, 영업손실 30.6억원(영업이익률 –5.2%), 지배주주 귀속 당기순손실 37.9억원, 기본 EPS –451원을 기록했다. 분기별 추이를 보면 1분기(매출 75.8억원, OP –22.7억원) → 2분기(131.8억원, –19.2억원) → 3분기(157.2억원, +0.95억원, 분기 최초 흑자) → 4분기(227.3억원, +10.3억원)로 매출과 수익성이 동반 개선됐다. 그러나 4분기에만 연간 매출의 약 38%가 집중되는 극단적인 하반기 쏠림 구조가 확인되며, 이는 장비 납품·설치 일정에 따른 매출 인식 시점 편중을 반영한다. 2025년 영업현금흐름은 –53.1억원으로 전체 연간 현금이 소비됐으며, 부채비율 137.5%, 지배주주 자기자본 353.7억원으로 재무 건전성 개선이 중요 과제다. 2026년 1분기는 매출이 97.3억원으로 전년 동기(75.8억원) 대비 약 28.5% 성장했음에도 영업손실이 –37.5억원으로 급격히 심화됐으며, 이는 IPO 후 공장 신설·R&D 투자에 따른 고정비 증가가 매출 증가 속도를 상회했음을 시사한다. 지배주주 귀속 분기 순손실도 –35.5억원에 달해 고정비 레버리지가 개선되지 않은 상태에서 저계절 분기의 손익 변동폭이 극대화되고 있음을 보여준다.",
-  "en": "On a consolidated 2025 annual basis, revenue came in at approximately KRW 59.2 bn, missing the company's own mid-year guidance of KRW 65.3 bn, with an operating loss of KRW 3.1 bn (margin –5.2%), a controlling-interest net loss of KRW 3.8 bn, and a basic EPS of –KRW 451. The quarterly trajectory showed clear sequential improvement: Q1 (KRW 7.6 bn revenue, –KRW 2.3 bn OP) → Q2 (KRW 13.2 bn, –KRW 1.9 bn) → Q3 (KRW 15.7 bn, +KRW 0.095 bn — the first quarterly operating profit) → Q4 (KRW 22.7 bn, +KRW 1.0 bn). However, roughly 38% of annual revenue concentrated in Q4 reveals extreme back-loading tied to equipment delivery and acceptance schedules. Operating cash flow for 2025 was –KRW 5.3 bn (sustained cash burn), with the debt-to-equity ratio at 137.5% and controlling-interest equity at KRW 35.4 bn, making financial health improvement a material priority. In Q1 2026, revenue rose ~28.5% year-on-year to KRW 9.7 bn, yet the operating loss widened sharply to –KRW 3.8 bn — the largest of any recent single quarter — indicating that post-IPO fixed-cost inflation (factory construction, R&D ramp) outpaced the revenue increase. The controlling-interest net loss in Q1 2026 was –KRW 3.5 bn, illustrating how fixed-cost leverage amplifies losses in seasonally weak quarters before backlog converts to revenue."
+  "ko": "2025년 연결 매출은 592.06억원으로 전년 539.31억원 대비 늘었으나, 영업이익은 -30.64억원으로 전년 13.36억원 흑자에서 적자로 전환했고 지배주주 순이익도 -37.85억원으로 전년 20.67억원 흑자에서 순손실로 돌아섰다. 영업이익률은 2024년 2.5%에서 2025년 -5.2%로 7.7%포인트 하락했다. 분기별로 보면 2025년 2분기 매출 131.79억원, 영업손실 -19.21억원을 기록한 뒤, 3분기에는 매출이 157.20억원으로 늘고 영업이익이 0.95억원으로 근소하게 흑자 전환하며 지배주주순이익도 3.75억원으로 개선됐다. 그러나 2026년으로 넘어오며 흐름이 다시 꺾였는데, 1분기 매출은 97.35억원으로 3분기 대비 크게 줄었고 영업손실은 -37.54억원으로 확대됐으며, 2분기에는 매출이 75.55억원으로 더 줄어든 반면 영업손실은 -39.64억원으로 오히려 커졌다. 즉 2025년 3분기 정점 이후 두 개 분기 연속으로 매출이 감소하는 동시에 손실 폭은 오히려 확대되는, 통상적인 규모의 경제 논리와는 다른 패턴이 나타나고 있다. 이는 매출 규모 축소에도 고정비 부담이 그대로 유지되거나 늘었을 가능성을 시사한다. 언론 보도에 따르면 회사는 상장 과정에서 일부 제품군의 매출 인식 기준을 진행률 방식에서 완전인도기준으로 변경했는데, 이는 고객사의 검수확인서 수령 시점에 따라 매출이 특정 분기에 몰리거나 비는 구조를 만들어 분기별 실적의 변동성을 키우는 요인으로 지목된다. 회사는 상장 당시 2025년 매출 725억원, 영업이익 55억원을 목표로 제시했으나 이후 매출 653억원, 영업이익 4억원으로 하향 조정한 바 있으며, 실제 확정 실적인 592.06억원, -30.64억원은 이 하향된 목표에도 미달했다. 연간 재무상태표 측면에서는 2025년 말 자기자본이 353.71억원으로 전년 205.70억원보다 늘었는데, 이는 상장 공모로 확보한 자본 유입 효과가 반영된 결과로 해석되며, 부채비율도 279.9%에서 137.5%로 낮아졌다.",
+  "en": "2025 consolidated revenue rose to KRW 59.2 billion from KRW 53.9 billion the prior year, but operating profit swung to a loss of KRW 3.06 billion from a profit of KRW 1.34 billion, and owners' net income turned to a loss of KRW 3.79 billion from a profit of KRW 2.07 billion. The operating margin fell 7.7 percentage points, from 2.5% in 2024 to negative 5.2% in 2025. On a quarterly basis, after posting revenue of KRW 13.2 billion and an operating loss of KRW 1.92 billion in Q2 2025, the company saw revenue rise to KRW 15.7 billion in Q3 2025 with a marginal operating profit of KRW 95 million and owners' net income improving to KRW 375 million. However, the trend reversed heading into 2026: Q1 revenue fell sharply to KRW 9.7 billion versus Q3 2025 while the operating loss widened to KRW 3.75 billion, and Q2 revenue declined further to KRW 7.6 billion even as the operating loss expanded to KRW 3.96 billion. In other words, following the Q3 2025 peak, revenue has declined for two consecutive quarters while losses have widened rather than narrowed, a pattern that runs counter to typical economies-of-scale logic and suggests fixed costs may have remained steady or increased even as revenue shrank. According to media reports, the company changed its revenue recognition method for certain product lines from a percentage-of-completion basis to a complete-delivery basis around the time of its listing, a change cited as a factor that concentrates or empties revenue in specific quarters depending on when customer acceptance certificates are received, thereby amplifying quarterly earnings volatility. At listing, the company had targeted 2025 revenue of KRW 72.5 billion and operating profit of KRW 5.5 billion, later revising these down to KRW 65.3 billion and KRW 400 million; the actual confirmed results of KRW 59.2 billion revenue and a KRW 3.06 billion operating loss fell short even of the revised targets. On the balance sheet side, owners' equity rose to KRW 35.4 billion at the end of 2025 from KRW 20.6 billion a year earlier, reflecting capital inflow from the IPO, while the debt ratio declined to 137.5% from 279.9%."
  },
  "industry": {
-  "ko": "전자빔 X-ray 검사장비 산업은 반도체 미세공정 고도화, 이차전지 안전 규제 강화, 방위산업 투자 확대라는 세 가지 구조적 성장 동인을 공유한다. AI 인프라 투자 확대와 함께 HBM 수요가 증가하고 있으며, TSV·칩 스택 구조의 복잡성 심화로 X-ray 전수 검사 필요성도 함께 높아지고 있다. 방위산업 측면에서는 K-방산 수출 확대 기조와 방산 연료의 고체 연료화 전환 가속이 LINAC 고에너지 비파괴 검사 수요를 구조적으로 끌어올리고 있으며, DB증권에 따르면 2026년 K-방산 기대 수주 규모는 전년 대비 약 3.7배 수준으로 확대될 것으로 전망된다. 배터리 분야에서는 46파이 원통형 및 전고체 배터리 등 신형 전지 공정 확산이 고정밀 CT 검사 수요를 늘리고 있다. 경쟁 구도 측면에서 LINAC 고에너지 방산 NDT 분야는 미국 전략물자 규제 및 중국산 신뢰성 이슈로 글로벌 공급 대안이 좁아지면서 쎄크의 포지셔닝이 강화되고 있다. 반도체 X-ray 검사 분야에서는 Bruker, Yxlon 등 글로벌 대형 계측장비 업체와의 경쟁이 존재하나, 전자빔 부품 내재화와 AI 소프트웨어 통합이 차별화 요인으로 작용한다. 단기적으로는 반도체 장비 투자 사이클의 등락과 전기차 시장 침투 속도가 검사장비 수요 변동 요인으로 작용할 수 있다.",
-  "en": "The electron-beam X-ray inspection equipment sector benefits from three structural growth drivers: advanced semiconductor process migration, tightening battery safety regulations, and rising global defense budgets. AI infrastructure investment is sustaining HBM demand growth, while increasing TSV/chip-stack complexity strengthens the business case for 100% X-ray inspection. In defense, K-defense export momentum and the acceleration of solid-propellant conversion in missiles are structurally expanding demand for LINAC-based high-energy NDT; DB Securities projects Korea's defense export order flow in 2026 to reach approximately 3.7× the prior-year level. For batteries, the spread of 46φ cylindrical and all-solid-state cell production is driving incremental demand for high-precision CT inspection. Competitively, in LINAC defense NDT, U.S. export-control restrictions on Western suppliers and reliability concerns over Chinese alternatives narrow the field of credible global vendors, strengthening SAEC's positioning. In the semiconductor X-ray segment, established global metrology players such as Bruker and Yxlon represent competitive benchmarks, though SAEC differentiates through vertical integration of e-beam components and AI software. Near-term, semiconductor equipment spending cycles and EV market penetration rates remain sources of demand variability."
+  "ko": "전방 산업 측면에서 가장 두드러진 흐름은 AI 반도체 확산에 따른 HBM 수요 증가로, 삼성전자·SK하이닉스·마이크론 등 글로벌 메모리 제조사들이 HBM 및 첨단 패키징 기술에 활발히 투자하면서 제조 공정 내부 결함을 검사하는 2D/3D CT X-ray System 수요가 빠르게 늘고 있다. 다만 이러한 구조적 수요 증가가 실제 매출로 이어지는 속도는 고객사별 발주 타이밍과 검사장비 도입 시점에 따라 편차가 크며, 2025~2026년 쎄크의 분기별 매출 변동에서도 이러한 특성이 드러난다. 유리기판(TGV) 검사 분야는 아직 레퍼런스가 거의 없는 초기 시장으로, 쎄크는 제이앤티씨(JNTC)에 자동검사장비를 공급하며 국내 최초 사례를 만들었지만 SFA·이노메트리 등 경쟁사들도 삼성전기·코닝 등과 협력하며 이 시장에 진입을 시도하고 있어 표준화된 승자가 아직 정해지지 않은 상태다. 배터리 검사 분야에서는 전기차 화재 등 안전 이슈로 3D CT 검사 신뢰성에 대한 요구가 높아지는 추세지만, 이 분야에서도 이노메트리가 국내 배터리 3사 양산라인에 공급하는 시장 선도적 위치를 점하고 있어 경쁩이 치열하다. 방산·LINAC 분야는 상대적으로 경쟁사가 적은 니치 시장으로, 국방품질검사·미사일 검사 등 반복 수주가 가능한 구조지만 개별 계약 규모가 크지 않아 매출 기여의 절대 규모는 제한적이다. 전체적으로 쎄크는 전자빔 원천기술의 수직계열화라는 기술적 위치에서는 차별화된 입지를 갖고 있으나, 시가총액과 매출 규모 자체가 작은 소형 기술주로서 대형 경쟁사들에 비해 자본력과 영업 조직의 스케일에서는 열위에 있다.",
+  "en": "The most notable upstream trend is rising HBM demand driven by AI semiconductor proliferation, as global memory makers including Samsung Electronics, SK Hynix and Micron actively invest in HBM and advanced packaging technology, rapidly increasing demand for 2D/3D CT X-ray systems that inspect internal defects in the manufacturing process. However, the pace at which this structural demand translates into actual revenue varies significantly by customer order timing and equipment adoption schedules, a characteristic evident in SEC's quarterly revenue swings during 2025-2026. The glass-substrate (TGV) inspection segment remains an early-stage market with almost no established reference cases; SEC created a domestic first by supplying automated inspection equipment to JNTC, but competitors such as SFA and Innometry are also attempting to enter this market in partnership with Samsung Electro-Mechanics and Corning, meaning a standardized market leader has not yet emerged. In battery inspection, safety concerns such as electric-vehicle fires have raised demand for reliable 3D CT inspection, but competition remains intense as Innometry holds a leading position supplying all three major domestic battery makers' mass-production lines. The defense/LINAC segment is a relatively niche market with fewer competitors, offering structurally repeatable orders for defense quality inspection and missile inspection, though individual contract sizes are not large, limiting the absolute revenue contribution. Overall, SEC holds a differentiated technical position through its vertically integrated e-beam core technology, but as a small-cap technology stock with limited market capitalization and revenue scale, it lags larger competitors in capital strength and sales organization scale."
  },
  "outlook": {
-  "ko": "회사는 2025년 반기보고서에서 2027년 매출 1,116억원·영업이익 114억원 달성을 중기 목표로 제시했다. 2025년 실적이 목표치를 하회하고 2026년 1분기 손실이 재확대된 점을 감안하면, 해당 경로 달성은 수주잔고의 매출 전환 속도와 고정비 레버리지 개선 여부에 달려 있다. 2026년 확정 수주로는 한화에어로스페이스와의 LINAC 공급 계약 2건(5월 93억원, 6월 42억원)이 있으며, 이들 계약의 하반기 매출 인식이 연간 실적 반전의 핵심 동인이 될 전망이다. 1분기 기준 LINAC 수주잔고(133억원)에 두 계약을 합산하면 약 268억원 규모로 추정되며, 방산 비파괴 검사 수요는 국내 방산 대기업 및 해외 시장 확대와 함께 지속될 것으로 보인다. 반도체 부문에서는 N사 성능 평가 통과 이후 수주 협의가 이어지고 있으며, GPU 전수 검사 장비 수주 확정 시 하반기 실적의 추가 업사이드 요인이 된다. 신규 사업 측면에서는 전자빔 식품용기 살균기(샘표 참여 국책과제 선정), 플래시 암치료기(국산화 연구·정부 과제 참여), TGV e빔 가공기(삼성 유리기판 인터포저 연계) 등이 각각의 상용화 또는 기술 검증 단계에 있어 중장기 매출원으로 성장할 가능성이 있다. IPO 공모자금이 공장 신설·CAPA 확충·R&D·차입금 상환에 투입되고 있어 중기적으로 생산 역량과 원가 구조 개선이 기대된다.",
-  "en": "The company's 2025 semi-annual report set medium-term targets of KRW 111.6 bn in revenue and KRW 11.4 bn in operating profit by 2027; given the 2025 guidance miss and the Q1 2026 earnings deterioration, achieving that trajectory depends critically on the pace of backlog-to-revenue conversion and demonstrating fixed-cost operating leverage. Confirmed 2026 H1 orders include two LINAC supply contracts with Hanwha Aerospace (KRW 9.3 bn in May and KRW 4.2 bn in June), whose H2 2026 recognition would be the primary earnings-recovery catalyst. Adding both to the Q1 2026 LINAC backlog base yields an estimated KRW ~26.8 bn LINAC backlog, underpinned by structurally growing domestic and overseas defense NDT demand. In semiconductors, post-evaluation negotiations with 'Company N' are ongoing; a confirmed GPU 100%-inspection contract would add meaningful second-half upside. New businesses — an electron-beam food sterilizer (selected for a government R&D grant with Sempio Foods), a flash cancer therapy device (advancing through national R&D projects), and a TGV e-beam tool linked to Samsung's glass-substrate program — each occupy different stages of commercialization and hold long-term revenue potential. IPO proceeds are progressively improving production capacity and cost structure through factory expansion, CAPA additions, and debt reduction."
+  "ko": "회사는 하반기 매출 확대와 흑자 전환에 대한 의지를 여러 차례 밝혀왔으며, 그 배경으로 상장 관련 일회성 비용의 해소와 매출 인식 방식 변경에 따른 수주잔고의 매출 전환을 들었다. 대신증권은 2026년 4월 21일 보고서에서 2026년 매출액을 707억원(전년 대비 19.4% 증가), 영업이익을 27억원(흑자 전환)으로 전망하며 반도체 부문은 HBM·SMT 검사장비 확대, 배터리는 글로벌 고객사 증설, 방산은 LINAC 반복 수주가 성장을 견인할 것으로 분석했다. 다만 실제로 확정된 2026년 1~2분기 실적은 매출 감소와 영업손실 확대가 동시에 나타나 이러한 낙관적 전망과는 상반된 흐름을 보이고 있어, 하반기 실적이 이 격차를 얼마나 좁힐 수 있는지가 관전 포인트다. 제품 측면에서는 2026년 4월 HBM 생산라인용 인라인 검사장비 '세미-스캔-SW'의 개발을 완료해 SSPA 2026 전시회에서 처음 공개했으며, 이 장비는 유리기판 TGV 공정 검사와 웨이퍼레벨패키징(WLP) 접합 공정 검사에도 대응할 수 있다는 설명이다. 유리기판 분야에서는 한국생산기술연구원으로부터 전자빔 드릴링(E-beam Drilling) 기술을 이전받아 TGV 가공 시스템 개발에 착수했으며, 회사 측은 빠르면 2028년 상용화를 목표로 제시했다. 방산 부문에서는 2026년 6월 한화에어로스페이스와 대전 지역 비파괴검사기 공급계약(계약기간 2026년 6월 9일~2027년 12월 31일, 계약금액 42.3억원)을 체결해 계약 이행이 진행 중이다. 신사업으로는 전자빔 기반 의료용 방사선치료기, 멸균기 등의 국산화 연구도 정부 과제 형태로 병행되고 있으나 상용화까지는 시간이 더 필요한 단계다.",
+  "en": "The company has repeatedly stated its intention to expand revenue and turn profitable in the second half, attributing the earlier weakness to one-off listing-related costs and to the timing gap created by its shift in revenue recognition method, which converts backlog into recognized revenue only upon customer acceptance. Daishin Securities, in an April 21, 2026 report, forecast 2026 revenue of KRW 70.7 billion (up 19.4% year over year) and operating profit of KRW 2.7 billion (turning profitable), citing expansion of HBM and SMT inspection equipment in semiconductors, capacity expansion at global battery customers, and repeat LINAC orders in defense as growth drivers. However, the confirmed Q1-Q2 2026 results showed simultaneous revenue decline and widening operating losses, running counter to this optimistic outlook, making it a key point to watch whether second-half results can narrow this gap. On the product side, the company completed development of the 'Semi-Scan-SW' inline inspection system for HBM production lines in April 2026 and unveiled it for the first time at the SSPA 2026 exhibition; this equipment is also described as capable of inspecting the TGV process for glass substrates and bonding processes in wafer-level packaging. In the glass-substrate segment, the company received an e-beam drilling technology transfer from the Korea Institute of Industrial Technology and began developing a TGV processing system, targeting commercialization as early as 2028. In defense, the company signed a non-destructive inspection equipment supply contract with Hanwha Aerospace for a Daejeon-area project in June 2026 (contract period June 9, 2026 to December 31, 2027, value KRW 4.23 billion), with contract execution ongoing. New business areas such as e-beam-based medical radiation therapy devices and sterilization equipment are also being pursued through government-funded research programs, though commercialization remains at an earlier stage."
  },
  "valuation_comment": {
-  "ko": "쎄크는 현재 손실 구간에 있어 주가수익비율(PER) 산출이 불가능한 상태이며, 주당순손실(EPS –516원)이 지속되고 있다. 주당순자산(BPS 4,016원, KRX 기준)을 감안하면 현재 주가는 순자산 대비 상당한 프리미엄 구간에서 거래되고 있으며, 이는 시장이 현재의 적자 국면보다 LINAC 수주 확대·북미 HBM/GPU 수주·신사업 상용화 등 중장기 성장 시나리오를 선반영하고 있음을 나타낸다. 해당 프리미엄을 정당화하려면 수주잔고의 실질 매출 전환과 고정비 레버리지의 가시화가 선행돼야 한다. 배당금은 공시 기준 0원으로, 배당수익률은 동종 업종 평균을 크게 하회한다. 상장 초기 소형주인 만큼 보호예수 해제 물량 및 초기 투자자의 지분 변동이 주가 수급에 영향을 미칠 수 있어 밸류에이션 해석 시 이를 함께 고려할 필요가 있다.",
-  "en": "SAEC is currently loss-making, making price-to-earnings valuation inapplicable; its earnings per share (EPS of –KRW 516) remains in deficit. Based on book value per share (BPS of KRW 4,016 on a KRX basis), the stock trades at a meaningful premium to net asset value, implying the market is pricing in a forward growth scenario — scaling LINAC contracts, North American HBM/GPU wins, and new-business commercialization — rather than current-year earnings. Sustaining that premium will require visible evidence of backlog converting to revenue and operating leverage materializing. The declared dividend per share is zero, placing the yield well below sector norms. As a recently listed small-cap with a thin float, residual lockup expirations and potential early-investor disposals represent supply-side factors that should be considered alongside fundamental valuation."
+  "ko": "쎄크는 최근 네 개 분기 연속으로 순손실이 이어지고 있어 이익 기준의 통상적인 valuation 지표를 안정적으로 산출하기 어려운 구간에 있다. 주가와 순자산의 관계를 보면 회사가 상장 공모로 확보한 자본이 반영돼 순자산 규모 자체는 늘었지만, 그 이후 지속된 분기 손실이 자본을 다시 갉아먹는 구조여서 순자산 대비 주가의 위치를 해석할 때 이 점을 함께 고려할 필요가 있다. 회사는 배당을 지급하지 않는 무배당 정책을 유지하고 있어, 주가 판단의 근거는 배당보다는 사업 다각화와 신제품 상용화 속도에 있다고 볼 수 있다. 과거 실적 추세는 상장 전 흑자에서 상장 이후 적자로, 그리고 2025년 3분기 일시적 흑자에서 다시 2026년 상반기 손실 확대로 전환되는 등 방향성이 여러 차례 바뀌어 왔다는 점이 밸류에이션 해석에서 고려해야 할 배경이다. 이런 실적 변동성은 시장에서의 주가 반응성 또한 크게 만드는 요인으로 작용해 왔다.",
+  "en": "SEC has posted net losses for four consecutive quarters, putting it in a range where conventional earnings-based valuation metrics are difficult to calculate reliably. Regarding the relationship between share price and net assets, the equity base itself grew due to capital raised through the IPO, but subsequent quarterly losses have been eroding that capital again, a factor worth considering when interpreting the share price relative to book value. The company maintains a no-dividend policy, so the basis for assessing the shares rests less on dividend income and more on the pace of business diversification and new-product commercialization. Historical earnings trends have shifted direction multiple times — from pre-IPO profitability to post-listing losses, to a brief profit in Q3 2025, and then back to widening losses in the first half of 2026 — a background that should be factored into any valuation interpretation. This earnings volatility has also been a factor behind the stock's heightened price sensitivity in the market."
  },
  "bull": [
   {
    "title": {
-    "ko": "방산 LINAC 수주 가속화 — 구조적 성장 동인",
-    "en": "Defense LINAC Order Acceleration — Structural Growth Driver"
+    "ko": "HBM·AI 반도체 검사 수요 확대",
+    "en": "Growing HBM/AI Semiconductor Inspection Demand"
    },
    "body": {
-    "ko": "2026년 5~6월 한화에어로스페이스와의 두 건 계약(93억원+42억원, 합계 약 135억원)으로 방산 LINAC 수주잔고가 약 268억원 규모로 확대됐으며, 이는 2024년 방산 매출(92억원)의 약 2.9배에 달하는 수준이다. 방산 매출 비중이 2021년 약 2%에서 2025년 3분기 누적 약 24%까지 빠르게 확대된 구조적 추세가 지속되고 있으며, K-방산 수출 확대와 고체연료 전환 수요가 추가 발주를 뒷받침한다. LINAC 장비는 단가가 높아 소수 계약만으로도 수익성 레버리지가 크게 작동하는 구조다.",
-    "en": "Back-to-back Hanwha Aerospace contracts in May–June 2026 (KRW 9.3 bn + KRW 4.2 bn) bring estimated LINAC backlog to ~KRW 26.8 bn — approximately 2.9× the 2024 defense revenue base. Defense revenue's structural rise from ~2% (2021) to ~24% on a Q1–Q3 2025 cumulative basis is reinforced by K-defense export expansion and solid-propellant conversion demand. High LINAC unit prices mean even a limited number of contracts create material operating leverage."
+    "ko": "AI 반도체 확산에 따라 삼성전자, SK하이닉스, 마이크론 등이 HBM 및 첨단 패키징 투자를 늘리면서 내부결함을 검사하는 X-ray System 수요가 빠르게 증가하고 있다. 쎄크는 2026년 4월 HBM 생산라인용 인라인 검사장비 '세미-스캔-SW' 개발을 완료해 SSPA 2026에서 처음 공개했으며, 이 장비는 TGV 및 WLP 접합 검사까지 대응 가능하다. 마이크론향 수동 검사장비 공급 경험을 인라인 장비로 확장한 것이어서 기존 고객 관계를 기반으로 한 확장 가능성이 있다.",
+    "en": "As AI semiconductor adoption spreads, Samsung Electronics, SK Hynix and Micron are increasing investment in HBM and advanced packaging, rapidly boosting demand for X-ray systems that inspect internal defects. SEC completed development of its 'Semi-Scan-SW' inline inspection system for HBM production lines in April 2026 and unveiled it for the first time at SSPA 2026, with the equipment also capable of TGV and WLP bonding inspection. This extends the company's prior manual equipment supply relationship with Micron into inline equipment, offering scope for expansion based on an existing customer relationship."
    }
   },
   {
    "title": {
-    "ko": "북미 반도체 수주 파이프라인 — HBM·GPU 업사이드",
-    "en": "North American Semiconductor Pipeline — HBM and GPU Upside"
+    "ko": "반도체 외 사업 다각화 진행",
+    "en": "Diversification Beyond Semiconductors"
    },
    "body": {
-    "ko": "글로벌 반도체사 N사 성능 평가 통과 이후 HBM 검사장비 NF120 추가 수주 협의가 진행 중이며, AI 서버용 GPU 전수 검사장비 수주 가능성도 제기되고 있다. AI 반도체는 고가 제품인 만큼 불량 리스크 최소화를 위해 전수 검사 수요가 늘어나고 있으며, 단일 계약 규모가 크고 반복 발주 가능성도 높다. 이미 북미 HBM 메이커에 장비를 공급한 레퍼런스가 추가 수주 신뢰도를 높이고 있다.",
-    "en": "Following a successful performance evaluation at 'Company N,' negotiations for additional HBM NF120 orders are ongoing, and a GPU 100%-inspection contract is being discussed. High-value AI chips increasingly require 100% inspection to minimize defect risk, implying large single-contract sizes and high repeat-order probability. An existing reference with a North American HBM producer supports the credibility of further wins."
+    "ko": "회사는 반도체 외에도 배터리, 방산(LINAC), 유리기판(TGV), 의료기기 등으로 응용 분야를 넓히고 있다. 방산 부문에서는 군 부대 및 한화에어로스페이스와 비파괴검사기 공급계약을 체결했고, 2021~2024년 관련 사업의 연평균 성장률이 136%에 달했다고 회사는 밝혔다. 유리기판 분야에서는 제이앤티씨에 국내 최초로 자동검사장비를 공급하며 초기 시장에서 레퍼런스를 확보했다.",
+    "en": "Beyond semiconductors, the company is expanding its applications into batteries, defense (LINAC), glass substrates (TGV) and medical devices. In defense, it has signed non-destructive inspection equipment supply contracts with military units and Hanwha Aerospace, and the company stated that this business achieved a 136% average annual growth rate between 2021 and 2024. In glass substrates, it secured an early market reference by supplying Korea's first automated inspection equipment to JNTC."
    }
   },
   {
    "title": {
-    "ko": "전자빔 플랫폼 기반 신사업 다각화 — 의료·식품·선단 반도체",
-    "en": "Electron-Beam Platform Diversification — Medical, Food, and Advanced Semiconductor"
+    "ko": "국내 유일 X-ray Tube 자체 생산 기술",
+    "en": "Only Domestic In-House X-ray Tube Production"
    },
    "body": {
-    "ko": "플래시 암치료기(국산화 연구·정부 과제), 전자빔 식품용기 살균기(샘표 참여 국책과제 선정), TGV e빔 가공기(삼성 유리기판 인터포저 연계) 등 신사업이 각각 상용화 검증 단계에 진입해 중장기 매출원으로 성장할 잠재력을 보유하고 있다. 전자총·X-ray 튜브 등 핵심 부품 내재화가 원가 경쟁력과 기술 진입장벽을 동시에 제공하며, 신사업 성과 가시화 시 사업 포트폴리오 재평가로 이어질 수 있다. 고부가가치 신시장 다변화는 특정 고객·산업에 대한 집중 리스크를 완화하는 구조적 효과도 기대된다.",
-    "en": "New applications — a flash cancer therapy device (national R&D program), a food-container sterilizer (government grant with Sempio Foods), and a TGV e-beam processor linked to Samsung's glass-substrate interposer — are each entering commercialization or advanced validation stages with genuine long-term revenue potential. Internal E-gun and X-ray tube manufacturing provides both cost efficiency and a high technology barrier. Successful new-business entries would reduce customer and sector concentration risk while potentially driving a portfolio re-rating."
+    "ko": "쎄크는 2006년 국내 최초로 X-ray Tube를 개발·상용화했고, 현재까지 국내 X-ray System 업계 중 유일하게 이를 자체 생산·판매할 수 있는 기업이다. 핵심 부품부터 완성 장비까지 수직계열화된 구조는 기술 진입장벽으로 작용해 후발 경쟁사 대비 차별화 요소가 된다. 삼성전자, SK하이닉스, 미국 앰코 등 글로벌 반도체 업체들에 검사장비를 공급한 경험도 기술력에 대한 방증으로 거론된다.",
+    "en": "SEC achieved Korea's first domestic development and commercialization of the X-ray tube in 2006 and remains the only company in the domestic X-ray system industry capable of in-house production and sale of this component. The vertically integrated structure from core components to finished equipment acts as a technological entry barrier that differentiates it from later entrants. Its track record of supplying inspection equipment to global semiconductor players such as Samsung Electronics, SK Hynix and Amkor of the United States is also cited as evidence of its technical capability."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2026Q1 손실 재확대 — 수익성 회복 가시성 부족",
-    "en": "Q1 2026 Loss Widens — Profitability Recovery Visibility Remains Limited"
+    "ko": "매출 감소와 손실 확대 동시 진행",
+    "en": "Simultaneous Revenue Decline and Widening Losses"
    },
    "body": {
-    "ko": "2026년 1분기 영업손실이 –37.5억원으로 2025년 연간 손실(–30.6억원)을 단독 분기만으로 초과하며 사상 최대 분기 손실을 기록했다. 2025년 반기보고서 가이던스(매출 653억원, OP +4억원)도 실제 결과(매출 592억원, OP –30.6억원)를 크게 밑돌아 중기 목표 달성 경로에 대한 불확실성이 높다. 매출이 증가했음에도 손실이 확대된 2026Q1 패턴은 고정비가 매출 성장을 상회하고 있음을 시사하며, 단기적으로 이 구조가 반전될 가능성을 면밀히 점검해야 한다.",
-    "en": "The Q1 2026 operating loss of –KRW 3.8 bn exceeded the entire full-year 2025 operating loss of –KRW 3.1 bn in a single quarter, marking the largest quarterly loss on record. The 2025 semi-annual guidance of KRW 65.3 bn revenue and +KRW 0.4 bn operating profit was substantially missed (actual: KRW 59.2 bn, –KRW 3.1 bn), raising questions about medium-term target credibility. That losses widened even as revenue grew in Q1 2026 signals that fixed-cost inflation is outpacing revenue, a structural challenge that merits close monitoring in coming quarters."
+    "ko": "2025년 3분기 157.20억원으로 정점을 찍은 매출이 2026년 1분기 97.35억원, 2분기 75.55억원으로 두 개 분기 연속 감소했다. 같은 기간 영업손실은 -37.54억원에서 -39.64억원으로 오히려 확대돼, 매출 감소에도 비용이 줄지 않는 구조적 문제가 드러난다. 이는 통상적인 규모의 경제 논리와 반대되는 흐름으로, 고정비 부담이 상당하다는 것을 시사한다.",
+    "en": "Revenue peaked at KRW 15.7 billion in Q3 2025 before declining for two consecutive quarters to KRW 9.7 billion in Q1 2026 and KRW 7.6 billion in Q2 2026. Over the same period, the operating loss actually widened from KRW 3.75 billion to KRW 3.96 billion, revealing a structural issue where costs failed to fall alongside revenue. This pattern runs contrary to typical economies-of-scale logic and suggests a significant fixed-cost burden."
    }
   },
   {
    "title": {
-    "ko": "높은 재무 레버리지와 음(–)의 영업현금흐름",
-    "en": "Elevated Financial Leverage and Negative Operating Cash Flow"
+    "ko": "매출 인식방식 변경에 따른 변동성",
+    "en": "Volatility from Revenue Recognition Change"
    },
    "body": {
-    "ko": "2025년 부채비율 137.5%, 영업현금흐름 –53.1억원으로 자금 소비가 지속되고 있다. IPO 공모자금이 공장 신설·R&D·차입금 상환에 분산 투입되는 상황에서 수주 전환이 늦어질 경우 추가 외부 자금 조달이 필요해질 수 있으며, 유상증자 등이 발생하면 기존 주주의 희석 가능성이 있다. 소형 기업 특성상 자금 조달 비용 부담이 상대적으로 높아 재무 상황 개선이 지연될 경우 경영 여력이 제약될 수 있다.",
-    "en": "A 2025 debt-to-equity ratio of 137.5% and operating cash flow of –KRW 5.3 bn indicate sustained cash consumption. With IPO proceeds deployed across multiple priorities simultaneously, a delay in backlog conversion could necessitate additional external financing; any equity issuance would carry dilution risk for existing shareholders. As a small-cap, funding costs are structurally higher, and prolonged financial stress could constrain strategic flexibility."
+    "ko": "회사는 상장 과정에서 일부 제품군의 매출 인식 기준을 진행률 방식에서 완전인도기준으로 변경했다. 이에 따라 고객사의 검수확인서 수령 시점에 매출 인식이 몰리거나 비게 되면서, 특정 분기의 실적만으로 사업의 실질적 회복 여부를 판단하기 어려운 구조가 만들어졌다. 실제로 2025년 3분기의 일시적 흑자가 2026년 상반기의 손실 확대로 이어진 점은 이러한 변동성을 뒷받침한다.",
+    "en": "The company changed its revenue recognition method for certain product lines from a percentage-of-completion basis to a complete-delivery basis around the time of its listing. As a result, revenue recognition becomes concentrated or emptied depending on when customer acceptance certificates are received, making it difficult to judge underlying business recovery from any single quarter's results. The fact that the brief Q3 2025 profit was followed by widening losses in the first half of 2026 supports this volatility."
    }
   },
   {
    "title": {
-    "ko": "소형주 오버행 및 수급 집중 리스크",
-    "en": "Small-Cap Overhang and Thin-Float Supply Risk"
+    "ko": "가이던스 하향 조정 반복",
+    "en": "Repeated Downward Guidance Revisions"
    },
    "body": {
-    "ko": "2025년 4월 코스닥 상장 이후 보호예수 해제에 따른 잔여 매도 물량 부담이 존재하며, 초기 투자자인 원익투자파트너스 등의 추가 지분 변동 공시 가능성이 있다. 총 발행주식수가 약 882만 주로 유통주식이 적어 수급 충격에 따른 주가 변동성이 상대적으로 크게 나타날 수 있다. 대형 발주 지연이나 실적 부진이 복합적으로 겹칠 경우 유동성이 낮은 시장 구조에서 낙폭이 과대화될 리스크가 있다.",
-    "en": "Post-IPO (April 2025) lockup expirations continue to create potential overhang, with early institutional investors such as Wonik Investment Partners potentially subject to further disclosure-triggered selling. Total issued shares of approximately 8.8 million leave the float thin, amplifying price swings from supply-side events. If order delays and earnings disappointments coincide, the illiquid market structure could magnify drawdowns disproportionately."
+    "ko": "쎄크는 상장 당시 2025년 매출 725억원, 영업이익 55억원을 목표로 제시했으나 이후 매출 653억원, 영업이익 4억원으로 하향했다. 실제 확정 실적인 매출 592.06억원, 영업손실 -30.64억원은 이 하향된 목표에도 미달했다. 대신증권이 2026년 4월 제시한 2026년 매출 707억원·영업이익 27억원 흑자 전환 전망 역시, 실제로 확정된 2026년 1~2분기 실적(매출 감소·손실 확대)과는 상반된 방향으로 진행되고 있어 가이던스에 대한 신뢰도 검증이 필요한 상황이다.",
+    "en": "At listing, SEC targeted 2025 revenue of KRW 72.5 billion and operating profit of KRW 5.5 billion, later revising these down to KRW 65.3 billion and KRW 400 million. The actual confirmed results of KRW 59.2 billion revenue and a KRW 3.06 billion operating loss fell short even of the revised targets. Daishin Securities' April 2026 forecast of KRW 70.7 billion revenue and a KRW 2.7 billion operating profit for 2026 is also moving in the opposite direction from the confirmed Q1-Q2 2026 results (declining revenue, widening losses), underscoring the need to scrutinize the reliability of company and analyst guidance."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "매출 편중 및 고객 집중 리스크",
-    "en": "Revenue Back-Loading and Customer Concentration Risk"
+    "ko": "고객 집중·발주 타이밍 리스크",
+    "en": "Customer Concentration and Order Timing Risk"
    },
    "body": {
-    "ko": "2025년 4분기 매출이 연간의 약 38%를 차지하는 등 특정 분기에 매출이 집중되는 구조가 반복되고 있다. 장비 납품·설치·검수 일정에 따라 분기 매출이 급변할 수 있으며, 주요 고객사의 발주 지연 또는 취소가 연간 실적 전체에 상당한 영향을 미친다. 반도체·배터리·방산 각 분야에서 핵심 고객에 대한 의존도가 높아 특정 고객의 투자 계획 변동이 곧바로 수주·매출 변동으로 연결된다.",
-    "en": "With approximately 38% of 2025 annual revenue concentrated in Q4, the extreme back-loaded recognition pattern is a recurring structural feature. Equipment delivery, installation, and acceptance schedules mean quarterly revenues can swing sharply; a key customer deferral or cancellation has an outsized impact on the full year. High customer concentration in each of semiconductor, battery, and defense means any single customer's investment-plan revision translates directly into order and revenue volatility."
+    "ko": "쎄크의 매출은 소수의 대형 반도체·배터리 고객사의 발주 시기와 검수 일정에 크게 좌우된다. 2025년 3분기 누적 기준 매출은 전년 동기 대비 7.1% 증가했지만 영업손실은 220.0% 늘고 순손실은 400.7% 늘었다는 점에서, 매출 증가가 반드시 수익성 개선으로 이어지지 않는 구조가 반복되고 있다. 특정 고객사의 발주 지연이나 검수 지연이 발생하면 실적 전체가 흔들릴 수 있는 취약성이 존재한다.",
+    "en": "SEC's revenue is heavily dependent on the order timing and acceptance schedules of a small number of large semiconductor and battery customers. For the nine months through Q3 2025, revenue rose 7.1% year over year while the operating loss increased 220.0% and the net loss increased 400.7%, illustrating a recurring pattern in which revenue growth does not necessarily translate into improved profitability. A delay in orders or acceptance from a specific customer could destabilize overall results."
    }
   },
   {
    "cat": {
-    "ko": "신사업 개발 지연 및 양산 전환 불확실성",
-    "en": "New-Business Development Delays and Commercialization Uncertainty"
+    "ko": "신사업 상용화 지연 리스크",
+    "en": "Delayed Commercialization of New Businesses"
    },
    "body": {
-    "ko": "플래시 암치료기·TGV e빔 가공기·식품용기 살균기 등 신사업은 아직 연구 또는 국책과제 단계로, 상업적 양산까지 상당한 시간과 추가 투자가 필요하다. 의료기기 분야의 경우 인허가 취득 불확실성이 커 상용화 일정 예측이 어렵고, 시장 수용성 리스크도 상존한다. 단기적으로는 신사업 관련 비용이 실적 부담으로 작용하며, 대형 글로벌 경쟁사가 유사 기술을 상용화할 경우 선점 우위가 희석될 수 있다.",
-    "en": "New electron-beam applications — flash cancer therapy, TGV processing, and food sterilization — remain in R&D or government-grant stages, requiring substantial additional time and investment before commercial production. Medical device regulatory approval introduces particularly high uncertainty around commercialization timelines, and market acceptance risk is material across all new applications. Near-term, new-business spending is a cost burden rather than a revenue contributor, and large global players commercializing comparable technologies could erode first-mover advantages."
+    "ko": "유리기판 TGV 전자빔 드릴링 기술은 한국생산기술연구원으로부터 이전받았지만 회사 스스로도 상용화 시점을 빠르면 2028년으로 제시하고 있어, 실제 매출 기여까지는 상당한 시간이 남아 있다. 글로벌 유리기판 시장 자체도 아직 초기 단계로, 연평균 성장률 전망은 높지만 절대 시장 규모가 작아 단기 실적에 미치는 영향은 제한적일 수 있다. 의료기기(방사선치료기)와 같은 신사업도 국책과제 단계에 머물러 있어 상용화까지 불확실성이 남아 있다.",
+    "en": "The glass-substrate TGV e-beam drilling technology was licensed from the Korea Institute of Industrial Technology, but the company itself has set a commercialization target as early as 2028, meaning substantial time remains before it contributes meaningfully to revenue. The global glass-substrate market itself is still at an early stage; while forecast growth rates are high, the absolute market size remains small, limiting near-term earnings impact. New businesses such as medical radiation therapy devices also remain at the government-funded research project stage, leaving commercialization uncertainty."
    }
   },
   {
    "cat": {
-    "ko": "거시·지정학 및 업황 사이클 리스크",
-    "en": "Macro, Geopolitical, and Industry-Cycle Risk"
+    "ko": "지속 손실에 따른 자본 완충 축소 리스크",
+    "en": "Capital Buffer Erosion from Continued Losses"
    },
    "body": {
-    "ko": "반도체 장비 투자 사이클의 하강 전환 시 HBM·X-ray 검사장비 수요가 단기 위축될 수 있으며, 미·중 무역 분쟁 심화에 따른 수출 규제 확대가 해외 수주 경로에 영향을 미칠 수 있다. 방위산업 측면에서는 현재 지정학적 긴장이 수요를 끌어올리고 있으나, 긴장 완화 시 발주 속도가 느려질 가능성도 배제할 수 없다. 해외 매출 비중이 확대되는 국면에서 환율 변동이 수익성에 미치는 영향도 점차 커질 수 있다.",
-    "en": "A cyclical downturn in semiconductor equipment spending could compress near-term HBM and X-ray inspection demand, while potential expansion of U.S.-China trade restrictions could affect export channels. In defense, the current geopolitical environment has been a net demand tailwind, but any meaningful easing of tensions could slow the pace of new orders. As SAEC's international revenue mix expands, foreign-exchange volatility will increasingly affect profitability."
+    "ko": "2025년 말 자기자본은 353.71억원으로 상장 공모 자금 유입에 힘입어 전년(205.70억원)보다 늘었지만, 2026년 1분기(-35.48억원)와 2분기(-37.69억원)에 걸쳐 지배주주 순손실이 이어지며 이 완충 자본을 다시 갉아먹고 있다. 손실이 장기화될 경우 향후 신사업 투자나 연구개발 재원 확보에 제약이 생길 수 있으며, 부채비율(2025년 137.5%)도 손실 지속에 따라 다시 상승할 가능성이 있다.",
+    "en": "Owners' equity at the end of 2025 rose to KRW 35.4 billion from KRW 20.6 billion a year earlier, helped by IPO capital inflows, but owners' net losses in Q1 2026 (KRW -3.55 billion) and Q2 2026 (KRW -3.77 billion) have been eroding this capital buffer again. If losses persist, the company could face constraints in funding future new-business investment and R&D, and the debt ratio (137.5% in 2025) could rise again if losses continue."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순 (2026년 2분기 실적 발표)",
-    "en": "Mid-August 2026 (Q2 2026 Earnings Release)"
+    "ko": "2026년 11월 중순(3분기보고서 제출 시점 전후)",
+    "en": "Mid-November 2026 (around Q3 report filing deadline)"
    },
    "what": {
-    "ko": "2026년 1분기 영업손실(–37.5억원)이 저점이었는지 확인하는 핵심 지표다. 매출 회복세, 한화에어로스페이스 수주 건의 초기 매출 인식 여부, 영업이익 흑자 복귀 시점을 점검해야 한다.",
-    "en": "The critical data point for determining whether Q1 2026's –KRW 3.8 bn operating loss was the trough; key metrics are the revenue rebound, whether early recognition of the Hanwha Aerospace LINAC orders appears, and whether operating profit returns to positive territory."
+    "ko": "2026년 3분기 실적이 매출 감소·손실 확대 흐름을 이어가는지, 회사가 자신했던 하반기 회복이 실제로 나타나는지를 확인해야 한다.",
+    "en": "Check whether Q3 2026 results continue the pattern of declining revenue and widening losses, or whether the second-half recovery the company has repeatedly cited actually materializes."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중 (LINAC 계약 매출 인식 분기 확인)",
-    "en": "H2 2026 (LINAC Contract Revenue Recognition Timing)"
+    "ko": "2026년 4분기",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "5월 93억원·6월 42억원 한화에어로스페이스 계약이 어느 분기에 매출로 인식되는지 확인하고, 추가 방산 LINAC 수주 공시 및 전체 수주잔고(약 268억원 추정) 변화를 모니터링해야 한다.",
-    "en": "Track the specific recognition quarters for the May (KRW 9.3 bn) and June (KRW 4.2 bn) Hanwha Aerospace orders; also monitor for additional LINAC contract announcements and changes to the estimated ~KRW 26.8 bn LINAC backlog."
+    "ko": "HBM용 세미-스캔-SW 및 유리기판(TGV) 인라인 검사장비의 추가 고객사 수주 공시 여부를 확인해야 한다.",
+    "en": "Watch for disclosures of additional customer orders for the HBM Semi-Scan-SW and TGV inline inspection equipment."
    }
   },
   {
    "when": {
-    "ko": "2026년 내 (북미 반도체 수주 확정 공시 여부)",
-    "en": "Within 2026 (North American Semiconductor Contract Announcement)"
+    "ko": "2027년 12월 31일까지",
+    "en": "Through December 31, 2027"
    },
    "what": {
-    "ko": "글로벌 반도체사 N사로부터의 후속 수주 계약 공시 및 GPU 전수 검사 장비 수주 성사 여부를 확인해야 하며, 계약 규모와 반복 발주 가능성이 중장기 실적 레버리지 평가의 핵심 변수가 된다.",
-    "en": "Watch for a formal contract announcement from 'Company N' following the completed performance evaluation, and monitor any GPU 100%-inspection supply confirmation; contract size and repeat-order probability are pivotal to assessing long-term earnings leverage."
+    "ko": "한화에어로스페이스와 체결한 대전 지역 비파괴검사기 공급계약(2026년 6월~2027년 12월)의 이행 진행 상황과 추가 방산 수주 여부를 확인해야 한다.",
+    "en": "Track the progress of the Daejeon-area non-destructive inspection equipment supply contract with Hanwha Aerospace (June 2026-December 2027) and any additional defense orders."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (오버행 및 주요 주주 지분 변동 모니터링)",
-    "en": "H2 2026 (Overhang and Major Shareholder Disposition Monitoring)"
+    "ko": "2027년 이후",
+    "en": "From 2027 onward"
    },
    "what": {
-    "ko": "상장 1주년(2026년 4월) 이후 잔여 보호예수 해제 물량과 초기 투자자의 추가 지분 변동 공시를 점검해야 하며, 유통주식 수 변화가 주가 변동성에 미치는 영향을 함께 확인할 필요가 있다.",
-    "en": "Following the one-year mark from the April 2025 listing, monitor residual lockup expiries and any additional large-shareholder disposal filings; changes in floating supply in this thinly traded name can amplify price volatility materially."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 초 (중기 가이던스 달성 진행률 점검)",
-    "en": "Early 2027 (Mid-Term Guidance Progress Assessment)"
-   },
-   "what": {
-    "ko": "회사의 2027년 매출 1,116억원·영업이익 114억원 중기 목표 대비 2026년 연간 실적 달성률을 확인하고, 중기 경영계획 수정 여부 및 신규 가이던스 제시 내용을 점검해야 한다.",
-    "en": "Compare 2026 full-year results against the company's 2027 targets of KRW 111.6 bn revenue and KRW 11.4 bn operating profit to gauge trajectory credibility, and watch for any revision or reaffirmation of the medium-term business plan."
+    "ko": "유리기판 TGV 전자빔 드릴링 가공기의 상용화 로드맵(회사 목표 2028년)이 계획대로 진행되는지, JNTC 외 추가 유리기판 고객사 확보 여부를 확인해야 한다.",
+    "en": "Monitor whether the TGV e-beam drilling equipment commercialization roadmap (company target: 2028) proceeds as planned, and whether additional glass-substrate customers beyond JNTC are secured."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "쎄크는 국내 유일 전자빔 원천기술을 보유하며 HBM 반도체 검사, 배터리 CT, 방산 LINAC 비파괴 검사라는 세 개의 고성장 전방시장에 동시 진입하는 차별화된 기술 포지셔닝을 갖추고 있다. 2025년 하반기 분기 흑자 전환에 일시 성공했으나, 연간 기준 영업적자와 2026년 1분기 사상 최대 분기 손실은 매출의 극단적 하반기 쏠림 구조와 고정비 증가가 복합적으로 작용하는 현실을 드러낸다. 2026년 5~6월 한화에어로스페이스와의 LINAC 수주 합계 약 135억원 확정과 N사 수주 협의 진전은 하반기 실적 반전의 구체적 근거를 제공하며, 수주잔고(약 268억원 추정)의 매출 전환 속도가 연간 흑자 복귀 여부를 결정하는 핵심 변수다. 부채비율 137.5%와 마이너스 영업현금흐름은 재무적 취약성으로 남아 있으며, 수주 전환 지연 시 추가 자금 조달 부담이 발생할 수 있다. 중기적으로는 플래시 암치료기, TGV 검사장비, 식품 살균기 등 신사업이 전자빔 기술 플랫폼의 가치를 확장할 잠재력을 내포하고 있으나, 상용화 일정과 시장 수용성은 아직 검증 단계다. 분기 실적 공시, LINAC 수주 공시, 북미 반도체 수주 협의 진행 상황, 오버행 해소 추이를 복합적으로 추적하는 것이 이 종목을 판단하는 데 유효한 접근이다.",
-   "en": "SAEC's differentiated positioning — Korea's only proprietary electron-beam source technology applied simultaneously to HBM semiconductor inspection, battery CT testing, and defense LINAC NDT — provides structural exposure to three high-growth end markets. The brief return to quarterly profitability in H2 2025 demonstrates underlying earnings potential, but the full-year 2025 operating loss and the Q1 2026 single-quarter loss exceeding the full-year 2025 figure together highlight the real challenges of extreme revenue back-loading and rising fixed costs. The approximately KRW 13.5 bn in confirmed Hanwha Aerospace LINAC contracts (May–June 2026) and ongoing North American semiconductor negotiations supply concrete catalysts for an H2 2026 recovery, with the pace of the estimated ~KRW 26.8 bn backlog converting to revenue being the pivotal variable for a return to annual profitability. The financial profile — 137.5% debt-to-equity and persistently negative operating cash flow — remains a vulnerability; delayed order recognition could necessitate additional financing. Medium-term, new electron-beam applications carry genuine platform-expansion potential but face unresolved commercialization timelines and market-acceptance uncertainties. Tracking quarterly earnings, LINAC order disclosures, North American semiconductor contract decisions, and the pace of overhang clearance simultaneously will be essential for monitoring the investment thesis."
+   "ko": "쎄크는 국내 유일의 X-ray Tube 자체 생산 기술을 바탕으로 반도체 HBM, 배터리, 방산, 유리기판 등 여러 응용 분야로 사업을 넓히고 있는 기술 중심 소형 기업이다. 그러나 확정된 재무 데이터를 보면 2025년 연간 실적이 적자로 전환한 뒤 2026년 상반기까지 매출 감소와 영업손실 확대가 동시에 나타나고 있어, 대신증권 등이 제시한 2026년 흑자 전환 전망과는 상반된 흐름이 실제로 진행되고 있다. 매출 인식 방식 변경으로 분기별 실적의 변동성이 커진 점, 그리고 상장 이후 여러 차례 가이던스가 하향 조정된 전례는 향후 실적 전망을 해석할 때 신중함을 요구한다. 동시에 HBM 인라인 검사장비 개발 완료, 한화에어로스페이스·JNTC 등과의 신규 계약 체결, 유리기판 전자빔 가공 기술 이전 등은 중장기 성장 스토리의 근거로 남아 있다. 관심 있는 투자자라면 2026년 3분기 실적에서 매출·손익 흐름이 실제로 개선되는지, 그리고 신사업 수주가 매출로 전환되는 속도를 다음 확인 지점으로 삼을 필요가 있다. 본 보고서는 투자 매수·매도 의견을 포함하지 않으며 정보 제공을 목적으로 작성됐다.",
+   "en": "SEC is a technology-focused small-cap company expanding into semiconductor HBM, battery, defense and glass-substrate applications on the strength of its position as the only domestic in-house producer of X-ray tubes. However, confirmed financial data show that after turning to a loss in full-year 2025, the company has seen simultaneous revenue declines and widening operating losses through the first half of 2026, running counter to the 2026 profit-turnaround forecasts issued by firms such as Daishin Securities. The increased quarterly earnings volatility stemming from a change in revenue recognition method, along with a track record of repeated downward guidance revisions since listing, warrant caution when interpreting future earnings outlooks. At the same time, the completion of HBM inline inspection equipment development, new contracts with Hanwha Aerospace and JNTC, and the glass-substrate e-beam processing technology transfer remain the basis for a medium-to-long-term growth narrative. Interested readers should watch whether Q3 2026 results show an actual improvement in revenue and profitability, and how quickly new-business orders convert into recognized revenue. This report contains no buy or sell recommendation and is provided for informational purposes only."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A081180&cID=&MenuYn=Y&ReportGB=&NewMenuID=101&stkGb=701",
   "https://m.thinkpool.com/compDiscuss/cont/1022842",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A081180&cID=&MenuYn=Y&ReportGB=&NewMenuID=101&stkGb=701",
+  "https://meerae.ai/atlas/081180/",
   "https://m.thinkpool.com/stockDiscuss/081180/cont/11844360",
+  "https://www.asiae.co.kr/article/2026042107562559649",
+  "https://www.etoday.co.kr/news/view/2536075",
   "https://m.thinkpool.com/stockDiscuss/081180/cont/11845651",
+  "https://m.thinkpool.com/compDiscuss/cont/1021986",
   "https://www.butler.works/ko/companies/00406222",
-  "https://invest.zum.com/stock/081180/disclosure/",
-  "https://www.asiae.co.kr/article/2026051310062003106",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=411447",
-  "https://www.mt.co.kr/stock/2026/01/09/2026010911254914290",
-  "http://www.ipostock.co.kr/view_pg/view_03.asp?code=B202411152&gmenu=",
-  "https://m.thebell.co.kr/m/newsview.asp?svccode=&newskey=202511170027549960102496",
-  "https://www.tossinvest.com/stocks/A081180/order",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/OVZib0NBR1BYalovdi9mRnppQ0VDUT09/company_nm/(%EC%A3%BC)%EC%8E%84%ED%81%AC",
-  "https://www.financialpost.co.kr/news/articleView.html?idxno=238097",
-  "https://103.brokdam.com/entry/%EC%8E%84%ED%81%AC-%EC%A3%BC%EA%B0%80%EC%A0%84%EB%A7%9D-%EB%B0%8F-%ED%88%AC%EC%9E%90-%EC%A0%84%EB%9E%B5-%EC%A0%84%EC%9E%90%EB%B9%94-%EA%B2%80%EC%82%AC%EC%9E%A5%EB%B9%84-%ED%98%81%EC%8B%A0%EC%A3%BC-2%EC%B0%A8%EC%A0%84%EC%A7%80%C2%B7%EB%B0%98%EB%8F%84%EC%B2%B4%C2%B7%EB%B0%A9%EC%82%B0-%ED%85%8C%EB%A7%88-%EC%88%98%ED%98%9C%EC%A3%BC%EB%A1%9C-%EB%B6%80%EA%B0%81",
-  "https://kind.krx.co.kr/corpgeneral/irschedule.do?method=searchIRScheduleMain&gubun=iRSchedule",
+  "https://littlebproject.com/stock/081180/371/57134",
+  "https://m.thinkpool.com/item/081180",
+  "https://www.valueline.co.kr/finance/mri/081180",
+  "https://littlebproject.com/stock/081180/80/46701",
+  "https://www.asiae.co.kr/article/2025123016284264907",
   "https://www.valueline.co.kr/finance/summary/081180",
-  "https://www.kdpress.co.kr/news/articleView.html?idxno=205979"
+  "https://www.tossinvest.com/stocks/A081180/order",
+  "https://www.kdpress.co.kr/news/articleView.html?idxno=205979",
+  "https://dart.fss.or.kr/"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "081180",
  "name": "쎄크",
  "name_en": "SEC co.,ltd.",
@@ -233,11 +223,11 @@
   "기계·장비"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 00:51",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:02",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -255,6 +245,23 @@
     "opm": -5.2,
     "roe": -10.7,
     "debt_ratio": 137.5
+   },
+   {
+    "year": 2024,
+    "rev": 53931372723,
+    "op": 1335945972,
+    "np": 2066870180,
+    "np_owner": 2066870180,
+    "equity": 20570027396,
+    "equity_owner": 20570027396,
+    "equity_nci": null,
+    "liab": 57574142347,
+    "cfo": 2398574232,
+    "eps_basic": 431,
+    "src": "전기 비교치",
+    "opm": 2.5,
+    "roe": 10.0,
+    "debt_ratio": 279.9
    }
   ],
   "quarterly": [
@@ -290,8 +297,8 @@
    }
   ],
   "valuation": {
-   "price": 4975,
-   "mcap": 0.0439,
+   "price": 5040,
+   "mcap": 0.0445,
    "shares": 8825535,
    "total_shares": 8825535,
    "wavg_shares": 8393523,
@@ -304,11 +311,16 @@
    "ttm_np_owner": -3785478918,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.24,
+   "eps_src": "공시",
+   "pbr_krx": 1.25,
    "bps_krx": 4016.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "eps": "ref_mismatch",
+    "bps": "ref_mismatch"
+   }
   }
  }
 }

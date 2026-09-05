@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "딥노이드: 생성형 AI 인허가 여부가 분수령",
-  "en": "DeepNoid: Generative AI Authorization as the Pivotal Turning Point"
+  "ko": "생성형 의료AI 상용화 초기, 재무 리스크 병존",
+  "en": "Generative Medical AI Commercialization Begins Amid Financial Risk"
  },
  "lead": {
-  "ko": "국내 1세대 의료 AI 기업 딥노이드는 생성형 AI 솔루션 M4CXR 인허가 완료와 산업 AI 신규 수주 재개라는 두 과제를 동시에 풀어야 하는 국면에 놓여 있으며, 2026년 1분기까지 매출 회복의 가시적 신호가 아직 나타나지 않고 있다.",
-  "en": "DeepNoid, one of Korea's first-generation medical AI companies, faces the simultaneous challenge of completing M4CXR regulatory authorization and reigniting industrial AI order flow, with no visible revenue recovery signal through 2026Q1."
+  "ko": "딥노이드는 생성형 의료AI 'M4CXR'의 품목허가와 상급종합병원 공급 개시로 사업 전환점을 맞고 있으나, 누적 적자와 법인세차감전손실 비율 부담이 동시에 진행되고 있다.",
+  "en": "Deepnoid is reaching a business inflection point as its generative medical AI solution M4CXR gains device approval and initial hospital supply contracts, even as accumulated losses and pre-tax loss ratio pressure persist in parallel."
  },
  "keypoints": [
   {
-   "ko": "M4CXR이 생성형 AI 기반 의료기기로는 국내 최초로 식약처 혁신의료기기(제119호)에 지정됐으며, 임상시험 완료 후 인허가 절차가 진행 중이다.",
-   "en": "M4CXR became the first generative AI-based medical device in Korea to receive MFDS Innovation Medical Device designation (No. 119); clinical trials are complete and marketing authorization is under review."
+   "ko": "2025년 매출 74.7억원, 영업손실 105.6억원으로 4개년 연속 적자가 지속됐다.",
+   "en": "2025 revenue was KRW 7.47 billion with an operating loss of KRW 10.56 billion, marking a fourth consecutive year of losses."
   },
   {
-   "ko": "2025년 연간 매출이 74.7억원으로 전년(108.5억원) 대비 31% 감소했고, 2026년 1분기 매출은 3.6억원으로 극히 저조해 단기 실적 가시성이 제한적이다.",
-   "en": "FY2025 revenue fell 31% YoY to KRW 7.47 billion, and 2026Q1 revenue contracted sharply to KRW 357 million, severely limiting near-term earnings visibility."
+   "ko": "2026년 1분기 매출이 3.6억원까지 급감한 뒤 2분기 13.1억원으로 일부 회복됐으나 분기 영업손실은 여전히 30억원대를 유지했다.",
+   "en": "Quarterly revenue plunged to KRW 357 million in 1Q26 before partially recovering to KRW 1.31 billion in 2Q26, while quarterly operating losses remained in the KRW 3 billion range."
   },
   {
-   "ko": "2025년 유상증자(179억원)로 재무 여력을 확보, 자기자본 284.8억원·부채비율 42.0%로 전년 대비 재무구조가 개선됐으나 영업적자 구조는 지속 중이다.",
-   "en": "A KRW 17.9 billion rights offering in 2025 strengthened the balance sheet to KRW 28.5 billion in equity and improved the debt ratio to 42.0%, though the operating loss structure persists."
+   "ko": "생성형 AI 기반 흉부 X-ray 판독 솔루션 'M4CXR'이 2026년 6월 말 식약처 품목허가를 받고 부산대병원, 화순전남대병원 등에 공급됐다.",
+   "en": "The generative AI-based chest X-ray reading solution M4CXR received device approval from the Ministry of Food and Drug Safety in late June 2026 and has since been supplied to Pusan National University Hospital and Hwasun Chonnam National University Hospital, among others."
   },
   {
-   "ko": "산업부 주관 5개년 116억원 규모 '의료 특화 멀티모달 초거대 생성형 AI' 국책과제 주관기관으로 선정돼 49.8억원의 정부 출연금을 확보했다.",
-   "en": "Selected as lead institution for a KRW 11.6 billion 5-year national R&D project on medical-specialized multimodal generative AI, securing KRW 4.98 billion in government grants."
+   "ko": "2025년 12월 270억원 규모 주주배정 유상증자로 자본을 확충해 부채비율이 낮아졌으나, 법인세차감전손실 비율 관리종목 지정 위험은 상시적으로 거론된다.",
+   "en": "A KRW 27 billion rights offering completed in December 2025 strengthened capital and lowered the debt ratio, but the risk of designation as an administrative issue over the pre-tax loss ratio remains a recurring concern."
   },
   {
-   "ko": "MDSAP 인증 취득으로 미국 FDA·일본 PMDA 심사 간소화 혜택이 생겼고, 두바이 지사·헬스허브 인도네시아 실증 등 글로벌 확장 거점을 다수 구축했다.",
-   "en": "MDSAP certification simplifies U.S. FDA and Japan PMDA pathways; multiple international expansion anchors have been established, including a Dubai subsidiary and Indonesia clinical validation with Healthhub."
+   "ko": "회사는 2026년 4분기부터 의료AI 매출이 본격화되고 2027년 흑자전환을 목표로 한다고 밝혔다.",
+   "en": "The company has stated that meaningful medical AI revenue is expected to begin in Q4 2026, with a target of turning profitable in 2027."
   }
  ],
  "business": {
-  "ko": "딥노이드는 2008년 설립, 2021년 코스닥에 상장된 국내 1세대 의료 AI 전문기업으로, 의료 AI·산업 AI·DX(디지털전환) 세 사업부를 영위한다. 2024년 매출 기준 산업 AI 부문이 전체의 92.1%를 차지하며 사실상 유일한 수익 기둥으로 기능하고, 의료 AI 4.4%, DX 3.5%에 불과하다. 의료 AI 부문에서는 식약처 인허가를 받은 15개 DEEP:AI 제품을 보유 중이며, 주력 제품은 뇌동맥류 진단보조 솔루션 DEEP:NEURO(비급여 시장 진입 완료), 흉부 X-ray 판독 솔루션 DEEP:CHEST·DEEP:LUNG, 그리고 인허가 절차 중인 생성형 AI 판독 소견서 자동 생성 솔루션 M4CXR이다. AI 개발·배포 플랫폼 DEEP:PHI와 AI 마켓플레이스 DEEP:STORE도 자체 보유한다. 산업 AI 부문은 공항 수하물 자동판독 시스템 DEEP:SECURITY(스카이마루, 국내 14개 공항 설치)와 제조 공정 불량 자동검사 솔루션 DEEP:FACTORY(이차전지·디스플레이 고객 레퍼런스 확보)로 구성된다. DX 부문은 기업용 생성형 AI 플랫폼 DEEP:GEN을 통해 업무 자동화 서비스를 제공한다. 경쟁 구도 측면에서 의료 AI 분야는 루닛·뷰노·코어라인소프트와, 보안·머신비전 분야에서는 글로벌 AI X-ray 솔루션 업체 및 코그넥스 등 머신비전 선도 업체와 경쟁 관계를 형성하고 있다. 의료와 산업 AI를 동시에 영위하는 구조는 국내 상장 의료 AI 기업 가운데 딥노이드가 사실상 유일하다.",
-  "en": "DeepNoid was founded in 2008 and listed on KOSDAQ in 2021; it operates three segments—Medical AI, Industrial AI, and DX (Digital Transformation). Based on FY2024 revenue, Industrial AI accounted for 92.1% of total sales and is essentially the sole revenue pillar, while Medical AI contributed 4.4% and DX 3.5%. The Medical AI division holds 15 MFDS-approved DEEP:AI products; flagship offerings include DEEP:NEURO (brain aneurysm diagnosis support, entered non-reimbursement market), DEEP:CHEST and DEEP:LUNG (chest and pulmonary imaging), and M4CXR (generative AI-based radiology report generation, under MFDS authorization review). Proprietary platforms include the AI development tool DEEP:PHI and AI marketplace DEEP:STORE. The Industrial AI segment is built around DEEP:SECURITY (SkyMARU—AI X-ray threat detection installed at 14 domestic airports) and DEEP:FACTORY (machine vision QC for secondary battery and display manufacturers). The DX segment offers enterprise workflow automation via the generative AI platform DEEP:GEN. On the competitive landscape, Medical AI rivals include Lunit, Vuno, and CoreLine Soft; security and machine vision operations compete with global AI X-ray vendors and machine vision leaders such as Cognex—with whom DeepNoid has formed a partnership. DeepNoid is virtually the only KOSDAQ-listed medical AI company with simultaneous exposure to both medical and industrial AI verticals."
+  "ko": "딥노이드는 의료AI와 산업AI 두 축으로 사업을 운영하는 코스닥 상장 AI 솔루션 기업이다. 산업AI 부문은 공항 보안검색대 자동판독 솔루션 '딥 시큐리티', 제조 현장의 불량품·이물질 검사 솔루션 '딥 팩토리' 등을 앞세워 한국공항공사, 디스플레이·반도체·이차전지 제조업체 등에 공급하고 있다. 실제로 딥노이드는 현재 매출 대부분을 공항과 데이터센터, 제조업체에 제공하는 산업 AI 솔루션에서 내고 있다고 밝힌 바 있으며, 보안검색대 통과 물품 탐지를 돕는 '딥 시큐리티', 불량품이나 이물질을 검사하는 '딥 팩토리' 등이 핵심 제품이다. 의료AI 부문은 뇌동맥류 진단 보조 솔루션 'DEEP:NEURO', 흉부질환 보조 솔루션 'DEEP:CHEST', 폐결절 정보 제공 'DEEP:LUNG', 척추질환 진단 보조 'DEEP:SPINE' 등 20여 개 솔루션을 보유하고 있다. 최근 성장 전략의 중심은 거대언어모델(LLM) 기반 생성형 AI 판독 솔루션 'M4CXR'로, 흉부 X-ray 영상을 학습해 41개 이상의 이상 소견을 분석하고 평균 2.3초 만에 예비소견서를 자동 생성한다. 국내 의료영상 판독 시장은 보험 급여시장 4600억원, 국내 검진센터 5000억원, 외주판독 1200억원 등 약 1조원 수준으로 추정된다. 경쟁 구도상 루닛, 뷰노, 제이엘케이 등 국내 의료AI 상장사들이 유사한 영상판독 보조 시장에서 경쟁하고 있으며, 이들 다수가 딥노이드와 마찬가지로 기술특례상장 이후 법인세차감전손실 관련 유예기간 만료 이슈를 겪고 있다. 딥노이드는 판독 보조를 넘어 병원 워크플로우 전반을 연계하는 '의료 AI 에이전트'로 사업모델을 확장하겠다는 방향을 제시하고 있다. 고객 기반은 상급종합병원 중심의 의료기관과 공공기관·제조업체로 이원화되어 있어 두 축의 수주 사이클이 실적에 동시에 영향을 준다.",
+  "en": "Deepnoid is a KOSDAQ-listed AI solutions company operating across two business pillars: medical AI and industrial AI. The industrial AI segment supplies airport security screening solutions ('Deep Security') and manufacturing-line defect and foreign-material inspection solutions ('Deep Factory') to customers including Korea Airports Corporation and display, semiconductor, and battery manufacturers. The company has disclosed that most of its current revenue comes from industrial AI solutions supplied to airports, data centers, and manufacturers, with Deep Security and Deep Factory serving as its core industrial products. The medical AI segment comprises more than twenty solutions, including the intracranial aneurysm diagnostic aid DEEP:NEURO, the chest-disease aid DEEP:CHEST, the pulmonary nodule information tool DEEP:LUNG, and the spinal-disease diagnostic aid DEEP:SPINE. The centerpiece of its recent growth strategy is M4CXR, a large-language-model-based generative AI reading solution that analyzes chest X-ray images for more than 41 abnormal findings and automatically generates a preliminary report in an average of 2.3 seconds. The domestic medical imaging reading market is estimated at roughly KRW 1 trillion, comprising an insurance-covered market of KRW 460 billion, a health-checkup-center market of KRW 500 billion, and an outsourced reading market of KRW 120 billion. In terms of competitive positioning, listed domestic medical AI peers such as Lunit, VUNO, and JLK compete in a similar image-reading-assistance market, and several of these peers, like Deepnoid, have faced the expiration of pre-tax loss exemption periods granted under the technology special listing framework. Deepnoid has outlined plans to expand beyond reading assistance into a 'medical AI agent' model that connects broader hospital workflows. Its customer base is split between tertiary general hospitals on the medical side and public institutions and manufacturers on the industrial side, so order cycles from both pillars simultaneously influence overall results."
  },
  "earnings": {
-  "ko": "연간 실적 흐름을 살펴보면, 2022년 매출 31.8억원(영업손실률 -193.6%), 2023년에는 매출이 19.3억원으로 더욱 위축되며 손실률이 -348.0%까지 악화됐다. 2024년에는 이차전지 머신비전 계약(75억원 규모)을 포함한 산업 AI 대형 수주 인식에 힘입어 매출이 108.5억원으로 급증했고, 영업손실률도 -93.1%로 크게 개선됐다. 그러나 2025년에는 대형 프로젝트 납품 완료 이후 후속 수주 공백이 발생하며 연간 매출이 74.7억원으로 전년 대비 31.1% 감소했고, 영업손실은 오히려 -105.6억원으로 확대돼 영업손실률이 -141.3%로 재악화됐다. 분기별로는 2025년 2분기에 매출 36.7억원, 영업손실 -2.3억원이라는 준흑자 수준을 달성했으나, 이후 3분기(21.8억원)·4분기(6.6억원)에 빠르게 하강했다. 2026년 1분기 매출은 3.6억원, 영업손실은 -39.8억원으로 전 분기 대비 더욱 악화됐다. 영업현금흐름도 2022년 -37.1억원, 2023년 -47.7억원, 2024년 -139.0억원(대규모 투자 집중기), 2025년 -63.6억원으로 4개 사업연도 연속 음수다. 2025년 말 자기자본은 284.8억원이며 부채비율은 42.0%로 전년(67.9%) 대비 개선됐는데, 이는 2025년 179억원 유상증자 효과가 주로 반영된 결과다.",
-  "en": "Annual results show a volatile trajectory: FY2022 revenue of KRW 3.18 billion carried an operating margin of –193.6%, while FY2023 revenue slid further to KRW 1.93 billion with the margin deteriorating to –348.0%. FY2024 surged to KRW 10.85 billion, driven by large industrial AI contract recognitions including a KRW 7.5 billion secondary battery machine-vision deal, with the operating margin recovering to –93.1%. FY2025, however, saw revenue contract 31.1% YoY to KRW 7.47 billion as the post-delivery order vacuum set in, while the operating loss widened to KRW –10.56 billion, pushing the margin back to –141.3%. At the quarterly level, 2025Q2 produced a near-breakeven result (revenue KRW 3.67 billion, operating loss KRW –230 million), but momentum reversed sharply through 2025Q3 (KRW 2.18 billion) and 2025Q4 (KRW 659 million). 2026Q1 continued the deterioration with revenue of just KRW 357 million and an operating loss of KRW –3.98 billion, reflecting ongoing lumpiness in project-based revenue recognition. Operating cash outflows were KRW –3.71 billion (2022), –4.77 billion (2023), –13.90 billion (2024, peak investment year), and –6.36 billion (2025). Year-end equity rose to KRW 28.48 billion and the debt ratio improved from 67.9% to 42.0%, primarily reflecting the KRW 17.9 billion rights offering completed in 2025."
+  "ko": "딥노이드의 연간 매출은 2022년 31.8억원, 2023년 19.3억원으로 축소된 뒤 2024년 108.5억원으로 급증했다가 2025년 74.7억원으로 다시 줄었다. 영업손실은 2022년 -61.6억원, 2023년 -67.3억원, 2024년 -101.0억원, 2025년 -105.6억원으로 매출 변동에도 불구하고 매년 확대되는 흐름을 보였다. 지배주주 순손실 역시 2022년 -53.3억원에서 2025년 -107.5억원으로 커졌으며, 2025년 영업이익률은 -141.3%에 달했다. 분기 흐름을 보면 2025년 2분기 매출 36.7억원, 영업손실 -2.3억원으로 손익 개선 조짐이 있었으나, 2025년 3분기 매출이 21.8억원으로 꺾이고 영업손실이 -30.4억원으로 급증하면서 반전됐다. 이후 2025년 4분기 매출 6.6억원, 2026년 1분기 매출 3.6억원까지 매출이 사실상 바닥을 찍었고, 같은 기간 영업손실은 각각 -37.2억원, -39.8억원으로 오히려 확대됐다. 2026년 2분기 매출은 13.1억원으로 일부 반등했지만 영업손실 -33.0억원은 여전히 매출 규모를 크게 웃돌아, 고정비 부담이 매출 감소를 그대로 손익에 반영시키는 구조를 보였다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순손실은 -143.2억원으로 2025년 연간 순손실(-107.5억원)을 이미 넘어선 규모다. 재무상태 측면에서는 2025년 12월 유상증자 효과로 자기자본이 2024년 190.4억원에서 2025년 284.8억원으로 늘었고 부채비율은 67.9%에서 42.0%로 낮아졌으나, 영업활동현금흐름은 2022~2025년 4개년 연속 마이너스(-37.1억원~-139.0억원)를 기록해 현금창출력 부재가 이어지고 있다.",
+  "en": "Deepnoid's annual revenue contracted from KRW 3.18 billion in 2022 to KRW 1.93 billion in 2023, surged to KRW 10.85 billion in 2024, then fell back to KRW 7.47 billion in 2025. Operating losses widened every year regardless of revenue swings, from KRW -6.16 billion in 2022 and KRW -6.73 billion in 2023 to KRW -10.10 billion in 2024 and KRW -10.56 billion in 2025. Net loss attributable to owners similarly grew from KRW -5.33 billion in 2022 to KRW -10.75 billion in 2025, with the 2025 operating margin at -141.3%. On a quarterly basis, 2Q25 showed signs of improvement with revenue of KRW 3.67 billion and an operating loss of only KRW -0.23 billion, but this reversed sharply in 3Q25 as revenue fell to KRW 2.18 billion and the operating loss widened to KRW -3.04 billion. Revenue then bottomed at KRW 658 million in 4Q25 and KRW 357 million in 1Q26, even as operating losses expanded further to KRW -3.72 billion and KRW -3.98 billion in those same quarters. Revenue partially rebounded to KRW 1.31 billion in 2Q26, but the operating loss of KRW -3.30 billion still far exceeded the revenue base, illustrating a cost structure where fixed expenses flow directly through to the bottom line as revenue fluctuates. The trailing four-quarter (3Q25-2Q26) net loss attributable to owners totaled KRW -14.32 billion, already exceeding the full-year 2025 net loss of KRW -10.75 billion. On the balance sheet, the December 2025 rights offering lifted equity from KRW 19.04 billion in 2024 to KRW 28.48 billion in 2025 and reduced the debt ratio from 67.9% to 42.0%, but operating cash flow remained negative for four consecutive years from 2022 to 2025 (ranging from KRW -3.71 billion to KRW -13.90 billion), underscoring a persistent lack of cash-generating capacity."
  },
  "industry": {
-  "ko": "글로벌 AI 시장은 2024년 2,146억 달러에서 2030년 1.3조 달러로 연평균 35.7% 성장이 전망되며, 특히 의료·생명과학 부문이 가장 높은 성장률을 보일 것으로 예상된다. 국내 의료 AI 상장 7개사 가운데 2024년 매출 기준 루닛(542억원), 뷰노(259억원), 딥노이드(108억원) 순으로 딥노이드는 3위를 차지하지만, 선도 기업과의 격차가 상당하다. 의료 AI 시장은 식약처 혁신의료기기 지정→혁신의료기술 지정→비급여 진입→급여화라는 단계적 수익화 경로가 정착되고 있으며, 딥노이드는 DEEP:NEURO를 통해 이 경로를 선례로 구축한 상태다. 한편 글로벌 머신비전 시장은 2023년 17조원에서 2028년 24조원으로 연평균 7.3% 성장이 예상되어 산업 AI 중장기 수요 기반은 안정적이다. 공항 보안 AI 시장은 국내 공공 발주 의존도가 높고 신흥시장(중동·동남아) 경쟁이 심화되는 추세다. 딥노이드는 의료·산업 AI를 동시에 영위하는 사실상 유일한 국내 상장사로, 매출 포트폴리오 다변화 효과를 갖지만 각 부문의 절대 규모는 전문 선도 기업에 미치지 못한다. 이차전지·디스플레이 산업의 AI 검사 자동화 도입 확산은 딥팩토리(DEEP:FACTORY) 수요 성장의 구조적 배경으로 작용한다.",
-  "en": "The global AI market is projected to grow at a CAGR of 35.7% from USD 214.6 billion in 2024 to USD 1.3 trillion by 2030, with healthcare and life sciences forecast as the highest-growth vertical. Among Korea's seven listed medical AI companies, DeepNoid ranked third in FY2024 revenue at KRW 10.8 billion, trailing Lunit (KRW 54.2 billion) and Vuno (KRW 25.9 billion) by a wide margin. The domestic medical AI commercialization pathway—MFDS Innovation Medical Device → Innovation Medical Technology → non-reimbursement entry → insurance coverage—is maturing, and DeepNoid established this precedent through DEEP:NEURO. The global machine vision market is expected to expand from KRW 17 trillion (2023) to KRW 24 trillion (2028) at a CAGR of 7.3%, providing a stable long-term demand backdrop for industrial AI. Airport security AI remains heavily reliant on domestic public procurement, while competition intensifies in Middle East and Southeast Asian emerging markets. DeepNoid is virtually the only KOSDAQ-listed company operating concurrently in medical and industrial AI, offering diversified revenue exposure, though its absolute scale in each segment falls short of pure-play leaders. The secular trend toward AI-powered automated quality inspection in secondary battery and display manufacturing represents a structural demand driver for DEEP:FACTORY."
+  "ko": "국내 의료AI 영상판독 시장은 보험 급여시장, 검진센터, 외주판독을 합쳐 약 1조원 수준으로 추정되며, 판독 보조를 넘어선 생성형 AI 소견서 자동생성 영역은 아직 초기 단계다. 기존 CNN 기반 영상판독 보조 솔루션은 낮은 수가와 제한된 시장 규모라는 한계가 있었다는 지적이 나오는데, 딥노이드는 이 지점을 겨냥해 LLM 기반 생성형 판독 솔루션을 국내에서 처음으로 품목허가받았다고 밝혔다. 경쟁사인 루닛, 뷰노, 제이엘케이 등도 각자의 영상판독 AI 제품으로 국내외 시장을 공략하고 있으며, 이들 다수가 딥노이드와 함께 2020~2021년 기술특례상장 세대에 속해 법인세차감전손실 관련 관리종목 유예기간 만료 이슈를 순차적으로 겪고 있다. 산업AI 영역에서는 공항 보안, 반도체·디스플레이·이차전지 제조라인의 품질검사 자동화 수요가 꾸준하지만, 프로젝트성 수주 구조로 인해 분기별 매출 편차가 크다는 특징이 있다. 정부 차원에서는 보건복지부의 '권역책임의료기관 AI 기반 진료시스템 지원사업' 등 공공 재정을 통한 AI 도입 지원이 상급종합병원 공급 확대의 마중물로 작용하고 있다. 다만 의료AI 전반이 보험 수가 체계 편입, 임상 검증 기간, 병원별 도입 절차 등 상용화까지 소요되는 시간이 길다는 산업 특성이 있어, 매출 인식 시점을 둘러싼 불확실성은 업종 공통의 리스크로 남아 있다.",
+  "en": "The domestic medical AI image-reading market, combining the insurance-covered segment, health-checkup centers, and outsourced reading, is estimated at roughly KRW 1 trillion, while the generative AI automated-report segment that goes beyond reading assistance remains at an early stage. Conventional CNN-based reading-assistance solutions have been criticized for facing low reimbursement rates and a limited addressable market, and Deepnoid has stated it targeted this gap by becoming the first in Korea to obtain device approval for an LLM-based generative reading solution. Competitors such as Lunit, VUNO, and JLK are also pursuing domestic and overseas markets with their own imaging AI products, and several of these peers, having listed under the same 2020-2021 technology special-listing cohort as Deepnoid, are sequentially facing the expiration of pre-tax loss exemption periods related to administrative-issue designation. In the industrial AI space, demand for automated quality inspection in airport security and semiconductor, display, and battery manufacturing lines remains steady, but the project-based order structure produces large quarter-to-quarter revenue swings. At the policy level, government-funded programs such as the Ministry of Health and Welfare's AI-based clinical system support project for regionally responsible hospitals are helping to seed expanded supply to tertiary general hospitals. However, the medical AI industry as a whole is characterized by long lead times to commercialization—covering reimbursement code inclusion, clinical validation periods, and hospital-by-hospital adoption procedures—leaving uncertainty around revenue recognition timing as a common industry-wide risk."
  },
  "outlook": {
-  "ko": "가장 중요한 근거리 촉매는 M4CXR의 식약처 품목 허가 완료 여부다. 2025년 말 기준 회사는 '빠르면 2026년 1분기, 늦어도 상반기'를 목표로 제시했으나, 2026년 1분기 실적에서 의료 AI 매출 인식이 가시화되지 않아 일정 재확인이 필요한 상황이다. 인허가 완료 이후에는 신의료기술 평가유예 제도를 통해 비급여로 임상 현장에 진입하고, 기존 DEEP:CHEST 도입 병원망을 기반으로 신속한 매출 연결이 기대된다. 중기적으로는 산업부 주관 5개년 116억원 규모 초거대 생성형 의료 AI 국책과제에서 49.8억원의 정부 출연금을 수령하며 연구 기반의 안정적 수익원이 확보된다. 해외 시장에서는 MDSAP 인증을 활용한 미국 FDA·일본 PMDA 인허가 추진이 진행 중이고, JPI 헬스케어와의 MOU를 통해 미국·일본 의료영상 시장 진출을 도모하고 있다. 두바이 지사를 거점으로 UAE·GCC·북아프리카 시장을 공략하며, 헬스허브와의 협력으로 인도네시아에서 M4CXR 임상 실증도 수행 중이다. 원격판독 시스템과 AI를 통합한 '토탈 AI 판독 서비스 플랫폼'은 2026년 상반기 완성을 목표로 개발 중이다. 회사 측 가이던스는 의료 AI 50억원, 보안·스마트팩토리 150억원 합산 연간 200억원 수준의 매출 목표를 제시한 바 있다.",
-  "en": "The most important near-term catalyst is M4CXR marketing authorization from the MFDS. As of late 2025, management guided for completion 'as early as Q1 2026 or by H1 2026 at the latest,' but the absence of medical AI revenue recognition in 2026Q1 calls for timeline reconfirmation. Post-authorization, the company plans to enter the non-reimbursement market via the New Medical Technology Assessment Deferral System, leveraging the existing DEEP:CHEST hospital network for rapid revenue ramp-up. Over the medium term, the five-year KEIT national project provides a steady KRW 4.98 billion in government grants. Internationally, MFDS-approved MDSAP certification supports ongoing U.S. FDA and Japan PMDA filings, while a JPI Healthcare MOU targets U.S. and Japanese medical imaging distribution. The Dubai subsidiary anchors expansion into the UAE, GCC, and North Africa, and the M4CXR Indonesia clinical validation with Healthhub proceeds. The 'Total AI Radiology Platform'—integrating remote reading infrastructure with AI—targets H1 2026 development completion. Company guidance cited annual targets of KRW 5 billion in Medical AI and KRW 15 billion in Security and Smart Factory, implying approximately KRW 20 billion in combined annual revenue."
+  "ko": "딥노이드는 2026년 7월 13일 미디어데이를 열고 M4CXR 상용화 전략과 함께 병원별 성능검증을 거쳐 4분기부터 관련 매출이 발생할 것으로 기대한다고 밝혔다. 실제로 M4CXR은 2026년 6월 말 식약처 품목허가 이후 8월 부산대병원, 8월 31일 화순전남대병원에 잇따라 공급계약을 체결하며 상급종합병원 임상 현장 도입을 확대하고 있다. 두 계약 모두 보건복지부의 권역책임의료기관 AI 기반 진료시스템 지원사업의 일환으로 이뤄졌다는 공통점이 있다. 회사는 8월 6일에는 에이전트 AI 기반 소프트웨어 의료기기 'AxonFlow'의 식약처 인허가 절차를 완료했다고 밝혔으며, 연말에는 의료 특화 파운데이션 모델 'MedZero'를 공개하고 CT·MRI 등으로 적용 모달리티를 넓힐 계획이라고 설명했다. 최우식 대표는 미디어데이에서 품목 하나당 매출 40~50억이라는 목표치를 제시하며 향후 서비스 확대에 따른 매출 규모를 시사했다. 회사는 2025년 12월 유상증자 자금 중 상당액을 의료AI 부문 연구개발과 임상, 영업·마케팅에 투입하고 베트남·필리핀 임상을 시작으로 2026년 미국·싱가포르, 2027년 유럽 임상까지 해외 인허가를 단계적으로 추진할 계획이라고 공시했다. 다만 이러한 계획은 회사 측이 제시한 목표이자 진행 중인 절차로, 실제 매출 반영 시점과 규모는 병원별 도입 속도와 보험 수가 정책에 따라 달라질 수 있다. 산업AI 부문에서도 공항·제조업체향 추가 수주 여부가 연간 매출의 또 다른 변수로 남아 있다.",
+  "en": "On July 13, 2026, Deepnoid held a media day outlining its M4CXR commercialization strategy and stated it expects related revenue to begin in the fourth quarter following hospital-by-hospital performance verification. Following device approval from the Ministry of Food and Drug Safety in late June 2026, M4CXR has since been supplied under contract to Pusan National University Hospital in August and to Hwasun Chonnam National University Hospital on August 31, expanding clinical adoption at tertiary general hospitals. Both contracts share a common origin in the Ministry of Health and Welfare's AI-based clinical system support project for regionally responsible hospitals. The company also stated it completed the regulatory approval process for its agent-AI-based software medical device 'AxonFlow' on August 6, and it plans to unveil a medical-specialized foundation model called 'MedZero' by year-end while expanding applicable modalities to CT and MRI. At the media day, CEO Choi Woo-sik cited a target of \"KRW 4-5 billion in revenue per product\" as an indication of the scale expected from future service expansion. The company disclosed plans to deploy a substantial portion of its December 2025 rights-offering proceeds into medical AI R&D, clinical trials, and sales and marketing, and to pursue overseas approvals in stages, starting with clinical trials in Vietnam and the Philippines, followed by the United States and Singapore in 2026 and Europe in 2027. These plans, however, remain company-stated targets and ongoing procedures, and the actual timing and scale of revenue recognition may vary depending on hospital-level adoption speed and reimbursement policy. In the industrial AI segment, additional order wins from airports and manufacturers remain another variable for annual revenue."
  },
  "valuation_comment": {
-  "ko": "딥노이드는 현재 영업·순이익 모두 적자 구조여서 이익 배수 기반 밸류에이션은 산출되지 않으며, 주당순손실(EPS -448원)은 지속적인 수익 공백을 보여 준다. 주가는 주당순자산(BPS 970원)을 웃도는 프리미엄 구간에서 형성되어 있어, M4CXR 인허가 이후 의료 AI 매출화 가속과 글로벌 시장 진출 등 미래 성장 기대치가 현재 주가에 상당 부분 선반영된 구조임을 시사한다. 배당은 실시하지 않아 배당수익률이 0%이며, 이는 연구개발·사업 확장 단계에 있는 동종 적자 AI 기업들의 공통적인 특성과 일치한다. 국내 의료 AI 상장 동종사들도 대부분 적자 운영 중이나, 매출 규모가 딥노이드보다 큰 기업들과 비교할 때 현재의 순자산 대비 프리미엄 수준은 실적 개선 모멘텀 실현 여부에 민감하게 연동될 가능성이 있다. 4개 사업연도 연속 영업 적자와 지속적인 현금 소진을 고려하면 향후 추가 자본 조달 가능성도 배제하기 어렵다.",
-  "en": "DeepNoid generates no positive earnings, leaving earnings-based multiples incalculable; earnings per share of –KRW 448 underscores the persistent revenue-to-profit gap. The stock is priced at a premium to per-share book value (BPS KRW 970), indicating that future growth expectations—particularly post-M4CXR authorization medical AI monetization and international expansion—are substantially embedded in the current price. The company pays no dividends (yield: 0%), consistent with the profile of loss-stage AI peers in a development and expansion phase. Most KOSDAQ-listed medical AI peers also operate in the red, but those with materially larger revenue bases suggest DeepNoid's premium-to-book pricing is sensitive to whether earnings recovery momentum materializes. Given four consecutive years of operating losses and persistent cash burn, the prospect of further equity issuance cannot be ruled out."
+  "ko": "딥노이드는 수년째 순손실이 지속되고 있어 주가수익비율(PER)은 산출되지 않는 상태이며, 이는 이익 기반 밸류에이션 지표로 현재 주가 수준을 평가하기 어렵다는 의미다. 주가순자산비율 측면에서는 순자산가치 대비 프리미엄이 존재하는 구간에서 거래되고 있는데, 이는 상용화 초기 단계의 성장 기대가 일부 반영된 결과로 해석될 수 있다. 다만 2025년 12월 유상증자로 총 발행주식수가 늘어난 반면 가중평균주식수는 이보다 낮게 유지되어, 주당 지표 비교 시 신주 발행에 따른 희석 효과를 함께 고려할 필요가 있다. 배당 측면에서는 현금배당을 실시하지 않는 무배당 정책을 유지하고 있어, 배당을 통한 주주환원 요소는 현재 밸류에이션 판단에 포함되지 않는다. 종합하면 현재의 시장 평가는 과거 실적이 아니라 M4CXR 상용화와 흑자전환 목표 달성 여부에 대한 시장의 기대치를 상당 부분 반영하고 있다고 볼 수 있다.",
+  "en": "Deepnoid has posted net losses for several consecutive years, meaning its price-to-earnings ratio (PER) cannot be calculated, which makes it difficult to assess the current share price using earnings-based valuation metrics. In terms of the price-to-book ratio, the stock trades in a range that reflects a premium to net asset value, which can be interpreted as partly incorporating growth expectations tied to the early stage of commercialization. However, the December 2025 rights offering increased the total number of shares outstanding while the weighted-average share count remained lower, so per-share metric comparisons should account for the dilution effect from the new share issuance. On the dividend front, the company maintains a no-dividend policy with no cash distributions, meaning shareholder return through dividends is not currently a factor in valuation. Overall, the current market assessment appears to reflect market expectations regarding M4CXR commercialization progress and the achievement of the company's profitability target, more so than past financial performance."
  },
  "bull": [
   {
    "title": {
-    "ko": "M4CXR 인허가 완료 시 구조적 수익화 경로 가시화",
-    "en": "M4CXR Authorization Unlocks a Structural Monetization Pathway"
+    "ko": "생성형 의료AI 상용화 개시",
+    "en": "Generative Medical AI Commercialization Underway"
    },
    "body": {
-    "ko": "M4CXR은 생성형 AI 기반 의료기기로는 국내 최초 혁신의료기기(제119호)로 지정됐으며, 임상시험 완료 후 식약처 인허가 절차가 진행 중이다. 인허가 취득 시 신의료기술 평가유예 제도를 통해 비급여 즉시 진입이 가능하고, 기존 DEEP:CHEST 도입 병원망을 기반으로 신속한 채널 확장이 기대된다. DEEP:NEURO가 혁신의료기기→비급여 진입의 전례를 이미 만들었다는 점에서 M4CXR도 동일한 경로를 밟을 규제적 기반이 갖춰져 있다. 판독 시간을 수초 내로 단축하는 기술적 차별성과 1,000만 건 이상의 학습 데이터는 도입 병원에 실질적인 업무 효율 개선을 제공할 수 있는 강점이다.",
-    "en": "M4CXR has received Korea's first generative AI Innovation Medical Device designation (No. 119) and has completed clinical trials with MFDS authorization underway. Upon approval, the New Medical Technology Assessment Deferral System enables immediate non-reimbursement market entry, and the existing DEEP:CHEST hospital network provides a ready-made distribution channel. DEEP:NEURO's precedent—from Innovation Medical Device designation to non-reimbursement entry—has established the regulatory template for M4CXR to follow. The solution's ability to generate radiology report drafts within seconds, trained on over 10 million report-image pairs, offers hospitals a tangible efficiency gain that supports adoption."
+    "ko": "M4CXR이 2026년 6월 말 식약처 품목허가를 받은 뒤 부산대병원, 화순전남대병원 등 상급종합병원에 잇따라 공급되며 실제 매출로 이어질 계약 기반이 확대되고 있다. 두 계약 모두 보건복지부 지원사업과 연계돼 있어 공공재정을 활용한 추가 확산 가능성도 있다. 회사는 4분기부터 관련 매출이 본격화될 것으로 기대한다고 밝혔다.",
+    "en": "Following device approval from the Ministry of Food and Drug Safety in late June 2026, M4CXR has been supplied in succession to tertiary general hospitals including Pusan National University Hospital and Hwasun Chonnam National University Hospital, expanding the contract base that could translate into actual revenue. Both contracts are tied to a Ministry of Health and Welfare support program, raising the possibility of further public-finance-backed expansion. The company has stated it expects related revenue to become meaningful starting in the fourth quarter."
    }
   },
   {
    "title": {
-    "ko": "국책과제·정부 지원을 통한 R&D 비용 부담 완화",
-    "en": "Government Grants Reduce R&D Cost Burden"
+    "ko": "자본구조 개선",
+    "en": "Improved Capital Structure"
    },
    "body": {
-    "ko": "산업부 주관 5개년 116억원 규모 의료 특화 생성형 AI 국책과제에서 49.8억원의 정부 출연금을 수령하며 자체 현금 소진 속도를 일부 완화할 수 있다. 과기부·대통령경호처 주관 123억원 국책과제 수주 등 다수의 정부 R&D 사업 레퍼런스를 보유해 추가 수주 가능성도 열려 있다. 퓨리오사AI 협업을 통한 국산 NPU 실증 완료 등 정부 지원 사업을 통해 기술 고도화 자원을 외부에서 조달하는 구조적 이점이 있다. 정부 출연금은 상업 매출과 무관하게 일정 주기로 수령되어 운전자본 부담을 일부 완충하는 역할을 한다.",
-    "en": "The five-year KEIT project provides KRW 4.98 billion in government grants, partially offsetting proprietary cash burn. Prior grant wins—including a KRW 12.3 billion national project led by the Ministry of Science and the Presidential Security Service—demonstrate a track record of competing successfully for public R&D funding, keeping the pipeline open. The recently completed NPU validation with Furiosa AI under a NIPA-sponsored program illustrates how government co-funding provides externally sourced resources for technology advancement. Grant disbursements arrive on a scheduled basis independent of commercial sales, providing a buffer against operating cash outflows."
+    "ko": "2025년 12월 270억원 규모 유상증자로 자기자본이 2024년 190.4억원에서 2025년 284.8억원으로 늘었고, 부채비율은 67.9%에서 42.0%로 낮아졌다. 이는 법인세차감전손실 비율 부담을 일정 부분 완화하는 효과가 있다. 조달 자금은 의료AI 연구개발과 해외 임상에 집중 투입될 계획이다.",
+    "en": "A KRW 27 billion rights offering in December 2025 lifted equity from KRW 19.04 billion in 2024 to KRW 28.48 billion in 2025 and lowered the debt ratio from 67.9% to 42.0%. This has somewhat eased the burden associated with the pre-tax loss ratio. The proceeds are earmarked for concentrated investment in medical AI R&D and overseas clinical trials."
    }
   },
   {
    "title": {
-    "ko": "MDSAP 인증·해외 거점 구축으로 글로벌 확장 발판 마련",
-    "en": "MDSAP Certification and Overseas Hubs Build a Global Expansion Foundation"
+    "ko": "산업AI 부문의 이원화된 매출 기반",
+    "en": "Diversified Revenue Base via Industrial AI"
    },
    "body": {
-    "ko": "MDSAP 인증 취득으로 미국 FDA 및 일본 PMDA의 심사 절차가 간소화되어 선진국 시장 진입 장벽이 낮아졌다. JPI 헬스케어와의 MOU(미국·일본), 두바이 지사 설립(UAE·GCC·북아프리카), 오미넥스트·헬스허브를 통한 동남아 의료 시장 진출 등 다중 해외 채널이 구축됐다. 보안 AI 솔루션(딥시큐리티)은 태국·인도네시아에서 이미 영업 중이며, 코그넥스와의 파트너십은 딥팩토리의 글로벌 머신비전 시장 접근성을 높인다. 중동 원격 판독 시장이 2021년 8,900만 달러에서 2028년 2억 2,800만 달러로 성장이 전망되는 점은 두바이 거점의 중장기 기회를 뒷받침한다.",
-    "en": "MDSAP certification simplifies U.S. FDA and Japan PMDA review processes, materially lowering barriers to entering top-tier markets. Multiple international channels are now in place: JPI Healthcare MOU targeting U.S. and Japan, Dubai subsidiary for UAE/GCC/North Africa, and partnerships with Ominext and Healthhub for Southeast Asian healthcare entry. DEEP:SECURITY is already generating commercial revenue in Thailand and Indonesia, and the Cognex partnership enhances DEEP:FACTORY's access to the global machine vision market. The Middle East remote radiology market is forecast to grow from USD 89 million (2021) to USD 228 million (2028), supporting the long-term commercial potential of the Dubai hub."
+    "ko": "공항 보안검색, 반도체·디스플레이·이차전지 제조라인 품질검사 등 산업AI 부문이 의료AI와 별도의 매출 축을 형성하고 있다. 이는 의료AI 상용화 지연 시에도 일정 수준의 매출 기반을 유지할 수 있는 완충 요인이 될 수 있다. 다만 프로젝트성 수주 구조로 인해 분기별 편차가 크다는 점은 함께 고려해야 한다.",
+    "en": "The industrial AI segment, spanning airport security screening and quality inspection for semiconductor, display, and battery manufacturing lines, forms a revenue pillar separate from medical AI. This can serve as a buffer that maintains a baseline revenue level even if medical AI commercialization is delayed. However, the project-based order structure also produces significant quarter-to-quarter variability that should be weighed alongside this factor."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "극단적 분기 매출 변동성과 2026Q1 급락",
-    "en": "Extreme Quarterly Revenue Volatility and the 2026Q1 Collapse"
+    "ko": "매출 변동성과 고정비 부담",
+    "en": "Revenue Volatility and Fixed-Cost Burden"
    },
    "body": {
-    "ko": "2025년 2분기에 분기 최대치인 36.7억원 매출을 달성했으나, 이후 3·4분기를 거쳐 2026년 1분기에는 3.6억원으로 급락하며 수주-납품 사이클의 극단적 변동성이 드러났다. 산업 AI 대형 계약 완납 후 후속 수주 공백이 발생하는 반복 패턴이 확인되며, 분기 영업손실도 -39.8억원으로 역대 최대 수준에 달했다. 이러한 매출 구조 하에서 연간 영업손실 100억원대가 지속될 경우 현금 소진 속도와 추가 증자 압력이 재차 커질 수 있다.",
-    "en": "After peaking at KRW 3.67 billion in 2025Q2, quarterly revenue plummeted to KRW 357 million in 2026Q1, exposing extreme order-cycle volatility in which post-delivery vacuums follow large contract completions. The operating loss in 2026Q1 reached a record KRW –3.98 billion. If annual operating losses remain in the KRW 10 billion-plus range against this lumpy revenue base, the pace of cash erosion and the pressure for additional equity raises will escalate again."
+    "ko": "2026년 1분기 매출은 3.6억원까지 급감했으나 같은 기간 영업손실은 -39.8억원으로 오히려 확대돼, 매출 감소가 손익에 그대로 반영되는 구조가 드러났다. 최근 네 개 분기 합산 순손실(-143.2억원)은 2025년 연간 순손실(-107.5억원)을 이미 초과했다. 매출 인식이 특정 대형 계약에 의존하는 구조여서 분기별 실적 예측 가능성이 낮다.",
+    "en": "Revenue plunged to KRW 357 million in 1Q26, yet the operating loss for the same quarter widened to KRW -3.98 billion, revealing a structure in which revenue declines flow directly through to the bottom line. The trailing four-quarter net loss of KRW -14.32 billion has already exceeded the full-year 2025 net loss of KRW -10.75 billion. Because revenue recognition depends heavily on specific large contracts, quarter-to-quarter earnings predictability remains low."
    }
   },
   {
    "title": {
-    "ko": "의료 AI 수익화 속도가 기대보다 더딜 가능성",
-    "en": "Medical AI Monetization May Proceed More Slowly than Expected"
+    "ko": "법인세차감전손실 비율 부담",
+    "en": "Pre-Tax Loss Ratio Pressure"
    },
    "body": {
-    "ko": "DEEP:NEURO가 2024년 10월 비급여 시장에 진입했음에도 의료 AI 부문이 2024년 전체 매출에서 4.4%에 불과해 시장 침투 속도가 제한적임이 확인됐다. M4CXR 인허가 목표 시점(2026년 상반기)이 이미 상반기 말에 도달했음에도 2026Q1 실적에서 의료 AI 매출 증가 신호가 없어 일정 지연 가능성을 배제하기 어렵다. 비급여→급여화 전환 과정에서 건강보험심사평가원의 수가 결정이 예상보다 낮게 설정될 경우 의료 AI 부문 수익성에 직접적인 부정적 영향이 발생할 수 있다.",
-    "en": "Despite DEEP:NEURO entering the non-reimbursement market in October 2024, the Medical AI segment still represented only 4.4% of FY2024 revenue, indicating slow market penetration. With the H1 2026 M4CXR authorization target window now ending and 2026Q1 showing no incremental medical AI revenue, timeline slippage cannot be excluded. Should HIRA set non-reimbursement or insurance fees below management expectations during the transition from non-reimbursement to coverage, the medical AI segment's revenue potential could be materially dampened."
+    "ko": "딥노이드는 기술성장기업 특례에 따른 법인세차감전손실 관리종목 지정 유예를 받았으나, 2024년 법차손 비율이 47.7%에 달해 관리종목 지정 기준인 50%에 근접했던 것으로 알려졌다. 2025년 12월 유상증자로 자기자본을 늘려 완충 여력을 마련했지만, 적자가 지속될 경우 이 비율이 다시 높아질 가능성이 있다. 코스닥 규정상 최근 3년 중 2개 사업연도에서 이 비율이 50%를 초과하면 관리종목으로 지정될 수 있다.",
+    "en": "Deepnoid received an exemption from pre-tax-loss-related administrative-issue designation under the technology-growth-company special listing framework, but its pre-tax loss ratio reportedly reached 47.7% in 2024, close to the 50% designation threshold. The December 2025 rights offering increased equity to create some buffer, but continued losses could push this ratio higher again. Under KOSDAQ listing rules, exceeding 50% in two of the most recent three fiscal years can trigger administrative-issue designation."
    }
   },
   {
    "title": {
-    "ko": "지속적 자본 희석과 현금 소진 구조",
-    "en": "Persistent Equity Dilution and Cash Burn Structure"
+    "ko": "반복적 지분 희석과 현금소진",
+    "en": "Recurring Equity Dilution and Cash Burn"
    },
    "body": {
-    "ko": "2022~2025년 4개 사업연도 누적 영업손실은 약 343억원에 달하며, 영업현금흐름은 모두 음수를 기록했다. 2024년에 이어 2025년에도 179억원 규모의 유상증자를 단행하며 기존 주주 지분이 희석됐고, 현재 최대주주 지분율은 기존보다 축소된 상태다. 연간 영업 손실 구조가 해소되지 않는 한 자기자본은 계속 잠식될 수 있으며, 현재 자기자본 284.8억원도 향후 손실 추이에 따라 추가 자금 조달의 필요성이 다시 부각될 수 있다.",
-    "en": "Cumulative operating losses over FY2022–2025 total approximately KRW 34.3 billion, with operating cash flows negative in every year. A rights offering of KRW 17.9 billion in 2025 followed an earlier capital raise, sequentially diluting existing shareholders and reducing the founding CEO's ownership stake. Without a sustained turn toward profitability, the current KRW 28.5 billion equity base will continue to erode under ongoing net losses, and the likelihood of further capital raises remains elevated."
+    "ko": "딥노이드는 2023년 11월과 2025년 12월 두 차례 대규모 주주배정 유상증자를 실시해 상장 이후 조달 자금이 누적됐으며, 대주주 참여 비율이 낮았다는 지적이 제기된 바 있다. 영업활동현금흐름은 2022년부터 2025년까지 4개년 연속 마이너스를 기록해 외부 자금조달에 의존하는 구조가 이어지고 있다. 상용화가 예상보다 지연될 경우 추가 자본조달 필요성이 다시 제기될 수 있다.",
+    "en": "Deepnoid conducted two large-scale rights offerings in November 2023 and December 2025, accumulating substantial capital raised since its IPO, and concerns have been raised over the low participation rate of the controlling shareholder. Operating cash flow was negative for four consecutive years from 2022 through 2025, reflecting continued reliance on external financing. If commercialization is delayed beyond expectations, the need for additional capital raising could resurface."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "규제·인허가 지연 리스크",
-    "en": "Regulatory and Authorization Delay Risk"
+    "ko": "재무/관리종목 리스크",
+    "en": "Financial / Administrative Issue Risk"
    },
    "body": {
-    "ko": "M4CXR의 식약처 품목 허가 취득이 지연되거나 추가 보완 요구가 발생할 경우 핵심 성장 시나리오 전체가 후퇴한다. 미국 FDA, 일본 PMDA, 유럽 CE 등 해외 규제 심사는 예측 가능성이 낮고 비용이 큰 절차로, 특히 생성형 AI 기반 디지털 의료기기는 규제 기관의 심사 기준이 아직 형성 단계다. 혁신의료기술에서 건강보험 급여화로 전환 시 심사평가원의 수가 협상 결과가 기대치를 크게 밑돌 가능성도 잠재 리스크로 존재한다.",
-    "en": "A delay or additional data request in M4CXR's MFDS marketing authorization would undermine the core revenue growth thesis. Overseas regulatory reviews (U.S. FDA, Japan PMDA, EU CE) are costly and inherently unpredictable, particularly for generative AI-based digital medical devices where agency review criteria are still evolving. During the transition from innovation medical technology status to insurance coverage, HIRA reimbursement rate negotiations may deliver outcomes materially below management's assumptions."
+    "ko": "법인세차감전손실 비율이 관리종목 지정 기준인 50%에 근접했던 이력이 있어, 향후 적자가 지속될 경우 관리종목 지정 가능성이 재부각될 수 있다. 2025년 12월 유상증자로 자기자본을 확충했으나 이는 일회성 회계효과에 가까워, 근본적인 수익성 개선 없이는 위험이 재발할 수 있다는 지적이 업계 전반에서 제기된다. 코스닥 상장 규정상 최근 3개 사업연도 중 2개 연도에서 기준을 초과하면 관리종목으로 지정된다.",
+    "en": "The pre-tax loss ratio has historically approached the 50% administrative-issue designation threshold, and continued losses going forward could bring this risk back into focus. The December 2025 rights offering strengthened equity, but industry commentary has noted that such capital raises are closer to one-off accounting effects, meaning the risk could recur without a fundamental improvement in profitability. Under KOSDAQ listing rules, exceeding the threshold in two of the most recent three fiscal years results in administrative-issue designation."
    }
   },
   {
    "cat": {
-    "ko": "수주 집중도·대형 계약 의존 리스크",
-    "en": "Order Concentration and Large-Contract Dependency Risk"
+    "ko": "사업화 지연 리스크",
+    "en": "Commercialization Delay Risk"
    },
    "body": {
-    "ko": "2024년 실적은 이차전지 머신비전 대형 계약(75억원) 한 건에 크게 의존했으며, 이 계약 이후 발생한 수주 공백이 2025~2026년 매출 급감으로 직결됐다. 산업 AI 프로젝트 특성상 납기 지연, 검수 기준 미충족 등으로 매출 인식 시점이 이연될 수 있으며, 이차전지·디스플레이 특정 고객 집중도가 높아 해당 업종의 설비 투자 사이클 변화가 수주 파이프라인에 직접 영향을 미친다. 새로운 대형 계약 없이는 분기 매출의 정상화가 쉽지 않은 구조적 취약성이 존재한다.",
-    "en": "FY2024 results were heavily concentrated in a single large secondary battery machine-vision contract (KRW 7.5 billion), and the subsequent order vacuum directly caused the FY2025 and 2026Q1 revenue slumps. Industrial AI project revenues are susceptible to delivery delays and acceptance-test failures that defer recognition. High customer concentration in secondary battery and display manufacturers means shifts in those industries' capex cycles can materially impair DeepNoid's order pipeline. Without a new large contract win, structural revenue recovery will remain challenging."
+    "ko": "M4CXR을 비롯한 의료AI 솔루션의 매출 반영은 병원별 성능검증, 보험 수가 정책, 임상 검증 절차 등 다수의 외부 변수에 의존한다. 회사가 밝힌 4분기 매출 개시 목표가 지연될 경우 2027년 흑자전환 목표 역시 재조정될 가능성이 있다. 산업AI 부문 역시 프로젝트성 수주 구조로 인해 특정 계약의 성사 여부가 실적에 큰 영향을 미친다.",
+    "en": "Revenue recognition for medical AI solutions including M4CXR depends on numerous external variables such as hospital-specific performance verification, reimbursement policy, and clinical validation procedures. If the company's stated fourth-quarter revenue start is delayed, its 2027 profitability target could also require adjustment. The industrial AI segment likewise remains sensitive to the outcome of specific contracts given its project-based order structure."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화 및 기술 진입장벽 약화 리스크",
-    "en": "Competitive Intensity and Eroding Technology Barriers"
+    "ko": "지분 희석/자금조달 리스크",
+    "en": "Equity Dilution / Financing Risk"
    },
    "body": {
-    "ko": "글로벌 빅테크(구글·MS·엔비디아)와 국내외 의료 AI 스타트업들이 생성형 AI 기반 의료기기 시장 진입을 가속하고 있으며, 딥노이드의 선점적 혁신의료기기 지위가 후발주자의 유사 인허가로 희석될 수 있다. 오픈소스 LLM 기반의 의료 AI 개발이 활발해지며 기술적 진입장벽이 낮아지는 경향도 있다. 보안 AI 분야에서는 해외 대형 방산·보안 기업의 국내 공공시장 진입 가능성이 상존하며, 머신비전 시장에서는 코그넥스·키엔스 등 글로벌 선도 업체가 자체 AI 역량을 강화하고 있다.",
-    "en": "Global technology majors (Google, Microsoft, NVIDIA) and both domestic and overseas medical AI start-ups are accelerating their push into generative AI-based medical devices; DeepNoid's first-mover position may be diluted as competitors obtain similar MFDS designations. The proliferation of open-source LLM-based medical AI development is compressing technology barriers. In the security AI space, entry by large foreign defense and security vendors into Korean public procurement is a latent threat, while in machine vision, incumbents such as Cognex and Keyence are strengthening their own AI capabilities."
+    "ko": "상장 이후 두 차례의 대규모 주주배정 유상증자로 발행주식수가 크게 늘었으며, 향후 추가 자본조달이 필요할 경우 기존 주주의 지분 희석이 재차 발생할 수 있다. 영업활동현금흐름이 지속적으로 마이너스인 만큼 외부 자금조달 의존도가 높은 구조다. 대주주의 유상증자 참여율이 낮았던 전례가 있어 향후 조달 시 시장 신뢰도에 영향을 줄 수 있다.",
+    "en": "Two large-scale rights offerings since listing have significantly increased the number of shares outstanding, and any future need for additional capital could result in renewed dilution for existing shareholders. With operating cash flow persistently negative, the company remains highly dependent on external financing. Given the precedent of low controlling-shareholder participation in a prior rights offering, future capital raises could affect market confidence."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 하반기 초",
-    "en": "Early H2 2026"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "M4CXR 식약처 품목 허가 취득 여부: 2026년 상반기를 목표로 했던 인허가 일정의 실현 여부를 확인해야 한다. 허가 취득 이후 도입 병원 수 공시 및 비급여 건당 청구 개시 시점이 의료 AI 매출 가시화의 핵심 지표가 된다.",
-    "en": "M4CXR MFDS marketing authorization: Confirm whether the H1 2026 authorization target has been met or delayed. Post-approval hospital onboarding numbers and the commencement of per-case non-reimbursement billing are the key medical AI revenue indicators to monitor."
+    "ko": "2026년 3분기 보고서 공시 시점으로, M4CXR 관련 매출이 실제로 반영되기 시작했는지와 산업AI 부문 수주 상황을 함께 확인해야 한다.",
+    "en": "Around the disclosure of the 3Q26 quarterly report, check whether M4CXR-related revenue has actually begun to be recognized and monitor the order status of the industrial AI segment."
    }
   },
   {
    "when": {
-    "ko": "2026년 7월 말~8월",
-    "en": "Late July–August 2026"
+    "ko": "2026년 12월 중",
+    "en": "December 2026"
    },
    "what": {
-    "ko": "2026년 2분기(4~6월) 실적 공시: 2026Q1(3.6억원)의 급락이 일시적인지 확인할 수 있는 첫 기회다. 산업 AI 수주 잔고 소화 여부, M4CXR 인허가 후 초기 매출 인식 여부를 동시에 점검해야 한다.",
-    "en": "2026Q2 earnings release: First opportunity to determine whether the 2026Q1 revenue trough (KRW 357 million) is transient. Monitor both industrial AI backlog conversion and any initial M4CXR revenue recognition following potential authorization during the quarter."
+    "ko": "회사가 예고한 의료 특화 파운데이션 모델 'MedZero' 공개 일정과 CT·MRI 모달리티 확장 진행 상황을 확인할 필요가 있다.",
+    "en": "Track the company's announced timeline for unveiling its medical-specialized foundation model 'MedZero' and progress on expanding to CT and MRI modalities."
    }
   },
   {
    "when": {
-    "ko": "2026년 연중",
-    "en": "Throughout 2026"
+    "ko": "2027년 2~3월",
+    "en": "February-March 2027"
    },
    "what": {
-    "ko": "산업 AI 신규 대형 수주 공시: 이차전지·디스플레이·반도체 향 DEEP:FACTORY 추가 수주, 또는 코그넥스 파트너십을 통한 해외 수주가 발생할 경우 단기 매출 회복의 핵심 트리거가 된다.",
-    "en": "Industrial AI large-contract disclosures: New DEEP:FACTORY orders from battery, display, or semiconductor customers, or any international win via the Cognex partnership, would serve as near-term revenue recovery triggers."
+    "ko": "2026년 사업보고서 및 감사보고서 공시 시점으로, 4분기 매출 목표 달성 여부와 법인세차감전손실 비율에 따른 관리종목 지정 여부를 확인해야 한다.",
+    "en": "Around the disclosure of the FY2026 business and audit reports, verify whether the fourth-quarter revenue target was met and whether the pre-tax loss ratio triggers administrative-issue designation."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 상반기",
-    "en": "H2 2026–H1 2027"
+    "ko": "2027년 상반기",
+    "en": "First half of 2027"
    },
    "what": {
-    "ko": "미국 FDA·일본 PMDA 인허가 신청 일정 구체화 여부: MDSAP 인증 및 JPI 헬스케어 MOU를 기반으로 해외 인허가 신청이 실제로 개시되는지 확인하면 중장기 글로벌 매출 채널의 신뢰도를 평가할 수 있다.",
-    "en": "U.S. FDA and Japan PMDA filing timelines: Confirmation that regulatory filings are formally initiated—leveraging MDSAP certification and the JPI Healthcare MOU—would substantiate the credibility of the international revenue channel for the medium term."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기",
-    "en": "H2 2026"
-   },
-   "what": {
-    "ko": "산업부 국책과제 1차 연도 정부 출연금 수령 및 집행 현황, DEEP:NEURO 비급여 도입 병원 수 추이: 현금 흐름 보완 효과와 의료 AI 채택률 가속 여부를 동시에 가늠할 수 있는 지표다.",
-    "en": "First-year KEIT grant disbursement status and cumulative DEEP:NEURO non-reimbursement hospital count: These dual indicators assess both the cash flow buffering effect of government grants and the pace of medical AI adoption acceleration."
+    "ko": "회사가 목표로 제시한 2027년 흑자전환 진행 상황과 미국·싱가포르 등 해외 임상·인허가 절차의 진척 여부를 점검해야 한다.",
+    "en": "Assess progress toward the company's stated 2027 profitability target and the status of overseas clinical trials and regulatory approvals in markets such as the United States and Singapore."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "딥노이드는 의료·산업 AI를 동시에 영위하는 국내 희소한 포지셔닝을 보유하며, M4CXR 국내 최초 생성형 AI 혁신의료기기 지정, MDSAP 인증 취득, 116억원 규모 국책과제 선정 등 기술력과 규제 이정표 측면에서 2025년 한 해 동안 의미 있는 성과를 거뒀다. 그러나 연간 매출이 전년 대비 감소하고 2026년 1분기 분기 매출이 3.6억원으로 급락하는 등 단기 실적 가시성이 낮아 '성과 대비 현금 창출'의 괴리가 여전히 크다. 4개 사업연도 연속 영업손실과 이를 메우기 위한 반복적인 유상증자는 자본 희석의 구조적 부담으로 작용하고 있다. 향후 M4CXR 인허가 완료 시점과 병원 도입 속도, 산업 AI 신규 대형 수주 재개 여부가 성장 경로의 핵심 변수이며, 두 가지가 동시에 실현될 경우 수익 구조의 체질 개선이 가시화될 수 있다. 반면 인허가 지연, 수주 공백 지속, 추가 자본 조달의 삼중 리스크가 중첩될 경우 재무적 압박이 재차 심화될 수 있다. 강세·약세 시나리오가 현 시점에서는 비등하게 병존하고 있으며, 이 리포트는 투자 권유가 아닌 사실 기반 정보 제공을 목적으로 작성됐다.",
-   "en": "DeepNoid occupies a rare position in Korea as an AI company with simultaneous medical and industrial exposure, and in 2025 achieved meaningful regulatory and technology milestones: Korea's first generative AI Innovation Medical Device designation for M4CXR, MDSAP certification, and selection for a KRW 11.6 billion national R&D project. However, annual revenue declined from the prior year and 2026Q1 revenue dropped to KRW 357 million, widening the gap between milestone achievement and actual cash generation. Four consecutive years of operating losses addressed through repeated rights offerings have created a structural equity dilution burden. Looking ahead, the timing of M4CXR authorization and hospital adoption velocity, alongside renewal of large industrial AI order flow, are the pivotal variables; simultaneous realization of both would mark a genuine turn toward sustainable revenue growth. Conversely, a combination of authorization delays, continued order gaps, and further capital needs could deepen financial pressure. Bullish and bearish scenarios are roughly balanced at this stage. This report is prepared for informational purposes only and does not constitute an investment recommendation."
+   "ko": "딥노이드는 2022년부터 2025년까지 4개년 연속 영업손실과 순손실을 기록하며 산업AI 매출에 의존하는 불안정한 실적 구조를 이어왔다. 2026년 들어서는 매출이 분기별로 3.6억원에서 13.1억원 사이를 오르내리는 가운데 영업손실은 매 분기 30억원대를 유지해, 고정비 부담이 매출 변동을 그대로 손익에 반영시키는 모습을 보였다. 다만 M4CXR의 식약처 품목허가와 상급종합병원 공급 개시는 회사가 상장 이후 추진해온 의료AI 상용화 전략이 실행 단계로 진입했음을 보여주는 사실이며, 회사는 4분기 매출 개시와 2027년 흑자전환을 목표로 제시하고 있다. 동시에 2025년 12월 유상증자로 자본구조가 일부 개선됐음에도 법인세차감전손실 비율 부담과 반복적인 지분 희석, 지속적인 영업활동현금흐름 마이너스는 구조적으로 해소되지 않은 상태다. 산업AI와 의료AI라는 두 개의 독립적인 매출 축을 보유한 점은 안정성 측면에서 긍정적으로 볼 수 있으나, 두 부문 모두 프로젝트성 수주와 병원별 도입 절차에 좌우되는 특성상 실적 예측 가능성은 여전히 낮다. 향후 3분기·4분기 실적과 2026년 사업보고서상 법인세차감전손실 비율이 회사의 사업화 전략이 재무 안정성으로 이어지는지를 가늠하는 핵심 지표가 될 것으로 보인다.",
+   "en": "Deepnoid recorded operating and net losses for four consecutive years from 2022 through 2025, reflecting an unstable earnings structure heavily dependent on industrial AI revenue. In 2026, quarterly revenue has fluctuated between KRW 357 million and KRW 1.31 billion while operating losses have remained in the KRW 3 billion range each quarter, illustrating how fixed costs flow directly through to the bottom line regardless of revenue swings. At the same time, M4CXR's device approval from the Ministry of Food and Drug Safety and the start of supply to tertiary general hospitals represent concrete evidence that the medical AI commercialization strategy the company has pursued since its listing has entered an execution phase, with the company targeting the start of fourth-quarter revenue and a return to profitability in 2027. Simultaneously, despite a partial improvement in capital structure from the December 2025 rights offering, the pre-tax loss ratio burden, recurring equity dilution, and persistently negative operating cash flow remain structurally unresolved. Having two independent revenue pillars in industrial and medical AI can be viewed positively for stability, but earnings predictability remains low given that both segments depend on project-based orders and hospital-specific adoption procedures. Third- and fourth-quarter results, along with the pre-tax loss ratio in the FY2026 business report, are likely to be key indicators of whether the company's commercialization strategy translates into financial stability."
   }
  },
  "sources": [
-  "https://www.butler.works/ko/companies/01344831",
-  "https://alphasquare.co.kr/home/stock-summary?code=315640",
-  "https://www.thinkpool.com/item/315640/news/16734852",
-  "https://m.thinkpool.com/item/315640",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A315640&cID=&MenuYn=Y&ReportGB=&NewMenuID=101&stkGb=701",
   "https://www.investing.com/equities/deepnoid",
-  "https://m.irgo.co.kr/IR-COMP/315640/%EB%94%A5%EB%85%B8%EC%9D%B4%EB%93%9C-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A315640&cID=&MenuYn=Y&ReportGB=&NewMenuID=103&stkGb=701",
-  "https://invest.deepsearch.com/stock/315640/",
-  "https://www.mt.co.kr/tech/2025/12/11/2025121113162334146",
-  "https://news.nate.com/view/20251211n19176",
-  "https://m.thinkpool.com/compDiscuss/cont/1009552",
-  "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202507311456559000103248",
-  "https://www.biotimes.co.kr/news/articleView.html?idxno=12262",
-  "https://pharm.edaily.co.kr/News/Read?newsId=02683046642333904",
   "https://www.jobkorea.co.kr/recruit/co_read/c/obskorea",
-  "https://www.bloter.net/news/articleView.html?idxno=626560",
-  "https://m.medigatenews.com/news/4002769325"
+  "https://alphasquare.co.kr/home/stock-summary?code=315640",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A315640&cID=&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
+  "https://www.thebell.co.kr/front/newsview.asp?key=202607131524115920102520",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1698103350726.pdf",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=yxpfdFYg1Q4QJ5hq",
+  "https://m.saramin.co.kr/job-search/company-info-view/finance?csn=VCtPUnduQ0diZjdycnEyNFJ6L3REQT09",
+  "https://thevc.kr/deepnoid",
+  "https://www.deepnoid.com/",
+  "https://www.hankyung.com/article/2025022695326",
+  "https://www.mt.co.kr/tech/2026/08/31/2026083109530048215",
+  "https://biz.heraldcorp.com/article/10829233",
+  "https://m.irgo.co.kr/IR-COMP/315640/",
+  "https://www.medipana.com/news/articleView.html?idxno=414468",
+  "https://biz.heraldcorp.com/article/10807269",
+  "https://www.hankyung.com/article/2025030922371",
+  "https://m.finance.daum.net/quotes/A315640/news/disclosure/20251224101403"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "315640",
  "name": "딥노이드",
  "name_en": "DEEPNOID Inc.",
@@ -234,9 +224,9 @@
   "인공지능(AI)"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 00:51",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:02",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -339,14 +329,14 @@
    }
   ],
   "valuation": {
-   "price": 1645,
-   "mcap": 0.0483,
+   "price": 1764,
+   "mcap": 0.0518,
    "shares": 29372232,
    "total_shares": 29372232,
    "wavg_shares": 22770964,
    "per": null,
    "eps": -556,
-   "pbr": 1.7537,
+   "pbr": 1.8806,
    "bps": 938,
    "roe_ttm": -77.5,
    "ttm_window": "2025Q3~2026Q2",

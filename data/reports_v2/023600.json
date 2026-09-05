@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "수직계열화 원가 강점 vs 마진 하락 — 이익 저점 확인이 관건",
-  "en": "Vertical Integration Buffers Costs, Yet Margin Compression Demands a Profit Floor"
+  "ko": "원지 계열화가 지지한 이익, 마진은 4년째 축소",
+  "en": "Vertical Integration Cushions Profit as Margins Slide for Fourth Year"
  },
  "lead": {
-  "ko": "1973년 창립 이래 원지 생산(고려제지)에서 골판지 상자 가공까지 수직계열화를 완성한 국내 4대 골판지 그룹의 모회사이나, 2023년 이후 원가 급등과 판가 전가 지연으로 연결 영업이익률이 고점 대비 절반 이하로 압축됐으며, 별도 모회사가 2025년 영업손실로 전환된 점이 핵심 과제로 부상해 있다.",
-  "en": "As the listed holding company of Korea's fourth-largest corrugated packaging group—vertically integrated from raw liner production (Koryo Paper) through finished box manufacturing—Sambo Corrugated has seen its consolidated operating margin halve from its 2022–23 peak due to surging raw-material costs and limited pricing power, while the stand-alone parent slipped to an operating loss in 2025."
+  "ko": "삼보판지는 원지 생산 자회사를 통한 수직계열화 덕분에 골판지 업계 전반의 수익성 악화 국면에서도 연간 흑자 기조를 유지해왔지만, 영업이익률은 2022년 이후 4년 연속 낮아지는 흐름을 보이고 있다.",
+  "en": "Sambo Corrugated Board has kept annual operating profitability positive through vertical integration with paper-making subsidiaries even as the broader corrugated packaging industry struggled, but its operating margin has declined for four consecutive years since 2022."
  },
  "keypoints": [
   {
-   "ko": "수직계열화(원지→원단→상자) 구조로 2024년 상반기 매출원가율 70%대 유지 — 경쟁사(82~86%) 대비 원가 경쟁력 뚜렷",
-   "en": "Vertical integration (liner → corrugated medium → finished boxes) kept the cost-of-goods ratio in the low 70s in H1 2024, well below the 82–86% range of top peers."
+   "ko": "2025년 연결 매출은 5,399억원, 영업이익은 299억원(영업이익률 5.5%)으로 전년 대비 매출 -3.3%, 영업이익 -22.8%를 기록했다.",
+   "en": "2025 consolidated revenue was KRW 539.9 billion and operating profit was KRW 29.9 billion (operating margin 5.5%), down 3.3% and 22.8% year-on-year respectively."
   },
   {
-   "ko": "연결 영업이익률 2023년 12.1% → 2025년 5.5% → 2026Q1 run-rate 약 4%로 지속 하락 중, 이익 저점 확인이 주가 재평가의 선결 조건",
-   "en": "Consolidated operating margin has trended down from 12.1% (2023) to 5.5% (2025), with 2026 Q1 tracking near ~4%; a visible earnings floor is the prerequisite for any re-rating."
+   "ko": "영업이익률은 2022년 11.6%→2023년 12.1%→2024년 6.9%→2025년 5.5%로 4년 연속 하락하는 마진 축소 흐름을 보였다.",
+   "en": "The operating margin fell for four straight years, from 11.6% in 2022 and 12.1% in 2023 to 6.9% in 2024 and 5.5% in 2025."
   },
   {
-   "ko": "별도(모회사 단독) 기준 2025년 영업손실 전환(-45억원), 연결 흑자는 자회사(고려제지 등) 의존 구조임을 시사",
-   "en": "On a standalone basis the parent recorded an operating loss of roughly ₩4.5 bn in 2025, revealing that consolidated profitability relies heavily on subsidiary contributions, primarily Koryo Paper."
+   "ko": "2026년 2분기 영업이익은 165.0억원으로 직전 분기(53.4억원) 및 전년 동기(97.0억원) 대비 뚜렷하게 반등했다.",
+   "en": "Operating profit in Q2 2026 rebounded sharply to KRW 16.5 billion, up from KRW 5.3 billion in the prior quarter and KRW 9.7 billion a year earlier."
   },
   {
-   "ko": "부채비율 28%대, 연간 영업현금흐름 500억원 이상의 견조한 재무구조로 단기 유동성 리스크는 제한적",
-   "en": "A debt ratio in the high-20% range and annual operating cash flow above ₩50 bn point to a sound balance sheet with limited near-term liquidity risk."
+   "ko": "원지 생산 자회사를 보유한 수직계열화 구조가 경쟁사 대비 낮은 매출원가율로 이어졌다는 업계 분석이 있다.",
+   "en": "Industry analysis has pointed to the company's vertically integrated structure, including paper-making subsidiaries, as a factor behind its lower cost-of-sales ratio versus peers."
   },
   {
-   "ko": "2025년 결산 주당 210원 현금배당 확정(2026년 주총 결의), 순자산(BPS 37,705원) 대비 현저한 할인 구간 거래 중",
-   "en": "A ₩210 per-share cash dividend for FY2025 was formally approved at the March 2026 AGM; the stock trades at a steep discount to its book value per share of ₩37,705."
+   "ko": "별도(법인 단독) 기준으로는 2025년 영업손실과 순손실을 기록해, 연결실적과 개별실적 간 괴리가 존재한다.",
+   "en": "On a standalone (non-consolidated) basis, the company posted an operating loss and a net loss in 2025, revealing a gap between consolidated and standalone results."
   }
  ],
  "business": {
-  "ko": "삼보판지(023600)는 1973년 설립, 1996년 코스닥 상장한 골판지 전문 그룹의 상장 지주 격 모회사다. 연결 실체는 '원지 생산 → 골판지 원단 → 골판지 상자 가공' 전 공정을 아우르는 완전한 수직계열화 체계를 갖추고 있으며, 이는 비용 효율성의 핵심 원천이다. 핵심 자회사인 고려제지(지분율 약 85.8%)는 골판지용 라이너·골심지·도공지·Pre-Print 원지를 생산하며 그룹 원재료 조달의 근간을 담당한다. 한청판지와 삼화판지는 지방 영업망 확충 및 추가 가공·판매 기능을 맡아 그룹 전체의 커버리지를 확대한다. 삼보판지 본사는 경기도 시흥 시화공장과 전라북도 익산공장 2개 거점을 운영 중이며 시화공장의 월 생산능력은 2,200만㎡에 달한다. 제품은 공산품·식품·의약품·농수산물 외포장에 쓰이는 골판지 및 골판지 상자로, 100% 주문생산 방식이다. 주요 납품처는 쿠팡·CJ 등 이커머스·물류 대기업을 포함한 대형 수요처로 구성돼 있다. 국내 골판지 시장은 아세아제지, 태림포장, 신대양제지, 삼보판지, 한국수출포장 등 상위 5개 계열사가 시장의 70~80%를 과점하는 구조이며, 삼보판지는 원가 경쟁력을 핵심 차별화 요소로 내세운다. ISO 9001·ISO 14001·FSC® 인증을 보유해 친환경 경영 기반도 갖추고 있다.",
-  "en": "Sambo Corrugated Board (023600), founded in 1973 and KOSDAQ-listed since 1996, effectively serves as the listed parent of a fully vertically integrated corrugated packaging group. The consolidated entity covers every step from liner production through corrugated-medium converting to finished box fabrication—the structural basis of its cost advantage. Core subsidiary Koryo Paper (≈85.8% stake) supplies liner, fluting medium, coated board, and Pre-Print base paper, underpinning the group's raw-material self-sufficiency. Han-Cheong Packaging and Samhwa Packaging handle regional distribution and further converting, broadening the group's market reach. The parent operates two production sites—Sihwa (Siheung, Gyeonggi) and Iksan (North Jeolla)—with a monthly capacity of 22 million m² at Sihwa alone. Products are 100% custom-ordered, covering boxes for consumer goods, food, pharmaceuticals, and agricultural produce. Major customers include large e-commerce and logistics companies such as Coupang and CJ. Nationally, five major groups including Sambo command roughly 70–80% of the market, and Sambo differentiates through cost efficiency. The group holds ISO 9001, ISO 14001, and FSC® certifications underpinning its ESG positioning."
+  "ko": "삼보판지는 1973년 설립돼 골판지 및 골판지상자를 제조·판매하는 업체로, 1996년 코스닥시장에 상장했다. 공산품, 식품, 의약품, 농수산물 등 각종 제품의 외부 포장에 쓰이는 골판지 원단과 상자가 핵심 제품이며, 계열회사가 골판지 제조에 쓰이는 라이너지·골심지 등 원지를 생산해 공급하는 구조를 갖추고 있다. 2005년 고려제지 지분을 인수해 원지 자회사로 편입시키면서 원지-원단-상자로 이어지는 수직계열화 기반을 마련했다. 이후 동진판지, 한청판지, 삼화판지 등도 잇따라 100% 자회사로 편입해 지방 영업망과 생산 능력을 확충했다. 국내 골판지 시장은 글로벌세아그룹, 아세아제지, 신대양제지, 삼보판지, 한국수출포장 등 상위 5개사가 시장 점유율 70~80%를 나눠 갖는 과점 구조이며, 이들 5개사 외에도 2,700여 개에 달하는 영세 가공업체가 난립해 있다. 이 가운데 삼보판지는 원가 경쟁력이 두드러지는데, 2024년 상반기 말 기준 골판지 업계 상위 5개사 중 유일하게 매출원가율이 70%대를 기록했다는 분석이 나왔다. 핀가이드 기업정보에 따르면 전체 매출의 70% 가까이를 골판지 원단과 상자 매출이 차지하고 있어, 원지보다 가공·완제품 부문의 비중이 더 크다. 지배구조 측면에서는 최대주주인 류진호 대표이사를 포함한 특수관계인의 지분이 60%대 중반에 이르는 등 오너 지배력이 높은 편이다.",
+  "en": "Founded in 1973, Sambo Corrugated Board manufactures and sells corrugated board and corrugated boxes, and listed on KOSDAQ in 1996. Its core products are corrugated sheets and boxes used for outer packaging of manufactured goods, food, pharmaceuticals, and agricultural and marine products, while affiliated companies produce liner paper and medium paper used to make corrugated board. In 2005 the company acquired a stake in Koryo Paper, bringing a raw-paper subsidiary in-house and establishing a vertically integrated chain from raw paper to sheet to box. It subsequently made Dongjin Panji, Hancheong Panji, and Samhwa Panji wholly owned subsidiaries, expanding its regional sales network and production capacity. Korea's corrugated market is an oligopoly in which the top five players—Global SAE-A Group, Asia Paper, Shindaeyang Paper, Sambo Corrugated Board, and Korea Export Packaging—together hold roughly 70-80% share, alongside more than 2,700 small-scale converters. Within this group, Sambo stands out for cost competitiveness; one analysis found it was the only company among the top five with a cost-of-sales ratio in the 70% range as of mid-2024. According to FnGuide company data, corrugated sheet and box sales account for close to 70% of total revenue, making the converted/finished-product segment larger than the raw-paper segment. On governance, ownership is concentrated, with CEO Ryu Jin-ho and related parties together holding roughly the mid-60% range of shares."
  },
  "earnings": {
-  "ko": "연결 매출은 2022년 5,820억원을 정점으로 2023년 5,556억원, 2024년 5,583억원, 2025년 5,399억원으로 완만히 감소했다. 영업이익은 훨씬 가파른 하락세를 보였다. 2022년 676억원(OPM 11.6%)·2023년 674억원(OPM 12.1%)의 고점을 기록한 뒤 2024년 387억원(OPM 6.9%), 2025년 299억원(OPM 5.5%)으로 2년 연속 급감했는데, 이는 폐지 가격 급등에 따른 원지 가격 인상분을 대형 수요처와의 협상 열위로 충분히 전가하지 못한 구조적 원인에 기인한다. 분기별로는 2025Q2(영업이익 97억원)가 연내 최고치였으나 Q3(66억원)·Q4(65억원)로 떨어진 뒤 2026Q1에 53억원으로 추가 감소했다. 2026Q1 매출은 1,311억원으로 전년 동기(1,278억원) 대비 소폭 증가했음에도 영업이익은 25% 이상 줄어, 외형보다 이익 압박이 더 심하다는 점을 보여준다. 지배주주 귀속 순이익은 2023년 535억원에서 2025년 270억원으로 절반 수준으로 줄었고 2026Q1에는 56억원을 기록했다. 주목할 점은 별도 모회사(공시 기준) 2025년 영업손실이 약 -45억원, 순손실 약 -21억원으로 전환돼, 연결 이익의 상당 부분이 고려제지 등 자회사에서 창출됨을 시사한다는 것이다. 영업활동현금흐름은 2022~2023년 720~749억원에서 2025년 557억원으로 감소했으나 꾸준히 흑자를 유지하고 있으며, 부채비율은 2023년 25.0%에서 2025년 28.3%로 소폭 상승에 그쳐 재무 건전성은 견조하게 유지되고 있다.",
-  "en": "Consolidated revenue peaked at ₩582 bn in 2022 and drifted to ₩540 bn in 2025. Operating profit fell far more sharply—from ₩67.4 bn (OPM 12.1%) in 2023 to ₩38.7 bn (OPM 6.9%) in 2024 and ₩29.9 bn (OPM 5.5%) in 2025—as a roughly 20% hike in base-paper prices could not be fully passed on to large customers. Quarterly data show a peak of ₩9.7 bn OP in 2025 Q2, declining to ₩6.6 bn in Q3, ₩6.5 bn in Q4, and ₩5.3 bn in 2026 Q1, even as the top line edged up slightly year-on-year. Controlling-interest net profit nearly halved from ₩53.5 bn in 2023 to ₩27.0 bn in 2025. Notably, the stand-alone parent reported an operating loss of approx. ₩4.5 bn and net loss of ₩2.1 bn in FY2025, implying the consolidated bottom line relies heavily on subsidiary earnings. Operating cash flow remained positive throughout—₩74.9 bn (2023), ₩65.6 bn (2024), ₩55.7 bn (2025)—and the debt ratio has stayed in the 25–28% range, underscoring financial stability even as headline profitability contracts."
+  "ko": "삼보판지의 연결 매출액은 2022년 5,820억원에서 2023년 5,556억원, 2024년 5,583억원, 2025년 5,399억원으로 4년째 5,400억~5,800억원대에서 정체된 흐름을 보였다. 영업이익률은 2022년 11.6%, 2023년 12.1%로 두 자릿수를 유지했으나 2024년 6.9%, 2025년 5.5%로 뚜렷하게 낮아지며 4년 연속 마진이 축소되는 추세를 보였다. 지배주주순이익 역시 2022년 562억원에서 2023년 534억원, 2024년 325억원, 2025년 270억원으로 감소세를 이어갔다. 분기별로 보면 2025년 2분기 영업이익 97.0억원에서 3분기 65.8억원, 4분기 65.0억원, 2026년 1분기 53.4억원까지 낮아진 뒤, 2026년 2분기 165.0억원으로 크게 반등했다. 이 2026년 2분기 실적은 매출액 1,535억원(전년 동기 대비 +13.3%), 영업이익 165억원(전년 동기 대비 약 +70%)으로, 한 매체는 이를 두고 원지 제조 계열사를 보유한 업체와 원지를 사들여 가공만 하는 업체 간 실적 편차가 뚜렷하게 나타난 결과라고 짚었다. 같은 시기 경쟁사인 태림포장은 별도 기준 영업손실을 기록했고, 업계 관계자는 경기 영향으로 골판지업계 전반이 어려운 상황이라고 진단했다. 한편 별도(법인 단독) 기준으로는 2025년 매출 2,083억원에 영업손실 45억원, 순손실 21억원을 기록해, 개별 법인 실적과 연결 실적 간 괴리가 확인된다. 이는 원지 생산을 담당하는 자회사들의 이익이 연결실적을 지지하는 반면, 상자·원단 가공을 주로 하는 모회사 자체 사업은 원재료비 부담과 판가 반영 지연에 상대적으로 더 취약한 구조를 시사한다.",
+  "en": "Consolidated revenue moved from KRW 582.0 billion in 2022 to KRW 555.6 billion in 2023, KRW 558.3 billion in 2024, and KRW 539.9 billion in 2025, staying in a roughly KRW 540-580 billion range for four straight years. The operating margin held in double digits at 11.6% in 2022 and 12.1% in 2023, then fell sharply to 6.9% in 2024 and 5.5% in 2025, marking four consecutive years of margin compression. Net income attributable to owners also declined, from KRW 56.2 billion in 2022 to KRW 53.5 billion in 2023, KRW 32.5 billion in 2024, and KRW 27.0 billion in 2025. On a quarterly basis, operating profit fell from KRW 9.7 billion in Q2 2025 to KRW 6.6 billion in Q3, KRW 6.5 billion in Q4, and KRW 5.3 billion in Q1 2026, before rebounding sharply to KRW 16.5 billion in Q2 2026. That Q2 2026 result—revenue of KRW 153.5 billion (up about 13.3% year-on-year) and operating profit of KRW 16.5 billion (up roughly 70% year-on-year)—was noted by one outlet as reflecting a clear performance gap between companies with raw-paper subsidiaries and those that only convert purchased paper. Around the same period, competitor Taerim Packaging posted a standalone operating loss, and an industry source described conditions across the corrugated sector as difficult given the economy. Separately, on a standalone basis the parent entity alone recorded 2025 revenue of KRW 208.3 billion alongside an operating loss of KRW 4.5 billion and a net loss of KRW 2.1 billion, confirming a gap between standalone and consolidated results. This suggests that profits from raw-paper subsidiaries are supporting consolidated earnings, while the parent's own box/sheet conversion business appears relatively more exposed to raw material cost pressure and delayed price pass-through."
  },
  "industry": {
-  "ko": "국내 골판지 시장은 아세아제지, 태림포장, 신대양제지, 삼보판지, 한국수출포장 등 5대 계열사가 시장의 70~80%를 점유하는 과점 구조를 형성하고 있다. 2024년 골판지 원지 가격이 t당 약 9만원(전년 대비 약 20%) 오르면서 업계 전반의 수익성이 악화됐고, 상위 5개사 대부분이 수익성 저하 또는 적자 전환 국면에 직면해 있다. 원가 구조상 골판지 원지가 박스 제조 원가의 60%를 차지하는 만큼, 원지 가격 변동은 수익성에 즉각적인 영향을 미친다. 삼보판지는 고려제지를 통한 원지 자급으로 2024년 상반기 매출원가율을 70%대로 유지해 경쟁사(82~86%) 대비 원가 방어력이 높지만, 별도 기준 모회사의 수익성은 취약한 상황이다. 전방 수요 측면에서는 이커머스 성장·신선식품 포장·농수산물 유통 확대가 중장기 수요 기반을 지지하며, 플라스틱 규제 강화에 따른 골판지의 친환경 대체재 역할도 부각되고 있다. 글로벌 골판지 포장 시장은 연평균 약 4% 내외의 성장세가 예상되며 아시아태평양 지역이 전체의 약 40%를 점유한다. 단기적으로는 내수 소비 경기 둔화, 폐지 공급 불안정, 에너지 비용 상승이 업황 회복의 걸림돌로 작용하고 있다.",
-  "en": "The Korean corrugated board market is concentrated: the five major groups—Asea Paper, Taelim Packaging, Shindaeyang Paper, Sambo, and Korea Export Packaging—collectively hold 70–80% market share. A roughly 20% surge in base-paper prices (≈₩90,000/t) in 2024 squeezed margins across the board, with most of the top five reporting deteriorating or negative profitability. Since liner and fluting medium accounts for approximately 60% of box manufacturing costs, raw-material swings have an outsized and immediate impact. Sambo's in-house liner supply (via Koryo Paper) kept its consolidated cost-of-goods ratio in the low 70s in H1 2024, materially better than peers at 82–86%, though this advantage did not fully protect stand-alone parent margins. On the demand side, e-commerce growth, fresh-food logistics, and agricultural shipping provide a secular base, while tightening plastic-packaging regulations support the long-run substitution case for corrugated. Globally, the corrugated packaging market is projected to grow at roughly 4% CAGR, with Asia-Pacific commanding about 40% of volume. Near-term headwinds include sluggish domestic consumption, instability in domestic waste-paper supply, and persistent energy-cost inflation."
+  "ko": "전방 수요는 전자상거래 확대와 물류 표준화에 힘입어 완만한 성장세를 이어가고 있다는 평가가 나온다. 한 시장조사기관은 세계 골판지 포장 시장 규모가 2025년 1,983억 달러에서 2026년 2,057억 달러로 늘어난 뒤 2026~2034년 연평균 3.92% 성장할 것으로 내다봤다. 이러한 성장의 배경으로는 미국·유럽의 플라스틱 포장 규제 강화에 따른 대체 수요, 산업체의 목재 상자에서 골판지로의 전환 등이 지목된다. 다만 국내 시장은 2024년 이후 원재료(폐지) 가격 상승과 최종 판가 반영 지연이 겹치며 업계 전반의 수익성이 악화하는 국면을 지났다. 대형 수요기업이 가격 결정권을 쥐고 있어, 영세 가공업체일수록 원가 상승분을 단가에 반영해달라고 요구하기 어려운 구조가 지속되고 있다는 지적도 나온다. 그 결과 태림포장·유진판지·한국수출포장공업은 최근 회계연도에 영업손실을 기록했고, 대영포장은 주가 부진으로 관리종목 지정까지 이어졌다. 삼보판지는 원지 자회사를 통한 수직계열화와 상대적으로 낮은 매출원가율을 바탕으로 이 같은 업황 악화 국면에서도 연간 흑자 기조를 유지해왔다는 점에서, 순수 가공업체 위주의 경쟁사들과는 사업 구조상 차이가 있다.",
+  "en": "Downstream demand is seen continuing a gradual expansion, supported by e-commerce growth and logistics standardization. One market research firm projected the global corrugated board packaging market would grow from USD 198.2 billion in 2025 to USD 205.96 billion in 2026, expanding at a compound annual growth rate of 3.92% from 2026 to 2034. This growth has been attributed to substitution demand from tightening plastic packaging regulations in the United States and Europe, as well as industrial users shifting from wooden crates to corrugated board. Domestically, however, the sector passed through a period of deteriorating profitability after 2024, as rising waste-paper costs coincided with delayed pass-through into final box prices. Large buyers hold pricing power, and it has been noted that smaller converters in particular have struggled to get cost increases reflected in prices. As a result, Taerim Packaging, Yujin Panji, and Korea Export Packaging Industry all posted operating losses in a recent fiscal year, and Daeyoung Packaging was designated an administrative issue due to prolonged share-price weakness. Sambo Corrugated Board, supported by vertical integration through its paper-making subsidiaries and a relatively low cost-of-sales ratio, maintained annual operating profitability through this downturn, differentiating its business structure from peers focused mainly on conversion."
  },
  "outlook": {
-  "ko": "2026년의 핵심 관전 포인트는 원지·폐지 가격의 안정화 여부와 대형 수요처와의 납품단가 재협상 성과다. 2026Q1 연결 매출이 1,311억원으로 전년 동기 대비 소폭 증가했으나 영업이익은 감소한 만큼, 수익성 회복의 가시화에는 추가 시간이 필요한 상황이다. 별도 모회사의 영업손실 구조를 해소하기 위해서는 직접 생산하는 골판지·상자 부문의 단가 회복이 전제되어야 한다. 자회사 고려제지가 안정적인 원지 공급 역할을 지속하는 한 연결 이익의 일정 수준 방어는 가능하지만, 모회사 실적 개선 없이는 연결 이익 성장 동력이 제한된다. 중장기 성장 방향으로는 이커머스 및 신선식품 포장 수요 확대, FSC 인증 기반의 친환경 포장 솔루션 확대, Pre-Print 원지(고품질 인쇄 적용) 등 고부가 제품 비중 확대 등을 검토할 수 있다. 2026년 3월 주총에서 정관 개정(동등배당 원칙 명확화, 상법 개정 반영, 이사 임기 정비)이 이루어져 주주 친화 거버넌스 방향성을 유지하고 있다. 2025년 회계연도 결산 주당 210원 현금배당(총 배당총액 약 33.6억원)이 확정됐으며, 이익 수준이 현 추세로 지속될 경우 향후 배당 유지 여부도 모니터링 포인트가 된다.",
-  "en": "For 2026, the pivotal question is whether waste-paper and liner prices stabilize and whether Sambo can secure meaningful price increases from major customers. Although 2026 Q1 consolidated revenue edged up year-on-year to ₩131 bn, operating profit fell, signaling that recovery is not yet reflected in results. Restoring stand-alone parent profitability requires pricing improvements in directly produced corrugated board and boxes. As long as Koryo Paper continues its stable liner supply role, consolidated profit should maintain a floor, but without a stand-alone earnings recovery, group-level earnings growth will remain constrained. Longer-term opportunities lie in growing e-commerce/fresh-food packaging demand, expansion of high-value FSC-certified and Pre-Print products, and positioning corrugated as a sustainable substitute for plastic packaging. Governance signals are incrementally positive: the March 2026 AGM approved equal-dividend-principle clarifications and Commercial Act amendments reflecting enhanced shareholder protections. The ₩210/share cash dividend (≈₩3.36 bn total) for FY2025 was duly approved; sustainability of this dividend level will be a watch item if the earnings trajectory does not improve."
+  "ko": "회사가 별도로 제시한 매출·이익 가이던스는 확인되지 않는다. 다만 2026년 2분기 실적이 직전 분기 대비 크게 개선된 점은 성수기 진입에 따른 물동량 증가나 원재료 가격 여건 변화 등 복수의 요인이 겹친 결과로 해석될 수 있다. 시장조사기관들은 전자상거래 확산과 플라스틱 대체 포장재 수요 증가를 골판지 산업의 중장기 성장 동력으로 지목하고 있으며, 산업체들이 목재·플라스틱 상자를 골판지로 전환하는 흐름도 이어지고 있다고 분석한다. 반면 골판지 원지의 주원료인 폐지·펄프 가격은 국제 시황과 환율에 따라 등락이 커, 조달 안정성과 원가관리 능력이 향후 실적을 가르는 변수로 남아 있다. 지배구조 측면에서는 2026년 3월 정기주주총회에서 2025년 결산배당(주당 210원, 시가배당율 2.1%)을 포함한 안건이 모두 가결됐고, 사내이사 류경호와 사외이사 임대혁이 재선임돼 기존 경영진 체제가 유지됐다. 업계 전반의 공급과잉 해소 여부와 경쟁사들의 구조조정 진행 상황도 삼보판지의 상대적 위치에 영향을 줄 수 있는 변수로 남아 있다.",
+  "en": "No separate company revenue or profit guidance has been identified. That said, the sharp quarter-on-quarter improvement in Q2 2026 results can be read as reflecting a combination of factors, such as higher shipment volumes entering the peak season and changes in raw material cost conditions. Market research firms point to e-commerce expansion and rising demand for plastic-substitute packaging as mid- to long-term growth drivers for the corrugated industry, alongside a continuing shift by industrial users from wood and plastic crates to corrugated board. On the other hand, waste-paper and pulp prices, the key raw materials for corrugated paper, remain volatile with global market conditions and exchange rates, leaving procurement stability and cost management as variables that will continue to shape results. On governance, at the March 2026 annual general meeting, all agenda items—including the 2025 year-end dividend of KRW 210 per share with a dividend yield of 2.1%—were approved, and inside director Ryu Kyung-ho and outside director Lim Dae-hyuk were reappointed, keeping the existing management team in place. Whether industry-wide oversupply eases and how competitors' restructuring proceeds remain variables that could affect Sambo's relative standing."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당 장부가치(BPS 37,705원) 대비 현저히 낮은 수준에서 거래되고 있어, 순자산에 대해 역사적으로도 드문 할인 구간에 해당한다. 이는 낮은 부채비율(28%대)과 풍부한 유형 자산 기반에 비추어 볼 때 재무 가치 대비 저평가 논거로 언급되지만, 별도 모회사의 영업손실 전환과 연결 이익 하향 추세가 지속되는 동안 순자산 할인이 해소되기 어렵다는 반론도 유효하다. 주당순이익(EPS 1,626원) 기준 현재 주가는 과거 수익성 고점기(2021~2022년 EPS 수천원대)의 PER 거래 배수와 비교하면 이익 기저 자체가 크게 낮아진 상황임을 감안해야 한다. 2025년 결산 주당 210원 현금배당이 확정된 만큼 배당수익률은 코스닥 제지·포장 업종 평균 수준과 유사하거나 소폭 상회하는 구간에 있으나, 이익이 추가 감소할 경우 배당 여력도 재검토될 수 있다. 밸류에이션 재평가의 핵심 트리거는 연결 이익의 실질적 회복이며, 원지 가격 안정화와 대형 수요처 가격 협상 결과가 그 시기를 결정할 것으로 보인다.",
-  "en": "The current share price trades at a steep discount to the book value per share of ₩37,705—one of the more pronounced discounts in the stock's recent history—despite the group's low leverage and substantial tangible asset base. While some argue this constitutes a valuation anomaly, the stand-alone parent's operating loss and the multi-year downtrend in consolidated earnings make it difficult for this gap to close quickly. Against EPS of ₩1,626, the current price sits at a historically low earnings multiple, but this must be weighed against the fact that the earnings base itself has declined sharply from its 2021–2023 peak. The confirmed ₩210/share FY2025 dividend places the yield at a level roughly on par with or modestly above the KOSDAQ paper-and-packaging sector average; any further earnings deterioration could put future dividend capacity under scrutiny. A meaningful re-rating would most plausibly be triggered by tangible evidence of earnings recovery, the timing of which hinges on raw-material cost trends and the outcome of customer pricing negotiations."
+  "ko": "삼보판지의 순이익 규모는 2022~2023년의 500억원대에서 2024~2025년 300억원 안팎으로 줄어드는 이익 축소 흐름을 보였다. 주가는 순자산가치 대비 할인된 구간에서 거래되는 편이며, 이는 국내 골판지 업종 전반에 형성된 밸류에이션 눈높이와 궤를 같이하는 모습이다. 배당은 결산배당 위주로 매년 지급되고 있으며, 최근 배당 정책에서 큰 변화는 관찰되지 않는다. 과거 이익 규모가 더 컸던 시기와 비교하면 최근 수익성 지표는 낮아진 상태이며, 이런 이익 축소가 시장이 부여하는 밸류에이션 수준에 어떻게 반영되는지는 향후 실적 회복 여부에 따라 달라질 수 있다. 이상의 비교는 가치 판단이 아니라 확정 재무 수치에 근거한 사실관계의 서술이다.",
+  "en": "Sambo Corrugated Board's net income declined from the roughly KRW 50-56 billion range in 2022-2023 to around KRW 30 billion in 2024-2025, an ongoing profit-contraction trend. The stock has tended to trade at a discount to net asset value, broadly in line with the valuation levels typically seen across Korea's corrugated packaging sector. Dividends have continued to be paid annually, mainly as a year-end distribution, with no major recent change in dividend policy observed. Compared with periods of larger profits in the past, recent profitability metrics are lower, and how this profit contraction is reflected in the valuation multiple the market assigns may depend on whether earnings recover going forward. These comparisons are factual observations based on confirmed financial figures, not value judgments."
  },
  "bull": [
   {
    "title": {
-    "ko": "수직계열화가 만들어 낸 구조적 원가 우위",
-    "en": "Structural Cost Advantage from Full Vertical Integration"
+    "ko": "원지 수직계열화에 따른 원가 방어력",
+    "en": "Cost resilience from vertically integrated raw-paper supply"
    },
    "body": {
-    "ko": "고려제지(지분율 85.8%)를 통한 원지 자급 구조 덕분에 삼보판지 그룹의 연결 매출원가율은 2024년 상반기 70%대를 기록, 경쟁 주요 5개사 중 가장 낮았다. 신대양제지·아세아제지는 82%대, 한국수출포장은 86%에 달해 격차가 뚜렷하다. 이 구조는 폐지·원지 가격 급등기에도 피해를 완충하는 역할을 하며, 원가 사이클이 안정되는 시기에는 이익률 회복 탄력이 더 클 수 있다.",
-    "en": "Self-supplied liner production through Koryo Paper (≈85.8% ownership) kept the group's consolidated cost-of-goods ratio in the low 70s in H1 2024, well below the 82–86% ratios of other top-five peers. This structural buffer dampens the impact of waste-paper price spikes and suggests stronger earnings leverage when input costs stabilize."
+    "ko": "삼보판지는 고려제지 등 원지 생산 자회사를 편입해 원지-원단-상자로 이어지는 수직계열화 구조를 갖췄다. 이 구조는 2024년 상반기 기준 업계 상위 5개사 중 유일하게 70%대 매출원가율을 기록하는 데 기여한 것으로 분석된다. 원지를 외부에서 구매해 가공만 하는 경쟁사와 달리 원재료 조달 안정성과 원가 통제력에서 상대적 우위를 가질 수 있는 구조다.",
+    "en": "Sambo Corrugated Board has brought raw-paper producers such as Koryo Paper in-house, creating a vertically integrated chain from raw paper to sheet to box. This structure has been cited as contributing to the company being the only one among the top five industry players with a cost-of-sales ratio in the 70% range as of mid-2024. Unlike competitors that purchase raw paper externally and only convert it, this structure can provide a relative edge in raw-material sourcing stability and cost control."
    }
   },
   {
    "title": {
-    "ko": "견조한 재무구조 — 낮은 레버리지와 안정적 현금창출력",
-    "en": "Sound Balance Sheet with Low Leverage and Resilient Cash Generation"
+    "ko": "업계 부진 속에서도 이어진 연간 흑자",
+    "en": "Continued annual profitability amid an industry-wide downturn"
    },
    "body": {
-    "ko": "부채비율은 2022~2025년 25~28%대를 유지하고 있으며, 영업활동현금흐름도 이익 감소에도 불구하고 2025년 기준 557억원으로 견조하다. 연결 자기자본은 2025년 6,693억원(지배주주 지분 5,997억원)에 이르러 단기 재무 리스크는 제한적이다. 낮은 레버리지는 경기 하강기에도 재무 안정성을 유지하는 중요한 완충재 역할을 한다.",
-    "en": "The debt ratio has remained in the 25–28% range throughout 2022–2025, while operating cash flow held at ₩55.7 bn in 2025 despite declining earnings. Consolidated equity of ₩669 bn (controlling interest ₩600 bn) and minimal short-term financial risk mean the company has meaningful balance-sheet capacity to weather cyclical downturns."
+    "ko": "경쟁사인 태림포장, 유진판지, 한국수출포장공업 등이 최근 회계연도에 영업손실을 기록한 반면, 삼보판지는 2022~2025년 연결 기준으로 매년 영업이익과 순이익을 냈다. 2026년 2분기 영업이익은 165.0억원으로 직전 분기와 전년 동기 대비 모두 뚜렷하게 개선됐다. 업계 전반의 수익성 악화 국면에서도 이익 기조가 유지된 점은 경쟁사 대비 사업 구조의 차이를 보여준다.",
+    "en": "While competitors such as Taerim Packaging, Yujin Corrugated, and Korea Export Packaging recorded operating losses in their most recent fiscal year, Samboh Panji posted operating profit and net profit every year on a consolidated basis from 2022 to 2025. Operating profit in Q2 2026 was KRW 16.5 billion, showing clear improvement both quarter-on-quarter and year-on-year. The fact that its profit trend was maintained amid an industry-wide deterioration in profitability highlights a difference in business structure compared to competitors."
    }
   },
   {
    "title": {
-    "ko": "이커머스·친환경 포장 수요가 여는 중장기 성장 기회",
-    "en": "E-Commerce Growth and Green Packaging Tailwind Offer Medium-Term Upside"
+    "ko": "오너 지배력에 기반한 배당 지속성",
+    "en": "Dividend continuity underpinned by concentrated ownership"
    },
    "body": {
-    "ko": "글로벌 골판지 상자 시장은 이커머스 확대와 플라스틱 규제 강화에 힘입어 연평균 약 4% 성장이 예측되며, 아시아태평양이 2025년 기준 전체 시장의 40%를 점유한다. 국내에서도 신선식품 배송·농수산물 유통 확대가 골판지 상자 수요의 구조적 성장 기반을 형성하고 있다. FSC 인증과 재활용성을 앞세운 친환경 포장 솔루션 수요 확대는 삼보판지 그룹이 기존 역량을 기반으로 수혜를 받을 수 있는 방향이다.",
-    "en": "The global corrugated box market is forecast to grow at roughly 4% CAGR through 2030, driven by e-commerce adoption and tightening plastic regulations, with Asia-Pacific holding about 40% of global volume. Domestically, fresh-food delivery and agricultural logistics provide structural demand support. Sambo's FSC certification and recyclability position it to capture growing demand for eco-friendly packaging."
+    "ko": "최대주주인 류진호 대표이사를 포함한 특수관계인 지분은 60%대 중반에 달해 지배구조가 안정적인 편이다. 회사는 2025년 결산배당으로 주당 210원, 시가배당율 2.1%를 결정했고 이 안건은 2026년 3월 정기주주총회에서 가결됐다. 오너 지배력이 높은 구조는 주주환원 정책의 일관성 측면에서 참고할 만한 요소다.",
+    "en": "The stake held by special related parties, including the largest shareholder and CEO Ryu Jin-ho, reaches the mid-60% range, indicating a relatively stable governance structure. The company decided on a year-end 2025 dividend of KRW 210 per share, a dividend yield of 2.1%, and this agenda item was approved at the regular shareholders' meeting in March 2026. The high level of owner control is a factor worth noting in terms of consistency in shareholder return policy."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "별도 모회사 영업손실 — 자회사 의존 수익 구조의 취약성",
-    "en": "Stand-Alone Parent Operating Loss Reveals Subsidiary Earnings Dependency"
+    "ko": "4년 연속 이어진 영업이익률 하락",
+    "en": "Four straight years of declining operating margin"
    },
    "body": {
-    "ko": "2025년 별도 기준 삼보판지 본사는 영업손실 약 -45억원, 순손실 약 -21억원을 기록했다. 연결 흑자는 고려제지 등 자회사 실적에 기반한 것으로, 모회사 단독 사업의 수익 창출 능력이 훼손된 상태임을 의미한다. 자회사 실적이 악화될 경우 연결 이익도 급격히 줄어들 수 있는 구조적 취약성이 존재한다.",
-    "en": "The stand-alone parent recorded an operating loss of ≈₩4.5 bn and a net loss of ≈₩2.1 bn in 2025, meaning consolidated profitability is entirely dependent on subsidiary contributions. If Koryo Paper or other subsidiaries face their own headwinds, consolidated earnings could deteriorate more sharply than headline figures suggest."
+    "ko": "영업이익률은 2022년 11.6%, 2023년 12.1%에서 2024년 6.9%, 2025년 5.5%로 뚜렷하게 낮아졌다. 매출액은 같은 기간 5,400억~5,800억원대에서 정체돼 있어 외형 성장이 마진 하락을 상쇄하지 못했다. 지배주주순이익도 2022년 562억원에서 2025년 270억원으로 절반 이상 줄었다.",
+    "en": "The operating margin, which stood at 11.6% in 2022 and 12.1% in 2023, fell markedly to 6.9% in 2024 and 5.5% in 2025. Revenue remained stagnant at around KRW 540-580 billion during the same period, meaning that top-line growth failed to offset the margin decline. Net profit attributable to controlling shareholders also fell by more than half, from KRW 56.2 billion in 2022 to KRW 27.0 billion in 2025."
    }
   },
   {
    "title": {
-    "ko": "원가 전가력 한계 — 대형 수요처 협상 열위",
-    "en": "Limited Pricing Power Against Large Customers Caps Margin Recovery"
+    "ko": "원가-판가 전이 지연이라는 업계 구조적 문제",
+    "en": "Structural lag in passing raw material costs through to prices"
    },
    "body": {
-    "ko": "쿠팡·CJ 등 대형 이커머스·유통 기업이 주요 납품처인 구조상, 원재료 가격이 올라도 납품 단가를 즉각 올리기 어렵다. 골판지 원지 가격 20% 인상을 상자 가격에 반영하려면 12% 이상의 납품 단가 인상이 필요하지만, 시장에서는 이 전가가 충분히 이루어지지 않고 있다. 약 2,700여 개 영세 업체가 경쟁하는 시장 구조에서 가격 주도권은 사실상 수요처 측에 있다.",
-    "en": "With major e-commerce and logistics conglomerates (Coupang, CJ, etc.) as key customers, passing on a 20% rise in liner prices would require a ≈12% price increase in corrugated boxes—which remains difficult in practice given competitive pressure from 2,700-plus small converters. Pricing power effectively resides with the buyer side of the market."
+    "ko": "골판지 상자 가격은 대형 수요기업이 주도해 결정되는 구조여서, 원재료(폐지·펄프) 가격이 오를 때 이를 판가에 즉시 반영하기 어려운 경우가 반복적으로 지적됐다. 이런 구조는 삼보판지를 포함한 골판지 가공업체 전반에 적용되는 산업 리스크다. 원재료 가격의 변동성이 커질수록 마진 압박이 재현될 가능성이 있다.",
+    "en": "Since corrugated box prices are largely determined by large demand-side companies, it has repeatedly been pointed out that it is difficult to immediately reflect rising raw material (waste paper and pulp) prices in selling prices. This structure represents an industry-wide risk applicable to corrugated processors in general, including Samboh Panji. As raw material price volatility increases, margin pressure is likely to recur."
    }
   },
   {
    "title": {
-    "ko": "이익률 다년 하락 추세 — 반등 시점의 불확실성",
-    "en": "Multi-Year Margin Erosion with Uncertain Recovery Timing"
+    "ko": "별도(법인 단독) 기준 실적의 약세",
+    "en": "Weaker standalone (non-consolidated) results"
    },
    "body": {
-    "ko": "연결 영업이익률은 2022~2023년 11~12% 고점에서 2025년 5.5%, 2026Q1 run-rate 기준 약 4%로 꾸준히 하락 중이다. 원지·폐지 가격이 안정화되더라도 에너지 비용과 인건비 상승이 추가 압박 요인으로 작용할 수 있다. 수익성 회복의 구체적 시점이 불투명한 상황에서, 이익 저점 확인 전까지는 밸류에이션 확장이 제한될 가능성이 높다.",
-    "en": "Consolidated operating margin has fallen from an 11–12% peak in 2022–23 to 5.5% in 2025 and an approximately 4% run-rate in 2026 Q1. Even if waste-paper prices stabilize, escalating energy and labor costs present additional headwinds. Until there is clear evidence of a margin floor, multiple expansion will likely remain constrained."
+    "ko": "2025년 별도 기준으로는 매출 2,083억원에 영업손실 45억원, 순손실 21억원을 기록했다. 연결 실적이 흑자를 유지한 것은 원지 생산을 담당하는 자회사들의 이익이 이를 보완했기 때문으로 해석된다. 모회사 자체의 상자·원단 가공 사업만 놓고 보면 수익성이 약화된 상태라는 점을 보여준다.",
+    "en": "On a standalone basis in 2025, the company recorded revenue of KRW 208.3 billion, an operating loss of KRW 4.5 billion, and a net loss of KRW 2.1 billion. The fact that consolidated results remained profitable is interpreted as being due to the profits of subsidiaries engaged in linerboard production offsetting the loss. Looking solely at the parent company's box and paperboard processing business, this shows that profitability has weakened."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "원재료 가격 변동 리스크",
-    "en": "Raw-Material Price Volatility"
+    "ko": "원자재 가격 변동 리스크",
+    "en": "Raw material price volatility"
    },
    "body": {
-    "ko": "골판지 원지 제조의 핵심 원재료인 폐지 가격은 중국의 재생 펄프 공급 감소에 따른 국내산 폐지 수출 확대로 국내 공급 불안정성이 커진 상황이다. 2024년 폐지 가격은 전년 동기 대비 50% 이상 급등한 바 있다. 원지 가격의 추가 상승 국면이 재현될 경우 연결 이익이 추가로 압축될 수 있다.",
-    "en": "Waste-paper prices surged more than 50% year-on-year in 2024 as rising domestic exports to China tightened local supply. Should another round of base-paper price hikes materialize, consolidated earnings could face another leg down without compensating price increases to customers."
+    "ko": "골판지 원지의 주원료인 폐지와 수입 펄프 가격은 국제 시황과 환율에 따라 등락이 크다. 원지 가격이 오르면 골판지 원단·상자 가격도 따라 오르는 구조지만, 대형 수요기업과의 협상력 차이로 인해 반영 시점이 늦어질 수 있다. 이런 지연은 과거에도 업계 전반의 수익성 악화 요인으로 반복 지적됐다.",
+    "en": "Prices of waste paper and imported pulp, the main raw materials for corrugated linerboard, fluctuate significantly depending on international market conditions and exchange rates. While rising linerboard prices tend to push up corrugated paperboard and box prices accordingly, the timing of this pass-through can be delayed due to differences in bargaining power with large demand-side companies. Such delays have repeatedly been cited in the past as a factor behind industry-wide profitability deterioration."
    }
   },
   {
    "cat": {
-    "ko": "내수 소비 경기 둔화 리스크",
-    "en": "Domestic Consumption Slowdown Risk"
+    "ko": "수요 둔화 및 경쟁 심화 리스크",
+    "en": "Demand slowdown and competitive intensity"
    },
    "body": {
-    "ko": "골판지 수요는 소비재 출하량과 높은 연관성을 갖고 있어 내수 소비 경기 악화 시 물량 감소 압력에 노출된다. 장기 불경기 및 물류비 부담 가중으로 수요 모멘텀이 이미 제한되고 있으며, 이는 매출 감소와 고정비 부담 증가로 이어질 수 있다. 연결 매출이 2022년 이후 완만한 감소 추세를 보이고 있는 점도 이를 반영한다.",
-    "en": "Corrugated demand closely tracks consumer-goods shipment volumes; a prolonged domestic consumption slump or logistical spending cuts could reduce order volumes. The gentle but consistent decline in consolidated revenue since 2022 already reflects this sensitivity, and a sharper downturn would worsen the fixed-cost absorption problem."
+    "ko": "전자상거래 시장의 성장세가 둔화되거나 경기 침체가 발생하면 물동량 감소를 통해 골판지 수요 자체가 위축될 수 있다. 시장에는 2,700여 개에 달하는 영세 가공업체가 난립해 있어 가격 경쟁이 심화될 가능성도 상존한다. 경쟁사들의 구조조정이 진행되는 과정에서 일시적인 공급 과잉이나 가격 교란이 나타날 수도 있다.",
+    "en": "If growth in the e-commerce market slows or an economic downturn occurs, demand for corrugated products itself could contract due to reduced shipment volumes. With more than 2,700 small-scale processors crowding the market, there remains a possibility of intensified price competition. As competitors undergo restructuring, temporary oversupply or price disruption could also emerge."
    }
   },
   {
    "cat": {
-    "ko": "지배구조 및 내부거래 투명성 리스크",
-    "en": "Governance and Related-Party Transaction Transparency Risk"
+    "ko": "지배구조 및 계열사 거래 관련 리스크",
+    "en": "Governance and related-party transaction risk"
    },
    "body": {
-    "ko": "삼보판지그룹은 대림제지·동진판지와 실질적인 거래 관계를 유지하고 있으나 특수관계 해제 이후 내부거래 공시 의무가 소멸됐다. 주요 관계사들과의 거래 조건이 외부 투자자에게 충분히 공개되지 않는 구조적 불투명성이 잠재적 밸류에이션 디스카운트 요인으로 지적된다. 향후 공정거래 이슈나 내부거래 구조에 대한 감독당국 검토가 이루어질 경우 평판 및 재무 리스크로 발전할 수 있다.",
-    "en": "Following the reclassification of Daelim Paper and Dongjin Packaging outside the formal related-party perimeter, disclosure of transaction terms with these entities is no longer mandatory, creating a structural opacity that can weigh on valuation. If regulators were to scrutinize related-party dealings or if commercial terms with these entities prove unfavourable, both reputational and financial risks could materialise."
+    "ko": "최대주주 및 특수관계인의 지분이 60%대 중반에 이르는 등 오너 지배력이 매우 높은 구조다. 과거 대림제지 등 오너 일가 개인회사와의 내부거래 비중이 높았던 이력이 있었으나 2018년을 전후로 특수관계가 일부 해소된 것으로 파악된다. 다만 계열사 간 거래 구조와 그 투명성은 지속적으로 관찰이 필요한 대목이다.",
+    "en": "The stake held by the largest shareholder and special related parties reaches the mid-60% range, reflecting an extremely high level of owner control. The company has a history of significant related-party transactions with owner family-owned private companies such as Daelim Paper, but it is understood that some of these special relationships were dissolved around 2018. Nevertheless, the structure and transparency of transactions among affiliated companies remain a matter requiring continued observation."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순 (2026Q2 실적 공시 예상)",
-    "en": "Mid-August 2026 (Expected 2026 Q2 Earnings Release)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026Q2 연결 영업이익이 전년 동기(97억원) 대비 개선 여부를 확인하는 것이 핵심. 특히 별도 기준 모회사의 손익 구조 전환 신호(영업이익 흑자 복귀 여부)가 연결 이익 회복의 선행 지표가 될 수 있다.",
-    "en": "Check whether 2026 Q2 consolidated operating profit shows year-on-year improvement against 2025 Q2's ₩9.7 bn. Any sign of a stand-alone parent returning to operating profitability would be the leading indicator of a consolidated earnings recovery."
+    "ko": "2026년 3분기(7~9월) 연결 실적 공시를 확인해, 2분기의 이익 반등이 일시적 요인인지 아니면 마진 회복의 시작인지를 점검할 필요가 있다.",
+    "en": "Check the Q3 2026 (July-September) consolidated earnings disclosure to assess whether the Q2 profit rebound was a one-off or the start of a margin recovery."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (폐지·골판지 원지 가격 동향 월별 모니터링)",
-    "en": "H2 2026 (Monthly Waste-Paper and Liner Price Monitoring)"
+    "ko": "2026년 4분기",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "폐지 및 골판지 원지 가격 방향성이 수익성 회복의 가장 직접적인 변수다. 폐지 공급 안정화 신호나 원지 업체들의 추가 인상 여부를 확인해야 하며, 삼보판지 계열사 고려제지의 원지 가격 전략 변화도 주목할 포인트다.",
-    "en": "Waste-paper and liner price trends are the most direct driver of margin recovery. Watch for signs of domestic waste-paper supply stabilization versus further liner price hikes, as well as any pricing strategy shifts at subsidiary Koryo Paper."
+    "ko": "한국환경공단 자원순환정보시스템 등에서 발표되는 폐지·원지 가격 추이와 골판지포장산업협동조합의 원지 가격 협상 결과를 모니터링해 원가 부담 변화를 확인할 필요가 있다.",
+    "en": "Monitor waste-paper and raw-paper price trends published by relevant government and industry data sources, along with any raw-paper price negotiation outcomes from the industry cooperative, to track changes in cost pressure."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (대형 수요처 납품 단가 재협상 시기)",
-    "en": "H2 2026 (Customer Pricing Renegotiation Cycle)"
+    "ko": "2026년 하반기~2027년 초",
+    "en": "Second half of 2026 through early 2027"
    },
    "what": {
-    "ko": "쿠팡·CJ 등 주요 대형 수요처와의 골판지 상자 납품 단가 협상 결과가 판가 전가의 성공 여부를 결정한다. 단가 인상이 실현될 경우 별도 모회사 수익성 회복의 직접 트리거가 될 수 있다.",
-    "en": "Outcomes of box-price renegotiations with major customers such as Coupang and CJ will determine whether cost increases can finally be passed through. A successful price increase at the stand-alone parent level would be the most direct catalyst for profitability recovery."
+    "ko": "태림포장, 대영포장 등 적자 또는 관리종목 상태에 있는 경쟁사들의 구조조정 진행 상황을 확인해, 업계 공급과잉 해소 여부와 삼보판지의 상대적 위치 변화를 점검할 필요가 있다.",
+    "en": "Track the restructuring progress of loss-making or administratively designated peers such as Taerim Packaging and Daeyoung Packaging to assess whether industry oversupply eases and how Sambo's relative position evolves."
    }
   },
   {
    "when": {
-    "ko": "2027년 3월 말 (2026년 결산 배당 공시 예정)",
-    "en": "Late March 2027 (FY2026 Dividend Announcement)"
+    "ko": "2027년 2월경",
+    "en": "Around February 2027"
    },
    "what": {
-    "ko": "2025년 결산 주당 210원 배당이 확정된 데 이어 2026년 결산 배당 수준이 이익 회복 여부를 반영한 중요 신호가 된다. 배당 유지·삭감·확대 여부가 경영진의 이익 전망 자신감을 가늠하는 척도로 해석될 수 있다.",
-    "en": "Following the confirmed ₩210/share dividend for FY2025, the FY2026 dividend announcement will signal management's confidence in the earnings outlook. Maintaining, cutting, or raising the dividend will be closely watched as a proxy for internal profit projections."
-   }
-  },
-  {
-   "when": {
-    "ko": "상시 모니터링 (고려제지 및 자회사 실적·재무 공시)",
-    "en": "Ongoing (Koryo Paper and Subsidiary Financial Disclosures)"
-   },
-   "what": {
-    "ko": "연결 이익의 핵심 원천인 고려제지의 원지 생산·판매 실적과 수익성 추이를 분기별로 확인해야 한다. 고려제지의 수익성 악화는 삼보판지 연결 이익에 직접적으로 영향을 미치므로, 별도 공시 및 연결 재무 비교를 통한 자회사 기여도 모니터링이 중요하다.",
-    "en": "As the primary source of consolidated profit, Koryo Paper's production volumes, pricing, and margins should be tracked quarterly. Deterioration at the subsidiary level would flow directly into consolidated results, making the delta between stand-alone and consolidated figures the key analytical lens."
+    "ko": "2026년 결산실적 및 결산배당 결정 공시를 확인해, 주당 배당금과 배당 정책이 기존 수준(2025년 결산 주당 210원)에서 유지되는지를 점검할 필요가 있다.",
+    "en": "Check the FY2026 full-year earnings and year-end dividend decision disclosure to see whether the per-share dividend and policy remain at prior levels (KRW 210 per share for FY2025)."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "삼보판지는 1973년 창립 이래 원지 생산(고려제지)에서 골판지 상자 가공까지 수직계열화를 완성한 국내 4대 골판지 그룹의 모회사로, 경쟁사 대비 낮은 매출원가율이라는 구조적 강점과 낮은 레버리지·안정적 현금창출력이라는 재무 건전성을 고루 갖추고 있다. 그러나 2023년 이후 폐지 가격 급등과 대형 수요처 대상 가격 전가 한계가 맞물리며 연결 영업이익률이 고점 대비 절반 이하로 하락했고, 별도 모회사는 2025년 영업손실로 전환돼 연결 이익의 자회사 의존도가 심화된 상황이다. 2026Q1에도 매출이 전년 동기 대비 소폭 증가했음에도 영업이익이 감소해 수익성 회복이 아직 가시화되지 않았다. 순자산(BPS 37,705원) 대비 현저한 할인 구간 거래와 주당 210원 확정 배당은 재무 기반의 건전성을 일부 지지하지만, 이익 저점이 확인되고 별도 모회사 수익성이 회복되는 시점이 밸류에이션 재평가의 전제 조건이다. 폐지·원지 가격 안정화 및 납품 단가 협상 성과를 분기별로 추적하는 것이 향후 관찰의 핵심이다.",
-   "en": "Sambo Corrugated Board is the listed anchor of Korea's fourth-largest corrugated packaging group, offering a structurally lower cost base than peers through vertical integration and supported by a low-leverage balance sheet with consistent cash generation. However, since 2023, a combination of surging waste-paper and liner costs and limited pass-through pricing to large customers has pushed the consolidated operating margin well below its 2022–23 peak, and the stand-alone parent moved into operating loss in 2025, making consolidated profit increasingly reliant on subsidiaries. The 2026 Q1 results confirm that margin recovery has not yet materialised despite a slight revenue increase year-on-year. The confirmed ₩210/share dividend and the steep discount to book value (BPS ₩37,705) reflect the financial soundness of the asset base, but a visible floor in earnings—particularly a return to stand-alone profitability—is the prerequisite for any meaningful re-rating. Investors should monitor waste-paper price trends, customer pricing negotiations, and Koryo Paper's quarterly performance as the primary leading indicators for the earnings outlook."
+   "ko": "삼보판지는 원지 생산 자회사를 통한 수직계열화 구조에 힘입어, 태림포장·대영포장 등 경쟁사들이 영업손실이나 관리종목 지정을 겪는 업황 악화 국면에서도 2022~2025년 연결 기준으로 매년 영업이익과 순이익을 유지했다. 다만 영업이익률은 2022년 11.6%에서 2025년 5.5%로 4년 연속 낮아졌고, 지배주주순이익도 같은 기간 절반 이상 줄어드는 이익 축소 흐름을 보였다. 2026년 2분기 영업이익이 직전 분기 대비 크게 반등한 점은 주목할 만하지만, 이것이 추세적 회복인지는 다음 분기 실적으로 확인이 필요하다. 별도(법인 단독) 기준으로는 2025년 영업손실을 기록해, 연결실적을 지지하는 힘이 주로 원지 부문 자회사에서 나온다는 점도 확인됐다. 오너 일가의 지분이 60%대 중반에 달하는 지배구조와 매년 이어지는 결산배당은 안정적인 주주환원 이력으로 볼 수 있다. 종합적으로, 업계 구조적 리스크(원가-판가 전이 지연, 영세업체 난립)와 회사 고유의 원가 경쟁력이 함께 작용하는 구간으로, 향후 실적의 방향은 원재료 가격 추이와 업계 공급과잉 해소 속도에 달려 있다.",
+   "en": "Backed by a vertically integrated structure with raw-paper-producing subsidiaries, Sambo Corrugated Board maintained annual consolidated operating profit and net income every year from 2022 through 2025, even as peers such as Taerim Packaging and Daeyoung Packaging suffered operating losses or administrative-issue designations amid a broader industry downturn. Even so, the operating margin fell for four consecutive years, from 11.6% in 2022 to 5.5% in 2025, and net income attributable to owners more than halved over the same period. The sharp rebound in Q2 2026 operating profit versus the prior quarter is notable, but whether it marks a sustained recovery will need to be confirmed by subsequent quarterly results. On a standalone basis, the parent posted an operating loss in 2025, confirming that support for consolidated results has come largely from raw-paper subsidiaries. A governance structure with roughly mid-60% ownership concentrated in the founding family, alongside a consistent annual year-end dividend, points to a stable shareholder-return track record. Overall, the company sits at an intersection of structural industry risks—delayed cost pass-through and a fragmented field of small converters—and its own cost competitiveness, with the future earnings trajectory likely to hinge on raw material price trends and the pace at which industry oversupply is resolved."
   }
  },
  "sources": [
   "https://www.investing.com/equities/sambo-corrugated-board-co-ltd",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A023600&cID=&MenuYn=Y&ReportGB=&NewMenuID=102&stkGb=701",
-  "https://finance.finup.co.kr/Stock/023600",
-  "http://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A023600",
-  "https://news.nate.com/view/20260330n25389",
-  "https://koreadividend.kr/KR7023600000",
+  "http://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=023600",
+  "https://m.thinkpool.com/item/023600",
+  "https://m.irgo.co.kr/IR-COMP/023600/%EC%82%BC%EB%B3%B4%ED%8C%90%EC%A7%80-IR-PAGE",
   "https://news.nate.com/view/20260225n28153",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260323002487&docno=&viewerhost=",
-  "https://mss.go.kr/common/board/Download.do?bcIdx=1064253&cbIdx=310&streFileNm=bbe0c6c2-6f54-4e91-84f1-8263f754e58e.pdf",
-  "https://www.mss.go.kr/site/smba/ex/bbs/View.do?cbIdx=310&bcIdx=1064059",
-  "https://www.fortunebusinessinsights.com/corrugated-carton-market-108688",
-  "https://www.catch.co.kr/Comp/CompSummary/340995",
-  "https://www.fortunebusinessinsights.com/ko/infographics/corrugated-pallets-market-116190",
-  "https://www.mordorintelligence.kr/industry-reports/corrugated-board-packaging-market",
-  "https://www.giikorea.co.kr/report/moi1642019-containerboard-market-share-analysis-industry.html",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1712271774118.pdf",
-  "https://www.giikorea.co.kr/report/psm1484675-corrugated-boxes-market-size-share-analysis-trends.html",
-  "https://www.hankyung.com/finance/article/2021112261761"
+  "https://finance.finup.co.kr/Stock/023600",
+  "http://www.thinkpool.com/itemanal/i/index.jsp?Gcode=001_041_003&code=023600",
+  "https://news.nate.com/view/20260330n25389",
+  "https://www.google.com/finance/quote/023600:KOSDAQ?hl=en",
+  "https://dealsite.co.kr/articles/130854",
+  "https://www.hankyung.com/article/2024093075531",
+  "https://www.newstomato.com/ReadNews.aspx?no=1310373",
+  "https://www.edaily.co.kr/news/read?newsId=01384166629248672&mediaCodeNo=257",
+  "http://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A023600",
+  "https://koreadividend.kr/KR7023600000",
+  "https://www.thebell.co.kr/free/content/ArticleView.asp?key=201809270100040190002472&lcode=00",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=689813",
+  "http://m.yakup.com/news/?mode=view&cat=12&cat2=125&cat3=0&nid=330677"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "023600",
  "name": "삼보판지",
  "name_en": "SAMBO CORRUGATED BOARD CO.,LTD.",
@@ -233,9 +223,9 @@
   "기타"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-18",
- "reportTs": "2026-06-18 23:40",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:02",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 9230,
-   "mcap": 0.1478,
+   "price": 9500,
+   "mcap": 0.1521,
    "shares": 16008300,
    "total_shares": 16008300,
    "wavg_shares": 16010054,
-   "per": 4.82,
+   "per": 4.961,
    "eps": 1915,
-   "pbr": 0.2396,
+   "pbr": 0.2466,
    "bps": 38523,
    "roe_ttm": 5.1,
    "ttm_window": "2025Q3~2026Q2",
@@ -356,7 +346,7 @@
    "bps_krx": 37462.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 210.0,
-   "div": 2.28
+   "div": 2.21
   }
  }
 }

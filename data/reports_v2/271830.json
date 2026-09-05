@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "CCM 편중 탈피·반도체 확장 가속, 수익성이 관건",
-  "en": "Accelerating Beyond CCM Toward Semiconductors — Profitability Recovery Is the Critical Test"
+  "ko": "카메라모듈 넘어 반도체·로봇으로, 수익성은 과제",
+  "en": "Beyond Camera Modules Toward Semis and Robots, Profitability Still Lags"
  },
  "lead": {
-  "ko": "카메라모듈 장비 편중 구조에서 벗어나 반도체·모빌리티·스마트팩토리로 포트폴리오를 다변화하는 전환기에 있으나, 2026년 1분기에도 영업손실이 지속되며 연간 가이던스 이행 여부가 향후 모멘텀의 핵심 관건이다.",
-  "en": "Pamtec is navigating a strategic transition away from its concentrated CCM equipment business toward semiconductors, mobility, and smart-factory segments, yet a persisting operating loss in Q1 2026 means execution against annual guidance is the defining test for near-term momentum."
+  "ko": "팸텍은 카메라모듈(CCM) 검사장비 중심에서 반도체·모빌리티·로봇 사업으로 외연을 넓히고 있으나, 매출 성장에도 영업손실이 지속되는 구간에 있다.",
+  "en": "Pamtek is expanding from camera-module (CCM) inspection equipment into semiconductor, mobility, and robotics businesses, but operating losses have persisted even as revenue grows."
  },
  "keypoints": [
   {
-   "ko": "2022년 매출 약 1,019억 원·영업이익률 24%에서 2025년 387억 원·-11%로 3년 만에 외형이 급락했으며, 회사는 2026년 650억 원·OPM 5% 회복을 공식 가이던스로 제시.",
-   "en": "Revenue collapsed from ~KRW 101.9bn (OPM 24%) in 2022 to KRW 38.7bn (-11% OPM) in 2025 over three years; management has officially guided for KRW 65.0bn in revenue at 5% OPM for 2026."
+   "ko": "2025년 연결 매출 387억원, 영업손실 41억원으로 2023년 흑자(영업이익 108억원)에서 2년째 적자 국면",
+   "en": "2025 consolidated revenue was KRW 38.7bn with an operating loss of KRW 4.1bn, marking a second straight year of losses after 2023's operating profit of KRW 10.8bn"
   },
   {
-   "ko": "2026년 6월 웨이퍼 로봇 기업 티아이에스(TIS) 지분 100% 인수를 완료해 반도체 후공정·유리기판 자동화 장비 시장 진출 기반을 확보, 공시 직후 3거래일 연속 상한가 기록.",
-   "en": "The June 2026 full acquisition of wafer-robot maker TIS secured a foundation for semiconductor back-end and glass-substrate automation markets, triggering three consecutive limit-up trading sessions upon announcement."
+   "ko": "2026년 6월 산업용 로봇기업 TIS 지분 100% 인수, 웨이퍼 트랜스퍼 로봇 기술 내재화로 반도체 장비 사업 확대",
+   "en": "Completed a 100% acquisition of industrial robot maker TIS in June 2026, internalizing wafer transfer robot technology to expand its semiconductor equipment business"
   },
   {
-   "ko": "반도체 장비 매출이 2025년 약 85억 원으로 전년 대비 약 2배 성장해 전체 매출의 약 23%까지 확대(회사 사업보고서 기준), 포트폴리오 다변화가 수치로 확인되기 시작.",
-   "en": "Semiconductor equipment revenue approximately doubled year-over-year to ~KRW 8.5bn in 2025, reaching ~23% of total revenue (per the company's annual report), providing the first measurable evidence of portfolio diversification."
+   "ko": "별도기준 반도체 장비 매출 비중이 2024년 9.75%에서 2025년 23.39%로 확대되며 사업 다변화가 숫자로 확인",
+   "en": "On a standalone basis, semiconductor equipment revenue mix expanded from 9.75% in 2024 to 23.39% in 2025, confirming business diversification in the numbers"
   },
   {
-   "ko": "주력 고객사 LG이노텍의 베트남 생산 비중 확대와 아이폰18 프로 카메라 업그레이드 사이클이 하반기 CCM 장비 발주 회복의 촉매로 기대되나, 동 고객사 의존도(CCM 매출 약 90%)는 구조적 리스크.",
-   "en": "LG Innotek's accelerated Vietnam production ramp-up and the anticipated iPhone 18 Pro camera upgrade cycle are potential H2 catalysts for CCM equipment order recovery, but ~90% CCM revenue dependence on this single customer remains a structural vulnerability."
+   "ko": "2026년 상반기 매출 146.1억원으로 전년동기 대비 74.3% 증가했으나 1분기·2분기 모두 영업손실 지속",
+   "en": "H1 2026 revenue rose 74.3% year-on-year to KRW 14.61bn, yet both Q1 and Q2 remained in operating losses"
   },
   {
-   "ko": "2025년 4분기 영업이익 흑자 전환(약 18억 원) 후 2026년 1분기 영업손실 약 30억 원 재기록으로 극단적 계절성이 재확인되며, 연간 가이던스 달성은 하반기 수주 집행 속도에 크게 의존.",
-   "en": "Despite an operating profit turnaround (~KRW 1.8bn) in Q4 2025, an operating loss of ~KRW 3.0bn in Q1 2026 reaffirms steep seasonality; meeting the full-year guidance depends heavily on H2 order execution pace."
+   "ko": "100억원 규모 4회차 전환사채(전환가 1,524원) 발행으로 반도체·로봇 투자 자금 조달, 향후 지분 희석 변수 존재",
+   "en": "Issued KRW 10bn of 4th-round convertible bonds at a conversion price of KRW 1,524 to fund semiconductor and robotics investment, creating a potential future dilution variable"
   }
  ],
  "business": {
-  "ko": "팸텍은 2005년 설립되어 2023년 5월 스팩 합병 방식으로 코스닥에 상장한 자동화 솔루션 전문기업이다. 핵심 사업은 CCM(컴팩트 카메라 모듈) 검사·제조 자동화장비, 반도체 자동화장비(DTFH 열신뢰성 검사 장비·웨이퍼 이송 로봇·EFEM·Sorter), ADAS·IVI 모빌리티 공정 자동화장비, 스마트팩토리 장비의 네 영역으로 구성된다. 2025년 기준 반도체 장비 매출 비중이 약 23%까지 높아졌으나, CCM 장비가 여전히 매출의 대부분을 차지한다. 주요 고객사는 LG이노텍과 LG PRI이며, CCM 장비 매출의 약 90%가 이 고객사군에서 발생하는 것으로 파악된다. 생산시설은 국내 동탄·구미에 3개 공장(반도체/CCM 검사 장비)과 해외 베트남·중국에 2개 공장(디스플레이/카메라 검사, 반도체 자동화 라인)을 운영하며, 현지 인력 채용으로 가격 경쟁력 강화도 병행한다. 기술적으로는 정밀 모션 제어, 하이브리드 그리퍼 핸들링, 자체 개발 비전 알고리즘(고속 Pick&Place)이 핵심 역량이다. 반도체 부문의 DTFH 검사 장비는 기존 Chamber 방식 대비 온도 변화 대기 시간을 5분 이내로 단축(기존 30~60분)하고 에너지를 약 37.5% 절감하는 독자 기술로, 미국 특허 등록을 완료했다. 2026년 6월 웨이퍼 트랜스퍼 로봇 전문기업 티아이에스(TIS)를 100% 인수해 반도체 후공정·유리기판 자동화 장비 시장 진출 기반을 확보하며 CCM 단일 구조에서 멀티 버티컬 구조로의 전환을 가속화하고 있다.",
-  "en": "Pamtec is an automation solution specialist established in 2005 and listed on KOSDAQ in May 2023 via a SPAC merger. Core business spans four segments: CCM (Compact Camera Module) inspection and manufacturing automation equipment; semiconductor automation equipment (DTFH thermal reliability testers, wafer transfer robots, EFEM, Sorter); ADAS/IVI mobility process automation equipment; and smart-factory automation equipment. The semiconductor equipment segment reached approximately 23% of revenue in 2025, though CCM equipment still constitutes the majority. LG Innotek and LG PRI are the principal customers, with an estimated ~90% of CCM equipment revenue derived from this customer cluster. Production facilities include three domestic plants in Dongtan and Gumi and two overseas plants in Vietnam and China, with local hiring used to strengthen cost competitiveness. Core technical capabilities include precision motion control, hybrid-gripper handling, and a proprietary vision algorithm for high-speed Pick-and-Place operations. The DTFH semiconductor tester reduces temperature-change waiting time to under five minutes (vs. 30–60 minutes for conventional Chamber-type systems) with approximately 37.5% energy savings; this technology has been registered as a U.S. patent. The June 2026 full acquisition of wafer-transfer robot specialist TIS internalised precision robot-handling technology and accelerated Pamtec's pivot from a CCM-centric to a multi-vertical automation structure targeting semiconductor back-end and glass-substrate markets."
+  "ko": "팸텍은 카메라모듈(CCM) 검사·자동화 장비를 주력으로 하는 자동화 솔루션 전문기업으로, 반도체·모빌리티·스마트팩토리 분야까지 사업 영역을 넓혀가고 있다. CCM 사업은 카메라 모듈 검사 장비, 공정 자동화 장비, ToF/레이저 모듈 검사·이송 장비, 패키징 장비로 구성되며, 글로벌 스마트폰 제조사에 카메라 모듈을 공급하는 국내 대형 고객사향 매출이 핵심을 이룬다. 반도체 부문에서는 AI 반도체 온도제어 장비, 공정 통합 자동화 장비, 웨이퍼 이송 로봇, 테스트 핸들러, 번인 소터 등을 국내 반도체 업체에 공급하고 있다. 모빌리티 부문은 ADAS·IVI 시장을 겨냥한 제조용 장비로, 현대모비스와의 협력을 통해 차량용 카메라 조립·검사 공정용 장비 공급을 시작했다. 생산 기지는 국내 동탄·구미 소재 3개 공장(반도체·CCM 검사 장비)과 해외 베트남·중국 소재 2개 공장(디스플레이·카메라 검사, 반도체 자동화 라인)으로 구성된다. 다만 카메라 모듈 장비 매출의 상당 부분이 특정 고객사 한 곳에 집중되어 있어 고객 편중 구조가 오랜 과제로 지목된다. 2026년 6월에는 산업용 로봇 전문기업 티아이에스(TIS) 지분 100%를 인수해 웨이퍼 트랜스퍼 로봇 기술과 전문 인력을 확보했으며, 이를 통해 EFEM·소터 등 반도체 물류 자동화 장비 사업을 고도화하고 유리기판용 자동화 장비라는 신시장 진입을 추진하고 있다. 결과적으로 회사의 매출 구성은 카메라모듈 중심에서 반도체·모빌리티·로봇까지 다변화되는 과도기에 있다.",
+  "en": "Pamtek is an automation solutions company centered on camera-module (CCM) inspection and automation equipment, and it has been expanding into semiconductor, mobility, and smart-factory fields. The CCM business consists of camera-module inspection equipment, process automation equipment, ToF/laser module inspection and transfer equipment, and packaging equipment, with revenue concentrated on a major domestic customer that supplies camera modules to global smartphone makers. In the semiconductor segment, the company supplies AI-semiconductor temperature-control equipment, integrated process automation equipment, wafer transfer robots, test handlers, and burn-in sorters to domestic semiconductor firms. The mobility segment targets ADAS and IVI manufacturing equipment, and the company has begun supplying assembly and inspection equipment for automotive cameras through a partnership with Hyundai Mobis. Production is based at three domestic plants in Dongtan and Gumi (semiconductor and CCM inspection equipment) and two overseas plants in Vietnam and China (display/camera inspection and semiconductor automation lines). However, a substantial share of camera-module equipment revenue remains concentrated on a single major customer, a long-standing structural issue. In June 2026, the company completed a 100% acquisition of industrial robot specialist TIS, securing wafer transfer robot technology and expert personnel, which it plans to use to upgrade EFEM and sorter-based semiconductor logistics automation equipment and to pursue a new glass-substrate automation equipment market. As a result, the company's revenue mix is in a transitional phase, diversifying from a camera-module core toward semiconductor, mobility, and robotics."
  },
  "earnings": {
-  "ko": "팸텍의 최근 4개년 실적은 2022년 정점에서 3년 연속 하락하는 뚜렷한 추세를 보인다. 매출은 2022년 약 1,019억 원(영업이익률 24.1%)에서 2023년 약 961억 원(11.3%), 2024년 약 444억 원(-8.4%), 2025년 약 387억 원(-10.7%)으로 급격히 축소됐다. 순손실은 2024년 약 9억 원에서 2025년 약 54억 원으로 확대됐다. 주된 원인은 글로벌 경기 둔화와 스마트폰 수요 위축에 따른 CCM 장비 발주 급감, 그리고 반도체·모빌리티 등 신사업 확장 과정의 일시적 비용 부담이다. 다만 회사 사업보고서에 따르면 2025년 매출총이익은 전년(약 100억 원) 대비 증가(약 114억 원)해 외형 축소에도 수익 구조의 질적 개선 가능성이 확인됐다. 분기 추이를 보면 2025년 1분기(매출 약 31억 원, 영업손실 약 32억 원)에서 4분기(매출 약 227억 원, 영업이익 약 18억 원)까지 단계적 개선이 이루어졌으나, 2026년 1분기에 매출 약 51억 원·영업손실 약 30억 원으로 다시 확대되며 계절성 편중이 두드러진다. 영업현금흐름은 2022년 약 276억 원에서 2024년 약 -5억 원, 2025년 약 -50억 원으로 전환되며 내부 자금 창출 능력이 제한됐다. 부채비율은 2024년 31.4%에서 2025년 42.3%로 상승했으나 절대 수준은 낮은 편이다.",
-  "en": "Pamtec's financials show a clear three-year decline from the 2022 peak. Revenue fell sharply from ~KRW 101.9bn (OPM 24.1%) in 2022, to ~KRW 96.1bn (11.3%) in 2023, ~KRW 44.4bn (-8.4%) in 2024, and ~KRW 38.7bn (-10.7%) in 2025. Net losses widened from ~KRW 0.9bn in 2024 to ~KRW 5.4bn in 2025. Primary drivers were a sharp drop in CCM equipment orders amid global macro weakness and smartphone demand softness, compounded by transitional costs from expanding into semiconductor, mobility, and smart-factory segments. Notably, the company's annual report indicates that gross profit increased to approximately KRW 11.4bn in 2025 from approximately KRW 10.0bn in 2024 despite revenue contraction, suggesting nascent structural improvement in the cost structure. Quarterly metrics improved progressively from Q1 2025 (~KRW 3.1bn revenue, ~KRW -3.2bn OP) through Q4 2025 (~KRW 22.7bn revenue, ~KRW +1.8bn OP), before reverting to ~KRW -3.0bn OP on ~KRW 5.1bn revenue in Q1 2026, underscoring heavy seasonality. Operating cash flow turned persistently negative in 2024–2025 (KRW -0.5bn and KRW -5.0bn, respectively) after generating KRW +27.6bn in 2022, constraining internal funding capacity. The debt ratio rose to 42.3% at end-2025 from 31.4% in 2024, though the absolute leverage level remains modest."
+  "ko": "2025년 연결 매출은 387억원으로 2024년 444억원 대비 감소했고, 영업손실 41억원, 지배주주 순손실 62억원을 기록하며 2년 연속 적자를 이어갔다. 이는 2023년 매출 961억원, 영업이익 108억원(영업이익률 11.3%)으로 흑자를 냈던 것과 대비되며, 정점이었던 2022년(매출 1,019억원, 영업이익 246억원, 영업이익률 24.1%) 이후 실적이 뚜렷하게 둔화된 흐름을 보여준다. 분기별로 보면 2025년 2분기 매출 52.6억원에 영업손실 20.3억원을 기록한 뒤, 3분기에는 매출 77.0억원으로 늘며 영업손실이 6.4억원으로 축소됐고, 4분기에는 매출이 226.6억원으로 급증하며 영업이익 17.6억원, 지배주주 순이익 0.4억원으로 흑자 전환했다. 그러나 2026년 1분기 매출은 51.4억원으로 다시 급감하며 영업손실 30.1억원, 순손실 28.5억원의 적자로 돌아섰고, 2분기에는 매출이 94.6억원으로 회복됐음에도 영업손실 26.8억원, 순손실 23.6억원으로 적자가 이어졌다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 지배주주 순손실 합계는 약 59억원 수준으로, 분기별 매출 편차가 크고 손익의 변동성도 함께 커지는 구간에 있다. 실제로 2026년 상반기 연결 매출은 146.1억원으로 전년 동기 83.8억원 대비 74.3% 증가했으며, 별도기준 반도체 부문 매출은 24.3억원으로 전년 동기 4.8억원 대비 약 406% 늘어 성장의 축이 반도체로 이동하고 있음을 보였다. 영업활동현금흐름 역시 2022년 276억원 순유입에서 2023년 105억원, 2024년 -4.9억원, 2025년 -49.8억원으로 악화돼, 매출 확대 국면에서도 자금 소요가 늘어나는 모습이 확인된다.",
+  "en": "Consolidated revenue in 2025 was KRW 38.7bn, down from KRW 44.4bn in 2024, with an operating loss of KRW 4.1bn and a controlling-interest net loss of KRW 6.2bn, extending losses for a second consecutive year. This contrasts with 2023, when the company posted revenue of KRW 96.1bn and an operating profit of KRW 10.8bn (an 11.3% operating margin), and with the peak year of 2022, when revenue reached KRW 101.9bn with an operating profit of KRW 24.6bn (a 24.1% margin) — highlighting a clear deceleration since then. On a quarterly basis, revenue was KRW 5.3bn with an operating loss of KRW 2.0bn in Q2 2025, before revenue rose to KRW 7.7bn with the operating loss narrowing to KRW 0.6bn in Q3, and then revenue surged to KRW 22.7bn in Q4, turning to an operating profit of KRW 1.8bn and a controlling-interest net profit of KRW 0.04bn. However, Q1 2026 revenue fell sharply back to KRW 5.1bn, returning to an operating loss of KRW 3.0bn and a net loss of KRW 2.8bn, and in Q2, even as revenue recovered to KRW 9.5bn, the operating loss remained at KRW 2.7bn and the net loss at KRW 2.4bn. Over the most recent four quarters (Q3 2025 through Q2 2026), the cumulative controlling-interest net loss was roughly KRW 5.9bn, reflecting a period of large quarter-to-quarter revenue swings alongside heightened earnings volatility. Indeed, H1 2026 consolidated revenue of KRW 14.61bn rose 74.3% year-on-year from KRW 8.38bn, and standalone semiconductor-segment revenue climbed to KRW 2.43bn from KRW 0.48bn a year earlier — an increase of roughly 406% — signaling that the growth axis is shifting toward semiconductors. Operating cash flow also deteriorated, from a net inflow of KRW 27.6bn in 2022 to KRW 10.5bn in 2023, then to outflows of KRW 0.49bn in 2024 and KRW 4.98bn in 2025, indicating rising cash needs even as revenue expands."
  },
  "industry": {
-  "ko": "글로벌 CCM 시장은 2026년 기준 약 430억 달러 규모로 연평균 4~5%의 완만한 성장이 예상되며, 스마트폰 중심에서 자율주행차·XR 기기·감시 시스템으로 수요 구조가 다변화되고 있다. 특히 완전자율주행 차량의 카메라 탑재 수량은 현재 수준에서 레벨 5 적용 시 최대 15개까지 확대될 전망이어서, 전장용 CCM 검사 장비 시장은 구조적 성장 궤도에 있는 것으로 평가된다. 팸텍의 핵심 고객사 LG이노텍은 2026년 카메라모듈 베트남 생산 비중을 50% 수준까지 확대하고 3,400억 원 규모의 설비 투자를 집행할 계획으로, 아이폰18 프로 카메라 업그레이드 사이클과 맞물려 장비 발주 증가 기대가 있다. 반도체 후공정 시장은 AI·HPC 수요 급증으로 HBM, 칩렛, 2.5D/3D 첨단 패키징 기술이 핵심 경쟁력으로 부상하면서 관련 검사·물류 자동화 장비 시장이 빠르게 팽창하고 있다. 유리기판 공정 장비는 정밀 이송·정렬 기술의 필수성으로 인해 선점 효과가 크며, 팸텍은 티아이에스 인수를 계기로 초기 진입자 위치를 확보했다. 다만 중국 업체들의 CCM 조립 경쟁 심화와 고객사의 원가 절감 압박은 장비 공급 단가에 영향을 미칠 수 있으며, 국내 경쟁사(퓨런티어·하이비젼시스템 등)와의 기술·고객 경쟁도 심화 추세다.",
-  "en": "The global CCM market is estimated at approximately USD 43bn in 2026 and is expected to grow at a moderate 4–5% CAGR, with demand shifting structurally from smartphones toward autonomous vehicles, XR devices, and surveillance systems. In the automotive segment, the number of cameras per vehicle is projected to increase to up to 15 for Level 5 autonomous systems, pointing to a structural growth runway for automotive CCM inspection equipment. Pamtec's key customer LG Innotek plans to raise its Vietnam production share to approximately 50% in 2026 and has committed KRW 340bn in capex for camera-module equipment, with the iPhone 18 Pro camera upgrade cycle expected to drive H2 order momentum. In semiconductor back-end markets, explosive AI and HPC demand is accelerating adoption of HBM, chiplets, and 2.5D/3D advanced packaging, creating fast-growing opportunities for related inspection and logistics automation equipment. Glass-substrate process equipment rewards early movers given its requirement for highly precise handling technology, and the TIS acquisition positions Pamtec as an initial entrant. However, intensifying Chinese competition in CCM assembly and customer-driven price pressure may affect equipment unit pricing, and competition from domestic peers — including Purenteer and HiBiVision Systems — continues to intensify for both technology leadership and customer share."
+  "ko": "카메라모듈 검사·자동화 장비 시장은 스마트폰의 폴디드줌 등 고사양 광학 부품 채택 확대와 전장용 카메라모듈의 자율주행 기술 고도화가 수요를 뒷받침하고 있다. 동시에 XR 기기, 자율주행차 카메라 탑재 증가도 중장기 수요 기반으로 꼽힌다. 반도체 장비 시장은 AI 반도체와 고성능컴퓨팅(HPC) 수요 확산에 따라 HBM 고단화, 첨단 패키징(칩렛, 2.5D·3D) 중요성이 커지면서 후공정용 자동화·검사 장비 수요가 늘어나는 흐름에 있으며, HBM4 양산 본격화가 새로운 성장 모멘텀으로 거론된다. 특히 유리기판은 기존 실리콘 웨이퍼보다 파손 위험이 높아 정밀한 이송·정렬 기술이 요구되는 신소재로, 관련 자동화 장비 시장이 개화 초기 단계에 있다. 경쟁 구도에서 팸텍은 카메라모듈 장비 부문에서는 특정 대형 고객사에 대한 매출 의존도가 높은 구조이며, 반도체 장비 부문에서는 아직 매출 비중이 상대적으로 낮은 후발 주자에 해당한다. 다만 TIS 인수를 통한 웨이퍼 트랜스퍼 로봇 기술 내재화는 반도체 물류 자동화 장비 경쟁력을 보강하는 요인으로 꼽히며, 업계에서는 유리기판 상용화가 본격화될 경우 장비 업체 간 기술 경쟁이 한층 치열해질 것으로 보고 있다.",
+  "en": "The camera-module inspection and automation equipment market is being supported by the growing adoption of high-spec optical components such as folded-zoom cameras in smartphones and advances in autonomous-driving technology for automotive camera modules. Rising camera deployment in XR devices and autonomous vehicles is also cited as a medium-to-long-term demand driver. In semiconductor equipment, expanding AI semiconductor and high-performance computing (HPC) demand has increased the importance of higher-stacked HBM and advanced packaging (chiplets, 2.5D/3D), driving demand for back-end automation and inspection equipment, with the full-scale ramp of HBM4 cited as a new growth catalyst. Glass substrates in particular are a new material requiring precise transfer and alignment technology due to a higher risk of breakage than conventional silicon wafers, and the related automation equipment market is still in an early, nascent stage. In terms of competitive positioning, Pamtek's camera-module equipment business remains heavily dependent on revenue from a single major customer, while in semiconductor equipment the company is a relative latecomer with a still-modest revenue share. That said, internalizing wafer transfer robot technology through the TIS acquisition is seen as reinforcing its competitiveness in semiconductor logistics automation equipment, and industry observers expect competition among equipment makers to intensify once glass-substrate commercialization gains momentum."
  },
  "outlook": {
-  "ko": "팸텍은 2026년 매출 650억 원(영업이익률 5%), 2027년 매출 1,000억 원(OPM 10~15%)을 공식 가이던스로 제시하고 있다. 2026년 가이던스 달성 가능성은 LG이노텍의 베트남 공장 설비 투자 집행과 아이폰18 프로 카메라 업그레이드에 따른 하반기 CCM 장비 수주에 크게 의존한다. 반도체 부문에서는 2026년 6월 완료된 티아이에스(TIS) 인수를 통해 웨이퍼 트랜스퍼 로봇 기술을 내재화하고, EFEM·Sorter 등 반도체 물류 자동화 장비 사업을 고도화할 계획이다. HBM 양산 본격화에 따른 DTFH 검사 장비 수요 확대와 반도체 후공정 자동화 장비 시장 점유율 확대도 중기 성장 동력으로 제시돼 있다. 자체 설계·제조 역량에 티아이에스의 정밀 로봇 핸들링 기술을 결합해 유리기판 관련 자동화 장비 시장을 선제적으로 공략한다는 전략도 발표됐다. 화성시 영천동 250억 원 규모 부동산 취득(사옥 증설)과 동탄 공장 인프라 투자도 중장기 사업 확장을 뒷받침할 인프라로 해석된다. 다만 2026년 1분기에도 영업손실이 재차 확대됐음을 고려할 때, 연간 가이던스 실현은 3분기 이후 대형 발주 반영 여부에 달려 있으며 반도체 고객사의 발주 시기와 규모 불확실성도 잔존한다.",
-  "en": "Pamtec has officially guided for KRW 65.0bn revenue at 5% OPM in 2026 and KRW 100.0bn at 10–15% OPM in 2027. Near-term guidance achievement depends heavily on LG Innotek's Vietnam capex execution and the H2 CCM equipment order uplift expected from the iPhone 18 Pro camera upgrade cycle. On the semiconductor side, the June 2026 TIS acquisition will be used to internalise wafer-transfer robot technology and upgrade EFEM/Sorter-based semiconductor logistics automation capabilities. The expansion of HBM mass production is expected to drive DTFH inspection equipment demand, while the company actively targets a larger share of the semiconductor back-end logistics automation market. Management has also announced a strategy to combine its hardware design and manufacturing capabilities with TIS's precision robot-handling technology to move early into the emerging glass-substrate automation equipment market. The KRW 25bn real estate acquisition in Hwaseong and domestic factory infrastructure investments are intended to underpin capacity for longer-term expansion. That said, the widened operating loss in Q1 2026 means full-year guidance execution depends critically on large-order recognition in Q3 and beyond, with semiconductor customer order timing and scale remaining key uncertainties."
+  "ko": "회사 측은 2025년 사업보고서를 통해 카메라모듈 외 반도체·모빌리티·스마트팩토리로 사업영역을 넓히는 과정에서 실적이 일시적으로 부진했다고 설명하며, 2026년에는 반도체 및 모빌리티 장비 매출 성장을 바탕으로 재도약을 시작할 것이라는 입장을 밝혔다. 2026년 6월 완료된 TIS 지분 100% 인수는 웨이퍼 트랜스퍼 로봇 기술 내재화를 통해 EFEM·소터 등 반도체 물류 자동화 장비 사업을 고도화하고, 유리기판용 자동화 장비 시장을 선점하기 위한 행보로 풀이된다. 이에 앞서 회사는 100억원 규모의 4회차 사모 전환사채(전환가액 1,524원)를 발행했으며, 조달 자금은 시설자금 20억원, 운영자금 50억원, 타법인 지분 취득자금 30억원으로 구성됐다. 회사 관계자는 \"수주가 조금씩 늘고 있고 매출이 증가하는 상황에서 지분 인수나 장비 제작 초기에 먼저 투입되는 비용을 이번 전환사채를 통해 확보할 계획\"이라고 설명했다. 2026년 2월에는 국내 최대 반도체 전시회인 세미콘 코리아 2026에 참가해 웨이퍼 이송 자동화 장비와 펠티어 기반 AI 반도체 테스트 솔루션, 메모리 번인 테스터 등을 공개하며 국내외 OSAT·반도체 패키징 기업들과 협력 관계 확대를 추진했다. 앞서 회사는 반도체 자동화 장비 매출 비중을 향후 3년 내 15% 이상으로 끌어올리겠다는 목표를 제시했는데, 별도기준 반도체 매출 비중은 이미 2025년 23%대를 넘어선 것으로 나타났다. 매출 성장세가 하반기에도 이어질지, 그리고 늘어난 수주가 실제 손익 개선으로 이어지는지가 관전 포인트로 남아 있다.",
+  "en": "In its 2025 business report, the company explained that results were temporarily weak during a transition period of expanding beyond camera modules into semiconductor, mobility, and smart-factory equipment, and stated that in 2026 it expects to begin a rebound based on growth in semiconductor and mobility equipment revenue. The 100% acquisition of TIS completed in June 2026 is seen as a move to internalize wafer transfer robot technology to upgrade its EFEM and sorter-based semiconductor logistics automation business and to gain an early foothold in the glass-substrate automation equipment market. Ahead of that, the company issued KRW 10bn of 4th-round private convertible bonds at a conversion price of KRW 1,524, with proceeds allocated to KRW 2bn in facility funds, KRW 5bn in operating funds, and KRW 3bn for acquiring equity in another company. A company representative said the funds would cover costs incurred early in equity acquisitions and equipment production as orders and revenue gradually increase. In February 2026, the company participated in SEMICON Korea 2026, the country's largest semiconductor trade show, showcasing wafer transfer automation equipment, Peltier-based AI semiconductor test solutions, and memory burn-in testers, while working to expand partnerships with domestic and overseas OSAT and semiconductor packaging companies. The company had earlier set a goal of raising semiconductor automation equipment's share of revenue to above 15% within three years, and on a standalone basis that share already exceeded 23% in 2025. Whether the revenue growth trend continues into the second half, and whether increased order intake translates into actual earnings improvement, remain key points to watch."
  },
  "valuation_comment": {
-  "ko": "연속 영업손실로 PER 산출이 불가한 국면이며, 주당순손실(EPS -203원)이 지속되는 가운데 주가는 주당순자산(BPS 2,070원) 대비 할인 구간에서 형성되고 있다. 이는 시장이 현재의 손실 상태를 반영하면서도 포트폴리오 전환 과정에서 축적된 자산 가치를 일부 인정하는 국면으로 해석된다. 2022년 이익 정점 당시 시장이 높은 이익 배수를 부여했던 것과 비교하면, 현재는 이익 소멸 이후 자산 기반 평가가 주를 이루는 구간이다. 배당 지급 이력이 없어 배당수익률은 업종 평균을 크게 하회하며, 수익성 회복 없이는 배당 재개 가능성도 낮다. BPS(2,070원) 대비 현재 주가의 할인 상태는 2026~2027년 가이던스가 실현되고 수익성이 복원될 경우 재평가 여지를 내포하나, 신사업 이익 기여 시점이 가시화되기 전까지는 촉매가 제한될 수 있다.",
-  "en": "With consecutive operating losses, PER is currently incalculable; the per-share net loss (EPS -KRW 203) persists while the share price trades at a discount to book value per share (BPS KRW 2,070). This suggests the market is pricing in ongoing losses while partially crediting the asset value accumulated during the portfolio transition. Compared with the elevated earnings multiples assigned at the 2022 profit peak, the current valuation is now anchored by asset-based metrics as earnings have disappeared. With no dividend payment history, the yield contribution is absent and falls well below the sector average, and dividend resumption is unlikely without a return to profitability. The current discount to BPS (KRW 2,070) implies potential for re-rating should the 2026–2027 guidance prove achievable and profitability recover, but a meaningful valuation catalyst is likely constrained until the earnings contribution from semiconductor and mobility segments becomes quantifiable."
+  "ko": "팸텍은 최근 네 개 분기 연속 순손실이 이어지고 있어 이익을 기준으로 한 통상적인 밸류에이션 배수 산출이 제한적인 구간에 있다. 주가는 주당 순자산가치에 못 미치는 수준에서 거래되고 있어, 시장이 순자산 대비 할인된 값을 부여하고 있는 모습이다. 다만 이는 회사가 2년 연속 영업손실을 기록하며 실적 회복이 아직 가시화되지 않은 상황을 반영한 결과로도 해석될 수 있다. 배당은 현재 지급되지 않고 있어 배당 매력을 근거로 접근하기는 어려운 구조다. 과거 흑자를 냈던 2022~2023년의 거래 배수와 비교할 때, 현재의 밸류에이션은 이익 회복 여부에 크게 좌우되는 상태라고 볼 수 있다. 결국 밸류에이션의 방향은 반도체·모빌리티 신사업의 매출 기여가 손익 개선으로 이어지는지에 달려 있다.",
+  "en": "Pamtek has posted net losses for four consecutive quarters, a period in which conventional earnings-based valuation multiples are difficult to derive meaningfully. The stock trades below its per-share net asset value, indicating the market is applying a discount relative to net assets. This can also be read as a reflection of the company's two consecutive years of operating losses, with an earnings recovery not yet clearly visible. No dividend is currently being paid, so the stock cannot be approached on the basis of dividend appeal. Compared with the trading multiples seen during the profitable years of 2022–2023, the current valuation appears heavily contingent on whether earnings recover. Ultimately, the direction of valuation will depend on whether revenue contributions from the semiconductor and mobility businesses translate into improved profitability."
  },
  "bull": [
   {
    "title": {
-    "ko": "LG이노텍 설비 투자·아이폰 업그레이드 사이클 수혜",
-    "en": "LG Innotek Capex Cycle and iPhone Camera Upgrade Tailwind"
+    "ko": "반도체·로봇 사업 확장",
+    "en": "Expansion into Semiconductor and Robotics"
    },
    "body": {
-    "ko": "LG이노텍이 2026년 베트남 카메라모듈 생산 비중을 50% 수준까지 확대하고 3,400억 원의 설비 투자를 집행할 계획으로, 아이폰18 프로 시리즈의 카메라 업그레이드와 맞물려 하반기 CCM 장비 발주 증가가 기대된다. 2025년 4분기 매출 약 227억 원·영업이익 약 18억 원의 흑자 전환은 매출이 특정 수준을 넘을 때 이익 레버리지가 작동함을 보여주는 선례다. 팸텍의 베트남 현지 법인 운영 인프라는 LG이노텍의 베트남 생산 기지 확대와 구조적으로 맞닿아 있어 동반 성장 가능성을 높인다.",
-    "en": "LG Innotek plans to raise its Vietnam camera-module production share to approximately 50% in 2026 and deploy KRW 340bn in capex, potentially coinciding with an iPhone 18 Pro camera upgrade to drive H2 CCM equipment orders. Q4 2025's ~KRW 22.7bn revenue with ~KRW 1.8bn operating profit turnaround demonstrates that operating leverage activates once revenues cross a critical threshold. Pamtec's existing Vietnam subsidiary infrastructure is structurally aligned with LG Innotek's production base expansion, suggesting meaningful co-growth potential."
+    "ko": "TIS 지분 100% 인수로 웨이퍼 트랜스퍼 로봇 기술과 전문 인력을 내재화해 EFEM·소터 등 반도체 물류 자동화 장비 사업을 고도화하고 있다. 이를 기반으로 유리기판용 자동화 장비라는 신시장 진입을 추진 중이며, AI 반도체·HBM 성장과 맞물린 사업 기회로 평가된다. 별도기준 반도체 장비 매출 비중이 2024년 9.75%에서 2025년 23.39%로 빠르게 확대된 점도 이러한 전환의 근거가 된다.",
+    "en": "The 100% acquisition of TIS has internalized wafer transfer robot technology and expertise, upgrading the company's EFEM and sorter-based semiconductor logistics automation business. Building on this, the company is pursuing entry into the emerging glass-substrate automation equipment market, seen as an opportunity tied to AI semiconductor and HBM growth. The rapid expansion of standalone semiconductor equipment revenue mix from 9.75% in 2024 to 23.39% in 2025 supports this transition."
    }
   },
   {
    "title": {
-    "ko": "반도체 후공정·유리기판 신시장 선점 가능성",
-    "en": "Early-Mover Potential in Semiconductor Back-End and Glass-Substrate Markets"
+    "ko": "모빌리티 신규 고객 확보",
+    "en": "New Mobility Customer Wins"
    },
    "body": {
-    "ko": "2026년 6월 티아이에스(TIS) 100% 인수로 웨이퍼 트랜스퍼 로봇 기술을 내재화하고 EFEM·Sorter 기반 반도체 물류 자동화 사업을 고도화하게 됐다. HBM·칩렛·유리기판 등 첨단 패키징 시장 팽창이 이 분야 장비 수요를 견인하며, DTFH 미국 특허 등록으로 기술 신뢰성도 입증됐다. 반도체 장비 매출이 2025년 약 85억 원으로 전년 대비 약 2배 성장한 점(회사 사업보고서 기준)은 이 전략의 조기 성과를 수치로 보여준다.",
-    "en": "The June 2026 full acquisition of TIS internalised wafer-transfer robot technology and positions Pamtec to upgrade its EFEM/Sorter semiconductor logistics automation business. Booming HBM, chiplet, and glass-substrate advanced packaging demand is driving equipment spending in this space, while a U.S. patent registration for DTFH validates the company's technical credibility. Semiconductor equipment revenue approximately doubling to ~KRW 8.5bn in 2025 (per the annual report) demonstrates early-stage traction for this diversification strategy."
+    "ko": "현대모비스와의 협력을 통해 차량용 카메라 조립·검사 공정용 장비 공급이 시작됐으며, ADAS를 시작으로 IVI·레이더 장비까지 포트폴리오 확장이 기대되고 있다. 자율주행 기술 고도화에 따른 전장용 카메라모듈 수요 증가가 이 사업의 배경이다. 카메라모듈 단일 대형 고객 의존 구조를 완화할 수 있는 계기로도 평가된다.",
+    "en": "A partnership with Hyundai Mobis has begun supplying equipment for automotive camera assembly and inspection processes, with expectations of portfolio expansion from ADAS into IVI and radar equipment. Growing demand for automotive camera modules driven by advancing autonomous-driving technology underpins this business. It is also viewed as an opportunity to reduce reliance on a single large camera-module customer."
    }
   },
   {
    "title": {
-    "ko": "수익 구조 질적 개선과 외형 회복 가능성",
-    "en": "Improving Cost Structure Quality and Revenue Recovery Potential"
+    "ko": "상반기 외형 성장세",
+    "en": "H1 Revenue Growth Momentum"
    },
    "body": {
-    "ko": "외형 축소에도 불구하고 2025년 매출총이익이 전년 대비 증가(회사 공시 기준)한 것은 수익 구조의 질적 개선 신호로 해석된다. 2026년 가이던스(650억 원)가 이행된다면 연간 손익분기점 돌파와 함께 순자산 감소 추세도 방어될 수 있다. 2025년 말 기준 부채비율 42.3%로 여전히 낮아 재무 안정성 측면에서의 위기 수준은 아니며, 외형 회복 시 이익 레버리지 효과가 클 수 있다.",
-    "en": "Despite revenue contraction, the year-over-year increase in gross profit in 2025 (per the company's disclosure) signals a qualitative improvement in the cost structure. If the 2026 guidance of KRW 65.0bn is achieved, the company would break even on an annual basis and could stabilise the declining book-value trend. A debt ratio of 42.3% at end-2025 remains modest by sector standards, and the operating leverage inherent in the fixed-cost structure suggests meaningful earnings recovery potential as revenues normalize."
+    "ko": "2026년 상반기 연결 매출이 전년 동기 대비 74.3% 증가했으며, 별도기준 반도체 부문 매출은 약 406% 늘었다. 카메라모듈의 견조한 성장과 반도체·모빌리티 부문 확대가 동시에 나타나며 매출 다변화가 숫자로 확인되고 있다. 회사는 수주 증가 추세가 이어지고 있다고 밝혔다.",
+    "en": "H1 2026 consolidated revenue rose 74.3% year-on-year, and standalone semiconductor-segment revenue increased roughly 406%. Solid growth in camera modules alongside expansion in semiconductor and mobility segments is confirming revenue diversification in the numbers. The company has stated that order intake has been on an increasing trend."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "핵심 고객사 LG이노텍 의존도 과대 — 고객 집중 리스크",
-    "en": "Excessive Dependence on LG Innotek — Customer Concentration Risk"
+    "ko": "지속되는 영업손실",
+    "en": "Persistent Operating Losses"
    },
    "body": {
-    "ko": "CCM 장비 매출의 약 90%가 LG이노텍 및 관계사에서 발생하는 것으로 파악되며, 이 고객사의 발주 조정·생산 계획 변경이 팸텍 실적의 직접적 변동성 원인이다. 2022~2025년의 매출 급락은 사실상 이 구조적 취약점의 발현이었다. 반도체·모빌리티 등 신고객 확보 속도가 기대치를 하회할 경우 고객 집중도 완화에 상당한 시간이 소요될 수 있다.",
-    "en": "Approximately 90% of CCM equipment revenue is estimated to be derived from LG Innotek and its affiliates, meaning order adjustments or production-plan changes at this customer directly drive Pamtec's earnings volatility. The steep revenue decline from 2022–2025 was essentially a manifestation of this structural vulnerability. If new customer acquisition in semiconductor and mobility segments proceeds more slowly than expected, meaningful customer de-concentration could take considerably longer than anticipated."
+    "ko": "2024년과 2025년 연속으로 영업손실을 기록했으며, 2026년 상반기에도 매출 증가에도 불구하고 1분기와 2분기 모두 적자가 이어졌다. 신사업 확장에 따른 초기 투자비와 고정비 부담이 손익 개선을 제약하는 요인으로 작용하고 있다. 매출 회복이 곧바로 이익 회복으로 이어지지 않는 구조가 당분간 지속될 가능성이 있다.",
+    "en": "The company posted operating losses in both 2024 and 2025, and losses continued in both Q1 and Q2 of 2026 despite revenue growth. Upfront investment costs and fixed-cost burdens tied to new business expansion are constraining earnings improvement. A structure in which revenue recovery does not immediately translate into profit recovery could persist for some time."
    }
   },
   {
    "title": {
-    "ko": "신사업 성과 가시화 불확실성과 통합 비용 부담",
-    "en": "New Business Visibility Uncertainty and Post-Acquisition Integration Burden"
+    "ko": "고객 편중 구조",
+    "en": "Customer Concentration"
    },
    "body": {
-    "ko": "반도체 신규 장비가 고객사의 양산 퀄리피케이션을 통과하기까지 상당한 시간이 소요되며, 티아이에스 기술 내재화와 시너지 실현까지의 시차도 불확실하다. 2026년 1분기 영업손실 약 30억 원 재기록은 상반기 매출 기반이 여전히 고정비를 감당하기 어려운 수준임을 시사한다. 화성시 부동산 취득(250억 원)·TIS 인수 등 외형 확장 투자가 지속되면 단기 재무 부담이 가중될 수 있다.",
-    "en": "New semiconductor equipment products require substantial time to clear customer manufacturing qualification processes, and the timeline for fully internalising TIS technology and realising synergies carries inherent uncertainty. The ~KRW 3.0bn operating loss in Q1 2026 suggests that H1 revenue levels remain insufficient to absorb the fixed-cost base. Continued expansion investments — including the KRW 25bn real estate acquisition in Hwaseong and the TIS acquisition — could amplify near-term financial pressure."
+    "ko": "카메라모듈 장비 매출은 여전히 특정 대형 고객사 한 곳에 상당 부분 의존하고 있어, 해당 고객의 투자 계획 변화가 실적에 직접적인 영향을 줄 수 있는 구조다. 신규 고객사 발굴이 오랜 과제로 지목되어 왔다. 반도체·모빌리티 부문 확장도 이러한 편중 완화를 위한 시도로 해석된다.",
+    "en": "Camera-module equipment revenue remains substantially dependent on a single major customer, meaning changes in that customer's investment plans can directly affect results. Finding new customers has long been identified as a challenge. The expansion into semiconductor and mobility segments can be read as an attempt to ease this concentration."
    }
   },
   {
    "title": {
-    "ko": "하반기 의존형 실적 구조와 재무 안정성 저하 가능성",
-    "en": "Extreme H2-Skewed Earnings Structure and Potential Financial Flexibility Erosion"
+    "ko": "재무 부담과 희석 우려",
+    "en": "Financial Burden and Dilution Risk"
    },
    "body": {
-    "ko": "2025년 분기 데이터를 보면 4분기(매출 약 227억 원)가 연간 매출의 약 58%를 차지하는 극단적 계절성이 나타난다. 이러한 구조에서는 하반기 특정 고객사 발주가 지연되면 연간 가이던스 미달 리스크가 즉각 현실화된다. 부채비율이 2024년 31.4%에서 2025년 42.3%로 상승하고 영업현금흐름이 2년 연속 마이너스를 기록한 점은 재무 유연성의 제한 요소다.",
-    "en": "Quarterly data from 2025 shows an extreme seasonal skew, with Q4 (~KRW 22.7bn) accounting for approximately 58% of full-year revenue. In this structure, a delay in H2 orders from key customers would immediately translate into a full-year guidance shortfall. The debt ratio rising from 31.4% in 2024 to 42.3% in 2025, combined with two consecutive years of negative operating cash flow, constrains the company's financial flexibility heading into a capital-intensive expansion phase."
+    "ko": "영업활동현금흐름이 2024년과 2025년 연속 순유출을 기록했으며, 이를 보완하기 위해 100억원 규모의 전환사채를 발행했다. 전환가액 1,524원 기준으로 상당한 물량의 신규 주식이 발행될 수 있어 향후 전환청구가 이뤄질 경우 지분 희석이 발생할 수 있다. 지속적인 순손실 속에서 추가 외부 자금조달 필요성도 배제할 수 없다.",
+    "en": "Operating cash flow recorded net outflows in both 2024 and 2025, prompting the issuance of KRW 10bn in convertible bonds to help cover the shortfall. At a conversion price of KRW 1,524, a sizable number of new shares could be issued, raising the potential for dilution if conversion rights are exercised in the future. Given ongoing net losses, the need for additional external funding cannot be ruled out."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "전방 산업 사이클 및 수요 변동성",
-    "en": "End-Market Cycle and Demand Volatility"
+    "ko": "전방산업 사이클 리스크",
+    "en": "End-Market Cycle Risk"
    },
    "body": {
-    "ko": "스마트폰 교체 사이클 지연 또는 글로벌 IT 소비 위축은 CCM 장비 발주를 즉각 축소시키는 최상위 리스크다. 반도체 메모리 다운사이클이 재개될 경우 반도체 장비 투자도 동반 후퇴할 수 있어, 팸텍은 두 사이클에 동시 노출되는 구조다. 미국·중국 무역 분쟁 심화와 관세 조치는 글로벌 IT 수요와 고객사 설비 투자 계획에 불확실성을 추가한다.",
-    "en": "Delays in smartphone replacement cycles or a contraction in global IT consumer spending are top-line risks that would immediately compress CCM equipment orders. If a semiconductor memory down-cycle resumes, semiconductor equipment capex would also retreat, leaving Pamtec simultaneously exposed to two distinct cyclical headwinds. Escalating U.S.–China trade friction and potential tariff measures add uncertainty to global IT demand and customer capex planning timelines."
+    "ko": "팸텍의 실적은 2022년 매출 1,019억원의 정점 이후 2023~2025년에 걸쳐 급격히 둔화됐는데, 이는 스마트폰·반도체 투자 사이클에 따른 장비 발주 변동성이 크다는 점을 보여준다. 전방 고객사의 투자 축소나 지연이 재현될 경우 실적 변동성이 다시 커질 수 있다. 첨단기술 변화와 고객 요구 변화에 민감하게 반응하는 업종 특성도 이러한 리스크를 뒷받침한다.",
+    "en": "Pamtek's results decelerated sharply from 2023 through 2025 after peaking at KRW 101.9bn in revenue in 2022, illustrating high volatility in equipment orders tied to smartphone and semiconductor investment cycles. If downstream customers cut back or delay investment again, earnings volatility could increase once more. The industry's sensitivity to shifts in advanced technology and customer requirements reinforces this risk."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중 및 협상력 약화 리스크",
-    "en": "Customer Concentration and Bargaining Power Erosion Risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New Business Execution Risk"
    },
    "body": {
-    "ko": "CCM 장비 매출의 약 90%가 LG이노텍 그룹에서 발생한다는 점은 단가 인하 압박에 대한 대응력을 구조적으로 제한한다. 중국 업체들의 카메라모듈 생산 경쟁 강화로 LG이노텍 자체의 원가 절감 압박이 커지면, 이는 장비 단가 협상에도 하방 압력으로 연쇄될 수 있다. 고객사의 내재화 전략 변화나 벤더 다변화 시도도 잠재 리스크 요인이다.",
-    "en": "With approximately 90% of CCM equipment revenue derived from LG Innotek, Pamtec's ability to resist unit-price pressure from its customer is inherently limited. As intensifying Chinese competition in camera-module assembly compresses LG Innotek's own cost margins, this can cascade into downward pressure on Pamtec's own equipment pricing negotiations. Changes in the customer's in-house development strategy or vendor diversification initiatives represent additional latent risks."
+    "ko": "반도체·모빌리티·유리기판 자동화 장비 등 신사업은 아직 초기 단계로, 매출 기여와 수익성 개선이 검증되지 않은 상태다. TIS 인수 이후 기술·조직 통합이 계획대로 진행되지 않을 경우 기대했던 시너지가 지연될 가능성이 있다. 신규 고객사 확보와 양산 공정 진입 속도도 불확실성 요인이다.",
+    "en": "New businesses such as semiconductor, mobility, and glass-substrate automation equipment are still at an early stage, with revenue contribution and profitability improvement not yet proven. If technology and organizational integration following the TIS acquisition do not proceed as planned, expected synergies could be delayed. The pace of securing new customers and entering mass-production processes are also sources of uncertainty."
    }
   },
   {
    "cat": {
-    "ko": "재무 유동성 및 자금 조달 리스크",
-    "en": "Financial Liquidity and External Funding Risk"
+    "ko": "재무건전성·자본조달 리스크",
+    "en": "Financial Health and Funding Risk"
    },
    "body": {
-    "ko": "영업현금흐름이 2년 연속 마이너스를 기록하는 가운데 대규모 부동산 취득 및 M&A가 병행되면서 운전자본 부담이 높아지고 있다. 향후 추가 자금 조달(유상증자·전환사채 등)이 발생할 경우 주주 희석 가능성이 있다. 오큐피바이오엠 전환사채 인수·경영 참여 검토(2026년 4월 양해각서 체결) 등 비핵심 투자 확대 가능성도 재무 집중도를 분산시킬 수 있는 변수다.",
-    "en": "Two consecutive years of negative operating cash flow, combined with large real estate acquisitions and M&A activity, are elevating working capital pressures. Should additional external financing — equity issuance or convertible bonds — become necessary, shareholder dilution risk increases. The April 2026 MOU for potential investment in Ocupi Biome's convertible bonds and management participation review raises the additional risk of capital and management resources being diverted to non-core activities."
+    "ko": "2024년과 2025년 영업활동현금흐름이 순유출을 기록한 가운데 100억원 규모의 전환사채 발행으로 외부 자금에 대한 의존도가 높아졌다. 지속적인 순손실이 이어질 경우 추가적인 자본조달이 필요해질 수 있으며, 전환사채의 전환청구권 행사는 기존 주주의 지분 희석으로 이어질 수 있다. 부채비율은 아직 관리 가능한 수준이지만 자금 소요 확대 추세는 지켜볼 필요가 있다.",
+    "en": "With operating cash flow recording net outflows in both 2024 and 2025, the issuance of KRW 10bn in convertible bonds has increased reliance on external funding. Continued net losses could necessitate further capital raising, and exercise of conversion rights on the bonds could dilute existing shareholders. While the debt ratio remains at a manageable level for now, the trend of rising funding needs warrants continued monitoring."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7월 말~8월",
-    "en": "Late July – August 2026"
+    "ko": "2026년 11월 중",
+    "en": "Mid-to-late November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 잠정 실적 발표: 매출과 영업손익이 1분기 대비 개선됐는지, 연간 가이던스(650억 원) 달성 궤도에 있는지 확인이 필요하다.",
-    "en": "Q2 2026 preliminary earnings release: assess whether revenue and operating profit improved from Q1 and whether the full-year guidance track of KRW 65.0bn remains intact."
+    "ko": "2026년 3분기 실적(분기보고서) 공시 예정 - 반도체·모빌리티 부문 매출 성장세가 3분기에도 이어지는지, 그리고 영업손실 축소 여부를 확인할 시점이다.",
+    "en": "The Q3 2026 quarterly report is expected to be disclosed - a point to check whether semiconductor and mobility revenue growth continued into the third quarter and whether the operating loss narrowed."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "H2 2026"
+    "ko": "2026년 4분기 이후",
+    "en": "From Q4 2026 onward"
    },
    "what": {
-    "ko": "LG이노텍 베트남 공장 신설비 발주 동향: 핵심 고객사의 설비 투자 집행 여부와 규모가 하반기 CCM 장비 매출 회복의 핵심 선행지표다.",
-    "en": "LG Innotek Vietnam factory new equipment orders: the timing and scale of capex execution by the key customer is the primary leading indicator for H2 CCM equipment revenue recovery."
+    "ko": "TIS 편입에 따른 웨이퍼 트랜스퍼 로봇·EFEM·소터 관련 매출이 연결 실적에 본격적으로 반영되는 규모와 손익 기여도를 확인할 필요가 있다.",
+    "en": "It is worth checking the scale and profit contribution of wafer transfer robot, EFEM, and sorter-related revenue from the TIS consolidation as it begins to flow through into consolidated results."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~연말",
-    "en": "H2 – End of 2026"
+    "ko": "2026년 하반기~2027년",
+    "en": "H2 2026 through 2027"
    },
    "what": {
-    "ko": "티아이에스(TIS) 인수 후 첫 수주 공시: 반도체 EFEM·Sorter·유리기판 장비 분야의 첫 수주 실적이 확인되면 신사업 모멘텀의 실체를 검증할 수 있다.",
-    "en": "First order disclosure post-TIS acquisition: a confirmed order for semiconductor EFEM, Sorter, or glass-substrate equipment would provide the first tangible evidence of new business momentum materialising."
+    "ko": "유리기판용 자동화 장비 시장에서 실제 수주나 고객사 확보 성과가 나오는지가 신사업의 성공 여부를 가르는 핵심 변수다.",
+    "en": "Whether actual orders or customer wins materialize in the glass-substrate automation equipment market is a key variable determining the success of this new business."
    }
   },
   {
    "when": {
-    "ko": "2026년 연말",
-    "en": "End of 2026"
+    "ko": "전환청구권 행사 가능 시점(통상 발행 후 1년 전후)",
+    "en": "Around the time conversion rights become exercisable (typically about one year after issuance)"
    },
    "what": {
-    "ko": "연간 실적 및 2027년 가이던스 발표: 매출 650억 원·OPM 5% 달성 여부와 2027년 1,000억 원 로드맵의 유효성이 재확인되는 핵심 시점이다.",
-    "en": "Full-year earnings and 2027 guidance release: the moment to assess whether the KRW 65.0bn / 5% OPM target was achieved and whether the KRW 100.0bn 2027 roadmap remains credible."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기 (공시 예정)",
-    "en": "H2 2026 (expected disclosure)"
-   },
-   "what": {
-    "ko": "오큐피바이오엠 전환사채 인수 및 경영 참여 최종 결정 공시: 비핵심 투자 확대 여부가 재무 집중도와 현금 흐름에 미치는 영향을 점검해야 한다.",
-    "en": "Final decision disclosure on the Ocupi Biome convertible bond investment and management participation: assess the impact of any non-core investment commitment on financial focus and cash flow."
+    "ko": "전환가액 1,524원의 4회차 전환사채에 대한 전환청구가 이뤄질 경우 신주 발행 규모와 지분 희석 정도를 점검할 필요가 있다.",
+    "en": "If conversion rights on the 4th-round convertible bonds (conversion price KRW 1,524) are exercised, the scale of new share issuance and the degree of shareholder dilution should be checked."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "팸텍은 2022년 이익 정점 이후 스마트폰 장비 수요 급락과 단일 고객 의존 구조의 취약점이 동시에 현실화되며 3년간 급격한 실적 악화를 경험했다. 2023~2025년 반도체·모빌리티·스마트팩토리 장비로의 포트폴리오 다변화는 진행 중이며, 2025년 반도체 장비 매출 증가와 4분기 영업이익 흑자 전환은 전략의 초기 성과를 수치로 보여준다. 2026년 6월 완료된 티아이에스(TIS) 인수는 웨이퍼 로봇 기술 내재화를 통해 반도체 후공정·유리기판 자동화 장비 시장 진입을 가속화하는 구조적 모멘텀으로 평가된다. 그러나 2026년 1분기 영업손실 재확대와 극단적 하반기 실적 편중 구조는 650억 원 가이던스 달성을 위해 하반기 대형 발주의 적시 집행이 전제되어야 함을 보여준다. LG이노텍 고객 집중도 완화, 신규 반도체 고객 확보, 그리고 신사업 매출의 이익 기여 가시화가 중기 재평가의 세 가지 핵심 선행 조건이며, 이 진도를 분기 실적과 수주 공시를 통해 추적하는 것이 중요하다.",
-   "en": "Pamtec experienced a sharp three-year earnings deterioration after its 2022 profit peak, as a steep drop in smartphone equipment demand and structural single-customer vulnerability materialised simultaneously. Portfolio diversification into semiconductor, mobility, and smart-factory equipment has been underway since 2023, with semiconductor equipment revenue growth and the Q4 2025 operating profit turnaround providing initial measurable evidence of strategic progress. The June 2026 TIS acquisition — internalising wafer-transfer robot technology — is a structural catalyst that accelerates entry into semiconductor back-end and glass-substrate automation markets. However, the widened operating loss in Q1 2026 and the extreme H2-weighted earnings skew highlight that meeting the KRW 65.0bn 2026 guidance requires timely execution of large orders in H2. Reducing LG Innotek customer concentration, securing new semiconductor clients, and demonstrating quantifiable profit contribution from new business segments are the three essential pre-conditions for a medium-term valuation re-rating, and tracking their progression through quarterly earnings releases and order disclosures is the critical analytical priority."
+   "ko": "팸텍은 카메라모듈 검사장비라는 안정적 기반 위에 반도체·모빌리티·로봇 사업을 얹어 성장 축을 다변화하려는 전환기에 있는 기업이다. 2025년까지 2년 연속 영업손실을 기록했고 2026년 상반기에도 매출은 늘었지만 적자가 이어지는 등, 외형 성장과 손익 개선 사이의 간극이 아직 좁혀지지 않은 상태다. TIS 인수를 통한 웨이퍼 트랜스퍼 로봇 기술 내재화, 현대모비스향 모빌리티 장비 공급, 별도기준 반도체 매출 비중의 빠른 확대(2024년 9.75%→2025년 23.39%)는 사업 다변화가 진행되고 있음을 보여주는 근거다. 반면 특정 대형 고객사에 대한 매출 의존, 지속되는 영업손실, 전환사채 발행에 따른 향후 지분 희석 가능성은 균형 있게 살펴볼 필요가 있는 요인이다. 3분기 실적 공시와 TIS 편입 매출의 손익 기여, 유리기판 자동화 장비 시장에서의 실제 수주 성과가 향후 사업 전환의 성패를 가늠할 구체적 지표가 될 것으로 보인다. 투자 판단에 앞서 이러한 지표들의 실제 진행 상황을 확인하는 것이 중요하다.",
+   "en": "Pamtek is a company in transition, seeking to diversify its growth axis by layering semiconductor, mobility, and robotics businesses on top of its stable camera-module inspection equipment base. Having posted operating losses for two consecutive years through 2025, and continuing to run losses in H1 2026 despite revenue growth, the gap between top-line growth and earnings improvement has not yet closed. The internalization of wafer transfer robot technology through the TIS acquisition, mobility equipment supply to Hyundai Mobis, and the rapid expansion of standalone semiconductor revenue mix from 9.75% in 2024 to 23.39% in 2025 all point to business diversification underway. On the other hand, dependence on revenue from a single major customer, persistent operating losses, and the potential for future share dilution from convertible bond issuance are factors that warrant balanced scrutiny. The Q3 earnings disclosure, the profit contribution from TIS-related consolidated revenue, and actual order wins in the glass-substrate automation equipment market will serve as concrete indicators of whether this business transition succeeds. Confirming the actual progress of these indicators is important before forming any investment judgment."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A271830&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A271830",
-  "https://www.sedaily.com/article/20021561",
   "https://kind.krx.co.kr/external/dst/newListReport/20251226000191500/251226_%ED%8C%B8%ED%85%8D.pdf",
-  "https://www.valueline.co.kr/finance/summary/271830",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A271830&cID=&MenuYn=Y&ReportGB=&NewMenuID=103&stkGb=701",
+  "https://www.sedaily.com/article/20021561",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A271830&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
   "https://m.thinkpool.com/compDiscuss/cont/1014324",
+  "https://www.ggilbo.com/news/articleView.html?idxno=1142108",
+  "https://www.sedaily.com/article/20008318",
+  "https://www.newswell.co.kr/news/articleView.html?idxno=8259",
+  "https://www.valueline.co.kr/finance/summary/271830",
+  "https://www.asiae.co.kr/article/item-disclosure/2024122607435677349",
+  "https://m.thinkpool.com/stockDiscuss/271830/cont/11543970",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A271830&MenuYn=Y&NewMenuID=103&stkGb=701",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A271830",
   "https://m.thinkpool.com/item/271830",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A271830",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=61803",
-  "http://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=271830",
-  "https://www.topstarnews.net/news/articleView.html?idxno=15899181",
-  "https://www.catch.co.kr/Comp/CompInfo/C83421",
-  "https://www.finance-scope.com/article/view/scp202606010003",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=329753",
-  "https://www.ajunews.com/view/20260601130208538",
+  "https://kr.investing.com/equities/pamtek",
+  "https://www.hellot.net/news/article.html?no=114434",
+  "https://daily-stock-wiki.com/stocks/%ED%8C%B8%ED%85%8D/",
   "https://www.ajunews.com/view/20260602105050063",
   "https://www.sisajournal-e.com/news/articleView.html?idxno=421546"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "271830",
  "name": "팸텍",
  "name_en": "PAMTEK CO., LTD.",
@@ -233,9 +223,9 @@
   "기계·장비"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:37",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:02",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 1109,
-   "mcap": 0.0327,
+   "price": 1004,
+   "mcap": 0.0296,
    "shares": 29490202,
    "total_shares": 29490202,
    "wavg_shares": 28618147,
    "per": null,
    "eps": -207,
-   "pbr": 0.5705,
+   "pbr": 0.5165,
    "bps": 1944,
    "roe_ttm": -10.2,
    "ttm_window": "2025Q3~2026Q2",
