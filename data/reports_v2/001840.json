@@ -343,14 +343,13 @@
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "순이익÷주식수",
-   "pbr_krx": null,
-   "bps_krx": null,
+   "pbr_krx": 4.03,
+   "bps_krx": 550.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
-   "dps": null,
-   "div": null,
+   "dps": 0.0,
+   "div": 0.0,
    "hidden": {
-    "per": "loss",
-    "dps": "no_div"
+    "per": "loss"
    }
   }
  }
