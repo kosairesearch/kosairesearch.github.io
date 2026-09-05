@@ -262,6 +262,54 @@ for p, mm in menus.items():
             diff.append(f"{p}:{h}={'/'.join(v)}(≠{'/'.join(base[h])})")
 check(not diff, f"메뉴 이름이 {len(menus)}개 페이지에서 모두 같음", ", ".join(diff[:4]))
 
+
+# 12) 랜딩페이지가 자기 이야기를 하고 있는가
+#
+#     '코사이' 로 네이버를 찾으면 사이트 대표로 About 페이지가 나왔다. 제목·
+#     설명·canonical·구조화 데이터·내부 링크는 위 검사들이 이미 다 보고 있었고
+#     전부 통과였다. 남은 것은 아무도 안 세던 것 하나였다 — 크롤러가 읽는 글자.
+#
+#       /            132낱말   ← 큰 제목 한 줄, 소개 한 문장, 숫자 셋이 전부
+#       About.html  1457낱말
+#
+#     검색 엔진에게 '코사이' 를 설명하는 페이지가 About 뿐이었으니 그쪽이
+#     대표가 된 것이다. 메타 태그로는 이걸 못 이긴다.
+#
+#     낱말 수는 대리 지표일 뿐이고 이 숫자를 채우는 것이 목적이 아니다. 다만
+#     랜딩이 다시 껍데기로 돌아가면(섹션을 걷어내거나 자바스크립트로 옮기면)
+#     여기서 걸린다. 자바스크립트가 그린 글은 세지 않는다 — 네이버 크롤러도
+#     그것을 못 읽는 것이 이 문제의 뿌리였다.
+def visible(t):
+    t = re.sub(r"(?is)<script.*?</script>", " ", t)
+    t = re.sub(r"(?is)<style.*?</style>", " ", t)
+    t = re.sub(r"(?s)<!--.*?-->", " ", t)
+    t = t[t.index("<body"):] if "<body" in t else t
+    return re.sub(r"\s+", " ", re.sub(r"(?s)<[^>]+>", " ", t)).strip()
+
+#     <main> 안만 센다. 머리 메뉴와 푸터는 어느 페이지나 똑같아서, 그것까지
+#     세면 껍데기 페이지도 90낱말쯤은 그냥 나온다.
+def main_of(t):
+    m = re.search(r"(?is)<main\b.*?</main>", t)
+    return visible("<body>" + (m.group(0) if m else t) + "</body>")
+
+lp = (ROOT / "index.html").read_text(errors="ignore")
+words = len(main_of(lp).split())
+check(words >= 350, "랜딩에 크롤러가 읽을 본문이 있음", f"{words}낱말(350 이상이어야 한다)")
+h2 = len(re.findall(r"<h2\b", lp))
+check(h2 >= 3, "랜딩 본문이 제목으로 나뉘어 있음", f"h2 {h2}개")
+check('"FAQPage"' in lp.replace(" ", ""), "랜딩에 자주 묻는 질문 구조화 데이터")
+
+#     그리고 About 의 글을 그대로 옮겨 오지 않았는지 본다. 같은 글이 두 주소에
+#     있으면 둘이 서로의 순위를 갉아먹어, 고치기 전보다 나빠질 수 있다.
+ab = main_of((ROOT / "About.html").read_text(errors="ignore"))
+lpv = main_of(lp)
+def shingles(t, n=8):
+    w = t.split()
+    return {" ".join(w[i:i + n]) for i in range(max(0, len(w) - n + 1))}
+a, b_ = shingles(lpv), shingles(ab)
+dup = len(a & b_) / max(1, len(a))
+check(dup < 0.10, "랜딩이 About 의 글을 베끼지 않음", f"겹치는 대목 {dup:.1%}")
+
 print(f"통과 {len(ok)} · 실패 {len(fail)}\n")
 for m in ok: print("  PASS", m)
 for m in fail: print("  FAIL", m)

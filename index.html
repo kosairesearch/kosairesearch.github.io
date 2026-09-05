@@ -29,12 +29,28 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
  {"@type":"Organization","@id":"https://kosai.kr/#org","name":"KOSAI",
-  "url":"https://kosai.kr/","logo":"https://kosai.kr/assets/favicon.png",
+  "alternateName":"코사이","url":"https://kosai.kr/","logo":"https://kosai.kr/assets/favicon.png",
+  "description":"코스피·코스닥 상장 전 종목의 시세·공시 데이터를 AI가 정리해 보여 주는 리서치 서비스입니다.",
   "contactPoint":{"@type":"ContactPoint","email":"hello@kosai.kr","contactType":"customer support"}},
  {"@type":"WebSite","@id":"https://kosai.kr/#website","name":"KOSAI",
   "alternateName":"코사이","url":"https://kosai.kr/",
   "description":"코스피·코스닥 2,700여 개 전 종목 AI 분석 리포트",
-  "publisher":{"@id":"https://kosai.kr/#org"},"inLanguage":"ko"}
+  "publisher":{"@id":"https://kosai.kr/#org"},"inLanguage":"ko"},
+ {"@type":"WebPage","@id":"https://kosai.kr/#webpage","url":"https://kosai.kr/",
+  "name":"KOSAI — 한국 상장사 AI 리서치","isPartOf":{"@id":"https://kosai.kr/#website"},
+  "about":{"@id":"https://kosai.kr/#org"},"inLanguage":"ko"},
+ {"@type":"FAQPage","@id":"https://kosai.kr/#faq","mainEntity":[
+  {"@type":"Question","name":"KOSAI는 무료인가요?",
+   "acceptedAnswer":{"@type":"Answer","text":"종목 리포트·업종 분석·모닝브리핑·조건 검색은 모두 무료이며 로그인도 필요하지 않습니다. 워치리스트만 여러 기기에서 같은 목록을 보여 드리기 위해 로그인이 필요합니다."}},
+  {"@type":"Question","name":"어떤 종목까지 다루나요?",
+   "acceptedAnswer":{"@type":"Answer","text":"코스피와 코스닥에 상장된 전 종목입니다. 시가총액이 작아 증권사 리포트가 나오지 않는 종목도 같은 기준으로 다룹니다. 신규 상장 종목은 자동으로 추가되고, 상장폐지 종목은 자동으로 빠집니다."}},
+  {"@type":"Question","name":"실시간 시세인가요?",
+   "acceptedAnswer":{"@type":"Answer","text":"아닙니다. 본 사이트의 시세는 매 거래일 종가 기준입니다. 각 페이지에 데이터 기준 시각을 적어 두었습니다."}},
+  {"@type":"Question","name":"종목을 추천해 주나요?",
+   "acceptedAnswer":{"@type":"Answer","text":"하지 않습니다. KOSAI는 매수·매도 의견이나 목표주가를 제시하지 않으며, 투자 자문이나 매매 중개도 하지 않습니다."}},
+  {"@type":"Question","name":"AI가 쓴 글을 믿어도 되나요?",
+   "acceptedAnswer":{"@type":"Answer","text":"참고 자료로 보시기 바랍니다. 대형 언어 모델은 데이터에 없는 내용을 그럴듯하게 지어내는 경우가 드물게 있습니다. KOSAI는 시장 데이터를 함께 넣고 권유 표현을 막는 장치를 두지만, 그것으로 모든 오류를 잡는다고 보장할 수는 없습니다. 숫자가 이상하면 원천 공시(DART)에서 한 번 더 확인하여 주시기 바랍니다."}}
+ ]}
 ]}
 </script>
 <style>
@@ -513,6 +529,45 @@ body::after,body::before{display:none}
 .lp-stat span{display:block;margin-top:6px;font:500 12.5px var(--font-sans);color:rgba(255,255,255,.45)}
 .lp-stage{align-self:stretch;min-height:480px;cursor:grab;touch-action:pan-y}
 .lp-stage.drag{cursor:grabbing}
+
+/* ── 랜딩 본문 ────────────────────────────────────────────────────
+   히어로 아래에 오는 글. 이 페이지에는 원래 큰 제목 한 줄과 소개 한 문장이
+   전부였는데, 그것이 검색에서 문제가 됐다 — 크롤러가 읽는 글자가 132낱말뿐이라
+   1,457낱말짜리 About 페이지가 사이트 대표로 잡혔다. 히어로가 화면을 꽉 채우므로
+   (min-height:100vh) 첫인상은 그대로고, 내려야 이 글이 나온다. */
+.lp-body{padding:0 0 90px}
+.lp-sec{padding:76px 0 0;max-width:940px}
+.lp-sec h2{margin:0;font:800 clamp(24px,3.2vw,34px)/1.25 var(--font-sans);
+  letter-spacing:-.03em;color:#fff}
+.lp-sec > p{margin:16px 0 0;max-width:640px;
+  font:400 15.5px/1.8 var(--font-sans);color:rgba(255,255,255,.62);text-wrap:pretty}
+.lp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}
+.lp-item{display:block;padding:24px 24px 22px;border-radius:16px;text-decoration:none;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.11);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);transition:.16s}
+a.lp-item:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.24);
+  transform:translateY(-2px)}
+.lp-item h3{margin:0;font:700 16.5px var(--font-sans);color:#fff;letter-spacing:-.01em}
+.lp-item p{margin:10px 0 0;font:400 14px/1.7 var(--font-sans);color:rgba(255,255,255,.58)}
+.lp-steps{margin:28px 0 0;padding:0;list-style:none;counter-reset:step}
+.lp-steps li{position:relative;padding:0 0 0 44px;margin-top:18px;counter-increment:step;
+  font:400 15px/1.75 var(--font-sans);color:rgba(255,255,255,.62)}
+.lp-steps li::before{content:counter(step,decimal-leading-zero);position:absolute;left:0;top:1px;
+  font:700 12px/1.6 var(--font-sans);letter-spacing:.08em;color:rgba(255,255,255,.38)}
+.lp-steps b{color:#fff;font-weight:700}
+.lp-steps b::after{content:" \2014 ";color:rgba(255,255,255,.38);font-weight:400}
+.lp-faq{margin-top:26px}
+.lp-faq dt{margin-top:24px;font:700 15.5px/1.6 var(--font-sans);color:#fff}
+.lp-faq dd{margin:8px 0 0;max-width:660px;
+  font:400 15px/1.8 var(--font-sans);color:rgba(255,255,255,.62);text-wrap:pretty}
+.lp-more{display:inline-block;margin-top:26px;font:600 14.5px var(--font-sans);
+  color:rgba(255,255,255,.82);text-decoration:none;
+  border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:2px}
+.lp-more:hover{color:#fff;border-bottom-color:#fff}
+@media (max-width:720px){
+  .lp-grid{grid-template-columns:1fr}
+  .lp-sec{padding-top:58px}
+}
 @media (max-width:920px){
   .lp-hero{grid-template-columns:1fr;min-height:calc(100vh - 150px);text-align:center;gap:0}
   .lp-copy{max-width:none;margin:0 auto}
@@ -609,6 +664,118 @@ body::after,body::before{display:none}
       </div>
       <div class="lp-stage" id="lpStage" aria-hidden="true"></div>
     </section>
+
+    <!-- ── 랜딩 본문 ──────────────────────────────────────────────
+         왜 여기 있는가. 이 페이지에 있던 글은 큰 제목 한 줄과 소개 한 문장,
+         숫자 셋이 전부였다. 검색 크롤러가 읽는 글자로 세면 132낱말인데,
+         About 페이지는 1,457낱말이다. 그래서 '코사이' 로 찾으면 사이트 대표가
+         About 으로 잡혔다 — 처음 온 사람이 회사 소개부터 읽게 된다.
+
+         제목·설명·canonical·구조화 데이터는 이미 다 맞춰 놨었다. 남은 것은
+         이 페이지가 자기 이야기를 하지 않는다는 것 하나였다.
+
+         About 의 글을 옮겨 오지 않는다. 같은 글이 두 주소에 있으면 둘이
+         서로의 순위를 갉아먹는다. 여기는 '무엇을 볼 수 있는가', 저기는
+         '왜 만들었고 어떻게 만드는가' 로 나눈다. -->
+    <div class="lp-body">
+
+      <section class="lp-sec" id="what">
+        <h2>무엇을 볼 수 있는가</h2>
+        <p>KOSAI는 코스피·코스닥에 상장된 2,700여 개 전 종목을 다룹니다. 증권사 리포트가
+           나오지 않는 소형주도 같은 기준으로 정리합니다. 모든 내용은 로그인 없이 무료로
+           보실 수 있습니다.</p>
+        <div class="lp-grid">
+          <a class="lp-item" href="Reports.html">
+            <h3>종목 리포트</h3>
+            <p>전 종목의 AI 리포트를 업종·시가총액·PER·PBR·배당수익률·매출 성장률로
+               추려 봅니다. 종목 하나를 열면 사업 구조부터 리스크까지 한 페이지에
+               들어 있습니다.</p>
+          </a>
+          <a class="lp-item" href="industry.html">
+            <h3>업종 분석</h3>
+            <p>반도체·2차전지·바이오를 비롯한 업종별로 소속 종목을 모아 보고, 그 업종이
+               지금 어떤 국면에 있는지 AI가 정리한 분석을 함께 읽습니다.</p>
+          </a>
+          <a class="lp-item" href="brief.html">
+            <h3>모닝브리핑</h3>
+            <p>간밤 미국 시장과 금리·유가·환율, 코스피·코스닥의 투자자별 수급을 매 거래일
+               아침에 한 장으로 정리합니다. 숫자는 시세 데이터에서만 가져옵니다.</p>
+          </a>
+          <a class="lp-item" href="Watchlist.html">
+            <h3>워치리스트</h3>
+            <p>관심 종목을 모아 두면 여러 기기에서 같은 목록을 보실 수 있습니다. 이
+               기능만 로그인이 필요합니다.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="lp-sec" id="report">
+        <h2>리포트 한 편에 담기는 것</h2>
+        <p>KOSAI의 리포트는 종목마다 같은 항목, 같은 순서로 씁니다. 어제 본 종목과 오늘 본
+           종목을 같은 기준으로 견줄 수 있어야 하기 때문입니다.</p>
+        <div class="lp-grid">
+          <div class="lp-item">
+            <h3>사업 구조와 실적</h3>
+            <p>무엇을 팔아 돈을 버는 회사인지, 최근 분기 매출과 이익이 어느 방향으로
+               움직였는지를 공시된 숫자로 적습니다.</p>
+          </div>
+          <div class="lp-item">
+            <h3>강세 요인과 약세 요인</h3>
+            <p>한쪽만 강조하지 않습니다. 값이 오를 근거와 내릴 근거를 나란히 두고, 각각
+               무엇에 달려 있는지를 함께 적습니다.</p>
+          </div>
+          <div class="lp-item">
+            <h3>리스크와 확인 시점</h3>
+            <p>무엇이 어긋나면 이야기가 달라지는지, 그리고 그것을 언제 확인할 수 있는지를
+               적습니다.</p>
+          </div>
+          <div class="lp-item">
+            <h3>밸류에이션과 기준 시각</h3>
+            <p>PER·PBR·배당수익률 같은 지표를 어떤 값으로 계산했는지, 그 데이터가 언제
+               것인지를 함께 보여 드립니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="lp-sec" id="how">
+        <h2>어떻게 만들어지는가</h2>
+        <p>KOSAI는 사람이 종목을 골라 쓰지 않습니다. 전 종목을 같은 절차로 매일 돌립니다.</p>
+        <ol class="lp-steps">
+          <li><b>데이터 수집</b><span>매 거래일 저녁 한국거래소(KRX)의 종가·거래량·시가총액과 금융감독원 전자공시(DART)의 기업 정보를 받아옵니다.</span></li>
+          <li><b>업종 분류</b><span>전 종목을 실제 사업 내용 기준으로 업종과 테마에 배정합니다. 새로 상장된 종목도 같은 기준으로 자동 분류됩니다.</span></li>
+          <li><b>리포트 작성</b><span>Claude가 정해진 항목 구조에 맞춰 본문을 씁니다. 매수·매도·목표주가 같은 투자 권유 표현은 쓰지 않도록 지시합니다.</span></li>
+          <li><b>공시 반영</b><span>어떤 종목이든 사업·반기·분기보고서가 새로 제출되면, 그 실적을 반영해 해당 종목의 리포트를 다시 씁니다.</span></li>
+        </ol>
+        <a class="lp-more" href="About.html">데이터 출처와 AI 분석의 한계를 자세히 보기</a>
+      </section>
+
+      <section class="lp-sec" id="faq">
+        <h2>자주 묻는 질문</h2>
+        <dl class="lp-faq">
+          <dt>무료인가요?</dt>
+          <dd>종목 리포트·업종 분석·모닝브리핑·조건 검색은 모두 무료이며 로그인도 필요하지
+              않습니다. 워치리스트만 여러 기기에서 같은 목록을 보여 드리기 위해 로그인이
+              필요합니다.</dd>
+          <dt>어떤 종목까지 다루나요?</dt>
+          <dd>코스피와 코스닥에 상장된 전 종목입니다. 시가총액이 작아 증권사 리포트가 나오지
+              않는 종목도 같은 기준으로 다룹니다. 신규 상장 종목은 자동으로 추가되고,
+              상장폐지 종목은 자동으로 빠집니다.</dd>
+          <dt>실시간 시세인가요?</dt>
+          <dd>아닙니다. 본 사이트의 시세는 매 거래일 종가 기준입니다. 각 페이지에 데이터
+              기준 시각을 적어 두었으니 어느 시점의 값인지 확인하신 뒤 보시기 바랍니다.</dd>
+          <dt>종목을 추천해 주나요?</dt>
+          <dd>하지 않습니다. KOSAI는 매수·매도 의견이나 목표주가를 제시하지 않으며, 투자
+              자문이나 매매 중개도 하지 않습니다. 공시와 시장 데이터가 어떻게 변했는지를 정리해
+              보여 드리는 것까지가 저희가 하는 일입니다.</dd>
+          <dt>AI가 쓴 글을 믿어도 되나요?</dt>
+          <dd>참고 자료로 보시기 바랍니다. 대형 언어 모델은 데이터에 없는 내용을 그럴듯하게
+              지어내는 경우가 드물게 있습니다. KOSAI는 시장 데이터를 함께 넣고 권유 표현을
+              막는 장치를 두지만, 그것으로 모든 오류를 잡는다고 보장할 수는 없습니다.
+              숫자가 이상하면 원천 공시(DART)에서 한 번 더 확인하여 주시기 바랍니다.</dd>
+        </dl>
+      </section>
+
+    </div>
   </div>
 </main>
 
@@ -658,7 +825,73 @@ if(window.KOSi18n) KOSi18n.register({
   // 랜딩 지표 세 칸의 이름. '업종 분석' 은 여기서 따로 적지 않는다 —
   // 위 헤더 표에 이미 있고, 같은 한글을 두 번 적으면 뒤엣것이 이겨서
   // 헤더까지 그 말로 바뀐다(실제로 헤더가 'Sector analyses' 로 나왔다).
-  "AI 리포트":"AI Reports","매 거래일":"Every trading day","데이터 갱신":"Data Refresh"
+  "AI 리포트":"AI Reports","매 거래일":"Every trading day","데이터 갱신":"Data Refresh",
+
+  // ── 랜딩 본문 ────────────────────────────────────────────────
+  // 영어 화면에서 이 글만 한글로 남으면, 헤더는 영어인데 본문은 한글인
+  // 반쪽짜리 페이지가 된다. 히어로와 같은 자리에 함께 둔다.
+  "무엇을 볼 수 있는가":"What you get",
+  "KOSAI는 코스피·코스닥에 상장된 2,700여 개 전 종목을 다룹니다. 증권사 리포트가 나오지 않는 소형주도 같은 기준으로 정리합니다. 모든 내용은 로그인 없이 무료로 보실 수 있습니다.":
+    "KOSAI covers all 2,700+ companies listed on KOSPI and KOSDAQ. Small caps that brokerage research never reaches are treated by the same standard. Everything is free to read, with no sign-in.",
+  "종목 리포트":"Company reports",
+  "전 종목의 AI 리포트를 업종·시가총액·PER·PBR·배당수익률·매출 성장률로 추려 봅니다. 종목 하나를 열면 사업 구조부터 리스크까지 한 페이지에 들어 있습니다.":
+    "Filter every company's AI report by industry, market cap, P/E, P/B, dividend yield or revenue growth. Open one and the business, the numbers and the risks are on a single page.",
+  "반도체·2차전지·바이오를 비롯한 업종별로 소속 종목을 모아 보고, 그 업종이 지금 어떤 국면에 있는지 AI가 정리한 분석을 함께 읽습니다.":
+    "Group companies by industry — semiconductors, batteries, biotech and the rest — and read an AI analysis of where that industry stands right now.",
+  "간밤 미국 시장과 금리·유가·환율, 코스피·코스닥의 투자자별 수급을 매 거래일 아침에 한 장으로 정리합니다. 숫자는 시세 데이터에서만 가져옵니다.":
+    "Overnight US markets, rates, oil and FX, plus who bought and sold on KOSPI and KOSDAQ — one page every trading morning. Every figure comes from market data, never from a headline.",
+  "관심 종목을 모아 두면 여러 기기에서 같은 목록을 보실 수 있습니다. 이 기능만 로그인이 필요합니다.":
+    "Keep the companies you follow in one list and see the same list on every device. This is the only feature that needs a sign-in.",
+
+  "리포트 한 편에 담기는 것":"What a report contains",
+  "KOSAI의 리포트는 종목마다 같은 항목, 같은 순서로 씁니다. 어제 본 종목과 오늘 본 종목을 같은 기준으로 견줄 수 있어야 하기 때문입니다.":
+    "Every company gets the same sections in the same order, so the one you read yesterday and the one you read today can be compared on the same terms.",
+  "사업 구조와 실적":"The business and its numbers",
+  "무엇을 팔아 돈을 버는 회사인지, 최근 분기 매출과 이익이 어느 방향으로 움직였는지를 공시된 숫자로 적습니다.":
+    "What the company actually sells to make money, and which way revenue and profit moved last quarter — written from the filed figures.",
+  "강세 요인과 약세 요인":"The case for and against",
+  "한쪽만 강조하지 않습니다. 값이 오를 근거와 내릴 근거를 나란히 두고, 각각 무엇에 달려 있는지를 함께 적습니다.":
+    "Never one side only. The reasons it could rise and the reasons it could fall sit side by side, each with what it depends on.",
+  "리스크와 확인 시점":"Risks and when to check",
+  "무엇이 어긋나면 이야기가 달라지는지, 그리고 그것을 언제 확인할 수 있는지를 적습니다.":
+    "What would have to go wrong for the story to change, and when you will be able to see whether it did.",
+  "밸류에이션과 기준 시각":"Valuation and as-of time",
+  "PER·PBR·배당수익률 같은 지표를 어떤 값으로 계산했는지, 그 데이터가 언제 것인지를 함께 보여 드립니다.":
+    "Which inputs produced each of P/E, P/B and dividend yield, and the date the data behind them is from.",
+
+  "어떻게 만들어지는가":"How it is made",
+  "KOSAI는 사람이 종목을 골라 쓰지 않습니다. 전 종목을 같은 절차로 매일 돌립니다.":
+    "Nobody picks which companies get covered. Every listed company goes through the same routine, every day.",
+  "데이터 수집":"Collect",
+  "매 거래일 저녁 한국거래소(KRX)의 종가·거래량·시가총액과 금융감독원 전자공시(DART)의 기업 정보를 받아옵니다.":
+    "Each trading evening we pull closing prices, volume and market cap from the Korea Exchange (KRX), and company information from the regulator's disclosure system (DART).",
+  "업종 분류":"Classify",
+  "전 종목을 실제 사업 내용 기준으로 업종과 테마에 배정합니다. 새로 상장된 종목도 같은 기준으로 자동 분류됩니다.":
+    "Every company is assigned to an industry and a theme by what it actually does. Newly listed companies are classified the same way, automatically.",
+  "리포트 작성":"Write",
+  "Claude가 정해진 항목 구조에 맞춰 본문을 씁니다. 매수·매도·목표주가 같은 투자 권유 표현은 쓰지 않도록 지시합니다.":
+    "Claude writes the body against a fixed set of sections, under instructions never to use buy, sell or price-target language.",
+  "공시 반영":"Refresh on filing",
+  "어떤 종목이든 사업·반기·분기보고서가 새로 제출되면, 그 실적을 반영해 해당 종목의 리포트를 다시 씁니다.":
+    "Whenever any company files an annual, half-year or quarterly report, its own report is rewritten with those results.",
+  "데이터 출처와 AI 분석의 한계를 자세히 보기":"Read more about our data sources and the limits of AI analysis",
+
+  "자주 묻는 질문":"Frequently asked",
+  "무료인가요?":"Is it free?",
+  "종목 리포트·업종 분석·모닝브리핑·조건 검색은 모두 무료이며 로그인도 필요하지 않습니다. 워치리스트만 여러 기기에서 같은 목록을 보여 드리기 위해 로그인이 필요합니다.":
+    "Company reports, industry analysis, the morning brief and the filters are all free and need no sign-in. Only the watchlist asks you to sign in, so the same list follows you across devices.",
+  "어떤 종목까지 다루나요?":"Which companies are covered?",
+  "코스피와 코스닥에 상장된 전 종목입니다. 시가총액이 작아 증권사 리포트가 나오지 않는 종목도 같은 기준으로 다룹니다. 신규 상장 종목은 자동으로 추가되고, 상장폐지 종목은 자동으로 빠집니다.":
+    "Every company listed on KOSPI and KOSDAQ. Companies too small for brokerage research are covered by the same standard. New listings are added automatically and delisted companies drop out automatically.",
+  "실시간 시세인가요?":"Are the prices real time?",
+  "아닙니다. 본 사이트의 시세는 매 거래일 종가 기준입니다. 각 페이지에 데이터 기준 시각을 적어 두었으니 어느 시점의 값인지 확인하신 뒤 보시기 바랍니다.":
+    "No. Prices on this site are closing prices for each trading day. Every page states the as-of time, so please check which moment the figures belong to.",
+  "종목을 추천해 주나요?":"Do you recommend stocks?",
+  "하지 않습니다. KOSAI는 매수·매도 의견이나 목표주가를 제시하지 않으며, 투자 자문이나 매매 중개도 하지 않습니다. 공시와 시장 데이터가 어떻게 변했는지를 정리해 보여 드리는 것까지가 저희가 하는 일입니다.":
+    "No. We give no buy or sell opinion and no price target, and we neither advise on nor broker any trade. Setting out how disclosures and market data have changed is where our job ends.",
+  "AI가 쓴 글을 믿어도 되나요?":"Can I trust what the AI wrote?",
+  "참고 자료로 보시기 바랍니다. 대형 언어 모델은 데이터에 없는 내용을 그럴듯하게 지어내는 경우가 드물게 있습니다. KOSAI는 시장 데이터를 함께 넣고 권유 표현을 막는 장치를 두지만, 그것으로 모든 오류를 잡는다고 보장할 수는 없습니다. 숫자가 이상하면 원천 공시(DART)에서 한 번 더 확인하여 주시기 바랍니다.":
+    "Treat it as reference material. Large language models do occasionally state something plausible that the data does not support. We supply the market figures alongside and block recommendation language, but we cannot promise that catches every error. If a number looks wrong, please check it once more against the original filing on DART."
 });
 </script>
 <script type="importmap">
