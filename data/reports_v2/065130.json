@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "탑엔지니어링: 2026Q1 흑자 전환, 지속성이 관건",
-  "en": "Top Engineering: 2026 Q1 Profit Turnaround — Sustainability Is the Key Test"
+  "ko": "2026년 2연속 흑자, 지속성은 물음표",
+  "en": "Two Straight Profitable Quarters, Durability Still in Question"
  },
  "lead": {
-  "ko": "2025년 이차전지 장비 개발 원가 급증·종속기업 부진으로 연간 영업손실 352억 원을 기록했으나, 2026년 1분기 매출 2,639억 원·영업이익 90억 원을 달성하며 4개 분기 만에 의미 있는 흑자 전환을 이루었다.",
-  "en": "After posting an annual operating loss of ₩35.2 billion in 2025 — driven by surging secondary battery equipment development costs and subsidiary weakness — Top Engineering delivered a credible turnaround in 2026 Q1 with revenue of ₩263.9 billion and operating profit of ₩9.0 billion, the first meaningful return to profitability in four quarters."
+  "ko": "탑엔지니어링은 2026년 1분기와 2분기 연속으로 영업이익·순이익 흑자를 기록했지만, 2025년 연간 실적은 매출 감소와 손실 확대로 마감해 최근 반등의 지속 여부가 관전 포인트다.",
+  "en": "TOP Engineering posted operating and net profits in both the first and second quarters of 2026, but its full-year 2025 results closed with lower revenue and wider losses, leaving the durability of the recent rebound as the key question."
  },
  "keypoints": [
   {
-   "ko": "2026Q1 매출 2,639억 원(전년 동기 +29.6%, 전분기 +52.8%)·영업이익 90억 원(OPM ~3.4%)으로, 최근 공시 분기 중 가장 높은 단일 분기 매출 달성",
-   "en": "2026 Q1 revenue of ₩263.9B (+29.6% YoY, +52.8% QoQ) with operating profit of ₩9.0B (OPM ~3.4%) — the highest single-quarter revenue in the disclosed dataset"
+   "ko": "2025년 연결 매출 약 7,985억원(전년 대비 -2.1%), 영업손실 약 352억원, 지배주주순손실 약 366억원으로 적자 확대",
+   "en": "FY2025 consolidated revenue of roughly KRW 798.5bn (-2.1% YoY), an operating loss of about KRW 35.2bn, and a net loss attributable to owners of about KRW 36.6bn, marking a wider loss than the prior year"
   },
   {
-   "ko": "2025년 이차전지 장비 개발성 원가율 상승 및 종속기업 실적 부진이 영업손실 -352억 원·지배주주 순손실 -366억 원의 핵심 원인으로 DART 공시됨",
-   "en": "DART filings identified surging development cost ratios on secondary battery equipment and underperforming subsidiaries as the primary drivers of the FY2025 operating loss of ₩35.2B and controlling-shareholder net loss of ₩36.6B"
+   "ko": "2026년 1분기(매출 약 2,639억원, 영업이익 약 90억원)와 2분기(매출 약 2,384억원, 영업이익 약 55억원) 2개 분기 연속 흑자전환",
+   "en": "Two consecutive quarters of profitability in 1Q2026 (revenue about KRW 263.9bn, operating profit about KRW 9.0bn) and 2Q2026 (revenue about KRW 238.4bn, operating profit about KRW 5.5bn)"
   },
   {
-   "ko": "TFT-LCD·OLED·이차전지·카메라모듈 장비 4축에 자동차 전장 디스플레이 본딩 장비를 신성장 동력으로 추가, 포트폴리오 다각화 진행 중",
-   "en": "A four-pillar structure (TFT-LCD/OLED, secondary battery, camera module equipment) is being expanded with automotive display bonding as a new growth engine, diversifying the business portfolio"
+   "ko": "연결 매출은 카메라모듈(CM)이 약 72%, 2차전지(ES)가 약 18%, LCD 장비가 4% 안팎을 차지해 종속회사 파워로직스의 실적이 그룹 전체를 좌우",
+   "en": "Consolidated revenue mix is roughly 72% camera modules (CM), 18% secondary batteries (ES), and about 4% LCD equipment, meaning subsidiary PowerLogics drives group results"
   },
   {
-   "ko": "삼성디스플레이 8.6세대 IT OLED 라인 양산 개시(2026년)·OLED의 글로벌 디스플레이 점유율 확대 전망이 디스플레이 장비 수주 회복의 핵심 변수",
-   "en": "Samsung Display's 2026 ramp of its Gen 8.6 IT OLED line and the projected expansion of OLED's global display market share are the principal order momentum drivers"
+   "ko": "핵심 LCD 장비 디스펜서는 글로벌 점유율 약 60%로 1위를 유지하나 전방 투자 정체 속 매출 비중은 작음",
+   "en": "Core LCD dispenser equipment retains roughly a 60% global market-share lead, but its revenue contribution is small amid subdued downstream investment"
   },
   {
-   "ko": "영업현금흐름은 손실 연도에도 양수를 유지(2022~2025년 +140억~+378억), 주가는 주당순자산(BPS 12,199원) 대비 할인 구간에 위치",
-   "en": "Operating cash flow remained positive throughout loss years (₩14.0B–₩37.8B, 2022–2025), and the stock is trading at a discount relative to book value (BPS: ₩12,199)"
+   "ko": "중화권 패널업체 설비투자 확대와 차량용 OLED 출하 증가가 향후 ES/LCD 장비 수요 변수로 거론됨",
+   "en": "Expanding capex by Chinese panel makers and rising automotive OLED shipments are cited as potential demand drivers for ES/LCD equipment"
   }
  ],
  "business": {
-  "ko": "탑엔지니어링(코스닥 065130, 1993년 설립, CEO 안만호)은 TFT-LCD·OLED 패널, 이차전지, 카메라모듈 공정장비를 개발·제조·판매하는 코스닥 상장 전문 장비사로, 디스플레이 장비 분야에서 높은 글로벌 점유율을 보유하고 있다. 국내 주요 패널 제조사(삼성디스플레이·LG디스플레이)와 중국 디스플레이 고객사 모두를 납품처로 두고 있으며, 2024년 3분기 기준 국내 반도체·디스플레이 장비 업체 중 매출 규모 3위권에 해당하는 중형 장비사다. 이차전지 제조장비 사업은 전기차 보급 확대를 배경으로 성장 기대를 받았으나, 신제품 개발 과정에서 원가 초과가 발생해 수익성에 부담을 주었다. 2017년 자동차 전장 시장에 진입한 이후, 차량용 디스플레이 패널과 터치 글라스를 합착하는 본딩 장비를 주력 전장 제품으로 사업을 확대하고 있으며 연간 250억 원 이상의 매출을 목표로 제시한 바 있다. 유럽 현지 사무소를 설립해 글로벌 완성차 고객 공략을 병행하고, 계기판·중앙정보 디스플레이(CID)를 일체형으로 제작하는 장비로 전장 포트폴리오를 확대 중이다. 비접촉식 수직형 마이크로 LED 검사 장비를 개발 중이며, 레이저앱스와의 공동 연구를 통해 반도체 유리기판 절단·브레이킹 기술도 확보해 가고 있다. 부문별 매출 비중은 DART 공시 원문에서 별도 확인이 필요하며, 디스플레이·이차전지·카메라모듈·전장 등 복수 전방 시장을 아우르는 다각화 구조가 사업의 핵심 특징이다.",
-  "en": "Top Engineering (KOSDAQ 065130, est. 1993, CEO Ahn Man-ho) develops, manufactures, and sells process equipment for TFT-LCD/OLED panels, secondary batteries, and camera modules, and holds a strong global market share in the display equipment segment. Its customer base spans major domestic panel makers (Samsung Display, LG Display) and Chinese display manufacturers; by quarterly revenue in 2024 Q3, the company ranks among the top three Korean semiconductor/display equipment makers. The secondary battery equipment business attracted growth expectations amid EV adoption, but cost overruns in new product development have weighed on profitability. Since entering the automotive electronics market in 2017, the company has built its vehicle display bonding equipment into a leading automotive product and has stated a target of ₩25 billion or more in annual automotive electronics revenue. A European office supports outreach to global OEM customers, and integrated instrument cluster/CID production equipment is expanding the automotive portfolio. The company is also developing a non-contact vertical micro-LED inspection system and, in collaboration with LaserApps, advancing semiconductor glass substrate cutting and breaking technology. The segment revenue breakdown requires verification in official DART filings; the defining structural characteristic is diversified end-market exposure across display, secondary battery, camera module, and automotive electronics industries."
+  "ko": "탑엔지니어링은 1993년 설립돼 2003년 코스닥에 상장한 반도체·디스플레이·2차전지·카메라모듈 공정장비 제조업체다. 본사와 생산기지는 경북 구미에 있고 경기 판교에 R&D센터를 두며 중국과 독일에 해외 사무소를 운영한다. 핵심 사업은 LCD 디스펜서, GCS, Array Tester, 세정기 등 디스플레이 패널 제조용 장비로, 이 중 디스펜서는 시장에서 약 60%의 점유율로 1위를 차지하고 있으며 글로벌 주요 패널업체에 공급된다. 2014년에는 디스플레이 검사장비 전문기업 일렉스를 합병해 모듈 테스터 분야로 사업을 확장했다. 2017년에는 2차전지 보호회로(PCM)·카메라모듈 전문기업 파워로직스를 종속회사로 편입하며 ES(에너지솔루션)·CM(카메라모듈) 사업으로 외형을 넓혔다. 종속회사 파워로직스는 ES 사업부문에서 PCM·스마트모듈·배터리팩·BMS·ESS를, CM 사업부문에서 IT 모바일 및 전장용 카메라모듈을 생산한다. 연결 매출 구성은 카메라모듈(CM)이 약 72%, 2차전지(ES)가 약 18%, LCD 장비가 4% 안팎을 차지해 종속회사 매출이 그룹 전체 실적을 좌우하는 구조다. 2025년에는 미국 현지법인을 신설해 글로벌 판매망 확대를 추진하고 있으며, 경쟁구도는 LCD 장비에서 디엠에스·아바코 등과, 2차전지·카메라모듈에서는 다수의 중소형 부품·장비업체와 경합하는 구조다.",
+  "en": "TOP Engineering was founded in 1993 and listed on KOSDAQ in 2003 as a maker of process equipment for semiconductors, displays, secondary batteries, and camera modules. Its headquarters and production base are in Gumi, Gyeongbuk, with an R&D center in Pangyo, Gyeonggi, and overseas offices in China and Germany. Its core business is display panel equipment such as LCD dispensers, GCS, array testers, and cleaning equipment, with the dispenser holding roughly a 60% share and the number-one position, supplied to major global panel makers. In 2014 the company merged with Elex, a display inspection equipment specialist, expanding into the module tester segment. In 2017 it brought PowerLogics, a battery protection circuit (PCM) and camera module specialist, under its consolidated umbrella, broadening its footprint into the ES (energy solutions) and CM (camera module) businesses. Subsidiary PowerLogics produces PCM, smart modules, battery packs, BMS, and ESS in its ES segment, and IT mobile and automotive camera modules in its CM segment. Consolidated revenue is roughly 72% camera modules (CM), 18% secondary batteries (ES), and around 4% LCD equipment, meaning the subsidiary's results drive group-level performance. In 2025 the company set up a US subsidiary to expand its global sales network, while competing against DMS and Avaco in LCD equipment and numerous small and mid-sized parts and equipment makers in secondary batteries and camera modules."
  },
  "earnings": {
-  "ko": "2023년은 매출 9,594억 원·영업이익 219억 원(OPM 2.3%)·지배주주 순이익 221억 원으로 흑자 기반을 확인한 한 해였다. 그러나 2024년에는 매출이 8,154억 원(-15.0%)으로 줄고 영업손실 -75억 원(OPM -0.9%)으로 전환됐으며, 영업외 항목의 지원으로 지배주주 순이익은 32억 원을 유지하는 데 그쳤다. 2025년에는 매출 7,985억 원(-2.1%)에 영업손실이 -352억 원(OPM -4.4%)으로 확대됐고, DART 공시에 따르면 이차전지 제조장비 개발성 원가율 상승과 종속기업 실적 부진이 수익성 악화의 주된 요인이었다. 분기별로 보면 2025년 1~2분기에 연속 영업손실(-153억, -119억)이 이어진 후, 3분기에 영업이익 +20억 원으로 잠시 반등했다가 4분기에 -100억 원의 대규모 손실이 재발, 지배주주 순손실은 -264억 원에 달했다. 2026년 1분기는 매출 2,639억 원(전년 동기 대비 +29.6%, 전분기 대비 +52.8%)·영업이익 +90억 원(OPM 약 3.4%)·지배주주 순이익 +56억 원으로 의미 있는 턴어라운드를 달성했으며, 이는 최근 공시된 분기 중 가장 높은 단일 분기 매출액이기도 하다. 영업현금흐름은 2022~2025년 4개 연도 모두 양수(+140억~+378억)를 유지해, 손실 구간에서도 기초 현금창출력이 살아있음을 확인할 수 있다. 부채비율은 70~75% 수준으로 업종 내 관리 가능한 범위이며, 지배주주 자본은 2023년 1,941억 원에서 2025년 1,527억 원으로 약 21% 감소했다.",
-  "en": "In 2023, revenue reached ₩959.4B, operating profit ₩21.9B (OPM 2.3%), and controlling-shareholder net profit ₩22.1B, confirming a solid earnings base. In 2024, however, revenue fell 15.0% to ₩815.4B and swung to an operating loss of ₩7.5B (OPM -0.9%); a controlling-shareholder net profit of ₩3.2B was preserved only through non-operating items. In 2025, revenue slipped a further 2.1% to ₩798.5B while the operating loss widened to ₩35.2B (OPM -4.4%); DART filings identified rising development cost ratios in secondary battery equipment and underperforming subsidiaries as the primary causes. Quarterly, consecutive operating losses in 2025 Q1 (₩-15.3B) and Q2 (₩-11.9B) were followed by a brief Q3 recovery (+₩2.0B), before a heavy Q4 loss recurred (OP ₩-10.0B; attributable net ₩-26.4B), likely reflecting year-end cost recognition. The 2026 Q1 results marked a clear inflection: revenue of ₩263.9B (+29.6% YoY, +52.8% QoQ — the highest single-quarter figure in the dataset), operating profit of ₩9.0B (OPM ~3.4%), and attributable net profit of ₩5.6B. Operating cash flow remained positive in all four years from 2022 through 2025 (₩14.0B–₩37.8B), demonstrating that underlying cash generation survived the loss cycle. The debt-to-equity ratio held within 70–75%, a manageable band for the sector, while controlling-shareholder equity declined roughly 21% from ₩194.1B in 2023 to ₩152.7B in 2025."
+  "ko": "2025년 연결 매출액은 약 7,985억원으로 전년 약 8,154억원 대비 2.1% 감소했다. 영업손익은 약 -352억원으로 2024년 약 -75억원보다 적자 폭이 크게 확대됐고, 지배주주순손실도 약 366억원으로 2024년의 흑자(약 32억원)에서 다시 손실로 전환됐다. 부문별로는 카메라모듈(CM) 부문이 스마트폰 시장 성숙과 소비 둔화로 매출이 줄고 원자재가 상승과 일회성 비용 증가로 수익성이 악화된 것으로 나타났다. 반면 2023년에는 매출 약 9,594억원, 영업이익 약 219억원으로 흑자를 냈던 만큼, 최근 2년간의 적자는 실적 변동성이 크다는 점을 보여준다. 분기별로 보면 2025년 3분기(매출 약 2,091억원, 영업이익 약 20억원)에 일시적으로 흑자를 냈다가 4분기(매출 약 1,727억원, 영업손실 약 100억원)에 다시 적자로 돌아섰다. 이후 2026년 1분기(매출 약 2,639억원, 영업이익 약 90억원, 지배주주순이익 약 56억원)와 2분기(매출 약 2,384억원, 영업이익 약 55억원, 지배주주순이익 약 42억원)에 2개 분기 연속 흑자전환에 성공했다. 현금창출력(CFO) 측면에서는 2022~2025년 매년 약 140억~380억원대의 양(+)의 영업활동현금흐름을 유지해 손익 변동성에도 현금 흐름 자체는 꾸준했다. 부채비율은 2025년 말 70.7%로 2024년 74.9%보다 낮아졌으나 70%대의 높은 수준을 지속하고 있다.",
+  "en": "FY2025 consolidated revenue was about KRW 798.5bn, down 2.1% from roughly KRW 815.4bn a year earlier. The operating loss widened sharply to about KRW 35.2bn from about KRW 7.5bn in 2024, and the net loss attributable to owners also swung to about KRW 36.6bn from a profit of roughly KRW 3.2bn in 2024. By segment, the camera module (CM) business saw revenue decline amid smartphone market maturity and weaker consumption, while rising raw material costs and one-off expenses hurt profitability. By contrast, 2023 revenue was about KRW 959.4bn with an operating profit of roughly KRW 21.9bn, underscoring how volatile results have been over the past two years. On a quarterly basis, the company briefly returned to profit in 3Q2025 (revenue about KRW 209.1bn, operating profit about KRW 2.0bn) before slipping back into a loss in 4Q2025 (revenue about KRW 172.7bn, operating loss about KRW 10.0bn). It then posted two consecutive profitable quarters in 1Q2026 (revenue about KRW 263.9bn, operating profit about KRW 9.0bn, net income attributable to owners about KRW 5.6bn) and 2Q2026 (revenue about KRW 238.4bn, operating profit about KRW 5.5bn, net income attributable to owners about KRW 4.2bn). On cash generation, operating cash flow stayed positive every year from 2022 to 2025, ranging roughly from KRW 14bn to KRW 38bn, suggesting cash flow itself remained steadier than reported earnings. The debt ratio eased to 70.7% at the end of 2025 from 74.9% in 2024, but has persistently stayed in the 70% range."
  },
  "industry": {
-  "ko": "글로벌 디스플레이 시장에서 OLED 비중은 옴디아(Omdia) 집계 기준 2025년 44.7%에서 2029년 51%, 2030년 52.6%까지 확대될 전망이며, 스마트폰을 넘어 게이밍 모니터·차량용 디스플레이 등으로 적용 범위가 빠르게 넓어지고 있다. 한국 기업은 2025년 9인치 이상 중대형 OLED 시장의 92.4%를 점유하며 압도적 지위를 유지하고 있고, 삼성디스플레이는 2026년 아산 8.6세대 IT OLED 라인 양산을 개시해 노트북·태블릿 시장 공략에 나서고 있다. 자동차용 디스플레이는 프리미엄 차량을 중심으로 대형화·곡면화·다면화가 가속되며 OLED 채택이 빠르게 확산되고 있어, 탑엔지니어링이 집중하는 전장 본딩 장비의 중장기 수요 기반을 제공한다. 반면 중국 BOE·CSOT·Visionox 등의 공격적 투자로 OLED 생산 능력이 급성장하며 2025년 2분기 중국 기업의 OLED 시장 점유율이 38%에 달했고, 2029년부터 한국을 추월할 것이라는 전망이 제기되어 고객사 경쟁 지형 변화에 따른 리스크가 상존한다. 이차전지 장비 시장은 글로벌 전기차 수요 변동성과 맞물려 발주 사이클이 불규칙하며, 국내 배터리 3사(LG에너지솔루션·삼성SDI·SK온)의 투자 계획이 장비 수주의 주요 변수로 작용한다. 카메라모듈 장비 측면에서는 스마트폰 카메라 고사양화 및 전장 카메라 채택 확대라는 양방향 수요가 성장 근거를 제공한다.",
-  "en": "In the global display market, OLED's share is projected to expand from 44.7% in 2025 to 51% by 2029 and 52.6% by 2030 (Omdia), as adoption spreads from smartphones into gaming monitors and automotive displays. Korean manufacturers held a commanding 92.4% share of the large-format OLED market (≥9 inches, 2025), and Samsung Display is ramping a Gen 8.6 IT OLED line in Asan in 2026 to target the notebook and tablet segments. Automotive displays are a structurally favorable sub-market: premium-vehicle trends toward larger, curved, and multi-panel configurations are accelerating OLED adoption and supporting multi-year demand for the lamination/bonding equipment that Top Engineering specializes in. On the risk side, Chinese producers (BOE, CSOT, Visionox) are aggressively expanding OLED capacity — China's combined OLED market share reached approximately 38% in 2025 Q2, and projections suggest Chinese capacity may surpass Korea's from around 2029, altering competitive dynamics for domestic panel customers. The secondary battery equipment market tracks the irregular global EV investment cycle; investment plans by Korea's battery Big Three (LGes, Samsung SDI, SK On) are the primary order variables. In camera modules, dual demand drivers — rising smartphone camera specifications and fast-growing automotive camera adoption — underpin the medium-term outlook."
+  "ko": "디스플레이 장비 시장은 국내 대형 패널사의 신규 투자가 정체된 반면, 중화권 패널업체들의 OLED·차량용 디스플레이 투자가 상대적으로 활발한 국면으로 이동하고 있다. 관련 자료는 중화권 디스플레이 기업의 설비투자 확대와 차량용 OLED 출하량 증가를 ES(2차전지)·LCD 장비 수요를 늘릴 요인으로 지목했다. 2차전지 장비·부품 업종은 전기차 판매 성장 둔화와 셀 업체들의 투자 속도 조절 속에서도, 전기차 시장과 그린카 산업 성장에 따른 ESS·중대형 배터리팩 수요가 새로운 성장축으로 부각되고 있다. 카메라모듈 산업은 스마트폰 수요 정체 속에서 멀티카메라·고화소 프리미엄 모델 채택 확대가 매출 성장의 주요 변수로 작용하고 있다. 경쟁사 대비로는 LCD 장비에서 디엠에스·아바코 등과 경쟁하는데, 최근 아바코의 매출이 크게 줄어드는 등 업종 내에서도 업체별 실적 편차가 큰 편이다. 이차전지 장비주 전반은 배터리 투자 기대감에 동반 강세를 보이는 테마성 흐름도 관찰된다.",
+  "en": "In the display equipment market, new investment by major domestic panel makers remains subdued, while Chinese panel makers' OLED and automotive display investment has become relatively more active. Industry commentary points to expanding capex by Chinese display firms and rising automotive OLED shipments as factors that could lift demand for ES (secondary battery) and LCD equipment. In secondary battery equipment and components, even amid slower EV sales growth and cell makers moderating investment pace, demand for ESS and mid-to-large battery packs tied to EV and green-car industry growth is emerging as a new growth axis. In camera modules, adoption of multi-camera and high-megapixel premium models is a key revenue driver even as overall smartphone demand stays flat. Competitively, the company faces DMS and Avaco in LCD equipment, and performance dispersion across peers is wide, as seen in Avaco's recently sharp revenue decline. Secondary battery equipment stocks broadly also show thematic strength that moves together on battery-investment expectations."
  },
  "outlook": {
-  "ko": "2026년 1분기의 강력한 실적 반등은 디스플레이 장비 수주 흐름이 개선되고 있음을 시사하나, 2025년 4분기 대규모 손실의 원인인 이차전지 장비 개발 원가 문제와 종속기업 부진이 2026년 내 완전히 해소될 수 있는지가 핵심 과제다. 삼성디스플레이의 8.6세대 IT OLED 양산 개시는 패널 장비 발주 확대로 이어질 수 있으며, 탑엔지니어링이 해당 공급망에서 차지하는 비중에 따라 수주 규모가 결정될 것이다. 전장 디스플레이 본딩 장비 사업은 차량용 OLED 전환 트렌드와 맞물려 중장기 성장 동력으로 자리잡을 가능성이 있으며, 유럽 현지 사무소를 통한 글로벌 완성차 고객 확보도 병행 중이다. 레이저앱스와 공동 개발 중인 반도체 유리기판 절단 기술은 반도체 패키징 시장으로의 신규 진입 가능성을 열어 두고 있으며, 비접촉식 마이크로 LED 검사 장비 역시 차세대 디스플레이 공정 수요를 겨냥한 포트폴리오 다각화 전략이다. 배당은 현재 공시 기준 없으며, 수익성 정상화 이전까지는 내부 유보를 통한 재무 체력 회복이 우선 과제로 보인다. 2026년 회복세의 연간 지속 여부는 2·3분기 실적에서 확인이 필요하다.",
-  "en": "The sharp Q1 2026 recovery suggests an improving display equipment order flow, but the critical question is whether the development cost overruns in secondary battery equipment and subsidiary losses that drove the Q4 2025 miss will be fully resolved within the year. Samsung Display's Gen 8.6 IT OLED ramp could trigger a wave of new equipment orders; the magnitude will depend on Top Engineering's share within that customer's supply chain. The automotive display bonding business has structural tailwinds from accelerating OLED-in-vehicle adoption, and the company is pursuing major OEM relationships through its European office. The glass substrate cutting technology being co-developed with LaserApps represents a potential new entry into the semiconductor advanced packaging market, while the non-contact micro-LED inspection system targets next-generation display process demand. No dividend has been declared; financial recovery through earnings retention appears to be the priority ahead of any capital return. Whether the 2026 recovery sustains through the full year will become clearer with Q2 and Q3 results."
+  "ko": "회사는 2025년 미국 현지법인을 신설해 북미 영업망을 확충하고, 계열사를 통한 부품·신소재 사업 다각화를 계속 추진하고 있다. 향후 ES부문에서는 전기차 제조사 수요 증가에 따라 배터리 제조사 수주잔고가 증가하고, 중화권 디스플레이 기업의 설비투자 확대와 차량용 OLED 출하량 증가가 관련 투자를 늘릴 것으로 전망됐다. 2026년 1분기 실적 개선에 대해서는 카메라모듈 부문이 멀티카메라 적용과 고화소 프리미엄 모델 수요 증가로, ES부문은 전기차·ESS 시장 확대에 따른 중대형 배터리팩 사업 성과로 개선됐다는 설명이 나왔다. 같은 자료는 중화권 OLED 패널 채용 확대와 국내 배터리 제조사 수주잔고 증가가 2차전지 신규 시설투자 확대로 이어질 수 있다고 짚었다. 2026년 2분기까지 2개 분기 연속 흑자를 이어간 만큼, 하반기 실적이 이 흐름의 연속성을 가늠하는 분수령이 될 전망이다. 다만 회사 측이 구체적인 연간 매출·수주 가이던스를 별도로 제시했는지는 검색 범위에서 확인되지 않았다.",
+  "en": "The company set up a US subsidiary in 2025 to expand its North American sales network and continues to diversify into components and new materials through affiliates. Looking ahead, the ES segment is expected to benefit from growing order backlogs at battery makers amid rising EV demand, while expanding capex by Chinese display firms and higher automotive OLED shipment volumes are seen as factors that could lift related investment. Regarding the 1Q2026 improvement, commentary attributed the camera module segment's gain to growing adoption of multi-camera setups and high-megapixel premium models, and the ES segment's gain to performance from mid-to-large battery pack business amid EV and ESS market expansion. The same source noted that expanding adoption of OLED panels by Chinese makers and rising order backlogs at domestic battery makers could lead to expanded new facility investment in secondary batteries. Having sustained two consecutive profitable quarters through 2Q2026, the second half of the year is likely to be a key test of whether this trend can continue. That said, no specific annual revenue or order-backlog guidance from the company itself was identified within the scope of this search."
  },
  "valuation_comment": {
-  "ko": "주당순자산(BPS 12,199원) 대비 상당한 할인 구간에서 거래되고 있으며, 이는 2024~2025년 연속 손실로 지배주주 자본이 감소한 결과가 반영된 수준이다. 연간 적자가 지속되는 동안 이익 기반 배수 산출이 불가능했으나, 2026년 1분기 흑자 전환으로 이익 지표 회복의 가능성이 열렸다. 배당수익률은 현재 무배당으로 업종 평균을 크게 하회하고 있어, 주주환원 측면의 매력은 제한적이다. 과거 2022년 및 2025년 적자 구간에서도 주가는 순자산 대비 할인 상태를 공통적으로 나타냈으며, 2023년 흑자 전환 시 밸류에이션 리레이팅이 이루어진 전례가 있다. 현 국면은 수익성 회복 지속 여부에 따른 이익 기반 재평가를 시장이 아직 완전히 선반영하지 않은 구간으로 볼 수 있다. 추가 손실이 발생할 경우 장부가치 기반 안전 마진도 함께 낮아질 수 있어, 분기별 원가 통제 성과가 밸류에이션 지지력의 핵심 변수다.",
-  "en": "The stock is trading at a material discount to book value (BPS: ₩12,199), reflecting the contraction in controlling-shareholder equity caused by back-to-back annual losses in 2024 and 2025. Earnings-based multiple analysis was unavailable during the consecutive loss period, but the Q1 2026 return to profitability opens the possibility of a fundamental re-rating. The dividend yield is zero — well below sector averages — limiting shareholder return appeal at present. Historically, both the 2022 and 2025 loss cycles saw the stock trade at a book-value discount, while the 2023 turnaround to profitability triggered a partial re-rating, offering a useful precedent. The current price level may not yet fully reflect a scenario of sustained earnings recovery. Should further losses occur, the book-value floor would erode further, making quarterly cost control outcomes the decisive variable for valuation support."
+  "ko": "2025년까지 이어진 순손실로 자본이 줄어든 상태에서, 최근 두 개 분기 연속 흑자가 겹쳐 지표상 방향은 손익 개선 쪽으로 움직이고 있다. 다만 최근 네 개 분기를 합산해도 여전히 순손실 구간에 머물러 있어, 완전한 이익 정상화로 보기는 아직 이르다는 평가가 가능하다. 주가는 회사의 주당순자산가치를 밑도는 수준에서 거래되고 있어, 순자산 대비 할인된 구간에 위치한다고 볼 수 있다. 최근 몇 년간 배당을 실시하지 않아, 배당 매력보다는 실적 회복의 지속성이 밸류에이션 판단의 핵심 변수로 남아 있다. 이 종목의 과거 거래 밴드는 실적 등락에 따라 넓게 형성돼 왔으며, 이번 흑자전환이 재평가로 이어질지는 다음 분기 실적 확인이 필요한 부분이다.",
+  "en": "With equity having been eroded by net losses through 2025, the overlap of two consecutive profitable quarters more recently points to a directional improvement in earnings. Even so, when the most recent four quarters are combined, the company remains in a net-loss position, so it may be premature to call this a full earnings normalization. The share price trades below the company's book value per share, placing it in a discount range relative to net assets. The company has not paid dividends in recent years, so the durability of the earnings recovery, rather than dividend appeal, remains the central variable for valuation. The stock's historical trading range has swung widely along with earnings volatility, and whether this return to profit leads to any re-rating will depend on confirmation in coming quarterly results."
  },
  "bull": [
   {
    "title": {
-    "ko": "역대 최고 분기 매출과 4개 분기 만의 흑자 전환",
-    "en": "Record Quarterly Revenue and First Meaningful Profitability in Four Quarters"
+    "ko": "2개 분기 연속 흑자전환",
+    "en": "Two Consecutive Profitable Quarters"
    },
    "body": {
-    "ko": "2026년 1분기 매출 2,639억 원은 최근 공시된 분기 중 최고치이며, 영업이익 90억 원(OPM 약 3.4%)으로의 전환은 비용 구조 개선 또는 수주 회복이 가시화된 첫 신호다. 전분기 대비 매출이 52.8% 급증한 점은 대형 장비 납기 집중 또는 신규 수주 실현에 기인하는 것으로 해석된다. 이 추세가 2026년 2분기 이후에도 유지된다면 연간 이익 회복의 확실한 토대가 마련된다.",
-    "en": "Q1 2026 revenue of ₩263.9B is the highest single-quarter figure in the disclosed dataset, and the return to operating profit of ₩9.0B (OPM ~3.4%) is the first clear signal of improving cost structure or order recovery. The 52.8% sequential revenue surge likely reflects a concentration of large equipment deliveries or realization of new orders. If this trajectory holds into Q2 2026 and beyond, it would establish a firm foundation for full-year earnings recovery."
+    "ko": "2026년 1분기와 2분기 모두 영업이익과 지배주주순이익이 흑자를 기록했다. 카메라모듈 부문은 멀티카메라·고화소 수요 확대, ES부문은 전기차·ESS 시장 확대에 따른 중대형 배터리팩 사업 성과가 개선 요인으로 지목됐다. 2025년 4분기까지 이어진 적자에서 벗어난 만큼, 반등의 시작점으로 볼 여지가 있다.",
+    "en": "Both operating profit and net income attributable to owners were positive in 1Q2026 and 2Q2026. The camera module segment's gain was attributed to expanding multi-camera and high-megapixel demand, while the ES segment benefited from mid-to-large battery pack business tied to EV and ESS market growth. Having emerged from losses that persisted through 4Q2025, this could mark a starting point for a rebound."
    }
   },
   {
    "title": {
-    "ko": "OLED 투자 사이클 재개와 디스플레이 장비 수주 수혜 기대",
-    "en": "OLED Capex Cycle Restart Driving Display Equipment Order Upside"
+    "ko": "핵심 LCD 장비의 시장 지배력",
+    "en": "Market Leadership in Core LCD Equipment"
    },
    "body": {
-    "ko": "삼성디스플레이의 8.6세대 IT OLED 라인이 2026년 양산에 들어가며 디스플레이 장비 발주가 본격화되고, 중대형 OLED 시장은 2030년까지 전체 디스플레이 시장의 절반 이상을 차지할 것으로 전망된다. 탑엔지니어링은 디스플레이 장비 분야에서 높은 글로벌 점유율을 유지하고 있어 이 투자 사이클의 수혜 범위 안에 있다. 자동차용 디스플레이의 OLED 전환 가속화도 전장 본딩 장비 수요를 중장기에 걸쳐 견인할 수 있다.",
-    "en": "Samsung Display's Gen 8.6 IT OLED line entered mass production in 2026, activating a new equipment ordering wave, while the large-format OLED market is forecast to exceed half of the total display market by 2030. Top Engineering holds a strong global position in display equipment, placing it squarely within the potential beneficiary set of this capex cycle. The accelerating shift to OLED in automotive displays could provide an additional multi-year tailwind for the company's bonding equipment business."
+    "ko": "디스펜서 장비는 글로벌 점유율 약 60%로 1위를 유지하고 있고 GCS·Array Tester도 주요 패널업체에 공급된다. 이 기술력은 중화권 패널사의 설비투자 확대 국면에서 신규 수주로 이어질 수 있는 기반이다. 다각화된 사업 포트폴리오(LCD·2차전지·카메라모듈) 덕에 특정 전방산업 의존도를 낮추는 효과도 있다.",
+    "en": "Dispenser equipment retains roughly a 60% global share and the number-one position, and GCS and array testers are also supplied to major panel makers. This technology base could translate into new orders as Chinese panel makers expand capex. The diversified portfolio across LCD, secondary batteries, and camera modules also reduces reliance on any single downstream industry."
    }
   },
   {
    "title": {
-    "ko": "전장·유리기판·마이크로 LED 신사업 파이프라인",
-    "en": "Automotive, Glass Substrate, and Micro-LED New Business Pipeline"
+    "ko": "2차전지·차량용 디스플레이 성장 동력",
+    "en": "Secondary Battery and Automotive Display Growth Drivers"
    },
    "body": {
-    "ko": "자동차 전장 디스플레이 본딩 장비는 연간 250억 원 이상 매출을 목표로 사업이 확대 중이며, 유럽 현지 사무소를 통한 글로벌 완성차 고객 접근도 병행되고 있다. 레이저앱스와 공동 개발 중인 반도체 유리기판 절단 기술과 비접촉식 마이크로 LED 검사 장비는 기존 디스플레이 장비 기술력을 신규 시장으로 확장하는 포트폴리오 다각화 전략이다. 이들 신사업이 매출로 현실화될 경우 기존 디스플레이·이차전지 장비의 사이클 변동성을 완충하는 역할을 할 수 있다.",
-    "en": "Automotive display bonding equipment is expanding toward a stated target of ₩25B+ in annual revenue, with global OEM outreach supported by a European office. The glass substrate cutting technology co-developed with LaserApps and the non-contact micro-LED inspection system represent portfolio diversification that extends the company's core display engineering expertise into new markets. Once these new businesses reach commercial scale, they could buffer the cyclical volatility inherent in the existing display and secondary battery equipment segments."
+    "ko": "전기차 제조사 수요 증가로 배터리 제조사 수주잔고가 늘고 있고, 차량용 OLED 출하량 증가가 관련 투자를 늘릴 요인으로 꼽힌다. 파워로직스를 통한 EV·ESS 중대형 배터리팩 사업 확대도 함께 진행되고 있다.",
+    "en": "Rising EV maker demand is boosting order backlogs at battery makers, and increasing automotive OLED shipment volumes are cited as a factor that could raise related investment. Expansion of EV/ESS mid-to-large battery pack business through PowerLogics is proceeding in parallel."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "이차전지 장비 개발 원가 리스크의 재발 가능성",
-    "en": "Risk of Recurring Development Cost Overruns in Secondary Battery Equipment"
+    "ko": "2025년 연간 적자 지속",
+    "en": "Full-Year 2025 Loss Persisted"
    },
    "body": {
-    "ko": "2025년 대규모 영업손실(-352억 원)의 핵심 원인인 이차전지 장비 개발성 원가 초과가 2026년에도 반복될 경우 수익성 회복이 지연될 수 있다. 이차전지 장비는 고객사 맞춤형 공정 개발이 수반되어 수주 시점의 원가 예측 불확실성이 높은 특성이 있다. 2025년 4분기에 이미 영업손실 -100억 원이 재발했다는 점은 구조적 비용 문제가 완전히 해소되지 않았을 가능성을 시사한다.",
-    "en": "If the development cost overruns in secondary battery equipment — the primary driver of the FY2025 operating loss of ₩35.2B — recur in 2026, the profitability recovery will be delayed. Secondary battery equipment requires extensive customer-specific process engineering, making cost estimation at order intake inherently uncertain. The recurrence of a heavy operating loss in Q4 2025 (₩-10.0B) suggests the structural cost problem may not yet be fully resolved."
+    "ko": "2025년 매출은 전년 대비 2.1% 줄었고 영업손실은 약 352억원으로 확대돼 전년보다 손실 규모가 크게 늘었다. 지배주주순손실도 약 366억원으로 2024년의 흑자에서 다시 적자로 전환됐다. 이차전지 장비의 개발성 원가율 상승과 종속기업 실적 부진이 주요 원인으로 지목됐다.",
+    "en": "FY2025 revenue declined 2.1% year over year and the operating loss widened to about KRW 35.2bn, a much larger loss than the prior year. The net loss attributable to owners also swung to about KRW 36.6bn from a 2024 profit. Rising development-related cost ratios in secondary battery equipment and weak performance at subsidiaries were cited as key causes."
    }
   },
   {
    "title": {
-    "ko": "중국 OLED 경쟁사 급부상과 고객사 다변화 압력",
-    "en": "Rapid Rise of Chinese OLED Producers and Customer Diversification Pressure"
+    "ko": "카메라모듈 부문 수요 둔화",
+    "en": "Slowing Demand in the Camera Module Segment"
    },
    "body": {
-    "ko": "중국 BOE·CSOT·Visionox 등의 공격적 OLED 투자로 2025년 2분기 기준 중국 기업의 합산 OLED 시장 점유율이 38%에 달했으며, 2029년부터 생산 능력에서 한국을 추월할 것이라는 전망이 제기되고 있다. 한국 패널 고객사의 투자 비중 축소나 중국향 매출 의존도 변화는 탑엔지니어링의 수주 구조에 직접적인 영향을 미칠 수 있다. 고객 집중 위험을 완화하기 위한 지속적인 다변화 전략이 중장기 리스크 관리의 핵심 과제다.",
-    "en": "Chinese OLED producers (BOE, CSOT, Visionox) are aggressively expanding capacity: China's combined OLED market share reached approximately 38% in Q2 2025, with projections that Chinese output capacity may surpass Korea's from around 2029. A reduction in Korean panel customers' capex intensity, or a structural shift in revenue exposure toward Chinese customers, could directly impact Top Engineering's order mix. Managing customer concentration risk through diversification is a central medium-to-long-term challenge."
+    "ko": "스마트폰 시장의 성숙과 소비 둔화가 카메라모듈(CM) 부문 매출에 부담으로 작용했고, 원자재가 상승과 일회성 비용도 수익성을 낮췄다. 카메라모듈 매출 비중이 전체의 약 72%에 달해, 이 부문의 부진은 연결 실적 전체에 큰 영향을 준다.",
+    "en": "Smartphone market maturity and weaker consumption weighed on camera module (CM) revenue, while rising raw material costs and one-off expenses also cut into profitability. Since camera modules account for roughly 72% of total revenue, weakness in this segment has an outsized effect on consolidated results."
    }
   },
   {
    "title": {
-    "ko": "지배주주 자본 감소와 재무 여력 축소",
-    "en": "Declining Controlling-Shareholder Equity and Narrowing Financial Buffer"
+    "ko": "종속회사 실적 연동·재무 구조",
+    "en": "Dependence on Subsidiary Results and Financial Structure"
    },
    "body": {
-    "ko": "2023년 1,941억 원이었던 지배주주 자본이 2025년 1,527억 원으로 약 21% 감소했으며, 이는 2024~2025년 연속 손실에 기인한다. 추가 손실이 발생할 경우 장부가치 기반 안전 마진이 더 낮아지고, 신규 투자 및 연구개발(R&D)을 위한 내부 재원도 제한될 수 있다. 영업현금흐름은 양수를 유지하고 있으나, 원가 이상이 반복되면 현금창출력도 훼손될 수 있다.",
-    "en": "Controlling-shareholder equity fell approximately 21% from ₩194.1B in 2023 to ₩152.7B in 2025, owing to back-to-back annual losses. Further losses would erode the book-value safety margin and constrain internal funding for new investment and R&D. While operating cash flow has remained positive, continued cost irregularities could eventually impair that cash generation capacity."
+    "ko": "부채비율은 70%대에서 등락하고 있고, 매출의 대부분이 종속회사 파워로직스의 ES·CM 사업에서 발생해 계열사 실적 변동에 연결 실적이 직접 노출된다. 분기별 손익 등락도 커서 예측 가능성이 떨어진다는 점도 부담이다.",
+    "en": "The debt ratio has fluctuated in the 70% range, and since most revenue comes from subsidiary PowerLogics's ES and CM businesses, consolidated results are directly exposed to swings at the affiliate. Large quarter-to-quarter earnings swings also reduce predictability."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 및 발주 사이클 변동 리스크",
-    "en": "Customer Concentration and Order Cycle Volatility Risk"
+    "ko": "전방산업 투자 사이클 리스크",
+    "en": "Downstream Investment Cycle Risk"
    },
    "body": {
-    "ko": "디스플레이 장비 매출은 삼성디스플레이·LG디스플레이 등 소수 국내 대형 패널 고객사의 투자 사이클에 크게 연동되어 있다. 패널 업체의 CAPEX 계획 변경, 납기 지연, 수주 취소는 분기별 실적에 직접적인 충격을 줄 수 있다. 2024~2025년 연간 매출이 2023년 대비 각각 -15%, -17% 감소한 이력은 이 사이클 의존성의 크기를 잘 보여준다.",
-    "en": "Display equipment revenue is heavily tied to the capex cycles of a small number of large domestic panel customers such as Samsung Display and LG Display. Changes in panel makers' CAPEX plans, delivery delays, or order cancellations can directly shock quarterly results. The 15% and approximately 17% YoY revenue declines in 2024 and 2025, respectively, relative to the 2023 peak, illustrate the magnitude of this cycle dependency."
+    "ko": "국내 대형 패널사의 신규 투자 지연이 계속되면 LCD·OLED 장비 수주가 위축될 수 있다. 중화권 업체의 투자 일정이 변경되거나 지연될 경우 예상된 수요 증가가 늦춰질 가능성도 있다.",
+    "en": "Continued delays in new investment by major domestic panel makers could weaken orders for LCD/OLED equipment. Any change or delay in the investment timetable of Chinese makers could also postpone the anticipated demand increase."
    }
   },
   {
    "cat": {
-    "ko": "이차전지 장비 원가 통제 실패 리스크",
-    "en": "Secondary Battery Equipment Cost Control Failure Risk"
+    "ko": "원자재·환율 리스크",
+    "en": "Raw Material and Foreign Exchange Risk"
    },
    "body": {
-    "ko": "이차전지 장비는 고객사 공정 맞춤형 개발이 수반되어 프로젝트 수행 과정에서 개발성 원가 초과가 발생할 수 있다. 2025년에 이미 이 리스크가 현실화되어 연간 수익성을 크게 훼손했으며, 신규 수주 프로젝트에서도 유사한 문제가 반복될 가능성을 배제할 수 없다. 원가 관리 시스템 개선과 수주 단계에서의 리스크 사전 통제 여부가 핵심 모니터링 포인트다.",
-    "en": "Secondary battery equipment requires customized process engineering for each customer, creating inherent cost overrun risk during project execution — a risk that already materialized in 2025, severely damaging annual profitability. Similar cost issues cannot be ruled out on new orders, and improvements in project cost management and risk assessment at the order intake stage are key monitoring points."
+    "ko": "2025년 카메라모듈(CM) 부문에서 나타난 원자재가 상승은 원가율에 직접 영향을 미쳤다. 중국·독일·미국 등 해외 사무소·법인 운영에 따른 환율 변동 노출도 존재한다.",
+    "en": "The rise in raw material costs seen in the camera module (CM) segment in 2025 directly affected the cost ratio. There is also foreign exchange exposure from operating offices and subsidiaries in China, Germany, and the United States."
    }
   },
   {
    "cat": {
-    "ko": "글로벌 무역 환경 및 대중국 수출 규제 리스크",
-    "en": "Global Trade Environment and China Export Control Risk"
+    "ko": "종속기업 리스크",
+    "en": "Subsidiary Risk"
    },
    "body": {
-    "ko": "탑엔지니어링은 중국 디스플레이 업체에도 장비를 공급하고 있어, 미·중 기술 갈등 심화나 한국의 대중국 장비 수출 규제 강화 시 해당 매출에 영향이 있을 수 있다. 글로벌 반도체·디스플레이 제조장비에 대한 수출 통제는 지속적으로 범위가 확대되는 추세로, 특정 장비의 규제 대상 여부와 중국 매출 비중 변화는 지속적인 점검이 필요하다. 중국 현지 생산 비중이나 대체 공급선 확보 여부도 장기 리스크 관리 관점에서 중요한 변수다.",
-    "en": "Top Engineering supplies equipment to Chinese display manufacturers, creating exposure to revenue risk if US-China technology tensions escalate or Korea tightens export controls on equipment to China. Global export controls on semiconductor and display manufacturing equipment have been progressively broadening, and whether specific product categories fall under restricted designations — along with the trend in China-derived revenue — warrant continuous monitoring. The extent of China-side production presence and the availability of alternative supply arrangements are also long-term risk management variables."
+    "ko": "파워로직스 등 종속기업의 실적 부진이 연결 손익에 직접 반영되는 구조로, 그룹 계열사 경영 상황에 따라 탑엔지니어링의 연결 실적이 좌우될 수 있다. 계열사 지분 관계나 사업 재편 이슈가 발생할 경우 추가 불확실성이 커질 수 있다.",
+    "en": "Weak performance at subsidiaries such as PowerLogics flows directly into consolidated results, meaning group affiliate conditions can sway TOP Engineering's consolidated performance. Any changes in affiliate equity relationships or business restructuring could add further uncertainty."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 (2026년 2분기 실적 공시)",
-    "en": "August 2026 (2026 Q2 Earnings Disclosure)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026Q1의 흑자 전환이 2분기에도 이어지는지 확인. 영업이익률 유지·개선 여부와 이차전지 장비 원가 정상화 진행 상황이 핵심 확인 지표.",
-    "en": "Confirm whether the Q1 2026 profit turnaround extends into Q2. Key metrics: whether the operating margin is maintained or improved, and whether secondary battery equipment cost structures are normalizing."
+    "ko": "2026년 3분기 실적 공시 확인 — 2개 분기 연속 흑자 흐름이 3분기까지 이어지는지가 관전 포인트다.",
+    "en": "Check the 3Q2026 earnings disclosure — whether the two-quarter streak of profitability extends into the third quarter is the key thing to watch."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (삼성디스플레이 8.6세대 IT OLED 장비 발주 동향)",
-    "en": "H2 2026 (Samsung Display Gen 8.6 IT OLED Equipment Order Flow)"
+    "ko": "2026년 4분기",
+    "en": "Fourth quarter of 2026"
    },
    "what": {
-    "ko": "삼성디스플레이의 IT OLED 라인 장비 발주가 탑엔지니어링의 수주잔고에 실제로 반영되는지 분기 공시 및 IR 커뮤니케이션에서 확인.",
-    "en": "Verify whether Samsung Display's IT OLED line equipment orders are materializing in Top Engineering's order backlog, as reflected in quarterly filings and IR communications."
+    "ko": "중화권 패널업체 및 국내 배터리 제조사의 신규 투자·수주 관련 공시를 확인해 ES/LCD 장비 수주로 이어지는지 점검할 필요가 있다.",
+    "en": "Watch for disclosures on new investment and orders from Chinese panel makers and domestic battery manufacturers to check whether these translate into ES/LCD equipment orders."
    }
   },
   {
    "when": {
-    "ko": "2026년 내 (전장 디스플레이 장비 매출 목표 진행 상황)",
-    "en": "During 2026 (Automotive Display Equipment Revenue Progress)"
+    "ko": "2027년 3월 전후",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "전장 디스플레이 본딩 장비의 연간 250억 원 이상 매출 목표 달성 여부 및 유럽 현지 완성차 고객 수주가 매출로 인식되는 시점 확인.",
-    "en": "Track progress toward the stated ₩25B+ annual automotive display bonding equipment revenue target, and when European OEM customer orders are recognized as revenue in quarterly results."
+    "ko": "2026사업연도 감사보고서·사업보고서 공시를 통해 연간 흑자전환 여부와 파워로직스 등 종속회사 실적 반영 결과를 최종 확인해야 한다.",
+    "en": "The audit report and business report for fiscal year 2026 should be checked to confirm whether the company achieved a full-year return to profit and how subsidiary results such as PowerLogics were reflected."
    }
   },
   {
    "when": {
-    "ko": "2026~2027년 (반도체 유리기판 절단 장비 첫 납품 여부)",
-    "en": "2026–2027 (First Delivery of Glass Substrate Cutting Equipment)"
+    "ko": "상시 모니터링",
+    "en": "Ongoing monitoring"
    },
    "what": {
-    "ko": "레이저앱스와 공동 개발 중인 반도체 유리기판 절단·브레이킹 기술의 최초 상업 납품 성사 여부. 반도체 첨단 패키징 시장 진입 가능성을 가늠하는 지표.",
-    "en": "Confirm whether the initial commercial delivery of the co-developed glass substrate cutting and breaking equipment takes place. This would signal the company's ability to enter the semiconductor advanced packaging market as a new revenue stream."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 11월 (2026년 3분기 실적 공시)",
-    "en": "November 2026 (2026 Q3 Earnings Disclosure)"
-   },
-   "what": {
-    "ko": "3개 분기 누적 실적으로 연간 영업이익 흑자 전환 가시성을 확인. 2025년 4분기처럼 비용이 연말에 집중되는 패턴이 반복될 가능성도 사전 모니터링 필요.",
-    "en": "Cumulative three-quarter results will clarify whether a full-year operating profit is achievable. Pre-emptive monitoring of whether the Q4 cost-concentration pattern seen in 2025 is likely to recur is also warranted."
+    "ko": "파워로직스 등 그룹 계열사 관련 지분 변동·사업 재편 공시를 지속적으로 확인할 필요가 있다.",
+    "en": "Ongoing monitoring of disclosures on equity changes or business restructuring at group affiliates such as PowerLogics is warranted."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "탑엔지니어링은 1993년 설립 이래 TFT-LCD·OLED·이차전지·카메라모듈 공정장비를 아우르는 국내 중형 디스플레이 장비 전문사로 성장했다. 2025년에는 이차전지 장비 개발 원가 초과와 종속기업 부진이 겹쳐 연간 영업손실 352억 원, 지배주주 순손실 366억 원을 기록하는 저점을 경험했다. 그러나 2026년 1분기에 최근 분기 중 최고 매출(2,639억 원)과 의미 있는 영업이익(90억 원)을 달성하며 첫 번째 실질적인 회복 신호를 발신했다. 중장기 성장 동력으로는 삼성디스플레이 IT OLED 투자 재개, 자동차 전장 디스플레이 OLED 전환, 반도체 유리기판 절단·마이크로 LED 검사 장비 등 신규 파이프라인이 존재한다. 한편 이차전지 장비의 구조적 원가 리스크, 중국 OLED 경쟁사 부상, 대형 고객 집중 리스크는 지속적인 모니터링이 필요한 약세 요인이다. 주가는 주당순자산 대비 할인 구간에 위치해 있으며, 수익성 회복의 지속성이 밸류에이션 재평가의 핵심 조건이 될 것이다. 2026년 2분기 이후 분기 실적 추이와 대형 고객사 수주 동향이 향후 전망을 결정짓는 주요 확인 포인트다.",
-   "en": "Since its founding in 1993, Top Engineering has grown into a mid-sized Korean display equipment specialist spanning TFT-LCD/OLED, secondary battery, and camera module process tools. The company hit a painful trough in FY2025 when secondary battery equipment development cost overruns and subsidiary underperformance combined to produce an operating loss of ₩35.2B and a controlling-shareholder net loss of ₩36.6B. However, 2026 Q1 delivered the first credible recovery signal — record quarterly revenue of ₩263.9B and meaningful operating profit of ₩9.0B. Medium-to-long-term growth levers include Samsung Display's IT OLED investment restart, the conversion of automotive displays to OLED, and new product pipelines in glass substrate cutting and micro-LED inspection equipment. Structural cost risks in secondary battery equipment, the rise of Chinese OLED competitors, and large-customer concentration remain material bear factors requiring ongoing monitoring. The stock is trading at a discount to book value, and the sustainability of the earnings recovery will be the decisive condition for any valuation re-rating. Quarterly results from Q2 2026 onward and large-customer order trends are the critical checkpoints for the outlook."
+   "ko": "탑엔지니어링은 2026년 1분기와 2분기 연속 흑자전환에 성공하며 2025년의 적자 흐름에서 벗어나는 신호를 보였다. 다만 2025년 연간 기준으로는 매출이 줄고 영업손실과 순손실이 모두 확대돼, 최근 분기의 개선이 일시적인지 구조적인지는 아직 판단하기 이르다. 매출 구조상 카메라모듈(CM)과 2차전지(ES) 사업을 영위하는 종속회사 파워로직스의 비중이 커, 그룹 계열사 실적에 연결 손익이 크게 좌우되는 특성이 있다. 핵심 LCD 장비인 디스펜서에서의 높은 시장점유율은 유지되고 있으나, 국내 패널사 투자 정체 속에서 중화권 업체 투자 확대 여부가 향후 수주의 관건이다. 부채비율은 70%대에서 등락하고 있고 현금창출력은 매년 유지되고 있어, 재무 안정성은 손익 변동성 대비 상대적으로 완만한 흐름을 보인다. 이후 3분기 실적, 중화권·국내 배터리 업체 투자·수주 공시, 종속회사 실적 등이 이 반등의 지속 여부를 판단할 핵심 변수가 될 것으로 보인다.",
+   "en": "TOP Engineering signaled an exit from the 2025 loss trend by returning to profit in both the first and second quarters of 2026. Still, on a full-year 2025 basis, revenue declined while both the operating loss and net loss widened, so it is too early to say whether the recent quarterly improvement is temporary or structural. Given that camera module (CM) and secondary battery (ES) businesses run through subsidiary PowerLogics account for a large share of revenue, consolidated earnings are heavily influenced by affiliate performance. The company retains a leading market share in its core LCD dispenser equipment, but whether Chinese makers expand investment amid subdued domestic panel-maker capex will be key to future orders. The debt ratio has fluctuated in the 70% range while operating cash flow has stayed positive every year, suggesting financial stability has been relatively steadier than reported earnings. Going forward, third-quarter results, investment and order disclosures from Chinese and domestic battery makers, and subsidiary performance will be the key variables in judging whether this rebound can be sustained."
   }
  },
  "sources": [
-  "https://m.thinkpool.com/item/065130",
-  "https://www.valueline.co.kr/finance/balancesheet/065130",
+  "https://dartpoint.ai/00366845",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/ZmliVWZCNExMTXh2eFJSQXI5LzdTdz09/company_nm/(%EC%A3%BC)%ED%83%91%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81",
   "https://goinsider.kr/stock/00366845",
-  "https://www.valueline.co.kr/finance/mri/065130",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A065130",
-  "https://www.investing.com/equities/top-engineering-co-ltd-earnings",
-  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=065130",
-  "https://www.investing.com/equities/top-engineering-co-ltd",
-  "https://jasoseol.com/companies/2929/insights",
-  "https://m.sedaily.com/newsview/1l19fiqmjv/ga01",
+  "https://thevc.kr/topengineering",
+  "https://www.valueline.co.kr/finance/balancesheet/065130",
+  "https://www.jobkorea.co.kr/company/1893236",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A065130&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
+  "https://www.biztop.co.kr/v2/api_member/analysis.php?bncode=xXFo0swt1Fk7",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=065130",
   "https://www.topengnet.com/",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=431070",
-  "https://m.thinkpool.com/stockDiscuss/034220/cont/11879277",
-  "https://www.thelec.kr/news/articleView.html?idxno=31356",
-  "https://alphasquare.co.kr/home/stock-summary?code=036930",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/topeng2015",
-  "https://www.kdia.org/display/graph.jsp",
-  "https://kr.acrofan.com/detail.php?number=428627"
+  "https://m.irgo.co.kr/IR-COMP/065130/%ED%83%91%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-IR-PAGE",
+  "https://m.thinkpool.com/item/065130",
+  "https://www.catch.co.kr/Comp/CompSummary/030043",
+  "https://www.stockplus.com/m/stocks/KOREA-A065130",
+  "https://itooza.com/vscore/065130",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A065130&cID=&MenuYn=Y&ReportGB=&NewMenuID=105&stkGb=701",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Finance.asp?pGB=1&gicode=A065130&MenuYn=Y&NewMenuID=103&stkGb=701",
+  "http://m.comp.fnguide.com/m2/company_01.asp?pGB=1&amp=&gicode=A047310&amp=&cID=AA&amp=&MenuYn=Y&amp=&color_type=W&amp=&menu_type=1&amp=&foot=Y&amp=&use_icon=111"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "065130",
  "name": "탑엔지니어링",
  "name_en": "Top Engineering Company Limited",
@@ -233,11 +223,11 @@
   "기계·장비"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 00:51",
- "dataDate": "20260824",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 09:10",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-24",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -338,7 +328,7 @@
    }
   ],
   "valuation": {
-   "price": 2870,
+   "price": 2865,
    "mcap": 0.0459,
    "shares": 16004000,
    "total_shares": 16004000,
@@ -357,7 +347,11 @@
    "bps_krx": 10304.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "eps": "mismatch",
+    "bps": "mismatch"
+   }
   }
  }
 }

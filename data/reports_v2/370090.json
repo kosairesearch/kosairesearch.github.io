@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "캐즘 직격 후 회복 검증 단계 — 수주 재개가 변곡점",
-  "en": "Post-Demand Chasm Recovery — New Orders Are the Inflection Point"
+  "ko": "매출 반등 조짐 속 수익성 회복은 과제",
+  "en": "Revenue Rebound Signs, Profitability Still a Challenge"
  },
  "lead": {
-  "ko": "전장용 ADAS 카메라 공정 장비 분야의 독보적 기술력을 보유한 퓨런티어는 전기차 수요 둔화(캐즘)와 주요 고객사 투자 지연으로 2025년 실적이 역대 최저 수준으로 급락했으나, 2026년 1분기 매출의 전년비 회복세와 라이다·ToF 장비 포트폴리오 확대를 기반으로 회복 사이클 진입 여부가 시험대에 올랐다.",
-  "en": "Furonteer, which holds unrivaled technology in ADAS camera module process equipment, suffered record-low earnings in 2025 due to the EV demand slump and key customer capex deferrals; its Q1 2026 revenue rebound and expanding LiDAR/ToF equipment portfolio now put a recovery cycle to the test."
+  "ko": "퓨런티어는 2026년 2분기 매출이 전 분기 대비 크게 늘고 순손실 규모가 축소되며 바닥을 다지는 흐름을 보였으나, 2025년 연간 기준으로는 여전히 큰 폭의 영업손실을 기록했다.",
+  "en": "Furonteer showed signs of bottoming out in the second quarter of 2026 with a sharp sequential jump in revenue and a narrower net loss, but full-year 2025 results still reflected a substantial operating loss."
  },
  "keypoints": [
   {
-   "ko": "2023년 매출 465억원·영업이익률 15.4%의 사상 최고 실적 이후 2024~2025년 급격히 하락, 2025년 영업이익률 -59.0%까지 악화 — 전기차 캐즘에 따른 고객사 CAPEX 지연이 직접 원인",
-   "en": "After a record high of KRW 46.5bn revenue and 15.4% OPM in 2023, results collapsed through 2024–2025 to -59.0% OPM in 2025, directly caused by customer capex delays stemming from the EV demand chasm."
+   "ko": "2026년 2분기 매출 86.3억원으로 전 분기(33.8억원) 대비 크게 확대, 영업손실도 -4.9억원으로 축소",
+   "en": "Q2 2026 revenue rose sharply to KRW 8.63bn from KRW 3.38bn in Q1, while the operating loss narrowed to KRW -0.49bn"
   },
   {
-   "ko": "2026년 1분기 매출 34억원으로 전년 동기(20억원) 대비 72% 증가, 영업손실도 14억원으로 최근 분기 중 최소 수준 — 완만한 개선 신호",
-   "en": "Q1 2026 revenue rose 72% YoY to KRW 3.38bn, with operating loss narrowing to KRW 1.44bn—among the smallest in recent quarters—signaling tentative stabilization."
+   "ko": "2025년 연간 매출은 121억원으로 전년(253억원) 대비 절반 이하로 줄었고 영업손실 71.6억원 기록",
+   "en": "Full-year 2025 revenue fell to KRW 12.1bn from KRW 25.3bn a year earlier, with an operating loss of KRW 7.16bn"
   },
   {
-   "ko": "삼성전기·LG이노텍·Aptiv·엠씨넥스·세코닉스·프라이맥스(테슬라 서플라이 체인) 등 글로벌 티어1 다변화 — 단일 고객 집중 리스크 점진적 완화",
-   "en": "Customer diversification across Samsung Electro-Mechanics, LG Innotek, Aptiv, Mcnex, Sekonix, and Primax (Tesla supply chain) gradually reduces single-customer concentration risk."
+   "ko": "전장용 카메라 조립·검사 장비가 주력이며 삼성전기·LG이노텍·엠씨넥스·세코닉스 등 카메라 모듈사가 주요 고객",
+   "en": "Automotive camera assembly and inspection equipment is the core business, with Samsung Electro-Mechanics, LG Innotek, MCNEX and Sekonix as key customers"
   },
   {
-   "ko": "전장용 라이다·ToF 모듈 공정 장비 개발 완료 및 초도 매출 발생 — 카메라 장비 외 신규 성장 축 구축 진행 중",
-   "en": "Completion of LiDAR and ToF module process equipment development with initial revenues provides a growth pillar beyond the legacy camera equipment business."
+   "ko": "라이다·ToF 모듈 조립 장비 초도 매출 발생, 신규 성장축으로 육성 중",
+   "en": "Initial sales of LiDAR and ToF module assembly equipment have begun, positioned as a new growth pillar"
   },
   {
-   "ko": "2025년 말 부채비율 8.2%, 순자산 412억원으로 재무 건전성 유지 — 낮은 레버리지가 업황 회복 시 수혜 확대의 완충 역할",
-   "en": "A debt-to-equity ratio of 8.2% and KRW 41.2bn in net assets at end-2025 preserve financial flexibility as a buffer for capturing upside when demand recovers."
+   "ko": "최대주주는 하이비젼시스템(지분 39.84%)이며, 배당은 지급되지 않고 있다",
+   "en": "Major shareholder Hivision System holds a 39.84% stake, and the company does not currently pay dividends"
   }
  ],
  "business": {
-  "ko": "퓨런티어는 2009년 5월 설립되고 2022년 소재·부품·장비 상장특례를 통해 코스닥에 입성한 ADAS·자율주행 핵심 센서 공정 장비 전문업체다. 경기도 성남에 본사를 두고 있으며 대표이사는 오상근이다. 사업은 크게 장비 사업부와 부품 사업부로 구성된다. 장비 사업부는 자동차 전장용 및 모바일용 카메라 모듈 조립·검사 장비를 개발·판매하며, 최근 전장용 라이다(LiDAR) 및 ToF(Time of Flight) 모듈 공정 장비로 포트폴리오를 확대했다. 부품 사업부는 자동화 공정 장비용 핵심 부품인 산업용 PC와 검사용 LED 광원 제품을 개발·공급하며 상대적으로 안정적인 매출을 유지한다. 장비 매출은 2023년부터 전체의 60% 이상을 차지하며 회사 성장을 주도하고 있다. 주요 고객사는 삼성전기, LG이노텍, 엠씨넥스, 세코닉스 등 국내 카메라 모듈 생산 업체와 Aptiv(미국), O-Film(중국), Primax Electronics(대만·테슬라 서플라이 체인) 등 글로벌 업체로 다각화되어 있다. 핵심 경쟁력은 100미터 거리에서 오차 1% 이내의 고정밀 광학 교정(캘리브레이션) 기술로, 세계 카메라 이미지 품질 테스트 소프트웨어 표준인 이마테스트(Imatest)와의 독점 라이선스 기반 공동 개발이 높은 기술 진입 장벽을 형성한다. 차량 1대당 센싱 카메라 탑재 수가 2020년 2~3개에서 2024년 8개 이상으로 증가하는 구조적 성장 추세가 동사의 장기 시장 기회를 뒷받침한다.",
-  "en": "Furonteer was founded in May 2009 and listed on KOSDAQ in 2022 under the special listing route for materials, parts, and equipment companies. Headquartered in Seongnam, Gyeonggi Province, with CEO Oh Sang-geun, the company operates two main divisions: Equipment and Components. The Equipment Division develops and sells camera assembly and inspection equipment for automotive and mobile applications, and has expanded its portfolio to include LiDAR and Time-of-Flight (ToF) module process equipment. The Components Division develops and supplies industrial PCs and inspection-use LED lighting systems for automation processes, generating relatively stable revenues. The Equipment Division has accounted for more than 60% of total revenue since 2023. Key customers include Samsung Electro-Mechanics, LG Innotek, Mcnex, and Sekonix domestically, alongside Aptiv (U.S.), O-Film (China), and Primax Electronics (Taiwan, Tesla supply chain). Furonteer's core moat is its sub-1% optical calibration accuracy at 100 meters, jointly developed under an exclusive license with Imatest—the de facto global standard in camera image quality testing software—creating a significant technical barrier to entry. The structural shift toward more cameras per vehicle, rising from 2–3 units in 2020 to 8+ by 2024, underpins the company's long-term market opportunity."
+  "ko": "퓨런티어는 2009년 설립돼 2022년 2월 코스닥에 상장한 전장용 카메라 공정장비 전문기업이다. 사업은 크게 두 축으로 나뉘는데, 자율주행·ADAS용 센싱 카메라의 조립·검사 장비를 만드는 장비사업부와 카메라·디스플레이·반도체 공정 장비에 쓰이는 핵심 부품을 개발·판매하는 부품사업부로 구성된다. 부품사업부는 2018년 아이알브이테크를 흡수합병해 신설됐다. 최대주주는 모바일 카메라 모듈 검사 자동화장비 업체인 하이비젼시스템으로, 지분 39.84%를 보유하고 있다. 주요 제품은 이미지센서와 렌즈를 마이크로미터 단위로 조립하는 액티브 얼라인(Active Align) 장비, 카메라 광학 특성을 보정하는 인트린직 캘리브레이션 장비 등이다. 고객사로는 국내 카메라 모듈 3사인 삼성전기, LG이노텍, 엠씨넥스, 세코닉스와 함께 미국 Aptiv, 중국 O-Film 등 해외 업체를 확보하고 있다. 시장에서는 카메라 모듈사에 공급되는 장비의 상당 부분이 최종적으로 특정 완성차 업체(테슬라로 추정) 물량과 연계돼 있다는 분석이 나온 바 있다. 매출 구조는 최근 장비사업부 비중이 부품사업부를 앞서는 방향으로 재편되고 있다.",
+  "en": "Furonteer, founded in 2009 and listed on KOSDAQ in February 2022, specializes in process equipment for automotive camera modules. Its business consists of two segments: an equipment division that produces assembly and inspection equipment for autonomous driving and ADAS sensing cameras, and a components division that develops and sells key parts used in camera, display and semiconductor process equipment. The components division was created in 2018 through the merger of IRV Tech. The largest shareholder is Hivision System, a maker of mobile camera module inspection automation equipment, which holds a 39.84% stake. Key products include Active Align equipment, which assembles image sensors and lenses at micrometer-level precision, and Intrinsic Calibration equipment, which corrects camera optical characteristics. Its customer base includes the three major domestic camera module makers Samsung Electro-Mechanics, LG Innotek, MCNEX and Sekonix, along with overseas players such as Aptiv in the United States and O-Film in China. Analysts have noted that a significant portion of the equipment supplied to camera module makers is ultimately linked to a specific automaker's volume, widely presumed to be Tesla. The revenue mix has recently shifted toward the equipment division outweighing the components division."
  },
  "earnings": {
-  "ko": "2023년은 LG이노텍으로부터의 전장용 대형 수주가 본격 반영되며 매출 465억원, 영업이익 72억원, 영업이익률 15.4%의 사상 최고 실적을 달성했다. 2024년에는 북미 핵심 고객사의 전기차 생산 계획 축소와 투자 지연이 겹치며 매출이 253억원으로 반감(전년비 -46%)됐고, 영업이익도 -38억원으로 적자 전환됐으나 순이익은 약 6억원의 소폭 흑자를 유지했다. 2025년에는 하락세가 더욱 심화되어 연간 매출이 121억원으로 전년 대비 추가로 52% 급감했다. 2025년 영업손실은 -72억원으로 연간 매출 전체를 상회하는 규모이며, 영업이익률이 -59.0%까지 악화됐다. 지배주주 귀속 순손실은 -62억원이며, 이는 2024년 결산의 소폭 흑자에서 크게 역전된 것이다. 자기자본은 2023년 490억원에서 2025년 412억원으로 점진적으로 감소했다. 분기별 흐름을 보면, 2025년 2분기(52억원)가 연중 최고 매출을 기록한 것을 제외하면 나머지 분기 매출은 모두 20~31억원 수준에 그쳤고, 분기별 영업손실은 14~21억원으로 일정하게 유지됐다. 2026년 1분기 매출 34억원은 2025년 1분기(20억원) 대비 72% 성장했으며, 영업손실(-14억원)도 최근 분기 중 가장 작은 수준으로 완만한 개선 흐름이 확인됐다. 다만 분기 흑자 전환을 위한 매출 임계점 달성에는 아직 이르지 못하고 있어 지속적인 수주 회복이 관건이다.",
-  "en": "Fiscal 2023 was a record year—revenue KRW 46.5bn, operating profit KRW 7.2bn, OPM 15.4%—driven by the first full-scale recognition of the LG Innotek automotive equipment order. In 2024, a sharp pullback in EV production plans by North American customers caused revenue to nearly halve to KRW 25.3bn (down 46% YoY); operating profit turned to a KRW 3.75bn loss, though net income barely stayed positive at KRW 63mn. The downturn deepened sharply in 2025: annual revenue fell another 52% to KRW 12.1bn, the operating loss of KRW 7.16bn exceeded total revenue, and OPM hit -59.0%. The controlling-interest net loss was KRW 6.15bn—a stark reversal from 2024—gradually eroding equity from KRW 49.0bn in 2023 to KRW 41.2bn in 2025. Quarterly, only Q2 2025 (KRW 5.21bn) stood out; all other 2025 quarters posted revenues of KRW 1.9–3.1bn, keeping operating losses at KRW 1.4–2.1bn per quarter. Q1 2026 revenue of KRW 3.38bn rose 72% YoY from Q1 2025's KRW 1.97bn, and the operating loss narrowed to KRW 1.44bn—among the smallest in recent quarters—suggesting gradual stabilization, though the company has yet to reach the revenue threshold required to break even on operating income."
+  "ko": "퓨런티어의 실적은 최근 4년간 큰 폭의 등락을 보였다. 2023년에는 매출 465억원, 영업이익 71.6억원(영업이익률 15.4%)으로 전년(매출 269억원, 영업이익 16.3억원) 대비 크게 뛰며 역대 최대 실적을 냈는데, 이는 전년 말 수주한 물량이 매출로 인식되며 나타난 결과였다. 그러나 2024년에는 매출이 253억원으로 급감하고 영업손실 37.5억원을 기록하며 적자로 전환했고, 순이익은 0.6억원으로 간신히 흑자를 유지하는 데 그쳤다. 2025년에는 상황이 더 악화돼 매출 121억원(전년 대비 절반 이하), 영업손실 71.6억원(영업이익률 -59.0%), 순손실 61.5억원으로 손실 규모가 확대됐다. 분기별로 보면 2025년 3분기 매출이 19.1억원까지 줄며 저점을 찍었고, 4분기에는 순손실이 24.1억원으로 오히려 커졌다. 이후 2026년 1분기 매출 33.8억원, 순손실 11.3억원으로 다소 개선됐고, 2026년 2분기에는 매출이 86.3억원으로 직전 분기의 두 배 이상 뛰고 영업손실도 4.9억원, 순손실도 1.3억원으로 눈에 띄게 축소됐다. 최근 4개 분기(2025년 3분기~2026년 2분기) 합산 매출은 약 170억원, 순손실은 약 50억원으로, 연간으로 보면 여전히 적자 구간에 머물러 있다. 자본총계는 2023년 490억원에서 2025년 412억원으로 줄었는데, 이는 누적 손실이 자본을 갉아먹은 결과로 해석된다.",
+  "en": "Furonteer's earnings have swung sharply over the past four years. In 2023, revenue reached KRW 46.5bn with an operating profit of KRW 7.16bn (a 15.4% operating margin), a substantial jump from KRW 26.9bn revenue and KRW 1.63bn operating profit in 2022, driven by the recognition of orders booked late the prior year. However, in 2024 revenue fell sharply to KRW 25.3bn and the company swung to an operating loss of KRW 3.75bn, with net income barely positive at KRW 63 million. The situation worsened further in 2025, with revenue dropping to KRW 12.1bn (less than half the prior year), an operating loss of KRW 7.16bn (a -59.0% operating margin), and a net loss of KRW 6.15bn. On a quarterly basis, revenue bottomed at KRW 1.91bn in the third quarter of 2025, and the net loss actually widened to KRW 2.41bn in the fourth quarter. Results then improved somewhat in the first quarter of 2026, with revenue of KRW 3.38bn and a net loss of KRW 1.13bn, before revenue more than doubled sequentially to KRW 8.63bn in the second quarter of 2026, with the operating loss narrowing to KRW 0.49bn and the net loss shrinking to KRW 0.13bn. Over the trailing four quarters (Q3 2025 through Q2 2026), combined revenue was roughly KRW 17bn with a combined net loss of about KRW 5bn, meaning the company remains in a loss-making position on an annualized basis. Total equity declined from KRW 49.0bn in 2023 to KRW 41.2bn in 2025, reflecting the erosion of capital from accumulated losses."
  },
  "industry": {
-  "ko": "전장용 카메라 모듈 시장은 자율주행 기술 고도화와 ADAS 규제 의무화 확대를 배경으로 구조적 성장이 기대되는 분야다. 글로벌 자동차 ADAS 카메라 모듈 시장은 2024~2032년 연평균 약 14%의 성장률이 전망되며, 차량 1대당 7~11개(일반 ADAS 탑재 차량 기준), 자율주행 차량에는 12개 이상의 센싱 카메라가 탑재되는 구조다. 완성차 업체들의 생산량 회복과 레벨 업그레이드는 공정 장비 수요 증가로 직결된다. 단기적으로는 전기차 캐즘이 2024~2025년에 걸쳐 주요 카메라 모듈 벤더사들의 설비 투자 지연을 초래해 퓨런티어의 수주 부진으로 이어졌다. 삼성전기는 2026년 이후 자율주행 중심 전장용 카메라 모듈 수요 성장을 전망하며 라인업 강화를 선언했고, LG이노텍도 자율주행용 센싱 솔루션을 전략 사업으로 육성하고 있어 이들 고객사의 신규 투자 재개 시 퓨런티어의 직접 수주 기회가 확대된다. 전 세계 자동차 카메라 시장 규모는 2025년 약 107억 달러에서 2034년 277억 달러로 성장할 전망이다. 라이다 장비는 현재 퓨런티어에게 초기 수익 규모의 신사업 축이나, 자율주행 레벨 고도화에 따른 라이다 채택 확대가 중장기 성장 잠재력을 높인다. 경쟁 측면에서는 고정밀 카메라 교정 장비 분야의 국내 직접 경쟁사가 제한적이나, 중국산 저가 장비의 품질 향상이 중하위 시장에서의 경쟁 압박을 높이고 있다.",
-  "en": "The automotive ADAS camera module market faces structural tailwinds from advancing autonomous-driving technology and expanding regulatory mandates for ADAS features. The global ADAS camera module market is projected to grow at approximately 14% CAGR from 2024 to 2032. Vehicles currently carry 7–11 sensing cameras under standard ADAS configurations and 12+ in autonomous applications; any recovery in OEM production and level upgrades directly translates to process equipment demand. In the short term, the EV demand chasm caused major camera module vendors to defer capex in 2024–2025, directly suppressing Furonteer's order intake. Samsung Electro-Mechanics and LG Innotek have signaled renewed investment in autonomous-driving-focused automotive camera modules from 2026 onward, making their plant expansions a key watch item for Furonteer's order pipeline. The global automotive camera market is projected to grow from approximately USD 10.7bn in 2025 to USD 27.7bn by 2034. LiDAR equipment remains a nascent revenue contributor for Furonteer, but deeper autonomous-driving adoption structurally supports its medium-to-long-term growth. On the competitive front, Furonteer faces limited direct domestic rivals in high-precision camera calibration equipment, though improving quality from lower-cost Chinese suppliers is raising competitive pressure in mid-tier customer segments."
+  "ko": "퓨런티어가 속한 전장용 카메라 공정장비 시장은 자율주행·ADAS 기술 확산과 직결돼 있다. 업계에서는 자율주행 시장이 2024~2028년 연평균 40%를 상회하는 성장률을 보일 것이라는 전망이 나온다. 그러나 이 시장은 완성차·전기차 업체의 설비투자 사이클에 크게 좌우되는 특성이 있어, 전방 수요가 둔화되면 카메라 모듈 벤더사의 장비 발주가 지연되는 방식으로 실적에 즉각 반영된다. 실제로 2024년 하반기부터 2025년 상반기까지 전기차 캐즘의 영향으로 주요 카메라 모듈 벤더사의 장비 발주가 대거 지연되며 퓨런티어의 수주 부진이 이어졌다는 분석이 나왔다. 경쟁 구도에서는 액티브 얼라인, 인트린직 캘리브레이션 등 정밀 조립·보정 장비 분야에서 국내에서는 퓨런티어가 독자적인 기술력을 보유한 업체로 평가받고 있으며, 해외에서는 미국·독일계 장비사와 경쟁하는 구조다. 자율주행 레벨이 올라갈수록 차량 한 대에 탑재되는 카메라 수가 늘어나는 구조적 요인은 여전히 유효한 것으로 평가된다. 다만 최종 수요처로 추정되는 업체의 로보택시·완전자율주행 상용화 속도가 예상보다 더디게 진행될 경우, 장비 발주 시점 자체가 다시 늦춰질 수 있는 위험도 함께 존재한다.",
+  "en": "The market for automotive camera process equipment that Furonteer operates in is directly tied to the spread of autonomous driving and ADAS technology. Industry commentary has pointed to the autonomous driving market growing at a compound annual rate exceeding 40% between 2024 and 2028. However, this market is heavily dependent on the capital expenditure cycles of automakers and EV makers, meaning that when downstream demand slows, equipment orders from camera module vendors are delayed, which flows through directly to results. Indeed, analysts noted that from the second half of 2024 through the first half of 2025, equipment orders from major camera module vendors were significantly delayed due to the EV chasm, leading to a prolonged order slump for Furonteer. In terms of competitive positioning, Furonteer is regarded domestically as holding proprietary technology in precision assembly and calibration equipment such as Active Align and Intrinsic Calibration, while competing internationally against US and German equipment makers. The structural driver of an increasing number of cameras per vehicle as autonomous driving levels advance is still considered valid. That said, there remains a risk that if the commercialization pace of robotaxi and full self-driving services at the presumed end customer proceeds more slowly than expected, the timing of equipment orders could again be pushed back."
  },
  "outlook": {
-  "ko": "2026년 실적의 핵심 변수는 삼성전기·LG이노텍 등 주요 고객사의 설비 투자 재개 시점이다. NH투자증권은 전기차 캐즘 영향이 완화되고 주요 카메라 모듈 벤더사들의 공장 증설이 재개되는 시점부터 수주 본격 회복이 가능하다고 분석했으며, 하반기 성장성 회복을 전망한다. 전장용 라이다·ToF 모듈 공정 장비는 개발을 완료하고 초도 매출이 발생하기 시작한 단계로, 이 신제품군이 카메라 장비 업황 의존도를 낮추는 다각화 기반으로 기능할 전망이다. 트럼프 2기 행정부의 자율주행 규제 완화 기조와 테슬라의 로보택시 서비스 확대 계획은 전방 센서 수요를 자극하는 외부 모멘텀으로 작용할 수 있다. 신한투자증권은 자율주행 시장의 연평균 성장률이 2024~2028년 40%를 상회할 것으로 전망하며 퓨런티어의 중장기 수혜 잠재력을 긍정적으로 평가한 바 있다. 다만 수주 확정 후 실제 매출 인식까지의 리드타임이 수개월에 달하는 사업 구조상, 수주 공시가 나오더라도 분기 실적 반영에 시차가 존재한다. 2026년 하반기 고객사 신규 수주 공시와 수주 잔고 증감이 연간 실적 가이던스의 가시성을 높이는 핵심 모니터링 지표가 될 것이다.",
-  "en": "The key variable for 2026 earnings is when Samsung Electro-Mechanics, LG Innotek, and other major customers resume capex investment. NH Investment & Securities expects order recovery to materialize from H2 2026 as EV demand normalization reduces pressure on camera module vendors' investment timelines. The newly developed LiDAR and ToF module process equipment—with initial shipments already underway—is expected to diversify revenue and reduce dependency on the camera equipment cycle. The Trump administration's autonomous-driving deregulation stance and Tesla's expanding robotaxi service plans represent potential external demand catalysts. Shinhan Investment & Securities has forecast autonomous-driving market CAGR above 40% for 2024–2028, highlighting Furonteer's medium-to-long-term structural beneficiary potential. However, given the typical multi-month lead time from order confirmation to revenue recognition, even confirmed order announcements will have a delayed impact on quarterly results. New supply contract disclosures and quarterly order backlog trends in H2 2026 will be the most critical indicators for full-year earnings visibility."
+  "ko": "회사는 기존 카메라 조립·검사 장비 외에 신규 성장축을 다지고 있다. 전장용 라이다 및 ToF 모듈 조립·검사 공정 장비는 샘플 개발을 완료하고 초도 매출이 발생한 것으로 파악된다. 또한 카메라 화상검사용 적분구 제품의 국산화를 추진해 기존에 미국·일본산 고가 제품이 장악하던 시장에 진입을 시도하고 있다. 실적 반등의 핵심 변수는 최종 수요처로 추정되는 완성차 업체의 신차·로보택시 양산 일정이다. 증권가에서는 2026년 로보택시(사이버캡) 양산 확대와 신차·페이스리프트 출시가 카메라 모듈사의 투자 확대와 생산능력 확충으로 이어져 퓨런티어의 장비 발주가 증가할 수 있다는 시각을 제시한 바 있다. 다만 2026년 6월 테슬라 최고경영자는 옵티머스·로보택시 등 신규 제품의 초기 생산 확대가 예상보다 더딜 것이라고 언급하며, 완전히 새로운 공급망을 갖춘 신제품의 성장은 길게 늘어진 S자 곡선 형태가 될 것이라고 밝혔다. 2026년 2분기 실적에서 나타난 매출 확대와 손실 축소가 일회성 물량 반영인지, 추세적 회복의 시작인지는 향후 분기 실적으로 확인이 필요한 상황이다.",
+  "en": "Beyond its existing camera assembly and inspection equipment, the company is cultivating new growth pillars. Its LiDAR and ToF module assembly and inspection process equipment for automotive applications has reportedly completed sample development and generated initial sales. It is also pursuing localization of integrating sphere products used for camera image inspection, aiming to enter a market previously dominated by expensive US and Japanese products. The key variable for an earnings rebound is the new-vehicle and robotaxi production schedule of the presumed end customer automaker. Securities analysts have suggested that expanded robotaxi (Cybercab) production and new model or facelift launches in 2026 could lead camera module makers to expand investment and capacity, potentially increasing equipment orders for Furonteer. However, in June 2026 Tesla's CEO said that early-stage production ramp-up for new products such as Optimus and robotaxi would be slower than expected, adding that growth for entirely new products with entirely new supply chains always follows a long, drawn-out S-curve. Whether the revenue expansion and narrower losses seen in the second quarter of 2026 represent a one-off shipment or the start of a sustained recovery will need to be confirmed through subsequent quarterly results."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당 순자산(BPS 4,657원)을 웃도는 구간에서 거래 중으로, 순자산 대비 프리미엄이 형성되어 있다. 이는 지속적인 영업손실로 자기자본이 점진 감소하는 국면임에도 자율주행 성장 기대감이 반영된 결과로 해석된다. EPS는 현재 적자(-687원)이며 PER 산출이 불가능한 구간으로, 이익 회복 시점과 속도가 향후 밸류에이션 재평가의 핵심 변수다. 배당은 미실시 상태로, 업종 평균 배당수익률을 크게 하회한다. 부채비율이 8.2% 수준으로 매우 낮아 재무 안전 마진은 확보되어 있으나, 흑자 전환 전까지는 자기자본 감소가 이어지면서 BPS 지지선도 점진 하향될 수 있다. 중장기적으로 자율주행 시장 개화에 따른 이익 회복이 가시화될 경우 밸류에이션 재평가의 여지가 있으나, 그 시점에 대한 불확실성은 유의가 필요하다.",
-  "en": "The stock currently trades above book value per share (BPS KRW 4,657), implying a premium to net assets despite ongoing losses—reflecting embedded expectations of an autonomous-driving demand recovery. EPS stands at -687 won, making P/E incalculable; the timing and pace of a return to profitability are therefore the pivotal variables for any valuation re-rating. No dividends have been paid, leaving the yield well below sector averages. The very low debt-to-equity ratio of 8.2% preserves a meaningful financial safety margin, though book value will continue to erode—and the BPS floor will gradually decline—until profitability is restored. Should a long-term earnings recovery materialize alongside autonomous-driving market development, a re-rating of the current book-value premium could follow, but the timing of this scenario remains uncertain."
+  "ko": "퓨런티어는 최근 네 개 분기 연속으로 순손실을 기록하고 있어 통상적인 주가수익비율 산출이 의미를 갖기 어려운 구간에 있다. 반면 주가순자산비율 측면에서는 순자산 대비 일정한 프리미엄이 반영된 수준에서 거래되는 것으로 파악되며, 이는 실적 회복 기대감이 일부 선반영돼 있음을 시사한다. 배당은 최근 지급되지 않고 있어 배당수익률 관점의 비교는 현재로서는 큰 의미가 없다. 다만 2023년의 이익 회복 국면과 이후 다시 적자로 전환한 흐름을 감안하면, 향후 밸류에이션 재평가 여부는 결국 매출과 마진의 실제 회복 속도에 달려 있다고 볼 수 있다. 투자자들은 분기별 매출·손익 추이와 수주 공시를 통해 이 회복이 지속되는지를 지속적으로 확인할 필요가 있다.",
+  "en": "Furonteer has posted net losses for four consecutive quarters, making a conventional price-to-earnings ratio calculation of limited relevance at this stage. On a price-to-book basis, the stock is understood to trade at a level reflecting a certain premium over net asset value, suggesting some anticipation of an earnings recovery is already priced in. The company has not paid dividends recently, so comparisons on a dividend yield basis carry little meaning at present. Still, given the pattern of profit recovery in 2023 followed by a return to losses, any future re-rating in valuation will likely hinge on the actual pace of revenue and margin recovery. Investors will need to continue monitoring quarterly revenue and profit trends along with order disclosures to assess whether this recovery proves durable."
  },
  "bull": [
   {
    "title": {
-    "ko": "자율주행 구조적 성장과 글로벌 티어1 고객 포트폴리오",
-    "en": "Structural ADAS Growth and Global Tier-1 Customer Portfolio"
+    "ko": "2분기 매출·손실 동반 개선",
+    "en": "Q2 Improvement in Both Revenue and Losses"
    },
    "body": {
-    "ko": "전장용 카메라 모듈 시장은 2024~2032년 연평균 약 14% 성장이 전망되며, 차량당 카메라 탑재 수가 자율주행 레벨 향상과 함께 지속 증가하는 구조적 성장 환경에 놓여 있다. 퓨런티어는 삼성전기·LG이노텍·Aptiv·프라이맥스(테슬라 서플라이 체인) 등 글로벌 티어1에 핵심 공정 장비를 공급하고 있어 시장 성장의 직접 수혜가 기대된다. 이마테스트와의 독점 라이선스 기반 캘리브레이션 기술은 100m 거리 1% 오차 이내의 정밀도로, 국내 동급 경쟁사가 사실상 부재한 높은 진입 장벽을 형성한다.",
-    "en": "The automotive ADAS camera module market is projected to grow at ~14% CAGR through 2032, with camera counts per vehicle rising as autonomous-driving levels advance. Furonteer supplies core process equipment to global Tier-1 players including Samsung Electro-Mechanics, LG Innotek, Aptiv, and Primax (Tesla supply chain), positioning it for direct exposure to market growth. Its exclusive Imatest-license-based calibration technology—achieving sub-1% accuracy at 100 meters—creates a significant barrier to domestic competition."
+    "ko": "2026년 2분기 매출은 86.3억원으로 직전 분기(33.8억원) 대비 두 배 이상 확대됐고, 영업손실은 4.9억원, 순손실은 1.3억원으로 2025년 3~4분기 대비 크게 줄었다. 이는 2025년 3분기 저점(매출 19.1억원, 순손실 13.4억원) 이후 세 분기 연속 개선 흐름의 연장선으로 해석될 수 있다. 다만 이 흐름이 지속적인 수주 회복인지 일시적 물량 반영인지는 다음 분기 실적으로 확인이 필요하다.",
+    "en": "Second-quarter 2026 revenue reached KRW 8.63bn, more than double the prior quarter's KRW 3.38bn, while the operating loss narrowed to KRW 0.49bn and the net loss to KRW 0.13bn, both sharply improved from the third and fourth quarters of 2025. This can be read as an extension of an improving trend over three consecutive quarters since the trough in the third quarter of 2025 (revenue of KRW 1.91bn, net loss of KRW 1.34bn). Whether this trend reflects a sustained order recovery or a one-off shipment will require confirmation in subsequent quarterly results."
    }
   },
   {
    "title": {
-    "ko": "LiDAR·ToF 신사업 확장과 포트폴리오 다각화",
-    "en": "LiDAR/ToF Expansion and Portfolio Diversification"
+    "ko": "자율주행 카메라 시장의 구조적 성장 잠재력",
+    "en": "Structural Growth Potential of the Autonomous Camera Market"
    },
    "body": {
-    "ko": "전장용 라이다 및 ToF 모듈 공정 장비의 개발 완료와 초도 매출 발생은 카메라 사이클 의존도를 낮추는 신성장 동력이다. 자율주행 레벨3 이상에서 라이다 채택이 확대될수록 동사의 신규 장비 수요도 함께 증가하는 구조다. 라이다 센서 분야에 진출한 자회사 솔리드뷰도 IPO를 추진 중으로, 라이다 밸류체인의 수직 통합이 가시화될 경우 모회사의 사업 가치에 추가 기여 요인이 될 수 있다.",
-    "en": "The completed development and initial shipments of LiDAR and ToF module process equipment reduce dependence on the camera equipment cycle and provide a medium-to-long-term growth engine. Growing adoption of LiDAR in Level 3+ autonomous vehicles structurally increases demand for Furonteer's new equipment. Subsidiary Solidview's IPO preparation in the LiDAR sensor space signals a potential vertical integration strategy that could further enhance corporate value."
+    "ko": "자율주행 레벨이 높아질수록 차량당 탑재 카메라 수가 늘어나는 구조는 여전히 유효하며, 업계에서는 자율주행 시장이 2024~2028년 연평균 40%를 상회하는 성장률을 보일 것이라는 전망이 나온 바 있다. 퓨런티어는 삼성전기, LG이노텍, 엠씨넥스, 세코닉스 등 국내 카메라 모듈 3사와 함께 Aptiv, O-Film 등 해외 고객사를 확보하고 있어 고객 다변화 기반을 갖추고 있다. 로보택시 등 완전자율주행 서비스가 확산될 경우 카메라 모듈사의 설비투자 확대가 장비 발주로 이어질 수 있는 구조다.",
+    "en": "The structural trend of more cameras being installed per vehicle as autonomous driving levels rise remains intact, and industry commentary has pointed to autonomous driving market growth exceeding a 40% compound annual rate between 2024 and 2028. Furonteer has a diversified customer base including the three major domestic camera module makers Samsung Electro-Mechanics, LG Innotek, MCNEX and Sekonix, alongside overseas clients such as Aptiv and O-Film. If robotaxi and other full self-driving services expand, increased capital spending by camera module makers could translate into higher equipment orders."
    }
   },
   {
    "title": {
-    "ko": "재무 건전성과 수주 회복 시 이익 레버리지 효과",
-    "en": "Financial Soundness and Significant Operating Leverage on Order Recovery"
+    "ko": "라이다·ToF 등 신사업 확장",
+    "en": "Expansion into New Businesses such as LiDAR and ToF"
    },
    "body": {
-    "ko": "2025년 말 부채비율 8.2%로 업종 내 최저 수준의 레버리지를 유지하고 있어, 업황 회복 시 재무 위기 없이 성장 투자에 집중할 수 있다. 2023년 매출 465억원·영업이익률 15.4%를 달성한 이력은 수주가 회복됐을 때 이익의 급격한 레버리지 효과를 확인시켜 준다. 현행 고정비 구조에서 일정 수준 이상의 수주가 확보되면 손익 개선 속도가 매출 증가 속도를 크게 웃돌 수 있는 비즈니스 구조다.",
-    "en": "A debt-to-equity ratio of 8.2% as of end-2025—among the lowest in its peer group—means the company can focus on operational recovery rather than financial restructuring when demand returns. Its 2023 track record of 15.4% OPM on KRW 46.5bn revenue demonstrates the significant operating leverage available when order intake recovers. Given the current fixed-cost structure, earnings improvement can significantly outpace revenue growth once a minimum order volume threshold is exceeded."
+    "ko": "회사는 전장용 라이다 및 ToF 모듈 조립·검사 공정 장비 개발을 완료하고 초도 매출을 발생시켰다. 카메라 화상검사용 적분구 국산화도 추진해 기존 카메라 조립·검사 장비 중심에서 사업 영역을 넓히고 있다. 이러한 신제품군은 아직 매출 비중이 크지 않지만, 향후 시장 확대 시 추가 성장축이 될 수 있다.",
+    "en": "The company has completed development of LiDAR and ToF module assembly and inspection process equipment for automotive applications and has generated initial sales. It is also pursuing localization of integrating spheres for camera image inspection, broadening its business scope beyond core camera assembly and inspection equipment. While these new product lines do not yet contribute significantly to revenue, they could become additional growth drivers if the underlying markets expand."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "심화된 적자와 자기자본 잠식 리스크",
-    "en": "Deepening Losses and Equity Erosion Risk"
+    "ko": "고객·수요 집중에 따른 실적 변동성",
+    "en": "Earnings Volatility from Customer and Demand Concentration"
    },
    "body": {
-    "ko": "2025년 영업손실 -72억원은 연간 매출 121억원을 상회하는 수준으로, 고정비 부담이 과중한 구조적 문제를 드러낸다. 지배주주 귀속 순손실 62억원이 자기자본 감소 압력으로 작용하며, 2023년 490억원이었던 자기자본이 2025년 412억원으로 감소했다. 2026년 매출 회복이 충분하지 않으면 자기자본 감소 추세가 이어지며 주당 순자산(BPS) 지지선이 점차 낮아지는 상황이 연출될 수 있다.",
-    "en": "The 2025 operating loss of KRW 7.16bn exceeded total annual revenue of KRW 12.1bn, exposing a serious fixed-cost burden. Controlling-interest net losses are eroding equity—from KRW 49.0bn in 2023 to KRW 41.2bn in 2025. Without a sufficiently strong revenue recovery in 2026, continued equity erosion will progressively lower the BPS floor, reducing valuation support."
+    "ko": "전장용 장비 매출의 상당 부분이 특정 최종 완성차 업체 물량과 연계돼 있다는 분석이 있어, 해당 고객사의 투자 속도에 매출이 크게 좌우되는 구조다. 실제로 2024년 하반기 이후 전기차 캐즘에 따른 발주 지연으로 2025년 매출이 전년의 절반 이하로 급감했다. 이러한 구조는 특정 고객사의 생산 일정이 지연될 경우 실적이 다시 위축될 위험을 내포한다.",
+    "en": "Analysts have suggested that a significant portion of automotive equipment revenue is linked to volume from a specific end-customer automaker, meaning revenue is heavily dependent on that customer's investment pace. Indeed, order delays stemming from the EV chasm since the second half of 2024 caused 2025 revenue to fall to less than half the prior year's level. This structure carries the risk that results could contract again if that customer's production schedule is delayed."
    }
   },
   {
    "title": {
-    "ko": "수주 집중도와 극심한 실적 변동성",
-    "en": "Order Concentration and Extreme Earnings Volatility"
+    "ko": "누적 손실과 자본 잠식 압력",
+    "en": "Accumulated Losses and Pressure on Capital"
    },
    "body": {
-    "ko": "매출의 상당 부분이 소수 대형 고객사의 CAPEX 결정에 집중된 수주형 사업 구조로 실적 변동성이 극히 높다. 2023년 465억원에서 2025년 121억원으로 2년 만에 74% 급감한 사례가 이를 방증하며, 단일 고객 수주 지연 하나가 분기 실적 전체를 뒤흔들 수 있다. 수주 확정부터 매출 인식까지의 리드타임이 통상 수개월에 달해 단기 실적 가시성이 낮고 시장 컨센서스 오차도 크게 발생할 수 있다.",
-    "en": "Furonteer's revenue is highly dependent on a handful of large customers' capex decisions, producing extreme earnings volatility: a 74% revenue decline over just two years from 2023 to 2025 illustrates this structural risk. A single customer's order deferral can swing an entire quarter's results. The multi-month lead time from order confirmation to revenue recognition further limits near-term earnings visibility and may generate large consensus estimate errors."
+    "ko": "2024년과 2025년 연속으로 영업손실을 기록했고, 2025년 순손실은 61.5억원에 달했다. 자본총계는 2023년 490억원에서 2025년 412억원으로 줄었는데, 이는 누적 손실이 자본을 갉아먹은 결과다. 2026년 상반기에도 순손실이 이어지고 있어, 실질적인 흑자 전환까지는 추가 시간이 필요할 것으로 보인다.",
+    "en": "The company recorded operating losses in both 2024 and 2025, with the 2025 net loss reaching KRW 6.15bn. Total equity declined from KRW 49.0bn in 2023 to KRW 41.2bn in 2025, reflecting the erosion of capital by accumulated losses. Net losses have continued into the first half of 2026 as well, suggesting that a genuine return to profitability will require additional time."
    }
   },
   {
    "title": {
-    "ko": "전기차 캐즘 장기화 및 추가 투자 지연 가능성",
-    "en": "Risk of Prolonged EV Demand Slump and Further Capex Deferrals"
+    "ko": "로보택시 상용화 지연 가능성",
+    "en": "Risk of Delayed Robotaxi Commercialization"
    },
    "body": {
-    "ko": "글로벌 전기차 수요 회복이 예상보다 더디거나 고객사들이 재차 투자 계획을 후퇴시킬 경우, 2026년 하반기 수주 회복 기대가 빗나갈 수 있다. 미국 관세 정책 불확실성과 글로벌 경기 둔화도 완성차 업체의 설비 투자 심리를 위축시키는 하방 요인이다. 중국산 저가 장비의 품질 향상에 따른 중하위 시장 경쟁 심화도 장기적 마진 압박 요인이 될 수 있다.",
-    "en": "If the global EV demand recovery is slower than expected, or customers defer capex again, the anticipated H2 2026 order recovery may not materialize. U.S. tariff policy uncertainty and a global economic slowdown are additional downside risks to OEM capex sentiment. Improving quality from lower-cost Chinese equipment manufacturers in mid-tier segments represents a potential long-term margin pressure."
+    "ko": "2026년 6월 테슬라 최고경영자는 옵티머스와 로보택시 등 신규 제품의 초기 생산 확대가 예상보다 더딜 것이라고 밝혔다. 완전히 새로운 공급망을 갖춘 제품의 성장은 길게 늘어진 S자 곡선 형태가 될 것이라는 설명도 함께 나왔다. 이는 퓨런티어의 실적 반등 시나리오가 전제하는 최종 수요처의 양산 확대 시점이 지연될 수 있음을 뜻한다.",
+    "en": "In June 2026, Tesla's CEO stated that the early-stage production ramp-up for new products such as Optimus and robotaxi would be slower than expected. He also explained that growth for products with entirely new supply chains would follow a long, drawn-out S-curve. This implies that the timing of mass-production expansion at the presumed end customer, which underpins Furonteer's earnings rebound scenario, could be pushed back."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중·수주 사이클 리스크",
-    "en": "Customer Concentration and Order Cycle Risk"
+    "ko": "고객 집중 리스크",
+    "en": "Customer Concentration Risk"
    },
    "body": {
-    "ko": "매출의 상당 부분이 삼성전기·LG이노텍 등 핵심 고객사 2~3개의 투자 결정에 연동되어 있어, 고객사 전략 변화 또는 투자 지연 시 실적 충격이 즉각적이다. 2023~2025년에 발생한 급격한 매출 감소가 이러한 집중 리스크를 구체적으로 보여준다. 고객 기반 다변화가 진행 중이나, 주요 고객 의존도는 단기간 내 해소가 어려운 구조적 특성을 갖는다.",
-    "en": "A significant portion of revenue depends on capex decisions by 2–3 core customers including Samsung Electro-Mechanics and LG Innotek, making Furonteer immediately vulnerable to their strategy shifts or investment deferrals. The dramatic revenue contraction from 2023 to 2025 concretely illustrates this concentration risk. While customer diversification is underway, heavy dependence on a small number of key accounts is a structural characteristic difficult to fully resolve in the near term."
+    "ko": "퓨런티어의 전장용 장비 매출은 소수의 카메라 모듈사를 거쳐 특정 완성차 업체로 집중되는 구조로 추정된다. 이 경우 해당 고객사의 발주 정책이나 생산 계획 변경이 실적에 직접적이고 즉각적인 영향을 미칠 수 있다. 고객 다변화가 진행 중이지만 단기간 내 의존도를 낮추기는 쉽지 않은 상황이다.",
+    "en": "Furonteer's automotive equipment revenue is presumed to be concentrated, flowing through a small number of camera module makers to a specific automaker. In such a structure, changes in that customer's ordering policy or production plans can have a direct and immediate impact on results. While customer diversification is underway, reducing this dependency in the short term remains challenging."
    }
   },
   {
    "cat": {
-    "ko": "기술·경쟁 리스크",
-    "en": "Technology and Competitive Risk"
+    "ko": "재무 건전성 및 현금흐름 리스크",
+    "en": "Financial Soundness and Cash Flow Risk"
    },
    "body": {
-    "ko": "카메라 해상도 향상과 센서 퓨전 복잡화로 공정 장비에 요구되는 기술 수준이 지속적으로 높아지고 있어, 꾸준한 R&D 투자가 필요하다. 이마테스트와의 독점 협약이 갱신되지 않거나 경쟁 캘리브레이션 기술이 상업적으로 부상할 경우 핵심 진입 장벽이 약화될 수 있다. 기존 카메라 중심 공정이 라이다·레이더 통합 공정으로 전환되는 속도에 따라 현재 역량의 적시 대응 여부가 시장 지위를 결정하는 변수가 된다.",
-    "en": "Rising camera resolution requirements and increasing sensor fusion complexity continuously raise the technical bar for process equipment, requiring sustained R&D investment. Failure to renew the exclusive Imatest agreement, or the emergence of competing calibration technologies, could erode Furonteer's core moat. The speed at which the industry transitions from camera-centric to integrated LiDAR/radar processes will test the company's ability to adapt its capabilities in a timely manner."
+    "ko": "2025년 영업활동현금흐름은 -54.8억원으로 순손실과 함께 현금 유출이 지속됐다. 부채비율 자체는 8.2%로 낮은 편이지만, 누적 손실이 이어질 경우 자본 축소가 계속될 가능성이 있다. 향후 외부 자금조달이나 비용 구조조정 필요성이 커질 수 있다.",
+    "en": "Operating cash flow was negative at KRW -5.48bn in 2025, with cash outflows continuing alongside net losses. While the debt ratio itself is low at 8.2%, continued accumulated losses could lead to further capital erosion. The need for external funding or cost restructuring could increase going forward."
    }
   },
   {
    "cat": {
-    "ko": "거시 환경 및 규제 리스크",
-    "en": "Macro and Regulatory Risk"
+    "ko": "전방 산업 사이클 및 정책 리스크",
+    "en": "Downstream Industry Cycle and Policy Risk"
    },
    "body": {
-    "ko": "미국·유럽의 전기차 보조금 축소·관세 정책 변화는 완성차 업체의 투자 계획에 직접 영향을 미치며, 이는 퓨런티어의 전방 수요에 연쇄적으로 파급된다. 자율주행 규제 완화 속도가 기대보다 늦어지거나 대형 안전 사고로 인한 규제 강화가 발생할 경우 자율주행 센서 장비 수요 성장이 지연될 수 있다. 환율 변동(원/달러)도 해외 수주 가격 경쟁력과 외화 매출 환산에 영향을 미치는 변수다.",
-    "en": "Reductions in EV subsidies or tariff policy changes in the U.S. and Europe directly affect OEM investment plans and create cascading effects on Furonteer's demand pipeline. If autonomous-driving deregulation proceeds more slowly than expected, or a major safety incident triggers tighter regulation, growth in autonomous sensor equipment demand could be deferred. FX fluctuations (KRW/USD) also affect competitiveness on overseas bids and foreign-currency revenue translation."
+    "ko": "전기차·자율주행 관련 완성차 업체의 설비투자는 경기와 정책 변화에 민감하게 반응한다. 전기차 수요 둔화(캐즘)나 자율주행 관련 규제 변화가 다시 발생할 경우 장비 발주가 지연될 수 있다. 소형주 특성상 주가가 테마성 뉴스에 민감하게 반응하는 점도 함께 고려할 필요가 있다.",
+    "en": "Capital spending by automakers related to EVs and autonomous driving is highly sensitive to economic conditions and policy changes. If EV demand slows again (a chasm) or autonomous-driving-related regulations shift, equipment orders could again be delayed. Given the company's small-cap characteristics, the stock's sensitivity to thematic news should also be taken into account."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표 — 1분기에 이어 매출 회복세가 지속되는지 확인. 분기 영업손실 축소 여부와 수주잔고 변화가 연간 흑자 전환 가시성을 판단하는 핵심 지표다.",
-    "en": "Q2 2026 earnings release—verifying whether the Q1 revenue recovery trend continues. Narrowing of operating losses and changes in order backlog are the key indicators for assessing full-year breakeven visibility."
+    "ko": "2026년 3분기 실적 공시 예정 시기로, 2분기에 나타난 매출 확대·손실 축소 흐름이 이어지는지 확인이 필요하다.",
+    "en": "The third-quarter 2026 earnings disclosure is expected around this time, and it will be important to check whether the Q2 trend of revenue expansion and narrowing losses continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 수시",
-    "en": "H2 2026, as announced"
+    "ko": "2026년 4분기 중",
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "삼성전기·LG이노텍 등 주요 고객사로부터의 신규 수주 공시(단일 판매·공급 계약 DART 공시) — 계약 규모와 납기 일정이 하반기 및 내년 매출 반등 가시성을 직접 결정한다.",
-    "en": "Disclosure of new supply contracts from Samsung Electro-Mechanics, LG Innotek, or other key customers via DART filings—contract size and delivery schedule will directly determine H2 and FY2027 revenue visibility."
+    "ko": "테슬라 사이버캡·로보택시 생산 램프업 및 FSD 신버전 확산 관련 뉴스가 나올 경우, 최종 수요처 양산 일정에 대한 신뢰도를 판단할 근거가 된다.",
+    "en": "News regarding Tesla's Cybercab/robotaxi production ramp-up and the rollout of new FSD versions, if released, will provide a basis for assessing the reliability of the end customer's mass-production timeline."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 상시",
-    "en": "H2 2026, ongoing"
+    "ko": "2026년 하반기~2027년 초",
+    "en": "Second half of 2026 to early 2027"
    },
    "what": {
-    "ko": "라이다·ToF 공정 장비 추가 수주 및 매출 확대 현황 — 신사업 부문이 카메라 장비 업황 의존도를 얼마나 분산시키는지가 사업 다각화 진척의 핵심 지표이다.",
-    "en": "Additional LiDAR/ToF equipment order wins and revenue ramp—a measure of how effectively the new business lines reduce dependence on the camera equipment cycle."
+    "ko": "삼성전기·LG이노텍·엠씨넥스 등 카메라 모듈사의 설비투자(CAPEX) 계획 발표 여부는 퓨런티어의 신규 장비 발주 시점을 가늠할 지표가 된다.",
+    "en": "Whether Samsung Electro-Mechanics, LG Innotek, MCNEX and other camera module makers announce capital expenditure plans will serve as an indicator for the timing of new equipment orders for Furonteer."
    }
   },
   {
    "when": {
-    "ko": "2026년 말~2027년 초",
-    "en": "End-2026 or Early 2027"
+    "ko": "2026년 말",
+    "en": "End of 2026"
    },
    "what": {
-    "ko": "자회사 솔리드뷰 IPO 추진 경과 및 공모가 산정 — 라이다 센서 사업의 시장 가치 확인과 퓨런티어 자산 가치 재평가 계기가 될 수 있다.",
-    "en": "Progress on subsidiary Solidview's IPO and its implied valuation—this will benchmark the LiDAR sensor business's market value and could trigger a re-rating of Furonteer's underlying asset value."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기~2027년 상시",
-    "en": "H2 2026 – 2027, ongoing"
-   },
-   "what": {
-    "ko": "테슬라 로보택시 양산 규모 및 글로벌 완성차 레벨3+ 차량 출시 현황 — 전방 센서 수요의 직접 트리거로, 해당 이벤트 현실화 시 퓨런티어의 수주 파이프라인 확대 가속도가 달라질 수 있다.",
-    "en": "Tesla robotaxi production ramp and Level 3+ autonomous vehicle launches by global OEMs—as direct triggers for sensor demand, these milestones could meaningfully accelerate Furonteer's order pipeline expansion."
+    "ko": "라이다·ToF 모듈 조립·검사 장비의 매출 확대 여부와 관련 수주 공시를 통해 신사업의 실제 성장 속도를 점검할 필요가 있다.",
+    "en": "It will be necessary to check the actual growth pace of the new LiDAR/ToF module assembly and inspection equipment business through revenue expansion and related order disclosures."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "퓨런티어는 전장용 ADAS 카메라 공정 장비라는 고진입 장벽 시장에서 글로벌 티어1 고객 포트폴리오와 이마테스트 독점 캘리브레이션 기술을 기반으로 한 국내 독보적 위치를 점하고 있다. 그러나 2024~2025년 전기차 캐즘이 실적에 직격탄을 날리며 2025년 연간 영업손실이 매출을 상회하는 수준까지 악화됐다. 2026년 1분기 매출이 전년 동기 대비 72% 성장하며 완만한 회복 신호를 나타냈으나, 흑자 전환을 위한 매출 임계점에는 여전히 이르지 못하고 있다. 재무 구조상 부채비율이 8.2%로 낮아 단기 재무 위기 가능성은 낮으나, 적자 지속 시 자기자본 감소는 불가피하다. 라이다·ToF 장비 등 신사업 포트폴리오 확장은 카메라 사이클 의존도를 낮추는 긍정적 방향이나, 매출 기여 규모가 아직 제한적이다. 주요 고객사의 CAPEX 재개 공시와 분기별 수주잔고 변화가 실질적 회복 궤도 진입을 확인하는 가장 중요한 지표가 될 것이며, 이를 확인하기 전까지 실적 가시성은 제한적이다.",
-   "en": "Furonteer holds an unrivaled domestic position in ADAS camera module process equipment—a high-barrier market—backed by a global Tier-1 customer portfolio and exclusive Imatest calibration technology. However, the 2024–2025 EV demand chasm dealt a severe blow to earnings, driving the 2025 annual operating loss above total revenues. Q1 2026 revenue rose 72% YoY, providing an initial recovery signal, but the company has yet to reach the revenue threshold required to return to operating profitability. The low debt-to-equity ratio of 8.2% limits near-term financial distress risk, though ongoing losses will continue to erode equity. Expansion into LiDAR and ToF equipment is a positive diversification step, though its revenue contribution remains limited at this stage. Disclosures of resumed capex by key customers and quarterly order backlog changes will be the most critical indicators for confirming a genuine recovery trajectory; until those signals materialize, near-term earnings visibility remains constrained."
+   "ko": "퓨런티어는 2023년 최대 실적 이후 2024~2025년 연속 부진을 겪었으나, 2026년 2분기 들어 매출과 손익 모두에서 개선 신호가 나타났다. 사업구조상 자율주행·전장용 카메라 장비 시장의 구조적 성장에 노출돼 있으나, 특정 완성차 업체로 추정되는 최종 수요처에 대한 의존도가 높아 실적 변동성이 큰 편이다. 라이다·ToF 등 신사업이 초도 매출 단계에 진입했지만 아직 매출 비중은 크지 않다. 자본총계는 누적 손실로 감소세를 보이고 있고, 영업활동현금흐름도 마이너스를 이어가고 있어 재무 측면의 개선도 함께 확인해야 할 요소다. 향후 실적의 방향은 결국 카메라 모듈사들의 설비투자 재개 시점과 최종 수요처의 자율주행 서비스 상용화 속도에 달려 있다. 투자자로서는 다음 분기 실적과 수주 공시를 통해 2분기의 개선 흐름이 지속되는지를 지속적으로 확인하는 것이 중요하다.",
+   "en": "Furonteer suffered consecutive downturns in 2024 and 2025 following its record year in 2023, but signs of improvement emerged in both revenue and profit/loss in the second quarter of 2026. Structurally, the company is exposed to the growth of the autonomous driving and automotive camera equipment market, but its heavy reliance on a presumed specific end-customer automaker means earnings volatility remains significant. New businesses such as LiDAR and ToF have entered the initial sales stage, though their contribution to revenue remains small. Total equity has been on a declining trend due to accumulated losses, and operating cash flow has remained negative, making financial improvement another factor to monitor. The future direction of earnings will ultimately depend on when camera module makers resume capital spending and how quickly the end customer's autonomous driving services are commercialized. For investors, it will be important to continue checking subsequent quarterly results and order disclosures to see whether the Q2 improvement trend persists."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A370090",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Invest.asp?pGB=1&gicode=A370090&MenuYn=Y&NewMenuID=105&stkGb=701",
-  "https://www.thinkpool.com/item/370090/news/16732587",
-  "https://www.butler.works/ko/companies/01357446",
-  "https://m.thinkpool.com/compDiscuss/cont/1009481",
+  "https://kr.investing.com/equities/furonteer-earnings",
+  "https://littlebproject.com/stock/370090/248/45966",
+  "https://w4.kirs.or.kr/download/research/241203_%EB%9D%BC%EC%9D%B4%EC%A7%95%EC%8A%A4%ED%83%80-%ED%93%A8%EB%9F%B0%ED%8B%B0%EC%96%B4%20(%EC%B5%9C%EC%A2%85).pdf",
+  "https://www.google.com/finance/quote/370090:KOSDAQ?hl=en",
   "https://www.investing.com/equities/furonteer",
-  "https://m.irgo.co.kr/IR-COMP/370090",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?gicode=A370090",
-  "https://kr.investing.com/pro/KOSDAQ:A370090/explorer/total_rev",
-  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=370090&cn=",
-  "https://thevc.kr/furonteer",
-  "https://thebell.co.kr/free/Content/ArticleView.asp?key=202112270902031860106062&svccode=01",
-  "https://comp.wisereport.co.kr/company/c1080001.aspx?cmp_cd=370090&cn=",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=370090",
-  "https://kbthink.com/securities-view.html?docId=20250429165612910K",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/irvtech735",
   "https://m.thinkpool.com/compDiscuss/cont/1015525",
-  "https://www.epnc.co.kr/news/articleView.html?idxno=400261"
+  "https://alphasquare.co.kr/home/stock-summary?code=370090",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A370090",
+  "https://www.fnnews.com/news/202304260841263405",
+  "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202105211323193560102028",
+  "https://zdnet.co.kr/view/?no=20220207162705",
+  "https://elec4.co.kr/contents/article_detail?article_idx=23648",
+  "https://thevc.kr/furonteer",
+  "http://webzine.koita.or.kr/202201-specialissue/%E3%88%9C%ED%93%A8%EB%9F%B0%ED%8B%B0%EC%96%B4-%E2%80%93-%EC%B0%A8%EC%84%B8%EB%8C%80-%EC%B2%A8%EB%8B%A8-%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%EC%84%B8%EC%83%81%EC%9D%84-%EC%97%AC%EB%8A%94-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EA%B3%B5%EC%A0%95%EC%9E%A5%EB%B9%84-%EC%84%A0%EB%8F%84%EA%B8%B0%EC%97%85",
+  "https://dealsite.co.kr/articles/61732",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=410099",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1684453021519.pdf",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=E8FeJnzj4UE6aGhs"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "370090",
  "name": "퓨런티어",
  "name_en": "Furonteer Inc.",
@@ -233,9 +223,9 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 00:51",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 09:10",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 6220,
-   "mcap": 0.0532,
+   "price": 6550,
+   "mcap": 0.056,
    "shares": 8556830,
    "total_shares": 8556830,
    "wavg_shares": 8594500,
    "per": null,
    "eps": -583,
-   "pbr": 1.3399,
+   "pbr": 1.411,
    "bps": 4642,
    "roe_ttm": -11.8,
    "ttm_window": "2025Q3~2026Q2",

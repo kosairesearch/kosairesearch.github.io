@@ -1,229 +1,220 @@
 {
  "title": {
-  "ko": "매출 고성장 궤도 진입, 수익성 전환 타이밍이 관건",
-  "en": "Revenue Growth Accelerating; Timing of Break-Even Transition Is the Key Watch"
+  "ko": "액체생검 선두주자, 매출 성장 속 적자 축소",
+  "en": "Liquid Biopsy Leader Grows Revenue While Narrowing Losses"
  },
  "lead": {
-  "ko": "국내 대표 ctDNA 액체생검 기업 아이엠비디엑스는 2025년 매출 약 53억원(YoY +56%)을 기록하며 고성장 사업화 궤도에 진입했으나, 2026Q1 매출 역성장과 영업손실 재확대로 연간 100억원 목표 달성 및 분기 BEP 전환 가능성이 핵심 분기점으로 부상했다.",
-  "en": "IMBdx, Korea's leading ctDNA-based liquid biopsy company, entered a high-growth commercialization track with FY2025 revenue of approximately KRW 5.3 billion (+56% YoY), yet a sequential revenue decline and widened operating loss in 2026Q1 have elevated the full-year KRW 10 billion revenue target and quarterly break-even timeline as the most critical near-term milestones."
+  "ko": "아이엠비디엑스는 암 전주기 액체생검 포트폴리오와 글로벌 제약사 협력을 발판으로 매출 성장과 적자 축소를 동시에 진행하고 있으나, 목표 매출 달성과 분기 손익분기점 시점은 여전히 확인이 필요한 단계다.",
+  "en": "IMBdx is growing revenue and narrowing losses on the back of its full-cycle liquid biopsy portfolio and global pharma partnerships, though whether it reaches its revenue targets and quarterly breakeven timeline still needs confirmation."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 약 53억원(YoY +56%): 프로파일링(64.8%) 주도하에 스크리닝·재발모니터링 비중이 점진적으로 확대 중",
-   "en": "FY2025 revenue ~KRW 5.3 billion (+56% YoY), led by profiling (64.8%), with screening and recurrence monitoring gradually expanding their revenue share"
+   "ko": "2025년 연결 매출 53억원, 전년 대비 56% 이상 증가했으나 시장 전망치(약 65억원)에는 못 미쳤다.",
+   "en": "2025 consolidated revenue reached KRW 5.3 billion, up more than 56% year over year, but fell short of a market estimate of around KRW 6.5 billion."
   },
   {
-   "ko": "알파리퀴드1000 태국 출라본 병원 수주(2026.02)·아스트라제네카 11개국 933명 연구 협력 등 글로벌 레퍼런스 축적 가속",
-   "en": "AlphaLiquid®1000 secured Thailand's Chulabhorn Hospital contract (Feb 2026) and is embedded in AstraZeneca's 11-country/933-patient study, building a rapidly expanding global reference portfolio"
+   "ko": "영업손실·지배주주순손실은 2023~2025년 3년 연속 축소되는 흐름을 보였다.",
+   "en": "Both operating loss and net loss attributable to owners have narrowed for three consecutive years from 2023 to 2025."
   },
   {
-   "ko": "한국형 ARPA-H 주관기업 선정으로 캔서파인드 8→30종 암 확대 연구개발을 국가 재원으로 수행 중",
-   "en": "Designated lead company for Korea's ARPA-H program (2024–2032), enabling government-funded R&D to expand CancerFind from 8 to 30 cancer types"
+   "ko": "주력 제품 알파리퀴드100은 국내 시장점유율 1위이며, 아스트라제네카·태국 출라브혼 병원 등과 글로벌 협력을 확대하고 있다.",
+   "en": "Flagship product AlphaLiquid100 holds the No.1 domestic market share, while global partnerships with AstraZeneca and Chulabhorn Hospital in Thailand are expanding."
   },
   {
-   "ko": "2026Q1 매출 약 12.7억원으로 전 분기 대비 역성장, 영업손실 약 24.6억원으로 재확대 — 연간 목표와의 괴리 부각",
-   "en": "2026Q1 revenue of ~KRW 1.27 billion declined sequentially from Q4 2025, while operating loss widened to ~KRW 2.46 billion, revealing a significant gap versus full-year guidance"
+   "ko": "영업활동현금흐름은 3년 연속 매년 60억원대 음(-)의 흐름을 보이며 자기자본이 감소하는 추세다.",
+   "en": "Operating cash flow has been negative by more than KRW 6 billion each year for three straight years, and equity has been declining."
   },
   {
-   "ko": "부채비율 7.8%, 자기자본 약 252억원의 안정적 재무구조이나 연간 영업 현금소진 약 62억원으로 자금 조달 일정 지속 모니터링 필요",
-   "en": "A low debt ratio of 7.8% and ~KRW 25.2 billion in equity provide financial stability, yet annual operating cash burn of ~KRW 6.2 billion necessitates ongoing monitoring of the funding schedule"
+   "ko": "회사는 2026년 매출 100억원과 분기 영업흑자 전환을 목표로 제시했다.",
+   "en": "The company has set a 2026 revenue target of KRW 10 billion and aims for a quarterly operating profit turnaround."
   }
  ],
  "business": {
-  "ko": "아이엠비디엑스는 2018년 서울대 교수진이 공동 창업한 정밀의료 기업으로 2024년 코스닥에 상장했다. 핵심 기술은 혈액 내 순환종양DNA(ctDNA)를 차세대염기서열분석(NGS)과 하이브리드 캡처 방식으로 분석해 암을 진단·모니터링하는 액체생검 플랫폼이다. 매출은 ①프로파일링(진행암 정밀진단), ②스크리닝(일반인 조기진단), ③재발모니터링 세 축으로 구성되며, 2026년 3월 증권사 산업분석 보고서에 따르면 2025년 기준 프로파일링 64.8%, 스크리닝 18.1%, 재발모니터링 13.6%, 알파리퀴드 제품·기타 3.5%의 비중을 보인다. 주력 제품 알파리퀴드100은 국내 액체생검 시장점유율 1위를 기록 중이며, 2026년에는 유전자 커버리지를 10배 확대한 알파리퀴드1000을 신규 출시해 연구용·신약개발 협력 시장으로 영역을 넓히고 있다. 일반인 대상 다중암 조기스크리닝 제품 캔서파인드는 12종 고형암 커버가 가능하며, 2026년 내 15종 확대를 목표로 하고 있다. 수술 후 암 재발 조기탐지 제품 캔서디텍트는 2025년 혁신의료기술로 선정돼 건강보험 적용 가능 경로가 열렸다. 해외는 대만·태국·일본 등 아시아 시장을 중심으로 수출이 성장 중이며, 아스트라제네카와의 다국가 임상 협력, 미국 이노크라스 공급 계약 등 글로벌 파트너십도 확대 중이다. 2026년 1월 기준 임직원 약 66명으로 R&D 중심의 소규모 조직이다.",
-  "en": "IMBdx was co-founded in 2018 by Seoul National University professors and listed on KOSDAQ in 2024 as a precision medicine company. Its core technology is a liquid biopsy platform that detects circulating tumor DNA (ctDNA) in blood using next-generation sequencing (NGS) and hybrid capture methods to diagnose and monitor cancer across its full lifecycle. Revenue is organized into three segments—profiling (precision diagnosis of advanced cancer), screening (early detection for the general population), and recurrence monitoring—with a 2025 revenue mix of profiling 64.8%, screening 18.1%, recurrence monitoring 13.6%, and AlphaLiquid products/other 3.5%, according to an industry research report published in March 2026. The flagship AlphaLiquid®100 holds domestic liquid biopsy market share leadership, and the newly launched AlphaLiquid®1000—offering 10x the gene coverage at approximately 1,000 genes—extends the company's addressable market into research use and pharmaceutical drug development partnerships. CancerFind, the multi-cancer early detection product for the general population, currently covers 12 solid cancer types, with a 2026 target to expand to 15 types. CancerDetect, the post-surgery recurrence detection product, was designated an innovative medical technology in 2025, opening a pathway to national health insurance coverage. Overseas, exports to Taiwan, Thailand, and Japan are growing, supported by a multi-country AstraZeneca clinical collaboration and a U.S. supply contract with Innocras. As of January 2026, the company employs approximately 66 staff, with operations centered on R&D personnel."
+  "ko": "아이엠비디엑스는 2018년 7월에 설립된 한국계 스타트업으로, 2024년 4월3일 기술특례상장 방식을 통해 코스닥시장에 상장했으며, 상장 과정에서 한국평가데이터와 SCI평가정보로부터 모두 최상위인 A등급을 획득했다. 회사의 제품군은 진행암 정밀진단/치료에 활용되는 프로파일링 제품 '알파리퀴드', 수술 후 미세잔존암에 의한 재발을 조기에 탐지하는 재발모니터링 제품 '캔서디텍트', 다중암 조기진단(MCED)을 위한 스크리닝 제품 '캔서파인드'로 구성돼 암 발생 전주기를 커버한다. 국내에서는 서울대병원, 삼성의료원 등 주요 30개 이상 병원에서 원내 처방이 가능하며, 해외에서는 2021년 대만 진출 이후 유럽, 일본, 인도 등 23개 국가에 진출해 매출 기반을 넓혀왔다. 주력 제품 알파리퀴드100은 국내 시장점유율 1위를 기록하고 있으며, 2024년 조사 당시에는 NGS 액체생검 전체 보험 처방 중 90%에 가까운 점유율을 차지한 것으로 파악됐다. 2024년 1분기 기준 제품별 매출 비중은 알파리퀴드100이 71%로 가장 높았고 알파리퀴드HRR 6%, 캔서디텍트 13%, 캔서파인드 8%였으며, 프로파일링 부문인 알파리퀴드100·HRR이 전체 매출의 77%를 차지해 캐시카우 역할을 해왔다. 최근에는 유방암 치료 핵심 유전자를 단일 검사로 분석하는 '알파리퀴드 브레스트'를 출시하고 HRR 유전자 패널을 15종에서 19종으로 확장했으며, 유전자 커버리지를 기존 대비 10배 확대한 '알파리퀴드1000'과 아스트라제네카의 유방암 연구 프로젝트에 채택된 '알파리퀴드 브레스트' 등 환자 라이프사이클 전반을 아우르는 플랫폼 전략을 가동하고 있다. 글로벌 협력으로는 아스트라제네카의 PROSPER 2.0 프로젝트를 통해 중동, 유럽, 미주 등 약 30개국에 진단 서비스가 공급되고 있고, 미국에서는 이노크라스와 공급계약을 체결하며 시장 진출에 성공했다. 경쟁구도에서는 국내 액체생검 대표주자인 싸이토젠과 암세포에서 방출되는 DNA 조각(ctDNA)과 혈중순환암세포(CTC)라는 상이한 분석 대상으로 경쟁하며, 글로벌 무대에서는 약 700개 유전자를 분석하는 제품을 출시한 가던트헬스가 주요 경쟁사로 꼽힌다.",
+  "en": "IMBdx is a Korean startup founded in July 2018 that listed on KOSDAQ on April 3, 2024 through the technology special listing track, receiving the highest A-grade ratings from both Korea Rating Data and SCI Pyeongga Jeongbo during the process. Its product lineup consists of the profiling product 'AlphaLiquid' used for precision diagnosis and treatment of advanced cancer, the recurrence-monitoring product 'CancerDetect' that detects minimal residual disease after surgery, and the screening product 'CancerFind' for multi-cancer early detection, covering the full cancer care continuum. In Korea, on-site prescriptions are available at more than 30 major hospitals including Seoul National University Hospital and Samsung Medical Center, while overseas the company has expanded into 23 countries including Europe, Japan and India since entering Taiwan in 2021. Its flagship product AlphaLiquid100 holds the No.1 domestic market share, and as of a 2024 assessment it had captured close to 90 percent of all reimbursed NGS liquid biopsy prescriptions. As of the first quarter of 2024, product mix was led by AlphaLiquid100 at 71 percent, followed by AlphaLiquid HRR at 6 percent, CancerDetect at 13 percent and CancerFind at 8 percent, with the profiling segment (AlphaLiquid100 and HRR) accounting for 77 percent of total revenue as the company's cash cow. More recently the company launched AlphaLiquid Breast, a blood-based molecular diagnostic that analyzes key breast cancer treatment genes in a single test, and expanded its HRR gene panel from 15 to 19 genes, and is running a platform strategy spanning the patient lifecycle through AlphaLiquid1000, which expands gene coverage tenfold, and AlphaLiquid Breast, adopted for an AstraZeneca breast cancer research project. On the global partnership front, its diagnostic services are supplied to roughly 30 countries across the Middle East, Europe and the Americas through AstraZeneca's PROSPER 2.0 project, and in the United States it entered the market by signing a supply agreement with Inocras. Competitively, it faces Cytogen, a leading domestic liquid biopsy player, with differing analytical targets—circulating tumor DNA fragments versus circulating tumor cells (CTC), while globally Guardant Health, which launched a product analyzing about 700 genes, is cited as a key competitor."
  },
  "earnings": {
-  "ko": "2025년 연간 매출은 약 53.3억원으로 전년 약 34.1억원 대비 56% 성장했으며, 이는 액체생검 시장 침투 가속화가 실제 매출로 구체화된 결과다. 영업손실은 약 86.6억원(OPM -162.6%)으로, 전년도 약 106.1억원(OPM -311.5%) 대비 손실폭이 의미 있게 축소됐다. 분기별로는 2025Q1 약 10.0억원→Q2 약 15.1억원→Q3 약 11.2억원→Q4 약 17.0억원으로, Q3 일시 둔화 후 Q4에 연내 최고 매출을 달성하는 패턴이었다. 그러나 2026Q1 매출은 약 12.7억원으로 직전 분기(Q4 2025: 약 17.0억원) 대비 하락했고, 영업손실도 약 24.6억원으로 재확대돼 성장 모멘텀이 일시 꺾였다. 이 손실 수준은 2025년 전 분기 중 최대 손실을 기록한 Q3(-25.7억원)에 근접하는 수준으로, 매출 성장에도 불구하고 비용 구조가 함께 확대되고 있음을 시사한다. 영업 현금흐름은 2025년 -62.0억원(전년 -66.5억원)으로 소폭 개선됐으나 여전히 연간 60억원 이상을 소진하는 구조다. 2025년 자기자본은 약 251.6억원, 부채비율 7.8%로 재무 건전성은 양호하나, 지속적인 영업 현금소진이 장기 자본 조달 계획에 영향을 미칠 수 있다.",
-  "en": "FY2025 revenue was approximately KRW 5.33 billion, growing 56% from FY2024's ~KRW 3.41 billion, as accelerating liquid biopsy market penetration translated into tangible top-line growth. The operating loss narrowed meaningfully to approximately KRW 8.66 billion (OPM: -162.6%) from ~KRW 10.61 billion in 2024 (OPM: -311.5%), reflecting revenue growth outpacing cost expansion. Quarterly progression in 2025 ran Q1 ~KRW 1.00B → Q2 ~KRW 1.51B → Q3 ~KRW 1.11B → Q4 ~KRW 1.70B, with a temporary Q3 dip before the full-year revenue peak in Q4. However, 2026Q1 revenue of ~KRW 1.27 billion declined sequentially from Q4 2025's ~KRW 1.70 billion, and the operating loss widened to ~KRW 2.46 billion, interrupting the upward momentum. This quarterly loss level approached the largest single-quarter loss in 2025 (Q3: ~KRW 2.57 billion), indicating that the cost structure is expanding alongside revenue. Operating cash outflow was approximately KRW 6.20 billion in 2025 (versus ~KRW 6.65 billion in 2024), a modest improvement but still representing a substantial annual cash burn. Shareholders' equity of approximately KRW 25.2 billion and a debt ratio of 7.8% support near-term financial stability, yet sustained operating cash consumption will shape the long-term capital raise schedule."
+  "ko": "2025년 연결 매출액은 53억2863만원으로 2024년 34억696만원 대비 56.4% 증가했으며, 2023년(40억2693만원) 수준을 넘어서며 매출 규모가 다시 성장 궤도에 올랐다. 다만 지난해 3분기까지 매출 36억원, 연간 매출은 65억원 안팎이 될 것으로 예상됐던 시장 전망과 비교하면 확정 매출은 그에 못 미쳤다. 영업손실은 2025년 86억6425만원으로 2024년 106억1158만원보다 18.4% 줄며 완화됐지만, 2023년(77억6884만원)보다는 여전히 큰 규모다. 영업이익률은 2024년 -311.5%에서 2025년 -162.6%로 개선됐으나 2023년(-192.9%) 수준까지는 회복하지 못했다. 지배주주순손실은 2023년 104억1644만원, 2024년 95억7669만원, 2025년 79억3387만원으로 3년 연속 축소되는 흐름을 보였다. 분기별로는 2025년 3분기 매출이 11억1544만원까지 줄었다가 4분기 17억0076만원으로 회복했고, 2026년 1분기 12억7410만원으로 다시 낮아진 뒤 2분기 15억0916만원으로 재차 올라서는 등 뚜렷한 계단식 성장보다는 등락을 반복하는 모습을 보였다. 영업손실은 2025년 3분기 25억6753만원까지 확대됐다가 2026년 2분기 14억0695만원으로 좁혀지며 최근 네 개 분기 중 가장 낮은 손실을 기록했고, 같은 기간 지배주주순손실도 10억6249만원으로 축소돼 손익 개선의 조짐이 나타났다. 영업활동현금흐름은 2023년 -62억3119만원, 2024년 -66억4703만원, 2025년 -62억2221만원으로 3년간 비슷한 수준의 현금 소진이 이어졌으며, 이에 따라 자기자본은 2024년 324억5419만원에서 2025년 251억6460만원으로 줄었다. 부채비율은 2025년 7.8%로 낮은 수준을 유지해 재무구조 자체의 위험은 제한적이다.",
+  "en": "IMBdx's 2025 consolidated revenue came to KRW 5.329 billion, up 56.4 percent from KRW 3.407 billion in 2024, surpassing the 2023 level (KRW 4.027 billion) and putting revenue back on a growth track. However, actual results fell short of a market estimate at the time that revenue through the third quarter of the prior year was KRW 3.6 billion, with full-year revenue expected to come in around KRW 6.5 billion. Operating loss narrowed 18.4 percent to KRW 8.664 billion in 2025 from KRW 10.612 billion in 2024, though it remained wider than the 2023 figure of KRW 7.769 billion. Operating margin improved from -311.5 percent in 2024 to -162.6 percent in 2025, but did not recover to the 2023 level of -192.9 percent. Net loss attributable to owners narrowed for three straight years, from KRW 10.416 billion in 2023 to KRW 9.577 billion in 2024 and KRW 7.934 billion in 2025. On a quarterly basis, revenue fell to KRW 1.115 billion in the third quarter of 2025, recovered to KRW 1.701 billion in the fourth quarter, dipped again to KRW 1.274 billion in the first quarter of 2026, and rose to KRW 1.509 billion in the second quarter, showing fluctuation rather than a steady upward trajectory. Operating loss widened to KRW 2.568 billion in the third quarter of 2025 before narrowing to KRW 1.407 billion in the second quarter of 2026, the smallest loss in the recent four-quarter window, while net loss attributable to owners also narrowed to KRW 1.062 billion in the same period, signaling some improvement. Operating cash flow was negative by a similar magnitude each year—KRW -6.231 billion in 2023, KRW -6.647 billion in 2024, and KRW -6.202 billion in 2025—and equity declined from KRW 32.454 billion in 2024 to KRW 25.165 billion in 2025 as a result. The debt ratio stood at a low 7.8 percent in 2025, indicating limited balance-sheet risk itself."
  },
  "industry": {
-  "ko": "글로벌 액체생검 시장은 2024년 약 17조원(118억5천만달러)에서 2030년 약 33조원(228억8천만달러)으로 연평균 11.5% 성장이 전망되며, 암 진단 시장 전체 성장률의 약 두 배에 달하는 속도다. 조직 생검의 액체생검 대체율은 2025년 약 7% 수준으로 추정되며, 아이엠비디엑스는 이 비율이 10%를 넘어서는 시점에 BEP 달성이 가능하다고 자체 분석하고 있다. 2026년 AACR 학술대회에서도 MRD/ctDNA가 핵심 테마로 부상한 가운데, 혈액 기반 분자 마커가 영상 검사를 대체·보완하는 패러다임 전환이 글로벌 의료 현장에서 가속화되고 있다. 글로벌 경쟁에서는 가던트헬스·파운데이션메디신 등 미국 기업이 시장을 선도하고 있으나, 아이엠비디엑스는 알파리퀴드1000의 약 1,000개 유전자 패널이 가던트의 최신 제품(약 700개)을 능가하는 분석 스펙으로 차별화를 추진하고 있다. 국내에서는 CTC 기반 분석의 싸이토젠, 유전체 분석의 지씨지놈·마크로젠 등과 시장을 공유하나, ctDNA 기반 암 전주기 포트폴리오 측면에서는 국내 유일에 가까운 위치를 점하고 있다. 캔서디텍트의 2025년 혁신의료기술 선정은 보험 급여 경로를 여는 긍정적 진전이나, 대다수 제품이 여전히 비급여 시장에 의존하는 구조는 대규모 볼륨 확대를 제약하는 구조적 요인이다. 시장 전체로는 비침습적 암 진단 수요 증가와 정밀·맞춤치료 트렌드가 지속적인 성장 동력으로 작용하고 있다.",
-  "en": "The global liquid biopsy market is projected to grow from approximately USD 11.85 billion in 2024 to USD 22.88 billion by 2030 at a CAGR of 11.5%—approximately twice the growth rate of the broader cancer diagnostics market. IMBdx estimates that profitability becomes achievable once liquid biopsy's share of tissue biopsy procedures exceeds 10%, up from an estimated ~7% in 2025. At the 2026 AACR conference, MRD/ctDNA was highlighted as a leading scientific theme, reflecting the accelerating global transition toward blood-based molecular markers as substitutes and complements to imaging-based surveillance. In global competition, U.S. players such as Guardant Health and Foundation Medicine lead the market; IMBdx claims a specification advantage with AlphaLiquid®1000's ~1,000-gene panel versus Guardant's newest ~700-gene product. Domestically, IMBdx shares the market with CTC-based competitor Cytogen and genomics sequencing players such as GC Genome and Macrogen, but holds a near-unique domestic position in ctDNA-based full cancer-lifecycle coverage. The 2025 innovative medical technology designation for CancerDetect opened a health insurance reimbursement pathway, yet the broader portfolio's dependence on the non-reimbursed market structurally constrains large-scale volume growth. Market-wide, rising demand for non-invasive cancer diagnostics and the global momentum behind precision and personalized medicine continue to serve as secular tailwinds."
+  "ko": "액체생검은 조직검사 대비 편의성과 민감도 우위를 바탕으로 빠르게 성장하는 분야로, 시장조사기관에 따라 추정치는 다소 차이가 있다. 전세계 액체생검 시장은 2024년 17조원에서 2030년 33조원으로 연평균 11.5% 성장할 것으로 예측됐고, 다른 조사에서는 2023년 10조4000억원에서 2032년 76조2000억원으로 연평균 25.3% 성장한다는 추정도 제시된 바 있다. 액체생검이 속한 전체 암 진단 시장은 2024년 158조원에서 2030년 224조원으로 연평균 6.14% 성장할 것으로 예상돼, 액체생검의 성장 속도가 전체 시장보다 빠르다. 국내에서는 액체생검의 조직검사 대체율이 약 7% 수준으로 아직 초기 단계이며, 회사도 대체율이 10%를 넘어서는 시점을 분기 손익분기점 달성의 핵심 조건으로 제시하고 있다. NGS 급여 시장은 2019년 이후 연평균 약 20%씩 성장해왔으나, 선별급여 기준 조정으로 본인부담금이 늘면서 처방 건수 증가율이 낮아질 가능성도 존재한다. 경쟁구도에서 아이엠비디엑스는 알파리퀴드100 기준 국내 시장점유율 1위를 유지하며 국내 CTC 기반 기술의 싸이토젠, 글로벌 대형 경쟁사인 가던트헬스와 마주하고 있다. 해외에서는 대만 진출 이후 대만 시장 점유율 2위를 확보했고, 일본·태국 등으로 협력망을 확장하는 중이다.",
+  "en": "Liquid biopsy is a fast-growing field owing to its convenience and sensitivity advantages over tissue biopsy, though estimates vary by market research firm. The global liquid biopsy market was projected to grow from KRW 17 trillion in 2024 to KRW 33 trillion by 2030, a compound annual growth rate of 11.5 percent, while another estimate put growth at from KRW 10.4 trillion in 2023 to KRW 76.2 trillion by 2032, a CAGR of 25.3 percent. The broader cancer diagnostics market that liquid biopsy belongs to is expected to grow from KRW 158 trillion in 2024 to KRW 224 trillion by 2030, a CAGR of 6.14 percent, meaning liquid biopsy is growing faster than the overall market. In Korea, the substitution rate of liquid biopsy for tissue biopsy is still around 7 percent, an early stage, and the company itself has cited crossing a 10 percent substitution rate as a key condition for reaching quarterly breakeven. The reimbursed NGS market has grown at roughly 20 percent annually since 2019, though an adjustment to selective coverage criteria that slightly raised patient co-payments could slow the growth rate of prescriptions. Competitively, IMBdx maintains the No.1 domestic market share for AlphaLiquid100, facing Cytogen's CTC-based technology domestically and Guardant Health as a major global rival. Overseas, following its Taiwan entry the company secured the No.2 market share position in Taiwan and continues to expand its partnership network into Japan and Thailand."
  },
  "outlook": {
-  "ko": "회사는 2026년 연간 매출 목표를 100억원으로 공식화했으나, 2026Q1 약 12.7억원 실적은 잔여 세 분기에 매우 가파른 가속이 필요함을 시사해 목표 달성 경로에 상당한 불확실성이 존재한다. 알파리퀴드1000은 태국 출라본 병원(2026년 2월) 수주를 시작으로 글로벌 배포를 본격화하고 있으며, 동남아·일본·중남미 등 추가 수주 여부가 단기 매출 증분의 핵심 변수다. 캔서파인드는 2026년 내 커버 암종 15종 확대 및 월 400건 이상 검사 볼륨 안정화를 목표로 하며, 대형 건강검진센터 추가 진입이 스크리닝 매출 확대의 주요 트리거가 될 전망이다. 한국형 ARPA-H 과제(2024~2032년, 총 사업비 약 1조1,628억원) 주관기업 지위는 캔서파인드 30종 확대 개발에 대한 정부 자금과 공신력을 제공한다. 아스트라제네카와의 11개국 933명 연구 결과가 학술지·학회에 공식 발표될 경우 글로벌 제약사와의 추가 협력 계약 가능성이 높아질 것으로 회사는 기대하고 있다. 항암백신 개발 협력과 제약사 대상 바이오마커 발굴 서비스 등 액체생검 기술 응용 범위 확장이 중장기 매출 다각화의 방향성이다. 회사 측은 2027년 BEP 목표로 매출 약 498억원, 영업이익 약 151억원을 제시한 바 있으며(2025년 초 기준 가이던스), 이는 현 매출 규모 대비 약 10배 도약을 필요로 하는 도전적 장기 목표다.",
-  "en": "The company has set a public revenue target of KRW 10 billion for 2026, but 2026Q1 revenue of ~KRW 1.27 billion implies the remaining three quarters must deliver very steep acceleration, creating meaningful execution uncertainty. AlphaLiquid®1000 has commenced global deployment with the Chulabhorn Hospital contract in Thailand (February 2026), and additional orders from Southeast Asia, Japan, and Latin America are the critical near-term revenue increment drivers. CancerFind targets 15 cancer types by end of 2026 and stable monthly test volumes above 400, with additional entries into major health screening centers serving as the primary trigger for screening segment revenue growth. Lead-company status on the Korea ARPA-H project (2024–2032, total budget ~KRW 1.16 trillion) provides government-backed funding and credibility for the 30-cancer-type CancerFind development roadmap. Should the AstraZeneca multi-country/933-patient study results be formally published, the company expects enhanced prospects for additional global biopharma partnership agreements. Expansion into anti-cancer vaccine development support and biomarker discovery services for drug developers represents the medium-to-long-term revenue diversification direction. The company's stated 2027 BEP target of approximately KRW 49.8 billion revenue and KRW 15.1 billion operating income (as of early 2025 guidance) implies a near-tenfold revenue scale-up from 2025 levels—an ambitious but necessary long-term milestone."
+  "ko": "회사는 2026년 매출 목표를 100억원으로 제시했고 분기 기준 영업흑자 전환까지 가능할 것으로 기대하고 있는데, 이는 2025년 확정 매출(53억원) 대비 약 88% 늘어난 수치로 하반기 이후 매출 증가 속도가 한층 빨라져야 달성 가능한 목표다. 한국IR협의회는 2026년 1월 보고서에서 건강검진센터 기반 검사 건수 확대와 해외 시장 진출 본격화를 근거로 2026년 하반기 손익분기점 돌파가 가능할 것으로 전망했다. 제품 로드맵에서는 유전자 1000개를 분석하는 알파리퀴드1000이 2026년 상반기 중 유전자 커버리지를 기존 대비 10배 확대한 형태로 상용화됐고, 캔서파인드의 선별 가능 암종은 12종까지 확대됐다. 정부 과제 연계로는 '한국형 ARPA-H' 과제 주관기업으로 선정돼 캔서파인드의 선별 가능 암종을 30개까지 확대하는 프로젝트가 진행 중이다. 해외에서는 아스트라제네카 PROSPER 2.0 프로젝트를 통해 약 30개국에 진단 서비스가 공급되고 있고, 태국 출라브혼 병원과의 임상연구 협력 등 신규 지역 파트너십도 이어지고 있다. 다만 이러한 목표와 프로젝트는 회사 계획 및 정부 과제 진행 상황에 따라 달라질 수 있어, 실제 매출·손익 반영 시점은 향후 분기별 공시로 확인이 필요하다.",
+  "en": "The company has set a 2026 revenue target of KRW 10 billion and expects a quarterly operating profit turnaround to be achievable, a target roughly 88 percent above 2025's confirmed revenue of KRW 5.3 billion that would require an acceleration in revenue growth from the second half onward. In a January 2026 report, the Korea IR Association forecast that IMBdx could break even in the second half of 2026, citing expanding test volumes through health checkup centers and the acceleration of overseas market entry. On the product roadmap, AlphaLiquid1000, which analyzes 1,000 genes, was commercialized in the first half of 2026 with tenfold expanded gene coverage, and the number of cancer types detectable by CancerFind has been expanded to 12. Through a government-linked project, the company was selected as the lead firm for a Korea-type ARPA-H program to expand CancerFind's detectable cancer types to 30. Overseas, its diagnostic services are being supplied to roughly 30 countries through AstraZeneca's PROSPER 2.0 project, and new regional partnerships continue, including a clinical research collaboration with Chulabhorn Hospital in Thailand. These targets and projects, however, remain subject to change based on company planning and government program progress, and the actual timing of revenue and earnings impact will need to be confirmed through future quarterly disclosures."
  },
  "valuation_comment": {
-  "ko": "아이엠비디엑스는 지속적인 영업손실로 인해 현시점에서 손익 기반의 가격배수 지표는 실질적인 비교 기준을 제공하지 않는다. 주당순자산(BPS) 1,738원을 기준으로 현재 주가는 순자산 대비 현저한 프리미엄 구간에서 거래되고 있으며, 이는 미래 성장 잠재력과 플랫폼 기술 가치에 대한 시장 기대가 현재 재무가치 이상으로 반영된 상태임을 의미한다. 주당순손실(EPS) -599원에서 보듯 손실이 이어지고 있으며, 배당 지급 이력이 없어 순수 성장주로서의 성격이 강하다. 성장 초기 액체생검·정밀진단 기업군은 통상 미래 수익 기대와 독점적 플랫폼 기술 가치를 반영해 순자산 대비 수 배의 프리미엄이 형성되는 특성이 있으나, 이 프리미엄은 실적 달성도에 매우 민감하게 반응한다. 현재의 밸류에이션 수준 지속 여부는 2026년 하반기 매출 가속화 및 분기 BEP 달성 시점에 의해 결정적인 영향을 받을 것으로 판단된다.",
-  "en": "With the company sustaining operating losses, earnings-based valuation multiples do not provide a meaningful benchmark at this stage of the business cycle. Based on a book value per share (BPS) of KRW 1,738, the current share price reflects a notable premium to net asset value, indicating that the market is pricing in future growth potential and platform technology value well beyond the current balance sheet. As illustrated by earnings per share (EPS) of -KRW 599, losses are ongoing, and with no dividend payment history, the stock trades as a pure growth-stage company. Early-stage liquid biopsy and precision diagnostics companies typically command multi-fold premiums to book value, driven by high-growth future earnings expectations and proprietary platform technology; however, this premium is highly sensitive to execution against published guidance. The sustainability of the current valuation premium will therefore be critically shaped by the pace of revenue acceleration in the second half of 2026 and the timeline for quarterly break-even achievement."
+  "ko": "아이엠비디엑스는 여전히 순손실을 기록하고 있어 통상적인 주가수익비율 비교가 성립하지 않는 구간에 있다. 주가는 회사가 보유한 주당 순자산 대비 프리미엄이 반영된 수준에서 형성돼 있어, 시장이 향후 실적 개선 가능성에 일정한 기대치를 부여하고 있음을 시사한다. 배당은 현재 지급되지 않고 있어, 주주환원보다는 매출 성장과 적자 축소를 통한 재무구조 개선이 우선 과제로 남아 있다. 과거 상장 이후 거래 밴드와 비교하면 현재 주가는 그 범위 안에서 등락을 거듭해온 것으로 볼 수 있으며, 향후 분기별 손익 개선 속도가 이러한 프리미엄이 유지될지를 가늠하는 변수가 될 전망이다.",
+  "en": "IMBdx continues to post net losses, placing it in a range where conventional price-to-earnings comparisons do not apply. Its share price trades at a level that reflects a premium relative to the company's net asset value per share, suggesting the market is assigning some expectation to future earnings improvement. No dividend is currently paid, leaving revenue growth and loss reduction—rather than shareholder returns—as the immediate priorities for improving the balance sheet. Compared with its trading range since listing, the current share price can be seen as fluctuating within that historical band, and the pace of quarterly earnings improvement going forward will be a key variable in whether this premium is sustained."
  },
  "bull": [
   {
    "title": {
-    "ko": "알파리퀴드1000 글로벌 확장과 제약사 협력 가속화",
-    "en": "AlphaLiquid®1000 Global Expansion and Accelerating Pharma Partnerships"
+    "ko": "암 전주기 포트폴리오와 국내 점유율 우위",
+    "en": "Full-Cycle Portfolio and Domestic Market Leadership"
    },
    "body": {
-    "ko": "알파리퀴드1000은 약 1,000개 암 관련 유전자를 분석하며 글로벌 경쟁사 중 최대 규모의 패널을 보유하고 있으며, 태국 출라본 병원 수주를 시작으로 동남아·일본 등 아시아 전역에 레퍼런스를 확대하고 있다. 아스트라제네카와의 11개국 933명 대상 연구에서 HRR 유전자 변이 검출 신뢰성을 입증한 것은 글로벌 제약사에 대한 강력한 신뢰 기반 구축을 의미한다. 연구 결과가 공식 발표될 경우 추가 글로벌 파트너십 계약 및 제약사 신약 개발 서비스 수주 확대로 이어질 수 있어 B2B 매출의 도약 가능성이 있다.",
-    "en": "AlphaLiquid®1000's ~1,000-gene cancer panel—the largest among global competitors—has commenced international deployment with the Chulabhorn Hospital contract in Thailand, with further reference sites being pursued across Asia. The validation of HRR gene variant detection reliability through the AstraZeneca 11-country/933-patient study establishes a compelling credibility foundation with global pharmaceutical companies. Formal publication of these results could catalyze additional global partnership agreements and drug development service contracts, representing a potential step-change in B2B revenue."
+    "ko": "회사는 진행암 정밀진단부터 재발 모니터링, 조기 스크리닝까지 이어지는 암 전주기 제품 포트폴리오를 갖추고 있으며, 주력 제품 알파리퀴드100은 국내 시장점유율 1위를 유지하고 있다. 2024년 조사 당시 NGS 액체생검 보험 처방의 90%에 육박하는 점유율을 차지한 바 있어, 국내 급여 시장 확대의 수혜를 상대적으로 크게 받을 수 있는 위치에 있다. 이 같은 제품 다각화와 점유율은 단일 제품 의존도가 높은 경쟁사와 차별화되는 요인이다.",
+    "en": "The company has a full-cycle cancer product portfolio spanning advanced-cancer precision diagnosis, recurrence monitoring, and early screening, and its flagship AlphaLiquid100 holds the No.1 domestic market share. As of a 2024 assessment it had captured close to 90 percent of reimbursed NGS liquid biopsy prescriptions, positioning it to benefit relatively more from expansion of the domestic reimbursement market. This product diversification and market share differentiate it from competitors more reliant on a single product."
    }
   },
   {
    "title": {
-    "ko": "캔서파인드 B2C 스크리닝 시장 안착 및 ARPA-H 국가 지원",
-    "en": "CancerFind B2C Screening Market Establishment and ARPA-H Government Support"
+    "ko": "글로벌 제약사와의 협력 확대",
+    "en": "Expanding Global Pharma Partnerships"
    },
    "body": {
-    "ko": "캔서파인드가 대형 건강검진센터에서 월 400건 이상의 안정적 검사 볼륨을 확보한다면, 반복 수익 구조의 B2C 매출이 빠르게 성장할 수 있다. 특이도 99%, 1~2기 조기암 기준 민감도 89.3%의 임상 성능 지표는 소비자·의료진 신뢰의 기반이 되며 수요 확대를 뒷받침한다. 한국형 ARPA-H 과제 주관기업 지위는 2032년까지 정부 자금 지원으로 커버 암종을 최대 30종까지 확대하는 로드맵을 이행하게 해, 제품 경쟁력과 사업 지속성을 동시에 강화한다.",
-    "en": "If CancerFind establishes stable monthly test volumes of 400+ through major health screening centers, recurring B2C revenue can scale rapidly on a recurring revenue model. Clinical performance metrics of 99% specificity and 89.3% sensitivity for early-stage (Stage 1–2) cancers build consumer and physician confidence that underpins demand expansion. Korea ARPA-H lead-company status enables government-funded execution of the roadmap to expand covered cancer types to up to 30 through 2032, simultaneously strengthening product competitiveness and business continuity."
+    "ko": "아스트라제네카의 PROSPER 2.0 프로젝트를 통해 약 30개국에 진단 서비스가 공급되고 있고, 유방암 분야에서는 '알파리퀴드 브레스트'를 출시하며 HRR 유전자 패널을 19종으로 확장했다. 미국에서는 이노크라스와의 공급계약, 태국 출라브혼 병원과의 임상연구 협력 등 아시아·중동·미주로 파트너십 지역이 넓어지고 있다. 이런 협력은 국내 시장 의존도를 낮추고 매출원을 다변화하는 데 기여할 수 있다.",
+    "en": "Diagnostic services are supplied to roughly 30 countries through AstraZeneca's PROSPER 2.0 project, and in breast cancer the company launched AlphaLiquid Breast and expanded its HRR gene panel to 19 genes. Partnerships are expanding into Asia, the Middle East and the Americas through a supply agreement with Inocras in the United States and a clinical research collaboration with Chulabhorn Hospital in Thailand. These collaborations could help reduce dependence on the domestic market and diversify revenue sources."
    }
   },
   {
    "title": {
-    "ko": "캔서디텍트 혁신의료기술 선정과 보험 급여 확대 가능성",
-    "en": "CancerDetect Innovative Medical Technology Designation and Insurance Reimbursement Potential"
+    "ko": "적자 축소와 매출 성장의 동반",
+    "en": "Loss Narrowing Alongside Revenue Growth"
    },
    "body": {
-    "ko": "캔서디텍트의 2025년 혁신의료기술 선정은 국내 의료 제도적 진입장벽을 넘은 중요한 이정표로, 건강보험 적용 가능 경로가 열렸다. 급여 적용 범위가 실질적으로 확대될 경우 재발모니터링 부문 매출은 현재 비급여 시장 대비 수 배 이상의 볼륨 확대가 가능하며, 대형 종합병원과의 신규 계약 가능성도 높아진다. 급여화는 매출 성장 가속기 역할뿐 아니라 임상 근거 데이터 축적 속도도 빠르게 늘려 글로벌 가이드라인 편입에 유리한 환경을 조성할 수 있다.",
-    "en": "CancerDetect's 2025 designation as an innovative medical technology in Korea represents a meaningful institutional milestone, opening the pathway to national health insurance reimbursement. A real expansion of reimbursement coverage could generate multi-fold volume growth in the recurrence monitoring segment versus the current out-of-pocket market, while also increasing opportunities for new contracts with major tertiary hospitals. Reimbursement acceleration would not only serve as a revenue growth catalyst but would also accelerate clinical evidence accumulation, creating a favorable environment for future international guideline inclusion."
+    "ko": "2025년 영업손실은 2024년보다 18% 이상 줄었고 지배주주순손실도 3년 연속 축소되는 흐름을 보였다. 2026년 2분기 영업손실(약 14억원)과 순손실(약 11억원)은 최근 네 개 분기 중 가장 낮은 수준으로, 매출 성장과 비용 관리가 동시에 진행되고 있음을 보여준다. 이러한 흐름이 이어진다면 회사가 제시한 분기 손익분기점 목표에 근접할 가능성이 있다.",
+    "en": "Operating loss narrowed more than 18 percent in 2025 versus 2024, and net loss attributable to owners has shrunk for three consecutive years. The second-quarter 2026 operating loss (about KRW 1.4 billion) and net loss (about KRW 1.1 billion) were the smallest of the recent four-quarter window, indicating that revenue growth and cost management are progressing in tandem. If this trend continues, the company could move closer to its stated quarterly breakeven goal."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2026년 연간 매출 목표와 실제 실적 괴리 심화 위험",
-    "en": "Growing Gap Between 2026 Revenue Target and Actual Performance"
+    "ko": "목표 대비 낮은 매출 실현",
+    "en": "Revenue Realization Below Targets"
    },
    "body": {
-    "ko": "2026Q1 매출 약 12.7억원은 연간 100억원 목표 달성에 필요한 분기 평균(약 25억원)의 절반 수준으로, 잔여 세 분기에 매우 가파른 가속이 필요하다. 2025년 성장률(+56%)을 그대로 적용해도 2026년 연간 매출은 약 83억원에 그쳐, 목표 달성을 위해서는 대규모 신규 파트너 계약 또는 검진 볼륨 급증 같은 외부 촉매가 필요하다. 목표 대비 유의미한 매출 미달이 확인될 경우 시장 신뢰도 훼손과 밸류에이션 재조정 압력이 동반될 수 있다.",
-    "en": "2026Q1 revenue of ~KRW 1.27 billion is roughly half the ~KRW 2.5 billion quarterly average needed to reach the full-year KRW 10 billion target, requiring very steep growth acceleration across the remaining three quarters. Even applying the 2025 growth rate of +56%, annualized 2026 revenue would reach only approximately KRW 8.3 billion, implying that guidance attainment requires substantial external catalysts such as large partnership contracts or a surge in screening volumes. A material revenue miss would likely damage market credibility and generate significant valuation re-rating pressure."
+    "ko": "시장에서는 2025년 연간 매출을 65억원 안팎으로 전망했으나 확정 매출은 53억원대에 머물러 전망치를 밑돌았다. 분기별 매출도 2025년 3분기 11억원대로 줄었다가 4분기 17억원대로 회복하고 다시 2026년 1분기 낮아지는 등 뚜렷한 우상향보다는 등락을 반복하는 패턴을 보였다. 이는 100억원이라는 2026년 매출 목표 달성 경로에 대한 불확실성을 남긴다.",
+    "en": "The market had estimated full-year 2025 revenue at around KRW 6.5 billion, but confirmed revenue came in at KRW 5.3 billion, below that estimate. Quarterly revenue also fluctuated—falling to about KRW 1.1 billion in the third quarter of 2025, recovering to about KRW 1.7 billion in the fourth quarter, then dipping again in the first quarter of 2026—rather than trending steadily upward. This leaves uncertainty around the path to the 2026 revenue target of KRW 10 billion."
    }
   },
   {
    "title": {
-    "ko": "고정비 중심 비용 구조와 지속적 현금소진",
-    "en": "Fixed-Cost-Heavy Structure and Sustained Cash Burn"
+    "ko": "지속적 자금 소진과 자본 감소",
+    "en": "Persistent Cash Burn and Declining Equity"
    },
    "body": {
-    "ko": "R&D·인건비 중심의 고정비 구조로 2025년 영업 현금유출이 약 62억원에 달하며, 2026Q1에도 영업손실이 약 24.6억원으로 확대되는 추세가 이어지고 있다. 매출이 목표에 미치지 못하거나 비용 통제가 어려울 경우 추가 유상증자 또는 전환사채 발행이 불가피해질 수 있으며, 이는 기존 주주의 지분 희석으로 이어진다. 현 자기자본(약 252억원)은 현 소진 속도 기준 약 4년의 런웨이를 제공하나, 신규 사업 투자 및 글로벌 확장이 가속화될 경우 이 기간이 단축될 수 있다.",
-    "en": "The R&D- and personnel-heavy fixed cost structure generated operating cash outflows of ~KRW 6.2 billion in 2025, and the trend continued with a ~KRW 2.46 billion operating loss in 2026Q1. If revenue falls short of targets or cost control proves challenging, additional equity raises or convertible bond issuances may become unavoidable, resulting in dilution for existing shareholders. Current shareholders' equity of ~KRW 25.2 billion provides approximately four years of runway at the current burn rate, but this window could shorten if new business investments and global expansion accelerate."
+    "ko": "영업활동현금흐름은 3년 연속 매년 60억원대 이상의 음(-)의 흐름을 보였고, 이에 따라 자기자본은 2024년 324억원에서 2025년 251억원대로 줄었다. 손실이 이어지는 구조에서는 향후 추가 자금조달이 필요해질 가능성을 배제할 수 없으며, 이는 기존 주주에게 지분 희석 요인이 될 수 있다.",
+    "en": "Operating cash flow has been negative by more than KRW 6 billion each year for three consecutive years, and equity has declined from KRW 32.4 billion in 2024 to about KRW 25.1 billion in 2025 as a result. Given the ongoing loss structure, the possibility of needing additional external financing cannot be ruled out, which could be a dilution factor for existing shareholders."
    }
   },
   {
    "title": {
-    "ko": "비급여 시장 의존과 급여화 지연 리스크",
-    "en": "Dependence on Non-Reimbursed Market and Risk of Delayed Insurance Coverage"
+    "ko": "경쟁 심화와 정책 변수",
+    "en": "Intensifying Competition and Policy Variables"
    },
    "body": {
-    "ko": "캔서디텍트를 제외한 대부분의 제품이 비급여 시장에서 판매되어, 가격 민감도와 소비자 자기부담이 수요를 제약하는 구조다. 급여화 절차가 지연되거나 적용 범위가 기대에 못 미칠 경우 대규모 볼륨 확대에 구조적 제약이 따르며 경쟁사의 가격 경쟁 공세에도 취약해질 수 있다. 글로벌 임상 근거 축적 속도가 대형 경쟁사에 뒤처질 경우 해외 시장에서의 보험 적용 및 치료 가이드라인 편입 기회도 지연될 수 있다.",
-    "en": "With the exception of CancerDetect, most products are sold in the non-reimbursed market, where demand is constrained by price sensitivity and out-of-pocket consumer costs. If the insurance reimbursement process is delayed or coverage scope falls below expectations, large-scale volume growth will remain structurally constrained and vulnerability to competitor price competition will increase. If the pace of clinical evidence accumulation lags larger global competitors, opportunities for insurance reimbursement and treatment guideline inclusion in international markets may also be deferred."
+    "ko": "국내에서는 싸이토젠이, 해외에서는 가던트헬스와 같은 대형 경쟁사가 액체생검 시장에서 경쟁하고 있다. 선별급여 기준 조정으로 본인부담금이 늘어난 사례처럼 보험 정책 변화는 처방 성장률에 직접 영향을 줄 수 있어, 정책 리스크는 상시적으로 존재한다.",
+    "en": "Domestically the company competes with Cytogen, while globally it faces large rivals such as Guardant Health in the liquid biopsy market. Insurance policy changes, such as the prior adjustment to selective coverage criteria that raised patient co-payments, can directly affect prescription growth rates, meaning policy risk is a persistent factor."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "임상 근거 및 규제 리스크",
-    "en": "Clinical Evidence and Regulatory Risk"
+    "ko": "재무/자금조달 리스크",
+    "en": "Financial and Funding Risk"
    },
    "body": {
-    "ko": "액체생검은 조직검사 대비 임상 유용성을 뒷받침하는 대규모 무작위 대조 연구가 아직 충분하지 않으며, 주요 국제 치료 가이드라인 등재 여부가 시장 확산의 병목 요인이다. 규제 기관의 허가 기준 강화나 혁신의료기술 지위 변경은 기존 영업 모델에 직접적인 타격이 될 수 있다. 임상 연구 결과가 기대에 미치지 못할 경우 제품 신뢰도와 글로벌 파트너십 확대에도 부정적 영향이 불가피하다.",
-    "en": "Liquid biopsy still lacks sufficient large-scale randomized controlled trials validating clinical utility versus tissue biopsy, and inclusion in major international treatment guidelines remains a key market adoption bottleneck. Tighter regulatory approval standards or changes to innovative medical technology designations could directly impact existing business models. Clinical results that disappoint expectations would negatively affect product credibility and the ability to expand global partnerships."
+    "ko": "3년 연속 두 자릿수 억원대의 영업활동현금 소진이 이어지며 자기자본이 감소하는 추세다. 손실 구조가 단기간에 흑자로 전환되지 않을 경우 추가 유상증자나 전환사채 발행 등 외부 자금조달이 필요해질 수 있으며, 이는 주주가치 희석으로 이어질 수 있다.",
+    "en": "Operating cash outflows in the billions of won have continued for three straight years, and equity is on a declining trend. If the loss structure does not turn profitable in the near term, additional external financing such as rights offerings or convertible bond issuance could become necessary, potentially diluting shareholder value."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달 및 지분 희석 리스크",
-    "en": "Funding and Dilution Risk"
+    "ko": "보험수가·정책 리스크",
+    "en": "Reimbursement and Policy Risk"
    },
    "body": {
-    "ko": "회사는 코스닥 상장 이후 지속적인 현금소진 구조에 놓여 있으며, BEP 달성 전까지 추가 자본 조달이 불가피할 것으로 전망된다. 추가 유상증자 또는 전환사채 발행 시 주당 가치 희석이 발생하며, 글로벌 바이오 자금 시장 여건 악화 시 유리한 조건의 조달 자체가 어려워질 수 있다. 조달 일정·규모·조건은 잠재 투자자와 기존 주주 모두에게 지속적으로 모니터링이 필요한 핵심 변수다.",
-    "en": "The company has been in a sustained cash-burn phase since its KOSDAQ listing, and additional capital raises prior to achieving break-even appear inevitable. Additional equity raises or convertible bond issuances would dilute per-share value for existing shareholders, and deterioration in global biotech funding conditions could make favorable capital raises more difficult and costly. The timing, size, and terms of future capital raises are key variables requiring continuous monitoring by both prospective and existing shareholders."
+    "ko": "NGS 액체생검 매출의 상당 부분이 건강보험 급여 체계에 연동돼 있어, 선별급여 기준이나 본인부담률 조정과 같은 정책 변화가 처방 성장률에 직접적인 영향을 줄 수 있다. 향후 급여 기준이 다시 강화될 경우 매출 성장 속도가 예상보다 늦어질 가능성이 있다.",
+    "en": "A significant portion of NGS liquid biopsy revenue is tied to the national health insurance reimbursement system, so policy changes such as adjustments to selective coverage criteria or co-payment rates can directly affect prescription growth. If reimbursement criteria are tightened further, revenue growth could slow more than expected."
    }
   },
   {
    "cat": {
-    "ko": "글로벌 경쟁 심화 리스크",
-    "en": "Intensifying Global Competition Risk"
+    "ko": "경쟁 및 기술 리스크",
+    "en": "Competitive and Technology Risk"
    },
    "body": {
-    "ko": "가던트헬스·파운데이션메디신·일루미나 등 글로벌 대형 기업들이 풍부한 임상 데이터와 자금력으로 아시아 시장 공략을 강화할 경우 아이엠비디엑스의 시장 포지션이 압박을 받을 수 있다. 알파리퀴드1000의 1,000개 유전자 패널이 현재 스펙 우위를 제공하지만, 경쟁사가 빠르게 따라잡을 경우 기술 차별성이 좁혀질 수 있다. 국내 시장에서도 대형 검진 플랫폼 기업과의 경쟁·협업 구도 변화가 시장 점유율에 영향을 미칠 수 있다.",
-    "en": "Should global leaders such as Guardant Health, Foundation Medicine, or Illumina-backed companies intensify their push into Asian markets with extensive clinical datasets and substantial financial resources, IMBdx's market position could come under meaningful pressure. While AlphaLiquid®1000's ~1,000-gene panel currently offers a specification lead, rapid competitive catch-up would narrow the technical differentiation. In the domestic market, evolving competitive and partnership dynamics with large-scale health screening platform operators could also affect market share."
+    "ko": "국내 싸이토젠, 글로벌 가던트헬스 등 경쟁사들도 유전자 패널 확장과 신제품 출시를 지속하고 있어 기술 경쟁이 심화되고 있다. 신제품(알파리퀴드1000, 캔서파인드 확장판 등)의 임상적 유효성 입증과 상급종합병원 추가 진입이 계획대로 이뤄지지 않을 경우 성장 전략에 차질이 생길 수 있다.",
+    "en": "Competitors such as domestic Cytogen and global Guardant Health continue to expand gene panels and launch new products, intensifying technological competition. If clinical validation of new products such as AlphaLiquid1000 and the expanded CancerFind, or entry into additional tertiary hospitals, does not proceed as planned, growth strategy could be disrupted."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월",
-    "en": "July–August 2026"
+    "ko": "2026년 11월 중(3분기 실적 공시 예상 시점)",
+    "en": "Mid-November 2026 (expected third-quarter results disclosure)"
    },
    "what": {
-    "ko": "2026Q2 실적 발표. 연간 매출 100억원 목표 달성 가시성 및 분기 BEP 전환 여부를 가늠하는 핵심 데이터 포인트로, 2026Q1의 역성장 추세가 반전됐는지 여부를 확인해야 한다.",
-    "en": "2026Q2 earnings release—a pivotal data point to assess whether the full-year KRW 10 billion revenue target remains on track and whether quarterly break-even is approaching; key indicator of whether the 2026Q1 sequential decline was a temporary setback or a trend."
+    "ko": "2026년 2분기에 나타난 영업손실 축소 흐름이 3분기에도 이어지는지, 분기 매출이 다시 상승세로 돌아서는지 확인할 시점이다.",
+    "en": "This is the point to check whether the operating loss narrowing seen in the second quarter of 2026 continues into the third quarter, and whether quarterly revenue turns upward again."
    }
   },
   {
    "when": {
-    "ko": "2026년 2~3분기 중",
-    "en": "Q2–Q3 2026"
+    "ko": "2026년 4분기 중",
+    "en": "Fourth quarter of 2026"
    },
    "what": {
-    "ko": "알파리퀴드1000 글로벌 추가 수주 공시 여부. 태국 출라본 병원 계약 이후 동남아·일본·중남미 신규 계약 및 글로벌 제약사 공동 연구 계약이 단기 매출 증분의 핵심 드라이버가 될 수 있다.",
-    "en": "Additional AlphaLiquid®1000 global contract announcements—new orders from Southeast Asia, Japan, or Latin America and any global pharmaceutical co-research agreements following the Thailand deployment would serve as key near-term revenue drivers to monitor."
+    "ko": "회사가 제시한 2026년 연간 매출 목표(100억원)와 분기 손익분기점 달성 목표의 실현 여부를 가늠할 수 있는 구간이다.",
+    "en": "This period will help gauge whether the company's stated 2026 annual revenue target of KRW 10 billion and its quarterly breakeven goal are being realized."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "H2 2026"
+    "ko": "2026년 하반기 중",
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "캔서파인드 15종 확대 버전 출시 일정 및 대형 건강검진센터 신규 진입 공시 여부. 월 400건 이상 검사 볼륨 안정화 달성 여부가 스크리닝 부문 매출 성장의 구조적 기반이 된다.",
-    "en": "CancerFind 15-cancer-type version launch timeline and new large-scale health screening center contract announcements; stabilization of monthly test volumes above 400 is the foundational metric for structural screening segment revenue growth."
+    "ko": "'한국형 ARPA-H' 과제를 통한 캔서파인드 선별 암종 확대(30종 목표) 진행 상황과 국내 대형 건강검진센터 추가 진입 여부를 확인해야 한다.",
+    "en": "Progress on expanding CancerFind's detectable cancer types to 30 under the Korea-type ARPA-H program, and whether additional entries into major domestic health checkup centers occur, should be monitored."
    }
   },
   {
    "when": {
-    "ko": "2026년 연내",
-    "en": "Within 2026"
+    "ko": "2027년 1월 예정된 ASCO GI 2027 학술대회 전후",
+    "en": "Around the ASCO GI 2027 conference expected in January 2027"
    },
    "what": {
-    "ko": "아스트라제네카 11개국 933명 연구 결과의 학술 발표 여부 및 후속 글로벌 제약사 협력 계약 공시. 데이터 공개 수준과 시장 반응이 글로벌 사업화 모멘텀의 방향성을 결정지을 수 있다.",
-    "en": "Formal publication of the AstraZeneca 11-country/933-patient study results and any resulting additional biopharma partnership announcements; the scope of data disclosure and market reception will be key determinants of global commercialization momentum."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기~2027년 초",
-    "en": "H2 2026–Early 2027"
-   },
-   "what": {
-    "ko": "추가 자본 조달(유상증자·CB 등) 일정 및 규모 공시 여부. 현 현금소진 속도와 2026년 매출 달성도를 감안하면 자금 조달 가능성이 높으며, 조달 방식과 조건이 기존 주주 지분 희석 정도에 직결된다.",
-    "en": "Any capital raise announcements (equity offering, convertible bonds, etc.)—given the current cash burn rate and the degree of 2026 revenue goal attainment, additional funding is probable; the method and terms will directly determine the extent of dilution for existing shareholders."
+    "ko": "아스트라제네카와의 공동연구를 포함한 HRR·MRD 관련 후속 임상 데이터가 추가로 공개될 가능성이 있어, 학회 발표 일정을 통해 기술적 진전을 점검할 필요가 있다.",
+    "en": "Follow-up clinical data related to HRR and MRD, including joint research with AstraZeneca, may be disclosed, making conference presentation schedules useful for checking technical progress."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "아이엠비디엑스는 ctDNA 기반 액체생검이라는 구조적 성장 시장에서 국내 선도적 위치를 확보하고 있으며, 2025년 매출 56% 성장과 알파리퀴드1000·캔서파인드 등 신제품 포트폴리오 구축은 중장기 성장 잠재력을 실질적으로 뒷받침한다. 아스트라제네카 다국가 연구 참여, 한국형 ARPA-H 주관기업 선정, 태국 국립의료기관 수주 등은 기술력의 글로벌 공인이자 파트너십 확대의 기반이 되는 성과다. 그러나 2026Q1 실적은 연간 100억원 목표 달성에 대한 불확실성을 높였고, 영업 현금소진 구조가 지속되는 가운데 추가 자본 조달 필요성이 점차 부각되고 있다. 핵심 관전 포인트는 ①2026 하반기 매출 가속화로 연간 가이던스에 근접할 수 있는지, ②알파리퀴드1000 글로벌 수주가 B2B 매출을 의미 있게 끌어올리는지, ③캔서파인드 검진 볼륨 안정화로 스크리닝 매출이 핵심 성장축으로 자리잡는지 여부다. 7.8%의 낮은 부채비율과 약 252억원의 자기자본은 단기 유동성 위기 가능성을 제어하나, 매출 실현 속도가 기대에 미치지 못하면 희석성 자금 조달이 불가피해질 수 있다. 회사의 기술력과 파이프라인은 분명한 잠재력을 갖추고 있으나, 사업화 실행력의 구체적 증명이 향후 가치 평가의 방향을 좌우할 것이다. 본 리포트는 투자 권유를 목적으로 하지 않으며, 모든 투자 판단과 책임은 투자자 개인에게 있다.",
-   "en": "IMBdx holds a leading domestic position in the structurally high-growth ctDNA liquid biopsy market, and the 56% revenue growth in 2025 combined with a maturing product portfolio—AlphaLiquid®1000, CancerFind, and CancerDetect—provides substantive support for the medium-to-long-term growth thesis. Participation in the AstraZeneca multi-country study, lead-company status on the Korea ARPA-H program, and the Chulabhorn Hospital contract represent global validation of technical capability and a foundation for expanding partnerships. However, 2026Q1 results elevated uncertainty around the full-year KRW 10 billion revenue target, and the continued operating cash burn increasingly highlights the likelihood of additional capital raises. The critical watchpoints are: (1) whether revenue acceleration in H2 2026 brings the annual guidance within reach; (2) whether AlphaLiquid®1000 global order wins meaningfully lift B2B revenue; and (3) whether CancerFind screening volumes stabilize and grow to become a structural revenue driver. The low debt ratio of 7.8% and shareholders' equity of ~KRW 25.2 billion mitigate near-term liquidity risk, but if revenue realization lags expectations, dilutive capital raises become increasingly inevitable. The company's technology and pipeline carry clear long-term potential, yet concrete proof of commercialization execution will be the decisive factor shaping future value assessment. This report is provided for informational purposes only and does not constitute investment advice; all investment decisions and their consequences remain the sole responsibility of the individual investor."
+   "ko": "아이엠비디엑스는 국내에서 암 전주기 제품 포트폴리오를 갖춘 액체생검 기업으로, 2025년 매출은 전년 대비 56% 이상 늘었고 영업손실과 순손실은 3년 연속 축소되는 흐름을 보였다. 다만 확정 매출은 시장에서 제기된 전망치(약 65억원)에 못 미쳤고, 분기별 매출은 뚜렷한 우상향보다는 등락을 반복하는 모습을 보여 성장 경로의 일관성은 아직 검증 단계에 있다. 회사는 2026년 매출 100억원과 분기 손익분기점 달성을 목표로 제시했으며, 알파리퀴드1000·알파리퀴드 브레스트 등 신제품과 아스트라제네카·태국 출라브혼 병원 등과의 협력을 통해 국내외 매출 기반을 넓히고 있다. 동시에 3년 연속 이어진 영업활동현금흐름 적자와 자기자본 감소는 향후 자금조달 부담으로 이어질 수 있는 요인이며, 국내 싸이토젠과 글로벌 가던트헬스 등과의 경쟁, 건강보험 급여 정책 변화도 계속 지켜봐야 할 변수다. 종합적으로 이 회사는 매출 성장과 적자 축소가 동시에 진행되는 국면에 있으나, 목표 달성 여부는 향후 분기 실적으로 확인이 필요한 상태다.",
+   "en": "IMBdx is a Korean liquid biopsy company with a full-cycle cancer product portfolio; its 2025 revenue rose more than 56 percent year over year, and both operating loss and net loss have narrowed for three consecutive years. However, confirmed revenue fell short of a market estimate of around KRW 6.5 billion, and quarterly revenue fluctuated rather than trending steadily upward, leaving the consistency of its growth path still to be verified. The company has set targets of KRW 10 billion in 2026 revenue and quarterly breakeven, and is broadening its domestic and overseas revenue base through new products such as AlphaLiquid1000 and AlphaLiquid Breast and partnerships with AstraZeneca and Chulabhorn Hospital in Thailand. At the same time, three consecutive years of negative operating cash flow and declining equity are factors that could weigh on future financing needs, and competition from domestic Cytogen and global Guardant Health, along with health insurance reimbursement policy changes, remain variables to monitor. Overall, the company is in a phase of simultaneous revenue growth and loss reduction, but whether its targets are achieved will require confirmation through future quarterly results."
   }
  },
  "sources": [
-  "https://pharm.edaily.co.kr/News/Read?newsId=01266086642329640",
-  "https://thevc.kr/imbdx",
-  "https://files-scs.pstatic.net/2026/03/30/EzDPkZS4KZ/AACR%20%EC%82%B0%EC%97%85%EB%B6%84%EC%84%9D%EB%B3%B4%EA%B3%A0%EC%84%9C%20Growth%20Research(26.03.30).pdf",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A461030",
-  "https://m.irgo.co.kr/IR-COMP/461030/%EC%95%84%EC%9D%B4%EC%97%A0%EB%B9%84%EB%94%94%EC%97%91%EC%8A%A4-IR-PAGE",
-  "https://v.daum.net/v/20250307093019250",
   "https://pharm.edaily.co.kr/news/read?newsId=01167686645314440",
+  "https://news.nate.com/view/20240625n05611",
+  "https://pharm.edaily.co.kr/News/Read?newsId=01266086642329640",
   "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02059846645317064",
+  "https://pharm.edaily.co.kr/News/Read?newsId=01436646638960096",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A461030",
+  "https://pharm.edaily.co.kr/News/Read?newsId=01600646638889904&mediaCodeNo=257",
+  "https://pharm.edaily.co.kr/news/read?newsId=01741686642100368",
+  "https://securities.miraeasset.com/bbs/download/2132807.pdf?attachmentId=2132807",
+  "https://m.irgo.co.kr/IR-COMP/461030/",
+  "https://www.seoulexchange.kr/stocks/%EC%95%84%EC%9D%B4%EC%97%A0%EB%B9%84%EB%94%94%EC%97%91%EC%8A%A4-923/",
   "https://www.imbdx.com/",
-  "https://kddf.org/ko/board/research",
   "https://www.jobkorea.co.kr/recruit/co_read/c/inmyblood",
-  "https://imbdx.com/newsroom/media.php?ptype=view&code=media_board&idx=318",
-  "https://www.globalepic.co.kr/view.php?ud=202502031306565056abe7dc9896_29",
-  "https://www.pharmnews.com/news/articleView.html?idxno=257161",
-  "http://m.pharmstock.co.kr/news/articleView.html?idxno=67884",
-  "https://m.thinkpool.com/compDiscuss/cont/1016357",
-  "https://alphasquare.co.kr/home/stock-summary?code=461030"
+  "https://www.jobplanet.co.kr/companies/363654/reviews/%EC%95%84%EC%9D%B4%EC%97%A0%EB%B9%84%EB%94%94%EC%97%91%EC%8A%A4",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260318000610&rcpno=20260318000551&orgid=F&tran=Y&langTpCd=0",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A461030&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
+  "https://alphasquare.co.kr/home/stock-summary?code=461030",
+  "https://m.finance.daum.net/quotes/A461030"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "461030",
  "name": "아이엠비디엑스",
  "name_en": "IMBdx, Inc.",
@@ -232,11 +223,11 @@
   "바이오·제약"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 00:51",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 09:10",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -270,6 +261,23 @@
     "opm": -311.5,
     "roe": -29.5,
     "debt_ratio": 4.9
+   },
+   {
+    "year": 2023,
+    "rev": 4026931213,
+    "op": -7768838247,
+    "np": -10416435627,
+    "np_owner": -10416435627,
+    "equity": 8322586421,
+    "equity_owner": 8322586421,
+    "equity_nci": null,
+    "liab": 1498178008,
+    "cfo": -6231186186,
+    "eps_basic": -1316,
+    "src": "전기 비교치",
+    "opm": -192.9,
+    "roe": -125.2,
+    "debt_ratio": 18.0
    }
   ],
   "quarterly": [
@@ -305,25 +313,29 @@
    }
   ],
   "valuation": {
-   "price": 3015,
-   "mcap": 0.0432,
+   "price": 2910,
+   "mcap": 0.0417,
    "shares": 14334517,
    "total_shares": 14017750,
    "wavg_shares": 14017442,
    "per": null,
    "eps": -538,
-   "pbr": 1.813,
+   "pbr": 1.7498,
    "bps": 1663,
    "roe_ttm": -29.0,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": -7588600747,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.68,
+   "eps_src": "공시",
+   "pbr_krx": 1.62,
    "bps_krx": 1795.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
  }
 }

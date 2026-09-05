@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "서산 공장 정상화 후 수익성 회복 초입 — 전자소재가 관건",
-  "en": "Early-Stage Margin Recovery Post Seosan Ramp — Electronic Materials Hold the Key"
+  "ko": "이익 변동성 속 회복 국면 진입",
+  "en": "Recovering Amid Earnings Volatility"
  },
  "lead": {
-  "ko": "2025년 중반 3개 분기 연속 영업 적자를 딛고 2025년 4분기·2026년 1분기 흑자로 복귀, 서산 신규 공장 정상화 여부가 수익성 회복 속도를 결정할 핵심 변수다.",
-  "en": "After three consecutive quarters of operating losses through mid-2025, InkTec returned to profitability in Q4 2025 and Q1 2026; the pace of the Seosan new plant ramp-up is the pivotal variable for margin recovery."
+  "ko": "잉크테크는 2025년 2~3분기 연속 영업손실을 낸 뒤 2025년 4분기부터 2026년 2분기까지 세 개 분기 연속 흑자로 전환했으나, 연간 영업이익률은 2022년 9.5%에서 2025년 1.0%까지 4년 연속 낮아지는 등 수익성 추세와 최근 분기 회복이 상반된 신호를 보이고 있다.",
+  "en": "InkTec swung to three consecutive quarters of operating and net profit from the fourth quarter of 2025 through the second quarter of 2026 after posting operating losses in the second and third quarters of 2025, even as its annual operating margin fell for four straight years from 9.5% in 2022 to 1.0% in 2025."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 775억원(+4.9% YoY)으로 외형 성장세 유지, 이미지프린팅 51.6%·전자소재 30.6%·프린팅시스템 14.6% 구조",
-   "en": "Revenue reached KRW 77.5 bn in 2025 (+4.9% YoY); segment mix was Image Printing 51.6%, Electronic Materials 30.6%, Printing System 14.6%"
+   "ko": "매출액은 2022년 615억 원에서 2025년 775억 원으로 4년 연속 늘었지만, 같은 기간 영업이익률은 9.5%→1.0%로 계속 낮아졌다.",
+   "en": "Revenue rose for four straight years from KRW 61.5bn in 2022 to KRW 77.5bn in 2025, while the operating margin fell continuously from 9.5% to 1.0% over the same period."
   },
   {
-   "ko": "서산 신공장(480억 투자, 2024년 11월 준공) 초기 가동 비용이 2025년 중반 실적 급락의 주된 원인으로, 2025년 연간 영업이익률은 1.0%까지 하락",
-   "en": "Start-up costs at the Seosan factory (KRW 48 bn investment, completed Nov 2024) drove operating margins down to 1.0% for full-year 2025"
+   "ko": "2025년 2~3분기 연속 적자 이후 4분기부터 2026년 2분기까지 흑자가 이어졌고, 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순이익은 74.2억 원이다.",
+   "en": "After two straight quarters of losses in mid-2025, the company returned to profit from the fourth quarter of 2025 through the second quarter of 2026, with combined owner net income over the most recent four quarters (Q3 2025-Q2 2026) reaching KRW 7.42bn."
   },
   {
-   "ko": "2026년 1분기 영업이익 약 20억원, 전년 동기 대비 뚜렷한 회복세로 서산 공장 정상화 흐름 가시화",
-   "en": "Q1 2026 operating profit recovered to ~KRW 2.0 bn with YoY improvement accelerating, signaling Seosan normalization in progress"
+   "ko": "2025년 4분기 순이익(57.8억 원)이 영업이익(22.1억 원)을 크게 웃돌아 비영업적 요인이 상당 부분 반영됐을 가능성이 있다.",
+   "en": "In the fourth quarter of 2025, net income (KRW 5.78bn) far exceeded operating income (KRW 2.21bn), suggesting a meaningful non-operating item may have been involved."
   },
   {
-   "ko": "EMI 차폐필름 일본 대체 소재 국산화 및 자동차 전장·모바일 공급 확대로 고마진 전자소재 부문 성장 잠재력 보유",
-   "en": "Domestic substitution of Japanese EMI shielding film with automotive and mobile supply expansion offers high-margin upside in the Electronic Materials segment"
+   "ko": "부채비율은 2022년 59.9%에서 2025년 102.0%로 높아지고 영업활동현금흐름은 2022년 68.0억 원에서 2025년 6.8억 원으로 줄어, 외형 성장과 함께 재무 부담도 커졌다.",
+   "en": "The debt ratio rose from 59.9% in 2022 to 102.0% in 2025, while operating cash flow shrank from KRW 6.80bn to KRW 0.68bn, indicating rising financial burden alongside revenue growth."
   },
   {
-   "ko": "부채비율이 2022년 59.9%에서 2025년 102.0%로 상승, 서산 투자 이후 재무 레버리지 및 현금흐름 개선 여부가 주요 모니터링 포인트",
-   "en": "Debt ratio rose from 59.9% in 2022 to 102.0% in 2025 following the Seosan investment; improvement in leverage and operating cash flow is a key watch item"
+   "ko": "2024년 12월 준공된 서산공장을 기반으로 AI 데이터센터·ESS 대상 전자소재 확장을 추진 중이며, 관련 부품 수요 증가가 최근 실적 개선의 배경으로 제시됐다.",
+   "en": "Building on its Seosan plant completed in December 2024, the company is expanding electronic materials for AI data centers and ESS applications, with related demand cited as a driver of recent earnings improvement."
   }
  ],
  "business": {
-  "ko": "잉크테크는 1992년 설립, 2002년 코스닥 상장된 잉크젯 활용기술·인쇄전자 전문 소재 기업이다. 사업은 크게 세 부문으로 나뉜다. 이미지프린팅 사업(매출 비중 51.6%, DART 2025 사업보고서 기준)은 사무용·산업용 디지털 프린팅 잉크를 핵심으로 하며, 전사(승화) 잉크·솔벤트 잉크·에코솔벤트 잉크 등 LFP(대형 포맷 프린터)용 다양한 잉크를 자체 개발·생산한다. 전자소재 및 재료 부문(30.6%)은 투명전자잉크 기반의 Paste Ink, 절연필름, EMI 차폐필름, 인덕터 등을 생산하며, 일본이 독점하던 EMI 차폐필름 소재 국산화를 완료해 스마트폰·자동차 전장용으로 공급을 확대 중이다. 프린팅 시스템 부문(14.6%)은 UV 경화 잉크젯 프린터 브랜드 JETRIX와 UV 잉크로 구성된다. 기타 임대수익이 3.2%를 차지한다. 매출의 50~60%가 수출이며, 영국에 현지 판매법인(InkTec Europe Ltd.)을 두고 90여 개국 120여 개 업체에 'InkTec' 브랜드로 제품을 공급하는 글로벌 판매망을 갖추고 있다. 최대주주는 미원홀딩스(2021년 최대주주 변경)이며, 2024년 12월 경기도 평택 사업장을 충남 서산 인더스밸리로 확장·이전하고 480억원을 투자한 신규 공장 가동을 개시했다. 나노 분산 기술·유무기 합성 기술을 핵심 역량으로 매출의 약 5% 이상을 R&D에 투입하며 121건 이상의 특허를 보유하고 있다.",
-  "en": "InkTec, founded in 1992 and listed on KOSDAQ in 2002, is a specialized materials company in inkjet technology and printed electronics. The business is divided into three segments. Image Printing (51.6% of 2025 revenue, per DART annual report) centers on digital printing inks for office and industrial use, including sublimation/transfer inks, solvent-based inks, and large-format printer (LFP) inks—all developed and manufactured in-house. Electronic Materials (30.6%) produces transparent electronic ink-based Paste Ink, insulation film, EMI shielding film, and inductors; the company has successfully domesticated EMI shielding film materials previously monopolized by Japanese suppliers and is expanding supply into smartphone components and automotive electronics. The Printing System segment (14.6%) comprises JETRIX-branded UV-curable inkjet printers and UV inks. Rental income accounts for the remaining 3.2%. Exports represent 50–60% of total revenue, with a UK sales subsidiary (InkTec Europe Ltd.) and a distribution network spanning 90+ countries and 120+ clients under the InkTec brand. Miwon Holdings became the largest shareholder in 2021. In late 2024, the company completed relocation of its Pyeongtaek plant to Seosan Industryvalley in Chungnam, having invested approximately KRW 48 bn in the new facility. Core competencies include nano-dispersion and organic/inorganic synthesis technologies, with R&D spending consistently above 5% of revenue and a portfolio of 121+ registered patents."
+  "ko": "잉크테크는 1992년 설립된 잉크젯 잉크 및 인쇄전자 소재 전문기업으로, 이미지프린팅·전자소재·프린팅시스템 세 개 사업부문으로 구성돼 있다. 회사는 사무용·산업용 프린터 잉크, 전자소재용 Paste Ink, 절연필름, EMI 차폐필름, 인덕터, UV잉크젯경화프린터 JETRIX 등을 생산·판매한다. 2023년 1분기 기준 공개된 부문별 매출 비중을 보면 이미지프린팅 사업이 65.8%(사무용 잉크 16.3%, 산업용 잉크 34.7%, 미디어 14.8%)로 가장 컸고, 전자소재 및 재료 사업 14.6%, 프린팅 시스템 사업 15.1%, 기타 임대수익이 4.5%를 차지했다. 최근에는 전자소재 사업부문이 AI 데이터센터·ESS 시장 확대에 따른 부품 수요 증가로 주목받고 있으며, AI 서버용 MLCC와 고효율 소재 수요 증가가 언급되고 있다. 회사는 2024년 12월 경기 평택공장을 충남 서산공장으로 이전·준공했으며, 이 신규 공장에는 480억 원이 투자됐다. 서산 신규 공장 가동을 바탕으로 초박막·고신뢰성 전극·기능성 공정용 소재 기술 개발을 추진하며 AI 데이터센터·ESS 등 글로벌 부품 소재 시장에서 양산 판매 확대를 지향하고 있다. 회사는 현재 김정돈·김평수 공동대표 체제로 운영되며, 최대주주는 미원홀딩스다. 경쟁구도를 보면 EMI 차폐필름 글로벌 시장은 (2014년 보도 기준) 일본 다츠다가 점유율 80% 이상을 차지해온 구조였고, 국내에서는 잉크테크 외에 한화L&C·창성·이녹스(현 이녹스첨단소재) 등이 국산화 경쟁에 나선 바 있다.",
+  "en": "Founded in 1992, InkTec is a specialist in inkjet inks and printed-electronics materials organized into three business segments: image printing, electronic materials, and printing systems. The company produces and sells office and industrial printer inks, electronic paste inks, insulation films, EMI shielding films, inductors, and its UV-curable inkjet printer JETRIX. Based on a segment revenue breakdown disclosed for the first quarter of 2023, image printing accounted for 65.8% of sales (office ink 16.3%, industrial ink 34.7%, media 14.8%), followed by electronic materials at 14.6%, printing systems at 15.1%, and other rental income at 4.5%. More recently, the electronic materials segment has drawn attention as component demand tied to the expansion of AI data centers and ESS markets has increased, with rising demand cited for AI server MLCCs and high-efficiency materials. The company relocated its Pyeongtaek plant and completed a new Seosan facility in December 2024, an investment of KRW 48 billion. Leveraging the new Seosan plant, InkTec is pursuing development of ultra-thin, high-reliability electrode and functional process materials, aiming to expand mass-production sales into global component and materials markets such as AI data centers and ESS. The company currently operates under co-CEOs Kim Jeong-don and Kim Pyeong-su, with Miwon Holdings as its largest shareholder. In terms of competitive landscape, the global EMI shielding film market was, as of a 2014 report, dominated by Japan's Tatsuta with over 80% share, while domestically Hanwha L&C, Changsung, and Innox (now Innox Advanced Materials) have pursued localization alongside InkTec."
  },
  "earnings": {
-  "ko": "2022~2025년 연간 매출은 615억원 → 628억원 → 739억원 → 775억원으로 꾸준히 성장했으나, 영업이익률은 9.5%(2022) → 6.1%(2023) → 3.7%(2024) → 1.0%(2025)로 4년 연속 하락했다. 2025년 영업이익은 80억원으로 전년 대비 70% 이상 급감했으며, 영업현금흐름(CFO)도 2024년 629억원에서 2025년 68억원으로 크게 줄었다. 분기별로 살펴보면 서산 공장 초기 가동 부담이 집중된 2025년 3분기에 영업손실 182억원이 발생했고, 2025년 1·2분기도 각각 영업이익 45억원·영업손실 4억원에 그쳐 연간 수익성이 급격히 훼손됐다. 반면 2025년 4분기에는 매출 220억원·영업이익 221억원으로 회복했고, 당기순이익 578억원은 영업이익을 큰 폭으로 상회해 서산 이전 관련 자산 처분 이익 등 비경상 요인이 반영됐을 가능성이 있다. 2026년 1분기는 매출 219억원에 영업이익 199억원으로 전년 동기(영업이익 46억원) 대비 뚜렷한 개선이 이어지고 있다. 부채비율은 서산 투자 영향으로 2022년 59.9%에서 2024년 109.3%까지 상승한 뒤 2025년 102.0%로 소폭 완화됐다. 순이익은 2022년 396억원에서 2025년 251억원으로 감소 추세이나, 2026년 1분기 순이익 166억원은 수익성 회복 신호로 해석된다.",
-  "en": "Annual revenue grew steadily from KRW 61.5 bn (2022) to KRW 77.5 bn (2025), yet operating margins fell for four consecutive years: 9.5% (2022) → 6.1% (2023) → 3.7% (2024) → 1.0% (2025). Full-year 2025 operating profit was KRW 0.8 bn—down more than 70% YoY—while operating cash flow collapsed from KRW 6.3 bn in 2024 to KRW 0.7 bn in 2025. At the quarterly level, the sharpest pain came in Q3 2025, when an operating loss of KRW 1.82 bn was recorded as Seosan start-up costs peaked; Q1 and Q2 2025 also showed minimal profitability (operating profit KRW 455 mn) and operating loss (KRW 43 mn), respectively. A strong rebound emerged in Q4 2025, with revenue of KRW 22.0 bn and operating profit of KRW 2.21 bn; net income of KRW 5.78 bn well exceeded operating profit, suggesting significant non-recurring items—likely asset disposal gains related to the Pyeongtaek-to-Seosan relocation. Q1 2026 continued the recovery trajectory with revenue of KRW 21.9 bn and operating profit of KRW 1.99 bn, a sharp improvement versus Q1 2025's KRW 455 mn. The debt ratio peaked at 109.3% in 2024 before easing to 102.0% in 2025. Net profit declined from KRW 3.96 bn (2022) to KRW 2.51 bn (2025), but Q1 2026 net profit of KRW 1.66 bn signals an earnings recovery path."
+  "ko": "연간 실적을 보면 매출액은 2022년 615.37억 원, 2023년 628.09억 원, 2024년 739.37억 원, 2025년 775.34억 원으로 4년 연속 증가했다. 반면 영업이익률은 같은 기간 9.5%→6.1%→3.7%→1.0%로 매년 낮아져, 외형 성장과 수익성 개선이 엇갈리는 흐름을 보였다. 지배주주 순이익은 2022년 39.63억 원에서 2025년 25.07억 원으로 줄었고, 영업활동현금흐름(CFO)은 2022년 68.02억 원에서 2025년 6.83억 원으로 크게 축소됐다. 분기 흐름을 보면 2025년 2분기 영업손실 0.43억 원, 3분기 영업손실 18.17억 원으로 두 개 분기 연속 적자를 냈고, 순이익도 각각 -9.87억 원, -21.49억 원의 손실을 기록했다. 이후 2025년 4분기 매출 219.67억 원, 영업이익 22.07억 원으로 흑자 전환했는데, 순이익은 57.79억 원으로 영업이익 대비 큰 폭으로 늘어나 일회성 비영업 요인이 반영됐을 가능성을 시사한다. 2026년 1분기(매출 219.35억 원, 영업이익 19.87억 원, 순이익 16.55억 원)와 2분기(매출 233.12억 원, 영업이익 23.80억 원, 순이익 21.39억 원)는 흑자 기조를 이어가며 매출이 세 개 분기 연속 200억 원을 넘어섰다. 이 같은 개선의 배경으로는 이미지프린팅 부문의 고부가가치 잉크 개발과 동남아·서남아 점유율 확대, DTF 솔루션 다변화, 그리고 전자소재 부문의 AI 데이터센터·ESS 시장 확대에 따른 부품 수요 증가가 꼽힌다. 결과적으로 2025년 3분기부터 2026년 2분기까지 최근 네 개 분기 합산 지배주주 순이익은 74.24억 원으로, 2025년 상반기의 부진을 하반기 이후 회복이 상당 부분 상쇄한 모습이다.",
+  "en": "Annual revenue rose for four consecutive years, from KRW 61.54bn in 2022 to KRW 62.81bn in 2023, KRW 73.94bn in 2024, and KRW 77.53bn in 2025. Over the same period, however, the operating margin declined every year, from 9.5% to 6.1% to 3.7% to 1.0%, showing a divergence between top-line growth and profitability. Owner net income fell from KRW 3.96bn in 2022 to KRW 2.51bn in 2025, and operating cash flow shrank sharply from KRW 6.80bn in 2022 to KRW 0.68bn in 2025. On a quarterly basis, the company posted an operating loss of KRW 0.043bn in the second quarter of 2025 and a larger operating loss of KRW 1.82bn in the third quarter, with net losses of KRW 0.99bn and KRW 2.15bn, respectively, for two consecutive loss-making quarters. It then swung to profit in the fourth quarter of 2025, with revenue of KRW 21.97bn and operating income of KRW 2.21bn, while net income reached KRW 5.78bn—far exceeding operating income and suggesting a meaningful non-operating item was involved. The first quarter of 2026 (revenue KRW 21.93bn, operating income KRW 1.99bn, net income KRW 1.66bn) and second quarter (revenue KRW 23.31bn, operating income KRW 2.38bn, net income KRW 2.14bn) continued the profitable trend, with revenue exceeding KRW 20bn for three straight quarters. The improvement has been attributed to high-value-added ink development, expanded market share in Southeast and South Asia, diversified DTF solutions in the image printing segment, and rising component demand tied to the expansion of AI data center and ESS markets in the electronic materials segment. As a result, combined owner net income over the most recent four quarters from the third quarter of 2025 through the second quarter of 2026 reached KRW 7.42bn, with the recovery in the second half largely offsetting the weakness seen in the first half of 2025."
  },
  "industry": {
-  "ko": "글로벌 디지털 프린팅 시장은 DTF(Direct-to-Film) 및 섬유용 전사 잉크 수요를 중심으로 성장세를 유지하고 있으며, 잉크테크가 신규 개발 중인 DTF 솔루션(잉크·소재)은 이 흐름의 수혜 가능성이 있다. 반면 사무용 잉크젯 시장은 레이저 프린터 보급 확대, 모바일·클라우드 서비스 활성화 등 구조적 역풍에 직면해 있어 이미지프린팅 사업부 성장에 제한 요인으로 작용한다. 전자소재 부문의 핵심인 EMI 차폐필름 시장은 일본 타츠다가 글로벌 점유율 80% 이상을 차지하던 구조였으나, 5G·IoT 확산 및 전장화 가속에 따른 수요 증가와 국산화 트렌드가 맞물리면서 국내 업체들의 진입 기회가 확대되고 있다. 경쟁사로는 인쇄전자 분야의 엔젯, EMI 차폐필름 분야의 이녹스첨단소재 등이 있으며, 중국 저가 업체들의 시장 잠식도 진행 중이다. 은(Ag)·구리(Cu) 등 원자재 가격 변동은 전자소재 및 이미지프린팅 양 사업부의 원가 구조에 직접 영향을 미치는 상시 리스크다. 수출 비중이 50~60%에 달하는 구조상, 환율 변동 및 글로벌 경기 사이클에 대한 민감도도 상당한 편이다.",
-  "en": "The global digital printing market continues to expand, led by DTF (Direct-to-Film) and textile sublimation ink demand—areas where InkTec's newly developed DTF solutions (inks and materials) are positioned to benefit. In contrast, the office inkjet printer market faces structural headwinds from laser printer proliferation and the broader shift to mobile and cloud services, limiting upside for the Image Printing segment. In electronic materials, the EMI shielding film market has historically been dominated by Japan's Tatsuda (80%+ global share), but growing 5G/IoT and automotive electrification demand, combined with a domestic substitution trend, is opening meaningful inroads for Korean manufacturers. Key domestic competitors include Enjet (printed electronics) and INNOX Advanced Materials (EMI shielding film), while Chinese low-cost producers are also gaining ground. Commodity price swings in silver (Ag) and copper (Cu) pose a persistent cost-structure risk across both the Electronic Materials and Image Printing segments. With exports accounting for 50–60% of sales, the company carries meaningful sensitivity to global business cycles and currency movements."
+  "ko": "전방 시장인 사무용 잉크젯 프린터 수요는 구조적으로 정체된 반면, 산업용 실사(LFP) 잉크와 섬유 날염(DTF) 등 응용 분야에서는 성장 여지가 남아 있다는 평가가 있다. 회사는 서산 신규 공장 가동을 바탕으로 초박막·고신뢰성 전극·기능성 공정용 소재 기술 개발을 추진하며, AI 데이터센터·ESS 등 글로벌 부품 소재 시장에서 양산 판매 확대를 지향하고 있다. 전자소재 사업부문은 AI 데이터센터, ESS 시장 확대에 따른 부품 수요 증가로 수익성이 개선되었으며, AI 서버용 MLCC와 고효율 소재 수요가 증가하고 있다. EMI 차폐필름 시장은 (2014년 보도 기준) 일본 다츠다가 점유율 80% 이상을 차지해온 구조였고, 잉크테크·한화L&C·창성·이녹스 등 국내 전자소재 업체들이 선두인 일본 업체 추격에 나선 흐름이 이어져 왔다. 이미지프린팅 사업은 저가 경쟁이 상존하는 영역으로, 회사는 프리미엄 잉크 중심의 판매 전략과 동남아·서남아 지역 점유율 확대로 대응하고 있다. 규모 면에서는 국내 대형 전자소재 업체 대비 매출·자본 규모가 작아, 특정 응용처·고객 의존도가 상대적으로 높을 수 있는 구조다. 서산 신공장 가동 2년차에 접어드는 만큼, 고부가 제품 비중 확대와 가동률 안정화가 향후 산업 내 포지셔닝을 결정할 변수로 남아 있다.",
+  "en": "Demand for office inkjet printers in the downstream market appears structurally stagnant, while industrial large-format printing (LFP) inks and digital textile printing (DTF) applications are seen as offering more room for growth. Building on the operation of its new Seosan plant, the company is pursuing development of ultra-thin, high-reliability electrode and functional process materials, aiming to expand mass-production sales into global component and materials markets such as AI data centers and ESS. The electronic materials segment has seen improved profitability from rising component demand tied to the expansion of AI data center and ESS markets, along with growing demand for AI server MLCCs and high-efficiency materials. The global EMI shielding film market was, as of a 2014 report, dominated by Japan's Tatsuta with over 80% share, and domestic electronic materials makers including InkTec, Hanwha L&C, Changsung, and Innox pursued efforts to catch up with the leading Japanese firms in a trend that has continued since. The image printing business remains exposed to low-cost competition, and the company has responded with a premium-ink-focused sales strategy and expanded share in Southeast and South Asia. In terms of scale, InkTec is smaller in revenue and capital than large domestic electronic materials peers, which can mean relatively higher dependence on specific applications or customers. As the new Seosan plant enters its second year of operation, expanding the share of higher value-added products and stabilizing utilization remain key variables for the company's industry positioning going forward."
  },
  "outlook": {
-  "ko": "서산 공장은 2024년 11월 준공 이후 초기 가동 비용 부담이 2025년 중반까지 실적을 압박했으나, 2025년 4분기와 2026년 1분기의 영업이익 개선은 공장 정상화가 궤도에 오르고 있음을 시사한다. 회사는 서산 공장 정상화를 통한 생산성 향상, 이미지프린팅 사업의 동남아·서남아 시장 진출 확대, 유럽 재진입을 위한 영업 강화를 추진 방향으로 제시하고 있다. DTF 관련 솔루션(잉크와 소재)의 생산성 강화와 시장 확대 노력도 공식 자료에서 확인된 추진 방향이다. EMI 차폐필름 부문에서는 스마트폰 부품용·자동차 전장용 공급 채널을 동시에 확대하는 전략을 지속하고 있으며, 인쇄전자 응용 제품 포트폴리오 다변화도 중장기 과제로 진행 중이다. 연간 약 300억원의 생산 능력을 갖춘 서산 공장이 풀가동에 도달할 경우 전자소재 부문 매출 기여가 확대될 것으로 기대된다. 부채비율 100% 이상의 재무 부담을 감안할 때, 영업현금흐름의 실질적 회복이 자본 구조 개선의 선결 조건이 될 전망이다. 배당은 최근 공시 기준 무배당 상태를 유지하고 있어, 수익성 회복이 배당 재개 여부에도 영향을 줄 수 있다.",
-  "en": "The Seosan factory, completed in November 2024, weighed on results through mid-2025 due to start-up costs, but the operating profit improvements in Q4 2025 and Q1 2026 suggest the ramp-up is gaining traction. Officially stated strategic priorities include boosting productivity through Seosan normalization, expanding the Image Printing business into Southeast and South Asian markets, and strengthening sales efforts for European re-entry. Development and production scale-up of DTF-related solutions (inks and materials) for market expansion are also confirmed priorities per public disclosures. In EMI shielding film, the company continues to pursue simultaneous supply channel expansion for both smartphone components and automotive electronics, with diversification of the printed electronics application portfolio as a medium-term agenda. Once the Seosan plant—with annual production capacity of approximately KRW 30 bn—reaches full utilization, a larger contribution from the Electronic Materials segment is expected. Given the current debt ratio above 100%, a meaningful recovery in operating cash flow is a prerequisite for improving the capital structure. The company currently pays no dividend; profitability recovery will likely determine when a dividend policy is revisited."
+  "ko": "회사는 서산 신규 공장 가동을 바탕으로 초박막·고신뢰성 전극·기능성 공정용 소재 기술 개발을 추진하며, AI 데이터센터·ESS 등 글로벌 부품 소재 시장에서 양산 판매 확대를 지향하고 있다고 밝혔다. 2026년 1분기 실적 개선은 이미지프린팅 사업부문에서 고부가가치 잉크 개발과 동남아·서남아 점유율 확대, DTF 솔루션 다변화가 주된 배경으로 제시됐다. 전자소재 사업부문 역시 AI 데이터센터, ESS 시장 확대에 따른 부품 수요 증가로 수익성이 개선된 것으로 설명됐다. 2026년 2분기까지 매출과 영업이익이 개선세를 이어간 점은 이러한 방향성과 궤를 같이한다. 다만 이번 조사에서 구체적인 수주액이나 증설 규모를 시장에 공시한 사례는 뚜렷하게 확인되지 않아, 향후 실적 개선의 지속 여부는 분기별 공시를 통해 재확인이 필요하다. 서산공장은 2024년 12월 준공돼 가동 2년차에 접어들고 있어, 가동률 안정화와 신규 라인 투자 여부가 향후 원가구조에 영향을 줄 수 있는 변수로 남아 있다. 2025년 하반기 이후 나타난 흑자 전환 흐름이 2025년 4분기에 관찰된 순이익-영업이익 격차와 같은 일회성 요인을 제외하고도 이어질 수 있는지는 다음 분기 공시에서 확인이 필요하다.",
+  "en": "The company has stated that, building on the operation of its new Seosan plant, it is pursuing development of ultra-thin, high-reliability electrode and functional process materials, aiming to expand mass-production sales into global component and materials markets such as AI data centers and ESS. The improvement in first-quarter 2026 results was attributed mainly to high-value-added ink development, expanded share in Southeast and South Asia, and diversified DTF solutions in the image printing segment. The electronic materials segment's profitability was also said to have improved on rising component demand tied to the expansion of AI data center and ESS markets. The continued improvement in revenue and operating income through the second quarter of 2026 is broadly consistent with this stated direction. That said, this research did not clearly identify specific disclosed order values or capacity-expansion figures, so whether the earnings improvement continues should be reconfirmed through subsequent quarterly filings. With the Seosan plant, completed in December 2024, now entering its second year of operation, utilization stabilization and any further line investment remain variables that could affect the future cost structure. Whether the profit-turnaround trend seen since the second half of 2025 can persist independent of the kind of one-off factor observed in the fourth quarter of 2025—where net income far exceeded operating income—will need to be verified in upcoming quarterly disclosures."
  },
  "valuation_comment": {
-  "ko": "주가는 주당순자산(BPS 4,050원) 대비 할인된 구간에서 거래되고 있으며, 이는 최근 수익성 훼손과 높아진 재무 레버리지가 시장에서 할인 요인으로 반영된 결과로 해석된다. 주당순이익(EPS 219원)에 기반한 현재 이익 배수는 최근 수년간 이익이 크게 하락했던 시기의 역사적 고배율(5년 평균치가 훨씬 높은 수준으로 형성됐던 구간)과 비교할 때 상당히 낮아진 수준으로 수렴해 있다. 다만 2025년 중반까지의 분기 적자·저이익 기간이 이익 배수 산정 기반을 낮춰, 수익성이 본격 회복될 경우 실적 기반 재평가 여지가 존재한다. 배당수익률은 무배당 상태로 업종 평균을 하회한다. 향후 밸류에이션의 방향성은 서산 공장 정상화에 따른 영업이익률 회복 속도, 전자소재 부문 매출 성장, 부채비율 개선 여부가 복합적으로 결정할 것이다.",
-  "en": "The stock is currently trading at a discount to book value per share (BPS KRW 4,050), reflecting the market's discounting of the recent profitability downturn and elevated financial leverage. The current earnings multiple based on EPS (KRW 219) has converged to levels meaningfully below the historical multi-year average—a period when the company commanded far higher multiples during stronger earnings cycles. However, since the calculation base was suppressed by quarterly losses and near-zero profits through mid-2025, a genuine earnings recovery could support a reassessment of the implied multiple. The dividend yield is zero, below sector norms. The trajectory of valuation will likely be shaped by a combination of operating margin recovery from Seosan normalization, Electronic Materials segment revenue growth, and progress in reducing financial leverage."
+  "ko": "주가순자산비율은 순자산 대비 할인 구간에서 형성돼 있어, 시장가치가 회계상 자기자본보다 낮게 매겨져 있는 모습이다. 주가수익비율은 2022년부터 2025년까지 4년 연속 이어진 영업이익률 하락과 순이익 축소를 반영해 과거 거래 밴드 내에서 움직인 사례가 있었으나, 이후 분기 실적이 적자에서 흑자로 전환되며 이익 기준 자체가 달라지고 있다. 배당 측면에서는 최근 공시 기준 주당 현금배당 내역이 확인되지 않아, 배당수익률에 기반한 비교는 어렵다. 결국 밸류에이션 지표는 2025년 하반기 이후 나타난 이익 회복이 일회성에 머무는지, 구조적 개선으로 이어지는지에 따라 그 해석이 달라질 수 있는 구간에 있다고 볼 수 있다.",
+  "en": "The price-to-book ratio sits in a range that implies a discount to accounting net assets, meaning the market value is set below book equity. The price-to-earnings ratio has, at times, moved within past trading ranges reflecting the operating margin decline and shrinking net income seen continuously from 2022 through 2025, but the earnings base itself is now shifting following the swing from quarterly losses to profits. On the dividend side, no per-share cash dividend has been confirmed in recent disclosures, making a dividend-yield-based comparison difficult. Ultimately, valuation metrics sit in a range whose interpretation may differ depending on whether the profit recovery seen since the second half of 2025 proves to be temporary or evolves into a more structural improvement."
  },
  "bull": [
   {
    "title": {
-    "ko": "서산 공장 정상화 → 영업레버리지 회복",
-    "en": "Seosan Factory Normalization Drives Operating Leverage Recovery"
+    "ko": "세 개 분기 연속 흑자 전환",
+    "en": "Three Straight Quarters of Profit"
    },
    "body": {
-    "ko": "480억원을 투자한 서산 신공장이 2024년 11월 준공 후 가동 초기 비용을 반영했으며, 2025년 4분기·2026년 1분기 영업이익 회복이 이를 방증한다. 서산 공장 연간 생산 능력은 약 300억원 규모로, 가동률이 올라갈수록 단위당 고정비가 낮아지는 영업레버리지 효과가 기대된다. 매출이 꾸준히 늘고 있는 가운데 원가 구조가 개선되면 과거 9%대 영업이익률에 근접하는 경로도 배제하기 어렵다.",
-    "en": "The KRW 48 bn Seosan plant completed in November 2024 absorbed heavy start-up costs, but the operating profit recoveries in Q4 2025 and Q1 2026 confirm the ramp-up is progressing. With annual production capacity of approximately KRW 30 bn, rising utilization should deliver meaningful fixed-cost absorption benefits. As revenue continues to grow and the cost structure improves, a path back toward the historically high single-digit operating margins is not inconceivable."
+    "ko": "2025년 4분기부터 2026년 2분기까지 영업이익과 순이익이 모두 흑자를 유지했고, 매출도 세 개 분기 연속 200억 원을 넘어섰다. 이미지프린팅 부문의 고부가 잉크·DTF 솔루션 다변화와 동남아·서남아 시장 점유율 확대가 매출 성장을 이끌었다. 전자소재 부문은 AI 데이터센터·ESS 대상 부품 수요 증가로 수익성 개선에 기여했다.",
+    "en": "From the fourth quarter of 2025 through the second quarter of 2026, both operating and net income remained positive, with revenue exceeding KRW 20bn for three consecutive quarters. High-value-added ink development and diversified DTF solutions in the image printing segment, along with expanded market share in Southeast and South Asia, drove revenue growth. The electronic materials segment contributed to improved profitability through rising demand for components tied to AI data centers and ESS."
    }
   },
   {
    "title": {
-    "ko": "EMI 차폐필름 일본 대체 수혜 — 전자소재 고마진 성장 잠재력",
-    "en": "Japanese EMI Film Substitution — High-Margin Electronic Materials Upside"
+    "ko": "서산 신공장 기반 고부가 소재 확장",
+    "en": "Higher Value-Added Materials Expansion via Seosan Plant"
    },
    "body": {
-    "ko": "잉크테크는 일본 독점이던 EMI 차폐필름 소재를 국산화해 스마트폰 부품·자동차 전장용으로 공급을 확대하고 있다. 5G·IoT 확산과 자율주행 전장화 가속에 따라 EMI 차폐 소재 수요는 구조적으로 증가하는 추세다. 전도성 본딩 필름 등 인접 소재로의 포트폴리오 확장 계획도 병행되고 있어, 전자소재 부문이 고마진 성장 엔진으로 자리 잡을 경우 전사 수익성에 큰 기여를 할 수 있다.",
-    "en": "InkTec has successfully domesticated EMI shielding film materials previously monopolized by Japanese suppliers and is expanding supply into smartphone components and automotive electronics. Structural demand growth driven by 5G/IoT proliferation and accelerating automotive electrification underpins the segment. With adjacent materials such as conductive bonding film also under development, the Electronic Materials segment could evolve into a high-margin growth engine with significant positive implications for company-wide profitability."
+    "ko": "2024년 12월 준공된 서산공장에는 480억 원이 투입됐으며, 이를 기반으로 초박막·고신뢰성 전극 소재 등 고부가 제품 개발을 추진하고 있다. AI 데이터센터·ESS 등 신규 응용처로의 판매 확대는 기존 이미지프린팅 중심 매출 구조를 다변화할 잠재력을 지닌다. 신공장 가동이 안정화될 경우 생산 효율성 측면에서도 개선 여지가 있다.",
+    "en": "The Seosan plant, completed in December 2024, involved an investment of KRW 48 billion and is the base for developing higher value-added products such as ultra-thin, high-reliability electrode materials. Expanding sales into new applications such as AI data centers and ESS has the potential to diversify a revenue structure that has historically centered on image printing. If utilization at the new plant stabilizes, there is also room for improved production efficiency."
    }
   },
   {
    "title": {
-    "ko": "DTF·섬유 디지털 프린팅 신시장 진입",
-    "en": "Entry into DTF and Textile Digital Printing Growth Markets"
+    "ko": "다각화된 사업 포트폴리오와 기술 자산",
+    "en": "Diversified Portfolio and Technology Assets"
    },
    "body": {
-    "ko": "글로벌 섬유 디지털 프린팅 시장은 DTF(Direct-to-Film) 방식을 중심으로 빠르게 성장하고 있으며, 잉크테크는 DTF 관련 잉크·소재 솔루션 개발을 공식 전략으로 추진 중이다. 20년 이상 축적된 잉크 조성 및 분산 기술을 DTF 시장에 적용할 경우 기존 이미지프린팅 사업의 성숙화를 보완하는 새로운 성장축이 마련될 수 있다. 90여 개국에 구축된 기존 유통망을 활용하면 신제품 시장 진입 속도를 높일 수 있다는 점도 강점이다.",
-    "en": "The global textile digital printing market is growing rapidly, centered on DTF (Direct-to-Film) technology, and InkTec has identified DTF ink and materials solutions as an official strategic priority. Applying more than 20 years of accumulated ink formulation and dispersion technology to the DTF market could provide a new growth pillar to offset maturation in the conventional Image Printing business. The existing distribution network across 90+ countries offers a meaningful channel advantage for accelerating new product market entry."
+    "ko": "1992년 설립 이후 30년 이상 쌓은 잉크젯·인쇄전자 기술력을 바탕으로 다수의 특허를 보유하고 있다. EMI 차폐필름 등 일본 업체가 오랜 기간 점유해온 영역에 국산화로 진입한 사례가 있다. 이미지프린팅·전자소재·프린팅시스템으로 나뉜 사업 구조는 특정 응용처 의존도를 낮추는 요인이 될 수 있다.",
+    "en": "Built on more than three decades of inkjet and printed-electronics technology since its 1992 founding, the company holds numerous patents. It has a track record of localizing products such as EMI shielding films in segments long dominated by Japanese firms. Its business structure, split across image printing, electronic materials, and printing systems, can help lower dependence on any single application."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "영업이익률 4년 연속 하락 — 비용 압박 구조적 위험",
-    "en": "Four Consecutive Years of Margin Erosion — Structural Cost Pressure Risk"
+    "ko": "4년 연속 이어진 수익성 하락",
+    "en": "Four Straight Years of Margin Decline"
    },
    "body": {
-    "ko": "2022년 9.5%였던 영업이익률이 2025년 1.0%까지 꾸준히 하락했다. 서산 공장 이전이라는 일회성 요인 외에도 원자재(은·구리) 가격 상승, 중국 저가 경쟁 심화 등 구조적 원가 부담이 복합적으로 작용하고 있다. 2026년 1분기 OPM이 9%대로 반등했으나 이를 지속 유지할 수 있을지에 대한 검증이 필요하다.",
-    "en": "Operating margins declined steadily from 9.5% in 2022 to 1.0% in 2025. Beyond the one-time impact of the Seosan relocation, structural cost pressures—including raw material (Ag, Cu) price inflation and intensifying competition from low-cost Chinese producers—have compounded the margin drag. While Q1 2026 operating margins rebounded sharply, the durability of this recovery requires further validation."
+    "ko": "영업이익률은 2022년 9.5%에서 2025년 1.0%로 4년 연속 낮아졌고, 지배주주 순이익도 같은 기간 39.63억 원에서 25.07억 원으로 줄었다. 매출 성장에도 원가·비용 부담이 커지며 이익 레버리지가 약화된 모습이다. 2025년 2~3분기에는 두 개 분기 연속 영업손실을 기록하며 변동성이 컸다.",
+    "en": "The operating margin fell for four consecutive years, from 9.5% in 2022 to 1.0% in 2025, while owner net income declined from KRW 3.96bn to KRW 2.51bn over the same period. Despite revenue growth, rising cost and expense burdens weakened profit leverage. The company posted operating losses in both the second and third quarters of 2025, reflecting significant volatility."
    }
   },
   {
    "title": {
-    "ko": "재무 레버리지 상승 및 현금흐름 약화",
-    "en": "Elevated Financial Leverage and Weakened Cash Flow"
+    "ko": "재무구조 부담 증가",
+    "en": "Rising Balance-Sheet Burden"
    },
    "body": {
-    "ko": "부채비율이 2022년 59.9%에서 2025년 102.0%로 상승하며 재무 안정성이 약화됐다. 2025년 영업현금흐름은 68억원으로 전년(629억원) 대비 90% 가까이 감소했으며, 이는 이자 부담·자본 지출 충당 능력을 제한한다. 무배당 정책이 지속되는 가운데 투자자에 대한 현금 환원이 실질적으로 부재한 상황이다.",
-    "en": "The debt ratio climbed from 59.9% in 2022 to 102.0% in 2025, signaling meaningful deterioration in financial stability. Operating cash flow fell nearly 90% in 2025 to KRW 0.68 bn from KRW 6.29 bn in 2024, limiting the company's capacity to cover interest expenses and capital expenditure from internal cash generation. With no dividends paid, shareholder cash returns are effectively absent."
+    "ko": "부채비율이 2022년 59.9%에서 2025년 102.0%로 3년 만에 크게 높아졌다. 영업활동현금흐름은 2022년 68.02억 원에서 2025년 6.83억 원으로 크게 줄어, 현금창출력이 약화됐다. 서산공장 이전·신설 등 투자 부담이 재무구조에 영향을 준 것으로 추정된다.",
+    "en": "The debt ratio rose sharply from 59.9% in 2022 to 102.0% in 2025 over just three years. Operating cash flow shrank markedly from KRW 6.80bn to KRW 0.68bn over the same period, indicating weaker cash generation. Investment related to relocating and building the Seosan plant is presumed to have affected the balance sheet."
    }
   },
   {
    "title": {
-    "ko": "이미지프린팅 구조적 수요 축소 및 글로벌 경기 민감도",
-    "en": "Structural Demand Decline in Image Printing and Global Cycle Sensitivity"
+    "ko": "일회성 요인에 의존한 이익 회복 가능성",
+    "en": "Possibility Recovery Rests on a One-Off Item"
    },
    "body": {
-    "ko": "잉크젯 사무용 프린터 시장은 레이저 프린터 대중화·모바일·클라우드 확산으로 구조적 위축 국면에 있어 이미지프린팅 부문(매출 비중 51.6%) 성장에 제한이 불가피하다. 수출이 매출의 50~60%를 차지해 글로벌 경기 침체·환율 변동에 취약하며, 특히 동남아·서남아 신흥 시장 진출 확대 전략은 해당 지역 경기 리스크와 맞닿아 있다.",
-    "en": "The office inkjet printer market faces structural contraction driven by laser printer adoption and the digitalization-to-mobile/cloud shift, creating an inherent ceiling on growth for the Image Printing segment (51.6% of revenue). Export dependency (50–60% of sales) leaves the company exposed to global economic downturns and currency volatility; the strategy of expanding into Southeast and South Asian emerging markets carries its own regional economic risk."
+    "ko": "2025년 4분기 순이익(57.79억 원)은 같은 기간 영업이익(22.07억 원)을 크게 상회해, 비영업적 요인이 상당 부분 반영됐을 가능성이 있다. 최근 분기 흑자 전환이 영업 본연의 구조적 개선인지, 일시적 요인에 따른 것인지는 추가 확인이 필요하다. 소형주 특성상 실적 변동성이 상대적으로 크게 나타날 수 있다.",
+    "en": "In the fourth quarter of 2025, net income (KRW 5.78bn) far exceeded operating income (KRW 2.21bn), suggesting a non-operating item may have accounted for a significant portion. Whether the recent quarterly profit turnaround reflects genuine operational improvement or a temporary factor requires further confirmation. As a small-cap company, InkTec may exhibit relatively large earnings volatility."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "원자재·원가 리스크",
-    "en": "Raw Material and Cost Risk"
+    "ko": "업황·경쟁 리스크",
+    "en": "Industry and Competitive Risk"
    },
    "body": {
-    "ko": "잉크 및 전자소재 제조에 사용되는 은(Ag)·구리(Cu) 등 금속 원자재 가격의 변동은 매출 원가에 직접 연동된다. 인플레이션 국면에서의 원가 상승이 이미 지난 수년간 마진 압박의 주요 요인이었으며, 원자재 가격이 재상승하면 회복 궤도가 다시 꺾일 수 있다. 원가 절감 기술 개발과 공급망 다변화가 지속적으로 요구된다.",
-    "en": "Metal raw material prices—particularly silver (Ag) and copper (Cu) used in ink and electronic material production—have a direct impact on cost of goods sold. Raw material inflation has been a primary driver of margin compression over the past several years; any renewed price surge could derail the ongoing recovery trajectory. Continuous efforts in cost-reduction technology and supply-chain diversification are required."
+    "ko": "이미지프린팅 사업은 저가 경쟁에 노출돼 있고, 사무용 잉크젯 프린터 수요는 구조적으로 정체된 영역으로 평가된다. 전자소재 부문 역시 일본 업체가 오랜 기간 점유한 EMI 차폐필름 시장에서 경쟁이 이어지고 있다. 신규 응용처(AI 데이터센터·ESS)로의 확장이 기존 경쟁 압력을 완전히 상쇄하지 못할 가능성도 있다.",
+    "en": "The image printing business is exposed to low-cost competition, and demand for office inkjet printers is viewed as a structurally stagnant area. The electronic materials segment also continues to face competition in the EMI shielding film market, long dominated by Japanese firms. Expansion into new applications such as AI data centers and ESS may not fully offset these existing competitive pressures."
    }
   },
   {
    "cat": {
-    "ko": "수출 의존도 및 환율·지정학 리스크",
-    "en": "Export Dependency, FX, and Geopolitical Risk"
+    "ko": "재무 리스크",
+    "en": "Financial Risk"
    },
    "body": {
-    "ko": "매출의 50~60%를 차지하는 수출 구조상, 원/달러 환율 등 주요 통화 변동이 손익에 직접 영향을 준다. 특히 중국·동남아 매출 비중이 높은 만큼, 미·중 무역 갈등 심화나 해당 지역 경기 둔화는 판매량 급감으로 이어질 수 있다. 영국 법인 운영에 따른 파운드화 환리스크도 관리 대상이다.",
-    "en": "Given that 50–60% of revenue comes from exports, movements in key exchange rates—particularly the KRW/USD—have a direct P&L impact. With meaningful exposure to China and Southeast Asia, an escalation in US-China trade tensions or a regional growth slowdown could cause sharp volume declines. The UK subsidiary also introduces British pound currency risk that requires ongoing management."
+    "ko": "부채비율이 100%를 상회하는 수준까지 높아졌고, 영업활동현금흐름이 크게 줄어든 만큼, 향후 투자 재원 조달이나 금리 환경 변화에 따른 부담이 커질 수 있다. 이익창출력이 약화된 상태에서 추가 시설투자가 필요할 경우 외부 자금조달 의존도가 높아질 가능성이 있다.",
+    "en": "With the debt ratio now above 100% and operating cash flow sharply reduced, the company could face greater burden from future funding needs or changes in the interest-rate environment. If additional facility investment becomes necessary while profit generation remains weak, reliance on external financing could increase."
    }
   },
   {
    "cat": {
-    "ko": "서산 공장 정상화 지연 및 경쟁 심화 리스크",
-    "en": "Seosan Ramp-Up Delay and Competitive Intensification Risk"
+    "ko": "실적 변동성 리스크",
+    "en": "Earnings Volatility Risk"
    },
    "body": {
-    "ko": "서산 공장 가동 정상화가 예상보다 지연되거나 수율·생산성이 기대치에 미치지 못할 경우, 고정비 부담이 재차 실적을 압박할 수 있다. EMI 차폐필름 분야는 이녹스첨단소재·일본 타츠다 등 강력한 경쟁자가 포진해 있어 점유율 확보가 쉽지 않으며, 중국 저가 업체의 인쇄전자 소재 시장 잠식도 지속되고 있다. 기술 경쟁 가속으로 R&D 투자 효율이 낮아지면 특허 기반 경쟁 우위가 희석될 위험도 있다.",
-    "en": "If the Seosan factory ramp-up is delayed or if yield and productivity fall short of expectations, fixed-cost burdens could re-emerge as a drag on earnings. The EMI shielding film segment faces formidable competitors including INNOX Advanced Materials and Japan's Tatsuda, making market share capture challenging. Chinese low-cost manufacturers continue to erode the printed electronics materials market. Intensifying technological competition also risks diluting InkTec's patent-based competitive advantages if R&D efficiency declines."
+    "ko": "최근 네 개 분기 합산 순이익에는 2025년 4분기의 비영업적 요인으로 추정되는 대규모 순이익이 포함돼 있어, 해당 요인이 소멸될 경우 향후 분기 실적이 눈에 띄게 낮아질 수 있다. 매출 규모가 크지 않은 소형주 특성상 특정 고객·품목의 수요 변화가 실적에 미치는 영향이 상대적으로 크다.",
+    "en": "Combined net income over the most recent four quarters includes a large fourth-quarter-2025 figure presumed to reflect a non-operating factor; if that factor does not recur, future quarterly results could appear noticeably lower. As a smaller-revenue company, InkTec may be relatively more affected by demand changes at specific customers or in specific product lines."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순 (2026년 2분기 실적 발표)",
-    "en": "Mid-August 2026 (Q2 2026 Earnings Release)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 1분기에 확인된 영업이익 회복세가 2분기에도 유지되는지가 최우선 확인 포인트다. 특히 서산 공장 가동률 및 고정비 흡수 효과, 전자소재 부문 매출 증감이 수익성 회복의 지속 여부를 판단하는 근거가 된다.",
-    "en": "The primary check is whether the Q1 2026 operating profit recovery is sustained into Q2. Seosan utilization rates, fixed-cost absorption, and Electronic Materials segment revenue trends will be the key determinants of whether the margin recovery is durable."
+    "ko": "2026년 3분기(7~9월) 실적 공시 예정 — 2025년 4분기부터 이어진 흑자 기조와 매출 성장세가 이어지는지, 순이익-영업이익 격차와 같은 일회성 요인이 재차 나타나는지 확인이 필요하다.",
+    "en": "Third-quarter 2026 (July-September) results are due for disclosure — worth checking whether the profitable trend and revenue growth seen since the fourth quarter of 2025 continue, and whether a net income-operating income gap similar to the one-off factor observed earlier recurs."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (서산 공장 정상화 진행 상황 확인)",
-    "en": "H2 2026 (Seosan Factory Normalization Progress)"
+    "ko": "2026년 4분기 중",
+    "en": "During the fourth quarter of 2026"
    },
    "what": {
-    "ko": "서산 공장의 연간 생산 목표(약 300억원) 달성 여부와 전자소재 부문 가동률 공시·IR 자료를 통해 확인해야 한다. 가동 정상화가 완료되면 전자소재 부문 매출 비중 상승과 전사 영업이익률 회복 속도에 직결된다.",
-    "en": "Monitor IR and disclosure materials for progress toward the stated annual production target of approximately KRW 30 bn at Seosan and the utilization rate of Electronic Materials capacity. Full normalization would directly drive higher Electronic Materials revenue contribution and company-wide margin recovery."
+    "ko": "서산공장 가동률 안정화 및 AI 데이터센터·ESS 대상 전자소재 신규 수주·양산 승인 관련 공시나 IR 자료가 나오는지 점검할 필요가 있다.",
+    "en": "Worth monitoring for disclosures or IR materials on utilization stabilization at the Seosan plant and any new orders or mass-production approvals for electronic materials tied to AI data centers and ESS."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 ~ 2027년 초 (DTF 솔루션 상용화 일정)",
-    "en": "H2 2026 – Early 2027 (DTF Solution Commercialization)"
+    "ko": "2027년 2월 중",
+    "en": "During February 2027"
    },
    "what": {
-    "ko": "신규 개발 중인 DTF 관련 잉크·소재 솔루션의 양산 착수 여부와 매출 기여 시점을 DART 공시 또는 IR 자료로 확인해야 한다. 성공적 상용화는 성숙기 이미지프린팅 사업을 보완하는 새로운 성장축으로 작동할 수 있다.",
-    "en": "Watch DART filings and IR materials for announcements on mass production commencement and the revenue contribution timeline for newly developed DTF ink and materials solutions. Successful commercialization would establish a new growth pillar to offset the maturing Image Printing segment."
+    "ko": "2026년 4분기 및 연간 실적(잠정) 발표 예정 — 연간 영업이익률과 부채비율의 방향성이 2025년 대비 개선되는지가 확인 포인트다.",
+    "en": "Fourth-quarter and preliminary full-year 2026 results are expected — a key point to check is whether the annual operating margin and debt ratio trends improve versus 2025."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (부채비율·영업현금흐름 추이)",
-    "en": "H2 2026 (Debt Ratio and Operating Cash Flow Trend)"
+    "ko": "2027년 3월",
+    "en": "March 2027"
    },
    "what": {
-    "ko": "부채비율이 100% 이상인 상태에서 영업현금흐름 회복 속도가 재무 건전성 개선의 핵심 지표다. 반기 보고서(2026년 8월)와 연간 보고서(2027년 3월)를 통해 CFO·부채비율 추이를 모니터링해야 한다.",
-    "en": "With the debt ratio still above 100%, the pace of operating cash flow recovery is the key metric for financial health improvement. Monitor the semi-annual report (August 2026) and annual report (March 2027) for CFO and debt ratio trends."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026~2027년 (EMI 차폐필름 공급 계약·고객사 승인 공시)",
-    "en": "2026–2027 (EMI Shielding Film Supply Contract or Customer Approval Disclosures)"
-   },
-   "what": {
-    "ko": "스마트폰 부품용 및 자동차 전장용 EMI 차폐필름의 신규 고객사 양산 승인 또는 공급 계약 공시가 발생하면 전자소재 부문 매출 성장 가속화의 신호가 된다. 경쟁사 동향(이녹스첨단소재, 일본 타츠다)과 합산해 시장 점유율 변화를 추적해야 한다.",
-    "en": "Any new customer mass production approvals or supply contract announcements for smartphone-component or automotive EMI shielding film would signal acceleration in Electronic Materials revenue growth. Track alongside competitor developments (INNOX Advanced Materials, Tatsuda) to assess market share dynamics."
+    "ko": "2026년 사업보고서(연간 실적 확정) 공시와 정기주주총회 예정 — 연간 확정 재무제표와 경영진 구성 변동 여부를 확인할 시점이다.",
+    "en": "The 2026 annual business report (confirmed full-year results) and the annual general shareholders' meeting are expected — a point to confirm finalized annual financials and any changes in management composition."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "잉크테크는 이미지프린팅·전자소재·프린팅시스템으로 구성된 3사업부 체계를 보유한 잉크 기반 소재 전문 기업으로, 2024년 11월 준공된 서산 신공장 투자로 단기 수익성이 크게 훼손됐으나 2025년 4분기와 2026년 1분기 영업이익 회복으로 변곡점 통과 신호가 포착된다. 연간 매출은 2022년 이후 꾸준한 성장세를 유지하고 있어 외형 기반은 탄탄하나, 영업이익률은 4년 연속 하락해 수익성 회복의 속도와 지속성이 가장 중요한 관찰 지점이다. 전자소재 부문의 EMI 차폐필름 일본 대체 국산화 추진과 DTF 신시장 진입은 중장기 성장 모멘텀 측면에서 구조적 강점으로 꼽힌다. 반면 부채비율 100% 이상, 2025년 영업현금흐름의 급격한 위축, 사무용 잉크젯 시장의 구조적 축소라는 리스크 요인도 동시에 고려해야 한다. 종합적으로, 서산 공장 정상화 진행 여부와 전자소재 부문의 고마진 수주 확대가 향후 실적 방향성을 결정하는 핵심 변수이며, 이를 분기 실적과 공시를 통해 지속적으로 검증하는 것이 중요하다.",
-   "en": "InkTec is an ink-based materials specialist with a three-segment structure spanning Image Printing, Electronic Materials, and Printing System. The KRW 48 bn Seosan plant investment completed in November 2024 inflicted significant short-term profitability damage, but Q4 2025 and Q1 2026 operating profit recoveries indicate the company may have passed an inflection point. Annual revenue has grown consistently since 2022, providing a solid top-line foundation, but four consecutive years of operating margin erosion make the pace and durability of profitability recovery the most critical observation point. The EMI shielding film domestic substitution drive and the DTF new market entry represent structural mid-to-long-term growth catalysts in the Electronic Materials segment. Counterbalancing these positives are the debt ratio exceeding 100%, a sharp collapse in 2025 operating cash flow, and structural demand contraction in the office inkjet printer market. In summary, the trajectory of Seosan factory normalization and the expansion of high-margin electronic materials orders are the decisive variables for InkTec's earnings outlook, making continuous monitoring of quarterly results and public disclosures essential."
+   "ko": "잉크테크는 2022~2025년 매출은 매년 늘었지만 영업이익률은 9.5%에서 1.0%까지 4년 연속 낮아지며 외형과 수익성이 엇갈리는 흐름을 보여왔다. 2025년 2~3분기 연속 영업손실을 낸 뒤 4분기부터 2026년 2분기까지 세 개 분기 연속 흑자로 전환되며 최근 네 개 분기 합산 지배주주 순이익은 74.24억 원을 기록했다. 다만 2025년 4분기 순이익이 영업이익을 크게 상회한 점은 일회성 요인의 개입 가능성을 시사해, 회복의 지속성은 다음 분기 실적으로 확인이 필요하다. 부채비율은 같은 기간 59.9%에서 102.0%로 높아지고 영업활동현금흐름은 크게 줄어, 외형 성장의 이면에 재무 부담도 함께 커진 모습이다. 사업구조 면에서는 이미지프린팅 중심의 전통사업과 AI 데이터센터·ESS 대상 전자소재 확장이라는 두 축이 공존하며, 서산 신공장 가동이 후자의 성장판이 될 수 있는지가 핵심 관전 포인트다. 투자자는 다음 분기 실적에서 이익의 질(영업이익과 순이익의 격차)과 재무구조 개선 여부를 함께 살펴볼 필요가 있다. 본 리포트는 정보 제공을 목적으로 하며 매수·매도 의견을 포함하지 않는다.",
+   "en": "InkTec's revenue grew every year from 2022 to 2025, yet its operating margin fell continuously from 9.5% to 1.0% over the same period, reflecting a divergence between top-line growth and profitability. After posting operating losses in the second and third quarters of 2025, the company turned profitable for three consecutive quarters from the fourth quarter of 2025 through the second quarter of 2026, with combined owner net income over the most recent four quarters reaching KRW 7.42bn. However, net income in the fourth quarter of 2025 far exceeded operating income, suggesting a one-off factor may have been involved, so the durability of the recovery needs to be confirmed in coming quarters. The debt ratio rose from 59.9% to 102.0% over the same period while operating cash flow fell sharply, indicating that financial burden increased alongside revenue growth. In terms of business structure, the company's traditional image-printing business coexists with its expansion into electronic materials for AI data centers and ESS, and whether the new Seosan plant becomes a growth driver for the latter is a key point to watch. Investors should examine both the quality of earnings (the gap between operating income and net income) and any improvement in the balance sheet in upcoming quarterly results. This report is provided for informational purposes only and does not include a buy or sell recommendation."
   }
  },
  "sources": [
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=049550",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=M8gbGYfKj8gnKd4l",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A049550",
-  "https://markets.hankyung.com/stock/049550",
-  "https://m.thinkpool.com/item/049550",
-  "https://itooza.com/vscore/049550",
+  "https://m.kr.investing.com/news/global-filings/article-93CH-2057410?ampMode=1",
+  "https://judal.co.kr/?shareToken=dqswuM0wdECcBRue&view=stockAI",
   "https://www.investing.com/equities/inktec-co-ltd",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/QURHUjhkYjlUc1hvSEpTdFNMYm5pZz09/company_nm/(%EC%A3%BC)%EC%9E%89%ED%81%AC%ED%85%8C%ED%81%AC",
-  "https://comp.wisereport.co.kr/samsung/company/c1010001.aspx?cmp_cd=049550",
-  "https://www.investing.com/equities/inktec-co-ltd-earnings",
-  "https://www.jobkorea.co.kr/starter/companyreport/view?Inside_No=21080&schCtgr=0&schGrpCtgr=0&Page=1",
-  "https://www.jobkorea.co.kr/company/1857255/AnalysisView?Inside_No=21081",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A049550&MenuYn=Y",
-  "http://www.futurekorea.co.kr/news/articleView.html?idxno=36323",
-  "http://kr.inktec.com/product/dp_ink.do",
-  "https://comp.wisereport.co.kr/samsung/company/c1090001.aspx?cmp_cd=049550&cn=",
   "https://www.catch.co.kr/Comp/CompSummary/040112",
-  "https://m.thinkpool.com/item/049550/stockIndicator",
-  "https://kind.krx.co.kr/external/2026/03/13/000872/20260313002410/11011.htm",
-  "http://kr.inktec.com/"
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/QURHUjhkYjlUc1hvSEpTdFNMYm5pZz09/company_nm/(%EC%A3%BC)%EC%9E%89%ED%81%AC%ED%85%8C%ED%81%AC",
+  "https://itooza.com/vscore/049550",
+  "https://patents.google.com/patent/KR20160118390A/ko",
+  "https://patents.google.com/patent/WO2013191337A1/ko",
+  "https://www.dshm.co.kr/rnd_silvernanowire.aspx",
+  "https://patents.google.com/patent/KR101536633B1/ko",
+  "https://www.postech.ac.kr/%EA%B8%B0%EA%B3%84-%EA%B9%80%EC%A4%80%EC%9B%90-%EA%B5%90%EC%88%98%ED%8C%80-%EC%9D%80-%EB%82%98%EB%85%B8%EC%99%80%EC%9D%B4%EC%96%B4%EB%A5%BC-%EC%9B%90%ED%95%98%EB%8A%94-%ED%98%95%ED%83%9C%EB%A1%9C/",
+  "http://kr.inktec.com/",
+  "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11773275",
+  "http://www.cnvision.co.kr/products/n11.htm",
+  "https://www.satnanomaterial.com/blog/silver-nanowires-silver-wires-in-liquid-water-etoh-ipa_b71"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "049550",
  "name": "잉크테크",
  "name_en": "INKTEC CO., LTD.",
@@ -233,9 +223,9 @@
   "화학"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 00:51",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 09:10",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 3540,
-   "mcap": 0.0694,
+   "price": 3470,
+   "mcap": 0.068,
    "shares": 19606277,
    "total_shares": 19606277,
    "wavg_shares": 19560623,
-   "per": 9.34,
+   "per": 9.156,
    "eps": 379,
-   "pbr": 0.8433,
+   "pbr": 0.8266,
    "bps": 4198,
    "roe_ttm": 9.5,
    "ttm_window": "2025Q3~2026Q2",
