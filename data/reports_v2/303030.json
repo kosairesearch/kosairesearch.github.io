@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "경영권 갈등·적자 심화 속 신사업 확장 기로의 팹리스",
-  "en": "Wearable Touch IC Leader at a Crossroads: Deepening Losses and Governance Strains Amid New-Business Pivot"
+  "ko": "실적 재악화 속 신사업 다각화 승부수",
+  "en": "Earnings Setback, Diversification Bet Underway"
  },
  "lead": {
-  "ko": "글로벌 웨어러블 터치IC 선도 기업이지만, 2025년 매출 급감과 대폭 확대된 영업 적자, 최대주주와의 지배구조 갈등이 중기 전망의 핵심 불확실성으로 부각되고 있다.",
-  "en": "Despite its global leadership in wearable touch ICs, Zinitix faces a sharp 2025 revenue decline, widening operating losses, and a lingering governance dispute with its dominant shareholder that collectively cloud the medium-term outlook."
+  "ko": "지니틱스는 2024년 흑자전환 이후 2025년 다시 대규모 적자로 돌아섰으며, 경영권 분쟁을 딛고 노트북 터치패드·로봇·드론용 신제품으로 사업 다각화를 추진하고 있다.",
+  "en": "Zinitix swung back to a large loss in 2025 after briefly turning profitable in 2024, and is now pursuing diversification into laptop touchpads, robotics and drone ICs while working through a shareholder governance dispute."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 364억원(-32.7% YoY)·영업손실 86억원(OPM -23.5%)으로, 2024년 흑자 전환 이후 1년 만에 대폭 적자 재전환",
-   "en": "FY2025 revenue fell 32.7% YoY to KRW 36.4bn, generating an operating loss of KRW 8.6bn (OPM –23.5%), fully reversing the brief 2024 operating profit within a single year."
+   "ko": "2025년 매출은 364억원으로 전년(541억원) 대비 급감했고 영업손실 86억원, 지배주주 순손실 96억원을 기록하며 2024년의 흑자 기조가 단절됐다.",
+   "en": "2025 revenue fell sharply to KRW 36.4bn from KRW 54.1bn in 2024, with an operating loss of KRW 8.55bn and an owners' net loss of KRW 9.58bn, ending 2024's brief profitable stretch."
   },
   {
-   "ko": "2026년 1분기 영업손실 9억원으로 직전 분기(-42억원) 대비 대폭 개선, 실적 저점 통과 여부가 최대 관심사",
-   "en": "Q1 2026 operating loss narrowed sharply to KRW 862mn from KRW 4.2bn in Q4 2025, raising the question of whether the earnings trough has been passed."
+   "ko": "2025년 4분기 영업손실(42억원)이 최근 분기 중 가장 컸고, 2026년 1~2분기에는 손실 규모가 눈에 띄게 줄었다.",
+   "en": "The Q4 2025 operating loss of KRW 4.19bn was the largest in recent quarters, while losses narrowed noticeably in Q1-Q2 2026."
   },
   {
-   "ko": "최대주주 헤일로(약 47.6% 지분)가 2026년 3월 63억원 제3자배정 유상증자로 운영자금 수혈, 단기 유동성 일부 회복",
-   "en": "Majority shareholder Halo Microelectronics (~47.6% stake) injected KRW 6.3bn via a no-discount third-party rights offering in March 2026, partially replenishing near-term liquidity."
+   "ko": "최대주주 헤일로 마이크로일렉트로닉스와 경영진 간 경영권 분쟁은 2025년 7월 해임안 부결로 일단락됐으나, 국가핵심기술 지정에 따라 외국인 이사 선임 절차는 여전히 진행형이다.",
+   "en": "The governance dispute between major shareholder HALO Microelectronics and management was largely settled when a dismissal motion failed in July 2025, but the process for appointing foreign directors remains pending due to a national core technology designation."
   },
   {
-   "ko": "액션캠 터치IC 양산 개시·로봇IC 샘플 단계·GaN 전력반도체 구동IC 국책과제(2024~2026년 12월) 등 중장기 사업 다각화 진행 중",
-   "en": "Medium-to-long-term diversification is underway: action-cam touch IC is in mass production, robot IC is in sampling and redesign, and a state-funded GaN gate driver IC project runs through December 2026."
+   "ko": "노트북·태블릿 터치패드 모듈, 액션캠, 로봇·드론용 IC 등으로 사업영역을 넓히며 모바일·웨어러블 중심 구조에서 벗어나려 하고 있다.",
+   "en": "The company is expanding beyond its mobile/wearable-centric structure into laptop and tablet touchpad modules, action cameras, and robotics/drone ICs."
   },
   {
-   "ko": "글로벌 스마트워치 시장 연평균 약 15.7% 성장(2026~2034년) 전망으로 핵심 전방시장 구조적 성장세 유지, 모바일 수요 둔화는 단기 역풍",
-   "en": "The global smartwatch market is projected to grow at a CAGR of approximately 15.7% through 2034, underpinning long-term demand for Zinitix's core products, while near-term smartphone upgrade-cycle weakness remains a headwind."
+   "ko": "2026년 3월 최대주주 대상 유상증자와 액면가 병합(100원→500원)이 이뤄지며 자본구조에도 변화가 있었다.",
+   "en": "In March 2026, a rights offering to the major shareholder and a par-value consolidation (from KRW 100 to KRW 500) altered the company's capital structure."
   }
  ],
  "business": {
-  "ko": "지니틱스는 2000년 설립된 팹리스(Fabless) 시스템 반도체 설계 전문기업으로, 자체 생산 설비 없이 설계된 IC를 파운드리에 위탁 생산해 고객사에 납품하는 구조다. 주요 제품은 터치 컨트롤러 IC, 햅틱 IC, Auto Focus·OIS 드라이버 IC, Fintech MST IC, AMOLED DC-DC IC 등으로, 스마트폰·웨어러블·태블릿·노트북·가전 등 폭넓은 전자기기에 공급된다. 스마트워치용 초저전력 터치IC를 세계 최초로 상용화해 글로벌 시장 선두 지위를 확보했으며, 삼성전자·샤오미(Xiaomi)·BBK(OPPO/VIVO)·화웨이(Huawei)·핏빗(Fitbit) 등이 핵심 고객이다. 2024년 8월 헤일로 마이크로일렉트로닉스 인터내셔널 코퍼레이션(HALO)이 약 210억원에 지분 33.5%를 인수해 최대주주에 오른 뒤, 2026년 3월 제3자배정 유상증자로 지분율이 약 47.6%로 높아졌다. 헤일로는 미국 캘리포니아·중국·싱가포르에 연구소를 둔 아날로그·파워 관리 IC 팹리스이며, 중국 상하이증시에 상장된 헤일로 마이크로일렉트로닉스의 100% 자회사다. 최근에는 삼성전자 노트북·태블릿 북커버용 터치패드 모듈 시장에 진입했고 중국 태블릿 북커버 시장으로도 사업을 확대 중이며, 글로벌 액션캠 고객사 대상 터치IC 양산도 개시했다. 드론·로봇 분야 신규 IC 개발과 GaN 전력반도체 구동IC 국책 연구개발(~2026년 12월)에 참여하며 전기차·ESS·서버·태양광 등 파워산업 진출을 모색하고 있다.",
-  "en": "Founded in 2000, Zinitix is a fabless system semiconductor design specialist that outsources chip manufacturing to foundries, with no in-house production facilities. Its product portfolio includes touch controller ICs, haptic ICs, auto-focus and OIS driver ICs, fintech MST ICs, and AMOLED DC-DC ICs, supplying smartphones, wearables, tablets, notebooks, and home appliances. The company achieved the world's first commercialization of ultra-low-power touch ICs for smartwatches and holds a leading global market position, with Samsung Electronics, Xiaomi, BBK (OPPO/VIVO), Huawei, and Fitbit as key customers. In August 2024, Halo Microelectronics International Corporation (HALO) acquired a 33.5% stake for approximately KRW 21bn to become the largest shareholder; a March 2026 third-party rights offering raised Halo's stake to approximately 47.6%. Halo is an analog and power-management IC fabless with R&D centers in California, China, and Singapore, and is a wholly owned subsidiary of a Shanghai-listed semiconductor group. Zinitix has recently entered the touchpad module market for Samsung notebooks and tablet covers, is expanding into Chinese tablet-cover applications, and has commenced mass production of touch ICs for global action-camera customers. Additionally, the company is engaged in development of robot ICs and a state-funded GaN power-semiconductor gate driver IC project (through December 2026), targeting eventual entry into EV charger, ESS, server, and solar-inverter markets."
+  "ko": "지니틱스는 터치 IC, 햅틱 IC, 파워 IC 등을 설계하는 시스템반도체(팹리스) 전문기업이다. 주요 고객사는 삼성전자이며, 웨어러블 IC는 샤오미, BBK(오포·비보 계열) 등 글로벌 제조사에도 공급되고 있다. 2024년 12월에는 노트북·태블릿 북커버용 터치패드 모듈 시장 진출을 선언하며 사업 다각화를 본격화했고, 삼성전자 대상 노트북·태블릿 북커버 터치패드 분야에서 경쟁력을 확인한 뒤 최근에는 중국 태블릿 북커버 시장에도 진입했다. 권석만 대표는 노트북 시장 진출을 시작으로 가전제품, 전기차 시장까지 시스템반도체 포트폴리오를 확장하겠다는 구상을 밝혔다. 2026년 3월 공시에서 회사는 이미 양산 궤도에 오른 액션캠용 제품과 연구개발이 마무리 단계에 접어든 로봇용 신규 IC를 향후 성장의 두 축으로 제시했다. 최대주주는 미국 아날로그 반도체 기업 헤일로 마이크로일렉트로닉스 인터내셔널 코퍼레이션으로, 2024년 8월 기존 최대주주였던 서울전자통신의 지분을 인수하며 최대주주로 올라섰다. 헤일로는 상하이증시에 상장된 헤일로 마이크로일렉트로닉스의 100% 자회사다. 터치·압력 감지 통합 솔루션을 노트북·태블릿 시장에 공급하는 중국 구딕스(Goodix) 등도 2026년 신제품을 선보이며 경쟁이 이어지고 있다.",
+  "en": "Zinitix is a fabless system semiconductor company designing touch ICs, haptic ICs and power ICs. Its main customer is Samsung Electronics, and its wearable ICs are also supplied to global manufacturers such as Xiaomi and BBK (the Oppo/Vivo group). In December 2024 the company announced its entry into the touchpad module market for laptop and tablet book-covers, formalizing a diversification push, and after establishing a presence in Samsung's laptop and tablet book-cover touchpad business it recently entered the Chinese tablet book-cover market as well. CEO Kwon Suk-man has laid out a plan to extend the system semiconductor portfolio from laptops into home appliances and the electric-vehicle market. In a March 2026 disclosure, the company presented action-camera products already in mass production, alongside new robotics ICs nearing the end of development, as its next two growth pillars. The largest shareholder is HALO Microelectronics International Corporation, a U.S. analog semiconductor company that became the controlling shareholder in August 2024 by acquiring the stake previously held by Seoul Electronics & Telecommunications. HALO is a wholly owned subsidiary of Shanghai-listed Halo Microelectronics. Competition continues from China's Goodix, which unveiled a new integrated touch-and-pressure solution for laptops and tablets in 2026."
  },
  "earnings": {
-  "ko": "2022년·2023년 연속 영업적자(각각 -52억원·-60억원) 이후 2024년 매출 541억원(전년 대비 +63.5%)·영업이익 3억원(OPM 0.5%)으로 처음 영업 흑자를 달성했으나, 2025년 매출 364억원(-32.7%)·영업손실 86억원(OPM -23.5%)으로 다시 대폭 악화됐다. 분기별로는 2025년 1분기 영업손실 3억원에서 2분기 22억원, 3분기 19억원, 4분기 42억원으로 하반기에 손실이 급격히 확대됐다. 2025년 지배주주 귀속 순손실은 96억원, 기본 주당순손실(EPS)은 -263원이었다. 영업활동 현금흐름은 2024년 +48억원에서 2025년 -101억원으로 전환됐고, 현금성자산은 연말 기준 약 90억원에서 약 30억원으로 급감했다. 2025년 말 자기자본은 89억원(2024년 말 169억원)으로 절반 수준으로 줄었고, 부채비율은 63.1%에서 145.4%로 급등해 재무건전성이 빠르게 악화됐다. 매입채무는 2024년 말 33억원에서 2025년 말 59억원으로 늘어 운전자본 부담도 함께 확대됐다. 2026년 1분기에는 매출 85억원·영업손실 9억원·지배주주 귀속 순손실 7억원으로 손실이 크게 줄어, 저점 통과 여부에 시장의 관심이 집중된다.",
-  "en": "After consecutive operating losses in 2022 (KRW –5.2bn; OPM –18.9%) and 2023 (KRW –6.0bn; OPM –18.3%), Zinitix achieved its first operating profit in FY2024 (revenue KRW 54.1bn, +63.5% YoY; operating profit KRW 282mn; OPM 0.5%). FY2025 saw a sharp reversal: revenue fell 32.7% to KRW 36.4bn and operating loss widened to KRW 8.6bn (OPM –23.5%). On a quarterly basis, operating losses escalated from KRW –256mn in Q1 2025 to KRW –2.2bn in Q2, KRW –1.9bn in Q3, and KRW –4.2bn in Q4—the worst single quarter of the year. The FY2025 attributable net loss totaled KRW 9.58bn (basic EPS: –263 won per share). Operating cash flow swung from +KRW 4.8bn in 2024 to –KRW 10.1bn in 2025, and year-end cash fell from approximately KRW 9bn to approximately KRW 3bn. Shareholders' equity contracted to KRW 8.94bn (from KRW 16.94bn in 2024) while the debt ratio surged to 145.4% from 63.1%, reflecting significant balance-sheet deterioration. Trade payables also rose from KRW 3.3bn (end-2024) to KRW 5.9bn (end-2025), adding working-capital pressure. In Q1 2026, revenue was KRW 8.5bn, operating loss narrowed to KRW 862mn, and the attributable net loss fell to KRW 743mn—a meaningful sequential improvement that puts the focus on whether a sustainable recovery is underway."
+  "ko": "지니틱스의 연간 매출액은 2022년 276억원, 2023년 331억원, 2024년 541억원으로 늘었으나 2025년에는 364억원으로 크게 줄었다. 영업손익은 2024년 2.8억원으로 유일하게 흑자를 냈지만 2025년에는 다시 86억원의 영업손실로 돌아섰다. 지배주주 순이익 기준으로도 2024년 6.5억원 흑자에서 2025년 96억원 순손실로 급격히 악화됐다. 분기별로는 2025년 3분기(매출 96억원, 영업손실 19억원)까지는 손실 규모가 상대적으로 제한적이었으나, 4분기에는 매출이 76억원으로 줄고 영업손실이 42억원까지 확대되며 최근 분기 중 가장 큰 손실을 기록했다. 2026년 들어서는 1분기(매출 85억원, 영업손실 9억원)와 2분기(매출 91억원, 영업손실 10억원) 모두 손실 규모가 4분기 대비 크게 줄어드는 흐름을 보였다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순손실은 약 87억원으로, 연간 적자 기조가 이어지고 있음을 보여준다. 자본총계는 2022년 219억원에서 2025년 89억원까지 줄었고, 같은 기간 부채비율은 41.4%에서 145.4%로 크게 높아졌다. 영업활동현금흐름도 2024년 48억원 유입에서 2025년 101억원 유출로 전환돼, 실적 부진이 현금창출력 저하로도 이어졌다.",
+  "en": "Zinitix's annual revenue rose from KRW 27.6bn in 2022 to KRW 33.1bn in 2023 and KRW 54.1bn in 2024, but then fell sharply to KRW 36.4bn in 2025. Operating profit turned positive only in 2024, at KRW 0.28bn, before reverting to an operating loss of KRW 8.55bn in 2025. Owners' net income likewise swung from a profit of KRW 0.65bn in 2024 to a loss of KRW 9.58bn in 2025. On a quarterly basis, losses were relatively contained through Q3 2025 (revenue KRW 9.58bn, operating loss KRW 1.90bn), but Q4 2025 saw revenue drop to KRW 7.64bn while the operating loss widened to KRW 4.19bn, the largest quarterly loss in the recent window. In 2026, both Q1 (revenue KRW 8.51bn, operating loss KRW 0.86bn) and Q2 (revenue KRW 9.11bn, operating loss KRW 1.01bn) showed losses narrowing markedly versus Q4 2025. Over the most recent four quarters (Q3 2025 through Q2 2026), the combined owners' net loss was about KRW 8.70bn, indicating the loss-making trend has persisted across the annual cycle. Total equity shrank from KRW 21.9bn in 2022 to KRW 8.9bn in 2025, while the debt ratio rose sharply from 41.4% to 145.4% over the same period. Operating cash flow also flipped from an inflow of KRW 4.79bn in 2024 to an outflow of KRW 10.12bn in 2025, showing that the earnings downturn also weighed on cash generation."
  },
  "industry": {
-  "ko": "글로벌 스마트워치 시장은 2025년 약 385억 달러 규모로, 2026년 약 443억 달러, 2034년까지 약 1,420억 달러로 성장할 것으로 예상되며 연평균 약 15.7%의 성장이 전망된다. 웨어러블 기술 전체 시장도 2025년 약 2,193억 달러에서 2026년 약 2,574억 달러로 확대가 예상되며, 스마트워치는 2025년 기준 약 46%의 비중을 차지하는 최대 단일 카테고리다. AI 통합·건강 모니터링 강화·보급형 모델 확대가 중장기 수요를 지지하는 핵심 동인이며, 아시아태평양이 연평균 약 20%의 가장 빠른 지역 성장세를 보일 것으로 예상된다. 터치스크린 디스플레이 시장은 자동차·가전·IoT 기기로 적용 범위가 넓어지고 있어 팹리스 부품 공급사에 중장기 기회를 제공하고, AI 노트북 확산은 터치패드 IC 수요 증가와 직결된다. 반면 스마트폰 교체주기 장기화와 혁신 기능 부진으로 모바일 기기 수요가 단기 둔화되고 있어 모바일용 터치IC에는 역풍이 작용하고 있다. 경쟁 구도는 국내 이미지스 등 유사 팹리스 업체와 중국 저가 IC 업체로 나뉘며, 지니틱스는 웨어러블 터치IC 분야의 장기 양산 이력과 글로벌 고객 기반으로 차별화된 포지션을 유지하고 있다. 전력반도체·로봇·액션캠 등으로의 사업 다각화는 모바일 의존도를 낮추는 구조적 전환 시도이나, 신시장에서의 경쟁 강도와 기술 진입 장벽도 함께 고려해야 한다.",
-  "en": "The global smartwatch market is valued at approximately USD 38.5bn in 2025 and is projected to reach approximately USD 44.3bn in 2026, expanding to approximately USD 142bn by 2034 at a CAGR of around 15.7%. The broader wearable technology market is also expected to grow from approximately USD 219.3bn in 2025 to approximately USD 257.4bn in 2026, with smartwatches commanding approximately 46% of all wearable device categories in 2025. AI integration, expanded health-monitoring capabilities, and affordable entry-level models are the primary mid-to-long-term demand drivers, while Asia Pacific is forecast to post the fastest regional growth at around 20% CAGR. The broadening of touchscreen displays into automotive, home appliances, and IoT devices creates additional medium-to-long-term opportunities for fabless IC suppliers, and the AI notebook market's expansion directly stimulates touchpad IC demand. Near-term headwinds include a structurally lengthening smartphone replacement cycle and slowing mobile device innovation, which weigh on mobile touch IC volumes. Competitive dynamics feature domestic peers such as Imagis and Chinese low-cost IC makers; Zinitix maintains a differentiated position through its long wearable touch IC mass-production track record and established global customer base. Diversification into power semiconductors, robotics, and action cameras represents a structural effort to reduce mobile dependency, though competitive intensity and technology entry barriers in these new markets warrant monitoring."
+  "ko": "세계반도체무역통계기구(WSTS)는 2026년 글로벌 반도체 시장이 전년 대비 25% 이상 성장해 약 9,750억 달러 규모에 이를 것으로 전망했으며, 성장의 중심축은 AI 인프라와 메모리 부문이다. 다만 지니틱스가 속한 터치·햅틱 등 시스템반도체 부문은 스마트폰·웨어러블·노트북 등 소비자 기기 수요 회복 속도에 더 크게 좌우되는 구조다. 터치·압력 감지 통합 솔루션 시장에서는 중국 구딕스(Goodix)가 2026년 4월 노트북·태블릿용 신제품 '뉴턴 터치패드'를 선보이며 경쟁이 이어지고 있다. 지니틱스는 기존 모바일·웨어러블 터치 IC 공급 경험을 노트북·태블릿 북커버 터치패드로 확장해 삼성전자 등 글로벌 제조사 대상 공급을 넓히고 있으며, 로봇·드론 등 신산업 대상 IC 개발도 병행하며 시장 다변화를 모색하고 있다. 지니틱스 사례는 국내 팹리스 업계에서 외국인 지분 확대와 지배구조 갈등이 산업안보 이슈로 확산된 대표적 사례로도 주목받았다. 실제로 지니틱스의 반도체 설계기술은 국가핵심기술로 지정돼 외국인의 경영 참여가 제한되는 상황이 형성됐다.",
+  "en": "The World Semiconductor Trade Statistics (WSTS) forecasts the global semiconductor market will grow more than 25% year-on-year in 2026 to roughly $975bn, led by AI infrastructure and memory. However, the touch and haptic system-semiconductor segment in which Zinitix operates is more closely tied to the pace of consumer-device demand recovery in smartphones, wearables and laptops. In the integrated touch-and-pressure sensing market, China's Goodix continued to compete by unveiling its new 'Newton Touchpad' solution for laptops and tablets in April 2026. Zinitix is extending its existing mobile and wearable touch IC supply experience into laptop and tablet book-cover touchpads, broadening supply to Samsung Electronics and other global manufacturers, while also pursuing ICs for new industries such as robotics and drones to diversify its market exposure. Zinitix's case has also drawn attention as an example within Korea's fabless industry where expanding foreign ownership and a governance dispute escalated into an industrial-security issue. Indeed, Zinitix's semiconductor design technology was designated a national core technology, creating a situation in which foreign shareholders' management participation is restricted."
  },
  "outlook": {
-  "ko": "회사는 2026년을 '실적 정상화'의 원년으로 공표했으며, 주요 고객사의 신규 모델 채택 확대에 따른 운전자금 수요 증가를 공식 확인했다. 액션캠용 터치IC는 이미 글로벌 고객사 대상 양산 단계에 진입해 공급처 다변화를 통해 시장점유율을 높여갈 계획이며, 로봇 IC는 국책 연구개발 과제 참여와 함께 샘플 확보 및 개선 설계 단계에 있어 본격 양산까지는 추가 기술 검증이 필요하다. GaN 전력반도체 구동IC 국책 과제는 2026년 12월 완료 목표로, 이후 전기차 충전기·ESS·서버·태양광 등 파워산업 분야 진출 가능성을 검토 중이다. 2026년 3월 조달한 63억원은 2026년 25억원·2027년 25억원·2028년 13억원으로 분할 사용할 예정이며, 주로 운영자금과 연구개발에 투입된다. 헤일로의 아날로그·파워 IC 설계 역량과의 시너지 및 글로벌 고객 네트워크 활용이 중장기 성장 전략의 핵심 축으로 제시되고 있다. 다만 2026년 3월 정기주주총회를 통해 경영진과 최대주주 간 관계가 일부 정상화됐으나, 양측 협력 관계의 완전한 안정화 여부는 지속 모니터링이 필요하다.",
-  "en": "Management has formally committed to profitability normalization in 2026, confirming rising working-capital needs driven by new model adoptions at key customers. Action-cam touch IC is already in mass production for global clients, with supply diversification underway to expand market share; robot IC is progressing through sampling and revised design under a national R&D project, requiring additional technical validation before full production ramp-up. The state-funded GaN gate driver IC project targets December 2026 completion, after which entry into EV charger, ESS, server, and solar-inverter applications is being explored. The KRW 6.3bn raised in March 2026 is planned for phased deployment—KRW 2.5bn in 2026, KRW 2.5bn in 2027, and KRW 1.3bn in 2028—primarily for working capital and R&D. Synergies from Halo's analog and power IC design capabilities and its global customer network are positioned as a medium-to-long-term growth lever. While the March 2026 AGM represented a step toward normalizing the shareholder-management relationship, ongoing monitoring of the cooperation dynamic remains essential."
+  "ko": "회사는 2026년 3월 최대주주인 헤일로를 대상으로 63억원 규모의 제3자배정 유상증자를 실시해 신규 고객사 대응을 위한 웨이퍼 매입 등 운전자금과 연구개발 투자에 활용하겠다고 밝혔다. 회사 측은 이미 양산 궤도에 오른 액션캠용 제품과 연구개발이 마무리 단계에 접어든 로봇용 신규 IC를 향후 성장의 두 축으로 제시했다. 회사 관계자는 2025년의 실적 부진과 주가 하락을 언급하며 2026년에는 실적 정상화가 가능할 것으로 기대한다고 밝혔다. 같은 3월 회사는 주가 안정과 기업가치 제고를 위해 액면가를 100원에서 500원으로 높이는 주식병합을 결정했으며, 신주의 효력 발생일은 4월 16일이었다. 경영권 분쟁은 2025년 7월 임시주주총회에서 현 경영진 해임안이 부결되며 일단락됐으나, 헤일로가 제안했던 신규 이사 선임안은 지니틱스의 반도체 설계기술이 국가핵심기술로 지정됨에 따라 철회됐고, 산업통상자원부의 승인을 받기 위한 별도 임시주총이 추후 예정된 상태다. 다만 2026년 3월 공시 서명자는 홍근의 대표이사로 확인돼, 해임안 부결 이후에도 대표이사 교체 등 지배구조 변화가 있었던 것으로 보인다. 노트북·태블릿 북커버 터치패드 모듈은 삼성전자와 글로벌 제조사 공급을 기반으로 중국 시장까지 확대되고 있어, 신사업의 매출 기여 속도가 향후 관전 포인트다.",
+  "en": "In March 2026 the company conducted a KRW 6.3bn third-party rights offering to major shareholder HALO, stating the proceeds would fund working capital such as wafer purchases for new customers as well as R&D investment. Management presented action-camera products already in mass production and new robotics ICs nearing completion of development as its two future growth pillars. A company representative referenced the earnings weakness and share-price decline of 2025 while stating an expectation that results could normalize in 2026. In the same month, the company decided to raise its par value from KRW 100 to KRW 500 through a share consolidation aimed at price stabilization and enhancing corporate value, with the new shares taking effect on April 16. The governance dispute was largely settled when a motion to dismiss the incumbent management failed at the July 2025 extraordinary general meeting, but the proposal by HALO to appoint new directors was withdrawn after Zinitix's semiconductor design technology was designated a national core technology, with a separate extraordinary general meeting to be held later pending approval from the Ministry of Trade, Industry and Energy. Notably, the signatory on a March 2026 disclosure was listed as CEO Hong Geun-eui, suggesting a change in the chief executive occurred even after the dismissal motion failed. The laptop and tablet book-cover touchpad module business is expanding from Samsung Electronics and global manufacturer supply into the Chinese market, and the pace at which this new business contributes to revenue remains a key point to watch."
  },
  "valuation_comment": {
-  "ko": "적자가 지속되는 상황에서 이익 기반 밸류에이션 지표(PER 등)는 현재 의미 있는 참조 기준을 제공하기 어렵다. 확정 기준 주당 순자산(BPS)은 1,584원으로, 현 주가는 순자산을 소폭 상회하는 구간에서 거래되고 있다. 자기자본이 적자 누적으로 빠르게 잠식되면서 BPS 자체가 전년 대비 크게 하락했다는 점은 중요한 관찰 포인트다. 배당은 지급되지 않아(DPS 0원) 배당수익률은 0%이며, 이는 동종 팹리스 업종 평균을 크게 하회한다. 영업 적자의 흑자 회복 여부와 신사업(로봇IC·GaN 전력IC·터치패드 모듈)의 매출 가시화 속도가 향후 밸류에이션 재평가의 핵심 트리거가 될 것으로 보인다.",
-  "en": "With losses persisting, earnings-based valuation metrics such as price-to-earnings multiples offer limited reference value. Book value per share (BPS) stands at KRW 1,584 on a confirmed basis, and the current stock price is in a modest premium to that net asset figure. A key observation is that BPS itself has declined materially from the prior year, as accumulated losses have eroded shareholders' equity. No dividend is being distributed (DPS: KRW 0), placing the dividend yield at zero—well below the average for comparable fabless sector peers. The pace at which operating losses reverse and new-business revenues (robot IC, GaN power IC, notebook touchpad modules) materialize will be the primary triggers for any valuation re-rating."
+  "ko": "지니틱스는 최근 4개 분기 연속 순손실을 기록하고 있어 이익을 기준으로 한 밸류에이션 지표는 산출되지 않는다. 주가와 순자산가치를 비교하는 지표는 순자산 대비 일정한 프리미엄이 존재하는 구간에서 형성돼 있다. 배당은 최근 지급 실적이 없어 배당수익률 관점에서 접근하기 어려운 종목이다. 2024년 한 해 흑자로 전환했던 이력이 있지만 2025년 다시 적자로 돌아선 만큼, 향후 밸류에이션은 신사업(터치패드 모듈, 로봇·드론 IC)의 매출 기여와 손익 개선 속도에 연동될 가능성이 크다. 경영권 분쟁, 유상증자에 따른 지분 변동, 주식병합 등 자본구조 변화가 반복된 만큼 주당 지표의 변동성도 상대적으로 큰 편이다.",
+  "en": "Zinitix has posted net losses for four consecutive quarters, so earnings-based valuation metrics cannot be meaningfully calculated. The metric comparing share price to net asset value sits in a range that carries a certain premium over book value. The company has no recent dividend payment history, making a dividend-yield lens difficult to apply. Given that the company turned profitable only briefly in 2024 before reverting to losses in 2025, future valuation is likely to hinge on how quickly new businesses—touchpad modules, robotics and drone ICs—contribute to revenue and improve profitability. Because the capital structure has repeatedly shifted through the governance dispute, rights offering, and share consolidation, per-share metrics have also shown relatively high variability."
  },
  "bull": [
   {
    "title": {
-    "ko": "웨어러블 터치IC 글로벌 선도 지위와 구조적 성장 시장",
-    "en": "Global Leadership in Wearable Touch ICs Within a Structurally Growing Market"
+    "ko": "신사업 다각화 시도",
+    "en": "Diversification into New Businesses"
    },
    "body": {
-    "ko": "스마트워치용 초저전력 터치IC를 세계 최초로 상용화해 글로벌 시장 선두 지위를 확보했으며, 삼성전자·샤오미·BBK 등 주요 글로벌 제조사에 안정적으로 공급 중이다. 글로벌 스마트워치 시장이 2034년까지 연평균 약 15.7% 성장이 예상되는 가운데, 초저전력·고감도 기술력은 경쟁사 진입 장벽으로 기능한다. 주요 고객사의 신규 모델 채택 확대에 따른 운전자금 수요 증가를 회사 측이 공식 확인해 단기 수요 회복의 신호가 감지된다.",
-    "en": "Zinitix achieved the world's first commercialization of ultra-low-power touch ICs for smartwatches and maintains a leading global market position, supplying Samsung Electronics, Xiaomi, and BBK, among others. The global smartwatch market is projected to grow at a CAGR of approximately 15.7% through 2034, and the company's low-power, high-sensitivity technology serves as a meaningful competitive moat. Management has officially confirmed rising working-capital needs driven by new model adoptions at key customers, serving as a near-term demand recovery signal."
+    "ko": "지니틱스는 모바일·웨어러블 중심의 매출 구조에서 벗어나 노트북·태블릿 터치패드 모듈, 액션캠, 로봇·드론용 IC로 사업 영역을 넓히고 있다. 삼성전자 대상 노트북·태블릿 터치패드 공급 경험을 바탕으로 중국 시장까지 진입 범위를 확대했다. 액션캠 제품은 이미 양산 단계에 올랐고 로봇용 IC도 연구개발 마무리 단계에 있다는 점이 신규 매출원 확보 가능성을 시사한다.",
+    "en": "Zinitix is broadening beyond its mobile/wearable-centric revenue base into laptop and tablet touchpad modules, action cameras, and robotics/drone ICs. Building on its experience supplying laptop and tablet touchpads to Samsung Electronics, it has extended its reach into the Chinese market. Action-camera products are already in mass production and robotics ICs are nearing the end of development, pointing to potential new revenue sources."
    }
   },
   {
    "title": {
-    "ko": "최대주주의 자금 지원과 신사업 다각화 모멘텀",
-    "en": "Major Shareholder Capital Backing and New-Business Diversification Momentum"
+    "ko": "2024년 흑자전환 이력",
+    "en": "Track Record of a 2024 Profit Turnaround"
    },
    "body": {
-    "ko": "최대주주 헤일로가 2026년 3월 할인 없이 63억원을 직접 납입함으로써 책임경영 의지를 확인했고, 단기 유동성 위기를 방어했다. 액션캠 터치IC 양산 개시, 로봇IC 개발, GaN 전력IC 국책 과제 참여 등 모바일 의존도를 낮출 신성장 동력이 순차적으로 구체화되고 있다. 헤일로의 아날로그·파워 IC 설계 역량과의 시너지는 중장기 제품 포트폴리오 확장을 뒷받침하는 전략적 자산이다.",
-    "en": "The largest shareholder Halo's direct subscription of KRW 6.3bn at no discount in March 2026 demonstrated its commitment to responsible stewardship and averted a near-term liquidity crunch. New growth vectors are taking sequential shape: action-cam touch IC in mass production, robot IC in development, and participation in a state-funded GaN power IC project diversify the revenue base beyond mobile. Halo's analog and power IC design capabilities represent a strategic asset for expanding Zinitix's medium-to-long-term product portfolio."
+    "ko": "2024년 매출 541억원에 영업이익 2.8억원으로 흑자전환을 이뤄낸 이력이 있어, 매출 규모가 회복될 경우 손익 레버리지가 다시 작동할 여지가 있다. 2022~2023년의 대규모 적자에서 벗어난 경험은 향후 실적 정상화 과정에서 참고 사례가 될 수 있다.",
+    "en": "The company has a track record of turning profitable in 2024, with revenue of KRW 54.1bn and operating profit of KRW 0.28bn, suggesting the potential for earnings leverage to re-engage if revenue scale recovers. Its prior recovery from large 2022-2023 losses could serve as a reference point for any future normalization."
    }
   },
   {
    "title": {
-    "ko": "2026년 1분기 손실 축소 — 저점 통과 가능성",
-    "en": "Q1 2026 Loss Narrowing — Possible Earnings Trough"
+    "ko": "최대주주의 직접 자금투입",
+    "en": "Direct Capital Injection by the Controlling Shareholder"
    },
    "body": {
-    "ko": "2025년 4분기 영업손실 42억원에서 2026년 1분기 9억원으로 손실이 큰 폭으로 줄어 단기 실적 개선의 시작 가능성을 시사한다. 회사는 2026년 실적 정상화를 목표로 공표했으며, 주요 고객사 신규 모델 채택 확대가 진행 중임을 확인했다. 2023년 영업적자에서 2024년 흑자로 빠르게 복귀한 전례가 있어, 외형 성장이 재개될 경우 손익분기점 회복 속도가 빠를 수 있다는 점은 주목할 부분이다.",
-    "en": "Operating loss shrank from KRW 4.2bn in Q4 2025 to KRW 862mn in Q1 2026, signaling a possible near-term earnings inflection. Management has stated its 2026 profitability normalization goal and confirmed that new-model adoptions by key customers are progressing. The company's prior recovery from an operating loss in 2023 to a small operating profit in 2024 demonstrates that its cost structure can reach breakeven relatively quickly once revenues scale—an encouraging historical precedent."
+    "ko": "최대주주인 헤일로는 2026년 3월 발행가 할인 없이 63억원 규모의 유상증자에 직접 참여해 운영자금과 연구개발 투자를 지원했다. 헤일로는 퀄컴, 혼다 등 다양한 글로벌 고객사를 보유하고 있어, 지배구조 이슈가 정리될 경우 영업 시너지 기대도 존재한다.",
+    "en": "Major shareholder HALO directly participated in a KRW 6.3bn rights offering in March 2026 at no discount, supporting working capital and R&D investment. HALO holds a range of global customers including Qualcomm and Honda, raising the prospect of commercial synergies if governance issues are resolved."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "지속된 적자와 급격히 악화된 재무구조",
-    "en": "Persistent Losses and Sharply Deteriorated Financial Structure"
+    "ko": "2025년 실적 재악화",
+    "en": "2025 Earnings Deterioration"
    },
    "body": {
-    "ko": "2022년·2023년·2025년 반복된 영업적자로 자기자본이 2022년 말 219억원에서 2025년 말 89억원으로 59% 감소했고, 부채비율은 145.4%로 급등했다. 2025년 영업 현금 소모 -101억원, 연말 현금성자산 약 30억원은 유동성 여력에 대한 우려를 낳는다. 2026년 3월 63억원을 조달했으나 현금 소모가 지속될 경우 추가 자금 조달 필요성이 재발할 수 있으며, 이는 기존 주주의 지분 희석 위험을 수반한다.",
-    "en": "Recurring operating losses in 2022, 2023, and 2025 have eroded shareholders' equity by 59%—from KRW 21.9bn at end-2022 to KRW 8.94bn at end-2025—while the debt ratio surged to 145.4%. FY2025 operating cash outflow of KRW 10.1bn and year-end cash of approximately KRW 3bn highlight constrained liquidity headroom. The March 2026 KRW 6.3bn rights offering provides relief, but sustained cash consumption could necessitate additional capital raises with dilutive consequences for existing shareholders."
+    "ko": "2025년 매출은 전년보다 크게 줄었고 영업손실과 순손실 모두 확대됐다. 같은 기간 자본총계는 절반 이하로 줄고 부채비율은 두 배 이상 높아졌으며, 영업활동현금흐름도 유출로 전환됐다. 손실 규모가 2026년 상반기 들어 줄었다고는 하나, 여전히 적자 기조가 이어지고 있다.",
+    "en": "2025 revenue fell sharply from the prior year, with both the operating loss and net loss widening. Over the same period, total equity fell by more than half, the debt ratio more than doubled, and operating cash flow flipped to an outflow. Although losses narrowed in the first half of 2026, the loss-making trend has continued."
    }
   },
   {
    "title": {
-    "ko": "최대주주-경영진 지배구조 갈등의 사업 불확실성",
-    "en": "Governance Dispute Between Largest Shareholder and Management"
+    "ko": "지배구조 불확실성 지속",
+    "en": "Persistent Governance Uncertainty"
    },
    "body": {
-    "ko": "2024년 8월 헤일로가 약 210억원에 지분 인수 후 최대주주와 경영진 간 갈등이 법적 분쟁(신주발행금지 가처분 신청 등)과 임시주주총회 소집 시도로 이어졌다. 지배구조 갈등이 완전히 봉합되지 않은 상황에서 삼성전자 등 주요 고객사와의 신뢰 훼손, 핵심 인력 이탈, 전략 의사결정 지연의 위험이 잠재한다. 헤일로가 약 47.6% 지분을 보유한 현 구조에서 이사회 구성·전략 방향을 둘러싼 추가 갈등 가능성을 완전히 배제하기 어렵다.",
-    "en": "Following Halo's August 2024 acquisition of approximately 33.5% for KRW ~21bn, the governance conflict with incumbent management escalated into legal proceedings—including an injunction filing against share issuances—and demands for extraordinary shareholder meetings. Incomplete resolution of the dispute carries risks of weakened trust with key customers such as Samsung Electronics, key-personnel departures, and strategic decision-making delays. With Halo now holding approximately 47.6%, further disputes over board composition and corporate direction cannot be entirely excluded."
+    "ko": "2025년 7월 해임안 부결로 경영권 분쟁이 일단락됐다고 알려졌으나, 국가핵심기술 지정에 따라 헤일로 측 이사 선임 안건은 철회된 채 승인 절차가 남아 있다. 2026년 3월 공시 서명자가 새로운 대표이사로 확인되는 등 지배구조 변화가 이어지고 있어 경영 안정성에 대한 불확실성이 여전하다.",
+    "en": "Although the governance dispute was reportedly settled when a dismissal motion failed in July 2025, HALO's proposal to appoint new directors was withdrawn pending approval tied to the national core technology designation, leaving the process unresolved. Governance changes have continued, as a March 2026 disclosure showed a different individual signing as CEO, leaving uncertainty around management stability."
    }
   },
   {
    "title": {
-    "ko": "모바일 수요 둔화 및 주요 고객 의존도",
-    "en": "Mobile Demand Slowdown and Key-Customer Concentration"
+    "ko": "경쟁 심화 리스크",
+    "en": "Intensifying Competitive Pressure"
    },
    "body": {
-    "ko": "스마트폰 교체주기 장기화와 혁신 기능 부진으로 모바일 터치IC 수요가 구조적으로 둔화되고 있으며, 2024년 흑자 이후 2025년 매출이 32.7% 급감한 주요 원인 중 하나다. 삼성전자 중심의 소수 고객 집중 구조상 해당 고객사의 부품 공급선 변경이나 신제품 출시 사이클이 실적에 직접적인 영향을 미친다. 신사업 매출 기여가 본격화되기 전까지 매출 변동성이 높게 유지될 가능성이 있다.",
-    "en": "A structurally lengthening smartphone replacement cycle and slowing mobile device innovation are dampening mobile touch IC demand—a key driver of the 32.7% revenue contraction in 2025. High customer concentration around Samsung Electronics means that any shift in the OEM's sourcing strategy or product-launch cadence directly affects Zinitix's revenues. Until new business segments generate meaningful contributions, top-line volatility is likely to remain elevated."
+    "ko": "노트북·태블릿 터치패드 시장에는 중국 구딕스(Goodix) 등 규모가 큰 경쟁사가 신제품을 내놓고 있어, 지니틱스의 신사업이 조기에 안착하지 못할 가능성이 있다. 로봇·드론용 IC 시장도 아직 검증 단계에 있어 매출화 시점과 규모가 불확실하다.",
+    "en": "Larger competitors such as China's Goodix continue to launch new products in the laptop and tablet touchpad market, raising the risk that Zinitix's new businesses may struggle to gain early traction. The robotics and drone IC market is also still at a validation stage, leaving the timing and scale of revenue contribution uncertain."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "지배구조·법적 리스크",
-    "en": "Governance and Legal Risk"
+    "ko": "지배구조 리스크",
+    "en": "Governance Risk"
    },
    "body": {
-    "ko": "최대주주 헤일로와 경영진 간 갈등이 법적 공방으로 확대된 바 있으며, 향후 이사회 구성 변화나 주주총회 결과에 따라 경영 전략이 급격히 바뀔 수 있다. 기술 유출 의혹(Elevation Micro 관련 분쟁)이 완전히 해소되지 않을 경우 핵심 지적재산권 보호와 고객사 신뢰에 대한 불확실성이 지속될 수 있다. 경영권 분쟁 장기화는 주요 고객사·협력사의 거래 안정성에도 간접적인 부정적 영향을 미칠 위험을 내포한다.",
-    "en": "The governance conflict between Halo and incumbent management has already produced court proceedings, and further changes in board composition or shareholder meeting outcomes could sharply redirect corporate strategy. If the alleged technology leakage dispute (the Elevation Micro matter) is not fully resolved, uncertainty over core IP protection and customer confidence may persist. A prolonged ownership dispute could indirectly affect transactional stability with key customers and supply-chain partners."
+    "ko": "최대주주와 경영진 간 갈등이 2025년 재발했던 전례가 있고, 국가핵심기술 지정에 따라 외국인 이사 선임을 위해서는 산업통상자원부의 별도 승인이 필요한 상태다. 관련 임시주주총회가 추후 다시 열릴 예정이어서 지배구조 이슈가 재부각될 가능성을 배제할 수 없다.",
+    "en": "There is a precedent of conflict resurfacing between the major shareholder and management in 2025, and the national core technology designation means foreign director appointments require separate approval from the Ministry of Trade, Industry and Energy. A related extraordinary general meeting is expected to be held again later, so the possibility that governance issues resurface cannot be ruled out."
    }
   },
   {
    "cat": {
-    "ko": "유동성·추가 자금 조달 리스크",
-    "en": "Liquidity and Refinancing Risk"
+    "ko": "재무 리스크",
+    "en": "Financial Risk"
    },
    "body": {
-    "ko": "2025년 말 현금성자산 약 30억원, 연간 영업 현금 소모 -101억원을 감안하면 자금 여력은 제한적이다. 2026년 3월 63억원을 확보했으나, 영업 적자가 지속될 경우 연내 사용 계획(25억원)만으로도 재조달 필요성이 발생할 수 있다. 추가 자금 조달 시 발행 조건에 따라 기존 주주의 지분이 희석될 위험이 존재한다.",
-    "en": "Year-end 2025 cash of approximately KRW 3bn against FY2025 operating cash outflow of KRW 10.1bn leaves limited liquidity headroom even after the March 2026 rights offering. If operating losses persist, the planned KRW 2.5bn 2026 deployment may be consumed faster than anticipated, potentially necessitating another round of financing before year-end. Any additional capital raise carries dilution risk for existing shareholders, depending on terms."
+    "ko": "2025년 자본총계가 크게 줄고 부채비율이 급등했으며 영업활동현금흐름도 유출로 전환됐다. 신사업 투자와 운전자금 수요가 맞물릴 경우 추가적인 외부 자금조달이 필요할 가능성이 있다.",
+    "en": "Total equity fell sharply in 2025, the debt ratio rose steeply, and operating cash flow turned negative. Additional external funding may be needed if new-business investment needs coincide with working-capital demands."
    }
   },
   {
    "cat": {
-    "ko": "신사업 상업화 지연 및 경쟁 리스크",
-    "en": "New-Business Commercialization Delay and Competitive Risk"
+    "ko": "사업 실행 리스크",
+    "en": "Business Execution Risk"
    },
    "body": {
-    "ko": "로봇IC·GaN 전력IC 등 신사업은 현재 개발·검증 단계로, 기술 지연이나 고객 승인 일정 지연이 실적 정상화 목표 달성에 차질을 줄 수 있다. OEM 세트 제조사들의 IC 내재화 가속이나 중국 저가 팹리스 업체들의 시장 침투가 심화될 경우 가격 경쟁이 격화될 수 있다. 웨어러블 기기의 평균 판매 가격 하락 추세는 구성 부품 단가에도 하방 압력을 가하는 구조적 위험 요인이다.",
-    "en": "New business segments such as robot IC and GaN power IC remain in development and validation stages; technical delays or deferred customer qualifications could push back the profitability normalization target. Accelerated in-house IC development by OEM device makers or aggressive market-share expansion by Chinese low-cost fabless peers could intensify pricing pressure. Declining average selling prices in the wearable device market also exert downward structural pressure on component unit prices."
+    "ko": "노트북·태블릿 터치패드, 로봇·드론용 IC 등 신사업은 아직 매출 기여가 본격화되지 않은 초기 단계다. 경쟁사의 신제품 출시 속도, 고객사 채택 여부에 따라 신사업의 성과가 계획보다 지연될 수 있다.",
+    "en": "New businesses such as laptop/tablet touchpads and robotics/drone ICs are still at an early stage where revenue contribution has not yet materialized in full. Depending on competitors' product launch pace and customer adoption, the performance of these new businesses could lag behind plan."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월(예상)",
-    "en": "August 2026 (expected)"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 공시 — 1분기에 이어 영업 적자 축소 추세가 지속되는지, 주요 고객사 신규 모델 공급 확대가 매출 성장에 기여하는지 확인하는 핵심 체크포인트다.",
-    "en": "Q2 2026 quarterly results disclosure — key checks include whether the sequential operating-loss-narrowing trend from Q1 2026 continues and whether expanding new-model supply to major OEM customers begins lifting revenues."
+    "ko": "2026년 3분기 실적 공시를 통해 최근 두 개 분기에 나타난 손실 축소 흐름이 이어지는지 확인할 필요가 있다.",
+    "en": "The Q3 2026 earnings disclosure will show whether the loss-narrowing trend seen in the two most recent quarters continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기(지속 모니터링)",
-    "en": "H2 2026 (ongoing monitoring)"
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "헤일로-경영진 지배구조 관계 안정화 여부 — 이사회 구성과 경영 방향에 대한 불확실성이 해소되면 고객사 신뢰 회복과 전략 실행력에 긍정적 영향이 기대된다.",
-    "en": "Stabilization of the Halo-management governance relationship — resolution of uncertainty over board composition and strategic direction would positively affect key-customer trust and operational execution capability."
+    "ko": "로봇·드론용 신규 IC와 노트북·태블릿 터치패드 모듈의 실제 매출 반영 시점과 규모를 점검할 필요가 있다.",
+    "en": "It is worth monitoring the timing and scale at which the new robotics/drone ICs and laptop/tablet touchpad modules begin contributing to actual revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 12월",
-    "en": "December 2026"
+    "ko": "2026년 하반기~연말",
+    "en": "Second half to year-end 2026"
    },
    "what": {
-    "ko": "GaN 전력반도체 구동IC 국책 과제 완료 — 기술 확보 수준과 후속 양산·상업화 로드맵 공개 여부가 파워산업 진출 가시성을 판단하는 기준이 된다.",
-    "en": "Completion of the state-funded GaN power-semiconductor gate driver IC project — the degree of technology readiness achieved and any disclosure of a subsequent commercialization roadmap will be the key indicators for assessing power-industry entry visibility."
+    "ko": "헤일로 측 이사 선임 안건에 대한 산업통상자원부 승인 절차 진행 상황과 이를 다룰 추가 임시주주총회 일정을 확인할 필요가 있다.",
+    "en": "It is worth tracking the progress of the Ministry of Trade, Industry and Energy's approval process for HALO's proposed director appointments and the schedule of any additional extraordinary general meeting to address it."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기(지속 확인)",
-    "en": "H2 2026 (ongoing)"
+    "ko": "지속 모니터링",
+    "en": "Ongoing monitoring"
    },
    "what": {
-    "ko": "액션캠·로봇IC 공급처 다변화 진전 — 실제 출하 실적과 신규 고객사 추가 공시가 신사업 성과를 평가하는 선행 지표다.",
-    "en": "Progress in action-cam and robot IC supply diversification — actual shipment volumes and any new customer contract or supply disclosures will serve as leading indicators of new-business momentum."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월(예상)",
-    "en": "March 2027 (expected)"
-   },
-   "what": {
-    "ko": "2026년 연간 실적 발표 및 정기주주총회 — 실적 정상화 목표 달성 여부, 배당 재개 가능성, 헤일로 영향 아래의 중기 전략 방향 구체화 등을 종합 점검하는 기회다.",
-    "en": "FY2026 full-year results and AGM — a key milestone to assess whether the profitability normalization target was achieved, whether a dividend can be reinstated, and what medium-term strategy is outlined under Halo's expanded influence."
+    "ko": "노트북·태블릿 터치패드 모듈의 신규 고객사 확보와 중국 시장 확대 속도, 그리고 구딕스 등 경쟁사 신제품 대응 상황을 지켜볼 필요가 있다.",
+    "en": "It is worth watching the pace of new customer acquisition and Chinese market expansion for the laptop/tablet touchpad module business, as well as how the company responds to competitors' new products such as Goodix's."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "지니틱스는 웨어러블 터치IC 글로벌 선두라는 뚜렷한 기술 경쟁력을 보유하고 있으나, 2025년 매출 급감(-32.7%)과 영업손실 재확대(OPM -23.5%)로 재무구조가 크게 악화됐다. 2026년 1분기 손실 폭이 직전 분기 대비 크게 좁혀진 점은 긍정적이나, 연간 흑자 전환 여부는 아직 확인이 필요하다. 최대주주 헤일로의 63억원 자금 지원과 글로벌 시너지 기대가 강세 요인으로 작용하는 반면, 2024년 8월 이후 이어진 지배구조 갈등의 완전한 안정화가 핵심 선결 조건이다. 액션캠·로봇IC·GaN 전력IC·터치패드 모듈 등 신사업이 실제 매출로 전환되는 속도와 삼성전자 등 주요 고객사 모델 채택 확대 여부가 중기 실적을 좌우하는 핵심 변수다. 글로벌 스마트워치 시장의 연평균 약 15.7% 성장 전망은 핵심 사업의 구조적 수요 기반을 장기적으로 지지한다. 이해관계자 입장에서는 2026년 2분기 실적, 지배구조 안정화 경과, GaN IC 과제 완료 및 신사업 수주 공시를 순차적으로 확인하며 실질적인 펀더멘털 변화를 추적하는 접근이 필요하다.",
-   "en": "Zinitix holds a clear competitive advantage as the global leader in wearable touch ICs, but the 32.7% revenue decline in 2025 and a return to significant operating losses (OPM –23.5%) have materially weakened its financial structure. The meaningful sequential loss narrowing in Q1 2026 is encouraging, yet full-year profitability recovery has not been confirmed. Major shareholder Halo's KRW 6.3bn capital injection and potential business synergies are meaningful positives, while full stabilization of the governance relationship—which produced legal disputes from August 2024—remains a critical prerequisite for operational clarity. The speed at which new business segments (action-cam IC, robot IC, GaN power IC, touchpad modules) contribute to revenues, and the extent of new-model adoption by key OEM customers, will be the primary medium-term earnings determinants. The global smartwatch market's projected CAGR of approximately 15.7% provides a structural long-term demand foundation for the core business. Stakeholders should track Q2 2026 results, governance relationship stability, GaN IC project completion, and new-contract disclosures as sequential checkpoints for reassessing the company's fundamental direction."
+   "ko": "지니틱스는 2024년 매출 541억원, 영업이익 2.8억원으로 흑자전환에 성공했으나 2025년에는 매출이 364억원으로 급감하고 영업손실 86억원, 지배주주 순손실 96억원으로 다시 큰 폭의 적자로 돌아섰다. 다만 2025년 4분기 42억원에 달했던 영업손실이 2026년 1~2분기에는 9억~10억원 수준으로 줄어드는 흐름을 보였다. 이 기간 자본총계는 크게 줄고 부채비율은 급등해 재무 건전성이 약화된 모습이다. 회사는 노트북·태블릿 터치패드, 액션캠, 로봇·드론용 IC 등으로 사업을 다각화하며 신규 성장동력을 모색하고 있고, 최대주주 헤일로는 2026년 3월 유상증자를 통해 자금을 직접 투입했다. 최대주주와 경영진 간 경영권 분쟁은 2025년 7월 해임안 부결로 일단락됐지만, 국가핵심기술 지정에 따른 외국인 이사 선임 승인 절차와 그 이후의 대표이사 교체 정황 등 지배구조 관련 불확실성은 여전히 남아 있다. 신사업의 매출 기여 속도와 다음 분기 실적의 손익 개선 지속 여부가 향후 확인해야 할 핵심 변수다.",
+   "en": "Zinitix achieved a profit turnaround in 2024 with revenue of KRW 54.1bn and operating profit of KRW 0.28bn, but reverted to a large loss in 2025 as revenue fell sharply to KRW 36.4bn alongside an operating loss of KRW 8.55bn and an owners' net loss of KRW 9.58bn. Still, the operating loss that reached KRW 4.19bn in Q4 2025 narrowed to roughly KRW 0.86bn-1.01bn in Q1-Q2 2026. Over this period total equity fell sharply and the debt ratio rose steeply, indicating weakened financial soundness. The company is diversifying into laptop/tablet touchpads, action cameras, and robotics/drone ICs to seek new growth drivers, and major shareholder HALO directly injected capital through a March 2026 rights offering. The governance dispute between the major shareholder and management was largely settled when a dismissal motion failed in July 2025, but uncertainty remains around the approval process for foreign director appointments under the national core technology designation, as well as indications of a subsequent change in CEO. The pace at which new businesses contribute to revenue, and whether the profit improvement trend continues into the next quarters, remain the key variables to watch."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A303030",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=646097",
-  "https://valueline.co.kr/finance/summary/303030",
+  "https://www.kokstock.com/stock/item.asp?item_cd=303030",
   "https://www.digitaltoday.co.kr/news/articleView.html?idxno=642476",
   "https://finance.finup.co.kr/Stock/303030",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A303030",
-  "https://www.sedaily.com/article/20056236",
-  "https://m.thinkpool.com/item/303030",
   "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=303030",
-  "https://dartpoint.ai/01318933",
-  "https://zinitix.com/",
+  "https://m.thinkpool.com/item/303030",
+  "https://m.irgo.co.kr/IR-COMP/303030/%EC%A7%80%EB%8B%88%ED%8B%B1%EC%8A%A4-IR-PAGE",
+  "https://mbnmoney.com/stock/item/chart?code=303030",
+  "https://kita.net/researchTrade/report/tradeBrief/downloadTradeBriefFile.do;JSESSIONID_KITA=6258EC877AA45CE1F56C5709D544D6A2.Hyper?no=960BC4669ECB61EC1C90F592AD863E03&fileSeq=B0721B9F23054DDC7FE56C2811A12715",
   "http://www.finomy.com/news/articleView.html?idxno=251797",
-  "https://moneypie.net/wiki/v/지니틱스",
-  "https://www.komachine.com/ko/companies/zinitix",
-  "https://m.etnews.com/20201125000059",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=419871",
+  "https://zinitix.com/",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20220314001004",
+  "https://news.skhynix.co.kr/2026-market-outlook/",
   "https://www.jobkorea.co.kr/recruit/co_read/c/sain1231",
-  "https://www.hellot.net/news/article.html?no=96777"
+  "https://www.opinionnews.co.kr/news/articleView.html?idxno=120137",
+  "https://www.mt.co.kr/stock/2025/07/04/2025070414253127575",
+  "https://www.asiatime.co.kr/article/20250709500393",
+  "https://www.thebell.co.kr/front/newsview.asp?key=202504291425544800106765",
+  "https://www.smarttoday.co.kr/news/articleView.html?idxno=85108"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "303030",
  "name": "지니틱스",
  "name_en": "Zinitix Co.,Ltd.",
@@ -233,9 +223,9 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 04:36",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 19:22",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 1994,
-   "mcap": 0.0183,
+   "price": 1559,
+   "mcap": 0.0143,
    "shares": 9157476,
    "total_shares": 9157476,
    "wavg_shares": null,
    "per": null,
    "eps": -950,
-   "pbr": 1.362,
+   "pbr": 1.0649,
    "bps": 1464,
    "roe_ttm": -60.8,
    "ttm_window": "2025Q3~2026Q2",

@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "3년 적자 탈출, 이익 지속성이 관건",
-  "en": "Breaking a Three-Year Loss Streak — Profit Sustainability Is the Key Question"
+  "ko": "흑자 전환 이후 다시 흔들리는 실적",
+  "en": "Swinging Back After a Turn to Profit"
  },
  "lead": {
-  "ko": "신도기연은 2025년 OLED·폴더블 디스플레이 후공정 장비 대형 수주 납품을 기반으로 3년 연속 적자에서 흑자 전환에 성공했으나, 연간 매출의 약 82%가 4분기 단일 분기에 집중된 프로젝트성 구조와 2026년 1분기 재적자 전환이 이익 지속성에 대한 핵심 의문으로 남는다.",
-  "en": "Shindo Eng. Lab. returned to profitability in FY2025 after three consecutive loss years, driven by large OLED and foldable display back-end equipment deliveries, but a project-heavy revenue structure — with approximately 82% of annual sales concentrated in Q4 — and a renewed operating loss in Q1 2026 raise fundamental questions about earnings sustainability."
+  "ko": "신도기연은 2025년 흑자 전환에 성공했으나 2026년 2분기 대규모 영업손실을 기록하며 실적 변동성이 다시 부각되고 있다.",
+  "en": "Shindo Eng. Lab. returned to profit in 2025 but posted a large operating loss again in the second quarter of 2026, underscoring renewed earnings volatility."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 319억 원·영업이익 18억 원(OPM 5.7%)으로 2022년 이후 3년 연속 영업손실에서 탈출",
-   "en": "FY2025 consolidated revenue of KRW 31.9B and operating profit of KRW 1.8B (OPM 5.7%) marked an exit from operating losses in each of the preceding three fiscal years"
+   "ko": "2025년 연간 매출 319억원, 영업이익 18억원을 기록하며 3년 연속 적자에서 흑자로 전환했다.",
+   "en": "Annual revenue reached KRW 31.9 billion and operating profit KRW 1.8 billion in 2025, turning profitable after three straight years of losses."
   },
   {
-   "ko": "2025년 Q4 단일 분기에 매출 261억 원·영업이익 30억 원이 집중 — 연간 이익의 사실상 전부를 한 분기가 창출한 프로젝트 편중 구조",
-   "en": "Q4 2025 alone generated KRW 26.1B in revenue and KRW 3.0B in operating profit, effectively delivering the entire annual profit in a single quarter — a highly project-concentrated earnings structure"
+   "ko": "2026년 2분기에는 매출이 약 76억원으로 회복됐음에도 영업손실이 약 79억원까지 확대돼 분기별 실적 기복이 심화됐다.",
+   "en": "The company swung to a large operating loss of roughly KRW 7.9 billion in the second quarter of 2026 even as revenue recovered to about KRW 7.6 billion, highlighting sharp quarter-to-quarter swings."
   },
   {
-   "ko": "2026년 1분기 영업손실 재발(-13억 원, 매출 13억 원) — 수주 공백이 단기 실적에 미치는 민감도 재확인",
-   "en": "Q1 2026 returned to an operating loss of KRW -1.3B on revenue of KRW 1.3B, reconfirming the sharp near-term earnings sensitivity to order gaps"
+   "ko": "2026년 8월 LG디스플레이 베트남 법인과 약 58억원 규모의 장비 공급계약을 체결했는데, 이는 2025년 매출의 약 18%에 해당한다.",
+   "en": "In August 2026 the company signed a roughly KRW 5.78 billion equipment supply contract with LG Display Vietnam Haiphong, equal to about 18% of 2025 revenue."
   },
   {
-   "ko": "핵심 열 진공 합착기술을 수소연료전지 MEA 장비·스마트윈도 장비로 확장하며 디스플레이 사이클 의존도 완화를 중장기 과제로 추진",
-   "en": "Core thermal vacuum lamination technology is being extended into hydrogen fuel cell MEA manufacturing equipment and smart-window process equipment, addressing medium-to-long-term cycle dependency on display capex"
+   "ko": "삼성전자 폴더블 힌지 라미네이터 독점 공급 지위와 곡면(3D) 라미네이션 기술력을 바탕으로 경쟁 우위를 유지하고 있다.",
+   "en": "The company retains an exclusive supply position for foldable hinge laminators to Samsung Electronics and holds curved (3D) lamination technology that keeps competitive barriers high."
   },
   {
-   "ko": "전방 OLED 패널 시장은 2025~2030년 연평균 5% 생산능력 성장이 전망되나, 중국 현지 장비업체와의 가격 경쟁 심화가 수주 단가에 지속적 하방 압력",
-   "en": "OLED panel production capacity is projected to grow at a 5% CAGR from 2025 to 2030, but intensifying price competition from Chinese domestic equipment makers exerts sustained downward pressure on order pricing"
+   "ko": "2025년 영업이익 흑자에도 영업활동현금흐름은 적자를 지속했고, 수익인식의 적정성이 감사 핵심사항으로 지목됐다.",
+   "en": "Operating cash flow stayed negative in 2025 despite the profit turnaround, and revenue-recognition adequacy was flagged as a key audit matter."
   }
  ],
  "business": {
-  "ko": "신도기연(Shindo Eng. Lab., 영문 약호 SHINDO)은 2000년 설립된 디스플레이 후공정 장비 전문 기업으로, 2020년 7월 코스닥에 상장했다. 핵심 제품은 완성된 디스플레이 패널에 커버글라스·보호필름·편광판·터치센서 등을 부착하는 합착기(2D·3D Laminator, 힌지 라미네이터)와 압착 후 미세 기포를 제거하는 탈포기(Autoclave·STA)다. 동사는 2004년 세계 최초 매엽식 탈포기(STA), 2015년 세계 최초 곡면 진공 합착기(3D Laminator)를 개발해 글로벌 기술 선도성을 인정받았으며, 현재는 마이크로LED 제조공정용 본더(Vacuum Press)와 UV 몰딩 장비도 공급하고 있다. DART 사업보고서(2025년 말 기준) 기준 매출 구조는 합착기 13.5%, 기타 장비 제품 81.7%, 장비 개조·용역·유지보수 4.8%이며, 수출 비중은 약 80.9%에 달한다. 주요 고객은 국내 삼성(S사)·LG(L사) 및 중국 CSOT, BOE, Tianma, Visionox 등 글로벌 주요 패널 제조사다. 경쟁 구도는 중국 현지 장비업체들과의 가격 경쟁이 심화하는 구조이며, 동사는 기술 차별화와 국내외 주요 패널사 레퍼런스를 경쟁력 기반으로 삼는다. 사업 다각화 측면에서는 보유 열 진공 압력 기술을 수소연료전지 핵심 부품인 MEA(막전극접합체) 제조장비에 적용하고 있으며, 2024년 11월에는 미국 AlphaMicron사와 스마트윈도 공정장비 공급계약을 체결해 자동차용·건축용 시장 진출도 추진 중이다.",
-  "en": "Shindo Eng. Lab. (ticker 290520, English abbreviation SHINDO) is a KOSDAQ-listed (July 2020) specialist in display back-end process equipment, established in 2000. Its core products are laminators — 2D/3D Laminators and hinge laminators that bond cover glass, protective film, polarizers, and touch sensors to finished display panels — and debubbling machines (Autoclave/STA) that remove micro-air-bubbles after lamination. The company holds world-first milestones: a sheet-type inline debubbler (STA, 2004) and a curved 3D vacuum laminator (2015), and currently also supplies Vacuum Press bonders and UV-molding equipment for micro-LED processes. Per the DART annual report (FY2025), the revenue mix was laminators 13.5%, other equipment products 81.7%, and service/overhaul/maintenance 4.8%, with exports comprising approximately 80.9% of sales. Key customers include Samsung ('S') and LG ('L') domestically, plus Chinese panel giants CSOT, BOE, Tianma, and Visionox. The competitive landscape is characterised by intensifying price competition from Chinese domestic equipment makers; Shindo's defenses are technology differentiation and its reference base with leading panel manufacturers. On diversification, the company is applying its core thermal vacuum lamination technology to hydrogen fuel cell MEA (membrane electrode assembly) manufacturing equipment, and in November 2024 signed a smart-window process equipment supply contract with U.S.-based AlphaMicron, Inc., extending into automotive and architectural smart-window markets."
+  "ko": "신도기연은 2000년 설립되어 2020년 코스닥에 상장된 디스플레이 후공정 장비 전문업체로, 커버글라스와 패널을 진공·압력으로 부착하는 합착기(라미네이터)와 미세기포를 제거하는 탈포기를 주력 제품으로 생산한다. 매출의 상당 부분은 여전히 디스플레이 장비에서 발생하며, 삼성전자에는 폴더블 스마트폰용 힌지 라미네이터를 독점 공급하고 있고 중국 4대 패널사인 BOE·톈마·비전옥스·CSOT 등에도 곡면(3D) 라미네이터를 판매해왔다. 2026년 8월에는 LG디스플레이 베트남 법인(LG Display Vietnam Haiphong)과 디스플레이 제조용 장비 공급계약을 체결하며 고객 기반을 확장했다. 자회사 오토클레이브테크(지분 100%)는 터치패널 관련 장비를 생산·판매한다. 회사는 핵심 합착 기술을 응용해 수소연료전지 막전극접합체(MEA) 제조장비, 스마트윈도 공정장비 등으로 사업을 다각화하고 있으며 2023년부터 스마트윈도 장비를 국내외 업체에 납품하고 있다. 3D 라미네이션 분야에서는 과거 경쟁사였던 톱텍이 기술유출 이슈로 점유율이 줄어든 반면, 중국 업체들은 아직 상용화 실적을 내지 못한 것으로 파악되어 신도기연은 고난이도 곡면·폴더블 장비 영역에서 상대적 우위를 유지하고 있다. 2D 라미네이션 분야에는 제이스텍·AP시스템·디아이비 등이, 탈포기·합착기 전반에서는 이레테크·예스티·아바코 등이 경쟁사로 꼽힌다. 전방산업인 디스플레이 패널사들의 설비투자 주기에 실적이 크게 좌우되는 구조다.",
+  "en": "Shindo Eng. Lab. (SHINDO) was founded in 2000 and listed on KOSDAQ in 2020, specializing in back-end display equipment such as laminators that bond cover glass to panels under vacuum and pressure, and deaerators that remove micro air bubbles. A large share of revenue still comes from display equipment, and the company holds an exclusive supply position for foldable-phone hinge laminators to Samsung Electronics, while also having sold curved (3D) laminators to major Chinese panel makers including BOE, Tianma, Visionox and CSOT. In August 2026 the company signed a display manufacturing equipment supply contract with LG Display Vietnam Haiphong, broadening its customer base. Its wholly owned subsidiary, Autoclave Tech, produces and sells touch-panel related equipment. Building on its core bonding technology, the company has diversified into membrane electrode assembly (MEA) equipment for hydrogen fuel cells and smart-window process equipment, and has been supplying smart-window equipment to domestic and overseas customers since 2023. In 3D lamination, domestic rival Toptec has reportedly lost share amid technology-leak issues, while Chinese competitors have yet to achieve commercial-scale results, leaving Shindo with a relative edge in high-difficulty curved and foldable equipment. In 2D lamination, competitors include JStec, AP Systems and DIB, while in deaeration and general bonding equipment, companies such as Ire Tech, Yesti and Avaco are cited as rivals. Earnings remain closely tied to the capital-spending cycles of downstream display panel makers."
  },
  "earnings": {
-  "ko": "2022~2024년 동사는 3개 연속 사업연도 동안 영업손실을 기록했다. 2022년 매출 218억 원에 영업손실 -37억 원(OPM -17.1%), 2023년 매출 208억 원에 영업손실 -25억 원(OPM -12.1%), 2024년에는 매출이 106억 원으로 급감하며 영업손실이 -41억 원(OPM -38.7%)까지 악화됐다. 2025년은 뚜렷한 반등을 기록했다. 연결 매출은 319억 원으로 전년 대비 약 3배로 확대됐고, 영업이익은 18억 원(OPM 5.7%), 지배주주 순이익도 18억 원을 달성하며 흑자 전환에 성공했다. 그러나 분기 구조를 살펴보면, 2025년 Q1 매출 6.4억 원·영업손실 -11.2억 원, Q2 매출 7.5억 원·영업손실 -9.9억 원으로 상반기 전체가 적자였다. Q3에서 매출 44.2억 원·영업이익 8.7억 원으로 반등이 시작됐고, Q4에 매출 261.2억 원·영업이익 30.5억 원이 집중되며 연간 흑자를 완성했다. 이러한 극단적 Q4 쏠림은 대형 장비 프로젝트의 완공·인도 시점에 실적이 좌우되는 구조임을 명확히 보여준다. 2026년 1분기에는 매출 13.4억 원에 영업손실 -13.3억 원이 재발해, 외형이 수주 사이클에 크게 의존함을 재확인했다. 재무 건전성 측면에서는 2025년 부채비율이 전년 19.5%에서 5.6%로 크게 하락했고, 자기자본은 592억 원을 유지해 양호하다. 다만 영업활동 현금흐름은 2025년 -50억 원으로, 순이익 대비 실현 현금 창출력은 제한적이었는데, 이는 대형 장비 프로젝트 특유의 운전자본 집행 패턴을 반영한다.",
-  "en": "For three consecutive fiscal years (2022–2024), the company reported operating losses. Revenue fell from KRW 21.8B in 2022 (OPM -17.1%) to KRW 20.8B in 2023 (OPM -12.1%), then dropped sharply to KRW 10.6B in 2024 (OPM -38.7%) with an operating loss of KRW -4.1B. FY2025 delivered a decisive turnaround: consolidated revenue nearly tripled year-over-year to KRW 31.9B, operating profit reached KRW 1.8B (OPM 5.7%), and net income attributable to controlling shareholders came in at KRW 1.8B. However, the quarterly breakdown reveals an extreme earnings concentration. Q1 2025 posted revenue of KRW 640M with an operating loss of KRW -1.1B; Q2 was similarly weak (revenue KRW 750M, operating loss KRW -991M). A turnaround began in Q3 (revenue KRW 4.4B, operating profit KRW 871M), and Q4 contributed KRW 26.1B in revenue and KRW 3.1B in operating profit — virtually the entire annual result in a single quarter. This pattern strongly suggests the 2025 turnaround was driven by the delivery timing of one or a few large equipment projects. The pattern re-asserted itself in Q1 2026, where revenue fell back to KRW 1.3B and an operating loss of KRW -1.3B re-emerged, reconfirming deep order-cycle dependency. On the balance sheet, the debt ratio improved sharply from 19.5% (2024) to 5.6% (2025), and equity remained solid at KRW 59.3B. Operating cash flow was KRW -5.0B in 2025 despite reported profits, reflecting the working capital dynamics of large equipment projects — a pattern worth monitoring going forward."
+  "ko": "신도기연의 연간 실적은 2022~2024년 3년 연속 적자에서 2025년 흑자로 전환됐다. 2025년 매출은 319억 2,324만원으로 2024년 105억 9,764만원 대비 크게 늘었고, 영업이익은 18억 761만원, 지배주주 순이익은 18억 926만원을 기록해 2024년 영업손실 40억 9,631만원, 순손실 5억 6,407만원에서 흑자로 돌아섰다. 다만 분기별로 보면 실적 편차가 매우 크다. 2025년 2분기 매출은 7억 4,889만원에 불과했고 영업손실 9억 9,079만원, 지배주주 순손실 27억 3,247만원을 냈으나, 3분기 매출이 44억 1,783만원으로 늘며 영업이익 8억 7,134만원으로 흑자 전환했고 순이익도 18억 4,693만원을 기록했다. 4분기에는 매출이 261억 2,046만원까지 급증하며 영업이익 30억 4,907만원, 순이익 36억 7,028만원을 기록해 연간 실적의 대부분이 4분기에 집중됐다. 그러나 2026년 1분기 매출은 13억 4,042만원으로 급감하며 영업손실 13억 2,674만원을 기록했고(순이익은 비영업적 요인으로 5억 3,894만원 흑자), 2026년 2분기에는 매출이 76억 1,910만원으로 다소 회복됐음에도 영업손실이 78억 7,613만원까지 확대되고 지배주주 순손실도 71억 5,478만원에 달해 최근 4개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순이익은 -10억 9,863만원으로 다시 적자권에 들어섰다. 매출과 이익이 특정 분기, 특히 대형 계약의 수익 인식 시점에 몰리는 구조여서 분기 간 변동성이 극심하며, 2025년에는 영업이익 흑자에도 영업활동현금흐름이 -50억 205만원으로 악화돼 이익의 현금창출력에 대한 의문이 제기된 바 있다. 부채비율은 2025년 5.6%로 낮은 수준을 유지해 재무 안정성 자체는 양호한 편이다.",
+  "en": "Shindo Eng. Lab.'s annual results turned from three consecutive years of losses in 2022-2024 to profit in 2025. Revenue reached KRW 31,923,243,012 in 2025, sharply higher than KRW 10,597,641,707 in 2024, while operating profit came in at KRW 1,807,614,008 and net profit attributable to owners at KRW 1,809,258,031, reversing the 2024 operating loss of KRW 4,096,312,646 and net loss of KRW 564,074,247. Quarterly results, however, show extreme swings. Revenue was only KRW 748,886,474 in the second quarter of 2025 with an operating loss of KRW 990,791,872 and a net loss attributable to owners of KRW 2,732,468,494, before revenue rose to KRW 4,417,826,382 in the third quarter, turning operating profit positive at KRW 871,342,755 and net profit at KRW 1,846,930,825. Revenue then surged to KRW 26,120,458,515 in the fourth quarter of 2025, with operating profit of KRW 3,049,073,048 and net profit of KRW 3,670,275,314, meaning most of the annual result was concentrated in a single quarter. Revenue fell back sharply to KRW 1,340,418,791 in the first quarter of 2026 with an operating loss of KRW 1,326,743,149 (net profit was still positive at KRW 538,937,677 due to non-operating items), and although revenue recovered somewhat to KRW 7,619,100,728 in the second quarter of 2026, the operating loss widened to KRW 7,876,128,170 and the net loss attributable to owners reached KRW 7,154,776,296, pushing the trailing four-quarter (Q3 2025-Q2 2026) net profit attributable to owners back into negative territory at KRW -1,098,632,480. This pattern, in which revenue and profit are concentrated in specific quarters tied to the timing of large-contract revenue recognition, produces extreme quarter-to-quarter volatility, and in 2025 operating cash flow was negative at KRW -5,002,049,829 despite the operating profit, raising questions about the cash-generating quality of reported earnings. The debt ratio remained low at 5.6% in 2025, suggesting the balance sheet itself stayed relatively sound."
  },
  "industry": {
-  "ko": "디스플레이 후공정(Cell+Module) 장비 시장은 전방 패널 업체의 CAPEX 사이클과 직결된다. 한국디스플레이산업협회 통계(2025년 Vol.4)에 따르면 2025년 말 전 세계 디스플레이 시장은 약 1,324억 달러로, LCD 약 60.1%, OLED 약 38.9%를 구성하며, 합착기·탈포기가 속한 후공정 장비 시장은 2025년 약 14억 달러로 추정된다. 카운터포인트리서치(2026년 3월)는 OLED 생산능력이 2025~2030년 연평균 5% 성장해 LCD(연평균 2%)를 크게 상회하고, 2026년 글로벌 디스플레이 총 생산능력도 전년 대비 2% 증가할 것으로 전망한다. 중국 패널 업체들(BOE, CSOT 등)은 정부 보조금을 기반으로 G8.7급 OLED 신규 투자를 지속하고 있어, 2029년에는 OLED 생산능력에서 한국을 추월할 것으로 예상된다. 이는 신도기연의 잠재 수주 풀을 확대하는 동시에 중국 현지 장비업체의 경쟁력 강화라는 양면성을 지닌다. 한국에서는 삼성디스플레이의 8.6세대 IT OLED 라인 양산 개시(2026년)와 폴더블 스마트폰 시장 확대가 고정밀 합착 장비 수요를 구조적으로 뒷받침한다. 반면 중국 패널 업체들이 자국 장비업체 육성을 강화하는 추세는 신도기연의 수주 경쟁 지위에 지속적인 압력 요인이 된다.",
-  "en": "The display back-end (Cell+Module) equipment market is directly linked to front-end panel manufacturers' capex cycles. According to the Korea Display Industry Association (2025, Vol.4), the global display market reached an estimated USD 132.4B at end-2025, with LCD at ~60.1% and OLED at ~38.9%; the back-end equipment segment covering laminators and debubblers is estimated at roughly USD 1.4B for 2025. Counterpoint Research (March 2026) projects OLED production capacity to grow at a 5% CAGR from 2025 to 2030 — well above LCD's 2% — while total global display production capacity is expected to rise 2% year-on-year in 2026. Chinese panel makers (BOE, CSOT, etc.) continue G8.7-generation OLED investments backed by government subsidies, and China is forecast to overtake Korea in OLED production capacity by 2029. This simultaneously expands the addressable order pool for Shindo while accelerating the competitive rise of domestic Chinese equipment suppliers. In Korea, Samsung Display's 8.6G IT OLED production ramp (2026) and the structural growth of the foldable smartphone market underpin demand for high-precision lamination equipment. Conversely, the trend among Chinese panel makers to actively cultivate domestic equipment suppliers represents a persistent competitive pressure on Shindo's order win rate."
+  "ko": "디스플레이 후공정 장비 산업은 삼성전자·LG디스플레이 등 국내 패널사와 BOE·CSOT·톈마·비전옥스 등 중국 패널사의 폴더블·OLED 신규 라인 투자 사이클에 실적이 좌우된다. 폴더블 스마트폰 시장은 삼성전자가 주도하고 있으며, 신도기연은 힌지 부위에 커버글라스와 OLED 패널을 부착하는 라미네이터를 독점 공급하며 관련 투자 확대의 수혜를 받아왔다. 반면 곡면(3D) 라미네이터 시장에서는 중국 경쟁사들이 낮은 곡률 제품 위주로 저가 수주에 나서면서 신도기연의 중국 내 점유율에 부담이 되고 있다. 국내에서는 3D 라미네이션 경쟁사였던 톱텍이 기술유출 이슈로 위축된 반면, 중국 업체(찐투어·씬싼리·썬커다 등)는 아직 연구개발 단계에 머물러 상용화 실적이 확인되지 않고 있어 고난도 영역에서는 진입장벽이 유지되고 있다. 탈포기·2D 라미네이션 분야는 제이스텍·AP시스템·디아이비 등과 경쟁하며, 중국 저가 업체들의 시장 진입으로 가격 경쟁이 심화되는 추세다. 전방 패널사들의 신규 투자는 스마트폰 신제품 출시 주기, 폴더블 침투율 확대 여부, 마이크로LED 상용화 속도 등에 연동돼 있어 장비사 실적도 이에 맞춰 계절성과 변동성이 크게 나타난다. 수소연료전지 MEA 장비, 스마트윈도 등 신사업은 아직 매출 기여가 제한적이나 디스플레이 의존도를 낮추는 방향으로 추진되고 있다.",
+  "en": "The display back-end equipment industry's results hinge on the capital-spending cycles of domestic panel makers such as Samsung Electronics and LG Display, as well as Chinese panel makers including BOE, CSOT, Tianma and Visionox, particularly for foldable and OLED lines. Samsung Electronics leads the foldable smartphone market, and Shindo has benefited from related investment expansion as the exclusive supplier of hinge-area laminators that bond cover glass to OLED panels. In curved (3D) laminators, however, Chinese rivals have increasingly won low-priced orders focused on lower-curvature products, pressuring Shindo's share in China. Domestically, former 3D-lamination rival Toptec has reportedly lost ground amid technology-leak issues, while Chinese firms such as Jintuo, Xinshanli and Sunkeda remain at the research and development stage without confirmed commercial results, keeping entry barriers intact in the highest-difficulty segments. In deaerators and 2D lamination, competition continues with JStec, AP Systems and DIB, and price competition has intensified as low-cost Chinese entrants expand. Panel makers' new investment is closely linked to smartphone launch cycles, the pace of foldable penetration, and the speed of micro-LED commercialization, so equipment makers' results also show pronounced seasonality and volatility in step with those cycles. New businesses such as hydrogen fuel cell MEA equipment and smart windows still contribute a limited share of revenue but are being pursued to reduce dependence on the display segment."
  },
  "outlook": {
-  "ko": "2026년 사업 전망은 새로운 대형 수주 확보 여부에 달려 있다. 2026년 1분기의 영업손실 재발은 2025년 Q4 집중 납품 이후 수주 공백이 발생했음을 시사하며, 상반기 실적은 전년 동기 대비 크게 약화될 전망이다. 하반기에는 삼성디스플레이의 8.6세대 IT OLED 라인 가동과 중국 CSOT 등 패널 업체의 신규 팹 증설이 장비 발주 기회로 연결될 가능성이 있다. 스마트윈도 사업은 자동차용 파일럿 장비 국내 납품과 건축용 해외 장비 납품 실적을 쌓고 있으며, DART 공시에 따르면 동사는 고객사와 긴밀히 협력하여 수주 확대를 목표로 하고 있다. 수소연료전지 MEA 장비는 Vacuum Press를 일부 고객사에 납품하고 있어 중장기 성장 동력이 될 수 있으나, 현재 전체 매출 기여도는 초기 단계다. OCR 잉크젯 장비 등 신기술 장비 라인업도 기존 합착기 사업과의 시너지를 목표로 개발 중이다. 단기적으로는 특정 대형 프로젝트의 수주 및 납품 시점이 연간 실적 전체를 좌우하는 구조가 유지되고 있어, 수주 잔고 변화와 분기별 매출 추이 모니터링이 필수적이다.",
-  "en": "The 2026 outlook hinges on the company's ability to secure new large-scale orders. The return to operating loss in Q1 2026 signals an order gap following concentrated Q4 2025 deliveries, and H1 2026 performance is expected to be significantly weaker than the prior year. For H2 2026, Samsung Display's 8.6G IT OLED ramp and ongoing capacity expansions at CSOT and other Chinese panel makers could translate into back-end equipment order opportunities. The smart-window segment has completed automotive pilot equipment deliveries domestically and a building-application delivery overseas; per DART disclosures, the company is working closely with customers to expand orders. Hydrogen fuel cell MEA equipment (Vacuum Press) has been delivered to select customers and represents a medium-to-long-term growth driver, though its current revenue contribution remains in an early stage. OCR inkjet printing equipment and other new technology platforms are also under development, targeting synergies with the existing laminator business. Near-term, the structure in which a handful of large project deliveries determine virtually all annual results remains unchanged, making order backlog monitoring and quarterly revenue tracking essential."
+  "ko": "회사는 2026년 8월 LG디스플레이 베트남 법인과 약 57.8억원 규모의 디스플레이 제조용 장비 공급계약을 체결했으며, 계약 이행 기간은 2026년 8월 22일부터 2027년 11월 30일까지 약 15개월로 설정돼 있어 향후 여러 분기에 걸쳐 매출로 인식될 전망이다. 이는 2025년 매출액의 약 18.1%에 해당하는 규모로, 향후 분기별 매출 배분 방식이 실적 변동성에 계속 영향을 줄 것으로 보인다. 회사는 과거 AlphaMicron 등 해외 업체와 스마트윈도 장비 공급계약을 체결한 바 있으며, 스마트윈도·수소연료전지 MEA 장비 등 신규 사업의 매출 비중 확대를 중장기 목표로 제시하고 있다. 2026년 6월에는 주식소각을 결정하며 주주가치 제고 노력을 병행하고 있다. 다만 대형 계약의 수익인식 시점과 관련해 감사보고서상 핵심감사사항으로 지목된 만큼, 향후 공시되는 계약 이행 현황과 매출인식 방식의 투명성이 관전 포인트가 될 전망이다. 폴더블 스마트폰 신모델 출시나 삼성전자·중국 패널사의 추가 투자 발표 여부도 수주 모멘텀에 영향을 줄 수 있는 변수다.",
+  "en": "In August 2026 the company signed a roughly KRW 5.78 billion display manufacturing equipment supply contract with LG Display Vietnam Haiphong, with the contract execution period running from August 22, 2026 to November 30, 2027, about 15 months, meaning the revenue is expected to be recognized over several coming quarters. This contract equals about 18.1% of 2025 revenue, and how it is allocated across quarters is likely to continue to influence earnings volatility. The company has previously signed smart-window equipment supply contracts with overseas customers such as AlphaMicron, and has set a mid- to long-term goal of expanding the revenue share of new businesses including smart windows and hydrogen fuel cell MEA equipment. In June 2026 the company decided to retire treasury shares, a step aimed at enhancing shareholder value. Because the timing of revenue recognition on large contracts was flagged as a key audit matter, the transparency of future contract-execution disclosures and revenue-recognition practices will be a point to watch. Additional variables include the launch of new foldable smartphone models and any further investment announcements from Samsung Electronics or Chinese panel makers, which could affect order momentum."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당순자산(BPS 3,768원)을 상당 폭 밑도는 구간에 위치해 순자산 대비 뚜렷한 할인이 형성돼 있다. 이 할인은 2022~2024년 3개 연속 영업손실로 이익 가시성이 훼손됐던 기간에 시장이 부여한 디스카운트를 아직 온전히 해소하지 못한 결과다. 적자 탈출 이후 주당순이익(EPS 210원)이 양전환됐다는 점에서 수익 기반이 확인됐으나, 연간 이익의 대부분을 Q4 단일 프로젝트가 창출한 구조는 이익의 반복 가능성에 불확실성을 부여하며 할인 유지의 주된 이유가 된다. 배당은 DART 공시 기준 지급 이력이 없어 배당수익률은 업종 평균을 크게 하회한다. 순자산 대비 할인 폭이 축소되려면 연속적인 수주 확보와 분기 매출의 고른 배분, 그리고 신사업(MEA·스마트윈도)의 기여 확대가 병행되는 것이 필요한 조건으로 판단된다.",
-  "en": "The current share price sits at a pronounced discount to book value per share (BPS: KRW 3,768), reflecting a market discount that has not yet fully unwound from the three consecutive years of operating losses (2022–2024) that eroded earnings visibility. The return to positive earnings per share (EPS: KRW 210) after exiting the loss period confirms that a profit base has re-emerged, but the fact that virtually all annual profits were generated by a single Q4 project delivery introduces uncertainty around earnings repeatability — the primary reason the discount persists. No cash dividend has been paid per DART disclosures, leaving the implied yield well below sector averages. For the discount to book value to meaningfully narrow, consecutive order wins, a more evenly distributed quarterly revenue profile, and expanding contribution from new businesses (MEA, smart windows) would likely need to materialise together."
+  "ko": "현재 주가는 순자산가치 대비 할인된 수준에서 거래되는 것으로 파악되며, 주가순자산비율은 상장 이후 거래 밴드의 하단권에 위치해 있다는 평가가 있다. 2025년 흑자 전환에도 2026년 상반기 들어 다시 순손실을 기록하면서 최근 네 개 분기 기준으로는 이익이 재차 마이너스로 돌아선 상태이며, 이는 배수 해석에 있어 참고할 부분이다. 배당은 최근 확정 배당금이 없어 배당수익률 측면에서 매력을 제공하지 못하는 구조다. 부채비율이 낮고 자기자본 규모가 안정적으로 유지되고 있다는 점은 재무 건전성 측면에서 긍정적으로 볼 수 있는 요인이나, 영업활동현금흐름이 손익과 괴리를 보이는 점은 자산가치 대비 주가를 평가할 때 함께 고려할 부분이다. 전반적으로 실적 변동성이 큰 종목 특성상 특정 분기 실적을 기준으로 한 배수 해석보다는 여러 분기에 걸친 추세를 함께 살펴볼 필요가 있다.",
+  "en": "The current share price appears to trade at a discount to net asset value, with some assessments placing the price-to-book ratio near the lower end of the trading band since listing. Even after the return to profit in 2025, the company posted a net loss again in the first half of 2026, pushing the trailing four-quarter profit attributable to owners back into negative territory, a point worth factoring into any multiple-based reading. There is currently no confirmed dividend, so the stock does not offer an appeal from a dividend-yield perspective. A low debt ratio and a stable equity base are factors that can be viewed positively for balance-sheet health, but the divergence between operating cash flow and reported earnings is also worth weighing alongside any asset-value comparison. Given the stock's pronounced earnings volatility, it may be more informative to look at trends across multiple quarters rather than reading multiples off any single quarter's results."
  },
  "bull": [
   {
    "title": {
-    "ko": "차세대 디스플레이 투자 사이클의 구조적 수혜 가능성",
-    "en": "Structural Beneficiary Potential of the Next-Generation Display Capex Cycle"
+    "ko": "흑자 전환과 대형 신규 계약",
+    "en": "Return to Profit and a Major New Contract"
    },
    "body": {
-    "ko": "삼성디스플레이의 8.6세대 IT OLED 양산 개시(2026년)와 중국 BOE·CSOT 등의 G8.7급 OLED 신규 투자는 후공정 합착·탈포 장비의 수요를 구조적으로 뒷받침한다. 폴더블 패널에서 커버 합착 정밀도 요구가 상승할수록 세계 최초 기술을 보유한 동사의 기술적 차별화가 부각될 수 있다. OLED 생산능력이 연평균 5% 성장하는 중장기 흐름 속에서 후공정 장비 시장도 동반 성장이 기대된다.",
-    "en": "Samsung Display's 8.6G IT OLED production ramp (2026) and new G8.7-generation OLED investments by BOE and CSOT structurally underpin demand for back-end lamination and debubbling equipment. Rising lamination precision requirements for foldable panels can amplify Shindo's technology differentiation, given its world-first development track record. The medium-to-long-term OLED capacity growth trajectory (5% CAGR) is expected to support a parallel expansion of the back-end equipment market."
+    "ko": "2025년 연간 실적이 3년간의 적자에서 벗어나 매출 319억원, 영업이익 18억원을 기록했다. 2026년 8월에는 LG디스플레이 베트남 법인과 약 58억원 규모의 신규 계약을 체결하며 고객 다변화에도 성과를 냈다. 2025년 4분기와 같이 특정 분기에 대규모 매출이 인식되는 구조가 반복될 경우 연간 실적 개선의 발판이 될 수 있다.",
+    "en": "Full-year 2025 results emerged from three years of losses, with revenue of KRW 31.9 billion and operating profit of KRW 1.8 billion. In August 2026 the company signed a new roughly KRW 5.78 billion contract with LG Display Vietnam Haiphong, adding customer diversification. If large revenue recognized in a single quarter, as seen in the fourth quarter of 2025, recurs, it could support further annual improvement."
    }
   },
   {
    "title": {
-    "ko": "저부채·고자기자본의 견고한 재무 안정성",
-    "en": "Low Leverage and Strong Equity Provide Financial Stability"
+    "ko": "독점적 기술 경쟁력",
+    "en": "Exclusive Technology Position"
    },
    "body": {
-    "ko": "2025년 말 부채비율 5.6%, 자기자본 592억 원으로 코스닥 소형 장비주 중에서도 재무 건전성이 돋보이는 수준이다. 차입금 의존도가 낮아 금리 환경 변화에 따른 이자 부담이 제한적이며, 대형 수주 이행을 위한 자체 조달 여력이 충분하다. 운전자본 부담이 큰 장비 수주 사업 특성상, 자기자본 여력은 수주 경쟁 및 프로젝트 이행 협상에서 실질적인 경쟁력이 된다.",
-    "en": "With a debt ratio of 5.6% and equity of KRW 59.3B at end-2025, the company's financial health stands out even among KOSDAQ small-cap equipment peers. Minimal reliance on debt limits interest cost exposure to rate changes, and ample internal funding capacity supports the fulfillment of large equipment orders. In an equipment business where working capital demands can be substantial, a solid equity base translates into tangible competitive strength in order bidding and project execution negotiations."
+    "ko": "삼성전자 폴더블 스마트폰용 힌지 라미네이터를 독점 공급하고 있으며, 2015년 세계 최초로 개발한 곡면 진공 합착기 기술을 바탕으로 고난도 3D 라미네이션 영역에서 경쟁우위를 유지하고 있다. 국내 경쟁사인 톱텍이 기술유출 이슈로 점유율을 잃은 가운데 중국 업체들도 아직 상용화 실적을 내지 못해 진입장벽이 유지되고 있다.",
+    "en": "The company holds an exclusive supply position for foldable-phone hinge laminators to Samsung Electronics and maintains a competitive edge in difficult 3D lamination based on curved vacuum bonding technology it first developed in 2015. Domestic rival Toptec has reportedly lost share amid technology-leak issues, and Chinese competitors have yet to achieve commercial results, keeping entry barriers in place."
    }
   },
   {
    "title": {
-    "ko": "핵심 기술 기반 신사업 — 디스플레이 사이클 의존 분산",
-    "en": "Core Technology Enables New Businesses That Diversify Away from the Display Cycle"
+    "ko": "낮은 부채비율과 사업 다각화",
+    "en": "Low Leverage and Business Diversification"
    },
    "body": {
-    "ko": "열 진공 압력 기술은 디스플레이 장비를 넘어 수소연료전지 MEA 제조장비와 스마트윈도 장비에 성공적으로 적용됐다. 수소연료전지 시장은 글로벌 탄소중립 정책과 맞물려 중장기 성장이 전망되며, 스마트윈도 시장도 자동차·건축 응용처에서 실수요가 형성되고 있다. 이들 신사업이 매출 비중을 높여 나갈수록 디스플레이 CAPEX 사이클에 대한 의존도가 낮아져 실적 변동성 완화에 기여할 수 있다.",
-    "en": "The core thermal vacuum lamination technology has been successfully extended beyond display equipment to hydrogen fuel cell MEA manufacturing equipment and smart-window process equipment. The hydrogen fuel cell market aligns with global net-zero policy tailwinds and is expected to grow over the medium-to-long term, while smart windows are seeing genuine demand in automotive and architectural applications. As these new businesses grow as a share of revenue, dependence on the display capex cycle should diminish, contributing to reduced earnings volatility."
+    "ko": "2025년 말 부채비율은 5.6%로 낮아 재무구조가 안정적이며, 수소연료전지 MEA 장비·스마트윈도 등 디스플레이 외 신사업을 통해 매출원 다변화를 추진하고 있다. 2026년 6월 주식소각 결정도 주주가치 제고 조치로 볼 수 있다.",
+    "en": "The debt ratio stood at a low 5.6% at the end of 2025, indicating a stable capital structure, and the company is pursuing revenue diversification beyond displays through hydrogen fuel cell MEA equipment and smart-window businesses. The June 2026 decision to retire treasury shares can also be viewed as a shareholder-value measure."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "Q4 극단적 이익 집중 — 이익 재현성 불확실",
-    "en": "Extreme Q4 Profit Concentration — Earnings Repeatability Uncertain"
+    "ko": "극심한 분기별 실적 변동성",
+    "en": "Extreme Quarter-to-Quarter Volatility"
    },
    "body": {
-    "ko": "2025년 연간 매출 319억 원 중 261억 원이 Q4에 집중됐고, Q1·Q2는 각각 6억·7억 원에 불과했다. 이는 특정 대형 프로젝트 완공·납품 시점에 연간 실적이 좌우되는 구조임을 보여준다. 2026년 1분기 영업손실 재발은 수주 공백이 즉각적으로 적자로 이어지는 사업 구조를 재확인시킨다. 장비 수주는 고객의 CAPEX 계획 변경에 따라 지연·취소될 수 있어 실적 예측성이 본질적으로 낮다.",
-    "en": "Of FY2025 revenue of KRW 31.9B, KRW 26.1B was recorded in Q4, while Q1 and Q2 generated only KRW 640M and KRW 750M respectively. This demonstrates that annual results are dominated by the delivery timing of single large projects. The renewed operating loss in Q1 2026 reconfirms that an order gap translates immediately into losses. Equipment orders are inherently susceptible to delay or cancellation when customers revise capex plans, meaning earnings predictability is structurally low."
+    "ko": "2025년 2분기 매출 7억원대에서 4분기 261억원까지 급증한 뒤 2026년 1분기 13억원대로 다시 급감하는 등 분기 실적의 기복이 매우 크다. 2026년 2분기에는 매출이 76억원으로 회복됐음에도 영업손실이 79억원에 육박해 최근 4개 분기 합산 순이익은 다시 적자로 전환됐다.",
+    "en": "Revenue swung from about KRW 0.7 billion in the second quarter of 2025 to KRW 26.1 billion in the fourth quarter, then fell back to about KRW 1.3 billion in the first quarter of 2026. Even though revenue recovered to about KRW 7.6 billion in the second quarter of 2026, the operating loss widened to nearly KRW 7.9 billion, pushing the trailing four-quarter net profit back into negative territory."
    }
   },
   {
    "title": {
-    "ko": "중국 현지 장비업체와의 경쟁 심화",
-    "en": "Intensifying Competition from Chinese Domestic Equipment Makers"
+    "ko": "이익의 질 논란",
+    "en": "Questions Over Earnings Quality"
    },
    "body": {
-    "ko": "주요 고객인 중국 패널 업체들이 자국 장비업체 육성을 강화하면서 신도기연의 수주 지위가 점차 위협받을 수 있다. 중국 현지업체들은 가격 경쟁력과 빠른 대응 속도를 앞세워 시장을 잠식하고 있으며, 이는 수주 단가와 수주 물량 모두에 하방 압력을 가한다. DART 사업보고서도 디스플레이 장비 부문의 주요 경쟁사로 중국 현지업체를 명시하고 있으며, 이 경쟁 구도는 중장기적으로 더 심화될 가능성이 크다.",
-    "en": "As major Chinese panel customers actively foster domestic equipment suppliers, Shindo's order position may face increasing pressure. Chinese local equipment makers are gaining share through price competitiveness and responsiveness, exerting downward pressure on both unit pricing and order volumes. Shindo's own DART annual report identifies Chinese local competitors as the primary competitive threat in the display equipment segment, and this dynamic is likely to intensify further over the medium-to-long term."
+    "ko": "2025년 영업이익 흑자에도 영업활동현금흐름은 -50억원을 기록해 손익과 현금흐름 간 괴리가 나타났다. 감사보고서에서는 수익인식의 적정성이 핵심감사사항으로 지목됐고, 단일판매·공급계약 공시가 여러 차례 정정된 이력도 확인된다.",
+    "en": "Despite the operating profit in 2025, operating cash flow was negative at about KRW -5.0 billion, showing a divergence between earnings and cash flow. The adequacy of revenue recognition was flagged as a key audit matter, and disclosures on single sales/supply contracts have reportedly been revised multiple times."
    }
   },
   {
    "title": {
-    "ko": "초소형 시가총액·유동성 제약 — 주가 변동성 확대 위험",
-    "en": "Micro-Cap Status and Limited Liquidity Amplify Share-Price Volatility"
+    "ko": "고객·전방산업 집중도",
+    "en": "Customer and Downstream Concentration"
    },
    "body": {
-    "ko": "발행주식 수 약 1,593만 주, 시가총액 약 287억 원 수준의 초소형 종목으로 기관투자자의 접근이 제한적이다. 유동성 부족으로 개별 수주 공시나 업황 변화 뉴스에 주가 변동성이 크게 확대될 수 있다. 소규모 기업 특성상 핵심 경영진·기술 인력 의존도가 높고, 삼성·LG 등 대형 고객사 대비 협상력의 불균형이 수익성에 영향을 미칠 수 있다.",
-    "en": "With approximately 15.93 million shares outstanding and a market capitalization of roughly KRW 28.7B, the stock qualifies as a micro-cap with limited institutional investor access. Thin liquidity can significantly amplify share-price volatility in response to individual order disclosures or sector news. As is typical of small companies, key-person and key-talent dependency is elevated, and scale imbalances in negotiations with large customers such as Samsung and LG can weigh on profitability."
+    "ko": "매출이 삼성전자, LG디스플레이, 중국 패널사 등 소수 대형 고객의 설비투자 사이클에 크게 의존하는 구조다. 폴더블·OLED 투자가 지연되거나 계약 일정이 변경될 경우 매출 인식 시점이 흔들리며 실적 변동성이 재현될 수 있다.",
+    "en": "Revenue depends heavily on the capital-spending cycles of a small number of large customers, including Samsung Electronics, LG Display and Chinese panel makers. Any delay in foldable or OLED investment, or changes to contract schedules, could shift revenue-recognition timing and reproduce earnings volatility."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "수주 집중·프로젝트 의존 리스크",
-    "en": "Order Concentration and Project-Cycle Dependency Risk"
+    "ko": "회계·공시 신뢰성 리스크",
+    "en": "Accounting and Disclosure Reliability"
    },
    "body": {
-    "ko": "연간 실적의 절대적 비중이 소수의 대형 장비 계약에 집중돼 있어, 특정 프로젝트의 지연·취소 시 즉각적이고 대규모 실적 타격이 발생한다. 2025년 상반기(Q1+Q2 합계 매출 13억 원)의 극도로 낮은 분기 매출이 이를 단적으로 보여준다. 신사업(MEA·스마트윈도)이 의미 있는 매출 비중을 확보하기 전까지는 이 구조적 취약성이 지속될 가능성이 높다.",
-    "en": "Annual results are overwhelmingly concentrated in a small number of large equipment contracts, meaning the delay or cancellation of a single project can cause an immediate and material earnings impairment. The extremely low combined H1 2025 revenue (Q1+Q2 total: KRW 1.4B) starkly illustrates this vulnerability. Until new businesses (MEA, smart windows) achieve a meaningful share of revenue, this structural weakness is likely to persist."
+    "ko": "유사한 단일판매·공급계약 공시가 반복적으로 정정된 이력이 있으며, 감사보고서에서 수익인식의 적정성이 핵심감사사항으로 지적된 바 있다. 이는 향후 대형 계약의 매출인식 시점과 규모에 대한 불확실성을 높이는 요인이다.",
+    "en": "Similar single sales/supply contract disclosures have reportedly been revised on multiple occasions, and the adequacy of revenue recognition was cited as a key audit matter in the audit report. This raises uncertainty over the timing and scale of revenue recognition on future large contracts."
    }
   },
   {
    "cat": {
-    "ko": "전방 디스플레이 CAPEX 사이클 리스크",
-    "en": "Front-End Display Capex Cycle Risk"
+    "ko": "고객 집중 및 수주 변동성",
+    "en": "Customer Concentration and Order Volatility"
    },
    "body": {
-    "ko": "디스플레이 후공정 장비 수요는 패널 업체의 투자 계획에 직결되며, 글로벌 경기 침체나 패널 수요 부진 시 투자가 일제히 지연되는 경향이 있다. 2022~2024년 3년 연속 영업손실은 당시 디스플레이 산업 CAPEX 조정이 직접적 원인 중 하나였다. 중장기적으로 OLED 설비투자는 성장세지만, 단기적으로는 과잉 공급 우려나 거시 불확실성에 따라 투자 속도가 늦춰질 수 있다.",
-    "en": "Display back-end equipment demand is directly tied to panel manufacturers' investment plans, and during economic downturns or panel demand slumps, investments tend to be simultaneously deferred. The three consecutive years of operating losses (2022–2024) were partly caused by a display industry capex correction cycle. While OLED capex shows a positive medium-to-long-term trend, investment pace can slow short-term in response to oversupply concerns or macroeconomic uncertainty."
+    "ko": "소수의 대형 고객(삼성전자, LG디스플레이, 중국 패널사)에 대한 의존도가 높아 특정 고객의 투자 축소나 계약 지연이 실적에 직접적인 영향을 줄 수 있다. 분기별 매출이 특정 계약의 인식 시점에 좌우되는 구조도 이 위험을 키운다.",
+    "en": "High dependence on a small number of large customers—Samsung Electronics, LG Display and Chinese panel makers—means that any reduction in a single customer's investment or contract delay could directly affect results. The structure in which quarterly revenue hinges on the timing of specific contract recognition also amplifies this risk."
    }
   },
   {
    "cat": {
-    "ko": "환율·지정학적 수출 리스크",
-    "en": "Currency and Geopolitical Export Risk"
+    "ko": "경쟁 심화",
+    "en": "Intensifying Competition"
    },
    "body": {
-    "ko": "2025년 수출 비중이 약 80.9%에 달해, 원화 절상 시 수출 매출의 원화 환산 가치가 하락하는 환율 리스크에 직접 노출된다. 주요 수출 시장인 중국의 규제·정책 변화, 한중 관계 변동, 미·중 무역 갈등 심화는 중국향 수주 및 납품에 불확실성을 야기할 수 있다. 글로벌 물류비 상승이나 납기 지연도 프로젝트 마진에 영향을 미칠 수 있는 부가 리스크다.",
-    "en": "With exports accounting for approximately 80.9% of 2025 revenue, the company is directly exposed to currency risk: Korean won appreciation reduces the won-equivalent value of export revenues. Policy or regulatory changes in China — the primary export market — as well as shifts in Korea-China relations or an escalation of U.S.-China trade tensions could introduce meaningful uncertainty into Chinese order flow and deliveries. Rising global logistics costs or delivery delays represent additional risks to project-level margins."
+    "ko": "중국 라미네이터 업체들의 저가 수주 확대와 국내 탈포기·2D 라미네이션 경쟁사들의 존재로 가격 경쟁이 이어지고 있다. 신규 진입 업체가 고난도 3D 라미네이션 기술을 확보할 경우 신도기연의 기술 우위가 약화될 가능성도 배제할 수 없다.",
+    "en": "Price competition continues as Chinese laminator makers expand low-priced orders and domestic rivals compete in deaerators and 2D lamination. If new entrants acquire high-difficulty 3D lamination technology, Shindo's technological edge could weaken, a possibility that cannot be ruled out."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표 확인. Q1 영업손실 이후 신규 수주 유입에 따른 매출 반등 여부를 점검. 상반기 합계 실적 수준이 연간 흑자 달성 가능성의 첫 번째 가늠자.",
-    "en": "Q2 2026 earnings release. Assess whether new order inflows have driven a revenue recovery from the Q1 operating loss. The cumulative H1 result is the first key gauge of full-year profitability potential."
+    "ko": "2026년 3분기 실적 공시가 예정돼 있어, 2분기 대규모 손실 이후 실적 반등 여부와 LG디스플레이 베트남 계약의 매출 인식 진행 상황을 확인할 시점이다.",
+    "en": "Third-quarter 2026 results are expected to be disclosed—an opportunity to check whether earnings rebound after the large second-quarter loss and how the LG Display Vietnam Haiphong contract's revenue recognition is progressing."
    }
   },
   {
    "when": {
-    "ko": "2026년 상반기~하반기 수시",
-    "en": "Throughout H1–H2 2026 (Ad Hoc)"
+    "ko": "2027년 11월 30일까지",
+    "en": "Through November 30, 2027"
    },
    "what": {
-    "ko": "DART 수시 공시를 통한 단일 판매·공급 계약 공시 확인. 2025년 Q4처럼 연간 실적을 좌우하는 대형 장비 계약의 발표 시점과 규모가 주가 방향성에 직결됨.",
-    "en": "Monitor DART ad hoc disclosures for large equipment supply contract announcements. As demonstrated in Q4 2025, the timing and scale of a major contract award that could dominate annual earnings will be a direct driver of share price direction."
+    "ko": "LG디스플레이 베트남 법인과의 약 58억원 규모 장비 공급계약 이행 기간으로, 계약이 예정대로 진행되는지와 분기별 매출 배분 방식을 지속 확인할 필요가 있다.",
+    "en": "The execution period of the roughly KRW 5.78 billion equipment supply contract with LG Display Vietnam Haiphong—ongoing monitoring is needed on whether the contract proceeds as scheduled and how revenue is allocated across quarters."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "H2 2026"
+    "ko": "2026년 4분기 중",
+    "en": "Fourth quarter of 2026"
    },
    "what": {
-    "ko": "삼성디스플레이 8.6세대 IT OLED 라인의 실제 양산 가동 진행 상황 및 관련 후공정 장비 발주 현황 모니터링. 동사 합착기의 참여 여부가 하반기 수주 회복의 핵심 변수.",
-    "en": "Monitor the actual production ramp progress of Samsung Display's 8.6G IT OLED line and related back-end equipment orders. Whether Shindo secures laminator orders tied to this ramp is a key variable for H2 2026 order recovery."
+    "ko": "삼성전자 등 주요 고객사의 신규 폴더블·OLED 라인 투자 발표나 추가 수주 공시 여부를 확인할 필요가 있다.",
+    "en": "Watch for any new investment announcements or additional order disclosures from major customers such as Samsung Electronics related to foldable or OLED lines."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 상반기",
-    "en": "H2 2026 – H1 2027"
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "수소연료전지 MEA 장비 및 스마트윈도 장비 관련 추가 수주 공시 여부 추적. 신사업 매출 비중이 전체에서 의미 있게 확대되는지가 사업 구조 개선 여부의 핵심 지표.",
-    "en": "Track additional order disclosures in hydrogen fuel cell MEA and smart-window equipment. A meaningful rise in new business revenue as a share of total sales is the key indicator of structural business improvement."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 연간 (수시)",
-    "en": "Ongoing Throughout 2026"
-   },
-   "what": {
-    "ko": "CSOT·BOE 등 중국 주요 패널 업체의 CAPEX 계획 변경 및 장비 수주 경쟁 동향 모니터링. 중국 현지 장비업체의 점유율 확대 속도는 동사의 수주 단가 및 물량 유지 가능성과 직결됨.",
-    "en": "Track capex plan revisions by major Chinese panel makers (CSOT, BOE, etc.) and competitive dynamics in equipment bidding. The pace at which Chinese domestic equipment makers expand market share directly affects Shindo's ability to maintain order volumes and unit pricing."
+    "ko": "2026 사업연도 정기 감사보고서 공시가 예상되며, 수익인식 적정성 관련 핵심감사사항이 재차 지적되는지와 영업현금흐름 개선 여부를 살펴볼 시점이다.",
+    "en": "The regular annual audit report for fiscal year 2026 is expected to be disclosed—worth checking whether the revenue-recognition key audit matter recurs and whether operating cash flow improves."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "신도기연은 세계 최초 기술 개발 이력과 삼성·LG·중국 주요 패널사를 아우르는 고객군을 바탕으로 디스플레이 후공정 장비 분야에서 독보적 입지를 구축한 코스닥 소형 전문 장비 기업이다. 2025년 흑자 전환은 3년 연속 적자 국면을 벗어난 명확한 전환점이었으나, 연간 이익 대부분이 Q4 단일 분기의 프로젝트 납품에서 비롯됐다는 점에서 이익 지속성에 대한 시장의 의구심은 여전히 유효하다. 2026년 1분기 영업손실 재발은 이 구조적 불확실성을 다시 한번 확인시켜 줬다. 중장기적으로는 OLED 시장의 구조적 성장, 폴더블·마이크로LED 등 차세대 디스플레이 확산, MEA 장비·스마트윈도 등 신사업 기여 확대가 핵심 성장 축이 될 수 있다. 부채비율 5.6%·자기자본 592억 원의 견고한 재무 구조는 하방 리스크를 방어하는 안전판 역할을 한다. 현재 주가가 순자산을 상당 폭 밑도는 배경에는 이익의 계절성·집중성과 수주 사이클 의존 구조가 자리 잡고 있으며, 연속적인 수주 확보와 분기별 매출 정상화, 그리고 신사업 매출 다각화의 진전이 이 할인 구조를 해소하는 필요 조건이 될 것이다.",
-   "en": "Shindo Eng. Lab. is a KOSDAQ micro-cap display back-end equipment specialist with a unique market position built on world-first technology milestones and a customer base spanning Samsung, LG, and major Chinese panel manufacturers. The FY2025 profit recovery was a clear inflection after three consecutive loss years, but the fact that virtually all annual earnings derived from a single Q4 project delivery means market skepticism about earnings repeatability remains well-founded. The renewed operating loss in Q1 2026 reconfirmed this structural uncertainty. Over the medium-to-long term, the structural growth of the OLED market, the proliferation of next-generation displays (foldable, micro-LED), and the potential expansion of new business contributions (MEA equipment, smart windows) represent the primary growth drivers. The company's solid balance sheet — debt ratio 5.6%, equity KRW 59.3B — provides a meaningful downside buffer. The current market discount to book value reflects the earnings seasonality, project concentration, and order-cycle dependency at the core of the business model; consecutive order wins, more evenly distributed quarterly revenue, and demonstrable new-business revenue diversification are the necessary conditions for that discount to narrow."
+   "ko": "신도기연은 2025년 3년간의 적자에서 벗어나 매출과 이익 모두 흑자로 전환했으나, 분기별로는 매출과 이익이 특정 계약의 인식 시점에 몰리며 극심한 변동성을 보이고 있다. 2026년 1분기와 2분기에는 다시 영업손실을 기록했고 최근 4개 분기 합산 지배주주 순이익도 적자로 돌아서, 흑자 전환의 지속성에 대한 의문이 남아있다. 삼성전자 폴더블 힌지 라미네이터 독점 공급과 곡면(3D) 라미네이션 기술력은 여전히 핵심 경쟁력으로 꼽히며, LG디스플레이 베트남 법인과의 신규 계약 등 고객 다변화 시도도 이어지고 있다. 다만 영업활동현금흐름이 손익과 다른 방향으로 움직이고 수익인식의 적정성이 감사상 핵심 사항으로 거론된 점은 실적의 질을 판단할 때 참고할 요인이다. 부채비율이 낮고 재무구조는 안정적인 편이나, 소수 대형 고객에 대한 의존과 전방산업 투자 사이클에 따른 매출 편차는 여전히 구조적 특징으로 남아있다. 향후 LG디스플레이 베트남 계약의 이행 추이와 3분기 실적, 차기 감사보고서의 핵심감사사항 재확인이 중요한 관찰 포인트다.",
+   "en": "Shindo Eng. Lab. emerged from three years of losses in 2025 with both revenue and profit turning positive, but on a quarterly basis, revenue and profit have been concentrated around the timing of specific contract recognition, producing extreme volatility. Operating losses returned in both the first and second quarters of 2026, and the trailing four-quarter net profit attributable to owners has swung back into negative territory, leaving questions about the durability of the profit turnaround. The company's exclusive supply of foldable hinge laminators to Samsung Electronics and its curved (3D) lamination technology remain cited as core competitive strengths, and customer diversification efforts continue, including the new contract with LG Display Vietnam Haiphong. However, the divergence between operating cash flow and reported earnings, along with the audit's key matter on revenue-recognition adequacy, are factors worth weighing when assessing the quality of results. The debt ratio is low and the capital structure appears stable, but dependence on a small number of large customers and revenue swings tied to downstream investment cycles remain structural characteristics. Going forward, the progress of the LG Display Vietnam contract, third-quarter results, and whether the next audit report repeats the key audit matter are important points to monitor."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A290520",
-  "https://markets.hankyung.com/stock/290520/financial-summary",
-  "https://markets.hankyung.com/stock/290520",
+  "https://www.fnnews.com/news/202301131040261787",
+  "https://kind.krx.co.kr/external/2026/03/23/000883/20260323004073/11011.htm",
+  "https://m.thinkpool.com/item/290520",
+  "https://finance.finup.co.kr/Stock/290520",
+  "https://www.asiae.co.kr/article/2021121509303349885",
+  "https://m.irgo.co.kr/IR-COMP/290520/",
+  "https://www.thelec.kr/news/articleView.html?idxno=9940",
+  "https://valueline.co.kr/finance/mri/290520",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=443496",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260323000883&docno=&viewerhost=",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250515000748&docno=&viewerhost=",
+  "https://dreago.kr/board/view/?gn=0&sgn=6&no=54829",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=IrCPQQ2YeuhmBEus",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=290520",
   "https://file.alphasquare.co.kr/media/pdfs/company-ir/20201222%EC%8B%A0%EB%8F%84%EA%B8%B0%EC%97%B0-%ED%9A%8C%EC%82%AC%EC%86%8C%EA%B0%9C-%EB%B0%8F-%EC%A3%BC%EC%9A%94-%EC%82%AC%EC%97%85%ED%98%84%ED%99%A9-%EC%84%A4%EB%AA%85%EA%B5%AD%EB%82%B4.pdf",
-  "https://company.mbnmoney.co.kr/stock/item/chart?code=290520",
-  "https://m.thinkpool.com/item/290520",
-  "https://m.finance.daum.net/quotes/A290520/news/stock/20230113105518732",
-  "https://m.irgo.co.kr/IR-COMP/290520/",
-  "https://m.irgo.co.kr/IR-COMP/187270/%EC%8B%A0%ED%99%94%EC%BD%98%ED%85%8D-IR-PAGE",
-  "https://m.irgo.co.kr/IR-COMP/002700/%EC%8B%A0%EC%9D%BC%EC%A0%84%EC%9E%90-IR-PAGE",
-  "https://m.irgo.co.kr/IR-COMP/125490/%ED%95%9C%EB%9D%BC%EC%BA%90%EC%8A%A4%ED%8A%B8-IR-PAGE",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/shindogi",
-  "https://m.irgo.co.kr/IR-COMP/006730/%EC%84%9C%EB%B6%80T&D-IR-PAGE",
-  "https://kind.krx.co.kr/external/2026/03/23/000883/20260323004073/11011.htm",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=391827",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=443496",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=438593"
+  "https://www.dailyan.com/news/article.html?no=776382",
+  "https://markets.hankyung.com/stock/290520/financial-summary",
+  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cn=&cmp_cd=025750"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "290520",
  "name": "신도기연",
  "name_en": "Shindo Eng. Lab., Ltd.",
@@ -233,9 +223,9 @@
   "기계·장비"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 04:07",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 19:22",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 1545,
-   "mcap": 0.0243,
+   "price": 1510,
+   "mcap": 0.0238,
    "shares": 15736164,
    "total_shares": 15929362,
    "wavg_shares": 15714581,
    "per": null,
    "eps": -71,
-   "pbr": 0.4617,
+   "pbr": 0.4513,
    "bps": 3346,
    "roe_ttm": -2.1,
    "ttm_window": "2025Q3~2026Q2",

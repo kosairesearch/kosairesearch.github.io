@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "4년 영업적자 후 첫 분기 흑자 — 구조 전환 지속성이 관건",
-  "en": "First Quarterly Profit After Four-Year Operating Loss Streak — Sustainability of Turnaround Is the Key Question"
+  "ko": "적자 지속 속 종자 강소기업의 체질 변화",
+  "en": "A Niche Seed Company Navigating Persistent Losses"
  },
  "lead": {
-  "ko": "2022년부터 이어진 연간 영업적자 구간에서 벗어나 2026년 1분기 연결 영업이익 12.2억원을 기록했으나, FY2025 결산에 나타난 이례적 대규모 역매출 사건과 누적 현금흐름 부진이 실질적 흑자 전환 여부를 판단하는 핵심 변수로 남아 있다.",
-  "en": "Asia Seed posted consolidated operating income of KRW 1.22 billion in 2026Q1, breaking out of a four-year operating loss streak, yet an extraordinary negative revenue entry recorded in Q4 2025 and persistently negative operating cash flows remain the central variables in assessing whether this represents a genuine and durable profitability recovery."
+  "ko": "아시아종묘는 채소종자 R&D 경쟁력과 해외 거점을 갖춘 코스닥 종자기업이지만, 2022~2025년 4개 연도 모두 순손실을 기록했고 최근 분기 실적도 흑자와 적자를 오가는 변동성을 보이고 있다.",
+  "en": "Asia Seed is a KOSDAQ-listed seed company with R&D strength and overseas breeding bases, but it has posted net losses in all four years from 2022 to 2025, and recent quarterly results have swung between profit and loss."
  },
  "keypoints": [
   {
-   "ko": "2026Q1 연결 영업이익 12.2억원·지배주주 귀속 순이익 15.0억원 — 제공된 분기 데이터 중 첫 영업흑자 달성",
-   "en": "2026Q1 consolidated operating income of KRW 1.22 billion and attributable net income of KRW 1.50 billion — first quarterly operating profit in the reported dataset"
+   "ko": "2022~2025년 연간 영업손익·순손익이 모두 적자를 기록했으며, 2025년 매출액은 2024년 대비 크게 줄었다",
+   "en": "Annual operating and net results were all in the red from 2022 through 2025, and 2025 revenue fell sharply from 2024 levels"
   },
   {
-   "ko": "FY2025 연간 매출 35.2억원(FY2024 대비 급락)·Q4 단독 약 -155.1억원 역매출: 대규모 연결 구조 조정 시사",
-   "en": "FY2025 annual revenue of KRW 3.52 billion (sharply lower than FY2024's KRW 24.6 billion) with an extraordinary Q4 revenue reversal of approx. KRW -15.51 billion, suggesting a major consolidation/structural accounting adjustment"
+   "ko": "2026년 1분기는 매출 88억4천만원, 영업이익 12억2천만원으로 흑자 전환했으나 2분기 다시 영업손실로 돌아섰다",
+   "en": "In Q1 2026 revenue reached KRW 8.84 billion with operating profit of KRW 1.22 billion, but the company slipped back into an operating loss in Q2"
   },
   {
-   "ko": "42개국 260개사 수출 네트워크, 인도 양배추 시장 점유율 1위 목표 — K-종자 글로벌 확장 지속",
-   "en": "Export network covering 42 countries and 260 trading partners; targeting No. 1 market position in India's cabbage seed market — ongoing K-seed global expansion"
+   "ko": "243개 작물·1,444개 품종을 보유하고 웅성불임성 양배추·브로콜리, 유색 어린잎·새싹채소 분야에서 독자적 입지를 갖고 있다",
+   "en": "The company holds 243 crops and 1,444 varieties, with a distinctive position in male-sterile cabbage and broccoli breeding and colored baby-leaf and sprout varieties"
   },
   {
-   "ko": "부채비율 FY2023 90.4% → FY2024 80.8% → FY2025 72.2%로 개선 추세, 자기자본 약 241억원 유지",
-   "en": "Debt-to-equity ratio on an improving trend: 90.4% (FY2023) → 80.8% (FY2024) → 72.2% (FY2025); shareholders' equity stable at approximately KRW 24.1 billion"
+   "ko": "인도·베트남 해외 연구거점과 동남아 수출 확대, 정부의 제3차 종자산업 육성 5개년 계획이 성장 배경으로 거론된다",
+   "en": "Overseas research bases in India and Vietnam, expanding exports to Southeast Asia, and the government's third five-year seed industry plan are cited as growth backdrops"
   },
   {
-   "ko": "정부 제3차 종자산업 육성 종합계획(2023~2027, 1.94조원 투자) 및 디지털 육종 R&D 국책 과제 수혜 기대 구도",
-   "en": "Positioned to benefit from the government's 3rd Seed Industry Development Plan (2023–2027, KRW 1.94 trillion) and upcoming KRW 700 billion digital breeding national R&D program (2025–2034)"
+   "ko": "부채비율은 2023년 90.4%에서 2025년 72.2%로 낮아졌지만, 다년간의 연속 적자로 재무 체력에 대한 점검이 필요하다",
+   "en": "The debt ratio declined from 90.4% in 2023 to 72.2% in 2025, but multi-year consecutive losses warrant continued scrutiny of financial resilience"
   }
  ],
  "business": {
-  "ko": "농업회사법인 아시아종묘(주)는 2004년 설립되어 2018년 코넥스에서 코스닥으로 이전 상장한 채소종자·농자재 전문 기업이다. 사업은 크게 종자사업과 농자재사업(상토·비료·바이오차 등)으로 구성되며, 종자사업이 핵심 부문이다. 주력 작물은 양배추·고추·무·양파·토마토 등 채소류로, 기능성 품종 및 고부가가치 F1 교배종 개발에 역점을 두고 있다. 국내 유통은 900여 개 시판망을 통해 농가에 종자를 공급하며, 해외는 중국(2곳)·미국·인도·인도네시아·미얀마·튀르키예 등 7개 해외 법인과 딜러십 거래처를 통해 42개국 260개사에 수출 중이다. 연구개발 인프라로는 국내 4개소(이천 생명공학육종연구소·김제 과채류연구소·해남 남부연구소·안성)와 해외 2개소(인도·베트남)를 운영하며, 장영실상과 대한민국 엔지니어상을 수상한 이력이 있다. 양배추 수출 대표 품종인 '대박나(내서성·내병성)'와 국산화에 성공한 월동형 '윈스톰', 인도 점유율 1위를 목표로 하는 'CT-411' 등이 핵심 수출 상품으로, 동유럽·미주 시장 진출도 추진 중이다. 2024년 말에는 라오스와 농업교류 채소종자 4톤 지원 협약을 체결하며 신흥 동남아 시장 개척에도 나서고 있다. 경쟁 구도는 국내 1위 농우바이오를 비롯해 팜한농·조은종묘 등과 겨루는 동시에, 글로벌 시장에서는 바이엘(전 몬산토)·신젠타·코르테바 등 다국적 종자 기업과 경합하는 이중 경쟁 구조를 지닌다.",
-  "en": "Asia Seed Co., Ltd. was founded in 2004 and transferred its listing from KONEX to KOSDAQ in 2018, specializing in vegetable seeds and agricultural materials (growing media, fertilizers, and biochar). The business is divided into a core seed segment and an agricultural materials segment. Key crops include cabbage, pepper, radish, onion, and tomato, with a strategic focus on functional and high-value F1 hybrid variety development. Domestically, seeds are distributed through more than 900 retail channels, while internationally the company exports to 42 countries and 260 trading partners via seven overseas subsidiaries—in China (×2), the United States, India, Indonesia, Myanmar, and Turkey—and additional dealership networks. R&D infrastructure spans four domestic laboratories (Icheon bioengineering, Gimje fruit-and-vegetable, Haenam, Anseong) and two overseas labs (India, Vietnam); the Icheon facility has received Korea's prestigious Jang Young-sil Award. Flagship export varieties include the heat-and-disease-tolerant 'Daebakna', the domestically developed winter cabbage 'Winstorm', and 'CT-411', which targets the No. 1 position in India; Eastern European and Americas market entry is also being pursued. In late 2024 the company signed an agricultural cooperation agreement to supply four metric tons of vegetable seeds to Laos, accelerating Southeast Asian expansion. Competitively, Asia Seed faces domestic rivals including market leader Nongwoo Bio, Pharm Hannong, and JoeunSeed, while globally competing against multinationals such as Bayer, Syngenta, and Corteva."
+  "ko": "아시아종묘는 2018년 코스닥에 상장한 종자 연구개발·생산·가공·유통·판매 기업이다. 회사는 243개 작물, 1,444개 품종의 채소종자를 생산·판매하며, 웅성불임성 양배추·브로콜리 품종개발과 유색 어린잎채소·새싹채소 육성 분야에서 독보적 위치를 갖고 있다. 고추, 무, 양파, 토마토 등 주력 작물의 품종 다각화와 기능성 품종 개발을 통해 시장 경쟁력을 강화하고 있다. 국내 연구거점은 경기 이천, 전북 김제, 전남 해남·영암 등 4곳에 있으며, 생명공학육종연구소와 김제 씨드밸리에서 매년 다수의 신품종을 육종하고 있다. 해외에서는 인도법인이 세계 양파 시장의 상당 부분을 차지하는 적양파 유전자원 수집과 종자 개발·수출을 담당하고, 베트남 연구소는 현지 기후에 맞는 품종 개발과 주변국 시장 진출 기지 역할을 하고 있다. 전통 육종 기술에 생명공학 기술을 접목해 신품종 개발 기간을 기존 7~10년에서 4~5년으로 단축하는 R&D 혁신도 추진 중이다. 최근에는 캄보디아, 라오스, 미얀마, 태국 등 동남아시아 시장으로 수출을 확대하고 있다. 국내 상장 종자기업이 많지 않은 만큼 산업 내 진입장벽이 높은 편이며, 다국적 종자기업들과 경쟁하는 구도 속에서 틈새 품종과 기능성 채소종자로 차별화를 시도하고 있다.",
+  "en": "Asia Seed is a seed research, production, processing, distribution, and sales company that listed on KOSDAQ in 2018. The company produces and sells vegetable seeds across 243 crops and 1,444 varieties, holding a distinctive position in male-sterile cabbage and broccoli variety development as well as colored baby-leaf and sprout vegetable breeding. It is strengthening market competitiveness through variety diversification and functional variety development in core crops such as chili pepper, radish, onion, and tomato. Its domestic research bases span four locations in Icheon (Gyeonggi), Gimje (North Jeolla), and Haenam and Yeongam (South Jeolla), where its biotechnology breeding institute and the Gimje Seed Valley breed numerous new varieties each year. Overseas, its India subsidiary handles genetic resource collection, seed development, and export of red onions, a category accounting for a large share of the global onion market, while its Vietnam research center develops region-appropriate varieties and serves as a base for expansion into neighboring markets. The company is also pursuing R&D innovation that integrates biotechnology with traditional breeding, shortening new variety development from seven-to-ten years to four-to-five years. It has recently been expanding exports into Southeast Asian markets including Cambodia, Laos, Myanmar, and Thailand. With relatively few listed seed companies in Korea, the industry carries high entry barriers, and the company differentiates itself through niche and functional vegetable varieties while competing against multinational seed majors."
  },
  "earnings": {
-  "ko": "FY2022~FY2024 연간 매출은 240억~264억원 구간에서 비교적 안정적이었으나, 영업이익은 4년 연속 적자로 FY2022 -16.0억원(OPM -6.6%), FY2023 -5.5억원(OPM -2.1%), FY2024 -11.2억원(OPM -4.6%)을 기록했다. 순이익은 FY2023에 지배주주 귀속 기준 -24.5억원으로 가장 크게 악화됐는데, 이 시기 연구개발비 증가와 해외법인 손실 등이 영업외 손익에 반영된 것으로 추정된다. FY2025 연간 매출은 35.2억원으로 급감했으며, Q4 단독으로 약 -155.1억원의 이례적 역매출이 기록된 점이 주된 원인이다. 이 분기에는 영업손실 -9.0억원, 지배주주 귀속 순손실 -19.4억원도 함께 확대됐으며, 종속회사 연결 제외 또는 대규모 회계 조정을 시사하는 비정상적 수치다. 영업 현금흐름은 FY2022(-24.2억원)·FY2023(-2.6억원)·FY2025(-5.3억원)에서 음수였고, FY2024만 +7.5억원으로 유일하게 양전환했다. 부채비율은 FY2023 고점 90.4%에서 FY2025 72.2%까지 단계적으로 개선됐고, 자기자본은 222억~247억원 수준에서 비교적 안정적으로 유지됐다. 직전 분기인 2025Q3(7~9월 추정)에는 매출 55.6억원·영업손실 -2.0억원으로 소폭 적자를 기록했다. 가장 주목할 변화는 2026년 1분기로, 매출 88.4억원에 영업이익 12.2억원(OPM 약 13.8%)·지배주주 귀속 순이익 15.0억원을 기록하며 데이터 내 첫 분기 영업흑자를 달성했다. 이는 구조 조정 이후 핵심 사업 수익성이 개선되고 있음을 보여 주는 신호이지만, 단일 분기 데이터인 만큼 지속성 확인이 필요하다.",
-  "en": "Annual revenues from FY2022 to FY2024 were relatively stable in the KRW 24.0–26.4 billion range, yet operating income remained negative throughout: KRW -1.60 billion (OPM -6.6%) in FY2022, KRW -0.55 billion (OPM -2.1%) in FY2023, and KRW -1.12 billion (OPM -4.6%) in FY2024. Attributable net income was most severely impacted in FY2023 at KRW -2.45 billion, likely reflecting elevated overseas subsidiary losses and rising R&D expenses. FY2025 annual revenue contracted sharply to KRW 3.52 billion, primarily driven by an extraordinary negative revenue entry of approximately KRW -15.51 billion in Q4, which also recorded operating loss of KRW -0.90 billion and attributable net loss of KRW -1.94 billion—figures consistent with a large-scale subsidiary deconsolidation or accounting adjustment. Operating cash flow was negative in FY2022 (KRW -2.42 billion), FY2023 (KRW -0.26 billion), and FY2025 (KRW -0.53 billion), with FY2024 the sole exception at +KRW 0.75 billion. The debt ratio improved step by step from a FY2023 peak of 90.4% to 72.2% in FY2025, while shareholders' equity held broadly stable at KRW 22.3–24.8 billion. The immediately preceding quarter (2025Q3) posted revenue of KRW 5.56 billion with operating loss of KRW -0.20 billion. Most notably, 2026Q1 delivered revenue of KRW 8.84 billion, operating income of KRW 1.22 billion (OPM approximately 13.8%), and attributable net income of KRW 1.50 billion—the first quarterly operating profit in the reported dataset, signaling a potential inflection point in the post-restructuring profitability trajectory."
+  "ko": "확정 재무 기준으로 아시아종묘는 2022년부터 2025년까지 4개 연도 연속 영업손실과 순손실을 기록했다. 연간 매출액은 2022년 240억4700만원, 2023년 263억9600만원, 2024년 245억9300만원을 유지하다 2025년 35억1600만원으로 크게 줄었고, 영업손실은 2022년 -15억9600만원, 2023년 -5억4600만원, 2024년 -11억2500만원, 2025년 -9억8900만원으로 나타났다. 영업이익률은 2023년 -2.1%까지 개선됐다가 2024년 -4.6%, 2025년에는 매출 축소 영향으로 -28.1%까지 악화됐다. 순손실(지배주주 기준)은 2022년 -6억500만원, 2023년 -24억5100만원, 2024년 -6억3400만원, 2025년 -13억6600만원으로 연도별로 크게 출렁였다. 영업활동현금흐름은 2022년 -24억2300만원, 2023년 -2억5800만원, 2024년 +7억5400만원으로 개선됐다가 2025년 다시 -5억3500만원으로 돌아섰다. 최근 분기 흐름을 보면 2025년 3분기 영업손실 -2억100만원, 4분기 영업손실 -8억9800만원으로 계절적 비수기 손실이 이어졌으나, 2026년 1분기에는 매출 88억4200만원, 영업이익 12억2000만원, 순이익 14억9700만원으로 흑자 전환했다. 그러나 2026년 2분기에는 매출 67억5100만원에 영업손실 -2억6300만원, 순손실 -2억9300만원으로 다시 적자로 돌아서면서 최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주 순손익 합계는 -13억600만원에 그쳤다. 부채비율은 2023년 90.4%로 정점을 찍은 뒤 2024년 80.8%, 2025년 72.2%로 낮아지는 흐름을 보였고, 자본총계(지배주주 기준)는 2023년 222억9200만원에서 2025년 241억100만원으로 다소 회복됐다.",
+  "en": "On a confirmed financial basis, Asia Seed posted operating losses and net losses for four consecutive years from 2022 through 2025. Annual revenue held at KRW 24.05 billion in 2022, KRW 26.40 billion in 2023, and KRW 24.59 billion in 2024, before falling sharply to KRW 3.52 billion in 2025, while operating losses were KRW -1.60 billion in 2022, KRW -0.55 billion in 2023, KRW -1.12 billion in 2024, and KRW -0.99 billion in 2025. The operating margin improved to -2.1% in 2023 before deteriorating to -4.6% in 2024 and further to -28.1% in 2025 as revenue contracted. Net loss attributable to owners fluctuated widely, from KRW -0.60 billion in 2022 to KRW -2.45 billion in 2023, KRW -0.63 billion in 2024, and KRW -1.37 billion in 2025. Operating cash flow moved from KRW -2.42 billion in 2022 to KRW -0.26 billion in 2023, improving to a positive KRW 0.75 billion in 2024 before reversing to KRW -0.53 billion in 2025. Looking at recent quarters, seasonal off-peak losses continued with an operating loss of KRW -0.20 billion in Q3 2025 and KRW -0.90 billion in Q4 2025, before the company swung to a profit in Q1 2026 with revenue of KRW 8.84 billion, operating profit of KRW 1.22 billion, and net profit of KRW 1.50 billion. However, Q2 2026 reverted to a loss, with revenue of KRW 6.75 billion, an operating loss of KRW -0.26 billion, and a net loss of KRW -0.29 billion, leaving the trailing four-quarter (Q3 2025 through Q2 2026) net loss attributable to owners at KRW -1.31 billion in total. The debt ratio peaked at 90.4% in 2023 before easing to 80.8% in 2024 and 72.2% in 2025, while owners' equity recovered somewhat from KRW 22.29 billion in 2023 to KRW 24.10 billion in 2025."
  },
  "industry": {
-  "ko": "국내 종자산업 시장 규모는 2022년 기준 8,754억원으로 전년 대비 3.1% 성장했으며, 이후에도 성장세를 이어가 2024년 추정 기준 9,719억원(전회 대비 약 11% 성장)에 달한 것으로 파악된다. 글로벌 종자 시장은 2025년 약 769억 달러 규모로 연평균 5% 안팎의 성장이 전망된다. 그러나 한국 종자산업의 세계 시장 비중은 약 1% 수준에 불과하며, 국내 2,143개 종자업체 중 92%가 연 매출 5억원 미만의 영세 업체로 구조적 한계가 뚜렷하다. 정부는 2023~2027년 제3차 종자산업 육성 종합계획을 통해 5년간 1.94조원을 투자하고, 2027년까지 국내 시장 1.2조원·수출 1.2억 달러 목표를 제시했다. 디지털 육종 상용화 R&D(2025~2034, 7,000억원 예정)와 김제 종자가공센터 구축(2023~2026)도 추진 중으로, 전문 종묘 기업에 기술·시설 지원이 강화되는 흐름이다. 수출 측면에서 전 세계 양배추 재배면적의 60% 이상이 중국·인도 등 아시아에 집중되어 있어, 내서성·내병성 품종에 강점을 지닌 아시아종묘에 구조적 기회가 된다. 다만 국내 1위 농우바이오의 연간 매출이 약 1,358억원 수준인 점을 감안하면 아시아종묘의 규모적 열위는 명확하며, 다국적 종자 기업의 특허·브랜드·유통망 장벽도 여전히 높다.",
-  "en": "Korea's domestic seed industry market was valued at KRW 875.4 billion in 2022, up 3.1% year-on-year, and is estimated to have reached approximately KRW 971.9 billion by 2024—roughly 11% growth versus the prior survey. The global seed market is projected at approximately USD 76.9 billion in 2025, with a CAGR of roughly 5%. Despite this growth backdrop, Korea accounts for only about 1% of global seed trade, and 92% of the country's approximately 2,143 registered seed companies generate annual revenues below KRW 500 million, reflecting a structurally fragmented industry. The government unveiled the 3rd Seed Industry Development Plan (2023–2027, KRW 1.94 trillion), targeting a domestic market of KRW 1.2 trillion and seed exports of USD 120 million by 2027; a KRW 700 billion digital breeding commercialization R&D program (2025–2034) and the Gimje Seed Processing Center (2023–2026) are also underway, signaling increasing policy support for specialized seed companies. On the export side, over 60% of global cabbage cultivation area is concentrated in Asia (China and India), creating structural opportunity for varieties with proven heat and disease tolerance. However, domestic leader Nongwoo Bio's annual revenues of approximately KRW 135.8 billion underscore Asia Seed's scale disadvantage, and multinational seed giants maintain formidable IP, brand, and distribution barriers."
+  "ko": "정부는 「종자산업법」에 따른 법정계획인 제3차 종자산업 육성 종합계획(2023~2027년)에 따라 5년간 종자산업에 대규모 투자를 계획하고 있으며, 2027년까지 산업 규모를 1.2조원, 수출액을 1.2억 달러로 확대하는 목표를 제시했다. 이 계획은 디지털 육종 기술 상용화, 글로벌 시장을 겨냥한 핵심 종자 개발, 김제 등에 종자산업혁신단지(K-Seed Valley)를 조성하는 인프라 확충을 골자로 한다. 국립종자원은 최근 러시아 등 여러 국가가 종자 수출 시 KOLAS 공인시험기관의 시험성적서를 요구하는 사례가 늘고 있는 점을 반영해, 2026년 3월부터 시험성적서 발급 수수료를 한시적으로 면제하는 지원을 추진하고 있다. 국내 종자시장은 규모가 크지 않고 다수의 소규모 업체가 난립한 반면, 글로벌 종자기업들은 인수합병을 통한 대형화로 원천기술을 선점하는 추세라 국내 기업의 상대적 규모는 여전히 작은 편이다. 이런 환경에서 아시아종묘는 상장된 국내 종자기업이 많지 않다는 희소성과 다수의 자체 연구거점을 보유한 R&D 역량을 경쟁 우위로 삼고 있다. 다만 종자 판매는 파종·재배 시기에 따른 계절성이 강하고, 기후 변화로 인한 병해충 발생 양상 변화가 품종 안정성에 영향을 줄 수 있어 국립종자원 등 공공기관과의 실증시험 협업이 산업 전반에서 중요해지고 있다.",
+  "en": "Under the third five-year Seed Industry Promotion Plan (2023-2027), a statutory plan mandated by the Seed Industry Act, the government plans large-scale investment in the seed industry over five years, targeting industry scale of KRW 1.2 trillion and exports of USD 120 million by 2027. The plan centers on commercializing digital breeding technology, developing core varieties aimed at global markets, and building infrastructure such as the K-Seed Valley cluster in Gimje. Reflecting an increase in countries such as Russia requiring KOLAS-accredited test certificates for seed exports, the Korea Seed & Variety Service has been promoting a temporary waiver of certificate issuance fees starting in March 2026. Korea's domestic seed market remains relatively small with many small operators, while global seed majors continue to consolidate through mergers and acquisitions to secure proprietary technology, leaving domestic players comparatively small in scale. In this environment, Asia Seed leverages the scarcity of listed domestic seed companies and its multiple in-house research bases as a competitive edge. Seed sales carry strong seasonality tied to planting and cultivation cycles, and changing pest and disease patterns from climate change can affect variety stability, making collaboration with public institutions such as the Korea Seed & Variety Service on field trials increasingly important across the industry."
  },
  "outlook": {
-  "ko": "2026년 1분기 영업흑자 전환은 FY2025 구조 조정 효과가 가시화되기 시작한 신호로 해석할 수 있다. 현재 아시아종묘는 베트남·인도네시아 시장을 타깃으로 한 내병성 조생종 양배추 개발과 윈스톰 후속 품종 'CT-719'의 실증 재배를 추진 중이며, 인도 시장에서의 점유율 확대가 지속될 경우 수출 매출 기반이 강화될 수 있다. 동유럽·브라질 등 종자 단가가 인도·중국 대비 최대 5배 높은 프리미엄 시장 진출도 중장기 전략으로 추진 중이다. 정부의 디지털 육종 R&D 및 종자산업 육성 계획은 중소 전문 종묘 기업의 기술 개발 비용을 부분적으로 지원할 수 있어 비용 구조 개선에 긍정적이다. 다만 회사는 공개 실적 가이던스를 제시하지 않고 있어 분기별 공시를 통한 추세 확인이 필요하며, 2026년 2~3분기의 봄·여름 파종 시즌이 흑자 지속성의 첫 번째 검증 구간이 될 전망이다. 2024년 말 체결된 라오스 채소종자 지원 협약은 단기보다는 중장기 동남아 시장 거점 마련 측면에서 주목된다.",
-  "en": "The operating profit recorded in 2026Q1 can be interpreted as an early signal that post-FY2025 restructuring is beginning to bear fruit. The company is actively developing disease-resistant early-maturing cabbage varieties targeting Vietnam and Indonesia, and is conducting field validation of 'CT-719', the successor to the 'Winstorm' winter cabbage variety; continued market share gains in India would further reinforce the export revenue base. Entry into premium markets such as Eastern Europe and Brazil—where seed prices are reportedly up to five times higher than in India or China—remains a medium-to-long-term growth ambition. Government support under the digital breeding R&D program and seed industry development plans could partially offset technology development costs, improving the cost structure over time. However, since the company does not provide public earnings guidance, quarterly DART disclosures remain the primary tracking mechanism; the spring-summer sowing season captured in 2026Q2 and Q3 will serve as the first meaningful test of whether profitability can be sustained. The December 2024 seed-support agreement with Laos is viewed as a medium-term, rather than near-term, catalyst for Southeast Asian market development."
+  "ko": "회사는 국립종자원이 주관하는 '2026년 기후변화 대응 실증시험포 조성·운영' 사업의 용역업체로 선정돼 강원 평창 대관령 시험포에서 배추·무·양배추 등의 생육 특성을 검증하고 있으며, 전남 해남에서는 배추·양배추의 월동성 평가를 추가로 진행할 예정이다. 회사 측은 이번 실증시험에서 축적한 현장 재배 데이터를 향후 기후변화 대응 품종 개발에 활용할 계획이라고 밝혔다. 해외에서는 캄보디아, 라오스, 미얀마, 태국 등 동남아 시장으로 수출을 확대하고 있으며, 인도와 베트남 연구소에서는 현지 기후에 맞춘 품종 개발을 지속하고 있다. 국내 연구거점인 이천 생명공학육종연구소와 김제 씨드밸리에서는 매년 다수의 신품종 육종이 이어지고 있다. 정부의 제3차 종자산업 육성 종합계획과 국립종자원의 수출 인증 지원책(KOLAS 수수료 면제) 등 정책 기반도 우호적 환경으로 거론된다. 다만 이러한 R&D·해외 확장 활동이 매출 및 손익 개선으로 이어지는 시점과 규모는 향후 분기·연간 공시를 통해 확인이 필요하며, 2026년 1분기의 흑자 전환이 지속 가능한 추세인지 여부는 아직 확정되지 않았다.",
+  "en": "The company was selected as the service provider for the Korea Seed & Variety Service's 2026 climate-change response demonstration trial field program, verifying growth characteristics of cabbage, radish, and cabbage varieties at a trial field in Daegwallyeong, Pyeongchang, Gangwon Province, with an additional winter-hardiness evaluation for cabbage varieties planned in Haenam, South Jeolla Province. The company has stated it plans to use field cultivation data accumulated from these trials for future climate-adaptive variety development. Overseas, it continues to expand exports into Southeast Asian markets such as Cambodia, Laos, Myanmar, and Thailand, while its India and Vietnam research centers continue developing region-appropriate varieties. Domestically, its Icheon biotechnology breeding institute and the Gimje Seed Valley continue to breed numerous new varieties each year. Policy tailwinds such as the government's third seed industry promotion plan and the Korea Seed & Variety Service's export certification support (the KOLAS fee waiver) are also cited as a favorable backdrop. However, the timing and magnitude by which these R&D and overseas expansion activities translate into revenue and earnings improvement still require confirmation through future quarterly and annual disclosures, and whether the Q1 2026 swing to profit represents a sustainable trend remains unconfirmed."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 공시 기준 주당순자산(BPS 2,120원)을 하회하며 순자산 대비 할인된 수준에서 거래되고 있다. 배당은 최근 결산 기준 미실시(DPS 0원)이므로 배당 수익률 기반 비교는 현 시점에서 의미를 갖지 않으며, 연속 영업적자로 수익가치 기반 밸류에이션(PER 적용)도 현재로선 정상적으로 산출되지 않는다. 2026년 1분기 영업흑자 전환이 향후 분기에서도 반복될 경우, 연간 이익을 기초로 한 가치 체계가 새롭게 형성될 수 있는 시점에 진입하는 것이다. 국내 종자 업종 비교군은 수익성 회복 국면에서 순자산 할인 폭이 축소되는 경향이 있어, 흑자 지속성 확인 여부가 현재의 순자산 할인 구간 해소의 핵심 변수가 될 것이다. 다년간의 적자가 반영된 리스크 프리미엄과 구조 변화 이후 수익성 개선 기대감이 현재의 밸류에이션 수준에 공존하고 있음을 주지할 필요가 있다.",
-  "en": "The current share price trades below the disclosed book value per share (BPS of KRW 2,120), placing the stock in a net-asset discount position. No dividend has been paid (DPS KRW 0 per the most recent fiscal year), precluding any yield-based valuation framework, and four consecutive years of net losses likewise render earnings-based valuation (PER) effectively inapplicable at present. Should the 2026Q1 operating profit prove repeatable in subsequent quarters, the foundation for an earnings-based valuation framework could emerge for the first time in several years. Domestic seed sector peers have historically seen their net-asset discounts narrow during profitability recovery phases, suggesting that confirmation of sustained earnings is the critical variable determining whether the current book-value discount compresses. The present valuation level reflects both the risk premium from the multi-year loss track record and nascent optimism surrounding the post-restructuring earnings trajectory, and these two forces warrant careful ongoing monitoring."
+  "ko": "아시아종묘는 다년간 순손실이 이어진 만큼 이익 기준 밸류에이션 지표를 적용하기 어려운 구간에 있다. 주가와 순자산의 관계를 보면, 회사의 자본총계는 몇 년간의 손실에도 크게 훼손되지 않고 완만한 회복세를 보였는데, 이는 시장이 부여하는 가치 평가와 비교해 볼 만한 참고점이 된다. 배당의 경우 최근 공시 기준으로 지급 내역이 없어 배당 관련 지표는 업종 평균과 단순 비교하기 어려운 상황이다. 과거 코스닥 종자 업종 내에서는 실적 개선 기대가 반영될 때 밸류에이션 밴드가 확장되고, 반대로 적자가 이어질 때 밴드가 축소되는 패턴이 관찰된 바 있다. 투자자들은 향후 분기 실적이 2026년 1분기와 같은 흑자 국면을 재현하는지, 아니면 2025년과 같은 적자 국면으로 회귀하는지에 따라 시장의 평가가 달라질 수 있다는 점을 참고할 필요가 있다.",
+  "en": "Asia Seed has posted net losses for multiple consecutive years, putting it in a range where earnings-based valuation metrics are difficult to apply. In terms of the relationship between share price and net assets, the company's equity base has not eroded materially despite several years of losses and has shown a gradual recovery, which offers a useful reference point relative to market pricing. Regarding dividends, there has been no payout under recent disclosures, making it difficult to draw a simple comparison against industry averages on dividend-related metrics. Within the KOSDAQ seed sector historically, valuation bands have tended to widen when earnings-improvement expectations are priced in, and to narrow when losses persist. Investors may want to note that market pricing could differ depending on whether future quarterly results repeat the profitable pattern seen in Q1 2026 or revert to the loss pattern seen through 2025."
  },
  "bull": [
   {
    "title": {
-    "ko": "2026Q1 첫 영업흑자 — 구조 전환의 가시적 신호",
-    "en": "First Quarterly Operating Profit in 2026Q1 — Tangible Signal of Structural Turnaround"
+    "ko": "R&D 기반 품종 차별화",
+    "en": "R&D-Driven Variety Differentiation"
    },
    "body": {
-    "ko": "2026년 1분기 연결 영업이익 12.2억원(OPM 약 13.8%)과 지배주주 귀속 순이익 15.0억원은 제공된 분기 데이터 중 처음으로 달성한 영업흑자다. FY2025 이례적 대규모 연결 조정을 거친 후 남은 핵심 사업이 두 자릿수 영업이익률을 발현하고 있다는 해석이 가능하다. 부채비율이 FY2023 90.4%에서 FY2025 72.2%로 꾸준히 낮아지며 재무 안정성도 개선되고 있는 점도 긍정적 요인이다. 이 추세가 2026년 2~4분기에도 이어질 경우, 다년간의 적자 구조에서의 구조적 탈피가 현실화될 수 있다.",
-    "en": "Asia Seed posted consolidated operating income of KRW 1.22 billion (OPM approximately 13.8%) and attributable net income of KRW 1.50 billion in 2026Q1—the first quarterly operating profit in the reported dataset. This suggests that after the extraordinary FY2025 consolidation adjustment, the remaining core business is capable of generating double-digit operating margins. The concurrent improvement in the debt ratio from 90.4% (FY2023) to 72.2% (FY2025) adds a constructive financial stability signal. If this momentum extends into 2026Q2 through Q4, a genuine structural exit from the multi-year loss cycle could materialize."
+    "ko": "웅성불임성 양배추·브로콜리, 유색 어린잎·새싹채소 등 독자적 육종 기술을 바탕으로 다국적 종자기업과 차별화된 틈새 시장을 확보하고 있다. 생명공학 기술을 접목해 신품종 개발 기간을 기존 7~10년에서 4~5년으로 단축하는 시도도 진행 중이다. 국내 4개 연구거점과 인도·베트남 해외 연구소를 통한 지속적 신품종 출시가 장기적 경쟁력의 기반이 된다.",
+    "en": "Building on proprietary breeding technology in male-sterile cabbage and broccoli, plus colored baby-leaf and sprout varieties, the company has carved out a niche differentiated from multinational seed majors. It is also working to shorten new variety development time from seven-to-ten years to four-to-five years by integrating biotechnology. Continued new variety launches through four domestic research bases plus overseas centers in India and Vietnam underpin its longer-term competitiveness."
    }
   },
   {
    "title": {
-    "ko": "글로벌 수출 네트워크 및 인도 양배추 시장 선점 역량",
-    "en": "Global Export Network and First-Mover Positioning in India's Cabbage Seed Market"
+    "ko": "동남아·인도 등 수출 확대",
+    "en": "Export Expansion in Southeast Asia and India"
    },
    "body": {
-    "ko": "아시아종묘는 42개국 260개 거래처와의 수출 관계를 유지하며, 양배추 종자는 중국·인도 등에 연 20톤 이상 수출하며 인도 시장 점유율 1위를 목표로 하고 있다. 인도는 세계 2위 채소 생산국으로 양배추 종자 연간 소요량이 약 50톤에 달하는 대규모 시장이며, 독자 품종 'CT-411'은 현지 내서성·내습성 요건을 충족해 경쟁력이 검증됐다. 동유럽·브라질 등 종자 단가가 인도·중국 대비 최대 5배 높은 프리미엄 시장 진출도 장기 수익성 개선 요소로 작용할 수 있다. 라오스 협약을 포함한 동남아 신흥 시장 개척도 중장기 수출 기반을 다지는 포석이 된다.",
-    "en": "Asia Seed maintains export relationships with 260 trading partners across 42 countries, exporting more than 20 metric tons of cabbage seeds annually to China and India with a stated aim of achieving No. 1 market share in India. India is the world's second-largest vegetable producer, with annual cabbage seed demand of approximately 50 metric tons; proprietary variety 'CT-411' has demonstrated competitive heat and humidity tolerance suited to local conditions. Entry into premium markets such as Eastern Europe and Brazil—where seed prices are reportedly up to five times those in India or China—represents a meaningful long-term revenue upgrade opportunity. Southeast Asian market development, including the Laos cooperation agreement, is laying the groundwork for a broader medium-to-long-term export base."
+    "ko": "캄보디아, 라오스, 미얀마, 태국 등으로 수출 시장을 넓히고 있으며, 인도법인은 세계 적양파 시장 관련 유전자원과 수출을 담당하고 있다. 국립종자원의 KOLAS 시험성적서 수수료 면제 등 수출 인증 지원 정책도 우호적 요인으로 꼽힌다. 해외 매출 다변화가 국내 계절적 수요 편차를 일부 상쇄할 잠재력이 있다.",
+    "en": "The company is broadening its export markets to Cambodia, Laos, Myanmar, and Thailand, while its India subsidiary handles genetic resources and exports related to the global red onion market. Export certification support policies, such as the Korea Seed & Variety Service's KOLAS fee waiver, are also cited as a favorable factor. Diversifying overseas revenue has the potential to partially offset seasonal demand swings in the domestic market."
    }
   },
   {
    "title": {
-    "ko": "정부 종자산업 대규모 육성 계획 및 R&D 지원 수혜 구도",
-    "en": "Government Seed Industry Scale-Up Policy and R&D Support as Structural Tailwinds"
+    "ko": "정책 인프라 수혜 기대",
+    "en": "Potential Benefit from Policy Infrastructure"
    },
    "body": {
-    "ko": "농림축산식품부의 제3차 종자산업 육성 종합계획(2023~2027, 1.94조원)은 기업 주도 R&D 전환, 유전자원 개방, 수출 지원을 포함해 전문 종묘 기업에 직접적인 혜택을 제공한다. 디지털 육종 상용화 R&D(2025~2034, 7,000억원)는 중장기적으로 품종 개발 기간과 비용 절감에 기여할 수 있다. 정부 지원 김제 종자가공센터(2023~2026) 완공 시 코팅·펠렛팅 등을 통한 종자 부가가치 향상이 기대된다. 2027년 국내 시장 1.2조원·수출 1.2억 달러 목표 달성 시 산업 내 전문 기업의 성장 기회가 확대되는 구조다.",
-    "en": "The government's 3rd Seed Industry Development Plan (2023–2027, KRW 1.94 trillion) encompasses business-led R&D restructuring, genetic resource access, and export promotion—providing direct benefits to specialized seed companies. The planned KRW 700 billion digital breeding R&D program (2025–2034) could reduce variety development timelines and costs over the medium to long term. Completion of the government-supported Gimje Seed Processing Center (2023–2026) is expected to enhance seed value through advanced coating and pelleting capabilities. Should the government's 2027 targets of a KRW 1.2 trillion domestic market and USD 120 million in exports be achieved, growth opportunities within the sector will structurally expand."
+    "ko": "정부의 제3차 종자산업 육성 종합계획은 2027년까지 산업 규모 1.2조원, 수출 1.2억 달러 확대를 목표로 5년간 대규모 투자를 계획하고 있다. 김제 K-Seed Valley 등 인프라 조성이 진행되면 업체들의 채종·가공 비용 부담이 줄어들 여지가 있다. 국립종자원과의 실증시험 협업 등 공공-민간 연계도 확대되는 추세다.",
+    "en": "The government's third five-year Seed Industry Promotion Plan targets industry scale of KRW 1.2 trillion and exports of USD 120 million by 2027, backed by large-scale five-year investment. Progress on infrastructure such as the K-Seed Valley cluster in Gimje could ease seed production and processing cost burdens for companies. Public-private collaboration, such as demonstration trials with the Korea Seed & Variety Service, is also expanding."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4년 연속 영업적자 및 만성적 현금흐름 부진",
-    "en": "Four Consecutive Years of Operating Losses and Chronically Negative Operating Cash Flow"
+    "ko": "4년 연속 순손실",
+    "en": "Four Consecutive Years of Net Losses"
    },
    "body": {
-    "ko": "FY2022~FY2025 연간 영업손실이 한 해도 흑자 없이 이어졌고(-5.5억~-16.0억원), 영업 현금흐름도 FY2024 단 1년을 제외하고 모두 음수였다. 4년간 누적 지배주주 귀속 순손실 합계는 약 50억원에 달한다. 유상증자·전환사채 발행 이력이 있어 자금 조달 과정에서 기존 주주의 지분이 희석된 바 있으며, 흑자 지속성이 확인되지 않으면 추가 자금 조달 가능성도 완전히 배제하기 어렵다. FY2026에서도 분기 흑자를 반복하지 못할 경우 재무적 여력이 다시 훼손될 수 있다.",
-    "en": "Operating losses persisted throughout every fiscal year from FY2022 to FY2025 (ranging from KRW -0.55 billion to -1.60 billion), with operating cash flow negative in all years except FY2024. Cumulative attributable net losses over the four fiscal years total approximately KRW 5.0 billion. The company has a history of equity raises and convertible bond issuances that have diluted existing shareholders, and unless profitability is confirmed as sustainable, the possibility of additional dilutive financing cannot be entirely ruled out. Failure to repeat quarterly profitability in FY2026 could erode financial headroom once again."
+    "ko": "2022년부터 2025년까지 연간 영업손익과 순손익이 모두 적자를 기록했다. 2025년에는 매출이 2024년 대비 크게 줄면서 영업이익률이 -28.1%까지 악화됐다. 손익의 절대 규모와 방향이 연도마다 크게 달라 예측 가능성이 낮은 편이다.",
+    "en": "Both operating and net results were in the red every year from 2022 through 2025. In 2025, revenue fell sharply from 2024 levels, worsening the operating margin to -28.1%. The absolute scale and direction of results have varied significantly year to year, leaving limited predictability."
    }
   },
   {
    "title": {
-    "ko": "FY2025 이례적 매출 급감과 Q4 역매출의 불투명성",
-    "en": "Opacity Surrounding FY2025's Extraordinary Revenue Contraction and Q4 Negative Revenue Entry"
+    "ko": "분기 실적의 큰 변동성",
+    "en": "High Quarterly Earnings Volatility"
    },
    "body": {
-    "ko": "FY2025 연간 매출 35.2억원은 전년 246억원 대비 대폭 축소됐으며, Q4 단독 약 -155.1억원의 이례적 역매출이 발생했다. 이는 특정 종속회사의 연결 제외, 사업부 처분, 또는 대규모 회계 조정 등을 시사하지만, 공개된 DART 공시만으로는 상세 원인 파악에 한계가 있다. 구조 변화의 성격과 규모가 명확하지 않으면 향후 매출 기반의 지속 가능성을 예측하기 어렵다. 투자자 입장에서는 사업보고서 주석을 통해 해당 사건의 실체를 직접 확인하는 것이 필요하다.",
-    "en": "FY2025 annual revenue of KRW 3.52 billion represents a dramatic contraction from FY2024's KRW 24.6 billion, driven primarily by an extraordinary negative revenue entry of approximately KRW -15.51 billion in Q4. This likely reflects a subsidiary deconsolidation, business unit disposal, or large-scale accounting adjustment, but the precise cause cannot be fully ascertained from publicly available DART disclosures alone. Without clarity on the nature and scope of this structural event, forecasting the sustainability of the post-adjustment revenue base remains inherently challenging. Investors should examine annual report footnotes directly to determine the specific accounting event."
+    "ko": "2026년 1분기에는 영업이익 12억2000만원, 순이익 14억9700만원으로 흑자 전환했지만 2분기에는 다시 영업손실 -2억6300만원, 순손실 -2억9300만원으로 돌아섰다. 2025년 3~4분기도 각각 영업손실을 기록해 계절적 비수기 손실 패턴이 반복됐다. 최근 4개 분기 누적 지배주주 순손익도 여전히 적자다.",
+    "en": "In Q1 2026, the company swung to an operating profit of KRW 1.22 billion and a net profit of KRW 1.50 billion, only to revert to an operating loss of KRW -0.26 billion and a net loss of KRW -0.29 billion in Q2. Both Q3 and Q4 2025 also posted operating losses, repeating a seasonal off-peak loss pattern. Cumulative net income attributable to owners over the trailing four quarters remains negative."
    }
   },
   {
    "title": {
-    "ko": "소규모 영세 산업 내 경쟁 심화 및 규모적 열위",
-    "en": "Intensifying Competition and Persistent Scale Disadvantage in a Fragmented Industry"
+    "ko": "매출 규모의 급격한 축소",
+    "en": "Sharp Contraction in Revenue Scale"
    },
    "body": {
-    "ko": "국내 종자 시장은 2,143개 업체 중 92%가 연 매출 5억원 미만인 영세 구조로 가격 경쟁 압력이 상존한다. 국내 1위 농우바이오 매출(약 1,358억원) 대비 규모적 열위는 R&D·마케팅 투자 여력의 격차로 이어진다. 글로벌 시장에서도 바이엘·신젠타·코르테바 등이 방대한 특허 포트폴리오와 유통망을 바탕으로 시장 지배력을 유지하고 있다. 신품종 개발에는 통상 수년이 소요되는 장기 사이클 산업 특성상, 경쟁사의 우수 신품종 출시는 기존 점유율에 즉각적인 위협이 될 수 있다.",
-    "en": "Korea's domestic seed market is highly fragmented—92% of approximately 2,143 registered companies generate revenues below KRW 500 million annually—creating persistent price competition pressure. Asia Seed's scale disadvantage versus domestic leader Nongwoo Bio (approximately KRW 135.8 billion in revenues) translates directly into a meaningful gap in R&D and marketing investment capacity. Globally, Bayer, Syngenta, and Corteva dominate through extensive patent portfolios and distribution networks. Given the multi-year development cycle inherent in new variety breeding, a timely release of superior varieties by competitors poses an immediate threat to existing market share positions."
+    "ko": "2025년 연간 매출액은 35억1600만원으로 2024년 245억9300만원 대비 크게 줄었다. 2022~2024년에는 240억~264억원대의 매출 규모를 유지해 왔다는 점에서 이례적인 변화다. 매출 축소의 세부 배경은 향후 공시를 통해 추가 확인이 필요하다.",
+    "en": "Full-year 2025 revenue was KRW 3.52 billion, sharply down from KRW 24.59 billion in 2024. This is a notable shift given that revenue had held in the KRW 24 to 26 billion range from 2022 through 2024. The detailed background behind this revenue contraction warrants further confirmation through future disclosures."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "기후 리스크 및 채종 생산 불안정",
-    "en": "Climate Risk and Seed Production Instability"
+    "ko": "계절성·기후 리스크",
+    "en": "Seasonality and Climate Risk"
    },
    "body": {
-    "ko": "기후변화에 따른 이상기상(폭염·홍수·한파)은 국내외 채종지의 생산 차질과 품질 저하로 직결될 수 있다. 내서성·내병성 품종 개발이 차별화 기회가 될 수 있으나, 단기적으로는 생산 원가 상승과 수율 저하 리스크를 동반한다. 주요 수출 대상국인 인도·인도네시아의 기상 이변은 현지 채소 농가의 종자 구매력과 수요에 직접적인 영향을 미칠 수 있다. 이상기후 빈도 증가는 종자 수요의 변동성을 높이는 구조적 불확실성 요인이다.",
-    "en": "Extreme weather events driven by climate change—heat waves, floods, and cold snaps—can directly disrupt seed multiplication at domestic and overseas production sites, impairing both supply reliability and seed quality. While development of heat- and disease-tolerant varieties can serve as a differentiator, it carries near-term risks of higher production costs and yield volatility. Climate anomalies in key export markets such as India and Indonesia can directly affect local vegetable farmers' purchasing power and seed demand. The rising frequency of extreme weather events introduces structural volatility into seed demand forecasting."
+    "ko": "종자 판매는 파종·재배 시기에 따른 계절성이 강해 분기별 실적 편차가 크게 나타난다. 기후 변화로 인한 병해충 발생 양상 변화, 이상기후에 따른 작황 변동은 품종 안정성과 매출에 직접적 영향을 줄 수 있다. 국립종자원과의 실증시험 협업이 이러한 리스크에 대응하는 수단 중 하나로 활용되고 있다.",
+    "en": "Seed sales carry strong seasonality tied to planting and cultivation cycles, resulting in large quarterly earnings swings. Changing pest and disease patterns from climate change, along with abnormal weather affecting crop yields, can directly impact variety stability and revenue. Collaboration with the Korea Seed & Variety Service on demonstration trials is one of the tools used to address this risk."
    }
   },
   {
    "cat": {
-    "ko": "환율 변동 및 해외법인 손익 리스크",
-    "en": "Foreign Exchange Volatility and Overseas Subsidiary Earnings Risk"
+    "ko": "재무 건전성",
+    "en": "Financial Soundness"
    },
    "body": {
-    "ko": "매출의 상당 부분이 수출로 구성되며 중국·인도·동남아 등 다수 법인을 운영하고 있어, 원달러·원위안·루피 환율 변동이 손익에 직접 영향을 미친다. FY2023 대규모 지배주주 귀속 순손실(-24.5억원)에는 해외 법인 손실이 일부 반영된 것으로 추정된다. 인도·인도네시아 등 신흥국 통화의 변동성은 현지 영업 마진과 원화 환산 수익성을 불안정하게 만들 수 있다. 환헤지 전략과 해외 법인별 수익성 관리 수준이 핵심 리스크 완화 요소다.",
-    "en": "A significant share of revenues is export-derived, and the company operates multiple subsidiaries in China, India, and Southeast Asia, making reported earnings directly sensitive to movements in the KRW/USD, KRW/CNY, and KRW/INR exchange rates. The large attributable net loss in FY2023 (KRW -2.45 billion) is partly attributable to estimated overseas subsidiary losses. Volatility in emerging-market currencies such as the Indian rupee and Indonesian rupiah can destabilize local operating margins and KRW-translated profitability. Currency hedging strategy and subsidiary-level profitability discipline are key levers for risk mitigation."
+    "ko": "2022~2025년 연속 순손실이 누적된 만큼 자본 완충력에 대한 지속적 점검이 필요하다. 부채비율은 2023년 90.4%에서 2025년 72.2%로 낮아졌지만, 향후 손실이 재차 확대될 경우 재무구조에 부담이 될 수 있다. 영업활동현금흐름도 연도별로 양(+)과 음(-)을 오가는 등 안정적이지 않다.",
+    "en": "With net losses accumulating continuously from 2022 through 2025, ongoing monitoring of capital buffers is warranted. The debt ratio declined from 90.4% in 2023 to 72.2% in 2025, but a renewed widening of losses could pressure the financial structure. Operating cash flow has also alternated between positive and negative across years, indicating a lack of stability."
    }
   },
   {
    "cat": {
-    "ko": "지배구조 집중 및 주식 희석 리스크",
-    "en": "Concentrated Corporate Governance and Share Dilution Risk"
+    "ko": "글로벌 경쟁 및 수출 규제",
+    "en": "Global Competition and Export Regulation"
    },
    "body": {
-    "ko": "대표이사 류경오 씨가 최대주주이며 그의 특수관계인이 경영에 참여하는 오너 경영 구조다. 총 발행주식 24.1백만주 중 유통주식이 12.1백만주로 전체의 절반 수준이어서 유동성이 제한적이다. 최근 수년간 유상증자·전환사채 발행 이력이 있어 기존 주주의 지분 희석이 이루어진 바 있으며, 영업 적자 지속 또는 자금 부족 시 추가 자금 조달 가능성이 잠재적 희석 리스크로 남는다. 지배구조의 투명성 제고와 소수주주 보호 장치 여부도 주목해야 할 요소다.",
-    "en": "The company is owner-managed by CEO Ryu Kyung-oh, who is the controlling shareholder, with a related party also occupying an executive role. With total issued shares of approximately 24.1 million and floating shares of approximately 12.1 million (roughly half the total), market liquidity is limited. The company has a recent history of equity raises and convertible bond issuances resulting in shareholder dilution; should operating losses persist or funding requirements arise, the risk of additional dilutive financing remains latent. The level of corporate governance transparency and minority shareholder protection mechanisms also merit monitoring."
+    "ko": "세계 종자시장은 다국적 대형 종자기업들의 인수합병을 통한 집중화가 이어지는 추세로, 국내 기업들과의 규모 격차가 존재한다. 러시아 등 일부 국가가 KOLAS 공인시험기관의 시험성적서를 요구하는 등 수출 관련 규제·인증 요건이 강화되는 사례도 나타나고 있다. 이러한 요건 변화에 대한 대응이 지연될 경우 수출 확대 전략에 제약이 될 수 있다.",
+    "en": "The global seed market continues to consolidate through mergers and acquisitions among large multinational seed companies, creating a scale gap versus domestic firms. Export-related regulatory and certification requirements are also tightening in some cases, such as certain countries including Russia requiring KOLAS-accredited test certificates. Delayed responses to such requirement changes could constrain the company's export expansion strategy."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월 (2026Q2 분기보고서 공시 예정)",
-    "en": "July–August 2026 (Expected 2026Q2 Quarterly Report Disclosure)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "봄 파종 시즌이 반영되는 2026년 2분기 매출 및 영업이익을 확인해 1분기 흑자의 지속성과 계절성 효과를 검증해야 한다. 국내외 수주 동향과 양배추·고추 수출 물량 추이도 동시에 모니터링한다.",
-    "en": "Verify whether 2026Q1 profitability extends into Q2, which captures the spring sowing season; assess the magnitude of seasonal revenue contribution and evaluate cabbage and pepper export volume trends alongside domestic order momentum."
+    "ko": "2026년 3분기보고서 공시를 통해 2분기의 적자 전환이 일시적인지, 1분기와 같은 흑자 국면이 재현되는지 확인이 필요하다.",
+    "en": "The Q3 2026 quarterly report disclosure will show whether the Q2 loss was temporary or whether a profitable pattern like Q1 recurs."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 (2026Q3 및 FY2026 상반기 누계 공시)",
-    "en": "November 2026 (2026Q3 and FY2026 First-Half Cumulative Results)"
+    "ko": "2026년 하반기~2027년 초",
+    "en": "Late 2026 through early 2027"
    },
    "what": {
-    "ko": "FY2026 상반기 누계 실적을 통해 연간 흑자 전환 달성 가능성과 영업 레버리지를 평가한다. 수출 매출 회복 속도와 해외법인 손익 개선 여부가 핵심 확인 포인트다.",
-    "en": "Use FY2026 first-half cumulative results to assess the feasibility of full-year profitability and evaluate operating leverage; the pace of export revenue recovery and improvement in overseas subsidiary earnings are the primary metrics to track."
+    "ko": "전남 해남에서 진행 중인 배추·양배추 월동성 평가 결과와 기후변화 대응 품종 실증시험 성과 발표 여부를 확인할 필요가 있다.",
+    "en": "Check for the results of the ongoing winter-hardiness evaluation of cabbage varieties in Haenam and any announcements on the outcomes of the climate-adaptive variety demonstration trials."
    }
   },
   {
    "when": {
-    "ko": "2026년 연말~2027년 초 (FY2026 연간 결산 및 FY2025 사업보고서 주석 공시)",
-    "en": "Late 2026 – Early 2027 (FY2026 Annual Results and FY2025 Annual Report Footnote Disclosures)"
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "FY2025 Q4 역매출(-155.1억원)의 구체적 원인(종속회사 처분·연결 제외 등)을 사업보고서 주석에서 최종 확인하고, FY2026 연간 흑자 여부와 배당 재개 여부를 판단한다.",
-    "en": "Confirm the precise accounting event behind FY2025 Q4's extraordinary negative revenue via annual report footnotes (subsidiary disposal, deconsolidation, etc.); determine whether FY2026 delivers a full-year net profit and monitor for any dividend reinstatement decision."
+    "ko": "2026년 사업보고서(연간 확정 실적) 공시 시점에 2025년의 매출 축소가 일시적 현상이었는지, 연간 매출 규모가 회복되는지 확인이 필요하다.",
+    "en": "At the time of the 2026 annual business report disclosure, check whether the 2025 revenue contraction was a one-off event and whether annual revenue scale recovers."
    }
   },
   {
    "when": {
-    "ko": "수시 (인도·동남아 대형 수출 계약 및 정부 R&D 과제 선정 공시)",
-    "en": "Rolling (Large Export Contract Announcements and Government R&D Selection Disclosures)"
+    "ko": "2027년 이후",
+    "en": "From 2027 onward"
    },
    "what": {
-    "ko": "인도·인도네시아·베트남 등 주요 수출 시장에서의 대형 공급 계약 체결 또는 정부 디지털 육종 R&D 과제 수혜 선정은 중장기 매출 기반 강화와 R&D 비용 절감에 직접적 영향을 미친다.",
-    "en": "Large-scale supply contracts in key export markets (India, Indonesia, Vietnam) or selection for government digital breeding R&D grants would directly strengthen the medium-to-long-term revenue base and reduce the R&D cost burden."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기 (김제 종자가공센터 완공 및 운영 개시 확인)",
-    "en": "Second Half of 2026 (Gimje Seed Processing Center Completion and Commissioning)"
-   },
-   "what": {
-    "ko": "정부 지원 김제 종자가공센터(2023~2026) 완공 및 운영 개시 시점을 확인한다. 코팅·펠렛팅 시설 가동은 종자 단위당 부가가치 향상과 생산 효율화로 이어져 수익성 개선에 기여할 수 있다.",
-    "en": "Confirm completion and operational launch of the government-supported Gimje Seed Processing Center (planned 2023–2026); commissioning of seed coating and pelleting facilities could contribute to higher per-unit seed value and improved production efficiency, supporting margin improvement."
+    "ko": "정부의 제3차 종자산업 육성 종합계획이 목표로 한 산업 규모 1.2조원, 수출 1.2억 달러 달성 여부와 K-Seed Valley 등 인프라 조성 진행 상황을 점검할 필요가 있다.",
+    "en": "Monitor whether the government's third seed industry promotion plan achieves its targets of KRW 1.2 trillion industry scale and USD 120 million in exports, and track progress on infrastructure such as the K-Seed Valley cluster."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "아시아종묘는 독자 육종 기술과 42개국 수출 네트워크라는 차별화된 자산을 보유한 채소종자 전문 기업이나, 4년 연속 영업적자와 FY2025 이례적 대규모 역매출 사건이 사업 신뢰성에 유보 요인을 남기고 있다. 가장 주목할 변화는 2026년 1분기의 영업이익 12.2억원·OPM 약 13.8%로, 구조 조정 이후 핵심 사업의 수익성 회복 가능성을 처음으로 보여 주는 데이터다. 부채비율이 FY2023 고점 90.4%에서 FY2025 72.2%로 개선되고, 자기자본이 241억원 수준을 유지하는 점은 재무 안정성 측면에서 긍정적 신호다. 그러나 FY2025 Q4 역매출의 회계적 실체가 사업보고서에서 충분히 해명되지 않은 점과 단일 분기 흑자만으로 구조적 전환을 단언하기 어려운 점은 여전한 불확실성 요인이다. 정부의 대규모 종자산업 육성 계획과 인도·동남아 수출 확대 기회는 중장기 성장 모멘텀이 될 수 있으나, 수익화까지의 시차와 실행 리스크도 함께 감안해야 한다. 2026년 2~3분기 실적 지속성 확인과 FY2025 연간 보고서 주석 내 구조 변화 실체 파악이 현시점에서 가장 중요한 모니터링 과제다.",
-   "en": "Asia Seed possesses differentiated assets in its proprietary breeding technology and 42-country export network, yet four consecutive years of operating losses and the extraordinary FY2025 revenue reversal leave material uncertainties about business credibility. The most significant development is the 2026Q1 operating income of KRW 1.22 billion at an OPM of approximately 13.8%—the first quarterly data point demonstrating that the post-restructuring core business may be on a path to sustainable profitability. The debt ratio improvement from a FY2023 peak of 90.4% to 72.2% in FY2025, alongside broadly stable shareholders' equity of approximately KRW 24.1 billion, are constructive financial signals. Nevertheless, the unexplained Q4 FY2025 negative revenue entry and the insufficiency of a single profitable quarter to confirm a structural shift remain important caveats. The government's large-scale seed industry investment program and expansion opportunities in India and Southeast Asia represent credible medium-to-long-term growth catalysts, though execution timelines and monetization lag introduce real risks. Confirming the recurrence of profitability through 2026Q2 and Q3, and clarifying the FY2025 Q4 accounting event via the annual report footnotes, are the most critical monitoring priorities at this juncture."
+   "ko": "아시아종묘는 채소종자 R&D 역량과 해외 연구거점을 갖춘 코스닥 상장 종자기업으로, 정부의 종자산업 육성 정책과 동남아·인도 수출 확대라는 우호적 산업 배경을 갖고 있다. 그러나 확정 재무를 보면 2022년부터 2025년까지 4개 연도 연속 영업손실과 순손실을 기록했고, 2025년에는 매출 규모가 2024년 대비 크게 줄면서 영업이익률이 더 악화됐다. 최근 분기 흐름도 2026년 1분기 흑자 전환 이후 2분기 다시 적자로 돌아서는 등 변동성이 큰 모습을 보이고 있다. 부채비율은 2023년 정점 이후 낮아지는 흐름이지만, 영업활동현금흐름은 연도별로 양과 음을 오가며 안정적이지 않다. 종자산업 특유의 계절성, 기후 변화에 따른 작황 리스크, 다국적 경쟁사와의 규모 격차 등도 함께 고려할 요인이다. 투자자들은 향후 분기·연간 공시를 통해 매출 회복 여부와 손익 개선의 지속성을 확인하는 것이 중요하다.",
+   "en": "Asia Seed is a KOSDAQ-listed seed company with vegetable seed R&D capabilities and overseas research bases, benefiting from a favorable industry backdrop of government seed industry promotion policy and export expansion into Southeast Asia and India. However, confirmed financials show operating and net losses in all four years from 2022 through 2025, with revenue scale in 2025 falling sharply from 2024 and the operating margin deteriorating further. Recent quarterly trends have also shown high volatility, swinging to a profit in Q1 2026 before reverting to a loss in Q2. While the debt ratio has trended lower since peaking in 2023, operating cash flow has alternated between positive and negative across years, indicating a lack of stability. Factors specific to the seed industry, such as strong seasonality, crop risk from climate change, and the scale gap versus multinational competitors, should also be considered. Going forward, investors will want to monitor future quarterly and annual disclosures to assess whether revenue recovers and whether any earnings improvement proves sustainable."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A154030",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A154030&MenuYn=Y&NewMenuID=102&stkGb=701",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Finance.asp?pGB=1&gicode=A154030&cID=&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
-  "https://m.thinkpool.com/item/154030",
-  "http://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=154030",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A154030&cID=&MenuYn=Y&ReportGB=&NewMenuID=105&stkGb=701",
-  "http://www.thinkpool.com/itemanal/i/index.jsp?code=154030",
-  "https://kass.mafra.go.kr/newkass/cmm/fms/FileDown.do?atchFileId=FILE_000000000017599&fileSn=0",
-  "http://www.koreaseedexpo.com/participation/seed.php",
-  "https://stockcatcher.co.kr/%EC%95%84%EC%8B%9C%EC%95%84%EC%A2%85%EB%AC%98-%EC%A3%BC%EC%8B%9D-%EC%A3%BC%EA%B0%80-%EB%B6%84%EC%84%9D-%ED%85%8C%EB%A7%88%EC%A3%BC-%EA%B4%80%EB%A0%A8%EC%A3%BC-%EC%A0%95%EB%A6%AC-%EC%A0%84%EB%A7%9D/",
-  "https://www.asiaseedmall.com/service/company.php",
-  "http://kosaseed.or.kr/sub/sub05_01.php",
-  "https://kind.krx.co.kr/external/2023/11/14/000744/20231114001515/11013.htm",
   "https://www.saramin.co.kr/zf_user/company-info/view/csn/aU9GODRmWE40N083ZGNjYmpnZzgyUT09/company_nm/%EB%86%8D%EC%97%85%ED%9A%8C%EC%82%AC%EB%B2%95%EC%9D%B8%EC%95%84%EC%8B%9C%EC%95%84%EC%A2%85%EB%AC%98(%EC%A3%BC)",
-  "https://www.seed.go.kr/seed/243/subview.do",
-  "https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000114331",
-  "https://eiec.kdi.re.kr/policy/callDownload.do?num=275453&filenum=1&dtime=20251230180010",
-  "https://www.ipet.re.kr/Material/IPETDatatrendsVP.asp?page=78&tbl_id=241&_sbj=%EC%A2%85%EC%9E%90%EC%82%B0%EC%97%85%EC%9D%98+%ED%98%84%ED%99%A9+%EB%B0%8F+%EB%B6%84%EC%84%9D"
+  "https://www.nongupin.co.kr/news/articleView.html?idxno=208092",
+  "https://m.thinkpool.com/item/154030",
+  "https://www.stockplus.com/m/stocks/KOREA-A154030",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A154030",
+  "http://asiaseed.net/bbs/board.php?bo_table=investment02&device=pc",
+  "https://finance.daum.net/quotes/A154030",
+  "http://webzine.koita.or.kr/201905-people/%EC%95%84%EC%8B%9C%EC%95%84%EC%A2%85%EB%AC%98%EC%A3%BC-%EB%A5%98%EA%B2%BD%EC%98%A4-%EB%8C%80%ED%91%9C",
+  "https://www.metroseoul.co.kr/article/20250404500273",
+  "https://www.asiaseedmall.com/",
+  "http://www.asiaseed.net/bbs/content.php?co_id=greeting",
+  "https://www.kita.net/board/totalTradeNews/totalTradeNewsDetail.do;JSESSIONID_KITA=2C78F2FDEF297E5B08145D69287F7A01.Hyper?no=72965&siteId=1",
+  "http://www.asiaseed.net/",
+  "https://shinhanlife.sinbiun.com/unse/saju/saju.php?unse_code=A104",
+  "https://www.steeldaily.co.kr/news/articleView.html?idxno=200118",
+  "http://manse.sajuplus.net/",
+  "https://www.moef.go.kr/com/cmm/fms/FileDown.do?atchFileId=ATCH_000000000027756&fileSn=2",
+  "https://www.newspim.com/news/view/20260518000156"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "154030",
  "name": "아시아종묘",
  "name_en": "ASIA SEED Co.,Ltd.",
@@ -233,11 +223,11 @@
   "식음료"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 04:07",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 19:22",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -338,25 +328,29 @@
    }
   ],
   "valuation": {
-   "price": 1650,
-   "mcap": 0.0199,
+   "price": 1689,
+   "mcap": 0.0204,
    "shares": 12061867,
    "total_shares": 12061867,
    "wavg_shares": 12034286,
    "per": null,
    "eps": -108,
-   "pbr": 0.7857,
-   "bps": 2100,
+   "pbr": 0.8039,
+   "bps": 2101,
    "roe_ttm": -5.2,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": -1306144837,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.83,
+   "eps_src": "공시",
+   "pbr_krx": 0.85,
    "bps_krx": 1998.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
  }
 }

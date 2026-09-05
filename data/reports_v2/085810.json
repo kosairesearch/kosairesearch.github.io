@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "대현기건 편입·흑자 전환, 복합 사업 재편의 원년",
-  "en": "Breakeven Achieved via Daehyun Gigeon Consolidation — First Year of Business Transformation"
+  "ko": "매출 확대 속 지배주주 순손실 지속",
+  "en": "Revenue Expands, Owner-Level Losses Persist"
  },
  "lead": {
-  "ko": "알티캐스트는 2024년 4월 기계설비 전문기업 대현기건 인수를 계기로 2025년 연결 매출 531.7억 원·영업이익 흑자 전환을 달성했으나, 2026년 1분기 재적자 전환과 4년 연속 마이너스 영업현금흐름으로 수익 구조의 구조적 안착 여부가 핵심 과제로 부상하고 있다.",
-  "en": "Alticast achieved FY2025 consolidated revenue of KRW 53.2 billion and its first operating profit in four years following the April 2024 acquisition of mechanical contractor Daehyun Gigeon, yet a renewed operating loss in Q1 2026 and persistently negative operating cash flow keep the sustainability of the recovery unverified."
+  "ko": "대현기건 편입으로 2025년 연결 매출과 영업이익은 흑자로 돌아섰지만, 지배주주 귀속 순이익은 비지배주주 배분 구조 속에서 여전히 적자를 벗어나지 못하고 있다.",
+  "en": "The consolidation of Daehyun Airtech Co. helped Alticast turn consolidated revenue and operating profit positive in 2025, but net income attributable to owners of the parent remains in the red under a structure where earnings are shared with non-controlling interests."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 531.7억 원(전년비 835%↑), 영업이익 31.8억 원(OPM 6.0%)으로 4년 만에 영업 흑자 전환 달성",
-   "en": "FY2025 consolidated revenue of KRW 53.2 billion (+835% YoY) and operating profit of KRW 3.2 billion (OPM: 6.0%) — first operating profit in four years"
+   "ko": "2025년 연결 매출 531.66억원, 영업이익 31.81억원으로 흑자 전환(대현기건 인수 효과)",
+   "en": "Consolidated 2025 revenue reached KRW 53.17 billion with operating profit of KRW 3.18 billion, turning positive on the Daehyun Airtech consolidation"
   },
   {
-   "ko": "흑자 전환의 주요 동력은 2024년 4월 인수한 공조·소방설비 전문기업 대현기건의 연결 매출 편입 효과",
-   "en": "The turnaround was primarily driven by consolidation of Daehyun Gigeon (HVAC/MEP specialist), acquired in April 2024"
+   "ko": "연결 순이익은 0.13억원으로 근소한 흑자였으나 지배주주 귀속 순이익은 -8.13억원 손실, 최근 4개 분기 합산도 -54.04억원 적자",
+   "en": "Consolidated net income was a marginal KRW 12.8 million profit, but the owners' share was a KRW 813 million loss, and the trailing four quarters combined show an KRW 5.4 billion owners' loss"
   },
   {
-   "ko": "2026년 1분기 영업손실 –10.9억 원 재현, 최근 4개 분기(2025Q2~2026Q1) 기준 지배주주 순손실 약 –5.0억 원으로 수익성 안착 여부 불확실",
-   "en": "Operating loss of KRW –1.1 billion re-emerged in Q1 2026; net loss attributable to controlling interests over the four most recent quarters stands at approximately KRW –500 million"
+   "ko": "최대주주가 베노티앤알로 변경되며 지배구조 개편, 자회사 압타머사이언스는 미국 펫푸드기업 츌립 지분 100% 인수",
+   "en": "Largest shareholder changed to Beno T&R, and subsidiary Aptamer Sciences acquired 100% of US premium pet food maker Choolip Inc."
   },
   {
-   "ko": "부채비율 2023년 143.7% → 2025년 38.6%로 대폭 개선, 2026년 3월 5대1 무상감자 단행으로 재무 건전성 강화",
-   "en": "Debt-to-equity ratio improved sharply from 143.7% (2023) to 38.6% (2025); a 5-for-1 share consolidation executed in March 2026 further reduced accumulated deficit"
+   "ko": "2026년 3월 5대 1 무상감자 확정 등 재무구조·상장유지 요건 대응 조치 진행, 부채비율은 2023년 143.7%에서 2025년 38.6%로 하락",
+   "en": "A 5-for-1 no-par capital reduction was confirmed in March 2026 as part of listing-maintenance measures, while the debt ratio fell from 143.7% in 2023 to 38.6% in 2025"
   },
   {
-   "ko": "방송 SW 국내 시장점유율 60%+ 추정 유지 중이나, 스마트TV·오픈소스 미들웨어 확산이 중장기 구조적 압박 요인으로 작용",
-   "en": "Domestic broadcast software market share estimated above 60%, yet smart TV penetration and open-source middleware proliferation represent structural mid-to-long-term headwinds"
+   "ko": "전통적 방송 미들웨어 사업은 OTT발 코드커팅 영향이 지속되는 구조적 하락 국면",
+   "en": "The legacy broadcast middleware business remains in structural decline amid continued cord-cutting driven by OTT growth"
   }
  ],
  "business": {
-  "ko": "알티캐스트는 1999년 디지털 방송용 소프트웨어 솔루션 개발·공급을 목적으로 설립돼 코스닥에 상장된 IT·소프트웨어 기업이다. 핵심 사업은 유료방송사업자에게 미들웨어 플랫폼, CAS/DRM(수신제한·저작권 관리), UI/UX, SDP(서비스 전달 플랫폼) 등을 End-to-End 방식으로 통합 공급하는 방송 SW다. 국내 IPTV 3사 가운데 KT(KT 올레TV)가 주요 고객이며, 대부분의 케이블·위성방송사업자에도 솔루션을 납품해 국내 방송 SW 시장점유율을 약 60% 이상으로 자체 추정하고 있다. 2024년 4월에는 공조·소방·급배수설비 전문기업 대현기건을 인수해 기계설비공사업 부문을 신설했으며, 이 사업이 연결 기준 주요 매출원으로 성장했다. 100% 자회사 알티플랫폼은 블록체인 네트워크와 전통 IT 플랫폼을 연결하는 통합 솔루션 사업을 영위하며, 자회사 압타머사이언스는 바이오 분야에서 성장 동력을 모색하고 있다. 최대주주는 베노티앤알(지분율 약 21%)로 수차례 최대주주 변경을 거친 지배구조를 갖고 있다. 방송 SW 경쟁사로는 국내 티비스톰·알티미디어 등이, 해외에서는 에릭슨·화웨이 등 글로벌 미들웨어 공급사들이 경쟁하고 있다.",
-  "en": "Alticast was established in February 1999 to develop and supply digital broadcast software solutions and is listed on the KOSDAQ. Its core business is providing pay-TV operators with an integrated End-to-End suite of broadcast software encompassing middleware platforms, CAS/DRM (conditional access and digital rights management), UI/UX, and SDP (service delivery platform). KT (KT Olleh TV) is the primary IPTV customer, and solutions are also supplied to most cable and satellite broadcasters, giving the company a self-estimated domestic broadcast software market share exceeding 60%. In April 2024, Alticast acquired Daehyun Gigeon — a specialist in HVAC, fire suppression, and plumbing systems — establishing a new mechanical/MEP construction segment that has since become the primary consolidated revenue driver. Wholly owned subsidiary AltiPlatform targets an integrated solution bridging blockchain networks with conventional IT infrastructure, while another subsidiary Aptamer Science is actively pursuing growth opportunities in biotech. The majority shareholder is Benoti & R (approximately 21% stake), following a series of ownership changes in recent years. Domestic broadcast software competitors include TV Storm and Altimedia, while global players such as Ericsson and Huawei compete in overseas markets."
+  "ko": "알티캐스트는 1999년 설립된 IT기업으로, 디지털 방송 소프트웨어 솔루션과 미들웨어 플랫폼, 모빌리티 플랫폼을 개발·공급해왔으며 셋톱박스에 들어가는 소프트웨어의 라이선스를 판매하는 사업 모델을 갖고 있었다. 이후 회사는 과거 셋톱박스용 국제표준 미들웨어 사업 경험을 바탕으로 기존 방송 관련 솔루션 사업을 KT에 매각하고 모빌리티 사업으로 전환을 꾀해왔다. 그 일환으로 오픈 차지 포인트 프로토콜(OCPP) 기반 전기차 충전기용 미들웨어를 개발하는 등 EV 충전 인프라 영역으로도 진출했다. 지배구조 측면에서는 기존 최대주주였던 휴맥스에서 지분 21.05%를 보유한 베노티앤알로 최대주주가 변경되며 큰 변화를 겪었다. 이후 2025년 4월에는 공조·소방설비 전문기업 대현기건을 인수해 연결 매출 기반을 확대했고, 이 회사가 2025년 실적 개선의 핵심 축이 됐다. 여기에 더해 자회사 압타머사이언스는 미국 프리미엄 펫푸드 기업 츌립(Choolip Inc.) 지분 100%를 인수해 바이오·펫푸드 영역으로도 사업을 다각화하고 있다. 그 결과 알티캐스트는 전통적인 방송·모빌리티 소프트웨어 사업과, 새롭게 편입된 공조·소방설비 및 펫푸드 투자 자산이 혼재된 포트폴리오 구조로 재편되는 과정에 있다. 국내 방송 미들웨어 시장에는 휴맥스, 가온그룹, 이노피아테크 등이 경쟁자로 존재하며, 부문별 정확한 매출 비중은 별도로 공시되지 않아 세부 확인은 제한적이다.",
+  "en": "Alticast is an IT company founded in 1999 that developed and supplied digital broadcast software solutions, middleware platforms, and mobility platforms, historically licensing software embedded in set-top boxes. The company later sold off part of its legacy broadcast solutions business to KT and has been pivoting toward mobility, drawing on its experience developing internationally standardized set-top box middleware. As part of this pivot, it developed Open Charge Point Protocol (OCPP)-based middleware for EV chargers, entering the EV charging infrastructure space. On the governance side, the company underwent a major change as its largest shareholder shifted from Humax to Beno T&R, which holds a 21.05% stake. In April 2025, Alticast acquired Daehyun Airtech, a specialist in HVAC and fire-safety equipment, expanding its consolidated revenue base; this unit became the core driver of the 2025 earnings improvement. In addition, subsidiary Aptamer Sciences acquired 100% of US premium pet food maker Choolip Inc., diversifying into the bio and pet food space. As a result, Alticast is in the process of restructuring into a portfolio combining its legacy broadcast/mobility software business with newly consolidated HVAC/fire-safety operations and pet food investment assets. In the domestic broadcast middleware market, competitors include Humax and Gaon Group among others, and detailed segment revenue breakdowns are not separately disclosed."
  },
  "earnings": {
-  "ko": "알티캐스트는 2022년부터 2024년까지 3년 연속 대규모 영업손실을 기록했다. 영업손실 규모는 2022년 –88.9억 원, 2023년 –62.8억 원, 2024년 –40.2억 원으로 점진적 개선 흐름을 보였으나, 이 기간 지배주주 귀속 순손실은 2022년 –178.2억 원, 2023년 –259.7억 원, 2024년 –130.3억 원에 달해 누적 결손이 크게 쌓였다. 2025년에는 대현기건의 연간 매출이 온전히 반영되며 연결 매출이 531.7억 원으로 급증, 영업이익 31.8억 원(영업이익률 6.0%)을 달성하며 흑자로 돌아섰다. 분기별로는 2025Q1 영업손실 –5.0억 원에서 Q2 +11.6억, Q3 +21.8억으로 개선세를 보였으나 Q4에 +3.4억 원으로 급격히 축소됐다. 지배주주 귀속 순이익은 연간 약 1,280만 원으로 사실상 손익분기점 수준에서 흑자 전환했는데, Q4에만 지배주주 귀속 순손실 –30.2억 원이 발생해 연간 수치를 크게 압박했다(영업이익 +3.4억에도 불구한 Q4 비영업 손실은 주목 요인이다). 2026년 1분기에는 매출 174.8억 원에도 영업손실 –10.9억 원, 지배주주 순손실 –16.4억 원이 재현됐다. 영업현금흐름(CFO)은 2022년 –88.3억, 2023년 –37.7억, 2024년 –38.4억, 2025년 –21.6억으로 방향은 개선되고 있으나 여전히 마이너스를 벗어나지 못했다. 부채비율은 2023년 143.7%, 2024년 21.6%, 2025년 38.6%로 유상증자 및 자본 확충 효과가 반영된 결과이며, 자기자본(연결 기준)은 2023년 205.9억 원에서 2025년 540.1억 원으로 크게 늘었다.",
-  "en": "Alticast recorded operating losses for three consecutive years from 2022 to 2024. Operating losses narrowed from KRW –8.9 billion (2022) to KRW –6.3 billion (2023) and KRW –4.0 billion (2024), but net losses attributable to controlling interests remained substantial at KRW –17.8 billion (2022), KRW –26.0 billion (2023), and KRW –13.0 billion (2024), reflecting significant accumulated deficits. In FY2025, full-year Daehyun Gigeon revenue drove consolidated revenue to KRW 53.2 billion and operating profit to KRW 3.2 billion (OPM: 6.0%), marking the first operating profit in four years. On a quarterly basis, operating profit improved from –KRW 0.5 billion in Q1 2025 to +KRW 1.2 billion (Q2) and +KRW 2.2 billion (Q3), before narrowing sharply to +KRW 0.3 billion in Q4. Full-year net income attributable to controlling interests was effectively at breakeven at approximately KRW 12.8 million, as a large Q4 attributable net loss of –KRW 3.0 billion — despite positive Q4 operating income — compressed the annual figure, highlighting significant non-operating charges in the quarter. In Q1 2026, revenue reached KRW 17.5 billion but was accompanied by an operating loss of KRW –1.1 billion and attributable net loss of KRW –1.6 billion. Operating cash flow (CFO) has trended from –KRW 8.8 billion (2022) to –KRW 2.2 billion (2025), showing directional improvement but remaining negative. The debt-to-equity ratio moved from 143.7% (2023) to 38.6% (2025), primarily reflecting capital increases rather than retained earnings accumulation."
+  "ko": "2025년 연결 매출액은 531.66억원, 영업이익은 31.81억원으로 흑자 전환에 성공했다. 이는 2025년 4월 인수한 대현기건이 연결 실적에 편입된 효과가 크게 작용한 결과로, 한 매체는 대현기건 편입 효과로 매출이 전년 대비 835% 증가했다고 전했다. 다만 연결 순이익은 0.13억원으로 근소한 흑자에 머물렀고, 지배주주 귀속 순이익은 오히려 -8.13억원의 손실을 기록했다. 이는 비지배주주지분(NCI)이 2025년 말 32.15억원으로 전환되며 이익의 상당 부분이 비지배주주에게 배분된 결과로 볼 수 있다. 자본총계는 2025년 540.11억원(지배주주지분 507.95억원)으로 늘었고, 부채비율은 2023년 143.7%에서 2025년 38.6%로 낮아지며 재무구조가 개선되는 모습을 보였다. 다만 영업활동현금흐름은 2025년에도 -21.55억원의 순유출을 기록해, 2022~2024년(각각 -88.33억원, -37.70억원, -38.36억원)에 이어 현금창출력 부진이 이어지고 있다. 분기별로는 2025년 2·3분기 영업이익이 11.62억원, 21.82억원, 지배주주 순이익이 14.27억원, 17.96억원으로 개선됐으나, 2025년 4분기 매출이 164.08억원으로 뛴 이후에도 영업이익은 3.38억원으로 둔화되고 지배주주 순이익은 -38.49억원 손실로 반전됐다. 이어 2026년 1분기(매출 174.79억원, 영업이익 -10.91억원, 지배주주 순이익 -16.36억원)와 2분기(매출 243.36억원, 영업이익 -2.68억원, 지배주주 순이익 -17.15억원)까지 매출 규모는 계속 확대됐지만 영업손익과 지배주주 순이익은 다시 적자로 돌아섰다. 결과적으로 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순손실은 54.04억원으로, 연간 단위 흑자 전환이 분기 단위에서는 아직 안정적으로 이어지지 못하고 있다.",
+  "en": "Consolidated 2025 revenue reached KRW 53.17 billion and operating profit came to KRW 3.18 billion, marking a turn to profitability. This was largely driven by the consolidation of Daehyun Airtech, acquired in April 2025; one media outlet reported that revenue rose 835% year on year due to this consolidation effect. Consolidated net income, however, was only a marginal KRW 12.8 million profit, while net income attributable to owners of the parent was a loss of KRW 813 million. This gap reflects the fact that non-controlling interests turned to KRW 3.22 billion at year-end 2025, meaning a significant portion of earnings was allocated to non-controlling shareholders. Total equity rose to KRW 54.01 billion (owners' equity of KRW 50.80 billion) in 2025, and the debt ratio fell from 143.7% in 2023 to 38.6% in 2025, indicating an improving balance sheet. Operating cash flow, however, remained negative at KRW -2.16 billion in 2025, continuing a run of cash outflows seen in 2022-2024 (KRW -8.83 billion, -3.77 billion, and -3.84 billion, respectively). On a quarterly basis, operating profit improved to KRW 1.16 billion and KRW 2.18 billion in Q2 and Q3 2025, with owners' net income of KRW 1.43 billion and KRW 1.80 billion, but after revenue jumped to KRW 16.41 billion in Q4 2025, operating profit slowed to KRW 0.34 billion and owners' net income reversed into a KRW 3.85 billion loss. Revenue kept expanding into Q1 2026 (KRW 17.48 billion, operating loss of KRW 1.09 billion, owners' net loss of KRW 1.64 billion) and Q2 2026 (KRW 24.34 billion, operating loss of KRW 0.27 billion, owners' net loss of KRW 1.72 billion), even as operating and owners' net results returned to losses. As a result, the combined owners' net loss over the trailing four quarters (Q3 2025-Q2 2026) totaled KRW 5.4 billion, showing that the annual turn to profit has not yet translated into stable quarterly profitability."
  },
  "industry": {
-  "ko": "글로벌 IPTV 시장은 2026년 약 666억 달러 규모에서 2031년 약 1,372억 달러로 연평균 약 15.55% 성장이 전망되는 고성장 시장이다. 통신사업자들은 현장 설비 비용 절감과 서비스 출시 속도 향상을 위해 클라우드 미들웨어로 자본을 재투자하는 추세이며, 이는 클라우드 기반 방송 SW 역량 확보 여부를 업체 간 경쟁의 핵심 변수로 부상시키고 있다. 반면 삼성·LG 스마트TV OS가 IPTV 앱을 기본 탑재하기 시작하며 셋톱박스 출하량이 감소하고, 미들웨어 라이선스 계약이 영구에서 구독 방식으로 전환되는 구조적 변화도 진행 중이다. 전 세계 8억 대 이상의 셋톱박스에 채택된 RDK 등 오픈소스 미들웨어의 확산은 상용 미들웨어 공급사 전반의 가격 결정력을 약화시키는 압력으로 작용하고 있다. 국내 유료방송은 KT·SKB·LG U+ 3강 체제로 고착화되어 있으며, 미들웨어 교체 비용이 높아 기존 공급사 유지 경향이 강한 시장이다. 기계설비공사업(HVAC·소방·급배수) 측면에서는 2025년 10대 건설사의 도시정비사업 수주가 역대 최고치를 경신하는 등 고부가가치 수주 시장이 활성화됐으나, 중소 전문업체는 내수 경기 둔화와 수주 경쟁 심화로 수익성 압박이 이어지고 있다.",
-  "en": "The global IPTV market is projected to grow from approximately USD 66.6 billion in 2026 to USD 137.2 billion by 2031, at a compound annual growth rate of approximately 15.55%. Telecom operators are reallocating capital from on-premises equipment toward cloud middleware to reduce field costs and accelerate service deployment, making cloud-native broadcast software capability a key competitive differentiator. At the same time, Samsung and LG smart TV operating systems now natively host IPTV apps, contributing to declining set-top box shipments, while middleware licensing models are shifting from perpetual to subscription-based arrangements. Open-source middleware such as RDK — deployed on more than 800 million devices globally — is eroding pricing power for commercial middleware vendors. Korea's pay-TV market is an entrenched three-player oligopoly (KT, SKB, LG U+), where high switching costs create stickiness toward incumbent software suppliers. In the mechanical/MEP construction segment, major urban redevelopment awards by Korea's top-10 contractors reached record highs in 2025, sustaining demand for specialty subcontractors; however, mid-tier MEP firms continue to face margin pressure from sluggish domestic demand and intensifying competition."
+  "ko": "국내 유료방송·디지털 방송 소프트웨어 시장은 OTT 서비스 확산에 따른 코드커팅 현상이 지속되며 방송사업자들의 셋톱박스·미들웨어 투자가 위축되는 구조적 하락 국면에 있다. 이는 알티캐스트의 전통적 수익원인 라이선스·솔루션 공급 매출에 지속적인 압박 요인으로 작용해왔다. 반면 회사가 새롭게 진출한 전기차 충전 미들웨어 시장은, 국내 대기업들이 대규모 자본을 투입해 충전 설비투자를 진행하고 있다는 점이 잠재 수요로 거론되는 성장 초기 단계다. 프리미엄 펫푸드 시장 역시 성장세를 보이는데, 한 시장조사기관은 글로벌 프리미엄 펫푸드 시장이 2030년까지 연평균 8% 성장할 것으로 전망했다. 다만 이들 신사업은 아직 매출 비중이 제한적인 초기 단계로, 본업인 방송 솔루션의 구조적 둔화를 상쇄할 만한 규모로 성장했는지는 추가 확인이 필요하다. 경쟁 구도 면에서는 국내 방송 미들웨어 시장에 휴맥스, 가온그룹 등 경쟁사가 존재하며, 공조·소방설비 부문은 대현기건이 속한 산업 특성상 건설·인프라 경기에 연동되는 성격을 지닌다. 최근 코스닥 시장에서는 시가총액·동전주 관련 상장 유지 요건이 강화되고 있어, 중소형 기술주 전반의 수급 환경에도 영향을 미치고 있다.",
+  "en": "The domestic pay-TV and digital broadcast software market remains in structural decline as OTT-driven cord-cutting continues to reduce broadcasters' investment in set-top box and middleware solutions, a persistent headwind for Alticast's legacy licensing and solutions revenue. By contrast, the EV charging middleware market the company has newly entered is at an early growth stage, with large domestic conglomerates deploying substantial capital into charging infrastructure investment cited as a source of potential demand. The premium pet food market is also growing, with one market research firm projecting the global premium pet food market to grow at an average annual rate of 8% through 2030. These new businesses, however, remain at an early stage with limited revenue contribution, and it is not yet clear whether they have grown large enough to offset the structural slowdown in the core broadcast solutions business. Competitively, the domestic broadcast middleware market includes rivals such as Humax and Gaon Group, while the HVAC and fire-safety segment tied to Daehyun Airtech is inherently linked to the construction and infrastructure cycle. Recently, tightened KOSDAQ listing-maintenance requirements around market capitalization and low-priced ('penny') stocks have also affected the supply-demand environment for small- and mid-cap technology names broadly."
  },
  "outlook": {
-  "ko": "회사 측은 '대현기건의 안정적 현금 창출력과 압타머사이언스의 성장 잠재력을 결합해 향후 2~3년 내 우량 기업으로 자리매김할 것'이라는 목표를 공개적으로 표명했다. 2026년 3월 주주총회에서 5대1 무상감자를 확정해 누적 결손금을 해소하고 상장 안정성을 강화하는 선제적 조치를 취했다. 자회사 압타머사이언스는 2026년 3월 미국 프리미엄 펫푸드 기업 츌립(Choolip Inc.) 지분 100%를 약 172억 원에 인수한다고 공시했으며, 인수 완료 후 통합 시너지 실현 여부가 주목된다. 방송 SW 부문에서는 클라우드 기반 솔루션으로의 전환 및 글로벌 파트너사와의 연계를 통한 해외 시장 진출이 중기 성장 방향으로 제시되고 있으나 구체적 계약·수주 공시는 아직 확인되지 않는다. 대현기건의 신규 수주 동향과 공사 잔고 유지 여부가 2026년 연결 매출과 영업이익의 핵심 변수이며, 2026년 1분기 영업손실이 계절성에 기인한 것인지 아니면 수주 구조 변화 때문인지는 2분기 이후 결과로 검증해야 한다. 최대주주 베노티앤알의 전략적 방향성(로봇 사업 시너지 포함)도 향후 사업 재편에 영향을 미칠 변수다.",
-  "en": "Management has publicly stated a goal of 'establishing Alticast as a quality company within two to three years' by combining Daehyun Gigeon's stable cash generation with Aptamer Science's growth potential. A 5-for-1 share consolidation was approved at the March 2026 AGM to eliminate accumulated deficits and improve listing stability. Subsidiary Aptamer Science disclosed in March 2026 its intent to acquire a 100% stake in U.S. premium pet food company Choolip Inc. for approximately KRW 17.2 billion; post-acquisition integration outcomes remain to be demonstrated. On the broadcast software side, a transition to cloud-based solutions and international expansion through global partners is outlined as the medium-term growth strategy, though specific contract disclosures have yet to materialize. New order flow and backlog maintenance at Daehyun Gigeon are the primary determinants of 2026 consolidated revenue and earnings — the Q1 2026 operating loss requires monitoring to determine whether it reflects seasonal patterns or a structural order-pipeline decline, to be assessed from Q2 results onward. The strategic direction of major shareholder Benoti & R — including reported robotics business synergies — could influence future corporate restructuring."
+  "ko": "회사는 대현기건의 안정적 현금창출력과 압타머사이언스의 성장 잠재력을 결합해 포트폴리오를 강화하겠다는 방향을 밝히고 있다. 실제로 압타머사이언스의 자회사 츌립은 아마존과 코스트코 등 유통망을 확보한 상태이며, 올해 안으로 월마트, TJ맥스, 펫코, 타겟 등으로 입점 매장을 확대할 계획인 것으로 전해졌다. 이 계획의 실제 진행 여부가 향후 자회사 가치와 모회사 지분가치에 영향을 줄 수 있는 변수다. 재무구조 측면에서는 2026년 3월 주주총회를 통해 5대 1 무상감자를 확정했으며, 이는 동전주 및 자본잠식 우려 기업에 대한 상장폐지 규정이 강화된 상황에서 주식 수를 조정해 재무 건전성을 확보하기 위한 조치로 설명된다. 다만 회사는 증권신고서를 통해 2025년말 결손금이 2,680억원 수준이며, 무상감자 이후에도 영업손실이 지속될 경우 자본잠식에 이를 수 있다고 스스로 밝힌 바 있다. 방송 솔루션 부문에서는 뚜렷한 신규 대형 수주나 증설 계획이 별도로 확인되지 않아, 향후 실적은 대현기건의 공조·소방설비 수주 흐름과 신사업 자회사들의 진행 상황에 좌우될 가능성이 크다. 향후 분기 실적에서 지배주주 순이익이 다시 안정적으로 흑자 전환되는지가 핵심 관찰 포인트가 될 전망이다.",
+  "en": "The company has stated a strategy of strengthening its portfolio by combining Daehyun Airtech's stable cash generation with Aptamer Sciences' growth potential. Aptamer Sciences' subsidiary Choolip already has distribution through Amazon and Costco, and reportedly plans to expand into retailers such as Walmart, TJ Maxx, Petco, and Target within the year. Whether this plan is actually executed is a variable that could affect both the subsidiary's value and the parent's equity stake value. On the balance-sheet side, Alticast confirmed a 5-for-1 no-par capital reduction at its March 2026 shareholder meeting, described as a measure to adjust share count and shore up financial soundness amid tightened delisting rules targeting low-priced stocks and companies at risk of capital impairment. The company itself disclosed in a securities registration statement that accumulated deficit stood at roughly KRW 268 billion at the end of 2025, and that continued operating losses even after the capital reduction could lead to capital impairment. No clear new large-scale orders or capacity expansion plans have been separately confirmed in the broadcast solutions segment, so future results are likely to hinge on order flow at Daehyun Airtech's HVAC/fire-safety business and progress at the new business subsidiaries. Whether owners' net income can return to stable profitability in coming quarters will likely be a key point to watch."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당순자산(BPS) 3,750원 대비 상당한 할인 구간에서 형성되어 있다. 이는 2022~2024년 3년 연속 대규모 영업손실 이력과, 2025년 흑자 전환 이후에도 2026년 1분기에 영업손실이 재현된 수익성 불확실성을 시장이 반영한 것으로 해석된다. 이익 가시성이 제한적이어서 수익 기반 배수 산출이 사실상 어려운 상황이며, 장부가 대비 할인 폭이 주된 밸류에이션 참고 지표로 기능하고 있다. 배당 지급 이력이 없어 배당수익률은 0이며, 소득형 배분에 대한 유인은 없는 상태다. 5대1 무상감자 이후 주당 순자산 수치가 조정됐으므로, 향후 수익성 회복 속도와 자회사 자산 가치 실현 여부에 따라 순자산 대비 할인 폭은 변동될 수 있다.",
-  "en": "The current share price trades at a substantial discount to book value per share (BPS: KRW 3,750). This reflects the market's pricing of the company's three-year consecutive operating-loss history and the recurrence of an operating loss in Q1 2026 following the 2025 profitability recovery. With earnings visibility limited, earnings-based multiple analysis is of limited applicability, and the discount-to-book relationship serves as the primary valuation reference. There is no history of dividend payments, making dividend yield support absent; the investment case rests on potential capital appreciation rather than income distribution. Following the 5-for-1 share consolidation, per-share book metrics were restated, and the magnitude of the discount to book value may shift as a function of the pace of earnings recovery and the degree to which subsidiary asset values are realized."
+  "ko": "알티캐스트는 2026년 초 대규모 무상감자를 거치며 유통주식수와 주당 지표의 기준점이 크게 달라져, 감자 이전 시점의 주가 흐름과 현재를 단순 비교하기는 어려운 상황이다. 주가는 주당 순자산(자기자본)을 밑도는 수준에서 거래되고 있어, 순자산 대비로는 할인된 구간에 위치한다. 다만 지배주주 귀속 기준으로는 2025년에도 순손실을 기록했고 최근 네 개 분기 합산으로도 적자가 이어지고 있어, 통상적인 주가수익비율을 통한 비교는 의미를 갖기 어려운 상태다. 최근 회계연도에는 별도의 현금배당이 이뤄지지 않아, 주주환원보다는 사업 구조 재편과 자회사 가치 제고 쪽에 자원이 집중되는 국면으로 볼 수 있다. 부채비율이 2023년 143.7%에서 2025년 38.6%로 낮아진 점은 재무 건전성이 개선되는 방향을 보여주는 참고 지표다.",
+  "en": "Alticast underwent a large-scale no-par capital reduction in early 2026 that significantly reset the share count and per-share reference points, making simple comparison of pre-reduction price trends with the current level difficult. Shares trade below book value per share, placing the stock in a discount range relative to net assets. However, since net income attributable to owners remained negative in 2025 and the trailing four quarters combined also show a loss, comparison through conventional price-to-earnings measures is not meaningful. No cash dividend was paid in the most recent fiscal year, suggesting resources are currently directed more toward business restructuring and enhancing subsidiary value than toward shareholder returns. The decline in the debt ratio from 143.7% in 2023 to 38.6% in 2025 is a reference point indicating an improving direction in financial soundness."
  },
  "bull": [
   {
    "title": {
-    "ko": "대현기건 수주 안정화 → 매출 가시성 및 이익 기반 확보",
-    "en": "Daehyun Gigeon Order Stabilization — Revenue Visibility and Earnings Floor"
+    "ko": "실적 턴어라운드",
+    "en": "Earnings Turnaround"
    },
    "body": {
-    "ko": "대현기건 편입 첫 연도인 2025년에 연결 매출 531.7억 원, 영업이익 31.8억 원을 달성하며 인수 효과가 실적으로 가시화됐다. 기계설비공사업은 설계·시공·유지관리까지 전주기 역량이 필요한 기술 집약 분야로, 축적된 공정·품질관리 역량이 신규 수주 경쟁력의 기반이 된다. 수주 잔고가 안정적으로 유지될 경우 기존 방송 SW 사업의 반복 매출과 결합되어 연간 매출·이익의 예측 가능성이 높아질 수 있다.",
-    "en": "In the first full year of Daehyun Gigeon's consolidation (FY2025), the company delivered revenue of KRW 53.2 billion and operating profit of KRW 3.2 billion, confirming a tangible acquisition effect. The mechanical/MEP segment is technology-intensive, requiring full lifecycle capabilities across design, construction, and maintenance, which underpin competitiveness in securing new contracts. If order backlog remains stable, the combination with recurring broadcast software revenue could meaningfully improve annual earnings predictability."
+    "ko": "2025년 연결 매출은 531.66억원, 영업이익은 31.81억원으로 흑자 전환에 성공했다. 대현기건 인수를 통한 연결 실적 편입이 핵심 동력으로 작용했다. 부채비율도 2023년 143.7%에서 2025년 38.6%로 낮아지며 재무구조가 함께 개선됐다.",
+    "en": "Consolidated 2025 revenue reached KRW 53.17 billion with operating profit of KRW 3.18 billion, marking a successful turn to profitability, driven mainly by the consolidation of Daehyun Airtech. The debt ratio also improved, falling from 143.7% in 2023 to 38.6% in 2025."
    }
   },
   {
    "title": {
-    "ko": "방송 SW 60%+ 점유율 — 기술 장벽과 반복 매출 구조",
-    "en": "60%+ Broadcast Software Market Share — Technical Moat and Recurring Revenue"
+    "ko": "신사업 다각화",
+    "en": "New Business Diversification"
    },
    "body": {
-    "ko": "알티캐스트는 KT IPTV를 포함한 대부분의 케이블·위성방송사업자에 솔루션을 공급해 국내 방송 SW 시장에서 60% 이상의 점유율을 유지하는 것으로 추정된다. 미들웨어 및 CAS/DRM 교체 비용이 상당해 기존 고객의 이탈 가능성이 낮고, 라이선스와 유지보수 매출이 반복적으로 발생하는 구조다. 유료방송 사업은 경기변동에 비교적 덜 민감한 특성을 지니고 있어, 기계설비공사업의 수주 변동성을 완충하는 안정적인 수익 기반이 될 수 있다.",
-    "en": "Alticast supplies solutions to KT IPTV and most cable/satellite broadcasters, sustaining an estimated 60%+ domestic market share in broadcast software. High switching costs associated with middleware and CAS/DRM replacements reduce the likelihood of customer churn, and the model generates recurring license and maintenance revenue. Pay-TV demand is comparatively insulated from economic cycles, providing a stable earnings base that can buffer revenue volatility from the mechanical construction segment."
+    "ko": "자회사 압타머사이언스가 미국 프리미엄 펫푸드 기업 츌립 지분 100%를 인수해 바이오·펫푸드 사업으로 영역을 넓혔다. 츌립은 이미 아마존과 코스트코 유통망을 확보했고, 월마트·TJ맥스·펫코·타겟 등으로 입점 확대 계획도 전해졌다. 성공적으로 실행될 경우 자회사 가치 제고를 통한 지분가치 확대 요인이 될 수 있다.",
+    "en": "Subsidiary Aptamer Sciences acquired 100% of US premium pet food maker Choolip Inc., expanding into the bio and pet food business. Choolip already has distribution through Amazon and Costco, with reported plans to expand into Walmart, TJ Maxx, Petco, and Target. If executed successfully, this could enhance subsidiary value and, in turn, the parent's equity stake value."
    }
   },
   {
    "title": {
-    "ko": "자회사 옵션 가치 — 압타머사이언스·알티플랫폼 잠재력",
-    "en": "Subsidiary Option Value — Aptamer Science and AltiPlatform Potential"
+    "ko": "지배구조 개편과 상장유지 대응",
+    "en": "Governance Overhaul and Listing-Maintenance Response"
    },
    "body": {
-    "ko": "압타머사이언스는 2026년 3월 미국 프리미엄 펫푸드 기업 츌립(Choolip Inc.) 지분 100%를 약 172억 원에 인수한다고 공시했으며, 성공적인 통합과 사업 확장이 이뤄질 경우 자회사 가치 상승이 연결 자산가치에 긍정적으로 작용할 수 있다. 알티플랫폼은 블록체인과 전통 IT를 연결하는 통합 솔루션을 제공하며 신규 수익원 발굴을 목표로 하고 있다. 현재 두 자회사의 실적 기여는 제한적이나, 사업이 궤도에 오를 경우 그룹 전체 자산 프로파일의 추가적인 구성 요소가 될 수 있다.",
-    "en": "Aptamer Science disclosed in March 2026 its intention to acquire a 100% stake in U.S. premium pet food company Choolip Inc. for approximately KRW 17.2 billion; successful integration and business expansion could boost subsidiary asset values and benefit consolidated net assets. AltiPlatform targets new revenue streams via integrated solutions connecting blockchain networks and conventional IT infrastructure. While both subsidiaries currently contribute limited earnings, successful business development could become incremental contributors to the group's overall asset profile."
+    "ko": "최대주주가 베노티앤알로 변경되며 새로운 자본 및 사업 결합이 이뤄지고 있다. 2026년 3월 5대 1 무상감자를 확정하며 동전주·상장유지 요건 강화에 선제 대응했다. 회사는 이 같은 조치가 상장 안정성과 주주가치 제고 기반이 될 것이라고 설명했다.",
+    "en": "A change in largest shareholder to Beno T&R has brought new capital and business combinations. The company confirmed a 5-for-1 no-par capital reduction in March 2026, proactively responding to tightened listing-maintenance rules for low-priced stocks. Management has described the move as a foundation for listing stability and enhanced shareholder value."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2026Q1 영업손실 재현 — 수익성 지속성 불확실",
-    "en": "Q1 2026 Operating Loss Recurrence — Profitability Sustainability Unproven"
+    "ko": "지배주주 순손실 지속",
+    "en": "Continued Owner-Level Net Losses"
    },
    "body": {
-    "ko": "2025년 흑자 전환 이후 2026년 1분기에 영업손실 –10.9억 원이 재현됐다. 영업현금흐름도 2022년부터 2025년까지 4년 연속 마이너스로, 내부 현금 창출 능력이 아직 충분히 검증되지 않은 상태다. 기계설비공사업의 계절성 또는 수주 공백이 원인일 수 있으나, 2분기 이후 결과가 나오기 전까지 구조적 개선 여부를 판단하기 어렵다.",
-    "en": "After returning to operating profit in FY2025, Alticast recorded an operating loss of KRW –1.1 billion in Q1 2026. Operating cash flow has remained negative for four consecutive years (2022–2025), leaving structural cash-generation capability unverified. While seasonal slowdowns or order gaps in the MEP construction business could explain the Q1 weakness, the trend cannot be assessed until H2 results are available."
+    "ko": "2025년 연결 순이익은 근소한 흑자였지만 지배주주 귀속 순이익은 -8.13억원 손실을 기록했다. 최근 네 개 분기 합산으로도 지배주주 순손실이 54.04억원에 달해, 비지배주주에 대한 이익 배분 구조가 지분가치에 부담으로 작용하고 있다.",
+    "en": "While consolidated net income was marginally positive in 2025, net income attributable to owners was a loss of KRW 813 million. The trailing four quarters combined show an owners' net loss of KRW 5.4 billion, meaning the profit-sharing structure with non-controlling interests continues to weigh on equity value."
    }
   },
   {
    "title": {
-    "ko": "스마트TV·오픈소스 미들웨어 확산 — 방송 SW 수요 구조 변화",
-    "en": "Smart TV and Open-Source Middleware Expansion — Structural Demand Shift in Broadcast Software"
+    "ko": "본업의 구조적 둔화",
+    "en": "Structural Decline in the Core Business"
    },
    "body": {
-    "ko": "삼성·LG 스마트TV OS가 IPTV 앱을 기본 탑재하면서 셋톱박스 출하량이 감소 추세에 있어 전통적 미들웨어 라이선스 수요에 중장기적 압박이 가해지고 있다. 전 세계 8억 대 이상의 셋톱박스에 채택된 오픈소스 RDK의 확산은 상용 솔루션 공급사 전반의 가격 결정력을 약화시킬 수 있다. 알티캐스트가 클라우드 기반 방송 SW로의 전환에서 경쟁력을 유지하는지가 방송 SW 사업의 장기 방향성을 결정할 핵심 변수로 부상하고 있다.",
-    "en": "Samsung and LG smart TV operating systems natively running IPTV apps are contributing to declining set-top box shipments, placing medium- to long-term pressure on traditional middleware license revenue. The proliferation of open-source RDK middleware — now deployed on more than 800 million devices globally — risks eroding pricing power for commercial solution providers. Whether Alticast can maintain competitiveness in the industry's transition to cloud-native broadcast software will be the central determinant of the segment's long-term trajectory."
+    "ko": "전통적 방송 미들웨어 사업은 OTT발 코드커팅에 따른 방송사업자 투자 축소 영향을 지속적으로 받고 있다. 신사업(EV 충전 미들웨어, 펫푸드)은 아직 매출 비중이 제한적인 초기 단계다. 본업 둔화를 상쇄할 만한 대체 성장축이 아직 확립됐다고 보기는 어렵다.",
+    "en": "The legacy broadcast middleware business continues to face reduced investment from broadcasters due to OTT-driven cord-cutting. New businesses such as EV charging middleware and pet food remain at an early stage with limited revenue contribution, and it is not yet clear that a replacement growth pillar has been firmly established."
    }
   },
   {
    "title": {
-    "ko": "지배구조 변동·자회사 M&A 실행 리스크",
-    "en": "Governance Instability and Subsidiary M&A Execution Risk"
+    "ko": "상장유지 요건 리스크",
+    "en": "Listing-Maintenance Risk"
    },
    "body": {
-    "ko": "알티캐스트는 최대주주가 건인투자→휴맥스홀딩스→에이치앤아이→휴맥스→베노티앤알로 단기간 내 수차례 변경된 이력을 갖고 있어 경영 전략의 연속성에 대한 시장의 주의가 필요하다. 자회사 압타머사이언스의 해외 M&A(약 172억 원 규모)는 실사·통합 리스크를 수반하며, 인수 기업 실적이 기대에 미치지 못할 경우 손상 처리가 발생할 수 있다. 과거 대규모 순손실의 주요 원인 중 하나였던 비현금 자산 손상 가능성이 완전히 해소되지 않았다는 점도 유의해야 한다.",
-    "en": "Alticast has experienced multiple majority shareholder changes within a short period — Geonin Investment to Humax Holdings, H&I, Humax, and now Benoti & R — warranting market scrutiny over strategic continuity. The overseas M&A at subsidiary Aptamer Science (approximately KRW 17.2 billion) carries due diligence and integration execution risks; if the acquired company underperforms, impairment charges could materialize. The risk of non-cash asset impairments — a major driver of large historical net losses — has not been fully eliminated."
+    "ko": "코스닥 시장은 2026년 2월 발표된 개편에 따라 시가총액 기준 상장폐지 제도의 적용 주기를 반기 단위로 강화했다. 회사는 증권신고서에서 2025년말 결손금이 2,680억원 수준이며 영업손실이 이어질 경우 자본잠식에 이를 수 있다고 스스로 밝혔다. 과거 2022~2023년에는 자본잠식률이 높았던 시기도 있어 재무 취약성에 대한 경계가 필요하다.",
+    "en": "Following a KOSDAQ system overhaul announced in February 2026, the review cycle for the market-cap-based delisting rule was shortened to a semiannual basis. The company itself disclosed in a securities registration statement that its accumulated deficit stood at roughly KRW 268 billion at the end of 2025, and that continued operating losses could lead to capital impairment. Given a history of elevated capital-impairment ratios in 2022-2023, financial fragility remains a point of caution."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "산업·시장 리스크",
-    "en": "Industry and Market Risk"
+    "ko": "지분 구조 및 오버행",
+    "en": "Ownership Structure and Overhang"
    },
    "body": {
-    "ko": "스마트TV 및 OTT 확산으로 셋톱박스 기반 IPTV 시장이 중장기적으로 위축될 경우 방송 SW 부문 로열티·라이선스 매출이 감소할 수 있다. 방송통신 규제 변화(IPTV 합산규제, 망 중립성 등)가 주요 고객 KT의 가입자 성장에 영향을 미쳐 간접적으로 알티캐스트 매출에 파급될 가능성도 존재한다. 국내 건설 경기의 추가 악화는 대현기건의 수주 환경과 수익성을 악화시킬 수 있다.",
-    "en": "The medium- to long-term contraction of STB-based IPTV markets driven by smart TV and OTT proliferation could reduce royalty and license revenue in the broadcast software segment. Regulatory changes in broadcasting and telecommunications — such as IPTV subscriber concentration limits or net neutrality rules — could indirectly constrain subscriber growth at key customer KT, with downstream revenue effects on Alticast. A further deterioration in Korea's domestic construction environment could worsen the order and margin outlook for Daehyun Gigeon."
+    "ko": "최대주주 변경 과정에서 구주를 인수한 투자조합 다수가 5% 지분 공시의무를 회피하도록 지분을 나눠 보유한 것으로 파악됐다는 보도가 있었다. 한국거래소는 이전에도 소수계좌 매수관여 과다에 따른 투자주의·투자경고 종목으로 알티캐스트를 지정한 바 있다. 보호예수가 없는 구주 물량이 시장에 출회될 경우 유통주식 수급에 영향을 줄 수 있다는 우려가 매체를 통해 제기됐다.",
+    "en": "Reports indicated that several investment partnerships that acquired existing shares during the change of largest shareholder split their holdings to avoid the 5% disclosure obligation. The Korea Exchange had previously designated Alticast as an investment-caution and investment-warning stock due to excessive concentration of buying in a small number of accounts. Media reports raised concerns that unescrowed legacy shares entering the market could affect share supply and demand."
    }
   },
   {
    "cat": {
-    "ko": "재무·유동성 리스크",
-    "en": "Financial and Liquidity Risk"
+    "ko": "상장유지·규제 리스크",
+    "en": "Listing-Maintenance and Regulatory Risk"
    },
    "body": {
-    "ko": "영업현금흐름이 2022~2025년 4년 연속 마이너스를 기록해 내부 재원 창출 능력이 아직 충분하지 않다. 자회사 압타머사이언스의 해외 M&A 자금(약 172억 원) 조달 방식과 이에 따른 부채 증가 가능성이 연결 재무 부담을 가중시킬 수 있다. 과거 유상증자 및 전환사채 발행 이력이 있어, 향후 추가 자금 조달 시 주주 지분 희석 위험이 상존한다.",
-    "en": "Operating cash flow has been negative for four consecutive years (2022–2025), indicating that internal cash generation remains insufficient. The financing of Aptamer Science's overseas M&A (approximately KRW 17.2 billion) and the associated potential increase in debt could add to the consolidated financial burden. Given a history of equity offerings and convertible bond issuances, the risk of shareholder dilution in any future capital raise remains a standing concern."
+    "ko": "2026년 2월 금융위원회가 발표한 개편에 따라 시가총액 기준 상장폐지 제도의 적용 주기가 반기 단위로 조정됐고, 코스닥 기준 시가총액이 일정 수준에 미달한 상태가 30거래일 이상 지속되면 관리종목으로 지정될 수 있다. 아직 관리종목 지정 상황은 아니지만 회사도 재무적 상황이 열악한 수준이라는 점을 스스로 밝힌 바 있다. 무상감자가 액면가 자체를 바꾸는 것은 아니어서, 향후 시가총액과 자본 상태를 함께 지켜볼 필요가 있다.",
+    "en": "Following a February 2026 overhaul announced by the Financial Services Commission, the review cycle for the market-cap-based delisting rule was adjusted to a semiannual basis, and KOSDAQ-listed companies whose market capitalization falls below a set threshold for 30 or more trading days can be designated as an administrative issue. While not currently under such designation, the company itself has acknowledged that its financial condition is at a weak level. Since the capital reduction does not itself change the face value, both market capitalization and capital condition need to be monitored going forward."
    }
   },
   {
    "cat": {
-    "ko": "경영·지배구조 리스크",
-    "en": "Management and Governance Risk"
+    "ko": "신사업 통합·실행 리스크",
+    "en": "New Business Integration and Execution Risk"
    },
    "body": {
-    "ko": "최대주주가 단기간 내 수차례 변경됐으며, 신 최대주주 베노티앤알의 경영 전략이 기존 방송 SW 사업과 어떻게 연계될지 불확실하다. 사업보고서 정정 공시 이력(2026년 3월)은 공시 완결성에 대한 지속적인 시장 모니터링 필요성을 시사한다. 방송 SW·기계설비건설·바이오·블록체인에 걸친 사업 다각화가 명확한 시너지 없이 진행될 경우 경영 집중도 저하와 자원 배분 비효율이 발생할 수 있다.",
-    "en": "Repeated majority shareholder changes within a short span raise questions about management strategy continuity, and the alignment between new major shareholder Benoti & R's corporate vision and the existing broadcast software business remains unclear. A history of amended annual report filings (most recently in March 2026) underscores the need for continued market scrutiny of disclosure quality. Business diversification spanning broadcast software, MEP construction, biotech, and blockchain — if pursued without clear synergies — risks diluting management focus and creating capital allocation inefficiencies."
+    "ko": "대현기건, 압타머사이언스·츌립 등 최근 편입 또는 인수된 사업들의 시너지가 실제로 실현될지는 아직 검증되지 않았다. 츌립의 미국 대형 유통망 입점 확대 계획이 계획대로 진행되지 않을 가능성도 배제할 수 없다. 여러 이질적 사업이 한 지주 구조 안에 묶이면서 자원 배분과 경영 집중도에 대한 우려도 제기될 수 있다.",
+    "en": "It remains unverified whether synergies from recently consolidated or acquired businesses, such as Daehyun Airtech and Aptamer Sciences/Choolip, will actually materialize. There is also a possibility that Choolip's planned expansion into major US retail chains may not proceed as outlined. As several disparate businesses are bundled under one holding structure, concerns about resource allocation and management focus could also arise."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 2분기(Q2) 분기보고서 제출 예정. 영업손실이 지속되는지 또는 흑자로 전환하는지를 확인해 연간 흑자 유지 가능성을 가늠하는 핵심 점검 포인트.",
-    "en": "Q2 2026 quarterly report expected. The key check: whether operating loss reverses to profit or persists, which will signal the likelihood of achieving full-year profitability."
+    "ko": "2026년 3분기 보고서 공시 예정 시점으로, 대현기건 편입 효과의 지속성과 지배주주 순이익의 흑자 전환 여부를 확인할 필요가 있다.",
+    "en": "The Q3 2026 report is expected to be filed around this time; it will be worth checking whether the Daehyun Airtech consolidation effect persists and whether owners' net income returns to profit."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (수시 공시)",
-    "en": "H2 2026 (Ad Hoc Disclosures)"
+    "ko": "2026년 4분기 중",
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "대현기건 신규 공사 수주 공시 여부 모니터링. 수주 잔고 규모와 공사 종류가 2026~2027년 연결 매출 가시성을 결정하는 선행 지표.",
-    "en": "Monitor for new contract award disclosures from Daehyun Gigeon. Order backlog volume and project composition are leading indicators of consolidated revenue visibility for 2026–2027."
+    "ko": "압타머사이언스 자회사 츌립의 월마트·TJ맥스·펫코·타겟 등 미국 대형 유통망 입점 확대 계획의 실제 진행 상황을 확인할 시점이다.",
+    "en": "This is the point to verify actual progress on Choolip's planned expansion into major US retail chains such as Walmart, TJ Maxx, Petco, and Target."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (인수 완료 시점)",
-    "en": "H2 2026 (Acquisition Closing)"
+    "ko": "2026년 9월 이후 매 30거래일",
+    "en": "Every 30 trading days from September 2026 onward"
    },
    "what": {
-    "ko": "압타머사이언스의 미국 펫푸드 기업 츌립(Choolip Inc.) 인수 완료 공시 및 통합 계획 발표. 약 172억 원 규모 투자가 연결 재무제표에 어떻게 반영되는지, 손상 징후가 없는지 확인 필요.",
-    "en": "Confirmation of Aptamer Science's Choolip Inc. acquisition close and integration plan. Key checks: how the approximately KRW 17.2 billion investment is reflected on the consolidated balance sheet and whether any early impairment indicators emerge."
+    "ko": "코스닥 시가총액 기준 상장유지 요건(반기 단위로 강화된 기준) 충족 여부를 지속적으로 확인해야 한다.",
+    "en": "Continued monitoring is needed on whether the company meets the KOSDAQ market-capitalization listing-maintenance threshold, now reviewed on a semiannual basis under the tightened rule."
    }
   },
   {
    "when": {
-    "ko": "2027년 3월 말",
-    "en": "Late March 2027"
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "2026년 연결 사업보고서 공시. 대현기건 2년차 기여, 방송 SW 매출 추이, 영업현금흐름의 양전환 여부를 종합적으로 확인할 수 있는 핵심 결산 공시.",
-    "en": "FY2026 consolidated annual report. Key data points: Daehyun Gigeon's second full-year revenue contribution, broadcast software revenue trend, and whether operating cash flow has turned positive."
-   }
-  },
-  {
-   "when": {
-    "ko": "수시 (지분·최대주주 변동 공시)",
-    "en": "Ongoing (Shareholder and Ownership Disclosures)"
-   },
-   "what": {
-    "ko": "최대주주 베노티앤알의 추가 지분 취득 또는 전략적 파트너십 공시. 지배구조 안정화 여부와 향후 사업 재편 방향을 판단하는 중요 신호.",
-    "en": "Any filings regarding Benoti & R's stake changes or strategic partnership announcements. These are key signals for assessing governance stabilization and the direction of future business restructuring."
+    "ko": "5대 1 무상감자 이후 유통주식 물량 변화와 보호예수 해제에 따른 구주 매도(오버행) 가능성을 점검할 필요가 있다.",
+    "en": "It will be important to check changes in the free float following the 5-for-1 capital reduction, and the potential for overhang from unescrowed legacy shares."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "알티캐스트는 2022~2024년 3년 연속 대규모 영업손실의 구조적 침체에서 벗어나, 2024년 4월 기계설비 전문기업 대현기건 인수를 발판으로 2025년 연결 매출 531.7억 원·영업이익 31.8억 원을 달성하며 수익 구조 전환의 첫 신호를 보냈다. 그러나 2026년 1분기 영업손실 재현과 4년 연속 마이너스 영업현금흐름은 수익성 안착 여부가 아직 검증 단계임을 시사한다. 방송 SW 사업은 국내 시장점유율 60%+ 추정의 기술 우위를 유지하고 있으나 스마트TV 보급 확대와 오픈소스 미들웨어 확산이라는 중장기 구조적 도전에 직면해 있으며, 클라우드 기반 솔루션으로의 전환 속도가 장기 경쟁력을 결정할 것으로 보인다. 자회사 압타머사이언스의 해외 M&A와 알티플랫폼의 블록체인 사업은 잠재 성장 옵션이지만 현시점에서 가시성이 낮고 추가적인 자금 소요와 집행 리스크를 수반한다. 최대주주 베노티앤알 체제 하의 지배구조 안정화 여부도 기업가치 판단의 중요 변수로 남아 있다. 투자자는 분기별 영업이익 흐름, 대현기건 수주 잔고, 그리고 영업현금흐름의 양전환 여부를 핵심 지표로 지속 모니터링할 필요가 있다.",
-   "en": "Alticast emerged from three consecutive years of large operating losses (2022–2024) with a first sign of recovery in FY2025 — consolidated revenue of KRW 53.2 billion and operating profit of KRW 3.2 billion — following the April 2024 acquisition of mechanical contractor Daehyun Gigeon. However, the recurrence of an operating loss in Q1 2026 and four consecutive years of negative operating cash flow leave the structural sustainability of the turnaround unverified. The broadcast software segment retains an estimated 60%+ domestic market share but faces structural mid-to-long-term headwinds from smart TV adoption and open-source middleware proliferation; the pace of transition to cloud-native solutions will be a key determinant of long-term competitiveness. Subsidiary M&A activity at Aptamer Science and AltiPlatform's blockchain venture represent option value but carry limited near-term visibility alongside additional capital requirements and execution risks. Governance stabilization under major shareholder Benoti & R remains an important variable in any corporate value assessment. Investors should monitor quarterly operating profit trends, Daehyun Gigeon order backlog, and whether operating cash flow transitions to positive territory as the primary benchmarks."
+   "ko": "알티캐스트는 2025년 대현기건 인수를 계기로 연결 매출과 영업이익이 흑자로 전환됐고, 부채비율도 크게 낮아지며 재무구조 개선 흐름을 보였다. 다만 이러한 개선은 아직 지배주주 귀속 순이익 흑자로는 이어지지 못했으며, 최근 네 개 분기 합산으로도 지배주주 순손실이 이어지고 있다. 최대주주가 베노티앤알로 변경된 이후 대현기건, 압타머사이언스·츌립 등 신규 사업이 잇따라 편입되며 회사의 사업 포트폴리오는 짧은 기간에 크게 재편됐다. 동시에 전통적 방송 미들웨어 사업은 OTT발 코드커팅 압력에서 벗어나지 못하고 있으며, 코스닥 상장유지 요건 강화와 지분 구조를 둘러싼 오버행 우려도 함께 존재한다. 5대 1 무상감자와 신사업 다각화가 실제 이익 안정화로 이어지는지, 그리고 시가총액이 강화된 상장유지 기준을 안정적으로 상회하는지가 향후 관찰의 핵심이 될 것으로 보인다. 종합하면 매출 확대와 재무구조 개선이라는 긍정적 신호와, 지배주주 손익 부진 및 상장유지 관련 리스크가 함께 상존하는 국면이다.",
+   "en": "Alticast turned consolidated revenue and operating profit positive in 2025 following the acquisition of Daehyun Airtech, and its debt ratio fell sharply, showing an improving balance-sheet trend. However, this improvement has not yet translated into a profit for net income attributable to owners, which has remained in loss even on a trailing four-quarter combined basis. Since the change of largest shareholder to Beno T&R, the company's business portfolio has been substantially reshaped in a short period through the consolidation of Daehyun Airtech and the Aptamer Sciences/Choolip acquisition. At the same time, the legacy broadcast middleware business has not escaped pressure from OTT-driven cord-cutting, and concerns persist around tightened KOSDAQ listing-maintenance requirements and potential share overhang tied to the ownership structure. Whether the 5-for-1 capital reduction and business diversification translate into stabilized owner-level profitability, and whether market capitalization stays consistently above the tightened listing-maintenance threshold, are likely to be key points to watch going forward. On balance, this is a situation where positive signals from revenue expansion and balance-sheet improvement coexist with weak owner-level profitability and listing-related risks."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A085810",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A085810&MenuYn=Y&NewMenuID=102&stkGb=701",
-  "https://www.valueline.co.kr/finance/summary/085810",
-  "https://m.thinkpool.com/item/085810",
-  "https://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=085810",
-  "https://thevc.kr/alticast",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1699236622093.pdf",
-  "https://www.investing.com/equities/alticast-corp-earnings",
-  "https://moneypie.net/wiki/v/알티캐스트",
-  "https://thevc.kr/Altimedia",
-  "https://mbiz.heraldcorp.com/article/3673389",
-  "https://thevc.kr/altimedia/products",
-  "https://www.mordorintelligence.kr/industry-reports/internet-protocol-television-iptv-market",
-  "https://www.rohde-schwarz.com/kr/technologies/iptv/iptv/iptv-technology/iptv_technology_55508.html",
-  "http://www.kashi.or.kr/board/index.html?action=view&board_id=pds2&seq=9867",
-  "https://news.mt.co.kr/mtview.php?no=2012101614290429007",
   "https://jasoseol.com/companies/1976/insights",
-  "https://www.incruit.com/company/6226171/"
+  "https://core.asiae.co.kr/article/2026040613444961503",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1699236622093.pdf",
+  "https://moneypie.net/wiki/v/%EC%95%8C%ED%8B%B0%EC%BA%90%EC%8A%A4%ED%8A%B8",
+  "https://www.investing.com/equities/alteogen-inc-earnings",
+  "https://simplywall.st/stocks/us/food-beverage-tobacco/nyse-mo/altria-group/news/altrias-lower-outlook-and-legal-scrutiny-might-change-the-ca",
+  "https://m.finance.daum.net/quotes/A196170/news/disclosure/20260120004222",
+  "https://msale.mimint.co.kr/bbs/view/news/S1N11/5389593",
+  "https://www.etnews.com/20240313000121",
+  "https://thevc.kr/alticast/products",
+  "https://www.greened.kr/news/articleView.html?idxno=318887",
+  "https://thevc.kr/alticast",
+  "https://thevc.kr/ktaltimedia",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/VFhJanJsYjFCRzh5SC9HRnVBS3V5Zz09/company_nm/(%EC%A3%BC)%EC%95%8C%ED%8B%B0%EC%BA%90%EC%8A%A4%ED%8A%B8",
+  "https://www.greened.kr/news/articleView.html?idxno=322604",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02387846645511896",
+  "https://www.inthenews.co.kr/news/article.html?no=69106",
+  "https://news.nate.com/view/20260304n33326"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "085810",
  "name": "알티캐스트",
  "name_en": "Alticast Corporation",
@@ -233,11 +223,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-30",
- "reportTs": "2026-06-30 20:56",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 19:22",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -338,25 +328,29 @@
    }
   ],
   "valuation": {
-   "price": 1735,
-   "mcap": 0.0245,
+   "price": 1498,
+   "mcap": 0.0212,
    "shares": 14136953,
    "total_shares": 14136953,
    "wavg_shares": 12840647,
    "per": null,
    "eps": -425,
-   "pbr": 0.4696,
-   "bps": 3695,
+   "pbr": 0.4053,
+   "bps": 3696,
    "roe_ttm": -11.6,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": -5404292033,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.42,
+   "eps_src": "공시",
+   "pbr_krx": 0.36,
    "bps_krx": 4130.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
  }
 }

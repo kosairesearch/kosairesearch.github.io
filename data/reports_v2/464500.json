@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "연 매출 첫 100억 돌파, 흑자전환 가시화가 과제",
-  "en": "First ₩10B Annual Revenue Crossed; Profitability Path Remains the Key Challenge"
+  "ko": "매출 고성장 지속되나 적자는 여전",
+  "en": "Revenue Scales Up, Losses Still Persist"
  },
  "lead": {
-  "ko": "2025년 처음으로 연 매출 100억 원을 돌파하며 성장 궤도를 확인했으나, 영업이익률 -55%와 연간 -97억 원의 현금 유출이 보여주듯 수익 구조 전환까지 넘어야 할 산은 여전히 크다.",
-  "en": "Iron Device crossed the ₩10 billion annual revenue mark for the first time in 2025, validating its growth trajectory, yet a -55% operating margin and nearly -₩9.7 billion annual cash burn highlight the steep climb still required to reach structural profitability."
+  "ko": "삼성전자 스마트폰용 오디오 앰프에 편중된 매출 구조에서 분기 매출이 꾸준히 늘고 있지만, 영업손실은 3년 연속 확대되며 GaN·SiC 전력반도체 신사업의 실적 기여가 아직 본격화되지 않은 상태다.",
+  "en": "Quarterly revenue has climbed steadily from a base concentrated in Samsung Electronics smartphone audio amplifiers, but operating losses have widened for three straight years as the company's new GaN/SiC power semiconductor businesses have yet to meaningfully contribute to earnings."
  },
  "keypoints": [
   {
-   "ko": "2025년 연 매출 약 101억 원으로 처음으로 100억 원대를 돌파했으며, 2026년 1분기에도 약 47억 원의 매출이 유지되며 성장 모멘텀의 연속성이 확인된다.",
-   "en": "Full-year 2025 revenue reached approximately ₩10.1 billion — the first-ever crossing of ₩10 billion — and Q1 2026 sustained ~₩4.7 billion, confirming that momentum has carried into the new year."
+   "ko": "2026년 2분기 매출 56.8억원으로 분기 기준 최대치를 재차 경신, 5개 분기 연속 성장세를 이어갔다.",
+   "en": "Q2 2026 revenue reached a record 5.68 billion won, extending five consecutive quarters of growth."
   },
   {
-   "ko": "국내 유일 스마트파워앰프 팹리스 기업으로, 경쟁자는 시러스로직·TI·구딕스 등 글로벌 대형사뿐이어서 기술 진입장벽이 높은 틈새 시장을 점유하고 있다.",
-   "en": "As Korea's only smart power amplifier fabless designer, Iron Device competes exclusively against global majors (Cirrus Logic, TI, Goodix), securing a high-barrier niche that few domestic firms can contest."
+   "ko": "2025년 연간 매출은 101.3억원으로 전년 대비 늘었지만 영업손실은 55.7억원으로 오히려 확대됐다.",
+   "en": "Full-year 2025 revenue rose to 10.1 billion won, yet the operating loss widened to 5.6 billion won."
   },
   {
-   "ko": "삼성전자 스마트폰 매출 의존도가 약 95%에 달해 갤럭시 시리즈 탑재 모델 확대 여부가 단기 실적의 핵심 변수다.",
-   "en": "Samsung Electronics accounts for approximately 95% of revenue, making the number of Galaxy models that adopt Iron Device chips the single most decisive short-term performance driver."
+   "ko": "삼성전자 스마트폰 사업 의존도가 매우 높은 고객 편중 구조가 여전히 핵심 리스크로 남아있다.",
+   "en": "Heavy customer concentration in Samsung Electronics' smartphone business remains a core structural risk."
   },
   {
-   "ko": "오디오햅틱 드라이버·디스플레이 사운드앰프·SiC/GaN IPM 등 신제품 파이프라인이 2026년 사업화 단계에 진입하며 매출 다각화의 첫 관문이 열린다.",
-   "en": "New product pipelines — audio-haptic driver, display sound amplifier, and SiC/GaN-based IPM — are entering commercialization in 2026, representing the first real opportunity for revenue diversification beyond smartphones."
+   "ko": "GaN 게이트드라이버 SMA6533이 2026년 7월 양산을 시작하며 로봇·전력전자 등 신규 응용처 진입을 준비하고 있다.",
+   "en": "The SMA6533 GaN gate driver entered mass production in July 2026, positioning the company for new applications in robotics and power electronics."
   },
   {
-   "ko": "2025년 영업현금흐름이 -97억 원으로 전년(-26억 원) 대비 급격히 악화됐으며, IPO 공모 자금으로 유지 중인 자본 여력과 현금 소진 속도의 균형이 중요한 재무 리스크다.",
-   "en": "Operating cash outflow surged to -₩9.6 billion in 2025 from -₩2.6 billion in 2024; balancing IPO-funded equity reserves against this burn rate is a material financial risk to monitor."
+   "ko": "코스닥 상장 당시 제시했던 매출 가이던스와 실제 실적 간 격차가 크게 벌어져 있다는 점도 함께 살펴볼 대목이다.",
+   "en": "A significant gap between the revenue guidance given at the KOSDAQ listing and actual results is also worth noting."
   }
  ],
  "business": {
-  "ko": "아이언디바이스는 2008년 삼성전자 시스템LSI사업부와 페어차일드반도체(현 온세미) 출신 전문 인력들이 설립한 혼성신호 SoC 팹리스 반도체 기업으로, 아날로그·디지털·파워 신호를 단일 칩에 집적하는 혼성신호 SoC 설계 기술을 핵심 역량으로 보유하고 있다. 주력 제품은 스마트폰 스피커용 승압형 스마트파워앰프 SoC로, 배터리 전압보다 높은 전압으로 스피커를 구동해 고음질과 고음압을 구현한다. 제품 생산은 DB하이텍·삼성파운드리 등 외부 파운드리에 100% 위탁하는 완전한 팹리스 구조다. 2024년 기준 매출 비중은 스마트파워앰프 등 제품 판매 75.1%, 정부 R&D 과제 서비스 24.9%로 구성된다(2025년 4월 언론 보도 및 공시 자료 기준). 주요 고객사는 삼성전자 스마트폰 사업부로 전체 매출의 약 95%를 차지하며, 갤럭시 미드엔드 모델에 하이부스트앰프 등을 공급하고 있다. 하이엔드 모델 시장에서는 시러스로직·텍사스인스트루먼트·중국 구딕스·아위닉 등 글로벌 대형사와 경쟁하며, 아이언디바이스는 국내 유일 업체다. 스마트파워앰프 예측형 제어방식 드라이버는 국내 최초로 리눅스 오픈소스 커널에 등재되어 기술 신뢰성을 인정받고 있으며, 퀄컴·미디어텍·엑시노스 등 주요 AP와의 소프트웨어 호환성도 확보하고 있다. 신규 사업으로 S사와 공동 개발 중인 오디오햅틱 드라이버, OLED 디스플레이에 피에조 소자를 결합한 디스플레이 사운드앰프, 그리고 SiC·GaN 화합물반도체용 파워IC와 지능형파워모듈(IPM)을 준비 중이며 모두 2026년 사업화를 목표로 하고 있다. 2017년 실리콘마이터스 계열사로 편입된 이후 삼성전자 스마트폰 납품이 본격화됐으며, 2024년 9월 코스닥에 기술특례 방식으로 상장했다.",
-  "en": "Iron Device is a mixed-signal SoC fabless semiconductor company founded in May 2008 by veterans of Samsung Electronics' System LSI division and Fairchild Semiconductor (now onsemi). Its core competency lies in integrating analog, digital, and power signals on a single chip — the mixed-signal SoC architecture. The primary product is a boost-type smart power amplifier SoC that drives smartphone speakers at voltages higher than the battery, enabling high-fidelity, high-SPL audio output. All manufacturing is outsourced at 100% to foundries including DB HiTek and Samsung Foundry, making it a pure-play fabless business. Based on 2024 full-year disclosures, revenue is split approximately 75.1% product sales (smart power amplifiers) and 24.9% government R&D services. Samsung Electronics' smartphone division is the dominant customer at approximately 95% of total sales, with Iron Device supplying Hi-Boost Amplifiers to mid-range Galaxy models. In the high-end segment, the company competes against Cirrus Logic, Texas Instruments, Goodix (which acquired NXP's audio division), and Awinic — and is the only Korean firm in this race. The predictive-control amplifier driver became the first Korean audio semiconductor product registered in the Linux open-source kernel, and the company supports major APs including Qualcomm, MediaTek, and Exynos. New business lines under development include an audio-haptic driver co-developed with a major domestic set maker, a display sound amplifier using piezo elements on OLED panels, and SiC/GaN compound semiconductor power ICs and IPMs (Intelligent Power Modules) — all targeting 2026 commercialization. The company was incorporated into the Silicon Mitus group in 2017, accelerating Samsung supply, and completed its KOSDAQ technology-special listing in September 2024."
+  "ko": "아이언디바이스는 2008년 삼성전자 시스템LSI사업부와 페어차일드반도체(현 온세미) 출신 인력들이 설립한 혼성신호 SoC 반도체 팹리스 기업이다. 주력 제품은 스마트폰에 탑재되는 스마트파워앰프 SoC로, 제한된 배터리·공간 환경에서 고음질 오디오 출력을 구현하는 것이 핵심 기술이다. 현재 매출의 대부분이 삼성전자 스마트폰 사업에서 발생하는 것으로 알려져 있으며, 고객 편중도가 매우 높은 구조다. 회사는 초저잡음 아날로그 회로 기술과 파워 구동·센싱 기술을 바탕으로 오디오-햅틱 드라이버, OLED 디스플레이용 사운드 앰프 등으로 응용처를 확장해왔다. 최근에는 화합물 전력반도체(GaN·SiC) 분야로 사업 영역을 넓혀 게이트드라이버 IC 'SMA6533', 세계 최소형을 표방하는 GaN 하프브릿지 구동IC 'SMA6534' 등을 선보였다. 글로벌 GaN 구동 반도체 시장은 텍사스인스트루먼트(TI), 인피니언테크놀로지 등이 주도하고 있는 가운데, 국내에서는 아이언디바이스가 자체 원천기술 기반 상용화 라인업을 보유한 유일한 업체로 소개되고 있다. 신사업 타깃 응용처로는 로봇 액추에이터, 전기차 전장 시스템, 데이터센터 전력모듈 등이 제시되고 있으며, 자동차용 반도체 시장 진출을 위한 인증 절차도 준비 중인 것으로 알려졌다. 결국 회사의 사업 구조는 '모바일 오디오 앰프의 안정적 캐시플로우'와 '전력반도체·로봇 신사업의 성장 잠재력'이라는 두 축으로 요약된다.",
+  "en": "Iron Device is a mixed-signal SoC fabless semiconductor company founded in 2008 by engineers from Samsung Electronics' System LSI division and Fairchild Semiconductor (now onsemi). Its core product is the smart power amplifier SoC used in smartphones, designed to deliver high-quality audio output within limited battery and space constraints. Most of the company's revenue is understood to come from Samsung Electronics' smartphone business, reflecting a highly concentrated customer structure. Building on ultra-low-noise analog circuit and power-driving/sensing technologies, the company has expanded into audio-haptic drivers and OLED display sound amplifiers. More recently, it has moved into compound power semiconductors (GaN/SiC), introducing the SMA6533 gate driver IC and the SMA6534, which it describes as the world's smallest GaN half-bridge driver. The global GaN driver market is led by Texas Instruments and Infineon Technologies, and Iron Device is presented as the only domestic supplier with a commercialized product lineup built on proprietary technology. Target applications for the new business include robot actuators, EV electrical systems, and data center power modules, and the company is reportedly preparing certification for entry into the automotive semiconductor market. In sum, the business rests on two pillars: a stable cash-flow base from mobile audio amplifiers, and growth potential from power-semiconductor and robotics ventures still in an early stage."
  },
  "earnings": {
-  "ko": "2025년 연간 매출은 약 101억 원으로 전년(약 84억 원) 대비 21% 성장하며 창사 이래 처음으로 100억 원 대를 돌파했다. 영업손실은 약 -56억 원(영업이익률 -55.0%)으로 전년 약 -49억 원(-58.2%)보다 절대 손실 규모는 확대됐으나, 마진율 기준으로는 소폭 개선됐다. 분기별 흐름에서 하반기 집중 패턴이 뚜렷하게 나타났는데, 2025년 1분기와 2분기 매출은 각각 약 11억 원·약 9억 원에 그쳤다가, 3분기에 약 31억 원, 4분기에 약 51억 원으로 급성장했다. 이는 삼성전자 갤럭시 하반기 신모델 출시에 따른 공급 물량이 하반기에 집중되는 계절성을 반영한 것이다. 2026년 1분기 매출은 약 47억 원으로 2025년 4분기 수준을 거의 유지하며 성장 모멘텀의 연속성을 보여줬고, 같은 분기 영업손실도 약 -10억 원으로 직전 분기(-약 15억 원) 대비 크게 축소됐다. 지배주주 귀속 당기순손실도 2026년 1분기 약 -6억 원으로 직전 분기(약 -11억 원)에서 뚜렷이 개선됐다. 반면 2025년 연간 영업현금흐름은 -약 97억 원으로 전년(-약 26억 원) 대비 급격히 악화됐는데, R&D 투자 확대와 매출원가 증가가 동시에 진행된 결과로 해석된다. 자본총계는 약 266억 원, 부채비율 28.4%로 재무건전성 자체는 양호한 수준이며, 현금 소진 속도 관리가 지속적인 모니터링 포인트다.",
-  "en": "Full-year 2025 revenue reached approximately ₩10.1 billion, up 21% from approximately ₩8.4 billion in 2024, marking the company's first-ever crossing of the ₩10 billion threshold. The operating loss widened in absolute terms to approximately -₩5.6 billion (OPM: -55.0%) from -₩4.9 billion (-58.2% in 2024), though the margin rate improved slightly. Quarterly seasonality was pronounced: Q1 and Q2 2025 generated only approximately ₩1.1 billion and ₩0.9 billion respectively, before surging to approximately ₩3.1 billion in Q3 and ₩5.1 billion in Q4 — driven by Samsung Galaxy H2 model launches. Q1 2026 revenue of approximately ₩4.7 billion nearly matched Q4 2025's approximately ₩5.1 billion, confirming momentum has extended into 2026; the Q1 2026 operating loss also narrowed materially to approximately -₩1.0 billion from approximately -₩1.5 billion in Q4 2025. Net loss attributable to controlling shareholders likewise improved in Q1 2026 to approximately -₩0.6 billion from approximately -₩1.1 billion in Q4 2025. Operating cash outflow deteriorated sharply to approximately -₩9.6 billion in 2025 from approximately -₩2.6 billion in 2024, reflecting simultaneous expansion in cost of goods sold and R&D investment. Total equity stands at approximately ₩26.6 billion with a debt ratio of 28.4%, preserving near-term financial stability, though the pace of cash consumption warrants continued scrutiny."
+  "ko": "2025년 연결 매출액은 101.27억원으로 2024년 83.72억원, 2023년 62.32억원에서 꾸준히 늘어났다. 그러나 영업손실은 2023년 35.16억원, 2024년 48.76억원, 2025년 55.74억원으로 3년 연속 확대됐고, 순손실도 2023년 39.25억원에서 2024년 42.21억원, 2025년 45.40억원으로 늘었다. 분기별로 보면 2025년 2분기 매출 8.9억원에서 3분기 31.1억원, 4분기 50.6억원으로 뛰었고, 2026년 1분기 47.0억원, 2분기 56.8억원까지 이어지며 매출 규모 자체는 5개 분기 연속 확대되는 흐름을 보였다. 같은 기간 영업손실은 2025년 2분기 14.8억원에서 3분기 14.0억원, 4분기 15.5억원, 2026년 1분기 10.0억원, 2분기 13.3억원으로 매출 대비 손실 비율은 완화되는 모습이나 절대 손실액 자체는 여전히 매 분기 10억원 이상 발생하고 있다. 최근 4개 분기(2025년 3분기~2026년 2분기) 누적 순손실은 37.1억원으로 2025년 연간 순손실 45.4억원보다는 개선된 수준이다. 매출 증가는 주로 글로벌 고객사의 신규 스마트폰 모델에 스마트파워앰프 공급 물량이 늘어난 데 따른 것으로 파악되며, 반대로 손실 지속은 연구개발 인력 확충과 신제품(GaN 파워IC 등) 개발을 위한 선제 투자 비용이 반영된 결과로 풀이된다. 현금흐름 측면에서는 영업활동현금흐름이 2023년 -7.23억원, 2024년 -26.31억원, 2025년 -96.47억원으로 적자 규모가 매년 커지고 있어, 매출 성장과 별개로 현금 소진 속도가 빨라지고 있다는 점이 함께 관찰된다. 자본총계는 2023년 143.64억원에서 2024년 311.66억원으로 늘었다가 2025년 266.45억원으로 다소 줄어, 누적 손실이 자본을 서서히 갉아먹는 구조가 이어지고 있다.",
+  "en": "Consolidated revenue rose steadily from 6.23 billion won in 2023 to 8.37 billion won in 2024 and 10.13 billion won in 2025. However, the operating loss widened for three consecutive years, from 3.52 billion won in 2023 to 4.88 billion won in 2024 and 5.57 billion won in 2025, while the net loss also grew from 3.93 billion won to 4.22 billion won and 4.54 billion won over the same period. On a quarterly basis, revenue jumped from 890 million won in Q2 2025 to 3.11 billion won in Q3, 5.06 billion won in Q4, then 4.70 billion won in Q1 2026 and 5.68 billion won in Q2 2026, marking five straight quarters of expanding revenue. Operating losses over the same span moved from 1.48 billion won (Q2 2025) to 1.40 billion, 1.55 billion, 1.00 billion, and 1.33 billion won respectively — the loss ratio relative to revenue has eased, though absolute losses of over 1 billion won per quarter have continued. The trailing four-quarter net loss (Q3 2025 through Q2 2026) totaled 3.71 billion won, an improvement versus the full-year 2025 net loss of 4.54 billion won. Revenue growth appears to be driven mainly by increased shipment volumes of smart power amplifiers for a global customer's new smartphone models, while the persistent losses reflect upfront spending on R&D headcount and new product development, including GaN power ICs. Operating cash flow deteriorated further, from negative 723 million won in 2023 to negative 2.63 billion won in 2024 and negative 9.65 billion won in 2025, indicating that cash burn has been accelerating even as revenue expands. Total equity grew from 14.36 billion won in 2023 to 31.17 billion won in 2024 before declining to 26.64 billion won in 2025, showing that accumulated losses are gradually eroding the equity base."
  },
  "industry": {
-  "ko": "아이언디바이스의 주력 시장인 스마트파워앰프는 스마트기기 오디오 품질 고도화와 기기당 앰프 탑재 수 증가(최대 8개)로 가격(P)과 물량(Q)이 동시에 확대되는 구조적 성장 시장이다. 전방시장인 스마트폰은 AI 기능 탑재 확산에도 시장 성숙화로 2025~2026년 2~3%대의 완만한 성장에 그칠 전망으로, 물량 확대보다 점유율 확대가 더 중요한 변수다. 한국무역협회는 2026년 글로벌 반도체 시장이 17.8% 성장해 9,098억 달러로 확대될 것으로 전망하나, 메모리 중심의 성장이 주도하고 혼성신호 아날로그 팹리스 영역은 상대적으로 완만한 흐름이 예상된다. 신사업인 화합물반도체(SiC/GaN) 파워IC·IPM 시장은 전기차 보급 확산과 AI 서버 전력 수요 증가를 배경으로 구조적 성장 국면에 있으며, 삼일PwC에 따르면 2030년까지 와이드밴드갭 반도체가 차량용 전력반도체 시장의 약 60%를 차지할 전망이다. 미·중 무역분쟁 장기화로 중국 스마트폰 제조사의 미국 팹리스 의존도 감소 움직임은 아이언디바이스에 중화권·인도 시장 진출의 구조적 기회를 제공할 수 있다. 경쟁 구도 면에서는 시러스로직, TI, 구딕스, 아위닉 등 글로벌 대형사들이 대규모 R&D 자원으로 시장을 장악하고 있으며, 아이언디바이스는 90나노 공정 기반 가격 경쟁력과 소프트웨어-하드웨어 융복합 접근으로 미드엔드 시장에서 점유율을 높이는 전략을 구사한다. AI 서버용 DC-DC 컨버터에서의 GaN IPM 수요 증가와 산업용 로봇·드론 등에서의 화합물반도체 IPM 수요 확대도 중장기 신사업 기회로 주목된다.",
-  "en": "The smart power amplifier market that Iron Device serves enjoys a structural dual tailwind: rising audio quality standards in smart devices and an increasing number of amplifiers per device (up to eight per handset), expanding both price and volume simultaneously. The upstream smartphone market is forecast to grow only 2–3% annually in 2025–2026 despite AI feature integration, meaning share gains matter more than volume growth. The Korea International Trade Association projects the global semiconductor market to grow 17.8% to approximately $909.8 billion in 2026, though memory semiconductors will lead that growth while mixed-signal analog fabless is expected to see comparatively moderate expansion. The SiC/GaN compound semiconductor power IC and IPM new-business market is in a structural growth phase driven by EV proliferation and AI data-center power demand; Samil PwC projects wide-bandgap semiconductors to capture approximately 60% of the automotive power semiconductor market by 2030. The prolonged US-China trade dispute is creating a structural shift as Chinese OEMs reduce reliance on US fabless suppliers, potentially opening Chinese and Indian market entry opportunities for Iron Device. Competitively, global majors — Cirrus Logic, TI, Goodix, and Awinic — command substantial R&D resources; Iron Device counters with 90nm-process cost competitiveness and a software-hardware integrated approach to grow mid-range share. Rising GaN IPM demand in AI-server DC-DC converters and growing compound semiconductor IPM adoption in industrial robots and drones are also emerging medium-term tailwinds for its new businesses."
+  "ko": "스마트폰용 오디오 반도체 시장은 전체 스마트폰 출하량 정체 속에서도 고성능 스테레오 사운드, 햅틱 결합형 앰프 등 부가기능 수요가 늘면서 부품당 단가와 성능 요구가 높아지는 흐름을 보이고 있다. 2024년 유진투자증권 연구원은 아이언디바이스에 대해 \"스마트폰 시장의 정체기임에도 고성능 앰프 수요 증가로 성장을 기대한다\"고 언급한 바 있다. 한편 GaN·SiC 기반 화합물 전력반도체 시장은 전기차, 데이터센터, 로봇 등 고출력·고효율 응용처를 중심으로 커지고 있는 신흥 시장으로, 기존 실리콘 기반 소자 대비 스위칭 속도와 전력 효율 측면의 우위가 부각되고 있다. 이 시장은 텍사스인스트루먼트(TI), 인피니언테크놀로지 등 대형 반도체 기업이 주도하는 구조여서, 아이언디바이스와 같은 중소 팹리스 업체가 진입해 의미 있는 매출 규모를 확보하기까지는 시간이 필요할 것으로 보인다. 국내에서는 아이언디바이스가 GaN 구동 반도체 상용화 라인업을 갖춘 유일한 업체로 소개되고 있어 국내 생태계 내 위치는 독보적이지만, 이는 글로벌 경쟟이 치열하지 않은 국내 시장 한정 포지션이라는 점도 함께 고려할 필요가 있다. 최근에는 휴머노이드 로봇 산업이 부상하면서 로봇 관절 구동용 전력반도체 수요가 새로운 응용처로 주목받고 있으며, 회사도 관련 전시회에서 로봇 액추에이터용 GaN 파워 스테이지 솔루션을 공개하며 이 시장을 겨냥하고 있다.",
+  "en": "The smartphone audio semiconductor market is seeing rising per-unit value and performance requirements as demand grows for high-performance stereo sound and haptic-integrated amplifiers, even as overall smartphone shipment volumes remain flat. In 2024, an analyst at Eugene Investment & Securities commented that despite a mature smartphone market, growth could be expected on the back of rising demand for high-performance amplifiers. Meanwhile, the GaN/SiC compound power semiconductor market is an emerging space centered on high-power, high-efficiency applications such as electric vehicles, data centers, and robotics, where switching speed and power efficiency advantages over silicon-based devices are being highlighted. This market is dominated by large semiconductor companies such as Texas Instruments and Infineon Technologies, meaning it will likely take time for a smaller fabless player like Iron Device to build meaningful revenue scale. Domestically, Iron Device is presented as the only company with a commercialized GaN driver lineup, giving it a unique position within the local ecosystem, though this should be viewed as a domestic-market-specific standing rather than global leadership. More recently, the rise of the humanoid robotics industry has drawn attention to power semiconductors for joint actuators as a new application area, and the company has showcased a GaN power stage solution for robot actuators at industry exhibitions targeting this market."
  },
  "outlook": {
-  "ko": "2026년은 아이언디바이스가 신제품 사업화를 실질적으로 검증하는 해로 자리매김할 전망이다. 회사는 S사와 공동 개발한 오디오햅틱 드라이버와 디스플레이 사운드앰프 두 제품의 2026년 양산 개시를 목표로 하고 있다. SiC·GaN용 파워IC를 소자와 결합한 IPM 모듈 형태로 공급하는 전략을 추진 중이며, 수요처 초기 검증 단계를 거쳐 전기차·AI 서버·산업용 로봇 시장을 타깃으로 한 양산 준비에 돌입한다는 계획이다. 차량용 반도체 품질 인증인 AEC-Q100 취득도 마무리 단계에 있다고 알려져 있어, 최종 승인이 이뤄질 경우 차량 시장 진입이 가시화된다. 주력인 스마트파워앰프는 핵심 고객사 내 점유율을 20~30%로 높이는 것이 목표이며, 하이엔드 모델로의 확장도 병행 추진 중이다. 고객 다변화 측면에서는 중화권·인도 스마트폰 제조사 및 태블릿 시장 진출을 추진하고 있으며, 과거 대만 퀀타컴퓨터향 공급 실적도 확보하고 있어 차량·IoT 응용처 레퍼런스 확대의 기반이 된다. 2025년 하반기부터 시작된 매출 급성장이 2026년 1분기에도 이어지고 있으나, 연간 흑자전환 달성 여부는 신제품 양산 진행 속도와 삼성전자 적용 모델 수 확대라는 두 변수에 크게 달려 있다.",
-  "en": "2026 is set to become the year when Iron Device's new product pipeline meets its first real commercial test. The company targets mass-production launches of both the audio-haptic driver (co-developed with a major domestic set maker) and the display sound amplifier during 2026. Its SiC/GaN power IC plus compound semiconductor device IPM strategy — supplying the two in combined module form — is advancing through initial customer qualification toward production readiness, targeting EVs, AI servers, and industrial robots as primary applications. AEC-Q100 automotive qualification is reportedly in its final stage; upon completion, automotive market entry would become concrete. For the core smart power amplifier, the company targets a 20–30% share within its primary customer and is pursuing expansion from mid-range to high-end Galaxy models. Customer diversification efforts encompass Chinese and Indian smartphone OEMs and the tablet segment, with a prior Quanta supply reference providing credibility for automotive and IoT use-case expansion. The strong revenue momentum established in H2 2025 has carried into Q1 2026; however, whether the company achieves full-year breakeven will depend primarily on two variables: the speed of new product ramp-ups and the expansion in the number of Galaxy models that adopt its chips."
+  "ko": "회사는 2026년 7월 GaN 게이트드라이버 IC 'SMA6533'의 본격 양산을 시작했다고 밝히며 산업용·자동차용 파워 IC 사업 확대를 예고했다. 2025년 9월에는 세계 최소형을 표방한 GaN 하프브릿지 구동IC 'SMA6534'를 중국 상하이 PCIM Asia 전시회에서 공개했고, 2026년 8월 PCIM Asia 2026(중국 선전)에서는 휴머노이드 로봇 관절용 초소형 GaN 파워 스테이지 솔루션을 시연하며 로봇 시장 공략 의지를 재확인했다. 2025년 11월에는 K-휴머노이드 연합에 합류하며 로봇산업 진출을 공식화한 바 있다. 다만 이러한 신사업은 아직 매출 기여가 본격화되지 않은 초기 단계로, 실제 양산 물량과 고객사 채택 여부가 향후 실적에 반영되는 시점을 확인하는 것이 중요하다. 한편 회사는 코스닥 상장 당시 2024년 151억원, 2025년 297억원, 2026년 593억원의 매출 가이던스를 제시했으나, 실제 2024년 매출은 83.7억원, 2025년은 101.3억원에 그쳤고 2026년 상반기(1~2분기) 매출도 103.8억원 수준으로 연간 가이던스 달성과는 상당한 거리가 있다. 스마트폰 부문에서는 글로벌 고객사의 신규 모델 확대에 따른 물량 증가가 최근 매출 성장의 주된 동력으로 지목되고 있어, 향후에도 해당 고객사 내 채택 모델 수 추이가 실적의 핵심 변수로 남을 전망이다. 자동차용 반도체 시장 진출을 위한 인증 절차도 준비 중인 것으로 알려져 있어, 관련 진행 상황을 지속적으로 확인할 필요가 있다.",
+  "en": "The company announced that it began mass production of its SMA6533 GaN gate driver IC in July 2026, signaling plans to expand into industrial and automotive power IC businesses. In September 2025, it unveiled the SMA6534, described as the world's smallest GaN half-bridge driver, at the PCIM Asia exhibition in Shanghai, and in August 2026 it demonstrated an ultra-compact GaN power stage solution for humanoid robot joints at PCIM Asia 2026 in Shenzhen, reaffirming its push into the robotics market. In November 2025, the company joined the K-Humanoid Alliance, formalizing its entry into the robotics industry. However, these new businesses remain at an early stage with limited revenue contribution so far, making it important to track when actual production volumes and customer adoption begin to show up in financial results. Separately, at its KOSDAQ listing the company presented revenue guidance of 15.1 billion won for 2024, 29.7 billion won for 2025, and 59.3 billion won for 2026, but actual revenue came in at 8.37 billion won in 2024 and 10.13 billion won in 2025, with first-half 2026 revenue (Q1 plus Q2) at roughly 10.38 billion won — well short of the pace needed to meet the original annual guidance. Growth in the smartphone segment is attributed mainly to increased shipment volumes tied to new models at a global customer, so the trend in the number of adopted models at that customer is likely to remain a key variable for future results. Certification work for entry into the automotive semiconductor market is also reportedly underway and warrants continued monitoring."
  },
  "valuation_comment": {
-  "ko": "연속 적자 구조로 인해 주가수익비율(PER)은 의미 있는 기준점을 제공하기 어려우며, 최근 4개 분기 합산 주당순손실(EPS)은 -302원으로 적자가 지속되고 있다. 주당순자산(BPS)은 약 1,890원(KRX 기준 약 1,908원)이며, 현재 주가는 이 장부가치 대비 소폭의 프리미엄이 붙은 구간에서 거래되고 있다. 상장 당일 장중 최고가(약 1만8,000원대) 대비 현재는 상장 이후 상당 폭 조정이 이루어진 수준으로, 초기 기대와 실적 현실 사이의 간극을 반영하고 있다. 배당 실적은 없으며(DPS 0원), 현금 소진이 지속되는 성장 초기 팹리스 기업의 특성상 가까운 시일 내 배당 재개 가능성은 낮다. 결국 장부가치 대비 프리미엄의 정당성은 신제품 양산 성과 가시화와 삼성전자 내 점유율 확대 속도가 실적으로 입증될 때 비로소 뒷받침될 것이다.",
-  "en": "Consecutive annual losses make price-to-earnings valuation an impractical anchor; the trailing four-quarter EPS stands at -₩302, confirming ongoing net losses. Book value per share (BPS) is approximately ₩1,890 (₩1,908 on a KRX basis), with the current share price trading at a modest premium to that net asset floor. The stock has undergone a substantial post-IPO retracement from its listing-day intraday peak (approximately ₩18,000s), reflecting the gap between initial market expectations and actual financial outcomes. The company pays no dividend (DPS: ₩0), and near-term dividend resumption is unlikely given ongoing cash burn characteristic of early-stage growth fabless companies. Ultimately, any premium to book value must be substantiated by concrete progress in new product mass-production revenue and demonstrable share gains within the Samsung Galaxy lineup."
+  "ko": "회사가 지속적인 순손실 상태에 있어 이익 기준 밸류에이션 지표는 산출되지 않으며, 시장에서는 주로 순자산가치 대비 주가 수준을 참고하는 구조다. 현재 주가는 주당 순자산가치와 큰 차이 없이 형성되어 있어, 순자산 대비 뚜렷한 프리미엄이나 할인이 크지 않은 구간으로 볼 수 있다. 회사는 배당을 지급하지 않고 있어 배당수익률 관점의 비교는 적용되지 않는다. 과거 코스닥 상장 이후 주가는 신사업 관련 뉴스(GaN 제품 공개, 로봇산업 진출 등)에 따라 등락을 반복해온 만큼, 실적 개선 속도와 뉴스 흐름 간의 괴리를 함께 살펴볼 필요가 있다. 매출은 성장하고 있으나 손실이 이어지는 구조이기 때문에, 향후 밸류에이션은 이익 전환 시점에 대한 시장의 기대치 변화에 민감하게 반응할 가능성이 있다.",
+  "en": "Because the company remains in a continuous net-loss position, earnings-based valuation metrics are not applicable, and the market instead tends to reference the share price relative to net asset value. The current share price trades close to its per-share net asset value, suggesting neither a pronounced premium nor a deep discount relative to book value. The company does not pay a dividend, so dividend-yield comparisons are not applicable. Since its KOSDAQ listing, the share price has moved in tandem with news flow around new businesses such as GaN product unveilings and robotics-market entry, making it worth watching for any gap between the pace of actual earnings improvement and the pace of news-driven sentiment. Because revenue is growing while losses persist, valuation going forward may remain sensitive to shifts in market expectations regarding the timing of a turn to profitability."
  },
  "bull": [
   {
    "title": {
-    "ko": "하반기 집중 구조에서 분기 기저가 높아지는 성장 레버리지",
-    "en": "Rising Quarterly Revenue Floor via H2-Concentrated Growth Leverage"
+    "ko": "5개 분기 연속 매출 확대",
+    "en": "Five Straight Quarters of Revenue Growth"
    },
    "body": {
-    "ko": "2025년 4분기 매출이 약 51억 원으로 분기 사상 최고치를 기록한 데 이어, 2026년 1분기에도 약 47억 원이 유지되며 성장 모멘텀의 연속성이 확인됐다. 삼성전자 갤럭시 적용 모델 수가 확대될수록 분기 매출 기저 자체가 높아지는 레버리지 구조가 형성되어 있다. 하이엔드 모델 적용이 현실화될 경우 외형 성장 폭이 추가로 크게 확대될 수 있다.",
-    "en": "Q4 2025 revenue hit a quarterly record of approximately ₩5.1 billion, and Q1 2026 sustained approximately ₩4.7 billion, confirming that growth momentum has persisted. The business model has inherent operating leverage — as more Galaxy models adopt Iron Device chips, the quarterly revenue floor rises structurally. Penetration into high-end models would provide a further step-change in revenue scale."
+    "ko": "2025년 2분기 8.9억원이던 매출이 2026년 2분기 56.8억원까지 확대되며 5개 분기 연속 성장세를 보였다. 3분기에는 전분기 대비 250%, 전년 동기 대비 32% 증가한 31.1억원을 기록하며 글로벌 고객사의 신규 스마트폰 모델 채택이 실적 개선을 이끌었다. 매출 규모가 커지는 만큼 매출 대비 영업손실 비율도 점진적으로 완화되는 흐름이다.",
+    "en": "Revenue expanded from 890 million won in Q2 2025 to 5.68 billion won in Q2 2026, marking five consecutive quarters of growth. In Q3 2025, revenue rose 250% quarter-on-quarter and 32% year-on-year to 3.11 billion won, driven by adoption in a global customer's new smartphone models. As revenue scales up, the operating loss ratio relative to sales has gradually narrowed."
    }
   },
   {
    "title": {
-    "ko": "국내 유일 진입장벽과 미·중 무역분쟁 수혜 가능성",
-    "en": "Unique Domestic Moat and Potential Beneficiary of US-China Trade Tensions"
+    "ko": "GaN 파워 IC 양산 개시",
+    "en": "Start of GaN Power IC Mass Production"
    },
    "body": {
-    "ko": "국내에서 스마트파워앰프를 설계하는 유일한 팹리스 기업으로 경쟁사는 글로벌 대형사뿐이어서 기술 모방이 어렵다. 90나노 공정 기반의 가격 경쟁력으로 고비용 55나노 공정을 사용하는 경쟁사 대비 우위를 갖고 있다는 증권사 분석이 있다. 미·중 무역분쟁 장기화로 중국 스마트폰 제조사의 미국산 팹리스 의존도가 낮아지는 구조적 흐름은 아이언디바이스에 중화권·인도 신규 고객 확보의 실질적 기회로 작용할 수 있다.",
-    "en": "As the sole Korean smart power amplifier fabless designer, Iron Device faces only global majors as rivals, making technology replication difficult. A securities house analysis notes that its 90nm-process-based cost structure holds a price advantage over competitors using higher-cost 55nm nodes. The structural shift in US-China trade dynamics — pushing Chinese OEMs to reduce US fabless dependency — creates a concrete opportunity for Iron Device to win Chinese and Indian customers."
+    "ko": "2026년 7월 GaN 게이트드라이버 IC 'SMA6533'의 본격 양산을 시작하며 모바일 중심 사업에서 산업용·자동차용 파워 IC로 응용처를 넓히고 있다. 국내에서는 자체 원천기술 기반의 GaN 구동 반도체 상용화 라인업을 갖춘 유일한 업체로 소개되고 있다. 로봇 액추에이터, 데이터센터 전력모듈 등 신규 응용처로의 확장 시도가 이어지고 있다.",
+    "en": "The company began mass production of its SMA6533 GaN gate driver IC in July 2026, extending its applications from mobile-centric products into industrial and automotive power ICs. Domestically, it is presented as the only company with a commercialized GaN driver lineup built on proprietary technology. It continues to pursue expansion into new applications such as robot actuators and data center power modules."
    }
   },
   {
    "title": {
-    "ko": "SiC/GaN IPM 신사업의 고부가가치 성장 시장 진입 옵션",
-    "en": "High-Value Growth Market Entry Option via SiC/GaN IPM New Business"
+    "ko": "로봇·휴머노이드 시장 조기 진입",
+    "en": "Early Entry into the Robotics and Humanoid Market"
    },
    "body": {
-    "ko": "2017년부터 개발한 SiC·GaN 화합물반도체용 파워IC와 IPM은 전기차·AI 서버·산업용 로봇 등 구조적 수요 확대 시장을 겨냥한다. 인피니언·온세미 등 대형사가 소자(Device) 공급에 집중하는 것과 달리, 아이언디바이스는 소자와 파워IC를 결합한 모듈(IPM) 형태로 부가가치를 높여 공급하는 차별화 전략을 구사한다. 단독 파워IC 대비 IPM 모듈 형태가 부가가치가 높다는 판단 하에 이 전략을 추진 중이며, AEC-Q100 차량용 인증이 완료되면 신규 시장 진입이 가시화된다.",
-    "en": "The SiC/GaN power IC and IPM business developed since 2017 targets structural growth markets — EVs, AI servers, and industrial robots. Unlike global majors such as Infineon and onsemi that focus on discrete device supply, Iron Device pursues a differentiated strategy of integrating compound semiconductor devices with its power ICs in a higher-value IPM module form. This approach is premised on the superior value-add of module versus standalone IC supply; AEC-Q100 certification completion would make automotive market entry concrete."
+    "ko": "2025년 11월 K-휴머노이드 연합에 합류하며 로봇산업 진출을 공식화했고, 2026년 8월 PCIM Asia 2026 전시회에서 휴머노이드 로봇 관절용 초소형 GaN 파워 스테이지 솔루션을 시연했다. 낮은 온저항과 초소형 패키징을 앞세워 관절 액추에이터의 발열·효율 문제 해결을 강조하고 있다. 아직 매출로 연결되지는 않았지만 성장 산업으로 부상하는 휴머노이드 시장에 선제적으로 이름을 올린 점은 주목할 부분이다.",
+    "en": "The company formalized its entry into the robotics industry by joining the K-Humanoid Alliance in November 2025, and it demonstrated an ultra-compact GaN power stage solution for humanoid robot joints at the PCIM Asia 2026 exhibition in August 2026. It has emphasized low on-resistance and miniature packaging to address heat and efficiency issues in joint actuators. While this has not yet translated into revenue, the company's early positioning in the emerging humanoid robotics market is notable."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "삼성전자 약 95% 의존도의 구조적 집중 리스크",
-    "en": "Structural Single-Customer Risk: ~95% Samsung Dependency"
+    "ko": "3년 연속 확대된 영업손실",
+    "en": "Operating Losses Widened for Three Straight Years"
    },
    "body": {
-    "ko": "전체 매출의 약 95%가 삼성전자 스마트폰 사업에서 발생해 단일 고객에 대한 의존도가 극단적으로 높다. 삼성전자의 물량 조정, 경쟁사로의 전환, 또는 오디오 기능 내재화 결정이 발생하면 실적이 즉각적으로 직격탄을 맞는다. 2025년 상반기 1·2분기 합산 매출이 약 20억 원에 그쳤던 것도 고객사 신모델 공급 일정 지연 하나가 전사 실적을 얼마나 크게 흔들 수 있는지를 보여주는 사례다.",
-    "en": "Approximately 95% of revenue derives from Samsung Electronics' smartphone business, representing an extreme level of single-customer concentration. Any Samsung volume adjustment, competitor substitution, or in-sourcing of audio function could immediately devastate results. The combined Q1 and Q2 2025 revenue of only approximately ₩2 billion illustrates how a single customer's supply schedule delay can compress full-company performance dramatically."
+    "ko": "매출은 2023년 62.3억원에서 2025년 101.3억원으로 늘었지만, 영업손실은 같은 기간 35.2억원에서 55.7억원으로 오히려 커졌다. 순손실도 2023년 39.3억원에서 2025년 45.4억원으로 확대되며 손익 개선이 매출 성장 속도를 따라가지 못하고 있다. 영업활동현금흐름 역시 2023년 -7.2억원에서 2025년 -96.5억원으로 적자 규모가 크게 늘어 현금 소진이 가속화되고 있다.",
+    "en": "While revenue grew from 6.23 billion won in 2023 to 10.13 billion won in 2025, the operating loss actually widened from 3.52 billion won to 5.57 billion won over the same period. The net loss also expanded from 3.93 billion won to 4.54 billion won, showing that profitability improvement has not kept pace with revenue growth. Operating cash flow deteriorated sharply as well, from negative 723 million won in 2023 to negative 9.65 billion won in 2025, accelerating cash burn."
    }
   },
   {
    "title": {
-    "ko": "IPO 가이던스 대비 현격한 실적 괴리와 깊은 수익성 부재",
-    "en": "Severe IPO Guidance Miss and Persistently Deep Unprofitability"
+    "ko": "단일 고객 편중 구조",
+    "en": "Heavy Reliance on a Single Customer"
    },
    "body": {
-    "ko": "상장 당시 제시한 2025년 매출 가이던스는 약 297억 원이었으나, 실제 2025년 매출은 약 101억 원으로 가이던스 대비 약 34% 수준에 그쳤다. 영업이익률은 2024년 -58.2%에서 2025년 -55.0%로 소폭 개선에 불과하며, 규모의 경제 달성 전까지 고정비와 R&D 투자가 매출을 앞서는 구조가 지속된다. 반복적인 가이던스 미달은 경영 실행력에 대한 시장의 신뢰도 훼손으로 이어질 수 있다.",
-    "en": "At the time of its IPO, the company guided ₩29.7 billion in 2025 revenue, but actual 2025 revenue came in at approximately ₩10.1 billion — roughly 34% of guidance. The operating margin improved only modestly from -58.2% in 2024 to -55.0% in 2025; fixed costs and R&D investment continue to outpace revenue until scale economies are reached. Repeated guidance misses erode market confidence in management's execution credibility."
+    "ko": "매출의 대부분이 삼성전자 스마트폰 사업에서 발생하는 것으로 알려진 구조는 특정 고객사의 신제품 채택 여부에 실적이 좌우되는 위험을 내포한다. 고객사 다변화나 신규 응용처 매출 비중 확대가 아직 뚜렷하게 가시화되지 않은 상태다. 이러한 편중도는 협상력 측면에서도 회사에 불리하게 작용할 수 있다.",
+    "en": "A structure in which most revenue is understood to come from Samsung Electronics' smartphone business carries the risk that results hinge on whether a single customer adopts the company's products in new devices. Customer diversification or a meaningful rise in the revenue share of new application areas has not yet become clearly visible. This concentration could also weaken the company's negotiating leverage."
    }
   },
   {
    "title": {
-    "ko": "가속화된 현금 소진과 잠재적 추가 자금조달 리스크",
-    "en": "Accelerating Cash Burn and Potential Dilutive Funding Risk"
+    "ko": "상장 당시 가이던스와 실적 간 큰 격차",
+    "en": "Large Gap Between Listing-Era Guidance and Actual Results"
    },
    "body": {
-    "ko": "2025년 영업현금흐름이 -약 97억 원으로 전년(-약 26억 원) 대비 3.7배 악화되며 현금 소진 속도가 우려 수준으로 가속화됐다. IPO 공모를 통해 조성된 자본이 현재 완충 역할을 하고 있으나, 이 추세가 지속되면 추가 자금조달 필요성이 제기될 수 있다. 신주 발행 등 추가 자금조달이 이뤄지면 주당 가치 희석 우려가 현실화된다.",
-    "en": "Operating cash outflow accelerated to approximately -₩9.6 billion in 2025, 3.7 times worse than the approximately -₩2.6 billion in 2024, reaching a level that raises concern. IPO proceeds currently cushion this burn, but if the trajectory persists without revenue-side improvement, additional fundraising could become necessary. Any equity issuance would introduce per-share dilution risk."
+    "ko": "코스닥 상장 당시 회사는 2024년 151억원, 2025년 297억원, 2026년 593억원의 매출 가이던스를 제시했으나, 실제 2024년과 2025년 매출은 각각 83.7억원, 101.3억원에 그쳤다. 2026년 상반기 매출 합계도 103.8억원 수준으로 연간 가이던스 593억원과는 상당한 차이가 있다. 이는 신사업 및 고객사 확대 계획의 실행력에 대한 신뢰도 측면에서 함께 짚어볼 필요가 있는 부분이다.",
+    "en": "At the time of its KOSDAQ listing, the company presented revenue guidance of 15.1 billion won for 2024, 29.7 billion won for 2025, and 59.3 billion won for 2026, but actual revenue reached only 8.37 billion won in 2024 and 10.13 billion won in 2025. Combined first-half 2026 revenue of roughly 10.38 billion won also falls well short of the 59.3 billion won annual target, a gap worth considering when assessing the credibility of the company's execution on new-business and customer-expansion plans."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "단일 고객 집중 및 고객사 전략 변화 리스크",
-    "en": "Single-Customer Concentration and Customer Strategy Risk"
+    "ko": "고객·제품 편중",
+    "en": "Customer and Product Concentration"
    },
    "body": {
-    "ko": "삼성전자 스마트폰향 매출이 전체의 약 95%를 차지해 특정 고객사의 전략 변화에 사업 전체가 노출된다. 삼성전자가 오디오 반도체를 AP에 통합하거나 경쟁사로 물량을 이전할 경우 매출이 급감할 수 있다. 미드엔드 모델 중심 공급 구조에서 하이엔드·보급형 확장이 이루어지지 않으면 성장의 상단이 제한될 뿐 아니라 고객 내 협상력도 약화된다.",
-    "en": "Samsung Electronics' smartphone business contributes approximately 95% of revenue, exposing the entire company to any strategic shift by that single customer. In-sourcing audio semiconductor functions into the AP, or diverting volume to a rival supplier, could sharply compress sales. Remaining concentrated in mid-range Galaxy models without expansion to high-end or entry-level tiers limits both growth headroom and bargaining power within the customer."
+    "ko": "매출 대부분이 삼성전자 스마트폰용 오디오 앰프 한 제품군에 집중되어 있어, 해당 고객사의 물량 정책이나 경쟁 부품 채택 변화에 실적이 크게 흔들릴 수 있다. 신규 응용처 매출이 아직 미미한 수준이어서 편중 리스크를 상쇄할 완충 장치가 부족하다.",
+    "en": "With most revenue concentrated in a single product category—audio amplifiers for Samsung Electronics smartphones—results are highly exposed to changes in that customer's order volumes or shifts toward competing components. Revenue from new application areas remains minimal, leaving little buffer against this concentration risk."
    }
   },
   {
    "cat": {
-    "ko": "신제품 사업화 지연 및 시장 개화 불확실성",
-    "en": "New Product Commercialization Delay and Market Formation Uncertainty"
+    "ko": "신사업 불확실성",
+    "en": "Uncertainty in New Businesses"
    },
    "body": {
-    "ko": "오디오햅틱 드라이버·디스플레이 사운드앰프·IPM 등 신제품 양산은 고객사 검증 주기가 길고 수율·품질 이슈로 일정이 지연될 가능성이 있다. 화합물반도체 시장은 아직 개화 초기 단계로, IPM 수요가 기대보다 늦게 형성되면 관련 R&D 투자 회수 기간이 장기화된다. AEC-Q100 등 차량용 인증 완료 지연도 차량 시장 진입 시점을 뒤로 미루는 변수다.",
-    "en": "Commercialization of the audio-haptic driver, display sound amplifier, and IPM involves lengthy customer qualification cycles and is vulnerable to yield or quality-related schedule slippage. The compound semiconductor market remains in early formation, and slower-than-expected IPM demand growth would extend the payback period on significant R&D investment. Delays in AEC-Q100 automotive qualification completion would also push back automotive market entry timing."
+    "ko": "GaN·SiC 전력반도체, 로봇 액추에이터, 자동차용 반도체 등 신사업은 아직 양산 초기 단계로 매출 기여 시점과 규모가 불확실하다. 글로벌 시장은 텍사스인스트루먼트, 인피니언테크놀로지 등 대형 업체가 주도하고 있어 중소 팹리스 업체로서의 경쟁 심화 가능성도 있다.",
+    "en": "New businesses such as GaN/SiC power semiconductors, robot actuators, and automotive chips remain at an early production stage, with uncertain timing and scale of revenue contribution. The global market is led by large players such as Texas Instruments and Infineon Technologies, raising the possibility of intensifying competition for a smaller fabless company."
    }
   },
   {
    "cat": {
-    "ko": "글로벌 대형사와의 경쟁 심화 및 기술 대체 리스크",
-    "en": "Intensifying Competition from Global Majors and Technology Substitution Risk"
+    "ko": "지속되는 현금 소진",
+    "en": "Continued Cash Burn"
    },
    "body": {
-    "ko": "시러스로직, TI, 구딕스, 아위닉 등 글로벌 대형사들은 대규모 R&D 자원과 삼성전자 내 기존 레퍼런스를 보유하고 있어 하이엔드 시장으로의 확장 장벽이 높다. 중국 팹리스 업체들의 가격 공세가 미드엔드 시장 경쟁을 심화시킬 수 있으며, 스마트폰 제조사가 오디오 기능을 AP에 통합하는 추세가 가속화될 경우 독립 스마트파워앰프 칩의 시장 규모가 구조적으로 축소될 위험도 존재한다.",
-    "en": "Global majors — Cirrus Logic, TI, Goodix, and Awinic — command substantial R&D resources and established Samsung references, erecting high barriers to Iron Device's high-end segment expansion. Chinese fabless players' aggressive pricing could intensify mid-range competition. If smartphone makers accelerate integration of audio functions into application processors, the addressable market for standalone smart power amplifier chips could structurally contract over time."
+    "ko": "영업활동현금흐름이 2023년부터 2025년까지 매년 적자를 기록했고 적자 규모도 커지고 있어, 매출 성장에도 불구하고 현금 소진 속도가 빠르다. 향후 신사업 투자 및 R&D 확대가 지속될 경우 추가 자금 조달이 필요해질 가능성도 배제할 수 없다.",
+    "en": "Operating cash flow was negative every year from 2023 through 2025, with the deficit growing larger each year, meaning cash is being consumed rapidly despite revenue growth. If investment in new businesses and R&D continues to expand, the need for additional financing cannot be ruled out."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순(잠정)",
-    "en": "Mid-August 2026 (tentative)"
+    "ko": "2026년 11월 중순(예상)",
+    "en": "Mid-November 2026 (expected)"
    },
    "what": {
-    "ko": "2026년 2분기(4~6월) 실적 공시: 매출이 1분기(약 47억 원) 수준을 유지 또는 성장했는지, 영업손실 축소 추세가 지속되는지 확인. 삼성전자 하반기 신모델 대응 물량 공급 가시성이 핵심 포인트.",
-    "en": "Q2 2026 earnings disclosure: verify whether revenue holds near or above Q1 2026 levels (~₩4.7B) and whether the operating loss continues to narrow. Key focus: visibility into H2 2026 Samsung Galaxy model supply volume commitments."
+    "ko": "2026년 3분기 실적 공시 시 매출 성장세와 영업손실 비율 개선 추세가 이어지는지 확인할 필요가 있다.",
+    "en": "Check whether the Q3 2026 earnings release confirms continued revenue growth and an improving operating-loss ratio."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기(삼성전자 하반기 신모델 출시 전후)",
-    "en": "H2 2026 (Around Samsung Galaxy New Model Launches)"
+    "ko": "2026년 4분기 중",
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "삼성전자 갤럭시 하반기 신모델 출시와 아이언디바이스 탑재 여부 및 적용 모델 수 확대. 모델 수와 기기당 탑재 채수가 늘어날수록 2025년의 하반기 매출 급성장 패턴이 반복·심화될 가능성이 높아진다.",
-    "en": "Samsung Galaxy H2 2026 model launches: track whether Iron Device chips are adopted across a broader set of models and how many amplifiers per device are specified. Greater adoption implies potential replication — and possible amplification — of the sharp H2 2025 revenue surge."
+    "ko": "GaN 게이트드라이버 SMA6533의 신규 고객사 확보 및 산업용·자동차용 파워 IC 매출 반영 여부를 확인해야 한다.",
+    "en": "Monitor whether the SMA6533 GaN gate driver secures new customers and begins contributing to industrial or automotive power IC revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~연말",
-    "en": "H2 2026 Through Year-End"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "오디오햅틱 드라이버·디스플레이 사운드앰프 양산 개시 여부 확인. 회사가 목표로 제시한 2026년 두 신제품 양산 개시의 현실화는 매출 다각화의 첫 번째 시금석이 될 것이다.",
-    "en": "Mass-production launch confirmation for the audio-haptic driver and display sound amplifier. The company has guided 2026 as the target year for both products; actual commercial launch will be the first verifiable milestone of revenue diversification beyond smart power amplifiers."
+    "ko": "2026년 연간 실적 확정 시 상장 당시 제시했던 593억원 매출 가이던스와의 격차가 얼마나 좁혀졌는지 점검할 필요가 있다.",
+    "en": "When full-year 2026 results are finalized, assess how much the gap has narrowed relative to the 59.3 billion won revenue guidance given at listing."
    }
   },
   {
    "when": {
-    "ko": "2026년 연중(수시 공시 모니터링)",
-    "en": "Ongoing Throughout 2026 (Ad-hoc Disclosure Monitoring)"
+    "ko": "2026년 하반기~2027년",
+    "en": "H2 2026 through 2027"
    },
    "what": {
-    "ko": "SiC/GaN IPM AEC-Q100 차량용 인증 최종 승인 여부 및 수요처 초기 검증 완료 공시. 인증 취득이 완료되면 차량용 반도체 시장 진입이 가시화돼 중장기 성장 스토리의 구체성이 크게 높아진다.",
-    "en": "AEC-Q100 automotive qualification final approval and initial customer validation completion announcement for the SiC/GaN IPM. Certification grant would make automotive market entry concrete, materially strengthening the medium-term growth narrative."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 11월(잠정, 3분기 실적 발표)",
-    "en": "November 2026 (tentative, Q3 2026 earnings)"
-   },
-   "what": {
-    "ko": "2026년 3분기 실적으로 하반기 계절성 재현 여부와 분기 손익분기점(BEP) 근접 여부 확인. 분기 매출 규모가 일정 수준 이상으로 확대될 경우 분기 흑자전환 논의가 본격화될 수 있다.",
-    "en": "Q3 2026 earnings: check whether the H2 seasonal revenue surge repeats and how close a single quarter comes to operating breakeven. If quarterly revenue scales meaningfully above the Q1 2026 level, discussion of quarterly breakeven could gain credibility."
+    "ko": "휴머노이드 로봇 액추에이터 대상 GaN 파워 스테이지의 실제 공급계약(디자인 인) 체결 여부를 확인해야 한다.",
+    "en": "Watch for whether the GaN power stage for humanoid robot actuators results in an actual supply agreement or design win."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "아이언디바이스는 국내 유일 스마트파워앰프 팹리스 기업으로, 2025년 처음으로 연 매출 100억 원을 돌파하며 성장 궤도에 올라선 것을 확인했다. 2025년 4분기의 분기 최고 매출이 2026년 1분기에도 유지되고, 영업손실이 분기 기준으로 뚜렷이 축소되고 있어 방향성 자체는 개선되는 흐름이다. 그러나 연간 영업이익률 -55%와 -약 97억 원의 영업현금 유출은 수익 구조 전환까지 갈 길이 아직 상당히 남아 있음을 보여준다. 삼성전자 의존도 약 95%라는 구조적 취약점과 IPO 당시 가이던스 대비 크게 낮은 실제 실적은 실행력 신뢰 회복이 선행과제임을 시사한다. 반면 2026년 오디오햅틱 드라이버·디스플레이 사운드앰프의 양산 개시, SiC/GaN IPM 인증 완료, 중화권 고객 다변화 등이 실현되면 매출 다각화와 수익성 개선의 구조적 전환점이 될 수 있다. 아이언디바이스는 현재 장부가치 인근에서 거래되며 고도성장 기대가 축소된 구간에 위치해 있는 만큼, 2026년 하반기 삼성전자 신모델 탑재 실적과 신제품 양산 가시화 여부를 통해 사업 실행력이 재확인될 때 투자자 관심이 재점화될 수 있는 구조다.",
-   "en": "Iron Device has confirmed its growth trajectory by crossing the ₩10 billion annual revenue threshold for the first time in 2025, with Q1 2026 sustaining near-peak quarterly revenue and operating losses showing a clear narrowing trend on a quarter-by-quarter basis. Nevertheless, a full-year operating margin of -55% and operating cash outflow of approximately -₩9.6 billion underscore that the path to structural profitability remains long. The ~95% Samsung concentration and the material gap between IPO guidance and actual results indicate that rebuilding execution credibility is a prerequisite before a higher valuation premium can be justified. On the positive side, the 2026 commercialization of the audio-haptic driver and display sound amplifier, progression of SiC/GaN IPM qualification, and potential Chinese OEM customer wins represent meaningful catalysts for revenue diversification and margin improvement. Trading near its book value after significant post-IPO retracement, the stock is in a zone where high-growth expectations have substantially deflated; concrete evidence of execution — primarily H2 2026 Samsung model adoption and tangible new product launch revenues — would be the catalysts most likely to re-engage investor attention."
+   "ko": "아이언디바이스는 삼성전자 스마트폰용 오디오 앰프를 중심으로 최근 5개 분기 연속 매출이 늘어나는 성장 국면에 있지만, 영업손실은 2023년부터 2025년까지 3년 연속 확대되며 이익 개선은 아직 뚜렷하지 않다. GaN·SiC 전력반도체와 로봇 액추에이터 등 신사업은 2026년 들어 양산과 시제품 시연 등 구체적인 진전을 보이고 있으나, 매출 기여는 초기 단계에 머물러 있다. 코스닥 상장 당시 제시한 매출 가이던스와 실제 실적 간의 큰 격차는 회사의 계획 실행력을 평가할 때 함께 살펴야 할 요소다. 고객 편중도가 높은 사업 구조와 매년 확대되는 현금 소진은 지속적으로 관찰이 필요한 부분이며, 반대로 매출 규모 확대에 따른 손실 비율 완화와 신사업 다변화 시도는 긍정적인 변화로 볼 수 있다. 향후 실적은 삼성전자 내 채택 모델 확대 여부와 GaN 파워 IC·로봇 응용처의 실제 고객 채택 시점에 크게 좌우될 것으로 보인다. 투자 판단에 앞서 다음 분기 실적과 신사업 진행 상황을 함께 확인하는 것이 필요하다.",
+   "en": "Iron Device is in a growth phase centered on Samsung Electronics smartphone audio amplifiers, with revenue rising for five consecutive quarters, but earnings improvement remains unclear as operating losses widened for three straight years from 2023 through 2025. New businesses in GaN/SiC power semiconductors and robot actuators have shown concrete progress in 2026, including mass production and prototype demonstrations, but their revenue contribution remains at an early stage. The large gap between the revenue guidance presented at the KOSDAQ listing and actual results is a factor worth weighing when assessing the company's execution capability. A business structure with high customer concentration and cash burn that has grown every year both warrant continued monitoring, while the narrowing loss ratio alongside revenue growth and diversification efforts into new businesses can be viewed as positive developments. Future results are likely to depend heavily on the expansion of adopted models within Samsung Electronics and the timing of actual customer adoption in GaN power IC and robotics applications. Readers should review upcoming quarterly results and the progress of new businesses before forming any judgment."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A464500",
-  "https://m.thinkpool.com/compDiscuss/cont/1015752",
   "https://m.thinkpool.com/compDiscuss/cont/1015600",
-  "https://www.valueline.co.kr/finance/balancesheet/464500",
-  "https://markets.hankyung.com/stock/464500",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A464500&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "https://m.irgo.co.kr/IR-COMP/464500/%EC%95%84%EC%9D%B4%EC%96%B8%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
-  "https://m.thinkpool.com/item/464500",
-  "https://www.valueline.co.kr/finance/mri/464500",
-  "https://www.thelec.kr/news/articleView.html?idxno=38779",
+  "https://m.thinkpool.com/compDiscuss/cont/1015645",
+  "https://www.paxnet.co.kr/tbbs/view?id=N10937&seq=150357588910221",
+  "https://m.irgo.co.kr/IR-COMP/464500/",
   "https://thevc.kr/irondevice",
+  "https://m.thinkpool.com/stockDiscuss/464500/cont/11795708",
+  "https://www.asiae.co.kr/article/2024092309461666689",
   "https://biz.irgo.co.kr/auto_irroom_branch.asp?tcomp_seq=4642",
-  "https://m.thinkpool.com/compDiscuss/cont/1015523",
-  "https://www.newstof.com/news/articleView.html?idxno=23302",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=60635",
+  "https://m.thinkpool.com/compDiscuss/cont/1015752",
+  "https://m.irgo.co.kr/IR-COMP/143160/%EC%95%84%EC%9D%B4%EB%94%94%EC%8A%A4-IR-PAGE",
+  "https://news.infostock.co.kr/a",
   "https://www.saramin.co.kr/zf_user/company-info/view/csn/VDBhemFENVp1ZWpoUitEdVNJRG9WUT09/company_nm/(%EC%A3%BC)%EC%95%84%EC%9D%B4%EC%96%B8%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4",
-  "https://www.newswell.co.kr/news/articleView.html?idxno=10277",
-  "https://m.thinkpool.com/compDiscuss/cont/1016513"
+  "https://m.irgo.co.kr/IR-COMP/010170/%EB%8C%80%ED%95%9C%EA%B4%91%ED%86%B5%EC%8B%A0-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
+  "https://www.kirs.or.kr/misc/info_search_pop.html?code=",
+  "https://m.joseilbo.com/news/view.htm?newsid=525219",
+  "https://www.newspim.com/news/view/20260804001130",
+  "https://www.tradingkey.com/news/earnings/262086099-tradingkey",
+  "https://www.investing.com/news/transcripts/earnings-call-transcript-indie-semiconductor-tops-revenue-view-in-q2-2026-93CH-4844793"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "464500",
  "name": "아이언디바이스",
  "name_en": "Iron Device Corp.",
@@ -233,11 +223,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 04:07",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 19:22",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -271,6 +261,23 @@
     "opm": -58.2,
     "roe": -13.5,
     "debt_ratio": 17.9
+   },
+   {
+    "year": 2023,
+    "rev": 6232338771,
+    "op": -3515751473,
+    "np": -3925489357,
+    "np_owner": -3925489357,
+    "equity": 14363932061,
+    "equity_owner": 14363932061,
+    "equity_nci": 0,
+    "liab": 4054790528,
+    "cfo": -723240938,
+    "eps_basic": -782,
+    "src": "전기 비교치",
+    "opm": -56.4,
+    "roe": -27.3,
+    "debt_ratio": 28.2
    }
   ],
   "quarterly": [
@@ -306,25 +313,29 @@
    }
   ],
   "valuation": {
-   "price": 1750,
-   "mcap": 0.0245,
+   "price": 1744,
+   "mcap": 0.0244,
    "shares": 13993263,
-   "total_shares": 13963263,
+   "total_shares": 13993263,
    "wavg_shares": 14034372,
    "per": null,
    "eps": -265,
-   "pbr": 0.9777,
+   "pbr": 0.9743,
    "bps": 1790,
    "roe_ttm": -13.8,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": -3708989474,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.92,
+   "eps_src": "공시",
+   "pbr_krx": 0.91,
    "bps_krx": 1908.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
  }
 }
