@@ -38,6 +38,9 @@ LEGACY_STATE = DATA / "batch_state_v2.json"
 REFRESH_FILE = DATA / "reports_v2_refresh"
 PAUSE_FILE = DATA / "reports_paused"
 QUOTA_FILE = DATA / "dart_quota_exhausted"
+# 모델을 부를 수 없는 날 — 계정 잔액이 바닥나거나 인증이 막힌 날짜를 적어 둔다.
+# DART 한도와 같은 방식이다. 날짜가 오늘이면 돈 드는 주문을 아예 시작하지 않는다.
+CREDIT_FILE = DATA / "anthropic_credit_exhausted"
 STOCKS_JS = DATA / "stocks.js"
 
 FAIL_LIMIT = 3          # 이만큼 연속으로 깨지면 자동 백필에서 뺀다(사람이 본다)
@@ -321,9 +324,24 @@ def mark_quota_exhausted(day=None):
 
 
 def quota_exhausted_today(day=None):
-    if not QUOTA_FILE.exists():
+    return _marked_today(QUOTA_FILE, day)
+
+
+def mark_credit_exhausted(why="", day=None):
+    """모델 계정이 막힌 날을 적는다. 날짜라서 다음 날 저절로 풀린다."""
+    CREDIT_FILE.write_text((day or today_kst()).isoformat() + ("\n" + why if why else "") + "\n",
+                           encoding="utf-8")
+
+
+def credit_exhausted_today(day=None):
+    return _marked_today(CREDIT_FILE, day)
+
+
+def _marked_today(path, day=None):
+    """마커 첫 줄의 날짜가 오늘인가. 없거나 못 읽으면 False."""
+    if not path.exists():
         return False
     try:
-        return QUOTA_FILE.read_text(encoding="utf-8").strip()[:10] == (day or today_kst()).isoformat()
+        return path.read_text(encoding="utf-8").strip()[:10] == (day or today_kst()).isoformat()
     except Exception:
         return False

@@ -64,6 +64,39 @@ add_skip = S.add_skip
 
 # 종료 코드. 워크플로가 이 값으로 '무엇이 막았는지' 를 가른다.
 EXIT_DART_UNAVAILABLE = 3     # DART 한도 초과·점검·키 문제 — 종목 탓이 아니다. skip 을 남기지 않는다.
+EXIT_NO_CREDIT = 4            # 모델 계정이 막혔다(잔액·인증) — 역시 종목 탓이 아니다.
+
+
+class ApiUnavailable(Exception):
+    """모델을 부를 수 없다 — 글 내용 탓이 아니다.
+
+    2026-09-05 에 전 종목 갱신이 58% 지점에서 잔액을 다 썼다. 그때 회수가
+    계속 돌면서, 영문 채우기가 400(잔액 부족)으로 죽을 때마다 그 종목을
+    '스키마 불완전' 으로 세어 실패 마커를 111개 만들었다. 세 번 쌓이면
+    자동 백필에서 빠지므로, 결제 문제 하나로 종목이 영영 묻힐 뻔했다.
+    DART 한도에서 이미 겪은 것과 같은 결함이다 — 바깥이 막힌 것을 종목 탓으로
+    적으면 안 된다."""
+
+
+_CREDIT_RE = re.compile(r"credit balance is too low|insufficient (?:credit|quota|funds)"
+                        r"|billing|payment required", re.I)
+
+
+def _api_unavailable(e):
+    """이 예외가 '바깥이 막힌 것' 인가 — 잔액·인증·한도·연결·5xx."""
+    import anthropic
+    if isinstance(e, (anthropic.AuthenticationError, anthropic.PermissionDeniedError,
+                      anthropic.RateLimitError, anthropic.APIConnectionError,
+                      anthropic.InternalServerError)):
+        return True
+    if isinstance(e, anthropic.APIStatusError):
+        return getattr(e, "status_code", 0) >= 500 or bool(_CREDIT_RE.search(str(e)))
+    return False
+
+
+def _no_credit(e):
+    """잔액이 바닥났는가 — 오늘은 다시 시도해 봐야 소용없다."""
+    return bool(_CREDIT_RE.search(str(e)))
 
 MODEL = os.getenv("REPORT_MODEL_V2", "claude-opus-5")  # 폴백
 # 모델 정책: 시총 상위 MODEL_TOP_N개는 고급 모델(Opus), 나머지는 효율 모델(Sonnet)
@@ -2161,6 +2194,15 @@ def submit(cl, as_of):
     from anthropic.types.messages.batch_create_params import Request
 
     result = {"batch_id": None, "path": None, "tickers": [], "unavailable": None}
+    # 잔액이 바닥난 날은 시작도 하지 않는다. 배치 생성은 종목 100개의 정량을
+    # DART 에서 다 받은 뒤에 일어나므로, 그냥 두면 run 하나가 DART 호출 600번을
+    # 태우고 죽는다 — 워치독이 재가동하니 하루 한도 20,000 이 그렇게 없어진다.
+    # 마커에 적힌 날짜가 오늘일 때만 막으므로 다음 날 저절로 풀린다.
+    if S.credit_exhausted_today():
+        log("⛔ 오늘은 모델 계정이 막혔다(잔액 부족) — 주문을 건너뛴다.")
+        log(f"    {S.CREDIT_FILE.relative_to(ROOT)} 를 지우거나 크레딧을 충전하면 다시 돈다.")
+        result["no_credit"] = True
+        return result
     data, targets = pick_targets()
     # 마지막 빗장 — 어느 갈래로 왔든 진행 중인 종목은 다시 주문하지 않는다.
     if os.getenv("REPORT_ALLOW_INFLIGHT") != "1":
@@ -2234,7 +2276,17 @@ def submit(cl, as_of):
     n_top = sum(1 for m in models.values() if m == MODEL_TOP)
     log(f"- 모델 배분: {MODEL_TOP} {n_top}개 · {MODEL_REST} {len(models)-n_top}개")
 
-    batch = cl.messages.batches.create(requests=reqs)
+    try:
+        batch = cl.messages.batches.create(requests=reqs)
+    except Exception as e:
+        if _no_credit(e):
+            S.mark_credit_exhausted(f"{as_of} · {type(e).__name__}: {str(e)[:200]}")
+            log(f"⛔ 배치를 만들지 못했다 — 계정 잔액이 부족하다: {e}")
+            log(f"    {S.CREDIT_FILE.relative_to(ROOT)} 에 오늘 날짜를 적어 둔다 — "
+                f"오늘은 더 시도하지 않고 DART 호출을 아끼자.")
+            result["no_credit"] = True
+            return result
+        raise
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     state = {"batch_id": batch.id, "created": as_of, "model": MODEL, "models": models,
              "tickers": tickers, "dataDate": data.get("dataDate", ""), "count": len(reqs),
@@ -2281,6 +2333,14 @@ def pickup(cl, as_of):
             continue
         try:
             ok, fail = collect(cl, as_of, state)
+        except ApiUnavailable as e:
+            # 결과는 멀쩡한데 우리가 모델을 못 부른다. 버리면 이미 낸 돈이 사라지므로
+            # 상태 파일을 그대로 두고(pending) 다음 회수가 통째로 다시 받게 한다.
+            # 앞서 저장된 종목은 그대로 남고, 다시 받아도 같은 내용으로 덮어쓴다.
+            log(f"  ⏸️ {bid} 회수를 멈춘다 — 모델을 부를 수 없다({e}). 배치는 그대로 둔다.")
+            if _no_credit(e):
+                S.mark_credit_exhausted(f"{as_of} · 회수 중 {e}")
+            raise
         except Exception as e:
             # 결과 자체를 못 받는 경우(29일 지나 만료 등). 다음 차례에 또 실패할 것이라
             # 무한히 시도하지 않고 버린다. 리포트가 없는 종목은 백필이 다시 주문한다.
@@ -2372,6 +2432,7 @@ def collect(cl, as_of, state):
 
     ok, fail, done, flagged = 0, 0, [], []
     usage = {}
+    repair_off = False
     for result in cl.messages.batches.results(batch_id):
         tk = result.custom_id
         if result.result.type == "succeeded":
@@ -2407,6 +2468,10 @@ def collect(cl, as_of, state):
                     try:
                         filled = fill_missing_en(cl, rep)
                     except Exception as e:
+                        # 모델을 못 부르는 것과 모델이 못 쓴 것은 다르다. 앞의 것을
+                        # 종목 탓으로 적으면 결제 문제 하나로 종목이 영영 묻힌다.
+                        if _api_unavailable(e):
+                            raise ApiUnavailable(f"{type(e).__name__}: {str(e)[:200]}") from e
                         log(f"  · ({tk} 영문 채우기 실패: {type(e).__name__}: {e})")
                 if not valid_v2(rep):          # 실패 사유는 여기서 로그에 남는다
                     fail += 1
@@ -2451,12 +2516,17 @@ def collect(cl, as_of, state):
                 bad_text = check_report_text.check(rep)
             except Exception:
                 bad_text = []
-            if bad_text and os.getenv("REPORT_REPAIR", "1") != "0":
+            if bad_text and not repair_off and os.getenv("REPORT_REPAIR", "1") != "0":
                 try:
                     fixed = check_report_text.repair(cl, rep, bad_text)
                 except Exception as e:
                     fixed = None
                     log(f"  · ({tk} 교정 호출 실패: {type(e).__name__}: {e})")
+                    # 표현 교정은 없어도 리포트를 쓸 수 있다. 바깥이 막힌 것이면
+                    # 남은 종목마다 같은 예외를 기다리지 말고 이번 회수에선 접는다.
+                    if _api_unavailable(e):
+                        repair_off = True
+                        log("  · (교정은 이번 회수에서 접는다 — 모델을 부를 수 없다)")
                 if fixed:
                     rep, remaining = fixed
                     log(f"  · ✏️ {tk} 표현 교정 {len(bad_text)}건 → 남은 {len(remaining)}건")
@@ -2474,6 +2544,10 @@ def collect(cl, as_of, state):
             S.clear_hold(tk)
             done.append(tk)
             ok += 1
+        except ApiUnavailable:
+            # 종목 문제가 아니다 — 아래 '파싱 실패' 로 세면 결제 문제 하나로
+            # 종목이 묻힌다. 여기서 그대로 올려보내 회수 자체를 멈춘다.
+            raise
         except Exception as e:
             fail += 1
             n = S.bump_fail(tk)
@@ -2619,6 +2693,17 @@ def _die_dart(e):
     sys.exit(EXIT_DART_UNAVAILABLE)
 
 
+def _die_credit(e=None):
+    """모델 계정이 막혔다 — 종목 탓이 아니므로 아무 마커도 남기지 않고 끝낸다.
+
+    워크플로가 이 코드를 보고 '충전하라' 고 알려 준다. self-chain 도 서지 않는다."""
+    if e is not None and _no_credit(e):
+        S.mark_credit_exhausted(str(e)[:200])
+    log("⛔ 모델을 부를 수 없어 여기서 끝낸다 — 계정 잔액·인증을 확인할 것.")
+    sys.exit(EXIT_NO_CREDIT)
+
+
+
 def main():
     mode = sys.argv[1] if len(sys.argv) > 1 else "auto"
     as_of = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime("%Y-%m-%d %H:%M")
@@ -2669,8 +2754,13 @@ def main():
         r = submit(cl, as_of)
         if r["unavailable"]:
             _die_dart(r["unavailable"])
+        if r.get("no_credit"):
+            _die_credit()
     elif mode in ("collect", "pickup"):
-        pickup(cl, as_of)
+        try:
+            pickup(cl, as_of)
+        except ApiUnavailable as e:
+            _die_credit(e)
     elif mode == "batches":
         # 최근 배치 목록 — 취소된 run에서 제출된 배치 회수 여부 진단용
         lines = ["# 최근 Anthropic 배치"]
@@ -2698,11 +2788,16 @@ def main():
         bid = r["batch_id"]
         if bid and not r["unavailable"]:
             if poll(cl, bid, budget=SHORT_WAIT):
-                pickup(cl, as_of)
+                try:
+                    pickup(cl, as_of)
+                except ApiUnavailable as e:
+                    _die_credit(e)
             else:
                 log(f"- 아직 처리 중 — 여기서 끝낸다. collect_batch 가 회수한다({bid}).")
         if r["unavailable"]:
             _die_dart(r["unavailable"])
+        if r.get("no_credit"):
+            _die_credit()
 
 
 if __name__ == "__main__":
