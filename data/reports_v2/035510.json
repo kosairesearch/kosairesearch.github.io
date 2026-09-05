@@ -1,217 +1,217 @@
 {
  "title": {
-  "ko": "매출 정체 속 수익성 개선 흐름",
-  "en": "Margin Gains Amid Slowing Top-Line Growth"
+  "ko": "수익성 개선과 AI데이터센터 변수",
+  "en": "Margin Gains Meet an AI Data Center Wildcard"
  },
  "lead": {
-  "ko": "신세계I&C는 저마진 사업 정리와 원가구조 개선을 통해 영업이익률을 끌어올리고 있지만, 매출 성장은 둔화되고 순이익은 분기별로 변동성을 보이고 있다.",
-  "en": "Shinsegae I&C is lifting its operating margin by trimming low-margin businesses and improving cost structure, even as revenue growth slows and net profit shows quarter-to-quarter volatility."
+  "ko": "신세계아이앤씨는 저마진 사업 정리로 영업이익률을 높여가는 가운데, 신세계그룹의 초대형 AI데이터센터 프로젝트에서 맡을 역할이 향후 사업 구조를 바꿀 변수로 부각되고 있다.",
+  "en": "Shinsegae I&C is lifting its operating margin by trimming low-margin businesses, while the role it may play in Shinsegae Group's large-scale AI data center project has emerged as a variable that could reshape its business structure."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 영업이익은 491억원으로 전년 대비 32.9% 늘었으나 순이익은 283억원으로 16.3% 줄어 손익 방향이 엇갈렸다.",
-   "en": "FY2025 consolidated operating profit rose 32.9% YoY to KRW 49.1bn, while net profit fell 16.3% to KRW 28.3bn, showing divergent trends."
+   "ko": "2025년 연결 영업이익은 491억원으로 전년 대비 32.9% 늘었으나 지배주주 순이익은 283억원으로 16.3% 감소했다.",
+   "en": "In 2025, consolidated operating profit rose 32.9% year over year to 49.1 billion won, while net profit attributable to owners fell 16.3% to 28.3 billion won."
   },
   {
-   "ko": "2026년 상반기 매출액은 3,536억원으로 전년과 비슷했지만 영업이익은 277억원으로 14.8% 증가해 수익성 중심 체질 전환이 이어졌다.",
-   "en": "H1 2026 revenue was roughly flat at KRW 353.6bn, while operating profit grew 14.8% to KRW 27.7bn, continuing a profitability-focused transition."
+   "ko": "2026년 상반기 영업이익은 277억원으로 14.8% 증가했고, 교육·메시징·전기차충전 등 저마진 사업 축소가 주된 배경으로 꼽힌다.",
+   "en": "H1 2026 operating profit rose 14.8% to 27.7 billion won, mainly attributed to the paring back of low-margin businesses such as education, messaging services, and EV charging."
   },
   {
-   "ko": "IT서비스·IT유통 부문이 이익 성장을 이끈 반면, 교육·메시징 등 저마진 IT정보서비스 부문은 매출이 줄었다.",
-   "en": "IT Service and IT Distribution led profit growth, while the low-margin IT Information Service segment (education, messaging) saw declining sales."
+   "ko": "신세계그룹이 미국 리플렉션AI와 협력해 국내 최대 규모(250MW)의 AI데이터센터 건립을 예고했고, 신세계아이앤씨가 인프라 설계·운영을 맡을 유력 후보로 거론된다.",
+   "en": "Shinsegae Group, partnering with U.S. startup Reflection AI, has announced plans for a 250MW AI data center in Korea, with Shinsegae I&C seen as a likely candidate to design and operate the infrastructure."
   },
   {
-   "ko": "연구개발비는 상반기 16억2000만원으로 전년 연간치를 이미 넘어섰고, 매출 대비 비중도 0.2%에서 0.5%로 높아졌다.",
-   "en": "H1 2026 R&D spending of KRW 1.62bn already exceeded the full prior year, with the R&D-to-sales ratio rising from 0.2% to 0.5%."
+   "ko": "신세계아이앤씨는 KT와 뉴타닉스 기반 클라우드 사업 협력을 위한 업무협약을 체결하며 대외 클라우드 사업 확대를 모색하고 있다.",
+   "en": "Shinsegae I&C signed an MOU with KT for joint sales of Nutanix-based private/hybrid cloud offerings, seeking to expand its external cloud business."
   },
   {
-   "ko": "2025년 4분기에는 영업이익 흑자(124억원)에도 지배주주순이익이 –54억원의 적자를 기록하는 등 분기 실적 변동성이 존재한다.",
-   "en": "In Q4 2025, despite positive operating profit of KRW 12.4bn, net profit attributable to owners posted a loss of KRW –5.4bn, highlighting quarterly earnings volatility."
+   "ko": "매출의 상당 부분이 신세계그룹 계열사에서 발생하는 내부거래 구조와 하이퍼스케일 데이터센터 운영 경험 부재는 여전히 해결해야 할 과제로 지적된다.",
+   "en": "A large share of revenue still comes from intra-group transactions with Shinsegae Group affiliates, and the lack of hyperscale data center operating experience remains an unresolved challenge."
   }
  ],
  "business": {
-  "ko": "신세계I&C는 신세계그룹 계열의 IT서비스 기업으로, 사업은 크게 IT서비스, IT유통, IT정보서비스 3개 부문으로 구성된다. IT서비스 부문은 시스템통합(SI)·시스템관리(SM), 클라우드, POS·리테일테크 솔루션을 담당하며 2026년 상반기 영업이익 309억원으로 전체 이익의 가장 큰 비중을 차지했다. IT유통 부문은 게임소프트, 네트워크 장비, 닌텐도 스위치2·VR·AR 기기 등 IT 기기 유통을 맡고 있으며, 2026년 2분기 매출은 541억원을 기록했다. IT정보서비스 부문은 교육사업, 메시징서비스, 데이터 비즈니스 등을 포함하는데 최근 저마진 사업 정리로 매출이 축소되는 추세다. 리테일테크 영역에서는 AI 비전 기반 셀프 계산대 솔루션인 '스파로스 스캔케어·스캔프리'를 편의점(CU), 슈퍼마켓, 카페 등에 공급하며 오프라인 매장의 AI 전환(AX) 사업을 확대하고 있다. 신사업으로는 뉴타닉스와 협력한 구독형 클라우드 서비스 '스파로스 원'을 출시했고, 스페이스X의 위성 인터넷 서비스 '스타링크'의 국내 소비자용(B2C) 유통 총판을 맡고 있으며, 게임 퍼블리싱(솔라테리아) 사업도 병행하고 있다. 반면 비핵심·저수익 사업은 순차적으로 정리하고 있어, 전기차 충전사업 자산은 2026년 3월 지에스차지비에 양도했고 과거 SSG PAY, 신세계라이브쇼핑 지분도 매각한 바 있다. 경쟁구도 측면에서는 삼성SDS, LG CNS, CJ올리브네트웍스 등 대기업 계열 IT서비스사와 시스템통합·리테일테크 영역에서 경쟁하며, 매출 기반의 상당 부분은 신세계그룹 계열사 대상 IT 수요에 의존하는 구조를 갖고 있다.",
-  "en": "Shinsegae I&C is an IT services affiliate of the Shinsegae Group, organized into three main segments: IT Service, IT Distribution, and IT Information Service. The IT Service segment handles system integration/management, cloud, and POS/retail-tech solutions, and generated the largest profit contribution in H1 2026 at KRW 30.9bn in operating profit. The IT Distribution segment covers distribution of game software, network equipment, and devices such as Nintendo Switch 2 and VR/AR gear, posting KRW 54.1bn in revenue in Q2 2026. The IT Information Service segment includes education, messaging services, and data business, but has been shrinking as the company scales back low-margin operations. In retail-tech, the company supplies AI-vision-based self-checkout solutions ('Spharos ScanCare/ScanFree') to convenience stores (CU), supermarkets, and cafes, expanding its offline AI transformation (AX) business. New ventures include a subscription cloud service ('Spharos One') developed with Nutanix, the domestic B2C distribution rights for SpaceX's Starlink satellite internet service, and game publishing (Solar Theria). Meanwhile, the company has been progressively divesting non-core, low-profitability businesses, including the March 2026 transfer of its EV charging assets to GS Charge B.V., following earlier divestments of SSG Pay and its stake in Shinsegae Live Shopping. Competitively, the company vies with large conglomerate-affiliated IT service providers such as Samsung SDS, LG CNS, and CJ Olive Networks in system integration and retail tech, with a significant portion of revenue tied to IT demand from Shinsegae Group affiliates."
+  "ko": "신세계아이앤씨는 1997년 신세계 전산실 조직에서 분리 설립된 신세계그룹의 IT서비스 계열사로, IT서비스·IT유통·IT정보서비스 세 개 부문으로 사업을 운영한다. IT서비스 부문은 시스템 통합(SI), 시스템 유지보수(SM), 김포 데이터센터를 통한 클라우드·IDC 사업을 포괄하며 2026년 상반기 영업이익 309억원으로 회사 전체 이익의 가장 큰 축을 차지했다. IT유통 부문은 닌텐도, 플레이스테이션 등 게임 소프트웨어와 네트워크 장비 유통을 담당하며, 2026년 2분기에는 닌텐도 스위치2 판매 확대에 힘입어 게임소프트 매출이 늘었다. IT정보서비스 부문은 교육·메시징 서비스 등을 제공했으나 상대적으로 수익성이 낮아 최근 축소되는 추세다. 스마트리테일 영역에서는 AI 비전 기반 셀프계산대, 무인매장 솔루션 등을 개발해 신세계 계열 유통망은 물론 외부로도 공급을 확대하고 있다. 주요 고객은 이마트를 비롯한 신세계그룹 계열사가 중심이며, 매출의 상당 부분이 계열사 거래에서 발생하는 구조다. 경쟁 구도는 삼성SDS, LG CNS, 롯데정보통신 등 대기업 계열 IT서비스사와 비교되며, 매출 규모 면에서는 삼성SDS 등 대형사와 상당한 격차가 있다. 회사는 AI·클라우드·스마트리테일·스마트인프라를 4대 성장축으로 설정하고 챗봇, 수요예측, 개인화추천, 영상인식, 로봇프로세스자동화(RPA) 등 AI 기반 서비스로 사업영역을 넓히고 있다.",
+  "en": "Shinsegae I&C is Shinsegae Group's IT services affiliate, spun off from the group's computing division in 1997, operating across three segments: IT Service, IT Distribution, and IT Information Service. The IT Service segment covers system integration, system maintenance, and cloud/IDC operations via the Gimpo data center, and generated 30.9 billion won in operating profit in H1 2026, the largest single contributor to the company's earnings. The IT Distribution segment handles game software and networking equipment distribution including Nintendo and PlayStation titles, with game software sales rising in Q2 2026 on stronger Nintendo Switch 2 sales. The IT Information Service segment, which includes education and messaging services, has relatively lower profitability and has recently been scaled back. In smart retail, the company develops AI vision-based self-checkout and unmanned store solutions, expanding supply beyond Shinsegae's own retail network to outside partners. Its main customers are centered on Shinsegae Group affiliates including E-Mart, and a substantial portion of revenue is generated through intra-group transactions. Competitively, it is compared to conglomerate-affiliated IT services firms such as Samsung SDS, LG CNS, and Lotte Data Communication, with a considerable revenue-scale gap relative to larger peers. The company has set AI, cloud, smart retail, and smart infrastructure as its four growth pillars, expanding into AI-based services such as chatbots, demand forecasting, personalized recommendations, image recognition, and robotic process automation (RPA)."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 6,872억원으로 전년(6,257억원) 대비 성장했고, 영업이익은 491억원으로 전년(370억원) 대비 32.9% 늘어나며 영업이익률이 5.9%에서 7.1%로 개선됐다. 반면 순이익은 283억원으로 전년(338억원) 대비 16.3% 감소해 영업이익과 순이익의 방향이 엇갈렸다. 앞선 2023년(순이익 304억원), 2022년(순이익 841억원, 다만 2022년은 이례적으로 높은 수준)과 비교하면 최근 순이익은 300억원 안팎에서 등락하는 모습이다. 분기별로 보면 2025년 2분기(영업이익 134.5억원, 순이익 117.5억원)와 3분기(영업이익 125.5억원, 순이익 126.0억원)는 안정적인 흐름을 보였으나, 4분기에는 영업이익 124.4억원의 흑자에도 불구하고 순이익이 –54.1억원의 적자로 전환됐다. 이는 회사 측이 밝힌 것처럼 전기차 충전사업 관련 유형자산의 매각예정자산 재분류에 따른 일시적 손상이익 등 비경상적 요인이 연간 손익에 반영된 결과로 해석된다. 2026년 들어서는 1분기 매출 1,786억원(+3.78% YoY), 영업이익 124.5억원(+16.7% YoY), 순이익 102.7억원(+9.29% YoY)으로 회복세를 보였고, 2분기에는 매출 1,750억원(-3.5% YoY)으로 소폭 줄었지만 영업이익은 153억원(+13.3% YoY), 순이익은 128억원(+9.4% YoY)으로 매출 감소에도 수익성이 개선됐다. 회사는 이러한 실적 개선의 배경으로 교육·메시징 등 저마진 사업 정리, 닌텐도 스위치2·VR·AR 기기 판매 호조에 따른 IT유통 부문 이익 개선, 전기차 충전사업 자산 양도에 따른 감가상각비 감소 등을 꼽았다. 다만 부문별로는 온도차가 뚜렷해 2026년 2분기 IT서비스 매출은 2.3% 줄어든 1,104억원, IT유통은 1.8% 감소한 541억원, IT정보서비스는 20.5% 급감한 105억원을 기록해 외형은 전반적으로 축소되는 가운데 이익만 늘어나는 구조다.",
-  "en": "FY2025 consolidated revenue reached KRW 687.2bn, up from KRW 625.7bn in FY2024, while operating profit rose 32.9% YoY to KRW 49.1bn, lifting the operating margin from 5.9% to 7.1%. Net profit, however, declined 16.3% YoY to KRW 28.3bn from KRW 33.8bn, diverging from the operating profit trend. Compared with FY2023 (net profit KRW 30.4bn) and the unusually elevated FY2022 (KRW 84.1bn), recent net profit has fluctuated around the KRW 30bn range. On a quarterly basis, Q2 2025 (operating profit KRW 13.45bn, net profit KRW 11.75bn) and Q3 2025 (operating profit KRW 12.55bn, net profit KRW 12.60bn) were stable, but Q4 2025 posted a net loss of KRW –5.41bn despite a positive operating profit of KRW 12.44bn. Management attributed part of the annual result to one-off items such as an impairment gain from reclassifying EV charging assets as held-for-sale. Into 2026, Q1 showed a recovery with revenue of KRW 178.6bn (+3.78% YoY), operating profit of KRW 12.45bn (+16.7% YoY), and net profit of KRW 10.27bn (+9.29% YoY), while Q2 revenue slipped 3.5% YoY to KRW 175.0bn even as operating profit rose 13.3% to KRW 15.24bn and net profit grew 9.4% to KRW 12.84bn. The company cited the paring of low-margin education and messaging businesses, stronger IT Distribution profit from Nintendo Switch 2 and VR/AR device sales, and lower depreciation following the EV charging asset transfer as key drivers. Segment performance diverged notably in Q2 2026, with IT Service revenue down 2.3% to KRW 110.4bn, IT Distribution down 1.8% to KRW 54.1bn, and IT Information Service down sharply 20.5% to KRW 10.5bn — an overall pattern of shrinking top line alongside rising profitability."
+  "ko": "2025년 연결 매출액은 6,872억원으로 2024년 6,257억원 대비 9.8% 증가했고, 영업이익은 491억원으로 32.9% 늘어 영업이익률이 5.9%에서 7.1%로 개선됐다. 다만 지배주주 순이익은 283억원으로 전년 338억원보다 16.3% 감소해, 영업이익 증가와 순이익 감소가 엇갈리는 모습을 보였다. 2022년에는 영업이익이 375억원에 그쳤음에도 순이익이 841억원에 달했는데, 계열사 관련 지분 거래 등 일회성 요인이 반영된 결과로 추정된다. 분기별로 보면 2025년 3분기 순이익은 126억원으로 양호했으나 4분기에는 영업이익 124억원의 흑자에도 순이익이 -54억원으로 적자 전환해, 비영업 부문에서 부담이 있었던 것으로 보인다. 2026년 1분기에는 매출 1,786억원, 영업이익 124억원으로 전년 동기 대비 각각 3.78%, 16.7% 증가했고, 순이익도 103억원으로 9.29% 늘었다. 2026년 2분기 매출은 1,750억원으로 전년 동기보다 3.5% 감소했지만 영업이익은 152억원으로 13% 늘며 저마진 사업 정리 효과가 다시 확인됐다. 2026년 상반기 누적으로는 매출 3,536억원(전년 동기와 유사한 수준), 영업이익 277억원(+14.8%), 순이익 231억원(+9.3%)을 기록했고, 상반기 영업이익률은 7.8%로 전년 동기 대비 약 1%포인트 상승했다. 부채비율은 2024년 23.1%에서 2025년 33.0%로 다소 높아졌으나 자기자본은 4,086억원에서 4,332억원으로 늘어 재무 기반은 유지되고 있다.",
+  "en": "Consolidated revenue in 2025 reached 687.2 billion won, up 9.8% from 625.7 billion won in 2024, while operating profit jumped 32.9% to 49.1 billion won, lifting the operating margin from 5.9% to 7.1%. Net profit attributable to owners, however, fell 16.3% to 28.3 billion won from 33.8 billion won the prior year, so operating profit growth and net profit decline diverged that year. In 2022, operating profit was only 37.5 billion won yet net profit reached 84.1 billion won, a gap likely driven by one-off items such as intra-group equity transactions. On a quarterly basis, Q3 2025 net profit was a solid 12.6 billion won, but Q4 2025 saw net profit swing to a loss of 5.4 billion won despite an operating profit of 12.4 billion won, suggesting a non-operating burden that quarter. In Q1 2026, revenue was 178.6 billion won and operating profit 12.4 billion won, up 3.78% and 16.7% year over year respectively, while net profit rose 9.29% to 10.3 billion won. Q2 2026 revenue declined 3.5% year over year to 175.0 billion won, yet operating profit rose 13% to 15.2 billion won, again reflecting the effect of trimming low-margin businesses. For H1 2026 overall, revenue was 353.6 billion won (roughly flat year over year), operating profit was 27.7 billion won (+14.8%), and net profit was 23.1 billion won (+9.3%), with the H1 operating margin rising about one percentage point year over year to 7.8%. The debt ratio rose somewhat from 23.1% in 2024 to 33.0% in 2025, though equity grew from 408.6 billion won to 433.2 billion won, keeping the financial base intact."
  },
  "industry": {
-  "ko": "국내 IT 지출은 2026년 42조1000억원으로 전년(40조8500억원) 대비 3.3% 증가할 것으로 전망되며, AI 인프라 수요 확대와 데이터센터 시스템 확장, 디지털 전환(DX) 가속화가 주요 성장 동력으로 꼽힌다. 리테일테크 분야에서는 오프라인 매장에 AI·비전 기술을 결합한 무인 결제, 재고 관리, 매대 모니터링 솔루션에 대한 수요가 확대되고 있으며, 신세계I&C는 이 흐름에 맞춰 AI 비전 셀프 계산대 솔루션을 편의점·슈퍼마켓 등으로 확대 적용하고 있다. 경쟁 구도에서는 CJ올리브네트웍스가 물류·제조 분야 디지털 전환(AX) 경험을 바탕으로 스마트 물류 플랫폼 구축 역량을 확대하고 있고, 삼성SDS·LG CNS 등 대형 IT서비스사도 클라우드·AI 인프라 투자를 늘리며 경쟁이 심화되고 있다. 신세계I&C는 상대적으로 소규모 사업자로서 신세계그룹 계열사 수요를 기반으로 안정적 매출을 확보하는 한편, AI 비전·리테일테크 특화 솔루션으로 차별화를 시도하는 위치에 있다. 그룹 계열 리테일 매장을 테스트베드로 활용해 국내 사례를 축적한 뒤 해외 시장 진출을 모색하는 전략도 병행되고 있다. 다만 저마진 IT정보서비스(교육·메시징) 부문의 구조조정이 진행 중이어서 매출 기반의 전반적 축소는 당분간 이어질 가능성이 있다.",
-  "en": "Domestic IT spending is projected to reach KRW 42.1tn in 2026, up 3.3% from KRW 40.85tn in 2025, driven by expanding AI infrastructure demand, data-center system growth, and accelerating digital transformation (DX). In retail tech, demand is rising for AI-vision-based unmanned checkout, inventory management, and shelf-monitoring solutions in offline stores, a trend Shinsegae I&C is capturing by expanding its AI-vision self-checkout solutions into convenience stores and supermarkets. Competitively, CJ Olive Networks is expanding smart logistics platform capabilities built on manufacturing and logistics AX experience, while large IT service providers such as Samsung SDS and LG CNS are increasing cloud and AI infrastructure investment, intensifying competition. Shinsegae I&C, a relatively smaller player, secures stable revenue from Shinsegae Group affiliate demand while attempting differentiation through specialized AI-vision retail-tech solutions. Its strategy also involves using group retail stores as a domestic testbed before pursuing overseas market entry. However, the ongoing restructuring of the low-margin IT Information Service segment (education, messaging) suggests overall revenue base contraction could continue for some time."
+  "ko": "국내 IT서비스 산업은 AI 인프라 투자와 디지털전환(DX) 수요 확대에 힘입어 성장하고 있으며, 국내 IT 지출은 2026년 42조1,000억원으로 전년 40조8,500억원 대비 3.3% 증가할 것으로 추정된다. AI 인프라 수요 확대와 데이터센터 시스템 확장이 주요 성장 동력으로 꼽힌다. 신세계아이앤씨는 이 시장에서 삼성SDS, LG CNS, 롯데정보통신 등 대기업 계열 IT서비스사와 경쟁하지만, 매출 규모는 삼성SDS와 10배 이상 차이가 나 스케일 면에서 격차가 크다. 국내 데이터센터 시장은 첨단 IT 수요 대비 공급이 부족한 상황으로, 지난해 국내 데이터센터 공급량은 OECD 평균의 절반 수준에 그친 것으로 나타났다. 이런 공급 부족 국면에서 신세계그룹이 예고한 250메가와트(MW) 규모의 초대형(하이퍼스케일) AI데이터센터 프로젝트는 SK텔레콤이 아마존웹서비스(AWS)와 울산에 짓고 있는 약 100MW 규모 데이터센터의 두 배가 넘는 규모로, 실현될 경우 국내 데이터센터 공급 지형에 상당한 영향을 줄 수 있다. 다만 신세계아이앤씨는 업계 내에서 경쟁사로 인식되지 않을 정도로 존재감이 크지 않다는 평가도 있어, 하이퍼스케일 데이터센터를 실제로 설계·운영해본 경험이 없다는 점이 시장의 관심사로 남아 있다.",
+  "en": "Korea's IT services industry is growing on the back of expanding AI infrastructure investment and digital transformation demand, with domestic IT spending projected to rise 3.3% in 2026 to 42.1 trillion won from 40.85 trillion won the prior year. Expanding AI infrastructure demand and data center system expansion are cited as the main growth drivers. Shinsegae I&C competes in this market with conglomerate-affiliated IT services firms such as Samsung SDS, LG CNS, and Lotte Data Communication, but its revenue scale is more than tenfold smaller than Samsung SDS, leaving a substantial gap. Korea's data center market faces a supply shortfall relative to demand from advanced IT users, with domestic data center supply last year reaching only about half the OECD average. Against this supply-constrained backdrop, Shinsegae Group's announced 250-megawatt hyperscale AI data center project would be more than double the roughly 100MW facility SK Telecom is building with Amazon Web Services in Ulsan, and could meaningfully affect Korea's data center supply landscape if realized. Even so, some market observers note that Shinsegae I&C is not widely recognized as a competitor within the industry, leaving its lack of hands-on hyperscale data center design and operation experience as a point of market attention."
  },
  "outlook": {
-  "ko": "회사는 2026년 상반기 실적 발표에서 \"단기 외형보다 중장기 체질 전환에 무게를 두고 있다\"며 \"하반기 AI 인프라 수요 확대와 맞물려 실적으로 이어질지 주목\"하고 있다고 밝혔다. 연구개발을 총괄하는 AX센터는 무인매장 결제, 라이다 기반 객체 추적, 자율주행 주차 관제, 영상 기반 재고 모니터링, 구매 행동 인식 등을 주요 연구 영역으로 두고 있어 향후 신규 솔루션 출시가 이어질 가능성이 있다. 리테일테크 부문에서는 최근 CU 편의점에 AI 비전 기반 셀프 계산대 결제관리 솔루션을 공급하는 등 오프라인 리테일 AX 사업 확대에 나서고 있으며, 국내 사례를 기반으로 해외 리테일 시장 공략에도 속도를 낼 방침이라고 밝혔다. 연간 연구개발비는 전년 대비 2배 이상 확대된 약 32억원 수준으로 늘어날 전망이어서 AI·빅데이터 기술 개발 투자가 지속될 것으로 보인다. IT유통 부문에서는 신제품 게임기·주변기기 판매 흐름이 이익 기여도를 좌우할 변수로 남아 있으며, 저마진 사업 정리가 마무리 단계에 접어들면서 향후 매출 감소 폭이 완화될지가 관전 포인트다. 전사적으로는 사업구조 효율화 기조가 이어지는 가운데, 신세계그룹 내 데이터센터·클라우드 전환 프로젝트 등 계열사향 수요가 안정적 매출 기반으로 작용할 것으로 예상된다.",
-  "en": "In its H1 2026 disclosure, the company stated that it is placing weight on medium-to-long-term structural transformation rather than short-term top-line growth, and is watching whether expanding AI infrastructure demand in the second half translates into results. Its R&D arm, the AX Center, focuses on unmanned store payment, LiDAR-based object tracking, autonomous parking control, video-based inventory monitoring, and purchase behavior recognition, suggesting further solution launches ahead. In retail tech, the company recently supplied an AI-vision-based self-checkout payment management solution to CU convenience stores, expanding its offline retail AX business, and stated plans to accelerate overseas retail market expansion based on domestic track record. Annual R&D spending is expected to roughly double year-over-year to about KRW 3.2bn, indicating continued investment in AI and big-data technology development. In IT Distribution, sales momentum for new gaming devices and peripherals remains a key variable for profit contribution, while a key watchpoint is whether revenue declines moderate as the low-margin business restructuring nears completion. Company-wide, the ongoing efficiency drive is expected to continue, with demand from Shinsegae Group's data-center and cloud transition projects serving as a stable revenue base for affiliate-related business."
+  "ko": "회사는 AI·클라우드·스마트리테일·스마트인프라를 4대 성장축으로 설정하고 R&D 투자를 확대하고 있으며, 2026년 상반기 연구개발비는 16억2,000만원으로 이미 2025년 연간 투자액(15억7,000만원)을 넘어섰다. 매출 대비 연구개발비 비중도 전년 0.2%에서 0.5%로 높아졌고, 연간 기준으로는 전년 대비 2배 이상 확대될 것으로 전망된다. R&D를 총괄하는 AX센터는 무인매장 결제, 라이다 기반 객체추적, 자율주행 주차관제, 영상기반 재고 모니터링 등을 연구하고 있다. 대외 협력에서는 KT와 뉴타닉스 기반 프라이빗·하이브리드 클라우드 사업 공동 영업을 위한 업무협약을 체결해 기업용 클라우드 시장 확대를 모색하고 있다. 가장 주목되는 변수는 신세계그룹이 미국 리플렉션AI와 전략적 파트너십을 맺고 예고한 250MW 규모의 AI데이터센터 프로젝트로, 그룹은 연내 합작법인(JV) 설립을 위한 준비 단계에 들어간 것으로 알려졌다. 해당 데이터센터의 인프라 설계와 운영을 신세계아이앤씨가 맡을 것이라는 관측이 나오지만, 아직 역할과 투자 규모가 공식적으로 확정되지는 않았다. 회사는 반기보고서를 통해 단기 외형보다 중장기 체질 전환에 무게를 두고 있으며 하반기 AI 인프라 수요 확대가 실적으로 이어질지 주목하고 있다고 밝혔다. 확대된 AI·클라우드 투자가 그룹 내부 수요를 넘어 외부 매출과 이익으로 연결될 수 있는지가 향후 실적의 핵심 변수로 지목된다.",
+  "en": "The company has set AI, cloud, smart retail, and smart infrastructure as its four growth pillars and is expanding R&D investment, with H1 2026 R&D spending of 1.62 billion won already exceeding the full-year 2025 figure of 1.57 billion won. R&D spending as a share of revenue rose from 0.2% to 0.5% year over year, and on an annualized basis is expected to more than double from the prior year. The AX Center, which oversees R&D, is researching unmanned store payments, LiDAR-based object tracking, autonomous parking control, and image-based inventory monitoring. On the external partnership front, the company signed an MOU with KT for joint sales of Nutanix-based private/hybrid cloud offerings, seeking to expand in the enterprise cloud market. The most closely watched variable is Shinsegae Group's announced 250MW AI data center project, formed through a strategic partnership with U.S. startup Reflection AI, with the group reportedly moving into preparation for establishing a joint venture within the year. Speculation suggests Shinsegae I&C would handle the infrastructure design and operation of the facility, though its role and investment scale have not yet been officially confirmed. In its semiannual report, the company stated it is placing more weight on medium- to long-term structural transformation than on short-term top-line growth, and is watching whether expanding AI infrastructure demand in the second half translates into results. Whether the expanded AI and cloud investment can extend beyond internal group demand to external revenue and profit is flagged as the key variable for future earnings."
  },
  "valuation_comment": {
-  "ko": "신세계I&C의 순이익은 2022년 이후 300억원 안팎에서 등락해왔고 2025년에는 전년 대비 감소, 2026년 상반기에는 다시 개선되는 흐름을 보였다. 이러한 이익 변동성을 감안할 때 주가수익비율은 과거 실적 기준 거래 밴드 내에서 등락해온 것으로 파악되며, 최근 이익 회복 국면과 맞물려 해석될 필요가 있다. 주가순자산비율 측면에서는 순자산가치 대비 할인된 수준에서 거래되는 구간으로, 자기자본 규모가 매년 꾸준히 증가해온 점(2022년 3,639억원에서 2025년 4,332억원)이 장부가치의 기초를 이룬다. 배당수익률은 주당 현금배당금 560원을 기준으로 할 때 업종 평균 대비 두드러지게 높은 수준은 아닌 것으로 판단된다. 전반적으로 밸류에이션 지표는 이익 회복의 지속성과 저마진 사업 구조조정의 완결 시점에 따라 방향이 달라질 수 있는 구간에 있다.",
-  "en": "Net profit has fluctuated around the KRW 30bn range since 2022, declining in FY2025 before improving again in H1 2026. Given this earnings volatility, the price-to-earnings ratio has moved within a historical trading band based on past results, and should be interpreted alongside the recent earnings recovery. On a price-to-book basis, the stock trades at a discount to net asset value, underpinned by steadily rising shareholders' equity (from KRW 363.9bn in 2022 to KRW 433.2bn in 2025). The dividend yield, based on the KRW 560 per-share cash dividend, does not appear notably above the sector average. Overall, valuation metrics sit in a range where direction may depend on the sustainability of the earnings recovery and the completion timeline of the low-margin business restructuring."
+  "ko": "신세계아이앤씨 주가는 신세계그룹의 AI데이터센터 관련 소식이 나올 때마다 단기간에 크게 움직이는 이벤트 민감성을 보여왔다. 주가는 주당순자산에 못 미치는 수준에서 거래되는 구간이 존재해, 장부상 자산가치와 시장가치 사이에 격차가 있다. 배당은 매년 지급되고 있으나 배당수익률 수준은 업종 내 고배당 종목과 비교하면 낮은 축에 속한다. 순이익은 2022년 일회성 요인으로 크게 늘었던 뒤 이후 몇 해간 축소됐고, 2025년에는 영업이익이 개선됐음에도 순이익은 오히려 감소하는 등 영업 실적과 순이익 흐름이 자주 엇갈려왔다. 이런 이력 때문에 밸류에이션 지표를 해석할 때는 영업이익 중심의 개선 흐름과 순이익의 변동성을 함께 살펴볼 필요가 있다. AI데이터센터 프로젝트에서 회사의 역할과 투자 규모가 구체화되기 전까지는, 현재 거래 수준이 사업 펀더멘털과 이벤트 기대감 중 어느 쪽에 더 크게 기인하는지 가늠하기 어려운 국면이다.",
+  "en": "Shinsegae I&C's share price has shown notable event sensitivity, moving sharply within short periods whenever news related to Shinsegae Group's AI data center project surfaces. There are periods when the stock trades below book value per share, indicating a gap between recorded asset value and market valuation. Dividends have been paid annually, though the dividend yield level tends to sit on the lower side compared with high-yield names in the sector. Net profit surged in 2022 due to one-off factors and then contracted over the following years, and in 2025 net profit actually declined even as operating profit improved, illustrating how operating results and net profit trends have frequently diverged. Because of this history, interpreting valuation metrics requires weighing the operating-profit-led improvement trend alongside net profit volatility. Until the company's role and investment scale in the AI data center project are clarified, it remains difficult to gauge how much of the current trading level is driven by business fundamentals versus event-driven expectations."
  },
  "bull": [
   {
    "title": {
-    "ko": "수익성 중심 체질 전환",
-    "en": "Profitability-Focused Transformation"
+    "ko": "AI데이터센터 프로젝트 참여 기대",
+    "en": "Expected Involvement in the AI Data Center Project"
    },
    "body": {
-    "ko": "저마진 교육·메시징 사업을 정리하고 IT서비스·유통 부문에 자원을 집중하면서 2025년 영업이익률이 5.9%에서 7.1%로, 2026년 2분기에는 매출 감소에도 영업이익이 13.3% 늘어나는 결과로 이어졌다. 전기차 충전사업 자산 양도로 감가상각비 부담도 줄어드는 효과가 있었다. 이러한 구조조정이 마무리 단계에 이를 경우 안정적인 이익 기반이 형성될 가능성이 있다.",
-    "en": "By exiting low-margin education and messaging businesses and concentrating resources on IT Service and Distribution, the company lifted its operating margin from 5.9% to 7.1% in 2025, and grew operating profit 13.3% in Q2 2026 even as revenue declined. The EV charging asset transfer also reduced the depreciation burden. As this restructuring nears completion, a more stable profit base could emerge."
+    "ko": "신세계그룹은 미국 리플렉션AI와 전략적 파트너십을 맺고 국내 최대 규모인 250MW급 AI데이터센터 건립을 예고했다. 해당 데이터센터의 인프라 설계·운영을 신세계아이앤씨가 맡을 것이라는 관측이 나오며, 실제 발표 직후 주가가 단기간 급등하는 반응이 나타났다. 국내 데이터센터 공급이 OECD 평균의 절반 수준에 머무는 상황에서 하이퍼스케일 설비가 실현되면 여유 전력을 활용한 클라우드 사업 확장의 기회로 이어질 수 있다.",
+    "en": "Shinsegae Group has forged a strategic partnership with U.S. startup Reflection AI and announced plans for a 250MW AI data center, the largest of its kind planned in Korea. Speculation has emerged that Shinsegae I&C would handle the infrastructure design and operation of the facility, and the stock reacted with a sharp short-term rally immediately after the announcement. With domestic data center supply running at about half the OECD average, realizing a hyperscale facility could open opportunities to expand cloud business using spare power capacity."
    }
   },
   {
    "title": {
-    "ko": "AI 리테일테크 신사업 확장",
-    "en": "AI Retail-Tech Business Expansion"
+    "ko": "저마진 사업 정리를 통한 수익성 개선",
+    "en": "Margin Improvement via Low-Margin Business Pruning"
    },
    "body": {
-    "ko": "AI 비전 기반 셀프 계산대 솔루션을 CU 편의점 등으로 확대 적용하며 오프라인 리테일 AX 사업을 키우고 있고, R&D 투자를 전년 대비 2배 이상 늘리며 관련 기술 개발에 속도를 내고 있다. 국내 사례를 축적한 뒤 해외 리테일 시장 진출도 계획하고 있어 신규 매출원 확보 가능성이 있다.",
-    "en": "The company is expanding AI-vision-based self-checkout solutions into convenience stores such as CU, growing its offline retail AX business, while more than doubling R&D investment year-over-year to accelerate related technology development. It also plans to leverage domestic track record for overseas retail market entry, potentially opening new revenue sources."
+    "ko": "2025년 영업이익률은 7.1%로 2024년 5.9%에서 개선됐고, 2026년 상반기에도 영업이익률이 7.8%로 전년 동기보다 약 1%포인트 높아졌다. 교육·메시징서비스, 전기차 충전 등 상대적으로 수익성이 낮은 사업을 축소하고 IT유통·클라우드 등 이익 기여도가 높은 영역에 집중하는 전략이 실적에 반영되고 있다. 2026년 2분기에는 매출이 줄었음에도 영업이익이 13% 늘어난 점이 이런 체질 전환의 결과로 해석된다.",
+    "en": "The operating margin improved to 7.1% in 2025 from 5.9% in 2024, and rose further to 7.8% in H1 2026, up about one percentage point year over year. The strategy of scaling back relatively low-margin businesses such as education, messaging services, and EV charging while concentrating on higher-contribution areas like IT distribution and cloud is being reflected in results. In Q2 2026, operating profit rose 13% even as revenue declined, a pattern interpreted as the result of this structural shift."
    }
   },
   {
    "title": {
-    "ko": "AI 인프라 수요에 따른 IT지출 확대",
-    "en": "IT Spending Growth on AI Infrastructure Demand"
+    "ko": "대외 클라우드·리테일테크 확장 시도",
+    "en": "Push to Expand External Cloud and Retail Tech Business"
    },
    "body": {
-    "ko": "국내 IT 지출이 2026년 42조1000억원으로 전년 대비 3.3% 증가할 것으로 전망되는 가운데, 데이터센터 확장과 디지털 전환 수요가 IT서비스 부문 매출 기반에 긍정적으로 작용할 여지가 있다. 신세계그룹 계열사향 안정적 IT 수요도 매출 기반으로 유지된다.",
-    "en": "With domestic IT spending projected to grow 3.3% YoY to KRW 42.1tn in 2026, expanding data-center and digital transformation demand could positively support the IT Service segment's revenue base. Stable IT demand from Shinsegae Group affiliates also underpins the revenue base."
+    "ko": "신세계아이앤씨는 KT와 뉴타닉스 기반 프라이빗·하이브리드 클라우드 사업의 공동 영업을 위한 업무협약을 체결했다. AI 비전 기반 셀프 계산대 등 스마트리테일 솔루션은 해외 진출도 추진되고 있다. R&D 투자도 2026년 상반기에 이미 전년 연간 수준을 넘어서며 AI·빅데이터 기술 개발에 속도를 내고 있다.",
+    "en": "Shinsegae I&C signed an MOU with KT for joint sales of Nutanix-based private and hybrid cloud offerings. Its AI-vision-based self-checkout and other smart retail solutions are also being pushed for overseas expansion. R&D investment already exceeded the prior full year's level in H1 2026 alone, accelerating AI and big data technology development."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 정체·부문별 축소",
-    "en": "Stagnant Revenue and Segment Contraction"
+    "ko": "매출 정체와 계열사 의존 구조",
+    "en": "Stagnant Revenue and Reliance on Affiliate Transactions"
    },
    "body": {
-    "ko": "2026년 2분기 IT서비스, IT유통, IT정보서비스 매출이 모두 전년 대비 감소했으며 특히 IT정보서비스는 20.5% 급감했다. 저마진 사업 정리에 따른 일시적 현상일 수 있으나, 신규 성장동력이 뚜렷하게 확인되지 않을 경우 외형 성장 정체가 장기화될 가능성이 있다.",
-    "en": "In Q2 2026, revenue declined year-over-year across all three segments — IT Service, IT Distribution, and IT Information Service — with the latter falling sharply by 20.5%. While this may partly reflect deliberate low-margin business pruning, prolonged top-line stagnation is possible if clear new growth drivers do not emerge."
+    "ko": "2026년 상반기 매출은 전년 동기와 비슷한 수준에 머물렀고, 2분기 매출은 오히려 3.5% 감소했다. 매출의 상당 부분이 신세계그룹 계열사에서 발생하는 내부거래 구조여서, 대외 매출 확대 성과가 아직 뚜렷하게 확인되지 않고 있다. 확대된 AI·클라우드 투자가 그룹 내부 수요를 넘어 외부 매출과 이익으로 연결될지는 여전히 지켜봐야 할 부분이다.",
+    "en": "H1 2026 revenue was roughly flat year over year, and Q2 revenue actually declined 3.5%. Because a substantial portion of revenue derives from intra-group transactions with Shinsegae Group affiliates, clear evidence of external revenue expansion has yet to materialize. Whether the expanded AI and cloud investment can extend beyond internal group demand into external revenue and profit remains to be seen."
    }
   },
   {
    "title": {
-    "ko": "순이익 변동성",
-    "en": "Net Profit Volatility"
+    "ko": "하이퍼스케일 데이터센터 운영 경험 부재",
+    "en": "Lack of Hyperscale Data Center Operating Experience"
    },
    "body": {
-    "ko": "2025년 4분기에는 영업이익 흑자에도 순손실을 기록하는 등 비경상적 요인에 따른 분기별 순이익 변동성이 확인된다. 2022년의 이례적으로 높은 순이익(841억원) 이후 최근 수년간 순이익은 300억원 안팎에서 등락해 이익의 예측가능성이 제한적이다.",
-    "en": "In Q4 2025, the company posted a net loss despite positive operating profit, reflecting quarterly net profit volatility from non-recurring items. Following the unusually elevated FY2022 net profit of KRW 84.1bn, recent years' net profit has fluctuated around KRW 30bn, limiting earnings predictability."
+    "ko": "신세계아이앤씨는 김포 데이터센터를 운영하고 있지만, 250MW급 하이퍼스케일 데이터센터를 직접 설계·운영해본 경험은 없다. 시장 관계자들 사이에서는 신세계아이앤씨가 업계에서 경쟁사로 인식될 만큼 존재감이 크지 않다는 평가도 나온다. 그룹 차원에서 이를 실행할 캐파(생산능력)를 갖추고 있는지 지켜봐야 한다는 지적도 있다.",
+    "en": "While Shinsegae I&C operates the Gimpo data center, it has no track record designing or operating a hyperscale facility on the order of 250MW. Some market participants note that the company is not widely recognized as a competitor within the industry. There are also views that it remains to be seen whether the group has the necessary capacity to execute a project of this scale."
    }
   },
   {
    "title": {
-    "ko": "계열사 의존적 매출 구조",
-    "en": "Reliance on Affiliate Revenue"
+    "ko": "순이익 변동성과 실적 엇갈림",
+    "en": "Net Profit Volatility and Divergence from Operating Results"
    },
    "body": {
-    "ko": "매출 기반의 상당 부분이 신세계그룹 계열사 IT 수요에 의존하는 구조로, 그룹 계열사의 투자 계획이나 실적에 따라 매출이 영향을 받을 수 있다. 또한 삼성SDS, LG CNS 등 대형 IT서비스사와의 경쟁 심화도 부담 요인이다.",
-    "en": "A significant portion of revenue depends on IT demand from Shinsegae Group affiliates, meaning revenue could be affected by group affiliates' investment plans or performance. Intensifying competition with large IT service providers such as Samsung SDS and LG CNS is also a burden factor."
+    "ko": "2025년에는 영업이익이 32.9% 증가했음에도 지배주주 순이익은 16.3% 감소했고, 2025년 4분기에는 영업이익 흑자에도 순이익이 적자로 전환됐다. 2022년의 대규모 순이익(841억원)은 일회성 요인에 기댄 결과로 추정되며, 이후 순이익 규모는 그 수준을 회복하지 못했다. 영업 실적과 순이익 흐름이 자주 엇갈려온 점은 실적을 해석할 때 유의할 부분이다.",
+    "en": "In 2025, operating profit rose 32.9% even as net profit attributable to owners fell 16.3%, and Q4 2025 saw net profit turn negative despite a positive operating profit. The large 84.1 billion won net profit posted in 2022 is believed to have stemmed from one-off factors, and net profit has not returned to that level since. The frequent divergence between operating results and net profit trends is something to keep in mind when interpreting the company's earnings."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "사업구조",
-    "en": "Business Structure"
+    "ko": "사업 실행 리스크",
+    "en": "Execution Risk"
    },
    "body": {
-    "ko": "저마진 사업 정리가 지속되면서 단기적으로 매출 감소가 이어질 수 있으며, 새로운 성장 부문이 이를 대체하지 못할 경우 외형 축소가 장기화될 위험이 있다. IT정보서비스 부문의 매출 감소 폭이 확대되고 있어 향후 추이를 지켜볼 필요가 있다.",
-    "en": "Continued pruning of low-margin businesses may result in ongoing revenue declines in the near term, with a risk of prolonged top-line contraction if new growth segments fail to compensate. The IT Information Service segment's revenue decline has been widening and warrants continued monitoring."
+    "ko": "신세계그룹의 AI데이터센터 프로젝트는 아직 합작법인(JV) 설립 준비 단계로, 신세계아이앤씨의 구체적 역할과 투자 규모, 지분 구조 등은 확정되지 않았다. 리플렉션AI와의 협력이 실제 착공·가동까지 이어지는 과정에서 일정 지연이나 계획 변경 가능성을 배제할 수 없다.",
+    "en": "Shinsegae Group's AI data center project remains in the preparation stage for establishing a joint venture, and Shinsegae I&C's specific role, investment size, and ownership structure have not been finalized. Given the process of translating the Reflection AI partnership into actual construction and operation, delays or changes to the plan cannot be ruled out."
    }
   },
   {
    "cat": {
-    "ko": "손익 변동성",
-    "en": "Earnings Volatility"
+    "ko": "수익 구조 리스크",
+    "en": "Revenue Structure Risk"
    },
    "body": {
-    "ko": "2025년 4분기와 같이 영업이익 흑자에도 비경상적 요인으로 순손실이 발생할 수 있어, 분기별 순이익 변동성이 투자 판단에 영향을 줄 수 있다. 일회성 손익 항목의 재발 가능성을 배제할 수 없다.",
-    "en": "As seen in Q4 2025, non-recurring items can result in a net loss even when operating profit is positive, meaning quarterly net profit volatility could affect investment assessment. The recurrence of one-off gain/loss items cannot be ruled out."
+    "ko": "저마진 사업(교육·메시징·전기차충전 등) 정리가 이어지면서 매출 외형이 정체되거나 줄어들 가능성이 있다. 계열사 매출 의존도가 높은 구조에서 그룹 전반의 투자·소비 흐름이 둔화되면 실적에 직접적인 영향을 받을 수 있다.",
+    "en": "Continued pruning of low-margin businesses (education, messaging, EV charging, etc.) could keep revenue flat or cause it to shrink further. Given the high dependence on affiliate-related revenue, a slowdown in group-wide investment or consumption could have a direct impact on earnings."
    }
   },
   {
    "cat": {
-    "ko": "경쟁·계열사 리스크",
-    "en": "Competitive and Affiliate Risk"
+    "ko": "경쟁·시장 리스크",
+    "en": "Competitive and Market Risk"
    },
    "body": {
-    "ko": "대형 IT서비스사와의 경쟁 심화, 신세계그룹 계열사 IT 투자 계획 변화, 리테일테크 시장에서의 기술 경쟁 등이 향후 실적에 영향을 줄 수 있는 요인이다.",
-    "en": "Intensifying competition with large IT service firms, changes in Shinsegae Group affiliates' IT investment plans, and technology competition in the retail-tech market are factors that could affect future performance."
+    "ko": "삼성SDS, LG CNS 등 대형 IT서비스사와 매출 규모 격차가 크고, 하이퍼스케일 데이터센터 시장에는 통신사·대형 클라우드사업자 등 경쟁자들도 뛰어들고 있다. 신세계아이앤씨의 존재감이 아직 크지 않다는 시장 평가가 이어지면 대외 수주 확대에 시간이 걸릴 수 있다.",
+    "en": "There is a large revenue-scale gap versus major IT services firms such as Samsung SDS and LG CNS, and the hyperscale data center market is also drawing competition from telecom operators and large cloud providers. If market perceptions of Shinsegae I&C's limited industry presence persist, expanding external contract wins could take longer."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월경",
-    "en": "Around November 2026"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시 예정 — IT정보서비스 부문 매출 감소세가 지속되는지, IT서비스·IT유통 부문 이익 성장이 이어지는지 확인 필요.",
-    "en": "Q3 2026 earnings disclosure expected — check whether the IT Information Service segment's revenue decline persists and whether IT Service/Distribution profit growth continues."
+    "ko": "3분기(2026년 7~9월) 실적 발표 시점으로, 저마진 사업 정리 효과와 영업이익률 개선 흐름이 이어지는지 확인할 시점이다.",
+    "en": "Expected timing for Q3 2026 (July–September) results, when it can be checked whether the effect of trimming low-margin businesses and the operating margin improvement trend continue."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
+    "ko": "2026년 4분기 중",
+    "en": "Q4 2026"
+   },
+   "what": {
+    "ko": "신세계그룹과 리플렉션AI의 AI데이터센터 합작법인(JV) 설립 여부와 신세계아이앤씨의 구체적 역할·투자 규모가 공개되는지 살펴볼 시점이다.",
+    "en": "A period to watch for whether Shinsegae Group and Reflection AI finalize the AI data center joint venture, and whether Shinsegae I&C's specific role and investment size are disclosed."
+   }
+  },
+  {
+   "when": {
+    "ko": "2026년 하반기 중",
     "en": "H2 2026"
    },
    "what": {
-    "ko": "AI 인프라 수요 확대가 실제 실적에 반영되는지, 회사가 언급한 '하반기 실적 연계' 여부를 확인할 시점.",
-    "en": "A point to check whether expanding AI infrastructure demand actually translates into results, as the company flagged for the second half."
+    "ko": "KT와의 뉴타닉스 기반 클라우드 협력 사업에서 실제 레퍼런스 고객 확보 등 대외 매출 성과가 나오는지 확인할 부분이다.",
+    "en": "A point to confirm whether the Nutanix-based cloud partnership with KT yields tangible external revenue results, such as securing reference customers."
    }
   },
   {
    "when": {
-    "ko": "2027년 2월경",
-    "en": "Around February 2027"
+    "ko": "다음 사업보고서·IR 공개 시점",
+    "en": "Next business report / IR disclosure"
    },
    "what": {
-    "ko": "2026년 연간 실적 및 배당 공시 — 저마진 사업 구조조정의 최종 매출·이익 영향과 배당 정책 변화 여부 확인.",
-    "en": "FY2026 annual results and dividend disclosure — check the final revenue/profit impact of low-margin business restructuring and any changes in dividend policy."
-   }
-  },
-  {
-   "when": {
-    "ko": "수시",
-    "en": "Ongoing"
-   },
-   "what": {
-    "ko": "CU 등 리테일 파트너십 확대, 해외 리테일테크 진출 관련 추가 공시나 보도 여부 모니터링.",
-    "en": "Monitor additional disclosures or news on expanding retail partnerships (e.g., CU) and overseas retail-tech market entry."
+    "ko": "AX센터의 R&D 투자 성과와 대외(비계열) 매출 비중 변화 등 체질 전환의 진행 정도를 짚어볼 지표다.",
+    "en": "A metric to gauge progress on structural transformation, including the AX Center's R&D outcomes and any change in the share of non-affiliate (external) revenue."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "신세계I&C는 저마진 사업 정리와 원가구조 개선을 통해 영업이익률을 끌어올리는 체질 전환을 진행 중이며, 이는 2025년 연간 및 2026년 상반기 영업이익 증가로 확인된다. 다만 매출은 부문별로 온도차를 보이며 전반적으로 정체되거나 축소되는 모습이고, 2025년 4분기와 같이 영업이익 흑자에도 순손실이 발생하는 등 순이익의 분기별 변동성도 관찰된다. AI 비전 기반 리테일테크 솔루션 확대와 R&D 투자 증가는 중장기 성장동력으로 제시되고 있으나 아직 매출 기여도는 뚜렷하게 확인되지 않았다. 신세계그룹 계열사 수요에 의존하는 매출 구조와 대형 IT서비스사와의 경쟁도 지속적으로 살펴봐야 할 요인이다. 밸류에이션 측면에서는 순자산 대비 할인된 구간에서 거래되는 것으로 파악되나, 이익의 방향성과 지속가능성에 대한 확인이 판단의 핵심이 될 것으로 보인다. 향후 분기 실적과 저마진 사업 구조조정의 완결 시점, AI 신사업의 매출 기여 여부가 주요 관전 포인트다.",
-   "en": "Shinsegae I&C is undergoing a structural transformation aimed at lifting operating margins through the pruning of low-margin businesses and cost structure improvements, as reflected in FY2025 and H1 2026 operating profit growth. However, revenue trends diverge by segment and are generally stagnant or contracting, with net profit also showing quarterly volatility — as seen in the Q4 2025 net loss despite positive operating profit. Expansion of AI-vision-based retail-tech solutions and increased R&D investment are positioned as medium-to-long-term growth drivers, though their revenue contribution has not yet become clearly evident. The revenue structure's reliance on Shinsegae Group affiliate demand and ongoing competition with large IT service providers are factors that warrant continued attention. On valuation, the stock appears to trade at a discount to net asset value, but confirming the direction and sustainability of earnings will be central to any assessment. Key points to watch ahead include upcoming quarterly results, the completion timeline of low-margin business restructuring, and whether new AI-related businesses begin contributing meaningfully to revenue."
+   "ko": "신세계아이앤씨는 저마진 사업을 정리하며 영업이익률을 끌어올리는 수익성 중심의 체질 전환을 이어가고 있고, 이는 2025년과 2026년 상반기 실적에서 확인된다. 동시에 신세계그룹이 예고한 초대형 AI데이터센터 프로젝트에서 신세계아이앤씨가 맡을 역할에 대한 시장의 관심이 커지면서, 회사의 사업 스토리에 새로운 축이 더해졌다. 다만 해당 프로젝트는 아직 합작법인 설립 준비 단계로, 역할과 투자 규모가 공식적으로 확정되지 않았고 하이퍼스케일 데이터센터 운영 경험 부재라는 실행 리스크도 함께 거론된다. 매출의 상당 부분이 신세계그룹 계열사에서 발생하는 구조는 안정적인 기반이 되기도 하지만, 대외 매출 확대의 속도를 가늠하기 어렵게 만드는 요인이기도 하다. 영업이익과 순이익이 자주 엇갈려온 실적 이력은 향후 분기 실적을 해석할 때 함께 고려할 부분이다. 3분기 실적 발표와 AI데이터센터 JV 관련 후속 소식이 다음 판단의 근거가 될 주요 이벤트로 꼽힌다.",
+   "en": "Shinsegae I&C is continuing a profitability-focused transformation by pruning low-margin businesses, lifting its operating margin, as confirmed in its 2025 and H1 2026 results. At the same time, growing market attention on the role Shinsegae I&C may play in Shinsegae Group's announced large-scale AI data center project has added a new dimension to the company's business narrative. That project, however, remains at the joint-venture preparation stage, with the company's role and investment size not yet officially confirmed, and execution risk tied to a lack of hyperscale data center operating experience is also cited. The structure in which a substantial share of revenue comes from Shinsegae Group affiliates provides a stable base but also makes it harder to gauge the pace of external revenue expansion. The history of operating profit and net profit frequently diverging is something to factor in when interpreting future quarterly results. The Q3 earnings release and any follow-up news on the AI data center joint venture stand out as the key events to watch for further clarity."
   }
  },
  "sources": [
-  "https://zdnet.co.kr/view/?no=20260508181249",
-  "https://zdnet.co.kr/view/?no=20260814175505",
-  "https://www.ddaily.co.kr/page/view/2026081114243427947",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/cVRrVTVKdEN4S3VlNU8xdnVLU3Fodz09/company_nm/(%EC%A3%BC)%EC%8B%A0%EC%84%B8%EA%B3%84%EC%95%84%EC%9D%B4%EC%95%A4%EC%94%A8",
-  "https://www.jobkorea.co.kr/company/1941030",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=035510",
+  "https://news.infostock.co.kr/a",
+  "https://alphasquare.co.kr/home/stock-summary?code=035510",
+  "https://zdnet.co.kr/view/?no=20260508181249",
   "https://www.investing.com/equities/shinsegae-i-c",
-  "https://dart.fss.or.kr/",
-  "https://thevc.kr/shinsegaeinc",
-  "https://www.incruit.com/company/707198/",
-  "https://www.ebn.co.kr/news/articleView.html?idxno=1719860",
-  "https://shinsegae-inc.com/",
-  "https://www.jobkorea.co.kr/company/1941030/AnalysisView?Inside_No=20610",
-  "https://www.jobplanet.co.kr/companies/70072/landing/%EC%8B%A0%EC%84%B8%EA%B3%84%EC%95%84%EC%9D%B4%EC%95%A4%EC%94%A8",
-  "https://www.jobkorea.co.kr/starter/companyreport/view?Inside_No=20610&schCtgr=101012&schGrpCtgr=0&Page=1",
-  "https://www.catch.co.kr/Comp/CompSummary/538787",
-  "https://jasoseol.com/companies/1989",
-  "https://markets.hankyung.com/consensus"
+  "https://www.instagram.com/p/DUCcFekgQkS/",
+  "https://m.irgo.co.kr/IR-COMP/004170/",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/cVRrVTVKdEN4S3VlNU8xdnVLU3Fodz09/company_nm/(%EC%A3%BC)%EC%8B%A0%EC%84%B8%EA%B3%84%EC%95%84%EC%9D%B4%EC%95%A4%EC%94%A8",
+  "https://jasoseol.com/companies/1989/insights",
+  "https://www.jobkorea.co.kr/company/1941030",
+  "https://zdnet.co.kr/view/?no=20260814175505",
+  "https://www.bloter.net/news/articleView.html?idxno=670401",
+  "https://www.newscj.com/news/articleView.html?idxno=3425258",
+  "https://comp.wisereport.co.kr/company/dart.aspx?cmp_cd=035510&cn=",
+  "https://koreadividend.kr/KR7035510007",
+  "https://m.irgo.co.kr/IR-COMP/035510/%EC%8B%A0%EC%84%B8%EA%B3%84IC-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
+  "https://comp.wisereport.co.kr/company/c1030001.aspx?cmp_cd=035510&cn=",
+  "https://dart.fss.or.kr/"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -223,9 +223,9 @@
   "IT·소프트웨어"
  ],
  "market": "코스피",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 09:16",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -324,14 +324,14 @@
    }
   ],
   "valuation": {
-   "price": 13180,
-   "mcap": 0.1843,
+   "price": 13860,
+   "mcap": 0.1938,
    "shares": 13980900,
    "total_shares": 13980900,
    "wavg_shares": 13145018,
-   "per": 5.7,
+   "per": 6.01,
    "eps": 2306,
-   "pbr": 0.39,
+   "pbr": 0.4061,
    "bps": 34130,
    "roe_ttm": 6.9,
    "ttm_window": "2025Q3~2026Q2",
@@ -340,7 +340,7 @@
    "bps_krx": 32954.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 560.0,
-   "div": 4.25
+   "div": 4.04
   }
  }
 }

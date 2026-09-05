@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "흑자 전환 이후 재시험대: 수주 공백과 ESS 회복 사이",
-  "en": "Back on the Test Bench: Bridging the Order Gap and the ESS Recovery"
+  "ko": "흑자 전환 딛고 안정화가 남은 과제",
+  "en": "Turned Profitable, Stability Still the Test"
  },
  "lead": {
-  "ko": "2025년 연간 흑자 전환과 재무 구조 개선에 성공했으나 2026년 1분기 매출이 급락하고 영업손실이 재확대되면서, 배터리 전방 설비 투자 정상화 시점이 단기 실적의 핵심 변수로 부상했다.",
-  "en": "Having restored full-year profitability and repaired its balance sheet in 2025, Wonik PnE faces a renewed test as 2026Q1 revenue collapsed and operating losses widened again, making the timing of battery-capex normalisation the central near-term variable."
+  "ko": "원익피앤이는 2025년 매출 성장과 흑자전환, 부채비율 개선으로 뚜렷한 반전을 이뤘지만 2025년 4분기와 2026년 1~2분기에 다시 영업손실을 기록해 회복의 지속성은 아직 확인 중이다.",
+  "en": "Wonik PNE delivered a clear turnaround in 2025 with revenue growth, a return to profit, and a lower debt ratio, but operating losses returned in Q4 2025 and again in Q1-Q2 2026, leaving the durability of the recovery still to be confirmed."
  },
  "keypoints": [
   {
-   "ko": "재무 정상화: 부채비율이 2024년 503.9%에서 2025년 208.8%로 대폭 축소됐고, 영업현금흐름도 -424억원에서 +614억원으로 전환됐다.",
-   "en": "Balance-sheet repair: the debt-to-equity ratio fell from 503.9% in 2024 to 208.8% in 2025, while operating cash flow swung from -KRW 42.4bn to +KRW 61.4bn."
+   "ko": "2025년 연결 매출 3,906.9억원(+32.6% YoY), 영업이익·순이익 모두 흑자전환, 부채비율 503.9%→208.8%로 개선",
+   "en": "2025 consolidated revenue reached KRW 390.7 billion (+32.6% YoY), both operating and net income turned positive, and the debt ratio improved from 503.9% to 208.8%"
   },
   {
-   "ko": "2025년 연간 흑자 전환: 매출 3,907억원(+32.5% YoY)·영업이익 14억원으로 2024년 대규모 적자(-487억원 영업손실)에서 벗어났으나 이익률은 0.4%에 머물렀다.",
-   "en": "Full-year return to profit in 2025: revenue rose 32.5% YoY to KRW 390.7bn and operating profit recovered to KRW 1.4bn (0.4% margin), reversing a KRW 48.7bn operating loss in 2024."
+   "ko": "2025년 3분기 흑자(영업이익 38.8억원) 이후 4분기·2026년 1분기·2분기 연속 영업손실 재발",
+   "en": "After a profitable Q3 2025 (operating income of KRW 3.88 billion), operating losses recurred in Q4 2025 and again in Q1 and Q2 2026"
   },
   {
-   "ko": "2026년 1분기 수주 공백 현실화: 매출 273억원(2025년 1분기 대비 -82%), 영업손실 -60.8억원으로 배터리 전방 투자 지연이 실적에 직접 반영됐다.",
-   "en": "Order gap materialises in 2026Q1: revenue of KRW 27.3bn (down ~82% vs. 2025Q1) with a KRW 6.1bn operating loss confirms battery-capex delays are hitting the top line."
+   "ko": "2024년 유럽 배터리 공급사와 매출액 대비 23.87% 규모 장비 공급 계약 체결 등 해외 고객 다변화 진행",
+   "en": "Overseas customer diversification continued, including a 2024 equipment supply contract with a European battery maker worth 23.87% of annual revenue"
   },
   {
-   "ko": "고객·제품 다변화 진행: GM 각형 배터리 파일럿 라인 노칭·스태킹 장비 수주, 삼성SDI-GM 합작사 Formation 장비 공급 선정, 유럽 배터리사 계약 체결로 포트폴리오를 확장 중이다.",
-   "en": "Expanding customer and product scope: GM notching/stacking equipment order, Formation equipment selection for the Samsung SDI–GM Indiana JV, and a European battery supplier contract broaden the business beyond core Formation/Cycler."
+   "ko": "업계는 2026년 하반기 유럽 EV 수요 회복과 북미 ESS 시장 확대를 2차전지 업황의 핵심 변수로 지목",
+   "en": "Industry analysts point to a European EV demand recovery and North American ESS market expansion in H2 2026 as key variables for the battery industry cycle"
   },
   {
-   "ko": "ESS 수요 구조적 성장: AI 데이터센터 전력 수요 급증으로 ESS 배터리 시장이 2024년 230GWh에서 2026년 359GWh로 확대될 전망이며, 충방전 장비의 범용성은 중장기 수혜 요인이다.",
-   "en": "Structural ESS tailwind: AI data-centre electricity demand is projected to drive ESS battery demand from 230 GWh in 2024 to 359 GWh in 2026, and Formation/Cycler equipment serves both EV and ESS production lines."
+   "ko": "최근 네 개 분기 기준 순손실이 이어져 주가수익비율 산출이 어려운 구간이며 주가순자산비율은 1배를 밑도는 수준",
+   "en": "Net losses over the past four quarters make a price-to-earnings ratio difficult to calculate, while the price-to-book ratio remains below 1x"
   }
  ],
  "business": {
-  "ko": "원익피앤이(217820)는 1999년 설립된 2차전지 후공정 장비 전문기업으로 원익그룹 계열사다. 주력 제품은 배터리 활성화(Formation) 및 특성 평가(Cycler) 충방전 장비, 조립공정 장비, 산업용 전원공급장치(PCR)이며, 화성 공정의 핵심 설비를 공급한다. 충방전 장비는 원통형·각형·파우치형 등 특정 폼팩터에 국한되지 않아 다양한 고객 확보가 가능한 것이 경쟁 강점으로 꼽힌다. 주요 고객사는 삼성SDI가 핵심 파트너이며, LG에너지솔루션·SK온 등 국내 배터리 3사와 중국 EVE에너지 등 글로벌 셀 메이커로 구성된다. 자회사 피앤이시스템즈를 통해 전기차 충전 인프라 사업도 전개하며 배터리 산업 전반을 아우르는 솔루션 기업으로 성장을 추진 중이다. 2025년에는 삼성SDI·GM 합작 인디애나 공장에 Formation 장비 공급업체로 선정됐고, GM의 자체 생산용 각형 배터리 파일럿 라인에 노칭·스태킹 장비를 수주해 조립공정 장비로 사업 범위를 확장했다. 배터리 3D CT·EIS Inspection 기반 비파괴 품질 검사 솔루션도 보유해 장비 포트폴리오 고도화를 도모하고 있다. 수주를 받아 제작·납품하는 프로젝트형 B2B 비즈니스 구조로, 매출은 수주·납품 사이클에 따라 분기별 변동성이 크다.",
-  "en": "Wonik PnE (217820) is a secondary-battery back-end equipment specialist established in 1999 and affiliated with the Wonik Group. Its core products are Formation (activation) and Cycler (characterisation) charge/discharge systems, assembly-process equipment, and PCR industrial power supplies—all critical to the battery formation stage. The charge/discharge equipment is not limited to a single cell format, making it applicable to cylindrical, prismatic, and pouch cells and supporting broad customer diversification. Key customers include Samsung SDI as the primary partner, alongside LG Energy Solution, SK On, and global cell makers such as China's EVE Energy. Through its subsidiary PnE Systems, the company also operates an EV charging infrastructure business, pursuing expansion into a full battery-industry solutions provider. In 2025, Wonik PnE was selected as a Formation equipment supplier for the Samsung SDI–GM Indiana joint venture and additionally won notching and stacking equipment orders for GM's own prismatic battery pilot line, extending into assembly-process equipment. The company also holds non-destructive quality inspection solutions based on battery 3D CT and EIS Inspection technology, furthering portfolio diversification. Revenue follows a project-based B2B model tied to order intake and delivery cycles, resulting in significant quarter-to-quarter volatility."
+  "ko": "원익피앤이는 1999년 설립되어 2차전지 활성화공정(포메이션·사이클러) 장비와 전원공급장치를 주력으로 성장한 배터리 제조장비 전문기업이며, 자회사를 통해 전기차 충전인프라 사업도 병행하고 있다. 2021년에는 2차전지 조립장비 전문기업 엔에스를 자회사로 편입해 사업영역을 조립공정까지 확대했으며, 이는 화성공정 중심이던 기존 사업구조에서 벗어나는 전환점이 됐다. 회사는 이후 각형 배터리 대응이 가능한 테크랜드를 흡수합병하며 기존 화성공정에서 조립공정 영역으로 사업 포트폴리오를 넓혔다. 주요 제품은 Formation·Cycler 장비, 조립공정의 패키징·폴딩 장비, PCR(전원공급장치) 기반 전원장치이며, 국내를 넘어 유럽·미주 등 해외 시장으로 사업을 확대하고 있다. 전원공급장치(PCR) 사업은 과거 자회사 PNE INNOTEC이 담당하다 흡수합병을 통해 사업부로 편입됐고, 전기차 충전인프라 사업은 자회사 PNE SYSTEMS가 맡고 있다. 핵심 고객사는 국내 배터리 3사(LG에너지솔루션, SK온, 삼성SDI)이며 중국 EVE에너지 등 해외 고객으로도 저변을 넓혀왔다. 증권가는 회사의 충방전장비가 특정 배터리 타입에 국한되지 않는다는 점을 다변화된 고객 확보가 가능한 강점으로 평가한다. 2024년에는 유럽 배터리 공급사와 매출액 대비 23.87% 규모의 2차전지 제조장비 공급 계약을 체결하며 유럽 고객 기반도 확보했고, 회사는 조립공정 매출 비중을 기존 10% 수준에서 향후 30% 이상으로 확대하겠다는 목표를 밝힌 바 있다.",
+  "en": "Founded in 1999, Wonik PNE grew as a battery manufacturing equipment specialist centered on formation and cycler equipment for the activation process, along with power supply units, and it also runs an EV charging infrastructure business through a subsidiary. In 2021 the company brought aboard NS, a battery assembly-equipment specialist, expanding into the assembly process and marking a shift away from its formation-process-centric structure. It later absorbed Techland, a maker of prismatic-cell equipment, further broadening its portfolio from formation into assembly-process equipment. Its core products are formation and cycler equipment, assembly-process packaging and folding equipment, and PCR-based power supply units, with operations expanding beyond Korea into Europe and the Americas. The PCR power-supply business, once run by subsidiary PNE Innotec, was folded into the parent through a merger, while EV charging infrastructure is handled by subsidiary PNE Systems. Its core customers are Korea's three major battery makers—LG Energy Solution, SK On, and Samsung SDI—and it has also broadened its base to overseas customers such as China's EVE Energy. Securities analysts view the fact that Wonik PNE's charge-discharge equipment is not tied to a specific battery type as a strength that allows for a diversified customer base. In 2024 the company signed an equipment supply contract with a European battery maker worth 23.87% of annual revenue, securing a European customer base, and it has stated a goal of raising the assembly-process revenue share from around 10% to more than 30%."
  },
  "earnings": {
-  "ko": "2022년 매출 2,888억원(영업이익률 1.4%), 2023년 3,068억원(0.9%)으로 외형은 안정적이었으나 비영업 손실로 순손실이 지속됐다. 2024년에는 2차전지 전방 업계 CAPEX 급감의 직격탄을 받아 매출 2,947억원에 영업손실 487억원(-16.5% 마진), 순손실 637억원을 기록하며 창사 이래 최대 적자를 냈다. 이 여파로 부채비율은 503.9%까지 치솟고 영업현금흐름은 -424억원으로 악화됐다. 2025년에는 매출 3,907억원(+32.5% YoY), 영업이익 14억원(영업이익률 0.4%), 순이익 9.1억원으로 연간 흑자 전환에 성공했다. 분기별로는 2025년 1분기 매출 1,547억원·영업이익 90.4억원으로 강세를 보였고, 이에 힘입어 연간 흑자를 견인했다. 그러나 2025년 2분기(매출 668억원·영업손실 17.4억원)와 4분기(매출 740억원·영업손실 97.8억원)는 적자를 기록해 분기별 편차가 극심했으며, 3분기(매출 952억원·영업이익 38.8억원)만 부분 회복을 보였다. 2026년 1분기에는 매출이 273억원으로 전 분기 대비 63% 감소하고 영업손실 60.8억원이 재확대돼 수주 공백이 현실화됐다. 현금흐름 측면에서 2025년 영업현금흐름은 614억원으로 크게 개선됐고, 유상증자를 통해 자기자본이 2024년말 795억원에서 2025년말 1,024억원으로 확충됐다.",
-  "en": "Revenue was broadly stable at KRW 288.8bn in 2022 (OPM 1.4%) and KRW 306.8bn in 2023 (OPM 0.9%), but non-operating losses kept net income in deficit. In 2024, a sharp contraction in battery-industry capex resulted in revenue of KRW 294.7bn with an operating loss of KRW 48.7bn (OPM -16.5%) and a net loss of KRW 63.7bn—the worst result in the company's history. The debt-to-equity ratio surged to 503.9% and operating cash flow deteriorated to -KRW 42.4bn. The 2025 recovery was substantial: revenue rose ~32.5% YoY to KRW 390.7bn, with operating profit of KRW 1.4bn (OPM 0.4%) and net profit of KRW 0.9bn, marking a return to full-year profitability. The turnaround was powered by a very strong 2025Q1 (revenue KRW 154.7bn, operating profit KRW 9.0bn), though 2025Q2 (revenue KRW 66.8bn, operating loss KRW 1.7bn) and 2025Q4 (revenue KRW 74.0bn, operating loss KRW 9.8bn) swung back into loss territory. A partial recovery in 2025Q3 (revenue KRW 95.2bn, operating profit KRW 3.9bn) provided a partial offset. The most concerning datapoint is 2026Q1: revenue of KRW 27.3bn—down 63% from 2025Q4—and an operating loss of KRW 6.1bn signal a renewed and deep order shortfall. Operating cash flow improved to KRW 61.4bn in 2025, supported partly by an equity offering that expanded shareholders' equity from KRW 79.4bn at end-2024 to KRW 102.4bn at end-2025."
+  "ko": "2025년 연결 매출은 3,906.9억원으로 전년(2,947.1억원) 대비 32.6% 늘었고, 영업이익은 14.0억원, 지배주주순이익은 9.6억원으로 각각 흑자전환에 성공했다. 이는 2024년 영업손실 487.5억원, 지배주주순손실 636.7억원이라는 대규모 적자로부터의 반전이며, 부채비율도 2024년 503.9%에서 2025년 208.8%로 크게 낮아졌다. 다만 분기별로 보면 회복은 매끄럽지 않았다. 2025년 2분기 매출 667.8억원·영업손실 17.4억원에서 3분기에는 매출이 952.0억원으로 늘고 영업이익 38.8억원, 순이익 57.0억원을 기록하며 뚜렷한 흑자 구간을 보였다. 그러나 4분기에는 매출이 740.0억원으로 줄면서 영업손실 97.8억원, 순손실 83.6억원을 다시 기록해 분기 실적의 변동성이 컸다. 2026년에도 이 흐름은 이어져 1분기 매출은 273.0억원으로 급감하며 영업손실 60.8억원을 냈고, 2분기에는 매출이 431.9억원으로 회복됐지만 영업손실 9.4억원, 순손실 14.1억원으로 적자가 이어졌다. 그 결과 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 매출은 약 2,396.7억원이었던 반면 지배주주순이익은 -98.9억원으로 손실 구간에 머물러 있다. 이러한 분기 편차는 수주 기반으로 장비를 제작·납품하는 사업 구조상 매출 인식 시점이 프로젝트별 검수·설치 일정에 따라 좌우되는 특성과 관련이 있는 것으로 풀이되며, 2022~2023년에도 매출은 각각 2,888.4억원, 3,068.4억원 수준을 유지했지만 순이익은 26.9억원, -36.5억원으로 영업이익과 순이익 간 괴리가 나타난 바 있다.",
+  "en": "2025 consolidated revenue came in at KRW 390.7 billion, up 32.6% from KRW 294.7 billion the prior year, with operating income of KRW 1.4 billion and net income attributable to owners of KRW 0.96 billion, both turning positive. This marks a reversal from 2024's large losses of KRW 48.75 billion in operating loss and KRW 63.67 billion in net loss attributable to owners, and the debt ratio also improved sharply, from 503.9% in 2024 to 208.8% in 2025. On a quarterly basis, however, the recovery was uneven. After revenue of KRW 66.78 billion and an operating loss of KRW 1.74 billion in Q2 2025, Q3 revenue rose to KRW 95.20 billion with operating income of KRW 3.88 billion and net income of KRW 5.70 billion, a clearly profitable quarter. But Q4 revenue fell back to KRW 74.00 billion with an operating loss of KRW 9.78 billion and a net loss of KRW 8.36 billion, underscoring significant quarter-to-quarter volatility. The pattern continued into 2026: Q1 revenue dropped sharply to KRW 27.29 billion with an operating loss of KRW 6.08 billion, and Q2 revenue recovered to KRW 43.19 billion but still posted an operating loss of KRW 0.94 billion and a net loss of KRW 1.41 billion. As a result, revenue over the past four quarters (Q3 2025 through Q2 2026) totaled roughly KRW 239.7 billion, while net income attributable to owners over the same period was negative at KRW 9.89 billion. This volatility appears linked to the company's order-based manufacturing model, where revenue recognition depends on project-specific inspection and installation schedules; a similar gap between operating profit and net income also appeared in 2022-2023, when revenue held around KRW 288.8 billion and KRW 306.8 billion respectively but net income came to KRW 2.69 billion and negative KRW 3.65 billion."
  },
  "industry": {
-  "ko": "국내외 2차전지 장비 시장은 2023~2024년부터 이어진 전기차 캐즘으로 투자 사이클이 급격히 수축된 조정 국면에 있다. 완성차 업체들이 EV 생산 계획을 하향 조정하면서 배터리 셀 업체들의 설비 투자가 지연·취소·재편되고 있으며, 2026년 들어 장비 업체들의 공급 계약 해지 사례가 잇따르고 있다. GM·삼성SDI 합작 인디애나 공장의 양산 시점이 2026년에서 2027년으로 연기됐고, SK온·포드의 미국 배터리 합작 구조도 해체됐다. 반면 에너지저장장치(ESS) 수요는 AI 데이터센터의 전력 수요 급증에 힘입어 강세가 두드러지며, 증권가는 ESS 배터리 수요가 2024년 230GWh에서 2026년 359GWh로 확대될 것으로 전망한다. 미국 ESS 시장은 정부 보조금이 2032년까지 유지되어 중장기 성장 가시성이 높다. 배터리 활성화 장비 분야의 국내 경쟁사로는 에이프로·갑진·디에이치 등이 있으며, 중국에서는 항커(杭可) 등이 가격 경쟁력을 앞세워 글로벌 시장 점유율을 확대하고 있다. 중장기적으로는 46파이 원통형 배터리·전고체 배터리 등 차세대 폼팩터 상용화에 따른 신규 장비 수요가 구조적 성장 동인으로 부상할 수 있으며, 배터리 산업의 패러다임이 전기차에서 AI·로봇·ESS 등 전방위로 확장되는 흐름이 장비 수요의 저변을 넓힐 전망이다.",
-  "en": "The global secondary-battery equipment market is in a sharp cyclical contraction driven by the prolonged EV demand slowdown that began in 2023–2024. Automakers' downward revisions to EV production plans have cascaded into delayed, cancelled, or restructured capex by battery cell makers, and in 2026 several Korean equipment suppliers have reported supply-contract cancellations. The Samsung SDI–GM Indiana JV has deferred its production start from 2026 to 2027, and the SK On–Ford US battery partnership was wound down. By contrast, ESS demand is surging on the back of AI data-centre power needs, with industry forecasts projecting battery ESS demand to expand from 230 GWh in 2024 to 359 GWh in 2026. US ESS market growth remains well-supported, as government incentives are retained through 2032. Domestic competitors in the battery activation equipment segment include Apro, Kapjin, and DH, while Chinese player Hangke is expanding globally on price competitiveness. Longer term, next-generation formats such as 46-series cylindrical and all-solid-state batteries should generate fresh equipment demand cycles, and the industry's broadening from pure EV into AI, robotics, and ESS applications widens the addressable market for Formation/Cycler equipment."
+  "ko": "2차전지 장비 업종은 2023~2025년 배터리 셀 3사의 투자 축소 국면에서 수주 감소를 겪었으나, 2026년 하반기부터는 업황 개선 기대가 커지고 있다. 2차전지 업황은 2026년 하반기 유럽 EV 회복과 북미 ESS 수요 확대로 개선될 가능성이 크다는 진단이 신한투자증권에서 나왔다. 특히 미국 ESS 시장은 AI 데이터센터발 전력 수요 증가로 2025년 90GWh에서 2030년 160GWh까지 성장할 전망이며, 북미 ESS는 2026년 하반기 2차전지 업황에서 가장 중요한 성장축으로 지목된다. 다올투자증권도 국내 2차전지 업체들의 전방 수요는 2025년 하반기부터 회복될 것이라 전망하며, 2026년에는 천연가스 가격 상승 흐름 속에 ESS 수요가 폭발적으로 증가하며 경제성도 뚜렷해지는 국면이 될 것이라고 밝혔다. 다만 과거처럼 모든 업체가 함께 반등하는 국면보다는 지역과 제품별로 차별화될 가능성이 크다는 분석도 함께 제기된다. 장비업체 실적은 셀 3사의 설비투자(CAPEX) 사이클에 직접 연동되는 구조여서, 셀사의 증설 시점과 규모가 장비 수주·매출 인식 타이밍을 좌우한다. 원익피앤이는 활성화공정과 조립공정을 함께 갖춘 업체로서 공정 턴키 수주가 가능하다는 점에서 특정 공정에 특화된 업체들과 차별화되는 포지션을 갖고 있다.",
+  "en": "The battery-equipment sector saw order declines during 2023-2025 as Korea's three major cell makers pulled back on investment, but expectations for a cyclical improvement have grown heading into H2 2026. Shinhan Investment assessed that the battery industry cycle is likely to improve in H2 2026, driven by a European EV recovery and expanding North American ESS demand. In particular, the U.S. ESS market is projected to grow from 90GWh in 2025 to 160GWh by 2030, driven by rising power demand from AI data centers, and North American ESS is identified as the most important growth axis for the battery industry cycle in H2 2026. Daol Investment & Securities similarly forecast that downstream demand for Korean battery companies would recover starting in H2 2025, adding that 2026 would see explosive growth in ESS demand alongside improving economics amid rising natural gas prices. That said, the recovery is expected to be more differentiated by region and product rather than a broad rebound across all players as in prior cycles. Equipment makers' results are directly tied to the capex cycles of the three major cell makers, so the timing and scale of cell-maker capacity expansions dictate order flow and revenue recognition timing for equipment suppliers. Wonik PNE, which covers both the activation and assembly processes, occupies a differentiated position versus process-specific specialists in that it can pursue turnkey process orders."
  },
  "outlook": {
-  "ko": "회사 경영진은 '수익성 중심 수주 전략을 강화해 연간 흑자 달성'을 공식화했으며, 실제로 2025년 연간 흑자를 실현했다. 중장기 목표로 2030년까지 수주잔고 1조원 확대를 제시한 바 있다. 삼성SDI와의 장기 신뢰 관계를 기반으로 한 북미 후속 수주 가능성이 열려 있으며, 국내 주요 배터리사와의 배터리 셀 성능 검증(서비스) 신규 수주 협상도 진행 중인 것으로 알려졌다. GM의 파일럿 프로젝트가 성공적으로 완료될 경우 LG에너지솔루션·SK온 등으로 조립공정 장비 납품을 확대할 기회가 열릴 것으로 업계는 기대하고 있다. 유럽과 동남아 시장의 배터리 투자 확대가 예정되어 있어 글로벌 수주 다변화도 기대된다. 그러나 2026년 1분기 매출 급락과 GM·삼성SDI 인디애나 공장 양산의 2027년 연기는 단기 업사이드를 제약하는 요인이다. ESS 중심의 업황 회복 속도와 고객사 CAPEX 재개 여부가 수주 모멘텀의 핵심 변수이며, 회사가 제시한 '수익성 중심 선별 수주' 기조가 분기 실적 변동성을 얼마나 줄일 수 있는지도 중요한 관찰 포인트다.",
-  "en": "Management publicly targeted and achieved full-year profitability through a margin-focused selective-order strategy in 2025, while the medium-term road map calls for an order backlog of KRW 1 trillion by 2030. Follow-on orders from Samsung SDI's North American expansion remain an open opportunity, and the company is reportedly in contract negotiations with major domestic battery makers for battery-cell performance verification services. A successful GM pilot project could open doors to assembly-process equipment supply to LG Energy Solution and SK On. Planned battery investments in Europe and Southeast Asia further support global order diversification. However, the steep revenue drop in 2026Q1 and the deferral of Samsung SDI–GM Indiana production to 2027 are significant near-term headwinds. The pace of ESS-driven industry recovery and customers' capex restart decisions are the most critical variables for Wonik PnE's order trajectory. It also remains to be seen whether the profitability-first ordering discipline will durably reduce the extreme quarterly revenue swings observed throughout 2025."
+  "ko": "회사는 2024년 시점에 2030년까지의 장기 비전을 세우고 중간 기착점인 2025년과 2026년에 수주잔고를 각각 8,000억원, 1조원으로 늘리고 2025년에는 5,000억원 매출 달성이 가능할 것이라는 목표를 제시한 바 있다. 그러나 실제 2025년 연결 매출은 3,906.9억원으로 당시 제시한 5,000억원 목표에는 다소 못 미쳤으며, 2026년 상반기(1~2분기 합산 매출 약 704.8억원) 실적으로 볼 때 연간 목표 달성 경로는 하반기 수주 회복 여부에 좌우될 것으로 보인다. 산업 측면에서는 2026년 하반기 유럽 EV 판매 회복과 북미 ESS 투자 확대가 국내 셀 3사의 신규 라인 투자로 이어질지가 장비 수주의 핵심 관전 포인트로 지목된다. 회사는 조립공정 장비 개발을 통해 화성공정 중심에서 벗어나 제품 포트폴리오를 넓히려는 전략을 이어가고 있으며, 이는 특정 공정에 대한 의존도를 낮추는 방향으로 해석된다. 유럽 고객사와의 계약(2024년 체결)과 같은 해외 다변화 흐름이 이어질지, 그리고 신규 대형 수주 공시가 재개될지가 다음 분기 확인 대상이다. 재무 측면에서는 2025년 부채비율이 208.8%로 낮아졌지만 2026년 1~2분기에도 영업손실이 이어지고 있어, 수익성 회복이 재무구조 개선으로 이어지는 속도를 지속적으로 확인할 필요가 있다.",
+  "en": "As of 2024 the company had laid out a long-term vision through 2030, stating a goal of raising its order backlog to KRW 800 billion and KRW 1 trillion in the intervening years of 2025 and 2026 respectively, with revenue of KRW 500 billion achievable in 2025. Actual 2025 consolidated revenue came in at KRW 390.7 billion, falling somewhat short of that KRW 500 billion target, and given H1 2026 revenue of roughly KRW 70.5 billion (Q1 plus Q2 combined), whether the annual target path is met will hinge on order recovery in H2. On the industry side, whether a European EV sales recovery and expanded North American ESS investment in H2 2026 translate into new production-line investment by Korea's three major cell makers is flagged as the key variable for equipment orders. The company continues a strategy of broadening its product portfolio away from a formation-process focus through assembly-equipment development, which can be read as an effort to reduce dependence on any single process. Whether overseas diversification trends, such as the 2024 European customer contract, continue, and whether new large-scale order disclosures resume, are matters to watch in coming quarters. On the financial side, while the 2025 debt ratio improved to 208.8%, operating losses persisted in Q1 and Q2 2026, so the pace at which profitability recovery feeds through into further balance-sheet improvement warrants continued monitoring."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 회사의 순자산 장부가치에 근접한 구간에 위치해 있어, 2차전지 업황 호황기에 형성됐던 장부가치 대비 높은 프리미엄 구간과 뚜렷이 대조된다. 최근 수년간 이익 사이클을 보면 대규모 적자에서 이익 회복으로 전환했으나 2026년 들어 다시 손실이 이어지고 있어, 수익성이 안정화되기 전까지 밸류에이션 리레이팅의 여건은 제한적이다. 배당은 지급되지 않아 배당수익률이 발생하지 않으며, 이는 수익 환원 관점에서 배당을 지급하는 동종 경쟁사 대비 상대적으로 낮은 매력으로 작용한다. 2025년 중 진행된 유상증자로 주식 수가 크게 증가해 주당 가치가 희석됐으며, 이 점이 연도 간 주당 지표 비교 시 유의미한 영향을 미친다. 수주잔고 확충과 분기 실적의 손익분기 안착 여부가 추가적인 밸류에이션 판단의 선행 조건이 될 것이다.",
-  "en": "The current share price sits near the company's book value per share, a stark contrast to the substantial premium-to-book recorded during past battery-equipment boom cycles. The multi-year earnings trajectory shows a move from deep loss back to profit, but recurring losses in early 2026 mean that a valuation re-rating is contingent on demonstrated earnings stability. No dividend is paid, providing no income support and making the name less appealing on a yield basis relative to dividend-paying peers. A significant share issuance during 2025 materially increased the share count and diluted per-share metrics, warranting caution in year-on-year per-share comparisons. Visibility on order backlog recovery and a sustained return to quarterly operating profit are the practical preconditions for reassessing valuation levels."
+  "ko": "원익피앤이 주가는 순자산 대비 할인된 구간에서 거래되고 있어, 주가순자산비율이 1배를 밑도는 수준이다. 다만 최근 네 개 분기(2025년 3분기~2026년 2분기) 기준으로는 순손실이 이어지고 있어 주가수익비율을 의미 있게 산출하기 어려운 상태이며, 이는 2025년 연간 기준 흑자 전환과는 다른 국면을 보여준다. 회사는 별도의 배당을 지급하지 않고 있어 배당 관련 지표는 비교 대상이 되지 못한다. 과거 이 종목은 업황과 개별 이슈에 따라 주가수익비율이 매우 높은 수준을 오간 밴드를 보인 적이 있어, 순이익 규모가 작거나 적자일 때는 밸류에이션 지표의 해석에 유의가 필요하다. 분기별 실적 변동성과 재무구조 개선 속도를 함께 확인하며 현재 거래되는 수준을 판단할 필요가 있다.",
+  "en": "Wonik PNE shares trade at a discount to net asset value, with the price-to-book ratio sitting below 1x. Over the past four quarters (Q3 2025 through Q2 2026), however, net losses have persisted, making a meaningful price-to-earnings ratio difficult to calculate, a different phase from the profitability seen on a full-year 2025 basis. The company does not currently pay a dividend, so dividend-related metrics are not a useful point of comparison. The stock has historically swung through bands where the price-to-earnings ratio reached very elevated levels depending on the industry cycle and company-specific issues, so valuation metrics warrant careful interpretation when net income is small or negative. Quarterly earnings volatility and the pace of balance-sheet improvement are both worth tracking alongside the current trading level."
  },
  "bull": [
   {
    "title": {
-    "ko": "재무 구조 정상화와 현금흐름 회복",
-    "en": "Balance-Sheet Repair and Cash-Flow Recovery"
+    "ko": "2025년 실적 턴어라운드",
+    "en": "2025 Earnings Turnaround"
    },
    "body": {
-    "ko": "부채비율이 2024년 503.9%에서 2025년 208.8%로 대폭 개선됐고, 영업현금흐름도 -424억원에서 +614억원으로 전환됐다. 유상증자와 수익성 중심 수주 전략이 병행되면서 재무적 여력이 회복됐다. 이는 향후 수주 확대 국면 진입 시 추가 투자를 집행할 수 있는 기반으로 작용하며, 2024년과 같은 재무적 위기 재발 가능성을 낮춘다.",
-    "en": "The debt-to-equity ratio fell dramatically from 503.9% in 2024 to 208.8% in 2025, while operating cash flow swung from -KRW 42.4bn to +KRW 61.4bn. An equity offering combined with margin-focused order selection restored financial headroom. This stronger balance sheet reduces the risk of a repeat of the 2024 financial crisis and positions the company to invest when the battery-capex cycle recovers."
+    "ko": "2025년 매출이 3,906.9억원으로 전년 대비 32.6% 늘고 영업이익·순이익이 모두 흑자로 전환됐다. 부채비율도 503.9%에서 208.8%로 뚜렷하게 개선돼 재무 부담이 완화됐다. 2025년 3분기에는 매출 952.0억원, 영업이익 38.8억원, 순이익 57.0억원을 기록하며 분기 단위로도 뚜렷한 흑자 구간을 보였다.",
+    "en": "2025 revenue rose 32.6% year-over-year to KRW 390.7 billion, with both operating income and net income turning positive. The debt ratio also improved markedly from 503.9% to 208.8%, easing financial pressure. In Q3 2025 alone, revenue reached KRW 95.20 billion with operating income of KRW 3.88 billion and net income of KRW 5.70 billion, showing a clearly profitable quarter."
    }
   },
   {
    "title": {
-    "ko": "고객·제품 포트폴리오 다변화: GM 직수주와 유럽 계약",
-    "en": "Customer and Product Diversification: Direct GM Orders and European Contracts"
+    "ko": "해외 고객·제품 다변화",
+    "en": "Overseas Customer and Product Diversification"
    },
    "body": {
-    "ko": "삼성SDI 주력에서 벗어나 GM 자체 각형 배터리 파일럿 라인에 노칭·스태킹 장비를 수주해 조립공정 분야로 진출했다. 삼성SDI·GM 합작 인디애나 공장에도 Formation 장비 공급업체로 선정됐으며, 유럽 배터리 공급사와도 장비 공급 계약을 체결한 바 있다. 다변화된 수주 구조는 단일 고객 리스크를 낮추고 글로벌 배터리 투자 회복 시 레버리지를 높일 수 있다.",
-    "en": "Moving beyond Samsung SDI dependence, Wonik PnE secured notching and stacking equipment orders for GM's own prismatic battery pilot line, entering the assembly-process equipment segment. It was also chosen as Formation equipment supplier for the Samsung SDI–GM Indiana JV and has signed supply agreements with European battery manufacturers. This broadening order base reduces single-customer concentration risk and improves operating leverage when global battery investments rebound."
+    "ko": "2024년 유럽 배터리 공급사와 매출액 대비 23.87% 규모의 장비 공급 계약을 체결하며 유럽 고객 기반을 확보했다. 중국 EVE에너지 등 해외 고객으로도 저변을 넓혀왔고, 조립공정 매출 비중을 10%에서 30% 이상으로 확대하겠다는 목표를 제시한 바 있다. 특정 배터리 타입에 국한되지 않는 충방전장비 특성은 고객 다변화에 유리한 요인으로 평가된다.",
+    "en": "In 2024 the company secured a European customer base through an equipment supply contract with a European battery maker worth 23.87% of annual revenue. It has also broadened its base to overseas customers such as China's EVE Energy, and has stated a goal of raising the assembly-process revenue share from 10% to more than 30%. The fact that its charge-discharge equipment is not tied to a specific battery type is viewed as favorable for customer diversification."
    }
   },
   {
    "title": {
-    "ko": "ESS·AI 데이터센터 수요로 중장기 전방 시장 확대",
-    "en": "ESS and AI Data-Centre Demand Expanding the Long-Term Addressable Market"
+    "ko": "업황 회복 기대(ESS·유럽 EV)",
+    "en": "Industry Recovery Expectations (ESS, European EV)"
    },
    "body": {
-    "ko": "AI 데이터센터 전력 수요 급증으로 ESS 배터리 수요가 2024년 230GWh에서 2026년 359GWh로 확대될 것으로 전망되며, 이는 배터리 장비 전방 시장의 구조적 성장 동력이다. Formation·Cycler 장비는 EV와 ESS 모두에 적용되어 수요 다변화 수혜를 직접 향유할 수 있는 포지션에 있다. 미국 ESS 보조금이 2032년까지 유지되는 등 정책 가시성도 높아 중장기 수요 전망이 긍정적이다.",
-    "en": "AI data-centre electricity demand is projected to drive ESS battery demand from 230 GWh in 2024 to 359 GWh in 2026, providing a structural growth engine for battery equipment demand. Formation and Cycler systems are agnostic to EV vs. ESS applications, positioning Wonik PnE as a direct beneficiary of demand diversification. US ESS incentives remain intact through 2032, providing strong policy visibility for medium-to-long-term market growth."
+    "ko": "신한투자증권은 2026년 하반기 유럽 EV 회복과 북미 ESS 수요 확대가 2차전지 업황 개선을 이끌 가능성이 크다고 진단했다. 다올투자증권도 데이터센터발 ESS 수요 확대를 근거로 전방 수요 회복을 전망했다. 셀 3사의 투자 재개가 확인되면 장비업체의 수주 회복으로 이어질 여지가 있다.",
+    "en": "Shinhan Investment assessed that a European EV recovery and expanding North American ESS demand in H2 2026 are likely to drive an improvement in the battery industry cycle. Daol Investment & Securities also forecast a downstream demand recovery based on expanding data-center-driven ESS demand. If the three major cell makers resume investment, this could translate into an order recovery for equipment suppliers."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2026년 1분기 수주 공백 현실화: 매출 급락과 적자 재확대",
-    "en": "Order Gap Materialising in 2026Q1: Revenue Collapse and Renewed Operating Losses"
+    "ko": "분기 실적 변동성",
+    "en": "Quarterly Earnings Volatility"
    },
    "body": {
-    "ko": "2026년 1분기 매출은 273억원으로 2025년 1분기 대비 약 82% 감소했고, 영업손실 60.8억원이 재확대됐다. 2026년 들어 국내 장비 업체들의 계약 해지 사례가 잇따르는 등 배터리 셀 업체들의 CAPEX 재편 여파가 장비 수주에 직접 영향을 미치고 있다. 반기 이상의 실적 공백이 지속될 경우 연간 손익 회복 시점이 추가 지연될 수 있다.",
-    "en": "2026Q1 revenue of KRW 27.3bn was roughly 82% below 2025Q1 levels, with a KRW 6.1bn operating loss signalling a significant order gap. Multiple Korean equipment suppliers have reported contract cancellations in 2026 as battery cell makers restructure their capex. If this revenue shortfall persists through additional quarters, the timeline for annual profit recovery could be pushed out materially further."
+    "ko": "2025년 3분기 흑자 이후 4분기(영업손실 97.8억원), 2026년 1분기(영업손실 60.8억원)에 다시 손실을 기록했고 2분기(영업손실 9.4억원)에도 적자가 이어졌다. 최근 네 개 분기 합산 지배주주순이익은 -98.9억원으로 손실 구간에 머물러 있다. 프로젝트 기반 매출인식 구조상 검수·설치 일정에 따라 실적 편차가 크게 나타난다.",
+    "en": "After a profitable Q3 2025, operating losses returned in Q4 2025 (KRW 9.78 billion) and again in Q1 2026 (KRW 6.08 billion), with losses continuing into Q2 2026 (KRW 0.94 billion). Net income attributable to owners over the trailing four quarters totaled negative KRW 9.89 billion. Because revenue recognition is tied to project-specific inspection and installation schedules, results can swing significantly quarter to quarter."
    }
   },
   {
    "title": {
-    "ko": "핵심 프로젝트 지연: GM-삼성SDI 인디애나 공장 양산 2027년으로 연기",
-    "en": "Key Project Delayed: GM–Samsung SDI Indiana JV Production Pushed to 2027"
+    "ko": "목표 대비 낮은 매출 실현",
+    "en": "Revenue Below Company's Own Target"
    },
    "body": {
-    "ko": "원익피앤이가 Formation 장비 공급업체로 선정된 GM·삼성SDI 합작 인디애나 공장의 양산 시점이 2026년에서 2027년으로 연기됐다. 이로 인해 관련 장비 매출 인식 시점이 뒤로 밀리며 단기 수주 공백이 심화될 수 있다. EV 전방 투자 지연이 장기화되거나 합작 구조가 재차 조정될 경우 추가 납품 일정 변경 리스크도 내재돼 있다.",
-    "en": "The Samsung SDI–GM Indiana JV—for which Wonik PnE was selected as Formation equipment supplier—has deferred its production start from 2026 to 2027. This pushes back the associated equipment revenue recognition and deepens the near-term order gap. If EV-related capex delays persist or the JV structure is further restructured, there is residual risk of additional schedule slippage."
+    "ko": "회사는 2024년 2025년 매출 5,000억원 달성이 가능할 것이라고 밝혔으나, 실제 2025년 매출은 3,906.9억원에 그쳤다. 2026년 상반기 매출도 704.8억원 수준으로, 연간 목표 달성 경로를 가늠하기 위해서는 하반기 수주 확인이 필요하다.",
+    "en": "In 2024 the company said revenue of KRW 500 billion would be achievable in 2025, but actual 2025 revenue reached only KRW 390.7 billion. H1 2026 revenue was also around KRW 70.5 billion, so confirming order flow in H2 will be needed to gauge progress toward any annual target."
    }
   },
   {
    "title": {
-    "ko": "극단적 분기 실적 변동성과 잔존 재무 레버리지",
-    "en": "Extreme Quarterly Operating Volatility and Residual Financial Leverage"
+    "ko": "재무 레버리지 부담",
+    "en": "Financial Leverage Burden"
    },
    "body": {
-    "ko": "2025년에도 분기별 영업이익이 +90.4억원에서 -97.8억원으로 극단적 편차를 보였고, 부채비율은 개선됐음에도 여전히 208.8% 수준이어서 업황 재위축 시 재무 부담이 빠르게 증가할 수 있다. 수주 기반 B2B 비즈니스 특성상 대형 수주 취소·지연 시 분기 실적이 급락하는 구조적 변동성이 내재해 있다. 한 번의 업황 악화 사이클에 부채비율이 500%를 초과한 전례를 감안할 때 재무 완충 여력에 대한 지속적인 모니터링이 요구된다.",
-    "en": "Even in the recovery year of 2025, quarterly operating profit swung between +KRW 9.0bn and -KRW 9.8bn, illustrating persistent revenue lumpiness. Although the debt-to-equity ratio has improved, it remains at 208.8%, leaving the balance sheet susceptible to a rapid leverage increase if conditions deteriorate. The fact that a single down-cycle drove the ratio above 500% underscores the need for continued monitoring of financial buffers."
+    "ko": "2024년 대규모 순손실(-636.7억원)로 자본이 1,400.6억원에서 794.7억원으로 급감했고 부채비율은 503.9%까지 치솟았다. 2025년 208.8%로 낮아졌지만 2022~2023년 수준(259.2~274.4%)보다는 여전히 높은 편이다. 추가 손실이 발생할 경우 재무구조가 다시 악화될 소지가 있다.",
+    "en": "A large 2024 net loss (KRW -63.67 billion) caused equity to shrink from KRW 140.06 billion to KRW 79.47 billion, and the debt ratio spiked to 503.9%. It fell to 208.8% in 2025 but remains higher than the 2022-2023 levels of 259.2%-274.4%. Additional losses could again worsen the balance-sheet structure."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "전방 설비 투자 장기 침체",
-    "en": "Prolonged Battery Capex Downturn"
+    "ko": "고객 집중/전방수요 의존",
+    "en": "Customer Concentration / Downstream Demand Dependence"
    },
    "body": {
-    "ko": "전기차 캐즘이 예상보다 오래 지속되거나 완성차 업체들의 EV 전략이 추가로 수정될 경우 배터리 셀 업체들의 CAPEX 재개가 더욱 지연될 수 있다. 이 경우 신규 수주 확보가 어려워지고 현재의 매출 공백이 장기화되는 시나리오가 현실화될 수 있다. ESS로 투자가 전환되더라도 장비 발주부터 매출 인식까지 6~12개월 이상 소요되는 점은 단기 실적 리스크 요인으로 남는다.",
-    "en": "A more prolonged EV demand slump or further cuts to automaker EV strategies could delay battery-cell-maker capex restarts beyond current expectations, extending the existing revenue gap and compressing profitability. Even a pivot toward ESS investment carries a 6–12 month lag from order placement to revenue recognition, limiting near-term relief. Sustained capex restraint by Korean battery cell makers would represent the most severe scenario for order intake."
+    "ko": "매출이 국내 배터리 3사를 비롯한 소수 대형 셀 업체의 설비투자 사이클에 직접 연동돼 있어, 셀사의 증설 지연이나 투자 축소가 발생하면 수주·매출 인식이 지연될 수 있다. 활성화공정은 2차전지 제조의 마지막 단계로 연간 매출이 특정 시기에 집중되는 경향도 있다. 고객 구성이 소수에 집중된 구조는 개별 고객사 이슈에 따른 변동성을 키운다.",
+    "en": "Revenue is directly tied to the capex cycles of a handful of large cell makers, including Korea's three major battery companies, so delays or cutbacks in their expansion plans can push back orders and revenue recognition. The activation process, being the final stage of battery manufacturing, also tends to see annual revenue concentrated in specific periods. A customer base concentrated among a small number of clients amplifies volatility tied to any single customer's issues."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중도 및 계약 해지·취소 리스크",
-    "en": "Customer Concentration and Contract Cancellation Risk"
+    "ko": "정책/통상 환경 변화",
+    "en": "Policy and Trade Environment Changes"
    },
    "body": {
-    "ko": "삼성SDI 의존도가 높은 사업 구조에서 단일 고객의 투자 계획 변경은 실적에 즉각적인 영향을 미친다. 2024년의 대규모 손실도 주요 고객의 CAPEX 급감이 직접적 원인이었다. 수주 기반 B2B 비즈니스에서는 고객사의 프로젝트 재검토·취소 리스크가 상시 존재하며, 2026년 들어 동종 업계에서 이 리스크가 현실화되고 있다.",
-    "en": "The company's heavy reliance on Samsung SDI means any shift in that customer's investment plans immediately and directly impacts results—as demonstrated by the massive 2024 losses caused by a sharp capex cutback. In a project-based B2B model, customers can review, delay, or cancel contracts at relatively short notice, and this risk has been materialising across the Korean equipment industry in 2026."
+    "ko": "미국의 배터리 관련 보조금·통상 규정 변화는 국내 셀사의 북미 투자 속도와 장비 수주에 영향을 줄 수 있다. 유럽의 배출규제나 보조금 정책 변화도 EV 수요 회복 속도에 영향을 미칠 수 있다. 이러한 정책 변수는 장비업체의 해외 매출 확대 속도를 좌우하는 요인이다.",
+    "en": "Changes to U.S. battery-related subsidy and trade rules can affect the pace of North American investment by Korean cell makers and, in turn, equipment orders. Changes to European emissions regulations or subsidy policy can also affect the pace of EV demand recovery. These policy variables are a key factor governing how quickly equipment makers can expand overseas revenue."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화 및 구조적 마진 압박",
-    "en": "Intensifying Competition and Structural Margin Pressure"
+    "ko": "재무구조/손실 이력",
+    "en": "Balance-Sheet Structure and Loss History"
    },
    "body": {
-    "ko": "Formation 장비 시장에서 에이프로·갑진 등 국내 경쟁사뿐 아니라 중국 항커 등 글로벌 업체와의 가격 경쟁이 심화되고 있다. 구조적으로 낮은 영업이익률(2022년 1.4%, 2023년 0.9%, 2025년 0.4%)은 원가 구조의 취약성을 보여준다. 고부가 신제품·신규 서비스나 제품 믹스 개선 없이는 수주 확대가 마진 개선으로 이어지지 않을 수 있다.",
-    "en": "Competition is intensifying in the formation equipment market from domestic rivals such as Apro and Kapjin, as well as global players like China's Hangke. The structurally thin operating margins of 1.4% in 2022, 0.9% in 2023, and 0.4% in 2025 reflect underlying cost-structure vulnerability. Without a meaningful shift toward higher-margin products or services, revenue growth may not translate into commensurate margin improvement."
+    "ko": "2024년 대규모 순손실로 자본이 크게 줄고 부채비율이 500%를 넘어섰던 이력이 있어, 향후 실적이 재차 악화될 경우 재무 안정성에 대한 우려가 다시 부각될 수 있다. 2025년 이후 부채비율이 개선됐지만 2026년 1~2분기 영업손실이 이어지고 있어 개선 추세의 지속성은 아직 확인이 필요하다.",
+    "en": "Following a large 2024 net loss that sharply reduced equity and pushed the debt ratio above 500%, any renewed earnings deterioration could reignite concerns about financial stability. The debt ratio has improved since 2025, but with operating losses continuing in Q1 and Q2 2026, the durability of that improving trend still needs to be confirmed."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 공시: 연속 영업손실 지속 여부와 매출·수주잔고 회복 신호 확인. 2분기에도 적자가 이어질 경우 연간 흑자 달성 가능성이 크게 낮아진다.",
-    "en": "2026Q2 earnings release: assess whether operating losses persist for a second consecutive quarter and whether revenue and order backlog show recovery. Continued losses in Q2 would materially lower full-year profitability prospects."
+    "ko": "3분기(7~9월) 분기보고서 공시를 통해 매출·영업손익이 2025년 3분기와 같은 흑자 구간으로 복귀하는지, 아니면 상반기와 같은 손실이 이어지는지 확인할 시점이다.",
+    "en": "The Q3 (July-September) quarterly report will show whether revenue and operating income return to the profitable pattern seen in Q3 2025 or whether the losses seen in H1 2026 continue."
    }
   },
   {
    "when": {
-    "ko": "2026~2027년 중",
-    "en": "During 2026–2027"
+    "ko": "2026년 하반기 중",
+    "en": "During H2 2026"
    },
    "what": {
-    "ko": "GM-삼성SDI 인디애나 공장 양산 일정 공식 확인 및 Formation 장비 납품 착수 여부: 현재 알려진 가장 큰 단기 매출 이벤트로, 납품 개시 시점이 실적 회복 속도를 좌우한다.",
-    "en": "Official confirmation of the GM–Samsung SDI Indiana JV production timeline and commencement of Formation equipment deliveries: the single largest known near-term revenue event, the start of which will determine the pace of earnings recovery."
+    "ko": "유럽 EV 판매 회복과 북미 ESS 관련 국내 셀 3사의 신규 증설·투자 발표가 이어지는지, 이것이 원익피앤이의 신규 수주 공시로 연결되는지 살펴볼 필요가 있다.",
+    "en": "Whether Korea's three major cell makers continue announcing new capacity expansions tied to European EV recovery and North American ESS demand, and whether this translates into new order disclosures from Wonik PNE, are worth monitoring."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "2H 2026"
+    "ko": "2026년 3~4분기 중(수시)",
+    "en": "Ongoing through Q3-Q4 2026"
    },
    "what": {
-    "ko": "배터리 셀 3사(삼성SDI·LG에너지솔루션·SK온)의 2027년 CAPEX 가이던스 공식화: 투자 재개 규모와 시점이 원익피앤이 수주 모멘텀의 직접적인 선행 지표가 된다.",
-    "en": "Formal 2027 capex guidance from the three major Korean battery cell makers (Samsung SDI, LG Energy Solution, SK On): the scale and timing of capex restarts are direct leading indicators for Wonik PnE's order trajectory."
+    "ko": "DART 공시를 통한 대규모 수주·공급계약 체결 여부를 확인한다. 유럽·미주 고객사 대상 신규 계약이 나오는지가 매출 다변화의 진행 정도를 보여준다.",
+    "en": "Watch DART disclosures for any large-scale order or supply contract announcements. New contracts with European or American customers would signal progress on revenue diversification."
    }
   },
   {
    "when": {
-    "ko": "수시 (DART 공시 모니터링)",
-    "en": "Ongoing (DART Filing Monitor)"
+    "ko": "2027년 3월경(2026년 사업보고서 공시 시점)",
+    "en": "Around March 2027 (2026 annual report filing)"
    },
    "what": {
-    "ko": "신규 수주 공시(매출액 대비 5% 이상 계약 체결): 배터리 셀 성능 검증 서비스·유럽·북미 신규 고객 수주 여부가 실적 회복의 선행 지표 역할을 한다.",
-    "en": "New supply contract filings (≥5% of revenue): battery-cell performance verification service agreements and new European or North American customer orders serve as leading indicators of the revenue recovery path."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 1~3월",
-    "en": "January–March 2027"
-   },
-   "what": {
-    "ko": "2026년 연간 연결 실적 및 사업보고서 공시: 수익성 중심 수주 전략이 연간 손익 개선으로 이어졌는지, 부채비율이 추가 축소됐는지, 그리고 수주잔고 규모를 점검한다.",
-    "en": "Full-year 2026 consolidated results and annual report: assess whether the margin-focused strategy translated into annual profit improvement, whether the debt-to-equity ratio declined further, and the level of the order backlog."
+    "ko": "2026년 연간 실적이 회사가 밝힌 장기 목표에 얼마나 근접했는지, 부채비율 등 재무구조 개선이 지속되는지 확인한다.",
+    "en": "Check how closely 2026 full-year results track the company's stated long-term targets, and whether balance-sheet improvements such as the debt ratio continue."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "원익피앤이는 2차전지 화성(Formation) 공정 핵심 장비를 공급하는 코스닥 장비주로, 삼성SDI를 비롯한 주요 글로벌 배터리 셀 메이커와 공급 관계를 유지하고 있다. 2024년 업황 급락으로 부채비율이 500%를 초과하고 대규모 순손실이 발생했으나, 2025년에는 유상증자와 수익성 중심 수주 전략을 병행해 연간 흑자 전환과 재무 구조 개선을 달성했다. 그러나 2026년 1분기 매출이 273억원으로 급감하고 영업손실이 재확대되면서 배터리 전방 투자 지연이 예상보다 깊고 오래 이어지고 있음을 확인했다. GM 직수주·유럽 배터리사 계약·비파괴 검사 솔루션 등 중장기 사업 기회가 축적되고 있으나, GM-삼성SDI 인디애나 공장 양산 연기 등 단기 실적 가시성은 여전히 낮다. ESS 배터리 시장의 구조적 성장과 배터리 셀 업체들의 CAPEX 재개 시점이 실적 회복의 핵심 방아쇠가 될 것이며, 2026년 하반기 배터리 3사의 투자 계획 발표가 중요한 분기점이 될 전망이다. 수주잔고 회복과 분기 실적의 흑자 안착 여부를 면밀히 모니터링하는 단계적 접근이 적합하다.",
-   "en": "Wonik PnE is a KOSDAQ-listed equipment company supplying critical Formation-stage machinery to major global battery cell makers, with Samsung SDI as its primary customer. The company endured a debt-to-equity ratio exceeding 500% and a record net loss in 2024 as battery capex collapsed, before successfully restoring full-year profitability and repairing its balance sheet in 2025 through an equity offering and margin-focused order selection. However, 2026Q1 results—with revenue of just KRW 27.3bn and a renewed operating loss—confirm that battery-sector capex delays are deeper and more prolonged than anticipated. Medium-to-long-term business opportunities continue to accumulate, including the direct GM order, European battery supply contracts, and non-destructive inspection solutions, but near-term earnings visibility remains low given the postponement of GM–Samsung SDI Indiana production to 2027. The structural growth of the ESS market and the timing of battery cell makers' capex restarts will be the decisive triggers for an earnings recovery, making second-half 2026 capex guidance from Korea's battery trio a key monitoring milestone. A step-by-step approach—tracking order backlog recovery and a return to sustained quarterly operating profit—is the prudent framework for following this name."
+   "ko": "원익피앤이는 2025년 매출 성장과 흑자전환, 부채비율 개선으로 뚜렷한 턴어라운드를 보여줬으나, 2025년 4분기와 2026년 1~2분기에 다시 영업손실을 기록하며 회복의 안정성은 아직 완전히 확인되지 않았다. 회사는 활성화공정 중심에서 조립공정·해외 고객 다변화로 사업구조를 넓히고 있으며, 유럽 배터리 공급사와의 계약 체결 등 실제 성과도 나타났다. 업종 차원에서는 2026년 하반기 유럽 EV 수요 회복과 북미 ESS 시장 확대가 핵심 변수로 지목되고 있어, 국내 셀 3사의 투자 재개 여부가 장비 수주에 직접 영향을 줄 것으로 보인다. 다만 2024년의 대규모 순손실 이력과 여전히 200%를 넘는 부채비율은 재무구조 측면에서 계속 확인이 필요한 요소다. 최근 네 개 분기 기준으로는 순손실이 지속되고 있어 밸류에이션 지표 해석에도 유의가 필요한 구간이다. 다음 분기보고서와 신규 수주 공시가 회복의 방향성을 가늠할 주요 확인 지점이 될 것이다.",
+   "en": "Wonik PNE showed a clear turnaround in 2025 with revenue growth, a return to profit, and an improved debt ratio, but the durability of that recovery is not yet fully confirmed, given the return of operating losses in Q4 2025 and again in Q1-Q2 2026. The company is broadening its business structure beyond the activation process into assembly equipment and overseas customer diversification, with tangible results such as the 2024 European battery-maker supply contract. At the industry level, a European EV demand recovery and North American ESS market expansion in H2 2026 are flagged as key variables, meaning whether Korea's three major cell makers resume investment will directly affect equipment orders. That said, the 2024 history of large net losses and a debt ratio still above 200% are factors that warrant continued monitoring on the balance-sheet side. Net losses over the past four quarters also mean valuation metrics require careful interpretation in the current period. The next quarterly report and any new order disclosures will be key points to watch for gauging the direction of the recovery."
   }
  },
  "sources": [
-  "https://m.thinkpool.com/item/217820",
-  "https://valueline.co.kr/finance/summary/217820",
-  "https://www.investing.com/equities/ns-co-ltd-earnings",
-  "https://www.valueline.co.kr/finance/mri/217820",
-  "https://m.thinkpool.com/stockDiscuss/217820/cont/11863911",
-  "https://www.valueline.co.kr/finance/investment/217820",
-  "https://markets.hankyung.com/stock/217820/chart",
-  "https://aichartmaker.com/stocks/reports/ko:217820",
-  "https://littlebproject.com/stock/217820/290/64572",
-  "https://m.thinkpool.com/compDiscuss/cont/1021813",
-  "https://www.nbntv.kr/news/articleView.html?idxno=332830",
-  "https://www.thelec.kr/news/articleView.html?idxno=43638",
   "https://m.thebell.co.kr/m/newsview.asp?svccode=&newskey=202105111021592840106563",
-  "https://m.thinkpool.com/compDiscuss/cont/1021510",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=51755",
-  "https://alphasquare.co.kr/home/theme-factor?theme-id=83",
-  "https://www.asiae.co.kr/article/2024050914290717851",
-  "https://www.threads.com/@stockhandbook_friends/post/DSAAd8rjpx0/%EC%9B%90%EC%9D%B5%ED%94%BC%EC%95%A4%EC%9D%B4%EB%8A%94-2%EC%B0%A8%EC%A0%84%EC%A7%80-%EC%A0%9C%EC%A1%B0-%EB%B6%84%EC%95%BC%EC%97%90%EC%84%9C-%ED%8F%AC%EB%A9%94%EC%9D%B4%EC%85%98-%EB%B0%8F-%EC%82%AC%EC%9D%B4%ED%81%B4%EB%9F%AC-%EC%9E%A5%EB%B9%84pcr-%EC%86%94%EB%A3%A8%EC%85%98%EC%9D%84-%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C-%EC%9A%B4%EC%98%81%EB%90%98%EB%8A%94-%EA%B8%B0%EC%97%85%EC%B5%9C%EA%B7%BC-%ED%9D%91%EC%9E%90-%EC%A0%84%ED%99%98%EA%B3%BC-%EC%88%98%EC%9D%B5%EC%84%B1-%EC%9C%84%EC%A3%BC%EC%9D%98-%EC%B2%B4%EC%A7%88-%EA%B0%9C%ED%8E%B8%EC%9D%84-"
+  "https://www.shinhangroup.com/kr/archive/insight/extend/detail/32860",
+  "https://news.nate.com/view/20251119n04587",
+  "https://www.nbntv.kr/news/articleView.html?idxno=332830",
+  "https://littlebproject.com/stock/217820/72/8936",
+  "https://littlebproject.com/stock/217820/80/7677",
+  "https://littlebproject.com/stock/217820/290/64572",
+  "https://littlebproject.com/stock/217820/1/6840",
+  "https://www.investing.com/equities/ns-co-ltd-earnings",
+  "https://m.thinkpool.com/compDiscuss/cont/1019071",
+  "https://www.investing.com/equities/ns-co-ltd",
+  "https://www.valueline.co.kr/finance/mri/217820",
+  "https://alphasquare.co.kr/home/stock-summary?code=217820",
+  "https://www.wonikpne.com/kr/company/overview.php",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250318001405&docno=&viewerhost=",
+  "https://www.threads.com/@stockhandbook_friends/post/DSAAd8rjpx0/%EC%9B%90%EC%9D%B5%ED%94%BC%EC%95%A4%EC%9D%B4%EB%8A%94-2%EC%B0%A8%EC%A0%84%EC%A7%80-%EC%A0%9C%EC%A1%B0-%EB%B6%84%EC%95%BC%EC%97%90%EC%84%9C-%ED%8F%AC%EB%A9%94%EC%9D%B4%EC%85%98-%EB%B0%8F-%EC%82%AC%EC%9D%B4%ED%81%B4%EB%9F%AC-%EC%9E%A5%EB%B9%84pcr-%EC%86%94%EB%A3%A8%EC%85%98%EC%9D%84-%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C-%EC%9A%B4%EC%98%81%EB%90%98%EB%8A%94-%EA%B8%B0%EC%97%85%EC%B5%9C%EA%B7%BC-%ED%9D%91%EC%9E%90-%EC%A0%84%ED%99%98%EA%B3%BC-%EC%88%98%EC%9D%B5%EC%84%B1-%EC%9C%84%EC%A3%BC%EC%9D%98-%EC%B2%B4%EC%A7%88-%EA%B0%9C%ED%8E%B8%EC%9D%84-",
+  "https://www.jobkorea.co.kr/Company/46227477/Info",
+  "https://www.catch.co.kr/Comp/AnalysisCompView?ID=3792"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "217820",
  "name": "원익피앤이",
  "name_en": "WONIK PNE CO., LTD.",
@@ -233,9 +223,9 @@
   "2차전지"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-18",
- "reportTs": "2026-06-18 23:40",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 09:16",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 1840,
-   "mcap": 0.0873,
+   "price": 2000,
+   "mcap": 0.0949,
    "shares": 47454559,
    "total_shares": 47454559,
    "wavg_shares": 44423833,
    "per": null,
    "eps": -212,
-   "pbr": 0.8522,
+   "pbr": 0.9264,
    "bps": 2159,
    "roe_ttm": -11.0,
    "ttm_window": "2025Q3~2026Q2",

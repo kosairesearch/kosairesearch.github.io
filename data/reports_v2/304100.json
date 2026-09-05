@@ -1,227 +1,217 @@
 {
  "title": {
-  "ko": "AI 사업 확장 속 수익성 전환은 진행형",
-  "en": "AI Business Expands, Profitability Still a Work in Progress"
+  "ko": "AI 풀스택 확장, 수익화가 남은 과제",
+  "en": "AI Full-Stack Expansion, Profitability Still Unproven"
  },
  "lead": {
-  "ko": "솔트룩스는 원전·금융·공공 부문 AI 전환 수주를 늘리며 매출 성장세를 이어가고 있으나, 분기별 변동성이 큰 가운데 영업손실 기조는 지속되고 있다.",
-  "en": "Saltlux continues to grow revenue by expanding AI-transformation contracts in nuclear power, finance and public sectors, but operating losses persist amid large quarter-to-quarter swings."
+  "ko": "솔트룩스는 자체 LLM '루시아'와 AI 에이전트 '구버'를 축으로 공공·금융·원전 등 버티컬 AI 사업을 확장하고 있지만, 5년 연속 적자와 계절적 실적 편차가 이어지며 수익화 시점이 관전 포인트로 남아 있다.",
+  "en": "Saltlux is expanding its vertical AI business across public, finance, and nuclear sectors around its proprietary LLM LUXIA and AI agent Goover, but five consecutive years of losses and seasonal earnings swings leave the timing of profitability as the key watch point."
  },
  "keypoints": [
   {
-   "ko": "2026년 2분기 연결 매출 115억 원으로 전년 동기 대비 64% 증가했으나 영업손실도 35억 원으로 전년 동기 대비 7% 확대됐다.",
-   "en": "Q2 2026 consolidated revenue rose 64% year-on-year to KRW 11.5bn, while the operating loss also widened 7% to KRW 3.5bn."
+   "ko": "2025년 연결 매출은 416억 원으로 전년 대비 9.3% 감소했고, 영업손실은 66억 원에서 80억 원으로, 순손실은 58억 원에서 120억 원 수준으로 확대됐다.",
+   "en": "2025 consolidated revenue fell 9.3% year over year to KRW 41.6 billion, while the operating loss widened from KRW 6.6 billion to KRW 8.0 billion and the net loss expanded from KRW 5.9 billion to roughly KRW 12.0 billion."
   },
   {
-   "ko": "2025년 4분기 일시적으로 영업이익 38억 원을 내며 흑자 전환했지만 2026년 1분기 다시 영업손실 49억 원으로 돌아서는 등 실적 변동성이 크다.",
-   "en": "The company briefly turned an operating profit of KRW 3.8bn in Q4 2025 before swinging back to a KRW 4.9bn operating loss in Q1 2026, underscoring earnings volatility."
+   "ko": "2025년 4분기는 매출 197억 원, 영업이익 38억 원으로 일시 흑자 전환했으나, 2026년 1분기(-48.6억 원)와 2분기(-35.2억 원)에 다시 영업손실로 돌아섰다.",
+   "en": "Q4 2025 briefly turned profitable with revenue of KRW 19.7 billion and operating profit of KRW 3.8 billion, but Q1 2026 (-KRW 4.86bn) and Q2 2026 (-KRW 3.52bn) reverted to operating losses."
   },
   {
-   "ko": "하나금융, 강원랜드, 원주 'K-AI 시티' 등 원전·금융·공공 부문 대형 AI 전환 프로젝트 수주가 이어지고 있다.",
-   "en": "The firm continues to win large AI-transformation projects across nuclear power, finance and public sectors, including Hana Financial Group, Kangwon Land and the Wonju 'K-AI City' platform."
+   "ko": "2026년 상반기 누적 수주는 188.9억 원, 상반기 말 별도 수주잔고는 약 155억 원으로 하반기 매출 전환이 기대된다는 것이 회사측 설명이다.",
+   "en": "Cumulative H1 2026 orders reached KRW 18.89 billion, with a standalone order backlog of about KRW 15.5 billion at half-year end, which the company says should convert to revenue in H2."
   },
   {
-   "ko": "자회사 다이퀘스트가 152억 원 규모 프리IPO를 마무리하고 2027년 코스닥 상장을 추진 중이나, 모회사와의 중복상장 논란이 변수로 남아 있다.",
-   "en": "Subsidiary DiQuest completed a KRW 15.2bn pre-IPO round and targets a 2027 KOSDAQ listing, though a dual-listing controversy with its parent remains unresolved."
+   "ko": "자회사 다이퀘스트가 프리IPO(152억 원)를 마무리하고 2027년 코스닥 상장을 목표로 준비 중이나, 모자회사 중복상장 논란이 변수로 남아 있다.",
+   "en": "Subsidiary DeepQuest completed a KRW 15.2 billion pre-IPO round and is targeting a 2027 KOSDAQ listing, though parent-subsidiary dual-listing concerns remain a variable."
   },
   {
-   "ko": "베트남 법인을 통한 로보틱스 학습데이터·피지컬 AI 사업이 새로운 해외 성장축으로 부상하고 있다.",
-   "en": "The Vietnam subsidiary's robotics training-data and physical-AI business is emerging as a new overseas growth driver."
+   "ko": "한전원자력연료 51억 원 규모 AI 에이전트 구축 수주 등 원전·금융·공공 버티컬에서 계약이 이어지고 있다.",
+   "en": "Contract wins continue in the nuclear, finance, and public verticals, including a KRW 5.1 billion AI agent build project for KEPCO Nuclear Fuel."
   }
  ],
  "business": {
-  "ko": "솔트룩스는 인공지능(AI)과 빅데이터 솔루션을 기업(B2B) 및 공공기관(B2G)에 공급하는 풀스택 AI 기업이다. 주요 제품은 자체 개발 거대언어모델 '루시아(LUXIA)', 온톨로지 기반 지식그래프, AI 에이전트를 사용자가 직접 설계·운영할 수 있는 '에이전트 스튜디오', 비정형 문서·이미지를 구조화하는 '도큐먼트 스튜디오' 등으로 구성된다. 생성형 AI 서비스 '구버(Goover)'는 출처 기반 AI 검색과 딥리서치, 리포트·슬라이드 자동 생성 기능을 제공하며 회사가 소비자 접점 성장축으로 육성하는 플랫폼으로, 지난해 정식 출시 3개월 만에 글로벌 이용자 100만 명을 돌파했다. 고객군은 원전·금융·공공기관 등 전문 산업 영역에 집중돼 있으며, 최근 하나금융그룹의 업무용 AI 개발, 강원랜드의 생성형 AI 인프라 구축, 한국전력원자력 관련 문서 자동화 사업 등을 수주했다. 자회사 다이퀘스트는 대용량 검색엔진과 자연어처리 기술을 기반으로 AI 컨택센터(AICC)·고객서비스 AI 솔루션을 별도 사업으로 운영하며, 2023년 11월 솔트룩스가 NHN으로부터 지분 94.95%를 256억 원에 인수한 회사다. 다이퀘스트의 2024년 매출은 약 218억 원으로 전년 대비 25% 넘게 늘었고 영업손실 폭도 절반 이하로 줄어드는 등 자체 실적 개선세를 보였다. 해외에서는 베트남 법인(Saltlux Technology, SLT)을 통해 데이터 수집·구축 서비스를 제공하며, 최근에는 글로벌 로보틱스 기업을 대상으로 한 피지컬 AI 학습데이터 사업으로 영역을 넓히고 있다. 회사의 매출은 시스템통합(SI) 및 AI 솔루션 프로젝트 수행 방식으로 발생하며, 프로젝트 진행률에 따라 매출이 인식돼 수주와 매출 인식 시점 사이에 시차가 존재하는 구조다. 경쟁구도는 국내 대형 IT서비스사와 클라우드·LLM 사업자들이 공공·금융 AI 전환(AX) 프로젝트 수주를 두고 각축을 벌이는 시장 환경이다.",
-  "en": "Saltlux is a full-stack AI company supplying artificial intelligence and big-data solutions to enterprise (B2B) and public-sector (B2G) clients. Its core products include the proprietary large language model 'LUXIA,' an ontology-based knowledge graph, 'Agent Studio' for user-designed AI agents, and 'Document Studio' for structuring unstructured documents and images. Its generative AI service 'Goover' offers source-based AI search, deep research, and automated report/slide generation, and the company is nurturing it as a consumer-facing growth platform that surpassed one million global users within three months of its official launch last year. Its client base is concentrated in specialized sectors such as nuclear power, finance and public institutions, having recently won contracts with Hana Financial Group for business AI development, Kangwon Land for generative AI infrastructure, and nuclear-power-related document automation projects. Subsidiary DiQuest operates a separate AI contact center (AICC) and customer-service AI business built on large-scale search engine and NLP technology; Saltlux acquired 94.95% of DiQuest from NHN in November 2023 for KRW 25.6bn. DiQuest's 2024 revenue grew more than 25% year-on-year to about KRW 21.8bn, with its operating loss narrowing to less than half the prior year, showing standalone improvement. Overseas, the Vietnam subsidiary (Saltlux Technology, SLT) provides data collection and construction services and has recently expanded into physical-AI training-data business for global robotics companies. The company's revenue is generated through system-integration (SI) and AI-solution projects recognized by project progress, creating a lag between order intake and revenue recognition. Competitively, large domestic IT service firms and cloud/LLM providers are vying for public and financial-sector AI-transformation (AX) project awards."
+  "ko": "솔트룩스는 2000년 설립돼 2020년 코스닥에 상장한 AI 전문기업으로, 자연어처리·지식그래프·거대언어모델(LLM) 기술을 기반으로 B2B·B2G 인공지능 솔루션을 구축·서비스하는 사업을 영위한다. 핵심 축은 자체 개발 LLM '루시아(LUXIA)' 시리즈로, 2023년 9월 1.0 출시 이후 2.0(2024년 5월), 2.5(2025년 2월), 3.0(2025년 5월)으로 이어지며 비전언어모델(VLM) 기반 텍스트·이미지·표 동시 이해 등 에이전트형 AI로 진화했다. 루시아는 허깅페이스 오픈 LLM 리더보드에서 350억 파라미터 이하 부문 세계 1위를 기록했으며, 등록 모델 3종의 누적 다운로드 수는 45만 회를 넘어섰다고 회사는 밝힌다. 이 기술을 하드웨어 일체형 생성AI 어플라이언스 '루시아 온(LUXIA-ON)', 스마트 AI 에이전트 서비스 '구버(Goover)', 검색·챗봇 스튜디오 제품군과 결합해 국가기록물, 법률, 해양, 공공안전·국방, 금융 등 산업 버티컬에 공급한다. 2023년 NHN으로부터 인수한 자회사 다이퀘스트는 대용량 검색엔진과 자연어처리 기반의 AI 컨택센터(AICC)·전자상거래 검색 사업을 별도로 운영하며 그룹 매출의 상당 부분을 차지한다. 고객 기반은 대부분 공공기관·정부 발주에 의존하는 구조로, 2025년 공개된 계약 중 민간 기업은 카카오뱅크와 이씨에스텔레콤 등 소수에 그쳤다. 경쁩구도에서는 코난테크놀로지, 와이즈넛 등 국내 AI·빅데이터 전문기업과 경쁩하며, 최근에는 삼성SDS·LG CNS 등 대형 IT서비스 기업들도 AI 사업에 본격 진입해 경쟁 강도가 높아지는 추세다.",
+  "en": "Founded in 2000 and listed on KOSDAQ in 2020, Saltlux is an AI specialist that builds and operates B2B and B2G artificial intelligence solutions based on natural language processing, knowledge graphs, and large language model (LLM) technology. Its core asset is the proprietary LLM series LUXIA, which progressed from version 1.0 in September 2023 through 2.0 (May 2024), 2.5 (February 2025), and 3.0 (May 2025), evolving into agentic AI with vision-language capability for simultaneous text, image, and table understanding. The company states that LUXIA ranked first worldwide among sub-35-billion-parameter models on the Hugging Face Open LLM Leaderboard, with cumulative downloads of its three registered models exceeding 450,000. This technology is combined with the hardware-integrated generative AI appliance LUXIA-ON, the smart AI agent service Goover, and search/chatbot studio products to serve verticals including national archives, law, marine affairs, public safety and defense, and finance. Subsidiary DeepQuest, acquired from NHN in 2023, separately operates large-scale search engine and NLP-based AI contact center (AICC) and e-commerce search businesses that account for a substantial share of group revenue. The customer base leans heavily on public-sector and government orders; among contracts disclosed in 2025, private companies were limited to a handful such as KakaoBank and ECS Telecom. In terms of competitive positioning, Saltlux competes with domestic AI and big-data specialists Konan Technology and Wisenut, while large IT service firms such as Samsung SDS and LG CNS have recently entered the AI business in force, intensifying competition."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 416억 원(41,635,622,271원)으로 2024년 459억 원(45,944,417,924원) 대비 소폭 줄었다. 영업손실은 2025년 80억 원(-8,042,487,449원)으로 2024년 66억 원(-6,631,928,392원)보다 확대됐고, 영업이익률은 -19.3%를 기록했다. 지배주주순손실은 2025년 108억 원(-10,849,974,677원)으로 2024년 58억 원(-5,858,192,125원)보다 손실 폭이 커졌다. 2022~2025년 매출은 303억→308억→459억→416억 원으로 등락했지만 매년 영업손실과 순손실이 이어지는 구조가 반복됐다. 분기별로는 2025년 4분기 매출이 197억 원(19,743,806,041원)으로 급증하며 영업이익 38억 원(3,817,933,137원), 지배주주순이익 3.2억 원(316,828,108원)을 기록해 유일하게 흑자로 전환했는데, 이는 공공부문 연말 매출 인식 집중에 따른 계절적 효과로 보인다. 그러나 2026년 1분기 매출은 89억 원(8,942,818,264원)으로 줄고 영업손실 49억 원(-4,863,738,482원), 지배주주순손실 48억 원(-4,757,457,822원)을 기록해 4분기의 흑자 전환이 일회성에 가까웠음을 시사한다. 2026년 2분기 매출은 115억 원(11,526,290,872원)으로 전년 동기 대비 64% 늘었으나 영업손실도 35억 원(-3,519,948,241원)으로 전년 동기 대비 7% 확대됐다. 영업활동현금흐름은 2022~2025년 내내 마이너스를 이어갔으며 2025년은 -33억 원(-3,276,450,388원)이었다. 부채비율은 2025년 44.4%로 2022년 75.2%보다 낮아져 재무 레버리지 측면의 부담은 다소 완화된 모습이다.",
-  "en": "2025 consolidated revenue was KRW 41.6bn (41,635,622,271), slightly down from KRW 45.9bn (45,944,417,924) in 2024. The operating loss widened to KRW 8.0bn (-8,042,487,449) in 2025 from KRW 6.6bn (-6,631,928,392) in 2024, with an operating margin of -19.3%. The net loss attributable to owners widened to KRW 10.8bn (-10,849,974,677) in 2025 from KRW 5.9bn (-5,858,192,125) in 2024. Revenue fluctuated from KRW 30.3bn to 30.8bn to 45.9bn to 41.6bn between 2022 and 2025, but operating and net losses recurred every year. By quarter, Q4 2025 revenue surged to KRW 19.7bn (19,743,806,041), driving an operating profit of KRW 3.8bn (3,817,933,137) and net profit attributable to owners of KRW 0.3bn (316,828,108) — the only profitable quarter — likely reflecting seasonal year-end revenue recognition in the public sector. However, Q1 2026 revenue fell to KRW 8.9bn (8,942,818,264) with an operating loss of KRW 4.9bn (-4,863,738,482) and a net loss of KRW 4.8bn (-4,757,457,822), suggesting the Q4 profit turn was largely a one-off. Q2 2026 revenue rose 64% year-on-year to KRW 11.5bn (11,526,290,872), while the operating loss also widened 7% year-on-year to KRW 3.5bn (-3,519,948,241). Operating cash flow remained negative throughout 2022-2025, at -KRW 3.3bn (-3,276,450,388) in 2025. The debt ratio eased to 44.4% in 2025 from 75.2% in 2022, indicating somewhat reduced balance-sheet leverage."
+  "ko": "2025년 연결 매출은 416억 원으로 전년 459억 원 대비 9.3% 감소했고, 영업손실은 80억 원(영업이익률 -19.3%)으로 전년 66억 원 손실보다 확대됐으며, 지배주주순손실은 108억 원으로 전년 59억 원 대비 크게 늘었다. 2023년(영업손실 93억 원, 매출 308억 원)에서 2024년(매출 459억 원, 다이퀘스트 편입 효과로 49% 증가)으로 외형이 늘었던 흐름이 2025년에는 역전됐다. 분기별로 보면 2025년 2분기(매출 70억 원, 영업손실 33억 원)와 3분기(매출 91억 원, 영업손실 27억 원)의 완만한 손실 흐름이 4분기(매출 197억 원, 영업이익 38억 원, 지배주주순이익 3억 원)에 일시적으로 흑자로 전환됐는데, 이는 공공 프로젝트의 연말 매출 인식 집중에 따른 계절적 요인으로 해석된다. 그러나 2026년 1분기(매출 89억 원, 영업손실 49억 원)와 2분기(매출 115억 원, 영업손실 35억 원)에는 다시 적자로 돌아서며, 4분기 반등이 구조적 수익성 개선이 아닌 계절적 현상이었음을 보여준다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주순손실은 약 99억 원으로, 연간 기준으로도 적자 기조가 지속되고 있다. 영업활동현금흐름은 2022년부터 2025년까지 매년 마이너스를 기록(2025년 -33억 원)하며 실적 부진이 현금흐름에도 그대로 반영되고 있다. 실적 악화의 원인으로는 자회사 다이퀘스트의 매출 감소와 빅데이터 스위트(Big Data Suite) 사업 부진이 지적된다. 재무구조 측면에서는 2025년 말 부채비율이 44.4%로 안정적인 수준을 유지하고 있어, 손익 부진에도 자본 잠식 우려는 상대적으로 제한적이다.",
+  "en": "Saltlux's 2025 consolidated revenue was KRW 41.6 billion, down 9.3% from KRW 45.9 billion in 2024, while the operating loss widened to KRW 8.0 billion (operating margin of -19.3%) from KRW 6.6 billion the prior year, and the net loss attributable to owners expanded sharply to KRW 10.8 billion from KRW 5.9 billion. The growth seen in 2024 (revenue up 49% to KRW 45.9 billion, aided by the DeepQuest consolidation) from 2023 (operating loss of KRW 9.3 billion on revenue of KRW 30.8 billion) reversed in 2025. On a quarterly basis, moderate losses in Q2 2025 (revenue KRW 7.0 billion, operating loss KRW 3.3 billion) and Q3 2025 (revenue KRW 9.1 billion, operating loss KRW 2.7 billion) gave way to a temporary swing into profit in Q4 2025 (revenue KRW 19.7 billion, operating profit KRW 3.8 billion, owners' net profit KRW 0.3 billion), which appears attributable to seasonal concentration of public-sector project revenue recognition at year-end. However, Q1 2026 (revenue KRW 8.9 billion, operating loss KRW 4.9 billion) and Q2 2026 (revenue KRW 11.5 billion, operating loss KRW 3.5 billion) reverted to losses, indicating the Q4 rebound was a seasonal pattern rather than a structural improvement in profitability. Over the trailing four quarters (Q3 2025 through Q2 2026), the cumulative net loss attributable to owners was approximately KRW 9.9 billion, showing the loss trend persisting on an annualized basis. Operating cash flow has been negative every year from 2022 through 2025 (KRW -3.3 billion in 2025), reflecting the earnings weakness directly in cash generation. Analysts have pointed to declining revenue at subsidiary DeepQuest and weakness in the Big Data Suite business as causes of the earnings deterioration. On the balance sheet, the debt ratio remained a manageable 44.4% at the end of 2025, limiting capital erosion concerns despite the persistent losses."
  },
  "industry": {
-  "ko": "AI 에이전트 시장은 2030년 618억 달러 규모로 성장하며 연평균 47.3%의 고성장이 전망된다는 분석이 나온다. 정부는 '2026 AX 원스톱 바우처 지원사업' 등을 통해 기업의 AI 전환(AX)을 지원하고 있으며, 이 사업은 과제당 최대 13억 원, 2년간 총 520억 원 규모로 운영되고 솔트룩스는 해당 사업의 AI 솔루션 공급기업 풀에 선정됐다. 원전·금융·공공 부문에서는 온프레미스 기반 생성형 AI 인프라 구축 수요가 늘면서 관련 프로젝트 수주가 확대되는 흐름이 나타나고 있다. 다만 국내 AI 솔루션 시장은 대형 IT서비스사, 클라우드 사업자, 글로벌 LLM 기업들이 각자의 생태계를 확장하며 경쟁이 치열해지는 국면이다. 공공·금융 프로젝트는 연말 예산 집행과 발주 일정에 따라 매출이 4분기에 집중되는 계절성이 있어, 매출 안정성 확보가 업계 공통 과제로 꼽힌다. 로보틱스·피지컬 AI 학습데이터 시장은 아직 초기 단계이나, 로봇이 실제 환경을 인식하고 판단·행동하도록 학습시키는 핵심 기반으로 꼽히며 글로벌 로봇 제조사들의 데이터 수요가 새로운 성장 축으로 부상하고 있다.",
-  "en": "Some analyses project the AI agent market will grow to USD 61.8bn by 2030, a 47.3% compound annual growth rate. The government supports corporate AI transformation (AX) through programs such as the '2026 AX One-Stop Voucher' initiative, which provides up to KRW 1.3bn per project and a total of KRW 52bn over two years, and Saltlux has been selected to the pool of AI solution suppliers for this program. Demand for on-premise generative AI infrastructure is rising in nuclear power, finance and public sectors, driving an expansion of related project awards. However, the domestic AI solution market is becoming increasingly competitive as large IT service firms, cloud providers and global LLM companies expand their respective ecosystems. Public and financial-sector projects tend to see revenue concentrated in the fourth quarter due to year-end budget execution and ordering schedules, making revenue stability a common industry challenge. The robotics and physical-AI training-data market remains at an early stage, but as a key foundation for training robots to perceive, judge and act in real environments, data demand from global robot manufacturers is emerging as a new growth axis."
+  "ko": "글로벌 AI 에이전트 시장은 2030년 618억 달러 규모로 2025~2030년 연평균 47.3% 성장할 것으로 전망되며, 국내에서도 2026년부터 대규모 AI·데이터·클라우드 예산이 투입될 예정이어서 정책과 산업 수요가 맞물리는 국면이라는 것이 회사측 설명이다. 다만 국내 IT·AI 시장은 올해 민간 투자 위축과 정부 예산 집행 지연 등으로 어려운 환경이 이어졌다고 회사도 인정하고 있다. 경쟁 구도에서는 온기업 대비 격차가 두드러진다. 2025년 코난테크놀로지는 매출 29.1% 성장과 손실 축소를 동시에 달성했고, 와이즈넛은 매출을 전년 수준(-0.5%)으로 유지하며 영업흑자를 지켰다. 이에 비해 솔트룩스는 매출 감소와 손실 확대가 동시에 나타나 업황 변수를 통제해도 실적 부진이 두드러진다는 평가가 나온다. 여기에 삼성SDS, LG CNS 등 대형 IT서비스 기업들이 AI 사업에 본격 진입하면서 중소 AI 전문기업들의 입지가 좁아지는 흐름도 감지된다. 솔트룩스가 KT와 컨소시엄을 구성해 참여했던 '독자 AI 파운데이션 모델(독파모)' 사업에서 탈락한 것도 이러한 경쟁 심화를 보여주는 사례로 언급된다. 다만 원자력·법률·해양·국방 등 특정 버티컬에서는 오랜 레퍼런스를 바탕으로 한 입지를 유지하고 있다는 점은 차별화 요소로 꼽힌다.",
+  "en": "The global AI agent market is projected to reach USD 61.8 billion by 2030, growing at a compound annual rate of 47.3% from 2025 to 2030, and the company notes that large-scale AI, data, and cloud budgets are set to be deployed domestically from 2026, aligning policy and industry demand. At the same time, the company itself has acknowledged that the domestic IT and AI market faced a difficult environment this year amid weaker private investment and delayed government budget execution. On competitive positioning, the gap versus peers stands out: in 2025, Konan Technology achieved 29.1% revenue growth while narrowing losses, and Wisenut kept revenue roughly flat (-0.5%) while maintaining an operating profit. By contrast, Saltlux experienced both declining revenue and widening losses simultaneously, leading to assessments that its underperformance is pronounced even after controlling for industry headwinds. Large IT service firms such as Samsung SDS and LG CNS entering the AI business in earnest are also seen as narrowing the space for smaller AI specialists. Saltlux's elimination from the 'Sovereign AI Foundation Model' project, in which it participated via a consortium with KT, is cited as one example of this intensifying competition. That said, the company retains a differentiated position in specific verticals such as nuclear, law, marine affairs, and defense, built on long-standing reference projects."
  },
  "outlook": {
-  "ko": "이경일 솔트룩스 대표는 선제적인 AI 인프라 투자와 전문 인력 확충을 바탕으로 주요 사업 부문에서 견조한 수주 실적을 냈다며, 하반기 수주잔고의 매출 전환과 베트남 법인 등 글로벌 사업 성과를 바탕으로 매출 성장세를 이어가겠다고 밝혔다. 회사는 2026년 상반기 누적 수주 189억 원을 기록했으며, 원주 'K-AI 시티' 플랫폼 구축, 강원랜드 생성형 AI 인프라 구축(사업 기간 11개월), 하나금융그룹 업무용 AI 개발 등 프로젝트를 통해 하반기 매출 반영을 준비하고 있다. 자회사 다이퀘스트는 152억 원 규모 프리IPO를 마무리하고 미래에셋증권을 주관사로 선정, 기술특례 상장을 포함한 트랙을 검토하며 2027년 코스닥 상장을 목표로 하고 있다. 생성형 AI 서비스 '구버'는 연내 100만 개 AI 에이전트 생성을 전망하며, 장기적으로는 1000만 명을 위한 1000만 개 에이전트 서비스 비전을 제시했다. 해외 사업에서는 베트남 법인을 통한 로보틱스 데이터 및 피지컬 AI 사업을 신규 성장동력으로 육성한다는 계획이다. 다만 다이퀘스트의 IPO 일정은 모회사와의 중복상장 이슈에 대한 규제당국의 가이드라인 발표 및 거래소 심사 결과에 따라 조정될 수 있다.",
-  "en": "Saltlux CEO Lee Kyung-il stated that the company achieved solid order intake across key business segments on the back of proactive AI infrastructure investment and expanded specialized personnel, and said it would sustain revenue growth by converting its order backlog into revenue in the second half and through global business performance including its Vietnam subsidiary. The company recorded cumulative orders of KRW 18.9bn in H1 2026 and is preparing second-half revenue recognition through projects such as the Wonju 'K-AI City' platform, an 11-month generative AI infrastructure build for Kangwon Land, and business AI development for Hana Financial Group. Subsidiary DiQuest completed a KRW 15.2bn pre-IPO round, selected Mirae Asset Securities as lead underwriter, and is reviewing listing tracks including a technology special listing with a target 2027 KOSDAQ IPO. Its generative AI service 'Goover' projects one million AI agents to be created by year-end, with a longer-term vision of ten million agents for ten million users. Overseas, the company plans to cultivate robotics data and physical-AI business through its Vietnam subsidiary as a new growth driver. However, DiQuest's IPO timeline could be adjusted depending on regulatory guidelines on dual listing with its parent and the outcome of exchange review."
+  "ko": "경영진은 2026년을 '재도약의 원년'으로 규정하며, 이미 확보한 500억~600억 원 규모의 영업 파이프라인을 바탕으로 본격적인 성장을 자신한다고 밝혔다. 2026년 상반기에는 누적 수주 188.9억 원을 기록했고, 상반기 말 별도 수주잔고 약 155억 원이 하반기 매출로 순차 전환될 것으로 회사는 기대하고 있다. 신규 계약으로는 한전원자력연료의 51억 원 규모 전사 AI 구축 사업이 있으며, 이는 생성형 AI를 넘어 내부 문서·업무 절차를 이해하는 AI 에이전트 환경 구축을 목표로 한다. 해외 사업에서는 베트남 현지법인 솔트룩스테크놀로지(SLT)의 2026년 상반기 매출이 87만 6천 달러로 전년 동기 40만 7천 달러 대비 115% 늘었고, 북미 시장에서도 계약 사례가 이어지고 있다. 자회사 다이퀘스트는 2026년 2월 152억 원 규모 프리IPO를 마무리하고 미래에셋증권을 주관사로 2027년 코스닥 상장을 추진 중이며, 2024년 매출은 218억 원(전년 대비 25%↑), 영업손실은 약 7억 원으로 전년 대비 절반 이하로 줄어드는 등 실적 개선 흐름을 보였다. 다만 모자회사 중복상장 우려와 자생적 흑자 전환 여부가 상장 심사의 관건으로 지목된다. 제품 로드맵 측면에서는 루시아 3.0의 산업 적용 확대와 5월 개최된 SAC 컨퍼런스를 통한 파트너십 확대가 이어지고 있다.",
+  "en": "Management has designated 2026 as a 'year of renewed growth,' stating confidence in full-fledged growth based on an already secured business pipeline of KRW 50-60 billion. In H1 2026, cumulative orders reached KRW 18.89 billion, and the company expects the standalone order backlog of about KRW 15.5 billion at half-year end to convert into revenue progressively in H2. New contracts include a KRW 5.1 billion enterprise-wide AI build project for KEPCO Nuclear Fuel, aimed at building an AI agent environment that goes beyond generative AI to understand internal documents and work processes. In overseas business, Vietnam subsidiary Saltlux Technology (SLT) posted H1 2026 revenue of USD 876,000, up 115% from USD 407,000 a year earlier, and contract wins have continued in the North American market as well. Subsidiary DeepQuest completed a KRW 15.2 billion pre-IPO round in February 2026 and is pursuing a 2027 KOSDAQ listing with Mirae Asset Securities as lead underwriter; its 2024 revenue was KRW 21.8 billion (up 25% year over year) with an operating loss of about KRW 0.7 billion, less than half the prior year's loss, showing an improving trend. However, concerns over parent-subsidiary dual listing and whether DeepQuest can achieve self-sustained profitability are flagged as key issues for the listing review. On the product roadmap, expanded industrial application of LUXIA 3.0 and partnership expansion through the May Saltlux AI Conference (SAC) continue."
  },
  "valuation_comment": {
-  "ko": "솔트룩스는 최근 네 개 분기 합산 기준으로도 주당순손실(-781원)을 기록하고 있어 통상적인 주가수익비율 산출이 어려운 상태다. 주당순자산가치(BPS)는 4,981원으로, 현재 거래되는 주가 수준은 이 장부가치를 상당폭 웃도는 구간에서 형성돼 있어 순자산 대비 프리미엄이 반영된 모습이다. 회사는 배당금을 지급하지 않고 있어 배당수익률 관점의 요소는 존재하지 않는다. 2025년 4분기 일시적 흑자 전환 이후 2026년 들어 다시 적자로 돌아선 실적 흐름은 시장이 주가순자산비율을 어떻게 평가할지에 영향을 줄 수 있는 변수로 꼽힌다. 향후 이익 회복 시점과 자회사 다이퀘스트의 상장 추진 결과가 그룹 전체에 대한 시장의 가치평가에 영향을 미칠 것으로 보인다.",
-  "en": "Saltlux has posted a net loss per share (-KRW 781) even on a trailing four-quarter basis, making a conventional price-to-earnings calculation difficult. Its book value per share (BPS) stands at KRW 4,981, and the current trading level sits well above this book value, reflecting a premium to net asset value. The company pays no dividend, so there is no dividend-yield component to consider. The pattern of a brief profit turn in Q4 2025 followed by a return to losses in 2026 is a variable that could influence how the market assesses the price-to-book ratio going forward. The timing of any earnings recovery and the outcome of subsidiary DiQuest's listing effort are likely to affect how the market values the group as a whole."
+  "ko": "솔트룩스는 지속된 순손실로 주가수익비율(PER) 산정이 되지 않는 구간에 머물러 있어, 통상적인 이익 기반 밸류에이션 잣대를 적용하기 어렵다. 주가순자산비율(PBR)은 순자산 대비 상당한 프리미엄이 반영된 수준에서 거래되고 있는데, 이는 적자가 지속되는 상황에서도 AI 테마에 대한 시장의 기대가 일부 반영된 결과로 해석할 수 있다. 배당은 최근 수년간 지급되지 않아 배당 매력보다는 성장성과 사업 재편(다이퀘스트 상장 등) 스토리에 주가 논리가 집중되는 구조다. 다년간의 실적 흐름을 보면 2022~2025년 내내 적자에서 벗어나지 못했고, 2025년 4분기의 일시적 흑자 전환 이후 2026년 1~2분기에 다시 적자로 돌아선 점은 이익 회복이 아직 안정적으로 자리잡지 못했음을 보여준다. 밸류에이션을 판단할 때는 이러한 이익 불안정성과 자회사 상장 등 구조적 변수를 함께 고려할 필요가 있다.",
+  "en": "With persistent net losses, Saltlux's price-to-earnings ratio remains uncalculable, making conventional earnings-based valuation metrics difficult to apply. The price-to-book ratio trades at a level reflecting a substantial premium to net asset value, which can be interpreted as the market pricing in some expectation around the AI theme even amid ongoing losses. No dividends have been paid in recent years, so the valuation narrative centers more on growth prospects and corporate restructuring stories such as the DeepQuest listing rather than dividend appeal. Looking at the multi-year earnings trend, the company remained in losses throughout 2022-2025, and the reversion to losses in Q1-Q2 2026 after the temporary swing to profit in Q4 2025 shows that earnings recovery has not yet become stable. Assessing valuation requires weighing this earnings volatility alongside structural variables such as the subsidiary listing."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI 전환(AX) 수주 확대",
-    "en": "Expanding AI-Transformation Orders"
+    "ko": "버티컬 특화 LLM 기술력",
+    "en": "Vertical-Specialized LLM Technology"
    },
    "body": {
-    "ko": "하나금융그룹, 강원랜드, 원주 'K-AI 시티', 한국전력원자력 등 원전·금융·공공 부문 대형 프로젝트 수주가 이어지고 있다. 2026년 상반기 누적 수주는 189억 원을 기록했으며, 회사는 하반기 수주잔고의 매출 전환을 통해 성장세를 이어가겠다고 밝혔다. 정부의 AX 원스톱 바우처 사업 공급기업 풀 선정도 추가 수주 기반이 될 수 있다.",
-    "en": "The company continues to win large projects across nuclear power, finance and public sectors, including Hana Financial Group, Kangwon Land, Wonju's 'K-AI City' and Korea Hydro & Nuclear Power. Cumulative orders reached KRW 18.9bn in H1 2026, and the company said it would sustain growth by converting its backlog into revenue in the second half. Selection into the government's AX One-Stop Voucher supplier pool could serve as an additional order base."
+    "ko": "자체 LLM '루시아'는 허깅페이스 오픈 LLM 리더보드 350억 파라미터 이하 부문 세계 1위 기록을 보유하고 있으며, 루시아·루시아온·구버 엔터프라이즈가 산업통상부·KOTRA의 세계일류상품으로 선정됐다. 국가기록물·법률·해양·국방 등 특정 산업 버티컬에서 오랜 레퍼런스를 축적해 진입장벽을 형성하고 있다. 최근에는 원자력 산업의 소버린 AI 구축(한전원자력연료)까지 영역을 넓히고 있다.",
+    "en": "Saltlux's proprietary LLM LUXIA has ranked first worldwide among sub-35-billion-parameter models on the Hugging Face Open LLM Leaderboard, and LUXIA, LUXIA-ON, and Goover Enterprise were selected as World Class products by the Ministry of Trade, Industry and Energy and KOTRA. The company has built entry barriers through long-accumulated references in specific verticals such as national archives, law, marine affairs, and defense. It has recently expanded into sovereign AI builds for the nuclear industry, including the KEPCO Nuclear Fuel project."
    }
   },
   {
    "title": {
-    "ko": "해외 로보틱스·피지컬 AI 신사업",
-    "en": "Overseas Robotics and Physical-AI New Business"
+    "ko": "수주·해외 확장 모멘텀",
+    "en": "Order and Overseas Expansion Momentum"
    },
    "body": {
-    "ko": "베트남 법인 SLT가 글로벌 로보틱스 기업 대상 데이터 수집 서비스에서 매출을 확보하며 SLT 전체 매출의 상당 부분을 차지하는 것으로 나타났다. 로보틱스 데이터는 로봇의 환경 인식·판단·행동 학습에 필요한 핵심 기반으로, 회사는 이 영역으로 사업 기반을 넓힐 계획이다. 국내 SI·공공 매출 의존도를 낮출 수 있는 해외 성장축으로 주목된다.",
-    "en": "The Vietnam subsidiary SLT has secured revenue from data-collection services for global robotics companies, which reportedly accounts for a substantial share of SLT's total revenue. Robotics data is a key foundation for training robots to perceive, judge and act, and the company plans to expand into this area. This is viewed as an overseas growth axis that could reduce reliance on domestic SI and public-sector revenue."
+    "ko": "2026년 상반기 누적 수주가 188.9억 원을 기록했고, 상반기 말 약 155억 원의 수주잔고가 하반기 매출로 전환될 여지가 있다. 베트남 법인 매출이 전년 동기 대비 115% 늘었고 북미 시장 계약도 이어지고 있어 해외 사업 다각화가 진행 중이다. 경영진은 이미 확보한 500억~600억 원 규모 파이프라인을 근거로 2026년 성장을 자신하고 있다.",
+    "en": "Cumulative H1 2026 orders reached KRW 18.89 billion, and the roughly KRW 15.5 billion backlog at half-year end has room to convert into H2 revenue. Vietnam subsidiary revenue rose 115% year over year, and North American contracts have continued, indicating ongoing overseas diversification. Management has expressed confidence in 2026 growth based on an already secured pipeline of KRW 50-60 billion."
    }
   },
   {
    "title": {
-    "ko": "다이퀘스트 프리IPO 성공 및 자체 실적 개선",
-    "en": "DiQuest's Successful Pre-IPO and Standalone Improvement"
+    "ko": "안정적 재무구조와 자회사 상장 카드",
+    "en": "Stable Balance Sheet and Subsidiary Listing Option"
    },
    "body": {
-    "ko": "자회사 다이퀘스트는 152억 원 규모 프리IPO를 마무리하고 미래에셋증권을 주관사로 2027년 코스닥 상장을 추진하고 있다. 다이퀘스트의 2024년 매출은 전년 대비 25% 넘게 늘었고 영업손실 폭도 절반 이하로 줄어드는 등 자체 수익성이 개선되는 흐름을 보였다. 상장이 성사될 경우 그룹 차원의 자본 조달 및 포트폴리오 고도화에 기여할 수 있다.",
-    "en": "Subsidiary DiQuest completed a KRW 15.2bn pre-IPO round and is pursuing a 2027 KOSDAQ listing with Mirae Asset Securities as lead underwriter. DiQuest's 2024 revenue grew more than 25% year-on-year while its operating loss narrowed to less than half the prior year, showing improving standalone profitability. A successful listing could contribute to group-level capital raising and portfolio enhancement."
+    "ko": "2025년 말 부채비율은 44.4%로 지속된 손실에도 자본 잠식 우려가 제한적이며, 현금 및 금융상품을 바탕으로 재무 안정성을 확보하고 있다는 것이 회사측 설명이다. 자회사 다이퀘스트는 152억 원 프리IPO를 마무리하고 2027년 코스닥 상장을 추진하며, 2024년 매출 25% 성장과 손실 축소 등 개선 흐름을 보이고 있어 상장이 성공할 경우 그룹 차원의 가치 재평가 계기가 될 수 있다.",
+    "en": "The debt ratio stood at a manageable 44.4% at the end of 2025 despite persistent losses, limiting capital erosion concerns, and the company states it has secured financial stability through cash and financial instruments. Subsidiary DeepQuest completed a KRW 15.2 billion pre-IPO round and is pursuing a 2027 KOSDAQ listing, showing an improving trend with 25% revenue growth and narrowing losses in 2024; a successful listing could serve as a catalyst for group-level value reassessment."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4개년 연속 영업손실·순손실",
-    "en": "Four Consecutive Years of Operating and Net Losses"
+    "ko": "5년 연속 적자와 실적 변동성",
+    "en": "Five Straight Years of Losses and Earnings Volatility"
    },
    "body": {
-    "ko": "2022년부터 2025년까지 매년 영업손실과 순손실이 이어지고 있으며, 2025년 영업이익률은 -19.3%를 기록했다. 2026년 상반기에도 1분기 영업손실 49억 원, 2분기 영업손실 35억 원으로 적자 기조가 지속되고 있다. 매출 성장에도 불구하고 비용 구조 개선이 뚜렷하게 확인되지 않는 점이 부담 요인이다.",
-    "en": "Operating and net losses have continued every year from 2022 through 2025, with the 2025 operating margin at -19.3%. Losses persisted into H1 2026, with an operating loss of KRW 4.9bn in Q1 and KRW 3.5bn in Q2. Despite revenue growth, a clear improvement in the cost structure has not been confirmed, which remains a burden."
+    "ko": "2021년부터 2025년까지 5년 연속 적자를 이어오며 누적 결손금이 약 401억 원까지 쌓였다. 2025년 4분기 일시 흑자 전환은 공공 프로젝트의 연말 매출 인식 집중에 따른 계절적 요인으로 보이며, 2026년 1~2분기 다시 적자로 돌아서 구조적 수익성 개선으로 이어지지 못하고 있다. 영업활동현금흐름도 2022년부터 매년 마이너스를 기록하고 있다.",
+    "en": "Saltlux has posted losses for five consecutive years from 2021 through 2025, with accumulated deficits reaching about KRW 40.1 billion. The temporary swing to profit in Q4 2025 appears to reflect seasonal concentration of year-end public-sector revenue recognition, and the reversion to losses in Q1-Q2 2026 suggests this has not translated into structural profitability improvement. Operating cash flow has also been negative every year since 2022."
    }
   },
   {
    "title": {
-    "ko": "분기 실적의 높은 변동성과 계절성",
-    "en": "High Quarterly Volatility and Seasonality"
+    "ko": "경쟁 심화와 공공 의존 구조",
+    "en": "Intensifying Competition and Public-Sector Dependence"
    },
    "body": {
-    "ko": "2025년 4분기에만 일시적으로 영업흑자를 기록했을 뿐, 나머지 분기는 모두 적자였다. 이는 공공부문 연말 매출 인식 집중에 따른 계절적 효과로 해석되며, 2026년 1분기 실적이 다시 대규모 적자로 돌아선 점이 이를 뒷받침한다. 매출 인식 시점이 프로젝트 진행률에 좌우되는 구조상 분기별 실적 예측 가능성이 낮다.",
-    "en": "Only Q4 2025 saw a temporary operating profit, while every other quarter posted losses. This is interpreted as a seasonal effect from year-end revenue recognition concentration in the public sector, supported by the return to large losses in Q1 2026. Because revenue recognition depends on project progress, quarterly earnings predictability remains low."
+    "ko": "2025년 코난테크놀로지(매출 +29.1%, 손실 축소)와 와이즈넛(매출 유지, 영업흑자)이 선방한 반면 솔트룩스는 매출 감소와 손실 확대가 동시에 나타나며 업황 변수를 통제해도 부진이 두드러진다는 평가를 받는다. 삼성SDS·LG CNS 등 대형 IT서비스 기업의 AI 사업 진입으로 경쟁이 심화됐고, KT 컨소시엄으로 참여한 독자 AI 파운데이션 모델 사업에서도 탈락했다. 매출 구조가 공공 발주에 크게 의존하다 보니 정부 예산 집행 지연에 따른 변동성에 노출돼 있다.",
+    "en": "While Konan Technology (+29.1% revenue, narrower losses) and Wisenut (flat revenue, operating profit) fared relatively well in 2025, Saltlux experienced both declining revenue and widening losses simultaneously, drawing assessments that its underperformance stands out even after controlling for industry conditions. Competition has intensified as large IT service firms such as Samsung SDS and LG CNS entered the AI business, and Saltlux was also eliminated from the Sovereign AI Foundation Model project it pursued via a KT-led consortium. Because revenue is heavily dependent on public-sector orders, the company is exposed to volatility from delays in government budget execution."
    }
   },
   {
    "title": {
-    "ko": "다이퀘스트 중복상장 논란",
-    "en": "DiQuest Dual-Listing Controversy"
+    "ko": "신규사업 수익화 지연",
+    "en": "Delayed Monetization of New Businesses"
    },
    "body": {
-    "ko": "다이퀘스트는 솔트룩스가 지분 90% 이상을 보유한 자회사로, 모회사가 이미 코스닥 상장사인 상황에서 별도 상장을 추진해 중복상장 논란이 제기된 상태다. 금융당국이 중복상장 관련 가이드라인을 준비 중이며, 결과에 따라 상장 계획 자체가 재점검될 수 있다. 모회사 주주 입장에서는 가치 훼손 우려가 존재한다는 지적도 나온다.",
-    "en": "DiQuest, in which Saltlux holds over 90% equity, is pursuing a separate listing while its parent is already listed on KOSDAQ, raising dual-listing concerns. Financial regulators are preparing guidelines on dual listings, and the outcome could require a review of the listing plan itself. Concerns have also been raised about potential value dilution for parent-company shareholders."
+    "ko": "AI 에이전트 서비스 '구버'는 최근 3년간 누적 매출이 약 4억 원에 그친 반면 누적 손실은 71억 원까지 쌓여, 신규 사업 투자가 아직 수익으로 연결되지 못하고 있다. 자회사 다이퀘스트의 매출 감소와 빅데이터 스위트 사업 부진도 2025년 실적 악화의 원인으로 지목됐다. 수익성이 낮은 신규 사업의 지속적인 투자 부담이 전사 손익 개선을 지연시키고 있다는 지적이 나온다.",
+    "en": "The AI agent service Goover generated only about KRW 400 million in cumulative revenue over the past three years while accumulating losses of KRW 7.1 billion, showing that new business investment has yet to translate into profit. Declining revenue at subsidiary DeepQuest and weakness in the Big Data Suite business were also cited as causes of the 2025 earnings deterioration. Analysts note that the ongoing investment burden from low-profitability new businesses is delaying company-wide earnings improvement."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "수익성·현금흐름",
-    "en": "Profitability and Cash Flow"
+    "ko": "이익·현금흐름 리스크",
+    "en": "Earnings and Cash Flow Risk"
    },
    "body": {
-    "ko": "영업활동현금흐름은 2022년부터 2025년까지 매년 마이너스를 기록했으며, 2025년은 -33억 원이었다. 지속적인 영업손실과 현금흐름 마이너스가 이어질 경우 외부 자금조달 필요성이 커질 수 있다.",
-    "en": "Operating cash flow has been negative every year from 2022 to 2025, at -KRW 3.3bn in 2025. Continued operating losses and negative cash flow could increase the need for external financing."
+    "ko": "영업손실과 영업활동현금흐름 음수가 다년간 반복되고 있어, 향후에도 외부 자금조달(유상증자, 전환사채·신주인수권부사채 발행 등)에 의존할 가능성이 있다. 2023년 유상증자로 191억 원을 조달했고, 발행된 CB·BW의 전환·행사를 통해 부채가 자본으로 전환되며 재무 안정을 유지해온 이력이 있다. 이 같은 자본 조달 구조가 반복될 경우 기존 주주의 지분 희석 가능성이 상존한다.",
+    "en": "Operating losses and negative operating cash flow have recurred over multiple years, raising the possibility of continued reliance on external financing such as rights offerings or convertible/warrant bond issuance. Saltlux raised KRW 19.1 billion via a rights offering in 2023 and has maintained financial stability through conversion and exercise of issued convertible bonds and bonds with warrants into equity. If this capital-raising pattern recurs, there is a persistent possibility of dilution for existing shareholders."
    }
   },
   {
    "cat": {
-    "ko": "정책·규제",
-    "en": "Policy and Regulation"
+    "ko": "자회사 중복상장 리스크",
+    "en": "Subsidiary Dual-Listing Risk"
    },
    "body": {
-    "ko": "매출의 상당 부분이 공공·금융 부문 발주에 연계돼 있어 정부 예산 정책 변화의 영향을 받을 수 있다. 다이퀘스트 상장과 관련해서는 중복상장 가이드라인이라는 규제 불확실성이 존재한다.",
-    "en": "A significant portion of revenue is tied to public and financial-sector orders, making the company sensitive to changes in government budget policy. Regulatory uncertainty also exists around dual-listing guidelines relevant to DiQuest's IPO."
+    "ko": "자회사 다이퀘스트의 코스닥 상장 추진은 모회사가 이미 상장된 상태에서 이루어지는 만큼 기업가치 중복 계산에 따른 모회사 주주가치 훼손 논란이 제기될 수 있다. 금융당국의 중복상장 관련 가이드라인 내용과 시행 시점에 따라 상장 일정과 방식이 재조정될 가능성이 있다. 다이퀘스트의 자생적 흑자 전환 여부와 캡티브 마켓(그룹 내부 매출) 의존도 완화도 상장 예비심사의 주요 변수로 꼽힌다.",
+    "en": "Because subsidiary DeepQuest's KOSDAQ listing push is occurring while the parent is already listed, controversy over double-counting of corporate value and potential erosion of parent shareholder value could arise. The listing schedule and method may be readjusted depending on the content and timing of financial regulators' dual-listing guidelines. Whether DeepQuest can achieve self-sustained profitability and reduce dependence on captive-market (intra-group) revenue is also cited as a key variable in the listing preliminary review."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화",
-    "en": "Intensifying Competition"
+    "ko": "공공 IT 예산·정책 의존 리스크",
+    "en": "Public IT Budget and Policy Dependence Risk"
    },
    "body": {
-    "ko": "대형 IT서비스사, 클라우드 사업자, 글로벌 LLM 기업들이 AI 전환(AX) 프로젝트 수주 경쟁에 뛰어들고 있어 가격 및 기술 경쟁 압력이 커질 수 있다. 경쟁 심화는 수익성 개선 속도에 영향을 줄 수 있는 요인이다.",
-    "en": "Large IT service firms, cloud providers and global LLM companies are competing for AI-transformation (AX) project awards, potentially intensifying pricing and technology competition. This could affect the pace of any profitability improvement."
+    "ko": "매출 구조가 공공기관·정부 발주에 크게 의존하고 있어, 정부 예산 집행 지연이나 정책 방향 변화 시 매출과 수주가 직접적인 영향을 받을 수 있다. 2025년 실적 악화의 주요 배경으로 공공 IT 예산 축소가 지적된 바 있다. 아울러 정부 주도 AI 파운데이션 모델 사업 등 대형 국책 사업에서 탈락할 경우 성장 스토리에 차질이 생길 수 있다.",
+    "en": "Because the revenue structure is heavily dependent on public-sector and government orders, revenue and order intake can be directly affected by delays in government budget execution or shifts in policy direction. A reduction in public IT budgets has been cited as a key background factor behind the 2025 earnings deterioration. In addition, elimination from large state-led projects such as government-driven AI foundation model programs could disrupt the growth narrative."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월경(3분기 실적 발표)",
-    "en": "Around November 2026 (Q3 earnings release)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "하반기 수주잔고의 매출 전환 여부와 영업손실 축소 흐름이 지속되는지 확인이 필요하다.",
-    "en": "Check whether the H2 order backlog converts into revenue and whether the operating-loss trend narrows."
+    "ko": "2026년 3분기 분기보고서 공시를 통해 상반기 수주잔고(약 155억 원)의 매출 전환 여부와 영업손실 축소 여부를 확인할 필요가 있다.",
+    "en": "The Q3 2026 quarterly report filing should be checked to see whether the H1 order backlog (about KRW 15.5 billion) has converted to revenue and whether the operating loss has narrowed."
    }
   },
   {
    "when": {
-    "ko": "지속 확인",
-    "en": "Ongoing"
+    "ko": "2026년 4분기(연중)",
+    "en": "Q4 2026 (throughout the quarter)"
    },
    "what": {
-    "ko": "원주 'K-AI 시티', 강원랜드 생성형 AI 인프라 구축 등 주요 프로젝트의 진행 상황과 매출 인식 시점을 점검할 필요가 있다.",
-    "en": "Monitor progress and revenue-recognition timing on major projects such as Wonju's 'K-AI City' and Kangwon Land's generative AI infrastructure build."
+    "ko": "2025년 4분기와 유사한 계절적 매출·이익 집중이 재현되는지, 아니면 손익 패턴이 구조적으로 달라지는지 관찰할 필요가 있다.",
+    "en": "It is worth observing whether seasonal revenue and profit concentration similar to Q4 2025 recurs, or whether the earnings pattern changes structurally."
    }
   },
   {
    "when": {
-    "ko": "규제당국 가이드라인 발표 시점",
-    "en": "Upon regulator guideline announcement"
+    "ko": "2027년 상반기",
+    "en": "H1 2027"
    },
    "what": {
-    "ko": "다이퀘스트 중복상장 관련 금융당국 가이드라인 발표와 이에 따른 상장예비심사 청구 일정 변화를 확인해야 한다.",
-    "en": "Watch for the financial regulator's dual-listing guideline announcement and any resulting changes to DiQuest's preliminary listing review schedule."
+    "ko": "자회사 다이퀘스트의 코스닥 상장예비심사 청구 및 진행 여부, 중복상장 가이드라인 적용 결과를 확인할 시점이다.",
+    "en": "This is the point to check whether subsidiary DeepQuest files for a KOSDAQ listing preliminary review and how dual-listing guidelines are applied to its process."
    }
   },
   {
    "when": {
-    "ko": "2026년 연말",
-    "en": "Year-end 2026"
+    "ko": "2026년 9월~12월",
+    "en": "September-December 2026"
    },
    "what": {
-    "ko": "생성형 AI 서비스 '구버'의 연내 100만 개 에이전트 생성 목표 달성 여부를 확인할 수 있다.",
-    "en": "Check whether Goover's year-end target of one million generated AI agents is achieved."
-   }
-  },
-  {
-   "when": {
-    "ko": "분기별 지속 확인",
-    "en": "Ongoing, quarterly"
-   },
-   "what": {
-    "ko": "베트남 법인 SLT의 글로벌 로보틱스 데이터 사업 매출 비중 확대 속도를 점검할 필요가 있다.",
-    "en": "Track the pace at which Vietnam subsidiary SLT's global robotics data business expands as a share of revenue."
+    "ko": "한전원자력연료 프로젝트 진행 상황과 원전·금융 등 버티컬에서의 추가 수주 발표 여부를 점검할 필요가 있다.",
+    "en": "Progress on the KEPCO Nuclear Fuel project and any additional order announcements in verticals such as nuclear and finance warrant monitoring."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "솔트룩스는 원전·금융·공공 부문의 AI 전환 수요를 바탕으로 매출 성장세를 이어가고 있으며, 베트남 법인의 로보틱스 데이터 사업과 자회사 다이퀘스트의 상장 추진이라는 추가 성장 스토리를 보유하고 있다. 다만 2022년부터 2025년까지 4개년 연속 영업손실·순손실이 이어졌고, 2025년 4분기의 일시적 흑자 전환이 2026년 1분기 대규모 적자로 되돌아가면서 분기별 실적의 변동성이 크다는 점이 확인됐다. 2026년 2분기에도 매출은 전년 동기 대비 64% 늘었지만 영업손실 역시 확대돼, 외형 성장과 수익성 개선이 아직 동시에 나타나지 않고 있다. 다이퀘스트의 코스닥 상장은 그룹 자본 전략의 중요한 변수이나 모회사와의 중복상장 논란이라는 규제 불확실성을 안고 있다. 배당은 지급되지 않고 있으며, 주가는 장부가치 대비 프리미엄이 반영된 수준에서 거래되고 있다. 투자 판단에 앞서 하반기 수주잔고의 매출 전환 여부와 다이퀘스트 상장 관련 규제 향방을 지속적으로 확인할 필요가 있다.",
-   "en": "Saltlux continues to grow revenue on the back of AI-transformation demand in nuclear power, finance and public sectors, and holds additional growth stories in its Vietnam subsidiary's robotics data business and subsidiary DiQuest's planned listing. However, operating and net losses have persisted for four consecutive years from 2022 to 2025, and the temporary profit turn in Q4 2025 reverted to a large loss in Q1 2026, confirming significant quarterly earnings volatility. Even in Q2 2026, revenue grew 64% year-on-year but the operating loss also widened, indicating that top-line growth and profitability improvement have not yet materialized together. DiQuest's KOSDAQ listing is an important variable for the group's capital strategy but carries regulatory uncertainty related to dual-listing controversy with its parent. No dividend is paid, and the stock trades at a level reflecting a premium to book value. Ahead of any investment decision, continued monitoring of H2 backlog-to-revenue conversion and the regulatory direction on DiQuest's listing is warranted."
+   "ko": "솔트룩스는 자체 LLM 루시아와 AI 에이전트 구버를 앞세워 공공·금융·원전 등 버티컬 AI 시장에서 레퍼런스를 쌓아가고 있으나, 2025년 매출 감소와 손실 확대, 5년 연속 적자라는 실적 궤적은 아직 뚜렷한 반전을 보여주지 못하고 있다. 2025년 4분기의 일시적 흑자 전환이 2026년 1~2분기 재차 적자로 이어진 점은 계절적 요인과 구조적 수익성 개선을 구분해서 볼 필요성을 시사한다. 2026년 상반기 수주 확대와 약 155억 원의 수주잔고, 베트남·북미 등 해외 사업 성장은 하반기 실적의 관찰 포인트가 될 것으로 보인다. 동시에 코난테크놀로지·와이즈넛 등 경쟁사와의 실적 격차, 대형 IT서비스 기업의 AI 시장 진입은 경쟁 강도를 높이는 요인이다. 자회사 다이퀘스트의 코스닥 상장 추진은 그룹 가치 재평가의 계기가 될 수 있지만, 중복상장 논란과 자생적 흑자 전환 여부라는 과제를 함께 안고 있다. 종합적으로 볼 때 기술력과 수주 모멘텀, 실적 불안정성과 경쟁 심화라는 강세·약세 요인이 함께 존재하는 국면으로 판단된다.",
+   "en": "Saltlux is building references in the vertical AI market across public, finance, and nuclear sectors led by its proprietary LLM LUXIA and AI agent Goover, but its earnings trajectory—declining 2025 revenue, widening losses, and five consecutive years in the red—has not yet shown a clear turnaround. The fact that the temporary swing to profit in Q4 2025 was followed by a return to losses in Q1-Q2 2026 suggests the need to distinguish seasonal factors from structural profitability improvement. Expanded H1 2026 orders, a backlog of about KRW 15.5 billion, and growth in overseas operations in Vietnam and North America will likely be watch points for H2 performance. At the same time, the earnings gap versus competitors Konan Technology and Wisenut, and the entry of large IT service firms into the AI market, are factors intensifying competition. Subsidiary DeepQuest's KOSDAQ listing push could serve as a catalyst for group-level value reassessment, but it also carries challenges around dual-listing controversy and whether it can achieve self-sustained profitability. Overall, this is a phase where technological capability and order momentum coexist with earnings instability and intensifying competition as counterbalancing factors."
   }
  },
  "sources": [
-  "https://www.sankun.com/company-info/20x0IWOQpN10SHO0tayJ7A",
-  "https://zdnet.co.kr/view/?no=20260814155557",
-  "https://www.investing.com/equities/saltlux-inc",
   "https://www.judal.co.kr/?view=stockAI&shareToken=AKIWyFaPFSiuScXt",
   "https://alphasquare.co.kr/home/stock-summary?code=304100",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A304100",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=u66HEDsDAj1bER40",
   "https://www.judal.co.kr/?view=stockAI&shareToken=zszSXF2RfyKfwqLK",
   "https://www.judal.co.kr/?view=stockAI&shareToken=xM97gOThXufAVB9v",
+  "https://www.investing.com/equities/saltlux-inc",
   "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251114002687&docno=&viewerhost=",
-  "https://kr.investing.com/equities/saltlux-inc-earnings",
   "https://www.saltlux.com/kor/board/download.do?mId=58&brdIdx=11&itId=singleFile",
-  "https://www.etnews.com/20260528000108",
+  "https://m.irgo.co.kr/IR-COMP/304100/",
+  "https://littlebproject.com/stock/304100/249/46422",
+  "https://www.aitimes.kr/news/articleView.html?idxno=41462",
+  "https://www.sankun.com/company-info/20x0IWOQpN10SHO0tayJ7A",
+  "https://www.kmjournal.net/news/articleView.html?idxno=12248",
+  "https://www.incruit.com/company/1683106649/",
   "https://m.jobkorea.co.kr/company/16151592",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260319001512&docno=&viewerhost=",
-  "https://v.daum.net/v/20260421090908030",
-  "https://www.hellot.net/news/article.html?no=112871",
-  "https://zdnet.co.kr/view/?no=20260518110228",
-  "https://m.irgo.co.kr/IR-COMP/304100/"
+  "https://www.saltlux.com/kor/board/download.do?mId=58&brdIdx=12&itId=singleFile",
+  "https://drnews.co.kr/article/1023",
+  "https://www.infostockdaily.co.kr/news/articleView.html?idxno=161458"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -234,9 +224,9 @@
   "인공지능(AI)"
  ],
  "market": "코스닥",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 09:16",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-22",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -335,14 +325,14 @@
    }
   ],
   "valuation": {
-   "price": 15370,
-   "mcap": 0.1936,
+   "price": 15390,
+   "mcap": 0.1938,
    "shares": 12593855,
    "total_shares": 12593855,
    "wavg_shares": 12593489,
    "per": null,
    "eps": -781,
-   "pbr": 3.09,
+   "pbr": 3.0897,
    "bps": 4981,
    "roe_ttm": -16.0,
    "ttm_window": "2025Q3~2026Q2",

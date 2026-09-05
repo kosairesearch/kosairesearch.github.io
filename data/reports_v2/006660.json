@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "견고한 재무체력, 수익성 회복 속도가 관건",
-  "en": "Solid Financial Foundation; Speed of Profitability Recovery the Deciding Factor"
+  "ko": "라디에이터 본업과 액침냉각 테마 사이",
+  "en": "Core Radiator Business Meets Immersion-Cooling Theme"
  },
  "lead": {
-  "ko": "삼성공조는 부채비율 13.3%·지배주주 자본 2,925억원의 탄탄한 재무 안정성을 갖추고 있으나, 2025년 영업이익률이 2.8%까지 하락한 이후 2026년 1분기 원가 개선으로 반등 조짐을 보이고 있어, 이 흐름의 지속성이 핵심 관찰 포인트다.",
-  "en": "Samsung Gongjo holds a resilient financial position — a 13.3% debt ratio and owner-attributable equity of KRW 292.5 billion — yet following an operating margin slide to 2.8% in 2025, a cost-driven profit recovery signal in Q1 2026 makes the sustainability of that rebound the central observation point."
+  "ko": "삼성공조는 라디에이터·오일쿨러 등 자동차 열교환 부품을 주력으로 하는 코스피 소형주로, 2025년에는 원가 부담과 금융상품손상차손 여파로 이익이 크게 줄었으나 2026년 상반기 들어 영업이익이 다시 회복되는 흐름을 보였다.",
+  "en": "Samsung Climate Control is a small-cap KOSPI maker of radiators and oil coolers whose 2025 profit fell sharply on cost inflation and a financial-instrument impairment charge, before operating profit recovered in the first half of 2026."
  },
  "keypoints": [
   {
-   "ko": "부채비율 13.3%·사실상 무차입 구조, 연간 영업현금흐름 100억원 이상 유지로 재무 건전성 탁월",
-   "en": "Near-zero leverage (13.3% debt ratio) and annual operating cash flow consistently above KRW 10 billion underpin exceptional financial soundness"
+   "ko": "2025년 매출은 전년 대비 소폭 늘었지만 영업이익과 순이익은 재료비·노무비 증가와 금융상품손상차손 인식으로 절반 가까이 줄었다.",
+   "en": "2025 revenue rose slightly year-on-year, but operating profit and net profit nearly halved due to higher material and labor costs plus a financial-instrument impairment charge."
   },
   {
-   "ko": "OPM이 2022년 9.1%에서 2025년 2.8%로 4년 연속 하락, 2025년 4분기 영업손실 기록으로 수익성 훼손 심화",
-   "en": "OPM contracted four years running from 9.1% in 2022 to 2.8% in 2025; a Q4 2025 operating loss underlines deepening profitability deterioration"
+   "ko": "2025년 4분기에는 영업손실을 기록했고, 2026년 1분기와 2분기에는 다시 영업이익 흑자로 돌아섰다.",
+   "en": "The company posted an operating loss in Q4 2025, then returned to operating profit in both Q1 and Q2 2026."
   },
   {
-   "ko": "2026년 1분기 영업이익 전년 동기 대비 +22.1%, 지배주주 순이익 +222.9%—원가·비용 개선 효과가 수치로 가시화",
-   "en": "Q1 2026 operating profit rose 22.1% year-on-year and attributable net profit surged 222.9%, with cost and expense improvements beginning to show measurable results"
+   "ko": "매출 구성은 라디에이터 약 54%, 오일쿨러 약 29%, HVAC 약 14%, 기타 약 3%로 라디에이터·오일쿨러 의존도가 높다.",
+   "en": "Revenue is split roughly 54% radiators, 29% oil coolers, 14% HVAC and 3% other products, showing heavy reliance on radiators and oil coolers."
   },
   {
-   "ko": "라디에이터·오일쿨러·HVAC 등 내연기관 냉각부품 중심 포트폴리오, 수소전기버스 냉각모듈 개발로 미래 모빌리티 전환 대응 중",
-   "en": "Portfolio centered on ICE thermal management parts (radiators, oil coolers, HVAC); hydrogen fuel cell bus cooling module development signals an early shift toward future mobility"
+   "ko": "엔비디아 GPU 발열 문제와 관련해 국내 액침냉각 공급사를 찾는다는 소식이 나올 때마다 주가가 급등락했지만, 회사와 관련된 구체적 공급계약 공시는 확인되지 않는다.",
+   "en": "The stock has repeatedly swung sharply whenever reports emerged that Nvidia was scouting domestic immersion-cooling suppliers for GPU heat issues, though no specific supply-contract disclosure involving the company has been confirmed."
   },
   {
-   "ko": "현대·기아 외 중장비·농기계·국방·수출 채널로 고객 다변화, 인도네시아·베트남 해외 생산법인 보유",
-   "en": "Customer diversification beyond Hyundai/Kia to heavy equipment, agricultural machinery, defense, and export channels; overseas production subsidiaries in Indonesia and Vietnam"
+   "ko": "부채비율이 2022년 19.2%에서 2025년 13.3%로 낮아지는 등 재무구조는 보수적으로 유지되고 있다.",
+   "en": "The debt ratio declined from 19.2% in 2022 to 13.3% in 2025, reflecting a conservatively maintained balance sheet."
   }
  ],
  "business": {
-  "ko": "삼성공조는 1970년 창원에서 법인으로 출범하여(전신 1954년 창업) 1987년 코스피에 상장된 독립 중견기업으로, 삼성그룹과는 별개의 독자적인 경영 구조를 운영하고 있다. 주력 제품은 내연기관 냉각계통의 핵심인 라디에이터(Radiator), 오일쿨러(Oil Cooler), 인터쿨러(Inter Cooler), 에어컨용 콘덴서(Condenser)·이배퍼레이터(Evaporator) 및 HVAC 시스템이며, 국내 최초로 동(銅)·알루미늄 라디에이터와 인터쿨러를 개발·국산화한 기술 이력을 보유하고 있다. 납품처는 현대자동차·기아자동차 등 완성차 제조사를 중심으로 중장비·농기계 업체, 국방부, 해외 수출 채널 등으로 다양하며, 다품종 소량생산 방식을 통해 특정 고객에 대한 매출 의존도를 낮추는 분산형 구조를 유지하고 있다. 창원 소재 3개 사업장에서 국내 생산을 수행하며, 인도네시아(PT.T.S.I.)와 베트남(SCC Vietnam)에 해외 생산법인을 운영해 글로벌 원가 경쟁력을 확보하고 있다. 연결 종속회사는 삼성다이나에이치백·이송 등 국내 계열사를 포함해 총 7개사이며, 그룹 전체가 자동차 공조부품 밸류체인에 집중된 구조다. 주재료인 알루미늄은 국내외 이원화 조달로 공급 리스크를 분산하고 있으며, 공급 시장의 독과점 수준이 낮아 구매 유연성이 확보되어 있다. 미국·유럽 등 해외 시장에 대한 직수출을 병행함으로써 국내 경기 변동에 대한 완충력을 갖추고 있다. 최근에는 정부 R&D 과제를 통해 수소전기버스용 150kW급 고효율 냉각 모듈 개발을 추진 중이며, 친환경·수소 상용차 분야로의 사업 확장 기반을 마련하고 있다. 높은 사내유보율과 우수한 재무 체력을 바탕으로 품질경영시스템 구축과 선행 기술개발에 지속 투자하고 있다.",
-  "en": "Samsung Gongjo was incorporated in Changwon in 1970 (with roots tracing to a 1954 founding), listed on the KOSPI in 1987, and operates as a fully independent mid-sized enterprise with no affiliation to Samsung Group. Its flagship products are core thermal management components — radiators, oil coolers, intercoolers, air-conditioning condensers and evaporators, and HVAC systems — and the company holds the distinction of being Korea's first developer and manufacturer of copper and aluminum radiators and intercoolers. Customers span domestic automakers Hyundai Motor and Kia, heavy equipment and agricultural machinery manufacturers, the Ministry of National Defense, and overseas export channels, with a multi-product small-lot production system designed to keep concentration risk low across any single buyer. Three domestic facilities in Changwon handle Korean production, while overseas manufacturing subsidiaries in Indonesia (PT.T.S.I.) and Vietnam (SCC Vietnam) provide global cost competitiveness. The consolidated group encompasses seven subsidiaries — including Samsung Dyna H-Back and Isong — all concentrated along the automotive thermal management value chain. Aluminum, the primary raw material, is procured through a dual domestic-international sourcing strategy to diversify supply risk, benefiting from a relatively unconcentrated supply market. Direct exports to the United States, Europe, and other regions act as a buffer against domestic demand fluctuations. Through a government-funded R&D program, the company is actively developing a 150kW high-efficiency cooling module for hydrogen fuel cell buses, establishing a foothold in the eco-friendly and hydrogen commercial-vehicle segment. A high retained-earnings ratio and sound finances support continued investment in quality management systems and advanced technology development."
+  "ko": "삼성공조는 창원에 본사를 둔 자동차 부품 전문기업으로, 라디에이터·오일쿨러·인터쿨러·HVAC(냉난방 공조) 등 열교환기 제품을 개발·제조한다. 회사 이름에 '삼성'이 들어가지만 삼성그룹 계열사가 아니며 삼성그룹과는 무관한 독립 기업이다. 매출 구성은 2026년 3월 기준으로 라디에이터가 약 54%, 오일쿨러가 약 29%, HVAC가 약 14%, 기타가 약 3%를 차지해 라디에이터·오일쿨러에 대한 의존도가 여전히 높다. 생산기지는 경남 창원 내동·내서 사업장을 중심으로 인도네시아, 베트남 현지법인을 운영하며, 방글라데시에는 전기계량기 제조를 위한 SCC METERS를 설립해 신규 사업을 모색하고 있다. 제품은 국내 완성차, 중장비, 농기계 제조업체와 애프터서비스(AS) 업체에 직접 공급되며 일부는 미국, 유럽, 동남아시아 등으로 수출된다. 최근에는 정부 지원 과제를 통해 수소전기버스용 150kW급 고효율 냉각 모듈 기술을 개발하는 등 친환경 상용차 열관리 분야로 사업을 넓히고 있다. 전기차 확산에 대응해 배터리·전력전자 부품의 열관리 시스템 등 전동화 차량용 제품 개발에도 대응하고 있다. 경쟁구도는 국내외 다수의 자동차 열교환기 업체와 겹치며, 전동화 전환 속도에 따라 기존 내연기관 중심 제품 수요가 영향을 받을 수 있는 구조다.",
+  "en": "Samsung Climate Control, headquartered in Changwon, South Korea, develops and manufactures heat-exchange products including radiators, oil coolers, intercoolers, and HVAC components. Despite its name, the company is not affiliated with the Samsung Group and has no corporate relationship with it. As of March 2026, revenue is split roughly 54% radiators, 29% oil coolers, 14% HVAC, and 3% other items, showing continued heavy reliance on radiators and oil coolers. Production is centered at the Naedong and Naeseo plants in Changwon, supplemented by subsidiaries in Indonesia and Vietnam, while a Bangladesh unit, SCC Meters, was established to explore electricity-meter manufacturing as a new business line. Products are supplied directly to domestic automakers, heavy-equipment and agricultural-machinery manufacturers, and aftermarket service providers, with some exports going to the United States, Europe, and Southeast Asia. The company has been expanding into eco-friendly commercial-vehicle thermal management, including a government-supported project to develop a 150kW-class high-efficiency cooling module for hydrogen fuel-cell buses. It is also working on thermal-management products for electrified vehicles, such as battery and power-electronics cooling systems, in response to the shift toward EVs. Its competitive landscape overlaps with numerous domestic and global automotive heat-exchanger makers, and demand for its traditional internal-combustion-engine-oriented products could be affected by the pace of vehicle electrification."
  },
  "earnings": {
-  "ko": "2022년 매출 958억원에 OPM 9.1%로 최근 4개 사업연도 중 가장 높은 영업 수익성을 기록했으나, 지배주주 귀속 당기순이익 409억원은 영업이익(87억원) 대비 약 4.7배에 달해 영업외수익을 포함한 비경상 항목이 상당 기여한 해임을 시사한다. 2023년에는 매출이 1,259억원으로 전년 대비 31.5% 급증하였으나 OPM은 4.3%로 압축되어 영업이익 54억원에 그쳤고, 지배주주 순이익도 138억원으로 전년 대비 크게 감소하였다. 2024년에는 매출이 1,158억원으로 줄었음에도 원가 구조 개선에 힘입어 OPM이 5.6%로 소폭 회복되어 영업이익 65억원, 지배주주 순이익 144억원을 기록하였다. 2025년에는 매출 1,177억원으로 전년 대비 1.7% 소폭 증가하였지만, 영업이익이 32억원(OPM 2.8%)으로 급감하며 4년 내 최저 수익성을 기록하였다. 중국 증치세 환급 폐지 및 알루미늄 가격 인상이 원가율을 악화시켰고, 내수 경기 부진으로 인한 HVAC 부문 매출 감소가 복합적으로 작용하였다. 분기별로는 2025년 2분기 영업이익 23억원을 정점으로 3분기 10억원으로 떨어졌으며, 4분기에는 영업손실 14억원을 기록해 계절적 수익성 변동이 크게 심화되었다. 반면 2026년 1분기에는 매출 267억원으로 전년 동기 대비 9.4% 감소하였음에도 원가율 개선·비용 절감으로 영업이익 16억원(+22.1%), 지배주주 순이익 28억원(+222.9%)을 달성하며 이익 회복의 흐름이 가시화되었다. 영업활동현금흐름은 2022~2025년 연간 128억~160억원 수준을 꾸준히 유지해 영업이익 대비 현금 창출력이 월등히 높으며, 이는 설비집약적 제조업의 감가상각 등 비현금 비용이 반영된 결과다.",
-  "en": "In 2022, revenue reached KRW 95.8 billion with an OPM of 9.1%, the strongest operating profitability of the four most recent fiscal years; however, attributable net profit of KRW 40.9 billion — roughly 4.7 times operating profit of KRW 8.7 billion — suggests a material contribution from non-operating and non-recurring items. Revenue surged 31.5% to KRW 125.9 billion in 2023, but OPM compressed to 4.3% and attributable net profit fell sharply to KRW 13.8 billion. In 2024, revenue eased to KRW 115.8 billion while cost-structure improvement lifted OPM modestly to 5.6%, delivering operating profit of KRW 6.5 billion and attributable net profit of KRW 14.4 billion. Full-year 2025 saw revenue edge up 1.7% to KRW 117.7 billion, yet operating profit collapsed to KRW 3.2 billion (OPM 2.8%), the weakest margin in four years. China's elimination of its VAT refund scheme and rising aluminum input costs eroded margins, compounded by sluggish domestic demand for HVAC products. Quarterly in 2025, operating profit peaked at KRW 2.3 billion in Q2 before declining to KRW 1.0 billion in Q3 and swinging to an operating loss of KRW 1.4 billion in Q4, highlighting amplified seasonal earnings volatility. Q1 2026 delivered an encouraging reversal: despite revenue falling 9.4% year-on-year to KRW 26.7 billion, cost discipline drove operating profit up 22.1% to KRW 1.6 billion and attributable net profit up 222.9% to KRW 2.8 billion. Annual operating cash flow remained robust at KRW 12.9–15.4 billion throughout 2022–2025, comfortably exceeding reported operating profit, reflecting the substantial non-cash depreciation inherent in an asset-intensive manufacturing operation."
+  "ko": "2025년 연결 매출액은 1,177억 3,635만원으로 2024년 1,157억 7,250만원보다 1.7% 늘었지만, 영업이익은 32억 4,510만원으로 전년 64억 8,145만원 대비 절반 가까이 줄었고 순이익도 72억 3,955만원으로 전년 148억 8,636만원에서 크게 감소했다. 회사는 재료비와 노무비 증가, 금융상품손상차손 인식이 이익 감소의 원인이라고 설명했다. 영업이익률은 2022년 9.1%에서 2023년 4.3%, 2024년 5.6%로 오르내린 뒤 2025년에는 2.8%까지 낮아졌다. 분기별로 보면 2025년 2분기 영업이익 23억 1,181만원, 3분기 10억 2,283만원으로 둔화되다가 4분기에는 매출 249억 2,155만원에 영업손실 14억 409만원을 기록하며 적자로 전환했다. 이후 2026년 1분기에는 매출 266억 6,786만원, 영업이익 16억 493만원으로 흑자 전환했고, 2분기에는 매출 318억 9,175만원, 영업이익 24억 9,783만원으로 개선세를 이어갔다. 특히 2026년 2분기 지배주주 순이익은 62억 3,782만원으로 영업이익 대비 크게 웃돌아 영업외 부문에서 상당한 이익 기여가 있었던 것으로 보이며, 이는 2022년 영업이익 87억 3,747만원 대비 순이익 409억 1,061만원으로 컸던 사례와 유사하게 영업외 손익의 변동성이 실적에 자주 영향을 미치는 구조임을 보여준다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 지배주주 순이익 합계는 114억 8,641만원으로, 2025년 4분기의 일시적 적자를 2026년 상반기 회복이 상당 부분 상쇄한 모습이다. 현금흐름 측면에서는 영업활동현금흐름이 2022년 160억 4,098만원, 2023년 158억 7,251만원, 2024년 128억 8,868만원, 2025년 153억 8,175만원으로 매년 100억원대 이상을 유지하며 이익 변동성에도 안정적인 현금창출력을 보였다.",
+  "en": "Consolidated revenue for 2025 was KRW 117.74 billion, up 1.7% from KRW 115.77 billion in 2024, but operating profit fell nearly by half to KRW 3.25 billion from KRW 6.48 billion, and net profit dropped sharply to KRW 7.24 billion from KRW 14.89 billion the prior year. The company attributed the profit decline to higher material and labor costs along with a financial-instrument impairment charge. The operating margin, which moved from 9.1% in 2022 to 4.3% in 2023 and 5.6% in 2024, fell further to 2.8% in 2025. On a quarterly basis, operating profit slowed from KRW 2.31 billion in Q2 2025 to KRW 1.02 billion in Q3, before turning negative in Q4 2025 with revenue of KRW 24.92 billion and an operating loss of KRW 1.40 billion. The company then returned to profit in Q1 2026 with revenue of KRW 26.67 billion and operating profit of KRW 1.60 billion, and improved further in Q2 2026 with revenue of KRW 31.89 billion and operating profit of KRW 2.50 billion. Notably, owner net profit in Q2 2026 reached KRW 6.24 billion, well above the operating profit for that quarter, suggesting a meaningful non-operating contribution—similar to 2022, when owner net profit of KRW 40.91 billion far exceeded operating profit of KRW 8.74 billion, illustrating how non-operating items periodically drive large swings in reported earnings. Over the trailing four quarters (Q3 2025–Q2 2026), owner net profit totaled KRW 11.49 billion, with the 2026 first-half recovery offsetting much of the temporary Q4 2025 loss. Operating cash flow remained resilient throughout, at KRW 16.04 billion in 2022, KRW 15.87 billion in 2023, KRW 12.89 billion in 2024, and KRW 15.38 billion in 2025, indicating stable cash generation despite earnings volatility."
  },
  "industry": {
-  "ko": "한국자동차모빌리티산업협회(KAMA)에 따르면 2025년 국내 완성차 생산은 408만 대(-1.2%)로, 미국의 25% 고관세 장기화와 전기차 현지 생산 전환이라는 도전 속에서도 내수 반등과 유럽 친환경차 수출 확대가 충격을 완충하며 예상 대비 선방하였다. 2026년에는 내수 169만 대(+0.8%), 수출 275만 대(+1.1%), 생산 413만 대(+1.2%)로 2년 연속 역성장에서 벗어나는 완만한 회복이 전망된다. 미국 자동차 관세가 25%에서 15%로 조정됨에 따라 대미 통상 리스크가 다소 완화되었으며, 유럽의 환경 규제 강화와 글로벌 하이브리드차 수요 증가가 수출 반등의 추가 동력이 될 것으로 기대된다. 현대차 울산 EV 신공장, 기아 광명·화성 EVO 플랜트 가동 본격화와 함께 국내 생산 구조가 점차 친환경차 중심으로 재편되는 추세이며, 이는 부품 수요 구조에도 중장기적 변화를 예고하고 있다. 삼성공조의 주력인 라디에이터·오일쿨러는 순수 전기차(BEV)에서는 탑재 필요성이 현저히 줄지만, 현재 수요가 급성장 중인 하이브리드차(HEV)에는 유사 사양으로 공급이 가능해 당분간의 수요 지지 기반이 있다. 반면 중국 전기차 업체들이 국내 시장으로의 진입을 확대하고 있어 완성차 업체들의 경쟁 강도가 높아지고 있으며, 이는 부품 발주량과 단가 협상력에 간접적인 압박 요인으로 작용할 수 있다. 자동차부품 업계 전반으로는 내연기관 핵심 부품사들이 EV 냉각 시스템 전환 투자와 원가 경쟁 심화라는 이중 과제를 안고 있으며, 재무 여력과 기술 대응력을 갖춘 기업과 그렇지 않은 기업 간 선별 압력이 강화되는 국면이다.",
-  "en": "According to KAMA, domestic auto production reached 4.08 million units in 2025 (-1.2%), resisting structural headwinds from prolonged U.S. 25% tariffs and EV localization and outperforming earlier expectations, aided by domestic demand recovery and rising eco-friendly vehicle exports to Europe. For 2026, KAMA projects a mild recovery: domestic sales of 1.69 million units (+0.8%), exports of 2.75 million units (+1.1%), and production of 4.13 million units (+1.2%), ending two consecutive years of decline. A moderation in U.S. auto tariffs from 25% to 15%, tighter European environmental regulations, and accelerating global hybrid-vehicle demand are expected to support the export rebound. The ramp-up of Hyundai's Ulsan EV plant and Kia's Gwangmyeong/Hwaseong EVO plants is reshaping domestic production toward eco-friendly vehicles, signaling medium-to-long-term changes in the parts demand mix. Samsung Gongjo's core radiators and oil coolers see sharply reduced relevance in pure battery-electric vehicles, yet the surging demand for hybrids — which still require similar thermal management specifications — provides a near-term demand bridge. Meanwhile, the accelerating entry of Chinese EV brands into the domestic market raises competitive intensity for Korean automakers, indirectly pressuring parts order volumes and unit-price negotiations. Across the auto-parts sector, ICE-centric suppliers face the dual challenge of investing in EV thermal-system transitions while navigating intensifying cost competition, increasing selective pressure between financially stronger and weaker players."
+  "ko": "자동차 열관리 부품 산업은 내연기관차의 라디에이터·오일쿨러 수요와 전기차 확산에 따른 배터리·전력전자 열관리 수요가 공존하는 전환기에 있다. 완성차 업체의 전동화 전략에 따라 기존 내연기관용 부품 수요는 점진적으로 영향을 받을 수 있는 구조이며, 이는 라디에이터·오일쿨러 비중이 높은 삼성공조에도 해당되는 변수다. 동시에 인공지능(AI) 데이터센터 확산으로 서버 발열을 제어하는 액체냉각·액침냉각 기술이 새로운 성장축으로 부상하고 있다. 시장조사업체 델오로그룹은 데이터센터 액체냉각 시장이 2029년 약 70억달러까지 확대될 것으로 전망했고, 마켓앤마켓츠는 액체냉각 시장이 2026년 40억 7,000만달러에서 2033년 276억 5,000만달러로 커질 것으로 예상했다. 이 흐름 속에서 삼성전자는 유럽 HVAC 기업 플랙트그룹을 앞세워 데이터센터 공조·액침냉각 시장을 공략하고 있는데, 이는 삼성공조와 무관한 삼성전자 계열 사업으로 두 회사 간 자본적·사업적 연결고리는 없다. 삼성공조 역시 엔비디아의 GPU 발열 문제 해결을 위한 국내 액침냉각 공급사 물색 소식이 전해질 때마다 테마성 관심을 받아왔으나, 이는 시장 루머 성격이 강하며 공식 공급계약으로 확인된 바는 없다. 경쟁 구도 면에서 삼성공조는 매출 규모 1,000억원대 중반의 소형 부품사로, 글로벌 대형 열관리·공조 기업들과는 규모에서 큰 차이가 있다.",
+  "en": "The automotive thermal-management components industry is in a transition period where demand for internal-combustion radiators and oil coolers coexists with rising demand for battery and power-electronics cooling driven by vehicle electrification. As automakers pursue electrification strategies, demand for traditional internal-combustion-engine parts could gradually be affected, a variable relevant to Samsung Climate Control given its heavy reliance on radiators and oil coolers. At the same time, the spread of AI data centers has elevated liquid- and immersion-cooling technologies as a new growth axis for thermal management. Research firm Dell'Oro Group projected the data-center liquid-cooling market could expand to roughly $7 billion by 2029, while MarketsandMarkets estimated the liquid-cooling market would grow from $4.07 billion in 2026 to $27.65 billion by 2033. Within this trend, Samsung Electronics has been pursuing the data-center cooling and immersion-cooling market through its European HVAC subsidiary FläktGroup, a business entirely unrelated to Samsung Climate Control, with no capital or operational link between the two companies. Samsung Climate Control has nonetheless drawn thematic attention whenever reports surfaced that Nvidia was seeking domestic immersion-cooling suppliers to address GPU heat issues, though such reports have largely been market rumor and no official supply contract has been confirmed. In terms of competitive positioning, Samsung Climate Control is a small-cap parts maker with revenue in the low hundreds of billions of won, far smaller in scale than major global thermal-management and HVAC companies."
  },
  "outlook": {
-  "ko": "회사는 풍부한 자금력과 매출처 다변화를 바탕으로 독자 생존 기반을 확보하고, 품질경영시스템 고도화 및 선행 기술개발로 미래 경쟁력을 강화한다는 방향성을 유지하고 있다. 정부 R&D 과제를 통해 추진 중인 수소전기버스용 150kW급 냉각 모듈 개발은 중장기적 제품 포트폴리오 다각화의 핵심 축으로, 수소 상용차 시장이 상업화 궤도에 오를 경우 신규 성장 동력을 제공할 가능성이 있다. 2026년 1분기의 원가 개선 흐름이 2분기 이후에도 이어진다면, 계절적 성수기에 해당하는 상반기 후반~3분기 구간에서 연간 수익성 회복세가 더욱 가시화될 수 있다. 해외 생산법인인 인도네시아 PT.T.S.I.와 베트남 SCC Vietnam은 아세안 완성차 시장의 성장세를 활용하고 글로벌 공급망 재편 흐름 속에서 원가 경쟁력을 제공하는 거점으로 역할이 부각될 수 있다. 다만 알루미늄 등 원자재 가격 동향, 원-달러 환율, 그리고 주요 고객사인 현대·기아차의 하반기 생산 계획이 실적 방향성을 결정할 핵심 외부 변수로 남아 있다. KAMA는 2026년 한국 자동차 업계 생산·내수·수출이 모두 증가로 전환될 것으로 전망하고 있어, 전방 업황의 점진적 회복이 부품 발주에 긍정적으로 작용할 여지가 있다. 중장기적으로는 HEV 냉각 부품 수주 유지, EV용 고전압 열관리 부품 개발 가속화, 수소 모빌리티 진입이라는 세 가지 성장 경로가 사업 전환의 축을 이루게 될 것으로 보인다.",
-  "en": "The company maintains a strategic orientation anchored in financial self-reliance and customer diversification, while investing in quality management system upgrades and advanced technology development to build future competitiveness. The government-funded development of a 150kW high-efficiency cooling module for hydrogen fuel cell buses represents a key pillar of medium-to-long-term product portfolio diversification, with the potential to provide a new growth engine should the hydrogen commercial-vehicle market reach meaningful commercial scale. If the cost-improvement trend observed in Q1 2026 is sustained through Q2 onwards, a more visible profitability recovery could emerge during the seasonally stronger late Q2 to Q3 period. Overseas subsidiaries PT.T.S.I. in Indonesia and SCC Vietnam position the company to benefit from ASEAN automotive market growth and provide operational cost flexibility amid global supply chain realignment. Nonetheless, aluminum input prices, the KRW/USD exchange rate, and Hyundai/Kia's second-half production schedules remain critical external variables shaping the H2 2026 earnings trajectory. KAMA's projection of positive growth across production, domestic sales, and exports for the Korean auto industry in 2026 offers a mildly supportive backdrop for parts order momentum. Over the medium-to-long term, the three strategic growth paths are: sustaining HEV thermal component orders, accelerating high-voltage thermal management part development for BEVs, and establishing a foothold in hydrogen mobility."
+  "ko": "삼성공조는 정부 지원 과제를 통해 수소전기버스용 150kW급 고효율 냉각 모듈 기술을 개발하는 등 친환경 상용차 열관리 분야로 사업 다각화를 추진하고 있으며, 방글라데시 SCC METERS를 통한 전기계량기 제조 등 신규 해외 사업도 모색 중이다. 다만 이러한 신사업들이 매출에 본격적으로 기여하는 시점이나 구체적 규모에 대해서는 공개된 가이던스가 확인되지 않는다. 엔비디아 GPU 발열 이슈와 관련한 국내 액침냉각 공급사 물색 보도는 2025년 2월과 2026년 7월에도 재차 나오며 주가에 영향을 줬지만, 두 시점 모두 회사 관련 별도 공시는 없었던 것으로 보도됐다. 따라서 액침냉각 관련 실질적 매출 기여 여부는 향후 공식 공시나 수주 발표를 통해 확인이 필요한 사안이다. 2025년 4분기 영업손실 이후 2026년 1~2분기 연속 흑자전환한 흐름은 원가 부담 완화 또는 매출 회복의 신호로 해석될 수 있으나, 이 흐름이 하반기까지 이어질지는 다음 분기 실적에서 확인해야 한다. 전동화 전환에 따른 기존 라디에이터·오일쿨러 수요 구조 변화는 중장기적으로 지속 관찰이 필요한 변수다.",
+  "en": "Samsung Climate Control is pursuing diversification into eco-friendly commercial-vehicle thermal management, including a government-supported project to develop a 150kW-class high-efficiency cooling module for hydrogen fuel-cell buses, while also exploring new overseas ventures such as electricity-meter manufacturing through its Bangladesh unit, SCC Meters. However, no disclosed guidance is available regarding when or to what extent these new businesses will meaningfully contribute to revenue. Reports about Nvidia scouting domestic immersion-cooling suppliers to address GPU heat issues resurfaced in February 2025 and again in July 2026, each time moving the stock, but in both instances no separate company-specific disclosure was reported. Whether immersion cooling will translate into actual revenue therefore remains a matter to be confirmed through future official disclosures or order announcements. The return to operating profit in both Q1 and Q2 2026 following the Q4 2025 operating loss could be read as a sign of easing cost pressure or revenue recovery, but whether this trend continues into the second half needs to be confirmed in upcoming quarterly results. The medium- to long-term shift in demand structure for traditional radiators and oil coolers, driven by vehicle electrification, remains a variable that warrants continued observation."
  },
  "valuation_comment": {
-  "ko": "주가는 주당순자산(BPS 36,232원) 대비 크게 낮은 수준에서 거래되고 있어, 순자산 기준으로 상당한 할인 구간에 위치하고 있다. 주당순이익(EPS 1,140원) 기준 현재의 이익 배수는 수익성이 구조적으로 정상화된다면 상향 재평가의 여지가 있으나, 이 전제 자체가 실적 회복 속도에 달려 있다는 점이 핵심이다. DPS 80원은 최근 수익성 저하를 반영해 과거 이익 수준 대비 크게 낮아진 배당이며, 향후 배당 정상화 여부는 수익성 회복 폭과 회사의 주주환원 정책 변화에 달려 있다. 배당수익률 측면에서는 현재의 DPS 수준이 코스피 자동차부품 업종 평균을 하회하는 편으로, 배당 투자 매력은 이익 회복 전까지 제한적으로 평가된다. 부채비율 13.3%의 무차입에 가까운 재무구조와 2,925억원 규모의 지배주주 자본은 현 시가총액을 현저히 상회하며, 이는 순자산 기반의 하방 지지 논거를 형성하는 동시에 수익성 회복 시 밸류에이션 재평가 공간이 상대적으로 크다는 점을 시사한다.",
-  "en": "The share price trades at a substantial discount to book value per share (BPS: KRW 36,232), placing it firmly in a deep net-asset-value discount zone. The current earnings multiple on EPS of KRW 1,140 leaves room for re-rating if profitability normalizes structurally, but that premise depends entirely on the pace and sustainability of earnings recovery. The DPS of KRW 80 reflects the recent profitability downturn and represents a considerably lower payout relative to prior higher-earning periods; dividend normalization hinges on the magnitude of profit recovery and any shift in the company's capital return policy. In terms of dividend yield, the current DPS level tends to fall below the KOSPI auto-parts sector average, making dividend attraction limited until earnings improve. The near-zero-leverage balance sheet (13.3% debt ratio) and owner-attributable equity of KRW 292.5 billion substantially exceed the company's current market capitalization, potentially providing a net-asset-based downside support argument while also implying relatively larger valuation re-rating headroom should profitability recover."
+  "ko": "현재 주가는 순자산가치 대비 상당한 할인 구간에서 거래되고 있으며, 최근 네 개 분기 실적 기준의 이익 배수는 과거 다년간 형성된 거래 밴드의 중하단 부근에 위치한다. 배당수익률은 업종 평균을 밑도는 수준으로 파악된다. 2025년 4분기 적자에서 2026년 상반기 흑자로 전환한 이익 흐름의 방향성은 밸류에이션 해석에 있어 중요한 변수이며, 향후 몇 개 분기의 이익 안정성이 확인되어야 할 부분이다. 순자산 대비 프리미엄이 아닌 할인 구간에서 거래되는 배경에는 낮은 자기자본 활용도, 소형주 특유의 거래 유동성 제약, 그리고 실적과 무관하게 테마성 수급에 영향을 받는 주가 변동성 등이 함께 작용하는 것으로 보인다.",
+  "en": "The current share price trades at a substantial discount to net asset value, and the earnings multiple based on the trailing four quarters sits near the lower-to-middle end of the multi-year trading band the stock has historically occupied. The dividend yield appears to run below the sector average. The shift from a Q4 2025 operating loss to profitability in the first half of 2026 is an important variable for valuation interpretation, and the stability of earnings over the next several quarters remains to be confirmed. The discount to net asset value—rather than a premium—appears to reflect a combination of factors, including limited capital efficiency, liquidity constraints typical of a small-cap stock, and price volatility driven by thematic trading flows unrelated to underlying earnings."
  },
  "bull": [
   {
    "title": {
-    "ko": "무차입 재무 안정성과 풍부한 내부 유보",
-    "en": "Near-Zero Leverage and Substantial Retained Capital"
+    "ko": "보수적 재무구조와 안정적 현금창출력",
+    "en": "Conservative Balance Sheet and Stable Cash Generation"
    },
    "body": {
-    "ko": "부채비율 13.3%로 사실상 무차입에 가까운 재무구조를 보유하며, 2025년 영업활동현금흐름은 154억원으로 영업이익 대비 5배에 육박하는 강력한 현금 창출력을 보여준다. 지배주주 자본 2,925억원이 시가총액을 크게 상회하는 구조는 구조적 위험이 발생하더라도 사업을 지속할 수 있는 재무적 안전망을 제공한다. 높은 자기자본 기반은 경기 하강기에도 R&D·설비 투자를 이어가고 거래처 신뢰를 유지하는 데 유리하게 작용할 수 있다.",
-    "en": "With a 13.3% debt ratio and a near-zero-leverage balance sheet, the company generated KRW 15.4 billion in operating cash flow in 2025 — nearly five times reported operating profit — demonstrating robust underlying cash generation. Owner-attributable equity of KRW 292.5 billion substantially exceeds market capitalization, providing a financial safety net that enables operational continuity through structural headwinds. The high equity base supports continued R&D and capital spending even in economic downturns, reinforcing counterparty confidence."
+    "ko": "부채비율은 2022년 19.2%에서 2025년 13.3%로 지속적으로 낮아지고 있으며, 같은 기간 영업활동현금흐름은 매년 100억원대 이상을 유지했다. 이는 이익 변동성이 있더라도 현금흐름 기반의 재무 안정성이 뒷받침되고 있음을 보여준다. 낮은 레버리지는 외부 환경 변화에 대한 대응 여력을 제공하는 요인으로 볼 수 있다.",
+    "en": "The debt ratio has steadily declined from 19.2% in 2022 to 13.3% in 2025, while operating cash flow remained above KRW 10 billion in every year over the same period. This shows that cash-flow-based financial stability has been maintained even amid earnings volatility. Low leverage can be viewed as providing capacity to respond to external changes."
    }
   },
   {
    "title": {
-    "ko": "2026년 1분기 수익성 회복 신호와 이익 레버리지",
-    "en": "Q1 2026 Profitability Recovery Signal and Operating Leverage"
+    "ko": "친환경 상용차 및 신사업 다각화 시도",
+    "en": "Diversification into Eco-Friendly Commercial Vehicles and New Businesses"
    },
    "body": {
-    "ko": "2026년 1분기에는 매출이 전년 동기 대비 9.4% 감소하였음에도 원가율 개선 및 비용 절감으로 영업이익이 22.1% 증가하는 이익 레버리지가 작동하였다. 지배주주 순이익도 전년 동기 대비 222.9% 급증하여 2025년 4분기 영업손실 이후 반등이 가속화되는 양상을 보였다. 이 흐름이 계절적 성수기인 2분기로 연결된다면 연간 단위의 수익성 회복 가능성이 높아지며, 시장의 이익 기대치 재설정을 이끌 수 있다.",
-    "en": "Q1 2026 demonstrated positive operating leverage at work: despite a 9.4% year-on-year revenue decline, operating profit still rose 22.1% on cost and expense improvements. Attributable net profit surged 222.9% year-on-year, indicating accelerating recovery following the Q4 2025 operating loss. If this trend carries into the seasonally stronger Q2 period, annual profitability recovery becomes increasingly probable, potentially prompting a market earnings-expectation recalibration."
+    "ko": "회사는 정부 지원 과제를 통해 수소전기버스용 150kW급 냉각 모듈을 개발하는 등 전동화·친환경 상용차 분야로 기술 포트폴리오를 넓히고 있다. 방글라데시 SCC METERS를 통한 전기계량기 제조 등 해외 신규 사업도 모색하고 있다. 이러한 시도는 기존 내연기관 부품 의존도를 낮출 수 있는 잠재적 경로가 될 수 있다.",
+    "en": "The company is broadening its technology portfolio into electrification and eco-friendly commercial vehicles, including developing a 150kW-class cooling module for hydrogen fuel-cell buses through a government-supported project. It is also exploring new overseas ventures such as electricity-meter manufacturing through its Bangladesh unit, SCC Meters. Such efforts could represent a potential path toward reducing reliance on traditional internal-combustion-engine parts."
    }
   },
   {
    "title": {
-    "ko": "수소·친환경 모빌리티 진출과 다변화된 고객 기반",
-    "en": "Entry into Hydrogen/Green Mobility and a Diversified Customer Base"
+    "ko": "2026년 상반기 이익 회복 흐름",
+    "en": "Earnings Recovery in the First Half of 2026"
    },
    "body": {
-    "ko": "정부 R&D 과제를 통한 수소전기버스용 고효율 냉각 모듈 개발은 내연기관 중심에서 벗어나 미래 모빌리티로 포트폴리오를 확장하는 구체적 행보다. 현대·기아 외에 중장비·농기계·국방·수출 채널을 함께 확보한 분산형 매출 구조는 특정 전방산업 수요 급변에 대한 완충 역할을 한다. 인도네시아·베트남 해외 생산 거점은 아세안 자동차 시장 성장 수혜 및 글로벌 공급망 재편에 유연하게 대응할 수 있는 발판을 제공한다.",
-    "en": "A government-funded project to develop a high-efficiency cooling module for hydrogen fuel cell buses represents a concrete step toward portfolio diversification beyond ICE-centric products into future mobility. Customer diversification across heavy equipment, agricultural machinery, defense, and export channels — beyond Hyundai and Kia — cushions against sharp demand shifts in any single end-market. Overseas production facilities in Indonesia and Vietnam provide exposure to ASEAN automotive market growth and operational flexibility amid global supply chain restructuring."
+    "ko": "2025년 4분기 영업손실 이후 2026년 1분기와 2분기 모두 영업이익 흑자를 기록하며 회복세를 보였다. 2분기에는 매출과 영업이익이 모두 전 분기 대비 개선됐고, 지배주주 순이익도 크게 늘었다. 최근 네 개 분기 합산 순이익은 2025년 4분기 적자를 상당 부분 상쇄하는 수준을 기록했다.",
+    "en": "Following the operating loss in Q4 2025, the company posted operating profit in both Q1 and Q2 2026, showing a recovery trend. In Q2, both revenue and operating profit improved from the prior quarter, and owner net profit rose substantially. Net profit summed over the trailing four quarters offset a meaningful portion of the Q4 2025 loss."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "구조적 수익성 저하 추세",
-    "en": "Structural Profitability Deterioration Trend"
+    "ko": "전동화 전환에 따른 구조적 수요 변화 위험",
+    "en": "Structural Demand Risk from Vehicle Electrification"
    },
    "body": {
-    "ko": "OPM이 2022년 9.1%에서 2025년 2.8%로 4년 연속 훼손되어 2025년 4분기 영업손실을 기록하는 등, 수익성 저하가 일시적 충격이 아닌 구조적 원가 압박의 성격을 띨 가능성이 있다. 중국 증치세 환급 폐지와 알루미늄 가격 상승이라는 비용 구조 변화가 고착화될 경우, 마진 회복의 폭과 속도는 제한될 수 있다. 장기적으로는 제품 믹스 개선, 자동화를 통한 생산성 향상, 또는 원가 전가력 확보가 이루어지지 않는 한 만성적 저마진 구조가 지속될 리스크가 있다.",
-    "en": "OPM has deteriorated for four consecutive years from 9.1% in 2022 to 2.8% in 2025, culminating in an operating loss in Q4 2025, suggesting the margin pressure may be structural rather than transitory. If China's elimination of the VAT refund scheme and elevated aluminum prices become permanent cost-structure features, the pace and magnitude of margin recovery may be constrained. Over the longer term, chronic low-margin operations could persist without improvements in product mix, automation-driven productivity, or the ability to pass cost increases through to customers."
+    "ko": "매출의 상당 부분이 라디에이터와 오일쿨러 등 내연기관 중심 부품에 편중되어 있다. 완성차 업체들의 전동화 전환이 가속화될 경우 이러한 전통 부품의 수요 구조가 장기적으로 영향을 받을 수 있다. 신사업 전환 속도가 이를 상쇄할 수 있을지는 아직 확인되지 않았다.",
+    "en": "A significant portion of revenue remains concentrated in internal-combustion-oriented components such as radiators and oil coolers. If automakers accelerate their shift toward electrification, demand structure for these traditional parts could be affected over the long term. Whether the pace of new-business transition can offset this remains unconfirmed."
    }
   },
   {
    "title": {
-    "ko": "전기차 전환에 따른 구조적 수요 위험",
-    "en": "Structural Demand Risk from the EV Transition"
+    "ko": "2025년 이익 급감과 비영업 손익 변동성",
+    "en": "2025 Profit Decline and Non-Operating Earnings Volatility"
    },
    "body": {
-    "ko": "라디에이터·오일쿨러 등 내연기관 냉각 핵심 부품은 순수 전기차에서 필요성이 대폭 줄어들어, 글로벌 BEV 보급 가속화는 중장기적으로 신규 수주 감소 요인으로 작용한다. 하이브리드차 수요가 완충 역할을 하고 있으나, BEV 전환 속도가 예상을 앞지르거나 주요 고객사의 전기차 비중이 빠르게 확대될 경우 대응이 어려울 수 있다. 수소·EV 냉각 부품으로의 전환을 위한 R&D·설비 투자 기간 동안 기존 포트폴리오의 수요 하락과 신제품 매출 공백이 병존하는 전환기 리스크가 상존한다.",
-    "en": "Radiators, oil coolers, and other core ICE thermal components have significantly reduced relevance in pure battery-electric vehicles, meaning the global BEV penetration acceleration structurally erodes medium-to-long-term new order potential. Hybrid-vehicle demand provides a near-term buffer, but if BEV adoption outpaces forecasts or key customers shift to electrics faster than expected, adaptation becomes challenging. During the transition period of R&D and capex investment for hydrogen/EV thermal components, the company faces a simultaneous decline in legacy portfolio demand and a revenue gap before new products scale."
+    "ko": "2025년 영업이익과 순이익은 재료비·노무비 증가와 금융상품손상차손 인식으로 전년 대비 절반 가까이 줄었다. 영업이익률도 2024년 5.6%에서 2025년 2.8%로 낮아졌다. 2022년과 2026년 2분기처럼 순이익이 영업이익을 크게 상회하는 사례가 반복되는 점은 비영업 손익의 변동성이 실적 예측을 어렵게 만드는 요인이다.",
+    "en": "In 2025, operating profit and net profit both fell by nearly half year-on-year due to higher material and labor costs and a financial-instrument impairment charge. The operating margin also declined from 5.6% in 2024 to 2.8% in 2025. Recurring instances—such as in 2022 and Q2 2026—where net profit substantially exceeds operating profit highlight non-operating earnings volatility that complicates performance forecasting."
    }
   },
   {
    "title": {
-    "ko": "대외 변수 의존성과 낮은 시장 유동성",
-    "en": "Dependence on External Variables and Low Market Liquidity"
+    "ko": "루머성 테마 변동성과 정보 비대칭",
+    "en": "Rumor-Driven Thematic Volatility and Information Asymmetry"
    },
    "body": {
-    "ko": "주재료인 알루미늄 가격과 원-달러 환율은 원가율에 직접적인 영향을 미치는 대외 변수로, 회사가 통제하기 어려운 리스크 요인이다. 시가총액 규모가 소규모임에 따라 기관투자자의 유동성 공급이 제한적이고, 주가 변동성 확대 시 가격 충격을 흡수할 수요 기반이 부족할 수 있다. 전방 완성차 업체의 생산 축소, 중국산 경쟁 부품 확산, 글로벌 거시경제 둔화가 동시에 작용할 경우 매출과 이익이 함께 크게 위축될 수 있다.",
-    "en": "Aluminum prices and the KRW/USD exchange rate — both external variables the company cannot control — directly impact cost structures and operating margins. The small market capitalization limits institutional investor liquidity, and a thin demand base may result in outsized price shocks during volatile market conditions. A simultaneous combination of reduced automaker production, intensifying Chinese-made component competition, and a global macroeconomic slowdown could sharply compress both revenue and profits."
+    "ko": "회사는 엔비디아의 GPU 발열 문제 해결을 위한 국내 액침냉각 공급사 물색 소식이 나올 때마다 주가가 급등락했으나, 두 차례 모두 회사와 관련된 별도 공시는 확인되지 않았다. 회사명이 삼성그룹과 무관함에도 이름의 유사성으로 혼동이 발생하는 사례가 반복되고 있다. 이러한 테마성 변동성은 실제 실적과 괴리된 가격 움직임으로 이어질 수 있다.",
+    "en": "The stock has repeatedly swung sharply whenever reports emerged about Nvidia scouting domestic immersion-cooling suppliers to address GPU heat issues, yet no separate company-specific disclosure was confirmed on either occasion. Confusion recurs due to the similarity of the company's name to Samsung Group despite having no corporate relationship. Such thematic volatility can result in price moves disconnected from actual earnings."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "원자재·비용 리스크",
-    "en": "Raw Material and Cost Risk"
+    "ko": "산업/구조 리스크",
+    "en": "Industry/Structural Risk"
    },
    "body": {
-    "ko": "주재료인 알루미늄 가격 급등은 원가율을 직접 압박하며, 2025년 원자재 가격 인상이 마진 악화의 주요 원인으로 작용한 바 있다. 중국 정책 변화(증치세 환급 추가 조정 등)로 인한 비용 충격 재발 가능성도 완전히 배제할 수 없다. 고환율 지속 시 수입 알루미늄 조달 단가 상승과 함께 원가 압박이 심화될 수 있다.",
-    "en": "Surges in aluminum prices directly compress cost structures; rising raw material costs were a primary driver of margin deterioration in 2025. Residual risk from further Chinese policy changes — such as additional VAT adjustments — cannot be fully discounted. A prolonged high exchange rate environment would raise imported aluminum procurement costs, intensifying overall cost pressure."
+    "ko": "전기차 확산에 따라 기존 내연기관용 라디에이터·오일쿨러 수요 구조가 장기적으로 변화할 수 있다. 중장비·농기계 등 전방산업의 경기 민감도도 실적에 영향을 줄 수 있는 요인이다. 신사업의 매출 기여 시점이 불확실한 점도 구조적 리스크로 볼 수 있다.",
+    "en": "The demand structure for traditional internal-combustion radiators and oil coolers could shift over the long term as EV adoption spreads. Cyclicality in end markets such as heavy equipment and agricultural machinery is also a factor that can affect performance. Uncertainty over the timing of new-business revenue contribution is a further structural risk."
    }
   },
   {
    "cat": {
-    "ko": "전방 수요 둔화 및 통상 리스크",
-    "en": "Downstream Demand Slowdown and Trade Policy Risk"
+    "ko": "실적/수익성 리스크",
+    "en": "Earnings/Profitability Risk"
    },
    "body": {
-    "ko": "국내 자동차 내수시장은 가계부채 증가·인구 구조 변화 등 구조적 요인으로 170만 대 미만 박스권에 머물 가능성이 높으며, 개별소비세 감면 정책 중단 시 수요 급감 리스크가 상존한다. 미국 자동차 관세 정책이 재변동될 경우 현대·기아의 수출 물량 감소가 부품 발주 축소로 이어질 수 있다. 글로벌 보호무역 심화와 중국계 자동차 브랜드의 빠른 시장 확장은 전방산업 구조에 중장기적 불확실성을 가중시킨다.",
-    "en": "The domestic auto market is likely to remain below 1.7 million units due to structural headwinds including rising household debt and demographic shifts, with demand potentially dropping sharply if the individual consumption tax reduction lapses. Any reversal in U.S. auto tariff policy could reduce Hyundai and Kia export volumes, flowing through to lower parts order levels. Escalating global protectionism and the rapid market expansion of Chinese auto brands add medium-to-long-term uncertainty to the upstream industry structure."
+    "ko": "2025년 영업이익률이 2.8%까지 낮아지고 4분기 영업손실을 기록한 사례처럼 원가 부담과 비영업 손익 변동성이 이익의 예측 가능성을 낮출 수 있다. 재료비와 노무비 추가 상승 시 마진 압박이 재현될 가능성도 있다. 금융상품손상차손과 같은 비반복적 항목이 재차 반영될 경우 순이익 변동성이 확대될 수 있다.",
+    "en": "As seen in 2025, when the operating margin fell to 2.8% and the company posted a Q4 operating loss, cost pressure and non-operating earnings volatility can reduce the predictability of profits. Further increases in material and labor costs could reproduce margin pressure. If non-recurring items such as financial-instrument impairment charges recur, net profit volatility could widen further."
    }
   },
   {
    "cat": {
-    "ko": "EV·기술 전환 리스크",
-    "en": "EV and Technology Transition Risk"
+    "ko": "주가/테마 리스크",
+    "en": "Stock Price/Thematic Risk"
    },
    "body": {
-    "ko": "전기차 보급 가속화로 냉각 부품 사양이 배터리 열관리 시스템(BMS) 중심으로 전환되면서, 기존 내연기관 공조부품의 신규 수주 사이클이 단축될 수 있다. 수소전기버스 냉각 모듈 등 신제품의 대규모 양산 시점과 본격적 매출 기여까지는 상당한 시간이 소요될 가능성이 높다. 글로벌 자동차 OEM들의 내연기관 신규 플랫폼 개발 축소 방침이 중장기적으로 레거시 제품의 신규 수주 기회를 줄일 수 있다.",
-    "en": "As EV penetration accelerates, thermal component specifications are shifting toward battery thermal management systems (BMS), potentially shortening the new-order cycle for conventional ICE thermal parts. Scale production and revenue contribution from new products such as hydrogen bus cooling modules are likely to take considerable time to materialize. Global automakers' decisions to reduce new ICE platform development could structurally shrink new-order opportunities for legacy products over the medium-to-long term."
+    "ko": "시가총액이 0.1조원 수준으로 작아 유동성 제약과 테마성 수급에 따른 가격 변동성이 커질 수 있다. 엔비디아 액침냉각 관련 루머성 뉴스에 따른 급등락이 반복된 전례가 있으며, 이는 실제 실적과 무관하게 나타날 수 있다. 회사명의 삼성그룹 연관 오인 가능성도 정보 비대칭을 키우는 요인이다.",
+    "en": "With a market capitalization of around KRW 0.1 trillion, the stock is susceptible to liquidity constraints and heightened price volatility driven by thematic trading flows. There is a history of sharp swings tied to rumor-driven news about Nvidia immersion-cooling suppliers, which can occur independently of actual earnings. The potential for the company's name to be mistaken for a Samsung Group affiliate also adds to information asymmetry."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월",
-    "en": "July–August 2026"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "2026년 2분기(4~6월) 실적 공시 예정 — 계절적 성수기 구간에서 원가율 개선 흐름이 지속되는지, HVAC 내수 회복 여부가 연간 수익성 방향성의 핵심 확인 포인트다.",
-    "en": "Q2 2026 (April–June) earnings release due — the key check is whether cost-margin improvement continues through the seasonally stronger quarter and whether domestic HVAC demand shows signs of a meaningful recovery."
+    "ko": "2026년 3분기 실적 공시를 통해 2분기에 이어 영업이익 회복세가 지속되는지, 재료비·노무비 부담이 완화되는지 확인해야 한다.",
+    "en": "The Q3 2026 earnings disclosure should be checked to see whether the operating profit recovery seen in Q2 continues and whether material and labor cost pressures ease."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 내내",
-    "en": "Throughout H2 2026"
+    "ko": "지속 모니터링",
+    "en": "Ongoing monitoring"
    },
    "what": {
-    "ko": "현대자동차·기아차의 하반기 국내 생산 계획 및 HEV·EV 모델 라인업 변화가 삼성공조의 수주 수준과 제품 믹스에 직접 영향을 미치므로 지속 모니터링이 필요하다.",
-    "en": "Hyundai Motor and Kia's domestic production schedules and HEV/EV model lineup developments will directly influence Samsung Gongjo's order volumes and product mix; ongoing monitoring is warranted."
+    "ko": "엔비디아 등 글로벌 반도체·데이터센터 업체와의 액침냉각 관련 실제 공급계약이나 수주 공시가 나오는지 확인이 필요하다. 현재까지는 루머성 보도만 확인됐다.",
+    "en": "It is worth monitoring whether an actual supply contract or order disclosure related to immersion cooling for global semiconductor or data-center customers such as Nvidia materializes. So far only rumor-based reports have been confirmed."
    }
   },
   {
    "when": {
-    "ko": "2026년 상시",
-    "en": "Ongoing Throughout 2026"
+    "ko": "지속 모니터링",
+    "en": "Ongoing monitoring"
    },
    "what": {
-    "ko": "LME 알루미늄 현물가 및 원-달러 환율 추이 — 이 두 변수가 안정 또는 하락 전환 시 원가율 개선 속도가 빨라질 수 있으며, 반대로 상승 지속 시 수익성 회복이 지연될 수 있다.",
-    "en": "LME aluminum spot prices and the KRW/USD exchange rate — if both stabilize or decline, cost margin improvement can accelerate; if they remain elevated, the pace of profitability recovery could be delayed."
+    "ko": "수소전기버스용 150kW급 냉각 모듈 정부 과제의 진행 상황과 상용화 일정이 공개되는지 확인해야 한다.",
+    "en": "Progress on the government-supported 150kW hydrogen fuel-cell bus cooling module project and any disclosed commercialization timeline should be tracked."
    }
   },
   {
    "when": {
-    "ko": "2026~2027년",
-    "en": "2026–2027"
+    "ko": "2027년 2~3월경",
+    "en": "Around February–March 2027"
    },
    "what": {
-    "ko": "수소전기버스용 냉각 모듈 정부 R&D 과제 완료 및 양산·공급 계약 체결 여부 — 이 이정표 달성 여부가 중장기 제품 다각화 전략의 실현 가능성을 가늠하는 중요한 지표가 된다.",
-    "en": "Completion of the government-funded hydrogen bus cooling module R&D project and any mass-production or supply contract signings — a key milestone for assessing the viability of the company's medium-to-long-term product diversification strategy."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월(정기 주주총회)",
-    "en": "March 2027 (Annual General Meeting)"
-   },
-   "what": {
-    "ko": "2026년 주당 배당금(DPS) 확정 발표 — 2026년 연간 수익성 개선 폭과 회사의 주주환원 정책 방향을 동시에 확인할 수 있는 중요 일정이다.",
-    "en": "Confirmation of the 2026 DPS — simultaneously reveals the scale of full-year 2026 profitability improvement and the direction of the company's shareholder return policy."
+    "ko": "2026년 사업보고서 및 결산배당 공시를 통해 2026년 연간 실적 확정치와 배당 정책 변화 여부를 확인해야 한다.",
+    "en": "The 2026 annual business report and year-end dividend disclosure should be checked to confirm finalized full-year 2026 results and any change in dividend policy."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "삼성공조는 57년 업력을 바탕으로 창원에 생산 거점을 두고 자동차 공조부품 분야에 집중해온 코스피 상장 중견기업으로, 부채비율 13.3%·지배주주 자본 2,925억원의 탄탄한 재무구조와 연간 100억원 이상의 안정적 영업현금흐름이 핵심 강점이다. 2022년 9.1%에 달하던 OPM이 2025년 2.8%로 급격히 하락하고 4분기에는 영업손실까지 기록하는 등 수익성 훼손이 심화된 점은 주요 우려 사항으로, 중국 증치세 환급 폐지, 알루미늄 가격 인상, HVAC 내수 부진이 복합적으로 작용한 결과다. 2026년 1분기에는 매출 감소에도 불구하고 원가 개선으로 영업이익이 전년 동기 대비 22.1% 반등하는 긍정적 변화가 나타났으나, 이 흐름이 연간 단위의 구조적 회복으로 이어질지는 알루미늄 가격, 환율, 전방 완성차 생산 동향 등 외부 변수에 달려 있다. 중장기적으로는 수소전기버스 냉각 모듈 개발, 인도네시아·베트남 해외 법인을 통한 아세안 진출, 다채로운 고객 포트폴리오가 내연기관 의존도를 낮추고 새로운 성장 기반을 구축하는 방향성으로 작동하고 있다. 전방 업황은 2026년 한국 자동차 산업의 완만한 회복과 미국 관세 일부 완화로 단기적으로 우호적인 흐름이지만, 중국 전기차 경쟁 심화와 BEV 가속 보급에 따른 구조적 수요 변화는 지속적인 모니터링이 필요한 핵심 변수로 남는다. 결론적으로 삼성공조는 재무 내구성과 자산가치 측면에서 견고한 기반을 보유하고 있으나, 수익성 회복의 속도·지속성 및 미래 모빌리티 전환 대응력이 중장기 기업 가치의 핵심 결정 변수가 될 것이다.",
-   "en": "Samsung Gongjo is a KOSPI-listed mid-sized automotive thermal management parts specialist with 57 years of operating history and a Changwon production base, underpinned by an exceptionally strong financial structure — a 13.3% debt ratio, KRW 292.5 billion in owner-attributable equity, and annual operating cash flow consistently exceeding KRW 10 billion. The sharp and persistent OPM decline from 9.1% in 2022 to 2.8% in 2025 — culminating in an operating loss in Q4 2025 — is the primary concern, driven by the compound impact of China's VAT refund elimination, rising aluminum costs, and weak domestic HVAC demand. Q1 2026 provided an encouraging profit recovery signal, with operating profit rising 22.1% year-on-year despite a revenue decline, though whether this translates into a sustained structural recovery remains dependent on external variables including aluminum prices, exchange rates, and front-end automaker production trends. Over the medium-to-long term, hydrogen bus cooling module development, ASEAN expansion via Indonesian and Vietnamese subsidiaries, and a diversified customer portfolio are moving the company toward reducing ICE dependence and building new growth platforms. The near-term industry backdrop is mildly supportive — a gradual Korean auto market recovery in 2026 and some U.S. tariff moderation — but structural demand shifts driven by intensifying Chinese EV competition and accelerating BEV adoption require ongoing monitoring as material medium-term risks. In summary, Samsung Gongjo demonstrates solid financial durability and net-asset resilience, but the pace and sustainability of profitability recovery — combined with the effectiveness of its transition toward future-mobility products — will be the central determinants of its medium-to-long-term value."
+   "ko": "삼성공조는 라디에이터·오일쿨러·HVAC 등 자동차 열교환 부품을 주력으로 하는 소형 코스피 상장사로, 2025년에는 원가 부담과 금융상품손상차손 여파로 영업이익률이 2.8%까지 낮아지고 4분기에는 영업손실을 기록했다. 다만 2026년 1분기와 2분기 연속으로 영업이익 흑자를 회복하며 이익 흐름이 개선되는 모습을 보였고, 최근 네 개 분기 합산 순이익은 4분기 적자를 상당 부분 상쇄했다. 재무구조는 부채비율이 지속적으로 낮아지고 영업활동현금흐름도 매년 안정적으로 유지되는 등 보수적으로 관리되고 있다. 사업 측면에서는 수소전기버스용 냉각 모듈 개발과 해외 신규 사업 모색을 통해 전통적인 내연기관 부품 의존도를 낮추려는 시도가 이어지고 있다. 동시에 엔비디아 액침냉각 공급사 물색 관련 루머성 뉴스에 주가가 반복적으로 반응해왔으나, 이와 관련한 회사의 구체적 공시는 아직 확인되지 않아 실제 사업 기여 여부는 향후 공시를 통해 검증이 필요하다. 전동화 전환에 따른 전통 부품 수요 구조 변화와 비영업 손익의 변동성은 앞으로도 지속적으로 관찰해야 할 변수다.",
+   "en": "Samsung Climate Control is a small-cap KOSPI-listed maker of automotive heat-exchange components such as radiators, oil coolers, and HVAC parts, whose operating margin fell to 2.8% in 2025 amid cost pressure and a financial-instrument impairment charge, resulting in a Q4 operating loss. However, the company returned to operating profit in both Q1 and Q2 2026, showing an improving earnings trajectory, and net profit summed over the trailing four quarters offset much of the Q4 loss. Its balance sheet has been managed conservatively, with a steadily declining debt ratio and stable operating cash flow maintained every year. On the business side, the company continues efforts to reduce reliance on traditional internal-combustion-engine parts through development of a hydrogen fuel-cell bus cooling module and exploration of new overseas ventures. At the same time, the stock has repeatedly reacted to rumor-driven news about Nvidia scouting immersion-cooling suppliers, though no specific company disclosure related to this has been confirmed, meaning any actual business contribution will need to be verified through future disclosures. Shifts in demand structure for traditional parts driven by vehicle electrification, along with volatility in non-operating earnings, remain variables that warrant continued observation."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A006660",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A006660&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A006660&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
-  "https://www.valueline.co.kr/finance/summary/006660",
-  "https://www.valueline.co.kr/finance/mri/006660",
   "https://alphasquare.co.kr/home/stock-summary?code=006660",
-  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=006660",
-  "https://m.thinkpool.com/item/006660",
+  "https://www.investing.com/equities/samsung-climat-earnings",
+  "https://littlebproject.com/stock/006660/290/44747",
+  "https://stocks.pluconnect.com/006660_%EC%82%BC%EC%84%B1%EA%B3%B5%EC%A1%B0/",
   "https://littlebproject.com/stock/006660/290/56194",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260319001724&docno=&viewerhost=",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/ssr0011",
-  "https://www.catch.co.kr/Comp/CompSummary/381950",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/S3Axd2drVW9qNDEwcjdyVkxuaEFNZz09/company_nm/%EC%82%BC%EC%84%B1%EA%B3%B5%EC%A1%B0(%EC%A3%BC)",
+  "https://alphasquare.co.kr/home/stock-issue?code=006660&type=news",
+  "https://m.finance.daum.net/quotes/A006660",
+  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=006660",
+  "https://littlebproject.com/stock/006660/290/44288",
+  "https://moneypie.net/wiki/v/삼성공조",
   "https://app.rndcircle.io/company/ebcc514e-f0dc-5dd1-ac2c-1aabae89d577",
-  "https://www.incruit.com/company/2825615/",
-  "https://www.jobplanet.co.kr/companies/30246/landing/%EC%82%BC%EC%84%B1%EA%B3%B5%EC%A1%B0",
-  "https://changwon.grandculture.net/changwon/toc/GC02201184",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20240319000987&docno=&viewerhost="
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20240319000987&docno=&viewerhost=",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/S3Axd2drVW9qNDEwcjdyVkxuaEFNZz09/company_nm/%EC%82%BC%EC%84%B1%EA%B3%B5%EC%A1%B0(%EC%A3%BC)",
+  "https://deepsearch.com/analytics/company-analysis/KRX:006660/peer?c-name=SamsungClimateContro&c-symbol=KRX%3A006660",
+  "https://www.ggilbo.com/news/articleView.html?idxno=1167659",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/ssr0011",
+  "https://kaica.or.kr/business/view.php?no=248&keycode=&keyword=&page=13",
+  "https://zdnet.co.kr/view/?no=20260514152442"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "006660",
  "name": "삼성공조",
  "name_en": "SAMSUNG CLIMATE CONTROL CO.,LTD",
@@ -233,9 +223,9 @@
   "자동차"
  ],
  "market": "코스피",
- "reportDate": "2026-06-18",
- "reportTs": "2026-06-18 23:40",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 09:16",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 13680,
-   "mcap": 0.1112,
+   "price": 12310,
+   "mcap": 0.1,
    "shares": 8126314,
    "total_shares": 8126314,
    "wavg_shares": 8126924,
-   "per": 9.62,
+   "per": 8.657,
    "eps": 1422,
-   "pbr": 0.3694,
+   "pbr": 0.3324,
    "bps": 37038,
    "roe_ttm": 3.9,
    "ttm_window": "2025Q3~2026Q2",
@@ -356,7 +346,7 @@
    "bps_krx": 35993.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 80.0,
-   "div": 0.58
+   "div": 0.65
   }
  }
 }

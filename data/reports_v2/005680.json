@@ -1,227 +1,217 @@
 {
  "title": {
-  "ko": "콘덴서 본업 둔화 속 밸류업·합작법인 추진",
-  "en": "Capacitor Slowdown Meets Value-Up Push"
+  "ko": "콘덴서 본업 회복세와 주주환원 압박의 교차점",
+  "en": "Capacitor Business Recovery Meets Shareholder Return Pressure"
  },
  "lead": {
-  "ko": "본업인 알루미늄 전해콘덴서 매출은 3년 연속 축소됐지만, 회사는 밸류업 계획과 합작법인 추진으로 주주환원·사업구조 재편 논의를 병행하고 있다.",
-  "en": "While core aluminum electrolytic capacitor sales have contracted for three straight years, the company is simultaneously pursuing a value-up plan and a joint venture to restructure its business and shareholder returns."
+  "ko": "삼영전자는 매출이 4년 연속 줄어드는 가운데서도 영업이익률이 개선되고 있으며, 2026년 상반기 실적 회복과 함께 행동주의 주주의 지배구조·자본배치 개선 요구가 동시에 부각되고 있다.",
+  "en": "Samyoung Electronics has improved its operating margin even as revenue has declined for four consecutive years, while a 2026 first-half earnings recovery coincides with activist investor demands for governance and capital-allocation reform."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 1,497억원(-8.1%), 영업이익 92억원(+26.4%)이나 순이익은 51억원(-53.7%)으로 손상차손 영향이 컸다.",
-   "en": "2025 consolidated revenue fell 8.1% to KRW 149.7bn while operating profit rose 26.4% to KRW 9.2bn, but net profit dropped 53.7% to KRW 5.1bn due to impairment charges."
+   "ko": "연결 매출은 2022년 2,278억원에서 2025년 1,497억원으로 감소했으나 영업이익률은 2023년 3.6%에서 2025년 6.2%로 개선됐다.",
+   "en": "Consolidated revenue fell from KRW 227.8 billion in 2022 to KRW 149.7 billion in 2025, while operating margin improved from 3.6% in 2023 to 6.2% in 2025."
   },
   {
-   "ko": "2025년 4분기 지배주주 순이익은 -73.6억원 적자를 기록했으나 2026년 1~2분기는 각각 34.9억원, 54.9억원으로 회복세를 보였다.",
-   "en": "Owner net profit posted a KRW -7.36bn loss in Q4 2025 but recovered to KRW 3.49bn and KRW 5.49bn in Q1 and Q2 2026, respectively."
+   "ko": "2025년 4분기 일회성 손실로 지배주주순이익이 급감했으나 2026년 1~2분기 매출·영업이익·순이익이 순차적으로 회복됐다.",
+   "en": "A one-off loss in Q4 2025 sharply reduced net income attributable to owners, but revenue, operating profit, and net income all recovered sequentially in Q1-Q2 2026."
   },
   {
-   "ko": "최대주주는 일본 니폰케미콘(지분율 33.4%)이며, 삼영전자·아비코전자·일본케미콘 3사가 콘덴서·MLCC·인덕터를 포괄하는 합작법인 설립을 추진 중이다.",
-   "en": "Nippon Chemi-Con of Japan is the largest shareholder with a 33.4% stake, and Samyoung, Abico Electronics, and Nippon Chemi-Con are jointly pursuing a venture spanning capacitors, MLCCs, and inductors."
+   "ko": "삼영전자·아비코전자·일본케미콘 3사는 종합 전자부품 판매를 위한 합병법인 설립을 추진 중이며, 투자금액과 일정은 최초 계획보다 축소·단축됐다.",
+   "en": "Samyoung Electronics, Abco Electronics, and Nippon Chemi-Con are pursuing a joint merged entity for comprehensive electronic component sales, though the planned investment amount and timeline were later scaled down."
   },
   {
-   "ko": "회사는 4월 밸류업 계획을 자율공시했고, 조세특례제한법상 고배당기업으로 분류되며 지난해 배당성향은 순이익을 초과하는 111%였다.",
-   "en": "The company voluntarily disclosed a value-up plan in April and is classified as a high-dividend company under tax incentive law, with last year's payout ratio exceeding net profit at 111%."
+   "ko": "차파트너스자산운용은 이사회 독립성과 자본 배치 효율성을 문제 삼아 감사 선임과 자사주 매입을 요구하는 주주제안에 나섰다.",
+   "en": "Cha Partners Asset Management filed shareholder proposals demanding an auditor appointment and share buybacks, citing concerns over board independence and capital-allocation efficiency."
   },
   {
-   "ko": "부채비율 4.4%의 견고한 재무구조를 바탕으로 전장·AI서버·데이터센터용 고부가 콘덴서 개발에 주력하고 있다.",
-   "en": "Backed by a solid 4.4% debt ratio, the company is focusing on developing high-value-added capacitors for automotive electronics, AI servers, and data centers."
+   "ko": "회사는 순현금 중심의 재무구조를 유지하며 자율공시 형태의 밸류업 계획을 발표했다.",
+   "en": "The company maintains a net-cash-centered balance sheet and has voluntarily disclosed a corporate value-up plan."
   }
  ],
  "business": {
-  "ko": "삼영전자는 1968년 설립된 국내 알루미늄 전해콘덴서 시장 1위 전문 제조기업으로, 알루미늄 전해콘덴서·고체콘덴서·하이브리드콘덴서를 생산·판매한다. 최근 사업부문별 매출 비중은 콘덴서 약 88%, 콘덴서 자재 약 12% 수준이며, 과거 공시 기준으로는 전해콘덴서 82%, 콘덴서 재료 18%, 지역별로는 한국 81%, 중국 19%의 비중을 보였다. 최대주주는 지분율 33.4%를 보유한 일본 니폰케미콘(NCC)으로, 하이브리드콘덴서 국산화 등 기술 협력을 지속하고 있다. 종속기업으로는 중국 청도삼영전자유한공사가 있으며, 삼영홍콩은 청산됐다. 주요 고객은 TV·생활가전 등 정보통신 세트업체이며, 국내에서는 삼화전기와 경쟁하는 가운데 동남아·중국산 저가 제품 유입으로 가격 경쟁이 심화된 상태다. 최근에는 전기차·자율주행차 온보드차저(OBC)용 TLF·NBF 시리즈, 저온·고온 환경용 PFD 시리즈 등 전장부품 특화 제품과, 일본케미콘과의 기술협력을 통한 장수명 하이브리드 콘덴서(FPV/FPW/FRV 시리즈)를 개발해 ADAS·헤드업디스플레이 등 고부가 응용처로 제품군을 확장하고 있다. 회사는 4월 자율공시로 밸류업 계획을 발표했고, 삼영전자·아비코전자·일본케미콘이 참여하는 합작법인을 통해 콘덴서·MLCC·인덕터를 포괄하는 종합 부품사로의 확장을 추진 중이다.",
-  "en": "Founded in 1968, Samyoung Electronics is Korea's leading manufacturer of aluminum electrolytic capacitors, also producing solid and hybrid capacitors. Recent segment revenue mix shows capacitors at roughly 88% and capacitor materials at roughly 12%, while an earlier disclosure showed electrolytic capacitors at 82% and materials at 18%, with Korea accounting for 81% and China 19% of regional sales. The largest shareholder is Japan's Nippon Chemi-Con (NCC), holding a 33.4% stake, with which the company maintains ongoing technology cooperation including localization of hybrid capacitors. Its subsidiary Qingdao Samyoung Electronics operates in China, while Samyoung Hong Kong has been liquidated. Major customers are consumer electronics and IT set makers such as TV and home appliance manufacturers, and the company competes domestically with Samhwa Capacitor amid intensifying price competition from low-cost Southeast Asian and Chinese products. More recently, the company has expanded into automotive-specific products such as the TLF and NBF series for electric vehicle on-board chargers and the PFD series for low/high-temperature environments, alongside long-life hybrid capacitors (FPV/FPW/FRV series) developed with Nippon Chemi-Con for ADAS and head-up display applications. In April, the company voluntarily disclosed a value-up plan and is pursuing a joint venture with Abico Electronics and Nippon Chemi-Con aimed at expanding into a comprehensive components maker spanning capacitors, MLCCs, and inductors."
+  "ko": "삼영전자공업은 1968년 설립된 콘덴서 전문 제조기업으로 알루미늄 전해콘덴서, 고체콘덴서, 하이브리드콘덴서를 생산·판매하고 있다. 국내 성남·평택 사업장과 중국 생산법인을 통해 정보통신 기기와 로봇, 드론, IOT 산업의 수요 증가에 대응하고 있다. 해외에서는 알루미늄 전해콘덴서를 생산하는 청도삼영전자유한공사와 중국 남부 판매를 담당하는 삼영홍콩유한공사 등을 종속기업으로 보유하고 있다. 최대주주는 일본 상장사인 일본케미콘(NCC)이며, 이 기술 도입을 바탕으로 하이브리드 콘덴서 국산화와 전장부품·반도체·네트워크 분야 전해콘덴서 개발, 전기차 충전시스템 대응 양산 설비 구축을 진행하고 있다. 국내 전해콘덴서 시장에서는 동사와 삼화전기 등이 경쟁하고 있으며, 대만, 동남아, 중국 등지로부터 저가 제품이 수입되고 있어 완전경쟁시장의 특성을 보인다. 주요 고객은 가전과 정보통신 세트업체로, 최근에는 SK하이닉스 등 서버용 콘덴서 수요도 늘고 있다. 사업구조는 콘덴서 제품과 원부자재(자재) 부문으로 이원화돼 있으며, 자동차 전장과 AI 서버, 신재생에너지 등 고부가 응용처 비중 확대를 추진 중이다. 회사는 아비코전자·일본케미콘과 함께 종합 전자부품 판매를 위한 합병법인 설립을 추진해 사업 영역 확장을 모색하고 있다.",
+  "en": "Samyoung Electronics Co., Ltd., founded in 1968, is a specialized capacitor maker that produces and sells aluminum electrolytic capacitors, solid capacitors, and hybrid capacitors. Through its Seongnam and Pyeongtaek plants in Korea and a production subsidiary in China, it addresses growing demand from information and communication devices, robots, drones, and IoT industries. Overseas, it holds Qingdao Samyoung Electronics Co., Ltd., which manufactures aluminum electrolytic capacitors, and Samyoung Hong Kong Ltd., which handles sales in southern China, as subsidiaries. Its largest shareholder is Nippon Chemi-Con (NCC), a Japanese listed company, and technology transferred from NCC underpins localization of hybrid capacitors as well as development of electrolytic capacitors for automotive electronics, semiconductors, and network applications, alongside production equipment for EV charging systems. The domestic electrolytic capacitor market is a fully competitive one, with Samyoung competing against Samhwa Capacitor and others while facing a steady inflow of low-priced products from Taiwan, Southeast Asia, and China. Its main customers are home appliance and IT set makers, and demand for server-grade capacitors from customers such as SK hynix has recently increased. The business is split into capacitor products and raw-material sales, and the company is working to expand the share of higher value-added applications such as automotive electronics, AI servers, and renewable energy. Samyoung is also pursuing the establishment of a merged entity with Abco Electronics and Nippon Chemi-Con to sell a broader range of electronic components, seeking to expand its business scope."
  },
  "earnings": {
-  "ko": "연간 실적은 2022년 매출 2,278억원, 영업이익 163억원(영업이익률 7.1%), 지배주주 순이익 182억원을 기록한 이후 매출이 꾸준히 축소되는 흐름을 보였다. 2023년에는 매출 1,773억원, 영업이익 65억원(영업이익률 3.6%), 순이익 138억원으로 마진이 저하됐고, 2024년에는 매출 1,630억원, 영업이익 73억원(영업이익률 4.5%), 순이익 111억원으로 소폭 개선됐다. 2025년에는 매출이 1,497억원으로 전년 대비 감소했지만 영업이익은 92억원으로 늘어 영업이익률이 6.2%까지 개선됐다. 다만 순이익은 51억원으로 전년 대비 절반 이상 줄었는데, 이는 자산가치 조정에 따른 손상차손이 반영된 영향이다. 분기별로 보면 2025년 3분기 영업이익 10.7억원, 4분기 5.9억원까지 이익이 저점을 형성했고, 4분기 지배주주 순이익은 -73.6억원의 적자를 기록했다. 이후 2026년 1분기 영업이익 21.4억원, 순이익 34.9억원, 2분기 영업이익 31.1억원, 순이익 54.9억원으로 회복세를 보였다. 다만 2026년 1분기는 전년동기 대비로는 매출 2.9%, 영업이익 35.6%, 순이익 24.0% 감소한 수준이었던 것으로 파악되며, 글로벌 경기 둔화와 IT 수요 회복 지연, 콘덴서 부문 가격 경쟁 및 원자재·환율 변동성이 주요 원인으로 지목됐다.",
-  "en": "Annual results show revenue of KRW 227.8bn, operating profit of KRW 16.3bn (7.1% margin), and owner net profit of KRW 18.2bn in 2022, after which revenue steadily contracted. In 2023, revenue fell to KRW 177.3bn with operating profit of KRW 6.5bn (3.6% margin) and net profit of KRW 13.8bn as margins deteriorated, before a modest improvement in 2024 to revenue of KRW 163.0bn, operating profit of KRW 7.3bn (4.5% margin), and net profit of KRW 11.1bn. In 2025, revenue declined further to KRW 149.7bn year-on-year, but operating profit rose to KRW 9.2bn, lifting the operating margin to 6.2%. Net profit, however, fell by more than half to KRW 5.1bn, reflecting impairment charges from asset value adjustments. On a quarterly basis, profitability bottomed with operating profit of KRW 1.07bn in Q3 2025 and KRW 0.59bn in Q4 2025, with owner net profit posting a loss of KRW -7.36bn in the fourth quarter. Performance then recovered, with operating profit of KRW 2.14bn and net profit of KRW 3.49bn in Q1 2026, followed by operating profit of KRW 3.11bn and net profit of KRW 5.49bn in Q2 2026. Separately, Q1 2026 year-on-year figures reportedly showed revenue down 2.9%, operating profit down 35.6%, and net profit down 24.0%, attributed to a global economic slowdown, delayed IT demand recovery, price competition in the capacitor segment, and raw material and foreign exchange volatility."
+  "ko": "삼영전자의 연결 매출액은 2022년 2,278억원에서 2023년 1,773억원, 2024년 1,630억원, 2025년 1,497억원으로 4년 연속 줄었다. 반면 영업이익률은 2022년 7.1%에서 2023년 3.6%로 낮아진 뒤 2024년 4.5%, 2025년 6.2%로 다시 개선되며 매출 감소에도 원가 구조 효율화가 진행된 모습을 보였다. 다만 지배주주순이익은 2022년 182억원, 2023년 138억원, 2024년 111억원에서 2025년 51억원으로 뚜렷하게 줄었는데, 분기 실적을 뜯어보면 2025년 4분기에 영업이익 5.9억원의 흑자를 냈음에도 지배주주순이익이 -73.6억원의 손실로 전환된 일회성 요인이 크게 작용한 결과다. 실제로 지배주주순이익은 2025년 2분기 52.3억원에서 3분기 26.6억원으로 줄었다가 4분기 손실로 전환됐고, 2026년 1분기 34.9억원, 2분기 54.9억원으로 다시 회복하는 흐름을 보였다. 매출 역시 2025년 3분기 354억원, 4분기 345억원까지 낮아진 뒤 2026년 1분기 392억원, 2분기 417억원으로 반등하며 저점을 통과하는 모습이다. 영업이익도 2025년 4분기 5.9억원까지 축소됐다가 2026년 1분기 21.4억원, 2분기 31.1억원으로 회복세를 이어갔다. 연간 영업활동현금흐름은 2022년 62억원에서 2023년 309억원, 2024년 398억원으로 늘었다가 2025년 301억원으로 소폭 줄었으나 여전히 순이익보다 큰 규모의 현금창출력을 유지했다. 종합하면 매출 규모는 축소되는 가운데 영업 레벨의 수익성은 개선되고 있지만, 순이익은 분기별 변동성이 커진 한 해였다.",
+  "en": "Samyoung Electronics' consolidated revenue declined for four consecutive years, from KRW 227.8 billion in 2022 to KRW 177.3 billion in 2023, KRW 163.0 billion in 2024, and KRW 149.7 billion in 2025. Operating margin, however, fell from 7.1% in 2022 to 3.6% in 2023 before recovering to 4.5% in 2024 and 6.2% in 2025, suggesting cost-structure efficiency improved even as revenue shrank. Net income attributable to owners nonetheless dropped sharply, from KRW 18.2 billion in 2022 and KRW 13.8 billion in 2023 to KRW 11.1 billion in 2024 and just KRW 5.1 billion in 2025; a quarterly breakdown shows this was driven largely by a one-off item in Q4 2025, when the company posted an operating profit of KRW 0.59 billion but still swung to a net loss attributable to owners of KRW 7.36 billion. Net income attributable to owners fell from KRW 5.23 billion in Q2 2025 to KRW 2.66 billion in Q3 2025, turned negative in Q4 2025, then recovered to KRW 3.49 billion in Q1 2026 and KRW 5.49 billion in Q2 2026. Revenue likewise bottomed at KRW 35.4 billion in Q3 2025 and KRW 34.5 billion in Q4 2025 before rebounding to KRW 39.2 billion in Q1 2026 and KRW 41.7 billion in Q2 2026. Operating profit similarly shrank to KRW 0.59 billion in Q4 2025 before recovering to KRW 2.14 billion in Q1 2026 and KRW 3.11 billion in Q2 2026. Annual operating cash flow rose from KRW 6.2 billion in 2022 to KRW 30.9 billion in 2023 and KRW 39.8 billion in 2024, before easing slightly to KRW 30.1 billion in 2025, remaining larger than reported net income throughout. Overall, while revenue scale contracted, operating-level profitability improved, though net income showed heightened quarter-to-quarter volatility during the year."
  },
  "industry": {
-  "ko": "글로벌 알루미늄 전해콘덴서 시장은 2022년 기준 약 52억달러 규모로 추정되며, 2026년까지 연평균 3.6% 수준의 안정적 성장이 예상된 바 있다. 다만 주요 전방산업인 TV·생활가전·산업용 기기 수요는 성장이 둔화되고 있고, 경쟁 심화에 따른 제품가격 인하 압박도 지속되는 것으로 파악된다. 반면 자동차 전장부품 채용 확대와 ICT 기기용 수요 증대는 시장 확장을 뒷받침하는 요인으로 꼽힌다. 국내 경쟁구도에서는 삼화전기와 경쟁하며, 동남아·중국산 저가 제품의 유입이 가격 경쟁을 심화시키는 요인으로 작용하고 있다. 회사는 이러한 환경에서 자동차 전장, AI 서버, 데이터센터, 신재생에너지 등 고부가 응용처로 제품 포트폴리오를 이동시키는 전략을 취하고 있으며, 이 분야는 중장기적으로 성장세가 지속될 것으로 언급된다. 최대주주인 일본케미콘 역시 2021~2022년 일본 행동주의 펀드로부터 보유 현금 및 지분 활용을 요구받은 바 있어, 그룹 차원의 자산 효율화 압력이 삼영전자의 밸류업 논의에도 영향을 미치는 구도로 해석될 수 있다.",
-  "en": "The global aluminum electrolytic capacitor market was estimated at roughly USD 5.2 billion in 2022, with steady annual growth of about 3.6% projected through 2026. However, demand growth in major downstream sectors such as TVs, home appliances, and industrial equipment has been slowing, and price-cutting pressure from intensifying competition persists. Conversely, expanding adoption in automotive electronics and rising demand from ICT devices are cited as factors supporting market expansion. Domestically, the company competes with Samhwa Capacitor, while the influx of low-cost products from Southeast Asia and China intensifies price competition. In this environment, the company is shifting its product portfolio toward higher-value applications such as automotive electronics, AI servers, data centers, and renewable energy, areas expected to sustain growth over the medium to long term. Notably, the largest shareholder Nippon Chemi-Con itself faced demands from a Japanese activist fund in 2021-2022 to utilize its cash holdings and shareholdings, a dynamic that can be interpreted as influencing the broader group-level pressure for asset efficiency now reflected in Samyoung's value-up discussions."
+  "ko": "전방 시장에서는 SK하이닉스향 서버용 전해콘덴서의 공급 증가에도 생활가전 산업의 부진과 제품가격 하락 등으로 매출 규모가 축소되는 흐름이 이어지고 있다. 2026년 1분기에는 글로벌 경기 둔화와 IT 수요 회복 지연으로 범용 제품 시장의 성장이 제한적이었고, 콘덴서 부문 가격 경쟁과 원자재·환율 변동성으로 제조원가 부담이 커져 실적이 하락한 것으로 나타났다. 경쟁 구도 측면에서는 국내 업체 중에선 삼화전기와 경쟁하는 가운데, 동남아·중국산 저가 제품 유입으로 가격 경쟁이 심화된 상태다. 다만 중장기적으로는 자동차 전장, AI 서버, 데이터센터, 신재생에너지 분야 중심으로 성장세가 지속되며 고부가 제품군 수요도 증가하고 있다는 평가가 나온다. 회사도 자율주행, 5G 등 수요 증가에 대응해 하이브리드콘덴서 국산화와 AI 서버 및 전기차 시장 확대에 맞춘 제품 개발을 지속하고 있다. 다만 알루미늄 전해콘덴서 자체가 대만·동남아·중국의 저가 공급 압력에 노출된 성숙 산업이라는 점에서 구조적 가격 경쟁은 상수로 남아 있다. 경쟁사 삼화전기가 최근 AI 데이터센터 관련 고부가 제품 확대로 별도의 재평가 흐름을 보인 것과 비교하면, 삼영전자의 사업 포지셔닝 변화는 아직 초기 단계로 판단된다.",
+  "en": "In end-markets, revenue continues to contract as growing server-grade electrolytic capacitor supply to SK hynix is offset by weakness in the home appliance industry and falling product prices. In Q1 2026, global economic deceleration and delayed IT demand recovery limited growth in general-purpose products, while pricing competition in capacitors and raw-material and foreign-exchange volatility raised manufacturing cost burdens and pressured earnings. On the competitive front, Samyoung competes domestically mainly with Samhwa Capacitor, and price competition has intensified amid a steady inflow of low-priced products from Southeast Asia and China. Even so, some assessments note that medium- to long-term growth continues, centered on automotive electronics, AI servers, data centers, and renewable energy, with rising demand for higher value-added product lines. The company itself continues product development targeting autonomous driving, 5G-driven demand, localization of hybrid capacitors, and expansion into AI server and EV markets. Nonetheless, because aluminum electrolytic capacitors remain a mature industry exposed to low-cost supply pressure from Taiwan, Southeast Asia, and China, structural price competition is likely to persist as a constant. Compared with competitor Samhwa Capacitor, which has recently seen a separate re-rating driven by expansion into AI data-center-related, higher value-added products, Samyoung's shift in business positioning appears to still be at an early stage."
  },
  "outlook": {
-  "ko": "회사는 지난 4월 자율공시 방식으로 밸류업 계획을 발표했으며, 조세특례제한법상 고배당기업으로 분류돼 지난해 배당성향이 순이익을 초과하는 111%에 이른 것으로 파악된다. 다만 비영업자산 유동화나 자본효율 목표와 같은 구체적 실행계획은 아직 제시되지 않은 것으로 보인다. 동시에 삼영전자·아비코전자·일본케미콘 3사가 참여하는 합작법인 설립을 추진 중인데, 콘덴서·MLCC·인덕터를 포괄하는 종합 부품사로의 확장을 목표로 하지만 투자 규모는 19억원 수준으로 보유 현금성자산 대비 미미한 편이다. 제품 측면에서는 전기차 OBC용 TLF·NBF 시리즈, 저온·고온 환경용 PFD 시리즈, 일본케미콘과 공동 개발한 장수명 하이브리드 콘덴서(FPV/FPW/FRV 시리즈) 등을 통해 전장·5G·AI용 고부가 콘덴서 공급 확대를 추진할 방침이다. 다만 이러한 신제품군이 매출에 기여하는 구체적 규모는 아직 공개되지 않았다. 전방산업인 TV·가전 수요의 안정화 여부와 콘덴서 가격 경쟁 완화 여부가 향후 실적 회복 속도를 가늠하는 변수가 될 것으로 보인다.",
-  "en": "The company announced a value-up plan via voluntary disclosure in April, and is classified as a high-dividend company under Korea's Tax Incentive Limitation Act, with last year's payout ratio reportedly exceeding net profit at 111%. However, concrete execution plans such as monetizing non-operating assets or setting capital efficiency targets do not appear to have been presented yet. At the same time, the company is pursuing a joint venture involving Samyoung, Abico Electronics, and Nippon Chemi-Con aimed at expanding into a comprehensive components maker spanning capacitors, MLCCs, and inductors, though the investment scale of roughly KRW 1.9 billion is modest relative to the company's cash holdings. On the product side, the company plans to expand supply of high-value-added capacitors for automotive, 5G, and AI applications through the TLF/NBF series for EV on-board chargers, the PFD series for extreme temperature environments, and long-life hybrid capacitors (FPV/FPW/FRV series) co-developed with Nippon Chemi-Con. The specific revenue contribution of these new product lines has not yet been disclosed. Whether demand in TV and appliance end markets stabilizes, and whether price competition in capacitors eases, are likely to be key variables determining the pace of any earnings recovery."
+  "ko": "회사는 종합 전자부품기업으로의 성장과 매출확대를 목표로 삼영전자·아비코전자·일본케미콘 3사가 투자하는 합병법인 설립을 추진하고 있다. 이 합병법인은 알루미늄 전해콘덴서, MLCC, 바리스터, 전기이중층콘덴서, 인덕터 등 종합 전자부품을 판매하며 전장과 반도체, AI시장 등에 대한 진입 확대를 목표로 하고, 2028년 약 350억원 매출과 베트남 인덕터 제조공장 추진, 동남아 등 해외판매거점 확대를 제시했다. 다만 2026년 3월 추진일정 종료일이 2026년 12월 31일에서 2026년 5월 28일로 앞당겨지고, 예상투자금액도 34억원에서 18.8억원으로 축소되는 정정 공시가 있어, 실제 설립 규모와 속도는 최초 계획보다 보수적으로 조정된 상태다. 회사는 또한 자율공시 방식으로 밸류업 계획을 밝혔으며, 조세특례제한법상 '고배당기업'에 해당하고 최근 연도 배당금은 57억원, 배당성향은 111%를 기록한 바 있어 주주환원 정책의 연속성이 관찰 포인트다. 제품 개발 측면에서는 전장·AI 서버·데이터센터·신재생에너지 등 고부가 응용처 대상 라인업 확대가 계속되고 있다. 다만 별도의 정량적 매출·이익 가이던스를 공식적으로 제시하지는 않고 있어, 향후 분기별 실적 발표와 공시를 통한 확인이 필요하다.",
+  "en": "The company is pursuing the establishment of a merged entity co-invested by Samyoung Electronics, Abco Electronics, and Nippon Chemi-Con, aiming for growth into a comprehensive electronic components company and revenue expansion. This merged entity is targeted to sell a comprehensive range of electronic components including aluminum electrolytic capacitors, MLCCs, varistors, electric double-layer capacitors, and inductors, aiming to expand entry into automotive electronics, semiconductor, and AI markets, with a stated goal of roughly KRW 35 billion in revenue by 2028, a Vietnam inductor manufacturing plant, and expanded sales channels in Southeast Asia and elsewhere. However, a revised disclosure in March 2026 moved the plan's end date up from December 31, 2026 to May 28, 2026, and cut the expected investment amount from KRW 3.4 billion to KRW 1.88 billion, meaning the actual scale and pace of the plan have been adjusted more conservatively than originally proposed. The company has also disclosed a value-up plan on a voluntary basis, and qualifies as a \"high-dividend company\" under the Special Tax Treatment Control Act, having recently paid dividends of KRW 5.7 billion at a payout ratio of 111%, making the continuity of its shareholder return policy a key point to watch. On the product side, expansion of higher value-added lineups targeting automotive electronics, AI servers, data centers, and renewable energy continues. The company has not formally provided quantitative revenue or profit guidance, so confirmation through future quarterly disclosures will be necessary."
  },
  "valuation_comment": {
-  "ko": "회사는 주가순자산비율 측면에서 순자산 대비 할인된 구간에서 거래되는 경향을 보여온 것으로 파악되며, 이는 보유 현금성 자산과 자산가치 대비 시가총액이 낮다는 지적과 맞물려 밸류업 논의의 배경이 되고 있다. 이익 측면에서는 2025년 손상차손 영향으로 순이익이 크게 줄었다가 2026년 상반기 들어 회복되는 흐름을 보이면서, 순이익 기준 밸류에이션 지표도 함께 변동하는 모습을 보였다. 회사는 조세특례제한법상 고배당기업으로 분류되며 주당현금배당금을 안정적으로 지급해온 편으로, 배당수익률의 절대 수준은 업종 내에서 비교 대상에 따라 다르게 평가될 수 있다. 자산가치 대비 시가총액, 밸류업 계획의 구체적 실행 여부, 그리고 합작법인을 통한 사업 확장이 실질적 성과로 이어지는지가 향후 밸류에이션 논의의 핵심 변수가 될 것으로 보인다.",
-  "en": "The stock has reportedly traded at a discount to net asset value in terms of price-to-book, a pattern that has fed into value-up discussions alongside criticism that its market capitalization runs below the value of its cash and other assets. On the earnings side, net profit fell sharply in 2025 due to impairment charges before recovering in the first half of 2026, causing profit-based valuation metrics to fluctuate accordingly. The company is classified as a high-dividend entity under tax incentive law and has maintained relatively stable per-share cash dividends, though the absolute level of dividend yield may be assessed differently depending on the peer group used for comparison. Whether market capitalization relative to asset value narrows, whether the value-up plan is executed concretely, and whether the joint venture-driven business expansion translates into tangible results are likely to remain the key variables in future valuation discussions."
+  "ko": "삼영전자는 순현금 중심의 안정적 재무구조를 유지하고 있으며, 시장에서는 주가가 순자산가치 대비 상당한 할인 상태에서 거래된다는 평가가 있다. 실제로 한 보도는 삼영전자공업의 시가총액이 자산 규모에 못 미치는 수준이며 주가순자산비율이 자산가치 대비 현저한 할인 상태에 있다고 평가했다. 이러한 할인 국면은 행동주의 주주가 자사주 매입 등 추가 주주환원을 요구하는 배경이 되기도 했다. 이익 측면에서는 2025년 순이익이 크게 줄었다가 2026년 상반기 회복 방향으로 전환되고 있어, 밸류에이션 지표도 이 흐름에 연동해 변동할 수 있다. 배당 정책은 과거 순이익을 초과해 지급한 해도 있었던 만큼, 향후 배당 성향의 연속성과 합병법인·밸류업 계획의 실행 여부가 재평가 여부를 가늠할 관찰 변수로 꼽힌다.",
+  "en": "Samyoung Electronics maintains a stable, net-cash-centered balance sheet, and some market observers note that its shares trade at a considerable discount to net asset value. One report indeed assessed that the company's market capitalization was below its asset base and that its price-to-book ratio stood at a marked discount to asset value. This discount has also been part of the backdrop for activist shareholders demanding additional returns such as share buybacks. On the earnings side, net income fell sharply in 2025 before shifting toward recovery in the first half of 2026, meaning valuation metrics may move in tandem with this trend. Dividend policy has, in past years, exceeded net income in payout, so the continuity of the payout ratio going forward, together with execution of the merger and value-up plans, are the key variables to watch for any re-rating."
  },
  "bull": [
   {
    "title": {
-    "ko": "밸류업·합작법인을 통한 자산 효율화 논의",
-    "en": "Value-Up and JV-Driven Asset Efficiency Discussion"
+    "ko": "원가 효율화에 따른 영업이익률 회복",
+    "en": "Operating Margin Recovery Through Cost Efficiency"
    },
    "body": {
-    "ko": "회사는 4월 밸류업 계획을 자율공시했고, 삼영전자·아비코전자·일본케미콘이 참여하는 합작법인을 통해 콘덴서·MLCC·인덕터를 포괄하는 종합 부품사로의 확장을 추진 중이다. 최대주주인 일본케미콘도 과거 행동주의 펀드의 자산 효율화 요구를 받은 바 있어, 그룹 차원의 주주환원 압력이 삼영전자에도 이어질 가능성이 있다. 부채비율이 4.4%에 불과한 견고한 재무구조는 이러한 자본 재배치 논의의 기반이 된다.",
-    "en": "The company voluntarily disclosed a value-up plan in April and is pursuing a joint venture with Abico Electronics and Nippon Chemi-Con aimed at expanding into a comprehensive components maker spanning capacitors, MLCCs, and inductors. Nippon Chemi-Con, the largest shareholder, has itself previously faced activist fund demands for asset efficiency, raising the possibility that group-level shareholder return pressure could extend to Samyoung. A solid balance sheet with a debt ratio of just 4.4% provides a foundation for such capital reallocation discussions."
+    "ko": "매출은 2022년 이후 매년 줄었지만 영업이익률은 2023년 3.6%에서 2025년 6.2%로 다시 높아졌고 2026년 1~2분기에도 분기 영업이익이 순차적으로 늘었다. 이는 매출 감소를 상회하는 원가·비용 관리가 진행되고 있음을 시사한다. 서버용 콘덴서 등 고부가 응용처 대상 매출 비중이 늘어난다면 마진 개선의 지속 가능성도 커질 수 있다.",
+    "en": "While revenue has fallen every year since 2022, operating margin rose again from 3.6% in 2023 to 6.2% in 2025, and quarterly operating profit increased sequentially through Q1-Q2 2026. This suggests cost and expense management has been progressing faster than the pace of revenue decline. If the share of higher value-added applications such as server-grade capacitors continues to grow, the durability of margin improvement could increase further."
    }
   },
   {
    "title": {
-    "ko": "전장·AI서버 등 고부가 응용처 확대",
-    "en": "Expansion into High-Value Automotive and AI Server Applications"
+    "ko": "순현금 기반 자본구조와 주주환원 확대 압력",
+    "en": "Net-Cash Balance Sheet and Pressure for Greater Shareholder Returns"
    },
    "body": {
-    "ko": "회사는 전기차 OBC용 TLF·NBF 시리즈, 저온·고온 환경용 PFD 시리즈, 일본케미콘과 공동 개발한 장수명 하이브리드 콘덴서 등을 통해 자동차 전장, AI 서버, 데이터센터, 신재생에너지 분야로 제품 포트폴리오를 확장하고 있다. 이들 분야는 중장기적으로 성장세가 지속될 것으로 언급되며, TV·가전 중심 매출 구조에서 벗어나려는 시도로 해석된다. 다만 신제품군의 매출 기여 규모는 아직 구체적으로 공개되지 않았다.",
-    "en": "The company is expanding its product portfolio into automotive electronics, AI servers, data centers, and renewable energy through the TLF/NBF series for EV on-board chargers, the PFD series for extreme temperature environments, and long-life hybrid capacitors co-developed with Nippon Chemi-Con. These segments are cited as likely to sustain growth over the medium to long term, representing an attempt to diversify away from a TV- and appliance-centric revenue structure. However, the specific revenue contribution of these new product lines has not yet been disclosed in detail."
+    "ko": "회사는 부채비율이 5% 내외에 불과한 무차입 경영을 이어가고 있으며 최근 연도 배당성향은 순이익을 초과했다. 차파트너스자산운용 등 행동주의 주주가 자사주 매입과 지배구조 개선을 공개적으로 요구하고 있어 추가적인 주주환원 조치로 이어질 가능성이 열려 있다. 회사도 자율공시 형태의 밸류업 계획을 발표한 상태다.",
+    "en": "The company has kept a virtually debt-free structure with a debt ratio of only around 5%, and its recent-year dividend payout ratio exceeded net income. Activist investors such as Cha Partners Asset Management have publicly demanded share buybacks and governance improvements, leaving open the possibility of additional shareholder-return measures. The company has also disclosed a voluntary corporate value-up plan."
    }
   },
   {
    "title": {
-    "ko": "견고한 재무구조와 고배당기업 지위",
-    "en": "Solid Balance Sheet and High-Dividend Status"
+    "ko": "종합 전자부품기업으로의 사업 확장 시도",
+    "en": "Attempted Expansion into a Comprehensive Electronic Components Business"
    },
    "body": {
-    "ko": "부채비율이 4.4%에 불과할 정도로 재무구조가 안정적이며, 조세특례제한법상 고배당기업으로 분류돼 지난해 배당성향이 순이익을 초과하는 111%에 이른 것으로 파악된다. 2026년 상반기 영업이익과 순이익이 분기별로 회복되는 흐름을 보인 점도 재무 안정성에 대한 긍정적 신호로 해석될 수 있다.",
-    "en": "The balance sheet remains stable, with a debt ratio of just 4.4%, and the company is classified as a high-dividend entity under tax incentive law, with last year's payout ratio reportedly exceeding net profit at 111%. The quarter-on-quarter recovery in operating profit and net profit through the first half of 2026 can also be read as a positive signal for financial stability."
+    "ko": "삼영전자는 아비코전자·일본케미콘과 함께 콘덴서 외에 MLCC, 인덕터, 바리스터 등을 포괄하는 합병법인 설립을 추진하고 있다. 제시된 2028년 매출 목표와 베트남 생산기지, 동남아 판매거점 확대는 전장·반도체·AI 시장 진입 확대를 위한 발판이 될 수 있다. 다만 계획 실행의 규모와 속도는 향후 공시를 통해 재확인이 필요하다.",
+    "en": "Samyoung is pursuing, together with Abco Electronics and Nippon Chemi-Con, a merged entity that would cover MLCCs, inductors, and varistors in addition to capacitors. The stated 2028 revenue target, a Vietnam production base, and expanded Southeast Asia sales channels could serve as a springboard for greater entry into automotive electronics, semiconductor, and AI markets. However, the actual scale and pace of execution will need to be reconfirmed through future disclosures."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "본업 매출의 다년간 축소 흐름",
-    "en": "Multi-Year Decline in Core Revenue"
+    "ko": "다년간 이어진 매출 축소",
+    "en": "Multi-Year Revenue Contraction"
    },
    "body": {
-    "ko": "연간 매출은 2022년 2,278억원에서 2025년 1,497억원으로 3년 연속 줄어들었다. 주요 전방산업인 TV·생활가전 수요 성장 둔화와 경쟁 심화에 따른 가격 인하 압박이 지속되고 있는 것으로 파악된다. 신규 응용처로의 매출 전환이 본업 축소를 상쇄할 만큼 빠르게 진행되고 있는지는 아직 확인되지 않았다.",
-    "en": "Annual revenue declined for three consecutive years, from KRW 227.8bn in 2022 to KRW 149.7bn in 2025. Slowing demand growth in major downstream sectors such as TVs and home appliances, along with continued price-cutting pressure from intensifying competition, appears to be persisting. Whether the shift toward new applications is progressing quickly enough to offset the core business decline has not yet been confirmed."
+    "ko": "연결 매출액은 2022년 2,278억원에서 2025년 1,497억원으로 4년 연속 줄었다. 생활가전 등 주력 전방산업의 수요 부진과 저가 수입품과의 가격 경쟁이 구조적 요인으로 지목된다. 서버용 수요 증가만으로 매출 하락을 상쇄하기엔 아직 부족한 모습이다.",
+    "en": "Consolidated revenue declined for four consecutive years, from KRW 227.8 billion in 2022 to KRW 149.7 billion in 2025. Weak demand from key end-markets such as home appliances and price competition from low-cost imports are cited as structural factors. Growth in server-grade demand alone has not yet been sufficient to offset the revenue decline."
    }
   },
   {
    "title": {
-    "ko": "이익 변동성과 일회성 손상차손",
-    "en": "Earnings Volatility and One-Off Impairment Charges"
+    "ko": "분기별 순이익 변동성 확대",
+    "en": "Widening Quarterly Net Income Volatility"
    },
    "body": {
-    "ko": "2025년 영업이익은 개선됐지만 순이익은 자산가치 조정에 따른 손상차손 영향으로 전년 대비 절반 이상 줄었다. 4분기에는 지배주주 순이익이 -73.6억원의 적자를 기록하는 등 분기별 변동성이 크게 나타났다. 이러한 일회성 요인이 반복될 가능성에 대한 불확실성이 남아 있다.",
-    "en": "While 2025 operating profit improved, net profit fell by more than half year-on-year due to impairment charges from asset value adjustments. Quarterly volatility was pronounced, with owner net profit posting a loss of KRW -7.36bn in the fourth quarter. Uncertainty remains over whether such one-off factors could recur."
+    "ko": "2025년 4분기에는 영업이익이 흑자였음에도 지배주주순이익이 손실로 전환되는 등 일회성 요인에 따른 순이익 변동성이 커졌다. 연간 지배주주순이익도 2024년 111억원에서 2025년 51억원으로 절반 이상 줄었다. 분기 실적의 널뛰기는 실적 예측 가시성을 낮추는 요인이다.",
+    "en": "In Q4 2025, net income attributable to owners turned negative despite a positive operating profit, reflecting greater volatility from one-off items. Annual net income attributable to owners also fell by more than half, from KRW 11.1 billion in 2024 to KRW 5.1 billion in 2025. Such quarterly swings reduce the visibility of future earnings."
    }
   },
   {
    "title": {
-    "ko": "합작법인·밸류업 계획의 제한적 규모",
-    "en": "Limited Scale of JV and Value-Up Plan"
+    "ko": "지배구조 갈등과 계획 축소 이력",
+    "en": "Governance Friction and a History of Scaled-Back Plans"
    },
    "body": {
-    "ko": "삼영전자·아비코전자·일본케미콘의 합작법인 투자 규모는 19억원 수준으로, 보유 현금성자산 대비 미미한 편이다. 밸류업 계획에도 비영업자산 유동화나 자본효율 목표와 같은 구체적 실행계획은 아직 제시되지 않은 것으로 파악돼, 실질적인 기업가치 제고로 이어질지는 불확실하다.",
-    "en": "The investment scale of the joint venture involving Samyoung, Abico Electronics, and Nippon Chemi-Con is roughly KRW 1.9 billion, modest relative to the company's cash holdings. The value-up plan also does not appear to include concrete execution steps such as monetizing non-operating assets or setting capital efficiency targets, leaving uncertain whether it will translate into a substantive rerating of corporate value."
+    "ko": "차파트너스자산운용은 이사회 독립성과 최대주주(일본케미콘)와 경영진 간 의사결정 구조에 문제를 제기하며 주주제안에 나섰다. 합병법인 설립 계획도 최초 제시한 투자금액과 종료일이 축소·단축되는 정정 공시가 있었던 만큼, 실제 실행 규모와 속도에 대한 불확실성이 남아 있다. 지배구조 이슈가 장기화되면 경영 의사결정 지연으로 이어질 수 있다.",
+    "en": "Cha Partners Asset Management filed shareholder proposals raising concerns about board independence and the decision-making structure between the largest shareholder, Nippon Chemi-Con, and management. The merger plan itself has already seen its initially proposed investment amount and end date scaled back and shortened via a revised disclosure, leaving uncertainty about the actual scale and pace of execution. If governance issues persist, they could lead to delays in management decision-making."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "전방산업 수요 둔화",
-    "en": "Slowing Downstream Demand"
+    "ko": "업황·경쟁 리스크",
+    "en": "Industry and Competition Risk"
    },
    "body": {
-    "ko": "주요 고객인 TV·생활가전 세트업체의 수요 회복이 지연되고 있으며, 글로벌 경기 둔화가 겹치면 매출 축소 흐름이 이어질 가능성이 있다. 신규 응용처로의 매출 전환 속도가 이를 상쇄하지 못할 경우 실적 압박이 지속될 수 있다.",
-    "en": "Demand recovery among major TV and home appliance set customers has been delayed, and if compounded by a global economic slowdown, the revenue contraction trend could persist. If the pace of revenue shift toward new applications fails to offset this, earnings pressure may continue."
+    "ko": "국내 전해콘덴서 시장은 삼화전기 등과 경쟁하는 완전경쟁시장 성격이 강하고 대만·동남아·중국산 저가품 유입이 계속되고 있다. 생활가전 등 주요 전방산업의 수요 회복이 지연되면 매출 축소 흐름이 이어질 수 있다. 가격 경쟁 심화는 영업이익률 개선을 제약하는 요인이다.",
+    "en": "The domestic electrolytic capacitor market is highly competitive, with Samyoung facing rivals such as Samhwa Capacitor and a continuous inflow of low-priced products from Taiwan, Southeast Asia, and China. If demand recovery in key end-markets such as home appliances is delayed, the revenue contraction trend could persist. Intensifying price competition constrains further improvement in operating margin."
    }
   },
   {
    "cat": {
-    "ko": "가격 경쟁 및 원자재·환율 변동성",
-    "en": "Price Competition and Raw Material/FX Volatility"
+    "ko": "원자재·환율 리스크",
+    "en": "Raw Material and Foreign Exchange Risk"
    },
    "body": {
-    "ko": "동남아·중국산 저가 콘덴서 제품의 유입으로 가격 경쟁이 심화되고 있으며, 원자재·환율 변동성이 제조원가 부담을 키우는 요인으로 지목된다. 이는 영업이익률 개선을 제약하는 구조적 요인으로 작용할 수 있다.",
-    "en": "The influx of low-cost capacitor products from Southeast Asia and China is intensifying price competition, and raw material and foreign exchange volatility have been cited as factors increasing manufacturing cost burdens. These could act as structural constraints on operating margin improvement."
+    "ko": "원자재 수급 불균형과 환율 변동성은 제조원가 부담을 키우는 요인으로 지목된다. 2026년 1분기 실적 둔화의 배경에도 원자재·환율 변동에 따른 원가 압박이 있었다. 해외 생산법인(중국)을 운영하는 만큼 환율 변동에 대한 노출도 상시적이다.",
+    "en": "Raw material supply imbalances and foreign exchange volatility have been cited as factors increasing manufacturing cost burdens. Cost pressure from raw material and currency swings was also a contributing factor behind the Q1 2026 earnings slowdown. As the company operates an overseas production subsidiary in China, it remains continuously exposed to currency fluctuations."
    }
   },
   {
    "cat": {
-    "ko": "밸류업·합작법인 실행 리스크",
-    "en": "Execution Risk of Value-Up Plan and Joint Venture"
+    "ko": "지배구조·이벤트 리스크",
+    "en": "Governance and Event Risk"
    },
    "body": {
-    "ko": "밸류업 계획이 자율공시 단계에 머물러 있고 비영업자산 유동화나 자본효율 목표와 같은 구체적 실행계획이 아직 제시되지 않았다. 합작법인 역시 투자 규모가 작아 초기 단계의 상징적 조치에 그칠 가능성이 있으며, 실질적 사업 확장으로 이어지지 않을 경우 시장 기대와의 괴리가 발생할 수 있다.",
-    "en": "The value-up plan remains at the voluntary disclosure stage, without concrete execution steps such as monetizing non-operating assets or setting capital efficiency targets. The joint venture's small investment scale also raises the possibility that it remains a largely symbolic early-stage move, and a gap with market expectations could emerge if it fails to translate into substantive business expansion."
+    "ko": "최대주주인 일본케미콘과 실제 경영진 간의 의사결정 구조를 둘러싼 갈등, 행동주의 주주의 주주제안 등 지배구조 이슈가 진행 중이다. 합병법인 설립 계획의 투자금액·일정이 이미 한 차례 축소·조정된 만큼 추가 변경 가능성도 배제할 수 없다. 이러한 이벤트의 결과는 주주환원 정책과 사업 확장 속도에 직접적인 영향을 줄 수 있다.",
+    "en": "Governance issues are ongoing, including friction over the decision-making structure between largest shareholder Nippon Chemi-Con and actual management, as well as shareholder proposals from activist investors. Because the merger plan's investment amount and timeline have already been scaled back and adjusted once, further changes cannot be ruled out. The outcome of these events could directly affect the pace of shareholder returns and business expansion."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월경",
-    "en": "Around November 2026"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "3분기 실적 발표에서 매출 회복 여부와 영업이익률 추이, 손상차손 등 일회성 요인 재발 여부를 확인해야 한다.",
-    "en": "Check the Q3 earnings release for revenue recovery, operating margin trends, and whether one-off factors such as impairment charges recur."
+    "ko": "2026년 3분기 보고서 공시 예정 시점으로, 2026년 1~2분기에 이어진 매출·영업이익 회복 흐름이 3분기에도 이어지는지 확인이 필요하다.",
+    "en": "This is the expected disclosure timing for the Q3 2026 report, when it will be important to check whether the revenue and operating profit recovery seen in Q1-Q2 2026 continued into Q3."
    }
   },
   {
    "when": {
-    "ko": "확인 시점 미정",
-    "en": "Timing to be confirmed"
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "삼영전자·아비코전자·일본케미콘 합작법인의 설립 완료 및 출자 규모 확정 여부, 사업 범위 구체화 내용을 점검해야 한다.",
-    "en": "Monitor whether the joint venture among Samyoung, Abico Electronics, and Nippon Chemi-Con is finalized, including confirmed investment amounts and details of the business scope."
+    "ko": "삼영전자·아비코전자·일본케미콘 합병법인 설립 진행 상황(투자금액 18.8억원, 2028년 매출 목표 350억원)의 실제 이행 여부와 추가 정정 공시 여부를 점검해야 한다.",
+    "en": "Investors should monitor actual progress on the Samyoung Electronics-Abco Electronics-Nippon Chemi-Con merged entity (KRW 1.88 billion investment, 2028 revenue target of about KRW 35 billion) and watch for any further revised disclosures."
    }
   },
   {
    "when": {
-    "ko": "확인 시점 미정",
-    "en": "Timing to be confirmed"
+    "ko": "2026년 4분기 중",
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "4월 자율공시한 밸류업 계획의 후속 실행안(자사주 매입·소각, 비영업자산 유동화 등) 발표 여부를 확인해야 한다.",
-    "en": "Check for follow-up execution measures of the April value-up plan, such as share buybacks/cancellations or monetization of non-operating assets."
+    "ko": "차파트너스자산운용 등이 요구한 자사주 매입·감사 선임 관련 후속 조치나 추가 주주제안, 밸류업 계획 이행현황 공시 여부를 확인할 필요가 있다.",
+    "en": "It will be worth confirming any follow-up action on Cha Partners Asset Management's demands for share buybacks and auditor appointment, additional shareholder proposals, and disclosures on the progress of the value-up plan."
    }
   },
   {
    "when": {
-    "ko": "2027년 2월경",
-    "en": "Around February 2027"
+    "ko": "2027년 초(정기주총 전후)",
+    "en": "Early 2027 (around the annual general meeting)"
    },
    "what": {
-    "ko": "2026년 결산실적 및 연간 배당 결정 공시에서 배당성향과 주당배당금 유지 여부를 확인해야 한다.",
-    "en": "Check the 2026 full-year earnings and annual dividend decision disclosure for the payout ratio and whether per-share dividends are maintained."
-   }
-  },
-  {
-   "when": {
-    "ko": "확인 시점 미정",
-    "en": "Timing to be confirmed"
-   },
-   "what": {
-    "ko": "전기차 OBC용 TLF·NBF 시리즈 등 전장부품 신규 수주 및 양산 진행 상황을 점검해야 한다.",
-    "en": "Monitor new order intake and mass production progress for automotive electronics products such as the TLF/NBF series for EV on-board chargers."
+    "ko": "2026년 4분기 및 연간 실적 확정치와 배당 정책(배당성향, 배당금 규모) 공시를 통해 주주환원 기조의 연속성을 재확인해야 한다.",
+    "en": "Confirmed Q4 and full-year 2026 results, along with disclosures on dividend policy (payout ratio and dividend size), should be reviewed to reassess the continuity of the shareholder-return stance."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "삼영전자는 3년 연속 매출이 줄어드는 본업 둔화 속에서도 2025년 영업이익률을 개선시켰으나, 손상차손으로 순이익이 크게 줄었다가 2026년 상반기 들어 회복되는 흐름을 보였다. 회사는 4월 밸류업 계획을 자율공시하고 아비코전자·일본케미콘과의 합작법인을 추진하는 등 자산 효율화와 사업구조 재편 논의를 병행하고 있으나, 구체적 실행계획과 투자 규모는 아직 제한적인 수준이다. 전장·AI서버·데이터센터용 고부가 콘덴서로의 제품 포트폴리오 전환이 진행 중이지만, TV·가전 중심의 전방산업 수요 둔화와 저가 경�쟁이라는 구조적 압박도 함께 존재한다. 부채비율 4.4%의 견고한 재무구조와 고배당기업 지위는 안정성 측면의 긍정적 요인으로 꼽힌다. 향후 실적 흐름은 3분기 실적 발표와 합작법인·밸류업 계획의 구체적 실행 여부에 따라 달라질 수 있으며, 이는 투자 판단에 참고할 수 있는 확인 포인트다.",
-   "en": "Samyoung Electronics improved its operating margin in 2025 despite a third consecutive year of revenue decline in its core business, though net profit fell sharply due to impairment charges before recovering in the first half of 2026. The company has voluntarily disclosed a value-up plan in April and is pursuing a joint venture with Abico Electronics and Nippon Chemi-Con, paralleling discussions on asset efficiency and business restructuring, though concrete execution plans and investment scale remain limited for now. A shift in product portfolio toward high-value-added capacitors for automotive electronics, AI servers, and data centers is underway, but structural pressures from slowing demand in TV and appliance end markets and low-cost competition persist alongside it. A solid balance sheet with a 4.4% debt ratio and high-dividend company status stand out as positive factors on the stability front. Future earnings trends may hinge on the Q3 results release and the concrete execution of the joint venture and value-up plan, points that can serve as reference for investment judgment."
+   "ko": "삼영전자는 콘덴서 단일 사업 중심의 매출이 4년 연속 줄었지만 영업이익률은 개선되는 이중적인 흐름을 보이고 있다. 2025년은 4분기 일회성 손실로 지배주주순이익이 크게 줄었으나 2026년 상반기 들어 매출과 영업이익, 순이익이 모두 순차적으로 회복되는 모습이다. 회사는 순현금 기반의 안정적 재무구조를 바탕으로 자율공시 형태의 밸류업 계획을 내놓았고, 아비코전자·일본케미콘과 함께 종합 전자부품기업으로 사업 영역을 확장하려는 합병법인 구상을 진행 중이다. 다만 이 계획은 투자금액과 일정이 한 차례 축소·조정된 바 있어 실행 속도에 대한 불확실성이 남아 있다. 동시에 차파트너스자산운용을 비롯한 행동주의 주주는 이사회 독립성과 자본 배치 효율성에 대한 문제를 제기하며 자사주 매입 등 추가 주주환원을 요구하고 있다. 콘덴서 본업의 가격 경쟁과 생활가전 수요 부진이라는 구조적 부담과, 전장·AI 서버향 수요 확대 및 지배구조 개선 요구라는 변화 요인이 동시에 존재하는 국면으로 판단된다. 향후 실적 회복의 지속성과 합병법인·밸류업 계획의 실행 여부가 주요 관찰 포인트다.",
+   "en": "Samyoung Electronics presents a dual picture: revenue centered on its core capacitor business has fallen for four straight years, while operating margin has improved. Net income attributable to owners fell sharply in 2025 due to a one-off Q4 loss, but revenue, operating profit, and net income all recovered sequentially in the first half of 2026. Backed by a stable, net-cash balance sheet, the company has released a voluntarily disclosed value-up plan and is pursuing a merged entity with Abco Electronics and Nippon Chemi-Con to expand into a comprehensive electronic components business. However, this plan has already had its investment amount and timeline scaled back once, leaving uncertainty about execution speed. At the same time, activist investors including Cha Partners Asset Management are raising concerns about board independence and capital-allocation efficiency, demanding additional shareholder returns such as share buybacks. The situation appears to combine structural pressures from price competition in the core capacitor business and weak home-appliance demand with change factors such as growing automotive-electronics and AI-server demand and calls for governance improvement. The durability of the earnings recovery and the execution of the merger and value-up plans remain the key points to watch going forward."
   }
  },
  "sources": [
-  "https://comp.wisereport.co.kr/samsung/company/c1010001.aspx?cmp_cd=005680",
-  "https://meerae.ai/atlas/005680/",
-  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-1%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C",
-  "https://www.datatooza.com/article/20260226173420821552ef36f592_80",
-  "https://alphasquare.co.kr/home/stock-summary?code=005680",
-  "https://www.leadeconomy.co.kr/news/articleView.html?idxno=7551",
-  "https://kr.investing.com/news/global-filings/article-93CH-1947508",
-  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-2%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C",
-  "https://www.choicestock.co.kr/stock/news_view/108190?bu=",
-  "https://m.etnews.com/20210325000055",
-  "https://www.etnews.com/20220517000079",
-  "https://www.komachine.com/ko/companies/samyoung-electronics",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/MFhRbUk1b0p6anVPM1RxalNMV0d6QT09/company_nm/%EC%82%BC%EC%98%81%EC%A0%84%EC%9E%90%EA%B3%B5%EC%97%85(%EC%A3%BC)",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=642129",
+  "https://m.irgo.co.kr/IR-COMP/005680/%EC%82%BC%EC%98%81%EC%A0%84%EC%9E%90%EA%B3%B5%EC%97%85-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
+  "https://deepsearch.com/analytics/company-analysis/KRX:005680?c-name=%EC%82%BC%EC%98%81%EC%A0%84%EC%9E%90&c-symbol=KRX%3A005680&cd-cat=disclosure&cd-doc-op=perform",
   "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A005680",
-  "https://seongnam.grandculture.net/seongnam/toc/GC00101006",
-  "https://www.hankyung.com/article/202405100968O",
-  "https://www.infostockdaily.co.kr/news/articleView.html?idxno=196118",
-  "https://news.infostock.co.kr/a"
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1701388843474.pdf",
+  "https://comp.wisereport.co.kr/samsung/company/c1010001.aspx?cmp_cd=005680",
+  "https://www.google.com/finance/quote/005680:KRX?hl=en",
+  "https://m.etnews.com/20210325000055",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/MFhRbUk1b0p6anVPM1RxalNMV0d6QT09/company_nm/%EC%82%BC%EC%98%81%EC%A0%84%EC%9E%90%EA%B3%B5%EC%97%85(%EC%A3%BC)",
+  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-2%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C",
+  "https://www.newswire.co.kr/newsRead.php?no=1039608",
+  "https://www.thesnstime.com/samseongjeonja-2026nyeon-2bungi-jamjeong-siljeog-balpyo-2bungi-yeongyeolgijun-maecul-171joweon-yeongeobiig-89-4joweon-yesang/",
+  "https://www.newstown.co.kr/news/articleView.html?idxno=710807",
+  "https://www.mt.co.kr/industry/2026/07/30/2026073008304840319",
+  "https://www.mt.co.kr/industry/2026/07/30/2026073008300761321",
+  "https://www.thelec.kr/news/articleView.html?idxno=60316",
+  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-2%EB%B6%84%EA%B8%B0-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C",
+  "https://www.ebn.co.kr/news/articleView.html?idxno=1702618"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -233,9 +223,9 @@
   "전자·부품"
  ],
  "market": "코스피",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 09:16",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -334,14 +324,14 @@
    }
   ],
   "valuation": {
-   "price": 12040,
-   "mcap": 0.2408,
+   "price": 12130,
+   "mcap": 0.2426,
    "shares": 20000000,
    "total_shares": 20000000,
    "wavg_shares": 19019659,
-   "per": 53.5,
+   "per": 53.911,
    "eps": 225,
-   "pbr": 0.37,
+   "pbr": 0.3753,
    "bps": 32324,
    "roe_ttm": 0.7,
    "ttm_window": "2025Q3~2026Q2",
@@ -350,7 +340,7 @@
    "bps_krx": 28401.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 300.0,
-   "div": 2.49
+   "div": 2.47
   }
  }
 }

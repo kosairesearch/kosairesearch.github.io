@@ -1,214 +1,196 @@
 {
  "title": {
-  "ko": "매매정지 딛고 매출 회복세, 손익분기권 진입",
-  "en": "Trading Halt Resolved, Sales Rebound Toward Breakeven"
+  "ko": "반도체 로봇 수주로 실적 회복 조짐",
+  "en": "Signs of Recovery on Semiconductor Robot Orders"
  },
  "lead": {
-  "ko": "전직 임원 횡령·배임 사태로 약 11개월간 거래가 정지됐던 삼익THK가 2026년 4월 거래를 재개한 가운데, 분기 매출이 4분기 연속 늘며 2026년 2분기 영업이익이 흑자로 돌아섰다.",
-  "en": "Samick THK resumed trading in April 2026 after an approximately 11-month halt triggered by former executives' embezzlement and breach-of-trust allegations, while quarterly revenue has risen for four consecutive quarters, turning operating profit positive in the second quarter of 2026."
+  "ko": "2025년 대규모 적자를 낸 삼익THK가 반도체 웨이�퍼이송로봇 수주 확대에 힘입어 2026년 2분기 분기 단위 영업이익 흑자로 돌아섰다.",
+  "en": "After posting a large annual loss in 2025, Samick THK swung back to a quarterly operating profit in Q2 2026, driven by expanding orders for semiconductor wafer transfer robots."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 2,221억원(전년 대비 27% 감소), 영업손실 354억원, 지배주주순손실 450억원으로 실적이 크게 악화됐다.",
-   "en": "2025 consolidated revenue fell 27% year-on-year to KRW 222.2 billion, with an operating loss of KRW 35.4 billion and an owners' net loss of KRW 45.0 billion."
+   "ko": "2026년 2분기 영업이익 16.9억원을 기록하며 분기 기준 영업흑자로 전환, 전년 동기 68.5억원 영업손실 대비 개선됐다.",
+   "en": "Q2 2026 operating profit came in at KRW 1.69 billion, turning positive versus an operating loss of KRW 6.85 billion in the same quarter last year."
   },
   {
-   "ko": "2026년 1분기(매출 654억원)에 이어 2분기 매출이 777억원으로 늘며 영업이익 17억원의 분기 흑자를 기록했다.",
-   "en": "Following Q1 2026 revenue of KRW 65.4 billion, Q2 revenue rose to KRW 77.7 billion, delivering a quarterly operating profit of KRW 1.7 billion."
+   "ko": "2025년 연간 매출은 2,222억원, 영업손실 354.6억원, 순손실 450.0억원으로 4개년 중 가장 부진한 실적을 기록했다.",
+   "en": "Full-year 2025 revenue was KRW 222.2 billion with an operating loss of KRW 35.46 billion and a net loss of KRW 45.0 billion, the weakest year among the four years shown."
   },
   {
-   "ko": "2025년 5월 전직 임원의 횡령·배임 혐의(약 176억원 규모)로 매매거래가 정지됐고, 2026년 4월 8일 한국거래소 기업심사위원회가 상장유지를 결정하며 거래가 재개됐다.",
-   "en": "Trading was halted in May 2025 due to former executives' alleged embezzlement and breach of trust (approximately KRW 17.6 billion), and the Korea Exchange's listing committee decided to maintain the listing on April 8, 2026, resuming trading."
+   "ko": "매출은 2025년 2분기 528.7억원에서 2026년 2분기 776.8억원으로 5개 분기 연속 증가하며 회복 흐름을 보였다.",
+   "en": "Revenue rose for five consecutive quarters, from KRW 52.87 billion in Q2 2025 to KRW 77.68 billion in Q2 2026."
   },
   {
-   "ko": "LM가이드·볼나사 등 직선운동시스템 부문은 반도체·디스플레이·이차전지 자동화 설비에 필수 부품으로 공급되며, 국내 시장에서 오랜 기간 1위 지위를 유지해왔다.",
-   "en": "The linear motion system segment (LM guides, ball screws) supplies essential components for semiconductor, display and battery automation equipment, and the company has long held the leading domestic market position."
+   "ko": "국내 LM가이드·LM시스템 시장에서 약 45~50%의 점유율로 1위를 지키고 있으며, 일본 THK와 40년 이상 기술제휴를 이어가고 있다.",
+   "en": "The company holds an estimated 45-50% share of the domestic LM guide/LM system market and has maintained a technology partnership with Japan's THK for over 40 years."
   },
   {
-   "ko": "AI 인프라 확대에 따른 메모리·첨단 패키징 공정 투자 증가로 자동화설비·로봇 수요가 늘며 실적 개선에 기여하고 있는 것으로 파악된다.",
-   "en": "Rising memory and advanced packaging investment tied to AI infrastructure expansion has reportedly boosted demand for automation equipment and robots, contributing to the earnings improvement."
+   "ko": "지난해 상장적격성 실질심사에 따른 거래정지 이력이 있었으며, 이후 체질 개선 작업이 진행된 것으로 알려졌다.",
+   "en": "The company experienced a trading suspension last year related to a listing eligibility review, after which restructuring efforts were reportedly carried out."
   }
  ],
  "business": {
-  "ko": "삼익THK는 1960년 대구에서 설립된 후 공구용 줄, 쌀통 등을 거쳐 1991년 일본 THK와 기술제휴를 맺으며 국내 최초로 LM(리니어모션)가이드를 국산화한 자동화 부품 전문기업이다. 주력 사업은 LM가이드와 볼나사 등 직선운동시스템을 다루는 LM시스템 부문과, 이 기술을 활용해 직교로봇·트랜스퍼로봇 등을 생산하는 메카트로시스템(솔루션) 부문으로 구성된다. LM가이드는 반도체·디스플레이·이차전지 제조장비, 공작기계 등에서 상하좌우 직선 이동을 구현하는 필수 부품이며, 회사는 국내 LM가이드·볼스크류 시장에서 오랜 기간 1위권 점유율을 유지해온 것으로 알려져 있다. 최근에는 반도체용 웨이퍼 이송 로봇과 스마트팩토리 솔루션으로 사업을 확장하고 있으며, 2026년 5월에는 베트남 최대 IT기업 FPT와 AI·로봇을 활용한 스마트 제조 혁신 협력을 발표했다. 일본 THK와는 1991년 합작투자 이후 40년 넘게 파트너십을 이어오고 있으며, 순매출액의 일부를 기술 로열티로 지급하는 구조다. 생산 거점은 대구 본사·성서공단을 중심으로 평택, 현풍, 다산 등 전국 각지에 분산돼 있고, 미국·중국·폴란드에 종속회사를 두고 해외 판매망을 확장 중이다. 경쟁 구도상 국내에서는 소수의 정밀기계부품 업체와, 글로벌 시장에서는 파트너이자 경쟁자인 일본 THK 및 다른 해외 LM가이드 업체들과 마주하고 있다.",
-  "en": "Founded in Daegu in 1960, Samick THK evolved from files and rice containers into a specialized automation components maker, localizing linear motion (LM) guides for the first time in Korea after a 1991 technology partnership with Japan's THK. Its core businesses comprise the LM System segment—covering LM guides and ball screws for linear motion—and the Mechatronics (solution) segment, which applies this technology to produce Cartesian and transfer robots. LM guides are essential components enabling linear movement in semiconductor, display and battery manufacturing equipment as well as machine tools, and the company has reportedly held a leading share of the domestic LM guide and ball screw market for an extended period. More recently, it has expanded into semiconductor wafer-transfer robots and smart factory solutions, and in May 2026 announced a collaboration with Vietnam's largest IT firm FPT on AI- and robotics-driven smart manufacturing. The partnership with Japan's THK has continued for more than four decades since the 1991 joint investment, with Samick THK paying a portion of net sales as technology royalties. Production sites are centered on the Daegu headquarters and Seongseo industrial complex, spread across Pyeongtaek, Hyeonpung and Dasan, while subsidiaries in the United States, China and Poland support overseas sales expansion. Competitively, the company faces a small number of domestic precision machinery makers and, globally, its partner-and-rival Japan's THK along with other overseas LM guide manufacturers."
+  "ko": "삼익THK는 1960년 대구에서 창업해 공구용 줄과 쌀통을 거쳐 1991년 일본 THK와 기술제휴를 맺으며 LM가이드를 국내 최초로 국산화한 산업자동화 부품 기업이다. 사업 구조는 LM시스템, 메카트로시스템(로봇), 줄, 기타(산업용 기계장비 도소매) 네 부문으로 나뉘며, 2023년 기준 매출 비중은 LM시스템 46.5%, 메카트로시스템 36.6%, 줄 1.0%, 기타 15.9% 수준이었다. LM시스템은 LM가이드와 볼나사 등 반도체·디스플레이·공작기계·이차전지 장비에 쓰이는 직선운동 부품이며, 메카트로시스템은 이 기술을 응용한 단축·다축 직교로봇과 웨이퍼이송로봇(WTR), 협동로봇 등으로 구성된다. 최근에는 반도체 공정용 진공로봇과 6축 다관절 로봇을 국내 대기업과 협력해 개발하고 있으며, 한국과학기술연구원(KIST)으로부터 기술을 이전받은 근력보조 웨어러블 로봇의 2026년 상용화를 목표로 하고 있다. 최대주주 그룹은 진영환 회장 등 특수관계인이며, 일본 THK가 지분 약 33.34%를 보유한 2대주주로 순매출액의 2%를 기술 로열티로 지급받는 구조다. 주요 고객은 삼성전자 등 국내 반도체·디스플레이·이차전지 장비사이며, 해외 판매법인은 중국·미국·폴란드에 설치돼 있다. 경쟁 구도는 LM시스템 부문에서는 일본 THK를 비롯한 해외 업체, 로봇 부문에서는 두산로보틱스·레인보우로보틱스 등 국내 로봇 기업들과 겹친다.",
+  "en": "Founded in Daegu in 1960, Samick THK evolved from files and rice dispensers into an industrial automation parts maker after entering a 1991 technology partnership with Japan's THK, becoming the first in Korea to localize LM guide production. The business is organized into four segments-LM System, Mechatro System (robots), files, and other (industrial machinery wholesale)-with 2023 revenue mix at roughly 46.5% LM System, 36.6% Mechatro System, 1.0% files, and 15.9% other. LM System covers LM guides and ball screws, linear-motion components used in semiconductor, display, machine tool, and battery equipment, while Mechatro System applies this technology to single/multi-axis gantry robots, wafer transfer robots (WTR), and collaborative robots. More recently the company has been developing vacuum robots for semiconductor processes and six-axis articulated robots in cooperation with a domestic conglomerate, and targets 2026 commercialization of a strength-assist wearable robot whose technology was transferred from the Korea Institute of Science and Technology (KIST). The controlling shareholder group is led by Chairman Jin Young-hwan and related parties, while Japan's THK holds about 33.34% as the second-largest shareholder and receives a 2% royalty on net sales. Major customers include domestic semiconductor, display, and battery equipment makers such as Samsung Electronics, and overseas sales subsidiaries are located in China, the United States, and Poland. Competition overlaps with Japan's THK in LM systems and with domestic robotics firms such as Doosan Robotics and Rainbow Robotics in the robot segment."
  },
  "earnings": {
-  "ko": "삼익THK의 실적은 2022년 매출 3,391억원, 영업이익 206억원(영업이익률 6.1%)을 정점으로 이후 뚜렷한 하락세를 보였다. 2023년 매출은 3,156억원으로 줄고 영업이익은 69억원(2.2%)으로 축소됐으며, 2024년에는 매출 3,044억원에 영업이익 5.6억원(0.2%)까지 마진이 얇아졌다. 2025년에는 매출이 2,221억원으로 전년 대비 약 27% 급감했고, 영업손실 354억원(영업이익률 -16.0%), 지배주주순손실 450억원이라는 대규모 적자를 기록해 실적 훼손이 뚜렷했다. 분기별로 보면 2025년 2분기 매출 528억원에서 3분기 535억원, 4분기 563억원, 2026년 1분기 654억원, 2분기 776억원으로 4분기 연속 매출이 늘어나는 회복 흐름이 확인된다. 영업손익도 2025년 2분기 -68억원에서 4분기 -114억원까지 확대됐다가 2026년 1분기 -38억원으로 손실 폭이 줄고, 2분기에는 17억원의 흑자로 전환됐다. 지배주주순손실 역시 2025년 2분기 -271억원의 큰 폭 손실에서 3분기 -73억원, 4분기 -38억원, 2026년 1분기 -42억원, 2분기 -0.2억원으로 거의 손익분기 수준까지 축소됐다. 다만 영업활동현금흐름은 2025년에도 240억원의 순유입을 기록해, 손익계산서상 적자와 달리 현금창출력 자체는 유지된 것으로 나타난다. 2025년의 대규모 순손실에는 전직 임원 횡령·배임 사태와 관련한 비용, 매매거래정지에 따른 경영 불확실성 등이 복합적으로 영향을 미쳤을 가능성이 있으나, 구체적 항목별 원인은 공시자료로 추가 확인이 필요하다.",
-  "en": "Samick THK's earnings peaked in 2022 with revenue of KRW 339.1 billion and operating profit of KRW 20.6 billion (a 6.1% operating margin), before declining steadily thereafter. Revenue fell to KRW 315.6 billion in 2023 with operating profit narrowing to KRW 6.9 billion (2.2%), and margins thinned further in 2024 to KRW 0.6 billion in operating profit (0.2%) on revenue of KRW 304.4 billion. In 2025, revenue dropped roughly 27% year-on-year to KRW 222.2 billion, and the company posted a large operating loss of KRW 35.5 billion (a -16.0% operating margin) alongside an owners' net loss of KRW 45.0 billion, marking a pronounced deterioration. On a quarterly basis, revenue rose for four consecutive quarters—from KRW 52.9 billion in Q2 2025 to KRW 53.6 billion in Q3, KRW 56.4 billion in Q4, KRW 65.4 billion in Q1 2026, and KRW 77.7 billion in Q2 2026—indicating a recovery trend. The operating loss widened from KRW 6.9 billion in Q2 2025 to KRW 11.4 billion in Q4, then narrowed to KRW 3.8 billion in Q1 2026 before turning to a profit of KRW 1.7 billion in Q2 2026. The owners' net loss similarly shrank from a sharp KRW 27.1 billion in Q2 2025 to KRW 7.3 billion in Q3, KRW 3.8 billion in Q4, KRW 4.2 billion in Q1 2026, and just KRW 0.02 billion in Q2 2026, approaching breakeven. Operating cash flow nonetheless remained positive at KRW 24.1 billion in 2025, suggesting cash generation capacity persisted despite the income-statement losses. The sizable 2025 net loss may have been influenced in part by costs related to the former executives' embezzlement and breach-of-trust case and the uncertainty from the trading suspension, though further disclosure detail would be needed to confirm specific line-item causes."
+  "ko": "삼익THK의 실적은 2022년 매출 3,391억원·영업이익 206.4억원(영업이익률 6.1%)에서 2023년 매출 3,156억원·영업이익 69.4억원(2.2%), 2024년 매출 3,044억원·영업이익 5.6억원(0.2%)으로 3년 연속 매출과 마진이 축소되는 흐름을 보였다. 2025년에는 매출이 2,222억원까지 줄고 영업손실 354.6억원, 지배주주 순손실 450.0억원을 기록하며 4개년 중 가장 큰 폭의 적자로 전환했다. 분기별로 보면 2025년 2분기 매출 528.7억원·영업손실 68.5억원·순손실 271.0억원의 큰 손실을 기록한 뒤, 3분기(535.8억원, 영업손실 109.9억원), 4분기(563.6억원, 영업손실 114.0억원)까지 영업손실 규모 자체는 오히려 확대됐지만 순손실 폭은 줄어드는 모습이었다. 2026년 들어 1분기 매출 654.2억원·영업손실 38.1억원으로 적자폭이 크게 줄었고, 2분기에는 매출 776.8억원, 영업이익 16.9억원으로 분기 기준 영업흑자 전환에 성공했으며 순손실도 0.2억원 수준으로 손익분기점에 근접했다. 2026년 상반기 연결 매출은 1,431억원으로 전년 동기 대비 27.5% 늘었고 영업손실은 131억원에서 21억원으로 줄었다는 점이 확인됐다. 회사는 반도체 설비투자와 주요 고객사 발주 증가로 웨이퍼를 옮기는 로봇 수주가 늘어난 것을 실적 개선의 배경으로 설명했다. 다만 최근 네 개 분기(2025년 3분기~2026년 2분기)를 기준으로도 지배주주 순이익은 여전히 음수(-153.2억원) 구간에 머물러 있어, 완전한 실적 정상화까지는 추가 확인이 필요한 상태다.",
+  "en": "Samick THK's performance deteriorated for three straight years-from KRW 339.1 billion revenue and KRW 20.6 billion operating profit (6.1% margin) in 2022, to KRW 315.6 billion revenue and KRW 6.9 billion operating profit (2.2%) in 2023, to KRW 304.4 billion revenue and KRW 0.56 billion operating profit (0.2%) in 2024. In 2025, revenue fell further to KRW 222.2 billion while the company posted an operating loss of KRW 35.46 billion and an owner net loss of KRW 45.0 billion, the largest loss of the four years shown. Quarterly, Q2 2025 showed a sharp loss (revenue KRW 52.87 billion, operating loss KRW 6.85 billion, net loss KRW 27.10 billion), followed by Q3 (KRW 53.58 billion, operating loss KRW 10.99 billion) and Q4 (KRW 56.36 billion, operating loss KRW 11.40 billion), where the operating loss actually widened even as the net loss narrowed. In 2026, Q1 revenue reached KRW 65.42 billion with the operating loss shrinking to KRW 3.81 billion, and Q2 revenue climbed to KRW 77.68 billion with operating profit turning positive at KRW 1.69 billion, while the net loss narrowed to roughly KRW 0.02 billion, near breakeven. First-half 2026 consolidated revenue was confirmed at KRW 143.1 billion, up 27.5% year over year, with the operating loss narrowing from KRW 13.1 billion to KRW 2.1 billion. The company attributed the improvement to rising semiconductor capital expenditure and increased customer orders for wafer transfer robots. Still, on a trailing four-quarter basis (Q3 2025 through Q2 2026), owner net income remains negative at roughly KRW -15.3 billion, indicating further confirmation is needed before a full recovery can be established."
  },
  "industry": {
-  "ko": "LM가이드·볼나사 등 직선운동시스템은 반도체·디스플레이·이차전지 제조장비, 공작기계, 산업용 로봇 등 다양한 자동화 설비에 공통으로 쓰이는 핵심 부품이어서 전방산업의 설비투자(CAPEX) 사이클에 실적이 직접 연동되는 구조다. 최근에는 AI 인프라 확대에 따른 메모리 반도체와 첨단 패키징 공정 투자 증가가 자동화설비·로봇 수요를 늘리는 요인으로 지목되고 있다. 아울러 국내 제조업 설비투자가 점진적으로 회복되면서 반도체 및 첨단 제조업 중심의 수요 회복이 나타나고 있는 것으로 파악된다. 다만 이차전지·디스플레이 등 다른 전방산업의 투자 속도는 부문별로 온도차가 있어, 특정 산업에 대한 의존도가 실적 변동성을 키울 수 있는 구조다. 국내 LM가이드 시장에서는 일본 THK와의 기술제휴를 기반으로 오랜 기간 선두 지위를 지켜온 것으로 알려져 있으나, 해외에서는 THK를 비롯한 글로벌 대형업체들과 기술·가격 경쟁을 벌여야 하는 위치에 있다. 산업용·물류 로봇, 반도체 웨이퍼 이송 로봇 등 신사업 영역은 아직 매출 비중이 검증되는 단계로, 기존 LM가이드 사업 대비 성장성과 수익성이 어떻게 자리 잡을지가 관전 포인트다.",
-  "en": "Linear motion systems such as LM guides and ball screws are core components shared across semiconductor, display and battery manufacturing equipment, machine tools and industrial robots, meaning earnings are directly tied to the capital expenditure cycles of downstream industries. Recently, rising investment in memory semiconductors and advanced packaging tied to AI infrastructure expansion has been cited as a factor boosting demand for automation equipment and robots. In addition, a gradual recovery in domestic manufacturing capital investment appears to be driving a rebound in demand centered on semiconductors and advanced manufacturing. However, investment pace varies across other downstream sectors such as batteries and displays, meaning reliance on specific industries could amplify earnings volatility. In the domestic LM guide market, the company has reportedly maintained a leading position for an extended period based on its technology partnership with Japan's THK, though overseas it competes on technology and price with THK and other large global players. New business areas such as industrial and logistics robots and semiconductor wafer-transfer robots remain at an earlier stage in terms of proven revenue contribution, making their growth trajectory and profitability relative to the core LM guide business a point of ongoing observation."
+  "ko": "삼익THK가 속한 LM가이드·정밀 자동화 부품 시장은 일본 THK가 세계시장의 60%를 점유하는 절대 강자이며, 삼익THK는 THK와의 기술제휴를 바탕으로 국내 시장에서 약 45~50%의 점유율로 1위를 지키고 있다. 전방산업은 반도체·디스플레이 장비, 공작기계, 이차전지 장비 등으로 다변화돼 있어 특정 산업의 투자 사이클에 실적이 크게 연동되는 구조다. 최근에는 고대역폭메모리(HBM) 확대에 따른 반도체 후공정 투자가 웨이퍼이송로봇 수요를 견인하는 핵심 변수로 부상했으며, 웨이퍼가 고가·파손 위험이 큰 만큼 로봇을 통한 이송의 신뢰성이 중요한 진입장벽으로 작용한다. 로봇 부문에서는 두산로보틱스, 레인보우로보틱스 등 국내 대기업 계열 로봇 기업들과 경쟁 및 협력 관계가 형성돼 있으며, 삼성전자는 레인보우로보틱스에 지분투자를 하는 등 대기업들의 로봇 산업 투자가 확대되는 추세다. 이차전지 장비 부문은 과거 성장 동력이었으나 최근 글로벌 배터리셀 업체들의 투자 속도 조절 영향을 받고 있는 것으로 보인다. 산업 전반적으로는 AI 인프라 확대에 따른 반도체 자동화 수요가 로봇·정밀부품 업체들의 새로운 성장축으로 부각되는 국면이다.",
+  "en": "In the LM guide and precision automation parts market where Samick THK operates, Japan's THK is the dominant global player with roughly 60% market share, and Samick THK has leveraged its technology partnership with THK to hold an estimated 45-50% share and the top position domestically. End markets span semiconductor and display equipment, machine tools, and battery equipment, meaning results are closely tied to the capital expenditure cycles of these industries. Recently, semiconductor back-end investment driven by high-bandwidth memory (HBM) expansion has emerged as a key variable pulling demand for wafer transfer robots, with reliability in handling expensive, fragile wafers acting as an important barrier to entry. In the robotics segment, competitive and cooperative relationships have formed with domestic robotics affiliates of large conglomerates such as Doosan Robotics and Rainbow Robotics, and conglomerate investment in robotics is expanding, as seen with Samsung Electronics taking an equity stake in Rainbow Robotics. The battery equipment segment, a past growth driver, appears to be affected by the pace adjustment in capital spending among global battery cell makers. Overall, semiconductor automation demand tied to expanding AI infrastructure is emerging as a new growth axis for robotics and precision parts makers."
  },
  "outlook": {
-  "ko": "2026년 4월 8일 한국거래소 기업심사위원회가 상장유지를 결정하고 이튿날부터 매매거래정지가 해제되면서, 회사는 약 11개월에 걸친 경영 불확실성 국면에서 벗어나 정상적인 자본시장 접근이 가능해졌다. 회사 측은 내부통제와 윤리경영 체계 확립을 최우선 과제로 제시하며 신뢰 회복에 주력하겠다는 입장을 밝힌 바 있다. 2026년 1분기와 2분기에 걸쳐 매출이 순차적으로 늘고 영업손익이 흑자로 전환된 점은 거래재개 이후 정상적인 영업활동이 재개되고 있음을 시사한다. LM시스템 부문은 국내 제조업 설비투자 회복과 AI·반도체 산업 성장에 따른 자동화 수요 증가로 반도체 및 첨단 제조업 중심 수요가 회복되고 있는 것으로 파악되며, 솔루션사업부문 역시 AI 인프라 확대에 따른 메모리 및 첨단 패키징 공정 투자 증가로 자동화설비 및 로봇 수요가 늘어 실적 개선에 기여하고 있는 것으로 나타난다. 2026년 5월에는 베트남 FPT와 AI·로봇을 활용한 스마트 제조 혁신 협력을 발표하며 해외 사업 확장 의지를 드러냈다. 다만 회사가 과거 제시했던 중장기 매출 목표와 실제 실적 사이에는 상당한 격차가 존재해온 것으로 알려져 있어, 목표 달성 시점과 경로에 대해서는 향후 공시와 IR 자료를 통한 확인이 필요하다. 상장적격성 심사 관련 후속 조치나 내부통제 개선 이행 여부도 지속적으로 점검해야 할 사안이다.",
-  "en": "With the Korea Exchange's listing committee deciding to maintain the listing on April 8, 2026 and trading resuming the following day, the company emerged from roughly eleven months of governance-related uncertainty and regained normal access to capital markets. Management has stated it is prioritizing the establishment of internal controls and ethical management systems to restore trust. The sequential revenue growth and the turn to operating profit across Q1 and Q2 2026 suggest normal business operations have resumed following the reinstatement of trading. The LM System segment is reportedly seeing a recovery in demand centered on semiconductors and advanced manufacturing, driven by a recovery in domestic manufacturing capital investment and rising automation demand tied to AI and semiconductor industry growth, while the solutions segment has also benefited from increased automation equipment and robot demand linked to rising memory and advanced packaging investment amid AI infrastructure expansion. In May 2026, the company announced a smart manufacturing collaboration with Vietnam's FPT leveraging AI and robotics, signaling intent to expand overseas business. That said, a considerable gap has reportedly existed historically between the company's long-term revenue targets and actual results, so the timeline and path toward any stated targets warrant confirmation through future disclosures and IR materials. Follow-up measures related to the listing eligibility review and the implementation of internal control improvements also remain matters for ongoing monitoring."
+  "ko": "회사는 반도체 설비투자 확대와 주요 고객사 발주 증가에 따라 웨이퍼이송로봇 수주가 늘어나고 있다고 설명했으며, 이는 2026년 상반기 매출 증가와 2분기 영업흑자 전환의 직접적 배경이 됐다. SK증권은 2026년 8월 보고서에서 삼익THK를 \"반도체 장비부터 협동로봇까지 실체 있는 기대감을 갖춘 기업\"으로 평가하고, 하반기에는 반도체 장비 발주 증가에 힘입어 유의미한 성장 모멘텀을 확인할 수 있을 것으로 전망했다. 같은 보고서는 지난해 상장적격성 실질심사 과정의 거래정지 이후 경영 투명성 강화와 부실 사업 정리 등 체질 개선이 이뤄졌다고 언급했다. 회사는 단축·다축 직교로봇에서 출발해 국내 대기업과 협력하여 반도체 공정용 진공로봇과 6축 다관절 로봇을 개발하고 있으며, 반도체를 넘어 이차전지와 스마트팩토리 분야까지 로봇 적용 범위를 넓힌다는 전략을 유지하고 있다. 또한 KIST로부터 이전받은 근력보조 웨어러블 로봇 기술을 바탕으로 2026년 제품 상용화를 목표로 하고 있어 해당 일정의 진행 여부가 확인 대상이다. 다만 회사가 과거 제시했던 중장기 매출 목표(연 7,000억원 등)와 현재 매출 규모 사이에는 여전히 큰 격차가 남아 있어, 신사업의 매출 기여가 실제로 어느 시점에 가시화되는지가 관전 포인트다.",
+  "en": "The company has stated that rising semiconductor capital expenditure and increased customer orders are driving growth in wafer transfer robot bookings, which was the direct backdrop for the first-half 2026 revenue increase and the Q2 operating profit turnaround. In an August 2026 report, SK Securities described Samick THK as a \"company with substantive expectations spanning semiconductor equipment to collaborative robots\" and projected that meaningful growth momentum could be confirmed in the second half, supported by rising semiconductor equipment orders. The same report noted that following a trading suspension last year tied to a listing eligibility review, the company had strengthened management transparency and cleaned up underperforming businesses. The company, having started with single- and multi-axis gantry robots, is developing vacuum robots for semiconductor processes and six-axis articulated robots in cooperation with a domestic conglomerate, and maintains a strategy to extend robotics applications beyond semiconductors into battery and smart-factory fields. It also aims to commercialize a strength-assist wearable robot in 2026, based on technology transferred from KIST, making progress on this timeline worth monitoring. However, a substantial gap remains between the mid- to long-term revenue targets the company has previously set (including an annual target of roughly KRW 700 billion) and its current revenue scale, making the timing of new-business revenue contribution a key point to watch."
  },
  "valuation_comment": {
-  "ko": "삼익THK는 2025년 대규모 적자로 주당순자산이 줄어든 가운데, 현재 주가순자산비율은 순자산 대비 일정한 프리미엄이 붙어 거래되는 수준으로 파악된다. 과거 연간 실적이 흑자였던 시기와 비교하면 최근 몇 개 분기의 손익은 적자에서 손익분기 수준으로 회복되는 흐름을 보이고 있어, 이익 안정성에 대한 시장의 평가가 향후 실적 흐름에 따라 갈릴 수 있는 국면이다. 배당의 경우 과거 주당 50원의 현금배당 이력이 있으나, 2025년 순손실을 감안하면 향후 배당 정책의 연속성은 실적 회복 여부에 좌우될 가능성이 있다. 거래정지 해제 이후 유동성이 낮았던 기간을 지나 정상적인 매매가 재개된 지 얼마 되지 않았다는 점도 밸류에이션 지표의 안정성을 판단할 때 함께 고려할 부분이다. 증권사의 공식적인 목표주가 제시 자료는 최근 확인되지 않아, 시장 컨센서스 기반의 비교는 제한적이다.",
-  "en": "Following a large 2025 net loss that reduced book value per share, Samick THK's current price-to-book ratio appears to trade at a certain premium to net asset value. Compared with periods of prior annual profitability, recent quarterly results show a trend of recovery from losses toward breakeven, a dynamic that could shape how the market assesses earnings stability going forward. On dividends, the company has a history of a KRW 50 per-share cash dividend, but given the 2025 net loss, the continuity of future dividend policy may hinge on the pace of earnings recovery. The relatively short period since trading resumed after the suspension, following a period of limited liquidity, is also a factor to weigh when assessing the stability of valuation metrics. No recent brokerage target price has been identified, limiting consensus-based comparison."
+  "ko": "주가는 주당순자산에 근접한 수준에서 거래되고 있어, 순자산가치 대비 뚜렷한 할인이나 프리미엄이 크게 나타나는 구간은 아니다. 최근 네 개 분기 기준으로는 순손실이 이어지고 있어 표준적인 주가수익비율 산정이 어려운 상태이며, 과거 이익을 냈던 시기의 거래 밴드와 단순 비교하기에도 한계가 있다. 배당수익률은 업종 평균을 밑도는 편으로, 최근 실적 부진에 따라 주당 배당 수준도 과거 대비 낮아진 상태다. 2026년 2분기 영업이익 흑자전환과 매출 성장세가 확인된 만큼, 이러한 흐름이 다음 분기 이후에도 이어지는지가 시장의 주된 관심사로 보인다.",
+  "en": "The share price trades close to book value per share, so there is no pronounced discount or premium relative to net asset value at present. On a trailing four-quarter basis the company still posts a net loss, making a standard price-to-earnings comparison difficult, and comparisons with historical trading bands from profitable periods have similar limitations. The dividend yield runs below the industry average, and per-share dividend levels have also declined from prior years amid recent earnings weakness. With the Q2 2026 operating profit turnaround and revenue growth now confirmed, market attention appears focused on whether this trend continues in subsequent quarters."
  },
  "bull": [
   {
    "title": {
-    "ko": "분기 실적 4개 분기 연속 개선",
-    "en": "Four Consecutive Quarters of Improving Results"
+    "ko": "반도체 로봇 수주 확대",
+    "en": "Expanding Semiconductor Robot Orders"
    },
    "body": {
-    "ko": "2025년 2분기부터 2026년 2분기까지 분기 매출이 528억원에서 776억원으로 꾸준히 늘었고, 영업손익은 2026년 2분기 17억원 흑자로 전환됐다. 순손실 규모도 2025년 2분기 271억원에서 2026년 2분기 0.2억원까지 급격히 축소돼 손익분기권에 근접했다. 이러한 흐름이 이어질 경우 2025년의 대규모 적자에서 벗어나는 국면으로 해석될 여지가 있다."
-   },
-   "en": {
-    "body": "Quarterly revenue rose steadily from KRW 52.8 billion in Q2 2025 to KRW 77.6 billion in Q2 2026, with operating profit turning positive at KRW 1.7 billion in Q2 2026. The net loss also shrank sharply from KRW 27.1 billion in Q2 2025 to just KRW 0.02 billion in Q2 2026, approaching breakeven. If this trend continues, it could be interpreted as a move away from the large 2025 losses."
+    "ko": "2026년 2분기 영업이익이 16.9억원으로 흑자전환했고 매출도 5개 분기 연속 늘어났다. 회사는 반도체 설비투자 확대와 주요 고객사 발주 증가로 웨이퍼이송로봇 수주가 늘었다고 설명했다. 상반기 매출은 전년 동기 대비 27.5% 증가하며 회복세가 가시화됐다.",
+    "en": "Q2 2026 operating profit turned positive at KRW 1.69 billion and revenue grew for five straight quarters. The company attributed the improvement to rising semiconductor capex and increased customer orders for wafer transfer robots. First-half revenue rose 27.5% year over year, making the recovery visible."
    }
   },
   {
    "title": {
-    "ko": "국내 1위권 LM가이드 지위와 AI·반도체 수요 회복",
-    "en": "Leading Domestic LM Guide Position Amid AI/Semiconductor Demand Recovery"
+    "ko": "LM가이드 국내 1위 지위",
+    "en": "Domestic No.1 Position in LM Guides"
    },
    "body": {
-    "ko": "회사는 일본 THK와의 40년 넘는 기술제휴를 바탕으로 국내 LM가이드·볼나사 시장에서 오랜 기간 선두 지위를 유지해온 것으로 알려져 있다. AI 인프라 확대에 따른 메모리·첨단 패키징 공정 투자 증가와 국내 제조업 설비투자 회복이 자동화설비·로봇 수요를 늘리는 요인으로 파악된다. 이는 LM시스템·솔루션사업부문 모두의 실적 개선에 기여하고 있는 것으로 나타난다."
-   },
-   "en": {
-    "body": "Built on a 40-plus-year technology partnership with Japan's THK, the company has reportedly maintained a leading position in the domestic LM guide and ball screw market for an extended period. Rising memory and advanced packaging investment tied to AI infrastructure expansion, along with a recovery in domestic manufacturing capital investment, are cited as factors boosting demand for automation equipment and robots. This appears to be contributing to earnings improvement in both the LM System and solutions segments."
+    "ko": "삼익THK는 국내 LM가이드·LM시스템 시장에서 약 45~50%의 점유율로 1위를 지키고 있으며, 일본 THK와 40년 이상 이어온 기술제휴가 진입장벽으로 작용한다. 이 기반 기술을 활용해 로봇 사업으로 다각화를 지속하고 있다.",
+    "en": "Samick THK holds an estimated 45-50% share and the top position in the domestic LM guide/LM system market, with its 40-plus-year technology partnership with Japan's THK acting as a barrier to entry. It continues to diversify into robotics by leveraging this core technology."
    }
   },
   {
    "title": {
-    "ko": "상장적격성 이슈 해소 및 해외 협력 확대",
-    "en": "Resolved Listing Eligibility Issue and Expanding Overseas Partnerships"
+    "ko": "신사업 다각화와 외부 긍정 평가",
+    "en": "New-Business Diversification and Positive External Views"
    },
    "body": {
-    "ko": "2026년 4월 한국거래소 기업심사위원회가 상장유지를 결정하며 약 11개월간 지속된 매매거래정지가 해제됐다. 회사는 내부통제와 윤리경영 체계 확립을 최우선 과제로 제시하며 신뢰 회복을 추진 중이다. 2026년 5월에는 베트남 FPT와 AI·로봇 활용 스마트 제조 협력을 발표하며 해외 사업 확장 움직임도 나타났다."
-   },
-   "en": {
-    "body": "The Korea Exchange's listing committee decided to maintain the listing in April 2026, ending an approximately 11-month trading suspension. The company has prioritized establishing internal controls and ethical management systems as it works to restore trust. In May 2026, it announced a smart manufacturing collaboration with Vietnam's FPT using AI and robotics, signaling overseas expansion efforts."
+    "ko": "반도체 공정용 진공로봇, 6축 다관절 로봇, 근력보조 웨어러블 로봇 등 신제품을 개발 중이며 KIST 기술이전을 통한 2026년 상용화를 목표로 한다. SK증권은 2026년 8월 보고서에서 회사를 반도체 장비부터 협동로봇까지 실체 있는 기대감을 갖춘 기업으로 평가했다.",
+    "en": "The company is developing new products including vacuum robots for semiconductor processes, six-axis articulated robots, and a strength-assist wearable robot, targeting 2026 commercialization via KIST technology transfer. In an August 2026 report, SK Securities described the company as having substantive expectations spanning semiconductor equipment to collaborative robots."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2025년 대규모 적자와 매출 급감",
-    "en": "Large 2025 Loss and Sharp Revenue Decline"
+    "ko": "2025년 대규모 적자의 잔영",
+    "en": "Lingering Effects of the Large 2025 Loss"
    },
    "body": {
-    "ko": "2025년 연결 매출은 2,221억원으로 전년 대비 약 27% 급감했고, 영업손실 354억원, 지배주주순손실 450억원의 대규모 적자를 기록했다. 이는 2022년 매출 3,391억원, 영업이익률 6.1% 시절과 비교하면 상당한 수준의 실적 훼손이다. 회복이 이어지고 있다고는 해도 과거 수준으로의 완전한 정상화 여부는 아직 확인되지 않았다."
-   },
-   "en": {
-    "body": "2025 consolidated revenue fell roughly 27% year-on-year to KRW 222.2 billion, with a large operating loss of KRW 35.5 billion and an owners' net loss of KRW 45.0 billion. This represents substantial deterioration compared with 2022, when revenue reached KRW 339.1 billion with a 6.1% operating margin. While a recovery is underway, full normalization to prior levels has not yet been confirmed."
+    "ko": "2025년 연간 영업손실 354.6억원, 순손실 450.0억원을 기록하며 4개년 중 최악의 실적을 냈다. 최근 네 개 분기 기준으로도 지배주주 순이익은 여전히 음수 구간에 머물러 있어 완전한 정상화까지는 시간이 필요하다.",
+    "en": "The company posted an operating loss of KRW 35.46 billion and a net loss of KRW 45.0 billion in 2025, the worst result among the four years shown. Owner net income remains negative on a trailing four-quarter basis, suggesting more time is needed for a full recovery."
    }
   },
   {
    "title": {
-    "ko": "지배구조·내부통제 리스크 잔존",
-    "en": "Residual Governance and Internal Control Risk"
+    "ko": "전방산업 사이클 의존",
+    "en": "Dependence on End-Market Cycles"
    },
    "body": {
-    "ko": "2025년 5월 전직 임원의 횡령·배임 혐의(약 176억원, 자기자본 대비 8.85% 규모로 알려짐)로 촉발된 상장적격성 실질심사는 상장유지로 마무리됐으나, 관련 소송이나 후속 조치가 진행 중일 가능성이 있다. 거래정지가 재발할 경우 유동성 제약이 다시 발생할 수 있어 지배구조 리스크는 계속 주시할 필요가 있다."
-   },
-   "en": {
-    "body": "The listing eligibility review triggered by former executives' alleged embezzlement and breach of trust (reportedly about KRW 17.6 billion, or 8.85% of equity) in May 2025 concluded with the listing maintained, but related litigation or follow-up measures may still be ongoing. A recurrence of trading suspension could reintroduce liquidity constraints, so governance risk warrants continued monitoring."
+    "ko": "실적이 반도체·이차전지 장비사의 설비투자 사이클에 크게 연동되는 구조여서, 고객사 발주 일정이 지연되면 분기 실적이 즉시 흔들릴 수 있다. 이차전지 장비 부문은 과거 성장 동력이었으나 최근 투자 속도 조절의 영향을 받는 것으로 보인다.",
+    "en": "Performance is closely tied to the capex cycles of semiconductor and battery equipment customers, so a delay in customer order schedules can immediately affect quarterly results. The battery equipment segment, a past growth driver, appears to be affected by a recent slowdown in the pace of investment."
    }
   },
   {
    "title": {
-    "ko": "목표와 실제 실적 간 괴리",
-    "en": "Gap Between Targets and Actual Results"
+    "ko": "재무구조 및 지배구조 부담",
+    "en": "Balance Sheet and Governance Burdens"
    },
    "body": {
-    "ko": "회사가 과거 제시했던 중장기 매출 목표와 실제 발생 매출 사이에는 상당한 격차가 존재해온 것으로 알려져 있다. 신사업으로 추진 중인 진공용 로봇, 배터리 장비 등의 사업화 시점과 매출 기여도는 아직 검증 단계에 있다. 목표 달성 지연이 반복될 경우 시장의 신뢰 회복에 시간이 더 필요할 수 있다."
-   },
-   "en": {
-    "body": "A considerable gap has reportedly existed between the company's previously stated long-term revenue targets and actual results. The commercialization timeline and revenue contribution of new businesses such as vacuum robots and battery equipment remain in a verification stage. Repeated delays in achieving targets could require more time to rebuild market confidence."
+    "ko": "2025년 자기자본이 1,574억원으로 전년(1,988억원) 대비 축소됐고 부채비율은 149.5%로 전년(133.2%) 대비 높아졌다. 지난해 상장적격성 실질심사에 따른 거래정지 이력도 지배구조 측면의 부담으로 남아 있다.",
+    "en": "2025 equity fell to KRW 157.4 billion from KRW 198.8 billion a year earlier, and the debt ratio rose to 149.5% from 133.2%. A trading suspension last year tied to a listing eligibility review also remains a governance-related overhang."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "지배구조 리스크",
+    "ko": "산업 사이클 리스크",
+    "en": "Industry Cycle Risk"
+   },
+   "body": {
+    "ko": "매출의 상당 부분이 반도체·디스플레이·이차전지 장비사의 설비투자에 연동돼 있어, 고객사의 투자 지연이나 축소가 발생하면 실적에 직접적인 영향을 줄 수 있다. 최근 회복은 반도체 웨이퍼이송로봇 수주 증가에 크게 의존하고 있어 해당 수요가 둔화될 경우 되돌림이 나타날 수 있다.",
+    "en": "A significant portion of revenue is tied to capital spending by semiconductor, display, and battery equipment customers, so delays or cutbacks in customer investment could directly affect performance. The recent recovery relies heavily on increased orders for semiconductor wafer transfer robots, and a slowdown in that demand could reverse the trend."
+   }
+  },
+  {
+   "cat": {
+    "ko": "거버넌스 리스크",
     "en": "Governance Risk"
    },
    "body": {
-    "ko": "전직 임원의 횡령·배임 혐의로 촉발된 상장적격성 실질심사는 2026년 4월 상장유지로 종결됐으나, 관련 소송 결과나 추가 조회공시 요구 등 후속 이슈가 재발할 가능성을 배제할 수 없다. 내부통제 개선계획의 실제 이행 여부도 지속 확인이 필요한 사안이다."
-   },
-   "en": {
-    "body": "The listing eligibility review triggered by former executives' alleged embezzlement and breach of trust concluded with the listing maintained in April 2026, but the possibility of related litigation outcomes or further disclosure inquiries cannot be ruled out. Actual implementation of internal control improvement plans also requires ongoing verification."
+    "ko": "지난해 상장적격성 실질심사 과정에서 거래정지를 겪은 이력이 있으며, 이후 경영 투명성 강화와 부실 사업 정리가 이뤄졌다고 알려져 있으나 재발 가능성에 대한 지속적인 모니터링이 필요하다.",
+    "en": "The company experienced a trading suspension last year during a listing eligibility review, and while management transparency and cleanup of underperforming businesses reportedly followed, ongoing monitoring for recurrence risk is warranted."
    }
   },
   {
    "cat": {
-    "ko": "전방산업 의존 리스크",
-    "en": "Downstream Industry Dependence Risk"
+    "ko": "재무구조 리스크",
+    "en": "Financial Structure Risk"
    },
    "body": {
-    "ko": "매출이 반도체·디스플레이·이차전지 등 소수 전방산업의 설비투자 사이클에 크게 좌우되는 구조여서, 해당 산업의 투자 둔화가 재발할 경우 실적 변동성이 다시 확대될 수 있다. 2025년의 매출 급감과 대규모 적자는 이러한 민감도를 보여주는 사례로 볼 수 있다."
-   },
-   "en": {
-    "body": "Revenue is heavily dependent on the capital expenditure cycles of a small number of downstream industries such as semiconductors, displays and batteries, so a renewed investment slowdown in these sectors could widen earnings volatility again. The sharp 2025 revenue decline and large loss illustrate this sensitivity."
-   }
-  },
-  {
-   "cat": {
-    "ko": "재무구조·수익성 리스크",
-    "en": "Financial Structure and Profitability Risk"
-   },
-   "body": {
-    "ko": "2025년 부채비율은 149.5%로 2022년 110.7% 대비 높아졌고, 자기자본은 2022년 2,107억원에서 2025년 1,574억원으로 줄었다. 영업이익률도 2022년 6.1%에서 2025년 -16.0%까지 하락한 이력이 있어, 수익성 회복의 지속성이 검증돼야 하는 단계다."
-   },
-   "en": {
-    "body": "The debt ratio rose to 149.5% in 2025 from 110.7% in 2022, while equity declined from KRW 210.7 billion in 2022 to KRW 157.4 billion in 2025. The operating margin also fell from 6.1% in 2022 to -16.0% in 2025, meaning the durability of any profitability recovery still needs to be verified."
+    "ko": "2025년 자기자본이 전년 대비 축소되고 부채비율이 149.5%로 높아진 가운데, 반도체 로봇 수주 회복이 이어지지 않을 경우 재무구조 개선 속도가 늦어질 수 있다.",
+    "en": "With 2025 equity shrinking from the prior year and the debt ratio rising to 149.5%, the pace of balance-sheet improvement could slow if the recovery in semiconductor robot orders fails to continue."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 3분기 실적 발표(2026년 11월 예상)",
-    "en": "Q3 2026 Earnings Release (Expected November 2026)"
+    "ko": "2026년 11월 중",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 흑자전환이 3분기에도 이어지는지, 매출 증가세와 영업이익률 개선 폭을 확인해야 한다.",
-    "en": "Check whether the Q2 2026 return to profitability continues into Q3, along with the pace of revenue growth and operating margin improvement."
+    "ko": "3분기 실적 공시(잠정치는 아직 확정 전) 확인 — 매출 성장세와 2분기 영업흑자가 이어지는지가 관전 포인트.",
+    "en": "Check the Q3 earnings disclosure (not yet finalized) - whether the revenue growth trend and Q2 operating profit turnaround continue is the key point to watch."
    }
   },
   {
    "when": {
-    "ko": "수시 공시",
-    "en": "Ongoing Disclosures"
+    "ko": "2026년 하반기~연말",
+    "en": "Second half through year-end 2026"
    },
    "what": {
-    "ko": "전직 임원 횡령·배임 관련 소송 진행 상황이나 추가 조회공시 요구 등 상장적격성 관련 후속 이슈 발생 여부를 점검해야 한다.",
-    "en": "Monitor for developments in litigation related to the former executives' embezzlement and breach-of-trust case, or any additional disclosure inquiries tied to listing eligibility."
+    "ko": "삼성전자 등 고객사의 HBM 후공정 투자 확대에 따른 웨이퍼이송로봇(WTR) 추가 수주 공시 여부 확인.",
+    "en": "Monitor for disclosures of additional wafer transfer robot (WTR) orders tied to expanded HBM back-end investment by customers such as Samsung Electronics."
    }
   },
   {
    "when": {
-    "ko": "베트남 FPT 협력 후속 소식",
-    "en": "Follow-up on Vietnam FPT Partnership"
+    "ko": "2026년 4분기",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "2026년 5월 발표된 FPT와의 AI·로봇 스마트 제조 협력이 구체적 사업 성과나 매출로 이어지는지 확인할 필요가 있다.",
-    "en": "Verify whether the AI/robotics smart manufacturing collaboration with FPT announced in May 2026 translates into concrete business outcomes or revenue."
+    "ko": "KIST 기술이전 기반 근력보조 웨어러블 로봇의 2026년 상용화 목표 진행 상황 확인.",
+    "en": "Check progress toward the 2026 commercialization target for the KIST-derived strength-assist wearable robot."
    }
   },
   {
    "when": {
-    "ko": "배당 관련 공시",
-    "en": "Dividend-related Disclosures"
+    "ko": "2026년 4분기",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "2025년 순손실 이후 배당 정책의 지속 여부와 배당 규모 변화를 확인할 필요가 있다.",
-    "en": "Check for the continuity of dividend policy and any changes in dividend size following the 2025 net loss."
+    "ko": "반도체 공정용 진공로봇, 6축 다관절 로봇 등 신제품의 양산·고객사 확대 여부 확인.",
+    "en": "Check whether new products such as vacuum robots for semiconductor processes and six-axis articulated robots move toward mass production and customer expansion."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "삼익THK는 2025년 대규모 매출 급감과 적자, 전직 임원 횡령·배임 사태에 따른 약 11개월의 매매거래정지라는 이중의 충격을 겪었으나, 2026년 4월 거래재개 이후 분기 매출이 4분기 연속 늘고 2분기 영업손익이 흑자로 전환되는 회복 신호를 보이고 있다. LM가이드·볼나사 등 직선운동시스템에서의 오랜 국내 선두 지위와 AI·반도체발 자동화 수요 회복이 우호적 요인으로 작용하고 있는 것으로 파악되는 한편, 2025년의 재무구조 악화(부채비율 149.5%, 자기자본 감소)와 지배구조 리스크는 여전히 관찰이 필요한 부분이다. 회사가 제시해온 중장기 매출 목표와 실제 실적 사이의 괴리, 신사업(진공로봇·배터리 장비 등)의 구체적 사업화 시점도 확인이 필요한 대목이다. 배당은 과거 주당 50원의 이력이 있으나 2025년 순손실을 감안하면 지속 여부는 향후 실적에 달려 있다. 투자 판단에 앞서 다음 분기 실적, 지배구조 후속 이슈, 신사업 진행 상황 등을 종합적으로 확인할 필요가 있다.",
-   "en": "Samick THK endured a dual shock in 2025—a sharp revenue and profit decline alongside an approximately 11-month trading suspension tied to former executives' embezzlement and breach-of-trust allegations—but has shown signs of recovery since trading resumed in April 2026, with revenue rising for four consecutive quarters and operating income turning positive in Q2. Its long-standing leading domestic position in linear motion systems such as LM guides and ball screws, along with a recovery in AI- and semiconductor-driven automation demand, appear to be favorable factors, while the 2025 deterioration in financial structure (a 149.5% debt ratio and declining equity) and governance risk still warrant observation. The gap between the company's stated long-term revenue targets and actual results, as well as the concrete commercialization timeline for new businesses such as vacuum robots and battery equipment, also require confirmation. Dividends have a history of KRW 50 per share, but continuity depends on future earnings given the 2025 net loss. Before forming an investment view, readers should comprehensively check upcoming quarterly results, governance follow-up issues, and the progress of new business initiatives."
+   "ko": "삼익THK는 2022년 이후 3년 연속 실적이 둔화되다 2025년 대규모 적자로 이어졌으나, 2026년 들어 매출이 5개 분기 연속 증가하고 2분기에는 영업이익이 흑자로 전환하는 등 회복 신호가 확인됐다. 회복의 핵심 동력은 반도체 웨이퍼이송로봇 수주 확대이며, 이는 회사의 국내 LM가이드 1위 지위와 로봇 사업 다각화 전략이 맞물린 결과로 해석된다. 다만 최근 네 개 분기 기준 지배주주 순이익은 여전히 음수 구간에 있고, 2025년 자기자본 축소와 부채비율 상승 등 재무구조 부담도 남아 있다. 지난해 상장적격성 실질심사에 따른 거래정지 이력은 거버넌스 측면에서 지속적인 확인이 필요한 사안이다. SK증권 등 일부 증권가에서는 하반기 반도체 장비 발주 증가에 따른 성장 모멘텀을 긍정적으로 평가했지만, 이는 특정 기관의 견해로 향후 실적 공시를 통해 검증이 필요하다. 결국 2026년 3분기 이후 실적이 2분기의 흑자 전환을 이어가는지, 그리고 신사업(웨어러블 로봇·진공로봇 등)의 매출 기여 시점이 언제 가시화되는지가 향후 판단의 핵심 변수가 될 것으로 보인다.",
+   "en": "Samick THK's performance weakened for three consecutive years after 2022, culminating in a large loss in 2025, but signs of recovery emerged in 2026 with revenue rising for five straight quarters and operating profit turning positive in Q2. The core driver of the recovery is expanded orders for semiconductor wafer transfer robots, which reflects the interplay between the company's leading domestic LM guide position and its robotics diversification strategy. However, owner net income remains negative on a trailing four-quarter basis, and financial-structure burdens persist, including the 2025 contraction in equity and the rise in the debt ratio. The trading suspension last year tied to a listing eligibility review is a governance matter that warrants continued monitoring. Some brokerages, including SK Securities, have offered a positive view of growth momentum tied to rising semiconductor equipment orders in the second half, but this reflects the view of a specific institution and requires verification through future earnings disclosures. Ultimately, whether the Q3 2026 results and beyond sustain the Q2 profit turnaround, and when new businesses such as the wearable robot and vacuum robot begin contributing to revenue, are likely to be the key variables for future assessment."
   }
  },
  "sources": [
@@ -217,19 +199,19 @@
   "https://www.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=381977",
   "https://m.irgo.co.kr/IR-COMP/004380/%EC%82%BC%EC%9D%B5THK-IR-PAGE",
   "https://m.thinkpool.com/item/004380",
-  "https://alphasquare.co.kr/home/stock-summary?code=004380",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A004380",
-  "https://www.samickthk.co.kr/kr/ir/financial-information",
+  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=004380&cn=",
   "https://www.thelec.kr/news/articleView.html?idxno=20209",
-  "https://www.etnews.com/20161226000211",
-  "https://www.e-lmsystem.co.kr/",
-  "https://koreabearing.or.kr/30/?bmode=view&idx=3593920",
+  "https://www.jobkorea.co.kr/Company/1619417?tabType=I",
   "https://www.hankyung.com/article/2024040120841",
-  "https://www.thk.com/?q=kr%2Fnode%2F3235",
+  "https://www.hankyung.com/article/202404010777i",
   "https://www.businesspost.co.kr/BP?command=article_view&num=352642",
-  "https://www.incruit.com/company/855668/",
-  "https://stockinfo7.com/etc/report/today/view/5008",
-  "https://kind.krx.co.kr/investwarn/tradinghaltissue.do?method=searchTradingHaltIssueMain"
+  "https://www.komachine.com/ko/companies/samick-thk",
+  "https://www.etnews.com/20161226000211",
+  "https://www.imaeil.com/page/view/2013122707034018382",
+  "https://m.thinkpool.com/compDiscuss/cont/1012137",
+  "https://m.thinkpool.com/stockDiscuss/004380/cont/8174755",
+  "https://tbc.co.kr/news/view?c1=&c2=&id=209808&pno=20260814173031AE04011",
+  "https://news.infostock.co.kr/a"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -242,9 +224,9 @@
   "로봇"
  ],
  "market": "코스피",
- "reportDate": "2026-08-18",
- "reportTs": "2026-08-18 00:50",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 09:16",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -343,14 +325,14 @@
    }
   ],
   "valuation": {
-   "price": 8150,
-   "mcap": 0.1687,
+   "price": 8100,
+   "mcap": 0.1677,
    "shares": 20700000,
    "total_shares": 20700000,
    "wavg_shares": 20714568,
    "per": null,
    "eps": -740,
-   "pbr": 1.11,
+   "pbr": 1.1014,
    "bps": 7354,
    "roe_ttm": -9.7,
    "ttm_window": "2025Q3~2026Q2",
@@ -359,7 +341,7 @@
    "bps_krx": 7604.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 50.0,
-   "div": 0.61
+   "div": 0.62
   }
  }
 }

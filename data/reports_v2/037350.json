@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "매출 역성장 속 마진 급반전, 반도체설비·가스로 구조 전환",
-  "en": "Revenue Contraction Masks Margin Surge; Structural Pivot Toward Semiconductor Equipment & Gas"
+  "ko": "실적 회복세, 소송 종결로 불확실성 해소",
+  "en": "Earnings Recovery as Litigation Overhang Clears"
  },
  "lead": {
-  "ko": "2025년 매출이 전년 대비 약 26% 감소했음에도 영업이익률이 7.8%로 급등하는 수익성 대반전을 달성했으며, 세보엠이씨와의 지분 동맹·산업가스 신사업 안착·반도체 설비 투자 사이클 상승을 배경으로 사업 구조의 질적 전환이 본격화되고 있다.",
-  "en": "Sungdo E&G achieved a dramatic margin reversal in 2025—operating margin surging to 7.8% despite a ~26% revenue decline—as a cross-shareholding alliance with Sebomics, rapid scaling of the industrial gas segment, and a rising semiconductor CapEx cycle drive a meaningful structural shift in its business mix."
+  "ko": "성도이엔지는 2024년 매출 정점 이후 외형은 줄었지만 수익성이 뚜렷하게 개선되는 국면에 있으며, 13년 끌어온 중국 화재 구상금 소송이 2026년 초 최종 종결되면서 재무적 불확실성 하나가 걷혔다.",
+  "en": "Sungdo E&G's revenue has pulled back from its 2024 peak, but profitability has improved markedly, and a 13-year subrogation lawsuit tied to a China plant fire was finally concluded in early 2026, removing a long-standing financial overhang."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 7,434억원(−26% YoY)에도 영업이익 577억원(+111% YoY)·OPM 7.8% 달성 — 저마진 종합건설시공 비중 축소가 믹스 개선의 핵심 동인",
-   "en": "FY2025 revenue fell ~26% YoY to KRW 743.4 bn while operating profit surged 111% to KRW 57.7 bn (OPM 7.8%), driven by the reduced weight of lower-margin general construction."
+   "ko": "2025년 매출은 25.6% 감소했지만 영업이익은 두 배 이상 늘어 영업이익률이 2.7%에서 7.8%로 개선됨",
+   "en": "2025 revenue fell 25.6% year-over-year, yet operating profit more than doubled, lifting the operating margin from 2.7% to 7.8%"
   },
   {
-   "ko": "2026년 1월 동종업계 세보엠이씨와 자사주 교환(성도이엔지 4.9% ↔ 세보엠이씨 3.2%) 단행 — 수주 네트워크·기술 제휴 협력 가시화 여부가 관건",
-   "en": "In January 2026, Sungdo exchanged treasury shares with peer Sebomics (Sungdo 4.9% ↔ Sebomics 3.2%), establishing an equity alliance aimed at order network and technology cooperation synergies."
+   "ko": "2025년 4분기 지배주주순이익이 적자(-85억원)를 기록했으나 2026년 1·2분기에는 다시 흑자로 전환",
+   "en": "Net income attributable to owners swung to a loss (-KRW 8.5bn) in Q4 2025 before returning to profit in Q1 and Q2 2026"
   },
   {
-   "ko": "2023년부터 신사업으로 분류한 가스&케미칼 플랜트가 전체 매출의 10% 내외를 빠르게 소화 — 반도체·2차전지용 공기분리장치(ASU) 등 수요 확대 중",
-   "en": "The gas & chemical plant segment—formally a new business since 2023—has rapidly scaled to roughly 10% of group revenue, with air separation units for semiconductor and EV battery facilities broadening the addressable market."
+   "ko": "SK하이닉스 중국 우시 공장 화재 관련 구상금 소송이 2026년 4월 대법원 최종 기각으로 13년 만에 종결",
+   "en": "The subrogation lawsuit tied to the SK Hynix Wuxi plant fire in China was finally settled by a Supreme Court rejection in April 2026, ending a 13-year legal dispute"
   },
   {
-   "ko": "AI 서버·HBM 투자 확대에 따른 반도체 FAB 클린룸 수요 증가 — WSTS, 2026년 글로벌 반도체 시장 전년 대비 25% 이상 성장 전망",
-   "en": "AI server build-out and HBM capacity expansion are boosting cleanroom construction demand; WSTS forecasts 25%+ YoY growth in the global semiconductor market for 2026."
+   "ko": "미국·헝가리 등 해외 매출 비중이 빠르게 확대되며 클린룸·하이테크 설비 부문의 지역 다변화가 진행 중",
+   "en": "Overseas revenue from the U.S. and Hungary is expanding rapidly, diversifying the geographic mix of the clean-room and high-tech facility business"
   },
   {
-   "ko": "2025Q4 영업이익 95억원에도 순손실(−85억원) 발생은 일회성 비용 추정 — 2026Q1 순이익 100억원으로 정상화 확인",
-   "en": "The Q4 2025 net loss of KRW −8.5 bn (despite positive operating profit of KRW 9.5 bn) appears to reflect a one-time charge, with earnings recovering to a net profit of KRW 10.0 bn in Q1 2026."
+   "ko": "반도체·2차전지·바이오 등 전방산업의 신규·전환 투자 사이클에 실적이 크게 연동되는 구조",
+   "en": "Earnings remain closely tied to the new and conversion investment cycles of semiconductor, battery, and bio end-markets"
   }
  ],
  "business": {
-  "ko": "성도이엔지는 1987년 반도체장비 설비공사로 출발해 1999년 현재의 사명으로 변경하고 2000년 코스닥에 상장한 산업설비·플랜트 종합 EPC 기업이다. 사업 구조는 △하이테크 산업설비 △종합건설시공 △가스&케미칼 플랜트 △부동산 개발 네 축으로 구성되며, 하이테크 산업설비와 종합건설시공이 전체 매출의 80~90%를 담당한다. 하이테크 산업설비 부문은 반도체 FAB·디스플레이·2차전지 생산라인에 필요한 클린룸 설비공사와 초고순도 배관·기계설비 시공을 핵심으로 한다. 종합건설시공 부문은 정유·석유화학 플랜트, 발전소, 물류·산업플랜트 건설을 망라한다. 2023년부터 신사업으로 분류한 가스&케미칼 부문은 반도체·2차전지 제조에 필수적인 공기분리장치(ASU) 및 특수가스 플랜트 시공을 담당하며, 이미 전체 매출의 10% 내외를 소화할 정도로 빠르게 안착했다. 2026년 1월에는 전문건설업 기계설비·가스공사업 분야 국내 2위 기업인 세보엠이씨와 자사주 교환(성도이엔지 자사주 75만주·4.9% ↔ 세보엠이씨 자사주 33만9,400주·3.2%)을 단행해 수주 네트워크 및 기술 제휴 협력 관계를 구축했다. 국내외 주요 기업들의 해외시설 투자에 역량을 집중하며 초고순도 설비와 고가 장비 보유로 시장 경쟁력을 강화하고 있다. 경기도 안성에 연구소 및 1·2공장을 신축해 하이테크 설비의 자체 생산 역량을 확충했으며, 중국에서 20년간 지속해 온 주택 부동산 개발 사업은 현재 착공·분양 일정을 시장 상황에 맞춰 재검토 중이다.",
-  "en": "Sungdo E&G was founded in 1987 as a semiconductor equipment installation contractor, rebranded in 1999, and listed on KOSDAQ in 2000 as a comprehensive industrial equipment and plant EPC company. The business is organized around four segments: (1) high-tech industrial equipment, (2) general construction, (3) gas & chemical plants, and (4) real estate development, with the first two collectively accounting for 80–90% of total revenue. The high-tech equipment segment centers on cleanroom construction for semiconductor FABs, displays, and EV battery lines, along with ultra-high-purity piping and mechanical work. The general construction segment covers refinery and petrochemical plants, power plants, and logistics and industrial facilities. The gas & chemical segment—formally classified as a new business since 2023—handles air separation units (ASUs) and specialty gas plant construction for semiconductor and battery production, having already scaled to roughly 10% of group revenue. In January 2026, Sungdo exchanged treasury shares with Sebomics—ranked second in Korea by mechanical/gas EPC construction capability—swapping 750,000 Sungdo shares (4.9%) for 339,400 Sebomics shares (3.2%) to build order network and technology cooperation ties. The company focuses its overseas activities through foreign subsidiaries and differentiates through ultra-high-purity equipment and specialized machinery. An R&D center and two manufacturing facilities built in Anseong, Gyeonggi Province, bolster in-house high-tech equipment capabilities, while a long-standing residential development project in China remains under schedule review amid ongoing market uncertainty."
+  "ko": "성도이엔지는 1987년 설립되어 반도체·디스플레이용 클린룸 및 고순도 설비 국산화를 시작으로 성장한 종합 엔지니어링·시공 기업이다. 사업부문은 하이테크산업설비, 가스 및 케미칼, 플랜트, 종합건설시공, 부동산 개발 등으로 구성되며, 매출의 상당 부분은 종합건설 시공부문에서 발생한다. 주요 고객사는 삼성전자, SK하이닉스, LG디스플레이 등 국내 반도체·디스플레이 대기업과 도쿄일렉트론 등 글로벌 반도체 장비사이며, 최근에는 포스코퓨처엠 2차전지 양극재 공장, 셀트리온 바이오시밀러 공장 등으로 고객군을 확장하고 있다. 반도체 초기부터 국내외 주요 기업의 수주를 다수 확보했으며, 설계·구매·시공·시운전에 이르는 턴키 서비스 역량이 경쟁력으로 꼽힌다. 최근 몇 년간 미국 매출이 가파르게 증가해 2022년 49억원에서 2024년 1,573억원으로 늘었고, 헝가리 등 유럽 매출도 2024년 870억원 수준에 이르러 해외 사업 비중이 커지고 있다. 클린룸은 전통적으로 반도체·IT 부품용이 중심이었으나 식품의약 등 바이오테크(BT) 영역으로도 공급을 확대하는 추세다. 종속기업으로 성도엘앤디, 중국·베트남 등 해외법인을 두고 있으며, 반도체·디스플레이 장비업체 에스티아이의 지분 약 20%를 보유한 관계사이기도 하다. 경쟁사로는 신성이엔지, 케이엔솔, 한양이엔지, 세보엠이씨 등이 있으며, 클린룸·고순도 설비 시공 분야에서 대기업 계열 건설사와도 경쟁 관계에 있다.",
+  "en": "Founded in 1987, Sungdo E&G grew as a comprehensive engineering and construction firm that helped localize clean-room and high-purity facility technology for the semiconductor and display industries. Its business spans high-tech industrial facilities, gas and chemical plants, plant construction, general construction, and real estate development, with a substantial portion of revenue generated by the general construction segment. Key clients include major domestic semiconductor and display makers such as Samsung Electronics, SK Hynix, and LG Display, as well as global equipment makers like Tokyo Electron, and the client base has recently expanded to include POSCO Future M's battery cathode plant and Celltrion's biosimilar facility. The company secured numerous orders from leading domestic and global firms early in the semiconductor industry's growth, and its turnkey capability spanning design, procurement, construction, and commissioning is considered a core strength. U.S. revenue has grown sharply in recent years, rising from KRW 4.9bn in 2022 to KRW 157.3bn in 2024, while European sales, largely from Hungary, reached roughly KRW 87bn in 2024, underscoring a growing overseas footprint. Clean-room demand has traditionally centered on semiconductors and IT components, but the company has been expanding supply into food, pharmaceutical, and other biotech (BT) applications as well. Subsidiaries include Sungdo L&D and overseas units in China and Vietnam, and the company also holds roughly a 20% stake in semiconductor and display equipment maker STI as an affiliate. Competitors include Shinsung E&G, KENS, Hanyang E&G, and Sebo M&EC, and the company also competes with construction arms of larger conglomerates in clean-room and high-purity facility construction."
  },
  "earnings": {
-  "ko": "2022년 영업손실(−50억원, OPM −0.7%)로 바닥을 찍은 수익성은 2023년(영업이익 123억원, OPM 1.8%) → 2024년(영업이익 273억원, OPM 2.7%) → 2025년(영업이익 577억원, OPM 7.8%)으로 3년 연속 회복 궤적을 그렸다. 매출은 2024년 9,996억원('1조 클럽' 문턱)에서 2025년 7,434억원으로 약 26% 역성장했는데, 저마진 종합건설시공 부문의 수주 감소가 주된 원인이며 역설적으로 이 믹스 변화가 전사 수익성 개선을 견인했다. 영업현금흐름(CFO)은 2022년 21억원에서 2025년 444억원으로 대폭 개선돼 현금 창출력의 질적 향상을 확인할 수 있다. 부채비율은 2024년 174.8%에서 2025년 119.6%로 급락해 재무 건전성도 빠르게 회복되고 있다. 분기별로 보면 2025년 2분기에 영업이익 255억원(OPM 약 12.7%)으로 연간 최고치를 기록했고, 3분기 147억원, 4분기 95억원으로 순차 감소했다. 4분기에는 영업이익(95억원)에도 불구하고 지배주주 기준 순손실(−85억원)이 발생했는데, 영업외 비용 또는 세금 관련 일회성 요인으로 추정된다. 2026년 1분기는 매출 1,446억원·영업이익 78억원으로 외형이 전분기 대비 줄었으나, 순이익 100억원으로 정상화되어 4분기 일회성 충격이 해소된 것으로 보인다.",
-  "en": "After bottoming out with an operating loss of KRW −5.0 bn (OPM −0.7%) in 2022, profitability recovered for three consecutive years: KRW 12.3 bn in 2023 (OPM 1.8%), KRW 27.3 bn in 2024 (OPM 2.7%), and KRW 57.7 bn in 2025 (OPM 7.8%). Revenue, however, fell sharply from KRW 999.6 bn in 2024—just below the KRW 1 trillion threshold—to KRW 743.4 bn in 2025 (−26% YoY), primarily due to lower general construction order intake; paradoxically, this mix shift drove the group's best margins in recent years. Operating cash flow expanded from KRW 2.1 bn in 2022 to KRW 44.4 bn in 2025, confirming meaningful improvement in cash generation quality. The debt-to-equity ratio declined sharply from 174.8% in 2024 to 119.6% in 2025, signaling accelerating balance sheet recovery. On a quarterly basis, Q2 2025 registered a peak operating profit of KRW 25.5 bn (OPM ~12.7%), tapering to KRW 14.7 bn in Q3 and KRW 9.5 bn in Q4. Despite the positive Q4 operating profit, a net loss attributable to controlling shareholders of KRW −8.5 bn was recorded, likely driven by non-recurring non-operating charges or tax items. Q1 2026 showed revenue of KRW 144.6 bn and operating profit of KRW 7.8 bn, with net profit recovering to KRW 10.0 bn—indicating the one-time Q4 impact has normalized."
+  "ko": "2025년 연결 매출은 7,434억원으로 2024년 9,996억원 대비 25.6% 감소했으나, 영업이익은 577억원으로 전년 273억원 대비 두 배 이상 늘었고 영업이익률은 2.7%에서 7.8%로 크게 개선됐다. 지배주주순이익도 282억원으로 전년 153억원 대비 83.9% 증가했다. 이는 종합건설시공 부문 매출 감소로 전체 매출이 줄었지만 비용 효율화가 동반되며 수익성이 뚜렷하게 개선된 결과로 해석된다. 2023년(매출 6,786억원, 영업이익 123억원, 영업이익률 1.8%)과 2022년(매출 7,058억원, 영업손실 50억원, 영업이익률 -0.7%)을 비교하면 회사는 적자에서 흑자로 전환한 뒤 이익 규모를 꾸준히 늘려온 흐름을 보인다. 분기별로 보면 2025년 2분기 매출 2,012억원, 영업이익 255억원, 지배주주순이익 174억원으로 호조를 보인 이후, 3분기(매출 1,761억원, 영업이익 147억원, 순이익 126억원), 4분기(매출 1,657억원, 영업이익 95억원)로 매출과 이익 모두 둔화되는 흐름이 나타났다. 특히 2025년 4분기는 영업이익이 흑자였음에도 지배주주순이익이 -85억원으로 적자를 기록했는데, 이는 영업외 손익에서 일회성 요인이 반영된 결과로 추정된다. 2026년 들어 1분기(매출 1,446억원, 영업이익 78억원, 순이익 100억원)와 2분기(매출 1,746억원, 영업이익 102억원, 순이익 57억원)는 다시 순이익 흑자로 전환됐으나 분기별 변동성이 여전히 크다는 점이 특징이다. 최근 4개 분기(2025년 3분기~2026년 2분기) 누적 지배주주순이익은 약 198억원 수준으로, 연간 실적의 방향성은 유지되고 있으나 매출 규모는 2024년 정점보다 낮은 수준에서 안정화되는 모습이다.",
+  "en": "Consolidated revenue in 2025 came in at KRW 743.4bn, down 25.6% from KRW 999.6bn in 2024, while operating profit more than doubled to KRW 57.7bn from KRW 27.3bn, lifting the operating margin sharply from 2.7% to 7.8%. Net income attributable to owners also rose 83.9% to KRW 28.2bn from KRW 15.3bn a year earlier. The pattern suggests that while overall revenue declined on lower general construction segment sales, cost efficiencies drove a marked improvement in profitability. Compared with 2023 (revenue KRW 678.6bn, operating profit KRW 12.3bn, margin 1.8%) and 2022 (revenue KRW 705.8bn, operating loss of KRW 5.0bn, margin -0.7%), the company has moved from an operating loss into a sustained profit-growth trajectory. On a quarterly basis, Q2 2025 was strong with revenue of KRW 201.2bn, operating profit of KRW 25.5bn, and owners' net income of KRW 17.4bn, before both revenue and profit moderated in Q3 (revenue KRW 176.1bn, operating profit KRW 14.7bn, net income KRW 12.6bn) and Q4 (revenue KRW 165.7bn, operating profit KRW 9.5bn). Notably, Q4 2025 posted an owners' net loss of KRW 8.5bn despite positive operating profit, likely reflecting a one-off item below the operating line. Net income returned to profitability in Q1 2026 (revenue KRW 144.6bn, operating profit KRW 7.8bn, net income KRW 10.0bn) and Q2 2026 (revenue KRW 174.6bn, operating profit KRW 10.2bn, net income KRW 5.7bn), though quarter-to-quarter volatility remains pronounced. Cumulative owners' net income over the most recent four quarters (Q3 2025 through Q2 2026) totaled roughly KRW 19.8bn, indicating the annual profit trend has been sustained even as revenue has settled at a level below the 2024 peak."
  },
  "industry": {
-  "ko": "성도이엔지의 핵심 전방시장인 반도체 FAB 클린룸 설비 수요는 AI 서버·HBM 투자 사이클과 직결된다. WSTS는 2026년 글로벌 반도체 시장이 전년 대비 25% 이상 성장해 약 9,750억 달러 규모에 달할 것으로 전망하며, 메모리 부문은 30%대 증가세가 예상된다. 삼성전자는 2026년 HBM 매출이 전년 대비 3배 이상 증가할 것으로 보고 HBM4 생산 능력을 선제적으로 확대 중이며, 업계 내 제한된 클린룸 공간으로 인한 공급 부족 상황이 중기적으로 지속될 전망이다. 이러한 반도체 설비 투자 확대 기조가 2028년까지 이어질 조짐이 있어 FAB 기계설비 시공 수요를 구조적으로 뒷받침할 것으로 보인다. 산업가스(ASU) 플랜트 시장 역시 반도체·2차전지 제조사의 생산 확대와 맞물려 성장세를 이어가고 있어 성도이엔지의 신사업 기회를 넓혀준다. 반면 국내 종합건설·주택 시장 침체는 동사 종합건설시공 부문에 지속적인 하방 압력으로 작용하며, 중국 부동산 시장의 구조적 조정은 해당 개발 사업의 수익 실현 시점을 불확실하게 만든다. 하이테크 산업설비 EPC 분야에서는 세보엠이씨 등 대형 경쟁사와의 경쟁이 이어지는 가운데, 성도이엔지는 전문건설업 기계설비·가스공사업 부문 시공능력평가액 기준 국내 14위의 업력을 토대로 입지를 확보하고 있다.",
-  "en": "Sungdo's core end-market—semiconductor FAB cleanroom construction—is tightly linked to the AI server and HBM investment cycle. WSTS projects global semiconductor revenues to grow 25%+ YoY in 2026 to approximately USD 975 bn, with the memory segment expected to outpace at 30%+ growth. Samsung Electronics targets more-than-3x HBM revenue growth in 2026 and is proactively expanding HBM4 capacity; limited available cleanroom space is expected to sustain a structural supply shortage over the medium term. This capex expansion trend is showing signs of continuing through 2028, providing a structural underpinning for mechanical equipment installation demand at FAB sites. The industrial gas (ASU) plant market is also growing alongside expanded semiconductor and EV battery production, broadening Sungdo's new business opportunity. Conversely, persistent weakness in domestic general construction and housing markets continues to weigh on the general construction segment, while China's prolonged real estate correction creates uncertainty around the monetization timeline of the development project. In the high-tech EPC space, competition from larger peers including Sebomics remains intense; Sungdo holds a 14th-place ranking by construction capability evaluation in the domestic mechanical/gas specialty segment, underpinning its market position."
+  "ko": "성도이엔지의 주력 시장인 클린룸·하이테크산업설비 산업은 반도체·디스플레이·2차전지 등 전방산업의 설비투자 사이클에 큰 영향을 받는다. 글로벌 AI 인프라 투자 확대로 HBM 및 고부가 반도체 생산을 위한 신규·전환 팹 투자가 이어지고 있으며, 이는 클린룸 신규 수요로 연결되는 구조다. 삼성전자, SK하이닉스 등 국내 반도체 대기업의 대규모 시설 투자가 여전히 핵심 수주처로 작용하고 있으며, 2차전지 및 반도체 생산시설에 쓰이는 산업용 가스 사업 영역도 확대되는 추세다. 경쟁사인 신성이엔지는 2026년 2월 실적발표에서 국내 주요 반도체 고객사의 신규·전환 설비투자 가속화에 따라 클린룸 부문 수주가 전년 대비 증가할 것으로 전망한다고 밝혔는데, 이는 업계 전반의 수주 환경 개선 기대를 시사한다. 다만 신성이엔지 2025년 실적은 매출 5,703억원(전년 대비 -2.1%), 영업이익 19억원(전년 대비 -62.4%)으로 재생에너지 사업 부진이 반영된 결과였으며, 성도이엔지와는 사업 포트폴리오 구성이 다르다. 클린룸 산업은 반도체·디스플레이 외에도 바이오테크(BT) 영역으로 수요가 확산되고 있어 포춘 비즈니스 인사이트 등 시장조사기관은 2022년 기준 전 세계 클린룸 시장 규모를 약 501억 달러로 추정한 바 있다. 국내 클린룸·고순도 설비 시공 시장은 성도이엔지, 신성이엔지, 케이엔솔, 한양이엔지, 세보엠이씨 등이 경쟁하는 구도이며, 각 사는 반도체 대기업의 국내외 신규 투자 프로젝트 수주를 둘러싸고 경쟁하고 있다.",
+  "en": "Sungdo E&G's core clean-room and high-tech industrial facility market is heavily influenced by the capital investment cycles of the semiconductor, display, and battery end-markets. The expansion of global AI infrastructure investment continues to drive new and conversion fab investment for HBM and other high-value-added chip production, which in turn translates into new clean-room demand. Large-scale facility investment by Samsung Electronics and SK Hynix remains the key order source, and the industrial gas business tied to semiconductor and battery production facilities is also expanding. Competitor Shinsung E&G stated at its February 2026 earnings briefing that clean-room order volumes were expected to rise from the prior year as new and conversion investment by major domestic semiconductor customers accelerates, signaling an improving order environment across the sector. However, Shinsung E&G's own 2025 results—revenue of KRW 570.3bn (down 2.1% year-over-year) and operating profit of KRW 1.9bn (down 62.4%)—reflected weakness in its renewable energy segment, a business area that differs from Sungdo E&G's portfolio mix. Clean-room demand is also spreading beyond semiconductors and displays into biotechnology (BT) applications, with market researcher Fortune Business Insights estimating the global clean-room market at roughly USD 50.1bn in 2022. The domestic clean-room and high-purity facility construction market is contested among Sungdo E&G, Shinsung E&G, KENS, Hanyang E&G, and Sebo M&EC, all of which compete for new investment projects from large semiconductor customers at home and abroad."
  },
  "outlook": {
-  "ko": "반도체 설비 투자 사이클의 상승 국면이 지속되는 가운데, 성도이엔지의 하이테크 산업설비 부문은 삼성전자·SK하이닉스의 FAB 증설 및 전환 투자 수혜를 이어갈 것으로 기대된다. AI 서버 시장 성장에 따른 HBM 수요 확대가 2026~2028년까지 이어질 조짐을 보이며, 이는 클린룸 설비공사 수요의 중기적 안정성을 높여줄 수 있다. 2023년부터 신사업으로 분류한 가스&케미칼 플랜트 부문은 이미 전체 매출의 10% 내외를 소화하며 빠르게 안착했고, 산업용 공기분리장치 등 수요가 지속적으로 늘고 있어 추가적인 외형 기여가 기대된다. 2026년 1월 세보엠이씨와의 자사주 교환으로 형성된 지분 동맹이 실질적인 공동 수주·기술 교류로 이어질지 여부가 중장기 시너지 판단의 핵심 변수다. 경기도 안성 연구소 및 공장 신축은 하이테크 설비의 내재화를 통한 원가 경쟁력 강화로 연결될 것으로 보인다. 반면 종합건설시공 부문은 국내 건설 경기 회복 지연으로 단기 반등을 기대하기 어렵고, 중국 부동산 개발 사업은 착공·분양 일정이 현지 시장 환경에 따라 유동적이어서 수익 인식 시점과 규모의 불확실성이 크다.",
-  "en": "With the semiconductor CapEx cycle remaining in an upcycle phase, Sungdo's high-tech equipment segment is positioned to capture ongoing FAB expansion and conversion investments by Samsung Electronics and SK Hynix. AI server-driven HBM demand appears likely to sustain elevated FAB construction activity through 2026–2028, improving medium-term revenue visibility for cleanroom-related work. The gas & chemical plant segment—now tracking at roughly 10% of group revenue—is expected to expand further as demand for industrial ASUs grows alongside semiconductor and battery production. Whether the January 2026 cross-shareholding alliance with Sebomics translates into concrete joint bids and technology exchange is a critical medium-to-long-term variable. The Anseong R&D and manufacturing facility investment should gradually enhance in-house production capabilities and cost competitiveness. On the other hand, the general construction segment faces a difficult near-term backdrop as domestic construction activity remains sluggish, and the China real estate development project carries meaningful timing uncertainty as ground-breaking and presale schedules remain subject to local market conditions."
+  "ko": "회사는 과거 인터뷰에서 매출 1조원 돌파를 목표로 제시한 바 있으며, 2024년에 사상 최대 매출(9,996억원)을 기록하며 근접했으나 2025년에는 종합건설시공 부문 매출 축소로 외형이 다시 줄어들었다. 다만 수익성 개선 흐름은 이어지고 있어, 향후 관전 포인트는 매출 회복 속도와 이익률 유지 여부로 압축된다. 미국 매출은 2022년 49억원에서 2024년 1,573억원으로 급증했고, 회사 측은 현지 투자 확대에 따라 미국 매출이 매년 증가하는 추세라고 밝힌 바 있어 해외 사업 확대가 향후 실적의 중요한 변수로 남아 있다. 헝가리 등 유럽 매출도 2024년 870억원 수준으로 꾸준히 늘려갈 계획이라고 회사 관계자가 언급한 바 있다. 13년간 이어진 SK하이닉스 중국 우시 공장 화재 관련 구상금 소송은 2026년 4월 대법원의 최종 상고 기각으로 종결됐으며, 이에 따라 회사는 원금과 지연손해금을 합쳐 약 166억원(자기자본의 약 6% 수준)을 배상하게 됐다고 언론은 보도했다. 소송 종결로 관련 불확실성이 해소된 만큼 향후 실적에서는 해당 항목에 따른 추가 일회성 손익 반영 가능성이 크게 줄어들 것으로 보인다. 회사는 소송 이후 자회사 성도건설의 청산을 검토 중인 것으로 알려져 있어, 관련 법인 정리 절차의 진행 상황도 지켜볼 필요가 있다. 반도체·2차전지 업계의 신규·전환 투자 발표가 이어지는 가운데, 국내외 수주 확대 여부가 향후 매출 회복의 핵심 변수가 될 전망이다.",
+  "en": "The company previously stated in interviews that it targeted revenue surpassing KRW 1 trillion, coming close in 2024 with record revenue of KRW 999.6bn before a decline in the general construction segment pulled 2025 revenue back down. Even so, the profitability improvement trend has continued, making the pace of revenue recovery and the durability of margins the key items to watch going forward. U.S. revenue surged from KRW 4.9bn in 2022 to KRW 157.3bn in 2024, and a company representative has said U.S. sales have grown every year on the back of expanding local investment, leaving overseas expansion an important variable for future results. A company official also indicated plans to steadily grow European revenue, largely from Hungary, which stood at roughly KRW 87bn in 2024. The 13-year subrogation lawsuit tied to the SK Hynix Wuxi plant fire in China concluded in April 2026 when the Supreme Court finally rejected the appeal, and media reports indicated the company would need to pay roughly KRW 16.6bn in principal and delay interest combined, equivalent to about 6% of equity. With the litigation resolved, the likelihood of further one-off gains or losses tied to this matter in future results should be substantially reduced. Reports also suggest the company is considering liquidating its subsidiary Sungdo Construction (China) following the litigation's conclusion, making the progress of that process worth monitoring. Amid continued announcements of new and conversion investment in the semiconductor and battery industries, the extent of domestic and overseas order wins is likely to be the central variable for future revenue recovery."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당순자산(BPS 1만9,464원)을 큰 폭으로 하회하는 순자산 할인 구간에 위치해 있어, 보유 자산 대비 시장의 평가가 보수적임을 나타낸다. 주당순이익(EPS 2,179원) 기준으로도 코스닥 건설·EPC 업종의 과거 평균 거래 배수를 크게 밑도는 수준으로, 2022년 적자에서 2025년 OPM 7.8%로의 이익 회복 궤적이 주가에 충분히 반영되지 않은 가능성을 시사한다. 이러한 할인은 중국 부동산 사업 리스크와 종합건설 경기 불확실성에 대한 시장의 보수적 시각을 동시에 반영하는 것으로 해석된다. 연간 주당 배당금(DPS) 250원을 유지하고 있어 주주환원의 연속성을 확인할 수 있다. 부채비율이 174.8%에서 119.6%로 빠르게 개선되는 등 재무 건전성 회복이 진행 중인 점은 잠재적 밸류에이션 재평가의 근거가 될 수 있으며, 절대적 외형 성장보다 마진 추이와 수주 동향이 향후 시장 평가의 핵심 변수로 작용할 전망이다.",
-  "en": "The current share price sits at a substantial discount to book value per share (BPS KRW 19,464), indicating that the market is applying a conservative valuation relative to the company's net assets. Measured against earnings per share (EPS KRW 2,179), the stock also trades well below historical average peer multiples for KOSDAQ construction and EPC companies, suggesting that the profitability recovery from operating loss in 2022 to OPM 7.8% in 2025 may not yet be fully priced in. This discount also reflects the market's cautious stance on China real estate exposure and soft general construction fundamentals. The company has maintained an annual dividend per share (DPS) of KRW 250, confirming continuity in shareholder returns. The rapid improvement in the debt-to-equity ratio from 174.8% to 119.6% supports the case for potential valuation re-rating as balance sheet strength improves; going forward, margin trajectory and order intake trends are likely to be more critical share price drivers than absolute revenue growth."
+  "ko": "회사의 주가순자산비율은 순자산 대비 할인된 수준에서 거래되는 편으로, 자기자본 규모를 감안하면 시장이 아직 완전한 밸류에이션 재평가를 반영하지는 않은 상태로 볼 수 있다. 최근 네 개 분기 기준 이익 회복이 확인되면서 과거 적자 국면 대비 수익 구조가 개선된 점은 밸류에이션 평가에 참고할 만한 요소다. 배당수익률은 업종 평균과 비교할 만한 수준에서 형성되어 있으며, 주당 현금배당은 매년 공시되는 배당 정책에 따라 변동될 수 있다. 2022년 적자에서 2023~2025년 이익 회복으로 이어진 흐름은 과거 거래 밴드에도 영향을 미쳤을 것으로 보이며, 향후 실적 안정성이 이어질지가 밸류에이션 흐름에 관건이 될 수 있다. 다만 분기별 순이익 변동성이 여전히 크다는 점은 밸류에이션 판단에 있어 유의할 부분이다.",
+  "en": "The company's price-to-book ratio tends to trade at a discount to net asset value, suggesting the market has not fully re-rated the valuation given the size of its equity base. The profit recovery confirmed over the most recent four quarters, compared with the prior loss-making phase, is a relevant factor for valuation assessment. The dividend yield sits at a level comparable to sector averages, and the per-share cash dividend can vary each year depending on the disclosed dividend policy. The progression from a loss in 2022 to a profit recovery through 2023-2025 likely influenced historical trading ranges, and whether this earnings stability persists could be a key factor for future valuation trends. That said, the continued volatility in quarterly net income is a point worth noting when assessing valuation."
  },
  "bull": [
   {
    "title": {
-    "ko": "반도체 FAB 설비 사이클 상승 수혜",
-    "en": "Beneficiary of Semiconductor FAB CapEx Upcycle"
+    "ko": "수익성 구조 개선",
+    "en": "Structural Profitability Improvement"
    },
    "body": {
-    "ko": "AI·HBM 수요 확대로 삼성전자·SK하이닉스의 반도체 생산라인 증설 투자가 지속되고 있으며, 이는 클린룸 설비공사 및 초고순도 배관·기계설비 수주로 직결된다. WSTS는 2026년 글로벌 반도체 시장이 25% 이상 성장할 것으로 전망하고, 삼성전자는 HBM4 생산 능력을 선제적으로 확대하며 평택 2단지 5라인의 2028년 본격 가동을 예고하고 있다. 업계 내 클린룸 공간 부족 상황이 중기적으로 지속될 전망이어서 성도이엔지의 설비공사 수주가 구조적으로 뒷받침될 수 있다.",
-    "en": "AI-driven and HBM-driven demand is sustaining major capacity expansions by Samsung Electronics and SK Hynix, directly driving cleanroom construction and ultra-high-purity piping orders for Sungdo. WSTS forecasts 25%+ global semiconductor market growth in 2026, and Samsung has announced HBM4 capacity pre-expansion with Pyeongtaek Line 5 targeting full ramp in 2028. Persistent cleanroom space constraints in the industry are likely to provide structural support for equipment installation order intake over the medium term."
+    "ko": "2022년 영업손실에서 2025년 영업이익률 7.8%까지 개선된 흐름은 비용 효율화와 사업 포트폴리오 조정의 성과로 해석될 수 있다. 매출 규모가 줄어든 가운데서도 이익률이 높아진 점은 단순 매출 성장보다 수익성 중심 경영이 자리잡고 있음을 시사한다. 이 흐름이 지속될 경우 향후 실적의 질적 개선을 뒷받침할 수 있다.",
+    "en": "The shift from an operating loss in 2022 to a 7.8% operating margin in 2025 can be read as the result of cost efficiencies and portfolio adjustments. The fact that margins rose even as revenue contracted suggests a shift toward profitability-focused management rather than pure top-line growth. If sustained, this trend could support qualitative improvement in future results."
    }
   },
   {
    "title": {
-    "ko": "수익성 대반전 및 현금 창출력 향상",
-    "en": "Dramatic Margin Reversal and Strengthening Cash Generation"
+    "ko": "해외 매출 다변화",
+    "en": "Overseas Revenue Diversification"
    },
    "body": {
-    "ko": "2022년 영업손실(−50억원)에서 2025년 영업이익 577억원(OPM 7.8%)으로의 3년 연속 수익성 회복은 저마진 종합건설시공 비중 축소와 고마진 하이테크 설비 비중 확대라는 구조적 믹스 개선이 이끌었다. 영업현금흐름(CFO)이 2022년 21억원에서 2025년 444억원으로 대폭 증가해 내부 자금 조달 능력이 강화되었다. 부채비율이 174.8%에서 119.6%로 빠르게 하락하는 등 재무 건전성 개선도 동반되고 있다.",
-    "en": "A three-consecutive-year profitability recovery—from an operating loss of KRW −5.0 bn in 2022 to operating profit of KRW 57.7 bn (OPM 7.8%) in 2025—has been driven by the structural mix shift away from lower-margin general construction toward higher-margin high-tech equipment work. Operating cash flow expanded from KRW 2.1 bn in 2022 to KRW 44.4 bn in 2025, materially strengthening internal funding capacity. Concurrent financial health improvement is confirmed by the rapid decline in the debt ratio from 174.8% to 119.6%."
+    "ko": "미국 매출이 2022년 49억원에서 2024년 1,573억원으로 급증했고 헝가리 등 유럽 매출도 확대되는 추세다. 국내 반도체·2차전지 투자 사이클에 대한 의존도를 낮추는 지역 다변화가 진행되고 있는 점은 긍정적 요인이다. 해외 고객사 대상 턴키 시공 경험 축적은 향후 수주 경쟁력 강화에도 기여할 수 있다.",
+    "en": "U.S. revenue surged from KRW 4.9bn in 2022 to KRW 157.3bn in 2024, and European sales, largely from Hungary, are also expanding. This geographic diversification, which reduces reliance on domestic semiconductor and battery investment cycles, is a positive factor. Accumulated turnkey construction experience with overseas clients could also strengthen future order competitiveness."
    }
   },
   {
    "title": {
-    "ko": "산업가스 신사업 안착·세보엠이씨 지분 동맹",
-    "en": "Industrial Gas New Segment Takes Hold; Sebomics Equity Alliance Opens Synergies"
+    "ko": "소송 리스크 해소",
+    "en": "Litigation Risk Resolved"
    },
    "body": {
-    "ko": "2023년부터 신사업으로 분류한 가스&케미칼 플랜트 부문이 불과 2~3년 만에 전체 매출의 10% 내외를 소화하며 신규 성장 기반을 마련했다. 반도체·2차전지 생산에 필수적인 공기분리장치(ASU) 등 특수가스 플랜트 수요는 전방 산업 성장과 함께 구조적으로 확대될 전망이다. 2026년 1월 동종 업계 2위 기업인 세보엠이씨와의 자사주 교환 동맹을 통해 대형 산업가스 프로젝트 공동 수주 및 기술 교류 가능성도 열려 있다.",
-    "en": "The gas & chemical plant segment—formally a new business since 2023—has already scaled to roughly 10% of total revenue within just two to three years, establishing a new growth pillar. Demand for specialty gas plants, especially air separation units critical for semiconductor and EV battery production, is structurally linked to those growing end markets. The January 2026 cross-shareholding alliance with Sebomics—Korea's second-largest mechanical/gas EPC contractor—also opens the potential for joint bidding on large-scale industrial gas projects and technology exchange."
+    "ko": "13년간 이어진 SK하이닉스 중국 우시 공장 화재 관련 구상금 소송이 2026년 4월 대법원 최종 판결로 종결됐다. 배상 규모가 자기자본의 약 6% 수준으로 재무적 영향이 제한적이라는 점과 함께, 장기간 이어졌던 법적 불확실성이 걷힌 점은 향후 실적 예측 가능성을 높이는 요인이다.",
+    "en": "The 13-year subrogation lawsuit tied to the SK Hynix Wuxi plant fire in China was concluded by a final Supreme Court ruling in April 2026. With the payout equivalent to roughly 6% of equity and thus limited in financial impact, the removal of this long-running legal uncertainty could improve the predictability of future results."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "종합건설 경기 부진 및 매출 역성장 지속 리스크",
-    "en": "Sluggish General Construction Market and Risk of Continued Revenue Pressure"
+    "ko": "매출 규모 축소",
+    "en": "Shrinking Revenue Base"
    },
    "body": {
-    "ko": "전체 매출의 상당 비중을 차지하는 종합건설시공 부문은 국내 건설 경기 침체의 직접적 영향권에 있으며, 2025년 매출이 약 26% 역성장하는 주요 원인으로 작용했다. 국내 주택·건설 경기가 빠르게 반등하지 않는 한 이 부문의 단기 회복은 제한적이며, 하이테크 설비 부문만으로 전체 외형을 뒷받침하기에는 물량 한계가 있다. 하이테크 산업설비 분야도 고객사의 투자 계획 변경·지연에 민감하게 반응할 수 있어 안정적인 외형 성장 가시성이 낮은 상황이다.",
-    "en": "The general construction segment—a meaningful portion of total revenue—faces direct headwinds from the domestic construction downturn and was a primary driver of the ~26% revenue contraction in 2025. Without a meaningful recovery in domestic housing and construction activity, near-term revenue growth in this segment is likely limited, and the high-tech equipment segment alone may struggle to offset total group volume. Even the high-tech equipment segment is sensitive to changes or delays in customer investment plans, limiting near-term revenue visibility."
+    "ko": "2025년 매출은 2024년 대비 25.6% 감소했으며, 2026년 1분기(1,446억원)와 2분기(1,746억원)도 2025년 2분기(2,012억원) 대비 낮은 수준을 유지하고 있다. 종합건설시공 부문의 수주 회복이 확인되지 않는다면 외형 축소가 지속될 가능성이 있다.",
+    "en": "2025 revenue fell 25.6% from 2024, and both Q1 2026 (KRW 144.6bn) and Q2 2026 (KRW 174.6bn) remained below the Q2 2025 level of KRW 201.2bn. Without a confirmed recovery in general construction segment orders, the revenue contraction could continue."
    }
   },
   {
    "title": {
-    "ko": "중국 부동산 개발 사업의 장기 불확실성",
-    "en": "Prolonged Uncertainty Around China Real Estate Development"
+    "ko": "분기별 실적 변동성",
+    "en": "Quarterly Earnings Volatility"
    },
    "body": {
-    "ko": "성도이엔지는 중국에서 20년간 주택 부동산 개발 사업을 지속해 왔으나, 현지 시장 구조 조정이 이어지며 착공 및 분양 일정이 지연되고 있다. 해당 사업의 수익 실현 시기와 규모는 불확실하며, 시장 환경 추가 악화 시 관련 자산의 손상 리스크도 완전히 배제하기 어렵다. 중국 사업 관련 자산이 연결 재무제표에 미치는 영향을 지속적으로 점검할 필요가 있다.",
-    "en": "Sungdo has maintained a residential real estate development project in China for over 20 years, but ongoing market restructuring has repeatedly delayed ground-breaking and presale schedules. The timing and magnitude of profit recognition remain highly uncertain, and if local market conditions deteriorate further, impairment risk on related assets cannot be fully dismissed. Continued monitoring of China real estate-related asset exposure in the consolidated balance sheet is warranted."
+    "ko": "2025년 4분기 지배주주순이익은 영업이익 흑자에도 -85억원의 적자를 기록했다. 건설·플랜트 시공업 특성상 프로젝트 진행률과 일회성 손익에 따라 분기별 실적이 크게 흔들릴 수 있어, 안정적인 실적 흐름을 예측하기 어려운 구조다.",
+    "en": "Q4 2025 posted an owners' net loss of KRW 8.5bn despite a positive operating profit. Given the nature of construction and plant contracting, quarterly results can swing sharply based on project progress rates and one-off items, making a stable earnings trajectory difficult to forecast."
    }
   },
   {
    "title": {
-    "ko": "4분기 일회성 순손실 재발 및 이익 변동성 리스크",
-    "en": "Risk of Recurrence of One-Time Net Losses and Earnings Volatility"
+    "ko": "전방산업 투자 사이클 의존",
+    "en": "Dependence on End-Market Investment Cycles"
    },
    "body": {
-    "ko": "2025년 4분기에는 영업이익(95억원)이 발생했음에도 지배주주 기준 순손실(−85억원)이 계상되었는데, 해당 원인이 공시를 통해 구체적으로 확인되지 않아 불확실 요인으로 남아 있다. 유사한 비용 구조가 반복될 경우 이익의 질에 대한 시장의 우려를 높일 수 있다. 대형 EPC 프로젝트 특성상 비용 초과(cost overrun) 리스크가 내재되어 있어, 분기 마진 변동성이 크게 나타날 수 있다.",
-    "en": "In Q4 2025, a net loss attributable to controlling shareholders of KRW −8.5 bn was recorded despite positive operating profit of KRW 9.5 bn; the specific cause has not yet been clearly disclosed in public filings, leaving it as a residual uncertainty. Should similar exceptional charges recur, concerns over earnings quality would intensify. Large-scale EPC projects inherently carry cost overrun risk, which can introduce significant quarter-to-quarter margin volatility."
+    "ko": "실적이 반도체·디스플레이·2차전지 대기업의 설비투자 결정에 크게 좌우되는 구조다. 삼성전자, SK하이닉스 등 주요 고객사의 신규·전환 투자 일정이 지연되거나 축소될 경우 수주와 매출에 직접적인 영향을 받을 수 있다.",
+    "en": "Results are heavily dependent on the capital investment decisions of large semiconductor, display, and battery customers. If new or conversion investment schedules from key clients like Samsung Electronics or SK Hynix are delayed or scaled back, orders and revenue could be directly affected."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "전방 반도체 투자 사이클 둔화",
-    "en": "Semiconductor CapEx Cycle Slowdown Risk"
+    "ko": "법률·소송 리스크",
+    "en": "Legal and Litigation Risk"
    },
    "body": {
-    "ko": "삼성전자·SK하이닉스 등 주요 고객사의 FAB 설비 투자 계획이 지연되거나 축소될 경우, 하이테크 산업설비 부문의 수주가 급감할 수 있다. 글로벌 경기 불확실성, 미·중 반도체 기술 규제 강화, 반도체 업황 하강 사이클 진입 등이 복합 작용할 경우 FAB 투자가 지연될 가능성이 있다. 이는 전체 매출의 구조적 하방 리스크로 직결된다.",
-    "en": "Any delay or reduction in FAB investment plans by major customers such as Samsung Electronics and SK Hynix could sharply cut high-tech equipment order intake. A combination of global macro headwinds, escalating US-China semiconductor technology controls, and a potential sector downcycle could defer FAB investment decisions, posing a structural downside risk to overall revenue."
+    "ko": "SK하이닉스 중국 우시 공장 화재 관련 구상금 소송이 2026년 4월 최종 종결되며 약 166억원의 배상금이 확정됐다. 이는 회사 자기자본의 약 6% 수준으로 재무적 영향은 제한적이라고 회사 측은 밝혔으나, 해외 자회사 관련 법률 리스크가 향후 다시 발생할 가능성을 배제할 수 없다.",
+    "en": "The subrogation lawsuit tied to the SK Hynix Wuxi plant fire in China was finally concluded in April 2026, fixing roughly KRW 16.6bn in damages, equivalent to about 6% of equity, which the company said had a limited financial impact. Even so, the possibility of similar legal risks arising again from overseas subsidiaries cannot be ruled out."
    }
   },
   {
    "cat": {
-    "ko": "대형 프로젝트 집중에 따른 실적 변동성",
-    "en": "Earnings Volatility from Large Project Concentration"
+    "ko": "환율 및 해외사업 리스크",
+    "en": "Foreign Exchange and Overseas Business Risk"
    },
    "body": {
-    "ko": "EPC 비즈니스 특성상 소수 대형 프로젝트에 매출이 집중되며, 특정 고객사의 투자 계획 변경이나 공사 지연이 분기 실적에 큰 영향을 미칠 수 있다. 2025년 분기별 영업이익이 2분기 255억원에서 4분기 95억원으로 급격히 하락한 것은 이러한 프로젝트 집중·계절성 리스크를 보여준다. 수주 잔고의 고객·산업 편중이 심화될 경우 실적 변동성은 더욱 확대될 수 있다.",
-    "en": "As is typical in EPC businesses, revenue is concentrated in a small number of large projects, making quarterly results highly sensitive to changes in customer investment plans or construction delays. The sharp decline in quarterly operating profit from KRW 25.5 bn in Q2 2025 to KRW 9.5 bn in Q4 2025 illustrates this project concentration and seasonality risk. Greater concentration in the order backlog by customer or industry would amplify earnings volatility further."
+    "ko": "미국·헝가리 등 해외 매출 비중이 빠르게 확대되고 있어 환율 변동과 현지 인허가·인건비 변동에 따른 사업 리스크가 커질 수 있다. 해외 프로젝트의 공정 지연이나 원가 상승이 발생할 경우 수익성에 부담이 될 수 있다.",
+    "en": "As overseas revenue from the U.S., Hungary, and other regions expands rapidly, business risk from currency fluctuations and local permitting or labor cost changes may increase. Delays in project schedules or cost overruns on overseas projects could weigh on profitability."
    }
   },
   {
    "cat": {
-    "ko": "환율·원자재 비용 변동성",
-    "en": "FX and Raw Material Cost Volatility"
+    "ko": "건설업 특유의 수주·원가 리스크",
+    "en": "Construction Industry Order and Cost Risk"
    },
    "body": {
-    "ko": "해외 법인을 통한 해외 수주 비중이 높아지는 만큼 환율 변동이 수익성에 미치는 영향도 커지고 있다. 산업설비 공사에 투입되는 철강·배관 소재·특수 가스 등 원자재 가격 변동이 프로젝트 원가에 영향을 미칠 수 있다. 대형 EPC 계약의 고정 가격 구조 하에서 원자재 가격 급등 시 수익성 하락 리스크가 내재되어 있다.",
-    "en": "With a growing share of revenue derived from overseas projects through foreign subsidiaries, FX movements have an increasingly material impact on profitability. Price swings in raw materials—steel, piping components, specialty gases—used in industrial facility construction can affect project cost structures. Large EPC contracts are often fixed-price in nature, creating embedded margin risk in the event of sharp raw material cost inflation."
+    "ko": "종합건설·플랜트 시공업은 프로젝트 단위 수주에 의존해 매출 변동성이 크고, 원자재 가격이나 인건비 상승 시 원가 부담이 커질 수 있다. 대형 고객사에 대한 매출 의존도가 높은 만큼 특정 고객사의 발주 지연이 실적에 직접적인 영향을 줄 수 있다.",
+    "en": "As a general construction and plant contracting business dependent on project-based orders, revenue volatility is high, and rising raw material or labor costs can increase cost burdens. High revenue dependence on a small number of large customers means order delays from a single client could have a direct impact on results."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순 (2분기 실적 발표)",
-    "en": "Mid-August 2026 (Q2 2026 Earnings Release)"
+    "ko": "2026년 11월 중",
+    "en": "November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 매출·영업이익 및 상반기 누계 OPM을 통해 2025년 수익성 개선 기조의 지속 여부를 확인. 하이테크 산업설비 수주 동향 및 가스&케미칼 부문의 외형 기여도 점검.",
-    "en": "Assess Q2 2026 revenue, operating profit, and H1 cumulative OPM to confirm whether the 2025 profitability improvement trajectory is being sustained. Monitor high-tech equipment order intake and the gas & chemical segment's contribution to group revenue."
+    "ko": "2026년 3분기보고서 공시를 통해 매출·영업이익 회복 여부와 종합건설시공 부문 수주 상황을 확인할 필요가 있다.",
+    "en": "The Q3 2026 quarterly report will show whether revenue and operating profit are recovering and provide an update on order conditions in the general construction segment."
    }
   },
   {
    "when": {
-    "ko": "2026년 수시 (신규 수주 공시)",
-    "en": "Ongoing through 2026 (New Order Announcements)"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "반도체 FAB 클린룸 및 가스&케미칼 플랜트 신규 수주 공시를 통해 향후 매출 가시성을 확인. 세보엠이씨와의 공동 수주 여부가 지분 동맹의 실효성을 가늠하는 추가 확인 포인트.",
-    "en": "Track new order disclosures for semiconductor FAB cleanroom and gas & chemical plant projects to assess forward revenue visibility. Watch for any joint orders with Sebomics as a key indicator of whether the equity alliance is generating tangible outcomes."
+    "ko": "2026년 사업보고서(연간 실적) 공시 시 미국·헝가리 등 해외 매출 비중 확대 추이와 연간 수익성 유지 여부를 점검해야 한다.",
+    "en": "The 2026 annual business report will allow a check on whether overseas revenue from the U.S., Hungary, and other regions continues to expand and whether annual profitability is sustained."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (세보엠이씨 협력 구체화 여부)",
-    "en": "H2 2026 (Sebomics Alliance Tangible Outcomes)"
+    "ko": "2026년 4분기 중",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "2026년 1월 체결한 자사주 교환 동맹이 실제 공동 프로젝트 수주 또는 기술 교류로 이어지는지를 IR 자료·공시를 통해 모니터링. 협업 구체화 여부가 중장기 시너지 판단의 핵심.",
-    "en": "Monitor IR materials and public filings to determine whether the January 2026 cross-shareholding alliance materializes into concrete joint project wins or technology exchanges—the primary indicator for assessing medium-to-long-term synergy realization."
+    "ko": "구상금 소송 종결에 따른 자회사 성도건설 청산 절차의 진행 여부와 관련 공시를 확인할 필요가 있다.",
+    "en": "It will be worth checking for disclosures on the progress of the liquidation of subsidiary Sungdo Construction following the conclusion of the subrogation lawsuit."
    }
   },
   {
    "when": {
-    "ko": "2026년 연말 (중국 부동산 사업 일정 업데이트)",
-    "en": "End of 2026 (China Real Estate Project Schedule Update)"
+    "ko": "2026년 하반기 이후",
+    "en": "From H2 2026 onward"
    },
    "what": {
-    "ko": "중국 부동산 개발 사업의 착공·분양 일정 변화 여부 확인. 연간 사업보고서 및 IR 채널에서 관련 자산 손상 리스크 또는 수익 인식 가능성에 대한 경영진 코멘트를 점검.",
-    "en": "Check for any updates on ground-breaking and presale schedules for the China real estate project. Review management commentary on asset impairment risk or revenue recognition prospects in the annual report and IR communications."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 1분기 (2026년 연간 배당 공시)",
-    "en": "Q1 2027 (FY2026 Annual Dividend Announcement)"
-   },
-   "what": {
-    "ko": "2025년 주당 배당금(DPS) 250원 수준의 유지 또는 변화 여부를 통해 주주환원 정책의 연속성을 확인. 연간 이익 회복 규모 및 현금 창출력과 연계해 판단.",
-    "en": "Determine whether the KRW 250 DPS paid for FY2025 is maintained or adjusted for FY2026 as an indicator of shareholder return policy continuity, to be assessed alongside the full-year earnings recovery and operating cash flow levels."
+    "ko": "삼성전자·SK하이닉스 등 주요 고객사의 신규·전환 팹 투자 계획 발표 및 관련 클린룸 신규 수주 공시 여부를 지속적으로 확인해야 한다.",
+    "en": "Continued monitoring is needed on announcements of new or conversion fab investment plans by major customers such as Samsung Electronics and SK Hynix, as well as any related new clean-room order disclosures."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "성도이엔지는 2022년 영업손실에서 2025년 OPM 7.8%로의 수익성 대반전을 통해 사업 구조 전환의 성과를 명확히 보여주었다. 저마진 종합건설시공 비중 축소, 하이테크 산업설비 강화, 가스&케미칼 신사업의 빠른 안착이 이 변화를 이끌었으며, AI·HBM 투자 확대로 촉발된 반도체 설비 사이클이 우호적인 전방 환경을 제공하고 있다. 세보엠이씨와의 자사주 교환 동맹은 수주 네트워크 확장과 기술 협력의 중장기 잠재력을 열어 두고 있으나, 실질적인 시너지 창출 여부는 아직 확인이 필요하다. 종합건설 경기 부진, 중국 부동산 개발 사업의 불확실성, 4분기 일회성 순손실과 같은 비용 변동 가능성은 이익 가시성을 제한하는 상존 리스크다. 주당순자산(BPS 1만9,464원) 대비 큰 폭의 할인 구간에서 거래되는 현 상황은 실적 회복 지속과 리스크 해소가 전제될 때 잠재적 재평가 기회가 있음을 시사한다. 투자자는 2026년 분기 실적 발표, 수주 공시, 세보엠이씨 협력 구체화 여부를 통해 핵심 지표 변화를 지속적으로 모니터링하는 것이 중요하다.",
-   "en": "Sungdo E&G has demonstrated tangible structural transformation results through a dramatic reversal from operating loss in 2022 to an OPM of 7.8% in 2025. This was driven by the mix shift away from lower-margin general construction, the strengthening of high-tech equipment work, and the rapid scaling of the gas & chemical segment, all supported by a favorable semiconductor CapEx environment driven by AI and HBM demand. The cross-shareholding alliance with Sebomics holds medium-to-long-term potential for order network expansion and technology cooperation, though whether concrete synergies materialize remains to be seen. Persistent weakness in domestic general construction, the unresolved China real estate exposure, and the possibility of further non-recurring charges—as evidenced in Q4 2025—continue to constrain earnings visibility and represent ongoing downside risks. Trading at a material discount to book value per share (BPS KRW 19,464), the stock implies a potential re-rating opportunity contingent on sustained earnings recovery and risk resolution. Investors should closely track quarterly earnings releases, order disclosures, and the development of the Sebomics cooperation to monitor key performance indicators."
+   "ko": "성도이엔지는 2022년 영업손실을 기록한 이후 2023~2025년 3년 연속 이익 회복 흐름을 이어왔으며, 2025년에는 매출이 줄었음에도 영업이익률이 7.8%까지 개선되는 등 수익성 중심의 구조 변화가 뚜렷하게 나타났다. 다만 2025년 4분기의 순손실 사례처럼 분기별 실적 변동성이 크고, 2026년 상반기 매출도 2025년 2분기 수준을 밑돌고 있어 외형 회복 여부는 아직 확인 단계에 있다. 13년간 이어진 SK하이닉스 중국 화재 관련 구상금 소송이 2026년 4월 대법원 최종 판결로 종결되면서, 장기간 실적에 부담을 줬던 법적 불확실성 하나는 해소됐다. 미국·헝가리 등 해외 매출 비중 확대는 국내 전방산업 투자 사이클에 대한 의존도를 낮추는 요인으로 작용할 수 있지만, 반도체·2차전지 대기업의 설비투자 결정에 실적이 크게 연동되는 구조는 여전히 유지되고 있다. 종합적으로 이 회사는 이익 구조 개선과 법적 리스크 해소라는 긍정적 변화와, 매출 축소 및 분기별 변동성이라는 과제를 동시에 안고 있는 국면으로 평가할 수 있다.",
+   "en": "Following an operating loss in 2022, Sungdo E&G sustained a profit recovery through 2023-2025, and 2025 in particular showed a clear structural shift toward profitability, with the operating margin improving to 7.8% even as revenue declined. That said, quarterly volatility remains significant, as seen in the Q4 2025 net loss, and H1 2026 revenue has stayed below the Q2 2025 level, leaving the pace of top-line recovery still to be confirmed. The 13-year subrogation lawsuit tied to the SK Hynix China fire was finally concluded by a Supreme Court ruling in April 2026, removing one long-standing legal uncertainty that had weighed on results. Expanding overseas revenue from the U.S. and Hungary could reduce reliance on domestic end-market investment cycles, but the company's results remain closely tied to capital investment decisions by large semiconductor and battery customers. Overall, the company can be characterized as navigating a phase that combines positive developments in profitability and legal risk resolution with ongoing challenges around revenue contraction and quarterly earnings volatility."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A037350",
-  "https://www.investing.com/equities/sungdo-engineering-construction",
-  "https://w4.kirs.or.kr/download/research/241119_%EC%84%B1%EB%8F%84%EC%9D%B4%EC%97%94%EC%A7%80%20(%EC%B5%9C%EC%A2%85).pdf",
-  "https://itooza.com/vscore/037350",
-  "https://markets.hankyung.com/stock/037350/financial-summary",
-  "https://littlebproject.com/stock/037350/79/7392",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250319001146&docno=&viewerhost=",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Finance.asp?pGB=1&gicode=A037350&cID=&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
-  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cn=&cmp_cd=025750",
   "https://m.irgo.co.kr/IR-COMP/011930/%EC%8B%A0%EC%84%B1%EC%9D%B4%EC%97%94%EC%A7%80-IR-PAGE",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cn=&cmp_cd=011930",
-  "https://news.nate.com/view/20260521n34510",
-  "https://alphasquare.co.kr/home/stock-summary?code=011930",
-  "https://www.finance-scope.com/article/view/scp202603030017",
+  "https://goinsider.kr/stock/00216498",
+  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cn=&cmp_cd=025750",
+  "https://www.investing.com/equities/sungdo-engineering-construction",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A037350",
+  "https://deepsearch.com/analytics/company-analysis/KRX:037350/market?c-name=%EC%84%B1%EB%8F%84%EC%9D%B4%EC%97%94%EC%A7%80&c-symbol=KRX%3A037350",
+  "https://www.hankyung.com/article/2023053113991",
+  "https://www.etnews.com/200310090140",
+  "https://www.etoday.co.kr/news/view/2464259",
+  "https://www.sedaily.com/article/10272757",
+  "http://www.cdica.or.kr/bbs/board.php?bo_table=member_news&wr_id=967&sst=wr_datetime&sod=desc&sop=and&page=11",
+  "https://stockuniverse.co.kr/themed/semiconductor-clean-room/",
   "https://zdnet.co.kr/view/?no=20260206151851",
-  "https://v.daum.net/v/20260206153724374?f=p",
-  "https://m.ddaily.co.kr/page/view/2026031614222029276",
-  "https://www.dailyinvest.kr/news/articleView.html?idxno=70225"
+  "https://littlebproject.com/stock/037350/79/7392",
+  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx",
+  "https://alphasquare.co.kr/home/stock-summary?code=037350",
+  "https://www.myasset.com/myasset/research/rs_global/RS_0401000_M.cmd?glblGubun=KS",
+  "https://www.stockplus.com/m/stocks/KOREA-A037350/articles"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "037350",
  "name": "성도이엔지",
  "name_en": "SUNGDO Engineering & Construction.",
@@ -233,9 +223,9 @@
   "건설·건자재"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-18",
- "reportTs": "2026-06-18 23:40",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 09:16",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 7270,
-   "mcap": 0.1106,
+   "price": 7130,
+   "mcap": 0.1084,
    "shares": 15210000,
    "total_shares": 15210000,
    "wavg_shares": 14957744,
-   "per": 5.446,
+   "per": 5.341,
    "eps": 1335,
-   "pbr": 0.363,
+   "pbr": 0.3561,
    "bps": 20025,
    "roe_ttm": 6.5,
    "ttm_window": "2025Q3~2026Q2",
@@ -356,7 +346,7 @@
    "bps_krx": 19295.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 250.0,
-   "div": 3.44
+   "div": 3.51
   }
  }
 }

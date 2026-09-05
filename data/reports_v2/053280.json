@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "랜섬웨어 이중 충격 딛고 흑자 회복 조건 탐색",
-  "en": "Testing the Road Back to Profit After a Double Ransomware Blow"
+  "ko": "매출 회복 지연, 이익 변동성 확대",
+  "en": "Revenue Recovery Lags, Earnings Volatility Widens"
  },
  "lead": {
-  "ko": "2025년 두 차례 랜섬웨어 공격과 매출 역성장이 맞물려 영업이익이 급감하고 순손실로 전환됐으나, 2026년 1분기 순이익 흑자 회복으로 일회성 충격 해소 여부에 시장의 시선이 집중되고 있다.",
-  "en": "Back-to-back ransomware attacks and a revenue contraction combined to collapse operating income and flip YES24 into a net loss in 2025, but a return to net profit in Q1 2026 has put the question of whether one-time headwinds have genuinely cleared at center stage."
+  "ko": "예스24는 온라인 서점 3강 체제 속에서 매출 회복이 더딘 가운데, 공연 티켓·전자출판 등 신사업의 성장과 분기별 이익 변동성 확대가 동시에 나타나고 있다.",
+  "en": "Yes24 shows a slow revenue recovery within Korea's three-way online bookstore structure, while growth in performance ticketing and e-publishing coexists with widening quarter-to-quarter earnings swings."
  },
  "keypoints": [
   {
-   "ko": "2025년 6월(나흘 서비스 중단)·8월(7시간 중단) 두 차례 랜섬웨어 공격이 발생했으며, 한국경제 보도에 따르면 2025년 2분기 잡손실에 약 48억원 규모의 해킹 관련 비용이 반영된 것으로 추정된다.",
-   "en": "Two ransomware incidents struck in June (four-day outage) and August 2025 (seven-hour outage); per media reports, an estimated 4.8 billion won in hack-related miscellaneous losses was absorbed in Q2 2025."
+   "ko": "2025년 연결 매출은 6,264.7억원으로 전년(6,711.4억원) 대비 줄었고, 영업이익률은 0.5%로 급격히 축소됐다.",
+   "en": "2025 consolidated revenue fell to KRW 626.5 billion from KRW 671.1 billion a year earlier, and operating margin narrowed sharply to 0.5%."
   },
   {
-   "ko": "2025년 매출은 6,264.7억원으로 전년 대비 6.7% 감소하고, 영업이익률은 2.4%에서 0.5%로 압축됐으며, 영업활동현금흐름은 353억원에서 11억원으로 급감해 현금 창출 능력이 크게 훼손됐다.",
-   "en": "Full-year 2025 revenue fell 6.7% to 626.5 billion won, the operating margin compressed from 2.4% to 0.5%, and operating cash flow collapsed from 35.3 billion to 1.1 billion won."
+   "ko": "최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주 순이익 합계는 적자로, 분기별 흑자·적자가 번갈아 나타나고 있다.",
+   "en": "Over the latest four quarters (Q3 2025 to Q2 2026), cumulative owners' net income remained in the red, alternating between quarterly profit and loss."
   },
   {
-   "ko": "2026년 1분기 지배주주 귀속 순이익이 11.7억원으로 흑자 전환했으나, 같은 분기 매출은 전년동기(1,815억원) 대비 7.4% 감소해 매출 회복은 아직 가시화되지 않고 있다.",
-   "en": "Q1 2026 net profit attributable to owners recovered to 1.2 billion won, yet revenue still fell 7.4% versus the strong Q1 2025 comparison (181.5 billion won), underscoring the absence of top-line recovery."
+   "ko": "부채비율이 2024년 140.2%에서 2025년 189.5%로 상승했고, 영업활동현금흐름도 353.3억원에서 11.2억원으로 크게 줄었다.",
+   "en": "The debt ratio rose from 140.2% in 2024 to 189.5% in 2025, while operating cash flow shrank sharply from KRW 35.3 billion to KRW 1.1 billion."
   },
   {
-   "ko": "파주 스마트 물류센터(1,120억원 투자) 가동으로 부채비율이 2024년 140.2%에서 2025년 189.5%로 상승해 재무 레버리지가 높아졌으며, 물류 효율화 성과의 조기 가시화가 과제다.",
-   "en": "The 112-billion-won Paju smart logistics investment pushed the debt ratio from 140.2% (2024) to 189.5% (2025); how quickly efficiency gains materialize is a critical near-term watchpoint."
+   "ko": "공연 티켓 사업은 최근 5년 연속 판매액이 늘며 회사의 성장 축으로 부각되고 있다.",
+   "en": "The performance ticketing business has posted five consecutive years of sales growth, emerging as a key growth pillar for the company."
   },
   {
-   "ko": "크레마클럽 신규 가입자의 30%(2025년)가 20대이며, eBook 초중고 참고서 판매가 2025년 상반기에 전년 대비 약 247% 급증하는 등 디지털 채널에서 구조적 성장 신호가 포착된다.",
-   "en": "Thirty percent of new 2025 Crema Club sign-ups were in their 20s, and eBook elementary and secondary school textbook sales surged approximately 247% year-on-year in H1 2025, pointing to structural growth potential in the Digital segment."
+   "ko": "주가는 순자산가치 대비 할인된 수준에서 거래되고 있다.",
+   "en": "The stock trades at a discount to its net asset value."
   }
  ],
  "business": {
-  "ko": "예스24는 1999년 창립 이후 25년간 국내 온라인 서점 1위를 유지해 온 문화콘텐츠 플랫폼으로, 2008년 코스닥에 상장했다. 도서·eBook·음반·DVD 판매 및 중고서적 중개가 전체 매출의 약 92%를 차지하는 핵심 사업이며, 공연·전시 티켓 예매가 나머지를 구성한다. 사업 구조는 크게 온라인 서점·ENT(공연·음반)·디지털(eBook·웹소설·웹툰)의 3개 부문으로 분류된다. 디지털 부문에서는 구독형 eBook 서비스 '크레마클럽'을 운영하며, 2025년에는 컬러 eBook 단말기 '크레마팔레트'를 출시해 하드웨어·소프트웨어 통합 생태계를 구축하고 있다. 주요 자회사로는 공연 기획·운영을 담당하는 예스이십사라이브홀, 일본 서적 출판·유통의 YNK미디어, 웹소설 플랫폼 북팔, 미술품 조각투자 서비스 아티피오가 있다. 경쟁 구도에서는 교보문고·알라딘과 온라인 도서 시장을 분점하고, eBook 구독에서는 시장점유율 64.3%의 밀리의 서재와 경합 중이다. 2025년 5월 서울 광진구에 '구의점'을 오픈해 강서NC점(2021년) 이후 두 번째 오프라인 서점으로 온·오프라인 연계를 강화하고 있다. 파주에 1,120억원을 투자한 신규 스마트 물류센터가 2025년 4분기 시범 가동에 돌입했으며, 지주사 한세예스24홀딩스 계열은 패션(한세실업·한세엠케이)·교육출판(동아출판) 등의 다각화된 포트폴리오를 보유한다.",
-  "en": "YES24 has maintained its position as South Korea's leading online bookstore since its founding in 1999, celebrating 25 years of market leadership, and listed on KOSDAQ in 2008. Books, eBooks, music, and DVD product sales account for approximately 92% of total revenue, with concert and event ticketing making up the balance. The business is organized into three segments: Online Bookstore, ENT (concerts and music), and Digital (eBooks, web novels, webtoons). In the Digital segment, the company operates Crema Club, a subscription-based eBook service, and has expanded into hardware with the 2025 launch of the Crema Palette color eBook reader. Major subsidiaries include YES24 Live Hall (concert production and management), YNK Media (Japanese book distribution), Bookpal (web novel platform), and ARTiPIO (fractional art investment). Competitively, YES24 shares the online book market with Kyobo Book Centre and Aladdin, while the eBook subscription segment sees it competing against market leader Millie's Library, which commands an estimated 64.3% share. A second offline bookstore, the Gueui branch in Gwangjin-gu, Seoul, opened in May 2025, reinforcing the omnichannel strategy. A 112-billion-won smart logistics center in Paju entered trial operations in Q4 2025, and the parent group, Hansae YES24 Holdings, operates a diversified portfolio spanning fashion (Hansae Co., Hansae MK) and educational publishing (Dong-A Publishing)."
+  "ko": "예스24는 1999년 국내 최초의 인터넷 서점으로 출발해 도서 유통을 중심으로 전자책, 공연·전시 티켓, 음반, 웹소설 연재, 구독 서비스 등으로 사업 영역을 확장한 문화콘텐츠 플랫폼이다. 도서 부문은 여전히 매출의 핵심 축이며, 온라인쇼핑 거래 구조를 보면 전문몰과 모바일쇼핑 비중이 커지는 추세다. 온라인쇼핑몰에서 전문몰은 27.3% 증가, 종합몰은 2.6% 감소, 모바일쇼핑은 13.1% 증가해 전체 거래액의 77.6%를 차지하는 것으로 나타나 채널 구조가 모바일·전문몰 중심으로 재편되고 있음을 보여준다. 티켓 부문인 '예스24 티켓'은 콘서트, 뮤지컬, 연극, 클래식·무용, 전시·행사 등 공연 예매를 아우르며 최근 신규 성장동력으로 부각되고 있다. 전자책·구독형 콘텐츠 사업은 도서 외 매출 다각화의 한 축을 담당하고 있으며, 오프라인 매장도 제한적으로 운영되고 있다. 국내 온라인 서점 시장은 교보문고, 알라딘과 함께 예스24가 형성하는 이른바 '빅3' 구도가 오랜 기간 유지되고 있다. 온라인 도서 시장 점유율 90%에 달하는 교보문고·알라딘·예스24가 시장을 주도하는 구조로, 신규 진입 장벽이 높은 편이다. 다만 교보문고가 도서 도매업까지 영역을 확장하며 유통 주도권을 강화하는 흐름도 관찰된다. 이런 구도 속에서 예스24는 도서 중심의 낮은 마진 구조를 티켓·전자출판 등 상대적으로 수익성이 나은 사업으로 보완하려는 전략을 취하고 있다.",
+  "en": "Founded in 1999 as Korea's first internet bookstore, Yes24 is a cultural content platform that has expanded from core book distribution into e-books, performance and exhibition ticketing, music, web novel serialization, and subscription services. Books remain the core revenue driver, while the online shopping channel mix is shifting. specialty malls grew 27.3% and mobile shopping rose 13.1%, together accounting for 77.6% of total transaction value, while the general mall channel fell 2.6%, indicating a structural shift toward mobile and specialty channels. The ticketing arm, Yes24 Ticket, covers concerts, musicals, plays, classical/dance performances, and exhibitions, and has emerged as a newer growth driver. E-book and subscription content businesses provide a secondary axis of diversification beyond print books, alongside a limited network of physical stores. Korea's online bookstore market has long been structured around a so-called \"big three\" of Kyobo Book Centre, Aladin, and Yes24. Kyobo Book Centre, Aladin, and Yes24 together command roughly 90% of the online book market, creating high barriers to new entry. That said, Kyobo Book Centre has expanded into wholesale book distribution, reinforcing its position in the value chain. Against this backdrop, Yes24 is attempting to offset the low-margin nature of its book business with ticketing and e-publishing, which carry relatively better profitability."
  },
  "earnings": {
-  "ko": "4개년 연간 추이를 보면, 2022년과 2024년은 영업이익 각각 157억원·163억원(영업이익률 2.4%)으로 수익성이 회복됐으나, 2023년(영업이익 58억원, 순손실 420억원)과 2025년에 부진이 반복되는 패턴이다. 2025년 매출은 6,264.7억원으로 전년(6,711.4억원) 대비 6.7% 감소했으며, 영업이익은 29.4억원으로 전년(162.8억원) 대비 82% 급감해 영업이익률이 0.5%로 압축됐다. 지배주주 귀속 당기순손실은 103.4억원으로 전환됐고, 영업활동현금흐름도 전년(353.3억원)에서 11.2억원으로 급격히 축소돼 내부 창출 자금이 크게 훼손됐다. 분기별로는 2025년 1분기 영업이익이 63.4억원, 지배주주 귀속 순이익이 61.6억원으로 예외적으로 강했으나, 2분기에 6월 9일 랜섬웨어 공격(나흘 서비스 중단)이 겹치며 영업손실 42.8억원·지배주주 귀속 순손실 66.7억원으로 급반전됐다. 한국경제 보도에 따르면 2분기 잡손실 약 48억원의 대부분이 해커 협상 비용으로 추정되는 일회성 항목이다. 3·4분기에는 서비스 복구 후 영업이익이 각각 7.2억원·1.7억원으로 소폭 회복됐으나, 4분기 지배주주 순손실이 96.1억원에 달해 연간 적자의 대부분이 하반기에 집중됐다(8월 2차 랜섬웨어 및 기타 비영업 비용 반영 추정). 2026년 1분기에는 매출 1,680.8억원, 영업이익 9.7억원, 지배주주 귀속 순이익 11.7억원으로 흑자 전환했다. 다만 2026년 1분기 매출은 전년동기(1,815.0억원) 대비 7.4% 감소해, 순차적 개선에도 불구하고 매출 기반 회복은 확인되지 않고 있다. 부채비율은 2024년 140.2%에서 2025년 189.5%로 상승해 파주 물류센터 투자 등 자본 배치의 결과가 재무구조에 반영됐다.",
-  "en": "Reviewing the four-year annual trend, operating profit recovered to 15.7 billion won in 2022 and 16.3 billion in 2024 (both at 2.4% OPM), while 2023 (operating profit 5.8 billion, net loss 42.1 billion) and 2025 represent loss cycles, suggesting an alternating pattern. In 2025, revenue fell 6.7% to 626.5 billion won (from 671.1 billion in 2024), operating profit collapsed 82% to 2.9 billion, and the operating margin compressed to just 0.5%. Net loss attributable to owners reached 10.3 billion won, and operating cash flow shrank dramatically from 35.3 billion (2024) to just 1.1 billion won. Quarterly, Q1 2025 was exceptionally strong at 6.3 billion in operating profit and 6.2 billion in net profit to owners, but Q2 2025 was hit hard by the June 9 ransomware attack – a four-day outage that flipped operating income to a loss of 4.3 billion and net loss to owners to 6.7 billion, with media reports estimating that approximately 4.8 billion won in miscellaneous one-time losses largely reflected hack-related costs. Q3 and Q4 2025 showed modest operating profit recovery (0.72 billion and 0.17 billion, respectively), but Q4 net loss to owners surged to 9.6 billion – likely absorbing impacts from the August 2025 second ransomware incident and other non-operating impairments. Q1 2026 delivered revenue of 168.1 billion won, operating profit of 0.97 billion, and net profit attributable to owners of 1.2 billion, marking the first profitable quarter since Q1 2025. However, Q1 2026 revenue remained 7.4% below the Q1 2025 baseline, indicating that top-line recovery has not yet materialized. The debt ratio rose from 140.2% (2024) to 189.5% (2025), reflecting capital deployment into the Paju logistics facility."
+  "ko": "예스24의 연간 매출은 2022년 6,637.7억원, 2023년 6,578.4억원, 2024년 6,711.4억원으로 등락하다 2025년 6,264.7억원으로 줄어들며 다시 감소세로 돌아섰다. 영업이익은 2022년 157.1억원, 2023년 58.5억원, 2024년 162.8억원으로 부침을 겪은 뒤 2025년에는 29.4억원까지 축소돼 영업이익률이 0.5%에 그쳤다. 지배주주 순이익은 2022년 14.2억원 흑자, 2023년 –36.2억원 적자, 2024년 14.5억원 흑자, 2025년 –103.4억원 적자로 뚜렷한 등락을 반복했다. 특히 2025년은 매출 감소와 함께 2025년 상반기 전년동기 대비 연결기준 매출액은 2.6% 감소, 영업이익은 48.1% 감소, 당기순이익이 적자로 전환됐던 흐름이 하반기까지 이어진 결과로 해석된다. 분기별로 보면 2025년 2분기 매출 1,398.1억원·영업손실 42.8억원·순손실 66.7억원을 기록한 뒤, 3분기(매출 1,538.5억원·영업이익 7.2억원)와 4분기(매출 1,513.2억원·영업이익 1.7억원)는 영업이익 흑자로 돌아섰지만 4분기 지배주주 순손실은 96.1억원에 달해 영업외 요인의 영향이 컸던 것으로 보인다. 2026년 1분기에는 매출 1,680.8억원, 영업이익 9.7억원, 순이익 14.8억원으로 흑자 전환에 성공했으나, 2026년 2분기 들어 매출이 1,357.6억원으로 줄고 영업손실 34.7억원, 순손실 11.7억원을 기록하며 다시 적자로 돌아섰다. 이처럼 최근 5개 분기 동안 영업이익과 순이익이 흑자와 적자를 오가는 변동성이 두드러진다. 재무 측면에서는 영업활동현금흐름이 2024년 353.3억원에서 2025년 11.2억원으로 급감했고, 부채비율은 2024년 140.2%에서 2025년 189.5%로 뛰어올라 이익 변동성과 함께 재무 안정성 지표도 함께 흔들리는 모습이다.",
+  "en": "Annual revenue moved from KRW 663.8 billion in 2022 to KRW 657.8 billion in 2023 and KRW 671.1 billion in 2024, before declining again to KRW 626.5 billion in 2025. Operating profit fluctuated from KRW 15.7 billion (2022) to KRW 5.8 billion (2023) and KRW 16.3 billion (2024), then shrank further to KRW 2.9 billion in 2025, pushing the operating margin down to just 0.5%. Owners' net income swung from a KRW 1.4 billion profit in 2022 to a KRW 3.6 billion loss in 2023, back to a KRW 1.4 billion profit in 2024, and then to a KRW 10.3 billion loss in 2025. The 2025 deterioration appears consistent with the trend already visible at the half-year mark, when consolidated revenue fell 2.6% year on year, operating profit dropped 48.1%, and net income turned negative in the first half of 2025. On a quarterly basis, after posting an operating loss of KRW 4.3 billion and a net loss of KRW 6.7 billion in Q2 2025 on revenue of KRW 139.8 billion, the company returned to operating profit in Q3 2025 (revenue KRW 153.9 billion, operating profit KRW 0.7 billion) and Q4 2025 (revenue KRW 151.3 billion, operating profit KRW 0.2 billion), yet posted a KRW 9.6 billion owners' net loss in Q4, suggesting non-operating items had a substantial impact. Q1 2026 saw a return to overall profitability with revenue of KRW 168.1 billion, operating profit of KRW 1.0 billion, and net income of KRW 1.5 billion, but Q2 2026 reverted to losses, with revenue falling to KRW 135.8 billion, an operating loss of KRW 3.5 billion, and a net loss of KRW 1.2 billion. This pattern shows pronounced volatility in both operating and net results over the last five quarters. On the balance sheet side, operating cash flow plunged from KRW 35.3 billion in 2024 to KRW 1.1 billion in 2025, while the debt ratio jumped from 140.2% to 189.5%, indicating that financial stability metrics have moved in tandem with earnings volatility."
  },
  "industry": {
-  "ko": "국내 서적류 온라인 쇼핑 거래 성장률은 정체 국면에 진입해 있으며, 이는 예스24를 포함한 온라인 서점 전반의 매출 상방을 구조적으로 제한하고 있다. 다만 2024년 한강 노벨문학상 수상을 계기로 한국소설 붐이 2025년까지 이어졌고, 사회정치서 수요 급증(2025년 전년 대비 11.1% 상승)이 특정 카테고리의 이벤트 드리븐 수요를 창출했다. eBook 시장은 학습 디지털화 가속(2025년 상반기 초중고 참고서 eBook 전년 대비 약 247% 급증)과 구독 서비스 보급 확대로 구조적 성장을 지속 중이다. 그러나 eBook 구독 부문에서는 밀리의 서재가 시장점유율 64.3%로 독주체제를 구축하고 있어, 크레마클럽의 시장 점유 확대가 쉽지 않다. 오프라인 서점 시장은 경험형·지역 밀착형 매장으로 재편되고 있으며, 예스24는 2025년 구의점 오픈으로 온·오프라인 연계 접점을 확장하고 있다. AI 기반 도서 추천(크레마AI 챗봇·AI 표지 검색·AI 리뷰 요약 등)이 플랫폼 차별화 수단으로 부각되며, 온라인 서점 간 기술 경쟁이 심화되고 있다. 2025년 랜섬웨어 연속 사고는 온라인 쇼핑·콘텐츠 플랫폼 전반의 사이버 보안 투자 중요성을 부각시켰으며, 개인정보보호법 강화 및 정부 보안 점검 의무화 확대가 업계 비용 구조에 추가 압력으로 작용할 전망이다.",
-  "en": "Online book retailing in South Korea has entered a period of stagnating transaction growth, creating a structural cap on the top-line potential for YES24 and its peers. That said, the sustained Korean literature boom following Han Kang's 2024 Nobel Prize, and the sharp surge in socio-political book demand sparked by 2025's political upheaval (sales up 11.1% year-on-year), have generated event-driven demand spikes in specific categories. The eBook market continues to expand structurally, driven by the digitalization of learning (eBook textbook sales for elementary and secondary school titles surged approximately 247% year-on-year in H1 2025) and broader subscription penetration. Within eBook subscriptions, however, Millie's Library commands an estimated 64.3% market share, making meaningful share gains for Crema Club difficult. Offline bookstores are repositioning as experiential, community-embedded venues, a model YES24 is testing with its 2025 Gueui branch opening. AI-powered book discovery and recommendation (Crema AI chatbot, AI cover search, AI review summarization) are emerging as platform differentiators, intensifying the technology arms race among industry participants. The 2025 back-to-back ransomware incidents have spotlighted cybersecurity investment as a business imperative across the online retail and content platform sector, with stricter Personal Information Protection Act enforcement and expanded government security audit requirements likely to add structural cost burdens industry-wide."
+  "ko": "국내 도서 유통 시장은 교보문고, 알라딘, 예스24가 온라인 시장의 대부분을 점유하는 과점 구조가 장기간 유지되고 있다. 이 구도 속에서 세 회사는 도서정가제라는 동일한 규제 환경 아래 가격 경쟁보다는 부가서비스·적립·구독 모델로 차별화를 시도하는 양상이다. 반면 도서 유통업 자체는 저마진 구조여서 매출 규모 대비 이익 기여가 제한적이라는 산업 공통의 특징을 안고 있다. 이런 가운데 공연·전시 티켓 시장은 코로나19 이후 회복세가 이어지며 새로운 성장축으로 자리잡고 있다. 해당 플랫폼의 공연 티켓 판매액은 전년 대비 30% 늘었으며, 이 액수는 2021년부터 최근까지 5년 연속 증가했고, 콘서트 분야는 판매액이 같은 기간 36% 늘었다는 점에서 티켓 부문의 구조적 성장이 확인된다. 전자출판(전자책·웹툰·웹소설) 산업 역시 확장세를 보이는데, 2024년 주요 전자출판 플랫폼 기업들의 매출액은 전년 대비 12.2% 증가한 것으로 나타나 디지털 콘텐츠 소비가 늘고 있음을 시사한다. 다만 오프라인 서점 감소와 독서 인구 정체는 산업 전반의 구조적 제약으로 남아 있으며, 서점 빅3의 시장점유율이 80%에 육박할 정도로 유통 집중도가 높아 중소형 사업자의 입지는 계속 축소되는 흐름이다.",
+  "en": "Korea's book distribution market has long been an oligopoly dominated by Kyobo Book Centre, Aladin, and Yes24, which together account for the vast majority of online sales. Operating under the same Fixed Book Price System, the three companies tend to differentiate through loyalty programs, subscription models, and value-added services rather than price competition. At the same time, book distribution itself is structurally low-margin, limiting profit contribution relative to revenue scale across the industry. Against this backdrop, the performance and exhibition ticketing market has continued to recover since the pandemic, emerging as a new growth axis. Performance ticket sales on this platform rose 30% year over year, marking five consecutive years of growth since 2021, and concert-category sales rose 36% over the same period, confirming structural growth in the ticketing segment. The e-publishing industry (e-books, webtoons, web novels) is also expanding, with major e-publishing platform companies' revenue rising 12.2% year over year in 2024, suggesting growing digital content consumption. However, the decline in physical bookstores and stagnant reading population remain structural constraints for the industry overall, and with the big-three bookstores' market share approaching 80%, distribution concentration continues to squeeze smaller players out of the market."
  },
  "outlook": {
-  "ko": "파주 스마트 물류센터(1,120억원)가 2025년 4분기 시범 가동 후 2026년 본격 운영에 돌입하면, 처리 효율 개선과 변동비 절감이 중기 원가율 구조 개선으로 연결될 수 있다. 다만 초기 감가상각 비용 부담이 단기적으로 영업비용을 높이는 상쇄 요인으로 작용한다. 디지털 부문에서는 크레마AI·AI 표지 검색·AI 리뷰 요약 등 AI 기능 전면 도입과 컬러 eBook 단말기 크레마팔레트 출시로 플랫폼 차별화를 꾀하고 있으며, 20대 신규 구독자 유입 확대가 중장기 디지털 수익 기반으로 이어질지 주목된다. 두 차례 랜섬웨어 사고 후 회사는 외부 보안 자문단 도입·보안 예산 확대를 공표했으며, KISA·개인정보보호위원회의 조사 결과에 따른 추가 제재 또는 과징금 부과 여부가 중기 비용 변수다. 2025년 정치 격변(탄핵·조기 대선) 이후 사회 안정화 국면이 진행되면 공연·문화 소비 회복이 ENT 부문 수요를 끌어올릴 가능성이 있다. 연간 DPS 250원이 2025 회계연도에 확정됐으나, 배당의 지속 가능성은 이익 회복 속도에 달려 있으며, 향후 배당 정책 방향은 재무 여력 회복의 주요 신호로 기능할 것이다.",
-  "en": "As the 112-billion-won Paju smart logistics center moves from trial (Q4 2025) to full commercial operations in 2026, process efficiencies and variable cost reductions could improve the cost structure over the medium term, although near-term depreciation from the capital outlay will offset some of those gains. On the digital front, the rollout of AI features (Crema AI chatbot, AI cover search, AI review summarization) and the new Crema Palette color eBook reader reflect management's bid to differentiate the platform, while the growing influx of young-adult subscribers into Crema Club warrants monitoring as a potential medium-term revenue driver. Post-ransomware remediation—external security advisors and expanded security budgets—introduces an elevated cost base; any adverse findings from the ongoing KISA and Personal Information Protection Commission investigations could add financial penalties. Domestic political stabilization following the 2025 snap presidential election could support a recovery in cultural consumption and ENT ticket demand. The 250-won DPS declared for fiscal 2025 signals a commitment to shareholder returns, but its sustainability is directly tied to the pace of earnings recovery—making dividend policy an important indicator of management's own confidence in the profit outlook."
+  "ko": "회사의 향후 실적 방향은 도서 유통 부문의 안정적 수익 회복 여부와, 상대적으로 고성장 중인 티켓·전자출판 부문의 매출 기여 확대 속도에 좌우될 것으로 보인다. 티켓 부문은 최근 5년 연속 판매액이 증가하는 흐름이 이어지고 있어, 2026년에도 콘서트·뮤지컬·전시 등 대형 공연 라인업의 편성에 따라 추가적인 매출 기여가 기대되는 영역이다. 전자출판 분야도 산업 전반의 성장세에 힘입어 구독형 콘텐츠 매출 확대 여지가 있다. 다만 도서 부문은 2025년 매출 감소와 영업이익률 급락에서 보듯 경쟁 완화나 비용 구조 개선이 뚜렷하게 확인되지 않았고, 부채비율 상승과 현금흐름 축소는 향후 재무 유연성에 부담 요인으로 남아 있다. 회사가 과거 적자 자회사 정리 등 비용 구조조정을 통해 수익성을 개선한 전례가 있는 만큼, 유사한 구조조정 조치가 재현될지도 지켜볼 부분이다. 분기별 실적의 흑자·적자 전환이 반복되고 있는 만큼, 특정 분기의 일회성 요인(자산 손상, 자회사 관련 손익 등)이 재무제표에 미치는 영향을 확인하는 작업이 중요하다.",
+  "en": "The company's future earnings trajectory will likely hinge on whether the book distribution segment achieves a stable profit recovery, and how quickly the faster-growing ticketing and e-publishing segments expand their revenue contribution. The ticketing segment, having posted five consecutive years of sales growth, remains a segment where the 2026 concert, musical, and exhibition lineup could drive further revenue contribution. The e-publishing segment also has room to expand subscription-based content revenue, supported by broader industry growth. That said, the book segment showed no clear signs of eased competition or cost structure improvement in 2025, as evidenced by declining revenue and a sharply lower operating margin, while the rising debt ratio and shrinking cash flow remain a burden on future financial flexibility. Given the company's past track record of improving profitability through cost restructuring, including divestment of loss-making subsidiaries, it remains worth watching whether similar measures could recur. As quarterly results have repeatedly swung between profit and loss, tracking the impact of one-off items—such as asset impairments or subsidiary-related gains and losses—on the financial statements will be important."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당순자산(BPS 6,912원) 대비 상당 폭 할인된 구간에 위치해 있으며, 이는 2022·2024년 수익성 회복 국면에서도 드물었던 낮은 수준의 순자산 대비 주가 배율이다. 지배주주 귀속 기준 주당순이익(EPS)은 -602원으로 적자 상태라 현재 가격기준 PER 산출이 의미 없고, 순자산 대비 할인 폭과 향후 이익 정상화 시점이 핵심 밸류에이션 기준으로 작용한다. 2025년 결산 DPS 250원이 확정됐으나 순손실 기간 중 지급된 배당이어서 지속 가능성 논의가 불가피하며, 배당성향 정상화는 실질적 이익 회복을 전제로 한다. 랜섬웨어 사고·브랜드 신뢰도 훼손·물류센터 투자 부담이 중첩된 현재의 순자산 대비 할인 구간은 과거 실적 안정기의 가격 배율과 현격한 괴리를 보이고 있으며, 이 괴리의 해소 시점은 영업이익 회복의 속도와 보안 사고 재발 방지 여부에 달려 있다. 일회성 충격 요인이 완전히 해소되고 물류 효율화 효과가 가시화될 경우, 현재의 순자산 할인 폭이 축소될 수 있는 여지가 존재한다.",
-  "en": "The share price sits at a material discount to book value per share (BPS: 6,912 won), a level that was uncommon even during the company's profit recovery periods in 2022 and 2024, underscoring how deeply the post-ransomware and loss-cycle discount is priced in. With the headline EPS in loss territory at -602 won, a price-to-earnings comparison is not applicable; the discount to net asset value and the earnings normalization timeline serve as the primary valuation anchors. The 250-won DPS confirmed for fiscal 2025 was paid during a net-loss year, raising sustainability questions—any continuation of such a policy in a non-profitable environment could attract criticism about capital management. The current discount to net asset value reflects the confluence of ransomware reputational damage, elevated financial leverage from the logistics investment, and ongoing earnings uncertainty; it stands at a meaningful gap from the multiples observed during stable profit periods. Should one-time hack-related costs fully dissipate and Paju logistics efficiencies flow through to reported figures, there is a basis for the net-asset discount to gradually narrow, though the timeline for that re-rating remains uncertain."
+  "ko": "현재 주가는 회사의 주당 순자산에 비해 낮은 배수에서 거래되는 구간으로, 주가순자산비율이 1배를 밑도는 수준에 머물러 있다. 다만 최근 4개 분기 지배주주 순이익이 적자를 기록하고 있어 이익 기준 밸류에이션 지표는 안정적으로 산출되기 어려운 상태다. 분기별로 흑자와 적자가 교차하는 이익 변동성을 고려하면, 특정 시점의 순자산 대비 할인 폭을 실적 개선의 신호로 단정하기보다는 다음 분기 이후 이익의 방향성을 함께 살펴볼 필요가 있다. 배당은 최근까지 이어져 왔으나, 순이익이 적자를 기록한 해에도 배당이 유지될 수 있는지, 그리고 배당 재원이 되는 현금흐름이 얼마나 회복되는지가 향후 배당 지속성을 판단하는 핵심 변수가 될 것으로 보인다. 부채비율이 최근 상승한 점도 순자산가치 평가에 영향을 줄 수 있는 요인으로, 재무구조 변화를 함께 확인하는 것이 바람직하다.",
+  "en": "The current share price trades at a level below the company's per-share net asset value, with the price-to-book ratio sitting under 1x. However, because owners' net income has been in the red over the latest four quarters, income-based valuation metrics are difficult to derive on a stable basis at this time. Given the volatility of alternating quarterly profits and losses, the discount to net asset value at any given point should not be read in isolation as a signal of earnings improvement, and the direction of profits in subsequent quarters warrants continued attention. Dividends have continued in recent periods, but whether payouts can be sustained in years with a net loss, and how much the underlying operating cash flow recovers, will be key variables in assessing future dividend continuity. The recent rise in the debt ratio is also a factor that could affect net asset valuation, making it worthwhile to monitor changes in the balance sheet structure alongside the price-to-book level."
  },
  "bull": [
   {
    "title": {
-    "ko": "eBook·구독 서비스의 구조적 성장과 청년층 유입",
-    "en": "Structural eBook and Subscription Growth Fueled by Younger Demographics"
+    "ko": "티켓 사업의 구조적 성장",
+    "en": "Structural Growth in Ticketing"
    },
    "body": {
-    "ko": "모바일 중심 디지털 독서 일상화에 따라 2025년 크레마클럽 신규 가입자의 30%가 20대로, 서비스 초기(2019년) 대비 누적 20대 이용자 비중이 22%포인트 증가했다. eBook 학습서 부문에서는 초중고 참고서 판매가 2025년 상반기에만 전년 대비 약 247% 급증하며 디지털 학습 전환이 가속화되고 있다. 이 구독자 기반이 ARPU 상승 및 크로스셀링 기회와 결합될 경우, 디지털 부문이 전통 도서 판매 정체를 상쇄하는 실질 성장 엔진으로 발전할 수 있다.",
-    "en": "Mobile-first digital reading is driving structural adoption—30% of new 2025 Crema Club sign-ups were in their 20s, and the cumulative young-adult user base has grown 22 percentage points versus the service's 2019 launch. eBook textbook sales for elementary and secondary school titles surged approximately 247% year-on-year in H1 2025, confirming the accelerating digitalization of learning. If this subscriber momentum translates into higher ARPU and cross-selling opportunities, the Digital segment could evolve into a genuine growth engine that offsets stagnating physical book revenue."
+    "ko": "공연·전시 티켓 판매액이 최근 5년 연속 증가하며 도서 중심 사업 구조를 보완하는 성장축으로 부각되고 있다. 특히 콘서트 분야의 판매액 증가율이 전체 평균을 상회해 대형 공연 라인업 확대 시 추가 매출 기여가 가능한 구조다. 이 부문은 도서 유통보다 상대적으로 높은 수익성을 기대할 수 있는 사업으로 평가된다.",
+    "en": "Ticket sales for performances and exhibitions have grown for five consecutive years, emerging as a growth pillar that complements the book-centric core business. In particular, the concert category's growth rate has outpaced the overall average, suggesting further revenue contribution as large-scale performance lineups expand. This segment is generally viewed as offering relatively higher profitability than book distribution."
    }
   },
   {
    "title": {
-    "ko": "파주 물류센터 가동 후 원가 구조 개선 잠재력",
-    "en": "Cost Structure Improvement Potential from Paju Logistics Center"
+    "ko": "온라인 서점 시장의 안정적 지위",
+    "en": "Stable Position in the Online Bookstore Market"
    },
    "body": {
-    "ko": "1,120억원을 투자한 파주 스마트 물류센터가 2025년 4분기 시범 가동을 거쳐 2026년 본격 운영에 진입했다. 물류 자동화로 처리 효율과 배송 품질이 향상되면 변동비 절감과 함께 경쟁 우위도 강화될 수 있다. 감가상각 비용 부담을 상회하는 운영 효율화 효과가 현실화되는 시점에 영업이익률의 구조적 상향이 가능하다.",
-    "en": "The 112-billion-won smart logistics facility in Paju transitioned from trial (Q4 2025) to full commercial operations in 2026. Fulfillment automation is expected to lower variable costs and improve delivery quality, potentially strengthening competitive differentiation. Once efficiency gains demonstrably exceed the depreciation expense, a structural upward shift in the operating margin becomes achievable."
+    "ko": "예스24는 교보문고, 알라딘과 함께 국내 온라인 도서 시장의 대부분을 점유하는 과점적 지위를 오랫동안 유지해왔다. 신규 진입 장벽이 높은 산업 구조 특성상 시장점유율 자체가 급격히 훼손될 가능성은 제한적이다. 이러한 지위는 도서 부문의 매출 기반을 지지하는 요인으로 작용한다.",
+    "en": "Yes24 has long maintained an oligopolistic position alongside Kyobo Book Centre and Aladin, together commanding the vast majority of Korea's online book market. Given high barriers to new entry, the risk of a sharp erosion in market share appears limited. This position supports the revenue base of the book segment."
    }
   },
   {
    "title": {
-    "ko": "한국 문화콘텐츠 붐과 이벤트 드리븐 수요 상방",
-    "en": "Korean Cultural Content Wave as an Upside Demand Catalyst"
+    "ko": "사업 다각화를 통한 매출 기반 확대",
+    "en": "Revenue Base Expansion via Diversification"
    },
    "body": {
-    "ko": "한강의 노벨문학상 수상 효과가 2025년에도 한국소설 열풍으로 이어졌고, 계엄·탄핵·조기 대선 등 사회정치적 격변이 사회정치서 판매를 전년 대비 11.1% 끌어올렸다. 예스24의 '올해의 책' 투표 참여가 역대 최다인 119만5천 표를 기록해 플랫폼 충성도는 양호한 수준을 유지하고 있다. 한류 확산과 K-콘텐츠 소비 증가는 ENT(공연·음반) 부문에도 구조적 수요 증가 기반이 될 수 있다.",
-    "en": "The Korean literature boom sparked by Han Kang's Nobel Prize extended through 2025, and political upheaval drove socio-political book sales up 11.1% year-on-year. YES24's 'Book of the Year' vote attracted a record 1.195 million ballots, suggesting platform loyalty remains intact despite the ransomware controversies. The broader Hallyu wave and growing K-content consumption domestically and internationally could provide sustained tailwinds for the ENT segment (concerts, ticketing, music)."
+    "ko": "전자책, 웹소설, 구독 서비스 등 디지털 콘텐츠 사업이 도서 유통 외 매출원으로 자리잡고 있으며, 산업 전반의 전자출판 매출도 두 자릿수 성장률을 보이고 있다. 이는 도서 부문의 성장 정체를 일부 상쇄할 수 있는 요인이다. 모바일·전문몰 채널 비중 확대도 온라인 유통 경쟁력을 뒷받침한다.",
+    "en": "Digital content businesses such as e-books, web novels, and subscription services are establishing themselves as revenue sources beyond core book distribution, and industry-wide e-publishing revenue has posted double-digit growth. This can partly offset stagnation in the book segment, while the growing share of mobile and specialty-mall channels supports online distribution competitiveness."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "반복된 랜섬웨어로 인한 브랜드 신뢰도 훼손",
-    "en": "Reputational Damage from Repeated Ransomware Incidents"
+    "ko": "이익의 높은 변동성",
+    "en": "High Earnings Volatility"
    },
    "body": {
-    "ko": "2025년 6월 나흘 서비스 중단과 8월 7시간 중단으로 두 차례 랜섬웨어 공격이 발생했으며, 회원 약 2,000만명의 개인정보 유출 가능성도 제기됐다. 1차 사고 시 초기 사실 은폐와 해커에게 가상자산 지불 후 복구한 사실이 알려지며 신뢰도 타격이 컸고, KISA는 대응 과정의 불투명성과 오프사이트 백업 부재를 공개 비판했다. 고객 이탈이 가속화될 경우 회원 수·거래액 감소가 장기 매출에 구조적 하향 압력으로 작용할 수 있다.",
-    "en": "YES24 suffered two ransomware incidents in 2025 – a four-day outage in June and a seven-hour outage in August – with the personal data of an estimated 20 million members potentially compromised. Initial concealment of the first incident and the subsequent disclosure that cryptocurrency ransom was paid caused significant reputational damage; KISA publicly criticized both the lack of transparency and the absence of an offsite backup system. If customer churn accelerates, declining member count and transaction volumes could create structural long-term revenue headwinds."
+    "ko": "최근 5개 분기 동안 영업이익과 순이익이 흑자와 적자를 반복하며 실적의 예측 가능성이 낮아졌다. 2025년 4분기와 2026년 2분기에는 영업 실적과 별개로 순손실 규모가 확대돼 영업외 요인의 영향력이 크게 나타났다. 이런 변동성은 분기 단위 실적 해석을 어렵게 만드는 요인이다.",
+    "en": "Over the last five quarters, operating and net profits have repeatedly swung between profit and loss, reducing earnings predictability. In Q4 2025 and Q2 2026, net losses widened irrespective of operating performance, pointing to significant non-operating influences. This volatility complicates quarter-to-quarter earnings interpretation."
    }
   },
   {
    "title": {
-    "ko": "온라인 서점 성장 정체와 박리다매 구조의 수익성 한계",
-    "en": "Stagnating Online Book Market and Structural Thin-Margin Constraints"
+    "ko": "재무 레버리지 상승",
+    "en": "Rising Financial Leverage"
    },
    "body": {
-    "ko": "국내 서적류 온라인 쇼핑 거래 성장률 정체로 매출 상방이 제한적이며, 2025년에는 전년 대비 -6.7%의 역성장이 나타났다. 도서 유통의 특성상 영업이익률 상단이 2~3%대로 낮아 외부 충격 흡수 여력이 취약하다. 교보문고·알라딘과의 경쟁에 더해 쿠팡·네이버 등 종합 이커머스 플랫폼의 도서 카테고리 확장이 추가 마진 하방 압력으로 작용할 수 있다.",
-    "en": "Stagnating online book retail growth constrains the top-line ceiling, with YES24's revenue actually declining 6.7% in 2025. The inherently thin-margin nature of book distribution (OPM capped at approximately 2–3% in good years) leaves minimal buffer to absorb cost shocks. Competition from Kyobo Book Centre and Aladdin, combined with general e-commerce platforms like Coupang and Naver expanding into book categories, represents a persistent downward pressure on margins."
+    "ko": "부채비율이 2024년 140.2%에서 2025년 189.5%로 크게 상승했고, 같은 기간 영업활동현금흐름은 353.3억원에서 11.2억원으로 급감했다. 이는 향후 투자나 배당 여력에 제약을 줄 수 있는 요인이다. 현금흐름 회복 여부가 재무 안정성 평가의 핵심 변수로 남아 있다.",
+    "en": "The debt ratio rose sharply from 140.2% in 2024 to 189.5% in 2025, while operating cash flow over the same period plunged from KRW 35.3 billion to KRW 1.1 billion. This could constrain future investment or dividend capacity, leaving cash flow recovery as a key variable in assessing financial stability."
    }
   },
   {
    "title": {
-    "ko": "물류센터 투자에 따른 재무 레버리지 상승과 비용 부담",
-    "en": "Rising Financial Leverage and Cost Burden from Logistics Investment"
+    "ko": "도서 부문의 낮은 마진 구조",
+    "en": "Low-Margin Structure of the Book Segment"
    },
    "body": {
-    "ko": "파주 물류센터 투자로 부채비율이 189.5%까지 상승하고 자본총계도 2024년 1,809억원에서 2025년 1,717억원으로 감소해 재무 여력이 좁아졌다. 감가상각비·이자비용 증가가 수익성 회복 속도를 상쇄할 수 있으며, 추가 사이버 보안 투자 및 KISA·개인정보보호위원회 조사에 따른 과징금 가능성도 현금흐름에 부정적이다. 적자 중 배당(연간 DPS 250원, 약 62.5억원) 지속 여부에 대한 논쟁이 자본 관리 측면의 거버넌스 리스크로 비화할 수 있다.",
-    "en": "The Paju logistics investment has pushed the debt ratio to 189.5%, while total equity contracted from 180.9 billion won (2024) to 171.7 billion (2025), narrowing the financial buffer. Growing depreciation and interest costs could offset the pace of operating profit recovery, and potential fines from KISA and the Personal Information Protection Commission add further cash flow uncertainty. The controversy over the 250-won annual DPS (~6.25 billion won in total) paid in a loss year risks escalating into a governance issue regarding capital allocation priorities."
+    "ko": "2025년 영업이익률은 0.5%까지 낮아져 도서 유통 중심 사업 구조의 마진 취약성이 다시 부각됐다. 도서정가제 등 규제 환경이 유지되는 가운데 가격 경쟁력만으로 차별화가 어려운 구조도 지속되고 있다. 신사업 부문이 아직 전체 이익 구조를 견인할 만큼 충분히 커지지 않았다는 점도 부담이다.",
+    "en": "The 2025 operating margin fell to just 0.5%, underscoring the margin vulnerability inherent in a book-distribution-centered business model. Under the continued Fixed Book Price System, differentiation through price competitiveness alone remains difficult, and newer business segments have not yet grown large enough to drive the overall profit structure."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "사이버 보안 리스크",
-    "en": "Cybersecurity Risk"
+    "ko": "재무 건전성",
+    "en": "Financial Soundness"
    },
    "body": {
-    "ko": "2025년 두 차례의 랜섬웨어 공격으로 전사 서비스가 중단됐으며, 보안 전문가들은 초기 대응 미흡으로 3차 공격 가능성이 잔존한다고 경고했다. KISA 조사 결과 1차 사고 시 업무망·서비스망·백업망이 모두 감염된 것으로 확인됐으며, 오프사이트 백업 부재 등 근본적 보안 취약점이 드러났다. 외부 보안 자문단 도입과 보안 예산 확대를 약속했으나, 보안 인프라 재구축 비용과 재발 방지 효과의 검증까지 불확실성이 지속될 것으로 보인다.",
-    "en": "Two ransomware incidents in 2025 caused significant service disruptions, and security experts warned that inadequate remediation after the first attack left the company exposed to further incidents (as the second attack two months later demonstrated). KISA investigations revealed that all three networks (business, service, and backup) were infected during the first incident, and the absence of an offsite backup system was identified as a fundamental security failing. While the company has committed to external security advisors and expanded budgets, the costs of rebuilding the security infrastructure and the time required to validate remediation effectiveness will sustain uncertainty."
+    "ko": "부채비율이 단기간에 140%대에서 190%에 근접한 수준으로 상승했고, 영업활동현금흐름도 크게 줄어들었다. 이러한 흐름이 지속될 경우 외부 자금조달 조건이나 배당 정책에도 영향을 줄 수 있다. 향후 분기별 현금흐름과 부채비율의 개선 여부를 지속적으로 확인할 필요가 있다.",
+    "en": "The debt ratio rose rapidly from the 140% range to nearly 190% within a short period, while operating cash flow also declined sharply. If this trend continues, it could affect external financing conditions or dividend policy. Ongoing monitoring of quarterly cash flow and debt ratio trends is warranted."
    }
   },
   {
    "cat": {
-    "ko": "규제·법적 리스크",
-    "en": "Regulatory and Legal Risk"
+    "ko": "사업 집중도 및 마진 구조",
+    "en": "Business Concentration and Margin Structure"
    },
    "body": {
-    "ko": "약 2,000만명 회원 개인정보 유출 가능성에 대한 개인정보보호위원회의 공식 조사가 진행 중이며, 결과에 따라 수십억원 규모의 과징금 부과 가능성이 있다. KISA의 보안 부적합 지적 사항에 따른 행정 처분도 추가 비용 요인이다. 도서정가제 등 출판·유통 관련 규제 변화와 전자책 부가세 정책 변동도 가격 경쟁력 및 수익구조에 영향을 미칠 수 있는 중기 변수다.",
-    "en": "The Personal Information Protection Commission is conducting a formal investigation into the potential exposure of approximately 20 million members' personal data, which could result in multi-billion-won fines. KISA's findings on security inadequacies may also trigger administrative sanctions. Changes to book pricing regulations (the Fixed Book Price system) and VAT policies on digital books represent medium-term regulatory variables that could affect pricing flexibility and the margin structure."
+    "ko": "매출의 상당 부분이 여전히 저마진 도서 유통에 의존하고 있어 영업이익률이 1% 안팎에서 크게 등락하는 구조적 취약성을 안고 있다. 신사업인 티켓·전자출판 부문의 매출 비중이 충분히 확대되지 않으면 전체 수익성 개선이 제한적일 수 있다.",
+    "en": "A significant portion of revenue still depends on low-margin book distribution, leaving the operating margin structurally vulnerable to swings around the 1% level. If the revenue share of newer businesses such as ticketing and e-publishing does not expand sufficiently, overall profitability improvement could remain limited."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화 및 시장 구조 리스크",
-    "en": "Competitive Intensity and Market Structure Risk"
+    "ko": "산업 구조 변화",
+    "en": "Industry Structural Change"
    },
    "body": {
-    "ko": "교보문고·알라딘과의 전통 경쟁에 더해 쿠팡·네이버 등 종합 이커머스 플랫폼의 도서 카테고리 확장이 가격 경쟁 압력을 지속적으로 높이고 있다. eBook 구독 시장에서 밀리의 서재가 64.3%의 점유율을 보유해 크레마클럽의 성장 공간을 제약하며, AI 기능 측면에서의 차별화가 뚜렷하지 않으면 성과를 기대하기 어렵다는 분석도 제기된다. 글로벌 플랫폼의 국내 진출 확대와 한국어 콘텐츠의 저작권 경쟁 격화가 장기 수익 구조를 변화시킬 수 있는 잠재 리스크 요인이다.",
-    "en": "Beyond traditional rivalry with Kyobo Book Centre and Aladdin, the ongoing expansion of general e-commerce platforms (Coupang, Naver) into book retail is sustaining competitive pricing pressure. In eBook subscriptions, Millie's Library's estimated 64.3% market share severely limits the headroom for Crema Club, and analysts have noted that AI features need clear differentiation to drive meaningful share gains. Global platform expansion into Korean-language content and intensifying intellectual property competition represent longer-term structural risks to YES24's market position and revenue mix."
+    "ko": "독서 인구 정체와 오프라인 서점 감소 등 구조적 요인이 산업 전반의 성장성을 제약하고 있으며, 도서 유통 상위 업체 간 집중도가 이미 높은 수준이어서 추가적인 점유율 확대 여지가 제한적이다. 대형 경쟁사의 도매업 확장 등 유통 구조 변화도 지켜볼 요인이다.",
+    "en": "Structural factors such as a stagnant reading population and the decline of physical bookstores constrain overall industry growth, while concentration among top book distributors is already high, limiting room for further share gains. Changes in distribution structure, such as large competitors' expansion into wholesale, also warrant attention."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 2분기(2026Q2) 실적 발표 확인. 전년동기(2025Q2)가 랜섬웨어로 크게 훼손된 구간(영업손실 42.8억원)이므로 기저효과 기반 이익 반등 여부와 함께, 매출 회복 여부 및 이익 개선 지속성이 핵심 확인 포인트다.",
-    "en": "Q2 2026 earnings release. Q2 2025 was severely impacted by the ransomware attack (4.3 billion won operating loss), so the year-on-year comparison is highly favorable – the key checks are whether top-line recovery emerges alongside the expected base-effect profit rebound, and whether the operating improvement is sustainable."
+    "ko": "2026년 3분기 분기보고서 공시 예정 시점으로, 2026년 2분기 적자 이후 영업이익과 순이익이 다시 흑자로 전환되는지 확인이 필요하다.",
+    "en": "Around the expected filing date of the Q3 2026 quarterly report, it will be important to check whether operating and net profit return to positive territory following the Q2 2026 loss."
    }
   },
   {
    "when": {
-    "ko": "2026년 8월~10월",
-    "en": "August–October 2026"
+    "ko": "2026년 12월~2027년 1월",
+    "en": "December 2026 to January 2027"
    },
    "what": {
-    "ko": "개인정보보호위원회 및 KISA의 2025년 랜섬웨어 사고 조사 결과 및 행정 처분 여부 공표. 과징금 규모와 추가 보안 의무 조치의 범위가 향후 비용 추정치에 반영될 필요가 있다.",
-    "en": "Announcements from the Personal Information Protection Commission and KISA regarding the outcomes of their investigations into the 2025 ransomware incidents. The magnitude of any fines and scope of mandatory security requirements will need to be factored into forward cost estimates."
+    "ko": "연말 공연·전시 성수기 티켓 판매 동향과, 매년 초 공개되는 연간 티켓 판매 데이터를 통해 티켓 부문의 성장세 지속 여부를 확인할 시점이다.",
+    "en": "This period covers the year-end performance and exhibition peak season, when annual ticket sales data typically released early in the new year can confirm whether the ticketing segment's growth trend continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 전반",
-    "en": "H2 2026 (Q3–Q4)"
+    "ko": "2027년 3월 전후",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "파주 스마트 물류센터 본격 운영에 따른 매출원가율 개선 효과의 실적 반영 여부 확인. 2025년 4분기 시범 가동 이후의 운영 안정성과 원가 절감 폭이 하반기 영업이익률 방향을 결정하는 핵심 변수다.",
-    "en": "Assessment of whether the full commercial operations of the Paju smart logistics center are translating into measurable cost-of-revenue improvements. Operational stability and the magnitude of cost savings post-trial-launch will be decisive drivers of H2 2026 operating margin direction."
+    "ko": "2026년 연간 확정 실적과 정기주주총회 관련 공시 시점으로, 부채비율·현금흐름 개선 여부와 배당 정책 유지 여부를 함께 확인할 필요가 있다.",
+    "en": "Around the time of the confirmed full-year 2026 results and the annual general shareholders' meeting disclosures, it will be worth checking whether the debt ratio and cash flow have improved and whether dividend policy is maintained."
    }
   },
   {
    "when": {
-    "ko": "2026년 연중 상시",
-    "en": "Ongoing Throughout 2026"
+    "ko": "분기별 공시 시점마다",
+    "en": "At each quarterly disclosure"
    },
    "what": {
-    "ko": "크레마클럽 구독자 수 추이, eBook 학습서 성장 지속 여부, AI 기능 도입에 따른 앱 사용성·전환율 개선 등 디지털 부문 지표 모니터링. 밀리의 서재와의 구독 시장 점유율 격차 변화가 디지털 사업 중장기 방향을 가늠하는 선행 지표다.",
-    "en": "Monitor Crema Club subscriber count trends, sustainability of eBook textbook sales momentum, and whether AI feature rollouts are driving measurable improvements in app engagement and conversion. Any shift in the market share gap with Millie's Library is a key leading indicator for the medium-term trajectory of the Digital segment."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 2~3월 (2026 회계연도 결산)",
-    "en": "February–March 2027 (FY2026 Annual Results)"
-   },
-   "what": {
-    "ko": "2026년 연간 배당 결정: 순이익 회복이 지속될 경우 DPS 250원 유지·상향 여부, 손실 지속 시 배당 축소·유보 여부가 주주환원 정책의 지속성을 가늠하는 지표다. 연간 이익·현금흐름·부채비율 추이도 재무 구조 개선 속도를 종합 점검하는 시점이다.",
-    "en": "Watch for the FY2026 annual dividend decision: whether YES24 maintains or raises the 250-won DPS following a genuine profit recovery year, or scales back in the event of continued losses, will signal management's confidence in the earnings outlook. Full-year earnings, cash flow, and debt ratio trends will provide a comprehensive check on the pace of balance sheet normalization."
+    "ko": "지배주주 순이익에 큰 영향을 미치는 일회성 손익(자산손상, 자회사 관련 손익 등) 발생 여부를 분기보고서 주석을 통해 확인할 필요가 있다.",
+    "en": "At each quarterly disclosure, it is worth checking the footnotes of the quarterly report for one-off items—such as asset impairments or subsidiary-related gains and losses—that materially affect owners' net income."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "예스24는 25년간 국내 온라인 서점 1위를 지켜온 문화콘텐츠 플랫폼이지만, 2025년에는 두 차례 랜섬웨어 공격에 따른 일회성 비용 충격과 매출 역성장이 맞물리며 영업이익과 현금흐름이 동시에 크게 악화됐다. 2026년 1분기에 지배주주 귀속 순이익이 흑자로 전환해 일회성 충격 해소 조짐을 보이나, 같은 분기 매출이 전년동기 대비 7.4% 감소해 성장 기반 회복은 아직 가시화되지 않았다. 파주 스마트 물류센터 투자는 중장기 원가 경쟁력을 높일 수 있는 인프라지만, 부채비율을 189.5%까지 끌어올려 단기 재무 여력을 제한하고 있다. 크레마클럽의 20대 구독자 유입, eBook 학습서 성장, AI 기능 고도화 등 디지털 전환 노력은 구조적 성장 동인을 형성하고 있으나, eBook 구독 시장에서 밀리의 서재와의 점유율 격차 해소와 온라인 서점 거래 정체 극복이 선결 과제로 남아 있다. 현재 주가는 주당순자산(BPS 6,912원) 대비 의미 있는 할인 구간에 위치해 있으며, 영업이익 정상화·디지털 사업 기여 확대·보안 신뢰도 회복이 병행되는 시점이 중기 전망의 방향을 결정하는 핵심 변곡점이 될 것이다.",
-   "en": "YES24 has held South Korea's top online bookstore position for 25 years, but 2025 delivered a double blow—back-to-back ransomware attacks and a revenue contraction—that simultaneously collapsed operating income and cash flow. A return to net profit in Q1 2026 suggests the worst of the one-time headwinds may be passing, yet ongoing year-on-year revenue declines indicate that a structural top-line recovery has not yet materialized. The Paju smart logistics investment has the potential to improve the cost structure over the medium term, but it has also elevated the debt ratio to 189.5%, constraining near-term financial flexibility. Digital transformation efforts—growing young-adult Crema Club membership, surging eBook textbook sales, and AI feature rollouts—represent credible structural growth drivers, though closing the subscriber gap with Millie's Library and reversing the stagnation in online book retail remain formidable hurdles. The share price currently stands at a meaningful discount to book value per share (BPS: 6,912 won), and the convergence of a durable operating profit recovery, demonstrable digital segment revenue contribution, and credible cybersecurity improvement will collectively determine the pace and magnitude of any valuation re-rating."
+   "ko": "예스24는 도서 유통이라는 저마진 핵심 사업과, 최근 5년 연속 성장한 공연 티켓 사업이라는 두 축이 공존하는 구조를 보이고 있다. 2025년 연간 실적은 매출과 영업이익률이 모두 축소되며 부진했고, 최근 5개 분기 동안 영업이익과 순이익이 흑자와 적자를 반복하는 변동성이 뚜렷했다. 부채비율 상승과 영업활동현금흐름 급감은 재무 건전성 측면에서 함께 살펴봐야 할 변수다. 반면 티켓 부문의 구조적 성장과 온라인 서점 시장에서의 안정적 지위는 상대적으로 긍정적인 요인으로 꼽힌다. 주가는 순자산가치 대비 할인된 수준에서 거래되고 있으나, 이익 기준 지표가 최근 적자로 안정적이지 않은 만큼 향후 분기 실적의 방향성 확인이 중요하다. 투자 판단은 이러한 강세·약세 요인을 종합적으로 고려해 독자 스스로 내려야 한다.",
+   "en": "Yes24's business structure combines a low-margin core book distribution operation with a performance ticketing business that has grown for five consecutive years. Full-year 2025 results were weak, with both revenue and operating margin contracting, and over the last five quarters operating and net profit repeatedly alternated between profit and loss, underscoring pronounced volatility. The rising debt ratio and sharp decline in operating cash flow are variables that warrant close attention from a financial soundness perspective. On the other hand, structural growth in the ticketing segment and a stable position in the online bookstore market stand out as relatively positive factors. The stock trades at a discount to net asset value, but since income-based metrics are currently unstable due to recent losses, confirming the direction of upcoming quarterly results will be important. Investment judgment should weigh these bullish and bearish factors comprehensively, and the decision rests with the individual reader."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A053280&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
-  "https://m.irgo.co.kr/IR-ROOM/053280",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/yes24co",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=632869",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A053280&cID=&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
+  "https://www.nongmin.com/article/20241016500351",
+  "https://v.daum.net/v/20260204165636567",
+  "https://member.kpa21.or.kr/wp-content/uploads/sites/2/2025/04/2024%EB%85%84-%EC%B6%9C%ED%8C%90%EC%8B%9C%EC%9E%A5-%ED%86%B5%EA%B3%84-%EB%B3%B4%EA%B3%A0%EC%84%9C_250428.pdf",
+  "https://news.nate.com/view/20241029n01621",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A053280",
   "https://markets.hankyung.com/stock/053280/financial-summary",
-  "https://ceoscoredaily.com/page/view/2025040911015596105",
   "https://kr.investing.com/pro/KOSDAQ:A053280/explorer/total_rev",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/yes24co",
+  "https://www.investing.com/equities/yes24-co-ltd-earnings",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A053280&cID=&MenuYn=Y&ReportGB=&NewMenuID=103&stkGb=701",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A053280&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701",
-  "https://www.newswire.co.kr/newsRead.php?no=1024373",
-  "https://www.penews.co.kr/news/articleView.html?idxno=27831",
-  "https://press.todayan.com/newsRead.php?no=1024373",
-  "https://www.worldculture.news/news/articleView.html?idxno=11249",
-  "https://www.newswire.co.kr/newsRead.php?no=1013582",
-  "https://press.mtime.co.kr/newsRead.php?no=1024373",
-  "https://edumorning.com/articles/1222?article_search_log_id=0",
-  "https://www.thescoop.co.kr/news/articleView.html?idxno=305529",
-  "https://www.giview.co.kr/news/article.html?no=188434"
+  "https://ceoscoredaily.com/page/view/2025040911015596105",
+  "https://alphasquare.co.kr/home/stock-summary?code=053280",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20240320001515&docno=&viewerhost=",
+  "https://ticket.yes24.com/Rank/All",
+  "https://ticket.yes24.com/",
+  "https://ticket.yes24.com/Rank/Concert",
+  "https://press.starinnews.com/newsRead.php?no=1005663"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "053280",
  "name": "예스24",
  "name_en": "YES24Co.,Ltd",
@@ -233,9 +223,9 @@
   "유통·소비재"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 00:51",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 09:16",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
