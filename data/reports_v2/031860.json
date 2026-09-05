@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "감사의견 거절·거래 정지 속 사업 재편 기로에 선 복합 유통·바이오",
-  "en": "Audit Disclaimer & Trading Halt: Hybrid Distribution–Biotech at a Strategic Crossroads"
+  "ko": "매출 회복세 속 상장폐지 리스크 상존",
+  "en": "Revenue Recovery Amid Delisting Risk Overhang"
  },
  "lead": {
-  "ko": "디에이치엑스컴퍼니는 2025사업연도 감사의견 거절로 2026년 4월부터 거래가 정지된 상태이며, 최대주주 교체·CB 발행을 통한 유동성 보강을 시도 중이나 4년 연속 영업손실과 급격한 자본 잠식이 사업 정상화의 핵심 과제로 남아 있다.",
-  "en": "DHX Company has been subject to a trading halt since April 2026 following an audit disclaimer on its FY2025 financials; a new controlling shareholder and fresh convertible-bond funding have been injected to stabilize liquidity, yet four consecutive years of operating losses and sharply eroded equity remain the central challenge to operational recovery."
+  "ko": "매출은 회복 조짐을 보이고 있지만, 2025사업연도 감사의견 거절에 따른 상장폐지 사유 발생과 거래정지가 겹치며 상장 적격성 심사 결과가 최대 변수로 부상했다.",
+  "en": "Revenue shows signs of recovery, but a disclaimer of opinion on the FY2025 audit triggered a delisting cause and trading suspension, making the outcome of the listing eligibility review the key variable."
  },
  "keypoints": [
   {
-   "ko": "2025사업연도 감사보고서에 '의견거절' 표명 → 2026년 4월 3일부터 주식 매매거래 정지 상태 지속 중",
-   "en": "An audit disclaimer on FY2025 accounts triggered a trading suspension effective April 3, 2026, which remains in force as of this report date."
+   "ko": "2025년 연결 매출액은 145억원으로 전년(95억원) 대비 약 52% 증가했으나, 영업손실은 78억원으로 오히려 확대됐다.",
+   "en": "2025 consolidated revenue rose about 52% year over year to KRW14.5 billion from KRW9.5 billion, yet the operating loss widened to KRW7.83 billion."
   },
   {
-   "ko": "2026년 4월 최대주주가 프라임코어로 변경(지분 29.7%), 제3자 배정 유증(약 40억원)·150억원 규모 CB 발행으로 운영자금 보강",
-   "en": "PrimeCore became the new controlling shareholder in April 2026 with a 29.7% stake, injecting approximately KRW 4 billion via third-party allotment and issuing a KRW 15 billion convertible bond to shore up working capital."
+   "ko": "2025년 4분기부터 2026년 2분기까지 영업손실이 -24.6억원→-19.4억원→-11.4억원으로 두 분기 연속 축소되는 흐름을 보였다.",
+   "en": "The operating loss narrowed for two consecutive quarters, moving from -KRW2.46 billion in 4Q25 to -KRW1.94 billion in 1Q26 and -KRW1.14 billion in 2Q26."
   },
   {
-   "ko": "2025년 연간 매출 약 145억원(+52% YoY), 영업손실률 –54%…4분기에 대규모 일회성 손실 집중되어 지배 순손실 332억원",
-   "en": "FY2025 revenue grew 52% YoY to approximately KRW 14.5 billion, but the operating margin was –54% and an outsized Q4 loss drove the controlling-interest net loss to approximately KRW 33.2 billion."
+   "ko": "2025사업연도 감사보고서가 감사범위 제한에 따른 의견거절을 받아 상장폐지 사유가 발생했고, 2026년 4월 3일부터 주권매매거래가 정지된 상태다.",
+   "en": "The FY2025 audit report received a disclaimer of opinion due to a scope limitation, triggering a delisting cause, and common shares have been suspended from trading since April 3, 2026."
   },
   {
-   "ko": "부채비율 2024년 18.9%에서 2025년 101%로 급등, 자기자본 약 203억원으로 전년(472억원) 대비 절반 이하로 감소",
-   "en": "The debt-to-equity ratio surged from 18.9% in 2024 to 101% in 2025, and total equity halved to approximately KRW 20.3 billion from KRW 47.2 billion a year earlier."
+   "ko": "제3자배정 유상증자 납입 완료에 따라 최대주주가 프라임코어(주)로 변경됐다.",
+   "en": "Following completion of a third-party paid-in capital increase, the largest shareholder changed to Primecore Co., Ltd."
   },
   {
-   "ko": "ICT 유통·AI 뇌진단기기(뉴로하모니)·K-Food 수출 등 신규 성장 동력 모색 중이나, 수익 기여는 아직 초기 단계",
-   "en": "New growth vectors—including ICT distribution, the NeuroHarmony AI brain diagnostic device, and K-Food exports to Japan—are being pursued, but their revenue contribution remains at an early stage."
+   "ko": "거래정지 상태였던 BF랩스와의 안양 부동산 거래를 둘러싼 거래 투명성 우려가 언론을 통해 제기됐다.",
+   "en": "Media reports raised transparency concerns over a real-estate deal with BF Labs, itself a trading-halted company."
   }
  ],
  "business": {
-  "ko": "디에이치엑스컴퍼니(구 SU홀딩스)는 1979년 설립 후 1997년 코스닥에 상장하였으며, 2024년 12월 현재의 상호로 변경했다. 주력 ICT사업부는 F&B·화장품·전자담배·지역특산물 유통·수출과 그래픽카드·DRAM·CPU·대용량 스토리지·디스플레이 등 IT 핵심 부품 구매·유통으로 이루어진다. 바이오헬스 부문에서는 의료기기 헤마퓨어, AI 기반 뇌 디지털 진단기기 뉴로하모니, 의약품 아피톡신, 피부 마이크로바이옴 기반 바이오코스메틱을 연구개발·제조·판매한다. 2024년 11월에는 일본 샤인트레이딩과 전략적 파트너십을 체결해 냉동김밥·떡볶이·김 시리즈 등 K-Food의 대일 수출에 첫 발판을 마련했다. 연결 범위에는 자전거 제조·유통 사업도 포함되며, 5개 비상장 종속회사가 연결 대상이다. 매출 구성 면에서는 ICT 유통이 주된 비중을 차지하는 것으로 파악되나 부문별 세부 비중은 별도 IR 자료에서 확인이 필요하다. 경쟁 구도는 ICT 유통 분야에서 다수 중소형 유통사와 치열하며, 바이오헬스 분야는 임상·허가 단계에 따라 진입 장벽이 높다. 복합 사업 구조로 인해 사업 간 시너지 입증이 지속적인 경영 과제로 남아 있다.",
-  "en": "DHX Company (formerly SU-Holdings) was founded in 1979, listed on KOSDAQ in 1997, and adopted its current name in December 2024. Its core ICT division covers F&B, cosmetics, electronic-cigarette, and regional-specialty distribution and export, as well as direct sourcing and distribution of IT components—graphics cards, DRAM, CPUs, high-capacity storage, and displays. The biohealth segment develops, manufactures, and distributes the HaemaPure medical device, the NeuroHarmony AI-based digital brain diagnostic device, the Apitoxin pharmaceutical, and a skin-microbiome biocosmetic line. In November 2024, the company signed a strategic partnership with Japan's Shine Trading to launch K-Food exports—frozen gimbap, tteokbokki, and seaweed series—into the Japanese market. A bicycle manufacturing and distribution unit is also consolidated within the group, along with five unlisted subsidiaries. ICT distribution is understood to be the dominant revenue segment, though a precise breakdown by division would require review of separate IR disclosures. The company faces intense competition from numerous small-to-mid-size distributors in ICT, while high regulatory and clinical barriers characterize the biohealth segment. Demonstrating synergies across its diverse business lines remains a persistent strategic challenge for management."
+  "ko": "디에이치엑스컴퍼니는 ICT 기기 유통, 자전거 제조, 바이오 사업을 함께 영위하는 코스닥 상장 유통·소비재 기업이다. ICT유통, 자전거 제조, 바이오 사업을 영위하는 것으로 정기보고서에 기재돼 있다. ICT유통 부문에서는 컴퓨터 주변기기를 매입해 유통하는데, 그래픽카드, D램, CPU, 대용량 스토리지, 다목적 디스플레이 등의 IT 부품을 구매·유통하며 화장품 수입·유통, 식음료(F&B) 유통 사업도 함께 영위한다. 바이오 부문에서는 바이오메디컬 사업을 영위하며 난치성 피부질환 치료용 마이크로바이옴 제품, 'REJURUB', AI 기반 디지털 뇌진단기기 등을 보유한 것으로 소개된다. 최근에는 마이크로바이옴 분석 전문기업 이지놈과 함께 반려동물 헬스케어 공동사업을 추진하며 신사업 다각화를 모색했다. 해당 서비스는 반려견의 장내 미생물 분석을 통해 소화기·신장·피부질환 등 8대 주요 질환 위험도를 분석해 건강관리 리포트를 제공하는 방식이다. 회사는 5개의 비상장 연결대상 종속회사를 보유하고 있다. 유통업 특성상 부품 매입 단가는 글로벌 반도체·부품 시장 가격에 좌우되며, 다수의 중소 유통업체와 경쟁하는 구조라 마진이 얇은 편이다. 바이오·헬스케어 신사업은 아직 초기 단계로, 매출 기여도나 상업화 일정이 구체적으로 공시되지 않은 상태다.",
+  "en": "DHX Company is a KOSDAQ-listed distribution and consumer-goods firm operating IT device distribution, bicycle manufacturing, and bio businesses side by side. Its periodic filings describe the company as engaged in ICT distribution, bicycle manufacturing, and bio businesses. In the ICT distribution segment, the company purchases and resells computer peripherals; it purchases and distributes IT components including graphics cards, DRAM, CPUs, high-capacity storage, and multi-purpose displays, and also runs cosmetics import/distribution and food-and-beverage distribution. In the bio segment, the company is described as engaging in a biomedical business offering a microbiome product for intractable skin diseases, REJURUB, and an AI-based digital brain diagnostic device. More recently, it partnered with microbiome analytics firm EzGnome to pursue a joint pet-healthcare business as part of diversification. The service analyzes a dog's gut microbiome to assess risk across eight major health categories, including digestive, kidney, and skin conditions, and delivers a health-management report. The company holds five unlisted consolidated subsidiaries. Given the nature of the distribution business, component purchase costs are driven by global semiconductor and parts pricing, and the company competes against numerous small and mid-sized wholesalers in a structurally thin-margin market. The bio/healthcare initiatives remain at an early stage, and neither their revenue contribution nor commercialization timeline has been disclosed in detail."
  },
  "earnings": {
-  "ko": "디에이치엑스컴퍼니는 2022년부터 2025년까지 4개 사업연도 연속으로 영업손실과 당기순손실을 기록했다. 2025년 연간 매출은 약 145억원으로 전년(약 95억원) 대비 52% 성장했으나, 영업손실은 약 78억원(영업손실률 –54.0%)으로 원가 구조 개선이 수익성 회복으로 이어지지 못했다. 지배주주 귀속 순손실은 약 332억원에 달해 당기 자기자본(지배, 약 223억원)을 크게 초과하는 규모다. 분기별로 살펴보면 2025년 1~3분기에는 분기당 영업손실이 약 15~20억원, 순손실(지배)이 약 19~61억원 범위에 있었으나, 4분기에 영업손실 약 25억원과 지배 순손실 약 223억원이 집중되면서 대규모 자산 평가손 또는 일회성 손상차손이 발생한 것으로 해석된다. 2026년 1분기 매출은 약 32억원, 영업손실 약 19억원으로 전년 동기 대비 매출이 소폭 감소했으나 지배 순손실 약 19억원은 2025년 1분기(약 27억원) 대비 다소 완화됐다. 연간 영업현금흐름은 2022년 –113억원, 2023년 –75억원, 2024년 –57억원, 2025년 –89억원으로 4년 내내 마이너스를 기록해 영업 자체로는 자금을 조달하지 못하는 구조가 지속되고 있다. 총자기자본은 2022년 약 599억원에서 2025년 약 203억원으로 급감했으며, 부채비율은 2024년 18.9%에서 2025년 101.0%로 급등해 재무 레버리지가 빠르게 확대되고 있다.",
-  "en": "DHX Company recorded operating and net losses in each of the four fiscal years from 2022 to 2025. FY2025 revenue grew 52% year-on-year to approximately KRW 14.5 billion from KRW 9.5 billion in 2024, yet the operating loss came in at roughly KRW 7.8 billion (operating margin –54%), reflecting limited improvement in the cost structure. The controlling-interest net loss for 2025 was approximately KRW 33.2 billion—far exceeding the controlling-interest equity of KRW 22.3 billion at year-end. On a quarterly basis, operating losses ran at roughly KRW 1.5–2.0 billion through the first three quarters of 2025, but Q4 2025 alone delivered an operating loss of approximately KRW 2.5 billion and a controlling-interest net loss of approximately KRW 22.3 billion, consistent with a concentration of large asset write-downs or one-off impairment charges in the fourth quarter. In Q1 2026, revenue was approximately KRW 3.2 billion with an operating loss of roughly KRW 1.9 billion; the controlling-interest net loss of approximately KRW 1.9 billion represented a modest improvement from Q1 2025's loss of approximately KRW 2.7 billion. Operating cash flow remained negative in all four years—approximately –KRW 11.3 billion in 2022, –KRW 7.5 billion in 2023, –KRW 5.7 billion in 2024, and –KRW 8.9 billion in 2025—confirming a structural inability to generate cash from operations. Total equity shrank from approximately KRW 59.9 billion in 2022 to KRW 20.3 billion in 2025, while the debt ratio surged from 18.9% in 2024 to 101.0% in 2025, signaling rapidly increasing financial leverage."
+  "ko": "2025년 연결 매출액은 145억원으로 전년(95억원) 대비 약 52% 증가했으나, 영업손실은 78억원으로 오히려 확대되며 영업이익률은 -54.0%를 기록했다. 순손실은 지배주주 기준 332억원에 달해 매출 규모의 두 배 이상에 이르는 손실을 냈고, 이는 2022~2024년의 연속 적자(각각 지배주주 순손실 -145억원, -317억원, -176억원)에 이어 4년 연속 대규모 손실이 이어진 결과다. 특히 2025년 4분기 지배주주 순손실은 225억원으로 같은 분기 영업손실 25억원을 크게 상회했는데, 이는 영업외 손익에서 규모가 큰 일회성 요인이 반영됐을 가능성을 시사한다. 반면 2026년 들어서는 1분기 영업손실 19억원, 2분기 영업손실 11억원으로 두 분기 연속 손실이 줄어드는 흐름을 보였고, 매출도 1분기 32억원에서 2분기 34억원으로 소폭 늘었다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 누적 매출은 약 137억원, 지배주주 순손실은 약 281억원으로, 매출을 크게 웃도는 손실 구조가 여전히 지속되고 있다. 영업활동현금흐름은 2022~2025년 매년 마이너스를 기록했으며, 2025년에는 -89억원으로 전년(-57억원) 대비 유출 규모가 커졌다. 지배주주 자본총계는 2022년 596억원에서 2025년 223억원으로 4년 만에 절반 이하로 줄었고, 부채비율은 2024년 18.9%에서 2025년 101.0%로 급등해 재무구조가 단기간에 크게 악화됐다.",
+  "en": "2025 consolidated revenue rose about 52% year over year to KRW14.5 billion from KRW9.5 billion, but the operating loss widened to KRW7.83 billion, producing an operating margin of -54.0%. Net loss attributable to owners reached KRW33.2 billion, more than double the revenue base, extending a fourth straight year of large losses following owner net losses of KRW14.5 billion, KRW31.7 billion, and KRW17.6 billion in 2022, 2023, and 2024 respectively. Notably, the 4Q25 owner net loss of KRW22.5 billion far exceeded that quarter's operating loss of KRW2.5 billion, suggesting a sizable non-operating, likely one-off, item was recognized. In 2026, however, the operating loss narrowed for two consecutive quarters to KRW1.9 billion in 1Q and KRW1.1 billion in 2Q, while revenue edged up from KRW3.2 billion to KRW3.4 billion over the same period. Over the trailing four quarters (3Q25-2Q26), cumulative revenue was about KRW13.7 billion against an owner net loss of roughly KRW28.1 billion, indicating losses still substantially exceed revenue. Operating cash flow was negative every year from 2022 through 2025, and the outflow widened to KRW8.9 billion in 2025 from KRW5.7 billion in 2024. Owner equity fell by more than half in four years, from KRW59.6 billion in 2022 to KRW22.3 billion in 2025, while the debt ratio jumped from 18.9% in 2024 to 101.0% in 2025, marking a rapid deterioration in the balance sheet."
  },
  "industry": {
-  "ko": "디에이치엑스컴퍼니가 영위하는 ICT 부품 유통 시장은 PC·서버 수요와 글로벌 반도체 재고 사이클의 영향을 직접적으로 받는다. 2024~2025년 AI 서버 투자 확대와 고성능 그래픽카드 수요 증가는 ICT 부품 유통에 우호적 환경을 제공했으나, 중소형 유통사는 가격 경쟁 심화와 재고 리스크에 취약한 구조다. K-Food 수출은 글로벌 한류 확산과 함께 성장세가 이어지고 있으며, 일본은 한국 식품 최대 수출 시장 중 하나로 냉동간편식·조미김 등의 수요가 꾸준히 증가하고 있다. AI 기반 디지털 의료기기 시장은 전 세계적으로 두 자릿수 성장률이 기대되는 고성장 섹터로, 고령화 사회에서 뇌질환 진단 디바이스에 대한 수요가 증가 추세에 있다. 다만, 바이오헬스 분야는 규제 인허가 기간이 길고 초기 연구개발 비용이 커 단기 흑자 전환이 구조적으로 어렵다. 복합 사업 구조를 가진 중소형사는 자본 배분 집중도가 낮아 개별 사업의 경쟁력이 분산될 수 있다는 업종 내 공통 약점도 존재한다. 동사의 ICT 유통·바이오·K-Food 사업이 각각 시장 성장의 수혜를 얼마나 받을 수 있는지는 실행력에 달려 있다.",
-  "en": "The ICT component distribution market in which DHX Company operates is directly exposed to PC and server demand cycles and global semiconductor inventory dynamics. Expanding AI server investment and growing high-performance graphics card demand in 2024–2025 provided a broadly favorable backdrop for ICT component distributors, though small-cap distributors remain vulnerable to intensified price competition and inventory risk. K-Food exports continue to grow on the back of the global Hallyu wave, with Japan emerging as one of Korea's largest food export markets, driven by sustained demand for frozen ready-to-eat items and seasoned seaweed. The AI-based digital medical device market globally is expected to grow at double-digit rates, and demand for brain-disease diagnostic devices is rising in aging societies. However, biohealth companies face structural barriers to near-term profitability due to long regulatory approval timelines and high upfront R&D costs. Small-cap companies operating across multiple unrelated verticals are also commonly affected by diluted competitive focus stemming from fragmented capital allocation. How much each of DHX Company's ICT distribution, biohealth, and K-Food export operations can capitalize on their respective market tailwinds ultimately depends on execution capability."
+  "ko": "ICT 기기 유통업은 그래픽카드·D램 등 부품 가격이 글로벌 반도체 업황과 환율에 민감하게 움직이는 특성이 있어, AI 서버·PC 수요에 따른 가격 변동이 매입 단가와 마진에 직접 영향을 준다. 국내 IT 유통 시장에는 다수의 중소형 도매업체가 존재해 경쟁이 치열하고 진입장벽이 낮아 구조적으로 이윤율이 낮은 편이다. 자전거 제조 부문은 성숙 산업으로 성장성이 제한적이며 완성차 업체·저가 수입제품과의 가격 경쟁에 노출돼 있다. 마이크로바이옴 기반 헬스케어·바이오 산업은 글로벌적으로 관심이 커지는 분야지만, 의약품으로 상용화되려면 임상·허가 절차가 길고 국내 관련 제도도 정비되는 단계에 있다. 반려동물 헬스케어처럼 비의료 영역의 마이크로바이옴 진단·관리 서비스는 상대적으로 규제 부담이 낮아 초기 매출화가 더 용이할 수 있으나 아직 시장 규모가 검증되지 않았다. 한편 2026년 7월 1일부터 코스닥 상장유지를 위한 시가총액 기준이 150억원에서 200억원으로 상향됐고, 코스닥 상장사는 부적정·의견거절·한정 의견을 받을 경우 즉시 상장폐지 사유에 해당하는 등 한계기업 퇴출 압력이 커지는 국면에 있다. 이런 환경에서 감사의견 거절을 받은 디에이치엑스컴퍼니는 다른 소형 유통·바이오 기업들과 마찬가지로 상장 유지 자체가 최우선 과제가 된 상황이다.",
+  "en": "The ICT distribution business is exposed to global semiconductor cycles and currency swings, since prices of components such as graphics cards and DRAM move with these factors, directly affecting purchase costs and margins as AI server and PC demand fluctuates. The domestic IT distribution market has numerous small and mid-sized wholesalers, resulting in intense competition, low entry barriers, and structurally thin profitability. The bicycle manufacturing segment is a mature industry with limited growth and faces price competition from finished-bike makers and low-cost imports. The microbiome-based healthcare and bio industry is drawing growing global interest, but commercialization as a drug requires lengthy clinical and approval processes, and related domestic regulations are still being established. Non-medical microbiome diagnostic and management services, such as pet healthcare, carry a lighter regulatory burden and may monetize faster, though the market size remains unproven. Meanwhile, the market-cap threshold for maintaining a KOSDAQ listing was raised from KRW15 billion to KRW20 billion effective July 1, 2026, and a KOSDAQ-listed company immediately triggers a delisting cause upon receiving an adverse, disclaimer, or qualified audit opinion, reflecting intensifying pressure to remove marginal companies. Against this backdrop, DHX Company, having received a disclaimer of audit opinion, faces the same overriding priority as other small-cap distribution and bio peers: simply preserving its listing."
  },
  "outlook": {
-  "ko": "단기 전망의 최우선 변수는 2025사업연도 감사의견 거절에 따른 매매거래 정지의 해제 여부다. 한국거래소는 상장적격성 실질심사를 통해 개선 기간 부여 또는 상장폐지를 결정하게 되며, 심사 결과가 도출되기 전까지 시장 참여자의 불확실성이 매우 높다. 2026년 4월 최대주주로 취임한 프라임코어는 제3자 배정 유상증자(약 40억원)와 150억원 규모의 CB 발행으로 운영자금을 주입했으나, 조달 자금이 지속적인 영업 적자를 충당하기에 충분한지는 2026년 반기 실적에서 확인이 필요하다. BF랩스로부터 약 145억원에 양수한 경기도 안양시 소재 부동산의 임대수익 현실화가 중단기 현금흐름 개선에 기여할 수 있는지 여부도 주요 관찰 포인트다. 2024년 말 계약된 일본 K-Food 수출 채널은 아직 초기 단계이며, 샤인트레이딩과의 협력 성과가 2026년 하반기~2027년에 가시화될지 주목된다. 뉴로하모니 AI 뇌진단기기의 상용화 일정 및 의료기기 인허가 진행 상황은 바이오 사업의 중장기 가치를 판단하는 중요 지표다. 복수의 미상환 CB(32·33·34회차)가 주식으로 전환될 경우 지속적인 희석 압력이 이어질 수 있어 자본 구조 변화에 대한 모니터링이 요구된다.",
-  "en": "The pivotal near-term variable is whether the trading suspension triggered by the FY2025 audit disclaimer can be lifted. The Korea Exchange will determine in its listing-eligibility review whether to grant a remediation period or initiate delisting proceedings; uncertainty for market participants remains very high until a ruling is issued. PrimeCore, which assumed the controlling shareholder role in April 2026, injected approximately KRW 4 billion via a third-party allotment and issued a KRW 15 billion convertible bond, but whether these funds are sufficient to offset ongoing operational cash consumption will only become clear from H1 2026 results. The degree to which rental income materializes from the Anyang property acquired from BF Labs for approximately KRW 14.5 billion is another key variable for near-to-medium-term cash flow improvement. The K-Food Japan export channel established through Shine Trading in late 2024 remains at an early stage; the extent to which commercial results materialize in H2 2026 or 2027 is yet to be determined. Progress on the commercialization and regulatory approval of the NeuroHarmony AI brain diagnostic device will be a critical indicator of medium-term value in the biohealth division. Multiple outstanding convertible bond tranches (32nd, 33rd, and 34th issuances) represent a persistent source of potential dilution upon conversion, warranting close monitoring of the capital structure."
+  "ko": "2026년 4월 3일 감사의견 거절에 따른 상장폐지 사유가 발생해 주권매매거래가 정지된 이후, 한국거래소 코스닥시장본부는 2026년 4월 20일 회사에 개선기간을 부여한다고 발표했다. 이에 따라 정지 기간은 개선기간 종료 후 상장폐지 여부 결정일까지로 연장됐으며, 개선기간 종료 시점은 차기 사업보고서 법정제출기한의 다음날부터 10일이 경과하는 날로 정해졌다. 이 과정에서 제3자배정 유상증자 납입 완료에 따라 최대주주가 프라임코어(주)로 변경됐다. 아울러 2026년 3월 10일 제34회차 무기명식 이권부 무보증 사모 전환사채 권면총액 150억원 발행을 결정했다. 다만 이 과정에서 거래정지 상태인 BF랩스로부터 안양시 소재 부동산을 총 145억원에 양수하는 거래를 둘러싸고 디에이치엑스컴퍼니가 사실상 부동산 매각의 통로로 활용되는 것 아니냐는 지적이 언론에서 제기됐다. 사업 측면에서는 마이크로바이옴 분석기업 이지놈과 손잡고 반려동물 헬스케어 서비스를 출시하는 등 기존 ICT유통 채널을 활용한 신사업 확장을 시도하고 있다. 새 최대주주 체제 아래 경영 정상화 계획과 재무구조 개선 성과가 향후 개선기간 심사의 핵심 변수가 될 것으로 보인다.",
+  "en": "A delisting cause arose on April 3, 2026 following a disclaimer of audit opinion, and common share trading was suspended; subsequently, the KOSDAQ Market Division of the Korea Exchange announced on April 20, 2026 that it would grant the company an improvement period. As a result, the suspension was extended to run until the delisting decision following the end of the improvement period, with the improvement period set to end 10 days after the statutory filing deadline of the next annual business report. During this process, the largest shareholder changed to Primecore Co., Ltd. following completion of a third-party paid-in capital increase. In addition, on March 10, 2026 the company decided to issue KRW15 billion of new 34th-series unregistered, interest-bearing, unsecured private convertible bonds. However, a related transaction — acquiring real estate in Anyang from BF Labs, itself under trading suspension, for a total of KRW14.5 billion — drew media scrutiny, with reports questioning whether DHX Company was effectively being used as a vehicle to facilitate BF Labs' property sale. On the business side, the company is attempting to expand beyond its legacy ICT distribution channel, including launching a pet-healthcare service in partnership with microbiome analytics firm EzGnome. Under the new controlling shareholder, the execution of a management normalization plan and progress on balance-sheet repair are likely to be the key variables in the upcoming improvement-period review."
  },
  "valuation_comment": {
-  "ko": "회사는 4년 연속 순손실을 기록하고 있어 이익 기반의 밸류에이션 지표는 현재 의미를 갖기 어려우며, 주당순이익(EPS)은 손실 상태다. 주가는 주당순자산(BPS) 대비 할인 구간에 위치해 있으나, 이는 지속적인 적자로 순자산 자체가 빠르게 감소하는 추세를 반영하고 있으므로 순자산의 '질'과 잔여 자산의 실현 가능성을 병행 검토해야 한다. 2025년 4분기에 집중된 대규모 일회성 손실로 인해 연간 기준 손실 규모가 크게 부풀려진 측면이 있으며, 이는 지속 손실분과 일회성 손실분의 분리 없이는 정상 수익력 판단이 어려움을 의미한다. 배당은 현재 지급되지 않으며, 흑자 전환 없이는 배당 재개가 어려운 구조다. 미상환 CB의 전환 가능 주식 수를 감안하면 실질 희석 규모가 현재 발행 주식 수를 상당 부분 초과할 수 있어 주당 지표 산정 시 중요한 변수로 작용한다.",
-  "en": "With four consecutive years of net losses, earnings-based valuation metrics are not meaningful, and the earnings-per-share figure reflects a loss position. The share price sits at a discount to book value per share (BPS), but this must be weighed alongside the fact that book value itself is eroding rapidly from continued losses; the quality and realizability of remaining net assets must be assessed alongside the apparent discount. Large one-off losses concentrated in Q4 2025 have materially inflated the annual loss figure, making it difficult to gauge normalized earnings power without separating recurring from non-recurring loss components. No dividend is currently paid, and resumption would require a return to profitability. The number of shares that could arise from converting outstanding convertible bonds is substantial relative to current shares outstanding, representing a significant per-share dilution variable in any valuation exercise."
+  "ko": "이 종목은 최근 감사의견 거절에 따른 거래정지 이력이 있어, 통상적인 시장 밸류에이션 지표를 안정적으로 적용하기 어려운 구간에 있다는 점을 먼저 고려할 필요가 있다. 순이익이 다년간 적자를 지속해 주가수익비율(PER) 산출 자체가 의미를 갖기 어려운 구조이며, 이는 실적 개선이 뚜렷하게 확인되기 전까지 이어질 가능성이 높다. 주가순자산비율(PBR) 측면에서는 장부상 순자산가치 대비 할인된 수준에서 주가가 형성되는 구간에 해당하는데, 이는 반복적 손실로 자기자본이 빠르게 줄어든 점과 상장폐지 불확실성이 함께 반영된 결과로 해석될 수 있다. 배당 측면에서는 최근 결산기까지 현금배당을 지급한 이력이 없어, 배당 매력을 근거로 한 접근은 성립하기 어렵다. 종합하면 이 종목의 밸류에이션은 재무 비율 자체보다 상장 적격성 심사 결과와 자본구조 개편의 진행 상황에 더 크게 좌우되는 국면에 있다고 볼 수 있다.",
+  "en": "It is worth first noting that this stock's recent history of trading suspension following a disclaimer of audit opinion makes it difficult to apply conventional market valuation metrics with confidence. Because net losses have persisted for multiple years, calculating a price-to-earnings ratio is largely uninformative, and that is likely to remain the case until a clear earnings turnaround is confirmed. On a price-to-book basis, the shares trade at a discount to recorded net asset value, a pattern that can be read as reflecting both the rapid erosion of equity from repeated losses and the overhang of delisting uncertainty. On the dividend front, the company has not paid a cash dividend through its most recent fiscal year-end, so an income-based rationale does not apply. Taken together, this stock's valuation appears to be driven less by financial ratios themselves and more by the outcome of the listing-eligibility review and the progress of its capital-structure overhaul."
  },
  "bull": [
   {
    "title": {
-    "ko": "매출 성장세 및 영업손실률 개선 방향",
-    "en": "Revenue Growth and Narrowing Operating Loss Rate"
+    "ko": "매출 성장과 손실 축소 조짐",
+    "en": "Signs of Revenue Growth and Narrowing Losses"
    },
    "body": {
-    "ko": "2025년 연간 매출은 약 145억원으로 전년 대비 52% 성장하며 의미 있는 외형 확대를 이뤘다. 영업손실률도 2023년 –115.6%에서 2025년 –54.0%로 지속적으로 개선되고 있어 손익분기점을 향한 방향성은 유지되고 있다. ICT 유통 확대와 K-Food 수출 채널 구축이 추가적인 매출 기반 확장에 기여할 수 있는 구조로 발전하고 있다.",
-    "en": "FY2025 revenue grew 52% year-on-year to approximately KRW 14.5 billion, representing meaningful top-line expansion. The operating margin has also steadily improved from –115.6% in 2023 to –54.0% in 2025, maintaining a directional trend toward breakeven. Growth in ICT distribution and the establishment of a K-Food Japan export channel are building a broader revenue base that could sustain this trajectory."
+    "ko": "2025년 매출액은 145억원으로 전년 대비 약 52% 늘었고, 2026년 1분기와 2분기에는 영업손실이 각각 19억원, 11억원으로 두 분기 연속 축소됐다. 매출도 1분기 32억원에서 2분기 34억원으로 소폭 늘어나며 저점을 통과했을 가능성을 시사한다. 다만 이러한 개선이 지속될지는 아직 몇 개 분기의 데이터로 확인해야 하는 초기 단계다.",
+    "en": "2025 revenue rose about 52% year over year to KRW14.5 billion, and the operating loss narrowed for two straight quarters in 2026, to KRW1.9 billion in 1Q and KRW1.1 billion in 2Q. Revenue also edged up from KRW3.2 billion in 1Q to KRW3.4 billion in 2Q, hinting the business may have passed a trough. Whether this improvement persists still needs confirmation over additional quarters."
    }
   },
   {
    "title": {
-    "ko": "최대주주 교체에 따른 경영 안정화 가능성",
-    "en": "Potential Stabilization Under New Controlling Shareholder"
+    "ko": "신규 대주주의 자본 유입",
+    "en": "Fresh Capital From the New Controlling Shareholder"
    },
    "body": {
-    "ko": "2026년 4월 도매·소매업을 영위하는 프라임코어가 지분 29.7%를 확보하며 최대주주로 취임했다. 프라임코어는 2025년 결산 기준 흑자 법인으로, 사업 인프라를 보유한 전략적 투자자로서 영업 네트워크를 활용한 시너지 창출 가능성이 있다. 운영자금 주입과 함께 경영 방향 재정립이 이루어진다면, 단기적으로 현금흐름 소진 속도가 완화될 여지가 있다.",
-    "en": "PrimeCore, a domestic wholesale and retail company, assumed the controlling shareholder role with a 29.7% stake in April 2026. As a profitable entity in its most recent fiscal year, PrimeCore brings potential business network synergies as a strategic investor. If the injection of working capital is accompanied by a meaningful reset of operational strategy, the pace of cash burn could moderate in the near term."
+    "ko": "제3자배정 유상증자 완료로 최대주주가 프라임코어(주)로 바뀌었고, 같은 주체를 대상으로 150억원 규모의 전환사채가 발행돼 운영자금이 추가로 확보됐다. 자본 확충은 자본잠식 위험을 일부 완화하고 개선기간 중 경영 정상화 작업에 필요한 유동성을 제공할 수 있다. 다만 이 자금이 실제 사업 정상화로 이어질지는 향후 집행 내역을 통해 확인이 필요하다.",
+    "en": "Completion of a third-party paid-in capital increase brought in Primecore Co., Ltd. as the new controlling shareholder, and a KRW15 billion convertible bond issued to the same party added further operating capital. This capital injection may partially ease equity-erosion risk and provide liquidity needed for management normalization during the improvement period. Whether the funds actually translate into business normalization will need to be verified through future disclosure of their use."
    }
   },
   {
    "title": {
-    "ko": "바이오헬스·K-Food 파이프라인의 중장기 잠재력",
-    "en": "Medium-to-Long-Term Potential in Biohealth and K-Food Pipeline"
+    "ko": "신사업 다각화 시도",
+    "en": "Attempted Diversification Into New Businesses"
    },
    "body": {
-    "ko": "뉴로하모니는 AI 기반 뇌 디지털 진단기기로, 고령화 사회에서 수요가 증가하는 뇌질환 진단 시장에 속한다. 피부 마이크로바이옴 바이오코스메틱은 최근 프리미엄 스킨케어 시장과 접점이 있으며, K-Food 수출은 지속 성장하는 일본 시장을 겨냥하고 있다. 이들 신사업이 인허가·상업화 단계를 통과할 경우 현재의 유통 중심 수익 구조를 다변화하는 의미 있는 전환점이 될 수 있다.",
-    "en": "NeuroHarmony is an AI-powered digital brain diagnostic device positioned in the growing brain-disease diagnostic market driven by aging demographics. The skin-microbiome biocosmetic line intersects with the rapidly growing premium skincare segment, and K-Food exports target Japan's steadily expanding appetite for Korean food products. Should these ventures successfully navigate regulatory and commercialization milestones, they could represent a meaningful pivot away from the current distribution-centric revenue structure."
+    "ko": "마이크로바이옴 분석기업 이지놈과 협력한 반려동물 헬스케어 서비스는 기존 ICT유통 온라인몰 채널을 활용해 신사업을 접목한 사례다. 비의료 영역인 만큼 상대적으로 규제 부담이 낮아 상용화 속도를 낼 여지가 있다. 다만 아직 매출 기여도가 공시되지 않아 사업 성과는 확인 대기 상태다.",
+    "en": "The pet-healthcare service developed with microbiome analytics firm EzGnome leverages the company's existing ICT distribution online-mall channel to graft on a new business line. Being a non-medical application, it carries a comparatively lighter regulatory burden that could allow faster commercialization. Its revenue contribution, however, has not yet been disclosed and remains to be confirmed."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "감사의견 거절·거래 정지·상장폐지 리스크",
-    "en": "Audit Disclaimer, Trading Halt, and Delisting Risk"
+    "ko": "상장폐지 리스크 상존",
+    "en": "Persistent Delisting Risk"
    },
    "body": {
-    "ko": "2025사업연도 감사의견 거절로 2026년 4월 3일부터 주식 매매거래가 정지됐다. 한국거래소 상장적격성 실질심사 결과에 따라 개선 기간 부여 또는 상장폐지가 결정되며, 심사 결과가 도출되기 전까지 투자자는 보유 주식을 유동화할 수 없다. 이는 현 시점 가장 핵심적인 리스크로, 거래재개 여부 자체가 불확실한 상태다.",
-    "en": "An audit disclaimer on FY2025 accounts triggered a trading suspension from April 3, 2026. The KRX listing-eligibility review will determine whether a remediation period is granted or delisting proceedings commence; until a ruling is issued, investors cannot liquidate their holdings. This is the single most critical near-term risk, with even the resumption of trading itself remaining uncertain."
+    "ko": "2025사업연도 감사보고서가 감사범위 제한으로 의견거절을 받아 상장폐지 사유가 발생했고, 2026년 4월 3일부터 주권매매거래가 정지된 상태다. 거래소가 개선기간을 부여했지만 종료 후 상장폐지 여부가 최종 결정되는 구조로, 결과가 불확실하다. 과거 유사 사례에서 의견거절을 받은 기업 중 연간 감사에서 적정 의견으로 전환된 비율이 낮았다는 점도 부담 요인이다.",
+    "en": "The FY2025 audit report received a disclaimer of opinion due to a scope limitation, triggering a delisting cause, and common shares have been suspended from trading since April 3, 2026. Although the exchange granted an improvement period, the final delisting decision will only be made afterward, leaving the outcome uncertain. It is also notable that, in past cases, only a small share of companies that received a disclaimer of opinion went on to secure a clean audit opinion in the following year."
    }
   },
   {
    "title": {
-    "ko": "4년 연속 적자와 급격한 자본 잠식 진행",
-    "en": "Four Consecutive Loss Years and Accelerating Equity Erosion"
+    "ko": "자본 잠식 속도",
+    "en": "Pace of Equity Erosion"
    },
    "body": {
-    "ko": "2022~2025년 4개 사업연도 동안 영업손실과 당기순손실이 지속됐으며, 영업현금흐름도 전 기간 마이너스였다. 총자기자본은 2022년 약 599억원에서 2025년 약 203억원으로 3분의 1 수준으로 축소됐고, 부채비율은 101%로 급등했다. 적자 구조가 해소되지 않는 한 외부 자금 조달을 통해서만 운영이 가능한 상황이 지속되는 구조적 취약성이 있다.",
-    "en": "Operating and net losses were recorded in every fiscal year from 2022 to 2025, with operating cash flow negative throughout the entire period. Total equity shrank from approximately KRW 59.9 billion in 2022 to KRW 20.3 billion in 2025—a reduction to roughly one-third—while the debt ratio surged to 101%. Unless the loss-generating structure is resolved, the company will remain structurally dependent on external capital raises to fund ongoing operations."
+    "ko": "지배주주 자본총계는 2022년 596억원에서 2025년 223억원으로 4년 만에 절반 이하로 줄었고, 부채비율은 2024년 18.9%에서 2025년 101.0%로 급등했다. 영업활동현금흐름은 2022년부터 2025년까지 매년 마이너스를 기록해 외부 자금조달 의존도가 높은 구조다. 전환사채 전환 시 추가 지분 희석 가능성도 있어 재무 완충력 약화가 지속될 소지가 있다.",
+    "en": "Owner equity fell by more than half in four years, from KRW59.6 billion in 2022 to KRW22.3 billion in 2025, while the debt ratio surged from 18.9% in 2024 to 101.0% in 2025. Operating cash flow was negative every year from 2022 through 2025, indicating heavy reliance on external financing. Potential conversion of outstanding convertible bonds could add further equity dilution, suggesting the erosion of the financial buffer may continue."
    }
   },
   {
    "title": {
-    "ko": "복잡한 자금 조달 구조와 잠재적 대규모 희석",
-    "en": "Complex Financing Structure and Risk of Substantial Dilution"
+    "ko": "지배구조 불투명성 우려",
+    "en": "Governance Transparency Concerns"
    },
    "body": {
-    "ko": "소액 공모, 제3자 배정 유상증자, 복수의 전환사채(32·33·34회차 등) 발행이 반복되고 있어 기존 주주의 지분 희석이 지속적으로 진행되고 있다. 미상환 CB가 주식으로 전환될 경우 발행될 수 있는 주식 수가 현재 발행 주식 수에 필적할 수 있어 주당 가치에 미치는 영향이 크다. BF랩스와의 부동산 거래 과정에서 지배구조 우려가 언론에서 제기된 바 있어 투명성 측면에서의 추가 검토가 요구된다.",
-    "en": "Repeated small-lot public offerings, third-party allotments, and multiple convertible bond issuances (32nd, 33rd, and 34th tranches) have produced ongoing dilution for existing shareholders. The number of shares potentially arising from CB conversions is comparable in magnitude to the current share count, implying material per-share dilution if conversions proceed. Governance concerns related to the BF Labs property transaction have been raised in media reports, warranting further scrutiny on transparency."
+    "ko": "회사는 짧은 기간에 유상증자와 전환사채 발행, 최대주주 변경을 반복해왔다. 거래정지 상태인 BF랩스로부터 안양 부동산을 양수하는 거래를 둘러싸고 자금조달 지연과 거래상대방 성격에 대한 의문이 언론을 통해 제기됐다. 새 대주주 체제의 경영 투명성과 소액주주 보호 방안이 향후 검증이 필요한 부분이다.",
+    "en": "The company has repeated cycles of capital increases, convertible bond issuances, and controlling-shareholder changes over a short period. A property acquisition from BF Labs, itself under trading suspension, in Anyang drew media questions over financing delays and the nature of the counterparty. Governance transparency under the new controlling shareholder and protections for minority shareholders remain areas that require further verification."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "상장폐지 및 거래재개 불확실성",
-    "en": "Delisting and Trading Resumption Uncertainty"
+    "ko": "상장폐지·거래정지 리스크",
+    "en": "Delisting and Trading Suspension Risk"
    },
    "body": {
-    "ko": "감사의견 거절에 따른 매매거래 정지 상태에서는 투자자가 보유 주식을 유동화할 수 없다. 거래소 상장적격성 실질심사 결과에 따라 개선 기간(최대 1년) 내에 감사의견이 개선되지 않으면 상장폐지로 이어질 수 있다. 감사의견 거절의 구체적 원인과 후속 외부감사인의 검토 결과가 이 리스크의 핵심 변수다.",
-    "en": "While the trading suspension stemming from the audit disclaimer remains in effect, investors cannot liquidate holdings. Failure to obtain a clean audit opinion within the remediation period granted by the KRX may result in delisting. The specific grounds for the audit disclaimer and the outcome of subsequent auditor reviews are the key risk variables."
+    "ko": "감사의견 거절로 상장폐지 사유가 발생해 주권매매거래가 정지된 상태이며, 개선기간 종료 후 거래소 심의를 통해 상장폐지 여부가 최종 결정된다. 개선기간 내에 경영개선계획 이행과 정정 감사보고서 등이 확인되지 않으면 상장폐지로 이어질 수 있다. 상장폐지가 확정되면 정리매매 절차를 거치게 되며, 거래정지 자체만으로도 투자자는 장기간 매매를 할 수 없는 상태에 놓인다.",
+    "en": "The disclaimer of audit opinion has triggered a delisting cause and suspended common share trading, with the final delisting decision to be made by the exchange after the improvement period ends. If the exchange does not confirm implementation of a management-improvement plan and a corrected audit report within that period, delisting could follow. If delisting is confirmed, a final trading (clean-up) process would ensue, and even absent that outcome, investors face an extended period without the ability to trade."
    }
   },
   {
    "cat": {
-    "ko": "계속기업 불확실성 및 유동성 리스크",
-    "en": "Going-Concern Uncertainty and Liquidity Risk"
+    "ko": "재무건전성 리스크",
+    "en": "Financial Soundness Risk"
    },
    "body": {
-    "ko": "4년 연속 영업현금흐름이 음수이며, 당기순손실이 자기자본 규모에 육박하는 수준으로 누적되고 있다. 외부 자금 조달 없이는 운영 지속이 어려운 구조이며, CB·유상증자가 반복될수록 기존 주주의 이익이 희석된다. 외부감사인이 계속기업 가정에 대한 의문을 감사의견 거절 사유로 포함했을 가능성이 높아 재무 건전성 판단에 있어 가장 중대한 위험 요소다.",
-    "en": "Operating cash flow has been negative for four consecutive years, and cumulative net losses have approached the equity base in scale. The company cannot sustain operations without external financing, and repeated rounds of convertible bonds and equity issuances progressively dilute existing shareholders. The auditor likely raised going-concern doubts as part of the disclaimer rationale, representing the most serious structural financial risk."
+    "ko": "2022년부터 2025년까지 매년 매출을 크게 웃도는 순손실과 마이너스 영업활동현금흐름이 이어지고 있다. 2025년 부채비율은 101.0%로 전년 18.9%에서 급등했으며, 신규 발행 전환사채가 전환될 경우 지분 추가 희석이 발생할 수 있다. 외부 자금조달에 대한 의존이 구조적으로 높은 상태다.",
+    "en": "From 2022 through 2025, the company has recorded net losses far exceeding revenue and negative operating cash flow every year. The 2025 debt ratio surged to 101.0% from 18.9% a year earlier, and conversion of newly issued convertible bonds could result in further equity dilution. Reliance on external financing remains structurally high."
    }
   },
   {
    "cat": {
-    "ko": "지배구조 및 관계회사 거래 투명성",
-    "en": "Governance and Related-Party Transaction Transparency"
+    "ko": "지배구조·관계자거래 리스크",
+    "en": "Governance and Related-Party Transaction Risk"
    },
    "body": {
-    "ko": "거래정지 중인 BF랩스로부터 약 145억원 규모의 부동산을 양수하는 과정에서 BF랩스 전직 대표가 이사회에 진입한 사실이 언론에 보도됐으며, 거래의 독립성에 대한 의문이 제기됐다. 반복적인 최대주주 교체와 CB·유상증자는 단기 자금 수요에 의한 경영 불안정성을 시사할 수 있다. 투자자는 관계회사 간 자금 흐름, 이사회 독립성, 감사위원회 역할에 대해 면밀한 모니터링이 필요하다.",
-    "en": "Media reports flagged governance concerns when a former CEO of trading-halted BF Labs was appointed to DHX Company's board during the process of acquiring a KRW 14.5 billion property from BF Labs, raising questions about transaction independence. Repeated changes in the controlling shareholder and cyclical CB and equity issuances may indicate instability driven by short-term liquidity pressures. Investors should closely monitor inter-company cash flows, board independence, and the role of the audit committee."
+    "ko": "최대주주 변경과 유상증자·전환사채 발행이 반복되는 가운데, 거래정지 상태인 BF랩스로부터의 부동산 양수 거래를 둘러싸고 자금조달 지연과 거래 목적에 대한 의문이 제기됐다. 신규 대주주 프라임코어의 사업 목적과 자금력에 대한 검증도 계속되는 상태다. 이러한 불투명성은 향후 추가적인 시장 감시나 공시 정정으로 이어질 가능성이 있다.",
+    "en": "Amid repeated changes in the controlling shareholder and cycles of capital increases and convertible bond issuances, a real-estate acquisition from trading-halted BF Labs has drawn questions over financing delays and transaction intent. Scrutiny of the new controlling shareholder Primecore's business purpose and financial capacity is also ongoing. Such opacity could lead to further market monitoring or disclosure corrections going forward."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월(예상)",
-    "en": "July–August 2026 (expected)"
+    "ko": "2026년 11월 중순(3분기보고서 제출 시한 전후)",
+    "en": "Mid-November 2026 (around the Q3 report filing deadline)"
    },
    "what": {
-    "ko": "한국거래소 상장적격성 실질심사 결과 발표. 개선 기간 부여 또는 상장폐지 결정이 거래재개 가능성과 직결되므로 가장 우선 확인해야 할 이벤트다.",
-    "en": "KRX listing-eligibility review ruling: the outcome—a remediation period or delisting—directly determines whether trading can resume, making this the highest-priority event for investors."
+    "ko": "2026년 3분기보고서가 제때 제출되는지, 그리고 회계·감사 관련 추가 이슈가 언급되는지를 확인해야 한다.",
+    "en": "Check whether the 3Q26 report is filed on time and whether any further accounting or audit-related issues are flagged."
    }
   },
   {
    "when": {
-    "ko": "2026년 8월 중순(반기 보고서 제출 기한)",
-    "en": "Mid-August 2026 (H1 report deadline)"
+    "ko": "2027년 상반기(차기 사업보고서 제출 후 약 10영업일 이내)",
+    "en": "First half of 2027 (within about 10 business days after the next annual report filing)"
    },
    "what": {
-    "ko": "2026년 1~6월 실적 발표. 영업손실 축소 여부, 프라임코어 체제 하의 매출 회복 속도, 현금 소진율을 확인해야 한다.",
-    "en": "H1 2026 (January–June) earnings release: key items include whether operating losses are narrowing, the pace of revenue recovery under PrimeCore, and the rate of cash consumption."
+    "ko": "코스닥시장위원회의 개선기간 종료 및 상장폐지 여부 최종 결정이 예정된 시점으로, 거래 재개 여부를 가르는 최대 분수령이다.",
+    "en": "This is when the KOSDAQ Market Committee is scheduled to conclude the improvement period and make a final delisting decision — the biggest fork in the road for whether trading resumes."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "H2 2026"
+    "ko": "2026년 4분기 공시",
+    "en": "Q4 2026 disclosures"
    },
    "what": {
-    "ko": "안양 석수동 부동산(양수 금액 약 145억원)의 임대수익 발생 여부 및 규모 확인. 부동산 임대수익이 현금흐름 개선에 기여하는 수준이 재무 안정화 속도를 가늠하는 중요 변수다.",
-    "en": "Confirmation of whether and to what extent rental income materializes from the Anyang property acquired for approximately KRW 14.5 billion; the scale of property income will be a material variable in determining the pace of financial stabilization."
+    "ko": "프라임코어를 대상으로 발행된 전환사채의 전환청구 개시 여부와 추가 지분 변동, 안양 부동산 거래의 최종 완료 여부를 확인해야 한다.",
+    "en": "Watch for whether conversion requests begin on the convertible bonds issued to Primecore, any further changes in shareholding, and final completion of the Anyang property transaction."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년",
-    "en": "H2 2026–2027"
+    "ko": "2026년 4분기 이후 실적 공시",
+    "en": "Earnings disclosures from Q4 2026 onward"
    },
    "what": {
-    "ko": "뉴로하모니 AI 뇌진단기기 인허가·상용화 일정 공개, 일본 K-Food 수출 실적 가시화 여부. 유통 외 신사업의 구체적 수익 기여가 확인되어야 사업 다각화 전략의 실효성 판단이 가능하다.",
-    "en": "Disclosure of the NeuroHarmony regulatory and commercialization timeline and K-Food Japan export performance: tangible revenue contributions from non-distribution businesses are needed before the diversification strategy can be properly evaluated."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 연중 수시",
-    "en": "On a rolling basis throughout 2026"
-   },
-   "what": {
-    "ko": "전환사채(32·33·34회차) 전환 청구 동향 및 신주 발행 공시. 대규모 전환이 이루어질 경우 주당 순자산 및 주당 손익에 즉각적인 영향을 미치므로 지속적인 DART 공시 모니터링이 필요하다.",
-    "en": "Monitoring of conversion requests on outstanding CB tranches (32nd, 33rd, 34th) and related new-share DART filings: large-scale conversions would immediately impact BPS and EPS, requiring continuous surveillance."
+    "ko": "반려동물 마이크로바이옴 헬스케어 등 신사업의 매출 기여 여부와 ICT유통·바이오 부문별 실적 개선의 지속성을 점검해야 한다.",
+    "en": "Check whether new businesses such as pet microbiome healthcare begin contributing to revenue, and whether the recent improvement trend continues across the ICT distribution and bio segments."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "디에이치엑스컴퍼니는 ICT 유통·바이오헬스·K-Food 수출을 복합적으로 영위하는 코스닥 소형주로, 현재 시점의 가장 중요한 이슈는 2025사업연도 감사의견 거절에 따른 매매거래 정지다. 재무적으로는 4년 연속 영업손실과 영업현금흐름 적자, 2025년의 4분기 집중 대규모 순손실로 자기자본이 빠르게 잠식되고 부채비율이 101%로 급등한 상태다. 2026년 4월 프라임코어로의 최대주주 교체와 운영자금 조달은 단기 유동성 안전판을 제공하지만, 영업 적자 구조가 해소되지 않으면 추가적인 자금 조달과 희석이 불가피할 것이다. 뉴로하모니 AI 의료기기, 피부 마이크로바이옴 바이오코스메틱, 일본 K-Food 수출 등의 신규 성장 동력은 중장기 수익 구조 다변화에 기여할 잠재력을 보유하나 현재로서는 수익 기여가 제한적이다. 투자자는 거래소 상장적격성 실질심사 결과와 2026년 반기 재무제표를 통해 계속기업 가정과 가용 유동성을 우선적으로 점검해야 하며, BF랩스와의 부동산 거래 및 CB 전환 관련 지배구조 이슈도 지속적으로 모니터링할 필요가 있다. 본 보고서는 정보 제공 목적으로 작성되었으며, 투자 권유 또는 매매 의견이 아님을 유의한다.",
-   "en": "DHX Company is a KOSDAQ small-cap spanning ICT distribution, biohealth, and K-Food exports; the overriding near-term issue is the trading suspension resulting from the FY2025 audit disclaimer. Financially, four consecutive years of operating losses, persistently negative operating cash flows, and a Q4-concentrated large net loss in 2025 have rapidly eroded equity and pushed the debt ratio to 101%. The April 2026 change of controlling shareholder to PrimeCore and the injection of fresh capital provide short-term liquidity support, but further dilutive financing will be unavoidable unless the loss-generating structure is resolved. New growth vectors—the NeuroHarmony AI medical device, skin-microbiome biocosmetics, and K-Food Japan exports—carry medium-to-long-term potential for revenue diversification, but their contribution to profitability remains limited at this stage. Investors should prioritize the KRX listing-eligibility ruling and H1 2026 financials to assess going-concern viability and available liquidity, while continuing to monitor governance matters related to the BF Labs property transaction and CB conversion dynamics. This report is prepared for informational purposes only and does not constitute a solicitation or recommendation to buy or sell."
+   "ko": "디에이치엑스컴퍼니는 ICT유통·자전거·바이오 등 이질적 사업을 함께 영위해온 코스닥 상장사로, 2025년 매출은 전년 대비 크게 늘었지만 영업손실과 순손실은 매출 규모를 훌쩍 뛰어넘는 수준을 유지했다. 2026년 들어 분기 영업손실이 두 차례 연속 줄어드는 등 일부 개선 조짐이 관측되지만, 2025사업연도 감사보고서의 감사의견 거절로 상장폐지 사유가 발생해 2026년 4월부터 주권매매거래가 정지된 상태이며 개선기간 종료 후 거래소의 최종 판단을 기다리고 있다. 이 과정에서 최대주주가 프라임코어로 바뀌고 대규모 전환사채가 발행되는 등 자본구조 재편이 이어지고 있으며, 거래정지 상태인 BF랩스로부터의 부동산 양수를 둘러싼 거래 투명성 논란도 함께 제기됐다. 자기자본은 4년 사이 절반 이하로 줄고 부채비율은 급등하는 등 재무 완충력도 약화된 모습이다. 종합적으로 이 종목은 매출 회복이라는 긍정적 신호와, 상장폐지 여부·지배구조 불투명성이라는 구조적 위험이 동시에 존재하는 국면에 있다. 향후 개선기간 심사 결과와 신규 대주주 체제의 경영 정상화 성과가 핵심 관전 포인트가 될 것으로 판단된다.",
+   "en": "DHX Company is a KOSDAQ-listed firm that has operated a mix of unrelated businesses spanning ICT distribution, bicycle manufacturing, and bio. 2025 revenue grew markedly from the prior year, yet both the operating loss and net loss remained well above the revenue base. Some improvement has been observed in 2026, with the quarterly operating loss narrowing for two consecutive quarters, but a disclaimer of opinion on the FY2025 audit report triggered a delisting cause, suspending share trading since April 2026, with a final exchange decision still pending after the improvement period. During this process, the controlling shareholder changed to Primecore and a large convertible bond was issued as part of an ongoing capital-structure overhaul, while a property acquisition from trading-halted BF Labs drew separate transparency concerns. Owner equity has more than halved over four years and the debt ratio has surged, indicating a weaker financial buffer. On balance, the stock sits at the intersection of a positive revenue-recovery signal and structural risks tied to the delisting decision and governance opacity. The outcome of the improvement-period review and the progress of management normalization under the new controlling shareholder are likely to be the key points to watch going forward."
   }
  },
  "sources": [
+  "https://comp.fnguide.com/SVO2/asp/SVD_Finance.asp?pGB=1&gicode=A031860&cID=&MenuYn=Y&ReportGB=&NewMenuID=103&stkGb=701",
+  "https://m.thinkpool.com/item/031860",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Dart.asp?pGB=1&gicode=A031860&cID=&MenuYn=Y&ReportGB=&NewMenuID=111&stkGb=701",
+  "https://www.paxnet.co.kr/tbbs/list?id=031860&tbbsType=L",
+  "https://www.investing.com/equities/a-motion-co-ltd",
+  "https://www.tossinvest.com/stocks/A031860/order",
+  "https://m.finance.daum.net/quotes/A031860/news/disclosure/20250725062857",
+  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=031860",
+  "https://m.saramin.co.kr/job-search/company-info-view?csn=a29aSjhMMUdydFRBWFVTeVlDMlVZQT09",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260316002394",
   "https://m.finance.daum.net/quotes/A031860/news/disclosure/20251222100571",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A031860",
+  "https://kr.investing.com/news/global-filings/article-93CH-1947505",
+  "https://hongcenter.com/613",
   "https://news.nate.com/view/20260310n34847",
   "https://www.jobkorea.co.kr/recruit/co_read/c/amotion08",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260316002394",
   "https://m.seoul.co.kr/news/2026/03/11/20260311500028?cp=seoul",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=654635",
-  "https://paxnet.co.kr/tbbs/list?id=031860&tbbsType=L",
-  "https://www.investing.com/equities/a-motion-co-ltd",
   "https://www.judal.co.kr/?view=stockAI&shareToken=tkrRjTQAh0i9VNYj",
-  "https://finance.yahoo.com/quote/031860.KQ/",
-  "https://finance.yahoo.com/quote/031860.KQ/profile/",
-  "https://www.google.com/finance/quote/031860:KOSDAQ",
-  "https://in.investing.com/equities/a-motion-co-ltd-company-profile",
-  "https://www.bloomberg.com/quote/031860:KS",
-  "https://www.bloomberg.com/profile/company/031860:KS",
-  "https://www.msn.com/en-us/money/stockdetails/031860-kr-stock/fi-ajo9kr?ocid=winp1taskbar",
-  "https://finance.yahoo.com/quote/DHX/profile/"
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=643959"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "031860",
  "name": "디에이치엑스컴퍼니",
  "name_en": "DHX Company Co., Ltd.",
@@ -233,9 +223,9 @@
   "유통·소비재"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 05:32",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 21:48",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
