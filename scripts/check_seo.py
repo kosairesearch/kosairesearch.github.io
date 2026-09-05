@@ -262,6 +262,44 @@ for p, mm in menus.items():
             diff.append(f"{p}:{h}={'/'.join(v)}(≠{'/'.join(base[h])})")
 check(not diff, f"메뉴 이름이 {len(menus)}개 페이지에서 모두 같음", ", ".join(diff[:4]))
 
+
+# 13) 법적 문서가 자기 시행일을 두 군데서 다르게 말하지 않는가
+#
+#     약관 머리의 날짜만 고치고 부칙을 안 고친 적이 있다. 한 문서가 "9월 13일
+#     시행" 과 "6월 6일 시행" 을 동시에 적고 있었다. 눈으로는 잘 안 걸린다 —
+#     둘이 400줄 떨어져 있고, 고칠 때는 위만 보게 된다.
+#
+#     사전(영문 열쇠말)은 뺀다. 거기 적힌 날짜는 화면에 그대로 나오는 글이
+#     아니라 번역 짝이라, 본문과 같은 잣대로 보면 늘 걸린다.
+def markup_only(t):
+    t = re.sub(r"(?is)<script.*?</script>", " ", t)
+    return re.sub(r"(?s)<!--.*?-->", " ", t)
+
+for name in ("Terms.html", "Privacy.html"):
+    f = ROOT / name
+    if not f.exists():
+        continue
+    body = markup_only(f.read_text(errors="ignore"))
+    head = re.search(r'class="upd">([^<]*)<', body)
+    if not head:
+        check(False, f"{name} 에 시행일 줄이 있음")
+        continue
+    m = re.search(r"시행일\s*(\d{4}년\s*\d{1,2}월\s*\d{1,2}일)", head.group(1))
+    check(bool(m), f"{name} 머리에 시행일이 적혀 있음", head.group(1)[:60])
+    if not m:
+        continue
+    eff = m.group(1)
+    # 부칙 제1조(시행일)가 있으면 머리와 같은 날짜여야 한다
+    add = re.search(r"제1조\s*\(시행일\)([^<]*)", body)
+    if add:
+        check(eff.replace(" ", "") in add.group(1).replace(" ", ""),
+              f"{name} 부칙의 시행일이 머리와 같음",
+              f"머리 {eff} · 부칙 {add.group(1).strip()[:50]}")
+    # '이 약관은 …부터 시행' 같은 옛 문장이 다른 날짜로 남아 있지 않은가
+    for stray in re.findall(r"(?:이 약관은|이 방침은)[^<]{0,40}?(\d{4}년\s*\d{1,2}월\s*\d{1,2}일)[^<]{0,10}?부터 시행", body):
+        check(stray.replace(" ", "") == eff.replace(" ", ""),
+              f"{name} 본문의 '…부터 시행' 이 머리와 같음", f"머리 {eff} · 본문 {stray}")
+
 print(f"통과 {len(ok)} · 실패 {len(fail)}\n")
 for m in ok: print("  PASS", m)
 for m in fail: print("  FAIL", m)
