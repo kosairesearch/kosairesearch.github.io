@@ -41,6 +41,8 @@ QUOTA_FILE = DATA / "dart_quota_exhausted"
 # 모델을 부를 수 없는 날 — 계정 잔액이 바닥나거나 인증이 막힌 날짜를 적어 둔다.
 # DART 한도와 같은 방식이다. 날짜가 오늘이면 돈 드는 주문을 아예 시작하지 않는다.
 CREDIT_FILE = DATA / "anthropic_credit_exhausted"
+# BPS·PBR 을 보여 주지 않을 종목 목록(사람이 손으로 고치는 파일).
+BPS_SUPPRESS_FILE = DATA / "bps_suppress.txt"
 STOCKS_JS = DATA / "stocks.js"
 
 FAIL_LIMIT = 3          # 이만큼 연속으로 깨지면 자동 백필에서 뺀다(사람이 본다)
@@ -86,6 +88,27 @@ def _remove(d, tk):
 
 
 # ── skip: DART 에 재무제표가 없어 만들 수 없는 종목 ─────────────────────
+def load_bps_suppress():
+    """BPS·PBR 을 빈칸으로 둘 종목 집합. 파일이 없으면 빈 집합(아무것도 안 가린다).
+
+    왜 값을 고치지 않고 가리는가는 data/bps_suppress.txt 머리말에 적었다. 요약하면,
+    틀린 것은 아는데 무엇으로 가려낼지를 아직 모른다 — 확실하지 않은 규칙으로 전
+    종목을 건드리느니 틀린 줄 아는 값을 안 보여 주는 편이 낫다.
+
+    이 목록에 없는 종목은 이 기능이 있든 없든 하나도 달라지지 않는다."""
+    out = set()
+    try:
+        for line in BPS_SUPPRESS_FILE.read_text(encoding="utf-8").splitlines():
+            tk = line.split("#", 1)[0].strip()
+            if tk:
+                out.add(tk)
+    except FileNotFoundError:
+        pass
+    except Exception:
+        pass
+    return out
+
+
 def load_skip():
     out = _names(SKIP_DIR)
     if SKIP_LEGACY.exists():
