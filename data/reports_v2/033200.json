@@ -1,228 +1,220 @@
 {
  "title": {
-  "ko": "4년 연속 영업적자 속 차량 액추에이터로 구조전환 모색",
-  "en": "Searching for Structural Turnaround via Automotive Actuators Amid Four Consecutive Years of Operating Losses"
+  "ko": "모아텍, 자동차 전장 전환 속 적자 지속",
+  "en": "Moatech: Auto Actuator Pivot Amid Persistent Losses"
  },
  "lead": {
-  "ko": "전통 OA용 스테핑 모터 수요 감소와 4년 연속 영업적자라는 이중 과제 속에서, 자동차 부문 고객 다변화와 공력제어 액추에이터 확대로 실적 반전을 모색하고 있으나, FY2025 4분기에 발생한 매출 91% 급락이 새로운 불확실성으로 부상했다.",
-  "en": "Moatech faces structural headwinds from declining OA stepping motor demand and four consecutive years of operating losses; automotive customer diversification and aerodynamic control actuator expansion are the primary turnaround levers, but a roughly 91% sequential revenue collapse in Q4 FY2025 has introduced critical new uncertainty."
+  "ko": "모아텍은 스테핑모터 단품 사업에서 자동차 액추에이터 중심으로 무게중심을 옮기는 과정에 있으며, 2025년까지 영업손실이 이어진 가운데 2026년 1분기 들어 손실 규모가 크게 줄어드는 모습을 보였다.",
+  "en": "Moatech is shifting its business center of gravity from commodity stepping motors toward automotive actuators, and while operating losses persisted through fiscal 2025, the scale of losses narrowed markedly in the first quarter of 2026."
  },
  "keypoints": [
   {
-   "ko": "FY2022~FY2025 4년 연속 영업적자 지속, FY2025 영업손실 31.6억원(OPM –10.0%)으로 손실 폭 최대치 경신",
-   "en": "Four straight years of operating losses (FY2022–FY2025); FY2025 operating loss of KRW 3.16 billion (OPM –10.0%) is the deepest in the streak"
+   "ko": "최대주주는 일본 미네베아미쓰미로 2012년 지분 50.8% 확보 이후 최대주주 지위를 유지하고 있다.",
+   "en": "The largest shareholder is Japan's Minebea Mitsumi, which has held majority control since acquiring a 50.8% stake in 2012."
   },
   {
-   "ko": "FY2025 4분기(2025년 1~3월) 매출 9.4억원으로 직전 3분기 평균(약 102억원) 대비 91% 급락, 해당 분기 영업손실 17.2억원 집중",
-   "en": "Q4 FY2025 (Jan–Mar 2025) revenue collapsed to ~KRW 940 million—an ~91% sequential drop vs the prior three-quarter average of ~KRW 10.2 billion—with a single-quarter operating loss of ~KRW 1.72 billion"
+   "ko": "2025년 연결 매출은 315억원, 영업손실은 32억원으로 전년보다 손실 폭이 확대됐으나 2026년 1분기 영업손실은 -1.3억원으로 큰 폭 축소됐다.",
+   "en": "Consolidated FY2025 revenue was KRW31.5 billion with an operating loss of KRW3.2 billion, a wider loss than the prior year, but the Q1 2026 operating loss narrowed sharply to KRW-0.13 billion."
   },
   {
-   "ko": "자동차 고객 다변화 및 공력제어 ACTUATOR 확대를 통해 내연기관·친환경 차량 양쪽에 대응하는 수익 구조 전환 추진 중",
-   "en": "Actively diversifying automotive customers and expanding aerodynamic control actuator sales applicable to both ICE and electrified vehicles"
+   "ko": "회사는 자동차용 액추에이터 사업을 중심으로 향후 3년간 연평균 25~30% 성장, 장기적으로 매출 1000억원 달성을 목표로 제시했다(이투데이, 2026년 6월).",
+   "en": "The company has set a target of 25-30% average annual growth over the next three years centered on automotive actuators, aiming for KRW100 billion in long-term revenue, as reported by Etoday in June 2026."
   },
   {
-   "ko": "최대주주 미네베아미쯔미(약 50.85%) + 자사주(약 35.77%)로 실질 유통주식 극히 희소; 2016~2018년 자진상장폐지 시도 이력 존재",
-   "en": "Parent Minebea Mitsumi (~50.85%) plus treasury shares (~35.77%) leave an extremely thin effective free float; the company previously attempted voluntary delisting in 2016–2018"
+   "ko": "코스닥 상장유지를 위한 시가총액 기준이 하반기부터 200억원으로 상향되면서 모아텍의 시가총액 수준이 모니터링 대상에 올랐다(더벨, 2026년 6월).",
+   "en": "As the KOSDAQ listing-maintenance market-cap threshold rises to KRW20 billion in the second half, Moatech's market capitalization level has come under monitoring, per TheBell's June 2026 report."
   },
   {
-   "ko": "FY2026 Q1 실적 미공개 상태로, Q4 매출 급락이 일회성인지 구조적 이탈인지 현시점에서 검증 불가",
-   "en": "FY2026 Q1 data remains unavailable, making it currently impossible to verify whether the Q4 revenue cliff is a one-off or reflects a structural customer departure"
+   "ko": "회사는 251억원 규모의 자사주를 소각하는 등 주주가치 제고에 나섰지만 거래 활성화 효과는 제한적이었다는 평가가 나온다(더벨).",
+   "en": "The company retired treasury shares worth KRW25.1 billion to bolster shareholder value, though the effect on trading activity has been assessed as limited, according to TheBell."
   }
  ],
  "business": {
-  "ko": "모아텍은 1985년 '한국권선기술'로 출범해 1997년 코스닥에 상장했으며, 2012년 5월 일본 정밀 부품 대기업 미네베아미쯔미(MinebeaMitsumi)에 인수되어 현재에 이르고 있다. 주요 제품은 ▲가전·사무기기·IT 기기용 PM 타입 초소형 정밀 스테핑 모터, ▲자동차 편의·안전장치용 및 공력제어용 액추에이터(ACTUATOR), ▲전기차 특수모터 등 세 축으로 구성된다. 비전으로 '마스터 오브 모션 테크놀로지(Master of Motion Technology)'를 내세우며, 단순 모터 단품 공급을 넘어 모터 기반 모듈 사업으로의 전환을 추구하고 있다. 1990년대 말~2000년대 초 플로피디스크(FDD)·광학드라이브(ODD)용 스테핑 모터로 세계 시장을 선도했으나, 해당 시장 쇠퇴와 함께 자동차·전기차용 모터·액추에이터 부문으로 사업 중심을 전환하고 있다. 생산기지는 인천 본사 외 중국·필리핀 해외 공장을 보유하며, 글로벌 고객사 근접 대응 체계를 유지하고 있다. 자동차 부문에서 공력제어용 ACTUATOR는 내연기관 및 친환경 차량 양쪽에 탑재 가능해 전동화 전환에도 수요 연속성이 기대되며, 고객 다변화를 통한 생산량 확대를 추진 중이다. 생산성 개선과 자재 구매선 다변화를 통한 원가 경쟁력 확보 노력도 병행되고 있다. 지배구조 측면에서 최대주주 미네베아미쯔미가 총 발행주식의 약 50.85%를, 자사주가 약 35.77%를 차지해 실질 유통주식 비율이 극히 낮다는 점이 구조적 특징이다.",
-  "en": "Moatech was founded in 1985 as 'Korea Kwonson Technology,' listed on KOSDAQ in 1997, and acquired by Japanese precision-components conglomerate MinebeaMitsumi in May 2012. Its product portfolio spans three pillars: PM-type ultra-compact precision stepping motors for home appliances, OA equipment, and IT devices; automotive actuators for comfort/safety and aerodynamic control applications; and special motors for electric vehicles. Guided by its 'Master of Motion Technology' vision, the company is evolving from single-component motor supply toward integrated motor-module solutions. Having once held a leading global position in stepping motors for FDD and ODD drives, Moatech has been pivoting as those markets declined, redirecting focus toward automotive and EV applications. Manufacturing operates from the Incheon headquarters and overseas plants in China and the Philippines, enabling proximity-based service to global customers. Aerodynamic control actuators are applicable across ICE and electrified vehicle platforms, providing demand continuity through the vehicle electrification transition, while customer diversification efforts aim to expand production volumes. The company is simultaneously pursuing production efficiency improvements and raw material sourcing diversification to strengthen cost competitiveness. A structurally defining governance feature is the parent's ~50.85% ownership stake combined with treasury shares of ~35.77%—leaving an extremely thin effective free float."
+  "ko": "모아텍은 1989년 설립돼 1997년 코스닥에 상장된 스테핑모터(STEPPING MOTOR) 전문 제조업체로, 가전·사무기기·자동차·통신 분야의 제어용 모터를 생산해왔다. 회사는 국내 최초로 PM 타입 스테핑모터를 개발한 기업으로 알려져 있으며, 최근에는 단순 모터 단품 판매에서 벗어나 자동차용 액추에이터 중심의 고부가가치 사업으로 체질 전환을 추진하고 있다. 최근 보도에 따르면 자동차 관련 사업의 매출 비중은 80%까지 확대됐다. 반면 가전·사무기기용 모터 단품 판매는 중국 경쟁사의 저가 공략으로 시장 가격이 무너지면서 수익성 확보가 쉽지 않은 상황이라고 회사는 진단했으며, 이에 따라 단품 판매를 줄이고 고효율·다기능 복합제품으로 전환하는 전략을 펴고 있다. 최대주주는 일본 미네베아미쓰미로, 2012년 소형 모터 제조업체인 모아텍의 주식 50.8%를 취득하며 자회사로 편입시켰다. 회사는 고도 기술제품은 국내에서, 일반제품은 해외생산으로 차별화하는 이원화 생산체제를 갖추고 있으며 전자회로 개발을 통한 솔루션 제공도 병행하고 있다. 최근 회계연도 기준 내수 매출 비중이 전체의 84.5%에 달할 만큼 국내 판매 의존도가 높은 것으로 나타났으며, 위탁 매입 방식의 상품 매출도 늘어나는 추세다. 자동차 부문에서는 하이브리드차·전기차용 공력제어 부품 양산에 이어 전기차 열관리 시스템용 액추에이터를 향후 본격 양산할 계획이며, 최대주주인 미네베아 그룹의 전세계 영업망을 활용한 판촉 확대도 추진되고 있다.",
+  "en": "Founded in 1989 and listed on KOSDAQ in 1997, Moatech is a specialist manufacturer of stepping motors used in home appliances, office equipment, automotive, and telecommunications applications. The company is known as a domestic pioneer in developing PM-type stepping motors, and it has been shifting away from simple motor-unit sales toward higher value-added automotive actuator products. Recent reporting indicates that automotive-related business now accounts for as much as 80% of sales. In contrast, the company has flagged that commodity motor sales to appliance and office-equipment customers have come under pricing pressure from low-cost Chinese rivals, prompting a strategic shift toward high-efficiency, multi-function complex products rather than standalone units. The largest shareholder is Japan's Minebea Mitsumi, which acquired a 50.8% stake in the small-motor maker in 2012 and has controlled it since. The company operates a dual production system, manufacturing high-technology products domestically while sourcing general products from overseas plants, alongside electronic-circuit development to provide integrated solutions. In the most recent fiscal period, domestic sales reportedly made up as much as 84.5% of total revenue, reflecting heavy reliance on the home market, while consigned-purchase merchandise sales have also been rising. In the automotive segment, following mass production of aerodynamic control parts for hybrid and electric vehicles, the company plans to move toward full-scale production of actuators for EV thermal management systems, while also expanding sales through the global distribution network of parent Minebea Group."
  },
  "earnings": {
-  "ko": "모아텍은 FY2022~FY2025 4년 연속 영업적자를 기록하며 구조적 수익성 과제를 이어가고 있다. 연간 매출은 FY2022 약 310억원, FY2023 약 319억원, FY2024 약 305억원, FY2025 약 315억원으로 4년간 약 305~320억원 범위에서 정체해 있다. 영업손실은 FY2022 약 16.5억원(OPM –5.3%), FY2023 약 22.6억원(–7.1%), FY2024 약 21.7억원(–7.1%), FY2025 약 31.6억원(–10.0%)으로 뚜렷한 확대 추세를 나타냈다. 지배주주 귀속 순이익은 FY2022 약 –14.1억원, FY2023 약 –14.4억원, FY2024 약 +0.56억원(간신히 흑자 전환)에서 FY2025 약 –19.8억원으로 다시 대폭 악화됐다. 분기별로는 FY2025 1~3분기(2024년 4~12월)가 각각 약 105억원·101억원·99억원을 기록해 분기 평균 약 102억원을 유지했으나, 4분기(2025년 1~3월)에 매출이 약 9.4억원으로 급락하고 영업손실 약 17.2억원, 지배주주 순손실 약 13.8억원이 한 분기에 집중됐다. FY2025 연간 영업손실 31.6억원 중 절반 이상이 4분기 단 한 분기에 발생한 것으로, 대규모 일회성 비용이나 자산 평가 조정 등이 수반됐을 가능성이 높다. 영업현금흐름(CFO)은 FY2022 약 –5.8억원, FY2023 약 –20.7억원, FY2024 약 +7.4억원, FY2025 약 –7.5억원으로, 4년 중 3년이 순유출을 기록했다. FY2024에 유일하게 CFO 흑자를 달성했으나 FY2025에 다시 순유출로 반전해 현금 창출력의 지속성이 아직 확인되지 않은 상태다. 한편 부채비율은 FY2022 7.9%, FY2023 9.2%, FY2024 9.8%, FY2025 8.9%로 낮은 수준을 유지해, 재무 안정성 측면의 하방 리스크는 상대적으로 제한된다.",
-  "en": "Moatech has recorded operating losses in each of the four fiscal years from FY2022 to FY2025, reflecting a persistent structural profitability challenge. Annual revenues have remained range-bound: FY2022 ~KRW 31.0B, FY2023 ~KRW 32.0B, FY2024 ~KRW 30.6B, FY2025 ~KRW 31.5B—a flat trajectory across four years. Operating losses have widened progressively: FY2022 –KRW 1.65B (–5.3% OPM), FY2023 –KRW 2.26B (–7.1%), FY2024 –KRW 2.17B (–7.1%), and FY2025 –KRW 3.16B (–10.0%). Net income attributable to controlling shareholders swung from –KRW 1.41B (FY2022), –KRW 1.44B (FY2023), to a slim +KRW 56M (FY2024), before deteriorating sharply to –KRW 1.98B in FY2025. Quarterly analysis reveals a dramatic pattern: Q1–Q3 of FY2025 (April–December 2024) delivered revenues of approximately KRW 10.5B, KRW 10.1B, and KRW 9.9B respectively—averaging ~KRW 10.2B per quarter—while Q4 FY2025 (January–March 2025) saw revenue collapse to approximately KRW 940 million, an ~91% sequential drop. The operating loss of ~KRW 1.72B and attributable net loss of ~KRW 1.38B concentrated in that single quarter account for more than half of the full-year FY2025 operating loss, suggesting material one-time charges or asset revaluations. Operating cash flow was negative in three of four years—FY2022 –KRW 583M, FY2023 –KRW 2.07B, FY2025 –KRW 753M—with only FY2024 (+KRW 736M) delivering positive cash generation, a recovery that was not sustained into FY2025. The debt ratio remained low throughout, ranging 7.9%–9.8%, underpinning balance-sheet resilience."
+  "ko": "연간 실적을 보면 매출은 2022년 310.3억원, 2023년 319.6억원, 2024년 305.8억원, 2025년 315.0억원으로 300억원대 초반에서 정체된 흐름을 보였다. 영업손익은 2022년 -16.5억원, 2023년 -22.6억원, 2024년 -21.7억원, 2025년 -31.6억원으로 4개 연도 모두 적자를 기록했으며 특히 2025년에는 손실 규모가 전년 대비 확대됐다. 지배주주 순이익 기준으로는 2022년 -14.9억원, 2023년 -15.2억원의 적자를 기록한 뒤 2024년에는 0.56억원의 근소한 흑자로 전환했으나, 2025년 다시 -19.8억원의 적자로 돌아섰다. 분기별로 보면 2025년 1~3분기 매출은 각각 105.2억원, 101.2억원, 99.3억원으로 100억원 내외를 유지했고 영업손실도 -4.4억원, -5.5억원, -4.5억원 수준에서 등락했다. 그러나 2025년 4분기에는 매출이 9.4억원으로 급격히 줄어들면서 영업손실이 -17.2억원, 지배주주 순손실이 -13.8억원까지 확대되는 이례적인 결과가 나타났다. 이어 2026년 1분기에는 매출이 144.2억원으로 직전 분기 대비 크게 늘었고 영업손실은 -1.3억원, 지배주주 순손실은 -0.02억원으로 손익분기점에 근접하는 수준까지 손실이 축소됐다. 최근 네 개 분기(2025년 2분기~2026년 1분기) 지배주주 순손실 합계는 약 -19.1억원으로, 분기별 변동성이 큰 가운데 최근 시점에서는 개선 흐름이 뚜렷하게 관측된다. 다만 2025년 4분기의 매출 급감과 2026년 1분기의 매출 급증이 어떤 요인에서 발생했는지는 공개된 자료만으로는 명확히 설명되지 않아, 후속 공시를 통한 확인이 필요한 대목이다. 현금흐름 측면에서는 2024년 연간 영업활동현금흐름이 +7.4억원으로 플러스를 기록했으나 2022년, 2023년, 2025년에는 모두 마이너스(-5.8억원, -20.7억원, -7.5억원)를 나타내 현금창출력이 안정적이지 않은 모습이다.",
+  "en": "Annual revenue was roughly flat in the low-KRW30-billion range: KRW31.03 billion in 2022, KRW31.96 billion in 2023, KRW30.58 billion in 2024, and KRW31.50 billion in 2025. Operating losses were recorded in all four years -- KRW-1.65 billion (2022), KRW-2.26 billion (2023), KRW-2.17 billion (2024), and KRW-3.16 billion (2025) -- with the loss widening notably in 2025 versus the prior year. On an owners' net income basis, the company posted losses of KRW-1.49 billion in 2022 and KRW-1.52 billion in 2023, turned to a small profit of KRW56 million in 2024, then swung back to a loss of KRW-1.98 billion in 2025. Quarterly, revenue in the first three quarters of 2025 held around the KRW10 billion level (KRW10.52 billion, KRW10.12 billion, KRW9.93 billion) with operating losses fluctuating between roughly KRW-0.44 billion and KRW-0.55 billion. Q4 2025, however, saw revenue plunge to just KRW0.94 billion, with the operating loss widening sharply to KRW-1.72 billion and the owners' net loss expanding to KRW-1.38 billion, an unusual outcome versus the prior quarters. Revenue then rebounded sharply to KRW14.42 billion in Q1 2026, while the operating loss narrowed to KRW-0.13 billion and the owners' net loss shrank to essentially breakeven at KRW-2.2 million. Summed over the trailing four quarters (Q2 2025 through Q1 2026), the owners' net loss totaled roughly KRW-1.91 billion, with high quarter-to-quarter volatility but a clear improvement trend in the most recent period. The precise drivers behind the Q4 2025 revenue collapse and the Q1 2026 rebound are not fully explained by publicly available disclosures and warrant confirmation through subsequent filings. On cash flow, operating cash flow turned positive at KRW735 million in 2024 but was negative in 2022, 2023, and 2025 (KRW-584 million, KRW-2.07 billion, and KRW-753 million, respectively), pointing to inconsistent cash generation."
  },
  "industry": {
-  "ko": "모아텍이 속한 정밀 스테핑 모터 시장은 전통적인 OA 기기(ODD·FDD) 수요 감소라는 장기 역풍에 직면해 있으며, 이는 모아텍의 역사적 주력 수요처가 지속적으로 축소되고 있음을 의미한다. 반면 자동차 전동화 및 친환경화 흐름에 따른 차량용 정밀 액추에이터·모터 수요는 성장세를 유지하고 있으며, EV 구동모터 시장은 2024년 약 37.8억 달러에서 2033년 약 197.6억 달러로 CAGR 약 18%의 고성장이 전망된다. 자율주행·디지털화 추세는 정밀 위치 제어 모터의 새로운 수요를 자동차·로봇·IoT 기기 등 다양한 전방 시장에서 창출하고 있다. 경쟁 구도 측면에서 글로벌 정밀 모터 시장은 니덱(Nidec), 미네베아미쯔미(모아텍 최대주주), 중국계 저가 업체들이 포진해 있어 중간 규모 업체에게 가격 및 규모의 경제 면에서 불리한 환경이 지속되고 있다. 3D 프린터 테마주로 시장의 주목을 받기도 하나, 실제 이 부문의 매출 규모와 비중은 공시 자료 내에서 별도로 제시되지 않아 투자 테마와 실질 기여 간의 격차를 확인할 필요가 있다. 공력제어용 ACTUATOR는 내연기관과 친환경 차량 모두에 적용 가능해 안정적인 수요 기반을 형성하고 있으며, 전기차 특수모터 신규 진출은 성장하는 EV 시장을 공략하기 위한 전략적 포지셔닝이다. 중국 정밀 모터 업체의 저가 경쟁 심화는 스테핑 모터 전반의 평균 판매가(ASP)를 지속적으로 압박하는 구조적 리스크 요인으로 작용하고 있다.",
-  "en": "The precision stepping motor segment faces long-term structural headwinds from the secular decline of traditional OA equipment (ODD/FDD) demand, which is steadily eroding the historical demand base for Moatech's core product. In contrast, automotive electrification and eco-friendly vehicle trends continue to support growth in precision automotive actuators and motors; the EV drive motor market is projected to expand from approximately USD 3.78 billion in 2024 to USD 19.76 billion by 2033, representing a CAGR of ~18%. Autonomous driving and vehicle digitalization trends are creating new precision motion-control demand pockets across automotive, robotics, and IoT devices. Competitively, the global precision motor market is dominated by large-scale players—Nidec, MinebeaMitsumi (Moatech's own parent), and lower-cost Chinese manufacturers—placing medium-sized producers under sustained pricing and economies-of-scale pressure. The company receives thematic investor attention as a 3D-printing motor beneficiary, though the actual revenue contribution from that segment is not separately disclosed in available public filings. Aerodynamic control actuators applicable to both ICE and electrified vehicles provide a stable demand anchor, while EV special motor programs represent forward-looking positioning for the high-growth electrification market. Chinese precision motor manufacturers' intensifying price competition remains a structural headwind on average selling prices across the stepping motor space."
+  "ko": "모아텍이 속한 소형 정밀모터·액추에이터 산업은 가전·사무기기용 범용 모터 시장과 자동차 전장용 모터 시장으로 크게 나뉜다. 범용 모터 시장은 중국 업체들의 저가 공세로 가격 경쟁이 심화되며 수익성 확보가 어려운 성숙 단계에 접어들었다는 것이 회사 측의 진단이다. 반면 자동차 전장 시장은 내연기관차뿐 아니라 하이브리드차, 전기차, 수소연료전지차까지 전동화가 확산되면서 공력제어용 액추에이터 등의 적용 범위가 넓어지는 성장 국면에 있다. 이 시장에서는 일본계 대형 모터업체들이 오랜 기간 강자로 자리잡고 있으며, 모아텍의 최대주주인 미네베아미쓰미 역시 회전기기 사업을 영위하는 경쟁자 겸 협력자적 위치에 있다. 모아텍은 완성차 업체의 신차 개발 초기 단계부터 참여하는 공급 구조를 구축해 안정적 매출 기반을 다지려 하고 있다고 설명했다. 다만 원재료 대부분을 수입하고 필리핀 생산법인을 활용하는 사업 구조상 환율 변동에 따른 원가 부담 노출이 크다는 점은 구조적 약점으로 지목된다. 전체적으로 모아텍은 매출 규모가 크지 않은 코스닥 상장사로서 대형 경쟁사 대비 규모의 경제 측면에서 열위에 있으나, 신차 개발 참여형 공급구조와 미네베아 그룹의 글로벌 판매망이라는 두 축을 통해 틈새시장 공략을 시도하는 위치에 있다.",
+  "en": "The small precision-motor and actuator industry in which Moatech operates splits broadly into commodity motors for appliances and office equipment, and automotive-grade motors and actuators. According to the company's own assessment, the commodity motor segment has matured into a difficult, low-profitability environment as Chinese manufacturers wage aggressive price competition. The automotive electronics segment, by contrast, is in a growth phase as electrification spreads across internal-combustion, hybrid, electric, and fuel-cell vehicles, widening the range of applications for aerodynamic-control actuators and similar products. Large Japanese motor manufacturers have long been dominant players in this space, and Moatech's own controlling shareholder, Minebea Mitsumi, occupies a position as both a competitor and a partner given its own rotating-device business. Moatech has said it is building a supply structure that engages with automakers from the early stages of new-model development in order to secure a more stable revenue base. However, because most raw materials are imported and production relies partly on a Philippine subsidiary, the business remains structurally exposed to foreign-exchange-driven cost pressure. Overall, as a relatively small KOSDAQ-listed company, Moatech lacks the scale advantages of larger rivals, but it is attempting to carve out a niche through early-stage automotive design-win participation and access to the Minebea Group's global sales network."
  },
  "outlook": {
-  "ko": "FY2025 4분기(2025년 1~3월)의 매출 급락 원인이 공시 자료 내에서 구체적으로 설명되지 않은 가운데, FY2026 1분기(2025년 4~6월) 실적이 아직 제공되지 않아 실적 회복 여부를 현시점에서 검증하기 어렵다. 사업 방향 면에서는 자동차 부문 고객 다변화와 생산성 개선이 실적 개선의 핵심 변수로 제시되고 있으며, 이는 FY2025 1~2분기의 전년 동기 대비 매출 40% 이상 증가라는 성과가 상반기에 실현된 바 있다는 점에서 자동차 부문의 일정한 성장 모멘텀을 뒷받침한다. 공력제어용 ACTUATOR는 내연기관과 전기차·하이브리드 차량 모두에 적용 가능하다는 특성 덕분에 전동화 전환 과정에서도 수요 기반을 유지할 것으로 회사는 기대하고 있다. 자재 구매선 다변화를 통한 원가 구조 개선 노력이 병행되고 있으나, 실질적인 마진 개선 효과의 시점과 규모는 현재로서 확인된 공시 자료에서 구체화되지 않은 상태다. 전기차 특수모터 분야 신제품 개발이 진행 중이나 양산 적용 시점 및 매출 규모는 공시 자료 범위 내에서 가시화되지 않았다. 최대주주 미네베아미쯔미의 전략적 의사결정(추가 지분 매집, 자진상장폐지 재추진 가능성 등)은 중장기 주가 방향에 영향을 미칠 불확실성 요인으로 항시 상존한다. '모빌리티·IoT 시대 혁신 제품 개발·공급'이라는 비전이 실제 수익화로 이어지기 위해서는 신규 고객 수주 공시 및 매출 가시화가 핵심 확인 포인트가 될 것이다.",
-  "en": "The root cause of the Q4 FY2025 revenue collapse has not been formally elaborated in available public disclosures, and Q1 FY2026 (April–June 2025) data remains unreported, making near-term earnings trajectory verification difficult at this juncture. On the business trajectory, automotive customer diversification and production efficiency improvement are identified as the primary improvement levers—a narrative supported by the fact that Q1–Q2 FY2025 delivered year-on-year revenue growth exceeding 40%, suggesting automotive-driven momentum earlier in the fiscal year. Aerodynamic control actuators' compatibility with both ICE and electrified platforms is expected to sustain demand continuity through the vehicle electrification transition. Material sourcing diversification efforts are ongoing, though the timing and magnitude of resulting margin improvements are not yet specified in available filings. EV special motor development programs are reportedly in progress, but commercialization timelines and revenue contribution remain unquantified in disclosed information. The strategic posture of majority shareholder MinebeaMitsumi—including potential incremental stake accumulation or renewed voluntary delisting proceedings—remains a persistent variable for long-term corporate direction. Whether the company's mobility and IoT vision translates into concrete customer wins and revenue diversification will be the key observable indicator to watch."
+  "ko": "회사는 자동차용 액추에이터 사업을 중심으로 향후 3년간 연평균 25~30% 성장을 예상하고 있으며, 장기적으로는 매출 1000억원 달성을 목표로 제시했다고 밝혔다. 회사 관계자는 자동차 사업이 안정화 단계에 진입하고 있으며 고객사의 신규 차량 개발 과정에 참여해 자사 기술이 적용되는 구조로 사업이 진행되고 있다고 설명했다. 다만 개발비와 선행 투자 비용이 지속적으로 반영되고 있고 환율 상승에 따른 원가 부담도 있었다며, 2026년까지는 이익 개선 과정이 이어질 것으로 보고 2027년 흑자전환을 기대하고 있다고 밝혔다. 사업 측면에서는 하이브리드차·전기차용 공력제어 부품 양산에 이어 전기차 열관리 시스템용 액추에이터를 향후 본격 양산할 계획이라고 밝혔으며, 최대주주인 미네베아 그룹의 전세계 영업망을 통한 판촉 확대도 추진하고 있다. 기존 모터 기술에 기구 설계와 제어회로 기술을 결합한 통합 솔루션 전략을 통해 자동차 전장 시장 공략을 강화한다는 계획도 제시했다. 한편 코스닥 상장유지를 위한 시가총액 기준이 하반기부터 200억원으로 상향되는 만큼, 회사의 시가총액 수준과 거래 활성화 여부가 계속 지켜봐야 할 변수로 남아 있다. 회사는 재무적 여력을 바탕으로 자사주 소각 등 기업가치 제고 노력을 이어가겠다는 입장을 보이고 있다.",
+  "en": "The company has said it expects average annual growth of 25-30% over the next three years centered on its automotive actuator business, with a long-term target of KRW100 billion in revenue. A company representative stated that the automotive business is entering a stabilization phase, with the company participating in customers' new-vehicle development processes so that its technology becomes embedded in the resulting products. At the same time, the company has acknowledged that continued development costs, upfront investment, and higher costs from currency depreciation mean profit improvement will continue through 2026, with a return to profitability targeted for 2027. On the product side, following mass production of aerodynamic-control parts for hybrid and electric vehicles, the company plans to move to full-scale production of actuators for EV thermal management systems, while also expanding sales through the global network of parent Minebea Group. Management has also outlined a strategy of combining existing motor technology with mechanical design and control-circuit capabilities into an integrated solution offering to strengthen its push into the automotive electronics market. Separately, because the KOSDAQ listing-maintenance market-cap threshold rises to KRW20 billion in the second half, the company's market-cap level and trading activity remain variables to watch going forward. The company has also indicated it will continue efforts to enhance corporate value, including treasury-share retirement, drawing on its financial capacity."
  },
  "valuation_comment": {
-  "ko": "4년 연속 영업적자가 이어진 만큼 이익 기반의 배수(멀티플) 평가는 현재 적용되기 어려우며, 주가의 기준점은 자산 가치 구간으로 읽힌다. KRX 공시 기준 주당순자산과 비교하면 현재 주가는 상당한 폭의 할인 구간에 위치해 있어 이론적 자산 가치 측면의 하방 완충이 존재하나, 영업적자와 음수 CFO가 지속될 경우 이 완충 여력은 점진적으로 축소될 수 있다. 배당은 4개 결산연도 연속 미지급(DPS 0원)이므로 배당 수익률 측면의 투자 매력은 현재 부재한 상태다. 최대주주·자사주 합산 지분이 총 발행주식의 약 86%에 달하는 구조는, 자진상장폐지 공개매수 시 프리미엄 가능성과 함께 극소수 유통주식에 따른 주가 변동성 확대를 동시에 내포하는 양면적 요인이다. 과거 2020년 상한가 행진과 같이, 지배구조 이벤트에 대한 기대 심리는 낮은 유동성을 배경으로 주가를 단기간에 크게 끌어올릴 수 있으나, 이는 실적 펀더멘털과 괴리될 위험도 수반한다.",
-  "en": "With four consecutive years of operating losses, earnings-based multiple valuation is not applicable, and the stock is best interpreted against the company's asset base. The current share price sits at a notable discount to KRX-reported book value per share, providing a theoretical asset-value floor—though this cushion narrows progressively as operating losses and negative CFO continue to erode equity. No dividends have been paid across four consecutive fiscal years (DPS = KRW 0), meaning there is no yield-based investment appeal in the current configuration. The combined parent and treasury stake of approximately 86% of total issued shares creates a dual dynamic: a potential voluntary-delisting tender offer premium for minority shareholders on one hand, and extreme price volatility from the critically thin effective free float on the other. As illustrated by the sharp late-2020 price surge, governance event expectations can rapidly inflate the stock price in a low-liquidity environment—but this also carries the risk of material divergence from operational fundamentals."
+  "ko": "손실이 이어진 기간이 길어 주가수익비율(PER)은 통상적인 방식으로 산정하기 어려운 구간에 놓여 있다. 주가와 주당 순자산의 관계를 보면, 시장에서 형성된 주가는 회사가 보유한 순자산 가치 대비 할인된 수준에서 거래되는 편이며, 더벨은 2026년 6월 보도에서 대규모 자사주 소각 이후에도 주가가 순자산가치에 못 미치는 수준에서 거래되고 있다고 짚었다. 최근 회계연도 기준으로는 현금 배당이 이뤄지지 않아 배당을 통한 주주환원은 확인되지 않는 상태다. 다년간의 실적 흐름을 보면 2024년 한 해 근소한 흑자를 낸 뒤 2025년 다시 적자로 돌아섰다가 2026년 1분기 손실 규모가 크게 줄어드는 등, 손익이 방향을 자주 바꾸는 모습을 보여왔다. 이러한 변동성은 시장이 이 종목에 부여하는 밸류에이션 판단에 영향을 미치는 요인으로 작용할 수 있다. 회사 측은 재무 여력을 활용한 자사주 소각 등 주주가치 제고 노력을 통해 시장의 평가가 개선되기를 기대한다는 입장을 밝힌 바 있다.",
+  "en": "Given the extended period of losses, the price-to-earnings ratio cannot be meaningfully calculated in the conventional way. In terms of the relationship between share price and net asset value per share, the market price has generally traded at a discount to the company's net asset value, and TheBell noted in its June 2026 report that the shares continued trading below net asset value even after the large treasury-share retirement. No cash dividend was paid in the most recent fiscal year, so no shareholder return through dividends is currently observable. Looking at the multi-year earnings trend, results swung to a small profit in 2024, back to a loss in 2025, and then showed a sharply narrower loss in the first quarter of 2026, reflecting frequent directional shifts in profitability. This volatility can be a factor influencing how the market frames the valuation of the stock. The company has stated that it hopes efforts to enhance shareholder value, including treasury-share retirement funded by its financial capacity, will help improve the market's assessment over time."
  },
  "bull": [
   {
    "title": {
-    "ko": "자동차 액추에이터 고객 다변화 및 EV 성장 옵션",
-    "en": "Automotive Actuator Customer Diversification and EV Growth Optionality"
+    "ko": "자동차 전장 매출 비중 확대",
+    "en": "Growing automotive electronics revenue mix"
    },
    "body": {
-    "ko": "공력제어용 ACTUATOR는 내연기관 및 친환경 차량 모두에 탑재 가능하여 전동화 전환에도 수요 연속성이 기대된다. FY2025 1~2분기에 전년 동기 대비 매출이 40% 이상 증가한 것은 자동차 부문 고객 다변화 전략이 일정 부분 효과를 거두고 있음을 시사한다. 전기차 특수모터 개발도 진행 중이어서 연평균 18%로 성장이 전망되는 EV 구동모터 시장에 편승할 장기 옵션이 존재한다.",
-    "en": "Aerodynamic control actuators are applicable across both ICE and electrified vehicle platforms, offering demand continuity through the electrification transition. The over-40% year-on-year revenue increase observed in Q1–Q2 FY2025 indicates that the automotive customer diversification strategy is yielding tangible near-term results. Parallel EV special motor development provides long-term optionality on the EV drive motor market projected to grow at a ~18% CAGR through 2033."
+    "ko": "최근 보도에 따르면 자동차 관련 사업의 매출 비중이 80%까지 확대됐다. 완성차 업체의 신차 개발 단계부터 참여하는 공급 구조를 갖춰나가고 있으며, 회사는 이를 기반으로 향후 3년간 연평균 25~30% 성장을 기대하고 있다고 밝혔다. 하이브리드·전기차용 부품 양산에 이어 전기차 열관리 액추에이터 양산도 계획하고 있어 사업 포트폴리오가 다변화되는 모습이다.",
+    "en": "Recent reporting indicates automotive-related business now makes up as much as 80% of sales. The company has been building a supply structure that engages with automakers from the early stages of new-model development, and management has said it expects 25-30% average annual growth over the next three years on this basis. Following mass production of hybrid and electric vehicle parts, the company also plans to produce EV thermal management actuators, diversifying its product portfolio."
    }
   },
   {
    "title": {
-    "ko": "보수적 재무 구조와 자산 가치 완충",
-    "en": "Conservative Balance Sheet and Asset Value Buffer"
+    "ko": "2026년 1분기 손실 규모 큰 폭 축소",
+    "en": "Sharp narrowing of losses in Q1 2026"
    },
    "body": {
-    "ko": "부채비율이 FY2025 기준 약 8.9%로 사실상 무차입에 가까운 보수적 재무 구조를 유지하고 있어 단기 지급 불능 리스크가 매우 낮다. FY2025 말 연결 지배주주 자기자본은 약 698억원으로, 현재 시가총액 대비 상당한 자산 잉여가 존재한다. 일본 모회사 미네베아미쯔미의 글로벌 공급망·기술·고객 네트워크와의 연계는 독립 중소기업 대비 운영 안정성을 제공하는 배경이 된다.",
-    "en": "The debt ratio of approximately 8.9% as of FY2025 reflects a near-debt-free balance sheet, substantially reducing near-term financial distress risk. Consolidated equity attributable to controlling shareholders reached approximately KRW 69.8 billion at end-FY2025—a substantial asset base relative to the current market capitalization. Affiliation with parent MinebeaMitsumi provides access to global supply chains, technology, and customer relationships that independently-operating mid-caps would typically lack."
+    "ko": "2026년 1분기 매출은 144.2억원으로 늘었고 영업손실은 -1.3억원, 지배주주 순손실은 -0.02억원으로 손익분기점에 근접했다. 직전 4개 분기 중 가장 큰 손실을 낸 2025년 4분기(영업손실 -17.2억원) 이후 뚜렷한 개선 흐름이 나타난 것으로, 회사 측은 2027년 흑자전환을 목표로 제시했다.",
+    "en": "Q1 2026 revenue rose to KRW14.42 billion, with the operating loss narrowing to KRW-0.13 billion and the owners' net loss nearing breakeven at KRW-2.2 million. This marks a clear improvement following Q4 2025, the worst quarter in the trailing four-quarter window with an operating loss of KRW-1.72 billion, and management has set a target of returning to profitability in 2027."
    }
   },
   {
    "title": {
-    "ko": "지배구조 이벤트 및 자진상장폐지 프리미엄 가능성",
-    "en": "Governance Event Optionality and Potential Voluntary Delisting Premium"
+    "ko": "우량한 재무구조와 주주환원 노력",
+    "en": "Solid balance sheet and shareholder-return efforts"
    },
    "body": {
-    "ko": "최대주주 미네베아미쯔미(약 50.85%)와 자사주(약 35.77%)를 합산한 지분이 총 발행주식의 약 86%에 달해, 자사주 제외 기준 95% 확보가 필요한 자진상장폐지 요건을 향한 추가 지분 매집 여력이 크지 않다. 자진상장폐지 공개매수 절차가 개시될 경우 일반적으로 시장가 대비 상당한 프리미엄이 부여되는 사례가 많아 소수주주에게 단기 차익 가능성이 된다. 2016~2018년 선례처럼 자진상장폐지가 재추진될 경우 유통주식이 희소한 구조에서 주가 급변동 모멘텀이 발생할 수 있다.",
-    "en": "The combined parent and treasury stake of approximately 86% of total issued shares means MinebeaMitsumi is closer to—though not yet at—the threshold required for a renewed voluntary delisting (95% of shares excluding treasury shares). A public tender offer in connection with voluntary delisting typically carries a premium to market price, representing a potential short-term catalyst for minority shareholders. As observed in 2016–2018 and in 2020's sharp share price surge, any renewed delisting initiative could generate significant price volatility given the critically thin effective free float."
+    "ko": "부채비율이 2022~2025년 모두 10% 이하 수준을 유지하는 등 재무구조는 안정적인 편이다. 회사는 251억원 규모의 자사주를 소각하며 주주가치 제고에 나섰고, 최대주주인 미네베아미쓰미의 글로벌 판매망을 활용한 판촉 확대도 추진하고 있다.",
+    "en": "The debt ratio has stayed below 10% every year from 2022 through 2025, indicating a relatively stable balance sheet. The company retired treasury shares worth KRW25.1 billion to enhance shareholder value, and it is also pursuing expanded sales through the global distribution network of controlling shareholder Minebea Mitsumi."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4년 연속 적자 심화 및 수익성 회복 불확실성",
-    "en": "Deepening Four-Year Loss Streak and Profitability Recovery Uncertainty"
+    "ko": "5개 연속 사업연도 영업손실",
+    "en": "Five consecutive fiscal years of operating losses"
    },
    "body": {
-    "ko": "영업손실은 FY2022부터 매년 확대되어 FY2025에 31.6억원(OPM –10.0%)이라는 4년 최대 손실을 기록했으며, 매출이 4년간 305~320억원 구간에서 정체해 외형 성장만으로 손익분기점 달성이 어려운 구조임을 보여주고 있다. CFO는 4년 중 3년이 음수를 기록해 현금 창출력의 구조적 취약성이 지속되고 있다. 지배주주 귀속 순이익도 FY2024의 미미한 흑자 전환 후 FY2025에 –19.8억원으로 되돌아갔다.",
-    "en": "The operating loss widened every year from FY2022, reaching KRW 3.16 billion (–10.0% OPM) in FY2025—the largest loss in the streak—against a revenue base flat at KRW 30–32 billion for four years, indicating top-line growth alone is insufficient to bridge the gap to breakeven. Operating cash flow was negative in three of four years, pointing to a structural deficiency in cash generation. Attributable net income swung from a slim FY2024 positive to –KRW 1.98 billion in FY2025, erasing the prior year's fragile recovery."
+    "ko": "2022년부터 2025년까지 4개 연도 모두 영업손실을 기록했으며, 보도에 따르면 5개 사업연도 연속 영업손실로 2024년 6월 투자주의환기종목으로 지정된 상태다. 지배주주 순이익 기준으로도 2024년의 근소한 흑자를 제외하면 대부분 적자를 벗어나지 못했다.",
+    "en": "The company posted operating losses in all four years from 2022 through 2025, and according to reporting, five consecutive fiscal years of operating losses led to its designation as an investment-alert issue in June 2024. On an owners' net income basis as well, results remained in the red in most years except for a small profit in 2024."
    }
   },
   {
    "title": {
-    "ko": "FY2025 Q4 매출 급락의 지속 리스크",
-    "en": "Risk of Sustained Revenue Impairment Following Q4 FY2025 Collapse"
+    "ko": "낮은 유동성과 상장유지 리스크",
+    "en": "Low liquidity and listing-maintenance risk"
    },
    "body": {
-    "ko": "FY2025 4분기(2025년 1~3월) 매출이 약 9.4억원으로 직전 3분기 평균 대비 91% 급감한 것은 계절성만으로 설명하기 어려운 이례적 현상으로, 대규모 고객 이탈 또는 일회성 대규모 비용 집중 가능성을 시사한다. 해당 분기 영업손실 17.2억원이 연간 손실의 절반 이상을 차지하나, 원인에 대한 공식 설명이 공시를 통해 제시되지 않아 외부 투자자의 가시성이 매우 낮다. FY2026 Q1 실적이 아직 공개되지 않아 이후 회복 여부를 현시점에서 검증할 수 없다.",
-    "en": "The approximately 91% sequential revenue decline in Q4 FY2025 to KRW 940 million is too extreme to attribute to seasonality, raising concerns about a permanent customer loss or a large non-recurring charge event. More than half of the full-year operating loss was concentrated in this single quarter, yet no formal explanation has been provided in available disclosures, leaving earnings visibility severely impaired for external investors. Since Q1 FY2026 data is not yet available, there is no observable basis to confirm or deny a recovery."
+    "ko": "평소 일일 거래량이 3만주를 밑도는 날이 대부분일 정도로 유동성이 낮다는 평가가 나온다. 코스닥 상장유지를 위한 시가총액 기준이 하반기부터 200억원으로 상향되는데, 주가가 추가로 하락할 경우 이 기준선에 근접할 수 있다는 점이 지적된다.",
+    "en": "Liquidity has been characterized as low, with daily trading volume typically under 30,000 shares. As the KOSDAQ listing-maintenance market-cap threshold rises to KRW20 billion in the second half, further share-price declines could bring the company closer to that line, according to industry commentary."
    }
   },
   {
    "title": {
-    "ko": "전통 OA 스테핑 모터 시장의 구조적 쇠퇴",
-    "en": "Structural Decline of the Traditional OA Stepping Motor Market"
+    "ko": "환율·원가 구조 노출",
+    "en": "Exposure to FX and cost structure"
    },
    "body": {
-    "ko": "ODD·FDD 등 전통 OA 기기용 스테핑 모터 시장은 디지털화 전환으로 장기 감소 추세에 있으며, 이는 모아텍이 역사적으로 강점을 지닌 수요처의 지속적 축소를 의미한다. 중국 정밀 모터 업체의 저가 경쟁 심화는 스테핑 모터 평균 판매가(ASP)를 지속적으로 압박하는 구조적 역풍이다. 자동차·EV 부문으로의 전환이 성공적으로 규모화되지 않을 경우, 전통 사업 부문 쇠퇴에 따른 매출 기반의 구조적 축소가 불가피해진다.",
-    "en": "The traditional OA stepping motor market (ODD/FDD applications) is in secular decline due to digitalization, steadily shrinking the historical demand base that underpinned Moatech's competitive origins. Chinese precision motor manufacturers' increasingly aggressive pricing creates ongoing downward pressure on average selling prices for standard stepping motors across the industry. If the automotive and EV pivot does not achieve sufficient scale, overall revenue is at risk of structural compression rather than stabilization around the current KRW 30–32 billion level."
+    "ko": "주요 원재료를 수입하고 필리핀 생산법인을 활용하는 사업 구조상 환율 변동에 따른 원가 부담을 크게 받고 있다. 위탁 매입 상품 매출 비중이 늘면서 매출원가율이 90%에 육박했다는 분석도 나와, 수익성 개선에 시간이 필요하다는 진단이 있다.",
+    "en": "Because the business imports most raw materials and relies on a Philippine production subsidiary, it is significantly exposed to cost pressure from currency fluctuations. Analysis has also pointed out that as the share of consigned-purchase merchandise sales has grown, the cost-of-goods ratio has approached 90%, suggesting profitability improvement will take time."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "실적 가시성 및 고객 집중 리스크",
-    "en": "Earnings Visibility and Customer Concentration Risk"
+    "ko": "실적/사업 리스크",
+    "en": "Earnings/business risk"
    },
    "body": {
-    "ko": "FY2025 4분기 매출 급락이 일회성이 아닌 구조적 고객 관계 변화를 반영한 것이라면 연간 실적 예측 가능성이 크게 저하된다. 최대주주 계열사와의 내부 거래 의존도가 높을 경우 모회사 전략 변경에 따라 수주량이 급변할 수 있는 리스크도 상존한다. 공식 가이던스 및 수주 잔고 관련 공시가 제한적이어서 외부 투자자의 분기별 실적 가시성이 낮다.",
-    "en": "If the Q4 FY2025 revenue collapse reflects structural changes in customer relationships rather than a one-off event, earnings predictability would be materially impaired going forward. Potential dependency on intra-group transactions with the parent's affiliates means strategic shifts at MinebeaMitsumi could cause abrupt order volume swings. Limited formal guidance and scarce order backlog disclosures reduce quarterly earnings visibility for external investors."
+    "ko": "다년간 영업손실이 이어져왔고 손익 방향이 분기별로 크게 출렁이는 모습을 보였다. 2025년 4분기의 매출 급감과 2026년 1분기의 매출 급증처럼 아직 설명되지 않은 변동성이 존재해, 향후 실적의 방향성을 예단하기 어려운 상황이다.",
+    "en": "Operating losses have persisted across multiple years, with earnings direction swinging significantly on a quarterly basis. Unexplained volatility, such as the sharp revenue drop in Q4 2025 followed by a sharp rebound in Q1 2026, makes it difficult to project the future direction of results."
    }
   },
   {
    "cat": {
-    "ko": "유동성·거버넌스 리스크",
-    "en": "Liquidity and Governance Risk"
+    "ko": "상장유지/유동성 리스크",
+    "en": "Listing-maintenance/liquidity risk"
    },
    "body": {
-    "ko": "유통주식 비율이 극히 낮아 소량의 매매만으로도 주가 급변동이 발생할 수 있으며, 시세 조종 노출 위험도 상존한다. 자진상장폐지가 재추진될 경우 공개매수 가격 결정 과정에서 소수주주 보호 이슈가 불거질 수 있다. 최대주주가 이사회를 사실상 통제하는 구조에서 소수주주의 실질적 의결권 영향력은 제한적이다.",
-    "en": "The extremely thin effective free float means even modest trading volumes can produce sharp price swings and heighten exposure to potential market manipulation. Should a voluntary delisting be re-pursued, the tender offer pricing process may surface minority shareholder protection concerns. In a governance structure where the majority shareholder exercises practical board control, minority shareholders have limited effective influence over major corporate decisions."
+    "ko": "코스닥 상장유지를 위한 시가총액 기준이 하반기부터 200억원으로 상향되며, 30거래일 연속 기준을 밑돌 경우 관리종목으로 지정될 수 있다는 점이 지적된다. 평소 거래량이 적어 유동성 리스크도 함께 거론된다.",
+    "en": "The KOSDAQ listing-maintenance market-cap threshold rises to KRW20 billion in the second half, and falling below that line for 30 consecutive trading days could trigger management-issue designation, according to commentary. Low typical trading volume also raises liquidity risk concerns."
    }
   },
   {
    "cat": {
-    "ko": "원가·매크로 및 지정학적 리스크",
-    "en": "Cost, Macro, and Geopolitical Risk"
+    "ko": "환율/원가 리스크",
+    "en": "FX/cost risk"
    },
    "body": {
-    "ko": "원자재 가격 및 원/달러·원/엔 환율 변동은 중국·필리핀 해외 생산기지를 보유한 모아텍의 원가 구조에 직접 영향을 미친다. 글로벌 자동차 수요 둔화나 전기차 시장 성장 속도 조정이 발생하면 차량용 액추에이터 매출 확대 계획이 차질을 빚을 수 있다. 미·중 무역 분쟁 심화와 공급망 재편 등 지정학적 리스크는 중국 생산기지의 운영 연속성 리스크 요인으로 상존한다.",
-    "en": "Fluctuations in raw material costs and KRW/USD and KRW/JPY exchange rates directly affect the cost structure of Moatech's overseas operations in China and the Philippines. A slowdown in global automobile demand or a moderation in EV market growth pace could disrupt the company's automotive actuator expansion plan. Escalating US-China trade tensions and supply chain restructuring introduce operational continuity risks for the China manufacturing base in particular."
+    "ko": "원재료 수입과 해외 생산법인 활용 비중이 높아 환율 변동에 따른 원가 부담 노출이 구조적으로 크다. 개발비와 선행 투자 비용의 지속적 반영도 단기 수익성에 부담 요인으로 작용하고 있다.",
+    "en": "With heavy reliance on imported raw materials and overseas production subsidiaries, the business is structurally exposed to cost pressure from currency swings. Ongoing recognition of development costs and upfront investment expenses also weighs on near-term profitability."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8~9월 (FY2026 Q1·Q2 실적 공시)",
-    "en": "Aug–Sep 2026 (FY2026 Q1/Q2 Filing)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "FY2026 1분기(2025년 4~6월) 및 2분기(2025년 7~9월) 실적 공시가 이루어지면, FY2025 Q4 매출 급락이 일회성인지 구조적 이탈인지를 가장 먼저 가늠할 수 있는 핵심 데이터 포인트가 된다. 분기 매출이 100억원 수준으로 회복됐는지 여부가 최우선 확인 지표다.",
-    "en": "FY2026 Q1 (Apr–Jun 2025) and Q2 (Jul–Sep 2025) results will provide the first observable evidence of whether the Q4 FY2025 revenue cliff was a one-off anomaly or a structural customer departure; restoration of quarterly revenues toward the KRW 10 billion level is the primary metric to track."
+    "ko": "2026년 3분기(7~9월) 보고서 공시 예정 시점으로, 2026년 1분기에 나타난 손실 축소 흐름이 이어지는지, 그리고 2025년 4분기의 매출 급감·2026년 1분기의 매출 급증이 어떤 요인에서 비롯됐는지 관련 설명이 추가로 확인될 수 있는지 지켜볼 필요가 있다.",
+    "en": "Around this time the Q3 2026 (July-September) quarterly report is due, and it will be worth checking whether the loss-narrowing trend seen in Q1 2026 continues, and whether further explanation emerges for the sharp Q4 2025 revenue drop and the Q1 2026 rebound."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 수시 공시",
-    "en": "H2 2026 (Ad Hoc Disclosures)"
+    "ko": "2026년 하반기 중 상시",
+    "en": "Ongoing through H2 2026"
    },
    "what": {
-    "ko": "자동차 부문 신규 OEM 고객 수주 또는 전기차 특수모터 양산 공급 계약 체결 여부를 수시 공시를 통해 확인해야 한다. 새로운 고객 확보 공시는 매출 회복의 지속 가능성을 가늠하는 핵심 지표로 작용한다.",
-    "en": "Monitor ad hoc disclosures for new automotive OEM customer wins or EV special motor mass-production supply agreements; any such announcement would serve as a key indicator of sustainable revenue recovery and structural customer diversification."
+    "ko": "코스닥 상장유지를 위한 시가총액 기준(200억원) 상향 시행에 따라, 시가총액이 30거래일 연속 기준을 밑도는지 여부를 지속적으로 확인할 필요가 있다.",
+    "en": "With the KOSDAQ listing-maintenance market-cap threshold rising to KRW20 billion, it will be important to continuously monitor whether the company's market capitalization falls below that line for 30 consecutive trading days."
    }
   },
   {
    "when": {
-    "ko": "2026년 수시 (주식 등의 대량보유 보고)",
-    "en": "Ongoing 2026 (Large Shareholding Reports)"
+    "ko": "2027년 중",
+    "en": "During 2027"
    },
    "what": {
-    "ko": "미네베아미쯔미 및 특수관계인의 추가 지분 매집 여부를 정기적으로 점검해야 한다. 자사주 제외 발행주식의 95% 임계치에 근접하는 지분 변동 공시는 자진상장폐지 논의 재점화를 알리는 사전 신호가 될 수 있다.",
-    "en": "Regularly monitor large shareholding reports for incremental stake accumulation by MinebeaMitsumi or affiliates; any disclosed movement approaching the 95% threshold (of non-treasury shares) required for voluntary delisting could reignite delisting premium discussions."
+    "ko": "회사가 밝힌 전기차 열관리 시스템용 액추에이터 양산 개시 일정과 자동차 액추에이터 매출 성장(연평균 25~30%) 목표의 실제 진행 상황을 확인할 시점이다.",
+    "en": "This is when to check the actual progress of the company's stated plan to begin mass production of EV thermal management actuators, and whether the targeted 25-30% average annual growth in automotive actuator revenue is materializing."
    }
   },
   {
    "when": {
-    "ko": "2027년 초 (FY2026 연간 결산 공시)",
-    "en": "Early 2027 (FY2026 Annual Results)"
+    "ko": "2027년 초(2026사업연도 사업보고서 공시 시점)",
+    "en": "Early 2027 (filing of the FY2026 annual report)"
    },
    "what": {
-    "ko": "FY2026 연간 영업손실이 FY2025의 31.6억원 대비 개선 또는 악화되는지, 그리고 CFO 흑자 전환 여부를 통해 4년 영업적자 구조의 실질적 개선 여부를 검증할 수 있다. 4년 만의 배당 재개 결정 여부도 회사의 재무 자신감과 주주 환원 의지를 가늠하는 신호가 된다.",
-    "en": "Full-year FY2026 results will determine whether the four-year operating loss streak is being broken; improvement in operating loss from the FY2025 level of KRW 3.16 billion, combined with positive CFO, would constitute the most meaningful evidence of structural recovery. A potential dividend reinstatement after four consecutive no-dividend years would also signal improved financial confidence."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026~2027년 (공력제어 ACTUATOR 양산 확대 진행 상황)",
-    "en": "2026–2027 (Aerodynamic Actuator Production Ramp Updates)"
-   },
-   "what": {
-    "ko": "자동차 공력제어 액추에이터의 신규 차종 적용 확대 및 고객 납품 다변화 관련 실적 언급 또는 IR 자료를 통해 해당 부문의 실질적 성장 기여도를 확인해야 한다. 이 부문의 분기별 매출 기여 변화가 전체 실적 회복의 선행 지표로 기능할 수 있다.",
-    "en": "Track automotive aerodynamic control actuator application expansion to new vehicle models and customer diversification progress through quarterly results commentary or IR materials; incremental revenue contribution from this segment is a leading indicator for overall earnings recovery."
+    "ko": "회사가 제시한 '2026년까지 이익 개선, 2027년 흑자전환' 목표의 첫 확인 지점으로, 2026년 전체 연간 영업손익 수치와 가이던스 달성 여부를 점검할 필요가 있다.",
+    "en": "This marks the first checkpoint for verifying the company's stated goal of continued profit improvement through 2026 and a return to profitability in 2027, by examining the full-year FY2026 operating result against guidance."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "모아텍은 정밀 스테핑 모터 전문 기업에서 차량용 액추에이터 및 전기차 모터 공급사로 전환하는 과도기에 있으나, 4년 연속 영업적자와 FY2025 4분기의 매출 91% 급락이라는 이중 과제가 구조전환의 발목을 잡고 있다. 매출은 4년간 305~320억 원 구간에서 정체하는 반면 영업손실은 FY2025 들어 31.6억원(OPM –10.0%)으로 확대되어, 단순 외형 성장 논리만으로는 손익분기점 달성이 어려운 구조임을 확인시켜 주고 있다. FY2025 4분기 매출의 이례적 급락(약 9.4억원)은 현시점에서 가장 큰 미해결 불확실성으로 남아 있으며, 후속 분기 실적 공시가 이를 해소하기 전까지 실적 가시성은 매우 낮은 수준에 머물 것이다. 반면 부채비율 약 8.9%와 연결 지배주주 자기자본 약 698억원은 단기 재무 위기 리스크를 낮추는 완충 역할을 한다. 자동차 고객 다변화와 전기차 특수모터 개발은 중장기 성장 옵션이지만, 양산 수주 공시로 수치화되기 전까지는 잠재력으로만 평가된다. 최대주주 미네베아미쯔미의 약 86% 합산 지분은 자진상장폐지 프리미엄 가능성을 내포하는 동시에, 극도의 유통주식 희소성에 따른 주가 변동성 위험을 증폭시키는 양면성을 갖는다. 모아텍의 구조전환 성과는 신규 자동차 고객 수주 여부, FY2026 이후 영업손실 축소 및 CFO 흑자 전환, 그리고 FY2025 Q4 급락에 대한 후속 분기 실적을 통한 검증에 의해 판가름날 것으로 판단된다.",
-   "en": "Moatech is navigating a structural transition from traditional precision stepping motor supplier to automotive actuator and EV motor company, but this pivot is being complicated by four consecutive years of operating losses and the extraordinary Q4 FY2025 revenue collapse. Revenue has been flat at approximately KRW 30–32 billion for four years while the operating loss widened to KRW 3.16 billion (–10.0% OPM) in FY2025, confirming that top-line growth alone is insufficient to achieve breakeven in the current cost structure. The roughly 91% sequential revenue drop in Q4 FY2025 to KRW 940 million is the pivotal unresolved uncertainty; earnings visibility will remain severely impaired until subsequent quarterly filings either confirm recovery or a sustained impairment. On the positive side, a debt ratio of approximately 8.9% and consolidated equity attributable to controlling shareholders of approximately KRW 69.8 billion provide a meaningful near-term financial cushion against acute distress. Automotive customer diversification and EV special motor development represent credible medium-to-long-term growth options, but these remain at the optionality stage until confirmed by quantifiable order wins and production ramps. The parent's combined ~86% stake creates a dual dynamic: potential corporate event premium for minority shareholders alongside amplified price volatility from the critically thin effective free float. The ultimate verdict on Moatech's structural turnaround will hinge on new automotive customer confirmations, a narrowing of operating losses in FY2026, positive operating cash flow, and a credible reversal of the Q4 FY2025 revenue cliff confirmed through sequential quarterly data."
+   "ko": "모아텍은 스테핑모터 단품 중심의 전통 사업에서 자동차 액추에이터 중심의 고부가가치 사업으로 전환을 진행하고 있으며, 최대주주인 미네베아미쓰미의 글로벌 네트워크를 활용하려는 시도도 병행하고 있다. 재무적으로는 2022~2025년 4개 연도 모두 영업손실을 기록했고 2025년에는 손실 규모가 오히려 확대됐지만, 2026년 1분기에는 매출이 크게 늘고 손실이 손익분기점에 근접한 수준까지 축소되는 변화가 관측됐다. 다만 2025년 4분기의 이례적인 매출 급감과 2026년 1분기의 급증이 공개 자료만으로 명확히 설명되지 않아 추가 확인이 필요하다. 코스닥 상장유지를 위한 시가총액 기준 상향이라는 제도적 변수와, 낮은 거래 유동성, 환율 노출에 따른 원가 부담 등은 지속적으로 살펴봐야 할 요인이다. 반대로 부채비율이 낮은 안정적인 재무구조, 대규모 자사주 소각을 통한 주주가치 제고 시도, 자동차 전장 부문의 성장 목표 제시 등은 강세 요인으로 거론된다. 종합적으로 이 종목은 사업 전환의 초기~중기 국면에 있으며, 향후 실적의 방향성은 자동차 전장 부문의 실제 수주·양산 진행 상황과 다음 몇 개 분기 실적을 통해 보다 분명해질 것으로 보인다.",
+   "en": "Moatech is in the process of transitioning from its traditional standalone stepping-motor business toward higher value-added automotive actuator products, while also seeking to leverage the global network of its controlling shareholder, Minebea Mitsumi. Financially, the company posted operating losses in all four years from 2022 through 2025, with the loss actually widening in 2025, but Q1 2026 showed a notable shift, with revenue rising sharply and losses narrowing to near breakeven. However, the unusual revenue collapse in Q4 2025 and the sharp rebound in Q1 2026 are not clearly explained by publicly available data and warrant further confirmation. Institutional variables such as the rising KOSDAQ listing-maintenance market-cap threshold, low trading liquidity, and cost exposure from currency fluctuations are factors that require ongoing attention. On the other hand, a low debt ratio and stable balance sheet, efforts to enhance shareholder value through a large treasury-share retirement, and stated growth targets in the automotive electronics segment are cited as supportive factors. Overall, the company appears to be in an early-to-mid stage of business transition, and the future direction of earnings is likely to become clearer through actual order and mass-production progress in the automotive electronics segment and the results of the next several quarters."
   }
  },
  "sources": [
+  "https://m.thinkpool.com/item/033200",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A033200",
   "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=033200",
-  "https://m.thinkpool.com/item/033200",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A033200",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A033200&MenuYn=Y&NewMenuID=102",
-  "https://finance.finup.co.kr/Stock/033200",
   "https://www.google.com/finance/quote/033200:KOSDAQ?hl=en",
+  "https://www.stockplus.com/m/stocks/KOREA-A033200/articles",
+  "https://www.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=LK4475",
   "https://www.thinkpool.com/item/033200/news/16023504",
-  "https://www.youtube.com/watch?v=p0Ee_KmLT6A",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/MU8wamRnWVRNeGtvaUlOa2tRZWkzZz09/company_nm/(%EC%A3%BC)%EB%AA%A8%EC%95%84%ED%85%8D",
+  "https://alphasquare.co.kr/home/stock-summary?code=033200",
+  "http://www.paxnet.co.kr/news/033200/stock?stockCode=033200&objId=S033200",
+  "https://www.etoday.co.kr/news/view/2595423",
+  "https://www.incruit.com/company/1682813538/",
+  "https://app.rndcircle.io/company/1c32a6b2-e432-500f-ac73-f6871442fb03/finances",
   "https://news.mt.co.kr/mtview.php?no=2009110215085032366",
-  "https://economychosun.com/site/data/html_dir/2010/10/07/2010100700020.html",
-  "https://www.th-solution.com/%EB%B3%B4%EC%9D%B4%EC%8A%A4%EC%BD%94%EC%9D%BC-%EB%AA%A8%ED%84%B0",
-  "https://www.togotech.co.kr/index.php/%EC%8A%A4%ED%85%9D%ED%8D%BC%EB%AA%A8%ED%84%B0",
-  "https://www.kltmotion.com/cored-motor-1",
-  "https://repository.kisti.re.kr/bitstream/10580/12493/2/25._%EC%B0%A8%EC%84%B8%EB%8C%80_%EC%9E%90%EB%8F%99%EC%B0%A8%EC%9A%A9_%EB%AA%A8%ED%84%B0_%EC%8B%9C%EC%9E%A5_%EC%A0%84%EB%A7%9D.pdf"
+  "http://www.newstomato.com/ReadNews.aspx?no=1304378",
+  "https://www.etnews.com/200501210201",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260318001422&rcpno=20260318001050&orgid=F&tran=Y&langTpCd=0",
+  "https://overseas.mofa.go.kr/jp-niigata-ko/brd/m_231/view.do?seq=915575&srchFr=&amp%3BsrchTo=&amp%3BsrchWord=&amp%3BsrchTp=&amp%3Bmulti_itm_seq=0&amp%3Bitm_seq_1=0&amp%3Bitm_seq_2=0&amp%3Bcompany_cd=&amp%3Bcompany_nm=",
+  "https://finance.finup.co.kr/Stock/033200"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "033200",
  "name": "모아텍",
  "name_en": "MOATECH CO., LTD.",
@@ -232,11 +224,11 @@
   "로봇"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-17",
- "reportTs": "2026-06-17 07:02",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 19:14",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -337,25 +329,29 @@
    }
   ],
   "valuation": {
-   "price": 2535,
-   "mcap": 0.0233,
+   "price": 2540,
+   "mcap": 0.0234,
    "shares": 9204529,
    "total_shares": 9204529,
    "wavg_shares": 9225598,
    "per": null,
    "eps": -208,
-   "pbr": 0.3399,
-   "bps": 7457,
+   "pbr": 0.3406,
+   "bps": 7458,
    "roe_ttm": -2.8,
    "ttm_window": "2025Q2~2026Q1",
    "ttm_np_owner": -1914895659,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.33,
-   "bps_krx": 7581.0,
+   "eps_src": "순이익÷주식수",
+   "pbr_krx": null,
+   "bps_krx": null,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
  }
 }

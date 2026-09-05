@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "KT 중계기 수주 기반, O-RAN이 다음 성장 열쇠",
-  "en": "KT Repeater Anchor Business — Open RAN as the Next Growth Key"
+  "ko": "테마 랠리 뒤 실적 재악화, 정상화 시험대",
+  "en": "After a Theme Rally, Earnings Slip Again"
  },
  "lead": {
-  "ko": "에프알텍은 KT 중계기 반복 수주와 비용 절감으로 수익성을 회복해 왔으나, 2026년 1분기 영업손실 재전환이 보여주듯 수주 타이밍 편차에서 비롯된 실적 변동성이 구조적 과제로 남아 있다.",
-  "en": "FRTEK has restored profitability via recurring KT repeater orders and cost discipline, yet a return to operating losses in Q1 2026 underscores the structural earnings volatility driven by order-timing concentration."
+  "ko": "에프알텍은 2025년 판관비 절감으로 수익성이 개선됐지만 2026년 상반기 들어 매출과 영업이익이 다시 악화되며, 6G·AI 데이터센터 테마로 급등했던 주가와 기초 실적 간 간극이 확인되는 국면이다.",
+  "en": "FRTek improved profitability in 2025 through cost cuts, but revenue and operating profit weakened again in the first half of 2026, exposing a gap between its theme-driven share price rally and underlying earnings."
  },
  "keypoints": [
   {
-   "ko": "KT KELIS 중계기 반복 수주: 2025년 3차례(2월·7월·9월) 합산 약 154억원 규모 수주에 이어 2026년 3월에도 약 33.8억원 계약 체결, 수주 파이프라인 가시성 유지",
-   "en": "Recurring KT KELIS orders: ~₩15.4B across three contracts in 2025 (Feb/Jul/Sep), with an additional ₩3.38B contract in March 2026, preserving near-term pipeline visibility"
+   "ko": "2025년 매출은 전년 대비 15.1% 감소했지만 영업이익은 오히려 늘어 판관비 절감 효과가 뚜렷했다",
+   "en": "2025 revenue fell 15.1% year over year, yet operating profit rose, reflecting clear cost-cutting effects"
   },
   {
-   "ko": "수익성·재무 체질 개선: 영업이익률 2022년 -24.1% → 2025년 3.6%, 부채비율 100.8%(2022) → 21.4%(2025)로 급감하며 재무 건전성 대폭 강화",
-   "en": "Profitability and balance sheet recovery: OPM turned from -24.1% (2022) to +3.6% (2025); debt ratio fell from 100.8% to 21.4% over the same period"
+   "ko": "2026년 1분기·2분기 모두 영업손실과 순손실을 기록하며 실적 개선 흐름이 다시 꺾였다",
+   "en": "Both Q1 and Q2 of 2026 posted operating and net losses, reversing the earlier improvement trend"
   },
   {
-   "ko": "O-RAN 선도 레퍼런스: KT 상용 5G 기지국에서 멀티벤더 O-RU 연동 국내 최초 성공(2023), 삼성전자와 O-RAN 공동 개발, 2024년 6G 국책과제 참여사 선정으로 차세대 생태계 진입",
-   "en": "O-RAN first-mover reference: First domestic multi-vendor O-RU interoperability on KT's commercial 5G (2023), O-RAN co-development with Samsung Electronics, and selection as a 6G national R&D participant in 2024"
+   "ko": "KT와의 반복적인 중계기 공급계약이 매출의 핵심 축이나, 계약이 대체로 단기·소규모로 매출 변동성이 크다",
+   "en": "Repeat repeater supply contracts with KT anchor revenue, but contracts are typically short-term and small, making sales volatile"
   },
   {
-   "ko": "미국 V사(Verizon) 5G mmWave 납품 완료: 북미 최대 통신사 RFI 최종 승인·납품으로 글로벌 교두보 확보, 중동·일본에서 신규 협력 확대 추진 중",
-   "en": "US carrier 'V' (Verizon) 5G mmWave delivery: Completed RFI approval and shipments to the largest US carrier, establishing a global foothold while expanding collaborative efforts in the Middle East and Japan"
+   "ko": "2026년 상반기 6G·AI 데이터센터발 광통신 테마 부상으로 주가가 급등해 투자경고종목으로 지정된 바 있다",
+   "en": "The stock surged on a 6G/AI-data-center-driven optical communications theme in H1 2026 and was designated an investment alert stock"
   },
   {
-   "ko": "실적 변동성·현금흐름 과제: 2026년 1분기 영업손실(-5.1억원) 재현과 4개년 중 3개년 영업현금흐름 마이너스 기록은 수주 집중 분기와 비수기 간 편차 관리가 핵심 모니터링 포인트임을 시사",
-   "en": "Earnings volatility and cash flow challenge: An operating loss of ₩-514M in Q1 2026 and negative operating cash flow in three of the past four fiscal years highlight the persistent order-timing gap as the key monitoring variable"
+   "ko": "부채비율은 21.4%로 낮은 편이나, 2025년 순이익 흑자에도 영업활동현금흐름은 음수를 기록했다",
+   "en": "The debt ratio remains low at 21.4%, but operating cash flow was negative in 2025 despite a net profit"
   }
  ],
  "business": {
-  "ko": "에프알텍은 2000년 이동통신 중계기 개발로 창업해 2007년 코스닥에 상장한 유무선 통신 전문기업으로, 중계기 업계 최초로 IR52 장영실상과 전파신기술상을 수상한 기술 이력을 보유하고 있다. 주력 제품은 이동통신 중계기이며, 특히 KT의 KELIS(분산 안테나 기반 광중계기) 플랫폼용 장비가 매출의 핵심축을 담당한다. 이 외에도 오픈랜(O-RAN) 무선장비(O-RU), LED 조명('루시우스' 브랜드), 군용 고출력 증폭기(K2 전차용 포함) 등으로 사업을 다각화하고 있다. 국내 최대 고객사는 KT로, 2025년 KT 우수협력사로 선정될 만큼 긴밀한 파트너십을 유지하고 있다. 해외에서는 미국 최대 통신사(V사)에 5G mmWave 중계기를 최종 납품하며 북미 시장에 진입했고, 중동·일본에서도 신규 협력 사업을 확대하는 중이다. 2023년에는 KT 상용 5G 기지국에 자사 O-RU와 노키아 O-DU를 멀티벤더로 연동하는 데 국내 최초로 성공했으며, 삼성전자와도 O-RAN 기술을 공동 개발하고 있다. 2024년에는 5G MO(다중사업자) 통합 실내 중계기 개발을 완료해 특화망(이음5G) 시장을 겨냥했고, 6G 국책과제 참여사로도 선정됐다. 국내 경쟁 구도는 쏠리드·이노와이어리스·에이스테크 등이 포진해 있으며, 오픈랜 생태계에서는 삼성전자를 주축으로 한 국내 협력 생태계 내에서 경쟁한다. 2023년 경기 의왕시로 본사·공장을 이전하며 생산 역량을 강화했고, 일본 법인은 청산 마무리 단계로 해외 비용 부담이 완화되는 추세다.",
-  "en": "FRTEK was founded in 2000 with the development of mobile repeaters and listed on KOSDAQ in 2007, having won the IR52 Jang Young-sil Award and the Radio New Technology Award—firsts in the domestic repeater industry. Its core product is the mobile repeater, with KT's KELIS distributed-antenna optical repeater platform forming the backbone of its revenue. The company has diversified into Open RAN radio units (O-RU), LED lighting (proprietary 'Lucius' brand), and military high-power amplifiers, including units for the K2 main battle tank. KT is the dominant domestic customer, and FRTEK was recognized as a KT preferred supplier in 2025. Internationally, the company has delivered 5G mmWave repeaters to the largest US carrier ('V') following final RFI approval, and is broadening collaborative projects in the Middle East and Japan. In 2023, FRTEK achieved a Korean first by connecting its O-RU to Nokia's O-DU in a multi-vendor configuration on a KT commercial 5G base station, and also co-develops O-RAN equipment with Samsung Electronics. In 2024 it completed development of a 5G Multi-Operator integrated in-building repeater targeting private 5G (Eum-5G) networks, and was selected as a 6G national R&D participant. The domestic competitive landscape includes Solid, InnoWireless, and Ace Technologies, while the O-RAN ecosystem is coalescing around a Samsung-led domestic alliance. The headquarters and factory relocated to Uiwang, Gyeonggi-do in 2023, strengthening manufacturing capacity, while the Japanese subsidiary is in its final wind-down phase to reduce overseas overhead."
+  "ko": "에프알텍은 이동통신 중계기(RF 중계기, 광중계기 등)를 주력으로 개발·제조하는 통신장비 전문기업으로, 국내에서는 KT를 비롯한 통신사에 반복적으로 장비를 공급해왔다. 2026년 3월에는 KT와 KELIS 중계기 공급계약을 체결했으며, 계약금액은 33억7,903만원으로 2024년 매출액의 11.4% 수준이었고 계약 기간은 2026년 3월 17일부터 6월 8일까지였다. 과거에는 미국 최대 통신사 버라이즌에 28GHz·39GHz 대역 5G 중계기를 직접 공급한 이력이 있으며, 이를 위해 미국 현지법인(FRTek US LLC)을 운영하고 있다. 국내 중계기 시장에는 매출 규모가 훨씬 큰 쏠리드, 특화망·프론트홀 장비의 에치에프알 등 경쟁사가 존재해 에프알텍은 상대적으로 매출 규모가 작은 중견 사업자에 해당한다. 회사는 이동통신 중계기 개발로 시작해 유무선 통신 솔루션 전반으로 사업을 확장해왔으며, 업계 최초로 장영실상을 수상한 기술력을 보유하고 있다고 알려져 있다. 매출 구성은 국내 통신사 대상 공급계약이 중심이며, 해외(북미) 매출은 아직 시험적 공급 단계에 머물러 있는 것으로 파악된다. 통신사의 5G/6G 설비투자 사이클과 정부의 통신망 고도화 정책 방향에 실적이 크게 연동되는 구조다.",
+  "en": "FRTek is a telecom equipment specialist focused on developing and manufacturing mobile repeaters, including RF and optical repeaters, and has repeatedly supplied equipment to Korean carriers including KT. In March 2026, the company signed a KELIS repeater supply contract with KT worth 3.379 billion won, equal to 11.4% of 2024 revenue, running from March 17 to June 8, 2026. The company previously supplied 28GHz and 39GHz band 5G repeaters directly to Verizon, the largest US carrier, and operates a US subsidiary, FRTek US LLC, to support this business. In the domestic repeater market, larger competitors such as SOLiD and private-network/fronthaul specialist HFR overshadow FRTek in scale, positioning it as a smaller mid-tier player. The company began as a mobile repeater developer and has since expanded into broader wired and wireless communication solutions, and is known to hold technology recognized with Korea's IR52 Jang Young-sil Award. Revenue is centered on domestic carrier supply contracts, with overseas (North American) sales still largely at a trial-supply stage. Earnings are closely tied to carriers' 5G/6G capital expenditure cycles and the direction of government network-upgrade policy."
  },
  "earnings": {
-  "ko": "에프알텍의 연간 매출은 2022년 약 186억원에서 2024년 약 298억원으로 2년간 약 60% 성장했으나, 2025년에는 통신사 투자 수요 정체로 약 253억원으로 전년 대비 15%가량 감소했다. 영업이익률은 2022년 -24.1%, 2023년 -2.0%에서 2024년 2.7%, 2025년 3.6%로 단계적으로 개선됐으며, 이는 판관비 절감과 일본 법인 청산 비용 감소, 미국 사업부 손실 축소가 복합적으로 기여한 결과다. 지배주주 귀속 순이익은 2024년 약 11.1억원에서 2025년 약 20.8억원으로 거의 두 배 증가했는데, 기타수익 등 비영업 항목의 기여가 포함된 점을 감안해야 한다. 2022년 순이익이 약 80.5억원으로 이례적으로 컸던 것은 대규모 영업외 일회성 이익이 반영된 것이며, 동 연도 영업이익은 -약 44.9억원이었다. 분기별로는 2025년 1분기에 매출 약 91.9억원, 영업이익 약 6.4억원을 집중 시현해 연간 실적의 대부분을 단일 분기에 올렸다. 반면 2분기(-0.2억원), 3분기(-1.6억원)는 영업손실을 기록했고 4분기에 약 4.5억원으로 회복됐다. 2026년 1분기에는 매출 약 40.8억원, 영업손실 약 5.1억원으로 약화됐는데, 이는 KT 대규모 납품 집중 분기와 비수기 간 매출 편차가 연간 단위로도 상당함을 재확인시켜 준다. 부채비율이 100.8%(2022)에서 21.4%(2025)로 급락해 재무 구조는 크게 개선됐으나, 영업현금흐름은 2023년(+약 78.5억원)을 제외하면 2022년(-57.4억원), 2024년(-37.2억원), 2025년(-19.4억원)으로 지속 마이너스를 기록해 이익의 현금화가 구조적으로 제한되어 있다.",
-  "en": "Annual revenue grew roughly 60% from about ₩18.6B in 2022 to ₩29.8B in 2024, before declining approximately 15% to ₩25.3B in 2025, as domestic carrier 5G investment demand stagnated. OPM improved stepwise from -24.1% (2022) and -2.0% (2023) to 2.7% (2024) and 3.6% (2025), driven by SG&A reduction, lower Japan subsidiary restructuring charges, and a narrowing US-unit operating loss. Net income attributable to owners nearly doubled from ₩1.11B (2024) to ₩2.08B (2025), though non-operating income items contributed meaningfully. The atypically high net income of approximately ₩8.05B in 2022—despite an operating loss of roughly ₩4.49B—reflects a large one-off non-operating gain that year. Quarterly results display marked seasonality: Q1 2025 generated about ₩9.19B in revenue and ₩640M in operating profit, concentrating a disproportionate share of annual earnings in one quarter, while Q2 (₩-19M OP) and Q3 (₩-159M OP) both posted operating losses, recovering in Q4 to ₩454M. Q1 2026 weakened again to ₩4.08B in revenue and ₩-514M in operating profit, reconfirming the wide gap between heavy-delivery and lean quarters. While the debt ratio fell sharply from 100.8% (2022) to 21.4% (2025)—a major balance-sheet milestone—operating cash flow has been negative in three of the four years through 2025 (exceptions: FY2023 at +₩7.85B), indicating a structural lag in converting accrual profits into cash."
+  "ko": "2022년 매출 186억원, 영업손실 44.9억원의 적자 구조에서 2023년 매출 248억원으로 회복했으나 영업손실 5.0억원을 이어갔고, 순이익은 기타손익 등에 힘입어 22.9억원 흑자를 기록했다. 2024년에는 매출이 298억원으로 늘며 영업이익 8.1억원(영업이익률 2.7%)으로 흑자 전환했으나, 2025년 매출은 253억원으로 전년 대비 15.1% 줄었음에도 영업이익은 9.2억원(영업이익률 3.6%)으로 오히려 개선됐다. 이는 판관비 절감과 기타수익 증가가 매출 감소분을 상회하며 나타난 결과로, 회사 측도 통신사업 수요 정체 속 비용 효율화가 주된 요인이라고 설명했다. 2025년 지배주주 순이익은 20.8억원으로 전년(11.1억원) 대비 크게 늘며 이익 회복 흐름이 뚜렷했다. 그러나 분기별로 보면 흐름이 균일하지 않다. 2025년 3분기 매출 56.0억원·영업손실 1.6억원에서 4분기에는 매출 63.2억원·영업이익 4.5억원으로 개선됐으나, 2026년 1분기 매출이 40.8억원으로 급감하며 영업손실 5.1억원·순손실 3.8억원을 기록했고, 2분기에는 매출이 18.3억원까지 줄며 영업손실 11.8억원·순손실 10.2억원으로 손실 규모가 오히려 확대됐다. 그 결과 2025년 3분기부터 2026년 2분기까지 최근 네 개 분기 합산 지배주주 순이익은 약 -6.8억원의 손실로, 2025년 연간 흑자 흐름이 2026년 상반기 들어 재차 꺾인 모습이다. 한편 2025년 영업활동현금흐름은 -19.4억원으로 순이익 흑자와 배치되는데, 이는 계약 진행에 따른 재고·수취채권 등 운전자본 변동이 반영된 결과로 해석된다.",
+  "en": "After a loss-making 2022 (revenue of 18.6 billion won, operating loss of 4.49 billion won), the company recovered to 24.8 billion won in revenue in 2023 but still posted an operating loss of 501 million won, while net profit reached 2.29 billion won on the back of other gains. In 2024, revenue grew to 29.8 billion won with an operating profit of 814 million won (2.7% margin), and in 2025, despite revenue falling 15.1% year over year to 25.3 billion won, operating profit actually rose to 920 million won (3.6% margin). The company attributed this to cost efficiency measures and increased other income offsetting the revenue decline amid stagnant telecom demand. Owner net profit in 2025 reached 2.08 billion won, up sharply from 1.11 billion won the prior year, marking a clear earnings recovery. Quarterly trends, however, have been uneven: revenue of 5.6 billion won and an operating loss of 159 million won in Q3 2025 improved to 6.32 billion won in revenue and 454 million won in operating profit in Q4 2025, but Q1 2026 revenue plunged to 4.08 billion won with an operating loss of 514 million won and a net loss of 375 million won, and Q2 2026 revenue fell further to 1.83 billion won with losses widening to an operating loss of 1.18 billion won and a net loss of 1.02 billion won. As a result, the sum of owner net profit over the most recent four quarters (Q3 2025 through Q2 2026) was a loss of roughly 681 million won, showing that the 2025 profit recovery reversed again in the first half of 2026. Separately, 2025 operating cash flow was negative 1.94 billion won despite the net profit, a divergence likely tied to working-capital swings in receivables and inventory linked to contract execution timing."
  },
  "industry": {
-  "ko": "국내 5G 통신장비 시장은 2019~2022년 초기 구축 사이클 이후 수요 정체기에 진입해 관련 업체들의 실적이 전반적으로 부진했다. 그러나 5G 단독망(SA) 전환 및 망 고도화 수요 재개와 함께 2026년 국내 통신 3사 합산 CAPEX가 9조원을 상회할 것으로 예상되는 등 업황 회복 기대감이 높아지고 있다. 글로벌 오픈랜(O-RAN) 시장은 시장조사기관 옴디아 기준으로 2021년 12억 달러에서 2026년 64억 달러로 5배 이상 성장이 전망되며, 화웨이 등 중국 장비업체에 대한 미국의 규제 강화가 국내 중소 장비기업들의 글로벌 공급망 진입 기회를 열고 있다. 5G SA 전환이 이뤄지지 않으면 네트워크 슬라이싱과 피지컬 AI 인프라 구현이 어렵기 때문에, 2026년 이후 투자는 선택이 아닌 필수라는 시각이 증권가에서도 형성되고 있다. 반면 기존 폐쇄형 망 대비 O-RAN의 기술 성숙도 부족, 글로벌 대형 장비사(에릭슨·노키아)의 견제, 통신사의 기존 망 호환성 부담은 보급 속도를 제한하는 요인이다. 특화망(Private 5G) 시장은 스마트팩토리·자율주행 수요와 맞물려 연평균 20% 이상 고성장이 예측되고 있어 관련 솔루션 업체들에게 신성장 기회를 제공한다. 에프알텍은 정부의 오픈랜 인더스트리 얼라이언스(ORIA) 회원사로 참여하며 정책 수혜 생태계에 포함돼 있다. 2030년 상용화 목표인 6G를 향한 R&D 투자 확대는 중장기 성장 기대를 높이지만, 단기 매출 기여는 제한적이다.",
-  "en": "The domestic 5G telecom equipment market has been in a demand lull since the initial build-out cycle of 2019–2022, broadly depressing sector earnings. A recovery is expected as carriers resume 5G Standalone (SA) upgrades and network densification, with domestic aggregate carrier capex projected to exceed ₩9 trillion in 2026. The global Open RAN market is forecast to grow more than five-fold from $1.2B (2021) to $6.4B (2026) per Omdia, with Huawei and other Chinese vendors' exclusion from Western markets creating tangible supply-chain openings for Korean mid-cap equipment makers. The prevailing view among market analysts is that 5G SA investment is non-optional beyond 2026, as network slicing and physical-AI infrastructure cannot be fully realized on non-SA networks. Counterbalancing these tailwinds are O-RAN's technology maturity gap versus legacy closed-RAN, resistance from Ericsson and Nokia protecting their installed base, and carrier reluctance to disrupt network compatibility. The private 5G (Eum-5G) market is forecast to grow at an annual rate exceeding 20%, driven by smart factory, autonomous vehicle, and smart-city deployments. FRTEK participates in the government-backed Open RAN Industry Alliance (ORIA), situating it within the policy-support ecosystem. Long-term R&D investment targeting 6G commercialization by 2030 raises the medium-term growth ceiling, though near-term revenue contributions remain limited."
+  "ko": "국내 이동통신 중계기 시장은 통신사의 5G 커버리지 확충과 인빌딩 솔루션 투자에 좌우되며, 최근에는 통신사업 수요 정체가 매출 감소의 주된 배경으로 지목됐다. 반면 2026년 들어서는 글로벌 빅테크의 AI 데이터센터 투자 확대와 실리콘 포토닉스·광통신 기술에 대한 투자 발표가 이어지면서 6G·광통신 관련 국내 중소형 장비주 전반이 테마성 관심을 받았다. 스페인에서 열린 MWC 2026 이후 삼성전자·SK텔레콤 등이 참여하는 협의체(AINA) 출범 소식도 이러한 관심을 뒷받침한 것으로 보도됐다. 다만 국내 중계기 시장의 절대적 규모는 쏠리드(연매출 2,293억원 수준)에 비해 에프알텍이 크게 작으며, 특화망·프론트홀 분야에서는 에치에프알 등이 별도의 포지션을 구축하고 있다. 해외 시장에서는 과거 버라이즌에 테스트 물량을 공급한 이력이 있으나, 본 물량 수주로 이어졌는지는 최신 확인이 필요한 부분이다. 결국 산업 사이클은 통신사 투자 재개 시점과 6G 표준화 진행 속도, AI 데이터센터발 광네트워크 수요 확산 여부에 달려 있으며, 에프알텍은 상대적으로 소규모 플레이어로서 이 사이클의 수혜 정도가 대형사와는 다를 수 있다.",
+  "en": "The domestic mobile repeater market hinges on carriers' 5G coverage expansion and in-building solution investment, and recent stagnation in telecom capex was cited as the main reason for the 2025 revenue decline. In 2026, however, expanding AI data center investment by global big tech firms and announcements around silicon photonics and optical communication technology drew thematic attention to small and mid-cap 6G and optical communication equipment names in Korea. Reports also linked this attention to the launch of an industry alliance involving Samsung Electronics and SK Telecom following MWC 2026 in Spain. Still, FRTek's scale is far smaller than SOLiD, which posts roughly 229.3 billion won in annual revenue, while HFR has built a separate position in private-network and fronthaul equipment. Overseas, the company previously supplied test volumes to Verizon, though whether this progressed into full-volume orders requires further confirmation. Ultimately, the industry cycle depends on when carriers resume capex, the pace of 6G standardization, and whether AI-data-center-driven demand for optical networks broadens, and as a relatively small player, FRTek's exposure to this cycle may differ from that of larger competitors."
  },
  "outlook": {
-  "ko": "에프알텍은 2026년에도 KT KELIS 중계기 반복 수주를 통해 매출 기반을 유지할 전망이다. 2026년 3월 체결된 약 33.8억원 KT 계약은 2분기 매출에 반영될 예정이며, 과거 패턴(2025년 2월·7월·9월 연속 수주)을 감안하면 하반기 추가 대형 계약 공시 가능성이 있다. 미국 V사와의 5G mmWave 중계기 파트너십은 계속 유지되고 있으며, 회사는 미주·중동에서의 신규 부문 협력 확대를 추진하고 있다고 공개적으로 밝힌 바 있다. 2024년 12월 개발 완료한 5G MO 통합 실내 중계기는 이음5G 특화망 시장 본격화 시 새로운 매출 창구로 작용할 수 있다. 6G 국책과제 참여는 당장의 매출보다는 중장기 기술 역량 확충과 신규 수주 기반 조성에 의미가 있다. 일본 법인 청산 완료 이후 해외 비용 부담의 추가 완화 여부와, 미국 사업부 손익이 흑자 전환에 얼마나 근접했는지가 전체 수익성 방향을 가늠하는 지표다. 2026년 1분기 영업손실에서 드러난 것처럼 수주 집중 분기와 비수기 간 편차가 크므로, 하반기 KT 대형 계약 공시 여부가 연간 실적 방향성의 핵심 변수가 될 것이다.",
-  "en": "FRTEK is positioned to sustain its revenue base through recurring KT KELIS repeater contracts in 2026. The ₩3.38B KT contract signed in March 2026 is expected to be recognized in Q2 revenue, and the historical ordering cadence (three contracts in Feb, Jul, and Sep 2025) suggests additional large-ticket contracts could emerge in the second half. The 5G mmWave repeater partnership with US carrier 'V' remains active, and the company has publicly stated its intent to expand collaborative business in the Americas and the Middle East. The 5G Multi-Operator integrated in-building repeater completed in December 2024 could generate new revenue if Korea's private 5G (Eum-5G) market accelerates. The 6G national R&D participation is primarily a medium-to-long-term capability investment rather than a near-term revenue driver. Whether the Japanese subsidiary's wind-down fully eliminates residual charges and how quickly the US unit approaches breakeven will clarify the profitability improvement trajectory. Given Q1 2026's operating loss, H2 2026 KT contract announcements will be the single most important variable for full-year results."
+  "ko": "회사는 2026년 3월 KT와 KELIS 중계기 공급계약(계약기간 2026년 3월 17일~6월 8일)을 체결했으며, 해당 계약이 종료된 이후 후속 계약이 이어지는지가 향후 매출 흐름의 핵심 변수다. 2026년 상반기 실적이 매출·이익 모두 재차 악화된 만큼, 하반기 신규 수주 공시와 3분기 실적이 개선 여부를 가늠할 다음 지표가 될 전망이다. 산업 측면에서는 6G 표준화 논의와 AI 데이터센터발 광통신 투자 확대가 장비업체 전반에 우호적인 환경을 조성할 가능성이 거론되지만, 이것이 에프알텍의 실질적 수주로 이어질지는 아직 확인되지 않았다. 회사는 미국법인을 통한 해외 매출 확대를 지속적으로 추진하고 있다고 밝혀왔으나, 최근 구체적 해외 수주 공시는 확인되지 않는다. 주주환원 측면에서는 2025년 결산 배당을 상향 조정한 바 있어 주주 정책 강화 의지를 나타냈다. 다만 실적의 분기별 변동성이 크고 특정 계약 의존도가 높은 사업 구조상, 향후 몇 개 분기 동안 매출 회복의 지속성을 확인하는 것이 중요하다.",
+  "en": "The company signed a KELIS repeater supply contract with KT in March 2026, running from March 17 to June 8, 2026, and whether follow-on contracts emerge after its expiration is a key variable for future revenue. Given that both revenue and profit deteriorated again in H1 2026, new order disclosures and Q3 results in the second half will be the next indicators of whether the earlier improvement can resume. On the industry side, 6G standardization discussions and rising AI-data-center-driven optical communication investment are cited as potentially favorable for equipment makers broadly, though whether this translates into actual orders for FRTek has not yet been confirmed. The company has said it continues to pursue overseas revenue growth through its US subsidiary, but no specific recent overseas order disclosures have been identified. On shareholder returns, the company raised its 2025 year-end dividend, signaling an intent to strengthen shareholder policy. Still, given high quarter-to-quarter earnings volatility and dependence on specific contracts, confirming the durability of any revenue recovery over the coming quarters will be important."
  },
  "valuation_comment": {
-  "ko": "주당순자산(BPS·KRX 기준 5,300원)을 주가가 크게 하회하는 구간에서 거래되고 있어, 동종 통신장비 업체군 내에서도 두드러진 순자산 할인 종목으로 분류된다. 자기자본(2025년 말 약 610억원)이 현재 시가총액을 두 배 이상 크게 상회하는 구조는 시장이 순자산 대비 상당한 할인을 적용하고 있음을 반영하며, 이는 최근 수 분기 귀속 순이익 축소와 영업현금흐름 마이너스 지속이 주된 원인으로 작용한다. 2025년 확정 주당배당금(DPS) 75원은 당초 공시된 40원 대비 상향 조정된 것으로 주주 환원 강화 의지를 보여주나, 배당수익률의 실제 수준은 주가에 따라 실시간 변동된다. 실적 개선 추세(영업이익률 2022년 대폭 적자 → 2025년 흑자 전환·유지)가 이어진다면 현재의 순자산 할인 폭이 점진적으로 축소될 잠재력이 있다. 다만 분기별 실적 변동성 완화와 영업현금흐름의 구조적 플러스 전환이 재평가의 선결 조건이 될 것이다.",
-  "en": "The stock is trading at a material discount to its stated book value per share (BPS ₩5,300, KRX basis), placing it among the more pronounced asset-discount names in the telecom equipment peer group. Total equity of approximately ₩61B at end-2025 substantially exceeds the current market capitalization, reflecting a significant haircut that the market applies primarily due to the recent contraction in attributable earnings and persistently negative operating cash flow. The confirmed FY2025 dividend per share of ₩75—raised from an initially declared ₩40—signals a strengthened shareholder-return commitment, though the actual dividend yield level moves with the share price and is best read from the real-time display. The multi-year profitability trajectory (from a deep operating loss in 2022 to sustained positive OPM through 2025) carries potential for the current book-value discount to narrow gradually. Stabilization of quarterly earnings swings and a structural turn to positive operating cash flow are, however, prerequisites for a meaningful re-rating."
+  "ko": "주가는 2026년 상반기 6G·AI 데이터센터 테마 부각으로 단기간 급등해 투자경고종목으로 지정된 이후, 이후 상당 부분 되돌림이 나타난 상태다. 주가순자산비율은 과거 5년 평균 수준을 밑도는 구간에서 거래되고 있어, 순자산 대비로는 할인된 수준에서 형성돼 있다. 이익 측면에서는 2025년 연간 흑자에서 2026년 상반기 다시 적자로 전환된 만큼, 주가에 이를 적용할 안정적인 이익 기준선을 찾기 어려운 상태다. 배당수익률은 2025년 결산 배당 상향으로 이전보다 높아졌으나, 이는 이익 안정성이 아직 검증되지 않은 시점의 결정이라는 점을 함께 고려할 필요가 있다. 결국 현재 밸류에이션은 테마성 수급과 기초 실적 회복 여부라는 두 축이 서로 다른 방향으로 작용하고 있는 구간으로 해석할 수 있다.",
+  "en": "The share price surged sharply during the 6G/AI data center theme rally in H1 2026, leading to an investment alert designation, and has since given back a substantial portion of those gains. The price-to-book ratio is trading below its five-year average band, implying the stock is priced at a discount relative to net assets. On the earnings side, the swing from a full-year profit in 2025 back to a loss in H1 2026 makes it difficult to identify a stable earnings baseline to apply to the current price. The dividend yield rose following the increased 2025 year-end payout, though this decision was made before the recent earnings volatility was evident. Overall, current valuation appears to sit at a point where thematic trading flows and the trajectory of underlying earnings recovery are pulling in different directions."
  },
  "bull": [
   {
    "title": {
-    "ko": "KT 반복 수주 구조와 우수협력사 지위",
-    "en": "Recurring KT order structure and preferred supplier status"
+    "ko": "판관비 절감에 따른 수익성 개선 흐름",
+    "en": "Profitability Improvement Through Cost Cuts"
    },
    "body": {
-    "ko": "에프알텍은 KT와의 KELIS 중계기 공급 계약을 연간 수차례 반복 체결하며 매출 가시성을 확보하고 있다. 2025년에만 3차례(2월·7월·9월) 합산 약 154억원 규모 수주에 성공했고, 2025년 KT 우수협력사로 선정돼 파트너십의 견고함을 인정받았다. 통신장비 산업에서 기존 납품 레퍼런스는 경쟁사 진입 장벽으로 기능하며, 반복 수주 구조는 단기 매출 예측 가능성을 높인다. KT와의 장기 관계는 단순 납품을 넘어 LTE 감시장치, DB 소형 중계기 등 제품 다양화로도 이어지고 있다.",
-    "en": "FRTEK secures multiple KT KELIS supply contracts per year, achieving roughly ₩15.4B across three contracts in 2025 alone (February, July, September) and earning KT's preferred supplier designation. Established delivery references in the telecom equipment sector serve as a meaningful barrier to competing suppliers. The recurring contract structure enhances near-term revenue predictability, and the relationship has expanded beyond core repeaters to include LTE remote-monitoring systems and small-cell products."
+    "ko": "2025년 매출이 15.1% 줄었음에도 영업이익은 오히려 늘어 영업이익률이 2.7%에서 3.6%로 개선됐다. 판관비 절감과 기타수익 증가가 주된 요인으로 지목됐다. 2024년과 2025년 모두 영업이익 흑자를 이어간 점은 2022~2023년의 적자 구조에서 벗어난 신호로 볼 수 있다.",
+    "en": "Despite a 15.1% revenue decline in 2025, operating profit rose, lifting the operating margin from 2.7% to 3.6%. Cost cuts and increased other income were cited as the main drivers. Maintaining operating profit in both 2024 and 2025 marks a departure from the loss structure of 2022-2023."
    }
   },
   {
    "title": {
-    "ko": "재무 체질 강화와 순자산 대비 할인 구간",
-    "en": "Strengthened balance sheet and deep discount to net asset value"
+    "ko": "KT 등 대형 통신사와의 반복 수주 관계",
+    "en": "Repeat Order Relationship With Major Carriers"
    },
    "body": {
-    "ko": "부채비율이 2022년 100.8%에서 2025년 21.4%로 대폭 낮아지며 재무 건전성이 크게 향상됐다. 총자산 약 741억원의 대부분이 자기자본(약 610억원)으로 구성돼 재무 레버리지 부담이 매우 낮다. 주당순자산(BPS 5,300원)을 주가가 크게 하회하는 수준에서 거래되고 있어, 실적 개선이 가시화될 경우 재평가 잠재력이 있다. 안정적인 재무 구조는 경기 침체나 수주 공백기에도 운영 지속성을 담보하는 완충재로 작용한다.",
-    "en": "The debt-to-equity ratio fell from 100.8% (2022) to 21.4% (2025), representing a significant de-risking of the balance sheet. Total assets of approximately ₩74.1B are predominantly equity-funded (roughly ₩61B), leaving minimal financial leverage. With the stock priced well below BPS of ₩5,300, there is meaningful re-rating potential as earnings improve. The robust capital structure also provides a buffer against order-gap periods or broader economic downturns."
+    "ko": "회사는 KT와 여러 차례 중계기 단가·공급계약을 반복 체결해왔으며, 2026년 3월에도 KELIS 계약을 새로 맺었다. 이러한 반복 거래 관계는 완전히 새로운 고객을 확보하는 것보다 상대적으로 안정적인 매출 기반이 될 수 있다. 과거 버라이즌 등 해외 대형 통신사와의 거래 이력도 기술력을 인정받은 사례로 언급된다.",
+    "en": "The company has repeatedly signed unit-price and supply contracts for repeaters with KT, including a new KELIS contract in March 2026. Such repeat transactional relationships can provide a comparatively stable revenue base relative to acquiring entirely new customers. A past supply relationship with Verizon is also cited as evidence of recognized technical capability."
    }
   },
   {
    "title": {
-    "ko": "O-RAN·6G 기술 레퍼런스에서 비롯된 중장기 성장 옵션",
-    "en": "O-RAN and 6G technology references as medium-to-long-term growth options"
+    "ko": "낮은 부채비율과 6G·광통신 테마 노출",
+    "en": "Low Leverage and Exposure to the 6G/Optical Theme"
    },
    "body": {
-    "ko": "2023년 KT 상용 5G 기지국에서 멀티벤더 O-RU 연동에 국내 최초 성공하고, 삼성전자와 O-RAN 기술을 공동 개발 중이다. 오픈랜 글로벌 시장은 2021년 대비 2026년에 5배 이상 성장이 예측되며, 화웨이 제재로 공급망 재편이 가속화되는 환경은 국내 중소 장비업체에 해외 수주 기회를 열고 있다. 미국 V사 납품 완료로 확보한 글로벌 레퍼런스는 추가 해외 수주 협상의 근거 자료가 된다. 6G 국책과제 참여는 차세대 통신 생태계 내 기술 포지션을 선제적으로 확보하는 중장기 투자로 해석된다.",
-    "en": "FRTEK achieved a domestic first in 2023 by connecting its O-RU to Nokia's O-DU in a multi-vendor configuration on KT's commercial 5G network, and co-develops O-RAN technology with Samsung Electronics. The global O-RAN market is forecast to grow more than five-fold between 2021 and 2026, and accelerating supply-chain realignment amid Huawei restrictions opens overseas order opportunities for Korean SME equipment makers. The completed Verizon delivery provides a credible reference for future international contract negotiations. Selection as a 6G national R&D participant represents proactive positioning within the next-generation network ecosystem."
+    "ko": "2025년 말 부채비율은 21.4%로 낮은 수준을 유지하고 있어 재무 구조상 여유가 있는 편이다. 아울러 5G/6G 중계기 및 RF 증폭 기술을 보유한 만큼, AI 데이터센터발 광통신·6G 투자 확대 국면에서 관련 산업 테마에 함께 노출되는 종목으로 거론된다.",
+    "en": "The debt ratio stood at a low 21.4% at the end of 2025, providing some financial flexibility. The company also holds 5G/6G repeater and RF amplification technology, positioning it as a name associated with the AI-data-center-driven optical communication and 6G investment theme."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "고객 집중과 수주 타이밍에서 비롯된 구조적 실적 변동성",
-    "en": "Structural earnings volatility from customer concentration and order-timing gaps"
+    "ko": "2026년 상반기 실적 재악화",
+    "en": "Renewed Earnings Deterioration in H1 2026"
    },
    "body": {
-    "ko": "KT에 대한 매출 의존도가 매우 높아 KT의 발주 타이밍 이동만으로도 분기 실적이 크게 흔들린다. 2025년 1분기 매출 약 91.9억원과 2026년 1분기 약 40.8억원의 격차가 이를 단적으로 보여주며, 영업이익도 집중 분기 흑자·비수기 적자가 반복되는 패턴이 지속되고 있다. 미국·중동 등 해외 매출이 가시적으로 확대되기 전까지는 이 구조적 변동성이 지속될 가능성이 높다. 단일 고객 의존에서 벗어나기 위한 다변화가 이뤄지지 않는 한 분기 실적 예측 가능성은 낮게 유지될 것이다.",
-    "en": "Revenue dependence on KT means even modest shifts in KT's ordering cadence can swing quarterly results dramatically—as illustrated by the gap between ₩9.19B in Q1 2025 and ₩4.08B in Q1 2026. Operating profit alternates between gains in high-delivery quarters and losses in lean quarters, a pattern that appears structurally persistent. Until overseas revenues from the US and Middle East become visibly material, this embedded volatility is unlikely to diminish. Quarterly earnings predictability will remain low absent meaningful customer diversification."
+    "ko": "2026년 1분기와 2분기 모두 영업손실과 순손실을 기록했으며, 2분기 매출은 18.3억원까지 줄어 2025년 평균 분기 매출을 크게 하회했다. 2025년의 이익 회복 흐름이 2026년 상반기 들어 재차 꺾인 모습으로, 최근 네 개 분기 합산 순이익은 손실 상태다.",
+    "en": "Both Q1 and Q2 2026 posted operating and net losses, with Q2 revenue falling to 1.83 billion won, well below the 2025 quarterly average. The 2025 profit recovery reversed again in H1 2026, leaving the sum of owner net profit over the trailing four quarters in a loss."
    }
   },
   {
    "title": {
-    "ko": "국내 통신사 5G 투자 정체와 중계기 수요 한계",
-    "en": "Domestic carrier 5G investment stagnation and repeater demand ceiling"
+    "ko": "특정 계약 의존도가 높은 매출 구조",
+    "en": "High Dependence on Specific Contracts"
    },
    "body": {
-    "ko": "국내 이동통신사들의 5G 초기 투자 사이클이 마무리 단계에 접어들면서 신규 기지국 구축 수요가 둔화됐다. 2025년 매출이 전년 대비 약 15% 감소한 배경에도 이 수요 정체가 자리하고 있다. 5G SA 전환과 추가 망 고도화가 당초 예상보다 지연될 경우 중계기 수주 규모는 한동안 제한적일 수 있다. 국내 통신사들이 28GHz 고주파수 5G 투자를 포기한 전례처럼, 투자 전략 변경이 예고 없이 발생할 수 있다는 점도 수요 전망의 불확실성을 높인다.",
-    "en": "The initial domestic 5G build-out cycle is nearing completion, leading to slowing incremental base-station demand—the primary driver of FRTEK's roughly 15% revenue decline in 2025. If the 5G SA transition and network densification proceed more slowly than expected, repeater order volumes could stay constrained. Domestic carriers have previously abandoned planned investments (e.g., 28GHz 5G capex), illustrating that spending plans can be revised without warning, adding material uncertainty to the demand outlook."
+    "ko": "2026년 3월 체결된 KT KELIS 계약은 약 2.7개월(3월 17일~6월 8일)의 단기 계약이었다. 이처럼 대형 계약이 단발성·단기성으로 체결되는 구조라 계약 종료 이후 매출 공백이 발생할 위험이 있으며, 이는 2026년 2분기 매출 급감과 무관하지 않을 수 있다.",
+    "en": "The KT KELIS contract signed in March 2026 was a short-term deal spanning roughly 2.7 months, from March 17 to June 8. Because large contracts tend to be one-off and short-term, there is a risk of a revenue gap once a contract ends, which may be linked to the sharp Q2 2026 revenue decline."
    }
   },
   {
    "title": {
-    "ko": "지속적 영업현금흐름 마이너스와 수익 질 우려",
-    "en": "Persistently negative operating cash flow and earnings quality concern"
+    "ko": "테마 급등락과 시장경보 이력",
+    "en": "Theme-Driven Volatility and Market Alert History"
    },
    "body": {
-    "ko": "2022년(-약 57.4억원), 2024년(-약 37.2억원), 2025년(-약 19.4억원)으로 3개년의 영업현금흐름이 마이너스를 기록했다. 이는 수주 집중 이후 발생하는 대규모 매출채권이 현금 회수를 지연시키는 구조에서 기인한다. 영업이익이 흑자임에도 현금 창출이 이뤄지지 않는 상황이 반복되면 투자 여력과 배당 지속성에 대한 의구심이 커진다. 비용 절감 외에 현금전환주기(CCC) 개선을 위한 구체적 조치가 확인되기 전까지 이 리스크는 유효하다.",
-    "en": "Operating cash flow was negative in three of the past four years (roughly ₩-5.74B in 2022, ₩-3.72B in 2024, and ₩-1.94B in 2025), reflecting a structural lag between order-concentrated deliveries and cash collection on large receivables. When operating profit consistently fails to convert to cash, concerns about capacity for capex investment and dividend sustainability intensify. Until concrete measures to improve the cash conversion cycle—beyond cost cuts alone—become visible, this risk remains meaningful."
+    "ko": "2026년 상반기 6G·AI 데이터센터 테마로 주가가 단기간 급등해 투자경고종목으로 지정된 바 있다. 이러한 테마성 급등락은 기초 실적과 무관하게 발생할 수 있어, 주가와 펀더멘털 간 괴리가 커질 위험이 상존한다.",
+    "en": "The stock surged sharply on the 6G/AI data center theme in H1 2026 and was designated an investment alert stock. Such thematic swings can occur independently of underlying fundamentals, creating a persistent risk of divergence between share price and fundamentals."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객·수요 집중 리스크",
-    "en": "Customer and demand concentration risk"
+    "ko": "고객·계약 집중 리스크",
+    "en": "Customer/Contract Concentration Risk"
    },
    "body": {
-    "ko": "에프알텍 매출은 KT 의존도가 매우 높아, KT의 연간 발주 계획이나 예산 집행 시점에 따라 분기별 실적이 크게 달라진다. KT의 CAPEX 삭감, 발주 지연, 또는 경쟁사로의 공급업체 교체는 단기간 내 매출에 직접적 타격을 줄 수 있다. 특화망·해외 시장 등 신규 채널의 매출 기여가 가시화되기 전까지는 이 위험이 구조적으로 내재된다. 고객 다변화의 진전 속도가 리스크 경감의 핵심 변수다.",
-    "en": "Revenue is highly concentrated with KT, making quarterly performance highly sensitive to KT's annual purchase plans and budget execution timing. A cut in KT's capex, order delays, or supplier substitution by KT could deliver an immediate and material revenue impact. This concentration risk is structurally embedded until new channels—private 5G networks and overseas markets—generate meaningful contributions. The pace of customer diversification is the primary risk-mitigation variable to monitor."
+    "ko": "매출이 KT 등 소수 통신사와의 단기 공급계약에 크게 의존하는 구조로, 계약 갱신이 지연되거나 규모가 축소될 경우 매출에 직접적 충격이 발생할 수 있다. 2026년 2분기의 급격한 매출 감소는 이러한 계약 의존 구조의 취약성을 보여준 사례로 해석될 수 있다.",
+    "en": "Revenue depends heavily on short-term supply contracts with a small number of carriers such as KT, so delayed renewals or reduced contract sizes can directly hit revenue. The sharp Q2 2026 revenue decline can be read as an illustration of the vulnerability inherent in this contract-dependent structure."
    }
   },
   {
    "cat": {
-    "ko": "글로벌 경쟁 심화와 O-RAN 보급 지연",
-    "en": "Intensifying global competition and O-RAN adoption delay"
+    "ko": "현금흐름·운전자본 리스크",
+    "en": "Cash Flow and Working Capital Risk"
    },
    "body": {
-    "ko": "오픈랜 시장이 확대될수록 에릭슨·노키아 등 글로벌 대형 통신장비사의 참여가 증가해 중소업체들의 수주 경쟁이 심화될 수 있다. 기존 폐쇄형 망에서 O-RAN으로의 전환 속도가 예상보다 느릴 경우 관련 R&D 비용의 회수 시점이 지연된다. 각국 규제 환경, 기술 표준화 일정 등에 따라 O-RAN 보급 속도는 크게 변동될 수 있어 중소 장비기업의 성장 타이밍 예측이 어렵다. 특히 통신사들이 기존 투자 장비와의 호환성을 우선시하는 한 O-RAN 확산 속도는 제한적일 수 있다.",
-    "en": "As the O-RAN market grows, Ericsson, Nokia, and other major global vendors are increasing their participation, intensifying competition for mid-market contracts. If the migration from legacy closed-RAN to Open RAN proceeds more slowly than expected, returns on FRTEK's O-RAN R&D investments will be deferred. Standardization timelines and country-specific regulatory environments can cause wide swings in adoption pace, making growth timing difficult to predict. Carrier preference for backward compatibility with existing network equipment remains a structural constraint on O-RAN diffusion speed."
+    "ko": "2025년 순이익은 흑자였음에도 영업활동현금흐름은 -19.4억원으로 음수를 기록했다. 이는 재고나 수취채권 등 운전자본 부담이 이익 실현 시점과 현금 유입 시점 간 시차를 키울 수 있음을 시사하며, 향후 현금흐름 개선 여부를 지속적으로 확인할 필요가 있다.",
+    "en": "Despite a net profit in 2025, operating cash flow was negative at 1.94 billion won. This suggests working-capital burdens such as inventory or receivables may be widening the gap between when profit is recognized and when cash is actually received, warranting continued monitoring of cash flow trends."
    }
   },
   {
    "cat": {
-    "ko": "해외 사업 손실 장기화와 환율 리스크",
-    "en": "Prolonged overseas unit losses and foreign exchange risk"
+    "ko": "시장경보·유동성 리스크",
+    "en": "Market Alert and Liquidity Risk"
    },
    "body": {
-    "ko": "미국 사업부는 V사 납품을 통해 시장 진입에 성공했으나 여전히 손실 축소 중이며 흑자 전환 시점이 불확실하다. 일본 법인은 청산 마무리 단계이지만 잔여 비용이나 충당금 환입 여부가 단기 손익에 변동성을 줄 수 있다. 중동·일본 등 신규 시장 개척 과정의 초기 비용과 달러·엔·중동 통화 변동은 연결 기준 손익에 추가적인 불확실성을 더한다. 해외 투자가 수익화되기까지의 선투자 부담 기간이 계획보다 길어질 경우 수익성 개선 속도가 둔화될 수 있다.",
-    "en": "The US division gained a market foothold via Verizon deliveries but remains loss-making, with a break-even timeline that is uncertain. The Japanese subsidiary is in its final wind-down phase, yet residual charges or provisions reversals may create near-term earnings noise. Initial costs in new geographies such as the Middle East and Japan, combined with USD/JPY and Middle Eastern currency movements, add volatility to consolidated results. If the monetization timeline for overseas investments extends beyond plan, the pace of overall profitability improvement could slow."
+    "ko": "2026년 4월 투자경고종목으로 지정된 이력이 있으며, 소형주 특성상 테마 국면에서 거래량과 가격이 급변동할 수 있다. 향후 다시 이상 급등이 발생하면 단기과열종목 지정이나 매매거래정지 등 추가적인 시장경보 조치가 재발할 가능성을 배제할 수 없다.",
+    "en": "The stock was designated an investment alert stock in April 2026, and as a small-cap name, its trading volume and price can swing sharply during thematic phases. If unusual price spikes recur, additional market alert measures such as short-term overheating designation or trading halts cannot be ruled out."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중순(3분기 보고서 공시 예정 시점)",
+    "en": "Mid-November 2026 (expected Q3 report filing)"
    },
    "what": {
-    "ko": "2026년 2분기 실적 및 반기보고서 공시(제출 기한 8월 중순). 2분기 영업이익 회복 여부 및 2026년 3월 체결된 약 33.8억원 KT 계약의 매출 반영 효과를 확인하는 핵심 타이밍이며, 하반기 KT 수주 파이프라인에 대한 경영진 언급도 주목 포인트.",
-    "en": "Q2 2026 results and semi-annual report filing (due mid-August). Key check: whether operating profit rebounds as the ₩3.38B March KT contract is recognized in revenue, and whether management signals additional H2 2026 order pipeline or provides any informal guidance."
+    "ko": "2026년 3분기 매출·영업손익이 상반기의 부진에서 회복되는지 확인이 필요하다.",
+    "en": "Check whether Q3 2026 revenue and operating profit recover from the H1 2026 downturn."
    }
   },
   {
    "when": {
-    "ko": "2026년 7~9월",
-    "en": "July–September 2026"
+    "ko": "2026년 6월 8일 종료된 KT KELIS 계약 이후",
+    "en": "Following the KT KELIS contract that ended June 8, 2026"
    },
    "what": {
-    "ko": "KT KELIS 하반기 대형 계약 공시 여부. 2025년 같은 기간에 각각 약 48.7억원(7월)과 약 72.8억원(9월)의 수주 공시가 있었던 전례를 감안하면, 유사한 규모의 계약 체결 여부가 2026년 하반기 실적 방향성을 결정하는 단일 최대 변수다.",
-    "en": "Watch for KT KELIS H2 major contract disclosures. In the same period of 2025, contracts of ₩4.87B (July) and ₩7.28B (September) were announced; whether comparable contracts materialize in 2026 will be the single biggest swing factor for H2 performance."
+    "ko": "해당 계약 종료 이후 후속 계약이나 신규 수주 공시가 나오는지 점검이 필요하다.",
+    "en": "Monitor whether follow-on or new order disclosures emerge after this contract's expiration."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 수시",
-    "en": "H2 2026 (as announced)"
+    "ko": "2026년 하반기 중",
+    "en": "During H2 2026"
    },
    "what": {
-    "ko": "미국 V사(Verizon) 5G mmWave 추가 수주 공시 및 미국·중동 해외 계약 동향. 북미 통신장비 투자 본격화 여부가 에프알텍의 글로벌 수주 다변화 진행 속도를 가늠하는 지표이며, 해외 계약 공시가 이어질 경우 고객 집중 리스크 완화의 신호로 해석된다.",
-    "en": "New purchase order disclosures from US carrier 'V' (Verizon) for 5G mmWave repeaters, and any Middle East or Japan contract announcements. This will be the clearest indicator of whether FRTEK's customer diversification strategy is translating into tangible order flow, easing the structural KT concentration risk."
+    "ko": "6G 표준화 논의 및 AI 데이터센터발 광통신 투자 확대가 국내 중소 장비업체의 실제 수주로 이어지는지 산업 동향을 확인할 필요가 있다.",
+    "en": "Track industry developments on whether 6G standardization discussions and AI-data-center-driven optical investment translate into actual orders for domestic small equipment makers."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "주가 급변동 발생 시",
+    "en": "In the event of sharp price swings"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시(분기보고서). 연간 누적 매출·영업이익으로 연간 실적 방향성을 점검하고, 특화망 관련 O-RAN 수주 공시 또는 6G 국책과제 중간 성과가 확인되는지 함께 모니터링할 시점.",
-    "en": "Q3 2026 quarterly report. Year-to-date figures will clarify whether full-year results are recovering; also monitor for private 5G or O-RAN contract announcements and any 6G national R&D project milestones disclosed by the company."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 2~3월(2026년 연간 결산)",
-    "en": "February–March 2027 (FY2026 full-year results)"
-   },
-   "what": {
-    "ko": "2026년 연간 실적 확정 공시 및 DPS 결정. 연간 매출 회복 여부, 영업현금흐름의 플러스 전환 가시화, 그리고 주당배당금(DPS) 방향이 배당 지속성과 자본 배분 정책을 종합 평가하는 기준점이 된다.",
-    "en": "FY2026 full-year results announcement and dividend per share decision. Whether revenue recovers, whether operating cash flow turns structurally positive, and the direction of DPS will be the key data points for a comprehensive reassessment of earnings quality and capital return policy."
+    "ko": "한국거래소의 투자경고·단기과열종목 재지정 여부와 그 해제 조건 충족 여부를 확인할 필요가 있다.",
+    "en": "Check whether the Korea Exchange re-designates the stock as an investment alert or short-term overheating name, and whether de-designation conditions are met."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "에프알텍은 KT 중계기 공급이라는 안정적 기반 위에서 판관비 절감과 해외 손실 축소를 통해 영업이익률을 2022년 마이너스에서 2025년 3.6%로 회복시켰으며, 부채비율도 100.8%에서 21.4%로 급락하는 재무 체질 개선을 달성했다. KT와의 반복 수주 관계, KT 우수협력사 지위, 그리고 O-RAN 멀티벤더 연동 레퍼런스와 6G 국책과제 참여는 중장기 기술 포지션을 뒷받침하는 자산이다. 그러나 KT 의존형 수주 구조가 빚어내는 분기별 실적 변동성은 여전히 크며, 2026년 1분기 영업손실 재현이 이를 다시 확인시켜 줬다. 영업현금흐름의 구조적 마이너스는 영업이익 개선에도 불구하고 수익의 질에 의문을 남기며, 실질적인 현금 창출 능력의 가시화가 재평가의 선결 조건이다. 오픈랜 시장 성장과 미국 네트워크 투자 본격화는 해외 매출 다변화의 기회를 제공하지만, 이것이 실제 수주와 이익으로 연결되는 시점은 아직 불확실하다. 하반기 KT 대형 계약 체결 여부, 해외 수주 공시, 그리고 분기 실적의 계절성 개선 여부를 순차적으로 확인하는 것이 합리적 모니터링 방법이다.",
-   "en": "FRTEK has restored operating profitability from deeply negative territory in 2022 to an OPM of 3.6% in 2025 through SG&A discipline and shrinking overseas losses, while the balance sheet was dramatically de-risked—debt ratio fell from 100.8% to 21.4%. The recurring KT order relationship, preferred-supplier status, O-RAN multi-vendor interoperability references, and 6G national R&D participation collectively underpin a constructive medium-to-long-term technology positioning. Yet the KT-centric order structure continues to generate pronounced quarterly volatility, as reconfirmed by the Q1 2026 operating loss. Structurally negative operating cash flow calls into question earnings quality despite improving accrual profit, and visible improvement in cash generation remains a prerequisite for a meaningful re-rating. The global O-RAN expansion and US network investment acceleration offer genuine avenues for revenue diversification, but the timeline for these opportunities to translate into contracted orders and profit remains uncertain. A sequential review of H2 2026 KT contract announcements, overseas order disclosures, and evidence of reduced earnings seasonality provides the most disciplined framework for ongoing monitoring."
+   "ko": "에프알텍은 2025년 판관비 절감을 통해 매출 감소에도 영업이익률을 개선하는 데 성공했지만, 2026년 상반기 들어 매출과 이익이 다시 악화되며 그 개선 흐름의 지속성에 물음표가 붙었다. 회사의 사업 기반은 KT 등 국내 통신사와의 반복적이지만 대체로 단기적인 공급계약에 크게 의존하고 있어, 계약 종료 이후 매출 공백 여부가 실적의 핵심 변수로 남아 있다. 동시에 2026년 상반기에는 6G·AI 데이터센터발 광통신 테마 부각으로 주가가 단기간 급등해 투자경고종목으로 지정되기도 했는데, 이는 기초 실적의 변동과는 별도로 수급이 주가를 움직인 사례로 볼 수 있다. 재무 측면에서는 부채비율이 낮아 구조적 위험은 제한적이나, 흑자에도 영업활동현금흐름이 음수를 보인 점은 운전자본 관리 측면에서 주의가 필요한 대목이다. 향후 3분기 실적과 신규 수주 공시, 그리고 산업 전반의 6G·광통신 투자 확산 여부가 실적 회복의 지속성을 가늠하는 주요 변수가 될 것으로 보인다. 본 리포트는 매수·매도 의견을 포함하지 않으며, 정보 제공 목적으로 작성됐다.",
+   "en": "FRTek succeeded in improving its operating margin in 2025 through cost cuts despite a revenue decline, but the sustainability of that improvement came into question as both revenue and profit weakened again in H1 2026. The company's business remains heavily dependent on repeat but largely short-term supply contracts with domestic carriers such as KT, leaving the potential revenue gap after contract expirations as a key variable for future earnings. At the same time, the stock surged sharply in H1 2026 on a 6G/AI-data-center-driven optical communication theme and was designated an investment alert stock, illustrating a case where trading flows moved the price independently of underlying earnings. Financially, the low debt ratio limits structural risk, but negative operating cash flow despite a net profit warrants attention to working capital management. Going forward, Q3 earnings, new order disclosures, and the broader spread of 6G and optical communication investment across the industry are likely to be key variables in gauging the durability of any earnings recovery. This report does not include a buy or sell recommendation and is provided for informational purposes only."
   }
  },
  "sources": [
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=642413",
+  "https://littlebproject.com/stock/073540",
   "https://news.jkn.co.kr/post/856941",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A073540&cID=&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260323002259&docno=&viewerhost=",
   "https://news.jkn.co.kr/post/856975",
-  "https://www.wowtv.co.kr/TotalSearch/Mariner/Index?searchTerm=%EC%97%90%ED%94%84%EC%95%8C%ED%85%8D",
   "https://markets.hankyung.com/stock/073540/financial-summary",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A073540",
   "https://www.thinkpool.com/item/073540/news/16805630",
   "https://m.thinkpool.com/item/073540",
-  "https://stockchild.com/%ED%86%B5%EC%8B%A0-%EA%B4%80%EB%A0%A8%EC%A3%BC-%EC%B4%9D%EC%A0%95%EB%A6%AC-6g-%EA%B4%80%EB%A0%A8%EC%A3%BC-%ED%94%BC%EC%A7%80%EC%BB%ACai-%EC%88%98%ED%98%9C%EC%A3%BC-%EC%99%84%EB%B2%BD-%EB%B6%84/",
-  "http://www.thinkpool.com/itemanal/i/index.jsp?code=073540",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=642413",
+  "https://itooza.com/vscore/073540",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A073540&cID=&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
+  "https://www.thelec.kr/news/articleView.html?idxno=6780",
+  "https://www.thelec.kr/news/articleView.html?idxno=23286",
+  "https://www.hankyung.com/finance/article/202103087208L",
+  "https://www.the-stock.kr/news/articleView.html?idxno=12135",
   "https://m.jobkorea.co.kr/company/42620528?tabType=I",
-  "https://www.electimes.com/news/articleView.html?idxno=330082",
-  "https://www.thelec.kr/news/articleView.html?idxno=9735",
-  "https://m.etnews.com/20211207000202?obj=Tzo4OiJzdGRDbGFzcyI6Mjp7czo3OiJyZWZlcmVyIjtOO3M6NzoiZm9yd2FyZCI7czoxMzoid2ViIHRvIG1vYmlsZSI7fQ%3D%3D",
-  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=442128",
-  "https://webzine.nrf.re.kr/e-alim/alim_361/file/NRF%20R&D%20Brief-2025-10-O-RAN(Open%20Radio%20Access%20Network,%20%EA%B0%9C%EB%B0%A9%ED%98%95%20%EB%AC%B4%EC%84%A0%20%EC%A0%91%EC%86%8D%EB%A7%9D).pdf"
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=436232",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1643263999913.pdf",
+  "https://www.frtek.com/board/download.php?board=Y&bo_table=notice&idx=78&file=2",
+  "https://m.etnews.com/20210408000235"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "073540",
  "name": "에프알텍",
  "name_en": "FRTEKCO.,LTD.",
@@ -233,9 +223,9 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 07:50",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 19:14",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 2345,
-   "mcap": 0.0267,
+   "price": 2220,
+   "mcap": 0.0253,
    "shares": 11400000,
    "total_shares": 11400000,
    "wavg_shares": 11419995,
    "per": null,
    "eps": -59,
-   "pbr": 0.463,
+   "pbr": 0.4383,
    "bps": 5065,
    "roe_ttm": -1.2,
    "ttm_window": "2025Q3~2026Q2",
@@ -356,7 +346,7 @@
    "bps_krx": 5300.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 75.0,
-   "div": 3.2
+   "div": 3.38
   }
  }
 }

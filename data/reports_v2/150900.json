@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "DRM 1위 강자의 AI 전환 선언, 수익성 회복 궤도 점검",
-  "en": "DRM Market Leader Declares AI Pivot — Profitability Recovery Path Under Scrutiny"
+  "ko": "AI 보안기업 전환, 실적은 분기 변동성 여전",
+  "en": "AI Security Pivot, Quarterly Swings Persist"
  },
  "lead": {
-  "ko": "세계 최초 기업용 DRM 상용화 기업 파수AI는 사명 변경과 함께 AI 전환(AX) 지원 기업으로의 도약을 천명했으나, 2025년 영업이익률 급락과 2026년 1분기 영업적자 지속은 신사업 수익화 속도와 계절성 완화가 중기 핵심 과제임을 시사한다.",
-  "en": "Fasoo AI, the world's first commercializer of enterprise DRM, has declared a pivot to AI-transformation (AX) support, but a sharp margin contraction in 2025 and a continued operating loss in 2026Q1 highlight that AI monetization pace and seasonal smoothing are the critical medium-term tests."
+  "ko": "파수AI는 문서보안(DRM) 강자에서 AI 데이터 보안·AX 플랫폼 기업으로 사업 축을 옮기는 중이며, 2026년 2분기 매출이 늘고 영업이익이 흑자로 돌아섰지만 분기별 실적 기복은 여전하다.",
+  "en": "Fasoo AI is shifting its business axis from a document DRM leader to an AI data security and AX platform company, and while second-quarter 2026 revenue rose and operating profit turned positive, quarter-to-quarter earnings volatility persists."
  },
  "keypoints": [
   {
-   "ko": "매출은 2023~2025년 연평균 약 465억 원 수준으로 안정적이나, 영업이익률은 2022년 11.8%에서 2025년 5.4%로 4년 연속 하락하며 수익성 구조 개선이 시급한 핵심 과제로 부상",
-   "en": "Revenue has been stable at roughly KRW 46–47bn annually in 2023–2025, but operating margins have contracted from 11.8% in 2022 to 5.4% in 2025 for a fourth consecutive year, making profitability restoration the central structural challenge."
+   "ko": "2026년 2분기 매출 131억원(전년 동기 대비 22.7% 증가), 영업이익·순이익 모두 흑자 전환",
+   "en": "Q2 2026 revenue reached KRW 13.1 billion, up 22.7% year over year, with both operating profit and net profit turning positive"
   },
   {
-   "ko": "4분기 집중 수익 구조(2025년 Q4 매출 약 171억 원, 연간의 37%) 속에서도 2026년 1분기 영업손실이 전년 동기 대비 약 27억→20억 원으로 축소돼 소폭 개선 흐름이 감지됨",
-   "en": "Despite pronounced Q4 revenue concentration (2025Q4 ~KRW 17.1bn, ~37% of full year), the 2026Q1 operating loss narrowed to ~KRW 2.0bn from ~KRW 2.7bn in the same period of 2025, a tentative positive signal."
+   "ko": "2025년 연간 영업이익률은 5.4%로 2022년 11.8% 대비 하락, 최근 4개 분기 사이 두 차례 영업손실 분기 존재",
+   "en": "Full-year 2025 operating margin fell to 5.4% from 11.8% in 2022, and the trailing four quarters included two quarters of operating losses"
   },
   {
-   "ko": "사명을 '파수AI'로 변경하고 기업용 LLM 'Ellm' 레퍼런스 확보 개시, 2026년 과기부 AX 원스톱 바우처 공급기업으로 선정돼 정부 채널 기반의 AI 신사업 확산 발판 마련",
-   "en": "Following the rebrand to 'Fasoo AI,' the company began accumulating enterprise LLM 'Ellm' customer references and was selected as a 2026 AX One-Stop Voucher supplier under NIPA, securing a government-backed channel for AI new-business expansion."
+   "ko": "사명을 '파수AI'로 변경하고 미국법인을 'Symbologic'으로 통합, AX(AI전환) 플랫폼 '엘름(Ellm)'을 신규 전시",
+   "en": "The company renamed itself Fasoo AI, merged its US subsidiary into Symbologic, and unveiled a new AX platform called Ellm"
   },
   {
-   "ko": "2024년 파로스네트웍스 사업부문 인수로 CPS·OT·ICS 보안까지 포트폴리오 확장, 미국 반도체·자동차 산업 공략도 병행하며 글로벌 레퍼런스 저변 확대 추진 중",
-   "en": "The 2024 acquisition of Paros Networks' operations extended the portfolio into CPS/OT/ICS security, complementing parallel North American outreach targeting semiconductor and automotive manufacturers."
+   "ko": "2030년까지 매출 성장률 20%·영업이익률 25%·주주환원율 30%를 목표로 하는 밸류업 계획을 공표",
+   "en": "The company disclosed a value-up plan targeting 20% revenue growth, 25% operating margin, and 30% shareholder return ratio by 2030"
   },
   {
-   "ko": "부채비율이 2022년 59.5%에서 2025년 28.2%로 대폭 개선되고 영업활동현금흐름도 양호해 재무 건전성은 유지하고 있으나, 소형주 특성상 거래 유동성 제약이 병존",
-   "en": "The debt ratio improved sharply from 59.5% (2022) to 28.2% (2025), and operating cash flow remains positive, preserving financial health, though micro-cap status entails meaningful trading liquidity constraints."
+   "ko": "공공부문 국가망보안체계(N2SF) 대응과 생성형 AI 유출방지(AI-R DLP) 솔루션이 신규 성장 축으로 부각",
+   "en": "Public-sector National Network Security Framework (N2SF) compliance and the generative-AI leak-prevention solution AI-R DLP have emerged as new growth pillars"
   }
  ],
  "business": {
-  "ko": "파수AI(구 파수)는 2000년 삼성SDS 사내벤처로 시작해 세계 최초로 기업용 DRM(디지털 권한 관리) 기술을 상용화한 국내 1세대 정보보안 기업으로, 2013년 코스닥에 상장했다. 핵심 자회사로 미국법인 Fasoo, Inc.와 애플리케이션 보안 전문기업 스패로우를 보유하고 있으며, 2024년 파로스네트웍스 사업부문 영업양수도로 CPS 보안 분야까지 진출했다. 주요 사업은 DRM 기반 데이터보안(FED·Wrapsody·DSPM 등), 애플리케이션보안(Sparrow), 정보보호컨설팅, 기업용 AI 플랫폼(Ellm), CPS·OT·ICS 보안으로 구성된다. 플래그십 제품 '파수 엔터프라이즈 DRM(FED)'은 로컬·클라우드 환경 전반에 통합 보안 정책을 적용하는 'Hyper DRM'으로 고도화됐으며, 문서 생성부터 폐기까지 전 과정에서 암호화를 유지한다. AI 기반 개인정보보호 솔루션 'AI-R Privacy'와 생성형 AI 서비스 내 민감정보 차단 솔루션 'AI-R DLP'는 업계 최초 GS 인증을 획득하며 공공·금융 시장 침투를 가속하고 있다. 고객군은 국내 주요 대기업·금융기관·공공기관을 중심으로 높은 충성도와 갱신율을 유지하며, 미국·중동·동남아 등 해외 시장 확대도 병행한다. SaaS 형태의 데이터 보안 플랫폼 클라우드(DSP 클라우드)를 통해 반복 구독 수익 구조 강화도 추진 중이며, 특히 맥OS 및 CAD 설계도면 보호는 글로벌 경쟁사 대비 차별화된 지원 범위로 내세우고 있다.",
-  "en": "Fasoo AI (formerly Fasoo), founded in 2000 as a Samsung SDS in-house venture, is South Korea's first-generation information-security company and the world's first to commercialize enterprise DRM. Listed on KOSDAQ in 2013, it holds U.S. entity Fasoo, Inc. and application-security specialist Sparrow as key subsidiaries, and in 2024 expanded into CPS security via the acquisition of Paros Networks' business division. Core segments include DRM-based data security (FED, Wrapsody, DSPM), application security (Sparrow), information-security consulting, enterprise AI (Ellm LLM), and CPS/OT/ICS security. The flagship 'Fasoo Enterprise DRM (FED)' has been upgraded to 'Hyper DRM,' applying unified encryption policies across local and cloud environments throughout the document lifecycle. AI-native products 'AI-R Privacy' (PII masking) and 'AI-R DLP' (GenAI data-leakage prevention) have earned industry-first GS certification, accelerating penetration in public and financial sectors. The customer base—major Korean conglomerates, financial institutions, and public agencies—shows high renewal rates, while global expansion into the U.S., Middle East, and Southeast Asia is ongoing. A SaaS-mode Data Security Platform Cloud (DSP Cloud) is being promoted to build recurring revenue, with macOS support and CAD file protection cited as differentiated capabilities relative to global competitors."
+  "ko": "파수AI는 문서 중심 디지털저작권관리(DRM) 상용화를 세계 최초로 시작한 것으로 알려진 국내 데이터 보안 기업으로, 최근 사명을 '파수'에서 '파수AI'로 바꾸며 AI 데이터 보안·AI 전환(AX) 지원 기업으로의 정체성 전환을 공식화했다. 주력 제품은 문서 암호화·권한제어를 제공하는 플래그십 '파수 엔터프라이즈 디알엠(FED)', 조직 내 민감데이터를 자동 탐지·분류하는 '파수 데이터 레이더(FDR)', 생성형 AI 사용 과정에서 프롬프트·첨부파일의 민감정보 유출을 통제하는 'AI-R DLP', 그리고 온프레미스·프라이빗 클라우드 구축이 가능한 AX 플랫폼 '엘름(Ellm)'이다. 고객군은 공공기관, 금융, 대기업 등 보안 규제가 엄격한 조직이 중심이며, 특히 공공부문에서는 국가망보안체계(N2SF) 도입에 따른 데이터 분류·보안등급(CSO) 대응 수요가 확대되고 있다. 회사는 미국 현지법인을 AX 전문기업 '심볼로직(Symbologic)'으로 합병해 글로벌사업 조직을 재편했으며, 가트너 시큐리티 서밋 등 해외 콘퍼런스 참가를 통해 해외 고객 접점 확대를 추진하고 있다. 경쟁 구도는 국내 문서보안·DLP 업체들과 마이크로소프트 퓨어뷰(Purview) 등 글로벌 플랫폼 기업이 혼재된 시장으로, 파수AI는 제로트러스트 데이터 보안 원칙을 축으로 기존 문서보안 고객 기반을 AI 거버넌스 영역으로 확장하는 전략을 취하고 있다. 부문별 매출 비중에 대한 별도 공시 수치는 확인되지 않았으며, 회사는 AI 사업 확대와 데이터 보안 수요 증가가 동반 성장하고 있다고 설명하고 있다. 사업모델은 라이선스·유지보수 매출이 소프트웨어 업종 특성상 계절적으로 하반기에 집중되는 경향을 보인다.",
+  "en": "Fasoo AI is a South Korean data security company reported to be the first to commercialize document-centric Digital Rights Management (DRM), and it recently rebranded from Fasoo to Fasoo AI to formalize its shift toward AI data security and AI transformation (AX) support. Its flagship products include Fasoo Enterprise DRM (FED) for document encryption and permission control, Fasoo Data Radar (FDR) for automatic detection and classification of sensitive organizational data, AI-R DLP for controlling leakage of sensitive information in prompts and attachments during generative AI use, and Ellm, an AX platform deployable on-premises or in private cloud environments. Its customer base centers on public institutions, financial firms, and large enterprises with strict security requirements, with public-sector demand growing around National Network Security Framework (N2SF) adoption and its associated data classification and security-grade (CSO) requirements. The company merged its US subsidiary into an AX-focused entity, Symbologic, to reorganize its global operations, and has pursued overseas customer engagement through conferences such as the Gartner Security Summit. The competitive landscape mixes domestic document security and DLP vendors with global platform providers such as Microsoft Purview, and Fasoo AI's strategy centers on zero-trust data security principles to extend its existing document-security customer base into AI governance territory. No disclosed breakdown of revenue by business segment was confirmed through public sources, though the company has described AI business expansion and rising data security demand as mutually reinforcing. As is typical for software business models, license and maintenance revenue tends to be seasonally concentrated in the second half of the year."
  },
  "earnings": {
-  "ko": "2025년 연간 매출은 약 467억 원으로 전년(약 461억 원) 대비 1.2% 증가에 그쳤고, 영업이익은 약 25억 4천만 원(영업이익률 5.4%)으로 2024년 약 39억 원(8.5%)에서 크게 줄었다. AI 신사업 투자 확대, 파로스네트웍스 통합 관련 비용, 상반기 수주 지연 등이 복합적으로 수익성을 압박한 것으로 해석된다. 분기별로는 극단적인 계절성이 뚜렷하다: 2025년 1분기 매출 약 84억 원·영업손실 약 27억 원, 2분기 매출 약 107억 원·영업손실 약 9억 원으로 상반기가 부진했으나, 4분기에 매출 약 171억 원·영업이익 약 59억 원을 실현하며 연간 이익을 방어했다. 영업이익률 추이는 2022년 11.8% → 2023년 8.9% → 2024년 8.5% → 2025년 5.4%로 4년 연속 하락해 비용 구조 개선이 중요 과제로 부각된다. 반면 부채비율은 2022년 59.5%에서 2025년 28.2%로 대폭 개선됐고, 2025년 영업활동현금흐름은 약 32억 7천만 원으로 안정적이어서 재무 여력은 양호하다. 2026년 1분기는 매출 약 90억 원으로 전년 동기 대비 약 6.8% 증가했고, 영업손실은 약 20억 원으로 전년 동기(약 27억 원) 대비 손실 규모가 축소되어 점진적 개선 흐름을 시사한다. 다만 적자가 지속되고 있어 AI 신사업 수익화와 계절성 완화의 추가 검증이 필요하다.",
-  "en": "Full-year 2025 revenue reached approximately KRW 46.7bn, up just 1.2% year-on-year from KRW 46.1bn in 2024, while operating income fell sharply to approximately KRW 2.5bn (OPM 5.4%) from KRW 3.9bn (8.5%) in 2024. Rising AI new-business investment, Paros Networks integration costs, and H1 order-intake delays are the primary factors behind the margin compression. Quarterly results reveal extreme seasonality: 2025Q1 posted revenue of ~KRW 8.4bn and an operating loss of ~KRW 2.7bn; Q2 revenue of ~KRW 10.7bn with a loss of ~KRW 0.9bn; before a strong Q4 recovery of ~KRW 17.1bn revenue and ~KRW 5.9bn operating income, which defended the full-year profit. The four-year OPM trend—11.8% (2022) → 8.9% (2023) → 8.5% (2024) → 5.4% (2025)—underscores a structural need for cost discipline. On the positive side, the debt ratio improved from 59.5% (2022) to 28.2% (2025), and 2025 operating cash flow of approximately KRW 3.3bn remained healthy. In 2026Q1, revenue grew approximately 6.8% year-on-year to ~KRW 9.0bn, while the operating loss narrowed to ~KRW 2.0bn from ~KRW 2.7bn in the year-ago period, suggesting a tentative improvement trajectory. However, with a deficit persisting, further validation of AI monetization and seasonal smoothing is warranted."
+  "ko": "연간 매출은 2022년 441억원에서 2023년 427억원으로 소폭 줄었다가 2024년 461억원, 2025년 467억원으로 완만히 늘었으나, 영업이익률은 2022년 11.8%에서 2023년 8.9%, 2024년 8.5%, 2025년 5.4%로 4년 연속 하락하며 수익성 둔화가 뚜렷하다. 2025년 지배주주 순이익은 26.6억원으로 2024년 44.9억원, 2022년 52.1억원 대비 크게 축소됐다. 분기별로 보면 변동성이 크다. 2025년 2분기는 매출 107억원에 영업손실 9.4억원, 지배주주순손실 12.2억원을 기록했고, 3분기에는 매출 104억원에 영업이익 2.5억원으로 소폭 흑자 전환했다. 4분기에는 매출 171억원으로 급증하며 영업이익 59.3억원, 지배주주순이익 61.1억원의 대규모 흑자를 냈는데, 이는 소프트웨어 업종 특유의 하반기 매출 집중 효과가 반영된 결과로 해석된다. 그러나 2026년 1분기에는 다시 매출 90억원, 영업손실 20.2억원, 순손실 18.0억원으로 적자 전환했고, 2분기에는 매출 131억원으로 회복하며 영업이익 10.1억원, 지배주주순이익 8.6억원의 흑자를 기록했다. 이처럼 최근 5개 분기(2025년 2분기~2026년 2분기)는 흑자와 적자가 교차하는 패턴을 반복해, 연간 실적의 계절성과 분기 단위 수익성 관리의 어려움이 동시에 드러난다. 현금흐름 측면에서는 영업활동현금흐름이 2022년 106억원에서 2025년 32.7억원으로 축소돼, 이익 감소와 함께 현금창출력도 약화된 흐름을 보였다.",
+  "en": "Annual revenue slipped from KRW 44.1 billion in 2022 to KRW 42.7 billion in 2023, then rose modestly to KRW 46.1 billion in 2024 and KRW 46.7 billion in 2025, but operating margin declined for four consecutive years, from 11.8% in 2022 to 8.9% in 2023, 8.5% in 2024, and 5.4% in 2025, showing a clear profitability slowdown. Net profit attributable to owners fell sharply to KRW 2.66 billion in 2025 from KRW 4.49 billion in 2024 and KRW 5.21 billion in 2022. Quarterly results show pronounced volatility. Second-quarter 2025 revenue was KRW 10.7 billion with an operating loss of KRW 0.94 billion and a net loss attributable to owners of KRW 1.22 billion, before the company turned modestly profitable in the third quarter with KRW 10.4 billion in revenue and KRW 0.25 billion in operating profit. Fourth-quarter revenue jumped to KRW 17.1 billion, delivering a large operating profit of KRW 5.93 billion and net profit attributable to owners of KRW 6.11 billion, a pattern consistent with the software industry's tendency toward second-half revenue concentration. However, the first quarter of 2026 swung back to losses, with revenue of KRW 9.0 billion, an operating loss of KRW 2.02 billion, and a net loss of KRW 1.80 billion, before the second quarter recovered to KRW 13.1 billion in revenue with operating profit of KRW 1.01 billion and net profit attributable to owners of KRW 0.86 billion. This alternating profit-and-loss pattern across the trailing five quarters (Q2 2025 through Q2 2026) illustrates both the seasonality of annual results and the difficulty of managing quarter-to-quarter profitability. On the cash flow side, operating cash flow contracted from KRW 10.6 billion in 2022 to KRW 3.27 billion in 2025, reflecting weakened cash generation alongside declining profits."
  },
  "industry": {
-  "ko": "국내 사이버보안 시장은 2026년 4조 원 돌파가 전망되며, 전년 대비 16.1% 성장하는 재가속 국면으로 진입할 것으로 분석된다. 세부 시장 중 데이터보안은 2026년 약 7,937억 원 규모로 16.7% 성장이 예상되고, 클라우드 보안은 17.9%로 전 품목 중 가장 높은 성장률이 전망된다. 생성형 AI 도입 확산으로 기업 내 데이터 유출 위험이 고조되면서 DLP·DSPM 수요가 금융·공공·제조 분야를 중심으로 빠르게 확대되고 있다. 개인정보보호법 개정 논의와 N2SF(국가 망보안체계) 정책은 보안 컴플라이언스 지출을 자극할 수 있는 추가 촉매가 될 수 있다. 글로벌 시장에서는 마이크로소프트, 팔로알토네트웍스 등 대형 벤더가 DLP·DSPM 기능을 통합 플랫폼에 번들로 제공하는 추세가 강해지면서, 단일 제품 중심의 중소형 보안 전문기업의 경쟁 환경이 복잡해지고 있다. 국내에서도 BigID 등 글로벌 DSPM 전문기업의 진출이 가시화되어 틈새 영역의 경쟁이 심화되는 구도다. 파수AI는 맥OS 및 CAD 설계도면 보호, 제조·반도체 산업 특화 IP 보안 수요를 공략하며 글로벌 플랫폼과의 직접 경쟁을 일부 우회하는 전략을 구사하고 있다.",
-  "en": "South Korea's cybersecurity market is forecast to exceed KRW 4 trillion in 2026, growing 16.1% as the industry re-accelerates following a 2025 consolidation phase. The data security sub-segment is projected to reach approximately KRW 793.7bn at 16.7% growth, while cloud security leads all sub-segments at a 17.9% expansion rate. Widespread enterprise GenAI adoption is elevating data-leakage risk, rapidly expanding DLP and DSPM demand across financial services, public-sector, and manufacturing verticals. The ongoing revision of South Korea's Personal Information Protection Act and the NIS N2SF framework represent additional regulatory catalysts for security compliance spending. Globally, the bundling of DLP and DSPM into integrated platforms by Microsoft, Palo Alto Networks, and others is intensifying competitive pressure on specialized mid-size vendors. Domestically, global DSPM specialist BigID's entry into the Korean market is sharpening sub-segment competition. Fasoo AI navigates this environment by targeting differentiated niches—macOS and CAD file DRM, and IP-theft prevention for semiconductor and automotive manufacturers—where global platform coverage is less comprehensive."
+  "ko": "생성형 AI의 업무 현장 확산은 프롬프트·첨부파일을 통한 개인정보·영업비밀 유출이라는 새로운 보안 위협을 만들어냈고, 이는 데이터 보안·DLP 시장의 성장 동력으로 작용하고 있다. 국내에서는 공공기관 대상 국가망보안체계(N2SF) 개편이 핵심 변수로 부상해, 보안등급(CSO) 분류와 데이터 식별·통제 솔루션에 대한 수요를 자극하고 있다. 파수AI는 이러한 흐름 속에서 기존 문서보안(DRM) 고객 기반을 발판으로 AI 거버넌스 영역으로 사업을 확장하는 위치에 있으며, ISDP·ISEC 등 국내 정보보안 콘퍼런스와 가트너 시큐리티 서밋 같은 해외 행사에서 지속적으로 신제품을 공개하며 시장 존재감을 유지하고 있다. 경쟁은 국내 문서보안·DLP 전문업체들과 마이크로소프트 퓨어뷰 등 글로벌 클라우드 보안 플랫폼이 혼재된 구도로 전개되며, 온프레미스·프라이빗 클라우드 구축이 가능하다는 점을 파수AI는 차별점으로 내세우고 있다. 다만 산업 전반의 정보보안 예산은 경기와 공공 발주 일정에 영향을 받는 경향이 있어, 연간 실적의 계절성과 정부 예산 집행 시기가 실적에 직접 영향을 미치는 구조다. 밸류업 프로그램 확산과 상법 개정에 따른 주주환원 강화 흐름은 코스닥 소형 IT 기업 전반에도 자사주 매입·배당 확대 압력으로 작용하고 있다.",
+  "en": "The spread of generative AI in everyday workplace use has created a new security threat centered on leakage of personal information and trade secrets through prompts and attachments, acting as a growth driver for the data security and DLP market. In South Korea, the overhaul of the National Network Security Framework (N2SF) for public institutions has emerged as a key variable, stimulating demand for security-grade (CSO) classification and data identification and control solutions. Amid this trend, Fasoo AI is positioned to extend its existing document-security (DRM) customer base into the AI governance domain, maintaining market visibility through repeated product unveilings at domestic conferences such as ISDP and ISEC as well as overseas events like the Gartner Security Summit. Competition unfolds in a landscape that mixes domestic document security and DLP specialists with global cloud security platforms such as Microsoft Purview, and Fasoo AI positions its ability to deploy on-premises or in private cloud environments as a point of differentiation. That said, overall information security budgets tend to be sensitive to macroeconomic conditions and public procurement schedules, meaning the seasonality of annual results and the timing of government budget execution directly affect performance. The broader spread of value-up programs and strengthened shareholder return expectations following commercial code amendments has also created pressure across small-cap KOSDAQ IT companies for expanded buybacks and dividends."
  },
  "outlook": {
-  "ko": "파수AI는 2025년 기업용 LLM 'Ellm'의 레퍼런스를 본격 확보했고, 2026년에는 지식그래프·AI 에이전트 기술을 추가해 엔터프라이즈 AI 플랫폼의 완성도를 높이겠다는 방향을 제시했다. 2026년 4월 과기부·NIPA의 'AX 원스톱 바우처 지원사업' 공급기업으로 선정돼 정부 지원 채널을 통해 Ellm을 기업에 확산할 수 있는 발판을 마련했다. 2026년 7월 가트너 시큐리티 서밋 2026에 참가해 AI 데이터 유출 대응 전략을 제시하는 등 글로벌 브랜딩 활동도 이어가고 있다. 미국 시장에서는 2025년 SEMICON WEST·ManuSec USA 참가를 통해 반도체·자동차 제조업군 접점을 확대했고, 이 과정에서 설계도면 IP 보호와 공급망 데이터 보안을 핵심 가치로 제시했다. 개인정보보호법 개정 논의와 N2SF 이슈는 공공·금융 부문의 보안 지출 확대 가능성을 높이며 AI-R Privacy·DSPM 제품군의 잠재 수요 촉진 요소로 작용할 수 있다. 2027년부터 모든 상장사에 정보보호 공시 의무가 부과될 예정이어서, 그 도입 준비 과정에서 기업 보안 솔루션 수요가 구조적으로 증가할 수 있다. 다만 Ellm 등 AI 신사업의 연간 매출 기여도가 공시 기준으로 아직 가시화되지 않았고, SaaS 전환 속도와 해외 수주 성과도 추가 관찰이 필요하다.",
-  "en": "Fasoo AI confirmed that enterprise LLM 'Ellm' gained genuine customer references in 2025 and outlined plans to deepen the platform with knowledge-graph and AI-agent capabilities in 2026. The April 2026 selection as an AX One-Stop Voucher supplier under NIPA establishes a government-backed distribution channel for Ellm. The company participated in the Gartner Security & Risk Management Summit 2026 in July 2026 to present its AI data-leakage strategy, continuing global brand-building. In the U.S., participation in SEMICON WEST and ManuSec USA 2025 expanded the pipeline of semiconductor and automotive manufacturer contacts, with IP-theft prevention and supply-chain data security as the featured value proposition. Ongoing Personal Information Protection Act revision and the N2SF framework could expand public and financial-sector security budgets, creating a demand catalyst for AI-R Privacy and DSPM. The impending 2027 mandatory information-security disclosure requirement for all listed Korean companies may also structurally expand enterprise security spending during the preparation period. However, the financial contribution of AI new businesses remains undisclosed in regulatory filings, and SaaS conversion velocity and international order performance require continued monitoring."
+  "ko": "회사는 2026년 2분기 잠정 실적 발표 시점에 하반기 실적에 대해 긍정적 전망을 제시했다. 상반기의 AI 사업 확대와 데이터 보안 수요 증가 흐름이 이어지는 가운데 수주 잔고가 전년 동기 대비 큰 폭으로 늘었다는 설명이며, 소프트웨어 업종 특유의 하반기 매출 집중 계절성을 감안해 연간 매출은 두 자릿수 성장이 가능할 것으로 기대하고 있다고 밝혔다. 중장기적으로는 지난해 발표한 '기업가치 제고(Value-up) 계획'에서 2030년까지 연평균 매출 성장률 20%, 영업이익률 25%, 주주환원율 30%를 목표로 제시한 바 있다. 사업 측면에서는 미국법인 합병으로 출범한 '심볼로직(Symbologic)'을 통한 해외 AX 사업 확대, 국가망보안체계(N2SF) 대응 솔루션 고도화, AX 플랫폼 '엘름' 및 'AI-R DLP'의 고객 저변 확대가 향후 실적에 영향을 줄 핵심 변수로 꼽힌다. 지난 6월에는 자사주 취득을 결정하는 등 주주환원 정책도 지속 추진되고 있다. 다만 이러한 성장 목표와 수주 확대 기대는 아직 확정 실적으로 검증되지 않은 회사 측 설명 단계이며, 2026년 1분기처럼 계절적 비수기에 재차 적자로 돌아설 가능성도 과거 분기 패턴상 배제하기 어렵다.",
+  "en": "At the time of its second-quarter 2026 preliminary earnings disclosure, the company presented a positive outlook for the second half. It stated that the expansion of its AI business and rising data security demand seen in the first half were continuing, that its order backlog had increased substantially year over year, and that, factoring in the software industry's typical second-half revenue concentration, double-digit annual revenue growth was achievable this year. Over the longer term, the value-up plan disclosed last year set targets of 20% average annual revenue growth, 25% operating margin, and 30% shareholder return ratio by 2030. On the business side, key variables likely to affect future results include overseas AX business expansion through Symbologic, the entity formed by merging its US subsidiary, upgrades to solutions addressing the National Network Security Framework (N2SF), and broadening the customer base for the Ellm AX platform and AI-R DLP. The company also decided on a share buyback in June, continuing its shareholder return policy. However, these growth targets and backlog expectations remain company statements not yet verified by confirmed results, and given past quarterly patterns, a return to losses during a seasonally slow quarter, as seen in the first quarter of 2026, cannot be ruled out."
  },
  "valuation_comment": {
-  "ko": "주당순자산(BPS) 3,044원에 근접한 구간에서 주가가 거래되고 있어, 순자산 대비 소폭 프리미엄 상태다. 이는 과거 장기 거래 밴드에서 순자산 대비 큰 프리미엄이 형성됐던 구간에 비해 밸류에이션 부담이 낮아진 상황으로, 현재 이익 배수는 역사적 거래 밴드 내 하단부에 위치해 있다. 주당순이익(EPS) 300원 수준은 4년 연속 이익률 하락 과정에서 나타난 수치로, 영업이익률 회복 여부가 이익 기반의 밸류에이션 방향을 결정하는 핵심 변수다. 주당배당금(DPS) 100원의 현금배당이 일관되게 지급돼 주주환원 연속성은 인정되나, 수익성 하락 국면이 지속될 경우 배당 여력의 지속성도 점검이 필요하다. 소형주 특성상 거래량과 유동성이 제한적이어서 정보(실적, 수주)의 유입에 따른 주가 변동폭이 상대적으로 크게 나타날 수 있는 점도 고려해야 한다.",
-  "en": "The stock is trading in close proximity to its book value per share (BPS: KRW 3,044), representing a modest premium to net assets—a materially lower valuation burden compared to historical periods when it commanded a much larger premium to book. The current earnings multiple, based on EPS of KRW 300, sits toward the lower end of the stock's historical trading band, reflecting four consecutive years of margin erosion. The recurring cash dividend of KRW 100 per share (DPS) demonstrates shareholder-return consistency, but sustaining dividend capacity warrants scrutiny if the profitability decline persists. As a small-cap security, limited trading liquidity means that material information events—earnings releases, contract announcements—may produce outsized short-term price moves relative to larger-cap peers."
+  "ko": "최근 4개 분기(2025년 3분기~2026년 2분기) 동안 흑자와 적자 분기가 교차하며 주당 수익성 지표는 연간 단위로 볼 때보다 완만한 회복 신호를 보이고 있다. 주가는 순자산가치에 근접한 수준에서 형성돼 있어, 과거 몇 년간의 이익 감소 흐름을 감안하면 순자산 대비 큰 폭의 프리미엄이나 할인이 두드러지지는 않는 구간으로 볼 수 있다. 이익 규모가 2022년 이후 축소된 뒤 2025년 하반기~2026년 상반기에 걸쳐 적자와 흑자를 오가며 회복을 시도하는 국면인 만큼, 주가 배수 해석에는 분기별 실적 변동성을 함께 고려할 필요가 있다. 배당은 매년 현금배당을 지급해 온 이력이 있으며, 여기에 더해 지난 6월 자사주 취득 결정으로 주주환원 수단이 다변화되는 모습이다. 다만 이 같은 주주환원 정책의 지속성과 규모는 향후 실적 추이에 따라 달라질 수 있다.",
+  "en": "Over the trailing four quarters (Q3 2025 through Q2 2026), profitable and loss-making quarters alternated, with per-share profitability signaling a gentler recovery pattern than the annual figures alone would suggest. The share price sits at a level close to net asset value, and given the multi-year decline in profit that preceded it, this is not a segment marked by a pronounced premium or discount relative to book value. Because earnings shrank after 2022 and then swung between losses and profits through the second half of 2025 and first half of 2026 in an attempted recovery, interpreting valuation multiples requires accounting for this quarterly variability. The company has a history of paying annual cash dividends, and its June decision to conduct a share buyback has diversified its shareholder return toolkit. That said, the continuity and scale of these shareholder return policies may vary depending on future earnings trends."
  },
  "bull": [
   {
    "title": {
-    "ko": "국내 데이터보안 시장의 구조적 성장과 규제 수혜",
-    "en": "Structural Growth in Domestic Data Security and Regulatory Tailwinds"
+    "ko": "AI 보안 수요 확대와 사업 재편",
+    "en": "Expanding AI Security Demand and Business Realignment"
    },
    "body": {
-    "ko": "국내 사이버보안 시장은 2026년 4조 원을 넘어 16.1% 성장이 예상되며, 데이터보안 세부 시장도 16.7% 확대가 전망된다. 개인정보보호법 개정 논의와 N2SF 보안 정책은 파수AI의 AI-R Privacy·DSPM·DRM 제품군에 대한 공공·금융·제조 부문 수요를 자극할 수 있다. 국내 주요 대기업의 표준 제품으로서의 높은 고객 충성도와 유지보수 매출 기반은 사업 안정성의 핵심 지지대로 작용한다.",
-    "en": "Korea's cybersecurity market is expected to grow 16.1% in 2026, exceeding KRW 4 trillion, with the data security sub-segment also expanding 16.7%. Ongoing Personal Information Protection Act revision and N2SF compliance requirements could stimulate demand for Fasoo AI's AI-R Privacy, DSPM, and DRM products across public, financial, and manufacturing sectors. High customer loyalty and stable maintenance revenue from major Korean conglomerates provide a durable foundation for business stability."
+    "ko": "생성형 AI 사용 확산에 따른 데이터 유출 우려가 AI-R DLP, FDR 등 신제품 수요를 자극하고 있다. 사명 변경과 미국법인의 심볼로직 통합은 AI 보안·AX 사업으로의 전환 의지를 보여준다. 공공부문 N2SF 대응 확대는 규제 기반의 안정적 수요처가 될 잠재력이 있다.",
+    "en": "Concerns over data leakage from widespread generative AI use are stimulating demand for new products such as AI-R DLP and FDR. The company's name change and the integration of its US subsidiary into Symbologic signal its commitment to pivoting toward AI security and AX business. Expanded response to the N2SF in the public sector has the potential to become a stable, regulation-driven demand source."
    }
   },
   {
    "title": {
-    "ko": "AI 신사업(Ellm) 레퍼런스 누적과 정부 지원 채널 확보",
-    "en": "Accumulating Ellm References and Government-Backed Distribution Channel"
+    "ko": "2분기 흑자 전환과 매출 성장",
+    "en": "Q2 Profitability Turnaround and Revenue Growth"
    },
    "body": {
-    "ko": "파수AI는 2024년 출시한 기업용 프라이빗 LLM 'Ellm'의 고객 레퍼런스를 2025년부터 본격 축적하고 있으며, 2026년 과기부 AX 원스톱 바우처 공급기업 선정으로 정부 지원을 통한 시장 확산 채널을 마련했다. DRM 사업에서 쌓은 문서 이해 노하우는 기업용 RAG·AI 에이전트 개발에서 차별화 요소로 작용할 수 있다. AI와 보안의 융합 전략이 고객의 AX 전환 수요와 맞물릴 경우 신사업 매출 확대의 여지가 존재한다.",
-    "en": "Fasoo AI has been actively accumulating customer references for enterprise private LLM 'Ellm' (launched 2024) since 2025, and its 2026 selection as an AX One-Stop Voucher supplier under NIPA establishes a government-backed market penetration channel. Document-intelligence expertise built through years of DRM operations can serve as a differentiator in enterprise RAG and AI-agent development. If the AI-security convergence strategy aligns with customers' accelerating AX transformation needs, the AI business segment has room to grow."
+    "ko": "2026년 2분기 매출은 131억원으로 전년 동기 대비 22.7% 늘었고 영업이익·순이익 모두 흑자로 전환했다. 회사는 수주 잔고 증가와 하반기 계절성을 근거로 연간 두 자릿수 매출 성장을 기대한다고 밝혔다. 4분기 실적이 연간 실적을 좌우하는 구조상 하반기 실적 개선 여지가 남아있다.",
+    "en": "Second-quarter 2026 revenue reached KRW 13.1 billion, up 22.7% year over year, with both operating profit and net profit turning positive. The company said it expects double-digit annual revenue growth based on order backlog growth and second-half seasonality. Given that fourth-quarter results tend to drive annual performance, there remains room for improvement in the second half."
    }
   },
   {
    "title": {
-    "ko": "재무 건전성 개선과 견조한 영업현금흐름",
-    "en": "Significantly Improved Balance Sheet and Stable Operating Cash Flow"
+    "ko": "주주환원 정책 강화",
+    "en": "Strengthened Shareholder Return Policy"
    },
    "body": {
-    "ko": "부채비율이 2022년 59.5%에서 2025년 28.2%로 크게 낮아져 무차입에 근접한 재무 구조를 갖추고 있다. 2025년 영업활동현금흐름은 약 32억 7천만 원으로 안정적이며, 지배주주 자본(약 374억 원)이 풍부해 신사업 투자 여력을 보존하고 있다. 안정적 유지보수 매출 기반과 SaaS 전환 추진은 현금흐름의 예측 가능성을 높이는 방향으로 작용한다.",
-    "en": "The debt ratio has declined sharply from 59.5% (2022) to 28.2% (2025), approaching a near debt-free balance sheet. Operating cash flow of approximately KRW 3.3bn in 2025 remained stable, and parent shareholders' equity of approximately KRW 37.4bn provides ample capacity for new-business investment. Stable maintenance contract revenue and the ongoing SaaS transition enhance future cash flow predictability."
+    "ko": "회사는 지난해 2030년까지 주주환원율 30%를 목표로 하는 밸류업 계획을 발표했다. 지난 6월에는 자사주 취득을 결정해 배당에 더해 환원 수단을 다변화했다. 밸류업 프로그램 확산이라는 시장 전반의 흐름과도 맞물려 있다.",
+    "en": "The company announced a value-up plan last year targeting a 30% shareholder return ratio by 2030. In June it decided on a share buyback, diversifying its return methods beyond dividends. This also aligns with the broader market trend of expanding value-up programs."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "영업이익률 4년 연속 하락과 심화된 계절성",
-    "en": "Four Consecutive Years of Operating Margin Erosion and Deepening Seasonality"
+    "ko": "수익성 둔화 추세",
+    "en": "Profitability Slowdown Trend"
    },
    "body": {
-    "ko": "영업이익률이 2022년 11.8%에서 2025년 5.4%까지 4년 연속 내려와 수익성 구조의 구조적 약화가 명확하다. 분기 매출의 37%가 4분기에 집중되어(2025년 4분기 약 171억 원) 1~3분기 영업적자가 구조적으로 반복된다. 2026년 1분기도 영업손실 약 20억 원이 지속되어, 연간 이익 회복이 다시 4분기 대형 수주 환경에 과도하게 종속될 위험이 상존한다.",
-    "en": "Operating margins have declined for four consecutive years from 11.8% (2022) to 5.4% (2025), signaling a structural weakening of the earnings base. With approximately 37% of annual revenue concentrated in Q4 (2025Q4 ~KRW 17.1bn), operating losses in Q1–Q3 repeat as a structural pattern. An operating loss of approximately KRW 2.0bn persisted in 2026Q1, and full-year profit recovery continues to be excessively dependent on Q4 contract conditions."
+    "ko": "영업이익률은 2022년 11.8%에서 2025년 5.4%로 4년 연속 하락했다. 지배주주 순이익도 2022년 52억원에서 2025년 27억원으로 절반 수준으로 줄었다. AI 사업 전환 과정에서의 투자 비용이 수익성에 부담을 주고 있을 가능성이 있다.",
+    "en": "Operating margin declined for four consecutive years, from 11.8% in 2022 to 5.4% in 2025. Net profit attributable to owners was also roughly halved, from KRW 5.2 billion in 2022 to KRW 2.7 billion in 2025. Investment costs associated with the AI business pivot may be weighing on profitability."
    }
   },
   {
    "title": {
-    "ko": "AI 신사업 수익화 지연 위험과 글로벌 플랫폼 경쟁 심화",
-    "en": "AI Monetization Lag Risk and Intensifying Global Platform Competition"
+    "ko": "분기 실적의 높은 변동성",
+    "en": "High Quarter-to-Quarter Earnings Volatility"
    },
    "body": {
-    "ko": "기업용 LLM Ellm은 레퍼런스 축적 단계에 있으며, AI 신사업의 매출 기여도가 공시로 확인되지 않아 투자 대비 수익화 속도가 불투명하다. 마이크로소프트 Purview, 글로벌 DSPM 전문기업(BigID 등) 등 대형 플랫폼 벤더의 국내 시장 침투가 강화되고 있어 중소형 전문기업의 점유율 방어가 쉽지 않은 환경이다. AI 기반 신제품 개발과 해외 영업 확장에 수반되는 고정비 증가가 당분간 이익 여력을 제한할 수 있다.",
-    "en": "Enterprise LLM Ellm is still in the reference-building stage, and the absence of disclosed AI-segment revenue figures makes monetization pace opaque relative to investment. Global platform vendors—Microsoft Purview, BigID, and others—are deepening South Korean market penetration, making market-share defense increasingly difficult for specialized mid-size firms. Fixed-cost increases tied to AI product development and overseas sales expansion may continue to constrain near-term profitability."
+    "ko": "최근 5개 분기 중 두 개 분기(2025년 2분기, 2026년 1분기)에서 영업손실과 순손실을 기록했다. 4분기 매출·이익 집중도가 높아 상반기 실적만으로는 연간 방향을 예단하기 어렵다. 이러한 계절성은 투자자들의 실적 예측 신뢰도를 낮추는 요인이 될 수 있다.",
+    "en": "Two of the trailing five quarters (Q2 2025 and Q1 2026) recorded operating and net losses. High revenue and profit concentration in the fourth quarter means first-half results alone cannot reliably indicate the full-year direction. This seasonality can undermine investor confidence in earnings forecasts."
    }
   },
   {
    "title": {
-    "ko": "소형주 유동성 제약과 미국 법인 적자 재발 가능성",
-    "en": "Small-Cap Liquidity Constraints and Potential Recurrence of U.S. Subsidiary Losses"
+    "ko": "경쟁 심화와 검증되지 않은 신사업",
+    "en": "Intensifying Competition and Unproven New Business"
    },
    "body": {
-    "ko": "시가총액이 극소형 수준이어서 기관 투자자 유인이 제한적이고 일 평균 거래대금도 소규모여서 매도·매수 시 슬리피지가 발생할 수 있다. 미국 법인은 과거 결손 누적으로 무상감자를 실시한 전례가 있으며, 북미 시장 수주가 점진적 레퍼런스 확보 단계에 머무는 동안 투자 비용이 연결 손익에 부담을 줄 수 있다. 환율 변동과 미국 정부의 사이버보안 정책 변화도 해외 사업 예측 가능성을 낮추는 요인이다.",
-    "en": "The micro-cap market capitalization limits institutional investor appeal and restricts average daily trading volume, potentially creating significant slippage at entry or exit. The U.S. subsidiary has a precedent of capital reduction to address accumulated deficits, and continued North American investment without matching revenue growth could generate additional losses flowing through the consolidated P&L. Foreign exchange volatility and shifts in U.S. cybersecurity policy also reduce the predictability of international operations."
+    "ko": "AI 데이터 보안 시장에는 마이크로소프트 퓨어뷰 등 글로벌 대형 플랫폼 기업들도 진입해 있어 경쟁이 심화되고 있다. 사명 변경 이후 제시된 AX 플랫폼 '엘름' 등 신사업의 매출 기여도는 아직 별도로 공시되지 않았다. 목표로 제시된 2030년 밸류업 지표 달성 여부는 아직 확인되지 않은 계획 단계다.",
+    "en": "Competition in the AI data security market is intensifying with the entry of large global platform companies such as Microsoft Purview. The revenue contribution of new businesses unveiled after the rebrand, such as the Ellm AX platform, has not yet been separately disclosed. Whether the 2030 value-up targets will be achieved remains an unverified, plan-stage matter."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "사업 위험: AI 상용화 지연 및 플랫폼 경쟁",
-    "en": "Business Risk: AI Commercialization Delay and Platform Competition"
+    "ko": "실적 계절성 리스크",
+    "en": "Earnings Seasonality Risk"
    },
    "body": {
-    "ko": "Ellm이 레퍼런스 단계를 넘어 실질적 매출로 전환되지 못하면 AI 투자 비용이 수익성을 장기 압박할 수 있다. 마이크로소프트·팔로알토네트웍스 등이 DLP·DSPM을 통합 플랫폼에 번들화하면 단독 제품 공급자로서의 경쟁력이 약화될 수 있다. 국내 후발 DRM 업체의 가격 경쟁이 심화될 경우 전통 사업 마진에도 추가 하방 압력이 작용할 수 있다.",
-    "en": "If Ellm fails to transition from reference accumulation to material revenue, AI investment costs will continue to erode profitability over the medium term. Global platform vendors bundling DLP and DSPM into integrated solutions may undermine the competitive position of a specialized point-solution provider. Intensifying price competition from domestic DRM challengers also poses a downside risk to legacy-business margins."
+    "ko": "소프트웨어 라이선스 매출이 4분기에 집중되는 구조상 상반기 실적만으로 연간 방향을 판단하기 어렵다. 2026년 1분기처럼 비수기에 재차 적자로 전환될 가능성이 과거 패턴상 존재한다. 공공부문 예산 집행 시기 변화도 분기별 실적에 영향을 줄 수 있다.",
+    "en": "Because software license revenue is concentrated in the fourth quarter, first-half results alone are insufficient to determine the full-year direction. Past patterns show the possibility of returning to losses during off-peak quarters, as occurred in the first quarter of 2026. Changes in the timing of public-sector budget execution can also affect quarterly results."
    }
   },
   {
    "cat": {
-    "ko": "시장 위험: 공공 IT 예산 변동 및 대형 고객 의존도",
-    "en": "Market Risk: Public IT Budget Variability and Large-Customer Concentration"
+    "ko": "사업 전환 실행 리스크",
+    "en": "Business Transition Execution Risk"
    },
    "body": {
-    "ko": "고객기반이 대기업·공공기관에 집중되어 있어 해당 부문의 IT 예산 삭감이나 조달 지연이 연간 매출에 직접 영향을 미친다. 4분기 매출 집중 구조상 대형 프로젝트 납기 이월이 발생하면 연간 실적 변동성이 예측치를 크게 벗어날 수 있다. 글로벌 경기 불확실성이 기업 보안 투자 지연으로 이어질 경우 SaaS 전환 속도와 신규 계약 체결에도 부정적 영향을 줄 수 있다.",
-    "en": "Customer concentration in large Korean conglomerates and public-sector entities means IT budget cuts or procurement delays in these segments directly affect annual revenue. Given the Q4 revenue concentration, any slippage in delivery timelines for major projects could cause full-year results to deviate materially from expectations. Global economic uncertainty deferring enterprise security investment would negatively impact SaaS conversion rates and new contract activity."
+    "ko": "사명 변경과 심볼로직 합병 등 조직 재편이 진행 중인 가운데 AI·AX 신사업의 매출 기여가 아직 검증되지 않았다. 신사업 투자 확대가 기존 문서보안 사업의 수익성을 추가로 압박할 가능성이 있다. 해외 사업 확장 과정에서 초기 비용 부담이 발생할 수 있다.",
+    "en": "While organizational restructuring such as the rebrand and the Symbologic merger is underway, the revenue contribution from new AI and AX businesses has not yet been verified. Expanded investment in new businesses could further pressure the profitability of the existing document security business. Initial cost burdens may arise during overseas business expansion."
    }
   },
   {
    "cat": {
-    "ko": "재무·구조 위험: 소형주 유동성 및 해외 법인 손실",
-    "en": "Financial/Structural Risk: Illiquid Small-Cap and Overseas Subsidiary Losses"
+    "ko": "경쟁 및 규제 환경 리스크",
+    "en": "Competitive and Regulatory Environment Risk"
    },
    "body": {
-    "ko": "시가총액이 극소형 수준이어서 대규모 매도 시 가격 충격이 클 수 있으며, 기관 투자자 유인도 제한적이다. 미국 법인의 과거 결손 전례와 현재의 투자 부담이 연결 재무제표 손익을 지속 압박할 가능성이 있다. 향후 대규모 인수·합병이나 AI 인프라 투자 확대 시 유상증자 등 주주 가치 희석 가능성도 배제할 수 없다.",
-    "en": "The micro-cap market capitalization implies significant price-impact risk upon large-scale selling and limits institutional investor participation. The U.S. subsidiary's prior accumulated deficit and current investment burden may continue to weigh on the consolidated P&L. If the company pursues major acquisitions or substantial AI infrastructure investment, equity financing through new share issuance—carrying dilution risk—cannot be ruled out."
+    "ko": "글로벌 클라우드 보안 플랫폼과의 경쟁이 심화될 경우 가격 및 기술 경쟁력 압박이 커질 수 있다. N2SF 등 공공부문 규제 변화의 구체적 시행 일정과 예산 배정 시기는 회사 통제 밖의 변수다. 정책 변화가 지연되거나 축소될 경우 기대했던 공공 수요가 예상보다 늦게 반영될 수 있다.",
+    "en": "Intensifying competition with global cloud security platforms could increase pricing and technology competitiveness pressures. The specific implementation timeline and budget allocation for public-sector regulatory changes such as the N2SF are variables outside the company's control. If policy changes are delayed or scaled back, anticipated public-sector demand may materialize later than expected."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 (2026년 2분기 실적 발표)",
-    "en": "August 2026 (2026Q2 Earnings Release)"
+    "ko": "2026년 11월 중(잠정)",
+    "en": "Mid-November 2026 (tentative)"
    },
    "what": {
-    "ko": "2분기 매출·영업이익이 전년 동기 대비 손실 축소 흐름을 이어가는지 확인. Ellm 등 AI 신사업의 수주·매출 기여가 처음으로 가시화되는지가 핵심 확인 포인트.",
-    "en": "Verify whether revenue and operating results continue to narrow losses year-on-year. Watch for any initial quantified contribution from Ellm and AI new businesses to total revenue or order intake."
+    "ko": "2026년 3분기 실적 발표 예정 시기로, 2분기 흑자 전환이 이어지는지와 수주 잔고 증가가 실제 매출로 이어지는지 확인이 필요하다.",
+    "en": "Third-quarter 2026 results are expected to be disclosed around this time; it will be important to check whether the Q2 profitability turnaround continued and whether the reported order backlog growth translated into actual revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (개인정보보호법 개정안 입법 진행 상황)",
-    "en": "H2 2026 (Personal Information Protection Act Revision Progress)"
+    "ko": "2026년 4분기 중",
+    "en": "Fourth quarter of 2026"
    },
    "what": {
-    "ko": "개정안의 국회 통과 여부와 시행 일정이 확정되면 AI-R Privacy·DSPM 제품군의 수요 촉진 규모와 시기를 보다 구체적으로 평가할 수 있다.",
-    "en": "If the revised Act passes and an effective date is confirmed, the scale and timing of demand catalysts for Fasoo AI's AI-R Privacy and DSPM products can be more precisely assessed."
+    "ko": "소프트웨어 업종 특유의 하반기 매출 집중 효과가 실제로 나타나는지, 회사가 제시한 연간 두 자릿수 매출 성장 목표에 부합하는지 살펴볼 시점이다.",
+    "en": "This period will show whether the software industry's typical second-half revenue concentration materializes and whether results align with the company's stated target of double-digit annual revenue growth."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기~연말 (대형 수주 공시 및 연간 실적 윤곽)",
-    "en": "Q4 2026 to Year-End (Major Contract Disclosures and Annual Result Contours)"
+    "ko": "2026년 하반기~2027년 상반기",
+    "en": "Second half of 2026 through first half of 2027"
    },
    "what": {
-    "ko": "4분기 대형 수주 성사 여부가 2026년 연간 영업이익률 회복의 가늠자. 회사가 IR 채널에서 제시하는 수익성 전망이나 가이던스가 있다면 추가 확인이 필요하다.",
-    "en": "The size and timing of Q4 contract wins will be the primary determinant of 2026 full-year OPM recovery. Monitor whether the company provides any profitability outlook or guidance through IR channels."
+    "ko": "지난 6월 결정한 자사주 취득의 실제 이행 규모와 추가 주주환원 정책 발표 여부를 확인할 필요가 있다.",
+    "en": "It will be worth confirming the actual scale of execution of the June share buyback decision and whether additional shareholder return policies are announced."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (Ellm 고객 레퍼런스·매출 공개 여부)",
-    "en": "H2 2026 (Ellm Customer References and Revenue Disclosure)"
+    "ko": "2026년 하반기 이후",
+    "en": "From the second half of 2026 onward"
    },
    "what": {
-    "ko": "기업용 LLM Ellm의 누적 고객 레퍼런스와 AI 사업 매출 기여가 공시나 IR을 통해 처음으로 공개되는 시점을 주시. AI 신사업 매출 비중이 의미 있는 수준에 도달하는지가 중기 성장 내러티브의 핵심 증거.",
-    "en": "Watch for the first formal disclosure of cumulative Ellm customer references and AI-segment revenue via regulatory filings or IR. The point at which AI new businesses constitute a material share of total revenue will serve as key evidence for any medium-term growth narrative."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 (모든 상장사 정보보호 공시 의무화)",
-    "en": "2027 (Mandatory Information-Security Disclosure for All Listed Companies)"
-   },
-   "what": {
-    "ko": "2027년부터 모든 상장사에 정보보호 공시 의무가 부과되어 보안 솔루션 도입 수요가 구조적으로 증가할 수 있다. 파수AI의 수혜 규모와 수주 증가가 2026년 연간 실적과 초기 수주 동향으로부터 사전 확인 가능한지 점검.",
-    "en": "Mandatory information-security disclosures for all listed Korean companies take effect in 2027, potentially generating structural demand for security solutions in the lead-up period. Monitor 2026 annual results and early order trends for advance signals of how much of this demand Fasoo AI captures."
+    "ko": "국가망보안체계(N2SF) 관련 공공부문 신규 수주 공시와 심볼로직을 통한 해외 매출 비중 변화를 추적할 필요가 있다.",
+    "en": "New public-sector order disclosures related to the National Network Security Framework (N2SF) and changes in the share of overseas revenue via Symbologic should be tracked."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "파수AI는 세계 최초 기업용 DRM 상용화라는 기술 선점 우위를 바탕으로 국내 대기업·공공기관 시장에서 안정적인 고객 기반과 건전한 재무 구조를 유지하고 있다. 그러나 2022년 이후 4년 연속 영업이익률 하락(11.8%→5.4%)과 상반기 반복 영업적자는 AI 신사업 투자가 수익성 개선으로 연결되어야 해소 가능한 구조적 과제다. 사명을 '파수AI'로 변경하고 Ellm·AI-R Privacy·DSPM 등 AI 융합 제품군을 앞세워 AX 지원 기업으로의 전환을 공식화했으나, 해당 신사업들의 매출 기여가 재무제표에서 가시화되기까지는 추가 시간이 필요하다. 국내 사이버보안 시장의 구조적 성장(2026년 4조원 돌파 전망)과 개인정보보호법 개정, 2027년 상장사 정보보호 공시 의무화 등 규제 환경은 파수AI의 전통 강점 영역에 수요 촉진 요인으로 작용할 수 있다. 반면 글로벌 플랫폼 벤더의 DLP·DSPM 번들화와 신규 경쟁자의 국내 진출은 중기 경쟁 구도를 복잡하게 만든다. 2026년 분기별 실적 발표를 통해 손실 축소 흐름의 지속성과 AI 신사업 수익화 가시성을 검증하는 것이 투자자 입장에서 가장 중요한 확인 포인트가 될 것이다.",
-   "en": "Fasoo AI maintains a stable customer base and sound financial structure in South Korea's large-enterprise and public-sector markets, backed by its first-mover advantage as the world's first enterprise DRM commercializer. However, four consecutive years of operating margin erosion (11.8%→5.4%) and recurring H1 operating losses represent structural challenges that can only be resolved once AI new-business investments translate into demonstrable profitability improvement. The formal declaration of an AI transformation pivot—supported by the Ellm, AI-R Privacy, and DSPM product lines—is strategically coherent, but additional time is needed before these businesses register as a material share of reported financials. South Korea's structural cybersecurity market growth (projected to exceed KRW 4 trillion in 2026), the ongoing Personal Information Protection Act revision, and the 2027 mandatory information-security disclosure requirement represent genuine demand catalysts for the company's traditional strengths. Conversely, global platform vendors bundling DLP and DSPM into integrated suites and new entrants into the domestic market complicate the medium-term competitive landscape. The most critical near-term checkpoint for investors is whether quarterly 2026 earnings confirm a sustained loss-narrowing trend and provide initial visibility into Ellm monetization."
+   "ko": "파수AI는 전통적인 문서보안(DRM) 사업에서 AI 데이터 보안·AX 플랫폼 기업으로 정체성을 전환하는 과정에 있으며, 사명 변경과 미국법인 통합이 이러한 전략을 뒷받침한다. 재무적으로는 2022년 이후 영업이익률이 4년 연속 하락하며 수익성 둔화가 이어졌고, 최근 5개 분기 동안 흑자와 적자가 교차하는 높은 변동성을 보였다. 2026년 2분기에는 매출이 늘고 영업이익·순이익이 흑자로 전환됐으며, 회사는 수주 잔고 증가와 하반기 계절성을 근거로 연간 두 자릿수 매출 성장을 기대한다고 밝혔다. 2030년까지 매출 성장률 20%·영업이익률 25%·주주환원율 30%를 목표로 하는 밸류업 계획과 자사주 취득 결정은 주주환원 강화 의지를 보여준다. 다만 AI·AX 신사업의 실제 매출 기여도는 아직 별도로 검증되지 않았고, 공공부문 N2SF 관련 수요의 구체적 실현 시기도 확인이 필요한 상태다. 향후 3분기 실적과 하반기 계절성 반영 여부, 밸류업 계획의 이행 속도가 판단의 핵심 변수가 될 것으로 보인다.",
+   "en": "Fasoo AI is in the process of transitioning its identity from a traditional document DRM business to an AI data security and AX platform company, a strategy underscored by its name change and the integration of its US subsidiary. Financially, operating margin declined for four consecutive years after 2022, reflecting an ongoing profitability slowdown, and the trailing five quarters showed high volatility with profits and losses alternating. In the second quarter of 2026, revenue grew and both operating profit and net profit turned positive, with the company stating it expects double-digit annual revenue growth based on order backlog increases and second-half seasonality. The value-up plan targeting 20% revenue growth, 25% operating margin, and 30% shareholder return ratio by 2030, along with the share buyback decision, demonstrates a commitment to strengthening shareholder returns. However, the actual revenue contribution of the new AI and AX businesses has not yet been separately verified, and the specific timing for realizing N2SF-related public-sector demand still needs confirmation. Third-quarter results, whether second-half seasonality materializes as expected, and the pace of value-up plan execution appear to be the key variables going forward."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A150900&cID=&MenuYn=Y&ReportGB=&NewMenuID=11&stkGb=701",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Comparison.asp?pGB=1&gicode=A150900&MenuYn=Y&NewMenuID=106&stkGb=701",
-  "https://thevc.kr/fasoo",
-  "https://valueline.co.kr/finance/bicchart/150900",
+  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cmp_cd=000910",
   "https://markets.hankyung.com/stock/150900/consensus",
-  "https://www.newswire.co.kr/newsRead.php?no=1032216&sourceType=rss",
-  "https://m.irgo.co.kr/IR-COMP/150900/%ED%8C%8C%EC%88%98-IR-ROOM",
   "https://m.thinkpool.com/item/150900",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A150900&cID=&MenuYn=Y&ReportGB=&NewMenuID=101&stkGb=701",
-  "https://www.nowdaylab.com/265",
-  "https://www.asiae.co.kr/article/2025101610053889253",
-  "https://www.dailysecu.com/news/articleView.html?idxno=200772",
-  "https://www.edaily.co.kr/News/Read?newsId=03857286642333576&mediaCodeNo=257",
-  "https://www.fasoo.com/history",
-  "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202004210516031420103857&lcode=00",
-  "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202307071650050320104478",
-  "https://zdnet.co.kr/view/?no=20260208132944",
-  "https://www.dailysecu.com/news/articleView.html?idxno=201018"
+  "https://kind.krx.co.kr/corpgeneral/irschedule.do?method=searchIRScheduleMain&gubun=iRSchedule",
+  "https://zdnet.co.kr/view/?no=20260604164735",
+  "https://www.dailysecu.com/news/articleView.html?idxno=205270",
+  "https://www.smartbizn.com/news/articleView.html?idxno=149991",
+  "https://v.daum.net/v/20260723082815535",
+  "https://www.dailysecu.com/news/articleView.html?idxno=207031",
+  "https://www.epnc.co.kr/news/articleView.html?idxno=400058",
+  "https://biz.heraldcorp.com/article/10707309",
+  "https://www.fasoo.ai/?lang=kr",
+  "https://www.fnnews.com/news/202604071034586898",
+  "https://cdn.fnguide.com/SVO2/ASP/SVD_main.asp?MenuYn=Y&gicode=A150900",
+  "http://asp01.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=5&gicode=A150900&cID=&MenuYn=Y&ReportGB=&NewMenuID=102&stkGb=701",
+  "https://news.infostock.co.kr/a",
+  "https://www.stockplus.com/m/stocks/KOREA-A150900/analysis",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Comparison.asp?pGB=1&gicode=A150900&MenuYn=Y&NewMenuID=106&stkGb=701"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "150900",
  "name": "파수AI",
  "name_en": "FASOO AI Co.,Ltd.",
@@ -234,9 +224,9 @@
   "인공지능(AI)"
  ],
  "market": "코스닥",
- "reportDate": "2026-07-03",
- "reportTs": "2026-07-03 22:15",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 19:14",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
