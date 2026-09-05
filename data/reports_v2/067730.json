@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "이익 구조 정상화 완성, 신사업이 다음 성장축",
-  "en": "Profitability Normalized; New Businesses to Drive the Next Growth Phase"
+  "ko": "매출 성장과 이익 회복이 겹치는 구간",
+  "en": "Revenue Growth Meets Profit Recovery"
  },
  "lead": {
-  "ko": "금융·공공기관 전산장비 유지보수와 ATM 대행관리의 안정적 수익 기반 위에 전기차 충전 인프라 유지보수 1위 지위와 CBDC 연관 수혜 기대가 더해지며, 2022년 이익 바닥에서 가파른 수익 정상화가 완성 단계에 접어들었다.",
-  "en": "Logisys has completed a sharp earnings recovery from its 2022 trough, underpinned by stable revenues from financial-sector IT maintenance and ATM management, with incremental upside potential from Korea's leading EV charging maintenance franchise and CBDC-adjacent positioning."
+  "ko": "로지시스는 금융권·공공기관 대상 전산장비 유지보수와 VAN 대행관리를 축으로 2022년 이후 4년 연속 매출이 늘고 영업이익률도 개선됐으나, 분기별 이익 변동성과 소형주 특유의 유동성 제약이 함께 존재한다.",
+  "en": "Logisys has posted four consecutive years of revenue growth and improving operating margins since 2022 on the back of IT maintenance services and VAN agency management for financial and public-sector clients, while quarterly earnings volatility and small-cap liquidity constraints remain in play."
  },
  "keypoints": [
   {
-   "ko": "4개년 연속 매출 성장: 2022년 328억원에서 2025년 485억원으로 외형이 확대됐고, 영업이익률도 0.4%에서 5.9%로 구조적 마진 회복이 확인됨.",
-   "en": "Four consecutive years of revenue growth: top-line expanded from KRW 32.8 bn in 2022 to KRW 48.5 bn in 2025, with operating margin recovering structurally from 0.4% to 5.9%."
+   "ko": "2022~2025년 매출이 328억원에서 485억원으로 늘며 영업이익률은 0.4%에서 5.9%로 개선",
+   "en": "Revenue grew from KRW 32.8bn to KRW 48.5bn between 2022 and 2025, with operating margin improving from 0.4% to 5.9%"
   },
   {
-   "ko": "전기차 충전기 유지보수 국내 1위: 2017년 진입 후 한전 1만800기·환경부 급속충전기 3,000기를 포함한 최대 물량 수탁 관리, 장기계약 기반 반복 수익 확대.",
-   "en": "Korea's EV charging maintenance leader: since entering in 2017, Logisys manages KEPCO's 10,800 chargers and the Ministry of Environment's 3,000 fast chargers, building a long-term contract-based recurring revenue base."
+   "ko": "2025년 영업활동현금흐름 49억원으로 2022년 마이너스에서 안정적 양전환 지속",
+   "en": "2025 operating cash flow reached KRW 4.9bn, sustaining a stable positive turn from the negative figure recorded in 2022"
   },
   {
-   "ko": "통합유지보수 수요 확대: 보안·비용 절감 목적의 통합위탁 전환이 금융·공공기관에서 가속, 전국 서비스망과 원가 경쟁력이 추가 수주 기회로 이어질 전망.",
-   "en": "Growing integrated IT maintenance demand: financial and government clients are increasingly consolidating vendors for security and cost reasons, favoring Logisys's national service network and cost competitiveness."
+   "ko": "2025Q4 영업이익이 분기 중 1억원 수준으로 급감했다가 2026Q1 다시 10억원대로 반등하는 등 분기별 변동성 존재",
+   "en": "Quarterly operating profit dipped to roughly KRW 100mn in 2025Q4 before rebounding to over KRW 1bn in 2026Q1, illustrating quarter-to-quarter volatility"
   },
   {
-   "ko": "2026Q1 수익성 방어: 연결 매출은 전년 동기 대비 -7.5% 감소했으나 영업이익 10.6억원(-2.8%)으로 방어됐고, 지배주주 순이익은 오히려 8.0% 증가.",
-   "en": "2026 Q1 profitability defended: while consolidated revenue declined ~7.5% YoY, operating profit held at KRW 1.06 bn (down only 2.8% YoY), and net profit attributable to owners rose ~8% YoY."
+   "ko": "금융권 일괄용역관리 시장 확대로 VAN·ATM 대행관리 사업 기회 증가 중",
+   "en": "Expansion of integrated outsourced service management in the financial sector is increasing opportunities for the VAN and ATM agency management business"
   },
   {
-   "ko": "CBDC·디지털화폐 정책 모멘텀: 정부의 2030년 국고금 25% 디지털화폐 집행 목표, 한국은행 '프로젝트 한강' 2단계 본격 추진으로 금융자동화기기 인프라 전환 수혜 기대.",
-   "en": "CBDC/digital currency policy momentum: the government's 2030 target of routing 25% of national treasury payments through digital currency, combined with Bank of Korea's Project Hangang Phase 2 launch, creates a potential financial automation infrastructure transition opportunity."
+   "ko": "무인경비 서비스 등 신규사업을 추진 중이나 구체적 매출 기여 시점은 미확인",
+   "en": "New businesses such as unmanned security services are being pursued, though the timing of their revenue contribution is not yet confirmed"
   }
  ],
  "business": {
-  "ko": "로지시스는 1996년 한국컴퓨터지주(주) 기술부에서 분사해 설립된 코스닥 상장 IT 서비스 기업으로, 2015년 상장 이후 금융권과 공공기관을 핵심 고객군으로 성장해왔다. 사업은 크게 세 부문으로 나뉜다: ① 전산장비 유지보수 용역(금융권·공공기관의 전산단말기 및 사무자동화기기 통합·개별 유지보수), ② 전산장비 판매(입찰 수주 후 장비 설치·공급), ③ VAN서비스 대행용역(VAN사 및 금융기관 365코너의 CD/ATM 대행관리, 현금 호송·정사·외화매각 포함). VAN 사업부는 1995년부터 운영되며 전국 9개 시재센터·34개 지사망·24시간 유인 상황실을 통해 현금 유통 전 과정을 통합 서비스한다. 2017년부터는 전기차 충전 인프라 구축·유지보수 사업에 진출해 국내 최대 규모의 유지보수 업체로 성장했으며, 전기기능사 자격 이상 전담 인력 60명 이상과 전국 25개 직영센터를 운영한다. 이에 더해 CBDC 등 디지털화폐 관련 장비 사업 및 무인경비 서비스 등 신규 사업도 추진 중이다. 경쟁사로는 링네트·정원엔시스·오픈베이스·아이티센엔텍·콤텍시스템 등이 있으며, 통합유지보수 특화 원가 경쟁력과 금융권 내 축적된 수주 레퍼런스가 차별화 요소다. 현재 13개 계열사를 보유한 그룹 구조다.",
-  "en": "Logisys (KOSDAQ: 067730) was established in 1996 as a spin-off from Korea Computer Holdings, and has grown into a specialized IT services company primarily serving financial institutions and government agencies since its 2015 KOSDAQ listing. Its three core segments are: (1) IT equipment maintenance — integrated and individual maintenance of computer terminals, office automation equipment, and financial devices for banks and public institutions; (2) IT equipment sales — procurement and installation through competitive bidding; and (3) VAN agency services — outsourced management of CD/ATM machines for VAN operators and bank branch locations, covering cash transport, counting, settlement, and foreign currency exchange. The VAN division has operated since 1995 via nine regional cash centers, 34 branch offices, and a 24-hour staffed operations center. Since 2017, the company has expanded into EV charging infrastructure installation and maintenance, claiming Korea's largest maintenance operation with 60-plus certified electricians and 25 nationwide direct service centers. Additional initiatives include CBDC-related financial device services and unmanned security services. Key competitors include Linenet, Jungwon NS, Openbase, ITCen Entech, and Comtec Systems; Logisys differentiates through integrated-maintenance cost efficiency and an extensive financial-sector client track record. The group includes 13 affiliated subsidiaries."
+  "ko": "로지시스는 1996년 한국지주(주) 기술부문에서 분사해 설립된 IT 유지보수 및 금융자동화기기 대행관리 전문기업으로, 2015년 코스닥시장에 상장했다. 주요 사업은 금융권 및 공공기관을 대상으로 한 전산장비 통합유지보수 서비스와, ATM 등 금융자동화기기에 대한 VAN 대행관리·현금물류 대행용역으로 구성된다. 여기에 PC 및 주변기기 등 전산장비 판매(상품매출)가 더해져 세 개의 축으로 매출이 구성되며, 한 시장 데이터에 따르면 전산장비 유지보수(용역) 비중이 절반을 웃돌고 VAN 대행관리(용역)가 나머지의 상당 부분을 차지하며 PC 등 상품 공급은 소액 비중으로 나타난다. 2006년 구축한 통합전산시스템과 콜센터를 기반으로 24시간 장애 대응 체계를 운영하며 이를 통해 원가 경쟁력과 고객 만족도를 확보하고 있다. 회사는 한국지주그룹 계열사로 13개의 계열회사를 두고 있으며, 대형 SI업체와의 파트너십을 통해 금융권에서 공공부문까지 사업영역을 확대해왔다. 국내 IT 서비스·유지보수 업종에서는 링네트, 정원엔시스, 오픈베이스, 아이티센엔텍, 아이티센씨티에스 등이 비교 대상 종목으로 거론된다. 최근에는 무인경비 서비스 사업 등 신규 사업을 추진 중인 것으로 파악되나, 구체적 사업화 일정이나 매출 기여도는 아직 공개된 수치로 확인되지 않는다.",
+  "en": "Logisys was established in 1996 as a spin-off from the technology division of Korea Holdings Co., Ltd., specializing in IT maintenance and financial automation equipment agency management, and listed on KOSDAQ in 2015. Its core businesses consist of integrated computer equipment maintenance services for financial institutions and public agencies, alongside VAN agency management and cash logistics services for automated teller machines. A third revenue stream comes from sales of PCs and peripheral equipment. According to one market data source, maintenance services (services segment) account for more than half of revenue, VAN agency management (services segment) makes up a substantial portion of the remainder, and equipment sales represent a small share. Built on an integrated computer system and call center established in 2006, the company operates a round-the-clock incident response framework that underpins its cost competitiveness and customer satisfaction. Logisys belongs to the Korea Holdings group and has 13 affiliated companies, having expanded from the financial sector into the public sector through partnerships with large systems integrators. In the domestic IT services and maintenance industry, peers cited for comparison include Ringnet, Jeongwon Encsys, Openbase, ITCEN ENTEC, and ITCEN CTS. The company is reportedly pursuing new businesses such as unmanned security services, though a concrete commercialization timeline or revenue contribution has not yet been confirmed in disclosed figures."
  },
  "earnings": {
-  "ko": "연간 실적은 2022년 이후 뚜렷한 이익 회복 곡선을 그리고 있다. 매출은 2022년 328억원 → 2023년 365억원 → 2024년 429억원 → 2025년 485억원으로 4개년 연속 성장했고, 영업이익률도 0.4% → 1.5% → 5.6% → 5.9%로 단계적으로 개선됐다. 2025년 연간 영업이익 28.8억원, 지배주주 순이익 33.0억원으로 최근 수년 내 최고 수익성이 확인된다. 영업현금흐름도 2022년 -2.8억원에서 2024년 51.9억원, 2025년 48.6억원으로 안정적인 현금창출력이 자리 잡았으며, 부채비율은 2024년 54.7%에서 2025년 42.1%로 하락해 재무 레버리지가 완화됐다. 분기별로는 계절성이 뚜렷해 2025년 1분기 10.9억원, 2분기 8.3억원, 3분기 8.6억원에서 4분기 1.0억원으로 영업이익이 급감하는 패턴이 반복됐으며, 연말 비용 집행·재계약 정산 효과로 분석된다. 다만 2025년 4분기에는 영업이익 1.0억원에도 지배주주 순이익이 9.2억원을 기록해 비영업 손익 항목의 유의미한 기여가 있었음을 시사한다. 2026년 1분기에는 연결 매출 114.8억원(전년 동기 124.2억원 대비 -7.5%), 영업이익 10.6억원(-2.8%), 지배주주 순이익 10.4억원(+8.0%)을 기록해 매출 감소에도 마진이 견조하게 방어됐다. 이는 용역 부문의 통합유지보수 비중 확대에 따른 원가 경쟁력 향상이 배경으로 해석된다.",
-  "en": "Annual earnings have followed a clear recovery trajectory since 2022. Revenue grew consistently from KRW 32.8 bn (2022) to KRW 36.5 bn (2023), KRW 42.9 bn (2024), and KRW 48.5 bn (2025), while operating margin improved step-by-step from 0.4% to 1.5%, 5.6%, and 5.9%. Full-year 2025 operating profit reached KRW 2.88 bn and net profit attributable to owners came in at KRW 3.30 bn, the highest profitability levels in recent years. Operating cash flow recovered from negative KRW 280 mn in 2022 to KRW 5.19 bn in 2024 and KRW 4.86 bn in 2025, confirming healthy cash generation; the debt ratio also improved from 54.7% in 2024 to 42.1% in 2025. Quarterly results show marked seasonality: 2025 operating profit was KRW 1.09 bn (Q1), KRW 833 mn (Q2), KRW 860 mn (Q3), then dropped sharply to KRW 103 mn in Q4, likely due to year-end cost settlements and contract renewals. Notably, despite the weak Q4 operating profit, owner net profit was KRW 923 mn in Q4 2025, implying a material contribution from non-operating income items. In 2026 Q1, consolidated revenue came in at KRW 11.5 bn (down ~7.5% YoY versus KRW 12.4 bn in 2025 Q1), operating profit at KRW 1.06 bn (down ~2.8% YoY), and owner net profit at KRW 1.04 bn (up ~8% YoY), demonstrating resilient profitability despite the top-line softness. The margin resilience reflects improving cost competitiveness as integrated maintenance contracts expand their share of the revenue mix."
+  "ko": "연간 실적을 보면 매출은 2022년 328억 2,091만원에서 2023년 364억 5,445만원, 2024년 428억 5,728만원, 2025년 485억 4,105만원으로 4년 연속 증가했다. 같은 기간 영업이익은 1억 3,678만원(2022)에서 5억 4,544만원(2023), 23억 9,116만원(2024), 28억 8,443만원(2025)으로 뛰었고, 영업이익률은 0.4%→1.5%→5.6%→5.9%로 꾸준히 개선됐다. 지배주주순이익도 2억 439만원(2022)에서 33억 491만원(2025)까지 늘며 이익 체력이 회복됐음을 보여준다. 영업활동현금흐름은 2022년 -2억 8,071만원으로 마이너스였으나 2023년 28억 7,281만원, 2024년 51억 8,951만원, 2025년 48억 5,549만원으로 안정적인 양의 흐름을 이어갔다. 부채비율은 2024년 54.7%까지 높아졌다가 2025년 42.1%로 낮아지며 재무구조가 개선됐다. 분기별로는 2025Q2 매출 116억 4,241만원·영업이익 8억 3,296만원, 2025Q3 매출 124억 7,861만원·영업이익 8억 5,980만원으로 견조했으나, 2025Q4에는 매출 120억 8만원 대비 영업이익이 1억 343만원으로 급격히 낮아진 반면 지배주주순이익은 9억 2,399만원으로 오히려 늘어 영업외 손익 요인이 있었던 것으로 보인다. 2026Q1에는 매출 114억 7,758만원으로 네 개 분기 중 가장 낮았음에도 영업이익이 10억 5,679만원으로 최대치를 기록했고, 2026Q2에는 매출이 121억 4,426만원으로 다시 늘었지만 영업이익은 7억 8,359만원으로 다소 낮아진 대신 지배주주순이익은 10억 727만원으로 네 개 분기 중 최고 수준을 유지했다. 이처럼 매출·영업이익·순이익의 증감 방향이 분기마다 엇갈리는 모습은 계절적 비용 인식이나 영업외 손익의 영향이 함께 작용하고 있음을 시사한다.",
+  "en": "Annual revenue rose for four consecutive years, from KRW 32.82bn in 2022 to KRW 36.45bn in 2023, KRW 42.86bn in 2024, and KRW 48.54bn in 2025. Operating profit over the same period climbed from KRW 137mn (2022) to KRW 545mn (2023), KRW 2.39bn (2024), and KRW 2.88bn (2025), with operating margin steadily improving from 0.4% to 1.5%, 5.6%, and 5.9%. Net income attributable to owners also grew from KRW 204mn in 2022 to KRW 3.30bn in 2025, reflecting a recovery in earnings capacity. Operating cash flow, which was negative at KRW -281mn in 2022, turned solidly positive at KRW 2.87bn in 2023, KRW 5.19bn in 2024, and KRW 4.86bn in 2025. The debt ratio rose to 54.7% in 2024 before easing to 42.1% in 2025, indicating an improved balance sheet. On a quarterly basis, 2025Q2 revenue of KRW 11.64bn and operating profit of KRW 833mn, and 2025Q3 revenue of KRW 12.48bn and operating profit of KRW 860mn, were both solid, but 2025Q4 operating profit fell sharply to KRW 103mn on similar revenue of KRW 12.00bn, even as net income attributable to owners rose to KRW 924mn, suggesting non-operating items played a role. In 2026Q1, revenue of KRW 11.48bn was the lowest of the four quarters, yet operating profit reached a peak of KRW 1.06bn; in 2026Q2, revenue recovered to KRW 12.14bn while operating profit eased to KRW 784mn, but net income attributable to owners held at the highest level of the four quarters at KRW 1.01bn. This divergence between revenue, operating profit, and net income across quarters suggests seasonal cost recognition and non-operating factors are both influencing results."
  },
  "industry": {
-  "ko": "금융·공공기관 전산장비 유지보수 시장은 IT아웃소싱 확대 추세와 함께 통합유지보수 형태로 재편 중이다. 보안 강화와 관리비용 절감 수요가 맞물리면서 개별 벤더 관리에서 단일 통합 파트너 위탁으로의 전환이 가속화되고 있으며, 원가 경쟁력을 보유한 전문 업체에게 유리한 구조다. 반면 비대면·디지털 금융 확산으로 물리적 ATM·CD기의 전체 수량은 장기 감소 추세에 있어 VAN 대행관리 부문의 볼륨 성장은 구조적으로 제한된다. 전기차 충전 인프라 시장은 고속 성장 중이며, 글로벌 시장은 연평균 32.3% 성장해 2030년 약 1,860억 달러에 달할 것으로 전망된다(롤랜드버거). 국내에서도 정부가 2030년까지 2022년 대비 약 6배 수준인 120만 대 이상의 충전기 확충 계획을 발표한 상태다. CBDC·디지털화폐 생태계에서는 한국은행이 2026년 3월 '프로젝트 한강' 2단계를 본격 추진했고, 정부는 2030년까지 국고금 25%를 디지털화폐로 집행하는 목표를 수립해 금융자동화기기 업계의 인프라 전환 수혜 논의가 지속되고 있다. EV 충전 유지보수 분야에는 LG전자 등 대형사의 진입이 본격화되고 있어 중장기 경쟁 강도 상승이 모니터링 대상이다.",
-  "en": "The IT equipment maintenance market for financial institutions and government agencies is being restructured around integrated, single-vendor outsourcing contracts. Security requirements and cost-reduction pressures are accelerating the shift from multi-vendor to single-partner management, favoring specialized providers with proven cost competitiveness. Conversely, the expansion of digital and mobile banking is driving a long-term structural decline in physical ATM and CD machine volumes, constraining growth in the VAN agency segment. The EV charging infrastructure market is in high-growth mode; consulting firm Roland Berger projects the global EV charging market to grow at a 32.3% CAGR, reaching approximately USD 186 bn by 2030. In Korea, the government has announced plans to expand the domestic charging network to over 1.2 million units by 2030, roughly six times the 2022 level. In the CBDC and digital currency ecosystem, the Bank of Korea formally launched Phase 2 of Project Hangang in March 2026, and the government has set a 2030 target of routing 25% of national treasury payments through digital currency, keeping financial automation equipment providers in focus as infrastructure transition beneficiaries. Large conglomerates including LG Electronics are entering the EV charger maintenance segment more aggressively, a trend warranting monitoring for potential competitive pressure on specialists."
+  "ko": "로지시스가 속한 IT 유지보수·금융자동화기기 대행관리 산업은 금융권과 공공기관의 전산 투자 사이클에 밀접하게 연동된다. 한 기업정보 자료는 전산부문 투자가 회복세를 보이고 있어 전체 외형이 견조한 증가세를 나타낼 것으로 전망하고 있다. 동시에 금융권 일괄용역관리 시장이 확대되며 ATM 대행관리와 자동화기기 일괄용역관리 등으로 VAN 사업 기회가 늘어나고 있다는 분석도 나온다. 다만 용역 부문에서는 통합유지보수서비스로 시장 구조가 바뀌면서 보안 문제 해결과 관리비용 절감 수요가 늘지만 전체 매출은 감소하는 흐름도 함께 관찰되며, 원가 경쟁력을 통해 매출총이익을 소폭 개선하는 수준에 그치는 모습도 확인된다. 이는 산업 전체가 단순 장비 판매·유지보수에서 통합관리형 서비스로 이동하는 과도기에 있음을 보여준다. 경쟁 구도 측면에서는 링네트, 정원엔시스, 오픈베이스, 아이티센엔텍, 아이티센씨티에스 등이 비교 대상으로 거론되며, 로지시스는 금융권 중심의 오랜 유지보수 경험과 콜센터·직영센터 조직망을 경쟁 우위 요소로 삼고 있다.",
+  "en": "The IT maintenance and financial automation equipment agency management industry in which Logisys operates is closely linked to the IT investment cycles of financial institutions and public agencies. One corporate data source indicates that IT sector investment is showing signs of recovery, projecting a solid overall increase in the top line. At the same time, analysts note that the expansion of integrated outsourced service management in the financial sector is increasing VAN business opportunities through ATM agency management and integrated automated equipment services. However, within the services segment, a shift toward integrated maintenance services is increasing demand for security solutions and cost-saving management even as overall revenue declines, with cost competitiveness only modestly improving gross profit. This suggests the industry is in a transitional period moving from simple equipment sales and maintenance toward integrated management-type services. In terms of competitive positioning, peers such as Ringnet, Jeongwon Encsys, Openbase, ITCEN ENTEC, and ITCEN CTS are cited for comparison, with Logisys leveraging its long-standing financial-sector maintenance experience and its call center and directly operated service center network as competitive advantages."
  },
  "outlook": {
-  "ko": "2026년에는 통합유지보수 서비스 비중 증가와 EV 충전기 유지보수 포트폴리오 확대가 핵심 성장 동력이 될 전망이다. DART 공시 기준 2025년 7월 17일 체결된 공급계약(계약기간 2025년 8월~2028년 6월)이 현재 실행 중으로, 중기 수주 기반이 일정 부분 확보되어 있다. EV 충전 부문은 정부의 2030년 120만 대 목표와, 2026년 상반기부터 시범 적용 예정인 전기차 충전 인프라 보조금의 예금토큰(디지털화폐) 결제 시스템이 새로운 사업 기회를 창출할 가능성이 있다. CBDC 관련 장비 전환 수요는 규제·기술 불확실성이 잔존해 단기 실적 기여가 불투명하지만, 한국은행의 프로젝트 한강 2단계 가동은 중장기 포지셔닝 측면에서 긍정적 모멘텀을 제공한다. 2026년 1분기 매출 감소가 확인된 만큼, 연간 기준 성장률 둔화 가능성을 열어두어야 한다. 무인경비 서비스 등 신규 사업이 의미 있는 매출 규모로 성장하기까지는 상당한 시간이 필요할 것으로 보인다. 종합적으로 비용 효율화와 마진 방어를 통한 이익 안정이 단기 경영 시나리오의 중심이 될 것으로 판단된다.",
-  "en": "In 2026, the primary growth drivers are expected to be an increasing share of integrated service revenues and an expanding EV charger maintenance portfolio. A supply contract disclosed via DART (signed July 17, 2025, running August 2025 through June 2028) is currently being executed, providing a medium-term revenue foundation. In EV charging, the government's 1.2 million charger target for 2030, combined with a pilot deposit-token (digital currency) payment system for EV charging infrastructure subsidies slated to begin in H1 2026, may create incremental business opportunities. CBDC-related equipment transition demand remains an optionality item in the near term due to regulatory and technical uncertainty, though Bank of Korea's Phase 2 Project Hangang launch is a constructive medium-to-long-term catalyst. The 2026 Q1 revenue decline warrants caution regarding full-year growth deceleration risk. New businesses such as unmanned security services are still early-stage and will require considerable time to contribute materially to revenue. Accordingly, cost discipline and margin preservation are expected to be the central near-term scenario anchors."
+  "ko": "회사 안팎의 자료를 종합하면 전산부문 투자 회복과 금융권 일괄용역관리 시장 확대가 로지시스의 기존 사업에 우호적인 환경을 제공할 것으로 보인다. 다만 별도기준으로 발표된 2026년 1분기 실적은 전년동기 대비 매출이 7.6% 감소하고 영업이익도 2.8% 줄어든 것으로 나타나, 연결기준의 분기 흐름과는 다른 신호도 함께 존재한다. 이는 본체(별도) 사업과 계열사를 포함한 연결 실적 간 괴리가 있을 수 있음을 시사하며, 향후 공시에서 두 기준의 추이를 함께 확인할 필요가 있다. 신규사업으로 추진 중인 무인경비 서비스는 아직 구체적 매출 기여 시점이나 규모가 공개되지 않아, 사업화 진행 상황을 공시·IR 자료를 통해 지속적으로 점검해야 한다. VAN 대행관리 부문에서는 ATM 대행관리와 자동화기기 일괄용역관리로 사업영역이 확장되고 있다는 점이 계약 갱신이나 신규 수주 공시로 이어질지가 관전 포인트다. 종합적으로 매출 성장과 영업이익률 개선이라는 다년간의 방향성은 이어지고 있으나, 분기별 변동성과 별도·연결 기준 간 신호 차이는 향후 실적 해석에서 함께 살펴야 할 요소다.",
+  "en": "Taken together, available sources suggest that a recovery in IT sector investment and the expansion of integrated outsourced service management in the financial sector could provide a favorable backdrop for Logisys's existing businesses. However, non-consolidated first-quarter 2026 results showed revenue down 7.6% and operating profit down 2.8% year-on-year, a signal that diverges somewhat from the consolidated quarterly trend, implying a possible gap between the standalone parent business and the consolidated results including subsidiaries that warrants tracking across both bases in future disclosures. The unmanned security service being pursued as a new business has not yet disclosed a concrete revenue contribution timeline or scale, making it necessary to continue monitoring progress through disclosures and IR materials. In the VAN agency management segment, whether the expansion into ATM agency management and integrated automated equipment services translates into contract renewals or new order disclosures is a point to watch. Overall, the multi-year direction of revenue growth and improving operating margin appears to be continuing, but quarterly volatility and signal differences between the standalone and consolidated bases are factors that should be considered together when interpreting future results."
  },
  "valuation_comment": {
-  "ko": "밸류에이션 시점 기준으로 기업 이익은 수년간의 저수익 구간에서 완전한 흑자 구조로 전환된 단계에 있으며, 이 이익 회복이 현재 주가 수준에 반영되고 있다. 주당순이익(EPS) 349원, 주당순자산(BPS) 2,143원을 기준으로 하면 현 주가는 순자산가치와 비교적 근접한 구간에서 형성되어 있음을 알 수 있다. 주당배당금(DPS)은 0원으로 현금배당이 없어, 배당수익률은 업종 평균을 크게 하회하며 소득 중심 투자자에게는 매력도가 낮은 구조다. 이익 회복이 지속된 반면 시가총액은 초소형주 구간에 머물러 있어 기관 접근성과 유동성이 낮다는 점이 내재적 제약 요인이다. 향후 밸류에이션 재평가 여부는 실적 회복 지속 가능성 및 EV 충전·CBDC 등 신사업의 기여 가시화 속도에 달려 있다.",
-  "en": "At the current valuation point, the company has completed a transition from a multi-year low-profitability phase to a fully profit-generating structure, and this recovery is reflected in where the share price sits today. With EPS at KRW 349 and BPS at KRW 2,143, the share price is trading in a range relatively close to net asset value per share. There is no cash dividend (DPS: KRW 0), placing the dividend yield well below the sector average and limiting appeal for income-oriented investors. While the earnings recovery has been sustained, the company remains in the micro-cap range, creating inherent constraints on institutional access and share liquidity. Whether a further valuation re-rating materializes will depend on the sustainability of the earnings recovery and the pace at which new businesses — EV charging and CBDC-related activities — begin to contribute visibly to results."
+  "ko": "로지시스의 주가는 순자산가치에 가까운 수준에서 거래되는 편으로, 장부가치 대비 큰 폭의 할인이나 프리미엄이 형성돼 있지는 않다. 이익 규모가 2022년 적자에 가까운 수준에서 2025년까지 꾸준히 회복된 만큼, 과거 이익 기반이 취약했던 시기와 비교하면 현재의 밸류에이션 논리는 다른 토대 위에 있다고 볼 수 있다. 회사는 최근 회계연도 기준으로 현금배당을 실시하지 않은 것으로 확인돼, 배당수익률을 통한 주주환원 매력은 제한적인 편이며 이 점은 이익의 재투자 여부와 함께 살펴볼 부분이다. 소형주 특성상 거래량과 유동성이 제한적일 수 있어, 동일한 펀더멘털 변화에도 가격 반응이 크게 나타날 수 있다는 점도 감안할 필요가 있다.",
+  "en": "Logisys shares tend to trade at a level close to net asset value, without a large discount or premium to book value having formed. Given that earnings recovered steadily from a near-loss position in 2022 through 2025, the current valuation logic rests on a different foundation compared with the earlier period of weak earnings. The company is not confirmed to have paid a cash dividend based on the most recent fiscal year, meaning the shareholder return appeal via dividend yield is limited, a point that should be considered alongside how earnings are being reinvested. Given the small-cap nature of the stock, trading volume and liquidity may be limited, which is also worth keeping in mind since price reactions to the same fundamental change can be outsized."
  },
  "bull": [
   {
    "title": {
-    "ko": "통합유지보수 트렌드 구조적 수혜",
-    "en": "Structural Beneficiary of Integrated IT Maintenance Trend"
+    "ko": "4년 연속 매출 성장과 이익률 개선",
+    "en": "Four Straight Years of Revenue Growth and Margin Improvement"
    },
    "body": {
-    "ko": "금융·공공기관의 유지보수 위탁 방식이 개별 벤더에서 단일 통합 파트너로 전환되는 추세가 가속화되고 있다. 보안 강화와 비용 절감 수요를 기반으로 한 이 구조적 변화는 통합유지보수 특화 원가 경쟁력과 전국 서비스망을 갖춘 로지시스에게 수주 기회 확대를 의미한다. 이 트렌드가 지속될 경우 용역 매출 비중 증가와 마진 개선이 병행될 가능성이 높다.",
-    "en": "Financial and government clients are accelerating their shift from multi-vendor IT maintenance to single-partner integrated management, driven by security requirements and cost-reduction mandates. This structural trend creates expanding contract opportunities for Logisys, which possesses established integrated-maintenance cost efficiency and a nationwide service infrastructure. Sustained momentum in this direction should increase the proportion of higher-margin service revenue and support further operating margin improvement."
+    "ko": "매출은 2022년 328억원에서 2025년 485억원으로 늘었고, 영업이익률은 같은 기간 0.4%에서 5.9%로 개선됐다. 지배주주순이익도 2억원대에서 33억원대로 확대되며 이익 체력의 구조적 회복을 뒷받침한다. 이러한 다년간의 방향성은 단순한 일회성 반등이 아니라 연속적인 개선 흐름으로 해석될 수 있다.",
+    "en": "Revenue grew from KRW 32.8bn in 2022 to KRW 48.5bn in 2025, while operating margin improved from 0.4% to 5.9% over the same period. Net income attributable to owners also expanded from roughly KRW 200mn to KRW 3.3bn, supporting a structural recovery in earnings capacity. This multi-year direction can be interpreted as a continuous improvement trend rather than a one-off rebound."
    }
   },
   {
    "title": {
-    "ko": "전기차 충전 유지보수 시장 선도 지위",
-    "en": "Leading Position in Korea's EV Charging Maintenance Market"
+    "ko": "현금흐름과 재무구조의 동반 개선",
+    "en": "Parallel Improvement in Cash Flow and Balance Sheet"
    },
    "body": {
-    "ko": "2017년 조기 진입 이후 한전 1만800기·환경부 급속충전기 3,000기를 포함한 국내 최대 유지보수 물량을 확보하며 선도 지위를 구축했다. 정부의 2030년 120만 대 충전기 확충 계획에 따라 유지보수 수요도 비례 확대될 전망이며, 전국 25개 직영센터와 전담 전문 인력 체계가 대형 공공 입찰에서 경쟁 우위를 제공한다. 전기차 보급 확대로 충전기 노후화 사이클이 도래하면 교체·유지보수 수요가 한 단계 더 성장할 수 있다.",
-    "en": "Having entered EV charging maintenance in 2017, Logisys has built Korea's leading position, managing KEPCO's 10,800 chargers and the Ministry of Environment's 3,000 fast chargers. The government's plan to expand the domestic network to 1.2 million chargers by 2030 implies proportional maintenance demand growth, and 25 national service centers with dedicated certified staff provide a competitive edge in large public procurement bids. As Korea's EV fleet ages, replacement and maintenance cycles could deliver another step-up in demand for specialist operators."
+    "ko": "영업활동현금흐름은 2022년 마이너스에서 2023~2025년 3년 연속 40억원대 이상의 양의 흐름으로 전환됐다. 부채비율도 2024년 54.7%에서 2025년 42.1%로 낮아지며 재무 안정성이 개선됐다. 이는 이익 개선이 실제 현금창출력과 재무구조 건전화로 연결되고 있음을 보여준다.",
+    "en": "Operating cash flow turned from negative in 2022 to a positive figure above KRW 4bn in each of the three years from 2023 to 2025. The debt ratio also fell from 54.7% in 2024 to 42.1% in 2025, improving financial stability. This indicates that earnings improvement is translating into actual cash generation and a healthier balance sheet."
    }
   },
   {
    "title": {
-    "ko": "이익 정상화 완성과 안정적 현금창출력",
-    "en": "Completed Earnings Normalization and Solid Cash Generation"
+    "ko": "사업영역 확장과 시장 구조 변화 수혜 가능성",
+    "en": "Potential Benefit from Business Expansion and Market Structure Shift"
    },
    "body": {
-    "ko": "2022년 영업이익 1.4억원·영업현금흐름 -2.8억원의 부진에서 2025년 영업이익 28.8억원·영업현금흐름 48.6억원으로 전면 회복됐다. 영업이익률 5.9%, 부채비율 42.1%로 동업종 내에서 안정적인 재무 체력이 갖춰진 상태다. 이익 체력 확인은 신사업 투자 여력과 재무 안정성을 동시에 제공하며, 현금흐름 기반 기업 가치 측면에서 긍정적 기반이 된다.",
-    "en": "From a 2022 low of KRW 140 mn operating profit and negative KRW 280 mn operating cash flow, Logisys has fully recovered to KRW 2.88 bn operating profit and KRW 4.86 bn operating cash flow in 2025. An operating margin of 5.9% and a debt ratio of 42.1% reflect solid financial health within the sector. The demonstrated earnings recovery enhances the capacity for new business investment while maintaining financial stability, providing a constructive foundation for cash-flow-based valuation."
+    "ko": "금융권 일괄용역관리 시장 확대로 ATM 대행관리와 자동화기기 일괄용역관리 등 VAN 사업 기회가 늘어나고 있다는 분석이 나온다. 여기에 무인경비 서비스 등 신규사업도 추진 중이어 사업 포트폴리오 다각화 시도가 이어지고 있다. 다만 신규사업의 구체적 매출 기여 시점은 아직 확인되지 않았다.",
+    "en": "Analysis suggests that expansion of integrated outsourced service management in the financial sector is increasing VAN business opportunities such as ATM agency management and integrated automated equipment services. In addition, new businesses such as unmanned security services are being pursued, continuing efforts to diversify the business portfolio, though the specific timing of revenue contribution from these new businesses has not yet been confirmed."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "ATM·CD기 수요의 구조적 감소",
-    "en": "Structural Decline in ATM/CD Machine Demand"
+    "ko": "분기별 이익 변동성",
+    "en": "Quarterly Earnings Volatility"
    },
    "body": {
-    "ko": "비대면 금융 서비스 확산과 모바일 결제 증가로 국내 ATM·CD기 총 수량은 장기 감소 추세에 있다. VAN서비스 대행 부문은 이 구조적 역풍에 직접 노출되어 있으며, 물량 감소가 지속될 경우 해당 부문의 매출 기여가 점진적으로 낮아질 수 있다. EV 충전 등 대체 성장 동력이 공백을 충분히 메우지 못할 경우 전체 매출 성장이 둔화될 위험이 있다.",
-    "en": "The expansion of digital banking and mobile payments is driving a long-term decline in the total number of physical ATMs and CD machines in Korea. The VAN agency segment is directly exposed to this structural headwind, and sustained volume erosion could gradually reduce its revenue contribution. If alternative growth drivers such as EV charging maintenance do not scale fast enough to offset this decline, overall revenue growth momentum may slow materially."
+    "ko": "2025Q4 영업이익은 1억원 수준으로 직전 분기 대비 급격히 낮아졌고, 이후 2026Q1에 다시 10억원대로 반등하는 등 분기 간 편차가 크다. 매출·영업이익·순이익의 증감 방향이 분기마다 다르게 나타나 실적 흐름을 단순 추세로 해석하기 어려운 측면이 있다. 이러한 변동성은 계절적 비용 인식이나 영업외 손익 요인과 관련된 것으로 보인다.",
+    "en": "Operating profit in 2025Q4 fell sharply to around KRW 100mn from the prior quarter, before rebounding to over KRW 1bn in 2026Q1, showing wide quarter-to-quarter divergence. Revenue, operating profit, and net income have moved in different directions across quarters, making it difficult to interpret the earnings trend as a simple continuation. This volatility appears related to seasonal cost recognition or non-operating factors."
    }
   },
   {
    "title": {
-    "ko": "2026년 매출 성장 둔화 가능성",
-    "en": "Potential Revenue Growth Deceleration in 2026"
+    "ko": "별도기준 실적의 상반된 신호",
+    "en": "Diverging Signals in Non-Consolidated Results"
    },
    "body": {
-    "ko": "2026년 1분기 연결 매출은 114.8억원으로 전년 동기 124.2억원 대비 7.5% 감소했다. 4개년 연속 성장 이후 처음으로 분기 매출이 전년을 밑돈 것으로, 전산장비 공급 입찰 주기의 불균형이나 계약 갱신 시점 차이가 원인일 수 있다. 이 추세가 이어질 경우 연간 기준으로도 매출 성장 정체가 확인될 수 있어, 향후 분기 실적 추이 모니터링이 필수적이다.",
-    "en": "In 2026 Q1, consolidated revenue fell 7.5% YoY to KRW 11.5 bn — the first quarterly YoY decline after four consecutive years of annual growth. This may reflect timing imbalances in equipment supply bids or contract renewal schedules, but if the trend persists, full-year revenue stagnation could materialize. Closely tracking quarterly revenue trends has therefore become a key near-term monitoring priority."
+    "ko": "별도기준으로 발표된 2026년 1분기 실적은 매출이 전년동기 대비 7.6%, 영업이익이 2.8% 감소한 것으로 나타났다. 이는 연결기준 분기 데이터와는 다른 방향을 보여 본체와 계열사를 포함한 연결 실적 간 온도차가 있을 가능성을 시사한다. 두 기준의 차이를 지속적으로 확인해야 회사의 실질적 성장세를 판단할 수 있다.",
+    "en": "Non-consolidated first-quarter 2026 results showed revenue down 7.6% and operating profit down 2.8% year-on-year. This diverges from the consolidated quarterly data, suggesting a possible gap between the standalone parent entity and the consolidated results including subsidiaries. Continued monitoring of the difference between the two bases is needed to assess the company's actual growth trajectory."
    }
   },
   {
    "title": {
-    "ko": "초소형주 유동성 및 커버리지 부재",
-    "en": "Micro-Cap Liquidity Risk and Absence of Analyst Coverage"
+    "ko": "소형주 특유의 유동성 제약과 배당 부재",
+    "en": "Small-Cap Liquidity Constraints and Absence of Dividends"
    },
    "body": {
-    "ko": "시가총액이 초소형주 구간에 머물러 기관 투자자 접근성이 낮고 증권사 리포트 커버리지도 극히 제한적이다. 이는 주가가 실적 변화를 즉각적으로 반영하지 않거나 대량 매도 시 가격 충격이 과도하게 발생할 수 있음을 의미한다. 신사업 성과나 계약 공시에 대한 시장의 정보 처리 및 주가 반영 속도도 대형주 대비 느릴 가능성이 있다.",
-    "en": "With a micro-cap market capitalization, institutional investor access is limited and sell-side analyst coverage is virtually nonexistent. This means the share price may not reflect earnings changes promptly, and large sell orders could create disproportionate price dislocations. Market information processing of new contract disclosures or new business outcomes may also be slower than for larger-cap peers."
+    "ko": "회사는 최근 회계연도 기준 현금배당을 실시하지 않은 것으로 확인되며, 이는 주주환원 측면의 매력을 제한한다. 시가총액이 작은 소형주 특성상 거래량과 유동성이 제한적일 수 있어 가격 변동성이 커질 수 있다. 이러한 특성은 장기 보유 관점에서 고려해야 할 요소다.",
+    "en": "The company is not confirmed to have paid a cash dividend based on the most recent fiscal year, which limits its appeal from a shareholder return perspective. Given its small market capitalization, trading volume and liquidity may be limited, which can amplify price volatility. These characteristics are factors to consider from a long-term holding perspective."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "금융·공공 IT 예산 사이클 리스크",
-    "en": "Financial/Public Sector IT Budget Cycle Risk"
+    "ko": "산업 구조 변화 리스크",
+    "en": "Industry Structural Change Risk"
    },
    "body": {
-    "ko": "금융권과 공공기관의 IT 예산은 경기 사이클 및 정부 재정 정책에 따라 증감이 발생할 수 있다. 대형 전산장비 교체·입찰 주기의 지연 또는 축소는 전산장비 판매 부문 매출에 직접적인 하방 압력이 된다. 공공부문 예산 긴축 국면에서는 수주 경쟁 심화와 마진 압력이 동시에 나타날 수 있다.",
-    "en": "IT budgets at financial institutions and government agencies can fluctuate with macroeconomic cycles and fiscal policy. Delays or cuts in major hardware procurement cycles represent a direct downside risk for the equipment sales segment. During public-sector budget tightening, intensified bid competition and margin pressure may occur simultaneously, compressing profitability."
+    "ko": "비대면 금융과 디지털 결제 확산이 지속되면 ATM 등 금융자동화기기의 대수·이용 빈도가 장기적으로 줄어들 가능성이 있다. 이는 VAN 대행관리 및 현금물류 대행용역의 성장 기반에 부담을 줄 수 있는 구조적 요인이다. 반면 통합유지보수서비스로의 시장 전환은 새로운 수요를 만들어낼 수도 있어 방향성을 지속 확인할 필요가 있다.",
+    "en": "If the shift toward contactless finance and digital payments continues, the number and usage frequency of financial automation equipment such as ATMs could decline over the long term. This is a structural factor that could pressure the growth base of the VAN agency management and cash logistics agency businesses. Conversely, the market's transition toward integrated maintenance services could create new demand, making it necessary to continue monitoring the direction of this shift."
    }
   },
   {
    "cat": {
-    "ko": "EV 충전 시장 대형사 진입 경쟁",
-    "en": "Large-Company Entries Intensifying EV Charging Competition"
+    "ko": "고객·매출 집중 리스크",
+    "en": "Customer and Revenue Concentration Risk"
    },
    "body": {
-    "ko": "국내 EV 충전 인프라 시장의 급성장에 따라 LG전자 등 대형 가전·IT 기업들이 구축 및 유지보수 시장에 본격 진입하고 있다. 로지시스의 현재 1위 지위가 대규모 자본력과 브랜드 인지도를 갖춘 신규 진입자에 의해 중장기적으로 위협받을 가능성이 있다. 공공 대형 입찰에서의 경쟁력 약화가 EV 부문 성장 시나리오를 훼손하는 핵심 위험이다.",
-    "en": "As Korea's EV charging infrastructure market grows rapidly, major conglomerates including LG Electronics are making substantial entries into both charger installation and maintenance. Logisys's current leading market position could come under challenge over the medium to long term from entrants with superior capital resources and brand recognition. Loss of large public procurement contracts would be a key risk to the EV segment growth scenario."
+    "ko": "매출이 금융권과 공공기관에 집중되어 있어 이들 기관의 전산 투자 예산이나 계약 갱신 결과에 따라 실적이 흔들릴 수 있다. 대형 SI업체와의 파트너십에 의존하는 구조도 계약 조건 변화에 노출될 수 있는 요인이다. 특정 산업·고객군에 대한 의존도가 높은 만큼 다각화의 진행 상황을 지켜볼 필요가 있다.",
+    "en": "Because revenue is concentrated in the financial and public sectors, results can be affected by the IT investment budgets of these institutions or the outcomes of contract renewals. Reliance on partnerships with large systems integrators is also a factor exposed to changes in contract terms. Given the high dependence on specific industries and customer groups, the progress of diversification efforts should be monitored."
    }
   },
   {
    "cat": {
-    "ko": "CBDC·디지털화폐 정책 불확실성",
-    "en": "CBDC/Digital Currency Policy Uncertainty"
+    "ko": "지배구조·유동성 리스크",
+    "en": "Governance and Liquidity Risk"
    },
    "body": {
-    "ko": "한국은행은 범용 CBDC 도입에 여전히 신중한 입장이며, 원화 스테이블코인 도입 논의 부상으로 CBDC와 스테이블코인의 공존 여부가 불투명해진 상황이다. 디지털화폐 장비 전환 수요가 예상보다 느리게 전개되거나 방향이 바뀔 경우 관련 테마 기대감이 소멸할 수 있다. CBDC 관련 기대는 현재 사업 실적에 직접 반영된 부분이 없는 옵션 성격임을 인식해야 한다.",
-    "en": "The Bank of Korea remains cautious on broad retail CBDC adoption, and the rapid rise of domestic private stablecoin discussions has introduced uncertainty about the coexistence of CBDC and stablecoins. If digital currency device transition demand materializes more slowly than expected or shifts direction, any CBDC-related thematic premium could unwind. CBDC-related upside should be viewed as an option, as it has not yet been reflected in operating results."
+    "ko": "로지시스는 한국지주그룹 계열사로 13개의 계열회사를 두고 있어 계열사 간 거래나 지배구조 관련 이슈가 발생할 가능성을 배제할 수 없다. 시가총액이 작은 소형주로서 거래량과 유동성이 제한될 수 있는 점도 함께 고려해야 한다. 이런 구조적 특성은 공시를 통한 지속적인 확인이 필요한 영역이다.",
+    "en": "As a member of the Korea Holdings group with 13 affiliated companies, the possibility of related-party transaction or governance issues cannot be ruled out. As a small-cap stock, limited trading volume and liquidity should also be taken into account. These structural characteristics are an area that requires continuous monitoring through disclosures."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표: 전년 동기(매출 116.4억원, 영업이익 8.3억원) 대비 매출 회복 여부와 영업이익률 방어 수준을 확인해야 한다. 2분기 연속 매출 감소가 확인될 경우 연간 성장 둔화 리스크가 현실화될 수 있다.",
-    "en": "2026 Q2 earnings release: compare revenue and operating profit against 2025 Q2 (KRW 11.6 bn revenue, KRW 833 mn operating profit) to assess whether the revenue decline is persistent and whether margins are holding. Two consecutive quarters of YoY revenue decline would materially heighten full-year growth stagnation risk."
+    "ko": "2026년 3분기 실적 공시를 통해 2025Q4에 나타났던 영업이익 급락과 같은 분기별 변동성이 재현되는지, 지배주주순이익의 성장 흐름이 이어지는지 확인할 필요가 있다.",
+    "en": "The third-quarter 2026 earnings disclosure should be checked to see whether quarterly volatility similar to the 2025Q4 operating profit drop recurs and whether the growth trend in net income attributable to owners continues."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 수시",
-    "en": "H2 2026 (Ongoing)"
+    "ko": "2026년 하반기 중",
+    "en": "In the second half of 2026"
    },
    "what": {
-    "ko": "DART를 통한 신규 공급·용역 계약 공시 여부: 장기 유지보수 계약 수주 확대 및 EV 충전기 관련 계약 규모를 모니터링해야 한다. 수주 공시는 매출 재가속의 핵심 선행 지표로 활용할 수 있다.",
-    "en": "New supply/service contract DART disclosures: monitor whether new long-term maintenance contracts are won and the scale of EV charging-related agreements. New contract announcements serve as leading indicators of potential revenue reacceleration."
+    "ko": "금융권 통합유지보수 및 VAN·ATM 대행관리 계약의 갱신이나 신규 수주 관련 공시가 있는지 살펴볼 필요가 있다.",
+    "en": "It is worth monitoring whether disclosures emerge regarding renewals of integrated maintenance contracts or new orders in the VAN/ATM agency management business with financial institutions."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "H2 2026"
+    "ko": "2026년 4분기 중",
+    "en": "In the fourth quarter of 2026"
    },
    "what": {
-    "ko": "한국은행 '프로젝트 한강' 2단계 진행 상황: 테스트 범위 확대 및 금융자동화기기 장비 전환 수요의 구체화 여부를 확인해야 한다. CBDC 장비 사업 수혜가 현실화될 경우 성장 시나리오에 추가 상방 요인이 될 수 있다.",
-    "en": "Progress of Bank of Korea's Project Hangang Phase 2: watch for scope expansion in the test phase and any concrete demand signals for financial automation equipment upgrades linked to digital currency infrastructure. Confirmation of CBDC device business opportunities would add a meaningful upside scenario."
+    "ko": "무인경비 서비스 등 신규사업의 구체적 추진 경과나 매출화 시점에 대한 추가 공시·IR 자료가 나오는지 확인이 필요하다.",
+    "en": "Additional disclosures or IR materials detailing the progress or revenue timeline of new businesses such as unmanned security services should be checked."
    }
   },
   {
    "when": {
-    "ko": "2026년 상반기 말~하반기 초",
-    "en": "Late H1 to Early H2 2026"
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "전기차 충전 인프라 예금토큰 결제 시범사업 결과: 2026년 상반기부터 시범 적용 예정인 EV 충전 보조금의 예금토큰 결제 시스템이 정상 가동되는지, 유지보수 전문 업체에 추가 사업 기회가 발생하는지 확인이 필요하다.",
-    "en": "EV charging deposit-token payment pilot results: confirm whether the pilot application of deposit-token payments for EV charging subsidies — slated to begin H1 2026 — operates as planned and whether it generates incremental business opportunities for maintenance specialists such as Logisys."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월 (연간 사업보고서)",
-    "en": "March 2027 (Annual Report)"
-   },
-   "what": {
-    "ko": "2026년 연간 사업보고서 공시: EV 충전 사업 매출 기여 규모, 전체 매출 중 용역 비중 변화, 무인경비 등 신규 사업의 실질 기여 시작 여부를 확인하여 사업 구조 변화를 종합 평가해야 한다.",
-    "en": "2026 annual report filing: assess the actual revenue contribution from EV charging, the shift in services-to-product revenue mix, and whether new businesses such as unmanned security services have begun contributing meaningfully — key metrics for evaluating structural business evolution."
+    "ko": "2026년 연간 사업보고서 공시를 통해 매출·영업이익률의 다년간 개선 흐름이 5년째 이어지는지, 배당 정책에 변화가 있는지 확인해야 한다.",
+    "en": "The 2026 annual business report should be checked to see whether the multi-year improvement trend in revenue and operating margin continues into a fifth year, and whether there is any change in dividend policy."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "로지시스는 금융·공공기관 전산장비 유지보수와 ATM 대행관리라는 견고한 수익 기반 위에, 전기차 충전 인프라 유지보수 1위 지위를 추가 확보하며 사업 포트폴리오를 다각화한 기업이다. 2022년 이익 저점에서 2025년까지 영업이익이 가파르게 회복됐고, 영업현금흐름도 안정적인 흑자 구간에 안착했다. 2026년 1분기 매출이 전년 대비 감소한 것은 외형 성장 모멘텀의 일시적 조정 가능성을 내포하지만, 마진이 견조하게 유지됐다는 점은 수익성 측면의 긍정 신호다. 정부의 EV 인프라 확충 정책 및 CBDC 관련 금융 생태계 변화는 중기 성장 옵션이지만, 실적 기여까지는 시간이 더 필요하다. ATM 수요의 구조적 감소, EV 충전 시장의 대형사 진입, 초소형주 유동성 제약은 상시 확인이 필요한 리스크 요인이다. 이익 정상화의 지속 가능성 및 신사업 기여 가시화 속도가 중장기 가치 평가의 핵심 변수가 될 것이다.",
-   "en": "Logisys has diversified its business portfolio by building Korea's leading EV charging maintenance position on top of its established financial and government IT maintenance and ATM management franchise. Operating profit recovered sharply from the 2022 trough through 2025, with operating cash flow stabilized in solid positive territory. The modest YoY revenue decline in 2026 Q1 raises the possibility of a pause in top-line momentum, but resilient operating margins provide a constructive profitability signal. Government EV infrastructure expansion policy and the evolving CBDC financial ecosystem represent medium-term growth options, though meaningful earnings contribution will take time to materialize. Structural ATM volume decline, large-company entries into EV charging maintenance, and micro-cap liquidity constraints are ongoing watchpoints. The sustainability of the earnings recovery and the timeline for new business contributions will be the key determinants of medium-to-long-term value assessment."
+   "ko": "로지시스는 2022년부터 2025년까지 매출과 영업이익률이 꾸준히 개선되고 영업활동현금흐름과 부채비율도 함께 개선되는 다년간의 회복 흐름을 보여줬다. 다만 2025Q4의 영업이익 급락과 2026년 1분기 별도기준 실적의 역성장 신호처럼, 연결·별도 기준 간 그리고 분기 간 온도차가 함께 존재해 실적을 단선적으로 해석하기는 어렵다. 사업적으로는 금융권 일괄용역관리 시장 확대와 무인경비 서비스 등 신규사업 추진이 포지티브 요인으로 거론되지만, 구체적 매출 기여 시점은 아직 확인되지 않았다. 밸류에이션 측면에서는 주가가 순자산가치에 근접한 수준에서 거래되는 편이며 최근 회계연도 기준 배당은 실시되지 않은 것으로 확인된다. 소형주 특유의 유동성 제약과 금융권·공공기관에 대한 매출 집중도 함께 고려해야 할 구조적 요인이다. 향후에는 분기별 실적 발표와 신규사업 진행 경과, 계약 갱신 관련 공시를 통해 다년간의 개선 흐름이 지속되는지를 지켜볼 필요가 있다.",
+   "en": "Logisys has shown a multi-year recovery from 2022 through 2025, with steady improvement in revenue and operating margin alongside gains in operating cash flow and the debt ratio. However, signals such as the sharp drop in operating profit in 2025Q4 and the year-on-year decline in non-consolidated first-quarter 2026 results indicate a divergence between the consolidated and standalone bases as well as across quarters, making it difficult to interpret performance in a purely linear fashion. On the business side, the expansion of integrated outsourced service management in the financial sector and the pursuit of new businesses such as unmanned security services are cited as positive factors, though the specific timing of their revenue contribution has not yet been confirmed. From a valuation standpoint, the stock tends to trade near net asset value, and no dividend is confirmed to have been paid based on the most recent fiscal year. Structural factors such as small-cap liquidity constraints and revenue concentration in the financial and public sectors also warrant consideration. Going forward, it will be worth watching quarterly earnings releases, progress on new businesses, and disclosures related to contract renewals to see whether the multi-year improvement trend continues."
   }
  },
  "sources": [
+  "https://www.valueline.co.kr/finance/summary/067730",
+  "https://m.irgo.co.kr/IR-COMP/067730/%EB%A1%9C%EC%A7%80%EC%8B%9C%EC%8A%A4-IR-PAGE",
+  "https://m.thinkpool.com/item/067730",
+  "https://www.k5.co.kr/stock/067730?site_type=&page=5",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A067730",
   "https://www.butler.works/ko/companies/00238199",
-  "https://www.k5.co.kr/stock/067730?site_type=&page=5",
+  "https://smartcitysolutionmarket.com/scsm/cmpny/slutnCmpnyView.do;jsessionid=F42126F3B5E76B29A2817F2DBE74BDAB?menuNo=1&searchStartUpAt=N&cmpnyId=CMPNY_00000000000383",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=067730",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=QzRBArq9krjJrIea",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=5asibe0wMIASinoK",
+  "https://alphasquare.co.kr/home/stock-summary?code=067730",
   "https://markets.hankyung.com/stock/067730",
-  "https://comp.wisereport.co.kr/company/c1030001.aspx?cmp_cd=067730&cn=",
-  "https://www.sankun.com/company-info/YsvKV50ORD8UlKuAovDsAA==",
-  "https://m.irgo.co.kr/IR-COMP/067730/%EB%A1%9C%EC%A7%80%EC%8B%9C%EC%8A%A4-IR-PAGE",
-  "https://www.valueline.co.kr/finance/summary/067730",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250318001709&rcpno=20250318001270&orgid=F&tran=Y&langTpCd=0",
-  "https://www.k5.co.kr/stock/067730",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A067730&MenuYn=Y&ReportGB=&NewMenuID=103",
-  "https://m.thinkpool.com/item/067730",
-  "http://www.logisys.co.kr/subpage/business/cd_atm",
-  "https://app.rndcircle.io/company/c305a6ad-9ad1-5a40-a7d8-1d48775825f4",
-  "https://moneypie.net/wiki/v/로지시스",
-  "https://m.saramin.co.kr/job-search/company-info-view?csn=b3ArSi9mYjV3QmRZZDA4MTBaQ2FIUT09",
-  "https://www.electimes.com/news/articleView.html?idxno=325010"
+  "https://littlebproject.com/stock/067730/259/63089",
+  "https://www.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=058577",
+  "https://littlebproject.com/stock/067730",
+  "https://www.jobkorea.co.kr/company/45023168",
+  "http://www.logisys.co.kr/",
+  "https://comp.wisereport.co.kr/company/c1070001.aspx?cmp_cd=071050&cn="
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "067730",
  "name": "로지시스",
  "name_en": "LOGISYS INC.",
@@ -233,9 +223,9 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 05:28",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:06",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 2200,
-   "mcap": 0.0213,
+   "price": 2230,
+   "mcap": 0.0216,
    "shares": 9673922,
    "total_shares": 9673922,
    "wavg_shares": 9663500,
-   "per": 5.759,
+   "per": 5.838,
    "eps": 382,
-   "pbr": 0.9821,
+   "pbr": 0.9955,
    "bps": 2240,
    "roe_ttm": 18.1,
    "ttm_window": "2025Q3~2026Q2",

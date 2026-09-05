@@ -1,229 +1,220 @@
 {
  "title": {
-  "ko": "Voice AI 전환 가속, 수익성 전환이 핵심 변곡점",
-  "en": "Voice AI Pivot Accelerating — Profitability Turn Is the Key Inflection"
+  "ko": "인터로이드, AI 전환기의 시험대",
+  "en": "InterRoid at an AI Pivot Crossroads"
  },
  "lead": {
-  "ko": "2025년 4월 사명 변경과 함께 생성형 AI 기반 음성 자동화 플랫폼 'SeiRen'에 전략을 집중하고 2025년 영업이익 흑자 전환을 공개 목표로 제시한 인터로이드의 사업 구조, 실적, 리스크를 점검한다.",
-  "en": "Having rebranded in April 2025 and centering its strategy on the generative-AI voice-automation platform 'SeiRen,' InterRoid has publicly targeted an operating profit turnaround in 2025 — this report examines its business structure, financials, and attendant risks."
+  "ko": "코넥스 상장사 인터로이드는 2025년 사명 변경과 함께 건강기능식품 유통에서 AI 음성·콜봇 사업으로 무게중심을 옮기고 있으며, 가장 최근 확정된 2022년 연간 실적은 매출 72억원대에 영업손실을 기록한 상태다.",
+  "en": "KONEX-listed InterRoid has been shifting its center of gravity from health-supplement distribution toward AI voice and callbot services since its 2025 name change, while the most recently confirmed annual results for 2022 showed revenue in the KRW 7-billion-plus range alongside an operating loss."
  },
  "keypoints": [
   {
-   "ko": "2025년 4월 에이아이더뉴트리진에서 인터로이드로 사명 변경, Voice Call Automation 전문기업으로 완전 재편",
-   "en": "Rebranded from AIThe Nutrizin to InterRoid in April 2025, completing a full pivot to Voice Call Automation."
+   "ko": "2025년 4월 사명을 에이아이더뉴트리진에서 인터로이드로 변경하고 바이오 부문을 축소, AI 음성 콜봇 'SeiRen' 중심으로 사업을 재편했다.",
+   "en": "In April 2025 the company changed its name from AIDER Nutrizine to InterRoid, scaling back its bio segment and restructuring around the AI voice callbot platform 'SeiRen.'"
   },
   {
-   "ko": "2024년(별도) 전체 매출 약 103억 원 중 AI 부문이 약 84억 원(약 80%) 기여, 단 연구개발 투자 과다로 수익성은 미실현 상태",
-   "en": "The AI segment contributed approximately KRW 8.4 billion (~80%) of total 2024 standalone revenue of ~KRW 10.3 billion, yet heavy R&D spending keeps profitability elusive."
+   "ko": "2025년 10월 기간통신사업자(회선 미보유) 사업권을 획득해 콜봇 서비스를 통신 서비스 형태로 직접 제공할 수 있는 기반을 마련했다.",
+   "en": "In October 2025 the company obtained a facilities-less telecommunications carrier license, laying the groundwork to offer callbot services directly as a telecom service."
   },
   {
-   "ko": "STT·Chatbot·TTS 통합 플랫폼 SeiRen을 중심으로 HR·금융·제조 등 다양한 버티컬로 확장 중이며, 2025년 9월 HR Agentic AI 플랫폼 출시 성공",
-   "en": "SeiRen — integrating STT, Chatbot, and TTS — is expanding across verticals; a HR-focused Agentic AI platform was successfully deployed at a major domestic HR firm in September 2025."
+   "ko": "가장 최근 확정된 연간(2022년, 연결) 실적은 매출 72.8억원, 영업손실 13.4억원, 지배주주 순손실 9.3억원으로 적자 상태였다.",
+   "en": "The most recently confirmed annual (2022, consolidated) results showed revenue of KRW 7.28 billion, an operating loss of KRW 1.34 billion, and a net loss attributable to owners of KRW 0.93 billion."
   },
   {
-   "ko": "국내 AICC 시장은 2030년 약 4,500억 원 규모로 연평균 23.7% 성장 전망, 글로벌 콜센터 AI 시장도 CAGR 약 21% 고성장 예상",
-   "en": "The domestic AICC market is forecast to grow at ~23.7% CAGR to ~KRW 450 billion by 2030; the global call center AI market is also projected at ~21% CAGR through 2033."
+   "ko": "2025년 11월 소송 등의 제기·신청 관련 공시를 지연해 불성실공시법인 지정 예고를 받았다.",
+   "en": "In November 2025 the company was placed on notice for designation as an unfaithful disclosure entity after delaying disclosure of a lawsuit filing."
   },
   {
-   "ko": "2025년 11월 소송 공시 지연으로 불성실공시법인 지정 예고 이력이 있어 거버넌스 투명성에 대한 지속 모니터링이 필요",
-   "en": "A non-compliant disclosure designation notice in November 2025 — stemming from delayed litigation disclosure — warrants ongoing scrutiny of governance practices."
+   "ko": "코넥스 시장 특성상 유동성이 낮고 정보 비대칭이 큰 초소형주로 분류된다.",
+   "en": "As a KONEX-listed name, it is classified as a micro-cap with low liquidity and greater information asymmetry than KOSDAQ or KOSPI peers."
   }
  ],
  "business": {
-  "ko": "인터로이드(구 에이아이더뉴트리진)는 2012년 다빈치랩으로 설립되어 2020년 에이아이더와 합병을 거쳤으며, 2025년 4월 2일 현재 사명으로 변경했다. 핵심 사업은 생성형 AI 기반 음성 자동화(Voice Call Automation) 플랫폼 'SeiRen(세이렌)'의 개발·공급이며, 실시간 STT(음성인식)·챗봇·TTS(음성합성)를 하나의 스트리밍 파이프라인으로 통합한 솔루션이다. SeiRen은 No-Code 챗봇 빌더와 RAG(검색 증강 생성) 기반 할루시네이션 통제 기능을 탑재해 별도 개발 인력 없이 현업에서 운용 가능하도록 설계됐다. 금융·유통·통신·HR 등 다양한 버티컬에 B2B 방식으로 공급하며, 2024년 말 기준 약 104개 고객사를 확보하고 215건의 AI 단위 사업을 수행한 것으로 알려져 있다. AI 사업 누적 매출은 약 406억 원 수준으로 보고됐다. 초기 바이오·의료(신속분자진단키트) 및 건강기능식품 유통사업은 R&D 비용 부담이 과다해 2024년을 기점으로 단계적 정리 중이며, AI 솔루션·컨설팅 사업이 전체 매출의 약 80%를 차지하는 구조로 재편됐다. AutoML·MLOps 플랫폼 사업도 병행하며 AI 풀스택 역량을 구축하고 있다. 2025년 9월에는 SeiRen 기반 HR 특화 Agentic AI 플랫폼을 공개하고 국내 주요 HR 기업에 적용을 완료했다고 발표, 수직 확장에 속도를 내고 있다.",
-  "en": "InterRoid (formerly AIThe Nutrizin) was established in 2012 as DaVinci Lab, merged with AIThe in 2020, and adopted its current name on April 2, 2025. Its core business is developing and supplying the generative-AI-powered Voice Call Automation platform 'SeiRen,' which integrates real-time STT, Chatbot, and TTS into a single streaming pipeline. SeiRen features a No-Code chatbot builder and RAG-based hallucination control, enabling enterprise clients to operate the system without dedicated development staff. The company serves B2B customers across finance, retail, telecom, and HR verticals, and has reportedly secured approximately 104 enterprise clients and executed 215 discrete AI projects through end-2024. Cumulative AI-segment revenue has been reported at around KRW 40.6 billion. The earlier bio/healthcare rapid-diagnostics and health-food distribution businesses — burdened by excessive R&D costs — have been progressively wound down since 2024, with AI solutions and consulting now representing approximately 80% of total revenue. An AutoML/MLOps platform business runs in parallel to build full-stack AI capabilities. In September 2025, the company unveiled an HR-focused Agentic AI platform built on SeiRen and announced its successful deployment at a major domestic HR firm, signaling accelerating vertical expansion."
+  "ko": "인터로이드는 2012년 다빈치랩으로 설립돼 2020년 에이아이더와 합병 후 에이아이더뉴트리진으로 사명을 바꿨고, 2022년 11월 코넥스 시장에 상장했다. 2025년 4월에는 사명을 다시 인터로이드로 변경하며 사업 정체성을 AI 중심으로 재정의했다. 회사는 MLOps, AI 이미지·영상 분석 등의 통합형 AI 솔루션 개발·공급 및 건강기능식품 유통사업을 영위해왔다. 최근에는 생성형 AI와 음성인식(STT), 음성합성(TTS) 기술을 통합한 차세대 음성 자동화 솔루션인 'SeiRen'을 중심으로 챗봇·콜봇 서비스를 금융·보험·공공 부문 등에 공급하고 있다. 2025년 9월에는 자사 인공지능 플랫폼 세이렌(SeiRen)을 기반으로 HR(인사관리) 분야에 특화된 Agentic AI 플랫폼을 새롭게 선보였다. 같은 해 10월에는 기간통신사업자(회선 미보유) 사업권을 공식 획득하고, KT, SK텔레콤 등 주요 통신사의 회선을 임차해 기업·가맹점·기관 등 다양한 고객에게 직접 통신 서비스를 제공할 수 있는 법적 기반을 확보했다. 회사는 연구개발 비용이 과도했던 바이오 부문을 단계적으로 정리하고, AI 중심의 조직으로 전환하는 중이라고 밝혔다. 조직 구성원의 상당수는 국내외 AI분야 석박사 출신의 우수 인력으로 알려져 있으며, 경쟁구도상 국내 다수의 AI 챗봇·콜봇 솔루션 기업 및 컨택센터 특화 IT기업들과 겹치는 영역에서 사업을 전개하고 있다.",
+  "en": "InterRoid was founded in 2012 as DaVinci Lab, changed its name to AIDER Nutrizine after merging with AIDER in 2020, and listed on the KONEX market in November 2022. In April 2025 it renamed itself InterRoid, redefining its business identity around AI. The company has developed and supplied integrated AI solutions such as MLOps and AI image and video analysis, alongside a health-supplement distribution business. More recently it has focused on 'SeiRen,' a next-generation voice automation solution that integrates generative AI, speech recognition (STT), and speech synthesis (TTS) technology, supplying chatbot and callbot services to the financial, insurance, and public sectors. In September 2025 the company unveiled a new Agentic AI platform specialized for HR recruitment processes, built on its SeiRen AI platform. In October of the same year it obtained a facilities-less telecommunications carrier license and secured the legal basis to provide telecom services directly to enterprise, franchise, and institutional customers by leasing lines from major carriers such as KT and SK Telecom. The company stated it is phasing down its R&D-heavy bio segment and transforming the organization to focus on AI. A substantial portion of its workforce is reported to be skilled personnel with domestic and international master's or doctoral degrees in AI, and competitively it operates in a space that overlaps with numerous domestic AI chatbot, callbot, and contact-center-specialized IT firms."
  },
  "earnings": {
-  "ko": "DART 공시 기준 연결 확정치가 제공된 가장 최근 연도인 2022년을 보면, 매출액 72억 8천만 원에 영업손실 13억 4천만 원(영업이익률 -18.4%), 지배주주 귀속 순손실 9억 3천만 원을 기록했다. 부채비율 66.8%는 초기 성장기 기업의 전형적 레버리지 수준이며, 영업현금흐름도 -10억 1천만 원으로 자금 소요가 지속됐다. 기본 주당순손실은 -304원이다. 2024년에는 별도 기준으로 매출액이 전년 대비 13.1% 증가해 총 약 103억 원을 기록하고, 그 중 AI 부문에서만 약 84억 원을 달성했으나(FnGuide·빅데이터뉴스 보도 참고), 영업손실은 5.5% 추가 확대되고 당기순손실은 211% 급증했다. SeiRen 플랫폼 개발과 LLM 연동 고도화에 따른 연구개발 투자 집행이 매출 성장 속도를 앞질렀기 때문이다. 경기 둔화에도 기업들의 인건비 절감 수요와 24/7 자동화 서비스 요구가 매출 성장 기조를 지탱했다는 점은 긍정적이다. 2025년 Q1~Q4 및 2026년 Q1 분기 실적은 현재 DART 미공시 상태로, 2025년 흑자 전환 목표 달성 여부 검증에 공백이 있다. 이익 기반 배당은 한 차례도 실시된 바 없다.",
-  "en": "Based on the most recent confirmed consolidated DART figures — fiscal year 2022 — revenue stood at KRW 7.28 billion, operating loss at KRW 1.34 billion (OPM: -18.4%), and net loss attributable to controlling shareholders at KRW 929.8 million. The debt ratio of 66.8% is typical of an early-growth-stage leverage profile, and operating cash flow was also negative at -KRW 1.01 billion. Basic EPS for the year was -KRW 304. Moving to 2024, on a standalone basis (per FnGuide and media reports), revenue grew 13.1% year-on-year to approximately KRW 10.3 billion, with the AI segment alone contributing roughly KRW 8.4 billion (~80%); however, operating loss widened a further 5.5% and net loss surged 211%, as R&D investment in SeiRen development and LLM integration outpaced monetization. Despite macro headwinds, enterprise demand for labor cost savings and 24/7 automation continued to support top-line growth — a positive underlying signal. Quarterly figures for 2025 Q1 through 2026 Q1 have not yet been confirmed via DART filings, leaving a material gap in assessing the stated 2025 profitability turnaround. No dividends have been paid given the cumulative loss position."
+  "ko": "금융감독원 공시 기준으로 확정된 가장 최근 연간(2022년, 연결) 실적을 보면 매출은 72.8억원, 영업손실은 13.4억원으로 영업이익률은 -18.4%를 기록했다. 순손실은 9.8억원, 이 중 지배주주 귀속 순손실은 9.3억원이었다. 같은 기간 영업활동현금흐름은 -10.1억원으로 영업 활동에서도 현금이 유출되는 구조였다. 자본총계는 161.3억원(지배주주 지분 159.9억원)이었고 부채총계는 107.8억원으로 부채비율은 66.8%를 기록했다. 이는 2022년 11월 코넥스 상장 직후의 실적으로, 당시 회사는 건강기능식품 유통과 AI 솔루션을 병행하던 구조였다. 이후 분기 실적은 별도의 확정 공시 창으로 제공되지 않아 이번 리포트에서는 다루지 않는다. 다만 금융정보업체 자료에 따르면 2024년 결산 전년동기 대비 별도기준 매출액은 13.1% 증가, 영업손실은 5.5% 증가, 당기순손실은 211% 증가한 것으로 나타나 매출 성장과 수익성 회복이 동시에 이뤄지지는 않은 모습이었다. 같은 자료는 경기둔화에도 기업들의 인건비 감소와 24/7 고객서비스 요구로 AI 기반 자동화 솔루션 투자가 확대되어 매출 증가, 다만 연구개발 투자로 수익성은 제한적이었다고 설명했다. 이 수치는 확정 재무 반영 범위(2022년 연간) 밖의 참고자료이므로 별도기준·전년대비 비율로만 해석해야 하며 잠정치로 다뤄야 한다.",
+  "en": "Based on the most recently confirmed annual (2022, consolidated) filing with Korea's Financial Supervisory Service, revenue was KRW 7.28 billion and the operating loss was KRW 1.34 billion, translating into an operating margin of -18.4%. The net loss was KRW 0.98 billion, of which KRW 0.93 billion was attributable to owners. Operating cash flow for the same period was -KRW 1.01 billion, indicating cash outflow from operations as well. Total equity stood at KRW 16.13 billion (KRW 15.99 billion attributable to owners) against total liabilities of KRW 10.78 billion, for a debt ratio of 66.8%. These figures reflect the period immediately following the November 2022 KONEX listing, when the company still ran health-supplement distribution alongside AI solutions. Subsequent quarterly results are not provided within a separately confirmed disclosure window and are therefore not addressed in this report. However, according to financial-data providers, on a separate (non-consolidated) basis, FY2024 revenue rose 13.1% year-on-year while the operating loss widened 5.5% and the net loss widened 211%, suggesting that revenue growth and profitability recovery did not move in tandem. The same source explained that despite an economic slowdown, corporate investment in AI-based automation solutions expanded on the back of labor-cost reduction and 24/7 customer-service demand, driving revenue growth, though R&D spending kept profitability limited. As these figures fall outside the confirmed financial scope (annual 2022) used in this report, they should be treated as provisional reference data interpreted only as separate-basis, year-on-year ratios."
  },
  "industry": {
-  "ko": "국내 AI 컨택센터(AICC) 시장은 2020년 약 542억 원에서 연평균 23.7% 성장해 2030년 약 4,500억 원에 이를 것으로 전망된다(얼라이드마켓리서치). 글로벌 콜센터 AI 시장은 2025년 약 24억 달러에서 2033년까지 약 122억 달러로 CAGR 약 21% 성장이 예상된다(Straits Research). 시장 확대의 핵심 동인은 인건비 절감 수요, 24/7 고객 서비스 자동화, 그리고 생성형 AI를 활용한 고급 대화 관리 기능의 발전이다. 국내 AICC 시장은 SK텔레콤·LG유플러스·KT 등 통신 3사가 대형 고객 기반과 자금력을 앞세워 주도하고 있어, 인터로이드와 같은 독립 소프트웨어 벤더는 중소·중견 기업 시장을 공략하는 차별화 전략이 핵심이다. 클라우드 기반 배포 모델이 전 세계적으로 시장의 약 72%를 차지하며 주류로 자리 잡고 있으며, 인터로이드의 No-Code·SaaS 지향 접근법은 이 흐름과 부합한다. 다만 IBM, Microsoft, AWS, NICE 등 글로벌 대형 공급자와 국내 통신3사 계열 솔루션이 모두 경쟁하는 과밀 시장이라는 점은 중소 전문업체의 지속적 차별화를 어렵게 만드는 구조적 요인이다.",
-  "en": "The domestic AICC market is forecast to grow at ~23.7% CAGR from approximately KRW 54.2 billion in 2020 to ~KRW 450 billion by 2030 (Allied Market Research). The global call center AI market is projected to expand from ~USD 2.4 billion in 2025 to ~USD 12.2 billion by 2033 at a ~21% CAGR (Straits Research). Key demand drivers include enterprise cost reduction through automation, round-the-clock customer service, and advances in generative-AI conversational management. Domestically, the AICC market is led by the three major telecom operators — SK Telecom, LG Uplus, and KT — whose large enterprise client bases and financial strength mean independent software vendors like InterRoid must carve out a distinct niche in the SMB segment. Cloud-based deployments account for approximately 72% of global market share — a trend consistent with InterRoid's No-Code and SaaS-oriented approach. However, competition from global giants (IBM, Microsoft, AWS, NICE) alongside domestic telecom-backed solutions creates structural barriers to sustained differentiation for smaller specialists."
+  "ko": "국내 AI 시장은 2023년 2.6조원 규모로 17.2% 성장했으며, 향후 5년간 연평균 14.9% 성장해 2027년 4.4조원 규모에 이를 것으로 전망된다. 글로벌 시장조사기관 가트너에 따르면, AI 기반 업무 자동화 시장 규모는 2030년까지 연평균 35% 이상 성장할 전망이다. 이 같은 성장은 기업들의 인건비 감소와 24/7 고객서비스 요구가 맞물리면서 컨택센터·상담 자동화 수요를 키우는 구조에서 비롯된다. 인터로이드가 속한 음성 AI·콜봇 시장에는 대기업 계열 SI사, 통신사 자회사, 다수의 스타트업이 혼재해 있어 경쟁 강도가 높은 편이다. 회사가 2025년 확보한 기간통신사업자 사업권은 콜봇 서비스를 통신 서비스와 결합해 판매할 수 있게 하는 차별점이 될 수 있으나, 유사한 결합형 서비스를 준비하는 경쟁사들이 존재할 가능성도 배제할 수 없다. 국내 콘택센터·상담 자동화 시장은 아직 표준화된 과금 모델이나 지배적 사업자가 뚜렷하지 않은 초기 확산 단계로 평가된다. 코넥스 시장에 머물러 있다는 점에서 코스닥 상장 경쟁사들과 비교해 자본 조달 여력이나 브랜드 인지도 측면에서 상대적으로 열위에 있을 가능성이 있다.",
+  "en": "South Korea's domestic AI market was valued at KRW 2.6 trillion in 2023, growing 17.2% year-on-year, and is projected to grow at a 14.9% CAGR over the following five years to reach KRW 4.4 trillion by 2027. According to Gartner, the AI-based work-automation market is expected to grow at over 35% annually through 2030. This growth stems from a structure in which corporate labor-cost reduction and demand for round-the-clock customer service combine to expand demand for contact-center and consultation automation. The voice AI/callbot market in which InterRoid operates is fairly crowded, mixing large-corporation-affiliated system integrators, telecom-affiliated subsidiaries, and numerous startups. The facilities-less telecom carrier license the company secured in 2025 could serve as a differentiator by allowing it to bundle callbot services with telecom services, though other players preparing similar bundled offerings cannot be ruled out. The domestic contact-center/consultation-automation market is still assessed to be in an early diffusion stage without a clearly standardized billing model or dominant operator. Remaining on the KONEX market may put the company at a relative disadvantage versus KOSDAQ-listed competitors in terms of capital-raising capacity and brand recognition."
  },
  "outlook": {
-  "ko": "인터로이드는 2025년 영업이익 흑자 전환을 공개 목표로 제시했으며, AI 부문에서 5년 연속 흑자를 기록한 이력을 근거로 들고 있다. 바이오 부문의 단계적 정리로 고비용 R&D 부담이 축소되고 SeiRen 플랫폼의 SaaS화가 가속화될 경우 한계이익률 개선을 기대할 수 있다. 2025년 9월 공개된 HR 특화 Agentic AI 플랫폼은 채용 프로세스 전반 자동화 시장에 진출하는 버티컬 확장의 일환으로, 고객당 매출 증대와 신규 시장 개척에 기여할 수 있는 기회 요인이다. 2026년에는 SeiRen 기반의 금융·유통 등 추가 버티컬 확장 성과가 실적 견인력을 더할 수 있다. 다만 LLM 개발사들의 기술 발전 속도가 빠르고 통신3사 등 경쟁사가 공격적으로 시장을 확장하고 있어, 기술 우위의 지속적 확보가 핵심 과제로 남는다. 2025년 연간 실적 공시가 이루어지면 흑자 전환 목표 달성 여부 및 중장기 성장성을 보다 명확히 점검할 수 있을 것이다.",
-  "en": "InterRoid has publicly targeted an operating profit turnaround in 2025, citing five consecutive years of profitability within the AI segment. The phased wind-down of the high-cost bio division should reduce the R&D burden, and further SaaS monetization of SeiRen could improve contribution margins. The September 2025 HR-focused Agentic AI platform launch — targeting end-to-end recruitment automation — represents a vertical expansion opportunity capable of boosting per-customer revenue and opening new market segments. Further vertical expansion into finance and retail based on SeiRen could add additional revenue momentum in 2026. However, the rapid capability improvements of global LLM providers and aggressive domestic telecom market expansion pose ongoing differentiation challenges. The forthcoming 2025 annual DART filing will be the primary lens for assessing both the profitability turnaround thesis and medium-term growth trajectory."
+  "ko": "회사는 사명 변경 이후 바이오 부문 비중을 낮추고 AI 음성·콜봇 사업에 자원을 집중하는 전략을 공식화했다. 2025년 9월에는 SeiRen 플랫폼을 기반으로 국내 굴지의 HR 기업에 해당 플랫폼 적용을 성공적으로 완료했다고 밝혔다. 같은 해 10월에는 기간통신사업자(회선 미보유) 사업권을 공식 획득하고, 인공지능(AI) 기반 음성통신 서비스 시장에 본격 진출한다고 밝혔다. 회사는 보험, 병원, 학원, 유통, 공공기관 등 전화상담이 많은 산업부터 단계적으로 서비스를 확대하겠다는 계획을 제시했다. 언론 인터뷰에서 회사 측은 일본과 동남아 등 글로벌 시장 진출을 모색하는 한편, 로봇과 디지털 기기에 탑재되는 경량화된 Physical AI 분야의 연구개발을 대폭 강화할 계획이라고 밝혔다. 또한 올해부터 흑자 전환을 목표로 공격적인 성장 전략을 추진하고 있다고 전했으나, 이는 회사 측이 제시한 목표치로 별도의 감사보고서를 통한 확정 실적은 확인되지 않았다. 코넥스 상장사 특성상 향후 정기 사업보고서·감사보고서 공시 시점이 이러한 목표의 달성 여부를 가늠할 핵심 지표가 될 것으로 보인다.",
+  "en": "Following its name change, the company formalized a strategy of reducing its bio-segment weighting and concentrating resources on AI voice and callbot business. In September 2025, based on its SeiRen platform, it stated it had successfully completed deployment of the platform at a leading domestic HR company. In October of the same year, it announced it had officially obtained a facilities-less telecommunications carrier license and would move into the AI-based voice-communication services market. The company outlined plans to gradually expand services starting with industries that handle heavy phone-consultation volumes, such as insurance, hospitals, academies, retail, and public institutions. In media interviews, company representatives said they were exploring overseas expansion into Japan and Southeast Asia while significantly strengthening R&D in lightweight Physical AI for robots and digital devices. The company also indicated it was pursuing an aggressive growth strategy aimed at turning operating profit positive starting this year, though this is a target stated by the company itself and has not been verified through a confirmed audit report. Given the company's KONEX listing status, the timing of future periodic business and audit reports will likely be the key indicator for gauging whether these targets are achieved."
  },
  "valuation_comment": {
-  "ko": "현재 연결 확정 재무 기준으로 이익이 발생하지 않은 상태여서 이익 기반 지표인 PER·EPS의 산출 의미가 제한적이며, 배당도 실시된 바 없어 배당수익률 역시 발생하지 않는다. 순자산(지배주주 지분) 대비 시가총액의 상대적 위치는, 과거 52주 거래 밴드 최고가(약 4,800원) 대비 현재 주가가 상당 폭 낮은 수준에 위치하고 있어 시장이 실적 불확실성과 거버넌스 이슈를 일정 부분 반영한 것으로 해석된다. 코넥스 소형주 특성상 일평균 거래량이 극히 낮아 유동성 프리미엄이 추가 할인 요인으로 작용할 수 있다. 향후 분기 실적 공시를 통해 손익 전환이 확인될 경우 이익 기반 밸류에이션 재산정이 가능해지므로, 공시 일정 추적이 중요하다.",
-  "en": "With the most recent confirmed consolidated financials reflecting a net loss, earnings-based metrics such as PER and EPS carry limited analytical value; no dividends have been paid, making a dividend yield calculation inapplicable. The current share price sits materially below the 52-week high (~KRW 4,800), suggesting the market has already priced in meaningful earnings uncertainty and governance overhang from the November 2025 disclosure notice. The extremely low average daily trading volume typical of small-cap KONEX listings introduces an illiquidity discount not captured by standard financial ratios. Once quarterly DART filings confirm a profitability transition, earnings-based valuation re-rating becomes feasible — making the timing of upcoming disclosures a critical monitoring point."
+  "ko": "인터로이드는 코넥스 시장에 상장된 초소형 종목으로, 시가총액과 거래량이 코스닥 상장사에 비해 현저히 작아 가격 변동성이 크고 유동성이 제한적인 특성을 지닌다. 확정된 가장 최근 연간(2022년) 실적이 영업손실과 순손실을 기록한 만큼, 순자산 대비 주가 배수를 해석할 때는 이익 기반 지표보다 자산가치 측면의 참고가 우선될 필요가 있다. 배당 지급 내역이 확인되지 않아 배당 관련 지표는 현재로서는 의미 있는 비교 대상이 되기 어렵다. 사업모델이 건강기능식품 유통에서 AI 음성·콜봇 중심으로 전환되는 과정에 있어, 향후 실적이 확정될 때까지는 동종 AI 소프트웨어 기업들과의 밸류에이션 비교에도 신중함이 필요하다. 코넥스 시장 자체가 코스닥 대비 상장사 저변이 얇고 기관 수급이 제한적인 만큼, 가격 형성 메커니즘도 코스닥·코스피와는 다르게 작동할 수 있다.",
+  "en": "InterRoid is a micro-cap name listed on the KONEX market, with market capitalization and trading volume substantially smaller than KOSDAQ-listed peers, resulting in higher price volatility and more limited liquidity. Since the most recently confirmed annual (2022) results showed an operating loss and a net loss, interpreting the price-to-book multiple warrants greater reliance on asset-value context rather than earnings-based metrics. As no dividend payment history has been confirmed, dividend-related metrics are not currently a meaningful basis for comparison. Given that the business model is in transition from health-supplement distribution toward AI voice and callbot services, caution is warranted when comparing valuation with peer AI software companies until future results are confirmed. Because the KONEX market itself has a thinner base of listed companies and more limited institutional participation than KOSDAQ, its price-formation mechanism can behave differently from KOSDAQ or KOSPI."
  },
  "bull": [
   {
    "title": {
-    "ko": "SeiRen 플랫폼의 멀티버티컬 확장 가능성",
-    "en": "SeiRen Platform Multi-Vertical Expansion Potential"
+    "ko": "AI 음성 자동화 사업모델의 구체화",
+    "en": "AI voice automation business model taking concrete shape"
    },
    "body": {
-    "ko": "STT·챗봇·TTS를 단일 파이프라인으로 통합한 SeiRen은 No-Code 설계로 도입 장벽이 낮아 중소·중견기업 시장 침투 속도를 높일 수 있다. 100석 규모 컨택센터 기준 약 4개월 내 구축 완료가 가능하다는 점이 SMB 수요에 부응하는 속도 경쟁력이다. 2025년 9월 HR 특화 Agentic AI 플랫폼을 국내 주요 HR 기업에 성공 적용하며 기술 신뢰성을 입증했고, 컨택센터에서 HR·금융·제조 등으로의 수직 확장은 고객당 매출과 재계약률을 동시에 끌어올리는 요인이 될 수 있다.",
-    "en": "SeiRen's single-pipeline integration of STT, Chatbot, and TTS, combined with a No-Code design, lowers adoption barriers for SMBs, enabling faster market penetration. The ability to complete deployments for up to 100-seat contact centers within approximately four months addresses SMB speed-to-value requirements. Successful deployment at a major domestic HR firm in September 2025 validated the platform's technical credibility, and further expansion across HR, finance, and manufacturing verticals could simultaneously improve per-customer revenue and renewal rates."
+    "ko": "회사는 생성형 AI와 음성인식(STT), 음성합성(TTS) 기술을 통합한 차세대 음성 자동화 솔루션인 SeiRen을 상용화 단계로 끌어올렸다고 밝혔다. 금융·보험·공공 등 정밀성과 신뢰성이 중요한 산업군에서 높은 관심을 받고 있다는 점도 확인된다. 2025년 9월에는 HR(인사관리) 분야에 특화된 Agentic AI 플랫폼을 새롭게 선보이며 적용 산업을 넓히고 있다.",
+    "en": "The company stated it has brought SeiRen, a next-generation voice automation solution integrating generative AI, speech recognition (STT), and speech synthesis (TTS), to a commercialization stage. It has also confirmed strong interest from industries where precision and reliability matter, such as finance, insurance, and the public sector. In September 2025 it unveiled a new Agentic AI platform specialized for HR, broadening its range of applications."
    }
   },
   {
    "title": {
-    "ko": "바이오 사업 정리로 구조적 수익성 개선 여지",
-    "en": "Structural Margin Recovery as Bio Business Is Wound Down"
+    "ko": "기간통신사업자 사업권 확보로 사업모델 확장",
+    "en": "Business model expansion via telecom carrier license"
    },
    "body": {
-    "ko": "R&D 비용 부담이 컸던 바이오·의료 부문을 단계적으로 정리함에 따라, 전사 손익의 최대 걸림돌이 제거될 것으로 기대된다. AI 사업은 이미 5년 연속 흑자를 기록한 것으로 알려져 있어, 바이오 손실 차단이 곧 전사 손익 개선으로 직결되는 구조다. 2025년 영업이익 흑자 전환 목표가 달성될 경우 기업 가치 재평가의 유효한 촉매가 될 수 있다.",
-    "en": "The phased exit from the bio/healthcare division — which carried disproportionate R&D costs — removes the largest single drag on group-level profitability. The AI business is reported to have maintained profitability for five consecutive years, meaning eliminating bio-segment losses could directly catalyze a consolidated turnaround. If the 2025 operating profit target is achieved, it would represent a meaningful catalyst for valuation re-rating."
+    "ko": "2025년 10월 기간통신사업자(회선 미보유) 사업권을 확보해 KT, SK텔레콤 등 주요 통신사의 회선을 임차해 다양한 고객에게 직접 통신 서비스를 제공할 수 있는 법적 기반을 마련했다. 이를 통해 콜봇 소프트웨어 공급을 넘어 통신 서비스 매출까지 사업 범위를 넓힐 수 있는 구조가 만들어졌다. 보험, 병원, 학원, 유통, 공공기관 등 전화상담이 많은 산업으로 순차 확대한다는 계획도 제시됐다.",
+    "en": "In October 2025 the company secured a facilities-less telecommunications carrier license, establishing the legal basis to lease lines from major carriers such as KT and SK Telecom and provide telecom services directly to a range of customers. This creates a structure allowing the business to expand beyond callbot software supply into telecom service revenue. The company also outlined plans to gradually expand into industries with heavy phone-consultation volumes, such as insurance, hospitals, academies, retail, and public institutions."
    }
   },
   {
    "title": {
-    "ko": "구조적 고성장 AICC 시장의 수혜 포지션",
-    "en": "Structural Beneficiary of High-Growth AICC Market"
+    "ko": "저수익 바이오 부문 정리를 통한 사업 집중",
+    "en": "Focus gained through winding down the lower-margin bio segment"
    },
    "body": {
-    "ko": "국내 AICC 시장은 2030년까지 연평균 23.7% 성장, 글로벌 콜센터 AI 시장도 2033년까지 CAGR 약 21%의 고성장이 전망된다. 기업의 인건비 절감 수요와 24/7 서비스 요구는 경기 둔화에도 구조적으로 지속되는 기저 수요로 작용한다. 클라우드 기반 배포가 시장의 약 72%를 차지하는 주류 흐름에서 No-Code·클라우드 친화적 SeiRen 플랫폼의 포지셔닝이 시장 성장의 수혜를 누릴 수 있는 위치다.",
-    "en": "The domestic AICC market is forecast to grow at ~23.7% CAGR through 2030, while the global call center AI market is expected to expand at ~21% CAGR through 2033 (Straits Research). Enterprise demand for labor cost savings and 24/7 automation represents structurally durable demand even amid macro headwinds. With cloud-based deployments representing approximately 72% of the global market, SeiRen's No-Code, cloud-friendly positioning is well-aligned with the predominant growth channel."
+    "ko": "회사는 연구개발 비용이 과도했던 바이오 부문을 단계적으로 정리하고, AI 중심의 조직으로 전환하고 있다고 밝혔다. 2025년 4월 사명을 인터로이드로 변경한 것도 이러한 정체성 전환을 상징한다. 전년도 AI 부문에서 84억원의 매출을 기록하며 전체 매출 103억원 중 약 80%를 AI 사업에서 달성했다는 보도도 있어, 자원 집중의 기반은 어느 정도 마련된 상태로 해석된다.",
+    "en": "The company stated it is phasing down its R&D-heavy bio segment and transforming the organization to focus on AI. The April 2025 rename to InterRoid symbolizes this identity shift. Reports have also indicated that the AI segment generated KRW 8.4 billion in revenue the prior year, accounting for roughly 80% of total revenue of KRW 10.3 billion, suggesting the foundation for resource concentration was already partly in place."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "통신3사·글로벌 빅테크의 시장 잠식",
-    "en": "Market Encroachment by Dominant Telecom and Global Big-Tech Rivals"
+    "ko": "불성실공시법인 지정 예고에 따른 거버넌스 리스크",
+    "en": "Governance risk from unfaithful disclosure designation notice"
    },
    "body": {
-    "ko": "국내 AICC 시장은 SKT·LG유플러스·KT가 대형 고객 기반과 자금력을 앞세워 공격적으로 확장하는 중이며, IBM·Microsoft·AWS·NICE 등 글로벌 공급자도 시장에 투자를 가속화하고 있다. 인터로이드는 자체 LLM 없이 외부 모델(GPT, Gemini, Llama 등)에 의존하는 구조로, 원가 통제력과 장기 차별화 지속 가능성에 구조적 한계가 있다. 대형 클라우드 사업자가 No-Code 콜봇 솔루션을 번들 또는 저가로 제공하기 시작하면 가격 경쟁력과 고객 이탈 리스크가 동시에 높아질 수 있다.",
-    "en": "The domestic AICC market is being aggressively expanded by SKT, LG Uplus, and KT, backed by large enterprise client bases and significant capital; global suppliers such as IBM, Microsoft, AWS, and NICE are simultaneously accelerating market investment. InterRoid's reliance on external LLMs (GPT, Gemini, Llama, etc.) rather than proprietary models structurally constrains cost control and long-term differentiation. Should major cloud providers begin bundling No-Code callbot solutions at low or zero incremental cost, both pricing power and customer retention face simultaneous downward pressure."
+    "ko": "음성 콜 자동화 플랫폼 기업 인터로이드가 소송 등의 제기·신청 관련 공시를 지연해 불성실공시법인으로 지정 예고됐다. 사유 발생일은 9월 24일, 공시일은 10월 13일로 명시돼 약 3주간 공시가 지연된 것으로 나타났다. 최종 지정 여부와 그에 따른 벌점·제재금 부과 결과는 공개된 자료로 확인되지 않아 후속 공시를 살펴볼 필요가 있다.",
+    "en": "The voice-call automation platform company InterRoid was placed on notice for designation as an unfaithful disclosure entity after delaying disclosure related to a lawsuit filing. The triggering event occurred on September 24, with the disclosure filed on October 13, indicating roughly a three-week delay. The final designation outcome and any associated penalty points or fines have not been confirmed in publicly available sources, warranting a check of follow-up disclosures."
    }
   },
   {
    "title": {
-    "ko": "지속적 영업손실과 현금 소진 리스크",
-    "en": "Persistent Operating Losses and Cash Burn Risk"
+    "ko": "확정 실적 기준 지속적 손실과 현금유출",
+    "en": "Persistent losses and cash outflow on confirmed results"
    },
    "body": {
-    "ko": "2022년 확정 연결 기준 영업손실률 -18.4%, 영업현금흐름 -10억 1천만 원이며, 2024년에는 순손실이 211% 급증했다. 흑자 전환이 지연될 경우 자본 소진에 따른 추가 자금 조달(증자 등) 가능성을 배제하기 어렵다. 코넥스 시장 특성상 유동성이 낮아 신주 발행 시 기존 주주 희석 효과가 과도하게 나타날 수 있다.",
-    "en": "On confirmed 2022 consolidated figures, the operating margin was -18.4% and operating cash flow was -KRW 1.01 billion; by 2024, net losses surged 211%. If a profitability turnaround is delayed, additional equity financing (capital increases) to fund working capital cannot be ruled out. The low liquidity of KONEX listings means any new share issuance would carry a disproportionate dilution risk for existing holders."
+    "ko": "가장 최근 확정된 연간(2022년, 연결) 실적에서 영업손실 13.4억원, 지배주주 순손실 9.3억원을 기록했고 영업활동현금흐름도 -10.1억원으로 현금이 유출됐다. 부채비율은 66.8%로 자본 대비 부채 부담이 존재한다. 외부에서 확인된 2024년 별도기준 잠정 자료에서도 매출은 13.1% 늘었지만 영업손실과 당기순손실이 각각 5.5%, 211% 확대된 것으로 나타나, 수익성 개선이 매출 성장 속도를 따라가지 못하는 모습이 이어지고 있다.",
+    "en": "In the most recently confirmed annual (2022, consolidated) results, the operating loss was KRW 1.34 billion, the net loss attributable to owners was KRW 0.93 billion, and operating cash flow was -KRW 1.01 billion, reflecting cash outflow. The debt ratio stood at 66.8%, indicating a notable debt burden relative to equity. Externally sourced FY2024 separate-basis provisional data also showed revenue up 13.1% while the operating loss and net loss widened 5.5% and 211%, respectively, suggesting profitability improvement has continued to lag revenue growth."
    }
   },
   {
    "title": {
-    "ko": "불성실공시법인 지정 예고 등 거버넌스 우려",
-    "en": "Governance Concerns: Non-Compliant Disclosure Designation Notice"
+    "ko": "코넥스 상장 특유의 유동성·정보 접근성 제약",
+    "en": "Liquidity and information-access constraints typical of KONEX listings"
    },
    "body": {
-    "ko": "2025년 11월 코넥스시장 공시규정 제12조·제15조 위반으로 불성실공시법인 지정이 예고됐으며, 소송 관련 공시를 약 3주 지연한 것이 사유였다. 코넥스 소형주 특성상 내부 공시 관리 역량의 한계가 반복될 경우 기관투자자 신뢰 하락으로 이어질 수 있다. 현재 2025년 분기 실적 전체가 미공시 상태로, 정보 비대칭 역시 투자자 접근성을 제한하는 요인이다.",
-    "en": "In November 2025, InterRoid was served a non-compliant disclosure designation notice under KONEX market rules Articles 12 and 15, stemming from an approximately three-week delay in disclosing litigation filings. Repeated disclosure management lapses — a common risk at small-cap KONEX issuers — could erode institutional investor confidence. The complete absence of quarterly disclosures for the entirety of 2025 further exacerbates the information asymmetry facing investors."
+    "ko": "코넥스 시장은 코스닥에 비해 상장사 수와 거래량이 적어 매매 체결이 원활하지 않을 수 있다. 분기 단위의 상세한 재무 공시나 증권사 커버리지가 코스닥·코스피 대비 제한적이어서 투자 판단에 필요한 정보 접근성이 낮은 편이다. 사업모델 전환이 진행 중인 시점에서 이러한 정보 비대칭은 투자자의 불확실성을 키우는 요인이 될 수 있다.",
+    "en": "The KONEX market has fewer listed companies and lower trading volume than KOSDAQ, which can make order execution less smooth. Detailed quarterly financial disclosure and brokerage coverage are also more limited than on KOSDAQ or KOSPI, reducing information accessibility for investment decisions. This information asymmetry can amplify investor uncertainty at a time when the business model is still in transition."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "기술·경쟁 리스크",
-    "en": "Technology & Competitive Risk"
+    "ko": "공시·법적 리스크",
+    "en": "Disclosure and legal risk"
    },
    "body": {
-    "ko": "외부 LLM(GPT, Gemini, Llama 등)의 기능 고도화 속도가 빨라 인터로이드의 플랫폼 레이어 가치가 희석될 수 있다. 자체 STT 엔진의 정확도·속도 경쟁력 유지를 위한 지속적 연구개발 투자가 수익성 개선 목표와 충돌하는 딜레마가 존재한다. 통신3사·글로벌 AI 기업의 공격적 시장 확장으로 가격 경쟁이 심화될 경우, 중소 전문업체의 마진 방어가 더욱 어려워질 수 있다.",
-    "en": "Rapid capability improvements of external LLMs (GPT, Gemini, Llama, etc.) risk commoditizing InterRoid's platform differentiation layer. The need to continuously invest in proprietary STT engine accuracy and speed conflicts with the stated profitability improvement goal. Aggressive market expansion by domestic telecoms and global AI incumbents could intensify price competition, making margin defense increasingly difficult for smaller specialists."
+    "ko": "2025년 11월 소송 관련 공시 지연으로 불성실공시법인 지정 예고를 받았으며 코넥스시장 공시규정 제12조 및 제15조가 근거로 제시됐다. 지정이 확정될 경우 벌점 부과 등 추가적인 시장조치로 이어질 수 있다. 최종 결과 및 소송 자체의 내용·규모는 확인되지 않아 후속 공시 확인이 필요하다.",
+    "en": "The company was placed on notice for unfaithful disclosure designation in November 2025 due to a lawsuit-related disclosure delay, citing Articles 12 and 15 of the KONEX market disclosure regulations. If the designation is finalized, it could lead to further market measures such as penalty points. Neither the final outcome nor the substance and scale of the lawsuit itself has been confirmed, requiring a check of follow-up disclosures."
    }
   },
   {
    "cat": {
-    "ko": "유동성·자금 리스크",
-    "en": "Liquidity & Funding Risk"
+    "ko": "사업 전환 리스크",
+    "en": "Business transition risk"
    },
    "body": {
-    "ko": "코넥스 시장은 코스닥·코스피 대비 일평균 거래량이 현저히 낮아 대량 매도 시 주가 충격이 과도하게 발생할 수 있다. 영업손실이 지속될 경우 현금 및 현금성 자산이 소진되어 신주 발행 또는 차입을 통한 운전자금 확보 가능성이 높아진다. 소형 코넥스 기업의 특성상 자금 조달 경로와 여력이 제한적이다.",
-    "en": "KONEX listings exhibit significantly lower average daily trading volumes than KOSDAQ or KOSPI, meaning large sell orders can cause outsized price dislocations. Continued operating losses increase the probability of cash depletion, driving the need for equity issuance or borrowings for working capital. As a small-cap KONEX issuer, financing channels and capacity are inherently limited."
+    "ko": "건강기능식품 유통에서 AI 음성·콜봇, 나아가 통신 서비스로 사업모델을 넓히는 과정이 진행 중이며, 기간통신사업자 사업권 획득은 2025년 10월로 아직 초기 단계다. 신규 사업이 실제 매출로 얼마나, 언제 전환될지는 아직 확정된 공시 자료로 검증되지 않았다. 사업 재편 과정에서 발생하는 일회성 비용이나 조직 개편 리스크도 배제할 수 없다.",
+    "en": "The transition from health-supplement distribution to AI voice/callbot and now telecom services is still underway, and the telecommunications carrier license acquisition dates only from October 2025, an early stage. How much and when the new business will convert into actual revenue has not been verified through confirmed disclosure. One-off costs or organizational restructuring risk during this transition cannot be ruled out either."
    }
   },
   {
    "cat": {
-    "ko": "공시·규제 리스크",
-    "en": "Disclosure & Regulatory Risk"
+    "ko": "재무 건전성 및 조달 리스크",
+    "en": "Financial soundness and funding risk"
    },
    "body": {
-    "ko": "2025년 11월 불성실공시법인 지정 예고는 향후 거래 정지 또는 상장 적격성 심사로 이어질 수 있는 선행 지표다. AI 솔루션 서비스의 특성상 개인정보·데이터 보호 규제 강화가 서비스 구조와 비용 구조에 영향을 미칠 수 있다. 내부 컴플라이언스 체계가 미흡할 경우 규제 당국의 추가 조치 가능성도 배제하기 어렵다.",
-    "en": "The November 2025 non-compliant disclosure notice is a leading indicator that could escalate into a trading suspension or listing eligibility review. Tightening personal data and privacy regulations applicable to AI-driven services may alter service architecture and operating cost structures. Should internal compliance systems remain inadequate, additional regulatory action cannot be ruled out."
+    "ko": "확정 기준(2022년) 영업활동현금흐름이 음(-)이었던 만큼, 사업 지속을 위한 외부 자금조달 필요성이 있을 수 있다. 코넥스 시장은 코스닥에 비해 유상증자, 전환사채 등 자금조달 여건이 상대적으로 제약적이다. 손실이 지속되는 구조에서 추가 자금조달이 기존 주주의 지분 희석으로 이어질 가능성도 존재한다.",
+    "en": "Given negative operating cash flow on the confirmed 2022 basis, external funding may be needed to sustain operations. The KONEX market offers relatively more constrained conditions for capital raising, such as rights offerings or convertible bonds, than KOSDAQ. In a structure of continuing losses, additional fundraising could also lead to dilution for existing shareholders."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월 (2025년 연간 사업보고서 DART 공시)",
-    "en": "July–August 2026 (2025 Annual Report DART Filing)"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "2025년 연결 연간 실적(매출·영업이익·순손익)이 공시되면 회사 목표인 영업이익 흑자 전환 달성 여부를 최초로 검증할 수 있다. 바이오 부문 정리 완료 여부 및 AI 매출 비중 추이도 핵심 확인 항목이다.",
-    "en": "Once the 2025 consolidated annual results (revenue, operating profit/loss, net income) are filed on DART, the company's publicly stated profitability turnaround target can be verified for the first time. The extent of bio-business wind-down completion and the trajectory of the AI revenue mix are equally important data points."
+    "ko": "3분기 관련 주요사항보고서·수시공시를 통해 소송 공시 이력 관리 상황과 불성실공시법인 지정 이후 후속 조치 여부를 확인할 필요가 있다.",
+    "en": "Check third-quarter-related material event reports and ad hoc disclosures for the status of lawsuit disclosure management and any follow-up action after the unfaithful disclosure designation notice."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (분기 실적 공시 재개 여부 확인)",
-    "en": "H2 2026 (Resumption of Quarterly Earnings Disclosures)"
+    "ko": "2027년 3월~4월경",
+    "en": "Around March-April 2027"
    },
    "what": {
-    "ko": "현재 2025년 전 분기 실적이 미공시 상태인바, 공시 재개 여부와 적시성이 거버넌스 수준의 직접적 신호가 된다. 2026년 1분기 실적은 2025년 흑자 전환 추세의 연속성 여부를 확인하는 핵심 기준점이다.",
-    "en": "With all 2025 quarterly results currently undisclosed, the resumption of timely quarterly filings will serve as a direct governance quality signal. The 2026 Q1 results will be a key test of whether any 2025 profitability turnaround is being sustained into the new fiscal year."
+    "ko": "FY2026 사업연도 감사보고서·사업보고서 공시를 통해 AI 사업 매출 비중 확대와 영업손익 개선 여부, 바이오 부문 정리 완료 여부를 확인할 시점이다.",
+    "en": "The FY2026 audit and business reports should reveal whether the AI segment's revenue share has grown, operating results have improved, and the bio-segment wind-down has been completed."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (SeiRen 신규 수주·고객사 공시 또는 IR 발표)",
-    "en": "H2 2026 (SeiRen Contract Wins & Customer Expansion Announcements)"
+    "ko": "신규 계약 공시 시점(수시)",
+    "en": "Upon any new contract disclosure (ongoing)"
    },
    "what": {
-    "ko": "SeiRen 플랫폼 신규 수주 또는 고객사 확대 공시를 통해 매출 파이프라인의 실체를 확인할 수 있다. 특히 HR 이외 금융·유통 버티컬로의 확장 성과가 중장기 성장성 판단의 핵심 지표다.",
-    "en": "New SeiRen contract wins or customer expansion announcements via DART or IR materials will provide concrete evidence of the sales pipeline. Expansion success beyond HR into finance and retail verticals is a key indicator of medium-term revenue scalability."
+    "ko": "기간통신사업자 자격을 활용한 통신 결합형 콜봇 서비스의 실제 상용 계약 및 매출 인식 여부를 계약·공급 관련 공시로 확인해야 한다.",
+    "en": "Watch for contract and supply-related disclosures confirming actual commercial contracts and revenue recognition for telecom-bundled callbot services enabled by the carrier license."
    }
   },
   {
    "when": {
-    "ko": "2026년 연말 (불성실공시법인 후속 조치 및 거버넌스 개선 여부)",
-    "en": "Year-End 2026 (Non-Compliant Disclosure Follow-Up & Governance Improvement)"
+    "ko": "고객사 발표 시점(수시)",
+    "en": "Upon customer announcements (ongoing)"
    },
    "what": {
-    "ko": "2025년 11월 지정 예고된 불성실공시법인 관련 최종 결정 및 시정 조치 이행 여부를 확인해야 한다. 공시 행태의 실질적 개선이 이루어지는지가 기관투자자 신뢰 회복의 가장 기본적인 기준이 된다.",
-    "en": "The final determination on the November 2025 non-compliant disclosure notice — and evidence of corrective measures actually implemented — should be tracked. Whether governance improvement intent translates into meaningfully changed disclosure behavior is the baseline requirement for restoring institutional investor confidence."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 이후 (코스닥 이전 상장 추진 가능성 모니터링)",
-    "en": "2027 and Beyond (Potential KOSDAQ Transfer Listing Developments)"
-   },
-   "what": {
-    "ko": "코넥스 기업의 코스닥 이전 상장은 유동성 개선과 기관투자자 접근성 제고로 이어지는 중요 이벤트다. 흑자 전환 지속 및 실적 궤도 안착 여부에 따라 이전 상장 요건 충족 가능성이 달라지므로, IR 자료와 공시에서 관련 언급을 모니터링해야 한다.",
-    "en": "A transfer listing from KONEX to KOSDAQ would be a meaningful liquidity-enhancing and institutional-access-improving event. Eligibility depends heavily on sustained profitability and a stable financial track record; any references to a KOSDAQ transfer in IR materials or DART filings should be closely monitored."
+    "ko": "SeiRen·HR Agentic AI 플랫폼의 신규 대형 고객사 확보 및 해외(일본·동남아) 진출 관련 구체적 공시나 계약 발표를 지속적으로 살펴볼 필요가 있다.",
+    "en": "Continue monitoring specific disclosures or contract announcements regarding new large customers for the SeiRen/HR Agentic AI platforms and progress on overseas expansion into Japan and Southeast Asia."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "인터로이드는 2025년 4월 사명 변경과 함께 생성형 AI 기반 Voice Call Automation 전문기업으로의 전략적 전환을 공식화했으며, SeiRen 플랫폼을 중심으로 컨택센터·HR·금융 등 B2B 시장 수직 확장을 추진하고 있다. 국내외 AICC 시장이 연평균 20% 이상 성장하는 구조적 호황 국면에 있다는 점은 장기 성장 기회를 지지한다. 반면 2022년 확정 연결 기준 영업손실률 -18.4%, 2024년 순손실 211% 급증 등 수익성 전환은 아직 확인되지 않았으며, 2025년 분기 실적 전체가 미공시 상태여서 현황 파악에 중요한 공백이 있다. 2025년 11월 불성실공시법인 지정 예고라는 거버넌스 이슈도 기관투자자 신뢰에 부정적 영향을 미친다. 자체 LLM 없이 통신3사 및 글로벌 AI 대기업과 경쟁해야 하는 구조적 도전도 중장기 과제로 남아 있다. 코넥스 소형주 특성상 유동성 제약이 주가 변동성을 증폭시키는 점도 유의해야 한다. 향후 DART를 통한 2025년 연간 실적 공시가 이 기업의 전략 전환 실현 가능성을 판단하는 가장 중요한 참고 기준이 될 것이다.",
-   "en": "InterRoid formalized its pivot to a generative-AI-powered Voice Call Automation specialist with its April 2025 rebrand, pursuing vertical B2B expansion via the SeiRen platform across contact centers, HR, and finance. The structural tailwind of domestic and global AICC markets growing at 20%+ CAGR annually underpins a credible long-term growth narrative. Against this, the confirmed 2022 consolidated operating margin of -18.4% and a 211% net loss surge in 2024 mean profitability remains unconfirmed, and the complete absence of 2025 quarterly disclosures leaves a significant information gap. The November 2025 non-compliant disclosure notice adds a governance overhang. Differentiating without a proprietary LLM against the combined weight of domestic telecoms and global AI incumbents is a structural challenge that persists beyond the near term. Low KONEX liquidity amplifies price volatility beyond what underlying financials alone would imply. The upcoming 2025 annual DART filing will be the single most decisive data point for assessing the viability of InterRoid's strategic transformation thesis."
+   "ko": "인터로이드는 코넥스 시장에 상장된 초소형 IT·AI 기업으로, 2025년 사명 변경을 계기로 건강기능식품 유통 중심에서 AI 음성 콜봇 SeiRen과 기간통신사업자 사업권을 활용한 통신 결합형 서비스로 사업 구조를 재편하는 과정에 있다. 가장 최근 확정된 연간(2022년, 연결) 실적은 매출 72.8억원, 영업손실 13.4억원, 지배주주 순손실 9.3억원으로 적자를 기록했으며 영업활동현금흐름도 마이너스였다. 외부에서 확인된 2024년 별도기준 잠정 자료에서도 매출은 늘었지만 영업손실과 순손실이 함께 확대된 것으로 나타나, 매출 성장과 수익성 개선이 아직 같은 방향으로 움직이지 않고 있다. 2025년 11월에는 소송 공시 지연으로 불성실공시법인 지정 예고를 받아 거버넌스 측면의 점검이 필요한 상태이며, 최종 결과는 공개 자료로 확인되지 않았다. 회사는 SeiRen 플랫폼 고도화, HR Agentic AI 신규 출시, 통신 서비스 진출 등 사업 확장을 위한 다수의 시도를 이어가고 있으나, 이러한 시도가 실제 확정 실적으로 연결되는 시점과 규모는 아직 공시로 검증되지 않았다. 투자자는 향후 정기 사업보고서·감사보고서, 신규 계약 공시, 불성실공시 후속 조치 등을 통해 사업 재편의 실질적 진행 상황을 확인해 나갈 필요가 있다. 본 리포트는 정보 제공 목적으로 작성되었으며 매수·매도 의견을 포함하지 않는다.",
+   "en": "InterRoid is a micro-cap IT/AI company listed on the KONEX market that, following its 2025 name change, is in the process of restructuring from a health-supplement distribution focus toward AI voice callbot services via SeiRen and telecom-bundled services enabled by its carrier license. The most recently confirmed annual (2022, consolidated) results showed a loss, with revenue of KRW 7.28 billion, an operating loss of KRW 1.34 billion, and a net loss attributable to owners of KRW 0.93 billion, alongside negative operating cash flow. Externally sourced FY2024 separate-basis provisional data also showed revenue growth accompanied by widening operating and net losses, indicating that revenue growth and profitability improvement have not yet moved in the same direction. In November 2025 the company was placed on notice for unfaithful disclosure designation due to a lawsuit disclosure delay, warranting governance scrutiny, and the final outcome has not been confirmed in public sources. The company continues to pursue multiple expansion efforts, including enhancing the SeiRen platform, launching a new HR Agentic AI product, and entering telecom services, but the timing and scale at which these efforts will translate into confirmed results have not yet been verified through disclosure. Investors should continue to track the substantive progress of this business restructuring through future periodic business and audit reports, new contract disclosures, and any follow-up to the unfaithful disclosure matter. This report is prepared for informational purposes and does not include a buy or sell recommendation."
   }
  },
  "sources": [
-  "https://itooza.com/vscore/311960",
-  "https://thevc.kr/interroid",
+  "https://news.nate.com/view/20251112n32599",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A311960&cID=&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
   "https://markets.hankyung.com/stock/311960",
-  "https://www.38.co.kr/html/forum/board/?o=cinfo&code=311960&tmpstr=%EF%BF%BD%EF%BF%BD%EF%BF%BD%CD%B7%EF%BF%BD%EF%BF%BD%CC%B5%EF%BF%BD",
-  "https://news.nate.com/view/20251112n32599",
-  "https://www.38.co.kr/html/forum/board/?o=news&code=311960",
-  "https://m.irgo.co.kr/IR-COMP/095340",
-  "https://www.38.co.kr/html/konex/sise.php",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Disclosure.asp?pGB=1&gicode=A311960&cID=&MenuYn=Y&ReportGB=&NewMenuID=107&stkGb=701",
   "https://www.albamon.com/jobs/detail-company/CZL8qzCquQAa8YxPEjLF9Q==",
-  "https://thevc.kr/icore",
-  "https://m.irgo.co.kr/IR-COMP/119610/%EC%9D%B8%ED%84%B0%EB%A1%9C%EC%A1%B0-IR-PAGE",
-  "https://www.thebigdata.co.kr/view.php?ud=2025040210041153336cf2d78c68_23",
-  "https://www.fntoday.co.kr/news/articleView.html?idxno=348612",
-  "https://www.goodkyung.com/news/articleView.html?idxno=272030",
-  "https://my.idc.com/getdoc.jsp?containerId=prAP53081725"
+  "https://itooza.com/vscore/311960",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Disclosure.asp?pGB=1&gicode=A311960&cID=&MenuYn=Y&ReportGB=&NewMenuID=107&stkGb=701",
+  "https://thevc.kr/interroid",
+  "https://www.38.co.kr/html/forum/board/?o=cinfo&code=311960&tmpstr=%EF%BF%BD%EF%BF%BD%EF%BF%BD%CD%B7%EF%BF%BD%EF%BF%BD%CC%B5%EF%BF%BD",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=394920",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/bmN2ano2OFljcEg0Mk5RU1JDc1Q5Zz09/company_nm/(%EC%A3%BC)%EC%9D%B8%ED%84%B0%EB%A1%9C%EC%A1%B0",
+  "https://albamon.com/jobs/detail-company/CZL8qzCquQAa8YxPEjLF9Q==",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A119610",
+  "https://www.catch.co.kr/Comp/CompSummary/153318",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=119610",
+  "https://www.jobplanet.co.kr/companies/57904/landing/%EC%9D%B8%ED%84%B0%EB%A1%9C%EC%A1%B0",
+  "https://www.catch.co.kr/Comp/CompInfo/264268",
+  "https://www.drcr.co.kr/articles/618",
+  "https://www.tipa.or.kr/s05010605"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "311960",
  "name": "인터로이드",
  "name_en": "InterRoid Co., Ltd.",
@@ -232,11 +223,11 @@
   "IT·소프트웨어"
  ],
  "market": "코넥스",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 06:06",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:06",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -258,8 +249,8 @@
   ],
   "quarterly": [],
   "valuation": {
-   "price": 1796,
-   "mcap": 0.0055,
+   "price": 1700,
+   "mcap": 0.0052,
    "shares": 3062664,
    "total_shares": 3173776,
    "wavg_shares": null,
@@ -272,11 +263,17 @@
    "ttm_np_owner": null,
    "ccy": "KRW",
    "bps_src": "자체",
+   "eps_src": null,
    "pbr_krx": null,
    "bps_krx": null,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": null,
-   "div": null
+   "div": null,
+   "hidden": {
+    "eps": "no_income",
+    "bps": "no_equity",
+    "dps": "no_div"
+   }
   }
  }
 }

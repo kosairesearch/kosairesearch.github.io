@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "공공 DX·ITSM 의무화 수혜, 수익성 회복이 관건",
-  "en": "Public-Sector DX Tailwinds Intact, but Margin Recovery Remains the Key Test"
+  "ko": "이익 회복 조짐, 짙은 계절성 공존",
+  "en": "Signs of Profit Recovery Amid Strong Seasonality"
  },
  "lead": {
-  "ko": "국내 IT 인프라 통합관리 소프트웨어 선도 기업 브레인즈컴퍼니는 행안부 ITSM 의무화라는 구조적 공공 수요 확대 시점을 앞두고 있으나, 2025년 영업이익률이 8.4%까지 하락한 수익성 회복 여부가 시장 재평가의 관건이다.",
-  "en": "Brainzcompany, Korea's leading IT infrastructure management software firm, faces a structural public-sector demand catalyst from the Ministry of the Interior's 2026 ITSM mandate, but the key question remains whether operating margins—which fell to 8.4% in FY2025—can meaningfully recover."
+  "ko": "브레인즈컴퍼니는 IT 인프라 통합관리 본업의 이익 회복 조짐과 자회사 에이프리카의 AI·클라우드 확장이 맞물리는 가운데, 매출과 이익이 4분기에 집중되는 뚜렷한 계절성이 계속되고 있다.",
+  "en": "Brainzcompany shows early signs of profit recovery in its core IT infrastructure management business alongside subsidiary Aifrica's AI and cloud expansion, while revenue and profit remain heavily concentrated in the fourth quarter."
  },
  "keypoints": [
   {
-   "ko": "2026년 행안부 정보시스템 표준운영절차(SOP) 의무화로 공공기관 ITSM·GPM 신규·교체 수요 집중 기대",
-   "en": "2026 Ministry of the Interior SOP mandate expected to drive concentrated public-agency demand for Zenius ITSM and GPM products"
+   "ko": "2025년 연간 매출은 250.9억원, 영업이익은 21.1억원(영업이익률 8.4%)으로 2024년(265.9억원, 36.0억원, 13.5%) 대비 매출과 이익률 모두 낮아졌다.",
+   "en": "2025 annual revenue was KRW 25.09 billion with operating profit of KRW 2.11 billion (8.4% margin), both lower than 2024's KRW 26.59 billion revenue and 13.5% margin."
   },
   {
-   "ko": "매출의 약 47%가 4분기에 집중되는 극단적 계절성으로 Q1~Q3 구조적 영업적자 반복, 연간 손익은 Q4 수주 집행에 좌우",
-   "en": "~47% of annual revenue books in Q4, creating structural Q1–Q3 operating losses and making full-year results highly dependent on Q4 order execution"
+   "ko": "분기별로는 2025년 3분기(-7.6억원)와 2026년 1분기(-12.2억원)에 영업손실을 낸 반면, 2025년 4분기(47.3억원)와 2026년 2분기(4.0억원)에는 이익이 크게 늘어나는 뚜렷한 계절성이 나타났다.",
+   "en": "Quarterly results show operating losses in Q3 2025 (-KRW 0.76 billion) and Q1 2026 (-KRW 1.22 billion), contrasted with sharp profit swings in Q4 2025 (KRW 4.73 billion) and Q2 2026 (KRW 0.40 billion), reflecting pronounced seasonality."
   },
   {
-   "ko": "부채비율 11.1%의 실질적 무차입 재무 구조, 지배주주 자기자본 536억원이 시가총액을 크게 상회하는 자산 안전망 보유",
-   "en": "Near-zero-debt balance sheet (debt ratio 11.1%) with KRW 53.6 bn owner equity substantially exceeding the current market capitalisation"
+   "ko": "자회사 에이프리카를 통한 AI·클라우드 네이티브 플랫폼(세렝게티, 치타) 사업이 본업인 IT 인프라 통합관리(제니우스)와 결합되며 AIOps·옵저버빌리티 기능을 강화하고 있다.",
+   "en": "Through subsidiary Aifrica, the AI and cloud-native platform business (Serengeti, Cheetah) is being combined with the core Zenius IT infrastructure management line to strengthen AIOps and observability capabilities."
   },
   {
-   "ko": "영업이익률이 2022년 26.2%에서 2025년 8.4%로 4년 연속 하락—비용 구조 전환과 수익성 반등 여부가 핵심 모니터링 포인트",
-   "en": "Operating margin compressed from 26.2% (2022) to 8.4% (2025) for four consecutive years—cost-structure dynamics and margin recovery are the central monitoring variables"
+   "ko": "글로벌 AIOps 플랫폼 시장은 고성장이 전망되나 Datadog·Dynatrace 등 글로벌 대형업체와 국내 엑셈·제니퍼소프트·와탭 등과의 경쟁이 함께 심화되는 구도다.",
+   "en": "The global AIOps platform market is projected for rapid growth, but competition is intensifying both from global majors such as Datadog and Dynatrace and domestic peers including Exem, Jennifersoft, and Whatap."
   },
   {
-   "ko": "AWS 마켓플레이스 입점 완료·Azure 입점 진행 중, Zenius AI Agent·K8s·GPU(MIG) 모니터링 신제품으로 AI 인프라 수요 대응",
-   "en": "AWS Marketplace listing complete and Azure Marketplace entry in progress; Zenius AI Agent, K8s, and GPU (MIG) monitoring target growing AI-infrastructure management demand"
+   "ko": "부채비율은 2022년 9.5%에서 2025년 11.1%로 낮은 수준을 유지하며 재무구조는 비교적 안정적으로 관리되고 있다.",
+   "en": "The debt ratio has stayed at a relatively low level, moving from 9.5% in 2022 to 11.1% in 2025, indicating a comparatively stable financial structure."
   }
  ],
  "business": {
-  "ko": "브레인즈컴퍼니는 2000년 설립된 지능형 IT 인프라 통합관리 솔루션 전문 소프트웨어 기업으로, 2021년 국내 IT 인프라 모니터링 업계 최초로 코스닥에 상장했다. 핵심 제품인 'Zenius EMS'는 서버·네트워크·데이터베이스·애플리케이션·클라우드 등 이기종 IT 인프라를 단일 화면에서 통합 관제하는 플랫폼으로, 21개의 포인트 모듈로 구성돼 있다. EMS를 중심으로 애플리케이션 성능관리(APM), 통합 로그관리 및 보안 이벤트 관리(SIEM), IT 서비스 관리(ITSM), 쿠버네티스 전용 모니터링(Zenius K8s), AI 이상징후 예측(Zenius AI) 등으로 포트폴리오를 다각화하고 있다. 공공기관·대기업 중심으로 누적 고객사가 약 1,500개에 달하며, 기상청·충남교육청·인천공항공사 등 주요 정부 기관이 납품처에 포함된다. 매출 구조는 소프트웨어 신규 라이선스·유지보수·증설과 차세대 통합 구축 사업 등으로 이루어지며, 공공 부문 예산 집행 특성상 4분기에 매출이 집중되는 구조를 보인다. 경쟁사로는 국내 APM 전문 엑셈, 오픈마루 등이 있으며, 글로벌 시장에서는 Datadog·Dynatrace·New Relic 등 대형 SaaS 플랫폼 벤더와의 경쟁이 본격화되고 있다. 2024년 AWS 마켓플레이스 입점을 완료했으며, Azure 마켓플레이스에도 추가 입점을 진행 중으로 해외 간접 판매 채널을 확장하고 있다. 임직원 수는 2026년 2월 기준 약 116명이며, 창업자 강선근 대표이사가 최대주주로 경영을 이끌고 있다. 공공기관 보안·표준 규격 대응에서 장기 납품 실적을 보유하고 CC·GS 인증 등 조달 자격을 갖춘 점이 국산 솔루션으로서의 주요 진입장벽이다.",
-  "en": "Brainzcompany was founded in 2000 as a specialist in intelligent IT infrastructure integrated management (ITIM) software and became the first IT infrastructure monitoring company to list on KOSDAQ in 2021. Its flagship product, Zenius EMS, consolidates heterogeneous IT assets—servers, networks, databases, applications, and cloud resources—into a single management console built on 21 point modules. The EMS platform is complemented by dedicated products for APM, SIEM (log management), ITSM, Kubernetes-native monitoring (Zenius K8s), and AI-based anomaly prediction (Zenius AI), progressively broadening the addressable market. The cumulative installed base has grown to approximately 1,500 public agencies and enterprises, including the Korea Meteorological Administration, South Chungcheong Office of Education, and Incheon International Airport Corporation. Revenue is structured around new software licenses, maintenance, capacity expansions, and next-generation SI-type integration projects, with a pronounced Q4 concentration driven by public-sector budget cycles. Domestic competitors include APM specialist Exem and OpenMaru, while global SaaS platforms such as Datadog, Dynatrace, and New Relic are expanding their Korean enterprise footprint. The company completed entry into the AWS Marketplace in 2024 and is pursuing Azure Marketplace listing to establish additional indirect global sales channels. As of February 2026, the headcount stood at approximately 116, and the company remains under founder-CEO leadership. A long track record of government deployments combined with CC and GS product certifications provides a meaningful procurement advantage in the public-sector tender process."
+  "ko": "브레인즈컴퍼니는 2000년 설립된 IT 인프라 통합관리 소프트웨어 전문기업으로, 다양한 IT 인프라를 단일 플랫폼에서 통합 관리하는 지능형 모니터링 소프트웨어(EMS)를 중심으로 애플리케이션 성능관리(APM), 대용량 로그관리 및 인공지능 소프트웨어, IT서비스통합관리(ITSM) 소프트웨어 등을 주된 사업으로 영위한다. 대표 제품은 'Zenius EMS'이며 'Zenius APM', 'LogManager', 'Zenius ITSM' 등 포인트 솔루션과 유지보수 서비스로 제품 포트폴리오를 구성하고 있다. 회사는 2021년 IT 인프라 통합 모니터링 업계 최초로 코스닥 시장에 상장했다. 회사 소개에 따르면 국내외 약 1,000여 개 이상의 기업과 공공기관을 고객으로 확보하고 있어 B2G·대기업 비중이 높은 편이다. 이러한 고객 구조상 기존 제품들은 매출의 상당수가 4분기에 집행되는 특성을 가진 것으로 증권가에서 분석된 바 있다. 2022년에는 클라우드 커스터마이징 업체인 에이프리카 지분 66.7%를 인수해 연결 자회사로 편입했으며, 에이프리카는 AI·클라우드 네이티브 플랫폼 전문기업으로 클라우드 관리·운영 플랫폼 '세렝게티'와 초거대언어모델 운영(LLMOps) 플랫폼 '치타'를 주력 제품으로 보유하고 있다. 최근에는 에이프리카의 '세렝게티 AI Agent Studio'를 기반으로 제니우스에 대화형 AI 에이전트를 탑재해 운영 편의성을 강화하는 등 두 회사 간 기술 결합이 진행되고 있다. 경쟁 구도상 국내에서는 엑셈, 제니퍼소프트, 와탭 등과, 글로벌 시장에서는 Datadog, Dynatrace 등 대형 옵저버빌리티 벤더와 경합하는 위치에 있다.",
+  "en": "Founded in 2000, Brainzcompany is an IT infrastructure integrated management software company whose core business centers on Zenius EMS, an intelligent monitoring solution that manages diverse IT infrastructure on a single platform, alongside application performance management (APM), large-scale log management and AI software, and IT service management (ITSM) software. Its flagship product is Zenius EMS, complemented by point solutions such as Zenius APM, LogManager, and Zenius ITSM, plus maintenance services. The company became the first in the IT infrastructure integrated monitoring industry to list on KOSDAQ in 2021. According to the company's own description, it serves more than 1,000 corporate and public-sector clients domestically and abroad, reflecting a heavy B2G and large-enterprise customer mix. Analysts have noted that because of this customer structure, a large portion of revenue from existing products is executed in the fourth quarter. In 2022, the company acquired a 66.7% stake in cloud customization firm Aifrica, which became a consolidated subsidiary; Aifrica is an AI and cloud-native platform specialist whose main products are Serengeti, a cloud management and operations platform, and Cheetah, a large language model operations (LLMOps) platform. More recently, the two companies have combined technologies by embedding a conversational AI agent into Zenius based on Aifrica's Serengeti AI Agent Studio to enhance operational convenience. Competitively, the company faces domestic rivals such as Exem, Jennifersoft, and Whatap, as well as large global observability vendors including Datadog and Dynatrace."
  },
  "earnings": {
-  "ko": "2025년 연결 기준 매출액은 250억 9천만원으로 전년(265억 9천만원) 대비 5.6% 감소했으며, 영업이익은 21억 1천만원(영업이익률 8.4%)으로 전년(36억, 13.5%)에서 크게 후퇴했다. 다만 당기순이익(지배주주 귀속)은 45억 6천만원으로 전년(45억 5천만원)과 거의 동일한 수준을 유지했는데, 영업외 수익이 영업이익 감소분을 일정 부분 상쇄했기 때문으로 풀이된다. 영업현금흐름은 57억 6천만원으로 당기순이익을 상회했으며, 부채비율은 11.1%로 실질적 무차입 재무 구조가 지속됐다. 분기 계절성이 극명해, 2025년 4분기 단독으로 매출 118억 2천만원과 영업이익 47억 3천만원이 발생하며 연간 매출의 약 47%와 연간 영업이익의 대부분이 한 분기에 집중됐다. 2025년 Q1·Q2·Q3는 각각 영업손익 -19.4억·+0.7억·-7.6억을 기록해 상반기 누계 기준으로도 영업적자 구간이었다. 2026년 1분기는 매출 40억 6천만원, 영업손실 -12억 2천만원으로, 전년 동기(-19.4억) 대비 적자 폭이 7.2억원 축소되어 소폭의 개선 신호가 나타났다. 영업이익률 추이는 2022년 26.2% → 2023년 12.9% → 2024년 13.5% → 2025년 8.4%로, 매출이 성장하는 구간에서도 비용 증가 속도가 이익을 압박한 구조가 확인된다. 기본주당순이익(EPS)은 2022~2025년 605~662원 범위에서 비교적 안정적으로 유지되어, 순이익 수준은 일정 구간에서 지속되고 있다.",
-  "en": "FY2025 consolidated revenue was KRW 25.1 bn, down 5.6% year-on-year from KRW 26.6 bn in FY2024, while operating profit fell sharply to KRW 2.1 bn (OPM 8.4%) from KRW 3.6 bn (OPM 13.5%) a year earlier. Net profit attributable to controlling shareholders held nearly flat at KRW 4.6 bn versus KRW 4.6 bn in FY2024, as non-operating income partially offset the operating earnings decline. Operating cash flow of KRW 5.8 bn exceeded net profit, and the company maintained a near-zero-debt balance sheet with a debt ratio of 11.1%. Seasonality is extreme: Q4 FY2025 alone generated KRW 11.8 bn in revenue and KRW 4.7 bn in operating profit, accounting for roughly 47% of full-year sales and virtually all operating income. Q1, Q2, and Q3 of FY2025 posted operating results of -KRW 1.9 bn, +KRW 0.07 bn, and -KRW 0.76 bn respectively, leaving the cumulative H1 period in operating deficit. Q1 FY2026 showed a year-on-year improvement, with the operating loss narrowing to -KRW 1.2 bn from -KRW 1.9 bn in Q1 FY2025. The trend in operating margins—26.2% (2022) → 12.9% (2023) → 13.5% (2024) → 8.4% (2025)—confirms that cost growth has persistently outpaced revenue expansion. Annual basic EPS remained in a relatively stable KRW 605–662 range over FY2022–FY2025, reflecting consistent underlying profit generation despite the structural margin compression."
+  "ko": "2025년 연결 매출액은 250.9억원으로 2024년 265.9억원 대비 소폭 감소했으며, 영업이익은 21.1억원으로 2024년 36.0억원에서 크게 줄어 영업이익률이 13.5%에서 8.4%로 낮아졌다. 지배주주 순이익은 50.8억원으로 2024년 48.0억원보다 오히려 늘었는데, 이는 영업 외 요인이 반영된 결과로 해석된다. 연간 흐름을 더 길게 보면 영업이익률은 2022년 26.2%에서 2023년 12.9%, 2024년 13.5%, 2025년 8.4%로 추세적으로 낮아지는 모습이다. 분기별로는 계절성이 뚜렷하게 나타나는데, 2025년 2분기 매출 53.7억원·영업이익 0.75억원의 소폭 흑자 이후 3분기에는 매출이 42.3억원으로 줄고 영업손실 7.6억원을 기록했다. 반면 2025년 4분기에는 매출이 118.2억원으로 급증하고 영업이익 47.3억원, 지배주주 순이익 50.1억원을 기록하며 연간 실적의 대부분이 4분기에 집중되는 패턴을 재확인했다. 2026년 들어서는 1분기에 매출 40.6억원, 영업손실 12.2억원으로 비수기 부진이 이어졌으나 2분기에는 매출 55.2억원, 영업이익 4.0억원, 지배주주 순이익 14.8억원으로 흑자로 전환됐다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순이익은 68.4억원으로, 분기별 변동성은 크지만 연결 기준 이익 창출력 자체는 유지되고 있는 모습이다. 현금흐름 측면에서는 2022년부터 2025년까지 매년 영업활동현금흐름이 순이익 대비 견조하게 유입되고 있어(2025년 57.6억원) 이익의 현금 전환 측면에서는 안정적인 편이다.",
+  "en": "Consolidated revenue in 2025 was KRW 25.09 billion, slightly down from KRW 26.59 billion in 2024, while operating profit fell sharply to KRW 2.11 billion from KRW 3.60 billion, pushing the operating margin down from 13.5% to 8.4%. Net income attributable to owners actually rose to KRW 5.08 billion from KRW 4.80 billion in 2024, a divergence likely driven by non-operating items. Looking at the longer trend, the operating margin has declined steadily from 26.2% in 2022 to 12.9% in 2023, 13.5% in 2024, and 8.4% in 2025. Quarterly results show pronounced seasonality: after a modest Q2 2025 profit (revenue KRW 5.37 billion, operating profit KRW 0.075 billion), Q3 2025 revenue fell to KRW 4.23 billion with an operating loss of KRW 0.76 billion. In contrast, Q4 2025 revenue surged to KRW 11.82 billion with operating profit of KRW 4.73 billion and owner net income of KRW 5.01 billion, reconfirming that most annual earnings are concentrated in the fourth quarter. Entering 2026, Q1 revenue was KRW 4.06 billion with an operating loss of KRW 1.22 billion, continuing the off-season weakness, before Q2 2026 turned profitable with revenue of KRW 5.52 billion, operating profit of KRW 0.40 billion, and owner net income of KRW 1.48 billion. Over the trailing four quarters (Q3 2025 through Q2 2026), combined owner net income totaled KRW 6.84 billion, suggesting that despite significant quarter-to-quarter volatility, consolidated earnings power has been maintained. On the cash flow side, operating cash flow has remained solidly positive relative to net income every year from 2022 through 2025 (KRW 5.76 billion in 2025), indicating relatively stable cash conversion of earnings."
  },
  "industry": {
-  "ko": "글로벌 IT 관찰 가능성(Observability) 플랫폼 시장은 2025년 약 29억 달러에서 2031년 약 69억 달러로 연평균 약 15.6%의 성장이 전망되며, 아시아태평양 지역은 같은 기간 연평균 약 19.6%로 글로벌 평균을 웃돌 것으로 예상된다. AIOps 시장은 더욱 빠른 속도로 확대되고 있으며, 2026년에는 단순 자동화를 넘어 자율 운영(Autonomous Operations) 패러다임으로의 전환이 가속화되고 있다. 클라우드 네이티브 전환 심화에 따라 쿠버네티스·하이브리드 클라우드·멀티클라우드 환경이 복잡해지면서, 이기종 인프라를 단일 플랫폼에서 통합 관리하는 솔루션에 대한 수요가 전방위로 증가하고 있다. 국내 공공 부문에서는 행정안전부가 정보시스템 예방점검 및 표준운영절차 준수를 2026년부터 의무화함으로써, 기관별 ITSM 도입 및 업그레이드 수요가 하반기에 집중될 것으로 관측된다. 경쟁 구도는 국내 APM·로그 관리 전문 벤더들과 Datadog·Dynatrace·New Relic 등 글로벌 SaaS 플랫폼 간 고객 유치 경쟁이 격화되는 양상이며, 오픈소스 기반 Grafana·OpenTelemetry 생태계 확산도 상용 솔루션의 가격 압박 요인이다. AI 워크로드 증가로 GPU 모니터링, LLM 운영 가시성 등 새로운 관측 영역이 형성되고 있으며, 이는 기존 인프라 모니터링 벤더에게 제품 확장의 기회이자 새로운 경쟁의 공간이다. 국내 공공기관의 노후 장비 비율이 높고 IT 운영 인력 부족 문제가 심화되고 있어, AI 기반 자동화 관제 수요가 중장기적으로 구조적으로 확대될 여건이 조성되고 있다.",
-  "en": "The global IT observability platform market is projected to grow from approximately USD 2.9 bn in 2025 to USD 6.9 bn by 2031 at a CAGR of roughly 15.6%, with Asia-Pacific expected to outpace the global average at approximately 19.6% per annum over the same period. The AIOps segment is expanding even more rapidly, with 2026 marking an inflection point as the market transitions from simple automation toward fully autonomous IT operations. Cloud-native adoption is intensifying the complexity of Kubernetes, hybrid-cloud, and multi-cloud environments, driving broad-based demand for unified monitoring platforms that manage heterogeneous infrastructure. In Korea's public sector, the Ministry of the Interior's 2026 mandatory compliance requirements for information system preventive maintenance and standard operating procedures are expected to concentrate ITSM adoption and upgrade spending in H2 2026. Competitive intensity is rising: domestic APM and log-management vendors compete directly with global SaaS platforms such as Datadog, Dynatrace, and New Relic, while the proliferation of open-source ecosystems like Grafana and OpenTelemetry exerts pricing pressure on premium commercial solutions. Emerging demand areas—GPU monitoring, LLM observability, and AI workload management—are opening new addressable markets that established infrastructure monitoring vendors can pursue. Structurally, the high proportion of aging equipment in Korean public institutions and a shortage of IT operations staff are expected to provide a sustained tailwind for AI-driven automated monitoring over the medium to long term."
+  "ko": "AIOps(AI 기반 IT 운영관리) 및 옵저버빌리티 플랫폼 시장은 글로벌 시장조사에서 2025년 약 242억 달러, 2026년 약 307억 달러 규모로 성장할 것으로 전망되는 등 높은 성장률이 예상되는 분야다. 국내 시장에서는 제니퍼소프트, 와탭, 엑셈, 브레인즈컴퍼니, LG CNS, 삼성SDS 등이 AI 기능 도입과 폐쇄망 대응, 자체 머신러닝 기반 근본원인분석(RCA) 등을 놓고 경쟁하는 구도로 분석되며, 한 업계 분석은 2026~2028년을 한국 시장의 성장 '골든 타임'으로 제시했다. 글로벌 시장에서는 Datadog, Dynatrace, ServiceNow IT Operations Management, New Relic, PagerDuty 등이 상위권을 형성하고 있어 대형 벤더와의 기술·가격 경쟁이 상시적으로 존재한다. 국내 공공·금융·제조·통신 등 전 산업군에서 IT 인프라 다운타임 대응 수요가 꾸준한 가운데, 클라우드·AI 인프라 확산에 따라 통합 모니터링 수요 자체는 구조적으로 늘어나는 흐름이다. 다만 국내 소프트웨어 산업은 과거 정부 R&D 예산 삭감 등 정책 변수에 민감하게 반응한 사례가 있어, 공공부문 비중이 높은 업체일수록 예산 편성 시기와 규모에 실적이 영향을 받는 구조다. 브레인즈컴퍼니는 전통적인 IT 인프라 통합관리 강자로서의 지위와 자회사를 통한 AI·클라우드 네이티브 역량을 함께 보유해, 온프레미스와 클라우드를 모두 아우르는 하이브리드 대응력을 경쟁 포인트로 내세우고 있다.",
+  "en": "The AIOps and observability platform market is projected for strong growth, with one global market report valuing it at roughly USD 24.24 billion in 2025 and USD 30.72 billion in 2026. In the Korean market, vendors including Jennifersoft, Whatap, Exem, Brainzcompany, LG CNS, and Samsung SDS are analyzed as competing on AI feature adoption, air-gapped network support, and proprietary machine-learning-based root cause analysis, with one industry report flagging 2026-2028 as a 'golden time' for growth in the Korean market. Globally, Datadog, Dynatrace, ServiceNow IT Operations Management, New Relic, and PagerDuty rank among the leading solutions, meaning technology and pricing competition with large global vendors is a constant feature of the landscape. Demand for IT infrastructure downtime response remains steady across public, financial, manufacturing, and telecom sectors domestically, and the structural expansion of cloud and AI infrastructure is driving underlying growth in integrated monitoring demand. However, Korea's software industry has historically shown sensitivity to policy variables such as government R&D budget cuts, meaning companies with a higher public-sector revenue mix can see results affected by the timing and scale of budget allocations. Brainzcompany positions itself with a traditional stronghold in IT infrastructure integrated management combined with AI and cloud-native capabilities through its subsidiary, emphasizing hybrid coverage across both on-premise and cloud environments as a competitive differentiator."
  },
  "outlook": {
-  "ko": "2026년 행정안전부 정보시스템 표준운영절차(SOP) 의무화는 공공기관 ITSM 및 예방점검(GPM) 시스템 구축 수요를 촉발할 가장 직접적인 촉매 이벤트로, Zenius ITSM과 GPM 제품이 이 수요에 직접 대응하는 제품군을 보유하고 있다. 공공 수주 측면에서는 2025년 기상청 정보시스템 모니터링 구축 사업 수주에 이어 충남교육청·인천공항공사 등 신규 고객을 확보했으며, 2026년 2월 공공솔루션마켓에 참가해 AI Agent·GPM·ITSM을 주요 솔루션으로 제시했다. 신제품 측면에서는 Zenius AI Agent가 공개됐으며, NVIDIA MIG(Multi-Instance GPU) 환경의 GPU 모니터링 기능이 고도화돼 AI 데이터센터 운영 수요에 대응하는 기능이 추가됐다. 해외 채널 확장과 관련해 2024년 AWS 마켓플레이스 입점을 완료했으며, Azure 마켓플레이스에도 추가 입점을 진행 중으로 글로벌 클라우드 플랫폼을 통한 간접 판매 채널을 구축하고 있다. 매출의 구조적 Q4 집중 패턴은 2026년에도 지속될 것으로 예상되며, 공공기관 예산 집행 시점과 맞물려 Q4 수주 동향이 연간 실적의 핵심 변수로 작용한다. SaaS 전환 전략을 병행 추진 중이나, 구독형 수익 모델로의 전환은 초기 인식 구조 변화를 수반하므로 전환 속도와 규모에 따라 단기 수익 지표에 영향을 줄 수 있다. Zenius SIEM의 CC인증과 ITSM의 GS인증 등 정부 조달 자격을 다수 보유하고 있어 신규 입찰에서의 경쟁력이 유지되고 있다.",
-  "en": "The Ministry of the Interior's 2026 SOP mandate for public-sector information systems is the most direct near-term catalyst, and Brainzcompany's Zenius ITSM and GPM products are well-positioned to capture the resulting demand for compliance-driven procurement and upgrades. On the public-sector pipeline, the company won the Korea Meteorological Administration infrastructure monitoring project in 2025, added South Chungcheong Office of Education and Incheon International Airport Corporation as customers, and showcased its AI Agent, GPM, and ITSM suite at the 27th Public Solution Market in February 2026. On the product side, Zenius AI Agent has been launched, and GPU monitoring capabilities for NVIDIA MIG (Multi-Instance GPU) environments have been enhanced to address growing AI data-center operations demand. For international expansion, the company completed its AWS Marketplace listing in 2024 and is pursuing an Azure Marketplace listing to build additional indirect global sales channels. The structural Q4 revenue concentration is expected to continue in 2026, making H2 public-sector order momentum the critical determinant of full-year results. The ongoing SaaS transition strategy is strategically sound but may create short-term revenue recognition headwinds as the company moves from license-based to subscription-based billing. Multiple government procurement qualifications—including CC certification for Zenius SIEM and GS certification for Zenius ITSM—continue to underpin the company's competitive standing in public-sector tenders."
+  "ko": "회사는 대표 솔루션 '제니우스(Zenius) EMS'의 AI 기반 옵저버빌리티 기능을 고도화하는 작업을 진행해왔으며, 딥러닝 기반 이상징후 탐지 시스템인 '제니우스 AI'와 대화형 운영 분석 엔진인 '제니우스 AI 에이전트'를 축으로 기능을 강화했다. 회사 임원은 이 같은 고도화를 통해 이미 현장 고객들로부터 긍정적인 반응을 얻고 있다고 밝혔다. 향후 계획과 관련해 회사는 인프라 운영 데이터와 AI 엔진의 융합을 단계적으로 추진해 장애 예측부터 심층 분석, 자동 대응까지 이어지는 지능형 자율 운영 체계를 구현하고 시장 점유율을 확대해 나갈 방침이라고 설명했다. 자회사 에이프리카는 AI 모델·LLM 개발과 운영을 지원하는 '치타'와 에이전트 생성·툴 연계용 '세렝게티 AI Agent Studio'를 결합한 통합 플랫폼을 선보이며 기업용 AI 에이전트 개발·운영 시장 공략을 확대하고 있다. 사업 구조상 매출과 이익의 대부분이 4분기에 집중되는 패턴이 반복돼온 만큼, 향후 실적의 방향성은 4분기 공공·대기업 예산 집행 규모에 크게 좌우될 가능성이 있다. 본업(ITIM·ITSM)의 매출 안정성과 에이프리카를 통한 AI·클라우드 신사업의 성장 속도가 함께 확인돼야 연간 이익률의 회복 궤적을 판단할 수 있는 구조다.",
+  "en": "The company has been upgrading the AI-based observability features of its flagship Zenius EMS solution, centered on Zenius AI, a deep-learning-based anomaly detection system, and Zenius AI Agent, a conversational operations analysis engine. A company executive stated that these upgrades have already drawn a positive response from customers in the field. Looking ahead, the company has outlined plans to progressively integrate infrastructure operations data with AI engines to build an intelligent autonomous operations system spanning failure prediction, deep analysis, and automated response, with the aim of expanding market share. Subsidiary Aifrica has introduced an integrated platform combining Cheetah, which supports AI model and LLM development and operations, with the Serengeti AI Agent Studio for agent creation and tool integration, expanding its push into the enterprise AI agent development and operations market. Given the recurring pattern in which most annual revenue and profit are concentrated in the fourth quarter, future results could remain heavily dependent on the scale of public-sector and large-enterprise budget execution in that quarter. Confirming the pace of recovery in annual margins will require tracking both the revenue stability of the core ITIM/ITSM business and the growth speed of the AI and cloud businesses under Aifrica."
  },
  "valuation_comment": {
-  "ko": "현 주가는 주당순자산(BPS 7,135원)에 비해 상당한 할인 구간에서 거래되고 있어, 순자산 기준으로 할인 상태가 이어지고 있다. 최근 기준 주당순이익(EPS 831원)을 토대로 산출되는 현 거래 배수는 과거 5년 평균 두 자릿수 초반대였던 밴드를 크게 하회하는 이례적으로 낮은 구간에 위치한다. 주당배당금(DPS 170원) 기준 배당수익률은 소프트웨어 업종 평균을 상당히 웃도는 수준으로, 무차입 재무 구조와 당기순이익을 상회하는 영업현금흐름이 배당 지속 가능성을 뒷받침한다. 다만 영업이익률이 2022년 고점 대비 크게 낮아진 구조적 변화를 감안하면, 현재의 낮은 배수가 단순 저평가인지 이익 질 저하를 반영한 합리적 조정인지 면밀한 구분이 필요하다. 소형주 특성상 거래 유동성이 제한적이고, Q4 집중 계절성에 따른 분기 변동성이 크다는 점 역시 배수 확장을 제약하는 구조적 요인으로 작용한다.",
-  "en": "The current share price trades at a meaningful discount to book value per share (BPS: KRW 7,135), implying that the market ascribes no premium—and in fact a significant discount—to the company's net asset base. The earnings multiple implied by the most recent EPS figure (KRW 831) sits well below the historical five-year average, which resided in the low double-digit range, representing an unusually compressed level relative to the company's own trading history. The annual dividend per share (DPS: KRW 170) translates to a yield that is well above the software-sector average, supported by a near-zero-debt balance sheet and operating cash flow that has consistently exceeded net income. However, the structural compression in operating margins from their 2022 peak warrants scrutiny: investors must carefully assess whether the current low multiple reflects genuine undervaluation or a rational adjustment to reduced earnings quality. As a small-cap stock with limited daily liquidity and high intra-year earnings volatility from Q4 concentration, multiple expansion faces structural headwinds regardless of fundamental improvement."
+  "ko": "밸류에이션과 관련해서는 과거 한 증권사 리포트가 2024년 당시 주가수익비율을 시장 평균보다 낮은 수준으로 진단하며, 이는 그해 과학기술 R&D 예산 삭감 등으로 소프트웨어 업종 전반이 시장에서 부각받지 못한 영향으로 풀이했다. 이후 회사의 이익 흐름은 분기별로 뚜렷한 편차를 보이며 계절적 손실 구간과 이익 회복 구간이 반복되고 있어, 밸류에이션 판단의 기준이 되는 이익 자체가 매 분기 크게 달라지는 특징이 있다. 주주환원과 관련해서는 강선근 대표가 그룹 차원의 성장 성과를 기반으로 다양한 주주환원 정책을 확대해가겠다는 방침을 밝힌 바 있다. 순자산가치 대비 주가 수준은 과거 대비 낮아진 구간에 위치한다는 평가도 있었으나, 이는 이익 회복 속도와 신사업 성과 확인에 따라 달라질 수 있는 상대적 지표로 남아 있다. 배당수익률 역시 동종 소프트웨어 업종 평균과 비교해 판단할 필요가 있으며, 절대적인 수준 자체보다는 이익 회복이 배당 정책에 어떻게 반영되는지가 관찰 포인트다.",
+  "en": "On valuation, one brokerage report from 2024 assessed the price-to-earnings ratio at the time as below the market average, attributing this to the broader software sector's lack of market attention amid that year's cuts to government science and technology R&D budgets. Since then, the company's earnings flow has shown pronounced quarter-to-quarter divergence, with seasonal loss periods and profit recovery periods recurring, meaning the earnings base underlying any valuation judgment shifts significantly each quarter. On shareholder returns, CEO Kang Sun-geun has stated a policy of expanding various shareholder return measures based on group-wide growth performance. Some assessments have placed the share price relative to net asset value in a lower range compared to its own history, though this remains a relative metric that can shift depending on the pace of profit recovery and the performance of new businesses. Dividend yield should likewise be considered relative to the software industry average, with the key observation point being how any profit recovery feeds through into dividend policy rather than the absolute level itself."
  },
  "bull": [
   {
    "title": {
-    "ko": "행안부 2026 의무화로 공공 ITSM·GPM 수요 구조적 확대",
-    "en": "MOIS 2026 Mandate as a Structural Demand Catalyst for ITSM and GPM"
+    "ko": "4분기·2분기 이익 회복 조짐",
+    "en": "Signs of Profit Recovery in Q4 and Q2"
    },
    "body": {
-    "ko": "행정안전부가 2026년부터 공공기관 정보시스템 예방점검 및 표준운영절차 준수를 의무화함에 따라, 노후 시스템을 운영하거나 ITSM이 없는 기관들의 교체·신규 구매 수요가 하반기에 집중될 전망이다. 브레인즈컴퍼니의 Zenius ITSM은 행안부 공공 표준 관리 체계를 직접 지원하는 제품으로, 공공 조달 시장에서 점유율 확대 계기를 맞이하고 있다. 공공 수주 이력과 CC·GS 인증 등 정부 조달 자격을 보유하고 있어 신규 사업자 대비 진입 우위를 유지한다.",
-    "en": "The Ministry of the Interior's 2026 mandatory compliance requirement for information system standard operating procedures is expected to concentrate replacement and new-purchase demand in H2 2026, particularly among agencies operating legacy systems or lacking modern ITSM. Zenius ITSM directly supports the public-standard compliance framework, positioning the product well for the resulting procurement wave. The company's established track record and CC/GS certification credentials provide a meaningful first-mover advantage over new market entrants."
+    "ko": "2025년 4분기 영업이익 47.3억원, 지배주주 순이익 50.1억원을 기록하며 연간 이익의 대부분을 창출했고, 2026년 2분기에도 영업이익 4.0억원으로 흑자 전환에 성공했다. 계절적 저점을 지나면 이익이 재차 확대되는 패턴이 반복되고 있어 연간 이익 창출력 자체는 유지되고 있는 것으로 해석된다. 다만 이 패턴이 매 회계연도 동일하게 반복될지는 4분기 예산 집행 규모에 따라 달라질 수 있다.",
+    "en": "Q4 2025 operating profit reached KRW 4.73 billion and owner net income KRW 5.01 billion, generating most of the year's earnings, and Q2 2026 also turned profitable with operating profit of KRW 0.40 billion. The recurring pattern of profit expansion after seasonal troughs suggests underlying annual earnings power has been maintained, though whether this repeats identically each fiscal year depends on the scale of Q4 budget execution."
    }
   },
   {
    "title": {
-    "ko": "강건한 무차입 재무 구조와 안정적 현금 창출력",
-    "en": "Fortress Balance Sheet and Consistent Cash Generation"
+    "ko": "AI·클라우드 자회사와의 결합",
+    "en": "Integration with AI and Cloud Subsidiary"
    },
    "body": {
-    "ko": "부채비율 11.1%의 실질적 무차입 재무 구조에 지배주주 자기자본 536억원, 영업현금흐름 57억 6천만원의 현금 창출 능력을 보유하고 있다. 이는 경기 둔화나 사업 전환기에도 외부 자본 조달 없이 R&D·영업 투자를 지속할 수 있는 안전망이 된다. 설립 이래 연속 흑자를 유지해 온 이익 지속성과 안정적 배당 정책이 재무 안전성을 뒷받침한다.",
-    "en": "The company maintains a near-zero-debt capital structure (debt ratio 11.1%) with KRW 53.6 bn in owner equity and KRW 5.8 bn in annual operating cash flow. This financial strength provides a buffer to sustain R&D and sales investment through economic downturns or business transitions without external financing. Unbroken profitability since inception and a consistent dividend policy further underpin the company's financial credibility."
+    "ko": "자회사 에이프리카의 세렝게티(클라우드 관리)와 치타(LLMOps) 플랫폼이 본업인 제니우스와 기술적으로 결합되며 AI 기반 옵저버빌리티 기능이 강화되고 있다. 제니우스 AI, 제니우스 AI 에이전트 등 신기능은 이미 고객 반응이 긍정적이라는 회사 설명이 나온다. 온프레미스와 클라우드를 모두 아우르는 하이브리드 대응력이 경쟁 차별화 요소로 제시되고 있다.",
+    "en": "Subsidiary Aifrica's Serengeti (cloud management) and Cheetah (LLMOps) platforms are being technically combined with the core Zenius line to strengthen AI-based observability features. The company has stated that new functions such as Zenius AI and Zenius AI Agent have already drawn a positive customer response. Hybrid coverage spanning both on-premise and cloud environments is presented as a point of competitive differentiation."
    }
   },
   {
    "title": {
-    "ko": "AI·클라우드 인프라 모니터링 수요 확대와 신제품 업셀링 기회",
-    "en": "New Product Lines Aligned with Expanding AI and Cloud-Infrastructure Demand"
+    "ko": "안정적인 재무구조",
+    "en": "Stable Financial Structure"
    },
    "body": {
-    "ko": "Zenius AI Agent, Zenius K8s, GPU(MIG) 모니터링 기능 추가로 기존 온프레미스 고객을 클라우드·AI 인프라 환경으로 유도하는 업셀링 기회가 확대되고 있다. AIOps 시장이 급성장하는 가운데, 장기 고객과의 신뢰 관계를 바탕으로 신제품 교차 판매(cross-sell) 가능성이 높다. AWS·Azure 마켓플레이스를 통해 기존 국내 고객 기반을 넘어 해외 클라우드 사용자에게도 접근 가능한 채널을 확보하고 있다.",
-    "en": "The launch of Zenius AI Agent, Zenius K8s, and GPU (MIG) monitoring creates upselling opportunities to migrate the existing on-premises installed base toward cloud and AI infrastructure management. With the AIOps market growing rapidly, the company's long-term customer relationships provide a platform for cross-selling new product lines. AWS and Azure Marketplace listings extend the sales channel beyond Korea to global cloud users, opening a potential source of incremental international revenue."
+    "ko": "부채비율은 2022년 9.5%에서 2025년 11.1%로 낮은 수준을 유지하고 있으며, 자기자본은 2022년 431억원에서 2025년 541억원으로 꾸준히 확대됐다. 영업활동현금흐름도 2022~2025년 매년 순이익 수준 이상으로 유입돼 이익의 현금 전환력이 안정적인 편이다. 이는 계절적 실적 변동에도 재무 완충력을 갖추고 있음을 보여준다.",
+    "en": "The debt ratio has remained low, moving from 9.5% in 2022 to 11.1% in 2025, while shareholders' equity has steadily expanded from KRW 43.1 billion in 2022 to KRW 54.1 billion in 2025. Operating cash flow has also exceeded net income levels every year from 2022 through 2025, indicating stable cash conversion of earnings and a financial buffer against seasonal swings in results."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 성장 정체와 4년 연속 영업이익률 하락",
-    "en": "Revenue Growth Stagnation Paired with Four Consecutive Years of Margin Erosion"
+    "ko": "영업이익률 하락 추세",
+    "en": "Declining Operating Margin Trend"
    },
    "body": {
-    "ko": "매출액이 2023~2025년 약 250~266억원 박스권에서 정체되는 가운데, 영업이익률은 2022년 26.2%에서 2025년 8.4%로 4년 연속 하락했다. 이는 인건비·R&D 투자 등 고정비 부담이 구조적으로 증가하고 있음을 시사한다. 성장 없는 비용 상승이 지속될 경우 중기 수익성 훼손이 심화될 수 있다.",
-    "en": "Revenue has stagnated in the KRW 25–27 bn range across FY2023–FY2025, while the operating margin has compressed consecutively from 26.2% (2022) to 8.4% (2025). This trend implies that fixed costs—primarily personnel and R&D—are rising structurally faster than the top line. If cost growth continues without a revenue re-acceleration, medium-term profitability deterioration could intensify."
+    "ko": "영업이익률은 2022년 26.2%에서 2023년 12.9%, 2024년 13.5%, 2025년 8.4%로 추세적으로 낮아졌다. 같은 기간 매출액은 2022년 182.5억원에서 2024년 265.9억원까지 늘었다가 2025년 250.9억원으로 소폭 감소해 외형 성장도 정체되는 모습을 보였다. 이익률 회복이 확인되지 않으면 이익의 질에 대한 의문이 이어질 수 있다.",
+    "en": "The operating margin has trended down from 26.2% in 2022 to 12.9% in 2023, 13.5% in 2024, and 8.4% in 2025. Over the same period, revenue grew from KRW 18.25 billion in 2022 to KRW 26.59 billion in 2024 before slightly declining to KRW 25.09 billion in 2025, suggesting topline growth has also stalled. Without a confirmed recovery in margins, questions about earnings quality could persist."
    }
   },
   {
    "title": {
-    "ko": "글로벌 대형 벤더의 국내 시장 침투와 오픈소스 생태계 확산",
-    "en": "Risk of Market Share Erosion from Global Platform Vendors and Open-Source Ecosystems"
+    "ko": "뚜렷한 계절성과 분기 변동성",
+    "en": "Pronounced Seasonality and Quarterly Volatility"
    },
    "body": {
-    "ko": "Datadog·Dynatrace·New Relic 등 글로벌 SaaS 플랫폼이 한국 기업 시장에서의 존재감을 키우고 있으며, Grafana·OpenTelemetry 기반의 오픈소스 생태계 확산도 국내 상용 솔루션의 가격 경쟁력을 약화시킬 수 있다. 글로벌 벤더들은 대규모 R&D 역량과 AI 기능 통합 속도에서 소형 국내 업체 대비 우위에 있다. 공공 부문에서는 조달 규정상 제약이 있으나, 민간 기업 고객에서의 점유율 방어가 장기적 과제다.",
-    "en": "Global SaaS platforms such as Datadog, Dynatrace, and New Relic are growing their Korean enterprise presence, while the spread of open-source ecosystems like Grafana and OpenTelemetry could erode the pricing power of domestic commercial solutions. Global vendors hold significant advantages in R&D scale and the pace of AI feature integration relative to small domestic players. While public-sector procurement regulations provide some protection, defending market share in the private-enterprise segment is a persistent long-term challenge."
+    "ko": "2025년 3분기와 2026년 1분기에는 각각 7.6억원, 12.2억원의 영업손실을 기록했고, 이는 B2G 비중이 높아 매출이 4분기에 집중되는 사업 구조에서 비롯된 구조적 특징으로 분석된 바 있다. 이러한 분기 변동성은 연간 실적을 특정 분기(주로 4분기)의 예산 집행 규모에 크게 의존하게 만든다. 4분기 예산 편성이 지연되거나 축소될 경우 연간 실적 전체가 흔들릴 수 있는 구조다.",
+    "en": "Operating losses of KRW 0.76 billion and KRW 1.22 billion were recorded in Q3 2025 and Q1 2026, respectively, a pattern analysts have attributed to the structural characteristic of B2G-heavy revenue being concentrated in the fourth quarter. This quarterly volatility makes annual results heavily dependent on the scale of budget execution in a single quarter, mainly Q4, meaning delays or cuts in year-end budget allocation could shake full-year results."
    }
   },
   {
    "title": {
-    "ko": "극단적 Q4 집중 구조와 연간 실적의 높은 불확실성",
-    "en": "Extreme Q4 Revenue Concentration Drives High Full-Year Earnings Uncertainty"
+    "ko": "경쟁 심화",
+    "en": "Intensifying Competition"
    },
    "body": {
-    "ko": "2025년 기준 연간 매출의 약 47%가 4분기 단독으로 발생하며, Q1~Q3 누계 기준으로도 구조적 영업적자가 반복된다. 이 구조는 연간 공공 예산 집행 시점에 따라 수주가 이연되거나 경쟁에서 패배할 경우 연간 실적이 급격히 악화될 수 있는 집중 리스크를 내포한다. 1~3분기에 지속 발표되는 영업손실은 투자자의 연간 전망 가시성을 낮추고 주가 변동성을 높이는 요인이 된다.",
-    "en": "In FY2025, approximately 47% of annual revenue was booked in Q4 alone, with structural operating losses recurring in the cumulative Q1–Q3 period. This concentration means that any slippage or competitive loss in public-sector budget execution could cause a sharp deterioration in full-year results. Consistently reported Q1–Q3 operating losses reduce investors' full-year visibility and can drive elevated intra-year price volatility."
+    "ko": "국내에서는 엑셈, 제니퍼소프트, 와탭 등이 AIOps 기능을 강화하며 경쟁하고 있고, 글로벌 시장에서는 Datadog, Dynatrace, ServiceNow, New Relic 등 대형 벤더가 상위권을 형성하고 있다. 글로벌 하이퍼스케일러들도 자체 옵저버빌리티·AI옵스 기능을 내재화하는 추세여서 경쟁 압력이 여러 방향에서 커지고 있다. 상대적으로 작은 자본력으로 이 경쟁 구도에서 기술·마케팅 투자 속도를 유지해야 하는 부담이 있다.",
+    "en": "Domestically, Exem, Jennifersoft, and Whatap are competing by strengthening AIOps features, while globally, large vendors such as Datadog, Dynatrace, ServiceNow, and New Relic occupy the top tiers. Global hyperscalers are also increasingly embedding their own observability and AIOps capabilities, adding competitive pressure from multiple directions. With relatively limited capital, the company faces the burden of maintaining the pace of technology and marketing investment needed to compete in this landscape."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "공공 예산 의존도 및 집행 불확실성",
-    "en": "Public-Sector Budget Dependency and Execution Uncertainty"
+    "ko": "공공부문 예산 의존",
+    "en": "Dependence on Public-Sector Budgets"
    },
    "body": {
-    "ko": "전체 매출에서 공공기관이 차지하는 비중이 높아, 정부 IT 예산 편성 변화나 연도말 집행 이연이 직접적인 실적 충격으로 이어질 수 있다. 국가 재정 여건 악화 시 공공 IT 소프트웨어·인프라 예산이 우선 삭감 대상이 될 수 있으며, 특정 대형 사업의 발주 지연이나 수주 실패는 Q4 매출에 불균형한 영향을 미친다. 공공 부문 수주 집중도가 높은 만큼 민간 고객 기반 다변화가 중장기 리스크 완화의 과제다.",
-    "en": "A high concentration of revenue in the public sector means that changes in government IT budget allocations or year-end execution delays could translate directly into earnings shortfalls. In periods of fiscal tightening, public-sector software and infrastructure budgets tend to be among the first areas targeted for cuts. Loss of a single large tender or a project delay can have a disproportionate impact on Q4 revenue, underscoring the importance of diversifying toward private-sector customers over the medium term."
+    "ko": "B2G·대기업 비중이 높은 매출 구조상 매출의 상당 부분이 4분기에 집행되는 특성이 있으며, 과거 2024년에는 과학기술분야 국가 R&D 예산 삭감이 소프트웨어 업종 전반의 시장 부각도 저하에 영향을 준 사례가 있었다. 공공 IT 예산 편성 시기나 규모가 변화하면 실적의 분기별·연도별 편차가 더 커질 수 있다. 이는 회사가 통제하기 어려운 정책 변수에 해당한다.",
+    "en": "Given the heavy B2G and large-enterprise revenue mix, a substantial portion of revenue is executed in the fourth quarter, and in 2024 a cut to national science and technology R&D budgets was cited as a factor that reduced overall market attention toward the software sector. Changes in the timing or scale of public IT budget allocations could widen quarterly and annual result variability, and this represents a policy variable largely outside the company's control."
    }
   },
   {
    "cat": {
-    "ko": "SaaS 전환 기간 중 수익 인식 공백 리스크",
-    "en": "Revenue Recognition Gap Risk During the SaaS Business Model Transition"
+    "ko": "인수 통합 비용",
+    "en": "M&A Integration Costs"
    },
    "body": {
-    "ko": "기존 일시 라이선스 수익 구조에서 구독형(SaaS) 모델로 전환하는 과정에서, 초기에는 계약 단가 분산과 인식 시점 변화로 단기 매출·이익이 일시 감소하는 전환 비용이 발생할 수 있다. 전환 속도와 고객 수용 여부에 따라 전환 기간이 길어질 수 있으며, 이 기간의 불확실성이 존재한다. 공공 부문의 예산 집행 방식과 SaaS 계약 구조의 정합성 여부도 전환 리스크를 가중시킬 수 있다.",
-    "en": "As the company transitions from traditional perpetual license revenue to a subscription (SaaS) model, initial conversion periods typically involve lower annual contract values and spread revenue recognition, creating a short-term revenue and profit gap. The duration and magnitude of this transition depend on conversion velocity and customer acceptance, both of which carry meaningful uncertainty. The interaction between public-sector annual budget cycles and SaaS subscription structures could further complicate near-term demand management and revenue visibility."
+    "ko": "2022년 에이프리카(지분 66.7%) 인수 이후 인건비 증가 등으로 통합 과정에서 실적 부진이 나타났던 사례가 있었다. 고객사 다변화에 따른 시너지 효과는 즉각적이기보다 점진적으로 나타나며, 통합 솔루션 개발에 따른 비용이 추가로 소요될 수 있다는 점이 과거 지적된 바 있다. 향후 추가적인 인수·통합이 있을 경우 유사한 비용 압박이 재현될 가능성이 있다.",
+    "en": "Following the 2022 acquisition of a 66.7% stake in Aifrica, integration-related cost increases, including personnel expenses, were noted as weighing on results in the past. Synergies from customer diversification tend to emerge gradually rather than immediately, and additional costs from integrated solution development have previously been flagged as a factor. Should further acquisitions or integrations occur, similar cost pressures could recur."
    }
   },
   {
    "cat": {
-    "ko": "핵심 기술 인재 확보 경쟁과 인건비 상승 압력",
-    "en": "Talent Retention Risk and Structural Wage Cost Pressure"
+    "ko": "소형주 특성",
+    "en": "Small-Cap Characteristics"
    },
    "body": {
-    "ko": "임직원 약 116명 규모의 소형 소프트웨어 기업으로서, AI·클라우드 분야 핵심 인재 확보 경쟁에서 대형 IT기업·글로벌 벤더 대비 구조적 불리함이 있다. 핵심 개발 인력 이탈 시 Zenius AI·K8s 등 신제품 고도화 로드맵에 차질이 생길 수 있다. 인건비 상승 압력은 이미 영업이익률 하락의 주요 원인 중 하나로 작용하고 있어, 인재 투자와 수익성 사이의 균형이 중장기 경영 과제다.",
-    "en": "As a small software company with approximately 116 employees, Brainzcompany faces structural disadvantages in competing for AI and cloud engineering talent against larger domestic IT firms and global vendors. Departure of key development personnel could delay the product enhancement roadmap for Zenius AI and Zenius K8s. Rising wage costs are already a contributing factor to margin compression, making the balance between talent investment and profitability a critical medium-term management challenge."
+    "ko": "상장주식 수와 유동주식 규모가 크지 않은 소형주로, 거래량이 적은 시기에는 주가 변동성이 커질 수 있는 구조적 특징이 있다. 소형 IT 소프트웨어주 특유의 테마성 수급 영향을 받는 경우도 관찰되며, 이는 펀더멘털과 무관하게 단기 가격 움직임을 키울 수 있다. 이러한 특성은 실적 자체와는 별개로 투자 판단 시 고려할 요소다.",
+    "en": "As a small-cap stock with a relatively limited number of listed and freely traded shares, the company has a structural tendency toward higher price volatility during periods of thin trading volume. It has also been observed to be affected by thematic supply-and-demand flows typical of small-cap IT software stocks, which can amplify short-term price movements independent of fundamentals. This characteristic is a factor to consider separately from underlying business performance."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 (2026년 2분기 실적 발표)",
-    "en": "August 2026 (Q2 FY2026 Earnings Release)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "계절적 저점인 2분기 매출·영업손익이 전년 동기(매출 53.7억, 영업이익 0.7억) 대비 개선 여부를 확인. 하반기 공공 수주 파이프라인에 대한 초기 신호 제공.",
-    "en": "Compare Q2 revenue and operating profit against the year-ago period (Q2 FY2025: KRW 5.4 bn revenue, KRW 0.07 bn operating profit) to assess the improving trend; also provides early signals on the H2 public-sector order pipeline."
+    "ko": "2026년 3분기보고서 공시 예정. 2025년 3분기(영업손실 7.6억원)와 유사한 계절적 부진이 반복되는지, 매출 규모가 유지되는지 확인이 필요하다.",
+    "en": "The Q3 2026 quarterly report is due. It will be important to check whether seasonal weakness similar to Q3 2025 (operating loss of KRW 0.76 billion) recurs and whether revenue scale is maintained."
    }
   },
   {
    "when": {
-    "ko": "2026년 9~11월 (공공기관 연말 예산 집행 시즌)",
-    "en": "September–November 2026 (Public-Sector Year-End Budget Execution Season)"
+    "ko": "2026년 12월~2027년 1월",
+    "en": "December 2026 - January 2027"
    },
    "what": {
-    "ko": "행안부 ITSM 의무화 시행 이후 공공기관 신규·교체 수주 동향 확인. 수주 규모가 전년 4분기(매출 118억) 수준을 상회할 경우 연간 실적 개선의 근거가 된다.",
-    "en": "Monitor new and replacement order flow from public agencies following the Ministry of the Interior ITSM mandate. If Q4 order volume exceeds the FY2025 Q4 level (KRW 11.8 bn), it would signal meaningful top-line improvement."
+    "ko": "4분기 공공·대기업 예산 집행 동향 점검. 2025년 4분기(매출 118.2억원, 영업이익 47.3억원) 수준의 계절적 매출·이익 집중이 재현되는지가 연간 실적의 핵심 변수다.",
+    "en": "Monitor the pace of Q4 public-sector and large-enterprise budget execution. Whether the seasonal revenue and profit concentration seen in Q4 2025 (revenue of KRW 11.82 billion, operating profit of KRW 4.73 billion) recurs will be a key variable for full-year results."
    }
   },
   {
    "when": {
-    "ko": "2026년 내 (Azure 마켓플레이스 입점 및 해외 매출 기여 확인)",
-    "en": "Within 2026 (Azure Marketplace Listing Completion and Initial Overseas Revenue)"
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "Azure 마켓플레이스 입점 완료 여부와 AWS·Azure를 통한 해외 매출 첫 기여 규모를 확인. 해외 수익화가 현실화될 경우 국내 의존도 분산과 새로운 성장 스토리의 근거가 될 수 있다.",
-    "en": "Confirm completion of Azure Marketplace listing and the initial scale of overseas revenue contributions via AWS and Azure. Meaningful overseas monetisation would reduce domestic revenue concentration and could provide a basis for a new growth narrative."
+    "ko": "2026년 사업연도 사업보고서 및 결산배당 공시 예정. 연간 영업이익률의 회복 여부와 2025년(주당 배당금 170원) 대비 배당 정책의 유지·변경 여부를 확인할 시점이다.",
+    "en": "The annual business report and year-end dividend disclosure for fiscal year 2026 are expected. This will be the point to check whether the annual operating margin has recovered and whether dividend policy is maintained or changed relative to 2025 (dividend per share of KRW 170)."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 (2026년 3분기 실적 발표)",
-    "en": "November 2026 (Q3 FY2026 Earnings Release)"
+    "ko": "다음 정기 IR·분기보고서 시점",
+    "en": "At the next regular IR session or quarterly report"
    },
    "what": {
-    "ko": "1~3분기 누적 영업손익이 전년 동기 대비 개선 여부를 확인하면 4분기 집행 전 연간 전망 가시성이 높아진다. 특히 2026Q1 개선 추세가 Q2·Q3에도 이어지는지 확인이 필요하다.",
-    "en": "Year-on-year improvement in the cumulative Q1–Q3 operating result would enhance full-year earnings visibility ahead of Q4 execution; key is confirming whether the improvement trend seen in Q1 FY2026 carries through Q2 and Q3."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월 (2026년 연간 실적 확정 및 배당 결의)",
-    "en": "March 2027 (FY2026 Annual Results and Dividend Resolution)"
-   },
-   "what": {
-    "ko": "2026년 연간 매출 성장 재개 여부와 영업이익률 회복 수준을 점검하고, DPS 170원 유지 또는 확대 여부를 확인. 영업이익률이 10% 이상으로 회복되면 수익성 개선 사이클 진입의 신호로 해석될 수 있다.",
-    "en": "Assess whether FY2026 returns to revenue growth and whether the operating margin recovers above 10%; also verify whether the DPS of KRW 170 is maintained or increased. A margin recovery above 10% would signal re-entry into an earnings improvement cycle."
+    "ko": "자회사 에이프리카의 클라우드·AI 매출 기여 규모와 성장 속도가 별도로 확인되는지, 제니우스 AI·AI 에이전트 등 신기능의 신규 계약 반영 여부를 살펴볼 필요가 있다.",
+    "en": "It will be worth checking whether Aifrica's cloud and AI revenue contribution and growth pace are separately disclosed, and whether new functions such as Zenius AI and the AI agent are reflected in new contract wins."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "브레인즈컴퍼니는 25년 이상의 누적 납품 이력과 1,500여 공공·기업 고객을 보유한 국내 IT 인프라 통합관리 소프트웨어 분야의 선도 기업으로, 부채비율 11.1%·지배주주 자기자본 536억원·영업현금흐름 57억원 이상의 강건한 재무 체력이 사업 전환기에도 안정성을 제공한다. 2026년 행안부 ITSM 의무화는 공공 부문 신규 수요를 자극할 가장 직접적인 구조적 이벤트이며, Zenius AI Agent·K8s·GPU 모니터링 등 신제품이 AI 인프라 관리 수요와 맞닿아 있다는 점도 중기 방향성을 지지한다. 반면 매출 성장 정체와 4년 연속 영업이익률 하락, Datadog·Dynatrace 등 글로벌 경쟁 심화, 그리고 매출의 약 47%가 Q4에 집중되는 극단적 계절성은 연간 실적 예측 불확실성을 높이는 약세 요인이다. 2026년 1분기 영업적자 폭이 전년 대비 축소된 점은 소폭의 개선 신호이나, 연간 수익성 회복 여부는 하반기 공공 수주 집행 결과에 달려 있다. 결론적으로, 강건한 재무 기반과 공공 DX 정책 수혜 가능성이 뚜렷한 강점이나, 수익성 회복과 매출 재성장이 실제 수치로 확인되어야 시장 재평가의 조건이 갖춰진다고 판단된다.",
-   "en": "Brainzcompany is Korea's leading IT infrastructure integrated management software company with over 25 years of delivery history and an installed base of approximately 1,500 public agencies and enterprises; its near-zero-debt balance sheet (debt ratio 11.1%), KRW 53.6 bn in owner equity, and operating cash flow consistently exceeding KRW 5 bn annually provide a robust financial foundation even through business transitions. The Ministry of the Interior's 2026 ITSM mandate is the most direct structural demand catalyst for the public sector, and the alignment of new products—Zenius AI Agent, K8s, and GPU monitoring—with AI-infrastructure management trends supports a positive medium-term strategic direction. Conversely, revenue growth has stalled, operating margins have contracted for four consecutive years, global competition from Datadog and Dynatrace is intensifying, and the extreme Q4 revenue concentration (~47% in FY2025) creates significant full-year earnings uncertainty. The narrowing of the Q1 FY2026 operating loss compared to the prior year is an incremental positive signal, but full confirmation of profitability recovery depends on H2 public-sector order execution. In summary, the company's financial resilience and public-sector DX tailwinds are clear strengths, but a return to revenue growth and a meaningful improvement in operating margins must be confirmed in the numbers before a structural rerating is warranted."
+   "ko": "브레인즈컴퍼니는 2022~2025년 영업이익률이 26.2%에서 8.4%로 낮아지는 추세를 보였으나, 2025년 4분기와 2026년 2분기에 이익이 재차 확대되는 흐름을 보이며 계절적 회복 패턴을 재확인했다. 사업 구조상 B2G·대기업 비중이 높아 매출과 이익이 4분기에 집중되는 특성이 뚜렷하며, 2025년 3분기와 2026년 1분기의 영업손실도 이러한 계절성의 연장선으로 해석된다. 자회사 에이프리카를 통한 AI·클라우드 네이티브 플랫폼 사업이 본업과 결합되며 AIOps·옵저버빌리티 경쟁력을 강화하는 흐름이 확인되지만, 국내외 경쟁 심화와 공공부문 예산 변수는 지속적으로 관리해야 할 요소다. 재무구조는 부채비율이 10%대 초반으로 낮고 영업활동현금흐름도 매년 순이익 이상으로 유입돼 안정적인 편이다. 밸류에이션 판단은 계절적으로 편차가 큰 이익 흐름과 신사업의 성과 확인 속도에 따라 달라질 수 있는 상대적인 문제로 남아 있다. 향후 3분기·4분기 실적과 2026년 결산 공시를 통해 이익률 회복의 지속성과 에이프리카의 성장 기여도를 확인하는 것이 핵심 관전 포인트다.",
+   "en": "Brainzcompany's operating margin trended down from 26.2% in 2022 to 8.4% in 2025, but profit expanded again in Q4 2025 and Q2 2026, reconfirming a seasonal recovery pattern. Given its heavy B2G and large-enterprise revenue mix, revenue and profit are notably concentrated in the fourth quarter, and the operating losses in Q3 2025 and Q1 2026 can be understood as an extension of this seasonality. The combination of the core business with subsidiary Aifrica's AI and cloud-native platform business is strengthening AIOps and observability competitiveness, though intensifying domestic and global competition and public-sector budget variables remain ongoing factors to manage. The financial structure is relatively stable, with a debt ratio in the low double digits and operating cash flow exceeding net income every year. Valuation judgments remain a relative matter that can shift depending on the seasonally volatile earnings flow and the pace at which new business performance is confirmed. Tracking the durability of margin recovery and Aifrica's growth contribution through the upcoming Q3 and Q4 results and the fiscal 2026 year-end disclosure will be the key points to watch."
   }
  },
  "sources": [
-  "https://thevc.kr/brainzcompany",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A099390",
-  "https://m.irgo.co.kr/IR-COMP/099390/",
   "https://valueline.co.kr/finance/balancesheet/099390",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A099390",
-  "https://www.butler.works/ko/companies/00642897",
-  "https://itooza.com/vscore/099390",
-  "https://m.thinkpool.com/item/099390",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A099390&cID=&MenuYn=Y&ReportGB=&NewMenuID=11&stkGb=701",
-  "https://www.brainz.co.kr/articles/view/id/380",
-  "https://www.brainz.co.kr/",
+  "https://kr.investing.com/equities/brainzcompany-co",
+  "https://thevc.kr/brainzcompany",
   "https://www.saramin.co.kr/zf_user/company-info/view/csn/NVptS2dmbHdHSEVyZVNjVlorTWk1dz09/company_nm/%EB%B8%8C%EB%A0%88%EC%9D%B8%EC%A6%88%EC%BB%B4%ED%8D%BC%EB%8B%88(%EC%A3%BC)",
-  "https://www.brainz.co.kr/articles/view/page/2/id/49",
-  "https://www.brainz.co.kr/company-story/view/page/2/id/208",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=37660",
-  "https://m.finance.daum.net/quotes/A099390/news/stock/20250313100300337",
-  "https://www.seoulwire.com/news/articleView.html?idxno=449547",
-  "https://www.etnews.com/20250811000181"
+  "https://www.jobplanet.co.kr/companies/31364/reviews",
+  "https://www.catch.co.kr/Comp/CompInfo/162847",
+  "https://dart.fss.or.kr/navi/searchNavi.do?naviCrpCik=00642897&naviCrpNm=%EB%B8%8C%EB%A0%88%EC%9D%B8%EC%A6%88%EC%BB%B4%ED%8D%BC%EB%8B%88&naviCode=A002",
+  "https://news.nate.com/view/20211202n06432?mid=n0304",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430877",
+  "https://www.thedailypost.kr/news/articleView.html?idxno=114381",
+  "https://www.cncf.co.kr/blog/ai-observability-platform/",
+  "https://www.techlibrary.co.kr/techlibrary/tag/86145/AIOps",
+  "https://www.sedaily.com/article/20069871",
+  "https://straitsresearch.com/report/artificial-intelligence-for-it-operations-platform-market",
+  "https://www.peerspot.com/categories/aiops",
+  "https://www.globalgrowthinsights.com/market-reports/aiops-platform-market-123637",
+  "https://sciencelogic.com/product/resources/idc-marketscape-aiops"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "099390",
  "name": "브레인즈컴퍼니",
  "name_en": "Brainzcompany Co., Ltd.",
@@ -233,9 +223,9 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 05:28",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:06",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 3750,
-   "mcap": 0.0308,
+   "price": 3890,
+   "mcap": 0.0319,
    "shares": 8208283,
    "total_shares": 8208283,
    "wavg_shares": 7609432,
-   "per": 4.199,
+   "per": 4.356,
    "eps": 893,
-   "pbr": 0.5274,
+   "pbr": 0.547,
    "bps": 7111,
    "roe_ttm": 13.2,
    "ttm_window": "2025Q3~2026Q2",
@@ -356,7 +346,7 @@
    "bps_krx": 7049.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 170.0,
-   "div": 4.53
+   "div": 4.37
   }
  }
 }
