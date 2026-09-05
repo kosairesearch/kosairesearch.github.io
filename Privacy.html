@@ -393,7 +393,7 @@ KOSi18n.register({
   <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png?v=k2">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png?v=k2">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=k2">
-  <script src="analytics.js?v=71f5ad0a"></script>
+  <script src="analytics.js?v=372b3004"></script>
 <script>
 /* i18n: title·aria-label 속성 번역(영어 모드). 동적(data-i18n-skip) 영역은 각 페이지 템플릿의 T()가 담당 */
 (function(){
@@ -458,9 +458,11 @@ KOSi18n.register({
     </div>
 
     <div class="legal card glass">
-      <p class="upd">시행일 2026년 6월 6일 · 최종 개정일 2026년 6월 12일</p>
+      <p class="upd">공고일 2026년 9월 6일 · 시행일 2026년 9월 13일 · 최초 시행일 2026년 6월 6일</p>
 
       <p>KOSAI(이하 "서비스")는 「개인정보 보호법」 제30조에 따라 정보주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 다음과 같이 개인정보 처리방침을 수립·공개합니다. 본 방침은 개인정보보호위원회 「개인정보 처리방침 작성지침」의 구성에 따릅니다.</p>
+
+      <p>이번 개정은 개인정보의 국외 이전에 관한 사항을 구체화하고, 보유 기간·안전성 확보 조치·정보주체의 권리 행사 절차를 관계 법령에 맞추어 명확히 하는 내용입니다. 이용자에게 불리한 변경 사항은 포함되어 있지 않습니다.</p>
 
       <h2>1. 개인정보의 처리 목적</h2>
       <p>서비스는 다음의 목적을 위하여 개인정보를 처리하며, 처리한 개인정보는 해당 목적 이외의 용도로는 이용하지 않습니다. 이용 목적이 변경되는 경우에는 「개인정보 보호법」 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행합니다.</p>
@@ -485,7 +487,14 @@ KOSi18n.register({
       <p>서비스는 만 14세 미만 아동을 대상으로 하지 않으며, 만 14세 미만 아동의 개인정보를 수집하지 않습니다. 회원가입 시 만 14세 이상인지를 확인하며, 만 14세 미만 아동이 가입한 사실을 알게 된 경우 해당 계정과 수집된 개인정보를 지체 없이 파기합니다.</p>
 
       <h2>4. 개인정보의 처리 및 보유 기간</h2>
-      <p>회원의 개인정보는 회원 탈퇴 시까지 보유하며, 탈퇴 또는 삭제 요청 시 지체 없이 파기합니다. 문의 응대를 위해 수집된 정보는 응대 완료 후 지체 없이 파기합니다. 다만 관계 법령에 따라 보존이 필요한 경우 해당 기간 동안 보관합니다(예: 통신비밀보호법에 따른 접속기록 3개월).</p>
+      <p>회원의 개인정보는 회원 탈퇴 시까지 보유하며, 탈퇴 또는 삭제 요청 시 지체 없이 파기합니다. 항목별 보유 기간은 다음과 같습니다.</p>
+      <ul>
+        <li>회원 계정 정보(이메일·이름·관심 종목): 회원 탈퇴 시까지</li>
+        <li>문의·피드백 내용: 응대 완료 후 지체 없이 파기</li>
+        <li>접속기록 등 서비스 이용 기록: 「개인정보의 안전성 확보조치 기준」에 따라 1년간 보관한 후 파기</li>
+        <li>광고성 정보 수신 동의 및 철회 기록: 회원 탈퇴 시까지</li>
+      </ul>
+      <p>관계 법령에 보존 의무가 있는 경우에는 해당 법령이 정한 기간 동안 보관한 후 파기합니다.</p>
 
       <h2>5. 개인정보의 제3자 제공</h2>
       <p>서비스는 이용자의 개인정보를 외부에 제공하지 않습니다. 다만 법령에 근거가 있거나 수사기관의 적법한 요청이 있는 경우 등 「개인정보 보호법」 제17조·제18조에 해당하는 경우에는 예외로 합니다.</p>
@@ -496,14 +505,20 @@ KOSi18n.register({
         <li>Google LLC — 회원 인증(Firebase Authentication) 및 회원 데이터 보관·처리(Firestore, Cloud Functions) / 보유 기간: 회원 탈퇴 또는 위탁 계약 종료 시까지</li>
         <li>Resend, Inc. — 이메일 인증·비밀번호 재설정 등 서비스 관련 이메일 발송 / 보유 기간: 발송 목적 달성 또는 위탁 계약 종료 시까지</li>
         <li>Zoho Corporation — 문의·피드백 접수 이메일의 수신·보관 / 보유 기간: 문의 처리 완료 후 지체 없이 파기</li>
-        <li>Google LLC / 네이버(주) — 서비스 이용 통계 분석(Google 애널리틱스·네이버 애널리틱스), 비식별 통계 정보 / 보유 기간: 분석 서비스 정책에 따름</li>
+        <li>Google LLC / 네이버(주) — 서비스 이용 통계 분석(Google 애널리틱스·네이버 애널리틱스) / 보유 기간: 각 분석 서비스의 정책에 따름</li>
       </ul>
       <p>소셜 로그인 제공자(구글·카카오·네이버)는 수탁자가 아니며, 이용자의 동의에 따라 서비스가 해당 제공자로부터 회원 정보를 제공받는 관계입니다.</p>
 
       <h2>7. 개인정보의 국외 이전</h2>
       <p>회원 인증 및 데이터 저장 과정에서 이용자의 계정 정보와 관심 종목 정보가 국외에 위치한 서버에 저장·처리될 수 있습니다.</p>
       <ul>
-        <li>이전받는 자: Google LLC(미국 등), Resend, Inc.(미국), Zoho Corporation(미국·인도 등 데이터센터 소재 국가)</li>
+        <li>이전받는 자 및 이전되는 국가
+          <ul>
+            <li>Google LLC — 미국 / 연락처: 개인정보처리방침(policies.google.com/privacy)에 게시된 문의 창구</li>
+            <li>Resend, Inc. — 미국 / 연락처: support@resend.com</li>
+            <li>Zoho Corporation — 미국·인도 / 연락처: 개인정보처리방침(zoho.com/privacy.html)에 게시된 문의 창구</li>
+          </ul>
+        </li>
         <li>이전 항목: 계정 식별 정보(이메일·이름 등), 관심 종목 정보, 이메일 발송·수신에 필요한 정보</li>
         <li>이전 일시 및 방법: 회원가입·서비스 이용·문의 접수 시 정보통신망을 통한 전송</li>
         <li>이용 목적 및 보유 기간: 회원 관리·서비스 제공·이메일 발송 및 문의 응대, 각 위탁 항목의 보유 기간과 동일</li>
@@ -511,24 +526,34 @@ KOSi18n.register({
       </ul>
 
       <h2>8. 개인정보의 안전성 확보 조치</h2>
-      <p>서비스는 개인정보를 최소한으로 수집하는 것을 원칙으로 하며, 다음과 같은 조치를 취합니다.</p>
+      <p>서비스는 개인정보를 최소한으로 수집하는 것을 원칙으로 하며, 「개인정보 보호법」 제29조 및 「개인정보의 안전성 확보조치 기준」에 따라 다음과 같은 조치를 시행하고 있습니다.</p>
       <ul>
-        <li>관리적 조치: 개인정보 취급 최소화 및 접근 권한 관리</li>
-        <li>기술적 조치: 인증 정보의 암호화, 접근 통제, 보안 기능을 갖춘 신뢰할 수 있는 인프라(Firebase) 이용</li>
-        <li>이용자 정보가 분실·도난·유출·변조·훼손되지 않도록 합리적인 보호 조치</li>
+        <li>관리적 조치: 개인정보를 취급하는 인원을 최소한으로 두고, 접근 권한을 업무 수행에 필요한 범위로 제한하며 그 부여·변경 내역을 관리합니다.</li>
+        <li>기술적 조치: 비밀번호는 인증 서비스(Firebase Authentication)를 통하여 일방향 암호화되어 저장되며, 운영자는 원문을 확인할 수 없습니다. 이용자와 서비스 사이의 모든 통신은 암호화(HTTPS)하여 전송합니다.</li>
+        <li>접속기록의 보관 및 점검: 개인정보처리시스템에 대한 접속기록을 1년 이상 보관하고, 개인정보의 오·남용 및 분실·도난·유출·위조·변조·훼손 여부를 월 1회 이상 점검합니다.</li>
+        <li>물리적 조치: 개인정보는 접근 통제와 보안 기능을 갖춘 클라우드 기반 인프라(Google Firebase)에서 처리하며, 서비스는 별도의 물리적 서버를 운영하지 않습니다.</li>
+        <li>유출 시의 조치: 개인정보가 유출된 사실을 알게 된 때에는 72시간 이내에 그 사실을 정보주체에게 알리고, 1천 명 이상의 정보주체에 관한 개인정보가 유출된 경우에는 같은 기간 내에 개인정보보호위원회 또는 한국인터넷진흥원에 신고합니다.</li>
       </ul>
 
       <h2>9. 쿠키 등 자동 수집 장치의 운영</h2>
-      <p>서비스는 서비스 개선과 이용 통계 분석을 위해 Google 애널리틱스(GA4)·네이버 애널리틱스 등 분석 도구를 사용할 수 있습니다. 이 과정에서 쿠키 또는 유사 기술로 방문 경로, 페이지 이용 기록, 기기·브라우저 정보 등 개인을 식별하지 않는 통계 정보가 수집되며, IP 주소는 익명화하여 처리합니다. 광고를 목적으로 한 행태정보 수집은 하지 않습니다. 이용자는 브라우저 설정에서 쿠키 저장을 거부하거나 Google 애널리틱스 차단 부가기능 등을 통해 수집을 거부할 수 있습니다. 로그인 상태 유지와 화면 테마·언어 설정은 이용자 브라우저의 로컬 저장소에 기기 내에서만 저장되며, 이용자는 브라우저 설정에서 언제든지 삭제할 수 있습니다. 다만 삭제 시 로그인 등 일부 기능 이용에 제한이 있을 수 있습니다.</p>
+      <p>서비스는 서비스 개선과 이용 통계 분석을 위하여 Google 애널리틱스(GA4)와 네이버 애널리틱스를 사용합니다. 이 과정에서 쿠키 또는 이와 유사한 기술을 통하여 방문 경로, 페이지 이용 기록, 기기·브라우저 정보가 수집됩니다.</p>
+      <p>Google 애널리틱스는 수집 시점의 IP 주소를 대략적인 위치를 추정하는 데에만 사용하며 이를 기록하거나 저장하지 않습니다. 네이버 애널리틱스가 수집·처리하는 항목과 그 처리 방법은 네이버(주)의 개인정보처리방침에 따릅니다.</p>
+      <p>서비스는 광고를 목적으로 한 행태정보를 수집하지 않습니다. 이를 위하여 Google 애널리틱스의 광고 개인화 기능과 Google 신호 데이터 수집 기능을 사용하지 않도록 설정하고 있습니다.</p>
+      <p>이용자는 브라우저 설정에서 쿠키 저장을 거부하거나 Google 애널리틱스 차단 부가기능 등을 통하여 수집을 거부할 수 있습니다. 로그인 상태 유지와 화면 테마·언어 설정은 이용자 브라우저의 로컬 저장소에 기기 내에서만 저장되며 서버로 전송되지 않습니다. 이용자는 브라우저 설정에서 언제든지 이를 삭제할 수 있으나, 삭제 시 로그인 등 일부 기능의 이용이 제한될 수 있습니다.</p>
 
       <h2>10. 자동화된 결정에 관한 사항</h2>
       <p>서비스가 제공하는 AI 분석·리포트는 공개된 시장·공시 데이터를 기반으로 자동 생성되는 일반 정보이며, 특정 이용자의 개인정보를 활용하여 이용자에게 법적·재산적으로 중대한 영향을 미치는 자동화된 결정을 수행하지 않습니다.</p>
 
       <h2>11. 정보주체의 권리·의무 및 행사 방법</h2>
-      <p>이용자는 언제든지 자신의 개인정보에 대한 열람·정정·삭제·처리정지를 요구할 수 있으며, 로그인한 이용자는 계정 삭제(회원 탈퇴)를 요청할 수 있습니다. 권리 행사는 아래 개인정보 보호책임자에게 서면·전자우편 등으로 요청할 수 있고, 서비스는 관계 법령에 따라 지체 없이 조치합니다.</p>
+      <p>이용자는 언제든지 자신의 개인정보에 대한 열람·정정·삭제·처리정지 및 동의 철회를 요구할 수 있으며, 로그인한 이용자는 설정 화면에서 계정 삭제(회원 탈퇴)를 직접 요청할 수 있습니다. 권리 행사는 아래 개인정보 보호책임자에게 서면 또는 전자우편으로 요청할 수 있습니다.</p>
+      <p>이용자는 「개인정보 보호법」 제38조에 따라 법정대리인이나 위임을 받은 자를 통하여 위 권리를 행사할 수 있습니다. 이 경우 서비스는 위임 사실을 확인할 수 있는 위임장을 요청할 수 있습니다.</p>
+      <p>서비스는 열람 요구를 받은 날부터 10일 이내에 필요한 조치를 이행합니다. 다만 법률에 따라 열람이 금지되거나 제한되는 경우 등 같은 법 제35조 제4항에 해당하는 사유로 열람을 제한하거나 거절하는 때에는 그 사유와 이의제기 방법을 함께 통지합니다.</p>
+      <p>정정·삭제 요구에 대하여는 지체 없이 필요한 조치를 이행한 후 그 결과를 통지하며, 처리정지 요구에 대하여도 같습니다. 권리 행사의 방법과 절차는 개인정보를 수집하는 방법과 절차보다 어렵지 아니하도록 운영합니다.</p>
 
       <h2>12. 개인정보의 파기</h2>
-      <p>보유 기간이 경과하거나 처리 목적이 달성된 개인정보는 지체 없이 파기합니다. 전자적 파일 형태의 정보는 복구·재생이 불가능한 방법으로 영구 삭제합니다.</p>
+      <p>서비스는 보유 기간이 경과하거나 처리 목적이 달성되는 등 개인정보가 불필요하게 되었을 때에는 지체 없이 해당 개인정보를 파기합니다.</p>
+      <p>파기 절차: 파기 사유가 발생한 개인정보를 선정하고, 개인정보 보호책임자의 확인을 거쳐 파기합니다.</p>
+      <p>파기 방법: 전자적 파일 형태로 저장된 개인정보는 복구 및 재생이 불가능한 방법으로 영구 삭제하며, 종이 문서에 기록된 개인정보는 분쇄하거나 소각합니다.</p>
 
       <h2>13. 개인정보 보호책임자</h2>
       <p>개인정보 처리에 관한 문의·불만·피해 구제는 아래로 접수할 수 있으며, 서비스는 신속하고 충분한 답변을 드리기 위해 노력합니다.</p>
@@ -604,7 +629,36 @@ applyTheme(saved);
 themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 
 if(window.KOSi18n) KOSi18n.register({
-  "시행일 2026년 6월 6일 · 최종 개정일 2026년 6월 12일":"Effective June 6, 2026 · Last amended June 12, 2026",
+  "이번 개정은 개인정보의 국외 이전에 관한 사항을 구체화하고, 보유 기간·안전성 확보 조치·정보주체의 권리 행사 절차를 관계 법령에 맞추어 명확히 하는 내용입니다. 이용자에게 불리한 변경 사항은 포함되어 있지 않습니다.":"This amendment specifies the arrangements for cross-border transfers and clarifies retention periods, safety measures and the procedures for exercising data subject rights in line with applicable law. It contains no change unfavourable to users.",
+  "회원의 개인정보는 회원 탈퇴 시까지 보유하며, 탈퇴 또는 삭제 요청 시 지체 없이 파기합니다. 항목별 보유 기간은 다음과 같습니다.":"Members' personal information is retained until the member withdraws, and is destroyed without delay upon withdrawal or a deletion request. Retention periods by item are as follows.",
+  "회원 계정 정보(이메일·이름·관심 종목): 회원 탈퇴 시까지":"Account information (email, name, watchlist): until the member withdraws",
+  "문의·피드백 내용: 응대 완료 후 지체 없이 파기":"Enquiry and feedback content: destroyed without delay once the enquiry is answered",
+  "접속기록 등 서비스 이용 기록: 「개인정보의 안전성 확보조치 기준」에 따라 1년간 보관한 후 파기":"Access logs and service usage records: retained for one year under the Standards for Ensuring the Safety of Personal Information, then destroyed",
+  "광고성 정보 수신 동의 및 철회 기록: 회원 탈퇴 시까지":"Records of consent to and withdrawal from marketing messages: until the member withdraws",
+  "관계 법령에 보존 의무가 있는 경우에는 해당 법령이 정한 기간 동안 보관한 후 파기합니다.":"Where a statute requires retention, the information is kept for the period that statute prescribes and then destroyed.",
+  "Google LLC / 네이버(주) — 서비스 이용 통계 분석(Google 애널리틱스·네이버 애널리틱스) / 보유 기간: 각 분석 서비스의 정책에 따름":"Google LLC / NAVER Corp. — usage statistics analysis (Google Analytics, Naver Analytics) / Retention: per each analytics provider's policy",
+  "이전받는 자 및 이전되는 국가":"Recipients and countries of transfer",
+  "Google LLC — 미국 / 연락처: 개인정보처리방침(policies.google.com/privacy)에 게시된 문의 창구":"Google LLC — United States / Contact: the enquiry channel published in its privacy policy (policies.google.com/privacy)",
+  "Resend, Inc. — 미국 / 연락처: support@resend.com":"Resend, Inc. — United States / Contact: support@resend.com",
+  "Zoho Corporation — 미국·인도 / 연락처: 개인정보처리방침(zoho.com/privacy.html)에 게시된 문의 창구":"Zoho Corporation — United States and India / Contact: the enquiry channel published in its privacy policy (zoho.com/privacy.html)",
+  "서비스는 개인정보를 최소한으로 수집하는 것을 원칙으로 하며, 「개인정보 보호법」 제29조 및 「개인정보의 안전성 확보조치 기준」에 따라 다음과 같은 조치를 시행하고 있습니다.":"The Service collects the minimum personal information necessary and implements the following measures under Article 29 of the Personal Information Protection Act and the Standards for Ensuring the Safety of Personal Information.",
+  "관리적 조치: 개인정보를 취급하는 인원을 최소한으로 두고, 접근 권한을 업무 수행에 필요한 범위로 제한하며 그 부여·변경 내역을 관리합니다.":"Administrative measures: the number of personnel handling personal information is kept to a minimum, access rights are limited to what each role requires, and the grant and modification of those rights are recorded.",
+  "기술적 조치: 비밀번호는 인증 서비스(Firebase Authentication)를 통하여 일방향 암호화되어 저장되며, 운영자는 원문을 확인할 수 없습니다. 이용자와 서비스 사이의 모든 통신은 암호화(HTTPS)하여 전송합니다.":"Technical measures: passwords are stored one-way encrypted through the authentication service (Firebase Authentication) and the operator cannot view them in plain text. All communication between users and the Service is transmitted over encrypted channels (HTTPS).",
+  "접속기록의 보관 및 점검: 개인정보처리시스템에 대한 접속기록을 1년 이상 보관하고, 개인정보의 오·남용 및 분실·도난·유출·위조·변조·훼손 여부를 월 1회 이상 점검합니다.":"Access-log retention and review: access logs for the personal information processing system are retained for at least one year and reviewed at least monthly for misuse, loss, theft, leakage, forgery, alteration or damage.",
+  "물리적 조치: 개인정보는 접근 통제와 보안 기능을 갖춘 클라우드 기반 인프라(Google Firebase)에서 처리하며, 서비스는 별도의 물리적 서버를 운영하지 않습니다.":"Physical measures: personal information is processed on cloud infrastructure with access controls and security features (Google Firebase); the Service operates no separate physical servers.",
+  "유출 시의 조치: 개인정보가 유출된 사실을 알게 된 때에는 72시간 이내에 그 사실을 정보주체에게 알리고, 1천 명 이상의 정보주체에 관한 개인정보가 유출된 경우에는 같은 기간 내에 개인정보보호위원회 또는 한국인터넷진흥원에 신고합니다.":"In the event of a breach: upon becoming aware of a leak, the Service notifies affected data subjects within 72 hours and, where the personal information of 1,000 or more data subjects is involved, reports it within the same period to the Personal Information Protection Commission or the Korea Internet & Security Agency.",
+  "서비스는 서비스 개선과 이용 통계 분석을 위하여 Google 애널리틱스(GA4)와 네이버 애널리틱스를 사용합니다. 이 과정에서 쿠키 또는 이와 유사한 기술을 통하여 방문 경로, 페이지 이용 기록, 기기·브라우저 정보가 수집됩니다.":"The Service uses Google Analytics (GA4) and Naver Analytics to improve the Service and analyse usage statistics. In this process, referral paths, page usage records and device and browser information are collected through cookies or similar technologies.",
+  "Google 애널리틱스는 수집 시점의 IP 주소를 대략적인 위치를 추정하는 데에만 사용하며 이를 기록하거나 저장하지 않습니다. 네이버 애널리틱스가 수집·처리하는 항목과 그 처리 방법은 네이버(주)의 개인정보처리방침에 따릅니다.":"Google Analytics uses the IP address only at the moment of collection to estimate approximate location, and neither logs nor stores it. The items collected by Naver Analytics and how they are processed are governed by NAVER Corp.'s privacy policy.",
+  "서비스는 광고를 목적으로 한 행태정보를 수집하지 않습니다. 이를 위하여 Google 애널리틱스의 광고 개인화 기능과 Google 신호 데이터 수집 기능을 사용하지 않도록 설정하고 있습니다.":"The Service does not collect behavioural information for advertising purposes. To that end, Google Analytics' ad personalisation and Google signals features are configured to be disabled.",
+  "이용자는 브라우저 설정에서 쿠키 저장을 거부하거나 Google 애널리틱스 차단 부가기능 등을 통하여 수집을 거부할 수 있습니다. 로그인 상태 유지와 화면 테마·언어 설정은 이용자 브라우저의 로컬 저장소에 기기 내에서만 저장되며 서버로 전송되지 않습니다. 이용자는 브라우저 설정에서 언제든지 이를 삭제할 수 있으나, 삭제 시 로그인 등 일부 기능의 이용이 제한될 수 있습니다.":"Users may refuse cookie storage in their browser settings or opt out through the Google Analytics opt-out add-on. Sign-in state and theme and language preferences are stored only in the browser's local storage on the user's own device and are not transmitted to any server. Users may delete them at any time in their browser settings, although some features such as sign-in may then be limited.",
+  "이용자는 언제든지 자신의 개인정보에 대한 열람·정정·삭제·처리정지 및 동의 철회를 요구할 수 있으며, 로그인한 이용자는 설정 화면에서 계정 삭제(회원 탈퇴)를 직접 요청할 수 있습니다. 권리 행사는 아래 개인정보 보호책임자에게 서면 또는 전자우편으로 요청할 수 있습니다.":"Users may at any time request access to, correction of, deletion of, or suspension of processing of their personal information, and may withdraw consent. Signed-in users may request account deletion (withdrawal of membership) directly from the settings screen. Requests may be submitted to the Chief Privacy Officer below in writing or by email.",
+  "이용자는 「개인정보 보호법」 제38조에 따라 법정대리인이나 위임을 받은 자를 통하여 위 권리를 행사할 수 있습니다. 이 경우 서비스는 위임 사실을 확인할 수 있는 위임장을 요청할 수 있습니다.":"Under Article 38 of the Personal Information Protection Act, users may exercise these rights through a legal representative or an authorised agent. In such cases the Service may request a power of attorney evidencing the authorisation.",
+  "서비스는 열람 요구를 받은 날부터 10일 이내에 필요한 조치를 이행합니다. 다만 법률에 따라 열람이 금지되거나 제한되는 경우 등 같은 법 제35조 제4항에 해당하는 사유로 열람을 제한하거나 거절하는 때에는 그 사유와 이의제기 방법을 함께 통지합니다.":"The Service takes the necessary measures within 10 days of receiving an access request. Where access is restricted or refused on a ground set out in Article 35(4) of the same Act, such as where access is prohibited or restricted by statute, the Service notifies the user of the reason together with the means of raising an objection.",
+  "정정·삭제 요구에 대하여는 지체 없이 필요한 조치를 이행한 후 그 결과를 통지하며, 처리정지 요구에 대하여도 같습니다. 권리 행사의 방법과 절차는 개인정보를 수집하는 방법과 절차보다 어렵지 아니하도록 운영합니다.":"For correction and deletion requests, the Service takes the necessary measures without delay and notifies the user of the outcome; the same applies to requests to suspend processing. The methods and procedures for exercising these rights are operated so as to be no more burdensome than those for collecting the personal information.",
+  "서비스는 보유 기간이 경과하거나 처리 목적이 달성되는 등 개인정보가 불필요하게 되었을 때에는 지체 없이 해당 개인정보를 파기합니다.":"Where personal information becomes unnecessary because the retention period has elapsed or the purpose of processing has been achieved, the Service destroys it without delay.",
+  "파기 절차: 파기 사유가 발생한 개인정보를 선정하고, 개인정보 보호책임자의 확인을 거쳐 파기합니다.":"Destruction procedure: the personal information subject to destruction is identified and destroyed following confirmation by the Chief Privacy Officer.",
+  "파기 방법: 전자적 파일 형태로 저장된 개인정보는 복구 및 재생이 불가능한 방법으로 영구 삭제하며, 종이 문서에 기록된 개인정보는 분쇄하거나 소각합니다.":"Destruction method: personal information stored in electronic files is permanently deleted by means that make recovery or reproduction impossible; personal information recorded on paper is shredded or incinerated.",
+  "공고일 2026년 9월 6일 · 시행일 2026년 9월 13일 · 최초 시행일 2026년 6월 6일":"Announced September 6, 2026 · Effective September 13, 2026 · Originally effective June 6, 2026",
   "KOSAI(이하 \"서비스\")는 「개인정보 보호법」 제30조에 따라 정보주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 다음과 같이 개인정보 처리방침을 수립·공개합니다. 본 방침은 개인정보보호위원회 「개인정보 처리방침 작성지침」의 구성에 따릅니다.":"KOSAI (the \"Service\") establishes and discloses this Privacy Policy under Article 30 of the Personal Information Protection Act to protect users' personal information and handle related grievances promptly. This policy follows the structure of the PIPC's privacy policy drafting guidelines.",
   "1. 개인정보의 처리 목적":"1. Purposes of Processing",
   "서비스는 다음의 목적을 위하여 개인정보를 처리하며, 처리한 개인정보는 해당 목적 이외의 용도로는 이용하지 않습니다. 이용 목적이 변경되는 경우에는 「개인정보 보호법」 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행합니다.":"The Service processes personal information for the purposes below and does not use it for any other purpose. If a purpose changes, the Service takes required measures such as obtaining separate consent under Article 18 of the Personal Information Protection Act.",

@@ -20,8 +20,17 @@
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { dataLayer.push(arguments); };
     gtag("js", new Date());
-    // IP 익명화 — 개인정보 최소수집
-    gtag("config", GA4_ID, { anonymize_ip: true });
+    /* 광고 목적 수집을 코드에서 끈다.
+       anonymize_ip 는 유니버설 애널리틱스 파라미터라 GA4 가 무시한다 — 넣어도
+       아무 일도 하지 않으므로 뺐다(GA4 는 IP 를 기록·저장하지 않는 것이 기본이다).
+       대신 실제로 의미가 있는 두 가지를 끈다. 둘 다 기본값이 true 라서, 적어 주지
+       않으면 켜진 채로 돈다. 개인정보처리방침 9번이 '광고를 목적으로 한 행태정보를
+       수집하지 않는다' 고 적고 있으므로, 관리자 콘솔 설정과 무관하게 코드에서
+       보장해야 그 문장이 참이 된다. */
+    gtag("config", GA4_ID, {
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false
+    });
   }
 
   // ── Naver Analytics (한국 검색 유입 분석) ──
