@@ -41,7 +41,7 @@
      where("consents.marketing", "==", true)
    자세한 건 docs/consent.md 에 적어 뒀다.
    ============================================================ */
-import { app, auth, SOCIAL } from "./firebase-config.js";
+import { app, auth, SOCIAL } from "./firebase-config.js?v=7b8f27a5";
 import {
   getFirestore, doc, getDoc
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";

@@ -193,7 +193,10 @@ main{flex:1;padding:8px 0 64px}
 }
 
 /* 설정 */
-.set-card{max-width:560px;margin:0 auto;padding:26px 28px}
+/* 설정 내용은 settings-panel.js 가 그린다(창과 같은 코드). 왼쪽 목록과
+   오른쪽 내용으로 갈라지므로 창과 같은 폭을 준다. 안쪽 여백은 목록·내용이
+   각자 갖고 있어서 여기서 또 주면 두 겹이 된다. */
+.set-card{max-width:860px;margin:0 auto;padding:6px}
 .set-sec{padding-bottom:22px;margin-bottom:22px;border-bottom:1px solid var(--hair)}
 .set-sec:last-child{padding-bottom:0;margin-bottom:0;border-bottom:0}
 .set-sec h2{margin:0 0 14px;font:700 13px var(--font-sans);letter-spacing:.06em;color:var(--fg-3)}
@@ -578,7 +581,7 @@ let saved='dark';try{saved=localStorage.getItem('kos-theme')||'dark'}catch(e){}
 applyTheme(saved);
 if(themeBtn)themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 </script>
-<script type="module" src="auth-state.js?v=5ee242a5"></script>
+<script type="module" src="auth-state.js?v=af26373e"></script>
 
 <script type="module">
 /* 설정 화면은 settings-panel.js 한 곳에만 있다.
@@ -586,9 +589,9 @@ if(themeBtn)themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('
    계정 메뉴의 '설정' 은 지금 보던 화면 위에 창으로 띄우고, 이 페이지는
    같은 내용을 본문에 편다. 화면이 둘인데 코드가 둘이면 한쪽만 고치게 되고,
    그러면 창에는 있는 항목이 페이지에는 없는 상태가 된다. */
-import { auth, isConfigured } from "./firebase-config.js";
+import { auth, isConfigured } from "./firebase-config.js?v=7b8f27a5";
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { renderSettings } from "./settings-panel.js";
+import { renderSettings } from "./settings-panel.js?v=d79cfdfa";
 
 const box = document.getElementById('setCard');
 if(!isConfigured){

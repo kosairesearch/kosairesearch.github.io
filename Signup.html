@@ -646,12 +646,12 @@ if(window.KOSi18n) KOSi18n.register({
 </script>
 
 <script type="module">
-import { auth, isConfigured } from "./firebase-config.js";
+import { auth, isConfigured } from "./firebase-config.js?v=7b8f27a5";
 import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { wireSocialButtons } from "./social-login.js";
-import { goNext, mapAuthError, isUserCancelled } from "./auth-util.js";
-import { sendVerifyEmail } from "./auth-emails.js";
+import { wireSocialButtons } from "./social-login.js?v=d995066d";
+import { goNext, mapAuthError, isUserCancelled } from "./auth-util.js?v=0ad15dc5";
+import { sendVerifyEmail } from "./auth-emails.js?v=bce0955f";
 
 
 const $ = s => document.querySelector(s);
@@ -690,7 +690,7 @@ async function showAlreadyRegistered(email){
   errBox.textContent = '';
 
   try{
-    const { signinMethod, renderHint } = await import('./auth-hint.js?v=b796a504');
+    const { signinMethod, renderHint } = await import('./auth-hint.js?v=f7531b46');
     const m = await signinMethod(email);
     if(m && m !== 'email' && renderHint(errBox, m)) return;
   }catch(_){ /* 안내는 부가 기능 */ }
@@ -743,7 +743,7 @@ $('#emailForm').addEventListener('submit', async e => {
      여기서 먼저 물어보면 계정이 만들어지지 않는다. 서버가 모르면(null)
      그냥 진행한다 — 안내를 못 하는 것이 가입을 막을 이유는 아니다. */
   try{
-    const { signinMethod, renderHint } = await import('./auth-hint.js?v=b796a504');
+    const { signinMethod, renderHint } = await import('./auth-hint.js?v=f7531b46');
     const m = await signinMethod(email);
     if(m && m !== 'email' && renderHint(errBox, m)){ btn.disabled = false; return; }
   }catch(_){ /* 안내는 부가 기능 */ }
@@ -784,7 +784,7 @@ $('#googleBtn').addEventListener('click', async () => {
     const cred = await signInWithPopup(auth, new GoogleAuthProvider());
     const { getAdditionalUserInfo } = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js');
     const isNew = !!(getAdditionalUserInfo(cred) || {}).isNewUser;
-    const { finishGoogleSignup } = await import('./consent.js?v=7a6e60d8');
+    const { finishGoogleSignup } = await import('./consent.js?v=206cdd28');
     if(!(await finishGoogleSignup(cred, isNew))) return;   // 사용자가 취소
     /* 가입 추적은 Consent.html 이 한다 — 동의를 마쳐야 가입이 성립하고,
        신규면 위에서 이미 그쪽으로 넘어갔다. */
@@ -798,6 +798,6 @@ $('#googleBtn').addEventListener('click', async () => {
 // 서버가 계정을 만들면서 같은 호출 안에 동의를 남긴다. 여기서 담아 보낼 것이 없다.
 wireSocialButtons({ onError: showErr });
 </script>
-<script type="module" src="auth-state.js?v=5ee242a5"></script>
+<script type="module" src="auth-state.js?v=af26373e"></script>
 </body>
 </html>

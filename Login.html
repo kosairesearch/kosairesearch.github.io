@@ -631,12 +631,12 @@ if(window.KOSi18n) KOSi18n.register({
 </script>
 
 <script type="module">
-import { auth, isConfigured } from "./firebase-config.js";
+import { auth, isConfigured } from "./firebase-config.js?v=7b8f27a5";
 import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup,
   signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { wireSocialButtons } from "./social-login.js";
-import { goNext, mapAuthError, isUserCancelled } from "./auth-util.js";
-import { sendVerifyEmail, sendResetEmail } from "./auth-emails.js";
+import { wireSocialButtons } from "./social-login.js?v=d995066d";
+import { goNext, mapAuthError, isUserCancelled } from "./auth-util.js?v=0ad15dc5";
+import { sendVerifyEmail, sendResetEmail } from "./auth-emails.js?v=bce0955f";
 
 const $ = s => document.querySelector(s);
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
@@ -688,7 +688,7 @@ $('#emailForm').addEventListener('submit', async e => {
        가입 순서가 '계정 → 동의 → 메일 인증' 이므로 로그인도 같은 순서로
        본다. 조회에 실패하면(null) 막지 않고 아래로 넘긴다. */
     try{
-      const { consentState } = await import("./consent.js");
+      const { consentState } = await import("./consent.js?v=206cdd28");
       if(await consentState(cred.user.uid) === false){
         const nx = new URLSearchParams(location.search).get('next') || 'Home.html';
         location.replace('Consent.html?next=' + encodeURIComponent(nx));
@@ -711,7 +711,7 @@ $('#emailForm').addEventListener('submit', async e => {
     const code = String((err && err.code) || '');
     if(/invalid-credential|wrong-password|user-not-found|invalid-login/.test(code)){
       try{
-        const { signinMethod, renderHint } = await import('./auth-hint.js?v=b796a504');
+        const { signinMethod, renderHint } = await import('./auth-hint.js?v=f7531b46');
         const m = await signinMethod(email);
         if(m && m !== 'email' && renderHint(errBox, m)) return;
       }catch(_){ /* 안내는 부가 기능 — 실패해도 아래 기본 문구로 간다 */ }
@@ -737,7 +737,7 @@ $('#googleBtn').addEventListener('click', async () => {
        동의를 받고, 거부하거나 기록에 실패하면 방금 만든 계정을 지운다.
        동의 기록 없는 계정을 남기지 않는다. 로직은 consent.js 한 곳에 있어
        가입 화면과 로그인 화면이 어긋날 수 없다. */
-    const { finishGoogleSignup } = await import("./consent.js");
+    const { finishGoogleSignup } = await import("./consent.js?v=206cdd28");
     if(!(await finishGoogleSignup(cred, isNew))) return;   // 사용자가 취소
     /* 가입 추적은 Consent.html 이 한다 — 동의를 마쳐야 가입이 성립하고,
        신규면 위에서 이미 그쪽으로 넘어갔다. */
@@ -758,6 +758,6 @@ $('#forgotLink').addEventListener('click', async e => {
 // Kakao / Naver — OAuth 리다이렉트 + Cloud Functions 커스텀 토큰 (social-login.js)
 wireSocialButtons({ onError: showErr });
 </script>
-<script type="module" src="auth-state.js?v=5ee242a5"></script>
+<script type="module" src="auth-state.js?v=af26373e"></script>
 </body>
 </html>

@@ -780,7 +780,7 @@ if(window.KOSi18n) KOSi18n.register({
  * 세 함수 모두 관리자 이메일인지 먼저 확인하고, 아니면 아무것도 돌려주지
  * 않는다. 여기 코드는 그 결과를 보여 줄 뿐이다.
  */
-import { app, auth, SOCIAL } from "./firebase-config.js";
+import { app, auth, SOCIAL } from "./firebase-config.js?v=7b8f27a5";
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getFunctions, httpsCallable }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
@@ -1365,6 +1365,6 @@ $('#csvBtn').addEventListener('click', async () => {
   }catch(e){ note.textContent = ' ' + ((e && e.message) || T('불러오지 못했습니다.')); }
 });
 </script>
-<script type="module" src="auth-state.js?v=5ee242a5"></script>
+<script type="module" src="auth-state.js?v=af26373e"></script>
 </body>
 </html>
