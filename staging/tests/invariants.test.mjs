@@ -44,7 +44,7 @@ rmSync(TMP, { recursive: true, force: true });
 mkdirSync(TMP, { recursive: true });
 writeFileSync(TMP + "/payment-config.js", readFileSync(STAGING + "/payment-config.js"));
 writeFileSync(TMP + "/demo.js", readFileSync(STAGING + "/demo-backend.js", "utf8")
-  .replace(/from "\.\/firebase-config\.js"/g, 'from "./stub.js"')
+  .replace(/from "\.\/firebase-config\.js(?:\?v=[0-9a-f]+)?"/g, 'from "./stub.js"')
   .replace(/from "https:\/\/www\.gstatic\.com\/firebasejs\/[^"]+"/g, 'from "./stub.js"'));
 writeFileSync(TMP + "/stub.js", `
 export const app={}; export const isConfigured=true; export const SOCIAL={};

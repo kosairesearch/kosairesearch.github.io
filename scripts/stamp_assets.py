@@ -36,6 +36,9 @@ auth-state.js 는 판본이 붙어 캐시가 갈렸지만, 그 안에서 부르�
 해시도 바뀐다. 그래서 한 번 훑어서는 끝나지 않는다 — 더 바뀌지 않을
 때까지 돌린다.
 
+실사이트와 스테이징을 각각 제 폴더 안에서 본다. 같은 이름의 파일을 두 곳이
+각자 갖고 있으므로 한 자루에 담으면 한쪽 해시가 다른 쪽 주소에 붙는다.
+
 배포 전에 돌린다(idempotent — 여러 번 돌려도 결과가 같다).
 
   python3 scripts/stamp_assets.py            # 붙이기/갱신
@@ -57,6 +60,12 @@ def digest(text):
 _SRC = re.compile(r'(\bsrc=)"([A-Za-z0-9_-]+\.js)(?:\?v=[0-9a-f]+)?"')
 _DYN = re.compile(r"""import\(\s*(['"])\./([A-Za-z0-9_-]+\.js)(?:\?v=[0-9a-f]+)?\1\s*\)""")
 _FROM = re.compile(r"""(\bfrom\s+)(['"])\./([A-Za-z0-9_-]+\.js)(?:\?v=[0-9a-f]+)?\2""")
+# import "./paywall.js";  — 가져올 이름 없이 실행만 시키는 모양
+_BARE = re.compile(r"""(\bimport\s+)(['"])\./([A-Za-z0-9_-]+\.js)(?:\?v=[0-9a-f]+)?\2""")
+# 도장이 안 붙은 채로 남은 우리 모듈 주소를 찾는 그물. 규칙이 어떤 모양을
+# 놓치면 여기서만 걸린다 — 맨 주소는 '낡은 해시' 가 아니라 '해시 없음' 이라
+# 해시를 맞춰 보는 것으로는 영영 안 걸린다(settings-panel.js 가 그랬다).
+_ANY = re.compile(r"""["'`](?:\./)?([A-Za-z0-9_-]+\.js)(\?v=[0-9a-f]+)?["'`]""")
 
 
 def stamp(text, hashes):
@@ -87,26 +96,45 @@ def stamp(text, hashes):
         r = sub(m.group(3), lambda h: f"{m.group(1)}{q}./{m.group(3)}?v={h}{q}")
         return m.group(0) if r is None else r
 
+    def bare_sub(m):
+        q = m.group(2)
+        r = sub(m.group(3), lambda h: f"{m.group(1)}{q}./{m.group(3)}?v={h}{q}")
+        return m.group(0) if r is None else r
+
     text = _SRC.sub(src_sub, text)
     text = _DYN.sub(dyn_sub, text)
     text = _FROM.sub(from_sub, text)
+    text = _BARE.sub(bare_sub, text)
     return text, n
 
 
-def main():
-    check = "--check" in sys.argv
-    # 저장소 최상단만 본다. scripts/ 는 파이썬이고, functions/ 는 서버라
-    # 브라우저가 받지 않는다. staging/ 은 제 것을 따로 갖는다.
-    js = sorted(ROOT.glob("*.js"))
+def bare_refs(text, names):
+    """도장이 안 붙은 채 남은 우리 모듈 주소. 따옴표 세 가지를 다 본다 —
+    백틱으로 쓴 주소를 규칙이 못 보는 일이 실제로 있었다."""
+    return [m.group(0) for m in _ANY.finditer(text)
+            if m.group(1) in names and not m.group(2)]
+
+
+def one(base):
+    """한 폴더 안에서 서로를 부르는 것만 본다.
+
+    실사이트와 스테이징은 같은 이름의 파일을 각자 갖고 있고, 페이지도 제 폴더
+    안의 것을 부른다. 두 벌을 한 자루에 담으면 한쪽 해시가 다른 쪽 주소에
+    붙는다. 데이터(../data/*.js)는 대상이 아니다 — 리포트가 새로 만들어질
+    때마다 내용이 바뀌므로, 도장을 찍으면 종목 하나가 갱신될 때마다 모든
+    페이지가 같이 커밋된다.
+
+    돌려주는 값: (자바스크립트 수, 바뀐 파일 목록, 마지막 해시) · 실패는 None"""
+    js = sorted(base.glob("*.js"))
     if not js:
-        print("  ❌ 대상 자바스크립트를 찾지 못함")
-        return 1
-    files = js + sorted(ROOT.glob("*.html"))
+        return None
+    files = js + sorted(base.glob("*.html"))
     orig = {p: p.read_text(encoding="utf-8") for p in files}
 
     # .js 에 도장을 찍으면 그 파일의 해시가 바뀌고, 그러면 그 파일을 부르는
     # 쪽의 주소도 다시 써야 한다. 더 바뀌지 않을 때까지 돌린다.
     cur = dict(orig)
+    hashes = {}
     for _ in range(10):
         hashes = {p.name: digest(cur[p]) for p in js}
         nxt = {p: stamp(cur[p], hashes)[0] for p in files}
@@ -114,18 +142,46 @@ def main():
             break
         cur = nxt
     else:
-        print("  ❌ 해시가 멎지 않는다 — 모듈이 서로를 돌아가며 부르는지 볼 것")
+        print(f"  ❌ {base.name}: 해시가 멎지 않는다 — 모듈이 서로를 돌아가며 부르는지 볼 것")
+        return None
+
+    names = {p.name for p in js}
+    left = [(p, r) for p in files for r in bare_refs(cur[p], names)]
+    return js, [(p, cur[p], stamp(orig[p], hashes)[1]) for p in files if cur[p] != orig[p]], left
+
+
+def main():
+    check = "--check" in sys.argv
+    # 저장소 최상단과 스테이징. scripts/ 는 파이썬이고, functions/ 는 서버라
+    # 브라우저가 받지 않는다.
+    bases = [ROOT, ROOT / "staging"]
+    total_js = total_changed = 0
+    leftover = []
+    for base in bases:
+        if not base.is_dir():
+            continue
+        got = one(base)
+        if got is None:
+            return 1
+        js, changed, left = got
+        total_js += len(js)
+        total_changed += len(changed)
+        for path, text, n in changed:
+            if not check:
+                path.write_text(text, encoding="utf-8")
+            rel = path.relative_to(ROOT)
+            print(f"  · {str(rel):32} {n}곳")
+        for path, ref in left:
+            leftover.append(f"{path.relative_to(ROOT)}  {ref}")
+
+    print(f"\n{'검사만 — ' if check else ''}자바스크립트 {total_js}개 · "
+          f"파일 {total_changed}개 갱신")
+    if leftover:
+        print("  ❌ 도장이 안 붙은 주소가 남았다 — 위 규칙이 이 모양을 못 본다:")
+        for x in leftover:
+            print("     " + x)
         return 1
-
-    changed = [p for p in files if cur[p] != orig[p]]
-    for p in changed:
-        if not check:
-            p.write_text(cur[p], encoding="utf-8")
-        print(f"  · {p.name:22} {stamp(orig[p], hashes)[1]}곳")
-
-    print(f"\n{'검사만 — ' if check else ''}자바스크립트 {len(js)}개 · "
-          f"파일 {len(changed)}개 갱신")
-    if check and changed:
+    if check and total_changed:
         print("  ❌ 해시가 최신이 아니다 — python3 scripts/stamp_assets.py 를 돌릴 것")
         return 1
     return 0

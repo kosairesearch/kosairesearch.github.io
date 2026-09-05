@@ -6,7 +6,7 @@
    - 로그인 상태: 아바타(이메일 첫 글자) + 드롭다운(이메일·로그아웃)
    firebase-config.js 설정 전(데모 모드)에는 로그인 링크만 표시합니다.
    ============================================================ */
-import { app, auth, isConfigured } from "./firebase-config.js";
+import { app, auth, isConfigured } from "./firebase-config.js?v=7b8f27a5";
 import { onAuthStateChanged, signOut, deleteUser }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getFirestore, doc, getDoc, deleteDoc }
@@ -344,7 +344,7 @@ function renderLoggedIn(wrap, user){
    페이지에 실리므로, 설정을 한 번도 안 여는 사람에게까지 받게 할 이유가 없다. */
 async function openSettings(tab){
   try{
-    const m = await import("./settings-panel.js");
+    const m = await import("./settings-panel.js?v=612ebfbf");
     m.openSettings(tab);
   }catch(e){ console.warn("[settings] 열지 못했습니다", e && e.message); }
 }

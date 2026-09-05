@@ -8,8 +8,8 @@
    4) 서버가 토큰 검증 후 Firebase 커스텀 토큰 발급 → signInWithCustomToken
    클라이언트는 공개 키(REST/Client ID)만 사용하고, 비밀키는 서버에만 있습니다.
    ============================================================ */
-import { app, auth, SOCIAL } from "./firebase-config.js";
-import { safeNext } from "./auth-util.js";
+import { app, auth, SOCIAL } from "./firebase-config.js?v=7b8f27a5";
+import { safeNext } from "./auth-util.js?v=0ad15dc5";
 import { signInWithCustomToken } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
 

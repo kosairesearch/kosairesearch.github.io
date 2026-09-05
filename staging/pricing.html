@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<script type="module" src="demo-backend.js"></script>
+<script type="module" src="demo-backend.js?v=6b8abc22"></script>
 <meta name="robots" content="noindex,nofollow" />
 <meta charset="utf-8" />
 <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -498,7 +498,7 @@ KOSi18n.register({
   <link rel="icon" type="image/png" sizes="512x512" href="../assets/favicon.png?v=k2">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png?v=k2">
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png?v=k2">
-  <script src="analytics.js"></script>
+  <script src="analytics.js?v=71f5ad0a"></script>
 <script>
 /* i18n: title·aria-label 속성 번역(영어 모드). 동적(data-i18n-skip) 영역은 각 페이지 템플릿의 T()가 담당 */
 (function(){
@@ -949,9 +949,9 @@ if(window.KOSi18n) KOSi18n.register({
 /* 결제 진입점. 이미 이용 중인 사람에게 'PRO 시작하기'를 보여 주면 안 된다 —
    이미 낸 돈을 다시 팔고 있는 셈이고, 눌러 봐야 '이미 이용 중입니다'로 끝난다.
    구독 상태에 맞게 버튼과 배지를 바꾼다. */
-import "./paywall.js";
-import { call } from "./subscription-api.js";
-import { MIN_CHARGE, upgradeDiff, won } from "./payment-config.js";
+import "./paywall.js?v=01294faf";
+import { call } from "./subscription-api.js?v=7e5d7618";
+import { MIN_CHARGE, upgradeDiff, won } from "./payment-config.js?v=4ae73997";
 
 const P = window.KOSPaywall;
 const btns = [...document.querySelectorAll('.plan [data-plan]')];
@@ -1164,6 +1164,6 @@ if (P) {
 /* 이 버튼 글자는 스크립트가 쓰므로 번역 엔진이 손대지 않는다 — 직접 다시 그린다. */
 if (window.KOSi18n) window.KOSi18n.register(null, paint);
 </script>
-<script type="module" src="auth-state.js"></script>
+<script type="module" src="auth-state.js?v=6df6d66c"></script>
 </body>
 </html>

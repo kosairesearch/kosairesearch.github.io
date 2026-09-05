@@ -8,7 +8,7 @@
    - 별표(.wl-btn[data-wl]) 같은 공용 토글은 자동으로 on/off 동기화합니다.
    전역 API: window.KOSWatch
    ============================================================ */
-import { app, auth, isConfigured } from "./firebase-config.js";
+import { app, auth, isConfigured } from "./firebase-config.js?v=7b8f27a5";
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getFirestore, doc, onSnapshot, setDoc, updateDoc, deleteField }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";

@@ -16,10 +16,10 @@
      · 한도는 한국 시간 자정에 초기화
      · 업그레이드는 즉시·차액, 다운그레이드는 다음 결제일
    ============================================================ */
-import { auth, isConfigured } from "./firebase-config.js";
+import { auth, isConfigured } from "./firebase-config.js?v=7b8f27a5";
 import { onAuthStateChanged }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { MIN_CHARGE, PLANS } from "./payment-config.js";
+import { MIN_CHARGE, PLANS } from "./payment-config.js?v=4ae73997";
 
 const SUB_KEY = "kos-demo-sub", READ_KEY = "kos-demo-reads", PAY_KEY = "kos-demo-pays",
       FB_KEY = "kos-demo-reasons";

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<script type="module" src="demo-backend.js"></script>
+<script type="module" src="demo-backend.js?v=6b8abc22"></script>
 <meta name="robots" content="noindex,nofollow" />
 <meta charset="utf-8" />
 <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -455,7 +455,7 @@ KOSi18n.register({
   <link rel="icon" type="image/png" sizes="512x512" href="../assets/favicon.png?v=k2">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png?v=k2">
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png?v=k2">
-  <script src="analytics.js"></script>
+  <script src="analytics.js?v=71f5ad0a"></script>
 <script>
 /* i18n: title·aria-label 속성 번역(영어 모드). 동적(data-i18n-skip) 영역은 각 페이지 템플릿의 T()가 담당 */
 (function(){
@@ -693,11 +693,11 @@ if(window.KOSi18n) KOSi18n.register({
 </script>
 
 <script type="module">
-import { auth, isConfigured } from "./firebase-config.js";
+import { auth, isConfigured } from "./firebase-config.js?v=7b8f27a5";
 import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup,
   signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { wireSocialButtons } from "./social-login.js";
-import { sendVerifyEmail, sendResetEmail } from "./auth-emails.js";
+import { wireSocialButtons } from "./social-login.js?v=3890f989";
+import { sendVerifyEmail, sendResetEmail } from "./auth-emails.js?v=bce0955f";
 
 const $ = s => document.querySelector(s);
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
@@ -778,6 +778,6 @@ $('#forgotLink').addEventListener('click', async e => {
 // Kakao / Naver — OAuth 리다이렉트 + Cloud Functions 커스텀 토큰 (social-login.js)
 wireSocialButtons({ onError: showErr });
 </script>
-<script type="module" src="auth-state.js"></script>
+<script type="module" src="auth-state.js?v=6df6d66c"></script>
 </body>
 </html>

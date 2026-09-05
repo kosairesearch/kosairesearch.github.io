@@ -47,10 +47,10 @@ mkdirSync(TMP, { recursive: true });
 
 const swap = (name, out) => {
   let s = readFileSync(join(STAGING, name), "utf8");
-  s = s.replace(/from "\.\/firebase-config\.js"/g, 'from "./stub-fb.js"');
+  s = s.replace(/from "\.\/firebase-config\.js(?:\?v=[0-9a-f]+)?"/g, 'from "./stub-fb.js"');
   s = s.replace(/from "https:\/\/www\.gstatic\.com\/firebasejs\/[^"]+"/g, 'from "./stub-fb.js"');
-  s = s.replace(/from "\.\/consent\.js"/g, 'from "./stub-consent.js"');
-  s = s.replace(/from "\.\/subscription-api\.js"/g, 'from "./stub-api.js"');
+  s = s.replace(/from "\.\/consent\.js(?:\?v=[0-9a-f]+)?"/g, 'from "./stub-consent.js"');
+  s = s.replace(/from "\.\/subscription-api\.js(?:\?v=[0-9a-f]+)?"/g, 'from "./stub-api.js"');
   writeFileSync(join(TMP, out), s);
 };
 writeFileSync(join(TMP, "payment-config.js"), readFileSync(join(STAGING, "payment-config.js")));
@@ -606,6 +606,28 @@ localStorage.clear(); w.KOSDemo.subscribe("pro"); w.KOSDemo.simulate("expired");
 await openSubs();
 ok("배지가 '이용 종료됨'", txt().includes("이용 종료됨"), txt().slice(0, 160));
 ok("다시 시작할 길을 준다", btns().includes("멤버십 보기"), btns().join("|"));
+
+console.log("\n── 스크롤바 ──");
+{
+  /* 구독 칸은 결제 내역이 붙어 창보다 길어진다. 기본 스크롤바는 바탕이 밝아
+     어두운 창을 세로로 가르는 밝은 줄이 하나 더 생겼다. 바탕을 지우고 손잡이만
+     남긴다.
+
+     이 검사는 눈으로 대신 못 한다 — 고치는 자리(헤드리스 크로미움)는 겹치는
+     스크롤바를 써서 화면에도 스크린샷에도 아예 안 나온다. 그래서 규칙이
+     제자리에 있는지를 글자로 본다. */
+  const css = document.getElementById("kos-settings-css").textContent;
+  ok("바탕이 없다 — 손잡이 색과 '투명'을 함께 준다",
+     /scrollbar-color:var\(--ks-thumb\) transparent/.test(css));
+  ok("손잡이 색이 두 테마 모두 있다",
+     /--ks-thumb:rgba\(0,0,0,\.28\)/.test(css) && /--ks-thumb:rgba\(255,255,255,\.26\)/.test(css));
+  ok("넘치는 칸마다 굵기를 준다(scrollbar-width 는 물려받지 않는다)",
+     /\.ks-nav,\.ks-panel,\.ks-hist,\.ks-dlg-card\{scrollbar-width:thin\}/.test(css));
+  ok("scrollbar-color 를 모르는 곳(사파리)에도 바탕이 없다",
+     /::-webkit-scrollbar-track[^{]*\{background:transparent\}/.test(css));
+  ok("그 길에서도 손잡이는 같은 색",
+     /::-webkit-scrollbar-thumb[^{]*\{[\s\S]{0,80}background:var\(--ks-thumb\)/.test(css));
+}
 
 rmSync(TMP, { recursive: true, force: true });
 console.log(`\n통과 ${pass} · 실패 ${fail}`);
