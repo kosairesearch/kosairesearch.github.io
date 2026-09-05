@@ -1,229 +1,230 @@
 {
  "title": {
-  "ko": "원림 — 순자산 할인 속 영업이익 회복력 점검",
-  "en": "Wonlim — Testing Earnings Recovery Against Deep Book-Value Discount"
+  "ko": "포장재 회복 속 의료기기·투자부문 다각화 진행",
+  "en": "Packaging Recovery Alongside Medical Device and Investment Diversification"
  },
  "lead": {
-  "ko": "국내 산업용 PP·PE BAG 시장의 약 60% 점유자이자 임대·금융투자·의료기기를 아우르는 복합 사업구조를 갖춘 원림은 2025년 영업이익이 전년 저점 대비 큰 폭으로 회복됐으나, 지배주주 귀속 순이익은 4년 연속 하향세를 이어가며 주당순자산 대비 이례적으로 낮은 주가 수준이 지속되고 있다.",
-  "en": "Wonlim holds approximately 60% domestic share in PP/PE industrial BAG, operates across four segments including real estate rental, financial investment, and medical devices, and posted a sharp operating profit recovery in 2025 from a multi-year trough—yet controlling-shareholder net income has declined for four consecutive years, and shares continue to trade at an unusually steep discount to per-share book value."
+  "ko": "산업용 포장재를 주력으로 하는 원림은 본업 수익성 회복과 함께 의료기기 유통 자회사 및 벤처투자 자회사의 실적이 더해지며 연결 실적의 다각화가 진행되고 있다.",
+  "en": "Wonlim, primarily an industrial packaging maker, is seeing its consolidated results diversify as core-business profitability recovers alongside contributions from its medical device distribution and venture investment subsidiaries."
  },
  "keypoints": [
   {
-   "ko": "PP·PE BAG 국내 점유율 약 60%로 산업용 포장재 시장에서 독보적 지위 보유; 화성(포장재)·임대·금융투자·의료기기 4개 부문이 수익을 분산·완충",
-   "en": "~60% domestic market share in PP/PE BAG provides a near-monopoly position in industrial packaging; revenues are diversified and cushioned across four segments: packaging, real estate rental, financial investment, and medical devices"
+   "ko": "2025년 연결 매출 897억원, 영업이익 44억원으로 영업이익률이 2024년 2.1%에서 4.9%로 회복됐다.",
+   "en": "2025 consolidated revenue reached KRW 89.7bn with operating profit of KRW 4.4bn, as the operating margin recovered from 2.1% in 2024 to 4.9%."
   },
   {
-   "ko": "2025년 연결 영업이익 약 44억원(OPM 4.9%)으로 2024년(약 17억원, OPM 2.1%) 대비 큰 폭 회복; PP·PE RESIN 가격 안정화와 BAG 고급화 수요가 핵심 동인",
-   "en": "2025 consolidated operating profit recovered to ~KRW 4.4 bn (OPM 4.9%) from a trough of ~KRW 1.7 bn (OPM 2.1%) in 2024, driven primarily by PP/PE RESIN price stabilization and BAG product premiumization"
+   "ko": "포장재 제조업 외에 임대업, 금융투자업(한빛인베스트먼트), 의료기기도매업(스타바이오)의 4개 사업부문으로 구성된 다각화 구조를 갖고 있다.",
+   "en": "The group is structured across four segments beyond packaging manufacturing: real estate leasing, financial investment via Hanbit Investment, and medical device wholesale via Star Bio."
   },
   {
-   "ko": "부채비율 약 19%의 극저 레버리지와 자기자본 약 1,591억원의 탄탄한 재무구조; 주가는 주당순자산(BPS 61,375원) 대비 현저한 할인 상태 지속",
-   "en": "Extremely conservative leverage (~19% debt-to-equity) and total equity of ~KRW 159.1 bn underpin balance-sheet strength; shares trade at a substantial discount to per-share book value (BPS KRW 61,375)"
+   "ko": "2026년 상반기 연결 매출은 전년 동기 대비 늘고 영업이익도 개선되며 의료기기·투자부문의 성과가 반영됐다.",
+   "en": "First-half 2026 consolidated revenue and operating profit both improved year over year, reflecting contributions from the medical device and investment segments."
   },
   {
-   "ko": "의료기기 부문은 STRYKER·Tornier 인공관절 총판을 통해 고령화 구조적 수혜를 향유하며 포장재 경기 사이클 리스크를 부분 완충",
-   "en": "The medical device segment distributes STRYKER and Tornier orthopedic implants, capturing structural aging-driven demand growth and providing a partial offset to packaging sector cyclicality"
+   "ko": "분기별 영업이익과 지배주주순이익의 변동성이 커, 투자수익 등 비영업적 요인의 영향을 함께 살펴볼 필요가 있다.",
+   "en": "Quarterly operating profit and owners' net income have shown notable volatility, warranting attention to non-operating factors such as investment gains."
   },
   {
-   "ko": "2026Q1 영업이익 약 12억원으로 전년 동기(약 16억원) 대비 소폭 감소; 원재료 가격과 계절 수요 흐름이 하반기 마진 방향의 핵심 변수",
-   "en": "2026Q1 operating profit of ~KRW 1.2 bn slipped modestly from the prior-year comparable (~KRW 1.6 bn); raw material pricing and seasonal demand patterns are the primary H2 2026 margin determinants"
+   "ko": "자회사 스타바이오는 글로벌 의료기기업체 스트라이커의 국내 유통을 맡고 있어 인구 고령화에 따른 수요 기반을 갖고 있다.",
+   "en": "Subsidiary Star Bio distributes global medical device maker Stryker's products domestically, giving it exposure to demand tied to an aging population."
   }
  ],
  "business": {
-  "ko": "원림은 1968년 산업용 포장재 제조업체로 설립되어 1990년 유가증권시장에 상장한 코스피 기업으로, 경상남도 양산시에 제조 거점을, 서울 서초구 원림빌딩에 본사를 두고 있다. 사업 구조는 ①화성사업부문(산업용 포장재), ②임대사업부문, ③금융투자사업부문, ④의료기기사업부문의 4개 축으로 구성되며 4개 종속회사가 각 사업을 담당한다. 핵심 제품인 PP BAG·PE BAG·타포린(TARPAULIN)은 국내 주요 유화업체에 납품되고 세계 각국으로 수출되며, PP·PE BAG의 국내 시장점유율은 약 60%로 사실상 과반 이상을 장악하고 있다. 임대사업부문은 다양한 임대 방식과 조건 조정을 통해 경기 변동에 비교적 독립적인 안정 수익을 창출한다. 금융투자사업부문은 주식·채권 등 포트폴리오 운용을 통해 비영업 수익을 보완하며, 영업이익만으로는 파악하기 어려운 지배주주 귀속 순이익에 주요 영향을 미친다. 의료기기사업부문은 인공관절 분야 글로벌 선도 기업 STRYKER 제품과 어깨관절 전문 브랜드 Tornier 제품의 국내 총판을 담당하며 고부가가치 수입 의료기기 유통에 특화되어 있다. 미국 자회사 WL Holdings USA LLC에 대한 출자를 통해 해외 판로 다변화도 모색 중이며, 롯데케미칼과의 협력을 통해 친환경 재활용 포장재 사업에도 진출한 바 있다. 최대주주 및 특수관계인 지분이 60%를 초과하는 고도 집중 구조로 인해 실제 유통 주식 수가 극히 제한적이다.",
-  "en": "Wonlim was established in 1968 as an industrial packaging manufacturer and listed on the KOSPI in 1990, with manufacturing facilities in Yangsan, South Gyeongsang Province, and headquarters in the Wonlim Building in Seoul's Seocho district. The business operates through four segments—(1) Chemical/Packaging (industrial PP BAG, PE BAG, Tarpaulin), (2) Real Estate Rental, (3) Financial Investment, and (4) Medical Devices—each run by one of four consolidated subsidiaries. Core products PP BAG, PE BAG, and Tarpaulin are sold to major domestic petrochemical companies and exported globally, commanding approximately 60% of the domestic PP/PE BAG market—a near-monopoly position. The rental segment generates relatively recession-resistant recurring income through diverse lease arrangements. The financial investment arm manages an equity and securities portfolio that materially influences non-operating income and, by extension, controlling-shareholder net income beyond what operating profit alone would suggest. The medical device segment serves as the exclusive Korean distributor for STRYKER orthopedic implants and Tornier shoulder joint products, specializing in high-value imported medical devices. The company has also entered the eco-friendly recyclable packaging space through a collaboration with Lotte Chemical, and has invested in U.S. subsidiary WL Holdings USA LLC as part of overseas diversification efforts. Ownership is concentrated—the largest shareholder and affiliated parties hold above 60%—resulting in a very limited public float."
+  "ko": "원림은 1968년 설립된 산업용 포장재 전문기업으로, 경남 양산과 전북 김제의 제조시설을 통해 PE·PP 소재의 포장백을 생산한다. 회사 및 종속회사가 영위하는 사업은 크게 포장재사업, 임대업, 금융투자업, 의료기기도매업의 4개 부문으로 구성되어 있다. 핵심 포장재사업은 석유화학 수지, 시멘트, 비료, 사료 등 분체·입체 내용물을 포장하는 고강도 포장재로, PE백·시멘트백·샌드위치백·라미네이팅백·타포린 등이 대표 제품이며 국내 주요 유화업체와 세계 각국으로 공급된다. 금융투자업은 종속회사 한빛인베스트먼트가 담당하며, 중소·벤처기업에 대한 신기술사업금융 및 투자조합 운용을 통해 자본 이득을 추구하는 벤처캐피탈 성격의 사업이다. 의료기기도매업은 종속회사 스타바이오가 맡고 있으며, 미국 스트라이커의 국내 유통사로서 정형외과용 인공관절 임플란트와 인공관절 로봇수술(MAKO) 관련 의료기기·소모품을 전국 병원 및 대리점에 공급한다. 스타바이오는 상장기업인 원림의 자회사로서 재무 기반을 갖추고 있으며, 호남·충청·경남·강원 등 지방 지사를 통해 영업망을 확대해왔다. 이 밖에 부동산 임대업이 안정적인 현금흐름을 보완하는 구조다. 결과적으로 원림은 전통 제조업에서 출발했으나 신기술금융·의료기기 유통까지 사업 영역을 넓힌 사업지주 성격의 다각화 기업으로 변모하고 있다.",
+  "en": "Founded in 1968, Wonlim is an industrial packaging specialist that manufactures PE and PP packaging bags at facilities in Yangsan, South Gyeongsang, and Gimje, North Jeolla. The company and its subsidiaries operate across four business segments: packaging manufacturing, real estate leasing, financial investment, and medical device wholesale. The core packaging segment produces heavy-duty bags for petrochemical resins, cement, fertilizer, and feed, with flagship products including PE bags, cement bags, sandwich bags, laminated bags, and tarpaulins supplied to major domestic petrochemical firms and export markets worldwide. The financial investment segment is run through subsidiary Hanbit Investment, a venture-capital-style operation that provides new-technology financing and manages investment partnerships for small and venture businesses. The medical device wholesale segment is handled by subsidiary Star Bio, which distributes U.S.-based Stryker's orthopedic implants and MAKO robotic surgery-related devices and consumables to hospitals and distributors nationwide. Star Bio, as a subsidiary of listed Wonlim, has built out its network through regional branches across the country. A real estate leasing business supplements the group's cash flow. Overall, Wonlim has evolved from a traditional manufacturer into a diversified holding-style enterprise spanning new-technology finance and medical device distribution."
  },
  "earnings": {
-  "ko": "연간 매출은 2022년 약 819억원, 2023년 약 844억원, 2024년 약 824억원을 거쳐 2025년 약 897억원으로 4개년 최고치를 기록했다. 영업이익의 등락폭은 매출보다 훨씬 가팔라, 2023년 약 51억원(OPM 6.0%)으로 정점을 찍은 뒤 2024년에는 약 17억원(OPM 2.1%)으로 급감했다가 2025년 약 44억원(OPM 4.9%)으로 반등했다. PP·PE RESIN 가격 안정화와 BAG 시장의 소재 고급화·인쇄 디자인 수요 확대가 2025년 마진 회복의 핵심 동인이었다. 반면 지배주주 귀속 순이익은 2022년 약 72억원, 2023년 약 74억원에서 2024년 약 40억원, 2025년 약 37억원으로 완만한 하향 추세를 이어갔는데, 이는 임대·금융투자 부문 비영업 손익의 기여가 점진적으로 감소한 결과로 읽힌다. 분기별로는 계절성과 원가 변동의 영향이 뚜렷한데, 2025Q2 영업이익이 약 3,500만원으로 사실상 손익분기 수준에 머물렀다가 Q3·Q4 각 약 14억원 내외로 회복됐다. 2026Q1 매출 약 207억원·영업이익 약 12억원은 전년 동기(매출 약 209억원, 영업이익 약 16억원) 대비 소폭 후퇴하며 회복 모멘텀이 다소 제한된 양상이다. 영업활동 현금흐름은 2024년 약 103억원에서 2025년 약 48억원으로 큰 폭 감소해, 이익 회복에도 불구하고 현금창출력 약화가 함께 관찰된다는 점이 주목된다.",
-  "en": "Annual revenue reached a four-year high of approximately KRW 89.7 bn in 2025, advancing from ~KRW 81.9 bn in 2022, ~KRW 84.4 bn in 2023, and ~KRW 82.4 bn in 2024. Operating profit swings were far more pronounced than revenue movements: after peaking at ~KRW 5.1 bn (OPM 6.0%) in 2023, operating profit collapsed to ~KRW 1.7 bn (OPM 2.1%) in 2024—the weakest margin across the observation period—before rebounding sharply to ~KRW 4.4 bn (OPM 4.9%) in 2025. PP/PE RESIN price stabilization and structural BAG product premiumization were the primary catalysts for the 2025 margin recovery. Controlling-shareholder net income, however, continued on a gradual downward path—from ~KRW 7.2 bn in 2022 and ~KRW 7.4 bn in 2023 to ~KRW 4.0 bn in 2024 and ~KRW 3.7 bn in 2025—reflecting a progressive decline in non-operating income contributions from the rental and investment segments. Quarterly results underscore the cyclicality and volatility of the business: 2025Q2 operating profit collapsed to a near-breakeven ~KRW 35 mn before recovering to ~KRW 1.4 bn in both Q3 and Q4. Entering 2026, Q1 produced revenue of ~KRW 20.7 bn and operating profit of ~KRW 1.2 bn, modestly below the prior-year quarter (~KRW 20.9 bn revenue, ~KRW 1.6 bn operating profit), signaling that recovery momentum has cooled. The decline in operating cash flow from ~KRW 10.3 bn in 2024 to ~KRW 4.8 bn in 2025 is a notable divergence from the operating profit trend, warranting attention."
+  "ko": "원림의 연결 매출은 2022년 819억원에서 2025년 897억원으로 완만히 증가했으나, 영업이익은 2022년 34억원, 2023년 51억원, 2024년 17억원, 2025년 44억원으로 해마다 큰 변동을 보였다. 특히 2024년 영업이익률이 2.1%까지 떨어졌다가 2025년 4.9%로 회복된 점이 눈에 띄며, 이는 포장재 본업의 원가·비용 효율화가 반영된 결과로 해석된다. 다만 지배주주 순이익은 2022년 72억원, 2023년 74억원에서 2024년 40억원, 2025년 37억원으로 오히려 축소되는 흐름을 보여 영업이익 회복과 순이익 흐름이 엇갈렸다. 분기별로는 2025년 2분기 매출 203억원에 영업이익이 0.35억원에 그쳐 손익분기 수준까지 내려갔으나, 3분기(매출 210억원·영업이익 14.3억원)와 4분기(매출 275억원·영업이익 14.1억원)에는 뚜렷한 개선이 나타났다. 2026년 들어서는 1분기 매출 207억원·영업이익 12.2억원, 2분기 매출 223억원·영업이익 7.9억원을 기록했는데, 2분기는 영업이익이 전분기보다 줄었음에도 지배주주 순이익은 14.4억원으로 오히려 직전 분기(6.7억원)보다 크게 늘어 영업외 요인의 기여가 있었던 것으로 보인다. 실제로 2026년 8월 뉴스핌 보도에 따르면 회사는 상반기 매출 430억원, 영업이익 20억원(전년 동기 대비 26.4% 증가), 순이익 31억원(전년 동기 대비 77.7% 증가)을 기록했다고 밝히며 자회사 스타바이오와 한빛인베스트먼트의 실적 상승세가 연결 실적에 기여했다고 설명했다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 누적으로는 매출 약 915억원, 영업이익 약 48억원 수준으로, 연간 기준으로도 이익 회복이 이어지는 모습이다. 종합하면 포장재 본업의 마진 개선과 함께 스타바이오·한빛인베스트먼트 등 비제조 부문의 실적 변동성이 연결 손익에 함께 반영되는 구조로 이해할 필요가 있다.",
+  "en": "Wonlim's consolidated revenue rose modestly from KRW 81.9bn in 2022 to KRW 89.7bn in 2025, while operating profit fluctuated sharply across the period at KRW 3.4bn (2022), KRW 5.1bn (2023), KRW 1.7bn (2024), and KRW 4.4bn (2025). Notably, the operating margin fell to 2.1% in 2024 before recovering to 4.9% in 2025, which appears to reflect cost and expense efficiencies in the core packaging business. Owners' net income, however, moved in the opposite direction, declining from KRW 7.2bn in 2022 and KRW 7.4bn in 2023 to KRW 4.0bn in 2024 and KRW 3.7bn in 2025. On a quarterly basis, operating profit fell to near breakeven at KRW 0.35bn in the second quarter of 2025 on revenue of KRW 20.3bn, before improving clearly in the third quarter (revenue KRW 21.0bn, operating profit KRW 1.43bn) and fourth quarter (revenue KRW 27.5bn, operating profit KRW 1.41bn). Into 2026, the first quarter posted revenue of KRW 20.7bn and operating profit of KRW 1.22bn, while the second quarter recorded revenue of KRW 22.3bn and operating profit of KRW 0.79bn; despite the sequential decline in operating profit, owners' net income jumped to KRW 1.44bn from KRW 0.67bn in the prior quarter, suggesting a contribution from non-operating items. Indeed, an August 2026 Newspim report stated that the company posted first-half revenue of KRW 43.0bn and operating profit of KRW 2.0bn, up 26.4% year over year, with net income of KRW 3.1bn, up 77.7%, attributing the improvement to gains at subsidiaries Star Bio and Hanbit Investment. Over the trailing four quarters (Q3 2025 through Q2 2026), cumulative revenue reached approximately KRW 91.5bn with operating profit of roughly KRW 4.8bn, indicating a continued profit recovery on an annualized basis. Overall, the consolidated results reflect both margin improvement in the core packaging business and volatility from non-manufacturing segments such as Star Bio and Hanbit Investment."
  },
  "industry": {
-  "ko": "산업용 포장재(PP·PE BAG, 타포린) 시장의 수익성은 핵심 원자재인 PP·PE RESIN 가격에 직결되며, 이는 국제 유가와 글로벌 석유화학 공급·수요 사이클에 따라 변동한다. 2024년 OPM이 2.1%까지 급락한 주된 이유 중 하나가 원가 압박이었으며, 2025년 RESIN 가격 안정화로 마진이 빠르게 회복된 점이 이를 방증한다. 국내 BAG 시장은 소재 고급화와 정교한 인쇄·디자인 기술 발달에 따라 단가가 점진적으로 상승하는 구조적 변화가 나타나고 있어, 기존 시장 선도업체에 유리한 환경이 조성되고 있다. 친환경 패키징 전환 압박도 산업 전반에 가시화되고 있으며, 글로벌 친환경 패키징 시장은 2026~2034년 연평균 약 8.2%의 성장이 전망될 정도로 빠르게 확대되고 있다. 의료기기 시장에서는 인구 고령화를 배경으로 인공관절 수술 수요가 구조적으로 증가하고 있으며, 국내 의료기기 시장 전체는 최근 5년 연평균 약 8.8% 성장했다. 정형외과용 임플란트 세부 시장은 성숙 단계에 진입했으나 프리미엄 글로벌 브랜드의 총판 지위는 경쟁 진입 장벽으로 기능하며, 어깨관절을 포함한 제품 포트폴리오 다변화가 지속적인 성장의 열쇠가 되고 있다. 중국 석유화학 증설에 따른 RESIN 공급 과잉과 글로벌 플라스틱 규제 강화는 원림의 핵심 전방 시장에 구조적 도전으로 작용할 수 있는 장기 변수다.",
-  "en": "Profitability in the industrial packaging market (PP/PE BAG, tarpaulin) is tightly linked to PP/PE RESIN feedstock prices, which in turn track international crude oil prices and global petrochemical supply-demand cycles. The steep OPM compression to 2.1% in 2024 was materially driven by input cost pressures, and the rapid margin recovery in 2025 following RESIN price stabilization directly validates this sensitivity. The domestic BAG market is undergoing a structural shift toward higher-quality materials and sophisticated printing and design, gradually lifting average selling prices and creating a favorable backdrop for incumbent market leaders. Environmental pressure on plastic packaging is intensifying across the industry: the global green packaging market is forecast to grow at approximately 8.2% CAGR through 2034, turning sustainable packaging into both a regulatory compliance challenge and a business opportunity. In the medical device sector, Korea's total medical device market grew at approximately 8.8% CAGR over the past five years, underpinned by aging demographics driving demand for orthopedic procedures. While the structural implant sub-segment is relatively mature, premium global brand distribution rights serve as a meaningful competitive moat, and portfolio diversification into shoulder joints (Tornier) supports continued segment growth. Chinese petrochemical capacity additions and the global tightening of plastic packaging regulation represent longer-term structural challenges for Wonlim's core packaging end-market."
+  "ko": "산업용 포장재 산업은 시멘트, 석유화학, 비료, 사료 등 기간산업의 생산·물동량에 수요가 연동되는 전형적인 경기 후행형 산업이다. 국내 건설·시멘트 경기와 석유화학 업황의 등락에 따라 포장재 물량이 좌우되며, 원재료인 PE·PP 수지 가격 변동은 원가 구조에 직접 영향을 준다. 이러한 성숙 업종 특성상 포장재 부문의 성장은 제한적이며, 원림을 포함한 업계 참여자들은 원가 효율화와 고부가 제품(라미네이팅백, 타포린 등) 비중 확대를 통해 수익성을 관리하는 경향을 보인다. 반면 의료기기 유통업은 인구 고령화와 정형외과 수요 증가에 힘입어 상대적으로 안정적인 성장 기반을 갖추고 있으며, 스타바이오가 유통하는 스트라이커 인공관절·로봇수술 장비는 글로벌 브랜드 파워를 바탕으로 국내 병원 수요를 확보하고 있다. 벤처투자업은 신기술사업금융회사 및 창업투자회사 중심으로 이원화된 국내 벤처캐피탈 산업 구조 속에서, 투자조합의 회수(IPO·M&A) 성과에 따라 실적 변동성이 큰 특성을 가진다. 원림은 이처럼 성숙 제조업과 성장성 있는 의료기기·투자업을 함께 보유함으로써 업황 사이클에 대한 노출을 부문별로 분산하는 구조를 취하고 있다.",
+  "en": "The industrial packaging sector is a classically cycle-following industry, with demand tied to output and freight volumes in base industries such as cement, petrochemicals, fertilizer, and feed. Packaging volumes are influenced by swings in domestic construction, cement, and petrochemical activity, while raw material costs for PE and PP resin directly affect the cost structure. Given the maturity of this segment, growth in packaging is limited, and industry participants including Wonlim tend to manage profitability through cost efficiency and a greater mix of higher-value products such as laminated bags and tarpaulins. By contrast, the medical device distribution business benefits from a relatively stable growth foundation driven by an aging population and rising orthopedic demand, with Star Bio's distribution of Stryker's implants and robotic surgery equipment leveraging global brand strength to secure hospital demand domestically. The venture investment business operates within Korea's dual-track venture capital industry structure of new-technology finance companies and startup investment firms, and its results tend to be volatile depending on exit outcomes such as IPOs or M&A from investment partnerships. By holding both a mature manufacturing business and higher-growth medical device and investment operations, Wonlim spreads its exposure to different industry cycles across segments."
  },
  "outlook": {
-  "ko": "2026년 상반기 기준(2026Q1) 매출·영업이익 모두 전년 동기 대비 소폭 감소하면서 회복 속도는 완만한 수준에 머물고 있다. 포장재 부문은 PP·PE RESIN 가격 안정화가 유지되는 한 마진 방어가 가능하겠지만, 글로벌 유가 변동성이나 중국 석유화학 증설 효과가 RESIN 가격에 영향을 줄 경우 수익성은 빠르게 악화될 수 있다. BAG 시장 고급화 흐름에서 원림의 높은 점유율이 단가 협상력으로 이어진다면 OPM 5% 내외 수준의 유지 가능성이 있다. 의료기기 부문은 STRYKER·Tornier 총판 계약의 지속성이 확보되는 한 인구 고령화에 따른 안정적 성장이 기대되며, 특히 어깨관절 수술 수요 증가는 포트폴리오 다변화 측면에서 긍정적이다. 친환경 포장재 사업은 롯데케미칼과의 협력을 포함해 구체적인 매출 기여가 확인될 경우 중장기 신규 성장 동인이 될 수 있으나, 현재 공개된 실적에서 그 규모는 아직 식별되지 않는다. 임대사업부문의 안정 수익과 금융투자 포트폴리오의 성과가 비영업 손익의 방향을 결정하는 만큼, 금리·자산시장 환경 변화에 대한 모니터링도 필요하다. 부채비율 20% 미만의 재무 여력은 설비 증설이나 신규 총판 계약 확보를 위한 대응 투자를 뒷받침한다.",
-  "en": "Early 2026 results (2026Q1) show modest YoY declines in both revenue and operating profit, indicating that recovery is proceeding at a measured rather than accelerating pace. The packaging segment can defend margins as long as PP/PE RESIN prices remain contained, but global crude oil volatility or Chinese petrochemical capacity additions could rapidly compress profitability. If Wonlim's dominant market position translates into effective selling price improvements alongside the ongoing BAG premiumization trend, sustaining OPM around the 5% range appears feasible. The medical device segment should deliver steady aging-driven growth provided STRYKER and Tornier distribution agreements remain intact; growing shoulder joint surgery volumes represent an additional portfolio diversification positive. The eco-friendly packaging business, pursued in collaboration with Lotte Chemical, holds potential as a medium-to-long-term growth driver if order and revenue contributions are confirmed in subsequent disclosures, though their scale has not yet been quantified in public filings. The rental and financial investment segments' contributions to non-operating income will be shaped by broader interest rate and asset market conditions. With debt-to-equity below 20%, the balance sheet provides ample capacity for capacity additions, new distribution agreements, or other strategic investments."
+  "ko": "회사는 2026년 8월 실적 발표 시 관계자를 통해 \"기존 산업용 포장재 사업의 원가·비용 효율화를 지속하는 한편 신규 병원 및 거래처 확대와 투자 포트폴리오 관리를 통해 안정적인 성장 기반을 강화해 나갈 것\"이라고 밝혔다. 이는 포장재 본업에서는 원가 관리를 통한 수익성 방어를, 의료기기 부문에서는 스타바이오의 거래처 확대를 통한 외형 성장을, 투자 부문에서는 한빛인베스트먼트가 운용하는 투자조합의 포트폴리오 관리를 통한 수익 창출을 각각 지속하겠다는 방향으로 해석된다. 다만 회사가 구체적인 증설 계획이나 신규 대규모 수주에 대한 공시를 별도로 내놓은 사실은 확인되지 않아, 실제 실행 여부는 이후 분기 공시를 통해 점검해야 한다. 포장재 부문은 전방 산업인 시멘트·석유화학 경기에 따라 물량 변동이 좌우될 수 있어, 관련 업황 지표를 함께 살펴볼 필요가 있다. 스타바이오는 스트라이커와의 유통 관계를 기반으로 지방 지사 확대 등 영업망 확충을 지속해온 만큼, 신규 병원 거래처 확보 속도가 향후 실적의 주요 변수가 될 수 있다. 한빛인베스트먼트가 운용하는 신기술투자조합의 경우 투자기업의 IPO·M&A 등 회수 이벤트가 발생할 때 분기별 순이익에 큰 영향을 줄 수 있어, 특정 분기의 순이익 급증락은 이러한 비영업적 요인의 결과일 가능성을 함께 고려해야 한다.",
+  "en": "In its August 2026 earnings release, a company representative stated that the firm would continue cost and expense efficiencies in the core industrial packaging business while expanding new hospital and client relationships and managing its investment portfolio to reinforce a stable growth base. This suggests the company intends to defend profitability through cost management in packaging, pursue top-line growth via Star Bio's client expansion in medical devices, and generate returns through Hanbit Investment's portfolio management in the financial investment segment. However, no specific disclosure of capacity expansion plans or large new orders has been confirmed, so actual execution should be monitored through subsequent quarterly filings. The packaging segment's volumes may continue to be influenced by cement and petrochemical industry conditions, warranting attention to related sector indicators. Star Bio has continued to expand its sales network, including regional branches, based on its distribution relationship with Stryker, making the pace of new hospital client acquisition a key variable for future results. For Hanbit Investment's new-technology investment partnerships, exit events such as IPOs or M&A involving portfolio companies can significantly affect quarterly net income, so sharp swings in net income in any given quarter may reflect such non-operating factors."
  },
  "valuation_comment": {
-  "ko": "원림의 주가는 주당순자산(BPS 61,375원) 대비 현저히 낮은 수준에서 거래되고 있어, 보유 자산 가치에 비해 시장이 부여하는 프리미엄이 거의 없는 구간에 위치한다. 이러한 깊은 순자산 할인은 단일 사유보다는 복합기업 할인(4개 사업부문의 가치 합산 어려움), 최대주주 집중에 따른 극히 낮은 유통 주식 수, 그리고 4년 연속 하향 추세를 보인 지배주주 귀속 이익의 성장 가시성 제한이 맞물린 구조적 결과다. 주당배당금(DPS) 460원은 꾸준히 유지되어 배당 안정성을 제공하며, 배당수익률은 코스피 섬유·의류 업종 평균을 상회하는 수준으로 추산되어 현금 수익 측면의 매력은 존재한다. 그러나 배당 매력만으로는 순자산 할인 해소에 한계가 있으며, 영업이익 회복이 지속적 이익 성장으로 전환되어야 밸류에이션 재평가의 여지가 열린다. 임대·금융투자 등 비영업 자산의 가치가 시장에서 보수적으로 평가받는 현 상황에서는, 주주환원 강화나 사업 재편을 통한 가치 가시화 여부가 순자산 할인 축소의 핵심 촉매로 작용할 수 있다.",
-  "en": "Wonlim's shares trade at a substantial discount to per-share book value (BPS KRW 61,375), placing the stock in deep net asset value discount territory with little to no market premium for the underlying asset base. This persistent discount reflects a confluence of structural factors: a conglomerate discount arising from the complexity of valuing four distinct business segments in aggregate, severely limited public float from concentrated ownership above 60%, and constrained earnings growth visibility given four consecutive years of declining controlling-shareholder net income. The annual cash dividend (DPS KRW 460) has been consistently maintained, providing a degree of return assurance; the implied dividend yield is estimated to exceed the KOSPI textile-sector average, lending income appeal. However, dividend support alone is unlikely to drive a meaningful rerating—sustained operational earnings improvement is the prerequisite for bridging the valuation gap. With non-operating assets such as investment properties and the financial portfolio assessed conservatively by the market, a credible catalyst—whether enhanced shareholder returns, capital restructuring, or transparent disclosure of non-core asset values—appears necessary to accelerate any meaningful compression of the net asset discount."
+  "ko": "원림의 주가는 순자산가치 대비 상당한 할인 상태에서 거래되는 것으로 나타나며, 이는 포장재·투자·의료기기 부문을 함께 보유한 지주회사성 기업이 시장에서 받는 통상적인 디스카운트와 맞닿아 있을 수 있다. 최근 네 개 분기 기준 이익이 회복세를 보이면서 이익 대비 주가 배수도 과거 거래 밴드 안에서 등락하는 모습이며, 2024년 영업이익 급감기와 비교하면 이익 회복이 배수 산정의 기초 체력을 뒷받침하고 있다. 배당의 경우 공시된 주당현금배당금을 기준으로 볼 때 업종 평균 대비 낮지 않은 수준을 보이나, 배당수익률은 주가 변동에 따라 매일 달라지므로 절대 수준에 대한 평가는 화면에 표시되는 값을 참고할 필요가 있다. 지배주주 순이익이 연도별로 등락한 만큼 주당 지표에 기반한 평가 역시 특정 시점의 일회성 요인에 영향을 받을 수 있어, 다년간의 이익 흐름을 함께 살펴보는 것이 중요하다. 종속회사인 스타바이오와 한빛인베스트먼트의 실적 기여가 커질수록 연결 재무제표상 시장가치와 부문별 실질가치 간의 관계도 함께 주목할 부분이다.",
+  "en": "Wonlim's shares appear to trade at a notable discount to net asset value, which may relate to the discount that markets often apply to holding-company-style businesses spanning packaging, investment, and medical device segments. As earnings over the trailing four quarters have shown a recovery, the price-to-earnings multiple has moved within a range consistent with past trading bands, with the earnings recovery relative to the sharp operating profit decline in 2024 underpinning the fundamentals behind that multiple. On dividends, the disclosed per-share cash dividend appears not low relative to the industry average, though the dividend yield changes daily with the share price, so the absolute level is best referenced from real-time displayed figures. Because owners' net income has fluctuated year to year, valuation based on per-share metrics can also be affected by one-off factors in a given period, making it important to consider the multi-year earnings trend together. As the earnings contribution from subsidiaries Star Bio and Hanbit Investment grows, the relationship between the consolidated market value and the segment-level intrinsic value also merits attention."
  },
  "bull": [
   {
    "title": {
-    "ko": "국내 PP·PE BAG 시장 약 60% 점유 — 구조적 시장 지배력",
-    "en": "~60% domestic PP/PE BAG market share — structural competitive moat"
+    "ko": "포장재 본업 수익성 회복",
+    "en": "Core Packaging Profitability Recovery"
    },
    "body": {
-    "ko": "국내 산업용 PP·PE BAG 시장에서 약 60%의 점유율을 보유해 후발 경쟁사 대비 스케일·가격 협상력·고객 관계에서 뚜렷한 우위를 갖는다. 국내 주요 유화업체를 안정적 고객으로 확보하고 있어 원재료 수급과 제품 판로가 긴밀히 연동된 안정적 수직 구조를 형성한다. BAG 시장의 소재 고급화와 인쇄·디자인 발달이 구조적으로 진행되고 있어 고부가가치 제품 믹스 개선과 단가 상승 기회가 중장기적으로 존재한다.",
-    "en": "Approximately 60% domestic market share in PP/PE industrial BAG confers clear advantages in scale, pricing negotiation, and customer relationships over potential new entrants. Stable supply relationships with major domestic petrochemical companies create a tightly integrated pipeline from raw materials to finished product placement. The ongoing structural shift toward premium, high-design BAG products provides a medium-to-long-term tailwind for product mix improvement and higher average selling prices."
+    "ko": "2025년 영업이익률이 2024년 2.1%에서 4.9%로 뚜렷하게 개선됐고, 2026년 상반기에도 영업이익이 전년 동기 대비 26.4% 늘어난 것으로 발표됐다. 이는 원가·비용 효율화가 실제 실적에 반영되고 있음을 보여준다. 포장재 본업의 마진 개선이 지속될 경우 연결 실적의 안정성이 높아질 수 있다.",
+    "en": "The 2025 operating margin improved clearly to 4.9% from 2.1% in 2024, and first-half 2026 operating profit was reported to have grown 26.4% year over year. This indicates that cost and expense efficiencies are being reflected in actual results. Continued margin improvement in the core packaging business could enhance the stability of consolidated earnings."
    }
   },
   {
    "title": {
-    "ko": "극저 부채비율과 대규모 순자산 — 강건한 재무 안전판",
-    "en": "Ultra-low leverage and substantial net asset base — strong financial buffer"
+    "ko": "의료기기 유통 부문의 구조적 수요",
+    "en": "Structural Demand in Medical Device Distribution"
    },
    "body": {
-    "ko": "부채비율 약 19%의 극히 낮은 레버리지와 자기자본 약 1,591억원의 탄탄한 재무구조가 금리 상승·경기 하강에 대한 내구성을 제공한다. 임대용 부동산과 금융투자 포트폴리오가 순자산을 지지하여 주가 하방 리스크를 구조적으로 제한한다. 강건한 재무구조는 친환경 포장재 설비 투자, 의료기기 총판 라인업 확장 등 전략적 성장 기회에 대응할 수 있는 충분한 투자 여력을 유지한다.",
-    "en": "An extremely conservative debt-to-equity ratio of approximately 19% and total equity of ~KRW 159.1 bn provide strong resilience against interest rate increases and economic downturns. Investment properties and a financial portfolio underpin the net asset base, structurally limiting downside risk to the stock. This robust financial structure preserves the capacity to fund eco-friendly packaging capacity additions, medical device distribution line extensions, and other strategic growth investments without requiring external financing."
+    "ko": "자회사 스타바이오는 글로벌 브랜드 스트라이커의 국내 총판으로서 인공관절 임플란트와 로봇수술 장비를 공급하며, 인구 고령화에 따른 정형외과 수요 증가라는 구조적 성장 기반을 갖고 있다. 2026년 상반기 실적 개선의 주요 배경으로 스타바이오의 외형 성장이 지목됐다. 지방 지사망을 통한 신규 병원·거래처 확대가 이어지고 있다.",
+    "en": "Subsidiary Star Bio, as the domestic distributor for global brand Stryker, supplies orthopedic implants and robotic surgery equipment, giving it a structural growth foundation tied to rising orthopedic demand from an aging population. Star Bio's top-line growth was cited as a key driver of the first-half 2026 earnings improvement. Expansion of new hospital and client relationships through its regional branch network continues."
    }
   },
   {
    "title": {
-    "ko": "의료기기 부문의 고령화 구조적 수혜와 포트폴리오 다변화",
-    "en": "Aging-driven structural growth in medical devices with portfolio diversification"
+    "ko": "투자부문의 추가 수익 기여 가능성",
+    "en": "Potential Additional Contribution from the Investment Segment"
    },
    "body": {
-    "ko": "인공관절 수술 수요는 한국의 급속한 인구 고령화에 따라 구조적으로 확대되고 있으며, STRYKER·Tornier 글로벌 선도 브랜드의 국내 총판이 프리미엄 의료기기 시장에 대한 안정적 노출을 제공한다. Tornier 어깨관절 제품 총판 계약 추가로 정형외과용 임플란트 포트폴리오가 다변화돼 단일 제품 의존도가 낮아졌다. 상대적으로 높은 마진의 의료기기 유통 사업은 원재료 가격에 민감한 포장재 부문의 수익 사이클을 보완하는 안정자 역할을 수행한다.",
-    "en": "Demand for artificial joint procedures is structurally rising as Korea's population ages rapidly, and exclusive distribution rights for global leaders STRYKER and Tornier provide durable, premium-segment exposure to this demographic trend. The addition of Tornier shoulder joint products has diversified the orthopedic implant portfolio, reducing concentration in any single product line. The relatively higher-margin medical device distribution business complements the more cyclical, raw-material-sensitive packaging segment, contributing meaningful earnings stability."
+    "ko": "한빛인베스트먼트는 신기술사업금융회사로서 벤처기업 투자조합을 운용하며, 투자기업의 IPO·M&A 등 회수 성과가 발생할 경우 연결 순이익에 추가적으로 기여할 수 있다. 2026년 2분기 지배주주 순이익이 영업이익 감소에도 전분기보다 크게 늘어난 점은 이러한 투자수익 기여 가능성을 보여준다. 벤처투자업 특유의 실적 변동성은 상방과 하방을 함께 내재하고 있다.",
+    "en": "Hanbit Investment, as a new-technology finance company, manages venture investment partnerships that can contribute additional consolidated net income when exit events such as IPOs or M&A occur at portfolio companies. The fact that owners' net income in the second quarter of 2026 rose significantly from the prior quarter despite a decline in operating profit illustrates this potential investment income contribution. The volatility inherent to venture investment cuts in both directions."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "지배주주 귀속 순이익의 4년 연속 하향 추세",
-    "en": "Four consecutive years of declining controlling-shareholder net income"
+    "ko": "포장재 업황의 경기 후행 리스크",
+    "en": "Cyclical Lag Risk in the Packaging Business"
    },
    "body": {
-    "ko": "2025년 영업이익이 반등했음에도 불구하고 지배주주 귀속 순이익은 2022년 약 72억원에서 2025년 약 37억원으로 4년 연속 하향 추세를 기록했다. 임대·금융투자 등 비영업 손익의 기여가 점차 감소하면서 주주 귀속 이익의 가시성과 예측 가능성이 낮아졌다. 2026Q1에도 전년 동기 대비 이익이 소폭 감소하며 회복 모멘텀이 아직 충분히 확인되지 않은 상태다.",
-    "en": "Despite the operating profit rebound in 2025, controlling-shareholder net income declined from ~KRW 7.2 bn in 2022 to ~KRW 3.7 bn in 2025—a four-year consecutive downtrend. Diminishing contributions from non-operating sources (rental and investment income) have reduced the predictability and visibility of shareholder-attributed earnings. The modest YoY profit decline in 2026Q1 further signals that the recovery has yet to establish a clear and durable upward trajectory."
+    "ko": "포장재 수요는 시멘트, 석유화학, 비료, 사료 등 기간산업의 물동량에 연동되는 성숙 업종 특성을 갖고 있어 자체적인 성장 동력이 제한적이다. 2024년 영업이익률이 2.1%까지 급락했던 사례는 원가·수요 여건 변화에 따른 민감도를 보여준다. 전방 산업 경기가 둔화될 경우 본업 실적이 다시 흔들릴 가능성이 있다.",
+    "en": "Packaging demand is tied to volumes in mature base industries such as cement, petrochemicals, fertilizer, and feed, limiting organic growth drivers. The sharp drop in the operating margin to 2.1% in 2024 illustrates sensitivity to cost and demand conditions. A slowdown in downstream industry activity could again weigh on core business results."
    }
   },
   {
    "title": {
-    "ko": "분기 이익의 높은 변동성과 극히 낮은 주식 유동성",
-    "en": "High quarterly earnings volatility and extremely thin trading liquidity"
+    "ko": "지배주주 순이익의 하락 추세",
+    "en": "Declining Trend in Owners' Net Income"
    },
    "body": {
-    "ko": "2025Q2 영업이익이 약 3,500만원으로 손익분기 수준에 그치는 등 분기 이익 변동폭이 매우 크며, RESIN 가격 급변·계절 수요 편중·일회성 비용이 복합적으로 작용한다. 총발행주식 약 230만주에 최대주주 지분이 60% 이상을 차지하는 구조로 유통 물량이 극히 제한적이어서 기관투자자 참여가 어렵고 주가 변동성이 확대될 수 있다. 영업활동 현금흐름이 2025년 약 48억원으로 전년의 약 103억원 대비 크게 감소한 것도 이익 품질 측면에서 유의할 필요가 있다.",
-    "en": "As evidenced by 2025Q2 operating profit of merely ~KRW 35 mn—near-breakeven—quarterly earnings volatility is significant, driven by RESIN price swings, seasonal demand concentration, and periodic one-off charges. The total share count of approximately 2.3 mn shares combined with majority-shareholder ownership above 60% results in an extremely thin public float, discouraging institutional participation and amplifying price volatility on any directional trade. The sharp drop in operating cash flow from ~KRW 10.3 bn in 2024 to ~KRW 4.8 bn in 2025 also raises questions about underlying earnings quality."
+    "ko": "지배주주 순이익은 2023년 74억원에서 2024년 40억원, 2025년 37억원으로 2년 연속 줄었으며, 이는 같은 기간 영업이익 회복과 엇갈리는 흐름이다. 비지배주주 지분(약 326억원, 전체 자본의 약 20%)이 상당한 만큼 연결 순이익 중 지배주주 귀속 비율에도 유의할 필요가 있다. 순이익의 질적 구성을 함께 살펴봐야 한다.",
+    "en": "Owners' net income declined for two consecutive years, from KRW 7.4bn in 2023 to KRW 4.0bn in 2024 and KRW 3.7bn in 2025, diverging from the operating profit recovery over the same period. With non-controlling interests representing a sizable share of equity (approximately KRW 32.6bn, or roughly 20% of total equity), attention should be paid to the proportion of consolidated net income attributable to owners. The qualitative composition of net income warrants closer examination."
    }
   },
   {
    "title": {
-    "ko": "RESIN 원가 노출과 친환경 규제 전환 압박",
-    "en": "RESIN cost exposure and eco-regulation transition pressure"
+    "ko": "분기 실적의 높은 변동성",
+    "en": "High Quarter-to-Quarter Earnings Volatility"
    },
    "body": {
-    "ko": "포장재 부문 수익성은 PP·PE RESIN 가격에 민감하게 반응하며, 국제 유가 상승이나 중국 석유화학 가동률 변화에 따라 마진이 급변할 수 있다. 2024년 OPM이 2.1%까지 급락한 주요 원인 중 하나가 원가 압박이었다는 점에서 이 리스크는 현실화된 바 있다. 글로벌 친환경 포장 규제가 강화될 경우 기존 PP·PE BAG 중심의 제품 구조가 구조적 도전에 직면할 수 있으며, 재활용·바이오 기반 포장재로의 전환에는 상당한 설비 투자 부담이 수반될 수 있다.",
-    "en": "Packaging segment profitability is highly sensitive to PP/PE RESIN costs, which can shift sharply with international crude oil prices or changes in Chinese petrochemical operating rates. This risk materialized clearly in 2024, when RESIN cost pressures contributed to OPM compressing to 2.1%. Additionally, tightening global environmental regulations targeting plastic packaging may structurally challenge the conventional PP/PE BAG product range, potentially imposing significant capital expenditure requirements for a transition to recyclable or bio-based alternatives."
+    "ko": "2025년 2분기 영업이익이 0.35억원까지 낮아졌던 것처럼, 분기별 영업이익과 순이익의 변동폭이 상당히 크다. 투자부문의 회수 성과나 일회성 요인이 특정 분기 실적을 좌우할 수 있어 단일 분기 실적만으로 추세를 판단하기 어렵다. 연간 및 다년 흐름을 함께 확인하는 것이 필요하다.",
+    "en": "As seen when operating profit fell to just KRW 0.035bn in the second quarter of 2025, quarterly operating profit and net income have shown considerable swings. Exit gains in the investment segment or other one-off factors can dominate a given quarter's results, making it difficult to judge trends from a single quarter alone. Reviewing annual and multi-year trends together is necessary."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "원자재 가격 리스크",
-    "en": "Raw Material Price Risk"
+    "ko": "원재료·원가 리스크",
+    "en": "Raw Material and Cost Risk"
    },
    "body": {
-    "ko": "핵심 원재료 PP·PE RESIN 가격은 국제 유가 및 글로벌 석유화학 공급 변동에 연동되어 예측이 어렵다. 원가 상승분을 제품 가격에 전가하지 못할 경우 영업이익률이 급격히 악화될 수 있으며, 2024년의 OPM 2.1%가 그 극단적 사례다. 헤지 전략 또는 장기 공급 계약 세부 내용이 공개되지 않아 원가 충격에 대한 방어력을 외부에서 평가하기 어려운 구조다.",
-    "en": "PP/PE RESIN—the primary raw material—is tightly linked to international crude prices and global petrochemical supply dynamics, making cost prediction inherently difficult. Failure to pass input cost increases through to customers can cause sharp margin deterioration, as the 2.1% OPM recorded in 2024 demonstrated. The absence of publicly disclosed hedging strategies or long-term supply agreements makes it challenging for external observers to assess the degree of protection against cost shocks."
+    "ko": "포장재 부문은 PE·PP 등 석유화학 수지를 원재료로 사용해 국제 유가 및 석유화학 제품 가격 변동에 원가가 직접 영향을 받는다. 원재료 가격이 상승할 경우 판가 반영이 지연되면 마진이 압박될 수 있다. 2024년의 영업이익률 급락은 이러한 원가 민감도의 사례로 볼 수 있다.",
+    "en": "The packaging segment uses petrochemical resins such as PE and PP as raw materials, making costs directly sensitive to global oil prices and petrochemical product price movements. If raw material prices rise and pass-through to selling prices is delayed, margins could be squeezed. The sharp drop in the 2024 operating margin can be viewed as an example of this cost sensitivity."
    }
   },
   {
    "cat": {
-    "ko": "낮은 시장 유동성 및 지분 집중 리스크",
-    "en": "Low Market Liquidity and Ownership Concentration Risk"
+    "ko": "투자부문 실적 변동 리스크",
+    "en": "Investment Segment Earnings Volatility Risk"
    },
    "body": {
-    "ko": "총발행주식 약 230만주 중 최대주주 및 특수관계인이 60% 이상을 보유해 실질 유통 물량이 극히 적다. 유동성 부족은 대량 매매 시 주가 충격 확대, 기관·외국인 유인 제한, 시장 정보 반영 속도 저하로 이어질 수 있다. 지분 집중 구조에서는 소액주주의 주주권 행사에도 실질적 제약이 존재한다.",
-    "en": "With approximately 60% of total shares of ~2.3 mn held by the largest shareholder and related parties, the effective public float is extremely limited. Thin liquidity amplifies price impact on block trades, restricts the institutional and foreign investor universe, and slows the incorporation of new information into the share price. The concentrated ownership structure also places practical limits on the ability of minority shareholders to influence corporate governance outcomes."
+    "ko": "한빛인베스트먼트가 운용하는 신기술투자조합은 투자기업의 상장·매각 성과에 따라 회수 규모가 크게 달라지는 벤처캐피탈 업종 특유의 리스크를 갖고 있다. 특정 분기에 큰 회수 이익이 인식되면 순이익이 급증할 수 있지만, 반대의 경우 순이익이 크게 줄어들 수도 있다. 이 부문의 실적은 예측하기 어려운 비영업적 변동성을 내재한다.",
+    "en": "The new-technology investment partnerships managed by Hanbit Investment carry the venture-capital-industry-specific risk that exit proceeds vary greatly depending on the listing or sale outcomes of portfolio companies. If a large exit gain is recognized in a given quarter, net income can spike; the reverse can also sharply reduce net income. This segment's results carry inherently unpredictable non-operating volatility."
    }
   },
   {
    "cat": {
-    "ko": "친환경·ESG 규제 전환 리스크",
-    "en": "Eco-Regulatory and ESG Transition Risk"
+    "ko": "의료기기 유통 계약·정책 리스크",
+    "en": "Medical Device Distribution Contract and Policy Risk"
    },
    "body": {
-    "ko": "국내외 친환경 포장 규제 강화는 플라스틱 기반 PP·PE BAG 수요 감소 및 소재 전환 투자 압박으로 이어질 수 있다. 롯데케미칼과의 재활용 포장재 협력은 긍정적 출발점이나, 전체 포장재 매출에서의 기여 규모와 속도는 아직 공개 데이터로 확인되지 않는다. 주요 고객사(유화업체)의 ESG 전환 의무 강화가 맞물릴 경우 기존 제품 라인업에 대한 수요 축소 속도가 예상보다 빠를 수 있다.",
-    "en": "Tightening domestic and international environmental regulations on plastic packaging may suppress demand for conventional PP/PE BAGs and impose capital expenditure pressures for material substitution. While the recyclable packaging collaboration with Lotte Chemical marks a constructive first step, the revenue scale and pace of contribution have not been quantified in public disclosures. If major customers (petrochemical companies) face intensified ESG compliance obligations of their own, demand for conventional BAG products could erode faster than currently assumed."
+    "ko": "스타바이오의 실적은 스트라이커와의 총판 계약 관계에 크게 의존하고 있어, 계약 조건 변경이나 공급 관계 변화가 발생할 경우 사업 기반에 영향을 줄 수 있다. 또한 건강보험 급여 정책, 의료기기 관련 규제 변화도 정형외과용 임플란트 판매에 영향을 미칠 수 있는 요인이다. 특정 해외 브랜드에 대한 의존도가 높은 유통 구조의 특성상 이러한 리스크에 유의할 필요가 있다.",
+    "en": "Star Bio's performance depends heavily on its distribution agreement with Stryker, so changes to contract terms or the supply relationship could affect its business foundation. Health insurance reimbursement policy and medical device regulatory changes are also factors that could influence orthopedic implant sales. Given the distribution structure's heavy reliance on a single overseas brand, this risk warrants attention."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 초 (2026Q2 실적 발표)",
-    "en": "Early August 2026 (2026Q2 earnings release)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2025Q2 영업이익이 약 3,500만원으로 사실상 손익분기에 그쳤던 패턴이 반복되는지 여부를 확인. 포장재 OPM의 전년 동기 대비 개선 폭과 의료기기 부문의 매출 성장 지속 여부가 핵심 체크포인트다.",
-    "en": "Determine whether the near-breakeven operating profit (~KRW 35 mn) seen in 2025Q2 recurs or improves meaningfully YoY. Key metrics to watch: packaging segment OPM trajectory and whether the medical device segment sustains revenue growth versus the prior-year quarter."
+    "ko": "3분기 보고서 공시를 통해 포장재 본업 마진과 스타바이오·한빛인베스트먼트의 3분기 실적 기여도를 확인해야 한다.",
+    "en": "Check the third-quarter report filing to confirm core packaging margins and the quarterly contribution from Star Bio and Hanbit Investment."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 상시 (PP·PE RESIN 가격 동향)",
-    "en": "Ongoing through H2 2026 (PP/PE RESIN price trend monitoring)"
+    "ko": "2026년 4분기 중",
+    "en": "During the fourth quarter of 2026"
    },
    "what": {
-    "ko": "국제 유가 흐름과 중국 석유화학 증설 동향에 따른 PP·PE RESIN 가격 변동을 추적. 2024년과 같은 원가 급등이 재현될 경우 영업이익 마진이 다시 급락할 수 있어 분기별 원가 압박 수준을 점검할 필요가 있다.",
-    "en": "Track PP/PE RESIN price movements against international crude oil trends and Chinese petrochemical capacity additions. A repeat of 2024-style input cost spikes could compress operating margins sharply again, making quarterly raw material cost monitoring a priority."
+    "ko": "스타바이오의 신규 병원·거래처 확대 진행 상황과 관련 공시·보도가 나올 경우 의료기기 부문 성장 속도를 점검할 수 있다.",
+    "en": "Watch for disclosures or news on Star Bio's progress in expanding new hospital and client relationships to gauge the growth pace of the medical device segment."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (STRYKER·Tornier 총판 계약 동향)",
-    "en": "H2 2026 (STRYKER/Tornier distribution contract status)"
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "의료기기 부문 핵심 수익원인 STRYKER 및 Tornier 총판 계약의 갱신·확대 여부를 공시 및 IR 채널을 통해 확인. 계약 조건 변경이나 새로운 경쟁 총판사 등장 여부가 부문 성장 궤적에 미치는 영향을 점검해야 한다.",
-    "en": "Monitor DART disclosures and IR communications for updates on the renewal and potential expansion of STRYKER and Tornier exclusive distribution agreements, which are the primary drivers of medical device segment revenue. Any changes in contract terms or emergence of competing distributors could materially alter the segment's growth trajectory."
+    "ko": "2026년 사업연도 연간 사업보고서·감사보고서 공시를 통해 연간 영업이익률 회복의 지속 여부와 지배주주 순이익 흐름을 재확인해야 한다.",
+    "en": "Review the annual business report and audit report for fiscal year 2026 to reassess whether the operating margin recovery continued and to check the trend in owners' net income."
    }
   },
   {
    "when": {
-    "ko": "2027년 3월 (2026년 사업보고서 및 배당 발표)",
-    "en": "March 2027 (FY2026 annual report and dividend announcement)"
+    "ko": "2027년 3월 정기주주총회 전후",
+    "en": "Around the March 2027 annual shareholders' meeting"
    },
    "what": {
-    "ko": "2026년 연간 영업이익 회복세의 지속 여부와 지배주주 귀속 순이익의 방향 전환 여부를 확인. DPS 460원의 유지 또는 상향 조정 여부가 경영진의 주주환원 의지를 가늠하는 지표가 된다.",
-    "en": "Assess whether FY2026 operating profit recovery is sustained into the full year and whether controlling-shareholder net income reverses its multi-year downtrend. A DPS maintained at or above KRW 460 would signal management's commitment to shareholder returns and reinforce dividend-yield-based valuation support."
+    "ko": "2026년 결산배당 관련 공시를 통해 주당현금배당금 수준의 변동 여부를 확인해야 한다.",
+    "en": "Check the disclosure on the fiscal year 2026 year-end dividend to see whether the per-share cash dividend level has changed."
    }
   },
   {
    "when": {
-    "ko": "미확정 (친환경 포장재 사업 구체화 시점)",
-    "en": "TBD (eco-friendly packaging business milestone disclosure)"
+    "ko": "수시(공시 발생 시)",
+    "en": "On an ongoing basis (as disclosed)"
    },
    "what": {
-    "ko": "롯데케미칼 협력 등 친환경 재활용 포장재 사업의 매출 기여 규모 또는 설비 투자 계획이 DART 공시나 IR을 통해 수치로 확인되는 시점. 신제품 인증 취득 및 고객사 수주 현황이 장기 성장 방향의 선행 신호가 될 수 있다.",
-    "en": "Watch for quantified revenue contributions from the recyclable packaging collaboration with Lotte Chemical, or announcement of related capital expenditure plans, via DART disclosures or IR communications. New product regulatory certifications and customer order flows for eco-friendly products will serve as leading indicators for the company's medium-to-long-term growth path."
+    "ko": "한빛인베스트먼트가 운용하는 투자조합의 포트폴리오 기업 IPO·M&A 등 회수 이벤트 관련 공시나 보도가 나올 경우 해당 분기 순이익에 미치는 영향을 점검해야 한다.",
+    "en": "Monitor for disclosures or reports on exit events such as IPOs or M&A involving portfolio companies of Hanbit Investment's investment partnerships and assess their impact on that quarter's net income."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "원림은 국내 PP·PE BAG 시장의 약 60% 점유라는 독보적 시장 지배력, 임대·금융투자·의료기기를 아우르는 다각화된 사업 구조, 그리고 부채비율 20% 미만의 보수적 재무 건전성을 갖춘 코스피 중견 상장사다. 2025년 영업이익은 2024년 저점 대비 큰 폭으로 회복됐으나, 지배주주 귀속 순이익은 4년 연속 하향 추세를 기록하며 수익 회복의 지속 가능성에 대한 추가 검증이 필요하다. 주가는 주당순자산(BPS 61,375원) 대비 현저히 낮은 수준에서 거래되고 있는데, 이는 복합기업 할인·극히 낮은 유통 물량·이익 성장 가시성 제한의 복합 결과로 해석되며, 단기에 해소될 구조적 이슈다. 단기 모니터링의 핵심은 PP·PE RESIN 가격 안정화 지속 여부, 2026Q2부터의 분기 영업이익 개선 확인, STRYKER·Tornier 총판 계약 유지의 세 가지다. 중장기적으로는 친환경 포장재 사업 매출 기여의 구체화와 주주환원 정책 방향이 순자산 할인 축소의 핵심 촉매가 될 수 있다. 종합하면, 낮은 부채와 풍부한 자산 기반이 하방을 구조적으로 제한하는 반면, 지속적인 이익 성장의 증거 없이는 밸류에이션 재평가가 단기에 나타나기 어려운 상황이다.",
-   "en": "Wonlim is a mid-cap KOSPI company with near-monopoly standing in Korea's industrial PP/PE BAG market (~60% share), a four-segment diversified business structure spanning real estate rental, financial investment, and medical device distribution, and a conservatively leveraged balance sheet with debt-to-equity below 20%. The 2025 operating profit staged a meaningful recovery from its 2024 trough, but controlling-shareholder net income has declined for four consecutive years, warranting further evidence before concluding that the earnings recovery is durable. Shares trade at a substantial discount to per-share book value (BPS KRW 61,375), reflecting a combination of conglomerate discount, minimal public float from concentrated ownership, and limited earnings growth visibility—all structural factors not easily resolved in the near term. Immediate monitoring priorities are threefold: the continuation of PP/PE RESIN price stability through H2 2026, evidence of quarterly operating profit improvement from 2026Q2 onwards, and confirmed renewal of the STRYKER and Tornier distribution agreements. Over the medium-to-long term, quantified revenue contributions from the eco-friendly packaging initiative and any enhancement of shareholder return policy are the key catalysts capable of gradually narrowing the persistent net asset discount. In summary, the asset-rich, low-leverage foundation structurally limits downside, but a material share price re-rating is unlikely to materialize without clear and sustained earnings momentum to validate the recovery thesis."
+   "ko": "원림은 산업용 포장재 제조를 본업으로 하면서 임대업, 신기술금융(한빛인베스트먼트), 의료기기 유통(스타바이오)까지 사업 영역을 다각화한 구조를 갖고 있다. 2025년 영업이익률이 2024년 2.1%에서 4.9%로 회복됐고 2026년 상반기에도 영업이익이 전년 동기 대비 늘어난 것으로 발표되며 본업의 수익성 개선 흐름이 이어지고 있다. 다만 지배주주 순이익은 2023년 이후 2년 연속 줄어드는 등 영업이익 회복과 다른 방향을 보여, 실적의 질적 구성을 함께 살펴볼 필요가 있다. 분기별로는 영업이익과 순이익의 변동폭이 커, 투자부문의 회수 성과 등 비영업적 요인이 특정 분기 실적에 영향을 줄 수 있음을 감안해야 한다. 포장재 부문은 전방 산업인 시멘트·석유화학 경기에, 의료기기 부문은 스트라이커와의 유통 관계와 인구 고령화 추세에, 투자부문은 벤처캐피탈 시장의 회수 여건에 각각 실적이 좌우되는 구조다. 향후 분기·연간 공시를 통해 각 부문의 기여도 변화와 이익의 지속성을 점검하는 것이 중요하다.",
+   "en": "Wonlim is structured as a diversified enterprise centered on industrial packaging manufacturing, extending into real estate leasing, new-technology finance (Hanbit Investment), and medical device distribution (Star Bio). The operating margin recovered from 2.1% in 2024 to 4.9% in 2025, and first-half 2026 operating profit was reported to have grown year over year, indicating a continuing profitability improvement in the core business. However, owners' net income declined for two consecutive years after 2023, moving in a different direction from the operating profit recovery, warranting closer examination of the qualitative composition of earnings. Quarterly operating profit and net income have shown considerable swings, and non-operating factors such as exit gains in the investment segment can influence results in any given quarter. The packaging segment's performance depends on cement and petrochemical industry conditions, the medical device segment on the Stryker distribution relationship and aging-population trends, and the investment segment on exit conditions in the venture capital market. Monitoring changes in each segment's contribution and the sustainability of earnings through upcoming quarterly and annual disclosures will be important."
   }
  },
  "sources": [
-  "http://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A005820",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/eDNjcHR3TXlSOFNVeGNmYUNXemR3dz09/company_nm/(%EC%A3%BC)%EC%9B%90%EB%A6%BC",
-  "https://alphasquare.co.kr/home/stock-summary?code=058470",
-  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=856860&gn=1",
-  "https://www.sks.co.kr/data1/research/qna_file/20250627055424382_0_ko.pdf",
-  "https://www.kirs.or.kr/misc/info_search_pop.html?code=",
-  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cmp_cd=000910",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260323002487&docno=&viewerhost=",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20241114003111",
-  "http://www.thinkpool.com/itemanal/i/index.jsp?code=005820",
   "https://yakppan.com/quickviews/005820/",
-  "https://kind.krx.co.kr/corpgeneral/corpList.do?method=download&searchType=13',",
-  "http://www.proi.re.kr/customer/customer_company_list.html",
-  "https://www.textra.or.kr/",
-  "https://jooroomeestock.com/market/top_risers_kospi/",
-  "https://www.ktb.co.kr/trading/popup/itemPop.jspx",
-  "https://finance.daum.net/quotes/A025820"
+  "http://stocktong.io/Web/CorpInfo.aspx?t=s&l=1&code=005820&item_name=원림&tt=3",
+  "http://thinkclub.ebestsec.co.kr/itemanal/i/index.jsp?code=005820",
+  "https://kind.krx.co.kr/common/disclsviewer.do?acptNo=20240326001094&docno=&method=searchInitInfo",
+  "https://stock.nate.com/itemanal/itemanalHome/itemanal.do?code=005820",
+  "https://app.rndcircle.io/company/f746b489-e3c7-53c5-a1c0-d03216aa3f00",
+  "https://www.k5.co.kr/stock/005820?site_type=d",
+  "https://www.k5.co.kr/stock/005820?site_type=k",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/eDNjcHR3TXlSOFNVeGNmYUNXemR3dz09/company_nm/(%EC%A3%BC)%EC%9B%90%EB%A6%BC",
+  "https://www.newspim.com/news/view/20260814000815",
+  "http://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A005820",
+  "https://www.investing.com/equities/wonlim-financial-summary",
+  "https://m.thinkpool.com/compDiscuss/cont/1010129",
+  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=856860&gn=1",
+  "https://clever-insight.vip/stock/reports/",
+  "https://m.jobkorea.co.kr/company/42187935",
+  "https://m.jobkorea.co.kr/company/42825867",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/M0lVY2l3eG94ZEtPYUFVU3hlbEs5UT09/company_nm/(%EC%A3%BC)%EC%8A%A4%ED%83%80%EB%B0%94%EC%9D%B4%EC%98%A4"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "005820",
  "name": "원림",
  "name_en": "WONLIM CORPORATION",
@@ -232,9 +233,9 @@
   "섬유·패션·생활"
  ],
  "market": "코스피",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 05:28",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 09:12",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -337,14 +338,14 @@
    }
   ],
   "valuation": {
-   "price": 15180,
-   "mcap": 0.0349,
+   "price": 15210,
+   "mcap": 0.035,
    "shares": 2297970,
    "total_shares": 2297970,
    "wavg_shares": 2056042,
-   "per": 6.798,
+   "per": 6.811,
    "eps": 2233,
-   "pbr": 0.2435,
+   "pbr": 0.2439,
    "bps": 62352,
    "roe_ttm": 3.6,
    "ttm_window": "2025Q3~2026Q2",
@@ -355,7 +356,7 @@
    "bps_krx": 61531.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 460.0,
-   "div": 3.03
+   "div": 3.02
   }
  }
 }

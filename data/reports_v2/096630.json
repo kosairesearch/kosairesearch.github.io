@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "구조재편 후 흑자전환, 2026 실적 연속성이 관건",
-  "en": "Post-Restructuring Profit Turnaround — 2026 Earnings Continuity Is the Key Test"
+  "ko": "흑자전환 뒤 다시 흔들리는 실적",
+  "en": "Profit Turnaround Meets Renewed Wobble"
  },
  "lead": {
-  "ko": "아리셀 화재 충격을 딛고 2025년 대규모 흑자전환에 성공했으나, 2026년 1분기 영업이익이 전년동기 대비 93% 급감하며 수익 기반의 지속성이 시험대에 올랐다.",
-  "en": "S-Connect staged a major profit reversal in 2025 after absorbing the Aricel fire shock, but a 93% year-on-year collapse in 1Q26 operating profit has placed the durability of that recovery under scrutiny."
+  "ko": "2025년 흑자전환에 성공한 에스코넥이 2026년 상반기 다시 영업·순손실로 돌아서며, 폴더블 부품과 이차전지·수소 신사업의 사업화 속도가 관전 포인트로 떠올랐다.",
+  "en": "S-Connect returned to profit in 2025 but slipped back into operating and net losses in the first half of 2026, putting the pace of its foldable component and secondary battery/hydrogen new-business commercialization in focus."
  },
  "keypoints": [
   {
-   "ko": "삼성전자 Galaxy(폴드·플립 포함) 스마트폰 금속 내외장재 1차 협력업체로, 시민사회 보고 기준 2024년 상반기 매출의 89% 이상이 삼성전자향에 집중",
-   "en": "Tier-1 supplier of metal structural parts for Samsung Galaxy (including Fold/Flip); per civil-society disclosures, over 89% of 1H24 revenue derived from Samsung Electronics"
+   "ko": "2025년 연결 매출 2,787억원, 영업이익 133억원으로 전년 대비 흑자전환했고 순이익도 357억원으로 적자에서 흑자로 돌아섰다.",
+   "en": "2025 consolidated revenue reached KRW 278.7bn with operating profit of KRW 13.3bn, swinging to profit, while net income to owners turned to KRW 35.8bn from a prior-year loss."
   },
   {
-   "ko": "2025년 연결 기준 영업이익 133억원(OPM 4.8%), 순이익 357억원으로 흑자전환 성공 — 수익성 중심 사업구조 재편, 비용 절감, 아리셀 연결제외 효과 복합 작용",
-   "en": "FY2025 consolidated operating profit ₩13.3B (OPM 4.8%) and net profit ₩35.7B achieved a profit reversal, driven by a profitability-focused restructuring, cost cuts, and exclusion of Aricel from consolidation"
+   "ko": "그러나 2026년 1분기(순손실 21억원)와 2분기(영업손실 26억원, 순손실 39억원)가 연이어 적자를 기록하며 매출도 전분기 대비 크게 줄었다.",
+   "en": "However, both Q1 2026 (net loss of KRW 2.1bn) and Q2 2026 (operating loss of KRW 2.6bn, net loss of KRW 3.9bn) posted losses, with revenue also falling sharply quarter over quarter."
   },
   {
-   "ko": "자회사 아리셀 2024년 6월 화재 참사(사망 23명) — 박순관 대표 1심 징역 15년 선고(중처법 최고형), 항소심 진행 중이며 법적·평판 리스크 잠재",
-   "en": "Subsidiary Aricel's June 2024 fire (23 fatalities) led to a first-instance 15-year prison sentence for CEO Park Soon-kwan under the Serious Accident Act; appeal proceedings ongoing, creating residual legal and reputational risk"
+   "ko": "부채비율이 2024년 263.3%에서 2025년 92.4%로 크게 낮아졌는데, 이는 종속기업 연결 제외 등 사업구조 재편과 관련이 있다.",
+   "en": "The debt ratio fell sharply from 263.3% in 2024 to 92.4% in 2025, linked to business restructuring including the deconsolidation of a subsidiary."
   },
   {
-   "ko": "2026년 5월 5:1 액면병합(200원→1,000원) 완료 — 유통주식수를 7,938만주에서 1,588만주로 축소하여 주가 안정화 도모",
-   "en": "Completed a 5:1 share consolidation (par value ₩200→₩1,000) in May 2026, reducing shares outstanding from 79.38M to 15.88M to support trading price stability"
+   "ko": "주력은 삼성전자 대상 폴더블폰 힌지·금속외장 부품이며, 이차전지 전류차단장치(CID)와 플라즈마 탄소전환장치(PCCU) 기반 수소 신사업을 병행하고 있다.",
+   "en": "The core business is foldable-phone hinges and metal exterior parts supplied mainly to Samsung Electronics, alongside secondary-battery current interrupt devices (CID) and a hydrogen business based on plasma carbon conversion unit (PCCU) technology."
   },
   {
-   "ko": "2026년 1분기 매출 581억원(전년동기 대비 -30.6%), 영업이익 3억원(전년동기 대비 -93%), 지배순손실 21억원 — 계절성 외 수주 변동 여부 점검 필요",
-   "en": "1Q26 revenue ₩58.1B (-30.6% YoY), operating profit ₩340M (-93% YoY), and controlling interest net loss ₩2.1B warrant scrutiny beyond seasonal effects"
+   "ko": "2026년 5월 5대1 주식병합이 완료돼 유통주식수가 약 7,938만주에서 약 1,588만주로 줄었다.",
+   "en": "A 5-to-1 share consolidation was completed in May 2026, reducing shares outstanding from roughly 79.38 million to about 15.88 million."
   }
  ],
  "business": {
-  "ko": "에스코넥은 2000년 설립, 2007년 코스닥 상장된 스마트폰 금속 내외장재 전문 제조업체다. 국내(화성·음성·안산)와 중국 동관, 베트남 박장에 글로벌 생산기지를 운영하며, 삼성전자에 Galaxy S 시리즈, Z Fold, Z Flip, 갤럭시 탭, 갤럭시 워치, 버즈 등 모바일 기기 전반의 알루미늄·스테인리스 타입 케이스, 힌지, 프레임 등 정밀 금속 부품을 납품하는 삼성전자 1차 협력업체다. 한 시민사회 보고에 따르면 2024년 상반기 기준 에스코넥 총매출의 89.41%가 삼성전자 Galaxy 부품 납품에서 창출됐을 만큼 단일 고객 집중도가 높다. 사업 다각화 차원에서 1차전지 제조(자회사 아리셀, 현재 연결제외), 2차전지 금속부품 제조, 종속기업 에코하이테크를 통한 플라즈마 탄소전환장치 기반 클린 수소 생산도 추진 중이다. 미국 실리콘밸리 리카본(Ribon)의 지분 및 제조 독점권을 확보해 온실가스 감축·클린 수소 사업을 병행하고 있다. 주력인 스마트폰 금속부품은 고객 생산계획에 따른 주문생산(30일 내외 단기 발주) 방식으로, 수주 변동성이 실적에 직접 반영된다. 삼성전자로부터 2015·2016년 품질최우수상을 수상한 이력이 있으며, 베트남·중국 생산기지를 통해 원가 경쟁력을 유지하고 있다. 부문별 최신 매출 비중은 DART 사업보고서를 통한 확인이 필요하다.",
-  "en": "S-Connect was founded in 2000 and listed on KOSDAQ in 2007 as a specialist manufacturer of metal structural components for smartphones. It operates production facilities in Korea (Hwaseong, Eumseong, Ansan), Dongguan (China), and Bac Giang (Vietnam), supplying precision-stamped aluminum and stainless-steel casings, hinges, and frames for Samsung Galaxy S series, Z Fold, Z Flip, Galaxy Tab, Watch, and Buds devices as a Tier-1 Samsung Electronics supplier. According to a civil-society report, 89.41% of S-Connect's 1H24 revenue came from Samsung Galaxy parts supply, reflecting a high single-customer concentration. For diversification, the company has pursued primary battery manufacturing (subsidiary Aricel, now de-consolidated), secondary battery metal parts, and clean hydrogen production via its subsidiary Ecohi-tech, leveraging a stake and exclusive manufacturing license from Silicon Valley firm Ribon for plasma carbon-conversion technology. The smartphone metal parts business operates under a make-to-order model with roughly 30-day order horizons, making revenue highly correlated with customer production schedules. S-Connect has received Samsung's Quality Excellence Award (2015/2016) and maintains cost competitiveness through its Vietnamese and Chinese facilities. Segment-level revenue breakdowns require verification through DART filings."
+  "ko": "에스코넥은 2000년 설립돼 2007년 코스닥에 상장된 금속부품 가공 전문업체로, 화성·음성·안산 등 국내 생산기지와 중국 동관, 베트남 박장의 해외 생산기지를 운영하고 있다. 핵심 사업은 삼성전자 갤럭시 시리즈 및 폴드·플립 등 폴더블폰에 들어가는 힌지·금속외장 부품으로, 2023년 기준 이 무선(휴대폰) 부품 부문이 매출의 95.38%를 차지했다. 여기에 1차전지 생산(1.85%)과 2차전지·친환경 수소 등 신사업(2.77%)이 더해지는 구조다. 이차전지 부문에서는 전류차단장치(CID)를 삼성SDI에 공급하며 배터리 폭발을 방지하는 안전부품 공급사로 자리매김하고 있다. 친환경 수소 사업은 화력발전소, 폐수처리장, 쓰레기매립지 등에서 발생하는 온실가스를 합성가스로 전환하는 플라즈마 탄소전환장치(PCCU) 원천기술을 보유한 미국 리카본(Recarbon USA)의 지분과 제조 독점권을 기반으로 추진되고 있다. 주요 고객은 삼성전자와 삼성SDI 등 국내 대기업 계열이며, 폴더블폰·이차전지 부품 시장에서는 KH바텍 등 유사 금속부품 업체들과 경쟁하는 구도다. 회사는 기존 무선 부품 사업의 안정적 현금흐름을 바탕으로 이차전지·수소 등 고부가가치 신사업으로 사업 영역을 넓혀가는 전략을 취하고 있다. 이 같은 사업 다각화는 스마트폰 부품 단일 사업 대비 매출원 다변화 효과를 기대할 수 있으나, 아직 신사업 비중은 전체 매출의 한 자릿수 수준에 머물러 있다.",
+  "en": "Founded in 2000 and listed on KOSDAQ in 2007, S-Connect is a metal parts processing specialist operating domestic plants in Hwaseong, Eumseong and Ansan, plus overseas facilities in Dongguan, China and Bac Giang, Vietnam. Its core business is hinges and metal exterior parts for Samsung Electronics' Galaxy series, including foldable Fold and Flip models; as of 2023 this wireless-phone parts segment accounted for 95.38% of revenue. This is complemented by primary battery production (1.85%) and secondary battery/eco-friendly hydrogen new businesses (2.77%). In the secondary battery segment, the company supplies current interrupt devices (CID) to Samsung SDI, positioning itself as a safety-component supplier that prevents battery explosions. Its eco-friendly hydrogen business is built on equity and manufacturing exclusivity in Recarbon USA, which holds source technology for plasma carbon conversion units (PCCU) that convert greenhouse gases from thermal power plants, wastewater facilities and landfills into synthesis gas. Major customers are large domestic conglomerate affiliates including Samsung Electronics and Samsung SDI, and in the foldable phone and battery component markets it competes with similar metal-parts makers such as KH Vatec. The company is pursuing a strategy of leveraging stable cash flow from its legacy wireless parts business to expand into higher value-added secondary battery and hydrogen businesses. This diversification could eventually broaden revenue sources beyond single-category smartphone parts, though the new businesses still represent only a single-digit share of total revenue."
  },
  "earnings": {
-  "ko": "최근 4개년 실적은 극적인 부침을 보여준다. 2022년 매출 2,004억원·영업이익 58억원(OPM 2.9%)·순이익 27억원으로 소폭 흑자를 기록했으나, 2023년에는 매출이 2,753억원으로 증가하면서도 비용 부담 증가로 순이익이 -13억원으로 반전됐다. 2024년은 매출 2,919억원으로 역대 최대를 기록했음에도 영업이익이 41억원(OPM 1.4%)에 그쳤고, 아리셀 화재 관련 손실·충당금이 반영되며 지배주주 순손실이 -257억원에 달했다. 2025년에는 매출이 2,787억원(-4.5% YoY)으로 소폭 감소했으나, 영업이익이 133억원(OPM 4.8%, 전년 대비 +225%)으로 대폭 개선됐고 지배주주 순이익은 358억원으로 대규모 흑자전환에 성공했다. 회사는 그 원인으로 수익성 중심 사업구조 재편·비용 절감·종속기업 연결제외를 제시했다. 분기별로는 2025년 1분기 영업이익 46억원이 강했으나 2분기는 12억원(지배순손실 41억원)으로 계절적 부진을 겪었고, 3분기(OP 33억원)·4분기(OP 42억원, 지배순이익 219억원)에 회복됐다. 4분기 순이익의 급증은 아리셀 연결제외 과정의 회계적 일회성 요인이 포함됐을 가능성이 있어 이익의 질(quality) 점검이 필요하다. 2026년 1분기는 매출 581억원(전년동기 837억원에서 -31%), 영업이익 3억원(전년동기 46억원에서 -93%), 지배순손실 21억원으로 급격히 악화됐다. 부채비율은 2024년 263%에서 2025년 92%로 극적으로 개선됐으며, 영업활동 현금흐름도 2022년 91억원에서 2025년 185억원으로 꾸준히 증가했다.",
-  "en": "The four-year earnings history shows dramatic swings. In 2022, revenue of ₩200.4B and operating profit of ₩5.8B (OPM 2.9%) yielded a modest net income of ₩2.7B. In 2023, revenue grew to ₩275.3B but rising costs pushed net profit to a ₩1.3B loss. FY2024 hit a revenue record of ₩291.9B, yet operating profit shrank to ₩4.1B (OPM 1.4%), and losses tied to the Aricel fire drove the controlling-interest net loss to ₩-25.7B. FY2025 saw revenue dip 4.5% to ₩278.7B while operating profit surged 225% to ₩13.3B (OPM 4.8%), with controlling-interest net profit at ₩35.8B — a decisive profit reversal attributed to profitability-focused restructuring, cost cuts, and the Aricel de-consolidation. On a quarterly basis, 1Q25 was strong (OP ₩4.6B), 2Q25 fell to OP ₩1.2B with a net loss of ₩4.1B due to seasonal weakness, and 3Q–4Q25 recovered (4Q25 net income ₩21.9B). The 4Q25 net income spike likely contains accounting one-time effects from the Aricel de-consolidation and warrants scrutiny of earnings quality. In 1Q26, revenue fell 31% YoY to ₩58.1B, operating profit collapsed 93% YoY to ₩340M, and the controlling-interest net loss was ₩2.1B, signaling that annual earnings continuity cannot yet be assumed. Operating cash flow improved consistently from ₩9.1B (2022) to ₩18.5B (2025), and the debt ratio improved sharply from 263% (2024) to 92% (2025)."
+  "ko": "2025년 연결 매출은 2,786.88억원으로 2024년 2,918.99억원 대비 소폭 감소했지만, 영업이익은 132.74억원으로 2024년 40.89억원 대비 크게 늘며 흑자 폭을 확대했다. 순이익(지배주주)은 357.89억원으로 2024년 -257.46억원 손실에서 뚜렷하게 흑자 전환했다. 회사는 종속기업 연결 제외와 영업환경 변화에 따른 매출 구성 변동으로 매출은 소폭 줄었으나, 수익성 중심의 사업구조 재편과 비용 절감으로 영업이익과 순이익이 크게 늘었다고 설명했다. 분기별로 보면 2025년 2분기 매출 632.76억원·영업이익 12.48억원에 순손실 40.52억원을 기록한 뒤, 3분기(매출 668.45억원·영업이익 32.93억원·순이익 36.28억원)와 4분기(매출 648.96억원·영업이익 41.54억원·순이익 219.21억원)로 흑자 규모가 확대됐다. 특히 4분기 순이익이 영업이익 대비 크게 컸던 점은 일회성 요인(예: 이연법인세 등 비영업적 요소)이 반영됐을 가능성을 시사한다. 그러나 2026년 들어 1분기 매출 581.12억원·영업이익 3.39억원에 순손실 21.05억원, 2분기 매출 380.63억원·영업손실 25.73억원·순손실 39.29억원으로 다시 적자가 재발했고 매출도 뚜렷한 하락세를 보였다. 이에 따라 최근 네 개 분기(2025년 3분기~2026년 2분기) 기준 지배주주 순이익은 195.15억원으로 여전히 양(+)의 값을 유지하고 있으나, 이는 2025년 하반기의 강한 실적이 2026년 상반기의 부진을 상쇄한 결과다. 부채비율은 2024년 263.3%에서 2025년 92.4%로 크게 개선됐는데, 자본총계(지배주주)가 551.59억원에서 886.64억원으로 늘고 부채총계는 1,416.63억원에서 819.57억원으로 줄어든 데 따른 것이다.",
+  "en": "2025 consolidated revenue was KRW 278.69bn, slightly down from KRW 291.90bn in 2024, while operating profit surged to KRW 13.27bn from KRW 4.09bn, widening the profit margin. Net income attributable to owners reached KRW 35.79bn, a clear swing from a KRW 25.75bn loss in 2024. The company attributed the modest revenue decline to subsidiary deconsolidation and a shift in revenue mix amid changing business conditions, while operating profit and net income grew substantially on a profitability-focused restructuring and cost cuts. On a quarterly basis, after Q2 2025 revenue of KRW 63.28bn, operating profit of KRW 1.25bn and a net loss of KRW 4.05bn, the company expanded its profit in Q3 (revenue KRW 66.84bn, operating profit KRW 3.29bn, net income KRW 3.63bn) and Q4 (revenue KRW 64.90bn, operating profit KRW 4.15bn, net income KRW 21.92bn). The fact that Q4 net income far exceeded operating profit suggests a one-off, non-operating item (such as deferred tax effects) may have been involved. However, losses reappeared in 2026, with Q1 revenue of KRW 58.11bn, operating profit of KRW 0.34bn but a net loss of KRW 2.10bn, followed by Q2 revenue of KRW 38.06bn, an operating loss of KRW 2.57bn and a net loss of KRW 3.93bn, alongside a clear revenue downtrend. As a result, net income to owners over the most recent four quarters (Q3 2025 through Q2 2026) stands at KRW 19.51bn, still positive but reflecting how strong results in the second half of 2025 offset weakness in the first half of 2026. The debt ratio improved markedly from 263.3% in 2024 to 92.4% in 2025, as owners' equity rose from KRW 55.16bn to KRW 88.66bn while total liabilities fell from KRW 141.66bn to KRW 81.96bn."
  },
  "industry": {
-  "ko": "전방시장인 글로벌 스마트폰 시장은 AI 스마트폰 전환 수요에 힘입어 완만한 회복세를 보이고 있다. 삼성전자는 국내 스마트폰 점유율이 2025년 3분기 기준 81%에 달하며 Galaxy AI 전략과 Z 폴더블 라인업(Z Fold, Z Flip, 2025년 하반기 트라이폴드 출시)을 통해 프리미엄 시장을 공략하고 있다. 폴더블폰의 확산은 힌지·고강도 금속 케이스 등 고부가가치 부품 수요 증가를 수반하여 에스코넥과 같은 정밀 금속 가공 전문 업체에 구조적 기회를 제공한다. 스마트폰 금속부품 경쟁사로는 폴더블 외장힌지 모듈 강자 KH바텍, 인탑스, 팸텍 등이 있으며 기술·캐파 경쟁이 지속된다. 2차전지 금속부품 시장은 전기차 시장 확대에 따라 성장세이며, 에스코넥은 정밀 금형 기술을 기반으로 배터리 생산라인 부품 확대를 추진 중이다. 리튬 1차전지 시장은 군용·스마트그리드 수요 기반이나, 아리셀 화재 이후 에스코넥의 직접 참여가 제한된 상황이다. 친환경 수소 시장은 글로벌 탄소중립 트렌드와 맞물려 중장기 성장이 예고되나, 플라즈마 탄소전환 기술의 본격 상용화까지는 추가 시간이 필요하다.",
-  "en": "The global smartphone market is recovering moderately, driven by AI smartphone upgrade demand. Samsung Electronics commands an 81% domestic market share (3Q25) and is aggressively expanding its Galaxy AI strategy and foldable lineup, including the Galaxy Z Tri-fold launched in 2H25. The proliferation of foldable phones creates a structural demand increase for high-value hinges and precision metal casings, presenting a positive backdrop for specialist manufacturers like S-Connect. Competitors in smartphone metal parts include KH Vatech (a leader in foldable external hinge modules), Intops, and Pemtec, with ongoing technology and capacity competition. The secondary battery metal parts market is expanding on EV sector growth, and S-Connect is pursuing entry via its precision die-casting capabilities. The primary battery market relies on defense and smart-grid demand, but S-Connect's direct participation has been curtailed since the Aricel incident. The clean hydrogen market offers long-term growth potential aligned with global decarbonization policy, but commercialization of plasma carbon-conversion technology remains a medium-to-long-term event."
+  "ko": "에스코넥이 속한 스마트폰 금속부품 산업은 삼성전자의 신모델 출시 주기, 특히 상반기 갤럭시 S시리즈와 하반기 갤럭시 Z 폴드·플립 출시에 따라 분기별 수요 편차가 큰 특성을 갖고 있다. 폴더블폰 시장은 혁신 제품에 대한 고급 금속 부품 수요 증가라는 구조적 트렌드를 타고 있으며, 힌지·경첩 등 정밀 가공 부품의 기술 난이도가 높아 진입장벽이 존재한다. 이차전지 부문에서는 전기차 시장 확대에 따라 리튬이온 배터리 시장의 성장이 전망되는 가운데, 정밀 금형 기술을 활용한 배터리 생산라인 설비투자와 공정 최적화가 이어지고 있다. 다만 최근 글로벌 전기차 수요 성장세가 예상보다 둔화된 구간에서는 배터리 부품 부문의 매출 기여도가 제한적일 수 있다. 친환경 수소 사업은 온실가스 감축이라는 글로벌 정책 트렌드와 맞물려 있으나, 국내외 실증·사업화 단계에 있어 상업적 매출 기여까지는 시간이 필요한 영역이다. 경쟁구도 측면에서는 폴더블폰 힌지 시장의 KH바텍 등 기존 강자와 경쟁하며, 리튬 1차전지 수요는 전자기기의 디지털화·휴대화 추세에 따라 지속 증가하는 것으로 평가된다.",
+  "en": "The smartphone metal parts industry S-Connect operates in shows significant quarter-to-quarter demand variation tied to Samsung Electronics' new model launch cycles, particularly the Galaxy S series in the first half and Galaxy Z Fold/Flip models in the second half. The foldable phone market rides a structural trend of rising demand for premium metal components in innovative products, and the high technical difficulty of precision parts like hinges creates entry barriers. In the secondary battery segment, the lithium-ion battery market is expected to grow alongside EV market expansion, with ongoing capital investment and process optimization in battery production lines using precision mold technology. However, in periods when global EV demand growth slows more than expected, the revenue contribution from battery components could be limited. The eco-friendly hydrogen business aligns with the global policy trend toward greenhouse gas reduction, but remains at the demonstration and commercialization stage both domestically and abroad, meaning commercial revenue contribution will take time. Competitively, the company faces established players such as KH Vatec in the foldable phone hinge market, while demand for lithium primary batteries is assessed to be growing steadily amid the digitalization and portability trends in electronic devices."
  },
  "outlook": {
-  "ko": "삼성전자의 Galaxy Z 폴더블·트라이폴드 라인업 확대 사이클이 2026년 하반기에도 이어질 경우, 에스코넥의 힌지 및 고급 금속 부품 공급량 확대로 이어질 수 있다. 회사는 수익성 중심 사업구조 재편 기조를 유지하고 있으나, 2026년 1분기의 매출·이익 급감은 수주 정상화 시점과 2026년 연간 실적 가시성을 낮추고 있다. 아리셀 연결제외 이후 1차전지 사업 공백을 대체할 신사업(2차전지 금속부품, 친환경 수소)의 실질적 매출 기여 시점은 공시로 확인된 구체 일정이 없다. 에코하이테크를 통한 플라즈마 탄소전환장치 기반 클린 수소 사업은 미국 리카본과의 지분·독점 제조권을 근거로 추진 중이며, 업계에서는 2026년을 친환경 사업 확장의 중요한 분기점으로 언급하고 있으나 확정된 수주·매출 규모는 추가 공시 확인이 필요하다. 2026년 5월 완료된 5:1 액면병합으로 유통주식수가 크게 줄었으며, 회사는 주가 안정화 및 기업가치 제고를 목적으로 밝혔다. 아리셀 관련 형사 항소심 결과와 삼성전자의 협력사 공급망 지위 유지 여부는 향후 실적과 사업 전망 모두에 영향을 미칠 핵심 변수다. 베트남·중국 생산기지의 환율·정책 변동성도 비용 구조에 영향을 줄 수 있다.",
-  "en": "If Samsung's Galaxy Z foldable and tri-fold lineup expansion cycle continues into 2H26, S-Connect's supply volumes for hinges and premium metal parts could benefit. The company maintains a profitability-focused restructuring stance, but the sharp revenue and profit decline in 1Q26 reduces near-term earnings visibility for the full year. The commercial contribution timeline for new businesses (secondary battery metal parts, clean hydrogen) replacing the Aricel revenue gap has not been specified in filings. Ecohi-tech's plasma carbon-conversion hydrogen business is being pursued via the Ribon stake and exclusive manufacturing license; industry observers have cited 2026 as a potential inflection year, but concrete order or revenue targets require confirmation through official disclosures. The completed 5:1 share consolidation in May 2026 significantly reduced shares outstanding and was announced as a measure to stabilize the share price and enhance corporate value. The outcome of the Aricel criminal appeal and Samsung's decision regarding S-Connect's supply-chain position remain the most consequential variables for both operations and reputation. Currency and policy risk at the Vietnam and China production bases could also affect the cost structure."
+  "ko": "회사는 2025년 실적 공시에서 종속기업 연결 제외와 수익성 중심의 사업구조 재편이 이익 개선의 핵심 요인이었다고 밝힌 바 있어, 앞으로도 비용 구조 효율화 기조가 이어질지가 관전 포인트다. 2026년 5월 완료된 5대1 주식병합은 적정 유통주식수 유지를 통한 주가 안정화 및 기업가치 제고를 목적으로 이사회가 결의한 것으로, 자본금 감소를 수반하는 감자와는 무관하다고 공시됐다. 이차전지 부문에서는 삼성SDI 대상 전류차단장치(CID) 공급이 이어지고 있어, 전기차·배터리 시장 상황에 따른 물량 변화가 향후 매출에 영향을 줄 수 있다. 친환경 수소 사업은 미국 리카본의 PCCU 기술을 기반으로 국내외 실증·사업화를 추진 중이나, 구체적인 상업화 매출 시점은 아직 공식적으로 확인되지 않았다. 폴더블폰 부품 부문은 삼성전자의 신모델 출시 주기에 따라 하반기 매출 비중이 높아지는 계절성이 반복될 가능성이 있다. 2026년 상반기 실적이 다시 적자로 돌아선 만큼, 하반기 이후 비용 절감 효과와 신사업 진행 상황이 연간 실적 방향을 좌우할 것으로 보인다.",
+  "en": "In its 2025 earnings disclosure, the company stated that subsidiary deconsolidation and profitability-focused restructuring were the key drivers of earnings improvement, making it a key point to watch whether this cost-efficiency trend continues. The 5-to-1 share consolidation completed in May 2026 was resolved by the board with the stated purpose of maintaining an appropriate number of outstanding shares to stabilize the stock price and enhance corporate value, and was disclosed as unrelated to a capital reduction. In the secondary battery segment, ongoing supply of current interrupt devices (CID) to Samsung SDI means that volume changes tied to EV and battery market conditions could affect future revenue. The eco-friendly hydrogen business is pursuing demonstration and commercialization domestically and abroad based on Recarbon's PCCU technology, but a specific timeline for commercial revenue has not yet been officially confirmed. The foldable phone parts segment may continue to show seasonality, with a higher revenue weighting in the second half tied to Samsung's new model launch cycle. Given that first-half 2026 results reverted to losses, cost-cutting effects and new-business progress in the second half onward are likely to determine the direction of full-year results."
  },
  "valuation_comment": {
-  "ko": "주가는 회사가 공시한 주당순자산(BPS 5,614원) 대비 큰 폭의 할인 구간에 위치하고 있어, 현재 주가가 장부상 자기자본 가치를 상당히 밑도는 수준이다. 주당순이익(EPS 1,221원)을 기준으로 보면, 이익 기준 멀티플은 코스닥 동종 스마트폰 부품주 평균을 하회하는 낮은 구간에 형성되어 있다. 다만 2022~2024년에 걸쳐 흑자와 대규모 적자를 반복한 이력, 그리고 2026년 1분기 이익의 급격한 위축이 이익 지속성에 대한 시장 신뢰 형성을 제약하는 요인으로 해석된다. 현재 배당금 지급(DPS 0원)이 없어 배당수익률 관점에서의 투자 매력은 제한적이다. 향후 아리셀 법적 리스크의 해소, 삼성 공급망 지위의 안정적 유지, 신사업의 실적 기여 가시화가 복합적으로 나타날 경우 시장의 이익 지속성 인식이 달라질 수 있으나, 그 시점과 정도는 현 시점에서 단정하기 어렵다.",
-  "en": "The share price trades at a substantial discount to the company's reported book value per share (BPS ₩5,614), implying the stock is well below its balance-sheet equity value. Based on the headline earnings per share (EPS ₩1,221), the earnings-based multiple is in the lower range relative to KOSDAQ smartphone component peers. That said, the history of alternating large profits and losses between 2022 and 2024, combined with the sharp 1Q26 earnings deterioration, appears to constrain market confidence in earnings sustainability. The absence of dividend payments (DPS ₩0) limits investment appeal from an income perspective. Should the Aricel legal overhang clear, Samsung supply-chain status remain stable, and new business segments begin contributing meaningfully to revenue, perceptions of earnings durability could shift — but the timing and degree are difficult to assess at this stage."
+  "ko": "주가는 순자산가치 대비 할인된 수준에서 거래되고 있어, 주가순자산비율 측면에서는 자산가치 대비 여유가 있는 편이다. 다만 회사가 2022년 이후 두 해에 걸쳐 순손실을 기록했다가 2025년에야 적자에서 흑자로 전환한 만큼, 최근 네 개 분기 실적을 기준으로 산출되는 이익 배수는 과거 적자 국면과 단순 비교하기 어렵다. 배당의 경우 최근 공시 기준 지급 내역이 없어, 주주환원보다는 사업구조 재편과 신사업 투자에 자원이 우선 배분되는 모습이다. 2026년 상반기 다시 적자로 돌아선 점은 최근 네 개 분기 창에 포함된 이익의 상당 부분이 2025년 하반기의 일시적 강세에 기인했음을 시사하며, 이는 향후 이익 배수 해석에 유의할 부분이다. 전반적으로 밸류에이션 지표는 실적의 방향성 전환(적자↔흑자)이 반복되는 국면에서 형성되고 있어, 단기 실적 변동성에 민감하게 반응할 수 있는 구간으로 볼 수 있다.",
+  "en": "The stock trades at a discount to book value, meaning the price-to-book ratio leaves some room relative to asset value. However, since the company posted net losses for two years starting in 2022 before finally swinging to profit in 2025, earnings multiples calculated on the most recent four quarters are difficult to compare directly with the prior loss-making period. As for dividends, there is no recent payout on record, suggesting resources are being prioritized toward business restructuring and new-business investment rather than shareholder returns. The return to losses in the first half of 2026 suggests a substantial portion of the profit captured in the most recent four-quarter window stemmed from a temporary strength in the second half of 2025, which is worth noting when interpreting earnings multiples going forward. Overall, valuation metrics are being formed amid a phase of repeated swings between losses and profits, a setting that can be sensitive to short-term earnings volatility."
  },
  "bull": [
   {
    "title": {
-    "ko": "삼성 폴더블 확장과 ASP 개선 여지",
-    "en": "Samsung Foldable Expansion and ASP Improvement Potential"
+    "ko": "2025년 흑자전환과 재무구조 개선",
+    "en": "2025 Profit Turnaround and Balance Sheet Improvement"
    },
    "body": {
-    "ko": "삼성전자는 Galaxy Z Fold, Z Flip, 트라이폴드 등 폴더블 라인업을 지속 확대하고 있으며, 에스코넥은 힌지 특허와 폴더블 부품 공급 이력을 보유하고 있다. 폴더블폰은 일반 바형 스마트폰 대비 고강도 금속 부품이 더 많이 사용되어 구조적으로 단가 개선 여지가 존재한다. 삼성전자의 국내 스마트폰 점유율이 81%를 상회하는 강세를 유지하는 한, 주요 부품 공급량 확대 기회가 지속될 수 있다.",
-    "en": "Samsung Electronics continues to expand its foldable lineup (Z Fold, Z Flip, Tri-fold), and S-Connect holds hinge patents with a track record of foldable component supply. Foldable phones require more high-strength metal parts than conventional bar-form smartphones, structurally supporting average selling price improvement. As long as Samsung maintains its dominant 81%+ domestic smartphone share, opportunities for increased component supply volumes remain viable."
+    "ko": "2025년 연결 영업이익 132.7억원, 순이익 357.9억원으로 뚜렷한 흑자전환에 성공했고, 부채비율도 263.3%에서 92.4%로 크게 낮아졌다. 이는 종속기업 연결 제외와 수익성 중심 사업구조 재편의 효과로, 재무 건전성 측면에서 긍정적 변화다. 다만 이 개선이 2026년까지 이어질지는 상반기 실적으로 볼 때 아직 불확실하다.",
+    "en": "2025 consolidated operating profit of KRW 13.27bn and net income of KRW 35.79bn marked a clear turnaround to profitability, while the debt ratio fell sharply from 263.3% to 92.4%. This reflects the effect of subsidiary deconsolidation and profitability-focused restructuring, a positive shift in financial health. Whether this improvement persists into 2026 remains uncertain based on first-half results."
    }
   },
   {
    "title": {
-    "ko": "재무구조 극적 정상화 — 부채비율 92%로 회복",
-    "en": "Dramatic Balance Sheet Recovery — Debt Ratio Back to 92%"
+    "ko": "이차전지·수소 신사업 다각화",
+    "en": "Diversification into Battery and Hydrogen New Businesses"
    },
    "body": {
-    "ko": "2025년 부채비율이 263%(2024년)에서 92%로 급격히 개선됐고, 자기자본도 2024년 538억원에서 887억원으로 확대됐다. 영업활동 현금흐름도 2025년 185억원으로 증가해 내부 현금 창출 기반이 강화됐다. 재무 안정성의 회복은 향후 신사업 투자 여력 및 외부 충격 흡수 능력 측면에서 긍정적으로 작용할 수 있다.",
-    "en": "The debt ratio improved sharply from 263% in 2024 to 92% in 2025, with stockholders' equity expanding from ₩53.8B to ₩88.7B. Operating cash flow also rose to ₩18.5B in 2025, strengthening the internal cash generation base. The recovery in financial health creates capacity for new business investment and enhances resilience against external shocks."
+    "ko": "삼성SDI 대상 전류차단장치(CID) 공급과 미국 리카본의 PCCU 기술을 활용한 친환경 수소 사업 추진은 스마트폰 부품 단일 사업 구조에서 벗어나려는 시도다. 성공적으로 상업화될 경우 매출원 다변화 효과를 기대할 수 있다. 다만 현재까지 이들 신사업의 매출 비중은 한 자릿수에 머물러 있다.",
+    "en": "Supplying current interrupt devices (CID) to Samsung SDI and pursuing an eco-friendly hydrogen business using Recarbon's PCCU technology represent attempts to move beyond a single-category smartphone parts structure. If successfully commercialized, this could diversify revenue sources. However, the revenue contribution from these new businesses remains in the single digits so far."
    }
   },
   {
    "title": {
-    "ko": "신사업 다각화 — 친환경 수소·2차전지 부품 옵션",
-    "en": "Business Diversification Option — Clean Hydrogen and Secondary Battery Parts"
+    "ko": "폴더블폰 부품 공급망 지위",
+    "en": "Position in the Foldable Phone Component Supply Chain"
    },
    "body": {
-    "ko": "에코하이테크를 통한 플라즈마 탄소전환장치 기반 클린 수소 사업은 글로벌 탄소중립 트렌드와 맞물려 고부가가치 신성장 축으로 부상 중이다. 전기차 시장 성장에 따른 2차전지 금속부품 수요도 중장기적으로 확대될 수 있는 시장이다. 두 신사업이 본격적인 매출을 창출할 경우, 삼성전자 단일 고객 의존도를 낮추고 수익 기반 다변화로 이어질 수 있다.",
-    "en": "Ecohi-tech's plasma carbon-conversion-based clean hydrogen business is emerging as a high-value growth avenue aligned with global decarbonization trends. Secondary battery metal parts demand could also expand over the medium to long term alongside EV market growth. Should both new segments begin generating meaningful revenue, they could reduce single-customer concentration and broaden the earnings base."
+    "ko": "삼성전자 갤럭시 Z 폴드·플립 시리즈에 힌지·금속외장 부품을 공급하는 지위는 폴더블폰 시장 확대의 구조적 수혜와 연결될 수 있다. 정밀 가공 기술은 진입장벽으로 작용해 경쟁사 대비 차별화 요인이 될 수 있다. 다만 삼성전자 신모델 출시 주기에 따른 계절성은 분기별 실적 변동성을 키우는 요인이기도 하다.",
+    "en": "The position supplying hinges and metal exterior parts for Samsung's Galaxy Z Fold and Flip series could tie the company to structural growth in the foldable phone market. Precision processing technology acts as an entry barrier and could be a differentiating factor versus competitors. However, seasonality tied to Samsung's new model launch cycle also amplifies quarter-to-quarter earnings volatility."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "아리셀 화재 법적·평판 리스크 지속",
-    "en": "Ongoing Legal and Reputational Overhang from the Aricel Fire"
+    "ko": "2026년 상반기 실적 재악화",
+    "en": "Renewed Earnings Deterioration in H1 2026"
    },
    "body": {
-    "ko": "2024년 6월 아리셀 공장 화재로 23명이 사망했고, 박순관 대표는 중대재해처벌법 위반으로 1심에서 징역 15년(중처법 시행 후 최고 형량)을 선고받았다. 항소심 결과에 따라 손해배상 규모와 법인 제재 수위가 달라질 수 있으며, 시민사회 단체들은 삼성전자에 에스코넥과의 거래 중단을 요구한 바 있어 공급망 지위에 대한 외부 압력이 지속되고 있다. 이는 에스코넥의 장기 사업 기반을 위협할 잠재 변수다.",
-    "en": "The June 2024 Aricel factory fire killed 23 workers, and CEO Park Soon-kwan was sentenced to 15 years in prison at first instance — the harshest sentence issued under the Serious Accident Punishment Act. The appeal outcome could alter the scale of civil damages and corporate sanctions, and civil society groups have formally called on Samsung Electronics to terminate its supply-chain relationship with S-Connect, sustaining external pressure on its supplier status. This represents a material long-term risk to the company's core business foundation."
+    "ko": "2026년 1분기와 2분기 모두 순손실을 기록했고, 2분기에는 영업손실(25.7억원)까지 재발했다. 매출도 1분기 581.1억원에서 2분기 380.6억원으로 크게 줄며 뚜렷한 하락세를 보였다. 2025년 하반기의 흑자 기조가 지속되지 못했음을 보여주는 신호다.",
+    "en": "Both Q1 and Q2 2026 posted net losses, and Q2 also saw a return to operating losses (KRW 2.57bn). Revenue also fell sharply from KRW 58.11bn in Q1 to KRW 38.06bn in Q2, showing a clear downtrend. This signals that the H2 2025 profit trend was not sustained."
    }
   },
   {
    "title": {
-    "ko": "삼성전자 단일 고객 의존도 89% — 수주 집중 리스크",
-    "en": "~89% Revenue Concentration in Samsung Electronics — Single-Customer Risk"
+    "ko": "고객·모델 집중 리스크",
+    "en": "Customer and Model Concentration Risk"
    },
    "body": {
-    "ko": "총매출의 89% 이상이 삼성전자 Galaxy 부품 납품에서 나오는 구조는 삼성전자의 생산 계획 변경, 부품 내재화 확대, 공급업체 다변화 전략에 직접 노출된다. 스마트폰 금속부품 시장의 경쟁 심화(KH바텍 등)와 삼성의 가격 압박도 이익률 개선의 구조적 장벽이다. 글로벌 경기 둔화 또는 삼성 출하량 감소 시 매출 완충 수단이 제한적이다.",
-    "en": "With over 89% of revenue tied to Samsung Galaxy component supply, S-Connect is directly exposed to changes in Samsung's production plans, in-house parts manufacturing expansion, and supplier diversification strategies. Intensifying competition in the smartphone metal parts market (KH Vatech, Intops, etc.) and Samsung's pricing leverage also present structural barriers to margin improvement. Revenue buffering capacity is limited in the event of a global economic slowdown or Samsung shipment decline."
+    "ko": "매출의 대부분이 삼성전자 대상 스마트폰 부품에서 발생해 특정 고객·특정 모델의 출시 성과에 실적이 크게 좌우된다. 신모델 판매 부진이나 물량 조정이 있을 경우 실적 타격이 클 수 있다. 이차전지 부문 역시 삼성SDI 의존도가 높아 유사한 리스크가 존재한다.",
+    "en": "The vast majority of revenue derives from smartphone parts sold to Samsung Electronics, meaning results are heavily dependent on the sales performance of specific customer models. Weak new-model sales or volume adjustments could significantly hurt results. The secondary battery segment carries a similar risk given its dependence on Samsung SDI."
    }
   },
   {
    "title": {
-    "ko": "2026년 1분기 실적 급감 — 이익 회복 연속성 불확실",
-    "en": "Sharp 1Q26 Earnings Decline — Earnings Recovery Continuity Uncertain"
+    "ko": "신사업 상업화 불확실성",
+    "en": "Uncertainty in New Business Commercialization"
    },
    "body": {
-    "ko": "2026년 1분기 매출 581억원은 2025년 1분기 대비 31% 급감했고, 영업이익은 3억원(OPM 0.6%)으로 전년동기 대비 93% 위축됐다. 단순 계절성을 넘어선 수주 공백이 있는지, 아니면 구조적 수요 조정인지 확인이 필요하다. 2025년 4분기 순이익(219억원)에 포함된 회계적 일회성 요인이 걷힌 이후 기초 이익 창출력이 얼마나 유지될지도 불확실하다.",
-    "en": "1Q26 revenue of ₩58.1B fell 31% from 1Q25, and operating profit shrank 93% YoY to just ₩340M (OPM 0.6%). It remains to be confirmed whether this reflects purely seasonal patterns or a more structural order gap. Additionally, stripping out the accounting one-time effects embedded in 4Q25's ₩21.9B net profit, the underlying earnings generation capacity is uncertain."
+    "ko": "친환경 수소(PCCU) 사업은 아직 국내외 실증 및 사업화 추진 단계에 있어 구체적인 매출 기여 시점이 확인되지 않았다. 이차전지 CID 부문 역시 전기차 수요 둔화 국면에서는 확장 속도가 제한될 수 있다. 신사업 투자가 지속되는 동안 단기 수익성에 부담이 될 가능성도 있다.",
+    "en": "The eco-friendly hydrogen (PCCU) business remains at the demonstration and commercialization stage both domestically and abroad, with no confirmed timeline for concrete revenue contribution. The secondary battery CID segment could also see limited expansion speed during periods of slowing EV demand. Continued investment in new businesses could also weigh on near-term profitability."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "법적·제재 리스크",
-    "en": "Legal and Regulatory Risk"
+    "ko": "고객 집중 리스크",
+    "en": "Customer Concentration Risk"
    },
    "body": {
-    "ko": "아리셀 화재 관련 형사 항소심 결과 및 민사 손해배상 소송이 진행 중이며, 최종 판결에 따라 에스코넥 법인에 대한 직접 제재나 배상 의무가 발생할 수 있다. 삼성전자의 협력사 행동규범에 따른 거래 관계 재검토도 현재까지 명확히 해소되지 않은 위험 요인이다. 중대재해처벌법의 추가 적용 범위 확대 여부에 따라 향후 법적 리스크가 더 커질 수 있다.",
-    "en": "The Aricel fire criminal appeal and related civil damages litigation are ongoing; a final ruling could impose direct sanctions or financial liability on the S-Connect parent entity. Samsung Electronics' potential review of its supplier relationship under its Supplier Code of Conduct remains an unresolved risk factor. Any expansion of the Serious Accident Punishment Act's scope could broaden future legal exposure."
+    "ko": "매출 대부분이 삼성전자·삼성SDI 등 소수 대형 고객에 집중돼 있어, 이들의 발주 정책 변화나 물량 조정이 실적에 직접적인 영향을 줄 수 있다. 신모델 채택 여부에 따라 분기별 실적 편차가 커질 수 있다. 고객 다변화가 진행되지 않는다면 이 구조적 리스크는 지속될 것으로 보인다.",
+    "en": "Since most revenue is concentrated among a small number of large customers such as Samsung Electronics and Samsung SDI, changes in their ordering policies or volume adjustments could directly affect results. Quarter-to-quarter earnings variation could widen depending on whether new models adopt the company's parts. This structural risk is likely to persist without customer diversification."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중 및 공급망 리스크",
-    "en": "Customer Concentration and Supply Chain Risk"
+    "ko": "환율·원자재 가격 변동성",
+    "en": "FX and Raw Material Price Volatility"
    },
    "body": {
-    "ko": "삼성전자 단일 고객 매출 집중도(89% 이상)로 인해, 삼성전자의 스마트폰 출하 감소, 내재화 전략 변경, 또는 공급업체 교체 시 에스코넥의 매출 타격이 직접적이다. 30일 내외 단기 발주 구조는 재고 조정기 실적 변동성을 키우며, 고객사 협상력 우위로 마진 방어가 제한될 수 있다. 중국·베트남 생산기지 의존도가 높아 지정학 리스크 및 현지 정책 변화도 잠재적 비용 요인이다.",
-    "en": "With over 89% revenue reliance on Samsung Electronics, any reduction in Samsung smartphone shipments, shift in Samsung's in-house manufacturing strategy, or supplier substitution would directly and severely impact S-Connect's revenue. The short ~30-day order-cycle structure amplifies earnings volatility during inventory correction periods, and customer pricing leverage limits margin defense. High dependence on China and Vietnam production bases introduces geopolitical and local policy change risks."
+    "ko": "중국·베트남 등 해외 생산기지를 운영하는 만큼 환율 변동이 원가와 실적에 영향을 줄 수 있다. 금속 소재 등 원자재 가격 상승은 마진 압박 요인으로 작용할 수 있다. 2026년 상반기 영업손실 재발의 배경에 원가 요인이 작용했는지는 후속 공시로 확인이 필요하다.",
+    "en": "Given overseas production bases in China and Vietnam, currency fluctuations could affect costs and results. Rising raw material prices, such as for metal materials, could pressure margins. Whether cost factors contributed to the reappearance of operating losses in H1 2026 requires confirmation through subsequent disclosures."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실행 및 이익 질(quality) 리스크",
-    "en": "New Business Execution and Earnings Quality Risk"
+    "ko": "신사업 투자 및 자금조달 부담",
+    "en": "New Business Investment and Funding Burden"
    },
    "body": {
-    "ko": "친환경 수소 및 2차전지 금속부품 사업은 구체적인 상용화 일정과 수익 창출 규모가 공시로 확인되지 않아 실행 리스크가 있다. 2025년 연간 순이익(358억원)은 아리셀 연결제외에 따른 회계적 일회성 요소가 포함됐을 가능성이 있어 '반복 가능한 이익'의 수준을 별도로 평가할 필요가 있다. 과거 4년간 두 차례 대규모 순손실 이력은 이익 안정성에 대한 구조적 의문을 제기한다.",
-    "en": "Clean hydrogen and secondary battery metal parts businesses lack confirmed commercialization timelines and revenue scale guidance in official disclosures, representing execution risk. FY2025's ₩35.8B net profit likely contains accounting one-time effects from the Aricel de-consolidation, making it necessary to assess the level of 'recurring earnings' separately. The track record of two large net losses within the past four years raises structural questions about earnings stability."
+    "ko": "이차전지·수소 등 신사업 확장에는 지속적인 설비투자와 연구개발비가 소요될 수 있다. 아직 상업화 초기 단계인 사업에 자금이 투입되는 동안 단기 재무 부담이 커질 가능성이 있다. 부채비율이 2025년 크게 낮아졌지만, 신사업 투자 규모에 따라 다시 변동할 수 있다.",
+    "en": "Expanding secondary battery and hydrogen businesses may require ongoing capital investment and R&D spending. While funds are directed toward businesses still in an early commercialization stage, near-term financial burden could increase. Although the debt ratio improved significantly in 2025, it could fluctuate again depending on the scale of new business investment."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 2분기(4~6월) 연결 실적 발표 — 1분기 급감 이후 매출·영업이익 반등 여부와 삼성 신모델 출시 효과(하반기 선반영)를 통해 연간 수익성 기조를 가늠하는 핵심 데이터.",
-    "en": "Release of 2Q26 (April–June) consolidated results — a critical data point for assessing whether revenue and operating profit have rebounded after the 1Q26 plunge, and whether Samsung new-model launch effects are beginning to filter through."
+    "ko": "2026년 3분기보고서 공시를 통해 매출·이익이 2분기의 적자 흐름에서 벗어나는지 확인할 필요가 있다.",
+    "en": "Check the Q3 2026 quarterly report to see whether revenue and profit break away from the loss trend seen in Q2."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (삼성 언팩)",
-    "en": "2H26 (Samsung Unpacked)"
+    "ko": "2026년 4분기",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "삼성전자 Galaxy Z Fold 8 및 Z Flip 6 신모델 언팩 및 양산 개시 — 에스코넥의 부품 공급 수주 물량과 단가 수준이 2026년 하반기 매출 회복의 직접 변수.",
-    "en": "Samsung Galaxy Z Fold 8 / Z Flip 6 Unpacked event and mass production commencement — S-Connect's order volumes and unit pricing for these new models are the direct driver of 2H26 revenue recovery."
+    "ko": "삼성SDI 대상 전류차단장치(CID) 공급 확대나 신규 고객 관련 공시·IR 자료가 나오는지 확인할 필요가 있다.",
+    "en": "Watch for disclosures or IR materials on expanded CID supply to Samsung SDI or new customer wins."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (법원 일정 공표 시)",
-    "en": "2H26 (per court scheduling)"
+    "ko": "2027년 3월 말 전후",
+    "en": "Around late March 2027"
    },
    "what": {
-    "ko": "아리셀 화재 관련 형사 항소심 판결 — 손해배상 규모, 대표이사 처벌 수위, 삼성전자의 공급망 재검토 여부에 직접 영향을 주는 이벤트이므로 공시 및 법원 일정을 주시.",
-    "en": "Criminal appeal ruling in the Aricel fire case — directly affects potential damages liability, the extent of penalties for the CEO, and Samsung's supply-chain review; monitor DART disclosures and court scheduling."
+    "ko": "2026년 연간 사업보고서를 통해 2025년의 흑자 전환이 연간 기준으로 지속되는지, 아니면 상반기 부진이 연간 실적에 반영되는지 확인해야 한다.",
+    "en": "Check the FY2026 annual business report to see whether the 2025 profit turnaround was sustained on a full-year basis, or whether H1 weakness weighed on annual results."
    }
   },
   {
    "when": {
-    "ko": "2026년 연내 (공시 시점 미정)",
-    "en": "FY2026 (timing TBD via DART)"
+    "ko": "2026년 하반기 이후 지속적으로",
+    "en": "Ongoing from H2 2026"
    },
    "what": {
-    "ko": "에코하이테크 클린 수소 사업 및 2차전지 금속부품 관련 수주 계약·설비 투자 공시 — 신사업의 실질 매출 기여 가시화 여부가 중장기 사업 다각화 신뢰도의 핵심 변수.",
-    "en": "DART disclosures on Ecohi-tech clean hydrogen business orders or capex commitments, and secondary battery parts contracts — the key variable for medium-term diversification credibility."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 11월 (3분기 실적 발표)",
-    "en": "November 2026 (3Q26 results)"
-   },
-   "what": {
-    "ko": "2026년 3분기 연결 실적 — 삼성 하반기 신모델 공급 반영 결과 확인 및 연간 이익 확정 전망치 산출 시점으로, 2025년 흑자전환이 구조적 개선인지 확인.",
-    "en": "3Q26 consolidated results — confirms the impact of Samsung 2H26 model supply ramp and enables full-year earnings projection, serving as a key test of whether FY2025's profit turnaround reflects structural improvement."
+    "ko": "미국 리카본의 PCCU 기술 기반 친환경 수소 사업의 실증·사업화 관련 추가 공시나 계약 체결 여부를 지속적으로 확인할 필요가 있다.",
+    "en": "Continue monitoring for additional disclosures or contracts related to demonstration and commercialization of the eco-friendly hydrogen business based on Recarbon's PCCU technology."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "에스코넥은 2024년 아리셀 화재 참사로 촉발된 재무·평판 충격을 딛고, 2025년 영업이익 133억원·순이익 358억원의 대규모 흑자전환과 부채비율 92% 회복이라는 의미 있는 재무 정상화를 이뤄냈다. 삼성전자 Galaxy 폴더블폰 성장 수혜라는 우호적 전방 환경과 수익성 중심 사업 재편은 중장기 영업이익률 개선 여지를 지지하는 요소다. 반면 2026년 1분기 영업이익이 전년동기 대비 93% 급감한 점은 이익 회복의 연속성에 물음표를 남기고 있으며, 이것이 계절적 부진인지 구조적 수주 변동인지는 향후 분기 실적으로 확인해야 한다. 아리셀 화재 관련 형사·민사 소송의 진행 결과와 삼성전자 공급망 지위 유지 여부는 사업 기반 전체를 좌우할 수 있는 핵심 변수로 남아 있다. 친환경 수소·2차전지 부품 신사업의 매출 기여 가시화는 단일 고객 의존 구조를 완화할 잠재력이 있으나, 구체적 시점과 규모는 추가 공시로 확인이 필요하다. 투자자는 2026년 2~3분기 분기 실적, 소송 진행 경과, 삼성 신모델 출시 수주 공급 현황을 종합적으로 모니터링할 필요가 있다.",
-   "en": "S-Connect achieved a meaningful financial normalization in FY2025 — operating profit of ₩13.3B, net profit of ₩35.8B (profit reversal), and a debt ratio restored to 92% — overcoming the financial and reputational shock of the 2024 Aricel fire disaster. The favorable backdrop of Samsung Galaxy foldable expansion and the company's profitability-focused restructuring support the case for continued operating margin improvement. However, the 93% YoY collapse in 1Q26 operating profit raises a material question mark over earnings continuity, and whether this reflects seasonal softness or a structural order gap must be verified through forthcoming quarterly results. The outcome of the ongoing Aricel criminal and civil proceedings and Samsung Electronics' supply-chain positioning remain overriding variables that could affect the entire business foundation. New business segments in clean hydrogen and secondary battery parts hold potential to reduce single-customer dependency, but concrete timelines and scale require confirmation via official disclosures. Investors should closely track 2Q–3Q26 quarterly results, litigation developments, and Samsung new-model supply order data as the critical checkpoints for this investment case."
+   "ko": "에스코넥은 2025년 연결 매출 2,787억원, 영업이익 133억원, 순이익 358억원으로 뚜렷한 흑자전환에 성공하며 부채비율도 큰 폭으로 낮췄다. 그러나 2026년 1분기와 2분기 연속으로 영업·순손실이 재발하고 매출도 감소세를 보이면서, 지난해의 개선세가 일시적인 것인지 구조적인 것인지에 대한 판단이 엇갈릴 수 있는 국면이다. 주력인 삼성전자 대상 폴더블폰 부품 사업은 신모델 출시 주기에 따른 계절성이 있고, 이차전지 CID와 친환경 수소(PCCU) 신사업은 성장 잠재력과 함께 상업화 초기 단계의 불확실성을 동시에 지니고 있다. 5대1 주식병합을 통한 유통주식수 조정과 종속기업 연결 제외 등 사업구조 재편도 진행됐지만, 이런 변화가 실적 안정성으로 이어질지는 향후 분기 실적으로 확인이 필요하다. 밸류에이션 측면에서는 순자산 대비 할인된 수준에서 거래되고 있으나, 최근 이익의 상당 부분이 2025년 하반기의 일시적 요인에 기인했을 가능성을 감안할 필요가 있다. 종합적으로 투자자는 향후 분기별 흑자 지속 여부와 신사업 진행 상황을 함께 살펴볼 필요가 있다.",
+   "en": "S-Connect achieved a clear turnaround to profit in 2025, with consolidated revenue of KRW 278.7bn, operating profit of KRW 13.3bn and net income of KRW 35.8bn, while also significantly lowering its debt ratio. However, with operating and net losses reappearing in both Q1 and Q2 2026 alongside declining revenue, opinions could diverge on whether last year's improvement was temporary or structural. The core foldable phone parts business supplied to Samsung Electronics carries seasonality tied to new model launch cycles, while the secondary battery CID and eco-friendly hydrogen (PCCU) new businesses carry both growth potential and the uncertainty of an early commercialization stage. Business restructuring, including the 5-to-1 share consolidation adjusting shares outstanding and subsidiary deconsolidation, has also taken place, but whether these changes translate into earnings stability requires confirmation through future quarterly results. On valuation, the stock trades at a discount to book value, though it is worth noting that a substantial portion of recent profit may stem from temporary factors in the second half of 2025. Overall, investors would need to monitor both the continuity of quarterly profitability and progress on new businesses going forward."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A096630",
-  "https://news.nate.com/view/20260211n38580",
-  "https://wcomp.fnguide.com/CompanyInfo/Information?cmp_cd=096630",
+  "https://stocks.pluconnect.com/096630_%EC%97%90%EC%8A%A4%EC%BD%94%EB%84%A5/",
+  "https://dartpoint.ai/00573269",
+  "https://kr.investing.com/equities/s-connect-co-ltd",
+  "https://alphasquare.co.kr/home/stock-summary?code=096630",
+  "https://markets.hankyung.com/stock/096630/consensus",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=640168",
+  "https://news.nate.com/view/20260312n16858",
+  "https://kr.investing.com/equities/s-connect-co-ltd-news",
+  "https://www.metroseoul.co.kr/article/20260212500287",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20240318000898&docno=&viewerhost=",
   "https://www.k5.co.kr/stock/096630",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A096630&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
   "https://www.valueline.co.kr/finance/mri/096630",
-  "https://markets.hankyung.com/stock/096630",
-  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=096630",
-  "https://youdiff.co.kr/259",
-  "https://thevc.kr/sconnect",
-  "https://www.hankyung.com/finance/article/2011092602886",
-  "https://www.asiae.co.kr/article/2011092606472674763",
-  "https://stockstalker.co.kr/foldable-phone/",
-  "http://www.thebell.co.kr/free/content/ArticleView.asp?key=202006161154342040101829&lcode=00",
-  "https://www.jobkorea.co.kr/company/1545136",
-  "https://www.hankyung.com/article/2024062597406",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=096630",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=640168"
+  "https://m.irgo.co.kr/IR-COMP/096630/%EC%97%90%EC%8A%A4%EC%BD%94%EB%84%A5-IR-PAGE",
+  "https://m.thinkpool.com/item/096630",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A096630",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20230322000253",
+  "https://securities.miraeasset.com/bbs/download/2129432.pdf?attachmentId=2129432",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A096630&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "096630",
  "name": "에스코넥",
  "name_en": "S Connect Co., LTD",
@@ -233,9 +223,9 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-25",
- "reportTs": "2026-06-25 20:39",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 09:12",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 1900,
-   "mcap": 0.0302,
+   "price": 1825,
+   "mcap": 0.029,
    "shares": 15876323,
    "total_shares": 15876323,
    "wavg_shares": null,
-   "per": 1.546,
+   "per": 1.485,
    "eps": 1229,
-   "pbr": 0.3492,
+   "pbr": 0.3354,
    "bps": 5441,
    "roe_ttm": 26.5,
    "ttm_window": "2025Q3~2026Q2",

@@ -1,229 +1,220 @@
 {
  "title": {
-  "ko": "매출 반등에도 적자 고착, 신사업 전환이 관건",
-  "en": "Revenue Rebounds, Structural Losses Persist: New Business Execution Is the Key Variable"
+  "ko": "잦은 대주주 교체 속 매출 성장, 손실은 확대",
+  "en": "Revenue Grows, Losses Widen Amid Frequent Ownership Changes"
  },
  "lead": {
-  "ko": "글로벌 기지국 커플러 세계 2위 공급사 알엔투테크놀로지는 2025년 매출이 약 30% 반등했으나 영업손실 구조가 개선되지 않고, 2026년 1분기 순손실이 전년 연간치에 육박해 재무 건전성과 신사업 전환 속도가 핵심 과제로 부상했다.",
-  "en": "RN2 Technologies, the world's second-largest LTCC ceramic coupler supplier for 5G base stations, posted a ~30% revenue rebound in 2025, but structural operating losses remained entrenched, and a Q1 2026 net loss approaching the full-year 2025 figure has made financial resilience and new-business execution the central concerns for investors."
+  "ko": "알엔투테크놀로지는 2025년 매출이 전년 대비 크게 늘었지만 영업손실과 순손실도 함께 확대됐고, 최근 2년간 최대주주가 여러 차례 바뀌는 지배구조 변동이 이어지고 있다.",
+  "en": "RN2 Technology posted sharp revenue growth in 2025, but operating and net losses widened at the same time, while its controlling shareholder has changed multiple times over the past two years."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 약 186억 원(전년 대비 +30%)으로 5G 기지국 투자 부분 회복을 반영했으나, 영업이익률 -18.4%로 4년 연속 영업적자가 지속됐다.",
-   "en": "Revenues rose ~30% YoY to approximately KRW 18.6 billion in 2025, partially reflecting a 5G capex rebound, but the operating margin held at -18.4%, marking four consecutive years of operating losses."
+   "ko": "2025년 연결 매출 186.5억원으로 전년(143.0억원) 대비 증가했으나 영업손실은 34.3억원으로 확대",
+   "en": "2025 consolidated revenue rose to KRW 18.65bn from KRW 14.30bn a year earlier, but the operating loss widened to KRW 3.43bn"
   },
   {
-   "ko": "2025년 부채총계가 전년 약 102억 원에서 약 240억 원으로 두 배 이상 급증(부채비율 28.5% → 60.8%)하고, 영업활동현금흐름이 +27억에서 -43억으로 역전되며 재무 레버리지와 유동성 리스크가 동시에 확대됐다.",
-   "en": "Total liabilities more than doubled in 2025—from ~KRW 10.2 billion to ~KRW 24.0 billion—pushing the debt ratio from 28.5% to 60.8%, while operating cash flow reversed from +KRW 2.7 billion to -KRW 4.3 billion, simultaneously elevating both leverage and liquidity risk."
+   "ko": "2026년 1분기 영업손실이 전년 동기 대비 크게 늘었고, 회사 측은 무역분쟁에 따른 특정 지역 MLC 매출 감소를 원인으로 설명",
+   "en": "The operating loss widened sharply in the first quarter of 2026, which the company attributed in part to reduced MLC sales in certain regions tied to trade disputes"
   },
   {
-   "ko": "2026년 1분기 지배주주 순손실 약 -33억 원이 2025년 연간 순손실 약 -39억 원에 근접해, 전환사채 관련 비영업 손익 변동에 따른 실적 변동성이 크게 확대된 것으로 추정된다.",
-   "en": "The Q1 2026 controlling-shareholder net loss of approximately -KRW 33.3 billion approached the full-year 2025 net loss of -KRW 38.6 billion, suggesting a substantial surge in non-operating charges—likely from convertible bond derivative fair-value adjustments or interest expenses—driving heightened earnings volatility."
+   "ko": "2025년 1월 이후 최대주주가 티에스1호조합→(뉴진1호조합 시도, 무산)→위드윈투자조합91호→씨씨지아이제2호투자조합 순으로 반복 변경",
+   "en": "Since January 2025 the largest shareholder has changed repeatedly—from TS No.1 Union to a failed bid by Newjin No.1 Union, then to Widwin Investment Union No.91, and most recently to CCGI No.2 Investment Union"
   },
   {
-   "ko": "전기차용 세라믹 방열기판(자회사 알엔투세라믹스), 방산 MMIC 적층기판(양산 직전 단계), AI 데이터센터용 세라믹 기판(사업화 계획) 등 세 축의 신사업이 잠재적 성장 동력으로 추진되고 있으나, 현재까지 매출 기여는 미미하다.",
-   "en": "Three new business pillars—EV ceramic heat dissipation substrates (via subsidiary RN2 Ceramics), defense-grade MMIC laminated substrates (near mass production), and AI datacenter ceramic substrates (at the planning stage)—are being developed as potential growth engines, but revenue contributions remain negligible to date."
+   "ko": "주력인 LTCC 기반 통신 부품 외에 전기차용 세라믹 방열기판, 전력반도체 패키징, 반도체 자회사 인수 등 사업 다변화 진행 중",
+   "en": "Beyond its core LTCC-based telecom components, the company is diversifying into EV ceramic heat-sink substrates, power semiconductor packaging, and a semiconductor subsidiary acquisition"
   },
   {
-   "ko": "2026년 초 유상증자 결정 철회 및 타법인 주식 양수금액 50% 이상 변경으로 불성실공시법인 지정 예고가 발생하여 공시 신뢰도와 지배구조 리스크가 가중됐다.",
-   "en": "In early 2026, KRX issued an unfaithful-disclosure pre-designation notice following a reversed rights offering and a material change in an M&A transaction amount, adding governance and disclosure credibility concerns to the investment case."
+   "ko": "2026년 9월 18일 신주 상장이 예정된 70억원 규모 3자배정 유상증자로 최대주주가 다시 바뀔 예정",
+   "en": "A KRW 7.0bn third-party share placement, with new shares set to list on September 18, 2026, is expected to trigger another change in the controlling shareholder"
   }
  ],
  "business": {
-  "ko": "알엔투테크놀로지는 2002년 설립된 LTCC(저온동시소성세라믹) 원천소재 기반 전자부품 제조기업으로, 경기도 화성에 본사를 두고 강릉 생산기지를 추가로 운영한다. 핵심 사업인 MLC(Multi-Layer Components) 부문에서 5G 이동통신 기지국·중계기용 RF 커플러, 칩 안테나, 딜레이라인, 터미네이션 등 세라믹 수동부품을 생산하며 매출의 대부분을 차지한다. 글로벌 기지국 중계기용 커플러 시장에서 세계 2위 공급자 지위를 보유하고, 삼성전자·에릭슨·화웨이·노키아·ZTE 등 글로벌 5대 통신장비 제조사에 납품한다. LTCC 소재 원천기술과 적층세라믹 공정을 기반으로 원료 분말에서 완성품까지 수직계열화된 일관생산 체계를 갖춰 원가 경쟁력을 확보하고 있다. MCP(Multi-Layer Ceramic PCB) 부문은 방위산업 및 항공우주용 다층 세라믹 기판을 공급하고, Material 부문은 LTCC 파우더를 외부에 판매한다. 중국 전기차 관성항법장치용 커플러 채택으로 전장부품 매출처를 확대하는 등 기존 통신부품 이외의 응용 분야로 사업 영역을 넓히고 있다. 자회사 알엔투세라믹스를 통해 전기차 인버터용 전력반도체 패키징용 세라믹 방열기판 사업을 신성장 동력으로 육성 중이며, 스페이서 일체형 및 Pin-Fin 일체형 방열기판 관련 핵심 특허 4건을 등록하고 9건을 추가 출원했다. 14건의 회로설계 관련 특허 등록과 8건 출원을 통해 기술적 차별화를 유지하고 있으며, 고주파·내환경성 제품 경쟁력이 핵심 차별화 요소다.",
-  "en": "RN2 Technologies, founded in 2002, is a LTCC (Low Temperature Co-fired Ceramics)-based electronic components manufacturer headquartered in Hwaseong, Gyeonggi Province, with additional production facilities in Gangneung. Its core MLC (Multi-Layer Components) segment produces ceramic passive components—including RF couplers, chip antennas, delay lines, and terminations—for 5G base stations and repeaters, accounting for the majority of revenues. The company holds the position of global No.2 supplier of couplers for base station repeaters, supplying all five major global telecom equipment manufacturers: Samsung Electronics, Ericsson, Huawei, Nokia, and ZTE. A vertically integrated production system—from LTCC powder to finished product—underpins its cost competitiveness. The MCP (Multi-Layer Ceramic PCB) segment supplies multilayer ceramic substrates for defense and aerospace applications, while the Material segment sells LTCC powder externally. The company is also expanding into automotive electronics, including supply of couplers for EV inertial navigation systems in China, broadening its application base beyond traditional telecom. Through its subsidiary RN2 Ceramics, it is developing ceramic heat dissipation substrates for EV power semiconductor packaging as a new growth engine, holding four registered core structural patents and nine additional filed patents. Fourteen registered circuit-design patents and superior high-frequency and environmental-resistance characteristics constitute the primary technical moat."
+  "ko": "알엔투테크놀로지는 LTCC(저온동시소성세라믹) 원천소재 기술과 적층세라믹 공정을 바탕으로 이동통신 기지국용 부품과 세라믹 PCB를 제조하는 회사다. 주력 제품인 MLC(Multi-Layer Components)는 Coupler, Quadrifilar, Doherty Combiner 등 RF 신호를 분기·혼합하는 부품이며, MCP(Multi-Layer Ceramic PCB)는 Termination, Attenuator 등 RF 신호를 종결하고 노이즈를 억제하는 부품이다. 삼성전자, Ericsson, Huawei, Nokia, ZTE 등 세계 5대 무선통신 장비업체에 제품을 공급하고 있으며, 파운드리 서비스로는 방산용·차량용·영상의료기기용 다층 세라믹 PCB를 제공한다. 신성장 동력으로는 전력반도체 및 반도체 장비 업체와 공동 개발 중인 스페이서 일체형·Pin-Fin 일체형 세라믹 방열기판, 5G 휴대폰과 Wifi 공유기용 필터 소재로 쓰이는 고유전율 LTCC 파우더가 있으며, 2024년 IATF 16949 인증을 획득했다. 최근에는 6G 통신 부품, 전기차 인버터용 세라믹 방열기판, 휴대폰용 세라믹 UWB 안테나 사업을 신성장 동력으로 육성하고 있고, 자동차용 커플러의 중국 전기차 적용을 통해 매출처 다변화를 추진하고 있다. 여기에 더해 2025년 말에는 반도체칩 개발기업 아이윈플러스 지분 인수를 결정해 세라믹 소재 사업과의 시너지를 모색하고 있으며, 전고체 배터리용 전해질 소재 등 이차전지 관련 신사업도 사업 목적에 추가하는 등 사업 다각화 시도가 이어지고 있다. 이 과정에서 2025년 8월에는 사명을 '알엔티엑스'로 변경하고 블록체인 관련 소프트웨어 개발업 등을 사업목적에 추가하겠다는 계획이 공시된 바 있다. 회사는 3개의 비상장 종속회사를 보유하고 있으며, 경쟁구도상 글로벌 대형 세라믹 소재업체와 국내외 중소 부품업체 사이에서 특화된 파운드리 서비스로 입지를 확보하려는 전략을 취하고 있다.",
+  "en": "RN2 Technology manufactures telecom base-station components and ceramic PCBs based on proprietary LTCC (low-temperature co-fired ceramic) material technology and multilayer ceramic processes. Its core MLC (Multi-Layer Components) products include couplers, quadrifilars, and Doherty combiners that split and combine RF signals, while its MCP (Multi-Layer Ceramic PCB) products, such as terminations and attenuators, terminate RF signals and suppress noise. The company supplies Samsung Electronics, Ericsson, Huawei, Nokia, and ZTE, the world's top five wireless equipment makers, and offers foundry services producing multilayer ceramic PCBs for defense, automotive, and medical imaging applications. New growth initiatives include spacer-integrated and pin-fin-integrated ceramic heat-sink substrates co-developed with power semiconductor and equipment makers, along with high-permittivity LTCC powder supplied as filter material for 5G phones and WiFi routers, and it obtained IATF 16949 certification in 2024. More recently the company has been cultivating 6G components, EV inverter ceramic heat-sink substrates, and ceramic UWB antennas for phones as new growth drivers, while diversifying its customer base through adoption of automotive couplers in Chinese electric vehicles. In late 2025 it also decided to acquire a stake in semiconductor chip developer iWinPlus, seeking synergy with its ceramic materials business, and has added new business lines such as solid-state battery electrolyte materials as part of ongoing diversification efforts. In August 2025 the company disclosed plans to change its corporate name to RNTX and add blockchain-related software development to its business scope. The company holds three unlisted subsidiaries and competes by positioning specialized foundry services between large global ceramic materials makers and smaller domestic and overseas component suppliers."
  },
  "earnings": {
-  "ko": "2022년 매출 약 237억 원에 영업이익률 +0.1%로 가까스로 흑자를 유지한 이후, 글로벌 5G 기지국 투자 위축의 영향으로 2023년 매출이 약 147억 원(-38% YoY)으로 급감하고 영업이익률이 -9.9%로 전환됐으며 당기순손실은 약 37억 원에 달했다. 2024년에는 매출이 약 143억 원으로 소폭 추가 감소하고 영업이익률은 -18.8%로 더 악화됐으나, 영업활동현금흐름은 +27억 원으로 2023년 대비 크게 개선됐다. 2025년에는 매출이 약 187억 원으로 전년 대비 약 30% 반등했으나, 영업손실 규모는 약 34억 원으로 오히려 확대됐으며(영업이익률 -18.4%), 영업활동현금흐름도 약 -43억 원으로 전년의 플러스에서 급반전했다. 2025년 부채총계가 전년 약 102억 원에서 약 240억 원으로 급증했는데, 이는 전환사채 등 부채성 조달의 확대에 기인한 것으로 추정되며, 동기간 지배주주지분이 약 357억 원에서 약 393억 원으로 증가한 것은 순손실에도 불구하고 유상증자 등 자본 조달이 병행됐음을 시사한다. 분기 흐름을 보면 2025년 1분기 영업손실이 약 -2억 원으로 제한됐으나 이후 2분기 -8억, 3분기 -16억, 4분기 -8억으로 변동이 컸다. 특히 2025년 2분기에는 영업손실 -8억에도 불구하고 지배주주 순이익이 +7억 원을 기록해 비영업 수익에서 일회성 이익이 발생한 것으로 파악된다. 2026년 1분기 매출은 약 47억 원으로 전분기 대비 소폭 증가했으나, 영업손실 약 -13억 원에 지배주주 순손실이 약 -33억 원에 달해 영업손실과의 갭(약 -20억 원)이 비영업 손익의 급격한 악화를 가리키며, 전환사채 관련 이자 비용 또는 파생상품 평가손실이 주요 원인으로 추정된다.",
-  "en": "In 2022, revenues reached approximately KRW 23.7 billion with an operating margin of +0.1%, barely staying profitable. From 2023 onward, the global 5G capex downcycle weighed heavily: revenues fell ~38% YoY to approximately KRW 14.7 billion, the operating margin swung to -9.9%, and net losses reached approximately KRW 3.7 billion. In 2024, revenues edged down further to ~KRW 14.3 billion while the operating margin worsened to -18.8%, though operating cash flow recovered to +KRW 2.7 billion. The 2025 fiscal year brought a ~30% revenue rebound to approximately KRW 18.7 billion, yet the operating loss widened to approximately KRW 3.4 billion (operating margin -18.4%), and operating cash flow reversed sharply to approximately -KRW 4.3 billion. Total liabilities more than doubled in 2025—from ~KRW 10.2 billion to ~KRW 24.0 billion—likely driven by convertible bond issuances; notably, controlling shareholders' equity still rose from ~KRW 35.6 billion to ~KRW 39.3 billion despite net losses, implying parallel equity capital raises of approximately KRW 7.5 billion. On a quarterly basis, operating losses oscillated widely—Q1 2025: -KRW 213 million; Q2: -KRW 830 million; Q3: -KRW 1.58 billion (the steepest); Q4: -KRW 805 million—with Q2 recording a positive net income of +KRW 670 million despite an operating loss, indicating a one-time non-operating gain. In Q1 2026, revenue held relatively stable at ~KRW 4.7 billion QoQ, but the controlling-shareholder net loss surged to approximately -KRW 3.3 billion, nearly matching the full-year 2025 net loss; the ~KRW 2.0 billion gap between operating loss and net loss points to substantial non-operating charges, likely fair-value losses on embedded derivatives or interest expenses on convertible bonds."
+  "ko": "2025년 연결 매출액은 186억 5,155만원으로 2024년 143억 314만원 대비 30% 이상 증가했지만, 영업손실은 34억 3,427만원으로 2024년 26억 8,830만원보다 확대됐고 지배주주 순손실도 38억 6,450만원으로 2024년 17억 1,861만원 대비 크게 늘었다. 영업이익률은 2025년 -18.4%로 2024년 -18.8%와 비슷한 수준을 유지했지만, 절대 손실액은 매출 증가에도 불구하고 커졌다. 2023년에는 매출 146억 8,665만원에 영업손실 14억 4,982만원, 순손실 36억 8,595만원을 기록했고, 2022년에는 매출 237억 4,152만원으로 최근 4년 중 가장 높았고 영업이익도 3,268만원의 미미한 흑자를 냈으나 순이익은 여전히 소폭 적자였다. 분기별로 보면 2025년 2분기는 매출 46억 1,365만원에 영업손실 8억 3,207만원을 기록했음에도 지배주주 순이익은 6억 6,583만원 흑자로 전환됐는데, 이는 비영업 자산 매각 등 일회성 요인이 반영된 결과로 풀이된다. 반면 2025년 3분기부터는 순손실이 재차 확대돼 3분기 -18억 7,786만원, 4분기 -14억 2,088만원을 기록했고, 2026년 1분기와 2분기에는 순손실이 각각 -33억 3,097만원, -31억 3,042만원으로 급격히 커졌다. 특히 2026년 1분기는 영업손실(-13억 3,674만원)이 전년 동기 대비 대폭 확대됐는데, 회사 측 설명에 따르면 통신장비 투자 회복에도 무역분쟁으로 특정 지역 MLC 매출이 줄어 매출총이익이 감소한 영향이 컸다. 2026년 들어 두 개 분기 모두 순손실 규모가 영업손실보다 훨씬 커, 영업 외 비용이나 지분법 손실 등 비영업 요인이 실적에 큰 영향을 미치고 있음을 시사한다. 현금흐름 측면에서도 2025년 영업활동현금흐름이 -43억 1,783만원으로 2024년 +27억 3,294만원에서 마이너스로 전환됐고, 부채비율은 2025년 60.8%로 2024년 28.5%에서 크게 높아져 재무구조에도 변화가 나타났다.",
+  "en": "Consolidated 2025 revenue reached KRW 18.65bn, up more than 30% from KRW 14.30bn in 2024, but the operating loss widened to KRW 3.43bn from KRW 2.69bn in 2024, and the owner-attributable net loss grew sharply to KRW 3.86bn from KRW 1.72bn. The operating margin held near -18.4% in 2025 versus -18.8% in 2024, but the absolute loss amount increased despite the revenue growth. In 2023 revenue was KRW 14.69bn with an operating loss of KRW 1.45bn and a net loss of KRW 3.69bn, while 2022 revenue of KRW 23.74bn was the highest of the past four years and produced a marginally positive operating profit of KRW 32.7 million, though net income remained slightly negative. On a quarterly basis, the second quarter of 2025 posted revenue of KRW 4.61bn and an operating loss of KRW 832 million, yet owner net income turned positive at KRW 666 million, a result apparently driven by one-off items such as the sale of non-core assets. Net losses then widened again from the third quarter of 2025 onward, reaching KRW -1.88bn in the third quarter and KRW -1.42bn in the fourth quarter, before jumping sharply to KRW -3.33bn and KRW -3.13bn in the first and second quarters of 2026, respectively. Notably, the first-quarter 2026 operating loss of KRW 1.34bn expanded substantially year over year, which the company attributed largely to a decline in gross profit as MLC sales fell in certain regions due to trade disputes even as telecom equipment investment recovered. In both 2026 quarters, net losses were far larger than operating losses, suggesting non-operating items such as financial costs or equity-method losses have had a significant impact on results. Operating cash flow also turned negative to KRW -4.32bn in 2025 from KRW +2.73bn in 2024, and the debt ratio rose sharply to 60.8% in 2025 from 28.5% in 2024, indicating a shift in the company's financial structure."
  },
  "industry": {
-  "ko": "글로벌 5G 기지국 투자 사이클은 2022년 정점을 지나 2023~2024년 조정 국면에 진입했으며, 2025년부터 인도의 대규모 5G 네트워크 구축 투자, 미국 버라이즌의 설비투자 재개, 국내 주파수 경매 등을 계기로 점진적 회복세가 기대된다. 6G 상용화를 위한 국제 표준화 논의가 진행 중이며, 7~24GHz 상위 중대역(upper mid-band)이 핵심 주파수 대역으로 부상해 해당 대역 최적화 세라믹 부품에 대한 장기 수요 확대가 예상된다. 화웨이·ZTE에 대한 서방 제재의 지속은 고객 포트폴리오 구성과 수주 안정성에 구조적 불확실성을 더하고 있다. 전기차 전력반도체 패키징용 방열기판 시장은 글로벌 전력반도체 시장이 2030년까지 약 433억 달러(약 63조 원) 규모로 성장할 것으로 전망되는 가운데 핵심 부품으로 주목받고 있으며, 전력 효율 및 열 관리 요구가 높아지면서 세라믹 소재의 경쟁력이 부각되고 있다. 방위산업에서는 GaN 기반 MMIC 모듈 수요가 전 세계적으로 증가하고 있고, 200도 이상의 고온 동작 요건이 고내열 세라믹 패키징 기술의 전략적 가치를 높이고 있다. AI 데이터센터 인프라 투자 확대로 GPU·TPU 등 고발열 반도체용 세라믹 기반 고방열 기판 수요가 형성되고 있으나, 공급망 전환에는 추가 시간이 소요된다. 국내 LTCC 세라믹 부품 업계에서 알엔투테크놀로지는 기술력과 특허 IP 측면에서 차별화된 포지션을 유지하고 있으나, 일본·유럽계 경쟁사들의 글로벌 시장 점유율이 여전히 상당 수준이다.",
-  "en": "The global 5G base-station capex cycle peaked in 2022 and entered a correction phase in 2023–2024, but a gradual recovery is expected from 2025 onward, driven by large-scale Indian 5G deployments, Verizon's resumed infrastructure spending, and domestic Korean spectrum auctions. International standardization work for 6G is advancing, with the upper mid-band (7–24 GHz) emerging as a key frequency range, pointing to structurally growing long-term demand for optimized ceramic components. Continued Western sanctions on Huawei and ZTE introduce structural uncertainty to the customer mix and order stability. The EV power-semiconductor packaging substrate market is attracting growing attention: the global power semiconductor market is forecast to grow to approximately USD 43.3 billion (roughly KRW 63 trillion) by 2030, and tightening power-efficiency and thermal-management requirements are enhancing the competitiveness of ceramic materials. Defense demand for GaN-based MMIC modules is rising globally, and the requirement for stable operation above 200°C elevates the strategic importance of high-heat-tolerance ceramic packaging. Expanding AI datacenter investment is beginning to generate demand for high-thermal-conductivity ceramic substrates for GPUs and TPUs, though supply chain transitions to such solutions still require time. Within the domestic LTCC ceramic components market, RN2 maintains a differentiated position through its technology and IP portfolio, though Japanese and European competitors retain substantial global market share."
+  "ko": "회사의 전방산업인 이동통신 기지국 장비 시장은 글로벌 경기침체 영향으로 투자가 부진한 상황이지만, 국내 주파수 경매와 인도의 5G 투자, 미국 버라이즌의 설비투자가 점진적인 개선 요인으로 꼽힌다. 6G 표준화 논의가 진행되고 있으나 상용화까지는 시간이 필요한 초기 단계로, 관련 부품 수요가 본격화하기까지는 다소 시간이 걸릴 전망이다. 세라믹 소재 및 부품 시장은 일본 무라타, 교세라, TDK 등 대형 글로벌 업체가 규모의 경제를 갖추고 있어, 알엔투테크놀로지와 같은 중소형 업체는 특화된 파운드리 서비스와 맞춤형 개발 역량으로 틈새 시장을 공략하는 전략을 취하고 있다. 전기차·전력반도체용 세라믹 방열기판 시장은 아직 초기 단계로, 완성차 업체 및 반도체 장비 업체와의 공동개발 프로젝트를 통해 진입을 모색하는 국면이다. 방산용 다층 세라믹 PCB 수요는 지정학적 긴장 속에서 국가별 국방 예산 확대와 함께 신규 진입 기회가 열리고 있는 분야로 거론된다. 다만 회사가 세라믹 부품 본업과 별개로 반도체 자회사 인수, 전고체 배터리 소재, 블록체인 사업 등으로 사업 영역을 확장하려는 시도가 겹치면서, 산업 내 위치가 다소 복합적으로 변화하는 모습이다.",
+  "en": "The company's downstream telecom base-station equipment market has seen sluggish investment amid the global economic slowdown, though a domestic spectrum auction, India's 5G investment, and Verizon's US capital expenditure are cited as gradual improvement factors. Discussions on 6G standardization are underway but remain at an early stage, meaning demand for related components is likely to take time to materialize in scale. In the ceramic materials and components market, large global players such as Murata, Kyocera, and TDK of Japan benefit from economies of scale, pushing smaller companies like RN2 Technology toward specialized foundry services and customized development capabilities to target niche segments. The market for EV and power-semiconductor ceramic heat-sink substrates remains at an early stage, with the company seeking entry through joint development projects with automakers and semiconductor equipment makers. Demand for multilayer ceramic PCBs used in defense applications is cited as an area opening new entry opportunities alongside expanding national defense budgets amid geopolitical tensions. However, as the company simultaneously pursues expansion into a semiconductor subsidiary acquisition, solid-state battery materials, and blockchain-related business alongside its core ceramic components operation, its position within the industry is becoming somewhat more complex."
  },
  "outlook": {
-  "ko": "통신부품 핵심 사업의 단기 회복은 인도 5G 투자 가속화와 미국 주요 통신사의 설비투자 확대가 견인할 것으로 기대되나, 화웨이·ZTE에 대한 서방 제재의 파급 영향이 지속적인 불확실 변수로 남아 있다. 방산 MMIC 적층기판은 해외 방산기업과 수년간의 공동개발을 거쳐 다수의 성능·신뢰성 테스트를 통과하고 현재 양산 직전 단계에 있으며, 최초 상업 매출 발생 시점이 가장 임박한 신사업 모니터링 포인트다. AI 데이터센터용 적층세라믹 기판 사업은 MMIC 공정 역량을 활용해 진출을 계획하고 있으나, 구체적인 공급 계획 수립 단계로 매출 기여 일정은 미확인 상태다. 전기차용 세라믹 방열기판은 7개 고객사와 공동개발 프로젝트가 진행 중이며, 중기부·산업부 R&D 지원 사업 2건 선정으로 향후 4년간 총 24억 원 규모의 정부 자금을 확보했다. 글로벌 전력반도체 톱티어 업체 5개사와 NDA를 체결하고 공동개발 중이나, 자동차 부품 특성상 양산 공급까지 인증·검증 기간이 추가적으로 소요될 전망이다. 재무 측면에서는 2026년 1분기 대규모 순손실이 CB 관련 비영업 손익에서 비롯된 것으로 추정되며, CB 전환·상환 일정과 이에 따른 자본구조 변화가 단기 재무 건전성의 핵심 모니터링 과제다. 향후 신사업의 순차적 상업화가 이루어질 경우 매출 믹스 개선과 수익성 전환의 가능성이 있으나, 가시화에는 시간이 소요될 것으로 판단된다.",
-  "en": "Near-term recovery in the core communications components business is expected to be driven by accelerating Indian 5G deployments and expanded U.S. carrier capex, though the continued ripple effects of Western sanctions on Huawei and ZTE remain an ongoing uncertainty. The defense MMIC laminated substrate has progressed through years of joint development with a global defense firm, passing multiple performance and reliability tests, and is now reportedly at a near-mass-production stage—making it the most imminent new business milestone to monitor for initial commercial revenue. AI datacenter ceramic substrate entry is planned by leveraging existing MMIC process capabilities, but specific supply timelines have not been publicly confirmed. The EV ceramic heat dissipation substrate business is advancing through co-development with seven customers, with government R&D grants of KRW 2.4 billion secured over four years from the Ministry of SMEs and Startups and the Ministry of Trade, Industry and Energy. Five NDAs have been signed with global tier-1 power semiconductor manufacturers, though rigorous automotive certification requirements mean that mass-production supply timelines are likely to extend. On the financial front, tracking convertible bond conversion or redemption schedules—and the corresponding balance sheet impacts—remains a priority near-term issue. Should new businesses commercialize sequentially, there is potential for an improved revenue mix and a path toward profitability, though materialization is expected to take time."
+  "ko": "회사는 국내 주파수 경매, 인도 5G 투자, 미국 버라이즌 설비투자 등을 통신부품 매출 회복의 근거로 제시하고 있으며, 중국 전기차의 관성항법장치 커플러 채택을 계기로 전장부품 매출처를 확대하는 등 사업 다변화를 진행하고 있다. 7개 고객사와 세라믹 방열기판 공동개발 프로젝트를 진행 중이며, 전력반도체·반도체 장비 업체와의 방열기판 공동 개발, 6G·위성통신용 MCP 개발도 병행하고 있다. 2025년 말에는 반도체칩 개발기업 아이윈플러스 지분 인수를 결정해 세라믹 소재 사업과의 시너지를 모색하고 있고, 전고체 배터리용 전해질 소재 등 이차전지 관련 신사업도 사업목적에 추가했다. 지배구조 측면에서는 2026년 8월 28일 씨씨지아이제2호투자조합을 대상으로 한 70억원 규모 3자배정 유상증자 대금이 납입됐고, 9월 18일 신주 상장과 함께 최대주주가 다시 변경될 예정이다. 회사는 이 자금 중 2026년에 35억원, 2027년에 35억원을 운영자금으로 집행할 계획이라고 밝혔다. 다만 2025년 8월 예고된 사명 변경('알엔티엑스')과 블록체인 사업 진출 계획이 실제로 어떻게 진행될지, 그리고 2025년 12월 무산됐던 뉴진1호조합 인수 시도 이후 새로운 지배구조가 안정적으로 정착될지는 아직 불확실한 부분으로 남아 있다.",
+  "en": "The company points to a domestic spectrum auction, India's 5G investment, and Verizon's US capital spending as bases for a recovery in telecom component sales, and it is diversifying its customer base through the adoption of automotive couplers in Chinese electric vehicle inertial navigation systems. It is running joint development projects for ceramic heat-sink substrates with seven customers, alongside heat-sink co-development with power semiconductor and equipment makers and development of MCP products for 6G and satellite communications. In late 2025 the company decided to acquire a stake in semiconductor chip developer iWinPlus to seek synergy with its ceramics business, and it added solid-state battery electrolyte materials to its business scope as a new growth area. On the governance front, payment for a KRW 7.0bn third-party share placement to CCGI No.2 Investment Union was completed on August 28, 2026, and the controlling shareholder is set to change again upon the new shares' listing on September 18. The company stated it plans to deploy KRW 3.5bn of the proceeds in 2026 and another KRW 3.5bn in 2027 as working capital. However, it remains uncertain how the corporate name change to RNTX and the planned entry into blockchain business announced in August 2025 will actually proceed, and whether governance will stabilize following the failed December 2025 takeover attempt by Newjin No.1 Union."
  },
  "valuation_comment": {
-  "ko": "연속 영업적자 국면에서 손익 기반의 배수 평가는 성립하지 않으며, 주가는 순자산 대비 할인 구간에서 거래되고 있다. 주당순자산(BPS) 4,061원이 순자산 가치의 기준점이 되고 있으나, 2023년 이후 누적 적자로 자본이 서서히 잠식되는 추세이고 2026년 1분기 대규모 순손실이 향후 BPS 방어력을 추가로 약화시킬 수 있다. 52주 저점에 근접한 주가 수준은 최고점 대비 큰 폭의 하락을 반영하며, 상장 초기 공모가와 비교해도 상당히 낮은 영역에 위치한다. 배당은 지급되지 않아 수익환원 관점의 매력은 제한적이다. 신사업 매출 가시화와 영업손실 구조적 축소가 확인될 경우 순자산 대비 재평가 여지가 있으나, 현재로서는 손익 및 현금흐름 개선의 확인이 우선적으로 필요한 국면이다.",
-  "en": "With persistent operating losses, earnings-based valuation multiples provide no applicable anchor, and the stock is currently trading at a discount to book value. Book value per share (BPS) of KRW 4,061 serves as the primary reference for net asset value, but the sustained accumulation of net losses since 2023 has been gradually eroding equity, and the substantial Q1 2026 net loss further risks compressing BPS going forward. The share price near the low end of its 52-week range reflects a steep decline from past peaks, and the current level sits well below the original listing price. No dividend is paid, limiting income-based investment appeal. A meaningful re-rating above book value would require demonstrable progress in new-business revenue generation and a structural reduction in operating losses—prerequisites that remain unmet in the current reporting period."
+  "ko": "회사의 순자산 대비 주가 수준은 과거 수년간의 거래 밴드 안에서 하단권에 위치해 있는 것으로 파악되며, 이는 최근 몇 년간 이어진 순손실 누적과 최대주주의 반복적인 변경에 따른 지배구조 불확실성이 반영된 결과로 해석할 수 있다. 2022년의 소폭 흑자 이후 2023~2025년까지 연속 적자를 기록했고, 2026년 상반기에도 순손실 규모가 오히려 커진 만큼, 시장이 부여하는 순자산 대비 배수는 안정적인 이익 실현 여부에 따라 변동할 수 있는 구간으로 보인다. 배당은 최근 몇 년간 지급된 내역이 확인되지 않아, 주주환원보다는 사업 재편과 자금조달에 집중하는 국면으로 판단된다. 잦은 3자배정 유상증자로 인한 발행주식수 증가는 기존 주주의 지분희석 요인으로 작용할 수 있으며, 2026년 9월 신주 상장도 유사한 영향을 줄 수 있다. 결국 밸류에이션은 신성장 사업(전력반도체 방열기판, 전기차 부품, 반도체 자회사 시너지 등)의 실제 매출 기여 여부와 손익 개선 속도에 따라 재평가될 여지가 있는 구조로 판단된다.",
+  "en": "The company's share price relative to net assets appears to sit toward the lower end of its multi-year trading band, a pattern that can be read as reflecting years of accumulated net losses and governance uncertainty stemming from repeated changes in the controlling shareholder. Following a marginal profit in 2022, the company posted consecutive losses from 2023 through 2025, and net losses widened further in the first half of 2026, suggesting that the net-asset multiple the market assigns could move depending on whether stable profitability is achieved. No dividend payments have been identified in recent years, consistent with a phase focused on business restructuring and capital raising rather than shareholder returns. Frequent third-party share placements have increased share count, which can dilute existing shareholders, and the September 2026 new-share listing could have a similar effect. Overall, the valuation appears to be a structure that could be reassessed depending on whether new growth businesses—power-semiconductor heat sinks, EV components, and semiconductor subsidiary synergies—actually contribute to revenue and how quickly profitability improves."
  },
  "bull": [
   {
    "title": {
-    "ko": "5G/6G 사이클 회복과 글로벌 5대 고객 포트폴리오",
-    "en": "5G/6G Cycle Recovery Supported by Global Top-5 Customer Portfolio"
+    "ko": "매출 성장세 지속",
+    "en": "Continued Revenue Growth"
    },
    "body": {
-    "ko": "인도의 5G 네트워크 구축 가속화와 미국 버라이즌의 설비투자 재개를 계기로 MLC 부문 수요 증가가 기대되며, 2025년 매출 반등이 이를 부분적으로 선행 반영했다. 삼성전자·에릭슨·화웨이·노키아·ZTE 등 글로벌 5대 통신장비 제조사 모두에 납품하는 다변화된 고객 구조는 특정 업체의 시장점유율 변동에 따른 집중 리스크를 부분적으로 완화한다. 6G 핵심 주파수 대역인 상위 중대역에 최적화된 밀리미터파 커플러·필터 설계 기술을 이미 확보하고 있어, 차기 통신 사이클에서도 기술 경쟁력이 유지될 가능성이 있다.",
-    "en": "Accelerating Indian 5G network buildout and Verizon's resumed capex spending are expected to drive increased MLC segment demand, with the 2025 revenue rebound partially serving as an early indicator. The diversified customer base—supplying all five global telecom equipment majors—partially mitigates concentration risk from any single vendor's market share shift. Existing design capabilities for millimeter-wave couplers and filters optimized for the upper mid-band, the identified key frequency range for 6G, support sustained technical relevance in the next communications cycle."
+    "ko": "2025년 매출은 186억원으로 2024년 143억원 대비 30% 이상 늘었고, 2026년 1~2분기 매출도 각각 47억원, 46억원대를 유지해 외형은 견조하게 유지되고 있다. 통신장비 부문의 해외 고객사 매출 비중 확대와 소재부문 매출 회복이 외형 성장에 기여한 것으로 파악된다. 신성장 사업(전력반도체 방열기판, EV 부품 등)이 본격 매출화될 경우 추가적인 외형 확대 여지가 있다.",
+    "en": "2025 revenue rose more than 30% to KRW 18.65bn from KRW 14.30bn in 2024, and revenue in the first two quarters of 2026 held steady at roughly KRW 4.7bn and KRW 4.6bn, respectively, keeping the top line resilient. Growth in overseas customer sales within the telecom parts segment and a recovery in the materials segment are seen as contributing to this expansion. Full-scale commercialization of new growth businesses such as power-semiconductor heat sinks and EV components could provide further room for top-line expansion."
    }
   },
   {
    "title": {
-    "ko": "방산·AI 세라믹 기판, 최초 상업 매출 전환 임박",
-    "en": "Defense and AI Ceramic Substrates Approaching First Commercial Revenue"
+    "ko": "사업 다변화 시도",
+    "en": "Business Diversification Efforts"
    },
    "body": {
-    "ko": "방산 MMIC 적층기판은 해외 방산기업과의 수년간 공동개발 및 다수의 신뢰성 테스트를 통과하고 양산 직전 단계에 있어 신사업 중 매출 기여 전환이 가장 임박한 분야다. AI 데이터센터 시장에서 GPU·TPU의 고온 환경에 적합한 세라믹 기판을 자체 생산할 수 있는 국내 유일 기업으로 평가받고 있어, 시장 확대에 따른 선점 가능성이 있다. 기존 LTCC 소재·공정 역량을 레버리지로 활용해 신사업 진출 비용이 상대적으로 낮다는 점도 사업화 시 수익성 전환 가능성을 지지하는 요인이다.",
-    "en": "The defense MMIC laminated substrate, having cleared multiple performance and reliability tests through years of joint development with a global defense firm, stands at a near-mass-production stage—making it the most imminent new business segment to convert to tangible revenue. For AI datacenters, the company is cited as the only domestic manufacturer capable of producing ceramic substrates suitable for high-temperature GPU/TPU environments, positioning it as a potential first-mover as the market grows. The ability to leverage existing LTCC material and process capabilities limits incremental entry costs, supporting a plausible profitability pathway upon successful commercialization."
+    "ko": "전력반도체·반도체 장비용 세라믹 방열기판, 전기차 인버터용 부품, 6G·위성통신용 MCP, 반도체칩 개발기업 아이윈플러스 지분 인수 등 다양한 신사업을 추진하고 있어 통신 부품 단일 사업 의존도를 낮추려는 시도가 이어지고 있다. 7개 고객사와 공동개발 프로젝트가 진행 중인 점은 잠재 고객 기반 확대 가능성을 보여준다. 중국 전기차의 관성항법장치 커플러 채택은 자동차 전장부품 시장 진입의 구체적 사례로 언급된다.",
+    "en": "The company is pursuing multiple new businesses—power-semiconductor and equipment-grade ceramic heat-sink substrates, EV inverter components, 6G and satellite MCP products, and a stake acquisition in semiconductor chip developer iWinPlus—reducing reliance on its single telecom component business. Ongoing joint development projects with seven customers point to potential expansion of its customer base. The adoption of its couplers in Chinese EV inertial navigation systems is cited as a concrete example of entry into the automotive electronics market."
    }
   },
   {
    "title": {
-    "ko": "정부 R&D 지원 및 글로벌 파트너십으로 EV 방열 사업 기반 강화",
-    "en": "Government R&D Grants and Global Partnerships Strengthen EV Heat Substrate Foundation"
+    "ko": "자금조달을 통한 재무 완충",
+    "en": "Capital Raises Providing Financial Buffer"
    },
    "body": {
-    "ko": "중기부·산업부의 R&D 지원 사업 2건 선정으로 향후 4년간 총 24억 원의 정부 자금을 확보했으며, 이는 신사업 초기 투자 비용의 일부를 외부 재원으로 충당해 재무 부담을 완화한다. 글로벌 상위 전력반도체 제조업체 5개사와 NDA를 체결하고 공동개발을 진행 중이어서 미래 상업 공급 계약의 기반이 형성되고 있다. 스페이서 일체형·Pin-Fin 일체형 방열기판 관련 특허 4건 등록과 9건 출원은 기술적 선도성을 지지하며, 동일 구조 개발을 시도하는 경쟁사에 대한 진입 장벽으로 작용할 수 있다.",
-    "en": "Government R&D grants from the Ministry of SMEs and Ministry of Trade—totaling KRW 2.4 billion over four years across two programs—partially offset new-business development costs, reducing near-term financial pressure. Five NDAs with global top-tier power semiconductor manufacturers have established the groundwork for future supply contracts. Four registered patents and nine pending applications covering spacer-integrated and Pin-Fin integrated heat dissipation substrates support technical leadership and serve as meaningful barriers to entry for competing developers."
+    "ko": "2025년 이후 여러 차례의 3자배정 유상증자로 100억원 이상의 자금이 조달됐고, 2026년 8월에도 70억원 규모 증자가 완료돼 운영자금 확보에 도움이 됐다. 회사는 조달 자금을 2026~2027년에 걸쳐 나눠 집행할 계획이라고 밝혀 단기 유동성 압박을 완화하는 효과가 있을 수 있다. 다만 이는 지분 희석을 수반하는 조달 방식이라는 점도 함께 고려할 필요가 있다.",
+    "en": "Multiple third-party share placements since 2025 have raised more than KRW 10bn, and an additional KRW 7.0bn placement was completed in August 2026, helping to secure working capital. The company stated it plans to deploy the proceeds in stages through 2026 and 2027, which could ease near-term liquidity pressure. However, this funding method also involves shareholder dilution, which should be weighed alongside the benefit."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 반등에도 수익성 구조 개선 없는 영업 적자 고착",
-    "en": "Revenue Rebound Has Not Translated into Any Structural Profitability Improvement"
+    "ko": "손실 확대 지속",
+    "en": "Continued Widening of Losses"
    },
    "body": {
-    "ko": "2025년 매출이 약 30% 반등했음에도 영업이익률은 -18.4%로 전년(-18.8%)과 거의 동일한 수준에 머물러, 매출 증가가 수익성 레버리지로 연결되지 못하고 있다. 고정비 부담과 신사업 투자비가 동시에 매출 원가 및 판관비를 압박하는 구조여서, 단순 매출 회복만으로는 흑자 전환이 어렵다. 2022년 이후 4년 연속 영업적자가 지속되는 상황에서 가시적인 영업이익 흑자 전환 시점을 판단하기 어렵다.",
-    "en": "Despite a ~30% revenue rebound in 2025, the operating margin stayed at -18.4%, virtually unchanged from -18.8% in 2024, demonstrating that revenue growth has failed to translate into profitability leverage. Concurrent pressures from high fixed costs and new-business investment spending are compressing both cost of goods sold and SG&A, making a simple revenue recovery insufficient for an operating breakeven. After four consecutive years of operating losses since 2022, the timing of a return to positive operating income remains unclear."
+    "ko": "매출 성장에도 불구하고 영업손실은 2024년 26.9억원에서 2025년 34.3억원으로, 순손실은 17.2억원에서 38.6억원으로 확대됐다. 2026년 1분기와 2분기 순손실은 각각 33.3억원, 31.3억원으로 전년 동기 대비 더욱 커졌다. 매출 증가가 손익 개선으로 이어지지 못하고 있는 점이 부담 요인이다.",
+    "en": "Despite revenue growth, the operating loss widened from KRW 2.69bn in 2024 to KRW 3.43bn in 2025, and the net loss grew from KRW 1.72bn to KRW 3.86bn. Net losses in the first and second quarters of 2026 expanded further year over year to KRW 3.33bn and KRW 3.13bn, respectively. The fact that revenue growth has not translated into improved profitability is a key concern."
    }
   },
   {
    "title": {
-    "ko": "재무구조 급격히 악화: 부채 급증·현금흐름 역전·비영업 손실 확대",
-    "en": "Rapid Financial Deterioration: Surging Liabilities, Reversed Cash Flows, and Mounting Non-Operating Losses"
+    "ko": "지배구조 불안정성",
+    "en": "Governance Instability"
    },
    "body": {
-    "ko": "2025년 부채총계가 전년 대비 약 138억 원 급증해 부채비율이 28.5%에서 60.8%로 상승했으며, 전환사채 등 고비용 조달 수단 확대가 비영업 손익 악화의 주요 원인으로 추정된다. 영업활동현금흐름이 +27억 원에서 -43억 원으로 역전된 점은 실질적인 운전자본 및 영업 현금 창출 능력의 저하를 시사한다. 2026년 1분기 지배주주 순손실 약 -33억 원의 상당 부분이 비영업 손익 악화에서 비롯된 것으로 추정돼, 부채성 금융상품 관련 재무 비용 압박이 중단기적으로 지속될 가능성이 있다.",
-    "en": "Total liabilities surged approximately KRW 13.8 billion in 2025, driving the debt ratio from 28.5% to 60.8%, likely reflecting an expanded reliance on costly instruments such as convertible bonds—which are also suspected to be the primary driver of non-operating losses. The reversal of operating cash flow from +KRW 2.7 billion to -KRW 4.3 billion signals a genuine deterioration in working capital dynamics and underlying cash generation ability. A substantial portion of the ~KRW 3.3 billion Q1 2026 net loss is estimated to stem from non-operating deterioration, suggesting that financial cost pressure from debt instruments could persist over the near to medium term."
+    "ko": "2025년 1월 이후 최대주주가 여러 차례 바뀌었고, 2025년 12월에는 예정된 최대주주 변경이 자금 납입 지연으로 한 달 연기되는 등 불확실성이 반복됐다. 본업과 연관성이 낮은 블록체인 사업 진출 계획이 지배구조 변경과 함께 제기된 점도 투자업계에서 주의가 필요한 신호로 언급된다. 잦은 대주주 교체는 경영 전략의 일관성 측면에서 불안 요인으로 작용할 수 있다.",
+    "en": "The controlling shareholder has changed multiple times since January 2025, and a scheduled ownership change was delayed by a month in December 2025 due to payment delays, reflecting recurring uncertainty. A blockchain business plan with limited connection to the core operations, proposed alongside a governance change, has also been cited as a signal warranting caution in the investment industry. Frequent changes in controlling shareholders can undermine consistency in management strategy."
    }
   },
   {
    "title": {
-    "ko": "공시 신뢰도 훼손 및 복잡한 지배구조 변동",
-    "en": "Eroded Disclosure Credibility and Complex Governance Transitions"
+    "ko": "현금흐름 및 재무구조 악화",
+    "en": "Deteriorating Cash Flow and Financial Structure"
    },
    "body": {
-    "ko": "2026년 초 유상증자 결정 철회(원공시일 2025.11.10, 공시번복 2026.01.16)와 타법인 주식 양수금액의 50% 이상 변경으로 불성실공시법인 지정 예고를 받아 공시 신뢰도가 훼손됐다. 최대주주 변경과 관련된 복잡한 지분 구조 변동이 동시에 진행 중이어서 지배구조의 가시성이 낮다. 공시 번복 및 M&A 조건 변경이 반복될 경우 시장 신뢰 회복에 추가적인 시간이 소요되며, 거래소 제재 수준에 따라 추가적인 제도적 리스크도 배제할 수 없다.",
-    "en": "In early 2026, the company received a KRX unfaithful-disclosure pre-designation notice following a reversed rights offering (originally announced November 2025, retracted January 2026) and a material change in an M&A transaction amount, damaging disclosure credibility. Complex concurrent changes to the controlling shareholder structure reduce governance visibility. Repeated instances of disclosure reversals and M&A condition changes are likely to extend the timeline for market trust restoration, and depending on the exchange's final penalty level, additional regulatory risk cannot be ruled out."
+    "ko": "영업활동현금흐름은 2024년 +27.3억원에서 2025년 -43.2억원으로 전환돼 자체 현금창출력이 약화됐다. 부채비율도 2024년 28.5%에서 2025년 60.8%로 크게 높아져 재무 레버리지가 확대됐다. 잦은 유상증자에 의존한 자금조달 구조는 장기적인 재무 안정성 측면에서 지속적인 점검이 필요하다.",
+    "en": "Operating cash flow swung from +KRW 2.73bn in 2024 to -KRW 4.32bn in 2025, weakening the company's ability to generate cash internally. The debt ratio also rose sharply to 60.8% in 2025 from 28.5% in 2024, expanding financial leverage. A funding structure that relies heavily on frequent share placements warrants ongoing scrutiny from a long-term financial stability perspective."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "지정학·고객 집중 리스크",
-    "en": "Geopolitical and Customer Concentration Risk"
+    "ko": "지배구조/최대주주 변경 리스크",
+    "en": "Governance / Ownership Change Risk"
    },
    "body": {
-    "ko": "화웨이·ZTE는 글로벌 최대 규모의 통신장비 업체이지만 미국의 수출 제재로 인해 이들 업체 향 공급이 지속적으로 제약받을 수 있으며, 중국 고객 비중 변동이 매출 수준에 직접적 영향을 미친다. 대체 고객 확보까지의 시차 리스크가 존재하며, 지정학적 긴장이 고조될 경우 공급망 불확실성이 커질 수 있다. 삼성전자의 글로벌 기지국 장비 시장 점유율 동향은 동사 실적에 민감하게 연동되는 핵심 변수다.",
-    "en": "Huawei and ZTE are among the world's largest telecom equipment vendors, but ongoing U.S. export restrictions may continue to constrain supply to these customers, and shifts in the Chinese customer proportion directly affect revenue levels. A lag risk exists before alternative customers can be fully secured, and escalating geopolitical tensions could amplify supply chain uncertainty. Samsung Electronics' trajectory in global base-station equipment market share is a highly sensitive variable directly linked to RN2's revenue performance."
+    "ko": "2025년 이후 최대주주가 티에스1호조합, 위드윈투자조합91호, 씨씨지아이제2호투자조합 등으로 반복적으로 바뀌었고, 뉴진1호조합의 인수 시도는 자금 납입 연기 끝에 무산됐다. 잦은 지배구조 변경은 경영전략의 연속성과 기존 주주 권익에 영향을 줄 수 있는 요인으로 지적된다. 향후 추가적인 지분 변동이나 본업과 무관한 신사업 추진 여부를 지속적으로 확인할 필요가 있다.",
+    "en": "Since 2025 the controlling shareholder has changed repeatedly—from TS No.1 Union to Widwin Investment Union No.91 and then CCGI No.2 Investment Union—while a takeover attempt by Newjin No.1 Union collapsed after payment delays. Frequent governance changes are flagged as a factor that can affect strategic continuity and existing shareholder interests. Further ownership shifts or the pursuit of businesses unrelated to the core operation warrant continued monitoring."
    }
   },
   {
    "cat": {
-    "ko": "신사업 상업화 지연 및 투자 회수 불확실성",
-    "en": "New Business Commercialization Delays and Uncertain Investment Recovery"
+    "ko": "수익성 개선 지연 리스크",
+    "en": "Risk of Delayed Profitability Improvement"
    },
    "body": {
-    "ko": "전기차용 세라믹 방열기판, 방산 MMIC 기판, AI 데이터센터용 기판 모두 현재 유의미한 매출을 창출하지 못하고 있으며, 자동차 부품의 엄격한 인증 절차와 방산 조달 사이클을 감안하면 상업화 일정이 예상보다 지연될 가능성이 있다. 개발 비용과 인력 투자가 매출 발생 이전에 선행되는 구조로, 추가적인 재무 부담이 발생할 수 있다. 공동개발 프로젝트가 최종 양산 계약으로 전환되지 못할 경우 투자 손실 가능성도 배제할 수 없다.",
-    "en": "The EV ceramic heat dissipation substrate, defense MMIC substrate, and AI datacenter ceramic substrate businesses are not yet generating meaningful revenue; given stringent automotive certification processes and defense procurement cycles, commercialization timelines could slip. Development costs and staffing investments are frontloaded before revenues materialize, creating a risk of additional financial strain. If co-development projects with new-business customers do not ultimately convert into mass-production contracts, investment losses may result."
+    "ko": "2022년 이후 4개 연도 중 3개 연도에서 순손실을 기록했고, 2026년 상반기에도 순손실 규모가 오히려 커졌다. 신성장 사업(전력반도체 방열기판, 전기차 부품 등)이 실제 매출과 이익으로 이어지기까지 시간이 더 필요할 수 있다. 매출 증가가 손익 구조 개선으로 연결되지 않을 경우 재무건전성에 추가적인 압박이 발생할 수 있다.",
+    "en": "The company posted net losses in three of the past four years, and the net loss actually widened further in the first half of 2026. New growth businesses such as power-semiconductor heat sinks and EV components may require more time before translating into actual revenue and profit. If revenue growth does not lead to improved profitability, additional pressure on financial health could result."
    }
   },
   {
    "cat": {
-    "ko": "전환사채 관련 재무구조 및 유동성 리스크",
-    "en": "Convertible Bond-Related Financial Structure and Liquidity Risk"
+    "ko": "전방산업 투자 사이클 리스크",
+    "en": "Downstream Investment Cycle Risk"
    },
    "body": {
-    "ko": "전환사채 등 부채성 조달 확대에 따른 이자 비용과 파생상품 평가손실이 영업실적과 무관하게 당기순손실을 확대시키는 구조적 문제가 있다. CB 전환권 행사 시 주식 희석이 발생해 주당순자산이 하락할 수 있으며, 조기 상환 청구 시 대규모 현금이 필요해 유동성 압박으로 이어질 수 있다. 영업활동현금흐름이 마이너스로 전환된 상황에서 외부 조달 여건이 악화될 경우 단기 유동성 리스크가 빠르게 높아질 수 있다.",
-    "en": "Expanding reliance on convertible bonds creates a structural problem in which interest expenses and fair-value losses on embedded derivatives amplify net losses independently of operating performance. Conversion events may trigger shareholder dilution and a reduction in book value per share, while early redemption demands could require substantial cash outflows, adding liquidity pressure. With operating cash flow now negative, any deterioration in external funding conditions could rapidly escalate near-term liquidity risk."
+    "ko": "글로벌 통신장비 투자는 경기침체 영향으로 부진한 상황이며, 인도·미국 등 특정 국가의 5G 투자 확대가 지연될 경우 실적 개선 시점이 늦춰질 수 있다. 2026년 1분기 실적에서 나타난 무역분쟁에 따른 특정 지역 매출 감소는 지정학적 리스크가 실적에 직접적인 영향을 줄 수 있음을 보여준다. 전방산업 수요 회복 속도에 따라 회사의 실적 개선 시점이 좌우될 것으로 보인다.",
+    "en": "Global telecom equipment investment remains sluggish amid the economic slowdown, and delays in 5G investment expansion in specific countries such as India and the US could push back the timing of any earnings improvement. The regional sales decline linked to trade disputes seen in first-quarter 2026 results demonstrates that geopolitical risk can directly affect performance. The pace of any earnings recovery is likely to hinge on the speed of demand recovery in downstream industries."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순 (반기보고서 공시)",
-    "en": "Mid-August 2026 (Semi-Annual Report Release)"
+    "ko": "2026년 9월 18일",
+    "en": "September 18, 2026"
    },
    "what": {
-    "ko": "2026년 2분기 및 상반기 누적 실적으로 1분기 대규모 순손실의 일회성 여부와 비영업 손익 규모, 매출 및 영업손실 추세를 확인한다. 영업손실 축소 및 현금흐름 개선 여부가 단기 재무 건전성 회복의 핵심 지표다.",
-    "en": "The H1 2026 semi-annual report will clarify whether the massive Q1 net loss was a one-time event, reveal the scale of ongoing non-operating charges, and show the revenue and operating loss trajectory. A reduction in operating losses and improvement in operating cash flow are the primary near-term financial health metrics to watch."
+    "ko": "씨씨지아이제2호투자조합 대상 3자배정 유상증자 신주 상장 및 최대주주 변경 완료 여부를 확인할 시점이다.",
+    "en": "This is the point to confirm whether the new shares from the third-party placement to CCGI No.2 Investment Union list and the controlling shareholder change is completed."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (방산 MMIC 양산 계약 공시)",
-    "en": "H2 2026 (Defense MMIC Mass-Production Contract Announcement)"
+    "ko": "2026년 11월 중순(3분기보고서 법정 제출기한 전후)",
+    "en": "Mid-November 2026 (around the statutory Q3 report filing deadline)"
    },
    "what": {
-    "ko": "해외 방산기업과 공동개발 중인 MMIC 적층기판의 양산 계약 체결 또는 공급 개시 여부를 모니터링한다. 방산 계약은 수주 금액과 공급 기간이 명시되는 경우가 많아 향후 매출 가시성 개선의 중요한 분기점이 될 것이다.",
-    "en": "Monitor for any announcement of a mass-production contract or the commencement of deliveries for the defense MMIC laminated substrate developed jointly with a global defense firm. Defense contracts typically specify contract value and duration, making this a critical milestone for improving forward revenue visibility in the new business segment."
+    "ko": "2026년 3분기 연결 실적이 공시되면 상반기에 확대된 순손실 흐름이 지속되는지, 아니면 개선 조짐이 나타나는지 확인할 필요가 있다.",
+    "en": "Once third-quarter 2026 consolidated results are disclosed, it will be worth checking whether the net-loss expansion seen in the first half continues or shows signs of improvement."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 초 (전기차 방열기판 최초 양산 계약)",
-    "en": "H2 2026–Early 2027 (First EV Heat Substrate Mass-Production Contract)"
+    "ko": "2026년 4분기 이후",
+    "en": "From the fourth quarter of 2026"
    },
    "what": {
-    "ko": "7개 공동개발 고객사 중 최초의 양산 공급 계약 또는 자동차 OEM 인증 획득 여부를 추적한다. 전기차 방열기판의 상업화 전환 시점은 전력반도체 파트너와의 협력 심화 수준과 함께 신사업 본격화의 핵심 지표다.",
-    "en": "Track the first mass-production supply contract among the seven co-development customers or any automotive OEM certification milestones. The timing of EV heat substrate commercialization, alongside the depth of collaboration with power semiconductor partners, is a defining indicator of new business momentum."
+    "ko": "아이윈플러스 인수 이후 시너지 효과와 전고체 배터리·전력반도체 방열기판 등 신사업의 실제 매출 기여 여부를 공시와 IR 자료를 통해 확인할 필요가 있다.",
+    "en": "Disclosures and IR materials should be checked for evidence of synergy following the iWinPlus acquisition and actual revenue contribution from new businesses such as solid-state battery materials and power-semiconductor heat sinks."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (전환사채 전환·상환 일정 추적)",
-    "en": "H2 2026 (Convertible Bond Conversion/Redemption Schedule)"
+    "ko": "향후 공시 시점",
+    "en": "At future disclosure dates"
    },
    "what": {
-    "ko": "2025년에 급증한 부채의 핵심인 전환사채의 전환권 행사 또는 조기 상환 청구 동향을 파악한다. 전환 규모에 따라 주식 희석과 BPS 변동이 발생하며, 상환 규모에 따라 현금흐름이 추가로 악화될 수 있어 재무구조 변화 전체를 점검해야 한다.",
-    "en": "Track conversion or early redemption activity for the convertible bonds that drove the 2025 liability surge. Conversion events will trigger shareholder dilution and affect book value per share, while redemption demands could further stress already-negative operating cash flows; a holistic review of the resulting balance sheet changes is warranted."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026~2027년 (국내 주파수 경매 및 5G 투자 회복 확인)",
-    "en": "2026–2027 (Domestic Frequency Auction and 5G Investment Recovery Confirmation)"
-   },
-   "what": {
-    "ko": "국내 주파수 경매 결과와 이에 연동된 국내 통신3사의 기지국 투자 계획을 추적한다. 이는 MLC 핵심 사업의 수주 회복 속도를 결정하는 구조적 변수이며, 인도·미국 등 해외 주요 시장의 5G 투자 집행 실적과 함께 종합적으로 점검이 필요하다.",
-    "en": "Monitor the outcome of domestic Korean spectrum auctions and the corresponding 5G base-station investment plans of the three major domestic carriers. This is a structural variable determining the pace of order recovery in the core MLC business and should be assessed in conjunction with actual 5G capex execution in key overseas markets such as India and the United States."
+    "ko": "2025년 8월 예고된 사명 변경('알엔티엑스') 및 블록체인 사업 진출 계획이 주주총회 등 정식 절차를 거쳐 실제로 추진되는지 지속적으로 확인할 필요가 있다.",
+    "en": "It will be important to continue monitoring whether the corporate name change to RNTX and the blockchain business plan announced in August 2025 actually proceed through formal procedures such as a shareholders' meeting."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "알엔투테크놀로지는 LTCC 세라믹 원천소재 기술을 기반으로 글로벌 통신장비 5대 제조사 모두에 부품을 납품하는 국내 유일 기업으로, 검증된 기술력과 명확한 시장 내 포지셔닝은 강점이다. 그러나 2022년 이후 5G 투자 사이클 조정으로 촉발된 영업손실이 4년째 지속되고 있으며, 2025년 매출 반등에도 수익성 구조 개선이 이루어지지 않아 적자 고착화 우려가 크다. 2025년 부채총계가 전년 대비 두 배 이상 늘어 재무 레버리지가 급격히 확대됐고, 영업활동현금흐름이 마이너스로 반전됐으며, 2026년 1분기에는 단일 분기 순손실이 전년 연간치에 근접하는 수준으로 불어나 전환사채 관련 비영업 손익 변동이 실적 가시성을 추가로 흐리고 있다. 한편, 방산 MMIC 기판(양산 직전), 전기차 세라믹 방열기판(공동개발 7개사·정부 지원 24억), AI 데이터센터용 세라믹 기판(사업화 계획)이라는 세 축의 신사업이 잠재적 성장 동력으로 부각되고 있으나, 현재까지 매출 기여는 미미하다. 공시 번복에 따른 불성실공시법인 지정 예고와 최대주주 변경이 맞물리면서 지배구조 불확실성도 단기 리스크 요인으로 작용하고 있다. 영업손실의 구체적 축소, 현금흐름 흑자 전환, 신사업의 최초 상업적 매출 발생이 확인되기 전까지는 불확실성이 높은 국면이 지속될 것으로 판단된다.",
-   "en": "RN2 Technologies is the only Korean company supplying LTCC ceramic-based components to all five of the world's largest telecom equipment manufacturers, and its proven technology and well-defined market position are core strengths. However, operating losses triggered by the post-2022 5G capex cycle correction have now persisted for four consecutive years, and the 2025 revenue rebound has brought no structural improvement in profitability, raising serious concerns about entrenched loss-making. Total liabilities more than doubled in 2025, sharply elevating financial leverage; operating cash flow reversed to negative; and in Q1 2026, a single-quarter net loss approaching the full-year 2025 figure has further clouded earnings visibility due to non-operating fluctuations linked to convertible bond instruments. At the same time, three potential growth pillars—defense MMIC laminated substrates (near mass production), EV ceramic heat dissipation substrates (co-development with seven customers, KRW 2.4 billion government support), and AI datacenter ceramic substrates (planning stage)—represent meaningful future earnings drivers, though their revenue contributions remain negligible to date. Governance uncertainty from the unfaithful-disclosure pre-designation notice and a concurrent controlling shareholder transition adds a layer of near-term risk. A period of elevated uncertainty is likely to continue until concrete evidence emerges of a narrowing operating loss, a return to positive operating cash flow, and the first meaningful commercial revenue contribution from new business segments."
+   "ko": "알엔투테크놀로지는 2025년과 2026년 상반기에 매출 성장을 이어갔지만, 영업손실과 순손실이 동시에 확대되는 구조적 과제를 안고 있다. 2026년 1분기에는 무역분쟁에 따른 특정 지역 매출 감소가 영업손실 확대의 원인으로 지목됐고, 영업손실보다 순손실이 훨씬 큰 폭으로 벌어진 점은 비영업 요인의 영향력이 커졌음을 시사한다. 동시에 2025년 이후 최대주주가 여러 차례 바뀌고 2026년 9월에도 추가 변경이 예정돼 있어, 지배구조 안정성이 실적 개선 여부와 함께 지켜봐야 할 변수로 남아 있다. 회사는 전력반도체 방열기판, 전기차 부품, 반도체 자회사 시너지, 전고체 배터리 소재 등 다양한 신사업을 통해 사업 다각화를 시도하고 있으나, 아직 이들 사업이 매출과 이익에 뚜렷하게 반영되지는 않은 상태다. 현금흐름과 부채비율이 2025년 들어 악화된 점도 재무구조 측면에서 주목할 부분이다. 종합적으로 이 회사는 외형 성장과 지배구조 변동, 신사업 추진이 동시에 진행되는 전환기에 있으며, 다음 분기 실적과 지배구조 관련 공시를 통해 방향성을 계속 확인해 나갈 필요가 있다.",
+   "en": "RN2 Technology sustained revenue growth through 2025 and the first half of 2026, but faces the structural challenge of simultaneously widening operating and net losses. In the first quarter of 2026, reduced sales in certain regions tied to trade disputes was cited as a cause of the wider operating loss, and the fact that net losses expanded far more than operating losses suggests non-operating factors have grown in influence. At the same time, the controlling shareholder has changed multiple times since 2025, with another change scheduled for September 2026, leaving governance stability as a variable to watch alongside any earnings improvement. The company is pursuing diversification through power-semiconductor heat sinks, EV components, semiconductor subsidiary synergies, and solid-state battery materials, though these businesses have yet to be clearly reflected in revenue or profit. Deterioration in cash flow and the debt ratio during 2025 is also notable from a financial structure standpoint. Overall, the company is in a transitional phase where top-line growth, governance change, and new business development are occurring simultaneously, and its direction will need to be continually reassessed through upcoming quarterly results and governance-related disclosures."
   }
  },
  "sources": [
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A148250",
+  "https://www.valueline.co.kr/finance/summary/148250",
+  "https://itooza.com/vscore/148250",
   "https://m.thinkpool.com/item/148250",
+  "https://m.thinkpool.com/compDiscuss/cont/1012615",
+  "http://comp.wisereport.co.kr/bsfn/company/c1010001.aspx?cn=bsfn&cmp_cd=148250",
   "https://markets.hankyung.com/stock/148250",
-  "https://m.finance.daum.net/quotes/A148250/news/disclosure/20260226019838",
-  "https://markets.hankyung.com/stock/148250/chart",
-  "https://www.valueline.co.kr/finance/mri/148250",
+  "https://www.stockplus.com/m/stocks/KOREA-A148250",
+  "https://m.irgo.co.kr/LC/2838",
+  "http://www.thedailymoney.com/news/articleView.html?idxno=1137544",
   "https://markets.hankyung.com/stock/148250/financial-summary",
-  "https://alphasquare.co.kr/home/stock-summary?code=148250",
-  "http://rn2.co.kr/",
-  "https://www.jobkorea.co.kr/recruit/co_read/c/rn2tech",
-  "https://rn2.co.kr/kr/sub/company/technology.asp",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/WWw3RERrb0FJbmpkdDBzNXlnbnduZz09/company_nm/(%EC%A3%BC)%EC%95%8C%EC%97%94%ED%88%AC%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80",
-  "https://www.incruit.com/company/2226594/",
-  "https://www.rocketpunch.com/companies/rn2technologies",
-  "https://rn2.co.kr/en/sub/company/ceo.asp",
-  "https://bizno.net/article/1288169024",
-  "https://www.jobplanet.co.kr/companies/66960/reviews/%EC%95%8C%EC%97%94%ED%88%AC%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80"
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A148250&MenuYn=Y",
+  "https://www.valueline.co.kr/finance/mri/148250",
+  "https://markets.hankyung.com/stock/148250/chart",
+  "https://www.ibtomato.com/mobile/mView.aspx?no=14115",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250117000621&rcpno=20250117000504&orgid=F&tran=Y&langTpCd=0",
+  "https://kr.investing.com/news/global-filings/article-93CH-1999942",
+  "https://www.ibtomato.com/ExternalView.aspx?type=1&no=16910"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "148250",
  "name": "알엔투테크놀로지",
  "name_en": "RN2 Technologies Co., Ltd.",
@@ -232,9 +223,9 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 05:28",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 09:12",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -337,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 1399,
-   "mcap": 0.019,
+   "price": 1772,
+   "mcap": 0.0241,
    "shares": 13610704,
    "total_shares": 10181966,
    "wavg_shares": 9008156,
    "per": null,
    "eps": -958,
-   "pbr": 0.2775,
+   "pbr": 0.3514,
    "bps": 5042,
    "roe_ttm": -22.3,
    "ttm_window": "2025Q3~2026Q2",

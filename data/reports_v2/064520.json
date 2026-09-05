@@ -1,229 +1,220 @@
 {
  "title": {
-  "ko": "4년 연속 영업적자 — 신사업 흑자 전환이 관건",
-  "en": "Four Straight Years of Operating Losses — New Business Pivot Holds the Key"
+  "ko": "BH그룹 편입 후공정업체, 매출 축소 국면",
+  "en": "TechL Under BH Group Amid Revenue Contraction"
  },
  "lead": {
-  "ko": "테크엘은 메모리 반도체 후공정(Storage SIP) 기반의 소규모 코스닥 기업으로, 비에이치 그룹 편입 이후 전장용 전력반도체·파워 모듈 등 신사업 전환을 추진 중이나, 4년 연속 영업적자에 더해 2026년 1분기 매출이 분기 사상 최저 수준으로 급락하면서 흑자 전환 시점의 가시성이 크게 낮아진 상태다.",
-  "en": "TechL is a small-cap KOSDAQ company specializing in memory semiconductor back-end packaging (Storage SIP) that is pivoting toward automotive power semiconductors and power modules under the BH Group umbrella; however, four consecutive years of operating losses compounded by a historic revenue low in 2026 Q1 have substantially clouded the path to profitability."
+  "ko": "테크엘은 메모리 반도체 후공정(Storage SIP) 전문업체로, 최근 수년간 매출이 줄고 영업손실이 지속되는 가운데 코스피 상장 비에이치(BH그룹)가 새 최대주주로 올라서며 사업 재편을 모색하고 있다.",
+  "en": "TechL is a memory semiconductor back-end packaging (Storage SIP) specialist whose revenue has declined and operating losses have persisted in recent years, while KOSPI-listed BH has emerged as the new largest shareholder as the company pursues a business realignment."
  },
  "keypoints": [
   {
-   "ko": "2022년부터 2025년까지 4년 연속 영업적자. 2024년 영업손실률 -1.5%로 흑자 전환 직전까지 접근했다가, 2025년 -30.9%로 급격히 악화됐다.",
-   "en": "Four consecutive years of operating losses (2022–2025); after nearly breaking even at -1.5% margin in 2024, the operating loss margin deteriorated sharply to -30.9% in 2025."
+   "ko": "2025년 연간 매출 181억원으로 전년 대비 약 28% 감소, 영업손실은 56억원으로 확대",
+   "en": "FY2025 revenue fell about 28% year over year to KRW 18.1bn, while the operating loss widened to KRW 5.6bn"
   },
   {
-   "ko": "2026년 1분기 매출 약 26.7억원으로 전분기(약 47.8억원) 대비 약 44% 급감, 제공된 분기 데이터 중 최저 수준으로 단기 매출 기반이 크게 약화됐다.",
-   "en": "2026 Q1 revenue fell sharply to approximately KRW 2.67 billion — down ~44% quarter-on-quarter from the KRW 4.78 billion recorded in 2025 Q4 — the lowest quarterly figure in the available data set."
+   "ko": "2026년 1~2분기 매출이 각각 26.7억원, 17.7억원으로 2025년 4분기(47.8억원) 대비 큰 폭 축소",
+   "en": "Q1 and Q2 2026 revenue of KRW 2.67bn and KRW 1.77bn each fell sharply from Q4 2025's KRW 4.78bn"
   },
   {
-   "ko": "부채비율이 2022년 70.7%에서 2025년 6.1%로 대폭 개선됐고, 자기자본 약 945.8억원으로 재무 체력은 상대적으로 양호해 중장기 투자 여력이 있다.",
-   "en": "The debt-to-equity ratio improved dramatically from 70.7% in 2022 to 6.1% in 2025; with shareholders' equity of approximately KRW 94.6 billion, the balance sheet provides a meaningful buffer for medium-to-long-term investment."
+   "ko": "최대주주가 에코볼트에서 코스피 상장 FPCB업체 비에이치(BH그룹)로 변경, 전환사채 전환을 통한 지배구조 재편 진행",
+   "en": "The largest shareholder changed from Ecovolt to KOSPI-listed FPCB maker BH, with governance restructured via convertible bond conversion"
   },
   {
-   "ko": "비에이치가 2024년 10월 전환사채(CB) 전환 행사로 지분 29.16%를 확보해 최대주주로 등재됐으며, BH 그룹 관계사와의 협업을 통한 전장용 PMIC·파워 모듈 신사업을 추진 중이다.",
-   "en": "BH became the largest shareholder with a 29.16% stake following CB conversion in October 2024, and TechL is now pursuing automotive PMIC and power module businesses in collaboration with BH Group affiliates."
+   "ko": "2023년 이후 유상증자·CB 발행으로 자본이 늘고 부채비율이 70%대에서 한 자릿수로 낮아짐",
+   "en": "Since 2023, capital raises and CB issuance have expanded equity and cut the debt ratio from around 70% to single digits"
   },
   {
-   "ko": "주요 고객인 삼성전자향 메모리카드 매출에 집중된 구조로, 전방 발주 변동에 따른 실적 변동성이 크고 단일 고객 의존도 리스크가 상존한다.",
-   "en": "Revenue is heavily concentrated on memory card supply to Samsung Electronics, creating significant earnings volatility tied to front-end order trends and an inherent single-customer concentration risk."
+   "ko": "2026년 2분기 영업손실이 지속됐음에도 순이익은 1.8억원으로 흑자 전환",
+   "en": "Despite a continuing operating loss, Q2 2026 net income turned positive at about KRW 178 million"
   }
  ],
  "business": {
-  "ko": "테크엘(구 바른전자)은 1998년 설립된 메모리 반도체 후공정 제조 전문 기업으로, 반도체 System-in-Package(SIP) 방식의 Storage SIP 사업을 핵심으로 영위한다. 주요 제품군은 마이크로 SD카드·eMMC 등 전 종류의 플래시 메모리카드이며, 초창기 삼성전자에 SmartMedia Card를 공급하면서 사업 기반을 구축했고, 현재도 삼성전자가 핵심 고객으로 메모리카드·스마트카드 등을 주로 납품하는 구조다. 2022년 9월 연성인쇄회로기판(FPCB) 전문 대기업 비에이치(BH)에 인수된 이후, 2023년 4월 사명을 바른전자에서 테크엘로 변경하고 '글로벌 테크놀로지 리더'를 표방하며 신규 성장 전략을 추진 중이다. 비에이치는 2024년 10월 사모 전환사채(CB) 전환청구권 행사로 지분 29.16%(486만여 주)를 확보해 최대주주로 등재됐다. 기존 메모리카드 중심 사업의 성장 한계를 인식하고, 전장용 전력관리반도체(PMIC)·파워 모듈 패키징 등 고부가가치 신사업으로 사업 구조를 전환하고 있으며, 디케이티(SMT 모듈)·비에이치이브이에스(차량용 무선충전·배터리·근거리통신)·비에이치세미콘(세라믹 부품소재) 등 BH 그룹 관계사와의 협업을 통한 시너지 확대를 도모하고 있다. 국내는 R&D 거점(오산)으로, 해외는 베트남 대량 양산 거점으로 이원화하는 전략을 추진 중이며, Smart SIP 제품 개발 완료 후 지문인식 기술을 접목한 신사업군 육성도 계획 중이다. 경쟁 구도는 현재 글로벌 메모리카드·SIP 후공정 제조사들과 형성되어 있으며, 전장용 신사업에서는 TI·인피니언·NXP 등 대형 반도체 기업들과 새로운 경쟁 구도가 형성될 전망이다.",
-  "en": "TechL (formerly Barun Electronics) was founded in 1998 as a specialist in memory semiconductor back-end manufacturing, operating a Storage SIP (System-in-Package) business as its core. Its primary products encompass all types of flash memory cards including micro-SD cards and eMMC, with its commercial foundation built on early supply of SmartMedia Cards to Samsung Electronics — a relationship that persists today, with Samsung remaining the key customer for memory cards and smart cards. After being acquired by BH, a major FPCB conglomerate, in September 2022, the company rebranded from Barun Electronics to TechL in April 2023, adopting the vision of a 'Global Technology Leader.' BH became the largest shareholder with a 29.16% stake (approximately 4.86 million shares) following CB conversion rights exercise in October 2024. Recognizing the growth ceiling of its memory card business, TechL is pivoting toward high-value new businesses including automotive Power Management ICs (PMIC) and power module packaging, seeking synergies with BH Group affiliates DKT (SMT modules), BHEVS (automotive wireless charging, battery, NFC), and BH Semicon (ceramic components). Its operational footprint is being bifurcated into a domestic R&D hub (Osan) and a planned overseas mass-production base in Vietnam, with a further plan to layer fingerprint recognition technology onto Smart SIP products once development is complete. The current competitive landscape pits TechL against global memory card and SIP back-end manufacturers, while its automotive ambitions will eventually bring it into competition with established semiconductor giants such as TI, Infineon, and NXP."
+  "ko": "테크엘은 1998년 설립된 메모리 반도체 후공정 제조 전문기업으로, 메모리카드·eMMC·SSD·eMCP 등을 생산하는 'Storage SIP(System in Package)' 사업을 주력으로 한다. 초창기 삼성전자에 SmartMedia Card를 공급하며 플래시메모리카드 사업을 시작했고, 현재는 메모리카드 전 종류의 제품을 양산해 국내는 물론 미국·일본·아시아·유럽·중국 등지에 공급하고 있다. 생산은 경기도 화성시 본사와 베트남 생산기지로 이원화돼 있으며, 2026년 1분기 기준 본사의 연간 생산능력은 와이어본딩 기준 약 2억 1,975만개, 베트남 사업장은 연간 약 2,079만개 수준이다. 같은 기간 본사 생산실적은 575만7천개였고, 원재료 총 매입액은 28억4,600만원이었으며 이 중 PCB가 15억8,000만원으로 55.51%를 차지해 NAND 플래시메모리 칩·컨트롤러와 함께 핵심 매입 품목을 구성했다. 회사는 2022년 11월 상호를 바른전자에서 테크엘로 변경했고, 이후 몇 차례의 유상증자와 전환사채(CB) 발행·전환 과정을 거쳐 최대주주가 에코볼트에서 코스피 상장 연성인쇄회로기판(FPCB) 업체 비에이치(BH그룹)로 넘어갔다. 비에이치는 2023년 유상증자 참여와 CB 인수를 통해 지분을 확대해 온 것으로 알려졌다. 이러한 지배구조 재편과 맞물려 회사는 경기 오산에 R&D 센터 부지를 매입하는 등 전력관리반도체(PMIC)를 비롯한 전력 반도체 분야로 사업영역을 넓히려는 움직임도 보도된 바 있으며, BH그룹 계열사와의 협력을 모색하는 것으로 전해진다. 후공정 업계에서는 대형 위탁 패키징업체와 중소형 SIP 전문업체 간 경쟁이 이어지고 있어, 신사업 성과가 향후 경쟁 구도에 변수가 될 수 있다.",
+  "en": "Founded in 1998, TechL is a memory semiconductor back-end packaging specialist whose core business is Storage SIP (System in Package), producing memory cards, eMMC, SSD, and eMCP. The company began its flash memory card business by supplying SmartMedia Cards to Samsung Electronics in its early years and now manufactures the full range of memory card products, supplying customers domestically as well as in the United States, Japan, other parts of Asia, Europe, and China. Production is split between the headquarters in Hwaseong, Gyeonggi Province, and a Vietnam facility; as of the first quarter of 2026, annual capacity at headquarters was about 219.75 million units on a wire-bonding basis, while the Vietnam site had capacity of roughly 20.79 million units per year. In the same quarter, headquarters production output was 5.757 million units, and total raw material purchases came to KRW 2.846 billion, of which PCB purchases accounted for KRW 1.58 billion, or 55.51% of the total, alongside NAND flash memory chips and controllers as key input materials. The company changed its name from Barun Electronics to TechL in November 2022, and following several rounds of rights offerings and convertible bond issuance and conversion, the largest shareholder changed from Ecovolt to KOSPI-listed flexible printed circuit board (FPCB) maker BH. BH is reported to have expanded its stake through participation in a 2023 rights offering and CB acquisitions. Alongside this governance shift, the company has reportedly purchased R&D center land in Osan, Gyeonggi Province, as part of a move into power semiconductors including power management ICs (PMIC), and is said to be exploring cooperation with BH Group affiliates. In the back-end packaging industry, competition continues between large contract packaging firms and smaller SIP specialists, meaning the success of new business initiatives could be a key variable in the competitive landscape ahead."
  },
  "earnings": {
-  "ko": "연간 실적 추이를 보면, 매출액은 2022년 약 206.6억원, 2023년 약 219.3억원, 2024년 약 253.0억원으로 증가세를 보이다가 2025년에는 약 181.5억원으로 전년 대비 28% 감소해 최근 4년 최저 수준으로 후퇴했다. 영업이익은 4년 연속 적자로, 2023년 영업손실 약 45.4억원(영업손실률 -20.7%)에서 2024년에 약 3.8억원(영업손실률 -1.5%)으로 흑자 전환 직전까지 접근했으나, 2025년에 영업손실 약 56.0억원(영업손실률 -30.9%)으로 큰 폭 악화됐다. 지배주주 귀속 순이익은 2023년 약 +55.0억원을 제외하면 매 연도 적자로, 2023년 흑자는 비에이치 그룹 편입 과정에서 발생한 대규모 영업외 수익성 이벤트에 기인한 일회성 요인으로 판단된다. 영업현금흐름(CFO)은 2022년 약 +97.0억원, 2023년 약 +47.6억원, 2024년 약 +32.9억원으로 양호한 수준을 유지했으나, 2025년에 약 -4.1억원으로 전환되며 현금 소모 국면에 진입했다. 분기별로는 2025년 1분기 매출 약 48.9억원·영업손실 약 10.3억원을 기록했고, 2분기에 매출이 약 39.8억원으로 하락하는 동시에 영업손실 약 14.7억원, 지배주주 순손실 약 23.7억원으로 크게 확대됐는데, 2분기 순손실의 이례적 급증은 대규모 일회성 평가손 또는 비경상 손실이 반영된 것으로 추정된다. 3분기에는 매출이 약 45.0억원으로 소폭 회복되고 영업손실이 약 11.5억원으로 축소됐으나, 4분기에는 매출이 약 47.8억원으로 소폭 증가했음에도 영업손실이 약 19.6억원으로 재차 확대됐다. 2026년 1분기는 매출 약 26.7억원으로 제공된 분기 데이터 중 최저 수준까지 급락하고 영업손실도 약 18.1억원이 지속됐으며, 지배주주 순손실은 약 4.4억원으로 상대적으로 제한됐다.",
-  "en": "Looking at the annual performance trend, revenue grew from approximately KRW 20.7 billion in 2022 to KRW 21.9 billion in 2023 and KRW 25.3 billion in 2024, before falling 28% year-on-year to approximately KRW 18.1 billion in 2025 — the lowest level in four years. Operating losses persisted throughout all four years; after nearly breaking even in 2024 (operating loss of approx. KRW 380 million; margin -1.5%), the company posted a substantially wider operating loss of approximately KRW 5.6 billion in 2025 (margin -30.9%). Net income attributable to owners was positive only in 2023 (approx. KRW 5.5 billion), which appears attributable to a large one-time non-operating gain related to the BH Group integration process, not underlying operational improvement. Operating cash flow (CFO) remained positive at approximately KRW 9.7 billion (2022), KRW 4.8 billion (2023), and KRW 3.3 billion (2024), but turned negative at approximately KRW -410 million in 2025, signaling entry into a cash-consumption phase. On a quarterly basis, 2025 Q1 recorded revenue of approx. KRW 4.89 billion and operating loss of approx. KRW 1.03 billion; in Q2, revenue fell to approx. KRW 3.98 billion while the net loss attributable to owners surged to approx. KRW 2.37 billion — well beyond the operating loss of KRW 1.47 billion — likely reflecting a large one-time impairment or non-recurring charge. Q3 showed partial recovery, with revenue of approx. KRW 4.50 billion and a smaller operating loss of approx. KRW 1.15 billion, but Q4 saw the operating loss expand again to approx. KRW 1.96 billion despite revenues of KRW 4.78 billion. In 2026 Q1, revenue plunged to approximately KRW 2.67 billion — the lowest quarterly level in the available data — while operating losses persisted at approx. KRW 1.81 billion, with the net loss attributable to owners at approximately KRW 440 million."
+  "ko": "테크엘의 연간 매출액은 2022년 206억6,000만원에서 2023년 219억3,000만원, 2024년 253억200만원까지 늘었으나 2025년에는 181억5,000만원으로 줄어 전년 대비 약 28% 감소했다. 영업손실은 2022년 38억1,000만원, 2023년 45억4,000만원에서 2024년 3억8,000만원으로 크게 줄었다가 2025년 다시 56억원으로 확대되며 영업이익률이 -30.9%까지 악화됐다. 순이익은 2022년 60억3,000만원 적자, 2023년에는 일회성 요인 등으로 55억원의 순이익을 기록했으나 2024년 4억7,000만원 적자, 2025년 46억7,000만원 적자로 다시 손실 구간에 머물렀다. 분기별로 보면 매출은 2025년 4분기 47억8,000만원에서 2026년 1분기 26억7,000만원, 2분기 17억7,000만원으로 최근 두 개 분기 연속 큰 폭으로 줄었다. 영업손실은 2025년 2분기부터 2026년 2분기까지 매 분기 11억~19억원대에서 이어졌는데, 매출 규모가 줄어드는 가운데도 손실 폭이 크게 좁혀지지 않아 고정비 부담이 상대적으로 커진 것으로 해석된다. 다만 2026년 2분기에는 영업손실이 이어졌음에도 순이익이 1억7,800만원으로 흑자 전환했는데, 이는 영업외 요인에 따른 것으로 보이며 영업 자체의 수익성 개선을 의미하는 것은 아니다. 재무구조 측면에서는 자본총계가 2022년 524억원에서 2025년 946억원으로 늘고 부채비율은 70.7%에서 6.1%로 낮아져, 몇 차례의 자본조달을 통해 재무 안정성은 개선된 모습이다. 다만 영업활동현금흐름은 2022~2024년 32억~97억원의 유입을 기록하다가 2025년 4억1,000만원의 유출로 전환돼, 사업 자체의 현금창출력은 오히려 약화된 신호로 읽힌다.",
+  "en": "TechL's annual revenue rose from about KRW 20.66bn in 2022 to KRW 21.93bn in 2023 and KRW 25.30bn in 2024, before falling to KRW 18.15bn in 2025, a decline of roughly 28% year over year. The operating loss narrowed from KRW 3.81bn in 2022 and KRW 4.54bn in 2023 to KRW 0.38bn in 2024, but widened again to KRW 5.60bn in 2025, pushing the operating margin down to -30.9%. Net income was a loss of KRW 6.03bn in 2022, swung to a profit of KRW 5.50bn in 2023 apparently on one-off items, then returned to losses of KRW 0.47bn in 2024 and KRW 4.67bn in 2025. On a quarterly basis, revenue fell sharply for two consecutive quarters, from KRW 4.78bn in Q4 2025 to KRW 2.67bn in Q1 2026 and KRW 1.77bn in Q2 2026. Operating losses persisted in the range of roughly KRW 1.1bn to KRW 2.0bn every quarter from Q2 2025 through Q2 2026, suggesting that fixed-cost burden grew relatively heavier as the revenue base shrank without a proportional narrowing of losses. Notably, despite the continuing operating loss, Q2 2026 net income turned positive at about KRW 178 million, which appears to reflect non-operating factors rather than an improvement in core operating profitability. On the balance sheet, total equity grew from KRW 52.4bn in 2022 to KRW 94.6bn in 2025 while the debt ratio fell from 70.7% to 6.1%, indicating improved financial stability through several rounds of capital raising. However, operating cash flow, which had been positive at KRW 3.2bn to KRW 9.7bn between 2022 and 2024, turned negative at KRW -0.41bn in 2025, a signal that the core business's cash-generating capacity weakened."
  },
  "industry": {
-  "ko": "글로벌 반도체 후공정(패키징·테스트) 장비 시장은 2025년 약 1,130억 달러에서 2030년 약 1,577억 달러(CAGR 약 6.9%)로 성장이 전망된다. AI 인프라 투자 확대에 따른 HBM·첨단 패키징 수요 증가로, 2026년 첨단 패키징 생산능력은 전년 대비 약 80% 증가할 가능성이 있다는 분석도 제기된다. 다만 테크엘의 주력인 Storage SIP(메모리카드) 사업은 AI·HBM 수요 급등의 직접 수혜권과는 거리가 있는 성숙 시장에 가깝다. 한국무역협회 분석에 따르면, 2026년 글로벌 반도체 시장은 약 17.8% 성장해 9,098억 달러에 달할 전망이며, 특히 메모리 반도체가 약 33.8% 급증하며 성장을 주도할 것으로 예상된다. 반도체 수요 구조는 전통적 PC·스마트폰 중심에서 데이터센터·자동차로 이동 중이며, 전기차·자율주행차 보급 확대와 소프트웨어 정의 차량(SDV) 트렌드에 따라 차량용 반도체 시장은 2030년까지 구조적 성장이 예상된다. 이는 테크엘이 추진하는 전장용 PMIC 신사업에 중장기적으로 유리한 시장 환경을 제공한다. 그러나 전장용 전력반도체 시장은 TI·인피니언·NXP 등 글로벌 대형 업체들이 지배하고 있어, 후발 진입자로서의 경쟁 장벽이 높다.",
-  "en": "The global semiconductor back-end (packaging and test) equipment market is projected to grow from approximately USD 113 billion in 2025 to approximately USD 157.6 billion by 2030 (CAGR ~6.9%). Driven by AI infrastructure investment, advanced packaging capacity is estimated to potentially increase by as much as ~80% in 2026. However, TechL's core Storage SIP (memory card) business is structurally closer to a mature market and is not a direct beneficiary of the AI/HBM demand surge. According to analysis from the Korea International Trade Association, the global semiconductor market is forecast to grow ~17.8% in 2026 to approximately USD 909.8 billion, led by a projected ~33.8% surge in memory semiconductors. Semiconductor demand is structurally shifting from PCs and smartphones toward data centers and automotive applications, and the automotive semiconductor market is expected to exhibit structural growth through 2030 driven by EV proliferation, autonomous driving, and Software-Defined Vehicle (SDV) trends — creating a favorable long-term backdrop for TechL's new automotive PMIC initiatives. That said, the automotive power semiconductor market is dominated by global leaders including TI, Infineon, and NXP, presenting formidable barriers for a late entrant."
+  "ko": "메모리 반도체 후공정 산업은 스마트폰·저장장치용 메모리카드 수요와 밀접하게 연동돼 있으며, 최근에는 AI 인프라 투자 확대에 따른 메모리 반도체 전반의 업황 개선 기대가 소부장 밴드까지 확산되는 흐름을 보이고 있다. 2025년 12월 정부가 반도체 소재에 대한 할당관세를 신규 적용하는 방안을 확정하자 테크엘을 포함한 반도체 관련주가 동반 강세를 보인 바 있는데, 이는 원가 부담 완화와 공급망 안정 기대가 반영된 결과로 풀이된다. 2026년 8월에는 미국 반도체 대형주들의 호실적과 AI 인프라 수요 확인을 계기로 국내 반도체 후공정 관련주들도 동반 강세를 나타냈으며, 이경민 대신증권 연구원은 이를 두고 \"대형 반도체뿐만 아니라 반도체 소부장도 동반 강세를 전개하며 지수 상승에 기여했다\"고 분석했다. 다만 이재원 유안타증권 연구원은 향후 흐름에 대해 중소형주에서 대형주로 주도권이 넘어가는 국면 전환 가능성을 제시하며 외국인 수급의 복귀 여부가 핵심 변수라고 평가했다. 테크엘은 이러한 업황 기대와는 별개로 자체 매출이 뚜렷하게 줄어드는 흐름을 보이고 있어, 업종 전반의 테마성 강세와 개별 기업의 실적 펀더멘털 사이에 괘도 차이가 존재하는 모습이다. 경쟁구도 측면에서는 대형 후공정업체와 중소형 SIP 전문업체가 공존하는 시장에서, 신사업(전력반도체 등) 성과 여부가 향후 포지셔닝에 영향을 줄 수 있다.",
+  "en": "The memory semiconductor back-end packaging industry is closely tied to demand for memory cards used in smartphones and storage devices, and recent expectations for improved memory chip conditions driven by AI infrastructure investment have spread into the materials and equipment segment as well. When the government finalized a plan in December 2025 to apply new tariff quotas to semiconductor materials, TechL and other semiconductor-related stocks rallied together, a move interpreted as reflecting expectations of eased cost burdens and greater supply chain stability. In August 2026, strong earnings from major U.S. semiconductor names and confirmation of AI infrastructure demand triggered a rally among domestic back-end packaging stocks as well, with Daishin Securities analyst Lee Kyung-min noting that \"large-cap semiconductors as well as materials and equipment names staged a joint rally that contributed to the index gain.\" Yuanta Securities analyst Lee Jae-won, however, assessed that market leadership could shift from small and mid-cap names back to large caps going forward, with the return of foreign investor flows as the key variable. Separate from these sector-wide expectations, TechL's own revenue has shown a clear declining trend, indicating a gap between thematic strength across the sector and the individual company's underlying fundamentals. In terms of competitive positioning, within a market where large back-end packaging firms coexist with smaller SIP specialists, the success of new business ventures such as power semiconductors could influence the company's future standing."
  },
  "outlook": {
-  "ko": "경영진은 단순 마이크로 SD카드 사업만으로는 기업 성장에 한계가 있음을 명시적으로 밝히고, 글로벌 수준의 패키지 설계 기술을 바탕으로 전장용 파워 모듈·PMIC 등 고부가가치 신사업 진출을 추진하고 있다. 2023년 오산에 약 3,100㎡ 부지를 87억원에 매입해 R&D 센터와 신사업 개발 거점을 구축 중이며, 베트남에 대량 양산 거점을 마련해 '국내 R&D·해외 양산 이원화' 전략을 실행할 계획이다. 베트남 생산 거점 확보 시 생산 비용 경쟁력 개선과 고객사 수요 증가를 기대할 수 있으며, 고객사 생산라인의 해외 동반 이전도 추진할 방침이라고 경영진은 밝히고 있다. 신규 비즈니스는 비에이치 계열사들과의 공동 협업을 통해 추진되며, 특히 와이어 본딩 기반 파워 모듈 부품 등을 개발해 경쟁 우위를 조기 확보하는 것을 목표로 하고 있다. Smart SIP 제품 개발 완료 후 지문인식 기술 접목 신사업군 육성도 계획 중이다. 단기적으로는 2026년 1분기 매출 급락이 시사하듯 주요 고객사향 메모리카드 발주 회복이 선행돼야 하며, 신사업 매출 기여 시점에 대한 구체적 공개 가이던스는 아직 없는 상태다. 베트남 양산 거점의 착공·가동 일정과 PMIC·파워 모듈 양산 수주 공시 여부가 향후 전망을 가늠하는 핵심 지표가 될 것이다.",
-  "en": "Management has explicitly acknowledged the growth ceiling of the micro-SD card business and is pursuing high-value new businesses such as automotive power modules and PMIC, leveraging advanced package design capabilities. In 2023, the company acquired a ~3,100 sqm site in Osan for approximately KRW 8.7 billion to build an R&D center and new-business development base, while planning a Vietnam mass-production facility to execute a 'domestic R&D / overseas manufacturing' dual-structure strategy. Management has stated that the Vietnam production base is expected to enhance cost competitiveness and drive higher customer demand, with plans to facilitate co-relocation of customer production lines overseas. New business initiatives are being pursued through collaborative frameworks with BH Group affiliates, with a stated goal of early competitive positioning in products such as wire-bonding-based power module components. Post-completion of Smart SIP product development, the company also plans to incorporate fingerprint recognition into a new business segment. In the near term, a recovery in memory card orders from the key customer is a prerequisite — as evidenced by the sharp revenue decline in 2026 Q1 — and no specific public guidance has been provided regarding the timeline for new business revenue contributions. The groundbreaking and operational timeline for the Vietnam base, as well as formal disclosure of PMIC and power module production orders, will be critical indicators for assessing the company's forward trajectory."
+  "ko": "회사는 경기 오산에 매입한 부지를 R&D 센터와 신사업 개발·생산 거점으로 활용해, 국내 R&D와 베트남 대량 양산이라는 이원화 전략을 추진할 계획인 것으로 보도된다. 전력관리반도체(PMIC) 등 전력 반도체 분야로의 진출이 거론되고 있으나, 구체적 양산 시점이나 고객사 확보 여부는 아직 공식적으로 확인되지 않았다. 2025년 6월에는 영림원소프트랩의 ERP 솔루션 'K-시스템 에이스'를 도입해 기존 외산 ERP를 국산으로 교체하는 차세대 ERP 구축에 착수했다고 밝혔는데, 이는 생산성 및 경영 투명성 제고를 위한 내부 인프라 정비 성격의 프로젝트다. 최대주주인 비에이치(BH그룹)와의 협력이 구체화될 경우 파워 모듈 부품 등 신규 사업 영역에서 시너지가 발생할 가능성이 있다는 관측도 나온다. 다만 2026년 상반기 매출이 큰 폭으로 줄어든 만큼, 신사업이 본격적으로 매출에 기여하기까지는 시간이 걸릴 수 있다는 점도 함께 고려해야 한다. 향후 분기·연간 실적 발표를 통해 매출 회복 여부와 신사업 진행 상황을 확인하는 것이 중요한 관찰 포인트다.",
+  "en": "The company is reported to plan to use the land it acquired in Osan, Gyeonggi Province, as an R&D center and development/production base for new businesses, pursuing a dual strategy of domestic R&D alongside mass production in Vietnam. Entry into the power semiconductor field, including power management ICs (PMIC), has been mentioned, but the specific timing of mass production or securing of customers has not yet been officially confirmed. In June 2025, the company announced it had begun building a next-generation ERP system using Yeoungrimwon Softlab's 'K-System Ace' solution to replace its existing foreign ERP, a project aimed at improving productivity and management transparency. There is speculation that cooperation with largest shareholder BH could generate synergies in new areas such as power module components, if such collaboration materializes concretely. However, given the sharp revenue decline in the first half of 2026, it may take time before any new business meaningfully contributes to revenue. Monitoring future quarterly and annual earnings releases for signs of revenue recovery and progress on new business initiatives will be an important point of observation."
  },
  "valuation_comment": {
-  "ko": "테크엘은 4년 연속 영업적자가 지속되어 이익 기반 밸류에이션 지표(PER)가 산출되지 않는 상황이며, 주당순자산(BPS) 약 4,299원 대비 현재 주가는 순자산 대비 상당한 할인 구간에서 거래되고 있다. 이 할인 수준은 지속되는 영업적자와 2026년 1분기 매출 급락 등 수익성 불확실성이 반영된 것으로, 순자산 대비 할인이 곧 저평가를 의미하지는 않는다. 주당순이익(EPS) 기준으로도 적자(-202원)가 지속 중이며, 이익 정상화 시점에 대한 시장 가시성이 낮다는 점이 재평가를 제약하는 요인이다. 배당 이력이 없고 신사업 투자 단계에 있어 단기 배당 기대는 낮으며, 추가 자본 조달 가능성도 완전히 배제하기 어렵다. 신사업 매출 가시화와 흑자 전환이 확인될 경우 재평가 여지가 열릴 수 있으나, 현 시점에서는 이행 리스크와 수익성 불확실성이 핵심 변수다.",
-  "en": "With four consecutive years of operating losses, no earnings-based valuation metric (PER) is currently calculable for TechL. On a book-value basis, the stock is trading at a meaningful discount to its BPS of approximately KRW 4,299, a level that reflects the persistent operating losses and the revenue contraction seen in 2026 Q1 rather than a straightforward undervaluation signal. The company remains in deficit on a per-share earnings basis (EPS: -202 KRW), and limited market visibility on earnings normalization acts as a structural constraint on rerating. With no dividend history and ongoing new-business investment expenditures, near-term income return expectations are minimal, and the possibility of additional capital raises cannot be fully dismissed. A demonstrable transition to profitability and visible new-business revenue contribution would be preconditions for any fundamental rerating; in the current environment, execution risk and earnings uncertainty remain the dominant variables."
+  "ko": "테크엘 주가는 주당순자산을 밑도는 수준에서 형성돼 있어, 순자산가치 대비 할인된 구간에서 거래되는 모습이다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 순이익이 적자를 기록하고 있어 통상적인 주가수익비율 산출이 어려운 상태다. 배당은 최근 수년간 이어진 손실 구조 속에서 지급되지 않고 있어, 주주환원보다는 사업 재편과 재무구조 개선에 자금이 우선 투입되는 모습이다. 2023년 이후 몇 차례의 증자와 전환사채 발행으로 자본총계가 늘고 부채비율이 낮아진 점은 순자산 기준 지표에 긍정적으로 반영돼 있으나, 이는 이익 기반 개선이 아니라 외부 자금 조달의 결과라는 점에 유의할 필요가 있다. 앞으로 실적이 적자에서 흑자로 방향을 전환하는지가 밸류에이션 지표의 의미를 좌우할 핵심 변수로 남아 있다.",
+  "en": "TechL's share price trades below its book value per share, placing it in a discount range relative to net asset value. Because net income summed over the most recent four quarters (Q3 2025 through Q2 2026) has been in loss territory, a conventional price-to-earnings ratio cannot be meaningfully calculated. Dividends have not been paid amid years of losses, suggesting that available capital has been directed toward business restructuring and balance sheet improvement rather than shareholder returns. The increase in total equity and decline in the debt ratio achieved through several rounds of capital raising and convertible bond issuance since 2023 are reflected positively in net-asset-based metrics, but it should be noted that this reflects external fundraising rather than earnings-driven improvement. Whether performance turns from loss to profit going forward remains the key variable that will determine the meaning of these valuation metrics."
  },
  "bull": [
   {
    "title": {
-    "ko": "비에이치 그룹 편입 효과와 신사업 시너지 잠재력",
-    "en": "BH Group Integration and New Business Synergy Potential"
+    "ko": "BH그룹 편입에 따른 자본력 및 사업 협력 기대",
+    "en": "Capital backing and business cooperation potential from BH Group"
    },
    "body": {
-    "ko": "FPCB 대기업 비에이치가 최대주주로 확정되면서, 디케이티·비에이치이브이에스·비에이치세미콘 등 BH 그룹 관계사와의 협업 구도가 구체화됐다. 전장용 파워 모듈·PMIC 신사업은 그룹 계열사의 기술·영업 네트워크를 활용할 수 있어 단독 진출 대비 경쟁력을 확보할 여지가 있다. 경영진이 신사업을 '그룹 협업 기반'으로 명확히 정의한 점은 중장기 전략의 실행력을 일부 뒷받침한다.",
-    "en": "With BH — a major FPCB conglomerate — now firmly established as the largest shareholder, collaborative frameworks with BH Group affiliates (DKT, BHEVS, BH Semicon) are taking concrete shape. New businesses including automotive power modules and PMIC can leverage the group's existing technology and sales networks, potentially providing a competitive advantage over standalone market entry. Management's clear articulation of a 'group collaboration model' for new business development lends some medium-to-long-term credibility to its strategic transformation."
+    "ko": "최대주주가 코스피 상장 비에이치(BH그룹)로 바뀌면서 유상증자와 전환사채를 통한 자금 지원이 이어져 왔다. 이 과정에서 부채비율이 2022년 70.7%에서 2025년 6.1%로 크게 낮아지며 재무 안정성이 개선됐다. BH그룹 계열사와의 협력이 구체화되면 파워 모듈 등 신규 사업 영역에서 시너지가 발생할 가능성도 거론된다.",
+    "en": "Since KOSPI-listed BH became the largest shareholder, the company has received continued funding support through rights offerings and convertible bonds. In the process, the debt ratio fell sharply from 70.7% in 2022 to 6.1% in 2025, improving financial stability. There is also speculation that concrete cooperation with BH Group affiliates could generate synergies in new areas such as power modules."
    }
   },
   {
    "title": {
-    "ko": "견고한 재무 구조 — 장기 투자 여력 확보",
-    "en": "Solid Balance Sheet — Capacity for Long-Term Investment"
+    "ko": "재무구조 개선 및 자본 확충",
+    "en": "Improved balance sheet and capital expansion"
    },
    "body": {
-    "ko": "부채비율이 2022년 70.7%에서 2025년 6.1%로 크게 개선됐고, 자기자본이 약 945.8억원에 달해 재무 구조상 단기 유동성 위기 가능성은 낮다. 이는 영업적자가 지속되는 국면에서도 R&D·베트남 생산 기지 등 중장기 투자를 이어갈 수 있는 재무 버퍼가 된다. 대규모 부채 상환 압박 없이 전략적 전환에 집중할 수 있다는 점은 긍정적 요소다.",
-    "en": "The debt-to-equity ratio has improved dramatically from 70.7% in 2022 to just 6.1% in 2025, with shareholders' equity of approximately KRW 94.6 billion, significantly reducing the risk of a near-term liquidity crunch. This clean balance sheet acts as a buffer, enabling the company to sustain medium-to-long-term investments — such as the Osan R&D center and Vietnam production base — even amid ongoing operating losses. The freedom to focus on strategic transformation without heavy debt service pressure is a meaningful structural positive."
+    "ko": "자본총계는 2022년 524억원에서 2025년 946억원으로 꾸준히 늘었다. 이는 손익 개선이 아닌 자본조달에 기인하지만, 외부 충격에 대한 완충 능력을 키운 측면이 있다. 낮아진 부채비율은 향후 추가 투자나 신사업 진출 시 재무적 여력을 제공할 수 있다.",
+    "en": "Total equity grew steadily from KRW 52.4bn in 2022 to KRW 94.6bn in 2025. While this stems from capital raising rather than earnings improvement, it has strengthened the company's buffer against external shocks. The lower debt ratio could provide financial capacity for future investment or new business expansion."
    }
   },
   {
    "title": {
-    "ko": "전장용 전력반도체 시장의 구조적 성장 기회",
-    "en": "Structural Growth Opportunity in Automotive Power Semiconductors"
+    "ko": "반도체 업황 개선 기대 확산",
+    "en": "Spreading expectations of a semiconductor upcycle"
    },
    "body": {
-    "ko": "전기차 보급 확대·자율주행 고도화·SDV(소프트웨어 정의 차량) 확산으로 차량용 반도체 수요는 2030년까지 구조적으로 성장할 전망이다. 전력관리반도체(PMIC)는 전력반도체 시장에서 시장 비중이 가장 높은 분야로, 테크엘이 역량 집중을 선언한 영역이다. 신사업이 가시적 성과를 거둘 경우, 메모리카드 중심의 저마진 구조에서 벗어나 중장기 수익성을 개선할 수 있는 경로가 열릴 수 있다.",
-    "en": "Automotive semiconductor demand is set for structural growth through 2030, driven by expanding EV adoption, advancing autonomous driving, and the proliferation of Software-Defined Vehicles (SDV). PMIC represents the largest subsegment within the power semiconductor market — precisely the area where TechL has committed R&D resources. If new business initiatives gain traction, the company has a credible medium-to-long-term pathway to escape its current low-margin memory card structure and improve overall profitability."
+    "ko": "AI 인프라 투자 확대에 따른 메모리 반도체 업황 개선 기대가 후공정·소부장 종목으로 확산되는 흐름이 나타나고 있다. 2025년 12월 반도체 소재 할당관세 확대 방안 발표 당시 테크엘도 반도체 관련주 동반 강세에 동참한 사례가 있다. 이러한 업종 테마는 개별 기업 펀더멘털과는 별개로 주가에 영향을 줄 수 있는 요인이다.",
+    "en": "Expectations of improved memory semiconductor conditions driven by expanding AI infrastructure investment have been spreading into back-end packaging and materials/equipment stocks. When the tariff quota expansion for semiconductor materials was announced in December 2025, TechL was among the semiconductor-related stocks that rallied together. Such sector-wide themes can influence share prices independent of individual company fundamentals."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "지속·심화되는 영업적자와 매출 기반 급속 약화",
-    "en": "Deepening Operating Losses and Rapidly Eroding Revenue Base"
+    "ko": "매출 축소 흐름 심화",
+    "en": "Deepening revenue contraction"
    },
    "body": {
-    "ko": "2022년부터 2025년까지 4년 연속 영업적자를 기록했으며, 영업손실률은 2024년 -1.5%에서 2025년 -30.9%로 급격히 악화됐다. 2026년 1분기에는 매출이 약 26.7억원으로 급감하고 영업손실도 약 18.1억원이 지속돼 단기 실적 개선 가시성이 매우 제한적이다. 영업현금흐름도 2025년에 마이너스로 전환해 현금 소모 국면에 진입했다는 점이 추가적인 우려 요인이다.",
-    "en": "The company has recorded operating losses for four consecutive years (2022–2025), with the operating loss margin deteriorating sharply from -1.5% in 2024 to -30.9% in 2025. In 2026 Q1, revenue plummeted to approximately KRW 2.67 billion while operating losses persisted at approximately KRW 1.81 billion, leaving near-term earnings improvement highly uncertain. The shift of operating cash flow into negative territory in 2025 signals the onset of a cash-consumption phase, adding a further layer of concern."
+    "ko": "2025년 매출은 181억원으로 전년 대비 약 28% 줄었고, 2026년 1분기와 2분기에는 각각 26억7,000만원, 17억7,000만원으로 2025년 4분기(47억8,000만원) 대비 절반 이하로 축소됐다. 매출 감소 속도가 최근 들어 더욱 빨라지는 모습이다. 신사업이 본격화되기 전까지 기존 사업의 매출 회복 여부가 불확실하다.",
+    "en": "FY2025 revenue fell about 28% year over year to KRW 18.1bn, and Q1 and Q2 2026 revenue of KRW 2.67bn and KRW 1.77bn respectively came in at less than half of Q4 2025's KRW 4.78bn. The pace of revenue decline appears to have accelerated recently. Until new businesses gain traction, recovery in the existing business remains uncertain."
    }
   },
   {
    "title": {
-    "ko": "신사업 매출 기여 시점 불투명 — 실행 리스크 내재",
-    "en": "Unclear New Business Revenue Timeline — Execution Risk Persists"
+    "ko": "지속되는 영업손실 구조",
+    "en": "Persistent operating losses"
    },
    "body": {
-    "ko": "전장용 PMIC·파워 모듈 등 신사업은 현재 개발 및 인프라 투자 단계에 머물러 있으며, 구체적인 양산 시점이나 매출 가이던스가 공개되지 않은 상태다. 베트남 생산 기지의 착공·가동 일정, 오산 R&D 센터 완공 시점 등도 불확실하다. 신사업 성과가 지연될수록 기존 메모리카드 매출 감소를 상쇄하지 못해 추가적인 자본 소모 가능성이 높아진다.",
-    "en": "The new businesses (automotive PMIC, power modules) remain in development and infrastructure investment stages, with no publicly disclosed production timelines or revenue guidance. The construction schedule and cost of the Vietnam production base, as well as the completion date of the Osan R&D center, also remain uncertain. The longer these initiatives are delayed, the greater the risk that declining memory card revenue cannot be offset, increasing the likelihood of further capital consumption."
+    "ko": "영업손실은 2022년부터 2025년까지 매년 발생했고, 2025년 영업이익률은 -30.9%로 4년간 가장 낮은 수준을 기록했다. 분기 단위로도 2025년 2분기부터 2026년 2분기까지 매 분기 영업손실이 이어져 구조적 수익성 문제가 해소되지 않고 있다. 매출이 줄어드는 가운데 손실 규모가 크게 축소되지 않아 고정비 부담이 상대적으로 커진 것으로 보인다.",
+    "en": "Operating losses occurred every year from 2022 through 2025, and the 2025 operating margin of -30.9% was the weakest in four years. On a quarterly basis, operating losses continued every quarter from Q2 2025 through Q2 2026, indicating that structural profitability issues remain unresolved. As revenue has shrunk without a proportional reduction in losses, fixed-cost burden appears to have grown relatively heavier."
    }
   },
   {
    "title": {
-    "ko": "주요 고객 집중도와 삼성전자향 발주 변동성",
-    "en": "Customer Concentration and Samsung Electronics Order Volatility"
+    "ko": "영업현금흐름 악화",
+    "en": "Deteriorating operating cash flow"
    },
    "body": {
-    "ko": "매출의 상당 부분이 삼성전자향 메모리카드 납품에 집중돼 있어, 삼성전자의 제품 전략 변화나 발주 감소가 테크엘 실적에 직접적 영향을 미친다. 2026년 1분기의 매출 급락은 주요 고객사 발주 감소 가능성을 강하게 시사하며, 고객 다변화가 이뤄지지 않는 한 반복적 실적 변동성이 불가피하다. 단일 고객 의존 구조는 협상력 약화와 수주 안정성 저하라는 구조적 취약점을 내포한다.",
-    "en": "A significant portion of revenue is concentrated on Samsung Electronics for memory card supply, meaning shifts in Samsung's product strategy or order reductions directly and materially affect TechL's top line. The sharp revenue decline in 2026 Q1 strongly suggests a possible order reduction from this key customer, and without meaningful customer diversification, recurring earnings volatility is difficult to avoid. The single-customer dependency structure embeds a structural vulnerability in the form of weakened bargaining power and order instability."
+    "ko": "영업활동현금흐름은 2022~2024년 연간 32억~97억원의 유입을 기록했으나 2025년에는 4억1,000만원의 유출로 전환됐다. 이는 외형은 개선된 재무구조와 달리 본업의 현금창출력이 약화되고 있음을 시사한다. 향후에도 현금흐름이 개선되지 않으면 외부자금 조달 의존도가 커질 수 있다.",
+    "en": "Operating cash flow, which had been positive at KRW 3.2bn to KRW 9.7bn per year between 2022 and 2024, turned negative at KRW -0.41bn in 2025. This suggests that, contrary to the improved appearance of the balance sheet, the core business's cash-generating ability has weakened. If cash flow fails to improve going forward, reliance on external funding could increase."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "전략·실행 리스크",
-    "en": "Strategic & Execution Risk"
+    "ko": "사업·매출 리스크",
+    "en": "Business and revenue risk"
    },
    "body": {
-    "ko": "전장용 반도체 신사업은 TI·인피니언·NXP 등 글로벌 대형 업체들이 시장을 장악하고 있어 후발 업체로서 초기 시장 침투에 상당한 시간과 비용이 소요될 수 있다. 베트남 생산 기지 및 오산 R&D 센터 투자가 계획대로 진행되지 않을 경우, 신사업 로드맵 전체가 지연될 위험이 있다. 비에이치 그룹 내 역할 변화나 협업 범위 축소가 발생하면 시너지 효과도 당초 기대 대비 달라질 수 있어 그룹 전략 의존성 리스크도 내재한다.",
-    "en": "The automotive semiconductor business faces high entry barriers, with global giants such as TI, Infineon, and NXP dominating the market; as a late entrant, TechL may require substantial time and capital to gain initial market penetration. If the Vietnam production base or Osan R&D center investments do not proceed as planned, the entire new business roadmap faces delays. Any changes in TechL's strategic role or the scope of collaboration within the BH Group could also alter synergy realization, representing an inherent group-dependency risk."
+    "ko": "Storage SIP 매출은 스마트폰·저장장치용 메모리카드 최종 수요에 크게 의존해, 전방산업 수요 변동에 노출돼 있다. 2026년 상반기 매출이 급격히 줄어든 만큼, 특정 고객사나 제품군에 대한 의존도가 실적 변동성을 키울 수 있다. 신사업(전력반도체 등)이 아직 초기 단계여서 기존 사업 부진을 상쇄할 만한 매출 기여 시점은 불확실하다.",
+    "en": "Storage SIP revenue depends heavily on end demand for memory cards used in smartphones and storage devices, exposing the company to fluctuations in downstream demand. Given the sharp revenue decline in the first half of 2026, dependence on specific customers or product lines could increase earnings volatility. New businesses such as power semiconductors are still at an early stage, making the timing of any offsetting revenue contribution uncertain."
    }
   },
   {
    "cat": {
-    "ko": "재무·유동성 리스크",
-    "en": "Financial & Liquidity Risk"
+    "ko": "지배구조·지분 리스크",
+    "en": "Governance and equity risk"
    },
    "body": {
-    "ko": "자기자본 규모는 충분하나, 영업현금흐름이 2025년부터 마이너스로 전환된 이후 지속적인 현금 소모가 이어질 경우 중장기적으로 추가 자본조달 필요성이 발생할 수 있다. 신사업 투자 비용과 기존 사업 적자가 겹칠 경우 유상증자·전환사채 등 추가 자본 조달이 필요해질 수 있으며, 이는 기존 주주의 지분 희석 위험으로 이어진다. 소규모 시가총액 특성상 거래 유동성이 낮아 수급 변동에 의한 주가 변동성이 상대적으로 클 수 있다.",
-    "en": "Although equity is ample in absolute terms, sustained cash consumption following the negative operating cash flow turn in 2025 could eventually necessitate additional capital replenishment over the medium term. If new business investment outlays coincide with continued core business losses, additional capital raises — such as rights offerings or convertible bonds — may become necessary, creating dilution risk for existing shareholders. Given its small market capitalization, trading liquidity is thin, leaving the stock susceptible to outsized price swings driven by supply-demand imbalances."
+    "ko": "최대주주가 에코볼트에서 비에이치(BH그룹)로 바뀌는 과정에서 전환사채 전환에 따른 지분 희석 가능성이 존재해왔다. 앞으로 추가적인 CB 전환이나 증자가 이뤄질 경우 기존 주주의 지분율이 추가로 낮아질 수 있다. 지배구조 변화 과정에서 사업 전략이나 경영진 구성이 바뀔 가능성도 지켜볼 필요가 있다.",
+    "en": "As the largest shareholder changed from Ecovolt to BH, there has been potential for equity dilution through convertible bond conversion. If additional CB conversions or capital raises occur in the future, existing shareholders' stakes could be further diluted. It is also worth monitoring whether business strategy or management composition changes during this governance transition."
    }
   },
   {
    "cat": {
-    "ko": "산업·시장 리스크",
-    "en": "Industry & Market Risk"
+    "ko": "재무·자금조달 리스크",
+    "en": "Financial and funding risk"
    },
    "body": {
-    "ko": "메모리카드 시장은 스마트폰·디지털카메라 수요 성숙화로 구조적 정체 국면에 있으며, 가격 경쟁이 치열하다. AI·HBM 중심의 반도체 업황 호조는 테크엘의 현 주력 제품군에 제한적 영향만 미친다. 미·중 무역 갈등 심화에 따른 공급망 불확실성과 삼성전자 등 주요 고객사의 전략적 방향 변화 역시 테크엘 사업에 외부 리스크 요인으로 작용할 수 있다.",
-    "en": "The memory card market faces structural stagnation as smartphone and digital camera demand matures, with intense price competition. The semiconductor upcycle driven by AI and HBM has limited direct read-through to TechL's current core product lineup. Escalating U.S.-China trade tensions add supply chain uncertainty, and strategic shifts by key customers such as Samsung Electronics represent external risk factors that could materially affect TechL's business outlook."
+    "ko": "2025년 영업활동현금흐름이 적자로 전환된 가운데 영업손실 구조가 이어지고 있어, 향후 자금조달 필요성이 커질 수 있다. 지금까지의 재무구조 개선이 이익 기반이 아닌 외부 자본조달에 의존해 온 만큼, 조달 여건이 악화될 경우 재무 부담이 다시 커질 수 있다. 지속적인 손실이 누적될 경우 감사의견이나 상장유지 요건과 관련한 이슈가 재발할 가능성도 배제할 수 없다.",
+    "en": "With operating cash flow turning negative in 2025 amid a continuing operating loss structure, the need for future funding could grow. Because the balance sheet improvement to date has relied on external capital raising rather than earnings, financial burden could increase again if fundraising conditions worsen. If losses continue to accumulate, the possibility of renewed issues related to audit opinions or listing maintenance requirements cannot be ruled out."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순(예상)",
-    "en": "~Mid-August 2026 (Expected)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표. 2026년 1분기의 매출 급락이 일시적인지, 혹은 추세적 하락인지를 판별하는 핵심 데이터 포인트가 된다. 영업손실 축소 여부와 매출 회복 여부가 단기 방향성의 첫 번째 검증 시점이다.",
-    "en": "2026 Q2 earnings release. This will be the critical data point for determining whether the sharp revenue decline in 2026 Q1 was temporary or the beginning of a structural downtrend. Revenue recovery and any narrowing of operating losses will serve as the first near-term earnings validation."
+    "ko": "2026년 3분기보고서 공시를 통해 매출·영업손익 추이가 상반기의 급격한 축소 흐름에서 벗어나는지 확인할 필요가 있다.",
+    "en": "The Q3 2026 quarterly report should be checked to see whether revenue and operating profit trends move away from the sharp contraction seen in the first half of the year."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 내",
-    "en": "Within 2H 2026"
+    "ko": "2026년 하반기 중",
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "베트남 양산 거점 구축 관련 착공·가동 일정 공시 여부 확인. 투자 집행이 구체화될수록 중장기 생산 경쟁력 강화 여부를 가늠할 수 있으며, 지연 시에는 신사업 일정 전반에 영향을 미친다.",
-    "en": "Watch for any DART disclosures regarding the groundbreaking or operational timeline of the Vietnam production base. Concrete investment execution would provide clearer medium-term visibility on manufacturing competitiveness; delays would signal broader new-business timeline slippage."
+    "ko": "전력관리반도체(PMIC) 등 신사업과 관련된 후속 공시나 고객사 확보, 양산 진행 여부를 확인할 필요가 있다.",
+    "en": "Follow-up disclosures regarding new businesses such as power management ICs (PMIC), including customer acquisition or progress toward mass production, should be monitored."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 내",
-    "en": "Within 2H 2026"
+    "ko": "지속적으로",
+    "en": "Ongoing"
    },
    "what": {
-    "ko": "전장용 PMIC·파워 모듈 등 신사업 수주·고객 계약·양산 일정 관련 공시 여부. 신사업이 매출 기여 단계로 전환되는 시점 확인이 밸류에이션 재평가의 핵심 트리거가 된다.",
-    "en": "Watch for formal disclosure of new business order intake, customer contracts, or production schedules for automotive PMIC and power modules. The point at which new businesses begin contributing revenue represents the key fundamental rerating trigger to monitor."
+    "ko": "최대주주 비에이치(BH그룹)의 지분율 변동이나 전환사채 잔여 물량의 추가 전환 여부와 관련한 공시를 계속 확인할 필요가 있다.",
+    "en": "Disclosures related to changes in largest shareholder BH's stake or additional conversion of remaining convertible bonds should continue to be monitored."
    }
   },
   {
    "when": {
-    "ko": "2026년 연간(지속 모니터링)",
-    "en": "Throughout 2026 (Ongoing)"
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "삼성전자향 메모리카드 발주 동향과 비에이치 그룹 협업 프로젝트의 구체화 여부를 주기적으로 점검. 주요 고객 발주 회복이 단기 실적 안정화의 선행 조건이다.",
-    "en": "Ongoing monitoring of Samsung Electronics' memory card order trends and the materialization of BH Group collaborative projects. Recovery in orders from the key customer is a necessary precondition for near-term earnings stabilization."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 11월 중순(예상)",
-    "en": "~Mid-November 2026 (Expected)"
-   },
-   "what": {
-    "ko": "2026년 3분기 실적 발표. 하반기 반도체 업황 개선의 테크엘 수혜 여부와 연간 적자 축소 추세를 확인하는 중간 점검 시점이 된다.",
-    "en": "2026 Q3 earnings release, serving as a mid-year checkpoint to assess whether TechL is benefiting from any second-half semiconductor market improvement and whether the annual loss trajectory is showing signs of narrowing."
+    "ko": "2026년 사업보고서·감사보고서를 통해 연간 실적이 확정되고, 손실 구조가 지속되는지 또는 개선되는지 확인할 시점이다.",
+    "en": "The FY2026 business and audit reports will confirm full-year results and clarify whether the loss structure persists or improves."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "테크엘은 1998년 설립된 메모리 반도체 후공정(Storage SIP) 전문 기업으로, 2022년 비에이치 그룹 편입 이후 전장용 전력반도체(PMIC)·파워 모듈 등 고부가가치 신사업으로의 구조 전환을 추진 중이다. 재무적으로는 부채비율이 6.1%까지 낮아지고 자기자본이 약 945.8억원에 달해 중장기 투자 여력이 있으나, 4년 연속 영업적자와 2026년 1분기 매출의 약 26.7억원으로의 급락은 단기 수익성 개선 가시성을 크게 제한한다. 전장용 반도체 시장의 구조적 성장은 중장기 기회 요인이나, PMIC·파워 모듈 신사업은 여전히 개발·투자 단계에 있어 매출 기여 시점이 불투명하다. 핵심 모니터링 포인트는 삼성전자향 메모리카드 발주 회복, 베트남 생산 거점 착공 공시, 신사업 수주·고객 계약 가시화 세 가지다. BPS 약 4,299원 대비 현 주가 수준이 순자산에 비해 상당한 할인 구간에 있는 것은 사실이나, 이익 정상화 시점의 불확실성이 높고 추가 자본 소모 가능성도 배제할 수 없어 전략적 전환의 구체적 실행력 검증이 선행될 필요가 있다.",
-   "en": "TechL is a memory semiconductor back-end packaging (Storage SIP) specialist founded in 1998 that has been pursuing a structural pivot toward automotive power semiconductors (PMIC) and power modules since joining the BH Group in 2022. Financially, the balance sheet is clean — debt ratio at just 6.1% and shareholders' equity of approximately KRW 94.6 billion — providing room for long-term investment. However, four consecutive years of operating losses and the sharp revenue decline to approximately KRW 2.67 billion in 2026 Q1 significantly constrain near-term earnings visibility. The structural growth of the automotive semiconductor market creates a compelling long-term opportunity, but PMIC and power module initiatives remain in development and investment stages, leaving the revenue contribution timeline unclear. The three most critical monitoring points are: a recovery in Samsung Electronics' memory card orders, formal disclosure of the Vietnam production base groundbreaking, and the materialization of new business order intake and customer contracts. While the current stock price reflects a meaningful discount relative to BPS of approximately KRW 4,299, the high uncertainty around earnings normalization and the possibility of further capital consumption mean that demonstrated execution on its strategic transformation — not the balance sheet discount alone — is the necessary precondition for any fundamental rerating."
+   "ko": "테크엘은 메모리 반도체 후공정(Storage SIP) 전문업체로서 2022년부터 2025년까지 매년 영업손실을 기록했고, 2025년에는 매출이 전년 대비 약 28% 줄며 영업이익률이 -30.9%까지 악화됐다. 2026년 상반기에는 매출 축소가 더욱 뚜렷해졌으나, 2분기에는 영업손실 속에서도 순이익이 흑자로 전환되는 등 실적 흐름이 일정치 않은 모습을 보이고 있다. 지배구조 측면에서는 최대주주가 코스피 상장 비에이치(BH그룹)로 바뀌었고, 이 과정에서 몇 차례의 자본조달을 거쳐 부채비율이 크게 낮아지는 등 재무구조는 개선됐다. 다만 이러한 개선이 이익 기반이 아니라 외부 자금조달에 의존한 결과라는 점, 그리고 2025년 영업활동현금흐름이 적자로 전환됐다는 점은 함께 고려할 필요가 있다. 신사업으로 거론되는 전력반도체(PMIC) 분야는 아직 구체적 진행 상황이 공식 확인되지 않은 초기 단계이며, BH그룹과의 시너지 여부도 지켜봐야 할 변수다. 종합적으로 재무 안정성 지표와 사업 펀더멘털 지표가 서로 다른 방향을 가리키고 있어, 향후 분기 실적과 신사업 진행 상황을 함께 확인하는 것이 중요하다.",
+   "en": "TechL, a memory semiconductor back-end packaging (Storage SIP) specialist, posted operating losses every year from 2022 through 2025, with 2025 revenue falling about 28% year over year and the operating margin worsening to -30.9%. Revenue contraction became more pronounced in the first half of 2026, though performance has been uneven, including a swing to positive net income in the second quarter despite a continuing operating loss. On the governance side, the largest shareholder changed to KOSPI-listed BH, and the balance sheet has improved through several rounds of capital raising that sharply reduced the debt ratio. However, it should be considered that this improvement stems from external fundraising rather than earnings, and that operating cash flow turned negative in 2025. The power semiconductor (PMIC) business mentioned as a new growth area remains at an early stage without officially confirmed concrete progress, and potential synergies with BH Group are a variable to watch. Overall, financial stability indicators and business fundamentals point in different directions, making it important to track both upcoming quarterly results and progress on new business initiatives."
   }
  },
  "sources": [
-  "https://markets.hankyung.com/stock/064520",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A064520",
-  "https://www.investing.com/equities/barun-electronics-co-ltd",
-  "https://www.valueline.co.kr/finance/bicchart/064520",
-  "https://stocks.pluconnect.com/064520_%ED%85%8C%ED%81%AC%EC%97%98/",
-  "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/YjNzak1qUnBOVG04anFYL0N6RzV4Zz09/company_nm/(%EC%A3%BC)%ED%85%8C%ED%81%AC%EC%97%98?nomo=1",
-  "https://markets.hankyung.com/stock/064520/chart",
-  "https://m.thinkpool.com/item/064520",
-  "https://kwatch.kr/stock/064520",
-  "https://m.irgo.co.kr/IR-COMP/064520/%ED%85%8C%ED%81%AC%EC%97%98-IR-PAGE",
   "https://m.thinkpool.com/compDiscuss/cont/1012546",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A064520",
   "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=5&gicode=A064520&cID=21&MenuYn=N&NewMenuID=102&stkGb=701",
-  "https://www.incruit.com/company/118848/",
-  "https://www.investing.com/equities/barun-electronics-co-ltd-earnings",
-  "https://www.data.go.kr/data/15048866/fileData.do",
-  "https://techl.co.kr/",
-  "https://www.38.co.kr/html/forum/board/?code=064520"
+  "https://finance.finup.co.kr/Stock/064520",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02630566642205000",
+  "https://stocks.pluconnect.com/064520_%ED%85%8C%ED%81%AC%EC%97%98/",
+  "https://www.investing.com/equities/barun-electronics-co-ltd",
+  "https://kr.investing.com/news/global-filings/article-93CH-1947319",
+  "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/YjNzak1qUnBOVG04anFYL0N6RzV4Zz09/company_nm/(%EC%A3%BC)%ED%85%8C%ED%81%AC%EC%97%98?nomo=1",
+  "https://www.valueline.co.kr/finance/bicchart/064520",
+  "https://m.thinkpool.com/item/064520",
+  "https://markets.hankyung.com/stock/064520",
+  "https://m.irgo.co.kr/IR-COMP/064520/%ED%85%8C%ED%81%AC%EC%97%98-IR-PAGE",
+  "https://www.sankun.com/company-info/tURbheVS4WF1_qdakLfSNg",
+  "https://kr.investing.com/equities/barun-electronics-co-ltd-historical-data-splits",
+  "https://stocktong.co.kr/Web/Item.aspx?t=s&amp=&l=1&amp=&code=064520&amp=&item_code=064520&amp=&item_name=%EB%B0%94%EB%A5%B8%EC%A0%84%EC%9E%90",
+  "http://www.the-biz.co.kr/news/articleView.html?idxno=683459",
+  "https://www.newspim.com/news/view/20260722001198"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "064520",
  "name": "테크엘",
  "name_en": "TechL Co., LTD.",
@@ -232,9 +223,9 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 05:28",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 09:12",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -337,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 1478,
-   "mcap": 0.033,
+   "price": 1520,
+   "mcap": 0.034,
    "shares": 22351062,
    "total_shares": 22351062,
    "wavg_shares": 21532893,
    "per": null,
    "eps": -88,
-   "pbr": 0.3382,
+   "pbr": 0.3478,
    "bps": 4370,
    "roe_ttm": -2.1,
    "ttm_window": "2025Q3~2026Q2",

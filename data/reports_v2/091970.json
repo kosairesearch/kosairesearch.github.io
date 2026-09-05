@@ -1,241 +1,232 @@
 {
  "title": {
-  "ko": "소재·주방기기 투트랙, 실적 회복과 사업 전환의 기로",
-  "en": "Materials & Kitchen Equipment at a Crossroads — Earnings Recovery and Business Pivot Under Scrutiny"
+  "ko": "소재 기반 위 AI·로봇 전환기",
+  "en": "Materials Base, AI-Robotics Pivot Underway"
  },
  "lead": {
-  "ko": "도전성 소재와 자회사 한일오닉스(상업용 주방기기)를 양대 축으로 하면서도 4년 연속 순손실이 이어지고 있으며, 최대주주 담보 만기(2026년 6월 27일)와 AI·로봇 신사업 전환 공식화가 맞물려 지배구조 안정성과 사업 실행력 검증이 핵심 과제로 부상한다.",
-  "en": "With conductive materials and Hanil Onyx kitchen equipment as twin pillars, Nanocamtech enters four consecutive loss years; the imminent expiry of a major-shareholder share pledge and a declared AI/robot pivot make governance stability and execution verification the central near-term tests."
+  "ko": "정전기 방지(ESD) 소재 기업이 원터치에이아이 인수와 사명 변경을 계기로 AI·로봇 비전 사업 진출을 선언했으며, 최근 분기 실적은 자산 매각에 따른 일회성 이익의 영향이 크게 작용했다.",
+  "en": "An ESD materials maker has declared entry into AI and robot vision through the Onetouch AI acquisition and corporate renaming, while its most recent quarterly results were heavily shaped by one-off gains from asset disposals."
  },
  "keypoints": [
   {
-   "ko": "4년 연속 순손실: 2022~2025년 매해 지배주주 귀속 순손실을 기록하며, 2025년 손실 규모(약 87.6억원)는 전년(약 37.2억원) 대비 약 2.4배로 확대됐다.",
-   "en": "Four consecutive net losses: Attributable net loss reached approximately KRW 8.76 billion in 2025, roughly 2.4× the KRW 3.72 billion loss recorded in 2024."
+   "ko": "2026년 6월 나노캠텍에서 LSK아이로봇으로 사명 변경, AI 응용 소프트웨어·로봇 비전 중심 사업 재편을 선언했다.",
+   "en": "The company changed its name from Nanocamtec to LSK iRobot in June 2026, declaring a business pivot toward AI application software and robot vision."
   },
   {
-   "ko": "이원화 사업 구조: 도전성 소재(2025년 매출 비중 약 53.8%)와 한일오닉스 주방기기(약 44.4%)가 매출 대부분을 차지하며, 한일오닉스는 국내 상업용 주방설비 시장 점유율 1위 핵심 자회사다.",
-   "en": "Dual revenue structure: Conductive materials (~53.8% of 2025 revenue) and Hanil Onyx kitchen equipment (~44.4%) dominate the top line; Hanil Onyx is the No. 1 domestic commercial kitchen-equipment subsidiary."
+   "ko": "2025년 연결 매출은 501억원, 영업손실 2.6억원, 지배주주순손실 87.6억원으로 전년 대비 적자가 확대됐다.",
+   "en": "Consolidated 2025 revenue was KRW 50.1 billion with an operating loss of KRW 0.26 billion and an owner net loss of KRW 8.76 billion, a wider loss than the prior year."
   },
   {
-   "ko": "강한 하반기 계절성: 2025년 Q3(133억원)·Q4(205억원)에 매출과 영업이익이 집중됐으나, 2026년 Q1(85.6억원, 영업손실 13.9억원)은 다시 비수기 패턴을 재확인했다.",
-   "en": "Strong 2H seasonality: Revenue and operating profit concentrated in Q3/Q4 2025 (KRW 13.3 bn / KRW 20.6 bn), while Q1 2026 (KRW 8.6 bn revenue, KRW 1.4 bn operating loss) reconfirmed the first-half weak-season pattern."
+   "ko": "2026년 2분기 지배주주순이익은 34.7억원으로 흑자 전환했으나 같은 분기 영업손익은 -11.4억원으로 적자였다.",
+   "en": "Q2 2026 owner net income turned positive at KRW 3.47 billion even as operating income remained negative at KRW -1.14 billion for the same quarter."
   },
   {
-   "ko": "재무 건전성 악화: 부채비율이 2023년 71.6%에서 2025년 241.6%로 급등했으며, 최대주주가 보유지분 상당 부분을 담보로 제공(2026년 6월 27일 만기)해 지배구조 불확실성이 단기 주요 변수로 부각된다.",
-   "en": "Deteriorating financial health: Debt ratio surged from 71.6% in 2023 to 241.6% in 2025; a controlling-shareholder share pledge matures June 27, 2026 — a critical near-term governance variable."
+   "ko": "비핵심 자산(중국 법인, 캔버스엔·한일오닉스 지분) 매각으로 확보한 약 172억원을 활용해 전환사채(CB)를 순차 상환하며 재무구조를 조정 중이다.",
+   "en": "Using roughly KRW 17.2 billion raised from divesting non-core assets (a China subsidiary and stakes in Canvasen and Hanil Onyx), the company has been sequentially redeeming convertible bonds to adjust its balance sheet."
   },
   {
-   "ko": "AI·로봇 전환 선언: 사명 변경('LSK아이로봇') 예정, AI 소프트웨어사 원터치에이아이 지분 취득 등 신사업 행보가 이어지나, 원터치에이아이는 아직 유의미한 매출이 없는 초기 단계다.",
-   "en": "Declared AI/robot pivot: A pending name change to 'LSK Irobot' and a controlling-stake acquisition in Onetouch AI mark the strategic shift, but Onetouch AI has no confirmed material revenue, keeping the pivot nascent."
+   "ko": "원터치에이아이 인수 기술을 활용한 AI 버추얼 아티스트(체리나·채윤) 사업이 산업용 AI 솔루션 확장의 시험대로 진행 중이다.",
+   "en": "AI virtual artist projects (Cherina, Chaeyun), built on technology from the Onetouch AI acquisition, are proceeding as a testbed for expansion into industrial AI solutions."
   }
  ],
  "business": {
-  "ko": "나노캠텍은 나노 기술 기반 정밀화학 벤처기업으로 2000년 창업 이래 전자부품 포장재 및 IT 기능성 소재 분야에 집중해왔다. 핵심 사업인 도전성 소재 부문에서는 OLED용 이형필름, 대전방지 기능 제품을 개발·납품하며, 나노실버 투명전극(터치센서 모듈사 공급)과 비카드뮴계 퀀텀닷 소재 개발을 병행하고 있다. 2024년에는 상업용 주방기기 전문 기업 한일오닉스를 165억원에 인수해 사업 포트폴리오를 이원화했다. 한일오닉스는 국내 상업용 주방설비 시장 점유율 1위로, 설계·제작·시공·유지보수를 아우르는 통합 솔루션 역량을 보유한다. 2025년 매출 구성은 도전성 소재 약 53.8%, 한일오닉스 주방기기 약 44.4%로 파악된다. 해외 생산 법인(중국)은 2024~2025년 실질적으로 정리 완료해 직접 생산 기반이 국내 중심으로 재편됐다. 최근 회사는 AI 응용 소프트웨어 개발사 원터치에이아이 지분을 취득해 최대주주 지위를 확보하고, 사명을 'LSK아이로봇'으로 변경하며 AI·로봇 사업 진출을 공식화하는 절차를 진행 중이다. 2026년 3월 정기주총에서는 디지털콘텐츠 제작·유통업, 뉴미디어 콘텐츠 제작·유통·서비스업을 사업 목적에 추가했다. 대기업 1차 협력사로서의 소재 기술 노하우와 한일오닉스의 시공 경험이 현재 사업 경쟁력을 뒷받침하나, AI 신사업과 기존 사업 간 시너지는 아직 불명확하다.",
-  "en": "Nanocamtech is a precision-chemistry venture founded in 2000, historically focused on electronic-component packaging and IT functional materials. Its core conductive-materials segment supplies OLED release films, anti-static functional products, nano-silver transparent electrodes for touchscreen-module makers, and is developing cadmium-free quantum-dot materials. In 2024, the company acquired Hanil Onyx — a commercial kitchen-equipment specialist — for KRW 16.5 billion, diversifying its portfolio. Hanil Onyx commands the No. 1 domestic market position, offering integrated design, fabrication, installation, and maintenance services. In 2025, conductive materials accounted for approximately 53.8% of consolidated revenue and Hanil Onyx for approximately 44.4%. Overseas production subsidiaries in China were substantially wound down during 2024–2025, re-centering manufacturing in Korea. Recently, the company acquired a controlling stake in Onetouch AI (an AI-application software start-up) and is proceeding with a name change to 'LSK Irobot,' formally signaling a pivot to AI and robotics. At the March 2026 AGM, digital-content production and new-media services were added to the corporate charter. Nano-material IP underpinning Tier-1 supplier relationships and Hanil Onyx's construction expertise remain the primary competitive assets, though synergies between the AI pivot and legacy businesses are undemonstrated."
+  "ko": "LSK아이로봇은 경기도 안성시에 본사를 둔 원천소재 기업으로, 1999년 12월 설립돼 2007년 코스닥에 상장됐다. 회사의 핵심 기술은 도전성소재인 유기전도성고분자, 이온콤플렉스 전도성고분자, 이온성액체, 카본나노튜브 등을 직접 개발·제조해 도전성원료, 도전성플라스틱 시트 및 레진, 기능성 ESD보호필름·테이프, 기능성 ESD보호막 등으로 공급하는 것이다. 이 정전기 방전(ESD) 방지 소재는 전자·반도체 부품의 포장, 이송, 제조공정에서 정전기로 인한 불량을 막는 용도로 쓰이며 오랜 기간 회사의 주력 매출원이었다. 2025년에는 중국 법인을 정리하고 캔버스엔과 한일오닉스 지분까지 매각하는 등 전방위적인 구조조정을 진행했다. 이를 통해 확보한 현금 유동성을 바탕으로 회사는 2026년 초 AI 응용 소프트웨어 기업 원터치에이아이 지분을 인수해 최대주주 지위를 확보했으며, 원터치에이아이는 삼성SDS 인공지능연구센터 책임연구원을 지낸 최종원 대표(현 중앙대학교 교수)가 이끄는 컴퓨터비전·생성형AI 기술 보유 기업이다. 회사는 이 시각지능·생성형AI 기술을 로봇 사업과 연계해 제조·물류·서비스 분야에 적용 가능한 AI 기반 로봇 솔루션 개발을 추진할 계획이라고 밝혔다. 이러한 사업 재편을 계기로 2026년 6월 사명을 나노캠텍에서 LSK아이로봇으로 변경했다. 결과적으로 회사는 기존 ESD 소재 사업의 안정적 수익 기반과 신규 AI·로봇 비전 사업이라는 두 개의 축을 동시에 운영하는 과도기에 있다.",
+  "en": "LSK iRobot is a materials company headquartered in Anseong, Gyeonggi Province, established in December 1999 and listed on KOSDAQ in 2007. Its core technology involves directly developing and manufacturing conductive materials such as organic conductive polymers, ion-complex conductive polymers, ionic liquids, and carbon nanotubes, which are then supplied as conductive raw materials, conductive plastic sheets and resins, functional ESD protective films and tapes, and functional ESD protective coatings. These electrostatic discharge (ESD) protection materials are used to prevent defects caused by static electricity during packaging, transport, and manufacturing of electronic and semiconductor components, and have long been the company's core revenue source. In 2025 the company undertook wide-ranging restructuring, winding down a China subsidiary and divesting stakes in Canvasen and Hanil Onyx. Using the cash liquidity raised from these disposals, the company acquired a controlling stake in AI application software firm Onetouch AI in early 2026, a computer vision and generative AI company led by CEO Choi Jong-won, a former principal researcher at Samsung SDS's AI Research Center now serving as a Chung-Ang University professor. The company stated it plans to combine Onetouch AI's vision intelligence and generative AI technology with robotics to develop AI-based robot solutions applicable in manufacturing, logistics, and services. Reflecting this business realignment, the company changed its name from Nanocamtec to LSK iRobot in June 2026. As a result, the company is currently in a transitional phase operating both its established ESD materials business and its new AI and robot vision ventures simultaneously."
  },
  "earnings": {
-  "ko": "2022~2025년 4년 연속 지배주주 귀속 순손실 구간이 이어지고 있다. 2022년에는 매출 501억원, 영업손실 24.4억원(OPM -4.9%), 지배주주 귀속 순손실 166억원으로 연간 손실이 가장 컸다. 2023년에는 매출이 424억원으로 감소했으나 지배주주 귀속 순손실이 61.9억원으로 축소됐다. 2024년에는 한일오닉스 연결 편입 효과로 매출이 555억원으로 확대됐고 영업이익이 1.8억원(OPM +0.3%)으로 소폭 흑자 전환됐으나, 비영업 손실로 지배주주 귀속 순손실 37.2억원이 지속됐다. 2025년에는 해외 법인 매출 감소와 도전성 소재 사업부 부진으로 매출이 501억원으로 재감소했고, 영업이익도 -2.6억원(OPM -0.5%)으로 재차 소폭 적자 전환했다. 2025년 지배주주 귀속 순손실은 87.6억원으로 전년 대비 크게 확대됐는데, 캔버스엔 투자 관련 손실·CB 금융비용 등 비영업 항목 부담이 주된 원인으로 분석된다. 분기별로는 2025년 상반기(Q1 85억원·Q2 77억원)에 매출이 저조했으나 Q3(133억원)·Q4(205억원)에 하반기 집중 계절성이 뚜렷했다. Q3·Q4에는 각각 영업이익 8.6억원·10.1억원의 흑자를 기록했으나, Q4 지배주주 귀속 순손실이 54.8억원에 달해 대규모 비영업 손실이 해당 분기에 집중됐음을 시사한다. 2026년 Q1은 매출 85.6억원, 영업손실 13.9억원으로 계절적 비수기 패턴을 재확인했다. 영업 현금흐름은 2023년 -45.4억원에서 2024년 +37.8억원, 2025년 +19.9억원으로 개선되어, 장부 손실 대비 현금창출 능력은 상대적으로 양호한 편이다.",
-  "en": "Net losses attributable to controlling shareholders have persisted for four consecutive years (2022–2025). In 2022, revenue was KRW 50.2 bn with an operating loss of KRW 2.4 bn (OPM –4.9%) and the largest attributable net loss on record at KRW 16.6 bn. In 2023, revenue contracted to KRW 42.4 bn while the attributable net loss narrowed to KRW 6.2 bn. In 2024, Hanil Onyx's consolidation lifted revenue to KRW 55.5 bn and operating profit turned marginally positive at KRW 0.18 bn (OPM +0.3%), though the attributable net loss persisted at KRW 3.7 bn. In 2025, declining overseas-subsidiary sales and a sluggish conductive-materials division pulled revenue back to KRW 50.1 bn; operating profit turned negative again (OPM –0.5%), and the attributable net loss expanded to KRW 8.76 bn — primarily driven by non-operating items including Canvas-N investment losses and convertible-bond financing costs. Quarterly, 2025 revenue concentrated in 2H: Q3 (KRW 13.3 bn, OP +KRW 0.86 bn) and Q4 (KRW 20.6 bn, OP +KRW 1.01 bn); yet Q4's attributable net loss was –KRW 5.48 bn, indicating large non-operating charges in the quarter. Q1 2026 (revenue KRW 8.6 bn, operating loss KRW 1.4 bn) reconfirmed the seasonal first-half weakness. On the cash side, operating cash flow improved from –KRW 4.5 bn in 2023 to +KRW 3.8 bn in 2024 and +KRW 2.0 bn in 2025, offering a modest buffer relative to reported earnings losses."
+  "ko": "연간 실적을 보면 2022년 매출 501.6억원, 영업손실 24.4억원, 지배주주순손실 166.2억원을 기록한 뒤 2023년에는 매출이 424.0억원으로 줄었지만 순손실은 61.9억원으로 축소됐다. 2024년에는 매출이 555.1억원으로 회복되며 영업이익 1.8억원으로 흑자 전환했으나 지배주주순손실은 37.2억원으로 여전히 적자였다. 2025년에는 매출이 501.1억원으로 다시 줄고 영업손실 2.6억원, 지배주주순손실 87.6억원으로 적자 폭이 확대됐는데, 이는 앞서 언급한 자회사·지분 구조조정 과정에서 발생한 비용이 상당 부분 영향을 미친 것으로 해석된다. 분기별로 보면 2025년 3분기(매출 133.4억원, 영업이익 8.6억원)와 4분기(매출 205.6억원, 영업이익 10.1억원)에는 영업이익이 연속 흑자를 기록했지만, 4분기 지배주주순손실은 54.8억원에 달해 영업손익과 순손익 간 큰 괴리가 나타났다. 2026년 1분기에는 매출이 85.6억원으로 줄고 영업손실 13.9억원, 순손실 12.7억원을 기록하며 다시 적자 국면에 진입했다. 그러나 2026년 2분기에는 매출이 102.1억원으로 늘고 영업손실은 11.4억원으로 지속됐음에도 지배주주순이익이 34.7억원으로 흑자 전환했는데, 이는 비핵심 자산 매각에 따른 처분이익 등 일회성 요인이 반영된 결과로 풀이된다. 즉 최근 1년간 실적은 본업인 영업손익보다 자산 매각·구조조정에 따른 비영업 손익이 순이익 변동을 주도하는 패턴을 보이고 있다. 부채비율은 2022년 67.6%에서 2025년 241.6%로 크게 높아졌는데, 이는 CB 발행 등 외부 자금 조달이 늘어난 결과로 해석되며 이후 CB 상환을 통한 완화 시도가 진행되고 있다.",
+  "en": "Looking at annual results, revenue was KRW 50.16 billion in 2022 with an operating loss of KRW 2.44 billion and an owner net loss of KRW 16.62 billion; in 2023 revenue fell to KRW 42.4 billion but the net loss narrowed to KRW 6.19 billion. In 2024 revenue recovered to KRW 55.51 billion and the company posted a small operating profit of KRW 0.18 billion, though the owner net loss remained at KRW 3.72 billion. In 2025 revenue declined again to KRW 50.11 billion, with an operating loss of KRW 0.26 billion and a widened owner net loss of KRW 8.76 billion, which appears to reflect costs tied to the subsidiary and equity restructuring described above. On a quarterly basis, operating income was positive in both Q3 2025 (revenue KRW 13.34 billion, operating profit KRW 0.86 billion) and Q4 2025 (revenue KRW 20.56 billion, operating profit KRW 1.01 billion), yet the Q4 owner net loss reached KRW 5.48 billion, showing a large gap between operating and net results. In Q1 2026 revenue fell to KRW 8.56 billion with an operating loss of KRW 1.39 billion and a net loss of KRW 1.27 billion, marking a return to loss territory. However, in Q2 2026 revenue rose to KRW 10.21 billion and while the operating loss persisted at KRW 1.14 billion, owner net income turned positive at KRW 3.47 billion, a result that appears to reflect one-off items such as gains from non-core asset disposals. In other words, over the past year net income swings have been driven more by non-operating items tied to asset sales and restructuring than by the underlying operating business. The debt ratio rose sharply from 67.6% in 2022 to 241.6% in 2025, reflecting increased external financing including convertible bond issuance, with subsequent CB redemptions now underway to ease that burden."
  },
  "industry": {
-  "ko": "나노캠텍의 도전성 소재(이형필름·대전방지 소재·투명전극 등)는 OLED 스마트폰, 폴더블 기기, QD-OLED TV 확산과 함께 장기 수요 기반이 확대되는 구조다. 삼성디스플레이는 2026년 컴퓨텍스에서 QD-OLED를 포함한 16종의 신제품을 선보이는 등 고성능 디스플레이 라인업 확장을 가속화하고 있어, 이형필름·대전방지 소재의 스펙 요구 수준도 높아지고 있다. 다만 국내 중소 소재 기업은 일본·중국 경쟁사와의 가격 경쟁 및 납품 단가 압박에 상시 노출돼 있으며, 은 등 귀금속과 특수 화학품 등 원재료 가격 변동도 마진 리스크 요인이다. 한일오닉스가 영위하는 상업용 주방설비 시장은 국내 외식·급식·호텔 경기와 연동되어 상대적으로 안정적인 수요 기반을 가지나, 마진 구조가 박해 단독으로 전사 수익성을 주도하기에는 한계가 있다. 한일오닉스가 진출하는 베트남 고급 호텔 시장은 중장기 성장 가능성이 있으나 규모화까지는 시간이 필요하다. AI·로봇 신사업 방면은 글로벌 투자 붐을 배경으로 주목받고 있으나, 원터치에이아이는 2024년 4월 설립된 신생 기업으로 상업화 실적이 없어 시장 진입 성과를 판단하기 이르다. 전반적으로 나노캠텍이 속한 시장들은 성숙한 소재·주방기기 시장과 초기 AI·로봇 시장의 이중 구조를 띠며, 각 사업의 진행 경과를 독립적으로 추적할 필요가 있다.",
-  "en": "The conductive-materials market (release films, anti-static materials, transparent electrodes) benefits from secular demand expansion driven by OLED smartphones, foldable devices, and QD-OLED TVs. Samsung Display showcased 16 new products — including QD-OLED — at Computex 2026, accelerating high-end display lineup expansion and raising the specification bar for upstream materials suppliers. However, domestic small-cap materials makers face persistent pricing pressure from Japanese and Chinese rivals, and raw-material cost swings (silver, specialty chemicals) pose ongoing margin risk. Hanil Onyx's commercial kitchen-equipment market tracks domestic foodservice, institutional catering, and hospitality spending, offering relatively stable demand — but thin margins limit its standalone capacity to drive corporate profitability. Its foray into Vietnam's premium hospitality segment represents a credible growth avenue, though scale takes time. The AI/robot space rides a global investment boom in terms of thematic appeal, yet Onetouch AI — incorporated April 2024 with no confirmed revenue — is too early-stage to assess. Overall, Nanocamtech straddles mature (materials/kitchen) and nascent (AI/robot) markets that require independent monitoring."
+  "ko": "ESD 소재 산업은 반도체·디스플레이·전자부품 제조공정의 정전기 관리 수요에 기반해 안정적이지만 성장률이 높지 않은 시장으로, 다수의 소재 업체가 경쟁하는 가운데 가격 경쟁이 상시적으로 작용한다. 회사의 별도(개별) 기준 사업은 2026년 상반기에도 영업이익 흑자를 유지한 것으로 알려져, 본업 자체의 수익 기반은 유지되고 있는 것으로 파악된다. 반면 AI·로봇 비전 산업은 제조·물류 자동화 수요 확대와 생성형 AI 기술 상용화 흐름을 타고 빠르게 성장하는 영역으로, 대형 정보기술(IT) 기업과 특화 스타트업이 각각 플랫폼과 응용 솔루션 경쟁을 벌이고 있다. 이 시장에 후발로 진입하는 회사는 원터치에이아이의 컴퓨터비전·생성형AI 기술을 발판으로 아마존웹서비스(AWS)와의 협업, 영국 버밍엄대학교와의 공동연구 등 외부 파트너십을 통해 기술 검증을 시도하고 있다. AI 버추얼 아티스트 같은 콘텐츠 사업은 진입장벽이 상대적으로 낮은 대신 다수의 경쟁 IP가 시장에 존재해 차별화가 쉽지 않은 영역이다. 산업용 비전 AI·로봇 제어 분야는 검증된 트랙레코드를 가진 기존 로봇·자동화 업체들이 이미 다수 존재해, 신규 진입 기업이 실제 매출로 연결되는 데는 시간이 걸릴 수 있는 구조다. 종합하면 회사는 안정적이나 저성장인 기존 사업과, 성장성은 높지만 아직 초기 단계인 신규 사업이 공존하는 산업 구도 속에 위치해 있다.",
+  "en": "The ESD materials industry is a stable but low-growth market driven by static electricity management needs in semiconductor, display, and electronic component manufacturing, with numerous material suppliers competing amid persistent price pressure. The company's standalone (parent-only) business reportedly maintained an operating profit through the first half of 2026, suggesting the core operation retains a stable earnings base. In contrast, the AI and robot vision industry is a fast-growing area driven by expanding demand for manufacturing and logistics automation alongside the commercialization of generative AI, with large IT companies and specialized startups competing on platforms and applications respectively. As a later entrant, the company is attempting technology validation through external partnerships built on Onetouch AI's computer vision and generative AI capabilities, including collaboration with Amazon Web Services and joint research with the University of Birmingham. Content businesses such as AI virtual artists face relatively low barriers to entry but also a crowded field of competing IPs, making differentiation difficult. In industrial vision AI and robot control, numerous established robotics and automation firms with proven track records already exist, meaning new entrants may take time to convert efforts into actual revenue. Overall, the company sits at the intersection of a stable but low-growth legacy business and a high-growth but still early-stage new business."
  },
  "outlook": {
-  "ko": "2026년 상반기는 계절적 비수기 패턴이 지속되면서 영업손실 구간이 이어질 가능성이 높고, 2026년 Q1 실적(매출 85.6억원, 영업손실 13.9억원)이 이를 뒷받침한다. 하반기에는 계절성 회복이 기대되나, 도전성 소재 수주 동향과 한일오닉스의 해외 프로젝트 실행이 핵심 변수다. 한일오닉스는 현재 약 90억원 규모의 베트남 신라모노그램 하노이 프로젝트를 수행 중이며 2026년 10월 오픈을 앞두고 있어, 하반기 수익 인식이 실적 개선의 열쇠가 될 수 있다. 재무 측면에서는 캔버스엔 투자조합 매각으로 확보한 172억원이 부채 일부 상환과 운전자본 안정화에 기여할 전망이나, CB 오버행에 따른 잠재적 주식 희석은 여전히 해소되지 않은 변수다. AI·로봇 사업 방면에서는 원터치에이아이의 매출 실적 확인과 수익 모델 공개가 투자자 신뢰 형성의 전제 조건이다. 사명 변경이 임시주총에서 의결될 경우 회사는 공식적으로 AI·로봇 기업으로의 전환을 선언하게 되나, 기존 소재·주방기기 사업의 수익성 안정이 없이는 중장기 이익 기반 확립이 어려운 상황이다.",
-  "en": "First-half 2026 is likely to remain in operating-loss territory consistent with the seasonal pattern, as evidenced by Q1 2026 results (revenue KRW 8.6 bn, operating loss KRW 1.4 bn). A second-half recovery is anticipated, contingent on conductive-materials order trends and Hanil Onyx project execution. Hanil Onyx is currently executing the ~KRW 9 billion Shilla Monogram Hanoi kitchen project, scheduled to open in October 2026, making 2H revenue recognition an important earnings watchpoint. On the financial side, KRW 17.2 billion in Canvas-N divestiture proceeds should partially alleviate debt and working-capital pressures, though convertible-bond overhang remains a latent dilution risk. On the AI/robot front, confirmed revenue from Onetouch AI and a disclosed business model are prerequisites for investor confidence in the pivot. Should the name change to 'LSK Irobot' pass at the EGM, the strategic shift becomes official — yet stabilizing profitability in core materials and kitchen-equipment operations remains the prerequisite for a durable earnings foundation."
+  "ko": "회사는 2026년 상반기 실적 발표 자리에서 하반기에는 수익성 개선과 함께 제조 현장 중심의 비전AI 적용 범위를 확대하고 AI·로봇 사업의 사업화를 가속화해 성장 기반을 강화할 계획이라고 밝혔다. AI 버추얼 아티스트 '채윤'은 2026년 9월 공개돼 인스타그램 등을 통한 콘텐츠 활동을 시작했으며, 필리핀 SNS 쇼핑몰의 메인 모델로도 활동할 예정으로 관련 활동은 2026년 하반기 시작을 목표로 하고 있다. 회사는 브랜드 협업, 광고 콘텐츠 제작, IP 라이선싱 등을 통해 AI 콘텐츠 사업을 실제 수익모델로 연결하겠다는 구상을 밝혔으며, 버추얼 아티스트 제작 과정에서 확보한 생성형AI·시각지능 기술 경험을 제조 자동화·물류 자동화·서비스 로봇 등 산업용 AI 분야로 확장하겠다는 전략도 제시했다. 재무 측면에서는 172억원 규모의 비핵심 자산 매각 대금을 활용해 제11회차 CB(30억원)를 전액 상환하고 제8회차 CB 일부(16.5억원)를 상환하는 등 메자닌 부채를 단계적으로 축소하고 있으며, 제8회차 CB의 미상환 잔액은 43.5억원, 잠재 전환 주식 수는 약 157만주로 줄어든 상태다. 회사 측은 이러한 CB 상환이 재무 안정성 제고와 주주가치 제고를 위한 조치라고 설명했다. 아직 신사업이 매출로 본격 기여하는 시점이나 규모에 대한 구체적 가이던스는 공개되지 않은 상태로, 향후 분기 공시를 통한 확인이 필요하다.",
+  "en": "In its H1 2026 earnings announcement, the company stated that in the second half it plans to improve profitability while expanding manufacturing-focused vision AI applications and accelerating the commercialization of its AI and robot business to strengthen its growth base. AI virtual artist 'Chaeyun' was unveiled in September 2026 and began content activity via Instagram and other channels, with plans to also serve as the lead model for a Philippine social media shopping platform, targeted to begin in the second half of 2026. The company outlined plans to connect its AI content business to actual revenue models through brand collaborations, advertising content production, and IP licensing, and also laid out a strategy to expand the generative AI and vision intelligence experience gained from producing virtual artists into industrial AI fields such as manufacturing automation, logistics automation, and service robots. On the financial side, the company has been stepping down its mezzanine debt using proceeds of roughly KRW 17.2 billion from non-core asset sales, fully redeeming the 11th CB (KRW 3 billion) and partially redeeming the 8th CB (KRW 1.65 billion), leaving the 8th CB's outstanding balance at KRW 4.35 billion and potential convertible shares reduced to about 1.57 million. Management described these CB redemptions as measures to strengthen financial stability and enhance shareholder value. Specific guidance on the timing or scale of when new businesses will meaningfully contribute to revenue has not yet been disclosed, warranting confirmation through upcoming quarterly filings."
  },
  "valuation_comment": {
-  "ko": "주당순자산(BPS) 2,725원을 기준으로 하면, 현재 주가는 순자산에 소폭 프리미엄을 더한 구간에 위치한다. 4년 연속 순손실이 이어지면서 자기자본이 축소되어 BPS에도 지속적인 하방 압력이 가해지고 있다. 주당순이익(EPS)이 -1,108원으로 적자 구간에 있어 수익 배수에 근거한 비교는 현실적인 기준을 제공하지 못한다. DART 공시 기준 배당 이력이 없어 배당수익률은 없는 상태이며, 배당 측면의 매력도 부재하다. 사명 변경과 AI·로봇 전환 기대가 순자산 대비 프리미엄 형성에 일부 반영된 것으로 해석될 수 있으나, 신사업 수익 모델이 검증되기 전까지 이 프리미엄의 지속성은 실적 경과와 지배구조 안정성에 민감하게 연동될 전망이다.",
-  "en": "Based on a book value per share (BPS) of KRW 2,725, the stock trades at a modest premium to net asset value. Four consecutive years of net losses have steadily eroded equity, exerting ongoing downward pressure on BPS. With a headline EPS of –KRW 1,108, earnings-multiple comparisons lack a meaningful anchor. No dividend has been paid per DART disclosures, leaving dividend yield at zero. The premium over book value may partly reflect market expectations for the AI/robot transformation narrative; however, until the new business model generates verified revenue, the durability of that premium remains closely tied to earnings progress and governance stability."
+  "ko": "회사는 최근 수년간 대부분 순손실을 기록해 주가수익비율(PER) 산출이 어려운 구간이 많았으며, 순자산 대비 주가는 소폭 프리미엄이 형성된 구간에서 거래되고 있다. 배당은 최근 지급 이력이 없는 것으로 확인되며, 이는 실적 변동성이 큰 소형 성장기업에서 흔히 나타나는 특징이다. 다년간 실적 흐름을 보면 2022~2023년의 대규모 적자에서 2024년 영업이익 흑자 전환, 2025년 재차 소폭 적자, 그리고 2026년 2분기 순이익 흑자 전환이라는 굴곡진 경로를 거쳤다. 이러한 순이익의 변동은 본업의 구조적 개선보다는 자산 매각 등 비영업적 요인에 크게 의존하고 있어, 시장이 매기는 가치에는 기존 소재 사업의 안정성과 신규 AI·로봇 사업에 대한 기대감이 복합적으로 반영돼 있는 것으로 보인다. 신사업의 매출 기여가 가시화되는 시점과 규모가 향후 밸류에이션 논의의 핵심 변수가 될 것으로 판단된다.",
+  "en": "Because the company has posted net losses in most recent years, price-to-earnings ratio calculations have often been unavailable, and the stock has traded at a modest premium to its net asset value. No recent dividend payment history has been confirmed, a characteristic commonly seen in small-cap growth-stage companies with volatile earnings. Over multiple years, the earnings trajectory has moved through large losses in 2022-2023, an operating profit turnaround in 2024, a return to modest losses in 2025, and a net income turnaround in Q2 2026. Because these net income swings depend heavily on non-operating factors such as asset sales rather than structural improvement in the core business, the value the market assigns appears to reflect a combination of the stability of the legacy materials business and expectations surrounding the new AI and robotics venture. When and to what scale the new business begins to meaningfully contribute to revenue is likely to be a key variable in future valuation discussions."
  },
  "bull": [
   {
    "title": {
-    "ko": "한일오닉스: 국내 1위 포지션과 해외 수주 파이프라인",
-    "en": "Hanil Onyx: Domestic No. 1 Position and Overseas Order Pipeline"
+    "ko": "본업 수익 기반 유지",
+    "en": "Core Business Retains Profitability"
    },
    "body": {
-    "ko": "한일오닉스는 국내 상업용 주방설비 시장 점유율 1위로, 설계·제작·시공·유지보수를 아우르는 통합 솔루션 경쟁력을 보유한다. 현재 약 90억원 규모의 베트남 신라모노그램 하노이 프로젝트를 수행하며 고급 호텔 시장으로 해외 사업을 확대하고 있다. 수주-시공 기반의 안정적인 매출 구조와 국내외 프로젝트 파이프라인이 하반기 실적을 지지하는 요인이 될 수 있다.",
-    "en": "Hanil Onyx is the No. 1 domestic commercial kitchen-equipment player with integrated design-build-install-service capabilities. It is currently executing an ~KRW 9 billion kitchen project for the Shilla Monogram Hanoi (October 2026 opening), broadening its reach into premium overseas hospitality. A project-order-driven revenue base and an active international pipeline could provide meaningful 2H support."
+    "ko": "별도(개별) 기준 사업은 2026년 상반기에도 영업이익 흑자를 기록한 것으로 알려져, ESD 소재 사업 자체의 수익 창출력은 유지되고 있다. 이는 신사업 투자에 필요한 최소한의 현금 흐름을 뒷받침하는 기반이 될 수 있다. 다만 연결 기준 영업손익은 여전히 변동성이 크다.",
+    "en": "The standalone business reportedly maintained an operating profit through H1 2026, indicating the ESD materials operation retains its earnings power. This can serve as a base cash flow to support investment in new ventures. However, consolidated operating results remain volatile."
    }
   },
   {
    "title": {
-    "ko": "캔버스엔 엑시트 현금 유입과 유동성 완충",
-    "en": "Canvas-N Exit Proceeds Bolster Near-Term Liquidity"
+    "ko": "신사업 파트너십 확보",
+    "en": "New Business Partnerships Secured"
    },
    "body": {
-    "ko": "나노캠텍은 디비투자조합 출자지분 전량을 172억원에 양도하며 투자 원금 이상의 현금을 회수했다. 이 유입 자금은 부채비율 개선, 운전자본 안정화, CB 상환 재원으로 활용될 수 있다. 2025년 영업 현금흐름이 플러스(+19.9억원)를 유지한 점도 단기 유동성 측면의 완충 역할을 한다.",
-    "en": "Nanocamtech recouped KRW 17.2 billion from the full divestiture of the DB Investment Cooperative stake, recovering more than the original outlay. These proceeds can reduce the debt ratio, stabilize working capital, and refinance convertible bonds. The fact that operating cash flow remained positive at KRW 2.0 bn in 2025 provides an additional near-term liquidity cushion."
+    "ko": "원터치에이아이 인수를 통해 컴퓨터비전·생성형AI 기술 역량을 확보하고, 아마존웹서비스와의 협업 및 영국 버밍엄대학교와의 공동연구 협약을 체결했다. 이러한 외부 파트너십은 기술 검증과 신뢰도 확보에 도움이 될 수 있다. 다만 협약 체결과 실제 매출 창출 사이에는 시차가 존재한다.",
+    "en": "Through the Onetouch AI acquisition, the company secured computer vision and generative AI capabilities, and signed a collaboration with Amazon Web Services and a joint research agreement with the University of Birmingham. Such external partnerships can help with technology validation and credibility. However, a time lag typically exists between signing agreements and generating actual revenue."
    }
   },
   {
    "title": {
-    "ko": "하반기 계절성 회복과 도전성 소재 수요 개선 시 영업 개선 기대",
-    "en": "2H Seasonal Recovery and Potential Conductive-Materials Demand Rebound"
+    "ko": "재무구조 조정 진행",
+    "en": "Balance Sheet Adjustment Underway"
    },
    "body": {
-    "ko": "2025년 하반기처럼 Q3·Q4에 매출과 영업이익이 집중되는 패턴이 반복된다면, 2026년 하반기에도 유사한 영업 개선이 기대된다. 중국 법인 정리로 비효율 비용 일부가 제거된 가운데, OLED 확산에 따른 도전성 소재 수요가 점진 회복된다면 연간 손익 구조 개선의 계기가 될 수 있다.",
-    "en": "If the 2H seasonal pattern of 2025 — concentrated revenue in Q3/Q4 with positive operating profit — repeats in 2026, a structural second-half earnings improvement is plausible. The wind-down of China subsidiary cost drag, combined with gradual recovery in conductive-materials demand alongside OLED market expansion, could provide the catalyst for an improved full-year loss profile."
+    "ko": "비핵심 자산 매각으로 확보한 172억원의 현금을 활용해 CB를 순차적으로 상환하며 잠재 전환 물량을 줄이고 있다. 제11회차 CB는 전액 소멸됐고 제8회차 CB의 잔액과 전환 가능 주식 수도 줄어든 상태다. 이는 향후 지분 희석 부담을 일부 완화하는 요인이 될 수 있다.",
+    "en": "Using KRW 17.2 billion in cash from non-core asset sales, the company has been sequentially redeeming convertible bonds, reducing potential conversion volume. The 11th CB has been fully extinguished, and the 8th CB's remaining balance and convertible share count have both been reduced. This may partly ease future dilution pressure."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4년 연속 적자와 자기자본·부채비율 동반 악화",
-    "en": "Four-Year Loss Streak: Equity Erosion and Surging Leverage"
+    "ko": "기존 사업 성장 정체",
+    "en": "Legacy Business Growth Stagnation"
    },
    "body": {
-    "ko": "2022~2025년 4년 연속 지배주주 귀속 순손실로 자기자본(지배주주 기준)이 2023년 말 약 319억원에서 2025년 말 약 202억원으로 크게 줄었다. 부채비율은 2022년 67.6%, 2023년 71.6%에서 2024년 155.3%, 2025년 241.6%로 급등했다. 반복적인 CB 발행에 따른 이자비용과 잠재적 희석은 재무 건전성 회복을 구조적으로 가로막는 요인이다.",
-    "en": "Four consecutive years of attributable net losses have shrunk controlling-interest equity from approximately KRW 31.9 billion (end-2023) to approximately KRW 20.2 billion (end-2025). The debt ratio surged from 67.6% in 2022 and 71.6% in 2023 to 155.3% in 2024 and 241.6% in 2025. Recurring convertible-bond issuances add structural interest burden and dilution risk, creating an obstacle to financial recovery."
+    "ko": "연결 매출은 2022년 501.6억원에서 2025년 501.1억원으로 3년 전과 비슷한 수준에 머물러 있으며, 이 사이 영업이익률은 -4.9%에서 -0.5% 사이를 오갔다. 소재 사업 자체의 구조적 외형 성장을 보여주는 지표는 아직 뚜렷하지 않다. 신사업으로의 전환이 필요했던 배경이기도 하다.",
+    "en": "Consolidated revenue stood at KRW 50.16 billion in 2022 versus KRW 50.11 billion in 2025, essentially flat over the period, while the operating margin ranged between -4.9% and -0.5% during that time. There is not yet clear evidence of structural top-line growth in the materials business itself. This has also been part of the backdrop for the pivot toward new businesses."
    }
   },
   {
    "title": {
-    "ko": "최대주주 담보 만기와 반복되는 지배구조 불안",
-    "en": "Controlling-Shareholder Pledge Maturity and Recurring Governance Instability"
+    "ko": "신사업 초기 단계",
+    "en": "New Business at an Early Stage"
    },
    "body": {
-    "ko": "최대주주 엘에스케이디비유한회사가 보유 지분의 상당 부분을 담보로 제공했으며, 2026년 6월 27일 만기가 도래한다. 담보권이 실행될 경우 최대주주 지분율이 22.73%에서 6.01%까지 하락할 수 있어 경영권 공백이 발생할 가능성이 있다. 2019년 이후 수차례 반복된 최대주주 변경 이력은 장기 전략 실행에 대한 시장 신뢰를 제약하는 배경으로 남는다.",
-    "en": "The controlling shareholder (LSK DB Ltd.) has pledged a significant portion of its stake to a financial institution, with the pledge maturing June 27, 2026. Execution could reduce the controlling interest from 22.73% to as low as 6.01%, potentially triggering a governance vacuum. Multiple controlling-shareholder changes since 2019 continue to limit market confidence in long-term strategic continuity."
+    "ko": "AI 버추얼 아티스트 '체리나'와 '채윤'은 각각 콘텐츠 사업화의 첫 시도 단계에 있으며, 구체적인 매출 기여는 아직 공시되지 않았다. 산업용 AI 솔루션으로의 확장도 계획 단계에 머물러 있다. 상용화 속도와 규모에 대한 불확실성이 남아 있다.",
+    "en": "AI virtual artists 'Cherina' and 'Chaeyun' are each at an early stage of content commercialization, and specific revenue contributions have not yet been disclosed. Expansion into industrial AI solutions also remains at the planning stage. Uncertainty remains regarding the pace and scale of commercialization."
    }
   },
   {
    "title": {
-    "ko": "AI·로봇 신사업의 수익 모델 미검증과 잦은 사업 전환 리스크",
-    "en": "Unverified AI/Robot Revenue Model and Repeated Business-Pivot Risk"
+    "ko": "순이익의 비영업적 의존",
+    "en": "Net Income Reliant on Non-Operating Items"
    },
    "body": {
-    "ko": "원터치에이아이는 2024년 4월 설립된 자본금 1,000만원 규모의 신생 기업으로 현재까지 유의미한 매출 실적이 없다. 기존 도전성 소재·주방기기와 AI·로봇 간 사업 시너지도 불명확하다. 2019년 이후 여행업, 주방기기, 상장사 투자, AI·로봇 등 잦은 포트폴리오 전환은 사업 일관성 결여라는 우려를 낳으며, 신사업 성과 검증 전까지 기업 가치 재평가의 근거가 제한적이다.",
-    "en": "Onetouch AI — incorporated April 2024 with nominal capital — has no confirmed material revenue. Synergies between legacy conductive-materials and kitchen-equipment operations and the AI/robot pivot remain undefined. A pattern of repeated portfolio pivots since 2019 (travel, kitchen equipment, listed-company investment, AI/robot) raises strategic consistency concerns, limiting the basis for a valuation re-rating until new-business results are verified."
+    "ko": "2025년 4분기 대규모 순손실(-54.8억원)과 2026년 2분기 순이익 흑자 전환(+34.7억원)은 모두 영업손익과는 방향이 다른 비영업적 요인의 영향을 크게 받은 것으로 해석된다. 이 때문에 최근 순이익 개선을 본업의 구조적 회복으로 단정하기는 어렵다. 부채비율도 2025년 241.6%로 높아진 상태다.",
+    "en": "The large Q4 2025 net loss (-KRW 5.48 billion) and the Q2 2026 net income turnaround (+KRW 3.47 billion) both appear to have been heavily influenced by non-operating factors that moved in a different direction from operating results. This makes it difficult to conclude that recent net income improvement reflects a structural recovery in the core business. The debt ratio also rose to 241.6% in 2025."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무 리스크: 차입금·CB 오버행과 이자 부담",
-    "en": "Financial Risk: Leverage, CB Overhang, and Interest Burden"
+    "ko": "사업전환 실행 리스크",
+    "en": "Business Transition Execution Risk"
    },
    "body": {
-    "ko": "부채비율 241.6%는 코스닥 화학·소재 동종 기업 평균을 크게 상회하며, 차입 의존도 확대에 따른 상환 압박이 가중될 수 있다. 전환사채(CB) 발행 잔액에 따른 주식 희석 가능성과 전환가 조정(리픽싱) 리스크는 기존 주주 가치를 희석할 수 있다. 영업 현금흐름 규모가 충분하지 않아 자체 재원으로 재무구조를 빠르게 개선하기 어렵다.",
-    "en": "A debt ratio of 241.6% substantially exceeds the average for KOSDAQ materials/chemicals peers, and mounting repayment pressures could tighten liquidity. Outstanding convertible bonds carry dilution risk, and potential refixing of conversion prices may erode per-share value. Operating cash flow at current levels is insufficient to materially accelerate deleveraging through internal resources alone."
+    "ko": "소재 기업에서 AI·로봇 기업으로의 전환은 짧은 기간 내 이뤄졌으며, 원터치에이아이와의 기술·조직 통합, 인력 확보, 실제 산업 현장 적용까지의 실행력이 관건이다. 원터치에이아이 대표가 대학교수를 겸직하고 있다는 점도 핵심 인력 의존도 측면에서 주시할 부분이다. 계획과 실행 사이의 간극이 발생할 가능성을 배제할 수 없다.",
+    "en": "The transition from a materials company to an AI and robotics company has occurred within a short period, and execution—covering technology and organizational integration with Onetouch AI, talent acquisition, and actual industrial deployment—remains the key challenge. The fact that Onetouch AI's CEO also holds a concurrent university faculty position is worth monitoring in terms of key-person dependency. A gap between plans and execution cannot be ruled out."
    }
   },
   {
    "cat": {
-    "ko": "거버넌스 리스크: 최대주주 담보 실행 가능성",
-    "en": "Governance Risk: Potential Execution of Controlling-Shareholder Pledge"
+    "ko": "재무·희석 리스크",
+    "en": "Financial and Dilution Risk"
    },
    "body": {
-    "ko": "2026년 6월 27일 만기 담보가 실행될 경우 최대주주 지분율이 급감해 경영권 공백이 발생할 수 있다. 경영권 불안정 시 전략 실행 차질, 핵심 인력 이탈, 거래처 신뢰 훼손 등 연쇄적 2차 리스크가 발생할 수 있다. DART 공시를 통한 지속적인 모니터링이 필수적이다.",
-    "en": "If the pledge maturing June 27, 2026 is executed, the controlling stake could drop sharply, creating a governance vacuum. Secondary risks — including strategic disruption, key-person attrition, and erosion of counterparty trust — could follow in sequence. Continuous monitoring through DART public filings is essential."
+    "ko": "부채비율이 2025년 241.6%로 높아진 가운데, 제8회차 CB의 미상환 잔액 43.5억원과 약 157만주 규모의 잠재 전환 물량이 남아 있다. 자산 매각을 통한 현금 확보와 CB 상환으로 완화되고 있지만, 추가적인 자금 조달이 필요해질 경우 지분 희석 우려가 재부각될 수 있다.",
+    "en": "With the debt ratio having risen to 241.6% in 2025, the 8th CB still carries an outstanding balance of KRW 4.35 billion and roughly 1.57 million shares of potential conversion volume. While cash from asset sales and CB redemptions have eased this somewhat, dilution concerns could resurface if further financing becomes necessary."
    }
   },
   {
    "cat": {
-    "ko": "사업 리스크: 고객 집중·원재료 가격 변동",
-    "en": "Business Risk: Customer Concentration and Raw-Material Price Volatility"
+    "ko": "지배구조·공시 이력 리스크",
+    "en": "Governance and Disclosure History Risk"
    },
    "body": {
-    "ko": "도전성 소재 사업은 일부 대형 전자 고객사 의존도가 높아 해당 고객의 구매 패턴 변화·재고 조정에 민감하게 노출된다. 회사는 2025년 실적 부진 요인으로 원재료 가격 상승에 따른 손익구조 변동을 명시했으며, 은 등 귀금속과 특수 화학품의 가격 변동은 지속적인 마진 리스크 요인이다.",
-    "en": "The conductive-materials business is concentrated in a small number of major electronics customers, exposing it to procurement shifts and inventory adjustments. The company cited raw-material price increases as a key 2025 earnings headwind; silver, other precious metals, and specialty chemicals represent ongoing margin-risk factors largely outside management's control."
+    "ko": "과거 2021년 경영진의 회계처리 위반으로 거래가 정지된 이력이 있으며, 2025년 2월에는 종가 급변에 따른 투자주의 종목으로 지정된 바 있다. 사명 변경과 사업 재편이 빈번한 소형주 특유의 이슈로, 공시 신뢰성과 내부통제에 대한 지속적인 확인이 필요하다.",
+    "en": "The company has a history of a trading halt in 2021 due to management's accounting violations, and was designated as an investment-caution stock in February 2025 following a sharp closing-price swing. Frequent name changes and business realignments are issues characteristic of small-cap stocks, requiring ongoing verification of disclosure reliability and internal controls."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 6월 27일 (1주일 이내)",
-    "en": "June 27, 2026 (Within 1 Week)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "최대주주 엘에스케이디비유한회사의 주식 담보 만기일. 담보권 실행 여부 및 최대주주 지분 변동 관련 공시를 DART에서 즉시 확인해야 하며, 경영권 변동 여부가 향후 전략 실행의 연속성을 좌우하는 핵심 관전 포인트다.",
-    "en": "Maturity date of the controlling shareholder's share pledge. Monitor DART immediately for any pledge-execution disclosure or change-of-control filing; the outcome directly determines the continuity of current strategic execution."
+    "ko": "3분기보고서 공시를 통해 별도 기준 소재 사업의 흑자 지속 여부와 AI·로봇 신사업의 매출 반영 여부를 확인해야 한다.",
+    "en": "Check the Q3 report filing to confirm whether the standalone materials business continues to be profitable and whether the new AI and robotics business begins to register revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 하반기 중",
+    "en": "During H2 2026"
    },
    "what": {
-    "ko": "2026년 2분기(Q2) 분기보고서 제출 예정. 상반기 영업손실 규모, 도전성 소재 수주 회복 여부, 한일오닉스 매출 추이가 2026년 하반기 전망 수정의 핵심 근거가 된다.",
-    "en": "Q2 2026 quarterly report due. The magnitude of 1H operating losses, evidence of conductive-materials order recovery, and Hanil Onyx revenue trends will be the key inputs for reassessing the 2H 2026 earnings outlook."
+    "ko": "AI 버추얼 아티스트 채윤의 필리핀 SNS 쇼핑몰 모델 활동 개시 여부와 브랜드 협업·광고 등 수익모델의 구체화 정도를 확인해야 한다.",
+    "en": "Watch for whether AI virtual artist Chaeyun's Philippine social media shopping platform modeling activity begins as planned, and how concretely brand collaboration and advertising revenue models take shape."
    }
   },
   {
    "when": {
-    "ko": "2026년 10월 (베트남 프로젝트 오픈)",
-    "en": "October 2026 (Vietnam Project Opening)"
+    "ko": "추가 공시 시점",
+    "en": "Upon Future Disclosures"
    },
    "what": {
-    "ko": "베트남 신라모노그램 하노이 오픈(약 90억원 규모 주방기기 프로젝트 납품). 한일오닉스의 수익 인식 시점과 규모가 Q3~Q4 실적에 어떻게 반영되는지 확인해 해외 성장성 검증의 첫 기준점으로 삼아야 한다.",
-    "en": "Shilla Monogram Hanoi opening (~KRW 9 billion kitchen project delivery). Verify when and how Hanil Onyx recognizes revenue in Q3–Q4 results to assess whether the overseas pipeline validates the international growth strategy."
+    "ko": "제8회차 CB 잔액(43.5억원)의 추가 상환 또는 전환 여부를 공시를 통해 확인해 잠재 희석 물량 변화를 점검해야 한다.",
+    "en": "Monitor future disclosures for further redemption or conversion of the remaining 8th CB balance (KRW 4.35 billion) to track changes in potential dilution volume."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (임시주총 이후)",
-    "en": "2H 2026 (Post-EGM)"
+    "ko": "추가 공시 시점",
+    "en": "Upon Future Disclosures"
    },
    "what": {
-    "ko": "사명 'LSK아이로봇' 변경 의결 결과 확인. 원터치에이아이의 매출 발생 여부와 수익 모델 공개 내용이 AI·로봇 신사업의 실질적 이익 기반 여부를 판단하는 첫 번째 검증 포인트가 된다.",
-    "en": "Confirm the name change to 'LSK Irobot' and EGM outcome. Whether Onetouch AI begins generating revenue and discloses a concrete business model will be the first concrete test of whether the AI/robot pivot has real earnings substance."
-   }
-  },
-  {
-   "when": {
-    "ko": "상시 모니터링",
-    "en": "Ongoing Monitoring"
-   },
-   "what": {
-    "ko": "CB 만기·조기상환 일정 및 신규 CB 발행 공시. 전환가 조정(리픽싱) 현황이 주식 희석 규모를 결정하는 핵심 변수이므로, DART 공시를 통한 CB 잔액 및 전환조건 변화의 지속 추적이 필요하다.",
-    "en": "CB maturity, early-redemption schedules, and any new CB issuances. Refixing of conversion prices is a critical dilution determinant that warrants continuous monitoring through DART public filings."
+    "ko": "아마존웹서비스와의 협업 및 영국 버밍엄대학교와의 공동연구가 시제품·특허·상용화 계약 등 구체적 결과물로 이어지는지 확인해야 한다.",
+    "en": "Confirm whether the Amazon Web Services collaboration and University of Birmingham joint research progress into concrete outcomes such as prototypes, patents, or commercialization contracts."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "나노캠텍은 도전성 소재와 한일오닉스 주방기기를 두 축으로 하는 사업 구조를 구축했으나, 4년 연속 순손실과 급등한 부채비율이 재무 건전성 회복을 최우선 과제로 부각시킨다. 한일오닉스의 국내 1위 지위와 베트남 프로젝트 수익 인식 기대, 캔버스엔 엑시트 현금 유입은 단기 사업 기반과 유동성 측면에서 긍정적 요소다. 반면 2026년 6월 27일 최대주주 담보 만기, CB 오버행, 원터치에이아이의 수익화 불확실성은 중단기 리스크를 높이는 요인이다. 계절적으로 2026년 하반기에 실적이 개선될 가능성이 있으나, 도전성 소재 수주 회복과 원재료 비용 안정이 동반되어야 한다. 사업 전환과 지배구조 변화가 빠르게 진행 중인 만큼, 분기 실적 공시·담보 관련 지배구조 공시·신사업 매출화 진행 여부를 병행 모니터링하는 것이 적절하다. 이 보고서는 투자 권유를 목적으로 하지 않으며 공개 정보에 기반한 사실 정리입니다.",
-   "en": "Nanocamtech's core revenue rests on conductive materials and Hanil Onyx's kitchen-equipment operations, but four consecutive years of net losses and a sharply higher debt ratio make financial recovery the overriding priority. Hanil Onyx's domestic No. 1 position, anticipated Hanoi project revenue recognition, and Canvas-N exit proceeds are near-term positives. Against these, the controlling-shareholder pledge maturing June 27, 2026, convertible-bond dilution risk, and the unvalidated Onetouch AI business model elevate near-to-medium-term uncertainty. A seasonal second-half earnings improvement in 2026 is plausible but requires supportive order trends and raw-material cost stability. Given the pace of corporate restructuring and governance change, investors should simultaneously track quarterly earnings releases, pledge-related governance filings, and new-business revenue milestones. This report is for informational purposes only and does not constitute an investment recommendation."
+   "ko": "LSK아이로봇(구 나노캠텍)은 정전기 방지(ESD) 소재 사업을 본업으로 유지하면서, 원터치에이아이 인수와 사명 변경을 계기로 AI·로봇 비전 사업으로의 전환을 추진하고 있다. 연간 실적은 2022~2023년 대규모 적자에서 2024년 영업이익 흑자, 2025년 재차 소폭 적자로 등락을 거듭했고, 최근 분기별로는 영업손익과 순손익 간 괴리가 두드러지는데 이는 비핵심 자산 매각 등 비영업적 요인의 영향이 크기 때문이다. 회사는 확보한 현금으로 CB를 순차 상환해 재무구조를 조정하는 동시에, AI 버추얼 아티스트 사업을 시작점으로 산업용 AI 솔루션 확장을 계획하고 있다. 다만 신사업은 아직 매출 기여 규모나 시점이 구체화되지 않은 초기 단계이며, 기존 소재 사업의 외형 성장도 뚜렷하지 않다. 부채비율 상승과 과거 거래정지·투자주의 지정 이력 등은 함께 살펴야 할 요소다. 향후 분기 공시를 통해 본업의 수익 지속성과 신사업의 실제 매출 반영 여부를 확인하는 것이 핵심 관찰 포인트가 될 것으로 판단된다.",
+   "en": "LSK iRobot (formerly Nanocamtec) continues to operate its core electrostatic discharge (ESD) materials business while pursuing a pivot toward AI and robot vision, marked by the Onetouch AI acquisition and corporate renaming. Annual results have fluctuated from large losses in 2022-2023 to an operating profit in 2024 and back to modest losses in 2025, and recent quarters show a notable divergence between operating and net results, largely due to non-operating factors such as non-core asset sales. The company has been adjusting its balance sheet by sequentially redeeming convertible bonds with cash raised from these disposals, while planning to expand into industrial AI solutions starting with its AI virtual artist business. However, the new business remains at an early stage with no clear guidance yet on the scale or timing of revenue contribution, and the legacy materials business has not shown clear top-line growth either. Rising debt ratios and a history of past trading halts and investment-caution designations are factors that warrant continued attention. Confirming the sustainability of core business profitability and the actual revenue impact of new ventures through upcoming quarterly disclosures will be the key points to watch going forward."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A091970",
-  "https://m.irgo.co.kr/IR-COMP/091970/%EB%82%98%EB%85%B8%EC%BA%A0%ED%85%8D-IR-PAGE",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=641677",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A091970&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "https://markets.hankyung.com/stock/091970",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A091970&MenuYn=Y&NewMenuID=102&stkGb=701",
-  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=091970",
+  "https://clever-insight.vip/stock/091970/report/",
+  "https://dartpoint.ai/00542074",
+  "https://markets.hankyung.com/stock/091970/financial-summary",
   "https://m.thinkpool.com/item/091970",
-  "https://www.kokstock.com/stock/item.asp?item_cd=091970&reload=1",
-  "https://www.komachine.com/ko/companies/nanochemtech",
-  "https://m.comp.fnguide.com/m2/company_01.asp?MenuYn=Y&amp=&amp=&amp=&amp=&amp=&amp=&amp=&cID=AA&color_type=W&foot=Y&gicode=A264660&menu_type=1&pGB=1&use_icon=111",
-  "https://www.jobkorea.co.kr/Company/1702788",
-  "https://www.nnfc.re.kr/prog/edu/kor/sub01_03_04/list.do",
-  "https://www.nnfc.re.kr/bbs/BBSMSTR_000000000001/list.do",
-  "https://m.irgo.co.kr/IR-COMP/091970/%EB%82%98%EB%85%B8%EC%BA%A0%ED%85%8D-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/SHhESE9FY3ZJc3JOS1g3dFFWa2pGUT09/company_nm/%EB%82%98%EB%85%B8%EC%BA%A0%ED%85%8D(%EC%A3%BC)",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=searchInitInfo&acptNo=20211116000468",
-  "https://www.nanosbiz.com/"
+  "https://www.stockplus.com/m/stocks/KOREA-A091970",
+  "https://view.asiae.co.kr/article/2026090208482411848",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20231114001419&docno=&viewerhost=",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250515001761&docno=&viewerhost=",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=8yiZfGFMueg3e2k7",
+  "https://www.mt.co.kr/stock/2026/07/08/2026070808342882038",
+  "https://www.newspim.com/news/view/20260814001121",
+  "https://www.mt.co.kr/stock/2026/06/23/2026062308425377503",
+  "https://m.thinkpool.com/compDiscuss/cont/1026805",
+  "https://view.asiae.co.kr/article/2026060208420655996",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03578486645514520",
+  "http://www.s-d.kr/news/articleView.html?idxno=80181",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03050406645544368",
+  "https://www.newspim.com/news/view/20260714000895"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "091970",
- "name": "나노캠텍",
- "name_en": "Nano Chem Tech, Inc.",
+ "name": "LSK아이로봇",
+ "name_en": "LSKAIROBOT CO.,LTD",
  "sector": "화학",
  "categories": [
-  "화학"
+  "화학",
+  "로봇"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 05:28",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 09:12",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +329,14 @@
    }
   ],
   "valuation": {
-   "price": 3985,
+   "price": 3980,
    "mcap": 0.03,
    "shares": 7534780,
    "total_shares": 7534780,
    "wavg_shares": null,
    "per": null,
    "eps": -450,
-   "pbr": 1.3239,
+   "pbr": 1.3223,
    "bps": 3010,
    "roe_ttm": -14.2,
    "ttm_window": "2025Q3~2026Q2",
