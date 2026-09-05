@@ -331,3 +331,409 @@
   CIS  당기=1459816751  누적=11432400731  | 순확정급여부채의재측정요소 | ifrs-full_OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans
   CIS  당기=3714827  누적=-5442575  | 관계기업순확정급여부채의재측정요소중지분해당액 | ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossBeforeTax
   CIS  당기=310340545665  누적=362591284354  | 분기순이익 | ifrs-full_ProfitLoss
+  >>> 최종 선택 11011(CFS): np=-719360650768/None  np_owner=-734388238284/None  np_nci=15027587516/None  eps_basic=없음  
+      재무상태표 선택: assets=6740499643049  liab=4714765214368  equity=2025734428681  equity_owner=832066725740  equity_nci=1193667702941  
+      BS 행 | 자산총계 | id=ifrs-full_Assets | 당기=6740499643049
+      BS 행 | 자본총계 | id=ifrs-full_Equity | 당기=2025734428681
+      BS 행 | 지배기업의소유주에게귀속되는자본 | id=ifrs-full_EquityAttributableToOwnersOfParent | 당기=832066725740
+      BS 행 | 기타자본구성요소 | id=dart_OtherComprehensiveIncomeLossAccumulatedAmount | 당기=375754595245
+      BS 행 | 기타불입자본 | id=-표준계정코드 미사용- | 당기=317524151645
+      BS 행 | 자본금 | id=ifrs-full_IssuedCapital | 당기=189341490000
+      BS 행 | 비지배지분 | id=ifrs-full_NoncontrollingInterests | 당기=1193667702941
+      BS 행 | 부채및자본총계 | id=ifrs-full_EquityAndLiabilities | 당기=6740499643049
+      BS 행 | 부채총계 | id=ifrs-full_Liabilities | 당기=4714765214368
+
+### 011790 11011/CFS
+  CIS  당기=-305025449873  누적=None  | 영업손실 | dart_OperatingIncomeLoss
+  CIS  당기=15588627224  누적=None  | 기타영업외수익 | dart_OtherGains
+  CIS  당기=396035902658  누적=None  | 기타영업외비용 | dart_OtherLosses
+  CIS  당기=285927499091  누적=None  | 판매비와관리비 | dart_TotalSellingGeneralAdministrativeExpenses
+  CIS  당기=-627285076895  누적=None  | 총포괄이익(손실) | ifrs-full_ComprehensiveIncome
+  CIS  당기=26636311637  누적=None  | 비지배지분 | ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests
+  CIS  당기=-653921388532  누적=None  | 지배기업소유주에게귀속되는지분 | ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent
+  CIS  당기=1859134392604  누적=None  | 매출원가 | ifrs-full_CostOfSales
+  CIS  당기=-25549  누적=None  | 계속영업기본주당이익(손실) | ifrs-full_BasicEarningsLossPerShareFromContinuingOperations
+  CIS  당기=3993  누적=None  | 중단영업기본주당이익(손실) | ifrs-full_BasicEarningsLossPerShareFromDiscontinuedOperations
+  CIS  당기=-25549  누적=None  | 계속영업희석주당이익(손실) | ifrs-full_DilutedEarningsLossPerShareFromContinuingOperations
+  CIS  당기=3993  누적=None  | 중단영업희석주당이익(손실) | ifrs-full_DilutedEarningsLossPerShareFromDiscontinuedOperations
+  CIS  당기=267479296431  누적=None  | 금융비용 | ifrs-full_FinanceCosts
+  CIS  당기=87165530375  누적=None  | 금융수익 | ifrs-full_FinanceIncome
+  CIS  당기=-19097950782  누적=None  | 매출총손실 | ifrs-full_GrossProfit
+  CIS  당기=-43614454832  누적=None  | 법인세수익 | ifrs-full_IncomeTaxExpenseContinuingOperations
+  CIS  당기=92075573873  누적=None  | 기타포괄손익 | ifrs-full_OtherComprehensiveIncome
+  CIS  당기=93287069042  누적=None  | 후속적으로당기손익으로재분류되는항목 | ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=0  누적=None  | 파생금융상품평가손익 | ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax
+  CIS  당기=91032883864  누적=None  | 해외사업환산이익(손실) | ifrs-full_GainsLossesOnHedgesOfNetInvestmentsInForeignOperationsNetOfTax
+  CIS  당기=2254185178  누적=None  | 지분법자본변동 | ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=-1211495169  누적=None  | 후속적으로당기손익으로재분류되지않는항목 | ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=-638170479  누적=None  | 기타포괄손익-공정가치측정금융자산평가손익 | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments
+  CIS  당기=-573324690  누적=None  | 확정급여제도의재측정요소 | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans
+  CIS  당기=-719360650768  누적=None  | 당기순손실 | ifrs-full_ProfitLoss
+  CIS  당기=15027587516  누적=None  | 비지배지분 | ifrs-full_ProfitLossAttributableToNoncontrollingInterests
+  CIS  당기=-734388238284  누적=None  | 지배기업소유주에게귀속되는지분 | ifrs-full_ProfitLossAttributableToOwnersOfParent
+  CIS  당기=-898994906850  누적=None  | 법인세비용차감전순손실 | ifrs-full_ProfitLossBeforeTax
+  CIS  당기=-855380452018  누적=None  | 계속사업당기순손실 | ifrs-full_ProfitLossFromContinuingOperations
+  CIS  당기=136019801250  누적=None  | 세후중단영업이익 | ifrs-full_ProfitLossFromDiscontinuedOperations
+  CIS  당기=1840036441822  누적=None  | 매출액 | ifrs-full_Revenue
+  CIS  당기=-33208415487  누적=None  | 지분법손익 | ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod
+  >>> 최종 선택 11011(CFS): np=-455055541599/None  np_owner=-443482911248/None  np_nci=-11572630351/None  eps_basic=없음  
+      재무상태표 선택: assets=6748678536179  liab=4455945828201  equity=2292732707978  equity_owner=1172309309435  equity_nci=1120423398543  
+      BS 행 | 자산총계 | id=ifrs-full_Assets | 당기=6748678536179
+      BS 행 | 자본총계 | id=ifrs-full_Equity | 당기=2292732707978
+      BS 행 | 지배기업의소유주에게귀속되는자본 | id=ifrs-full_EquityAttributableToOwnersOfParent | 당기=1172309309435
+      BS 행 | 기타자본구성요소 | id=dart_OtherComprehensiveIncomeLossAccumulatedAmount | 당기=293361806696
+      BS 행 | 기타불입자본 | id=-표준계정코드 미사용- | 당기=3749041068
+      BS 행 | 자본금 | id=ifrs-full_IssuedCapital | 당기=189341490000
+      BS 행 | 비지배지분 | id=ifrs-full_NoncontrollingInterests | 당기=1120423398543
+      BS 행 | 부채및자본총계 | id=ifrs-full_EquityAndLiabilities | 당기=6748678536179
+      BS 행 | 부채총계 | id=ifrs-full_Liabilities | 당기=4455945828201
+
+### 011790 11011/CFS
+  CIS  당기=-276832854584  누적=None  | 영업손실 | dart_OperatingIncomeLoss
+  CIS  당기=15205556472  누적=None  | 기타영업외수익 | dart_OtherGains
+  CIS  당기=117051281608  누적=None  | 기타영업외비용 | dart_OtherLosses
+  CIS  당기=251898974499  누적=None  | 판매비와관리비 | dart_TotalSellingGeneralAdministrativeExpenses
+  CIS  당기=-231490879179  누적=None  | 총포괄이익(손실) | ifrs-full_ComprehensiveIncome
+  CIS  당기=5153232951  누적=None  | 비지배지분 | ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests
+  CIS  당기=-236644112130  누적=None  | 지배기업소유주에게귀속되는지분 | ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent
+  CIS  당기=1746498225689  누적=None  | 매출원가 | ifrs-full_CostOfSales
+  CIS  당기=-16663  누적=None  | 계속영업기본주당이익(손실) | ifrs-full_BasicEarningsLossPerShareFromContinuingOperations
+  CIS  당기=3630  누적=None  | 중단영업기본주당이익(손실) | ifrs-full_BasicEarningsLossPerShareFromDiscontinuedOperations
+  CIS  당기=-16663  누적=None  | 계속영업희석주당이익(손실) | ifrs-full_DilutedEarningsLossPerShareFromContinuingOperations
+  CIS  당기=3630  누적=None  | 중단영업희석주당이익(손실) | ifrs-full_DilutedEarningsLossPerShareFromDiscontinuedOperations
+  CIS  당기=356058003012  누적=None  | 금융비용 | ifrs-full_FinanceCosts
+  CIS  당기=86945108563  누적=None  | 금융수익 | ifrs-full_FinanceIncome
+  CIS  당기=-24933880085  누적=None  | 매출총이익(손실) | ifrs-full_GrossProfit
+  CIS  당기=-83756258323  누적=None  | 법인세수익 | ifrs-full_IncomeTaxExpenseContinuingOperations
+  CIS  당기=223564662420  누적=None  | 기타포괄손익 | ifrs-full_OtherComprehensiveIncome
+  CIS  당기=229509778494  누적=None  | 후속적으로당기손익으로재분류되는항목 | ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=-1139900043  누적=None  | 파생금융상품평가손익 | ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax
+  CIS  당기=218733832237  누적=None  | 해외사업환산이익(손실) | ifrs-full_GainsLossesOnHedgesOfNetInvestmentsInForeignOperationsNetOfTax
+  CIS  당기=11915846300  누적=None  | 지분법자본변동 | ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=-5945116074  누적=None  | 후속적으로당기손익으로재분류되지않는항목 | ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=1820503396  누적=None  | 기타포괄손익-공정가치측정금융자산평가손익 | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments
+  CIS  당기=-7765619470  누적=None  | 확정급여제도의재측정요소 | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans
+  CIS  당기=-455055541599  누적=None  | 당기순손실 | ifrs-full_ProfitLoss
+  CIS  당기=-11572630351  누적=None  | 비지배지분 | ifrs-full_ProfitLossAttributableToNoncontrollingInterests
+  CIS  당기=-443482911248  누적=None  | 지배기업소유주에게귀속되는지분 | ifrs-full_ProfitLossAttributableToOwnersOfParent
+  CIS  당기=-661977166265  누적=None  | 법인세비용차감전순손실 | ifrs-full_ProfitLossBeforeTax
+  CIS  당기=-578220907942  누적=None  | 계속사업당기순이익(손실) | ifrs-full_ProfitLossFromContinuingOperations
+  CIS  당기=123165366343  누적=None  | 세후중단영업이익(손실) | ifrs-full_ProfitLossFromDiscontinuedOperations
+  CIS  당기=1721564345604  누적=None  | 매출액 | ifrs-full_Revenue
+  CIS  당기=-14185692096  누적=None  | 지분법손익 | ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod
+  >>> 최종 선택 11011(CFS): np=-326360017026/None  np_owner=-275533847969/None  np_nci=-50826169057/None  eps_basic=없음  
+      재무상태표 선택: assets=7032322131682  liab=4507897882742  equity=2524424248940  equity_owner=1410660511084  equity_nci=1113763737856  
+      BS 행 | 자본총계 | id=ifrs-full_Equity | 당기=2524424248940
+      BS 행 | 지배기업의소유주에게귀속되는자본 | id=ifrs-full_EquityAttributableToOwnersOfParent | 당기=1410660511084
+      BS 행 | 기타불입자본 | id=dart_ElementsOfOtherStockholdersEquity | 당기=1350786348
+      BS 행 | 기타자본구성요소 | id=dart_OtherComprehensiveIncomeLossAccumulatedAmount | 당기=84452613154
+      BS 행 | 자본금 | id=ifrs-full_IssuedCapital | 당기=189341490000
+      BS 행 | 비지배지분 | id=ifrs-full_NoncontrollingInterests | 당기=1113763737856
+      BS 행 | 자본과부채 | id=ifrs-full_EquityAndLiabilities | 당기=7032322131682
+
+### 011790 11011/CFS
+  CIS  당기=-216300854733  누적=None  | 영업이익(손실) | dart_OperatingIncomeLoss
+  CIS  당기=10351118266  누적=None  | 기타영업외수익 | dart_OtherGains
+  CIS  당기=21531031114  누적=None  | 기타영업외비용 | dart_OtherLosses
+  CIS  당기=237992443894  누적=None  | 판매비와관리비 | dart_TotalSellingGeneralAdministrativeExpenses
+  CIS  당기=-249110122265  누적=None  | 연결총포괄이익(손실) | ifrs-full_ComprehensiveIncome
+  CIS  당기=-50014374745  누적=None  | 비지배지분 | ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests
+  CIS  당기=-199095747520  누적=None  | 지배기업소유주에게귀속되는지분 | ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent
+  CIS  당기=1549059991776  누적=None  | 매출원가 | ifrs-full_CostOfSales
+  CIS  당기=-8318  누적=None  | 계속영업기본주당이익(손실) | ifrs-full_BasicEarningsLossPerShareFromContinuingOperations
+  CIS  당기=-1282  누적=None  | 중단영업기본주당이익(손실) | ifrs-full_BasicEarningsLossPerShareFromDiscontinuedOperations
+  CIS  당기=-8318  누적=None  | 계속영업희석주당이익(손실) | ifrs-full_DilutedEarningsLossPerShareFromContinuingOperations
+  CIS  당기=-1282  누적=None  | 중단영업희석주당이익(손실) | ifrs-full_DilutedEarningsLossPerShareFromDiscontinuedOperations
+  CIS  당기=221152824502  누적=None  | 금융비용 | ifrs-full_FinanceCosts
+  CIS  당기=67904800887  누적=None  | 금융수익 | ifrs-full_FinanceIncome
+  CIS  당기=21691589161  누적=None  | 매출총이익 | ifrs-full_GrossProfit
+  CIS  당기=-119237704373  누적=None  | 법인세비용(수익) | ifrs-full_IncomeTaxExpenseContinuingOperations
+  CIS  당기=77249894761  누적=None  | 기타포괄손익 | ifrs-full_OtherComprehensiveIncome
+  CIS  당기=82837993683  누적=None  | 후속적으로당기손익으로재분류되는항목 | ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=2232329640  누적=None  | 파생상품평가손익 | ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax
+  CIS  당기=81172322159  누적=None  | 해외사업환산이익(손실) | ifrs-full_GainsLossesOnHedgesOfNetInvestmentsInForeignOperationsNetOfTax
+  CIS  당기=-566658116  누적=None  | 관계기업및공동기업의기타포괄손익의변동 | ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=-5588098922  누적=None  | 후속적으로당기손익으로재분류되지않는항목 | ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=-1232394168  누적=None  | 기타포괄손익-공정가치측정금융자산평가손익 | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments
+  CIS  당기=-4355704754  누적=None  | 확정급여제도의재측정손익(세후기타포괄손익) | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans
+  CIS  당기=-326360017026  누적=None  | 당기순이익(손실) | ifrs-full_ProfitLoss
+  CIS  당기=-50826169057  누적=None  | 비지배지분 | ifrs-full_ProfitLossAttributableToNoncontrollingInterests
+  CIS  당기=-275533847969  누적=None  | 지배기업소유주에게귀속되는지분 | ifrs-full_ProfitLossAttributableToOwnersOfParent
+  CIS  당기=-402027581839  누적=None  | 법인세비용차감전순이익(손실) | ifrs-full_ProfitLossBeforeTax
+  CIS  당기=-282789877466  누적=None  | 계속사업당기순이익(손실) | ifrs-full_ProfitLossFromContinuingOperations
+  CIS  당기=-43570139560  누적=None  | 세후중단영업손실 | ifrs-full_ProfitLossFromDiscontinuedOperations
+  CIS  당기=1570751580937  누적=None  | 매출액 | ifrs-full_Revenue
+  CIS  당기=-21298790643  누적=None  | 지분법손실(이익) | ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod
+  >>> 최종 선택 11011(CFS): np=-24636826941/None  np_owner=-68357745409/None  np_nci=43720918468/None  eps_basic=없음  
+      재무상태표 선택: assets=6393092564908  liab=4151241803700  equity=2241850761208  equity_owner=1725496452384  equity_nci=516354308824  
+      BS 행 | 자산총계 | id=ifrs-full_Assets | 당기=6393092564908
+      BS 행 | 부채총계 | id=ifrs-full_Liabilities | 당기=4151241803700
+      BS 행 | 지배기업소유주지분 | id=ifrs-full_EquityAttributableToOwnersOfParent | 당기=1725496452384
+      BS 행 | 자본금 | id=ifrs-full_IssuedCapital | 당기=189341490000
+      BS 행 | 자본잉여금 | id=dart_CapitalSurplus | 당기=364466808478
+      BS 행 | 자본조정 | id=dart_OtherCapitalAdjustments | 당기=-284758241550
+      BS 행 | 비지배지분 | id=ifrs-full_NoncontrollingInterests | 당기=516354308824
+      BS 행 | 자본총계 | id=ifrs-full_Equity | 당기=2241850761208
+      BS 행 | 부채및자본총계 | id=ifrs-full_EquityAndLiabilities | 당기=6393092564908
+
+### 011790 11011/CFS
+  CIS  당기=3138910077125  누적=None  | 매출액 | ifrs-full_Revenue
+  CIS  당기=2638728817819  누적=None  | 매출원가 | ifrs-full_CostOfSales
+  CIS  당기=500181259306  누적=None  | 매출총이익 | ifrs-full_GrossProfit
+  CIS  당기=279925316308  누적=None  | 판매비와관리비 | dart_TotalSellingGeneralAdministrativeExpenses
+  CIS  당기=220255942998  누적=None  | 영업이익(손실) | dart_OperatingIncomeLoss
+  CIS  당기=-73924185407  누적=None  | 지분법손익 | -표준계정코드 미사용-
+  CIS  당기=3343667233  누적=None  | 지분법이익 | -표준계정코드 미사용-
+  CIS  당기=-77267852640  누적=None  | 지분법손실 | -표준계정코드 미사용-
+  CIS  당기=200908769691  누적=None  | 기타이익 | dart_OtherGains
+  CIS  당기=73494367564  누적=None  | 기타손실 | dart_OtherLosses
+  CIS  당기=131671182838  누적=None  | 금융수익 | ifrs-full_FinanceIncome
+  CIS  당기=246120261072  누적=None  | 금융원가 | ifrs-full_FinanceCosts
+  CIS  당기=159297081484  누적=None  | 법인세비용차감전순이익(손실) | ifrs-full_ProfitLossBeforeTax
+  CIS  당기=-8958401736  누적=None  | 법인세비용 | ifrs-full_IncomeTaxExpenseContinuingOperations
+  CIS  당기=168255483220  누적=None  | 계속영업이익(손실) | ifrs-full_ProfitLossFromContinuingOperations
+  CIS  당기=-192892310161  누적=None  | 중단영업이익(손실) | ifrs-full_ProfitLossFromDiscontinuedOperations
+  CIS  당기=-24636826941  누적=None  | 당기순이익(손실) | ifrs-full_ProfitLoss
+  CIS  당기=24889145266  누적=None  | 기타포괄손익 | ifrs-full_OtherComprehensiveIncome
+  CIS  당기=18447297055  누적=None  | 후속적으로당기손익으로재분류되지않는기타포괄손익 | dart_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=17797716514  누적=None  | 확정급여제도의재측정손익(세후기타포괄손익) | dart_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans
+  CIS  당기=None  누적=None  | 관계기업확정급여제도의재측정요소 | dart_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=649580541  누적=None  | 기타포괄손익-공정가치측정금융자산평가손익 | -표준계정코드 미사용-
+  CIS  당기=6441848211  누적=None  | 후속적으로당기손익으로재분류되는기타포괄손익 | dart_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=14119348779  누적=None  | 지분법자본변동 | dart_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=-7569037622  누적=None  | 해외사업환산손익 | ifrs-full_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax
+  CIS  당기=-108462946  누적=None  | 파생상품평가손익 | -표준계정코드 미사용-
+  CIS  당기=252318325  누적=None  | 총포괄손익 | ifrs-full_ComprehensiveIncome
+  CIS  당기=-68357745409  누적=None  | 지배기업소유주지분 | ifrs-full_ProfitLossAttributableToOwnersOfParent
+  CIS  당기=122820955623  누적=None  | 계속사업손익 | -표준계정코드 미사용-
+  CIS  당기=-191178701032  누적=None  | 중단사업손익 | -표준계정코드 미사용-
+  CIS  당기=43720918468  누적=None  | 비지배지분 | ifrs-full_ProfitLossAttributableToNoncontrollingInterests
+  CIS  당기=-54998786842  누적=None  | 지배기업소유주지분 | ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent
+  CIS  당기=55251105167  누적=None  | 비지배지분 | ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests
+  CIS  당기=3445  누적=None  | 계속영업기본주당이익(손실) | ifrs-full_BasicEarningsLossPerShareFromContinuingOperations
+  CIS  당기=-5363  누적=None  | 중단영업기본주당이익(손실) | ifrs-full_BasicEarningsLossPerShareFromDiscontinuedOperations
+  CIS  당기=3441  누적=None  | 계속영업희석주당이익(손실) | ifrs-full_DilutedEarningsLossPerShareFromContinuingOperations
+  CIS  당기=-5363  누적=None  | 중단영업희석주당이익(손실) | ifrs-full_DilutedEarningsLossPerShareFromDiscontinuedOperations
+  >>> 최종 선택 11013(CFS): np=-75553166040/-75553166040  np_owner=-81554663822/-81554663822  np_nci=6001497782/6001497782  eps_basic=없음  
+      재무상태표 선택: assets=6767244299774  liab=4754681978888  equity=2012562320886  equity_owner=834951683947  equity_nci=1177610636939  
+      BS 행 | 자산총계 | id=ifrs-full_Assets | 당기=6767244299774
+      BS 행 | 자본총계 | id=ifrs-full_Equity | 당기=2012562320886
+      BS 행 | 지배기업의소유주에게귀속되는자본 | id=ifrs-full_EquityAttributableToOwnersOfParent | 당기=834951683947
+      BS 행 | 기타자본구성요소 | id=dart_OtherComprehensiveIncomeLossAccumulatedAmount | 당기=436003819125
+      BS 행 | 기타불입자본 | id=-표준계정코드 미사용- | 당기=342038895523
+      BS 행 | 자본금 | id=ifrs-full_IssuedCapital | 당기=189341490000
+      BS 행 | 비지배지분 | id=ifrs-full_NoncontrollingInterests | 당기=1177610636939
+      BS 행 | 부채및자본총계 | id=ifrs-full_EquityAndLiabilities | 당기=6767244299774
+      BS 행 | 부채총계 | id=ifrs-full_Liabilities | 당기=4754681978888
+
+### 011790 11013/CFS
+  CIS  당기=-28734348988  누적=-28734348988  | 영업손실 | dart_OperatingIncomeLoss
+  CIS  당기=11588333659  누적=11588333659  | 기타영업외수익 | dart_OtherGains
+  CIS  당기=4268356528  누적=4268356528  | 기타영업외비용 | dart_OtherLosses
+  CIS  당기=70423013561  누적=70423013561  | 판매비와관리비 | dart_TotalSellingGeneralAdministrativeExpenses
+  CIS  당기=-2741037670  누적=-2741037670  | 총포괄이익(손실) | ifrs-full_ComprehensiveIncome
+  CIS  당기=18881619006  누적=18881619006  | 비지배지분 | ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests
+  CIS  당기=-21622656676  누적=-21622656676  | 지배기업소유주에게귀속되는지분 | ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent
+  CIS  당기=454951443879  누적=454951443879  | 매출원가 | ifrs-full_CostOfSales
+  CIS  당기=-2434  누적=-2434  | 계속영업기본주당이익(손실) | ifrs-full_BasicEarningsLossPerShareFromContinuingOperations
+  CIS  당기=40  누적=40  | 중단영업기본주당이익(손실) | ifrs-full_BasicEarningsLossPerShareFromDiscontinuedOperations
+  CIS  당기=-2434  누적=-2434  | 계속영업희석주당이익(손실) | ifrs-full_DilutedEarningsLossPerShareFromContinuingOperations
+  CIS  당기=40  누적=40  | 중단영업희석주당이익(손실) | ifrs-full_DilutedEarningsLossPerShareFromDiscontinuedOperations
+  CIS  당기=82632393564  누적=82632393564  | 금융비용 | ifrs-full_FinanceCosts
+  CIS  당기=36532475203  누적=36532475203  | 금융수익 | ifrs-full_FinanceIncome
+  CIS  당기=41688664573  누적=41688664573  | 매출총이익(손실) | ifrs-full_GrossProfit
+  CIS  당기=8076558992  누적=8076558992  | 법인세수익(비용) | ifrs-full_IncomeTaxExpenseContinuingOperations
+  CIS  당기=72812128370  누적=72812128370  | 기타포괄손익 | ifrs-full_OtherComprehensiveIncome
+  CIS  당기=73589316882  누적=73589316882  | 후속적으로당기손익으로재분류되는항목 | ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=71855156168  누적=71855156168  | 해외사업환산이익(손실) | ifrs-full_GainsLossesOnHedgesOfNetInvestmentsInForeignOperationsNetOfTax
+  CIS  당기=1734160714  누적=1734160714  | 관계기업및공동기업의기타포괄손익의변동 | ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=-777188512  누적=-777188512  | 후속적으로당기손익으로재분류되지않는항목 | ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=-339530156  누적=-339530156  | 기타포괄손익-공정가치측정금융자산평가손익 | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments
+  CIS  당기=-437658356  누적=-437658356  | 확정급여제도의재측정요소 | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans
+  CIS  당기=-75553166040  누적=-75553166040  | 분기순이익(손실) | ifrs-full_ProfitLoss
+  CIS  당기=6001497782  누적=6001497782  | 비지배지분 | ifrs-full_ProfitLossAttributableToNoncontrollingInterests
+  CIS  당기=-81554663822  누적=-81554663822  | 지배기업소유주에게귀속되는지분 | ifrs-full_ProfitLossAttributableToOwnersOfParent
+  CIS  당기=-68851017634  누적=-68851017634  | 법인세비용차감전순손실 | ifrs-full_ProfitLossBeforeTax
+  CIS  당기=-76927576626  누적=-76927576626  | 계속사업분기순이익(손실) | ifrs-full_ProfitLossFromContinuingOperations
+  CIS  당기=1374410586  누적=1374410586  | 세후중단영업이익(손실) | ifrs-full_ProfitLossFromDiscontinuedOperations
+  CIS  당기=496640108452  누적=496640108452  | 매출액 | ifrs-full_Revenue
+  CIS  당기=-1336727416  누적=-1336727416  | 지분법손익 | ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod
+  >>> 최종 선택 11013(CFS): np=-117826665281/-117826665281  np_owner=-104890530058/-104890530058  np_nci=-12936135223/-12936135223  eps_basic=없음  
+      재무상태표 선택: assets=6868609537120  liab=4639325115290  equity=2229284421830  equity_owner=1129269010133  equity_nci=1100015411697  
+      BS 행 | 자산총계 | id=ifrs-full_Assets | 당기=6868609537120
+      BS 행 | 자본총계 | id=ifrs-full_Equity | 당기=2229284421830
+      BS 행 | 지배기업의소유주에게귀속되는자본 | id=ifrs-full_EquityAttributableToOwnersOfParent | 당기=1129269010133
+      BS 행 | 기타자본구성요소 | id=dart_OtherComprehensiveIncomeLossAccumulatedAmount | 당기=357096160174
+      BS 행 | 기타불입자본 | id=-표준계정코드 미사용- | 당기=2177346237
+      BS 행 | 자본금 | id=ifrs-full_IssuedCapital | 당기=189341490000
+      BS 행 | 비지배지분 | id=ifrs-full_NoncontrollingInterests | 당기=1100015411697
+      BS 행 | 부채및자본총계 | id=ifrs-full_EquityAndLiabilities | 당기=6868609537120
+      BS 행 | 부채총계 | id=ifrs-full_Liabilities | 당기=4639325115290
+
+### 011790 11013/CFS
+  CIS  당기=-74476802682  누적=-74476802682  | 영업이익(손실) | dart_OperatingIncomeLoss
+  CIS  당기=3037967097  누적=3037967097  | 기타영업외수익 | dart_OtherGains
+  CIS  당기=1175665373  누적=1175665373  | 기타영업외비용 | dart_OtherLosses
+  CIS  당기=60913283589  누적=60913283589  | 판매비와관리비 | dart_TotalSellingGeneralAdministrativeExpenses
+  CIS  당기=-54358551297  누적=-54358551297  | 총포괄이익(손실) | ifrs-full_ComprehensiveIncome
+  CIS  당기=-12986252566  누적=-12986252566  | 비지배지분 | ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests
+  CIS  당기=-41372298731  누적=-41372298731  | 지배기업소유주에게귀속되는지분 | ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent
+  CIS  당기=452027987749  누적=452027987749  | 매출원가 | ifrs-full_CostOfSales
+  CIS  당기=-3122  누적=-3122  | 계속영업기본주당이익(손실) | ifrs-full_BasicEarningsLossPerShareFromContinuingOperations
+  CIS  당기=43  누적=43  | 중단영업기본주당이익(손실) | ifrs-full_BasicEarningsLossPerShareFromDiscontinuedOperations
+  CIS  당기=-3122  누적=-3122  | 계속영업희석주당이익(손실) | ifrs-full_DilutedEarningsLossPerShareFromContinuingOperations
+  CIS  당기=43  누적=43  | 중단영업희석주당이익(손실) | ifrs-full_DilutedEarningsLossPerShareFromDiscontinuedOperations
+  CIS  당기=70105611531  누적=70105611531  | 금융비용 | ifrs-full_FinanceCosts
+  CIS  당기=19894657137  누적=19894657137  | 금융수익 | ifrs-full_FinanceIncome
+  CIS  당기=-13563519093  누적=-13563519093  | 매출총이익(손실) | ifrs-full_GrossProfit
+  CIS  당기=-7742148486  누적=-7742148486  | 법인세수익 | ifrs-full_IncomeTaxExpenseContinuingOperations
+  CIS  당기=63468113984  누적=63468113984  | 기타포괄손익 | ifrs-full_OtherComprehensiveIncome
+  CIS  당기=64197602259  누적=64197602259  | 후속적으로당기손익으로재분류되는항목 | ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=0  누적=0  | 파생금융상품평가손익 | ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax
+  CIS  당기=62764846212  누적=62764846212  | 해외사업환산이익(손실) | ifrs-full_GainsLossesOnHedgesOfNetInvestmentsInForeignOperationsNetOfTax
+  CIS  당기=1432756047  누적=1432756047  | 관계기업및공동기업의기타포괄손익의변동 | ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=-729488275  누적=-729488275  | 후속적으로당기손익으로재분류되지않는항목 | ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=-389267885  누적=-389267885  | 기타포괄손익-공정가치측정금융자산평가손익 | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments
+  CIS  당기=-340220390  누적=-340220390  | 확정급여제도의재측정요소 | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans
+  CIS  당기=-117826665281  누적=-117826665281  | 분기순이익(손실) | ifrs-full_ProfitLoss
+  CIS  당기=-12936135223  누적=-12936135223  | 비지배지분 | ifrs-full_ProfitLossAttributableToNoncontrollingInterests
+  CIS  당기=-104890530058  누적=-104890530058  | 지배기업소유주에게귀속되는지분 | ifrs-full_ProfitLossAttributableToOwnersOfParent
+  CIS  당기=-127046304866  누적=-127046304866  | 법인세비용차감전순이익(손실) | ifrs-full_ProfitLossBeforeTax
+  CIS  당기=-119304156380  누적=-119304156380  | 계속사업분기순이익(손실) | ifrs-full_ProfitLossFromContinuingOperations
+  CIS  당기=1477491099  누적=1477491099  | 세후중단영업이익(손실) | ifrs-full_ProfitLossFromDiscontinuedOperations
+  CIS  당기=438464468656  누적=438464468656  | 매출액 | ifrs-full_Revenue
+  CIS  당기=-4220849514  누적=-4220849514  | 지분법손익 | ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod
+  >>> 최종 선택 11012(CFS): np=-82226555478/-157779721518  np_owner=-90654813164/-172209476986  np_nci=8428257686/14429755468  eps_basic=없음  
+      재무상태표 선택: assets=8231452246516  liab=5024683526267  equity=3206768720249  equity_owner=1994279562947  equity_nci=1212489157302  
+      BS 행 | 자산총계 | id=ifrs-full_Assets | 당기=8231452246516
+      BS 행 | 자본총계 | id=ifrs-full_Equity | 당기=3206768720249
+      BS 행 | 지배기업의소유주에게귀속되는자본 | id=ifrs-full_EquityAttributableToOwnersOfParent | 당기=1994279562947
+      BS 행 | 기타자본구성요소 | id=dart_OtherComprehensiveIncomeLossAccumulatedAmount | 당기=478747353224
+      BS 행 | 기타불입자본 | id=-표준계정코드 미사용- | 당기=1490945571480
+      BS 행 | 자본금 | id=ifrs-full_IssuedCapital | 당기=247991490000
+      BS 행 | 비지배지분 | id=ifrs-full_NoncontrollingInterests | 당기=1212489157302
+      BS 행 | 부채및자본총계 | id=ifrs-full_EquityAndLiabilities | 당기=8231452246516
+      BS 행 | 부채총계 | id=ifrs-full_Liabilities | 당기=5024683526267
+
+### 011790 11012/CFS
+  CIS  당기=-14424072141  누적=-43158421129  | 영업손실 | dart_OperatingIncomeLoss
+  CIS  당기=261054945  누적=11849388604  | 기타영업외수익 | dart_OtherGains
+  CIS  당기=9220787883  누적=13489144411  | 기타영업외비용 | dart_OtherLosses
+  CIS  당기=84689747106  누적=155112760667  | 판매비와관리비 | dart_TotalSellingGeneralAdministrativeExpenses
+  CIS  당기=-35572132787  누적=-38313170457  | 총포괄이익(손실) | ifrs-full_ComprehensiveIncome
+  CIS  당기=12656664171  누적=31538283177  | 비지배지분 | ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests
+  CIS  당기=-48228796958  누적=-69851453634  | 지배기업소유주에게귀속되는지분 | ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent
+  CIS  당기=575119306138  누적=1030070750017  | 매출원가 | ifrs-full_CostOfSales
+  CIS  당기=-2208  누적=-4623  | 계속영업기본주당이익(손실) | ifrs-full_BasicEarningsLossPerShareFromContinuingOperations
+  CIS  당기=-69  누적=-37  | 중단영업기본주당이익(손실) | ifrs-full_BasicEarningsLossPerShareFromDiscontinuedOperations
+  CIS  당기=-2208  누적=-4623  | 계속영업희석주당이익(손실) | ifrs-full_DilutedEarningsLossPerShareFromContinuingOperations
+  CIS  당기=-69  누적=-37  | 중단영업희석주당이익(손실) | ifrs-full_DilutedEarningsLossPerShareFromDiscontinuedOperations
+  CIS  당기=68890551719  누적=151522945283  | 금융비용 | ifrs-full_FinanceCosts
+  CIS  당기=25955781174  누적=62488256377  | 금융수익 | ifrs-full_FinanceIncome
+  CIS  당기=70265674965  누적=111954339538  | 매출총이익(손실) | ifrs-full_GrossProfit
+  CIS  당기=9072388366  누적=17148947358  | 법인세수익(비용) | ifrs-full_IncomeTaxExpenseContinuingOperations
+  CIS  당기=46654422691  누적=119466551061  | 기타포괄손익 | ifrs-full_OtherComprehensiveIncome
+  CIS  당기=47428386246  누적=121017703128  | 후속적으로당기손익으로재분류되는항목 | ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=38412411684  누적=110267567852  | 해외사업환산이익(손실) | ifrs-full_GainsLossesOnHedgesOfNetInvestmentsInForeignOperationsNetOfTax
+  CIS  당기=9015974562  누적=10750135276  | 관계기업및공동기업의기타포괄손익의변동 | ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=-773963555  누적=-1551152067  | 후속적으로당기손익으로재분류되지않는항목 | ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=60297022  누적=-279233134  | 기타포괄손익-공정가치측정금융자산평가손익 | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments
+  CIS  당기=-834260577  누적=-1271918933  | 확정급여제도의재측정요소 | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans
+  CIS  당기=-82226555478  누적=-157779721518  | 반기순이익(손실) | ifrs-full_ProfitLoss
+  CIS  당기=8428257686  누적=14429755468  | 비지배지분 | ifrs-full_ProfitLossAttributableToNoncontrollingInterests
+  CIS  당기=-90654813164  누적=-172209476986  | 지배기업소유주에게귀속되는지분 | ifrs-full_ProfitLossAttributableToOwnersOfParent
+  CIS  당기=-70408907238  누적=-139259924872  | 법인세비용차감전순손실 | ifrs-full_ProfitLossBeforeTax
+  CIS  당기=-79481295604  누적=-156408872230  | 계속사업반기순이익(손실) | ifrs-full_ProfitLossFromContinuingOperations
+  CIS  당기=-2745259874  누적=-1370849288  | 중단영업이익(손실) | ifrs-full_ProfitLossFromDiscontinuedOperations
+  CIS  당기=645384981103  누적=1142025089555  | 매출액 | ifrs-full_Revenue
+  CIS  당기=-4090331614  누적=-5427059030  | 지분법손익 | ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod
+  >>> 최종 선택 11012(CFS): np=-3972872146/-121799537427  np_owner=3379198821/-101511331237  np_nci=-7352070967/-20288206190  eps_basic=없음  
+      재무상태표 선택: assets=6880915088454  liab=4495594626726  equity=2385320461728  equity_owner=1298701526191  equity_nci=1086618935537  
+      BS 행 | 자산총계 | id=ifrs-full_Assets | 당기=6880915088454
+      BS 행 | 자본총계 | id=ifrs-full_Equity | 당기=2385320461728
+      BS 행 | 지배기업의소유주에게귀속되는자본 | id=ifrs-full_EquityAttributableToOwnersOfParent | 당기=1298701526191
+      BS 행 | 기타자본구성요소 | id=dart_OtherComprehensiveIncomeLossAccumulatedAmount | 당기=269915215950
+      BS 행 | 기타불입자본 | id=-표준계정코드 미사용- | 당기=255528294694
+      BS 행 | 자본금 | id=ifrs-full_IssuedCapital | 당기=189341490000
+      BS 행 | 비지배지분 | id=ifrs-full_NoncontrollingInterests | 당기=1086618935537
+      BS 행 | 부채및자본총계 | id=ifrs-full_EquityAndLiabilities | 당기=6880915088454
+      BS 행 | 부채총계 | id=ifrs-full_Liabilities | 당기=4495594626726
+
+### 011790 11012/CFS
+  CIS  당기=-70169650923  누적=-144646453605  | 영업이익(손실) | dart_OperatingIncomeLoss
+  CIS  당기=1241658610  누적=4279625707  | 기타영업외수익 | dart_OtherGains
+  CIS  당기=68624107137  누적=69799772510  | 기타영업외비용 | dart_OtherLosses
+  CIS  당기=71904281736  누적=132817565325  | 판매비와관리비 | dart_TotalSellingGeneralAdministrativeExpenses
+  CIS  당기=-102574500334  누적=-156933051631  | 총포괄이익(손실) | ifrs-full_ComprehensiveIncome
+  CIS  당기=-18656067935  누적=-31642320501  | 비지배지분 | ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests
+  CIS  당기=-83918432399  누적=-125290731130  | 지배기업소유주에게귀속되는지분 | ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent
+  CIS  당기=465560411479  누적=917588399228  | 매출원가 | ifrs-full_CostOfSales
+  CIS  당기=-4134  누적=-7257  | 계속영업기본주당손실 | ifrs-full_BasicEarningsLossPerShareFromContinuingOperations
+  CIS  당기=4233  누적=4277  | 중단영업기본주당손실 | ifrs-full_BasicEarningsLossPerShareFromDiscontinuedOperations
+  CIS  당기=-4134  누적=-7257  | 계속영업희석주당손실 | ifrs-full_DilutedEarningsLossPerShareFromContinuingOperations
+  CIS  당기=4233  누적=4277  | 중단영업희석주당손실 | ifrs-full_DilutedEarningsLossPerShareFromDiscontinuedOperations
+  CIS  당기=64340683014  누적=134446294545  | 금융비용 | ifrs-full_FinanceCosts
+  CIS  당기=32828775727  누적=52723432864  | 금융수익 | ifrs-full_FinanceIncome
+  CIS  당기=1734630813  누적=-11828888280  | 매출총이익(손실) | ifrs-full_GrossProfit
+  CIS  당기=-24028562296  누적=-31770710782  | 법인세수익 | ifrs-full_IncomeTaxExpenseContinuingOperations
+  CIS  당기=-98601628188  누적=-35133514204  | 기타포괄손익 | ifrs-full_OtherComprehensiveIncome
+  CIS  당기=-98769822854  누적=-34572220595  | 후속적으로당기손익으로재분류되는항목 | ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=0  누적=0  | 파생금융상품평가손익 | ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax
+  CIS  당기=-97979449074  누적=-35214602862  | 해외사업환산이익(손실) | ifrs-full_GainsLossesOnHedgesOfNetInvestmentsInForeignOperationsNetOfTax
+  CIS  당기=-790373780  누적=642382267  | 관계기업및공동기업의기타포괄손익의변동 | ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=168194666  누적=-561293609  | 후속적으로당기손익으로재분류되지않는항목 | ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=523028108  누적=133760223  | 기타포괄손익-공정가치측정금융자산평가손익 | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments
+  CIS  당기=-354833442  누적=-695053832  | 확정급여제도의재측정요소 | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans
+  CIS  당기=-3972872146  누적=-121799537427  | 반기순이익(손실) | ifrs-full_ProfitLoss
+  CIS  당기=-7352070967  누적=-20288206190  | 비지배지분 | ifrs-full_ProfitLossAttributableToNoncontrollingInterests
+  CIS  당기=3379198821  누적=-101511331237  | 지배기업소유주에게귀속되는지분 | ifrs-full_ProfitLossAttributableToOwnersOfParent
+  CIS  당기=-172228925044  누적=-299275229910  | 법인세비용차감전순이익(손실) | ifrs-full_ProfitLossBeforeTax
+  CIS  당기=-148200362748  누적=-267504519128  | 계속사업반기순이익(손실) | ifrs-full_ProfitLossFromContinuingOperations
+  CIS  당기=144227490602  누적=145704981701  | 세후중단영업이익(손실) | ifrs-full_ProfitLossFromDiscontinuedOperations
+  CIS  당기=467295042292  누적=905759510948  | 매출액 | ifrs-full_Revenue
+  CIS  당기=-3164918307  누적=-7385767821  | 지분법손익 | ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod
+  >>> 최종 선택 11014(CFS): np=-98967185211/-220766722638  np_owner=-90641271879/-192152603116  np_nci=-8325913332/-28614119522  eps_basic=없음  
+      재무상태표 선택: assets=7065198395721  liab=4563054494060  equity=2502143901661  equity_owner=1334919040857  equity_nci=1167224860804  
+      BS 행 | 자산총계 | id=ifrs-full_Assets | 당기=7065198395721
+      BS 행 | 자본총계 | id=ifrs-full_Equity | 당기=2502143901661
+      BS 행 | 지배기업의소유주에게귀속되는자본 | id=ifrs-full_EquityAttributableToOwnersOfParent | 당기=1334919040857
+      BS 행 | 기타자본구성요소 | id=dart_OtherComprehensiveIncomeLossAccumulatedAmount | 당기=321243837288
+      BS 행 | 기타불입자본 | id=ifrs-full_AdditionalPaidinCapital | 당기=331074316568
+      BS 행 | 자본금 | id=ifrs-full_IssuedCapital | 당기=189341490000
+      BS 행 | 비지배지분 | id=ifrs-full_NoncontrollingInterests | 당기=1167224860804
+      BS 행 | 부채및자본총계 | id=ifrs-full_EquityAndLiabilities | 당기=7065198395721
+      BS 행 | 부채총계 | id=ifrs-full_Liabilities | 당기=4563054494060
+
+### 011790 11014/CFS
+  CIS  당기=-52771389159  누적=-197417842764  | 영업손실 | dart_OperatingIncomeLoss
+  CIS  당기=5047885027  누적=9327510734  | 기타영업외수익 | dart_OtherGains
+  CIS  당기=11471235231  누적=81271007741  | 기타영업외비용 | dart_OtherLosses
+  CIS  당기=68756859896  누적=201574425221  | 판매비와관리비 | dart_TotalSellingGeneralAdministrativeExpenses
+  CIS  당기=-35937085550  누적=-192870137181  | 총포괄손익 | ifrs-full_ComprehensiveIncome
+  CIS  당기=3391421658  누적=-28250898843  | 비지배지분 | ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests
+  CIS  당기=-39328507208  누적=-164619238338  | 지배기업소유주에게귀속되는지분 | ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent
+  CIS  당기=490032730970  누적=1407621130198  | 매출원가 | ifrs-full_CostOfSales
+  CIS  당기=-3262  누적=-10456  | 계속영업기본주당손실 | ifrs-full_BasicEarningsLossPerShareFromContinuingOperations
+  CIS  당기=601  누적=4816  | 중단영업기본주당이익(손실) | ifrs-full_BasicEarningsLossPerShareFromDiscontinuedOperations
+  CIS  당기=-3262  누적=-10456  | 계속영업희석주당손실 | ifrs-full_DilutedEarningsLossPerShareFromContinuingOperations
+  CIS  당기=601  누적=4816  | 중단영업희석주당이익(손실) | ifrs-full_DilutedEarningsLossPerShareFromDiscontinuedOperations
+  CIS  당기=59758487972  누적=194204782517  | 금융비용 | ifrs-full_FinanceCosts
+  CIS  당기=8432253185  누적=61155686049  | 금융수익 | ifrs-full_FinanceIncome
+  CIS  당기=15985470737  누적=4156582457  | 매출총이익(손실) | ifrs-full_GrossProfit
+  CIS  당기=-13428729267  누적=-45199440049  | 법인세수익(비용) | ifrs-full_IncomeTaxExpenseContinuingOperations
+  CIS  당기=63030099661  누적=27896585457  | 기타포괄손익 | ifrs-full_OtherComprehensiveIncome
+  CIS  당기=63059142784  누적=28486922189  | 후속적으로당기손익으로재분류되는항목 | ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=0  누적=0  | 파생금융상품평가손익 | ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax
+  CIS  당기=62318774862  누적=27104172000  | 해외사업환산이익(손실) | ifrs-full_GainsLossesOnHedgesOfNetInvestmentsInForeignOperationsNetOfTax
+  CIS  당기=740367922  누적=1382750189  | 관계기업및공동기업의기타포괄손익의변동 | ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=-29043123  누적=-590336732  | 후속적으로당기손익으로재분류되지않는항목 | ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax
+  CIS  당기=-40748059  누적=93012164  | 기타포괄손익-공정가치측정금융자산평가손실 | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments
+  CIS  당기=11704936  누적=-683348896  | 확정급여제도의재측정요소 | ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans
+  CIS  당기=-98967185211  누적=-220766722638  | 분기순손실 | ifrs-full_ProfitLoss
+  CIS  당기=-8325913332  누적=-28614119522  | 비지배지분 | ifrs-full_ProfitLossAttributableToNoncontrollingInterests
+  CIS  당기=-90641271879  누적=-192152603116  | 지배기업소유주에게귀속되는지분 | ifrs-full_ProfitLossAttributableToOwnersOfParent
+  CIS  당기=-130759695907  누적=-430034925817  | 법인세비용차감전순손실 | ifrs-full_ProfitLossBeforeTax
+  CIS  당기=-117330966640  누적=-384835485768  | 계속사업분기순손실 | ifrs-full_ProfitLossFromContinuingOperations
+  CIS  당기=18363781429  누적=164068763130  | 세후중단영업이익(손실) | ifrs-full_ProfitLossFromDiscontinuedOperations
+  CIS  당기=506018201707  누적=1411777712655  | 매출액 | ifrs-full_Revenue
+  CIS  당기=-20238721757  누적=-27624489578  | 지분법손익 | ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod
