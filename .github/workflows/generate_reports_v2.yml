@@ -61,9 +61,14 @@ jobs:
         run: |
           n=$(ls data/reports_v2/*.json 2>/dev/null | wc -l | tr -d ' ')
           b=$(ls data/batches_v2/*.json 2>/dev/null | wc -l | tr -d ' ')
+          # 갱신(refresh) 중에는 파일 개수가 안 늘어난다 — 있는 리포트를 다시 쓰기
+          # 때문이다. 그래서 '남은 대상' 을 함께 재 둔다. self-chain 이 진척을
+          # 판단하는 진짜 잣대다(아래 참고).
+          r=$(python scripts/_fill_remaining.py '${{ inputs.fill_to }}' 2>/dev/null || echo 0)
           echo "count=$n" >> "$GITHUB_OUTPUT"
           echo "batches=$b" >> "$GITHUB_OUTPUT"
-          echo "시작 v2 리포트 수: $n · 배치 상태 파일 $b"
+          echo "remaining=$r" >> "$GITHUB_OUTPUT"
+          echo "시작 v2 리포트 수: $n · 배치 상태 파일 $b · 남은 대상 $r"
 
       - name: 리포트 v2 실행
         env:
@@ -169,10 +174,22 @@ jobs:
           b_before='${{ steps.before.outputs.batches }}'
           b_after=$(ls data/batches_v2/*.json 2>/dev/null | wc -l | tr -d ' ')
           remaining=$(python scripts/_fill_remaining.py '${{ inputs.fill_to }}')
+          r_before='${{ steps.before.outputs.remaining }}'
           added=$(( after - before ))
           submitted=$(( b_after - b_before ))
-          echo "백필: 리포트 $before → $after (+$added) · 주문 +$submitted · 상위 ${{ inputs.fill_to }} 남은 $remaining"
-          if [ "$remaining" -gt 0 ] && { [ "$added" -gt 0 ] || [ "$submitted" -gt 0 ]; }; then
+          # 갱신 중에는 added 가 언제나 0 이다(파일을 새로 만드는 게 아니라 덮어쓴다).
+          # 그러면 '주문했는가' 하나만 남는데, 남은 종목이 전부 다른 샤드의 배치에
+          # 물려 있는 순간 이 샤드는 주문할 게 없어 그대로 끝나 버린다. 실제로
+          # 2026-09-05 에 122종목을 남기고 다섯 샤드가 그렇게 다 멈췄다 —
+          # 워치독은 크론이 밀려 세 시간 뒤에나 왔다.
+          #
+          # 그래서 '남은 대상' 이 줄었는지도 본다. 다른 샤드가 회수를 마쳐 줄어든
+          # 것이라도 전체로는 진척이므로 이어 간다. 아무도 진척이 없고 이 샤드도
+          # 할 일이 없으면 그때는 멈춘다 — 무한 루프 방지는 그대로다.
+          done_more=0
+          [ -n "$r_before" ] && [ "$remaining" -lt "$r_before" ] && done_more=1
+          echo "백필: 리포트 $before → $after (+$added) · 주문 +$submitted · 남은 $r_before → $remaining"
+          if [ "$remaining" -gt 0 ] && { [ "$added" -gt 0 ] || [ "$submitted" -gt 0 ] || [ "$done_more" -eq 1 ]; }; then
             echo "→ 다음 청크 재실행(샤드 ${{ inputs.fill_shard }}/${{ inputs.fill_shards }}, 전체 남은 $remaining개)"
             gh workflow run generate_reports_v2.yml \
               -f mode=auto -f top_n='${{ inputs.top_n }}' -f fill_to='${{ inputs.fill_to }}' \
