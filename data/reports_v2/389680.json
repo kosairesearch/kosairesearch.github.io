@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "제조 AI 핵심 기술 보유, 수주 반등이 변곡점",
-  "en": "Proprietary Manufacturing AI Technology—Order Rebound Is the Inflection Point"
+  "ko": "관리종목 지정 속 AI 자동화 수주 확대 시도",
+  "en": "Contract Wins Amid Administrative Issue Designation"
  },
  "lead": {
-  "ko": "세계 최초 기계어처리(MLP) 기술 기반 산업 AI 소프트웨어 전문기업으로, 자동차·2차전지 전방 투자 위축으로 2025년 매출이 급감하고 영업적자가 심화됐으나, 한국GM 공급 계약·SK케미칼 협업 등 2026년 상반기 신규 수주가 회복 가능성을 시험하고 있다.",
-  "en": "A specialist in industrial AI solutions built on the world-first Machine Language Processing (MLP) technology, UDMTEK faces sharply reduced revenue and deepening operating losses amid capex restraint from automotive and battery clients; however, a string of new contracts—including a Korean GM supply deal and SK Chemical collaboration—test the prospects of a recovery in H1 2026."
+  "ko": "유디엠텍은 GM코리아·엔비디아 기반 디지털트윈 등 신규 수주로 사업 확장을 시도하고 있으나, 매출 축소와 시가총액 미달에 따른 관리종목 지정이라는 이중 부담에 놓여 있다.",
+  "en": "UDMTek is pursuing business expansion through new contracts including Korea GM and an NVIDIA-based digital twin deal, but faces a dual burden of shrinking revenue and an administrative issue designation triggered by market capitalization falling below the required threshold."
  },
  "keypoints": [
   {
-   "ko": "국내외 최초 MLP 기술로 PLC 제어 로직을 AI가 직접 해석—진입 장벽 형성, 현대기아차·LG에너지솔루션 등 대형 제조사 레퍼런스 확보",
-   "en": "World-first MLP technology enables AI-driven direct interpretation of PLC control logic—creating meaningful barriers to entry, with blue-chip references including Hyundai-Kia Motors and LG Energy Solution."
+   "ko": "2025년 매출 32.1억원으로 전년 대비 큰 폭 감소, 영업손실은 36.5억원으로 확대",
+   "en": "2025 revenue fell sharply to KRW 3.21 billion year-on-year, while operating loss widened to KRW 3.65 billion"
   },
   {
-   "ko": "2025년 연간 매출 약 32.1억 원(-47%)·영업손실 약 36.5억 원(OPM -113.5%)으로 전방 설비투자 침체의 직격탄을 받았으나, 4분기(매출 약 13.1억·영업손실 약 2.4억)에 손익 구조 개선 신호 포착",
-   "en": "Annual 2025 revenue fell ~47% to approximately KRW 3.21 billion with an operating loss of ~KRW 3.65 billion (OPM: -113.5%) amid a capex freeze; Q4 2025 (revenue ~KRW 1.31 billion, operating loss ~KRW 243 million) provided nascent signs of loss-structure improvement."
+   "ko": "2026년 8월 10일 시가총액 미달로 관리종목 지정, 90거래일 내 해소 요건 미충족 시 상장폐지 사유 발생 가능",
+   "en": "Designated as an administrative issue stock on August 10, 2026 due to market cap shortfall, with potential delisting grounds if the requirement is not met within 90 trading days"
   },
   {
-   "ko": "2025년 3월 OPTRA Platform 출시 후 고객사 긍정 반응, 2026년 6월 한국GM 공급 계약 체결—플랫폼 중심 비즈니스 모델 전환 시도 가시화",
-   "en": "OPTRA Platform launched in March 2025 with positive customer reception; a supply contract with Korean GM signed in June 2026 marks visible progress toward a platform-centric business model."
+   "ko": "2026년 5월 GM코리아 대상 옵트라 플랫폼 공급 계약, 엔비디아 아이작 심 기반 디지털트윈 공급 계약 체결",
+   "en": "Signed an OPTRA Platform supply contract for Korea GM and an NVIDIA Isaac Sim-based digital twin supply contract in 2026"
   },
   {
-   "ko": "Rockwell Automation 연동 데모·북미 제조업체 PoC 진행·일본 파트너 복수 협의—글로벌 레퍼런스 전환 여부가 장기 성장의 분수령",
-   "en": "Rockwell Automation integration demos, live PoCs with North American manufacturers, and multiple meetings with a Japanese partner—conversion to global commercial references will be decisive for long-term growth."
+   "ko": "영업활동현금흐름이 2023년 흑자에서 2024·2025년 연속 마이너스로 전환, 현금 소진 속도 확인 필요",
+   "en": "Operating cash flow swung from positive in 2023 to negative in both 2024 and 2025, warranting attention to the pace of cash burn"
   },
   {
-   "ko": "직원 약 45명의 소형 기업으로 영업레버리지가 크고, 영업현금흐름 적자 지속에 따른 재무 내구력이 핵심 모니터링 포인트",
-   "en": "With approximately 45 employees, high operating leverage magnifies revenue swings in both directions; sustained negative operating cash flow makes financial runway a critical monitoring point."
+   "ko": "2026년 5월 액면가 100원→500원 병합으로 유통주식수가 약 4,159만주에서 약 832만주로 축소",
+   "en": "A par-value consolidation from KRW 100 to KRW 500 in May 2026 reduced outstanding shares from roughly 41.59 million to about 8.32 million"
   }
  ],
  "business": {
-  "ko": "유디엠텍은 2007년 설립되어 2024년 대신밸런스제13호스팩과의 합병을 통해 코스닥에 상장한 산업용 AI 소프트웨어 기업이다. 핵심 역량은 국내외 최초로 개발한 '기계어처리(MLP: Machine Language Processing)' 기술로, PLC 내부 제어 로직의 실행과 데이터 흐름을 설명 가능한 AI(X-AI) 방식으로 해석한다. 이를 기반으로 설비예지보전 솔루션 'OPTRA Black-box', 운영 모니터링 플랫폼 'OPTRA Tracker', 품질인자 분석 도구 'UXIM Analyzer', 제어 설계 검증 솔루션 'PLC eXpert', 그리고 2025년 3월 신규 출시된 통합 관제 플랫폼 'OPTRA Platform' 등 다섯 개 제품군을 운용한다. 주요 적용 산업은 자동차, 2차전지, 전기·전자이며, 현대기아차·LG에너지솔루션·현대모비스·LG디스플레이 등 국내 대형 제조사를 핵심 고객으로 확보했다. 2025년에는 SK케미칼과 AI 기반 JSA(작업안전분석) 자동화 시스템 계약을 체결하고, SK C&C를 통한 SK그룹 제조 계열사 확산도 계획 중이다. 2026년 6월에는 한국GM 공장 생산 라인에 OPTRA Platform 기반 설비진단 시스템을 공급하는 계약을 체결해 글로벌 완성차 OEM으로 고객군을 확장했다. 회사는 PLC 외 PC 제어기 분야의 기계어처리 기술도 연구 개발 중으로, 반도체 등 신규 산업군 진입을 도모하고 있다. 경쟁 구도는 Siemens·Rockwell Automation 등 글로벌 대형 FA 기업과의 간접 경쟁이지만, MLP 특허 기반 제어 로직 해석 영역에서는 독자적 포지션을 유지하고 있다.",
-  "en": "UDMTEK was founded in 2007 and listed on KOSDAQ in 2024 through a SPAC merger with Daeshin Balance No. 13. Its core competency is the world-first Machine Language Processing (MLP) technology, which applies an explainable AI (X-AI) approach to interpret the execution and data-flow characteristics of PLC internal control logic. This technology underpins five product lines: OPTRA Black-box (predictive maintenance), OPTRA Tracker (operational monitoring), UXIM Analyzer (quality factor analysis), PLC eXpert (control design verification), and the newly launched OPTRA Platform (integrated supervisory control, launched March 2025). Primary end-markets are automotive, secondary batteries, and electronics, with key customers including Hyundai-Kia Motors, LG Energy Solution, Hyundai Mobis, and LG Display. In 2025, an AI-based JSA (Job Safety Analysis) automation contract was signed with SK Chemical, with plans to expand across SK Group manufacturing affiliates via SK C&C. In June 2026, a supply agreement was signed with Korean GM for OPTRA Platform-based equipment diagnostics on factory production lines, broadening the customer base to global OEMs. The company is also developing MLP capabilities for PC-based controllers beyond PLCs, targeting semiconductor and other new sectors. Competitive dynamics involve indirect rivalry with global FA giants such as Siemens and Rockwell Automation, but UDMTEK maintains a differentiated position in the MLP-based control logic interpretation niche."
+  "ko": "유디엠텍은 2007년 설립된 자동화 설비 AI 진단 솔루션 기업으로, 독자 개발한 기계어 처리(MLP·Machine Language Processing) 기술을 기반으로 PLC 제어 로직을 AI 방식으로 해석하는 것이 핵심 경쟁력이다. 주력 제품은 설비 상태를 진단하고 예지보전을 지원하는 'OPTRA 블랙박스', 실시간 모니터링 솔루션 'OPTRA 트래커', 통합 관제 플랫폼 '옵트라 플랫폼(OPTRA Platform)' 등으로 구성된다. 대신증권 리포트에 따르면 2025년 1분기 기준 매출 비중은 OPTRA 블랙박스가 60.1%, OPTRA 트래커가 19.5%였고 나머지는 용역 매출이었다. 주요 고객군으로는 현대기아차그룹과 LG에너지솔루션 해외 공장 등이 언급되어 왔으며, SK케미칼과는 생성형 AI 기반 산업안전분석(JSA) 자동화 시스템 도입 계약을 체결한 바 있다. 2026년에는 사업 영역을 완성차와 로봇 분야로 확장하는 모습이 나타났는데, 6월에는 윈텍에스에이를 통해 GM(제너럴모터스) 한국 공장에 옵트라 플랫폼을 공급하는 계약을 체결했고, 5월에는 모빌리티 소프트웨어·첨단 제조 기업과 엔비디아 아이작 심(Isaac Sim) 기반 차세대 디지털트윈 플랫폼 공급 계약을 맺어 협동로봇·휴머노이드 로봇까지 확장 가능한 통합 플랫폼 구축을 목표로 하고 있다. 회사는 2024년 11월 대신밸런스제13호스팩과의 합병을 통해 코스닥 시장에 상장했다. 경쟁 구도상 스마트팩토리·디지털트윈 분야에는 다양한 국내외 산업용 소프트웨어 업체가 존재하나, 유디엠텍은 PLC 제어 프로그램을 직접 해석하는 MLP 기술이라는 차별화 포인트를 내세우고 있다.",
+  "en": "Founded in 2007, UDMTek is an AI-based diagnostic solutions provider for automation equipment, built around its proprietary Machine Language Processing (MLP) technology that interprets PLC control logic using AI methods. Its core products include OPTRA Black-box, which diagnoses equipment status and supports predictive maintenance, the real-time monitoring solution OPTRA Tracker, and the integrated control platform OPTRA Platform. According to a Daishin Securities report, as of the first quarter of 2025 revenue mix was 60.1% from OPTRA Black-box and 19.5% from OPTRA Tracker, with the remainder from service revenue. Its customer base has included the Hyundai-Kia group and overseas plants of LG Energy Solution, and it signed a contract with SK Chemical for a generative AI-based Job Safety Analysis (JSA) automation system. In 2026 the company appeared to expand into automotive and robotics applications: in June it signed a contract via Wintec S.A. to supply the OPTRA Platform to Korea GM's plant, and in May it signed a contract with a mobility software and advanced manufacturing company to supply a next-generation digital twin platform based on NVIDIA Isaac Sim, aiming to build an integrated platform extendable to collaborative and humanoid robots. The company listed on KOSDAQ in November 2024 through a merger with Daishin Balance 13th SPAC. In the smart-factory and digital-twin space, UDMTek competes against various domestic and overseas industrial software providers, positioning its direct interpretation of PLC control programs via MLP technology as a point of differentiation."
  },
  "earnings": {
-  "ko": "2024년 연간 매출은 약 60.7억 원, 영업손실은 약 20.1억 원(OPM -33.1%)으로 상장 첫 해부터 영업적자를 기록했다. 2025년에는 자동차 및 2차전지 전방산업의 설비투자가 글로벌 경기 불확실성으로 크게 지연되며 연간 매출이 약 32.1억 원으로 전년 대비 47% 급감했고, 영업손실은 약 36.5억 원으로 확대되어 OPM은 -113.5%로 악화됐다. 지배주주 귀속 당기 순손실도 약 35.0억 원에 달해, 매출 대비 과중한 고정비 부담이 영업레버리지를 부(-)방향으로 극대화했다. 분기별로는 2025년 2분기(매출 약 7.9억·영업손실 약 13.2억)에 적자가 최대치에 달했고, 3분기에는 매출이 약 4.8억 원으로 바닥을 찍었다. 이후 4분기에는 매출이 약 13.1억 원(연간 최대치)으로 반등하며 영업손실이 약 2.4억 원으로 급격히 축소됐다. 2026년 1분기는 매출 약 8.9억 원·영업손실 약 5.6억 원으로, 4분기의 개선세에서 일부 되돌림이 나타났다. 영업현금흐름은 2024년 -13.4억 원에서 2025년 -27.9억 원으로 악화됐다. 자본총계는 2025년 말 기준 약 105.1억 원으로 전년(약 130.0억 원) 대비 감소해 누적 손실의 영향이 순자산에 반영됐다. 부채비율은 2024년 39.3%, 2025년 41.7%로 소폭 상승했으나, 부채총계 절대 금액(약 43.8억 원)은 과도하지 않은 수준이다.",
-  "en": "Full-year 2024 revenue was approximately KRW 6.07 billion with an operating loss of approximately KRW 2.01 billion (OPM: -33.1%), marking a loss-making debut year post-listing. In 2025, prolonged capex delays in automotive and secondary battery end-markets drove annual revenue down ~47% to approximately KRW 3.21 billion, while the operating loss widened to approximately KRW 3.65 billion, pushing the OPM to -113.5%. Net loss attributable to controlling shareholders reached approximately KRW 3.50 billion, reflecting how the high fixed-cost structure amplifies downside operating leverage. Quarterly, the loss peak came in Q2 2025 (revenue ~KRW 789 million, operating loss ~KRW 1.32 billion), and revenue troughed in Q3 2025 (~KRW 479 million). Q4 2025 saw a sharp reversal—revenue hit the highest quarterly level of the year (~KRW 1.31 billion) and the operating loss narrowed dramatically to ~KRW 243 million. Q1 2026 partially reversed that improvement, posting revenue of ~KRW 890 million and an operating loss of ~KRW 559 million. Operating cash flow worsened from -KRW 1.34 billion in 2024 to -KRW 2.79 billion in 2025. Total equity fell to approximately KRW 10.51 billion at end-2025 from KRW 13.00 billion a year earlier. The debt ratio edged up from 39.3% to 41.7%, though total liabilities of approximately KRW 4.38 billion represent a still-modest absolute leverage level."
+  "ko": "확정 연결 실적 기준으로 매출액은 2023년 74.2억원에서 2024년 60.7억원, 2025년 32.1억원으로 3년 연속 감소했다. 영업손익은 2023년 1.5억원 흑자(영업이익률 2.1%)였으나 2024년 -20.1억원(영업이익률 -33.1%), 2025년 -36.5억원(영업이익률 -113.5%)으로 적자 규모가 매출 감소 속에 오히려 확대됐다. 지배주주 순손실은 2023년 -57.9억원, 2024년 -52.0억원, 2025년 -35.0억원으로 절대 규모는 다소 줄었으나 여전히 큰 적자 상태를 유지하고 있다. 분기별로 보면 2025년 2분기 매출 7.9억원·영업손실 13.2억원에서 3분기에는 매출이 4.8억원까지 줄며 영업손실도 9.8억원을 기록했고, 4분기에는 매출이 13.1억원으로 회복되며 영업손실이 2.4억원까지 축소돼 적자 폭이 크게 줄었다. 그러나 2026년 1분기(매출 8.9억원, 영업손실 5.6억원)와 2분기(매출 7.4억원, 영업손실 6.9억원)에는 다시 적자가 확대되는 흐름을 보이며 4분기의 개선이 일시적이었을 가능성을 시사한다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순손실은 -24.0억원 수준이다. 영업활동현금흐름은 2023년 +2.8억원에서 2024년 -13.4억원, 2025년 -27.9억원으로 악화되며 현금 소진 속도가 빨라지고 있음을 나타낸다. 자본총계는 2024년 상장 자금 유입으로 130.0억원까지 늘었다가 누적 손실로 2025년 105.1억원으로 줄었고, 부채비율은 2023년 102.6%에서 2024년 39.3%, 2025년 41.7%로 상장 이후 낮아진 상태를 유지하고 있다.",
+  "en": "On a confirmed consolidated basis, revenue declined for three consecutive years, from KRW 7.42 billion in 2023 to KRW 6.07 billion in 2024 and KRW 3.21 billion in 2025. Operating profit was positive at KRW 155 million in 2023 (operating margin of 2.1%) but turned to an operating loss of KRW 2.01 billion in 2024 (margin of -33.1%) and widened further to KRW 3.65 billion in 2025 (margin of -113.5%), with losses expanding even as revenue shrank. Net loss attributable to owners was KRW 5.79 billion in 2023, KRW 5.20 billion in 2024 and KRW 3.50 billion in 2025 — a somewhat smaller absolute loss over time, but still substantial. On a quarterly basis, revenue of KRW 789 million and an operating loss of KRW 1.32 billion in the second quarter of 2025 gave way to revenue falling to KRW 479 million and an operating loss of KRW 976 million in the third quarter, before revenue recovered to KRW 1.31 billion in the fourth quarter with the operating loss narrowing sharply to KRW 243 million. However, losses widened again in the first quarter of 2026 (revenue of KRW 890 million, operating loss of KRW 559 million) and the second quarter (revenue of KRW 743 million, operating loss of KRW 693 million), suggesting the fourth-quarter improvement may have been temporary. The combined net loss attributable to owners over the most recent four quarters (third quarter 2025 through second quarter 2026) stood at about KRW 2.40 billion. Operating cash flow deteriorated from a positive KRW 281 million in 2023 to negative KRW 1.34 billion in 2024 and negative KRW 2.79 billion in 2025, indicating an accelerating pace of cash burn. Total equity rose to KRW 13.0 billion in 2024 on IPO proceeds before falling to KRW 10.5 billion in 2025 due to accumulated losses, while the debt ratio dropped from 102.6% in 2023 to 39.3% in 2024 and 41.7% in 2025, remaining at a lower level since the listing."
  },
  "industry": {
-  "ko": "글로벌 스마트 제조 시장은 2025년 약 3,300~3,940억 달러 규모에서 2034~2035년까지 연평균 14~15% 성장이 전망되며, 2026년은 제조 AI가 파일럿 단계를 넘어 공장 운영 아키텍처의 전면으로 이동하는 실질적 전환점으로 평가된다. 산업통상자원부는 2025년부터 'AI 팩토리 전문기업' 선정 제도를 가동하며 AI 자율제조 생태계 육성을 국가 과제로 추진 중이다. 제조업 내 AI 수요는 공정 데이터 분석, 설비 예지보전, 품질 검사, 에너지 관리 등 다방면에서 확대되고 있으며, 2026년에는 생산 계획·스케줄링 분야에서 도입이 크게 늘어날 것으로 예상된다. 유디엠텍의 핵심 전방 시장인 자동차 부문은 스마트 제조 시장의 약 32%를 차지하며, 전기화 전환 과정에서 중장기적으로 스마트 솔루션 채택이 확대될 구조다. 다만 2024~2025년 글로벌 전기차 수요 둔화와 공급망 불확실성으로 대형 고객사들이 설비투자를 동결·지연해 솔루션 공급기업에 직접적인 타격을 줬다. 경쟁사 측면에서는 Siemens, Rockwell Automation, Fanuc 등 글로벌 대형 FA 기업들이 자체 플랫폼에 AI 기능을 통합하는 방향으로 나아가고 있어, 검증된 레퍼런스 없이 대형 고객을 신규 확보하기 어렵다는 구조적 제약도 존재한다.",
-  "en": "The global smart manufacturing market is estimated at USD 330–394 billion in 2025 and is forecast to expand at a ~14–15% CAGR through 2034–2035, with 2026 characterized as a genuine inflection point where manufacturing AI moves from pilots to the core of factory operating architecture. South Korea's Ministry of Trade, Industry and Energy launched an AI Factory Specialist certification program in 2025 as a national priority to cultivate autonomous-manufacturing ecosystems. AI demand in manufacturing is broadening across process data analytics, predictive maintenance, quality inspection, and energy management, with production planning and scheduling expected to see the strongest new adoption in 2026. The automotive sector—UDMTEK's primary end-market—accounts for approximately 32% of the smart manufacturing market and is structurally positioned for expanding smart solution adoption as electrification transitions mature. However, global EV demand softness and supply-chain uncertainty in 2024–2025 caused large customers to freeze or delay capex, directly suppressing solution vendor revenues. On the competitive side, global FA giants such as Siemens, Rockwell Automation, and Fanuc are integrating AI features into their own platforms, structurally limiting easy new-account penetration for smaller specialists without established customer references."
+  "ko": "유디엠텍이 속한 스마트팩토리·산업용 AI 진단 솔루션 시장은 제조업의 디지털 전환과 예지보전 수요 확대를 배경으로 성장이 기대되는 분야다. 자동화 설비의 노후화와 숙련 인력 부족이 맞물리면서 설비 이상을 사전에 감지하고 다운타임을 줄이는 진단·모니터링 솔루션에 대한 수요가 커지고 있다. 다만 이 시장은 2차전지·반도체 등 전방산업의 설비투자 사이클에 실적이 연동되는 경향이 있어, 회사 스스로도 2024년 실적 악화의 원인으로 이차전지 등 전방산업 투자 축소를 지목한 바 있다. 최근에는 생성형 AI와 디지털트윈, 엔비디아의 시뮬레이션 플랫폼 등 기술이 결합되면서 협동로봇·휴머노이드 로봇까지 포괄하는 통합 제조 AI 플랫폼으로 시장의 관심 축이 이동하는 흐름도 관찰된다. 국내에서는 대기업 계열 IT서비스사, 스마트팩토리 전문 중소기업 등이 유사 영역에서 경쁘 구도를 형성하고 있으며, 해외 시장에서는 미국 동부지역 제조업체 대상 PoC(개념 검증) 등을 통해 현지화를 시도하는 단계로 파악된다. 유디엠텍은 PLC 제어 로직을 직접 해석하는 MLP 기술을 차별화 요소로 내세우며 자동차·2차전지·반도체·조선·발전·국방 등 다양한 산업군으로 적용 확대를 모색하고 있다. 다만 회사 규모가 작아 대형 고객사의 예산 배정이나 프로젝트 채택 여부에 실적이 크게 좌우되는 구조라는 점은 산업 내 위치를 이해하는 데 중요한 변수다.",
+  "en": "The smart-factory and industrial AI diagnostics market in which UDMTek operates is expected to grow on the back of manufacturing digital transformation and rising demand for predictive maintenance. Aging automation equipment combined with a shortage of skilled labor is increasing demand for diagnostic and monitoring solutions that detect equipment anomalies in advance and reduce downtime. However, this market tends to move with the capital expenditure cycles of upstream industries such as batteries and semiconductors, and the company itself has cited reduced capital investment in sectors such as secondary batteries as a factor behind its 2024 earnings deterioration. More recently, the combination of generative AI, digital twins, and simulation platforms such as NVIDIA's has shifted market attention toward integrated manufacturing AI platforms that extend to collaborative and humanoid robots. Domestically, large-conglomerate-affiliated IT service providers and specialized smart-factory SMEs form a similar competitive landscape, while overseas the company appears to be attempting localization through proof-of-concept projects with manufacturers in the eastern United States. UDMTek positions its MLP technology, which directly interprets PLC control logic, as a differentiator and is seeking to expand applications across automotive, secondary battery, semiconductor, shipbuilding, power generation, and defense sectors. However, given the company's small scale, its results remain heavily dependent on whether large customers allocate budgets or adopt its projects, an important variable in understanding its position within the industry."
  },
  "outlook": {
-  "ko": "2025년 3월 통합 관제 플랫폼 OPTRA Platform의 공식 출시와 고객사의 긍정적 반응은 제품 포트폴리오 확대의 첫 신호탄이다. 2026년 6월에는 한국GM 공장 생산 라인에 OPTRA Platform 기반 설비진단 시스템을 공급하는 계약을 체결해 글로벌 OEM 레퍼런스를 추가했으며, 회사는 이를 글로벌 자동차 제조 시장으로의 확장 발판으로 삼을 계획임을 밝혔다. SK케미칼·SK C&C 협업을 통해 SK그룹 주요 제조 계열사로 JSA 솔루션을 확산하는 경로도 열렸으며, 향후 철강·반도체·중공업·화학 등 다양한 산업군으로의 적용 범위 확대도 추진 중이다. 북미 시장에서는 미국 특정 제조업체(L사)에 OPTRA Black-box를 설치·PoC 진행 중이며, Rockwell Automation 제어기와 연동하는 데모를 선보이고 미국 동부 제조업체들과 지속적인 사업협력을 추진하고 있다. 일본 파트너사와도 유사 프로젝트에 관해 복수 차례 세부 협의가 이루어졌다. 회사는 PLC를 넘어 PC 제어기 분야의 기계어처리 기술 연구개발도 진행 중으로, 상용화 시 반도체 등 고부가 산업군으로 진입할 수 있다. 상장 당시 공개된 원래 중장기 매출 가이던스와 현 실적 간의 괴리가 크기 때문에, 단기 수치 목표보다는 레퍼런스 누적·고객 다변화·해외 PoC 전환 실적이 핵심 관찰 포인트다.",
-  "en": "The official launch of the integrated OPTRA Platform in March 2025, accompanied by positive customer reception, marks the first step toward a broader product portfolio. In June 2026, a supply contract was signed with Korean GM for OPTRA Platform-based equipment diagnostics on factory production lines—adding a global OEM to the reference base; the company has stated its intention to use this as a springboard for expansion in global auto manufacturing. Collaboration with SK Chemical and SK C&C opens a pathway to roll out the JSA solution across SK Group manufacturing affiliates, with plans to expand further into steel, semiconductors, heavy industry, and chemicals. In North America, a live PoC is underway with a U.S. manufacturer (L company) after installing OPTRA Black-box on-site; integration demos with Rockwell Automation equipment have been showcased, and ongoing business cooperation is being pursued with U.S. East Coast manufacturers. Multiple detailed discussions have also taken place with a Japanese partner on similar projects. R&D on PC controller-based MLP technology is ongoing; if commercialized, it would open access to the higher-margin semiconductor sector. Given the wide gap between the original IPO guidance and current performance, reference accumulation, customer diversification, and overseas PoC conversion are more meaningful near-term tracking metrics than any stated financial targets."
+  "ko": "회사는 2026년 들어 대형 고객사와의 계약을 잇달아 공시하며 사업 확장 의지를 보이고 있다. 5월에는 모빌리티 소프트웨어·첨단 제조 전문 기업과 엔비디아 아이작 심 기반 차세대 디지털트윈 플랫폼 공급 계약을 체결해 협동로봇·산업용 로봇의 동작 검증과 공정 시뮬레이션까지 사업 영역을 넓혔고, 향후 휴머노이드 로봇으로 확장 가능한 통합 플랫폼 구조를 제시할 계획이라고 밝혔다. 6월에는 윈텍에스에이를 통해 GM(제너럴모터스) 한국 공장에 옵트라 플랫폼을 공급하는 계약을 체결하며 글로벌 완성차 시장으로의 확장 발판을 마련했다고 설명했다. 같은 달 스마트 에어 케어 플랫폼 기반 운영관리 서비스 계약도 체결했는데, 계약금액이 전년도 매출액의 31.84%에 해당하는 규모였다. 다만 이러한 신규 계약이 실제 매출과 이익으로 얼마나 전환될지는 2026년 3분기 이후 실적 공시를 통해 확인이 필요하다. 회사는 별도의 정량적 매출·이익 가이던스를 공식적으로 제시하지 않은 상태이며, 2026년 8월 시가총액 미달로 관리종목에 지정된 만큼 향후 90거래일 이내에 시가총액 요건(2026년 말까지 200억원, 2027년부터 300억원)을 45거래일 이상 충족해야 지정 해제가 가능한 구조다. CES 등 글로벌 전시회를 통한 해외 마케팅과 미국 제조업체 대상 PoC 진행 상황도 향후 사업 확대 여부를 가늠할 수 있는 지표가 될 것으로 보인다.",
+  "en": "The company has shown intent to expand its business by disclosing a series of contracts with large customers in 2026. In May it signed a contract with a mobility software and advanced manufacturing company to supply a next-generation digital twin platform based on NVIDIA Isaac Sim, extending into motion verification and process simulation for collaborative and industrial robots, and stated it plans to present an integrated platform structure extendable to humanoid robots in the future. In June it signed a contract via Wintec S.A. to supply the OPTRA Platform to a Korea GM plant, describing it as a foothold for expansion into the global automotive manufacturing market. In the same month, it also signed a Smart Air Care Platform-based operation management service contract, with the contract value equivalent to 31.84% of the prior year's revenue. However, how much of these new contracts will translate into actual revenue and profit needs to be confirmed through earnings disclosures from the third quarter of 2026 onward. The company has not officially provided specific quantitative revenue or profit guidance, and since it was designated an administrative issue stock in August 2026 due to a market capitalization shortfall, it must meet the market cap requirement (KRW 20 billion through the end of 2026, rising to KRW 30 billion from 2027) for at least 45 trading days within the following 90 trading days to have the designation lifted. Progress on overseas marketing through global exhibitions such as CES and proof-of-concept projects with U.S. manufacturers will also serve as indicators for gauging future business expansion."
  },
  "valuation_comment": {
-  "ko": "지속적인 영업적자로 주당순이익(EPS) 산출이 불가능한 상태여서 이익 기반 멀티플 적용이 어렵고, 주당순자산(BPS 1,199원)을 기준으로 한 순자산 가치 대비 소폭의 프리미엄 구간에서 주가가 형성되고 있다. 이는 현재 수익성이 아닌 미래 기술 상용화 가능성에 기반한 가치 인식임을 시사한다. 무배당(DPS 0원)으로 배당수익률은 존재하지 않으며, 배당 재개 일정도 현재로선 확인되지 않는다. 실적 적자 국면이 지속되는 한 자본 잠식 압력이 BPS를 점진적으로 낮출 수 있어, 현재 순자산 프리미엄의 의미가 시간이 지남에 따라 달라질 수 있다는 점을 유의해야 한다. 한국GM 공급 계약·SK케미칼 협업 등 수주 뉴스에 주가가 반응하는 옵션적 특성이 강하며, 향후 분기 실적에서 매출 회복과 손실 축소가 가시화될수록 재평가 근거가 강화된다.",
-  "en": "Sustained operating losses render EPS-based multiple analysis inapplicable; the stock currently trades at a modest premium to book value per share (BPS: KRW 1,199), suggesting that market pricing reflects future technology monetization potential rather than current profitability. With no dividend (DPS: KRW 0) and no confirmed timeline for resumption, the income-return component is absent. If losses persist, continued book value erosion could gradually lower the BPS floor against which the current premium is measured—a dynamic worth monitoring. The share price exhibits option-like characteristics, reacting primarily to contract announcements such as the Korean GM supply deal and SK Chemical collaboration; visible revenue recovery and loss narrowing in future quarterly results would strengthen the fundamental basis for any revaluation."
+  "ko": "유디엠텍은 최근 3년간 순손실이 지속돼 손익 기준 밸류에이션 지표를 산출하기 어려운 상태이며, 주가는 순자산가치 대비 프리미엄이 있는 구간에서 거래되고 있다. 자체 산출 기준과 KRX 기준 순자산가치비율 사이에 일부 차이가 있으나, 두 기준 모두 순자산 대비 주가가 할인이 아닌 프리미엄 영역에 있음을 보여준다. 배당은 지급 실적이 없어 배당 관련 지표는 의미를 갖지 않는다. 회사의 손익구조는 2023년 영업흑자에서 2024~2025년 영업적자로 전환된 뒤 손실 규모가 매출 감소 속에서도 확대되는 흐름을 보였고, 이는 순자산가치 산정의 기초가 되는 자본총계가 상장 이후 지속적으로 줄어드는 배경이 됐다. 2026년 8월 시가총액 미달에 따른 관리종목 지정은 밸류에이션을 해석할 때 실적 지표 이상의 구조적 변수로 함께 고려할 필요가 있다. 신규 대형 고객사 수주가 향후 손익 개선으로 이어질지가 순자산가치 대비 현재 거래 수준의 지속 가능성을 가르는 핵심 변수로 남아 있다.",
+  "en": "UDMTek has recorded continuous net losses over the past three years, making profit-based valuation metrics difficult to derive, and the shares trade at a premium relative to net asset value. There is some divergence between the company's self-calculated price-to-book ratio and the KRX-based figure, but both indicate that the stock trades at a premium rather than a discount to net assets. The company has no dividend payment history, so dividend-related metrics carry little meaning. Its profit structure shifted from an operating profit in 2023 to operating losses in 2024 and 2025, with the loss scale widening even as revenue declined, which underlies the steady decline in total equity — the basis for net asset value — since the listing. The administrative issue designation triggered by the market capitalization shortfall in August 2026 needs to be considered alongside earnings metrics as a structural variable when interpreting valuation. Whether new large-customer contract wins translate into an improved profit outlook remains the key variable determining the sustainability of the current trading level relative to net asset value."
  },
  "bull": [
   {
    "title": {
-    "ko": "독점적 MLP 기술과 검증된 대형 고객 레퍼런스",
-    "en": "Proprietary MLP Technology and Validated Blue-Chip Customer References"
+    "ko": "글로벌 완성차·모빌리티 분야 신규 레퍼런스 확보",
+    "en": "New references secured in global automotive and mobility sectors"
    },
    "body": {
-    "ko": "기계어처리(MLP) 기술은 국내외 최초로 개발된 특허 기반 역량으로, PLC 제어 로직을 AI가 직접 해석해 설비 예지보전·품질 분석·안전 관리에 적용할 수 있다. 현대기아차·LG에너지솔루션·현대모비스 등 대형 제조사 레퍼런스는 신규 고객 확보 시 강력한 검증 근거로 작동한다. 2026년 6월 한국GM 공급 계약 체결은 글로벌 완성차 OEM으로의 레퍼런스 확장을 입증하며 영업력의 진화를 보여준다.",
-    "en": "MLP technology is a first-of-its-kind, patent-based capability enabling AI to directly interpret PLC control logic for predictive maintenance, quality analysis, and safety management. References with large manufacturers such as Hyundai-Kia Motors, LG Energy Solution, and Hyundai Mobis provide strong validation in new customer conversations. The Korean GM supply contract signed in June 2026 demonstrates the broadening of references to global OEMs and an evolution in commercial reach."
+    "ko": "2026년 5~6월 사이 엔비디아 아이작 심 기반 디지털트윈 계약과 GM코리아 대상 옵트라 플랫폼 공급 계약을 잇달아 체결하며 글로벌 완성차·모빌리티 고객군으로 레퍼런스를 넓혔다. 이러한 계약은 향후 동일 산업군 내 추가 수주로 이어질 수 있는 교두보 역할을 할 수 있다. 특히 협동로봇·휴머노이드 로봇까지 확장 가능한 플랫폼 구조를 표방하고 있어 로봇 산업으로의 응용 여지도 열려 있다.",
+    "en": "Between May and June 2026 the company signed both an NVIDIA Isaac Sim-based digital twin contract and an OPTRA Platform supply contract for Korea GM in succession, broadening its reference base within the global automotive and mobility customer segment. These contracts could serve as a bridgehead for additional orders within the same industry. In particular, the platform is positioned as extendable to collaborative and humanoid robots, leaving room for application in the robotics industry."
    }
   },
   {
    "title": {
-    "ko": "제조 AI 전환 가속 및 한국 정부 정책 수혜",
-    "en": "Accelerating Manufacturing AI Transition and Korean Government Policy Tailwinds"
+    "ko": "부채비율은 상장 이후 안정적 수준 유지",
+    "en": "Debt ratio has remained at a stable level since listing"
    },
    "body": {
-    "ko": "2026년은 제조 AI가 파일럿 단계를 넘어 공장 운영 아키텍처의 전면으로 이동하는 전환점으로 평가된다. 한국 산업통상자원부의 AI 팩토리 전문기업 육성 제도는 기술 특화 솔루션 기업에 정부 과제 수주 기회와 공신력 강화를 동시에 제공한다. 글로벌 스마트 제조 시장이 연 14% 이상 성장하는 구조적 상승 사이클 속에서, 자동차·2차전지의 설비투자 재개가 맞물릴 경우 매출 반등 폭이 확대될 수 있다.",
-    "en": "The year 2026 is positioned as a turning point where manufacturing AI moves from pilot programs to the forefront of factory operating architecture. South Korea's AI Factory Specialist certification program simultaneously offers project-sourcing opportunities and credibility enhancement for niche technology providers. Within a structural growth cycle of ~14% annual expansion in global smart manufacturing, a resumption of capex in automotive and secondary battery sectors could amplify the revenue rebound."
+    "ko": "부채비율은 2023년 102.6%에서 2024년 39.3%, 2025년 41.7%로 상장 자금 유입 이후 낮은 수준을 유지하고 있다. 이는 재무적 유연성 측면에서 완충 역할을 할 수 있는 요인이다. 다만 자본총계 자체가 누적 손실로 계속 줄고 있다는 점은 함께 봐야 한다.",
+    "en": "The debt ratio has stayed at a relatively low level since the influx of IPO proceeds, moving from 102.6% in 2023 to 39.3% in 2024 and 41.7% in 2025. This can act as a buffer in terms of financial flexibility. However, it should be viewed alongside the fact that total equity itself continues to shrink due to accumulated losses."
    }
   },
   {
    "title": {
-    "ko": "SK그룹·북미 PoC 기반 수주 가시화 잠재력",
-    "en": "Order Materialization Potential via SK Group Ecosystem and North American PoCs"
+    "ko": "차별화된 MLP 기술 기반 다산업 적용 시도",
+    "en": "Multi-industry application attempts based on differentiated MLP technology"
    },
    "body": {
-    "ko": "SK케미칼·SK C&C와의 JSA 계약은 SK그룹 주요 제조 계열사 전체로의 솔루션 확산 경로를 열었으며, 향후 철강·반도체·중공업 등으로의 적용 범위 확대도 계획되어 있다. 미국 L사 PoC가 상업 계약으로 전환되고 Rockwell Automation과의 연동 시너지가 구현될 경우 북미라는 대형 시장에 교두보를 확보하게 된다. 일본 파트너사와의 복수 협의도 성과로 이어질 경우 아시아 전체 레퍼런스 네트워크를 강화한다.",
-    "en": "The JSA agreement with SK Chemical and SK C&C opens a roll-out pathway across major SK Group manufacturing affiliates, with further expansion into steel, semiconductors, and heavy industry planned. If the U.S. PoC (L company) converts to a commercial agreement and Rockwell Automation integration delivers practical synergies, UDMTEK would secure a foothold in the large North American market. Successful conclusion of Japanese partner negotiations would simultaneously strengthen the Asian reference network."
+    "ko": "PLC 제어 로직을 직접 해석하는 기계어 처리(MLP) 기술은 단순 데이터 수집형 솔루션과 차별화되는 요소로 제시되고 있다. 회사는 이 기술을 자동차, 2차전지, 반도체, 조선, 발전, 국방 등 다양한 산업군에 적용을 확대하려는 시도를 지속하고 있다. SK케미칼과의 JSA 자동화 계약처럼 산업안전 등 신규 응용 분야로도 사업 영역을 넓히고 있다.",
+    "en": "The MLP technology, which directly interprets PLC control logic, is presented as a differentiator from solutions that merely collect data. The company continues efforts to expand application of this technology across sectors including automotive, secondary batteries, semiconductors, shipbuilding, power generation, and defense. It is also broadening into new application areas such as industrial safety, as seen in its JSA automation contract with SK Chemical."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "지속적 영업적자와 현금 소진 위험",
-    "en": "Persistent Operating Losses and Cash Burn Risk"
+    "ko": "시가총액 미달로 관리종목 지정, 상장폐지 리스크 부각",
+    "en": "Administrative issue designation due to market cap shortfall raises delisting risk"
    },
    "body": {
-    "ko": "2024~2025년 연속 영업적자를 기록했고, 2025년 OPM은 -113.5%로 매출 전액을 소화하고도 그 이상의 비용이 발생하는 구조다. 영업현금흐름은 2025년 약 -27.9억 원으로 전년(-13.4억 원) 대비 크게 악화됐다. 분기 평균 매출이 약 8~13억 원 구간에 머무는 한 고정비 구조상 손익분기점 도달이 어려우며, 자본 소진이 지속될 경우 추가 자금 조달 필요성이 부상할 수 있다.",
-    "en": "The company posted consecutive operating losses in 2024 and 2025; the 2025 OPM of -113.5% means costs exceeded total revenue. Operating cash flow worsened materially to approximately -KRW 2.79 billion in 2025 from -KRW 1.34 billion in 2024. With average quarterly revenue in the KRW 800 million–KRW 1.3 billion range, the fixed-cost structure makes breakeven difficult, and continued capital erosion may eventually necessitate additional financing."
+    "ko": "2026년 8월 10일 시가총액 미달을 사유로 관리종목에 지정됐으며, 지정 후 90거래일 이내에 시가총액 기준(2026년 말까지 200억원, 이후 300억원)을 45거래일 이상 충족하지 못하면 상장폐지 사유가 발생할 수 있다. 이는 단순한 실적 부진을 넘어 상장 유지 여부와 직결되는 구조적 리스크다. 신규 수주만으로 이 요건을 즉각 해소하기는 쉽지 않은 구조다.",
+    "en": "On August 10, 2026, the company was designated an administrative issue stock due to a market capitalization shortfall, and if it fails to meet the market cap requirement (KRW 20 billion through the end of 2026, then KRW 30 billion) for at least 45 trading days within 90 trading days of designation, grounds for delisting could arise. This is a structural risk directly tied to continued listing status, beyond simple earnings weakness. New contract wins alone are unlikely to immediately resolve this requirement."
    }
   },
   {
    "title": {
-    "ko": "전방 제조업 설비투자 회복 지연 위험",
-    "en": "Upstream Manufacturing Capex Recovery Delay Risk"
+    "ko": "매출 3년 연속 감소, 영업손실 규모 확대",
+    "en": "Revenue has declined for three straight years while operating losses have widened"
    },
    "body": {
-    "ko": "유디엠텍 매출의 상당 부분은 자동차·2차전지 고객사의 신규 설비투자 및 스마트팩토리 고도화 예산에 연동된다. 전기차 수요 성장 둔화, 글로벌 관세 불확실성, 거시 금리 환경에 따라 대형 고객사의 설비투자 재개 시점이 지연될 수 있다. 2025년 매출의 47% 급감이 이 같은 전방산업 의존도를 실증적으로 보여준 바 있다.",
-    "en": "A significant portion of UDMTEK's revenue is linked to new capex or smart factory upgrading budgets at automotive and battery clients. EV demand deceleration, global tariff uncertainty, and the macro interest-rate environment could delay large-customer capex resumption. The 47% revenue collapse in 2025 empirically illustrates this structural sensitivity to upstream investment cycles."
+    "ko": "매출액은 2023년 74.2억원에서 2025년 32.1억원으로 절반 이하로 줄었고, 같은 기간 영업이익은 흑자에서 -36.5억원의 적자로 전환·확대됐다. 2026년 1~2분기에도 적자가 다시 확대되는 흐름이 나타나 4분기의 개선이 지속되지 못했다. 매출 기반이 축소된 상태에서 고정비 부담이 이어질 경우 손익 회복이 늦어질 수 있다.",
+    "en": "Revenue fell by more than half, from KRW 7.42 billion in 2023 to KRW 3.21 billion in 2025, and operating profit over the same period shifted from a surplus to a loss of KRW 3.65 billion. Losses widened again in the first and second quarters of 2026, indicating the fourth-quarter improvement was not sustained. If fixed cost burdens persist against a shrinking revenue base, a recovery in profitability could be delayed."
    }
   },
   {
    "title": {
-    "ko": "소규모 조직의 스케일업 및 경쟁 심화 리스크",
-    "en": "Scale-Up Risk and Intensifying Competition for a Small-Scale Organization"
+    "ko": "영업현금흐름 악화로 현금 소진 속도 가속",
+    "en": "Deteriorating operating cash flow accelerates cash burn"
    },
    "body": {
-    "ko": "직원 약 45명 규모로, 복수의 대형 고객 프로젝트 동시 수행과 해외 시장 개척에 인력·자금 양면의 제약이 있다. Siemens·Rockwell Automation 등 글로벌 대형 FA 기업들이 자체 플랫폼에 AI 기능을 통합하는 속도가 빨라지면서, MLP 기반 솔루션의 차별화 영역이 점진적으로 잠식될 가능성이 있다. 북미·일본 PoC가 상업 계약으로 전환되지 못할 경우 성장 모멘텀이 기대에 미치지 못할 수 있다.",
-    "en": "With approximately 45 employees, the company faces dual constraints—headcount and capital—when simultaneously executing multiple large-scale projects and pursuing overseas markets. Global FA giants such as Siemens and Rockwell Automation are rapidly embedding their own AI capabilities into existing platforms, which may gradually erode the differentiation of MLP-based solutions. If North American and Japanese PoCs fail to convert to commercial contracts, growth momentum could fall materially short of expectations."
+    "ko": "영업활동현금흐름은 2023년 +2.8억원에서 2024년 -13.4억원, 2025년 -27.9억원으로 적자 규모가 매년 확대되고 있다. 이는 신규 계약이 실제 현금 유입으로 연결되는 속도가 손실 확대 속도를 따라가지 못하고 있음을 시사한다. 추가 자금 조달이나 비용 구조조정이 필요할 가능성을 배제할 수 없다.",
+    "en": "Operating cash flow moved from a positive KRW 281 million in 2023 to negative KRW 1.34 billion in 2024 and negative KRW 2.79 billion in 2025, with the deficit widening each year. This suggests the pace at which new contracts convert into actual cash inflows has not kept up with the pace of widening losses. The possibility of additional fundraising or cost restructuring cannot be ruled out."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 및 수주 편중 리스크",
-    "en": "Customer Concentration and Order Lumpiness Risk"
+    "ko": "상장 유지 리스크",
+    "en": "Listing maintenance risk"
    },
    "body": {
-    "ko": "매출 규모가 영세하고 고객사 수가 제한적이어서, 소수 주요 고객의 프로젝트 지연이나 예산 삭감이 분기 실적에 즉각적인 충격을 준다. 실제로 2025년 3분기 매출이 약 4.8억 원으로 전 분기 대비 급감한 데서 이를 확인할 수 있다. 고객 다변화와 수주 파이프라인의 가시성 확보가 수익 안정화의 선결 조건이다.",
-    "en": "With limited revenue scale and a small customer base, project delays or budget cuts at any major client can immediately impact quarterly results—as evidenced by the near-collapse of Q3 2025 revenue to approximately KRW 479 million. Broadening the customer base and improving visibility into the order pipeline are prerequisites for revenue stabilization."
+    "ko": "2026년 8월 관리종목 지정 이후 90거래일 내 시가총액 요건을 45거래일 이상 충족하지 못하면 상장폐지 사유에 해당될 수 있다. 이는 실적이나 사업 모멘텀과는 별개로 주가와 시가총액 수준에 직접 연동되는 리스크다. 투자자는 관리종목 해제 요건 진행 상황을 지속적으로 확인할 필요가 있다.",
+    "en": "If the market cap requirement is not met for at least 45 trading days within 90 trading days following the August 2026 administrative issue designation, grounds for delisting could arise. This risk is directly tied to stock price and market cap levels, independent of business performance or momentum. Investors need to continuously monitor progress toward meeting the requirement for lifting the designation."
    }
   },
   {
    "cat": {
-    "ko": "기술 상용화 및 글로벌 확장 지연 리스크",
-    "en": "Technology Commercialization and Global Expansion Delay Risk"
+    "ko": "수익성·현금흐름 리스크",
+    "en": "Profitability and cash flow risk"
    },
    "body": {
-    "ko": "CES 2025 참가, Rockwell Automation 연동 데모, 북미·일본 PoC 등 해외 개척 활동이 활발하지만, PoC에서 실제 상업 계약으로의 전환에는 상당한 시간과 자원이 소요된다. PC 제어기 기반 기계어처리 기술도 아직 연구개발 단계로 상용화 일정이 불명확하다. 기대 이하의 해외 수주 성과는 성장 스토리에 대한 재평가를 촉발할 수 있다.",
-    "en": "While global outreach activities—CES 2025 participation, Rockwell Automation integration demos, and PoCs in North America and Japan—are active, converting PoCs into commercial agreements typically requires significant time and resources. PC controller-based MLP technology remains in the R&D stage with an unclear commercialization timeline. Disappointing overseas contract conversion could trigger a reassessment of the growth narrative."
+    "ko": "3년 연속 영업손실과 순손실이 이어지고 있으며, 영업활동현금흐름도 2024~2025년 연속 마이너스로 현금 소진이 지속되고 있다. 신규 계약이 실제 매출·이익 개선으로 전환되는 시점과 규모가 불확실하다. 추가적인 외부 자금조달 필요성이 제기될 수 있다.",
+    "en": "Operating and net losses have persisted for three consecutive years, and operating cash flow has also remained negative in both 2024 and 2025, indicating continued cash burn. The timing and scale at which new contracts will translate into actual revenue and profit improvement remain uncertain. The need for additional external financing could arise."
    }
   },
   {
    "cat": {
-    "ko": "재무 건전성 악화 및 추가 자금 조달 리스크",
-    "en": "Deteriorating Financial Health and Equity Dilution Risk"
+    "ko": "고객·수주 집중 리스크",
+    "en": "Customer and order concentration risk"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 약 105.1억 원이나, 영업현금흐름이 연 -27.9억 원 수준으로 지속될 경우 수년 내 자본 잠식 위험이 부상할 수 있다. 상장 시 조달한 자금(약 110억 원)의 잔여분이 소진되는 시점에서 매출 반등이 지연될 경우, 추가 유상증자나 외부 차입 가능성이 있어 기존 주주 지분 희석 리스크를 내포한다. 영업 규모 대비 유동성 완충 여력을 분기별로 확인할 필요가 있다.",
-    "en": "End-2025 total equity stood at approximately KRW 10.51 billion, but if annual operating cash outflow continues at approximately -KRW 2.79 billion, capital erosion could become a material concern within a few years. If revenue recovery is delayed as IPO proceeds are depleted, additional equity issuances or external borrowing may be required, carrying dilution risk for existing shareholders. Liquidity buffer relative to operating scale warrants quarterly monitoring."
+    "ko": "회사 규모가 작아 개별 대형 계약 하나가 실적에 미치는 영향이 크며, 실제 계약 상대방이 비밀유지 등의 이유로 공개되지 않는 경우도 있어 수주 내용의 투명성 확인에 제약이 있다. 특정 전방산업(2차전지 등)의 투자 축소가 과거 실적 악화의 원인으로 지목된 만큼, 향후에도 전방산업 투자 사이클에 따른 실적 변동성이 클 수 있다.",
+    "en": "Given the company's small scale, a single large contract can have an outsized impact on results, and in some cases contract counterparties are not disclosed due to confidentiality requests, limiting transparency in verifying order details. Since reduced investment in specific upstream industries such as secondary batteries has previously been cited as a cause of earnings deterioration, earnings volatility tied to upstream industry investment cycles could remain significant going forward."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 말",
-    "en": "Late August 2026"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표: 2026년 6월 체결된 한국GM 공급 계약과 SK케미칼 JSA 프로젝트의 매출 기여 여부를 확인하고, 2025년 4분기에 시작된 영업손실 축소 흐름이 지속되는지 점검한다.",
-    "en": "Q2 2026 earnings release: Assess whether the Korean GM supply contract (signed June 2026) and SK Chemical JSA project have begun contributing to revenue, and confirm whether the operating loss narrowing trend that emerged in Q4 2025 is being sustained."
+    "ko": "2026년 3분기 실적 공시를 통해 GM코리아·엔비디아 관련 신규 계약이 매출·손익에 실제로 반영되는지 확인이 필요하다.",
+    "en": "The third-quarter 2026 earnings disclosure will show whether the new Korea GM and NVIDIA-related contracts are actually reflected in revenue and profit."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "H2 2026"
+    "ko": "2026년 4분기 중(관리종목 지정 후 90거래일 시점 전후)",
+    "en": "During the fourth quarter of 2026 (around the 90-trading-day mark after the administrative issue designation)"
    },
    "what": {
-    "ko": "북미 PoC 상업 전환 및 Rockwell Automation 협력 진전: 미국 L사 실증사업 완료 후 상업 계약 전환 여부와 Rockwell Automation과의 연동 협력 구체화 수준이 글로벌 확장의 분수령이 된다.",
-    "en": "North American PoC commercial conversion and Rockwell Automation partnership progress: Whether the live PoC with the U.S. firm (L) converts to a commercial agreement, and the degree of concretization in Rockwell Automation collaboration, will be decisive indicators for global expansion."
+    "ko": "시가총액이 관리종목 해제 기준(200억원)을 45거래일 이상 충족했는지가 상장 유지 여부를 가르는 핵심 확인 사항이다.",
+    "en": "Whether market capitalization has met the deregistration threshold (KRW 20 billion) for at least 45 trading days is the key item to confirm for continued listing status."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 초",
-    "en": "H2 2026–Early 2027"
+    "ko": "수시 공시 확인",
+    "en": "Ongoing disclosure monitoring"
    },
    "what": {
-    "ko": "일본 파트너 계약 체결 여부: 복수 세부 협의가 이루어진 일본 파트너와의 계약 성사 시 아시아 레퍼런스 강화와 공급망 확장 가능성을 평가한다.",
-    "en": "Japan partnership contract signing: If ongoing multi-round negotiations with the Japanese partner result in a formal agreement, assess implications for strengthening Asian customer references and potential supply-chain expansion."
+    "ko": "GM코리아 옵트라 플랫폼 설치·가동 진행 상황과 엔비디아 아이작 심 기반 디지털트윈 프로젝트의 후속 계약 여부를 수시 공시로 확인할 필요가 있다.",
+    "en": "Progress on the installation and operation of the OPTRA Platform at Korea GM and any follow-on contracts related to the NVIDIA Isaac Sim-based digital twin project should be monitored through ad hoc disclosures."
    }
   },
   {
    "when": {
-    "ko": "2027년 3~4월(FY2026 연간 실적 발표)",
-    "en": "Q1 2027 (FY2026 Annual Earnings Release)"
+    "ko": "2027년 1월(CES 2027 등 전시회 일정)",
+    "en": "January 2027 (exhibition schedule including CES 2027)"
    },
    "what": {
-    "ko": "FY2026 연간 매출 회복 규모와 영업손실 개선폭: 한국GM·SK케미칼 등 신규 계약들이 연간 매출에 충분히 반영되어 손익분기점에 근접하는지가 재무 모멘텀의 핵심 체크포인트다.",
-    "en": "FY2026 full-year revenue recovery magnitude and operating loss improvement: Whether new contracts including Korean GM and SK Chemical are sufficiently reflected in annual revenue to bring the company noticeably closer to breakeven is the primary financial momentum checkpoint."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기(수시 공시 모니터링)",
-    "en": "H2 2026 (Ongoing DART Disclosure Monitoring)"
-   },
-   "what": {
-    "ko": "PC 제어기 기반 기계어처리 기술 개발 현황 공시: 반도체 등 신규 산업군 진입을 위한 PC 기계어처리 기술의 R&D 진도 발표나 시연 소식이 확인될 경우, 장기 제품 포트폴리오 확장 가능성을 재평가할 수 있다.",
-    "en": "DART disclosure on PC controller-based MLP technology development: Any announced progress or demonstration of PC-based machine language processing—targeting semiconductor and other new verticals—would warrant a reassessment of long-term product portfolio expansion potential."
+    "ko": "과거 CES 참가 사례처럼 해외 전시회를 통한 신제품 공개나 해외 고객사와의 논의 진전 여부가 해외 시장 개척 속도를 가늠하는 지표가 될 수 있다.",
+    "en": "As with past CES participation, whether new products are unveiled or discussions with overseas customers progress at international exhibitions could serve as an indicator of the pace of overseas market development."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "유디엠텍은 국내외 최초의 기계어처리(MLP) 기술을 보유한 산업용 AI 소프트웨어 기업으로, 스마트 제조가 AI 기반 자율 공장으로 전환하는 구조적 성장 국면에서 기술적 차별화 포지션을 확보하고 있다. 그러나 전방 자동차·2차전지 산업의 설비투자 위축으로 2025년 매출이 전년 대비 47% 급감했고, 영업손실이 매출을 상회하는 극단적인 부(-)레버리지 상황이 연출됐다. 2025년 4분기의 분기 손익 개선과 2026년 상반기 한국GM 공급 계약·SK케미칼 협업 체결은 수주 모멘텀 회복의 긍정적 신호이나, 이것이 안정적인 수익 구조로 연결되기까지는 추가 분기 실적으로 확인이 필요하다. 직원 약 45명의 소규모 기업으로 인력·자금 양면의 스케일업 제약이 존재하며, 영업현금흐름 적자가 지속될 경우 자본 희석 가능성도 배제하기 어렵다. OPTRA Platform의 고객 확산, 북미·일본 PoC의 상업 계약 전환, PC 제어기 기술 개발 완료 등 복수의 성장 트리거가 맞물릴 때 비로소 수익화 경로가 가시화될 것으로 판단되며, 각 트리거의 실현 속도가 재무 내구력과의 경주가 된다.",
-   "en": "UDMTEK holds a technically differentiated position in the structural shift of smart manufacturing toward AI-driven autonomous factories, supported by world-first MLP technology. However, capex restraint in automotive and secondary battery end-markets drove a 47% revenue collapse in 2025, producing an extreme negative-leverage situation in which operating losses exceeded total revenue. The quarterly loss improvement in Q4 2025 and new contracts with Korean GM and SK Chemical in H1 2026 are positive signals for an order recovery, but additional quarterly results are required before a sustainable profit structure can be confirmed. With approximately 45 employees, scale-up constraints in headcount and capital are real, and equity dilution risk cannot be dismissed if operating cash outflows persist. A visible path to profitability will likely require the convergence of multiple growth triggers—OPTRA Platform customer ramp-up, North American and Japanese PoC conversions to commercial contracts, and completion of PC controller-based MLP technology—and the pace at which these materialize will determine whether the company can outrun the pressure on its financial reserves."
+   "ko": "유디엠텍은 자동화 설비 AI 진단이라는 특화된 기술을 바탕으로 GM코리아, 엔비디아 기반 디지털트윈 등 굵직한 신규 계약을 연이어 공시하며 사업 확장을 시도하고 있다. 그러나 확정 재무를 보면 매출은 2023년 74.2억원에서 2025년 32.1억원으로 3년 연속 줄었고, 영업손실은 같은 기간 흑자에서 -36.5억원으로 확대됐으며 영업현금흐름도 지속적으로 악화되고 있다. 2026년 1~2분기에는 4분기의 개선세가 이어지지 못하고 적자가 다시 커지는 흐름이 나타났다. 여기에 2026년 8월 시가총액 미달로 관리종목에 지정되면서 90거래일 내 요건 충족 여부가 상장 유지에 직결되는 구조적 변수로 추가됐다. 부채비율이 상장 이후 낮은 수준을 유지하고 있다는 점은 재무 안정성 측면의 완충 요인이지만, 자본총계 자체가 누적 손실로 줄고 있다는 점과 함께 살펴야 한다. 신규 대형 고객사 수주가 실제 매출·이익 개선과 관리종목 해제로 이어지는지가 향후 가장 중요한 확인 포인트다.",
+   "en": "Backed by its specialized AI-based diagnostic technology for automation equipment, UDMTek is attempting to expand its business through a series of significant new contracts including Korea GM and an NVIDIA-based digital twin deal. However, confirmed financials show revenue declining for three consecutive years from KRW 7.42 billion in 2023 to KRW 3.21 billion in 2025, operating profit shifting from a surplus to a loss of KRW 3.65 billion over the same period, and operating cash flow continuing to deteriorate. In the first and second quarters of 2026, the fourth-quarter improvement failed to continue, with losses widening again. Adding to this, the August 2026 administrative issue designation due to a market capitalization shortfall introduced a structural variable directly tied to continued listing status, contingent on meeting requirements within 90 trading days. The debt ratio remaining at a relatively low level since listing serves as a buffer for financial stability, but this should be considered alongside the ongoing decline in total equity from accumulated losses. Whether new large-customer contract wins translate into actual revenue and profit improvement, and whether the administrative issue designation is lifted, remain the most important items to confirm going forward."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A389680",
   "https://m.thinkpool.com/compDiscuss/cont/1017759",
-  "https://valueline.co.kr/finance/balancesheet/389680",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A389680",
   "https://money2.daishin.com/PDF/Out/intranet_data/Product/ResearchCenter/Report/2025/06/54028_IPOD_UDMTEK_final.pdf",
-  "https://www.efnews.co.kr/news/articleView.html?idxno=113850",
   "https://m.thinkpool.com/item/389680",
-  "https://finance.finup.co.kr/Stock/389680",
-  "https://udmtek.com/Upload/BoardEx/Attach/202411/%5B%EC%9C%A0%EB%94%94%EC%97%A0%ED%85%8D%5D%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C(2024.08.26).pdf",
-  "https://www.udmtek.com/kor/company/aboutUDMTEK?v=kor_202411141451",
-  "https://thevc.kr/udm",
-  "https://m.irgo.co.kr/IR-COMP/091120/%EC%9D%B4%EC%97%A0%ED%85%8D-IR-ROOM",
-  "https://www.idreamtech.co.kr/kr/",
-  "http://www.udmtek.com/kor/main",
-  "https://m.irgo.co.kr/IR-COMP/214680/%EB%94%94%EC%95%8C%ED%85%8D-IR-PAGE",
+  "https://www.the-stock.kr/news/articleView.html?idxno=20997",
+  "https://eureka.hankyung.com/search/result/389680",
+  "https://www.edaily.co.kr/News/Read?newsId=03598166645480408",
+  "https://valueline.co.kr/finance/balancesheet/389680",
+  "https://news.nate.com/view/20260331n40968",
+  "https://news.nate.com/view/20260512n06585",
+  "https://www.edaily.co.kr/News/Read?newsId=03775286645448264&mediaCodeNo=257",
+  "https://eureka.hankyung.com/search/389680",
+  "https://www.stockplus.com/m/stocks/KOREA-A389680/articles",
   "https://www.mt.co.kr/future/2026/06/18/2026061811352152501",
-  "https://www.getnews.co.kr/news/articleView.html?idxno=692568",
-  "http://www.businessreport.kr/news/articleView.html?idxno=49306",
-  "https://www.newspim.com/news/view/20241120000273"
+  "https://www.newsis.com/view/NISX20250318_0003102574",
+  "https://kr.investing.com/news/stock-market-news/article-1367320",
+  "https://udmtek.com/Upload/BoardEx/Attach/202411/%5B%EC%9C%A0%EB%94%94%EC%97%A0%ED%85%8D%5D%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C(2024.08.26).pdf",
+  "https://www.newsis.com/view/NISX20260512_0003625470"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "389680",
  "name": "유디엠텍",
  "name_en": "UDMTEK Co.,Ltd.",
@@ -233,11 +223,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 05:32",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 21:32",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -271,6 +261,23 @@
     "opm": -33.1,
     "roe": -40.0,
     "debt_ratio": 39.3
+   },
+   {
+    "year": 2023,
+    "rev": 7415743086,
+    "op": 154996544,
+    "np": -5791421278,
+    "np_owner": -5791421278,
+    "equity": 4092248016,
+    "equity_owner": 4092248016,
+    "equity_nci": null,
+    "liab": 4197988095,
+    "cfo": 280816579,
+    "eps_basic": -219,
+    "src": "전기 비교치",
+    "opm": 2.1,
+    "roe": -141.5,
+    "debt_ratio": 102.6
    }
   ],
   "quarterly": [
@@ -306,25 +313,29 @@
    }
   ],
   "valuation": {
-   "price": 967,
-   "mcap": 0.008,
+   "price": 1964,
+   "mcap": 0.0163,
    "shares": 8320693,
    "total_shares": 8320693,
    "wavg_shares": null,
    "per": null,
    "eps": -284,
-   "pbr": 0.8619,
+   "pbr": 1.7504,
    "bps": 1122,
    "roe_ttm": -22.7,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": -2400201926,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.76,
+   "eps_src": "공시",
+   "pbr_krx": 1.55,
    "bps_krx": 1265.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
  }
 }

@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "신재생→AI 피버팅, 수익화 시점이 핵심 관건",
-  "en": "Pivoting Beyond Renewables: Monetization Timing Is the Decisive Variable"
+  "ko": "AI 신사업 확장 속 지속되는 적자",
+  "en": "AI Expansion Amid Persistent Losses"
  },
  "lead": {
-  "ko": "에이전트AI는 태양광·풍력 중심 신재생에너지 기업에서 로보택시·AI신약·위성데이터·AI결제 4개 신사업으로 피버팅 중이나, 4년 연속 영업적자와 2026년 약 187억원 유상증자(희석 약 100%)로 수익화 시점의 불확실성이 투자 판단의 핵심 변수다.",
-  "en": "AgentAI is simultaneously pivoting from its solar/wind renewables base into four AI ventures — robotaxi operations, AI drug discovery, satellite intelligence, and AI payments — yet four consecutive years of operating losses and an ongoing approximately KRW 18.7bn rights offering representing roughly 100% dilution make the monetization timeline the critical variable for any assessment."
+  "ko": "태양광 EPC를 기반으로 한 에이전트AI는 최근 1년간 AI 결제·신약·로보택시 등 다수의 신사업을 병렬적으로 추진했지만, 확정 재무상 영업손실은 매년 확대되고 있어 신사업 성과와 본업 부진이 동시에 진행되는 국면이다.",
+  "en": "AgentAI, built on a solar EPC base, has launched multiple parallel AI ventures spanning payments, drug discovery, and robotaxis over the past year, yet its confirmed financials show widening operating losses each year, leaving new-business momentum and core-business weakness unfolding side by side."
  },
  "keypoints": [
   {
-   "ko": "4개 AI 신사업 동시 진행: 테슬라 FSD 기반 로보택시(Robodash), AI신약 플랫폼(몰포지), 위성+AI 어스레이더, AI결제(에이전트AI랩스) — 기존 신재생에너지 EPC·발전 사업 위에 복수의 Pre-revenue 파이프라인이 중첩된 구조",
-   "en": "Four concurrent AI ventures — Tesla FSD-based robotaxi (Robodash), AI drug platform (Morphoji), satellite+AI EarthRadar, and AI payments (AgentAI Labs) — are layered atop a declining renewables/EPC business, creating multiple pre-revenue pipelines simultaneously."
+   "ko": "2025년 11월 최대주주 변경과 함께 사명을 디지피에서 에이전트AI로 바꾸고 AI·자율주행·게임을 사업목적에 추가했다.",
+   "en": "Following a controlling-shareholder change in November 2025, the company changed its name from DGP to AgentAI and added AI, autonomous software, and game development to its business purpose."
   },
   {
-   "ko": "4년 연속 영업적자·가속화: 2025년 매출 131.2억원, 영업손실 93.2억원(OPM -71%), 지배주주 순손실 185.4억원 — 2025년 4분기 단일 분기 지배주주 순손실 135.2억원(대규모 일회성 손상 추정)",
-   "en": "Four straight years of widening operating losses: FY2025 revenue KRW 13.1bn, operating loss KRW 9.3bn (OPM –71%), owner-attributable net loss KRW 18.5bn; Q4 2025 alone posted a KRW 13.5bn owner net loss, likely driven by large one-time impairments."
+   "ko": "2025년 매출은 131억원으로 전년 118억원에서 소폭 반등했지만 영업손실은 93억원으로 확대돼 영업이익률이 -71.0%까지 악화됐다.",
+   "en": "2025 revenue rose modestly to KRW 13.1 billion from KRW 11.8 billion a year earlier, but the operating loss widened to KRW 9.3 billion, pushing the operating margin down to -71.0%."
   },
   {
-   "ko": "약 187억원 규모 주주배정 유상증자 진행 중: 구주주 청약 2026년 6월 18~19일, 납입일 6월 26일 예정 — 완료 시 발행 주식 수 약 2배 증가(희석 약 100%)",
-   "en": "A KRW 18.7bn rights offering (1:1 ratio, subscription June 18–19, settlement June 26, 2026) is in progress; completion will approximately double outstanding shares, representing roughly 100% dilution."
+   "ko": "2025년 4분기에 지배주주 순손실 135억원의 이례적으로 큰 손실이 반영됐고, 2026년 2분기에는 영업손실이 지속되는 가운데 순이익이 흑자로 전환됐다.",
+   "en": "The fourth quarter of 2025 saw an unusually large owners' net loss of KRW 13.5 billion, while the second quarter of 2026 swung to a net profit even as the operating loss continued."
   },
   {
-   "ko": "2026년 하반기 AI신약 전임상 데이터 분기점: 에이전트AI랩스가 유럽 CRO 유로핀스를 통해 TYK2·TNIK 타깃 후보물질 6종의 결합친화도 실험 진행 중, 데이터 확보 후 글로벌 기술이전(L/O) 협상 착수 예정",
-   "en": "A key H2 2026 catalyst: subsidiary AgentAI Labs is conducting preclinical binding-affinity experiments via Eurofins (Europe's largest CRO) on six TYK2/TNIK candidates, with global L/O negotiations planned upon data readout."
+   "ko": "에이전트AI랩스(AI 결제·신약), 니즈게임즈(모바일 게임), 로보택시(미국 자율주행), 어스레이더(위성 AI) 등 신사업이 1년 안팎에 잇달아 출범했다.",
+   "en": "New ventures including AgentAI Labs (AI payments and drug discovery), Needs Games (mobile gaming), Robotaxi Corp. (US autonomous driving), and EarthRadar (satellite AI) were all launched within roughly a year."
   },
   {
-   "ko": "BPS(8,954원) 대비 할인 구간·무배당: 4년 연속 적자로 자기자본이 2023년 545.7억원에서 2025년 374.8억원으로 축소됐으며 배당 이력 없음 — 향후 자본 회복 여부가 밸류에이션 지지선의 핵심 변수",
-   "en": "Stock trades at a meaningful discount to BPS of KRW 8,954 with no dividend history; total equity has eroded from KRW 54.6bn (2023) to KRW 37.5bn (2025) through accumulated losses, making capital recovery the primary valuation floor factor."
+   "ko": "잦은 전환사채 발행과 유상증자에 따른 희석 부담, 그리고 강화된 코스닥 상장폐지 기준상 저가주로 분류된 점이 함께 살펴야 할 변수로 꼽힌다.",
+   "en": "Repeated convertible bond issuances and rights offerings carry dilution risk, and the stock has also been flagged as a low-priced name under KRX's tightened delisting standards."
   }
  ],
  "business": {
-  "ko": "에이전트AI(구 대한그린파워→DGP)는 1997년 설립, 2002년 코스닥에 상장된 신재생에너지 발전·EPC 기업으로, 최근 수년간 AI 테마 복수 신사업을 추가하며 사명도 에이전트AI로 변경했다. 기존 핵심 사업은 태양광 PV·에너지저장장치(ESS)·풍력 기반 전력 생산·판매 및 발전소 설계·조달·시공(EPC) 용역이며, 국내 발전 자회사들이 이를 담당한다. 신사업 첫 번째 축은 미국 텍사스 오스틴에 거점을 둔 자율주행 무인택시 사업으로, 미국 자회사 'Robotaxi Corp.'이 테슬라 FSD 기반 차량을 직접 보유·운영하는 '플릿 오퍼레이터' 모델을 '로보대시(Robodash)' 브랜드로 추진한다. 두 번째 축은 자회사 에이전트AI랩스의 AI신약 발굴 플랫폼 '몰포지(Morphoji)'로, MIT·아스트라제네카·스탠퍼드 등 최상위 기관 AI 엔진 10여 종을 단일 파이프라인에 통합하고 5중 교차검증 체계를 갖춰 TYK2·TNIK 타깃 후보물질 6종을 유럽 CRO를 통해 검증 중이다. 세 번째 축은 2026년 6월 가동한 위성+AI 융합 지구관측 인텔리전스 플랫폼 '어스레이더(EarthRadar)'로, 재난·물류·에너지·도시 변화 등을 실시간 분석한다. 네 번째 축은 구글 AP2·코인베이스 x402 등 AI 에이전트 결제 표준에 대응하는 AI 결제 인프라 사업이다. 현재 매출의 대부분은 여전히 신재생에너지 EPC 및 발전 판매에서 발생하나, 2022년 이후 대형 EPC 계약 감소로 외형이 크게 축소된 상태다.",
-  "en": "AgentAI (formerly DaeHan Green Power → DGP) was established in 1997 and listed on KOSDAQ in 2002 as a renewable energy generation and EPC company, subsequently rebranding as it layered on multiple AI ventures. Its original core business encompasses solar PV, ESS, and wind power generation through domestic subsidiaries, alongside EPC services for power plant construction. The first new pillar is a U.S. robotaxi operation in Austin, Texas, where subsidiary Robotaxi Corp. owns and manages Tesla FSD-equipped vehicles as a fleet operator under the 'Robodash' brand, awaiting the commercial launch of Tesla's Fleet Operator program. The second is the AI drug discovery platform Morphoji, operated by AgentAI Labs, which integrates over ten AI engines from MIT, AstraZeneca, and Stanford using a five-way consensus verification framework; six TYK2/TNIK candidate molecules are currently in preclinical validation through Eurofins. The third is EarthRadar, a satellite-plus-AI earth observation intelligence platform formally launched in June 2026, providing real-time analysis of global changes in disaster, logistics, energy, and urban domains. The fourth is an AI payment infrastructure initiative targeting emerging standards such as Google AP2 and Coinbase x402. Revenue today is still predominantly derived from the declining renewables/EPC segment, as large EPC contract inflows have contracted sharply since 2022."
+  "ko": "에이전트AI는 2002년 코스닥에 상장된 전력·에너지 설비 업체로 출발해 태양광 등 신재생에너지 발전소의 EPC·O&M을 주력 사업으로 영위해왔다. 회사는 지난해 11월 최대주주가 사토시홀딩스로 바뀌면서 체질 개선에 나섰고, 사명을 기존 DGP에서 에이전트AI로 변경함과 동시에 사업목적에 AI, 자율주행 소프트웨어, 게임 개발 등을 추가했다. 신재생에너지 부문에서는 최근에도 센트럴이엔지와 안성 태양광발전소 물품 공급 계약을 체결하는 등 매출을 이어가고 있다. 신사업 조직으로는 자회사 에이전트AI랩스를 통해 스테이블코인 기반 AI 자동결제 시스템과 AI 신약 발굴 플랫폼 '몰포지'를 개발하고 있다. 회사는 완전자본잠식 상태였던 게임 개발사 니즈게임즈를 인수해 모바일 액션 RPG '다크디셈버'를 출시했으며, 미국에는 테슬라 FSD를 활용한 무인 로보택시 사업을 준비하는 자회사 로보택시(Robotaxi Corp.)를 두고 텍사스 오스틴을 거점으로 'Robodash' 플릿 확대를 추진하고 있다. 이 밖에도 산업용 로봇의 안전성을 가상환경에서 검증하는 '로보게이트'와 위성 데이터·AI 분석 플랫폼 '어스레이더'를 잇달아 가동하며 사업 포트폴리오를 다변화하고 있다. 다만 시장에서는 사명 변경과 홍보 방향과 달리 실제 자금 집행은 신재생에너지 등 기존 본업에 집중되고 있다는 지적도 나오고 있어, AI 사업 진출의 진정성에 대한 평가가 엇갈린다. 짧은 기간에 다수의 신사업이 병렬적으로 추진되는 만큼 각 사업의 매출 기여도와 지속성은 아직 검증 단계에 있다.",
+  "en": "AgentAI began as a power and energy equipment company listed on KOSDAQ in 2002, with its core business centered on EPC and O&M for solar and other renewable-energy plants. Last November the controlling shareholder changed to Satoshi Holdings, prompting an overhaul in which the firm renamed itself from DGP to AgentAI and added AI, autonomous-driving software, and game development to its stated business purposes. In the renewable-energy segment, the company recently continued generating revenue by signing an equipment-supply contract with Central Eng for a solar plant in Anseong. Through its subsidiary AgentAI Labs, the company is developing a stablecoin-based AI automated payment system and an AI drug-discovery platform called Molpoji. It acquired Needs Games, a game developer that had fallen into full capital impairment, and launched the mobile action RPG Dark December, while its US subsidiary Robotaxi Corp. is preparing an unmanned robotaxi business built on Tesla's FSD technology, expanding its Robodash fleet from a base in Austin, Texas. The company has also rolled out RoboGate, a platform that validates industrial-robot safety in virtual environments, and EarthRadar, a satellite-data and AI analytics platform, further diversifying its business portfolio. Market observers have noted, however, that despite the AI-oriented name change and messaging, a substantial portion of actual fund deployment continues to flow into the legacy renewable-energy business, leaving mixed views on the sincerity of the AI pivot. With numerous new businesses launched in parallel over a short span, the revenue contribution and durability of each remain to be proven."
  },
  "earnings": {
-  "ko": "에이전트AI의 연간 실적은 2022년 이후 뚜렷한 하강 국면에 있다. 매출은 2022년 335.4억원에서 2023년 182.0억원, 2024년 118.0억원으로 급감했고, 2025년에는 131.2억원으로 소폭 반등했으나 수익성은 오히려 악화됐다. 영업손실은 2022년 28.4억원, 2023년 47.6억원, 2024년 50.1억원에서 2025년 93.2억원으로 크게 확대됐고, 영업이익률은 -71.0%까지 하락했다. 지배주주 귀속 순손실도 2025년 185.4억원으로 급증했으며, 특히 2025년 4분기에 매출 11.5억원에 불과한 상황에서 영업손실 51.7억원·지배주주 순손실 135.2억원이 집중됐다 — 자산손상 또는 투자손실 등 대규모 일회성 비용의 반영으로 추정된다. 분기별로는 2025년 1분기(매출 60.1억원)에 상대적으로 강했으나 2분기(27.9억원)·3분기(31.7억원)·4분기(11.5억원)로 급격히 하락했다. 2026년 1분기에는 매출 27.2억원, 영업손실 19.8억원, 지배주주 순손실 20.2억원으로 일회성 요인이 해소되며 손실 규모가 크게 줄었으나, 영업적자 구조는 지속됐다. 영업현금흐름은 2024년(+10.1억원)을 제외하고 모두 음(-)이었으며, 2022년 -132.6억원·2025년 -106.4억원으로 현금 소모가 상당하다. 부채비율은 2022년 114.9%에서 자본 확충 이후 2023년 31.4%로 낮아졌으나, 누적 손실로 2025년에는 다시 53.0%로 상승했다.",
-  "en": "AgentAI's annual results have been in a clear downtrend since 2022. Revenue fell sharply from KRW 33.5bn in 2022 to KRW 18.2bn in 2023 and KRW 11.8bn in 2024, with a marginal rebound to KRW 13.1bn in 2025 — but profitability deteriorated further. Operating losses widened from KRW 2.8bn (2022) to KRW 4.8bn (2023), KRW 5.0bn (2024), and KRW 9.3bn (2025), with OPM collapsing to –71.0%. The owner-attributable net loss surged to KRW 18.5bn in 2025, driven heavily by a single quarter: in Q4 2025, just KRW 1.15bn of revenue accompanied a KRW 5.17bn operating loss and a KRW 13.5bn net loss to parent, strongly suggesting large one-time impairment or investment write-down charges. On a quarterly basis, Q1 2025 posted the strongest revenue at KRW 6.0bn, but subsequent quarters fell steeply to KRW 2.8bn, KRW 3.2bn, and KRW 1.15bn. In Q1 2026, revenue was KRW 2.7bn while operating and net losses each narrowed to approximately KRW 2.0bn, suggesting the non-recurring items have cleared — yet structural losses persist. Operating cash flow was negative in all years except 2024 (+KRW 1.0bn), with outflows of KRW 13.3bn (2022) and KRW 10.6bn (2025). The debt-to-equity ratio dropped from 114.9% in 2022 to 31.4% in 2023 after capital raising, but has climbed back to 53.0% in 2025 as equity eroded through losses."
+  "ko": "에이전트AI의 연간 매출액은 2022년 335억원에서 2023년 182억원, 2024년 118억원으로 감소한 뒤 2025년 131억원으로 소폭 반등했다. 그러나 영업손실은 2022년 28억원에서 2023년 48억원, 2024년 50억원, 2025년 93억원으로 매년 확대됐고, 영업이익률도 -8.5%(2022)에서 -71.0%(2025)까지 악화됐다. 지배주주 순손실 역시 2022년 178억원에서 2023년 74억원으로 줄었다가 2024년 135억원, 2025년 185억원으로 다시 크게 늘었다. 자기자본(지배주주 지분)은 2022년 324억원에서 2023년 543억원으로 늘었으나 이후 2024년 409억원, 2025년 377억원으로 2년 연속 줄었고, 부채비율은 2022년 114.9%에서 2023년 31.4%로 낮아진 뒤 2024년 51.8%, 2025년 53.0%로 다시 높아졌다. 영업활동현금흐름은 2024년에만 10억원 순유입을 기록했을 뿐 나머지 해에는 모두 순유출(2022년 -133억원, 2023년 -51억원, 2025년 -106억원)을 보였다. 분기별로는 2025년 4분기에 매출이 12억원으로 급감하는 동시에 영업손실 52억원, 지배주주 순손실 135억원이라는 이례적으로 큰 손실이 한 번에 반영됐는데, 이 시기는 자본잠식 상태였던 니즈게임즈 인수 및 기존 R&D 조직 해산 등 사업 재편이 맞물린 시점이다. 이후 2026년 1분기(매출 27억원, 영업손실 20억원)와 2분기(매출 29억원, 영업손실 15억원)에는 매출이 다시 20억원대 후반으로 회복됐지만 영업손실은 지속됐고, 2분기에는 영업손실에도 지배주주 순이익이 16억원으로 전환됐는데 이는 영업외 요인에 따른 결과로 해석되며 본업 수익성의 구조적 개선을 의미하지는 않는다. 종합하면 매출 기반은 완만히 회복되는 반면 영업 적자 폭은 좀처럼 줄지 않는 구조가 이어지고 있다.",
+  "en": "AgentAI's annual revenue fell from KRW 33.5 billion in 2022 to KRW 18.2 billion in 2023 and KRW 11.8 billion in 2024, before rebounding modestly to KRW 13.1 billion in 2025. The operating loss, however, widened every year, from KRW 2.8 billion in 2022 to KRW 4.8 billion in 2023, KRW 5.0 billion in 2024, and KRW 9.3 billion in 2025, with the operating margin deteriorating from -8.5% to -71.0% over the period. The owners' net loss similarly narrowed from KRW 17.8 billion in 2022 to KRW 7.4 billion in 2023 before ballooning again to KRW 13.5 billion in 2024 and KRW 18.5 billion in 2025. Owners' equity rose from KRW 32.4 billion in 2022 to KRW 54.3 billion in 2023 but then declined for two straight years to KRW 40.9 billion in 2024 and KRW 37.7 billion in 2025, while the debt ratio fell from 114.9% in 2022 to 31.4% in 2023 before climbing back to 51.8% in 2024 and 53.0% in 2025. Operating cash flow was positive only in 2024 (KRW 1.0 billion inflow), with net outflows in every other year shown (KRW -13.3 billion in 2022, KRW -5.1 billion in 2023, KRW -10.6 billion in 2025). On a quarterly basis, the fourth quarter of 2025 saw revenue plunge to KRW 1.2 billion while an unusually large operating loss of KRW 5.2 billion and owners' net loss of KRW 13.5 billion were booked in a single quarter, a period that coincided with the consolidation of the capital-impaired Needs Games and the dissolution of the legacy R&D organization. Revenue subsequently recovered into the high-KRW 2 billion range in the first quarter of 2026 (KRW 2.7 billion, operating loss KRW 2.0 billion) and second quarter (KRW 2.9 billion, operating loss KRW 1.5 billion), yet operating losses persisted, and the second quarter's swing to an owners' net profit of KRW 1.6 billion appears to reflect non-operating items rather than a structural improvement in core profitability. Overall, the revenue base is recovering gradually while the scale of operating losses has shown little sign of narrowing."
  },
  "industry": {
-  "ko": "에이전트AI가 속한 코스닥 '에너지·전력' 업종은 국내 신재생에너지 보급 확대 정책의 수혜를 받으나, 중국산 태양광 모듈의 저가 공세와 국내 인허가 지연이 지속적인 압박 요인이다. EPC 시장은 대형 시행사와 전력 공기업 중심으로 재편되며 중소 플레이어의 수주 경쟁이 심화됐고, 에이전트AI의 매출 감소도 이 구조 변화를 일부 반영한다. 에이전트AI가 진출한 AI 자율주행 로보택시 시장은 테슬라 외에 웨이모·크루즈 등 대형 플레이어들이 경쟁하는 고성장 분야이나, 플릿 오퍼레이터는 기술 개발보다 운영 역량에 집중하는 틈새 포지션이다. AI신약 발굴 분야는 글로벌 제약사들의 R&D 비용 절감 수요와 맞닿아 있어 기술이전(L/O) 시장의 성장이 기대되지만, 전임상→임상 진전까지 수년의 검증 기간이 수반된다. 위성 데이터 인텔리전스는 국방·기후·물류 등 다양한 분야의 수요가 확대되는 추세이나, AI 결제 분야와 함께 아직 초기 시장 형성 단계로 단기 매출 기여는 제한적이다. 에이전트AI는 4개 신사업 모두에서 단일 대형 경쟁사가 아닌 플랫폼 생태계에 의존하는 구조여서, 상위 파트너(테슬라·유로핀스·글로벌 위성 데이터 제공사)의 정책 변화가 사업 전망에 직결된다.",
-  "en": "AgentAI's home sector — KOSDAQ Energy & Power — benefits from Korea's renewable energy expansion policies, but faces persistent headwinds from low-cost Chinese solar modules and domestic permitting delays; the EPC market has consolidated around large project developers and state utilities, intensifying competition for smaller players. The AI autonomous robotaxi space that AgentAI is targeting is high-growth, contested by Tesla, Waymo, and Cruise, among others, but the fleet-operator role is a niche positioning focused on operational rather than technological capability. AI drug discovery aligns with global pharma's R&D cost-reduction imperative and the L/O market is expanding, but the preclinical-to-clinical validation path spans years. Satellite data intelligence demand is broadening across defense, climate, and logistics applications, while AI payments remain in early standard-setting phases — both limiting near-term revenue contribution. Critically, AgentAI's new business models depend on the commercial policies of dominant ecosystem partners (Tesla, Eurofins, satellite data providers), creating indirect platform risk."
+  "ko": "에이전트AI는 거래소 업종분류상 에너지·전력 섹터에 속해 있으며, 국내 태양광 등 신재생에너지 EPC·O&M 시장에서 다수의 중소 시공사와 경쟁하는 위치에 있다. 동시에 회사는 AI 에이전트 결제, AI 신약 발굴, 로보틱스 검증, 위성 데이터 분석, 모바일 게임, 로보택시 등 서로 다른 산업의 신사업을 병렬적으로 추진하고 있어 전통적인 업종 분류만으로는 설명하기 어려운 포트폴리오를 갖고 있다. AI 에이전트 결제 분야는 구글의 AP2, 코인베이스의 x402 등 해외 기술 기업과 개발자 커뮤니티를 중심으로 표준화가 논의되는 초기 단계 시장이다. 로보택시 사업은 자체 자율주행 기술 없이 테슬라 FSD 생태계의 확장 속도에 성과가 종속되는 구조를 취하고 있다. 한편 한국거래소는 올해부터 시가총액·주가·재무 요건을 동시에 강화한 상장폐지 제도를 단계적으로 시행하고 있으며, 시뮬레이션 결과 코스닥 상장폐지 대상 기업이 최대 220개사까지 늘어날 수 있다는 전망이 나오는 가운데 에이전트AI도 액면가에 미달하는 이른바 '동전주' 목록에 이름이 올랐다. 이는 자본잠식 위험이 있거나 저가에 거래되는 코스닥 소형주에 대한 시장의 감시가 전반적으로 강화되는 국면임을 시사한다.",
+  "en": "Under KRX's sector classification, AgentAI belongs to the energy and power category, competing with numerous small and mid-sized contractors in Korea's solar and renewable-energy EPC/O&M market. At the same time, the company is pursuing parallel new ventures across unrelated industries — AI agent payments, AI drug discovery, robotics validation, satellite data analytics, mobile gaming, and robotaxis — giving it a portfolio that is difficult to describe through a single traditional sector label. The AI agent payments field is an early-stage market where standardization is being discussed mainly among global technology firms and developer communities, exemplified by Google's AP2 and Coinbase's x402. The robotaxi business, meanwhile, lacks its own autonomous-driving technology and is structurally tied to the pace of Tesla's FSD ecosystem expansion. Separately, KRX has been phasing in a stricter delisting framework this year that simultaneously tightens market-cap, share-price, and financial requirements, with simulations suggesting the number of KOSDAQ delisting candidates could rise to as many as 220 companies; AgentAI has been listed among the so-called sub-par-value \"coin stocks\" trading below face value. This points to a broader tightening of market scrutiny over small-cap KOSDAQ names that trade at low prices or carry capital-erosion risk."
  },
  "outlook": {
-  "ko": "2026년 하반기의 핵심 분기점은 AI신약 후보물질의 유럽 전임상 데이터 회수로, 에이전트AI랩스가 유로핀스를 통해 진행 중인 TYK2·TNIK 타깃 6종의 결합친화도 실험 결과를 토대로 글로벌 기술이전 협상에 착수할 예정이다. 로보택시 사업은 테슬라의 플릿 오퍼레이터 상용화 일정에 종속적이며, 텍사스 오스틴 인프라 구축은 완료됐으나 실질 매출 발생 시점은 테슬라 FSD unsupervised 정식 상용화에 달려 있다. 2026년 6월 26일 납입 예정인 유상증자(약 187억원)는 운영자금 159억원·채무상환 28억원으로 배분될 예정이어서 단기 유동성은 개선되나, 주식 수 약 2배 증가에 따른 희석 효과를 수반한다. 기존 신재생에너지 EPC 사업은 2026년 3월 체결된 안성 태양광발전소 17억원 계약 등 소규모 수주가 이어지고 있어 기저 매출을 일정 수준 유지할 전망이다. 2026년 6월 정식 가동한 어스레이더는 재난·물류·에너지·도시 분야의 실시간 위성 데이터 분석 서비스를 제공하나, 구체적인 수익화 로드맵은 공개되지 않았다. 스테이블코인·AI 결제 표준을 겨냥한 에이전트AI랩스의 결제 인프라 사업도 초기 개발 단계로, 단기 매출 기여는 제한적일 전망이다.",
-  "en": "The pivotal H2 2026 event is the readout of AI drug preclinical binding-affinity data: AgentAI Labs plans to initiate global L/O negotiations once Eurofins returns results for the six TYK2/TNIK candidates. The robotaxi business remains contingent on Tesla's commercial Fleet Operator launch; infrastructure in Austin is in place, but actual revenue depends entirely on the timeline of Tesla's unsupervised FSD rollout. The rights offering settling on June 26, 2026 (approximately KRW 18.7bn) earmarks KRW 15.9bn for operations and KRW 2.8bn for debt repayment, improving near-term liquidity at the cost of approximately 100% equity dilution. Legacy renewables EPC continues to generate modest contract inflows — such as the KRW 1.7bn Anseong solar plant supply agreement signed in March 2026 — supporting a baseline revenue floor. EarthRadar, formally launched in June 2026, provides real-time satellite-based analytics for disaster, logistics, energy, and urban change, but no monetization roadmap has been disclosed. The AI payment infrastructure initiative targeting stablecoin and AI-agent payment standards also remains in early development with limited near-term revenue contribution."
+  "ko": "회사는 자회사 에이전트AI랩스를 통해 신약 후보물질 6종(TYK2 3종, TNIK 3종)에 대한 유럽 CRO 검증을 진행 중이며, 전임상 결합친화도 등 실험 데이터가 회수되는 2026년 하반기부터 글로벌 기술이전(L/O) 협상에 나설 계획이라고 밝혔다. 로보게이트는 엔비디아의 로봇 AI 개발 플랫폼 'Isaac Lab'에 벤치마크 코드를 기여했고 엔비디아 공식 소프트웨어 파트너(ISV) 심사가 진행 중이라고 설명했다. 미국 자회사 로보택시는 텍사스 오스틴을 거점으로 'Robodash' 플릿을 확대하며 캘리포니아·플로리다로 거점을 넓혀가고 있고, 회사는 테슬라의 개인 소유 차량 공유 네트워크 참여가 본격화될 경우 수혜를 기대한다고 밝혔다. 게임 자회사 니즈게임즈는 '다크디셈버'가 일본 사전예약 단계에서 무료 게임 인기 1위에 오른 뒤 정식 글로벌 서비스에 들어갔으며, 회사는 이를 발판으로 2026년을 흑자 전환과 성장의 원년으로 삼겠다는 목표를 제시했다. 신재생에너지 부문에서는 지난 7월 프라임밸류투자조합을 대상으로 한 제3자배정 유상증자 35억원을 신재생에너지 개발사업과 운영자금에 투입할 계획이라고 공시했다. 다만 지난 4월 실시한 187억원 규모 주주배정 유상증자 역시 대부분 기존 신재생에너지 사업과 채무상환에 쓰이는 것으로 확인돼, AI 신사업에 대한 직접적인 시설·연구개발 투자 계획은 아직 뚜렷하게 제시되지 않았다. 회사는 2026년을 신사업의 흑자 전환과 성장의 원년으로 삼겠다는 목표를 여러 차례 밝혔으나, 구체적인 매출 가이던스나 손익 목표는 아직 공개되지 않았다.",
+  "en": "Through subsidiary AgentAI Labs, the company is conducting European CRO validation on six drug candidates (three TYK2, three TNIK) and has stated that once preclinical binding-affinity and other experimental data are returned in the second half of 2026, it plans to move into global licensing-out negotiations. The company said RoboGate has contributed benchmark code to NVIDIA's Isaac Lab robotics AI platform and is currently under review for NVIDIA's official Independent Software Vendor partner status. Its US subsidiary Robotaxi Corp. is expanding its Robodash fleet from a base in Austin, Texas, and broadening its footprint into California and Florida, with the company saying it expects to benefit if Tesla's individually owned vehicle-sharing network gains traction. Game subsidiary Needs Games launched Dark December globally after the title topped Japan's free-game charts during pre-registration, and the company has set a goal of making 2026 the year of turning profitable and driving growth on the back of this momentum. In the renewable-energy segment, the company disclosed in July a KRW 3.5 billion third-party share placement to Prime Value investment partnership, earmarked for renewable-energy development projects and operating funds. However, an April rights offering of roughly KRW 18.7 billion was also confirmed to be directed mostly toward the existing renewable-energy business and debt repayment, meaning no clear plan for direct facility or R&D investment in the new AI businesses has yet been presented. While the company has repeatedly stated its ambition to make 2026 a turnaround year for its new ventures, it has not yet disclosed concrete revenue guidance or profit targets."
  },
  "valuation_comment": {
-  "ko": "에이전트AI는 4년 연속 영업·순손실로 이익 기반 배수(PER)가 산출되지 않으며, 주당순자산(BPS 8,954원) 대비 현 주가는 의미 있는 할인 구간에 위치해 있다. 이는 누적 손실에 따른 자기자본 침식과 신사업의 수익화 불확실성이 복합적으로 반영된 결과로 풀이된다. 배당은 4년 연속 실시되지 않아 업종 평균 대비 현저히 낮은 수준이다. 2026년 6월 말 유상증자 완료 후 발행 주식 수가 약 2배로 늘어나면 BPS와 주당 손익이 재산정되므로, 유상증자 납입 완료 이후 희석 기준 BPS 변화를 재확인하는 것이 중요하다. 신사업(AI신약 기술이전·로보택시·위성데이터)의 성과가 가시화될 경우 현재의 순자산 할인 구간에서 프리미엄 재평가로 전환될 가능성이 있으나, 그 시점은 외부 변수에 크게 종속되어 있다.",
-  "en": "AgentAI's four consecutive years of operating and net losses preclude any earnings-based multiple (P/E). The current share price sits at a meaningful discount to book value per share (BPS KRW 8,954), reflecting the combined weight of equity erosion from accumulated losses and uncertainty over new business monetization. The dividend yield has been zero for four consecutive years, trailing the sector average by a wide margin. The rights offering completing in late June 2026 will approximately double shares outstanding, necessitating a recalculation of diluted BPS — making post-dilution book value a key indicator to revisit. Should AI drug L/O deals, robotaxi revenues, or satellite data contracts materialize, a re-rating from the current book-value discount toward a premium is conceivable, but the timeline remains highly dependent on external variables."
+  "ko": "에이전트AI는 최근 몇 년간 연속된 영업손실과 순손실로 인해 통상적인 이익 기반 밸류에이션 지표를 적용하기 어려운 상태다. 주가는 주당순자산가치를 밑도는 수준에서 거래되고 있어, 회사의 장부상 자산가치에 못 미치는 구간에 놓여 있다. 배당은 지급되지 않고 있어 배당 매력을 근거로 한 접근은 성립하지 않는다. 회사가 최근 수년간 여러 차례의 유상증자와 전환사채 발행을 통해 외부 자금을 조달해온 점을 고려하면, 향후 전환청구권 행사나 추가 지분 발행에 따른 희석 가능성도 함께 살펴봐야 할 변수다. 신사업들이 아직 매출 기여를 본격화하지 않은 만큼, 현재 시장가치는 기존 신재생에너지 사업의 실적보다는 다수의 신사업 서사에 대한 기대가 상당 부분 반영된 결과로 해석될 수 있다.",
+  "en": "Given consecutive years of operating and net losses, conventional profit-based valuation metrics are difficult to apply to AgentAI. The share price trades below the company's per-share net asset value, placing it in a range below its book-value asset worth. No dividend is being paid, so a dividend-based approach to the stock does not apply. Given that the company has repeatedly raised outside capital through rights offerings and convertible bond issuances in recent years, potential dilution from future conversion or additional share issuance is a variable that should be weighed alongside valuation. As the new businesses have yet to make a meaningful revenue contribution, the current market value may reflect expectations tied to the narrative around its multiple new ventures more than the performance of the existing renewable-energy business."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI신약 기술이전(L/O) 성사 시 재무구조 일거 개선 가능성",
-    "en": "AI Drug L/O Deal Could Transform the Balance Sheet"
+    "ko": "다중 AI 신사업 포트폴리오",
+    "en": "Multi-pronged AI venture portfolio"
    },
    "body": {
-    "ko": "에이전트AI랩스의 '몰포지' 플랫폼은 MIT·스탠퍼드·아스트라제네카 AI 엔진 10여 종을 통합한 5중 교차검증 체계를 갖추고 있으며, 자가면역(TYK2)·항암(TNIK) 타깃 후보물질 6종이 유럽 최대 CRO 유로핀스를 통해 검증 중이다. 2026년 하반기 전임상 데이터가 확보되면 글로벌 제약사와의 기술이전 협상에 즉시 착수할 예정이다. AI 신약 기술이전 계약은 선수금(Upfront)만 수십억~수백억원에 달할 수 있어, 단 한 건의 성사도 회사의 재무 구조를 단번에 개선할 수 있는 잠재력을 지닌다.",
-    "en": "AgentAI Labs' Morphoji platform integrates over ten AI engines from MIT, Stanford, and AstraZeneca into a five-way consensus verification system, with six TYK2/TNIK candidates currently undergoing preclinical validation at Eurofins. Upon H2 2026 data readout, global L/O negotiations are planned. A single successful AI drug L/O deal can carry upfront payments in the multi-billion KRW range, potentially transforming the company's financial structure rapidly and providing non-dilutive capital."
+    "ko": "회사는 AI 결제, AI 신약 발굴, 로봇 안전 검증, 위성 데이터 분석, 로보택시 등 여러 글로벌 테마에 동시에 발을 걸치고 있다. 몰포지는 유럽 CRO를 통한 후보물질 검증 단계에 진입했고, 로보게이트는 엔비디아 Isaac Lab에 코드를 기여하며 파트너십을 모색 중이다. 소형주 특성상 이 중 하나라도 상업적 성과를 내면 회사 규모에 비해 상대적으로 큰 영향을 줄 수 있다.",
+    "en": "The company has simultaneously staked claims in several global AI themes—payments, drug discovery, robot safety validation, satellite analytics, and robotaxis. Molpoji has entered candidate validation via a European CRO, and RoboGate has contributed code to NVIDIA's Isaac Lab while pursuing a partnership. Given the company's small size, commercial traction in even one of these areas could have an outsized relative impact."
    }
   },
   {
    "title": {
-    "ko": "테슬라 플릿 오퍼레이터 생태계 선제 진입",
-    "en": "First-Mover Positioning in Tesla's Fleet Operator Ecosystem"
+    "ko": "게임·신재생 매출 기반 유지",
+    "en": "Existing revenue base from gaming and renewables"
    },
    "body": {
-    "ko": "에이전트AI는 테슬라 기가팩토리 인근인 텍사스 오스틴에 차량·충전설비·정비·클리닝 인프라를 선제 구축 완료했으며, 테슬라 FSD 상용화 즉시 사업 개시가 가능한 상태다. 국내 기업 중 테슬라 로보택시 생태계에 직접 참여를 준비한 기업으로는 에이전트AI가 선도적 위치에 있다. 운전기사 비용이 없는 무인 운영 모델은 구조적으로 높은 이익률을 기대할 수 있으며, 플릿 규모 확대 시 수익 레버리지 효과도 크다.",
-    "en": "AgentAI has pre-built vehicle, charging, maintenance, and cleaning infrastructure in Austin, Texas — adjacent to Tesla's Gigafactory — and is positioned to commence operations immediately upon Tesla's Fleet Operator commercialization. Among Korean-listed companies, AgentAI appears to be the earliest direct entrant into Tesla's robotaxi ecosystem. The driverless operating model carries structurally higher margin potential, with significant profit leverage as fleet scale expands."
+    "ko": "니즈게임즈의 '다크디셈버'는 일본 사전예약 단계에서 무료 게임 인기 1위에 오른 뒤 글로벌 정식 서비스에 들어갔다. 동시에 기존 신재생에너지 부문은 안성 태양광발전소 공급 계약 등을 통해 매출을 계속 창출하고 있다. 신사업이 본격 성과를 내기 전까지 이러한 기존 매출원이 완충 역할을 할 수 있다.",
+    "en": "Needs Games' Dark December topped Japan's free-game charts during pre-registration before entering full global service. Meanwhile, the existing renewable-energy segment continues to generate revenue through contracts such as the Anseong solar plant supply deal. These existing revenue sources can serve as a buffer until the new businesses achieve meaningful scale."
    }
   },
   {
    "title": {
-    "ko": "유상증자 완료로 단기 유동성 확보, 디폴트 리스크 완화",
-    "en": "Rights Offering Completion Shores Up Near-Term Liquidity"
+    "ko": "지속적인 외부 자금 조달력",
+    "en": "Continued access to external financing"
    },
    "body": {
-    "ko": "2026년 6월 26일 납입 예정인 약 187억원 규모의 유상증자는 운영자금 159억원과 채무상환 28억원에 투입된다. 2026년 1분기 지배주주 순손실(약 20억원) 수준과 비교할 때, 이번 조달 자금은 약 2년 이상의 운영 여력을 제공하는 규모다. 단기 자본잠식·디폴트 리스크가 크게 완화되며, 신사업 검증을 지속할 수 있는 시간적 여유가 확보된다.",
-    "en": "The approximately KRW 18.7bn rights offering, settling June 26, 2026, allocates KRW 15.9bn to operations and KRW 2.8bn to debt repayment. Relative to the Q1 2026 quarterly net loss of approximately KRW 2.0bn, the proceeds provide roughly two or more years of operational runway. This materially reduces near-term equity-impairment and default risk while extending the window for new business validation."
+    "ko": "손실이 누적되는 가운데서도 회사는 주주배정 유상증자, 제3자배정 유상증자, 전환사채 발행 등을 반복적으로 성사시켜 왔다. 최근 전환사채 발행 자금은 기존 사채 상환에 쓰여 단기 상환 부담을 일부 완화했다. 이는 시장에서 최소한의 자금 조달 채널이 여전히 작동하고 있음을 보여준다.",
+    "en": "Despite accumulating losses, the company has repeatedly completed rights offerings, third-party share placements, and convertible bond issuances. Proceeds from a recent CB issuance were used to redeem prior bonds, partly easing near-term repayment pressure. This shows that at least a minimal financing channel remains functional for the company."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4년 연속 영업적자, 손실 구조 가속화",
-    "en": "Four Consecutive Operating Loss Years with Accelerating Burn"
+    "ko": "본업 대비 신사업 서사 공백",
+    "en": "Gap between AI narrative and actual fund use"
    },
    "body": {
-    "ko": "에이전트AI는 2022~2025년 4년 연속 영업손실을 기록했으며, 영업손실률은 -8.5%에서 -71.0%로 악화됐다. 2025년 지배주주 순손실은 185.4억원으로, 총 자기자본(374.8억원)의 약 49%에 해당하는 수준이다. 신사업들이 아직 유의미한 매출을 내지 못하는 상황에서 연구·투자·관리 비용이 지속 발생하고 있어, 근시일 내 흑자 전환의 가시적 경로가 불분명하다.",
-    "en": "Operating losses ran for all four years from 2022 to 2025, with OPM deteriorating from –8.5% to –71.0%. The 2025 owner-attributable net loss of KRW 18.5bn equates to approximately 49% of total equity (KRW 37.5bn). With new businesses not yet generating meaningful revenue while R&D, investment, and administrative costs persist, a near-term path to profitability remains opaque."
+    "ko": "시장 분석에 따르면 최근 유상증자 자금의 상당 부분이 AI 관련 시설·연구개발이 아니라 기존 신재생에너지 사업과 채무상환에 투입되고 있다. 동시에 기존 사업의 R&D 전담조직은 해산되고 인력도 줄어 본업 역량 자체가 약화된 상태다. 이는 사명과 사업 방향의 진정성에 대한 시장의 의문으로 이어지고 있다.",
+    "en": "Market analysis has found that a substantial portion of recent rights-offering proceeds is going to the legacy renewable-energy business and debt repayment rather than AI-related facilities or R&D. At the same time, the dedicated R&D organization for the existing business was dissolved and headcount reduced, weakening core-business capability itself. This has fed market doubts about the sincerity of the company's AI-branded direction."
    }
   },
   {
    "title": {
-    "ko": "유상증자에 따른 대규모 주식 희석",
-    "en": "Substantial Equity Dilution from the Rights Offering"
+    "ko": "구조적 적자·현금 유출",
+    "en": "Structural losses and cash outflow"
    },
    "body": {
-    "ko": "2026년 6월 말 완료될 유상증자는 발행 주식 수를 약 2배로 늘리며, 이는 기존 주주의 주당 가치(BPS 등 주당 지표)를 즉각 낮추는 효과를 지닌다. 신사업 성과가 가시화되기 전까지 주당 지표의 구조적 부담으로 작용한다. 현금이 예상보다 빠르게 소진될 경우 추가 자금 조달 가능성도 배제하기 어려우며, 반복적 희석 우려가 상존한다.",
-    "en": "The late-June 2026 rights offering will nearly double shares outstanding, mechanically reducing per-share metrics (BPS and per-share loss) for existing shareholders. This creates a structural drag until new business revenues scale. If cash is consumed faster than expected before any venture reaches profitability, an additional capital raise cannot be ruled out, perpetuating dilution risk."
+    "ko": "매출은 2022년 335억원에서 2024년 118억원까지 줄어든 뒤 2025년에도 131억원 수준에 머물렀다. 영업손실은 2022년부터 2025년까지 매년 확대돼 2025년 영업이익률은 -71.0%까지 악화됐고, 영업활동현금흐름도 조사 기간 4개 연도 중 3개 연도에서 순유출을 보였다. 자기자본은 2023년 정점 이후 2년 연속 줄어드는 흐름이다.",
+    "en": "Revenue fell from KRW 33.5 billion in 2022 to KRW 11.8 billion in 2024 and remained near KRW 13.1 billion in 2025. The operating loss widened every year from 2022 through 2025, with the 2025 operating margin deteriorating to -71.0%, and operating cash flow was negative in three of the four years examined. Owners' equity has declined for two consecutive years after peaking in 2023."
    }
   },
   {
    "title": {
-    "ko": "신사업 의존성 과도·외부 변수 종속",
-    "en": "Over-Reliance on Unproven Ventures, Each Dependent on External Variables"
+    "ko": "지배구조·희석 불안정",
+    "en": "Governance instability and dilution risk"
    },
    "body": {
-    "ko": "로보택시(테슬라 플릿 오퍼레이터 상용화 일정 미정), AI신약(전임상→임상 검증에 수년 소요), 위성데이터(초기 가동), AI결제(글로벌 표준 미확정) — 4개 신사업 모두 에이전트AI가 통제할 수 없는 외부 변수에 크게 종속되어 있다. 기존 신재생에너지 EPC·발전 사업은 대형 계약 감소로 2022년 대비 매출이 크게 축소됐으며, 신사업 수익화 전까지 기저 매출의 지지력이 취약하다.",
-    "en": "All four new ventures face major external dependencies: robotaxi (Tesla Fleet Operator launch date unconfirmed), AI drug (multi-year preclinical-to-clinical pathway), satellite data (nascent operations), AI payments (global standards unsettled). Meanwhile, the legacy renewables EPC business has contracted sharply from its 2022 peak, leaving a weak revenue floor until any new business converts to commercial-scale revenue."
+    "ko": "최대주주와 대표이사가 짧은 기간에 반복적으로 바뀌었고, 전환사채 발행 이력도 여러 차례에 걸쳐 누적됐다. 감사보고서의 핵심감사사항으로 특수관계자 거래와 금융상품 공정가치 측정이 언급됐고 감사인도 교체됐다. 회사는 액면가에 미달하는 이른바 '동전주' 목록에도 이름이 올라 강화된 코스닥 상장폐지 기준의 감시 대상군에 속한다.",
+    "en": "The controlling shareholder and CEO have changed repeatedly within a short period, and the company has accumulated a history of multiple convertible bond issuances. Key audit matters flagged related-party transactions and fair-value measurement of financial instruments, and the audit firm was also changed. The company has been named among the sub-par-value \"coin stocks\" that fall under the scrutiny of KRX's tightened delisting standards."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "자본 소진·추가 희석 리스크",
-    "en": "Capital Depletion & Further Dilution Risk"
+    "ko": "재무·유동성",
+    "en": "Financial and liquidity"
    },
    "body": {
-    "ko": "2022~2025년 4개년 누적 지배주주 순손실은 약 573억원에 달하며, 영업현금 유출도 2024년 한 해를 제외하고 모두 음수였다. 이번 유상증자로 단기 유동성이 확보되더라도 신사업 성과가 지연될 경우 2027~2028년 또 다른 자금 조달이 필요할 수 있다. 전환사채·신주인수권부사채 등 잠재적 추가 희석 요인의 존재 여부도 지속 모니터링이 필요하다.",
-    "en": "Cumulative owner-attributed net losses from 2022 to 2025 total approximately KRW 57.3bn, with operating cash outflows in all years except 2024. Even with this funding round completed, a new capital raise in 2027–2028 may be necessary if new business timelines slip. The existence of any convertible bonds or warrants representing additional dilution potential warrants ongoing verification."
+    "ko": "회사는 최근 수년간 네 차례에 걸쳐 총 276억원 규모의 전환사채를 발행했으며, 그중 일부는 최대 25.74%에 이르는 잠재 희석률을 안고 있다. 영업활동현금흐름이 여러 해에 걸쳐 순유출을 기록해 외부 자금 조달에 대한 의존도가 높은 구조다. 신규 계약 체결이 이어지고 있음에도 근본적인 현금 유출과 순손실 확대 문제는 해결되지 않은 상태다.",
+    "en": "The company has issued convertible bonds totaling KRW 27.6 billion across four rounds in recent years, with some carrying potential dilution ratios of up to 25.74%. Operating cash flow has posted net outflows across multiple years, reflecting a structure heavily reliant on external financing. Despite ongoing new contract signings, the underlying issues of cash outflow and widening net losses remain unresolved."
    }
   },
   {
    "cat": {
-    "ko": "테슬라 플릿 오퍼레이터 일정 지연 리스크",
-    "en": "Tesla Fleet Operator Schedule Delay Risk"
+    "ko": "사업 실행",
+    "en": "Business execution"
    },
    "body": {
-    "ko": "로보택시 사업의 핵심 전제인 테슬라 FSD unsupervised 상용화와 플릿 오퍼레이터 프로그램의 공식 출시 일정은 에이전트AI가 통제할 수 없는 외부 변수다. 규제 승인·기술 완성도·미국 자율주행 허가 일정에 따라 사업 개시가 상당 기간 늦어질 수 있으며, 그동안 오스틴 인프라 유지 비용이 지속 발생한다. 테슬라의 사업 구조 변경 또는 파트너십 정책 변화 가능성도 배제할 수 없다.",
-    "en": "The robotaxi business fundamentally depends on Tesla's unsupervised FSD commercialization and the formal launch of its Fleet Operator program — both entirely outside AgentAI's control. Regulatory approvals, technical readiness, and U.S. autonomous driving licensing timelines could delay commercial operations significantly while Austin infrastructure maintenance costs continue to accrue. Changes to Tesla's business structure or partnership policies add further platform risk."
+    "ko": "AI 결제, 신약 발굴, 로보틱스, 위성 분석, 게임, 로보택시 등 다수의 신사업이 1년 안팎의 짧은 기간에 동시 추진되고 있어 인력·자원 배분의 집중도가 떨어질 위험이 있다. 감사보고서에서는 특수관계자 거래 공시의 적정성과 금융자산 손상평가가 핵심감사사항으로 지목됐다. 각 신사업이 매출로 이어지기까지의 시간과 성공 여부는 아직 불확실하다.",
+    "en": "With numerous new ventures in AI payments, drug discovery, robotics, satellite analytics, gaming, and robotaxis all being pursued within roughly a year, there is a risk that management focus and resources become spread thin. The audit report flagged the adequacy of related-party transaction disclosures and financial asset impairment assessments as key audit matters. The timeline and likelihood of each new venture translating into meaningful revenue remain uncertain."
    }
   },
   {
    "cat": {
-    "ko": "AI신약 임상 실패 및 기술이전 불발 리스크",
-    "en": "AI Drug Clinical Failure & L/O Non-Execution Risk"
+    "ko": "상장유지·규제",
+    "en": "Listing maintenance and regulation"
    },
    "body": {
-    "ko": "AI 신약 발굴은 컴퓨터 예측 단계에서 우수한 결과를 보이더라도 전임상·임상에서 실패 확률이 높으며, 기술이전 계약은 글로벌 제약사의 파이프라인 전략과 시장 환경에 크게 좌우된다. 현재 후보물질은 전임상 단계에 불과하므로 임상 가치 검증까지 수년이 소요되고, 전임상 데이터가 기대에 미치지 못할 경우 AI신약 플랫폼 가치에 대한 시장의 재평가가 이루어질 수 있다. 몰포지의 로보게이트 알고리즘 등 핵심 기술에 대한 특허 보호 범위와 경쟁 플랫폼 대비 차별성도 지속 확인이 필요하다.",
-    "en": "AI-assisted drug discovery carries high failure rates in preclinical and clinical testing even when computational results are promising; L/O deals are also heavily influenced by global pharma strategic priorities and market conditions. As the current candidates are only at preclinical stage, clinical value validation will take years, and disappointing binding-affinity data could trigger a significant market re-rating of the platform. The scope of patent protection for Morphoji's Robogate algorithm and its differentiation versus competing AI drug platforms also warrants ongoing scrutiny."
+    "ko": "한국거래소는 시가총액·주가·재무 요건을 동시에 강화한 상장폐지 제도를 단계적으로 시행하고 있으며, 에이전트AI는 액면가 미달 종목 목록에 포함된 바 있다. 자기자본 잠식이 이어질 경우 관리종목 지정 요건에 해당할 가능성도 배제할 수 없다. 강화된 제도 하에서는 재무구조 개선이 지연될 경우 상장폐지 심사가 반복될 수 있다는 지적도 나온다.",
+    "en": "KRX is phasing in a delisting framework that simultaneously tightens market-cap, share-price, and financial requirements, and AgentAI has previously appeared on lists of sub-par-value stocks. Continued equity erosion could potentially trigger management-issue designation criteria. Analysts have noted that under the tightened framework, delisting reviews could recur if financial-structure improvement is delayed."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 6월 26일 (유상증자 납입일)",
-    "en": "June 26, 2026 (Rights Offering Settlement)"
+    "ko": "2026년 11월 중",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "유상증자(약 187억원) 납입 완료 여부 및 청약률 확인: 실권주 발생 규모에 따라 실제 조달 자금과 최종 발행 주식 수가 달라지며, 희석 기준 BPS와 주식 수를 재산정해야 한다.",
-    "en": "Confirm completion and final subscription rate of the approximately KRW 18.7bn rights offering: unsubscribed shares will affect actual proceeds and total shares; recalculate diluted BPS and per-share metrics post-settlement."
+    "ko": "3분기 보고서 공시를 통해 매출 회복세 지속 여부와 영업손실 축소 여부, 그리고 2분기의 순이익 전환이 일회성이었는지 재확인할 필요가 있다.",
+    "en": "The Q3 2026 report filing should confirm whether the revenue recovery continues, whether the operating loss narrows, and whether the Q2 swing to net profit was a one-off item."
    }
   },
   {
    "when": {
-    "ko": "2026년 7~8월 (2026년 2분기 실적 발표 전후)",
-    "en": "July–August 2026 (Q2 2026 Earnings Release)"
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "2026년 2분기 매출·영업손실 추이 확인: 안성 태양광발전소 계약(계약기간 ~6월 30일) 완료 후 매출 인식 여부, 신사업 비용 통제 수준, 영업현금흐름 방향을 점검해 구조적 개선 여부를 판단한다.",
-    "en": "Review Q2 2026 revenue and operating loss trends: check revenue recognition from the Anseong solar plant contract (expiring June 30), assess cost discipline in new business segments, and evaluate operating cash flow direction to gauge structural improvement."
+    "ko": "몰포지의 유럽 CRO 후보물질 검증 데이터 회수와 이를 근거로 한 글로벌 기술이전(L/O) 협상 개시 여부를 확인할 시점이다.",
+    "en": "This is when Molpoji's European CRO candidate-validation data is expected back, providing a basis to check whether global licensing-out negotiations begin."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (AI신약 전임상 데이터 회수 예정)",
-    "en": "H2 2026 (AI Drug Preclinical Data Readout)"
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "에이전트AI랩스의 TYK2·TNIK 후보물질 6종에 대한 유로핀스 결합친화도 실험 결과 발표 및 글로벌 기술이전 협상 착수 여부 확인 — 이 이벤트가 회사의 AI신약 사업 가치 평가에 가장 직접적인 영향을 준다.",
-    "en": "Monitor release of Eurofins binding-affinity data for the six TYK2/TNIK candidates and whether global L/O negotiations are formally launched — this is the single most direct near-term catalyst for the AI drug business valuation."
+    "ko": "미국 로보택시 자회사의 Robodash 플릿 확장과 테슬라 개인 소유 차량 공유 네트워크 참여 진행 상황을 점검할 필요가 있다.",
+    "en": "The progress of the Robodash fleet expansion and participation in Tesla's individually owned vehicle-sharing network should be monitored."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~연말 (테슬라 FSD·플릿 오퍼레이터 상용화 동향)",
-    "en": "H2 2026–Year-End (Tesla FSD / Fleet Operator Commercialization)"
+    "ko": "2027년 6월 말 이후",
+    "en": "After late June 2027"
    },
    "what": {
-    "ko": "테슬라의 미국 내 FSD unsupervised 정식 상용화 및 플릿 오퍼레이터 프로그램 공식 출시 일정 모니터링: 에이전트AI 로보택시 사업의 수익 발생 시점이 이 외부 일정에 전적으로 종속되어 있다.",
-    "en": "Track Tesla's official commercialization of unsupervised FSD and the formal launch of its Fleet Operator program in the U.S.: AgentAI's robotaxi revenue commencement is entirely contingent on this external timeline."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 초 (2026년 연간 실적 발표)",
-    "en": "Early 2027 (FY2026 Annual Results)"
-   },
-   "what": {
-    "ko": "유상증자 조달 자금 집행 성과, 연간 영업손실 축소 여부, 어스레이더·AI결제 신사업의 첫 매출 발생 여부를 종합 검토 — 신사업 피버팅의 성과가 처음으로 연간 수치에 반영되는 시점이다.",
-    "en": "Assess the deployment impact of rights offering proceeds, whether full-year operating losses have narrowed, and whether EarthRadar and AI payments have generated first commercial revenue — the first annual reporting period to reflect the full effect of the pivot strategy."
+    "ko": "35회차 전환사채의 전환청구기간(2027.6.29~2029.5.29) 개시에 따른 신규 물량 출회와 지분 희석 여부를 점검해야 한다.",
+    "en": "The start of the conversion request period for the 35th-round convertible bond (June 29, 2027 to May 29, 2029) warrants monitoring for new share supply and dilution."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "에이전트AI는 태양광·풍력 중심의 신재생에너지 기업에서 로보택시·AI신약·위성데이터·AI결제로의 급격한 피버팅을 진행 중이나, 2022년 이후 매출 축소와 함께 4년 연속 영업적자가 심화됐고 2025년 영업손실률은 -71%에 달했다. 특히 2025년 4분기에 대규모 일회성 손실이 집중되며 지배주주 연간 순손실이 185.4억원으로 급증했고, 2026년 1분기 들어서야 손실 규모가 다소 완화됐다. 2026년 6월 말 완료 예정인 약 187억원의 유상증자는 단기 유동성을 보강하나, 주식 수 약 2배 증가의 희석 부담을 동반한다. 중기 핵심 모니터링 포인트는 AI신약 후보물질의 전임상 데이터(2026년 하반기)와 테슬라 플릿 오퍼레이터 상용화 여부로, 두 이벤트의 성사 가부에 따라 회사의 가치 재평가 방향이 크게 갈릴 전망이다. 신사업의 잠재적 성장성과 현재의 구조적 적자 사이의 괴리가 큰 상황이므로, 현금 소진 속도·자본 변동·신사업 마일스톤 달성 여부를 지속적으로 점검하는 것이 중요하다.",
-   "ko_note": "",
-   "en": "AgentAI is executing an aggressive pivot from solar/wind renewables into robotaxi operations, AI drug discovery, satellite intelligence, and AI payments, but four consecutive years of widening operating losses — culminating in an OPM of –71% in FY2025 — underscore the urgency of monetization. A concentrated one-time charge in Q4 2025 drove the owner-attributable annual net loss to KRW 18.5bn; Q1 2026 saw some normalization as non-recurring items cleared, but structural profitability remains distant. The June 2026 rights offering provides a roughly two-year liquidity buffer at the cost of approximately 100% equity dilution. The two key medium-term catalysts are the AI drug preclinical data readout in H2 2026 and Tesla's Fleet Operator commercialization; how each unfolds will largely determine the direction of any valuation re-rating. Given the wide gap between the potential upside of new ventures and the current deep structural losses, continuous monitoring of cash burn rate, equity trajectory, and new business milestone achievement is essential for any assessment of the company's trajectory."
+   "ko": "에이전트AI는 태양광 등 신재생에너지 EPC 사업을 기반으로 하면서, 최근 1년 사이 AI 결제, AI 신약 발굴, 로봇 안전 검증, 위성 데이터 분석, 모바일 게임, 로보택시 등 다수의 신사업을 동시에 추진하는 소형 코스닥 상장사다. 확정 재무를 보면 매출은 2024년을 저점으로 소폭 반등했지만 영업손실은 매년 확대돼 2025년 영업이익률은 -71.0%까지 악화됐고, 특히 2025년 4분기에는 일회성 요인이 겹치며 분기 순손실이 크게 불어났다. 2026년 들어 매출은 20억원대 후반으로 회복되고 2분기에는 지배주주 순이익이 흑자로 전환됐으나, 영업손실이 지속된 가운데 나온 비영업적 요인에 따른 결과로 해석할 여지가 크다. 시장에서는 사명과 사업목적에 담긴 AI 지향성과 달리, 실제 조달 자금 상당액이 기존 신재생에너지 사업과 채무상환에 쓰이고 있다는 지적이 나오고 있어 신사업 전환의 속도와 진정성에 대한 평가는 엇갈린다. 잦은 최대주주·경영진 교체, 반복적인 전환사채 발행에 따른 희석 위험, 그리고 강화된 코스닥 상장폐지 기준상 저가주로 분류되는 점 등은 함께 짚어야 할 변수다. 향후 3분기 실적과 몰포지·로보택시 등 신사업의 구체적 성과 지표가 확인되기 전까지는 사업 다각화의 실질적 성과를 판단하기 이르다.",
+   "en": "AgentAI is a small KOSDAQ-listed company built on a solar and renewable-energy EPC base that has, over the past year, simultaneously pursued numerous new ventures spanning AI payments, AI drug discovery, robot safety validation, satellite data analytics, mobile gaming, and robotaxis. Confirmed financials show revenue bottoming in 2024 and rebounding modestly, while the operating loss widened every year, pushing the 2025 operating margin down to -71.0%, with an especially large one-off-driven net loss recorded in the fourth quarter of 2025. In 2026, revenue recovered into the high-KRW-2-billion range and the second quarter swung to an owners' net profit, but this appears largely attributable to non-operating items amid a continuing operating loss. Market commentary has noted that despite the AI-oriented rebranding, a significant portion of raised capital continues to flow into the legacy renewable-energy business and debt repayment, leaving mixed assessments of the pace and sincerity of the new-business transition. Frequent changes in controlling shareholders and management, dilution risk from repeated convertible bond issuances, and the stock's classification among low-priced names under tightened KOSDAQ delisting standards are all variables to weigh together. It remains premature to judge the tangible results of the diversification strategy until Q3 performance and concrete progress indicators for ventures like Molpoji and the robotaxi business are confirmed."
   }
  },
  "sources": [
-  "https://dealsite.co.kr/articles/161120",
-  "https://dealsite.co.kr/articles/153485",
-  "https://www.valueline.co.kr/finance/investment/060900",
-  "https://valueline.co.kr/finance/mri/060900",
   "https://www.sedaily.com/article/20056252",
-  "https://www.iprovest.com/weblogic/RSNewsServlet?scr_id=16&mode=detail&listnum=239&dgubun=4&ymd=20260323&seqno=08340081",
-  "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000104808",
-  "https://m.thinkpool.com/item/060900",
-  "https://news.nate.com/view/20260326n05380",
+  "https://www.valueline.co.kr/finance/investment/060900",
+  "https://www.sedaily.com/NewsView/2H1RJXD4WZ",
+  "https://www.asiae.co.kr/article/2025121708451521332",
+  "https://www.edaily.co.kr/News/Read?newsId=04450966645514848",
   "https://www.sedaily.com/article/20038985",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=643788",
-  "https://www.sedaily.com/article/20013533",
-  "https://www.sedaily.com/NewsView/2H1K7PB5GY",
-  "https://dealsite.co.kr/articles/157602",
-  "https://www.mt.co.kr/stock/2026/02/27/2026022709493411438",
+  "https://www.sedaily.com/NewsView/2K79VD76B8",
+  "https://www.sedaily.com/article/20027395",
   "https://www.sedaily.com/NewsView/2H1S144YVX",
-  "https://www.sentv.co.kr/article/view/sentv202602270051"
+  "https://valueline.co.kr/finance/mri/060900",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05015126645483360",
+  "https://m.thinkpool.com/item/060900",
+  "https://www.tossinvest.com/stocks/A060900/order",
+  "https://kr.investing.com/news/global-filings/article-93CH-1990052",
+  "https://cloud.google.com/discover/what-are-ai-agents",
+  "https://www.thebell.co.kr/front/newsview.asp?key=202604231535253280103774",
+  "https://news.nate.com/view/20260326n05380",
+  "https://markets.hankyung.com/stock/060900"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "060900",
  "name": "에이전트AI",
  "name_en": "Agent AI Co.,Ltd.",
@@ -233,9 +223,9 @@
   "에너지·전력"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 05:32",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 21:32",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 3805,
-   "mcap": 0.0186,
-   "shares": 4883930,
+   "price": 3685,
+   "mcap": 0.0241,
+   "shares": 6543786,
    "total_shares": 4883930,
    "wavg_shares": 3973641,
    "per": null,
    "eps": -4531,
-   "pbr": 0.4045,
+   "pbr": 0.3917,
    "bps": 9407,
    "roe_ttm": -40.5,
    "ttm_window": "2025Q3~2026Q2",

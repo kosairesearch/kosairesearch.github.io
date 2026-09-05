@@ -1,230 +1,230 @@
 {
  "title": {
-  "ko": "흉부 CT AI 플랫폼, SaaS 전환·글로벌 수주 가속 국면",
-  "en": "Chest CT AI Platform at an Inflection Point in SaaS Transition and Global Contract Expansion"
+  "ko": "독일 급여화 수혜, 적자축소는 진행형 과제",
+  "en": "Germany Reimbursement Boost, Losses Remain a Work in Progress"
  },
  "lead": {
-  "ko": "코어라인소프트는 흉부 CT 통합 AI 진단 플랫폼 'AVIEW'로 국가 검진부터 유럽·북미·아시아 글로벌 수주를 확장하고 있으나, 매출 대비 3배를 초과하는 영업비용 구조와 지속적 현금 소진이 상업화 속도의 핵심 시험대로 작동하고 있다.",
-  "en": "Coreline Soft is accelerating global contract wins with its AVIEW chest CT AI platform across domestic screening programs, European national projects, and North American outpatient networks, while persistent operating losses exceeding three times annual revenue and continued cash burn remain the critical test of its commercialization timeline."
+  "ko": "코어라인소프트는 독일 국가 폐암검진 급여화에 힘입어 해외 매출이 빠르게 늘고 있지만, 상장 이후 한 해도 흑자를 내지 못했고 상장 4년차부터 법차손 비율 요건에 따른 관리종목 지정 리스크에 새롭게 노출됐다.",
+  "en": "CoreLine Soft is seeing rapid overseas revenue growth on the back of Germany's national lung cancer screening reimbursement, but the company has not posted a profitable year since listing and has newly entered the window where losses relative to equity could trigger administrative-issue designation starting its fourth listed year."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 42.8억원으로 전년 대비 9.0% 성장, SaaS 비중이 45%로 확대되며 영업손실이 소폭 개선됐으나 구조적 대규모 적자는 지속",
-   "en": "2025 revenue grew 9.0% YoY to KRW 4.28 billion with SaaS mix expanding to 45%, while the structural operating loss improved only marginally, remaining deeply negative"
+   "ko": "2025년 매출 42.8억원, 영업손실 134.4억원으로 상장 이래 매년 적자가 이어지고 있다.",
+   "en": "2025 revenue was KRW 4.28 billion with an operating loss of KRW 13.4 billion, continuing an unbroken streak of annual losses since listing."
   },
   {
-   "ko": "2026년 1분기 해외 매출 비중 처음으로 60% 돌파, 독일에서 단일 분기 11개 신규 계약 체결로 전년 연간 실적(10건)을 초과 달성",
-   "en": "Overseas revenue share exceeded 60% for the first time in Q1 2026, with 11 new German supply contracts signed in a single quarter—surpassing the prior full-year count of 10"
+   "ko": "독일 저선량 CT 폐암검진 급여화(2026년 4월 시행) 이후 현지 신규 병원 계약이 급증하며 해외 매출 비중이 확대되고 있다.",
+   "en": "Since Germany's low-dose CT lung cancer screening reimbursement took effect in April 2026, new hospital contracts there have surged, lifting the overseas revenue share."
   },
   {
-   "ko": "2026년 6월 보건복지부 '권역책임의료기관 AI 진료시스템 지원사업' 전국 17개 병원 중 9곳 공급자 선정, B2G 기반 확충",
-   "en": "Designated as AI solution provider for 9 of 17 regional hub hospitals under the Ministry of Health and Welfare's national AI care system project in June 2026, reinforcing the domestic public-sector B2G base"
+   "ko": "매출 인식 구조를 영구사용권에서 SaaS 구독형으로 전환 중이며, SaaS 매출 비중이 2024년 29%에서 2025년 45%로 높아졌고 2026년 50% 상회가 전망된다.",
+   "en": "The company is shifting its revenue model from perpetual licenses to SaaS subscriptions, with the SaaS revenue share rising from 29% in 2024 to 45% in 2025, and is expected to exceed 50% in 2026."
   },
   {
-   "ko": "311억원 유상증자 완료(2025년 6월)로 자본총계 181.7억원 회복, 부채비율 573.2%→124.5%로 개선됐으나 현금 소진은 지속",
-   "en": "KRW 31.1 billion rights offering completion (June 2025) restored equity to KRW 18.17 billion and reduced debt ratio from 573.2% to 124.5%, though cash consumption continues"
+   "ko": "상장 4년차인 2026년부터 법차손 비율 요건 유예가 끝나 향후 3개 사업연도 중 2회 기준 초과 시 관리종목 지정 위험이 있다.",
+   "en": "The grace period for the loss-to-equity ratio listing requirement ends starting the fourth listed year (2026), exposing the company to administrative-issue designation risk if the threshold is breached twice within three fiscal years."
   },
   {
-   "ko": "AVIEW Lung Texture 디지털 바이오마커 전략으로 글로벌 제약사·CRO 시장 진입 시도, 병원 B2B를 넘는 수익 다각화 방향 모색",
-   "en": "AVIEW Lung Texture's digital biomarker strategy targets global pharma and CRO markets, pursuing revenue diversification beyond the hospital B2B model"
+   "ko": "전환사채 발행과 유상증자를 반복하며 자본잠식을 해소했으나, 조기상환·파생상품 평가손실 등 비현금성 비용이 순손실을 키우는 요인으로 작용했다.",
+   "en": "Repeated convertible bond issuances and rights offerings have resolved capital impairment, but non-cash items such as early redemption and derivative valuation losses have widened net losses."
   }
  ],
  "business": {
-  "ko": "코어라인소프트는 2012년 설립된 AI 기반 3D CT 의료영상 분석 전문기업으로, 2023년 9월 코스닥에 상장했다. 주력 제품군인 'AVIEW'는 단 한 번의 흉부 CT 촬영으로 폐결절·폐기종·관상동맥석회화(CAC)를 동시 분석하는 통합 플랫폼으로, AVIEW LCS Plus·AVIEW CAC·AVIEW ILA(간질성 폐이상)·AVIEW Lung Texture·AVIEW PE(폐색전증)·AVIEW Aortalab 등으로 구성된다. 사업 구조는 병원·의료기관 대상 B2B 모델이며, 구독형(SaaS·PPU 기반)과 라이선스 매출이 수익원이다. 국내에서는 2017년부터 국립암센터 주관 국가 폐암검진 솔루션을 9년 연속 단독 공급하며 상급병원 150개 이상에 솔루션을 제공하고 있다. 글로벌 시장은 2020년 유럽법인, 2021년 미국법인을 설립하며 본격화됐으며, 현재 21개국 인허가·FDA 510(k) 인증 12건을 보유하고 19개국 200여 의료기관에서 누적 250만 건 이상의 임상 판독 경험을 축적했다. 유럽에서는 독일(HANSE)·이탈리아(ILSP)·EU 주관 4ITLR 등 국가 폐암검진 프로젝트와 영국 NHS EDIN 프로젝트에 참여 중이며, 대만에서는 AI 도입 가능 병원 약 200곳 중 60개 이상에 공급해 약 30% 초기 점유율을 확보했다. 미국에서는 INA(Infinitt North America) 파트너십을 통해 ImageCare Radiology 등 외래 영상의학센터 네트워크와 공급 계약을 확대 중이다. 경쟁 구도는 국내에서 루닛·뷰노·딥노이드, 해외에서 GE 헬스케어·Siemens Healthineers·Philips 등 글로벌 대형사와 대응하는 가운데, '흉부 CT 통합 플랫폼' 포지셔닝으로 단일 질환 AI 대비 차별화를 추구한다. 비용 구조는 연구개발비와 인력비용이 주요 요소이며, 매출의 수배를 초과하는 영업비용이 지속적인 적자의 핵심 원인이다.",
-  "en": "Coreline Soft was founded in 2012 as an AI-based 3D CT medical imaging analysis specialist and listed on KOSDAQ in September 2023. Its flagship AVIEW product suite simultaneously analyzes pulmonary nodules, emphysema, and coronary artery calcification (CAC) from a single chest CT scan, comprising AVIEW LCS Plus, AVIEW CAC, AVIEW ILA (interstitial lung abnormality), AVIEW Lung Texture, AVIEW PE (pulmonary embolism), and AVIEW Aortalab. The business model is B2B targeting hospitals and medical institutions, with subscription (SaaS/PPU) and license revenues as primary sources. Domestically, the company has been the sole supplier of the national lung cancer AI screening solution for nine consecutive years under the National Cancer Center, serving over 150 tertiary hospitals. International expansion began with a European subsidiary in 2020 and a U.S. subsidiary in 2021; the company now holds regulatory approvals in 21 countries, 12 FDA 510(k) clearances, and over 2.5 million cumulative clinical reads across 200-plus institutions in 19 countries. In Europe, it participates in Germany's HANSE, Italy's ILSP, the EU-coordinated 4ITLR lung screening projects, and the UK's NHS EDIN program. In Taiwan, solutions are deployed across 60-plus of approximately 200 AI-adoptable hospitals, capturing roughly 30% initial market penetration. In the U.S., supply agreements with outpatient radiology networks are expanding via INA (Infinitt North America) partnership. Domestic competitors include Lunit, VUNO, and DeepNoid; internationally, GE Healthcare, Siemens Healthineers, and Philips. Coreline differentiates via an integrated chest CT platform approach over single-disease AI. Cost structure is dominated by R&D and personnel expenses, with operating costs persistently at multiples of revenue."
+  "ko": "코어라인소프트는 2012년 KAIST 출신 공동창업자 3인이 설립한 의료 인공지능(AI) 기업으로, 2023년 스팩 합병을 통해 코스닥에 기술특례 상장했다. 핵심 제품은 CT 영상 기반 AI 진단보조 소프트웨어 'AVIEW' 제품군으로, 폐결절 검출·폐암검진에 특화된 'AVIEW LCS Plus', 만성폐쇄성폐질환 정량분석 'AVIEW COPD', 관상동맥석회화 정량분석 'AVIEW CAC', 검진 운영·판독 연계 플랫폼 'AVIEW HUB' 등으로 구성된다. 매출은 라이선스(제품)와 용역으로 구분되며, 매출 대부분은 임상용 라이선스 판매에서 발생하는데 해당 부문이 전체 매출의 약 88.6%를 차지한 시기도 있었다. 사업모델은 구축 시점에 매출을 한 번에 인식하는 CapEx형 라이선스 모델과 사용 기간에 걸쳐 매출을 인식하는 연 단위 구독모델로 구분되며, 회사는 후자의 비중을 확대하는 전환을 진행하고 있다. 주요 고객은 병원 및 국가 검진기관으로, 독일 샤리테·하이델베르크대학병원·하노버의과대학(MHH), 이탈리아 트리에스테·제멜리 대학병원 등 유럽 상급 의료기관과 국내 공공의료기관을 포함한다. 미국에서는 약 1,000개 병원 네트워크를 보유한 3DR Labs와 다년간 구독 계약을 갱신해오고 있다. 국내 경쟁 구도에서는 루닛, 뷰노, 딥노이드 등이 흉부·두경부 영상 분석 분야에서 경쟁하고 있으며, 코어라인소프트는 흉부 CT 통합 분석 플랫폼으로 포지셔닝을 차별화하고 있다. 2025년 9월에는 의료 AI 기업 뷰노로부터 폐 CT 영상 분석 사업 관련 자산을 인수해 흉부 CT 포트폴리오를 확대했다.",
+  "en": "CoreLine Soft is a medical AI company founded in 2012 by three co-founders from KAIST, and it listed on KOSDAQ in 2023 through a SPAC merger under the technology special listing track. Its core product is the CT-based AI diagnostic-support software suite 'AVIEW,' comprising 'AVIEW LCS Plus' for lung nodule detection and lung cancer screening, 'AVIEW COPD' for chronic obstructive pulmonary disease quantification, 'AVIEW CAC' for coronary artery calcium scoring, and 'AVIEW HUB,' a screening operations and reading-integration platform. Revenue is split between license (product) and service categories, with clinical license sales historically accounting for the large majority, at one point representing about 88.6% of total revenue. The business model spans a CapEx-style license model that recognizes revenue upfront at installation and an annual subscription model that recognizes revenue over the usage period, and the company is shifting its mix toward the latter. Key customers are hospitals and national screening programs, including top European institutions such as Charité, Heidelberg University Hospital, and Hannover Medical School (MHH) in Germany, plus Trieste and Gemelli university hospitals in Italy, alongside domestic public healthcare institutions. In the United States, the company has repeatedly renewed a multi-year subscription agreement with 3DR Labs, which operates a network of roughly 1,000 hospitals. Domestically, competitors such as Lunit, VUNO, and Deepnoid compete in chest and head-and-neck imaging analysis, and CoreLine Soft differentiates itself by positioning as an integrated chest CT analysis platform. In September 2025, the company acquired lung CT imaging analysis assets from medical AI firm VUNO to expand its chest CT portfolio."
  },
  "earnings": {
-  "ko": "2025년 연간 매출은 42.8억원으로 전년 39.3억원 대비 9.0% 증가했으며, 영업손실은 134.4억원으로 전년 137.8억원에서 2.4% 축소되어 3개년 중 처음으로 손익 방향이 개선됐다. 영업손실률(OPM)은 2023년 -284.3%, 2024년 -350.7%에서 2025년 -313.9%로 개선됐으나 매출의 3배를 초과하는 영업비용 구조는 유지되고 있다. 순손실은 144.9억원으로 전년 141.4억원보다 소폭 확대됐으며 주당순손실(기본 EPS)은 2025년 기준 -897원을 기록했다. 분기별 흐름을 보면, 2025년 1분기 매출 8.7억원에서 4분기 13.3억원으로 점진적 상승을 이뤄냈고 2026년 1분기에도 13.0억원을 유지하며 상승 기조를 이어갔다. 영업손실도 2025년 1분기 -37.0억원에서 4분기 -29.3억원으로 개선 추세를 나타냈으나, 2026년 1분기 -31.0억원으로 소폭 되돌아갔다. 영업활동 현금흐름은 2023년 -102.8억원, 2024년 -108.2억원, 2025년 -116.1억원으로 3년 연속 악화되어 외부 자금 조달 의존이 구조적으로 높다. 자본 측면에서는 2024년 말 자본총계가 36.6억원까지 급감하며 부채비율이 573.2%에 달했으나, 2025년 311억원 유상증자 및 뷰노와의 제3자배정 전환우선주 발행(약 34억원) 완료 등으로 자본이 181.7억원으로 회복되고 부채비율은 124.5%로 하락했다. 사업 구조상 SaaS형 매출 비중이 2024년 29%에서 2025년 45%로 확대됐으며, 2026년 1분기에는 해외 매출 비중이 처음으로 60%를 돌파하며 수익 체질 개선이 진행 중이다.",
-  "en": "Full-year 2025 revenue reached KRW 4.28 billion, up 9.0% from KRW 3.93 billion in 2024, while the operating loss narrowed by 2.4% to KRW 13.44 billion from KRW 13.78 billion—the first directional improvement in three years. Operating margin improved from -350.7% in 2024 to -313.9% in 2025, though operating costs still exceed three times revenue. Net loss widened slightly to KRW 14.50 billion from KRW 14.14 billion, with basic EPS at KRW -897 for fiscal 2025. On a quarterly basis, revenue rose from KRW 0.87 billion in Q1 2025 to a peak of KRW 1.33 billion in Q4 2025, before holding near KRW 1.30 billion in Q1 2026. Operating losses trended from KRW -3.70 billion in Q1 2025 to -2.93 billion in Q4 2025, before edging back to -3.10 billion in Q1 2026. Operating cash flow has deteriorated for three consecutive years: KRW -10.28 billion (2023), -10.82 billion (2024), and -11.61 billion (2025), reflecting a structurally high dependence on external capital. On the balance sheet, equity collapsed to KRW 3.66 billion at end-2024 (debt ratio 573.2%), but the KRW 31.1 billion rights offering completed in June 2025 and a roughly KRW 3.4 billion third-party preferred share allotment to VUNO restored equity to KRW 18.17 billion, reducing the debt ratio to 124.5%. Operationally, SaaS revenue mix expanded from 29% (2024) to 45% (2025), and overseas revenue exceeded 60% of total for the first time in Q1 2026, signaling an ongoing structural shift in revenue composition."
+  "ko": "2025년 연간 매출은 42.84억원으로 2024년 39.29억원 대비 소폭 늘었으나, 영업손실은 134.4억원(영업이익률 -313.9%), 지배주주 순손실은 145.0억원을 기록해 4년 연속 적자가 이어졌다. 연간 영업손실은 2022년 101.6억원, 2023년 116.6억원, 2024년 137.8억원으로 매년 확대되다 2025년 134.4억원으로 소폭 줄었으나 여전히 매출의 3배를 넘는 규모다. 분기별로 보면 2025년 3분기 매출 9.75억원·영업손실 35.92억원에서 2026년 2분기 매출 15.86억원·영업손실 23.69억원으로, 매출은 늘고 영업손실은 줄어드는 흐름이 확인된다. 다만 2026년 2분기 지배주주 순손실은 37.24억원으로 직전 분기(32.21억원)보다 오히려 커졌는데, 이는 전환사채 조기상환 및 파생상품 평가손실 등 비현금성 영업외비용이 순손실을 늘린 영향으로 풀이된다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 매출을 합산하면 약 51.9억원으로 2025년 연간 매출(42.8억원)을 이미 넘어섰고, 같은 기간 영업손실 합계는 약 119.9억원으로 2025년 연간치보다 소폭 개선됐다. 반면 같은 네 개 분기 지배주주 순손실 합계는 약 138.9억원으로 2025년 연간 순손실(145.0억원)과 큰 차이가 없어, 영업손익 개선이 비영업 비용 증가로 상쇄되는 구간에 있음을 보여준다. 현금흐름 측면에서는 영업활동현금흐름이 2022년 -87.8억원에서 2025년 -116.1억원으로 매년 순유출이 지속되며 외부 자금조달 의존도가 높은 구조를 이어가고 있다. 자본총계는 2024년 36.6억원까지 줄었다가 2025년 181.7억원으로 크게 늘었는데, 이는 순손실 지속에도 유상증자를 통한 자본 확충이 반영된 결과로 해석된다.",
+  "en": "Full-year 2025 revenue was KRW 4.284 billion, up slightly from KRW 3.929 billion in 2024, but the operating loss was KRW 13.4 billion (operating margin of -313.9%) and the net loss attributable to owners was KRW 14.5 billion, marking a fourth consecutive year of losses. Annual operating losses widened from KRW 10.2 billion in 2022 to KRW 11.7 billion in 2023 and KRW 13.8 billion in 2024, before narrowing slightly to KRW 13.4 billion in 2025, though the loss still exceeds revenue by more than threefold. On a quarterly basis, revenue rose from KRW 975 million in Q3 2025 with an operating loss of KRW 3.59 billion to KRW 1.586 billion in Q2 2026 with an operating loss of KRW 2.37 billion, showing revenue growth alongside a narrowing operating loss. However, the owners' net loss in Q2 2026 widened to KRW 3.72 billion from KRW 3.22 billion in the prior quarter, which appears attributable to non-cash non-operating items such as early convertible bond redemption and derivative valuation losses. Summing the most recent four quarters (Q3 2025 through Q2 2026), revenue totaled roughly KRW 5.19 billion, already exceeding full-year 2025 revenue of KRW 4.28 billion, while the operating loss over the same window totaled roughly KRW 12.0 billion, a modest improvement versus the full-year 2025 figure. In contrast, the owners' net loss over the same four quarters totaled roughly KRW 13.9 billion, little changed from the full-year 2025 net loss of KRW 14.5 billion, indicating that operating improvement has been offset by rising non-operating costs. On the cash flow side, operating cash flow has remained negative every year, deepening from KRW -8.78 billion in 2022 to KRW -11.6 billion in 2025, underscoring continued reliance on external funding. Total equity fell to KRW 3.66 billion in 2024 before rebounding sharply to KRW 18.17 billion in 2025, reflecting capital raised through rights offerings that offset continued net losses."
  },
  "industry": {
-  "ko": "글로벌 의료영상 AI 시장은 2025년 약 18억 달러 규모에서 2035년까지 연평균 30.6%로 성장해 약 260억 달러에 달할 전망이며, 전체 헬스케어 AI 시장도 2026년 560억 달러에서 2034년 1조 달러를 웃돌 것으로 예측된다. 국내 AI 헬스케어 시장은 연평균 50.8%의 성장률로 글로벌 평균(41.8%)을 크게 웃돌아 2030년 약 9조원 시장 형성이 전망된다. 고령화 가속과 영상의학 전문인력 부족은 AI 진단보조 솔루션 수요를 구조적으로 끌어올리는 핵심 동인이며, 특히 흉부 질환 조기 진단에 대한 의료 시스템의 요구가 전 세계적으로 강화되고 있다. 경쟁 양상은 알고리즘 정확도 중심에서 병원 워크플로우 통합·규제 대응·장기 운영 신뢰도 경쟁으로 이동하고 있어, 조기 인허가를 확보한 기업이 선점 효과를 누리는 구도다. FDA에 제출된 AI·ML 의료기기 사례의 77.5%가 영상의학 분야로 집중돼 있어 영상의학 AI가 의료 AI 중 가장 빠르게 제도권에 편입되는 분야임을 보여준다. 독일의 국가 폐암검진 AI 의무 적용, 영국 NHS의 1.5억 파운드 규모 의료 AI 예산 확대 등 유럽 주요국의 정책 지원이 시장 성장을 가속화하는 외부 변수로 작용하고 있다. 한편 GE 헬스케어·Siemens Healthineers·Philips 등 글로벌 대형 의료기기사의 AI 통합 가속화는 소규모 특화 업체들의 경쟁 환경을 지속적으로 압박하는 요인이다.",
-  "en": "The global AI in medical imaging market is projected to grow from approximately USD 1.8 billion in 2025 at a CAGR of over 30.6% to USD 26 billion by 2035, while the broader AI in healthcare market is forecast to expand from USD 56 billion in 2026 to over USD 1 trillion by 2034. South Korea's AI healthcare market is expected to grow at a 50.8% CAGR—well above the global average of 41.8%—reaching approximately KRW 9.25 trillion by 2030. Aging demographics and a structural shortage of radiology specialists are the primary demand drivers for AI diagnostic support, particularly in early thoracic disease detection. Competitive dynamics are shifting from algorithm accuracy races toward hospital workflow integration, regulatory compliance, and long-term operational reliability, favoring companies with established regulatory track records. Notably, 77.5% of FDA AI/ML medical device submissions fall under radiology, underscoring the segment as the fastest-growing area entering regulatory mainstream. Policy tailwinds include Germany's mandatory AI use in its national lung cancer screening program and the UK NHS's £150 million medical AI budget expansion. Conversely, the accelerating AI integration by global medtech majors such as GE Healthcare, Siemens Healthineers, and Philips continuously tightens the competitive landscape for specialized niche players."
+  "ko": "글로벌 의료 AI 시장은 저선량 CT 기반 폐암검진 제도화를 중심으로 확장되고 있으며, 독일은 2026년 4월부터 고위험 흡연자 및 과거 흡연자를 대상으로 저선량 CT 폐암검진을 법정 건강보험(GKV) 체계에 편입해 시행하고 있다. 이에 따라 단순 CT 장비나 폐결절 탐지 소프트웨어를 넘어 대상자 선별, 판독 연계, 추적관리, 품질관리를 통합한 '운영형 검진 인프라' 수요가 커지고 있다. 규제 측면에서는 미국 FDA 510(k), 유럽 MDR, 영국 UKCA 등 복수의 인허가 체계를 충족해야 하며, 코어라인소프트는 이미 다수의 FDA 510(k) 인증 제품군을 보유하고 있어 진입장벽을 일부 통과한 상태다. 국내에서는 루닛, 뷰노, 딥노이드 등 경쟁사들이 흉부·유방·두경부 등 영역별로 경쟁하고 있으며, 국가 검진 사업은 초기 시장을 선점한 기업의 지위가 장기간 유지되는 경향이 있어 레퍼런스 확보가 중요한 경쟁 요소로 꼽힌다. 국내에서는 보건복지부의 권역책임의료기관 AI 진료시스템 지원사업 등 공공 부문 수요가 새로운 성장축으로 부상하고 있다. 다만 병원의 AI 도입 속도는 전공의 사퇴 등 의료 인력 환경 변화, 예산 배정 시기 등에 따라 지연될 수 있어, 시장 성장 속도와 개별 기업의 매출 인식 시점 사이에는 시차가 존재한다.",
+  "en": "The global medical AI market is expanding around the institutionalization of low-dose CT-based lung cancer screening, and Germany has implemented low-dose CT lung cancer screening for high-risk current and former smokers within its statutory health insurance (GKV) framework starting April 2026. This has increased demand for integrated 'operational screening infrastructure' that goes beyond CT equipment or nodule-detection software alone, encompassing subject selection, reading integration, follow-up tracking, and quality management. On the regulatory side, companies must satisfy multiple approval regimes including US FDA 510(k), European MDR, and UK UKCA, and CoreLine Soft already holds a number of FDA 510(k)-cleared products, having cleared part of this entry barrier. Domestically, competitors such as Lunit, VUNO, and Deepnoid compete across chest, breast, and head-and-neck imaging segments, and because national screening programs tend to favor early entrants for extended periods, securing reference sites is a key competitive factor. In Korea, public-sector demand such as the Ministry of Health and Welfare's AI clinical system support program for regional lead hospitals is emerging as a new growth driver. However, the pace of AI adoption at hospitals can be delayed by factors such as changes in the medical workforce environment, including resident physician resignations, and budget allocation timing, creating a time lag between overall market growth and individual companies' revenue recognition."
  },
  "outlook": {
-  "ko": "2026년 6월, 보건복지부의 '권역책임의료기관 AI 기반 진료시스템 지원사업'에서 전국 17개 권역거점병원 중 9곳의 최종 공급자로 선정되어 국내 공공의료(B2G) 기반을 확충했으며, 각 병원과의 세부 계약은 하반기 중 순차적으로 진행될 예정이다. 독일에서는 국가 폐암검진 본격 시행을 배경으로 2026년 1분기에만 11개 의료기관과 신규 계약을 체결, 전년 연간 수주 실적(10건)을 단일 분기에 초과해 수주 가속화가 뚜렷해지고 있다. 대만에서는 AI 도입 가능 병원 약 200곳 중 60개 이상에 솔루션을 공급하며 약 30%의 초기 점유율을 확보한 상태로, 주요 대형병원과의 협력을 토대로 추가 침투를 도모하고 있다. 미국에서는 ImageCare Radiology 등 외래 영상의학센터 네트워크와의 공급 계약 확대 및 CMS 보험 수가 연계 정책 진행이 중장기 매출 확대의 촉매로 기대된다. 서울아산병원 임상 연구를 통해 임상적 활용 가능성이 입증된 AVIEW Lung Texture의 디지털 바이오마커 전략이 글로벌 제약사·CRO 시장 진입을 모색하며 수익 모델 다각화가 추진되고 있다. 회사 CFO는 2026년부터 사용량 기반 인프라 매출이 본격 반영되며 고정비 레버리지가 작동하는 구간에 진입할 것이라고 밝혔으나, 실제 손익 개선은 매출 성장 속도에 달려 있다. 일회성 공공 지원 의존도를 낮추고 병원 중심의 장기 SaaS 계약을 확대하는 포트폴리오 재편이 진행 중이며, 2026년 SaaS 매출 비중 50% 이상 달성이 목표다.",
-  "en": "In June 2026, the company was selected as final AI solution provider for 9 of 17 regional hub hospitals under the Ministry of Health and Welfare's national AI care system initiative, with detailed supply contracts to be finalized sequentially in H2 2026. In Germany, the national lung cancer screening program rollout drove 11 new supply contracts in Q1 2026 alone—exceeding the prior full-year count of 10—signaling a clear acceleration in contract momentum. In Taiwan, solutions are deployed across 60-plus of approximately 200 AI-adoptable hospitals, providing roughly 30% initial penetration with further expansion ongoing through strategic partnerships with major academic hospitals. In the U.S., expansion of supply agreements with outpatient radiology networks and ongoing integration with CMS reimbursement policies are expected to be medium-term revenue catalysts. AVIEW Lung Texture's digital biomarker strategy, backed by clinical research at Asan Medical Center demonstrating its utility as a pulmonary fibrosis prognostic indicator, is expanding the addressable market into global pharmaceutical and CRO clinical trial settings. Management's CFO has indicated that usage-based infrastructure revenue will begin to register in earnest from 2026, activating fixed-cost operating leverage; however, actual loss improvement will depend on the pace of revenue growth. The company is actively reorienting its portfolio away from one-time public subsidy reliance toward long-term hospital SaaS contracts, targeting a SaaS revenue mix exceeding 50% in 2026."
+  "ko": "회사는 2026년을 SaaS 전환 효과와 글로벌 사업 성과가 수치로 확인되는 전환점으로 제시하고 있으며, SaaS 매출 비중이 2026년 50%를 안정적으로 상회할 것으로 전망한다고 밝혔다. 독일에서는 캐논 메디컬 시스템즈를 통해 로스타우 지역 폐암검진 프로젝트를 수주했으며, 초기 소프트웨어 공급·구축에 10년간의 기술·운영 지원이 결합된 장기 계약 구조다. 독일 내 신규 병원 계약은 2025년 연간 10건에서 2026년 상반기 55건, 7월까지 누적 77건으로 늘어난 것으로 회사 측이 밝혔다. 국내에서는 보건복지부 권역책임의료기관 AI 진료시스템 지원사업의 최종 공급업체로 선정되어 울산대병원 등 전국 9개 권역거점병원에 AI 솔루션을 공급할 예정이며, 해당 매출은 3분기 이후 본격 반영될 것으로 회사는 설명했다. 미국 시장 확대를 위해 '2026년도 제1차 범부처 첨단의료기기 연구개발사업'에 선정되어 향후 3년간 총 22억원의 정부 지원을 받으며, 심장 CT 기반 폐결절 검출 솔루션 'AVIEW IPN'과 폐질환 정량분석 'AVIEW Lung Metrics'의 FDA 510(k) 인허가 및 글로벌 상용화를 추진하고 있고 국외 임상시험에도 착수했다. 국내에서는 'AVIEW LCS'가 평가유예 신의료기술로 선정되어 보건복지부 고시 이후 유예기간 동안 전국 의료기관에서 비급여 사용이 가능해졌으며, 회사는 이 기간 실사용 데이터(RWD)를 축적해 유효성 근거를 쌓을 계획이라고 밝혔다.",
+  "en": "The company has framed 2026 as an inflection point where the effects of its SaaS transition and global business performance become measurable, stating that the SaaS revenue share is expected to stably exceed 50% in 2026. In Germany, the company secured a lung cancer screening project in the Lostau region through Canon Medical Systems, structured as a long-term contract combining initial software supply and installation with ten years of technical and operational support. The company stated that new hospital contracts in Germany increased from 10 for full-year 2025 to 55 in the first half of 2026, reaching a cumulative 77 through July. Domestically, the company was selected as the final supplier for the Ministry of Health and Welfare's AI clinical system support program for regional lead hospitals, planning to supply AI solutions to nine regional hub hospitals nationwide including Ulsan University Hospital, with related revenue expected to be recognized in earnest from the third quarter onward, according to the company. To expand in the US market, the company was selected for the '2026 First Pan-Governmental Advanced Medical Device R&D Project,' receiving a total of KRW 2.2 billion in government support over three years, and is pursuing FDA 510(k) clearance and global commercialization for its cardiac CT-based lung nodule detection solution 'AVIEW IPN' and lung disease quantification solution 'AVIEW Lung Metrics,' having also begun overseas clinical trials. Domestically, 'AVIEW LCS' was designated as a new health technology under evaluation deferral, allowing non-reimbursed use nationwide during the grace period following the Ministry of Health and Welfare's notice, during which the company said it plans to accumulate real-world data (RWD) to build evidence of effectiveness."
  },
  "valuation_comment": {
-  "ko": "코어라인소프트는 연속 적자 기조로 PER 산출이 불가한 상태이며, 주당 순자산(BPS 902원)을 크게 웃도는 프리미엄 구간에서 거래되고 있다. 이는 AI 헬스케어 성장 스토리에 대한 시장의 기대가 수익화 이전부터 선반영된 수준으로, 동종 초기 단계 적자 성장주에 통상 부여되는 구조와 유사하다. 주당순손실(EPS) -766원 수준의 현금 소진이 지속되고 반복적인 자금 조달로 인한 지분 희석이 누적되는 상황은 주당 순자산 기반 가치를 지속적으로 압박하는 구조적 요인이다. 배당금(DPS)은 지급되지 않아 배당수익률은 사실상 0이며, 전체 투자 수익은 주가 상승에 전적으로 의존하는 구조다. 글로벌 수주 가속화와 SaaS 확대가 실제 영업손실 개선으로 이어질 경우 현재의 자산 대비 프리미엄이 점진적으로 근거를 확보할 수 있으나, 흑자 전환 시점의 불확실성이 잔존하는 현 구간에서는 상당한 가치 재평가 리스크도 내포하고 있다.",
-  "en": "Coreline Soft has no computable PER given continued losses. The stock trades at a meaningful premium to its book value per share (BPS KRW 902), reflecting market expectations of an AI healthcare growth story ahead of actual profitability—a structure typical of early-stage loss-making growth names in the sector. With per-share losses (EPS -KRW 766) consuming capital and repeated equity issuances cumulatively diluting per-share metrics, book-value-based intrinsic value faces ongoing structural pressure. The company pays no dividend (DPS zero), making total investor return wholly dependent on capital appreciation. Should the global contract ramp and SaaS expansion translate into visible operating loss improvement, the current premium to book could progressively find fundamental justification; however, the uncertainty around the profitability timeline means meaningful valuation reassessment risk remains present in the interim."
+  "ko": "코어라인소프트는 순손실이 지속되는 구조라 통상적인 이익 기준 밸류에이션 지표를 적용하기 어렵고, 시장에서는 순자산가치 대비 주가 수준을 참고 지표로 활용하는 경우가 많다. 최근 반복된 유상증자와 전환사채 발행으로 자본총계 자체가 확대되었으나, 이는 동시에 발행주식수 증가에 따른 주당 지표 희석 요인으로도 작용한다. 주가순자산비율은 순자산 대비 일정한 프리미엄이 존재하는 구간에서 거래되는 모습을 보이는데, 이는 아직 이익을 내지 못하는 기업임에도 향후 매출 성장과 SaaS 전환 효과에 대한 시장의 기대가 일부 반영된 결과로 해석될 수 있다. 배당은 상장 이후 지급된 적이 없어 배당 관련 지표는 의미를 갖기 어렵다. 과거 거래 이력을 보면 실적 발표나 수주 뉴스에 따라 주가 변동성이 큰 편이었다는 점도 참고할 부분이다.",
+  "en": "Because CoreLine Soft continues to post net losses, conventional earnings-based valuation metrics are difficult to apply, and the market often uses the share price relative to net asset value as a reference indicator instead. Recent repeated rights offerings and convertible bond issuances have expanded total equity, but they have simultaneously acted as a dilution factor for per-share metrics through increased share count. The price-to-book ratio has traded in a range that reflects a certain premium over net asset value, which can be interpreted as the market partially pricing in expectations for future revenue growth and the effects of the SaaS transition, even though the company has yet to turn a profit. Dividend-related metrics carry little meaning, as the company has not paid a dividend since listing. It is also worth noting that the stock has historically shown considerable volatility around earnings releases and order-win news."
  },
  "bull": [
   {
    "title": {
-    "ko": "글로벌 레퍼런스 확장과 규제 선점 효과",
-    "en": "Global Reference Expansion and Regulatory First-Mover Advantage"
+    "ko": "독일 급여화 수혜로 해외 수주 급증",
+    "en": "Surging Overseas Orders on Germany's Reimbursement Rollout"
    },
    "body": {
-    "ko": "독일 단일 분기 11개 계약, 영국 NHS EDIN 프로젝트 수주, 대만 약 30% 초기 점유율 확보 등 글로벌 공공·민간 시장 레퍼런스가 빠르게 누적되고 있다. 21개국 인허가와 FDA 510(k) 인증 12건이라는 규제 자산은 신규 진입자 대비 강력한 진입장벽을 형성한다. 독일·유럽의 국가 폐암검진 AI 의무화, 영국 NHS의 대규모 의료 AI 예산 확대 등 정책 수혜가 구체화되며 수주 모멘텀의 지속 가능성을 높이고 있다.",
-    "en": "Global public and private sector references are accumulating rapidly: 11 new German contracts in Q1 2026 alone, the UK NHS EDIN project win, and approximately 30% initial market penetration in Taiwan. Regulatory assets—21-country clearances and 12 FDA 510(k) certifications—constitute a meaningful barrier to entry for new competitors. Germany's mandatory AI use in national lung cancer screening and the UK NHS's large medical AI budget expansion represent tangible policy tailwinds for sustained contract momentum."
+    "ko": "독일이 2026년 4월부터 저선량 CT 폐암검진을 법정 건강보험 체계에 편입한 이후 코어라인소프트의 현지 신규 병원 계약이 2025년 연간 10건에서 2026년 상반기 55건, 7월까지 누적 77건으로 늘었다. 샤리테, 하이델베르크대학병원, 하노버의과대학 등 유럽 상급 의료기관을 레퍼런스로 확보하며 시장 초기 선점 효과를 노리고 있다. 캐논 메디컬 시스템즈를 통한 로스타우 지역 프로젝트는 10년간의 장기 기술·운영 지원을 포함해 반복 매출 기반이 될 수 있다.",
+    "en": "Since Germany incorporated low-dose CT lung cancer screening into its statutory health insurance system starting April 2026, Coreline Soft's new hospital contracts in the local market increased from 10 annually in 2025 to 55 in the first half of 2026, reaching a cumulative 77 by July. The company is securing references from top European medical institutions such as Charité, Heidelberg University Hospital, and Hannover Medical School, aiming for early market preemption effects. The Rostock regional project through Canon Medical Systems includes 10 years of long-term technical and operational support, which could serve as a foundation for recurring revenue."
    }
   },
   {
    "title": {
-    "ko": "SaaS 전환에 따른 반복 매출 구조화 및 레버리지 가능성",
-    "en": "SaaS Transition Enabling Recurring Revenue Structure and Potential Operating Leverage"
+    "ko": "SaaS 전환에 따른 매출 가시성 제고",
+    "en": "Improved Revenue Visibility from the SaaS Transition"
    },
    "body": {
-    "ko": "SaaS형 매출 비중이 2024년 29%에서 2025년 45%로 빠르게 상승했으며, 2026년 50% 이상이 전망된다. 반복 매출 기반이 강화되면 분기별 매출 변동성이 줄고 고정비 레버리지 효과가 발생해 손익 개선 속도가 가속화될 수 있다. PPU(사용량 기반) 및 구독 모델 중심의 해외 수익 구조는 기관 고객과의 장기 계약을 통한 높은 락인 효과를 제공한다.",
-    "en": "SaaS revenue share has risen sharply from 29% in 2024 to 45% in 2025, with the 2026 target above 50%. A stronger recurring revenue base should reduce quarterly revenue volatility and activate fixed-cost operating leverage, potentially accelerating operating loss improvement. Usage-based (PPU) and subscription-dominant international revenue structures provide high customer lock-in through long-term institutional contracts."
+    "ko": "매출 인식 구조를 영구사용권에서 구독형으로 전환하면서 SaaS 매출 비중이 2024년 29%에서 2025년 45%로 확대됐고, 2026년에는 50%를 상회할 것으로 전망된다. 최근 네 개 분기 매출 합계가 이미 2025년 연간 매출을 넘어서는 등 외형 확대 흐름도 함께 나타나고 있다. 반복 매출 구조가 정착되면 실적의 계절성과 예측 불확실성이 낮아질 수 있다.",
+    "en": "As the revenue recognition structure shifted from perpetual licenses to subscription-based models, the SaaS revenue proportion expanded from 29% in 2024 to 45% in 2025, and is expected to exceed 50% in 2026. The sum of revenue from the most recent four quarters has already surpassed the full-year 2025 revenue, showing a trend of expanding top-line growth alongside this shift. As the recurring revenue structure becomes established, seasonality and earnings predictability uncertainty could decrease."
    }
   },
   {
    "title": {
-    "ko": "수익 다각화: 병원 B2B→제약·CRO 디지털 바이오마커 시장",
-    "en": "Revenue Diversification: Hospital B2B to Pharma/CRO Digital Biomarker Market"
+    "ko": "FDA 인증 포트폴리오와 신제품 파이프라인",
+    "en": "Established FDA-Cleared Portfolio and New Product Pipeline"
    },
    "body": {
-    "ko": "AVIEW Lung Texture는 서울아산병원 임상 연구를 통해 폐섬유화(IPF·PPF) 예후 예측 지표로서 임상적 활용 가능성을 입증했으며, 글로벌 제약사·CRO 시장의 임상시험 데이터 플랫폼으로의 확장이 추진되고 있다. 병원 단위 구독 매출과 달리 신약 개발 임상 데이터 플랫폼으로 활용 시 건당 계약 규모가 대폭 확대될 가능성이 있다. 2025년 9월 뷰노로부터 30억원에 인수한 폐 CT 영상 분석 자산도 일본 시장 등 신규 고객 접점 확보의 발판으로 기대된다.",
-    "en": "AVIEW Lung Texture has demonstrated clinical utility as a pulmonary fibrosis (IPF/PPF) prognostic marker through Asan Medical Center research, positioning it as a digital biomarker platform for global pharma companies and CROs in clinical development settings. Unlike per-hospital subscription revenue, contract sizes in pharma clinical development can be substantially larger. The September 2025 acquisition of lung CT analysis assets from VUNO for KRW 3 billion is also expected to accelerate new customer acquisition, particularly in the Japanese market."
+    "ko": "코어라인소프트는 이미 다수의 FDA 510(k) 인증 제품을 보유하고 있으며, 정부 R&D 과제를 통해 'AVIEW IPN'과 'AVIEW Lung Metrics'의 미국 인허가 및 글로벌 상용화를 추진 중이다. 국내에서는 보건복지부 권역책임의료기관 AI 진료시스템 사업의 최종 공급업체로 선정되어 공공 부문 매출 기반이 넓어지고 있다. 'AVIEW LCS'의 신의료기술 평가유예 선정으로 국내 비급여 사용 확대와 실사용 데이터 축적 경로도 확보했다.",
+    "en": "Coreline Soft already holds numerous FDA 510(k)-cleared products, and is pursuing US regulatory approval and global commercialization of 'AVIEW IPN' and 'AVIEW Lung Metrics' through government R&D projects. Domestically, the company was selected as the final supplier for the Ministry of Health and Welfare's regional responsible medical institution AI diagnostic system project, expanding its public sector revenue base. The selection of 'AVIEW LCS' for new medical technology assessment exemption has secured a pathway for expanded domestic non-reimbursed usage and accumulation of real-world usage data."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "구조적 대규모 적자와 지속적 현금 소진",
-    "en": "Structural Deep Losses and Persistent Cash Burn"
+    "ko": "상장 이래 지속된 대규모 적자",
+    "en": "Persistent Large Losses Since Listing"
    },
    "body": {
-    "ko": "2025년 영업손실 134.4억원은 매출 42.8억원의 3.1배에 달하며, 영업활동 현금흐름은 -116.1억원으로 3년 연속 악화되고 있다. 2026년 1분기에도 매출 13.0억원에 영업손실 -31.0억원을 기록하며 손익 개선의 뚜렷한 전환 신호는 아직 나타나지 않고 있다. 현금 소진 속도 대비 매출 성장이 충분히 빠르지 않을 경우 반복적인 외부 자금 조달이 구조적으로 불가피하다.",
-    "en": "The 2025 operating loss of KRW 13.44 billion is 3.1 times annual revenue of KRW 4.28 billion, and operating cash flow has worsened for three consecutive years to -KRW 11.61 billion. In Q1 2026, revenue of KRW 1.30 billion against an operating loss of -KRW 3.10 billion offers no clear near-term signal of a fundamental loss inflection. Unless revenue accelerates materially faster than cash consumption, repeated external capital raises are structurally unavoidable."
+    "ko": "코어라인소프트는 2022년부터 2025년까지 매년 100억원 이상의 영업손실을 기록했으며, 지배주주 순손실도 매년 100억원을 넘어섰다. 매출 규모가 여전히 연간 40억원대에 머물러 있어 고정비 부담을 상쇄하기에는 부족한 수준이다. 영업활동현금흐름도 매년 순유출을 기록하며 외부 자금조달 의존이 이어지고 있다.",
+    "en": "Coreline Soft has recorded annual operating losses exceeding KRW 10 billion every year from 2022 to 2025, with net losses attributable to controlling shareholders also exceeding KRW 10 billion annually. Revenue scale remains in the range of KRW 4 billion per year, which is insufficient to offset the fixed cost burden. Operating cash flow has also recorded net outflows every year, continuing reliance on external funding."
    }
   },
   {
    "title": {
-    "ko": "반복 자금 조달에 따른 지분 희석 압력 누적",
-    "en": "Cumulative Dilution Pressure from Repeated Capital Raises"
+    "ko": "법차손 요건에 따른 관리종목 지정 리스크",
+    "en": "Administrative-Issue Designation Risk from the Loss-to-Equity Ratio Requirement"
    },
    "body": {
-    "ko": "2024년 4월 CB 180억원, 2025년 6월 유상증자 311억원, 2025년 9월 뷰노 대상 제3자배정 전환우선주 약 34억원 발행 등 잦은 자금 조달로 주식 희석 압력이 반복적으로 발생하고 있다. 2025년 부채총계가 226.2억원으로 전년 210.0억원보다 증가했으며, 전환사채 전환 시 추가 희석이 예정되어 있다. 실적 개선 속도가 충분하지 않다면 추가 유상증자 또는 CB 발행 가능성도 배제하기 어렵다.",
-    "en": "Frequent capital raises—a KRW 18.0 billion CB in April 2024, a KRW 31.1 billion rights offering in June 2025, and an approximately KRW 3.4 billion third-party preferred share allotment to VUNO in September 2025—create recurring dilution pressure. Total liabilities grew to KRW 22.62 billion in 2025 from KRW 21.00 billion in 2024, with convertible bond conversion posing additional future dilution. If revenue growth does not accelerate sufficiently, further equity issuances or CB launches cannot be excluded."
+    "ko": "코어라인소프트는 기술특례 상장 기업으로 3년간 법차손 비율 요건 유예를 적용받았으나, 상장 4년차인 2026년부터 이 유예가 종료돼 영향권에 들었다. 최근 3개 사업연도 중 2회 이상 자기자본 대비 법차손 비율이 50%를 넘으면 관리종목으로 지정되는데, 과거 해당 비율이 기준치를 초과한 사례가 있었던 만큼 향후 결산에서의 비율 관리가 중요한 변수다. 매출 요건(연 30억원) 역시 유예 기간이 남아 있지만 기준선에 가까운 수준이어서 안심할 수는 없는 상황이다.",
+    "en": "As a technology special listing company, Coreline Soft was granted a 3-year grace period exemption from the pre-tax loss ratio requirement, but this exemption ends starting in 2026, its fourth year since listing, bringing it into the scope of the requirement. Being designated as an administrative issue occurs if the ratio of pre-tax loss to equity capital exceeds 50% two or more times over the most recent 3 fiscal years; given that this ratio has exceeded the threshold in the past, managing this ratio in future financial closings will be an important variable. The revenue requirement (KRW 3 billion annually) still has a grace period remaining, but as performance is close to the threshold, the situation cannot be considered safe."
    }
   },
   {
    "title": {
-    "ko": "매출 정체 속 흑자 전환 시점의 높은 불확실성",
-    "en": "High Uncertainty on Profitability Timeline Amid Revenue Stagnation"
+    "ko": "전환사채·유상증자에 따른 재무 부담과 희석",
+    "en": "Financial Burden and Dilution from Convertible Bonds and Rights Offerings"
    },
    "body": {
-    "ko": "3년 연속 연매출 40억원 안팎에 머물며 의미 있는 외형 성장을 보여주지 못하고 있는 가운데, 병원별 계약 단가와 시장 침투 속도가 기대에 미치지 못할 경우 영업 흑자 전환은 상당히 먼 미래가 될 수 있다. 2025년 12월 증권사 리서치도 국내외 매출 성장 여부를 핵심 변수로 지목한 바 있다. GE 헬스케어 등 글로벌 대형 의료기기사의 AI 통합 가속화는 장기적으로 제품 차별화 유지를 어렵게 할 수 있는 잠재적 위협이다.",
-    "en": "Revenue has hovered near KRW 4 billion for three consecutive years without demonstrating meaningful scale growth. If per-hospital contract values and market penetration rates fall below projections, achieving operating breakeven within the current cost structure could be a distant prospect. Sell-side research published in December 2025 identified post-2026 domestic and international revenue growth as the critical variable. Accelerating AI integration by global medtech majors poses a potential long-term competitive threat to sustained product differentiation."
+    "ko": "회사는 자본잠식을 해소하기 위해 반복적으로 유상증자와 전환사채 발행을 진행해왔으며, 2회차 전환사채 조기상환 및 3회차 전환사채 파생상품 평가손실 등 비현금성 비용이 순손실을 확대하는 요인으로 작용했다. 전환사채의 전환가액이 최근 주가를 웃도는 구간에서는 주식 전환을 통한 상환보다 사채권자의 풋옵션 행사 가능성이 높아질 수 있다. 추가적인 자금조달이 필요할 경우 기존 주주의 지분 희석이 반복될 수 있다는 점도 부담 요인이다.",
+    "en": "The company has repeatedly conducted rights offerings and convertible bond issuances to resolve capital impairment, and non-cash expenses such as the early redemption of the 2nd series convertible bonds and derivative valuation losses on the 3rd series convertible bonds have contributed to expanding net losses. In periods where the conversion price of convertible bonds exceeds recent stock prices, the likelihood of bondholders exercising put options rather than converting to shares for redemption may increase. The burden that existing shareholder equity dilution could recur if additional funding is needed is also a concern."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달·유동성 리스크",
-    "en": "Funding & Liquidity Risk"
+    "ko": "상장유지 요건 리스크",
+    "en": "Listing Maintenance Requirement Risk"
    },
    "body": {
-    "ko": "연간 100억원 이상의 영업활동 현금 순유출이 지속되는 상황에서 현재 자본(181.7억원)은 중단기 내 재조달이 필요한 수준이다. 주가 하락 시 유상증자 및 CB 조건이 불리해질 수 있으며, 금리·시장 여건 변화로 자금 조달 비용이 상승할 위험도 있다. 전환사채 상환 청구권이 행사될 경우 예상치 못한 유동성 압박이 발생할 수 있다.",
-    "en": "With annual operating cash outflows consistently exceeding KRW 10 billion, the current equity base of KRW 18.17 billion implies a re-financing necessity within the short to medium term. A declining share price could worsen the terms of rights offerings and CB issuances, while rising interest rates or adverse market conditions could increase funding costs. Convertible bond put option exercise could trigger unexpected liquidity pressure."
+    "ko": "상장 4년차부터 법차손 비율 요건의 유예가 종료돼 최근 3개 사업연도 중 2회 이상 기준을 초과하면 관리종목으로 지정될 수 있다. 매출 요건(연 30억원)도 유예 기간이 남아 있으나 실적이 기준선에 근접해 있어 지속적인 모니터링이 필요하다. 관리종목 지정은 거래 방식 제한 및 투자자 신뢰에 부정적 영향을 줄 수 있다.",
+    "en": "Starting from the fourth year since listing, the grace period exemption from the pre-tax loss ratio requirement ends, and if the threshold is exceeded two or more times over the most recent 3 fiscal years, the company could be designated as an administrative issue. The revenue requirement (KRW 3 billion annually) still has a grace period remaining, but continuous monitoring is necessary as performance is close to the threshold. Designation as an administrative issue could negatively affect trading methods and investor confidence."
    }
   },
   {
    "cat": {
-    "ko": "규제·급여화 지연 리스크",
-    "en": "Regulatory & Reimbursement Delay Risk"
+    "ko": "자금조달 및 지분 희석 리스크",
+    "en": "Funding and Equity Dilution Risk"
    },
    "body": {
-    "ko": "각국의 의료 AI 급여화 정책 지연 또는 수가 수준이 기대에 미치지 못할 경우 해외 매출 확대 속도가 현저히 둔화될 수 있다. 미국 CMS 수가 연계는 아직 진행 중이며, 특정 국가의 규제 변화나 인허가 지연이 해당 시장 진입을 제약할 수 있다. FDA의 AI 의료기기 관련 규제 체계 변경도 기존 제품의 재인증 부담으로 이어질 수 있다.",
-    "en": "Delays in medical AI reimbursement policies or lower-than-expected reimbursement rates could materially slow overseas revenue ramp. U.S. CMS reimbursement linkage remains in progress, and regulatory changes or approval delays in specific countries could constrain market entry timelines. Evolving FDA frameworks for AI/ML medical devices may impose re-certification burdens on existing products."
+    "ko": "지속적인 영업손실과 현금 유출로 외부 자금조달 필요성이 이어지고 있으며, 과거에도 유상증자와 전환사채 발행을 반복해왔다. 전환사채권자의 풋옵션 행사나 추가 유상증자가 발생할 경우 기존 주주의 지분율과 주당 가치에 영향을 줄 수 있다. 파생상품 평가손익 등 비현금성 항목의 변동성도 순손익에 부담으로 작용할 수 있다.",
+    "en": "Continuous operating losses and cash outflows have led to ongoing needs for external funding, and the company has repeatedly conducted rights offerings and convertible bond issuances in the past. If convertible bondholders exercise put options or additional rights offerings occur, this could affect the equity ratio and per-share value of existing shareholders. Volatility in non-cash items such as derivative valuation gains and losses could also burden net income."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 심화 및 기술 대체 리스크",
-    "en": "Competitive Intensification & Technology Displacement Risk"
+    "ko": "매출 인식 시차 및 해외 실행 리스크",
+    "en": "Revenue Recognition Timing and Overseas Execution Risk"
    },
    "body": {
-    "ko": "GE 헬스케어·Siemens Healthineers·Philips 등 글로벌 대형 의료기기업체들이 자사 하드웨어와 AI 소프트웨어를 번들링하는 전략을 강화하며 독립 AI 솔루션을 대체할 위협이 커지고 있다. 국내에서도 루닛·뷰노 등 동종 업체와의 경쟁이 지속되며 대형 병원의 AI 솔루션 통합 전략에 따른 공급업체 교체 위험이 존재한다. 생성형 AI 기술의 영상 판독 적용 확대도 기존 제품 포지셔닝에 영향을 줄 수 있는 중장기 리스크다.",
-    "en": "Global medtech majors such as GE Healthcare, Siemens Healthineers, and Philips are accelerating AI software bundling with their hardware, potentially displacing standalone AI solutions. Domestic competition from Lunit, VUNO, and DeepNoid persists, with vendor consolidation driven by large hospital AI integration strategies posing a supplier displacement risk. The expansion of generative AI into radiology is a medium-to-long-term risk to existing product positioning."
+    "ko": "독일 등 해외 수주 계약 건수 증가가 실제 매출로 전환되는 데는 시스템 구축, 인증, 병원 운영 개시 등의 시차가 존재한다. 국가별 규제·인허가 절차, 환율 변동, 현지 파트너(캐논 메디컬 등)와의 협업 조건 변화 등도 매출 실현 속도에 영향을 줄 수 있는 변수다. 국내 공공사업 매출 역시 예산 집행 시기에 따라 반영 시점이 변동될 수 있다.",
+    "en": "There is a time lag between increases in the number of overseas order contracts, such as in Germany, and their actual conversion into revenue, due to system implementation, certification, and hospital operation commencement. Variables such as country-specific regulatory and approval procedures, exchange rate fluctuations, and changes in collaboration terms with local partners (such as Canon Medical) can also affect the speed of revenue realization. Domestic public sector revenue may also see its recognition timing vary depending on the timing of budget execution."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순 (2026년 2분기 실적 발표 예정)",
-    "en": "Mid-August 2026 (Q2 2026 Earnings Release)"
+    "ko": "2026년 11월 중",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "2분기 매출이 전분기(13.0억원) 대비 성장했는지, 분기 영업손실이 29억원 이하로 추가 개선됐는지 확인. 해외 수주 누적 건수 및 SaaS 비중 50% 달성 여부가 핵심 판단 지표다.",
-    "en": "Check whether Q2 2026 revenue exceeds the Q1 2026 level (KRW 1.30 billion) and whether the quarterly operating loss improves further below KRW 2.93 billion. Cumulative overseas contracts and whether SaaS mix has reached 50% are the key indicators."
+    "ko": "2026년 3분기 보고서 공시를 통해 매출 성장세와 영업손실 축소 흐름이 이어지는지, 독일 누적 계약 77건 이상이 실제 매출로 전환되는 속도를 확인할 필요가 있다.",
+    "en": "Check the Q3 2026 quarterly report for whether the revenue growth trend and narrowing operating loss continue, and how quickly the cumulative 77-plus German contracts convert into actual revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (독일 계약 누적·유럽 확산 여부)",
-    "en": "H2 2026 (German Contract Accumulation & European Expansion)"
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "독일 국가 폐암검진 본격 시행 이후 분기별 신규 계약 수 및 계약 단가 추이를 모니터링. 독일 성과가 이탈리아·프랑스·스페인 등 다른 유럽 국가로 확산되는지 여부가 중장기 매출 가시성의 핵심 지표다.",
-    "en": "Monitor quarterly new contract volumes and per-contract pricing following Germany's national screening rollout. Whether German momentum spreads to other European markets such as Italy, France, and Spain is a key indicator of medium-term revenue visibility."
+    "ko": "보건복지부 권역책임의료기관 AI 진료시스템 사업(9개 병원) 관련 매출이 3분기 이후 계획대로 반영되는지 확인이 필요하다.",
+    "en": "Verify whether revenue from the Ministry of Health and Welfare's AI clinical system project for nine regional hub hospitals is recognized as planned from the third quarter onward."
    }
   },
   {
    "when": {
-    "ko": "2026년 9월~12월 (권역거점병원 세부 계약 체결 및 매출 인식 시점)",
-    "en": "Sep–Dec 2026 (Regional Hub Hospital Contract Closings & Revenue Recognition)"
+    "ko": "2027년 3월경 사업보고서 공시 시점",
+    "en": "Around March 2027, at the annual report filing"
    },
    "what": {
-    "ko": "2026년 6월 선정된 9개 권역거점병원과의 세부 계약이 실제 체결되고 매출로 인식되는지 확인. 계약 규모 및 SaaS 구독 범위가 국내 매출 회복의 실마리가 될 것이다.",
-    "en": "Confirm whether detailed supply contracts with the 9 designated regional hub hospitals are formally signed and whether revenue recognition commences. Contract sizes and SaaS subscription scope will be key indicators of domestic revenue recovery."
+    "ko": "2026년 사업연도 결산에서 자기자본 대비 법차손 비율이 50%를 초과하는지, 관리종목 지정 요건에 저촉되는지를 공식 확인해야 한다.",
+    "en": "Officially confirm from the fiscal 2026 annual settlement whether the loss-to-equity ratio exceeds 50% and whether the company triggers the administrative-issue designation requirement."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (미국 CMS 수가 연계 정책 진전)",
-    "en": "H2 2026 (U.S. CMS Reimbursement Policy Progress)"
+    "ko": "향후 공시 예정",
+    "en": "Upcoming disclosures"
    },
    "what": {
-    "ko": "미국 CMS 보험 수가 연계 정책의 공식화 및 시행 일정을 확인. 수가 등재 시 미국 외래 영상의학센터 채널 매출 확대 속도가 가속화될 수 있으며, 이는 미국 매출 가시성 제고의 분기점이 될 것이다.",
-    "en": "Track the formalization and implementation timeline of U.S. CMS (Medicare) reimbursement linkage. Formal listing could meaningfully accelerate revenue through the U.S. outpatient radiology network channel, marking a potential inflection in U.S. revenue visibility."
+    "ko": "'AVIEW IPN'과 'AVIEW Lung Metrics'의 미국 임상 진행 상황 및 FDA 510(k) 신청·승인 일정에 대한 공시를 확인할 필요가 있다.",
+    "en": "Watch for disclosures on the progress of US clinical trials and the FDA 510(k) application and clearance timeline for 'AVIEW IPN' and 'AVIEW Lung Metrics.'"
    }
   },
   {
    "when": {
-    "ko": "2027년 초 (2026년 연간 실적 발표)",
-    "en": "Early 2027 (FY2026 Annual Earnings Release)"
+    "ko": "향후 공시 예정",
+    "en": "Upcoming disclosures"
    },
    "what": {
-    "ko": "2026년 연간 매출이 의미 있는 성장을 달성했는지, 영업손실 규모가 가시적으로 축소됐는지 확인. CFO 가이던스인 '고정비 레버리지 진입 구간' 여부가 실제 수치로 입증되어야 한다.",
-    "en": "Assess whether FY2026 annual revenue shows meaningful growth versus 2025 and whether the operating loss has visibly contracted. The CFO's guidance of 'entering fixed-cost leverage territory' needs to be corroborated by actual reported figures."
+    "ko": "전환사채 조기상환·풋옵션 행사 여부와 추가 자본조달 계획이 공시되는지 지속적으로 점검할 필요가 있다.",
+    "en": "Continue monitoring for disclosures on convertible bond early redemption or put option exercises, and any additional capital-raising plans."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "코어라인소프트는 흉부 CT 통합 AI 플랫폼이라는 명확한 포지셔닝과 국가 검진부터 글로벌 민간 병원까지 이어지는 레퍼런스 확장을 기반으로 성장 가능성을 꾸준히 축적하고 있는 초기 단계 의료 AI 기업이다. 2026년 들어 독일 단일 분기 계약 급증, 보건복지부 권역거점병원 9곳 선정, 해외 매출 60% 돌파 등 사업 모멘텀이 구체화되고 있는 점은 긍정적인 방향성이다. 그러나 3년 연속 매출 40억원 안팎에 영업손실 130억원 이상을 기록한 현재의 재무 구조가 유지되는 한, 자본 소진과 지분 희석 압력은 지속될 수밖에 없다. SaaS 전환에 따른 반복 매출 확대가 실제 영업 레버리지—즉 손익분기 접근—로 이어지는 시점이 실현되느냐가 기업 가치 재평가의 핵심 분기점이 될 것이다. 글로벌 의료 AI 시장의 구조적 성장이라는 우호적 외부 환경 속에서도, 매출 가시화 속도와 자금 조달 의존성 완화가 동시에 달성되어야만 중장기 투자 논리가 완결될 수 있다는 점을 주목할 필요가 있다.",
-   "en": "Coreline Soft is an early-stage medical AI company steadily building its growth case on a differentiated integrated chest CT platform positioning, backed by an expanding reference base spanning national screening programs to global private hospitals. Business momentum materializing in 2026—German single-quarter contract surge, selection for 9 regional hub hospitals, and overseas revenue crossing 60%—points in a positive direction. However, as long as the financial structure of approximately KRW 4 billion in annual revenue against over KRW 13 billion in operating losses persists for a third consecutive year, capital depletion and dilution pressure will continue. The critical re-rating catalyst will be whether the SaaS transition translates into actual operating leverage—specifically, whether a trajectory toward breakeven begins to materialize in reported figures. Even within the structurally favorable global medical AI growth environment, both revenue acceleration and a reduction in capital raise dependence must occur in tandem for the medium-to-long-term investment thesis to fully hold."
+   "ko": "코어라인소프트는 독일 국가 폐암검진 급여화라는 명확한 산업 촉매를 확보하며 해외 계약 건수와 매출 외형이 함께 늘어나는 흐름을 보이고 있다. 동시에 SaaS 전환을 통해 매출 구조의 반복성과 가시성을 높이려는 전략도 구체적인 비중 변화 수치로 확인되고 있다. 그러나 상장 이후 단 한 해도 흑자를 내지 못했고, 2025년에도 대규모 영업손실과 순손실이 지속됐으며, 최근 네 개 분기 실적을 보면 영업손익은 소폭 개선됐지만 순손실은 비영업 비용 증가로 크게 줄지 않았다. 상장 4년차부터는 법차손 비율 요건 유예가 종료돼 관리종목 지정이라는 새로운 상장유지 리스크에 노출된 상태이며, 반복된 자본조달에 따른 희석 부담도 함께 남아 있다. 결국 독일·미국 등 해외 시장에서의 매출 실현 속도와 국내 공공사업 매출의 본격화 여부, 그리고 법차손 비율 관리가 향후 실적과 상장유지 관점에서 함께 지켜봐야 할 핵심 변수로 판단된다. 투자 판단에 앞서 다가오는 분기 실적과 연간 결산 공시를 통해 이러한 지표들의 실제 추이를 직접 확인하는 것이 필요하다.",
+   "en": "CoreLine Soft has secured a clear industry catalyst in Germany's national lung cancer screening reimbursement, with overseas contract counts and revenue scale both trending upward. At the same time, the company's SaaS transition strategy aimed at improving revenue recurrence and visibility is being confirmed through concrete shifts in revenue mix. However, the company has not posted a profitable year since listing, and 2025 again saw large operating and net losses; looking at the most recent four quarters, the operating loss improved modestly, but the net loss did not shrink meaningfully due to rising non-operating costs. Starting in its fourth listed year, the grace period for the loss-to-equity ratio requirement has ended, exposing the company to a new listing-maintenance risk in the form of possible administrative-issue designation, alongside continued dilution pressure from repeated capital raises. Ultimately, the pace of revenue realization in overseas markets such as Germany and the US, the full-scale rollout of domestic public-sector revenue, and management of the loss-to-equity ratio stand out as the key variables to watch for both future earnings and listing status. Before making any investment decision, it is advisable to directly verify the actual trajectory of these indicators through upcoming quarterly and annual disclosures."
   }
  },
  "sources": [
-  "https://thevc.kr/corelinesoft",
-  "https://alphasquare.co.kr/home/stock-summary?code=384470",
-  "https://comp.fnguide.com/svo2/fncompany.asp?gicode=A384470&cId=CB",
-  "https://www.investing.com/equities/coreline-soft",
+  "https://www.getnews.co.kr/news/articleView.html?idxno=861932",
   "https://marketin.edaily.co.kr/News/ReadE?newsId=02489526642399832",
-  "https://itooza.com/vscore/384470",
-  "https://www.stockplus.com/m/stocks/KOREA-A384470",
-  "https://www.valueline.co.kr/finance/summary/384470",
-  "http://www.hitnews.co.kr/news/articleView.html?idxno=48410",
-  "https://dealsite.co.kr/articles/120670",
-  "https://www.getnews.co.kr/news/articleView.html?idxno=852333",
-  "https://www.sedaily.com/NewsView/2GY38YAND1",
-  "https://biotimes.co.kr/news/articleView.html?idxno=19774",
-  "https://www.rapportian.com/news/articleView.html?idxno=236856",
-  "https://www.sedaily.com/NewsView/2H1RZZJU4Y",
-  "https://www.mdtoday.co.kr/news/view/1065575959932583",
-  "https://www.bosa.co.kr/news/articleView.html?idxno=3005527",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A384470"
+  "https://alphasquare.co.kr/home/stock-summary?code=384470",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=6q8XmA4eVH10Mj3o",
+  "https://kr.investing.com/equities/coreline-soft-earnings",
+  "https://thevc.kr/corelinesoft",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=mf1h22KLZqjJoKq5",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=VXOQmfYULFAkNDph",
+  "https://m.thebell.co.kr/m/newsview.asp?svccode=00&newskey=202601271544177800101669",
+  "https://zdnet.co.kr/view/?no=20240402104549",
+  "https://www.thebionews.net/news/articleView.html?idxno=24303",
+  "https://www.thebionews.net/news/articleView.html?idxno=25275",
+  "https://www.biotimes.co.kr/news/articleView.html?idxno=19774",
+  "https://www.hankyung.com/article/202502183837i",
+  "https://www.dailymedi.com/news/news_view.php?wr_id=936262",
+  "https://www.thebionews.net/news/articleView.html?idxno=25741",
+  "https://www.getnews.co.kr/news/articleView.html?idxno=869625",
+  "https://www.bosa.co.kr/news/articleView.html?idxno=3009814"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "384470",
  "name": "코어라인소프트",
  "name_en": "Coreline Soft Co., Ltd",
@@ -234,11 +234,11 @@
   "인공지능(AI)"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:46",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 21:32",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -288,6 +288,23 @@
     "opm": -284.3,
     "roe": -120.3,
     "debt_ratio": 35.5
+   },
+   {
+    "year": 2022,
+    "rev": 4091045998,
+    "op": -10163695425,
+    "np": -10212447256,
+    "np_owner": -10212447256,
+    "equity": 2174906086,
+    "equity_owner": 2174906086,
+    "equity_nci": null,
+    "liab": 3425078863,
+    "cfo": -8782228522,
+    "eps_basic": -1045,
+    "src": "전기 비교치",
+    "opm": -248.4,
+    "roe": -469.6,
+    "debt_ratio": 157.5
    }
   ],
   "quarterly": [
@@ -323,25 +340,29 @@
    }
   ],
   "valuation": {
-   "price": 2620,
-   "mcap": 0.047,
+   "price": 2490,
+   "mcap": 0.0447,
    "shares": 17946692,
    "total_shares": 17946692,
    "wavg_shares": 18619335,
    "per": null,
    "eps": -715,
-   "pbr": 3.7644,
+   "pbr": 3.5776,
    "bps": 696,
    "roe_ttm": -73.9,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": -13888603158,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 2.65,
+   "eps_src": "공시",
+   "pbr_krx": 2.52,
    "bps_krx": 989.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
  }
 }

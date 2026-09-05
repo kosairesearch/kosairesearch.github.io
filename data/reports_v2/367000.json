@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "AX 전환 실적 반등, 지속 흑자 전환이 관건",
-  "en": "Revenue Rebounds on AX Pivot; Sustained Profitability Is the Key Test"
+  "ko": "커머스 솔루션에서 에이전틱 AI로 무게중심 이동",
+  "en": "Shifting Weight from Commerce Solutions to Agentic AI"
  },
  "lead": {
-  "ko": "2025년 매출이 전년 대비 30% 이상 증가하며 3년 만의 성장세를 되찾았고 4분기 분기 흑자를 달성했으나, 연간 영업적자가 지속되는 가운데 에이전틱 AI 플랫폼 XGEN의 수주 전환 속도와 비용 구조 개선이 본격 흑자 전환의 열쇠다.",
-  "en": "Revenue surged more than 30% year-on-year in 2025, ending a three-year decline and delivering a first quarterly operating profit since 2022 in Q4; yet annual operating losses persist, and the pace of XGEN order wins and cost structure improvement will determine when a durable turn to full-year profitability materializes."
+  "ko": "플래티어는 2025년 매출이 30% 늘며 반등했지만 연간 적자는 이어졌고, 2026년 2분기 들어 분기 영업이익 흑자를 다시 만들어내며 에이전틱 AI 플랫폼 XGEN을 새 성장축으로 키우고 있다.",
+  "en": "Plateer's revenue rebounded 30% in 2025 yet the company still posted an annual net loss, and in the second quarter of 2026 it returned to quarterly operating profit while building its agentic AI platform XGEN as a new growth pillar."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 388.5억원으로 전년 대비 30.3% 반등 — 2022년 정점 이후 첫 성장 전환",
-   "en": "2025 revenue of ₩38.85B rose 30.3% YoY — the first top-line growth since the 2022 peak"
+   "ko": "2025년 연결 매출 388.5억원(+30.4% YoY)으로 반등했지만 영업손실 44.0억원, 순손실 42.9억원으로 4년 연속 적자",
+   "en": "2025 consolidated revenue rebounded 30.4% YoY to KRW 38.85 billion, but the company logged an operating loss of KRW 4.40 billion and a net loss of KRW 4.29 billion, a fourth straight annual loss"
   },
   {
-   "ko": "2025년 4분기 영업이익 +16.3억원 흑자 전환 — 3년 만의 첫 분기 흑자",
-   "en": "Q4 2025 swung to quarterly operating profit of ₩1.63B — the first positive quarterly result in three years"
+   "ko": "2025년 4분기(+16.3억원)와 2026년 2분기(+3.6억원) 두 차례 분기 영업흑자를 기록, 1분기는 다시 적자로 돌아가는 등 분기별 기복이 뚜렷",
+   "en": "The company posted quarterly operating profit twice — Q4 2025 (KRW 1.63bn) and Q2 2026 (KRW 0.36bn) — while Q1 2026 swung back to a loss, showing pronounced quarter-to-quarter volatility"
   },
   {
-   "ko": "에이전틱 AI 플랫폼 XGEN, 롯데홈쇼핑·제주은행 레퍼런스 확보 및 방산·금융·공공·조선 10여 건 PoC 진행 중",
-   "en": "Agentic AI platform XGEN secured references at Lotte Home Shopping and Jeju Bank, with 10+ active PoCs across defense, finance, public sector, and shipbuilding"
+   "ko": "에이전틱 AI 플랫폼 '엑스젠(XGEN)'이 롯데홈쇼핑·제주은행·iM캐피탈 등으로 레퍼런스를 확대하며 금융·유통 밖으로 영역을 넓히는 중",
+   "en": "The agentic AI platform 'XGEN' has expanded its reference base to Lotte Home Shopping, Jeju Bank and iM Capital, broadening beyond retail into the financial sector"
   },
   {
-   "ko": "2025년 AX·DX 라이선스 매출 100억원 돌파 — 솔루션(라이선스+용역) 매출 156.7억원, 전체 매출의 40% 이상",
-   "en": "AX/DX license revenue crossed ₩10B in 2025; total solution revenue (license + services) reached ₩15.67B, exceeding 40% of total sales"
+   "ko": "2026년 상반기 신규수주 237.7억원으로 상반기 매출의 1.25배를 확보했고, 7월에는 신세계아이앤씨와 79.6억원 규모 커머스 플랫폼 계약을 체결(각 언론 보도, 2026년 8월)",
+   "en": "New orders in H1 2026 reached KRW 23.77 billion — 1.25 times H1 revenue — and in July the company signed a KRW 7.96 billion commerce platform contract with Shinsegae I&C, per media reports dated August 2026"
   },
   {
-   "ko": "부채비율이 2022년 19.9%에서 2025년 73.6%로 급등, CFO 2년 연속 음수 — 재무 건전성 모니터링 병행 필요",
-   "en": "Debt ratio surged from 19.9% (2022) to 73.6% (2025) as losses eroded equity; two consecutive years of negative operating cash flow require continued balance sheet vigilance"
+   "ko": "주가순자산비율은 1배를 밑돌아 순자산 대비 할인 구간에서 거래되며, 무배당 정책이 이어지고 있다",
+   "en": "The price-to-book ratio sits below one, meaning the stock trades at a discount to net asset value, and the company continues a no-dividend policy"
   }
  ],
  "business": {
-  "ko": "플래티어는 2005년 설립된 버티컬 AI·DX 솔루션 전문기업으로 2021년 코스닥에 상장했다. 사업 구조는 ▲Enterprise AX(에이전틱 AI 플랫폼 XGEN), ▲Commerce AX(AI 네이티브 이커머스 솔루션 X2BEE), ▲AI CX(AI 개인화 마테크 그루비·SaaS형 AI 검색 젠서), ▲Intelligent DX(아틀라시안·깃랩 등 글로벌 IT 솔루션 공급·구축)의 4대 사업 축으로 구성된다. 지난 20여 년간 국내 90여 개 대기업 사이트에서 270개 이상의 이커머스 플랫폼 구축·운영 프로젝트를 수행한 이력이 사업 기반이다. 주요 고객사로는 롯데홈쇼핑, 삼성전자(삼성SDS 협업), 현대오토에버, 네이버파이낸셜, 컬리, 현대모비스, SK하이닉스 등이 포함된다. 2025년부터는 온프레미스 기반 에이전틱 AI 플랫폼 XGEN을 신성장 축으로 전면 배치했다. XGEN은 노코드 드래그앤드롭 방식으로 에이전트를 설계·배포하며 데이터 외부 유출 없이 금융·방산·공공 등 고보안 산업에 적용 가능한 것이 차별점이다. DX 사업 부문에서는 아틀라시안·깃랩·퍼포스 등 글로벌 솔루션의 국내 핵심 파트너로서 대기업 DevOps·ITSM 프로젝트를 담당한다. 2026년에는 미국 Stagil과의 3개년 DX 솔루션 공급 계약, 캐나다 AdGear와의 계약 체결로 미주·유럽 진출의 초기 교두보를 확보했다.",
-  "en": "Plateer was founded in 2005 as a vertical AI/DX solution specialist and listed on KOSDAQ in 2021. Its business is organized around four pillars: Enterprise AX (agentic AI via the XGEN platform), Commerce AX (AI-native e-commerce platform X2BEE), AI CX (groobee personalization MarTech and genser SaaS AI search), and Intelligent DX (domestic implementation and support for global platforms including Atlassian, GitLab, and Perforce). The company's 20-year heritage of building and operating 270+ e-commerce platforms for 90+ major Korean enterprises provides a durable commercial foundation. Key clients include Lotte Home Shopping, Samsung Electronics (via Samsung SDS collaboration), Hyundai AutoEver, Naver Financial, Kurly, Hyundai Mobis, and SK Hynix. Since 2025, the on-premise agentic AI platform XGEN has been elevated to the company's primary growth driver. XGEN allows business users to design and deploy AI agents through no-code drag-and-drop tools in a closed environment, a critical differentiator for security-sensitive verticals such as banking, defense, and public administration. The Intelligent DX segment serves as a key Korean partner for Atlassian, GitLab, and Perforce, handling enterprise DevOps and ITSM deployments for large conglomerates. In early 2026, a three-year DX supply agreement with U.S.-based Stagil and a contract with Canada-based AdGear established initial footholds in international markets."
+  "ko": "플래티어는 버티컬 AI·DX 솔루션을 제공하는 엔터프라이즈 B2B 소프트웨어 전문 기업이다. 핵심 사업은 대형 이커머스 플랫폼 구축 솔루션인 엑스투비(X2BEE)와 엑스투커머스(X2Commerce)로, 이마트·신세계백화점·현대백화점·롯데슈퍼·롯데마트 등 대형 유통사와 현대자동차·제네시스·한국타이어 등 제조 브랜드의 온라인 판매 플랫폼을 구축해왔다. 여기에 AI 기반 개인화 마테크 솔루션 '그루비(groobee)', 아틀라시안 기반 DevOps·ITSM 협업 솔루션(예: 네이버파이낸셜에 공급한 '마틸다'), 그리고 2025년 3분기 출시한 에이전틱 AI 플랫폼 '엑스젠(XGEN)'까지 네 개 축으로 사업을 확장하고 있다. 2026년 상반기에는 현대오토에버·현대모비스·삼성전기·SK하이닉스·LS일렉트릭 같은 제조 대기업과 코스콤(금융IT), 넷마블·스마일게이트(게임), 무신사(패션 커머스) 등으로 고객 저변을 넓혔다. 회사는 이커머스 구축 매출(라이프사이클 약 5~7년의 프로젝트성 매출)과 이후 발생하는 개발·운영(유지보수) 매출을 함께 확보하는 구조를 갖고 있어, 대형 구축 계약 시점에 따라 분기 매출이 출렁이는 특징이 있다. 최근에는 표준화된 솔루션 자산을 반복 활용하는 'AX 파운드리(AX Foundry)' 체제로 전환하며 외주 용역비·판관비 비중을 줄이는 방향으로 사업모델을 조정하고 있다. 경쟁구도는 국내 이커머스 구축 시장에서는 오랜 레퍼런스를 보유한 선두권이나, 에이전틱 AI 플랫폼 영역에서는 글로벌 빅테크와 국내 대형 IT서비스사들과 경쟁해야 하는 신생 사업 단계에 있다.",
+  "en": "Plateer is an enterprise B2B software specialist providing vertical AI and digital-transformation (DX) solutions. Its core business centers on large-scale e-commerce platform construction solutions, X2BEE and X2Commerce, through which it has built online sales platforms for major retailers such as E-Mart, Shinsegae Department Store, Hyundai Department Store, Lotte Super and Lotte Mart, as well as manufacturing brands including Hyundai Motor, Genesis and Hankook Tire. The company has expanded into four pillars: the AI-based personalization martech solution 'groobee,' Atlassian-based DevOps/ITSM collaboration solutions (such as 'Matilda,' supplied to Naver Financial), and the agentic AI platform 'XGEN,' launched in the third quarter of 2025. In the first half of 2026 the client base widened further to manufacturing majors such as Hyundai Autoever, Hyundai Mobis, Samsung Electro-Mechanics, SK Hynix and LS Electric, plus Koscom in financial IT, Netmarble and Smilegate in gaming, and Musinsa in fashion commerce. The company's revenue structure combines one-off e-commerce build revenue, which typically follows a five-to-seven-year lifecycle, with subsequent development and operations (maintenance) revenue, meaning quarterly revenue can swing sharply around the timing of large construction contracts. More recently the company has shifted toward an 'AX Foundry' model that reuses standardized solution assets, aiming to reduce the weight of outsourced service costs and SG&A. In the domestic e-commerce build market, Plateer holds an established position with a long reference track record, but in the agentic AI platform space it remains at an earlier stage of competing against global big-tech players and large domestic IT service providers."
  },
  "earnings": {
-  "ko": "2022년 매출 499.6억원·영업이익 31.8억원(OPM 6.4%)으로 상장 후 최고 실적을 기록했으나, 내수 소비 위축과 대형 이커머스 플랫폼 투자 지연이 겹치며 2023년 매출 332.9억원(-45.4억 영업손실), 2024년 298.0억원(-69.7억 영업손실, OPM -23.4%)으로 연속 악화됐다. 2025년 매출은 388.5억원(+30.3% YoY)으로 반등했고, 영업손실은 -44.0억원으로 전년 대비 36.9% 축소됐다(OPM -11.3%). 분기별로는 1분기 -19.6억, 2분기 -17.9억, 3분기 -22.9억원의 영업손실이 지속됐으나 4분기에 매출 121.3억원(전년 동기 대비 73.4% 증가)·영업이익 +16.3억원을 기록하며 3년 만에 처음으로 분기 흑자를 달성했다. 2026년 1분기는 매출 86.1억원(+10.2% YoY), 영업손실 -13.9억원으로 전년 동기 대비 29.1% 개선됐다. 2025년 AX·DX 솔루션 라이선스 매출은 상장 시점(2021년) 대비 170% 이상 성장하며 100억원을 돌파했고, 라이선스와 용역을 합산한 솔루션 매출은 156.7억원으로 전체의 40% 이상을 차지했다. 영업현금흐름(CFO)은 2022년 +16.0억, 2023년 +23.2억에서 2024년 -36.1억, 2025년 -26.7억으로 2년 연속 음수를 기록해 운전자본 관리가 과제로 남아 있다. 자기자본은 적자 누적으로 2022년 471.2억에서 2025년 326.6억원으로 감소했고, 부채총계는 같은 기간 93.9억에서 240.3억원으로 증가해 부채비율이 73.6%로 높아졌다.",
-  "en": "Plateer posted record post-IPO results in 2022 — revenue of ₩49.96B and operating profit of ₩3.18B (OPM 6.4%). Weakening domestic consumption and deferred large-platform investment drove revenue down to ₩33.29B in 2023 (operating loss ₩4.54B) and ₩29.80B in 2024 (operating loss ₩6.97B; OPM -23.4%). A meaningful recovery followed in 2025: revenue rebounded to ₩38.85B (+30.3% YoY) and the operating loss narrowed to ₩4.40B (OPM -11.3%), a 36.9% improvement versus 2024. Quarterly progression in 2025 showed operating losses of ₩1.96B (Q1), ₩1.79B (Q2), and ₩2.29B (Q3), before Q4 delivered revenue of ₩12.13B — up 73.4% year-on-year — and operating profit of ₩1.63B, the first positive quarterly result since 2022. Into 2026, Q1 revenue grew 10.2% YoY to ₩8.61B, with the operating loss of ₩1.39B narrowing 29.1% year-on-year. AX/DX license revenue exceeded ₩10B in 2025 (up 170%+ from the 2021 IPO base), while total solution revenue (license plus services) reached ₩15.67B, comprising over 40% of total sales. Operating cash flow (CFO), positive in 2022 (+₩1.60B) and 2023 (+₩2.32B), turned negative in 2024 (₩-3.61B) and 2025 (₩-2.67B), highlighting the importance of working-capital management. Accumulated losses reduced equity from ₩47.12B (2022) to ₩32.66B (2025), while total liabilities grew from ₩9.39B to ₩24.03B, pushing the debt ratio to 73.6%."
+  "ko": "연결 기준 매출은 2022년 499.6억원에서 2023년 332.9억원, 2024년 298.0억원으로 2년 연속 줄었다가 2025년 388.5억원으로 30.4% 반등했다. 영업손익은 2022년 31.8억원 흑자였으나 2023년 -45.4억원, 2024년 -69.7억원으로 적자가 확대된 뒤 2025년 -44.0억원으로 손실 폭이 다소 줄었다. 순이익 역시 2022년 39.6억원 흑자에서 2023년 -32.4억원, 2024년 -56.4억원, 2025년 -42.9억원으로 4년째 적자 흐름이다. 분기별로 보면 2025년 3분기 매출 91.1억원·영업손실 22.9억원에서 4분기에는 매출 121.3억원·영업이익 16.3억원으로 분기 흑자 전환에 성공했다. 그러나 2026년 1분기에는 매출 86.1억원으로 줄고 영업손실 13.9억원을 내며 다시 적자로 돌아섰고, 2분기에는 매출 103.7억원·영업이익 3.6억원·순이익 3.1억원을 기록하며 두 번째 분기 흑자를 만들었다. 최근 네 개 분기(2025년 3분기~2026년 2분기)를 합산하면 매출은 약 402.2억원으로 2025년 연간 매출을 웃돌지만, 영업손익 합산은 약 -16.8억원, 순손익 합산은 약 -16.8억원 적자로 여전히 손실 구간에 머물러 있다. 언론 보도에 따르면 2분기 흑자 전환의 배경에는 AX 솔루션 판매 확대에 따른 외주 용역비·판관비 절감이 있었던 것으로 설명된다.",
+  "en": "Consolidated revenue fell for two straight years, from KRW 49.96 billion in 2022 to KRW 33.29 billion in 2023 and KRW 29.80 billion in 2024, before rebounding 30.4% to KRW 38.85 billion in 2025. Operating profit was KRW 3.18 billion in 2022 but turned to losses of KRW 4.54 billion in 2023 and KRW 6.97 billion in 2024, before narrowing to a loss of KRW 4.40 billion in 2025. Net income followed the same pattern, from a profit of KRW 3.96 billion in 2022 to losses of KRW 3.24 billion in 2023, KRW 5.64 billion in 2024 and KRW 4.29 billion in 2025 — a fourth consecutive annual loss. On a quarterly basis, revenue of KRW 9.11 billion and an operating loss of KRW 2.29 billion in the third quarter of 2025 gave way to revenue of KRW 12.13 billion and operating profit of KRW 1.63 billion in the fourth quarter, marking a return to quarterly profitability. However, first-quarter 2026 revenue slipped to KRW 8.61 billion with an operating loss of KRW 1.39 billion, before the second quarter recorded revenue of KRW 10.37 billion, operating profit of KRW 0.36 billion and net income of KRW 0.31 billion — the second quarter of profitability. Summed over the trailing four quarters (Q3 2025 through Q2 2026), revenue reaches roughly KRW 40.22 billion, exceeding full-year 2025 revenue, though combined operating and net results remain in a loss of roughly KRW 1.68 billion. Media reports attribute the second-quarter turnaround to reduced outsourcing and SG&A costs as AX solution sales expanded."
  },
  "industry": {
-  "ko": "국내 기업 AI 전환(AX) 시장은 대형 언어모델(LLM) 보급 가속과 에이전틱 AI 도입 확산을 배경으로 빠르게 성장하고 있다. 금융권은 전사 AI 내재화 수요가 높고, 특히 온프레미스·망분리 환경을 요구하는 금융감독 규제가 클라우드 퍼스트 전략을 제한해 폐쇄형 솔루션 수요가 구조적으로 형성된다. 방산·공공·반도체 제조 분야도 보안 규제가 강해 기업 내 데이터 유출 차단이 가능한 온프레미스 에이전틱 AI 플랫폼의 핵심 수요처로 부상하고 있다. 플래티어의 경쟁 상대는 삼성SDS·SK AX·LG CNS·카카오엔터프라이즈 등 대기업 계열 IT 서비스사와 마이크로소프트·SAP 등 글로벌 하이퍼스케일러로 자원과 네트워크 측면에서 절대적 규모 차이가 존재한다. 플래티어의 차별점은 20년간의 비정형 이커머스 데이터 처리 노하우와 온프레미스 환경에서의 높은 문서 인식 정확도로, 동일 고객사 테스트에서 대형 경쟁사 솔루션 대비 더 높은 정확도를 기록한 사례를 레퍼런스로 보유한다. 이커머스 SI 시장은 2024년 이후 중견 자사몰 수요 회복이 일부 진행 중이나, 대형 플랫폼 투자 지연과 경쟁 심화로 단기 회복은 제한적이다. 일본 이커머스·AX 시장은 디지털 전환 수요 확대로 신시장 진입 기회로 평가된다.",
-  "en": "Korea's enterprise AI transformation (AX) market is expanding rapidly, driven by widespread LLM adoption and the rise of agentic AI workflows. The financial sector is a particularly active demand driver: stringent domestic financial regulations that limit cloud-first deployments create structural demand for on-premise, air-gapped AI solutions. Defense, government, and high-security manufacturing sectors are similarly emerging as priority verticals for closed-environment agentic AI platforms. Plateer's primary competitors include chaebol-affiliated IT services firms — Samsung SDS, SK AX, LG CNS, and Kakao Enterprise — as well as global hyperscalers such as Microsoft and SAP, all of which hold significant scale advantages in capital and sales networks. Plateer's differentiation lies in its 20-year accumulation of expertise in unstructured e-commerce data processing and its demonstrated document-parsing accuracy advantage in on-premise environments, with publicly cited PoC outcomes where XGEN outperformed global competitors on customer-specific data sets. The legacy e-commerce SI market has seen a partial recovery in mid-market branded commerce portal demand since late 2024, but large-platform capex deferrals and intensifying competition limit near-term upside. Japan's e-commerce and AX markets represent an attractive near-term international expansion opportunity given the country's accelerating digital transformation initiatives."
+  "ko": "국내 이커머스 플랫폼 구축 시장은 대형 유통사·제조 브랜드의 자사몰 고도화 수요가 이어지는 성숙 시장으로, 헤드리스 커머스와 D2C 전환이 주요 트렌드로 자리잡았다. 여기에 최근 생성형·에이전틱 AI가 엔터프라이즈 소프트웨어 시장의 핵심 화두로 부상하면서, 기존 이커머스 IT서비스 기업들도 AI 플랫폼 사업으로 영역을 확장하는 움직임이 뚜렷하다. 금융권에서는 망분리 규제가 완화되는 흐름 속에서도 고객 민감정보를 다루는 핵심 업무 영역에서는 외부 SaaS AI 도입에 제약이 남아 있어, 온프레미스 기반의 AI 거버넌스 체계를 갖춘 솔루션에 대한 수요가 형성되고 있다. 플래티어는 이 지점을 겨냥해 엑스젠을 온프레미스 구조로 설계했고, 제주은행·iM캐피탈 등 금융사 레퍼런스를 확보했다. 경쟁 구도에서는 국내 대형 IT서비스사(삼성SDS·SK C&C·LG CNS 등)와 글로벌 에이전틱 AI 플랫폼 업체들이 동시에 시장에 진입하고 있어, 중소형 전문기업인 플래티어로서는 규제 산업 특화·온프레미스 보안이라는 틈새에서 레퍼런스를 축적하는 전략을 취하고 있다. 이커머스 구축 부문에서는 90여 개 대기업 사이트에 170개 이상의 프로젝트를 수행한 트랙레코드를 바탕으로 국내 선두권 입지를 유지하고 있는 것으로 회사 측은 설명한다.",
+  "en": "The domestic e-commerce platform build market remains a mature segment driven by ongoing demand from large retailers and manufacturing brands to upgrade their own online stores, with headless commerce and direct-to-consumer conversion emerging as key trends. More recently, generative and agentic AI has become a central theme in enterprise software, prompting existing e-commerce IT service firms to expand into AI platform businesses. In the financial sector, even as network-separation regulations gradually ease, core business areas handling sensitive customer data still face constraints on adopting external SaaS AI, creating demand for solutions built on on-premise AI governance frameworks. Plateer has targeted this gap by designing XGEN on an on-premise architecture and securing references with financial institutions such as Jeju Bank and iM Capital. On the competitive front, large domestic IT service firms and global agentic AI platform vendors are entering the market simultaneously, leaving a mid-sized specialist like Plateer to pursue a strategy of accumulating references in regulated-industry specialization and on-premise security niches. In its e-commerce build business, the company states it maintains a leading domestic position based on a track record of more than 170 projects across roughly 90 large enterprise sites."
  },
  "outlook": {
-  "ko": "경영진은 2026년을 '글로벌 AX 진출 원년'으로 공식 규정하고, 일본 법인을 거점으로 AI 커머스 검색 SaaS 솔루션 젠서를 한·일 양국에서 본격 확대할 계획을 밝혔다. 국내에서는 금융·방산·공공·조선 등 10여 건 이상의 XGEN PoC를 본계약으로 전환하는 것이 상반기 핵심 과제다. 2026년 1분기 기준 젠서 GEO·젠서 디스커버리 SaaS 솔루션이 대기업 PoC를 마치고 상반기 매출 기여를 목표로 하고 있다. DX 사업 부문에서는 삼성SDS 협업을 통한 삼성전자향 대규모 추가 공급 계약(2026년 1월 체결)이 연간 매출 기반을 강화했고, 현대오토에버와의 현대·제네시스 인증중고차(CPO) DevOps 2차 계약(약 24.5억원)도 안정적 반복 매출원으로 기능한다. KT와의 컨소시엄을 통한 제주은행 프로젝트 수주는 대형 통신·IT 기업과의 공동 입찰 모델이 고규제 산업 진입에 유효함을 검증했으며, 유사 파트너십 확장이 하반기 수주 전략의 한 축이 될 수 있다. 글로벌 측면에서는 미국 Stagil과의 3개년 DX 공급 계약, 캐나다 AdGear와의 계약을 발판으로 미주·유럽 시장 진출을 병행 추진 중이다.",
-  "en": "Management has designated 2026 as the 'inaugural year of global AX expansion,' with the Japan subsidiary serving as the primary springboard for the genser AI commerce search SaaS in both domestic and Japanese markets. Domestically, converting the 10+ active XGEN PoC engagements across banking, defense, public administration, and shipbuilding into signed contracts is the critical near-term objective. As of Q1 2026, the SaaS-format agentic commerce solutions — genser GEO and genser Discovery — had completed major enterprise PoCs and were targeting revenue contribution in H1 2026. In the DX segment, a large-scale additional supply contract with Samsung Electronics (via Samsung SDS, signed January 2026) strengthened the annual revenue base, while the second-year Hyundai AutoEver CPO DevOps contract (~₩2.45B) provides a reliable recurring stream. The KT consortium model used to win the Jeju Bank GenAI project validated a co-bidding go-to-market approach for high-security regulated industries, and similar partnership expansions are a key component of the H2 2026 strategy. Internationally, the three-year DX supply agreement with U.S.-based Stagil and the Canada-based AdGear contract provide early footholds for Americas and European market entry."
+  "ko": "회사는 2026년 하반기 전망을 밝게 보고 있는데, 상반기에만 매출의 1.25배에 달하는 237.7억원의 신규 수주를 확보했고 상반기 말 수주잔고 104.5억원에 7월 신세계아이앤씨와 체결한 79.6억원 규모 온·오프 통합 커머스 플랫폼 계약을 더하면 180억원을 웃도는 물량을 안고 하반기를 시작한다고 밝혔다(NSP통신, 2026년 8월). 엑스젠은 롯데홈쇼핑 정식 가동(2025년 12월 말)을 시작으로 제주은행(2026년 3월, KT와 컨소시엄), iM캐피탈(2026년 7월) 등 금융권으로 레퍼런스를 넓혔고, 회사는 금융·공공·방산·조선 등 다양한 산업 고객사와 기술 검증(PoC)을 진행 중이라고 설명했다. SaaS형 에이전틱 커머스 솔루션 '젠서 GEO'와 '젠서 디스커버리'도 대기업 PoC를 마치고 매출 기여를 준비하는 단계로 소개됐다. 아울러 2025년 설립한 일본법인 플래티어재팬을 통해 생성형 AI 기반 검색 등 해외 사업 확장도 모색하고 있는 것으로 전해진다. 다만 이러한 신규 수주와 PoC가 실제 매출로 인식되는 시점과 규모는 프로젝트별 계약 조건에 따라 달라질 수 있어, 분기별 실적 변동성은 이어질 가능성이 있다.",
+  "en": "The company has expressed a positive outlook for the second half of 2026, noting that new orders in the first half alone reached KRW 23.77 billion — 1.25 times first-half revenue — and that combined with a backlog of KRW 10.45 billion at mid-year plus the KRW 7.96 billion online-offline integrated commerce platform contract signed with Shinsegae I&C in July, it enters the second half carrying more than KRW 18 billion in secured work, according to an NSP News report dated August 2026. XGEN has expanded its reference base into the financial sector, starting with the full launch at Lotte Home Shopping at end-December 2025, followed by Jeju Bank in March 2026 (in a consortium with KT) and iM Capital in July 2026, and the company states it is conducting proof-of-concept projects with clients across finance, public sector, defense and shipbuilding. SaaS-type agentic commerce solutions 'genser GEO' and 'genser Discovery' have completed enterprise PoCs and are described as preparing to contribute to revenue. The company is also reported to be pursuing overseas expansion, including generative-AI-based search, through its Japanese subsidiary Plateer Japan, established in 2025. However, the timing and scale at which these new orders and PoCs convert into recognized revenue can vary by individual contract terms, so quarter-to-quarter earnings volatility may persist."
  },
  "valuation_comment": {
-  "ko": "연속 적자 국면이 이어지면서 주가는 주당순자산(BPS 3,867원) 아래로 내려온 순자산 할인 구간에 형성되어 있다. 이는 적자 지속에 따른 자기자본 감소 우려를 시장이 반영한 결과로, 주당순손실(EPS -457원)이 지속되는 상황에서 PER 산출은 의미가 제한적이다. 회사는 배당을 지급하지 않으며 흑자 전환 전까지 배당수익률은 기대하기 어렵다. 시장의 관심은 단순 배수 비교보다 '흑자 전환 시점'과 '라이선스 매출 성장 속도'에 집중되는 경향이 있으며, 2025년 4분기 분기 흑자 달성이 그 가능성을 일부 보여줬다. 흑자 구조를 유지했던 2022년 이전 수준으로 이익 체질이 회복될 경우 동종 소프트웨어·AI 솔루션 기업과의 밸류에이션 비교가 의미를 가질 수 있다.",
-  "en": "Ongoing losses have pushed the share price into a net-asset discount zone, trading below per-share book value (BPS ₩3,867). This reflects the market's concern over continued equity erosion from accumulated deficits. With EPS at -₩457, conventional earnings-multiple comparisons carry limited analytical value. The company pays no dividend, and a return to dividends is unlikely until sustained profitability is confirmed. Market attention centers on the timeline for a return to profitability and the trajectory of high-margin AX/DX license revenue growth rather than traditional multiple comparisons. The Q4 2025 return to quarterly operating profit provided early evidence that a shift in the earnings profile is possible. A recovery toward the profit structure seen in the pre-2023 period would reopen meaningful valuation benchmarking against profitable software and AI solution peers."
+  "ko": "최근 네 개 분기 순이익 합산이 적자를 기록하고 있어 통상적인 주가수익비율 산출은 의미를 갖기 어려운 구간이다. 주가순자산비율은 1배를 밑돌아 주가가 주당순자산에도 못 미치는 수준에서 거래되고 있으며, 이는 다년간 이어진 적자와 자기자본 감소가 반영된 결과로 해석할 수 있다. 배당은 지급되지 않고 있어 배당 관점의 투자 매력을 논하기는 어려운 상태다. 다만 2025년 매출 반등과 2025년 4분기·2026년 2분기의 분기 영업흑자 전환은 실적 방향성이 적자에서 회복 국면으로 이동하고 있음을 보여주는 지표로 볼 수 있으며, 향후 이 흐름이 연간 단위로 이어지는지가 밸류에이션 논의의 핵심 변수가 될 것으로 보인다.",
+  "en": "With the trailing four-quarter net result in loss territory, a conventional price-to-earnings comparison carries limited meaning at this point. The price-to-book ratio sits below one, meaning the shares trade at a level under net asset value per share, which can be read as reflecting the multi-year run of losses and the accompanying decline in shareholders' equity. The company pays no dividend, making a dividend-yield argument difficult to construct. That said, the 2025 revenue rebound and the return to quarterly operating profit in the fourth quarter of 2025 and the second quarter of 2026 can be read as signals that earnings direction is shifting from loss toward recovery, and whether this pattern extends into a full annual turn is likely to remain the central variable in any valuation discussion going forward."
  },
  "bull": [
   {
    "title": {
-    "ko": "XGEN 에이전틱 AI 레퍼런스 확장 가속",
-    "en": "Accelerating XGEN Agentic AI Reference Expansion"
+    "ko": "에이전틱 AI 신사업의 레퍼런스 확대",
+    "en": "Expanding References in the New Agentic AI Business"
    },
    "body": {
-    "ko": "2025년 3분기 출시 이후 단기간에 롯데홈쇼핑 에이전틱 AI 서비스(1개월 구축)·KT 컨소시엄을 통한 제주은행 GenAI 플랫폼 등 대형 레퍼런스를 연이어 확보했다. 금융·방산·공공·조선 등 고보안·고규제 산업에서 10여 건 이상 PoC가 진행 중이며, 동일 데이터셋 테스트에서 글로벌 경쟁사 대비 문서 인식 정확도 우위를 입증한 사례도 보유하고 있다. 각 PoC가 본계약으로 전환될 경우 라이선스 매출이 빠르게 확대되는 수익 레버리지가 작동한다.",
-    "en": "Launched in Q3 2025, XGEN rapidly secured high-profile references including Lotte Home Shopping's agentic AI deployment (built in under one month) and Jeju Bank's GenAI platform via the KT consortium. More than ten active PoCs are underway across high-security verticals — banking, defense, public administration, and shipbuilding — and documented testing has shown XGEN's document-parsing accuracy outperforming global competitors on customer-specific data. PoC-to-contract conversion could trigger meaningful license revenue operating leverage."
+    "ko": "엑스젠은 2025년 3분기 출시 3개월 만에 대형 유통사 프로젝트를 수주했고, 이후 롯데홈쇼핑 정식 가동에 이어 제주은행·iM캐피탈 등 금융권으로 레퍼런스를 넓혔다. 금융권은 보수적인 전산 환경과 엄격한 보안 규제로 신규 진입이 어려운 시장이지만, 플래티어는 온프레미스 기반 AI 거버넌스로 이 장벽을 공략하고 있다. 회사는 금융·공공·방산·조선 등 다양한 고규제 산업 고객사와 기술 검증을 진행 중이라고 밝혀, 향후 추가 수주로 이어질 가능성을 열어두고 있다.",
+    "en": "XGEN won a large retailer project within three months of its third-quarter-2025 launch, and its reference base has since expanded through the full deployment at Lotte Home Shopping and into the financial sector with Jeju Bank and iM Capital. The financial sector is difficult to enter given its conservative IT environment and strict security regulations, but Plateer is targeting this barrier with an on-premise AI governance framework. The company states it is conducting proof-of-concept work with clients across finance, public sector, defense and shipbuilding, leaving open the possibility of further order wins."
    }
   },
   {
    "title": {
-    "ko": "솔루션 매출 비중 확대, 수익성 체질 개선",
-    "en": "Rising High-Margin Solution Mix Improves Earnings Quality"
+    "ko": "수주 모멘텀과 고객 다변화",
+    "en": "Order Momentum and Customer Diversification"
    },
    "body": {
-    "ko": "2025년 AX·DX 솔루션(라이선스+용역) 매출이 전체의 40% 이상인 156.7억원에 달하며 상장 이후 연평균 28% 이상 성장했다. 반복 매출 성격의 라이선스·SaaS 비중 확대는 매출 변동성을 낮추고 이익 체질 개선에 직결된다. 실제로 2025년 4분기에 분기 흑자 전환이 이루어진 것은 솔루션 매출 비중 증가가 수익성을 개선할 수 있음을 보여준 사례다.",
-    "en": "In 2025, AX/DX solution revenue (license plus services) reached ₩15.67B, exceeding 40% of total sales and growing at a compound annual rate of over 28% since the 2021 IPO. The expansion of recurring license and SaaS revenue reduces top-line volatility and directly improves the earnings structure. The Q4 2025 quarterly operating profit turnaround provided concrete evidence that a higher-margin solution mix can translate into actual profitability."
+    "ko": "2026년 상반기 신규 수주는 237.7억원으로 상반기 매출의 1.25배에 달했고, 7월에는 신세계아이앤씨와 79.6억원 규모 계약을 추가했다. 고객군도 유통·패션에서 자동차·반도체·금융IT·게임 등으로 넓어져 현대오토에버, 현대모비스, 삼성전기, SK하이닉스, LS일렉트릭, 코스콤, 넷마블, 스마일게이트, 무신사 등이 신규 공급 계약을 체결했다. 이런 고객 저변 확대는 특정 업종 의존도를 낮추는 요인으로 작용할 수 있다.",
+    "en": "New orders in the first half of 2026 totaled KRW 23.77 billion, 1.25 times first-half revenue, and in July the company added a KRW 7.96 billion contract with Shinsegae I&C. The customer base has also broadened from retail and fashion into autos, semiconductors, financial IT and gaming, with new supply contracts signed with Hyundai Autoever, Hyundai Mobis, Samsung Electro-Mechanics, SK Hynix, LS Electric, Koscom, Netmarble, Smilegate and Musinsa. This broadening customer base may reduce reliance on any single industry."
    }
   },
   {
    "title": {
-    "ko": "글로벌 확장 초기 — 일본·북미 교두보 확보",
-    "en": "Early-Stage Global Footprint in Japan and North America"
+    "ko": "영업 레버리지를 통한 비용구조 개선",
+    "en": "Cost Structure Improvement via Operating Leverage"
    },
    "body": {
-    "ko": "경영진은 2026년을 일본 법인 기반 글로벌 AX 사업 원년으로 공식 선언했으며, 젠서 AI 검색 솔루션의 일본 시장 기술 검증을 진행 중이다. 미국 Stagil과의 3개년 DX 솔루션 공급 계약, 캐나다 AdGear와의 계약 체결로 미주·유럽 진입 발판을 마련했다. 성공적인 해외 매출 다변화는 국내 시장 의존도를 낮추고 중장기 성장 가능성을 확장하는 요인이 된다.",
-    "en": "Management formally designated 2026 as the inaugural year for global AX expansion anchored by the Japan subsidiary, with technical validation of the genser AI search solution underway in the Japanese market. Three-year DX supply agreements with U.S.-based Stagil and Canada-based AdGear establish early footholds in North American and European markets. Successful international revenue diversification would reduce domestic-market dependency and broaden the medium-to-long-term growth runway."
+    "ko": "표준화된 솔루션 자산을 반복 활용하는 'AX 파운드리' 체제로 전환하면서 2026년 2분기 외주 용역비와 판관비가 각각 27.4%, 13.6% 줄었다는 보도가 있었다. 이는 개별 프로젝트마다 처음부터 개발하던 방식에서 벗어나 재사용 가능한 솔루션 자산으로 원가를 낮추는 구조적 변화로 해석된다. 이 흐름이 지속될 경우 매출 증가에 따른 이익 레버리지가 커질 여지가 있다.",
+    "en": "Reports indicate that outsourcing costs and SG&A fell 27.4% and 13.6%, respectively, in the second quarter of 2026 as the company shifted to an 'AX Foundry' model that reuses standardized solution assets. This is interpreted as a structural change away from building each project from scratch toward lowering costs through reusable solution assets. If this trend continues, there is room for greater profit leverage as revenue grows."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "연간 적자 지속 및 현금 소진 리스크",
-    "en": "Persistent Annual Losses and Cash Consumption Risk"
+    "ko": "연간 단위로는 여전히 적자",
+    "en": "Still a Net Loss on an Annual Basis"
    },
    "body": {
-    "ko": "2023년부터 2025년까지 3년 연속 영업·순손실이 지속됐으며, 영업현금흐름도 2024년과 2025년 2년 연속 음수였다. 적자 누적으로 자기자본은 2022년 471.2억원에서 2025년 326.6억원으로 감소했고, 부채총계는 93.9억에서 240.3억원으로 급증해 부채비율이 73.6%로 높아졌다. 추가 운전자본 소요나 사업 투자 확대 시 외부 자금 조달 필요성이 높아질 수 있으며, 이는 기존 주주에게 희석 요인으로 작용한다.",
-    "en": "Operating and net losses persisted for three consecutive years (2023–2025), and operating cash flow was negative for two consecutive years in 2024 and 2025. Accumulated losses reduced equity from ₩47.12B (2022) to ₩32.66B (2025), while total liabilities more than doubled from ₩9.39B to ₩24.03B, pushing the debt ratio to 73.6%. Additional working-capital requirements or expanded business investment could necessitate external financing, which would dilute existing shareholders."
+    "ko": "2025년 매출이 30% 넘게 늘었음에도 연간 영업손실 44.0억원, 순손실 42.9억원을 기록해 4년 연속 적자가 이어졌다. 2026년 1분기에도 매출 성장에도 불구하고 다시 영업손실로 돌아서는 등, 두 차례의 분기 흑자가 연간 흑자로 이어질지는 아직 확인되지 않은 상태다.",
+    "en": "Despite revenue growth of more than 30% in 2025, the company posted a full-year operating loss of KRW 4.40 billion and a net loss of KRW 4.29 billion, marking a fourth consecutive year in the red. Even in the first quarter of 2026, revenue growth did not prevent a return to an operating loss, so whether the two quarters of profitability will translate into a full annual profit remains unconfirmed."
    }
   },
   {
    "title": {
-    "ko": "대형 경쟁사 대비 규모·자원 열위",
-    "en": "Significant Scale and Resource Disadvantage vs. Larger Competitors"
+    "ko": "프로젝트성 매출의 분기 변동성",
+    "en": "Quarterly Volatility from Project-Based Revenue"
    },
    "body": {
-    "ko": "삼성SDS·SK AX·LG CNS 등 대기업 계열 IT 서비스사는 모기업 대규모 수주 파이프라인, 자금력, 영업 네트워크에서 플래티어와 비교할 수 없는 절대적 우위를 가진다. 마이크로소프트·SAP 등 글로벌 하이퍼스케일러와의 경쟁도 가격·브랜드 측면에서 부담이다. 대형 고객사가 계열 IT 기업 또는 글로벌 플레이어로 발주를 전환할 경우 매출 기반이 단기간에 훼손될 수 있다.",
-    "en": "Samsung SDS, SK AX, and LG CNS benefit from captive group order flow, deep capital resources, and extensive enterprise sales networks that Plateer cannot match at its current scale. Global hyperscalers such as Microsoft and SAP add further competitive pressure on pricing and brand credibility. If key enterprise clients shift procurement to chaebol-affiliated IT providers or global platforms, Plateer's revenue base could erode rapidly."
+    "ko": "이커머스 구축 매출은 계약 시점과 프로젝트 완료 시점에 따라 인식되는 특성이 있어, 2025년 4분기 흑자에서 2026년 1분기 다시 적자로 전환하는 등 분기 간 기복이 크다. AI 솔루션 개발 비용 증가가 수익성을 제한했다는 설명도 있어, 신사업 투자와 수익 인식 사이의 시차가 실적에 반영되고 있다.",
+    "en": "E-commerce build revenue tends to be recognized around contract signing and project completion dates, producing large swings such as the shift from a fourth-quarter-2025 profit back to a first-quarter-2026 loss. There have also been explanations that rising AI solution development costs limited profitability, indicating that the gap between new business investment and revenue recognition is showing up in results."
    }
   },
   {
    "title": {
-    "ko": "이커머스 SI 사업의 구조적 둔화",
-    "en": "Structural Slowdown in Legacy E-Commerce SI Revenue"
+    "ko": "에이전틱 AI 시장의 경쟁 심화",
+    "en": "Intensifying Competition in the Agentic AI Market"
    },
    "body": {
-    "ko": "전통적 핵심 사업인 이커머스 플랫폼 구축(SI) 사업은 내수 소비 침체와 대형 플랫폼 투자 지연으로 2022년 이후 지속적인 압박을 받고 있다. 대기업 비상경영 기조가 장기화될 경우 SI 매출의 단기 반등이 어렵고, 솔루션 매출 성장이 이를 충분히 상쇄하지 못하는 시나리오에서는 다시 매출 정체로 이어질 수 있다. 수개월에 걸친 프로젝트 기반 매출 인식 구조도 분기별 실적 변동성을 높이는 구조적 요인이다.",
-    "en": "The legacy e-commerce platform construction (SI) business has been under sustained pressure since 2022 due to domestic consumption weakness and deferred investment by large platform operators. A prolonged corporate cost-reduction environment could keep SI revenues subdued, and if solution-segment growth is insufficient to offset SI decline, top-line growth could stall again. The multi-month revenue recognition cycle inherent in project-based SI work also introduces meaningful quarterly earnings volatility."
+    "ko": "에이전틱 AI 플랫폼 시장에는 국내 대형 IT서비스사와 글로벌 빅테크가 동시에 진입하고 있어, 플래티어가 확보한 레퍼런스가 지속적인 경쟁 우위로 이어질지는 불확실하다. 특히 금융·공공 등 고규제 산업은 의사결정 주기가 길고 보안 검증 절차가 까다로워, PoC에서 실제 계약으로 전환되는 속도가 예상보다 늦어질 가능성도 있다.",
+    "en": "Large domestic IT service firms and global big-tech companies are entering the agentic AI platform market at the same time, making it uncertain whether Plateer's references will translate into a lasting competitive edge. In particular, highly regulated industries such as finance and the public sector have long decision cycles and demanding security verification processes, raising the possibility that the conversion from PoC to actual contracts could be slower than expected."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무 리스크 — 자본 훼손 및 유동성",
-    "en": "Financial Risk — Equity Erosion and Liquidity"
+    "ko": "실적 변동성",
+    "en": "Earnings Volatility"
    },
    "body": {
-    "ko": "3년 연속 순손실로 자기자본이 감소 추세이며 부채비율이 73.6%로 상승했다. 영업현금흐름이 2년 연속 음수인 상황에서 추가적인 사업 투자나 운전자본 소요 시 외부 자금 조달 가능성을 배제하기 어렵다. 유상증자 또는 전환사채 발행 시 주당 희석 효과와 주가 변동성 확대로 이어질 수 있다.",
-    "en": "Three consecutive years of net losses have steadily reduced equity, and the debt ratio has risen to 73.6%. With operating cash flow negative for two consecutive years, external financing cannot be ruled out if additional capital expenditures or working-capital needs arise. Any equity issuance or convertible note offering would create per-share dilution and heightened price volatility."
+    "ko": "대형 구축 프로젝트의 계약·매출 인식 시점에 따라 분기 실적이 큰 폭으로 출렁이는 구조다. 2025년 3분기 적자에서 4분기 흑자, 2026년 1분기 재차 적자, 2분기 흑자로 이어진 흐름이 이를 보여준다. 특정 분기의 흑자를 연간 추세로 단정하기 어려운 상태다.",
+    "en": "The earnings structure fluctuates significantly depending on the timing of contract signing and revenue recognition for large build projects, as shown by the pattern from a Q3 2025 loss to a Q4 2025 profit, back to a Q1 2026 loss, then a Q2 2026 profit. It remains difficult to treat any single quarter's profit as an established annual trend."
    }
   },
   {
    "cat": {
-    "ko": "기술·경쟁 리스크 — AI 시장 변화 속도",
-    "en": "Technology and Competition Risk — Rapid AI Market Evolution"
+    "ko": "신사업 경쟁 및 기술 리스크",
+    "en": "New-Business Competition and Technology Risk"
    },
    "body": {
-    "ko": "에이전틱 AI 기술은 빠르게 진화하고 있어 오늘의 기술 우위가 단기간에 범용화될 수 있다. 글로벌 빅테크가 엔터프라이즈 AI 플랫폼을 직접 강화하거나 현지 파트너십을 확장할 경우 XGEN의 시장 지위가 위협받을 수 있다. 오픈소스 LLM 보급 확산에 따른 기업 자체 개발 수요 증가도 외부 솔루션 구매 의지를 낮추는 변수다.",
-    "en": "Agentic AI technology is evolving rapidly; today's competitive advantages may be commoditized faster than anticipated. If global hyperscalers strengthen their enterprise AI platforms or expand local partnerships, XGEN's market position could come under pressure. The proliferation of open-source LLMs enabling cost-effective in-house AI development could also reduce enterprise willingness to purchase external platforms."
+    "ko": "에이전틱 AI 플랫폼은 회사의 신성장 축이지만, 대형 IT서비스사와 글로벌 AI 플랫폼 기업들과 직접 경쟁해야 한다. 기술 표준이 빠르게 변화하는 영역이라 지속적인 연구개발 투자와 인력 확보가 필요하며, 이는 단기 수익성에 부담을 줄 수 있다.",
+    "en": "The agentic AI platform is a new growth pillar for the company, but it must compete directly with large IT service firms and global AI platform companies. Because technology standards in this area change rapidly, sustained R&D investment and talent acquisition are required, which can pressure near-term profitability."
    }
   },
   {
    "cat": {
-    "ko": "매출 집중 및 주요 고객 의존 리스크",
-    "en": "Revenue Concentration and Key Customer Dependency Risk"
+    "ko": "고규제 산업 진입 리스크",
+    "en": "Risk of Entering Highly Regulated Industries"
    },
    "body": {
-    "ko": "삼성전자(삼성SDS 경유)·롯데홈쇼핑·현대오토에버 등 소수 대형 고객사 의존도가 높은 구조다. 특정 고객사의 발주 지연·중단 또는 대형 SI 프로젝트의 조기 종료(2022년 롯데하이마트 사례 참조)는 일시적으로 큰 매출 공백을 초래할 수 있다. 신규 고객 다변화와 SaaS 기반 반복 매출 확대가 집중 리스크를 완화하는 핵심 과제다.",
-    "en": "Revenue is concentrated among a small number of large enterprise clients including Samsung Electronics (via Samsung SDS), Lotte Home Shopping, and Hyundai AutoEver. Order delays or cancellations by any single major client — or a mid-project termination like the 2022 Lotte Himart case — can create a sudden and material revenue gap. Diversifying the client base and expanding recurring SaaS-based revenue are the primary mitigation strategies for this concentration risk."
+    "ko": "금융·공공·방산 등 고규제 산업으로의 확장은 매출 다변화 기회이지만, 각 산업의 감독규정과 보안 검증 절차를 지속적으로 충족해야 하는 부담이 따른다. 규제 환경이나 망분리 정책이 예상과 다르게 변화할 경우 사업 계획에 영향을 줄 수 있다.",
+    "en": "Expansion into highly regulated industries such as finance, the public sector and defense presents a revenue diversification opportunity, but it also carries the burden of continuously meeting each industry's supervisory regulations and security verification procedures. If the regulatory environment or network-separation policy changes differently than expected, it could affect business plans."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순 (2026년 2분기 실적 발표)",
-    "en": "Mid-August 2026 (Q2 2026 Earnings Release)"
+    "ko": "2026년 11월 중순 전후",
+    "en": "Around mid-November 2026"
    },
    "what": {
-    "ko": "2025년 4분기 분기 흑자 달성 이후 상반기 수익성 흐름을 확인하는 분기. 젠서 GEO·젠서 디스커버리 SaaS 솔루션이 상반기 내 매출에 실질적으로 기여했는지 여부도 핵심 확인 사항이다.",
-    "en": "Verify whether the quarterly operating profitability achieved in Q4 2025 has been maintained through H1 2026, and confirm whether genser GEO and genser Discovery SaaS solutions generated meaningful revenue contribution in the first half as guided by management."
+    "ko": "2026년 3분기 실적 공시 예정 시점으로, 2분기에 이어 영업이익 흑자가 연속되는지, 상반기 신규 수주가 실제 매출로 인식되는 속도를 확인할 필요가 있다.",
+    "en": "This is the expected disclosure window for third-quarter 2026 results, where it will be worth checking whether operating profit continues from the second quarter and how quickly first-half new orders convert into recognized revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 상시 (XGEN PoC 본계약 전환 공시)",
-    "en": "H2 2026 Ongoing (XGEN PoC-to-Contract Conversion Disclosures)"
+    "ko": "2026년 4분기 중",
+    "en": "During the fourth quarter of 2026"
    },
    "what": {
-    "ko": "금융·방산·공공·조선 등에서 진행 중인 10여 건 이상의 XGEN PoC 중 본계약으로 전환되는 건수와 계약 규모를 주시. 전환율과 계약 단가가 향후 AX 라이선스 매출 가시성을 좌우하는 핵심 지표다.",
-    "en": "Track the number and aggregate value of XGEN PoC engagements — in banking, defense, public sector, and shipbuilding — that convert to signed contracts. Conversion rate and average deal size will be the primary determinants of near-term AX license revenue visibility."
+    "ko": "신세계아이앤씨(79.6억원)를 비롯한 하반기 확보 물량의 매출 인식 시점과 규모를 확인해, 하반기 실적에 미치는 영향을 가늠할 필요가 있다.",
+    "en": "It will be worth confirming the timing and scale at which second-half secured work, including the KRW 7.96 billion Shinsegae I&C contract, is recognized as revenue, to gauge its impact on second-half results."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (일본 법인 AX·젠서 사업 첫 수주 공시)",
-    "en": "H2 2026 (Japan Subsidiary — First AX/genser Contract Announcement)"
+    "ko": "수시(추가 수주·공급계약 공시 시점)",
+    "en": "Ongoing, upon additional order or supply contract disclosures"
    },
    "what": {
-    "ko": "일본 현지 법인을 통한 젠서·XGEN 공급 계약의 최초 수주 여부를 확인. 첫 해외 AX 계약 체결은 글로벌 확장 전략의 실현 가능성에 대한 시장 신뢰를 높이는 이정표가 될 수 있다.",
-    "en": "Monitor whether the Japan subsidiary secures an initial genser or XGEN supply contract in the Japanese market. A first material overseas AX contract would serve as a significant credibility milestone for the global expansion strategy."
+    "ko": "제주은행·iM캐피탈에 이은 XGEN의 추가 금융·공공·방산 부문 레퍼런스 확보 여부와, '젠서 GEO'·'젠서 디스커버리' SaaS 매출 기여 개시 시점을 확인할 필요가 있다.",
+    "en": "It will be worth monitoring whether XGEN secures additional references in finance, public sector or defense beyond Jeju Bank and iM Capital, and when the SaaS solutions 'genser GEO' and 'genser Discovery' begin contributing to revenue."
    }
   },
   {
    "when": {
-    "ko": "2026년 내 수시 (DART 자본조달 공시 모니터링)",
-    "en": "Any 2026 DART Disclosure (Capital-Raising Announcement)"
+    "ko": "2027년 3월 전후",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "CFO 2년 연속 음수와 부채비율 73.6% 상황에서 유상증자·전환사채 등 외부 자금 조달 공시 여부를 모니터링. 조달 목적(성장 투자 vs. 운전자본 보충)과 규모가 재무 리스크 재평가의 핵심 판단 기준이 된다.",
-    "en": "Monitor DART for any capital-raising announcements (equity offering or convertible notes) given two consecutive years of negative operating cash flow and the 73.6% debt ratio. The stated purpose — growth investment versus working-capital replenishment — and the size will be the key inputs for reassessing financial risk."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 11월 중순 (2026년 3분기 실적 발표)",
-    "en": "Mid-November 2026 (Q3 2026 Earnings Release)"
-   },
-   "what": {
-    "ko": "2025년 3분기는 분기 중 영업손실이 가장 컸던 시기(-22.9억원)였다. 2026년 3분기가 AX 솔루션 매출 성장을 통해 전년 동기 대비 유의미한 수익성 개선을 달성하는지 여부가 계절성 극복과 구조적 개선의 분기점이 된다.",
-    "en": "Q3 2025 recorded the largest quarterly operating loss of the year (₩-2.29B). Q3 2026 will test whether AX solution revenue growth can structurally overcome the seasonal pattern and deliver a meaningful year-on-year operating improvement, indicating a genuine shift in the earnings profile."
+    "ko": "2026년 사업보고서 확정 공시 시점으로, 2025년에 이어 연간 기준으로도 적자에서 흑자로 전환하는지가 핵심 확인 포인트다.",
+    "en": "This is the expected timing for the finalized 2026 annual business report, and the key point to confirm will be whether the company turns from an annual loss to an annual profit, following 2025."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "플래티어는 이커머스 SI 전문기업에서 에이전틱 AI 플랫폼 기업으로 사업 중심축을 이동하는 전환기에 위치해 있다. 2025년 매출 반등과 4분기 분기 흑자 전환은 이 전략이 초기 성과를 내고 있음을 보여주는 실증 사례다. XGEN의 레퍼런스 확장 속도, 롯데홈쇼핑·제주은행에 이은 추가 PoC 전환 여부, 일본 법인을 통한 글로벌 첫 수주 성과가 중기 성장 경로를 판단하는 핵심 변수다. 반면 3년 연속 영업적자, 2년 연속 음수 영업현금흐름, 부채비율 급등은 재무 체력 측면의 명확한 제약이며, 연간 흑자 전환을 안정적으로 입증하기 전까지 이 불확실성은 지속된다. 소형주 특성상 유동성이 제한적이고 개별 수주 이벤트에 대한 주가 민감도가 높아 단기 변동성이 크다는 점도 감안해야 한다. 투자자 관점에서는 상업적 전환 증거(분기 흑자 지속 여부, AX 라이선스 성장률, PoC 전환율)와 재무 안전성(CFO 회복, 자기자본 방어)을 함께 추적하는 것이 적절한 분석 프레임이다.",
-   "en": "Plateer is in the midst of a strategic transformation from an e-commerce SI firm to an agentic AI platform company. The 2025 revenue recovery and the Q4 2025 quarterly operating profit turnaround provide early evidence that this repositioning is beginning to generate tangible results. The pace of XGEN reference expansion, successful PoC-to-contract conversion beyond the Lotte Home Shopping and Jeju Bank anchors, and early commercial wins from the Japan subsidiary are the key variables for assessing the medium-term growth trajectory. On the other side of the ledger, three consecutive years of operating losses, two consecutive years of negative operating cash flow, and a rapidly rising debt ratio represent clear constraints on financial resilience — an uncertainty that will persist until full-year profitability is convincingly and consistently demonstrated. The company's micro-cap characteristics imply limited trading liquidity and heightened price sensitivity to individual contract announcements, resulting in elevated near-term volatility. The appropriate analytical framework for investors following this name is to track both the commercial inflection indicators — sustained quarterly profitability, AX license revenue growth rate, and PoC conversion ratio — alongside balance sheet safeguards including operating cash flow recovery and equity preservation, treating both dimensions as equally important inputs to the investment thesis."
+   "ko": "플래티어는 2025년 매출 반등과 2025년 4분기·2026년 2분기 두 차례 분기 영업흑자 전환으로 실적 개선 신호를 보이고 있으나, 연간 기준으로는 4년째 적자가 이어지고 있다. 핵심 사업인 이커머스 플랫폼 구축·운영은 대형 유통·제조사 레퍼런스를 바탕으로 안정적인 지위를 유지하고 있고, 신사업인 에이전틱 AI 플랫폼 엑스젠은 유통을 넘어 금융권(제주은행, iM캐피탈)으로 레퍼런스를 넓히며 성장 축을 다변화하고 있다. 2026년 상반기 신규 수주가 상반기 매출의 1.25배에 달하고 하반기 초 신세계아이앤씨 계약까지 더해지며 수주 모멘텀은 유지되고 있는 것으로 보인다. 다만 프로젝트성 매출 특유의 분기별 기복, AI 솔루션 개발 투자에 따른 수익성 압박, 그리고 고규제 산업 진입에 따른 긴 의사결정 주기는 이어질 가능성이 있는 변수다. 결과적으로 이 회사에 대한 판단은 분기 흑자 전환이 연간 단위의 지속적인 이익 개선으로 이어지는지, 그리고 엑스젠의 레퍼런스 확대가 실제 매출 기여로 전환되는 속도에 달려 있다.",
+   "en": "Plateer is showing signs of earnings improvement with its 2025 revenue rebound and two quarters of operating profit in Q4 2025 and Q2 2026, but on an annual basis it has remained in the red for four consecutive years. Its core e-commerce platform build and operations business maintains a stable position built on references from large retail and manufacturing clients, while its new agentic AI platform business, XGEN, is diversifying its growth base by expanding references beyond retail into the financial sector with Jeju Bank and iM Capital. Order momentum appears to have been sustained, with new orders in the first half of 2026 reaching 1.25 times first-half revenue and a further contract with Shinsegae I&C added early in the second half. Still, variables likely to persist include the quarter-to-quarter volatility inherent in project-based revenue, profitability pressure from AI solution development investment, and the long decision cycles associated with entry into highly regulated industries. Ultimately, an assessment of the company hinges on whether the return to quarterly profit evolves into sustained annual profit improvement, and on how quickly XGEN's expanding references convert into actual revenue contribution."
   }
  },
  "sources": [
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A367000&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
+  "https://simplywall.st/stocks/us/software/nasdaq-pltr/palantir-technologies/news/palantir-technologies-pltr-is-up-398-after-raising-2026-guid",
+  "https://www.nspna.com/news/?mode=view&newsid=824393",
   "https://www.valueline.co.kr/finance/balancesheet/367000",
-  "https://m.irgo.co.kr/IR-COMP/367000",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A367000",
-  "https://valueline.co.kr/finance/mri/367000",
   "https://markets.hankyung.com/stock/367000/financial-summary",
-  "https://www.kdpress.co.kr/news/articleView.html?idxno=205979",
-  "https://www.venturesquare.net/1041050",
-  "https://www.cio.com/article/3538273/%ED%94%8C%EB%9E%98%ED%8B%B0%EC%96%B4-%EC%83%81%EB%B0%98%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C-%EC%86%94%EB%A3%A8%EC%85%98-%EB%A7%A4%EC%B6%9C-%EC%B5%9C%EB%8C%80-%EA%B8%B0%EB%A1%9D.html",
-  "https://www.jobkorea.co.kr/super/plateer",
-  "https://www.newspim.com/news/view/20260515001051",
-  "https://hj.cocoissue.com/61",
-  "https://zdnet.co.kr/view/?no=20240816085320",
-  "https://www.thebell.co.kr/front/newsview.asp?key=202408191453459600104345",
-  "https://www.catch.co.kr/Comp/CompSummary/495146",
-  "https://www.newspim.com/news/view/20240816000722",
-  "https://www.plateer.com/en/",
-  "https://www.plateer.com/ko/business/ecommerce"
+  "https://www.google.com/finance/beta/quote/367000:KOSDAQ?hl=ko",
+  "https://kr.investing.com/equities/plateer-co-earnings",
+  "https://judal.co.kr/?shareToken=qck5S1HmOb05YmdB&view=stockAI",
+  "https://www.plateer.com/ko/board/news/view/%ED%94%8C%EB%9E%98%ED%8B%B0%EC%96%B4-%EC%B9%B4%EB%93%9C%EC%82%AC-%EC%BB%A4%EB%A8%B8%EC%8A%A4-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EA%B3%A0%EB%8F%84%ED%99%94-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%88%98%EC%A3%BC",
+  "https://zdnet.co.kr/view/?no=20250410104013",
+  "https://www.plateer.com/en",
+  "https://www.newspim.com/news/view/20240325000052",
+  "https://www.plateer.com/ko/business/ecommerce",
+  "https://www.plateer.com/ko/business/areas_cm",
+  "https://thevc.kr/plateer",
+  "https://www.i2max.co.kr/s/i2e-resource/a5GGB000000wjvM2AQ/ecbp00218?language=ko",
+  "https://www.ajunews.com/view/20220317212933650",
+  "https://www.nspna.com/report/?mode=view&newsid=819207"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "367000",
  "name": "플래티어",
  "name_en": "Plateer Co., Ltd.",
@@ -233,11 +223,11 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 05:32",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 21:32",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -338,25 +328,29 @@
    }
   ],
   "valuation": {
-   "price": 3395,
-   "mcap": 0.0285,
+   "price": 3545,
+   "mcap": 0.0297,
    "shares": 8388207,
    "total_shares": 8388207,
    "wavg_shares": 8097314,
    "per": null,
    "eps": -208,
-   "pbr": 0.8692,
+   "pbr": 0.9076,
    "bps": 3906,
    "roe_ttm": -5.2,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": -1682179869,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.85,
+   "eps_src": "공시",
+   "pbr_krx": 0.89,
    "bps_krx": 4005.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
  }
 }
