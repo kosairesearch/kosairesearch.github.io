@@ -1,230 +1,230 @@
 {
  "title": {
-  "ko": "외형 급성장 vs. 수익성 회복, 흑자전환 속도가 관건",
-  "en": "Rapid Revenue Surge vs. Persistent Losses: Profitability Trajectory Is Key"
+  "ko": "AX 콘텐츠로 외형 확장, 수익성은 여전한 과제",
+  "en": "Mobility AX Content Drives Scale, Profitability Still a Challenge"
  },
  "lead": {
-  "ko": "카랑 인수로 2025년 연결 매출이 전년 대비 2.3배 급증했으나 영업손실도 확대되면서, 2026년 연간 흑자전환 달성 여부가 시장의 핵심 관전 포인트로 부상했다.",
-  "en": "Karang's consolidation drove 2025 consolidated revenue up 2.3x year-over-year, but operating losses also widened, making full-year profitability in 2026 the most critical near-term milestone to watch."
+  "ko": "오비고는 자회사 카랑 편입과 픽(Pick) 시리즈 콘텐츠 확장에 힘입어 2025년 매출을 전년 대비 두 배 이상 키웠지만, 영업이익은 2022년 이후 4년 연속 적자에서 벗어나지 못하고 있다.",
+  "en": "Obigo more than doubled its 2025 revenue year over year on the back of the Karang subsidiary consolidation and expansion of its Pick-series content platforms, yet operating profit has remained in the red for four consecutive years since 2022."
  },
  "keypoints": [
   {
-   "ko": "카랑 인수로 2025년 연결 매출 335억 원(+132.7% YoY) 달성 — 코스닥 상장(2021년) 이후 처음으로 연 매출 300억 원 돌파",
-   "en": "Karang consolidation drove 2025 revenue to KRW 33.5bn (+132.7% YoY), marking the first time Obigo has exceeded KRW 30bn in annual revenue since its 2021 KOSDAQ listing"
+   "ko": "2025년 연결 매출 335억원으로 2024년 144억원 대비 대폭 증가했으나 영업손실 37.2억원으로 적자 지속",
+   "en": "2025 consolidated revenue rose sharply to KRW 33.5bn from KRW 14.4bn in 2024, but the company still posted an operating loss of KRW 3.72bn"
   },
   {
-   "ko": "국내 커넥티드카 SDV 솔루션 시장 점유율 약 50% 선점, 현대차그룹 글로벌 공급 개시·LG유플러스 계약 등 핵심 고객 기반 심화",
-   "en": "~50% domestic SDV solution market share; deepening key customer relationships including Hyundai Motor Group global infotainment supply and an LG U+ next-generation connected car service contract"
+   "ko": "최근 네 개 분기(2025년 3분기~2026년 2분기) 지배주주순이익은 분기별로 흑자와 적자를 반복하며 합산 기준 여전히 적자",
+   "en": "Net income attributable to owners over the most recent four quarters (Q3 2025-Q2 2026) alternated between profit and loss and remained negative in aggregate"
   },
   {
-   "ko": "2025년 3분기 지배주주 순이익이 약 1,800만 원 소폭 흑자를 기록했으나, 4분기·2026년 1분기 재차 손실 전환 — 이익 안정화 경로가 불규칙적",
-   "en": "A briefly positive parent net profit of ~KRW 18mn in Q3 2025 gave way to renewed losses in Q4 2025 and Q1 2026, underscoring an uneven path to sustained profitability"
+   "ko": "현대차그룹 '플레오스 커넥트', 르노코리아 '필랑트' 등에 픽클·픽조이 콘텐츠 공급을 확대하며 완성차 채택처를 넓히는 중",
+   "en": "The company is expanding OEM adoption of its Pickle and PickJoy content services, including Hyundai Motor Group's Pleos Connect and Renault Korea's Filante"
   },
   {
-   "ko": "완성차 OEM의 독자 OS 전략 강화 및 중국 IT 기업의 SDV 시장 진입이라는 구조적 경쟁 압력 상존",
-   "en": "Structural competitive pressures persist: major OEMs are accelerating in-house OS development while Chinese tech-driven automakers expand their SDV footprint globally"
+   "ko": "2026년 7월 과기정통부·KISA 주관 자동차 공급망 보안 국책과제 주관기업으로 선정되며 신사업 영역 확보",
+   "en": "In July 2026 the company was selected as the lead firm for a government-backed automotive supply-chain security project run by the Ministry of Science and ICT and KISA"
   },
   {
-   "ko": "2026년 상반기 흑자전환 가이던스 제시 불구, 1분기 영업손실 약 -15억 원 지속 — 하반기 카랑 성수기 회복과 SDV 콘텐츠 수익화가 연간 목표의 핵심 변수",
-   "en": "Despite H1 2026 profitability guidance, Q1 2026 recorded a ~KRW 1.5bn operating loss; H2 seasonal recovery in Karang's vehicle services and SDV content monetization are critical to meeting the annual target"
+   "ko": "배당은 지급하지 않고 있으며, 주가는 순자산가치 대비 프리미엄이 반영된 구간에서 거래되고 있음",
+   "en": "The company pays no dividend, and shares trade at a premium relative to book value"
   }
  ],
  "business": {
-  "ko": "오비고는 2003년 경기 성남 판교에서 설립되어 2021년 7월 코스닥에 상장한 커넥티드카 소프트웨어 플랫폼 전문기업이다. 초기에는 스마트폰용 모바일 브라우저 개발로 출발해 2012년 세계 최초로 차량용 웹브라우저(AGB 브라우저)를 국내 완성차에 양산 상용화했다. 현재 핵심 사업은 ① 스마트카 소프트웨어 플랫폼(차량용 브라우저·앱 프레임워크·OTA 배포 툴킷·앱스토어)과 ② 스마트카 콘텐츠 서비스(PICK NOW·PICK JOY·PICKLE 등 SDV 구독형 콘텐츠)로 구성된다. 주요 고객은 현대차·기아·제네시스·르노·닛산·토요타·미쓰비시·KG모빌리티 등 국내외 완성차와 LG유플러스 등 통신사를 망라하며, 국내 커넥티드카 SDV 솔루션 점유율은 약 50%로 알려진다. 2025년 4월 차량 종합관리 기업 '카랑'을 약 70억 원에 인수해 최대주주 지위를 확보하면서 B2B(SK렌터카·티맵·쏘카 대상 기업 차량관리)와 B2C(정비 플랫폼 '카수리', 수입차 부품 '아이파츠넷')를 연결 편입했다. 이 M&A로 오비고는 순수 소프트웨어 공급사에서 '토탈 차량관리 플랫폼' 기업으로 사업 모델을 전환했다. 2025년 5월에는 AI 전담 조직 '모빌리티 AI 디비전'을 신설해 피지컬 AI·데이터 기반 예측정비·보험·쇼핑 등 고부가가치 서비스로의 확장을 본격화하고 있다. 미국 법인 Obigo USA Inc.가 종속회사로 글로벌 영업을 지원하며, 현재 임직원 수는 약 135명(2025년 3월 기준) 수준이다.",
-  "en": "Obigo was established in 2003 in Pangyo, Seongnam, and listed on KOSDAQ in July 2021. Starting as a mobile browser developer for smartphones, the company in 2012 became the world's first to commercialize an in-vehicle web browser (AGB Browser) in a production vehicle. Its current core businesses comprise (1) a Smart Car Software Platform—in-vehicle browser, app framework, OTA deployment toolkit, and app store—and (2) Smart Car Content Services, including subscription-based SDV services PICK NOW, PICK JOY, and PICKLE. Key customers span domestic and global OEMs including Hyundai, Kia, Genesis, Renault, Nissan, Toyota, Mitsubishi, and KG Mobility, as well as telecom operators such as LG U+; domestic SDV solution market share is estimated at approximately 50%. In April 2025, Obigo acquired a controlling stake (~35%) in Karang, a total vehicle management services company, for approximately KRW 7bn, consolidating B2B fleet management (serving SK Rentacar, Tmap, and Socar) and B2C automotive maintenance—the Kasuri service platform and iPartsNet for imported car parts. This M&A transformed Obigo from a pure-play software supplier into a total vehicle management platform operator. The company also established a dedicated Mobility AI Division in May 2025 to develop physical-AI-based predictive maintenance and mobility lifecycle services. Obigo USA Inc. operates as a subsidiary supporting global business development; total headcount was approximately 135 as of March 2025."
+  "ko": "오비고는 2003년 설립된 스마트카 소프트웨어 플랫폼 기업으로, 차량용 임베디드 브라우저(AGB 브라우저)와 앱 프레임워크를 핵심 기술로 보유하고 있다. 회사의 제품 수트는 애플리케이션 기획부터 차량 탑재, OTA(Over the Air) 배포까지 엔드투엔드 기술을 제공하는 구조로 구성되어 있다. 고객사로는 현대자동차그룹, KG모빌리티, 르노그룹, 닛산, 도요타, 볼보코리아, 미쓰비시, 재규어 랜드로버 등 글로벌 완성차 업체가 포함되어 있다. 최근에는 인포테인먼트 플랫폼 공급을 넘어 차량 내 콘텐츠·구독형 서비스로 사업을 확장하고 있으며, 종합 엔터테인먼트 플랫폼 '픽나우', 인카 게임 플랫폼 '픽조이', AI 오디오 플랫폼 '픽클'로 구성된 '픽(Pick) 시리즈'가 핵심 성장 축이다. 2025년에는 약 70억원을 투입해 자회사 '카랑'을 인수했으며, 이 M&A가 연결 매출 외형을 크게 확대시킨 계기가 되었다. 국내 경쟁 구도에서는 모트렉스, 유비벨록스, 인포뱅크, MDS테크 등 차량용 인포테인먼트·소프트웨어 관련 중소형주들이 유사한 테마로 묶여 거래되고 있다. 산업 전환기 특성상 완성차 업체의 자체 소프트웨어 역량 강화와 외부 플랫폼 공급업체 활용이 동시에 진행되고 있어, 오비고의 포지션은 협력과 경쟁이 혼재된 구도에 놓여 있다. 매출 구성은 기존 라이선스·개발 용역 중심에서 로열티 및 콘텐츠 구독형 매출 비중을 늘려가는 방향으로 이동하고 있는 것으로 파악된다.",
+  "en": "Founded in 2003, Obigo is a smart-car software platform company whose core technology is the AGB embedded browser and app framework for vehicles. Its product suite is designed to cover the full lifecycle of in-vehicle applications, from planning through installation and over-the-air (OTA) distribution. Its customer base includes global automakers such as Hyundai Motor Group, KG Mobility, the Renault Group, Nissan, Toyota, Volvo Korea, Mitsubishi, and Jaguar Land Rover. More recently, the company has expanded beyond infotainment platform supply into in-vehicle content and subscription-style services, with its 'Pick series'-comprising the PickNow entertainment platform, PickJoy in-car gaming platform, and Pickle AI audio platform-serving as a key growth pillar. In 2025 the company acquired a subsidiary called Karang for roughly KRW 7 billion, and this acquisition was a major driver behind the sharp increase in consolidated revenue scale. Domestically, small and mid-cap peers such as Motrex, Ubivelox, Infobank, and MDS Tech trade under similar automotive infotainment and software themes. Given the industry's transitional nature, automakers are simultaneously building in-house software capabilities while also relying on external platform vendors, placing Obigo in a position that mixes both cooperation and competition. The company's revenue mix appears to be shifting from license and development-service work toward a greater share of royalty and content-subscription revenue."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 335억 원으로 전년(144억 원) 대비 132.7% 급증했다. 회사 측은 차량관리 플랫폼(카랑 편입)과 AI 콘텐츠 플랫폼 매출 증가를 주요 원인으로 제시했고, 자회사 인수·조직 정상화 비용도 동시에 반영됐다. 영업손실은 전년 -27억 원에서 -37억 원(OPM -11.1%)으로 확대됐으며, 영업이익률 추이를 보면 2022년 -24.5% → 2023년 -3.6% → 2024년 -18.7% → 2025년 -11.1%로 개선과 악화가 반복되어 비용 구조 안정화가 여전히 과제임을 보여준다. 분기별로는 2025년 1분기 매출 37억 원(OP -3억 원) → 2분기 82억 원(OP -15억 원, 카랑 편입 초기 비용 집중) → 3분기 130억 원(OP -6억 원, 지배주주 순이익 +약 1,800만 원으로 소폭 흑자) → 4분기 86억 원(OP -13억 원, 계절적 비수기)의 흐름을 보였다. 3분기에는 매출 규모가 커지면서 손익분기점에 근접했으나 4분기에 다시 악화됐다. 2026년 1분기는 매출 105억 원(전년 동기 37억 원 대비 약 2.8배)으로 외형 성장이 두드러졌으나, 영업손실 -15억 원·지배주주 순손실 -9억 원으로 적자 기조가 이어졌다. 2025년 영업활동 현금흐름은 -12억 원으로, 전년 +6억 원 대비 악화됐다. 2025년 말 자기자본 356억 원(지배주주 기준 338억 원), 부채비율 41.5%는 카랑 편입 전(2024년 13.2%) 대비 크게 상승했으나 절대 수준은 아직 관리 가능한 범위다. 2022~2025년 4개년 연속 영업손실을 기록 중이며(2023년 순이익 +40억 원은 비영업 손익 기여), 지속 가능한 이익 기반 구축이 핵심 과제로 남아 있다.",
-  "en": "2025 consolidated revenue surged to KRW 33.5bn, up 132.7% from KRW 14.4bn in 2024, driven by Karang's consolidation and AI content platform revenue growth—both cited in the official DART disclosure—while acquisition integration and organizational normalization costs simultaneously weighed on margins. Operating losses widened from -KRW 2.7bn in 2024 to -KRW 3.7bn (OPM: -11.1%). The operating margin trend—-24.5% (2022) → -3.6% (2023) → -18.7% (2024) → -11.1% (2025)—reflects persistent oscillation rather than a consistent improvement trajectory. Quarterly progression in 2025: Q1 revenue KRW 3.7bn (OP -KRW 0.3bn) → Q2 KRW 8.2bn (OP -KRW 1.5bn, front-loaded integration costs post-Karang) → Q3 KRW 13.0bn (OP -KRW 0.6bn, parent net profit briefly positive at ~KRW 18mn) → Q4 KRW 8.6bn (OP -KRW 1.3bn, seasonal softness). In Q1 2026, revenue jumped to KRW 10.5bn (approximately 2.8x the year-ago KRW 3.7bn), but the operating loss of -KRW 1.5bn and parent net loss of -KRW 0.9bn continued the deficit trend. Operating cash flow for 2025 was -KRW 1.2bn, deteriorating from +KRW 0.6bn in 2024. Year-end equity stood at KRW 35.6bn (parent: KRW 33.8bn) and the debt-to-equity ratio rose to 41.5%, up from 13.2% in 2024 following Karang's consolidation, though absolute leverage remains manageable. Operating losses have been recorded in all four years from 2022 to 2025 (with 2023's net profit of +KRW 4.0bn attributable to non-operating items), underscoring that building a sustainable profit base remains the central challenge."
+  "ko": "오비고의 연간 매출은 2022년 120.9억원, 2023년 150.7억원, 2024년 144.2억원을 기록한 뒤 2025년 335.3억원으로 전년 대비 크게 늘었는데, 이는 자회사 카랑 편입 효과가 반영된 결과다. 다만 영업손익은 2022년 -29.7억원, 2023년 -5.4억원, 2024년 -26.9억원, 2025년 -37.2억원으로 4년 연속 적자를 이어갔다. 영업이익률은 2022년 -24.5%에서 2023년 -3.6%로 개선됐다가 2024년 -18.7%, 2025년 -11.1%로 등락하는 모습을 보였는데, 매출 규모가 커진 2025년에 적자율 자체는 완화된 점이 눈에 띈다. 순이익 측면에서는 2023년 지배주주순이익이 3.99억원으로 유일하게 흑자를 기록했고, 2022년 -26.1억원, 2024년 -16.7억원, 2025년 -19.4억원(지배주주 기준)으로 대체로 적자였다. 분기별로 보면 2025년 2분기 매출 82.4억원·영업손실 14.5억원·지배주주순손실 11.1억원에서 3분기에는 매출이 129.5억원으로 뛰면서 지배주주순이익이 소폭(1,787만원) 흑자로 전환됐다. 이후 4분기에는 매출 86.3억원·영업손실 12.9억원·순손실 7.1억원으로 다시 적자폭이 커졌고, 2026년 1분기에는 매출 105.4억원에 영업손실 14.8억원·순손실 9.0억원을 기록했다. 2026년 2분기에는 매출 110.0억원, 영업손실 11.5억원을 냈음에도 지배주주순이익은 7.3억원 흑자로 전환됐는데, 이는 영업손실이 지속되는 가운데 영업외 손익 요인이 순이익 방향을 좌우하고 있음을 시사한다. 현금흐름 측면에서는 영업활동현금흐름이 2022년 -11.6억원, 2023년 17.8억원, 2024년 5.9억원, 2025년 -12.4억원으로 부호가 자주 바뀌었고, 부채비율은 2022~2024년 11~13% 수준에서 2025년 41.5%로 뛰어올라 재무구조 변화가 관찰된다.",
+  "en": "Obigo's annual revenue was KRW 12.09 billion in 2022, KRW 15.07 billion in 2023, and KRW 14.42 billion in 2024, before jumping sharply to KRW 33.53 billion in 2025, largely reflecting the consolidation of subsidiary Karang. Operating profit, however, remained negative for four straight years: -KRW 2.97 billion in 2022, -KRW 0.54 billion in 2023, -KRW 2.69 billion in 2024, and -KRW 3.72 billion in 2025. The operating margin improved from -24.5% in 2022 to -3.6% in 2023, then moved to -18.7% in 2024 and -11.1% in 2025-notably, the loss ratio itself narrowed in 2025 even as revenue scaled up substantially. On the bottom line, 2023 was the only year with a positive net income attributable to owners (KRW 0.40 billion), while 2022 (-KRW 2.61 billion), 2024 (-KRW 1.67 billion) and 2025 (-KRW 1.94 billion) were all in loss. Looking quarter by quarter, revenue of KRW 8.24 billion with an operating loss of KRW 1.45 billion and an owners' net loss of KRW 1.11 billion in Q2 2025 gave way to a jump to KRW 12.95 billion in revenue in Q3 2025, during which owners' net income turned slightly positive (KRW 17.9 million). The loss then widened again in Q4 2025 with revenue of KRW 8.63 billion, an operating loss of KRW 1.29 billion, and a net loss of KRW 0.71 billion, followed by Q1 2026 revenue of KRW 10.54 billion with an operating loss of KRW 1.48 billion and a net loss of KRW 0.90 billion. In Q2 2026, revenue reached KRW 11.0 billion and the operating loss was KRW 1.15 billion, yet owners' net income swung to a positive KRW 0.73 billion, suggesting that non-operating items-rather than the still-negative operating result-are driving the direction of net income. On the cash-flow side, operating cash flow flipped signs frequently (-KRW 1.16 billion in 2022, +KRW 1.78 billion in 2023, +KRW 0.59 billion in 2024, -KRW 1.24 billion in 2025), while the debt ratio jumped from roughly 11-13% in 2022-2024 to 41.5% in 2025, indicating a notable shift in the balance-sheet structure."
  },
  "industry": {
-  "ko": "글로벌 SDV(소프트웨어 정의 차량) 시장은 2026년 약 4,700억 달러에서 2036년 약 1조 1,900억 달러로 성장이 전망되며, 소프트웨어 개발 부문이 SDV 생태계에서 가장 빠른 성장세를 나타내는 분야로 평가된다. OTA 업데이트, 구독형 콘텐츠, FoD(Feature on Demand) 서비스가 주요 반복 수익 모델로 자리잡아가고 있으며, 커넥티드카 인포테인먼트·연결성 시스템이 완성차 제조사의 새로운 수익화 레이어가 되고 있다. 국내에서는 2026년 하반기 현대차가 차세대 인포테인먼트 시스템 '플레오스 커넥트' 탑재 첫 모델을 양산 출시하며 SDV 전환이 새 단계에 진입하는 반면, 르노코리아(2027년 완전 SDV 목표), KG모빌리티(미확정) 등 중소 완성차의 전환 속도는 여전히 느린 편이다. 완성차 OEM들이 독자 OS 개발에 속도를 내면서 외부 미들웨어·앱스토어 공급사의 역할 범위가 재정립되는 국면이 불가피해지고 있다. 중국에서는 BYD·샤오미 등 기술 선도 업체들이 빠른 속도와 소프트웨어 완성도로 글로벌 시장에 공세를 펼치고 있어 비중국권 차량용 소프트웨어 공급사들에게 경쟁 심화 요인으로 작용한다. 오비고는 국내 SDV 솔루션 선점 기술 기반을 보유하고 있으나, 완성차·통신사의 내재화 전략이 가속화될수록 플랫폼 의존 구조의 변화를 면밀히 점검해야 할 시점이다. 차량 보안, V2X 통신, AI 개인화 서비스 등 신규 기술 영역에서의 선제적 역량 확보가 중장기 경쟁력의 핵심 분기점이 될 것이다.",
-  "en": "The global SDV (Software-Defined Vehicle) market is projected to expand from approximately USD 470bn in 2026 to roughly USD 1.19tn by 2036, with software development identified as the fastest-growing segment within the SDV ecosystem. OTA software updates, subscription-based content, and Feature-on-Demand services are emerging as the primary recurring revenue vectors, with connected infotainment and connectivity systems forming a new monetization layer for OEMs. In Korea, Hyundai Motor launched its next-generation infotainment platform Pleos Connect in a first production model in H2 2026, marking a tangible step-change in domestic SDV adoption; however, smaller domestic OEMs such as Renault Korea (targeting full SDV by 2027) and KG Mobility (no concrete timeline disclosed) lag significantly. The accelerating drive by major OEMs globally—Hyundai, Mercedes-Benz, BMW, and others—to develop proprietary OS platforms is progressively redefining the addressable scope and role of third-party middleware and app store suppliers. In China, tech-native automakers and IT giants are competing on software sophistication and speed, creating headwinds for non-Chinese connected car software vendors seeking to serve Japanese and European OEM customers. Domestically, Obigo holds a first-mover technology position in the connected car software platform space, but growing in-house development ambitions from OEM and telecom customers require close monitoring. Emerging battlegrounds in vehicle cybersecurity, V2X connectivity, and AI-driven personalization will increasingly determine mid-to-long-term competitive standing."
+  "ko": "자동차 산업은 소프트웨어 중심 차량(SDV) 전환이 핵심 화두로 자리잡으며, 인포테인먼트·커넥티드카·차량 내 콘텐츠가 새로운 수익원으로 주목받고 있다. 오비고는 이 흐름 속에서 인포테인먼트 플랫폼 공급자에서 콘텐츠·구독형 서비스 사업자로 영역을 확장하고 있으며, 픽조이(인카 게임), 픽클(오디오) 등을 통해 완성차 업체와의 접점을 늘려가고 있다. 최근 현대자동차그룹의 차세대 인포테인먼트 시스템 '플레오스 커넥트'에 픽클을 탑재하고, 플레오스 커넥트뿐만 아니라 르노, 볼보, 폴스타 등 적용 차종을 확대하며 픽클 서비스의 공급 범위를 지속 확대해 나갈 계획이라고 밝힌 점은 이러한 전략을 뒷받침한다. 르노코리아 신차 '필랑트'에도 차량용 AI 게임 콘텐츠 서비스 '픽조이(PickJoy)'를 공급하는 등 협력 레퍼런스를 축적하고 있다. 국내 경쟁 환경에서는 모트렉스와 유비벨록스, 인포뱅크 등 차량용 인포테인먼트 및 소프트웨어 관련 중소형주는 전반적으로 차익 실현 압력이 나타나고 있다는 시장 평가가 있어, 업종 전반이 테마성 수급에 민감하게 반응하는 국면임을 보여준다. 한 자본시장 매체는 오비고를 SDV 서비스 플랫폼 분야의 국내 선구자로 꼽으며 이미 시장 점유율이 50%를 선점하고 있다고 평가했으나, 이는 특정 매체의 해석이라는 점을 감안할 필요가 있다. 한편 2025년 말에는 삼성전자가 하만을 통해 독일 ZF의 ADAS 사업을 인수했다는 소식에 오비고 주가가 상한가를 치는 등, SDV 생태계 관련 이슈에 따라 테마성 수급이 유입되는 모습도 관찰됐다.",
+  "en": "The automotive industry's shift toward software-defined vehicles (SDV) has put infotainment, connected-car services, and in-vehicle content at the center of new revenue opportunities. Obigo is expanding within this trend from an infotainment platform supplier toward a content and subscription-service provider, broadening its OEM touchpoints through PickJoy (in-car gaming) and Pickle (audio). The company recently added Pickle to Hyundai Motor Group's next-generation infotainment system Pleos Connect, and stated its plan to keep expanding Pickle's coverage beyond Pleos Connect to models from Renault, Volvo, and Polestar, underscoring this strategy. It has also built up partnership references by supplying the PickJoy in-car AI gaming content service to Renault Korea's new Filante model. In the domestic competitive landscape, market commentary notes that small and mid-cap automotive infotainment and software names such as Motrex, Ubivelox, and Infobank have broadly faced profit-taking pressure, indicating that the sector as a whole remains sensitive to thematic flows. One capital-markets outlet described Obigo as a domestic pioneer in the SDV service-platform space that has already captured roughly 50% market share, though this reflects a single outlet's interpretation rather than an independently verified figure. Separately, at the end of 2025, Obigo shares hit the daily upper limit amid news that Samsung Electronics, through Harman, had acquired the ADAS business of Germany's ZF, illustrating how SDV-ecosystem headlines can drive thematic trading in the stock."
  },
  "outlook": {
-  "ko": "회사는 2026년 상반기 연결 기준 영업 흑자전환이 가능하다는 입장을 공개적으로 밝혔으나, 2026년 1분기 영업손실이 -15억 원을 기록하면서 상반기 목표 달성을 위해서는 2분기의 뚜렷한 실적 반등이 필요한 상황이다. 2025년 공시 가이던스(연결 매출 358억 원)를 소폭 하회한 335억 원으로 한 해를 마무리한 만큼, 2026년 목표 신뢰도 역시 하반기 실적 달성에 달려 있다. 2025년 1월 CES 2025에서 현대모비스와 공동 공개한 PICK NOW·PICK JOY 서비스의 실질적인 가입자 수·구독 수익 공개 시점이 수익성 전환의 주요 촉매가 될 것이다. 2025년 4월 현대차그룹 글로벌향 인포테인먼트 솔루션 공급을 개시해 해외 매출 기반이 확대됐으며, LG유플러스 차세대 커넥티드카 서비스 개발 계약(2024년 12월), HL만도 SDV 플랫폼 구축 MOU(2024년 10월) 등을 통해 파트너십 생태계가 지속 확장 중이다. 카랑의 차량 정비 빅데이터와 오비고 AI 플랫폼 결합으로 예측정비·사용기반 보험(UBI)·중고차 서비스 등 고부가가치 영역으로 확장하는 중기 시나리오는 현재 검증 단계에 있으며, 단기 매출 기여는 제한적일 가능성이 크다. 2025년 5월 신설된 '모빌리티 AI 디비전'은 AI 기반 서비스 상용화를 위한 조직적 토대를 마련하는 작업이나, 실질적 수익화까지의 시간 소요를 감안해야 한다.",
-  "en": "The company has publicly guided for operating profitability on a consolidated basis in H1 2026, but Q1 2026 delivered an operating loss of -KRW 1.5bn, making a strong Q2 2026 rebound a necessary condition to achieve that target. With full-year 2025 revenue of KRW 33.5bn coming in slightly below the publicly guided ~KRW 35.8bn, the credibility of 2026 annual targets is similarly dependent on H2 execution. The commercial traction of PICK NOW and PICK JOY—SDV content subscription services co-unveiled with Hyundai Mobis at CES 2025 in January 2025—will be a pivotal catalyst; concrete subscriber numbers and recurring content revenue would signal meaningful progress in monetization. Supply of Hyundai Motor Group's global infotainment solution commenced in April 2025, broadening the international revenue base, while the LG U+ next-generation connected car service development contract (December 2024) and the HL Mando SDV service platform MOU (October 2024) continue to deepen Obigo's partner ecosystem. The medium-term scenario of combining Karang's vehicle maintenance big data with Obigo's AI platform to deliver predictive maintenance, usage-based insurance, and used-car services remains in a validation phase, with near-term revenue contribution likely limited. The Mobility AI Division established in May 2025 provides the organizational infrastructure for AI service commercialization, though meaningful revenue impact will require additional time."
+  "ko": "회사는 2025년 초 연결 기준 연매출 358억원 규모의 가이던스를 시장에 공시한 바 있으며, 2025년 연결 연매출이 358억원 수준이 될 것이라고 못 박았다. 실제 확정된 2025년 매출은 335.3억원으로 가이던스에는 소폭 못 미쳤으나, 2024년 144.2억원 대비로는 두 배 이상 늘어난 수치다. 카랑 자회사와 관련해서는 아직 흑자 전환을 이루지 못했지만 누적 매출을 늘리며 손실 규모를 줄여가고 있다는 보도가 있었고, 경영진은 해당 자회사의 연간 흑자 전환이 유력하다고 보고 있다는 언급도 나온 바 있다. 신사업 측면에서는 2026년 7월 과학기술정보통신부와 한국인터넷진흥원이 주관하는 '2026년 공급망 보안 모델 구축 지원사업' 자동차 분야 주관기업으로 최종 선정되어 보안기업 엠시큐어와 컨소시엄을 꾸려 관련 과제를 수행하고 있으며, 이 과제를 통해 글로벌 출시를 앞둔 차량용 AI 콘텐츠 플랫폼 '픽시리즈'의 보안성 검증을 마치고 미국·유럽의 수출 기술 장벽에 대응하겠다는 구상을 밝혔다. 콘텐츠 플랫폼 확장 측면에서는 픽클의 르노·볼보·폴스타 확대 계획과 픽조이의 완성차 추가 탑재가 향후 확인해야 할 실행 지표다. 전시 활동으로는 오토 차이나 2026 참가를 통해 글로벌 완성차 관계자를 대상으로 픽시리즈를 시연한 사례도 있어, 해외 완성차 채택 확대 시도가 지속되고 있는 것으로 보인다.",
+  "en": "Early in 2025 the company disclosed guidance for consolidated annual revenue, having stated that its 2025 consolidated revenue would reach roughly KRW 35.8 billion. Actual confirmed 2025 revenue came in at KRW 33.53 billion, slightly below that guidance but still more than double the KRW 14.42 billion recorded in 2024. Regarding the Karang subsidiary, reports noted that it had not yet turned profitable but was reducing its loss while growing cumulative revenue, and management was quoted as viewing an annual profit turnaround for the subsidiary as likely. On the new-business front, in July 2026 the company was selected as the lead firm in the automotive category of the '2026 Supply Chain Security Model Build Support Project' run by the Ministry of Science and ICT and the Korea Internet & Security Agency, forming a consortium with security firm M-Secure to carry out the project, through which it stated a plan to complete security verification of its globally launching Pick-series AI content platform and address export technical barriers such as SBOM requirements in the US and Europe. On the content-platform front, expansion plans for Pickle across Renault, Volvo, and Polestar, along with additional OEM adoption of PickJoy, are execution milestones to track going forward. The company also demonstrated its Pick series to global OEM representatives at the Auto China 2026 exhibition, suggesting continued efforts to broaden overseas automaker adoption."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당 순자산(BPS 2,676원)을 웃도는 구간에서 거래되고 있어, 시장이 미래 플랫폼 사업 가치를 일부 선반영하고 있는 것으로 볼 수 있다. 회사가 수년간 영업손실을 지속하고 있어 이익 기준 밸류에이션 지표는 산출 불가 구간이며, 헤드라인 EPS 역시 -214원의 손실 상태여서 주당 순자산 배수가 현재 주가 수준을 평가하는 가장 현실적인 잣대로 활용된다. 배당은 실시하지 않아 배당수익률은 업종 평균을 크게 하회한다. 순자산 대비 주가가 프리미엄 구간에 있다는 사실은 시장이 중기 흑자전환과 SDV 플랫폼 성장을 상당 부분 기대가격에 반영한 것을 의미하는 동시에, 이익 가시화가 지연될 경우 밸류에이션을 지지할 추가 모멘텀이 필요한 구조임을 뜻한다. 향후 분기 실적에서 EPS 적자 폭이 줄어드는 궤적이 구체화되는지 여부가 시장의 재평가 방향을 결정하는 핵심 변수가 될 것이다.",
-  "en": "The stock is trading at a premium to book value per share (BPS: KRW 2,676), suggesting the market has already incorporated a meaningful probability of future platform business value realization. With the company in multi-year operating loss territory, earnings-based valuation metrics are not calculable; the headline EPS stands at -KRW 214, firmly in loss territory, making the price-to-book ratio the most practical reference for assessing current valuation levels. The company has paid no dividend, leaving the dividend yield well below sector norms. A premium-to-book valuation implies the market is pricing in mid-term profitability and SDV platform growth to a significant degree, while simultaneously signaling that if profit visibility is delayed, additional catalysts—from Karang revenue acceleration, SDV content subscriptions, or new OEM wins—will be required to sustain current levels. The pace and trajectory of EPS loss reduction in upcoming quarterly disclosures will be the critical variable determining the direction of any market re-rating."
+  "ko": "오비고는 최근 네 개 분기 기준으로도 지배주주순이익이 적자 구간에 머물러 있어, 통상적인 방식의 주가수익비율(PER) 산출이 의미를 갖기 어려운 상태다. 반면 주가순자산비율(PBR)은 1배를 넘어서는 수준으로, 순자산가치 대비 프리미엄이 반영된 구간에서 거래되고 있다. 회사는 현재 배당을 지급하지 않고 있어 배당 관련 지표는 사실상 공백 상태다. 다년간 흐름을 보면 2023년 한 해를 제외하고 순이익이 적자를 기록해 왔으며, 최근 매출 외형이 커진 2025년에도 적자에서 흑자로의 완전한 전환은 아직 이뤄지지 않은 모습이다. 이러한 실적 구조를 감안하면 현재 밸류에이션은 실적 대신 매출 성장성과 신사업(콘텐츠·보안) 기대를 반영하는 성격이 강하다고 볼 수 있다.",
+  "en": "Because net income attributable to owners has remained in loss territory even over the most recent four quarters, a conventional price-to-earnings ratio is not meaningful for Obigo at this time. By contrast, the price-to-book ratio sits above 1x, meaning shares trade at a premium to net asset value. The company currently pays no dividend, so dividend-related metrics are effectively blank. Looking across recent years, net income has been in loss in every year except 2023, and even in 2025, when revenue scale expanded significantly, a full turn from loss to sustained profit has not yet occurred. Given this earnings structure, the current valuation appears to reflect revenue growth and expectations around new businesses such as content and security services more than realized profitability."
  },
  "bull": [
   {
    "title": {
-    "ko": "카랑 M&A 이후 매출 구조 전환과 플랫폼 비즈니스 기반 확대",
-    "en": "Post-Karang Revenue Structure Transformation and Platform Business Foundation"
+    "ko": "콘텐츠·M&A로 외형 확장",
+    "en": "Scaling Up via Content and M&A"
    },
    "body": {
-    "ko": "약 70억 원(자기자본 대비 약 20%) 투자 단 한 번으로 연결 매출 규모를 상장 이후 처음으로 300억 원대로 끌어올렸고, 2025년 3분기에는 분기 단위 지배주주 순이익이 소폭 흑자를 기록하며 규모의 경제 도달 가능성을 시사했다. B2B 기업 차량관리(SK렌터카·티맵·쏘카 등)와 B2C 정비·부품 플랫폼(카수리·아이파츠넷)은 반복 이용 수익 기반을 형성하며, 기존 수주형 소프트웨어 사업보다 매출 가시성을 높이는 구조 전환을 촉진하고 있다. 자동차 정비·부품 서비스는 차량 보유당 발생하는 반복 지출 특성이 있어 중장기적으로 안정적 매출 기반이 될 수 있다.",
-    "en": "A single M&A investment of approximately KRW 7bn (~20% of equity) elevated consolidated revenue above KRW 30bn for the first time since KOSDAQ listing, with Q3 2025 briefly delivering a positive parent net profit—a proof-of-concept for approaching breakeven at scale. B2B fleet management (serving SK Rentacar, Tmap, and Socar) and B2C maintenance and parts platforms (Kasuri, iPartsNet) introduce recurring, utilization-based revenue streams that enhance top-line visibility compared to the legacy project-based software model. Auto maintenance and parts spending carries naturally recurring per-vehicle expenditure characteristics, laying the groundwork for a more stable revenue base over the medium-to-long term."
+    "ko": "카랑 편입과 픽 시리즈 콘텐츠 확대에 힘입어 2025년 매출이 2024년 대비 두 배 이상 늘었다. 매출 구성이 라이선스·개발 용역에서 로열티·콘텐츠 구독형으로 이동하고 있어, 향후 매출 안정성 제고에 기여할 수 있는 구조 변화로 볼 수 있다. 다만 이러한 확장이 이익 개선으로 얼마나 이어질지는 추가 확인이 필요하다.",
+    "en": "Revenue more than doubled in 2025 versus 2024 on the back of the Karang consolidation and Pick-series content expansion. The revenue mix is shifting from license and development-service work toward royalty and content-subscription streams, a structural change that could contribute to greater revenue stability going forward. However, how much this expansion translates into improved profitability still needs to be confirmed."
    }
   },
   {
    "title": {
-    "ko": "국내 SDV 선점 지위와 글로벌 OEM 파트너십 심화",
-    "en": "Entrenched Domestic SDV Position and Deepening Global OEM Partnerships"
+    "ko": "글로벌 OEM 채택 확대",
+    "en": "Expanding Global OEM Adoption"
    },
    "body": {
-    "ko": "국내 커넥티드카 SDV 솔루션 시장 점유율 약 50%를 보유하고 있으며, 세계 최초 차량용 웹브라우저 양산 상용화(2012년)라는 기술 이력이 진입장벽으로 기능한다. 현대차그룹 글로벌향 인포테인먼트 솔루션 공급 개시(2025년 4월), LG유플러스 차세대 서비스 개발 계약, HL만도 SDV 플랫폼 MOU 등 주요 고객·파트너와의 관계가 점층적으로 심화되고 있다. 르노·닛산·토요타·미쓰비시 등 일본계 OEM에 대한 기존 공급 이력은 글로벌 확장 시 레퍼런스 자산이 될 수 있다.",
-    "en": "With approximately 50% domestic market share in connected car SDV solutions, Obigo benefits from barriers to entry built on its distinction as the world's first company to commercialize an in-vehicle web browser in a production vehicle in 2012. Key relationships continue to deepen—supply of Hyundai Motor Group's global infotainment solution commenced in April 2025, the LG U+ next-generation connected car service contract was signed in December 2024, and an HL Mando SDV service platform MOU was concluded in October 2024. An established supply track record with Renault, Nissan, Toyota, and Mitsubishi provides reference assets that could support future global OEM customer expansion."
+    "ko": "현대차그룹의 플레오스 커넥트, 르노코리아의 필랑트 등에 콘텐츠 서비스를 잇달아 공급하며 완성차 채택 레퍼런스를 넓히고 있다. 회사는 르노, 볼보, 폴스타 등으로 픽클 공급 확대 계획도 밝혔다. 이는 향후 로열티 수취 대상 차량 기반을 넓힐 수 있는 요인이다.",
+    "en": "The company has successively supplied content services to Hyundai Motor Group's Pleos Connect and Renault Korea's Filante, broadening its OEM adoption references. It has also stated plans to expand Pickle supply to Renault, Volvo, and Polestar. This could widen the vehicle base from which the company collects royalties over time."
    }
   },
   {
    "title": {
-    "ko": "AI·콘텐츠 서비스 수익화 개시로 고수익 플랫폼 모델 전환 기회",
-    "en": "AI and Content Monetization Opens Path to High-Margin Platform Business Model"
+    "ko": "보안 국책과제로 신사업 진입",
+    "en": "Entering a New Business via a Government Security Project"
    },
    "body": {
-    "ko": "PICK NOW·PICK JOY·PICKLE 등 SDV 구독형 콘텐츠 서비스가 상용화 궤도에 진입했으며, 엔씨소프트·폴라리스오피스·독일 3SS 등 다양한 파트너와 AI 기반 차량용 서비스 개발을 진행 중이다. 카랑의 차량 정비 빅데이터와 오비고 AI 플랫폼 결합은 예측정비·UBI(사용기반 보험)·중고차 서비스로의 확장 경로를 제공하며, 이 시나리오가 현실화될 경우 단순 소프트웨어 공급사에서 모빌리티 라이프 플랫폼으로의 전환이 가능하다. 모빌리티 AI 디비전 신설은 이러한 전략 전환을 위한 조직적 인프라를 마련한 것으로 볼 수 있다.",
-    "en": "SDV subscription services—PICK NOW, PICK JOY, and PICKLE—have entered commercial rollout, supported by AI-based in-vehicle service development partnerships with companies including NCSoft, Polaris Office, and Germany-based 3SS (3 Screen Solutions). The combination of Karang's vehicle maintenance big data with Obigo's AI platform creates a potential pathway to predictive maintenance, usage-based insurance (UBI), and used-car services; if realized, this positions Obigo for a structural transformation from a software supplier to a mobility lifecycle platform. The establishment of the dedicated Mobility AI Division provides the organizational infrastructure to execute this strategic evolution."
+    "ko": "2026년 7월 자동차 공급망 보안 국책과제 주관기업으로 선정되며 기존 인포테인먼트 라이선스 사업 외의 신규 영역에 진입했다. 이는 미국·유럽의 수출 보안 규제 대응 역량 확보로 이어질 수 있어, 향후 해외 완성차 대상 수주 경쟁력 강화 요인이 될 수 있다. 다만 국책과제 성격상 상업적 매출로 곧바로 연결되지는 않을 수 있다.",
+    "en": "Being selected in July 2026 as the lead firm for a government-backed automotive supply-chain security project marks entry into a new area beyond its existing infotainment licensing business. This could help build capabilities to meet export security regulations in the US and Europe, potentially strengthening competitiveness in future OEM contract bids. That said, given the nature of government-funded projects, this may not translate directly into commercial revenue in the near term."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4개년 연속 영업손실과 현금 소모 지속",
-    "en": "Four Consecutive Years of Operating Losses and Ongoing Cash Burn"
+    "ko": "4년 연속 영업손실",
+    "en": "Four Straight Years of Operating Losses"
    },
    "body": {
-    "ko": "2022~2025년 4개년 연속 영업손실을 기록하고 있으며(2023년 순이익 +40억 원은 비영업이익 기여), 매출이 2.3배 급증한 2025년에도 영업손실이 오히려 전년 대비 확대됐다. 2025년 영업활동 현금흐름이 -12억 원으로 현금 소모 기조가 유지됐고, 2026년 1분기도 영업손실 -15억 원으로 시작했다. 회사의 연간 흑자전환 목표는 하반기 실적 반등에 과도하게 의존하는 구조로, 외부 환경(경기·완성차 판매 둔화) 악화 시 달성 여부가 불확실해진다.",
-    "en": "Operating losses have been recorded in all four years from 2022 to 2025 (with 2023's net profit of +KRW 4.0bn attributable entirely to non-operating items), and the sharp 2.3x revenue expansion in 2025 still failed to prevent a wider operating loss year-over-year. Operating cash flow was -KRW 1.2bn in 2025, and Q1 2026 opened with a -KRW 1.5bn operating loss. The full-year 2026 profitability target is heavily back-end loaded toward H2, making the annual goal susceptible to external headwinds such as macroeconomic softness or weaker-than-expected vehicle sales."
+    "ko": "2022년부터 2025년까지 매년 영업손실을 기록했으며, 매출이 크게 늘어난 2025년에도 영업손실 37.2억원을 벗어나지 못했다. 매출 성장이 곧바로 이익 개선으로 연결되지 못하고 있는 구조가 지속되고 있다.",
+    "en": "The company has posted an operating loss every year from 2022 through 2025, and even in 2025, when revenue jumped sharply, it still recorded an operating loss of KRW 3.72 billion. Revenue growth has not yet translated directly into improved profitability."
    }
   },
   {
    "title": {
-    "ko": "완성차 OEM 독자 OS 개발 가속이 플랫폼 수주 구조를 변화시킬 수 있음",
-    "en": "OEM In-House OS Acceleration May Structurally Disrupt Platform Procurement"
+    "ko": "순이익 변동성과 비영업 요인 의존",
+    "en": "Net Income Volatility Tied to Non-Operating Items"
    },
    "body": {
-    "ko": "현대차의 '플레오스 비히클 OS', 벤츠·BMW의 독자 플랫폼 전략 등 주요 OEM들의 소프트웨어 내재화 가속화는 중장기적으로 외부 미들웨어·앱스토어 공급사에 대한 의존도를 낮출 수 있는 구조적 변화다. 이는 오비고의 라이선스·로열티 기반 수익 모델에 단가 압력이나 공급 범위 축소라는 형태로 영향을 미칠 수 있다. OEM의 플랫폼 내재화가 진행될수록 오비고가 차별화를 유지하기 위해서는 콘텐츠 서비스·데이터 사업 강화로의 전략적 전환이 선제적으로 이루어져야 하며, 이 전환의 속도와 성과가 성장 모멘텀을 좌우한다.",
-    "en": "Hyundai's Pleos Vehicle OS, Mercedes-Benz, and BMW are all accelerating proprietary OS development, a structural shift that over the medium-to-long term may reduce OEM reliance on third-party middleware and app store suppliers. This poses a risk of pricing pressure or supply scope contraction for Obigo's licensing and royalty revenue model. As OEM in-house platform capabilities mature, sustaining differentiation will require Obigo to proactively accelerate its pivot toward content services and data monetization; the pace and success of this transition will ultimately determine the company's long-term growth momentum."
+    "ko": "2025년 3분기와 2026년 2분기에 지배주주순이익이 흑자로 전환됐지만, 두 분기 모두 영업손실은 지속된 상태였다. 이는 순이익 방향이 본업 개선보다 영업외 손익 변동에 좌우되고 있음을 시사하며, 실적의 예측 가능성을 낮추는 요인이다.",
+    "en": "Owners' net income turned positive in Q3 2025 and Q2 2026, yet the operating loss persisted in both quarters. This suggests that the direction of net income is being driven more by non-operating fluctuations than by core-business improvement, reducing the predictability of results."
    }
   },
   {
    "title": {
-    "ko": "소형주 특성에 따른 유동성 제약과 실적 모멘텀 의존 구조",
-    "en": "Small-Cap Liquidity Constraints and Momentum-Dependent Valuation"
+    "ko": "가이던스 소폭 미달과 재무구조 변화",
+    "en": "Slight Guidance Miss and Balance-Sheet Shift"
    },
    "body": {
-    "ko": "코스닥 내 시가총액 규모상 소형주에 해당하며, 기관·외국인 투자자의 커버리지와 유동성이 제한적이다. 수익성이 확보되지 않은 상황에서 주가는 실적 모멘텀과 테마 뉴스에 크게 의존하는 경향이 강하며, 기대를 하회하는 분기 실적 발표 시 주가의 급격한 재조정 위험이 있다. 2021년 코스닥 상장 이후 다수의 영업손실 기간이 지속되면서 주가가 고점 대비 큰 폭으로 하락한 이력은 투자자가 유의해야 할 참고 사항이다.",
-    "en": "As a small-cap stock by KOSDAQ standards, Obigo has limited institutional and foreign investor coverage, constraining trading liquidity. Without sustained profitability, the stock tends to be driven by quarterly earnings momentum and thematic news, exposing it to sharp downside rerating when results disappoint expectations. The significant share price decline from post-IPO highs over consecutive years of operating losses since the 2021 KOSDAQ listing is a relevant historical reference for investors assessing downside scenarios."
+    "ko": "2025년 실제 매출 335.3억원은 회사가 제시한 358억원 가이던스에 소폭 못 미쳤다. 동시에 부채비율이 2024년 13.2%에서 2025년 41.5%로 뛰어올라, M&A와 사업 확장 과정에서 재무구조가 빠르게 변화하고 있는 점도 확인이 필요한 부분이다.",
+    "en": "Actual 2025 revenue of KRW 33.53 billion came in slightly short of the company's own KRW 35.8 billion guidance. At the same time, the debt ratio jumped from 13.2% in 2024 to 41.5% in 2025, indicating a rapidly shifting balance-sheet structure amid M&A and business expansion that warrants continued monitoring."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "SDV 전환 속도 지연 리스크",
-    "en": "SDV Transition Pace Risk"
+    "ko": "고객·프로그램 집중 위험",
+    "en": "Customer and Program Concentration Risk"
    },
    "body": {
-    "ko": "전기차 캐즘, OEM의 SDV 개발 비용 초과, 규제 환경 변화 등이 글로벌 커넥티드카·SDV 보급 속도를 지연시킬 경우, 오비고의 플랫폼 수주·로열티 매출 성장 일정이 차질을 빚을 수 있다. 국내 완성차 각사의 SDV 전환 로드맵이 제각각(르노코리아 2027년 목표, KG모빌리티 미확정 등)이라는 점에서 전방 수요 일정 불확실성이 상존한다. 선행 투자(R&D·조직 확충)를 지속하면서 수익화 일정이 지연될 경우 현금 소모 기간이 예상보다 길어질 수 있다.",
-    "en": "If EV demand softness, OEM SDV development cost overruns, or regulatory changes slow the global rollout of connected car and SDV platforms, Obigo's platform order intake and royalty revenue growth could face delays. Divergent SDV transition timelines across OEM customers—Renault Korea targeting 2027, KG Mobility yet to announce specifics—embed inherent demand-timing uncertainty. If monetization timelines shift rightward while upfront R&D and organizational investment continues, the cash burn period could extend beyond current expectations."
+    "ko": "주요 매출은 현대차그룹, 르노그룹, KG모빌리티 등 소수 완성차 업체와의 프로그램 수주에 의존하는 구조다. 특정 차종의 판매 부진이나 프로그램 지연·축소가 발생하면 로열티·라이선스 매출에 직접적인 영향을 줄 수 있다.",
+    "en": "Revenue is concentrated among a small number of automakers such as Hyundai Motor Group, the Renault Group, and KG Mobility. Weak sales of a specific model, or delays or cutbacks in a given program, could directly affect royalty and license revenue."
    }
   },
   {
    "cat": {
-    "ko": "카랑 통합 및 재무 레버리지 리스크",
-    "en": "Karang Integration and Financial Leverage Risk"
+    "ko": "현금흐름 및 자본구조 위험",
+    "en": "Cash Flow and Capital Structure Risk"
    },
    "body": {
-    "ko": "카랑은 차량 정비·부품 유통이라는 오프라인·서비스업 특성을 보유하고 있어 소프트웨어 중심인 오비고 본체와 운영 방식이 상이하다. 통합 비용 초과나 시너지 지연이 현실화될 경우 연결 손익에 추가적인 부담이 생길 수 있다. 부채비율이 카랑 편입 이후 41.5%로 높아진 상황에서, 향후 추가 투자 소요가 발생할 경우 외부 자금 조달 가능성도 배제하기 어렵다.",
-    "en": "Karang operates auto maintenance and parts distribution with operational characteristics that differ substantially from Obigo's software-centric model; integration cost overruns or synergy delays could add incremental drag to consolidated earnings. With the debt-to-equity ratio rising to 41.5% post-Karang consolidation, any additional capital expenditure requirements could necessitate external financing, which would introduce dilution risk for existing shareholders."
+    "ko": "영업활동현금흐름이 2022년과 2025년에 마이너스를 기록하며 손익과 현금 흐름 간 괴리가 반복적으로 나타났다. 2025년 부채비율이 전년 대비 크게 상승한 점도 함께 고려할 필요가 있다.",
+    "en": "Operating cash flow was negative in both 2022 and 2025, showing a recurring gap between reported earnings and cash generation. The sharp year-over-year rise in the 2025 debt ratio is another factor worth monitoring."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중·글로벌 경쟁 심화 리스크",
-    "en": "Customer Concentration and Global Competitive Intensification Risk"
+    "ko": "경쟁 및 기술 대체 위험",
+    "en": "Competitive and Technology Substitution Risk"
    },
    "body": {
-    "ko": "현대차그룹 등 소수 핵심 고객에 대한 매출 집중도가 높아, 계약 조건 변경·갱신 실패·단가 인하 협상이 발생할 경우 수익에 직격탄이 될 수 있다. 중국 IT 기업들(BYD·샤오미 등)이 소프트웨어 완성도와 가격 경쟁력을 앞세워 일본·유럽계 OEM 시장에 접근하는 움직임은 오비고의 해외 고객 기반을 잠식할 잠재적 위협이다. 국내에서도 신규 커넥티드카 소프트웨어 스타트업과 통신사의 자체 플랫폼 개발이 경쟁 환경을 복잡하게 만들고 있다.",
-    "en": "High revenue concentration in a small number of key customers—principally Hyundai Motor Group—means contract renegotiations, non-renewals, or pricing concessions could materially impact earnings. The aggressive push by Chinese tech-native automakers (BYD, Xiaomi, and others) into Japanese and European OEM supply chains with competitive software and aggressive pricing represents a growing threat to Obigo's international customer base. Domestically, new connected car software startups and telecom operators building proprietary platforms are adding further complexity to the competitive landscape."
+    "ko": "완성차 업체들이 자체 소프트웨어 역량을 강화하거나 안드로이드 오토모티브 OS와 같은 표준 플랫폼을 채택할 경우, 오비고와 같은 외부 플랫폼 공급업체에 대한 의존도가 낮아질 가능성이 있다. 국내 동종 업종 중소형주들도 유사한 경쟁·수급 압력에 노출되어 있다.",
+    "en": "If automakers strengthen in-house software capabilities or adopt standardized platforms such as Android Automotive OS, reliance on external platform vendors like Obigo could diminish. Domestic small and mid-cap peers in the same sector face similar competitive and trading pressures."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월",
-    "en": "July–August 2026"
+    "ko": "2026년 11월경",
+    "en": "Around November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표: 상반기 연결 영업 흑자전환 달성 여부 확인. 회사 가이던스 대비 실제 실적의 달성률이 단기 주가 방향성을 결정할 핵심 분기점.",
-    "en": "Q2 2026 earnings release: the most critical near-term binary event—confirmation of whether H1 2026 consolidated operating profitability guidance was achieved, which will be the decisive factor for near-term share price direction."
+    "ko": "2026년 3분기 분기보고서 공시를 통해 매출 성장 지속 여부와 영업손실 축소 여부를 확인해야 한다.",
+    "en": "The Q3 2026 quarterly report disclosure should be checked to see whether revenue growth continued and whether the operating loss narrowed."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 수시",
-    "en": "H2 2026 (as disclosed)"
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "PICK NOW·PICK JOY 등 SDV 콘텐츠 서비스 가입자 수 및 구독 매출 공개 여부: 소프트웨어 라이선스에서 반복 수익 모델로의 전환 속도를 가늠하는 선행 지표.",
-    "en": "Disclosure (if any) of subscriber counts and subscription revenue for PICK NOW and PICK JOY SDV content services; a leading indicator of the pace of transition from software licensing to a recurring revenue model."
+    "ko": "자동차 공급망 보안 국책과제(2026년 7월 선정)의 진행 성과와 픽시리즈 보안성 검증 완료 여부를 확인할 필요가 있다.",
+    "en": "Progress on the automotive supply-chain security project (selected in July 2026) and completion of security verification for the Pick series should be checked."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 상반기",
-    "en": "H2 2026–H1 2027"
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "현대차 '플레오스 커넥트' 탑재 차량 양산 확대에 따른 오비고 인포테인먼트 솔루션 로열티 매출 기여 규모 확인: 현대차그룹 SDV 전환 속도가 핵심 매출 성장률에 직접 연동됨.",
-    "en": "Track Obigo's royalty revenue contribution following broader Hyundai Pleos Connect vehicle production ramp; the pace of Hyundai Motor Group's global SDV transition is directly correlated with Obigo's core revenue growth rate."
+    "ko": "픽클·픽조이의 르노, 볼보, 폴스타 등 추가 완성차 탑재 계약 발표 여부를 모니터링해야 한다.",
+    "en": "Announcements regarding additional OEM adoption of Pickle and PickJoy across Renault, Volvo, and Polestar should be monitored."
    }
   },
   {
    "when": {
-    "ko": "2027년 2~3월 (FY2026 연간 공시)",
-    "en": "Feb–Mar 2027 (FY2026 Annual Disclosure)"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "연결 연간 영업이익·순이익 흑자 달성 여부 및 카랑 부문 수익성 확인. 부채비율 추이도 함께 점검해 카랑 통합 비용 소화 이후 재무 건전성 유지 여부를 판단.",
-    "en": "Verification of full-year consolidated operating and net profit achievement, Karang segment profitability contribution, and the debt-to-equity ratio trend to assess financial health after integration costs have fully cycled through."
+    "ko": "2026년 연간 실적 공시를 통해 자회사 카랑의 연간 흑자 전환 여부와 연결 매출 가이던스 달성 여부를 확인해야 한다.",
+    "en": "The FY2026 annual results disclosure should be checked to see whether the Karang subsidiary achieved an annual profit turnaround and whether consolidated revenue guidance was met."
    }
   },
   {
    "when": {
-    "ko": "수시 (DART 공시 모니터링)",
-    "en": "Rolling (DART Disclosure Monitoring)"
+    "ko": "지속 모니터링",
+    "en": "Ongoing"
    },
    "what": {
-    "ko": "신규 OEM·통신사 계약 공시, 카랑 B2B 계약 갱신·가맹점 네트워크 확장 공시: 수주 다변화 여부가 외형 성장의 지속 가능성과 고객 집중 리스크 완화를 판단하는 핵심 데이터포인트.",
-    "en": "Monitor DART filings for new OEM/telecom contract awards and Karang B2B contract renewals or network expansion; customer diversification progress is a key indicator of revenue sustainability and concentration risk reduction."
+    "ko": "삼성전자·하만의 ADAS 사업 인수 등 SDV 생태계 관련 이슈에 따른 테마성 수급과 실제 사업 연계 여부를 구분해서 살펴봐야 한다.",
+    "en": "It is worth distinguishing between thematic trading tied to SDV-ecosystem headlines-such as Samsung Electronics/Harman's ADAS business acquisition-and any actual business linkage for the company."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "오비고는 2025년 카랑 M&A를 통해 사업 모델의 외형 전환에 성공했으나, 내실 면에서 수익성 안정화의 경로를 아직 완성하지 못한 상태다. 2022~2025년 4개년 연속 영업손실이라는 재무 이력, 2026년 1분기에도 지속된 적자, 완성차 OEM의 독자 OS 전략 가속이라는 세 가지 변수가 투자자의 불확실성을 유지시키고 있다. 반면 국내 SDV 솔루션 약 50% 점유율, 현대차그룹 글로벌 공급 개시, LG유플러스·HL만도와의 파트너십, 그리고 카랑 통합에 따른 반복 수익 기반 구축은 중기 성장의 견고한 토대를 형성한다. 2026년 연간 흑자전환 목표 달성을 위해서는 하반기 카랑의 계절적 실적 반등과 SDV 콘텐츠 서비스의 가시적 수익 창출이 동시에 이루어져야 한다. 현 시점에서는 외형 성장보다 '수익 가시화 속도'를 최우선 모니터링 지표로 삼아야 하며, 분기 실적 발표와 신규 계약 공시가 핵심 관찰 포인트다.",
-   "en": "Obigo has successfully executed an external transformation of its business model through the 2025 Karang acquisition, but has yet to establish a stable and consistent path to profitability. Three variables sustain investor uncertainty: four consecutive years of operating losses (2022–2025), continued losses into Q1 2026, and accelerating OEM in-house OS development strategies. Against this, approximately 50% domestic SDV solution market share, commencement of Hyundai Motor Group global infotainment supply, deepening partnerships with LG U+ and HL Mando, and the recurring-revenue foundation being built through Karang's vehicle management business form a solid medium-term growth platform. Achieving the 2026 full-year profitability target will require H2 seasonal strength in Karang's vehicle services and meaningful SDV content revenue both materializing in parallel. At the current juncture, the pace of profit visibility—rather than raw revenue growth—is the primary variable to monitor; quarterly earnings disclosures and new contract announcements are the key datapoints to track."
+   "ko": "오비고는 자회사 카랑 편입과 픽 시리즈 콘텐츠 확장을 통해 2025년 매출을 큰 폭으로 늘리며 외형 성장의 전환점을 만들었다. 그러나 영업손익은 2022년부터 2025년까지 4년 연속 적자를 이어가고 있으며, 순이익은 분기별로 흑자와 적자를 오가는 변동성을 보이고 있어 실적의 질적 개선은 아직 확인되지 않은 상태다. 회사는 2026년 자동차 공급망 보안 국책과제 선정과 글로벌 완성차 대상 콘텐츠 공급 확대를 신성장 동력으로 제시하고 있으며, 이는 향후 추가로 확인해야 할 사업적 실행 지표다. 재무 측면에서는 2025년 부채비율이 전년 대비 크게 상승한 점과 영업활동현금흐름이 다시 마이너스로 전환된 점이 함께 관찰돼, 외형 성장과 재무 건전성 간의 균형을 지켜볼 필요가 있다. 밸류에이션 측면에서는 최근 네 개 분기 순이익이 적자 구간에 있어 통상적인 이익 기반 지표 해석에 한계가 있으며, 주가는 순자산가치 대비 프리미엄이 반영된 수준에서 거래되고 있다. 종합적으로 오비고는 매출 성장성과 신사업 확장 스토리, 그리고 아직 완전히 해소되지 않은 수익성 과제가 공존하는 국면에 있다.",
+   "en": "Obigo marked a turning point in top-line growth in 2025, sharply increasing revenue through the Karang subsidiary consolidation and expansion of its Pick-series content platforms. However, operating results have remained in loss for four consecutive years from 2022 through 2025, and net income has shown quarter-to-quarter volatility between profit and loss, meaning a qualitative improvement in earnings has not yet been confirmed. The company points to its selection for a 2026 automotive supply-chain security project and expanding content supply to global OEMs as new growth drivers, and these represent execution milestones to verify going forward. On the financial side, the sharp year-over-year rise in the 2025 debt ratio and the return to negative operating cash flow are worth watching alongside the company's top-line expansion. From a valuation standpoint, net income over the most recent four quarters has remained in loss, limiting the usefulness of conventional earnings-based metrics, while shares trade at a level that reflects a premium to net asset value. Overall, Obigo sits at a stage where a revenue-growth and new-business narrative coexists with a profitability challenge that has not yet been fully resolved."
   }
  },
  "sources": [
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1715296140017.pdf",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A352910",
-  "https://kr.investing.com/equities/obigo",
-  "https://news.nate.com/view/20260213n18149",
-  "https://stocks.pluconnect.com/352910_%EC%98%A4%EB%B9%84%EA%B3%A0/",
-  "https://m.irgo.co.kr/IR-COMP/352910/",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A352910",
-  "https://obigo.com/ir-news/?vid=70",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A352910&MenuYn=Y&NewMenuID=103&stkGb=701",
-  "https://www.hellot.net/news/article.html?no=102085",
+  "https://view.asiae.co.kr/article/2026090208470375509",
+  "http://www.paxetv.com/news/articleView.html?idxno=269462",
   "https://thevc.kr/obigo",
-  "https://www.jobkorea.co.kr/company/44087798",
-  "https://obigo.com/wp-content/uploads/2025/03/%EC%98%A4%EB%B9%84%EA%B3%A0_%EC%82%AC%EC%97%85%EB%B3%B4%EA%B3%A0%EC%84%9C_2024.pdf",
-  "https://www.etnews.com/20230814000106",
-  "https://www.jobkorea.co.kr/Recruit/Co_Read/C/teleca00/Company_name/%E3%88%9C%EC%98%A4%EB%B9%84%EA%B3%A0",
-  "https://marketin.edaily.co.kr/News/ReadE?newsId=03522726642140712",
   "https://www.thebell.co.kr/front/newsview.asp?key=202601021703531800107949",
-  "https://news.mt.co.kr/mtview.php?no=2025061008544264210"
+  "https://www.ilemonde.com/news/articleView.html?idxno=21680",
+  "https://www.sedaily.com/article/20068045",
+  "https://alphasquare.co.kr/home/stock-summary?code=352910",
+  "https://www.investing.com/equities/obigo",
+  "https://stocks.pluconnect.com/352910_%EC%98%A4%EB%B9%84%EA%B3%A0/",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A352910",
+  "https://littlebproject.com/stock/352910/326/59906",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=moaWMNx8DvjkCDlR",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A352910&MenuYn=Y&NewMenuID=103&stkGb=701",
+  "https://littlebproject.com/stock/352910/118/780",
+  "https://obigo.com/wp-content/uploads/2025/03/%EC%98%A4%EB%B9%84%EA%B3%A0_%EC%82%AC%EC%97%85%EB%B3%B4%EA%B3%A0%EC%84%9C_2024.pdf",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02571526642300776",
+  "https://www.jobkorea.co.kr/recruit/co_read/c/teleca00",
+  "https://assets.kpmg.com/content/dam/kpmg/kr/pdf/2024/insight/kpmg-korea-software-defined-vehicle-20240513.pdf"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "352910",
  "name": "오비고",
  "name_en": "Obigo Inc.",
@@ -233,9 +233,9 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 05:52",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:51",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +338,14 @@
    }
   ],
   "valuation": {
-   "price": 3305,
-   "mcap": 0.0418,
+   "price": 4950,
+   "mcap": 0.0626,
    "shares": 12637802,
    "total_shares": 12637802,
    "wavg_shares": 12240417,
    "per": null,
    "eps": -70,
-   "pbr": 1.1859,
+   "pbr": 1.7761,
    "bps": 2787,
    "roe_ttm": -2.6,
    "ttm_window": "2025Q3~2026Q2",

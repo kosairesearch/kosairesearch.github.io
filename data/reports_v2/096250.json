@@ -1,230 +1,220 @@
 {
  "title": {
   "ko": "AI 에이전트 전환기, 수익성 회복이 관건",
-  "en": "AI Agent Pivot: Profitability Recovery Is the Critical Test"
+  "en": "AI Agent Pivot Tests the Path to Profitability"
  },
  "lead": {
-  "ko": "25년 한국어 NLP·검색 기술을 기반으로 AI 에이전트 전문기업으로 전환을 선언한 와이즈넛은 상장 원년 이익 급감이라는 시험대를 넘어, 571억원 규모 수주 파이프라인을 발판으로 2026년 실질적 매출 성장과 마진 회복을 추구하고 있다.",
-  "en": "Having declared its transformation into an AI agent specialist built on 25 years of Korean NLP and search technology, WISEnut now pursues tangible revenue growth and margin restoration in 2026, anchored by a ₩57.1 billion order pipeline, after a steep earnings decline in its IPO year."
+  "ko": "와이즈넛은 검색·챗봇 중심 사업에서 AI 에이전트로 무게중심을 옮기며 외형을 지켜냈지만, 분기별 손익은 여전히 등락을 반복하고 있다.",
+  "en": "WiseNut has shifted its business center of gravity from search and chatbot solutions toward AI agents while holding revenue steady, but quarterly profitability continues to swing."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 347억원으로 3년 연속 보합세 — 상장 관련 일회성 비용·R&D 선투자 집중으로 영업이익은 1.1억원(OPM 0.3%)으로 급감",
-   "en": "FY2025 revenue of ₩34.7bn held near ₩35bn for a third straight year; operating profit collapsed to ₩114mn (OPM 0.3%) under the combined weight of IPO one-offs and aggressive R&D front-loading"
+   "ko": "AI 에이전트 매출 비중이 2026년 상반기 42.0%로, 전년 동기 7.1%에서 크게 확대됐다.",
+   "en": "The AI agent segment's share of revenue expanded to 42.0% in first-half 2026, up sharply from 7.1% a year earlier."
   },
   {
-   "ko": "분기 내 V자 회복 후 재차 꺾임 — 2025Q1 대형 영업적자(-40.8억원)에서 Q4까지 회복했으나 2026Q1에 영업손실(-14.3억원) 재발생",
-   "en": "Quarterly earnings staged a V-shaped recovery within FY2025 from a deep Q1 loss (-₩4.08bn) to Q4 profit, before slipping back into a -₩1.43bn operating loss in 2026Q1"
+   "ko": "2026년 1분기 영업손실이 확대된 뒤 2분기에는 손실 폭이 줄고 순이익은 흑자로 돌아서는 등 분기별 변동성이 크다.",
+   "en": "Operating losses widened in first-quarter 2026 before narrowing in the second quarter, when net profit turned positive again, underscoring quarterly volatility."
   },
   {
-   "ko": "571억원 수주 파이프라인 공개·AI 바우처 공급기업 선정·일체형 AI 어플라이언스 출시 등 매출 가시화 이벤트가 2026년 하반기에 집중",
-   "en": "Key revenue-realization events concentrate in H2 2026: a ₩57.1bn disclosed pipeline, selection as 2026 AI Voucher supplier, and the launch of an all-in-one AI search appliance"
+   "ko": "회사는 2026회계연도 순이익의 40%를 현금배당, 60%를 자기주식 매입·소각에 활용하는 총주주환원 정책을 정정 공시했다.",
+   "en": "The company filed a revised value-up plan under which it will pay out 40% of 2026 fiscal-year net profit as cash dividends and use 60% for share buybacks and cancellations."
   },
   {
-   "ko": "WISE iRAG·WISE Agent Labs GS 1등급 인증·조달청 등록 완료 — 공공 조달 채널 접근성 제도화, 8개 이상 공공기관 레퍼런스 누적",
-   "en": "WISE iRAG and WISE Agent Labs hold GS Grade-1 certification and are registered with the Public Procurement Service, formalizing public-sector contracting access backed by 8+ institutional deployments"
+   "ko": "2026년 상반기 조달청 디지털서비스몰에서 AI 에이전트·챗봇·검색 3개 부문 판매 점유율 1위를 기록했다.",
+   "en": "In the first half of 2026, the company ranked No. 1 by sales share in the AI agent, chatbot and search categories on the government's Digital Service Mall procurement platform."
   },
   {
-   "ko": "부채비율 9.3%·자기자본 677억원(2025년 말)의 안정된 재무 구조 — 단, 영업현금흐름이 2025년 마이너스 전환(-5.2억원)해 이익 창출력 회복이 긴요",
-   "en": "Post-IPO balance sheet is solid with a 9.3% debt ratio and ₩67.7bn equity (end-2025), but operating cash flow turned negative for the first time in FY2025 (-₩519mn), making earnings recovery urgent"
+   "ko": "상장 당시 제시했던 2026년 매출·영업이익 목표 경로는 현재까지의 진행 속도로 볼 때 크게 하회하는 모습이다.",
+   "en": "The pace of results so far falls well short of the 2026 revenue and operating profit targets the company presented at the time of its listing."
   }
  ],
  "business": {
-  "ko": "와이즈넛은 2000년 설립된 자연어처리(NLP) 기술 기반의 AI 에이전트 전문기업으로, 2025년 1월 코스닥 기술성장기업 특례상장을 완료했다. 기업용 검색엔진 'Search Formula-1'로 사업을 시작해 빅데이터 수집·분석, 인공지능 챗봇을 거쳐 현재는 생성형 AI 및 AI 에이전트 솔루션으로 사업 영역을 확장하고 있다. 핵심 제품군은 RAG(검색증강생성) 기반 에이전트 플랫폼 'WISE iRAG', 도메인 특화 에이전트 LLM 'WISE LLOA', AI 에이전트 개발·운영 플랫폼 'WISE Agent Labs'이며, 고성능 NPU에 에이전트 특화 LLM과 RAG를 통합한 온프레미스형 일체형 AI 서치 에이전트 어플라이언스도 2026년 3월 출시해 제품 라인업을 확대하고 있다. 국내 6,000여 고객사에 솔루션을 제공하며 전체 고객의 81%가 10년 이상 장기 사용자로서 높은 고객 잠금 효과를 갖는다. 매출의 약 60%가 공공부문에서 발생하며 한국도로교통공단·인사혁신처·경기도청·국민건강보험공단 등 8개 이상 주요 공공기관에서 AI 에이전트 구축 레퍼런스를 보유한다. IPO 당시 증권사 리포트(유진투자증권, 2025년 1월) 기준 2023년 부문별 매출(실적치)은 AI 10.6억원, 검색 11.2억원, 빅데이터 2.3억원, 클라우드 서비스 2.3억원, 유지보수 6.0억원으로 구성됐으며, 이후 AI 에이전트 부문 매출 비중 확대가 핵심 전략 방향이다. 경쟁 구도는 솔트룩스·한글과컴퓨터 등 국내 AI SW 업체, AWS·MS Azure·Google Cloud 등 글로벌 클라우드 플랫폼, 그리고 올거나이즈·스켈터랩스 등 AI 에이전트 스타트업들과 공공·민간 B2B 시장에서 경합한다. 글로벌 10개국에 솔루션을 공급하고 AAAI 2026 논문 채택을 통해 기술 경쟁력의 국제적 검증도 이루어졌으며, GS 1등급 인증과 조달청 디지털서비스몰 등록은 공공 조달 접근성이라는 제도적 진입장벽을 제공한다.",
-  "en": "WISEnut, founded in 2000 and listed on KOSDAQ as a technology-growth company in January 2025, is an AI agent specialist built on proprietary natural language processing technology. Starting with its enterprise search engine 'Search Formula-1,' the company evolved through big-data analytics and AI chatbots to its current focus on generative AI and AI agent solutions. Core products include the RAG-based agent platform 'WISE iRAG,' domain-specialized agent LLM 'WISE LLOA,' and the AI agent development and operations platform 'WISE Agent Labs,' supplemented by an on-premises all-in-one AI search appliance launched in March 2026, which integrates a high-performance NPU with agent-optimized LLM and RAG capabilities. WISEnut serves over 6,000 domestic customers, with 81% having used its solutions for more than a decade, reflecting deep customer lock-in. Approximately 60% of revenue is derived from the public sector, with reference AI agent deployments at institutions including the National Health Insurance Service, Korea Road Traffic Authority, Ministry of Personnel Management, and Gyeonggi Province. Per the IPO research report (Eugene Securities, January 2025), the 2023 actual revenue breakdown was approximately: AI ₩1.06bn, Search ₩1.12bn, Big Data ₩0.23bn, Cloud Services ₩0.23bn, and Maintenance ₩0.60bn, with AI agent share expansion the primary strategic target. Key competitors include domestic AI software vendors such as Saltlux and Hancom, global cloud AI platforms (AWS, Microsoft Azure, Google Cloud), and emerging AI agent startups. WISEnut supplies solutions in 10 countries; AAAI 2026 paper acceptance provides international technical validation, while GS Grade-1 certification and PPS registration institutionalize public-procurement access as a structural entry barrier."
+  "ko": "와이즈넛은 2000년 설립돼 자연어처리·머신러닝·텍스트마이닝 등 언어처리 원천기술을 기반으로 기업용 검색엔진 사업에서 출발한 회사다. 2016년 챗봇 제품을 출시하며 사업 영역을 넓혔고, 최근에는 대형언어모델(LLM)과 검색증강생성(RAG) 기술을 결합한 도메인 특화 AI 에이전트로 사업 구조를 전환하고 있다. 주요 솔루션으로는 RAG 기반 에이전트 'WISE iRAG', 도메인 특화 LLM 'WISE LLOA', 에이전트 개발·운영 플랫폼 'WISE Agent Labs' 등이 있으며, 최근에는 국산 NPU와 자체 LLM·RAG 기술을 결합한 온프레미스형 '일체형 AI 서치 에이전트' 어플라이언스로 제품군을 확장했다. 고객 기반은 공공·금융·제조·국방 등 약 6,500개 레퍼런스를 축적했으며, 조달청 디지털서비스몰에서 2017년 최초 등록 이후 9년간 총 470건, 약 372억원 규모의 계약 실적을 쌓아왔다. 2026년 상반기에는 조달청 디지털서비스몰 판매에서 AI 에이전트 71.5%, AI 챗봇 51.8%, AI 검색 35.7%의 점유율로 3개 부문 모두 1위를 차지했다. 사업 부문은 검색·챗봇 중심의 레거시 솔루션과 신성장 축인 AI 에이전트로 나뉘는데, 상반기 기준 AI 에이전트 매출 비중이 전년 동기 7.1%에서 42.0%로 확대되며 포트폴리오 전환이 빠르게 진행되고 있다. 최근에는 K-뷰티(LG생활건강 참여 컨소시엄), 콘텐츠산업(한국콘텐츠진흥원 글로벌 K-콘텐츠 분석 플랫폼), 공공 감사 행정(유엔파인과 MOU) 등으로 산업별 적용 영역을 확대하고 있다. 회사는 2025년 1월 24일 기술성장기업(기술특례) 요건으로 코스닥에 상장했다.",
+  "en": "Founded in 2000, WiseNut began as an enterprise search engine company built on proprietary natural language processing, machine learning, and text-mining technology. It expanded into chatbots in 2016 and has more recently pivoted toward domain-specific AI agents that combine large language models (LLMs) with retrieval-augmented generation (RAG) technology. Key solutions include the RAG-based agent 'WISE iRAG,' the domain-specific LLM 'WISE LLOA,' and the agent development and operation platform 'WISE Agent Labs,' with the product lineup recently expanded to an on-premise 'all-in-one AI search agent' appliance that pairs domestically made NPUs with the company's own LLM and RAG technology. Its customer base spans roughly 6,500 references across the public, financial, manufacturing, and defense sectors, and since first registering with the government's Digital Service Mall procurement platform in 2017, it has logged 470 contracts worth about 37.2 billion won over nine years. In the first half of 2026, it ranked first in all three categories on the Digital Service Mall—AI agent (71.5% share), AI chatbot (51.8%), and AI search (35.7%). The business is split between legacy search and chatbot solutions and the newer AI agent growth engine, with the AI agent segment's revenue share rising from 7.1% to 42.0% year-on-year in the first half, reflecting a fast-moving portfolio shift. The company has also been expanding into new verticals such as K-beauty (a consortium including LG Household & Health Care), content analytics (a global K-content platform for the Korea Creative Content Agency), and public-sector audit administration (an MOU with UN-Fine). WiseNut listed on KOSDAQ on January 24, 2025 under the technology growth (tech-special) listing track."
  },
  "earnings": {
-  "ko": "와이즈넛은 2023년 매출 351.7억원·영업이익 34.6억원(OPM 9.8%)을 기록한 뒤, 2024년에는 매출 349.2억원·영업이익 17.0억원(OPM 4.9%)으로, 2025년에는 매출 347.3억원·영업이익 1.1억원(OPM 0.3%)으로 3개년 연속 외형 보합 속에 마진이 가파르게 하락했다. 매출 감소 폭은 미미하나 영업이익이 불과 2년 새 34.6억원에서 1.1억원으로 급락한 것이 핵심 변화다. 2025년 연간 영업이익 1.1억원은 1분기(-40.75억원)의 대형 적자를 나머지 분기가 만회한 결과로, 코스닥 상장 과정의 일회성 비용이 1분기 판관비에 일괄 반영됐고 AI 에이전트 전환을 위한 선제적 R&D 투자도 집중됐다. 2분기 이후 분기 영업이익은 각각 8.7억원·11.7억원·21.5억원으로 뚜렷한 회복세를 보이며 4분기가 연중 최대치를 기록했다. 2025년 지배주주 귀속 당기순이익은 17.5억원으로 2024년 30.5억원 대비 42.6% 감소했으며, 영업현금흐름도 2023년 60.1억원, 2024년 46.7억원에서 2025년 -5.2억원으로 처음 마이너스 전환했다. 2026년 1분기 매출은 72.2억원으로 전년 동기(53.9억원) 대비 약 34% 증가해 외형 성장 신호를 보였으나, 영업손실 -14.3억원·지배주주 귀속 순손실 -10.2억원이 재발생했다. 이는 공공 발주의 계절성(1분기 수주 집중→하반기 매출 인식)과 신사업 비용 구조의 과도기적 특성이 복합 작용한 것으로 분석된다. 자기자본은 IPO 공모자금 유입으로 2024년 말 513.5억원에서 2025년 말 677.1억원으로 확대됐으며, 부채비율은 9.3%로 매우 낮아 재무 안정성은 양호하다.",
-  "en": "WISEnut posted revenue of ₩35.2bn and operating profit of ₩3.46bn (OPM 9.8%) in FY2023, before declining to revenue ₩34.9bn and operating profit ₩1.70bn (OPM 4.9%) in FY2024, and further to revenue ₩34.7bn and operating profit of just ₩114mn (OPM 0.3%) in FY2025 — three consecutive years of flat top-line with sharply eroding margins. The headline FY2025 operating profit of ₩114mn masked a Q1 operating loss of -₩4.08bn caused by the lump-sum recognition of IPO-related expenses and front-loaded AI agent R&D investment. Operating profit then recovered progressively through Q2 (₩871mn), Q3 (₩1.17bn), and Q4 (₩2.15bn), with Q4 marking the strongest quarterly result of the year. Net profit attributable to owners fell 42.6% year-on-year to ₩1.75bn in FY2025, while operating cash flow turned negative for the first time, at -₩519mn, compared to ₩4.67bn in FY2024 and ₩6.01bn in FY2023. In 2026Q1, revenue grew approximately 34% year-on-year to ₩7.22bn — a positive top-line signal — but an operating loss of -₩1.43bn and net loss of -₩1.02bn attributable to owners recurred, reflecting the structural seasonality of public-sector project contracting and transitional cost pressures. Post-IPO equity expanded from ₩51.4bn to ₩67.7bn between end-2024 and end-2025, and the 9.3% debt ratio preserves balance sheet strength, but restoring sustainable earnings power remains the central financial challenge."
+  "ko": "연결 기준 매출액은 2022년 344.7억원, 2023년 351.7억원, 2024년 349.2억원, 2025년 347.3억원으로 4년간 거의 정체된 흐름을 보였다. 반면 수익성은 등락이 컸는데, 영업이익은 2022년 30.5억원(영업이익률 8.8%), 2023년 34.6억원(9.8%)에서 2024년 17.0억원(4.9%)으로 꺾인 뒤 2025년에는 1.1억원(0.3%)까지 축소됐다. 순이익 역시 2023년 42.7억원 흑자에서 2022년 -59.0억원 적자를 지나 2024년 30.5억원, 2025년 17.5억원으로 흑자를 유지했지만 규모는 계속 줄었다. 분기별로 보면 2025년 3분기 매출 88.1억원·영업이익 11.7억원·순이익 15.9억원에서 4분기에는 매출이 123.8억원까지 늘며 영업이익 21.5억원, 순이익 21.6억원으로 계절적 성수기 효과가 뚜렷했다. 그러나 2026년 1분기에는 매출이 72.2억원으로 줄고 영업손실 14.3억원, 순손실 10.2억원을 기록하며 수익성이 크게 흔들렸고, 2분기에는 매출 74.3억원, 영업손실 1.65억원으로 손실 폭을 줄이는 동시에 순이익은 5.0억원으로 흑자 전환했다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 누적 순이익은 32.4억원 수준으로, 분기 간 부침이 있으나 연간 실적을 지지하는 완충 역할을 했다. 현금흐름 측면에서는 2022~2024년 영업활동현금흐름이 매년 50억원 이상의 플러스를 기록했으나 2025년에는 -5.2억원으로 마이너스 전환해, 손익 개선과 별개로 현금 창출력에는 주의가 필요한 구간으로 진입했다. 재무구조는 부채비율이 2022년 15.2%에서 2025년 9.3%로 낮아지며 안정적으로 유지되고 있다.",
+  "en": "Consolidated revenue stayed largely flat over four years: 34.47 billion won in 2022, 35.17 billion won in 2023, 34.92 billion won in 2024, and 34.73 billion won in 2025. Profitability, however, swung more sharply. Operating profit was 3.05 billion won (8.8% margin) in 2022 and 3.46 billion won (9.8%) in 2023, then fell to 1.70 billion won (4.9%) in 2024 and shrank further to just 114 million won (0.3%) in 2025. Net profit moved from a 5.90 billion won loss in 2022 to a 4.27 billion won profit in 2023, then declined to 3.05 billion won in 2024 and 1.75 billion won in 2025—staying positive but on a shrinking scale. On a quarterly basis, revenue of 8.81 billion won with operating profit of 1.17 billion won and net profit of 1.59 billion won in third-quarter 2025 rose to 12.38 billion won in revenue with operating profit of 2.15 billion won and net profit of 2.16 billion won in the fourth quarter, reflecting a clear seasonal peak. That reversed in first-quarter 2026, when revenue fell to 7.22 billion won and the company posted an operating loss of 1.43 billion won and a net loss of 1.02 billion won. The second quarter of 2026 saw revenue of 7.43 billion won, a narrower operating loss of 165 million won, and a return to net profit of 503 million won. Over the trailing four quarters through second-quarter 2026, cumulative net profit came to about 3.24 billion won, with quarter-to-quarter swings partly offset across the window. On the cash flow side, operating cash flow was positive by more than 5 billion won in each year from 2022 to 2024 but turned negative at -519 million won in 2025, signaling a period warranting attention on cash generation even as headline profitability shows signs of stabilizing. The balance sheet remains conservative, with the debt ratio falling from 15.2% in 2022 to 9.3% in 2025."
  },
  "industry": {
-  "ko": "글로벌 기업용 AI 에이전트 시장은 시장조사기관 옴디아(Omdia)에 따르면 2025년 약 15억 달러에서 2030년 약 4,180억 달러로 5년간 약 28배 성장이 전망되는 초고성장 분야다. 딜로이트는 2026년에 기업의 최대 75%가 에이전트형 AI에 투자할 것으로 예측했으며, 가트너는 2026년까지 기업 애플리케이션의 40%에 AI 에이전트가 포함될 것으로 내다보고 있다. 국내에서도 IT 예산이 증가한 기업의 70.5%가 생성형 AI 및 AI 에이전트를 주요 기술 투자 영역으로 선택했으며, 생성형 AI 활용률이 70%를 상회하는 등 채택 속도가 빠르다. 2026년은 '시범 지옥(Pilot Purgatory)'을 벗어나 AI가 핵심 업무에 본격 내재화되는 '실전의 원년'으로 평가받아, 공급자에게 ROI 입증 압력이 높아지는 동시에 본격 수주가 확대되는 시점이기도 하다. 국내 공공부문에서는 디지털플랫폼정부 추진, AI 행정 전환 정책 등으로 AI 에이전트 도입 수요가 구조적으로 확대되고 있어 B2G 전문기업에 중장기 성장 동력이 된다. 경쟁 측면에서는 SK텔레콤·KT 등 통신사, 삼성SDS·LG CNS 등 대형 SI, 글로벌 클라우드(AWS, MS Azure, Google Cloud)의 AI 에이전트 서비스가 강화되면서 중소 전문 기업의 포지셔닝 차별화가 더욱 중요해졌다. 와이즈넛의 한국어 NLP 원천기술, 조달청 등록·GS 인증이라는 제도적 진입장벽, 공공 레퍼런스 축적은 공공 B2G 틈새시장에서 강점을 유지하게 해주지만, 민간 B2B 시장 확장 과정에서는 자원이 풍부한 대형 경쟁자와의 직접 경합이 불가피하다.",
-  "en": "According to Omdia, the global enterprise AI agent software market is forecast to grow roughly 28-fold from approximately $1.5 billion in 2025 to around $418 billion by 2030, making it one of the fastest-growing segments in enterprise technology. Deloitte projects that up to 75% of enterprises will invest in agentic AI in 2026, while Gartner forecasts that 40% of enterprise applications will incorporate AI agents by the same year. In South Korea, 70.5% of companies that increased their IT budgets in 2026 identified generative AI and AI agents as a key technology investment area, with generative AI adoption exceeding 70% of businesses surveyed. Industry observers designate 2026 as the year AI moves from pilot experiments to real-world core deployment — a 'production-year' — meaning AI solution providers face heightened ROI-accountability pressure alongside a surge in actionable orders. The South Korean public sector provides structural tailwinds through the Digital Platform Government initiative and AI-led public administration programs, directly benefiting B2G specialists like WISEnut. On the competitive front, major telecom operators, large SI firms, and global cloud platforms are all intensifying their AI agent offerings, raising the differentiation bar for mid-sized specialists. WISEnut's Korean NLP heritage, institutionalized public-procurement access via GS certification and PPS registration, and reference-site depth provide defensible positioning in the B2G niche, but private-sector B2B expansion will inevitably mean competing directly against larger, better-resourced rivals."
+  "ko": "기업·산업용 AI 에이전트 시장은 2024~2030년 연평균 45.1% 성장할 것으로 전망된 바 있어, 검색·챗봇에서 에이전트로 전환하는 기업들에게 우호적인 성장 환경을 제공하고 있다. 공공 부문에서도 관련 예산이 확대되는 추세인데, 행정안전부의 AI 행정 업무 적용 예산이 2025년 42억원에서 2026년 187억원으로 늘어난 것이 대표적이다. 와이즈넛은 오랜 기간 조달청 채널에서 검색·챗봇 솔루션의 강자로 자리매김해 왔고, 이 지위를 2026년 상반기 AI 에이전트·챗봇·검색 3개 부문 판매 점유율 1위로 이어가고 있다. 다만 조달청 등록 AI 에이전트 관련 솔루션이 20개 이상으로 늘어나며 경쟁이 치열해진 상황에서 거둔 성과라는 점도 함께 지적된다. 산업 사이클상으로는 아직 공공·기업 고객들이 파일럿·검증 단계를 지나 실제 구축·운영 단계로 넘어가는 초기 국면에 가깝고, 이 과정에서 발주 시점의 불확실성이 매출 인식 시점에 영향을 주는 구조다. 회사는 검색·챗봇 등 레거시 사업에서 쌓은 자연어처리 기술과 산업별 구축 경험을 AI 에이전트로 이전하는 전략을 취하고 있어, 신규 진입자 대비 도메인 노하우 측면의 차별점을 갖고 있다는 평가가 나온다.",
+  "en": "The enterprise and industrial AI agent market has been projected to grow at a compound annual rate of 45.1% between 2024 and 2030, providing a favorable backdrop for companies pivoting from search and chatbots toward agent-based offerings. Public-sector budgets are also expanding, with the Ministry of the Interior and Safety's budget for AI administrative applications rising from 4.2 billion won in 2025 to 18.7 billion won in 2026. WiseNut has long been a leading player in search and chatbot solutions through the government procurement channel, and it extended that position into first place by sales share across the AI agent, chatbot, and search categories in the first half of 2026. That said, the achievement came against a backdrop of intensifying competition, with more than 20 AI agent-related solutions now registered on the procurement platform. In terms of industry cycle positioning, public and corporate customers appear to be in an early phase of moving from pilot and validation projects to actual deployment and operation, a transition in which order timing uncertainty continues to affect when revenue is recognized. The company's strategy of transferring natural language processing expertise and industry-specific deployment experience from its legacy search and chatbot business into AI agents is viewed as a differentiator versus newer entrants lacking that domain know-how."
  },
  "outlook": {
-  "ko": "와이즈넛은 2026년 초 기관투자자 대상 NDR에서 571억원 규모의 수주 파이프라인을 공개하고, 레거시 솔루션의 이익 기반을 지지하면서 AI 에이전트 부문의 탑라인 성장을 이루겠다는 전략을 제시했다. 과학기술정보통신부·NIPA가 주관하는 '2026 AI 바우처 지원사업' 공급기업으로 선정돼 WISE iRAG·WISE LLOA·WISE Agent Labs 등 7종의 핵심 AI 에이전트 솔루션 공급 채널을 확보했으며, 이를 통해 기업의 AX(AI 전환) 실현을 지원한다는 계획이다. 2026년 3월 말 출시한 온프레미스 일체형 AI 서치 에이전트 어플라이언스는 공공기관 우선 공급 후 금융·민간 B2B로 확장 예정으로, 초기 구축 매출에 유지보수·고도화 반복 매출이 이어지는 구조여서 중장기 매출 안정성 개선에 기여할 것으로 기대된다. 2026년 AI 에이전트 구축 수주 65건 이상의 경험을 바탕으로 공공 에이전틱 AI 구축을 확대 중이며, 국민건강보험공단 공공 에이전틱 AI 사업 수주 등 레퍼런스 확장이 진행되고 있다. 경영진은 \"2026년부터 확보된 기술 경쟁력과 안정된 재무 구조를 기반으로 가시적인 성과를 보여드리겠다\"는 입장이며, 7년 연속 배당 지속과 배당성향 40% 이상 유지를 주주환원 목표로 천명했다. 2026년 1분기 매출의 34% YoY 성장은 파이프라인 집행의 초기 신호로 해석되나, 영업손실 재발로 수익화 일정의 불확실성은 남아 있어 하반기 수주 집행 속도가 연간 실적을 좌우할 것이다.",
-  "en": "At its early-2026 NDR for institutional investors, WISEnut disclosed a ₩57.1 billion order pipeline and outlined a dual strategy of defending the earnings floor of legacy solutions while driving AI agent revenue growth. Selection as a supply-side participant in the '2026 AI Voucher Support Program' (co-organized by MSIT and NIPA) provides a formalized channel to deliver seven core AI agent solutions — including WISE iRAG, WISE LLOA, and WISE Agent Labs — to adopting enterprises and accelerate AX adoption. The on-premises all-in-one AI search appliance launched in late March 2026 targets public institutions first before extending into financial services and private-sector B2B, and is structured to generate initial deployment fees followed by recurring maintenance and enhancement contracts, supporting long-term revenue stability. Drawing on a portfolio of 65+ AI agent deployment engagements, the company is actively scaling public-sector agentic AI — including a contract with the National Health Insurance Service. Management has publicly committed to \"delivering visible results from 2026\" and reaffirmed a policy of consecutive annual dividends with a payout target of 40% or above. The 34% year-on-year revenue growth in 2026Q1 offers an early positive pipeline signal, but the recurrence of an operating loss leaves the timetable for full profitability restoration uncertain, with H2 2026 order execution being the key determinant of the full-year outcome."
+  "ko": "회사는 하반기에도 공공기관과 기업의 AX(AI 전환) 수요에 맞춰 도메인별 AI 에이전트 사업을 확대하는 한편, 매출 성장과 수익성 개선을 동시에 추진하겠다는 방침을 밝혔다. 구체적인 사업으로는 2027년까지 총 30억원 규모로 진행되는 K-뷰티 AI 에이전트 융합·확산 사업(LG생활건강 참여), 한국콘텐츠진흥원의 글로벌 K-콘텐츠 트렌드 분석 플랫폼 구축, 유엔파인과의 공공 감사 업무 AI 에이전트 MOU 등이 진행 중이다. 또한 과학기술정보통신부·정보통신산업진흥원이 주관하는 2026 AI 바우처 지원사업의 공급기업으로 선정돼 수요기업 모집에 나선 상태이며, 40만 공무원의 업무를 지원하는 맞춤형 AI 구축 사업은 10월 출시가 예정돼 있다고 보도된 바 있다. 주주환원 측면에서는 2026회계연도 순이익의 40%를 현금배당, 60%를 자기주식 매입·소각에 활용해 초년도 총주주환원 규모를 순이익의 100% 수준으로 맞추고, 2027회계연도부터는 현금배당 40%와 자기주식 매입·소각 40% 이상을 결합한 정책을 연례화하겠다는 계획을 공시했다. 이미 2026년 6월부터 9월까지 100억원 규모 자기주식을 취득해 전량 소각을 완료했으며, 이 과정에서 발행주식총수가 약 1,310만주에서 약 1,181만주로 줄었다. 다만 상장 당시 제시했던 2026년 매출 835억원, 영업이익 238억원의 목표 경로와 비교하면 현재까지의 진행 속도는 뚜렷하게 못 미치는 상태로, 하반기 실적 개선의 폭과 속도가 남은 관전 포인트다.",
+  "en": "The company has stated it will continue expanding domain-specific AI agent business in line with public- and private-sector AI transformation (AX) demand in the second half, while pursuing both revenue growth and profitability improvement. Concrete projects underway include a roughly 3 billion won K-beauty AI agent convergence project running through 2027 (with LG Household & Health Care participating), a global K-content trend analysis platform being built for the Korea Creative Content Agency, and an MOU with UN-Fine on AI agents for public-sector audit work. It has also been selected as a supplier for the 2026 AI Voucher Support Program run by the Ministry of Science and ICT and the National IT Industry Promotion Agency and is recruiting demand-side companies, while a customized AI system reportedly intended to support the work of 400,000 civil servants has been reported to be slated for an October launch. On shareholder returns, the company disclosed a plan to pay 40% of 2026 fiscal-year net profit as cash dividends and use 60% for share buybacks and cancellations—bringing first-year total shareholder returns to roughly 100% of net profit—and to annualize a policy of 40% cash dividends plus at least 40% buybacks and cancellations starting in fiscal 2027. It has already completed a 10 billion won share buyback and full cancellation between June and September 2026, reducing total shares outstanding from about 13.11 million to about 11.81 million. Even so, current progress remains well behind the 2026 revenue target of 83.5 billion won and operating profit target of 23.8 billion won presented at the time of listing, leaving the pace and scale of any second-half improvement as a key point to watch."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당 EPS 329원 기준으로, 공모 당시 비교기업 PER 밴드(23~60배, 2025년 1월 기준)의 하단 근방에서 거래되고 있다. 그러나 이 이익 기반 자체가 2023년 대비 큰 폭으로 축소된 상태여서, 멀티플의 절대 수준보다 이익 회복 여부가 밸류에이션 재평가의 선결 조건이다. 주당 순자산(BPS) 5,009원 대비 현 주가는 소폭 프리미엄 상태에 머물러 있으며, 이는 AI 에이전트 성장 기대가 일부 반영된 것이지만 수익성 회복이 뒷받침되지 않으면 지속성이 약하다. 상장 당초 희망 공모가 밴드(24,000~26,000원)와의 현격한 괴리는 시장이 이미 실적 기대치 하향을 상당 부분 반영한 결과이며, 반대로 이는 이익이 회복 궤도에 진입할 경우 멀티플 재평가 여지가 잠재됨을 의미한다. 배당의 경우 주당 85원(DPS)이 지급됐으며 배당성향 40% 이상 유지를 목표하고 있어, 현 주가 수준의 배당수익률은 코스닥 IT 업종 내에서 평균적 수준에 해당한다.",
-  "en": "Against the headline EPS of ₩329, the current share price trades near the lower bound of the 23–60x PER range applied to comparable companies at the January 2025 IPO, but the earnings base itself has contracted sharply from FY2023 levels, making earnings recovery — rather than the absolute multiple — the prerequisite for any valuation re-rating. At the book value per share (BPS) of ₩5,009, the stock commands a modest net-asset premium, partly reflecting AI agent growth expectations, though the sustainability of this premium is contingent on profitability restoration. The significant discount to the IPO price band of ₩24,000–₩26,000 suggests the market has already priced in a substantial portion of the earnings shortfall, which conversely implies latent re-rating potential if the company successfully returns to an earnings growth trajectory. WISEnut paid a dividend per share of ₩85 in FY2025 and targets a payout ratio of 40% or above, placing the dividend yield at current levels broadly in line with the KOSDAQ IT sector average."
+  "ko": "와이즈넛의 밸류에이션은 상장 이후 성장주 프리미엄에 대한 시장의 평가가 계속 갈리는 구간에 놓여 있다. 한 증권사는 2025년 12월 시점 보고서에서 과거 12개월 실적 기준 주가수익비율이 30배대 후반 수준이라고 평가하며, 두 자릿수 매출 성장률을 감안하면 부담스러운 수준이라고 지적한 바 있다. 이후 실적이 적자와 흑자를 오가는 흐름을 보이면서 순자산 대비 주가 수준도 함께 움직여 왔다. 배당의 경우, 회사가 2026회계연도부터 현금배당과 자기주식 매입·소각을 연계한 총주주환원 정책을 새롭게 도입한 만큼, 향후 배당 성향과 환원 규모가 어떻게 구체화되는지가 관련 지표의 방향을 좌우할 전망이다. 결국 이 종목의 밸류에이션은 AI 에이전트 매출이 레거시 사업의 정체를 상쇄하고 이익 구조를 안정적으로 개선시킬 수 있는지에 대한 시장의 판단에 따라 계속 조정될 가능성이 있다.",
+  "en": "WiseNut's valuation has sat in a range where the market's read on its growth-stock premium keeps shifting since listing. One brokerage, in a report dated December 2025, assessed the trailing 12-month price-to-earnings ratio at roughly the high-30s, calling that level demanding given double-digit revenue growth at the time. Since then, results have alternated between losses and profits, and the price level relative to net assets has moved accordingly. On the dividend side, because the company introduced a new total shareholder return policy from fiscal 2026 linking cash dividends with share buybacks and cancellations, how the payout ratio and return scale are concretely implemented going forward will shape the direction of related metrics. Ultimately, the stock's valuation is likely to keep adjusting based on the market's view of whether AI agent revenue can offset stagnation in the legacy business and steadily improve the profit structure."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI 에이전트 시장 폭발 성장과 선점 고객 기반",
-    "en": "Explosive AI Agent Market Growth and Entrenched Customer Base"
+    "ko": "AI 에이전트 매출의 가파른 성장",
+    "en": "Rapid Growth in AI Agent Revenue"
    },
    "body": {
-    "ko": "글로벌 기업용 AI 에이전트 시장이 2025~2030년 약 28배 성장이 전망되는 가운데, 와이즈넛은 국내 B2B·B2G 시장에서 25년간 쌓아온 한국어 NLP 원천기술과 6,000여 고객사 네트워크를 갖추고 있다. 전체 고객의 81%가 10년 이상 장기 이용하는 높은 잠금 효과는 기존 고객 내에서 AI 에이전트 전환 수요를 흡수하는 데 유리한 환경을 제공한다. 공공부문 레퍼런스(8개 이상 기관)와 GS 1등급 인증·조달청 등록이라는 제도적 진입장벽은 신규 경쟁자의 빠른 침투를 구조적으로 제한한다.",
-    "en": "With the global enterprise AI agent market forecast to grow roughly 28-fold between 2025 and 2030, WISEnut enters this cycle backed by 25 years of Korean NLP know-how and a domestic network of over 6,000 B2B and B2G customers. An 81% long-term customer retention rate creates a natural internal upgrade pathway to AI agent products, reducing new customer acquisition costs. GS Grade-1 certification, PPS registration, and a growing public-sector reference portfolio (8+ institutions) form institutional entry barriers that limit rapid competitive encroachment."
+    "ko": "2026년 상반기 AI 에이전트 매출은 61.5억원으로 전년 동기 9.6억원 대비 539.0% 증가했다. 이에 따라 전체 매출에서 AI 에이전트가 차지하는 비중은 7.1%에서 42.0%로 확대됐다. 신규 수주 확대와 기존 레거시 고객의 생성형 AI 전환이 동시에 진행되고 있다는 점이 성장의 배경으로 꼽힌다.",
+    "en": "First-half 2026 AI agent revenue reached 6.15 billion won, up 539.0% from 960 million won a year earlier. As a result, the AI agent segment's share of total revenue expanded from 7.1% to 42.0%. The growth is attributed to a combination of new order wins and the conversion of existing legacy customers toward generative AI."
    }
   },
   {
    "title": {
-    "ko": "571억원 파이프라인·신제품이 하반기 매출 가시화 촉매",
-    "en": "₩57.1bn Pipeline and New Products as H2 2026 Revenue Catalysts"
+    "ko": "구체화된 주주환원 정책",
+    "en": "A Concretized Shareholder Return Policy"
    },
    "body": {
-    "ko": "공시된 571억원 수주 파이프라인은 최근 연간 매출의 1.6배 규모로, 하반기 집행 시 매출 성장 폭이 의미 있을 수 있다. 온프레미스 AI 어플라이언스는 초기 구축 매출에 유지보수·고도화 반복 매출이 연결되는 구조여서 수익 안정성에 기여할 수 있다. 2026년 1분기 매출의 34% YoY 성장은 파이프라인 집행의 초기 신호로, 이 추세가 하반기까지 이어질 경우 3년 보합에서 벗어난 외형 성장 전환이 실현될 수 있다.",
-    "en": "The disclosed ₩57.1bn order pipeline represents approximately 1.6 times the most recent annual revenue base, offering meaningful upside potential if projects are executed through the year. The on-premises AI appliance generates initial deployment fees followed by recurring maintenance and enhancement revenue, a structure that could improve earnings visibility over time. The 34% year-on-year revenue growth in 2026Q1 provides an early execution signal; sustained momentum through H2 could mark a genuine break from three years of top-line stagnation."
+    "ko": "회사는 2026회계연도 순이익의 40%를 현금배당, 60%를 자기주식 매입·소각에 사용하겠다는 정정 공시를 냈으며, 계획대로면 초년도 총주주환원 규모는 순이익의 100% 수준에 이른다. 이미 2026년 6~9월 사이 100억원 규모 자사주를 매입해 전량 소각을 완료해 발행주식총수를 줄였다. 2027회계연도부터는 현금배당 40%와 자사주 매입·소각 40% 이상을 결합한 정책을 매년 이어가겠다고 밝혔다.",
+    "en": "The company filed a revised disclosure committing to pay 40% of fiscal 2026 net profit as cash dividends and use 60% for share buybacks and cancellations, which, if implemented as planned, would bring first-year total shareholder returns to roughly 100% of net profit. It has already bought back 10 billion won worth of shares between June and September 2026 and fully canceled them, reducing total shares outstanding. Starting in fiscal 2027, it plans to annualize a policy combining a 40% cash dividend with at least 40% in buybacks and cancellations."
    }
   },
   {
    "title": {
-    "ko": "견고한 재무 구조와 일관된 주주환원 의지",
-    "en": "Solid Balance Sheet and Consistent Shareholder Return Commitment"
+    "ko": "공공조달 시장에서의 지배력",
+    "en": "Dominance in the Public Procurement Channel"
    },
    "body": {
-    "ko": "IPO 공모자금 유입으로 자기자본 677억원, 부채비율 9.3%의 안정된 재무 구조는 불확실성 국면에서도 R&D 투자와 사업 확장을 지속할 여력을 제공한다. 7년 연속 배당 유지와 배당성향 40% 이상 목표는 주주환원에 대한 경영진의 일관된 의지를 나타낸다. 순현금 자산 구조는 거시 환경 악화 충격을 흡수하는 한편, 전략적 M&A나 기술 파트너십 투자의 실탄으로도 활용 가능하다.",
-    "en": "Post-IPO equity of ₩67.7bn and a 9.3% debt ratio provide the financial headroom to sustain R&D investment and business expansion through near-term earnings volatility. Seven consecutive years of dividends and a publicly stated payout target of 40% or above signal management's consistent commitment to shareholder returns. The net cash position provides resilience against macroeconomic headwinds while preserving capacity for strategic M&A or technology partnership opportunities."
+    "ko": "2026년 상반기 조달청 디지털서비스몰에서 AI 에이전트 71.5%, AI 챗봇 51.8%, AI 검색 35.7%의 판매 점유율로 3개 부문 모두 1위를 차지했다. 2017년 최초 등록 이후 9년간 470건, 약 372억원 규모의 계약 실적을 쌓았고, 공공·금융·제조·국방 등 약 6,500개 고객 레퍼런스를 확보하고 있다. 이러한 레퍼런스는 반복 수주와 신규 산업 진출(K-뷰티, 콘텐츠 등)의 기반이 되고 있다.",
+    "en": "In the first half of 2026, the company ranked No. 1 by sales share on the government's Digital Service Mall procurement platform across all three categories: AI agent (71.5%), AI chatbot (51.8%), and AI search (35.7%). Since first registering on the platform in 2017, it has accumulated 470 contracts worth about 37.2 billion won over nine years and holds roughly 6,500 customer references across the public, financial, manufacturing, and defense sectors. These references are serving as a foundation for repeat orders and expansion into new verticals such as K-beauty and content analytics."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "3년 매출 정체 + 영업이익 급락, 수익성 회복 미검증",
-    "en": "Three-Year Revenue Stagnation, Earnings Collapse, and Unproven Recovery"
+    "ko": "분기 실적의 계절성과 변동성",
+    "en": "Quarterly Seasonality and Volatility"
    },
    "body": {
-    "ko": "2023년 이후 3년 연속 매출이 350억원 전후에서 소폭 감소했고, 영업이익은 34.6억원에서 1.1억원으로 크게 줄었다. 2026년 1분기에도 영업손실이 재발해 분기 수익성 회복의 지속 가능성에 의문이 제기된다. IPO 당시 제시된 2026년 순이익 목표(약 180억원대)와의 현격한 실적 괴리가 투자 신뢰도에 부담으로 작용하고 있으며, 신뢰 회복에는 수치로 검증된 실적 개선이 선행되어야 한다.",
-    "en": "Revenue has edged lower for three consecutive years since FY2023, and operating profit collapsed from ₩3.46bn to ₩114mn over the same period. The recurrence of an operating loss in 2026Q1 raises questions about the durability of the sequential recovery seen in H2 2025. With a wide gap between the implied FY2026 net income target of approximately ₩18bn at IPO and the current trajectory, investor credibility can only be restored through numerically verified earnings improvement, not guidance alone."
+    "ko": "2025년 4분기 매출은 123.8억원으로 계절적 성수기 효과가 뚜렷했지만, 2026년 1분기에는 매출이 72.2억원으로 줄고 영업손실이 14.3억원까지 확대됐다. 2분기에는 매출 74.3억원, 영업손실 1.65억원으로 손실이 줄었지만 여전히 영업이익 기준으로는 적자를 벗어나지 못했다. 공공 발주가 특정 시기에 몰리는 사업 구조상 분기별 편차가 구조적으로 나타나고 있다.",
+    "en": "Fourth-quarter 2025 revenue of 12.38 billion won showed a clear seasonal peak, but first-quarter 2026 revenue fell to 7.22 billion won as the operating loss widened to 1.43 billion won. Second-quarter 2026 revenue was 7.43 billion won with a narrower operating loss of 165 million won, but the company still had not returned to operating profit. Given a business structure where public-sector orders cluster in specific periods, quarter-to-quarter variance appears to be structural."
    }
   },
   {
    "title": {
-    "ko": "AI 에이전트 시장 경쟁 심화 — 대형 플레이어의 자원 집중",
-    "en": "Intensifying Competition from Well-Resourced Large Incumbents"
+    "ko": "상장 당시 제시한 목표 대비 지연",
+    "en": "Progress Lagging IPO-era Targets"
    },
    "body": {
-    "ko": "SK텔레콤·KT·삼성SDS·LG CNS 등 대형 IT·통신 기업과 AWS·MS Azure·Google Cloud 등 글로벌 클라우드 업체들이 공공·민간 AI 에이전트 시장에 자원을 집중하고 있다. 이들은 와이즈넛 대비 훨씬 큰 영업망, 브랜드 신뢰도, R&D 역량을 갖추어 민간 B2B 시장 확장을 어렵게 할 수 있다. AI 에이전트 솔루션의 범용화가 진행될수록 가격 압력이 높아지고 이미 얇아진 마진이 추가 훼손될 위험도 상존한다.",
-    "en": "Major domestic IT and telecom players including SKT, KT, Samsung SDS, and LG CNS, along with global cloud giants (AWS, Microsoft Azure, Google Cloud), are all directing significant resources toward the enterprise AI agent market. These competitors command substantially larger sales forces, brand equity, and R&D budgets, making private-sector B2B expansion difficult for a mid-sized specialist. As AI agent solutions become increasingly commoditized, pricing pressure may intensify, creating additional risks to already-thin operating margins."
+    "ko": "와이즈넛이 상장 당시 제시한 2026년 목표는 매출 835억원, 영업이익 238억원이었다. 그러나 2026년 상반기 누적 매출은 146.5억원에 그쳐, 연간 목표 경로 대비 진행 속도가 뚜렷하게 느리다. 2025년 실적 역시 IPO 밸류에이션 산정 시 가정했던 수준을 크게 밑돌았던 전례가 있어, 가이던스 달성 여부에 대한 시장의 신뢰가 아직 완전히 회복되지 않은 상태다.",
+    "en": "At the time of its listing, WiseNut presented 2026 targets of 83.5 billion won in revenue and 23.8 billion won in operating profit. However, cumulative first-half 2026 revenue reached only 14.65 billion won, indicating the pace of progress is well behind the annual target path. 2025 results also fell well short of the assumptions used in the IPO valuation, meaning market confidence in the company's ability to meet its own guidance has not yet been fully restored."
    }
   },
   {
    "title": {
-    "ko": "공공 의존도 집중 — 발주 지연·예산 불확실성이 즉각적 실적 변동성으로 직결",
-    "en": "Heavy Public-Sector Dependence: Procurement Delays Translate Directly to Earnings Volatility"
+    "ko": "현금창출력 약화 신호",
+    "en": "Signs of Weaker Cash Generation"
    },
    "body": {
-    "ko": "매출의 약 60%가 공공부문에서 발생하는 구조상, 정부 예산 집행 지연이나 발주 일정 변동이 즉각적인 실적 변동성으로 이어진다. 실제 2025년 실적 부진의 원인으로 '경기 불확실성에 따른 공공시장 발주 지연'이 공식 지목됐으며, 이 구조는 2026년에도 반복될 수 있다. 계절성으로 인해 1분기 매출 비중이 낮고 적자 리스크가 구조적으로 내재된 점도 리스크다.",
-    "en": "With approximately 60% of revenue derived from the public sector, results are directly exposed to delays in government budget execution and procurement timelines. Management itself cited 'public-sector procurement delays amid economic uncertainty' as a key FY2025 underperformance driver, and this structural vulnerability could recur in 2026. The inherently low Q1 revenue share caused by seasonal contracting patterns also means first-half operating losses are a structural, not incidental, risk."
+    "ko": "영업활동현금흐름은 2022~2024년 매년 50억원 이상의 플러스를 유지했으나 2025년에는 -5.2억원으로 마이너스 전환했다. 부채비율이 9.3%로 낮아 재무 레버리지 측면의 위험은 낮지만, 손익 개선과 별도로 현금 창출력 자체는 주시가 필요한 구간에 들어섰다. 자사주 매입·소각과 배당 확대를 동시에 추진하는 만큼, 향후 현금흐름 관리가 중요한 과제로 남는다.",
+    "en": "Operating cash flow stayed positive by more than 5 billion won each year from 2022 to 2024 but turned negative at -520 million won in 2025. With the debt ratio at a low 9.3%, financial leverage risk appears limited, but cash generation itself, separate from headline earnings, has entered a phase that warrants attention. As the company simultaneously pursues share buybacks and cancellations alongside expanded dividends, cash flow management remains an important task going forward."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "공공 발주 지연 및 예산 집중 위험",
-    "en": "Public-Sector Procurement Delay and Budget Concentration Risk"
+    "ko": "공공 예산·발주 지연 리스크",
+    "en": "Public Budget and Order Timing Risk"
    },
    "body": {
-    "ko": "전체 매출의 약 60%가 공공부문에 집중되어 있어 정책 우선순위 변경, 정부 IT 예산 삭감, 조달 절차 지연 등에 실적이 민감하게 반응한다. 대형 공공 프로젝트의 수주 실패 또는 기납 프로젝트의 준공·검수 지연은 분기 실적에 즉각적 영향을 준다. 민간 B2B 매출 비중 확대를 통해 리스크를 분산시키는 것이 중장기 과제이나, 실현까지는 상당한 시간이 소요될 수 있다.",
-    "en": "Approximately 60% revenue concentration in the public sector makes financial results sensitive to policy priority shifts, government IT budget cuts, and procurement process delays. Failure to win major public-sector contracts, or delays in project completion and acceptance, can have immediate quarterly earnings consequences. Diversifying toward private-sector B2B revenue is a medium-to-long-term imperative but will take considerable time to materialize at scale."
+    "ko": "회사 매출의 상당 부분이 공공 부문 발주와 연계돼 있어, 예산 편성 시점이나 발주 지연이 실적에 직접적인 영향을 준다. 실제로 과거 한 회계연도에는 연초 제시된 가이던스를 30% 가까이 하회하는 누적 매출을 기록한 바 있고, 최근에도 발주 지연이 실적 변수로 언급된 바 있다. 정부의 AI 관련 예산이 늘어나는 흐름은 긍정적이지만, 실제 집행 시기와 규모의 불확실성은 상존한다.",
+    "en": "A significant portion of the company's revenue is tied to public-sector orders, so the timing of budget allocation and order placement directly affects results. In a past fiscal year, cumulative revenue came in nearly 30% below the guidance issued at the start of the year, and order delays have been cited as a factor affecting results more recently as well. While growth in government AI-related budgets is a positive, uncertainty around the actual timing and scale of execution persists."
    }
   },
   {
    "cat": {
-    "ko": "LLM 범용화에 따른 기술 차별화 약화 위험",
-    "en": "Technology Differentiation Erosion from LLM Commoditization"
+    "ko": "경쟁 심화 리스크",
+    "en": "Competitive Intensity Risk"
    },
    "body": {
-    "ko": "글로벌 빅테크(OpenAI, Google, Anthropic 등)의 범용 LLM 고도화가 가속되면서, 기업용 RAG·AI 에이전트를 클라우드 서비스로 제공하는 경쟁자의 가격 경쟁력이 높아지고 있다. 와이즈넛의 주요 차별화 포인트인 한국어 특화 NLP가 글로벌 LLM의 다국어 성능 향상으로 상대적 우위가 약화될 수 있다. 기술 변화 속도에 맞춘 지속적 R&D 투자가 불가피하며, 이는 비용 구조 부담으로 연결되어 마진 회복을 저해할 수 있다.",
-    "en": "The rapid advancement of general-purpose LLMs from global technology leaders is lowering the barrier to cloud-based AI agent solutions and increasing competitive pricing pressure on specialized vendors. The Korean-language NLP specialization that has been a key competitive moat may be gradually eroded as global LLMs improve their multilingual capabilities. Continuous R&D investment at pace with technological change is non-negotiable but translates directly into sustained cost-structure pressure that could hinder margin recovery."
+    "ko": "조달청 디지털서비스몰에는 생성형 AI를 포함한 AI 에이전트 관련 솔루션이 20개 이상 등록돼 경쟁이 치열해진 상태다. 대형 플랫폼 기업과 시스템통합(SI) 업체들도 AI 에이전트 시장에 진입하고 있어, 점유율 유지를 위한 지속적인 기술·영업 투자가 필요한 구조다.",
+    "en": "More than 20 AI agent-related solutions, including generative AI offerings, are now registered on the government's Digital Service Mall procurement platform, reflecting intensified competition. Large platform companies and systems integrators are also entering the AI agent market, requiring sustained technology and sales investment to maintain market share."
    }
   },
   {
    "cat": {
-    "ko": "IPO 가이던스 미달 반복과 투자자 신뢰 훼손 위험",
-    "en": "Risk of Repeated Guidance Shortfalls and Sustained Investor Credibility Gap"
+    "ko": "수급·유통물량 리스크",
+    "en": "Supply-Demand and Float Risk"
    },
    "body": {
-    "ko": "IPO 당시 제시된 2026년 순이익 목표(약 180억원대)와 실제 실적 간의 큰 괴리는 향후 회사 가이던스에 대한 투자자 신뢰도 훼손으로 이어질 수 있다. 수주 파이프라인이 계획대로 집행되지 않거나 신제품 수요가 기대에 못 미칠 경우, 실적 미달이 반복될 위험이 있다. 이는 주가 멀티플 추가 재조정 압력과 투자 심리 회복 지연 요인으로 작용할 수 있다.",
-    "en": "The significant gap between the approximately ₩18bn FY2026 net income target implied at IPO and current trajectory risks further erosion of investor confidence in management guidance. Should the disclosed order pipeline not execute as projected, or new-product demand underwhelm initial expectations, there is a material risk of repeated guidance shortfalls. This could sustain downward pressure on valuation multiples and delay the restoration of positive investor sentiment."
+    "ko": "2026년 6월에는 ETF 기초지수 편출에 따른 기관 매물 출회로 나흘 새 100만주가 넘는 물량이 시장에 나오며 주가가 52주 신저가를 기록한 바 있다. 회사가 자사주 매입·소각으로 대응했지만, 지수 구성 변경이나 유통 주식 수 변화에 따른 수급 충격은 향후에도 반복될 수 있는 변수다.",
+    "en": "In June 2026, more than one million shares were sold by institutions within four days following the stock's removal from an ETF's underlying index, sending the share price to a 52-week low. The company responded with share buybacks and cancellations, but supply-demand shocks tied to index composition changes or shifts in the free float could recur going forward."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월 (2026Q2 실적 발표)",
-    "en": "July–August 2026 (2026Q2 Earnings Release)"
+    "ko": "2026년 9월 17일 전후",
+    "en": "Around September 17, 2026"
    },
    "what": {
-    "ko": "2026Q2 매출·영업이익의 전년 동기(매출 81.4억원, 영업이익 8.7억원) 대비 성장 여부 확인이 핵심이다. AI 에이전트 전환 매출 가시화와 분기 흑자 전환 여부가 하반기 실적 기대를 결정짓는 선행 지표다.",
-    "en": "Confirm whether 2026Q2 revenue and operating profit beat the prior-year comparative (₩8.14bn revenue, ₩871mn operating profit in 2025Q2). This is the lead indicator for H2 earnings expectations — whether AI agent revenue is materializing and whether the quarterly profit recovery is resuming."
+    "ko": "6월 18일부터 진행된 100억원 규모 자기주식 매입 기간 종료 시점으로, 매입 완료 여부와 향후 소각 절차 진행 상황을 확인할 필요가 있다.",
+    "en": "This marks the end of the 10 billion won share buyback program that began on June 18, so it is worth checking whether the buyback was completed and how the subsequent cancellation process proceeds."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (수주 파이프라인 571억원 집행 현황)",
-    "en": "H2 2026 (₩57.1bn Order Pipeline Execution Status)"
+    "ko": "2026년 10월",
+    "en": "October 2026"
    },
    "what": {
-    "ko": "공개된 수주 파이프라인 571억원 중 실제 계약 전환율과 매출 인식 규모를 점검해야 한다. 집행 속도가 느리면 연간 목표 달성이 어려워지고, 빠르면 이익 추정 상향의 근거가 된다.",
-    "en": "Track the conversion rate of the ₩57.1bn disclosed pipeline into signed contracts and recognized revenue. Slow execution makes annual targets difficult; faster-than-expected execution would provide grounds for upward earnings revisions."
+    "ko": "40만 공무원의 업무를 지원하는 맞춤형 AI 구축 사업의 출시가 예정된 시점으로, 실제 출시 여부와 초기 반응을 확인할 시점이다.",
+    "en": "This is when a customized AI system reportedly designed to support the work of 400,000 civil servants is slated to launch, making it a point to verify whether the launch occurs and gauge the initial response."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (AI 바우처 사업 계약 및 온프레미스 어플라이언스 수주)",
-    "en": "H2 2026 (AI Voucher Program Contracts and On-Premises Appliance Orders)"
+    "ko": "2026년 11월 중",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026 AI 바우처 사업을 통한 수요기업 계약 건수·규모, 그리고 3월 출시된 일체형 AI 서치 에이전트 어플라이언스의 공공기관 공급 실적을 확인해야 한다. 두 채널의 성과는 공공 외 민간 고객 확보 속도를 가늠하는 지표다.",
-    "en": "Monitor the number and size of contracts secured through the 2026 AI Voucher Program, alongside order traction for the all-in-one AI appliance launched in March 2026. These two channels are leading indicators of how quickly the company is expanding beyond its core public-sector customer base."
+    "ko": "2026년 3분기 보고서 공시 예정 시점으로, AI 에이전트 매출 비중이 계속 확대되는지와 영업손익이 흑자로 안착하는지를 확인해야 한다.",
+    "en": "This is when the third-quarter 2026 report is expected to be disclosed, making it important to check whether the AI agent revenue share continues to expand and whether operating profit stabilizes in positive territory."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 (2026Q3 실적 및 연간 가이던스 업데이트)",
-    "en": "November 2026 (2026Q3 Earnings and Full-Year Guidance Update)"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "하반기 수주 집행의 매출 인식 결과가 3분기 실적에 나타나며, 회사의 연간 실적 가이던스 현실화 여부가 구체화되는 시점이다. 2025Q3 영업이익 11.7억원 대비 성장 여부가 마진 회복 추이 판단의 기준점이 된다.",
-    "en": "Third-quarter results will reflect the revenue recognition from H2 order execution and will clarify whether the company's full-year guidance is on track. Whether operating profit exceeds the ₩1.17bn recorded in 2025Q3 is a key benchmark for assessing the margin recovery trajectory."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3~4월 (2026년 연간 실적 확정)",
-    "en": "March–April 2027 (FY2026 Full-Year Results Confirmation)"
-   },
-   "what": {
-    "ko": "2026년 연간 매출·영업이익·순이익 최종 확정치로 AI 에이전트 사업 전환의 성과를 종합 평가해야 한다. 영업이익률 회복 수준과 영업현금흐름의 플러스 전환 여부가 밸류에이션 재평가의 핵심 근거가 될 것이다.",
-    "en": "Finalized FY2026 revenue, operating profit, and net income will allow a comprehensive assessment of the AI agent transition progress. The extent of operating margin recovery and whether operating cash flow returns to positive are the two critical inputs for any meaningful valuation re-rating."
+    "ko": "2027회계연도부터 적용될 현금배당 40%·자기주식 매입·소각 40% 이상 결합 정책이 실제로 이사회·주주총회를 거쳐 어떻게 구체화되는지 확인이 필요하다.",
+    "en": "It will be important to verify how the policy combining a 40% cash dividend with at least 40% in buybacks and cancellations, set to apply from fiscal 2027, is concretely approved through the board and shareholders' meeting."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "와이즈넛은 25년의 한국어 NLP·검색 기술을 기반으로 AI 에이전트 전문기업으로의 전환을 선언하고, 국내 공공 B2G 시장에서 6,000여 고객사와 81% 장기 유지율이라는 탄탄한 고객 기반을 보유한다. 2025년은 코스닥 상장 원년으로 일회성 비용과 R&D 선투자가 겹쳐 영업이익이 1.1억원까지 급감하는 '체질 전환 비용'을 치렀으며, 2026년 1분기에도 영업손실이 재발하는 등 수익성 회복은 아직 검증이 필요한 단계다. 반면 571억원 수주 파이프라인, 2026 AI 바우처 공급기업 선정, 온프레미스 AI 어플라이언스 출시, WISE iRAG V2 GS 1등급 인증 등 매출 가시화 이벤트가 2026년 하반기에 집중돼 있어, 집행 성과에 따라 외형 성장과 마진 회복의 방향성이 가늠될 것이다. 부채비율 9.3%, 자기자본 677억원의 안정된 재무 구조는 불확실성 시기의 버팀목이지만, 영업현금흐름의 마이너스 전환과 IPO 가이던스 대비 큰 실적 괴리는 투자자 신뢰 회복을 위한 선결 과제다. 글로벌 기업용 AI 에이전트 시장의 폭발적 성장이라는 구조적 동력과 공공부문 레퍼런스·제도적 진입장벽이라는 차별화 요소는 유효하나, 2026년 하반기 수주 집행 결과와 분기별 수익성 추이가 전망 신뢰도를 결정짓는 핵심 분기점이 될 것이다.",
-   "en": "WISEnut enters 2026 with a clear strategic identity as an AI agent specialist built on 25 years of Korean NLP and search technology, supported by a deep domestic customer base of over 6,000 accounts and 81% long-term retention. FY2025 served as a year of structural transition cost absorption — the combined impact of IPO one-offs and front-loaded R&D compressed operating profit to just ₩114mn — and the recurrence of an operating loss in 2026Q1 indicates that profitability recovery is still unproven. On the other hand, key revenue-realization events concentrate in H2 2026: a ₩57.1bn order pipeline, AI Voucher Program participation, on-premises appliance rollout, and WISE iRAG V2 certification collectively define whether WISEnut's AI agent narrative can translate into financial substance. The solid post-IPO balance sheet with a 9.3% debt ratio and ₩67.7bn equity provides resilience, but negative operating cash flow and a significant gap versus IPO-time earnings targets remain credibility challenges only tangible results can address. The structural tailwind of exploding enterprise AI agent adoption and WISEnut's institutionalized public-sector positioning are genuine competitive strengths, but H2 2026 order execution and the trajectory of quarterly profitability will be the definitive test of the company's transition thesis."
+   "ko": "와이즈넛은 검색·챗봇 중심의 안정적이지만 정체된 레거시 사업에서, 빠르게 성장하는 AI 에이전트 사업으로 무게중심을 옮기는 전환기에 있다. 2025년 상반기 대비 2026년 상반기 AI 에이전트 매출은 크게 늘었지만, 분기별 영업손익은 여전히 흑자와 적자를 오가며 안정적인 궤도에 완전히 올라서지는 못한 상태다. 재무구조는 낮은 부채비율을 유지하며 안정적이지만, 2025년 영업활동현금흐름이 마이너스로 전환한 점은 눈여겨볼 부분이다. 회사는 순이익의 상당 부분을 현금배당과 자기주식 매입·소각으로 환원하는 정책을 구체화하며 주주 신뢰 회복에 나서고 있고, 공공조달 시장에서의 점유율 우위와 다양한 산업으로의 사업 확장도 확인된다. 다만 상장 당시 제시했던 2026년 매출·이익 목표와 비교하면 현재까지의 진행 속도는 크게 뒤처져 있어, 하반기 이후 실적이 이 격차를 얼마나 좁히는지가 관전 포인트로 남는다. 결국 이 종목에 대한 평가는 AI 에이전트 매출 성장이 레거시 사업의 정체를 상쇄하고 안정적인 이익 구조로 이어질 수 있는지에 달려 있다.",
+   "en": "WiseNut is in a transition period, shifting its center of gravity from a stable but stagnant legacy search-and-chatbot business toward a fast-growing AI agent business. AI agent revenue rose sharply in first-half 2026 compared with a year earlier, but quarterly operating results have continued to alternate between profit and loss, not yet settling onto a fully stable trajectory. The balance sheet remains conservative with a low debt ratio, though the shift to negative operating cash flow in 2025 is worth watching. The company has been working to rebuild shareholder trust by concretizing a policy that returns a large share of net profit through cash dividends and share buybacks and cancellations, and it continues to demonstrate share leadership in the public procurement channel along with expansion into new industry verticals. That said, progress so far falls well behind the 2026 revenue and profit targets set out at the time of listing, leaving the pace at which any gap narrows in the second half and beyond as a key point to watch. Ultimately, how this stock is assessed will hinge on whether AI agent revenue growth can offset stagnation in the legacy business and translate into a stable profit structure."
   }
  },
  "sources": [
+  "https://www.seoul.co.kr/news/economy/2026/08/18/20260818500080",
+  "https://www.wisenut.com/sub/promotion/press.php?s_cate=%EB%89%B4%EC%8A%A4%EA%B8%B0%EC%82%AC&offset=10",
   "https://www.eugenefn.com/common/files/amail/20250106_B_jongsun.park_2280.pdf",
-  "https://www.wisenut.co.kr/sub/promotion/press.php",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A096250",
   "https://m.thinkpool.com/item/096250",
   "https://stocks.pluconnect.com/096250_%EC%99%80%EC%9D%B4%EC%A6%88%EB%84%9B/",
-  "https://www.valueline.co.kr/finance/summary/096250",
-  "https://m.thinkpool.com/compDiscuss/cont/1016653",
+  "https://www.investing.com/equities/wisenut-inc",
+  "https://www.newsprime.co.kr/news/article/?no=733751",
   "https://file.alphasquare.co.kr/media/pdfs/market-report/%EC%99%80%EC%9D%B4%EC%A6%88%EB%84%9B_AI_20260529%ED%95%9C%EA%B5%ADIR%ED%98%91%EC%9D%98%ED%9A%8C.pdf",
-  "https://www.catch.co.kr/Comp/CompSummary/170094",
-  "https://www.jobplanet.co.kr/companies/61867/landing/%EC%99%80%EC%9D%B4%EC%A6%88%EB%84%9B",
-  "https://file.alphasquare.co.kr/media/pdfs/company-ir/20260514_IPO-%EC%99%80%EC%9D%B4%EC%A6%88%EB%84%9B_IR_BOOK.pdf",
+  "https://www.ddaily.co.kr/page/view/2026061112422517445",
+  "https://www.newspim.com/news/view/20260728000216",
+  "https://www.wisenut.co.kr/sub/promotion/press.php",
+  "https://www.newspim.com/news/view/20260810001248",
+  "https://zdnet.co.kr/view/?no=20260810150051",
+  "https://www.thebell.co.kr/front/newsview.asp?key=202604151631496000104950",
+  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A096250",
   "https://kind.krx.co.kr/external/dst/irReference/18116/260224%20%EC%99%80%EC%9D%B4%EC%A6%88%EB%84%9B%204Q25%20IR_fn.pdf",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A096250&cID=&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
-  "http://www.jobkorea.co.kr/Recruit/Co_Read/C/jnhuh",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/anV4RmMxWjdGODRUVDI2aDRYN2Ixdz09/company_nm/(%EC%A3%BC)%EC%99%80%EC%9D%B4%EC%A6%88%EB%84%9B",
-  "https://www.catch.co.kr/Comp/CompInfo/170094",
-  "https://wisenut.irpage.co.kr/",
-  "https://www.jobkorea.co.kr/company/42825611"
+  "https://www.samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&inlineYn=Y&saveKey=research.pdf&fileName=2010%2F2025121610452819K_02_03.pdf"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "096250",
  "name": "와이즈넛",
  "name_en": "WISEnut, INC.",
@@ -234,11 +224,11 @@
   "인공지능(AI)"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:58",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:51",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -288,6 +278,23 @@
     "opm": 9.8,
     "roe": 8.8,
     "debt_ratio": 13.7
+   },
+   {
+    "year": 2022,
+    "rev": 34466435911,
+    "op": 3046747475,
+    "np": -5902403194,
+    "np_owner": -5902403194,
+    "equity": 43808155843,
+    "equity_owner": 43808155843,
+    "equity_nci": null,
+    "liab": 6667211938,
+    "cfo": 5884060539,
+    "eps_basic": -508,
+    "src": "전기 비교치",
+    "opm": 8.8,
+    "roe": -13.5,
+    "debt_ratio": 15.2
    }
   ],
   "quarterly": [
@@ -323,25 +330,26 @@
    }
   ],
   "valuation": {
-   "price": 5860,
-   "mcap": 0.0692,
+   "price": 5630,
+   "mcap": 0.0665,
    "shares": 11814881,
-   "total_shares": 13096536,
+   "total_shares": 13106609,
    "wavg_shares": 13167044,
-   "per": 23.725,
+   "per": 22.794,
    "eps": 247,
-   "pbr": 1.3255,
-   "bps": 4421,
+   "pbr": 1.2732,
+   "bps": 4422,
    "roe_ttm": 5.3,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 3238108227,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.13,
-   "bps_krx": 5170.0,
+   "eps_src": "순이익÷주식수",
+   "pbr_krx": null,
+   "bps_krx": null,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 85.0,
-   "div": 1.45
+   "div": 1.51
   }
  }
 }

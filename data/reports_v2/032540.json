@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "노래방 독주 체제는 굳혔지만, 수익성 회복이 선결 과제",
-  "en": "Karaoke Market Dominance Secured — Margin Recovery the Priority"
+  "ko": "코인노래방 지배력과 신사업 리스크의 공존",
+  "en": "Coin-Karaoke Dominance Meets New-Business Risk"
  },
  "lead": {
-  "ko": "국내 노래방 반주기 시장 독점 지위가 더욱 공고해진 가운데, 영업이익률은 2023년 정점 이후 꾸준히 하락해 2026년 1분기 영업적자로 전환됐으며, 일본 수출 사이클 지속 여부와 플랫폼 서비스 수익화가 실적 방향성의 핵심 변수로 부상했다.",
-  "en": "TJ Media's dominance in Korea's karaoke machine market has deepened, but operating margins have declined steadily from their 2023 peak into an operating loss in 1Q 2026 — making the Japan export cycle and platform monetization the critical variables for any profitability recovery."
+  "ko": "TJ미디어는 코인노래방 시장을 사실상 독점하며 매출을 늘려왔지만, 영업이익률 하락과 엔터테인�인트 자회사의 완전자본잠식이 동시에 진행되고 있다.",
+  "en": "TJ Media has grown revenue by dominating the coin-karaoke market, but operating margin erosion and complete capital impairment at its entertainment subsidiary are unfolding at the same time."
  },
  "keypoints": [
   {
-   "ko": "시장 독주 체제 가속: 경쟁사 금영엔터테인먼트 매출이 2020년 325억원에서 2025년 202억원으로 지속 감소하며 TJ미디어의 지배력이 더욱 확대됨",
-   "en": "Accelerating domestic dominance: Rival Kumyoung's revenue fell from KRW 32.5bn (2020) to KRW 20.2bn (2025), cementing TJ Media's near-monopoly position"
+   "ko": "2025년 연결 매출 944억원으로 전년 대비 늘었으나 연결 영업이익률은 2023년 6.6%에서 2025년 3.5%로 3년 연속 하락했다.",
+   "en": "Consolidated 2025 revenue rose to KRW 94.4bn, but the consolidated operating margin fell for a third straight year, from 6.6% in 2023 to 3.5% in 2025."
   },
   {
-   "ko": "높은 일본 수출 의존도: 2025년 수출이 전체 매출의 약 45%를 차지하며 대부분 일본향으로, 전자목차본 신제품 교체 사이클이 실적 변동성의 주요 요인",
-   "en": "High Japan export dependency: Exports (~45% of 2025 revenue, mostly Japan) fluctuate with electronic index replacement cycles, driving earnings volatility"
+   "ko": "국내 코인노래방 반주기 시장에서 사실상 독점적 지위를 유지하며 경쟁사 금영엔터테인먼트와의 매출 격차를 벌리고 있다.",
+   "en": "The company maintains an effectively dominant position in the domestic coin-karaoke machine market, widening the revenue gap with rival Genie Entertainment."
   },
   {
-   "ko": "수익성 하락 추세 지속: OPM이 2023년 6.6%에서 2025년 3.5%로 하락, 2026년 1분기에 영업적자(-약 7억원) 전환",
-   "en": "Persistent profitability erosion: OPM fell from 6.6% (2023) to 3.5% (2025), turning into an operating loss in 1Q 2026"
+   "ko": "100% 자회사 위드어스엔터테인먼트는 2년 연속 순손실과 완전자본잠식에 빠졌고, 관계기업 씨드에프엔에스도 자본총계가 마이너스로 전환됐다.",
+   "en": "Wholly owned subsidiary Withus Entertainment posted net losses for two straight years and fell into complete capital impairment, while affiliate Seed FNS also turned to negative equity."
   },
   {
-   "ko": "플랫폼 전환 초기 성과: '방대방 노래대결' 이용률 3개월 만에 322% 증가, 3시리즈 반주기 이용량 기존 모델 대비 3.7배로 디지털 전략에 긍정적 초기 신호",
-   "en": "Early platform traction: 'Room vs. Room' usage surged 322% in 3 months; Series 3 machines post 3.7x the utilization of prior models"
+   "ko": "2026년 1분기 영업손실(-6.8억원)을 기록한 뒤 2분기에 영업이익 7.7억원으로 회복했다.",
+   "en": "After posting an operating loss of about KRW -0.68bn in Q1 2026, the company recovered to an operating profit of roughly KRW 0.77bn in Q2 2026."
   },
   {
-   "ko": "순자산 할인 구간 + DPS 320원 유지: 주가가 주당 순자산(BPS 약 4,010원)을 하회하는 구간에서, 2025년 결산 주당 현금배당금 320원(DART 공시)이 확인됨",
-   "en": "Below-book price with sustained dividend: Share price trades below per-share book value (~KRW 4,010 BPS); 2025 DPS of KRW 320 per share confirmed via DART filing"
+   "ko": "오너일가 지분이 54.81%에 달하는 가운데, 별도 기준 순이익을 초과하는 배당 지급이 지배구조 관련 논란의 대상이 되고 있다.",
+   "en": "With the founding family holding a 54.81% stake, dividend payouts exceeding standalone net income have drawn governance-related scrutiny."
   }
  ],
  "business": {
-  "ko": "TJ미디어는 1981년 태진음향으로 출발해 1993년 국내 최초 실제연주방식 업소용 노래반주기를 출시한 이래 국내 노래방 반주기 시장 매출 1위 기업으로 자리잡았다. 주력 사업은 ①업소용·가정용·코인노래방용 반주기 하드웨어, ②앰프·스피커 등 주변기기, ③일본 향 전자목차본(전자인덱스), ④신곡 업데이트·음원 콘텐츠 구독 서비스 등 네 가지 축으로 구성된다. 2001년부터 일본 최대 가라오케 업체 다이치코쇼(제일흥상사)와 전자목차본·반주기 공급 계약을 체결해 수출하고 있으며, 2025년 기준 수출이 전체 매출의 약 45%를 차지하고 그 대부분이 일본에서 발생한다. 국내에서는 코인노래방 시장 수요를 선점해 MZ세대 이용자를 확보했고, '방대방 노래대결', '퍼펙트 스코어', '마이 TJ 앱' 등 소셜·디지털 기능을 탑재한 플랫폼 기업으로의 전환을 추진 중이다. 필리핀·태국 법인 및 미국 법인을 통해 해외 시장에도 진출해 있으며, 필리핀 가라오케 반주기 시장에서는 점유율 1위를 달성했다. 프랑스 자회사 드림(Dream S.A.S)을 통해 음원 반도체 기술을 내재화하고 있어 고품질 사운드 구현이 경쟁 우위로 작용한다. 경쟁사인 금영엔터테인먼트의 매출이 2025년 약 202억원으로 지속 줄어들면서 사실상 TJ미디어 독주 체제로 시장이 재편됐다. 콘텐츠 부문에서는 2025년 한 해에만 4천여 신곡과 140여 편의 뮤직비디오를 탑재해 업계 최다 수준의 콘텐츠 풀을 유지하고 있다.",
-  "en": "TJ Media, originally founded as Taejin Sound in 1981, launched Korea's first commercial live-music karaoke machine in 1993 and has since become the country's top-selling karaoke equipment maker by revenue. The business is built on four pillars: (1) karaoke machines for commercial, home, and coin-operated venues; (2) peripheral hardware including amplifiers and speakers; (3) electronic index books (songbooks) exported to Japan; and (4) monthly song-update and content subscription services. Since 2001, TJ Media has supplied electronic index books and machines to Japan's largest karaoke operator Daiichikosho, with exports accounting for roughly 45% of 2025 revenue, the vast majority sourced from Japan. Domestically, the company captured the coin-karaoke wave powered by younger consumers and is transitioning into a platform business with features such as 'Room vs. Room' karaoke battles, perfect-score evaluation, and a mobile app. Overseas presence spans the Philippines (market-share leader in karaoke systems), Thailand, and the US. A French subsidiary, Dream S.A.S, provides in-house audio chip technology underpinning the company's sound quality edge. Rival Kumyoung's revenue has shrunk to roughly KRW 20.2bn (2025), reinforcing TJ Media's near-monopoly. On the content side, the company loaded over 4,000 new songs and 140+ music videos onto its machines in 2025 alone, maintaining the industry's largest content library."
+  "ko": "TJ미디어는 1991년 설립, 1997년 코스닥에 상장한 국내 1위 노래반주기 전문 기업으로, 업소용·가정용 반주기와 코인노래방용 기기를 주력으로 생산한다. 사업 구조는 크게 반주기 하드웨어, 매월 신곡을 제작해 판매하는 반주기 음악콘텐츠, 일본 수출용 전자목차본(터치식 전자 인덱스), 프랑스 자회사 Dream S.A.S가 생산하는 음원 IC, 온라인·모바일 플랫폼(TJ커뮤니케이션), 그리고 엔터테인먼트 매니지먼트(위드어스엔터테인먼트)로 구성된다. 2026년 1분기 기준 반주기 음악콘텐츠 부문 매출은 연결 매출의 약 29%를 차지했고, 같은 분기 전자목차본은 약 4%, 음원 IC 부문은 약 14%로 나타났다.  자회사 위드어스엔터테인먼트에는 아이돌그룹 '더윈드' 외에도 에이핑크, 휘인, 후이 등 아티스트가 소속돼 있다. 국내 노래방 시장은 회식 문화 축소로 위축됐지만, 코인노래방이 1020세대를 중심으로 확산하면서 TJ미디어는 방대방 노래대결, 간편결제, 전용 앱 등 기능을 강화해 이 수요를 흡수했다. 업계 관계자는 시중 코인노래방 기기의 대부분이 TJ 제품이라고 언급했으며, 경쟁사 금영엔터테인먼트의 매출은 2020년 325억원에서 지속적으로 감소하는 추세를 보였다. 해외에서는 일본 가라오케 1위 업체 제일흥상에 전자목차본을 공급해왔고, 필리핀 법인을 통해 동남아 시장에도 진출해 있다. 반주기에 내장된 방대한 음악 콘텐츠 라이브러리와 음원 IC 기술력은 신규 경쟁자의 시장 진입을 막는 요인으로 꼽힌다.",
+  "en": "Founded in 1991 and listed on KOSDAQ in 1997, TJ Media is the leading domestic karaoke machine maker, producing commercial and home karaoke systems as well as coin-operated karaoke machines. Its business spans karaoke hardware, monthly-updated music content sold with the machines, electronic song-index tablets exported to Japan, sound chips produced by French subsidiary Dream S.A.S, an online/mobile platform run by TJ Communication, and an entertainment management arm, Withus Entertainment. As of the Q1 2026 quarterly filing, the karaoke-music-content segment accounted for roughly 29% of consolidated revenue, while the electronic song-index segment was about 4% and the sound-chip segment about 14%. Withus Entertainment manages idol group The Wind as well as artists Apink, Whee In, and Hui. The domestic karaoke market has shrunk as corporate after-work drinking culture faded, but coin-karaoke has spread rapidly among teens and twenties, and TJ Media captured this demand by adding room-versus-room song battles, easy payment, and a dedicated app. An industry source noted that most coin-karaoke machines in the market are TJ products, while rival Genie Entertainment's revenue has been on a steady decline from KRW 32.5bn in 2020. Overseas, TJ Media has supplied electronic song-index units to Japan's largest karaoke operator, Daiichikosho, and operates a Philippine subsidiary covering Southeast Asia. The company's extensive built-in music library and sound-chip technology are cited as barriers to new entrants."
  },
  "earnings": {
-  "ko": "연간 매출은 2022년 859억원(OPM 4.8%)에서 2023년 964억원(OPM 6.6%)으로 정점을 기록한 뒤, 2024년 919억원(OPM 5.1%), 2025년 944억원(OPM 3.5%)으로 매출은 비교적 안정적이나 영업마진이 뚜렷한 하락세를 보이고 있다. 2025년 연결 기준 영업이익은 약 33억원으로 전년 약 47억원 대비 29.5% 감소했으며, 지배주주 귀속 당기순이익도 약 40억원으로 14.2% 줄었다. 주목할 점은 2025년 영업이익(33억원)보다 당기순이익(40억원)이 높아 비영업 수익이 이익을 구조적으로 보완하고 있다는 것이다. 분기별로는 2025년 3분기(매출 248억원, 영업이익 약 17억원)가 연간 최강 분기를 기록했으며, 일본향 전자목차본 신제품 출시 효과와 계절 성수기가 맞물린 결과로 분석된다. 2025년 2분기는 분기 최고 매출인 275억원을 기록했음에도 영업이익은 약 3억원에 그쳐 원가 및 판촉 비용 부담이 극대화됐다. 2026년 1분기는 매출 174억원, 영업손실 약 7억원으로 계절적 비수기와 비용 구조 악화가 겹쳐 영업적자로 전환됐으며, 지배주주 순이익은 약 1억원에 불과했다. 영업현금흐름은 2024년 134억원에서 2025년 38억원으로 급감해 이익의 현금 전환 능력이 크게 약화됐다. 부채비율은 2022년 58.0%에서 2025년 52.0%로 소폭 개선됐으나, 이익창출력 저하에 따른 재무 여력 변화를 지속 점검할 필요가 있다.",
-  "en": "Annual revenue peaked at KRW 96.4bn in 2023 (OPM 6.6%) after growing from KRW 85.9bn in 2022 (OPM 4.8%), then retreated to KRW 91.9bn in 2024 (OPM 5.1%) and partially recovered to KRW 94.4bn in 2025 (OPM 3.5%) — a picture of stable revenues but relentless margin compression. In 2025, operating profit fell 29.5% year-on-year to approximately KRW 3.3bn, and attributable net income declined 14.2% to approximately KRW 4.0bn. Notably, 2025 net income (KRW 4.0bn) exceeded operating profit (KRW 3.3bn), indicating a structural reliance on non-operating income to support the bottom line. By quarter, 3Q 2025 was the strongest (revenue KRW 24.8bn, operating profit ~KRW 1.75bn), combining seasonal demand with the new Japan electronic index book cycle. 2Q 2025 posted the highest quarterly revenue (KRW 27.5bn) but only KRW 0.33bn in operating income, pointing to extreme cost and marketing pressure. 1Q 2026 recorded an operating loss of approximately KRW 0.68bn on revenue of KRW 17.4bn, with attributable net income barely positive at KRW 0.11bn — a confluence of seasonal trough and intensifying cost headwinds. Operating cash flow fell sharply from KRW 13.4bn (2024) to KRW 3.8bn (2025), signaling a material deterioration in cash generation quality. The debt ratio eased modestly from 58.0% (2022) to 52.0% (2025), preserving a relatively sound balance sheet even as earnings power has weakened."
+  "ko": "연결 매출은 2022년 859억원에서 2023년 964억원으로 늘었다가 2024년 919억원, 2025년 944억원으로 완만한 등락을 보였다. 반면 연결 영업이익은 2022년 41억원에서 2023년 63억원으로 정점을 찍은 뒤 2024년 47억원, 2025년 33억원으로 2년 연속 줄었고, 영업이익률도 2023년 6.6%에서 2024년 5.1%, 2025년 3.5%로 3년 연속 하락하는 흐름을 보였다. 지배주주 순이익은 2022년 44.9억원, 2023년 47.0억원, 2024년 46.4억원, 2025년 39.9억원으로 영업이익보다는 완만하게 움직였다. 분기별로는 2025년 2분기 매출 274.9억원에 영업이익 3.3억원, 지배주주 순이익 1.2억원으로 상대적으로 저조했으나, 3분기에는 매출이 248.2억원으로 줄었음에도 영업이익 17.5억원, 순이익 16.2억원으로 큰 폭 개선됐다. 4분기에는 매출 207.4억원, 영업이익 5.5억원이었지만 순이익은 17.5억원으로 오히려 커졌는데, 이는 영업외 요인이 개입된 결과로 해석된다. 2026년 1분기에는 매출이 174.0억원으로 줄고 영업손실 6.8억원을 기록하며 적자로 전환했으나, 2분기에는 매출 196.2억원, 영업이익 7.7억원으로 흑자 전환에 성공했다. 최근 4개 분기(2025년 3분기~2026년 2분기) 누적 지배주주 순이익은 38.6억원으로, 분기별 변동성이 큰 가운데서도 연간 단위로는 이익을 유지하는 모습이다. 재무 건전성 측면에서 부채비율은 2022년 58.0%에서 2025년 52.0%로 다소 개선됐고, 2025년 연결 영업활동현금흐름은 38.1억원으로 2024년 133.6억원보다 크게 줄어 현금창출력의 둔화가 나타났다.",
+  "en": "Consolidated revenue rose from KRW 85.9bn in 2022 to KRW 96.4bn in 2023, then eased to KRW 91.9bn in 2024 and KRW 94.4bn in 2025. Operating profit, by contrast, peaked at KRW 6.3bn in 2023 after KRW 4.1bn in 2022, then declined for two straight years to KRW 4.7bn in 2024 and KRW 3.3bn in 2025, with the operating margin falling for three consecutive years from 6.6% in 2023 to 5.1% in 2024 and 3.5% in 2025. Net income attributable to owners moved more gently, at KRW 4.49bn, 4.70bn, 4.64bn, and 3.99bn in 2022 through 2025 respectively. On a quarterly basis, Q2 2025 was relatively weak with revenue of KRW 27.49bn, operating profit of KRW 0.33bn, and owner net income of KRW 0.12bn, while Q3 2025 improved sharply to operating profit of KRW 1.75bn and net income of KRW 1.62bn even as revenue fell to KRW 24.82bn. Q4 2025 revenue was KRW 20.74bn with operating profit of KRW 0.55bn, yet net income rose to KRW 1.75bn, suggesting non-operating items played a role. Q1 2026 turned negative, with revenue falling to KRW 17.40bn and an operating loss of KRW 0.68bn, before Q2 2026 swung back to profit with revenue of KRW 19.62bn and operating profit of KRW 0.77bn. Over the trailing four quarters (Q3 2025 through Q2 2026), cumulative owner net income was KRW 3.86bn, showing that despite quarter-to-quarter volatility the company has kept an annual profit. On the balance sheet, the debt ratio improved somewhat from 58.0% in 2022 to 52.0% in 2025, while consolidated operating cash flow slowed sharply to KRW 3.81bn in 2025 from KRW 13.36bn in 2024."
  },
  "industry": {
-  "ko": "국내 노래방 반주기 시장은 코로나19 이후 전통 룸 노래방 방문이 정체된 반면 코인노래방이 10·20대를 중심으로 빠르게 확산되면서 구조적 재편이 진행 중이다. 코인노래방은 좁은 개인 부스에 고성능 반주기 여러 대가 필요해 기기 대당 판매 단가가 높고 교체 주기가 짧아, 제조사 입장에서 매출 단가 상승 효과를 제공한다. 일본 가라오케 시장은 엔데믹 이후 수요가 회복됐고 K-POP의 글로벌 인기 확산이 한국산 반주기·콘텐츠에 대한 구조적 수요 기반을 유지시키고 있다. 그러나 일본 교체 사이클이 완료된 이후에는 수요 공백이 발생할 수 있고, 엔화 약세가 지속될 경우 수출 단가 경쟁력에 부담을 준다는 점이 업황 리스크다. 경쟁 구도는 TJ미디어 독주로 재편됐으며, 금영엔터테인먼트의 매출이 2025년 약 202억원까지 하락해 경쟁 압력이 크게 완화됐다. OTT·게임 등 대체 여가 플랫폼의 부상은 전체 노래방 방문 총량의 구조적 성장을 억제하는 잠재 역풍으로, 내수 노래방 업황이 성숙기에 진입하고 있음을 시사한다. 필리핀·태국 등 동남아 시장은 K-콘텐츠 인기와 현지 법인 기반을 토대로 장기 성장 가능성을 지니나, 현재 전체 실적에서의 기여 규모는 제한적이다.",
-  "en": "Korea's karaoke machine market is undergoing structural reshaping: traditional karaoke room visits have stagnated post-COVID while coin-operated venues have proliferated among younger consumers. Coin karaoke sites require multiple high-spec machines per small booth, supporting higher average selling prices and shorter replacement cycles — beneficial unit economics for equipment makers. Japan's karaoke market recovered post-pandemic, and the global K-POP wave underpins structural demand for Korean content and hardware. However, a lull following the end of a replacement cycle can create a demand gap, and a persistently weak yen reduces export price competitiveness. Competitively, TJ Media's near-monopoly is solidifying as Kumyoung's revenue has contracted to roughly KRW 20.2bn (2025). The rise of OTT, gaming, and social media as competing leisure activities caps structural growth in total karaoke visit volume, a sign that the domestic market is maturing. Southeast Asian markets — the Philippines, Thailand, Vietnam — offer long-term upside backed by K-content popularity and TJ Media's local subsidiaries, though revenue contributions remain limited at present."
+  "ko": "국내 노래방 산업은 코로나19 이후 회식·단체 문화가 위축되면서 전통적 노래방 이용은 줄었지만, 1020세대를 중심으로 한 코인노래방이 빠르게 확산하며 시장 구조를 바꿔놓았다. TJ미디어는 이 변화에 코인노래방용 반주기, 방대방 노래대결, 전용 앱 같은 기능으로 대응해 시장 재편의 최대 수혜자가 됐고, 그 결과 경쟁사 금영엔터테인먼트와의 매출 격차가 확대됐다. 다만 국내 시장 자체의 성장세는 둔화되고 있어, 회사는 일본·필리핀·미국 등 해외 시장으로 활로를 넓히고 있다. 일본은 노래방 원조 시장으로 TJ미디어의 전자목차본이 현지 1위 업체에 공급되고 있으나, 2026년 1분기 실적에서는 이 부문 매출 비중이 직전 대비 크게 줄어드는 모습도 확인됐다. 콘텐츠 라이브러리와 음원 반도체 기술력은 신규 진입자에 대한 진입장벽으로 작용하지만, 동시에 매월 신곡 제작 등 콘텐츠 유지 비용도 지속적으로 발생하는 구조다. 엔터테인먼트 사업은 국내 대형 기획사들이 이미 자리 잡은 경쟁이 치열한 영역으로, TJ미디어의 위드어스엔터테인먼트는 아직 뚜렷한 수익 모델을 확보하지 못한 상태다.",
+  "en": "The domestic karaoke industry has seen traditional group outings decline since the pandemic, but coin-operated karaoke aimed at teens and twenties has spread rapidly, reshaping the market structure. TJ Media responded with coin-karaoke machines, room-versus-room song battles, and a dedicated app, emerging as the main beneficiary of this shift, which widened its revenue gap versus rival Genie Entertainment. Still, growth in the domestic market itself is slowing, prompting the company to expand into Japan, the Philippines, and the United States. Japan, the birthplace of karaoke, has been a key market where TJ Media's electronic song-index units supply the country's largest operator, though the Q1 2026 filing showed this segment's share of revenue dropping sharply versus prior periods. The music content library and sound-chip technology act as barriers to new entrants, but they also require continuous investment such as monthly new-song production. The entertainment business operates in a highly competitive field already dominated by large established agencies, and TJ Media's Withus Entertainment has yet to establish a clear profit model."
  },
  "outlook": {
-  "ko": "일본 수출 부문에서는 전자목차본 태블릿 신제품이 현지 고객의 호응을 얻으며 교체 수요가 진행 중이어서 해당 사이클이 지속되는 동안 수출 매출의 방어가 기대된다. 국내에서는 2025년 하반기 출시된 3시리즈 반주기가 기존 모델 대비 이용량 3.7배를 기록하며 업소 업주들의 교체 의욕을 자극하고 있어 내수 반주기 매출의 점진적 회복이 예상된다. '방대방 노래대결' 서비스는 론칭 3개월 만에 이용률이 322% 증가했으며, 선곡 확대(5곡)와 이벤트 강화가 병행되어 콘텐츠 플라이휠의 가속 여부가 주목된다. 시니어 시장을 겨냥한 스마트 헬스 뮤직 시스템 'M2' 출시와 위드어스엔터테인먼트와의 걸그룹 오디션 협업은 신규 고객군 확보 및 콘텐츠 IP 확장을 위한 시도다. 회사는 글로벌 플랫폼 기업으로의 도약을 중기 전략 목표로 제시하며 미국 시장 진출도 추진 중이나, 구체적 매출 기여 시점은 아직 공시를 통해 확인되지 않는다. 2026년 상반기는 계절 비수기와 비용 구조 개선 지연이 겹쳐 이익 개선폭이 제한적일 가능성이 크며, 하반기(특히 3분기)의 계절 수요 회복이 연간 손익의 방향성을 좌우할 전망이다. 콘텐츠·플랫폼 투자가 가시적 수익으로 전환되는 속도가 중기 전략 실현의 핵심 변수로 부상하고 있다.",
-  "en": "On the export front, the new tablet-type electronic index book is gaining traction with Japanese customers, suggesting the replacement cycle has further runway and provides near-term export revenue support. Domestically, the Series 3 machine — launched in late 2025 — is driving upgrade demand with 3.7x the utilization of its predecessor, pointing to a gradual domestic hardware recovery. The 'Room vs. Room' battle feature saw 322% usage growth within three months of launch, with expanded song selection and event promotions designed to sustain the content flywheel. The senior-oriented smart health music system 'M2' and a girl-group talent-show collaboration with WithUs Entertainment target new demographics and content IP development. US market entry remains a stated medium-term goal with a local subsidiary in place, though no concrete revenue timeline has been publicly disclosed. First-half 2026 profitability is likely to remain constrained by seasonal softness and ongoing cost pressures; the seasonally stronger second half — particularly 3Q — will be decisive for the full-year earnings trajectory. The pace at which platform and content revenues materially contribute to the top line has become the pivotal variable for medium-term strategy execution."
+  "ko": "회사는 지난해 6월 출시한 전용 앱이 11개월 만에 가입자 10만 명을 넘어섰다고 밝혔으며, 방대방 노래대결 등 콘텐츠 기능을 지속적으로 확장하고 있다. 해외에서는 일본 전자목차본에 태블릿 신제품을 도입해 현지 고객의 호응을 얻은 것으로 알려졌고, 필리핀 법인을 거점으로 동남아 유통망 확대를 추진 중이다. 엔터테인먼트 부문은 기존 '더윈드' 외에 에이핑크, 휘인, 후이 등 아티스트를 영입해 라인업을 넓혔으나, 완전자본잠식 상태에서 벗어나기 위한 구체적인 구조조정 계획은 아직 외부에 공개되지 않았다. 회사 측은 관련 매체의 질의에 답변하지 않은 것으로 확인돼, 신사업 방향성에 대한 불확실성이 남아 있다. 본업인 노래반주기 부문은 코인노래방 교체 수요와 전국 실시간 노래대결 시스템을 성장 동력으로 삼고 있으나, 2026년 1분기처럼 계절적 요인이나 수출 물량 변동에 따라 실적이 출렁일 수 있음을 최근 분기 실적이 보여줬다. 향후 관전 포인트는 3분기 이후 실적이 2분기의 회복 흐름을 이어가는지, 그리고 위드어스엔터테인먼트에 대한 추가 자금 투입이나 구조조정 여부다.",
+  "en": "The company has said its dedicated app surpassed 100,000 subscribers within 11 months of its June 2025 launch, and it continues to expand content features such as room-versus-room song battles. Overseas, a new tablet-based electronic song-index product for the Japanese market reportedly drew a positive customer response, and the company is pursuing Southeast Asian distribution expansion via its Philippine subsidiary. The entertainment unit has broadened its artist roster beyond The Wind to include Apink, Whee In, and Hui, but no concrete restructuring plan to exit the subsidiary's complete capital impairment has been disclosed publicly. The company reportedly did not respond to a media outlet's inquiries on the matter, leaving uncertainty around the direction of the new business. The core karaoke-machine segment is counting on coin-karaoke replacement demand and a nationwide real-time song-battle system as growth drivers, though recent quarters, including the Q1 2026 loss, show results can swing with seasonal factors or export volumes. Key items to watch going forward are whether results after Q3 continue the Q2 recovery trend, and whether further capital injections or restructuring occur at Withus Entertainment."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 2025년 말 기준 주당 순자산(BPS 약 4,010원)을 하회하는 구간에 위치해 있어, 순자산 대비 할인 상태가 이어지고 있다. 과거 이 종목은 수익성이 정점을 기록한 2023년(OPM 6.6%)을 전후로 상대적으로 높은 배수를 형성했으나, 영업마진 하락이 누적되면서 시장의 이익 기대치가 낮아지고 밸류에이션 재평가 압력이 작용하고 있다. 2025년 결산 기준 주당 현금배당금(DPS) 320원이 DART에 공시됐으며, 현 주가 수준에서 배당수익률이 코스닥 동종 소형 제조업 평균을 상당 폭 상회하는 구간에 해당한다. 영업이익보다 당기순이익이 높게 형성되는 구조(비영업 이익 보완)인 만큼, 이익의 지속성과 질(質)을 별도로 점검할 필요가 있다. 부채비율 52%의 탄탄한 재무 구조가 밸류에이션 하방을 지지하나, 핵심 영업 수익성이 회복되기 전까지는 재평가 동력을 얻기 어려운 국면이라는 점을 유의해야 한다.",
-  "en": "The current share price sits below per-share book value (BPS approximately KRW 4,010 as of end-2025), meaning the stock continues to trade at a discount to net asset value. Historically, shares commanded higher valuation multiples when profitability was at its peak around 2023 (OPM 6.6%); the sustained margin decline has compressed the market's earnings expectation and created re-rating headwinds. The 2025 DPS of KRW 320 per share — confirmed by DART filing — implies a dividend yield that meaningfully exceeds the KOSDAQ small-cap manufacturing average at current price levels. Because net income consistently exceeds operating profit (propped up by non-operating income), earnings quality and sustainability warrant independent scrutiny. A debt ratio of roughly 52% and a solid equity base provide downside support, but a tangible recovery in core operating profitability appears to be a prerequisite for a meaningful re-rating."
+  "ko": "주가순자산비율은 1배 안팎에서 형성돼 순자산 대비 큰 프리미엄이나 할인 없이 거래되는 모습이며, 순이익 대비 주가 배수는 최근 분기 이익이 등락한 국면에서 형성된 밴드 안에 위치한다. 배당 관련해서는 별도 기준 순이익을 초과하는 배당 총액이 지배구조 이슈로 제기된 바 있어, 배당수익률을 판단할 때 이 같은 배경을 함께 고려할 필요가 있다. 다년간 흐름을 보면 영업이익률이 완만히 하락하는 가운데 순이익은 상대적으로 안정적으로 유지돼 온 편이고, 2026년 1분기 영업손실 이후 2분기 흑자로 돌아선 점이 최근 이익 회복의 근거로 언급된다. 시가총액이 상대적으로 작은 종목 특성상 거래 유동성과 지배주주 지분 구조가 가격 형성에 미치는 영향도 함께 살펴볼 필요가 있다.",
+  "en": "The price-to-book ratio sits close to 1x, implying the shares trade without a large premium or discount to net assets, while the price-to-earnings multiple falls within the band shaped by recent quarters of fluctuating profit. On the dividend side, a payout exceeding standalone net income has been raised as a governance issue, and this context is worth weighing alongside any assessment of dividend yield. Over multiple years, net income has stayed relatively stable even as the operating margin gradually declined, and the swing from an operating loss in Q1 2026 to a profit in Q2 2026 has been cited as evidence of a recent earnings recovery. Given the company's relatively small market capitalization, trading liquidity and the concentrated ownership structure are also factors worth considering in how the price is formed."
  },
  "bull": [
   {
    "title": {
-    "ko": "경쟁 구도 사실상 독점, 금영 약세 가속",
-    "en": "Near-Monopoly Solidifying as Kumyoung Weakens Further"
+    "ko": "코인노래방 시장 독점적 지위",
+    "en": "Near-Monopoly in Coin-Karaoke"
    },
    "body": {
-    "ko": "2025년 TJ미디어 매출 944억원 대비 경쟁사 금영엔터테인먼트의 매출은 202억원으로, 이 격차는 더욱 벌어지는 추세다. 경쟁 압력 완화는 TJ미디어가 가격 주도권을 유지하고 마케팅 비용을 절감할 수 있는 우호적 환경을 제공한다. 독주 체제가 고착화될수록 신곡 업데이트 수신료 등 반복 수익 기반도 함께 확대되어 수익 구조의 안정성이 높아진다.",
-    "en": "TJ Media's 2025 revenue of KRW 94.4bn dwarfs rival Kumyoung's KRW 20.2bn, and the gap is widening. Reduced competition allows TJ Media to retain pricing power and reduce marketing outlays. As dominance deepens, the recurring revenue base from monthly song-update subscriptions expands, adding structural stability to the earnings mix."
+    "ko": "TJ미디어는 1020세대 중심의 코인노래방 수요를 선점하며 경쟁사 금영엔터테인먼트와의 매출 격차를 지속적으로 벌리고 있다. 업계 관계자는 시중 코인노래방 기기의 대부분이 TJ 제품이라고 언급했다. 국내 노래방 산업 전체는 정체돼 있지만, TJ미디어는 세부 시장 재편의 최대 수혜자로 자리매김했다.",
+    "en": "TJ Media has captured coin-karaoke demand centered on teens and twenties, continuing to widen its revenue gap versus rival Genie Entertainment. An industry source noted that most coin-karaoke machines in the market are TJ products. While the overall domestic karaoke industry is stagnant, TJ Media has positioned itself as the main beneficiary of this sub-market's reshaping."
    }
   },
   {
    "title": {
-    "ko": "일본 전자목차본 신제품 사이클 + K-POP 수요 기반",
-    "en": "Japan Electronic Index Replacement Cycle + Structural K-POP Demand"
+    "ko": "해외 수출 채널 확대",
+    "en": "Expanding Export Channels"
    },
    "body": {
-    "ko": "2025년 출시된 태블릿형 전자목차본 신제품이 일본 고객의 큰 호응을 얻으며 교체 수요가 진행 중이다. K-POP의 지속적인 글로벌 인기 확산은 일본·동남아 가라오케 시장에서 한국산 반주기와 콘텐츠에 대한 구조적 수요를 유지시키는 장기 지지 요인이다. 과거 2023년처럼 신제품 사이클과 K-콘텐츠 파급 효과가 맞물릴 경우, 수출 부문에서 큰 폭의 레버리지 효과가 나타날 수 있다.",
-    "en": "The new tablet-type electronic index book launched in 2025 is winning Japanese customer approval, sustaining a near-term replacement cycle. The structural global K-POP wave maintains latent demand for Korean karaoke hardware and content in Japan and Southeast Asia. As seen in the 2023 export surge, when a product cycle aligns with K-content momentum, export revenue can generate significant operating leverage."
+    "ko": "일본 가라오케 1위 업체에 전자목차본을 공급해온 이력과 필리핀 법인을 통한 동남아 유통망은 국내 시장 둔화를 상쇄할 수 있는 통로다. 태블릿 기반 신제품이 일본 고객의 호응을 얻은 것으로 알려져 있다. 다만 해당 부문 매출 비중은 분기별로 크게 출렁이는 특성을 보인다.",
+    "en": "A track record of supplying electronic song-index units to Japan's top karaoke operator, plus a Southeast Asian distribution channel via the Philippine subsidiary, offer an outlet to offset domestic market slowdown. A tablet-based new product reportedly drew a positive response from Japanese customers. That segment's revenue share, however, has shown large quarter-to-quarter swings."
    }
   },
   {
    "title": {
-    "ko": "플랫폼 전환 옵션: 콘텐츠·소셜 기능 수익화 잠재력",
-    "en": "Platform Conversion Option: Content and Social Feature Monetization Upside"
+    "ko": "분기 실적의 흑자 회복",
+    "en": "Quarterly Return to Profit"
    },
    "body": {
-    "ko": "'방대방 노래대결' 이용률이 3개월 만에 322% 증가했고 3시리즈 반주기의 이용량이 기존 대비 3.7배에 달하는 등 플랫폼 전환 전략의 초기 지표가 긍정적이다. 매달 업계 최다 수준의 신곡을 탑재하는 콘텐츠 플라이휠이 이용자 충성도를 높이며, 향후 광고·유료 이벤트·엔터테인먼트 협업 등 신규 수익원으로 연결될 잠재력이 있다. 단순 기기 제조사에서 콘텐츠 플랫폼으로의 전환이 가시화될 경우 기업 가치 재평가 가능성이 열린다.",
-    "en": "Early platform metrics are encouraging: 'Room vs. Room' usage surged 322% in three months and Series 3 machines record 3.7x the utilization of legacy models. The content flywheel — fueled by the industry's largest monthly new-song additions — builds user loyalty and opens potential new revenue streams such as advertising, paid events, and entertainment collaborations. A demonstrable shift from pure hardware vendor to content platform could trigger a valuation re-rating."
+    "ko": "2026년 1분기 영업손실을 기록한 뒤 2분기에는 매출 196.2억원, 영업이익 7.7억원으로 회복됐다. 지배주주 순이익도 2025년 3~4분기에 걸쳐 상대적으로 견조한 수준을 보였다. 연간 단위로는 4개 년도 모두 흑자를 유지해온 이력이 있다.",
+    "en": "After an operating loss in Q1 2026, the company recovered to revenue of KRW 19.62bn and operating profit of KRW 0.77bn in Q2 2026. Owner net income was also relatively solid across Q3 and Q4 of 2025. On an annual basis, the company has stayed profitable in each of the past four fiscal years."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "수익성 하락 지속, 2026년 1분기 영업적자 전환",
-    "en": "Persistent Margin Erosion — 1Q 2026 Swings to Operating Loss"
+    "ko": "본업 영업이익률의 구조적 하락",
+    "en": "Structural Decline in Core Operating Margin"
    },
    "body": {
-    "ko": "OPM이 2023년 6.6%에서 2025년 3.5%로 3년 연속 하락한 데 이어 2026년 1분기 영업적자(-약 7억원)가 발생했다. 영업현금흐름도 2024년 134억원에서 2025년 38억원으로 급감해 수익의 현금 전환 능력이 크게 약화됐다. 콘텐츠 투자 확대·인건비 등 비용 증가의 구조적 원인이 해소되지 않는 한, 하반기 계절 회복에도 연간 이익 개선폭이 제한될 수 있다.",
-    "en": "OPM has compressed from 6.6% (2023) to 3.5% (2025) for three consecutive years and turned negative in 1Q 2026 (approximately -KRW 0.68bn). Operating cash flow collapsed from KRW 13.4bn (2024) to KRW 3.8bn (2025), materially weakening cash conversion. Unless the structural cost drivers — rising content investment, labor, and overheads — are brought under control, seasonal second-half recovery may deliver only limited full-year earnings improvement."
+    "ko": "연결 영업이익률은 2023년 6.6%에서 2025년 3.5%로 3년 연속 하락했다. 별도 기준 영업이익률 역시 2023년 9.7%에서 2025년 6.4%로 매년 낮아지는 추세를 보였다. 매출 확대에도 불구하고 수익성이 뒷받침되지 못하는 구조가 이어지고 있다.",
+    "en": "The consolidated operating margin fell for three straight years, from 6.6% in 2023 to 3.5% in 2025. The standalone operating margin also declined every year, from 9.7% in 2023 to 6.4% in 2025. Profitability has failed to keep pace with revenue growth."
    }
   },
   {
    "title": {
-    "ko": "국내 노래방 시장 성숙, 전체 수요 성장의 구조적 한계",
-    "en": "Maturing Domestic Karaoke Market — Structural Cap on Demand Growth"
+    "ko": "엔터테인먼트 자회사의 완전자본잠식",
+    "en": "Complete Capital Impairment at Entertainment Unit"
    },
    "body": {
-    "ko": "코로나19 이후 전통 룸 노래방의 방문 수요는 회식 문화 약화로 구조적으로 정체되고 있으며, 코인노래방 성장도 시간이 지남에 따라 포화 국면에 진입할 수 있다. OTT·게임·숏폼 영상 플랫폼의 부상이 전체 노래방 방문 총량의 성장을 억제하는 구조적 역풍으로 작용한다. 내수 신규 업소 수 감소 추세가 이어질 경우 국내 반주기 하드웨어 교체 수요의 장기 기반도 약화될 수 있다.",
-    "en": "Post-COVID, traditional karaoke room visits have structurally stagnated as after-work group dining culture has weakened, and coin-karaoke growth could approach saturation over time. The proliferation of OTT, gaming, and short-form video platforms acts as a structural headwind capping total karaoke visit volume. If the number of new domestic karaoke venues continues to decline, the long-term hardware replacement demand base could gradually erode."
+    "ko": "100% 자회사 위드어스엔터테인먼트는 2년 연속 순손실을 내며 완전자본잠식에 빠졌고, 회사는 여기에 2024년 36억원, 2025년 23억원의 자금을 추가 출자했다. 그 결과 최근 2년간 종속기업투자 손상차손만 64억원에 달했다. 관계기업 씨드에프엔에스도 자본총계가 마이너스로 전환됐다.",
+    "en": "Wholly owned subsidiary Withus Entertainment posted net losses for two straight years and fell into complete capital impairment, prompting the parent to inject an additional KRW 3.6bn in 2024 and KRW 2.3bn in 2025. As a result, impairment losses on the subsidiary investment reached KRW 6.4bn over the past two years. Affiliate Seed FNS also turned to negative total equity."
    }
   },
   {
    "title": {
-    "ko": "일본 수출 사이클 변동성 + 엔화 환율 리스크",
-    "en": "Japan Export Cycle Volatility + Yen Exchange Rate Risk"
+    "ko": "순이익 초과 배당과 지배구조 논란",
+    "en": "Payout Exceeding Net Income and Governance Concerns"
    },
    "body": {
-    "ko": "전체 매출의 약 45%가 일본 수출에서 발생하는 만큼, 교체 사이클 완료 이후 수요 공백이 생기면 실적 충격이 크다. 엔화 약세가 지속될 경우 수출 단가(원화 환산)가 하락해 수익성에 직접적 타격이 된다. 과거 2014~2015년 일본향 신제품 출시 지연 시 매출이 급락했던 사례처럼, 다이치코쇼 단일 고객 의존도가 높아 교섭력과 수요 가시성이 낮다는 구조적 취약점도 상존한다.",
-    "en": "With roughly 45% of revenue from Japan, a demand gap following a replacement cycle would materially hit earnings. A sustained weak yen reduces the won-equivalent export price, directly compressing margins. As seen in 2014-15 when product delays caused a sharp Japanese revenue decline, high concentration on a single customer (Daiichikosho) limits negotiating leverage and near-term demand visibility."
+    "ko": "2025년 별도 기준 순이익은 31억원에 불과했지만 현금배당금 총액은 45억원에 달해 순이익을 초과했다. 지분 54.81%를 보유한 오너일가가 이 중 상당 부분을 수령한 것으로 보도돼 도덕적 해이 논란이 제기됐다. 신사업 부실과 동시에 진행된 고배당 정책은 자본 배분의 우선순위에 대한 의문을 낳는다.",
+    "en": "Standalone net income in 2025 was only KRW 3.1bn, yet total cash dividends reached KRW 4.5bn, exceeding net income. Reports indicated the founding family, which holds a 54.81% stake, received a substantial portion of this payout, raising moral-hazard concerns. A high-dividend policy pursued alongside a deteriorating new business raises questions about capital allocation priorities."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "핵심 고객 집중 리스크",
-    "en": "Key Customer Concentration Risk"
+    "ko": "신사업 리스크",
+    "en": "New Business Risk"
    },
    "body": {
-    "ko": "일본 다이치코쇼(제일흥상사) 한 거래처에 대한 수출 의존도가 높아, 해당 고객의 발주 변동·관계 변화가 전체 실적에 직접적 충격을 줄 수 있다. 과거 전자목차본 신제품 출시 지연만으로 일본향 매출이 수백억원 급감한 사례가 있어, 단일 고객 집중에 따른 변동성이 매우 크다. 미국·동남아 고객 다변화가 이 리스크를 완화하기 위한 중장기 과제로, 진행 속도가 관건이다.",
-    "en": "Heavy reliance on Daiichikosho for export revenue means changes in that customer's order volume or the relationship can significantly impact group earnings. Historically, even a product launch delay caused Japanese revenue to drop sharply in a single year, illustrating the high volatility from single-customer concentration. Geographic and customer diversification via the US and Southeast Asia is the long-term hedge, and the pace of that diversification is critical."
+    "ko": "위드어스엔터테인먼트의 완전자본잠식이 지속되는 가운데, 추가 출자나 손상차손이 반복될 경우 연결 실적에 부담을 줄 수 있다. 관계기업 씨드에프엔에스의 자본잠식도 유사한 리스크를 내포한다. 신사업 구조조정 계획이 아직 공개되지 않아 불확실성이 남아 있다.",
+    "en": "With Withus Entertainment's complete capital impairment ongoing, repeated capital injections or impairment charges could weigh on consolidated results. Affiliate Seed FNS's capital impairment carries a similar risk. No restructuring plan for the new business has been disclosed, leaving uncertainty."
    }
   },
   {
    "cat": {
-    "ko": "콘텐츠·플랫폼 투자 확대에 따른 비용 구조 부담",
-    "en": "Rising Content and Platform Investment Pressuring Cost Structure"
+    "ko": "지배구조·배당 리스크",
+    "en": "Governance and Dividend Risk"
    },
    "body": {
-    "ko": "TJ미디어는 콘텐츠 제작·개발비 투자를 매년 확대하고 있으며, 이는 플랫폼 전환에 필수적이지만 단기 수익성을 압박하는 요인이다. 신곡 제작, R&D, 앱·소프트웨어 개발 비용 증가로 고정비가 높아질 경우 매출 정체 국면에서 영업 레버리지가 역방향으로 작동할 수 있다. 플랫폼 수익화 속도가 투자 증가 속도를 따라가지 못하면 수익성 회복 지연의 악순환이 이어질 수 있다.",
-    "en": "TJ Media is expanding content production and R&D investment annually — necessary for its platform transition but a near-term profitability headwind. Rising song-production, software/app development, and marketing costs increase the fixed-cost base; if revenue growth stalls, negative operating leverage amplifies the earnings impact. If platform monetization lags investment growth, a profitability-recovery delay cycle could persist."
+    "ko": "오너일가 지분이 54.81%에 달하는 가운데 순이익을 초과하는 배당이 지급된 사실이 보도돼 자본 배분 정책에 대한 신뢰도 이슈가 제기됐다. 이런 배당 정책이 향후에도 유지될 경우 재무 건전성에 부담이 될 수 있다.",
+    "en": "With the founding family holding a 54.81% stake, reports of dividends exceeding net income have raised questions about the reliability of capital allocation policy. If such a dividend policy continues, it could strain financial health going forward."
    }
   },
   {
    "cat": {
-    "ko": "여가 소비 구조 변화 (대체 엔터테인먼트 부상)",
-    "en": "Structural Shift in Leisure Consumption (Rise of Alternative Entertainment)"
+    "ko": "산업·수요 리스크",
+    "en": "Industry and Demand Risk"
    },
    "body": {
-    "ko": "넷플릭스·유튜브·게임 등 디지털 여가 플랫폼의 급성장이 노래방 방문 시간을 구조적으로 대체하는 장기 리스크다. 특히 Z세대 이후 세대는 짧은 영상·소셜 콘텐츠에 익숙해 노래방에서 긴 시간을 보내는 문화가 지속될지 불확실하다. 이 리스크는 5~10년 스케일의 장기 업황 변화로 나타날 수 있어, 노래방 방문 데이터 및 업소 수 변화를 꾸준히 모니터링할 필요가 있다.",
-    "en": "The rapid growth of digital leisure platforms — Netflix, YouTube, gaming — structurally competes for the time consumers would otherwise spend in karaoke venues. Gen Z and younger cohorts, accustomed to short-form social content, may have fundamentally different karaoke habits compared to older generations. This is more of a 5-10 year secular risk than a near-term earnings driver, but tracking karaoke venue counts and visit frequency data is warranted."
+    "ko": "국내 노래방 산업 자체의 성장세가 둔화된 가운데, 코인노래방 수요 역시 시장 성숙에 따라 성장 속도가 느려질 수 있다. 해외 수출 부문은 분기별 물량 변동성이 커서 실적 예측 가능성을 낮추는 요인이다.",
+    "en": "With growth in the domestic karaoke industry overall slowing, coin-karaoke demand could also see its growth pace ease as the market matures. The export segment shows large quarter-to-quarter volume volatility, reducing the predictability of results."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표: 계절 성수기 진입에 따른 영업이익 흑자 전환 여부와 매출 회복 폭을 확인. 특히 일본향 전자목차본 수출 회복세와 3시리즈 반주기 교체 수요 가시화 여부가 하반기 전망의 핵심 가늠자가 된다.",
-    "en": "2Q 2026 earnings release: Confirm whether the seasonal upturn restores operating profitability and the magnitude of revenue recovery. Japan electronic index exports and Series 3 machine replacement demand are the key indicators for the second-half earnings outlook."
+    "ko": "3분기 보고서 제출 시점으로, 2분기 흑자 전환 흐름이 이어지는지와 반주기·수출 부문 매출 비중 변화를 확인할 시점이다.",
+    "en": "The Q3 report filing deadline, when it will be possible to check whether the Q2 return to profit continues and how the revenue mix between karaoke machines and exports has shifted."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 지속 모니터링",
-    "en": "Ongoing — 2H 2026"
+    "ko": "2026년 4분기~2027년 초",
+    "en": "Q4 2026 to early 2027"
    },
    "what": {
-    "ko": "일본 다이치코쇼 향 전자목차본 납품 사이클 진행 상황과 엔/원 환율 동향 점검. 수출 매출이 전체의 45% 이상을 차지해 일본 발주 추이와 환율 변화가 분기 실적에 직접적 영향을 미친다.",
-    "en": "Track the Japan Daiichikosho tablet-type electronic index replacement cycle and JPY/KRW exchange rate. With Japan exports representing ~45% of revenue, order flow and currency movements are direct real-time indicators of quarterly results."
+    "ko": "위드어스엔터테인먼트에 대한 추가 출자나 손상차손 발생 여부, 관계기업 씨드에프엔에스의 자본잠식 해소 여부를 확인해야 한다.",
+    "en": "Watch for any further capital injections or impairment charges related to Withus Entertainment, and whether affiliate Seed FNS resolves its negative equity."
    }
   },
   {
    "when": {
-    "ko": "분기별 (2026년 하반기)",
-    "en": "Quarterly — 2H 2026"
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "'방대방 노래대결'과 3시리즈 반주기 관련 이용률·업소 보급 대수 등 플랫폼 지표를 점검. 이 지표의 지속 개선은 콘텐츠·구독 기반 반복 매출의 구조적 성장 가능성을 높이는 신호가 된다.",
-    "en": "Monitor platform metrics for the 'Room vs. Room' service and Series 3 machine penetration rates. Sustained improvement would signal growing structural contribution from content and subscription-based recurring revenues."
+    "ko": "2026년 사업보고서와 배당 결의 공시를 통해 순이익 대비 배당 총액 비율이 다시 확대되는지, 지배구조 개선 조치가 있는지 살펴볼 필요가 있다.",
+    "en": "The FY2026 annual report and dividend resolution filing will show whether the payout-to-net-income ratio widens again and whether any governance improvement measures are introduced."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 초",
-    "en": "2H 2026 – Early 2027"
+    "ko": "2026년 4분기 이후 지속 확인",
+    "en": "Ongoing from Q4 2026"
    },
    "what": {
-    "ko": "미국 시장 진출 관련 계약 공시 또는 첫 매출 발생 여부 확인. 미국 법인이 운영 중이나 공개된 성과가 없어, 첫 공시가 나올 경우 글로벌 플랫폼 전략의 신뢰도가 높아지는 계기가 된다.",
-    "en": "Watch for any US market contract disclosure or first revenue booking. The US subsidiary is operational but results remain publicly unreported; any disclosed US sales would mark a credibility milestone for the global platform strategy."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 초 (2026년 결산 배당 공시)",
-    "en": "Early 2027 (2026 FY Dividend Disclosure)"
-   },
-   "what": {
-    "ko": "2026년 결산 DPS 공시를 통해 수익성 압박 국면에서도 주주환원 기조가 유지되는지 확인. 2025년 DPS 320원 대비 변동 여부가 경영진의 이익 전망 자신감을 판단하는 실마리로 작용한다.",
-    "en": "Confirm the 2026 DPS disclosure to assess whether the dividend policy holds through the profitability downturn. Any change versus the 2025 baseline of KRW 320 per share will signal management's confidence — or lack thereof — in the earnings recovery trajectory."
+    "ko": "일본·필리핀 등 해외 수출 물량과 코인노래방 신규 설치·교체 수요 지표를 분기 공시를 통해 지속적으로 점검할 필요가 있다.",
+    "en": "Export volumes to Japan and the Philippines, along with new-installation and replacement demand for coin-karaoke machines, should be tracked continuously through quarterly filings."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "TJ미디어는 국내 노래방 반주기 시장을 사실상 독점하는 지위를 확립했고, 경쟁사 금영의 지속적 쇠퇴가 이 구도를 더욱 공고히 하고 있다. 그러나 2023년 피크 이후 영업이익률이 3년 연속 하락해 2026년 1분기에 영업적자로 전환됐으며, 영업현금흐름도 급감해 단기 수익성 압박이 현실화됐다. 긍정적 측면에서는 3시리즈 반주기와 '방대방 노래대결'의 초기 지표가 고무적이고, 일본향 전자목차본 태블릿 신제품 사이클도 진행 중이어서 하반기 실적 회복의 기반은 존재한다. 재무적으로 부채비율 52%, 순자산 대비 할인 구간의 주가, DPS 320원 유지 등이 하방 지지 요인으로 작용하나, 핵심 영업 수익성의 회복 없이는 본격적인 가치 재평가를 기대하기 어렵다. 매출의 약 45%를 차지하는 일본 수출의 사이클 변동성과 콘텐츠 투자 비용 확대는 해소가 필요한 구조적 과제다. 2026년 3분기 성수기 실적과 일본 수출 추이, 플랫폼 서비스 지표가 이 종목의 중기 방향성을 가늠하는 핵심 확인 포인트다.",
-   "en": "TJ Media has established a near-monopoly in Korea's karaoke machine market, and the ongoing decline of rival Kumyoung makes that position increasingly unassailable. However, operating margins have compressed for three consecutive years since the 2023 peak, turning to a loss in 1Q 2026, while operating cash flow has fallen sharply — making near-term profitability pressures very real. On the positive side, early metrics from the Series 3 machine and the 'Room vs. Room' platform are encouraging, and the Japan electronic index replacement cycle is still underway, providing a foundation for a second-half earnings recovery. Financially, a 52% debt ratio, a share price trading below book value, and a maintained DPS of KRW 320 provide downside support, but a tangible improvement in core operating profitability appears necessary before a meaningful re-rating can materialize. The cyclical volatility of Japanese exports (~45% of revenue) and rising content-investment costs remain structural headwinds that management must navigate. The 3Q 2026 seasonally strong earnings release, Japan export order flow, and platform service metrics are the critical verification points for the company's medium-term direction."
+   "ko": "TJ미디어는 국내 코인노래방 시장에서 경쟁사와의 격차를 벌리며 매출 기반을 유지해왔지만, 연결·별도 기준 영업이익률이 3년 연속 하락하는 등 본업 수익성은 완만히 약화되는 모습이다. 2026년 1분기 영업손실 이후 2분기 흑자로 돌아선 점은 이익 회복의 신호로 볼 수 있으나, 분기별 변동성이 큰 만큼 다음 분기 실적을 함께 확인할 필요가 있다. 동시에 100% 자회사 위드어스엔터테인먼트의 완전자본잠식과 관계기업 씨드에프엔에스의 자본잠식은 신사업 부문의 구조적 부담으로 남아 있다. 오너일가 지분이 절반을 넘는 가운데 순이익을 초과하는 배당이 이루어진 사실은 자본 배분 정책과 지배구조에 대한 추가적인 점검이 필요함을 시사한다. 해외 수출 채널과 앱 기반 콘텐츠 확장은 성장 동력으로 언급되지만, 그 성과가 실적에 안정적으로 반영되는지는 향후 분기 공시를 통해 확인해야 한다. 결국 본업의 시장 지배력과 신사업·지배구조 리스크가 공존하는 구도로, 두 흐름을 함께 지켜보는 것이 중요하다.",
+   "en": "TJ Media has sustained its revenue base by widening the gap with rivals in the domestic coin-karaoke market, but core profitability has gradually weakened, with both consolidated and standalone operating margins declining for three consecutive years. The swing from an operating loss in Q1 2026 to a profit in Q2 2026 can be read as a sign of earnings recovery, but given the high quarter-to-quarter volatility, subsequent quarters warrant close attention. At the same time, complete capital impairment at wholly owned subsidiary Withus Entertainment and negative equity at affiliate Seed FNS remain structural burdens in the new-business segment. With the founding family holding more than half the shares, the fact that dividends exceeded net income suggests further scrutiny of capital allocation policy and governance is warranted. Export channels and app-based content expansion are cited as growth drivers, but whether these translate into stable results will need to be confirmed through future quarterly filings. Overall, the company presents a mix of core-market dominance alongside new-business and governance risk, and both threads merit continued monitoring."
   }
  },
  "sources": [
+  "https://www.hankyung.com/article/2026050848831",
+  "https://www.tjmedia.com/",
+  "https://www.newsspace.kr/news/article.html?no=14694",
+  "https://www.tjmedia.com/introduce/history",
+  "https://v.daum.net/v/20260508200305989",
+  "https://kind.krx.co.kr/external/2026/05/15/002824/20260515006442/11013.htm",
+  "https://www.tjmedia.com/chart/top100",
+  "https://newsong.tjmedia.com/",
   "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=1&gicode=A032540&cID=&MenuYn=Y&ReportGB=&NewMenuID=102&stkGb=701",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A032540",
   "https://www.k5.co.kr/stock/032540",
-  "https://www.investing.com/equities/tj-media-co-ltd",
-  "http://www.thinkpool.com/itemanal/i/index.jsp?code=032540&Gcode=001_046_002",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=searchInitInfo&acptNo=20240315000816&docno=",
   "http://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=032540",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/aGV4L0hzRlgxRlltcENqWkg0OU5MUT09/company_nm/%ED%8B%B0%EC%A0%9C%EC%9D%B4%EB%AF%B8%EB%94%94%EC%96%B4(%EC%A3%BC)",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=632578",
-  "https://www.tjmedia.com/",
-  "https://www.tjmedia.com/introduce/newsroom_view?idx=826",
-  "https://www.facebook.com/alwaysfunTJ/?locale=en_GB",
-  "https://www.youtube.com/channel/UCZUhx8ClCv6paFW7qi3qljg",
-  "https://x.com/ko_karaoke_jpop",
-  "https://play.google.com/store/apps/details?id=tjcomm.zillersong.mobile.activity&hl=en_US",
-  "https://www.tjmedia.com/chart/top100",
-  "https://www.instagram.com/tjmedia/",
-  "https://www.tjmedia.co.kr/introduce/newsroom_list",
-  "http://www.tjmedia.com/tjsong/song_search.asp"
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20240315000816&rcpno=20240315000621&orgid=F&tran=Y&langTpCd=0",
+  "http://asp01.fnguide.com/SVO2/asp/SVD_Main.asp?pGB=1&gicode=A032540&cID=&MenuYn=Y&ReportGB=&NewMenuID=101&stkGb=752",
+  "https://m.etnews.com/20200213000183",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1686265381953.pdf",
+  "https://www.judal.co.kr/?view=stockList&themeIdx=116"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "032540",
  "name": "TJ미디어",
  "name_en": "TJ MEDIA CO.,LTD",
@@ -233,11 +223,11 @@
   "전자·부품"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 05:52",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:51",
+ "dataDate": "20260904",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-09-05",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -248,6 +238,7 @@
     "np_owner": 3985493321,
     "equity": 83790803211,
     "equity_owner": 83755356926,
+    "equity_nci": 35446285,
     "liab": 43555422694,
     "cfo": 3812591860,
     "eps_basic": 286,
@@ -263,6 +254,7 @@
     "np_owner": 4641989517,
     "equity": 85335199600,
     "equity_owner": 85301390390,
+    "equity_nci": 33809210,
     "liab": 39385858847,
     "cfo": 13360525360,
     "eps_basic": 333,
@@ -278,6 +270,7 @@
     "np_owner": 4698939732,
     "equity": 86088812046,
     "equity_owner": 86058624516,
+    "equity_nci": 30187530,
     "liab": 41482880061,
     "cfo": 7649680144,
     "eps_basic": 337,
@@ -293,6 +286,7 @@
     "np_owner": 4487434871,
     "equity": 85298143128,
     "equity_owner": 85273462472,
+    "equity_nci": 24680656,
     "liab": 49484040118,
     "cfo": -2705971875,
     "eps_basic": 322,
@@ -334,24 +328,29 @@
    }
   ],
   "valuation": {
-   "price": 3090,
-   "mcap": 0.0646,
+   "price": 3595,
+   "mcap": 0.0751,
    "shares": 20897413,
    "total_shares": 20897413,
    "wavg_shares": 21247537,
-   "per": null,
-   "eps": null,
-   "pbr": null,
-   "bps": null,
+   "per": 19.753,
+   "eps": 182,
+   "pbr": 0.9526,
+   "bps": 3774,
    "roe_ttm": 4.8,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 3861993483,
    "ccy": "KRW",
-   "pbr_krx": 0.77,
-   "bps_krx": 4010.0,
+   "bps_src": "자체",
+   "eps_src": "순이익÷주식수",
+   "pbr_krx": null,
+   "bps_krx": null,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": null,
-   "div": null
+   "div": null,
+   "hidden": {
+    "dps": "ref_mismatch"
+   }
   }
  }
 }

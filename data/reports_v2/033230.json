@@ -1,229 +1,220 @@
 {
  "title": {
-  "ko": "흑자 전환 기로, 매니지드서비스 확대가 관건",
-  "en": "At a Profitability Crossroads: Managed Services Expansion Is the Deciding Factor"
+  "ko": "AI 데이터센터 냉각 밸류체인 편입, 본업은 아직 적자권",
+  "en": "Positioned in AI Data Center Cooling Value Chain, Core Business Still Loss-Making"
  },
  "lead": {
-  "ko": "인성정보는 2022~2023년 소폭의 영업흑자에서 2024~2025년 연속 영업손실로 전환됐으나, 차입금 감축에 따른 금융비용 절감으로 순손실이 뚜렷하게 축소되고 있으며, INSUNG AZit 매니지드서비스 기반 확대와 2026년 1분기 실적 개선세가 구조 전환의 가능성을 시사한다.",
-  "en": "Insung Information swung from modest operating profits in 2022-2023 to back-to-back operating losses in 2024-2025, but debt repayment has meaningfully reduced net losses; the expansion of the INSUNG AZit managed services platform and an improving Q1 2026 trajectory suggest a structural turning point may be forming."
+  "ko": "인성정보는 자회사 아이넷뱅크의 버티브 등 글로벌 벤더 총판권을 통해 AI 데이터센터 냉각·전력 인프라 수요 확대 국면에 노출돼 있으나, IT인프라 본업의 매출 감소와 가격 경쟁은 여전히 진행 중이다.",
+  "en": "Insung Information has exposure to the expanding AI data center cooling and power infrastructure demand cycle through subsidiary iNetBank's distribution rights for global vendors including Vertiv, but its core IT infrastructure business still faces declining sales and intensifying price competition."
  },
  "keypoints": [
   {
-   "ko": "매출은 2023년 3,652억원 정점 이후 2년 연속 감소(2024년 3,596억원, 2025년 3,427억원), 영업이익은 2024~2025년 연속 -47억·-43억원의 손실 구간에 머물고 있어 수익성 회복이 최우선 과제다.",
-   "en": "Revenue peaked at KRW 365.2bn in 2023 and has declined for two consecutive years (KRW 359.6bn in 2024, KRW 342.7bn in 2025); operating losses of KRW -4.7bn and -4.3bn in 2024-2025, respectively, make profitability restoration the top priority."
+   "ko": "2025년 연결 매출 3,427억원으로 전년 대비 4.7% 감소, 영업손실은 42.8억원으로 전년 47.5억원 손실 대비 축소",
+   "en": "2025 consolidated revenue fell 4.7% year-on-year to KRW 342.7bn, while operating loss narrowed to KRW 4.28bn from KRW 4.75bn a year earlier"
   },
   {
-   "ko": "차입금 상환으로 금융비용이 감소하며 지배주주 귀속 순손실이 2024년 약 85억원에서 2025년 약 34억원으로 60% 이상 축소됐고, 부채비율도 2023년 216.5%에서 2025년 157.8%까지 꾸준히 낮아지고 있다.",
-   "en": "Debt repayments cut finance costs, shrinking the net loss attributable to controlling shareholders from KRW ~8.5bn in 2024 to ~KRW 3.4bn in 2025 (over 60% improvement), while the debt ratio declined steadily from 216.5% in 2023 to 157.8% in 2025."
+   "ko": "차입금 상환에 따른 금융비용 감소로 2025년 순손실이 전년 대비 45.7% 개선",
+   "en": "Net loss improved 45.7% year-on-year in 2025 on lower financial costs from debt repayment"
   },
   {
-   "ko": "4분기 매출 집중 패턴이 뚜렷해 2025Q4에 매출 1,261억원·영업이익 32억원의 흑자를 기록했으며, 2026Q1은 영업손실 -20억원으로 전년동기(-36억원) 대비 44% 축소되고 매출도 22% 증가해 점진적 개선 궤적이 확인된다.",
-   "en": "A pronounced Q4 revenue concentration resulted in Q4 2025 revenue of KRW 126bn and operating profit of KRW 3.2bn; Q1 2026 posted an operating loss of only KRW -2.0bn (vs. KRW -3.6bn in Q1 2025, -44%) with revenue up 22% year-on-year, confirming a gradual improvement trajectory."
+   "ko": "자회사 아이넷뱅크가 버티브 등 7개 글로벌 벤더 총판권을 보유해 AI 데이터센터 냉각·전력 테마에 노출",
+   "en": "Subsidiary iNetBank holds distribution rights for seven global vendors including Vertiv, giving exposure to the AI data center cooling and power theme"
   },
   {
-   "ko": "INSUNG AZit 매니지드서비스 유지보수 고객이 전년 대비 40% 이상 증가하며 경기 변동에 덜 민감한 반복 수익 기반이 확대 중이고, 영업활동현금흐름(CFO)도 2025년 214억원으로 손익계산서상 적자를 상회하는 견고한 현금 창출이 이루어지고 있다.",
-   "en": "INSUNG AZit managed services maintenance clients grew over 40% year-on-year, broadening a recurring revenue base less sensitive to economic cycles, while operating cash flow (CFO) of KRW 21.4bn in 2025 significantly exceeds the reported net loss, reflecting solid underlying cash generation."
+   "ko": "2026년 1분기 소프트웨어 도매부문은 AI 기반 보안·클라우드 보안 솔루션 매출 증가로 성장 견인",
+   "en": "In Q1 2026, the software wholesale segment grew on higher sales of AI-based security and cloud security solutions"
   },
   {
-   "ko": "국내 클라우드 MSP 시장은 가트너 기준 2026년 12조원 규모로 성장이 전망되나, 대기업 계열 SI·MSP의 시장 진입 가속과 기술 표준화에 따른 가격 경쟁 심화가 중견 IT서비스 기업의 수익성에 구조적 압박을 지속하고 있다.",
-   "en": "The domestic cloud MSP market is projected to reach KRW 12 trillion by 2026 (Gartner), but accelerating entry by large conglomerate SI/MSP players and intensifying price competition from technology commoditization continue to structurally weigh on mid-tier IT services margins."
+   "ko": "부채비율은 2023년 216.5%에서 2025년 157.8%로 하락, 영업활동현금흐름도 2년 연속 순유입 전환",
+   "en": "The debt ratio fell from 216.5% in 2023 to 157.8% in 2025, and operating cash flow has turned to net inflow for two consecutive years"
   }
  ],
  "business": {
-  "ko": "인성정보는 1992년 설립되어 1999년 코스닥에 상장한 IT 전문기업으로, 2020년 10월 에스넷그룹에 편입됐다. 사업 구조는 ① IT 인프라 사업부문(네트워크·스토리지·서버·클라우드/가상화 등 원스톱 공급), ② 소프트웨어 도매사업부문, ③ 네트워크장비 도매사업부문, ④ 헬스케어 사업부문의 네 축으로 구성된다. IT 인프라 부문이 매출 비중의 대부분을 차지하며, 시스코 파트너로서 SD-WAN·보안·가상화·HCI 등 엔터프라이즈 고객을 대상으로 컨설팅부터 구축·운영까지 원스톱으로 제공한다. 2023년 'INSUNG AZit(인성 아지트)'를 브랜드화한 IT 매니지드서비스는 기업 IT 자원의 위탁 운영·통합유지보수·클라우드 마이그레이션·보안까지 포괄하는 토털 서비스로, 제조·금융·유통 분야의 중소·중견기업을 주요 타깃으로 삼는다. 에스넷그룹 계열사와의 공조 체계를 통해 SDDC(소프트웨어 정의 데이터센터) 및 HCI 분야에서 차별화된 기술 역량을 공유하고 있다. 자회사 하이케어넷은 2020년 헬스케어 사업부문 물적분할로 설립되어 원격의료·AI 기반 치매 빅데이터 플랫폼 등 디지털 헬스케어 사업을 영위하며 미국 현지법인도 보유한다. 또 다른 자회사 아이넷뱅크에 대해서는 운전자금 확보와 사업 시너지를 위해 2026년 추가 지분 취득(50억원·16만주)을 결정한 바 있다. 수익 구조는 IT 인프라 프로젝트성 매출 의존도가 높으나, 매니지드서비스 비중을 점진적으로 확대해 경기 방어적 반복 수익을 늘리는 전략을 추진 중이다.",
-  "en": "Insung Information was established in 1992 and listed on KOSDAQ in 1999, becoming part of the S-Net Group in October 2020. Its business is organized around four segments: (1) IT infrastructure (one-stop supply of network, storage, server, and cloud/virtualization products), (2) software wholesale, (3) network equipment wholesale, and (4) healthcare. The IT infrastructure segment is by far the largest revenue contributor; as a Cisco partner, the company provides end-to-end services from consultation through deployment and operations for enterprise clients across SD-WAN, security, virtualization, and HCI. The 'INSUNG AZit' managed services brand, formalized in 2023, offers total IT outsourcing—including operations management, integrated maintenance, cloud migration, and security—targeting small and mid-sized firms in manufacturing, finance, and distribution. The company shares differentiated technical expertise in SDDC (software-defined data center) and HCI through collaboration with S-Net Group affiliates. Subsidiary HiCareNet, spun off from the healthcare division in 2020, operates digital healthcare services including remote medical care and an AI-based dementia big-data platform, with a U.S. subsidiary. Another subsidiary, iNetBank, received an additional KRW 5bn equity injection in 2026 for working capital and synergies. The revenue mix remains heavily weighted toward project-based IT infrastructure sales, but the company is pursuing a strategic shift to grow managed services and build a more resilient recurring revenue base."
+  "ko": "인성정보는 IT인프라, 소프트웨어 도매, 네트워크장비 도매, 헬스케어 4개 사업부문으로 구성된 코스닥 상장 IT서비스 기업이다. 2024년 상반기 기준 매출 비중은 IT인프라 부문 34.71%, 네트워크장비 도매 부문 34.16%, 소프트웨어 도매 부문 31.25%, 헬스케어 부문은 0.12%로 헬스케어의 비중은 아직 미미한 수준이다. 본사는 종합 IT 매니지드 서비스 브랜드 'INSUNG AZit'와 IT인프라 구축·유지보수 사업을 직접 영위한다. 소프트웨어 도매는 자회사 인성디지탈이, 네트워크장비 도매는 자회사 아이넷뱅크가 담당하며, 아이넷뱅크는 버티브를 포함한 7개 글로벌 벤더사의 국내 총판권을 보유하고 있다. 헬스케어 사업은 자회사 하이케어넷이 원격진료 플랫폼 'OK DOC(오케이닥)'을 통해 을지대병원과 협력한 재외국민 대상 비대면 진료 서비스를 운영한다. 최대주주는 에스넷시스템으로, 2024년 10월 기준 지분 19.09%를 보유하고 있다. 해외법인으로는 헝가리, 미국, 인도네시아 등에 진출해 있다. 경쟁 구도상 IT인프라 사업부문은 기술 표준화에 따른 가격 경쟁이 치열한 시장 환경에 놓여 있다.",
+  "en": "Insung Information is a KOSDAQ-listed IT services company organized into four business segments: IT infrastructure, software wholesale, network equipment wholesale, and healthcare. As of the first half of 2024, revenue mix was 34.71% for the IT infrastructure segment, 34.16% for network equipment wholesale, 31.25% for software wholesale, and only 0.12% for healthcare, which remains a minor contributor. The parent company directly operates IT infrastructure construction and maintenance along with its integrated IT managed service brand, INSUNG AZit. Software wholesale is run through subsidiary Insung Digital, while network equipment wholesale is handled by subsidiary iNetBank, which holds domestic distribution rights for seven global vendors including Vertiv. The healthcare business is operated by subsidiary HiCareNet through its telemedicine platform OK DOC, which runs a non-face-to-face care service for overseas Koreans in cooperation with Eulji University Hospital. The largest shareholder is S.Net Systems, which held a 19.09% stake as of October 2024. The company also has overseas subsidiaries in Hungary, the United States, and Indonesia. Competitively, the IT infrastructure segment operates in a market environment with intense price competition driven by technology standardization."
  },
  "earnings": {
-  "ko": "인성정보의 연결 매출은 2022년 3,145억원에서 2023년 3,652억원으로 증가했으나, 이후 2024년 3,596억원(-1.5%), 2025년 3,427억원(-4.7%)으로 2년 연속 감소하고 있다. 영업이익은 2022년 29억원(OPM 0.9%), 2023년 52억원(OPM 1.4%)에서 흑자를 유지했으나, 2024년 -47억원(OPM -1.3%)으로 급격히 악화돼 적자 전환했고 2025년에는 -43억원(OPM -1.2%)으로 소폭 개선에 그쳤다. 지배주주 귀속 순손실은 2024년 약 85억원에서 2025년 약 34억원으로 대폭 축소됐는데, 재무건전성 개선에 따른 차입금 상환으로 금융비용이 감소한 것이 주된 원인이다. 부채비율 역시 2023년 216.5%, 2024년 160.6%, 2025년 157.8%로 꾸준히 하락 중이다. 영업활동현금흐름(CFO)은 2022년 -284억원, 2023년 -83억원에서 2024년 152억원, 2025년 214억원으로 크게 개선돼 현금창출 능력 자체는 이미 회복된 모습이다. 분기별로는 4분기 집중 구조가 명확한데, 2025Q4에만 매출 1,261억원·영업이익 32억원의 흑자를 달성했다. 반면 2025Q1·Q2는 각각 -36억원의 영업손실을 기록했고, Q3에서 -3억원으로 크게 축소됐다. 2026Q1은 매출 746억원(전년동기 610억원 대비 +22% 증가)·영업손실 -20억원으로, 전년동기(-36억원) 대비 손실 폭이 44% 줄며 분기 실적의 개선 궤적이 이어지고 있다.",
-  "en": "Insung's consolidated revenue grew from KRW 314.5bn in 2022 to KRW 365.2bn in 2023, then contracted to KRW 359.6bn (-1.5%) in 2024 and KRW 342.7bn (-4.7%) in 2025 for two consecutive years of decline. Operating income held in positive territory at KRW 2.9bn (OPM 0.9%) in 2022 and KRW 5.2bn (OPM 1.4%) in 2023, before deteriorating sharply to KRW -4.7bn (OPM -1.3%) in 2024 and improving only marginally to KRW -4.3bn (OPM -1.2%) in 2025. The net loss attributable to controlling shareholders narrowed substantially from approximately KRW 8.5bn in 2024 to approximately KRW 3.4bn in 2025, primarily because debt repayments improved balance-sheet health and reduced finance costs. The debt-to-equity ratio has also declined steadily from 216.5% (2023) to 160.6% (2024) and 157.8% (2025). Operating cash flow (CFO) has recovered markedly—from KRW -28.4bn in 2022 and KRW -8.3bn in 2023 to KRW +15.2bn in 2024 and KRW +21.4bn in 2025—demonstrating strong underlying cash generation well above the reported net loss. Seasonality is pronounced: Q4 2025 alone generated revenue of KRW 126bn and an operating profit of KRW 3.2bn, while Q1 and Q2 2025 each recorded operating losses of approximately KRW -3.6bn, narrowing sharply to KRW -0.3bn in Q3. For Q1 2026, revenue rose 22% year-on-year to KRW 74.6bn, and the operating loss narrowed 44% to KRW -2.0bn (from KRW -3.6bn in Q1 2025), confirming that the improvement trajectory remains intact."
+  "ko": "2025년 연결 매출액은 3,427억7,375만원으로 전년 3,595억8,693만원 대비 4.7% 감소했다. 영업손실은 42억7,717만원으로 전년 47억4,595만원 손실 대비 손실 규모가 줄었고, 영업이익률은 -1.2%로 전년 -1.3%와 유사한 수준을 유지했다. 당기순손실은 51억1,097만원으로 전년 94억760만원 손실 대비 45.7% 개선됐으며, 회사는 재무건전성 개선을 위한 차입금 상환에 따른 금융비용 감소를 개선 요인으로 설명했다. 지배주주순손실은 33억5,684만원으로 전년 84억5,273만원 손실 대비 크게 줄었다. 분기별로는 계절성이 뚜렷하게 나타나는데, 2025년 4분기 매출이 1,260억5,489만원으로 성수기 효과를 보이며 영업이익 32억1,947만원, 지배주주순이익 33억4,887만원으로 흑자를 기록했다. 반면 2026년 1분기는 매출 745억7,544만원, 영업손실 19억7,611만원, 지배주주순손실 14억3,749만원으로 다시 적자로 돌아섰고, 2026년 2분기에는 매출 999억9,127만원, 영업이익 8억6,934만원, 지배주주순이익 31억2,938만원으로 재차 흑자 전환했다. 2023년(영업이익 52억원 흑자)과 2022년(영업이익 29억원 흑자, 순이익도 흑자)을 포함해 최근 4년간 영업손익은 흑자와 적자를 반복하는 모습을 보였다. 현금흐름 측면에서는 2022년 -283억원, 2023년 -83억원이던 영업활동현금흐름이 2024년 152억원, 2025년 214억원으로 2년 연속 순유입을 기록하며 개선 흐름이 뚜렷하다.",
+  "en": "In 2025, consolidated revenue was KRW 342.74bn, down 4.7% from KRW 359.59bn a year earlier. Operating loss narrowed to KRW 4.28bn from KRW 4.75bn, keeping the operating margin at roughly -1.2%, similar to -1.3% in the prior year. Net loss improved 45.7% to KRW 5.11bn from KRW 9.41bn, which the company attributed to lower financial costs following debt repayment aimed at strengthening its financial structure. The net loss attributable to owners narrowed sharply to KRW 3.36bn from KRW 8.45bn a year earlier. Quarterly results show clear seasonality: fourth-quarter 2025 revenue reached KRW 126.05bn on seasonal strength, with operating profit of KRW 3.22bn and owners' net profit of KRW 3.35bn, turning the quarter profitable. In contrast, the first quarter of 2026 slipped back into loss with revenue of KRW 74.58bn, an operating loss of KRW 1.98bn, and an owners' net loss of KRW 1.44bn, before the second quarter of 2026 turned profitable again with revenue of KRW 99.99bn, operating profit of KRW 0.87bn, and owners' net profit of KRW 3.13bn. Including operating profits in 2023 (KRW 5.21bn) and 2022 (KRW 2.91bn, also net-income positive), operating results over the past four years have alternated between profit and loss. On the cash flow side, operating cash flow moved from negative KRW 28.36bn in 2022 and negative KRW 8.34bn in 2023 to positive KRW 15.22bn in 2024 and positive KRW 21.39bn in 2025, marking two consecutive years of net inflow and a clear improving trend."
  },
  "industry": {
-  "ko": "가트너에 따르면 국내 클라우드 MSP 시장은 2023년 7조원 규모에서 2026년 12조원 규모로 연 15%가량 성장할 전망이며, 한국 클라우드 컴퓨팅 시장 전체는 2026~2031년 연평균 25.18%의 고성장이 예상된다. AI 워크로드 확대, 생성형 AI 인프라 수요, 공공 디지털 전환 정책은 이 성장세를 뒷받침하는 주요 동력이다. 2026년 공공 소프트웨어 및 장비 사업 예정금액은 전년 대비 2.4% 늘어난 약 5.97조원으로 집계됐고, 상당 부분이 AI·데이터센터 관련 사업에 집중될 것으로 전망된다. 하이브리드 클라우드 도입이 가속화되고 2025년 대전 국가정보자원관리원 화재 이후 공공 IT 인프라 보강 수요가 새로운 사업 기회로 부각되고 있다. 반면 네트워크·서버·스토리지 등 전통 IT 인프라 장비 유통·구축 분야는 기술 표준화에 따른 가격 경쟁 심화, 메모리 등 하드웨어 원가 급등, 일부 기업의 투자 시기 조정 등으로 수익성 압박이 지속되고 있다. 대기업 계열 SI·MSP가 그룹사 내부 수요를 흡수하며 시장 점유율을 확대하는 추세는 독립 중견 IT서비스 기업에게 가장 큰 구조적 위협으로 작용하고 있다. 2026년 MSP 시장의 핵심 차별화 요소로는 AIOps 기반 자동화, 클라우드 보안(CNAPP), FinOps 역량이 거론되고 있어 기술 고도화 투자의 지속 여부가 경쟁력 유지의 관건이 된다.",
-  "en": "According to Gartner, the domestic cloud MSP market is projected to grow approximately 15% annually from KRW 7 trillion in 2023 to KRW 12 trillion by 2026, and Korea's broader cloud computing market is forecast to expand at a 25.18% CAGR from 2026 to 2031. AI workload growth, generative AI infrastructure demand, and government digital transformation policy are the principal tailwinds. Korea's 2026 public-sector software and equipment budget is estimated at KRW 5.97 trillion, up 2.4% year-on-year, with a material portion expected to concentrate in AI and data center projects. Hybrid cloud adoption is accelerating, and the 2025 fire at the Daejeon National Information Resource Management Agency has catalyzed new public IT infrastructure reinforcement and redesign demand. In contrast, the traditional IT infrastructure distribution and deployment space faces persistent margin pressure from technology commoditization, sharply rising hardware costs (particularly memory), and some enterprises adjusting investment timing. Large conglomerate SI/MSP firms steadily absorbing intra-group demand and expanding market share represent the most significant structural threat to independent mid-tier IT services companies. For 2026, AIOps-based automation, cloud security (CNAPP), and FinOps capabilities are cited as key MSP differentiators, making sustained technology investment critical to maintaining competitive positioning."
+  "ko": "글로벌 데이터센터 시장은 AI 연산 수요 확대에 따라 서버 랙당 발열밀도가 급격히 상승하며 냉각·전력 인프라의 구조적 전환이 진행되고 있다. 엔비디아의 GPU 로드맵이 H100·H200세대의 최대 700W에서 블랙웰 B200 최대 1,200W, 블랙웰 울트라 B300 최대 1,400W로 이어지면서 GB200 NVL72, GB300 NVL72 등 랙스케일 설계는 120~150kW급 냉각용량이 요구되는 수준으로 이동하고 있다. 이에 따라 냉각방식도 공랭에서 직접액체냉각(DLC) 중심으로 재편되는 흐름이 뚜렷하다. 글로벌 냉각·전력 인프라 1위 업체인 버티브는 엔비디아와 GB200·GB300 플랫폼용 레퍼런스 아키텍처를 공동 개발했고, 2026년 3월 엔비디아 GTC 2026에서 차세대 베라 루빈 플랫폼의 공식 파트너사로 이름을 올렸다. 버티브홀딩스의 매출은 2025년 기준 약 102억달러로 전년 대비 27.7% 증가했으며 지난달 S&P500 지수에도 편입됐다. 국내에서는 정부가 국민성장펀드를 통해 AI 산업에 30조원을 지원할 계획을 밝혔고, AI 데이터센터를 핵심 지원 대상으로 특정했다. 코스닥 상장사 중에서는 액침냉각 기술을 자체 개발해 LS일렉트릭·LG유플러스와 협업 중인 GST 등이 기술 개발형 밸류체인에 포진해 있는 반면, 인성정보는 자회사 아이넷뱅크를 통한 글로벌 벤더 유통 채널로 이 시장에 접근하고 있어 사업 성격이 다르다. IT서비스 본업 측면에서는 클라우드 전환과 디지털 전환 수요가 지속되는 가운데, 기술 표준화로 인한 가격 경쟁이 동시에 심화되고 있다.",
+  "en": "The global data center market is undergoing a structural shift in cooling and power infrastructure as AI compute demand drives rapid increases in per-rack heat density. Nvidia's GPU roadmap has moved from a maximum of 700W per chip in the H100/H200 generation to up to 1,200W for Blackwell B200 and up to 1,400W for Blackwell Ultra B300, pushing rack-scale designs such as GB200 NVL72 and GB300 NVL72 toward cooling capacities in the 120-150kW range. This has driven a clear shift from air cooling toward direct liquid cooling (DLC). Vertiv, the global leader in cooling and power infrastructure, has co-developed reference architectures with Nvidia for the GB200 and GB300 platforms and was named an official partner for the next-generation Vera Rubin platform at Nvidia's GTC 2026 event in March 2026. Vertiv Holdings' 2025 revenue was approximately USD 10.2bn, up 27.7% year-on-year, and the company was added to the S&P 500 index last month. In Korea, the government has announced plans to allocate KRW 30 trillion to the AI industry through the National Growth Fund, specifically targeting AI data centers as a key support area. Among KOSDAQ-listed companies, some peers such as GST have developed proprietary immersion cooling technology and are collaborating with LS Electric and LG Uplus, positioning themselves in the technology-development segment of the value chain, whereas Insung Information approaches this market through a distribution channel via subsidiary iNetBank, making its business nature distinct. In its core IT services business, demand for cloud migration and digital transformation continues, while price competition driven by technology standardization is simultaneously intensifying."
  },
  "outlook": {
-  "ko": "2026년의 핵심 과제는 IT 인프라 사업부문의 매출 감소를 INSUNG AZit 매니지드서비스의 고객 기반 확대로 얼마나 상쇄하느냐에 달려 있다. 유지보수 고객이 전년 대비 40% 이상 증가한 사실은 구조 전환의 초기 신호이나, 매니지드서비스는 IT 인프라 직접 구축 대비 단가가 낮아 영업손익 개선으로 이어지기까지는 시간이 필요하다. 에스넷그룹 계열사와의 공조 체계를 통해 SDDC·HCI 기술력을 활용한 AI 인프라 구축 수요 대응 포지셔닝이 갖춰져 있으며, SD-WAN·클라우드 마이그레이션·보안 등 복합 수요에 대응하는 전략도 유지 중이다. AI·데이터센터 관련 공공 예산 집중과 민간 AI 인프라 투자 확대는 신규 수주 기회를 제공하는 반면, 메모리 가격 급등과 대기업 경쟁사의 공격적 영업은 수주 단가와 수익성을 압박하는 요인으로 남아 있다. 자회사 하이케어넷의 원격의료·AI 치매 플랫폼은 국내 비대면 의료 제도화 진전에 따라 중장기 성장 잠재력을 지닌 사업이나, 현재까지 뚜렷한 수익 기여가 확인되지 않아 단기 실적에 미치는 영향은 제한적으로 판단된다. 2026년에도 4분기 집중 패턴이 유지될 것으로 예상되는 가운데, 연간 흑자 전환을 위해서는 비수기(Q1~Q3) 영업적자 폭의 추가 축소와 하반기 대형 수주 확보가 선행 조건이 된다. 2026Q1 개선 궤적(영업손실 -20억원 vs. 2025Q1 -36억원)은 가시적 진전이나, 연간 흑자 전환까지는 추가적인 수주 확대 및 비용 통제가 필요한 상황이다.",
-  "en": "The central challenge for 2026 is how effectively the decline in IT infrastructure segment revenue can be offset by expanding INSUNG AZit's managed services customer base. The over-40% year-on-year growth in maintenance clients is an early signal of structural transition, though managed services carry lower unit values than direct infrastructure deployments, meaning full margin recovery will take time. The company's positioning to capture AI infrastructure build-out demand through SDDC and HCI expertise—bolstered by S-Net Group synergies—and its continued strategy of addressing complex enterprise needs across SD-WAN, cloud migration, and security remain relevant strengths. Concentrated public-sector AI and data center budgets alongside rising private AI infrastructure investment provide new contract opportunities, while memory price spikes and aggressive competition from large-cap rivals continue to weigh on win rates and unit economics. Subsidiary HiCareNet's remote healthcare and AI dementia platform holds medium-to-long-term potential contingent on regulatory developments in Korea's non-face-to-face medical services framework, but measurable near-term profit contribution remains unconfirmed. The Q4 revenue concentration pattern is expected to persist in 2026; further reduction of off-peak operating losses (Q1-Q3) and securing large H2 contract wins are prerequisites for a full-year return to profitability. The Q1 2026 improvement (operating loss of KRW -2.0bn vs. KRW -3.6bn in Q1 2025) is tangible progress, but additional revenue wins and cost discipline are still needed to close the gap."
+  "ko": "2026년 1분기 실적에서 소프트웨어 도매사업부문은 AI 기반 보안·클라우드 보안 솔루션이 핵심 성장 동력으로 작용하며 매출이 증가한 것으로 나타났다. 네트워크장비 도매사업부문 역시 클라우드 기반 IT 인프라 도입 확대와 AI 기술 도입에 따른 고성능 서버 수요 증가로 실적이 개선된 것으로 파악된다. 자회사 아이넷뱅크가 보유한 버티브 등 글로벌 벤더 총판권은 AI 데이터센터 냉각·전력 인프라 수요 확산과 연결되는 구조로, 관련 뉴스가 나올 때마다 시장의 관심을 받아왔다. 헬스케어 부문에서는 원격진료 플랫폼 'OK DOC'을 통한 재외국민 대상 서비스 확대가 계속되고 있으나, 매출 비중은 여전히 낮은 수준에 머물러 있다. 회사는 앞서 2024년 6월 231억원 규모 유상증자를 통해 조달한 자금 중 상당액을 채무상환에 사용했고, 이는 최근 수년간 부채비율 하락과 영업활동현금흐름 개선으로 이어진 것으로 해석된다. 다만 IT인프라 본업의 매출 감소와 가격 경쟁 심화는 여전히 진행형 이슈로 남아 있어, 신사업(AI 보안, 데이터센터 인프라 유통, 헬스케어) 확대가 본업 부진을 얼마나 상쇄할지가 핵심 관전 포인트다.",
+  "en": "In first-quarter 2026 results, the software wholesale segment saw revenue growth driven primarily by AI-based security and cloud security solutions. The network equipment wholesale segment also showed improved performance on the back of expanding cloud-based IT infrastructure adoption and rising demand for high-performance servers tied to AI technology deployment. The global vendor distribution rights held by subsidiary iNetBank, including for Vertiv, connect the company to the broader expansion of AI data center cooling and power infrastructure demand, and related news has periodically drawn market attention. In the healthcare segment, expansion of the OK DOC telemedicine platform for overseas Koreans continues, though its revenue contribution remains low. The company previously used a significant portion of proceeds from a KRW 23.1bn rights offering in June 2024 for debt repayment, which appears linked to the recent decline in the debt ratio and improvement in operating cash flow. However, declining revenue and intensifying price competition in the core IT infrastructure business remain an ongoing issue, making the extent to which new business areas—AI security, data center infrastructure distribution, and healthcare—can offset core business weakness a key point to watch."
  },
  "valuation_comment": {
-  "ko": "현 주가는 주당순자산(BPS 1,726원) 대비 할인된 구간에서 거래되고 있어, 시장은 장부상 자산 가치 이하의 가격을 적용하고 있다. 주당순이익(EPS)이 -29원으로 적자인 상황에서는 수익 기반의 P/E 배수 적용이 어렵고, 손익 개선의 속도와 지속성이 밸류에이션 방향성의 핵심 변수가 된다. 배당 공시가 없는 상태(DPS 0원)로 배당수익률 측면의 투자 유인은 현재 부재하다. 동종 IT서비스·MSP 업종과의 상대 비교에서는 매출 규모(3,000억원대) 대비 시장 평가가 낮은 편이나, 이는 2년 연속 영업손실과 잔존 부채 부담을 반영한 결과로 해석된다. 매니지드서비스 비중 확대가 실적 개선으로 가시화되고 연간 영업흑자 전환이 확인될 경우, 순자산 대비 현재의 할인 폭이 축소되는 재평가 계기가 될 수 있다.",
-  "en": "The share price is currently trading at a discount to book value per share (BPS: KRW 1,726), meaning the market is applying a sub-asset-value multiple. With EPS in negative territory (-29 won per share), conventional P/E-based valuation is inapplicable; the pace and sustainability of earnings improvement are therefore the primary drivers of valuation direction. There is currently no cash dividend (DPS: KRW 0), removing the dividend yield as an investment consideration. Relative to sector peers in IT services and MSP, the market capitalization appears modest against the company's revenue base, reflecting two consecutive years of operating losses and residual leverage. A visible increase in managed services revenue mix translating into sustained operating profit recovery would likely serve as the key re-rating trigger, potentially narrowing the current discount to net asset value."
+  "ko": "인성정보의 실적은 최근 몇 년간 연간 기준 적자와 소폭 흑자를 오갔으며, 최근 네 개 분기(2025년 3분기~2026년 2분기) 기준으로는 순이익이 흑자로 집계되는 구간에 들어와 있다. 주가순자산비율은 순자산 대비 낮은 수준에서 거래되는 편으로, 순자산 대비 할인된 구간에 위치해 있다는 점이 특징적이다. 배당의 경우 최근 공시 기준 별도의 현금배당이 확인되지 않아, 배당수익률로 접근하기보다는 실적 개선의 지속성과 재무구조 변화를 함께 살펴볼 필요가 있다. 부채비율이 2022~2023년 200%를 넘던 수준에서 2025년 157.8%까지 낮아진 점과 영업활동현금흐름이 2년 연속 순유입으로 전환된 점은 재무 체력 측면의 변화로 참고할 만하다. 다만 분기별 실적의 계절성과 변동성이 크고, 최근 4개 분기 중에서도 흑자와 적자가 교차했다는 점은 밸류에이션 판단 시 함께 감안할 요소다.",
+  "en": "Insung Information's earnings have alternated between annual losses and modest profits over recent years, and on a trailing four-quarter basis (Q3 2025 through Q2 2026), net income has come in positive. The price-to-book ratio tends to trade at a level below net asset value, reflecting a discount relative to book value as a notable feature. Regarding dividends, no cash dividend has been confirmed in recent disclosures, so it may be more useful to focus on the sustainability of earnings improvement and changes in the balance sheet rather than dividend yield. The debt ratio's decline from above 200% in 2022-2023 to 157.8% in 2025, along with two consecutive years of positive operating cash flow, are notable changes in financial resilience worth considering. That said, the pronounced seasonality and volatility in quarterly results—including the alternating profit and loss even within the most recent four quarters—are factors to weigh alongside any valuation assessment."
  },
  "bull": [
   {
    "title": {
-    "ko": "매니지드서비스 반복 수익 기반의 가시적 확대",
-    "en": "Visible Expansion of Recurring Revenue from Managed Services"
+    "ko": "AI 데이터센터 냉각·전력 인프라 밸류체인 노출",
+    "en": "Exposure to AI Data Center Cooling and Power Infrastructure Value Chain"
    },
    "body": {
-    "ko": "INSUNG AZit 유지보수 고객이 전년 대비 40% 이상 증가하며 경기 변동에 덜 민감한 구독형·유지보수형 매출이 늘고 있다. 프로젝트성 IT 인프라 매출과 달리 매니지드서비스는 한번 계약하면 다년간 반복 수익이 발생하는 구조로, 계약 기반이 쌓일수록 매출 안정성이 높아진다. 클라우드 마이그레이션·AIOps·통합유지보수 수요가 중소·중견기업에서 확대될수록 인성 아지트의 성장 여력도 커진다.",
-    "en": "INSUNG AZit maintenance clients grew more than 40% year-on-year, increasing subscription-type and maintenance revenue that is less sensitive to economic cycles. Unlike project-based infrastructure deployments, managed services generate multi-year recurring income once contracted, and a larger installed base improves revenue visibility. As demand for cloud migration, AIOps, and integrated maintenance expands among small and mid-sized enterprises, the addressable market for INSUNG AZit continues to broaden."
+    "ko": "자회사 아이넷뱅크는 버티브를 비롯한 7개 글로벌 벤더사의 국내 총판권을 보유하고 있다. 버티브는 엔비디아의 블랙웰·베라 루빈 등 차세대 플랫폼용 냉각·전원 레퍼런스 아키텍처를 공동 개발하는 글로벌 1위 사업자로, 2026년 GTC에서 엔비디아 공식 파트너사로 이름을 올렸다. AI 서버 랙당 발열밀도가 급격히 높아지는 흐름 속에서 액체냉각·전력관리 인프라 수요가 구조적으로 확대되고 있다. 이는 인성정보의 유통 채널 사업에 우호적인 산업 환경을 제공한다.",
+    "en": "Subsidiary iNetBank holds domestic distribution rights for seven global vendors, including Vertiv. Vertiv, the global leader in co-developing cooling and power reference architectures for Nvidia's next-generation Blackwell and Vera Rubin platforms, was named an official Nvidia partner at GTC 2026. As per-rack heat density in AI servers rises sharply, demand for liquid cooling and power management infrastructure is structurally expanding. This provides a favorable industry backdrop for Insung Information's distribution business."
    }
   },
   {
    "title": {
-    "ko": "부채 감축·CFO 흑자 지속으로 재무 안정성 회복 중",
-    "en": "Debt Reduction and Sustained Positive CFO Restoring Financial Stability"
+    "ko": "AI 보안·클라우드 신사업의 매출 기여 확대",
+    "en": "Growing Revenue Contribution from AI Security and Cloud New Businesses"
    },
    "body": {
-    "ko": "부채비율이 2023년 216.5%에서 2025년 157.8%로 지속 하락하고 있으며, 차입금 감축에 따른 금융비용 절감이 순손실 축소로 직결됐다. 영업활동현금흐름은 2025년 214억원으로 전년(152억원)에 이어 2년 연속 견고한 흑자를 기록해, 손익계산서 적자에도 불구하고 현금 창출 능력 자체는 회복됐다. 재무 구조 개선이 이어질 경우 이자비용 감소가 향후 연간 손익 개선을 앞당기는 요인으로 작용할 수 있다.",
-    "en": "The debt ratio has fallen consistently from 216.5% in 2023 to 157.8% in 2025, with the reduction in finance costs from debt repayment flowing directly into narrower net losses. Operating cash flow has now been robustly positive for two consecutive years—KRW 15.2bn in 2024 and KRW 21.4bn in 2025—demonstrating strong underlying cash generation despite the reported net losses. Continued deleveraging could bring annual breakeven meaningfully closer by further reducing interest expense."
+    "ko": "2026년 1분기 소프트웨어 도매사업부문은 AI 기반 보안·클라우드 보안 솔루션이 핵심 성장 동력으로 작용해 매출이 증가했다. 네트워크장비 도매사업부문도 AI 기술 도입에 따른 고성능 서버 수요 증가로 실적이 개선됐다. 신사업 부문이 IT인프라 본업의 매출 감소를 부분적으로 상쇄하는 구조가 형성되고 있다.",
+    "en": "In first-quarter 2026, the software wholesale segment saw revenue growth driven by AI-based security and cloud security solutions as a key growth driver. The network equipment wholesale segment also improved on rising demand for high-performance servers tied to AI technology adoption. A structure is emerging where new business areas partially offset declining revenue in the core IT infrastructure business."
    }
   },
   {
    "title": {
-    "ko": "AI·공공 IT 투자 사이클과 에스넷그룹 기술력의 시너지",
-    "en": "AI and Public IT Investment Cycle Synergizing with S-Net Group Technical Expertise"
+    "ko": "재무구조 개선과 현금흐름 정상화",
+    "en": "Improving Balance Sheet and Normalizing Cash Flow"
    },
    "body": {
-    "ko": "에스넷그룹 계열사와의 공조를 통해 확보한 SDDC·HCI 분야 기술력은 AI 인프라 구축 수요를 포착할 수 있는 차별화 자산이다. 2026년 공공 SW·장비 사업 예산이 약 5.97조원으로 전년 대비 확대됐고, 상당 부분이 AI·데이터센터 프로젝트에 집중될 것으로 시장이 예상하고 있어 수주 기회가 열릴 수 있다. 에스넷그룹 계열사 협업을 통해 단독으로는 참여 어려운 대형 공공·기업 컨소시엄 프로젝트에 접근 가능하다는 점도 강점이다.",
-    "en": "Differentiated SDDC and HCI technical capabilities built through S-Net Group collaboration are a competitive asset for capturing AI infrastructure build-out demand. Korea's 2026 public-sector software and equipment budget is approximately KRW 5.97 trillion—up year-on-year—with a significant proportion expected to concentrate in AI and data center projects, potentially opening contract opportunities. Access to large public and enterprise consortium projects through S-Net Group affiliates, which would be difficult to pursue independently, is an additional structural advantage."
+    "ko": "부채비율은 2023년 216.5%에서 2025년 157.8%로 지속적으로 낮아졌다. 영업활동현금흐름은 2022년 -283억원, 2023년 -83억원의 순유출에서 2024년 152억원, 2025년 214억원의 순유입으로 전환됐다. 차입금 상환에 따른 금융비용 감소는 2025년 순손실 개선의 주요 원인으로 공시됐다.",
+    "en": "The debt ratio has steadily declined from 216.5% in 2023 to 157.8% in 2025. Operating cash flow turned from net outflows of KRW 28.36bn in 2022 and KRW 8.34bn in 2023 to net inflows of KRW 15.22bn in 2024 and KRW 21.39bn in 2025. Lower financial costs from debt repayment were disclosed as the main driver of the improved 2025 net loss."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "핵심 IT 인프라 사업 매출 감소세와 가격 경쟁 압박",
-    "en": "Core IT Infrastructure Segment Revenue Decline and Persistent Price Pressure"
+    "ko": "IT인프라 본업의 매출 감소와 가격 경쟁",
+    "en": "Declining Revenue and Price Competition in Core IT Infrastructure Business"
    },
    "body": {
-    "ko": "IT 인프라 사업부문 매출이 기술 표준화에 따른 가격 경쟁 심화로 감소하는 추세이며, 이것이 전사 매출 3년 연속 감소(2023~2025년)의 주된 원인으로 작용하고 있다. 하드웨어 공급 비중이 높은 사업 특성상 메모리 등 핵심 부품 가격 급등은 원가 부담으로 이어져 이미 낮은 마진을 추가 압박한다. 경쟁이 치열한 IT서비스 시장에서 원가 상승을 고객 판매가에 전가하는 것이 구조적으로 어려운 환경이다.",
-    "en": "IT infrastructure segment revenue has been on a declining trajectory due to intensifying price competition from technology commoditization, which is the primary driver of the consolidated revenue decline over three consecutive years (2023-2025). Given the business's significant hardware supply component, sharp spikes in memory and other component prices add directly to cost of goods, further compressing already thin margins. In a fiercely competitive IT services market, passing through cost increases to end customers is structurally difficult."
+    "ko": "IT 인프라 사업부문은 기술 표준화에 따른 가격 경쟁이 치열해지면서 매출 감소와 수익성 악화가 지속되고 있는 것으로 파악된다. 2025년 연결 매출은 전년 대비 4.7% 감소했고, 2023년 3,652억원에서 2025년 3,427억원으로 3년째 하락세를 보였다. 신사업의 성장이 본업의 구조적 둔화를 완전히 상쇄하지 못하는 상황이 지속되고 있다.",
+    "en": "The IT infrastructure segment continues to face declining sales and eroding profitability amid intensifying price competition driven by technology standardization. Consolidated revenue fell 4.7% year-on-year in 2025, marking a third straight year of decline from KRW 365.2bn in 2023 to KRW 342.7bn in 2025. New business growth has not been able to fully offset the structural slowdown in the core business."
    }
   },
   {
    "title": {
-    "ko": "대기업 MSP 진입으로 경쟁 지형 불리해질 위험",
-    "en": "Competitive Landscape Deteriorating as Large-Cap MSP Players Enter"
+    "ko": "분기별 실적의 높은 변동성과 계절성",
+    "en": "High Quarterly Earnings Volatility and Seasonality"
    },
    "body": {
-    "ko": "국내 MSP 시장은 메가존클라우드·베스핀글로벌 등 전통 중견 MSP 외에 대기업 계열 SI 기업들이 클라우드 MSP 사업을 강화하며 경쟁이 과열되고 있다. 대기업들은 그룹사 내부 수요를 안정적으로 흡수하는 구조적 우위와 인력·자본·브랜드 측면의 우월한 경쟁력을 보유해, 독립 중견 IT서비스 기업에게 고객 이탈 리스크를 높인다. 인성정보가 차별화된 서비스 역량을 입증하지 못할 경우 주요 고객사가 대형 플레이어로 이동하는 시나리오를 배제할 수 없다.",
-    "en": "The domestic MSP market is increasingly congested, with traditional mid-tier MSPs like Megazone Cloud and Bespin Global now joined by large conglomerate SI arms actively scaling cloud MSP operations. These conglomerate players enjoy structural advantages in absorbing intra-group demand alongside superior competitive resources in talent, capital, and brand recognition, raising the risk of customer attrition for independent mid-tier players. If Insung fails to demonstrate clearly differentiated service capabilities, the scenario of key clients migrating to larger players cannot be dismissed."
+    "ko": "최근 5개 분기(2025년 2분기~2026년 2분기) 영업이익은 적자·적자·흑자·적자·흑자를 오가며 뚜렷한 계절성과 변동성을 보였다. 2025년 4분기에는 매출 1,260억원, 영업이익 32억원의 성수기 효과가 나타났으나, 2026년 1분기에는 다시 매출 745억원, 영업손실 19.8억원으로 적자 전환했다. 분기별 실적의 예측 가능성이 낮다는 점은 참고할 요소다.",
+    "en": "Over the most recent five quarters (Q2 2025 to Q2 2026), operating results swung between loss, loss, profit, loss, and profit, showing pronounced seasonality and volatility. Fourth-quarter 2025 revenue reached KRW 126.0bn with an operating profit of KRW 3.2bn on seasonal strength, but the first quarter of 2026 slipped back into loss with revenue of KRW 74.5bn and an operating loss of KRW 1.98bn. The low predictability of quarterly results is a factor worth noting."
    }
   },
   {
    "title": {
-    "ko": "헬스케어 자회사 수익화 지연 및 투자 부담",
-    "en": "Healthcare Subsidiary Monetization Delay and Investment Drag"
+    "ko": "헬스케어 부문의 낮은 매출 기여도",
+    "en": "Low Revenue Contribution from the Healthcare Segment"
    },
    "body": {
-    "ko": "자회사 하이케어넷은 원격의료·AI 치매 플랫폼 사업을 영위하나, 국내 비대면 의료 제도화가 아직 완전하지 않아 대규모 수익 창출로 이어지지 못하고 있다. 헬스케어 부문이 연결 실적에 비용 기여를 하고 있을 가능성이 있으며, 미국 현지법인 운영 고정비 등 해외 사업 관련 비용도 수익성 개선의 걸림돌이 될 수 있다. 아이넷뱅크에 대한 추가 지분 취득(50억원) 등 자회사 투자 결정이 현금 유출로 이어지는 가운데, 수익화 지연이 장기화되면 연결 손익 개선 속도를 늦출 수 있다.",
-    "en": "Subsidiary HiCareNet operates in remote healthcare and AI dementia platforms, but the incomplete institutionalization of non-face-to-face medical services in Korea has so far prevented large-scale monetization. It is plausible that the healthcare segment represents a cost drag on consolidated results, and the fixed operating expenses of the U.S. subsidiary may also hinder margin improvement. Additional subsidiary investments—including KRW 5bn in iNetBank shares—represent cash outflows, and if monetization is delayed further, it will slow the pace of consolidated profit recovery."
+    "ko": "헬스케어 사업부문의 매출 비중은 2024년 상반기 기준 0.12%에 불과해, 원격진료 플랫폼 'OK DOC' 등 신사업이 실제 매출에 기여하는 폭은 아직 제한적이다. 성장 스토리로 언급되는 디지털 헬스케어 사업이 회사 전체 실적에 미치는 영향은 현재로서는 미미한 수준에 머물러 있다.",
+    "en": "The healthcare segment's revenue share was only 0.12% as of the first half of 2024, meaning the actual revenue contribution from new businesses such as the OK DOC telemedicine platform remains limited. The digital healthcare business, often cited as a growth story, currently has only a minor impact on overall company performance."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "하드웨어 원가 및 공급망 리스크",
-    "en": "Hardware Cost and Supply Chain Risk"
+    "ko": "사업·경쟁 리스크",
+    "en": "Business and Competitive Risk"
    },
    "body": {
-    "ko": "2025~2026년 메모리·서버 등 핵심 IT 부품 가격이 40~50% 수준으로 급등한 것으로 집계되며, 하드웨어 유통 및 구축 사업의 원가 부담이 크게 상승했다. 경쟁이 치열한 IT서비스 시장에서 원가 상승분을 판매가에 전가하기 어렵고, 이는 이미 낮은 영업이익률을 추가로 압박한다. 글로벌 반도체 공급망 불안정 및 미-중 무역 갈등에 따른 장비 조달 불확실성도 잠재적 위험 요인으로 남는다.",
-    "en": "Memory, server, and key IT component prices surged approximately 40-50% in 2025-2026, materially raising the cost of goods for hardware distribution and infrastructure deployment. In a fiercely competitive IT services market, passing these increases through to customers is structurally difficult, adding further pressure to already thin operating margins. Global semiconductor supply chain instability and US-China trade tensions also present latent procurement uncertainty."
+    "ko": "IT 인프라 사업부문은 기술 표준화로 인한 가격 경쟁 심화라는 구조적 압력에 노출돼 있다. 아이넷뱅크의 글로벌 벤더 유통 사업 역시 벤더사의 정책 변경이나 총판 계약 조건에 따라 수익성이 좌우될 수 있는 유통업 특성을 갖는다. 신사업(AI보안, 데이터센터 인프라 유통, 헬스케어)의 성과가 본업 둔화를 상쇄할 만큼 성장할지는 아직 확인이 필요하다.",
+    "en": "The IT infrastructure segment faces structural pressure from intensifying price competition driven by technology standardization. iNetBank's global vendor distribution business also has the characteristic profitability exposure of a distribution business, which can be affected by vendor policy changes or distribution contract terms. Whether new businesses (AI security, data center infrastructure distribution, healthcare) can grow enough to offset the slowdown in the core business remains to be confirmed."
    }
   },
   {
    "cat": {
-    "ko": "공공 IT 예산 및 정책 환경 리스크",
-    "en": "Public IT Budget and Policy Environment Risk"
+    "ko": "재무 리스크",
+    "en": "Financial Risk"
    },
    "body": {
-    "ko": "공공 부문은 인성정보의 주요 고객 기반으로, 정부 예산 집행 속도 둔화나 우선순위 변경이 수주 타이밍과 규모에 직접 영향을 미친다. 2026년 공공 IT 예산이 AI·데이터센터 중심 선별적 성장 구도로 전망되는 만큼, 전통 IT 인프라 구축 사업은 예산 배분에서 불리해질 가능성이 있다. 정부의 클라우드 전환 의무화 정책 속도와 방향성 변화 등 규제 환경도 중장기 사업 전망에 영향을 줄 수 있다.",
-    "en": "The public sector is a key customer base for Insung, making the company sensitive to slowdowns in government budget execution or shifts in spending priorities. With 2026 public IT budgets expected to pursue selective growth concentrated in AI and data centers, traditional infrastructure deployment projects risk receiving a diminishing share of allocations. Changes in the pace or direction of Korea's cloud adoption mandate and other regulatory developments could also affect medium-to-long-term business prospects."
+    "ko": "부채비율이 개선되고 있으나 2025년 기준 157.8%로 여전히 100%를 크게 상회하는 수준이다. 연간 기준으로는 2022~2025년 4년 중 3개 연도에서 순손실을 기록했으며, 분기별로도 적자와 흑자가 반복되고 있다. 자본총계(지배주주 기준) 규모가 크지 않아 향후 대규모 투자나 예상치 못한 손실이 발생할 경우 재무 완충력에 부담이 될 수 있다.",
+    "en": "While the debt ratio has been improving, it stood at 157.8% in 2025, still well above 100%. On an annual basis, the company posted net losses in three of the four years from 2022 to 2025, and quarterly results continue to alternate between profit and loss. Given the relatively modest size of owners' equity, any large future investment or unexpected loss could pressure the company's financial buffer."
    }
   },
   {
    "cat": {
-    "ko": "수익성 회복 지연 및 순자산 잠식 리스크",
-    "en": "Delayed Profitability Recovery and Net Asset Erosion Risk"
+    "ko": "지배구조·계열 리스크",
+    "en": "Governance and Affiliate Risk"
    },
    "body": {
-    "ko": "2024·2025년 2개년 연속 영업손실 상황에서, 매니지드서비스 비중 확대가 예상보다 느릴 경우 적자 구조가 장기화될 수 있다. IT 인프라 프로젝트 수주가 부진할 경우 4분기 집중 패턴에도 불구하고 연간 손익이 개선되지 않을 위험이 있다. 자회사 투자(아이넷뱅크 50억원 등)에 따른 지속적인 현금 유출이 이어지는 상황에서 수익성 회복 지연은 순자산 가치(BPS) 하락 압력을 누적시키는 요인이 된다.",
-    "en": "After two consecutive years of operating losses, if the managed services revenue mix expands more slowly than anticipated, the loss structure may persist longer than expected. Weak IT infrastructure project wins could prevent annual profit improvement even within the Q4-concentrated seasonal structure. Ongoing cash outflows from subsidiary investments (e.g., KRW 5bn for iNetBank) compound the risk: prolonged delays in profitability recovery would accumulate downward pressure on net asset value per share (BPS)."
+    "ko": "최대주주는 에스넷시스템으로 2024년 10월 기준 지분 19.09%를 보유하고 있으며, 계열사 간 사업 영역이 일부 겹치는 구조를 가지고 있다. 자회사 아이넷뱅크에 대한 추가 지분 취득(2024년 11월, 50억원 규모) 등 계열사 간 자금 이동이 지속적으로 발생하고 있어, 자본 배분의 우선순위와 계열사 간 시너지 실현 여부를 계속 확인할 필요가 있다.",
+    "en": "The largest shareholder, S.Net Systems, held a 19.09% stake as of October 2024, and there is some overlap in business areas among affiliated companies. Intra-group capital movements continue to occur, including an additional equity investment in subsidiary iNetBank (KRW 5.0bn in November 2024), making it necessary to continually monitor capital allocation priorities and whether synergies among affiliates are actually realized."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 2분기(Q2) 실적 공시 확인. 전년동기(2025Q2 영업손실 -36억원) 대비 개선 폭과 매출 회복 속도가 연간 흑자 전환 가능성을 가늠하는 가장 빠른 선행 지표다.",
-    "en": "Q2 2026 earnings disclosure. The magnitude of improvement versus Q2 2025 (operating loss of KRW -3.6bn) and revenue recovery pace are the earliest leading indicators for assessing the probability of a full-year return to profitability."
+    "ko": "2026년 3분기 분기보고서 공시 예정으로, 4분기 성수기 진입 전 매출·영업손익 추이와 소프트웨어·네트워크장비 도매부문의 성장 지속 여부를 확인할 시점이다.",
+    "en": "The third-quarter 2026 quarterly report is due, providing a chance to check revenue and operating profit trends and whether growth continues in the software and network equipment wholesale segments ahead of the seasonally strong fourth quarter."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 수시",
-    "en": "H2 2026 (rolling)"
+    "ko": "2026년 4분기 중",
+    "en": "Fourth quarter of 2026"
    },
    "what": {
-    "ko": "INSUNG AZit 신규 수주 공시 및 유지보수 고객 증가율 추적. 매니지드서비스 비중 확대가 영업손익 개선으로 실질적으로 이어지는지 확인하는 것이 중기 실적 전망의 핵심이다.",
-    "en": "New INSUNG AZit contract disclosures and maintenance client growth rate tracking. Confirming whether managed services revenue mix expansion is translating into tangible operating margin improvement is central to the medium-term earnings outlook."
+    "ko": "아이넷뱅크의 버티브 등 글로벌 벤더 관련 구체적 공급계약이나 수주 공시가 나오는지 확인이 필요하다. 현재까지는 총판권 보유 사실 위주로 알려져 있어 실질적 매출 기여 여부를 지켜봐야 한다.",
+    "en": "Watch for whether iNetBank discloses any concrete supply contracts or orders tied to global vendors such as Vertiv. So far, disclosures have centered on holding distribution rights, so the actual revenue contribution needs to be monitored."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월~12월",
-    "en": "November–December 2026"
+    "ko": "2026년 하반기",
+    "en": "Second half of 2026"
    },
    "what": {
-    "ko": "4분기 성수기 대형 수주 공시 모니터링. 거래처 IT 예산 집행이 집중되는 4분기 수주 규모와 방향이 2026년 연간 손익의 방향을 사실상 결정짓는다.",
-    "en": "Q4 peak-season contract award disclosures. Since most customers execute IT budgets in Q4, the volume and direction of large Q4 project wins will largely determine the full-year 2026 profit or loss outcome."
+    "ko": "정부의 국민성장펀드를 통한 AI 데이터센터 관련 투자 집행 일정과 규모가 구체화되는지 확인할 필요가 있다. 이는 냉각·전력 인프라 유통 수요와 연결되는 산업 전반의 정책 변수다.",
+    "en": "Check whether the timing and scale of AI data center-related investment execution through the government's National Growth Fund become more concrete. This is an industry-wide policy variable linked to cooling and power infrastructure distribution demand."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (정책 이벤트)",
-    "en": "H2 2026 (policy event)"
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "국내 비대면 의료(원격진료) 제도화 관련 입법·정책 동향 확인. 자회사 하이케어넷의 원격의료·AI 헬스케어 사업 수익화 시점과 직결되는 규제 환경 변화로, 정책 진전 여부에 따라 연결 실적 기여 가능성이 달라진다.",
-    "en": "Developments in Korean non-face-to-face medical (telemedicine) legislation and policy. Regulatory changes directly affect the monetization timeline for subsidiary HiCareNet's remote healthcare and AI platform businesses, and the pace of policy progress will materially influence whether the healthcare segment can become a positive contributor to consolidated results."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월 (연간 사업보고서 예정)",
-    "en": "March 2027 (Annual Report)"
-   },
-   "what": {
-    "ko": "2026년 전체 실적에서 영업이익 흑자 전환 여부, 부채비율 추가 개선, INSUNG AZit 매출 비중 공시 여부를 종합 확인. 재무 구조와 수익성 개선이 동시에 확인되는 시점이 중기 사업 방향의 진정한 변곡점이 된다.",
-    "en": "Confirm whether full-year 2026 achieves an operating profit, whether the debt ratio improves further, and any disclosed shift in INSUNG AZit's revenue contribution. A simultaneous improvement in both financial structure and profitability would mark a genuine medium-term inflection point in the company's business trajectory."
+    "ko": "2026년 연간 감사보고서 및 사업보고서 공시 시점으로, 연간 기준 흑자 전환 여부와 부채비율·영업활동현금흐름의 추가 개선 여부를 확인할 수 있다.",
+    "en": "This is when the audited annual report and business report for fiscal year 2026 are due, allowing confirmation of whether the company achieves a full-year profit and whether the debt ratio and operating cash flow show further improvement."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "인성정보는 3,000억원대 매출 기반을 유지하는 국내 중견 IT서비스 기업으로, 2024~2025년 2개년 연속 영업손실이라는 구조적 과제를 극복하는 과정에 있다. 차입금 감축에 따른 금융비용 절감으로 순손실이 뚜렷하게 축소됐고, 영업활동현금흐름은 2년 연속 견고한 흑자를 기록하는 등 재무 기초는 점진적으로 개선되고 있다. 2026년 1분기 실적에서 영업손실 축소와 매출 증가가 동시에 확인된 점은 개선 궤적의 지속을 시사하는 긍정적 신호다. INSUNG AZit 매니지드서비스의 유지보수 고객 40% 이상 증가는 중장기 수익 구조 전환의 씨앗으로 평가할 수 있으나, 매니지드서비스 비중이 손익 분기에 충분한 수준으로 확대되기까지는 시간이 필요하다. IT 인프라 핵심 사업의 지속적 매출 감소, 대기업 MSP의 시장 잠식, 하드웨어 원가 상승, 헬스케어 자회사의 수익화 지연은 여전히 해소되지 않은 약세 요인이다. 현 주가가 순자산 대비 할인 구간에 있고 배당이 없는 상황인 만큼, 분기별 영업이익 개선 속도와 AI·공공 IT 수주 확대 여부를 지속적으로 모니터링하는 것이 중요하다.",
-   "en": "Insung Information is a domestic mid-tier IT services company maintaining a KRW 300bn revenue base, currently working through the structural challenge of two consecutive years of operating losses in 2024-2025. On the positive side, debt repayment has meaningfully narrowed the net loss, operating cash flow has been firmly positive for two consecutive years, and financial fundamentals are gradually improving. The simultaneous narrowing of the operating loss and year-on-year revenue growth recorded in Q1 2026 are encouraging signals that the improvement trajectory is intact. The over-40% year-on-year growth in INSUNG AZit managed services maintenance clients is a promising seed for a longer-term structural shift in the revenue mix, though it will take time before the managed services base reaches a scale sufficient to drive full-year profitability. Ongoing decline in the core IT infrastructure revenue, competitive pressure from large-cap MSP entrants, hardware cost inflation, and the delayed monetization of the healthcare subsidiary remain unresolved headwinds. With the share price at a discount to net asset value and no dividend in place, closely monitoring the pace of quarterly operating profit improvement and the trajectory of AI and public IT contract wins remains essential before forming an investment view."
+   "ko": "인성정보는 IT인프라·소프트웨어 도매·네트워크장비 도매·헬스케어 4개 사업부문을 보유한 코스닥 IT서비스 기업으로, 최근 몇 년간 연간 기준 적자와 소폭 흑자를 오가는 실적 패턴을 보여왔다. 2025년에는 매출이 전년 대비 4.7% 감소했지만 차입금 상환에 따른 금융비용 감소로 순손실은 45.7% 개선됐고, 부채비율 하락과 영업활동현금흐름의 2년 연속 순유입 전환은 재무구조 측면의 긍정적 변화로 평가할 수 있다. 동시에 IT인프라 본업은 기술 표준화에 따른 가격 경쟁으로 매출 감소가 지속되고 있으며, 분기별 실적의 계절성과 변동성도 여전히 크다. 자회사 아이넷뱅크가 보유한 버티브 등 글로벌 벤더 총판권은 AI 데이터센터 냉각·전력 인프라 수요 확대라는 산업 흐름에 노출을 제공하지만, 이는 유통 채널로서의 노출이며 구체적 공급계약이나 매출 기여 규모는 아직 확인되지 않은 상태다. 소프트웨어 도매부문의 AI 보안·클라우드 솔루션 매출 증가는 신사업의 실질적 성장 신호로 볼 수 있으나, 헬스케어 부문은 매출 비중이 여전히 미미하다. 종합하면 재무구조 개선과 신사업 성장 신호, 본업 둔화와 실적 변동성이라는 두 축이 공존하는 상황으로, 다가오는 3분기 실적과 벤더 관련 공시가 향후 방향을 가늠할 주요 변수가 될 것으로 보인다.",
+   "en": "Insung Information is a KOSDAQ IT services company with four business segments—IT infrastructure, software wholesale, network equipment wholesale, and healthcare—that has shown a pattern of alternating annual losses and modest profits in recent years. In 2025, revenue fell 4.7% year-on-year, but net loss improved 45.7% on lower financial costs from debt repayment, and the decline in the debt ratio along with two consecutive years of positive operating cash flow can be viewed as positive changes in the balance sheet. At the same time, the core IT infrastructure business continues to see revenue declines amid price competition driven by technology standardization, and quarterly results remain highly seasonal and volatile. The global vendor distribution rights held by subsidiary iNetBank, including for Vertiv, provide exposure to the industry trend of expanding AI data center cooling and power infrastructure demand, but this exposure is through a distribution channel, and concrete supply contracts or the scale of revenue contribution have not yet been confirmed. Growth in AI security and cloud solution sales in the software wholesale segment can be seen as a genuine growth signal for new businesses, but the healthcare segment's revenue contribution remains minor. Overall, the company sits at the intersection of improving financial structure and new-business growth signals on one hand, and core business slowdown and earnings volatility on the other, with the upcoming third-quarter results and any vendor-related disclosures likely to be key variables for gauging future direction."
   }
  },
  "sources": [
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250319001313&docno=&viewerhost=",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A033230&MenuYn=Y&NewMenuID=103&stkGb=701",
+  "https://dartpoint.ai/00229021",
   "https://www.ibks.com/company/common/download.jsp?filepath=/files/tradeinfo/busreport&filename=20200508171234887_ko.pdf",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=629710",
-  "https://w4.kirs.or.kr/download/research/250806_%EC%9D%B8%EC%84%B1%EC%A0%95%EB%B3%B43.pdf",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A033230",
   "https://comp.fnguide.com/SVO2/asp/SVD_Corp.asp?pGB=5&gicode=A033230&cID=21&MenuYn=N&ReportGB=&NewMenuID=102&stkGb=701",
-  "https://www.google.com/finance/quote/033230:KOSDAQ?hl=en",
-  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=033230",
-  "https://www.investing.com/equities/insung-information-co-ltd",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A033230",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20231114003083&docno=&viewerhost=",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=033230",
+  "https://paxnet.co.kr/tbbs/list?id=033230&tbbsType=L",
   "https://goinsider.kr/stock/00229021",
-  "http://www.insunginfo.co.kr/",
-  "https://zdnet.co.kr/view/?no=20230206171940",
-  "http://www.insunginfo.kr/bbs/content.php?co_id=206",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/R0QrQ0ZQNzMrTVdpeVd1MzcxOG8rQT09/company_nm/(%EC%A3%BC)%EC%9D%B8%EC%84%B1%EC%A0%95%EB%B3%B4",
-  "https://thevc.kr/personalityinformation",
-  "https://www.businesspost.co.kr/BP?command=article_view&num=370408",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=033230&cn=",
-  "https://www.hellot.net/news/tag_list_all.html?tag=%EC%97%90%EC%8A%A4%EB%84%B7%EC%8B%9C%EC%8A%A4%ED%85%9C"
+  "https://www.investing.com/equities/insung-information-co-ltd",
+  "https://alphasquare.co.kr/home/stock-summary?code=033230",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260318001186&docno=&viewerhost=",
+  "https://m.thinkpool.com/item/033230",
+  "https://littlebproject.com/stock/033230/33/34715",
+  "https://news.infostock.co.kr/a",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=629710",
+  "https://littlebproject.com/stock/033230/290/30133"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "033230",
  "name": "인성정보",
  "name_en": "INSUNG INFORMATION CO., LTD",
@@ -232,9 +223,9 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 05:52",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:51",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -337,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 1216,
-   "mcap": 0.0614,
+   "price": 1068,
+   "mcap": 0.054,
    "shares": 50515380,
    "total_shares": 50515380,
    "wavg_shares": 49761493,
-   "per": 11.692,
+   "per": 10.269,
    "eps": 104,
-   "pbr": 0.6737,
+   "pbr": 0.5917,
    "bps": 1805,
    "roe_ttm": 6.0,
    "ttm_window": "2025Q3~2026Q2",

@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "클라우드·보안 사이클 수혜, 수익성 회복 검증이 관건",
-  "en": "Cloud & Security Cycle Tailwinds — Profit Margin Recovery Holds the Key"
+  "ko": "보안·클라우드 수요 속 이익 회복",
+  "en": "Profit Recovery Amid Security, Cloud Demand"
  },
  "lead": {
-  "ko": "하이브리드 클라우드·네트워크 보안·ITO 등 4개 사업부문의 균형 성장과 글로벌 파트너십 확대로 2025년 영업이익률이 반등했으나, 낮은 절대 마진과 영업현금흐름 변동성은 지속적인 관찰 포인트로 남아 있다.",
-  "en": "Balanced growth across four business segments—hybrid cloud, network security, ADC/infrastructure, and ITO—alongside expanding global partnerships lifted operating margins in 2025, but persistently thin absolute margins and volatile operating cash flow warrant continued monitoring."
+  "ko": "오픈베이스는 하이브리드 클라우드·네트워크 보안·ITO 사업을 축으로 매출 성장을 이어가는 가운데, 2026년 상반기 두 개 분기 연속 영업이익 흑자로 수익성 회복 국면에 들어섰다.",
+  "en": "Openbase continues to grow revenue across its hybrid cloud, network security and IT outsourcing businesses, and posted operating profit in two consecutive quarters in the first half of 2026, marking a shift toward profitability recovery."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 영업이익 79억원(+18.9% YoY), OPM 3.4% — 2024년 저점(2.9%) 대비 수익성 회복 기조 확인",
-   "en": "2025 consolidated operating profit KRW 7.9B (+18.9% YoY, OPM 3.4%) — confirms a recovery from the 2024 trough OPM of 2.9%"
+   "ko": "2025년 연결 매출 2,331억원, 영업이익 79억원으로 매출·이익이 함께 늘었으나 매출 성장률은 2024년의 두 자릿수에서 3%대로 둔화됐다.",
+   "en": "Consolidated revenue reached KRW 233.1 billion and operating profit KRW 7.9 billion in 2025, but revenue growth slowed to about 3% from double digits in 2024."
   },
   {
-   "ko": "4개 사업부문(하이브리드 클라우드·보안·ADC/네트워크·ITO) 원스톱 IT 인프라 포트폴리오, 인력의 70%+ 기술·R&D 구성으로 기술 차별화에 집중",
-   "en": "Four-segment one-stop IT infrastructure portfolio (hybrid cloud, security, ADC/network, ITO) with 70%+ of headcount in technical and R&D roles, underpinning technology differentiation"
+   "ko": "2025년 1분기 영업손실을 낸 이후 2026년 1분기·2분기 모두 영업이익 흑자를 기록하며 이익 흐름이 방향을 바꿨다.",
+   "en": "After an operating loss in the first quarter of 2025, the company posted operating profit in both Q1 and Q2 2026, marking a reversal in earnings momentum."
   },
   {
-   "ko": "Zscaler 파트너십(2024년 12월)·VMware ANS PSO 인증(2025년 3월)으로 제로 트러스트·VCF 9 기반 고부가 서비스 역량 강화",
-   "en": "Zscaler partnership (Dec 2024) and VMware ANS PSO certification (Mar 2025) strengthen zero-trust and VCF 9-based high-value service capabilities"
+   "ko": "VMware(브로드컴)의 'ANS PSO' 전문 서비스 자격 취득 등으로 글로벌 벤더 파트너십을 고부가 컨설팅 영역까지 확장하고 있다.",
+   "en": "The company obtained VMware (Broadcom)'s 'ANS PSO' professional-service certification, extending its global vendor partnerships into higher-value consulting work."
   },
   {
-   "ko": "2026년 1분기 매출 582억원(+46% YoY) — 분기 역대 최고치로 외형 성장 가속화, 동기간 영업이익 흑자 전환",
-   "en": "2026Q1 revenue KRW 58.2B (+46% YoY) — a record quarterly high with a swing to operating profit, signaling accelerating top-line growth"
+   "ko": "2025년 9월 국가정보자원관리원 화재를 계기로 정부의 클라우드 이중화(DR) 투자 확대 논의가 이어지고 있어 관련 사업 환경에 영향을 줄 수 있다.",
+   "en": "Following the September 2025 fire at the National Information Resources Service, ongoing discussion of expanded government cloud disaster-recovery investment could affect the related business environment."
   },
   {
-   "ko": "주당순자산(BPS 3,142원) 대비 할인된 구간에서 거래, 국내 보안·클라우드 시장은 2026년 각각 10조원 돌파·연 25%+ 성장 전망",
-   "en": "Shares trade at a discount to book value (BPS KRW 3,142); domestic security and cloud markets are forecast to cross KRW 10T and grow 25%+ annually in 2026"
+   "ko": "코스닥 소형주 특성상 대형 프로젝트 의존도가 높아 분기 실적 변동성이 크고, 영업활동현금흐름도 해마다 부호가 바뀌었다.",
+   "en": "As a small-cap KOSDAQ stock with high dependence on large individual projects, quarterly results show notable volatility, and operating cash flow has swung between positive and negative from year to year."
   }
  ],
  "business": {
-  "ko": "오픈베이스는 1992년 설립·2001년 코스닥 상장 이후 30년 이상의 IT 인프라 구축 경험을 보유한 기술 중심 기업으로, 사업은 ①하이브리드-멀티 클라우드 솔루션, ②네트워크 보안 솔루션, ③ADC 및 네트워크 인프라, ④ITO(IT 아웃소싱) 서비스 등 4개 부문으로 구분된다. 진단·컨설팅부터 구축·기술지원까지 원스톱으로 제공하며, 전체 인력의 70% 이상을 기술·R&D 인력으로 유지해 기술 차별화를 핵심 전략으로 삼고 있다. 독자 개발 솔루션으로는 AI 기반 트래픽 인텔리전스 솔루션 AppLogic(3,500개+ 앱 95%+ 식별 정확도), 위협 인텔리전스 플랫폼 TARGOS, ADC 통합관리 솔루션 ADC스마트가 있으며, 이를 통해 단순 솔루션 리셀링을 넘어 고부가 서비스 포지션을 확보하고 있다. 글로벌 파트너 생태계는 AWS·MS Azure·VMware(브로드컴)·Dell Technologies·F5·Radware·Zscaler·Fortinet·NHN Cloud 등 광범위하다. 2025년 3월 VMware 애플리케이션 네트워킹 및 보안 분야의 ANS PSO 인증을 취득해 VCF 9 기반 차세대 인프라 서비스 공급 자격을 공식 확보했으며, 2024년 12월에는 글로벌 제로 트러스트 리더 지스케일러와 전략적 파트너십을 체결해 SecaaS 역량을 확장했다. 주요 고객군은 SKT·KT 등 통신사업자, 주요 은행·증권사 등 금융권, MBC 등 미디어 기업, 공공기관에 이르기까지 폭넓게 분포한다. ITO 부문은 금융·공공기관의 IT 아웃소싱 수요를 바탕으로 DB 이중화·DR(재해복구)·백업·보안관제 서비스를 제공하며 안정적인 반복 매출 기반을 형성한다. 국내외 계열사로는 나노측정기기 전문 나노베이스와 데이타솔루션이 있다.",
-  "en": "Founded in 1992 and listed on KOSDAQ in 2001, Openbase is a technology-driven IT infrastructure company with more than 30 years of project execution experience. Its business is organized into four segments: (1) hybrid-multi cloud solutions, (2) network security solutions, (3) ADC and network infrastructure, and (4) ITO (IT outsourcing) services, delivering a one-stop offering from diagnostics and consulting through deployment to technical support. More than 70% of its workforce is in technical and R&D roles, underpinning a strategy of technology differentiation. Proprietary solutions include AppLogic, an AI-based traffic intelligence platform capable of identifying 3,500+ applications with over 95% accuracy; TARGOS, a threat intelligence platform; and ADC Smart, an integrated ADC management solution—positioning the company beyond mere reselling into value-added services. Its global partner ecosystem spans AWS, Microsoft Azure, VMware (Broadcom), Dell Technologies, F5, Radware, Zscaler, Fortinet, and NHN Cloud. In March 2025, Openbase obtained VMware's ANS PSO certification for application networking and security, formally qualifying it to deliver professional services based on VMware Cloud Foundation (VCF) 9. In December 2024, it signed a strategic partnership with global zero-trust leader Zscaler to expand its SecaaS capabilities. Key customer segments include telecom carriers (SKT, KT), financial institutions (banks, brokerages), media companies such as MBC, and public-sector entities. The ITO segment generates stable recurring revenue through database redundancy, DR, backup management, and security monitoring services for financial and government clients. Subsidiaries include Nanobae, a nanotube measurement instrument specialist, and DataSolution."
+  "ko": "오픈베이스는 1992년 설립되어 2001년 코스닥에 상장된 IT 인프라 전문기업으로, 본사와 7개 종속기업으로 구성된 연결회사를 통해 하이브리드-멀티 클라우드, 네트워크 보안, ITO 서비스 등 광범위한 서비스를 제공한다. 퍼블릭 클라우드 부문에서는 아마존웹서비스(AWS)와 마이크로소프트 애저와의 파트너십과 함께 프라이빗 클라우드 선두업체인 VM웨어와도 파트너십을 체결해 자체 클라우드 브리핑 센터를 운영하고 있다. 보안 솔루션은 Fortinet 등과 협력하여 고객 맞춤형 서비스를 제공하며, 회사는 ADC(Application Delivery Controller) L4 스위치를 국내 시장에 처음 소개한 기업으로 알려져 있다. 보안 사업은 2016년부터 본격적으로 역량을 집중한 이후 최근 몇 년간 새로운 성장동력으로 자리잡았고, 2024년 보안관제센터 개소를 통해 AI·빅데이터 기반 침해 위협 분석 서비스를 제공하고 있다. 2025년 1월부터는 AI 기술을 접목한 원격 보안관제 서비스를 본격적으로 제공하기 시작했다. 고객 기반은 국내 주요 인터넷 서비스 제공 기업들로, 공공·금융·대학·통신사·ISP 등을 폭넓게 포함하는 것으로 소개된다. 국내 사이버보안 시장에서는 안랩, 시큐아이, 윈스, 이글루코퍼레이션 등과 함께 이른바 5대 보안기업군으로 분류되며, 네트워크·보안·클라우드 3대 포트폴리오가 매출을 견인하는 구조다. 사업 모델은 진단·컨설팅부터 시스템 구축, 기술지원까지 아우르는 시스템통합(SI) 방식으로, 고객과의 장기 계약을 통한 반복 매출 확보가 핵심 경쟁력 중 하나로 꼽힌다.",
+  "en": "Founded in 1992 and listed on KOSDAQ in 2001, Openbase is an IT infrastructure specialist that, through its parent company and seven subsidiaries on a consolidated basis, provides hybrid multi-cloud, network security and IT outsourcing services. In public cloud, the company partners with Amazon Web Services and Microsoft Azure, while in private cloud it partners with VMware, the leading vendor, and operates its own Cloud Briefing Center. Its security solutions are built in cooperation with vendors such as Fortinet, and the company is known as the first to introduce Application Delivery Controller (ADC) L4 switches to the domestic market. Security has become a key growth driver in recent years since the company began concentrating resources in that area from 2016, and in 2024 it opened a security operations center providing AI- and big-data-based intrusion analysis services. From January 2025, it began offering an AI-enhanced remote security monitoring service. Its customer base is described as spanning major domestic internet service users across the public sector, finance, universities, telecom operators and ISPs. In Korea's cybersecurity market, Openbase is grouped together with AhnLab, SECUI, WINS and IGLOO Corporation as part of the so-called 'Big 5' security firms, with network, security and cloud forming the three pillars driving revenue. Its business model follows a system-integration approach spanning diagnosis, consulting, system build-out and technical support, with recurring revenue from long-term customer contracts cited as a core competitive strength."
  },
  "earnings": {
-  "ko": "2025년 연결 기준 매출액은 2,331억원으로 전년(2,263억원) 대비 3.0% 증가했으며, 영업이익은 79억원(OPM 3.4%)으로 전년(67억원, OPM 2.9%) 대비 18.9% 개선됐다. OPM 추이는 2022년 4.1% → 2023년 3.2% → 2024년 2.9%(저점) → 2025년 3.4%로 하락 후 부분 반등 단계에 있다. 지배주주 귀속 순이익은 73억원으로 전년(76억원) 대비 소폭 감소했는데, 영업이익 개선에도 불구하고 영업 외 비용 변동이 영향을 미친 것으로 보인다. 분기별로는 1분기 계절 적자 패턴이 고착화돼 있어 2025년 1분기 영업손실이 18억원이었으나, 2분기(영업이익 19억원)·3분기(17억원) 순차 흑자 전환 후 4분기(매출 942억원·영업이익 61억원)에 연간 이익의 대부분이 집중됐다. 4분기 매출 비중이 연간의 약 40%에 달하는 극단적 후중형(back-loaded) 구조는 상반기 수주 결과에 따라 연간 실적 변동성이 크게 확대되는 구조적 요인이다. 2026년 1분기 매출은 582억원으로 전년 동기(399억원) 대비 약 46% 급증해 분기 최고치를 기록했으며, 영업이익도 전년 동기 -18억원에서 +3억원으로 흑자 전환됐다. 다만 2026년 1분기 OPM은 0.5%에 그쳐, 매출 급증 대비 수익성 전환의 폭이 제한적이었다. 영업현금흐름은 2024년 136억원 흑자에서 2025년 -12억원으로 전환됐으며, 2022년(-24억원)·2023년(-2억원)에도 음수였다는 점에서 이익 대비 현금 창출력의 구조적 한계가 관찰된다. 연간 EPS는 2022년 191원 → 2023년 166원(저점) → 2024년 251원 → 2025년 266원의 흐름으로 이익 회복 방향을 확인할 수 있다.",
-  "en": "On a consolidated basis, 2025 revenue was KRW 233.1B (+3.0% YoY from KRW 226.3B), and operating profit was KRW 7.9B (OPM 3.4%), up 18.9% from KRW 6.7B (OPM 2.9%) in 2024. The OPM trajectory—4.1% in 2022, 3.2% in 2023, 2.9% in 2024 (trough), and 3.4% in 2025—describes a dip-and-partial-recovery pattern rather than a smooth upward trend. Net profit attributable to the controlling interest slipped to KRW 7.3B from KRW 7.6B in 2024, as below-the-line items offset the improved operating performance. Quarterly results reveal deeply entrenched seasonality: a 1Q operating loss (KRW 1.8B in 2025Q1) followed by sequential recovery through 2Q (KRW 1.9B) and 3Q (KRW 1.7B), with roughly 40% of annual revenue and the bulk of profit concentrated in 4Q (2025Q4: revenue KRW 94.2B, operating profit KRW 6.1B). This extreme back-loaded structure means annual outcomes are highly sensitive to 2H contract execution. In 2026Q1, revenue surged approximately 46% YoY to KRW 58.2B—a record quarterly high—and operating income swung to +KRW 0.3B from –KRW 1.8B a year earlier. However, the resulting 0.5% OPM indicates that cost structure improvement has not yet kept pace with revenue growth. Operating cash flow deteriorated from +KRW 13.6B in 2024 to –KRW 1.2B in 2025; with OCF also negative in 2022 (–KRW 2.4B) and 2023 (–KRW 0.15B), the recurring gap between reported earnings and cash generation is a notable concern for earnings quality. Annual EPS has progressed from a 2023 trough, confirming the ongoing profit recovery direction."
+  "ko": "연결 매출은 2022년 1,931억원, 2023년 2,040억원, 2024년 2,263억원, 2025년 2,331억원으로 4년 연속 증가했으나, 성장률은 2024년 전년 대비 큰 폭 확대에서 2025년에는 한 자릿수 초반대로 둔화됐다. 영업이익은 2022년 80억원에서 2023년 66억원, 2024년 67억원으로 낮아졌다가 2025년 79억원으로 회복됐고, 영업이익률도 4.1%→3.2%→2.9%에서 2025년 3.4%로 다시 올라섰다. 지배주주 순이익은 2022년 60억원, 2023년 52억원, 2024년 76억원, 2025년 73억원으로 등락했다. 분기별로 보면 2025년 2분기 매출 483억원·영업이익 19억원, 3분기 매출 507억원·영업이익 17억원을 기록한 뒤, 4분기에는 매출 942억원·영업이익 61억원으로 크게 뛰었는데 이는 연말에 프로젝트 매출 인식이 몰리는 SI업계 특성과 맞물린 것으로 볼 수 있다. 이후 2026년 1분기에는 매출 582억원까지 늘었지만 영업이익은 3억원 수준으로 크게 축소됐고, 2분기에는 매출 607억원, 영업이익 32억원으로 다시 개선되는 흐름을 보였다. 순이익 측면에서는 2025년 4분기 36억원, 2026년 1분기 21억원, 2분기 42억원으로 최근 분기들에서 견조한 수준을 유지했다. 영업활동현금흐름은 2024년 136억원 순유입이었다가 2025년 12억원 순유출로 전환돼, 이익 개선에도 실제 현금창출력은 해마다 부호가 바뀌는 변동성을 보였다. 이는 프로젝트 기반 매출 인식과 대형 계약의 수금 시점 차이에서 기인하는 SI 업종 특유의 현금흐름 패턴으로 해석할 수 있다.",
+  "en": "Consolidated revenue rose for four consecutive years, from KRW 193.1 billion in 2022 to KRW 204.0 billion in 2023, KRW 226.3 billion in 2024 and KRW 233.1 billion in 2025, though the growth rate slowed from a sharp increase in 2024 to a low single-digit pace in 2025. Operating profit declined from KRW 8.0 billion in 2022 to KRW 6.6 billion in 2023 and KRW 6.7 billion in 2024 before recovering to KRW 7.9 billion in 2025, with the operating margin also rebounding to 3.4% in 2025 after dipping to 2.9% in 2024. Net profit attributable to owners fluctuated between KRW 6.0 billion, KRW 5.2 billion, KRW 7.6 billion and KRW 7.3 billion across 2022 through 2025 respectively. On a quarterly basis, revenue of KRW 48.3 billion and operating profit of KRW 1.9 billion in Q2 2025 were followed by KRW 50.7 billion and KRW 1.7 billion in Q3, before a sharp jump to KRW 94.2 billion in revenue and KRW 6.1 billion in operating profit in Q4 2025, a pattern consistent with year-end project revenue recognition typical of the systems-integration business. Revenue then rose further to KRW 58.2 billion in Q1 2026, though operating profit narrowed sharply to around KRW 0.3 billion, before improving again to KRW 60.7 billion in revenue and KRW 3.2 billion in operating profit in Q2 2026. Net profit stayed relatively firm across recent quarters, at KRW 3.6 billion in Q4 2025, KRW 2.1 billion in Q1 2026 and KRW 4.2 billion in Q2 2026. Operating cash flow swung from a net inflow of KRW 13.6 billion in 2024 to a net outflow of KRW 1.2 billion in 2025, showing that despite profit improvement, actual cash generation alternated in sign year to year — a pattern that can be attributed to the timing gap between project-based revenue recognition and collection on large contracts, characteristic of the systems-integration industry."
  },
  "industry": {
-  "ko": "국내 사이버보안 시장은 2026년 4조88억원(+16.1% YoY) 규모로 성장하며 전체 보안 시장이 처음으로 10조원을 넘어설 것으로 전망된다. 한국 클라우드 컴퓨팅 시장은 2025년 약 99.5억 달러에서 2026년 124.6억 달러로 확대되고, 2026~2031년 연평균 25.2%의 고성장이 예측돼 수요 기반은 구조적으로 탄탄하다. 하이브리드 클라우드는 국내 대기업 IT 인프라의 표준으로 자리잡고 있으며, 제로 트러스트·SSE(Secure Service Edge) 아키텍처로의 전환이 금융·통신·공공 부문에서 가속화되고 있다. 2025년 9월 국가정보자원관리원 화재 이후 공공 부문의 DR·이중화(HA) 투자가 정책 의제화됐으며, 관련 인프라 구축 경험과 솔루션 포트폴리오를 보유한 IT 기업에 수주 기회를 확대시키고 있다. 정부는 2026년 2분기까지 공공정보화 사업 민간 클라우드 전환 계획을 수립할 예정이어서 클라우드·보안 인증 역량을 갖춘 기업에 새로운 프로젝트 기회가 배분될 가능성이 있다. 경쟁 구도 면에서 오픈베이스는 안랩·윈스·이글루코퍼레이션 등 보안 전문 기업과 삼성SDS·LG CNS 등 대형 SI 기업 사이에서 글로벌 벤더 공인 파트너 포지션을 유지하는 한편, 독자 솔루션으로 차별화를 추구한다. 한국은 국내외 하이퍼스케일러 데이터센터 투자 확대로 글로벌 클라우드 IT 인프라 시장에서 2027년까지 5위권 진입이 전망되며, 이는 국내 인프라 솔루션 전문기업들의 수주 환경을 개선하는 배경이 된다.",
-  "en": "The domestic cyber-security market is forecast to reach KRW 4.0T in 2026 (+16.1% YoY), propelling the total security market past KRW 10T for the first time. The South Korean cloud computing market is projected to expand from approximately USD 9.95B in 2025 to USD 12.46B in 2026, with a CAGR of 25.2% through 2031, providing a robust structural demand foundation. Hybrid cloud is increasingly becoming the standard enterprise IT infrastructure in Korea, while zero-trust and SSE (Secure Service Edge) architecture transitions are accelerating across financial, telecom, and public-sector clients. The September 2025 fire at the National Information Resources Service (NIRS) data center elevated DR and high-availability investment to a formal policy priority, expanding the project pipeline for IT firms with proven redundancy capabilities. The government is scheduled to formalize its public-sector cloud migration plan by 2Q 2026, which may channel new project budgets toward certified cloud and security providers. On the competitive landscape, Openbase holds a certified global-vendor-partner niche between domestic security specialists (AhnLab, WINS, Igloo) and large SI integrators (Samsung SDS, LG CNS), differentiating through its proprietary solutions. South Korea's domestic cloud IT infrastructure market is projected to reach the global top five by 2027 on the strength of hyperscaler data center investments, improving the overall project environment for domestic infrastructure solution companies."
+  "ko": "국내 사이버보안 산업은 랜섬웨어와 디도스(DDoS) 공격 증가, 클라우드 보안 강화 요구를 배경으로 지속적인 성장 동력을 확보하고 있는 것으로 평가된다. 업계에서는 2026년 국내 보안 시장이 10조원을 돌파할 것으로 전망하는 시각도 제시된다. 2025년 9월 대전 국가정보자원관리원에서 무정전전원장치 배터리 화재가 발생해 정부 전산시스템 다수가 장기간 마비됐는데, 이는 정부가 업무자료를 별도 지역에 분산·백업하는 재해복구(DR) 체계를 마련하지 않아 피해를 키웠다는 지적으로 이어졌다. 이후 정부 차원에서 민간 클라우드 활용을 확대하는 방향의 정책 논의가 본격화됐고, 클라우드법 제정 10주년을 맞아 민간 클라우드 우선 이용 원칙을 강화한 새로운 클라우드 기본계획이 수립됐다. 다만 화재 이후 대안으로 제시된 대구 민관협력 클라우드존(PPP존)은 여유 공간 부족으로 보안등급이 높은 시스템만 입주를 허용하는 방침이 새로 마련되면서, 다수 공공기관이 클라우드 확보에 난항을 겪고 사업비가 늘어나는 사례도 보고되고 있다. 경쟁 구도에서는 안랩·시큐아이·윈스·이글루코퍼레이션 등 국내 대표 보안기업들이 각자 공공·금융·대기업 채널을 두고 경쟁하며, 오픈베이스는 네트워크·클라우드·ITO를 결합한 종합 IT 인프라 서비스로 차별화를 시도하는 위치에 있다. VM웨어를 인수한 브로드컴이 가격 정책과 라이선싱 방식을 잇달아 변경한 점은 관련 파트너 생태계 전반에 변화 요인으로 작용하고 있다.",
+  "en": "Korea's cybersecurity industry is seen as maintaining continued growth momentum amid rising ransomware and DDoS attacks and growing demand for cloud security. Some industry observers project the domestic security market will surpass KRW 10 trillion in 2026. In September 2025, a fire caused by an uninterruptible power supply battery at the National Information Resources Service in Daejeon paralyzed numerous government computer systems for an extended period, and criticism emerged that the government had failed to build a disaster-recovery system distributing and backing up data across separate locations, worsening the damage. Policy discussion subsequently intensified around expanding the use of private cloud at the government level, and a new cloud master plan strengthening the principle of prioritizing private cloud was established to mark the tenth anniversary of the Cloud Computing Act. However, the Daegu public-private partnership cloud zone proposed as an alternative after the fire has since restricted entry to only high-security-grade systems due to limited capacity, and reports indicate several public institutions have struggled to secure cloud capacity, in some cases facing increased project costs. In the competitive landscape, major domestic security firms such as AhnLab, SECUI, WINS and IGLOO Corporation compete across public-sector, financial and enterprise channels, while Openbase positions itself with a combined network, cloud and IT-outsourcing service offering. Broadcom's successive pricing and licensing changes since acquiring VMware have also introduced a source of change across the related partner ecosystem."
  },
  "outlook": {
-  "ko": "2026년 국내 IT 인프라·클라우드·보안 투자는 AI 워크로드 확대와 디지털 전환 가속에 힘입어 성장세를 유지할 것으로 전망된다. 오픈베이스는 지스케일러 파트너십을 기반으로 제로 트러스트·SSE 솔루션의 국내 금융·대기업 공급을 본격화할 방침이며, VMware VCF 9 기반 하이브리드 클라우드 구축 서비스를 전면에 내세워 고부가 컨설팅·구축 수주를 확대할 계획이다. AI 기반 보안관제 플랫폼(TARGOS + 모니터랩 AI 기술 연동)은 2024년 AI 바우처 지원사업 '우수' 등급을 획득한 데 이어 2025년부터 정식 서비스로 운영 중이어서 경쟁력 있는 반복 매출 확대가 기대된다. 공공정보화 민간 클라우드 전환 계획(2026년 상반기 수립 예정)이 구체화될 경우, 하이브리드 클라우드·보안·ITO 역량을 갖춘 오픈베이스에 공공 수주 기회가 확대될 수 있다. 다만 2026년 1분기 OPM이 0.5%에 그친 점에서 보이듯, 매출 외형 성장이 수익성 향상으로 이어지기 위해서는 파트너 솔루션 원가 관리와 운영 레버리지 개선이 핵심 과제로 남는다. 4분기 매출 집중 구조(연매출의 약 40%)가 지속되는 만큼 2026년 연간 실적은 하반기 대형 수주 결과와 정부 예산 집행 타이밍에 크게 의존할 전망이다. 중장기적으로는 글로벌 파트너 솔루션 의존도를 낮추고 자체 솔루션(AppLogic·TARGOS·ADC스마트) 비중을 높여 마진 구조를 개선하는 방향을 추진하고 있다.",
-  "en": "Domestic IT infrastructure, cloud, and security investments are expected to sustain growth momentum in 2026, driven by rising AI workloads and accelerating digital transformation. Openbase plans to commercialize zero-trust and SSE solutions for financial and large enterprise clients via its Zscaler partnership, while leading with VMware VCF 9-based hybrid cloud professional services to expand high-value consulting and deployment wins. Its AI-integrated security monitoring platform (TARGOS coupled with Monitorlab's machine-learning modules) earned an 'excellent' rating in the 2024 government AI Voucher Program and has been in commercial service since early 2025, positioning the company for recurring revenue growth. Formalization of the government's public-sector cloud migration plan (due 1H 2026) could direct additional project awards to vendors with certified hybrid cloud, security, and ITO capabilities. However, as the 0.5% OPM in 2026Q1 illustrates, translating revenue growth into meaningful margin expansion requires improved partner solution cost management and operating leverage—a key near-term execution challenge. The persistent 4Q revenue concentration (~40% of annual total) means the 2026 full-year outcome will remain heavily dependent on second-half contract execution and government budget disbursement timing. Over the medium term, management is steering toward a higher share of proprietary solutions (AppLogic, TARGOS, ADC Smart) to structurally improve the margin profile."
+  "ko": "오픈베이스는 2026년 3월 VM웨어(브로드컴)로부터 애플리케이션 네트워킹 및 보안 분야 전문 서비스 역량 인증인 'ANS PSO' 자격을 취득했다고 밝혔으며, 이를 통해 단순 제품 공급을 넘어 설계·구축·최적화를 포함한 전문 컨설팅 서비스를 제공할 수 있는 체계를 갖췄다고 설명했다. 회사는 브로드컴의 최신 통합 플랫폼인 VM웨어 클라우드 파운데이션(VCF) 9 기반 서비스 역량을 특히 강조하고 있다. 앞서 2024년 상반기에는 프록스목스와 파트너십을 체결해 오픈소스 기반 프라이빗 클라우드 솔루션 제공을 본격화했으며, AI 기반 클라우드 데이터 보호와 M365 업무데이터 보호 방안도 함께 제시한 바 있다. 보안 부문에서는 2025년 1월부터 AI를 접목한 원격 보안관제 서비스를 본격 제공하기 시작했으며, 회사 측은 위협 인텔리전스 상관관계 분석과 사전 위협 식별에 AI 기술을 활용해 서비스 고도화를 지속하겠다는 방향을 밝혔다. 정부의 클라우드 이중화(DR) 관련 투자 논의가 이어지고 있는 점은 관련 인프라 구축 경험을 보유한 사업자들에게 우호적인 정책 환경으로 거론되지만, 대구 PPP존의 용량 제약 사례처럼 실제 사업 집행에는 시차와 불확실성이 남아 있다. 회사의 다음 분기 실적과 신규 벤더 인증·파트너십 확대 여부가 향후 사업 모멘텀을 가늠하는 지표가 될 것으로 보인다.",
+  "en": "In March 2026, Openbase announced it had obtained VMware (Broadcom)'s 'ANS PSO' professional-service certification in application networking and security, stating this completed a framework enabling it to provide professional consulting services encompassing design, build-out and optimization, beyond simple product supply. The company has particularly emphasized its service capability based on Broadcom's latest integrated platform, VMware Cloud Foundation (VCF) 9. Earlier, in the first half of 2024, it signed a partnership with Proxmox to launch open-source-based private cloud solutions, alongside presenting AI-based cloud data protection and Microsoft 365 workload protection strategies. In security, the company began offering an AI-enhanced remote security monitoring service in earnest from January 2025, and has stated its intent to continue upgrading the service using AI for threat-correlation analysis and early threat identification. Ongoing policy discussion around government cloud disaster-recovery investment is cited as a favorable policy backdrop for operators with relevant infrastructure experience, though actual project execution still carries timing gaps and uncertainty, as illustrated by capacity constraints at the Daegu PPP cloud zone. The company's coming quarterly results and any expansion of new vendor certifications or partnerships are likely to serve as indicators of future business momentum."
  },
  "valuation_comment": {
-  "ko": "주가는 현재 주당순자산(BPS 3,142원)을 하회하는 수준에서 형성돼 있어, 순자산 대비 할인된 구간이라는 점에서 밸류에이션 부담이 상대적으로 낮은 편이다. IT 솔루션·보안 업종 내에서 3~4% 수준의 낮은 영업이익률은 이익 배수 관점에서의 확장을 제한하는 구조적 할인 요인으로 작용해왔으며, 유사 기업 대비 멀티플 격차를 설명하는 배경이 된다. 연간 DPS는 25원으로 꾸준히 지급되고 있으나, 배당수익률은 같은 업종 내 고배당 성향 기업들에 비해 낮은 편에 속한다. 2023년 저점 이후 이익이 회복 방향을 유지하고 있음에도, 반복적인 영업현금흐름 마이너스와 81.9%(2025년)의 부채비율은 현금 창출 측면에서의 할인 요인으로 고려해야 한다. 외형 성장이 마진 개선 및 영업현금흐름 안정화로 이어지는 레버리지 효과가 실현된다면, 현재의 순자산 대비 할인 구조가 재조명될 여지가 있다.",
-  "en": "The shares are currently priced below book value per share (BPS KRW 3,142), which places the stock in a discount-to-net-assets zone—a relatively modest valuation burden in absolute terms. Structurally thin operating margins in the 3–4% range have historically acted as a discount factor in earnings-multiple comparisons against IT solution and security sector peers, partly explaining any persistent multiple gap. The company has maintained a steady annual dividend of KRW 25 per share (DPS), though the resulting yield trails higher-payout peers within the same sector. Despite the earnings recovery trend since the 2023 trough, recurring negative operating cash flow and an elevated debt ratio (81.9% in 2025) remain cash-generation discounts that investors should weigh. Should the current top-line growth momentum translate into sustained margin improvement and stabilized operating cash flow, the present discount-to-book structure could become a candidate for reappraisal."
+  "ko": "최근 네 개 분기 실적을 기준으로 계산되는 주가수익비율은 과거 오픈베이스가 거래돼 온 밸류에이션 밴드의 하단에 가까운 수준으로 나타난다. 주가순자산비율은 1배를 밑돌아, 주가가 회사의 순자산가치에 못 미치는 구간에서 거래되고 있음을 보여준다. 배당은 매년 현금배당을 지급해온 이력이 있으나, 배당수익률 수준은 국내 IT서비스업종 평균과 비교하면 낮은 편에 속하는 것으로 파악된다. 2025년 1분기 영업손실에서 2026년 1분기·2분기 연속 흑자로 전환된 이익 흐름은 향후 밸류에이션 지표에 대한 시장의 해석에 영향을 줄 수 있는 변수다. 코스닥 소형주 특유의 상대적으로 낮은 유동성은 밸류에이션 지표의 단기 변동성을 확대시키는 요인으로 작용할 수 있다.",
+  "en": "The price-to-earnings ratio calculated on the basis of the most recent four quarters sits closer to the lower end of the valuation band in which Openbase shares have historically traded. The price-to-book ratio remains below 1, indicating the stock trades at a level below the company's net asset value. While the company has a history of paying an annual cash dividend, its dividend yield level is assessed to be on the lower side relative to the average for the domestic IT services sector. The shift from an operating loss in the first quarter of 2025 to consecutive operating profit in the first and second quarters of 2026 is a variable that could influence how the market interprets valuation metrics going forward. The relatively lower liquidity typical of a small-cap KOSDAQ stock can also amplify short-term volatility in valuation indicators."
  },
  "bull": [
   {
    "title": {
-    "ko": "클라우드·보안 시장 고성장과 공공 DR 투자 확대 직접 수혜",
-    "en": "Direct Beneficiary of High-Growth Cloud and Security Markets and Public-Sector DR Investment"
+    "ko": "보안·클라우드 구조적 수요 확대",
+    "en": "Structural Growth in Security and Cloud Demand"
    },
    "body": {
-    "ko": "국내 사이버보안 시장(2026년 +16.1% 전망)과 클라우드 인프라 시장(연평균 25%+ 전망)의 구조적 고성장이 오픈베이스의 주력 사업 전반에 직접적 수혜를 제공한다. 2025년 9월 국가정보자원관리원 화재 이후 공공 부문의 DR·이중화 투자가 정책적으로 확대되고 있어, 금융권·공공기관 대상 DR 구축 경험을 보유한 오픈베이스의 수주 기회가 늘어나는 환경이 조성됐다. 정부의 공공정보화 민간 클라우드 전환 계획(2026년 상반기 수립 예정) 구체화 시 클라우드·보안 인증 역량을 갖춘 오픈베이스에 추가적인 시장 기회가 열릴 수 있다.",
-    "en": "The structural high growth of the domestic cyber-security market (+16.1% forecast for 2026) and cloud infrastructure market (CAGR 25%+) provides direct demand tailwinds across Openbase's core business segments. Following the September 2025 NIRS data center fire, public-sector DR and HA investment has been elevated to a policy priority, creating an enlarged project pipeline for companies like Openbase with proven DR deployment experience in financial and government accounts. Formalization of the government's public-sector cloud migration plan (due 1H 2026) could unlock additional addressable market for certified cloud and security vendors."
+    "ko": "랜섬웨어·디도스 공격 증가와 클라우드 보안 강화 요구가 맞물려 국내 보안 시장은 지속적인 성장 동력을 확보하고 있는 것으로 평가된다. 국가정보자원관리원 화재를 계기로 정부의 클라우드 이중화(DR) 투자 확대 논의가 이어지고 있어, 관련 인프라 구축 경험을 보유한 사업자에게 우호적인 정책 환경이 형성될 가능성이 거론된다. 회사는 하이브리드-멀티 클라우드와 네트워크 보안을 결합한 서비스 포트폴리오를 갖추고 있어 이러한 수요 변화에 대응할 수 있는 위치에 있다.",
+    "en": "Rising ransomware and DDoS attacks combined with growing demand for stronger cloud security are seen as sustaining continued growth momentum in Korea's security market. Following the fire at the National Information Resources Service, ongoing government discussion of expanded cloud disaster-recovery investment is cited as potentially creating a favorable policy backdrop for operators with relevant infrastructure experience. The company's combined hybrid multi-cloud and network security service portfolio positions it to respond to these shifting demand patterns."
    }
   },
   {
    "title": {
-    "ko": "글로벌 파트너십 확대와 고부가 서비스 역량 강화",
-    "en": "Expanding Global Partnerships and Deepening High-Value Service Credentials"
+    "ko": "벤더 인증 고도화를 통한 고부가 서비스 확장",
+    "en": "Higher-Value Services via Upgraded Vendor Certifications"
    },
    "body": {
-    "ko": "2024년 12월 지스케일러 파트너십 체결과 2025년 3월 VMware ANS PSO 인증 취득은 오픈베이스가 제로 트러스트·VCF 9 기반 전문 서비스를 공식 제공할 수 있는 검증된 파트너임을 증명하며, 대형 수주 경쟁에서 차별화 요소로 작용한다. 글로벌 선도 벤더와의 공인 파트너 관계는 단순 솔루션 납품을 넘어 컨설팅·설계·운영 전 단계에서 고부가 서비스 수주로의 포지션 이동을 가능하게 한다. 금융·대기업 중심으로 제로 트러스트·SSE 수요가 확산될 경우 지스케일러 기반 신규 고객 확보가 실적에 추가적인 성장 동력을 제공할 수 있다.",
-    "en": "The December 2024 Zscaler strategic partnership and March 2025 VMware ANS PSO certification verify Openbase as a formally qualified partner for zero-trust and VCF 9-based professional services, providing a competitive differentiator in large project bids. Certified relationships with global technology leaders enable a shift beyond product reselling toward higher-margin consulting, design, and managed service engagements. As zero-trust and SSE demand spreads across financial institutions and large corporates, Zscaler-based customer acquisitions could provide incremental revenue upside."
+    "ko": "2026년 3월 VM웨어(브로드컴)로부터 'ANS PSO' 전문 서비스 자격을 취득해 단순 제품 공급을 넘어선 컨설팅·구축 서비스 제공 체계를 갖췄다. 앞서 프록스목스와의 파트너십 체결로 오픈소스 기반 프라이빗 클라우드 영역까지 사업을 넓힌 점도 포트폴리오 다변화 요인이다. 이러한 벤더 인증 확대는 고객사에 제공할 수 있는 서비스 범위와 부가가치를 높이는 방향으로 해석된다.",
+    "en": "Obtaining VMware (Broadcom)'s 'ANS PSO' professional-service certification in March 2026 has equipped the company with a framework to provide consulting and build-out services beyond simple product supply. Earlier expansion into open-source private cloud through a Proxmox partnership also adds to portfolio diversification. This broadening of vendor certifications is interpreted as increasing both the scope and value-add of services the company can offer clients."
    }
   },
   {
    "title": {
-    "ko": "2026년 1분기 매출 급증과 계절 적자 구조 탈피 신호",
-    "en": "2026Q1 Revenue Surge and Signs of Escape from the Seasonal Loss Pattern"
+    "ko": "2026년 상반기 연속 영업이익 흑자",
+    "en": "Consecutive Operating Profit in H1 2026"
    },
    "body": {
-    "ko": "2026년 1분기 매출이 582억원(+46% YoY)으로 분기 역대 최고치를 기록하고, 전년 동기 영업손실(-18억원)에서 영업이익(+3억원) 흑자로 전환됐다. 계절적 비수기인 1분기에 이처럼 큰 폭의 외형 성장이 나타난 것은 수주 파이프라인 확대 또는 파트너 솔루션 공급 증가에 따른 구조적 개선 신호로 해석할 수 있다. 이 추세가 지속될 경우 상반기 실적 기여도 향상과 연간 외형 성장 속도 가속이 가능하다.",
-    "en": "2026Q1 revenue of KRW 58.2B (+46% YoY) set a quarterly record and swung operating income to a small positive (KRW 0.3B) from a KRW 1.8B loss in the year-earlier period. Such significant top-line growth in a seasonally weak quarter suggests an expanding project backlog or higher partner solution throughput as a structural driver, not merely a timing shift. If this trajectory continues, improved first-half earnings contribution and faster-than-expected full-year revenue growth become plausible outcomes."
+    "ko": "2025년 1분기 영업손실을 기록한 이후, 2026년 1분기와 2분기 모두 영업이익 흑자를 시현하며 이익 흐름이 개선되는 모습을 보였다. 2025년 4분기부터 이어진 분기 순이익도 비교적 견조한 수준을 유지하고 있다. 이는 2025년 연간 매출 성장률 둔화에도 불구하고 수익성 측면에서는 회복 국면에 들어섰음을 시사한다.",
+    "en": "After posting an operating loss in Q1 2025, the company returned to operating profit in both Q1 and Q2 2026, showing an improving earnings trajectory. Quarterly net profit has also remained relatively firm since Q4 2025. This suggests that despite slower annual revenue growth in 2025, the company has entered a phase of profitability recovery."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "구조적으로 낮은 영업이익률과 반복되는 현금흐름 마이너스",
-    "en": "Structurally Thin Operating Margins and Recurring Negative Operating Cash Flow"
+    "ko": "매출 성장률 둔화",
+    "en": "Slowing Revenue Growth"
    },
    "body": {
-    "ko": "영업이익률이 4개년 내내 2.9~4.1% 범위에 머물며 파트너 벤더 납품 마진 압박과 경쟁 심화로 인한 구조적 한계를 드러내고 있다. 영업현금흐름은 2022·2023·2025년 모두 마이너스로, 4개년 중 3년간 이익이 현금으로 전환되지 않는 패턴이 반복돼 이익 질(profit quality) 측면의 주의가 필요하다. 2026년 1분기 OPM이 0.5%에 그친 점은 대규모 매출 증가에도 불구하고 원가 구조 개선이 아직 충분하지 않음을 시사한다.",
-    "en": "Operating margins have remained range-bound between 2.9% and 4.1% across all four years examined, reflecting structural pressure from partner vendor pricing and intensifying competition. Operating cash flow was negative in three of the four years (2022, 2023, 2025), a recurring pattern that raises questions about earnings-to-cash conversion and overall profit quality. The 0.5% OPM in 2026Q1—despite a near-50% revenue jump—indicates that cost structure improvement has not yet kept pace with the top-line surge."
+    "ko": "2025년 연결 매출 성장률은 3.0%로, 2024년의 두 자릿수 성장에서 크게 낮아졌다. 매출 규모 자체는 4년 연속 늘었지만 성장 속도의 둔화는 향후 실적 모멘텀에 대한 관찰이 필요한 요인이다. 2026년 들어 1분기 매출은 큰 폭으로 늘었으나 영업이익은 오히려 축소되는 등 매출과 이익 간 괴리가 나타난 구간도 있었다.",
+    "en": "Consolidated revenue growth slowed to roughly 3% in 2025, sharply down from double-digit growth in 2024. While revenue itself has risen for four consecutive years, the deceleration in growth pace is a factor warranting continued observation of future earnings momentum. In early 2026, Q1 revenue rose sharply even as operating profit narrowed, illustrating a period of divergence between top-line and bottom-line trends."
    }
   },
   {
    "title": {
-    "ko": "4분기 매출 집중과 계절성 리스크",
-    "en": "Heavy 4Q Revenue Concentration and Seasonality Risk"
+    "ko": "영업현금흐름의 변동성",
+    "en": "Volatility in Operating Cash Flow"
    },
    "body": {
-    "ko": "2025년 4분기 매출(942억원)이 연간 매출(2,331억원)의 약 40%를 차지하는 극단적 후중형 구조는 상반기 수주 지연이나 대형 계약 불발 시 연간 실적 전체가 크게 훼손될 수 있음을 의미한다. 이 계절성은 공공 예산의 연말 집행 관행과 연동돼 있어 구조적으로 단기간에 해소되기 어렵다. 상반기 실적만으로 연간 방향성을 예측하기 어려운 가시성 제약은 투자 판단의 불확실성을 높이는 요인으로 작용한다.",
-    "en": "The extreme back-loaded revenue profile—2025Q4 at KRW 94.2B representing approximately 40% of the full-year total—means a single delayed large contract or public-budget slippage could materially damage the annual result. This seasonality is structurally anchored to the government's year-end budget disbursement cycle, making it unlikely to ease meaningfully in the near term. Limited first-half visibility into full-year outcomes increases investor uncertainty and may constrain re-rating potential."
+    "ko": "영업활동현금흐름은 2024년 136억원 순유입이었으나 2025년에는 12억원 순유출로 전환됐다. 2022년과 2023년에도 각각 순유출을 기록한 바 있어, 손익상 이익이 나더라도 실제 현금창출력은 해마다 부호가 바뀌는 패턴을 보인다. 이는 프로젝트 기반 매출 인식과 수금 시점 차이에서 기인하는 것으로 보이며, 재무 건전성 평가 시 함께 살펴볼 요소다.",
+    "en": "Operating cash flow swung from a net inflow of KRW 13.6 billion in 2024 to a net outflow of KRW 1.2 billion in 2025. Net outflows were also recorded in both 2022 and 2023, indicating that even in years of reported accounting profit, actual cash generation has alternated in sign — a pattern likely stemming from timing gaps between project-based revenue recognition and cash collection, and a factor worth considering alongside financial health assessments."
    }
   },
   {
    "title": {
-    "ko": "글로벌 벤더 의존과 대형 SI 경쟁 심화",
-    "en": "Dependence on Global Vendors and Intensifying Large-SI Competition"
+    "ko": "정책·프로젝트 집행의 불확실성",
+    "en": "Uncertainty in Policy and Project Execution"
    },
    "body": {
-    "ko": "매출의 상당 부분이 VMware·Zscaler·Dell 등 외산 벤더 솔루션 리셀링·구축 서비스로 구성돼 있어 벤더의 라이선스 정책 변경(예: 브로드컴 VMware 인수 이후 구독 모델 전환) 시 원가 구조가 직접 영향을 받을 수 있다. 삼성SDS·LG CNS 등 대형 SI 기업의 클라우드·보안 사업 강화로 중대형 고객 대상 경쟁 압력이 증가하고 있으며, 전문 보안 기업과의 경계도 점차 모호해지고 있다. 국내 보안 시장이 관 주도 내수 기반 구조에서 벗어나지 못할 경우 정부 예산 축소나 사업 지연 시 단기 실적 충격이 발생할 수 있다.",
-    "en": "A significant portion of revenue derives from reselling and deploying global vendor solutions (VMware, Zscaler, Dell), exposing the company to margin impacts from vendor policy shifts such as Broadcom's VMware subscription model transition. The cloud and security build-out of large SI firms (Samsung SDS, LG CNS) is intensifying competition for mid-to-large enterprise accounts, while the boundary with dedicated security vendors continues to blur. If the domestic security market remains predominantly government-budget-driven, public spending cuts or project delays could deliver a sharp near-term earnings shock."
+    "ko": "국가정보자원관리원 화재 이후 제시된 대구 민관협력 클라우드존은 여유 공간 부족으로 보안등급이 높은 시스템만 입주를 허용하는 새 기준이 적용되면서, 다수 공공기관이 클라우드 확보에 난항을 겪고 사업비가 늘어나는 사례가 보고됐다. 이는 정책적으로 기대됐던 공공 클라우드 투자 확대가 실제 집행 단계에서 지연되거나 예상과 다른 방식으로 전개될 수 있음을 보여준다. VM웨어를 인수한 브로드컴의 가격·라이선싱 정책 변화도 파트너 생태계 전반에 불확실성 요인으로 작용하고 있다.",
+    "en": "The Daegu public-private partnership cloud zone proposed after the fire at the National Information Resources Service has since applied a new standard admitting only high-security-grade systems due to limited capacity, and reports indicate several public institutions have struggled to secure cloud capacity, in some cases facing rising project costs. This illustrates that the policy-driven expansion in public cloud investment could be delayed or unfold differently than expected at the actual execution stage. Broadcom's pricing and licensing policy changes since acquiring VMware also introduce a source of uncertainty across the broader partner ecosystem."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "글로벌 벤더 라이선스·파트너 정책 변경 리스크",
-    "en": "Global Vendor Licensing and Partner Policy Change Risk"
+    "ko": "업황·경쟁 리스크",
+    "en": "Industry and Competitive Risk"
    },
    "body": {
-    "ko": "브로드컴의 VMware 인수 이후 라이선스 체계가 구독 모델로 전환되는 과정에서 국내 파트너의 수익 구조에 불리한 조건 변경이 발생할 수 있다. Zscaler·F5·Radware 등 핵심 파트너의 국내 유통 전략 변경도 오픈베이스의 독점 또는 우선 공급 지위를 약화시킬 위험이 있다. 이러한 외부 정책 변화는 원가 상승 또는 매출 감소로 직결될 수 있어 마진 방어가 어려워질 가능성이 있다.",
-    "en": "Broadcom's post-acquisition transition of VMware to a subscription licensing model could impose unfavorable terms on domestic channel partners, directly compressing margin on VMware-related services. Strategic distribution or channel policy changes by other key partners (Zscaler, F5, Radware) could erode Openbase's exclusive or preferred supplier position domestically. Such externally driven policy shifts may translate directly into higher costs or lost revenue, making margin defense increasingly difficult."
+    "ko": "국내 5대 보안기업으로 분류되는 안랩·시큐아이·윈스·이글루코퍼레이션 등과의 경쟁이 지속되고 있으며, 글로벌 클라우드 서비스 제공사들의 공공·기업 시장 진출 확대도 경쟁 구도에 영향을 줄 수 있다. VM웨어를 인수한 브로드컴의 가격 정책 변화로 고객사들이 대체 플랫폼을 검토하는 사례가 늘고 있어, VM웨어 파트너십에 의존하는 매출 비중이 클 경우 영향을 받을 수 있다.",
+    "en": "Competition continues with domestic peers classified among the 'Big 5' security firms, including AhnLab, SECUI and WINS, while expanding entry by global cloud service providers into the public and enterprise markets could also affect the competitive landscape. Broadcom's pricing changes since acquiring VMware have led more customers to consider alternative platforms, which could affect revenue to the extent it depends on VMware-related partnerships."
    }
   },
   {
    "cat": {
-    "ko": "재무 건전성 및 유동성 리스크",
-    "en": "Financial Soundness and Liquidity Risk"
+    "ko": "재무·현금흐름 리스크",
+    "en": "Financial and Cash Flow Risk"
    },
    "body": {
-    "ko": "2025년 연결 부채비율이 81.9%로 동종 소형 IT 기업 대비 높은 수준을 유지하고 있으며, 영업현금흐름 마이너스가 반복될 경우 외부 차입 의존도가 높아질 수 있다. 금리 변화나 신용시장 경색 시 이자비용 증가 또는 차환 리스크가 발생할 수 있다. 대형 프로젝트 수금 지연이나 수주 공백이 발생할 경우 단기 유동성 압박으로 이어질 가능성도 배제할 수 없다.",
-    "en": "The 2025 consolidated debt ratio of 81.9% remains elevated relative to small-cap IT peers, and recurring negative operating cash flow risks increasing dependence on external borrowing. Rising interest rates or tighter credit conditions could raise financing costs or trigger refinancing risk. A large-project collection delay or a gap in project bookings could create near-term liquidity pressure."
+    "ko": "2025년 부채비율은 81.9%로 전년 88.6%보다 낮아졌으나 여전히 80%대 수준을 유지하고 있다. 영업활동현금흐름이 해마다 부호를 바꾸며 손익상 이익과 실제 현금창출 사이에 괴리가 발생하는 구간이 반복돼, 대형 프로젝트의 수금 지연이 발생할 경우 유동성 관리에 부담이 될 수 있다.",
+    "en": "The debt ratio stood at 81.9% in 2025, down from 88.6% the prior year, but remains in the 80% range. Operating cash flow has repeatedly alternated in sign year to year, creating periods of divergence between accounting profit and actual cash generation, which could strain liquidity management if collection on large projects is delayed."
    }
   },
   {
    "cat": {
-    "ko": "기술 인력 이탈 및 사이버보안 사고 리스크",
-    "en": "Technical Talent Attrition and Cybersecurity Incident Risk"
+    "ko": "정책·사업 집행 리스크",
+    "en": "Policy and Project Execution Risk"
    },
    "body": {
-    "ko": "전체 인력의 70%+ 기술 인력 의존 구조상 핵심 엔지니어 이탈이나 채용 경쟁 심화는 서비스 품질 저하 및 비용 증가로 직결될 수 있다. AI 기반 사이버 위협의 고도화로 기존 솔루션의 빠른 업그레이드가 요구되며, 기술 사이클 지연 시 경쟁력이 빠르게 약화될 수 있다. 보안관제 서비스를 제공하는 기업으로서 고객사에서 대형 보안 사고가 발생할 경우 브랜드 신뢰 훼손과 신규 수주 감소로 이어질 위험이 있다.",
-    "en": "With 70%+ of the workforce in technical roles, the departure of key engineers or intensifying competition for specialized talent could directly impair service quality and raise labor costs. Rapid sophistication of AI-driven cyber threats demands frequent solution upgrades; delays in technology cycles risk a swift erosion of competitive differentiation. As a managed security service provider, a major cyber incident at a key customer site could damage Openbase's brand credibility and reduce new contract wins."
+    "ko": "공공·금융 부문 프로젝트 비중이 높은 사업 구조상 정부 예산 편성이나 클라우드 정책 방향의 변화에 실적이 영향을 받을 수 있다. 대구 PPP존의 용량 제약 사례처럼 정책적으로 기대된 사업 기회가 실제 발주로 연결되는 시점과 규모에는 불확실성이 남아 있다.",
+    "en": "Given the business structure's high exposure to public-sector and financial-sector projects, performance can be affected by changes in government budget allocation or cloud policy direction. As illustrated by capacity constraints at the Daegu PPP zone, uncertainty remains over the timing and scale at which policy-driven business opportunities translate into actual project orders."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순 (2026년 2분기 실적 발표)",
-    "en": "Mid-August 2026 (2026Q2 Earnings Release)"
+    "ko": "2026년 11월 중",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2분기 매출·영업이익률을 확인해 1분기의 외형 성장이 수익성(OPM) 개선으로 이어지는지 검증 필요. OPM의 방향성이 연간 이익 추세를 결정하는 핵심 선행 지표.",
-    "en": "Verify whether 2Q revenue momentum translates into meaningful OPM improvement; the OPM trajectory is the key leading indicator for the full-year profitability direction."
+    "ko": "2026년 3분기 실적 공시(분기보고서)를 통해 2분기의 이익 개선 흐름이 이어지는지, 그리고 연간 매출 성장률 둔화 추세가 지속되는지 확인이 필요하다.",
+    "en": "The Q3 2026 quarterly report will show whether the earnings improvement seen in Q2 continues, and whether the deceleration in annual revenue growth persists."
    }
   },
   {
    "when": {
-    "ko": "2026년 2분기 (정부 공공정보화 민간 클라우드 전환 계획 수립)",
-    "en": "2Q 2026 (Government Public-Sector Cloud Migration Plan Release)"
+    "ko": "2026년 12월",
+    "en": "December 2026"
    },
    "what": {
-    "ko": "행안부·과기정통부의 공공 정보화 사업 민간 클라우드 전환 계획 확정 내용 발표 모니터링. 오픈베이스의 클라우드·보안 인증 역량과 연계된 신규 수주 파이프라인 형성 여부 파악.",
-    "en": "Monitor the finalized government plan on migrating public-sector IT projects to private cloud providers; assess whether Openbase's certified cloud and security competencies position it for new project awards."
+    "ko": "국회의 2027년도 예산안 심의·확정 과정에서 공공 부문 클라우드·재해복구(DR) 관련 예산 반영 여부를 확인할 필요가 있다.",
+    "en": "During the National Assembly's deliberation and approval of the 2027 budget, it will be worth checking whether public-sector cloud and disaster-recovery-related budgets are reflected."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (Zscaler 파트너십 기반 수주 동향)",
-    "en": "2H 2026 (Zscaler Partnership Deal Pipeline Update)"
+    "ko": "2026년 하반기 지속",
+    "en": "Ongoing through H2 2026"
    },
    "what": {
-    "ko": "지스케일러 파트너십(2024년 12월 체결) 기반 국내 신규 고객 수주 및 매출 기여도 공개 여부 확인. 제로 트러스트·SecaaS 실매출 반영이 중장기 수익성 개선의 방향 지표.",
-    "en": "Monitor any disclosed domestic customer wins or revenue contribution from the Zscaler partnership (signed Dec 2024); material SecaaS revenue would serve as a directional indicator for future margin improvement."
+    "ko": "대구 국정자원 민관협력 클라우드존(PPP존)의 용량 확충 및 공공기관 클라우드 이관 프로젝트 발주 동향을 지속적으로 살펴볼 필요가 있다.",
+    "en": "Continued monitoring is warranted on capacity expansion at the Daegu public-private partnership cloud zone and the pace of public-institution cloud migration project orders."
    }
   },
   {
    "when": {
-    "ko": "2027년 1~2월 (2026년 연간 실적 확정 발표)",
-    "en": "January–February 2027 (FY2026 Annual Earnings Release)"
+    "ko": "2026년 하반기 지속",
+    "en": "Ongoing through H2 2026"
    },
    "what": {
-    "ko": "2026년 연간 OPM과 영업현금흐름(CFO) 흑자 전환 여부 확인. 4분기 집중 구조 속에서 OPM·CFO가 이전 연도 대비 개선됐는지 여부가 펀더멘털 방향성의 핵심 검증 포인트.",
-    "en": "Confirm full-year 2026 OPM and whether operating cash flow turns positive; improvement in both metrics year-on-year would be the key fundamental validation given the company's 4Q-heavy revenue structure."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 연중 (VMware VCF 9 대형 프로젝트 수주 공시)",
-    "en": "Throughout 2026 (VMware VCF 9 Major Contract Disclosures)"
-   },
-   "what": {
-    "ko": "VMware ANS PSO 인증(2025년 3월) 취득 이후 VCF 9 기반 대형 구축 프로젝트 수주 공시 여부 모니터링. 공인 인증 역량의 실제 수주 전환율이 중장기 수익성 개선을 가늠하는 지표.",
-    "en": "Watch for disclosures of large VCF 9-based deployment contracts following the March 2025 ANS PSO certification; the conversion rate of certified capabilities into actual project wins is a medium-term profitability indicator."
+    "ko": "브로드컴의 VM웨어 라이선싱·가격 정책 변화가 파트너 생태계와 회사의 관련 매출에 미치는 영향을 지속적으로 확인할 필요가 있다.",
+    "en": "It will be worth continuing to monitor how Broadcom's VMware licensing and pricing policy changes affect the partner ecosystem and the company's related revenue."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "오픈베이스는 30년 이상의 IT 인프라 구축 경험을 바탕으로 하이브리드 클라우드·보안·ITO 등 4개 사업부문을 균형 있게 운영하는 종합 IT 솔루션 기업으로, 국내 클라우드·보안 시장의 구조적 고성장과 공공 DR 인프라 강화 정책이 직접적인 수혜 요인으로 작용하고 있다. Zscaler·VMware VCF 9 파트너십 등 글로벌 공인 역량 확대는 고부가 서비스 포지션 강화에 기여하고 있으며, 2025년 OPM 반등과 2026년 1분기 매출 역대 최고치 경신이 외형 성장 가속을 확인해주고 있다. 그러나 4개년 내내 3~4% 수준에 머무는 구조적으로 낮은 영업이익률과 반복되는 영업현금흐름 마이너스는 이익 질 측면에서의 핵심 과제로 남아 있다. 4분기 매출 집중(연매출의 약 40%) 구조와 글로벌 벤더 정책 변동 리스크도 단기 실적 변동성을 높이는 요인이다. 밸류에이션은 현재 순자산 대비 할인된 구간에 위치해 있어 절대적 부담은 크지 않으나, 지속적인 마진 개선과 영업현금흐름 안정화가 실현되어야 재평가 가능성이 열린다. 2026년 상반기 정부 클라우드 전환 정책 구체화와 2분기 실적 발표를 통해 매출 성장이 수익성 향상으로 전환되고 있는지를 확인하는 것이 향후 사업 방향성 판단의 핵심 관건이다.",
-   "en": "Openbase is a full-spectrum IT solutions company with more than three decades of infrastructure project experience, operating four balanced business segments—hybrid cloud, network security, ADC/network infrastructure, and ITO. Structural tailwinds from Korea's high-growth cloud and security markets, combined with the public-sector push for DR and high-availability investment following the 2025 NIRS data center fire, provide a constructive demand backdrop. Expanding global partnerships (Zscaler, VMware VCF 9) deepen its high-value service portfolio, and the combination of a 2025 OPM recovery and a record 2026Q1 revenue print confirm a positive top-line trajectory. Nevertheless, persistently thin 3–4% operating margins and recurring negative operating cash flow over four years represent the central challenge to earnings quality. The extreme 4Q revenue concentration (~40% of annual total) and exposure to global vendor policy changes are ongoing sources of earnings volatility. Shares currently trade at a discount to book value, limiting absolute valuation pressure, but a sustained re-rating would require clear evidence of margin expansion and operating cash flow normalization. The government's public-sector cloud migration plan formalization (due 1H 2026) and the 2026Q2 earnings release are the most important near-term milestones for assessing whether revenue growth is successfully converting into improved profitability."
+   "ko": "오픈베이스는 하이브리드 클라우드·네트워크 보안·ITO를 결합한 종합 IT 인프라 서비스 기업으로, 2025년까지 4년 연속 매출 증가와 2026년 상반기 연속 영업이익 흑자라는 이익 회복 신호를 함께 보여주고 있다. 다만 2025년 매출 성장률이 3%대로 둔화됐고 영업활동현금흐름이 해마다 부호를 바꾸는 등, 성장의 질과 현금창출력 측면에서는 관찰이 필요한 지점도 함께 존재한다. VM웨어 벤더 인증 고도화나 정부의 클라우드 이중화 투자 논의 등은 사업 기회로 거론되지만, 대구 PPP존 용량 제약 사례처럼 실제 집행에는 시차와 불확실성이 남아 있다. 코스닥 소형주 특성상 대형 프로젝트 의존도가 높아 분기별 실적 변동성이 클 수 있다는 점도 함께 고려할 필요가 있다. 다음 분기 실적과 공공 부문 예산·정책 방향이 향후 사업 모멘텀을 가늠하는 핵심 변수가 될 것으로 보인다. 본 리포트는 투자 권유를 목적으로 하지 않으며, 매수·매도 의견을 포함하지 않는다.",
+   "en": "Openbase is an integrated IT infrastructure services company combining hybrid cloud, network security and IT outsourcing, showing both four consecutive years of revenue growth through 2025 and a profitability-recovery signal in the form of consecutive operating profit in the first half of 2026. That said, revenue growth slowed to roughly 3% in 2025 and operating cash flow has alternated in sign from year to year, leaving points related to the quality of growth and cash-generation capacity that warrant continued observation. Enhanced VMware vendor certifications and ongoing government discussion of cloud disaster-recovery investment are cited as potential business opportunities, but actual execution still carries timing gaps and uncertainty, as illustrated by capacity constraints at the Daegu PPP zone. The company's high dependence on large individual projects as a small-cap KOSDAQ stock, which can lead to considerable quarterly earnings volatility, should also be taken into account. Upcoming quarterly results and the direction of public-sector budgets and policy are likely to be key variables in gauging future business momentum. This report is not intended as investment solicitation and does not include a buy or sell recommendation."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A049480",
-  "https://thevc.kr/openbase",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A049480&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
   "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A049480&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "https://markets.hankyung.com/stock/049480",
-  "https://www.k5.co.kr/stock/049480?site_type=p",
-  "https://www.butler.works/ko/companies/00335076",
-  "https://m.thinkpool.com/compDiscuss/cont/1025457",
   "https://m.thinkpool.com/compDiscuss/cont/1019038",
+  "https://bullstory.io/stocks/049480",
+  "https://m.thinkpool.com/compDiscuss/cont/1025457",
+  "https://gesangi.com/stock/049480/",
   "https://www.valueline.co.kr/finance/investment/049480",
+  "https://m.thinkpool.com/item/049480",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Finance.asp?pGB=1&gicode=A049480&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
   "https://stockplus.newat.biz/stock_detail.php?code=049480&name=%EC%98%A4%ED%94%88%EB%B2%A0%EC%9D%B4%EC%8A%A4&prev_url=%2Fthemedetail.php%3Fcategory_id%3D1750",
-  "http://www.openbase.co.kr/html/54?gubun=01",
-  "https://m.boannews.com/html/detail.html?mtype=1&idx=135835",
-  "https://www.comworld.co.kr/news/articleView.html?idxno=48723",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A049480&cID=&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
   "https://jasoseol.com/companies/4987/insights",
-  "https://www.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=114826",
-  "https://alphasquare.co.kr/home/stock-summary?code=049480",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=wr5Vi5jNVCLGWn36",
-  "http://www.heungkuksec.co.kr/research/company/view.do?key=372"
+  "https://thevc.kr/openbase",
+  "https://m.boannews.com/html/detail.html?mtype=1&idx=135835",
+  "https://www.datasolution.kr/info/family",
+  "https://m.boannews.com/html/detail.html?idx=137107&kind=3",
+  "https://www.etnews.com/20241220000201",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A049480"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "049480",
  "name": "오픈베이스",
  "name_en": "Openbase, Inc.",
@@ -233,9 +223,9 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 05:52",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:51",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 1828,
-   "mcap": 0.0574,
+   "price": 1840,
+   "mcap": 0.0578,
    "shares": 31422383,
    "total_shares": 31422383,
    "wavg_shares": 27377564,
-   "per": 4.363,
+   "per": 4.391,
    "eps": 419,
-   "pbr": 0.547,
+   "pbr": 0.5506,
    "bps": 3342,
    "roe_ttm": 13.3,
    "ttm_window": "2025Q3~2026Q2",
@@ -356,7 +346,7 @@
    "bps_krx": 3142.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 25.0,
-   "div": 1.37
+   "div": 1.36
   }
  }
 }

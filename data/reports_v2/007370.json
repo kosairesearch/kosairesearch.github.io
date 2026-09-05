@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "매출 성장 지속, 영업이익 반등이 관건",
-  "en": "Revenue Growth on Track; Operating Rebound Is the Key Test"
+  "ko": "영업이익 회복, 순이익은 변동성 커",
+  "en": "Operating Profit Recovers, Net Income Stays Volatile"
  },
  "lead": {
-  "ko": "2025년 연결 매출 1,207억원으로 사상 최고를 경신하며 4년 연속 성장세를 이어갔으나, 하반기 연속 영업손실로 연간 OPM이 2.1%까지 급락했고, 2026년 1분기 분기 최고 매출(324억원)·영업이익 반등으로 회복의 지속 가능성이 시험대에 올랐다.",
-  "en": "Consolidated revenue reached a record 120.7 billion won in 2025, extending four consecutive years of top-line growth, yet back-to-back operating losses in H2 drove annual OPM down to 2.1%; a Q1 2026 quarterly revenue record of 32.4 billion won alongside an operating income rebound now puts the durability of recovery to the test."
+  "ko": "진양제약은 2025년 하반기 두 개 분기 연속 영업손실을 낸 뒤 2026년 상반기 영업이익률이 두 자릿수로 회복됐으나, 분기별 순이익은 비영업적 요인의 영향으로 큰 편차를 보이고 있다.",
+  "en": "After two consecutive quarters of operating losses in the second half of 2025, Jinyang Pharmaceutical's operating margin recovered to double digits in the first half of 2026, while quarterly net income has shown wide swings tied to non-operating factors."
  },
  "keypoints": [
   {
-   "ko": "연매출 1,207억원 — 2022년 762억원 대비 4년 연속 성장, 연평균 약 16.5%의 외형 확장세 지속",
-   "en": "Record annual revenue of 120.7 bn won — four consecutive years of growth from 76.3 bn won in 2022, implying a ~16.5% CAGR"
+   "ko": "매출은 2022년 762.6억원에서 2025년 1,206.9억원까지 4개년 연속 증가했으나, 영업이익률은 2024년 10.3%에서 2025년 2.1%로 급락했다.",
+   "en": "Revenue rose for four consecutive years from KRW 76.26 billion in 2022 to KRW 120.69 billion in 2025, but operating margin fell sharply from 10.3% in 2024 to 2.1% in 2025."
   },
   {
-   "ko": "2025년 하반기 영업손실 전환(3Q -9.4억원, 4Q -28.5억원) — H2 비용 급증으로 연간 OPM 10.3%에서 2.1%로 급락",
-   "en": "Operating losses in both H2 2025 quarters (Q3 -940 mn won, Q4 -2.85 bn won) — H2 cost surge drove annual OPM from 10.3% to 2.1%"
+   "ko": "2025년 3분기·4분기 연속 영업손실을 낸 뒤 2026년 1분기·2분기는 영업이익률이 각각 약 10%, 13%대로 회복됐다.",
+   "en": "After operating losses in both the third and fourth quarters of 2025, operating margin recovered to roughly 10% and 13% in the first and second quarters of 2026, respectively."
   },
   {
-   "ko": "2026년 1분기 분기 최고 매출 324억원·영업이익 33.7억원 달성 — 영업 정상화 신호 포착",
-   "en": "Record quarterly revenue of 32.4 bn won and operating income of 3.37 bn won in Q1 2026 signal early-stage operational recovery"
+   "ko": "2025년 4분기는 영업손실(-28.5억원)을 기록했음에도 지배주주순이익은 193.3억원으로 급증해, 비영업적 손익의 영향이 컸던 분기로 해석된다.",
+   "en": "In the fourth quarter of 2025, despite an operating loss of KRW 2.85 billion, net income attributable to owners surged to KRW 19.33 billion, suggesting a large non-operating impact for the quarter."
   },
   {
-   "ko": "전환사채 전환으로 2025년 148만주 신주 발행 — 부채비율 89.8%→67.5% 개선, 자본 구조 안정화 진행",
-   "en": "CB-to-equity conversions (1.48 mn new shares in 2025) drove the debt ratio down from 89.8% to 67.5%, signaling balance-sheet stabilization"
+   "ko": "2025년 10월 임시주주총회에서 이사회를 오너 중심에서 전문경영 체제로 확대하고, 정관 변경을 통해 분기배당 도입 근거를 마련했다.",
+   "en": "At an extraordinary shareholders' meeting in October 2025, the company expanded its board from an owner-centered structure toward professional management and amended its articles to establish a basis for quarterly dividends."
   },
   {
-   "ko": "환인제약·동국제약·경동제약과 자사주 맞교환으로 중견 4사 지분 연합 형성 — CMO·CNS·만성질환 시너지 모색",
-   "en": "Cross-shareholding alliance formed with Hwan-In, Dongkook, and Kyungdong Pharmaceuticals, creating a mid-tier pharma cluster with potential CMO/CNS/chronic-disease synergies"
+   "ko": "전환사채 전환에 따른 신주 발행과 자기주식 처분(환인제약 등 대상)으로 2025년 중 주식수·주주 구성에 변화가 있었다.",
+   "en": "Convertible bond conversions and treasury share disposals (including to Hwanin Pharmaceutical) altered the share count and shareholder composition during 2025."
   }
  ],
  "business": {
-  "ko": "진양제약은 1971년 설립되어 2000년 7월 코스닥에 상장한 중견 제약기업으로, 전문의약품(ETC) 판매와 CMO(의약품 위탁생산)를 두 축으로 운영한다. 주요 사업부별 매출 구성은 전문의약품(ETC) 77.8%, CMO 19.2%, 일반의약품(OTC) 3.0%로 분류된다. 주요 제품으로는 순환계용약(크리빅스정 등), 소화기관용약(에스졸정 등), 중추신경계용약(아세콜 등), 기타대사성의약품(미아릴정 등)이 있다. ETC 주요 수익원은 순환기의약품(연매출 330억원대), 소화기의약품(연매출 300억원대), 당뇨질환 의약품(연매출 150억원대)으로 구성되며, 순환기의약품 크리빅스는 월 매출 9억원 이상이 발생하는 핵심 캐시카우다. CMO 사업부 매출은 2019년 58억원에서 2024년 약 250억원으로 연평균 33.9% 성장을 거듭하며 전사 매출 내 비중을 꾸준히 넓혀왔다. 2023년 4월 아스트라제네카의 SGLT-2 억제제 포시가(다파글리플로진)의 특허 만료 이후 제네릭을 출시해 당뇨 시장 점유 확대를 추진하고 있다. 신약 개발을 위한 생명과학연구소를 서울대학교 약학대학 신약개발센터에 운영하며, 특허 만료 품목의 복제 생산과 독자 제형 연구를 병행한다. 2026년 초 환인제약과의 지분 맞교환을 통해 동국제약·경동제약과 함께 중견 4사 지분 연합을 형성했으며, 각사는 일반·전문의약품(동국제약), 만성질환 치료제(경동제약), CMO(진양제약) 분야에 각각 강점을 보유한다.",
-  "en": "Jin Yang Pharmaceutical, founded in 1971 and KOSDAQ-listed in July 2000, operates two core pillars: prescription drug sales and contract drug manufacturing (CMO). The revenue mix comprises approximately 77.8% prescription drugs (ETC), 19.2% CMO, and 3.0% OTC products. Key product lines include cardiovascular drugs (Clivix tablets), gastrointestinal drugs (S-Zol tablets), CNS drugs (Acecol), and metabolic drugs (Miaril tablets). Major ETC revenue sources are the cardiovascular (~33 bn won/year), gastrointestinal (~30 bn won/year), and diabetes (~15 bn won/year) segments; cardiovascular product Clivix is the flagship cash cow, generating over 900 mn won per month. The CMO segment has grown at a CAGR of approximately 33.9%, expanding from 5.8 bn won in 2019 to an estimated 25 bn won in 2024, steadily increasing its share of total revenue. Following the April 2023 patent expiration of AstraZeneca's SGLT-2 inhibitor Farxiga (dapagliflozin), the company launched a generic version targeting the domestic market. A life-science research institute at Seoul National University's Drug Development Center supports independent formulation research alongside generic product development. In early 2026, the company joined a cross-shareholding alliance with Hwan-In, Dongkook, and Kyungdong Pharmaceuticals, each contributing complementary strengths across OTC/ETC, chronic-disease drugs, and CMO."
+  "ko": "진양제약은 1971년 설립돼 2000년 7월 코스닥시장에 상장한 의약품 제조업체다. 주력 제품군은 순환계용약과 중추신경계용약으로, 두 부문을 중심으로 제품 포트폴리오를 운영하고 있다. 회사는 과거 다품목 소량생산 방식에서 벗어나 주력품목 중심의 소품종 대량생산 체제로 전환을 추진해왔으며, 이는 GMP 차등평가제 등 제도 변화에 대응하는 전략으로 풀이된다. 원주 공장을 중심으로 생산체계를 갖추고 있고, 신약·제품 개발과 특허 확보, 기술제휴를 통한 신제품 발매를 준비 중이라고 설명하고 있다. 지배구조 측면에서는 2025년 10월 상장 이래 첫 임시주주총회를 열어 이사회를 오너 중심 3인 체제에서 생산·재무 전문 임원을 포함한 5인 체제로 확대했다. 신규 사내이사로는 생산본부에서 오래 근무한 임원과 21년간 경영지원본부를 담당한 임원이 선임돼 전문경영 강화 의도를 보였다. 같은 임시주총에서 정관에 분기배당 조항을 신설해 장기 투자자를 겨냥한 주주환원 체계 다변화를 시도했다. 2025년 중에는 전환사채 전환청구로 148만여 주의 신주가 발행돼 발행주식총수가 늘었고, 자기주식 신탁계약 해지와 처분(환인제약, 신정일 등 대상) 등 지분 관련 이벤트도 다수 있었다. 국내 상장 제약사 중에서는 중형 코스닥 제약사로 분류되며, 순환기·중추신경계 전문의약품 시장에서 다수의 경쟁사와 시장을 나누고 있다.",
+  "en": "Jinyang Pharmaceutical was founded in 1971 and listed on KOSDAQ in July 2000 as a pharmaceutical manufacturer. Its core product lines are circulatory system drugs and central nervous system drugs, around which the company's product portfolio is organized. The company has moved away from a broad, low-volume production strategy toward a concentrated, high-volume model centered on flagship products, a shift widely attributed to regulatory changes such as differentiated GMP evaluation. Production is centered at its Wonju plant, and the company states it is pursuing new drug and product development along with patent acquisition and technology partnerships for new product launches. On governance, the company held its first extraordinary shareholders' meeting since listing in October 2025, expanding the board from a three-member, owner-centered structure to a five-member board that includes executives with production and finance backgrounds. The newly appointed inside directors included a long-serving production executive and an executive who had led the management support division for 21 years, signaling an intent to strengthen professional management. At the same meeting, the company added a quarterly dividend provision to its articles of incorporation, aiming to diversify shareholder returns for long-term investors. During 2025, roughly 1.48 million new shares were issued through convertible bond conversions, increasing total shares outstanding, alongside multiple treasury share events including trust contract terminations and disposals to parties such as Hwanin Pharmaceutical and Shinjeongil. Among listed Korean pharmaceutical companies, it is classified as a mid-sized KOSDAQ pharma player competing with numerous other companies in the circulatory and central nervous system prescription drug markets."
  },
  "earnings": {
-  "ko": "연결 매출은 762.6억원(2022)→941.1억원(2023)→1,133.3억원(2024)→1,206.9억원(2025)으로 4년 연속 성장해, 2025년에 처음으로 1,200억원을 돌파했다. 그러나 영업이익은 2024년 117.1억원(OPM 10.3%)에서 2025년 25.3억원(OPM 2.1%)으로 급감했다. 분기별로 보면 2025년 1분기(38.4억원)·2분기(24.8억원)는 양호했으나 3분기(-9.4억원)·4분기(-28.5억원)에 연속 영업적자를 기록하며 상·하반기 수익성이 극명히 갈렸다. 2025년 4분기는 영업손실 28.5억원임에도 지배주주 귀속 순이익이 193.3억원에 달했는데, 이는 전환사채 내재파생상품(전환권·조기상환청구권) 공정가치 하락에 따른 대규모 비영업 이익이 반영된 것으로 분석된다. 연간 지배주주 귀속 순이익 222.9억원은 비영업 항목에 의해 보정된 수치로, 영업현금흐름(CFO)이 전년 127.9억원에서 2025년 14.6억원으로 급감한 사실과 함께 읽어야 이익의 질을 제대로 파악할 수 있다. 2025년 중 전환사채 전환으로 1,483,414주 신주가 발행되며 자본이 증가했고, 부채비율은 89.8%(2024)에서 67.5%(2025)로 개선됐다. 2026년 1분기는 매출 324.0억원(분기 최고), 영업이익 33.7억원, 지배주주 순이익 22.7억원을 기록해 영업 회복의 초기 신호가 확인됐으나, 직전 상반기 수준의 수익성이 지속될지는 추가 분기 확인이 필요하다.",
-  "en": "Consolidated revenue grew for four consecutive years: 76.3 bn won (2022) → 94.1 bn (2023) → 113.3 bn (2024) → 120.7 bn (2025), surpassing the 120 bn won threshold for the first time in 2025. However, operating income contracted sharply from 11.7 bn won in 2024 (OPM 10.3%) to just 2.53 bn won in 2025 (OPM 2.1%). Quarterly data reveal a stark within-year divergence: Q1 (+3.84 bn won) and Q2 (+2.48 bn won) were healthy, while Q3 (-940 mn won) and Q4 (-2.85 bn won) both turned to operating losses. Despite the Q4 2025 operating loss, owner-attributed net income reached 19.3 bn won in that single quarter — a result attributed to large non-cash, non-operating gains from fair-value decreases in the convertible bond's embedded derivatives (conversion option and early-redemption put). Full-year 2025 owner-attributed net income of 22.3 bn won must therefore be read alongside the operating cash flow, which fell precipitously from 12.8 bn won (2024) to 1.46 bn won (2025), indicating markedly weakened underlying cash generation. During 2025, 1,483,414 new shares were issued through CB conversions, boosting equity and reducing the debt ratio from 89.8% to 67.5%. Q1 2026 delivered a record quarterly revenue of 32.4 bn won alongside operating income of 3.37 bn won and owner net income of 2.27 bn won — early recovery signals — though confirmation over additional quarters is needed to assess sustainability."
+  "ko": "연간 매출은 2022년 762.64억원, 2023년 941.11억원, 2024년 1,133.32억원, 2025년 1,206.86억원으로 4년 연속 증가했다. 반면 영업이익은 2022년 111.38억원(영업이익률 14.6%), 2023년 90.85억원(9.7%), 2024년 117.08억원(10.3%)으로 두 자릿수 마진을 유지하다가 2025년 25.26억원(2.1%)으로 크게 낮아졌다. 지배주주순이익은 2022년 123.08억원, 2023년 126.59억원, 2024년 296.94억원으로 늘었다가 2025년 222.87억원으로 소폭 줄었는데, 2024년의 순이익이 영업이익 대비 크게 확대된 점은 비영업 요인의 기여가 있었음을 시사한다. 분기별로 보면 2025년 2분기 영업이익 24.76억원에서 3분기 -9.40억원, 4분기 -28.54억원으로 두 개 분기 연속 영업손실을 냈다. 그런데 4분기 지배주주순이익은 193.26억원으로 오히려 급증했는데, 이는 영업손익과 무관한 대규모 비영업적 손익이 반영된 결과로 해석된다. 업계 순위 분석에서도 진양제약은 2025년 4분기 지배지분순이익 기준 코스닥 상장 제약·바이오사 중 7위(193억원)에 올랐고, 전분기 대비 203억원, 전년 동기 대비 168억원 늘어난 것으로 나타나 1위 알테오젠(+469억원), 2위 동구바이오제약(+429억원), 3위 진양제약(+203억원) 순으로 분기 개선폭이 컸다. 해당 분석은 동구바이오제약, 진양제약, 에스티팜 등 실적 기저효과 탈피 및 매출 다각화에 집중한 기업들이 상위권에 대거 포진했다고 평가했지만, 구체적인 비영업 항목의 성격은 공개된 자료에서 명확히 특정되지 않았다. 2026년 들어서는 1분기 매출 324.01억원·영업이익 33.69억원(영업이익률 약 10.4%), 2분기 매출 326.46억원·영업이익 42.15억원(약 12.9%)으로 영업이익률이 다시 두 자릿수로 올라섰고, 지배주주순이익도 각각 22.68억원, 22.01억원으로 분기 기준 안정적인 흐름을 보였다. 2025년 개별 기준 순이익률은 18.47%로 나타나 상장 제약사 중 두 자릿수 순이익률을 기록한 상위 그룹에 포함됐다.",
+  "en": "Annual revenue rose for four straight years: KRW 76.26 billion in 2022, KRW 94.11 billion in 2023, KRW 113.33 billion in 2024, and KRW 120.69 billion in 2025. Operating profit, however, held at double-digit margins in earlier years—KRW 11.14 billion (14.6% margin) in 2022, KRW 9.09 billion (9.7%) in 2023, KRW 11.71 billion (10.3%) in 2024—before falling sharply to KRW 2.53 billion (2.1%) in 2025. Net income attributable to owners rose from KRW 12.31 billion in 2022 to KRW 12.66 billion in 2023 and KRW 29.69 billion in 2024, then eased to KRW 22.29 billion in 2025; the fact that 2024 net income far exceeded operating profit suggests a meaningful non-operating contribution that year. On a quarterly basis, operating profit fell from KRW 2.48 billion in the second quarter of 2025 to a loss of KRW 0.94 billion in the third quarter and a deeper loss of KRW 2.85 billion in the fourth quarter, marking two consecutive quarters of operating losses. Yet owners' net income for the fourth quarter surged to KRW 19.33 billion, a result interpreted as reflecting a large non-operating item unrelated to core operating performance. Industry ranking data likewise placed Jinyang seventh among KOSDAQ-listed pharma and bio companies by fourth-quarter 2025 owners' net income (KRW 19.3 billion), with a quarter-on-quarter increase described as Alteogen (+KRW 46.9 billion), Dongkoo Bio & Pharma (+KRW 42.9 billion), and Jinyang Pharmaceutical (+KRW 20.3 billion) ranking among the largest gains. The same analysis noted that Dongkoo Bio & Pharma, Jinyang Pharmaceutical, Estipharm and other companies focused on overcoming base effects and diversifying revenue ranked highly, though the specific composition of the non-operating item was not clearly identified in available disclosures. Into 2026, operating margin returned to double digits, with first-quarter revenue of KRW 32.40 billion and operating profit of KRW 3.37 billion (about 10.4% margin), and second-quarter revenue of KRW 32.65 billion and operating profit of KRW 4.22 billion (about 12.9% margin); owners' net income was a comparatively stable KRW 2.27 billion and KRW 2.20 billion in those respective quarters. On a non-consolidated basis, the 2025 net margin stood at 18.47%, placing the company among the group of listed pharmaceutical firms with double-digit net margins."
  },
  "industry": {
-  "ko": "국내 전문의약품 시장은 고령화 가속과 만성질환 유병률 증가에 힘입어 중장기 성장 기반이 견고하다. 고령화의 가속화와 소득수준 향상, 삶의 질 향상에 대한 관심 고조로 전문의약품 시장 규모가 지속 확대될 전망이다. 글로벌 의약품 CDMO 시장은 2025년 약 2,589억 달러(약 350조원)로 평가되며, 2030년까지 연평균 6.41% 성장이 전망된다. 특히 바이오의약품 CDMO 부문은 보스턴컨설팅그룹 기준 연평균 12.2%씩 성장해 2026년 270억 달러(약 39조원)까지 확대될 것으로 전망된다. 미·중 갈등으로 생물보안법 제정이 부각되면서 중국 CDMO의 대안으로 국내 기업들이 주목받고 있으며, 법안 가시화에 따라 실제 수주로 이어지는 흐름이 확인되고 있다. 반면 국내에서는 하반기부터 제네릭과 특허 만료 의약품 약가가 현행 53.55%에서 45.00% 수준으로 인하될 규제 리스크가 제네릭 비중이 큰 중견 제약사에 직접적인 수익성 부담으로 작용할 전망이다. 그동안 신약 개발에 집중하던 전통 제약사들도 CDMO 분야에 진출하면서, CDMO 시장의 성장 잠재력을 배경으로 경쟁이 빠르게 심화되고 있다. 당뇨·순환기 분야에서 제네릭 출시 러쉬가 이어지며 주요 치료 영역의 시장 가격 압박도 지속되는 구조다.",
-  "en": "The domestic prescription drug market enjoys solid long-term fundamentals driven by accelerating aging and rising chronic-disease prevalence. The accelerating aging of the population, higher income levels, and growing interest in quality of life are expected to continue expanding the prescription drug market. Globally, the pharmaceutical CDMO market is estimated at approximately USD 258.9 billion in 2025, with a projected CAGR of 6.41% through 2030. The biopharmaceutical sub-segment is growing faster: Boston Consulting Group forecasts the biopharmaceutical CDMO market will expand at a 12.2% CAGR to reach USD 270 billion by 2026. The U.S. Biosecurity Act debate, framing Korean firms as credible alternatives to Chinese CDMO providers, has already translated into incremental contract activity for domestic manufacturers. On the domestic front, a scheduled reduction in generic and post-patent drug prices from the current 53.55% to 45% in H2 2026 poses a direct margin headwind for generic-heavy mid-tier pharma companies. Traditional pharmaceutical companies that previously focused on new drug development are entering the CDMO space, intensifying competition underpinned by the sector's growth potential. Meanwhile, the wave of generic launches across diabetes and cardiovascular segments continues to deepen price competition in core ETC categories."
+  "ko": "국내 상장 제약사 65개사의 2025년 실적을 취합한 분석에 따르면, 이들 기업의 총매출은 전년 대비 7.60% 증가한 28조 1,124억원, 영업이익은 7.91% 증가한 1조 9,180억원, 순이익은 43.25% 급증한 1조 5,362억원으로 나타났다. 이 중 30개 코스닥 상장사의 경우 매출 7조 4,399억원(+9.84%), 영업이익 8,898억원(+22.57%), 순이익 7,800억원(+36.72%)를 기록해, 코스피 대형 제약사보다 코스닥 중소형 제약사의 이익 성장률이 두드러졌다. 순이익률 비교에서 진양제약은 18.47%로 삼성제약(25.06%), 동구바이오제약(20.67%), JW신약(19.32%) 다음으로 높은 수준을 기록해, 두 자릿수 순이익률을 낸 15개사 그룹에 포함됐다. 다만 이 순위는 개별 재무제표 기준으로, 영업이익률이 아닌 순이익률 지표라는 점에서 해석에 유의가 필요하다. 국내 전문의약품 시장은 고령화와 만성질환 증가에 따라 순환계·중추신경계 등 관련 치료제 수요가 꾸준한 구조적 성장 국면에 있는 것으로 평가된다. 다만 정부의 약가 통제 정책과 제네릭 경�쟁 심화는 업계 전반의 공통적인 압박 요인으로 꼽힌다. 진양제약은 대형 제약사 대비 연구개발 및 자금력에서 상대적으로 열위에 있는 중소형사로, 주력 품목 중심의 대량생산 체제를 통한 원가 경쟁력 확보에 주력하는 전략을 취하고 있다.",
+  "en": "According to an aggregated analysis of 65 listed Korean pharmaceutical companies' 2025 results, total revenue rose 7.60% year over year to KRW 28.11 trillion, operating profit rose 7.91% to KRW 1.92 trillion, and net income surged 43.25% to KRW 1.54 trillion. Within this group, the 30 KOSDAQ-listed companies posted revenue of KRW 7.44 trillion (+9.84%), operating profit of KRW 889.8 billion (+22.57%), and net income of KRW 780.0 billion (+36.72%), showing that profit growth among smaller KOSDAQ pharma names outpaced that of larger KOSPI peers. In net margin comparisons, Jinyang Pharmaceutical recorded 18.47%, ranking behind Samsung Pharm (25.06%), Dongkoo Bio & Pharma (20.67%), and JW Shinyak (19.32%), placing it among the 15 companies with double-digit net margins. This ranking, however, is based on non-consolidated financial statements and reflects net margin rather than operating margin, warranting caution in interpretation. Korea's prescription drug market is generally viewed as being in a structural growth phase for circulatory and central nervous system therapeutics, driven by an aging population and rising chronic disease prevalence. At the same time, government drug pricing controls and intensifying generic competition are common pressures across the industry. As a mid-to-small-sized player with comparatively limited R&D and capital resources relative to large pharmaceutical companies, Jinyang has pursued a strategy of securing cost competitiveness through concentrated, high-volume production of flagship products."
  },
  "outlook": {
-  "ko": "2026년 1분기 분기 최고 매출과 영업이익 회복은 2025년 하반기 영업 침체가 일시적일 가능성을 시사하며, 비용 구조 정상화 여부가 하반기 수익성의 핵심 변수다. CMO 사업은 2019년 이후 연평균 33%대 성장을 기록했으며, CDMO 수요 확대 기조가 지속되는 한 전사 매출 성장의 핵심 동력으로 자리할 것으로 보인다. 당뇨 시장에서는 다파글리플로진 제네릭 출시 이후 점유 확대를 진행하고 있으며, 국내 시장 규모 약 1,600억원인 다파글리플로진·글리메피리드 영역에서의 점유율 확대가 중기 성장 변수다. 환인제약·동국제약·경동제약과 형성한 지분 연합이 실질적인 영업·생산 협력으로 구체화될 경우 사업 시너지를 기대할 수 있다. 2025년 전환사채 전환이 대부분 완료되어 추가 희석 우려가 줄어든 점은 자본 구조 안정화 측면에서 긍정적 요인이다. 반면 2026년 하반기 예정된 제네릭 약가 인하는 ETC 매출·마진에 직접적 하방 압력을 가할 수 있어 단기 실적 가시성을 제한한다. 서울대 신약개발센터를 통한 신약·신제형 연구가 중장기 파이프라인 가치로 이어질지도 관심 대상이나, 구체적 임상·허가 일정은 현재 공시를 통해 확인되지 않는다.",
-  "en": "The Q1 2026 revenue and operating income records suggest the H2 2025 operating slump may have been transitory, with cost-structure normalization being the pivotal variable for H2 2026 profitability. The CMO segment has posted roughly 33% annual growth since 2019, and should sustain its role as the primary top-line growth engine as long as global outsourcing demand remains healthy. In the diabetes segment, the company is progressing with dapagliflozin generic penetration, targeting a domestic combined market of approximately 160 bn won across dapagliflozin and glimepiride. Should the equity alliance with Hwan-In, Dongkook, and Kyungdong Pharmaceuticals evolve into tangible sales or manufacturing cooperation, meaningful business synergies could emerge over the medium term. The near-completion of CB conversions during 2025 reduces future dilution risk, a constructive development for the capital structure. However, the H2 2026 generic drug price reduction creates a near-term earnings headwind for the ETC segment that limits near-term earnings visibility. New drug and formulation research conducted through the Seoul National University Drug Development Center could add medium-term pipeline value, though specific clinical or regulatory milestones have not been publicly disclosed."
+  "ko": "회사는 2025년 10월 임시주주총회를 통해 정관에 분기배당 조항을 신설했으며, 이는 기존 연 1회 결산배당 중심 정책에서 벗어나 배당 횟수를 늘리는 방향의 주주환원 정책 변화를 예고한다. 이사회 확대로 생산·재무 전문 임원이 새롭게 합류한 만큼, 향후 생산 효율화와 내부 관리체계 정비가 실적에 어떻게 반영되는지가 관전 포인트다. 2026년 상반기 두 개 분기 연속 영업이익률이 두 자릿수로 회복된 점은 2025년 하반기 부진에서 벗어나려는 흐름을 보여주지만, 이 흐름이 하반기까지 이어질지는 다음 분기 실적으로 확인이 필요하다. 회사는 신약 및 제품 개발, 특허권 확보와 기술제휴를 통한 신제품 발매를 지속적으로 준비하고 있다고 밝히고 있으나, 구체적인 파이프라인 일정이나 매출 기여 시점은 공개된 자료에서 확인되지 않는다. 2025년 중 있었던 자기주식의 환인제약·신정일 대상 처분은 지분 구조에 변화를 가져온 이벤트로, 향후 두 회사와의 관계가 사업적으로 확대되는지 여부도 살펴볼 대상이다. 전환사채 관련 신주 발행이 이어질 경우 발행주식수 추가 증가 가능성도 열려 있어, 주당 지표 희석 여부를 함께 확인할 필요가 있다.",
+  "en": "In October 2025, the company added a quarterly dividend provision to its articles of incorporation through an extraordinary shareholders' meeting, signaling a shift in shareholder return policy away from a once-a-year, year-end dividend structure toward more frequent payouts. With the board expanded to include new production and finance executives, how improvements in production efficiency and internal management systems feed through to results will be worth watching. The return to double-digit operating margins in both quarters of the first half of 2026 suggests an effort to move past the weak second half of 2025, but whether this trend continues into the second half will need confirmation from upcoming quarterly results. The company states it continues to prepare new drug and product development, along with patent acquisition and technology partnerships for new product launches, though specific pipeline timelines or expected revenue contributions are not detailed in available disclosures. The 2025 treasury share disposals to Hwanin Pharmaceutical and Shinjeongil altered the shareholder base, and whether these relationships expand into broader business cooperation is worth monitoring going forward. Continued convertible bond conversions could further increase shares outstanding, making per-share dilution effects another point to track."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 주당순자산(BPS 11,310원)을 큰 폭으로 하회하여, 순자산 대비 현저한 할인 구간에 위치한다. 제약·CMO 유형자산 및 부동산 가치를 고려하면 이 같은 순자산 할인 수준은 업종 내 유사 규모 기업과 비교해도 두드러진다. 주당순이익(EPS 1,795원) 기준으로 보면 현재 주가배수는 단자릿수의 낮은 구간에 형성되어 있으나, 2025년 하반기 영업손실과 전환사채 파생상품 평가이익이 혼재한 이익의 질(earnings quality) 문제가 단순 배수 해석을 복잡하게 만든다. 주당 배당금(DPS) 150원은 업종 평균을 웃도는 수준의 현금 배당 수익률을 제공하며 일정한 주주환원 매력을 유지한다. 2025년 대규모 전환사채 전환으로 주식 수가 증가해 주당 지표가 전년 대비 희석된 점, 그리고 CFO의 급감이 실질 현금 창출력에 반영되어야 한다는 점을 감안해 밸류에이션을 해석할 필요가 있다.",
-  "en": "The share price stands at a substantial discount to book value per share (BPS 11,310 won), placing the stock well below net asset value — a discount that is notable even relative to similarly scaled domestic pharmaceutical peers when factoring in CMO fixed assets and real estate holdings. Based on the headline earnings per share (EPS of 1,795 won), the implied price-to-earnings multiple sits in a low single-digit range; however, the blending of H2 2025 operating losses with large non-cash convertible bond derivative gains complicates a straightforward earnings-quality assessment. The annual dividend per share of 150 won (DPS) provides a cash yield above the sector average, offering meaningful income return support. Investors should factor in the dilutive impact of the large-scale 2025 CB conversions — which have expanded the share count — alongside the sharp decline in operating cash flow when assessing intrinsic value beyond headline earnings."
+  "ko": "현재 주가는 주당 순자산가치에 못 미치는 수준에서 거래되고 있어 순자산 대비 할인된 구간에 위치한다. 주가수익비율은 과거 진양제약이 거래돼온 밴드와 비교할 때 낮은 편에 속하는데, 이는 2025년 4분기의 비영업적 순이익 확대가 최근 네 개 분기 합산 순이익을 끌어올린 영향도 일부 반영된 결과로 볼 수 있다. 배당은 최근 수년간 결산배당을 중심으로 일정한 금액을 유지해왔으며, 2025년 10월 정관 변경으로 분기배당의 제도적 근거가 마련된 점은 주주환원 방식의 다변화로 해석된다. 영업이익 자체는 2025년 하반기 적자에서 2026년 상반기 두 자릿수 마진으로 방향을 틀었으며, 이 회복이 향후 분기에도 이어지는지가 확인 대상이다. 시가총액이 상대적으로 작은 소형주인 만큼 유통주식수 변동(전환사채 전환, 자기주식 처분 등)이 지표 해석에 영향을 줄 수 있다는 점도 함께 고려할 부분이다.",
+  "en": "The current share price trades below per-share net asset value, placing it in a discount range relative to book value. The price-to-earnings ratio sits toward the lower end of the band in which Jinyang Pharmaceutical has historically traded, a level partly attributable to the fourth-quarter 2025 non-operating net income surge that lifted the trailing four-quarter earnings base. Dividends have remained at a stable amount centered on year-end payouts in recent years, and the October 2025 amendment establishing a quarterly dividend framework represents a diversification of the shareholder return approach. Operating profit itself shifted from losses in the second half of 2025 to double-digit margins in the first half of 2026, and whether this recovery continues into subsequent quarters remains to be confirmed. Given the company's relatively small market capitalization, changes in shares outstanding from convertible bond conversions and treasury share disposals are also a factor worth considering when interpreting these metrics."
  },
  "bull": [
   {
    "title": {
-    "ko": "CMO 고성장 구조의 지속 가능성",
-    "en": "Durable High-Growth CMO Structural Tailwind"
+    "ko": "영업이익률 두 자릿수 회복",
+    "en": "Operating Margin Returns to Double Digits"
    },
    "body": {
-    "ko": "CMO 사업부 매출은 2019년 58억원에서 2024년 약 250억원으로 연평균 33.9% 성장이 전망되며, 전체 매출 내 비중도 꾸준히 확대되고 있다. 미국 생물보안법 논의를 계기로 중국 CMO 대안으로 한국 기업이 주목받으면서 실제 수주 확대로 이어지는 흐름이 확인되고 있다. CMO 비중 확대와 매출 성장이 동반될 경우 중기적으로 영업이익률 회복과 수익 믹스 개선에 기여할 수 있다.",
-    "en": "The CMO segment is forecast to grow at a ~33.9% CAGR from 5.8 bn won in 2019 to approximately 25 bn won in 2024, steadily increasing its revenue share. With the U.S. Biosecurity Act debate spotlighting Korean manufacturers as credible Chinese alternatives, incremental order flow is already materializing. Sustained CMO growth paired with top-line expansion could drive medium-term OPM recovery and a more favorable revenue mix."
+    "ko": "2025년 3분기·4분기 연속 영업손실을 낸 뒤 2026년 1분기 약 10.4%, 2분기 약 12.9%로 영업이익률이 회복됐다. 매출도 두 분기 모두 320억원대를 넘어서며 성장세를 이어갔다. 이러한 흐름이 하반기까지 지속되는지가 향후 실적의 핵심 변수다.",
+    "en": "After operating losses in both the third and fourth quarters of 2025, operating margin recovered to about 10.4% in the first quarter of 2026 and about 12.9% in the second quarter. Revenue also continued growing, surpassing KRW 32 billion in both quarters. Whether this trend persists into the second half is a key variable for future results."
    }
   },
   {
    "title": {
-    "ko": "순자산 대비 큰 주가 할인 — 자산 가치 안전마진",
-    "en": "Significant Net Asset Discount — Asset-Value Floor Support"
+    "ko": "지배구조 개편과 주주환원 다변화",
+    "en": "Governance Overhaul and Diversified Shareholder Returns"
    },
    "body": {
-    "ko": "현재 주가는 주당순자산(BPS 11,310원)을 현저히 하회하며, 부동산 가치만으로도 시가총액의 2배를 넘는다는 분석이 제기된 바 있다. 자산 가치 기반의 구조적 안전마진이 주가 하방을 지지하는 요인으로 작용할 수 있다. 2025년 전환사채 전환이 대부분 마무리되어 추가 희석 우려가 완화된 점도 중기 주당 가치 보존에 긍정적이다.",
-    "en": "The share price sits at a marked discount to BPS of 11,310 won, and independent analysis has noted that real estate assets alone exceeded the market capitalization by more than twofold. This asset-backed structural floor could cushion downside. The near-completion of CB conversions during 2025 also reduces further dilution risk, a positive factor for per-share value preservation over the medium term."
+    "ko": "2025년 10월 임시주주총회를 통해 이사회가 오너 중심 3인에서 생산·재무 전문 임원을 포함한 5인 체제로 확대됐다. 같은 주총에서 정관에 분기배당 조항을 신설해 장기 투자자를 겨냥한 배당 정책 변화를 시도했다. 전문경영 강화 시도는 내부 관리체계 정비로 이어질 잠재력이 있다.",
+    "en": "At an extraordinary shareholders' meeting in October 2025, the board expanded from three owner-centered directors to five members including executives with production and finance backgrounds. The same meeting introduced a quarterly dividend provision into the articles of incorporation, aiming to shift dividend policy toward long-term investors. This push toward professional management has the potential to translate into improved internal management systems."
    }
   },
   {
    "title": {
-    "ko": "2026년 1분기 영업 반등과 전략적 지분 연합 형성",
-    "en": "Q1 2026 Operating Rebound and Strategic Alliance Formation"
+    "ko": "매출 성장세와 상위권 순이익률",
+    "en": "Revenue Growth and Top-Tier Net Margin"
    },
    "body": {
-    "ko": "2026년 1분기는 분기 사상 최고 매출 324억원과 함께 영업이익 33.7억원을 기록하며 2025년 하반기의 연속 영업적자 구간을 탈피했다. 환인제약·동국제약·경동제약과의 지분 연합은 CMO·만성질환 치료제·CNS 각 분야 강점을 공유할 수 있는 협력 기반을 구축했다. 이를 통해 중기 영업 협력이나 수주 연계가 구체화될 경우 매출 다각화 효과도 기대된다.",
-    "en": "Q1 2026 delivered a record quarterly revenue of 32.4 bn won alongside operating income of 3.37 bn won, breaking out of the two-quarter operating loss streak seen in H2 2025. The cross-shareholding alliance with Hwan-In, Dongkook, and Kyungdong Pharmaceuticals establishes a collaborative framework spanning CMO, chronic-disease drugs, and CNS therapies. If this translates into concrete sales or manufacturing partnerships, revenue diversification potential could materialize over the medium term."
+    "ko": "매출은 2022년부터 2025년까지 4년 연속 증가하며 1,000억원대 후반 규모로 성장했다. 2025년 개별 기준 순이익률은 18.47%로 상장 제약사 중 두 자릿수 순이익률을 낸 상위 그룹에 포함됐다. 다만 이 지표는 영업이익률이 아닌 순이익률로, 비영업 손익의 영향을 함께 고려해야 한다.",
+    "en": "Revenue grew for four consecutive years from 2022 through 2025, reaching close to KRW 120 billion. On a non-consolidated basis, the 2025 net margin of 18.47% placed the company among the group of listed pharmaceutical firms with double-digit net margins. This figure reflects net margin rather than operating margin, however, and should be considered alongside the impact of non-operating items."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2025년 하반기 영업손실 원인의 불투명성",
-    "en": "Opaque Root Causes Behind H2 2025 Operating Losses"
+    "ko": "2025년 하반기 연속 영업적자",
+    "en": "Consecutive Operating Losses in Second-Half 2025"
    },
    "body": {
-    "ko": "2025년 3·4분기 연속 영업손실은 상반기 대비 급격한 반전으로, 판관비 급증이나 원가율 상승 등 구체적 원인이 공시를 통해 충분히 설명되지 않았다. 비영업 일회성 이익(전환사채 파생상품 평가이익)으로 연간 순이익이 보정됐으나, 영업현금흐름이 14.6억원으로 급감해 현금 창출력이 실질적으로 크게 약화됐다. 해당 원인이 일시적이 아닌 구조적이라면 2025년 하반기와 유사한 손실이 재현될 리스크가 존재한다.",
-    "en": "The back-to-back operating losses in Q3 and Q4 2025 represent a sharp reversal from H1, and the precise drivers — whether a spike in selling/admin expenses, production cost inflation, or one-time write-offs — have not been fully explained in available public disclosures. While non-cash CB derivative gains padded reported annual net income, operating cash flow plunged to 1.46 bn won, reflecting genuine underlying cash generation weakness. If the root cause is structural rather than transitory, the H2 2025 loss pattern could recur in future quarters."
+    "ko": "2025년 3분기 영업손실 9.4억원, 4분기 영업손실 28.5억원으로 두 개 분기 연속 적자를 냈다. 그 결과 연간 영업이익률은 2024년 10.3%에서 2025년 2.1%로 크게 낮아졌다. 이는 회사의 핵심 사업 수익성이 한 해 동안 뚜렷하게 흔들렸음을 보여준다.",
+    "en": "The company posted an operating loss of KRW 0.94 billion in the third quarter of 2025 and KRW 2.85 billion in the fourth quarter, marking two consecutive quarters of losses. As a result, the full-year operating margin fell sharply from 10.3% in 2024 to 2.1% in 2025, indicating a notable deterioration in core business profitability during the year."
    }
   },
   {
    "title": {
-    "ko": "2026년 하반기 제네릭 약가 인하 규제 리스크",
-    "en": "H2 2026 Generic Drug Price-Cut Regulatory Headwind"
+    "ko": "순이익의 비영업 요인 의존",
+    "en": "Net Income Dependent on Non-Operating Factors"
    },
    "body": {
-    "ko": "하반기부터 제네릭과 특허 만료 의약품 약가가 현행 53.55%에서 45.00% 수준으로 인하될 규제 리스크는 전체 매출의 약 78%를 차지하는 ETC 부문 수익성에 직접적 타격을 줄 수 있다. 다파글리플로진, 글리메피리드 등 주요 제네릭 제품의 실현 단가가 하락해 당뇨 부문 성장세가 억제될 수 있다. 순환기·소화기 주력 품목도 약가 인하 대상에 포함될 경우 전반적인 수익성 압박이 심화된다.",
-    "en": "A scheduled reduction of generic and post-patent drug prices from the current ~53.55% to 45% level starting in H2 2026 could directly compress margins in the ETC segment, which accounts for approximately 78% of total revenue. Core generic products including dapagliflozin and glimepiride would face lower realized selling prices, capping momentum in the diabetes revenue line. If cardiovascular and gastrointestinal flagships are also covered by the cuts, broader-based margin pressure would intensify."
+    "ko": "2025년 4분기는 영업손실을 냈음에도 지배주주순이익이 193.3억원으로 급증했는데, 이는 대규모 비영업적 손익이 작용한 결과로 해석된다. 2024년에도 순이익이 영업이익 대비 크게 확대된 바 있어, 순이익 흐름이 본업 실적만으로 설명되지 않는 구간이 반복되고 있다. 이러한 비영업 요인의 성격과 지속 여부는 공개 자료로 명확히 특정되지 않는다.",
+    "en": "In the fourth quarter of 2025, despite an operating loss, owners' net income surged to KRW 19.33 billion, a result attributed to a large non-operating item. A similar pattern occurred in 2024, when net income far exceeded operating profit, indicating recurring periods where net income cannot be explained by core operations alone. The nature and recurrence of these non-operating factors are not clearly specified in publicly available disclosures."
    }
   },
   {
    "title": {
-    "ko": "CMO 경쟁 심화 및 전환사채 희석 잔존 부담",
-    "en": "Intensifying CMO Competition and Residual CB Dilution Drag"
+    "ko": "지분 변동 이벤트의 빈도",
+    "en": "Frequent Share-Related Events"
    },
    "body": {
-    "ko": "그동안 신약 개발에 집중하던 전통 제약사들도 CDMO 분야에 진출하고 있어, 대형사의 규모의 경제에 의한 중소형 CMO 업체의 협상력 약화가 중장기 리스크로 부각될 수 있다. 2025년 전환사채 전환으로 1,483,414주 신주가 발행되며 주당 지표가 희석된 상태이고, 잔여 전환사채가 존재할 경우 추가 희석 가능성도 배제할 수 없다. 2026년 초 자사주 맞교환으로 처분된 자사주 물량도 단기적으로 시장 매도 부담으로 작용할 수 있다.",
-    "en": "Traditional pharmaceutical companies that previously focused on new drug development are entering the CDMO space, and the scale advantages of large-cap entrants may erode the pricing leverage and contract win-rate of mid-sized CMO operators over time. The 1,483,414 new shares issued from CB conversions during 2025 have already diluted per-share metrics, and any residual convertible bonds represent a continuing dilution overhang. The disposal of treasury shares in the early 2026 cross-shareholding transaction may also introduce near-term supply-side pressure on the stock."
+    "ko": "2025년 중 전환사채 전환청구로 148만여 주의 신주가 발행돼 발행주식총수가 늘었다. 같은 해 자기주식 신탁계약 해지와 환인제약·신정일 등을 대상으로 한 자기주식 처분도 이어졌다. 이러한 지분 관련 이벤트가 잦은 점은 유통주식수와 주주 구성의 변동성을 높이는 요인이다.",
+    "en": "During 2025, roughly 1.48 million new shares were issued through convertible bond conversions, increasing total shares outstanding. The same year saw treasury share trust contract terminations and disposals to parties including Hwanin Pharmaceutical and Shinjeongil. The frequency of these share-related events adds volatility to the free float and shareholder composition."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "수익성 변동성 및 이익 품질",
-    "en": "Earnings Volatility and Earnings Quality"
+    "ko": "약가 및 정책 리스크",
+    "en": "Drug Pricing and Policy Risk"
    },
    "body": {
-    "ko": "2025년 상·하반기 영업이익의 극단적 편차(H1 +63.2억원 vs H2 -37.9억원)는 비용 구조의 불안정성을 시사한다. 전환사채 내재파생상품 평가손익 같은 비현금 항목이 분기 순이익을 크게 왜곡할 수 있어, 표면 이익 지표만으로 실질 수익성 판단이 어렵다. CFO와 영업이익의 괴리가 지속된다면 실질적 현금 창출력 저하가 재무 건전성과 배당 지속 가능성에 영향을 미칠 수 있다.",
-    "en": "The extreme H1/H2 2025 operating profit divergence (+6.32 bn won vs -3.79 bn won) signals instability in the cost structure. Non-cash items such as CB embedded-derivative fair-value changes can materially distort reported quarterly net income, making headline earnings an unreliable profitability gauge. A persistent gap between operating cash flow and reported earnings could weigh on underlying financial health and dividend sustainability."
+    "ko": "국내 전문의약품 시장은 정부의 약가 통제 정책의 영향을 받는다. 제네릭 경쟁 심화와 약가 인하 압력은 업계 전반에 공통적으로 작용하는 요인이다. 진양제약도 순환계·중추신경계 품목 중심의 매출 구조상 이러한 정책 변화에 노출돼 있다.",
+    "en": "Korea's prescription drug market is subject to government drug pricing controls. Intensifying generic competition and pricing pressure are factors affecting the industry broadly. Given its revenue concentration in circulatory and central nervous system products, Jinyang Pharmaceutical is also exposed to these policy shifts."
    }
   },
   {
    "cat": {
-    "ko": "규제·약가 정책 리스크",
-    "en": "Regulatory and Drug-Pricing Policy Risk"
+    "ko": "실적 변동성",
+    "en": "Earnings Volatility"
    },
    "body": {
-    "ko": "국내 건강보험 재정 압박에 따른 약가 인하 정책은 장기 구조적 흐름으로, 2026년 하반기 예정된 제네릭 약가 인하는 ETC 매출과 마진에 직접 영향을 미친다. 원료의약품 공급 중단이나 허가 취소로 특정 품목이 시장에서 철수해야 하는 사례도 발생하고 있어, 개별 품목의 매출 공백 리스크도 상존한다. 글로벌 제약사의 특허 전략 변경으로 특정 제네릭 시장의 경쟁 구도가 단기 급변할 수 있는 점도 유의할 필요가 있다.",
-    "en": "Domestically, successive drug price reductions driven by national health insurance fiscal pressures represent a long-term structural headwind, with the H2 2026 generic price cut directly impacting ETC revenue and margins. Active pharmaceutical ingredient supply disruptions and approval cancellations have already led some companies to withdraw certain products from the market, creating single-product revenue-gap risk. Global originators' evolving patent extension strategies can also abruptly reshape competitive dynamics in specific generic segments."
+    "ko": "2025년 2분기부터 2026년 2분기까지 다섯 개 분기 동안 영업이익은 흑자·적자·적자·흑자·흑자로 반복해 바뀌었다. 순이익 역시 4분기의 비영업적 급증과 같이 예측이 쉽지 않은 흐름을 보였다. 이러한 변동성은 향후 실적 전망의 불확실성을 높이는 요인이다.",
+    "en": "Across five quarters from the second quarter of 2025 through the second quarter of 2026, operating profit alternated between profit, loss, loss, profit, and profit. Net income also showed patterns that are difficult to predict, such as the non-operating surge in the fourth quarter. This volatility adds uncertainty to forward earnings expectations."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조 및 전환사채 관련 리스크",
-    "en": "Balance-Sheet and Convertible Bond Risk"
+    "ko": "지분 구조 관련 불확실성",
+    "en": "Ownership Structure Uncertainty"
    },
    "body": {
-    "ko": "부채비율이 2023년 33.8%에서 2024년 89.8%로 급등한 것은 전환사채 발행에 기인하며, 2025년 67.5%로 일부 회복됐으나 2~3년 전 수준과 비교하면 여전히 높다. 전환사채의 투자자가 보유한 전환권 및 조기상환청구권이 부채로 인식되어 있어, 잔여 CB의 조기상환 청구가 집중될 경우 단기 유동성 압박이 발생할 수 있다. 영업현금흐름 감소와 부채 규모 병존은 이자 상환 및 운전자본 관리에 대한 면밀한 모니터링을 필요로 한다.",
-    "en": "The debt ratio surged from 33.8% (2023) to 89.8% (2024) due to CB issuance and has only partially recovered to 67.5% in 2025 — still materially above levels two to three years prior. The conversion option and early-redemption put held by CB investors are recognized as financial liabilities, meaning concentrated early-redemption requests on any residual CB balance could trigger near-term liquidity pressure. The combination of declining operating cash flow and elevated total liabilities warrants close monitoring of interest service capacity and working capital management."
+    "ko": "오너가 중심 경영에서 전문경영 체제로 전환하는 과정에서 이사회 구성과 지분 정책이 변화하고 있다. 자기주식의 특정 대상(환인제약, 신정일 등) 처분은 향후 지배구조나 사업 관계에 영향을 줄 수 있는 이벤트다. 이러한 변화의 방향성은 아직 확정되지 않은 상태다.",
+    "en": "As the company transitions from owner-centered management toward professional management, board composition and share-related policies are evolving. The disposal of treasury shares to specific parties, including Hwanin Pharmaceutical and Shinjeongil, is an event that could influence future governance or business relationships. The direction of these changes has not yet been fully established."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7~8월",
-    "en": "July–August 2026"
+    "ko": "2026년 11월 중순경",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표 — 2026년 1분기의 영업이익 반등이 지속되는지, 2025년 하반기 비용 급증의 원인이 완전히 해소됐는지를 확인한다. 영업이익률이 역사적 정상 구간(9~10%)에 근접하면 영업 정상화 신뢰도가 높아진다.",
-    "en": "Q2 2026 earnings release — key focus is whether the Q1 2026 operating income recovery is sustained and whether the H2 2025 cost spike has fully normalized. An OPM approaching the historical normal range of 9–10% would substantially increase confidence in the operating recovery thesis."
+    "ko": "2026년 3분기 보고서 공시 시점(2025년 3분기 보고서는 2025년 11월 14일 접수된 바 있음)으로, 2026년 상반기의 영업이익률 회복이 3분기에도 이어지는지 확인이 필요하다.",
+    "en": "Based on the prior-year pattern (the 2025 third-quarter report was filed on November 14, 2025), this is when the 2026 third-quarter report is expected, providing a check on whether the operating margin recovery seen in the first half of 2026 continued into the third quarter."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기(시행 전후)",
-    "en": "H2 2026 (Around Implementation)"
+    "ko": "2026년 4분기 중",
+    "en": "During the fourth quarter of 2026"
    },
    "what": {
-    "ko": "제네릭·특허 만료 의약품 약가 인하(53.55%→45%) 최종 적용 범위 및 시행 시점 공표 — 크리빅스·다파글리플로진 등 진양제약 주요 ETC 품목의 약가 인하 적용 여부와 예상 매출 영향액을 확인해야 한다.",
-    "en": "Finalization and announcement of the generic drug price reduction (53.55% → 45%) scope and implementation date — specifically whether key ETC products including Clivix and dapagliflozin are subject to the cuts and what the resulting revenue impact is estimated to be."
+    "ko": "2025년 10월 정관 변경으로 도입된 분기배당 제도가 실제로 시행되는지, 최초 분기배당 관련 이사회 결의나 공시가 나오는지 확인할 필요가 있다.",
+    "en": "Watch for whether the quarterly dividend framework introduced via the October 2025 bylaw amendment is actually implemented, including any board resolution or disclosure related to a first quarterly dividend."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~연말",
-    "en": "H2 2026 to Year-End"
+    "ko": "2026년 하반기 중",
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "CMO 연간 수주 현황 및 매출 비중 업데이트 — CMO 부문이 연평균 30%대 성장세를 유지하는지, 대형사의 시장 진입으로 수주 단가 또는 물량에 변화가 생겼는지를 사업보고서 및 IR 자료를 통해 확인해야 한다.",
-    "en": "CMO annual order book and revenue mix update — monitoring whether the segment sustains ~30% annual growth and whether large-player market entry has impacted contract pricing or volume; to be tracked through the annual report and IR materials."
+    "ko": "환인제약·신정일 등에 처분된 자기주식과 관련해 추가적인 지분 변동이나 사업적 협력 관계로 확대되는 움직임이 있는지 공시를 통해 확인할 필요가 있다.",
+    "en": "Monitor disclosures for any further changes in shareholding or signs of expanded business cooperation related to the treasury shares disposed of to Hwanin Pharmaceutical and Shinjeongil."
    }
   },
   {
    "when": {
-    "ko": "2026년 연말~2027년 초",
-    "en": "Late 2026 to Early 2027"
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "환인제약·동국제약·경동제약과의 지분 연합이 실질 사업 협력(공동 영업·생산 수탁)으로 구체화되는지 여부 — 협력의 가시적 성과가 확인된다면 중장기 매출 다각화 가능성을 높이는 촉매로 주목할 필요가 있다.",
-    "en": "Whether the equity alliance with Hwan-In, Dongkook, and Kyungdong Pharmaceuticals translates into tangible business cooperation such as joint sales initiatives or production contracts — any concrete collaboration milestones would represent a medium-term revenue diversification catalyst worth monitoring."
-   }
-  },
-  {
-   "when": {
-    "ko": "수시(DART 공시)",
-    "en": "Ongoing (DART Disclosures)"
-   },
-   "what": {
-    "ko": "잔여 전환사채 조기상환 청구 또는 추가 전환 공시 — 주식 추가 희석 여부와 단기 유동성 영향을 점검하고, 자사주 취득·처분 공시도 수급 및 자본 정책 관점에서 모니터링이 필요하다.",
-    "en": "Residual CB early-redemption requests or additional conversion disclosures via DART — monitor for further share dilution and near-term liquidity impact; treasury share acquisition or disposal filings should also be tracked for supply-side and capital allocation implications."
+    "ko": "2026년 사업보고서 공시를 통해 2026년 연간 확정 실적과 영업이익률 회복이 연간 기준으로도 유지됐는지 최종 확인할 수 있다.",
+    "en": "The 2026 annual business report is expected to be filed, allowing final confirmation of whether the 2026 full-year results and operating margin recovery held up on an annual basis."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "진양제약은 762억원(2022)에서 1,207억원(2025)으로 4년간 연평균 16.5%의 매출 성장을 달성한 코스닥 중견 제약사로, 전문의약품 캐시카우와 고성장 CMO 사업의 이중 엔진 구조를 갖추고 있다. 핵심 과제는 2025년 하반기 연속 영업손실에서 촉발된 수익성 신뢰성 문제로, 영업현금흐름이 14.6억원으로 급감한 것이 일시적 비용 이상인지 아니면 구조적 변화인지가 중기 전망의 분수령이다. 2026년 1분기 분기 최고 매출(324억원)·영업이익(33.7억원)은 회복의 초기 신호이며, 전환사채 파생상품 이슈가 상당 부분 해소됨에 따라 향후 이익 가시성이 실제 영업 성과를 더 충실히 반영할 것으로 판단된다. 2026년 하반기 제네릭 약가 인하, CMO 경쟁 심화, 잔여 전환사채 처리라는 세 가지 리스크 요인의 전개가 2026~2027년 실적 방향성을 결정할 것이다. 현재 주가는 주당순자산(BPS 11,310원) 대비 큰 폭의 할인 구간에 위치하고 DPS 150원 기준 배당 수익률이 업종 평균을 상회해 자산·배당 측면의 지지 요인이 있으나, 영업 회복의 지속 가능성과 정책 리스크의 최종 규모 확인이 가치 재평가의 선결 조건이다.",
-   "en": "Jin Yang Pharmaceutical is a mid-tier KOSDAQ pharmaceutical company that delivered a ~16.5% revenue CAGR over four years (2022–2025), supported by a dual-engine model of a stable ETC cash cow and a high-growth CMO business. The central challenge is the credibility of profitability following the H2 2025 operating loss streak: the sharp decline in operating cash flow to 1.46 bn won raises the question of whether the cost surge was a one-time anomaly or a structural shift, which will determine the medium-term trajectory. Q1 2026 delivered encouraging early-recovery signals in both revenue and operating income; with the CB derivative distortion now largely resolved, future earnings should more reliably reflect underlying operations. Three risk factors will define 2026–2027 performance: the H2 2026 generic drug price reduction, escalating CMO competition from large-cap entrants, and the ultimate disposition of residual convertible obligations. The share price carries a substantial discount to BPS of 11,310 won and offers a dividend yield above the sector average based on DPS of 150 won — providing asset-based and income-based floor support — but confirming the durability of the operating recovery and quantifying the policy headwind remain the prerequisite conditions for clearer directional conviction."
+   "ko": "진양제약은 2022년부터 2025년까지 매출이 꾸준히 늘어난 반면, 영업이익률은 2024년 10.3%에서 2025년 2.1%로 크게 낮아지는 등 연도별·분기별 편차가 뚜렷한 흐름을 보였다. 2025년 하반기 두 개 분기 연속 영업손실을 낸 뒤 2026년 상반기 두 자릿수 영업이익률로 회복된 점은 긍정적 신호지만, 같은 기간 4분기 순이익이 영업손실 속에서도 크게 늘어난 점은 비영업적 요인의 영향이 컸음을 시사해 해석에 주의가 필요하다. 2025년 10월 이사회 확대와 분기배당 도입 근거 마련은 지배구조 및 주주환원 측면에서 변화의 시작점으로 볼 수 있다. 전환사채 전환에 따른 신주 발행과 자기주식 처분(환인제약 등) 등 지분 관련 이벤트가 이어지고 있어 주식수·주주 구성의 변동성도 함께 살펴볼 필요가 있다. 산업 전반적으로는 코스닥 상장 제약사들의 이익 성장률이 코스피 대형사보다 두드러졌던 가운데, 진양제약의 순이익률도 상위권에 포함됐다. 다음 분기 실적과 분기배당 시행 여부, 지분 구조 변화가 향후 판단의 주요 관찰 대상이 될 것으로 보인다.",
+   "en": "Jinyang Pharmaceutical saw steady revenue growth from 2022 through 2025, while operating margin swung sharply, falling from 10.3% in 2024 to 2.1% in 2025, reflecting pronounced year-to-year and quarter-to-quarter variability. The recovery to double-digit operating margins in the first half of 2026 after two consecutive operating losses in the second half of 2025 is a positive signal, but the sharp rise in fourth-quarter net income despite an operating loss in the same period suggests a substantial non-operating influence that warrants careful interpretation. The board expansion and introduction of a quarterly dividend framework in October 2025 can be viewed as a starting point for change in governance and shareholder returns. Ongoing share-related events, including new shares from convertible bond conversions and treasury share disposals to parties such as Hwanin Pharmaceutical, mean that share count and shareholder composition volatility also merit attention. Industry-wide, KOSDAQ-listed pharmaceutical companies showed more pronounced profit growth than larger KOSPI peers, and Jinyang's net margin ranked among the higher tier. Upcoming quarterly results, the implementation of the quarterly dividend, and further shifts in ownership structure will likely be the key items to watch going forward."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A007370",
+  "https://yakup.com/news/index.html?cat=12&cat2=&mode=view&nid=326544&num_start=&pmode=",
+  "https://www.bosa.co.kr/news/articleView.html?idxno=3001493",
+  "https://v.daum.net/v/20260327060005766?f=p",
   "https://m.irgo.co.kr/IR-COMP/007370/%EC%A7%84%EC%96%91%EC%A0%9C%EC%95%BD-%EA%B8%B0%EC%97%85%EC%A0%95%EB%B3%B4",
-  "https://www.butler.works/ko/companies/00150536",
-  "https://m.thinkpool.com/item/007370",
-  "https://www.valueline.co.kr/finance/mri/007370",
-  "https://markets.hankyung.com/stock/007370",
-  "https://www.investing.com/equities/jin-yang-pharmaceutical-co-ltd",
-  "https://www.kokstock.com/stock/item.asp?item_cd=007370",
-  "https://finance.finup.co.kr/Stock/007370",
-  "https://www.hanmi.co.kr/hanmi/handler/Rnd-Pipeline",
-  "https://www.yuhan.co.kr/Research/PipeLine/",
-  "https://www.jinyangpharm.com/",
-  "https://m.irgo.co.kr/IR-COMP/019170/%EC%8B%A0%ED%92%8D%EC%A0%9C%EC%95%BD-IR-PAGE",
-  "https://m.irgo.co.kr/IR-COMP/000220/%EC%9C%A0%EC%9C%A0%EC%A0%9C%EC%95%BD-IR-PAGE",
   "https://www.catch.co.kr/Comp/CompSummary/351962",
-  "https://www.handok.co.kr/rd/pipeline/",
-  "https://www.asiae.co.kr/article/2024061208380704201",
-  "https://www.etoday.co.kr/news/view/2368870"
+  "https://www.incruit.com/company/2537087/",
+  "https://www.jobplanet.co.kr/companies/9420/reviews/%EC%A7%84%EC%96%91%EC%A0%9C%EC%95%BD",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251114001813",
+  "https://jasoseol.com/companies/291",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=633125",
+  "https://buffettlab.co.kr/news/view.php?idx=52344",
+  "https://kind.krx.co.kr/external/2026/03/18/002512/20260318011850/11011.htm",
+  "https://finance.daum.net/quotes/A007370?view=pc",
+  "https://www.butler.works/ko/companies/00150536",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Main.asp?gicode=A007370",
+  "https://stock.pstatic.net/stock-research/company/79/20240628_company_776228000.pdf",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20240321001962",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250314001015"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "007370",
  "name": "진양제약",
  "name_en": "JIN YANG PHARMACEUTICAL. CO., LTD",
@@ -233,9 +223,9 @@
   "바이오·제약"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 05:52",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:51",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 3945,
-   "mcap": 0.0558,
+   "price": 4020,
+   "mcap": 0.0568,
    "shares": 14134587,
    "total_shares": 14134587,
    "wavg_shares": 12191930,
-   "per": 2.182,
+   "per": 2.223,
    "eps": 1808,
-   "pbr": 0.3439,
+   "pbr": 0.3504,
    "bps": 11472,
    "roe_ttm": 15.8,
    "ttm_window": "2025Q3~2026Q2",
@@ -356,7 +346,7 @@
    "bps_krx": 11310.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 150.0,
-   "div": 3.8,
+   "div": 3.73,
    "bps_denom_fixed": "발행총수"
   }
  }

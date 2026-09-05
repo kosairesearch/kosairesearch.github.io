@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "AI 수주 가시화, 마진 회복이 재평가 관건",
-  "en": "AI Contract Wins Confirmed; Margin Recovery Is the Key to Rerating"
+  "ko": "AI 인프라 대형 수주, 실적 변곡점",
+  "en": "Major AI Infrastructure Order Signals Inflection Point"
  },
  "lead": {
-  "ko": "글로벌 AI 파트너 생태계와 자체 솔루션을 기반으로 금융·공공 AX 수주를 실증하고 있으나, 4개년 매출 정체와 저마진·Q4 집중 이익 구조의 개선이 지속 가능한 가치 재평가의 선결 조건이다.",
-  "en": "Datasolution is demonstrating real AI transformation project wins in financial and public sectors through its global partner ecosystem and proprietary solutions, yet overcoming four years of revenue stagnation and a thin-margin, Q4-concentrated earnings structure remains the prerequisite for a durable rerating."
+  "ko": "데이타솔루션은 2026년 7월 삼성SDS와 4,381억원 규모의 정부 AI컴퓨팅 인프라 공급계약을 체결해 연간 매출 규모를 크게 웃도는 수주를 확보했으나, 분기별 손익은 여전히 등락을 반복하고 있다.",
+  "en": "DataSolution secured a July 2026 supply contract with Samsung SDS worth roughly KRW 438.1 billion for a government AI computing infrastructure program, a figure far exceeding its annual revenue scale, even as quarterly earnings continue to swing between profit and loss."
  },
  "keypoints": [
   {
-   "ko": "데이터이쿠 '2026 APJ 올해의 혁신 파트너' 수상 및 주요 카드사 생성형 AI 플랫폼 수주로 AI 사업이 실증 단계에 진입",
-   "en": "Dataiku '2026 APJ Innovator Partner of the Year' award and generative AI platform win at a major credit card issuer confirm AI business entry into production stage"
+   "ko": "2026년 7월 7일 삼성SDS를 계약상대방으로 정보통신산업진흥원(NIPA) 'AI컴퓨팅자원 활용기반 강화사업'에 외산 GPU서버 등 AI인프라 제품을 공급하는 4,381억원 규모 계약을 체결(2025년 매출의 422%, 계약기간 2031년 12월까지).",
+   "en": "On July 7, 2026, the company signed a KRW 438.1 billion supply contract with Samsung SDS for NIPA's AI computing infrastructure enhancement program, equal to 422% of 2025 revenue, running through December 2031."
   },
   {
-   "ko": "2026Q1 매출 약 ₩315억으로 전년 동기(₩158억) 대비 약 두 배 증가, 영업손실도 -₩107억으로 전년 동기(-₩309억) 대비 큰 폭 축소되며 모멘텀 개선",
-   "en": "Q1 2026 revenue roughly doubled YoY to ~₩31.5B, while the operating loss narrowed substantially from -₩3.09B to -₩1.07B, signaling improved business momentum"
+   "ko": "2025년 연결 매출 1,038억원, 영업이익 12.2억원(영업이익률 1.2%), 순이익 10.5억원으로 2024년(영업이익 0.6억원) 대비 이익이 회복됐다.",
+   "en": "2025 consolidated revenue was KRW 103.8 billion with operating profit of KRW 1.2 billion (1.2% margin) and net profit of KRW 1.0 billion, an improvement from 2024's near-breakeven operating profit of KRW 0.06 billion."
   },
   {
-   "ko": "부채비율 2023년 136.1% → 2025년 94.3%로 단계적 개선, 재무 구조 건전화 진행 중",
-   "en": "Debt-to-equity ratio progressively improved from 136.1% in 2023 to 94.3% in 2025, reflecting ongoing balance sheet repair"
+   "ko": "2026년 1분기 영업손실(-10.7억원) 이후 2분기 영업이익 12.5억원, 순이익 14.2억원으로 재차 흑자로 돌아서는 등 분기별 변동성이 이어지고 있다.",
+   "en": "After an operating loss of KRW 1.07 billion in Q1 2026, the company swung back to a KRW 1.25 billion operating profit and KRW 1.42 billion net profit in Q2 2026, underscoring continued quarter-to-quarter volatility."
   },
   {
-   "ko": "Q4 이익 집중 계절성 구조 지속(2025년 Q4 영업이익 ₩44억이 연간 영업이익 ₩12억 초과), 2025년 영업현금흐름 마이너스 전환으로 단기 운전자본 압박",
-   "en": "Extreme Q4 earnings concentration persists (2025 Q4 operating profit of ₩4.36B exceeded the full-year ₩1.22B); 2025 operating cash flow turned negative, flagging working capital pressure"
+   "ko": "2025년 영업활동현금흐름은 -17.1억원으로, 회계상 이익 전환에도 현금창출력은 오히려 마이너스를 기록했다.",
+   "en": "2025 operating cash flow was negative at KRW -1.71 billion, meaning cash generation lagged behind the accounting profit turnaround."
   },
   {
-   "ko": "xInfinity(AI/ML Ops 포털)·KoreaPlus AI Coach(IBM watsonx.ai 기반) 출시로 자체 소프트웨어 비중 확대 시도 중",
-   "en": "New proprietary software launches—xInfinity (AI/ML Ops portal) and KoreaPlus AI Coach (IBM watsonx.ai-based)—signal an effort to expand higher-margin solution revenue"
+   "ko": "부채비율은 2023년 136.1%에서 2025년 94.3%로 점차 낮아지는 흐름을 보이고 있다.",
+   "en": "The debt ratio has trended down from 136.1% in 2023 to 94.3% in 2025."
   }
  ],
  "business": {
-  "ko": "데이타솔루션은 2010년 오픈베이스에서 물적분할로 설립된 후 2016년 구 데이타솔루션을 흡수합병해 데이터 전문기업으로 재출범한 코스닥 상장사다. 사업은 ▲Data & AI ▲엔터프라이즈/인프라 ▲AX/DX ▲서비스 네 부문으로 구성된다. 엔터프라이즈/인프라 부문은 DELL EMC 스토리지·서버와 IBM 하드웨어를 금융·공공 기관에 공급하는 전통적 핵심 매출원이다. Data & AI 부문은 IBM SPSS 통계 패키지, Dataiku AI 플랫폼, 자체 빅데이터 솔루션(빅스테이션·KoreaPlus)을 공급하며, 2025년에는 AI/ML Ops 포털 '엑스인피니티(xInfinity)'와 IBM watsonx.ai 내재 'KoreaPlus AI Coach'를 추가 출시해 포트폴리오를 확장했다. AX/DX 부문은 생성형 AI·LLM 기반 프로세스 자동화 및 디지털 전환 컨설팅을 제공하며, 금융(은행·증권·카드사)·공공·제조 기업이 주요 고객이다. 서비스 부문은 IT 시스템 유지보수·위탁운영으로 안정적인 경상 수익을 창출한다. 금융기관은 민감 데이터 취급 특성상 인프라 공급처 교체 비용이 높아 기존 거래처에 대한 재계약 진입장벽이 형성돼 있다. IBM·Dataiku·Altair·SAS 등 다양한 글로벌 파트너십을 보유해 고객 수요 다변화에 대응하는 강점을 갖추고 있으며, 오픈베이스그룹 계열사(오픈인텔렉스·시큐웨이브 등)와 함께 공공·기업 IT 생태계 내 존재감을 유지하고 있다.",
-  "en": "Datasolution, listed on KOSDAQ, was established in 2010 via a physical spinoff from Openbase and re-emerged as a data-specialized enterprise in 2016 through the absorption of the original Datasolution entity. The business is organized into four segments: Data & AI, Enterprise/Infrastructure, AX/DX, and Services. The Enterprise/Infrastructure segment—supplying DELL EMC storage, servers, and IBM hardware to financial institutions and public agencies—anchors the traditional revenue base. The Data & AI segment offers IBM SPSS statistical software, the Dataiku AI platform, and proprietary analytics tools (BigStation, KoreaPlus), expanded in 2025 with the AI/ML Ops portal xInfinity and the IBM watsonx.ai-embedded KoreaPlus AI Coach. The AX/DX segment provides generative AI and LLM-driven process automation and digital transformation consulting, primarily serving financial clients (banks, brokerage firms, credit card companies), public institutions, and manufacturers. The Services segment generates stable recurring revenue through IT system maintenance and managed operations. Financial institution clients exhibit high switching costs due to the sensitive nature of their data, creating meaningful retention advantages for incumbent suppliers. The broad global partner portfolio—IBM, Dataiku, Altair, SAS—provides structural flexibility to address diverse client demands, while affiliates within the Openbase Group (Openintellecs, Secuwave) play complementary roles in the public and corporate IT ecosystem."
+  "ko": "데이타솔루션은 2010년 오픈베이스의 SI사업부문이 물적분할되어 설립된 뒤 2016년 옛 데이타솔루션을 합병하며 데이터 전문기업으로 재편됐다. 사업구조는 Data & AI, 엔터프라이즈/인프라, AX/DX, 서비스의 네 부문으로 구성되며, 컴퓨터 시스템 통합 자문·구축 서비스와 소프트웨어 개발·공급을 주력으로 한다. 기업 고객의 AI 도입을 지원하고 클라우드 기술과 데이터 기반 디지털 전환을 촉진하며 다양한 산업에 IT 서비스와 컨설팅을 제공한다. 주요 제품·서비스로는 정보 저장·관리용 하드웨어, 세계적 예측분석 도구 SPSS 및 자체 확장판인 KoreaPlus Statistics, 클라우드 마이그레이션과 애플리케이션 현대화, 하이브리드 클라우드·가상화 통합관리 플랫폼 등이 있다. 최근에는 AI 기술 연구를 통한 LLM 기반 애플리케이션 개발에 집중하면서 금융권 AX(AI 전환) 사업을 확대하고 있다. 2026년 7월에는 삼성SDS를 계약상대방으로 정보통신산업진흥원이 주관하는 사업에 외산 AI 인프라 제품을 공급하는 계약을 체결하며 공공 부문 AI 인프라 공급망에 참여했다. 국내 IT서비스 시장에서는 삼성SDS, LG CNS 같은 대형 SI 업체와 롯데이노베이트, 아시아나IDT, 폴라리스에이아이 등 유사 규모 사업자들이 경쟁하는 구도 속에서, 데이타솔루션은 데이터·AI 인프라 구축과 컨설팅에 특화된 중소형 IT서비스 사업자로 자리하고 있다. 고객군은 공공, 금융, 제조 등 다양한 산업에 걸쳐 있으며 금융권 비중 확대가 최근의 특징이다.",
+  "en": "DataSolution was established in 2010 through a spin-off of OpenBase's SI business division and was reorganized into a data specialist firm after merging with the former Data Solution in 2016. Its business is organized into four segments: Data & AI, Enterprise/Infrastructure, AX/DX, and Service, centered on computer system integration consulting and construction along with software development and supply. The company supports corporate clients' AI adoption and promotes cloud technology and data-driven digital transformation while providing IT services and consulting across multiple industries. Key products and services include hardware for information storage and management, the globally used predictive analytics tool SPSS along with its proprietary extension KoreaPlus Statistics, cloud migration and application modernization, and hybrid cloud and virtualization management platforms. More recently the company has concentrated on developing LLM-based applications through AI technology research while expanding its AX (AI transformation) business in the financial sector. In July 2026 it signed a contract as counterparty to Samsung SDS to supply imported AI infrastructure products for a program run by the National IT Industry Promotion Agency, entering the public-sector AI infrastructure supply chain. In Korea's IT services market, DataSolution operates as a mid-sized specialist in data and AI infrastructure and consulting amid competition between large system integrators such as Samsung SDS and LG CNS and similarly sized peers including Lotte Innovate, Asiana IDT, and Polaris AI. Its client base spans public, financial, and manufacturing sectors, with an expanding weight toward financial-sector clients recently."
  },
  "earnings": {
-  "ko": "2022년부터 2025년까지 연매출은 ₩99.1B→₩99.3B→₩110.1B→₩103.8B으로 성장 모멘텀이 뚜렷하지 않은 박스권 흐름을 보였다. 영업이익률은 2022년 2.7%를 정점으로 2023년 1.3%, 2024년 0.1%까지 하락했다가 2025년 1.2%로 부분 회복됐다. 2024년 영업이익이 ₩58M으로 급감한 것은 경기침체 국면에서 기업 IT 지출이 위축돼 하드웨어 납품과 신규 시스템 구축 수요가 동시에 감소한 결과였다. 2025년에는 AI 서버·인프라 수요 회복이 하드웨어 부문 매출을 지지해 연간 영업이익이 ₩1.2B으로 반등했으나, Q4 영업이익(₩4.4B) 단독으로 연간 합계를 초과할 만큼 계절성 이익 편중 구조가 지속됐다. 2026년 1분기 매출은 ₩31.5B으로 전년 동기(₩15.8B) 대비 약 두 배로 증가했고, 영업손실도 전년 동기(-₩3.1B)에서 -₩1.1B으로 대폭 개선됐다. 이는 2025년 1분기의 이례적 부진이 기저 효과를 형성한 가운데 AI 인프라 수요 회복이 겹친 결과로, 매출 대비 비용 레버리지 개선도 일정 부분 수반됐음을 시사한다. 재무 안정성 측면에서 부채비율은 2023년 136.1%에서 2025년 94.3%로 단계적으로 개선돼 구조적 건전화가 진행 중이다. 반면 2025년 영업현금흐름이 -₩1.7B으로 전환된 것은 단기 운전자본 부담이 확대됐음을 시사하며, 매출채권 회수 속도와 결제 주기가 주요 모니터링 포인트로 부각된다.",
-  "en": "Annual revenue moved in a ₩99.1–110.1 billion range from 2022 through 2025, showing limited directional growth momentum. Operating margins declined from a peak of 2.7% in 2022 to 1.3% in 2023 and near-breakeven 0.1% in 2024, before recovering to 1.2% in 2025. The 2024 collapse in operating profit to ₩58 million reflected a broad contraction in corporate IT spending, with hardware deliveries and new system integration projects declining simultaneously amid economic weakness. In 2025, recovery in AI server and infrastructure demand supported hardware revenues, lifting full-year operating profit back to ₩1.2 billion, though Q4 operating profit alone (₩4.36 billion) exceeded the full-year total—a stark illustration of seasonal earnings concentration. First-quarter 2026 revenue of ₩31.5 billion was roughly double the prior-year comparable (₩15.8 billion), and the operating loss narrowed dramatically from −₩3.09 billion to −₩1.07 billion. This improvement reflects a combination of an abnormally weak prior-year base, AI infrastructure demand recovery, and some improvement in cost leverage against revenue. On the balance sheet, the debt-to-equity ratio improved progressively from 136.1% in 2023 to 94.3% in 2025, reflecting structural deleveraging. Conversely, operating cash flow turned negative at −₩1.71 billion in 2025, signaling widening working capital pressure that warrants monitoring of receivables collection speed and payment cycles."
+  "ko": "2025년 연결 매출은 1,038억원으로 2024년 1,101억원에서 감소했으나, 영업이익은 12.2억원(영업이익률 1.2%)으로 2024년의 0.6억원(영업이익률 0.1%)에서 뚜렷하게 개선됐다. 순이익도 2024년 2.4억원에서 2025년 10.5억원으로 확대되며 이익 회복 흐름을 보였다. 다만 2022년 영업이익 26.6억원, 순이익 24.0억원과 비교하면 여전히 낮은 수준으로, 2023~2024년 이익이 크게 축소된 뒤 2025년 들어 일부 되돌림이 나타난 모습이다. 분기별로 보면 2025년 2분기 영업이익 3.4억원, 순이익 5.8억원을 기록한 뒤 3분기에는 영업손실 3.9억원, 순손실 2.1억원으로 적자 전환했고, 4분기에는 매출이 421.5억원으로 급증하며 영업이익 43.6억원, 순이익 35.7억원의 큰 흑자를 기록했다. 이는 공공·기업 IT 예산이 연말에 집중 집행되는 계절성과 관련된 것으로 해석된다. 이후 2026년 1분기에는 다시 영업손실 10.7억원, 순손실 9.4억원을 기록했으나 2분기에는 영업이익 12.5억원, 순이익 14.2억원으로 재차 흑자 전환하며 분기별 변동성이 반복되고 있다. 한편 2025년 영업활동현금흐름은 -17.1억원으로 회계상 이익 전환에도 현금창출은 부진했는데, 이는 대형 하드웨어 유통성 매출의 결제 구조나 재고·미수금 변동과 관련될 수 있다. 부채비율은 2022년 121.9%, 2023년 136.1%로 높아졌다가 2024년 111.4%, 2025년 94.3%로 점차 낮아지는 흐름을 보였다.",
+  "en": "2025 consolidated revenue came to KRW 103.8 billion, down from KRW 110.1 billion in 2024, but operating profit rose markedly to KRW 1.2 billion (1.2% margin) from just KRW 0.06 billion (0.1% margin) in 2024. Net profit also expanded from KRW 0.24 billion in 2024 to KRW 1.0 billion in 2025, reflecting a recovery trend. Still, both figures remain well below 2022 levels, when operating profit was KRW 2.66 billion and net profit KRW 2.40 billion, following a sharp profit contraction in 2023-2024 that only partially reversed in 2025. On a quarterly basis, operating profit of KRW 0.34 billion and net profit of KRW 0.58 billion in Q2 2025 gave way to an operating loss of KRW 0.39 billion and net loss of KRW 0.21 billion in Q3, before revenue surged to KRW 42.1 billion in Q4 alongside a large operating profit of KRW 4.36 billion and net profit of KRW 3.57 billion. This pattern appears linked to the seasonal concentration of public and corporate IT budget execution toward year-end. The company then posted another operating loss of KRW 1.07 billion and net loss of KRW 0.94 billion in Q1 2026, before swinging back to an operating profit of KRW 1.25 billion and net profit of KRW 1.42 billion in Q2 2026, illustrating recurring quarterly volatility. Meanwhile, 2025 operating cash flow was negative at KRW -1.71 billion despite the accounting profit turnaround, which may relate to payment terms on large hardware-heavy contracts or swings in inventory and receivables. The debt ratio rose from 121.9% in 2022 to 136.1% in 2023 before declining to 111.4% in 2024 and 94.3% in 2025."
  },
  "industry": {
-  "ko": "국내 기업 AI 전환 시장은 생성형 AI 기술 성숙, 금융권 정보계 고도화 수요, 공공기관 클라우드 의무화 정책 등을 배경으로 수요 기반이 확대되고 있다. 글로벌 AI 인프라 투자도 확장 국면으로, 오라클 클라우드 인프라 매출이 전년 대비 93% 급성장하는 등 주요 파트너사의 성장이 국내 리셀러·구축 파트너 생태계에도 간접 수혜를 창출하고 있다. 삼성SDS·SK C&C·LG CNS 등 대형 IT서비스 기업이 대규모 통합 프로젝트를 주도하는 반면, 데이타솔루션은 데이터 분석·AI 솔루션 특화 부문에서 중견 전문 기업으로서의 틈새 포지션을 유지하고 있다. 금융권의 AX 수요는 리스크 모델링·사기 탐지·고객 경험 개인화 분야에서 지속 증가하며, 금융 데이터 인프라 레퍼런스를 보유한 기업에 유리한 환경이 형성되고 있다. 다만 거시경제 불확실성 지속 시 중소기업 IT 예산이 위축될 수 있으며, 2024년과 같은 이익 급감 시나리오가 재현될 리스크는 상존한다. 공공 부문에서는 AI 바우처 사업, RISE 교육 프로그램 등 정부 주도 AI 확산 정책이 추가 수주 기회를 제공한다. 국내 AI 도입이 실험·검증 단계에서 생산 환경 확산 단계로 이동하는 시기가 도래하면, 실증 레퍼런스를 보유한 전문 파트너에 대한 수요가 점진적으로 강화될 것으로 예상된다.",
-  "en": "The domestic corporate AI transformation market is expanding on the back of generative AI technology maturation, financial-sector information system upgrade demand, and government-mandated cloud adoption for public institutions. Global AI infrastructure investment is also intensifying, with Oracle's cloud infrastructure revenue surging 93% year-over-year—growth at major partner platforms that creates indirect opportunities for Korean resellers and implementation partners. Large-scale SI providers such as Samsung SDS, SK C&C, and LG CNS dominate mega-deal pipelines, leaving Datasolution occupying a specialized niche as a mid-tier data analytics and AI solutions expert. Financial-sector AX demand in risk modeling, fraud detection, and customer experience personalization continues to grow, creating a favorable environment for companies with established financial data infrastructure references. Prolonged macroeconomic uncertainty, however, could compress IT budgets at small-to-mid sized clients, sustaining the risk of a profit-collapse scenario similar to 2024. On the public-sector side, government-led AI voucher programs and RISE educational initiatives offer incremental contract pipeline. As Korean AI adoption shifts from pilot and validation toward production-grade deployment, demand for specialized partners with proven implementation track records should gradually strengthen."
+  "ko": "한국 정부는 정보통신산업진흥원을 통해 'AI 컴퓨팅자원 활용기반 강화사업' 등 공공주도 AI 인프라 확충 프로그램을 추진하고 있으며, 삼성SDS 같은 클라우드서비스제공자(CSP)를 매개로 한 물품 공급 구조가 형성되고 있다. 신세계와 리플렉션AI가 추진하는 국내 AI데이터센터 프로젝트는 전력용량 250메가와트 규모로 기존 국내 AI데이터센터를 상회하는 수준으로 계획되는 등, 국내 AI데이터센터 투자 규모 자체가 확대되는 국면에 있다. 금융권에서는 AI 에이전트를 활용한 개인화 서비스, 운영 효율화, 리스크·사기 탐지 등을 중심으로 AI 전환(AX) 논의가 활발하며, 도메인 데이터를 안전한 AI 에이전트에 연결하는 역량이 경쟁력의 핵심으로 지목되고 있다. 다만 고성능 AI GPU에 대한 미국의 수출 통제와 관련 정책 변화는 공급망 전반의 변수로 남아있어, 외산 제품 유통을 기반으로 하는 사업자에게는 물량 확보의 불확실성으로 작용할 수 있다. 경쟁구도 측면에서는 삼성SDS, LG CNS 등 대형 SI 계열사가 AI 인프라 구축의 주도권을 쥐고 있고, 데이타솔루션과 같은 중소형 사업자는 이들의 협력사·유통 파트너로 참여하는 구조가 일반적이다. 이 때문에 정부 주도 사업의 물량이 커질수록 중소형 IT서비스 업체의 매출 기여도도 함께 확대될 수 있는 구조지만, 마진율은 상대적으로 낮은 유통형 사업의 특성을 갖는다.",
+  "en": "The Korean government, through the National IT Industry Promotion Agency, is advancing public-sector AI infrastructure expansion programs such as the AI Computing Resource Utilization Enhancement project, with a supply structure that channels products through cloud service providers such as Samsung SDS. Domestic AI data center investment itself is expanding, illustrated by a Shinsegae and Reflection AI data center project planned with power capacity of 250 megawatts, a scale exceeding existing or planned AI data centers in Korea. In the financial sector, discussion of AI transformation centers on AI agents for personalized service, operational efficiency, and risk and fraud detection, with the ability to connect proprietary domain data to secure AI agents identified as a key competitive factor. At the same time, US export controls and related policy shifts on high-performance AI GPUs remain a variable across the supply chain, creating potential uncertainty over product availability for distributors of imported hardware. Competitively, large system integrators such as Samsung SDS and LG CNS hold leadership in AI infrastructure buildout, with smaller players like DataSolution typically participating as partners or distributors within that structure. As a result, growth in government-led program volumes can lift revenue contribution for smaller IT service firms, even though such distribution-oriented business tends to carry relatively thin margins."
  },
  "outlook": {
-  "ko": "데이타솔루션은 2026년 데이터이쿠 'APJ 올해의 혁신 파트너' 수상을 통해 AI 플랫폼 사업 경쟁력을 대외적으로 인증받았다. 주요 카드사를 대상으로 한 생성형 AI 기반 플랫폼 구축 수주는 금융권 AX 사업의 첫 번째 가시적 레퍼런스로, 향후 유사 금융 기관 대상 추가 수주의 영업 자산이 될 전망이다. 자체 소프트웨어 측면에서는 AI/ML Ops 포털 '엑스인피니티(xInfinity)' 출시와 IBM watsonx.ai 기반 'KoreaPlus AI Coach' 제품화를 통해 라이선스·서비스 기반 경상 수익 창출 모델 강화를 추진하고 있다. 회사는 기술·인재·플랫폼 중심의 3대 전략 축을 기반으로 금융·제조·공공 등 전 산업군에 걸쳐 산업별 AI 전환 지원을 확대할 계획을 밝혔다. 충남대학교 RISE와의 항공우주·지리공간 AI 교육 협업은 공공기관·연구기관 네트워크 확장과 신규 파이프라인 형성에 기여하는 사례다. IBM, Dataiku 외에 Altair·SAS 등으로 글로벌 파트너십 다변화가 진행 중이어서 고객 커버리지 폭이 넓어지고 있다. 단기적으로는 2026년 Q2~Q4 수주 실적과 수익성 회복이 연간 이익 기조 유지의 핵심이며, 하드웨어 납품 외 소프트웨어·컨설팅 매출 비중이 어느 속도로 높아지는가가 마진 구조 개선의 핵심 변수로 작용할 것이다.",
-  "en": "Datasolution received external validation of its AI platform competitiveness through the Dataiku 'APJ 2026 Innovator Partner of the Year' recognition. The confirmed generative AI platform project win at a major credit card company is the first tangible financial-sector AX reference, positioning the company to pursue further wins among peer institutions. On the proprietary solutions side, the launch of the AI/ML Ops portal xInfinity and the commercial release of KoreaPlus AI Coach (IBM watsonx.ai-embedded) strengthen the recurring revenue model based on software licensing and professional services. Management has publicly articulated a three-pillar strategy—technology, talent, and platform—to broaden industry-specific AI transformation support across financial services, manufacturing, and the public sector. The aerospace and geospatial AI education collaboration with Chungnam National University's RISE program represents a public-sector and research-institution network expansion with pipeline creation potential. Partnership diversification with Altair and SAS alongside the IBM/Dataiku core is ongoing, broadening solution coverage. In the near term, Q2–Q4 2026 project wins and profitability recovery are the central conditions for sustaining annual earnings, while the pace at which software and consulting revenues displace hardware deliveries is the structural determinant of margin improvement."
+  "ko": "핵심 변수는 2026년 7월 체결한 삼성SDS 대상 4,381억원 규모 계약의 매출 인식 속도다. 계약금액은 2025년 매출의 422%에 달하며, 대금은 선급금 50%와 잔금 50%로 나뉘어 지급되고 계약기간은 2031년 12월까지로 설정돼 다년간 걸쳐 인식될 가능성이 있다. 판매·공급 방식이 외산 AI 인프라 제품의 판매 및 설치인 만큼, 실제 매출 반영 시점과 규모는 향후 분기 공시를 통해 확인이 필요하다. 과거 분기 실적에서 4분기에 매출과 이익이 집중되는 계절성이 뚜렷했던 점을 고려하면, 이번 대형 계약 역시 특정 분기에 인식이 몰릴 가능성을 배제할 수 없다. 회사는 AI 기술 연구를 통한 LLM 기반 애플리케이션 개발과 금융권 AX 사업 확대를 지속하고 있어, 신규 계약 외에도 금융권향 AI 전환 프로젝트 수주가 이어질지가 관전 포인트다. 아울러 충남대학교 RISE사업단과의 항공우주·지리공간 AI 교육 협력 사례처럼 산학협력을 통한 AI 역량 확장도 병행되고 있다.",
+  "en": "The key variable going forward is the pace at which revenue is recognized from the KRW 438.1 billion contract signed with Samsung SDS in July 2026. The contract value equals 422% of 2025 revenue, with payment split evenly between an advance and a final installment, and the contract period extends to December 2031, suggesting recognition could be spread across multiple years. Since the delivery method involves sales and installation of imported AI infrastructure products, the actual timing and scale of revenue recognition will need to be confirmed through upcoming quarterly disclosures. Given the pronounced seasonality seen historically, with revenue and profit concentrated in the fourth quarter, it cannot be ruled out that this large contract will also see recognition concentrated in particular quarters. The company continues to pursue LLM-based application development through AI technology research and expansion of its financial-sector AX business, making additional order wins in financial AI transformation projects a point to watch. In parallel, industry-academia collaboration such as the aerospace and geospatial AI education program with Chungnam National University's RISE program reflects ongoing efforts to build AI capabilities."
  },
  "valuation_comment": {
-  "ko": "최근 12개월 합산 순이익은 약 ₩30억 수준으로, 적자에 가까웠던 2024년 대비 이익이 크게 회복됐다. 주당순이익(EPS) ₩186, 주당순자산(BPS) ₩2,129 기준으로 현재 주가는 순자산 대비 상당한 프리미엄 구간에 위치하며, 이는 AI·AX 사업의 성장 기대가 선반영된 것으로 해석된다. 국내 IT서비스·소프트웨어 업종의 역사적 PBR 거래 밴드(대체로 0.5~1.5배 수준)와 비교할 때 현재 프리미엄은 높은 편으로, AI 수주 레퍼런스 누적과 마진 구조 개선이 실제 수치로 확인되는 속도가 밸류에이션 정당화의 핵심 조건이다. 연간 배당은 지급되지 않아(DPS 0원) 배당 매력은 부재하며, 총수익의 원천은 시세 차익에 집중된다. 연간 이익 대부분이 Q4에 집중되는 구조상 단일 분기 수익성 지표로 연간 이익력을 판단하면 왜곡이 생길 수 있으므로, 반기·연간 단위 누적 실적으로 추세를 확인하는 것이 필요하다.",
-  "en": "The aggregate net profit over the latest twelve-month window stands at approximately ₩3.0 billion, a substantial recovery from near-breakeven conditions in 2024. With EPS of ₩186 and BPS of ₩2,129, the current share price is trading at a meaningful premium to book value, reflecting the market's pricing of AI and AX growth expectations ahead of confirmed earnings. Compared to the historical PBR trading range for domestic IT services and software peers (broadly 0.5–1.5x), the current premium is elevated, making the pace of AI reference win accumulation and tangible margin structure improvement the central conditions for valuation justification. No dividend was paid in the most recent fiscal year (DPS: ₩0), leaving capital appreciation as the sole source of return for investors. Given that most annual profit is concentrated in Q4, assessing full-year earning power from any single quarter—particularly Q1—risks significant distortion; cumulative semi-annual and annual trends provide a more reliable basis for tracking the earnings trajectory."
+  "ko": "현재 주가는 과거 거래 밴드에서 상단에 가까운 배수로 거래되는 모습을 보이며, 순자산가치 대비로도 프리미엄이 존재하는 구간에 위치한다. 배당은 최근 지급 내역이 없어 배당수익률 측면의 매력은 업종 내에서 두드러지지 않는 편이다. 이익 측면에서는 2024년 거의 손익분기에 근접했던 수준에서 2025년 들어 회복 방향으로 전환됐고, 2026년에도 분기별로 적자와 흑자가 교차하는 흐름이 이어지고 있다. 대형 공공 AI 인프라 계약이 향후 몇 개 분기의 매출과 이익 인식에 어떻게 반영되는지에 따라 밸류에이션에 대한 시장의 평가도 달라질 수 있다. 이 계약이 유통형 사업 특성상 상대적으로 낮은 마진을 수반한다는 점은 이익 개선의 속도를 가늠하는 데 함께 고려할 요소다.",
+  "en": "The current share price trades at a multiple close to the upper end of its historical range, and it also sits in a range that reflects a premium to net asset value. With no recent dividend payment history, the stock's appeal on a dividend yield basis is not particularly notable within its sector. On the earnings side, profitability moved from a level close to breakeven in 2024 toward a recovery direction in 2025, and 2026 has continued to show quarters alternating between losses and profits. How the large public-sector AI infrastructure contract feeds into revenue and profit recognition over the coming quarters could influence how the market assesses valuation going forward. The fact that this contract, given its distribution-type nature, likely carries relatively thin margins is a factor to weigh alongside the pace of any earnings improvement."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI·AX 수주 실증과 파트너 생태계 경쟁력",
-    "en": "AI/AX Contract Proof Points and Partner Ecosystem Competitiveness"
+    "ko": "매출 규모를 뛰어넘는 대형 수주 확보",
+    "en": "Large Order Exceeding Annual Revenue Scale"
    },
    "body": {
-    "ko": "주요 카드사 생성형 AI 기반 플랫폼 수주와 데이터이쿠 'APJ 2026 혁신 파트너' 수상은 AI 사업이 개념 단계를 넘어 실제 수익화 단계로 진입하고 있음을 입증한다. IBM·Dataiku·Altair·SAS를 아우르는 글로벌 파트너 포트폴리오는 금융·제조·공공 등 다양한 산업의 AI 수요에 유연하게 대응할 수 있는 구조적 강점이다. 금융권 내 실사례 레퍼런스가 축적될수록 유사 기관 대상 추가 수주 가능성이 높아지는 선순환 구조가 기대된다.",
-    "en": "The confirmed generative AI platform win at a major credit card company and the Dataiku APJ 2026 Innovator Partner award demonstrate that the AI business is progressing from concept to revenue generation. The broad global partner portfolio spanning IBM, Dataiku, Altair, and SAS provides structural flexibility to address AI demand across financial services, manufacturing, and public sectors. Accumulation of financial-sector reference wins is expected to reinforce a virtuous cycle of incremental new opportunities among peer institutions."
+    "ko": "2026년 7월 체결한 삼성SDS 대상 4,381억원 계약은 2025년 매출의 422%에 달하는 규모로, 2031년까지 다년간에 걸쳐 매출 기반을 제공할 수 있다. 선급금 50% 지급 조건은 초기 현금흐름에도 일부 긍정적으로 작용할 수 있다. 정부 주도 AI 인프라 프로그램에 참여함으로써 공공 부문 레퍼런스도 확보하게 됐다.",
+    "en": "The KRW 438.1 billion contract signed with Samsung SDS in July 2026 amounts to 422% of 2025 revenue, potentially providing a revenue base over multiple years through 2031. The condition of a 50% advance payment could also have a partially positive effect on initial cash flow. Participation in the government-led AI infrastructure program has also secured a public sector reference."
    }
   },
   {
    "title": {
-    "ko": "재무 구조 개선과 부채 부담 경감",
-    "en": "Balance Sheet Improvement and Reduced Debt Burden"
+    "ko": "금융권 AX·LLM 애플리케이션 확대",
+    "en": "Expansion into Financial AX and LLM Applications"
    },
    "body": {
-    "ko": "부채비율이 2023년 136.1%에서 2025년 94.3%로 꾸준히 하락하며 재무 레버리지가 낮아지고 있다. 부채 감축은 이자 비용 부담 완화와 재무 위험 경감으로 이어져 중장기적 투자 여력을 높일 수 있다. 안정화된 재무 기반은 AI 사업 확장을 위한 신규 투자 집행이나 파트너십 체결 시 협상 역량을 뒷받침하는 요인이다.",
-    "en": "The debt-to-equity ratio declined steadily from 136.1% in 2023 to 94.3% in 2025, reducing financial leverage. Debt reduction translates into lower interest cost burdens and diminished financial risk, potentially expanding investment capacity over the medium term. A stabilized financial base enhances negotiating position when executing new investments for AI business expansion or entering strategic partnerships."
+    "ko": "회사는 AI 기술 연구를 통한 LLM 기반 애플리케이션 개발에 집중하며 금융권 AX 사업을 확대하고 있다. 금융권은 개인화 서비스, 운영 효율화, 리스크 탐지 등에서 AI 에이전트 도입을 늘리는 추세로, 관련 수요 확대가 지속될 경우 신규 프로젝트 수주로 이어질 수 있다. 컨설팅·서비스 성격의 사업은 하드웨어 유통보다 마진 구조가 나을 수 있다.",
+    "en": "The company is focusing on developing LLM-based applications through AI technology research and is expanding its AX business in the financial sector. The financial sector is increasingly adopting AI agents for personalized services, operational efficiency, and risk detection, and continued growth in related demand could lead to new project orders. Consulting and service-oriented businesses may have a better margin structure than hardware distribution."
    }
   },
   {
    "title": {
-    "ko": "자체 소프트웨어 비중 확대를 통한 마진 개선 경로",
-    "en": "Proprietary Software Expansion as a Structural Path to Margin Improvement"
+    "ko": "재무구조 개선 흐름",
+    "en": "Improving Balance Sheet Trend"
    },
    "body": {
-    "ko": "xInfinity와 KoreaPlus AI Coach 출시는 단순 리셀러 모델에서 자체 소프트웨어·구독형 수익 모델로 전환하려는 전략적 시도다. 소프트웨어 라이선스 및 반복 서비스 수익은 하드웨어 납품 대비 마진이 높고 계절성도 상대적으로 균등해, 이 비중이 높아질수록 연간 수익성 안정성이 개선된다. 빅데이터 러닝센터를 통한 교육 사업은 고객 인게이지먼트를 심화하고 솔루션 업셀 기회를 창출하는 보완적 역할을 한다.",
-    "en": "The launch of xInfinity and KoreaPlus AI Coach represents a strategic effort to transition from a reseller-centric model toward proprietary software and recurring revenue streams. Software licensing and subscription revenues carry higher margins and more even seasonality compared to hardware deliveries, meaning that an increasing proportion of these revenues would structurally improve annual earnings stability. The Bigdata Learning Center education business deepens customer engagement and creates upsell pathways into higher-margin solution contracts."
+    "ko": "부채비율이 2023년 136.1%에서 2025년 94.3%로 낮아지는 흐름을 보였다. 2022~2025년 자기자본도 313억원에서 352억원으로 꾸준히 늘었다. 다만 이 개선이 지속될지는 향후 대형 계약 수행에 따른 자금 부담 변화를 함께 지켜봐야 한다.",
+    "en": "The debt ratio showed a trend of declining from 136.1% in 2023 to 94.3% in 2025. Equity capital also steadily increased from KRW 31.3 billion to KRW 35.2 billion between 2022 and 2025. However, whether this improvement will continue needs to be monitored together with changes in the funding burden from executing future large-scale contracts."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "저마진·Q4 이익 집중 구조의 지속",
-    "en": "Persistent Thin Margins and Extreme Q4 Earnings Concentration"
+    "ko": "분기별 실적 변동성 지속",
+    "en": "Persistent Quarter-to-Quarter Earnings Volatility"
    },
    "body": {
-    "ko": "2022~2025년 연간 영업이익률이 0.1~2.7% 범위에서 등락하는 박한 마진 구조가 4년째 이어지고 있다. 2025년 Q4 영업이익(₩4.4B)이 연간 영업이익(₩1.2B)을 초과할 만큼 계절성이 극단적으로, 2026년에도 이 구조가 반복될 가능성이 높다. 주요 납품·프로젝트 완료가 단일 분기에 집중되는 구조에서는 수주 지연이나 납품 일정 이슈 발생 시 연간 이익 달성 전체가 위협받는 구조적 취약성이 상존한다.",
-    "en": "Annual operating margins have fluctuated in a thin 0.1–2.7% band for four consecutive years from 2022 through 2025. In 2025, Q4 operating profit of ₩4.36 billion exceeded the full-year total—an extreme illustration of seasonal concentration that is likely to persist in 2026. This structure creates a persistent vulnerability where any delivery delay or project scheduling issue in Q4 can jeopardize the entire year's earnings achievement."
+    "ko": "2025년 3분기와 2026년 1분기에 각각 영업손실을 기록한 뒤 다음 분기에 흑자로 전환하는 등, 최근 다섯개 분기 동안 손익이 반복적으로 뒤바뀌었다. 4분기에 매출과 이익이 몰리는 계절성이 강해 나머지 분기의 실적만으로 연간 추세를 가늠하기 어렵다. 대형 신규 계약 역시 특정 분기에 인식이 집중될 가능성이 있어 변동성이 더 커질 수 있다.",
+    "en": "After recording operating losses in Q3 2025 and Q1 2026 respectively, followed by a turnaround to profit in the subsequent quarter, profit and loss have repeatedly reversed over the past five quarters. Strong seasonality with revenue and profit concentrated in Q4 makes it difficult to gauge the annual trend from the performance of the remaining quarters alone. Large new contracts are also likely to be recognized in specific quarters, which could increase volatility further."
    }
   },
   {
    "title": {
-    "ko": "매출 성장 정체와 리셀러 마진 압박 리스크",
-    "en": "Revenue Growth Stagnation and Reseller Margin Compression Risk"
+    "ko": "이익 대비 저조한 현금창출력",
+    "en": "Cash Generation Lagging Behind Reported Profit"
    },
    "body": {
-    "ko": "연매출이 4개년 연속 ₩99~110B 박스권에서 벗어나지 못해, AI 전환 수요 성장이 아직 매출 규모 확대로 이어지지 않고 있다. 삼성SDS 등 대형 SI 기업과의 경쟁 심화와 글로벌 벤더의 직판 채널 강화는 리셀러 마진에 추가 하방 압력을 줄 수 있다. AI 솔루션 매출이 하드웨어 납품을 대체하는 속도가 기대에 미치지 못할 경우 현재 프리미엄 수준의 밸류에이션 정당화가 어려워질 수 있다.",
-    "en": "Annual revenue has remained stuck in a ₩99–110 billion range for four consecutive years, indicating that AI transformation demand has yet to translate into top-line scale expansion. Intensifying competition from large-scale SI players and global vendors strengthening direct-sales channels could apply additional downward pressure on reseller margins. If AI solution revenue displaces hardware supply more slowly than expected, sustaining the current valuation premium may prove difficult to justify."
+    "ko": "2025년 영업활동현금흐름은 -17.1억원으로, 같은 해 순이익 10.5억원을 기록했음에도 현금은 오히려 순유출됐다. 이는 대형 하드웨어 유통성 매출의 결제조건이나 재고·미수금 변동과 연관될 수 있다. 신규 대형계약 수행 과정에서도 유사한 현금흐름 부담이 재현될 가능성을 배제할 수 없다.",
+    "en": "Operating cash flow in 2025 was -KRW 1.71 billion, and despite recording net income of KRW 1.05 billion in the same year, cash actually flowed out on a net basis. This may be related to payment terms for large hardware distribution-type revenue or changes in inventory and receivables. A similar cash flow burden cannot be ruled out from recurring during the execution of new large-scale contracts."
    }
   },
   {
    "title": {
-    "ko": "영업현금흐름 악화와 운전자본 리스크",
-    "en": "Deteriorating Operating Cash Flow and Working Capital Risk"
+    "ko": "낮은 마진의 유통형 사업 구조",
+    "en": "Thin-Margin Distribution-Type Business Model"
    },
    "body": {
-    "ko": "2025년 영업현금흐름이 -₩1.7B으로 전환된 것은 매출채권 증가, 재고 또는 선금 지출 확대 등 운전자본 부담이 늘었음을 시사한다. 하드웨어 납품 비중이 높은 사업 구조에서는 대금 회수 지연 시 현금 흐름이 급격히 악화될 수 있다. 현금흐름 악화가 지속될 경우 단기 차입 증가 또는 유동성 압박으로 이어질 수 있으며, 이는 부채비율 개선 추세에 역행하는 요인이 된다.",
-    "en": "The 2025 operating cash flow turning negative at −₩1.71 billion signals widening working capital pressure, likely from receivables growth, inventory buildup, or advance payments. In a business heavily weighted toward hardware deliveries, delayed payment collection can cause rapid cash flow deterioration. Sustained negative operating cash flows could drive higher short-term borrowing or liquidity stress, reversing the improving trend in the balance sheet structure."
+    "ko": "이번 삼성SDS 대상 계약은 외산 AI 인프라 제품의 판매 및 설치 방식으로 진행돼, 매출 규모는 크지만 마진율은 제한적일 가능성이 있다. 영업이익률은 2022년 2.7%에서 2024년 0.1%까지 낮아졌다가 2025년 1.2%로 일부 회복하는 데 그쳤다. 대형 SI사와의 협력 구조상 가격 결정력이 제한적일 수 있다는 점도 고려할 부분이다.",
+    "en": "This contract with Samsung SDS is being carried out in the form of sales and installation of foreign AI infrastructure products, so while the revenue scale is large, the margin rate may be limited. The operating margin declined from 2.7% in 2022 to 0.1% in 2024, only partially recovering to 1.2% in 2025. It should also be considered that pricing power may be limited given the structure of cooperation with large SI companies."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "글로벌 파트너 의존 및 유통 구조 변화 리스크",
-    "en": "Global Partner Dependency and Distribution Structure Change Risk"
+    "ko": "계약 실행 리스크",
+    "en": "Contract Execution Risk"
    },
    "body": {
-    "ko": "DELL EMC·IBM 등 글로벌 벤더 제품 유통과 라이선스 재판매가 매출의 상당 부분을 차지한다. 파트너사가 유통 구조를 개편하거나 직판 채널을 강화할 경우 리셀러 마진이 즉각 압박받을 수 있으며, 제품 라인업 단종이나 계약 조건 변경 시 대체 솔루션 확보 기간 동안 매출 공백이 발생할 수 있다. Dataiku·Altair·SAS 등으로 파트너 다변화가 진행 중이나, 단기 내 특정 벤더 의존도를 크게 낮추기는 쉽지 않다.",
-    "en": "Revenue is substantially dependent on distribution and license resale of DELL EMC and IBM products. If major partners restructure their distribution models or expand direct-sales channels, reseller margins could come under immediate pressure; product line discontinuations or contract term changes could also create revenue gaps during transitions to alternative solutions. Diversification toward Dataiku, Altair, and SAS is underway, but materially reducing dependence on core vendors in the near term remains challenging."
+    "ko": "4,381억원 계약은 외산 GPU 서버 등의 판매·설치를 포함해 해외 공급망 상황에 영향을 받을 수 있다. 미국 정부는 고성능 AI GPU의 일부 국가 수출을 제한하고 있어, 관련 정책 변화가 제품 확보 일정에 영향을 줄 가능성이 있다. 계약 기간이 2031년까지로 길어 중간에 발주 규모나 일정이 조정될 여지도 있다.",
+    "en": "The KRW 438.1 billion contract includes the sale and installation of foreign GPU servers, among other items, and may be affected by the global supply chain situation. As the U.S. government restricts exports of high-performance AI GPUs to certain countries, related policy changes could potentially affect the timeline for securing products. As the contract period is long, extending to 2031, there is also room for adjustments in order volume or schedule in the interim."
    }
   },
   {
    "cat": {
-    "ko": "거시경제·IT 지출 사이클 리스크",
-    "en": "Macroeconomic and IT Spending Cycle Risk"
+    "ko": "수익성 변동 리스크",
+    "en": "Profitability Volatility Risk"
    },
    "body": {
-    "ko": "2024년 사례처럼 경기침체 국면에서 기업 IT 투자가 위축되면 하드웨어 납품과 신규 프로젝트가 동시에 감소하며 영업이익이 급격히 축소될 수 있다. 글로벌 무역 분쟁, 국내 내수 부진, 관세 리스크 등이 AI 투자 확대 기대를 상쇄할 경우 2024년과 유사한 이익 급감 시나리오가 재현될 수 있다. 중소기업 고객 비중이 높을수록 거시경기 민감도가 크게 나타나 경기 하강 시 실적 변동폭이 확대될 수 있다.",
-    "en": "As observed in 2024, a deteriorating macroeconomic environment that prompts businesses to cut IT investment budgets can simultaneously reduce hardware deliveries and new project starts, rapidly compressing operating profit. If global trade disputes, domestic consumption weakness, or tariff risks offset AI investment momentum, a profit collapse similar to 2024 could recur. Higher exposure to small-to-mid sized enterprise clients amplifies macroeconomic sensitivity, potentially widening earnings volatility during downturns."
+    "ko": "영업이익률이 2022년 2.7%에서 2024년 0.1%까지 급락했던 사례처럼, 하드웨어 유통 비중이 큰 사업 구조에서는 마진이 쉽게 흔들릴 수 있다. 2025년에도 영업이익률은 1.2%에 그쳐 절대적인 이익 규모는 여전히 크지 않다. 대형 계약의 마진 수준이 낮게 형성될 경우 매출 성장에도 이익 개선 속도는 더딜 수 있다.",
+    "en": "As seen in the case of the operating margin plunging from 2.7% in 2022 to 0.1% in 2024, margins can easily fluctuate in a business structure with a large proportion of hardware distribution. Even in 2025, the operating margin only reached 1.2%, so the absolute profit scale remains not large. If the margin level of large contracts is set low, the pace of profit improvement may be slow even amid revenue growth."
    }
   },
   {
    "cat": {
-    "ko": "대형 프로젝트 수주 실패·일정 지연 리스크",
-    "en": "Large Project Win Failure and Delivery Delay Risk"
+    "ko": "공공·연말 예산 의존 리스크",
+    "en": "Public-Sector and Year-End Budget Dependence Risk"
    },
    "body": {
-    "ko": "연간 이익의 대부분이 Q4 대형 납품·프로젝트 완료에 의존하는 구조에서 핵심 입찰 탈락이나 프로젝트 지연은 연간 실적 전체를 훼손할 수 있다. 경쟁 심화에 따른 입찰 가격 인하 압력은 수주 마진을 추가로 하락시킬 수 있다. AI 사업 확장 단계에서 단일 프로젝트 규모가 커질수록 개별 프로젝트의 성패가 분기·연간 이익에 미치는 영향도 비례적으로 확대된다.",
-    "en": "Given that most annual profit is concentrated in Q4 large-scale deliveries and project completions, failure to win key bids or a material project delay could undermine the full year's earnings. Competitive pricing pressure in tender processes could further erode project-level margins. As the AI business scales and individual project sizes grow, the concentration risk associated with the success or failure of single contracts increases in proportion to their earnings impact."
+    "ko": "2025년 4분기 매출이 421.5억원으로 다른 분기 대비 크게 늘었던 사례에서 보듯, 공공·기업 IT 예산의 연말 집중 집행에 실적이 좌우되는 경향이 있다. 정부 예산 편성이나 사업 집행 일정이 변경될 경우 특정 분기 실적에 즉각적인 영향을 줄 수 있다. 대형 SI사를 통한 간접 공급 구조이기 때문에 최종 발주처의 예산·정책 변화에도 노출돼 있다.",
+    "en": "As shown in the case of Q4 2025 revenue significantly increasing to KRW 42.15 billion compared to other quarters, performance tends to be influenced by the year-end concentration of public and corporate IT budget execution. Changes in government budget allocation or project execution schedules could immediately affect performance in specific quarters. Due to the indirect supply structure through large SI companies, the company is also exposed to budget and policy changes at the final ordering organization."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순",
-    "en": "Mid-August 2026"
+    "ko": "2026년 11월 중(3분기 실적 발표)",
+    "en": "Around November 2026 (Q3 earnings release)"
    },
    "what": {
-    "ko": "2026년 2분기 실적 발표 확인. 매출 성장 지속 여부와 영업이익 흑자 전환 여부가 핵심이며, 전 분기 대비 원가율 개선이 동반됐는지가 연간 이익 기조를 판단하는 선행 지표다.",
-    "en": "Q2 2026 earnings release. Key checks: continuation of revenue growth and return to operating profit; whether cost ratio improvement accompanied higher revenue is a leading indicator of full-year profitability trajectory."
+    "ko": "삼성SDS 대상 4,381억원 계약의 매출 인식이 3분기 실적에 반영되기 시작했는지, 반영 규모와 마진 수준을 확인할 필요가 있다.",
+    "en": "Check whether revenue from the KRW 438.1 billion Samsung SDS contract has begun to appear in Q3 results, and at what scale and margin."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 수시",
-    "en": "H2 2026 (ongoing)"
+    "ko": "2026년 4분기(연말 결산 시즌)",
+    "en": "Q4 2026 (year-end reporting season)"
    },
    "what": {
-    "ko": "금융권 AX 프로젝트 및 공공 AI 사업 관련 DART 수주 공시 모니터링. 단건 계약 규모와 누적 레퍼런스 건수가 AI 사업 성장 속도를 가늠하는 핵심 선행 지표다.",
-    "en": "Monitor DART disclosures for financial-sector AX and public AI project contract announcements. Individual deal size and cumulative reference counts are key leading indicators of AI business growth velocity."
+    "ko": "과거 4분기에 매출과 이익이 집중되던 계절성이 이번에도 재현되는지, 대형 계약의 추가 인식 규모를 살펴볼 시점이다.",
+    "en": "Watch whether the historical Q4 seasonality of concentrated revenue and profit repeats, and how much additional recognition from the large contract appears."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 4분기 중",
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 발표. Q3 손익 흐름과 Q4 수주 파이프라인 가시성이 연간 이익 목표 달성 가능성을 판단하는 분기점이 된다.",
-    "en": "Q3 2026 earnings release. The Q3 profit-loss trend and visibility into the Q4 project pipeline are the inflection point for assessing full-year earnings target achievability."
+    "ko": "고성능 AI GPU에 대한 미국의 수출 통제 정책 변화 여부가 외산 제품 조달 일정에 영향을 줄 수 있어 관련 뉴스를 확인해야 한다.",
+    "en": "Monitor developments in US export control policy on high-performance AI GPUs, as changes could affect procurement schedules for imported products."
    }
   },
   {
    "when": {
-    "ko": "2027년 3월",
-    "en": "March 2027"
+    "ko": "2027년 초(2026년 연간 실적 공시 시점)",
+    "en": "Early 2027 (2026 full-year results disclosure)"
    },
    "what": {
-    "ko": "2026 사업연도 연간 실적 확정 및 DART 사업보고서 공시. 영업이익률 추이, 영업현금흐름 회복 여부, 자체 소프트웨어(KoreaPlus·xInfinity) 매출 비중 변화가 핵심 점검 항목이다.",
-    "en": "2026 full-year results confirmation and DART annual report filing. Key review items: operating margin trajectory, operating cash flow recovery, and the change in proprietary software (KoreaPlus, xInfinity) revenue mix."
-   }
-  },
-  {
-   "when": {
-    "ko": "수시 모니터링",
-    "en": "Ongoing"
-   },
-   "what": {
-    "ko": "IBM·Dataiku·DELL EMC 등 주요 파트너사의 유통 정책·직판 채널 전략 변화 점검. 파트너 계약 조건 변경이나 직판 강화 공시는 매출 마진에 즉각적인 영향을 줄 수 있어 정기적 확인이 필요하다.",
-    "en": "Ongoing monitoring of distribution policy and direct-sales channel strategy changes at key partners including IBM, Dataiku, and DELL EMC. Announced changes to partner contract terms or expanded direct-sales initiatives can have immediate implications for reseller margins and require regular tracking."
+    "ko": "2026년 연간 실적에서 대형 계약의 매출·이익 기여도가 구체적으로 드러날 것으로 보이며, 영업활동현금흐름이 개선되는지도 함께 점검할 부분이다.",
+    "en": "The 2026 full-year results should reveal more concretely how the large contract contributed to revenue and profit, while operating cash flow trends should also be checked."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "데이타솔루션은 국내 AI·데이터 전환 수요의 구조적 성장 국면에서 글로벌 파트너 생태계와 자체 솔루션을 결합한 포지셔닝으로 금융·공공 부문 AX 수주를 실증하고 있다. 데이터이쿠 APJ 혁신 파트너 수상과 카드사 생성형 AI 플랫폼 수주는 AI 사업이 실증 단계로 진입했음을 보여주는 구체적 신호다. 2026년 1분기 매출이 전년 동기 대비 약 두 배로 증가하고 영업손실이 대폭 축소된 것은 사업 모멘텀 회복의 명확한 증거로 주목할 만하다. 그러나 4개년 연매출 박스권 정체, 0.1~2.7%의 박한 영업이익률, Q4 집중 이익 구조, 2025년 영업현금흐름 마이너스 전환 등 구조적 과제는 여전히 해소되지 않았다. 부채비율의 단계적 하락은 재무 건전성 개선을 보여주나, xInfinity·KoreaPlus AI Coach 등 자체 소프트웨어 매출 확대를 통한 마진 구조 개선이 실제 수치로 가시화되어야 프리미엄 구간의 밸류에이션에 대한 근거가 강해진다. 2026년 하반기 AI 프로젝트 수주 모멘텀과 Q2~Q4 수익성 회복 여부, 그리고 영업현금흐름 개선 여부가 향후 12개월 사이 핵심 관찰 변수다.",
-   "en": "Datasolution is demonstrating real AI transformation project wins in financial and public sectors by combining its global partner ecosystem with proprietary solutions, positioning itself within a structurally growing domestic AI and data transformation market. The Dataiku APJ Innovator Partner award and the generative AI platform win at a major credit card company are concrete signals that the AI business has entered a production-stage phase. The roughly twofold year-over-year revenue increase and materially narrowed operating loss in Q1 2026 provide clear evidence of business momentum recovery. Structural challenges, however, remain unresolved: four years of revenue range-bound stagnation, operating margins in a thin 0.1–2.7% band, extreme Q4 earnings concentration, and 2025 operating cash flow turning negative. While progressive deleveraging demonstrates an improving balance sheet, visible margin structure improvement driven by proprietary software revenue growth—through xInfinity and KoreaPlus AI Coach—is required before the premium valuation can be more firmly grounded. AI project pipeline momentum in H2 2026, the recovery of Q2–Q4 profitability, and the trajectory of operating cash flow are the central monitoring variables over the next twelve months."
+   "ko": "데이타솔루션은 2026년 7월 삼성SDS를 매개로 한 4,381억원 규모의 정부 AI 인프라 공급계약을 확보하며 연간 매출 규모를 크게 웃도는 수주를 쌓았다. 2025년에는 영업이익과 순이익이 전년 대비 회복됐고 부채비율도 낮아지는 흐름을 보였으나, 2025년 3분기와 2026년 1분기에 각각 영업손실을 기록하는 등 분기별 변동성은 여전하다. 영업활동현금흐름이 2025년 마이너스를 기록한 점은 회계상 이익과 현금창출력 사이의 괴리를 보여준다. 향후 관전포인트는 대형 계약의 매출·이익 인식 속도와 마진 수준, 그리고 금융권 AX·LLM 애플리케이션 사업의 추가 수주 여부다. 공공 예산 집행 일정과 해외 GPU 공급망 정책 변화 등 외부 변수에도 노출돼 있어, 다음 몇 개 분기의 공시를 통한 확인이 필요하다.",
+   "en": "DataSolution secured a KRW 438.1 billion government AI infrastructure supply contract via Samsung SDS in July 2026, adding an order book far exceeding its annual revenue scale. Operating and net profit recovered year-on-year in 2025 and the debt ratio trended lower, yet quarterly volatility persisted, with operating losses recorded in Q3 2025 and Q1 2026. Negative operating cash flow in 2025 highlights a gap between accounting profit and actual cash generation. Key points to watch going forward include the pace and margin level at which the large contract's revenue and profit are recognized, along with any additional order wins in the financial AX and LLM application business. The company also remains exposed to external variables such as public budget execution timing and shifts in overseas GPU supply chain policy, warranting confirmation through disclosures over the coming quarters."
   }
  },
  "sources": [
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A263800&cID=&MenuYn=Y&ReportGB=D&NewMenuID=Y&stkGb=701",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701&gicode=A263800",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A263800&cID=&MenuYn=Y&ReportGB=D&NewMenuID=103&stkGb=701",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=263800&cn=",
+  "https://www.datasolution.kr/info/enotice/26",
+  "https://www.k5.co.kr/stock/263800",
   "https://thevc.kr/datasolution",
-  "https://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=263800",
-  "https://finance.finup.co.kr/Stock/263800",
-  "https://www.valueline.co.kr/finance/summary/263800",
-  "https://m.ekn.kr/view.php?key=384179",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20230309001018&rcpno=20230309000630&orgid=F&tran=Y&langTpCd=0",
+  "http://www.thinkpool.com/itemanal/i/index.jsp?code=263800",
+  "https://www.kokstock.com/stock/item.asp?item_cd=263800",
+  "http://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=S7&gicode=A263800&cID=S7&MenuYn=N&ReportGB=D&NewMenuID=13&stkGb=701",
+  "https://paxnet.co.kr/tbbs/list?id=263800&tbbsType=L",
+  "https://www.datasolution.kr/main",
+  "https://kr.investing.com/equities/datasolution-earnings",
+  "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/eWVlS05LcE1nZ0pneGZtNzNRTlZKZz09/company_nm/(%EC%A3%BC)%EB%8D%B0%EC%9D%B4%ED%83%80%EC%86%94%EB%A3%A8%EC%85%98",
+  "https://littlebproject.com/stock/263800",
+  "https://www.osutla.com/%EB%8D%B0%EC%9D%B4%ED%83%80%EC%86%94%EB%A3%A8%EC%85%98-%EC%A3%BC%EA%B0%80-%EC%A0%84%EB%A7%9D-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%86%94%EB%A3%A8%EC%85%98/",
+  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=263800",
   "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A263800",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=263800",
   "https://jasoseol.com/companies/6698/insights",
-  "https://www.datasolution.kr/",
-  "https://www.investing.com/equities/datasolution",
-  "https://m.jobkorea.co.kr/company/16151959",
-  "https://m.thinkpool.com/item/263800",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1597883086791.pdf",
-  "https://www.cio.com/article/4184910/%ED%86%A0%ED%81%B0-%EC%95%84%EB%8B%8C-%EC%84%B1%EA%B3%BC%EC%97%90-%EA%B0%80%EA%B2%A9-%EB%A7%A4%EA%B8%B4%EB%8B%A4%EC%98%A4%EB%9D%BC%ED%81%B4%EC%9D%98-ai.html"
+  "https://littlebproject.com/stock/263800/406/48775"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "263800",
  "name": "데이타솔루션",
  "name_en": "Datasolution, Inc.",
@@ -233,9 +223,9 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 05:52",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:51",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 5130,
-   "mcap": 0.0832,
+   "price": 4745,
+   "mcap": 0.077,
    "shares": 16225380,
    "total_shares": 16225380,
    "wavg_shares": 16113111,
-   "per": 21.646,
+   "per": 20.021,
    "eps": 237,
-   "pbr": 2.3119,
+   "pbr": 2.1384,
    "bps": 2219,
    "roe_ttm": 11.4,
    "ttm_window": "2025Q3~2026Q2",

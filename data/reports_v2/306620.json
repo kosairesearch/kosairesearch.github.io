@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "MLCC 커터 수혜 기대 vs 고부채·적자 극복 과제",
-  "en": "MLCC Cutter Leverage vs. Persistent Losses and High Debt"
+  "ko": "MLCC 훈풍 속 흑자전환 신호",
+  "en": "MLCC Tailwind Signals Operating Turnaround"
  },
  "lead": {
-  "ko": "삼성전기 필리핀 MLCC 공장 증설 사이클에 올라탄 국산화 장비 수혜 기대가 커지는 한편, 2025년 순손실 재확대·부채비율 급등·영업현금흐름 4년 연속 마이너스라는 재무 현실도 함께 직시해야 할 국면이다.",
-  "en": "Expectations are building around the company's domestically developed MLCC cutter positioned to benefit from Samsung Electro-Mechanics' Philippines capacity expansion, yet persistent net losses, a sharp rise in leverage, and four consecutive years of negative operating cash flow demand equal scrutiny."
+  "ko": "지아이에스는 반도체·디스플레이 절단장비와 드론·자동화 사업을 영위하며, 2026년 옛 지아이에스와의 합병 이후 AI발 MLCC 장비 수요 확대에 힘입어 2분기 영업이익이 흑자로 돌아섰으나 지배주주 순손실은 여전히 지속되고 있다.",
+  "en": "GIS Co., Ltd. makes semiconductor and display cutting equipment along with drone and automation systems, and after its January 2026 merger with the former GIS unit, operating profit turned positive in the second quarter on AI-driven MLCC equipment demand, even as net losses attributable to owners persisted."
  },
  "keypoints": [
   {
-   "ko": "MLCC 커터 국산화 성공: 삼성전기 내 약 70% 이상 점유율 확보, AI 서버·전장 수요 확대로 수주 증가세",
-   "en": "Successful domestication of MLCC cutter technology with ~70%+ share at Samsung Electro-Mechanics; AI server and automotive demand driving order growth"
+   "ko": "2026년 1월 네온테크가 종속회사 옛 지아이에스를 흡수합병하고 사명을 지아이에스로 변경, 반도체·디스플레이·드론 사업을 통합했다.",
+   "en": "In January 2026, Neontech absorbed its former subsidiary GIS and renamed itself GIS Co., Ltd., integrating semiconductor, display, and drone operations."
   },
   {
-   "ko": "100% 자회사 흡수합병 완료·사명 변경: 반도체 절단장비+디스플레이 자동화+자동화 설비 통합 포트폴리오 구축",
-   "en": "Wholly-owned subsidiary absorption completed and company renamed GIS; now operates a combined portfolio of semiconductor cutting, display automation, and industrial automation equipment"
+   "ko": "2026년 2분기 연결 매출 340.1억원, 영업이익 25.8억원으로 전 분기(매출 138.9억원, 영업손실 14.1억원) 대비 실적이 크게 개선됐다.",
+   "en": "In Q2 2026, consolidated revenue reached KRW 34.01 billion and operating profit KRW 2.58 billion, sharply improved from the prior quarter's revenue of KRW 13.89 billion and operating loss of KRW 1.41 billion."
   },
   {
-   "ko": "2025년 연간 매출 758억원(YoY -27.4%), 영업이익 16억원(-55%), 지배주주 순손실 36.5억원 재확대 — 구미 사업장 고객 투자 축소가 주원인",
-   "en": "FY2025 revenue fell 27.4% to KRW 75.8bn; operating profit dropped 55%; controlling-shareholder net loss widened again, primarily due to capex pullback by a key Gumi-based customer"
+   "ko": "AI 인프라 확산에 따른 MLCC 장비 수주 증가로 구미공장 생산라인 추가 투입과 필리핀 현지 지사 설립을 추진 중이다.",
+   "en": "Amid rising MLCC equipment orders driven by AI infrastructure expansion, the company is adding production lines at its Gumi plant and pursuing a Philippines subsidiary."
   },
   {
-   "ko": "2026년 이월 수주 잔고 및 삼성전기 필리핀 라인 증설(2026~2027H2)이 실적 회복의 핵심 변수",
-   "en": "Carried-over order backlog into 2026 and Samsung EM's Philippines MLCC expansion (2026–H2 2027) are the principal drivers for a potential earnings recovery"
+   "ko": "2025년 연간 매출은 전년 대비 27.4% 감소했고 지배주주 순손실은 40.3억원으로 확대되며 부채비율도 233.2%까지 높아졌다.",
+   "en": "Full-year 2025 revenue fell 27.4% year over year, the net loss attributable to owners widened to KRW 4.03 billion, and the debt ratio rose to 233.2%."
   },
   {
-   "ko": "부채비율 233.2%(2025년말), 영업현금흐름 4년 연속 마이너스, 전환사채 반복 발행 — 재무 건전성이 핵심 모니터링 과제",
-   "en": "Debt ratio of 233.2% at end-2025, four straight years of negative OCF, and recurring convertible bond issuances are the central financial health risks to monitor"
+   "ko": "드론·로봇·푸드테크 등 신사업을 병행하고 있으나 매출 기여도는 아직 검증 초기 단계다.",
+   "en": "New businesses in drones, robotics, and food-tech are underway in parallel, but their revenue contribution remains at an early, unverified stage."
   }
  ],
  "business": {
-  "ko": "지아이에스(구 네온테크)는 2000년 반도체·디스플레이·MLCC용 절단장비 제조·판매를 목적으로 설립됐으며 2018년 10월 코스닥에 상장한 기계·장비 업체다. 2025년 말 디스플레이 장비 사업을 영위하던 100% 자회사를 흡수합병하고 사명을 지아이에스로 변경해 반도체 절단장비·디스플레이 자동화·자동화 설비를 아우르는 통합 포트폴리오를 완성했다. 핵심 제품은 MLCC 제조 공정에서 적층 세라믹 시트를 개별 칩 단위로 정밀 절단하는 MLCC Cutter와 반도체 Dicing Saw로, 일본 기업이 독점하던 시장을 국산화하는 데 성공해 삼성전기 내 약 70% 이상의 점유율을 확보하고 있다. 디스플레이 장비 부문은 LG디스플레이를 주요 고객으로 OLED 공정 자동화·검사 장비의 토탈 솔루션을 공급해 왔으며, 매 분기 전체 매출의 50~60%를 상회하는 비중을 차지해왔다. DART 공시에 따르면 Dicing Saw 매출은 2023년 약 12억원, 2024년 약 16억원에서 2025년 3분기 누계 약 64억원으로 가파르게 확대됐다. 자동화 설비 기술을 기반으로 F&B 로보틱스 분야 진출을 위한 전자동 튀김기 '보글봇'을 개발 완료했으며, 드론·휴머노이드 부품 제조도 신사업으로 추진 중이다. 동사는 60개 이상의 특허를 보유해 핵심 장비 시장에서 일정한 기술 진입장벽을 구축하고 있으며, 고객 구성은 삼성전기·LG디스플레이 등 국내 대형 부품·소재사 중심으로 특정 고객 집중도가 높은 편이다.",
-  "en": "GIS Co., Ltd. (formerly Neontech) was established in 2000 to manufacture and sell cutting equipment for semiconductors, displays, and MLCC, and listed on KOSDAQ in October 2018. At end-2025 the company absorbed its 100%-owned display-equipment subsidiary and rebranded as GIS, consolidating semiconductor cutting, display automation, and general automation into a single product portfolio. Its flagship products are the MLCC Cutter — which slices stacked ceramic sheets into individual chips during MLCC production — and semiconductor Dicing Saw equipment; GIS domesticated technology that Japanese firms had long monopolized, achieving approximately 70%+ market share at Samsung Electro-Mechanics. The display equipment division supplies OLED-process automation and inspection systems as a total-solution provider, primarily to LG Display, and has historically accounted for more than 50–60% of quarterly revenue. Per DART filings, Dicing Saw revenue expanded from approximately KRW 1.2bn in 2023 and KRW 1.6bn in 2024 to KRW 6.4bn on a three-quarter cumulative basis through September 2025. Leveraging automation expertise, the company has completed development of the 'Boglbot' fully automatic fryer robot for the food-tech segment and is also pursuing drone and humanoid-component manufacturing as new ventures. With 60+ patents, GIS maintains meaningful technological barriers in core equipment markets; customer concentration in Samsung Electro-Mechanics and LG Display is notably high."
+  "ko": "지아이에스는 반도체·디스플레이·MLCC용 절단장비를 주력으로 하는 장비사업본부와, 자동화 설비(FA System)·드론·신사업(로봇, 푸드테크)을 함께 영위하는 종합 장비 제조 기업이다. 장비사업본부에서는 Dicing Saw, Singulator, Saw & Sorter, MLCC Cutter 등을 공급하며, 과거 사명이었던 네온테크 시절부터 삼성전기·삼성LED·LG이노텍 등 국내 대기업과 해외 다수 업체에 웨이퍼 다이싱 머신을 납품해온 이력이 있다. 2016년에는 반도체 부문의 제어·절단 기술을 응용해 드론 사업부를 신설했으며, 군수·물류용 무인기와 수직이착륙기(VTOL) 개발을 이어오고 있다. 2026년 1월에는 100% 종속회사였던 옛 '지아이에스'(디스플레이 제조용 기계 제조업체)를 흡수합병하며 사명을 네온테크에서 지아이에스로 변경하고, 반도체·디스플레이 공정 자동화 장비 분야의 사업 정체성을 통합했다. 이 합병으로 전문경영인 중심의 각자대표 체제가 도입됐고, 자산 규모도 약 1,400억원 수준으로 확대될 것으로 회사는 기대했다. 자동화 기술을 기반으로 F&B 산업용 로보틱스 장비와 AI 시스템 사업도 추진 중이며, 전자동 튀김기 '보글봇' 개발을 완료해 푸드테크 시장 진출을 준비하고 있다. 경쟁 구도상 반도체·디스플레이 절단장비 시장은 국내외 소수 업체가 과점하는 구조로 알려져 있으며, 회사는 주요 고객사와의 장기 거래 관계를 기반으로 사업을 영위하고 있다. 전방 산업의 투자 사이클에 실적이 크게 좌우되는 장비업체 특성상, 고객사의 설비투자 시기와 규모가 매출 인식에 직접적인 영향을 미친다.",
+  "en": "GIS Co., Ltd. is a comprehensive equipment manufacturer whose core equipment division makes cutting tools for semiconductors, displays, and multilayer ceramic capacitors (MLCCs), alongside automation (FA System), drone, and new businesses such as robotics and food-tech. The equipment division supplies Dicing Saw, Singulator, Saw & Sorter, and MLCC Cutter tools, and since its earlier days as Neontech has supplied wafer dicing machines to large domestic customers including Samsung Electro-Mechanics, Samsung LED, and LG Innotek, as well as numerous overseas clients. In 2016 the company established a drone division applying its semiconductor control and cutting technologies, and has continued developing military and logistics unmanned aircraft as well as vertical take-off and landing (VTOL) systems. In January 2026, the company absorbed its wholly owned subsidiary, the former 'GIS' (a display manufacturing equipment maker), changed its name from Neontech to GIS Co., Ltd., and unified its business identity around semiconductor and display process automation equipment. The merger introduced a co-CEO structure led by professional managers, and the company expected total assets to expand to roughly KRW 140 billion. Building on its automation technology, the company is also pursuing F&B robotics equipment and AI system businesses, and has completed development of an automatic fryer called 'Boglebot' to enter the food-tech market. The cutting-equipment market for semiconductors and displays is understood to be an oligopoly dominated by a small number of domestic and overseas players, and the company operates on the basis of long-standing relationships with its major customers. As is typical for equipment makers, results are heavily influenced by the capital expenditure cycles of customers, with the timing and scale of customer investment directly affecting revenue recognition."
  },
  "earnings": {
-  "ko": "2022년은 매출 528.9억원에 영업손실 37.6억원(OPM -7.1%), 지배주주 순손실 80.2억원으로 최악의 수익성을 기록했다. 2023년에는 매출 867.5억원·영업이익 21.7억원(OPM 2.5%)으로 첫 흑자 반전에 성공했으나 지배주주 순손실은 33.6억원이 지속됐다. 2024년은 매출 1,044.5억원(YoY +20.4%)·영업이익 36.3억원(OPM 3.5%)으로 역대 최고 매출을 달성했고 지배주주 순이익도 2.6억원으로 흑자 전환했으나, 수익 규모 자체는 미미한 수준에 그쳤다. 2025년에는 구미 사업장 주요 고객사의 투자 축소로 매출이 758.1억원(-27.4%), 영업이익이 16.3억원(-55.0%)으로 크게 후퇴했으며 지배주주 순손실은 36.5억원으로 재확대됐다. 분기별로는 2025년 1분기가 매출 75.9억원·영업손실 31.6억원으로 바닥을 형성한 뒤 2분기(매출 239.9억·영업이익 9.5억), 3분기(231.3억·13.2억), 4분기(211.0억·25.3억)로 분기 연속 뚜렷한 개선세를 보였다. 2026년 1분기는 매출 138.9억원으로 전년 동기(75.9억원) 대비 약 83% 성장해 기저 효과와 합병 후 수주 회복을 확인했으나, 영업손실 14.1억원·지배주주 순손실 17.9억원이 지속되며 계절적 비수기와 통합 비용 영향이 남아있다. 영업현금흐름은 2022~2025년 4년 연속 마이너스(각각 -14.2억, -55.5억, -5.0억, -46.7억원)로, 수주 확대에 따른 운전자본 증가가 현금 창출의 병목이 되고 있다. 부채비율은 2022년 100.8%에서 2024년 139.6%로 올라섰고, 2025년에는 1,004.5억원의 부채 대비 430.7억원의 자본으로 233.2%까지 급등해 재무 건전성 모니터링이 가장 중요한 과제가 됐다.",
-  "en": "FY2022 was the trough, with revenue of KRW 52.9bn, an operating loss of KRW 3.8bn (OPM –7.1%), and a controlling-shareholder net loss of KRW 8.0bn. FY2023 saw the first operating profit recovery to KRW 86.8bn in revenue and KRW 2.2bn in operating profit (OPM 2.5%), though the net loss persisted at KRW 3.4bn. FY2024 achieved record revenue of KRW 104.5bn (+20.4% YoY) and operating profit of KRW 3.6bn (OPM 3.5%), with the controlling-shareholder net income turning positive at KRW 0.3bn — though the absolute profit level remained thin. FY2025 reversed sharply: revenue fell 27.4% to KRW 75.8bn and operating profit dropped 55% to KRW 1.6bn as a key customer at the Gumi plant pulled back capex; the controlling-shareholder net loss widened again to KRW 3.6bn. On a quarterly basis, 2025Q1 was the nadir at KRW 7.6bn revenue with an operating loss of KRW 3.2bn, followed by a sequential recovery through Q2 (KRW 24.0bn / KRW 0.9bn OP), Q3 (KRW 23.1bn / KRW 1.3bn), and Q4 (KRW 21.1bn / KRW 2.5bn). 2026Q1 revenue of KRW 13.9bn was roughly 83% above the year-earlier quarter, confirming base-effect improvement and early backlog conversion, yet operating and net losses persisted, reflecting seasonal weakness and post-merger integration costs. Operating cash flow has been negative for four consecutive years (–KRW 1.4bn, –5.6bn, –0.5bn, –4.7bn, 2022–2025), driven by working-capital build-up from growing order intake. The debt ratio surged from 139.6% at end-2024 to 233.2% at end-2025, making balance-sheet health the single most critical monitoring variable."
+  "ko": "2025년 연결 매출액은 758.1억원으로 2024년 1,044.5억원 대비 27.4% 감소했으며, 이는 반도체·디스플레이·MLCC용 절단장비 수요 감소와 고객사 투자 축소가 원인으로 지목된다. 같은 기간 영업이익은 36.3억원에서 16.3억원으로 55.0% 줄었고 영업이익률도 3.5%에서 2.2%로 낮아졌다. 지배주주 순손실은 2024년 16.3억원에서 2025년 40.3억원으로 확대됐는데, 연결 전체 순이익(2.6억원)과 지배주주 순이익 간 괘리가 큰 것은 옛 종속회사였던 지아이에스에 대한 비지배지분 구조 변화(2024년 말 160.5억원에서 2025년 말 -8.1억원으로 전환)와 관련이 있는 것으로 보인다. 부채비율은 2024년 139.6%에서 2025년 233.2%로 크게 높아졌고, 영업활동현금흐름도 2025년 -46.7억원으로 4개 연도 모두 순유출을 기록했다. 분기별로 보면 2025년 3분기 매출 231.3억원·영업이익 13.2억원, 4분기 매출 211.0억원·영업이익 25.3억원으로 완만한 개선세를 보였으나, 2026년 1분기에는 매출이 138.9억원으로 급감하고 영업손실 14.1억원을 기록하며 다시 부진했다. 그러나 2026년 2분기에는 매출 340.1억원으로 직전 분기 대비 약 2.4배 늘었고 영업이익도 25.8억원으로 흑자 전환하면서, 회사 측은 합병 이후 주력 장비 수주 증가가 2분기를 기점으로 실적 개선에 반영되기 시작했다고 설명했다. 다만 2026년 1분기와 2분기 모두 지배주주 순손실(각각 18.4억원, 7.8억원)이 지속돼, 영업 레벨의 회복이 아직 순이익 단계까지는 완전히 이어지지 못하고 있다.",
+  "en": "Consolidated revenue in 2025 was KRW 75.81 billion, down 27.4% from KRW 104.45 billion in 2024, a decline attributed to weaker demand for semiconductor, display, and MLCC cutting equipment and reduced customer capital spending. Operating profit fell 55.0% over the same period, from KRW 3.63 billion to KRW 1.63 billion, with the operating margin narrowing from 3.5% to 2.2%. The net loss attributable to owners widened from KRW 1.63 billion in 2024 to KRW 4.03 billion in 2025; the gap between total consolidated net income (KRW 260 million) and the owner-attributable figure appears related to a shift in the non-controlling interest structure tied to the former subsidiary GIS, which moved from a positive KRW 16.05 billion at the end of 2024 to negative KRW 810 million at the end of 2025. The debt ratio rose sharply from 139.6% in 2024 to 233.2% in 2025, and operating cash flow was negative at KRW -4.67 billion in 2025, marking net outflows in all four years shown. By quarter, revenue and operating profit improved gradually through late 2025, with Q3 revenue of KRW 23.13 billion and operating profit of KRW 1.32 billion, followed by Q4 revenue of KRW 21.10 billion and operating profit of KRW 2.53 billion, before Q1 2026 revenue dropped sharply to KRW 13.89 billion with an operating loss of KRW 1.41 billion. Revenue then rebounded to KRW 34.01 billion in Q2 2026, roughly 2.4 times the prior quarter, and operating profit turned positive at KRW 2.58 billion, with the company stating that increased orders for its core equipment following the merger began feeding through to results from the second quarter. Even so, the net loss attributable to owners persisted in both Q1 and Q2 2026 (KRW 1.84 billion and KRW 780 million, respectively), indicating that the operating-level recovery has not yet fully translated into net profitability."
  },
  "industry": {
-  "ko": "MLCC 시장은 AI 서버·전장용 수요 급증으로 구조적 성장 국면에 진입했다. AI 서버 1대에 탑재되는 MLCC는 일반 서버 대비 3~4배 이상에 달하며, 데이터센터 확산에 따른 공급망 전체의 구조적 수요 압력으로 작용한다. 세계 최대 MLCC 제조사인 무라타는 AI용 MLCC 수요 성장률 전망치를 기존 18%에서 30% 이상으로 상향 조정했으며, 삼성전기는 2026년 6월 글로벌 빅테크 기업과 4,500억원 규모의 AI 서버용 MLCC 장기 공급계약을 체결해 수요 가시성을 높이고 있다. 삼성전기는 2025년 4분기 필리핀 법인에 약 750억원의 선행 투자를 집행했으며, 필리핀 MLCC 공장 증설을 2026년 초부터 2027년 하반기까지 본격 추진 중이다. 이러한 전방 고객사의 캐파 확장이 고정밀 절단장비 수요와 연동되는 구조상, 지아이에스는 직접적인 장비 발주 수혜 포지션에 있다. 디스플레이 장비 부문은 OLED 투자 사이클에 따른 수주 기회가 있으나, 2025년 구미 고객사 투자 축소 사례처럼 연도별 변동성이 크다. 경쟁 측면에서 MLCC 커터 시장은 과거 일본 기업 과점 영역이었으나, 지아이에스가 국산화에 성공하며 국내 주요 공급자로 확고히 자리 잡았다.",
-  "en": "The MLCC market has entered a phase of structural growth, driven by surging demand from AI servers and automotive electronics. A single AI server requires three to four times more MLCCs than a conventional server, creating sustained supply-chain pressure as data-center buildouts accelerate globally. Murata, the world's largest MLCC producer, raised its AI-specific MLCC demand growth forecast from 18% to over 30%; Samsung Electro-Mechanics signed a KRW 450bn long-term AI server MLCC supply contract with a global tech major as recently as June 30, 2026, reinforcing demand visibility. Samsung EM deployed approximately KRW 75bn of preparatory investment in its Philippines subsidiary in Q4 2025 and is actively expanding its Philippines MLCC factory from early 2026 through H2 2027. This upstream capacity addition directly drives incremental demand for high-precision cutting equipment, placing GIS in a structurally exposed position for incremental equipment orders. The display equipment segment offers order opportunities tied to OLED investment cycles, but year-to-year volatility is significant, as the Gumi customer capex pullback in 2025 demonstrated. On the competitive front, the MLCC cutter market was historically dominated by Japanese firms; GIS has domesticated the technology and now holds a leading position among Korean suppliers."
+  "ko": "반도체·디스플레이 후공정 절단장비 시장은 전방 반도체·전자부품 업체들의 설비투자 사이클에 실적이 직접 연동되는 특성을 가진다. 최근에는 인공지능(AI) 인프라 확산과 전장용 부품 수요 증가에 따라 MLCC(적층세라믹콘덴서) 시장이 장기 공급 계약 체결과 단가 인상이 동반되는 이른바 슈퍼사이클 국면에 진입했다는 평가가 나온다. 이에 따라 국내 주요 MLCC 제조사들이 영남권을 중심으로 대규모 증설 투자를 예고하고 있으며, 장비업체들도 이에 대응한 생산능력 확충에 나서고 있다. 지아이에스는 이러한 흐름 속에서 안양 본사 공장의 전력 인프라를 기존 대비 4배로 늘리는 승압 공사를 완료하고, 구미 공장에 MLCC 장비 전용 생산 라인을 추가 투입하는 등 공급 대응력을 강화하고 있다. 디스플레이 장비 부문은 OLED 등 프리미엄 패널 투자 사이클에 연동되는 구조로, 국내 대형 패널 업체의 투자 시점과 규모가 실적에 영향을 미친다. 드론·자동화 부문은 방위산업 및 물류 자동화 수요와 연결되어 있어 반도체·디스플레이 부문과는 다른 사이클을 가지는 사업 다각화 요소로 평가된다. 업계 전반적으로 장비업체는 소수의 대형 고객사에 대한 의존도가 높은 구조여서, 특정 고객사의 투자 결정이 개별 기업 실적에 미치는 영향이 크다.",
+  "en": "The back-end cutting equipment market for semiconductors and displays is directly tied to the capital expenditure cycles of upstream semiconductor and electronic component makers. Recently, expanding AI infrastructure and rising demand for automotive-grade components have pushed the MLCC (multilayer ceramic capacitor) market into what has been described as a super-cycle marked by long-term supply contracts and price increases. In response, major domestic MLCC manufacturers have announced large-scale capacity expansions concentrated in the Yeongnam region, prompting equipment makers to expand their own production capacity accordingly. Within this trend, GIS completed a project to quadruple the power infrastructure capacity at its Anyang headquarters plant and is adding a dedicated MLCC equipment production line at its Gumi plant to strengthen its supply response. The display equipment segment is tied to investment cycles for premium panels such as OLED, with the timing and scale of investment by major domestic panel makers affecting results. The drone and automation segment is linked to defense industry and logistics automation demand, representing a diversification element with a different cycle from the semiconductor and display businesses. Across the industry, equipment makers tend to be heavily dependent on a small number of large customers, meaning that a particular customer's investment decisions can have an outsized impact on an individual company's results."
  },
  "outlook": {
-  "ko": "회사는 2025년 하반기부터 주요 고객사의 투자가 재개됨에 따라 2026년으로 이월된 수주 잔고를 기반으로 실적 정상화가 진행될 것으로 전망하고 있다. 스터닝밸류리서치(2026년 4월)에 따르면 이월된 수주 잔고는 MLCC 관련 약 200억원, LG디스플레이향 약 350억원 규모로 상반기 매출 기반을 지지할 것으로 분석됐다. 키움증권은 2026년 매출 1,630억원·영업이익 132억원, 2027년 매출 2,100억원·영업이익 175억원을 예상하며 연간 실적의 큰 폭 개선을 전망했다. 삼성전기 필리핀 공장 건설이 2027년 하반기까지 진행될 예정이어서 MLCC Cutter 공급 사이클도 이에 연동될 것으로 기대된다. 생산 대응력 강화를 위해 공장 전력 인프라를 기존 대비 약 4배 확충하고 생산 체계를 전면 개편하는 선제 조치를 완료했다. 2026년 5월에는 115억원 규모의 제9회차 전환사채(표면이율 0%, 만기이율 5%)를 발행해 MLCC 장비 원자재 매입 운영자금(59억원)과 기존 차입금 상환(56억원)에 활용하기로 했으며, 발행 물량 전액에 대한 콜옵션(100%) 구조를 통해 주식 희석 위험을 최소화했다고 밝혔다. 드론·휴머노이드 부품·보글봇 등 신사업은 현재 수주 확보 단계로 의미 있는 매출 기여 시점은 미확정이며, 중대형 인덕터 공정 선점도 잠재 성장 옵션이나 본격적인 사업화 일정과 규모는 공개되지 않았다.",
-  "en": "The company expects performance normalization from H1 2026, underpinned by the order backlog carried into the year. According to Stunning Value Research (April 2026), the carried-over backlog was approximately KRW 20bn in MLCC-related orders and approximately KRW 35bn for LG Display, providing a revenue foundation for the first half. Kiwoom Securities forecasts FY2026 revenue of KRW 163bn with operating profit of KRW 13.2bn, and FY2027 revenue of KRW 210bn with operating profit of KRW 17.5bn, projecting a sharp recovery in annual earnings. Given that Samsung EM's Philippines factory construction is scheduled through H2 2027, the MLCC Cutter supply cycle is expected to remain active throughout that period. GIS proactively expanded factory electrical capacity by approximately four times and redesigned its production layout to accommodate growing order volumes. In May 2026, the company issued a KRW 11.5bn 9th-tranche convertible bond (0% coupon / 5% maturity rate) to fund MLCC raw material procurement (KRW 5.9bn) and retire existing bank debt (KRW 5.6bn), with a 100% call-option structure to mitigate dilution risk. New businesses — drones, humanoid-robot components, and the Boglbot — remain in the order-procurement stage, and both the timeline for material revenue contribution and the scale of mid-to-large inductor processing commercialization have not been formally disclosed."
+  "ko": "회사는 2026년 상반기 매출액 479억원, 영업이익 12억원으로 흑자 전환한 데 이어, 하반기에도 견조한 성장세를 이어가겠다는 입장을 밝혔다. 구체적으로는 구미공장 생산능력 확대와 필리핀 현지 지사 설립을 차질 없이 추진하고, 확보한 수주 물량을 안정적으로 납품하겠다는 계획을 제시했다. 앞서 지난 5월 기준으로 AI용 MLCC 핵심 장비 수주량이 전년 동기 대비 3배 이상 증가했고, 안양·구미 등 각 사업장을 합한 전사 누적 수주잔고도 전년 대비 약 180% 늘었다고 밝힌 바 있다. 안양 공장의 전력 인프라 4배 승압 공사는 지난 5월 완료됐으며, 이달 초에는 구미 공장에 MLCC 장비 전용 생산 라인을 추가 투입한다고 발표해 수주에서 매출로 이어지는 리드타임 단축을 기대하고 있다. 필리핀 현지 지사는 해외 생산거점을 둔 글로벌 고객사에 대한 설치·기술지원 대응력을 높이기 위한 목적으로 추진되고 있다. 한편 키움증권은 2026년 1월 보고서에서 지아이에스의 2026년 연간 매출액과 영업이익이 전년 대비 크게 개선될 것으로 전망한 바 있으나, 이는 합병 초기 시점의 전망치로 이후 분기 실적과의 부합 여부는 향후 공시를 통해 확인이 필요하다. 드론 사업에서는 앞서 소형전술차량용 수직이착륙기(VTOL)를 개발해 방산 전시회에서 공개하고 방위사업청 관련 사업에 참여한 이력이 있어, 반도체·디스플레이 외 매출원 다각화 시도가 이어지고 있다.",
+  "en": "The company stated that after turning operating profit positive in the first half of 2026 with revenue of KRW 47.9 billion and operating profit of KRW 1.2 billion, it intends to sustain solid growth in the second half. Specifically, it laid out plans to proceed without delay on expanding production capacity at the Gumi plant and establishing a Philippines subsidiary, while stably delivering on secured order volumes. As of May 2026, the company had reported that orders for core AI-related MLCC equipment had more than tripled year over year, and that consolidated order backlog across the Anyang and Gumi sites had grown roughly 180% year over year. The project to quadruple power infrastructure capacity at the Anyang plant was completed in May, and in early August the company announced it would add a dedicated MLCC equipment production line at the Gumi plant, aiming to shorten the lead time from order to revenue recognition. The Philippines subsidiary is being pursued to strengthen installation and technical support capabilities for global customers with overseas production bases. Separately, Kiwoom Securities projected in a January 2026 report that GIS's full-year 2026 revenue and operating profit would improve significantly from the prior year, though this was an early-stage forecast made around the time of the merger, and whether subsequent quarterly results align with it will need to be confirmed through future disclosures. In the drone business, the company previously developed a vertical take-off and landing (VTOL) aircraft for small tactical vehicles, unveiled it at a defense exhibition, and participated in a project related to the Defense Acquisition Program Administration, reflecting ongoing efforts to diversify revenue sources beyond semiconductors and displays."
  },
  "valuation_comment": {
-  "ko": "동사는 2022~2025년 중 3개 연도에서 지배주주 순손실을 기록하고 있어 주가수익비율(PER)은 현 시점에서 유의미한 밸류에이션 기준으로 삼기 어렵다. 주당순자산(BPS)은 1,065원으로, 현 주가는 장부 순자산 대비 상당한 프리미엄 구간에서 형성돼 있으며, 이는 시장이 향후 실적 회복에 대한 기대를 일부 반영하고 있는 것으로 해석될 수 있다. 배당은 최근 수년간 지급되지 않았으며, 영업현금흐름이 4년 연속 마이너스인 상황에서 가까운 시일 내 배당 재개 가능성은 높지 않은 것으로 보인다. 부채비율 233.2%(2025년말) 급등과 전환사채 반복 발행은 주당 순자산 희석 압력으로 작용할 수 있어, 재무 레버리지의 방향성이 밸류에이션의 중요한 변수가 된다. 전방 MLCC·디스플레이 업황이 개선되고 이월 수주가 실제 이익으로 전환되는 속도가 향후 가치 기준 변화의 핵심 선행 지표가 될 것이다.",
-  "en": "With net losses in three of the four fiscal years from 2022 to 2025, price-to-earnings is not a meaningful valuation anchor at this stage. The book value per share (BPS) stands at KRW 1,065, and the current share price carries a substantial premium to book value, which can be interpreted as the market embedding some expectation of future earnings recovery. No dividends have been paid in recent years, and with operating cash flow negative for four consecutive years, near-term dividend reinstatement appears unlikely. A debt ratio of 233.2% at end-2025 and recurring convertible bond issuances introduce ongoing book-value dilution pressure, making the trajectory of financial leverage a critical valuation variable. The pace at which the accumulated order backlog converts into recognized earnings — and the direction of financial leverage — will serve as the leading indicators for any shift in valuation benchmarks."
+  "ko": "지아이에스는 최근 4개 연도 모두 지배주주 순손실을 기록하고 있어, 주가수익비율(PER)과 같은 이익 기반 밸류에이션 지표는 산출이 어려운 구간에 머물러 있다. 주가순자산비율(PBR)은 순자산가치 대비 일정한 프리미엄이 반영된 수준에서 거래되고 있는데, 이는 반도체·디스플레이 절단장비의 국산화 역량과 최근의 실적 개선 흐름에 대한 시장의 기대가 일부 반영된 결과로 해석될 수 있다. 배당은 최근 회계연도 기준으로 지급되지 않는 무배당 기조가 이어지고 있어, 배당 관련 지표는 별도로 형성되지 않은 상태다. 2026년 2분기 영업이익이 흑자로 전환된 점은 긍정적이나, 지배주주 순손실이 여전히 지속되고 있고 부채비율도 높은 수준이어서, 밸류에이션을 해석할 때는 이익의 질과 재무구조 개선 속도를 함께 살펴볼 필요가 있다. 동종 장비업종 내에서의 상대적 비교치는 시점에 따라 변동성이 크므로, 절대적인 수치보다는 실적 추이와 사업 구조 변화의 방향성에 주목하는 접근이 유효할 수 있다.",
+  "en": "GIS has recorded net losses attributable to owners in each of the past four fiscal years, leaving earnings-based valuation metrics such as the price-to-earnings ratio in a range that is difficult to calculate meaningfully. The price-to-book ratio trades at a level reflecting a certain premium over net asset value, which may partly reflect market expectations around the company's localization capabilities in semiconductor and display cutting equipment and its recent earnings improvement trend. The company has maintained a no-dividend policy in recent fiscal years, so dividend-related metrics are not meaningfully formed. The return to operating profit in the second quarter of 2026 is a positive development, but with net losses attributable to owners still persisting and the debt ratio at an elevated level, interpreting valuation requires weighing the quality of earnings alongside the pace of balance-sheet improvement. Relative comparisons within the equipment sector can be quite volatile depending on timing, so focusing on the trend and direction of business structure change, rather than absolute figures, may be a more useful approach."
  },
  "bull": [
   {
    "title": {
-    "ko": "삼성전기 필리핀 증설과 AI MLCC 장기 수요 구조",
-    "en": "Samsung EM Philippines Expansion and Structural AI-Driven MLCC Demand"
+    "ko": "MLCC 슈퍼사이클 수혜 확대",
+    "en": "Expanding Exposure to the MLCC Super-Cycle"
    },
    "body": {
-    "ko": "삼성전기는 2025년 4분기 필리핀 법인에 약 750억원의 선행 투자를 집행한 데 이어 2026년 초부터 2027년 하반기까지 MLCC 신규 라인 증설을 본격 추진 중이다. 삼성전기는 2026년 6월 글로벌 빅테크 기업과 4,500억원 규모의 AI 서버용 MLCC 장기 공급계약을 체결해 수요 가시성도 높아지고 있다. 지아이에스는 과거 삼성전기 중국 톈진 공장 건설 당시 MLCC Cutter를 대거 납품한 전례가 있어, 필리핀 신규 라인 증설에 따른 장비 발주의 직접 수혜를 기대할 수 있는 구조다.",
-    "en": "Samsung Electro-Mechanics deployed approximately KRW 75bn of preparatory investment in its Philippines subsidiary in Q4 2025 and is actively expanding its Philippines MLCC line from early 2026 through H2 2027. Samsung EM further signed a KRW 450bn long-term AI server MLCC supply contract with a global tech major in June 2026, strengthening demand visibility. GIS has a prior track record of supplying the majority of MLCC Cutters when Samsung EM built its Tianjin, China facility, providing a credible precedent for capturing equipment orders tied to the Philippines expansion."
+    "ko": "AI 인프라 확산과 전장용 부품 수요 증가로 MLCC 시장이 장기 공급 계약과 단가 인상을 동반하는 호황 국면에 진입했다는 평가가 나오고 있다. 회사는 이 흐름에 대응해 5월 기준 AI용 MLCC 핵심 장비 수주량이 전년 대비 3배 이상 늘고, 전사 수주잔고도 약 180% 증가했다고 밝혔다. 안양 공장의 전력 인프라 4배 증설과 구미 공장의 MLCC 라인 추가 투입은 이러한 수주를 매출로 전환하기 위한 실질적 대응으로 해석된다.",
+    "en": "Expanding AI infrastructure and rising automotive component demand have reportedly pushed the MLCC market into a boom phase marked by long-term supply contracts and price increases. In response, the company reported that as of May its orders for core AI-related MLCC equipment had more than tripled year over year and total order backlog had grown roughly 180%. The fourfold expansion of power infrastructure at the Anyang plant and the addition of an MLCC line at the Gumi plant can be read as concrete steps to convert this order momentum into revenue."
    }
   },
   {
    "title": {
-    "ko": "70%+ 점유율·60개 이상 특허 기반 기술 해자",
-    "en": "70%+ Market Share and 60+ Patent Technological Moat"
+    "ko": "합병 시너지와 사업 다각화",
+    "en": "Merger Synergies and Business Diversification"
    },
    "body": {
-    "ko": "일본 기업이 독점하던 MLCC 커터 시장을 국산화하는 데 성공해 삼성전기 내 약 70% 이상의 점유율을 유지하고 있으며, 60개 이상의 특허가 후발 진입자에 대한 기술 장벽을 형성한다. AI 서버·전장용 MLCC 수요가 급증하면서 고정밀 'Saw & Sorter' 솔루션의 전략적 중요성이 부각되고 있다. 스터닝밸류리서치는 AI 데이터센터 전력 솔루션의 핵심 수동부품으로 급부상하는 중대형 인덕터 공정을 동사가 선점하고 있다고 평가해, 추가적인 사업 확장 가능성도 주목된다.",
-    "en": "GIS successfully domesticated MLCC cutter technology previously monopolized by Japanese firms, maintaining roughly 70%+ share at Samsung Electro-Mechanics, with a portfolio of 60+ patents raising barriers for new entrants. As AI server and automotive MLCC demand surges, the strategic importance of its high-precision 'Saw & Sorter' solution is increasingly highlighted. Stunning Value Research noted that GIS has also secured early positioning in mid-to-large inductor processing — a component gaining prominence in AI data-center power solutions — signaling potential for further business expansion."
+    "ko": "2026년 1월 옛 지아이에스와의 흡수합병으로 반도체·디스플레이 사업이 한 지붕 아래 통합됐고, 회사는 자산 규모 확대와 중복 기능 정리를 통한 수익성 개선을 기대하고 있다. 드론·로봇·푸드테크 등 신사업을 병행하면서 전방 산업 사이클이 다른 사업군으로 매출원을 다각화하려는 시도도 지속되고 있다. 방위사업청 관련 프로젝트 참여 등 드론 사업의 실적 사례도 존재한다.",
+    "en": "The January 2026 merger with the former GIS unit brought semiconductor and display businesses under one roof, and the company expects profitability gains from a larger asset base and elimination of redundant functions. Alongside this, ongoing efforts in drones, robotics, and food-tech represent an attempt to diversify revenue sources into segments with different industry cycles. The drone business also has a track record that includes participation in a project related to the Defense Acquisition Program Administration."
    }
   },
   {
    "title": {
-    "ko": "2025년 4분기 연속 영업이익 개선 및 이월 수주 잔고",
-    "en": "Consecutive Quarterly Operating Improvement and Carried-Over Order Backlog"
+    "ko": "2분기 영업흑자 전환",
+    "en": "Return to Operating Profit in Q2"
    },
    "body": {
-    "ko": "2025년 분기별 영업이익은 1분기 -31.6억원에서 4분기 +25.3억원으로 반전하며 뚜렷한 분기 연속 개선 흐름을 보였다. 스터닝밸류리서치에 따르면 2026년으로 이월된 수주 잔고는 MLCC 약 200억원과 LG디스플레이향 약 350억원으로, 2026년 상반기 매출 기반을 지지하는 구조다. 2026년 1분기 매출이 전년 동기 대비 약 83% 성장한 것은 이 이월 수주의 일부가 인식되기 시작했음을 나타내며, 실적 회복 경로의 초기 신호로 해석된다.",
-    "en": "GIS's quarterly operating profit swung from KRW –3.2bn in 2025Q1 to +KRW 2.5bn in 2025Q4, demonstrating a clear sequential recovery. According to Stunning Value Research, the backlog carried into 2026 includes approximately KRW 20bn in MLCC-related orders and approximately KRW 35bn for LG Display, underpinning first-half 2026 revenues. The approximately 83% year-over-year revenue increase in 2026Q1 suggests initial backlog conversion has begun, representing an early signal of the recovery path."
+    "ko": "2026년 2분기 연결 매출이 340.1억원으로 전 분기 대비 약 2.4배 늘고 영업이익도 25.8억원으로 흑자 전환했다. 상반기 전체로도 매출 479억원, 영업이익 12억원을 기록하며 지난해 대비 개선된 흐름을 보였다. 회사는 이러한 개선이 합병 이후 주력 장비 수주 증가에 힘입은 것이라고 설명하고 있다.",
+    "en": "In Q2 2026, consolidated revenue rose to KRW 34.01 billion, about 2.4 times the prior quarter, and operating profit turned positive at KRW 2.58 billion. For the first half overall, revenue reached KRW 47.9 billion and operating profit KRW 1.2 billion, an improvement from the prior year. The company attributes this improvement to increased orders for its core equipment following the merger."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4년 연속 마이너스 영업현금흐름과 부채비율 급등",
-    "en": "Four Consecutive Years of Negative OCF and Surging Leverage"
+    "ko": "지속되는 순손실과 높은 부채비율",
+    "en": "Persistent Net Losses and Elevated Debt Ratio"
    },
    "body": {
-    "ko": "영업현금흐름은 2022~2025년 4년 연속 마이너스(2025년 -46.7억원)로, 외부 조달 없이는 운전자본 충당이 어려운 구조적 문제가 지속되고 있다. 부채비율은 2024년 139.6%에서 2025년 233.2%로 급등했으며, 이자 비용 부담이 영업이익 개선 효과를 잠식할 가능성이 있다. 전환사채 반복 발행(2026년 5월 115억원 규모 9회차 CB)은 재무 유연성이 제한적임을 시사하며 잠재적 희석 위험도 내포한다.",
-    "en": "Operating cash flow has been negative for four straight years (–KRW 4.7bn in 2025), making self-funded working-capital management structurally difficult without external financing. The debt ratio jumped sharply from 139.6% at end-2024 to 233.2% at end-2025, and growing interest costs risk eroding the benefit of any operating profit improvement. The company's recurring convertible bond issuances — most recently a KRW 11.5bn 9th-tranche CB in May 2026 — signal constrained financial flexibility and embed ongoing share dilution risk."
+    "ko": "지배주주 순손실은 2022년부터 2025년까지 4개 연도 모두 기록되고 있으며, 2025년에는 40.3억원으로 전년보다 확대됐다. 같은 기간 부채비율은 233.2%까지 높아졌고, 영업활동현금흐름도 4개 연도 내내 순유출을 기록했다. 영업이익 단계의 개선이 순이익과 현금흐름 단계까지 이어질지는 아직 확인이 필요한 상태다.",
+    "en": "Net losses attributable to owners have been recorded in all four years from 2022 through 2025, widening to KRW 4.03 billion in 2025 from the prior year. Over the same period the debt ratio rose to 233.2%, and operating cash flow registered net outflows in all four years. Whether the improvement at the operating profit level will carry through to net income and cash flow remains to be confirmed."
    }
   },
   {
    "title": {
-    "ko": "고객 집중도와 전방 투자 사이클의 높은 변동성",
-    "en": "High Customer Concentration and Volatile Upstream Capex Cycles"
+    "ko": "분기 실적의 큰 변동성",
+    "en": "Significant Quarter-to-Quarter Volatility"
    },
    "body": {
-    "ko": "매출의 상당 부분이 삼성전기·LG디스플레이 등 소수 대형 고객에 집중돼 있어, 고객사 투자 속도 조정이 동사 실적에 즉각적이고 큰 영향을 미친다. 2025년 구미 사업장 고객사의 투자 축소 단 한 건이 연간 매출 27.4% 급감의 주원인이 됐다는 점이 이를 방증한다. 삼성전기의 필리핀 공장 증설 일정이 재차 지연될 경우 수주 확대 시나리오도 함께 후퇴할 수 있다.",
-    "en": "A substantial portion of revenue is concentrated in a handful of large customers such as Samsung Electro-Mechanics and LG Display, meaning any reduction in their capital spending flows through immediately and significantly to GIS earnings. A single customer capex cutback at the Gumi facility was the primary driver of the 27.4% revenue decline in FY2025. If Samsung EM's Philippines construction schedule slips again, the projected order expansion would face direct headwinds."
+    "ko": "2026년 1분기 매출은 138.9억원으로 직전 분기(211.0억원)보다 크게 줄고 영업손실 14.1억원을 기록했다가, 2분기에는 매출이 340.1억원으로 급증하는 등 분기별 편차가 크다. 이러한 변동성은 장비업체 특유의 수주-매출 인식 시차와 관련이 있는 것으로 보이며, 실적 가시성을 낮추는 요인으로 작용할 수 있다.",
+    "en": "Q1 2026 revenue fell sharply to KRW 13.89 billion from KRW 21.10 billion in the prior quarter, with an operating loss of KRW 1.41 billion, before surging to KRW 34.01 billion in Q2, reflecting large quarter-to-quarter swings. This volatility appears related to the timing lag between order intake and revenue recognition typical of equipment makers, which can reduce earnings visibility."
    }
   },
   {
    "title": {
-    "ko": "구조적 저마진과 합병 후 비용 효율화 불확실성",
-    "en": "Structurally Thin Margins and Post-Merger Cost Synergy Uncertainty"
+    "ko": "소형주 특유의 자본조달 부담",
+    "en": "Capital-Raising Burdens Typical of Small-Cap Stocks"
    },
    "body": {
-    "ko": "영업이익률은 2022~2025년 평균 약 0~3%대에 머물며 구조적 저마진 기조를 벗어나지 못했다. 자회사 흡수합병 이후 비용 효율화와 납기 관리 개선이 기대되지만, 통합 비용·인력 재배치에 따른 단기 비용 부담도 수반된다. 드론·로봇·푸드테크 등 신사업은 아직 의미있는 매출 기여가 없어, 선행 투자 비용이 핵심 사업 수익성을 잠식하는 상황이 당분간 지속될 수 있다.",
-    "en": "Operating margins have remained structurally thin, averaging roughly 0–3% over 2022–2025, with no meaningful structural improvement observed. While the subsidiary merger is expected to yield cost savings and delivery-management improvements over time, short-term integration costs and workforce realignment impose additional expense burdens. New businesses in drones, robotics, and food-tech contribute negligible revenue, meaning upfront development costs continue to weigh on core-segment profitability in the near term."
+    "ko": "시가총액이 상대적으로 작은 코스닥 소형주로서, 성장 투자와 CAPA 확대 과정에서 추가적인 자본조달이나 채무 확대가 필요할 가능성이 있다. 부채비율이 이미 200%를 넘는 상황에서 추가 차입이나 전환사채 등 자본조달이 이뤄질 경우 주주가치 희석이나 이자 부담 증가로 이어질 수 있다. 지속적인 순손실 구조 속에서 자금 조달 방식과 조건을 살펴볼 필요가 있다.",
+    "en": "As a relatively small-cap KOSDAQ stock, the company may need additional capital raising or increased borrowing to fund growth investments and capacity expansion. With the debt ratio already above 200%, further borrowing or instruments such as convertible bonds could lead to shareholder dilution or increased interest burden. Given the ongoing pattern of net losses, the method and terms of any future capital raising warrant attention."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "전환사채 유동성 및 희석 리스크",
-    "en": "Convertible Bond Liquidity and Dilution Risk"
+    "ko": "재무건전성",
+    "en": "Financial Soundness"
    },
    "body": {
-    "ko": "2026년 5월 발행된 115억원 규모 9회차 전환사채는 2027년 5월부터 사채권자가 조기상환청구권(풋옵션)을 행사할 수 있다. 영업현금흐름이 지속 마이너스인 상황에서 대규모 상환 수요가 발생하면 추가 외부 조달이 필요해지고, 이는 주주 희석 또는 재무 부담 확대로 이어질 수 있다. 부채비율 233.2%(2025년말)는 향후 차입 비용과 신용 조건에도 부담을 줄 수 있는 수준이다.",
-    "en": "The KRW 11.5bn 9th-tranche CB issued in May 2026 becomes puttable by bondholders from May 2027. If large redemption demands arise while operating cash flow remains negative, additional external financing would be required, risking further share dilution or an increase in interest burden. A debt ratio of 233.2% at end-2025 also introduces potential pressure on future borrowing costs and credit terms."
+    "ko": "2025년 부채비율은 233.2%로 2024년 139.6% 대비 크게 높아졌고, 영업활동현금흐름은 4개 연도 모두 순유출을 기록했다. 합병 과정에서 자산과 부채 규모가 함께 확대된 만큼, 향후 재무구조 개선 속도가 관찰 포인트다. 이익이 안정적으로 현금흐름 개선으로 이어지지 못할 경우 추가 자본조달 필요성이 커질 수 있다.",
+    "en": "The 2025 debt ratio rose sharply to 233.2% from 139.6% in 2024, and operating cash flow registered net outflows in all four years shown. Since both assets and liabilities expanded together during the merger process, the pace of future balance-sheet improvement is a key point to monitor. If profit does not translate steadily into improved cash flow, the need for additional capital raising could increase."
    }
   },
   {
    "cat": {
-    "ko": "삼성전기 필리핀 증설 지연 리스크",
-    "en": "Samsung EM Philippines Expansion Delay Risk"
+    "ko": "고객·매출 집중",
+    "en": "Customer and Revenue Concentration"
    },
    "body": {
-    "ko": "삼성전기의 필리핀 MLCC 신공장 건설 일정(2026년~2027년 하반기)이 거시경제 환경·관세 정책·현지 규제 등으로 지연될 경우 MLCC Cutter 수주 확대 시나리오가 차질을 빚을 수 있다. 과거 삼성전기의 AI 수요 대응 투자가 수차례 미뤄진 전례가 있으며, 이것이 2025년 실적 부진의 배경 중 하나였다. 이 리스크가 현실화되면 2026~2027년 실적 회복 전제 자체에 직접적인 타격이 된다.",
-    "en": "If Samsung Electro-Mechanics' Philippines MLCC factory construction schedule (2026–H2 2027) is pushed out due to macroeconomic headwinds, tariff policy shifts, or local regulatory hurdles, GIS's MLCC Cutter order expansion scenario would be disrupted. Samsung EM's AI-demand response investments have been delayed on multiple occasions in the past, and this dynamic was a contributing factor to GIS's weak 2025 performance. Materialization of this risk would directly undermine the 2026–2027 earnings recovery thesis."
+    "ko": "장비업체 특성상 소수의 대형 고객사 발주 시기와 규모에 매출이 크게 좌우된다. 고객사의 투자 계획이 지연되거나 축소될 경우 수주에서 매출로 이어지는 흐름이 늦어질 수 있으며, 이는 2026년 1분기의 매출 급감에서도 일부 확인된다. 특정 산업(반도체·MLCC) 사이클에 대한 의존도가 높은 점도 유의할 부분이다.",
+    "en": "As is typical for equipment makers, revenue is heavily dependent on the timing and scale of orders from a small number of large customers. If a customer's investment plans are delayed or scaled back, the flow from orders to revenue could slow, a pattern partly reflected in the sharp Q1 2026 revenue decline. High dependence on the semiconductor and MLCC industry cycle is also worth noting."
    }
   },
   {
    "cat": {
-    "ko": "신사업 수익화 지연 및 투자 비용 부담",
-    "en": "New Business Monetization Delay and Investment Cost Burden"
+    "ko": "신사업 불확실성",
+    "en": "Uncertainty in New Businesses"
    },
    "body": {
-    "ko": "드론·휴머노이드 부품·보글봇 등 신사업에 대한 개발·마케팅 비용이 선행 투입되고 있으나 의미있는 매출·이익 기여는 아직 없는 상태다. 신사업의 수익화가 지연될수록 관련 비용이 핵심 사업의 수익성을 잠식하는 기간이 길어진다. 드론·로봇 시장은 경쟁 강도가 높고 정책·규제 변화에 민감해 사업화 과정의 불확실성이 적지 않다.",
-    "en": "Development and marketing expenditures for new ventures — drones, humanoid-robot components, and the Boglbot — are being incurred ahead of any meaningful revenue or profit contribution. Prolonged delays in monetizing these businesses extend the period during which related costs weigh on core-segment profitability. The drone and robotics markets are highly competitive and sensitive to regulatory shifts, adding meaningful commercialization uncertainty."
+    "ko": "드론, 로봇(AI 시스템), 푸드테크(보글봇) 등 신사업은 아직 매출 기여 규모나 수익성이 명확히 검증되지 않은 초기 단계다. 방위산업 관련 프로젝트 참여 경험이 있으나, 이것이 안정적인 매출원으로 자리잡을지는 추가 확인이 필요하다. 신사업에 대한 투자가 기존 핵심 사업의 수익성 개선 속도에 영향을 줄 가능성도 배제할 수 없다.",
+    "en": "New businesses in drones, robotics (AI systems), and food-tech (Boglebot) are still at an early stage where their revenue contribution and profitability have not been clearly verified. While the company has experience participating in defense-related projects, whether this will become a stable revenue source requires further confirmation. It cannot be ruled out that investment in new businesses may affect the pace of profitability improvement in the core existing businesses."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 (2026년 2분기 실적 발표)",
-    "en": "August 2026 (2026Q2 Earnings Release)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "이월 수주 잔고가 실제 매출로 인식되어 영업 흑자로 전환되는지, 그리고 영업이익률 개선 폭이 회사와 증권사 전망에 부합하는지를 확인하는 가장 중요한 단기 체크포인트다.",
-    "en": "The most critical near-term checkpoint: whether the carried-over order backlog translates into recognized revenue and a return to operating profitability, and whether the margin improvement pace aligns with company and analyst guidance."
+    "ko": "2026년 3분기보고서 공시 시점으로, 2분기 영업흑자 전환이 이어지는지와 지배주주 순손실 축소 여부를 확인할 필요가 있다.",
+    "en": "Around the time of the Q3 2026 quarterly report filing, it will be worth checking whether the return to operating profit in Q2 continues and whether the net loss attributable to owners narrows."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (삼성전기 필리핀 장비 발주 동향)",
-    "en": "H2 2026 (Samsung EM Philippines Equipment Order Activity)"
+    "ko": "2026년 4분기 중",
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "삼성전기 필리핀 신공장 라인 증설 속도와 MLCC Cutter 추가 수주 공시 여부를 추적해야 한다. 공급계약 공시가 나오면 2027년 실적 가시성을 높이는 핵심 선행 지표가 된다.",
-    "en": "Track the pace of Samsung EM Philippines new-line buildout and watch for any supply contract disclosures for incremental MLCC Cutter orders. Any such announcements would serve as leading indicators for FY2027 earnings visibility."
+    "ko": "구미공장 MLCC 장비 생산 라인 추가 투입의 완료 시점과 실제 가동률, 수주에서 매출로 이어지는 리드타임 단축 효과를 확인할 필요가 있다.",
+    "en": "It is worth confirming the completion timing and actual utilization of the added MLCC equipment production line at the Gumi plant, and whether it shortens the lead time from orders to revenue."
    }
   },
   {
    "when": {
-    "ko": "2027년 5월 (9회차 CB 풋옵션 행사 가능일)",
-    "en": "May 2027 (9th-Tranche CB Put Option Date)"
+    "ko": "2026년 하반기 중",
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "2026년 5월 발행된 115억원 CB에 대해 사채권자가 조기상환을 청구할 수 있는 최초 시점이다. 이 시점까지 영업현금흐름이 개선되지 않으면 유동성 압박과 추가 자본 조달 가능성을 선제적으로 점검해야 한다.",
-    "en": "The earliest date from which holders of the KRW 11.5bn 9th-tranche CB can demand early repayment. If operating cash flow has not improved materially by then, liquidity pressure and the need for additional capital raises should be pre-assessed."
+    "ko": "필리핀 현지 지사 설립 완료 여부와 해외 고객 대응 체계 가동 시점을 공시나 보도를 통해 확인할 필요가 있다.",
+    "en": "Whether the Philippines subsidiary is completed and when the overseas customer support system begins operating should be confirmed through disclosures or news reports."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 초 (신사업 수주·공급계약 공시)",
-    "en": "H2 2026–Early 2027 (New Business Order or Contract Disclosures)"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "드론·휴머노이드 부품 및 보글봇 관련 공급계약 또는 양산 일정 공시 여부를 확인해야 한다. 신사업이 단순 투자 단계를 벗어나 실제 매출원으로 진입하는지를 판단하는 기준이 된다.",
-    "en": "Watch for any supply contracts or production-launch announcements related to drones, humanoid-robot components, or the Boglbot. These disclosures would indicate whether new businesses are transitioning from pure investment stage to actual revenue generation."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 초 (2026년 연간 영업현금흐름 확인)",
-    "en": "Early 2027 (FY2026 Full-Year Operating Cash Flow)"
-   },
-   "what": {
-    "ko": "4년 연속 마이너스였던 영업현금흐름이 2026년 흑자로 전환되는지를 연간 결산 공시에서 확인해야 한다. 이는 수익 구조의 실질적 개선 여부를 검증하는 가장 중요한 재무 건전성 지표다.",
-    "en": "At full-year results, verify whether operating cash flow turns positive after four consecutive negative years. This is the single most important financial-health metric for confirming whether earnings quality has genuinely improved."
+    "ko": "2026년 사업보고서 공시 시점으로, 연간 매출·영업이익의 실제 개선 폭과 부채비율·현금흐름 등 재무구조 개선 여부를 종합적으로 점검할 필요가 있다.",
+    "en": "Around the filing of the FY2026 annual business report, it will be useful to comprehensively check the actual scale of improvement in annual revenue and operating profit, along with whether the debt ratio and cash flow structure have improved."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "지아이에스는 일본 독점 시장을 국산화한 MLCC 커터 기술력과 삼성전기 내 높은 점유율을 바탕으로 AI 서버·전장 수요 확대의 직접 수혜 포지션에 있다. 삼성전기의 필리핀 공장 증설(2026~2027H2)과 글로벌 빅테크향 4,500억원 규모 MLCC 장기 공급계약 체결(2026년 6월)은 전방 수요 가시성을 강화하는 우호적 요인이다. 그러나 2022~2025년 중 3개 연도 순손실, 4년 연속 마이너스 영업현금흐름, 2025년말 부채비율 233.2% 급등, 전환사채 반복 발행이라는 재무 현실은 같은 무게로 고려해야 할 위험 요소다. 2026년 실적 회복의 관건은 이월 수주 잔고의 매출 인식 속도와 삼성전기 필리핀 장비 발주의 실현 여부에 달려 있으며, 이 두 변수가 현실화되는 속도가 전망의 신뢰도를 결정할 것이다. 신사업(드론·로봇·푸드테크)과 중대형 인덕터 공정 선점은 중장기 성장 옵션이나, 현 시점에서는 핵심 사업의 재무 건전성 회복이 우선 과제로 보인다. 2026년 2분기 실적 발표와 삼성전기 필리핀 장비 발주 공시가 사업 방향성을 판단할 핵심 체크포인트가 될 것이다.",
-   "en": "GIS holds a structurally advantaged position as the domesticated-technology leader in MLCC cutters with dominant share at Samsung Electro-Mechanics, directly exposed to the structural upcycle in AI server and automotive MLCC demand. Samsung EM's Philippines expansion (2026–H2 2027) and a KRW 450bn long-term MLCC supply contract signed with a global tech major in June 2026 provide incremental near-term demand visibility. At the same time, net losses in three of the four fiscal years from 2022 to 2025, four consecutive years of negative operating cash flow, a debt ratio surging to 233.2% at end-2025, and recurring convertible bond issuances are material financial risks that must be weighed equally. The pace at which the carried-over order backlog converts into recognized revenue — and the speed of Samsung EM Philippines equipment procurement — are the two variables that will determine the credibility of the 2026–2027 earnings recovery scenario. New businesses in drones, robotics, and food-tech, as well as early positioning in inductor processing, represent medium-to-long-term growth options, but restoring balance-sheet health in the core business remains the immediate priority. The 2026Q2 earnings release and Samsung EM Philippines equipment order disclosures will be the critical checkpoints for assessing the recovery thesis."
+   "ko": "지아이에스는 2026년 1월 옛 지아이에스와의 합병을 통해 반도체·디스플레이·드론 사업을 통합한 종합 장비 제조 기업으로 재편됐으며, AI 인프라 확산에 따른 MLCC 장비 수요 증가를 배경으로 2분기 영업이익이 흑자로 전환됐다. 다만 2022년부터 2025년까지 4개 연도 연속 지배주주 순손실을 기록했고, 2025년 부채비율은 233.2%까지 높아지는 등 재무 부담도 함께 관찰된다. 분기별로는 2026년 1분기 매출이 급감했다가 2분기에 크게 반등하는 등 변동성이 커, 수주-매출 전환의 안정성을 지속적으로 확인하는 것이 중요하다. 구미공장 증설과 필리핀 지사 설립 등 CAPA 확대 계획이 예정대로 진행되는지, 그리고 영업이익 개선이 순이익과 현금흐름 단계까지 이어지는지가 향후 관찰해야 할 핵심 포인트다. 드론·로봇·푸드테크 등 신사업은 사업 다각화 시도로서 의미가 있으나 아직 매출 기여가 검증되지 않았다. 종합적으로 볼 때 이 회사는 업황 개선의 초기 신호와 구조적 재무 부담이 공존하는 국면에 있다.",
+   "en": "GIS Co., Ltd. was restructured into an integrated equipment manufacturer spanning semiconductor, display, and drone businesses following its January 2026 merger with the former GIS unit, and returned to operating profit in the second quarter amid rising MLCC equipment demand driven by AI infrastructure expansion. However, the company has also recorded net losses attributable to owners in all four years from 2022 through 2025, and the 2025 debt ratio rose to 233.2%, indicating an accompanying financial burden. Quarterly results show significant volatility, with a sharp drop in Q1 2026 revenue followed by a large rebound in Q2, making it important to continue monitoring the stability of the order-to-revenue conversion. Whether capacity expansion plans such as the Gumi plant addition and the Philippines subsidiary proceed as planned, and whether the improvement in operating profit carries through to net income and cash flow, are the key points to watch going forward. The new businesses in drones, robotics, and food-tech are meaningful as diversification attempts but have not yet demonstrated verified revenue contribution. On balance, the company appears to be at a stage where early signs of an industry upturn coexist with structural financial burdens."
   }
  },
  "sources": [
-  "https://m.thinkpool.com/compDiscuss/cont/1025083",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A306620",
-  "https://m.thinkpool.com/stockDiscuss/306620/cont/11868820",
-  "https://plessald.com/companies/306620",
-  "https://markets.hankyung.com/stock/306620/financial-summary",
-  "https://alphasquare.co.kr/home/stock-summary?code=306620",
-  "https://bbn.kiwoom.com/rfCR11790",
-  "https://m.thinkpool.com/stockDiscuss/306620/cont/11865606",
-  "https://www.newstown.co.kr/news/articleView.html?idxno=697799",
-  "https://www.kdpress.co.kr/news/articleView.html?idxno=205071",
-  "https://sangsoo.synology.me/watchlist/306620",
   "https://m.thinkpool.com/item/306620",
-  "https://www.investing.com/equities/db-finance-no6-special-purpose",
   "https://www.stockplus.com/m/stocks/KOREA-A306620",
-  "https://itooza.com/vscore/306620",
+  "https://m.thinkpool.com/compDiscuss/cont/1025083",
+  "https://alphasquare.co.kr/home/stock-summary?code=306620",
   "https://finance.daum.net/quotes/A306620",
-  "https://www.datatooza.com/article/20260507163325436752ef33201b_80",
-  "https://www.thebell.co.kr/front/newsview.asp?key=202605141543596120104062"
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A306620",
+  "https://littlebproject.com/stock/306620/32/39832",
+  "https://www.tossinvest.com/stocks/A306620/order",
+  "https://m.irgo.co.kr/IR-COMP/306620/%EB%84%A4%EC%98%A8%ED%85%8C%ED%81%AC-IR-PAGE",
+  "https://markets.hankyung.com/stock/306620",
+  "https://www.newspim.com/news/view/20260813001344",
+  "https://www.investing.com/equities/general-mills-earnings",
+  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260514000728&docno=&viewerhost=",
+  "https://m.thinkpool.com/stockDiscuss/306620/cont/11865606",
+  "https://www.stockplus.com/m/stocks/KOREA-A306620/analysis",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=Z6L0JVWELPxIyXDm",
+  "https://news.infostock.co.kr/a",
+  "http://kr.acrofan.com/detail.php?number=433845&UA=PC"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "306620",
  "name": "지아이에스",
  "name_en": "GIS Co., Ltd.",
@@ -233,9 +223,9 @@
   "기계·장비"
  ],
  "market": "코스닥",
- "reportDate": "2026-07-01",
- "reportTs": "2026-07-01 22:50",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:51",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 1760,
-   "mcap": 0.0844,
+   "price": 1822,
+   "mcap": 0.0874,
    "shares": 47942184,
    "total_shares": 45014260,
    "wavg_shares": 44343849,
    "per": null,
    "eps": -82,
-   "pbr": 1.4159,
+   "pbr": 1.4658,
    "bps": 1243,
    "roe_ttm": -7.4,
    "ttm_window": "2025Q3~2026Q2",

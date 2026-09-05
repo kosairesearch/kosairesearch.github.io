@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "거래정지·자본잠식 속 재건 시나리오 점검",
-  "en": "Examining Restructuring Amid Trading Halt & Capital Impairment"
+  "ko": "거래정지 장기화 속 자본잠식 리스크",
+  "en": "Prolonged Trading Halt Amid Capital Impairment"
  },
  "lead": {
-  "ko": "부산주공은 횡령·배임 혐의에 따른 상장폐지 결정·거래정지 상태에서 최대주주 교체 및 유상증자를 통한 재무구조 개선을 모색하고 있으나, 2사업연도 연속 자본잠식과 지속적인 영업현금흐름 마이너스가 불확실성을 키우고 있다.",
-  "en": "Busan Juco is pursuing financial restructuring through a controlling shareholder change and rights offering amid a trading halt and delisting decision, but two consecutive years of capital erosion and persistently negative operating cash flows continue to weigh on prospects."
+  "ko": "부산주공은 상장폐지 결정에 따른 거래정지가 이어지는 가운데 2년 연속 자본잠식과 초고leverage 재무구조가 겹쳐 있어, 실적 개선 여부보다 상장 적격성 회복 여부가 핵심 변수로 남아 있다.",
+  "en": "Busan Casting remains under a trading halt tied to a delisting decision, with two consecutive years of capital impairment and extreme leverage meaning that restoring listing eligibility, not near-term earnings, is the central variable."
  },
  "keypoints": [
   {
-   "ko": "거래정지·상장폐지 결정: 2025년 11월 횡령·배임 혐의로 상장폐지가 결정되고 거래가 정지됐으며, 2026년 3월 감사보고서 제출 시 2사업연도 연속 자본잠식 50% 이상이 재확인됐다.",
-   "en": "Trading Halt & Delisting Decision: A delisting was decided in November 2025 due to fraud/embezzlement allegations and trading was suspended; the March 2026 audit report confirmed capital erosion exceeding 50% for two consecutive fiscal years."
+   "ko": "2025년 11월 17일 한국거래소 상장공시위원회가 상장폐지를 결정했으나, 2026년 4월 언론 보도 기준으로도 거래정지 상태가 지속되고 있어 정리매매 착수 여부가 아직 확정되지 않은 것으로 파악된다.",
+   "en": "The KRX listing committee decided on delisting on November 17, 2025, but as of an April 2026 media report the stock remained under a trading halt, indicating the final clearance sale process had not yet been confirmed to start."
   },
   {
-   "ko": "최대주주 교체·유상증자: 최대주주가 장세훈 외 4인으로 변경됐고, 2026년 초 제3자배정 유상증자(1,400만 주, 70억원)를 통해 운영자금과 채무상환 자금을 조달했다.",
-   "en": "Shareholder Change & Rights Offering: The controlling shareholder changed to Jang Se-hoon and associates; a third-party allotment of 14 million shares (KRW 7 billion) was completed in early 2026 to fund operations and debt repayment."
+   "ko": "2025년 연결 매출은 1,954억원으로 전년 대비 감소했고 영업이익률은 0.3%에 불과했지만, 순이익은 17.2억원으로 흑자 전환했다.",
+   "en": "2025 consolidated revenue fell year over year to KRW 195.4 billion with an operating margin of only 0.3%, yet net income turned positive at KRW 1.72 billion."
   },
   {
-   "ko": "2025년 연간 순이익 흑자전환: 전년 적자에서 약 17.2억원 흑자로 전환됐으나, 영업이익률은 0.3%에 불과하고 2026년 1분기에 다시 영업적자(-7.8억원)로 반전됐다.",
-   "en": "2025 Net Income Returned to Profit: Net income swung from a loss to approximately KRW 1.72 billion, but the operating margin remained razor-thin at 0.3%, and operations reverted to an operating loss of KRW 78 million in Q1 2026."
+   "ko": "2026년 1분기와 2분기 모두 영업손실과 순손실을 다시 기록하며 2025년의 흑자 전환이 지속되지 못하는 모습을 보였다.",
+   "en": "Both the first and second quarters of 2026 reverted to operating and net losses, suggesting the 2025 swing to profitability was not sustained."
   },
   {
-   "ko": "3년 연속 마이너스 영업현금흐름: 2023~2025년 영업활동 현금흐름이 연속으로 음수(2023: -35억, 2024: -33억, 2025: -66억원)를 기록하며, 자본잠식 구조 속 운전자본 압박이 지속되고 있다.",
-   "en": "Three Consecutive Years of Negative Operating Cash Flows: OCF was negative for three straight years (2023: −KRW 3.5B, 2024: −KRW 3.3B, 2025: −KRW 6.6B), signaling persistent working capital stress amid severe capital erosion."
+   "ko": "2026년 3월 제3자배정 유상증자로 70억원을 조달했음에도 같은 달 감사보고서에서 2사업연도 연속 자본잠식 50% 이상이 공시됐다.",
+   "en": "A KRW 7 billion third-party share placement completed in March 2026 was accompanied that same month by an audit report disclosing capital impairment above 50% for two consecutive fiscal years."
   },
   {
-   "ko": "전기차 전환 가속과 구조적 수요 위축: 주력 제품인 주철주물 자동차 부품의 핵심 전방 수요인 내연기관차 관련 시장이 전기차 전환 및 완성차 생산 변동으로 구조적 압박을 받고 있다.",
-   "en": "EV Transition Acceleration & Structural Demand Headwinds: The primary end market for cast iron automotive components faces structural pressure from accelerating EV adoption and volatile OEM production schedules."
+   "ko": "부채비율은 2023년 1,497.7%까지 치솟은 뒤 2025년에도 1,034.5%로 여전히 극단적으로 높은 수준을 유지하고 있다.",
+   "en": "The debt-to-equity ratio peaked at 1,497.7% in 2023 and remained extremely elevated at 1,034.5% in 2025."
   }
  ],
  "business": {
-  "ko": "부산주공은 1967년 설립, 1975년 유가증권시장(KOSPI)에 상장한 자동차 부품용 주철주물 제조 전문업체다. KRX 업종 분류상 '운송장비·부품'(FICS: 자동차부품)에 해당하며, 주요 제품은 엔진부품, 조향장치 부품, 제동장치 부품, 자동변속기 부품 등 자동차 동력전달 소재다. 생산 거점은 울산공장과 부산 기장군 신소재 일반산업단지이며, ISO TS16949 품질경영체제 인증을 보유해 국내 완성차 업계와 미국·유럽 자동차 업계에 제품을 납품하고 있다. 1980년대 이후 현대자동차 등 국내 완성차의 공급망에 편입되어 연매출 1,000억원대 이상의 전문 주물 소재 업체로 성장했다. 고부가가치 완성부품 생산 비중 확대를 위해 가공설비에 지속적으로 투자해왔으며, 수출 비중 확대와 신제품 개발이 핵심 전략으로 제시되어 있다. 다만 2022~2025년 구간 동안 누적된 적자로 자본잠식이 심화됐고, 횡령·배임 혐의 공시 이후 상장적격성 심사를 받게 되며 지배구조 리스크가 부각됐다. 현재 최대주주는 장세훈이며, 제3자배정 유상증자를 통해 경영권 및 자금조달 체계를 재정비 중이다. 사원수 235명 규모의 중견기업으로, 홈페이지 주소는 www.pci21c.com이다.",
-  "en": "Busan Juco (founded 1967, listed on KOSPI in 1975) is a specialist manufacturer of cast iron components for the automotive industry, classified by KRX under 'Transportation Equipment & Parts' (FICS: Auto Parts). Core products include engine parts, steering components, brake system castings, and automatic transmission components. The company operates from its Ulsan plant and the Busan Gijang New Materials General Industrial Complex, and holds ISO TS16949 certification, supplying domestic OEMs as well as customers in the United States and Europe. Since the 1980s it has been embedded in the supply chains of Hyundai Motor and other Korean automakers, growing into a cast materials specialist with annual revenues consistently above KRW 100 billion. The company has continually invested in machining equipment to increase the share of higher-value-added finished parts, with export expansion and new product development as central strategies. Cumulative losses from 2022 through 2025 deepened capital erosion, and allegations of fraud and embezzlement subsequently triggered a listing eligibility review that elevated governance risk. The current controlling shareholder is Jang Se-hoon, who restructured the ownership and funding structure through a third-party rights offering. The company employs approximately 235 people."
+  "ko": "부산주공은 1967년 설립된 자동차부품용 주물(캐스팅) 소재 전문 제조업체로, 부산 기장군 장안읍에 본사와 생산설비를 두고 있다. 핵심 제품은 엔진, 제동장치, 동력전달계통에 쓰이는 주물 소재로, 국내외 완성차 업체와 1차 부품업체에 공급되는 구조다. 사업 부문은 자동차 부품 제조가 매출의 100%를 차지하는 단일 사업 구조로, 2026년 2분기 기준으로도 이 구성은 유지되고 있다. 회사는 차량 경량화 추세로 전통적 주물 부품 수요가 줄어드는 환경 속에서 농기계 부품, 수소·전기차 관련 부품 등으로 공급처 다변화를 시도해온 것으로 알려졌다. 과거 대규모 공장 증설 투자가 재무 부담으로 이어졌다는 점도 업계 보도를 통해 확인된다. 2026년 기준 종업원 수는 약 258명 수준으로 파악된다. 경쟁 구도상 국내 주물업계 내에서는 대표적 업체로 꼽히지만, 상장 소형주로서 재무 규모와 자본력은 대형 부품사에 비해 열위에 있다. 최대주주는 2025년 하반기 장세훈 외 4인으로 변경된 이력이 있다.",
+  "en": "Founded in 1967, Busan Casting is a specialized manufacturer of cast metal components for automotive parts, headquartered and operating production facilities in Gijang-gun, Busan. Its core products are casting materials used in engines, brake systems, and powertrain components, supplied to domestic and overseas automakers and Tier-1 parts suppliers. The company operates as a single-segment business, with automotive parts manufacturing accounting for 100% of revenue as of the second quarter of 2026. Facing declining demand for traditional cast parts amid the vehicle lightweighting trend, the company has reportedly sought to diversify into agricultural machinery parts and hydrogen and electric vehicle components. Past reporting also indicates that large-scale plant expansion investment contributed to financial strain. As of 2026, the company is reported to have roughly 258 employees. Within Korea's domestic casting industry it is considered a notable player, but as a small-cap listed company its financial scale and capital base lag larger parts makers. Its controlling shareholder changed in the second half of 2025 to a group led by an individual and four others."
  },
  "earnings": {
-  "ko": "연간 실적 흐름을 보면, 2022년 매출 2,305억원에 영업손실 65억원(이익률 -2.8%)으로 가장 큰 영업 적자를 기록했다. 2023년에는 매출이 2,417억원으로 소폭 늘었으나 영업이익은 36억원(0.2%)으로 간신히 흑자를 냈고, 지배주주 순손실은 105억원에 달해 대규모 비영업 비용이 발생했음을 시사한다. 2024년에는 매출이 2,130억원으로 줄었음에도 영업이익이 73억원(3.4%)으로 크게 개선됐으나, 지배주주 순손실은 6억원 수준으로 지속됐다. 2025년에는 매출이 1,954억원으로 추가 감소하고 영업이익도 6억원(0.3%)으로 급락했지만, 지배주주 순이익은 17억원으로 흑자 전환을 달성했다. 분기별로는 2025년 1~3분기에 영업이익이 각각 2.5억원·7.6억원·1.3억원으로 미미했고, 4분기에는 영업손실(-5.5억원)에도 불구하고 비영업손익 효과로 지배주주 순이익이 63억원으로 급증했다―이는 유상증자·자산처분 등 일회성 요인의 영향으로 추정된다. 2026년 1분기에는 매출 509억원, 영업손실 -0.8억원, 지배주주 순손실 -24억원을 기록해 수익성 회복이 지연되고 있음을 보여줬다. 영업현금흐름은 2023년 이후 3년 연속 음수(-35억, -33억, -66억원)로, 이익 지표가 개선되는 구간에서도 현금 소진이 지속됐다는 점에 주목할 필요가 있다.",
-  "en": "Reviewing annual results: in 2022, revenue was KRW 230.5 billion with an operating loss of KRW 6.5 billion (margin: −2.8%), the weakest operating result in the review period. In 2023, revenue edged up to KRW 241.7 billion with a slim operating profit of KRW 364 million (0.2%), but a net loss attributable to owners of KRW 10.5 billion indicated heavy below-the-line charges. In 2024, revenue fell to KRW 213.0 billion, yet operating profit improved markedly to KRW 7.3 billion (3.4%); the net loss narrowed to KRW 573 million. In 2025, revenue continued to contract to KRW 195.4 billion and operating profit compressed sharply to KRW 578 million (0.3%), but net income attributable to owners returned to a positive KRW 1.72 billion. Quarterly, Q1–Q3 2025 each recorded modest operating profits (KRW 250M, KRW 755M, KRW 128M), while Q4 posted an operating loss of KRW 555 million alongside a striking net profit of KRW 6.33 billion — likely driven by one-time non-operating gains such as the rights offering or asset disposals. Q1 2026 delivered revenue of KRW 50.9 billion, an operating loss of KRW 78 million, and a net loss attributable to owners of KRW 2.41 billion, indicating that a durable earnings recovery has yet to take hold. Operating cash flows were negative for three consecutive years (2023: −KRW 3.5B; 2024: −KRW 3.3B; 2025: −KRW 6.6B), underscoring that the business has been consuming cash even during periods of nominal profit improvement."
+  "ko": "최근 4개 연간 실적을 보면 매출은 2022년 2,305억원에서 2023년 2,417억원으로 늘었다가 2024년 2,130억원, 2025년 1,954억원으로 2년 연속 감소했다. 영업이익률은 2022년 -2.8%의 영업손실에서 2023년 0.2%, 2024년 3.4%로 개선됐으나 2025년 다시 0.3%로 낮아졌다. 순이익 측면에서는 2022~2024년 3개 연도 연속 순손실(각각 -81.1억원, -104.5억원, -5.7억원)을 기록한 뒤 2025년 17.2억원의 순이익으로 흑자 전환했는데, 분기별로 보면 2025년 4분기 순이익이 63.3억원에 달해 연간 흑자 전환을 견인한 것으로 나타나 영업 외 요인의 기여가 컸을 가능성을 시사한다. 실제로 2025년 연간 영업이익은 5.8억원에 불과해 순이익 규모(17.2억원)와 괴리가 있다. 분기 흐름을 이어보면 2025년 2분기 영업이익 7.6억원, 3분기 1.3억원으로 이익이 줄어들다가 4분기에는 영업손실 5.5억원으로 전환됐고, 2026년 들어서도 1분기 영업손실 0.8억원, 2분기 영업손실 12.7억원으로 손실이 확대되는 흐름을 보였다. 순이익도 2026년 1분기 -24.1억원, 2분기 -21.9억원으로 2개 분기 연속 손실을 기록해, 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 순이익은 -5.2억원 수준으로 다시 적자권에 머물렀다. 영업활동현금흐름(CFO)은 2022년 199.3억원의 유입을 기록한 이후 2023년 -34.5억원, 2024년 -33.1억원, 2025년 -65.9억원으로 3년 연속 순유출을 보여, 손익상 일시적 흑자와는 별개로 현금창출력이 취약한 상태가 이어지고 있음을 보여준다. 부채비율은 2022년 910.0%에서 2023년 1,497.7%까지 급등한 뒤 2024년 1,316.7%, 2025년 1,034.5%로 다소 낮아졌지만 여전히 초고 레버리지 구간에 있다.",
+  "en": "Over the past four fiscal years, revenue rose from KRW 230.5 billion in 2022 to KRW 241.7 billion in 2023, then declined for two straight years to KRW 213.0 billion in 2024 and KRW 195.4 billion in 2025. Operating margin improved from a loss of -2.8% in 2022 to 0.2% in 2023 and 3.4% in 2024, before slipping back to 0.3% in 2025. On the bottom line, the company posted net losses for three consecutive years from 2022 through 2024 (KRW -8.1 billion, -10.5 billion, and -0.57 billion respectively) before swinging to a net profit of KRW 1.72 billion in 2025; quarterly data show fourth-quarter 2025 net income alone reached KRW 6.33 billion, driving the full-year turnaround and suggesting a meaningful contribution from non-operating items, since full-year operating profit was only KRW 0.58 billion versus the larger net profit figure. Tracing the quarterly path further, operating profit fell from KRW 0.76 billion in the second quarter of 2025 to KRW 0.13 billion in the third quarter, then turned to an operating loss of KRW 0.55 billion in the fourth quarter; losses widened further into 2026, with operating losses of KRW 0.08 billion in the first quarter and KRW 1.27 billion in the second quarter. Net income also posted losses of KRW -2.41 billion and KRW -2.19 billion in the first and second quarters of 2026, respectively, meaning the trailing four-quarter net income (third quarter 2025 through second quarter 2026) totaled roughly KRW -0.52 billion, back in loss territory. Operating cash flow, after an inflow of KRW 19.9 billion in 2022, turned negative for three straight years — KRW -3.45 billion in 2023, KRW -3.31 billion in 2024, and KRW -6.59 billion in 2025 — indicating persistently weak underlying cash generation despite the temporary accounting profit. The debt-to-equity ratio surged from 910.0% in 2022 to 1,497.7% in 2023, then eased to 1,316.7% in 2024 and 1,034.5% in 2025, but remains in an extremely high-leverage range."
  },
  "industry": {
-  "ko": "부산주공의 핵심 전방시장은 내연기관(ICE) 자동차 부품으로, 글로벌 완성차 업계의 전기차 전환 가속이 주철주물 부품 수요에 구조적 위협으로 작용한다. 국내 자동차 시장은 2025년 완성차 업체의 생산 변동과 수요 불확실성으로 부품 수요 감소 압박을 받았으며, 이는 부산주공의 매출 감소(2023년 2,417억원→2025년 1,954억원)에 직결됐다. 자동차 주물 부품 분야는 중국 업체와의 저가 경쟁이 심화돼 있으며, 부산주공은 ISO TS16949 인증과 가공부품 고부가가치화로 차별화를 추구한다. EU의 2035년 신규 내연기관차 판매 금지 정책 등 친환경 규제 강화는 중장기적으로 핵심 전방 수요를 잠식할 방향으로 작용한다. 단기적으로는 현존 내연기관차 유지·보수 수요와 하이브리드 차량 부품 수요가 일정 수준의 완충 역할을 할 수 있다. 한국 조선 빅3(HD현대·삼성중공업·한화오션) 중심의 고부가가치 선종 수주 호황과 달리, 부산주공이 속한 자동차부품 주물 분야는 완성차 생산 사이클과 원자재 비용의 이중 압박 속에 있다.",
-  "en": "Busan Juco's primary end market is ICE automotive components, and the accelerating global shift toward electric vehicles poses a structural threat to demand for cast iron parts. Domestic auto market conditions in 2025 were characterized by OEM production variability and demand uncertainty, directly contributing to the revenue decline from KRW 241.7 billion in 2023 to KRW 195.4 billion in 2025. The automotive castings segment faces intensifying price competition from Chinese manufacturers, against which Busan Juco differentiates through ISO TS16949 certification and investment in higher-value-added machined parts. Environmental regulations — notably the EU's 2035 ban on new ICE vehicle sales — are expected to structurally erode the core end market over the medium to long term. In the near term, demand for maintenance of the existing ICE fleet and for hybrid vehicle components may provide a partial demand buffer. Unlike the high-value-added shipbuilding boom benefiting Korea's big-three yards, the automotive castings sub-sector in which Busan Juco operates faces the dual headwinds of OEM production cycles and raw material cost pressure."
+  "ko": "국내 자동차부품 주물 산업은 완성차의 경량화 전환이라는 구조적 흐름에 직면해 있다. 알루미늄, 복합소재 등 경량 부품이 확산되면서 전통적인 철계 주물 부품 수요는 장기적으로 정체되거나 축소되는 압력을 받고 있는 것으로 알려져 있다. 전기차 전환 역시 내연기관 중심 주물 부품 수요 구조를 바꾸는 요인으로, 파워트레인 부품 구성이 달라지면서 기존 주물업체들에게는 포트폴리오 재편이 요구되는 상황이다. 부산주공은 이런 환경 속에서 농기계, 수소·전기차 관련 부품으로 공급처 다변화를 모색해온 것으로 보이나, 신사업의 매출 기여 규모가 구체적으로 확인되지는 않는다. 업계 내에서 부산주공은 오랜 업력을 가진 주물 전문업체로 분류되지만, 상장 소형주로서 대형 부품 계열사나 자본력이 큰 경쟁사에 비해 투자 여력과 재무 완충력이 상대적으로 취약하다. 여기에 2년 연속 자본잠식과 거래정지라는 상장 적격성 이슈가 겹쳐 있어, 산업 사이클보다 개별 기업의 재무·상장 리스크가 투자 판단에서 더 큰 비중을 차지하는 상황이다.",
+  "en": "Korea's automotive parts casting industry faces the structural shift toward vehicle lightweighting. As aluminum and composite components spread, demand for traditional ferrous casting parts is reported to face long-term stagnation or contraction pressure. The shift to electric vehicles is also altering the demand structure that had centered on internal combustion powertrain casting parts, requiring portfolio adjustments from legacy casting suppliers. Against this backdrop, Busan Casting appears to have sought diversification into agricultural machinery and hydrogen or electric vehicle-related components, though the specific revenue contribution from these new areas has not been confirmed. Within the industry, the company is classified as a long-established casting specialist, but as a small-cap listed company its investment capacity and financial buffer are relatively weaker than larger parts affiliates or better-capitalized competitors. Compounding this, two consecutive years of capital impairment and an ongoing trading halt tied to listing eligibility mean that company-specific financial and listing risk currently weighs more heavily on the investment picture than the broader industry cycle."
  },
  "outlook": {
-  "ko": "부산주공의 가장 시급한 불확실성은 거래정지 해제 및 상장 지위 유지 여부다. 2025년 11월 상장폐지가 결정된 이후 최대주주 변경과 유상증자를 통한 재무구조 개선 노력이 진행 중이며, 상장공시위원회의 추가 심의가 사실상의 분수령이다. 2026년 3월 감사보고서에서 2사업연도 연속 자본잠식 50% 이상이 재확인됐으나, 주권이 이미 상장폐지 결정 상태여서 별도의 실질심사로는 이어지지 않았다. 최대주주 장세훈은 2026년 초 1,400만주 제3자배정 유상증자(발행가 500원, 70억원)를 직접 인수해 운영자금·채무상환 자금을 조달했으며, 이는 재건 의지를 보여주는 구체적 행동이다. 수익성 측면에서는 신제품 개발, 수출 비중 확대, 완성부품 가공설비 투자를 통한 고부가가치화가 중기 전략으로 제시돼 있으나, 2026년 1분기 영업적자 재진입이 전략 실행 속도의 한계를 시사한다. 2026년 7월부터 강화되는 KRX 상장폐지 요건(주가 1,000원 미만 동전주 기준 신설, 유가증권시장 시가총액 300억원 미만 상장폐지)도 주요 변수로 부상했다. 회사가 공개적으로 제시한 구체적 매출·이익 가이던스는 현재 확인되지 않는다.",
-  "en": "The most pressing uncertainty for Busan Juco remains whether its trading suspension will be lifted and whether listed status can be maintained. Following the November 2025 delisting decision, efforts toward financial rehabilitation — including the shareholder change and rights offering — are ongoing, and further deliberation by the KRX Listing Committee is the pivotal juncture. The March 2026 audit report confirmed two consecutive years of capital erosion above 50%, but since delisting had already been decided in November 2025, this did not initiate a separate formal listing eligibility review. Controlling shareholder Jang Se-hoon directly subscribed to the 14-million-share, KRW 7 billion rights offering (issue price: KRW 500) in early 2026 to fund operations and debt repayment, representing a tangible commitment to restructuring. On the strategic side, new product development, export expansion, and machining investment for higher-value components are stated medium-term priorities, though the return to an operating loss in Q1 2026 suggests execution pace remains limited. New, stricter KRX delisting rules effective July 2026 — including a penny-stock threshold (below KRW 1,000) and a KRW 30 billion minimum KOSPI market cap — add a further structural dimension to watch. No specific revenue or profit guidance has been publicly disclosed by the company."
+  "ko": "부산주공에 대한 증권사 컨센서스는 확인되지 않으며, 회사 측의 별도 실적 가이던스도 공개된 자료에서는 파악되지 않는다. 확인된 사실 기준으로는 2026년 3월 제3자배정 유상증자를 통해 1,400만 주를 발행해 70억원을 조달했고, 신주는 2026년 3월 9일 상장 예정으로 공시된 바 있다. 같은 시점 감사보고서에서는 개별 기준 자산총계 2,190억원, 부채총계 1,997억원, 자본총계 193억원과 함께 2사업연도 연속 자본잠식 50% 이상이라는 점이 공시됐다. 회사의 재무구조 개선 카드로는 과거부터 언급된 부산 기장군 장안읍 반룡리 소재 산업단지 부지의 매각이 있으나, 관련 잔금 지급 일정이 여러 차례 연기된 바 있다는 언론 보도가 있어 완결 여부와 시점은 추가 확인이 필요하다. 상장 측면에서는 2025년 11월 17일 상장폐지 결정이 내려졌음에도 2026년 4월 시점 보도에서 여전히 거래정지 상태로 분류돼 있어, 정리매매 개시나 효력정지 가처분 등 후속 절차의 진행 상황이 확인되지 않은 상태다. 이런 구조에서는 실적 자체의 개선 여부와 별개로 상장 적격성 관련 거래소 공시 일정이 투자자에게 더 중요한 확인 포인트가 될 수 있다.",
+  "en": "No brokerage consensus for Busan Casting could be confirmed, and no separate company earnings guidance was identified in available disclosures. Based on confirmed facts, the company raised KRW 7 billion in March 2026 through a third-party placement of 14 million new shares, with the new shares disclosed as scheduled to list on March 9, 2026. An audit report from the same period disclosed standalone total assets of KRW 219 billion, total liabilities of KRW 199.7 billion, and total equity of KRW 19.3 billion, alongside capital impairment above 50% for two consecutive fiscal years. A previously discussed lever for balance-sheet improvement is the sale of an industrial-park site in Ballyong-ri, Jangan-eup, Gijang-gun, Busan, though media reports indicate the related final payment schedule had been postponed multiple times, so its completion status and timing require further confirmation. On the listing front, despite a delisting decision on November 17, 2025, an April 2026 report still classified the stock as under a trading halt, meaning the progress of follow-on procedures such as the start of a final clearance sale or any stay-of-effect injunction remains unconfirmed. Under this structure, exchange disclosures related to listing eligibility may matter to investors as much as, or more than, operational earnings improvement itself."
  },
  "valuation_comment": {
-  "ko": "KRX 공시 기준 BPS는 245원으로, 수년간 지속된 자본잠식으로 인해 순자산 자체가 극히 축소된 상태다. 현 주가 수준은 이 낮아진 순자산 대비 크게 웃도는 구간에 위치하며, 자본잠식 기업에 일반적으로 적용되는 청산가치 또는 사업 재건 프리미엄의 맥락에서 해석해야 한다. 2022~2024년 지속된 적자로 의미 있는 이익 지표 산출이 불가능했다가 2025년 흑자 전환으로 이익 기반이 일부 복원됐으나, 영업이익 마진이 0%대 초반에 그치고 2026년 1분기에 영업적자로 재전환된 점은 이익 지속성에 의구심을 남긴다. 무배당(DPS 0원) 기조가 유지되고 있어 현금환원 측면의 투자 유인은 부재한 상태다. 무엇보다 거래정지 상태라는 특수 상황에서는 통상적 밸류에이션 잣대의 유효성 자체가 제한되며, 상장 지위 유지 여부와 이익 창출 능력의 정상화가 정상적 기업 가치 산정의 선결 조건이다.",
-  "en": "The KRX-disclosed BPS stands at KRW 245, reflecting the severe contraction in net assets caused by years of capital erosion. The current share price sits materially above this diminished book value, and any premium should be interpreted in the context of liquidation value or a restructuring-scenario premium rather than conventional earnings-based metrics. After several years when meaningful earnings measures were incalculable due to consecutive losses, the return to net profit in 2025 partially restored an earnings basis; however, with operating margins remaining in the sub-1% range and a return to an operating loss in Q1 2026, earnings sustainability is not yet demonstrated. The company pays no dividends (DPS: KRW 0), leaving no cash return as an investment draw. Most critically, the extraordinary circumstance of an active trading suspension limits the applicability of standard valuation frameworks; the preservation of listed status and a normalization of earnings-generating capability are necessary preconditions for any conventional valuation assessment."
+  "ko": "부산주공은 상장폐지 결정 이후 거래정지가 이어지고 있는 것으로 파악되는 만큼, 화면에 표시되는 가격과 이를 기반으로 산출되는 밸류에이션 지표는 실시간 매매를 통해 형성된 값이 아니라 정지 직전 마지막 거래가를 반영한 값일 가능성을 함께 고려해야 한다. 순자산 대비 주가의 관계를 보면, 2사업연도 연속 자본잠식이라는 재무 상태가 자본총계 자체를 크게 축소시켜 왔다는 점에서 순자산가치 산정의 기초가 되는 자본 규모 자체가 매년 크게 흔들려 왔음을 감안할 필요가 있다. 손익 측면에서는 2022~2024년 3년 연속 순손실 이후 2025년 순이익으로 전환됐지만 2026년 상반기 다시 손실로 돌아선 흐름이어서, 이익 안정성이 확립되었다고 보기는 어려운 상태다. 배당 관련해서는 최근 공시 기준 주당 배당금이 없는 것으로 파악돼, 배당을 통한 주주환원 트랙레코드는 부재한 상황이다. 이런 재무·상장 상태의 특수성을 감안할 때, 통상적인 상장 기업 간 밸류에이션 비교보다는 자본잠식 해소와 거래 재개 여부 자체가 우선적으로 확인돼야 하는 변수로 판단된다.",
+  "en": "Because Busan Casting appears to remain under a trading halt following its delisting decision, any displayed price and the valuation metrics derived from it should be understood as potentially reflecting the last traded price before the halt rather than values formed through live trading. In terms of the relationship between share price and net assets, it is worth noting that two consecutive years of capital impairment have sharply reduced total equity itself, meaning the capital base underlying any net-asset-value calculation has fluctuated significantly year to year. On the earnings side, the pattern of three consecutive years of net losses from 2022 through 2024, a swing to net profit in 2025, and a reversion to losses in the first half of 2026 makes it difficult to characterize earnings stability as established. Regarding shareholder returns, the most recent disclosures indicate no per-share cash dividend, so there is no track record of dividend-based capital return. Given these financial and listing-status specifics, resolving the capital impairment and confirming whether trading resumes are arguably the variables that need to be checked first, ahead of any conventional cross-company valuation comparison."
  },
  "bull": [
   {
    "title": {
-    "ko": "최대주주 주도 재무구조 재건 의지",
-    "en": "Controlling Shareholder-Led Financial Rehabilitation"
+    "ko": "2025년 순이익 흑자 전환",
+    "en": "2025 Net Income Turned Positive"
    },
    "body": {
-    "ko": "최대주주 장세훈이 2026년 초 제3자배정 유상증자(1,400만 주, 70억원)를 직접 인수하며 회사 재건에 자금을 투입했다. 부채비율이 2023년 1,497.7%에서 2025년 1,034.5%로 꾸준히 개선됐으며, 자기자본도 2024년 159.8억원에서 2025년 193.1억원으로 회복됐다. 신규 경영진 체제 하에서 재무구조 개선 노력이 지속된다면 상장 적격성 심사에서 긍정적 판단 근거가 될 수 있는 기반이 마련될 수 있다.",
-    "en": "Controlling shareholder Jang Se-hoon personally subscribed to the 14-million-share, KRW 7 billion third-party rights offering in early 2026, directly funding the company's restructuring. The debt ratio steadily declined from 1,497.7% in 2023 to 1,034.5% in 2025, and equity attributable to owners recovered from KRW 15.98 billion in 2024 to KRW 19.31 billion in 2025. Continued commitment to financial improvement under new management could form a constructive basis for the listing eligibility review going forward."
+    "ko": "2022~2024년 3년 연속 순손실을 기록한 뒤 2025년 연결 순이익이 17.2억원으로 흑자 전환했다. 4분기 순이익이 63.3억원에 달해 연간 흑자를 견인한 만큼, 향후 유사한 비영업적 이익 요인이 재현될 경우 손익 개선의 여지가 있다. 다만 이 흑자가 핵심 영업에서 비롯된 것인지는 영업이익률 0.3%라는 수치와 함께 해석할 필요가 있다.",
+    "en": "After three consecutive years of net losses from 2022 through 2024, consolidated net income turned positive in 2025 at KRW 1.72 billion. Fourth-quarter net income of KRW 6.33 billion drove the annual turnaround, so a recurrence of similar non-operating gain factors could support further improvement. Whether this profit stemmed from core operations should be weighed against the 0.3% operating margin recorded for the year."
    }
   },
   {
    "title": {
-    "ko": "2022~2025년 영업이익 개선 흐름",
-    "en": "Improving Operating Income Trend from 2022 to 2025"
+    "ko": "자본 조달 및 자산 유동화 시도",
+    "en": "Capital Raising and Asset Monetization Efforts"
    },
    "body": {
-    "ko": "영업이익은 2022년 -65억원에서 2023년 +36억원, 2024년 +73억원으로 회복세를 보였다. 2025년 연간 순이익이 흑자로 전환(+17.2억원)된 점은 3년 누적 적자 흐름을 끊었다는 상징성이 있다. 내연기관 부품 수요가 단기적으로 유지되는 구간에서 원가 구조가 안정된다면 영업이익률의 점진적 회복 여지가 존재한다.",
-    "en": "Operating profit improved from a loss of KRW 6.5 billion in 2022, to a gain of KRW 364 million in 2023, to KRW 7.3 billion in 2024, before compressing back to KRW 578 million in 2025. The return to positive net income in 2025 (KRW 1.72 billion) breaks a three-year streak of net losses. If ICE component demand holds in the near term and cost structures stabilize, there is incremental room for operating margin recovery."
+    "ko": "2026년 3월 제3자배정 유상증자로 70억원을 조달해 운영자금을 확보했다. 여기에 과거부터 논의된 부산 기장군 산업단지 부지 매각이 완결될 경우 대규모 자금 유입과 부채 축소 효과를 기대할 수 있다. 다만 해당 매각 잔금 일정은 과거 여러 차례 연기된 바 있어 실행 시점의 불확실성이 남아 있다.",
+    "en": "In March 2026 the company raised KRW 7 billion through a third-party share placement to secure operating funds. In addition, completion of the previously discussed sale of the industrial-park site in Gijang-gun, Busan, could bring a large cash inflow and reduce debt. However, the final payment schedule for this sale has reportedly been postponed multiple times in the past, leaving execution timing uncertain."
    }
   },
   {
    "title": {
-    "ko": "수출 다변화 및 고부가가치 부품 전환 전략",
-    "en": "Export Diversification and High-Value Parts Strategy"
+    "ko": "공급처 다변화 시도",
+    "en": "Attempted Diversification of Customer Base"
    },
    "body": {
-    "ko": "부산주공은 미국·유럽 자동차 업계에 제품을 납품하며 내수 의존도를 분산하는 수출 다변화 전략을 추진해왔다. 완성부품 가공설비 투자를 통한 고부가가치화는 단순 소재 공급 구조에서 벗어나 수익성 개선의 구조적 경로가 될 수 있다. 수소트럭 부품 등 차세대 모빌리티 수요 발굴 경험도 장기적 포트폴리오 다변화의 출발점으로 작용할 수 있다.",
-    "en": "Busan Juco has been diversifying export exposure by supplying the U.S. and European automotive markets, reducing domestic demand concentration risk. Investment in machining equipment to produce higher-value-added finished components offers a structural path to margin improvement beyond raw castings. The company's experience supplying parts for hydrogen trucks provides a potential anchor for longer-term product portfolio diversification."
+    "ko": "차량 경량화로 전통 주물 부품 수요가 줄어드는 환경에서 회사는 농기계, 수소·전기차 관련 부품으로 공급처를 넓히려 한 것으로 알려져 있다. 이는 기존 내연기관 주물 의존도를 낮추는 방향으로 사업 구조를 재편하려는 시도로 해석될 수 있다. 다만 신사업 부문의 구체적 매출 비중은 공개 자료로 확인되지 않는다.",
+    "en": "Amid declining demand for traditional casting parts due to vehicle lightweighting, the company is reported to have sought to broaden its customer base into agricultural machinery and hydrogen or electric vehicle-related components. This can be read as an attempt to restructure the business away from reliance on internal-combustion casting. However, the specific revenue contribution of these new business areas is not confirmed in public disclosures."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "거래정지·상장폐지 결정의 현존 리스크",
-    "en": "Active Trading Halt and Delisting Decision Risk"
+    "ko": "2026년 상반기 재차 적자 전환",
+    "en": "Reversion to Losses in First Half of 2026"
    },
    "body": {
-    "ko": "2025년 11월 KRX 상장공시위원회는 횡령·배임 혐의를 근거로 상장폐지를 결정했으며, 현재도 거래가 정지된 상태다. 2026년 7월부터 적용되는 강화된 상장폐지 요건(1,000원 미만 동전주 기준 신설, 유가증권시장 시가총액 300억원 미만) 하에서 현 상황이 추가 요건에 저촉될 가능성이 있다. 상장 지위가 최종 박탈될 경우 투자자의 보통주 처분 기회가 극히 제한된다.",
-    "en": "In November 2025, the KRX Listing Committee decided to delist Busan Juco on grounds of fraud and embezzlement, and trading remains suspended as of the report date. New, stricter delisting criteria effective July 2026 — including a penny-stock threshold (below KRW 1,000) and a KRW 30 billion minimum market cap for KOSPI — may present additional compliance challenges. Should the delisting be finalized, shareholders' ability to dispose of ordinary shares would be severely curtailed."
+    "ko": "2025년 연간 순이익 흑자와 달리 2026년 1분기(-24.1억원)와 2분기(-21.9억원) 모두 순손실을 기록했다. 영업손실도 2분기에 12.7억원으로 확대돼, 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 순이익이 다시 마이너스로 돌아섰다. 2025년의 흑자 전환이 구조적 개선이라기보다 일시적 요인에 가까웠을 가능성을 시사한다.",
+    "en": "Unlike the full-year 2025 net profit, both the first quarter (KRW -2.41 billion) and second quarter (KRW -2.19 billion) of 2026 posted net losses. The operating loss also widened to KRW 1.27 billion in the second quarter, pushing the trailing four-quarter net income (third quarter 2025 through second quarter 2026) back into negative territory. This suggests the 2025 turnaround may have been closer to a temporary factor than a structural improvement."
    }
   },
   {
    "title": {
-    "ko": "지속적인 현금 소진과 자본잠식 구조",
-    "en": "Persistent Cash Burn and Capital Impairment Structure"
+    "ko": "극단적 고레버리지와 자본잠식",
+    "en": "Extreme Leverage and Capital Impairment"
    },
    "body": {
-    "ko": "2023~2025년 영업활동 현금흐름이 모두 마이너스(-35억, -33억, -66억원)로, 영업 자체가 현금을 소진하는 구조가 지속됐다. 2026년 3월 감사보고서에서 2사업연도 연속 자본잠식 50% 이상이 재확인됐으며, 2025년 기준 부채비율 1,034.5%는 업계 평균을 크게 상회한다. 이익이 흑자 전환됐더라도 영업현금흐름이 회복되지 않으면 운전자본 압박은 구조적으로 지속될 수밖에 없다.",
-    "en": "Operating cash flows were negative for three consecutive years (2023: −KRW 3.5B; 2024: −KRW 3.3B; 2025: −KRW 6.6B), indicating the core business has been structurally cash-consumptive. The March 2026 audit report reconfirmed capital erosion exceeding 50% for two consecutive fiscal years, and the 2025 debt ratio of 1,034.5% remains far above industry norms. Even with a nominal return to net profit, the absence of positive operating cash generation perpetuates structural working capital stress."
+    "ko": "부채비율은 2023년 1,497.7%까지 치솟았고 2025년에도 1,034.5%로 여전히 매우 높다. 2026년 3월 감사보고서에서는 2사업연도 연속 자본잠식 50% 이상이 공시돼, 자본 완충력이 크게 훼손된 상태임을 보여준다. 이런 재무구조는 추가 자금조달이나 자산 매각이 지연될 경우 유동성 부담으로 이어질 수 있다.",
+    "en": "The debt-to-equity ratio spiked to 1,497.7% in 2023 and remained very high at 1,034.5% in 2025. A March 2026 audit report disclosed capital impairment above 50% for two consecutive fiscal years, showing that the company's capital buffer has been severely eroded. Such a structure could translate into liquidity strain if further fundraising or asset sales are delayed."
    }
   },
   {
    "title": {
-    "ko": "전기차 전환 가속으로 인한 구조적 수요 감소",
-    "en": "Structural Demand Decline from EV Transition Acceleration"
+    "ko": "거래정지 장기화 및 상장폐지 결정",
+    "en": "Prolonged Trading Halt and Delisting Decision"
    },
    "body": {
-    "ko": "주력 제품인 주철주물 엔진·제동·동력전달 부품은 내연기관차에 의존하는 수요 구조를 가진다. EU의 2035년 신규 내연기관차 판매 금지 정책 등은 중장기적으로 핵심 전방 수요를 잠식할 방향으로 작용한다. 매출이 2023년 2,417억원에서 2025년 1,954억원으로 약 19% 감소한 것도 부분적으로 이 구조적 변화를 이미 반영하고 있다.",
-    "en": "Core products — cast iron engine, brake, and powertrain components — are structurally dependent on ICE vehicle demand. The EU's 2035 new ICE sales ban and other regulatory measures are expected to erode the primary end market over the medium to long term. The approximately 19% revenue decline from KRW 241.7 billion in 2023 to KRW 195.4 billion in 2025 partly reflects this structural shift already materializing."
+    "ko": "2025년 11월 17일 상장폐지 결정이 내려졌고, 2026년 4월 보도 기준으로도 거래정지 상태가 지속되고 있는 것으로 확인된다. 이 경우 정리매매 개시나 효력정지 가처분 등 후속 절차가 어떻게 진행되는지에 따라 주주의 매매 가능성과 회수 가능액이 크게 달라질 수 있다. 실적 개선과 무관하게 상장 지위 자체가 최대 불확실성으로 남아 있다.",
+    "en": "A delisting decision was handed down on November 17, 2025, and as of an April 2026 report the stock remained under a trading halt. Depending on how follow-on procedures such as the start of a final clearance sale or a stay-of-effect injunction unfold, shareholders' ability to trade and potential recovery amounts could vary significantly. Regardless of any earnings improvement, the listing status itself remains the largest source of uncertainty."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "상장 지위 위험",
-    "en": "Listing Status Risk"
+    "ko": "상장 적격성 리스크",
+    "en": "Listing Eligibility Risk"
    },
    "body": {
-    "ko": "2025년 11월 상장폐지 결정 이후 거래가 정지된 상태이며, 2026년 3월 감사보고서에서 자본잠식 50% 이상이 재확인됐다. 최대주주의 재무 개선 노력이 상장공시위원회의 판단 기준을 충족하지 못할 경우 상장폐지가 확정될 수 있다. 거래 정지 기간 중 보통주 환금성이 사실상 소멸하며, 7월부터 강화되는 KRX 요건이 추가 리스크 요인으로 작용한다.",
-    "en": "Trading has been suspended since the November 2025 delisting decision, and the March 2026 audit confirmed ongoing capital erosion above 50%. If the controlling shareholder's rehabilitation efforts fall short of KRX Listing Committee criteria, delisting may be finalized. Ordinary share liquidity is effectively nil during the trading suspension, and new stricter KRX criteria from July 2026 represent an additional risk dimension."
+    "ko": "2025년 11월 상장폐지 결정 이후에도 거래정지가 이어지고 있어 정리매매나 상장 유지 여부에 대한 최종 절차가 마무리되지 않은 것으로 파악된다. 관련 이의신청이나 가처분 절차의 결과에 따라 주주가 실제로 주식을 매도할 수 있는 시점과 가격이 크게 달라질 수 있다. 투자자는 회사 실적보다 이 절차의 진행 상황을 우선적으로 확인할 필요가 있다.",
+    "en": "Even after the November 2025 delisting decision, the trading halt has continued, indicating the final procedure for a clearance sale or continued listing has not concluded. Depending on the outcome of any objection or injunction process, the timing and price at which shareholders can actually sell shares could vary significantly. Investors should prioritize monitoring the progress of this procedure over the company's operating results."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·횡령 사법 리스크",
-    "en": "Governance & Fraud Legal Risk"
+    "ko": "재무 건전성 리스크",
+    "en": "Financial Solvency Risk"
    },
    "body": {
-    "ko": "상장폐지 결정의 직접 원인인 횡령·배임 혐의에 대한 법적·형사적 절차가 진행 중일 수 있으며, 추가 손실 인식이나 손해배상 청구로 이어질 가능성이 존재한다. 감사인이 '계속기업으로 존속할 수 있는지 불확실'하다는 의견을 제시한 바 있다. 최대주주 교체 이후에도 내부통제 체계의 충분한 복원 여부는 아직 검증이 필요하다.",
-    "en": "Legal and criminal proceedings related to the fraud and embezzlement allegations — the direct cause of the delisting decision — may still be ongoing, potentially resulting in additional recognized losses or damage claims. The auditor has previously flagged uncertainty about the company's ability to continue as a going concern. Whether internal controls have been adequately restored under the new management team remains to be independently verified."
+    "ko": "2사업연도 연속 자본잠식 50% 이상과 부채비율 1,000%를 웃도는 재무구조는 추가 자본 확충이나 채무조정이 지연될 경우 계속기업 가정에 부담을 줄 수 있다. 영업활동현금흐름도 2023~2025년 3년 연속 순유출을 기록해 자체 현금창출력이 취약한 상태다. 이런 구조에서는 예정된 자산 매각이나 증자가 지연될 경우 유동성 리스크가 커질 수 있다.",
+    "en": "A financial structure marked by capital impairment above 50% for two consecutive fiscal years and a debt-to-equity ratio exceeding 1,000% could strain the going-concern assumption if further capital raising or debt restructuring is delayed. Operating cash flow also posted net outflows for three consecutive years from 2023 through 2025, indicating weak internal cash generation. Under this structure, delays in planned asset sales or capital increases could heighten liquidity risk."
    }
   },
   {
    "cat": {
-    "ko": "전방산업 구조변화 및 경쟁 심화 리스크",
-    "en": "End-Market Structural Change & Competitive Intensity Risk"
+    "ko": "산업 구조 및 실행 리스크",
+    "en": "Industry Structure and Execution Risk"
    },
    "body": {
-    "ko": "글로벌 전기차 전환으로 주철주물 기반 내연기관 부품 수요가 중장기적으로 감소할 것으로 예상된다. 현재의 재무 여력이 고부가가치 부품 전환 및 수출 다변화 투자를 충분히 뒷받침하기 어려운 상황이다. 중국 저가 주물 업체와의 경쟁 심화도 국내외 시장에서 마진 압박을 가중시키는 요인이다.",
-    "en": "The global EV transition is expected to structurally reduce demand for cast iron ICE components over the medium to long term. The company's constrained financial position limits its capacity to fund the investment necessary for a meaningful shift to higher-value-added components or export market expansion. Intensifying competition from low-cost Chinese casting manufacturers adds further margin pressure in both domestic and overseas markets."
+    "ko": "완성차의 경량화 전환과 전기차 파워트레인 확산은 전통적 주물 부품 수요를 장기적으로 축소시킬 수 있는 구조적 요인이다. 회사가 추진해온 산업단지 부지 매각은 과거 여러 차례 잔금 일정이 지연된 바 있어, 재무구조 개선 계획의 실행 리스크가 상존한다. 신규 사업 다변화 역시 아직 매출 기여 규모가 공개적으로 확인되지 않아 성과가 가시화되기까지 시간이 걸릴 수 있다.",
+    "en": "The shift toward vehicle lightweighting and the spread of electric vehicle powertrains are structural factors that could shrink demand for traditional casting parts over the long term. The company's planned industrial-site sale has reportedly seen its final payment schedule postponed multiple times in the past, so execution risk remains in the balance-sheet improvement plan. New business diversification also has yet to show a publicly confirmed revenue contribution, meaning it may take time for results to become visible."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 7월 이후 (KRX 강화 상장폐지 요건 시행)",
-    "en": "July 2026 Onwards (Enhanced KRX Delisting Rules Take Effect)"
+    "ko": "2026년 11월경(3분기 보고서 공시 예정 시점)",
+    "en": "Around November 2026 (expected third-quarter report filing)"
    },
    "what": {
-    "ko": "7월부터 유가증권시장에 주가 1,000원 미만 동전주 기준 신설 및 시가총액 300억원 미만 상장폐지 요건이 적용된다. 이미 거래정지 상태인 부산주공에 이 요건이 어떻게 적용되는지, 추가 공시 의무나 심의가 발생하는지 확인이 필요하다.",
-    "en": "New KOSPI delisting rules effective July 2026 include a penny-stock threshold (below KRW 1,000) and a KRW 30 billion minimum market cap. It is important to monitor how these rules interact with Busan Juco's existing trading suspension status and whether they trigger additional disclosure or formal review procedures."
+    "ko": "2026년 3분기 영업손익과 순손익이 상반기의 손실 흐름을 이어가는지, 아니면 재차 개선되는지를 확인해야 한다.",
+    "en": "Check whether third-quarter 2026 operating and net results extend the loss trend seen in the first half or show renewed improvement."
    }
   },
   {
    "when": {
-    "ko": "2026년 8월 중순 (2026년 2분기 실적 발표)",
-    "en": "Mid-August 2026 (Q2 2026 Earnings Release)"
+    "ko": "확인 시점 미정(거래소 공시 상시 모니터링 필요)",
+    "en": "Timing unconfirmed (requires ongoing monitoring of exchange disclosures)"
    },
    "what": {
-    "ko": "2026년 1분기 영업적자(-7.8억원) 이후 2분기 실적을 통해 영업이익 흑자 전환 여부와 영업현금흐름 개선 여부를 확인해야 한다. 매출 회복세 및 원가율 변화가 재건 시나리오의 핵심 지표다.",
-    "en": "Following Q1 2026's operating loss of KRW 78 million, Q2 2026 results will be critical for assessing whether the company can return to operating profitability and whether operating cash flows show meaningful improvement. Revenue recovery and cost ratio trends are the key metrics for evaluating the restructuring scenario."
+    "ko": "2025년 11월 상장폐지 결정 이후 진행 중인 거래정지의 후속 절차(정리매매 개시, 이의신청·가처분 결과 등)가 어떻게 마무리되는지 확인이 필요하다.",
+    "en": "Monitor how the follow-on procedures for the ongoing trading halt after the November 2025 delisting decision are resolved, including any final clearance sale, objection, or injunction outcome."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (KRX 상장공시위원회 최종 심의)",
-    "en": "2H 2026 (KRX Listing Committee Final Deliberation)"
+    "ko": "2026년 하반기 중",
+    "en": "During the second half of 2026"
    },
    "what": {
-    "ko": "상장폐지 결정에 대한 회사 측 이의신청 또는 재심사 결과와 상장공시위원회의 최종 판단이 상장 지위를 결정하는 가장 핵심적 이벤트다. 최대주주의 추가 자금 투입 여부, 재무구조 개선 실적, 운영 정상화 증빙이 심의 결과에 직결된다.",
-    "en": "The KRX Listing Committee's final ruling — following any objection or re-examination request by the company — is the single most consequential event for Busan Juco's listed status. The extent of further capital injection by the controlling shareholder, demonstrated balance sheet improvement, and evidence of operational normalization will directly inform the outcome."
+    "ko": "과거 여러 차례 연기된 부산 기장군 반룡리 산업단지 부지 매각 잔금 지급이 실제로 완결되는지, 완결 시 부채비율 개선 규모를 확인해야 한다.",
+    "en": "Verify whether the repeatedly postponed final payment for the industrial-site sale in Ballyong-ri, Gijang-gun, Busan, is actually completed, and if so, the resulting scale of debt-ratio improvement."
    }
   },
   {
    "when": {
-    "ko": "2026년 3~4분기 (완성차 생산 계획 및 수주 동향)",
-    "en": "Q3–Q4 2026 (OEM Production Plans & Order Trends)"
+    "ko": "2027년 3월경(2026 사업연도 감사보고서 제출 예정 시점)",
+    "en": "Around March 2027 (expected filing of the 2026 fiscal-year audit report)"
    },
    "what": {
-    "ko": "현대·기아 등 국내 완성차 업체의 생산 계획 변화와 미국 관세 정책에 따른 수출 차량 수요 변동이 부산주공의 수주 방향성을 좌우한다. 수주 가시성 회복 여부가 2026년 하반기 매출 반등의 핵심 선행 지표다.",
-    "en": "Production schedule adjustments by domestic OEMs (Hyundai, Kia, etc.) and shifts in export vehicle demand driven by U.S. tariff policy will directly shape Busan Juco's order flow. Recovery in order visibility is a key leading indicator for a potential revenue rebound in the second half of 2026."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월 (FY2026 감사보고서 제출)",
-    "en": "March 2027 (FY2026 Audit Report Submission)"
-   },
-   "what": {
-    "ko": "FY2026 감사보고서는 자본잠식 해소 여부, 계속기업 불확실성 의견 지속 여부를 확인하는 분기점이다. 영업현금흐름이 플러스로 전환되거나 자본잠식이 해소된다면 재건 시나리오의 가시성이 높아질 것이다.",
-    "en": "The FY2026 audit report will confirm whether capital erosion has been resolved and whether the going-concern uncertainty flagged by auditors persists. A turn to positive operating cash flow or a resolution of capital impairment would materially improve visibility for the restructuring scenario."
+    "ko": "2026 사업연도 감사보고서에서 자본잠식률이 완화되는지, 3년 연속 자본잠식 50% 이상 등 추가 상장 리스크 요건에 해당하는지를 확인해야 한다.",
+    "en": "Check whether the 2026 fiscal-year audit report shows an easing of the capital impairment ratio, or whether it triggers additional listing-risk criteria such as a third consecutive year of impairment above 50%."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "부산주공은 1967년 창업 이래 58년 역사를 가진 자동차 주철주물 부품 전문 업체이나, 현재 횡령·배임 혐의에 따른 상장폐지 결정과 거래정지라는 전례 없는 불확실성 국면을 통과 중이다. 2025년 연간 순이익이 흑자로 전환(+17.2억원)되고 부채비율이 개선되는 등 재건 신호가 일부 나타났으나, 2026년 1분기 영업적자 재진입과 3년 연속 마이너스 영업현금흐름은 이익 지속성에 의문부호를 남긴다. 최대주주 교체와 70억원 규모 유상증자는 재건 의지를 나타내는 구체적 조치이나, 2사업연도 연속 자본잠식 50% 이상 확인이라는 재무 현실은 상장 지위 회복의 장벽이 여전히 높음을 의미한다. 전기차 전환 가속이라는 산업 구조 변화 앞에서 주철주물 내연기관 부품 전문 업체로서의 중장기 사업 모델 전환 가능성도 중요한 검토 축이다. 향후 KRX 상장공시위원회의 최종 판단, 2026년 2분기 이후 영업이익 회복 여부, 강화된 상장폐지 요건 적용 결과, 그리고 FY2026 감사보고서 상 자본잠식 해소 여부가 이 회사의 주요 분기점으로 순차적으로 확인될 것이다.",
-   "en": "Busan Juco, with 58 years of history since its 1967 founding, is a cast iron automotive component specialist navigating an unprecedented period of uncertainty defined by a delisting decision and trading suspension arising from fraud and embezzlement allegations. While partial recovery signals have appeared — a return to net profit in 2025 (KRW 1.72 billion) and an improving debt ratio — the return to an operating loss in Q1 2026 and three consecutive years of negative operating cash flows raise material questions about earnings sustainability. The controlling shareholder change and KRW 7 billion rights offering represent concrete rehabilitative actions, but two consecutive years of confirmed capital erosion above 50% mean legal and financial barriers to recovering listed status remain high. The structural challenge of transitioning away from a cast iron ICE-component business model — given accelerating EV adoption — is an equally important medium-term consideration. The KRX Listing Committee's final ruling, operating profit recovery from Q2 2026 onward, the application of new delisting criteria from July 2026, and the FY2026 audit's verdict on capital impairment will together constitute the most consequential sequential decision points for this company."
+   "ko": "부산주공은 자동차부품용 주물을 생산하는 오랜 업력의 제조업체이지만, 현재 투자 판단에서 가장 중요한 변수는 실적 그 자체가 아니라 상장 적격성 회복 여부다. 2025년 연간 순이익은 흑자로 전환했지만 영업이익률이 0.3%에 그쳤고, 2026년 상반기에는 영업손실과 순손실이 재발해 흑자 전환의 지속성이 확인되지 않았다. 부채비율이 1,000%를 웃돌고 2사업연도 연속 자본잠식 50% 이상이라는 재무 상태는 통상적인 상장 기업과는 다른 잣대로 봐야 할 필요성을 시사한다. 2025년 11월 상장폐지 결정 이후에도 거래정지가 이어지고 있는 것으로 파악되는 만큼, 정리매매 개시나 이의신청·가처분 절차의 진행 상황을 확인하는 것이 실적 분석보다 우선될 필요가 있다. 산업단지 부지 매각이나 유상증자를 통한 재무구조 개선 시도는 확인되지만, 실행 시점과 완결 여부에는 불확실성이 남아 있다. 투자자는 이런 특수한 상장·재무 상태를 충분히 인지한 상태에서 관련 공시를 지속적으로 확인할 필요가 있다.",
+   "en": "Busan Casting is a long-established manufacturer of automotive casting components, but the most important variable for the current investment picture is not earnings performance itself but whether listing eligibility can be restored. Full-year 2025 net income turned positive, but the operating margin was only 0.3%, and operating and net losses reappeared in the first half of 2026, meaning the durability of the 2025 turnaround has not been confirmed. A debt-to-equity ratio above 1,000% and capital impairment above 50% for two consecutive fiscal years suggest the company needs to be evaluated by a different standard than a typical listed firm. Given that the trading halt appears to have continued even after the November 2025 delisting decision, tracking the progress of any final clearance sale, objection, or injunction procedure should take priority over earnings analysis. Attempts at balance-sheet improvement through an industrial-site sale or capital increase are confirmed, but uncertainty remains over their execution timing and completion. Investors should remain fully aware of this unusual listing and financial status and continue monitoring related disclosures."
   }
  },
  "sources": [
-  "https://linksesang2026.com/?m=vd&bid=124&no=5189&q=%EB%B6%80%EC%82%B0%EC%A3%BC%EA%B3%B5%28005030%29",
-  "https://goinsider.kr/stock/00124151",
-  "https://www.butler.works/ko/companies/00124151",
-  "https://www.thinkpool.com/item/005030",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A005030",
   "https://www.kokstock.com/stock/item.asp?item_cd=005030",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A005030&cID=&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
-  "https://clik.nanet.go.kr/clikr-collection/policyinfo/212/1051/2026/CLIKC1071711589640568_attach_1.pdf",
-  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=005030",
-  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=888917&gn=1",
+  "https://linksesang2026.com/?m=vd&bid=124&no=5189&q=%EB%B6%80%EC%82%B0%EC%A3%BC%EA%B3%B5%28005030%29",
+  "https://www.butler.works/ko/companies/00124151",
+  "https://m.thinkpool.com/item/005030",
+  "https://finance.finup.co.kr/Stock/005030",
+  "https://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=005030",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A005030",
+  "https://goinsider.kr/stock/00124151",
+  "https://www.sankun.com/company-info/SKnSz8g0hom0U-rC2JWuwg",
   "https://kind.krx.co.kr/common/disclsviewer.do?method=searchInitInfo&acptNo=20250515002023&docno=",
-  "https://www.busanpa.com/board/view.bpa?boardId=BBS_0000036&menuCd=DOM_000000105005004000&paging=ok&startPage=1&dataSid=36016",
-  "https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1151",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/dEMycHN4NHZmUW5XM2JFY0VtaGcxdz09/company_nm/%EB%B6%80%EC%82%B0%EC%A3%BC%EA%B3%B5(%EC%A3%BC)",
+  "https://www.catch.co.kr/Comp/CompSummary/380270",
+  "https://m.irgo.co.kr/IR-ROOM/009540",
   "https://alphasquare.co.kr/home/theme-factor?theme-id=240",
-  "https://www.daehanship.com/",
-  "https://www.asiasis.com/news/news_kr_view.php?idx_no=86645",
+  "https://www.ibtomato.com/ExternalView.aspx?type=1&no=19278",
+  "https://www.ebc.com/kr/forex/306717.html",
   "https://v.daum.net/v/bL570FjJy2",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/dEMycHN4NHZmUW5XM2JFY0VtaGcxdz09/company_nm/%EB%B6%80%EC%82%B0%EC%A3%BC%EA%B3%B5(%EC%A3%BC)"
+  "https://www.newstomato.com/ReadNews.aspx?no=1310882"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "005030",
  "name": "부산주공",
  "name_en": "PUSAN CAST IRON CO.,LTD",
@@ -233,9 +223,9 @@
   "조선"
  ],
  "market": "코스피",
- "reportDate": "2026-06-30",
- "reportTs": "2026-06-30 20:56",
- "dataDate": "20260821",
+ "reportDate": "2026-09-05",
+ "reportTs": "2026-09-05 18:51",
+ "dataDate": "20260904",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
