@@ -232,6 +232,9 @@ ACC_IDS = {
     "equity_owner": ("ifrs-full_EquityAttributableToOwnersOfParent",
                      "ifrs_EquityAttributableToOwnersOfParent"),
     "equity_nci":   ("ifrs-full_NoncontrollingInterests", "ifrs_NoncontrollingInterests"),
+    # 자본금 = 액면가 × 발행주식수. 액면가가 그대로면 자본금이 늘었다는 것은
+    # 주식수가 그만큼 늘었다는 뜻이다 — 증자를 가리키는, 섞이지 않는 신호다.
+    "capital":      ("ifrs-full_IssuedCapital", "ifrs_IssuedCapital"),
     "cfo":          ("ifrs-full_CashFlowsFromUsedInOperatingActivities",
                      "ifrs_CashFlowsFromUsedInOperatingActivities"),
 }
@@ -249,6 +252,7 @@ ACC_NAMES = {
     "equity":       ("자본총계",),
     "equity_owner": ("지배기업소유주지분", "지배기업의소유주에게귀속되는자본"),
     "equity_nci":   ("비지배지분", "비지배주주지분"),
+    "capital":      ("자본금",),
     "cfo":          ("영업활동현금흐름", "영업활동으로인한현금흐름"),
 }
 
@@ -316,7 +320,7 @@ def _fin_all(dart, ticker, year, reprt):
     def sj_ok(key, sj):
         if key in ("rev", "rev_ins", "op", "np", "np_owner", "np_nci", "eps_basic"):
             return sj in ("IS", "CIS")
-        if key in ("assets", "liab", "equity", "equity_owner", "equity_nci"):
+        if key in ("assets", "liab", "equity", "equity_owner", "equity_nci", "capital"):
             return sj == "BS"
         return sj == "CF"
 
