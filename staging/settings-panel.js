@@ -221,8 +221,14 @@ function css() {
 .ks-x:hover{background:rgba(0,0,0,.06)}
 :root[data-theme="dark"] .ks-x:hover{background:rgba(255,255,255,.08)}
 .ks-main{flex:1;display:flex;min-height:0}
+/* 왼쪽 목록과 오른쪽 내용을 가르는 선.
+   전에는 --hair 를 썼는데 다크에서 그 값이 흰색 8% 라 #1a1b26 배경 위에서
+   사실상 보이지 않았다. 창 안에서만 쓰는 전용 값을 둔다 — 이러면 이 창을
+   띄우는 페이지가 --hair 를 정의하든 말든 선이 늘 같은 굵기로 보인다. */
+.ks-card{--ks-line:rgba(0,0,0,.12)}
+:root[data-theme="dark"] .ks-card{--ks-line:rgba(255,255,255,.13)}
 .ks-nav{flex:none;width:196px;padding:12px 10px;overflow:auto;
-  border-right:1px solid var(--hair,rgba(0,0,0,.07))}
+  border-right:1px solid var(--ks-line)}
 .ks-nav button{display:block;width:100%;text-align:left;border:0;background:transparent;
   cursor:pointer;padding:9px 12px;border-radius:9px;color:var(--fg-2);
   font:600 13.5px var(--font-sans,system-ui)}
@@ -309,7 +315,7 @@ function css() {
   .ks-card{max-width:none;height:100%;border-radius:0}
   .ks-main{flex-direction:column}
   .ks-nav{width:auto;display:flex;gap:6px;overflow-x:auto;padding:10px 12px;
-    border-right:0;border-bottom:1px solid var(--hair,rgba(0,0,0,.07))}
+    border-right:0;border-bottom:1px solid var(--ks-line)}
   .ks-nav button{width:auto;white-space:nowrap;padding:8px 12px}
   .ks-panel{padding:16px}
 }`;
