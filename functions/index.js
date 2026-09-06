@@ -2027,6 +2027,48 @@ function assertAdmin(req) {
   return email;
 }
 
+/* ── 접속기록 ────────────────────────────────────────────────────────
+   개인정보처리방침 8번에 "개인정보처리시스템에 대한 접속기록을 1년 이상
+   보관하고 월 1회 이상 점검한다" 고 적었다. 적어 놓고 안 하면 그게 더 큰
+   문제이므로 여기서 실제로 남긴다.
+
+   근거는 「개인정보의 안전성 확보조치 기준」 제8조다. 기록할 항목이 정해져
+   있다 — 계정 · 접속일시 · 접속지 정보 · 처리한 정보주체 정보 · 수행업무.
+   아래 필드가 그 다섯이다.
+
+   무엇을 남기고 무엇을 안 남기나. 고시가 말하는 것은 '개인정보처리시스템에
+   접속하는 자(정보주체 제외)' 다. 회원이 자기 워치리스트를 보는 것은 대상이
+   아니다. 관리자가 남의 개인정보를 들여다보는 것이 대상이다. 그래서 admin*
+   함수에만 붙인다.
+
+   실패해도 던지지 않는다 — 기록을 못 남겼다고 조회를 막으면 사장님이 일을
+   못 한다. 대신 콘솔 로그에 남기고, 월간 점검 메일이 그 실패까지 함께 본다.
+
+   보관은 366일. 월간 점검(reviewAdminAccessLogs)이 지난 것을 지운다.
+   파이어스토어 TTL 정책을 콘솔에서 따로 켜지 않아도 되게 스스로 지운다. */
+const ADMIN_LOG_DAYS = 366;
+
+async function logAdminAccess(db, account, req, work, subjects) {
+  try {
+    const r = (req && req.rawRequest) || {};
+    const h = r.headers || {};
+    const ip = String(h["x-forwarded-for"] || r.ip || "").split(",")[0].trim().slice(0, 45);
+    const ua = String(h["user-agent"] || "").slice(0, 300);
+    await db.collection("adminAccessLogs").add({
+      account,                                              // 계정
+      at: admin.firestore.FieldValue.serverTimestamp(),     // 접속일시
+      ip: ip || null,                                       // 접속지 정보
+      subjects: String(subjects || "").slice(0, 200),       // 처리한 정보주체 정보
+      work: String(work || "").slice(0, 100),               // 수행업무
+      ua: ua || null,
+      expireAt: admin.firestore.Timestamp.fromMillis(
+        Date.now() + ADMIN_LOG_DAYS * 24 * 60 * 60 * 1000),
+    });
+  } catch (e) {
+    console.error(`[adminAccessLog] 실패 account=${account} work=${work}: ${e && e.message}`);
+  }
+}
+
 function tsIso(v) {
   try { return v && v.toDate ? v.toDate().toISOString() : null; } catch (e) { return null; }
 }
@@ -2060,8 +2102,9 @@ function providerLabel(v) {
    수신동의를 받은 날부터 2년마다 수신동의 여부를 확인해야 한다. 안내할 때
    전송자 명칭·수신동의 날짜·유지 또는 철회 방법을 함께 알려야 한다. */
 exports.adminConsentStats = onCall({ region: REGION, cors: true }, async (req) => {
-  assertAdmin(req);
+  const who = assertAdmin(req);
   const db = admin.firestore();
+  await logAdminAccess(db, who, req, "동의 현황 통계 조회", "전체 회원(집계)");
   const users = await db.collection("users").limit(5000).get();
   const now = Date.now();
 
@@ -2146,10 +2189,12 @@ exports.adminConsentStats = onCall({ region: REGION, cors: true }, async (req) =
 
 /* 한 사람의 현재 동의 상태와 이력. 이메일 또는 uid 로 찾는다. */
 exports.adminConsentLookup = onCall({ region: REGION, cors: true }, async (req) => {
-  assertAdmin(req);
+  const who = assertAdmin(req);
   const db = admin.firestore();
   const q = String(((req.data || {}).q) || "").trim().toLowerCase();
   if (!q) throw new HttpsError("invalid-argument", "이메일 또는 uid 가 필요합니다.");
+  // 무엇을 찾았는지까지 남긴다 — '처리한 정보주체 정보' 가 고시의 필수 항목이다.
+  await logAdminAccess(db, who, req, "회원 동의 이력 조회", q);
 
   /* 이메일로 찾을 때 users 문서만 보면 안 된다.
 
@@ -2220,8 +2265,10 @@ exports.adminConsentLookup = onCall({ region: REGION, cors: true }, async (req) 
 
 /* 마케팅 수신 동의자 목록 — 발송 전에 뽑는다. 내보내기(CSV)에도 쓴다. */
 exports.adminMarketingList = onCall({ region: REGION, cors: true }, async (req) => {
-  assertAdmin(req);
+  const who = assertAdmin(req);
   const db = admin.firestore();
+  // 개인정보를 파일로 내보내는 자리다. 조회보다 더 확실히 남겨야 한다.
+  await logAdminAccess(db, who, req, "마케팅 수신 동의자 목록 내려받기(CSV)", "수신 동의 회원 전체");
   const snap = await db.collection("users")
     .where("consents.marketing", "==", true).limit(5000).get();
   const rows = snap.docs.map((d) => {
@@ -2267,9 +2314,11 @@ exports.adminMarketingList = onCall({ region: REGION, cors: true }, async (req) 
 exports.adminNotifyUnconsented = onCall(
   { region: REGION, cors: true, secrets: [RESEND_API_KEY] },
   async (req) => {
-    assertAdmin(req);
+    const who = assertAdmin(req);
     const db = admin.firestore();
     const dryRun = (req.data || {}).dryRun !== false;   // 기본은 미리 보기
+    await logAdminAccess(db, who, req,
+      dryRun ? "미동의 회원 안내 메일 대상 확인" : "미동의 회원 안내 메일 발송", "미동의 회원");
     const CONSENT_EPOCH = Date.parse("2026-08-20T00:00:00Z");
     const MAX_SEND = 200;
 
@@ -2351,8 +2400,9 @@ exports.adminNotifyUnconsented = onCall(
    Auth 에 없는 문서만 지운다. 조회가 실패하면 아무것도 지우지 않는다 —
    '못 읽었다' 를 '없다' 로 읽으면 멀쩡한 회원 문서를 지우게 된다. */
 exports.adminPurgeOrphans = onCall({ region: REGION, cors: true }, async (req) => {
-  assertAdmin(req);
+  const who = assertAdmin(req);
   const db = admin.firestore();
+  await logAdminAccess(db, who, req, "유령 회원 문서 정리", "전체 회원(대조·삭제)");
   const MAX = 200;
   const docs = (await db.collection("users").limit(2000).get()).docs;
   const removed = [];
@@ -2372,8 +2422,9 @@ exports.adminPurgeOrphans = onCall({ region: REGION, cors: true }, async (req) =
 });
 
 exports.adminUserList = onCall({ region: REGION, cors: true }, async (req) => {
-  assertAdmin(req);
+  const who = assertAdmin(req);
   const db = admin.firestore();
+  await logAdminAccess(db, who, req, "회원 목록 조회", "전체 회원");
   const CAP = 2000;
   const snap = await db.collection("users").limit(CAP + 1).get();
   const truncated = snap.size > CAP;
@@ -3671,6 +3722,106 @@ async function alertOps(subject, lines){
   }
 }
 
+/* ── 접속기록 월간 점검 ──────────────────────────────────────────────
+   「개인정보의 안전성 확보조치 기준」 제8조는 보관만이 아니라 '월 1회 이상
+   점검' 을 함께 요구한다. 사람이 달력을 보고 챙기는 일은 반드시 빠진다 —
+   빠졌다는 사실조차 남지 않는다. 그래서 기계가 하게 한다.
+
+   이 함수가 보내는 메일 자체가 점검을 했다는 증적이다. 그리고 메일은 지워질
+   수 있으므로 adminAccessReviews 에도 남긴다 — 감사 때 "언제 점검했는가" 에
+   답해야 하는 것은 메일함이 아니라 기록이다.
+
+   지난달치를 본다. 매월 1일에 돌므로 그 시점에 지난달은 이미 닫혀 있다.
+
+   보관 기간이 지난 기록은 같은 자리에서 지운다. 파이어스토어 TTL 정책을
+   콘솔에서 따로 켜야 하는 방식은 켰는지 확인할 방법이 코드에 없어서,
+   지우는 일까지 여기서 한다. */
+exports.reviewAdminAccessLogs = onSchedule(
+  { region: REGION, schedule: "0 9 1 * *", timeZone: "Asia/Seoul",
+    secrets: [RESEND_API_KEY] },
+  async () => {
+    const db = admin.firestore();
+    const now = new Date();
+    // 한국 시간 기준으로 지난달의 시작과 끝을 잡는다(UTC+9).
+    const kst = new Date(now.getTime() + 9 * 3600 * 1000);
+    const from = new Date(Date.UTC(kst.getUTCFullYear(), kst.getUTCMonth() - 1, 1) - 9 * 3600 * 1000);
+    const to = new Date(Date.UTC(kst.getUTCFullYear(), kst.getUTCMonth(), 1) - 9 * 3600 * 1000);
+    const label = `${from.getUTCFullYear()}년 ${new Date(from.getTime() + 9 * 3600 * 1000).getUTCMonth() + 1}월`;
+
+    let rows = [];
+    try {
+      const snap = await db.collection("adminAccessLogs")
+        .where("at", ">=", admin.firestore.Timestamp.fromDate(from))
+        .where("at", "<", admin.firestore.Timestamp.fromDate(to))
+        .orderBy("at").limit(5000).get();
+      rows = snap.docs.map((d) => d.data());
+    } catch (e) {
+      console.error("[접속기록 점검] 조회 실패:", e && e.message);
+      await alertOps("접속기록 점검을 하지 못했습니다", [
+        `${label} 접속기록을 읽지 못했습니다: ${(e && e.message) || "알 수 없음"}`,
+        "법정 점검 의무가 걸린 자리이므로 직접 확인하여 주시기 바랍니다.",
+      ]);
+      return;
+    }
+
+    // 계정별·업무별로 센다. 이상한 것이 있으면 사람 눈에 띄어야 한다.
+    const byAccount = {}, byWork = {}, ips = new Set();
+    for (const r of rows) {
+      byAccount[r.account || "(없음)"] = (byAccount[r.account || "(없음)"] || 0) + 1;
+      byWork[r.work || "(없음)"] = (byWork[r.work || "(없음)"] || 0) + 1;
+      if (r.ip) ips.add(r.ip);
+    }
+    const line = (o) => Object.entries(o).sort((a, b) => b[1] - a[1])
+      .map(([k, v]) => `${k} ${v}건`).join(" · ") || "없음";
+
+    // 보관 기간이 지난 기록을 지운다(366일).
+    let purged = 0;
+    try {
+      const old = await db.collection("adminAccessLogs")
+        .where("expireAt", "<", admin.firestore.Timestamp.fromDate(now)).limit(500).get();
+      for (let i = 0; i < old.docs.length; i += 400) {
+        const batch = db.batch();
+        old.docs.slice(i, i + 400).forEach((d) => batch.delete(d.ref));
+        await batch.commit();
+      }
+      purged = old.docs.length;
+    } catch (e) {
+      console.error("[접속기록 점검] 파기 실패:", e && e.message);
+    }
+
+    // 점검했다는 사실을 남긴다. 메일은 지워질 수 있고, 이 기록은 남는다.
+    try {
+      await db.collection("adminAccessReviews").add({
+        period: label,
+        from: admin.firestore.Timestamp.fromDate(from),
+        to: admin.firestore.Timestamp.fromDate(to),
+        total: rows.length,
+        byAccount, byWork,
+        ipCount: ips.size,
+        purged,
+        reviewedAt: admin.firestore.FieldValue.serverTimestamp(),
+      });
+    } catch (e) {
+      console.error("[접속기록 점검] 기록 실패:", e && e.message);
+    }
+
+    await alertOps(`${label} 개인정보처리시스템 접속기록 점검`, [
+      "「개인정보의 안전성 확보조치 기준」 제8조에 따른 월간 점검 결과입니다.",
+      "",
+      `점검 대상 기간: ${label}`,
+      `접속 건수: ${rows.length}건`,
+      `계정별: ${line(byAccount)}`,
+      `수행업무별: ${line(byWork)}`,
+      `접속지(IP) 종류: ${ips.size}곳`,
+      `보관 기간(366일)이 지나 파기한 기록: ${purged}건`,
+      "",
+      rows.length === 0
+        ? "이 기간에 관리자가 회원 개인정보에 접근한 기록이 없습니다."
+        : "모르는 계정이나 낯선 접속지가 있으면 즉시 확인하여 주시기 바랍니다.",
+    ]);
+  }
+);
+
 /* 만들고 기다렸다 07:28 에 올린다. 워크플로가 그 대기를 스스로 한다. */
 exports.wakeMorningBrief = onSchedule(
   { region: REGION, schedule: "40 6 * * 1-5", timeZone: "Asia/Seoul",
@@ -3908,8 +4059,10 @@ exports.marketingRecheck = onSchedule(
 exports.adminMarketingRecheck = onCall(
   { region: REGION, cors: true, secrets: [RESEND_API_KEY] },
   async (req) => {
-    assertAdmin(req);
+    const who = assertAdmin(req);
     const dryRun = (req.data || {}).dryRun !== false;
+    await logAdminAccess(admin.firestore(), who, req,
+      dryRun ? "마케팅 2년 재확인 대상 확인" : "마케팅 2년 재확인 메일 발송", "재확인 대상 회원");
     return await runMarketingRecheck({ dryRun, limit: 100 });
   }
 );
