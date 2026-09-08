@@ -1,0 +1,102 @@
+{
+  "date": "2026-09-09",
+  "tradeDate": "20260908",
+  "marketOpen": true,
+  "title": {
+    "ko": "반도체가 올린 하루, 중앙값은 0%",
+    "en": "Chips Did the Lifting; the Median Stock Went Nowhere"
+  },
+  "lead": {
+    "ko": "간밤 뉴욕은 다우와 S&P500이 내렸는데 필라델피아 반도체지수만 올랐고, 원인은 유가였다. 직전 국내 장의 상승도 반도체·전력기기 몇 종목에 몰려 있었던 만큼, 오늘은 쏠림이 이어지는지와 유가발 금리 압력이 어디까지 오는지를 나눠 봐야 한다.",
+    "en": "Overnight in New York the Dow and S&P 500 fell while the Philadelphia Semiconductor Index rose, and crude was the reason. The prior domestic session's gain was concentrated in a handful of chip and power-equipment names, so today splits into two questions: whether that concentration holds, and how far the oil-driven rate pressure travels."
+  },
+  "summary": {
+    "ko": "간밤 미국은 다우가 1% 넘게 밀리고 S&P500과 나스닥도 내렸지만, 반도체지수는 1%대 올라 방향이 갈렸다. WTI가 94달러대로 3% 오르고 미 10년물이 4.81%로 올라선 것과 겹친다. 직전 국내 거래일은 시가총액 가중으로는 4%대 강세였는데 중앙값 등락률은 0.00%였고, 거래대금은 반도체 대형주 두 종목에 압도적으로 쏠렸다. 반도체·전기장비·기계가 위, 식음료·화장품·리츠가 아래로 갈렸다. 오늘은 원/달러 1,340원 부근과 유가·금리, 그리고 9월 16일 종료되는 FOMC로 가는 길목을 함께 봐야 한다.",
+    "en": "Overnight the Dow slid more than 1% and the S&P 500 and Nasdaq also closed lower, while the semiconductor index rose over 1% — a split reading. It coincided with WTI up 3% into the mid-$94s and the US 10-year yield at 4.81%. The prior domestic session was a 4%-plus advance on a market-cap-weighted basis, yet the median stock moved 0.00%, and turnover was overwhelmingly concentrated in two large-cap chip names. Semiconductors, electrical equipment and machinery led; food and beverage, cosmetics and REITs lagged. Today the won near 1,340, crude and yields, and the road into the FOMC that ends on 16 September all need watching together."
+  },
+  "sections": [
+    {
+      "id": "us",
+      "heading": {
+        "ko": "유가가 다우를 눌렀고 반도체는 비켜갔다",
+        "en": "Crude Weighed on the Dow, Chips Stepped Aside"
+      },
+      "paragraphs": [
+        {
+          "ko": "9월 8일 뉴욕은 지수마다 방향이 달랐다. 다우가 52,786.07로 -1.18%, S&P500이 7,673.52로 -0.58%, 나스닥이 26,421.41로 -0.32% 내렸는데, 필라델피아 반도체지수는 11,887.87로 +1.30% 올랐다. 지수 하락과 함께 나온 것은 원유였다. WTI가 94.25달러로 +3.03% 오르며, 브렌트 급등이 인플레이션 우려를 되살렸다는 보도(Benzinga)와 미·이란 긴장을 짚은 보도(Stocktwits)가 같이 걸렸다. 채권은 미 10년물 4.81%로 +0.46% 밀려 올랐고, 달러인덱스는 98.86으로 -0.31% 내렸다.",
+          "en": "On 8 September New York moved in two directions at once. The Dow closed at 52,786.07 (-1.18%), the S&P 500 at 7,673.52 (-0.58%) and the Nasdaq at 26,421.41 (-0.32%), while the Philadelphia Semiconductor Index rose 1.30% to 11,887.87. What came alongside the declines was crude. WTI gained 3.03% to $94.25, arriving with reports that a Brent surge had reignited inflation worries (Benzinga) and coverage of US-Iran tensions (Stocktwits). In bonds the US 10-year rose 0.46% to 4.81%, and the dollar index slipped 0.31% to 98.86."
+        },
+        {
+          "ko": "성격을 나눠 보면, 이번 하락은 기술주 실적이나 반도체 수요 쪽에서 나온 것이 아니라 유가와 금리 쪽에서 나왔다. NDTV Profit은 원유 우려로 다우와 S&P500이 내리는 동안 칩 종목이 나스닥을 끌어올렸다고 전했다. 국내로 옮겨붙는 경로도 하나가 아니다. 반도체 쪽에는 미국 칩 강세가 붙을 자리가 있고, 유가·금리 쪽에는 원가와 내수 소비를 함께 보는 업종이 있다. 한쪽만 보고 오늘 장을 정리하기 어려운 구도다.",
+          "en": "The character of the move matters: it originated in crude and rates, not in tech earnings or chip demand. NDTV Profit reported that chip stocks lifted the Nasdaq even as oil jitters dragged the Dow and S&P 500 lower. That leaves more than one channel into Seoul. Semiconductors have a place to attach the US chip strength; oil and yields land on sectors where input costs and domestic consumption are read together. It is not a session that can be framed from one side alone."
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "heading": {
+        "ko": "무게는 두 종목에, 중앙값은 제자리",
+        "en": "The Weight Sat in Two Names, the Median Sat Still"
+      },
+      "paragraphs": [
+        {
+          "ko": "직전 거래일(9월 8일) 국내 장의 특징은 폭이었다. 시가총액 가중으로는 +4.44%였지만 중앙값 등락률은 0.00%, 상승 1,277 종목·하락 1,156 종목·보합 253 종목(총 2,686)으로 종목 수는 거의 반반이었다. 거래대금도 쏠렸다. [SK하이닉스](000660)가 6조1,132억원(+8.26%), [삼성전자](005930)가 4조9,001억원(+5.68%)으로 두 종목이 상위를 차지했고, [삼성전기](009150) 7,886억원, [스카이랩스](386380) 7,804억원(+30.00%), [SK스퀘어](402340) 6,034억원, [두산에너빌리티](034020) 5,319억원이 뒤를 이었다.",
+          "en": "The defining feature of the prior session (8 September) was breadth. Market-cap-weighted, the tape was up 4.44%, yet the median stock moved 0.00%, with 1,277 advancers, 1,156 decliners and 253 unchanged out of 2,686 — close to an even split by count. Turnover was just as concentrated. [SK Hynix](000660) traded 6.11tn won (+8.26%) and [Samsung Electronics](005930) 4.90tn won (+5.68%) at the top, followed by [Samsung Electro-Mechanics](009150) at 789bn won, [Skylabs](386380) at 780bn won (+30.00%), [SK Square](402340) at 603bn won and [Doosan Enerbility](034020) at 532bn won."
+        },
+        {
+          "ko": "업종은 반도체 +6.69%, 전기장비 +6.53%, 기계·장비 +5.44%, 지주 +4.74%, 건설·건자재 +4.55%가 위였고, 식음료 -2.05%, 화장품 -1.82%, 부동산·리츠 -0.94%, 호텔·레저 -0.32%가 아래였다. 기준 등락률 +4.61% 대비로 보면 [두산](000150) rel +6.69, 두산에너빌리티 rel +6.37, [효성중공업](298040) rel +3.92가 앞섰고, 미국 원전 협력 기대를 짚은 보도가 함께 나왔다. 반대편에서는 [에이피알](278470)이 -2.54%로 유해색소 논란 보도와 겹쳤고, [한화에어로스페이스](012450) -1.52%, [삼성SDI](006400) -1.28%가 시장 대비 6%p 가까이 뒤졌다. 코스피 수급은 개인 -3조329억원, 외국인 +6,316억원, 기관계 +6,427억원, 기타법인 +1조7,586억원이었고, 코스닥은 기관계 -2,135억원에 외국인 +1,583억원이었다.",
+          "en": "By sector, semiconductors (+6.69%), electrical equipment (+6.53%), machinery (+5.44%), holding companies (+4.74%) and construction/materials (+4.55%) led, while food and beverage (-2.05%), cosmetics (-1.82%), real estate/REITs (-0.94%) and hotels/leisure (-0.32%) trailed. Against the +4.61% reference move, [Doosan](000150) ran +6.69 relative, Doosan Enerbility +6.37 and [Hyosung Heavy Industries](298040) +3.92, arriving with reports on expectations for US nuclear cooperation. On the other side [APR](278470) fell 2.54% alongside coverage of a controversy over harmful colorants, while [Hanwha Aerospace](012450) at -1.52% and [Samsung SDI](006400) at -1.28% lagged the market by nearly six points. KOSPI flows showed retail at -3.03tn won, foreigners +632bn, institutions +643bn and other corporates +1.76tn; on the KOSDAQ institutions sold 214bn while foreigners bought 158bn."
+        }
+      ]
+    },
+    {
+      "id": "ahead",
+      "heading": {
+        "ko": "16일 FOMC까지 유가와 금리를 붙여 본다",
+        "en": "Tying Crude to Yields Until the 16th"
+      },
+      "paragraphs": [
+        {
+          "ko": "원/달러는 1,339.92원으로 -0.38%였다(9월 8일 기준). 같은 날 달러인덱스가 -0.31%였던 것과 방향이 겹치고, 외환 시장에서는 엔화 강세와 국민연금 관련 수급을 짚는 보도가 함께 나왔다. 반대편에는 미 10년물 4.81%와 WTI +3.03%가 있다. 원유가 물가 기대를 밀어올리고 그것이 장기금리로 넘어오는 흐름은 환율의 방향과 서로 다른 쪽을 가리킬 수 있는 조합이다.",
+          "en": "The won closed at 1,339.92 per dollar, down 0.38% (as of 8 September), in line with the dollar index's 0.31% decline the same day; FX coverage pointed to yen strength and pension-related flows. On the other side sit the US 10-year at 4.81% and WTI up 3.03%. Crude pushing inflation expectations into long-end yields is a combination that can point the opposite way from the currency."
+        },
+        {
+          "ko": "일정은 9월 16일 FOMC 회의 종료 하나가 잡혀 있다. 그때까지 볼 자리는 셋으로 정리된다. 첫째, 유가발 물가 우려가 미 장기금리를 계속 끌어올리는지다. 둘째, 직전 장에서 거래대금 상위를 반도체 대형주 두 종목이 차지한 쏠림이 유지되는지, 아니면 중앙값 0.00%였던 나머지 종목으로 번지는지다. 셋째, 코스피에서 기타법인이 1조7,586억원을 순매수하고 개인이 3조원 넘게 팔았던 수급 구성이 하루짜리였는지 이어지는지다. 원전·전력기기 쪽은 관련 기대 보도가 붙은 뒤의 이틀째 흐름이라, 뉴스가 새로 붙는지와 시세가 따라가는지를 나눠 보는 편이 낫다.",
+          "en": "The calendar holds one item: the September FOMC meeting concludes on the 16th. Until then, three things to watch. First, whether oil-driven inflation worries keep pulling US long yields higher. Second, whether the concentration that put two large-cap chip names at the top of turnover persists, or spreads to the rest of the tape where the median move was 0.00%. Third, whether the flow mix — other corporates buying 1.76tn won on the KOSPI while retail sold more than 3tn — was a one-day arrangement or continues. In nuclear and power equipment, this is a second day following expectation-driven reports, so it is worth separating whether fresh news attaches from whether prices follow."
+        }
+      ]
+    },
+    {
+      "id": "coverage",
+      "heading": {
+        "ko": "9월 말 리츠 배당 결정이 먼저 온다",
+        "en": "The REIT Dividend Decision Lands First"
+      },
+      "paragraphs": [
+        {
+          "ko": "KOSAI가 9월 5일자 리포트에서 확인 지점으로 꼽아 둔 것들 가운데, 가장 가까운 날짜는 리츠 쪽에 걸려 있다. [SK리츠](395400) 리포트는 9월 말 3분기 결산 기준일과 이사회 배당 결정을 첫 지표로 봤다 — 기존 분기 배당 수준의 유지 여부와 자산 매각 차익 반영분이 배당 재원 흐름을 가르는 자리다. [이리츠코크렙](088260) 리포트는 연 2회에서 연 4회로의 분기배당 전환이 이사회·주주총회를 거쳐 결정될 수 있는 구간과, 2027년 만기 차입금의 확정 조달금리를 나눠 적어 뒀다. 직전 거래일 부동산·리츠 업종이 -0.94%로 하위였고 미 10년물이 4.81%로 오른 날이었던 만큼, 조달금리 쪽 문장이 먼저 읽히는 조합이다.",
+          "en": "Among the checkpoints KOSAI wrote down in its 5 September reports, the nearest date sits with the REITs. The [SK REIT](395400) report treated the end-September third-quarter record date and the board's dividend decision as the first indicator — whether the existing quarterly payout level holds, and how much of the asset-disposal gain is reflected, shapes the funding of that payout. The [E-Rits Kocref](088260) report separated two items: the window in which a shift from semi-annual to quarterly dividends could be decided by the board and shareholders, and the fixed funding cost on borrowings maturing in 2027. With real estate/REITs the weakest sector at -0.94% in the prior session on a day the US 10-year rose to 4.81%, the funding-cost line reads first."
+        },
+        {
+          "ko": "반도체 업종이 +6.69%로 앞선 것과 나란히 볼 자리도 있다. [엠디바이스](226590) 리포트는 SK하이닉스·삼성전자 대상 HBM 하이브리드 본딩 샘플 업체 등록의 완료 여부와 실제 매출 반영 시점을 추적 대상으로 뒀고, 다음 확인 시점은 11월 중순 3분기 실적이다. [나우로보틱스](459510) 리포트도 합병이 온전히 반영된 첫 분기의 매출·마진을 11월 3분기 보고서 전후로 잡아 뒀다. 두 종목은 오늘이 아니라 11월이 확인 날짜다.",
+          "en": "There is also a line to read alongside the 6.69% gain in semiconductors. The [MDevice](226590) report set as items to track whether registration as an HBM hybrid-bonding sample supplier to SK Hynix and Samsung Electronics is completed and when it shows up in revenue, with the next checkpoint the third-quarter results in mid-November. The [Naurobotics](459510) report likewise placed the first fully merged quarter's revenue and margin around the third-quarter filing in November. For both, the date to check is November, not today."
+        }
+      ]
+    }
+  ],
+  "factsDigest": "[오늘] 20260909 · 국내 증시 개장 · 직전 거래일 20260908\n\n[미국·해외 · 종가와 전일 대비]\n  S&P 500: 7,673.52 -0.58%  (기준일 2026-09-08)\n  나스닥: 26,421.41 -0.32%  (기준일 2026-09-08)\n  다우: 52,786.07 -1.18%  (기준일 2026-09-08)\n  필라델피아 반도체: 11,887.87 +1.30%  (기준일 2026-09-08)\n  미 10년물: 4.81% +0.46%  (기준일 2026-09-08)\n  WTI: 94.25달러 +3.03%  (기준일 2026-09-08)\n  달러인덱스: 98.86 -0.31%  (기준일 2026-09-08)\n\n[직전 국내 장 · 20260908 (9월 8일)]\n  ⚠️ 아래 지수는 2026-09-07 값이고, 등락 종목 수·업종·거래대금은 20260908 값이다 — 다른 날이다. 두 묶음을 같은 장의 일처럼 한 문단에 섞지 마라. 섞을 수 없으면 지수 쪽을 버리고 등락·업종만 쓰라.\n  코스피: 6,995.39 +4.61%  ⚠️기준일 2026-09-07\n  코스닥: 822.19 +1.07%  ⚠️기준일 2026-09-07\n  코스피 투자자별 순매수: 개인 -30,329억원 · 외국인 +6,316억원 · 기관계 +6,427억원 · 기타법인 +17,586억원\n  코스닥 투자자별 순매수: 개인 +479억원 · 외국인 +1,583억원 · 기관계 -2,135억원 · 기타법인 +72억원\n  장폭: 시총가중 +4.44% · 중앙값 +0.00% · 상승 1,277 / 하락 1,156 / 보합 253 (총 2,686)\n  기준 등락률 +4.61% — 아래 rel 은 이 값 대비 초과 등락이다. 시장이 +2% 오른 날의 +0.2% 는 상승이 아니라 부진이다.\n  대형주 선전(시장 대비): 두산(000150) +11.30% rel +6.69 · 두산에너빌리티(034020) +10.98% rel +6.37 · 효성중공업(298040) +8.53% rel +3.92 · SK하이닉스(000660) +8.26% rel +3.65 · SK스퀘어(402340) +8.07% rel +3.46 · HD현대일렉트릭(267260) +6.86% rel +2.25\n  대형주 부진(시장 대비): 에이피알(278470) -2.54% rel -7.15 · DB손해보험(005830) -1.69% rel -6.30 · 한화에어로스페이스(012450) -1.52% rel -6.13 · 메리츠금융지주(138040) -1.33% rel -5.94 · KT&G(033780) -1.28% rel -5.89 · 삼성SDI(006400) -1.28% rel -5.89\n  절대 상승: 스카이랩스(386380) +30.00% rel +25.39 · 필옵틱스(161580) +29.84% rel +25.23 · SNT에너지(100840) +14.98% rel +10.37 · 골프존홀딩스(121440) +14.18% rel +9.57 · 두산퓨얼셀(336260) +13.80% rel +9.19 · 한전기술(052690) +13.66% rel +9.05\n  절대 하락: 에스티팜(237690) -9.39% rel -14.00 · 피노(033790) -7.25% rel -11.86 · 저스템(417840) -6.82% rel -11.43 · 동운아나텍(094170) -6.81% rel -11.42 · 엑시콘(092870) -6.58% rel -11.19 · 삼양식품(003230) -6.14% rel -10.75\n  거래대금 상위: SK하이닉스(000660) 61,132억원 +8.26% · 삼성전자(005930) 49,001억원 +5.68% · 삼성전기(009150) 7,886억원 +3.78% · 스카이랩스(386380) 7,804억원 +30.00% · SK스퀘어(402340) 6,034억원 +8.07% · 두산에너빌리티(034020) 5,319억원 +10.98%\n  업종 상위(시총가중): 반도체 +6.69% · 전기장비 +6.53% · 기계·장비 +5.44% · 지주 +4.74% · 건설·건자재 +4.55%\n  업종 하위: 식음료 -2.05% · 화장품 -1.82% · 부동산·리츠 -0.94% · 호텔·레저 -0.32% · 섬유·패션·생활 -0.25%\n\n[환율] 원/달러 1,339.92원 -0.38% (기준일 2026-09-08)\n\n[일정 · 2026-09-09 ~ 2026-09-23]\n  2026-09-16 FOMC 9월 FOMC 회의 종료\n\n[정기보고서 접수 · 커버리지 종목]\n  SK리츠(395400) 사업보고서 (2026.06) · 시총 1.6조\n     └ 리포트 작성일 2026-09-05 · 제목 「임대 안정성과 조달금리, 두 축의 저울」\n     └ 확인 지점 [2026년 9월 말] 3분기 결산 기준일과 이사회 배당 결정. 기존 분기 배당 수준이 유지되는지, 주유소 매각 차익 반영분이 추가되는지가 배당 재원 흐름을 보여주는 첫 지표다.\n     └ 확인 지점 [2026년 10월 중] 알스퀘어·CBRE코리아의 2026년 3분기 오피스 마켓 리포트. CBRE코리아가 중요 변수로 지목한 도심 신규 오피스의 흡수 속도가 확인되는 시점이다.\n     └ 강세: 계열사 트리플넷 임차 기반의 낮은 공실 위험 / 조달금리 하락 경로와 오버행 해소\n     └ 약세: 3조원대 부채와 금리 재상승 민감도 / 도심권 공급 확대와 임대료 협상력\n  이리츠코크렙(088260) 사업보고서 (2026.06) · 시총 0.2조\n     └ 리포트 작성일 2026-09-05 · 제목 「안정 임대수익과 금리 부담 사이의 이리츠코크렙」\n     └ 확인 지점 [2027년 4~5월 만기 이전] 4,300억원 규모 차입금의 리파이낸싱 진행 상황과 확정 조달금리를 확인해야 한다. 조달금리 수준에 따라 향후 순이익과 배당 여력이 좌우될 수 있다.\n     └ 확인 지점 [2026년 하반기~2027년 초] 연 2회에서 연 4회로의 분기배당 전환 여부가 이사회·주주총회를 통해 결정될 수 있다. 결정 시점과 세부 조건을 확인해야 한다.\n     └ 강세: 책임임차 기반의 안정적 현금흐름 / 임차인·스폰서 그룹의 실적 개선\n     └ 약세: 금리 상승에 따른 이익 변동성 / CR리츠 특유의 성장 제약\n  나우로보틱스(459510) [기재정정]반기보고서 (2026.06) · 시총 0.2조\n     └ 리포트 작성일 2026-09-05 · 제목 「합병으로 매출 급증, 적자 폭도 함께 확대」\n     └ 확인 지점 [2026년 11월 중순] 3분기 보고서 법정 제출 시한 전후로 발표될 3분기 실적에서 한양로보틱스 통합이 완전히 반영된 분기의 매출·마진 추이를 확인할 필요가 있다.\n     └ 확인 지점 [2026년 4분기] 회사가 밝힌 하반기 수익성 개선 목표(외형 성장과 수익성 개선 동시 추진)가 실제 원가율 하락과 영업손익 축소로 나타나는지 확인이 필요하다.\n     └ 강세: 합병 효과로 매출 성장세 가속 / 다각화된 제품·고객 기반\n     └ 약세: 대규모 적자 지속·확대 / 피인수 자회사의 자본잠식\n  엠디바이스(226590) [기재정정]반기보고서 (2026.06) · 시총 0.1조\n     └ 리포트 작성일 2026-09-05 · 제목 「SSD 고성장, HBM 신사업 시동」\n     └ 확인 지점 [2026년 11월 중순] 2026년 3분기 실적 발표 시점으로, 2026년 1분기의 순손실 전환 요인이 재발하는지, 매출·영업이익 성장세가 이어지는지 확인이 필요하다.\n     └ 확인 지점 [2026년 4분기 이후] SK하이닉스·삼성전자 대상 HBM 하이브리드 본딩 샘플 업체 등록 완료 여부와 실제 양산·매출 반영 시점을 추적할 필요가 있다.\n     └ 강세: 중국 데이터센터 수요 선점 / 이익 회복과 외형 성장 병행\n     └ 약세: 극단적인 중국 매출 편중 / 분기별 실적 변동성\n\n[커버리지] 리포트 보유 2,696종목\n\n[뉴스 제목 — '왜 움직였나'의 단서. 제목 속 숫자는 쓰지 말 것]\n  · 시황\n      [마감시황]코스피, 장중 7171.52 찍고 밀려 6954.52 마감…외국인·기관 순매수에도 약세 - 서울신문 (서울신문)\n      [EBN 데이터센터] 코스피 6995.39 마감...외국인·기관 동반 순매수에 4.61% 급등 - ebn.co.kr (ebn.co.kr)\n      외국인·기관 5조 순매수에…코스피 7000선 턱밑 마감[마감시황] - v.daum.net (v.daum.net)\n      [마감시황]코스피, 장중 7171.52 찍고 밀려 6954.52 마감…외국인·기관 순매수에도 약세 - news.nate.com (news.nate.com)\n      코스피, 외국인·기관 순매수에 6990선 마감 - 소년한국일보 (소년한국일보)\n      코스피, 외인·기관 5兆 순매수에 4%대 급등…7000선 턱밑 마감 - 뉴시스 (뉴시스)\n  · 환율\n      [외환] 엔화 강세 지속에 1,340원 초반대 마감 - KB Think (KB Think)\n      원·달러 환율 1345.6원 주간거래 마감…5거래일 만에 상승 - v.daum.net (v.daum.net)\n      [외환+] 저가 매수세에···원·달러 환율, 5.1원 오른 1345원대 마감 - 서울파이낸스 (서울파이낸스)\n      [환율마감] 원ㆍ달러 5일만 상승, 국민연금 여진+저가매수 - 이투데이 (이투데이)\n      원·달러 환율, 5.1원 오른 1345.6원 마감 - 뉴시스 (뉴시스)\n      [외환-마감] 'V'자 그린 환율…2024년 10월 후 최저 경신 - 연합인포맥스 (연합인포맥스)\n  · 미국 지수\n      S&P 500, Nasdaq Slip as $98 Brent Reignites Inflation Fears: Stock Market Today - Benzinga (Benzinga)\n      US Stock Market Today: Dow, S&P 500 Decline On Crude Oil Jitters; Chip Stocks Lift Nasdaq Higher - NDTV Profit (NDTV Profit)\n      How Are Dow, S&P 500, Nasdaq Futures Trading Amid Rising US-Iran Tensions? - Stocktwits (Stocktwits)\n      Stock Market Today: S&P 500, Dow, Nasdaq 100 Futures Fall as Oil Tops $99 Despite Trump’s Price Drop Pred - Benzinga (Benzinga)\n      US Stock Market Closed for Labour Day: S&P 500 at 7,718.60, Nasdaq at 26,506.99 as Trading Halts - HDFC Sky (HDFC Sky)\n      Dow Jones, S&P 500 futures indicate gap-down open while Nasdaq set for flat start; Novartis, Amgen, others to watch - Upstox (Upstox)\n  · 두산(000150)\n      두산로보틱스 주가, 9월 8일 69,300원 1.56% 하락 마감 - 톱스타뉴스\n      두산퓨얼셀 주가 장중 22%대 급등, 증권가 투자의견 매수로 상향 조정 - 비즈니스포스트\n      두산, 로보틱스 PRS 거래로 챙긴 '회계 이익' 효과 - fetv.co.kr\n      [뉴스락 주식네비] 두산퓨얼셀, 美 데이터센터 뚫었다... PAFC 수주 본격화 - 뉴스락\n  · 두산에너빌리티(034020)\n      [오늘의 주목주] '미국 원전 사업 기대감' 두산에너빌리티 주가 10%대 올라, 코스피 '반도체 강세'에 6990선 상승 마감 - 비즈니스포스트\n      [수급분석] 미국 원전 8기 건설 소식에 두산에너빌리티·현대건설 동시 강세 (2026.09.08) - 네이버 프리미엄콘텐츠\n      두산에너빌리티 주가, 9월 8일 장중 91,500원 4.10% 상승 - 톱스타뉴스\n      [특징주] 두산에너빌리티, 한미 원전 협력 기대에 이틀째 강세…9만원 돌파 - 아주경제\n  · 에이피알(278470)\n      유해색소 논란에 20% 급락 에이피알…‘저가매수 기회’ vs ‘소비자 선호 하락’ - hankyung.com\n      에이피알 주가, 9월 8일 377,000원 1.82% 하락 마감 - 톱스타뉴스\n      “미국 오프라인·유럽 침투 본격화…에이피알, 2026년 ‘매출 3조’ 쏜다” - 뉴스퀘스트\n      에이피알, 구체적 악재 없이 37만원대 하락 마감 : 기업주식정보 - 재경일보\n  · SK하이닉스(000660)\n      210만원→100만원대…닉스·SK스퀘어 주가, 폭등 뒤 폭락 ‘한몸’ - 매일경제\n      218만원 찍더니 77만원으로…SK하이닉스 못지않게 날던 SK스퀘어 ‘반토막’ - thepublic.kr\n      SK하이닉스 주가 장중 5%대 올라, 미국 반도체주 훈풍에 삼성전자도 강세 - 비즈니스포스트\n      SK하이닉스 298만원에 물렸는데, 어떡해? ‘엔비디아도 같은 늪 건넜다’ [투자360] - v.daum.net",
+  "meta": {
+    "model": "claude-opus-5",
+    "batched": false,
+    "chars": 2905,
+    "coverageRatio": 0.204,
+    "usage": {
+      "inputTokens": 9234,
+      "outputTokens": 9215,
+      "usd": 0.2765,
+      "krw": 387
+    },
+    "generatedAt": "2026-09-09T06:41:06+09:00",
+    "publishedAt": "2026-09-09T07:28+09:00"
+  }
+}
