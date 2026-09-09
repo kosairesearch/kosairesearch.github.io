@@ -1,37 +1,17 @@
-=== 공시 트리거 v2 생성 Wed Sep  9 14:58:49 UTC 2026 · 대상 049430 ===
+=== 공시 트리거 v2 생성 Wed Sep  9 23:24:39 UTC 2026 · 대상 049430 ===
 ## 🤖 리포트 v2 Batch 제출 — 1개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
 - 정량 재사용 1개(숫자가 이미 최신·완전) · 다시 받을 0개
 - 모델 배분: claude-opus-5 0개 · claude-sonnet-5 1개
-- ✅ 배치 제출: msgbatch_01UyBBoJWvntrUfJsbuRR9kJ (1건) → data/batches_v2/msgbatch_01UyBBoJWvntrUfJsbuRR9kJ.json
+- ✅ 배치 제출: msgbatch_01X1vepfdWFG9oMqc93icjs3 (1건) → data/batches_v2/msgbatch_01X1vepfdWFG9oMqc93icjs3.json
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-- ⏳ 시간 내 미완료 — 남은 배치는 collect_batch 가 회수한다
-- 아직 처리 중 — 여기서 끝낸다. collect_batch 가 회수한다(msgbatch_01UyBBoJWvntrUfJsbuRR9kJ).
+  · 상태 ended · 처리 0/성공 1/오류 0
+- msgbatch_01X1vepfdWFG9oMqc93icjs3 · 상태 ended · 처리 0/성공 1/오류 0/만료 0/취소 0 · 주문 2026-09-10 08:24
+
+✅ v2 회수 완료 · 성공 1/실패 0 → data/reports_v2/ (2563개)
+💵 claude-sonnet-5 1건 · 입력 5,789(캐시쓰기 58,717·읽기 36,253) · 출력 28,425 · 검색 4 → 약 $0.27 (장당 $0.265)
+✅ msgbatch_01X1vepfdWFG9oMqc93icjs3 회수 완료 · 성공 1/실패 0
