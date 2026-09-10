@@ -1,20 +1,35 @@
 DART_KEY_SET=true (len=40)
-=== 스크립트 시작 Thu Sep 10 05:09:09 UTC 2026 ===
+=== 스크립트 시작 Thu Sep 10 05:20:21 UTC 2026 ===
+Traceback (most recent call last):
+  File "/home/runner/work/kosairesearch.github.io/kosairesearch.github.io/scripts/collect_data.py", line 482, in collect_pykrx_bulk
+    fund = krx.get_market_fundamental_by_ticker(date, market=market_code)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pykrx/stock/stock_api.py", line 776, in get_market_fundamental_by_ticker
+    holiday = (df[["BPS", "PER", "PBR", "EPS", "DIV", "DPS"]] == 0).all(axis=None)
+               ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/frame.py", line 4119, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6212, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6261, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['BPS', 'PER', 'PBR', 'EPS', 'DIV', 'DPS'], dtype='object')] are in the [columns]"
 =======================================================
   KOS ai 데이터 수집 시작
 =======================================================
 KRX 로그인 시도...
   로그인 ID: qjawnsdla
 KRX 로그인 완료.
-  로그인 시간: 2026-09-10 05:09:12
-  만료 시간: 2026-09-10 06:09:12
-  기준 거래일: 20260909  |  현재 게시본: 20260907
+  로그인 시간: 2026-09-10 05:20:26
+  만료 시간: 2026-09-10 06:20:26
+  기준 거래일: 20260909  |  현재 게시본: 20260909
 
 ## KOS ai 데이터 수집 — 기준 거래일 20260909
     [krx-cache] 20260909 미게시(HTTP 404)
   [krx-cache] 캐시 CSV 확보 실패
   [수집] 20260909 캐시 미확보 — pykrx 경로로 전환
-  [pykrx] 20260909 전종목 벌크 수집 시도... (종목명 재사용 2686개)
+  [pykrx] 20260909 전종목 벌크 수집 시도... (종목명 재사용 2578개)
     [코스피] 시가총액 조회...
     [코스피] cap: 943행, 컬럼: ['종가', '시가총액', '거래량', '거래대금', '상장주식수']
     [코스피] 기본지표 조회...
@@ -29,6 +44,11 @@ KRX 로그인 완료.
     [코스닥] OHLCV 조회...
     [코스닥] ohlcv: 1822행, 컬럼: ['시가', '고가', '저가', '종가', '거래량', '거래대금', '등락률', '시가총액']
     [코스닥] 1822개 종목 처리 완료
+    [코넥스] 시가총액 조회...
+    [코넥스] cap: 108행, 컬럼: ['종가', '시가총액', '거래량', '거래대금', '상장주식수']
+    [코넥스] 기본지표 조회...
+Error occurred in get_market_fundamental_by_ticker: "None of [Index(['ISU_SRT_CD', 'BPS', 'PER', 'PBR', 'EPS', 'DVD_YLD', 'DPS'], dtype='object')] are in the [columns]"
+    [코넥스] 오류: "None of [Index(['BPS', 'PER', 'PBR', 'EPS', 'DIV', 'DPS'], dtype='object')] are in the [columns]"
   [pykrx] 벌크 수집 결과: 2765개 (가격 유효: 2765개)
 - 시세 수집: 2765개 종목 (데이터 거래일 20260909)
 - 영문명 이월: 2578개
@@ -38,12 +58,11 @@ KRX 로그인 완료.
   [DART] 영문명·시총 보강 완료
   [분류] AI 업종 캐시 2710개 적용
   [분류] 카테고리 부여 완료 — 기타 167/2765개
-- 상장폐지/제외 108개 제거: ['본시스템즈', '이엠티', 'SK시그넷', '엔솔바이오사이언스', '파마리서치바이오', '나노솔루션', '아이엠지티', '노브메타파마', '진코스텍', '루켄테크놀러지스', '탑선', 'KC산업', '원포유', '메디쎄이', '프로젠']
-- 전 종목 수집 2765개(기존 2686) — 상폐 자동 정리 적용
-✅ data/stocks.js 생성 완료 — 2578개 종목 (2026-09-10 14:14 KST)
+- 전 종목 수집 2765개(기존 2578) — 상폐 자동 정리 적용
+✅ data/stocks.js 생성 완료 — 2578개 종목 (2026-09-10 14:25 KST)
 - 최종 출력: 2578개 종목 — dataDate 20260909
 =======================================================
-게시본: dataDate=20260909  종목 2578개  lastUpdated=2026-09-10 14:14
+게시본: dataDate=20260909  종목 2578개  lastUpdated=2026-09-10 14:25
 ⚠️ valuation.js(20260907)가 시세(20260909)보다 뒤처짐 — collect_valuation 이 아직 안 돈 정상 시차(최대 2시간).
 KRX 로그인 실패: KRX_ID 또는 KRX_PW 환경 변수가 설정되지 않았습니다.
 ✅ 신선도 정상 — 최신 거래일 20260909 종가가 게시돼 있다.
