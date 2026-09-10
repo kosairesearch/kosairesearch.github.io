@@ -400,6 +400,98 @@ with tempfile.TemporaryDirectory() as td:
     finally:
         os.chdir(cwd)
 
+print("⑪ 두 수집 경로가 같은 결과를 내놓는가 — 차등 대조")
+# 이 검사가 없어서 사고가 났다. 운영에서는 캐시 경로만 돌고 있었고 벌크 경로는
+# 한 번도 안 돌아본 채로 켜졌다. 필드 하나(name_en)가 없고, 우선주·가격0 을 안
+# 거르고, 종목 단위 방어가 없어 값 하나가 NaN 이면 시장이 통째로 날아갔다.
+# 같은 시장 데이터를 두 경로에 똑같이 넣고 나온 레코드를 필드 단위로 맞댄다.
+#   (코드, 이름, 종가, 등락률, 거래량, 거래대금, 시총(원), 주식수)
+ROWS = [
+    ("000001", "정상종목",      1000,  1.50, 100, 10000, 1_500_000_000_000, 1000000),
+    ("000002", "정상종목우",     900,  0.50,  50,  5000, 1_000_000_000_000,  500000),
+    ("000003", "케이비스팩1호",   800,  0.00,  10,  1000,   100_000_000_000,  100000),
+    ("000004", "무거래종목",        0,  0.00,   0,     0,                 0,       0),
+    ("000005", "정상둘",         2000, -2.00, 200, 20000, 2_500_000_000_000, 2000000),
+]
+
+def _namer(rows, boom_ticker):
+    """종목명 조회. boom_ticker 는 예외를 던진다 — 개별 호출이라 실제로 잘 끊긴다."""
+    table = {r[0]: r[1] for r in rows}
+    def get(tk):
+        if boom_ticker and tk == boom_ticker:
+            raise RuntimeError("KRX 응답 없음")
+        return table.get(tk, "")
+    return get
+
+
+AVAILABLE.clear()
+head = "idx,Code,Name,MarketId,Close,ChagesRatio,Volume,Amount,Marcap,Stocks\n"
+AVAILABLE["2026-09-09"] = head + "".join(
+    f"{i},{c},{nm},STK,{px},{ch},{vol},{amt},{mc},{sh}\n"
+    for i, (c, nm, px, ch, vol, amt, mc, sh) in enumerate(ROWS)) + "#" * 1100
+
+def fake_krx_from_rows(rows, nan_ticker=None, boom_ticker=None):
+    import pandas as pd
+    idx = [r[0] for r in rows]
+    def pick(j):
+        return [(float("nan") if (nan_ticker and r[0] == nan_ticker) else r[j]) for r in rows]
+    def cap(date, market=None):
+        if market != "KOSPI":
+            return pd.DataFrame()
+        return pd.DataFrame({"시가총액": pick(6), "상장주식수": pick(7)}, index=idx)
+    def ohlcv(date, market=None):
+        if market != "KOSPI":
+            return pd.DataFrame()
+        return pd.DataFrame({"종가": pick(2), "등락률": pick(3),
+                             "거래량": pick(4), "거래대금": pick(5)}, index=idx)
+    def fund(date, market=None):
+        return pd.DataFrame()
+    mod = types.ModuleType("pykrx")
+    mod.stock = types.SimpleNamespace(
+        get_market_cap_by_ticker=cap, get_market_fundamental_by_ticker=fund,
+        get_market_ohlcv_by_ticker=ohlcv,
+        get_market_ticker_name=_namer(rows, boom_ticker))
+    sys.modules["pykrx"] = mod
+
+fake_krx_from_rows(ROWS)
+cache_res, _ = M.collect_krx_cache("20260909")
+bulk_res = M.collect_pykrx_bulk("20260909")
+
+ok(set(cache_res) == set(bulk_res),
+   "★ 두 경로가 고르는 종목이 같다(우선주·스팩·가격0 제외 기준까지)",
+   f"캐시 {sorted(cache_res)} / 벌크 {sorted(bulk_res)}")
+
+COMPARE = ("ticker", "name", "name_en", "market", "sector",
+           "price", "change", "volume", "trading_value", "mcap", "shares")
+mismatch = []
+for tk in sorted(set(cache_res) & set(bulk_res)):
+    for f in COMPARE:
+        a, b = cache_res[tk].get(f, "<없음>"), bulk_res[tk].get(f, "<없음>")
+        if a != b:
+            mismatch.append(f"{tk}.{f}: 캐시={a!r} 벌크={b!r}")
+ok(not mismatch, "★ 게시 대상 필드 값이 두 경로에서 모두 같다", "; ".join(mismatch[:4]))
+
+missing_keys = set(next(iter(cache_res.values()))) - set(next(iter(bulk_res.values())))
+ok(not missing_keys, "★ 벌크에 빠진 필드가 없다", sorted(missing_keys))
+
+print("⑪-2 한 종목이 터져도 시장 전체가 날아가지 않는다")
+# 실제로 예외가 나는 지점을 골라야 한다. NaN 은 _cell 이 0 으로 바꿔 주므로
+# 종목 단위 방어를 지나가지도 않는다 — 그걸로 검사하면 헛돈다(실제로 헛돌았다).
+# 종목명 개별 조회는 종목마다 왕복이라 실전에서 가장 잘 끊기는 자리다.
+# ⚠ 터뜨릴 종목은 목록의 '맨 앞'이어야 한다. 중간에서 터뜨리면 그 앞 종목들은
+#   이미 results 에 들어가 있어서, 가드를 없애도 검사가 통과해 버린다(실제로
+#   그렇게 헛돌았다). 가드가 진짜로 지키는 것은 '터진 종목 뒤에 오는 종목들'이다.
+fake_krx_from_rows(ROWS, boom_ticker="000001")
+broken = M.collect_pykrx_bulk("20260909")          # names 없이 → 개별 조회로 감
+ok("000005" in broken, "★ 앞 종목이 터져도 뒤 종목이 살아서 나온다",
+   f"수집 {sorted(broken)}")
+ok("000001" not in broken, "터진 종목만 빠진다", f"수집 {sorted(broken)}")
+
+fake_krx_from_rows(ROWS, nan_ticker="000005")      # 값이 전부 NaN 인 경우
+nanres = M.collect_pykrx_bulk("20260909")
+ok("000001" in nanres and "000005" not in nanres,
+   "값이 NaN 인 종목은 조용히 제외되고 나머지는 남는다", f"수집 {sorted(nanres)}")
+
 print("⑩ 모듈 표면 — 함수를 통째로 갈아끼우다 상수를 흘리지 않았는지")
 # 실제로 한 번 흘렸다. collect_pykrx 를 정규식으로 잘라 바꾸면서 바로 뒤에
 # 붙어 있던 CORP_CLS_MARKET 이 같이 지워졌고, 962줄에서 그걸 쓰는 DART 보강이
