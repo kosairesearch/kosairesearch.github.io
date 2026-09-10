@@ -335,6 +335,42 @@ src_bulk = inspect.getsource(M.collect_pykrx_bulk)
 ok('"KONEX"' in src_bulk and '"코넥스"' in src_bulk,
    "★ 벌크 수집이 코넥스도 훑는다")
 
+# KRX 는 코넥스에 PER·PBR·EPS·BPS 를 공시하지 않는다. pykrx 가 KeyError 를 던지고,
+# 시장 루프 전체가 하나의 try 로 묶여 있어 그 하나 때문에 코넥스 108종목이 통째로
+# 버려졌다. 게시 필드에도 안 들어가는 보조 값이 시장을 죽이면 안 된다.
+def fake_bulk_krx():
+    import pandas as pd
+    counts = {"KOSPI": 3, "KOSDAQ": 3, "KONEX": 2}
+    # 시장별로 티커가 겹치면 안 된다(KOSPI·KOSDAQ 는 앞 세 글자가 같다).
+    prefix = {"KOSPI": "P", "KOSDAQ": "Q", "KONEX": "X"}
+    def idx(market):
+        return [f"{prefix[market]}{i:05d}" for i in range(counts[market])]
+    def cap(date, market=None):
+        i = idx(market)
+        return pd.DataFrame({"시가총액": [1e11] * len(i), "상장주식수": [1000] * len(i)}, index=i)
+    def fund(date, market=None):
+        if market == "KONEX":            # 실제 KRX 응답을 그대로 흉내낸다
+            raise KeyError("None of [Index(['BPS','PER','PBR','EPS','DIV','DPS'])] are in the [columns]")
+        i = idx(market)
+        return pd.DataFrame({"PER": [1.0] * len(i), "PBR": [1.0] * len(i), "EPS": [1] * len(i),
+                             "BPS": [1] * len(i), "DIV": [1.0] * len(i)}, index=i)
+    def ohlcv(date, market=None):
+        i = idx(market)
+        return pd.DataFrame({"종가": [1000] * len(i), "등락률": [1.5] * len(i),
+                             "거래량": [10] * len(i), "거래대금": [100] * len(i)}, index=i)
+    mod = types.ModuleType("pykrx")
+    mod.stock = types.SimpleNamespace(
+        get_market_cap_by_ticker=cap, get_market_fundamental_by_ticker=fund,
+        get_market_ohlcv_by_ticker=ohlcv, get_market_ticker_name=lambda tk: "이름" + tk)
+    sys.modules["pykrx"] = mod
+
+fake_bulk_krx()
+got = M.collect_pykrx_bulk("20260909")
+konex = [v for v in got.values() if v["market"] == "코넥스"]
+ok(len(got) == 8, "세 시장 모두 수집된다", len(got))
+ok(len(konex) == 2, "★ 기본지표가 없는 시장도 버려지지 않는다", f"코넥스 {len(konex)}개")
+ok(all(v[M.SRC_DATE_KEY] == "20260909" for v in got.values()), "벌크 레코드에도 거래일 각인")
+
 with tempfile.TemporaryDirectory() as td:
     cwd = os.getcwd()
     os.chdir(td)
