@@ -32,8 +32,15 @@ STEP_SUMMARY = os.getenv("GITHUB_STEP_SUMMARY")
 # 한국 정규장 마감은 15:30 KST. 그 전에 조회하면 pykrx/KRX는 '당일' 행을 주지만
 # 그 값은 장중 체결가이지 종가가 아니다. 그것을 종가로 저장하면 되돌릴 수 없는
 # 오염이 되므로, 당일은 MARKET_CLOSE_HOUR 이후에만 기준일 후보로 삼는다.
+#
+# 왜 18시인가. update_data.yml 이 스스로 적어 둔 관측이 "pykrx 종가는 장 마감
+# 직후가 아니라 '저녁'에 게시됨" 이다. 게다가 예약 실행은 혼잡 시간대에 몇 시간씩
+# 밀린다(같은 파일 기록: 관측상 ~7.5h). 마감 직후를 후보로 열어 두면 밀려 들어온
+# 실행이 미확정 값을 종가로 굳힐 수 있다.
+# 올려도 잃는 것이 없다 — 예약된 크론은 15:49 다음이 19:13 이라 16~18시 창에
+# 걸리는 정기 실행이 애초에 없다. 공짜로 얻는 안전이라 가장 보수적인 쪽을 택한다.
 KST = datetime.timezone(datetime.timedelta(hours=9))
-MARKET_CLOSE_HOUR = 16
+MARKET_CLOSE_HOUR = 18
 
 # 시세 레코드에 '이 값이 어느 거래일 것인지'를 새겨 두는 키.
 # dataDate 라벨은 이 값에서만 유도한다(build_output 참조). 요청 날짜를 라벨로
