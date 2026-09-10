@@ -505,42 +505,64 @@ def collect_pykrx_bulk(date, names=None):
             vol_col    = next((c for c in ohlcv.columns if "거래량" in c), "거래량")
             tvol_col   = next((c for c in ohlcv.columns if "거래대금" in c), "거래대금")
 
-            for ticker in cap.index:
-                name = names.get(ticker) or krx.get_market_ticker_name(ticker)
-                if not name:
-                    continue
+            skipped = failed = 0
+            for raw_tk in cap.index:
+                # 종목 하나가 이상해도 그 종목만 건너뛴다. 예전에는 종목 단위
+                # 방어가 없어서 값 하나가 NaN 이면 int() 가 터지고, 그 예외가
+                # 시장 루프의 except 까지 올라가 이미 받아 둔 시장 전체가
+                # 버려졌다 — 코넥스 108종목을 날린 것과 똑같은 구조다.
+                try:
+                    tk = str(raw_tk).zfill(6)
+                    name = (names.get(tk) or names.get(raw_tk)
+                            or krx.get_market_ticker_name(raw_tk))
+                    if not name:
+                        failed += 1
+                        continue
+                    # 우선주·스팩 제외 — 캐시 경로와 같은 기준으로 맞춘다.
+                    if _is_pref_or_spac(name):
+                        skipped += 1
+                        continue
 
-                cap_row   = cap.loc[ticker]   if ticker in cap.index   else {}
-                fund_row  = fund.loc[ticker]  if (fund is not None and ticker in fund.index) else {}
-                ohlcv_row = ohlcv.loc[ticker] if ticker in ohlcv.index else {}
+                    cap_row   = cap.loc[raw_tk]
+                    ohlcv_row = ohlcv.loc[raw_tk] if raw_tk in ohlcv.index else None
+                    fund_row  = (fund.loc[raw_tk]
+                                 if (fund is not None and raw_tk in fund.index) else None)
 
-                mcap_won = int(cap_row.get(mcap_col, 0) if hasattr(cap_row, "get") else 0)
+                    price = safe_int(_cell(ohlcv_row, close_col))
+                    if price <= 0:          # 캐시 경로와 같은 기준
+                        continue
 
-                results[ticker] = {
-                    "ticker":  ticker,
-                    "name":    name,
-                    "market":  market_label,
-                    "sector":  SECTOR_MAP.get(ticker, "기타"),
-                    "price":   int(ohlcv_row.get(close_col, 0) if hasattr(ohlcv_row, "get") else 0),
-                    "change":  round(float(ohlcv_row.get(chg_col, 0) if hasattr(ohlcv_row, "get") else 0), 2),
-                    "volume":       int(ohlcv_row.get(vol_col, 0)  if hasattr(ohlcv_row, "get") else 0),
-                    "trading_value":int(ohlcv_row.get(tvol_col, 0) if hasattr(ohlcv_row, "get") else 0),
-                    "mcap":  round(mcap_won / 1e12, 4),
-                    "shares":int(cap_row.get(shares_col, 0) if hasattr(cap_row, "get") else 0),
-                    "per": round(float(fund_row.get("PER", 0) if hasattr(fund_row, "get") else 0), 1),
-                    "pbr": round(float(fund_row.get("PBR", 0) if hasattr(fund_row, "get") else 0), 1),
-                    "eps": int(fund_row.get("EPS", 0) if hasattr(fund_row, "get") else 0),
-                    "bps": int(fund_row.get("BPS", 0) if hasattr(fund_row, "get") else 0),
-                    "div": round(float(fund_row.get("DIV", 0) if hasattr(fund_row, "get") else 0), 1),
-                    "roe":  0.0,
-                    "rev":  0.0,
-                    "opm":  0.0,
-                    "debt": 0.0,
-                    SRC_DATE_KEY: date,
-                }
+                    results[tk] = {
+                        "ticker":  tk,
+                        "name":    str(name),
+                        "name_en": "",      # 캐시 경로와 모양을 맞춘다(main 이 기존 값을 이월)
+                        "market":  market_label,
+                        "sector":  SECTOR_MAP.get(tk, "기타"),
+                        "price":   price,
+                        "change":  round(safe_float(_cell(ohlcv_row, chg_col)), 2),
+                        "volume":       safe_int(_cell(ohlcv_row, vol_col)),
+                        "trading_value":safe_int(_cell(ohlcv_row, tvol_col)),
+                        "mcap":  round(safe_int(_cell(cap_row, mcap_col)) / 1e12, 4),
+                        "shares":safe_int(_cell(cap_row, shares_col)),
+                        "per": round(safe_float(_cell(fund_row, "PER")), 1),
+                        "pbr": round(safe_float(_cell(fund_row, "PBR")), 1),
+                        "eps": safe_int(_cell(fund_row, "EPS")),
+                        "bps": safe_int(_cell(fund_row, "BPS")),
+                        "div": round(safe_float(_cell(fund_row, "DIV")), 1),
+                        "roe":  0.0,
+                        "rev":  0.0,
+                        "opm":  0.0,
+                        "debt": 0.0,
+                        SRC_DATE_KEY: date,
+                    }
+                except Exception as e:
+                    failed += 1
+                    if failed <= 3:
+                        print(f"    [{market_label}] {raw_tk} 건너뜀: {type(e).__name__}: {e}")
 
             market_count = sum(1 for v in results.values() if v["market"] == market_label)
-            print(f"    [{market_label}] {market_count}개 종목 처리 완료")
+            print(f"    [{market_label}] {market_count}개 종목 처리 완료 "
+                  f"(우선주·스팩 {skipped}개 제외, 건너뜀 {failed}개)")
             time.sleep(0.5)
 
         except Exception as e:
@@ -548,6 +570,24 @@ def collect_pykrx_bulk(date, names=None):
             traceback.print_exc()
 
     return results
+
+
+def _cell(row, col, default=0):
+    """표의 한 칸을 꺼낸다. 행이 없거나·칸이 없거나·NaN 이거나·인덱스가 중복돼
+    Series 가 와도 죽지 않는다. 여기서 죽으면 그 시장 전체가 날아간다."""
+    if row is None:
+        return default
+    try:
+        v = row.get(col) if hasattr(row, "get") else None
+    except Exception:
+        return default
+    if v is None:
+        return default
+    if hasattr(v, "iloc"):            # 인덱스 중복 → Series 가 온다
+        v = v.iloc[0] if len(v) else None
+    if v is None or v != v:           # NaN (자기 자신과 다르다)
+        return default
+    return v
 
 
 def safe_int(val, default=0):
