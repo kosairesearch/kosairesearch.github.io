@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-09-11 03:27",
+  "lastUpdated": "2026-09-11 06:16",
   "dataDate": "20260910",
   "stocks": [
     {
@@ -7808,24 +7808,6 @@ window.KOS_LIVE_DATA = {
       "rank": 433
     },
     {
-      "ticker": "178920",
-      "name": "PI첨단소재",
-      "name_en": "PI Advanced Materials Co., Ltd.",
-      "market": "코스피",
-      "sector": "화학",
-      "price": 19400,
-      "change": -1.07,
-      "volume": 34163,
-      "trading_value": 660187115,
-      "mcap": 0.5697,
-      "shares": 29366322,
-      "induty_code": "2221",
-      "categories": [
-        "화학"
-      ],
-      "rank": 434
-    },
-    {
       "ticker": "079940",
       "name": "가비아",
       "name_en": "GABIA,Inc.",
@@ -7840,6 +7822,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "58221",
       "categories": [
         "IT·소프트웨어"
+      ],
+      "rank": 434
+    },
+    {
+      "ticker": "178920",
+      "name": "PI첨단소재",
+      "name_en": "PI Advanced Materials Co., Ltd.",
+      "market": "코스피",
+      "sector": "화학",
+      "price": 19400,
+      "change": -1.07,
+      "volume": 34163,
+      "trading_value": 660187115,
+      "mcap": 0.5697,
+      "shares": 29366322,
+      "induty_code": "2221",
+      "categories": [
+        "화학"
       ],
       "rank": 435
     },
@@ -8419,24 +8419,6 @@ window.KOS_LIVE_DATA = {
       "rank": 467
     },
     {
-      "ticker": "039130",
-      "name": "하나투어",
-      "name_en": "HANATOUR SERVICE INC.",
-      "market": "코스피",
-      "sector": "호텔·레저",
-      "price": 33150,
-      "change": 0.0,
-      "volume": 33021,
-      "trading_value": 1083583200,
-      "mcap": 0.5135,
-      "shares": 15489932,
-      "induty_code": "75210",
-      "categories": [
-        "호텔·레저"
-      ],
-      "rank": 468
-    },
-    {
       "ticker": "101160",
       "name": "월덱스",
       "name_en": "WORLDEXINDUSTRY&TRADINGCO.,LTD",
@@ -8451,6 +8433,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "262",
       "categories": [
         "반도체"
+      ],
+      "rank": 468
+    },
+    {
+      "ticker": "039130",
+      "name": "하나투어",
+      "name_en": "HANATOUR SERVICE INC.",
+      "market": "코스피",
+      "sector": "호텔·레저",
+      "price": 33150,
+      "change": 0.0,
+      "volume": 33021,
+      "trading_value": 1083583200,
+      "mcap": 0.5135,
+      "shares": 15489932,
+      "induty_code": "75210",
+      "categories": [
+        "호텔·레저"
       ],
       "rank": 469
     },
@@ -10350,24 +10350,6 @@ window.KOS_LIVE_DATA = {
       "rank": 574
     },
     {
-      "ticker": "001940",
-      "name": "KISCO홀딩스",
-      "name_en": "KISCO Holdings Corp.",
-      "market": "코스피",
-      "sector": "지주",
-      "price": 26450,
-      "change": 4.13,
-      "volume": 18217,
-      "trading_value": 474963750,
-      "mcap": 0.375,
-      "shares": 14176380,
-      "induty_code": "241",
-      "categories": [
-        "지주"
-      ],
-      "rank": 575
-    },
-    {
       "ticker": "042000",
       "name": "카페24",
       "name_en": "Cafe24 Corp.",
@@ -10382,6 +10364,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "63112",
       "categories": [
         "IT·소프트웨어"
+      ],
+      "rank": 575
+    },
+    {
+      "ticker": "001940",
+      "name": "KISCO홀딩스",
+      "name_en": "KISCO Holdings Corp.",
+      "market": "코스피",
+      "sector": "지주",
+      "price": 26450,
+      "change": 4.13,
+      "volume": 18217,
+      "trading_value": 474963750,
+      "mcap": 0.375,
+      "shares": 14176380,
+      "induty_code": "241",
+      "categories": [
+        "지주"
       ],
       "rank": 576
     },
@@ -11701,24 +11701,6 @@ window.KOS_LIVE_DATA = {
       "rank": 649
     },
     {
-      "ticker": "096760",
-      "name": "JW홀딩스",
-      "name_en": "JW HOLDINGS CORPORATION",
-      "market": "코스피",
-      "sector": "지주",
-      "price": 4205,
-      "change": 0.12,
-      "volume": 38080,
-      "trading_value": 159409966,
-      "mcap": 0.3109,
-      "shares": 73924942,
-      "induty_code": "64992",
-      "categories": [
-        "지주"
-      ],
-      "rank": 650
-    },
-    {
       "ticker": "067630",
       "name": "HLB생명과학",
       "name_en": "HLB Life Science CO.,LTD.",
@@ -11733,6 +11715,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "213",
       "categories": [
         "바이오·제약"
+      ],
+      "rank": 650
+    },
+    {
+      "ticker": "096760",
+      "name": "JW홀딩스",
+      "name_en": "JW HOLDINGS CORPORATION",
+      "market": "코스피",
+      "sector": "지주",
+      "price": 4205,
+      "change": 0.12,
+      "volume": 38080,
+      "trading_value": 159409966,
+      "mcap": 0.3109,
+      "shares": 73924942,
+      "induty_code": "64992",
+      "categories": [
+        "지주"
       ],
       "rank": 651
     },
@@ -12818,24 +12818,6 @@ window.KOS_LIVE_DATA = {
       "rank": 711
     },
     {
-      "ticker": "286940",
-      "name": "롯데이노베이트",
-      "name_en": "LOTTE INNOVATE Co.,Ltd",
-      "market": "코스피",
-      "sector": "IT·소프트웨어",
-      "price": 18300,
-      "change": -0.05,
-      "volume": 5976,
-      "trading_value": 108773925,
-      "mcap": 0.2769,
-      "shares": 15129367,
-      "induty_code": "62021",
-      "categories": [
-        "IT·소프트웨어"
-      ],
-      "rank": 712
-    },
-    {
       "ticker": "482630",
       "name": "삼양엔씨켐",
       "name_en": "SAMYANG NC Chem Corp.",
@@ -12850,6 +12832,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "20499",
       "categories": [
         "화학"
+      ],
+      "rank": 712
+    },
+    {
+      "ticker": "286940",
+      "name": "롯데이노베이트",
+      "name_en": "LOTTE INNOVATE Co.,Ltd",
+      "market": "코스피",
+      "sector": "IT·소프트웨어",
+      "price": 18300,
+      "change": -0.05,
+      "volume": 5976,
+      "trading_value": 108773925,
+      "mcap": 0.2769,
+      "shares": 15129367,
+      "induty_code": "62021",
+      "categories": [
+        "IT·소프트웨어"
       ],
       "rank": 713
     },
@@ -14365,24 +14365,6 @@ window.KOS_LIVE_DATA = {
       "rank": 797
     },
     {
-      "ticker": "001340",
-      "name": "PKC",
-      "name_en": "PKC Co., Ltd.",
-      "market": "코스피",
-      "sector": "화학",
-      "price": 5110,
-      "change": -0.2,
-      "volume": 29632,
-      "trading_value": 149850060,
-      "mcap": 0.2301,
-      "shares": 45028089,
-      "induty_code": "20131",
-      "categories": [
-        "화학"
-      ],
-      "rank": 798
-    },
-    {
       "ticker": "036030",
       "name": "케이티알파",
       "name_en": "kt alpha Co., Ltd.",
@@ -14397,6 +14379,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "461",
       "categories": [
         "유통·소비재"
+      ],
+      "rank": 798
+    },
+    {
+      "ticker": "001340",
+      "name": "PKC",
+      "name_en": "PKC Co., Ltd.",
+      "market": "코스피",
+      "sector": "화학",
+      "price": 5110,
+      "change": -0.2,
+      "volume": 29632,
+      "trading_value": 149850060,
+      "mcap": 0.2301,
+      "shares": 45028089,
+      "induty_code": "20131",
+      "categories": [
+        "화학"
       ],
       "rank": 799
     },
@@ -15176,24 +15176,6 @@ window.KOS_LIVE_DATA = {
       "rank": 842
     },
     {
-      "ticker": "035150",
-      "name": "백산",
-      "name_en": "BAIKSAN CO.,LTD",
-      "market": "코스피",
-      "sector": "화학",
-      "price": 10870,
-      "change": 1.59,
-      "volume": 7279,
-      "trading_value": 77867790,
-      "mcap": 0.2149,
-      "shares": 19771079,
-      "induty_code": "22214",
-      "categories": [
-        "화학"
-      ],
-      "rank": 843
-    },
-    {
       "ticker": "365270",
       "name": "큐라클",
       "name_en": "curacle co., ltd.",
@@ -15208,6 +15190,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "70113",
       "categories": [
         "바이오·제약"
+      ],
+      "rank": 843
+    },
+    {
+      "ticker": "035150",
+      "name": "백산",
+      "name_en": "BAIKSAN CO.,LTD",
+      "market": "코스피",
+      "sector": "화학",
+      "price": 10870,
+      "change": 1.59,
+      "volume": 7279,
+      "trading_value": 77867790,
+      "mcap": 0.2149,
+      "shares": 19771079,
+      "induty_code": "22214",
+      "categories": [
+        "화학"
       ],
       "rank": 844
     },
@@ -16244,24 +16244,6 @@ window.KOS_LIVE_DATA = {
       "rank": 901
     },
     {
-      "ticker": "001630",
-      "name": "종근당홀딩스",
-      "name_en": "CHONGKUNDANG HOLDINGS CORP.",
-      "market": "코스피",
-      "sector": "지주",
-      "price": 39000,
-      "change": 0.0,
-      "volume": 835,
-      "trading_value": 32437150,
-      "mcap": 0.1954,
-      "shares": 5009861,
-      "induty_code": "212",
-      "categories": [
-        "지주"
-      ],
-      "rank": 902
-    },
-    {
       "ticker": "042420",
       "name": "네오위즈홀딩스",
       "name_en": "NEOWIZ HOLDINGS Corporation",
@@ -16274,6 +16256,24 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.1954,
       "shares": 8142283,
       "induty_code": "582",
+      "categories": [
+        "지주"
+      ],
+      "rank": 902
+    },
+    {
+      "ticker": "001630",
+      "name": "종근당홀딩스",
+      "name_en": "CHONGKUNDANG HOLDINGS CORP.",
+      "market": "코스피",
+      "sector": "지주",
+      "price": 39000,
+      "change": 0.0,
+      "volume": 835,
+      "trading_value": 32437150,
+      "mcap": 0.1954,
+      "shares": 5009861,
+      "induty_code": "212",
       "categories": [
         "지주"
       ],
@@ -16316,24 +16316,6 @@ window.KOS_LIVE_DATA = {
       "rank": 905
     },
     {
-      "ticker": "001130",
-      "name": "대한제분",
-      "name_en": "DAEHAN FLOUR MILL CO.,LTD",
-      "market": "코스피",
-      "sector": "식음료",
-      "price": 11520,
-      "change": 0.7,
-      "volume": 4031,
-      "trading_value": 46167970,
-      "mcap": 0.1947,
-      "shares": 16900000,
-      "induty_code": "105",
-      "categories": [
-        "식음료"
-      ],
-      "rank": 906
-    },
-    {
       "ticker": "058970",
       "name": "엠로",
       "name_en": "EMRO., Incorporated",
@@ -16348,6 +16330,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "582",
       "categories": [
         "IT·소프트웨어"
+      ],
+      "rank": 906
+    },
+    {
+      "ticker": "001130",
+      "name": "대한제분",
+      "name_en": "DAEHAN FLOUR MILL CO.,LTD",
+      "market": "코스피",
+      "sector": "식음료",
+      "price": 11520,
+      "change": 0.7,
+      "volume": 4031,
+      "trading_value": 46167970,
+      "mcap": 0.1947,
+      "shares": 16900000,
+      "induty_code": "105",
+      "categories": [
+        "식음료"
       ],
       "rank": 907
     },
@@ -16478,24 +16478,6 @@ window.KOS_LIVE_DATA = {
       "rank": 914
     },
     {
-      "ticker": "339770",
-      "name": "교촌에프앤비",
-      "name_en": "KYOCHON FOOD&BEVERAGE CO., LTD.",
-      "market": "코스피",
-      "sector": "식음료",
-      "price": 3830,
-      "change": 0.79,
-      "volume": 22368,
-      "trading_value": 85305352,
-      "mcap": 0.1914,
-      "shares": 49965080,
-      "induty_code": "46313",
-      "categories": [
-        "식음료"
-      ],
-      "rank": 915
-    },
-    {
       "ticker": "102940",
       "name": "코오롱생명과학",
       "name_en": "KOLON LIFE SCIENCE Inc.",
@@ -16510,6 +16492,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "2110",
       "categories": [
         "바이오·제약"
+      ],
+      "rank": 915
+    },
+    {
+      "ticker": "339770",
+      "name": "교촌에프앤비",
+      "name_en": "KYOCHON FOOD&BEVERAGE CO., LTD.",
+      "market": "코스피",
+      "sector": "식음료",
+      "price": 3830,
+      "change": 0.79,
+      "volume": 22368,
+      "trading_value": 85305352,
+      "mcap": 0.1914,
+      "shares": 49965080,
+      "induty_code": "46313",
+      "categories": [
+        "식음료"
       ],
       "rank": 916
     },
@@ -16694,24 +16694,6 @@ window.KOS_LIVE_DATA = {
       "rank": 926
     },
     {
-      "ticker": "000140",
-      "name": "하이트진로홀딩스",
-      "name_en": "HITEJINRO HOLDINGS CO., LTD",
-      "market": "코스피",
-      "sector": "지주",
-      "price": 8050,
-      "change": 0.5,
-      "volume": 1340,
-      "trading_value": 10718570,
-      "mcap": 0.1868,
-      "shares": 23206765,
-      "induty_code": "64992",
-      "categories": [
-        "지주"
-      ],
-      "rank": 927
-    },
-    {
       "ticker": "214180",
       "name": "헥토이노베이션",
       "name_en": "Hecto Innovation Co., Ltd.",
@@ -16726,6 +16708,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "63991",
       "categories": [
         "IT·소프트웨어"
+      ],
+      "rank": 927
+    },
+    {
+      "ticker": "000140",
+      "name": "하이트진로홀딩스",
+      "name_en": "HITEJINRO HOLDINGS CO., LTD",
+      "market": "코스피",
+      "sector": "지주",
+      "price": 8050,
+      "change": 0.5,
+      "volume": 1340,
+      "trading_value": 10718570,
+      "mcap": 0.1868,
+      "shares": 23206765,
+      "induty_code": "64992",
+      "categories": [
+        "지주"
       ],
       "rank": 928
     },
@@ -16839,24 +16839,6 @@ window.KOS_LIVE_DATA = {
       "rank": 934
     },
     {
-      "ticker": "082800",
-      "name": "비보존 제약",
-      "name_en": "VIVOZON PHARMACEUTICAL CO., LTD.",
-      "market": "코스닥",
-      "sector": "바이오·제약",
-      "price": 3035,
-      "change": 0.17,
-      "volume": 112751,
-      "trading_value": 337725807,
-      "mcap": 0.1843,
-      "shares": 60719666,
-      "induty_code": "212",
-      "categories": [
-        "바이오·제약"
-      ],
-      "rank": 935
-    },
-    {
       "ticker": "260870",
       "name": "SK시그넷",
       "name_en": "SK Signet Inc.",
@@ -16871,6 +16853,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "2811",
       "categories": [
         "전기장비"
+      ],
+      "rank": 935
+    },
+    {
+      "ticker": "082800",
+      "name": "비보존 제약",
+      "name_en": "VIVOZON PHARMACEUTICAL CO., LTD.",
+      "market": "코스닥",
+      "sector": "바이오·제약",
+      "price": 3035,
+      "change": 0.17,
+      "volume": 112751,
+      "trading_value": 337725807,
+      "mcap": 0.1843,
+      "shares": 60719666,
+      "induty_code": "212",
+      "categories": [
+        "바이오·제약"
       ],
       "rank": 936
     },
@@ -17143,24 +17143,6 @@ window.KOS_LIVE_DATA = {
       "rank": 951
     },
     {
-      "ticker": "007860",
-      "name": "서연",
-      "name_en": "SEOYON CO. LTD",
-      "market": "코스피",
-      "sector": "지주",
-      "price": 7640,
-      "change": 0.79,
-      "volume": 32296,
-      "trading_value": 245413245,
-      "mcap": 0.1794,
-      "shares": 23479844,
-      "induty_code": "64992",
-      "categories": [
-        "지주"
-      ],
-      "rank": 952
-    },
-    {
       "ticker": "270660",
       "name": "에브리봇",
       "name_en": "EVERYBOT Inc.",
@@ -17175,6 +17157,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "28519",
       "categories": [
         "유통·소비재"
+      ],
+      "rank": 952
+    },
+    {
+      "ticker": "007860",
+      "name": "서연",
+      "name_en": "SEOYON CO. LTD",
+      "market": "코스피",
+      "sector": "지주",
+      "price": 7640,
+      "change": 0.79,
+      "volume": 32296,
+      "trading_value": 245413245,
+      "mcap": 0.1794,
+      "shares": 23479844,
+      "induty_code": "64992",
+      "categories": [
+        "지주"
       ],
       "rank": 953
     },
@@ -18351,6 +18351,24 @@ window.KOS_LIVE_DATA = {
       "rank": 1018
     },
     {
+      "ticker": "230240",
+      "name": "에치에프알",
+      "name_en": "HFR, Inc.",
+      "market": "코스닥",
+      "sector": "통신",
+      "price": 12040,
+      "change": 1.43,
+      "volume": 146445,
+      "trading_value": 1727641660,
+      "mcap": 0.1602,
+      "shares": 13309000,
+      "induty_code": "264",
+      "categories": [
+        "통신"
+      ],
+      "rank": 1019
+    },
+    {
       "ticker": "002170",
       "name": "SYTS",
       "name_en": "SYTS Corp.",
@@ -18366,7 +18384,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 1019
+      "rank": 1020
     },
     {
       "ticker": "007540",
@@ -18383,24 +18401,6 @@ window.KOS_LIVE_DATA = {
       "induty_code": "64992",
       "categories": [
         "지주"
-      ],
-      "rank": 1020
-    },
-    {
-      "ticker": "230240",
-      "name": "에치에프알",
-      "name_en": "HFR, Inc.",
-      "market": "코스닥",
-      "sector": "통신",
-      "price": 12040,
-      "change": 1.43,
-      "volume": 146445,
-      "trading_value": 1727641660,
-      "mcap": 0.1602,
-      "shares": 13309000,
-      "induty_code": "264",
-      "categories": [
-        "통신"
       ],
       "rank": 1021
     },
@@ -18531,24 +18531,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1028
     },
     {
-      "ticker": "007570",
-      "name": "일양약품",
-      "name_en": "ILYANG PHARMACEUTICAL CO.,LTD",
-      "market": "코스피",
-      "sector": "바이오·제약",
-      "price": 8270,
-      "change": 0.12,
-      "volume": 14769,
-      "trading_value": 121760920,
-      "mcap": 0.1578,
-      "shares": 19085664,
-      "induty_code": "212",
-      "categories": [
-        "바이오·제약"
-      ],
-      "rank": 1029
-    },
-    {
       "ticker": "011040",
       "name": "경동제약",
       "name_en": "KyungdongPharm",
@@ -18560,6 +18542,24 @@ window.KOS_LIVE_DATA = {
       "trading_value": 112362785,
       "mcap": 0.1578,
       "shares": 30768766,
+      "induty_code": "212",
+      "categories": [
+        "바이오·제약"
+      ],
+      "rank": 1029
+    },
+    {
+      "ticker": "007570",
+      "name": "일양약품",
+      "name_en": "ILYANG PHARMACEUTICAL CO.,LTD",
+      "market": "코스피",
+      "sector": "바이오·제약",
+      "price": 8270,
+      "change": 0.12,
+      "volume": 14769,
+      "trading_value": 121760920,
+      "mcap": 0.1578,
+      "shares": 19085664,
       "induty_code": "212",
       "categories": [
         "바이오·제약"
@@ -18873,24 +18873,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1047
     },
     {
-      "ticker": "462520",
-      "name": "조선내화",
-      "name_en": "Chosun Refractories Co., Ltd.",
-      "market": "코스피",
-      "sector": "건설·건자재",
-      "price": 12910,
-      "change": 0.0,
-      "volume": 3887,
-      "trading_value": 49975770,
-      "mcap": 0.1531,
-      "shares": 11855168,
-      "induty_code": "2321",
-      "categories": [
-        "건설·건자재"
-      ],
-      "rank": 1048
-    },
-    {
       "ticker": "065660",
       "name": "안트로젠",
       "name_en": "ANTEROGEN CO., LTD.",
@@ -18905,6 +18887,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "467",
       "categories": [
         "바이오·제약"
+      ],
+      "rank": 1048
+    },
+    {
+      "ticker": "462520",
+      "name": "조선내화",
+      "name_en": "Chosun Refractories Co., Ltd.",
+      "market": "코스피",
+      "sector": "건설·건자재",
+      "price": 12910,
+      "change": 0.0,
+      "volume": 3887,
+      "trading_value": 49975770,
+      "mcap": 0.1531,
+      "shares": 11855168,
+      "induty_code": "2321",
+      "categories": [
+        "건설·건자재"
       ],
       "rank": 1049
     },
@@ -18963,24 +18963,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1052
     },
     {
-      "ticker": "000520",
-      "name": "삼일제약",
-      "name_en": "SAMIL PHARMACEUTICAL CO.,LTD",
-      "market": "코스피",
-      "sector": "바이오·제약",
-      "price": 7020,
-      "change": 0.43,
-      "volume": 111447,
-      "trading_value": 776457380,
-      "mcap": 0.1523,
-      "shares": 21691811,
-      "induty_code": "212",
-      "categories": [
-        "바이오·제약"
-      ],
-      "rank": 1053
-    },
-    {
       "ticker": "007330",
       "name": "푸른저축은행",
       "name_en": "PUREUN SAVINGS BANK",
@@ -18995,6 +18977,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "64132",
       "categories": [
         "금융"
+      ],
+      "rank": 1053
+    },
+    {
+      "ticker": "000520",
+      "name": "삼일제약",
+      "name_en": "SAMIL PHARMACEUTICAL CO.,LTD",
+      "market": "코스피",
+      "sector": "바이오·제약",
+      "price": 7020,
+      "change": 0.43,
+      "volume": 111447,
+      "trading_value": 776457380,
+      "mcap": 0.1523,
+      "shares": 21691811,
+      "induty_code": "212",
+      "categories": [
+        "바이오·제약"
       ],
       "rank": 1054
     },
@@ -19162,24 +19162,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1063
     },
     {
-      "ticker": "025820",
-      "name": "이구산업",
-      "name_en": "LEEKU INDUSTRIAL CO.,LTD",
-      "market": "코스피",
-      "sector": "철강·금속",
-      "price": 4490,
-      "change": -0.88,
-      "volume": 243370,
-      "trading_value": 1090244687,
-      "mcap": 0.1502,
-      "shares": 33442000,
-      "induty_code": "24221",
-      "categories": [
-        "철강·금속"
-      ],
-      "rank": 1064
-    },
-    {
       "ticker": "088800",
       "name": "에이스테크",
       "name_en": "Ace Technologies Corp.",
@@ -19194,6 +19176,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "2642",
       "categories": [
         "전자·부품"
+      ],
+      "rank": 1064
+    },
+    {
+      "ticker": "025820",
+      "name": "이구산업",
+      "name_en": "LEEKU INDUSTRIAL CO.,LTD",
+      "market": "코스피",
+      "sector": "철강·금속",
+      "price": 4490,
+      "change": -0.88,
+      "volume": 243370,
+      "trading_value": 1090244687,
+      "mcap": 0.1502,
+      "shares": 33442000,
+      "induty_code": "24221",
+      "categories": [
+        "철강·금속"
       ],
       "rank": 1065
     },
@@ -19486,24 +19486,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1081
     },
     {
-      "ticker": "107590",
-      "name": "미원홀딩스",
-      "name_en": "Miwon Holdings Co.,Ltd.",
-      "market": "코스피",
-      "sector": "지주",
-      "price": 62400,
-      "change": 0.0,
-      "volume": 71,
-      "trading_value": 4428600,
-      "mcap": 0.1448,
-      "shares": 2320000,
-      "induty_code": "649",
-      "categories": [
-        "지주"
-      ],
-      "rank": 1082
-    },
-    {
       "ticker": "078070",
       "name": "유비쿼스홀딩스",
       "name_en": "Ubiquoss Holdings Inc.",
@@ -19516,6 +19498,24 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.1448,
       "shares": 17058843,
       "induty_code": "64992",
+      "categories": [
+        "지주"
+      ],
+      "rank": 1082
+    },
+    {
+      "ticker": "107590",
+      "name": "미원홀딩스",
+      "name_en": "Miwon Holdings Co.,Ltd.",
+      "market": "코스피",
+      "sector": "지주",
+      "price": 62400,
+      "change": 0.0,
+      "volume": 71,
+      "trading_value": 4428600,
+      "mcap": 0.1448,
+      "shares": 2320000,
+      "induty_code": "649",
       "categories": [
         "지주"
       ],
@@ -19936,24 +19936,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1106
     },
     {
-      "ticker": "004960",
-      "name": "한신공영",
-      "name_en": "HANSHIN CONSTRUCTION CO.,LTD",
-      "market": "코스피",
-      "sector": "건설·건자재",
-      "price": 12100,
-      "change": -0.17,
-      "volume": 26024,
-      "trading_value": 314651285,
-      "mcap": 0.14,
-      "shares": 11570702,
-      "induty_code": "41112",
-      "categories": [
-        "건설·건자재"
-      ],
-      "rank": 1107
-    },
-    {
       "ticker": "394800",
       "name": "쓰리빌리언",
       "name_en": "3billion Inc.",
@@ -19968,6 +19950,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "701",
       "categories": [
         "바이오·제약"
+      ],
+      "rank": 1107
+    },
+    {
+      "ticker": "004960",
+      "name": "한신공영",
+      "name_en": "HANSHIN CONSTRUCTION CO.,LTD",
+      "market": "코스피",
+      "sector": "건설·건자재",
+      "price": 12100,
+      "change": -0.17,
+      "volume": 26024,
+      "trading_value": 314651285,
+      "mcap": 0.14,
+      "shares": 11570702,
+      "induty_code": "41112",
+      "categories": [
+        "건설·건자재"
       ],
       "rank": 1108
     },
@@ -20495,24 +20495,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1137
     },
     {
-      "ticker": "024090",
-      "name": "디씨엠",
-      "name_en": "DCM CORP",
-      "market": "코스피",
-      "sector": "화학",
-      "price": 11690,
-      "change": -0.6,
-      "volume": 3597,
-      "trading_value": 42245770,
-      "mcap": 0.1333,
-      "shares": 11400000,
-      "induty_code": "2419",
-      "categories": [
-        "화학"
-      ],
-      "rank": 1138
-    },
-    {
       "ticker": "079960",
       "name": "동양이엔피",
       "name_en": "DONGYANG E&P INC.",
@@ -20527,6 +20509,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "2811",
       "categories": [
         "전자·부품"
+      ],
+      "rank": 1138
+    },
+    {
+      "ticker": "024090",
+      "name": "디씨엠",
+      "name_en": "DCM CORP",
+      "market": "코스피",
+      "sector": "화학",
+      "price": 11690,
+      "change": -0.6,
+      "volume": 3597,
+      "trading_value": 42245770,
+      "mcap": 0.1333,
+      "shares": 11400000,
+      "induty_code": "2419",
+      "categories": [
+        "화학"
       ],
       "rank": 1139
     },
@@ -20585,6 +20585,25 @@ window.KOS_LIVE_DATA = {
       "rank": 1142
     },
     {
+      "ticker": "396300",
+      "name": "HT로보틱스",
+      "name_en": "SeA Mechanics Co., LTD",
+      "market": "코스닥",
+      "sector": "전자·부품",
+      "price": 4965,
+      "change": -2.07,
+      "volume": 615378,
+      "trading_value": 3101534114,
+      "mcap": 0.1315,
+      "shares": 26489500,
+      "induty_code": "259",
+      "categories": [
+        "전자·부품",
+        "로봇"
+      ],
+      "rank": 1143
+    },
+    {
       "ticker": "012610",
       "name": "경인양행",
       "name_en": "KYUNG-IN SYNTHETIC CORPORATION",
@@ -20600,7 +20619,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1143
+      "rank": 1144
     },
     {
       "ticker": "267290",
@@ -20618,44 +20637,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "에너지·전력"
       ],
-      "rank": 1144
-    },
-    {
-      "ticker": "396300",
-      "name": "HT로보틱스",
-      "name_en": "SeA Mechanics Co., LTD",
-      "market": "코스닥",
-      "sector": "전자·부품",
-      "price": 4965,
-      "change": -2.07,
-      "volume": 615378,
-      "trading_value": 3101534114,
-      "mcap": 0.1315,
-      "shares": 26489500,
-      "induty_code": "259",
-      "categories": [
-        "전자·부품",
-        "로봇"
-      ],
       "rank": 1145
-    },
-    {
-      "ticker": "004080",
-      "name": "신흥",
-      "name_en": "SHINHUNG CO.,LTD",
-      "market": "코스피",
-      "sector": "유통·소비재",
-      "price": 14060,
-      "change": 0.07,
-      "volume": 351,
-      "trading_value": 4911560,
-      "mcap": 0.1308,
-      "shares": 9300000,
-      "induty_code": "4659",
-      "categories": [
-        "유통·소비재"
-      ],
-      "rank": 1146
     },
     {
       "ticker": "080420",
@@ -20673,7 +20655,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1147
+      "rank": 1146
     },
     {
       "ticker": "211270",
@@ -20690,6 +20672,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "264",
       "categories": [
         "항공·방산"
+      ],
+      "rank": 1147
+    },
+    {
+      "ticker": "004080",
+      "name": "신흥",
+      "name_en": "SHINHUNG CO.,LTD",
+      "market": "코스피",
+      "sector": "유통·소비재",
+      "price": 14060,
+      "change": 0.07,
+      "volume": 351,
+      "trading_value": 4911560,
+      "mcap": 0.1308,
+      "shares": 9300000,
+      "induty_code": "4659",
+      "categories": [
+        "유통·소비재"
       ],
       "rank": 1148
     },
@@ -20874,24 +20874,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1158
     },
     {
-      "ticker": "214390",
-      "name": "경보제약",
-      "name_en": "KYONGBO PHARMACEUTICAL CO., LTD.",
-      "market": "코스피",
-      "sector": "바이오·제약",
-      "price": 5390,
-      "change": -0.19,
-      "volume": 13743,
-      "trading_value": 74509750,
-      "mcap": 0.1289,
-      "shares": 23906860,
-      "induty_code": "211",
-      "categories": [
-        "바이오·제약"
-      ],
-      "rank": 1159
-    },
-    {
       "ticker": "059120",
       "name": "아진엑스텍",
       "name_en": "AJINEXTEK Co., Ltd.",
@@ -20906,6 +20888,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "2611",
       "categories": [
         "반도체"
+      ],
+      "rank": 1159
+    },
+    {
+      "ticker": "214390",
+      "name": "경보제약",
+      "name_en": "KYONGBO PHARMACEUTICAL CO., LTD.",
+      "market": "코스피",
+      "sector": "바이오·제약",
+      "price": 5390,
+      "change": -0.19,
+      "volume": 13743,
+      "trading_value": 74509750,
+      "mcap": 0.1289,
+      "shares": 23906860,
+      "induty_code": "211",
+      "categories": [
+        "바이오·제약"
       ],
       "rank": 1160
     },
@@ -21287,24 +21287,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1181
     },
     {
-      "ticker": "013520",
-      "name": "화승코퍼레이션",
-      "name_en": "Hwaseung Corporation CO., LTD",
-      "market": "코스피",
-      "sector": "자동차",
-      "price": 2495,
-      "change": -1.96,
-      "volume": 58260,
-      "trading_value": 144659680,
-      "mcap": 0.1249,
-      "shares": 50051252,
-      "induty_code": "303",
-      "categories": [
-        "자동차"
-      ],
-      "rank": 1182
-    },
-    {
       "ticker": "156100",
       "name": "엘앤케이바이오",
       "name_en": "L&K BIOMED CO., LTD.",
@@ -21320,25 +21302,25 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1183
+      "rank": 1182
     },
     {
-      "ticker": "210540",
-      "name": "디와이파워",
-      "name_en": "DY POWER Corporation",
+      "ticker": "013520",
+      "name": "화승코퍼레이션",
+      "name_en": "Hwaseung Corporation CO., LTD",
       "market": "코스피",
-      "sector": "기계·장비",
-      "price": 11280,
-      "change": -1.74,
-      "volume": 39555,
-      "trading_value": 445888360,
-      "mcap": 0.1246,
-      "shares": 11041708,
-      "induty_code": "29241",
+      "sector": "자동차",
+      "price": 2495,
+      "change": -1.96,
+      "volume": 58260,
+      "trading_value": 144659680,
+      "mcap": 0.1249,
+      "shares": 50051252,
+      "induty_code": "303",
       "categories": [
-        "기계·장비"
+        "자동차"
       ],
-      "rank": 1184
+      "rank": 1183
     },
     {
       "ticker": "418420",
@@ -21355,6 +21337,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "262",
       "categories": [
         "반도체"
+      ],
+      "rank": 1184
+    },
+    {
+      "ticker": "210540",
+      "name": "디와이파워",
+      "name_en": "DY POWER Corporation",
+      "market": "코스피",
+      "sector": "기계·장비",
+      "price": 11280,
+      "change": -1.74,
+      "volume": 39555,
+      "trading_value": 445888360,
+      "mcap": 0.1246,
+      "shares": 11041708,
+      "induty_code": "29241",
+      "categories": [
+        "기계·장비"
       ],
       "rank": 1185
     },
@@ -21557,24 +21557,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1196
     },
     {
-      "ticker": "214420",
-      "name": "토니모리",
-      "name_en": "TONYMOLY CO., LTD.",
-      "market": "코스피",
-      "sector": "화장품",
-      "price": 5100,
-      "change": 0.0,
-      "volume": 47814,
-      "trading_value": 243720820,
-      "mcap": 0.1227,
-      "shares": 24054799,
-      "induty_code": "20423",
-      "categories": [
-        "화장품"
-      ],
-      "rank": 1197
-    },
-    {
       "ticker": "299030",
       "name": "하나기술",
       "name_en": "HANA TECHNOLOGY CO.,LTD.",
@@ -21590,25 +21572,25 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "2차전지"
       ],
-      "rank": 1198
+      "rank": 1197
     },
     {
-      "ticker": "350520",
-      "name": "이지스레지던스리츠",
-      "name_en": "IGIS RESIDENCE REIT Co., Ltd.",
+      "ticker": "214420",
+      "name": "토니모리",
+      "name_en": "TONYMOLY CO., LTD.",
       "market": "코스피",
-      "sector": "부동산·리츠",
-      "price": 3325,
-      "change": -0.15,
-      "volume": 8657,
-      "trading_value": 28756918,
-      "mcap": 0.1226,
-      "shares": 36866202,
-      "induty_code": "681",
+      "sector": "화장품",
+      "price": 5100,
+      "change": 0.0,
+      "volume": 47814,
+      "trading_value": 243720820,
+      "mcap": 0.1227,
+      "shares": 24054799,
+      "induty_code": "20423",
       "categories": [
-        "부동산·리츠"
+        "화장품"
       ],
-      "rank": 1199
+      "rank": 1198
     },
     {
       "ticker": "478340",
@@ -21625,6 +21607,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "31311",
       "categories": [
         "항공·방산"
+      ],
+      "rank": 1199
+    },
+    {
+      "ticker": "350520",
+      "name": "이지스레지던스리츠",
+      "name_en": "IGIS RESIDENCE REIT Co., Ltd.",
+      "market": "코스피",
+      "sector": "부동산·리츠",
+      "price": 3325,
+      "change": -0.15,
+      "volume": 8657,
+      "trading_value": 28756918,
+      "mcap": 0.1226,
+      "shares": 36866202,
+      "induty_code": "681",
+      "categories": [
+        "부동산·리츠"
       ],
       "rank": 1200
     },
@@ -21701,24 +21701,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1204
     },
     {
-      "ticker": "002620",
-      "name": "제일파마홀딩스",
-      "name_en": "JEIL PHARMA HOLDINGS INC.",
-      "market": "코스피",
-      "sector": "지주",
-      "price": 7610,
-      "change": 0.53,
-      "volume": 261,
-      "trading_value": 1978720,
-      "mcap": 0.1216,
-      "shares": 15973355,
-      "induty_code": "715",
-      "categories": [
-        "지주"
-      ],
-      "rank": 1205
-    },
-    {
       "ticker": "192410",
       "name": "오늘이엔엠",
       "name_en": "ONEUL E&M co.,Ltd",
@@ -21734,7 +21716,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1206
+      "rank": 1205
     },
     {
       "ticker": "297890",
@@ -21751,6 +21733,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "29272",
       "categories": [
         "반도체"
+      ],
+      "rank": 1206
+    },
+    {
+      "ticker": "002620",
+      "name": "제일파마홀딩스",
+      "name_en": "JEIL PHARMA HOLDINGS INC.",
+      "market": "코스피",
+      "sector": "지주",
+      "price": 7610,
+      "change": 0.53,
+      "volume": 261,
+      "trading_value": 1978720,
+      "mcap": 0.1216,
+      "shares": 15973355,
+      "induty_code": "715",
+      "categories": [
+        "지주"
       ],
       "rank": 1207
     },
@@ -21881,24 +21881,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1214
     },
     {
-      "ticker": "079430",
-      "name": "현대리바트",
-      "name_en": "HYUNDAI LIVART FURNITURE COMPANY LIMITED",
-      "market": "코스피",
-      "sector": "섬유·패션·생활",
-      "price": 5980,
-      "change": 0.84,
-      "volume": 10738,
-      "trading_value": 63427800,
-      "mcap": 0.1203,
-      "shares": 20114202,
-      "induty_code": "32029",
-      "categories": [
-        "섬유·패션·생활"
-      ],
-      "rank": 1215
-    },
-    {
       "ticker": "451760",
       "name": "컨텍",
       "name_en": "CONTEC Co.,Ltd",
@@ -21913,6 +21895,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "620",
       "categories": [
         "IT·소프트웨어"
+      ],
+      "rank": 1215
+    },
+    {
+      "ticker": "079430",
+      "name": "현대리바트",
+      "name_en": "HYUNDAI LIVART FURNITURE COMPANY LIMITED",
+      "market": "코스피",
+      "sector": "섬유·패션·생활",
+      "price": 5980,
+      "change": 0.84,
+      "volume": 10738,
+      "trading_value": 63427800,
+      "mcap": 0.1203,
+      "shares": 20114202,
+      "induty_code": "32029",
+      "categories": [
+        "섬유·패션·생활"
       ],
       "rank": 1216
     },
@@ -21989,24 +21989,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1220
     },
     {
-      "ticker": "011690",
-      "name": "와이투솔루션",
-      "name_en": "Y2 Solution CO.,LTD",
-      "market": "코스피",
-      "sector": "반도체",
-      "price": 3255,
-      "change": 1.72,
-      "volume": 75157,
-      "trading_value": 241147340,
-      "mcap": 0.1195,
-      "shares": 36698762,
-      "induty_code": "2611",
-      "categories": [
-        "반도체"
-      ],
-      "rank": 1221
-    },
-    {
       "ticker": "049520",
       "name": "유아이엘",
       "name_en": "UIL Co.,Ltd",
@@ -22021,6 +22003,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "2629",
       "categories": [
         "전자·부품"
+      ],
+      "rank": 1221
+    },
+    {
+      "ticker": "011690",
+      "name": "와이투솔루션",
+      "name_en": "Y2 Solution CO.,LTD",
+      "market": "코스피",
+      "sector": "반도체",
+      "price": 3255,
+      "change": 1.72,
+      "volume": 75157,
+      "trading_value": 241147340,
+      "mcap": 0.1195,
+      "shares": 36698762,
+      "induty_code": "2611",
+      "categories": [
+        "반도체"
       ],
       "rank": 1222
     },
@@ -22603,24 +22603,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1254
     },
     {
-      "ticker": "016710",
-      "name": "대성홀딩스",
-      "name_en": "DAESUNG HOLDINGS CO., LTD.",
-      "market": "코스피",
-      "sector": "지주",
-      "price": 7040,
-      "change": 0.86,
-      "volume": 14265,
-      "trading_value": 99823030,
-      "mcap": 0.1133,
-      "shares": 16089459,
-      "induty_code": "715",
-      "categories": [
-        "지주"
-      ],
-      "rank": 1255
-    },
-    {
       "ticker": "090850",
       "name": "현대이지웰",
       "name_en": "HYUNDAI EZWEL CO., LTD.",
@@ -22635,6 +22617,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "58222",
       "categories": [
         "IT·소프트웨어"
+      ],
+      "rank": 1255
+    },
+    {
+      "ticker": "016710",
+      "name": "대성홀딩스",
+      "name_en": "DAESUNG HOLDINGS CO., LTD.",
+      "market": "코스피",
+      "sector": "지주",
+      "price": 7040,
+      "change": 0.86,
+      "volume": 14265,
+      "trading_value": 99823030,
+      "mcap": 0.1133,
+      "shares": 16089459,
+      "induty_code": "715",
+      "categories": [
+        "지주"
       ],
       "rank": 1256
     },
@@ -23054,42 +23054,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1279
     },
     {
-      "ticker": "012320",
-      "name": "경동인베스트",
-      "name_en": "KYUNGDONG INVEST CO., LTD.",
-      "market": "코스피",
-      "sector": "금융",
-      "price": 46300,
-      "change": -1.8,
-      "volume": 3836,
-      "trading_value": 178476250,
-      "mcap": 0.1095,
-      "shares": 2365023,
-      "induty_code": "649",
-      "categories": [
-        "금융"
-      ],
-      "rank": 1280
-    },
-    {
-      "ticker": "011810",
-      "name": "STX",
-      "name_en": "STX CORPORATION",
-      "market": "코스피",
-      "sector": "유통·소비재",
-      "price": 3530,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.1095,
-      "shares": 31017927,
-      "induty_code": "46800",
-      "categories": [
-        "유통·소비재"
-      ],
-      "rank": 1281
-    },
-    {
       "ticker": "106190",
       "name": "하이텍팜",
       "name_en": "HIGH TECH PHARM CO.,LTD.",
@@ -23105,7 +23069,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1282
+      "rank": 1280
     },
     {
       "ticker": "141000",
@@ -23122,6 +23086,42 @@ window.KOS_LIVE_DATA = {
       "induty_code": "29272",
       "categories": [
         "기계·장비"
+      ],
+      "rank": 1281
+    },
+    {
+      "ticker": "012320",
+      "name": "경동인베스트",
+      "name_en": "KYUNGDONG INVEST CO., LTD.",
+      "market": "코스피",
+      "sector": "금융",
+      "price": 46300,
+      "change": -1.8,
+      "volume": 3836,
+      "trading_value": 178476250,
+      "mcap": 0.1095,
+      "shares": 2365023,
+      "induty_code": "649",
+      "categories": [
+        "금융"
+      ],
+      "rank": 1282
+    },
+    {
+      "ticker": "011810",
+      "name": "STX",
+      "name_en": "STX CORPORATION",
+      "market": "코스피",
+      "sector": "유통·소비재",
+      "price": 3530,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.1095,
+      "shares": 31017927,
+      "induty_code": "46800",
+      "categories": [
+        "유통·소비재"
       ],
       "rank": 1283
     },
@@ -23180,6 +23180,24 @@ window.KOS_LIVE_DATA = {
       "rank": 1286
     },
     {
+      "ticker": "242040",
+      "name": "나무AX",
+      "name_en": "NAMU TECH CO.,LTD.",
+      "market": "코스닥",
+      "sector": "IT·소프트웨어",
+      "price": 3150,
+      "change": 1.61,
+      "volume": 187252,
+      "trading_value": 580598794,
+      "mcap": 0.109,
+      "shares": 34606264,
+      "induty_code": "582",
+      "categories": [
+        "IT·소프트웨어"
+      ],
+      "rank": 1287
+    },
+    {
       "ticker": "012800",
       "name": "대창",
       "name_en": "DAECHANG Co.,Ltd",
@@ -23194,24 +23212,6 @@ window.KOS_LIVE_DATA = {
       "induty_code": "24221",
       "categories": [
         "철강·금속"
-      ],
-      "rank": 1287
-    },
-    {
-      "ticker": "242040",
-      "name": "나무에이엑스",
-      "name_en": "NAMU TECH CO.,LTD.",
-      "market": "코스닥",
-      "sector": "IT·소프트웨어",
-      "price": 3150,
-      "change": 1.61,
-      "volume": 187252,
-      "trading_value": 580598794,
-      "mcap": 0.109,
-      "shares": 34606264,
-      "induty_code": "582",
-      "categories": [
-        "IT·소프트웨어"
       ],
       "rank": 1288
     },
@@ -23270,24 +23270,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1291
     },
     {
-      "ticker": "010100",
-      "name": "한국무브넥스",
-      "name_en": "KOREA MOVENEX CO., LTD.",
-      "market": "코스피",
-      "sector": "자동차",
-      "price": 3530,
-      "change": 1.15,
-      "volume": 79248,
-      "trading_value": 277153235,
-      "mcap": 0.1075,
-      "shares": 30450420,
-      "induty_code": "303",
-      "categories": [
-        "자동차"
-      ],
-      "rank": 1292
-    },
-    {
       "ticker": "366030",
       "name": "나인앤컴퍼니",
       "name_en": "09women Co., Ltd.",
@@ -23302,6 +23284,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "144",
       "categories": [
         "섬유·패션·생활"
+      ],
+      "rank": 1292
+    },
+    {
+      "ticker": "010100",
+      "name": "한국무브넥스",
+      "name_en": "KOREA MOVENEX CO., LTD.",
+      "market": "코스피",
+      "sector": "자동차",
+      "price": 3530,
+      "change": 1.15,
+      "volume": 79248,
+      "trading_value": 277153235,
+      "mcap": 0.1075,
+      "shares": 30450420,
+      "induty_code": "303",
+      "categories": [
+        "자동차"
       ],
       "rank": 1293
     },
@@ -24207,24 +24207,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1343
     },
     {
-      "ticker": "035000",
-      "name": "HS애드",
-      "name_en": "HS Ad Inc.",
-      "market": "코스피",
-      "sector": "미디어·엔터",
-      "price": 6050,
-      "change": -1.14,
-      "volume": 340346,
-      "trading_value": 2047747570,
-      "mcap": 0.0981,
-      "shares": 16207644,
-      "induty_code": "71310",
-      "categories": [
-        "미디어·엔터"
-      ],
-      "rank": 1344
-    },
-    {
       "ticker": "005860",
       "name": "한일사료",
       "name_en": "HANIL FEED Co.Ltd",
@@ -24240,7 +24222,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 1345
+      "rank": 1344
     },
     {
       "ticker": "475580",
@@ -24258,6 +24240,24 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비",
         "로봇"
+      ],
+      "rank": 1345
+    },
+    {
+      "ticker": "035000",
+      "name": "HS애드",
+      "name_en": "HS Ad Inc.",
+      "market": "코스피",
+      "sector": "미디어·엔터",
+      "price": 6050,
+      "change": -1.14,
+      "volume": 340346,
+      "trading_value": 2047747570,
+      "mcap": 0.0981,
+      "shares": 16207644,
+      "induty_code": "71310",
+      "categories": [
+        "미디어·엔터"
       ],
       "rank": 1346
     },
@@ -25325,24 +25325,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1405
     },
     {
-      "ticker": "004890",
-      "name": "동일산업",
-      "name_en": "DONGIL INDUSTRIES CO.,LTD",
-      "market": "코스피",
-      "sector": "철강·금속",
-      "price": 36250,
-      "change": 1.12,
-      "volume": 312,
-      "trading_value": 11194150,
-      "mcap": 0.0879,
-      "shares": 2425215,
-      "induty_code": "24113",
-      "categories": [
-        "철강·금속"
-      ],
-      "rank": 1406
-    },
-    {
       "ticker": "096240",
       "name": "크레버스",
       "name_en": "Creverse, Inc.",
@@ -25358,7 +25340,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 1407
+      "rank": 1406
     },
     {
       "ticker": "900260",
@@ -25375,6 +25357,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "64992",
       "categories": [
         "금융"
+      ],
+      "rank": 1407
+    },
+    {
+      "ticker": "004890",
+      "name": "동일산업",
+      "name_en": "DONGIL INDUSTRIES CO.,LTD",
+      "market": "코스피",
+      "sector": "철강·금속",
+      "price": 36250,
+      "change": 1.12,
+      "volume": 312,
+      "trading_value": 11194150,
+      "mcap": 0.0879,
+      "shares": 2425215,
+      "induty_code": "24113",
+      "categories": [
+        "철강·금속"
       ],
       "rank": 1408
     },
@@ -25959,24 +25959,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1440
     },
     {
-      "ticker": "006090",
-      "name": "사조오양",
-      "name_en": "OYANG CORPORATION",
-      "market": "코스피",
-      "sector": "식음료",
-      "price": 8920,
-      "change": -0.34,
-      "volume": 3853,
-      "trading_value": 34141340,
-      "mcap": 0.0841,
-      "shares": 9422739,
-      "induty_code": "102",
-      "categories": [
-        "식음료"
-      ],
-      "rank": 1441
-    },
-    {
       "ticker": "214680",
       "name": "디알텍",
       "name_en": "DRTECH Corporation",
@@ -25991,6 +25973,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "271",
       "categories": [
         "전기장비"
+      ],
+      "rank": 1441
+    },
+    {
+      "ticker": "006090",
+      "name": "사조오양",
+      "name_en": "OYANG CORPORATION",
+      "market": "코스피",
+      "sector": "식음료",
+      "price": 8920,
+      "change": -0.34,
+      "volume": 3853,
+      "trading_value": 34141340,
+      "mcap": 0.0841,
+      "shares": 9422739,
+      "induty_code": "102",
+      "categories": [
+        "식음료"
       ],
       "rank": 1442
     },
@@ -26050,24 +26050,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1445
     },
     {
-      "ticker": "005740",
-      "name": "크라운해태홀딩스",
-      "name_en": "CROWNHAITAI Holdings CO.,LTD",
-      "market": "코스피",
-      "sector": "지주",
-      "price": 5650,
-      "change": 0.0,
-      "volume": 4616,
-      "trading_value": 25973750,
-      "mcap": 0.0839,
-      "shares": 14847347,
-      "induty_code": "64992",
-      "categories": [
-        "지주"
-      ],
-      "rank": 1446
-    },
-    {
       "ticker": "078140",
       "name": "대봉엘에스",
       "name_en": "Daebonglsco.,Ltd",
@@ -26082,6 +26064,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "212",
       "categories": [
         "바이오·제약"
+      ],
+      "rank": 1446
+    },
+    {
+      "ticker": "005740",
+      "name": "크라운해태홀딩스",
+      "name_en": "CROWNHAITAI Holdings CO.,LTD",
+      "market": "코스피",
+      "sector": "지주",
+      "price": 5650,
+      "change": 0.0,
+      "volume": 4616,
+      "trading_value": 25973750,
+      "mcap": 0.0839,
+      "shares": 14847347,
+      "induty_code": "64992",
+      "categories": [
+        "지주"
       ],
       "rank": 1447
     },
@@ -26374,24 +26374,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1463
     },
     {
-      "ticker": "001020",
-      "name": "페이퍼코리아",
-      "name_en": "PaperCorea Inc.",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 2320,
-      "change": -5.31,
-      "volume": 7480,
-      "trading_value": 17662690,
-      "mcap": 0.0826,
-      "shares": 35596662,
-      "induty_code": "171",
-      "categories": [
-        "기타"
-      ],
-      "rank": 1464
-    },
-    {
       "ticker": "048530",
       "name": "인트론바이오",
       "name_en": "iNtRON Biotechnology, Inc.",
@@ -26407,7 +26389,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1465
+      "rank": 1464
     },
     {
       "ticker": "321370",
@@ -26424,6 +26406,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "262",
       "categories": [
         "전자·부품"
+      ],
+      "rank": 1465
+    },
+    {
+      "ticker": "001020",
+      "name": "페이퍼코리아",
+      "name_en": "PaperCorea Inc.",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 2320,
+      "change": -5.31,
+      "volume": 7480,
+      "trading_value": 17662690,
+      "mcap": 0.0826,
+      "shares": 35596662,
+      "induty_code": "171",
+      "categories": [
+        "기타"
       ],
       "rank": 1466
     },
@@ -26536,24 +26536,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1472
     },
     {
-      "ticker": "109070",
-      "name": "주성코퍼레이션",
-      "name_en": "JOOSUNG CORPORATION",
-      "market": "코스피",
-      "sector": "전자·부품",
-      "price": 1550,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.0819,
-      "shares": 52810230,
-      "induty_code": "264",
-      "categories": [
-        "전자·부품"
-      ],
-      "rank": 1473
-    },
-    {
       "ticker": "048910",
       "name": "대원미디어",
       "name_en": "DAEWON MEDIA CO.,LTD.",
@@ -26568,6 +26550,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "467",
       "categories": [
         "미디어·엔터"
+      ],
+      "rank": 1473
+    },
+    {
+      "ticker": "109070",
+      "name": "주성코퍼레이션",
+      "name_en": "JOOSUNG CORPORATION",
+      "market": "코스피",
+      "sector": "전자·부품",
+      "price": 1550,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.0819,
+      "shares": 52810230,
+      "induty_code": "264",
+      "categories": [
+        "전자·부품"
       ],
       "rank": 1474
     },
@@ -27148,24 +27148,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1506
     },
     {
-      "ticker": "013360",
-      "name": "일성건설",
-      "name_en": "ILSUNG CONSTRUCTION CO.,LTD",
-      "market": "코스피",
-      "sector": "건설·건자재",
-      "price": 1451,
-      "change": -0.62,
-      "volume": 203421,
-      "trading_value": 293197442,
-      "mcap": 0.0784,
-      "shares": 54024880,
-      "induty_code": "41221",
-      "categories": [
-        "건설·건자재"
-      ],
-      "rank": 1507
-    },
-    {
       "ticker": "041930",
       "name": "SY동아",
       "name_en": "SY DONG-A Co., Ltd.",
@@ -27180,6 +27162,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "2219",
       "categories": [
         "화학"
+      ],
+      "rank": 1507
+    },
+    {
+      "ticker": "013360",
+      "name": "일성건설",
+      "name_en": "ILSUNG CONSTRUCTION CO.,LTD",
+      "market": "코스피",
+      "sector": "건설·건자재",
+      "price": 1451,
+      "change": -0.62,
+      "volume": 203421,
+      "trading_value": 293197442,
+      "mcap": 0.0784,
+      "shares": 54024880,
+      "induty_code": "41221",
+      "categories": [
+        "건설·건자재"
       ],
       "rank": 1508
     },
@@ -27275,6 +27275,24 @@ window.KOS_LIVE_DATA = {
       "rank": 1513
     },
     {
+      "ticker": "487400",
+      "name": "케이앤에스아이앤씨",
+      "name_en": "KNS Space and Defence Inc.",
+      "market": "코스닥",
+      "sector": "반도체",
+      "price": 7540,
+      "change": -1.69,
+      "volume": 363817,
+      "trading_value": 2825816970,
+      "mcap": 0.0774,
+      "shares": 10260882,
+      "induty_code": "26429",
+      "categories": [
+        "반도체"
+      ],
+      "rank": 1514
+    },
+    {
       "ticker": "210980",
       "name": "SK디앤디",
       "name_en": "SK D&D Co.,Ltd.",
@@ -27290,7 +27308,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "부동산·리츠"
       ],
-      "rank": 1514
+      "rank": 1515
     },
     {
       "ticker": "000590",
@@ -27308,43 +27326,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "지주"
       ],
-      "rank": 1515
-    },
-    {
-      "ticker": "487400",
-      "name": "케이앤에스아이앤씨",
-      "name_en": "KNS Space and Defence Inc.",
-      "market": "코스닥",
-      "sector": "반도체",
-      "price": 7540,
-      "change": -1.69,
-      "volume": 363817,
-      "trading_value": 2825816970,
-      "mcap": 0.0774,
-      "shares": 10260882,
-      "induty_code": "26429",
-      "categories": [
-        "반도체"
-      ],
       "rank": 1516
-    },
-    {
-      "ticker": "163560",
-      "name": "동일고무벨트",
-      "name_en": "DRB Industrial Co.,Ltd",
-      "market": "코스피",
-      "sector": "화학",
-      "price": 5560,
-      "change": -0.36,
-      "volume": 11808,
-      "trading_value": 65395000,
-      "mcap": 0.0773,
-      "shares": 13900000,
-      "induty_code": "2219",
-      "categories": [
-        "화학"
-      ],
-      "rank": 1517
     },
     {
       "ticker": "012700",
@@ -27361,6 +27343,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "46712",
       "categories": [
         "금융"
+      ],
+      "rank": 1517
+    },
+    {
+      "ticker": "163560",
+      "name": "동일고무벨트",
+      "name_en": "DRB Industrial Co.,Ltd",
+      "market": "코스피",
+      "sector": "화학",
+      "price": 5560,
+      "change": -0.36,
+      "volume": 11808,
+      "trading_value": 65395000,
+      "mcap": 0.0773,
+      "shares": 13900000,
+      "induty_code": "2219",
+      "categories": [
+        "화학"
       ],
       "rank": 1518
     },
@@ -27492,24 +27492,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1525
     },
     {
-      "ticker": "001260",
-      "name": "남광토건",
-      "name_en": "NAMKWANG ENGINEERING & CONSTRUCTION CO.,LTD",
-      "market": "코스피",
-      "sector": "건설·건자재",
-      "price": 7790,
-      "change": -0.26,
-      "volume": 50920,
-      "trading_value": 388513665,
-      "mcap": 0.0766,
-      "shares": 9832572,
-      "induty_code": "41221",
-      "categories": [
-        "건설·건자재"
-      ],
-      "rank": 1526
-    },
-    {
       "ticker": "282620",
       "name": "기도산업",
       "name_en": "KIDO INDUSTRIAL CO., LTD",
@@ -27524,6 +27506,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "14199",
       "categories": [
         "기타"
+      ],
+      "rank": 1526
+    },
+    {
+      "ticker": "001260",
+      "name": "남광토건",
+      "name_en": "NAMKWANG ENGINEERING & CONSTRUCTION CO.,LTD",
+      "market": "코스피",
+      "sector": "건설·건자재",
+      "price": 7790,
+      "change": -0.26,
+      "volume": 50920,
+      "trading_value": 388513665,
+      "mcap": 0.0766,
+      "shares": 9832572,
+      "induty_code": "41221",
+      "categories": [
+        "건설·건자재"
       ],
       "rank": 1527
     },
@@ -27564,24 +27564,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1529
     },
     {
-      "ticker": "007590",
-      "name": "동방아그로",
-      "name_en": "DONGBANG AGRO CORP",
-      "market": "코스피",
-      "sector": "화학",
-      "price": 5600,
-      "change": 0.0,
-      "volume": 342,
-      "trading_value": 1912230,
-      "mcap": 0.0763,
-      "shares": 13617577,
-      "induty_code": "2032",
-      "categories": [
-        "화학"
-      ],
-      "rank": 1530
-    },
-    {
       "ticker": "389140",
       "name": "포바이포",
       "name_en": "4by4 Inc.",
@@ -27597,7 +27579,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 1531
+      "rank": 1530
     },
     {
       "ticker": "067370",
@@ -27615,7 +27597,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1532
+      "rank": 1531
     },
     {
       "ticker": "225530",
@@ -27633,7 +27615,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1533
+      "rank": 1532
     },
     {
       "ticker": "347890",
@@ -27651,7 +27633,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1534
+      "rank": 1533
     },
     {
       "ticker": "124560",
@@ -27668,6 +27650,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "5299",
       "categories": [
         "운송·물류"
+      ],
+      "rank": 1534
+    },
+    {
+      "ticker": "007590",
+      "name": "동방아그로",
+      "name_en": "DONGBANG AGRO CORP",
+      "market": "코스피",
+      "sector": "화학",
+      "price": 5600,
+      "change": 0.0,
+      "volume": 342,
+      "trading_value": 1912230,
+      "mcap": 0.0763,
+      "shares": 13617577,
+      "induty_code": "2032",
+      "categories": [
+        "화학"
       ],
       "rank": 1535
     },
@@ -27961,6 +27961,24 @@ window.KOS_LIVE_DATA = {
       "rank": 1551
     },
     {
+      "ticker": "060590",
+      "name": "씨티씨바이오",
+      "name_en": "CTC BIO, INC.",
+      "market": "코스닥",
+      "sector": "바이오·제약",
+      "price": 3095,
+      "change": 1.14,
+      "volume": 28434,
+      "trading_value": 86283135,
+      "mcap": 0.0748,
+      "shares": 24181020,
+      "induty_code": "212",
+      "categories": [
+        "바이오·제약"
+      ],
+      "rank": 1552
+    },
+    {
       "ticker": "055490",
       "name": "테이팩스",
       "name_en": "TAPEX INC",
@@ -27976,7 +27994,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1552
+      "rank": 1553
     },
     {
       "ticker": "010960",
@@ -27994,25 +28012,24 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1553
+      "rank": 1554
     },
     {
-      "ticker": "060590",
-      "name": "씨티씨바이오",
-      "name_en": "CTC BIO, INC.",
+      "ticker": "0155E0",
+      "name": "해치텍",
+      "name_en": "Haechitech",
       "market": "코스닥",
-      "sector": "바이오·제약",
-      "price": 3095,
-      "change": 1.14,
-      "volume": 28434,
-      "trading_value": 86283135,
-      "mcap": 0.0748,
-      "shares": 24181020,
-      "induty_code": "212",
+      "sector": "기계·장비",
+      "price": 13620,
+      "change": -0.07,
+      "volume": 855202,
+      "trading_value": 11937188780,
+      "mcap": 0.0747,
+      "shares": 5487150,
       "categories": [
-        "바이오·제약"
+        "기계·장비"
       ],
-      "rank": 1554
+      "rank": 1555
     },
     {
       "ticker": "007610",
@@ -28029,23 +28046,6 @@ window.KOS_LIVE_DATA = {
       "induty_code": "28123",
       "categories": [
         "전기장비"
-      ],
-      "rank": 1555
-    },
-    {
-      "ticker": "0155E0",
-      "name": "해치텍",
-      "name_en": "Haechitech",
-      "market": "코스닥",
-      "sector": "기계·장비",
-      "price": 13620,
-      "change": -0.07,
-      "volume": 855202,
-      "trading_value": 11937188780,
-      "mcap": 0.0747,
-      "shares": 5487150,
-      "categories": [
-        "기계·장비"
       ],
       "rank": 1556
     },
@@ -28539,24 +28539,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1583
     },
     {
-      "ticker": "013870",
-      "name": "지엠비코리아",
-      "name_en": "GMB Korea Corp.",
-      "market": "코스피",
-      "sector": "자동차",
-      "price": 3805,
-      "change": -0.78,
-      "volume": 24210,
-      "trading_value": 92193525,
-      "mcap": 0.0726,
-      "shares": 19072280,
-      "induty_code": "303",
-      "categories": [
-        "자동차"
-      ],
-      "rank": 1584
-    },
-    {
       "ticker": "170030",
       "name": "현대공업",
       "name_en": "HYUNDAI INDUSTRIAL CO.,LTD",
@@ -28572,7 +28554,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1585
+      "rank": 1584
     },
     {
       "ticker": "060570",
@@ -28589,6 +28571,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "603",
       "categories": [
         "미디어·엔터"
+      ],
+      "rank": 1585
+    },
+    {
+      "ticker": "013870",
+      "name": "지엠비코리아",
+      "name_en": "GMB Korea Corp.",
+      "market": "코스피",
+      "sector": "자동차",
+      "price": 3805,
+      "change": -0.78,
+      "volume": 24210,
+      "trading_value": 92193525,
+      "mcap": 0.0726,
+      "shares": 19072280,
+      "induty_code": "303",
+      "categories": [
+        "자동차"
       ],
       "rank": 1586
     },
@@ -28773,24 +28773,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1596
     },
     {
-      "ticker": "000230",
-      "name": "일동홀딩스",
-      "name_en": "ILDONG HOLDINGS CO.,LTD",
-      "market": "코스피",
-      "sector": "지주",
-      "price": 6210,
-      "change": 0.0,
-      "volume": 14525,
-      "trading_value": 89134925,
-      "mcap": 0.0717,
-      "shares": 11540400,
-      "induty_code": "212",
-      "categories": [
-        "지주"
-      ],
-      "rank": 1597
-    },
-    {
       "ticker": "299660",
       "name": "셀리드",
       "name_en": "Cellid Co., Ltd.",
@@ -28805,6 +28787,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "701",
       "categories": [
         "바이오·제약"
+      ],
+      "rank": 1597
+    },
+    {
+      "ticker": "000230",
+      "name": "일동홀딩스",
+      "name_en": "ILDONG HOLDINGS CO.,LTD",
+      "market": "코스피",
+      "sector": "지주",
+      "price": 6210,
+      "change": 0.0,
+      "volume": 14525,
+      "trading_value": 89134925,
+      "mcap": 0.0717,
+      "shares": 11540400,
+      "induty_code": "212",
+      "categories": [
+        "지주"
       ],
       "rank": 1598
     },
@@ -29133,24 +29133,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1616
     },
     {
-      "ticker": "155660",
-      "name": "DSR",
-      "name_en": "DSR CORP",
-      "market": "코스피",
-      "sector": "철강·금속",
-      "price": 4410,
-      "change": 1.26,
-      "volume": 10699,
-      "trading_value": 46648069,
-      "mcap": 0.0706,
-      "shares": 16000000,
-      "induty_code": "242",
-      "categories": [
-        "철강·금속"
-      ],
-      "rank": 1617
-    },
-    {
       "ticker": "054620",
       "name": "APS",
       "name_en": "APS Inc.",
@@ -29166,7 +29148,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 1618
+      "rank": 1617
     },
     {
       "ticker": "006140",
@@ -29184,7 +29166,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1619
+      "rank": 1618
     },
     {
       "ticker": "205470",
@@ -29202,25 +29184,25 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1620
+      "rank": 1619
     },
     {
-      "ticker": "010660",
-      "name": "화천기계",
-      "name_en": "HWACHEON MACHINERY CO.,LTD",
+      "ticker": "155660",
+      "name": "DSR",
+      "name_en": "DSR CORP",
       "market": "코스피",
-      "sector": "기계·장비",
-      "price": 3205,
-      "change": -1.99,
-      "volume": 51887,
-      "trading_value": 167984592,
-      "mcap": 0.0705,
-      "shares": 22000000,
-      "induty_code": "29223",
+      "sector": "철강·금속",
+      "price": 4410,
+      "change": 1.26,
+      "volume": 10699,
+      "trading_value": 46648069,
+      "mcap": 0.0706,
+      "shares": 16000000,
+      "induty_code": "242",
       "categories": [
-        "기계·장비"
+        "철강·금속"
       ],
-      "rank": 1621
+      "rank": 1620
     },
     {
       "ticker": "360070",
@@ -29237,6 +29219,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "28202",
       "categories": [
         "2차전지"
+      ],
+      "rank": 1621
+    },
+    {
+      "ticker": "010660",
+      "name": "화천기계",
+      "name_en": "HWACHEON MACHINERY CO.,LTD",
+      "market": "코스피",
+      "sector": "기계·장비",
+      "price": 3205,
+      "change": -1.99,
+      "volume": 51887,
+      "trading_value": 167984592,
+      "mcap": 0.0705,
+      "shares": 22000000,
+      "induty_code": "29223",
+      "categories": [
+        "기계·장비"
       ],
       "rank": 1622
     },
@@ -29764,24 +29764,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1651
     },
     {
-      "ticker": "058730",
-      "name": "다스코",
-      "name_en": "Development  Advance Solution Co., Ltd.",
-      "market": "코스피",
-      "sector": "건설·건자재",
-      "price": 3360,
-      "change": -3.45,
-      "volume": 500779,
-      "trading_value": 1716742904,
-      "mcap": 0.068,
-      "shares": 20251251,
-      "induty_code": "25112",
-      "categories": [
-        "건설·건자재"
-      ],
-      "rank": 1652
-    },
-    {
       "ticker": "014970",
       "name": "삼륭물산",
       "name_en": "Samryoong",
@@ -29796,6 +29778,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "17223",
       "categories": [
         "섬유·패션·생활"
+      ],
+      "rank": 1652
+    },
+    {
+      "ticker": "058730",
+      "name": "다스코",
+      "name_en": "Development  Advance Solution Co., Ltd.",
+      "market": "코스피",
+      "sector": "건설·건자재",
+      "price": 3360,
+      "change": -3.45,
+      "volume": 500779,
+      "trading_value": 1716742904,
+      "mcap": 0.068,
+      "shares": 20251251,
+      "induty_code": "25112",
+      "categories": [
+        "건설·건자재"
       ],
       "rank": 1653
     },
@@ -29836,42 +29836,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1655
     },
     {
-      "ticker": "031820",
-      "name": "아이티센씨티에스",
-      "name_en": "ITCENCTS",
-      "market": "코스피",
-      "sector": "IT·소프트웨어",
-      "price": 5590,
-      "change": -0.71,
-      "volume": 11270,
-      "trading_value": 63121480,
-      "mcap": 0.0677,
-      "shares": 12105146,
-      "induty_code": "6201",
-      "categories": [
-        "IT·소프트웨어"
-      ],
-      "rank": 1656
-    },
-    {
-      "ticker": "002700",
-      "name": "신일전자",
-      "name_en": "SHINIL ELECTRONICS CO.,LTD",
-      "market": "코스피",
-      "sector": "유통·소비재",
-      "price": 987,
-      "change": 0.51,
-      "volume": 216827,
-      "trading_value": 213685876,
-      "mcap": 0.0677,
-      "shares": 68547521,
-      "induty_code": "46521",
-      "categories": [
-        "유통·소비재"
-      ],
-      "rank": 1657
-    },
-    {
       "ticker": "396270",
       "name": "넥스트칩",
       "name_en": "Nextchip Co., Ltd.",
@@ -29887,7 +29851,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 1658
+      "rank": 1656
     },
     {
       "ticker": "061250",
@@ -29904,6 +29868,42 @@ window.KOS_LIVE_DATA = {
       "induty_code": "212",
       "categories": [
         "바이오·제약"
+      ],
+      "rank": 1657
+    },
+    {
+      "ticker": "031820",
+      "name": "아이티센씨티에스",
+      "name_en": "ITCENCTS",
+      "market": "코스피",
+      "sector": "IT·소프트웨어",
+      "price": 5590,
+      "change": -0.71,
+      "volume": 11270,
+      "trading_value": 63121480,
+      "mcap": 0.0677,
+      "shares": 12105146,
+      "induty_code": "6201",
+      "categories": [
+        "IT·소프트웨어"
+      ],
+      "rank": 1658
+    },
+    {
+      "ticker": "002700",
+      "name": "신일전자",
+      "name_en": "SHINIL ELECTRONICS CO.,LTD",
+      "market": "코스피",
+      "sector": "유통·소비재",
+      "price": 987,
+      "change": 0.51,
+      "volume": 216827,
+      "trading_value": 213685876,
+      "mcap": 0.0677,
+      "shares": 68547521,
+      "induty_code": "46521",
+      "categories": [
+        "유통·소비재"
       ],
       "rank": 1659
     },
@@ -30340,24 +30340,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1683
     },
     {
-      "ticker": "004440",
-      "name": "삼일씨엔에스",
-      "name_en": "SAMIL C&S CO.,LTD",
-      "market": "코스피",
-      "sector": "건설·건자재",
-      "price": 5150,
-      "change": -2.46,
-      "volume": 15530,
-      "trading_value": 79376090,
-      "mcap": 0.0656,
-      "shares": 12731947,
-      "induty_code": "23325",
-      "categories": [
-        "건설·건자재"
-      ],
-      "rank": 1684
-    },
-    {
       "ticker": "061040",
       "name": "알에프텍",
       "name_en": "RFTECH CO., LTD",
@@ -30372,6 +30354,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "2642",
       "categories": [
         "전자·부품"
+      ],
+      "rank": 1684
+    },
+    {
+      "ticker": "004440",
+      "name": "삼일씨엔에스",
+      "name_en": "SAMIL C&S CO.,LTD",
+      "market": "코스피",
+      "sector": "건설·건자재",
+      "price": 5150,
+      "change": -2.46,
+      "volume": 15530,
+      "trading_value": 79376090,
+      "mcap": 0.0656,
+      "shares": 12731947,
+      "induty_code": "23325",
+      "categories": [
+        "건설·건자재"
       ],
       "rank": 1685
     },
@@ -30412,24 +30412,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1687
     },
     {
-      "ticker": "017370",
-      "name": "우신시스템",
-      "name_en": "WOOSHIN SYSTEMS CO.,LTD",
-      "market": "코스피",
-      "sector": "자동차",
-      "price": 3560,
-      "change": 0.28,
-      "volume": 4021,
-      "trading_value": 14262340,
-      "mcap": 0.0652,
-      "shares": 18314054,
-      "induty_code": "292",
-      "categories": [
-        "자동차"
-      ],
-      "rank": 1688
-    },
-    {
       "ticker": "054300",
       "name": "팬스타엔터프라이즈",
       "name_en": "Panstar Enterprise Co., Ltd.",
@@ -30442,6 +30424,24 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.0652,
       "shares": 57870945,
       "induty_code": "29169",
+      "categories": [
+        "자동차"
+      ],
+      "rank": 1688
+    },
+    {
+      "ticker": "017370",
+      "name": "우신시스템",
+      "name_en": "WOOSHIN SYSTEMS CO.,LTD",
+      "market": "코스피",
+      "sector": "자동차",
+      "price": 3560,
+      "change": 0.28,
+      "volume": 4021,
+      "trading_value": 14262340,
+      "mcap": 0.0652,
+      "shares": 18314054,
+      "induty_code": "292",
       "categories": [
         "자동차"
       ],
@@ -30502,6 +30502,24 @@ window.KOS_LIVE_DATA = {
       "rank": 1692
     },
     {
+      "ticker": "221800",
+      "name": "지구홀딩스",
+      "name_en": "ZGOO Holdings Co., Ltd.",
+      "market": "코스닥",
+      "sector": "지주",
+      "price": 3980,
+      "change": -1.0,
+      "volume": 56018,
+      "trading_value": 219666710,
+      "mcap": 0.0649,
+      "shares": 16318851,
+      "induty_code": "72911",
+      "categories": [
+        "지주"
+      ],
+      "rank": 1693
+    },
+    {
       "ticker": "005870",
       "name": "휴니드",
       "name_en": "HUNEED TECHNOLOGIES",
@@ -30517,7 +30535,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 1693
+      "rank": 1694
     },
     {
       "ticker": "010040",
@@ -30534,24 +30552,6 @@ window.KOS_LIVE_DATA = {
       "induty_code": "2321",
       "categories": [
         "화학"
-      ],
-      "rank": 1694
-    },
-    {
-      "ticker": "221800",
-      "name": "지구홀딩스",
-      "name_en": "ZGOO Holdings Co., Ltd.",
-      "market": "코스닥",
-      "sector": "지주",
-      "price": 3980,
-      "change": -1.0,
-      "volume": 56018,
-      "trading_value": 219666710,
-      "mcap": 0.0649,
-      "shares": 16318851,
-      "induty_code": "72911",
-      "categories": [
-        "지주"
       ],
       "rank": 1695
     },
@@ -30809,24 +30809,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1709
     },
     {
-      "ticker": "016090",
-      "name": "대현",
-      "name_en": "DAEHYUN CO.,LTD",
-      "market": "코스피",
-      "sector": "섬유·패션·생활",
-      "price": 1420,
-      "change": -0.21,
-      "volume": 19327,
-      "trading_value": 27376706,
-      "mcap": 0.0629,
-      "shares": 44282310,
-      "induty_code": "14112",
-      "categories": [
-        "섬유·패션·생활"
-      ],
-      "rank": 1710
-    },
-    {
       "ticker": "053160",
       "name": "프리엠스",
       "name_en": "FreeMs Corporation",
@@ -30842,7 +30824,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 1711
+      "rank": 1710
     },
     {
       "ticker": "459550",
@@ -30859,6 +30841,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "26291",
       "categories": [
         "전자·부품"
+      ],
+      "rank": 1711
+    },
+    {
+      "ticker": "016090",
+      "name": "대현",
+      "name_en": "DAEHYUN CO.,LTD",
+      "market": "코스피",
+      "sector": "섬유·패션·생활",
+      "price": 1420,
+      "change": -0.21,
+      "volume": 19327,
+      "trading_value": 27376706,
+      "mcap": 0.0629,
+      "shares": 44282310,
+      "induty_code": "14112",
+      "categories": [
+        "섬유·패션·생활"
       ],
       "rank": 1712
     },
@@ -31079,24 +31079,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1724
     },
     {
-      "ticker": "009200",
-      "name": "무림페이퍼",
-      "name_en": "MOORIM PAPER CO.,LTD",
-      "market": "코스피",
-      "sector": "기타",
-      "price": 1488,
-      "change": -0.4,
-      "volume": 42034,
-      "trading_value": 62192806,
-      "mcap": 0.0619,
-      "shares": 41609310,
-      "induty_code": "171",
-      "categories": [
-        "기타"
-      ],
-      "rank": 1725
-    },
-    {
       "ticker": "094850",
       "name": "참좋은여행",
       "name_en": "Very Good Tour Co.,Ltd.",
@@ -31112,7 +31094,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "호텔·레저"
       ],
-      "rank": 1726
+      "rank": 1725
     },
     {
       "ticker": "053050",
@@ -31129,6 +31111,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "35200",
       "categories": [
         "에너지·전력"
+      ],
+      "rank": 1726
+    },
+    {
+      "ticker": "009200",
+      "name": "무림페이퍼",
+      "name_en": "MOORIM PAPER CO.,LTD",
+      "market": "코스피",
+      "sector": "기타",
+      "price": 1488,
+      "change": -0.4,
+      "volume": 42034,
+      "trading_value": 62192806,
+      "mcap": 0.0619,
+      "shares": 41609310,
+      "induty_code": "171",
+      "categories": [
+        "기타"
       ],
       "rank": 1727
     },
@@ -31331,24 +31331,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1738
     },
     {
-      "ticker": "000220",
-      "name": "유유제약",
-      "name_en": "Yuyu Pharma, Inc.",
-      "market": "코스피",
-      "sector": "바이오·제약",
-      "price": 3855,
-      "change": -2.53,
-      "volume": 101795,
-      "trading_value": 394385777,
-      "mcap": 0.0607,
-      "shares": 15747462,
-      "induty_code": "212",
-      "categories": [
-        "바이오·제약"
-      ],
-      "rank": 1739
-    },
-    {
       "ticker": "008370",
       "name": "원풍",
       "name_en": "WonpoongCorporation",
@@ -31363,6 +31345,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "22212",
       "categories": [
         "화학"
+      ],
+      "rank": 1739
+    },
+    {
+      "ticker": "000220",
+      "name": "유유제약",
+      "name_en": "Yuyu Pharma, Inc.",
+      "market": "코스피",
+      "sector": "바이오·제약",
+      "price": 3855,
+      "change": -2.53,
+      "volume": 101795,
+      "trading_value": 394385777,
+      "mcap": 0.0607,
+      "shares": 15747462,
+      "induty_code": "212",
+      "categories": [
+        "바이오·제약"
       ],
       "rank": 1740
     },
@@ -31602,24 +31602,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1753
     },
     {
-      "ticker": "006890",
-      "name": "태경케미컬",
-      "name_en": "TAEKYUNG CHEMICAL CO.,LTD",
-      "market": "코스피",
-      "sector": "화학",
-      "price": 5110,
-      "change": 0.59,
-      "volume": 12566,
-      "trading_value": 63671520,
-      "mcap": 0.0593,
-      "shares": 11600000,
-      "induty_code": "20121",
-      "categories": [
-        "화학"
-      ],
-      "rank": 1754
-    },
-    {
       "ticker": "039020",
       "name": "이건홀딩스",
       "name_en": "EAGON HOLDINGS CO., LTD.",
@@ -31634,6 +31616,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "161",
       "categories": [
         "지주"
+      ],
+      "rank": 1754
+    },
+    {
+      "ticker": "006890",
+      "name": "태경케미컬",
+      "name_en": "TAEKYUNG CHEMICAL CO.,LTD",
+      "market": "코스피",
+      "sector": "화학",
+      "price": 5110,
+      "change": 0.59,
+      "volume": 12566,
+      "trading_value": 63671520,
+      "mcap": 0.0593,
+      "shares": 11600000,
+      "induty_code": "20121",
+      "categories": [
+        "화학"
       ],
       "rank": 1755
     },
@@ -31800,24 +31800,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1764
     },
     {
-      "ticker": "004450",
-      "name": "삼화왕관",
-      "name_en": "SAMHWA CROWN & CLOSURE CO.,LTD",
-      "market": "코스피",
-      "sector": "철강·금속",
-      "price": 27200,
-      "change": -5.23,
-      "volume": 1255,
-      "trading_value": 35360600,
-      "mcap": 0.0586,
-      "shares": 2154379,
-      "induty_code": "25991",
-      "categories": [
-        "철강·금속"
-      ],
-      "rank": 1765
-    },
-    {
       "ticker": "045340",
       "name": "토탈소프트",
       "name_en": "TOTAL SOFT BANK LTD.",
@@ -31832,6 +31814,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "58221",
       "categories": [
         "IT·소프트웨어"
+      ],
+      "rank": 1765
+    },
+    {
+      "ticker": "004450",
+      "name": "삼화왕관",
+      "name_en": "SAMHWA CROWN & CLOSURE CO.,LTD",
+      "market": "코스피",
+      "sector": "철강·금속",
+      "price": 27200,
+      "change": -5.23,
+      "volume": 1255,
+      "trading_value": 35360600,
+      "mcap": 0.0586,
+      "shares": 2154379,
+      "induty_code": "25991",
+      "categories": [
+        "철강·금속"
       ],
       "rank": 1766
     },
@@ -32070,24 +32070,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1779
     },
     {
-      "ticker": "396690",
-      "name": "미래에셋글로벌리츠",
-      "name_en": "Mirae Asset Global REIT Co., Ltd.",
-      "market": "코스피",
-      "sector": "부동산·리츠",
-      "price": 1441,
-      "change": 0.07,
-      "volume": 95710,
-      "trading_value": 138243395,
-      "mcap": 0.0571,
-      "shares": 39605940,
-      "induty_code": "6811",
-      "categories": [
-        "부동산·리츠"
-      ],
-      "rank": 1780
-    },
-    {
       "ticker": "424980",
       "name": "마이크로투나노",
       "name_en": "MICRO2NANO, INC.",
@@ -32102,6 +32084,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "26129",
       "categories": [
         "반도체"
+      ],
+      "rank": 1780
+    },
+    {
+      "ticker": "396690",
+      "name": "미래에셋글로벌리츠",
+      "name_en": "Mirae Asset Global REIT Co., Ltd.",
+      "market": "코스피",
+      "sector": "부동산·리츠",
+      "price": 1441,
+      "change": 0.07,
+      "volume": 95710,
+      "trading_value": 138243395,
+      "mcap": 0.0571,
+      "shares": 39605940,
+      "induty_code": "6811",
+      "categories": [
+        "부동산·리츠"
       ],
       "rank": 1781
     },
@@ -32269,24 +32269,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1790
     },
     {
-      "ticker": "006880",
-      "name": "신송홀딩스",
-      "name_en": "SINGSONGHOLDINGS",
-      "market": "코스피",
-      "sector": "지주",
-      "price": 4730,
-      "change": 7.5,
-      "volume": 1336165,
-      "trading_value": 6640666236,
-      "mcap": 0.056,
-      "shares": 11828858,
-      "induty_code": "46201",
-      "categories": [
-        "지주"
-      ],
-      "rank": 1791
-    },
-    {
       "ticker": "054930",
       "name": "유신",
       "name_en": "Yooshin Engineering Corporation",
@@ -32302,7 +32284,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 1792
+      "rank": 1791
     },
     {
       "ticker": "007370",
@@ -32319,6 +32301,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "212",
       "categories": [
         "바이오·제약"
+      ],
+      "rank": 1792
+    },
+    {
+      "ticker": "006880",
+      "name": "신송홀딩스",
+      "name_en": "SINGSONGHOLDINGS",
+      "market": "코스피",
+      "sector": "지주",
+      "price": 4730,
+      "change": 7.5,
+      "volume": 1336165,
+      "trading_value": 6640666236,
+      "mcap": 0.056,
+      "shares": 11828858,
+      "induty_code": "46201",
+      "categories": [
+        "지주"
       ],
       "rank": 1793
     },
@@ -32341,24 +32341,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1794
     },
     {
-      "ticker": "024900",
-      "name": "디와이덕양",
-      "name_en": "DY DEOKYANG Co.,Ltd.",
-      "market": "코스피",
-      "sector": "자동차",
-      "price": 1714,
-      "change": 1.18,
-      "volume": 35383,
-      "trading_value": 60421709,
-      "mcap": 0.0558,
-      "shares": 32564980,
-      "induty_code": "29169",
-      "categories": [
-        "자동차"
-      ],
-      "rank": 1795
-    },
-    {
       "ticker": "043710",
       "name": "코스리거글로벌",
       "name_en": "CosLeaguer Global Co., Ltd.",
@@ -32373,6 +32355,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "467",
       "categories": [
         "유통·소비재"
+      ],
+      "rank": 1795
+    },
+    {
+      "ticker": "024900",
+      "name": "디와이덕양",
+      "name_en": "DY DEOKYANG Co.,Ltd.",
+      "market": "코스피",
+      "sector": "자동차",
+      "price": 1714,
+      "change": 1.18,
+      "volume": 35383,
+      "trading_value": 60421709,
+      "mcap": 0.0558,
+      "shares": 32564980,
+      "induty_code": "29169",
+      "categories": [
+        "자동차"
       ],
       "rank": 1796
     },
@@ -32485,24 +32485,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1802
     },
     {
-      "ticker": "020760",
-      "name": "일진디스플",
-      "name_en": "ILJIN DISPLAY CO.,LTD.",
-      "market": "코스피",
-      "sector": "전자·부품",
-      "price": 902,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.0555,
-      "shares": 61533781,
-      "induty_code": "261",
-      "categories": [
-        "전자·부품"
-      ],
-      "rank": 1803
-    },
-    {
       "ticker": "340930",
       "name": "성원에너텍",
       "name_en": "YOUIL ENERGY TECH  CO.,LTD.",
@@ -32517,6 +32499,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "29299",
       "categories": [
         "2차전지"
+      ],
+      "rank": 1803
+    },
+    {
+      "ticker": "020760",
+      "name": "일진디스플",
+      "name_en": "ILJIN DISPLAY CO.,LTD.",
+      "market": "코스피",
+      "sector": "전자·부품",
+      "price": 902,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.0555,
+      "shares": 61533781,
+      "induty_code": "261",
+      "categories": [
+        "전자·부품"
       ],
       "rank": 1804
     },
@@ -32539,42 +32539,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1805
     },
     {
-      "ticker": "009190",
-      "name": "대양금속",
-      "name_en": "DAIYANG METAL CO.,LTD",
-      "market": "코스피",
-      "sector": "철강·금속",
-      "price": 1258,
-      "change": -5.2,
-      "volume": 372152,
-      "trading_value": 471089032,
-      "mcap": 0.0553,
-      "shares": 43986275,
-      "induty_code": "24122",
-      "categories": [
-        "철강·금속"
-      ],
-      "rank": 1806
-    },
-    {
-      "ticker": "090080",
-      "name": "평화산업",
-      "name_en": "PYUNG HWA INDUSTRIAL CO., LTD",
-      "market": "코스피",
-      "sector": "자동차",
-      "price": 1007,
-      "change": 0.6,
-      "volume": 55946,
-      "trading_value": 56049140,
-      "mcap": 0.0553,
-      "shares": 54902259,
-      "induty_code": "303",
-      "categories": [
-        "자동차"
-      ],
-      "rank": 1807
-    },
-    {
       "ticker": "464490",
       "name": "쿼드메디슨",
       "name_en": "QuadMedicine Inc.",
@@ -32590,7 +32554,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1808
+      "rank": 1806
     },
     {
       "ticker": "238090",
@@ -32607,6 +32571,42 @@ window.KOS_LIVE_DATA = {
       "induty_code": "222",
       "categories": [
         "화학"
+      ],
+      "rank": 1807
+    },
+    {
+      "ticker": "009190",
+      "name": "대양금속",
+      "name_en": "DAIYANG METAL CO.,LTD",
+      "market": "코스피",
+      "sector": "철강·금속",
+      "price": 1258,
+      "change": -5.2,
+      "volume": 372152,
+      "trading_value": 471089032,
+      "mcap": 0.0553,
+      "shares": 43986275,
+      "induty_code": "24122",
+      "categories": [
+        "철강·금속"
+      ],
+      "rank": 1808
+    },
+    {
+      "ticker": "090080",
+      "name": "평화산업",
+      "name_en": "PYUNG HWA INDUSTRIAL CO., LTD",
+      "market": "코스피",
+      "sector": "자동차",
+      "price": 1007,
+      "change": 0.6,
+      "volume": 55946,
+      "trading_value": 56049140,
+      "mcap": 0.0553,
+      "shares": 54902259,
+      "induty_code": "303",
+      "categories": [
+        "자동차"
       ],
       "rank": 1809
     },
@@ -32900,24 +32900,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1825
     },
     {
-      "ticker": "012690",
-      "name": "모나리자",
-      "name_en": "MONALISA CO.,LTD",
-      "market": "코스피",
-      "sector": "섬유·패션·생활",
-      "price": 1475,
-      "change": -0.54,
-      "volume": 125081,
-      "trading_value": 183857872,
-      "mcap": 0.0539,
-      "shares": 36571255,
-      "induty_code": "17902",
-      "categories": [
-        "섬유·패션·생활"
-      ],
-      "rank": 1826
-    },
-    {
       "ticker": "040610",
       "name": "SG&G",
       "name_en": "SG&G Corporation",
@@ -32932,6 +32914,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "303",
       "categories": [
         "항공·방산"
+      ],
+      "rank": 1826
+    },
+    {
+      "ticker": "012690",
+      "name": "모나리자",
+      "name_en": "MONALISA CO.,LTD",
+      "market": "코스피",
+      "sector": "섬유·패션·생활",
+      "price": 1475,
+      "change": -0.54,
+      "volume": 125081,
+      "trading_value": 183857872,
+      "mcap": 0.0539,
+      "shares": 36571255,
+      "induty_code": "17902",
+      "categories": [
+        "섬유·패션·생활"
       ],
       "rank": 1827
     },
@@ -33080,24 +33080,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1835
     },
     {
-      "ticker": "006980",
-      "name": "우성",
-      "name_en": "WOOSUNG CO., LTD.",
-      "market": "코스피",
-      "sector": "식음료",
-      "price": 17240,
-      "change": -3.09,
-      "volume": 9403,
-      "trading_value": 163720455,
-      "mcap": 0.0533,
-      "shares": 3090000,
-      "induty_code": "105",
-      "categories": [
-        "식음료"
-      ],
-      "rank": 1836
-    },
-    {
       "ticker": "104620",
       "name": "노랑풍선",
       "name_en": "Yellow Balloon Tour Co., Ltd.",
@@ -33112,6 +33094,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "75210",
       "categories": [
         "호텔·레저"
+      ],
+      "rank": 1836
+    },
+    {
+      "ticker": "006980",
+      "name": "우성",
+      "name_en": "WOOSUNG CO., LTD.",
+      "market": "코스피",
+      "sector": "식음료",
+      "price": 17240,
+      "change": -3.09,
+      "volume": 9403,
+      "trading_value": 163720455,
+      "mcap": 0.0533,
+      "shares": 3090000,
+      "induty_code": "105",
+      "categories": [
+        "식음료"
       ],
       "rank": 1837
     },
@@ -33369,24 +33369,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1851
     },
     {
-      "ticker": "372910",
-      "name": "한컴라이프케어",
-      "name_en": "Hancom Lifecare Inc.",
-      "market": "코스피",
-      "sector": "전기장비",
-      "price": 1874,
-      "change": -0.05,
-      "volume": 60669,
-      "trading_value": 112492029,
-      "mcap": 0.0519,
-      "shares": 27674406,
-      "induty_code": "27199",
-      "categories": [
-        "전기장비"
-      ],
-      "rank": 1852
-    },
-    {
       "ticker": "170790",
       "name": "파이오링크",
       "name_en": "Piolink, Inc.",
@@ -33402,7 +33384,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1853
+      "rank": 1852
     },
     {
       "ticker": "0013V0",
@@ -33418,6 +33400,24 @@ window.KOS_LIVE_DATA = {
       "shares": 9918656,
       "categories": [
         "식음료"
+      ],
+      "rank": 1853
+    },
+    {
+      "ticker": "372910",
+      "name": "한컴라이프케어",
+      "name_en": "Hancom Lifecare Inc.",
+      "market": "코스피",
+      "sector": "전기장비",
+      "price": 1874,
+      "change": -0.05,
+      "volume": 60669,
+      "trading_value": 112492029,
+      "mcap": 0.0519,
+      "shares": 27674406,
+      "induty_code": "27199",
+      "categories": [
+        "전기장비"
       ],
       "rank": 1854
     },
@@ -33494,24 +33494,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1858
     },
     {
-      "ticker": "023810",
-      "name": "인팩",
-      "name_en": "INFAC CORPORATION",
-      "market": "코스피",
-      "sector": "자동차",
-      "price": 5140,
-      "change": -0.96,
-      "volume": 6769,
-      "trading_value": 34597460,
-      "mcap": 0.0514,
-      "shares": 10000000,
-      "induty_code": "303",
-      "categories": [
-        "자동차"
-      ],
-      "rank": 1859
-    },
-    {
       "ticker": "056360",
       "name": "코위버",
       "name_en": "COWEAVER Co.,Ltd.",
@@ -33526,6 +33508,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "26410",
       "categories": [
         "통신"
+      ],
+      "rank": 1859
+    },
+    {
+      "ticker": "023810",
+      "name": "인팩",
+      "name_en": "INFAC CORPORATION",
+      "market": "코스피",
+      "sector": "자동차",
+      "price": 5140,
+      "change": -0.96,
+      "volume": 6769,
+      "trading_value": 34597460,
+      "mcap": 0.0514,
+      "shares": 10000000,
+      "induty_code": "303",
+      "categories": [
+        "자동차"
       ],
       "rank": 1860
     },
@@ -34396,6 +34396,24 @@ window.KOS_LIVE_DATA = {
       "rank": 1908
     },
     {
+      "ticker": "088280",
+      "name": "쏘닉스",
+      "name_en": "SAWNICS INC.",
+      "market": "코스닥",
+      "sector": "반도체",
+      "price": 2735,
+      "change": -4.04,
+      "volume": 114818,
+      "trading_value": 311771633,
+      "mcap": 0.0473,
+      "shares": 17306490,
+      "induty_code": "26129",
+      "categories": [
+        "반도체"
+      ],
+      "rank": 1909
+    },
+    {
       "ticker": "009320",
       "name": "아진전자부품",
       "name_en": "AJIN ELECTRONIC COMPONENTS CO.,LTD",
@@ -34411,7 +34429,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 1909
+      "rank": 1910
     },
     {
       "ticker": "004920",
@@ -34428,24 +34446,6 @@ window.KOS_LIVE_DATA = {
       "induty_code": "26529",
       "categories": [
         "전자·부품"
-      ],
-      "rank": 1910
-    },
-    {
-      "ticker": "088280",
-      "name": "쏘닉스",
-      "name_en": "SAWNICS INC.",
-      "market": "코스닥",
-      "sector": "반도체",
-      "price": 2735,
-      "change": -4.04,
-      "volume": 114818,
-      "trading_value": 311771633,
-      "mcap": 0.0473,
-      "shares": 17306490,
-      "induty_code": "26129",
-      "categories": [
-        "반도체"
       ],
       "rank": 1911
     },
@@ -34540,24 +34540,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1916
     },
     {
-      "ticker": "041650",
-      "name": "상신브레이크",
-      "name_en": "SANGSIN BRAKE",
-      "market": "코스피",
-      "sector": "자동차",
-      "price": 2180,
-      "change": -1.13,
-      "volume": 3729,
-      "trading_value": 8149965,
-      "mcap": 0.0468,
-      "shares": 21471450,
-      "induty_code": "303",
-      "categories": [
-        "자동차"
-      ],
-      "rank": 1917
-    },
-    {
       "ticker": "189980",
       "name": "흥국에프엔비",
       "name_en": "HYUNGKUK F&B Co.,Ltd",
@@ -34572,6 +34554,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "11209",
       "categories": [
         "식음료"
+      ],
+      "rank": 1917
+    },
+    {
+      "ticker": "041650",
+      "name": "상신브레이크",
+      "name_en": "SANGSIN BRAKE",
+      "market": "코스피",
+      "sector": "자동차",
+      "price": 2180,
+      "change": -1.13,
+      "volume": 3729,
+      "trading_value": 8149965,
+      "mcap": 0.0468,
+      "shares": 21471450,
+      "induty_code": "303",
+      "categories": [
+        "자동차"
       ],
       "rank": 1918
     },
@@ -34703,24 +34703,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1925
     },
     {
-      "ticker": "069460",
-      "name": "대호에이엘",
-      "name_en": "DAEHO AL Co.,Ltd.",
-      "market": "코스피",
-      "sector": "철강·금속",
-      "price": 2660,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.0463,
-      "shares": 17414390,
-      "induty_code": "24222",
-      "categories": [
-        "철강·금속"
-      ],
-      "rank": 1926
-    },
-    {
       "ticker": "143540",
       "name": "영우디에스피",
       "name_en": "YoungWoo DSP Co.,Ltd.",
@@ -34735,6 +34717,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "29272",
       "categories": [
         "전자·부품"
+      ],
+      "rank": 1926
+    },
+    {
+      "ticker": "069460",
+      "name": "대호에이엘",
+      "name_en": "DAEHO AL Co.,Ltd.",
+      "market": "코스피",
+      "sector": "철강·금속",
+      "price": 2660,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.0463,
+      "shares": 17414390,
+      "induty_code": "24222",
+      "categories": [
+        "철강·금속"
       ],
       "rank": 1927
     },
@@ -34793,24 +34793,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1930
     },
     {
-      "ticker": "000910",
-      "name": "유니온",
-      "name_en": "UNION CORPORATION",
-      "market": "코스피",
-      "sector": "철강·금속",
-      "price": 2950,
-      "change": 1.72,
-      "volume": 37302,
-      "trading_value": 109986775,
-      "mcap": 0.0461,
-      "shares": 15611619,
-      "induty_code": "23311",
-      "categories": [
-        "철강·금속"
-      ],
-      "rank": 1931
-    },
-    {
       "ticker": "099410",
       "name": "동방선기",
       "name_en": "Dongbang Ship Machinery Co., Ltd",
@@ -34825,6 +34807,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "31114",
       "categories": [
         "전기장비"
+      ],
+      "rank": 1931
+    },
+    {
+      "ticker": "000910",
+      "name": "유니온",
+      "name_en": "UNION CORPORATION",
+      "market": "코스피",
+      "sector": "철강·금속",
+      "price": 2950,
+      "change": 1.72,
+      "volume": 37302,
+      "trading_value": 109986775,
+      "mcap": 0.0461,
+      "shares": 15611619,
+      "induty_code": "23311",
+      "categories": [
+        "철강·금속"
       ],
       "rank": 1932
     },
@@ -34901,24 +34901,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1936
     },
     {
-      "ticker": "014910",
-      "name": "성문전자",
-      "name_en": "SUNGMOON ELECTRONICS CO.,LTD",
-      "market": "코스피",
-      "sector": "전자·부품",
-      "price": 2100,
-      "change": -3.45,
-      "volume": 179295,
-      "trading_value": 379317269,
-      "mcap": 0.0459,
-      "shares": 21857257,
-      "induty_code": "26291",
-      "categories": [
-        "전자·부품"
-      ],
-      "rank": 1937
-    },
-    {
       "ticker": "229000",
       "name": "젠큐릭스",
       "name_en": "Gencurix Inc.",
@@ -34933,6 +34915,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "213",
       "categories": [
         "바이오·제약"
+      ],
+      "rank": 1937
+    },
+    {
+      "ticker": "014910",
+      "name": "성문전자",
+      "name_en": "SUNGMOON ELECTRONICS CO.,LTD",
+      "market": "코스피",
+      "sector": "전자·부품",
+      "price": 2100,
+      "change": -3.45,
+      "volume": 179295,
+      "trading_value": 379317269,
+      "mcap": 0.0459,
+      "shares": 21857257,
+      "induty_code": "26291",
+      "categories": [
+        "전자·부품"
       ],
       "rank": 1938
     },
@@ -34955,24 +34955,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1939
     },
     {
-      "ticker": "004540",
-      "name": "깨끗한나라",
-      "name_en": "KleanNara Co., Ltd.",
-      "market": "코스피",
-      "sector": "섬유·패션·생활",
-      "price": 1226,
-      "change": -1.21,
-      "volume": 10350,
-      "trading_value": 12718905,
-      "mcap": 0.0457,
-      "shares": 37240693,
-      "induty_code": "171",
-      "categories": [
-        "섬유·패션·생활"
-      ],
-      "rank": 1940
-    },
-    {
       "ticker": "053980",
       "name": "오상자이엘",
       "name_en": "OSANGJAIEL Co., Ltd",
@@ -34988,7 +34970,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 1941
+      "rank": 1940
     },
     {
       "ticker": "114450",
@@ -35006,25 +34988,25 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 1942
+      "rank": 1941
     },
     {
-      "ticker": "004060",
-      "name": "SG세계물산",
-      "name_en": "SG CORPORATION",
+      "ticker": "004540",
+      "name": "깨끗한나라",
+      "name_en": "KleanNara Co., Ltd.",
       "market": "코스피",
-      "sector": "유통·소비재",
-      "price": 2255,
-      "change": 0.45,
-      "volume": 47510,
-      "trading_value": 105639816,
-      "mcap": 0.0456,
-      "shares": 20242496,
-      "induty_code": "46800",
+      "sector": "섬유·패션·생활",
+      "price": 1226,
+      "change": -1.21,
+      "volume": 10350,
+      "trading_value": 12718905,
+      "mcap": 0.0457,
+      "shares": 37240693,
+      "induty_code": "171",
       "categories": [
-        "유통·소비재"
+        "섬유·패션·생활"
       ],
-      "rank": 1943
+      "rank": 1942
     },
     {
       "ticker": "131400",
@@ -35041,6 +35023,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "2622",
       "categories": [
         "2차전지"
+      ],
+      "rank": 1943
+    },
+    {
+      "ticker": "004060",
+      "name": "SG세계물산",
+      "name_en": "SG CORPORATION",
+      "market": "코스피",
+      "sector": "유통·소비재",
+      "price": 2255,
+      "change": 0.45,
+      "volume": 47510,
+      "trading_value": 105639816,
+      "mcap": 0.0456,
+      "shares": 20242496,
+      "induty_code": "46800",
+      "categories": [
+        "유통·소비재"
       ],
       "rank": 1944
     },
@@ -35278,24 +35278,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1957
     },
     {
-      "ticker": "033340",
-      "name": "좋은사람들",
-      "name_en": "GOOD PEOPLE CO., LTD.",
-      "market": "코스닥",
-      "sector": "섬유·패션·생활",
-      "price": 460,
-      "change": -9.45,
-      "volume": 20583738,
-      "trading_value": 10772163231,
-      "mcap": 0.0446,
-      "shares": 96950558,
-      "induty_code": "14120",
-      "categories": [
-        "섬유·패션·생활"
-      ],
-      "rank": 1958
-    },
-    {
       "ticker": "162120",
       "name": "루켄테크놀러지스",
       "name_en": "LUKEN Technologies Co., Ltd.",
@@ -35311,25 +35293,25 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 1959
+      "rank": 1958
     },
     {
-      "ticker": "023350",
-      "name": "한국종합기술",
-      "name_en": "Korea Engineering Consultants Corp.",
-      "market": "코스피",
-      "sector": "건설·건자재",
-      "price": 4060,
-      "change": -0.98,
-      "volume": 9374,
-      "trading_value": 37897796,
-      "mcap": 0.0445,
-      "shares": 10950000,
-      "induty_code": "72121",
+      "ticker": "033340",
+      "name": "좋은사람들",
+      "name_en": "GOOD PEOPLE CO., LTD.",
+      "market": "코스닥",
+      "sector": "섬유·패션·생활",
+      "price": 460,
+      "change": -9.45,
+      "volume": 20583738,
+      "trading_value": 10772163231,
+      "mcap": 0.0446,
+      "shares": 96950558,
+      "induty_code": "14120",
       "categories": [
-        "건설·건자재"
+        "섬유·패션·생활"
       ],
-      "rank": 1960
+      "rank": 1959
     },
     {
       "ticker": "479960",
@@ -35346,6 +35328,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "289",
       "categories": [
         "전자·부품"
+      ],
+      "rank": 1960
+    },
+    {
+      "ticker": "023350",
+      "name": "한국종합기술",
+      "name_en": "Korea Engineering Consultants Corp.",
+      "market": "코스피",
+      "sector": "건설·건자재",
+      "price": 4060,
+      "change": -0.98,
+      "volume": 9374,
+      "trading_value": 37897796,
+      "mcap": 0.0445,
+      "shares": 10950000,
+      "induty_code": "72121",
+      "categories": [
+        "건설·건자재"
       ],
       "rank": 1961
     },
@@ -35711,24 +35711,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1981
     },
     {
-      "ticker": "011300",
-      "name": "우성머티리얼스",
-      "name_en": "WOOSUNG MATERIALS CO.,LTD",
-      "market": "코스피",
-      "sector": "섬유·패션·생활",
-      "price": 2480,
-      "change": 0.4,
-      "volume": 23576,
-      "trading_value": 57149590,
-      "mcap": 0.0428,
-      "shares": 17238905,
-      "induty_code": "13213",
-      "categories": [
-        "섬유·패션·생활"
-      ],
-      "rank": 1982
-    },
-    {
       "ticker": "037230",
       "name": "한국팩키지",
       "name_en": "HANKUK PACKAGE CO., LTD.",
@@ -35744,7 +35726,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1983
+      "rank": 1982
     },
     {
       "ticker": "263020",
@@ -35762,7 +35744,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 1984
+      "rank": 1983
     },
     {
       "ticker": "307280",
@@ -35779,6 +35761,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "213",
       "categories": [
         "바이오·제약"
+      ],
+      "rank": 1984
+    },
+    {
+      "ticker": "011300",
+      "name": "우성머티리얼스",
+      "name_en": "WOOSUNG MATERIALS CO.,LTD",
+      "market": "코스피",
+      "sector": "섬유·패션·생활",
+      "price": 2480,
+      "change": 0.4,
+      "volume": 23576,
+      "trading_value": 57149590,
+      "mcap": 0.0428,
+      "shares": 17238905,
+      "induty_code": "13213",
+      "categories": [
+        "섬유·패션·생활"
       ],
       "rank": 1985
     },
@@ -35927,24 +35927,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1993
     },
     {
-      "ticker": "481850",
-      "name": "신한글로벌액티브리츠",
-      "name_en": "Shinhan Global Active REIT Co., Ltd.",
-      "market": "코스피",
-      "sector": "부동산·리츠",
-      "price": 965,
-      "change": -2.03,
-      "volume": 15782,
-      "trading_value": 15445351,
-      "mcap": 0.042,
-      "shares": 43477664,
-      "induty_code": "64201",
-      "categories": [
-        "부동산·리츠"
-      ],
-      "rank": 1994
-    },
-    {
       "ticker": "140520",
       "name": "대창스틸",
       "name_en": "DaeChang Steel CO., LTD.",
@@ -35960,7 +35942,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 1995
+      "rank": 1994
     },
     {
       "ticker": "450330",
@@ -35977,6 +35959,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "21309",
       "categories": [
         "바이오·제약"
+      ],
+      "rank": 1995
+    },
+    {
+      "ticker": "481850",
+      "name": "신한글로벌액티브리츠",
+      "name_en": "Shinhan Global Active REIT Co., Ltd.",
+      "market": "코스피",
+      "sector": "부동산·리츠",
+      "price": 965,
+      "change": -2.03,
+      "volume": 15782,
+      "trading_value": 15445351,
+      "mcap": 0.042,
+      "shares": 43477664,
+      "induty_code": "64201",
+      "categories": [
+        "부동산·리츠"
       ],
       "rank": 1996
     },
@@ -36035,24 +36035,6 @@ window.KOS_LIVE_DATA = {
       "rank": 1999
     },
     {
-      "ticker": "092780",
-      "name": "DYP",
-      "name_en": "DYP CO.,LTD",
-      "market": "코스피",
-      "sector": "조선",
-      "price": 3150,
-      "change": -0.94,
-      "volume": 14611,
-      "trading_value": 46086680,
-      "mcap": 0.0415,
-      "shares": 13168460,
-      "induty_code": "301",
-      "categories": [
-        "조선"
-      ],
-      "rank": 2000
-    },
-    {
       "ticker": "086060",
       "name": "진바이오텍",
       "name_en": "GeneBioTechCo.,Ltd.",
@@ -36068,7 +36050,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2001
+      "rank": 2000
     },
     {
       "ticker": "189690",
@@ -36085,6 +36067,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "58222",
       "categories": [
         "IT·소프트웨어"
+      ],
+      "rank": 2001
+    },
+    {
+      "ticker": "092780",
+      "name": "DYP",
+      "name_en": "DYP CO.,LTD",
+      "market": "코스피",
+      "sector": "조선",
+      "price": 3150,
+      "change": -0.94,
+      "volume": 14611,
+      "trading_value": 46086680,
+      "mcap": 0.0415,
+      "shares": 13168460,
+      "induty_code": "301",
+      "categories": [
+        "조선"
       ],
       "rank": 2002
     },
@@ -36233,6 +36233,24 @@ window.KOS_LIVE_DATA = {
       "rank": 2010
     },
     {
+      "ticker": "180060",
+      "name": "탑선",
+      "name_en": "Topsun co.,Ltd",
+      "market": "코넥스",
+      "sector": "기계·장비",
+      "price": 4395,
+      "change": 0.69,
+      "volume": 282,
+      "trading_value": 1223835,
+      "mcap": 0.0411,
+      "shares": 9347666,
+      "induty_code": "289",
+      "categories": [
+        "기계·장비"
+      ],
+      "rank": 2011
+    },
+    {
       "ticker": "150900",
       "name": "파수AI",
       "name_en": "FASOO AI Co.,Ltd.",
@@ -36249,7 +36267,7 @@ window.KOS_LIVE_DATA = {
         "IT·소프트웨어",
         "인공지능(AI)"
       ],
-      "rank": 2011
+      "rank": 2012
     },
     {
       "ticker": "256150",
@@ -36264,24 +36282,6 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.0411,
       "shares": 8395000,
       "induty_code": "29175",
-      "categories": [
-        "기계·장비"
-      ],
-      "rank": 2012
-    },
-    {
-      "ticker": "180060",
-      "name": "탑선",
-      "name_en": "Topsun co.,Ltd",
-      "market": "코넥스",
-      "sector": "기계·장비",
-      "price": 4395,
-      "change": 0.69,
-      "volume": 282,
-      "trading_value": 1223835,
-      "mcap": 0.0411,
-      "shares": 9347666,
-      "induty_code": "289",
       "categories": [
         "기계·장비"
       ],
@@ -36360,24 +36360,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2017
     },
     {
-      "ticker": "017040",
-      "name": "광명전기",
-      "name_en": "KWANG MYUNG ELECTRIC CO.,LTD",
-      "market": "코스피",
-      "sector": "전기장비",
-      "price": 932,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.0404,
-      "shares": 43337615,
-      "induty_code": "28123",
-      "categories": [
-        "전기장비"
-      ],
-      "rank": 2018
-    },
-    {
       "ticker": "042940",
       "name": "상지건설",
       "name_en": "Sangji Construction, Inc.",
@@ -36393,7 +36375,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2019
+      "rank": 2018
     },
     {
       "ticker": "042040",
@@ -36410,6 +36392,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "467",
       "categories": [
         "유통·소비재"
+      ],
+      "rank": 2019
+    },
+    {
+      "ticker": "017040",
+      "name": "광명전기",
+      "name_en": "KWANG MYUNG ELECTRIC CO.,LTD",
+      "market": "코스피",
+      "sector": "전기장비",
+      "price": 932,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.0404,
+      "shares": 43337615,
+      "induty_code": "28123",
+      "categories": [
+        "전기장비"
       ],
       "rank": 2020
     },
@@ -36432,24 +36432,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2021
     },
     {
-      "ticker": "446070",
-      "name": "유니드비티플러스",
-      "name_en": "UNID btplus Co., Ltd.",
-      "market": "코스피",
-      "sector": "건설·건자재",
-      "price": 3760,
-      "change": 0.4,
-      "volume": 59732,
-      "trading_value": 223555175,
-      "mcap": 0.0399,
-      "shares": 10611215,
-      "induty_code": "16102",
-      "categories": [
-        "건설·건자재"
-      ],
-      "rank": 2022
-    },
-    {
       "ticker": "278650",
       "name": "HLB바이오스텝",
       "name_en": "HLB bioStep Co.,Ltd.",
@@ -36465,7 +36447,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2023
+      "rank": 2022
     },
     {
       "ticker": "273060",
@@ -36482,6 +36464,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "713",
       "categories": [
         "미디어·엔터"
+      ],
+      "rank": 2023
+    },
+    {
+      "ticker": "446070",
+      "name": "유니드비티플러스",
+      "name_en": "UNID btplus Co., Ltd.",
+      "market": "코스피",
+      "sector": "건설·건자재",
+      "price": 3760,
+      "change": 0.4,
+      "volume": 59732,
+      "trading_value": 223555175,
+      "mcap": 0.0399,
+      "shares": 10611215,
+      "induty_code": "16102",
+      "categories": [
+        "건설·건자재"
       ],
       "rank": 2024
     },
@@ -36918,24 +36918,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2048
     },
     {
-      "ticker": "133820",
-      "name": "화인베스틸",
-      "name_en": "FINEBESTEEL CO., LTD",
-      "market": "코스피",
-      "sector": "철강·금속",
-      "price": 1036,
-      "change": 2.57,
-      "volume": 79645,
-      "trading_value": 81947462,
-      "mcap": 0.0385,
-      "shares": 37114502,
-      "induty_code": "24121",
-      "categories": [
-        "철강·금속"
-      ],
-      "rank": 2049
-    },
-    {
       "ticker": "109670",
       "name": "씨싸이트",
       "name_en": "C-SITE Co., Ltd.",
@@ -36951,7 +36933,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "섬유·패션·생활"
       ],
-      "rank": 2050
+      "rank": 2049
     },
     {
       "ticker": "263770",
@@ -36966,6 +36948,24 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.0385,
       "shares": 23700172,
       "induty_code": "241",
+      "categories": [
+        "철강·금속"
+      ],
+      "rank": 2050
+    },
+    {
+      "ticker": "133820",
+      "name": "화인베스틸",
+      "name_en": "FINEBESTEEL CO., LTD",
+      "market": "코스피",
+      "sector": "철강·금속",
+      "price": 1036,
+      "change": 2.57,
+      "volume": 79645,
+      "trading_value": 81947462,
+      "mcap": 0.0385,
+      "shares": 37114502,
+      "induty_code": "24121",
       "categories": [
         "철강·금속"
       ],
@@ -37080,24 +37080,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2057
     },
     {
-      "ticker": "002870",
-      "name": "신풍",
-      "name_en": "SHINPOONG INC.",
-      "market": "코스피",
-      "sector": "유통·소비재",
-      "price": 1092,
-      "change": -1.53,
-      "volume": 232515,
-      "trading_value": 255116219,
-      "mcap": 0.0382,
-      "shares": 34958700,
-      "induty_code": "467",
-      "categories": [
-        "유통·소비재"
-      ],
-      "rank": 2058
-    },
-    {
       "ticker": "153460",
       "name": "네이블",
       "name_en": "Nable Inc.",
@@ -37113,7 +37095,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2059
+      "rank": 2058
     },
     {
       "ticker": "104200",
@@ -37131,7 +37113,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2060
+      "rank": 2059
     },
     {
       "ticker": "171010",
@@ -37148,6 +37130,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "20119",
       "categories": [
         "화학"
+      ],
+      "rank": 2060
+    },
+    {
+      "ticker": "002870",
+      "name": "신풍",
+      "name_en": "SHINPOONG INC.",
+      "market": "코스피",
+      "sector": "유통·소비재",
+      "price": 1092,
+      "change": -1.53,
+      "volume": 232515,
+      "trading_value": 255116219,
+      "mcap": 0.0382,
+      "shares": 34958700,
+      "induty_code": "467",
+      "categories": [
+        "유통·소비재"
       ],
       "rank": 2061
     },
@@ -37188,6 +37188,24 @@ window.KOS_LIVE_DATA = {
       "rank": 2063
     },
     {
+      "ticker": "014570",
+      "name": "고려제약",
+      "name_en": "KOREAN DRUG CO., LTD.",
+      "market": "코스닥",
+      "sector": "바이오·제약",
+      "price": 3440,
+      "change": -0.43,
+      "volume": 6039,
+      "trading_value": 20586255,
+      "mcap": 0.0378,
+      "shares": 11000000,
+      "induty_code": "212",
+      "categories": [
+        "바이오·제약"
+      ],
+      "rank": 2064
+    },
+    {
       "ticker": "012280",
       "name": "영화금속",
       "name_en": "YEONGHWA METAL CO.,LTD",
@@ -37203,7 +37221,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "자동차"
       ],
-      "rank": 2064
+      "rank": 2065
     },
     {
       "ticker": "000890",
@@ -37220,24 +37238,6 @@ window.KOS_LIVE_DATA = {
       "induty_code": "11122",
       "categories": [
         "식음료"
-      ],
-      "rank": 2065
-    },
-    {
-      "ticker": "014570",
-      "name": "고려제약",
-      "name_en": "KOREAN DRUG CO., LTD.",
-      "market": "코스닥",
-      "sector": "바이오·제약",
-      "price": 3440,
-      "change": -0.43,
-      "volume": 6039,
-      "trading_value": 20586255,
-      "mcap": 0.0378,
-      "shares": 11000000,
-      "induty_code": "212",
-      "categories": [
-        "바이오·제약"
       ],
       "rank": 2066
     },
@@ -37962,24 +37962,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2106
     },
     {
-      "ticker": "002880",
-      "name": "디와이에이",
-      "name_en": "DYA CO.,LTD",
-      "market": "코스피",
-      "sector": "자동차",
-      "price": 753,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.0352,
-      "shares": 46773995,
-      "induty_code": "303",
-      "categories": [
-        "자동차"
-      ],
-      "rank": 2107
-    },
-    {
       "ticker": "024120",
       "name": "KB오토시스",
       "name_en": "KB Autosys Co.,Ltd",
@@ -37992,6 +37974,24 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.0352,
       "shares": 11500000,
       "induty_code": "2629",
+      "categories": [
+        "자동차"
+      ],
+      "rank": 2107
+    },
+    {
+      "ticker": "002880",
+      "name": "디와이에이",
+      "name_en": "DYA CO.,LTD",
+      "market": "코스피",
+      "sector": "자동차",
+      "price": 753,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.0352,
+      "shares": 46773995,
+      "induty_code": "303",
       "categories": [
         "자동차"
       ],
@@ -38340,24 +38340,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2127
     },
     {
-      "ticker": "013000",
-      "name": "세우글로벌",
-      "name_en": "SEWOO GLOBAL CO,. LTD",
-      "market": "코스피",
-      "sector": "유통·소비재",
-      "price": 1189,
-      "change": -0.08,
-      "volume": 10163,
-      "trading_value": 12076402,
-      "mcap": 0.0341,
-      "shares": 28705031,
-      "induty_code": "467",
-      "categories": [
-        "유통·소비재"
-      ],
-      "rank": 2128
-    },
-    {
       "ticker": "469750",
       "name": "아이비젼웍스",
       "name_en": "IVISIONWORKS CO.,LTD.",
@@ -38372,6 +38354,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "292",
       "categories": [
         "기계·장비"
+      ],
+      "rank": 2128
+    },
+    {
+      "ticker": "013000",
+      "name": "세우글로벌",
+      "name_en": "SEWOO GLOBAL CO,. LTD",
+      "market": "코스피",
+      "sector": "유통·소비재",
+      "price": 1189,
+      "change": -0.08,
+      "volume": 10163,
+      "trading_value": 12076402,
+      "mcap": 0.0341,
+      "shares": 28705031,
+      "induty_code": "467",
+      "categories": [
+        "유통·소비재"
       ],
       "rank": 2129
     },
@@ -38466,24 +38466,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2134
     },
     {
-      "ticker": "005820",
-      "name": "원림",
-      "name_en": "WONLIM CORPORATION",
-      "market": "코스피",
-      "sector": "섬유·패션·생활",
-      "price": 14650,
-      "change": -0.34,
-      "volume": 645,
-      "trading_value": 9520220,
-      "mcap": 0.0337,
-      "shares": 2297970,
-      "induty_code": "13225",
-      "categories": [
-        "섬유·패션·생활"
-      ],
-      "rank": 2135
-    },
-    {
       "ticker": "075130",
       "name": "플랜티넷",
       "name_en": "PLANTYNETCo.,Ltd.",
@@ -38498,6 +38480,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "620",
       "categories": [
         "IT·소프트웨어"
+      ],
+      "rank": 2135
+    },
+    {
+      "ticker": "005820",
+      "name": "원림",
+      "name_en": "WONLIM CORPORATION",
+      "market": "코스피",
+      "sector": "섬유·패션·생활",
+      "price": 14650,
+      "change": -0.34,
+      "volume": 645,
+      "trading_value": 9520220,
+      "mcap": 0.0337,
+      "shares": 2297970,
+      "induty_code": "13225",
+      "categories": [
+        "섬유·패션·생활"
       ],
       "rank": 2136
     },
@@ -38520,24 +38520,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2137
     },
     {
-      "ticker": "143210",
-      "name": "핸즈코퍼레이션",
-      "name_en": "HANDS CORPORATION LTD.",
-      "market": "코스피",
-      "sector": "자동차",
-      "price": 1199,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.0336,
-      "shares": 27999783,
-      "induty_code": "303",
-      "categories": [
-        "자동차"
-      ],
-      "rank": 2138
-    },
-    {
       "ticker": "215090",
       "name": "솔디펜스",
       "name_en": "SolDefense Co., Ltd.",
@@ -38553,25 +38535,25 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 2139
+      "rank": 2138
     },
     {
-      "ticker": "090370",
-      "name": "메타랩스",
-      "name_en": "METALABS CO., LTD.",
+      "ticker": "143210",
+      "name": "핸즈코퍼레이션",
+      "name_en": "HANDS CORPORATION LTD.",
       "market": "코스피",
-      "sector": "섬유·패션·생활",
-      "price": 1219,
-      "change": -3.02,
-      "volume": 33319,
-      "trading_value": 40693456,
-      "mcap": 0.0333,
-      "shares": 27304689,
-      "induty_code": "141",
+      "sector": "자동차",
+      "price": 1199,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.0336,
+      "shares": 27999783,
+      "induty_code": "303",
       "categories": [
-        "섬유·패션·생활"
+        "자동차"
       ],
-      "rank": 2140
+      "rank": 2139
     },
     {
       "ticker": "900270",
@@ -38588,6 +38570,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "64992",
       "categories": [
         "금융"
+      ],
+      "rank": 2140
+    },
+    {
+      "ticker": "090370",
+      "name": "메타랩스",
+      "name_en": "METALABS CO., LTD.",
+      "market": "코스피",
+      "sector": "섬유·패션·생활",
+      "price": 1219,
+      "change": -3.02,
+      "volume": 33319,
+      "trading_value": 40693456,
+      "mcap": 0.0333,
+      "shares": 27304689,
+      "induty_code": "141",
+      "categories": [
+        "섬유·패션·생활"
       ],
       "rank": 2141
     },
@@ -38736,6 +38736,24 @@ window.KOS_LIVE_DATA = {
       "rank": 2149
     },
     {
+      "ticker": "495810",
+      "name": "유비씨",
+      "name_en": "UVC Co., Ltd.",
+      "market": "코넥스",
+      "sector": "IT·소프트웨어",
+      "price": 13120,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.0328,
+      "shares": 2500000,
+      "induty_code": "58221",
+      "categories": [
+        "IT·소프트웨어"
+      ],
+      "rank": 2150
+    },
+    {
       "ticker": "271830",
       "name": "팸텍",
       "name_en": "PAMTEK CO., LTD.",
@@ -38751,7 +38769,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2150
+      "rank": 2151
     },
     {
       "ticker": "335810",
@@ -38769,7 +38787,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2151
+      "rank": 2152
     },
     {
       "ticker": "033830",
@@ -38787,7 +38805,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2152
+      "rank": 2153
     },
     {
       "ticker": "068050",
@@ -38805,43 +38823,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "미디어·엔터"
       ],
-      "rank": 2153
-    },
-    {
-      "ticker": "495810",
-      "name": "유비씨",
-      "name_en": "UVC Co., Ltd.",
-      "market": "코넥스",
-      "sector": "IT·소프트웨어",
-      "price": 13120,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.0328,
-      "shares": 2500000,
-      "induty_code": "58221",
-      "categories": [
-        "IT·소프트웨어"
-      ],
       "rank": 2154
-    },
-    {
-      "ticker": "006490",
-      "name": "프리티",
-      "name_en": "Inscobee, Inc",
-      "market": "코스피",
-      "sector": "통신",
-      "price": 1840,
-      "change": 29.94,
-      "volume": 122620,
-      "trading_value": 222000961,
-      "mcap": 0.0327,
-      "shares": 17746333,
-      "induty_code": "612",
-      "categories": [
-        "통신"
-      ],
-      "rank": 2155
     },
     {
       "ticker": "097780",
@@ -38858,6 +38840,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "303",
       "categories": [
         "에너지·전력"
+      ],
+      "rank": 2155
+    },
+    {
+      "ticker": "006490",
+      "name": "프리티",
+      "name_en": "Inscobee, Inc",
+      "market": "코스피",
+      "sector": "통신",
+      "price": 1840,
+      "change": 29.94,
+      "volume": 122620,
+      "trading_value": 222000961,
+      "mcap": 0.0327,
+      "shares": 17746333,
+      "induty_code": "612",
+      "categories": [
+        "통신"
       ],
       "rank": 2156
     },
@@ -39077,24 +39077,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2168
     },
     {
-      "ticker": "010400",
-      "name": "우진아이엔에스",
-      "name_en": "WOOJIN I&S Co.,Ltd",
-      "market": "코스피",
-      "sector": "건설·건자재",
-      "price": 4205,
-      "change": 0.12,
-      "volume": 21929,
-      "trading_value": 93333935,
-      "mcap": 0.0321,
-      "shares": 7622000,
-      "induty_code": "422",
-      "categories": [
-        "건설·건자재"
-      ],
-      "rank": 2169
-    },
-    {
       "ticker": "200780",
       "name": "비씨월드제약",
       "name_en": "BCWORLDPHARM Co., Ltd.",
@@ -39110,7 +39092,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2170
+      "rank": 2169
     },
     {
       "ticker": "089140",
@@ -39128,7 +39110,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2171
+      "rank": 2170
     },
     {
       "ticker": "187270",
@@ -39145,6 +39127,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "2812",
       "categories": [
         "기계·장비"
+      ],
+      "rank": 2171
+    },
+    {
+      "ticker": "010400",
+      "name": "우진아이엔에스",
+      "name_en": "WOOJIN I&S Co.,Ltd",
+      "market": "코스피",
+      "sector": "건설·건자재",
+      "price": 4205,
+      "change": 0.12,
+      "volume": 21929,
+      "trading_value": 93333935,
+      "mcap": 0.0321,
+      "shares": 7622000,
+      "induty_code": "422",
+      "categories": [
+        "건설·건자재"
       ],
       "rank": 2172
     },
@@ -39458,24 +39458,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2189
     },
     {
-      "ticker": "014130",
-      "name": "한익스프레스",
-      "name_en": "HAN EXPRESS CO.,LTD",
-      "market": "코스피",
-      "sector": "운송·물류",
-      "price": 2630,
-      "change": 1.15,
-      "volume": 5298,
-      "trading_value": 13801390,
-      "mcap": 0.0311,
-      "shares": 11817883,
-      "induty_code": "49301",
-      "categories": [
-        "운송·물류"
-      ],
-      "rank": 2190
-    },
-    {
       "ticker": "033540",
       "name": "파라텍",
       "name_en": "Paratech Company Limited",
@@ -39490,6 +39472,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "292",
       "categories": [
         "기계·장비"
+      ],
+      "rank": 2190
+    },
+    {
+      "ticker": "014130",
+      "name": "한익스프레스",
+      "name_en": "HAN EXPRESS CO.,LTD",
+      "market": "코스피",
+      "sector": "운송·물류",
+      "price": 2630,
+      "change": 1.15,
+      "volume": 5298,
+      "trading_value": 13801390,
+      "mcap": 0.0311,
+      "shares": 11817883,
+      "induty_code": "49301",
+      "categories": [
+        "운송·물류"
       ],
       "rank": 2191
     },
@@ -39656,24 +39656,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2200
     },
     {
-      "ticker": "006740",
-      "name": "블루산업개발",
-      "name_en": "Blue Industrial Development Co., Ltd.",
-      "market": "코스피",
-      "sector": "섬유·패션·생활",
-      "price": 5140,
-      "change": -0.19,
-      "volume": 1576,
-      "trading_value": 8067795,
-      "mcap": 0.0306,
-      "shares": 5950959,
-      "induty_code": "172",
-      "categories": [
-        "섬유·패션·생활"
-      ],
-      "rank": 2201
-    },
-    {
       "ticker": "311390",
       "name": "네오크레마",
       "name_en": "Neo Cremar Co., Ltd.",
@@ -39688,6 +39670,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "108",
       "categories": [
         "식음료"
+      ],
+      "rank": 2201
+    },
+    {
+      "ticker": "006740",
+      "name": "블루산업개발",
+      "name_en": "Blue Industrial Development Co., Ltd.",
+      "market": "코스피",
+      "sector": "섬유·패션·생활",
+      "price": 5140,
+      "change": -0.19,
+      "volume": 1576,
+      "trading_value": 8067795,
+      "mcap": 0.0306,
+      "shares": 5950959,
+      "induty_code": "172",
+      "categories": [
+        "섬유·패션·생활"
       ],
       "rank": 2202
     },
@@ -39764,24 +39764,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2206
     },
     {
-      "ticker": "006570",
-      "name": "대림통상",
-      "name_en": "DAELIM TRADING CO.,LTD",
-      "market": "코스피",
-      "sector": "기계·장비",
-      "price": 1996,
-      "change": 0.3,
-      "volume": 16498,
-      "trading_value": 32418481,
-      "mcap": 0.0304,
-      "shares": 15225000,
-      "induty_code": "25993",
-      "categories": [
-        "기계·장비"
-      ],
-      "rank": 2207
-    },
-    {
       "ticker": "462310",
       "name": "뉴키즈온",
       "name_en": "New Kids On  Co., Ltd.",
@@ -39796,6 +39778,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "141",
       "categories": [
         "섬유·패션·생활"
+      ],
+      "rank": 2207
+    },
+    {
+      "ticker": "006570",
+      "name": "대림통상",
+      "name_en": "DAELIM TRADING CO.,LTD",
+      "market": "코스피",
+      "sector": "기계·장비",
+      "price": 1996,
+      "change": 0.3,
+      "volume": 16498,
+      "trading_value": 32418481,
+      "mcap": 0.0304,
+      "shares": 15225000,
+      "induty_code": "25993",
+      "categories": [
+        "기계·장비"
       ],
       "rank": 2208
     },
@@ -39854,24 +39854,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2211
     },
     {
-      "ticker": "118000",
-      "name": "메타케어",
-      "name_en": "METACARE Co., Ltd.",
-      "market": "코스피",
-      "sector": "유통·소비재",
-      "price": 1369,
-      "change": 6.54,
-      "volume": 96394,
-      "trading_value": 128181944,
-      "mcap": 0.0302,
-      "shares": 22055785,
-      "induty_code": "4659",
-      "categories": [
-        "유통·소비재"
-      ],
-      "rank": 2212
-    },
-    {
       "ticker": "088340",
       "name": "유라클",
       "name_en": "URACLE. Co. Ltd",
@@ -39887,7 +39869,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2213
+      "rank": 2212
     },
     {
       "ticker": "246250",
@@ -39905,7 +39887,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2214
+      "rank": 2213
     },
     {
       "ticker": "317240",
@@ -39922,6 +39904,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "204",
       "categories": [
         "화장품"
+      ],
+      "rank": 2214
+    },
+    {
+      "ticker": "118000",
+      "name": "메타케어",
+      "name_en": "METACARE Co., Ltd.",
+      "market": "코스피",
+      "sector": "유통·소비재",
+      "price": 1369,
+      "change": 6.54,
+      "volume": 96394,
+      "trading_value": 128181944,
+      "mcap": 0.0302,
+      "shares": 22055785,
+      "induty_code": "4659",
+      "categories": [
+        "유통·소비재"
       ],
       "rank": 2215
     },
@@ -40071,42 +40071,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2223
     },
     {
-      "ticker": "036420",
-      "name": "콘텐트리중앙",
-      "name_en": "ContentreeJoongAng corp.",
-      "market": "코스피",
-      "sector": "미디어·엔터",
-      "price": 1548,
-      "change": -0.06,
-      "volume": 19073,
-      "trading_value": 29251756,
-      "mcap": 0.0298,
-      "shares": 19262308,
-      "induty_code": "591",
-      "categories": [
-        "미디어·엔터"
-      ],
-      "rank": 2224
-    },
-    {
-      "ticker": "357430",
-      "name": "마스턴프리미어리츠",
-      "name_en": "MASTERN PREMIER REIT 1 Co., Ltd.",
-      "market": "코스피",
-      "sector": "부동산·리츠",
-      "price": 976,
-      "change": -0.81,
-      "volume": 7889,
-      "trading_value": 7704527,
-      "mcap": 0.0298,
-      "shares": 30505307,
-      "induty_code": "681",
-      "categories": [
-        "부동산·리츠"
-      ],
-      "rank": 2225
-    },
-    {
       "ticker": "075970",
       "name": "동국알앤에스",
       "name_en": "DONGKUK REFRACTORIES & STEEL CO., LTD.",
@@ -40122,7 +40086,25 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2226
+      "rank": 2224
+    },
+    {
+      "ticker": "036420",
+      "name": "콘텐트리중앙",
+      "name_en": "ContentreeJoongAng corp.",
+      "market": "코스피",
+      "sector": "미디어·엔터",
+      "price": 1548,
+      "change": -0.06,
+      "volume": 19073,
+      "trading_value": 29251756,
+      "mcap": 0.0298,
+      "shares": 19262308,
+      "induty_code": "591",
+      "categories": [
+        "미디어·엔터"
+      ],
+      "rank": 2225
     },
     {
       "ticker": "078590",
@@ -40140,7 +40122,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 2227
+      "rank": 2226
     },
     {
       "ticker": "091340",
@@ -40157,6 +40139,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "2629",
       "categories": [
         "화학"
+      ],
+      "rank": 2227
+    },
+    {
+      "ticker": "357430",
+      "name": "마스턴프리미어리츠",
+      "name_en": "MASTERN PREMIER REIT 1 Co., Ltd.",
+      "market": "코스피",
+      "sector": "부동산·리츠",
+      "price": 976,
+      "change": -0.81,
+      "volume": 7889,
+      "trading_value": 7704527,
+      "mcap": 0.0298,
+      "shares": 30505307,
+      "induty_code": "681",
+      "categories": [
+        "부동산·리츠"
       ],
       "rank": 2228
     },
@@ -40233,24 +40233,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2232
     },
     {
-      "ticker": "002690",
-      "name": "동일제강",
-      "name_en": "DONG IL STEEL MFG CO., LTD",
-      "market": "코스피",
-      "sector": "철강·금속",
-      "price": 1459,
-      "change": -0.14,
-      "volume": 25735,
-      "trading_value": 37517561,
-      "mcap": 0.0296,
-      "shares": 20300360,
-      "induty_code": "24122",
-      "categories": [
-        "철강·금속"
-      ],
-      "rank": 2233
-    },
-    {
       "ticker": "226330",
       "name": "신테카바이오",
       "name_en": "SyntekaBio,Inc.",
@@ -40266,6 +40248,24 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약",
         "인공지능(AI)"
+      ],
+      "rank": 2233
+    },
+    {
+      "ticker": "002690",
+      "name": "동일제강",
+      "name_en": "DONG IL STEEL MFG CO., LTD",
+      "market": "코스피",
+      "sector": "철강·금속",
+      "price": 1459,
+      "change": -0.14,
+      "volume": 25735,
+      "trading_value": 37517561,
+      "mcap": 0.0296,
+      "shares": 20300360,
+      "induty_code": "24122",
+      "categories": [
+        "철강·금속"
       ],
       "rank": 2234
     },
@@ -40397,24 +40397,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2241
     },
     {
-      "ticker": "025890",
-      "name": "한국주강",
-      "name_en": "HANKOOK STEEL CO.,LTD",
-      "market": "코스피",
-      "sector": "철강·금속",
-      "price": 2620,
-      "change": 0.0,
-      "volume": 17923,
-      "trading_value": 46750685,
-      "mcap": 0.0292,
-      "shares": 11144616,
-      "induty_code": "292",
-      "categories": [
-        "철강·금속"
-      ],
-      "rank": 2242
-    },
-    {
       "ticker": "070590",
       "name": "인티큐브",
       "name_en": "Inticube Co., Ltd.",
@@ -40429,6 +40411,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "62010",
       "categories": [
         "IT·소프트웨어"
+      ],
+      "rank": 2242
+    },
+    {
+      "ticker": "025890",
+      "name": "한국주강",
+      "name_en": "HANKOOK STEEL CO.,LTD",
+      "market": "코스피",
+      "sector": "철강·금속",
+      "price": 2620,
+      "change": 0.0,
+      "volume": 17923,
+      "trading_value": 46750685,
+      "mcap": 0.0292,
+      "shares": 11144616,
+      "induty_code": "292",
+      "categories": [
+        "철강·금속"
       ],
       "rank": 2243
     },
@@ -40559,6 +40559,24 @@ window.KOS_LIVE_DATA = {
       "rank": 2250
     },
     {
+      "ticker": "079000",
+      "name": "와토스코리아",
+      "name_en": "WATOSCOREACO.,LTD",
+      "market": "코스닥",
+      "sector": "화학",
+      "price": 4020,
+      "change": 0.63,
+      "volume": 5187,
+      "trading_value": 20707455,
+      "mcap": 0.0289,
+      "shares": 7200000,
+      "induty_code": "22222",
+      "categories": [
+        "화학"
+      ],
+      "rank": 2251
+    },
+    {
       "ticker": "051630",
       "name": "진양화학",
       "name_en": "CHINYANG CHEMICAL CORPORATION",
@@ -40574,7 +40592,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2251
+      "rank": 2252
     },
     {
       "ticker": "007120",
@@ -40591,24 +40609,6 @@ window.KOS_LIVE_DATA = {
       "induty_code": "620",
       "categories": [
         "IT·소프트웨어"
-      ],
-      "rank": 2252
-    },
-    {
-      "ticker": "079000",
-      "name": "와토스코리아",
-      "name_en": "WATOSCOREACO.,LTD",
-      "market": "코스닥",
-      "sector": "화학",
-      "price": 4020,
-      "change": 0.63,
-      "volume": 5187,
-      "trading_value": 20707455,
-      "mcap": 0.0289,
-      "shares": 7200000,
-      "induty_code": "22222",
-      "categories": [
-        "화학"
       ],
       "rank": 2253
     },
@@ -40793,24 +40793,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2263
     },
     {
-      "ticker": "071950",
-      "name": "코아스",
-      "name_en": "KOAS CO., LTD",
-      "market": "코스피",
-      "sector": "전자·부품",
-      "price": 1973,
-      "change": -0.05,
-      "volume": 54125,
-      "trading_value": 105017322,
-      "mcap": 0.0285,
-      "shares": 14459195,
-      "induty_code": "320",
-      "categories": [
-        "전자·부품"
-      ],
-      "rank": 2264
-    },
-    {
       "ticker": "008470",
       "name": "부스타",
       "name_en": "BOOSTER CO., LTD.",
@@ -40825,6 +40807,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "25130",
       "categories": [
         "화학"
+      ],
+      "rank": 2264
+    },
+    {
+      "ticker": "071950",
+      "name": "코아스",
+      "name_en": "KOAS CO., LTD",
+      "market": "코스피",
+      "sector": "전자·부품",
+      "price": 1973,
+      "change": -0.05,
+      "volume": 54125,
+      "trading_value": 105017322,
+      "mcap": 0.0285,
+      "shares": 14459195,
+      "induty_code": "320",
+      "categories": [
+        "전자·부품"
       ],
       "rank": 2265
     },
@@ -41064,24 +41064,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2278
     },
     {
-      "ticker": "001380",
-      "name": "SG글로벌",
-      "name_en": "SG GLOBAL CO., LTD",
-      "market": "코스피",
-      "sector": "자동차",
-      "price": 1239,
-      "change": -0.08,
-      "volume": 22230,
-      "trading_value": 27325997,
-      "mcap": 0.0279,
-      "shares": 22482071,
-      "induty_code": "303",
-      "categories": [
-        "자동차"
-      ],
-      "rank": 2279
-    },
-    {
       "ticker": "048470",
       "name": "대동스틸",
       "name_en": "DAE DONG STEEL CO., LTD.",
@@ -41097,43 +41079,25 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "철강·금속"
       ],
-      "rank": 2280
+      "rank": 2279
     },
     {
-      "ticker": "033250",
-      "name": "체시스",
-      "name_en": "CHASYS Co.,Ltd",
+      "ticker": "001380",
+      "name": "SG글로벌",
+      "name_en": "SG GLOBAL CO., LTD",
       "market": "코스피",
       "sector": "자동차",
-      "price": 4340,
-      "change": 1.28,
-      "volume": 9160,
-      "trading_value": 39491965,
-      "mcap": 0.0278,
-      "shares": 6400000,
+      "price": 1239,
+      "change": -0.08,
+      "volume": 22230,
+      "trading_value": 27325997,
+      "mcap": 0.0279,
+      "shares": 22482071,
       "induty_code": "303",
       "categories": [
         "자동차"
       ],
-      "rank": 2281
-    },
-    {
-      "ticker": "088790",
-      "name": "진도",
-      "name_en": "JINDO.CO.,LTD",
-      "market": "코스피",
-      "sector": "섬유·패션·생활",
-      "price": 2230,
-      "change": -3.25,
-      "volume": 37321,
-      "trading_value": 84190445,
-      "mcap": 0.0278,
-      "shares": 12447744,
-      "induty_code": "467",
-      "categories": [
-        "섬유·패션·생활"
-      ],
-      "rank": 2282
+      "rank": 2280
     },
     {
       "ticker": "290560",
@@ -41151,7 +41115,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2283
+      "rank": 2281
     },
     {
       "ticker": "038870",
@@ -41169,7 +41133,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기타"
       ],
-      "rank": 2284
+      "rank": 2282
     },
     {
       "ticker": "900310",
@@ -41187,7 +41151,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "금융"
       ],
-      "rank": 2285
+      "rank": 2283
     },
     {
       "ticker": "068100",
@@ -41204,6 +41168,42 @@ window.KOS_LIVE_DATA = {
       "induty_code": "291",
       "categories": [
         "IT·소프트웨어"
+      ],
+      "rank": 2284
+    },
+    {
+      "ticker": "033250",
+      "name": "체시스",
+      "name_en": "CHASYS Co.,Ltd",
+      "market": "코스피",
+      "sector": "자동차",
+      "price": 4340,
+      "change": 1.28,
+      "volume": 9160,
+      "trading_value": 39491965,
+      "mcap": 0.0278,
+      "shares": 6400000,
+      "induty_code": "303",
+      "categories": [
+        "자동차"
+      ],
+      "rank": 2285
+    },
+    {
+      "ticker": "088790",
+      "name": "진도",
+      "name_en": "JINDO.CO.,LTD",
+      "market": "코스피",
+      "sector": "섬유·패션·생활",
+      "price": 2230,
+      "change": -3.25,
+      "volume": 37321,
+      "trading_value": 84190445,
+      "mcap": 0.0278,
+      "shares": 12447744,
+      "induty_code": "467",
+      "categories": [
+        "섬유·패션·생활"
       ],
       "rank": 2286
     },
@@ -41838,24 +41838,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2321
     },
     {
-      "ticker": "005110",
-      "name": "한창",
-      "name_en": "HANCHANG CORPORATION",
-      "market": "코스피",
-      "sector": "유통·소비재",
-      "price": 1254,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.0265,
-      "shares": 21106407,
-      "induty_code": "465",
-      "categories": [
-        "유통·소비재"
-      ],
-      "rank": 2322
-    },
-    {
       "ticker": "333050",
       "name": "이노테나",
       "name_en": "Innotena, Inc.",
@@ -41871,7 +41853,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2323
+      "rank": 2322
     },
     {
       "ticker": "206400",
@@ -41886,6 +41868,24 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.0265,
       "shares": 37510158,
       "induty_code": "424",
+      "categories": [
+        "유통·소비재"
+      ],
+      "rank": 2323
+    },
+    {
+      "ticker": "005110",
+      "name": "한창",
+      "name_en": "HANCHANG CORPORATION",
+      "market": "코스피",
+      "sector": "유통·소비재",
+      "price": 1254,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.0265,
+      "shares": 21106407,
+      "induty_code": "465",
       "categories": [
         "유통·소비재"
       ],
@@ -42091,24 +42091,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2335
     },
     {
-      "ticker": "090150",
-      "name": "아이윈",
-      "name_en": "iWIN CO.,LTD",
-      "market": "코스닥",
-      "sector": "자동차",
-      "price": 6200,
-      "change": 1.64,
-      "volume": 12259,
-      "trading_value": 73262860,
-      "mcap": 0.026,
-      "shares": 4187529,
-      "induty_code": "303",
-      "categories": [
-        "자동차"
-      ],
-      "rank": 2336
-    },
-    {
       "ticker": "311060",
       "name": "엘에이티",
       "name_en": "LAT CO., LTD.",
@@ -42121,6 +42103,24 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.026,
       "shares": 7872134,
       "induty_code": "29271",
+      "categories": [
+        "자동차"
+      ],
+      "rank": 2336
+    },
+    {
+      "ticker": "090150",
+      "name": "아이윈",
+      "name_en": "iWIN CO.,LTD",
+      "market": "코스닥",
+      "sector": "자동차",
+      "price": 6200,
+      "change": 1.64,
+      "volume": 12259,
+      "trading_value": 73262860,
+      "mcap": 0.026,
+      "shares": 4187529,
+      "induty_code": "303",
       "categories": [
         "자동차"
       ],
@@ -42145,6 +42145,24 @@ window.KOS_LIVE_DATA = {
       "rank": 2338
     },
     {
+      "ticker": "227420",
+      "name": "도부",
+      "name_en": "DOBU Inc.",
+      "market": "코넥스",
+      "sector": "섬유·패션·생활",
+      "price": 680,
+      "change": -14.89,
+      "volume": 63,
+      "trading_value": 43451,
+      "mcap": 0.0259,
+      "shares": 38044510,
+      "induty_code": "132",
+      "categories": [
+        "섬유·패션·생활"
+      ],
+      "rank": 2339
+    },
+    {
       "ticker": "038530",
       "name": "케이바이오랩스",
       "name_en": "KBIO LABS Inc.",
@@ -42160,7 +42178,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2339
+      "rank": 2340
     },
     {
       "ticker": "044780",
@@ -42178,7 +42196,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "기계·장비"
       ],
-      "rank": 2340
+      "rank": 2341
     },
     {
       "ticker": "475660",
@@ -42195,24 +42213,6 @@ window.KOS_LIVE_DATA = {
       "induty_code": "204",
       "categories": [
         "화학"
-      ],
-      "rank": 2341
-    },
-    {
-      "ticker": "227420",
-      "name": "도부",
-      "name_en": "DOBU Inc.",
-      "market": "코넥스",
-      "sector": "섬유·패션·생활",
-      "price": 680,
-      "change": -14.89,
-      "volume": 63,
-      "trading_value": 43451,
-      "mcap": 0.0259,
-      "shares": 38044510,
-      "induty_code": "132",
-      "categories": [
-        "섬유·패션·생활"
       ],
       "rank": 2342
     },
@@ -42253,6 +42253,23 @@ window.KOS_LIVE_DATA = {
       "rank": 2344
     },
     {
+      "ticker": "0010F0",
+      "name": "보원케미칼",
+      "name_en": "Bowon Chemical",
+      "market": "코스닥",
+      "sector": "화학",
+      "price": 2310,
+      "change": -0.43,
+      "volume": 45922,
+      "trading_value": 104627755,
+      "mcap": 0.0257,
+      "shares": 11143601,
+      "categories": [
+        "화학"
+      ],
+      "rank": 2345
+    },
+    {
       "ticker": "465770",
       "name": "STX그린로지스",
       "name_en": "STX Green Logis Ltd",
@@ -42267,23 +42284,6 @@ window.KOS_LIVE_DATA = {
       "induty_code": "501",
       "categories": [
         "운송·물류"
-      ],
-      "rank": 2345
-    },
-    {
-      "ticker": "0010F0",
-      "name": "보원케미칼",
-      "name_en": "Bowon Chemical",
-      "market": "코스닥",
-      "sector": "화학",
-      "price": 2310,
-      "change": -0.43,
-      "volume": 45922,
-      "trading_value": 104627755,
-      "mcap": 0.0257,
-      "shares": 11143601,
-      "categories": [
-        "화학"
       ],
       "rank": 2346
     },
@@ -42360,24 +42360,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2350
     },
     {
-      "ticker": "004870",
-      "name": "티웨이홀딩스",
-      "name_en": "Tway Holdings Incorporation",
-      "market": "코스피",
-      "sector": "지주",
-      "price": 1122,
-      "change": -0.09,
-      "volume": 232366,
-      "trading_value": 269228434,
-      "mcap": 0.0254,
-      "shares": 22632698,
-      "induty_code": "23325",
-      "categories": [
-        "지주"
-      ],
-      "rank": 2351
-    },
-    {
       "ticker": "114630",
       "name": "폴라리스우노",
       "name_en": "POLARIS UNO, Inc.",
@@ -42392,6 +42374,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "20501",
       "categories": [
         "화학"
+      ],
+      "rank": 2351
+    },
+    {
+      "ticker": "004870",
+      "name": "티웨이홀딩스",
+      "name_en": "Tway Holdings Incorporation",
+      "market": "코스피",
+      "sector": "지주",
+      "price": 1122,
+      "change": -0.09,
+      "volume": 232366,
+      "trading_value": 269228434,
+      "mcap": 0.0254,
+      "shares": 22632698,
+      "induty_code": "23325",
+      "categories": [
+        "지주"
       ],
       "rank": 2352
     },
@@ -42756,24 +42756,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2372
     },
     {
-      "ticker": "051380",
-      "name": "피씨디렉트",
-      "name_en": "PC Direct, Inc.",
-      "market": "코스닥",
-      "sector": "유통·소비재",
-      "price": 1589,
-      "change": -0.13,
-      "volume": 5669,
-      "trading_value": 9004944,
-      "mcap": 0.0244,
-      "shares": 15340072,
-      "induty_code": "46510",
-      "categories": [
-        "유통·소비재"
-      ],
-      "rank": 2373
-    },
-    {
       "ticker": "206950",
       "name": "볼빅",
       "name_en": "VOLVIK INC.",
@@ -42788,6 +42770,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "33309",
       "categories": [
         "호텔·레저"
+      ],
+      "rank": 2373
+    },
+    {
+      "ticker": "051380",
+      "name": "피씨디렉트",
+      "name_en": "PC Direct, Inc.",
+      "market": "코스닥",
+      "sector": "유통·소비재",
+      "price": 1589,
+      "change": -0.13,
+      "volume": 5669,
+      "trading_value": 9004944,
+      "mcap": 0.0244,
+      "shares": 15340072,
+      "induty_code": "46510",
+      "categories": [
+        "유통·소비재"
       ],
       "rank": 2374
     },
@@ -43262,24 +43262,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2400
     },
     {
-      "ticker": "004270",
-      "name": "남성",
-      "name_en": "NAMSUNG CORPORATION",
-      "market": "코스피",
-      "sector": "유통·소비재",
-      "price": 5060,
-      "change": 1.5,
-      "volume": 22061,
-      "trading_value": 111538100,
-      "mcap": 0.0231,
-      "shares": 4560128,
-      "induty_code": "46799",
-      "categories": [
-        "유통·소비재"
-      ],
-      "rank": 2401
-    },
-    {
       "ticker": "462510",
       "name": "라메디텍",
       "name_en": "LAMEDITECH Co., Ltd.",
@@ -43295,7 +43277,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2402
+      "rank": 2401
     },
     {
       "ticker": "187220",
@@ -43312,6 +43294,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "729",
       "categories": [
         "IT·소프트웨어"
+      ],
+      "rank": 2402
+    },
+    {
+      "ticker": "004270",
+      "name": "남성",
+      "name_en": "NAMSUNG CORPORATION",
+      "market": "코스피",
+      "sector": "유통·소비재",
+      "price": 5060,
+      "change": 1.5,
+      "volume": 22061,
+      "trading_value": 111538100,
+      "mcap": 0.0231,
+      "shares": 4560128,
+      "induty_code": "46799",
+      "categories": [
+        "유통·소비재"
       ],
       "rank": 2403
     },
@@ -43713,24 +43713,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2425
     },
     {
-      "ticker": "298060",
-      "name": "풍전약품",
-      "name_en": "POONGJEON PHARMACY CO.,LTD.",
-      "market": "코스닥",
-      "sector": "바이오·제약",
-      "price": 2310,
-      "change": -2.94,
-      "volume": 10041,
-      "trading_value": 23465885,
-      "mcap": 0.0223,
-      "shares": 9637447,
-      "induty_code": "212",
-      "categories": [
-        "바이오·제약"
-      ],
-      "rank": 2426
-    },
-    {
       "ticker": "102950",
       "name": "아하",
       "name_en": "AHA Co.,Ltd",
@@ -43745,6 +43727,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "262",
       "categories": [
         "전자·부품"
+      ],
+      "rank": 2426
+    },
+    {
+      "ticker": "298060",
+      "name": "풍전약품",
+      "name_en": "POONGJEON PHARMACY CO.,LTD.",
+      "market": "코스닥",
+      "sector": "바이오·제약",
+      "price": 2310,
+      "change": -2.94,
+      "volume": 10041,
+      "trading_value": 23465885,
+      "mcap": 0.0223,
+      "shares": 9637447,
+      "induty_code": "212",
+      "categories": [
+        "바이오·제약"
       ],
       "rank": 2427
     },
@@ -43968,24 +43968,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2439
     },
     {
-      "ticker": "012170",
-      "name": "아센디오",
-      "name_en": "Ascendio Co., Ltd.",
-      "market": "코스피",
-      "sector": "미디어·엔터",
-      "price": 2955,
-      "change": -4.37,
-      "volume": 15441,
-      "trading_value": 45925715,
-      "mcap": 0.0216,
-      "shares": 7296721,
-      "induty_code": "591",
-      "categories": [
-        "미디어·엔터"
-      ],
-      "rank": 2440
-    },
-    {
       "ticker": "063760",
       "name": "이엘피",
       "name_en": "ELP Corp.",
@@ -44001,7 +43983,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2441
+      "rank": 2440
     },
     {
       "ticker": "352940",
@@ -44019,7 +44001,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2442
+      "rank": 2441
     },
     {
       "ticker": "083660",
@@ -44036,6 +44018,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "204",
       "categories": [
         "화학"
+      ],
+      "rank": 2442
+    },
+    {
+      "ticker": "012170",
+      "name": "아센디오",
+      "name_en": "Ascendio Co., Ltd.",
+      "market": "코스피",
+      "sector": "미디어·엔터",
+      "price": 2955,
+      "change": -4.37,
+      "volume": 15441,
+      "trading_value": 45925715,
+      "mcap": 0.0216,
+      "shares": 7296721,
+      "induty_code": "591",
+      "categories": [
+        "미디어·엔터"
       ],
       "rank": 2443
     },
@@ -44058,6 +44058,24 @@ window.KOS_LIVE_DATA = {
       "rank": 2444
     },
     {
+      "ticker": "331660",
+      "name": "한국미라클피플사",
+      "name_en": "KOREA MIRACLE PEOPLE COMPANY Co., Ltd.",
+      "market": "코넥스",
+      "sector": "화학",
+      "price": 3915,
+      "change": 0.26,
+      "volume": 30,
+      "trading_value": 119490,
+      "mcap": 0.0215,
+      "shares": 5500000,
+      "induty_code": "20422",
+      "categories": [
+        "화학"
+      ],
+      "rank": 2445
+    },
+    {
       "ticker": "317120",
       "name": "라닉스",
       "name_en": "RANIX INC.",
@@ -44073,7 +44091,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2445
+      "rank": 2446
     },
     {
       "ticker": "067730",
@@ -44091,7 +44109,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2446
+      "rank": 2447
     },
     {
       "ticker": "065150",
@@ -44109,7 +44127,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2447
+      "rank": 2448
     },
     {
       "ticker": "085810",
@@ -44127,7 +44145,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "IT·소프트웨어"
       ],
-      "rank": 2448
+      "rank": 2449
     },
     {
       "ticker": "340440",
@@ -44142,24 +44160,6 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.0215,
       "shares": 28378364,
       "induty_code": "222",
-      "categories": [
-        "화학"
-      ],
-      "rank": 2449
-    },
-    {
-      "ticker": "331660",
-      "name": "한국미라클피플사",
-      "name_en": "KOREA MIRACLE PEOPLE COMPANY Co., Ltd.",
-      "market": "코넥스",
-      "sector": "화학",
-      "price": 3915,
-      "change": 0.26,
-      "volume": 30,
-      "trading_value": 119490,
-      "mcap": 0.0215,
-      "shares": 5500000,
-      "induty_code": "20422",
       "categories": [
         "화학"
       ],
@@ -44472,24 +44472,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2467
     },
     {
-      "ticker": "353590",
-      "name": "오토앤",
-      "name_en": "AUTO& Inc.",
-      "market": "코스닥",
-      "sector": "자동차",
-      "price": 1604,
-      "change": -0.87,
-      "volume": 3424,
-      "trading_value": 5467960,
-      "mcap": 0.0207,
-      "shares": 12875570,
-      "induty_code": "4521",
-      "categories": [
-        "자동차"
-      ],
-      "rank": 2468
-    },
-    {
       "ticker": "076340",
       "name": "지에이이노더스",
       "name_en": "GA INNODUS CO., LTD.",
@@ -44504,6 +44486,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "421",
       "categories": [
         "건설·건자재"
+      ],
+      "rank": 2468
+    },
+    {
+      "ticker": "353590",
+      "name": "오토앤",
+      "name_en": "AUTO& Inc.",
+      "market": "코스닥",
+      "sector": "자동차",
+      "price": 1604,
+      "change": -0.87,
+      "volume": 3424,
+      "trading_value": 5467960,
+      "mcap": 0.0207,
+      "shares": 12875570,
+      "induty_code": "4521",
+      "categories": [
+        "자동차"
       ],
       "rank": 2469
     },
@@ -44580,6 +44580,25 @@ window.KOS_LIVE_DATA = {
       "rank": 2473
     },
     {
+      "ticker": "403810",
+      "name": "아이엘로보틱스",
+      "name_en": "IL ROBOTICS CO., LTD.",
+      "market": "코넥스",
+      "sector": "전자·부품",
+      "price": 2065,
+      "change": -6.77,
+      "volume": 1952,
+      "trading_value": 4031325,
+      "mcap": 0.0205,
+      "shares": 9937346,
+      "induty_code": "262",
+      "categories": [
+        "전자·부품",
+        "로봇"
+      ],
+      "rank": 2474
+    },
+    {
       "ticker": "154030",
       "name": "아시아종묘",
       "name_en": "ASIA SEED Co.,Ltd.",
@@ -44595,7 +44614,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2474
+      "rank": 2475
     },
     {
       "ticker": "043590",
@@ -44612,25 +44631,6 @@ window.KOS_LIVE_DATA = {
       "induty_code": "261",
       "categories": [
         "반도체"
-      ],
-      "rank": 2475
-    },
-    {
-      "ticker": "403810",
-      "name": "아이엘로보틱스",
-      "name_en": "IL ROBOTICS CO., LTD.",
-      "market": "코넥스",
-      "sector": "전자·부품",
-      "price": 2065,
-      "change": -6.77,
-      "volume": 1952,
-      "trading_value": 4031325,
-      "mcap": 0.0205,
-      "shares": 9937346,
-      "induty_code": "262",
-      "categories": [
-        "전자·부품",
-        "로봇"
       ],
       "rank": 2476
     },
@@ -44906,24 +44906,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2491
     },
     {
-      "ticker": "096870",
-      "name": "엘디티",
-      "name_en": "LDTInc.",
-      "market": "코스닥",
-      "sector": "반도체",
-      "price": 2390,
-      "change": 1.92,
-      "volume": 106861,
-      "trading_value": 252514295,
-      "mcap": 0.02,
-      "shares": 8347999,
-      "induty_code": "2611",
-      "categories": [
-        "반도체"
-      ],
-      "rank": 2492
-    },
-    {
       "ticker": "322970",
       "name": "무진메디",
       "name_en": "Moogene Medi Co., Ltd.",
@@ -44939,43 +44921,25 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
+      "rank": 2492
+    },
+    {
+      "ticker": "096870",
+      "name": "엘디티",
+      "name_en": "LDTInc.",
+      "market": "코스닥",
+      "sector": "반도체",
+      "price": 2390,
+      "change": 1.92,
+      "volume": 106861,
+      "trading_value": 252514295,
+      "mcap": 0.02,
+      "shares": 8347999,
+      "induty_code": "2611",
+      "categories": [
+        "반도체"
+      ],
       "rank": 2493
-    },
-    {
-      "ticker": "000040",
-      "name": "KR모터스",
-      "name_en": "KR MOTORS CO., LTD",
-      "market": "코스피",
-      "sector": "자동차",
-      "price": 1151,
-      "change": -2.54,
-      "volume": 29995,
-      "trading_value": 34857647,
-      "mcap": 0.0199,
-      "shares": 17275036,
-      "induty_code": "319",
-      "categories": [
-        "자동차"
-      ],
-      "rank": 2494
-    },
-    {
-      "ticker": "015020",
-      "name": "이스타코",
-      "name_en": "e-STARCO. CO.,LTD",
-      "market": "코스피",
-      "sector": "부동산·리츠",
-      "price": 928,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.0199,
-      "shares": 21425800,
-      "induty_code": "68121",
-      "categories": [
-        "부동산·리츠"
-      ],
-      "rank": 2495
     },
     {
       "ticker": "113810",
@@ -44993,7 +44957,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "항공·방산"
       ],
-      "rank": 2496
+      "rank": 2494
     },
     {
       "ticker": "247660",
@@ -45011,7 +44975,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전자·부품"
       ],
-      "rank": 2497
+      "rank": 2495
     },
     {
       "ticker": "115610",
@@ -45029,7 +44993,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "반도체"
       ],
-      "rank": 2498
+      "rank": 2496
     },
     {
       "ticker": "342870",
@@ -45046,6 +45010,42 @@ window.KOS_LIVE_DATA = {
       "induty_code": "47320",
       "categories": [
         "유통·소비재"
+      ],
+      "rank": 2497
+    },
+    {
+      "ticker": "000040",
+      "name": "KR모터스",
+      "name_en": "KR MOTORS CO., LTD",
+      "market": "코스피",
+      "sector": "자동차",
+      "price": 1151,
+      "change": -2.54,
+      "volume": 29995,
+      "trading_value": 34857647,
+      "mcap": 0.0199,
+      "shares": 17275036,
+      "induty_code": "319",
+      "categories": [
+        "자동차"
+      ],
+      "rank": 2498
+    },
+    {
+      "ticker": "015020",
+      "name": "이스타코",
+      "name_en": "e-STARCO. CO.,LTD",
+      "market": "코스피",
+      "sector": "부동산·리츠",
+      "price": 928,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.0199,
+      "shares": 21425800,
+      "induty_code": "68121",
+      "categories": [
+        "부동산·리츠"
       ],
       "rank": 2499
     },
@@ -45464,24 +45464,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2522
     },
     {
-      "ticker": "455180",
-      "name": "케이지에이",
-      "name_en": "KGA CO., LTD",
-      "market": "코스닥",
-      "sector": "전자·부품",
-      "price": 1269,
-      "change": 1.2,
-      "volume": 17054,
-      "trading_value": 21404127,
-      "mcap": 0.0187,
-      "shares": 14699056,
-      "induty_code": "29271",
-      "categories": [
-        "전자·부품"
-      ],
-      "rank": 2523
-    },
-    {
       "ticker": "222670",
       "name": "플럼라인생명과학",
       "name_en": "Plumbline Life Sciences, Inc.",
@@ -45496,6 +45478,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "701",
       "categories": [
         "바이오·제약"
+      ],
+      "rank": 2523
+    },
+    {
+      "ticker": "455180",
+      "name": "케이지에이",
+      "name_en": "KGA CO., LTD",
+      "market": "코스닥",
+      "sector": "전자·부품",
+      "price": 1269,
+      "change": 1.2,
+      "volume": 17054,
+      "trading_value": 21404127,
+      "mcap": 0.0187,
+      "shares": 14699056,
+      "induty_code": "29271",
+      "categories": [
+        "전자·부품"
       ],
       "rank": 2524
     },
@@ -45699,42 +45699,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2535
     },
     {
-      "ticker": "008600",
-      "name": "윌비스",
-      "name_en": "THE WILLBES & CO.,LTD",
-      "market": "코스피",
-      "sector": "유통·소비재",
-      "price": 2620,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.0176,
-      "shares": 6723603,
-      "induty_code": "46413",
-      "categories": [
-        "유통·소비재"
-      ],
-      "rank": 2536
-    },
-    {
-      "ticker": "009440",
-      "name": "KC그린홀딩스",
-      "name_en": "KC Green Holdings Co.,Ltd.",
-      "market": "코스피",
-      "sector": "지주",
-      "price": 756,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.0176,
-      "shares": 23239141,
-      "induty_code": "64992",
-      "categories": [
-        "지주"
-      ],
-      "rank": 2537
-    },
-    {
       "ticker": "006050",
       "name": "국영지앤엠",
       "name_en": "KUK YOUNG G M",
@@ -45750,7 +45714,25 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "건설·건자재"
       ],
-      "rank": 2538
+      "rank": 2536
+    },
+    {
+      "ticker": "008600",
+      "name": "윌비스",
+      "name_en": "THE WILLBES & CO.,LTD",
+      "market": "코스피",
+      "sector": "유통·소비재",
+      "price": 2620,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.0176,
+      "shares": 6723603,
+      "induty_code": "46413",
+      "categories": [
+        "유통·소비재"
+      ],
+      "rank": 2537
     },
     {
       "ticker": "052960",
@@ -45767,6 +45749,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "452",
       "categories": [
         "자동차"
+      ],
+      "rank": 2538
+    },
+    {
+      "ticker": "009440",
+      "name": "KC그린홀딩스",
+      "name_en": "KC Green Holdings Co.,Ltd.",
+      "market": "코스피",
+      "sector": "지주",
+      "price": 756,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.0176,
+      "shares": 23239141,
+      "induty_code": "64992",
+      "categories": [
+        "지주"
       ],
       "rank": 2539
     },
@@ -45915,24 +45915,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2547
     },
     {
-      "ticker": "006200",
-      "name": "한국전자홀딩스",
-      "name_en": "KEC HOLDINGS CO.,LTD",
-      "market": "코스피",
-      "sector": "지주",
-      "price": 1815,
-      "change": 1.85,
-      "volume": 20418,
-      "trading_value": 36508405,
-      "mcap": 0.017,
-      "shares": 9360627,
-      "induty_code": "64992",
-      "categories": [
-        "지주"
-      ],
-      "rank": 2548
-    },
-    {
       "ticker": "034940",
       "name": "조아제약",
       "name_en": "ChoA Pharmaceutical Co., LTD.",
@@ -45948,7 +45930,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "바이오·제약"
       ],
-      "rank": 2549
+      "rank": 2548
     },
     {
       "ticker": "476710",
@@ -45965,6 +45947,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "901",
       "categories": [
         "미디어·엔터"
+      ],
+      "rank": 2549
+    },
+    {
+      "ticker": "006200",
+      "name": "한국전자홀딩스",
+      "name_en": "KEC HOLDINGS CO.,LTD",
+      "market": "코스피",
+      "sector": "지주",
+      "price": 1815,
+      "change": 1.85,
+      "volume": 20418,
+      "trading_value": 36508405,
+      "mcap": 0.017,
+      "shares": 9360627,
+      "induty_code": "64992",
+      "categories": [
+        "지주"
       ],
       "rank": 2550
     },
@@ -46364,24 +46364,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2572
     },
     {
-      "ticker": "015260",
-      "name": "에이엔피",
-      "name_en": "AUTOMOBILE & PCB",
-      "market": "코스피",
-      "sector": "반도체",
-      "price": 303,
-      "change": 0.0,
-      "volume": 922373,
-      "trading_value": 271854864,
-      "mcap": 0.0143,
-      "shares": 47116894,
-      "induty_code": "2622",
-      "categories": [
-        "반도체"
-      ],
-      "rank": 2573
-    },
-    {
       "ticker": "169670",
       "name": "코스텍시스템",
       "name_en": "Kostek Systems, Inc.",
@@ -46394,6 +46376,24 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.0143,
       "shares": 2868401,
       "induty_code": "29271",
+      "categories": [
+        "반도체"
+      ],
+      "rank": 2573
+    },
+    {
+      "ticker": "015260",
+      "name": "에이엔피",
+      "name_en": "AUTOMOBILE & PCB",
+      "market": "코스피",
+      "sector": "반도체",
+      "price": 303,
+      "change": 0.0,
+      "volume": 922373,
+      "trading_value": 271854864,
+      "mcap": 0.0143,
+      "shares": 47116894,
+      "induty_code": "2622",
       "categories": [
         "반도체"
       ],
@@ -46508,24 +46508,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2580
     },
     {
-      "ticker": "244460",
-      "name": "올리패스",
-      "name_en": "OLIPASS CORPORATION",
-      "market": "코스닥",
-      "sector": "바이오·제약",
-      "price": 1651,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.0134,
-      "shares": 8125511,
-      "induty_code": "211",
-      "categories": [
-        "바이오·제약"
-      ],
-      "rank": 2581
-    },
-    {
       "ticker": "176590",
       "name": "코나솔",
       "name_en": "KONASOL CO.,LTD",
@@ -46540,6 +46522,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "259",
       "categories": [
         "화학"
+      ],
+      "rank": 2581
+    },
+    {
+      "ticker": "244460",
+      "name": "올리패스",
+      "name_en": "OLIPASS CORPORATION",
+      "market": "코스닥",
+      "sector": "바이오·제약",
+      "price": 1651,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.0134,
+      "shares": 8125511,
+      "induty_code": "211",
+      "categories": [
+        "바이오·제약"
       ],
       "rank": 2582
     },
@@ -46580,6 +46580,24 @@ window.KOS_LIVE_DATA = {
       "rank": 2584
     },
     {
+      "ticker": "456190",
+      "name": "큐라켐",
+      "name_en": "CURACHEM Co., ltd.",
+      "market": "코넥스",
+      "sector": "바이오·제약",
+      "price": 7210,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.0132,
+      "shares": 1834286,
+      "induty_code": "213",
+      "categories": [
+        "바이오·제약"
+      ],
+      "rank": 2585
+    },
+    {
       "ticker": "060260",
       "name": "뉴보텍",
       "name_en": "NUVOTEC Co., Ltd",
@@ -46595,7 +46613,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2585
+      "rank": 2586
     },
     {
       "ticker": "285800",
@@ -46612,24 +46630,6 @@ window.KOS_LIVE_DATA = {
       "induty_code": "2221",
       "categories": [
         "전자·부품"
-      ],
-      "rank": 2586
-    },
-    {
-      "ticker": "456190",
-      "name": "큐라켐",
-      "name_en": "CURACHEM Co., ltd.",
-      "market": "코넥스",
-      "sector": "바이오·제약",
-      "price": 7210,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.0132,
-      "shares": 1834286,
-      "induty_code": "213",
-      "categories": [
-        "바이오·제약"
       ],
       "rank": 2587
     },
@@ -46779,24 +46779,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2595
     },
     {
-      "ticker": "131760",
-      "name": "파인텍",
-      "name_en": "FINETEK CO., LTD.",
-      "market": "코스닥",
-      "sector": "전자·부품",
-      "price": 1323,
-      "change": 7.39,
-      "volume": 357187,
-      "trading_value": 462317545,
-      "mcap": 0.0115,
-      "shares": 8686316,
-      "induty_code": "292",
-      "categories": [
-        "전자·부품"
-      ],
-      "rank": 2596
-    },
-    {
       "ticker": "217320",
       "name": "썬테크",
       "name_en": "SUNTECH.CO.,LTD",
@@ -46811,6 +46793,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "28111",
       "categories": [
         "기계·장비"
+      ],
+      "rank": 2596
+    },
+    {
+      "ticker": "131760",
+      "name": "파인텍",
+      "name_en": "FINETEK CO., LTD.",
+      "market": "코스닥",
+      "sector": "전자·부품",
+      "price": 1323,
+      "change": 7.39,
+      "volume": 357187,
+      "trading_value": 462317545,
+      "mcap": 0.0115,
+      "shares": 8686316,
+      "induty_code": "292",
+      "categories": [
+        "전자·부품"
       ],
       "rank": 2597
     },
@@ -46851,24 +46851,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2599
     },
     {
-      "ticker": "001000",
-      "name": "신라섬유",
-      "name_en": "SillaTextile",
-      "market": "코스닥",
-      "sector": "부동산·리츠",
-      "price": 462,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.0112,
-      "shares": 24277540,
-      "induty_code": "681",
-      "categories": [
-        "부동산·리츠"
-      ],
-      "rank": 2600
-    },
-    {
       "ticker": "149010",
       "name": "아이케이세미콘",
       "name_en": "IK Semicon Co., Ltd.",
@@ -46883,6 +46865,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "2611",
       "categories": [
         "반도체"
+      ],
+      "rank": 2600
+    },
+    {
+      "ticker": "001000",
+      "name": "신라섬유",
+      "name_en": "SillaTextile",
+      "market": "코스닥",
+      "sector": "부동산·리츠",
+      "price": 462,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.0112,
+      "shares": 24277540,
+      "induty_code": "681",
+      "categories": [
+        "부동산·리츠"
       ],
       "rank": 2601
     },
@@ -46977,24 +46977,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2606
     },
     {
-      "ticker": "043100",
-      "name": "알파AI",
-      "name_en": "Alpha AI Co.,Ltd.",
-      "market": "코스닥",
-      "sector": "전기장비",
-      "price": 520,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.0105,
-      "shares": 20110080,
-      "induty_code": "27192",
-      "categories": [
-        "전기장비"
-      ],
-      "rank": 2607
-    },
-    {
       "ticker": "086220",
       "name": "광동헬스바이오",
       "name_en": "Kwangdong Healthbio Co., Ltd.",
@@ -47009,6 +46991,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "108",
       "categories": [
         "식음료"
+      ],
+      "rank": 2607
+    },
+    {
+      "ticker": "043100",
+      "name": "알파AI",
+      "name_en": "Alpha AI Co.,Ltd.",
+      "market": "코스닥",
+      "sector": "전기장비",
+      "price": 520,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.0105,
+      "shares": 20110080,
+      "induty_code": "27192",
+      "categories": [
+        "전기장비"
       ],
       "rank": 2608
     },
@@ -47103,24 +47103,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2613
     },
     {
-      "ticker": "145210",
-      "name": "다이나믹디자인",
-      "name_en": "Dynamic Design Co., LTD.",
-      "market": "코스피",
-      "sector": "기계·장비",
-      "price": 2240,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.0095,
-      "shares": 4223666,
-      "induty_code": "292",
-      "categories": [
-        "기계·장비"
-      ],
-      "rank": 2614
-    },
-    {
       "ticker": "106080",
       "name": "케이이엠텍",
       "name_en": "KEM Tech Corp.",
@@ -47135,6 +47117,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "2629",
       "categories": [
         "전자·부품"
+      ],
+      "rank": 2614
+    },
+    {
+      "ticker": "145210",
+      "name": "다이나믹디자인",
+      "name_en": "Dynamic Design Co., LTD.",
+      "market": "코스피",
+      "sector": "기계·장비",
+      "price": 2240,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.0095,
+      "shares": 4223666,
+      "induty_code": "292",
+      "categories": [
+        "기계·장비"
       ],
       "rank": 2615
     },
@@ -47481,24 +47481,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2634
     },
     {
-      "ticker": "276040",
-      "name": "스코넥",
-      "name_en": "SKONEC ENTERTAINMENT Co., Ltd.",
-      "market": "코스닥",
-      "sector": "게임",
-      "price": 327,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.0071,
-      "shares": 21630335,
-      "induty_code": "5821",
-      "categories": [
-        "게임"
-      ],
-      "rank": 2635
-    },
-    {
       "ticker": "178600",
       "name": "대동고려삼",
       "name_en": "DAEDONG KOREA GINSENG CO.,LTD.",
@@ -47514,7 +47496,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "식음료"
       ],
-      "rank": 2636
+      "rank": 2635
     },
     {
       "ticker": "066830",
@@ -47532,25 +47514,25 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "화학"
       ],
-      "rank": 2637
+      "rank": 2636
     },
     {
-      "ticker": "199730",
-      "name": "바이오인프라",
-      "name_en": "BioInfra Co.,Ltd.",
+      "ticker": "276040",
+      "name": "스코넥",
+      "name_en": "SKONEC ENTERTAINMENT Co., Ltd.",
       "market": "코스닥",
-      "sector": "바이오·제약",
-      "price": 1315,
-      "change": -13.09,
-      "volume": 108383,
-      "trading_value": 145168817,
-      "mcap": 0.0064,
-      "shares": 4864367,
-      "induty_code": "70113",
+      "sector": "게임",
+      "price": 327,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.0071,
+      "shares": 21630335,
+      "induty_code": "5821",
       "categories": [
-        "바이오·제약"
+        "게임"
       ],
-      "rank": 2638
+      "rank": 2637
     },
     {
       "ticker": "234070",
@@ -47567,6 +47549,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "76310",
       "categories": [
         "기타"
+      ],
+      "rank": 2638
+    },
+    {
+      "ticker": "199730",
+      "name": "바이오인프라",
+      "name_en": "BioInfra Co.,Ltd.",
+      "market": "코스닥",
+      "sector": "바이오·제약",
+      "price": 1315,
+      "change": -13.09,
+      "volume": 108383,
+      "trading_value": 145168817,
+      "mcap": 0.0064,
+      "shares": 4864367,
+      "induty_code": "70113",
+      "categories": [
+        "바이오·제약"
       ],
       "rank": 2639
     },
@@ -47607,24 +47607,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2641
     },
     {
-      "ticker": "046070",
-      "name": "코다코",
-      "name_en": "KODACO CO., LTD",
-      "market": "코스닥",
-      "sector": "자동차",
-      "price": 410,
-      "change": -99.5,
-      "volume": 6380367,
-      "trading_value": 3177762267,
-      "mcap": 0.0058,
-      "shares": 14099576,
-      "induty_code": "303",
-      "categories": [
-        "자동차"
-      ],
-      "rank": 2642
-    },
-    {
       "ticker": "253610",
       "name": "루트락",
       "name_en": "RootLoc Co., Ltd.",
@@ -47640,7 +47622,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "유통·소비재"
       ],
-      "rank": 2643
+      "rank": 2642
     },
     {
       "ticker": "199290",
@@ -47658,7 +47640,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2644
+      "rank": 2643
     },
     {
       "ticker": "136660",
@@ -47675,6 +47657,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "2927",
       "categories": [
         "반도체"
+      ],
+      "rank": 2644
+    },
+    {
+      "ticker": "046070",
+      "name": "코다코",
+      "name_en": "KODACO CO., LTD",
+      "market": "코스닥",
+      "sector": "자동차",
+      "price": 410,
+      "change": -99.5,
+      "volume": 6380367,
+      "trading_value": 3177762267,
+      "mcap": 0.0058,
+      "shares": 14099576,
+      "induty_code": "303",
+      "categories": [
+        "자동차"
       ],
       "rank": 2645
     },
@@ -47733,24 +47733,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2648
     },
     {
-      "ticker": "044180",
-      "name": "KD",
-      "name_en": "KD Corporation",
-      "market": "코스닥",
-      "sector": "건설·건자재",
-      "price": 205,
-      "change": 0.0,
-      "volume": 0,
-      "trading_value": 0,
-      "mcap": 0.0055,
-      "shares": 26717799,
-      "induty_code": "411",
-      "categories": [
-        "건설·건자재"
-      ],
-      "rank": 2649
-    },
-    {
       "ticker": "447690",
       "name": "아이오바이오",
       "name_en": "AIOBIO Co., Ltd.",
@@ -47766,7 +47748,7 @@ window.KOS_LIVE_DATA = {
       "categories": [
         "전기장비"
       ],
-      "rank": 2650
+      "rank": 2649
     },
     {
       "ticker": "311960",
@@ -47783,6 +47765,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "58222",
       "categories": [
         "IT·소프트웨어"
+      ],
+      "rank": 2650
+    },
+    {
+      "ticker": "044180",
+      "name": "KD",
+      "name_en": "KD Corporation",
+      "market": "코스닥",
+      "sector": "건설·건자재",
+      "price": 205,
+      "change": 0.0,
+      "volume": 0,
+      "trading_value": 0,
+      "mcap": 0.0055,
+      "shares": 26717799,
+      "induty_code": "411",
+      "categories": [
+        "건설·건자재"
       ],
       "rank": 2651
     },
@@ -48057,24 +48057,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2666
     },
     {
-      "ticker": "025870",
-      "name": "신라에스지",
-      "name_en": "SILLA SG CO., LTD.",
-      "market": "코스닥",
-      "sector": "유통·소비재",
-      "price": 905,
-      "change": -11.1,
-      "volume": 259686,
-      "trading_value": 248368563,
-      "mcap": 0.0036,
-      "shares": 4000000,
-      "induty_code": "463",
-      "categories": [
-        "유통·소비재"
-      ],
-      "rank": 2667
-    },
-    {
       "ticker": "121060",
       "name": "유니포인트",
       "name_en": "UNIPOINT Corp.",
@@ -48089,6 +48071,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "620",
       "categories": [
         "IT·소프트웨어"
+      ],
+      "rank": 2667
+    },
+    {
+      "ticker": "025870",
+      "name": "신라에스지",
+      "name_en": "SILLA SG CO., LTD.",
+      "market": "코스닥",
+      "sector": "유통·소비재",
+      "price": 905,
+      "change": -11.1,
+      "volume": 259686,
+      "trading_value": 248368563,
+      "mcap": 0.0036,
+      "shares": 4000000,
+      "induty_code": "463",
+      "categories": [
+        "유통·소비재"
       ],
       "rank": 2668
     },
@@ -48183,24 +48183,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2673
     },
     {
-      "ticker": "312610",
-      "name": "에이에프더블류",
-      "name_en": "A.F.W Co., Ltd",
-      "market": "코스닥",
-      "sector": "철강·금속",
-      "price": 152,
-      "change": -26.21,
-      "volume": 2725520,
-      "trading_value": 519943040,
-      "mcap": 0.0031,
-      "shares": 20256888,
-      "induty_code": "242",
-      "categories": [
-        "철강·금속"
-      ],
-      "rank": 2674
-    },
-    {
       "ticker": "245450",
       "name": "씨앤에스링크",
       "name_en": "CNSLINK Co., Ltd",
@@ -48215,6 +48197,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "264",
       "categories": [
         "전자·부품"
+      ],
+      "rank": 2674
+    },
+    {
+      "ticker": "312610",
+      "name": "에이에프더블류",
+      "name_en": "A.F.W Co., Ltd",
+      "market": "코스닥",
+      "sector": "철강·금속",
+      "price": 152,
+      "change": -26.21,
+      "volume": 2725520,
+      "trading_value": 519943040,
+      "mcap": 0.0031,
+      "shares": 20256888,
+      "induty_code": "242",
+      "categories": [
+        "철강·금속"
       ],
       "rank": 2675
     },
@@ -48237,24 +48237,6 @@ window.KOS_LIVE_DATA = {
       "rank": 2676
     },
     {
-      "ticker": "008290",
-      "name": "원풍물산",
-      "name_en": "WonpungMulsan",
-      "market": "코스닥",
-      "sector": "섬유·패션·생활",
-      "price": 136,
-      "change": -45.16,
-      "volume": 8691425,
-      "trading_value": 1241816468,
-      "mcap": 0.0028,
-      "shares": 20346839,
-      "induty_code": "14111",
-      "categories": [
-        "섬유·패션·생활"
-      ],
-      "rank": 2677
-    },
-    {
       "ticker": "390110",
       "name": "애니메디솔루션",
       "name_en": "anymedi Inc.",
@@ -48269,6 +48251,24 @@ window.KOS_LIVE_DATA = {
       "induty_code": "27199",
       "categories": [
         "바이오·제약"
+      ],
+      "rank": 2677
+    },
+    {
+      "ticker": "008290",
+      "name": "원풍물산",
+      "name_en": "WonpungMulsan",
+      "market": "코스닥",
+      "sector": "섬유·패션·생활",
+      "price": 136,
+      "change": -45.16,
+      "volume": 8691425,
+      "trading_value": 1241816468,
+      "mcap": 0.0028,
+      "shares": 20346839,
+      "induty_code": "14111",
+      "categories": [
+        "섬유·패션·생활"
       ],
       "rank": 2678
     },
