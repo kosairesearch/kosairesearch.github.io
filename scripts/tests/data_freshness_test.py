@@ -326,6 +326,44 @@ with tempfile.TemporaryDirectory() as td:
     finally:
         os.chdir(cwd)
 
+print("⑨-2 시장 하나가 통째로 비면 상폐가 아니라 수집 구멍이다")
+# 실제로 냈던 사고다. pykrx 벌크를 켜면서 시장 목록에 코넥스를 빼먹었더니,
+# 코넥스 108종목이 '수집분에 없는 종목' = 상장폐지로 분류돼 사이트에서 사라졌다.
+# 108 은 기존 임계(150개)보다 작아 조용히 넘어갔다.
+import inspect                                                        # noqa: E402
+src_bulk = inspect.getsource(M.collect_pykrx_bulk)
+ok('"KONEX"' in src_bulk and '"코넥스"' in src_bulk,
+   "★ 벌크 수집이 코넥스도 훑는다")
+
+with tempfile.TemporaryDirectory() as td:
+    cwd = os.getcwd()
+    os.chdir(td)
+    try:
+        Path("data").mkdir()
+        kospi = [dict(rec(str(i).zfill(6)), market="코스피") for i in range(600)]
+        konex = [dict(rec(str(700 + i).zfill(6)), market="코넥스") for i in range(108)]
+        Path("data/stocks.js").write_text(
+            "window.KOS_LIVE_DATA = " + json.dumps(
+                {"lastUpdated": "x", "dataDate": "20260907",
+                 "stocks": kospi + konex}) + ";", encoding="utf-8")
+
+        fresh = {r["ticker"]: dict(r, **{M.SRC_DATE_KEY: "20260909"}) for r in kospi}
+        M.get_latest_trading_date = lambda: "20260909"
+        M.collect_pykrx = lambda d: (dict(fresh), "20260909")
+        M.enrich_with_dart = lambda r: r          # DART 호출 차단
+        M.apply_categories = lambda r: r
+        M.main()
+
+        raw = Path("data/stocks.js").read_text(encoding="utf-8")
+        got = json.loads(raw[raw.find("{"): raw.rfind("}") + 1])
+        tickers = {s["ticker"] for s in got["stocks"]}
+        kept = sum(1 for s in got["stocks"] if s["market"] == "코넥스")
+        ok(got["dataDate"] == "20260909", "새 거래일로 갱신은 된다", got["dataDate"])
+        ok(kept == 108, "★ 수집 못 한 시장의 종목이 지워지지 않는다", f"코넥스 {kept}개")
+        ok(len(tickers) == 708, "전체 종목 수가 유지된다", len(tickers))
+    finally:
+        os.chdir(cwd)
+
 print("⑩ 모듈 표면 — 함수를 통째로 갈아끼우다 상수를 흘리지 않았는지")
 # 실제로 한 번 흘렸다. collect_pykrx 를 정규식으로 잘라 바꾸면서 바로 뒤에
 # 붙어 있던 CORP_CLS_MARKET 이 같이 지워졌고, 962줄에서 그걸 쓰는 DART 보강이

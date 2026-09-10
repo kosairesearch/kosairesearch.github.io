@@ -468,7 +468,11 @@ def collect_pykrx_bulk(date, names=None):
     names = names or {}
     results = {}
 
-    for market_code, market_label in [("KOSPI", "코스피"), ("KOSDAQ", "코스닥")]:
+    # 코넥스를 빼면 안 된다. 캐시 CSV 는 STK·KSQ·KNX 를 모두 담고 있어서, 벌크가
+    # 코스피·코스닥만 훑으면 코넥스 종목이 '수집분에 없는 종목'이 되어 상폐로
+    # 오인돼 지워진다. 실제로 2026-09-10 실행에서 코넥스 108종목이 그렇게 날아갔다.
+    for market_code, market_label in [("KOSPI", "코스피"), ("KOSDAQ", "코스닥"),
+                                      ("KONEX", "코넥스")]:
         try:
             print(f"    [{market_label}] 시가총액 조회...")
             cap = krx.get_market_cap_by_ticker(date, market=market_code)
@@ -1442,6 +1446,24 @@ def main():
     before = len(existing)
     if len(results) >= 500:
         dropped = [tk for tk in existing if tk not in results]
+
+        # 한 시장의 종목이 '전부' 사라졌으면 그건 상장폐지가 아니라 수집 경로의
+        # 구멍이다. 시장 하나가 하루아침에 통째로 없어지는 일은 없다. 개수만
+        # 보는 150개 임계로는 이걸 못 잡는다 — 코넥스 108종목이 그 아래라
+        # 조용히 지워졌다.
+        by_market = {}
+        for tk, st in existing.items():
+            by_market.setdefault(st.get("market") or "?", []).append(tk)
+        gap = {mk for mk, tks in by_market.items()
+               if tks and all(tk not in results for tk in tks)}
+        if gap:
+            rescued = [tk for tk in dropped if (existing[tk].get("market") or "?") in gap]
+            log_summary(f"- ⚠️ 시장 전체가 수집분에 없다({sorted(gap)}) — 상폐가 아니라 "
+                        f"수집 구멍으로 보고 {len(rescued)}개 보존")
+            for tk in rescued:
+                results[tk] = existing[tk]
+            dropped = [tk for tk in dropped if tk not in set(rescued)]
+
         if len(dropped) > 150:
             log_summary(f"- ⚠️ 사라진 종목 {len(dropped)}개로 과다 — 상폐 제외 보류, 병합 보존")
             existing.update(results)
