@@ -478,9 +478,16 @@ def collect_pykrx_bulk(date, names=None):
             cap = krx.get_market_cap_by_ticker(date, market=market_code)
             print(f"    [{market_label}] cap: {len(cap)}행, 컬럼: {list(cap.columns)}")
 
-            print(f"    [{market_label}] 기본지표 조회...")
-            fund = krx.get_market_fundamental_by_ticker(date, market=market_code)
-            print(f"    [{market_label}] fund: {len(fund)}행, 컬럼: {list(fund.columns)}")
+            # 기본지표(PER·PBR·EPS·BPS)는 '있으면 좋은' 값이다. 게시 필드에도 안
+            # 들어간다(PUBLIC_STOCK_FIELDS). 그런데 KRX 는 코넥스에 이 값을 공시하지
+            # 않아서 pykrx 가 KeyError 를 던지고, 그 하나 때문에 시장 루프 전체가
+            # 버려져 코넥스 108종목이 통째로 사라졌다. 없으면 없는 대로 간다.
+            try:
+                fund = krx.get_market_fundamental_by_ticker(date, market=market_code)
+                print(f"    [{market_label}] fund: {len(fund)}행, 컬럼: {list(fund.columns)}")
+            except Exception as e:
+                fund = None
+                print(f"    [{market_label}] 기본지표 없음(무시): {type(e).__name__}: {e}")
 
             print(f"    [{market_label}] OHLCV 조회...")
             ohlcv = krx.get_market_ohlcv_by_ticker(date, market=market_code)
@@ -504,7 +511,7 @@ def collect_pykrx_bulk(date, names=None):
                     continue
 
                 cap_row   = cap.loc[ticker]   if ticker in cap.index   else {}
-                fund_row  = fund.loc[ticker]  if ticker in fund.index  else {}
+                fund_row  = fund.loc[ticker]  if (fund is not None and ticker in fund.index) else {}
                 ohlcv_row = ohlcv.loc[ticker] if ticker in ohlcv.index else {}
 
                 mcap_won = int(cap_row.get(mcap_col, 0) if hasattr(cap_row, "get") else 0)
