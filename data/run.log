@@ -1,61 +1,13 @@
-Traceback (most recent call last):
-  File "/home/runner/work/kosairesearch.github.io/kosairesearch.github.io/scripts/collect_data.py", line 485, in collect_pykrx_bulk
-    cap = krx.get_market_cap_by_ticker(date, market=market_code)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pykrx/stock/stock_api.py", line 32, in wrapper
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pykrx/stock/stock_api.py", line 425, in get_market_cap_by_ticker
-    holiday = (df[["종가", "시가총액", "거래량", "거래대금"]] == 0).all(axis=None)
-               ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/frame.py", line 4119, in __getitem__
-    indexer = self.columns._get_indexer_strict(key, "columns")[1]
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6212, in _get_indexer_strict
-    self._raise_if_missing(keyarr, indexer, axis_name)
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6261, in _raise_if_missing
-    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
-KeyError: "None of [Index(['종가', '시가총액', '거래량', '거래대금'], dtype='object')] are in the [columns]"
-Traceback (most recent call last):
-  File "/home/runner/work/kosairesearch.github.io/kosairesearch.github.io/scripts/collect_data.py", line 485, in collect_pykrx_bulk
-    cap = krx.get_market_cap_by_ticker(date, market=market_code)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pykrx/stock/stock_api.py", line 32, in wrapper
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pykrx/stock/stock_api.py", line 425, in get_market_cap_by_ticker
-    holiday = (df[["종가", "시가총액", "거래량", "거래대금"]] == 0).all(axis=None)
-               ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/frame.py", line 4119, in __getitem__
-    indexer = self.columns._get_indexer_strict(key, "columns")[1]
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6212, in _get_indexer_strict
-    self._raise_if_missing(keyarr, indexer, axis_name)
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6261, in _raise_if_missing
-    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
-KeyError: "None of [Index(['종가', '시가총액', '거래량', '거래대금'], dtype='object')] are in the [columns]"
-Traceback (most recent call last):
-  File "/home/runner/work/kosairesearch.github.io/kosairesearch.github.io/scripts/collect_data.py", line 485, in collect_pykrx_bulk
-    cap = krx.get_market_cap_by_ticker(date, market=market_code)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pykrx/stock/stock_api.py", line 32, in wrapper
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pykrx/stock/stock_api.py", line 425, in get_market_cap_by_ticker
-    holiday = (df[["종가", "시가총액", "거래량", "거래대금"]] == 0).all(axis=None)
-               ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/frame.py", line 4119, in __getitem__
-    indexer = self.columns._get_indexer_strict(key, "columns")[1]
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6212, in _get_indexer_strict
-    self._raise_if_missing(keyarr, indexer, axis_name)
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6261, in _raise_if_missing
-    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
-KeyError: "None of [Index(['종가', '시가총액', '거래량', '거래대금'], dtype='object')] are in the [columns]"
+DART_KEY_SET=true (len=40)
+=== 스크립트 시작 Thu Sep 10 15:18:17 UTC 2026 ===
 =======================================================
   KOS ai 데이터 수집 시작
 =======================================================
-KRX 로그인 실패: KRX_ID 또는 KRX_PW 환경 변수가 설정되지 않았습니다.
+KRX 로그인 시도...
+  로그인 ID: qjawnsdla
+KRX 로그인 완료.
+  로그인 시간: 2026-09-10 15:18:21
+  만료 시간: 2026-09-10 16:18:21
   기준 거래일: 20260910  |  현재 게시본: 20260910
 
 ## KOS ai 데이터 수집 — 기준 거래일 20260910
@@ -86,5 +38,12 @@ Error occurred in get_stock_name: 'NoneType' object is not subscriptable
   [DART] 영문명 미보강 0개 종목 DART 수집 중...
   [DART] 영문명·시총 보강 완료
   [분류] AI 업종 캐시 2710개 적용
-  [분류] 카테고리 부여 완료 — 기타 0/117개
-❌ 시가총액>0 종목 0/117개로 비정상(DART 수집 실패 추정) — stocks.js 갱신 건너뜀, 기존 데이터 유지
+  [분류] 카테고리 부여 완료 — 기타 35/2686개
+- 전 종목 수집 2686개(기존 2686) — 상폐 자동 정리 적용
+✅ data/stocks.js 생성 완료 — 2686개 종목 (2026-09-11 00:18 KST)
+- 최종 출력: 2686개 종목 — dataDate 20260910
+=======================================================
+게시본: dataDate=20260910  종목 2686개  lastUpdated=2026-09-11 00:18
+⚠️ valuation.js(20260907)가 시세(20260910)보다 뒤처짐 — collect_valuation 이 아직 안 돈 정상 시차(최대 2시간).
+KRX 로그인 실패: KRX_ID 또는 KRX_PW 환경 변수가 설정되지 않았습니다.
+✅ 신선도 정상 — 최신 거래일 20260910 종가가 게시돼 있다.
