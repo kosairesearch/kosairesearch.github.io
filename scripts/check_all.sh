@@ -75,6 +75,11 @@ run "생성기 분모"   python3 scripts/tests/bps_denominator_test.py
 run "리포트 파이프라인" python3 scripts/tests/reports_pipeline_test.py
 # 분기 창·TTM 롤포워드 — 시즌마다 최신 분기가 표에 들어오는지.
 run "분기 창"       python3 scripts/test_quant_quarters.py
+# 시세 원본(FinanceData KRX 캐시 CSV)이 2026-09-08 부터 404 가 됐는데, 수집기가
+# 조용히 8일을 거슬러 올라가 09-07 CSV 를 읽고서 dataDate 에는 09-09 를 찍었다.
+# 2,686 종목 전부가 사흘간 틀린 날짜를 달고 게시됐고 아무도 몰랐다. 라벨이
+# 데이터에서 나오는지, 원본이 죽으면 살아 있는 경로로 넘어가는지 여기서 본다.
+run "시세 신선도"   python3 scripts/tests/data_freshness_test.py
 
 echo
 if [ $bad -eq 0 ]; then
