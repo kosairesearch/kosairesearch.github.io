@@ -67,6 +67,15 @@ jobs:
           echo "=== 스크립트 시작 $(date -u) ===" >> data/run.log
           python scripts/collect_data.py 2>&1 | tee -a data/run.log
 
+      # 결과물만 보고 판정하는 독립 감시선. 수집기가 조용히 실패하거나 아예 안
+      # 돌아도 여기서 드러난다. 낡으면 이 단계가 실패해 실행이 빨갛게 남는다.
+      # (커밋 단계는 if: always() 라 정직한 상태 그대로 게시된다.)
+      - name: 시세 신선도 점검
+        if: always()
+        run: |
+          set -o pipefail
+          python scripts/check_data_freshness.py 2>&1 | tee -a data/run.log
+
       - name: GEO 정적 리포트 페이지 생성 (r/*.html — AI 크롤러용)
         if: always()
         run: python scripts/generate_geo_pages.py || true

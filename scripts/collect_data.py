@@ -28,6 +28,37 @@ ENRICH_TOP = int(os.getenv("ENRICH_TOP", "3000") or "3000")
 # GitHub Actions Step Summary 지원
 STEP_SUMMARY = os.getenv("GITHUB_STEP_SUMMARY")
 
+# ── 기준일(종가 확정일) 판정 규칙 ────────────────────────────────────────────
+# 한국 정규장 마감은 15:30 KST. 그 전에 조회하면 pykrx/KRX는 '당일' 행을 주지만
+# 그 값은 장중 체결가이지 종가가 아니다. 그것을 종가로 저장하면 되돌릴 수 없는
+# 오염이 되므로, 당일은 MARKET_CLOSE_HOUR 이후에만 기준일 후보로 삼는다.
+KST = datetime.timezone(datetime.timedelta(hours=9))
+MARKET_CLOSE_HOUR = 16
+
+# 시세 레코드에 '이 값이 어느 거래일 것인지'를 새겨 두는 키.
+# dataDate 라벨은 이 값에서만 유도한다(build_output 참조). 요청 날짜를 라벨로
+# 쓰던 옛 구조에서는 데이터와 라벨이 어긋나도 아무도 몰랐다.
+SRC_DATE_KEY = "_src_date"
+
+# 게시되는 시세 레코드의 필드는 여기서 못 박는다.
+# 수집 경로마다 딸려오는 필드가 다르다 — pykrx 벌크는 KRX 의 PER·PBR·EPS·BPS 를
+# 함께 준다. 어떤 날은 있고 어떤 날은 없는 필드가 생기면 나중에 그걸 읽는 코드가
+# 조용히 틀린 값을 쓴다. 특히 KRX 의 PBR 은 우리가 따로 계산해 일부 종목에서
+# 일부러 가려 둔 값과 충돌한다. 경로가 무엇이든 게시물의 모양은 하나로 고정한다.
+PUBLIC_STOCK_FIELDS = (
+    "ticker", "name", "name_en", "market", "sector", "price", "change",
+    "volume", "trading_value", "mcap", "shares", "induty_code", "categories", "rank",
+)
+
+
+def now_kst():
+    """KST 현재 시각. GitHub Actions 러너는 UTC라 date.today()를 쓰면 날짜가 밀린다."""
+    return datetime.datetime.now(KST)
+
+
+def today_kst():
+    return now_kst().date()
+
 # DART에서 영문명을 못 가져오는 특수 티커(영문/숫자 혼합 등) 수동 영문명.
 NAME_EN_OVERRIDE = {
     "0126Z0": "Samsung Epis Holdings",
@@ -374,27 +405,67 @@ def ksic_name(code, fallback="기타"):
     return primary_category(code, "", fallback)
 
 
+def candidate_trading_dates(limit=12):
+    """종가가 확정됐을 수 있는 거래일 후보를 최신순으로 돌려준다(KST 기준).
+
+    당일은 정규장 마감 후(MARKET_CLOSE_HOUR~)에만 후보에 넣는다 — 장중 시세가
+    종가로 굳는 사고를 원천 차단하기 위해서다.
+    """
+    now = now_kst()
+    start = 0 if now.hour >= MARKET_CLOSE_HOUR else 1
+    out = []
+    for days_back in range(start, start + limit + 5):
+        d = now.date() - datetime.timedelta(days=days_back)
+        if d.weekday() >= 5:      # 토·일 제외(공휴일은 데이터 유무로 걸러진다)
+            continue
+        out.append(d.strftime("%Y%m%d"))
+        if len(out) >= limit:
+            break
+    return out
+
+
 def get_latest_trading_date():
-    """가장 최근 영업일을 반환합니다."""
+    """종가가 확정된 가장 최근 거래일(YYYYMMDD)을 반환. 판정 불가면 None.
+
+    ⚠ 판정 불가일 때 예전에는 '오늘'을 돌려줬다. 그 값이 그대로 dataDate 라벨로
+    쓰이는 바람에 데이터가 없는 날짜를 라벨로 찍는 사고가 났다. 이제는 None을
+    돌려주고, 호출부는 아무것도 쓰지 않은 채 정상 종료한다.
+
+    판정 경로는 서로 독립된 둘 — pykrx(KRX 직접)와 KRX 캐시 CSV(파일명이 날짜).
+    한쪽이 죽어도 다른 쪽으로 기준일을 잡는다.
+    """
+    cands = candidate_trading_dates()
+
+    try:
+        from pykrx import stock as krx
+        for datestr in cands:
+            try:
+                df = krx.get_market_ohlcv_by_date(datestr, datestr, "005930")
+                if df is not None and not df.empty:
+                    return datestr
+            except Exception:
+                continue
+    except Exception as e:
+        print(f"  [기준일] pykrx 경로 실패: {type(e).__name__}: {e}")
+
+    print("  [기준일] pykrx로 판정 실패 — KRX 캐시 CSV 로 재시도")
+    for datestr in cands:
+        if krx_cache_exists(datestr):
+            return datestr
+
+    print("  [기준일] ❌ 두 경로 모두 실패 — 기준일 판정 불가")
+    return None
+
+
+def collect_pykrx_bulk(date, names=None):
+    """pykrx 벌크 API로 전체 시장 데이터를 수집합니다.
+
+    names: {ticker: 종목명} 를 주면 종목명 조회를 건너뛴다. 전 종목에 대해
+    get_market_ticker_name() 을 개별 호출하면 2,700회 왕복이라 느리고 잘 끊긴다.
+    """
     from pykrx import stock as krx
-    for days_back in range(10):
-        date = datetime.date.today() - datetime.timedelta(days=days_back)
-        if date.weekday() >= 5:
-            continue
-        datestr = date.strftime("%Y%m%d")
-        try:
-            df = krx.get_market_ohlcv_by_date(datestr, datestr, "005930")
-            if df is not None and not df.empty:
-                return datestr
-        except Exception:
-            continue
-    return datetime.date.today().strftime("%Y%m%d")
 
-
-def collect_pykrx_bulk(date):
-    """pykrx 벌크 API로 전체 시장 데이터를 수집합니다."""
-    from pykrx import stock as krx
-
+    names = names or {}
     results = {}
 
     for market_code, market_label in [("KOSPI", "코스피"), ("KOSDAQ", "코스닥")]:
@@ -424,7 +495,7 @@ def collect_pykrx_bulk(date):
             tvol_col   = next((c for c in ohlcv.columns if "거래대금" in c), "거래대금")
 
             for ticker in cap.index:
-                name = krx.get_market_ticker_name(ticker)
+                name = names.get(ticker) or krx.get_market_ticker_name(ticker)
                 if not name:
                     continue
 
@@ -454,6 +525,7 @@ def collect_pykrx_bulk(date):
                     "rev":  0.0,
                     "opm":  0.0,
                     "debt": 0.0,
+                    SRC_DATE_KEY: date,
                 }
 
             market_count = sum(1 for v in results.values() if v["market"] == market_label)
@@ -645,6 +717,7 @@ def collect_pykrx_fallback(date, universe=None):
                 "trading_value":tvol,
                 "mcap":  0.0,
                 "shares":0,
+                SRC_DATE_KEY: date,
             }
             time.sleep(0.05)
 
@@ -671,11 +744,37 @@ KRX_CACHE_URL = ("https://raw.githubusercontent.com/FinanceData/fdr_krx_data_cac
                  "refs/heads/master/data/listing/krx/{d}.csv")
 
 
-def collect_krx_cache(date):
+def _krx_cache_url(datestr):
+    """YYYYMMDD → 캐시 CSV URL."""
+    d = datetime.datetime.strptime(str(datestr), "%Y%m%d").strftime("%Y-%m-%d")
+    return KRX_CACHE_URL.format(d=d)
+
+
+def krx_cache_exists(datestr):
+    """해당 거래일의 캐시 CSV가 실제로 게시됐는지만 확인한다(기준일 판정용)."""
+    import requests
+    try:
+        r = requests.get(_krx_cache_url(datestr), timeout=20, stream=True)
+        ok = r.status_code == 200 and int(r.headers.get("Content-Length") or 10**6) > 1000
+        r.close()
+        return ok
+    except Exception:
+        return False
+
+
+def collect_krx_cache(date, max_back=0):
     """FinanceData KRX 캐시 CSV(전 종목)에서 시세·시총·주식수를 수집합니다.
 
-    raw.githubusercontent.com 에서 받으므로 KRX 로그인/직접호출이 필요 없고
-    GitHub Actions에서도 동작합니다. date(YYYYMMDD) 당일이 없으면 최근 거래일로 폴백.
+    반환: (results, used) — used 는 데이터가 '실제로' 속한 거래일(YYYYMMDD).
+    확보 실패 시 ({}, None).
+
+    ⚠ 과거 사고: 이 함수가 요청 날짜의 CSV가 없으면 최대 8일을 조용히 거슬러
+    올라가 옛 CSV를 읽어놓고, 호출부는 '요청 날짜'를 dataDate 로 찍었다. 그래서
+    2026-09-07 종가가 09-08·09-09 종가로 3일간 게시됐다. 재발 방지를 위해
+    ① 실제로 읽은 날짜(used)를 반드시 함께 돌려주고
+    ② 기본값은 max_back=0 — 요청한 날짜의 CSV만 받아들인다.
+    거슬러 올라가는 동작은 호출부가 max_back 을 명시할 때만, 그리고 그때도
+    used 라벨을 그대로 달고 나간다.
     """
     import io
     import requests
@@ -684,23 +783,27 @@ def collect_krx_cache(date):
     try:
         base = datetime.datetime.strptime(str(date), "%Y%m%d").date()
     except Exception:
-        base = (datetime.datetime.utcnow() + datetime.timedelta(hours=9)).date()
+        print(f"  [krx-cache] 기준일 형식 오류: {date!r}")
+        return {}, None
 
     df, used = None, None
-    for back in range(0, 8):
-        d = (base - datetime.timedelta(days=back)).strftime("%Y-%m-%d")
-        url = KRX_CACHE_URL.format(d=d)
+    for back in range(0, max_back + 1):
+        d = base - datetime.timedelta(days=back)
+        if d.weekday() >= 5:
+            continue
+        ds = d.strftime("%Y%m%d")
         try:
-            r = requests.get(url, timeout=20)
+            r = requests.get(_krx_cache_url(ds), timeout=20)
             if r.status_code == 200 and len(r.text) > 1000:
                 df = pd.read_csv(io.StringIO(r.text), index_col=0, dtype={"Code": str})
-                used = d
+                used = ds
                 break
+            print(f"    [krx-cache] {ds} 미게시(HTTP {r.status_code})")
         except Exception as e:
-            print(f"    [krx-cache] {d} 실패: {type(e).__name__}: {e}")
-    if df is None:
+            print(f"    [krx-cache] {ds} 실패: {type(e).__name__}: {e}")
+    if df is None or used is None:
         print("  [krx-cache] 캐시 CSV 확보 실패")
-        return {}
+        return {}, None
 
     print(f"  [krx-cache] {used} CSV {len(df)}행 로드")
     results = {}
@@ -740,50 +843,81 @@ def collect_krx_cache(date):
             "trading_value": gi("Amount"),
             "mcap": round(gf("Marcap") / 1e12, 4),
             "shares": gi("Stocks"),
+            SRC_DATE_KEY: used,
         }
     print(f"  [krx-cache] 가격 유효 {len(results)}개 종목 (우선주·스팩 {skipped}개 제외)")
-    return results
+    return results, used
+
+
+MIN_BULK_TICKERS = 500
 
 
 def collect_pykrx(date):
-    """시세 데이터를 수집합니다.
+    """`date` 거래일의 시세를 수집한다. 반환: (results, src_date).
 
-    1) FinanceData KRX 캐시(전 종목, 로그인·KRX직접호출 불필요) — 기본·최선
-    2) KRX_ID/KRX_PW 설정 시 전종목 벌크 API
-    3) 개별 OHLCV 폴백(SECTOR_MAP 대상) + DART 시총
+    src_date 는 데이터가 '실제로' 속한 거래일이다. date 와 다를 수 있고, 다를
+    때에도 그 사실을 숨기지 않는다 — 호출부가 라벨과 신선도 판정에 쓴다.
+
+    경로(앞이 실패하면 다음으로):
+      1) KRX 캐시 CSV — 요청한 거래일 파일만
+      2) pykrx 전종목 벌크 — 여기서 쓰는 API는 로그인이 필요 없다
+      3) pykrx 개별 OHLCV 폴백
+      4) 최후: 캐시를 과거로 되짚되, 찾은 날짜를 그대로 라벨로 단다
     """
-    # 1) KRX GitHub 캐시 — 전 종목
+    def enough(r):
+        return len([v for v in r.values() if v.get("price", 0) > 0]) >= MIN_BULK_TICKERS
+
+    # 1) KRX GitHub 캐시 — 요청한 거래일의 CSV 만 받는다(과거분 조용한 대체 금지)
     try:
-        results = collect_krx_cache(date)
+        results, used = collect_krx_cache(date, max_back=0)
     except Exception as e:
         print(f"  [krx-cache] 오류: {type(e).__name__}: {e}")
-        results = {}
-    if len([v for v in results.values() if v.get("price", 0) > 0]) >= 500:
-        return results
-    print("  [pykrx] 캐시 부족 — 다음 경로 시도")
+        results, used = {}, None
+    if used == date and enough(results):
+        return results, used
+    print(f"  [수집] {date} 캐시 미확보 — pykrx 경로로 전환")
 
-    krx_login = bool(os.getenv("KRX_ID") and os.getenv("KRX_PW"))
+    # 2) pykrx 전종목 벌크.
+    #    예전에는 KRX_ID/KRX_PW 가 있을 때만 시도했다. 그런데 여기서 쓰는 pykrx
+    #    함수들은 공개 엔드포인트라 로그인이 필요 없다. 그 불필요한 조건 때문에
+    #    캐시가 죽었을 때 '살아 있는 경로'로 넘어가지 못하고 옛 데이터가 굳었다.
+    try:
+        names = {tk: v.get("name") for tk, v in load_existing_stocks().items() if v.get("name")}
+    except Exception:
+        names = {}
+    print(f"  [pykrx] {date} 전종목 벌크 수집 시도... (종목명 재사용 {len(names)}개)")
+    try:
+        bulk = collect_pykrx_bulk(date, names=names)
+    except Exception as e:
+        print(f"  [pykrx] 벌크 수집 오류: {type(e).__name__}: {e}")
+        bulk = {}
+    nvalid = len([v for v in bulk.values() if v.get("price", 0) > 0])
+    print(f"  [pykrx] 벌크 수집 결과: {len(bulk)}개 (가격 유효: {nvalid}개)")
+    if nvalid >= MIN_BULK_TICKERS:
+        return bulk, date
+    print("  [pykrx] 벌크 결과 부족 — 개별 폴백으로 전환")
 
-    if krx_login:
-        print(f"  [pykrx] {date} KRX 로그인 감지 — 전종목 벌크 수집 시도...")
-        try:
-            results = collect_pykrx_bulk(date)
-        except Exception as e:
-            print(f"  [pykrx] 벌크 수집 오류: {type(e).__name__}: {e}")
-            results = {}
-        nvalid = len([v for v in results.values() if v.get("price", 0) > 0])
-        print(f"  [pykrx] 벌크 수집 결과: {len(results)}개 (가격 유효: {nvalid}개)")
-        if nvalid >= 500:
-            return results
-        print("  [pykrx] 벌크 결과 부족 — 개별 폴백으로 전환")
-
+    # 3) 개별 OHLCV 폴백
     print(f"  [pykrx] {date} 개별 OHLCV 수집...")
-    universe = build_universe(date)
-    results = collect_pykrx_fallback(date, universe)
+    try:
+        universe = build_universe(date)
+        indiv = collect_pykrx_fallback(date, universe)
+    except Exception as e:
+        print(f"  [pykrx] 개별 폴백 오류: {type(e).__name__}: {e}")
+        indiv = {}
+    valid = [v for v in indiv.values() if v.get("price", 0) > 0]
+    print(f"  [pykrx] 수집 결과: {len(indiv)}개 (가격 유효: {len(valid)}개)")
+    if valid:
+        return indiv, date
 
-    valid = [v for v in results.values() if v["price"] > 0]
-    print(f"  [pykrx] 수집 결과: {len(results)}개 (가격 유효: {len(valid)}개)")
-    return results
+    # 4) 최후의 보루 — 캐시를 과거로 되짚는다. 단, 라벨은 실제로 읽은 날짜.
+    #    호출부가 '기존보다 새로울 때만' 채택하고, 목표 거래일과 다르면 경보한다.
+    print("  [수집] 살아 있는 경로 없음 — 캐시 과거분 최후 시도(라벨은 실제 날짜)")
+    try:
+        return collect_krx_cache(date, max_back=8)
+    except Exception as e:
+        print(f"  [krx-cache] 오류: {type(e).__name__}: {e}")
+        return {}, None
 
 
 CORP_CLS_MARKET = {"Y": "코스피", "K": "코스닥", "N": "코넥스", "E": "기타"}
@@ -1158,6 +1292,20 @@ def load_existing_stocks():
         return {}
 
 
+def load_existing_data_date():
+    """현재 게시된 data/stocks.js 의 dataDate(YYYYMMDD). 없으면 ""."""
+    p = Path("data/stocks.js")
+    if not p.exists():
+        return ""
+    try:
+        raw = p.read_text(encoding="utf-8")
+        obj = json.loads(raw[raw.find("{"): raw.rfind("}") + 1])
+        return str(obj.get("dataDate") or "")
+    except Exception as e:
+        print(f"  [merge] 기존 dataDate 로드 실패: {e}")
+        return ""
+
+
 def _is_noise(name):
     """우선주(우/우B/우C/우(전환) 등)·스팩 — 회사 리서치 universe에서 제외 대상."""
     return _is_pref_or_spac(name)
@@ -1185,8 +1333,27 @@ def build_output(results, date):
     for i, s in enumerate(stocks):
         s["rank"] = i + 1
 
-    now_kst = datetime.datetime.utcnow() + datetime.timedelta(hours=9)
-    last_updated = now_kst.strftime("%Y-%m-%d %H:%M")
+    # ── 라벨 위조 방지선 ─────────────────────────────────────────────────
+    # dataDate 는 '요청한 날짜'가 아니라 '데이터에 각인된 거래일'과 반드시 같아야
+    # 한다. 2026-09-07 종가에 09-08·09-09 라벨이 붙어 사흘간 게시된 사고가 바로
+    # 이 검증이 없어서 생겼다. 어긋나면 쓰지 않고 죽는다 — 기존 파일이 남는 편이
+    # 거짓 라벨이 붙은 파일보다 언제나 낫다.
+    src_dates = {st.get(SRC_DATE_KEY) for st in stocks if st.get(SRC_DATE_KEY)}
+    if not src_dates:
+        log_summary("❌ 시세 레코드에 거래일 각인이 없다 — 라벨을 보증할 수 없어 stocks.js 갱신 중단")
+        sys.exit(1)
+    if len(src_dates) > 1:
+        log_summary(f"❌ 서로 다른 거래일이 한 파일에 섞였다({sorted(src_dates)}) — stocks.js 갱신 중단")
+        sys.exit(1)
+    actual = src_dates.pop()
+    if str(date) != actual:
+        log_summary(f"❌ dataDate 라벨({date})과 실제 데이터 거래일({actual})이 다르다 — stocks.js 갱신 중단")
+        sys.exit(1)
+
+    # 경로별로 딸려온 잉여 필드와 내부 표식을 여기서 잘라낸다.
+    stocks = [{k: st[k] for k in PUBLIC_STOCK_FIELDS if k in st} for st in stocks]
+
+    last_updated = now_kst().strftime("%Y-%m-%d %H:%M")
 
     output = {
         "lastUpdated": last_updated,
@@ -1209,12 +1376,29 @@ def main():
     print("  KOS ai 데이터 수집 시작")
     print("=" * 55)
 
-    date = get_latest_trading_date()
-    print(f"  기준일: {date}\n")
-    log_summary(f"## KOS ai 데이터 수집 — {date}")
+    target = get_latest_trading_date()
+    published = load_existing_data_date()
 
-    results = collect_pykrx(date)
-    log_summary(f"- pykrx 수집: {len(results)}개 종목")
+    # 기준일을 못 정하면 아무것도 쓰지 않는다. 예전에는 이 자리에서 '오늘'을
+    # 억지로 만들어 썼고, 그 가짜 기준일이 그대로 라벨이 됐다.
+    if not target:
+        log_summary("⏭️ 기준 거래일 판정 불가 — 기존 데이터 유지(아무것도 쓰지 않음)")
+        return
+
+    print(f"  기준 거래일: {target}  |  현재 게시본: {published or '없음'}\n")
+    log_summary(f"## KOS ai 데이터 수집 — 기준 거래일 {target}")
+
+    results, src_date = collect_pykrx(target)
+    log_summary(f"- 시세 수집: {len(results)}개 종목 (데이터 거래일 {src_date or '확보 실패'})")
+
+    if not results or not src_date:
+        log_summary("⏭️ 시세 확보 실패 — 기존 데이터 유지(덮어쓰지 않음)")
+        return
+
+    # 회귀 금지: 이미 게시된 것보다 과거의 시세로 되돌아가지 않는다.
+    if published and src_date < published:
+        log_summary(f"⏭️ 수집분({src_date})이 게시본({published})보다 과거 — 갱신 건너뜀")
+        return
 
     # 안정 필드(영문명·업종코드) 이월: 캐시 수집엔 없으므로 기존 stocks.js 값을 미리
     # 채워, 이미 보강된 종목은 DART 재호출/유실 없이 보존하고 미보강분만 새로 수집.
@@ -1272,8 +1456,14 @@ def main():
         log_summary(f"- 병합(폴백): 기존 {before}개 + 신규수집 {len(results)}개 → {len(existing)}개")
         results = existing
 
-    count = build_output(results, date)
-    log_summary(f"- 최종 출력: {count}개 종목")
+    count = build_output(results, src_date)
+    log_summary(f"- 최종 출력: {count}개 종목 — dataDate {src_date}")
+
+    # 목표 거래일을 못 따라잡았으면 '정직하게 과거 날짜로' 게시하고 사실을 남긴다.
+    # 장 마감 직후엔 원본이 아직 안 올라와 흔히 생기는 정상 상황이라 여기서
+    # 실패시키지 않는다. 하루를 통째로 놓쳤는지는 check_data_freshness.py 가 판정한다.
+    if src_date != target:
+        log_summary(f"- ⚠️ 목표 거래일 {target} 미확보 — {src_date} 로 게시(라벨은 실제 날짜)")
 
     print("=" * 55)
 
