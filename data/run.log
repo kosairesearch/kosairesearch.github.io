@@ -1,28 +1,13 @@
 DART_KEY_SET=true (len=40)
-=== 스크립트 시작 Thu Sep 10 05:20:21 UTC 2026 ===
-Traceback (most recent call last):
-  File "/home/runner/work/kosairesearch.github.io/kosairesearch.github.io/scripts/collect_data.py", line 482, in collect_pykrx_bulk
-    fund = krx.get_market_fundamental_by_ticker(date, market=market_code)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pykrx/stock/stock_api.py", line 776, in get_market_fundamental_by_ticker
-    holiday = (df[["BPS", "PER", "PBR", "EPS", "DIV", "DPS"]] == 0).all(axis=None)
-               ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/frame.py", line 4119, in __getitem__
-    indexer = self.columns._get_indexer_strict(key, "columns")[1]
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6212, in _get_indexer_strict
-    self._raise_if_missing(keyarr, indexer, axis_name)
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6261, in _raise_if_missing
-    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
-KeyError: "None of [Index(['BPS', 'PER', 'PBR', 'EPS', 'DIV', 'DPS'], dtype='object')] are in the [columns]"
+=== 스크립트 시작 Thu Sep 10 05:30:22 UTC 2026 ===
 =======================================================
   KOS ai 데이터 수집 시작
 =======================================================
 KRX 로그인 시도...
   로그인 ID: qjawnsdla
 KRX 로그인 완료.
-  로그인 시간: 2026-09-10 05:20:26
-  만료 시간: 2026-09-10 06:20:26
+  로그인 시간: 2026-09-10 05:30:25
+  만료 시간: 2026-09-10 06:30:25
   기준 거래일: 20260909  |  현재 게시본: 20260909
 
 ## KOS ai 데이터 수집 — 기준 거래일 20260909
@@ -32,37 +17,43 @@ KRX 로그인 완료.
   [pykrx] 20260909 전종목 벌크 수집 시도... (종목명 재사용 2578개)
     [코스피] 시가총액 조회...
     [코스피] cap: 943행, 컬럼: ['종가', '시가총액', '거래량', '거래대금', '상장주식수']
-    [코스피] 기본지표 조회...
     [코스피] fund: 915행, 컬럼: ['BPS', 'PER', 'PBR', 'EPS', 'DIV', 'DPS']
     [코스피] OHLCV 조회...
     [코스피] ohlcv: 943행, 컬럼: ['시가', '고가', '저가', '종가', '거래량', '거래대금', '등락률', '시가총액']
     [코스피] 943개 종목 처리 완료
     [코스닥] 시가총액 조회...
     [코스닥] cap: 1822행, 컬럼: ['종가', '시가총액', '거래량', '거래대금', '상장주식수']
-    [코스닥] 기본지표 조회...
     [코스닥] fund: 1802행, 컬럼: ['BPS', 'PER', 'PBR', 'EPS', 'DIV', 'DPS']
     [코스닥] OHLCV 조회...
     [코스닥] ohlcv: 1822행, 컬럼: ['시가', '고가', '저가', '종가', '거래량', '거래대금', '등락률', '시가총액']
     [코스닥] 1822개 종목 처리 완료
     [코넥스] 시가총액 조회...
     [코넥스] cap: 108행, 컬럼: ['종가', '시가총액', '거래량', '거래대금', '상장주식수']
-    [코넥스] 기본지표 조회...
 Error occurred in get_market_fundamental_by_ticker: "None of [Index(['ISU_SRT_CD', 'BPS', 'PER', 'PBR', 'EPS', 'DVD_YLD', 'DPS'], dtype='object')] are in the [columns]"
-    [코넥스] 오류: "None of [Index(['BPS', 'PER', 'PBR', 'EPS', 'DIV', 'DPS'], dtype='object')] are in the [columns]"
-  [pykrx] 벌크 수집 결과: 2765개 (가격 유효: 2765개)
-- 시세 수집: 2765개 종목 (데이터 거래일 20260909)
+    [코넥스] 기본지표 없음(무시): KeyError: "None of [Index(['BPS', 'PER', 'PBR', 'EPS', 'DIV', 'DPS'], dtype='object')] are in the [columns]"
+    [코넥스] OHLCV 조회...
+    [코넥스] ohlcv: 108행, 컬럼: ['시가', '고가', '저가', '종가', '거래량', '거래대금', '등락률', '시가총액']
+    [코넥스] 108개 종목 처리 완료
+  [pykrx] 벌크 수집 결과: 2873개 (가격 유효: 2873개)
+- 시세 수집: 2873개 종목 (데이터 거래일 20260909)
 - 영문명 이월: 2578개
-  [DART] 영문명 미보강 213개 종목 DART 수집 중...
-    141/213 완료...
-    161/213 완료...
+  [DART] 영문명 미보강 321개 종목 DART 수집 중...
+    61/321 완료...
+    101/321 완료...
+    121/321 완료...
+    201/321 완료...
+    221/321 완료...
+    261/321 완료...
+    281/321 완료...
+    321/321 완료...
   [DART] 영문명·시총 보강 완료
   [분류] AI 업종 캐시 2710개 적용
-  [분류] 카테고리 부여 완료 — 기타 167/2765개
-- 전 종목 수집 2765개(기존 2578) — 상폐 자동 정리 적용
-✅ data/stocks.js 생성 완료 — 2578개 종목 (2026-09-10 14:25 KST)
-- 최종 출력: 2578개 종목 — dataDate 20260909
+  [분류] 카테고리 부여 완료 — 기타 171/2873개
+- 전 종목 수집 2873개(기존 2578) — 상폐 자동 정리 적용
+✅ data/stocks.js 생성 완료 — 2686개 종목 (2026-09-10 14:38 KST)
+- 최종 출력: 2686개 종목 — dataDate 20260909
 =======================================================
-게시본: dataDate=20260909  종목 2578개  lastUpdated=2026-09-10 14:25
+게시본: dataDate=20260909  종목 2686개  lastUpdated=2026-09-10 14:38
 ⚠️ valuation.js(20260907)가 시세(20260909)보다 뒤처짐 — collect_valuation 이 아직 안 돈 정상 시차(최대 2시간).
 KRX 로그인 실패: KRX_ID 또는 KRX_PW 환경 변수가 설정되지 않았습니다.
 ✅ 신선도 정상 — 최신 거래일 20260909 종가가 게시돼 있다.
