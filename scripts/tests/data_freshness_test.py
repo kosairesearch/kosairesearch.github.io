@@ -118,9 +118,14 @@ set_now(2026, 9, 10, 13)                                  # 목 13시 — 장중
 ok(M.get_latest_trading_date() == "20260909", "장중(13시)에는 전 거래일이 기준일",
    M.get_latest_trading_date())
 ok("20260910" not in M.candidate_trading_dates(), "장중에는 당일이 후보에서 빠진다")
-set_now(2026, 9, 10, 16)                                  # 16시 — 마감 후
-ok(M.get_latest_trading_date() == "20260910", "마감 후(16시)에는 당일이 기준일",
+set_now(2026, 9, 10, 17)                                  # 17시 — 아직 이르다
+ok(M.get_latest_trading_date() == "20260909",
+   "마감 직후(17시)에도 당일을 안 쓴다 — pykrx 종가는 저녁에 게시된다",
    M.get_latest_trading_date())
+set_now(2026, 9, 10, 18)                                  # 18시 — 기준 시각
+ok(M.get_latest_trading_date() == "20260910", "저녁(18시)부터 당일이 기준일",
+   M.get_latest_trading_date())
+ok(M.MARKET_CLOSE_HOUR == 18, "마감 기준 시각이 저녁으로 잡혀 있다", M.MARKET_CLOSE_HOUR)
 set_now(2026, 9, 12, 20)                                  # 토요일 20시
 cands = M.candidate_trading_dates(limit=3)
 ok(cands == ["20260911", "20260910", "20260909"], "주말은 후보에서 제외", cands)
