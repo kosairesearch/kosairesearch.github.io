@@ -680,7 +680,7 @@ try{
   const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:false,powerPreference:'high-performance'});
   renderer.setClearColor('#04060f',1);
   renderer.toneMapping=THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure=1.22;
+  renderer.toneMappingExposure=1.00;
   renderer.outputColorSpace=THREE.SRGBColorSpace;
 
   const scene=new THREE.Scene();
@@ -693,13 +693,16 @@ try{
         new THREE.MeshBasicMaterial({color:new THREE.Color(c).multiplyScalar(i),side:THREE.DoubleSide}));
       m.position.set(x,y,z); m.rotation.set(rx,ry,0); env.add(m);
     };
-    box(20,10,'#ffffff',11, 0,9,1, 0,Math.PI/2);   // 시네마틱 톱 소프트박스
-    box(4,12,'#bcd2ff',5, -10,0,2, Math.PI/2.3);   // 쿨 사이드
-    box(3,10,'#dde8ff',2, 10,1,-1, -Math.PI/2.5);  // 쿨 사이드2
-    box(16,1.1,'#ffffff',7, 0,-1,-10);             // 후면 스트릭
-    box(12,5,'#9fb8e8',2.2, 0,-8,2, 0,-Math.PI/2);  // 바닥 바운스
-    box(5,9,'#dfe9ff',3.5, 7,3,6, Math.PI/1.6);     // 프런트 키 패널
-    box(6,3,'#ffffff',5, -5,6,5, Math.PI/3, -0.5);  // 어퍼 글랜스
+    /* 블렌더 장면을 그대로 옮긴 것. 거의 새까만 방에 조명 셋이다.
+       KOSAI_Wash  위 넓은 빛   (블렌더 3200W / 크기 45)
+       KOSAI_Key   오른쪽 작고 센 빛 (1700W / 0.2)  — 유리에 날카로운 반짝임
+       KOSAI_Back  뒤 약한 빛   (60W / 12)
+       바닥은 어두운 회색(0.075,0.078,0.085)이었다.
+       나머지 방향은 비워 둔다 — 비어 있는 것이 곧 캄캄한 벽이다. */
+    box(30,30,'#ffffff', 1.9,   0, 14,-1.5, 0, Math.PI/2);      // 워시
+    box(0.5,0.5,'#ffffff', 120, 4.2, 2.2,-3.0, -Math.PI/2.6);   // 키
+    box(14,14,'#cfe0ff', 0.26,  0,  5,-7.0, 0, Math.PI/2);      // 백
+    box(40,40,'#8d94a6', 0.30,  0,-3.4, 0.0, 0,-Math.PI/2);     // 바닥
     scene.environment=new THREE.PMREMGenerator(renderer).fromScene(env,0.03).texture;
   }
   const camera=new THREE.PerspectiveCamera(35,1,0.1,100);
@@ -720,9 +723,9 @@ try{
 
 
   /* 라이팅 — 키 + 쿨 림 + 웜 필 */
-  const key=new THREE.DirectionalLight(0xffffff,2.0);key.position.set(4,6,7);scene.add(key);
-  const rim=new THREE.PointLight(0x9fc4ff,90,0,2);rim.position.set(-6,3,-4);scene.add(rim);
-  const fill=new THREE.PointLight(0xbcd2ff,8,0,2);fill.position.set(3,-4,5);scene.add(fill);
+  const key=new THREE.DirectionalLight(0xffffff,1.1);key.position.set(4.2,2.2,-3.0);scene.add(key);
+  const rim=new THREE.PointLight(0x9fc4ff,26,0,2);rim.position.set(-6,3,-4);scene.add(rim);
+  const fill=new THREE.PointLight(0xbcd2ff,3,0,2);fill.position.set(3,-4,5);scene.add(fill);
 
   /* 프리즘 — 사각뿔(피라미드): 옆면 4개는 삼각형, 바닥은 정사각형. 모서리 깎인 좁은 면 + 뭉툭한 꼭짓점 */
   /* ───────────────────────────────────────────────────────
@@ -815,7 +818,7 @@ try{
     clearcoat:1, clearcoatRoughness:0.03,
     iridescence:0.0, iridescenceIOR:1.35, iridescenceThicknessRange:[120,480], iridescenceIOR:1.3,                       // 미세한 무지갯빛 코팅
     attenuationColor:new THREE.Color('#f0f5ff'), attenuationDistance:22,
-    envMapIntensity:2.0, specularIntensity:1
+    envMapIntensity:1.0, specularIntensity:1
   });
   const prism=new THREE.Mesh(geo,glass);
 
@@ -826,8 +829,8 @@ try{
      굴절시키고 색을 갈라 놓는다 — 뒷모서리가 선이 아니라 면의 경계로
      드러나는 것이 이 층이다. */
   const inner=new THREE.Mesh(geo,new THREE.MeshPhysicalMaterial({
-    color:0xdfe9ff, metalness:0, roughness:0.06, flatShading:true,
-    side:THREE.BackSide, envMapIntensity:2.6,
+    color:0x10141d, metalness:0, roughness:0.05, flatShading:true,
+    side:THREE.BackSide, envMapIntensity:1.15,
     clearcoat:1, clearcoatRoughness:0.04
   }));
   inner.scale.setScalar(0.998);
