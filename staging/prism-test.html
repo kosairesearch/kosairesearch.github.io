@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta name="robots" content="noindex,nofollow" />
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>프리즘 안쪽 면 비교</title>
+<style>
+ body{margin:0;background:#04060f;color:#cfe0ff;font:400 14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+ h1{font-size:17px;margin:18px 16px 4px;color:#e8f0ff}
+ p.lead{margin:0 16px 14px;color:#8fa6cc;max-width:760px}
+ .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:14px;padding:0 16px 40px}
+ .tile{background:#070b16;border:1px solid rgba(140,175,255,.16);border-radius:14px;overflow:hidden}
+ .tile h2{margin:0;padding:11px 14px;font-size:14px;font-weight:700;color:#e8f0ff;border-bottom:1px solid rgba(140,175,255,.13);display:flex;gap:9px;align-items:baseline}
+ .tile h2 b{font-size:19px;color:#ffd34d}
+ .tile h2 span{font-weight:400;font-size:12px;color:#8fa6cc}
+ canvas{display:block;width:100%;height:280px;background:#04060f;cursor:grab}
+ .note{margin:0 16px 30px;padding:13px 15px;background:rgba(255,211,77,.09);border:1px solid rgba(255,211,77,.28);border-radius:11px;color:#ffe9a8;max-width:760px}
+</style></head><body>
+<h1>유리 너머로 뒷면이 보이나 &mdash; 어느 번호?</h1>
+<p class="lead">three.js 는 유리 뒤 화면에 <b>불투명한 물체만</b> 그려 넣는다. 프리즘 자신은 투과 재질이라
+그 목록에서 빠져서, 그냥 두면 유리 너머로 제 뒷면이 보이지 않는다(= 1번). 같은 메시의 안쪽 면을
+불투명으로 한 번 더 그려 넣으면 보인다. 그 밝기만 다르게 한 넷이다. 끌어서 돌려 봐.</p>
+<div class="grid" id="g"></div>
+<div class="note">번호만 알려주면 그 값으로 스테이징에 반영한다. 넷 다 아니면 그것도 말해 줘.</div>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"}}</script>
+<script type="module">
+import * as THREE from 'three';
+const PRISM_TRIS=[
+    1.1119,-0.9974,-1.1578,1.14343,-0.9974,-1.14343,1.15078,-1.01798,-1.15078,1.1119,-0.9974,-1.1578,1.15078,
+    -1.01798,-1.15078,1.12815,-1.02261,-1.1606,1.1578,-0.9974,-1.1119,1.1606,-1.02261,-1.12815,1.15078,
+    -1.01798,-1.15078,1.1578,-0.9974,-1.1119,1.15078,-1.01798,-1.15078,1.14343,-0.9974,-1.14343,1.1362,
+    -1.03305,-1.1362,1.12815,-1.02261,-1.1606,1.15078,-1.01798,-1.15078,1.1362,-1.03305,-1.1362,1.15078,
+    -1.01798,-1.15078,1.1606,-1.02261,-1.12815,1.1119,-0.9974,1.1578,1.12815,-1.02261,1.1606,1.15078,-1.01798,
+    1.15078,1.1119,-0.9974,1.1578,1.15078,-1.01798,1.15078,1.14343,-0.9974,1.14343,1.1362,-1.03305,1.1362,
+    1.1606,-1.02261,1.12815,1.15078,-1.01798,1.15078,1.1362,-1.03305,1.1362,1.15078,-1.01798,1.15078,1.12815,
+    -1.02261,1.1606,1.1578,-0.9974,1.1119,1.14343,-0.9974,1.14343,1.15078,-1.01798,1.15078,1.1578,-0.9974,
+    1.1119,1.15078,-1.01798,1.15078,1.1606,-1.02261,1.12815,-1.1578,-0.9974,1.1119,-1.1606,-1.02261,1.12815,
+    -1.15078,-1.01798,1.15078,-1.1578,-0.9974,1.1119,-1.15078,-1.01798,1.15078,-1.14343,-0.9974,1.14343,
+    -1.1362,-1.03305,1.1362,-1.12815,-1.02261,1.1606,-1.15078,-1.01798,1.15078,-1.1362,-1.03305,1.1362,
+    -1.15078,-1.01798,1.15078,-1.1606,-1.02261,1.12815,-1.1119,-0.9974,1.1578,-1.14343,-0.9974,1.14343,
+    -1.15078,-1.01798,1.15078,-1.1119,-0.9974,1.1578,-1.15078,-1.01798,1.15078,-1.12815,-1.02261,1.1606,
+    -1.1119,-0.9974,-1.1578,-1.12815,-1.02261,-1.1606,-1.15078,-1.01798,-1.15078,-1.1119,-0.9974,-1.1578,
+    -1.15078,-1.01798,-1.15078,-1.14343,-0.9974,-1.14343,-1.1362,-1.03305,-1.1362,-1.1606,-1.02261,-1.12815,
+    -1.15078,-1.01798,-1.15078,-1.1362,-1.03305,-1.1362,-1.15078,-1.01798,-1.15078,-1.12815,-1.02261,-1.1606,
+    -1.1578,-0.9974,-1.1119,-1.14343,-0.9974,-1.14343,-1.15078,-1.01798,-1.15078,-1.1578,-0.9974,-1.1119,
+    -1.15078,-1.01798,-1.15078,-1.1606,-1.02261,-1.12815,0,1.00389,-0.04589,-0.02891,1.01026,-0.02891,0,
+    1.03305,0,0,1.00389,-0.04589,0,1.03305,0,0.02891,1.01026,-0.02891,-0.04589,1.00389,0,-0.02891,1.01026,
+    0.02891,0,1.03305,0,-0.04589,1.00389,0,0,1.03305,0,-0.02891,1.01026,-0.02891,0,1.00389,0.04589,0.02891,
+    1.01026,0.02891,0,1.03305,0,0,1.00389,0.04589,0,1.03305,0,-0.02891,1.01026,0.02891,0.04589,1.00389,0,
+    0.02891,1.01026,-0.02891,0,1.03305,0,0.04589,1.00389,0,0,1.03305,0,0.02891,1.01026,0.02891,1.1362,
+    -1.03305,-1.1362,-1.1362,-1.03305,-1.1362,-1.12815,-1.02261,-1.1606,1.1362,-1.03305,-1.1362,-1.12815,
+    -1.02261,-1.1606,1.12815,-1.02261,-1.1606,1.12815,-1.02261,-1.1606,-1.12815,-1.02261,-1.1606,-1.1119,
+    -0.9974,-1.1578,1.12815,-1.02261,-1.1606,-1.1119,-0.9974,-1.1578,1.1119,-0.9974,-1.1578,-1.1362,-1.03305,
+    -1.1362,-1.1362,-1.03305,1.1362,-1.1606,-1.02261,1.12815,-1.1362,-1.03305,-1.1362,-1.1606,-1.02261,
+    1.12815,-1.1606,-1.02261,-1.12815,-1.1606,-1.02261,-1.12815,-1.1606,-1.02261,1.12815,-1.1578,-0.9974,
+    1.1119,-1.1606,-1.02261,-1.12815,-1.1578,-0.9974,1.1119,-1.1578,-0.9974,-1.1119,-1.1362,-1.03305,1.1362,
+    1.1362,-1.03305,1.1362,1.12815,-1.02261,1.1606,-1.1362,-1.03305,1.1362,1.12815,-1.02261,1.1606,-1.12815,
+    -1.02261,1.1606,-1.12815,-1.02261,1.1606,1.12815,-1.02261,1.1606,1.1119,-0.9974,1.1578,-1.12815,-1.02261,
+    1.1606,1.1119,-0.9974,1.1578,-1.1119,-0.9974,1.1578,1.1362,-1.03305,1.1362,1.1362,-1.03305,-1.1362,1.1606,
+    -1.02261,-1.12815,1.1362,-1.03305,1.1362,1.1606,-1.02261,-1.12815,1.1606,-1.02261,1.12815,1.1606,-1.02261,
+    1.12815,1.1606,-1.02261,-1.12815,1.1578,-0.9974,-1.1119,1.1606,-1.02261,1.12815,1.1578,-0.9974,-1.1119,
+    1.1578,-0.9974,1.1119,0.04589,1.00389,0,1.1578,-0.9974,-1.1119,1.14343,-0.9974,-1.14343,0.04589,1.00389,0,
+    1.14343,-0.9974,-1.14343,0.02891,1.01026,-0.02891,0.02891,1.01026,-0.02891,1.14343,-0.9974,-1.14343,
+    1.1119,-0.9974,-1.1578,0.02891,1.01026,-0.02891,1.1119,-0.9974,-1.1578,0,1.00389,-0.04589,1.1578,-0.9974,
+    1.1119,0.04589,1.00389,0,0.02891,1.01026,0.02891,1.1578,-0.9974,1.1119,0.02891,1.01026,0.02891,1.14343,
+    -0.9974,1.14343,1.14343,-0.9974,1.14343,0.02891,1.01026,0.02891,0,1.00389,0.04589,1.14343,-0.9974,1.14343,
+    0,1.00389,0.04589,1.1119,-0.9974,1.1578,-1.1119,-0.9974,1.1578,0,1.00389,0.04589,-0.02891,1.01026,0.02891,
+    -1.1119,-0.9974,1.1578,-0.02891,1.01026,0.02891,-1.14343,-0.9974,1.14343,-1.14343,-0.9974,1.14343,
+    -0.02891,1.01026,0.02891,-0.04589,1.00389,0,-1.14343,-0.9974,1.14343,-0.04589,1.00389,0,-1.1578,-0.9974,
+    1.1119,-1.1578,-0.9974,-1.1119,-0.04589,1.00389,0,-0.02891,1.01026,-0.02891,-1.1578,-0.9974,-1.1119,
+    -0.02891,1.01026,-0.02891,-1.14343,-0.9974,-1.14343,-1.14343,-0.9974,-1.14343,-0.02891,1.01026,-0.02891,0,
+    1.00389,-0.04589,-1.14343,-0.9974,-1.14343,0,1.00389,-0.04589,-1.1119,-0.9974,-1.1578,-1.1119,-0.9974,
+    -1.1578,0,1.00389,-0.04589,1.1119,-0.9974,-1.1578,-1.1362,-1.03305,-1.1362,1.1362,-1.03305,-1.1362,1.1362,
+    -1.03305,1.1362,-1.1362,-1.03305,-1.1362,1.1362,-1.03305,1.1362,-1.1362,-1.03305,1.1362,1.1578,-0.9974,
+    -1.1119,0.04589,1.00389,0,1.1578,-0.9974,1.1119,1.1119,-0.9974,1.1578,0,1.00389,0.04589,-1.1119,-0.9974,
+    1.1578,-1.1578,-0.9974,1.1119,-0.04589,1.00389,0,-1.1578,-0.9974,-1.1119
+];
+const V=[{n:1,inner:null,label:'안쪽 면 없음',sub:'지금 올라가 있는 상태'},
+         {n:2,inner:1.2,label:'안쪽 면 — 어둡게',sub:''},
+         {n:3,inner:2.6,label:'안쪽 면 — 보통',sub:'지금 준비해 둔 값'},
+         {n:4,inner:4.2,label:'안쪽 면 — 밝게',sub:''}];
+function build(v){
+  const tile=document.createElement('div');tile.className='tile';
+  tile.innerHTML='<h2><b>'+v.n+'</b>'+v.label+'<span>'+v.sub+'</span></h2>';
+  const cv=document.createElement('canvas');tile.appendChild(cv);
+  document.getElementById('g').appendChild(tile);
+  const r=new THREE.WebGLRenderer({canvas:cv,antialias:true});
+  r.setClearColor('#04060f',1);r.toneMapping=THREE.ACESFilmicToneMapping;
+  r.toneMappingExposure=1.22;r.outputColorSpace=THREE.SRGBColorSpace;
+  r.setPixelRatio(Math.min(devicePixelRatio,2));
+  const sc=new THREE.Scene();
+  {const env=new THREE.Scene();
+   const box=function(w,h,c,i,x,y,z,ry,rx){const m=new THREE.Mesh(new THREE.PlaneGeometry(w,h),
+     new THREE.MeshBasicMaterial({color:new THREE.Color(c).multiplyScalar(i),side:THREE.DoubleSide}));
+     m.position.set(x,y,z);m.rotation.set(rx||0,ry||0,0);env.add(m);};
+   box(20,10,'#ffffff',11,0,9,1,Math.PI/2); box(4,12,'#bcd2ff',5,-10,0,2,Math.PI/2.3);
+   box(3,10,'#dde8ff',2,10,1,-1,-Math.PI/2.5); box(16,1.1,'#ffffff',7,0,-1,-10);
+   box(12,5,'#9fb8e8',2.2,0,-8,2,0,-Math.PI/2); box(5,9,'#dfe9ff',3.5,7,3,6,Math.PI/1.6);
+   sc.environment=new THREE.PMREMGenerator(r).fromScene(env,0.03).texture;}
+  const cam=new THREE.PerspectiveCamera(35,1,0.1,100);cam.position.set(0,0,9.5);
+  const key=new THREE.DirectionalLight(0xffffff,2.0);key.position.set(4,6,7);sc.add(key);
+  /* 불투명 배경판 — 유리 너머로 보이는 유일한 배경 */
+  const bg=new THREE.Mesh(new THREE.PlaneGeometry(90,90),new THREE.MeshBasicMaterial({color:0x0a1226}));
+  bg.position.z=-30;sc.add(bg);
+  /* 별 — 불투명이라야 유리 너머로 비친다 */
+  const dp=[];for(let i=0;i<260;i++)dp.push((Math.random()-.5)*22,(Math.random()-.5)*14,(Math.random()-.5)*16-4);
+  const dg=new THREE.BufferGeometry();dg.setAttribute('position',new THREE.Float32BufferAttribute(dp,3));
+  sc.add(new THREE.Points(dg,new THREE.PointsMaterial({color:0x7f93b8,size:0.03})));
+  const p=new Float32Array(PRISM_TRIS.length);
+  for(let i=0;i<PRISM_TRIS.length;i++)p[i]=PRISM_TRIS[i]*1.137;
+  const geo=new THREE.BufferGeometry();
+  geo.setAttribute('position',new THREE.BufferAttribute(p,3));geo.computeVertexNormals();
+  const prism=new THREE.Mesh(geo,new THREE.MeshPhysicalMaterial({
+    color:0xffffff,metalness:0,roughness:0.035,flatShading:true,
+    transmission:1,thickness:1.35,ior:1.52,dispersion:1.35,
+    clearcoat:1,clearcoatRoughness:0.03,
+    attenuationColor:new THREE.Color('#f0f5ff'),attenuationDistance:22,
+    envMapIntensity:2.0,specularIntensity:1}));
+  if(v.inner!==null){
+    const inner=new THREE.Mesh(geo,new THREE.MeshPhysicalMaterial({
+      color:0xdfe9ff,metalness:0,roughness:0.06,flatShading:true,
+      side:THREE.BackSide,envMapIntensity:v.inner,clearcoat:1,clearcoatRoughness:0.04}));
+    inner.scale.setScalar(0.998);prism.add(inner);
+  }
+  const group=new THREE.Group();group.add(prism);sc.add(group);
+  let ox=0.34,oy=0.72,drag=false,lx=0,ly=0;
+  cv.addEventListener('pointerdown',function(e){drag=true;lx=e.clientX;ly=e.clientY;cv.setPointerCapture(e.pointerId);});
+  cv.addEventListener('pointermove',function(e){if(!drag)return;oy+=(e.clientX-lx)*0.0065;ox+=(e.clientY-ly)*0.005;lx=e.clientX;ly=e.clientY;});
+  const st=function(){drag=false;};cv.addEventListener('pointerup',st);cv.addEventListener('pointercancel',st);
+  function size(){const w=cv.clientWidth,h=cv.clientHeight;r.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix();}
+  size();addEventListener('resize',size);
+  r.setAnimationLoop(function(){const t=performance.now()/1000;
+    group.rotation.y=oy+t*0.16;group.rotation.x=ox+Math.sin(t*0.23)*0.17;r.render(sc,cam);});
+}
+V.forEach(build);
+</script></body></html>
