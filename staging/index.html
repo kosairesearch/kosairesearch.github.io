@@ -811,13 +811,27 @@ try{
   const roughT=microTex(256,150,80,90);
   const glass=new THREE.MeshPhysicalMaterial({
     color:0xffffff, metalness:0, roughness:0.035, roughnessMap:roughT, bumpMap:bumpT, bumpScale:0.1, flatShading:true,
-    transmission:1, thickness:1.9, ior:1.52, dispersion:1.35,   // 빛 분산(무지개 가장자리)
+    transmission:1, thickness:1.35, ior:1.52, dispersion:1.35,   // 빛 분산(무지개 가장자리)
     clearcoat:1, clearcoatRoughness:0.03,
     iridescence:0.0, iridescenceIOR:1.35, iridescenceThicknessRange:[120,480], iridescenceIOR:1.3,                       // 미세한 무지갯빛 코팅
     attenuationColor:new THREE.Color('#f0f5ff'), attenuationDistance:22,
     envMapIntensity:2.0, specularIntensity:1
   });
   const prism=new THREE.Mesh(geo,glass);
+
+  /* 안쪽 면 — three.js 의 투과는 불투명한 물체만 유리 뒤에 그려 넣는다.
+     프리즘 자신은 투과 재질이라 그 목록에서 빠지므로, 이대로 두면 유리
+     너머로 제 뒷면이 보이지 않아 검은 덩어리가 된다. 같은 메시의 안쪽
+     면을 불투명으로 한 번 더 그려 투과 화면에 넣는다. 앞면 유리가 이것을
+     굴절시키고 색을 갈라 놓는다 — 뒷모서리가 선이 아니라 면의 경계로
+     드러나는 것이 이 층이다. */
+  const inner=new THREE.Mesh(geo,new THREE.MeshPhysicalMaterial({
+    color:0xdfe9ff, metalness:0, roughness:0.06, flatShading:true,
+    side:THREE.BackSide, envMapIntensity:2.6,
+    clearcoat:1, clearcoatRoughness:0.04
+  }));
+  inner.scale.setScalar(0.998);
+  prism.add(inner);
 
 
 
@@ -859,7 +873,7 @@ try{
   const DN=70, dpos=new Float32Array(DN*3);
   for(let i=0;i<DN;i++){ dpos[i*3]=(Math.random()*2-1)*3.4; dpos[i*3+1]=(Math.random()*2-1)*2.6; dpos[i*3+2]=(Math.random()*2-1)*2; }
   const dgeo=new THREE.BufferGeometry(); dgeo.setAttribute('position',new THREE.BufferAttribute(dpos,3));
-  const dust=new THREE.Points(dgeo,new THREE.PointsMaterial({color:0xc8d8f8,size:0.025,transparent:true,opacity:0.5,depthWrite:false}));
+  const dust=new THREE.Points(dgeo,new THREE.PointsMaterial({color:0x7f93b8,size:0.025}));   /* 불투명이라야 유리 너머로 비친다 */
   scene.add(dust);
 
   /* 리사이즈(비용 큰 작업)는 창 크기 변경 때만 */
