@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__afe0e924-5e23-4580-931c-19c000e88666__scene_builder_3d_get_operation",
+      "mcp__afe0e924-5e23-4580-931c-19c000e88666__scene_builder_3d_get_artifact",
+      "mcp__afe0e924-5e23-4580-931c-19c000e88666__scene_builder_3d_get_project",
+      "mcp__afe0e924-5e23-4580-931c-19c000e88666__scene_builder_3d_get_blend",
+      "mcp__afe0e924-5e23-4580-931c-19c000e88666__scene_builder_3d_get_glb",
+      "mcp__afe0e924-5e23-4580-931c-19c000e88666__scene_builder_3d_list_projects",
+      "mcp__afe0e924-5e23-4580-931c-19c000e88666__scene_builder_3d_show_scene",
+      "mcp__github__actions_list",
+      "mcp__github__actions_get",
+      "mcp__github__get_job_logs",
+      "mcp__github__get_file_contents",
+      "mcp__github__get_commit",
+      "mcp__github__list_commits",
+      "mcp__github__list_branches",
+      "mcp__github__list_pull_requests",
+      "mcp__github__pull_request_read",
+      "mcp__github__get_check_run",
+      "mcp__github__search_code",
+      "mcp__Claude_Code_Remote__get_session",
+      "mcp__Claude_Code_Remote__list_sessions",
+      "mcp__Claude_Code_Remote__list_triggers",
+      "Bash(git fetch:*)",
+      "Bash(git ls-tree:*)"
+    ]
+  }
+}
