@@ -2,25 +2,33 @@
 <html lang="ko"><head>
 <meta name="robots" content="noindex,nofollow" />
 <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>프리즘 안쪽 면 비교</title>
+<title>블렌더랑 맞추기</title>
 <style>
- body{margin:0;background:#04060f;color:#cfe0ff;font:400 14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
- h1{font-size:17px;margin:18px 16px 4px;color:#e8f0ff}
- p.lead{margin:0 16px 14px;color:#8fa6cc;max-width:760px}
- .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:14px;padding:0 16px 40px}
+ body{margin:0;background:#04060f;color:#cfe0ff;font:400 14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+ h1{font-size:18px;margin:18px 16px 4px;color:#e8f0ff}
+ p.lead{margin:0 16px 16px;color:#8fa6cc;max-width:820px}
+ .ref{margin:0 16px 22px;max-width:560px}
+ .ref img{width:100%;display:block;border-radius:12px;border:2px solid #ffd34d}
+ .ref b{display:block;margin:9px 0 0;color:#ffd34d;font-size:13px}
+ .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:14px;padding:0 16px 40px}
  .tile{background:#070b16;border:1px solid rgba(140,175,255,.16);border-radius:14px;overflow:hidden}
  .tile h2{margin:0;padding:11px 14px;font-size:14px;font-weight:700;color:#e8f0ff;border-bottom:1px solid rgba(140,175,255,.13);display:flex;gap:9px;align-items:baseline}
  .tile h2 b{font-size:19px;color:#ffd34d}
  .tile h2 span{font-weight:400;font-size:12px;color:#8fa6cc}
- canvas{display:block;width:100%;height:280px;background:#04060f;cursor:grab}
- .note{margin:0 16px 30px;padding:13px 15px;background:rgba(255,211,77,.09);border:1px solid rgba(255,211,77,.28);border-radius:11px;color:#ffe9a8;max-width:760px}
+ canvas{display:block;width:100%;height:300px;background:#04060f;cursor:grab}
+ .note{margin:0 16px 34px;padding:13px 15px;background:rgba(255,211,77,.09);border:1px solid rgba(255,211,77,.28);border-radius:11px;color:#ffe9a8;max-width:820px}
 </style></head><body>
-<h1>유리 너머로 뒷면이 보이나 &mdash; 어느 번호?</h1>
-<p class="lead">three.js 는 유리 뒤 화면에 <b>불투명한 물체만</b> 그려 넣는다. 프리즘 자신은 투과 재질이라
-그 목록에서 빠져서, 그냥 두면 유리 너머로 제 뒷면이 보이지 않는다(= 1번). 같은 메시의 안쪽 면을
-불투명으로 한 번 더 그려 넣으면 보인다. 그 밝기만 다르게 한 넷이다. 끌어서 돌려 봐.</p>
+<h1>블렌더랑 맞추기 &mdash; 어느 번호가 제일 가까워?</h1>
+<p class="lead">모양은 블렌더에서 좌표를 그대로 뽑아온 것이라 넷 다 같다. 다른 것은 <b>빛</b>이다.
+블렌더는 거의 새까만 방에 조명 셋인데, 지금 올라가 있는 웹 화면은 사방에 밝은 패널 일곱이 둘러싸고 있어서
+프리즘만 혼자 하얗게 떴다. 아래 1번이 그 상태고, 2~4번은 블렌더 조명을 옮겨온 것이다. 끌면 돌아간다.</p>
+
+<div class="ref"><img src="prism-blender.jpg" alt="블렌더 렌더">
+<b>&#9650; 목표 &mdash; 블렌더에서 뽑은 실제 렌더</b></div>
+
 <div class="grid" id="g"></div>
-<div class="note">번호만 알려주면 그 값으로 스테이징에 반영한다. 넷 다 아니면 그것도 말해 줘.</div>
+<div class="note">번호만 알려주면 그 값으로 스테이징에 반영한다. 넷 다 아니면 &ldquo;더 어둡게&rdquo; 처럼만 말해 줘도 된다.</div>
+
 <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"}}</script>
 <script type="module">
 import * as THREE from 'three';
@@ -74,10 +82,12 @@ const PRISM_TRIS=[
     -1.1119,0.04589,1.00389,0,1.1578,-0.9974,1.1119,1.1119,-0.9974,1.1578,0,1.00389,0.04589,-1.1119,-0.9974,
     1.1578,-1.1578,-0.9974,1.1119,-0.04589,1.00389,0,-1.1578,-0.9974,-1.1119
 ];
-const V=[{n:1,inner:null,label:'안쪽 면 없음',sub:'지금 올라가 있는 상태'},
-         {n:2,inner:1.2,label:'안쪽 면 — 어둡게',sub:''},
-         {n:3,inner:2.6,label:'안쪽 면 — 보통',sub:'지금 준비해 둔 값'},
-         {n:4,inner:4.2,label:'안쪽 면 — 밝게',sub:''}];
+const V=[
+ {n:1,env:'studio', inner:0xdfe9ff, ie:2.6,  ge:2.0, ex:1.22, label:'지금 올라간 것', sub:'밝은 패널 7개'},
+ {n:2,env:'blender',inner:0x10141d, ie:1.15, ge:1.0, ex:1.00, label:'블렌더 조명 이식', sub:'준비해 둔 값'},
+ {n:3,env:'blender',inner:0x1b212e, ie:1.7,  ge:1.35,ex:1.12, label:'이식 + 조금 밝게', sub:''},
+ {n:4,env:'blender',inner:0x080b12, ie:0.8,  ge:0.8, ex:0.90, label:'이식 + 더 어둡게', sub:'블렌더에 가장 가깝게'}
+];
 function build(v){
   const tile=document.createElement('div');tile.className='tile';
   tile.innerHTML='<h2><b>'+v.n+'</b>'+v.label+'<span>'+v.sub+'</span></h2>';
@@ -85,24 +95,31 @@ function build(v){
   document.getElementById('g').appendChild(tile);
   const r=new THREE.WebGLRenderer({canvas:cv,antialias:true});
   r.setClearColor('#04060f',1);r.toneMapping=THREE.ACESFilmicToneMapping;
-  r.toneMappingExposure=1.22;r.outputColorSpace=THREE.SRGBColorSpace;
+  r.toneMappingExposure=v.ex;r.outputColorSpace=THREE.SRGBColorSpace;
   r.setPixelRatio(Math.min(devicePixelRatio,2));
   const sc=new THREE.Scene();
   {const env=new THREE.Scene();
    const box=function(w,h,c,i,x,y,z,ry,rx){const m=new THREE.Mesh(new THREE.PlaneGeometry(w,h),
      new THREE.MeshBasicMaterial({color:new THREE.Color(c).multiplyScalar(i),side:THREE.DoubleSide}));
      m.position.set(x,y,z);m.rotation.set(rx||0,ry||0,0);env.add(m);};
-   box(20,10,'#ffffff',11,0,9,1,Math.PI/2); box(4,12,'#bcd2ff',5,-10,0,2,Math.PI/2.3);
-   box(3,10,'#dde8ff',2,10,1,-1,-Math.PI/2.5); box(16,1.1,'#ffffff',7,0,-1,-10);
-   box(12,5,'#9fb8e8',2.2,0,-8,2,0,-Math.PI/2); box(5,9,'#dfe9ff',3.5,7,3,6,Math.PI/1.6);
+   if(v.env==='studio'){
+     box(20,10,'#ffffff',11,0,9,1,0,Math.PI/2); box(4,12,'#bcd2ff',5,-10,0,2,Math.PI/2.3);
+     box(3,10,'#dde8ff',2,10,1,-1,-Math.PI/2.5); box(16,1.1,'#ffffff',7,0,-1,-10);
+     box(12,5,'#9fb8e8',2.2,0,-8,2,0,-Math.PI/2); box(5,9,'#dfe9ff',3.5,7,3,6,Math.PI/1.6);
+     box(6,3,'#ffffff',5,-5,6,5,Math.PI/3,-0.5);
+   }else{
+     box(30,30,'#ffffff',1.9,0,14,-1.5,0,Math.PI/2);
+     box(0.5,0.5,'#ffffff',120,4.2,2.2,-3.0,-Math.PI/2.6);
+     box(14,14,'#cfe0ff',0.26,0,5,-7.0,0,Math.PI/2);
+     box(40,40,'#8d94a6',0.30,0,-3.4,0.0,0,-Math.PI/2);
+   }
    sc.environment=new THREE.PMREMGenerator(r).fromScene(env,0.03).texture;}
   const cam=new THREE.PerspectiveCamera(35,1,0.1,100);cam.position.set(0,0,9.5);
-  const key=new THREE.DirectionalLight(0xffffff,2.0);key.position.set(4,6,7);sc.add(key);
-  /* 불투명 배경판 — 유리 너머로 보이는 유일한 배경 */
-  const bg=new THREE.Mesh(new THREE.PlaneGeometry(90,90),new THREE.MeshBasicMaterial({color:0x0a1226}));
+  const k=new THREE.DirectionalLight(0xffffff,v.env==='studio'?2.0:1.1);
+  k.position.set(4.2,2.2,-3.0);sc.add(k);
+  const bg=new THREE.Mesh(new THREE.PlaneGeometry(90,90),new THREE.MeshBasicMaterial({color:0x070b14}));
   bg.position.z=-30;sc.add(bg);
-  /* 별 — 불투명이라야 유리 너머로 비친다 */
-  const dp=[];for(let i=0;i<260;i++)dp.push((Math.random()-.5)*22,(Math.random()-.5)*14,(Math.random()-.5)*16-4);
+  const dp=[];for(let i=0;i<240;i++)dp.push((Math.random()-.5)*22,(Math.random()-.5)*14,(Math.random()-.5)*16-4);
   const dg=new THREE.BufferGeometry();dg.setAttribute('position',new THREE.Float32BufferAttribute(dp,3));
   sc.add(new THREE.Points(dg,new THREE.PointsMaterial({color:0x7f93b8,size:0.03})));
   const p=new Float32Array(PRISM_TRIS.length);
@@ -114,13 +131,11 @@ function build(v){
     transmission:1,thickness:1.35,ior:1.52,dispersion:1.35,
     clearcoat:1,clearcoatRoughness:0.03,
     attenuationColor:new THREE.Color('#f0f5ff'),attenuationDistance:22,
-    envMapIntensity:2.0,specularIntensity:1}));
-  if(v.inner!==null){
-    const inner=new THREE.Mesh(geo,new THREE.MeshPhysicalMaterial({
-      color:0xdfe9ff,metalness:0,roughness:0.06,flatShading:true,
-      side:THREE.BackSide,envMapIntensity:v.inner,clearcoat:1,clearcoatRoughness:0.04}));
-    inner.scale.setScalar(0.998);prism.add(inner);
-  }
+    envMapIntensity:v.ge,specularIntensity:1}));
+  const inner=new THREE.Mesh(geo,new THREE.MeshPhysicalMaterial({
+    color:v.inner,metalness:0,roughness:0.05,flatShading:true,
+    side:THREE.BackSide,envMapIntensity:v.ie,clearcoat:1,clearcoatRoughness:0.04}));
+  inner.scale.setScalar(0.998);prism.add(inner);
   const group=new THREE.Group();group.add(prism);sc.add(group);
   let ox=0.34,oy=0.72,drag=false,lx=0,ly=0;
   cv.addEventListener('pointerdown',function(e){drag=true;lx=e.clientX;ly=e.clientY;cv.setPointerCapture(e.pointerId);});
