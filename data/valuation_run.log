@@ -1,9 +1,75 @@
-- VAL_TICKERS 지정 — 4개만 즉시 재수집
 - 리포트 동기화 2552건 — 그리드=리포트 항상 일치(무료)
-  · 001680 대상: EPS=-8325 BPS=30639 ROE=-23.9 DPS=850.0 성장=3.4
-  · 001470 삼부토건: EPS=767 BPS=330 ROE=4646.3 DPS=0.0 성장=-76.0
-  · 400760 NH올원리츠: EPS=None BPS=4644 ROE=1.0 DPS=320.0 성장=44.5
-  · 050860 아세아텍: EPS=None BPS=6693 ROE=2.1 DPS=50.0 성장=-8.5
+  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
+  · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 85백만(발행총수) = BPS None
+  ✅ 한화머시너리앤서비스홀딩스 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS None BPS None PER None
+  · 0220W0 한화머시너리앤서비스홀딩스: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
+  · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 19백만(발행총수) = BPS None
+  ✅ 스카이랩스 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS None BPS None PER None
+  · 386380 스카이랩스: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
+  · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 26백만(발행총수) = BPS None
+  ✅ 이엠티 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS None BPS None PER None
+  · 232530 이엠티: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · 발행주식총수 DART 142,575 ↔ KRX 1,117,640 (0.128배) — KRX 를 쓴다
+  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
+  · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 1백만(발행총수) = BPS None
+  ✅ 나노솔루션 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS None BPS None PER None
+  · 238540 나노솔루션: EPS=None BPS=None ROE=None DPS=0.0 성장=None
+  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
+  · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 8백만(발행총수) = BPS None
+  ✅ 에이치엘지노믹스 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 1409.0 BPS 14665.0 PER 6.3
+  · 0156T0 에이치엘지노믹스: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
+  · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 5백만(발행총수) = BPS None
+  ✅ 네오뷰 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS None BPS None PER None
+  · 0218L0 네오뷰: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 87) · 대안=순이익÷발행총수 없음 → 채택 None
+  · BPS 입력: 자본 0.0조(분기말·지배지분) ÷ 주식수 17백만(가중평균) = BPS 1317
+  ❌ 딜리셔스 중대오류 차단 → 해당 지표 숨김: BPS 1317↔ref 1142.0
+  · 483350 딜리셔스: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 -319) · 대안=순이익÷발행총수 없음 → 채택 None
+  · BPS 입력: 자본 0.0조(분기말·총자본-폴백) ÷ 주식수 13백만(발행총수) = BPS 1357
+  ✅ 레몬헬스케어 검증 통과 PER None PBR 3.3714 EPS None BPS 1357 | 참조 EPS -187.0 BPS 1357.0 PER None
+  · 365660 레몬헬스케어: EPS=None BPS=1357 ROE=None DPS=None 성장=None
+  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
+  · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 3백만(발행총수) = BPS None
+  ✅ 송우인포텍 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS None BPS None PER None
+  · 0203K0 송우인포텍: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
+  · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 11백만(발행총수) = BPS None
+  ✅ 보원케미칼 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 115.0 BPS 3039.0 PER 20.39
+  · 0010F0 보원케미칼: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
+  · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 3백만(발행총수) = BPS None
+  ✅ 아이티센코어 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS None BPS None PER None
+  · 243870 아이티센코어: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
+  · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 2백만(발행총수) = BPS None
+  ✅ 메디안디노스틱 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS None BPS None PER None
+  · 233250 메디안디노스틱: EPS=None BPS=None ROE=None DPS=0.0 성장=None
+  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
+  · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 2백만(발행총수) = BPS None
+  ✅ 오션스바이오 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS None BPS None PER None
+  · 332190 오션스바이오: EPS=None BPS=None ROE=None DPS=None 성장=None
+  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
+  · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 6백만(발행총수) = BPS None
+  ✅ 크로넥스 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS None BPS None PER None
+  · 215570 크로넥스: EPS=None BPS=None ROE=None DPS=0.0 성장=None
+  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
+  · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 7백만(발행총수) = BPS None
+  ✅ 럭스피아 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS None BPS None PER None
+  · 092590 럭스피아: EPS=None BPS=None ROE=None DPS=0.0 성장=None
 
-✅ 밸류에이션 수집 — 이번 4건 신규 / 건너뜀 0 / 보유 2695/2685개 / 갱신필요 0개
+✅ 밸류에이션 수집 — 이번 15건 신규 / 건너뜀 2670 / 보유 2697/2685개 / 갱신필요 0개
 - VALUATION_COMPLETE 전 종목 최신 — 추가 수집 없음
+
+고쳤다 — 리포트 5,248개 훑음
+
+  valuation.js 에서 손댄 종목        0
+  ① 그대로 둠 (±10% 잔변동)  2,552
+  ② 배수로 환산                  0
+  ③ 값을 숨김                    0
+
+  주당이익 기준이 섞여 바로잡음   0
+  두 공시가 어긋나 숨김          0
