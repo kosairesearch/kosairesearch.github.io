@@ -828,26 +828,26 @@ try{
      모든 꼭짓점이 모든 면 안쪽에 있는지 검산했다(최대 초과 9.9e-04). */
   const RT_PLANES=[
     new THREE.Vector4(0.000000,-1.000000,0.000000,-1.033050), new THREE.Vector4(0.000000,0.485670,-0.874142,-0.527674), new THREE.Vector4(0.874142,0.485670,-0.000000,-0.527674),
-    new THREE.Vector4(0.000000,0.485670,0.874142,-0.527674), new THREE.Vector4(-0.874142,0.485670,0.000000,-0.527674), new THREE.Vector4(0.747824,0.587153,-0.309854,-0.623755),
-    new THREE.Vector4(-0.747824,0.587153,0.309854,-0.623755), new THREE.Vector4(0.309854,0.587153,0.747824,-0.623755), new THREE.Vector4(-0.309854,0.587153,-0.747824,-0.623755),
-    new THREE.Vector4(0.747656,0.587455,0.309689,-0.624051), new THREE.Vector4(-0.309689,0.587455,0.747656,-0.624051), new THREE.Vector4(-0.747656,0.587455,-0.309689,-0.624051),
-    new THREE.Vector4(0.309689,0.587455,-0.747656,-0.624051), new THREE.Vector4(0.334105,0.592429,-0.733077,-0.629359), new THREE.Vector4(0.733077,0.592429,0.334105,-0.629359),
-    new THREE.Vector4(-0.334105,0.592429,0.733077,-0.629359), new THREE.Vector4(-0.733077,0.592429,-0.334105,-0.629359), new THREE.Vector4(-0.732863,0.592748,0.334007,-0.628685),
-    new THREE.Vector4(0.732863,0.592748,-0.334007,-0.628685), new THREE.Vector4(0.334007,0.592748,0.732863,-0.628685), new THREE.Vector4(-0.334007,0.592748,-0.732863,-0.628685),
-    new THREE.Vector4(-0.000000,-0.919379,-0.393374,-1.396715), new THREE.Vector4(-0.393374,-0.919379,0.000000,-1.396715), new THREE.Vector4(0.000000,-0.919379,0.393374,-1.396715),
-    new THREE.Vector4(0.393374,-0.919379,0.000000,-1.396715), new THREE.Vector4(0.000000,0.110388,-0.993889,-1.040623), new THREE.Vector4(-0.993889,0.110388,0.000000,-1.040623),
-    new THREE.Vector4(-0.000000,0.110388,0.993889,-1.040623), new THREE.Vector4(0.993889,0.110388,0.000000,-1.040623), new THREE.Vector4(-0.127969,0.837078,-0.531907,-0.864743),
-    new THREE.Vector4(0.127969,0.837078,-0.531907,-0.864743), new THREE.Vector4(-0.531907,0.837078,0.127969,-0.864743), new THREE.Vector4(-0.531907,0.837078,-0.127969,-0.864743),
-    new THREE.Vector4(0.127969,0.837078,0.531907,-0.864743), new THREE.Vector4(-0.127969,0.837078,0.531907,-0.864743), new THREE.Vector4(0.531907,0.837078,-0.127969,-0.864743),
-    new THREE.Vector4(0.531907,0.837078,0.127969,-0.864743), new THREE.Vector4(0.374880,0.427652,-0.822544,-0.942631), new THREE.Vector4(0.822544,0.427652,-0.374880,-0.942631),
-    new THREE.Vector4(0.374880,0.427652,0.822544,-0.942631), new THREE.Vector4(0.822544,0.427652,0.374880,-0.942631), new THREE.Vector4(-0.822544,0.427652,0.374880,-0.942631),
-    new THREE.Vector4(-0.374880,0.427652,0.822544,-0.942631), new THREE.Vector4(-0.374880,0.427652,-0.822544,-0.942631), new THREE.Vector4(-0.822544,0.427652,-0.374880,-0.942631),
-    new THREE.Vector4(0.324793,0.308651,-0.894004,-1.088367), new THREE.Vector4(0.894004,0.308651,-0.324793,-1.088367), new THREE.Vector4(0.324793,0.308651,0.894004,-1.088367),
-    new THREE.Vector4(0.894004,0.308651,0.324793,-1.088367), new THREE.Vector4(-0.894004,0.308651,0.324793,-1.088367), new THREE.Vector4(-0.324793,0.308651,0.894004,-1.088367),
-    new THREE.Vector4(-0.324793,0.308651,-0.894004,-1.088367), new THREE.Vector4(-0.894004,0.308651,-0.324793,-1.088367), new THREE.Vector4(0.366827,-0.805380,-0.465620,-1.777823),
-    new THREE.Vector4(0.465620,-0.805380,-0.366827,-1.777823), new THREE.Vector4(0.465620,-0.805380,0.366827,-1.777823), new THREE.Vector4(0.366827,-0.805380,0.465620,-1.777823),
-    new THREE.Vector4(-0.366827,-0.805380,0.465620,-1.777823), new THREE.Vector4(-0.465620,-0.805380,0.366827,-1.777823), new THREE.Vector4(-0.465620,-0.805380,-0.366827,-1.777823),
-    new THREE.Vector4(-0.366827,-0.805380,-0.465620,-1.777823)
+    new THREE.Vector4(0.000000,0.485670,0.874142,-0.527674), new THREE.Vector4(-0.874142,0.485670,0.000000,-0.527674), new THREE.Vector4(0.747824,0.587153,-0.309854,-0.641755),
+    new THREE.Vector4(-0.747824,0.587153,0.309854,-0.641755), new THREE.Vector4(0.309854,0.587153,0.747824,-0.641755), new THREE.Vector4(-0.309854,0.587153,-0.747824,-0.641755),
+    new THREE.Vector4(0.747656,0.587455,0.309689,-0.642051), new THREE.Vector4(-0.309689,0.587455,0.747656,-0.642051), new THREE.Vector4(-0.747656,0.587455,-0.309689,-0.642051),
+    new THREE.Vector4(0.309689,0.587455,-0.747656,-0.642051), new THREE.Vector4(0.334105,0.592429,-0.733077,-0.647359), new THREE.Vector4(0.733077,0.592429,0.334105,-0.647359),
+    new THREE.Vector4(-0.334105,0.592429,0.733077,-0.647359), new THREE.Vector4(-0.733077,0.592429,-0.334105,-0.647359), new THREE.Vector4(-0.732863,0.592748,0.334007,-0.646685),
+    new THREE.Vector4(0.732863,0.592748,-0.334007,-0.646685), new THREE.Vector4(0.334007,0.592748,0.732863,-0.646685), new THREE.Vector4(-0.334007,0.592748,-0.732863,-0.646685),
+    new THREE.Vector4(-0.000000,-0.919379,-0.393374,-1.414715), new THREE.Vector4(-0.393374,-0.919379,0.000000,-1.414715), new THREE.Vector4(0.000000,-0.919379,0.393374,-1.414715),
+    new THREE.Vector4(0.393374,-0.919379,0.000000,-1.414715), new THREE.Vector4(0.000000,0.110388,-0.993889,-1.058623), new THREE.Vector4(-0.993889,0.110388,0.000000,-1.058623),
+    new THREE.Vector4(-0.000000,0.110388,0.993889,-1.058623), new THREE.Vector4(0.993889,0.110388,0.000000,-1.058623), new THREE.Vector4(-0.127969,0.837078,-0.531907,-0.882743),
+    new THREE.Vector4(0.127969,0.837078,-0.531907,-0.882743), new THREE.Vector4(-0.531907,0.837078,0.127969,-0.882743), new THREE.Vector4(-0.531907,0.837078,-0.127969,-0.882743),
+    new THREE.Vector4(0.127969,0.837078,0.531907,-0.882743), new THREE.Vector4(-0.127969,0.837078,0.531907,-0.882743), new THREE.Vector4(0.531907,0.837078,-0.127969,-0.882743),
+    new THREE.Vector4(0.531907,0.837078,0.127969,-0.882743), new THREE.Vector4(0.374880,0.427652,-0.822544,-0.960631), new THREE.Vector4(0.822544,0.427652,-0.374880,-0.960631),
+    new THREE.Vector4(0.374880,0.427652,0.822544,-0.960631), new THREE.Vector4(0.822544,0.427652,0.374880,-0.960631), new THREE.Vector4(-0.822544,0.427652,0.374880,-0.960631),
+    new THREE.Vector4(-0.374880,0.427652,0.822544,-0.960631), new THREE.Vector4(-0.374880,0.427652,-0.822544,-0.960631), new THREE.Vector4(-0.822544,0.427652,-0.374880,-0.960631),
+    new THREE.Vector4(0.324793,0.308651,-0.894004,-1.106367), new THREE.Vector4(0.894004,0.308651,-0.324793,-1.106367), new THREE.Vector4(0.324793,0.308651,0.894004,-1.106367),
+    new THREE.Vector4(0.894004,0.308651,0.324793,-1.106367), new THREE.Vector4(-0.894004,0.308651,0.324793,-1.106367), new THREE.Vector4(-0.324793,0.308651,0.894004,-1.106367),
+    new THREE.Vector4(-0.324793,0.308651,-0.894004,-1.106367), new THREE.Vector4(-0.894004,0.308651,-0.324793,-1.106367), new THREE.Vector4(0.366827,-0.805380,-0.465620,-1.795823),
+    new THREE.Vector4(0.465620,-0.805380,-0.366827,-1.795823), new THREE.Vector4(0.465620,-0.805380,0.366827,-1.795823), new THREE.Vector4(0.366827,-0.805380,0.465620,-1.795823),
+    new THREE.Vector4(-0.366827,-0.805380,0.465620,-1.795823), new THREE.Vector4(-0.465620,-0.805380,0.366827,-1.795823), new THREE.Vector4(-0.465620,-0.805380,-0.366827,-1.795823),
+    new THREE.Vector4(-0.366827,-0.805380,-0.465620,-1.795823)
   ];
 
   const RT_VS=`varying vec3 vObj;
@@ -861,6 +861,7 @@ try{
     uniform vec3 uCamObj;
     uniform mat3 uM3;
     uniform vec3 uIor;
+    uniform vec3 uAbsorb;   /* 유리 속 흡수 — 빨강을 더 먹어 푸르스름해진다 */
     uniform float uExp;
     uniform sampler2D uEnv;
     uniform float uEnvK;
@@ -901,22 +902,22 @@ try{
       if(t1>1e8) return false;
       t=t1; nn=n1; return true;
     }
-    vec3 trace(vec3 ro,vec3 rd,float ior){
+    vec3 trace(vec3 ro,vec3 rd,float ior,float sig){
       float t; vec3 n;
       if(!enter(ro,rd,t,n)) return vec3(-1.0);
       vec3 p=ro+rd*t;
       float F=fres(clamp(dot(-rd,n),0.0,1.0),ior);
       vec3 acc=envColor(uM3*reflect(rd,n))*F;
-      float w=1.0-F;
+      float w=1.0-F, path=0.0;
       vec3 d=refract(rd,n,1.0/ior);
       for(int i=0;i<BOUNCES;i++){
         float tx; vec3 nx; vec3 o=p+d*2e-4;
         if(!exitAt(o,d,tx,nx)) break;
-        vec3 q=o+d*tx;
+        vec3 q=o+d*tx; path+=tx;
         vec3 od=refract(d,-nx,ior);              /* 나갈 때 법선은 안쪽을 향해야 한다 */
         if(dot(od,od)<1e-9){ d=reflect(d,nx); p=q; continue; }   /* 전반사 */
         float F2=fres(clamp(dot(od,nx),0.0,1.0),ior);
-        acc+=envColor(uM3*od)*w*(1.0-F2);
+        acc+=envColor(uM3*od)*w*(1.0-F2)*exp(-sig*path);
         w*=F2; d=reflect(d,nx); p=q;
         if(w<0.004) break;
       }
@@ -924,9 +925,9 @@ try{
     }
     void main(){
       vec3 ro=uCamObj, rd=normalize(vObj-uCamObj);
-      vec3 g=trace(ro,rd,uIor.g);
+      vec3 g=trace(ro,rd,uIor.g,uAbsorb.g);
       if(g.r<0.0) discard;                       /* 프리즘 밖은 그리지 않는다 */
-      vec3 col=vec3(trace(ro,rd,uIor.r).r, g.g, trace(ro,rd,uIor.b).b);
+      vec3 col=vec3(trace(ro,rd,uIor.r,uAbsorb.r).r, g.g, trace(ro,rd,uIor.b,uAbsorb.b).b);
       col*=uExp;
       col=(col*(2.51*col+0.03))/(col*(2.43*col+0.59)+0.14);
       gl_FragColor=vec4(pow(clamp(col,0.0,1.0),vec3(1.0/2.2)),1.0);
@@ -945,7 +946,8 @@ try{
                  (파장을 셋만 쓰기 때문). 레퍼런스 사진의 무지개는 아주
                  얇으므로 간격을 0.004 로 좁혔다 — 색 뭉텅이 15%% -> 3%%. */
               uIor:{value:new THREE.Vector3(1.5160,1.5200,1.5251)},
-              uExp:{value:0.90},uEnv:{value:envTex},uEnvK:{value:64.0},uCeil:{value:2.2}}});
+              uAbsorb:{value:new THREE.Vector3(0.208,0.100,0.024)},
+              uExp:{value:2.40},uEnv:{value:envTex},uEnvK:{value:64.0},uCeil:{value:2.2}}});
   /* 광선을 쏘기 위한 껍데기 상자. 프리즘보다 조금 크고, 실루엣은
      셰이더가 잘라 내므로 상자 자체는 보이지 않는다. */
   const prism=new THREE.Mesh(new THREE.BoxGeometry(2.6,2.4,2.6),glass);
