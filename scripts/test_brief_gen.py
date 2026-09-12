@@ -182,27 +182,12 @@ b["title"]["en"] = ""
 ok("제목 영문 누락 거부", has(G.validate(b), "title.en"))
 
 print("\n⑥ 섹션 구조")
-# 섹션은 고정하지 않는다. 18일치가 18일 모두 같은 네 칸이었던 것이 "매일
-# 같은 글"의 뼈대였다. 무엇을 몇 개, 어떤 순서로 쓸지는 글쓴이가 정한다.
 b = copy.deepcopy(base)
-b["sections"][0]["id"] = "oil"
-ok("처음 보는 섹션 id 도 통과", G.validate(b) == [], str(G.validate(b)))
+b["sections"][0]["id"] = "intro"
+ok("모르는 섹션 id 거부", has(G.validate(b), "모르는 섹션"))
 b = copy.deepcopy(base)
 b["sections"][0], b["sections"][3] = b["sections"][3], b["sections"][0]
-ok("순서를 바꿔도 통과", G.validate(b) == [], str(G.validate(b)))
-b = copy.deepcopy(base)
-b["sections"] = b["sections"][:2]
-# 칸을 줄이면 분량 하한에 걸린다 — 그건 섹션 규칙이 아니라 별개의 안전선이다.
-# 여기서 보려는 건 "칸이 두 개인 것 자체"에 불만이 없는지다.
-ok("두 칸만 써도 섹션 구조로는 안 걸린다",
-   not any(("섹션" in r and "분량" not in r) for r in G.validate(b)),
-   str(G.validate(b)))
-b = copy.deepcopy(base)
-b["sections"][1]["id"] = b["sections"][0]["id"]
-ok("id 가 겹치면 거부", has(G.validate(b), "겹친다"))
-b = copy.deepcopy(base)
-b["sections"][1]["id"] = ""
-ok("id 가 비면 거부", has(G.validate(b), "id 가 없다"))
+ok("섹션 순서 뒤바뀜 거부", has(G.validate(b), "섹션 순서"))
 b = copy.deepcopy(base)
 b["sections"][1]["paragraphs"] = []
 ok("빈 섹션 거부", has(G.validate(b), "문단이 없다"))
@@ -288,17 +273,11 @@ ok("'볼 것' 은 거부(너무 짧다)",
 ok("'코사이 커버리지에서' 는 번역체로 거부",
    has(G.check_headings(with_heads("반도체는 비켜갔다", "지수는 올랐다",
                                    "18일이 두 번을 받는다", "코사이 커버리지에서")), "번역체"))
-ok("정말 긴 제목은 거부(45자 이상)",
+ok("너무 긴 제목 거부",
    has(G.check_headings(with_heads("반도체는 비켜갔다", "지수는 올랐다",
                                    "18일이 두 번을 받는다",
-                                   "현대차그룹 세 곳의 반기보고서가 어제 한꺼번에 접수되면서 확인 지점이 한 번에 걸렸다")),
+                                   "현대차그룹 세 곳의 반기보고서가 어제 접수되어 확인 지점이 걸렸다")),
        "문장이다"))
-# 30자 상한이 "A는 올랐고 B는 내렸다" 식 짧은 대비 제목만 살아남게 했다.
-ok("35자 제목은 이제 통과",
-   G.check_headings(with_heads("반도체는 비켜갔다", "지수는 올랐다", "18일이 두 번을 받는다",
-                               "유가가 100달러를 넘은 자리에서 정유와 항공이 갈라섰다")) == [],
-   str(G.check_headings(with_heads("반도체는 비켜갔다", "지수는 올랐다", "18일이 두 번을 받는다",
-                                   "유가가 100달러를 넘은 자리에서 정유와 항공이 갈라섰다"))))
 # 8월 18일에 25자 제목이 거부돼 발행이 막혔다. 이제 30자까지 받는다.
 ok("25자 제목은 통과",
    not has(G.check_headings(with_heads("반도체는 비켜갔다", "올린 건 지수, 오른 건 상위 몇 종목",
@@ -552,15 +531,8 @@ ok("어긋나지 않으면 경고 없다", "다른 날이다" not in G._facts_te
 
 print("\n⑩ 프롬프트 — 못을 박은 규칙이 실제로 들어가는지")
 p = G.build_prompt(FACTS)
-ok("커버리지 비중 제한이 프롬프트에 있다", "4분의 1을 넘지 않게" in p)
-# 여기부터는 "매일 같은 글"을 고치려고 새로 넣은 것들이다.
-ok("무엇을 쓸지 고르라고 말한다", "네가 고른다" in p)
-ok("칸을 못 박지 않는다", "정해진 틀이 없다" in p)
-ok("미국부터 시작할 이유가 없다고 적는다", "미국 지수부터" in p)
-ok("대비 제목을 그만하라고 적는다", "A는 올랐고 B는 내렸다" in p)
-ok("이어지는 이야기를 권한다", "이어지는 이야기는 환영한다" in p)
-ok("칸마다 글자 수를 배정하지 않는다",
-   not any(x in p for x in ("약 700자", "약 650자", "약 600자")))
+ok("25% 상한이 프롬프트에 있다", "25%를 넘지 않는다" in p)
+ok("분량이 프롬프트에 있다", "2,500~3,000자" in p)
 ok("휴장 전제를 알려 준다", "'오늘 장'을 준비하는 글이 아니다" in p)
 ok("링크 형식을 지정한다", "[현대차](005380)" in p)
 ok("숫자 출처 규칙", "숫자는 시세에서, 이유는 뉴스에서" in p)

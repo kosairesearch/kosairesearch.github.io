@@ -13,13 +13,21 @@ on:
       dates:
         description: '다시 써 볼 날짜(공백 구분). 비우면 최근 3일'
         default: '2026-09-11 2026-09-10 2026-09-09'
+      ref:
+        description: '어느 가지의 코드로 써 볼지'
+        default: 'claude/hyo-yp2qk7'
 
 jobs:
   replay:
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
+      # 일부러 작업 가지를 꺼내 쓴다. 이 발판 파일만 main 에 있으면 되고,
+      # 고친 프롬프트는 main 에 올리지 않는다 — 올리는 순간 내일 아침
+      # 브리핑이 바로 새 규칙으로 나가기 때문이다. 보고 나서 정한다.
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
