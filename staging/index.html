@@ -1009,10 +1009,10 @@ try{
         vec2 q=w-vec2(-0.6,-1.0);
         float al=dot(q,LDIR)/15.0, ac=dot(q,LPER)/6.5;
         float r=sqrt(al*al+ac*ac);
-        float glow=1.0/(1.0+pow(r,2.3));
+        float wash=1.0/(1.0+pow(r,2.3));
         /* 코앞은 어둡다. 화면 아래쪽이 밝으면 바닥이 도드라진다. */
         float lowz=1.0/(1.0+pow(max(0.0,(w.y-(-0.5)))*0.42,3.0));
-        float g=glow*lowz;
+        float g=wash*lowz;
         float band=g;
 
         /* (2) 프리즘 그림자 — 훑는 빛을 가린다 */
@@ -1271,11 +1271,6 @@ try{
   const _rtInv=new THREE.Matrix4();
   const group=new THREE.Group(); group.add(prism); scene.add(group);
 
-  /* 뒤 글로우 — 실루엣을 띄우는 은은한 후광 */
-  const glow=new THREE.Sprite(new THREE.SpriteMaterial({map:radialTex([[0,'rgba(150,180,255,0.55)'],[1,'rgba(150,180,255,0)']],256),
-    transparent:true,opacity:0.13,blending:THREE.AdditiveBlending,depthWrite:false}));
-  glow.scale.setScalar(6);glow.position.z=-4;group.add(glow);
-
   /* 미세 먼지 — 프리즘 주변을 아주 천천히 떠다님 */
   const DN=70, dpos=new Float32Array(DN*3);
   for(let i=0;i<DN;i++){ dpos[i*3]=(Math.random()*2-1)*3.4; dpos[i*3+1]=(Math.random()*2-1)*2.6; dpos[i*3+2]=(Math.random()*2-1)*2; }
@@ -1330,7 +1325,6 @@ try{
     group.rotation.z=Math.sin(t*0.131)*0.08+Math.sin(t*0.0713+0.9)*0.04;
     prism.position.y=reduced?0:Math.sin(t*0.7)*0.06+Math.sin(t*0.413+1.1)*0.04;
     prism.position.x=reduced?0:Math.sin(t*0.157+0.6)*0.05;
-    glow.material.opacity=0.10+Math.sin(t*0.5)*0.04;
     dust.rotation.y=t*0.02; dust.rotation.z=t*0.008;
     prism.updateMatrixWorld(true);
     _rtInv.copy(prism.matrixWorld).invert();
