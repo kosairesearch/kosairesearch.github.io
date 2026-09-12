@@ -60,7 +60,8 @@ def show(name, url):
     # ④ '통화정책방향' 주변에 무엇이 있나
     for m in list(re.finditer(r"통화정책방향", h))[:3]:
         a, b = max(0, m.start() - 130), m.end() + 130
-        print(f"  · 주변: …{re.sub(r'\s+', ' ', h[a:b])}…")
+        near = re.sub(r"\s+", " ", h[a:b])
+        print(f"  · 주변: …{near}…")
 
 
 for name, url in PAGES:
