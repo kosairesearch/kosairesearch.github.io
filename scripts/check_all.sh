@@ -66,6 +66,7 @@ run "숫자 삼각대조" python3 scripts/verify_numbers.py --quiet --max 8
 # 값을 일부러 망가뜨려 넣고 진짜로 걸리는지 확인한다.
 run "검증기 자체"   python3 scripts/tests/verify_numbers_test.py
 run "금액 표기"     python3 scripts/tests/number_spacing_test.py
+run "밸류 합치기"   python3 scripts/tests/merge_valuation_test.py
 # 생성기는 DART·KRX 를 부르고 요금이 나가서 통째로 못 돌린다. 그래서 분모를
 # 되묻는 블록만 원문에서 꺼내 실제 값으로 돌려 본다 — 틀렸던 종목은 고쳐지고
 # 맞았던 종목(삼성생명)은 안 건드리는지.
