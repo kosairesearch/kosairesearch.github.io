@@ -39,6 +39,8 @@ jobs:
       #   · 전부 ✅ 인데 얇으면 → 정말 조용한 기간이거나, 자동으로 못 잡는
       #     일정(실적 발표 등)이 있는 것이다. data/calendar.json 에 넣는다.
       - name: 일정이 비었는지 본다
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python3 scripts/calendar_data.py --days ${{ inputs.days || '21' }} --check
 
       - name: 뉴스 갈래가 막혔는지 본다

@@ -37,6 +37,7 @@
 import argparse
 import datetime
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -46,29 +47,38 @@ import requests
 ROOT = Path(__file__).resolve().parent.parent
 MANUAL = ROOT / "data" / "calendar.json"
 FOMC_URL = "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
-BLS_URL = "https://www.bls.gov/schedule/news_release/{year}_sched.htm"
-# 한국은행 통화정책방향 결정회의. 페이지가 바뀔 수 있어 후보를 여럿 둔다 —
-# 하나만 두면 그 하나가 바뀌는 날 조용히 0건이 된다.
-BOK_URLS = [
-    "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?mtgSe=A&menuNo=200755",
-    "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?mtgSe=A&menuNo=200761",
-    "https://www.bok.or.kr/eng/singl/crncyPolicyDrcMtg/listYear.do?mtgSe=A&menuNo=400241",
-    "https://www.bok.or.kr/portal/bbs/B0000217/list.do?menuNo=200761",
-]
+# 미국 지표 일정. bls.gov 는 통째로 막혀 있다 — 2026-09-12 에 재 보니
+# 연간표·첫 화면·RSS 어느 주소든, 기본 UA 든 브라우저 UA 든 403 에
+# 1,325바이트짜리 차단 페이지만 온다. GitHub 러너 IP 를 막는 것으로 보인다.
+# 대신 세인트루이스 연준(FRED)이 같은 발표 일정을 API 로 준다. 열쇠가
+# 필요하지만 무료다(https://fredaccount.stlouisfed.org/apikeys).
+FRED_URL = "https://api.stlouisfed.org/fred/releases/dates"
+# 금통위 일정은 자동으로 못 가져온다 — 2026-09-12 에 후보 4개를 재 봤다.
+# 국문 페이지는 472,179바이트가 열리는데 그 안에 한국식 날짜가 2개뿐이고
+# '통화정책방향'은 18번 나온다(메뉴 글자). 목록이 화면에서 그려진다는 뜻
+# 이라 긁을 것이 없다. 영문 페이지도 같고, 한은 RSS 는 500, 통계청은
+# 148바이트를 준다. ECOS API 는 통계 수치용이지 회의 일정을 주지 않는다.
+#
+# 그래서 금통위·국내 지표 발표는 data/calendar.json 에 적는다. 연 8회라
+# 한 해에 한 번 여덟 줄이면 된다. 문제는 그걸 잊는 것이었는데, 이제
+# 말라붙으면 경보가 울린다(아래 manual() 과 collect() 의 health).
 # 앞으로 이 기간에 일정이 이 수보다 적으면 "수집이 빠졌을 수 있다"로 본다.
 # 9월 11일 사고 때가 14일에 1건이었다.
 THIN_DAYS, THIN_MIN = 14, 3
 # 수동 등록이 이보다 오래 갱신되지 않았으면 말라붙은 것으로 본다.
 MANUAL_STALE_DAYS = 21
-# BLS 에서 집어올 발표. 전부 가져오면 잡음이 많다.
-BLS_WANT = [
+# FRED 에서 집어올 발표. 전부 가져오면 하루에 수십 건이라 잡음이 된다.
+FRED_WANT = [
     ("Consumer Price Index", "미국 소비자물가"),
     ("Producer Price Index", "미국 생산자물가"),
     ("Employment Situation", "미국 고용보고서"),
     ("Real Earnings", "미국 실질임금"),
     ("Job Openings and Labor Turnover", "미국 구인·이직(JOLTS)"),
     ("Employment Cost Index", "미국 고용비용지수"),
-    ("U.S. Import and Export Price Indexes", "미국 수출입물가"),
+    ("Import and Export Price Indexes", "미국 수출입물가"),
+    ("Gross Domestic Product", "미국 GDP"),
+    ("Personal Income and Outlays", "미국 개인소비·PCE"),
+    ("Advance Monthly Sales for Retail", "미국 소매판매"),
 ]
 # 우리를 봇이라고 밝히면 막는 곳이 있다. bls.gov 가 403 을 줬다.
 # 연준은 지금 UA 로 잘 되므로 기본은 그대로 두고, 막히는 곳에만 브라우저
@@ -201,129 +211,59 @@ def fomc(year=None):
 # ────────────────────────────── 미국 지표 (BLS) ──────────────────────────────
 
 _TAG = re.compile(r"<[^>]+>")
-_ROW = re.compile(r"<tr[^>]*>(.*?)</tr>", re.S | re.I)
-# "Jan. 13, 2026" · "January 13, 2026" 둘 다 받는다.
-_USDATE = re.compile(r"\b([A-Z][a-z]{2,8})\.?\s+(\d{1,2}),\s*(\d{4})\b")
 
 
 def _text(html):
     return re.sub(r"\s+", " ", _TAG.sub(" ", html)).strip()
 
 
-def _us_month(word):
-    w = word.rstrip(".").lower()
-    for full, i in MONTHS.items():
-        if full.lower().startswith(w[:3]):
-            return i
-    return None
+def fred(year=None):
+    """미국 주요 지표 발표 일정 — 세인트루이스 연준(FRED) API.
 
+    왜 BLS 가 아니라 FRED 인가
+    --------------------------
+    bls.gov 를 긁으려 했는데 통째로 403 이다. 연간표·첫 화면·RSS 를 기본
+    UA 와 브라우저 UA 로 각각 두드려 봤고 여섯 번 다 1,325바이트짜리
+    차단 페이지가 왔다. 러너 IP 를 막는 것이라 UA 로는 못 넘는다.
 
-def bls(year=None):
-    """미국 노동통계국 연간 공표 일정 — 소비자물가·고용보고서 등.
-
-    표 한 줄에 날짜와 발표 이름이 같이 있다. 열 이름이나 클래스에 기대지
-    않고 줄 단위로 훑는다 — 그런 것에 기대면 페이지를 조금만 손봐도
-    조용히 0건이 된다. 이 파일이 고치려는 게 바로 그 조용함이다.
+    FRED 는 같은 발표(소비자물가·고용보고서 등)의 일정을 API 로 준다.
+    열쇠가 없으면 조용히 건너뛴다 — 그건 고장이 아니라 설정이 안 된 것이라
+    경보를 울리지 않는다. 매일 울리는 경보는 곧 아무도 안 보는 경보가 된다.
+    열쇠가 있는데 실패하면 그때는 문제로 잡는다.
     """
-    year = year or datetime.datetime.now(KST).year
-    html, err = _get(BLS_URL.format(year=year))
-    if html is None:
-        log(f"· BLS {year} 실패: {err}")
-        return [], _health(f"미국 지표 {year}", False, 0, f"내려받기 실패 — {err}")
+    key = os.getenv("FRED_API_KEY", "").strip()
+    if not key:
+        return [], _health("미국 지표", True, 0,
+                           "FRED 열쇠(FRED_API_KEY)가 없어 건너뛴다 — "
+                           "무료 발급: https://fredaccount.stlouisfed.org/apikeys")
+    today = datetime.datetime.now(KST).date()
+    url = (f"{FRED_URL}?api_key={key}&file_type=json"
+           f"&realtime_start={today}&realtime_end={today + datetime.timedelta(days=120)}"
+           f"&include_release_dates_with_no_data=true&limit=1000")
+    body, err = _get(url, headers=UA)
+    if body is None:
+        return [], _health("미국 지표", False, 0, f"FRED 내려받기 실패 — {err}")
+    try:
+        rows = json.loads(body).get("release_dates") or []
+    except Exception as e:
+        return [], _health("미국 지표", False, 0, f"FRED 응답을 못 읽었다 — {e}")
 
     out, seen = [], set()
-    for row in _ROW.findall(html):
-        txt = _text(row)
-        m = _USDATE.search(txt)
-        if not m:
-            continue
-        mi = _us_month(m.group(1))
-        if not mi:
-            continue
-        try:
-            d = datetime.date(int(m.group(3)), mi, int(m.group(2)))
-        except ValueError:
-            continue
-        for needle, ko in BLS_WANT:
-            if needle.lower() not in txt.lower():
+    for r in rows:
+        nm = r.get("release_name") or ""
+        for needle, ko in FRED_WANT:
+            if needle.lower() not in nm.lower():
                 continue
-            key = (d.isoformat(), ko)
-            if key in seen:
+            d = r.get("date") or ""
+            if (d, ko) in seen:
                 continue
-            seen.add(key)
-            # 발표 대상 기간이 제목에 붙어 있으면 같이 남긴다("for August 2026").
-            per = re.search(r"for\s+([A-Z][a-z]+\s+\d{4}|\d{1,2}(?:st|nd|rd|th)?\s+Quarter\s+\d{4})", txt)
-            out.append({"kind": "해외 지표", "date": d.isoformat(), "title": ko,
-                        "detail": (f"{per.group(1)} 기준 · " if per else "") + "BLS 공표 일정"})
+            seen.add((d, ko))
+            out.append({"kind": "해외 지표", "date": d, "title": ko,
+                        "detail": f"{nm} · FRED 공표 일정"})
             break
-
-    # 연간이면 소비자물가만 12번 나온다. 한 자리도 없으면 파싱이 깨진 것이다.
-    ok = len(out) >= 12
-    return out, _health(f"미국 지표 {year}", ok, len(out),
-                        "" if ok else "연간 표인데 12건도 못 읽었다 — 페이지 모양이 바뀌었을 수 있다")
-
-
-# ────────────────────────────── 금통위 (한국은행) ──────────────────────────────
-
-_KODATE = re.compile(r"(\d{4})[.\-\s년]+(\d{1,2})[.\-\s월]+(\d{1,2})")
-# 회의 항목임을 가리키는 말. 이 말이 같은 덩어리에 없으면 날짜를 쓰지 않는다.
-_BOK_HINT = re.compile(r"통화정책방향|금융통화위원회|금통위|Monetary\s+Policy", re.I)
-# 목록 한 칸을 자르는 경계. 어떤 마크업이든 이 중 하나는 쓴다.
-_CHUNK = re.compile(r"</(?:li|tr|dd|p|article)>", re.I)
-
-
-def bok(year=None):
-    """한국은행 통화정책방향 결정회의 일정.
-
-    연 8회이고 전년도에 한 해치가 공표된다. 페이지 주소가 바뀔 수 있어
-    후보를 여럿 두고 먼저 읽히는 것을 쓴다.
-
-    날짜를 아무거나 줍지 않는다
-    ---------------------------
-    처음에는 페이지 전체에서 날짜처럼 생긴 것을 다 주웠다. 시험에서
-    바닥글의 '게시일 2026.09.12' 가 금통위 회의로 섞여 들어왔다 — 8건이
-    아니라 9건이 됐고, 그대로 뒀으면 없는 회의가 브리핑에 실렸을 것이다.
-    그래서 목록 한 칸씩 잘라, 그 칸에 '통화정책방향' 같은 말이 같이 있을
-    때만 날짜를 쓴다.
-    """
-    year = year or datetime.datetime.now(KST).year
-    last_err = ""
-    for url in BOK_URLS:
-        html, err = _get(url)
-        if html is None:
-            last_err = err
-            continue
-        out, seen = [], set()
-        for chunk in _CHUNK.split(html):
-            txt = _text(chunk)
-            if not _BOK_HINT.search(txt):
-                continue
-            for m in _KODATE.finditer(txt):
-                try:
-                    d = datetime.date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
-                except ValueError:
-                    continue
-                if d.year != year or d.isoformat() in seen:
-                    continue
-                seen.add(d.isoformat())
-                out.append({"kind": "국내 지표", "date": d.isoformat(),
-                            "title": "한국은행 금융통화위원회(통화정책방향)",
-                            "detail": "기준금리 결정"})
-        # 통화정책방향 회의는 연 8회다. 창을 좁게 잡는다 — 쓰레기를
-        # 내보내느니 실패하고 소리를 지르는 편이 낫다. 실패하면 경보가
-        # 울리고 사람이 calendar.json 에 넣으면 된다.
-        if 6 <= len(out) <= 12:
-            out.sort(key=lambda r: r["date"])
-            return out, _health(f"금통위 {year}", True, len(out))
-        # 왜 안 됐는지를 남긴다. 다음에 이걸 보고 고친다 — 안 남기면 매번
-        # 처음부터 짐작해야 한다. 실패는 조용하면 안 되고 막연해서도 안 된다.
-        whole = _text(html)
-        last_err = (f"{len(out)}건 — 받은 크기 {len(html):,}바이트 · "
-                    f"'통화정책방향' 같은 말 {len(_BOK_HINT.findall(whole))}곳 · "
-                    f"{year}년 날짜 {len(set(m.group(0) for m in _KODATE.finditer(whole)))}개"
-                    f" ({url.split('?')[0]})")
-    log(f"· 금통위 실패: {last_err}")
-    return [], _health(f"금통위 {year}", False, 0, last_err or "후보 주소를 모두 못 읽었다")
+    ok = bool(out)
+    return out, _health("미국 지표", ok, len(out),
+                        "" if ok else "열쇠는 있는데 한 건도 안 잡혔다 — 이름 목록을 확인하라")
 
 
 # ────────────────────────────── 수동 등록 ──────────────────────────────
@@ -382,7 +322,7 @@ def collect(days=14, today=None):
 
     rows, sources = [], []
     for y in years:
-        for fn in (fomc, bls, bok):
+        for fn in (fomc, fred):
             got, h = fn(y)
             rows += got
             sources.append(h)
