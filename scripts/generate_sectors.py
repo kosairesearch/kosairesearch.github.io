@@ -40,6 +40,8 @@ import datetime
 from collections import defaultdict
 from pathlib import Path
 
+import number_spacing       # 금액 표기 통일(79조3,187억원 → 79조 3,187억원)
+
 import anthropic
 from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
 from anthropic.types.messages.batch_create_params import Request
@@ -453,6 +455,10 @@ def collect(cl, as_of):
     save_retry(dropped, as_of)
     _log_usage(use, st.get("model", MODEL))
     payload = {"lastUpdated": as_of, "model": st.get("model", MODEL), "sectors": sectors}
+    # 금액 표기 통일 — 리포트와 같은 규칙(한글 맞춤법 제44항)
+    _nsp, payload = number_spacing.normalize_report(payload)
+    if _nsp:
+        print(f"  · 금액 표기 {_nsp}곳 정리")
     OUT_JS.write_text("// KOS ai — 업종 AI 분석 (자동 생성). 직접 수정 금지.\n"
                       "window.KOS_SECTORS = " + json.dumps(payload, ensure_ascii=False, indent=2) + ";\n",
                       encoding="utf-8")
