@@ -956,6 +956,76 @@ try{
 
 
 
+
+  /* ───────────────────────────────────────────────────────
+     바닥 — 경계가 없는 바닥.
+     어두운 판을 깔면 반드시 끝선이 보인다. 그래서 판을 깔지 않고
+     빛만 더한다(AdditiveBlending). 빛이 0 으로 잦아든 자리는 그대로
+     배경이라 어디까지가 바닥인지 눈으로 찾을 수 없다.
+     ─────────────────────────────────────────────────────── */
+  const floorMat=new THREE.ShaderMaterial({
+    transparent:true, blending:THREE.AdditiveBlending,
+    depthWrite:false, depthTest:false, side:THREE.DoubleSide,
+    uniforms:{uTime:{value:0}},
+    vertexShader:`varying vec2 vUv;
+      void main(){ vUv=uv; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0); }`,
+    fragmentShader:`
+      uniform float uTime; varying vec2 vUv;
+      /* 값싼 잡티 — 넓은 그라데이션에 생기는 띠(밴딩)를 깨 준다 */
+      float grain(vec2 p){ return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453); }
+      void main(){
+        vec2 p=vUv*2.0-1.0;                       /* -1 .. 1 */
+        float far=smoothstep(1.0,-0.15,p.y);      /* 멀수록 잦아든다 */
+        float near=smoothstep(-1.0,-0.55,p.y);    /* 코앞도 잦아든다 */
+        /* 스쳐 지나가는 빛줄기 — 왼쪽 아래에서 오른쪽 위로 */
+        float d=(p.x*0.92 + p.y*0.30 + 0.26 + 0.05*sin(uTime*0.16));
+        float band=exp(-d*d*5.0)*1.0 + exp(-d*d*1.1)*0.30;   /* 좁은 심지 + 넓은 번짐 */
+        /* 옆으로도 잦아들게 해서 좌우 끝선을 지운다 */
+        float side=smoothstep(1.05,0.25,abs(p.x));
+        float g=band*far*near*side;
+        g*=0.92+0.08*grain(gl_FragCoord.xy*0.5);
+        vec3 col=mix(vec3(0.40,0.47,0.62), vec3(0.72,0.80,0.95), band);
+        gl_FragColor=vec4(col*g*0.30, g);
+      }`
+  });
+  const floorGlow=new THREE.Mesh(new THREE.PlaneGeometry(46,30),floorMat);
+  floorGlow.rotation.x=-Math.PI/2;                /* 눕힌다 */
+  floorGlow.position.set(0.6,-2.45,-5.0);
+  floorGlow.renderOrder=-2;
+  scene.add(floorGlow);
+
+  /* 프리즘 아래 무지개 번짐 — 유리를 지난 빛이 바닥에 떨어진 자국.
+     프리즘을 따라다니되 아주 옅게만 둔다. */
+  const spillMat=new THREE.ShaderMaterial({
+    transparent:true, blending:THREE.AdditiveBlending,
+    depthWrite:false, depthTest:false, side:THREE.DoubleSide,
+    uniforms:{uTime:{value:0}},
+    vertexShader:`varying vec2 vUv;
+      void main(){ vUv=uv; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0); }`,
+    fragmentShader:`
+      uniform float uTime; varying vec2 vUv;
+      void main(){
+        vec2 p=vUv*2.0-1.0;
+        /* 프리즘에서 비스듬히 뻗어 나가는 가는 줄기 */
+        float t=p.x*0.86+p.y*0.51;
+        float u=p.x*(-0.51)+p.y*0.86;
+        float streak=exp(-u*u*15.0)*exp(-t*t*1.5);
+        float head=exp(-(p.x*p.x+p.y*p.y)*7.0);   /* 프리즘 바로 밑 */
+        /* 무지개 — 줄기를 따라 색이 갈린다. 채도를 낮춰 과하지 않게. */
+        float h=clamp(t*0.62+0.5+0.05*sin(uTime*0.21),0.0,1.0);
+        vec3 c1=vec3(.36,.46,1.),c2=vec3(.42,.86,.96),c3=vec3(.86,.94,.80),
+             c4=vec3(1.,.86,.55),c5=vec3(1.,.60,.48);
+        vec3 col = h<.25? mix(c1,c2,h/.25) : h<.5? mix(c2,c3,(h-.25)/.25)
+                 : h<.75? mix(c3,c4,(h-.5)/.25) : mix(c4,c5,(h-.75)/.25);
+        float g=streak*0.62+head*0.44;
+        gl_FragColor=vec4(col*g*0.55, g);
+      }`
+  });
+  const spill=new THREE.Mesh(new THREE.PlaneGeometry(7.2,7.2),spillMat);
+  spill.rotation.x=-Math.PI/2;
+  spill.renderOrder=-1;
+  scene.add(spill);
+
   const _rtInv=new THREE.Matrix4();
   const group=new THREE.Group(); group.add(prism); scene.add(group);
 
@@ -1016,6 +1086,8 @@ try{
   function place(){
     if(mobile){ group.position.set(0,1.38,0); group.scale.setScalar(0.47); }
     else{ group.position.set(1.4,0.1,0); group.scale.setScalar(0.78); }
+    spill.position.set(group.position.x, -2.42, group.position.z-0.3);
+    spill.scale.setScalar(mobile?0.62:1.0);
   }
   resize(); addEventListener('resize',resize); setTimeout(resize,900);
   if(window.ResizeObserver) new ResizeObserver(()=>resize()).observe(document.body);
@@ -1047,6 +1119,7 @@ try{
     dust.rotation.y=t*0.02; dust.rotation.z=t*0.008;
     beam.material.opacity=0.13+Math.sin(t*0.45)*0.03+Math.sin(t*0.171+0.8)*0.02;
     glint.material.opacity=0.22+Math.sin(t*1.1)*0.07+Math.sin(t*0.437+1.9)*0.05;          // 부유
+    floorMat.uniforms.uTime.value=t; spillMat.uniforms.uTime.value=t;
     prism.updateMatrixWorld(true);
     _rtInv.copy(prism.matrixWorld).invert();
     glass.uniforms.uCamObj.value.copy(camera.position).applyMatrix4(_rtInv);
