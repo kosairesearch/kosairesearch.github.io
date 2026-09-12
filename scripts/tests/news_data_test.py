@@ -56,6 +56,8 @@ ok("원자재도 본다", any("원자재" in l for l in labels))
 ok("핵심 갈래 이름이 실제 갈래와 맞는다",
    all(c in labels for c in N.CORE_GROUPS), f"{N.CORE_GROUPS} vs {labels}")
 
+_ALL = N.QUERIES_KO + N.QUERIES_EN
+
 print("\n── 비었을 때 소리를 지르는가 ──")
 h = run(lambda *a, **k: [])["health"]
 ok("전부 막히면 경보", not h["ok"])
@@ -76,7 +78,13 @@ def _half(q, *a, **k):
 
 _n[0] = 0
 h = run(_half)["health"]
-ok("절반이 비면 경보", not h["ok"], str(h["problems"]))
+# 문턱을 3분의 1에서 0.6 으로 올렸다. 첫 실전에서 11갈래 중 4갈래가
+# 비었다고 울렸는데, 일요일 새벽이라 조용했을 뿐 막힌 게 아니었다.
+# 절반쯤 비는 것은 이제 정상으로 본다 — 조용한 갈래는 원래 있다.
+ok("절반쯤 비는 것은 정상 (경보가 무뎌지면 안 되니까)", h["ok"], str(h["problems"]))
+_dead = {q for _, q in _ALL[:8]}
+h = run(lambda q, *a, **k: ([] if q in _dead else ART))["health"]
+ok("대부분(8/11)이 비면 그때는 경보", not h["ok"], str(h["problems"]))
 
 print("\n── 멀쩡할 때 조용한가 (경보가 무뎌지면 안 된다) ──")
 h = run(lambda *a, **k: ART)["health"]
@@ -87,7 +95,6 @@ ok("갈래별 건수를 남긴다", len(h["counts"]) == len(labels), str(h["coun
 # 일이 실제로 한 번 있었다 — 그러면 나중에 값을 조정해도 아무 일도 안 난다.
 import math as _math  # noqa: E402
 
-_ALL = N.QUERIES_KO + N.QUERIES_EN
 _NONCORE = [q for l, q in _ALL if l not in N.CORE_GROUPS]
 
 
