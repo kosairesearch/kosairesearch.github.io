@@ -293,24 +293,56 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          D="${{ steps.gen.outputs.date }}"
           # 페이지는 ④가 성공했을 때만 올린다. ④가 실패했다면 brief.html 이
           # 반쯤 쓰인 상태일 수 있으므로 손대지 않는다 — 깨진 페이지를
           # 올리느니 전날 글을 그대로 두는 게 낫다.
           if [ "${{ steps.render.outcome }}" = "success" ]; then
             git add data/briefs brief.html
-            MSG="📰 모닝 브리핑 ${{ steps.gen.outputs.date }}"
+            MSG="📰 모닝 브리핑 $D"
           else
             git add data/briefs
-            MSG="📰 모닝 브리핑 초안 ${{ steps.gen.outputs.date }} (발행 대기)"
+            MSG="📰 모닝 브리핑 초안 $D (발행 대기)"
           fi
           if git diff --cached --quiet; then
             echo "변경 없음 — 커밋하지 않는다"; exit 0
           fi
           git commit -m "$MSG"
+
+          # 밀어 넣기.
+          #
+          #   예전에는 실패해도 아무 일 없다는 듯이 초록으로 끝났다. 반복문의
+          #   마지막 명령이 sleep 이라서, 세 번 다 실패해도 단계는 성공이었다.
+          #   9월 11일에 실제로 그랬다 — 리베이스가 충돌 나고 세 번 다 실패했는데
+          #   워크플로에는 체크 표시가 떴다. 그날은 다른 슬롯이 이미 올려 둬서
+          #   넘어갔지만, 그게 그날의 유일한 슬롯이었다면 브리핑은 조용히
+          #   사라지고 아무도 몰랐다.
+          #
+          #   충돌이 난 채로 두면 다음 시도는 'unmerged files' 로 무조건 또
+          #   실패한다. 그래서 되돌려 놓고 다시 시도한다.
+          PUSHED=
           for i in 1 2 3; do
-            git pull --rebase origin main && git push origin HEAD:main && break
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              PUSHED=1; break
+            fi
+            git rebase --abort 2>/dev/null || true
             echo "재시도 $i"; sleep $((i*4))
           done
+
+          if [ -z "$PUSHED" ]; then
+            # 다른 슬롯이 먼저 올렸으면 우리 것은 버리는 게 맞다. 그건 실패가
+            # 아니다. 그 경우가 아니면 브리핑을 잃은 것이므로 소리를 낸다.
+            git fetch origin main
+            if git show "origin/main:data/briefs/$D.json" 2>/dev/null | python -c \
+              'import json,sys; sys.exit(0 if (json.load(sys.stdin).get("meta") or {}).get("publishedAt") else 1)'
+            then
+              echo "다른 슬롯이 이미 $D 를 올렸다 — 내 것은 버린다"
+              exit 0
+            fi
+            echo "::error::브리핑을 올리지 못했다 ($D) — 세 번 다 실패했다"
+            echo "❌ 밀어 넣기 실패 — brief.html 이 갱신되지 않았다" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
           if [ "${{ steps.render.outcome }}" = "success" ]; then
             echo "" >> $GITHUB_STEP_SUMMARY
             echo "→ https://kosai.kr/brief.html" >> $GITHUB_STEP_SUMMARY
