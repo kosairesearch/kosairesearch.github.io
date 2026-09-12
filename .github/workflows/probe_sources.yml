@@ -40,3 +40,5 @@ jobs:
           pip install playwright
           playwright install --with-deps chromium
           python scripts/bok_schedule.py --year 2026 || true
+          echo "════════ 내년 ════════"
+          python scripts/bok_schedule.py --year 2027 || true

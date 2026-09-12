@@ -38,71 +38,78 @@ def log(*a):
 
 
 def rows_from_page(year, headless=True):
-    """(행 목록, 오류). 행은 {date, text} — 판정은 부르는 쪽에서."""
+    """(행 목록, 오류). 행은 {date, text}.
+
+    화면이 이렇게 찍힌다 — 연도가 날짜에 안 붙어 있다.
+
+        02월 26일(목)
+            통화정책방향 관련 총재 기자간담회 (2026.02)
+        04월 10일(금)
+            통화정책방향 관련 총재 기자간담회 (2026.04)
+
+    연도는 위쪽 '년도선택' 상자에 따로 있다. 처음에는 네 자리 연도를 찾는
+    정규식을 썼다가 한 줄도 못 읽었다. 그래서 DOM 구조에 기대지 않고
+    화면 글자를 줄 단위로 읽는다 — 표가 되든 목록이 되든 사람 눈에
+    보이는 것은 이 글자들이고, 그게 가장 덜 깨진다.
+    """
     try:
         from playwright.sync_api import sync_playwright
     except ImportError:
         return None, "playwright 가 없다 — pip install playwright 후 playwright install chromium"
 
-    out = []
+    head = re.compile(r"^\s*(\d{1,2})\s*월\s*(\d{1,2})\s*일\s*(?:\(([월화수목금토일])\))?")
+    inline_year = re.compile(r"\((20\d\d)[.\-/](\d{1,2})\)")
+
     with sync_playwright() as pw:
         b = pw.chromium.launch(headless=headless)
         pg = b.new_page(locale="ko-KR")
         try:
             pg.goto(URL, wait_until="networkidle", timeout=60000)
-            pg.wait_for_timeout(2500)
-            # 표든 목록이든, 날짜가 들어 있는 가장 작은 덩어리를 모은다.
-            for sel in ("table tr", "ul li", ".board-list li", ".tbl-list tr"):
-                for el in pg.query_selector_all(sel):
-                    t = re.sub(r"\s+", " ", (el.inner_text() or "")).strip()
-                    if not t or len(t) > 400:
-                        continue
-                    m = DATE.search(t)
-                    if not m:
-                        continue
-                    try:
-                        d = datetime.date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
-                    except ValueError:
-                        continue
-                    out.append({"date": d.isoformat(), "text": t[:200], "sel": sel})
-                if out:
-                    break
-            if not out:
-                # 못 읽었으면 짐작하지 말고 화면을 그대로 본다.
-                log("\n── 아무것도 못 읽었다. 화면에 실제로 있는 것 ──")
-                log(f"제목: {pg.title()}")
-                for sel in ("table", "ul", "ol", "dl", ".board", "[class*=list]",
-                            "[class*=tbl]", "[class*=sch]", "[class*=calend]"):
-                    n = len(pg.query_selector_all(sel))
-                    if n:
-                        log(f"  {sel}: {n}개")
-                body = re.sub(r"\n{3,}", "\n\n", pg.inner_text("body") or "")
-                # '통화정책방향' 이 나오는 곳 주변만 본다 — 머리말·꼬리말은 빼고
-                hits = [m.start() for m in re.finditer("통화정책방향", body)]
-                log(f"  본문 {len(body):,}자 · '통화정책방향' {len(hits)}곳")
-                for i, h in enumerate(hits[:4]):
-                    chunk = body[max(0, h - 150):h + 700]
-                    log(f"\n  ── {i+1}번째 주변 ──\n{chunk}")
-                if not hits:
-                    log("\n  ── 본문 앞부분 ──\n" + body[:2500])
-                # 연도 고르는 단추가 있으면 그 목록도
-                for sel in ("select", "[class*=year]", "[id*=year]"):
-                    for el in pg.query_selector_all(sel)[:5]:
-                        t = re.sub(r"\s+", " ", (el.inner_text() or ""))[:200]
-                        if t:
-                            log(f"  [{sel}] {t}")
+            pg.wait_for_timeout(2000)
+
+            # 연도를 고른다. 상자가 없거나 그 해가 없으면 보이는 대로 읽는다.
+            sel = pg.query_selector("select")
+            if sel:
+                opts = [(o.get_attribute("value") or "", (o.inner_text() or "").strip())
+                        for o in sel.query_selector_all("option")]
+                want = [v for v, t in opts if str(year) in (v or "") or str(year) in t]
+                if want:
+                    sel.select_option(want[0])
+                    pg.wait_for_load_state("networkidle", timeout=60000)
+                    pg.wait_for_timeout(2000)
+                else:
+                    log(f"· {year}년이 년도선택에 없다: {[t for _, t in opts][:6]}")
+
+            lines = (pg.inner_text("body") or "").split("\n")
         except Exception as e:
             b.close()
             return None, f"{type(e).__name__}: {e}"
         b.close()
-    # 같은 날짜가 여러 선택자로 잡히면 하나로
-    seen, uniq = set(), []
-    for r in sorted(out, key=lambda x: x["date"]):
-        if r["date"] in seen:
+
+    out, seen = [], set()
+    for i, ln in enumerate(lines):
+        m = head.match(ln)
+        if not m:
             continue
-        seen.add(r["date"])
-        uniq.append(r)
-    return uniq, ""
+        # 뒤따르는 줄에서 무슨 회의인지와 연도를 찾는다
+        tail = " ".join(x.strip() for x in lines[i + 1:i + 6] if x.strip())[:220]
+        ym = inline_year.search(tail) or inline_year.search(ln)
+        y = int(ym.group(1)) if ym else year
+        try:
+            d = datetime.date(y, int(m.group(1)), int(m.group(2)))
+        except ValueError:
+            continue
+        if d.isoformat() in seen:
+            continue
+        seen.add(d.isoformat())
+        # 화면에 적힌 요일과 실제 요일이 다르면 연도를 잘못 붙인 것이다.
+        wd = m.group(3)
+        if wd and "월화수목금토일"[d.weekday()] != wd:
+            log(f"· 요일이 어긋난다 — 화면 {wd} / 계산 "
+                f"{'월화수목금토일'[d.weekday()]} ({d}) — 연도를 잘못 붙였을 수 있다. 버린다")
+            continue
+        out.append({"date": d.isoformat(), "text": tail, "sel": "본문 줄"})
+    return sorted(out, key=lambda r: r["date"]), ""
 
 
 def main():
