@@ -1,0 +1,69 @@
+name: 🏦 금통위 일정 읽어 오기 (매달)
+
+# 한국은행 「통화정책방향 결정회의 일정 및 자료」 페이지에서 올해 회의
+# 날짜를 읽어 data/bok_meetings.json 에 적는다.
+#
+# 왜 브라우저를 쓰나
+#   그 페이지는 목록을 화면에서 그린다. 그냥 받아 보면 472KB 가 오는데
+#   날짜가 2개뿐이다. 사람이 보는 화면을 그대로 읽어야 한다.
+#
+# 왜 매달인가
+#   연 8회짜리 일정이라 자주 바뀌지 않는다. 매일 도는 브리핑이 브라우저를
+#   띄울 이유는 없다. 브리핑은 여기서 나온 파일만 읽는다.
+#
+# 안 되면 조용히 넘어가지 않는다 — 읽은 것이 연 8회가 아니거나 올해 것이
+# 없으면 brief_health 가 잡아서 메일을 보낸다.
+
+on:
+  schedule:
+    # 매달 2일 06:20 KST (= 1일 21:20 UTC).
+    # 28-31 로 썼다가 한 달에 서너 번 돌았다 — 60일에 7번이었다. 해롭지는
+    # 않지만(바뀐 것이 없으면 안 쓴다) 적어 둔 것과 다르게 도는 것은 그
+    # 자체가 결함이다. 나중에 누가 이걸 믿고 계산한다.
+    - cron: '20 21 1 * *'
+  workflow_dispatch:
+    inputs:
+      year:
+        description: '어느 해를 읽을지(비우면 올해)'
+        default: ''
+      write:
+        description: '파일에 쓸지(false 면 보기만)'
+        default: 'true'
+
+jobs:
+  read:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt playwright
+      - run: playwright install --with-deps chromium
+
+      - name: 한국은행 페이지에서 읽는다
+        run: |
+          Y="${{ inputs.year }}"
+          W="${{ inputs.write }}"
+          ARGS=""
+          [ -n "$Y" ] && ARGS="--year $Y"
+          [ "$W" != "false" ] && ARGS="$ARGS --write"
+          python3 scripts/bok_schedule.py $ARGS
+
+      - name: 바뀌었으면 적어 둔다
+        run: |
+          git config --global user.email "bot@kosairesearch.github.io"
+          git config --global user.name "KOS ai Bot"
+          git add -A data/bok_meetings.json 2>/dev/null || true
+          git diff --cached --quiet && { echo "바뀐 것 없음"; exit 0; }
+          git commit -m "🏦 금통위 일정 $(TZ='Asia/Seoul' date +'%Y-%m-%d')"
+          for i in $(seq 1 10); do
+            git fetch origin main -q || true
+            if git rebase origin/main -q && git push origin main -q; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $(( (RANDOM % 7) + 2 ))
+          done
+          echo "::error::push 실패"; exit 1

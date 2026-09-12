@@ -1,0 +1,62 @@
+name: 🚨 브리핑 재료 점검 (비면 실패해서 알린다)
+
+# 왜 있나
+# -------
+# 9월 11일 브리핑이 "앞으로 2주간 일정은 9월 16일 FOMC 하나뿐"이라고 썼다.
+# 사실이 아니었다. 일정의 절반을 사람이 data/calendar.json 에 손으로 넣는
+# 구조였는데 8월 27일 이후 비어 있었다. 2주 넘게 말라 있었고 아무도 몰랐다.
+#
+# 코드를 고쳐 자동으로 가져오게 했지만, 그것만으로는 같은 일이 또 난다 —
+# 사이트 모양이 바뀌면 조용히 0건이 될 뿐이다. 그래서 이 잡이 있다.
+# 재료가 비면 **잡이 실패한다**. 실패한 잡은 GitHub 가 메일을 보낸다.
+# 로그 속 경고는 아무도 안 읽지만 메일은 온다.
+#
+# 브리핑보다 한 시간 먼저 돈다. 빨간불을 보고 손쓸 시간이 있으라고.
+
+on:
+  schedule:
+    # 평일 06:30 KST = 전날 21:30 UTC (일~목)
+    - cron: '30 21 * * 0-4'
+  workflow_dispatch:
+    inputs:
+      days:
+        description: '앞으로 며칠을 보나'
+        default: '21'
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+
+      # 여기서 실패하면 재료가 빈 것이다. 고칠 곳은 두 군데다.
+      #   · 갈래가 ❌ 면  → 그 사이트 모양이 바뀌었다. 파서를 고친다.
+      #   · 전부 ✅ 인데 얇으면 → 정말 조용한 기간이거나, 자동으로 못 잡는
+      #     일정(실적 발표 등)이 있는 것이다. data/calendar.json 에 넣는다.
+      - name: 일정이 비었는지 본다
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: python3 scripts/calendar_data.py --days ${{ inputs.days || '21' }} --check
+
+      - name: 뉴스 갈래가 막혔는지 본다
+        if: always()
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+        run: |
+          python3 - <<'PY'
+          import sys
+          sys.path.insert(0, "scripts")
+          import news_data
+          h = news_data.collect()["health"]
+          for k, v in h["counts"].items():
+              print(f"  {'✅' if v else '❌'} {k}: {v}건")
+          for p in h["problems"]:
+              print(f"::warning title=브리핑 뉴스 수집::{p}")
+          sys.exit(0 if h["ok"] else 1)
+          PY

@@ -51,6 +51,8 @@ jobs:
       - name: ③ 일정 (연준 + 수동 등록)
         if: always()
         timeout-minutes: 2
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python scripts/calendar_data.py --days 21
 
       - name: ④ 뉴스 (구글 뉴스 RSS)

@@ -82,22 +82,29 @@ LEN_WANT = (2300, 3000)
 COVERAGE_CAP = 0.25
 COVERAGE_HARD = 0.30      # 재시도 후에도 이걸 넘으면 발행하지 않는다
 
-# 섹션 id 와 그 섹션이 하는 일. 순서가 글의 순서다.
+# 섹션은 고정하지 않는다.
 #
-# 제목은 여기 없다. 매일 모델이 새로 쓴다 — "간밤 뉴욕", "볼 것" 처럼 고정된
-# 이름은 번역체로 읽히고 내용이 없다. 대신 id 와 순서는 고정이라, 제목이
-# 달라져도 세 번째 섹션은 늘 '볼 것' 자리다.
-SECTIONS = [
-    ("us",       "간밤 미국 시장"),
-    ("domestic", "직전 국내 장"),
-    ("ahead",    "다음 개장까지 볼 것"),
-    ("coverage", "KOSAI 커버리지"),
-]
+# 예전에는 us·domestic·ahead·coverage 넷을 이 순서로 박아 두고 칸마다 글자
+# 수까지 배정했다. 18일치를 재 보니 네 칸 구성이 18일 중 18일 똑같았고,
+# 리드가 '미국/뉴욕/간밤' 으로 시작한 날이 14일, 제목에 '반도체'가 들어간
+# 날이 11일이었다. 재료가 부족해서가 아니다 — 뼈대가 같으니 리듬이 같았다.
+#
+# 그래서 몇 개를 쓸지, 무엇을 먼저 놓을지, 각각에 얼마를 쓸지를 모델이
+# 정하게 두었다. 화면(render_brief.py)이 섹션 id 에 기대는 것은 coverage
+# 하나뿐이다 — 그 섹션 위에만 출처 표시를 단다. 나머지는 몇 개든 어떤
+# 순서든 그대로 그린다.
+COVERAGE_ID = "coverage"
 
-# 제목 길이. 6자 미만은 내용이 없고, 너무 길면 제목이 아니라 문장이다.
-# 상한을 24자로 뒀다가 25자짜리("올린 건 지수, 오른 건 상위 몇 종목" 류)가 거부돼
-# 발행이 한 번 막혔다. 한 글자 차이로 막을 일이 아니라서 30자로 넓혔다.
-HEAD_MIN, HEAD_MAX = 6, 30
+# 제목 길이. 상한과 하한이 하는 일이 다르다.
+#
+# 하한(6자)은 남긴다. '볼 것'·'간밤 뉴욕' 처럼 내용이 없는 고정 이름을 막는
+# 것이 이 값의 일이고, 그건 지금도 필요하다. 낮춰 봤더니 '간밤 뉴욕'(5자)이
+# 그대로 통과해서 되돌렸다.
+#
+# 상한은 30 → 44 로 연다. 30자라는 좁은 자리가 "A는 올랐고 B는 내렸다" 식의
+# 짧은 대비 제목만 살아남게 만들었다(18일 중 8일). 한 줄을 넘기지 않는 선만
+# 지키면 되고, 제목의 모양은 글쓴이가 정한다.
+HEAD_MIN, HEAD_MAX = 6, 44
 # 영어 제목을 그대로 옮긴 티가 나는 끝맺음.
 HEAD_TRANSLATIONESE = re.compile(r"(에서|에 관하여|에 관해|에 대하여|에 대해|으로부터|로부터)$")
 # 미국이 어젯밤에 열리지 않은 날에는 쓸 수 없는 말.
@@ -290,7 +297,10 @@ def gather(trade_date=None, days=14, skip_news=False):
 
     # ④ 뉴스. 없으면 인과를 쓰지 않는다(지어내는 것보다 낫다).
     if skip_news:
-        facts["news"] = None
+        # '안 받은 것'과 '못 받은 것'은 다르다. --facts-only 는 공짜 미리보기라
+        # 일부러 뉴스를 건너뛰는데, 예전에는 결과가 "한 건도 받지 못했다"로
+        # 찍혀 막힌 것처럼 보였다. 일정에서 당한 것과 같은 병이다.
+        facts["news"] = {"skipped": True, "groups": {}, "tickers": {}}
     else:
         try:
             import news_data
@@ -299,6 +309,17 @@ def gather(trade_date=None, days=14, skip_news=False):
         except Exception as e:
             log(f"⚠️ 뉴스 조회 실패 — '왜'를 쓰지 않는다: {type(e).__name__} {e}")
             facts["news"] = None
+
+
+    # ── 재료가 빠졌으면 소리를 낸다 ────────────────────────────────
+    # 발행은 막지 않는다. 재료가 조금 부실해도 브리핑은 나가야 한다.
+    # 다만 조용히 넘어가면 안 된다 — 9월 11일 "일정은 FOMC 하나뿐"이
+    # 그렇게 나갔다. 두 주 넘게 말라 있었는데 아무 데서도 소리가 안 났다.
+    for name, block in (("일정", facts.get("schedule")), ("뉴스", facts.get("news"))):
+        hl = (block or {}).get("health") or {}
+        for problem in hl.get("problems") or []:
+            log(f"⚠️ {name} 수집이 부실하다 — {problem}")
+            print(f"::warning title=브리핑 {name} 수집::{problem}", flush=True)
 
     return facts, None
 
@@ -438,6 +459,7 @@ def _facts_text(facts):
     # 일정
     sch = facts.get("schedule") or {}
     evs = sch.get("events") or []
+    hl = sch.get("health") or {}
     if evs:
         L.append(f"\n[일정 · {sch.get('from')} ~ {sch.get('to')}]")
         for e in evs[:14]:
@@ -445,6 +467,13 @@ def _facts_text(facts):
             L.append(f"  {e['date']} {e.get('kind', '')} {e.get('title', '')}{est}")
     else:
         L.append("\n[일정] 없음 — 일정 문장을 쓰지 말 것.")
+    # 일정이 적은 것이 '조용한 주'인지 '우리가 못 가져온 것'인지를 밝힌다.
+    # 9월 11일 브리핑이 "앞으로 2주 일정은 FOMC 하나뿐"이라고 썼는데, 정말
+    # 하나뿐인 게 아니라 수집이 말라 있었다. 모델은 그걸 알 길이 없었다.
+    if hl and not hl.get("ok", True):
+        L.append("  ⚠️ 이 일정 목록은 불완전하다 — " + " / ".join(hl.get("problems") or []))
+        L.append("  그러므로 '일정이 하나뿐'·'일정이 없다' 처럼 달력이 비어 있다는 것을"
+                 " 시장의 사실로 쓰지 마라. 적힌 일정만 쓰고, 없는 것을 없다고 말하지 마라.")
 
     # 공시 + 확인 지점
     fils = dom.get("filings") or []
@@ -483,6 +512,9 @@ def _facts_text(facts):
             L.append(f"  · {v['name']}({tk})")
             for r in v["items"][:4]:
                 L.append(f"      {r['title']}")
+    elif (facts.get("news") or {}).get("skipped"):
+        L.append("\n[뉴스] 이번 실행에서는 일부러 받지 않았다(미리보기) — "
+                 "실제 발행 때는 들어온다. 이 목록만 보고 '뉴스가 없다'고 판단하지 말 것.")
     else:
         L.append("\n[뉴스] 한 건도 받지 못했다 — 숫자만 쓰고 인과는 쓰지 말 것.")
 
@@ -491,100 +523,138 @@ def _facts_text(facts):
 
 # ────────────────────────────── 프롬프트 ──────────────────────────────
 
-RULES = """규칙
+RULES = """이 글이 하는 일
 
-1. 분량 2,500~3,000자(한국어 본문 기준, 제목·리드 포함). 스크롤 두세 번.
-2. 섹션은 아래 넷을 이 순서로. id 는 그대로 쓰고, 데이터가 없는 섹션은 통째로
-   빼라(빈 섹션을 만들지 마라).
-   us       미국 3대 지수와 반도체 지수, 움직인 이유, 국내로 옮겨붙을 성격인지 (약 700자)
-   domestic 지수·수급, 폭(중앙값 vs 시총가중), 업종, 거래 쏠림 (약 650자)
-   ahead    환율·금리, 일정, 다음 개장까지의 관전 지점 (약 700자)
-   coverage 커버 종목에 걸린 확인 지점 중 결과가 나온/나올 것 (약 600자)
-3. **coverage 섹션은 전체 분량의 25%를 넘지 않는다.** 이 브리핑은 우리 리포트
-   홍보물이 아니라 장 준비용 글이다. 커버리지 얘기는 "실제로 움직였거나 이번 주에
-   결과가 나오는 것"만 넣는다.
-4. 사실 블록에 있는 숫자만 쓴다. 없는 값은 추측하지 않고 그 문장을 뺀다.
+독자는 장이 열리기 전 아침에 이 글 하나를 읽고 오늘을 준비한다. 그 사람에게
+오늘 필요한 것을 준다. 그게 전부다.
+
+무엇을 쓸지는 네가 고른다
+
+사실 블록에 오늘 쓸 수 있는 재료가 다 들어 있다 — 미국·해외 지수, 국내 지수와
+수급, 업종, 거래가 몰린 곳, 개별 종목의 움직임, 환율·금리·유가, 앞으로의 일정과
+지표 발표, 공시, 뉴스 제목, 그리고 KOSAI 리포트에 적어 둔 확인 지점.
+
+그중 오늘 이야기할 값이 있는 것을 네가 고른다. 몇 가지를 다룰지, 무엇을 먼저
+놓을지, 각각에 얼마나 쓸지 — 정해진 틀이 없다. 어떤 날은 유가 하나가 그날의
+전부이고, 어떤 날은 서로 상관없는 다섯 가지를 짧게 훑는 것이 맞다. 미국 지수부터
+시작해야 할 이유는 없다. 그날 가장 중요한 것부터 쓰면 된다.
+
+다만 이건 '브리핑'이다. 아침에 읽는 글이니 2,000자에서 3,200자 사이에서
+끝난다 — 스크롤 두세 번이다. 그날 할 말이 적으면 짧게 끝내라, 채우려고 늘리지
+마라. 반대로 3,200자를 넘어가면 브리핑이 아니라 리포트가 된다(3,600자를 넘으면
+아예 발행되지 않는다). 분량이 날마다 달라지는 것은 괜찮다. 조용한 날과 시끄러운
+날이 같은 길이일 이유가 없다.
+
+섹션은 필요한 만큼 만들고, 각 섹션에 짧은 영문 id 를 붙인다(us · oil · rates ·
+chips · flows · calendar · fx … 그날 내용에 맞게). KOSAI 리포트의 확인 지점을
+다루는 섹션에만 id 를 coverage 로 붙여라 — 화면이 그 섹션에 출처 표시를 달아
+준다. 그런 내용이 없는 날은 그 섹션을 만들지 않는다.
+
+이미 쓴 글
+
+아래에 최근에 나간 브리핑이 붙어 있다. 같은 각도, 같은 문장 구조, 같은 주인공을
+반복하지 마라. 특히 "A는 올랐고 B는 내렸다" 식의 대비로 제목을 잡는 것은 이미
+충분히 했다. 지수 등락률을 차례로 늘어놓는 것도 그렇다.
+
+거꾸로, 이어지는 이야기는 환영한다. 지난 글에서 볼 것으로 꼽아 둔 것의 결과가
+오늘 나왔다면 그것이 오늘의 첫 이야기일 수 있다. "지난주에 적어 둔 그것이 이렇게
+됐다"는 하루짜리 시황이 줄 수 없는 것이다.
+
+지켜야 할 것 — 여기부터는 취향이 아니라 지켜야 하는 선이다
+
+1. 사실 블록에 있는 숫자만 쓴다. 없는 값은 추측하지 않고 그 문장을 뺀다.
    뉴스 제목에 나오는 숫자를 본문에 옮기지 마라 — 숫자는 시세에서, 이유는 뉴스에서
-   가져온다. (실제로 기사의 '반도체지수 1% 하락'을 옮겼다가 실측 -0.31% 와 어긋난 적이 있다.)
-5. 단정하지 않는다. 저평가·고평가, 매수·매도, 목표주가, 투자의견, "오를 것", "상승 여력"
-   같은 표현은 쓰지 않는다. 인과는 확인된 것만 쓰고, 추정은 "~때문으로 보인다"가 아니라
-   "~와 겹친다", "~가 함께 나왔다"처럼 사실 병치로 쓴다.
-   시장 전망·의견이 필요하면 출처를 밝힌 인용으로만 쓴다.
-6. 확인 지점(checkpoints)은 유료 리포트 내용이다. 원문을 그대로 옮기지 말고 한 구절로
-   요약하고, 종목 링크로 리포트를 가리킨다.
-
-6-0. **우리 회사를 부를 때는 언제나 `KOSAI` 라고 쓴다.** '코사이'라고 한글로 쓰지 마라.
-   한국어 본문에서도 영문 표기를 쓴다 — 브랜드 표기가 화면마다 달라지면 안 된다.
-   예: "KOSAI 리포트에 적어 둔 확인 지점", "KOSAI가 5월 리포트에서 꼽아 둔".
-
-6-1. **coverage 섹션은 그 내용이 어디서 왔는지 독자에게 밝힌다.** 이 섹션이 이 브리핑의
-   존재 이유다 — 시황은 어디서나 읽을 수 있지만 "코사이가 리포트에 적어 둔 확인 지점의
-   결과가 오늘 나왔다"는 우리만 쓴다. 그런데 그렇게 적지 않으면 독자는 그냥 종목 소식으로
-   읽고 지나간다.
-   · 섹션의 첫 문장에서 출처를 밝힌다. 사실 블록의 '리포트 작성일'을 써서
-     "5월 리포트에서 …를 확인 지점으로 꼽아 뒀다" 처럼 **언제 적어 둔 것인지**를 함께 쓴다.
-     시점을 밝히는 것이 핵심이다 — 오늘 급하게 쓴 말이 아니라는 뜻이기 때문이다.
-   · 쓸 수 있는 표현: "리포트에 적어 둔 확인 지점", "리포트에서 볼 것으로 꼽아 둔",
-     "○월 리포트가 확인 지점으로 둔". 그냥 "확인 지점"만 쓰지 마라 — 누가 정한
-     확인 지점인지가 빠진다.
-   · 종목마다 링크를 달아 리포트로 보낸다. 링크가 곧 "여기 근거가 있다"는 표시다.
-7. 종목을 처음 언급할 때는 링크를 단다. 형식은 [현대차](005380) — 대괄호에 표시할 말,
+   가져온다. (기사의 '반도체지수 1% 하락'을 옮겼다가 실측 -0.31% 와 어긋난 적이 있다.)
+2. 단정하지 않는다. 저평가·고평가, 매수·매도, 목표주가, 투자의견, "오를 것",
+   "상승 여력" 같은 표현은 쓰지 않는다. 인과는 확인된 것만 쓰고, 추정은
+   "~때문으로 보인다"가 아니라 "~와 겹친다", "~가 함께 나왔다"처럼 사실 병치로
+   쓴다. 시장 전망·의견이 필요하면 출처를 밝힌 인용으로만 쓴다. 제목과 요약에도
+   똑같이 적용된다.
+3. 확인 지점은 유료 리포트 내용이다. 원문을 그대로 옮기지 말고 한 구절로 요약하고,
+   종목 링크로 리포트를 가리킨다. 그리고 **언제 적어 둔 것인지**를 밝혀라 —
+   "5월 리포트에서 확인 지점으로 꼽아 둔" 처럼. 시점이 핵심이다. 오늘 급하게 쓴
+   말이 아니라는 뜻이기 때문이다. 그리고 이 브리핑은 리포트 홍보물이 아니다 —
+   커버리지 얘기는 전체의 4분의 1을 넘지 않게 하고, 실제로 움직였거나 곧 결과가
+   나오는 것만 넣는다.
+4. 우리 회사는 언제나 `KOSAI` 라고 쓴다. 한국어 본문에서도 '코사이'라고 쓰지 마라.
+5. 종목을 처음 언급할 때 링크를 단다. [현대차](005380) — 대괄호에 표시할 말,
    소괄호에 여섯 자리 종목코드. 코드는 사실 블록에 적힌 것만 쓴다. 강조는 **굵게**.
-   그 밖의 마크업이나 HTML 태그는 쓰지 마라.
-   **영문도 똑같은 형식으로 링크를 단다** — [SK Hynix](000660) 이다.
-   **SK Hynix**(000660) 은 링크가 아니고, 이렇게 쓰면 영어 화면에서 링크가 사라지고
-   괄호 안 숫자만 남는다. 한국어 문단에 링크가 있으면 대응하는 영문 문단에도 있어야 한다.
-8. 기사 제목(title)은 그날의 한 가지를 잡는다(12~30자). "코스피 상승, 외국인 순매수"
-   같은 나열이 아니라 "휴장 하루, 미국은 두 번 열린다"처럼 관점이 있어야 한다.
-
-8-1. **섹션 제목(heading)도 매일 새로 쓴다.** 고정된 이름을 쓰지 마라 — 그날 그
-   섹션에서 가장 중요한 사실이 제목이 되어야 한다.
-   · 6~24자. 명사만 나열하지 말고 서술형으로.
-     좋음: "반도체는 비켜갔다" · "지수는 올랐지만 폭은 좁았다" · "18일이 두 번을 받는다"
-     나쁨: "간밤 뉴욕" · "볼 것" · "코사이 커버리지에서" — 번역체이고 내용이 없다
-   · '~에서', '~에 관하여', '~에 대하여' 로 끝내지 마라. 영어 제목을 옮긴 티가 난다.
-   · **시간 표현을 조심하라.** 사실 블록에 '[표현 주의]' 가 적혀 있으면 '간밤'·'어젯밤'·
-     '어제'를 쓸 수 없는 날이다. 미국은 화~금 아침에만 어젯밤에 열렸다 — 월요일 아침의
-     마지막 세션은 금요일이고, 연휴 뒤에는 두 번 이상이다.
-   · 네 제목이 서로 겹치지 않게 하고, 기사 제목을 그대로 반복하지 마라.
-   · 제목도 단정하지 않는다. 5번 규칙이 제목에도 적용된다.
-9. 리드는 두 문장. 오늘 무엇을 준비해야 하는지가 리드에서 끝나야 한다.
-
-9-1. **요약(summary)은 문단 하나.** 맨 위에 놓여서, 본문을 읽지 않고 이것만 봐도
-   오늘 아침에 알아야 할 것이 끝나야 한다.
-   · **줄바꿈·글머리표·번호를 쓰지 마라.** 이어지는 문장으로 쓴다. 항목을 나눠
-     늘어놓으면 사람이 쓴 글이 아니라 기계가 뽑아낸 목록처럼 읽힌다.
-   · 3~5문장, 150~320자. 짧게 줄이려고 애쓰지 마라 — 요약이지 표제가 아니다.
-     문장이 잘려 명사만 남으면 오히려 읽기 불편하다.
-   · 본문 전체를 담는다. 간밤 미국에서 무슨 일이 있었고, 직전 국내 장이 어땠고,
-     오늘 무엇을 볼지가 한 문단 안에서 자연스럽게 이어져야 한다.
-   · 숫자는 필요한 곳에 넣되 줄마다 채워 넣지 마라. 지수 하나, 등락률 하나면
-     충분하고, 숫자를 나열하는 자리는 본문이다.
-     좋음: "미국은 세 지수가 나란히 올랐지만 반도체만 2% 넘게 빠졌다. 국내도
-           같은 자리가 눌렸는데, 지수를 끌어내린 무게가 시가총액 상위 몇
-           종목에 몰려 있었다. 오늘 새벽 미국 소비자물가가 나온다."
-     나쁨: "· 나스닥 1.2% 하락 · 코스피 0.4% 상승 · 오늘 CPI 발표" — 목록이다.
-   · 본문에 없는 사실을 요약에만 새로 쓰지 마라. 요약은 본문의 압축이다.
-   · 종목 링크와 **굵게**는 요약에 쓰지 마라. 훑고 지나가는 자리라 표시가
-     끼면 오히려 눈이 걸린다.
-   · 5번 규칙(단정 금지)이 요약에도 그대로 적용된다.
-10. 영어는 번역투가 아니라 영문 기사로 읽히게 쓴다. 한국어와 같은 사실, 같은 순서.
-    종목 링크와 **굵게**는 영어에도 같이 넣는다.
+   그 밖의 마크업이나 HTML 태그는 쓰지 마라. 영문도 똑같은 형식으로 링크를 단다 —
+   [SK Hynix](000660) 이다. **SK Hynix**(000660) 은 링크가 아니다. 한국어 문단에
+   링크가 있으면 대응하는 영문 문단에도 있어야 한다.
+6. 시간 표현을 조심하라. 사실 블록에 '[표현 주의]' 가 적혀 있으면 '간밤'·'어젯밤'·
+   '어제'를 쓸 수 없는 날이다. 미국은 화~금 아침에만 어젯밤에 열렸다.
+7. 영어는 번역투가 아니라 영문 기사로 읽히게 쓴다. 한국어와 같은 사실, 같은 순서.
+   종목 링크와 **굵게**는 영어에도 같이 넣는다.
+8. 요약(summary)은 이어지는 문장으로 쓴다. 줄바꿈·글머리표·번호를 쓰지 마라 —
+   항목을 나눠 늘어놓으면 사람이 쓴 글이 아니라 기계가 뽑아낸 목록처럼 읽힌다.
+   본문에 없는 사실을 요약에만 새로 쓰지 말고, 종목 링크와 굵게는 요약에 쓰지 않는다.
+9. 섹션 제목은 그날 그 섹션에서 가장 중요한 사실을 담는다. '간밤 뉴욕'·'볼 것'
+   같은 빈 이름이나 '~에서'·'~에 대하여' 로 끝나는 번역체는 쓰지 마라. 기사 제목과
+   같은 말을 섹션 제목으로 다시 쓰지 말고, 섹션끼리도 겹치지 않게 한다.
 
 출력 형식 — 머리말·설명 없이 곧바로 마커부터. 마커 앞뒤에 어떤 문장도 쓰지 마라.
 
 ===JSON_START===
 {
   "title": {"ko": "제목", "en": "headline"},
-  "lead":  {"ko": "리드 두 문장", "en": "..."},
+  "lead":  {"ko": "리드", "en": "..."},
   "summary": {"ko": "요약 한 문단 — 줄바꿈도 글머리표도 없이 이어지는 문장", "en": "..."},
   "sections": [
-    {"id": "us", "heading": {"ko": "그날 내용을 담은 섹션 제목", "en": "..."},
+    {"id": "그날 내용에 맞는 짧은 영문 id", "heading": {"ko": "섹션 제목", "en": "..."},
      "paragraphs": [{"ko": "문단", "en": "paragraph"}]}
   ]
 }
 ===JSON_END===
+
+섹션 개수와 id 는 자유지만 **이 모양은 자유가 아니다**. title·lead·summary·heading 은
+{"ko": …, "en": …} 객체이고, paragraphs 의 각 항목도 {"ko": …, "en": …} 객체다.
+문단을 글자로만 주면 화면이 읽지 못해 그날 브리핑이 나가지 못한다.
 """
+
+
+def recent_briefs(pub, n=7, out_dir=None):
+    """최근에 나간 브리핑을 짧게 간추린다 — 같은 글을 또 쓰지 않게.
+
+    왜 필요한가
+    -----------
+    여태 모델은 어제 자기가 뭐라고 썼는지 몰랐다. 매일 백지에서 같은 규칙과
+    비슷한 재료로 시작하니 같은 답에 수렴한다. 18일치를 세어 보니 제목에
+    '반도체'가 11일, 리드가 '미국/뉴욕/간밤' 으로 시작한 날이 14일이었다.
+    재료 탓이 아니라 기억이 없어서다.
+
+    본문을 통째로 넣지는 않는다. 7일치면 2만 자가 넘고, 그러면 모델이 지난
+    글을 흉내 내기 시작한다. 필요한 것은 "무엇을 이미 말했나" 뿐이므로
+    제목·리드·섹션 제목, 그리고 그날 볼 것으로 꼽은 대목만 넘긴다.
+    """
+    d = out_dir or OUT_DIR
+    if not d.exists():
+        return ""
+    files = sorted(x for x in d.glob("*.json") if x.stem < str(pub))[-n:]
+    if not files:
+        return ""
+    L = ["\n=== 최근에 이미 나간 브리핑 (같은 글을 또 쓰지 않기 위해 보여준다) ===\n"]
+    for f in files:
+        try:
+            b = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        L.append(f"[{b.get('date', f.stem)}] {(b.get('title') or {}).get('ko', '')}")
+        lead = (b.get("lead") or {}).get("ko", "")
+        if lead:
+            L.append(f"   리드: {lead[:120]}")
+        heads = [(x.get("heading") or {}).get("ko", "") for x in (b.get("sections") or [])]
+        heads = [h for h in heads if h]
+        if heads:
+            L.append("   섹션: " + " / ".join(heads))
+        # 그날 '볼 것'으로 꼽아 둔 대목 — 오늘 결과가 나왔으면 그게 오늘 이야기다.
+        for sec in b.get("sections") or []:
+            body = " ".join((x.get("ko") or "") for x in (sec.get("paragraphs") or []))
+            if any(k in body for k in ("볼 것", "지켜볼", "확인할", "관전")):
+                L.append(f"   그날 볼 것으로 꼽음: {body[:180]}")
+                break
+    L.append("\n=== 최근 브리핑 끝 ===\n")
+    return "\n".join(L)
 
 
 def build_prompt(facts, retry_note=None):
@@ -600,7 +670,7 @@ def build_prompt(facts, retry_note=None):
                  " 한꺼번에 반영해야 하는지가 그날의 핵심이다.\n")
 
     parts = [head, "\n=== 사실 블록 (여기 있는 값만 쓴다) ===\n", _facts_text(facts),
-             "\n=== 사실 블록 끝 ===\n\n", RULES]
+             "\n=== 사실 블록 끝 ===\n", recent_briefs(pub), "\n", RULES]
     if retry_note:
         parts.append("\n주의 — 앞선 출력이 아래 이유로 거부됐다. 같은 실수를 반복하지 마라.\n"
                      + retry_note + "\n")
@@ -719,18 +789,64 @@ def _plain(s):
     return re.sub(r"\*\*", "", s)
 
 
+def _lang(box, lang):
+    """{"ko": …, "en": …} 에서 한 쪽을 꺼낸다. 모양이 다르면 빈 문자열.
+
+    모델이 가끔 {"ko":…,"en":…} 대신 글자를 그냥 준다. 예전에는 여기서
+    AttributeError 로 통째로 터져 그날 브리핑이 못 나갔다. 검사기는 터지는
+    곳이 아니라 거부 사유를 돌려주는 곳이다 — 그래야 다시 써 달라고 할 수
+    있다. 모양 자체가 틀린 것은 validate 의 _shape_bad 가 따로 잡는다.
+    """
+    if isinstance(box, dict):
+        v = box.get(lang)
+        return v if isinstance(v, str) else ""
+    return ""
+
+
+def _shape_bad(brief):
+    """틀이 어긋난 곳. 비어 있으면 나머지 검사를 그대로 돌려도 된다."""
+    bad = []
+    for key in ("title", "lead", "summary"):
+        v = brief.get(key)
+        if v is not None and not isinstance(v, dict):
+            bad.append(f"{key} 가 {{\"ko\": …, \"en\": …}} 가 아니다")
+    secs = brief.get("sections")
+    if secs is not None and not isinstance(secs, list):
+        return bad + ["sections 가 배열이 아니다"]
+    for n, s in enumerate(secs or []):
+        if not isinstance(s, dict):
+            bad.append(f"{n+1}번째 섹션이 객체가 아니다")
+            continue
+        sid = s.get("id") or f"#{n}"
+        if s.get("heading") is not None and not isinstance(s.get("heading"), dict):
+            bad.append(f"{sid} 의 heading 이 {{\"ko\": …, \"en\": …}} 가 아니다")
+        ps = s.get("paragraphs")
+        if ps is not None and not isinstance(ps, list):
+            bad.append(f"{sid} 의 paragraphs 가 배열이 아니다")
+            continue
+        for i, p in enumerate(ps or []):
+            if not isinstance(p, dict):
+                bad.append(f"{sid} 의 {i+1}번째 문단이 객체가 아니다 — 문단은 "
+                           '{"ko": "…", "en": "…"} 로 쓴다. 글자만 주면 안 된다')
+    return bad
+
+
 def _walk(brief):
-    """(경로, 문자열) 전부. ko/en 양쪽."""
+    """(경로, 문자열) 전부. ko/en 양쪽. 모양이 달라도 터지지 않는다."""
     for key in ("title", "lead", "summary"):
         for lang in ("ko", "en"):
-            yield f"{key}.{lang}", ((brief.get(key) or {}).get(lang) or "")
-    for n, s in enumerate(brief.get("sections") or []):
+            yield f"{key}.{lang}", _lang(brief.get(key), lang)
+    secs = brief.get("sections")
+    for n, s in enumerate(secs if isinstance(secs, list) else []):
+        if not isinstance(s, dict):
+            continue
         sid = s.get("id") or f"#{n}"
         for lang in ("ko", "en"):
-            yield f"{sid}.heading.{lang}", ((s.get("heading") or {}).get(lang) or "")
-        for i, p in enumerate(s.get("paragraphs") or []):
+            yield f"{sid}.heading.{lang}", _lang(s.get("heading"), lang)
+        ps = s.get("paragraphs")
+        for i, p in enumerate(ps if isinstance(ps, list) else []):
             for lang in ("ko", "en"):
-                yield f"{sid}.p{i}.{lang}", ((p or {}).get(lang) or "")
+                yield f"{sid}.p{i}.{lang}", _lang(p, lang)
 
 
 BOLD_CODE = re.compile(r"\*\*([^*\n]{1,80})\*\*\s*\((\d{6})\)")
@@ -926,6 +1042,11 @@ def validate(brief, strict_coverage=True, facts=None):
     bad = []
     if not isinstance(brief, dict):
         return ["JSON 이 객체가 아니다"]
+    # 틀이 어긋나 있으면 아래 검사들이 엉뚱한 데서 터진다. 여기서 끊고
+    # 사유를 돌려줘야 다시 써 달라고 할 수 있다.
+    shape = _shape_bad(brief)
+    if shape:
+        return shape
 
     for key in ("title", "lead", "summary"):
         for lang in ("ko", "en"):
@@ -942,9 +1063,11 @@ def validate(brief, strict_coverage=True, facts=None):
         if strict_coverage:
             bad.append("summary 가 비었다 — 맨 위 요약 문단이 있어야 한다")
     else:
+        # 길이는 글쓰기 규칙이 아니라 화면이 견디는 선이다. 예전 110~400자는
+        # 요약의 모양까지 정해 버렸다. 한 문단으로 읽히기만 하면 된다.
         n = len(ko_sum)
-        if not 110 <= n <= 400:
-            bad.append(f"요약이 {n}자 — 110~400자여야 한다")
+        if not 60 <= n <= 900:
+            bad.append(f"요약이 {n}자 — 60~900자여야 한다(화면이 견디는 선)")
         # 문장 수는 세지 않는다. 마침표 개수로 재면 소수점·약어에 걸려
         # 멀쩡한 글을 거부한다. 목록으로 흐르는 것만 막으면 충분하다.
         if SUM_LIST.search(ko_sum):
@@ -954,16 +1077,15 @@ def validate(brief, strict_coverage=True, facts=None):
     ids = [s.get("id") for s in secs]
     if not secs:
         bad.append("sections 가 비었다")
-    known = {k for k, _ in SECTIONS}
-    for sid in ids:
-        if sid not in known:
-            bad.append(f"모르는 섹션 id: {sid!r} (허용: {', '.join(known)})")
-    # 나온 순서대로 설계상의 자리번호를 매겨 오름차순인지 본다. SECTIONS 를
-    # 훑어서 만들면 언제나 정렬돼 있어서 아무것도 걸러내지 못한다.
-    rank = {k: i for i, (k, _) in enumerate(SECTIONS)}
-    order = [rank[sid] for sid in ids if sid in rank]
-    if order != sorted(order):
-        bad.append("섹션 순서가 설계와 다르다 (us → domestic → ahead → coverage)")
+    # 어떤 id 를 몇 개, 어떤 순서로 쓸지는 글쓴이가 정한다. 화면은 순서대로
+    # 그대로 그리므로 여기서 막을 것이 없다. 다만 id 는 있어야 하고(화면이
+    # coverage 를 알아봐야 한다) 겹치면 안 된다.
+    for n_, sid in enumerate(ids):
+        if not (sid or "").strip():
+            bad.append(f"{n_+1}번째 섹션에 id 가 없다 — 짧은 영문 id 를 붙여라")
+    dup_ids = {x for x in ids if x and ids.count(x) > 1}
+    if dup_ids:
+        bad.append(f"섹션 id 가 겹친다: {', '.join(sorted(dup_ids))}")
     for s in secs:
         if not (s.get("paragraphs") or []):
             bad.append(f"섹션 {s.get('id')} 에 문단이 없다")
@@ -1003,7 +1125,7 @@ def validate(brief, strict_coverage=True, facts=None):
     # coverage 섹션은 출처를 밝혀야 한다. 이게 이 브리핑의 존재 이유인데,
     # 어디서 온 얘기인지 안 적으면 독자는 그냥 종목 소식으로 읽고 지나간다.
     for s_ in brief.get("sections") or []:
-        if s_.get("id") != "coverage":
+        if s_.get("id") != COVERAGE_ID:
             continue
         body = " ".join((p.get("ko") or "") for p in (s_.get("paragraphs") or []))
         if "리포트" not in body:
@@ -1160,6 +1282,17 @@ def main():
             log(f"⚠️ {attempt}차 파싱 실패 — {note}")
             if attempt == 2:
                 bail(text, [note])
+                return 3
+            continue
+        # 틀부터 본다. 아래 수리 함수들(repair_links·normalize_links…)은
+        # 문단이 {"ko":…,"en":…} 인 줄 알고 도므로, 모양이 어긋나 있으면
+        # 검사기에 닿기도 전에 터진다. 실제로 그렇게 한 번 죽었다.
+        shape = _shape_bad(cand)
+        if shape:
+            note = "\n".join(f"· {x}" for x in shape)
+            log(f"⚠️ {attempt}차 틀이 어긋났다:\n{note}")
+            if attempt == 2:
+                bail(text, shape)
                 return 3
             continue
         n_fixed = repair_links(cand)
