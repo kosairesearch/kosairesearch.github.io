@@ -191,6 +191,15 @@ jobs:
             echo "date=$D"    >> $GITHUB_OUTPUT
           else
             echo "have=false" >> $GITHUB_OUTPUT
+            if [ "${{ steps.gate.outputs.open }}" = "true" ]; then
+              # 장이 열리는 날인데 글이 없다. 생성기가 0 으로 끝났으니 위에서
+              # 걸리지 않았고, 여기서 멈추지 않으면 초록불인 채로 그날
+              # 브리핑이 빠진다. ::warning:: 은 메일이 오지 않아 아무도 모른다.
+              echo "::error::장이 열리는 날인데 오늘 자 브리핑이 없다 ($D)"
+              echo "❌ $D 브리핑이 만들어지지 않았다" >> $GITHUB_STEP_SUMMARY
+              exit 1
+            fi
+            # 휴장일에 확인용으로 돌린 경우다. 이건 실패가 아니다.
             echo "::warning::오늘 자 브리핑이 없다 — 페이지는 전날 글을 그대로 둔다"
           fi
 

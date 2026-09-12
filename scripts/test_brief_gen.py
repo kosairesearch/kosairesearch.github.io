@@ -620,6 +620,31 @@ _f["schedule"]["events"] = [{"date": "2026-09-16", "kind": "FOMC",
 _f["schedule"]["health"] = {"ok": True, "thin": False, "problems": []}
 ok("멀쩡하면 경고를 붙이지 않는다", "불완전하다" not in G._facts_text(_f))
 
+print("\n⑨-b2 수집이 '통째로' 터진 경우가 제일 조용하면 안 된다")
+# 일부만 실패하면 "불완전하다" 경고가 붙는데, 통째로 실패하면(collect 가
+# 예외를 던지면) 예전에는 schedule=None 이 되어 경고가 아예 안 붙었다.
+# 제일 나쁜 경우가 제일 조용한 뒤집힌 구조였다.
+import io as _io, contextlib as _ctx
+import calendar_data as _cd, news_data as _nd
+_boom = lambda *a, **k: (_ for _ in ()).throw(RuntimeError("사이트 모양이 바뀌었다"))
+_cd_save, _nd_save = _cd.collect, _nd.collect
+_cd.collect, _nd.collect = _boom, _boom
+try:
+    _out = _io.StringIO()
+    with _ctx.redirect_stderr(_io.StringIO()), _ctx.redirect_stdout(_out):
+        _fx, _fatal = G.gather(skip_news=False)
+finally:
+    _cd.collect, _nd.collect = _cd_save, _nd_save
+_warns = [l for l in _out.getvalue().split("\n") if "::warning" in l]
+ok("통째로 터져도 발행을 막지는 않는다", _fatal is None, str(_fatal))
+ok("일정이 통째로 터지면 워크플로에 경고가 뜬다",
+   any("일정 수집" in w for w in _warns), str(_warns))
+ok("뉴스가 통째로 터져도 경고가 뜬다",
+   any("뉴스 수집" in w for w in _warns), str(_warns))
+_tx = G._facts_text(_fx)
+ok("통째로 터진 것도 '불완전하다'고 재료에 적는다", "이 일정 목록은 불완전하다" in _tx)
+ok("'일정이 없다'를 사실로 쓰지 말라고 적는다", "없는 것을 없다고 말하지 마라" in _tx)
+
 print("\n⑨-c 뉴스를 '안 받은 것'과 '못 받은 것'을 구분하는가")
 # --facts-only 는 공짜 미리보기라 일부러 뉴스를 건너뛴다. 그런데 결과가
 # "한 건도 받지 못했다"로 찍혀 막힌 것처럼 보였다. 일정에서 당한 것과
