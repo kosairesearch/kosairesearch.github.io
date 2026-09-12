@@ -290,6 +290,36 @@ b2["sections"][3]["paragraphs"][0]["ko"] = "[현대차](005380)는 올랐다. **
 check("올바른 형식과 굵게는 그대로", G.repair_links(b2), 0)
 check("굵게가 살아 있다", "**6.05%**" in b2["sections"][3]["paragraphs"][0]["ko"], True)
 
+print("\n⑦-4b 섹션 제목의 링크도 본문과 똑같이 다룬다")
+# 화면(render_brief.to_html)은 제목에도 링크를 건다. 그런데 repair_links 와
+# normalize_links 가 제목을 건너뛰고 있었다 — 그래서 커버리지에 없는 여섯
+# 자리를 제목에 쓰면, 없는 종목 페이지로 가는 링크가 그대로 나갔다.
+import render_brief as R
+b = copy.deepcopy(base)
+b["sections"][0]["heading"] = {"ko": "[없는회사](999999) 가 끌어올린 하루",
+                               "en": "[Ghost](999999) led the day"}
+b["sections"][1]["heading"] = {"ko": "[현대차](005380) 는 그대로 둔다",
+                               "en": "[Hyundai](005380) stays"}
+b["sections"][2]["heading"] = {"ko": "**삼성전자**(005930) 굵게만 썼다",
+                               "en": "**Samsung**(005930) bold only"}
+n_fixed = G.repair_links(b)
+check("제목의 **이름**(코드) 도 링크로 고친다", n_fixed, 2)
+dropped = G.normalize_links(b, COV)
+h0 = b["sections"][0]["heading"]
+ok("제목의 없는 코드는 평문이 된다", "999999" not in h0["ko"] and "999999" not in h0["en"],
+   str(h0))
+ok("없는 종목 링크를 화면에 내보내지 않는다",
+   "ticker=999999" not in R.to_html(h0["ko"]), R.to_html(h0["ko"]))
+ok("있는 종목 링크는 제목에서도 살아 있다",
+   'ticker=005380' in R.to_html(b["sections"][1]["heading"]["ko"]))
+ok("굵게만 쓴 것도 제목에서 링크가 된다",
+   'ticker=005930' in R.to_html(b["sections"][2]["heading"]["ko"]))
+ok("떨어낸 제목 링크도 보고한다", any("999999" in x for x in dropped), str(dropped))
+# 본문은 예전과 똑같이 동작해야 한다
+b2 = copy.deepcopy(base)
+b2["sections"][3]["paragraphs"][0]["ko"] = "[현대차](005380) 는 올랐다."
+check("제목을 보게 해도 본문 처리는 그대로", G.normalize_links(b2, COV), [])
+
 print("\n⑦-5 섹션 제목 — 매일 새로 쓰기로 했으니 매일 검증한다")
 
 
