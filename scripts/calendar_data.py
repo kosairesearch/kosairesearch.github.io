@@ -101,16 +101,22 @@ THIN_DAYS, THIN_MIN = 14, 3
 # 수동 등록이 이보다 오래 갱신되지 않았으면 말라붙은 것으로 본다.
 MANUAL_STALE_DAYS = 21
 # FRED 에서 집어올 발표. 전부 가져오면 하루에 수십 건이라 잡음이 된다.
+#
+# 이름 앞의 '=' 는 정확히 그 이름일 때만 집으라는 뜻이다. 부분일치로 두면
+# 「Debt to Gross Domestic Product Ratios」(부채/GDP 비율)가 "미국 GDP" 로
+# 둔갑한다 — 실제로 그렇게 한 번 나왔다. 브리핑에 "오늘 미국 GDP 발표"로
+# 실렸으면 틀린 말이 나가는 것이다. 이름이 길어 부분일치가 필요한 것들
+# (JOLTS·수출입물가·소매판매)은 '=' 없이 둔다.
 FRED_WANT = [
-    ("Consumer Price Index", "미국 소비자물가"),
-    ("Producer Price Index", "미국 생산자물가"),
-    ("Employment Situation", "미국 고용보고서"),
+    ("=Consumer Price Index", "미국 소비자물가"),
+    ("=Producer Price Index", "미국 생산자물가"),
+    ("=Employment Situation", "미국 고용보고서"),
     ("Real Earnings", "미국 실질임금"),
     ("Job Openings and Labor Turnover", "미국 구인·이직(JOLTS)"),
     ("Employment Cost Index", "미국 고용비용지수"),
     ("Import and Export Price Indexes", "미국 수출입물가"),
-    ("Gross Domestic Product", "미국 GDP"),
-    ("Personal Income and Outlays", "미국 개인소비·PCE"),
+    ("=Gross Domestic Product", "미국 GDP"),
+    ("=Personal Income and Outlays", "미국 개인소비·PCE"),
     ("Advance Monthly Sales for Retail", "미국 소매판매"),
 ]
 # 우리를 봇이라고 밝히면 막는 곳이 있다. bls.gov 가 403 을 줬다.
@@ -290,7 +296,10 @@ def fred(year=None):
     for r in rows:
         nm = r.get("release_name") or ""
         for needle, ko in FRED_WANT:
-            if needle.lower() not in nm.lower():
+            if needle.startswith("="):
+                if nm.strip().lower() != needle[1:].lower():
+                    continue
+            elif needle.lower() not in nm.lower():
                 continue
             d = r.get("date") or ""
             if (d, ko) in seen:

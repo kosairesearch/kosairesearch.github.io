@@ -8,8 +8,6 @@ on:
 jobs:
   probe:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -27,24 +25,3 @@ jobs:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           HOLIDAY_API_KEY: ${{ secrets.HOLIDAY_API_KEY }}
         run: python scripts/probe_sources.py --raw
-
-      # 잠깐 붙임 — 금통위 일정을 실제로 뽑아 작업 가지에 적어 둔다.
-      # bok_schedule.yml 이 main 에 올라가면 매달 저절로 도니, 그때 지운다.
-      - name: 금통위 일정 뽑아서 가지에 적기
-        if: always()
-        env:
-          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
-        run: |
-          pip install playwright
-          playwright install --with-deps chromium
-          python3 scripts/bok_schedule.py --write
-          echo "──── 만들어진 파일 ────"
-          cat data/bok_meetings.json
-          echo "──── 일정에 실제로 실리나 ────"
-          python3 scripts/calendar_data.py --days 60 || true
-          git config --global user.email "bot@kosairesearch.github.io"
-          git config --global user.name "KOS ai Bot"
-          git add -A data/bok_meetings.json
-          if git diff --cached --quiet; then echo "바뀐 것 없음"; exit 0; fi
-          git commit -m "🏦 금통위 일정 — 한국은행 페이지에서 읽음"
-          git push origin HEAD:claude/hyo-yp2qk7

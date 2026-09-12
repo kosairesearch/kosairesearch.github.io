@@ -77,6 +77,35 @@ ok("소비자물가 12건을 읽는다",
 ok("고용보고서도 읽는다",
    sum(1 for r in rows if r["title"] == "미국 고용보고서") == 12)
 ok("목록에 없는 발표는 버린다", not any("County" in r["title"] for r in rows))
+
+# 실제로 당했다 — 「Debt to Gross Domestic Product Ratios」(부채/GDP 비율)가
+# 부분일치로 걸려 "미국 GDP" 로 나갔다. 브리핑에 "오늘 미국 GDP 발표"로
+# 실렸으면 틀린 말이 나가는 것이다.
+C._get = fake({"stlouisfed.org": json.dumps({"release_dates": [
+    {"release_name": "Debt to Gross Domestic Product Ratios", "date": "2026-10-01"},
+    {"release_name": "Gross Domestic Product", "date": "2026-10-29"},
+    {"release_name": "Consumer Price Index Summary", "date": "2026-10-14"},
+    {"release_name": "Consumer Price Index", "date": "2026-10-15"},
+]})})
+rows2, _ = C.fred(2026)
+names = {(r["date"], r["title"]) for r in rows2}
+ok("부채/GDP 비율을 '미국 GDP' 로 부르지 않는다",
+   ("2026-10-01", "미국 GDP") not in names, str(sorted(names)))
+ok("진짜 GDP 발표는 집는다", ("2026-10-29", "미국 GDP") in names, str(sorted(names)))
+ok("'Consumer Price Index Summary' 도 물가 발표로 세지 않는다",
+   ("2026-10-14", "미국 소비자물가") not in names, str(sorted(names)))
+ok("진짜 소비자물가는 집는다", ("2026-10-15", "미국 소비자물가") in names)
+# 이름이 긴 것들은 부분일치라야 잡힌다 — 그건 그대로 되는지
+C._get = fake({"stlouisfed.org": json.dumps({"release_dates": [
+    {"release_name": "U.S. Import and Export Price Indexes", "date": "2026-10-16"},
+    {"release_name": "Advance Monthly Sales for Retail and Food Services",
+     "date": "2026-10-15"},
+    {"release_name": "Job Openings and Labor Turnover Survey", "date": "2026-10-07"},
+]})})
+rows3, _ = C.fred(2026)
+ok("이름이 긴 발표(수출입물가·소매판매·JOLTS)는 부분일치로 잡는다",
+   len(rows3) == 3, str([r["title"] for r in rows3]))
+C._get = fake({"stlouisfed.org": fred_json()})
 ok("건강 ok", h["ok"] and h["found"] == 24, json.dumps(h, ensure_ascii=False))
 ok("날짜가 제대로 들어간다", any(r["date"] == "2026-01-11" for r in rows),
    str(sorted(r["date"] for r in rows)[:3]))
