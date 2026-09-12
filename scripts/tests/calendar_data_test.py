@@ -82,6 +82,39 @@ ok("날짜가 제대로 들어간다", any(r["date"] == "2026-01-11" for r in ro
    str(sorted(r["date"] for r in rows)[:3]))
 ok("원래 발표 이름을 남긴다", any("Consumer Price Index" in r["detail"] for r in rows))
 
+print("\n── 미국 지표: 지난 발표만 오면 경보 ──")
+# 실제로 당했다. '11건 읽음'인데 앞으로 60일에 하나도 없었다. 최신순이
+# 기본이라 지난 발표만 1,000건 받아 온 것이다. 읽은 건수만 세면 모른다.
+_past = (datetime.datetime.now(C.KST).date() - datetime.timedelta(days=30)).isoformat()
+os.environ["FRED_API_KEY"] = "시험용"
+C._get = fake({"stlouisfed.org": json.dumps({"release_dates": [
+    {"release_name": "Consumer Price Index", "date": _past}]})})
+rows, h = C.fred(2026)
+ok("지난 것만 오면 ok=False", not h["ok"], json.dumps(h, ensure_ascii=False))
+ok("왜 그런지 적는다", "지난 발표만" in h["note"], h["note"])
+_soon = (datetime.datetime.now(C.KST).date() + datetime.timedelta(days=5)).isoformat()
+C._get = fake({"stlouisfed.org": json.dumps({"release_dates": [
+    {"release_name": "Consumer Price Index", "date": _past},
+    {"release_name": "Consumer Price Index", "date": _soon}]})})
+rows, h = C.fred(2026)
+ok("앞으로 것이 하나라도 있으면 ok", h["ok"] and "앞으로 1건" in h["note"], h["note"])
+# 주소를 실제로 들여다본다. 상수만 보면 조립 단계에서 빠져도 모른다.
+_asked = {}
+
+
+def _spy(url, headers=None):
+    _asked["url"] = url
+    return json.dumps({"release_dates": []}), ""
+
+
+C._get = _spy
+C.fred(2026)
+ok("주소에 sort_order=asc 가 들어간다", "sort_order=asc" in _asked.get("url", ""),
+   _asked.get("url", "")[:120])
+ok("예정일 포함을 요청한다",
+   "include_release_dates_with_no_data=true" in _asked.get("url", ""))
+os.environ.pop("FRED_API_KEY", None)
+
 print("\n── 미국 지표: 열쇠가 없을 때는 경보가 아니다 ──")
 # 설정이 안 된 것은 고장이 아니다. 매일 울리는 경보는 곧 아무도 안 본다.
 os.environ.pop("FRED_API_KEY", None)

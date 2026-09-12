@@ -270,9 +270,14 @@ def fred(year=None):
                            "FRED 열쇠(FRED_API_KEY)가 없어 건너뛴다 — "
                            "무료 발급: https://fredaccount.stlouisfed.org/apikeys")
     today = datetime.datetime.now(KST).date()
+    # sort_order 를 안 주면 최신순(desc)이라 지난 발표만 1,000건 받아 온다.
+    # 실제로 그렇게 돌려 보니 '11건 읽음'인데 앞으로 60일에는 하나도 없었다.
+    # 우리가 필요한 것은 앞으로의 일정이므로 오늘부터 오름차순으로 받는다.
+    # include_release_dates_with_no_data 는 '아직 자료가 안 나온 예정일'을
+    # 포함시키는 것이다 — 이게 없으면 미래가 통째로 빠진다.
     url = (f"{FRED_URL}?api_key={key}&file_type=json"
            f"&realtime_start={today}&realtime_end={today + datetime.timedelta(days=120)}"
-           f"&include_release_dates_with_no_data=true&limit=1000")
+           f"&include_release_dates_with_no_data=true&sort_order=asc&limit=1000")
     body, err = _get(url, headers=UA)
     if body is None:
         return [], _health("미국 지표", False, 0, f"FRED 내려받기 실패 — {err}")
@@ -294,9 +299,14 @@ def fred(year=None):
             out.append({"kind": "해외 지표", "date": d, "title": ko,
                         "detail": f"{nm} · FRED 공표 일정"})
             break
-    ok = bool(out)
+    ahead = [r for r in out if r["date"] >= today.isoformat()]
+    # '읽었다'와 '쓸 수 있다'는 다르다. 지난 발표만 잔뜩 읽고 ok 라고 하면
+    # 실제로는 일정이 비어 있는데 아무도 모른다 — 한 번 그랬다.
+    ok = bool(ahead)
     return out, _health("미국 지표", ok, len(out),
-                        "" if ok else "열쇠는 있는데 한 건도 안 잡혔다 — 이름 목록을 확인하라")
+                        f"앞으로 {len(ahead)}건" if ok else
+                        f"{len(out)}건을 읽었지만 앞으로의 일정이 하나도 없다 — "
+                        "지난 발표만 받아 온 것이다")
 
 
 # ────────────────────────────── 수동 등록 ──────────────────────────────
