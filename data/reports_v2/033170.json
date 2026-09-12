@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "시그네틱스: 손실 축소 전환점, 재무 회복이 관건",
-  "en": "Signetics: Loss Narrowing at Inflection, Balance Sheet Recovery Is Key"
+  "ko": "매출 반등 조짐 속 재무 부담 공존",
+  "en": "Revenue Rebound Signs Amid Financial Strain"
  },
  "lead": {
-  "ko": "2022년 흑자에서 3년 연속 영업 적자를 이어온 시그네틱스는 분기 기준 영업손실이 빠르게 개선되는 전환점에 섰으나, 부채비율 105%·음(-)의 영업현금흐름이라는 재무 구조 과제가 반등 지속 가능성을 좌우할 핵심 변수다.",
-  "en": "Having posted operating losses for three consecutive years after a profitable 2022, Signetics stands at an inflection point as quarterly operating losses narrow rapidly—yet a debt ratio exceeding 100% and persistently negative operating cash flow remain the central variables determining whether a recovery can be sustained."
+  "ko": "시그네틱스는 2026년 2분기 매출이 최근 5개 분기 중 최대치를 기록하며 영업손실이 크게 줄었지만, 4년 연속 매출 축소와 부채비율 급등 등 재무 부담이 함께 상존한다.",
+  "en": "Signetics posted its largest quarterly revenue in five quarters in Q2 2026 with a sharply narrower operating loss, but a four-year revenue decline and a sharp rise in the debt ratio remain concurrent financial burdens."
  },
  "keypoints": [
   {
-   "ko": "분기 영업손실 130억원(2025Q1) → 20억원(2026Q1)으로 급감: 일회성 유형자산 손상차손 소멸 후 업황 회복세가 점진적으로 반영",
-   "en": "Quarterly operating loss shrank from ₩13.0bn (2025Q1) to ₩2.0bn (2026Q1): gradual market recovery emerging after non-recurring asset impairment charges dissipated"
+   "ko": "2026년 2분기 매출 335억원으로 2025년 2분기~2026년 1분기 구간 중 최대, 영업손실도 -4.6억원까지 축소됐다.",
+   "en": "Q2 2026 revenue reached about KRW 33.5 billion, the largest in the 2025 Q2-2026 Q1 window, with the operating loss narrowing to about KRW -460 million."
   },
   {
-   "ko": "부채비율 52.2%(2024) → 105.2%(2025)로 급등: 3년 연속 누적 손실로 자기자본이 2022년 대비 60% 감소, 재무 건전성 회복이 시급한 과제",
-   "en": "Debt ratio surged from 52.2% (2024) to 105.2% (2025): cumulative losses have eroded equity by ~60% from 2022 levels, making balance sheet restoration an urgent priority"
+   "ko": "연간 매출은 2022년 약 2,876억원에서 2025년 약 1,030억원까지 4년 연속 줄어들며 외형이 크게 축소됐다.",
+   "en": "Annual revenue shrank for four consecutive years, from roughly KRW 287.6 billion in 2022 to about KRW 103.0 billion in 2025."
   },
   {
-   "ko": "OSAT 업황 개선: 대형 메모리사가 HBM 라인 전환에 따른 레거시 패키징을 외주화하며 중소 OSAT 수주 기회 확대",
-   "en": "OSAT industry dynamics improving: major memory makers outsourcing legacy packaging to free capacity for HBM conversions, expanding order opportunities for mid-tier OSATs"
+   "ko": "부채비율이 2023년 30.1%에서 2025년 105.2%로 급등했고, 자본총계도 같은 기간 지속적으로 줄어들었다.",
+   "en": "The debt ratio jumped from 30.1% in 2023 to 105.2% in 2025, while total equity also declined steadily over the period."
   },
   {
-   "ko": "베트남 빈푹성 5만㎡ 신공장(투자액 1억 달러 이상) 추진: 삼성전자 협력사 지위·비용 경쟁력 확보 목표이나 음(-) 현금흐름 속 자금 조달 리스크 상존",
-   "en": "Vietnam greenfield factory (50,000㎡, investment exceeding $100M) in Vinh Phuc province: targets Samsung Electronics supply chain positioning and cost competitiveness, but financing risk persists amid negative cash flow"
+   "ko": "2025년 영업활동현금흐름은 -215억원으로 순유출이 확대돼 재무구조 개선 여부가 핵심 관전 포인트로 남아 있다.",
+   "en": "Operating cash flow turned to a net outflow of about KRW -21.5 billion in 2025, leaving balance-sheet repair as a key watch item."
   },
   {
-   "ko": "영풍그룹 계열 코리아써키트의 종속회사로 PCB-패키징 연계 시너지가 고객 기반 유지의 버팀목이나, 그룹 전반의 수익성 여건도 병행 주시 필요",
-   "en": "As a subsidiary of Korea Circuit (Youngpoong Group), PCB-packaging integration synergies provide a customer retention buffer, though group-wide profitability conditions also warrant monitoring"
+   "ko": "2026년 8월 5대1 액면병합이 완료됐고, 회사는 영풍 계열사로서 고려아연-영풍 간 경영권 분쟁의 그룹 리스크에도 노출돼 있다.",
+   "en": "A 5-to-1 share consolidation was completed in August 2026, and as a Yeongpoong Group affiliate the company remains exposed to group-level governance risk from the Korea Zinc-Yeongpoong dispute."
   }
  ],
  "business": {
-  "ko": "시그네틱스는 1966년 설립된 반도체 후공정 전문 기업으로, 파주 제1공장(QFP·BGA·Flip-Chip·MCM 등 고밀도 패키지)과 안산 제2공장(COG 패키징)을 운영한다. 주요 제품군은 BGA·QFP·MCP(멀티칩패키지)·BOC·COG 등이며, 최근에는 Fingerprint Sensor 패키지와 Recon Flip Chip 양산 인프라를 구축하고 Advanced SiP(System in Package) 모듈 개발에 집중하고 있다. 삼성전자와 SK하이닉스를 포함한 글로벌 대형 전자·반도체 기업이 주요 고객군을 구성하며, 모회사인 코리아써키트(영풍그룹 계열)를 통해 PCB-패키징 연계 사업 시너지를 추구한다. 반도체 패키징 시장은 고집적화·소형화·어드밴스드 패키징으로의 기술 전환이 가속화되고 있으며, 신규 업체 진입장벽이 높은 기술·자본 집약 산업이다. 글로벌 경쟁사로는 ASE(대만)·Amkor(미국)·JCET(중국) 등 대형 OSAT 기업이 있고, 국내에서는 SFA반도체·하나마이크론·엠케이전자 등과 경쟁한다. 2024년 8월 베트남 빈푹성 바티엔 I 산업단지 내 5만㎡ 부지에 1억 달러 이상을 투자하는 신공장 설립을 발표하고 현지 CNCTech그룹과 MOU를 체결했으며, 동 공장은 Flip-Chip·MCM·BGA·FBGA 제품을 생산할 계획이다. 2010년 11월 코스닥에 상장됐으며, 총 발행 주식 수는 8,572만 주다.",
-  "en": "Signetics, founded in 1966, is a dedicated semiconductor back-end process (OSAT) company operating two domestic facilities: Paju Plant 1 (high-density packages including QFP, BGA, Flip-Chip, and MCM) and Ansan Plant 2 (COG packaging). Core products include BGA, QFP, MCP (multi-chip packages), BOC, and COG packages, while the company is actively advancing Fingerprint Sensor packages, a Recon Flip-Chip mass-production infrastructure, and Advanced SiP (System-in-Package) module development. Major customers include global electronics leaders such as Samsung Electronics and SK Hynix. As a subsidiary of Korea Circuit within the Youngpoong Group, Signetics benefits from PCB-packaging integration synergies. The packaging market is undergoing rapid structural transition toward high integration, miniaturization, and advanced formats, with high entry barriers rooted in technology and capital intensity. Global OSAT competitors include ASE (Taiwan), Amkor (US), and JCET (China), while domestic rivals include SFA Semiconductor, Hana Micron, and MK Electron. In August 2024, the company signed an MOU with Vietnam's CNCTech Group for a greenfield factory in Vinh Phuc Province (50,000㎡ site, investment exceeding $100M) targeting production of Flip-Chip, MCM, BGA, and FBGA products. The company listed on KOSDAQ in November 2010 with 85,728,319 total shares outstanding."
+  "ko": "시그네틱스는 코스닥에 상장된 반도체 후공정(OSAT) 전문기업으로, 반도체 패키징과 테스트를 핵심 사업으로 영위한다. 회사는 1966년 미국 Signetics Corporation의 전액투자로 설립된 외국인투자기업에 뿌리를 두고 있으며, 이후 영풍 계열에 편입돼 코스닥시장에 상장됐다. 웨이퍼 상태의 칩을 전자제품에 실장 가능한 형태로 가공하는 패키징과, 완성된 반도체의 정상 작동 여부를 확인하는 테스트를 함께 수행하는 전형적인 OSAT 구조를 갖고 있다. 최근 공시 기준 매출 구성은 메모리와 비메모리가 약 52.2%와 47.8%로 비교적 균형을 이루고 있다. 주요 제품으로는 고부가가치 프리미엄 패키지인 Recon 플립칩과 Advanced SiP Module이 있으며, 레이저 어시스트 본딩(LAB) 기술 기반 양산 인프라를 갖추고 있다. 주요 고객으로는 삼성전자, SK하이닉스, LG전자, Infineon, Micron 등이 있으며, 최근에는 거래선 다변화를 위해 중화권 지문인식 고객사도 신규 발굴해 매출에 기여하고 있다. 국내 경쟁사로는 하나마이크론, SFA반도체, 엠케이전자, 덕산하이메탈, 해성디에스 등이 있으며, 글로벌 무대에서는 대만 ASE와 미국 Amkor 등 대형 OSAT 업체와 후공정 시장에서 경쁴한다. 2026년 8월에는 적정 유통주식수 유지를 통한 주가 안정화와 기업가치 제고를 목적으로 5대1 주식병합이 완료돼 발행주식총수가 크게 줄었다.",
+  "en": "Signetics is a KOSDAQ-listed outsourced semiconductor assembly and test (OSAT) specialist whose core business is semiconductor packaging and testing. The company traces its roots to 1966, when it was established as a foreign-invested company through full investment by the US-based Signetics Corporation, and was later absorbed into the Yeongpoong Group before listing on KOSDAQ. It runs a typical OSAT model, packaging chips from wafer form into a mountable state for electronics while also performing final testing to verify proper chip function. Based on recent disclosures, revenue is fairly balanced between memory (about 52.2%) and non-memory (about 47.8%) products. Key products include the premium Recon flip-chip package and the Advanced SiP Module, backed by production infrastructure built on laser-assisted bonding (LAB) technology. Major customers include Samsung Electronics, SK Hynix, LG Electronics, Infineon, and Micron, and the company has recently diversified its customer base by securing new fingerprint-recognition clients in Greater China. Domestic competitors include Hana Micron, SFA Semicon, MK Electron, Doksan Hi Metal, and Haesung DS, while globally the company competes in the back-end market against large OSAT players such as Taiwan's ASE and the US's Amkor. In August 2026 the company completed a 5-to-1 share consolidation aimed at maintaining an appropriate float and enhancing corporate value, sharply reducing total shares outstanding."
  },
  "earnings": {
-  "ko": "시그네틱스의 연간 실적은 2022년 매출 2,876억원·영업이익 89억원(OPM 3.1%)을 정점으로 2023년부터 급격한 하락세에 접어들었다. 2023년 매출은 1,855억원으로 전년 대비 35.5% 감소하면서 영업손실 150억원(OPM -8.1%)을 기록했고, 2024년에는 매출이 1,182억원으로 추가 감소하며 영업손실이 258억원(OPM -21.9%)으로 확대됐다. 2024년 당기순손실은 509억원에 달했는데, 유형자산 손상차손이 대규모로 인식된 것이 주요 요인이었다. 2025년 매출은 1,030억원으로 전년 대비 12.8% 추가 감소했으나, 영업손실은 238억원으로 7.7% 개선됐고 당기순손실은 183억원으로 대폭 줄었는데, 이는 전년 대비 유형자산 손상차손 인식 규모가 축소된 덕분이다. 분기별로 살펴보면 2025년 1분기 영업손실이 130억원에 달해 연간 손실(238억원)의 절반 이상을 차지했으나, 2분기부터는 분기 영업손실이 30~40억원 수준으로 급감했다. 2026년 1분기에는 매출 265억원·영업손실 20억원을 기록하며 분기 손실 규모가 2022년 흑자 시기 이후 최저 수준으로 축소됐다. 한편 영업현금흐름은 2022년 +144억원, 2023년 +45억원에서 2024년 -35억원, 2025년 -215억원으로 크게 악화됐으며, 자기자본은 2022년 1,313억원에서 2025년 말 522억원으로 감소하고 부채비율은 105.2%로 상승해 재무 건전성 회복이 핵심 과제로 부상했다.",
-  "en": "Signetics' annual performance peaked in 2022 with revenue of ₩287.6bn and operating profit of ₩8.9bn (OPM 3.1%), before entering a sharp downturn from 2023. Revenue fell 35.5% YoY to ₩185.5bn in 2023, generating an operating loss of ₩15.0bn (OPM -8.1%), and declined further to ₩118.2bn in 2024 with the operating loss widening to ₩25.8bn (OPM -21.9%). The 2024 net loss of ₩50.9bn was heavily inflated by large property, plant, and equipment impairment charges. Full-year 2025 revenue contracted a further 12.8% to ₩103.0bn, yet the operating loss narrowed 7.7% to ₩23.8bn, and the net loss compressed sharply to ₩18.3bn as impairment charges receded. On a quarterly basis, the 2025Q1 operating loss peaked at ₩13.0bn—accounting for more than half the full-year figure—before falling sharply to the ₩3.0–4.0bn range from 2025Q2 onward. In 2026Q1, revenue recovered to ₩26.5bn and the operating loss shrank to ₩2.0bn, the narrowest quarterly deficit since the company was last profitable in 2022. However, operating cash flow deteriorated from +₩14.4bn (2022) to -₩21.5bn (2025), and shareholders' equity declined from ₩131.3bn (2022) to ₩52.2bn (end-2025), with the debt ratio climbing to 105.2%, making balance sheet restoration the most pressing financial priority."
+  "ko": "연간 실적은 뚜렷한 하락 흐름을 보였다. 매출은 2022년 약 2,876억원에서 2023년 약 1,855억원, 2024년 약 1,182억원, 2025년 약 1,030억원으로 4년 연속 줄어들었다. 영업이익은 2022년 약 89억원 흑자였으나 2023년 약 150억원 적자로 전환했고, 2024년 약 258억원 적자, 2025년 약 238억원 적자로 3년째 적자가 이어졌다. 지배주주 순이익 역시 2022년 약 75억원 흑자에서 2023년 약 154억원 적자, 2024년 약 509억원 적자로 크게 확대된 뒤 2025년에는 약 183억원 적자로 손실 규모가 줄었다. 다만 2024년의 대규모 순손실은 영업손실 대비 비율이 크게 벌어져 있어 일회성 비영업 요인이 반영됐을 가능성을 시사한다. 자본총계는 2022년 약 1,313억원에서 2025년 약 522억원까지 줄었고, 부채비율은 2023년 30.1%에서 2025년 105.2%로 급등해 자본 완충력이 약화된 모습이다. 영업활동현금흐름도 2022~2023년 흑자에서 2024년 약 -35억원, 2025년 약 -215억원으로 순유출이 확대돼 현금창출력 저하가 뚜렷하다. 분기 흐름을 보면 2025년 2분기~4분기 매출은 265억원, 258억원, 257억원 수준에서 정체됐다가 2026년 1분기 265억원, 2026년 2분기 335억원으로 반등했고, 영업손실도 2025년 3분기 약 -40억원에서 2026년 2분기 약 -4.6억원까지 크게 줄어들며 손익 개선 조짐이 나타났다. 다만 최근 4개 분기(2025년 3분기~2026년 2분기) 누적 지배주주 순이익은 약 -82억원으로 여전히 적자 구간에 머물러 있어, 단일 분기 개선이 연간 흑자 전환으로 이어질지는 추가 확인이 필요하다.",
+  "en": "Annual results showed a clear downward trend. Revenue fell for four straight years, from about KRW 287.6 billion in 2022 to roughly KRW 185.5 billion in 2023, KRW 118.2 billion in 2024, and KRW 103.0 billion in 2025. Operating profit swung from a gain of about KRW 8.9 billion in 2022 to a loss of about KRW 15.0 billion in 2023, widening to roughly KRW 25.8 billion in 2024 and about KRW 23.8 billion in 2025, marking three consecutive years of operating losses. Net income attributable to owners similarly moved from a gain of about KRW 7.5 billion in 2022 to losses of about KRW 15.4 billion in 2023 and a much larger KRW 50.9 billion in 2024, before narrowing to about KRW 18.3 billion in 2025. The disproportionately large net loss in 2024 relative to the operating loss suggests one-off non-operating items were likely involved. Total equity fell from about KRW 131.3 billion in 2022 to roughly KRW 52.2 billion in 2025, while the debt ratio jumped from 30.1% in 2023 to 105.2% in 2025, indicating a weakened capital buffer. Operating cash flow also swung from positive territory in 2022-2023 to outflows of about KRW -3.5 billion in 2024 and KRW -21.5 billion in 2025, a marked deterioration in cash generation. On a quarterly basis, revenue stagnated around KRW 25.7-26.5 billion from Q2 2025 through Q4 2025 before rebounding to KRW 26.5 billion in Q1 2026 and KRW 33.5 billion in Q2 2026, while the operating loss narrowed sharply from about KRW -4.0 billion in Q3 2025 to roughly KRW -460 million in Q2 2026. Still, cumulative net income attributable to owners over the latest four quarters (Q3 2025-Q2 2026) remained a loss of about KRW -8.2 billion, meaning further confirmation is needed before a single strong quarter can be read as a full annual turnaround."
  },
  "industry": {
-  "ko": "글로벌 OSAT(반도체 후공정 외주 조립·테스트) 시장은 2025년 약 733억 달러 규모로, 2026년 771억 달러 이상으로 성장이 전망되며 2035년까지 연평균 5% 이상 확대가 예상된다. 전공정 미세화의 기술적 한계가 노출되면서 후공정 패키징이 반도체 성능을 결정하는 핵심 변수로 부상하고 있으며, AI·HBM 수요 급증이 이 흐름을 가속하고 있다. 삼성전자·SK하이닉스 등 주요 메모리사들이 내부 라인을 HBM 어드밴스드 패키징으로 전환하면서 레거시 패키징 물량을 OSAT 업체에 외주화하는 현상이 가시화되고 있다. TSMC는 CoWoS 첨단 패키징 생산능력을 2026년 말까지 전년 대비 약 60% 확대할 계획이며, 대만 OSAT 기업들은 일부 패키징 가격을 최대 30% 인상했다. 글로벌 시장 지배구도는 대만 ASE(1위)·미국 Amkor·중국 JCET 순이며, 한국 OSAT 기업들의 글로벌 점유율은 약 5% 수준에 그친다. 시그네틱스는 비메모리·모바일·IoT 향 패키지에 집중하고 있어 HBM 어드밴스드 패키징 수혜를 직접 향유하기보다는 레거시 물량 증가에서 간접 수혜를 기대하는 포지션이다. 중국 OSAT 업체들의 가격 공세와 규모의 경제 열위가 경쟁 구도에서 지속적인 압박 요인으로 작용한다.",
-  "en": "The global OSAT market was valued at approximately $73.3 billion in 2025 and is projected to exceed $77.1 billion in 2026, with a CAGR of over 5% expected through 2035. As physical scaling limits in front-end processes become more apparent, back-end packaging is emerging as a key determinant of chip performance, a trend accelerating with surging AI and HBM demand. Samsung Electronics and SK Hynix are visibly outsourcing legacy packaging to OSAT providers as internal capacity migrates toward HBM and advanced packaging. TSMC plans to expand CoWoS advanced packaging capacity by approximately 60% by end-2026, and Taiwanese OSAT providers have raised some packaging prices by up to 30%. The global market remains dominated by Taiwan's ASE, followed by US-based Amkor and China's JCET, with Korean OSAT firms holding only around 5% of global market share. Signetics is concentrated in non-memory, mobile, and IoT-oriented packages, positioning it to benefit indirectly from the legacy outsourcing trend rather than directly from the high-value HBM advanced packaging wave. Aggressive pricing from Chinese OSAT peers and an inherent scale disadvantage create ongoing competitive pressure."
+  "ko": "글로벌 OSAT(반도체 후공정 외주) 시장은 완만한 성장세가 예상된다. 한 시장조사기관은 OSAT 시장이 연평균 4.54% 성장해 2034년 938억 5,000만 달러 규모에 이를 것으로 전망했다. 다른 조사기관은 2026년 771억 4,061만 달러에서 2035년 1,217억 3,759만 달러로 커질 것으로 추산했다. 다만 시장 내 경쁴 구도는 급변하고 있다. 2024년 세계 10대 OSAT 기업의 매출은 415억 6,000만 달러(약 59조원)였고, 1위인 대만 ASE가 매출의 44.6%를 차지했다. 그러나 스마트폰·가전·자동차 반도체 수요 회복이 더디고 테스트 시장 경쟁이 심화되면서 ASE의 매출은 전년 대비 0.7% 감소했다. 반면 중국 JCET의 매출은 전년보다 19.3% 늘어 50억 달러를 돌파하며 업계 3위에 올랐다. 국내 OSAT 업계에는 삼성전자·SK하이닉스의 HBM 전환에 따른 레거시 물량 외주화라는 구조적 기회가 논의되고 있으며, 메모리 기업들이 생산 라인을 HBM으로 전환하면서 생긴 공백이 OSAT 기업으로 넘어가는 흐름이 지목된다. 시그네틱스는 메모리와 비메모리 매출이 균형을 이루는 구조로 하나마이크론, SFA반도체, 네패스, LB세미콘, 두산테스나 등 국내 동종업체와 함께 이러한 외주 물량 확대 흐름에 노출돼 있다.",
+  "en": "The global outsourced semiconductor assembly and test (OSAT) market is expected to grow at a moderate pace. One market research firm projected that the OSAT market would grow at a 4.54% CAGR to reach $93.85 billion by 2034, while another estimated it would expand from $77.14 billion in 2026 to $121.74 billion by 2035. Competitive dynamics within the industry, however, are shifting rapidly. In 2024, the top ten global OSAT companies generated combined revenue of $41.56 billion, with Taiwan's ASE holding a 44.6% share as the industry leader. Yet ASE's revenue fell 0.7% year over year as smartphone, appliance, and automotive chip demand recovery remained slow and test-market competition intensified. By contrast, China's JCET grew revenue 19.3% to surpass $5 billion, moving into third place in the industry. In Korea, a structural opportunity is being discussed around Samsung Electronics and SK Hynix converting legacy production lines to HBM, with the resulting gap in conventional packaging capacity being outsourced to OSAT companies. Signetics, with its balanced memory and non-memory revenue mix, is exposed to this outsourcing trend alongside domestic peers such as Hana Micron, SFA Semicon, Nepes, LB Semicon, and Doosan Tesna."
  },
  "outlook": {
-  "ko": "회사는 LAB(Lead on Array BGA) 기술과 Recon Flip Chip 양산 인프라를 바탕으로 Advanced SiP Module 수요 대응에 집중하며 신규 매출원 확보를 추진하고 있다. 베트남 빈푹성 신공장은 2024년 8월 MOU 기준 1억 달러 이상 투자·2025년 완공·양산 개시를 목표로 했으나, 이후 실제 진행 상황은 회사의 공시·IR을 통한 추가 확인이 필요하다. 2026년 1분기 영업손실이 20억원으로 개선된 점은 하반기 분기 손익분기점(BEP) 도달 가능성을 열어 두고 있으나, 연간 BEP 달성을 위해서는 전 분기에 걸친 수익성 회복이 균등하게 이뤄져야 한다는 조건이 따른다. 주요 고객사의 외주 물량 증가 여부가 매출 회복의 핵심 드라이버가 될 전망이며, 분기 매출이 265억원 수준을 상회하여 지속 상승하는지가 중요한 지표다. 영업현금흐름의 플러스 전환이 선결 과제이며, 베트남 신공장 투자 자금 조달 방식과 일정이 재무 레버리지에 중요한 영향을 미칠 것이다. 부채비율이 105%를 넘어선 상황에서 추가 차입 여력이 제한적일 수 있으므로, 유상증자·그룹사 지원 등 자본 조달 옵션에 대한 모니터링이 필요하다.",
-  "en": "The company is focused on expanding new revenue streams via its LAB (Lead on Array BGA) technology and Recon Flip-Chip mass-production infrastructure, targeting growing demand for Advanced SiP Module products. The Vietnam greenfield factory—with investment exceeding $100M and originally targeting 2025 completion—requires ongoing monitoring through company DART disclosures and IR communications for its current execution status. The narrowing of the quarterly operating loss to ₩2.0bn in 2026Q1 opens the possibility of reaching quarterly break-even in the second half of 2026, though full-year break-even requires sustained profitability improvement across all quarters. Increased outsourcing volumes from key customers will be the primary revenue recovery driver, with sustained quarterly revenue above ₩26.5bn serving as a key signpost. Restoring positive operating cash flow is a prerequisite for financial stabilization, and the funding structure and timing of the Vietnam investment will materially shape future financial leverage. With the debt ratio already exceeding 105%, additional borrowing capacity may be constrained, making it important to monitor capital-raising alternatives such as rights offerings or intra-group financial support."
+  "ko": "회사의 최근 실적 흐름은 매출 회복과 손실 축소가 동시에 나타나는 구간으로 해석된다. 2026년 상반기 들어 매출이 늘고 영업손실이 좁혀지면서 턴어라운드 가능성이 부각되고 있다는 시각이 있으나, 현금흐름과 자본구조 개선이 뒤따라야 한다는 지적도 함께 나온다. 회사는 Recon 플립칩과 Advanced SiP Module 등 고부가가치 후공정 인프라를 바탕으로 신규 사업(New Biz) 매출 창출에 주력하고 있다고 밝혀 왔다. 산업 측면에서는 국내 메모리 대기업들이 HBM 등 어드밴스드 패키징에 생산 공간을 집중 배분하면서 레거시 후공정 물량을 외주로 돌릴 가능성이 거론되고 있으며, 이러한 흐름이 하반기부터 본격화될 것이라는 증권사 전망도 제기된 바 있다. 2026년 8월에는 적정 유통주식수 유지를 통한 주가 안정화와 기업가치 제고를 목적으로 5대1 액면병합이 완료됐다. 다만 회사가 3년 연속 적자를 기록한 배경에는 반도체 수율 안정화 지연이 지목된 바 있어, 수율 개선과 신규 수주 확보 속도가 향후 실적 회복 속도를 가르는 변수가 될 것으로 보인다. 영풍 계열이라는 지배구조상 위치도 그룹 차원의 경영권 분쟁 이슈와 맞물려 있어 개별 실적 전망과는 별도로 지켜볼 변수로 남아 있다.",
+  "en": "The company's recent earnings trajectory can be read as a phase where revenue recovery and loss reduction are appearing simultaneously. Some views point to rising turnaround potential given the revenue growth and narrowing operating loss seen in the first half of 2026, though others note that cash flow and capital structure improvement still need to follow. The company has stated it is focusing on generating new business revenue based on high-value back-end infrastructure such as the Recon flip-chip package and the Advanced SiP Module. On the industry side, there is discussion that domestic memory majors concentrating production space on advanced packaging such as HBM could push legacy back-end volume toward outsourcing, with one brokerage forecasting this trend would intensify in the second half of the year. In August 2026, the company completed a 5-to-1 share consolidation aimed at maintaining an appropriate float and enhancing corporate value. However, delayed yield stabilization has been cited as a factor behind the company's three consecutive years of losses, meaning the pace of yield improvement and new order wins will likely be key variables determining the speed of any earnings recovery. The company's position as a Yeongpoong Group affiliate also ties it to group-level governance disputes, which remains a separate variable to monitor apart from standalone earnings prospects."
  },
  "valuation_comment": {
-  "ko": "지속적인 적자 구조 하에서 순이익 기반 밸류에이션 지표는 의미 있는 참고치를 제공하지 못하며, 주가는 주당순자산(BPS 586원)에 근접한 수준에서 형성되고 있다. 이는 자본 잠식 방향으로 진행 중인 기업이 통상 순자산 대비 할인을 적용받는 국내 시장의 일반적인 패턴과 부합한다. 마지막으로 영업이익을 시현했던 2022년 구간과 비교하면 당시 BPS 대비 주가 배수는 현재보다 높은 수준이었으나, 이익 가시성이 회복되기 전까지 그 프리미엄을 재현하기는 어렵다는 인식이 반영된 것으로 볼 수 있다. 공시된 DPS가 0원인 만큼 배당 수익 기대는 현재로서는 근거가 없다. 헤드라인 EPS(-121원)가 음수인 상태에서 주가 수준은 손실 축소 속도·재무 건전성 회복·업황 반등이라는 세 변수의 함수로 결정될 것이며, 이 중 어느 하나라도 기대에 못 미칠 경우 현재 수준의 순자산 디스카운트가 확대될 수 있다.",
-  "en": "Sustained losses render earnings-based valuation metrics uninformative; the stock is currently trading at a level approximating reported book value per share (BPS ₩586), consistent with the common Korean market pattern of applying discounts to companies undergoing book value erosion. Compared with the last period of operating profitability in 2022, market valuations relative to book value were materially higher, but that premium is unlikely to re-emerge without visible earnings recovery. The disclosed DPS is ₩0, and there is currently no basis for dividend income expectations. With the headline EPS at -₩121, the share price level will be determined primarily by three variables: the pace of loss reduction, balance sheet restoration, and cyclical industry recovery—and underperformance on any one of these could widen the current discount to book value."
+  "ko": "회사는 2023년부터 순손실이 이어지고 있어 주가수익비율(PER) 산출이 어려운 구간에 있으며, 주가는 주당순자산 대비 낮은 수준에서 거래되는 편으로 순자산 대비 할인 구도가 나타난다. 최근 몇 년간 현금 배당을 지급하지 않아 배당 매력을 통한 밸류에이션 지지 요인은 제한적이다. 다년간 매출이 줄고 자본총계도 축소돼 온 만큼, 주가순자산비율의 향방은 향후 분기 실적이 적자에서 흑자로 전환할 수 있는지, 그리고 자본 확충이나 재무구조 개선이 이뤄지는지에 크게 좌우될 것으로 보인다. 2026년 상반기 나타난 매출 반등과 영업손실 축소가 다음 분기 이후에도 이어지는지가 밸류에이션 판단의 중요한 참고점이 될 것이다.",
+  "en": "Given net losses persisting since 2023, the price-to-earnings ratio is difficult to calculate in this window, and the stock tends to trade at a level below book value per share, reflecting a discount to net asset value. The company has not paid cash dividends in recent years, limiting valuation support from dividend yield. With revenue and total equity having contracted over multiple years, the direction of the price-to-book ratio going forward will likely hinge heavily on whether upcoming quarters can turn from loss to profit and whether capital raising or balance-sheet repair materializes. Whether the revenue rebound and narrower operating loss seen in the first half of 2026 continues into subsequent quarters will be an important reference point for valuation assessment."
  },
  "bull": [
   {
    "title": {
-    "ko": "분기 영업손실 급감: 회복 궤도 진입",
-    "en": "Sharply Narrowing Quarterly Losses: Early Recovery Trajectory"
+    "ko": "2026년 상반기 손익 개선 조짐",
+    "en": "Signs of Earnings Improvement in H1 2026"
    },
    "body": {
-    "ko": "2025년 1분기 영업손실 130억원을 저점으로 2분기부터는 30~40억원대로 급감한 데 이어 2026년 1분기에는 20억원으로 추가 축소됐다. 일회성 유형자산 손상차손이 해소되고 분기 매출이 250~265억원대로 안정화되면서 고정비 레버리지 개선이 진행 중이다. 하반기 분기 BEP 달성 시나리오가 현실화될 경우 연간 손실 규모가 2025년 대비 크게 줄어들 수 있으며, 이는 재무 건전성 회복의 출발점이 될 수 있다.",
-    "en": "Following the 2025Q1 peak operating loss of ₩13.0bn, quarterly losses contracted sharply to the ₩3.0–4.0bn range before narrowing further to ₩2.0bn in 2026Q1. With one-time impairment charges absorbed and quarterly revenue stabilizing in the ₩25–26.5bn band, fixed-cost leverage improvement is underway. If quarterly break-even materializes in the second half, the full-year loss could shrink materially versus 2025, providing the starting point for balance sheet recovery."
+    "ko": "2026년 2분기 매출은 약 335억원으로 2025년 2분기 이후 가장 큰 규모를 기록했고, 영업손실도 약 -4.6억원까지 축소됐다. 2026년 1분기(약 265억원)에 이어 매출이 뚜렷하게 늘어난 점은 정체돼 있던 외형이 다시 움직이기 시작했다는 신호로 해석될 수 있다. 영업손실이 2025년 3분기 약 -40억원에서 크게 줄어든 점도 원가 구조 개선 가능성을 시사한다.",
+    "en": "Q2 2026 revenue reached about KRW 33.5 billion, the largest since Q2 2025, while the operating loss narrowed to about KRW -460 million. Following Q1 2026 revenue of roughly KRW 26.5 billion, the clear pickup suggests topline momentum that had stalled may be turning. The sharp narrowing of the operating loss from about KRW -4.0 billion in Q3 2025 also hints at potential cost structure improvement."
    }
   },
   {
    "title": {
-    "ko": "OSAT 업황 개선: 레거시 외주화 수혜",
-    "en": "OSAT Cycle Recovery: Beneficiary of Legacy Outsourcing Shift"
+    "ko": "고부가 패키징 인프라와 고객 다변화",
+    "en": "High-Value Packaging Infrastructure and Customer Diversification"
    },
    "body": {
-    "ko": "삼성전자·SK하이닉스 등 대형 메모리사들이 HBM 라인 전환을 위해 레거시 패키징을 외주로 전환하는 흐름이 국내 중소 OSAT 업체 전반의 수주 회복으로 이어지고 있다. 범용 메모리 반도체 시황 개선과 웨이퍼 수급 안정화에 따라 고객사들의 패키징 발주 정상화가 진행 중이다. 비메모리·IoT·모바일 향 패키지 수요의 점진적 회복 역시 시그네틱스의 고객 포트폴리오 다변화에 우호적인 환경을 형성한다.",
-    "en": "The trend of major memory makers converting internal lines to HBM and outsourcing legacy packaging is driving order recovery across Korea's mid-tier OSAT sector. Stabilizing wafer supply and improving general memory market conditions are normalizing packaging orders from major customers. Gradual recovery in non-memory, IoT, and mobile packaging demand also creates favorable conditions for Signetics to diversify its customer portfolio."
+    "ko": "회사는 Recon 플립칩과 Advanced SiP Module 등 고부가가치 패키지 양산 인프라를 갖추고 있으며, 삼성전자·SK하이닉스·LG전자·Infineon·Micron 등 국내외 대형 고객사를 두고 있다. 최근에는 중화권 지문인식 고객사를 새로 발굴해 거래선을 다변화한 점도 매출 기반 확대 요인이다. 메모리와 비메모리 매출이 균형을 이루고 있어 특정 제품군 의존도가 낮은 편이다.",
+    "en": "The company operates production infrastructure for high-value packages including the Recon flip-chip package and the Advanced SiP Module, and counts Samsung Electronics, SK Hynix, LG Electronics, Infineon, and Micron among its major domestic and overseas customers. Recently securing new fingerprint-recognition customers in Greater China has also diversified its client base. Its balanced mix between memory and non-memory revenue reduces dependence on any single product category."
    }
   },
   {
    "title": {
-    "ko": "베트남 신공장: 실현 시 비용 경쟁력 도약 잠재력",
-    "en": "Vietnam Greenfield: Significant Cost Competitiveness Upside If Executed"
+    "ko": "HBM 전환에 따른 외주 물량 확대 기대",
+    "en": "Potential Outsourcing Tailwind from HBM Conversion"
    },
    "body": {
-    "ko": "베트남 빈푹성 5만㎡ 신공장이 완공·양산에 돌입할 경우 저비용 노동력과 삼성전자 베트남 생산 인프라 인근 입지를 활용한 공급망 재편이 가능하다. Flip-Chip·MCM·BGA·FBGA 등 기존 제품의 생산 원가 절감과 신규 고객 개발이 동시에 기대된다. 영풍그룹 계열 코리아써키트의 PCB 사업과 패키징의 결합을 통한 턴키 수주 시너지도 잠재적 상승 요인이다.",
-    "en": "If the Vietnam greenfield factory (50,000㎡, $100M+ investment) enters mass production, Signetics could leverage low-cost labor and proximity to Samsung Electronics' Vietnamese manufacturing base to restructure its supply chain. Simultaneous cost reductions for existing products (Flip-Chip, MCM, BGA, FBGA) and new customer development are expected. Potential turn-key order synergies combining Korea Circuit's PCB business with Signetics packaging represent additional upside optionality."
+    "ko": "삼성전자와 SK하이닉스가 생산 라인을 HBM 등 어드밴스드 패키징으로 전환하면서 레거시 후공정 물량이 OSAT 업체로 넘어가는 흐름이 업계에서 논의되고 있다. 한 증권사는 이러한 외주화가 하반기부터 본격화될 것으로 전망한 바 있다. 메모리와 비메모리를 함께 다루는 시그네틱스도 이 흐름에서 수혜 가능성이 있는 국내 OSAT 업체 중 하나로 거론된다.",
+    "en": "The industry has discussed a trend in which Samsung Electronics and SK Hynix converting production lines to advanced packaging such as HBM is pushing legacy back-end volume toward OSAT companies. One brokerage forecast that this outsourcing would intensify from the second half of the year. Signetics, handling both memory and non-memory products, is cited as one domestic OSAT company that could potentially benefit from this trend."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "지속적인 현금 유출과 자본 잠식 위험",
-    "en": "Persistent Cash Burn and Equity Erosion Risk"
+    "ko": "4년 연속 매출 축소",
+    "en": "Four Straight Years of Revenue Decline"
    },
    "body": {
-    "ko": "영업현금흐름이 2022년 +144억원에서 2025년 -215억원으로 급속히 악화됐고, 3년 연속 순손실로 자기자본은 2022년 1,313억원에서 2025년 말 522억원으로 약 60% 감소했다. 부채비율이 105.2%를 기록한 가운데 추가 차입 여력이 제한적이며, 베트남 신공장 투자 실행에 따른 재무 레버리지 추가 확대 가능성이 리스크 요인이다. 유상증자 등 자본 조달이 불가피할 경우 기존 주주 지분의 희석이 수반된다.",
-    "en": "Operating cash flow deteriorated sharply from +₩14.4bn (2022) to -₩21.5bn (2025), and three consecutive years of net losses reduced equity from ₩131.3bn (2022) to ₩52.2bn (end-2025)—a ~60% decline. With the debt ratio at 105.2%, additional borrowing capacity is constrained, and the risk of further leverage increase from Vietnam factory financing is material. If a capital raise such as a rights offering becomes necessary, existing shareholder dilution is unavoidable."
+    "ko": "연간 매출은 2022년 약 2,876억원에서 2025년 약 1,030억원까지 4년 연속 줄어들며 규모가 3분의 1 수준으로 축소됐다. 2026년 상반기 매출 반등이 나타났지만, 최근 4개 분기 누적 매출은 여전히 과거 연간 매출 수준에 못 미친다. 외형 축소가 고정비 부담을 키워 수익성 회복을 더디게 할 가능성이 있다.",
+    "en": "Annual revenue shrank for four straight years, from about KRW 287.6 billion in 2022 to roughly KRW 103.0 billion in 2025, cutting the company's scale to about a third of its former size. While revenue rebounded in the first half of 2026, cumulative revenue over the latest four quarters still falls short of past annual levels. The reduced scale could raise fixed-cost burden and slow the pace of any profitability recovery."
    }
   },
   {
    "title": {
-    "ko": "매출 구조적 감소: 피크 대비 64% 축소 후 정체",
-    "en": "Structural Revenue Contraction: 64% Decline from Peak, Now Stagnating"
+    "ko": "재무구조 악화와 현금흐름 순유출",
+    "en": "Deteriorating Balance Sheet and Cash Outflows"
    },
    "body": {
-    "ko": "2022년 2,876억원이던 연간 매출이 2025년 1,030억원으로 3년 만에 64%가 줄었으며, 분기 매출도 250~265억원대에서 정체 중이다. 레거시 반도체 패키징 수요가 구조적으로 어드밴스드 패키징으로 이동하고 있어 단순 업황 회복만으로 과거 수준의 매출 회복은 어렵다. 주요 고객사의 내재화 전략이 강화될 경우 외주 물량이 기대보다 제한적일 수 있다.",
-    "en": "Annual revenue contracted 64% from ₩287.6bn (2022) to ₩103.0bn (2025) in just three years, with quarterly revenue stagnating in the ₩25.0–26.5bn range. Structural demand migration toward advanced packaging formats means a pure cyclical rebound is unlikely to restore historical revenue levels. If key customers reinternalize production capacity, outsourced volumes could remain more limited than current expectations."
+    "ko": "부채비율은 2023년 30.1%에서 2025년 105.2%로 급등했고, 자본총계는 2022년 약 1,313억원에서 2025년 약 522억원까지 지속적으로 줄었다. 영업활동현금흐름도 2024년 약 -35억원, 2025년 약 -215억원으로 순유출이 확대돼 자체 현금창출력이 약화됐다. 이러한 흐름이 지속될 경우 외부 자금 조달이나 추가 자본 확충 필요성이 커질 수 있다.",
+    "en": "The debt ratio jumped from 30.1% in 2023 to 105.2% in 2025, and total equity declined steadily from about KRW 131.3 billion in 2022 to roughly KRW 52.2 billion in 2025. Operating cash flow also worsened to a net outflow of about KRW -3.5 billion in 2024 and KRW -21.5 billion in 2025, weakening internal cash generation. If this trend continues, the need for external financing or additional capital raising could grow."
    }
   },
   {
    "title": {
-    "ko": "글로벌 OSAT 경쟁 열위: 규모·기술 격차",
-    "en": "Global OSAT Competitive Disadvantage: Scale and Technology Gaps"
+    "ko": "그룹 지배구조 리스크와 실적 부진 낙인",
+    "en": "Group Governance Risk and a Persistent-Loss Label"
    },
    "body": {
-    "ko": "글로벌 1위 ASE(대만)·2위 Amkor(미국)·3위 JCET(중국)과의 규모 격차는 압도적이며, 중국 OSAT 기업들의 가격 공세도 거세다. 어드밴스드 패키징(CoWoS·HBM TSV 등) 투자 여력이 대형사 대비 절대적으로 부족하고, 고부가가치 고객 확보에도 한계가 있다. 국내에서도 SFA반도체·하나마이크론 등 경쟁사의 캐파 투자가 지속되는 가운데 시장 점유율 유지가 쉽지 않은 상황이다.",
-    "en": "The scale gap between Signetics and the global top three OSAT players—ASE, Amkor, and JCET—is overwhelming, while Chinese OSAT firms intensify pricing pressure. Investment capacity for advanced packaging technologies (CoWoS, HBM TSV) is severely constrained relative to larger peers, limiting access to high-value customers. Domestically, ongoing capacity investments by SFA Semiconductor and Hana Micron make market share defense increasingly challenging."
+    "ko": "시그네틱스는 영풍 계열사로, 고려아연-영풍 간 경영권 분쟁이라는 그룹 차원 불확실성에 노출돼 있다. 한 언론 보도는 3년 연속 적자를 낸 시그네틱스를 영풍 계열 내 '좀비기업'으로 지칭하며 실적 부진을 지적한 바 있다. 그룹 지배구조 이슈가 장기화될 경우 개별 사업 전략이나 투자 의사결정에도 영향을 줄 가능성이 있다.",
+    "en": "As a Yeongpoong Group affiliate, Signetics is exposed to group-level uncertainty stemming from the Korea Zinc-Yeongpoong governance dispute. One media report labeled Signetics, which posted losses for three straight years, a 'zombie company' within the Yeongpoong group, pointing to its persistent weak performance. If the group-level governance issue drags on, it could also affect standalone business strategy or investment decisions."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "재무 유동성 및 자본 조달 리스크",
-    "en": "Financial Liquidity and Capital Raising Risk"
+    "ko": "재무 리스크",
+    "en": "Financial Risk"
    },
    "body": {
-    "ko": "3년 연속 음(-) 영업현금흐름과 자기자본 60% 감소, 부채비율 105.2% 상승으로 유동성 압박이 가중되고 있다. 베트남 신공장 투자(1억 달러 이상)가 본격화될 경우 외부 자금 조달 없이는 재무 구조가 더욱 악화될 수 있으며, 추가 유형자산 손상차손 발생 가능성도 배제하기 어렵다. 유상증자·대출 등 자금 조달 과정에서 주가 변동성이 확대될 위험이 있다.",
-    "en": "Three consecutive years of negative operating cash flow, a ~60% equity reduction, and a debt ratio of 105.2% are compounding liquidity pressure. Full-scale execution of the Vietnam greenfield investment ($100M+) without external financing would further impair the balance sheet; additional property impairment charges also cannot be excluded. Capital-raising events—equity offerings or debt issuance—carry the risk of elevated share price volatility."
+    "ko": "부채비율이 2025년 105.2%까지 오르고 영업활동현금흐름이 같은 해 약 -215억원 순유출을 기록해 자본 완충력과 자체 현금창출력이 모두 약화된 상태다. 매출 회복이 이어지지 않으면 재무구조 개선이 지연될 수 있다. 추가적인 외부 자금조달이나 자산 매각 필요성이 부각될 가능성도 있다.",
+    "en": "With the debt ratio rising to 105.2% in 2025 and operating cash flow recording a net outflow of about KRW -21.5 billion the same year, both capital buffer and internal cash generation have weakened. If revenue recovery does not continue, balance-sheet repair could be delayed. The need for additional external financing or asset disposals could also come into focus."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중 및 발주 변동 리스크",
-    "en": "Customer Concentration and Order Volatility Risk"
+    "ko": "산업 경쟁 리스크",
+    "en": "Industry Competition Risk"
    },
    "body": {
-    "ko": "삼성전자·SK하이닉스 등 소수 대형 고객에 대한 높은 의존도는 해당 고객의 투자 사이클·자체 생산 전략 변화에 따라 수주가 급변할 수 있음을 의미한다. 주요 고객이 내재화 비중을 높이거나 경쟁사로 발주처를 전환할 경우 매출 급감 위험이 있다. 업황 개선 시에도 시그네틱스가 아닌 대형 글로벌 OSAT 업체로 물량이 집중될 가능성도 상존한다.",
-    "en": "High dependence on a small number of major customers (Samsung Electronics, SK Hynix) means order volumes are highly sensitive to shifts in their investment cycles and insourcing strategies. If a key customer increases in-house production or diverts orders to competitors, revenues could fall sharply. Even in an improving industry environment, incremental outsourced volumes could disproportionately flow to larger global OSAT peers rather than Signetics."
+    "ko": "글로벌 OSAT 시장에서는 중국 업체들이 정부 지원과 내수 수요를 등에 업고 두 자릿수 매출 성장을 이어가며 기존 강자들의 점유율을 잠식하고 있다. 국내 시장에서도 하나마이크론, SFA반도체, 네패스, LB세미콘 등 다수 업체가 증설과 기술 개발에 나서고 있어 경쁴 강도가 높다. 가격 경쟁이나 첨단 패키징 기술 격차가 확대될 경우 수익성에 부담이 될 수 있다.",
+    "en": "In the global OSAT market, Chinese companies are sustaining double-digit revenue growth backed by government support and domestic demand, eroding incumbent players' market share. Domestically, multiple companies including Hana Micron, SFA Semicon, Nepes, and LB Semicon are pursuing capacity expansion and technology development, keeping competitive intensity high. If price competition or gaps in advanced packaging technology widen, profitability could come under pressure."
    }
   },
   {
    "cat": {
-    "ko": "반도체 업황 사이클 및 지정학 리스크",
-    "en": "Semiconductor Cycle and Geopolitical Risk"
+    "ko": "지배구조 리스크",
+    "en": "Governance Risk"
    },
    "body": {
-    "ko": "반도체 업황은 재고 사이클과 수급 변동에 구조적으로 민감하며, 글로벌 거시 환경 악화(경기 침체·무역 분쟁 등)로 개선 모멘텀이 중단될 수 있다. 베트남 현지 투자는 현지 노동법·세제·정치 환경 변화에 따른 불확실성을 내포하며, 미중 무역 갈등 심화가 공급망 재편을 강제할 경우 추가 대응 비용이 발생할 수 있다. 원화 환율 변동도 수출 비중이 높은 패키징 기업의 수익성에 직·간접적으로 영향을 미친다.",
-    "en": "The semiconductor sector is inherently sensitive to inventory cycles and supply-demand swings; a deterioration in the global macro environment (recession, trade conflicts) could interrupt the current recovery momentum. The Vietnam investment carries uncertainty related to local labor law, tax regime, and political environment, while escalating US-China trade tensions could impose additional supply chain restructuring costs. Korean won exchange rate fluctuations also indirectly affect the profitability of this export-oriented packaging company."
+    "ko": "회사는 영풍 계열사로서 고려아연과 영풍 간 경영권 분쟁이라는 그룹 차원 이슈에 연계돼 있으며, 분쟁의 불씨가 여전히 남아 있는 것으로 전해진다. 그룹 차원의 불확실성이 개별 계열사의 자본정책이나 신규 투자 결정에 영향을 줄 가능성이 있다. 그룹 이슈의 전개 방향은 회사 자체 실적과는 별개로 지켜봐야 할 변수다.",
+    "en": "As a Yeongpoong Group affiliate, the company is linked to the group-level Korea Zinc-Yeongpoong governance dispute, which reportedly still has unresolved tensions. Group-level uncertainty could affect individual affiliates' capital policy or new investment decisions. How this group issue unfolds is a variable to monitor separately from the company's own operating performance."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 8월 중순 (2026Q2 실적 발표)",
-    "en": "Mid-August 2026 (2026Q2 Earnings Release)"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 2분기 매출·영업손실 규모를 확인하여 분기 손실 축소 추세가 지속되는지 점검. 영업손실이 10억원 이하로 추가 축소될 경우 연간 BEP 시나리오에 대한 신뢰도가 높아진다.",
-    "en": "Confirm 2026Q2 revenue and operating loss figures to verify whether the quarterly loss-narrowing trend continues. If the operating loss contracts below ₩1.0bn, confidence in a full-year break-even scenario would increase materially."
+    "ko": "2026년 3분기 실적(잠정) 공시 확인 — 2분기에 나타난 매출 반등과 영업손실 축소가 이어지는지가 핵심이다.",
+    "en": "Check the (preliminary) Q3 2026 earnings release — the key question is whether the revenue rebound and narrower operating loss seen in Q2 continue."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (베트남 공장 착공·자금 조달 공시)",
-    "en": "2H 2026 (Vietnam Factory Progress or Financing Disclosure)"
+    "ko": "2026년 4분기(10~12월)",
+    "en": "Q4 2026 (October-December)"
    },
    "what": {
-    "ko": "베트남 빈푹성 신공장의 착공·자금 조달(차입·유상증자 등) 관련 DART 공시 여부를 확인. 투자 규모·방식·일정이 구체화될 경우 재무 레버리지 변화와 희석 리스크를 재평가해야 한다.",
-    "en": "Monitor DART disclosures on Vietnam factory groundbreaking or funding details (debt, equity raise). If investment scale, structure, and timeline are formalized, a reassessment of financial leverage changes and dilution risk will be warranted."
+    "ko": "메모리 대기업의 HBM 전환에 따른 레거시 후공정 외주 물량 확대가 실제로 반영되는지 확인 — 증권사가 예상한 하반기 본격화 시점과 부합하는지 점검한다.",
+    "en": "Verify whether the expected expansion of legacy back-end outsourcing from memory majors' HBM conversion actually materializes, checking whether it aligns with brokerages' forecast of a second-half ramp."
    }
   },
   {
    "when": {
-    "ko": "분기별 (영업현금흐름 플러스 전환 시점)",
-    "en": "Quarterly (Operating Cash Flow Turning Positive)"
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "분기 영업현금흐름이 플러스로 전환되는 시점이 손익 회복의 실질적 신호. 영업손실이 축소되더라도 운전자본 증가나 자본지출 확대가 현금 유출을 지속시킬 수 있어 현금흐름표를 손익계산서와 병행 모니터링해야 한다.",
-    "en": "The point at which quarterly operating cash flow turns positive is a more substantive sign of genuine operational recovery. Even as operating losses narrow, increases in working capital or capital expenditure could maintain cash outflows, making it important to monitor the cash flow statement alongside the income statement."
+    "ko": "2026년 사업보고서·정기주주총회에서 부채비율과 영업활동현금흐름의 개선 여부, 그리고 영풍-고려아연 지배구조 분쟁의 그룹 차원 진행 상황을 함께 점검한다.",
+    "en": "In the 2026 annual report and regular shareholders' meeting, check whether the debt ratio and operating cash flow have improved, along with the progress of the group-level Korea Zinc-Yeongpoong governance dispute."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 (주요 고객사 외주 발주 동향)",
-    "en": "2H 2026 (Key Customer Outsourcing Order Trends)"
+    "ko": "확인 가능한 시점마다",
+    "en": "As disclosed"
    },
    "what": {
-    "ko": "삼성전자·SK하이닉스의 HBM 전환 가속에 따른 레거시 패키징 외주 물량 증감을 고객사 IR 및 국내 OSAT 업계 가동률 지표를 통해 간접 확인. 시그네틱스 분기 매출이 265억원을 지속적으로 상회하는지가 핵심 관전 포인트다.",
-    "en": "Cross-check legacy packaging outsourcing volumes from Samsung Electronics and SK Hynix through their own IR materials and domestic OSAT industry utilization indicators. Whether Signetics' quarterly revenue can sustainably exceed ₩26.5bn will be the key signpost of order recovery momentum."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 11월 중순 (2026Q3 실적 발표)",
-    "en": "Mid-November 2026 (2026Q3 Earnings Release)"
-   },
-   "what": {
-    "ko": "3분기 실적이 분기 흑자 달성 여부와 함께 연간 실적 방향성을 가늠하는 중요 체크포인트. 경영진의 4분기 및 2027년 전망 언급이 있을 경우 손익분기점 도달 시기 재산정의 근거로 활용한다.",
-    "en": "Third-quarter results are a critical checkpoint for determining whether a quarterly profit has been achieved and for full-year directional guidance. Any management commentary on 2026Q4 or 2027 prospects can serve as a basis for recalibrating break-even timing estimates."
+    "ko": "Recon 플립칩·Advanced SiP Module 등 신규 사업(New Biz) 관련 수주나 증설 공시 여부를 확인해 고부가가치 제품 비중 변화를 추적한다.",
+    "en": "Track any disclosed new orders or capacity additions related to new-business products such as the Recon flip-chip package and the Advanced SiP Module to gauge changes in the high-value product mix."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "시그네틱스는 2022년 흑자에서 3년 연속 영업 적자라는 가파른 하락을 겪은 뒤, 2026년 1분기 현재 분기 영업손실이 20억원 수준으로 축소되며 회복 궤도의 초입에 진입하고 있다. OSAT 업황 개선 및 주요 메모리사의 레거시 외주화 흐름은 구조적 기회를 제공하며, Advanced SiP·Recon Flip Chip 등 신기술 제품과 베트남 신공장 계획은 중장기 경쟁력 제고의 잠재 변수다. 그러나 부채비율 105%·영업현금흐름 -215억원(2025년)으로 대표되는 재무 건전성 악화는 단기 투자 여력과 대외 신인도에 제약을 가하고 있으며, 베트남 투자 실행 과정의 자금 조달 구조가 향후 재무 레버리지의 향방을 결정할 것이다. 매출이 2022년 피크 대비 64% 수준으로 감소한 가운데, 단순 업황 회복만으로 과거 수익 구조를 복원하기는 어려운 만큼 기술 고도화와 고객 다변화를 통한 질적 성장 전환이 필수적이다. 향후 핵심 변수는 분기 영업현금흐름의 플러스 전환 시점, 베트남 공장 착공 및 자금 조달 공시, 주요 고객 외주 물량 회복의 세 가지로 집약된다. 본 리포트는 투자 권유를 목적으로 하지 않으며, 제시된 수치와 분석은 공개 자료에 기반한 정보 제공용이다.",
-   "en": "Signetics is entering the early stages of a recovery trajectory, with quarterly operating losses narrowing to approximately ₩2.0bn in 2026Q1 after three consecutive years of losses following a profitable 2022. Improving OSAT industry conditions and the visible legacy outsourcing shift from major memory makers present structural opportunities, while Advanced SiP, Recon Flip-Chip technology, and the Vietnam greenfield factory represent potential medium-to-long-term competitive levers. However, the deterioration in financial health—evidenced by a debt ratio of 105.2% and operating cash outflow of ₩21.5bn in 2025—constrains near-term investment capacity and external credibility, and the funding structure of the Vietnam project will be decisive for future financial leverage. With revenue having contracted 64% from its 2022 peak, a pure cyclical rebound is unlikely to restore historical profitability; a qualitative transformation through technology advancement and customer diversification is essential. The three key variables to monitor are: the timing of operating cash flow turning positive, Vietnam factory groundbreaking and financing disclosures, and the recovery trajectory of outsourced order volumes from key customers. This report is provided for informational purposes only and does not constitute investment advice or a recommendation to buy or sell securities."
+   "ko": "시그네틱스는 2022년 이후 4년 연속 매출이 줄어드는 축소 국면을 지나왔으며, 2023~2025년 3년 연속 영업손실을 기록했다. 다만 2026년 상반기, 특히 2분기에는 매출이 335억원까지 늘고 영업손실이 -4.6억원까지 좁혀지며 손익 개선의 조짐이 나타났다. 그 반대편에는 부채비율이 105.2%까지 오르고 영업활동현금흐름이 -215억원 순유출을 기록한 2025년의 재무구조 악화가 자리한다. 산업적으로는 HBM 전환에 따른 레거시 후공정 외주화라는 구조적 기회가 논의되는 동시에, 중국 OSAT 업체들의 빠른 성장이라는 경쟁 압력도 함께 존재한다. 회사는 영풍 계열사로서 고려아연-영풍 간 경영권 분쟁이라는 그룹 차원 변수에도 노출돼 있다. 앞으로 몇 개 분기의 실적과 재무구조 개선 여부, 그리고 산업 내 외주 물량 확대의 실제 반영 정도가 이 기업의 방향을 가늠하는 핵심 관찰 포인트가 될 것으로 보인다.",
+   "en": "Signetics has passed through a four-year revenue contraction since 2022 and posted operating losses for three straight years from 2023 to 2025. Yet in the first half of 2026, particularly Q2, revenue rose to about KRW 33.5 billion and the operating loss narrowed to roughly KRW -460 million, showing signs of earnings improvement. On the other side of the ledger sits the balance-sheet deterioration of 2025, when the debt ratio climbed to 105.2% and operating cash flow recorded a net outflow of about KRW -21.5 billion. On the industry front, a structural opportunity from HBM-driven legacy back-end outsourcing is being discussed, alongside competitive pressure from the rapid growth of Chinese OSAT companies. As a Yeongpoong Group affiliate, the company also remains exposed to the group-level variable of the Korea Zinc-Yeongpoong governance dispute. The coming quarters' earnings, the trajectory of balance-sheet repair, and the extent to which industry-wide outsourcing volume actually materializes will likely be the key points to watch in gauging this company's direction."
   }
  },
  "sources": [
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&gicode=A033170&MenuYn=Y&ReportGB=B&NewMenuID=Y&stkGb=701",
+  "https://www.theinsightpartners.com/reports/outsourced-semiconductor-assembly-and-test-osat-market",
+  "https://www.marketgrowthreports.com/market-reports/outsourced-semiconductor-assembly-and-test-osat-market-110444",
+  "https://www.hankookilbo.com/news/article/A2025051410370001844",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=528364",
+  "https://keyzard.cc/views/nb/Myo8NCZyPD4rZWVtbWtsZm5tamtpa2s",
   "https://m.irgo.co.kr/IR-ROOM/033170/%EC%8B%9C%EA%B7%B8%EB%84%A4%ED%8B%B1%EC%8A%A4-IR-ROOM",
-  "https://goinsider.kr/stock/00158219",
-  "http://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=033170",
-  "https://valueline.co.kr/finance/balancesheet/033170",
-  "https://news.nate.com/view/20260220n28931",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Finance.asp?pGB=1&gicode=A033170&cID=&MenuYn=Y&ReportGB=B&NewMenuID=103&stkGb=701",
-  "https://www.k5.co.kr/stock/033170",
-  "https://www.investing.com/equities/signetics-corp-earnings",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=qJeccDcG8mQlMefz",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=kuwpFketc8sUj9rL",
   "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260319000876&docno=&viewerhost=",
-  "https://www.huffingtonpost.kr/whois/436207",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=kuwpFketc8sUj9rL",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=qJeccDcG8mQlMefz",
   "https://alphasquare.co.kr/home/stock-summary?code=033170",
-  "https://kr.investing.com/equities/signetics-corp",
-  "http://www.bujane.co.kr/sub/sub_bbs.php?PageNo=3&BBSCode=RP001&Seq=20260414000014",
-  "https://www.thelec.kr/news/articleView.html?idxno=55559",
-  "https://kita.net/researchTrade/report/tradeBrief/downloadTradeBriefFile.do;JSESSIONID_KITA=6258EC877AA45CE1F56C5709D544D6A2.Hyper?no=960BC4669ECB61EC1C90F592AD863E03&fileSeq=B0721B9F23054DDC7FE56C2811A12715"
+  "https://goinsider.kr/stock/00158219",
+  "https://www.investing.com/equities/signetics-corp",
+  "https://www.huffingtonpost.kr/whois/436207",
+  "https://www.shinyoung.com/files/20240821/70334694aacdf.pdf",
+  "https://stockstalker.co.kr/back-end-process/",
+  "https://www.bondweb.co.kr/_research/downloadPage.asp?number=759761&gn=1",
+  "https://www.facebook.com/SoBooJang/posts/%EA%B5%AD%EB%82%B4-%EB%B0%98%EB%8F%84%EC%B2%B4-%ED%8C%A8%ED%82%A4%EC%A7%95-10%EB%8C%80-%EA%B8%B0%EC%97%85-%ED%98%84%ED%99%A9%EA%B3%BC-%EC%A0%84%EB%A7%9D-%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%82%B0%EC%97%85%EC%97%90%EC%84%9C-%ED%9B%84%EA%B3%B5%EC%A0%95%ED%8C%A8%ED%82%A4%EC%A7%95-%EB%B0%8F-%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%9D%98-%EC%A4%91%EC%9A%94%EC%84%B1%EC%9D%B4-%EB%82%A0%EB%A1%9C-%EC%BB%A4%EC%A7%80%EB%8A%94-%EA%B0%80%EC%9A%B4%EB%8D%B0-%ED%95%9C%EA%B5%AD%EC%9D%98-%EB%B0%98%EB%8F%84%EC%B2%B4-%ED%8C%A8%ED%82%A4%EC%A7%95-%EC%82%B0%EC%97%85%EC%9D%80-/948631077484142/",
+  "https://spark104.com/82"
  ],
  "v": 2,
- "model": "claude-sonnet-4-6",
+ "model": "claude-sonnet-5",
  "ticker": "033170",
  "name": "시그네틱스",
  "name_en": "Signetics Corp.",
@@ -233,9 +223,9 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-06-19",
- "reportTs": "2026-06-19 03:37",
- "dataDate": "20260821",
+ "reportDate": "2026-09-12",
+ "reportTs": "2026-09-12 22:23",
+ "dataDate": "20260911",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -339,13 +329,13 @@
   ],
   "valuation": {
    "price": 1793,
-   "mcap": 0.0291,
+   "mcap": 0.0307,
    "shares": 17145663,
    "total_shares": 17145664,
    "wavg_shares": null,
-   "per": -3.77,
+   "per": null,
    "eps": -475,
-   "pbr": 0.68,
+   "pbr": 0.6753,
    "bps": 2655,
    "roe_ttm": -16.8,
    "ttm_window": "2025Q3~2026Q2",
