@@ -307,6 +307,17 @@ def gather(trade_date=None, days=14, skip_news=False):
             log(f"⚠️ 뉴스 조회 실패 — '왜'를 쓰지 않는다: {type(e).__name__} {e}")
             facts["news"] = None
 
+
+    # ── 재료가 빠졌으면 소리를 낸다 ────────────────────────────────
+    # 발행은 막지 않는다. 재료가 조금 부실해도 브리핑은 나가야 한다.
+    # 다만 조용히 넘어가면 안 된다 — 9월 11일 "일정은 FOMC 하나뿐"이
+    # 그렇게 나갔다. 두 주 넘게 말라 있었는데 아무 데서도 소리가 안 났다.
+    for name, block in (("일정", facts.get("schedule")), ("뉴스", facts.get("news"))):
+        hl = (block or {}).get("health") or {}
+        for problem in hl.get("problems") or []:
+            log(f"⚠️ {name} 수집이 부실하다 — {problem}")
+            print(f"::warning title=브리핑 {name} 수집::{problem}", flush=True)
+
     return facts, None
 
 
@@ -445,6 +456,7 @@ def _facts_text(facts):
     # 일정
     sch = facts.get("schedule") or {}
     evs = sch.get("events") or []
+    hl = sch.get("health") or {}
     if evs:
         L.append(f"\n[일정 · {sch.get('from')} ~ {sch.get('to')}]")
         for e in evs[:14]:
@@ -452,6 +464,13 @@ def _facts_text(facts):
             L.append(f"  {e['date']} {e.get('kind', '')} {e.get('title', '')}{est}")
     else:
         L.append("\n[일정] 없음 — 일정 문장을 쓰지 말 것.")
+    # 일정이 적은 것이 '조용한 주'인지 '우리가 못 가져온 것'인지를 밝힌다.
+    # 9월 11일 브리핑이 "앞으로 2주 일정은 FOMC 하나뿐"이라고 썼는데, 정말
+    # 하나뿐인 게 아니라 수집이 말라 있었다. 모델은 그걸 알 길이 없었다.
+    if hl and not hl.get("ok", True):
+        L.append("  ⚠️ 이 일정 목록은 불완전하다 — " + " / ".join(hl.get("problems") or []))
+        L.append("  그러므로 '일정이 하나뿐'·'일정이 없다' 처럼 달력이 비어 있다는 것을"
+                 " 시장의 사실로 쓰지 마라. 적힌 일정만 쓰고, 없는 것을 없다고 말하지 마라.")
 
     # 공시 + 확인 지점
     fils = dom.get("filings") or []

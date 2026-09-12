@@ -571,6 +571,25 @@ ok("섞지 말라고 적는다", "한 문단에 섞지 마라" in t5)
 ok("어느 쪽을 버릴지 알려 준다", "지수 쪽을 버리고" in t5)
 ok("어긋나지 않으면 경고 없다", "다른 날이다" not in G._facts_text(FACTS))
 
+print("\n⑨-b 일정이 말라 있으면 재료가 그렇다고 말하는가")
+# 9월 11일 브리핑이 "앞으로 2주 일정은 FOMC 하나뿐"이라고 썼다. 정말
+# 하나뿐인 게 아니라 수동 등록이 8월 27일에 멈춰 있었다. 모델은 알 길이
+# 없었다. 이제 불완전하다는 사실 자체를 재료에 실어 보낸다.
+import copy as _copy
+_f = _copy.deepcopy(FACTS)
+_f["schedule"] = {"from": "2026-09-12", "to": "2026-09-26", "events": [],
+                  "health": {"ok": False, "thin": True,
+                             "problems": ["수동 등록: 앞으로 잡힌 것이 하나도 없다",
+                                          "앞으로 14일에 0건뿐이다"]}}
+_t = G._facts_text(_f)
+ok("불완전하다고 적는다", "이 일정 목록은 불완전하다" in _t)
+ok("빠진 사유를 그대로 넘긴다", "앞으로 14일에 0건뿐이다" in _t)
+ok("'일정이 없다'를 사실로 쓰지 말라고 적는다", "시장의 사실로 쓰지 마라" in _t)
+_f["schedule"]["events"] = [{"date": "2026-09-16", "kind": "FOMC",
+                             "title": "9월 FOMC 회의 종료"}]
+_f["schedule"]["health"] = {"ok": True, "thin": False, "problems": []}
+ok("멀쩡하면 경고를 붙이지 않는다", "불완전하다" not in G._facts_text(_f))
+
 print("\n⑩ 프롬프트 — 못을 박은 규칙이 실제로 들어가는지")
 p = G.build_prompt(FACTS)
 ok("커버리지 비중 제한이 프롬프트에 있다", "4분의 1을 넘지 않게" in p)

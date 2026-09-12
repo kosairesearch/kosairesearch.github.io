@@ -68,6 +68,9 @@ run "검증기 자체"   python3 scripts/tests/verify_numbers_test.py
 run "금액 표기"     python3 scripts/tests/number_spacing_test.py
 run "밸류 합치기"   python3 scripts/tests/merge_valuation_test.py
 run "본문 금지표현" python3 scripts/tests/check_report_text_test.py
+run "브리핑 일정"   python3 scripts/tests/calendar_data_test.py
+run "브리핑 뉴스"   python3 scripts/tests/news_data_test.py
+run "브리핑 생성"   python3 scripts/test_brief_gen.py
 # 생성기는 DART·KRX 를 부르고 요금이 나가서 통째로 못 돌린다. 그래서 분모를
 # 되묻는 블록만 원문에서 꺼내 실제 값으로 돌려 본다 — 틀렸던 종목은 고쳐지고
 # 맞았던 종목(삼성생명)은 안 건드리는지.

@@ -23,6 +23,7 @@ import datetime
 import html as _html
 import io
 import json
+import math
 import os
 import re
 import sys
@@ -48,14 +49,24 @@ DROP = re.compile(
     r"단독\s*공개|비법|대박|긴급\s*속보|세력|작전주|이것만|필독|"
     r"\d+배\s*수익|얼마나\s*될까")
 
+# 갈래를 늘릴 때는 '무엇을 쓸지'가 아니라 '무엇을 볼 수 있게 할지'로 생각한다.
+# 브리핑은 지난 장을 정리하고 오늘을 준비하게 하는 글이라, 지수와 종목만으로는
+# 재료가 모자란다. 한국 거시가 통째로 빠져 있었다 — 금리·물가·수출입이
+# 재료에 아예 없어서 쓸 수가 없었다.
 QUERIES_KO = [
     ("시황", "코스피 마감 외국인 순매수"),
     ("환율", "원달러 환율 마감"),
+    ("국내 금리·통화정책", "한국은행 기준금리 금통위"),
+    ("국내 물가·경기", "소비자물가 상승률 생산자물가 통계청"),
+    ("국내 수출입·무역", "수출 증가율 무역수지 관세청"),
+    ("국내 정책·제도", "금융위원회 기획재정부 증시 대책"),
 ]
 QUERIES_EN = [
     ("미국 지수", "stock market close S&P 500 Nasdaq"),
     ("미국 반도체", "semiconductor stocks Nvidia Broadcom"),
     ("미국 지표", "US economic data inflation consumer"),
+    ("미국 금리·연준", "Federal Reserve rate decision Treasury yields"),
+    ("원자재·에너지", "oil prices OPEC gold copper"),
 ]
 
 
@@ -189,12 +200,46 @@ def naver(query, limit=8):
     return out
 
 
+# 경보를 두 단으로 나눈다.
+#
+# 갈래 하나가 비는 것은 조용한 날일 수 있다 — '국내 정책·제도'는 아무
+# 일도 없는 날이 있다. 그걸 매번 문제라고 하면 경보가 무뎌지고, 무뎌진
+# 경보는 없는 것과 같다.
+#
+# 그런데 '시황'과 '미국 지수'는 다르다. 장이 열린 다음 날 이게 비는 일은
+# 없다. 비었다면 기사가 없는 게 아니라 우리가 막힌 것이다. 그래서 이 둘은
+# 하나만 비어도 문제로 본다.
+CORE_GROUPS = ("시황", "미국 지수")
+# 그 밖에는 전체의 이만큼이 한꺼번에 비면 문제로 본다.
+EMPTY_ALARM = 1 / 3
+
+
 def collect(tickers=None, names=None):
+    """뉴스 + 건강 기록.
+
+    rss() 는 실패해도 빈 목록을 돌려준다. 그 자체는 맞다 — 뉴스 하나 때문에
+    브리핑을 멈출 이유가 없다. 문제는 '못 가져온 것'과 '기사가 없는 것'이
+    구분되지 않는다는 점이다. 일정에서 똑같은 병으로 한 번 당했다(9월 11일
+    '일정은 FOMC 하나뿐'). 그래서 여기서도 갈래별로 몇 건 왔는지 남긴다.
+    """
     groups = {}
     for label, q in QUERIES_KO:
         groups[label] = rss(q, "ko", "KR", "KR:ko") + naver(q)
     for label, q in QUERIES_EN:
         groups[label] = rss(q, "en-US", "US", "US:en")
+
+    empty = [k for k, v in groups.items() if not v]
+    problems = []
+    core_empty = [k for k in CORE_GROUPS if k in groups and not groups[k]]
+    if core_empty:
+        problems.append(f"핵심 갈래가 비었다({', '.join(core_empty)}) — "
+                        "장이 열린 다음 날 이게 빌 수는 없다. 막힌 것이다")
+    floor = max(2, math.ceil(len(groups) * EMPTY_ALARM))
+    if groups and len(empty) >= floor:
+        problems.append(f"뉴스 {len(groups)}갈래 중 {len(empty)}갈래가 비었다"
+                        f"({', '.join(empty)}) — 막혔을 수 있다")
+    health = {"ok": not problems, "problems": problems,
+              "counts": {k: len(v) for k, v in groups.items()}}
 
     # 종목별은 요청받은 것만. 전 종목을 돌면 수천 번 요청이 된다.
     per_ticker = {}
@@ -208,6 +253,7 @@ def collect(tickers=None, names=None):
         "collectedAt": datetime.datetime.now(KST).isoformat(timespec="seconds"),
         "groups": groups,
         "tickers": per_ticker,
+        "health": health,
     }
 
 
