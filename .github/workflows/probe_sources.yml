@@ -25,3 +25,9 @@ jobs:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           HOLIDAY_API_KEY: ${{ secrets.HOLIDAY_API_KEY }}
         run: python scripts/probe_sources.py --raw
+
+      # 잠깐 붙인 조사 — 금통위 목록을 실제로 주는 주소를 찾는다.
+      # 찾으면 calendar_data.py 에 적고 이 단계와 scripts/_bok_probe.py 는 지운다.
+      - name: 금통위 목록 주소 찾기
+        if: always()
+        run: python scripts/_bok_probe.py
