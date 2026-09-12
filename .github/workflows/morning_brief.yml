@@ -301,6 +301,10 @@ jobs:
             git add data/briefs brief.html
             MSG="📰 모닝 브리핑 $D"
           else
+            # ④가 페이지를 반쯤 쓰다 멈췄을 수 있다. 되돌려 놔야 한다 —
+            # 고치지 않은 채로 두면 git pull --rebase 가 "unstaged changes"
+            # 라며 막아서, 정작 살리려던 초안까지 못 올린다.
+            git checkout -- brief.html 2>/dev/null || true
             git add data/briefs
             MSG="📰 모닝 브리핑 초안 $D (발행 대기)"
           fi
