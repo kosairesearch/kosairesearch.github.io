@@ -41,6 +41,8 @@ import sys
 import time
 from pathlib import Path
 
+import number_spacing       # 금액 표기 통일(79조3,187억원 → 79조 3,187억원)
+
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "data" / "briefs"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -1047,6 +1049,10 @@ def save(brief, facts, meta, out_dir=OUT_DIR):
         "meta": meta,
     }
     path = out_dir / f"{pub}.json"
+    # 금액 표기 통일 — 리포트·업종과 같은 규칙(한글 맞춤법 제44항)
+    _nsp, doc = number_spacing.normalize_report(doc)
+    if _nsp:
+        print(f"  · 금액 표기 {_nsp}곳 정리")
     path.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
     return path
 

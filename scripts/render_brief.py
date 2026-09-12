@@ -29,6 +29,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import number_spacing       # 금액 표기 통일
+
 ROOT = Path(__file__).resolve().parent.parent
 BRIEFS = ROOT / "data" / "briefs"
 PAGE = ROOT / "brief.html"
@@ -377,6 +380,11 @@ def main():
         log(f"❌ 브리핑 JSON 이 없습니다: {src or BRIEFS}")
         return 2
     doc = json.loads(src.read_text(encoding="utf-8"))
+    # 금액 표기 통일 — 본문 HTML 과 영문 사전 키가 같은 문자열에서 나오므로
+    # 여기서 한 번 맞추면 둘이 어긋날 일이 없다.
+    _nsp, doc = number_spacing.normalize_report(doc)
+    if _nsp:
+        log(f"  · 금액 표기 {_nsp}곳 정리")
 
     at = datetime.datetime.now(KST)
     # 이미 발행된 브리핑이면 그때 시각을 그대로 쓴다. 표시만 손봐서 다시 그릴
