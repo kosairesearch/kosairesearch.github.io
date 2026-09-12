@@ -373,11 +373,16 @@ def collect(days=14, today=None):
     years = sorted({today.year, end.year})
 
     rows, sources = [], []
+    # FOMC 만 해마다 부른다 — 페이지가 연도별로 나뉘어 있다.
     for y in years:
-        for fn in (fomc, fred):
-            got, h = fn(y)
-            rows += got
-            sources.append(h)
+        got, h = fomc(y)
+        rows += got
+        sources.append(h)
+    # FRED 는 '오늘부터 120일'을 묻는 것이라 연도와 무관하다. 연도 반복
+    # 안에 두었더니 연말(두 해가 걸칠 때)에 같은 요청을 두 번 보냈다.
+    got, h = fred()
+    rows += got
+    sources.append(h)
     got, h = bok()
     rows += got
     sources.append(h)
