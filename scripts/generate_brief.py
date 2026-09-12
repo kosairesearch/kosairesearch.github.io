@@ -897,6 +897,12 @@ def repair_links(brief):
             if (brief.get(key) or {}).get(lang):
                 brief[key][lang] = fix(brief[key][lang])
     for s in brief.get("sections") or []:
+        # 제목도 본문과 똑같이 본다. 화면(render_brief.to_html)이 제목에도
+        # 링크를 거는데 여기서 빼 두면, 고쳐 주는 자리와 링크가 걸리는 자리가
+        # 어긋난다.
+        for lang in ("ko", "en"):
+            if (s.get("heading") or {}).get(lang):
+                s["heading"][lang] = fix(s["heading"][lang])
         for p in s.get("paragraphs") or []:
             for lang in ("ko", "en"):
                 if p.get(lang):
@@ -990,6 +996,13 @@ def normalize_links(brief, valid_tickers):
             if (brief.get(key) or {}).get(lang):
                 brief[key][lang] = fix(brief[key][lang])
     for s in brief.get("sections") or []:
+        # 섹션 제목이 빠져 있었다. 제목은 매일 모델이 새로 쓰는 자리라
+        # 거기에 종목 링크가 들어올 수 있는데, 화면은 제목에도 링크를 건다
+        # (render_brief.py 의 to_html). 그래서 커버리지에 없는 여섯 자리가
+        # 제목에 들어오면 없는 종목 페이지로 가는 링크가 그대로 나갔다.
+        for lang in ("ko", "en"):
+            if (s.get("heading") or {}).get(lang):
+                s["heading"][lang] = fix(s["heading"][lang])
         for p in s.get("paragraphs") or []:
             for lang in ("ko", "en"):
                 if p.get(lang):
@@ -1005,7 +1018,7 @@ def measure(brief):
             continue
         n = len(_plain(s))
         total += n
-        if path.startswith("coverage."):
+        if path.startswith(COVERAGE_ID + "."):
             cov += n
     return total, (cov / total if total else 0.0)
 

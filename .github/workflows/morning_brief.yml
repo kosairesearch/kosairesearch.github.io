@@ -245,50 +245,108 @@ jobs:
           fi
           python scripts/render_brief.py --date "$D"
 
+      # 요약은 사람이 읽는 보고일 뿐이다. 여기서 터져도 ⑥ 커밋을 막으면
+      # 안 된다 — 400원짜리 글을 보고문 하나 때문에 버리는 꼴이다.
+      # 그래서 이 단계는 실패해도 그냥 넘어간다(continue-on-error).
       - name: ⑤ 결과 요약
-        if: steps.gen.outputs.have == 'true'
+        if: ${{ !cancelled() && steps.gen.outputs.have == 'true' }}
+        continue-on-error: true
         run: |
-          python - <<'PY' >> $GITHUB_STEP_SUMMARY
-          import json, glob
-          f = sorted(glob.glob("data/briefs/*.json"))[-1]
+          python - "${{ steps.gen.outputs.date }}" <<'PY' >> $GITHUB_STEP_SUMMARY
+          import json, sys
+          # 이 실행이 만든 날짜를 그대로 읽는다. 예전에는 폴더에서 이름이
+          # 가장 뒤인 파일을 집었는데, 발행 안 한 초안이 뒤에 남아 있으면
+          # 엉뚱한 날 글을 요약해 보여 줬다.
+          f = f"data/briefs/{sys.argv[1]}.json"
           d = json.load(open(f, encoding="utf-8"))
           m = d.get("meta") or {}
           u = m.get("usage") or {}
-          print(f"## {d['title']['ko']}\n")
-          print(f"- `{f}` · 거래일 {d['tradeDate']}")
-          print(f"- {m.get('chars'):,}자 · 커버리지 {m.get('coverageRatio', 0)*100:.0f}% · "
+          def n(x):
+              return f"{x:,}" if isinstance(x, (int, float)) else "?"
+          print(f"## {(d.get('title') or {}).get('ko', '(제목 없음)')}\n")
+          print(f"- `{f}` · 거래일 {d.get('tradeDate', '?')}")
+          print(f"- {n(m.get('chars'))}자 · 커버리지 {(m.get('coverageRatio') or 0)*100:.0f}% · "
                 f"모델 {m.get('model')}")
           if u:
-              print(f"- 입력 {u.get('inputTokens'):,} / 출력 {u.get('outputTokens'):,} 토큰 · "
-                    f"${u.get('usd')} (약 {u.get('krw'):,}원)")
-          print(f"\n> {d['lead']['ko']}\n")
-          for s in d["sections"]:
-              print(f"### {s['heading']['ko']}")
-              for p in s["paragraphs"]:
-                  print(p["ko"] + "\n")
+              print(f"- 입력 {n(u.get('inputTokens'))} / 출력 {n(u.get('outputTokens'))} 토큰 · "
+                    f"${u.get('usd')} (약 {n(u.get('krw'))}원)")
+          print(f"\n> {(d.get('lead') or {}).get('ko', '')}\n")
+          for s in d.get("sections") or []:
+              print(f"### {(s.get('heading') or {}).get('ko', '')}")
+              for p in s.get("paragraphs") or []:
+                  print((p.get("ko") or "") + "\n")
           PY
 
+      # 앞 단계가 실패해도 만든 글은 반드시 남긴다.
+      #
+      #   예전에는 이 단계가 ④·⑤ 가 성공했을 때만 돌았다. 그래서 글은
+      #   멀쩡히 만들어 놓고 ④(페이지 반영)나 ⑤(요약)가 한 번 삐끗하면
+      #   그 글이 통째로 버려졌다. 다음 슬롯은 파일이 없으니 처음부터
+      #   다시 만들어 400원을 또 쓰고, 그게 마지막 슬롯이었으면 그날은
+      #   브리핑이 아예 안 나간다.
+      #
+      #   이제는 글만 먼저 커밋해 둔다. 다음 슬롯이 그 파일을 보고
+      #   '이미 있다'며 생성을 건너뛰고(generate_brief.py 의 existing 검사)
+      #   페이지 반영만 다시 시도한다.
       - name: ⑥ 커밋 · 배포
-        if: steps.gen.outputs.have == 'true'
+        if: ${{ !cancelled() && steps.gen.outputs.have == 'true' }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # brief.html 은 ④가 돌았을 때만 바뀐다. 안 돌았으면 브리핑 JSON 만
-          # 커밋되고 페이지는 전날 글을 그대로 유지한다.
-          git add data/briefs brief.html
+          D="${{ steps.gen.outputs.date }}"
+          # 페이지는 ④가 성공했을 때만 올린다. ④가 실패했다면 brief.html 이
+          # 반쯤 쓰인 상태일 수 있으므로 손대지 않는다 — 깨진 페이지를
+          # 올리느니 전날 글을 그대로 두는 게 낫다.
+          if [ "${{ steps.render.outcome }}" = "success" ]; then
+            git add data/briefs brief.html
+            MSG="📰 모닝 브리핑 $D"
+          else
+            # ④가 페이지를 반쯤 쓰다 멈췄을 수 있다. 되돌려 놔야 한다 —
+            # 고치지 않은 채로 두면 git pull --rebase 가 "unstaged changes"
+            # 라며 막아서, 정작 살리려던 초안까지 못 올린다.
+            git checkout -- brief.html 2>/dev/null || true
+            git add data/briefs
+            MSG="📰 모닝 브리핑 초안 $D (발행 대기)"
+          fi
           if git diff --cached --quiet; then
             echo "변경 없음 — 커밋하지 않는다"; exit 0
           fi
-          if [ "${{ steps.render.outcome }}" = "success" ]; then
-            MSG="📰 모닝 브리핑 ${{ steps.gen.outputs.date }}"
-          else
-            MSG="📰 모닝 브리핑 초안 ${{ steps.gen.outputs.date }} (발행 대기)"
-          fi
           git commit -m "$MSG"
+
+          # 밀어 넣기.
+          #
+          #   예전에는 실패해도 아무 일 없다는 듯이 초록으로 끝났다. 반복문의
+          #   마지막 명령이 sleep 이라서, 세 번 다 실패해도 단계는 성공이었다.
+          #   9월 11일에 실제로 그랬다 — 리베이스가 충돌 나고 세 번 다 실패했는데
+          #   워크플로에는 체크 표시가 떴다. 그날은 다른 슬롯이 이미 올려 둬서
+          #   넘어갔지만, 그게 그날의 유일한 슬롯이었다면 브리핑은 조용히
+          #   사라지고 아무도 몰랐다.
+          #
+          #   충돌이 난 채로 두면 다음 시도는 'unmerged files' 로 무조건 또
+          #   실패한다. 그래서 되돌려 놓고 다시 시도한다.
+          PUSHED=
           for i in 1 2 3; do
-            git pull --rebase origin main && git push origin HEAD:main && break
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              PUSHED=1; break
+            fi
+            git rebase --abort 2>/dev/null || true
             echo "재시도 $i"; sleep $((i*4))
           done
+
+          if [ -z "$PUSHED" ]; then
+            # 다른 슬롯이 먼저 올렸으면 우리 것은 버리는 게 맞다. 그건 실패가
+            # 아니다. 그 경우가 아니면 브리핑을 잃은 것이므로 소리를 낸다.
+            git fetch origin main
+            if git show "origin/main:data/briefs/$D.json" 2>/dev/null | python -c \
+              'import json,sys; sys.exit(0 if (json.load(sys.stdin).get("meta") or {}).get("publishedAt") else 1)'
+            then
+              echo "다른 슬롯이 이미 $D 를 올렸다 — 내 것은 버린다"
+              exit 0
+            fi
+            echo "::error::브리핑을 올리지 못했다 ($D) — 세 번 다 실패했다"
+            echo "❌ 밀어 넣기 실패 — brief.html 이 갱신되지 않았다" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
           if [ "${{ steps.render.outcome }}" = "success" ]; then
             echo "" >> $GITHUB_STEP_SUMMARY
             echo "→ https://kosai.kr/brief.html" >> $GITHUB_STEP_SUMMARY
