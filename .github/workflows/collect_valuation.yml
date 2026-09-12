@@ -61,15 +61,20 @@ jobs:
           git config --global user.name "KOS ai Bot"
           # 이 잡이 내놓는 파일 전부를 담는다.
           #   valuation.js       ← collect_valuation.py · patch_share_counts.py
-          #   valuation_run.log  ← 위 두 단계의 tee
           #   reports_v2/·reports/ ← patch_share_counts.py 가 주식수 환산으로 고친 것
-          # 예전에는 앞의 둘만 담았다. 그러면 환산된 리포트가 담기지 않은 채로
-          # 남아 rebase 가 "cannot rebase: You have unstaged changes" 로 거부한다.
-          # 그 에러가 2>/dev/null 에 가려져 130회를 조용히 실패했고, 주식수가
-          # 바뀐 37종목의 EPS·BPS 가 두 주 넘게 사이트에 못 올라갔다(PBR 이 5~10배).
-          for p in data/valuation.js data/valuation_run.log data/reports_v2 data/reports; do
+          # 예전에는 valuation.js 와 로그 둘만 담았다. 그러면 환산된 리포트가
+          # 담기지 않은 채로 남아 rebase 가 "cannot rebase: You have unstaged
+          # changes" 로 거부한다. 그 에러가 2>/dev/null 에 가려져 130회를 조용히
+          # 실패했고, 주식수가 바뀐 37종목의 EPS·BPS 가 두 주 넘게 사이트에
+          # 못 올라갔다(PBR 이 5~10배).
+          for p in data/valuation.js data/reports_v2 data/reports; do
             [ -e "$p" ] && git add -A "$p"
           done
+          # 실행 로그는 커밋하지 않는다. 매 실행이 통째로 다시 쓰는 파일이라
+          # 실행이 겹치면 반드시 충돌하는데, 저장소에서 이 파일을 읽는 곳은
+          # 없다(self-chain 은 작업공간의 것을 읽는다). generate_reports_v2·
+          # collect_batch 도 같은 이유로 run.log 를 빼 둔다.
+          git checkout -q -- data/valuation_run.log 2>/dev/null || true
           # index.json 은 여러 잡이 같이 다시 쓰는 전역 파일이라 담지 않는다
           # (generate_reports_v2·collect_batch 도 같은 이유로 뺀다). 이 잡이
           # 건드리지도 않지만, 담겼다가는 rebase 충돌을 부른다.
@@ -87,7 +92,21 @@ jobs:
           ok=""
           for i in $(seq 1 25); do
             git fetch origin main -q || true
-            if git rebase origin/main && git push origin main; then ok=1; break; fi
+            if git rebase origin/main; then
+              if git push origin main; then ok=1; break; fi
+            elif [ "$(git diff --name-only --diff-filter=U)" = "data/valuation.js" ] \
+                 && python3 scripts/merge_valuation.py; then
+              # valuation.js 는 종목 2,700개짜리 JSON 을 매번 통째로 다시 쓰는
+              # 파일이라, 실행이 둘 겹치면 텍스트로는 절대 안 합쳐진다. 결정적
+              # 충돌이라 25번 재시도해도 25번 다 똑같이 실패한다(2026-09-12
+              # 12:11 실행이 그렇게 죽었다). 내용은 종목별로 독립된 사전이므로
+              # 종목 단위로 포개서 이어 간다.
+              # 합치기가 실패하면 조건이 거짓이 되어 아래로 내려가 예전처럼
+              # 물러난다 — 고치기 전보다 나빠지지 않는다.
+              if git add data/valuation.js \
+                 && GIT_EDITOR=true git rebase --continue \
+                 && git push origin main; then ok=1; break; fi
+            fi
             echo "  · ${i}번째 실패 — 되돌리고 다시 시도"
             git rebase --abort 2>/dev/null || true
             sleep $(( (RANDOM % 9) + 2 ))
