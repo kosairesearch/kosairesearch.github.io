@@ -26,8 +26,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "bok_meetings.json"
-URL = ("https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do"
-       "?mtgSe=A&menuNo=200755&curYear={year}")
+# 200 을 돌려주는 것이 확인된 주소만 쓴다. curYear 같은 매개변수를 멋대로
+# 붙였다가 화면이 안 그려진 적이 있다 — 확인 안 된 것을 끼워 넣지 않는다.
+URL = "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?mtgSe=A&menuNo=200755"
 KST = datetime.timezone(datetime.timedelta(hours=9))
 DATE = re.compile(r"(20\d\d)[.\-/년]\s*(\d{1,2})[.\-/월]\s*(\d{1,2})")
 
@@ -48,7 +49,7 @@ def rows_from_page(year, headless=True):
         b = pw.chromium.launch(headless=headless)
         pg = b.new_page(locale="ko-KR")
         try:
-            pg.goto(URL.format(year=year), wait_until="networkidle", timeout=60000)
+            pg.goto(URL, wait_until="networkidle", timeout=60000)
             pg.wait_for_timeout(2500)
             # 표든 목록이든, 날짜가 들어 있는 가장 작은 덩어리를 모은다.
             for sel in ("table tr", "ul li", ".board-list li", ".tbl-list tr"):
@@ -66,6 +67,30 @@ def rows_from_page(year, headless=True):
                     out.append({"date": d.isoformat(), "text": t[:200], "sel": sel})
                 if out:
                     break
+            if not out:
+                # 못 읽었으면 짐작하지 말고 화면을 그대로 본다.
+                log("\n── 아무것도 못 읽었다. 화면에 실제로 있는 것 ──")
+                log(f"제목: {pg.title()}")
+                for sel in ("table", "ul", "ol", "dl", ".board", "[class*=list]",
+                            "[class*=tbl]", "[class*=sch]", "[class*=calend]"):
+                    n = len(pg.query_selector_all(sel))
+                    if n:
+                        log(f"  {sel}: {n}개")
+                body = re.sub(r"\n{3,}", "\n\n", pg.inner_text("body") or "")
+                # '통화정책방향' 이 나오는 곳 주변만 본다 — 머리말·꼬리말은 빼고
+                hits = [m.start() for m in re.finditer("통화정책방향", body)]
+                log(f"  본문 {len(body):,}자 · '통화정책방향' {len(hits)}곳")
+                for i, h in enumerate(hits[:4]):
+                    chunk = body[max(0, h - 150):h + 700]
+                    log(f"\n  ── {i+1}번째 주변 ──\n{chunk}")
+                if not hits:
+                    log("\n  ── 본문 앞부분 ──\n" + body[:2500])
+                # 연도 고르는 단추가 있으면 그 목록도
+                for sel in ("select", "[class*=year]", "[id*=year]"):
+                    for el in pg.query_selector_all(sel)[:5]:
+                        t = re.sub(r"\s+", " ", (el.inner_text() or ""))[:200]
+                        if t:
+                            log(f"  [{sel}] {t}")
         except Exception as e:
             b.close()
             return None, f"{type(e).__name__}: {e}"
@@ -103,7 +128,7 @@ def main():
         return 0
 
     doc = {"year": a.year,
-           "source": URL.format(year=a.year),
+           "source": URL,
            "readAt": datetime.datetime.now(KST).isoformat(timespec="seconds"),
            "rows": rows}
     OUT.write_text(json.dumps(doc, ensure_ascii=False, indent=1), encoding="utf-8")
