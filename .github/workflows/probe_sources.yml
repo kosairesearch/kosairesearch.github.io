@@ -31,3 +31,14 @@ jobs:
       - name: 금통위 목록 주소 찾기
         if: always()
         run: python scripts/_bok_probe.py
+
+      # 목록이 화면에서 그려지므로 실제 브라우저로 띄워 표를 읽는다.
+      # 먼저 보기만 한다 — 내용이 맞는지 눈으로 확인한 뒤에 쓰게 한다.
+      - name: 금통위 일정 브라우저로 읽어 보기
+        if: always()
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+          python scripts/bok_schedule.py --year 2026
+          echo "──────── 내년 ────────"
+          python scripts/bok_schedule.py --year 2027 || true
