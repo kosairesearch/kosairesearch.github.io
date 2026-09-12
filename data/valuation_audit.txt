@@ -1,6 +1,6 @@
-# 밸류에이션 자동 검증 — 2026-09-12 20:16 KST
-# 데이터일자 20260911 · 검증 2695/2695종목 · 허용오차 8%
-# 네이버 제공 항목(코드): accumulatedtradingvolume, bps, cnseps, cnsper, dividend, dividendyieldratio, eps, foreignrate, highprice, highpriceof52weeks, lastcloseprice, lowprice, lowpriceof52weeks, openprice, pbr, per
+# 밸류에이션 자동 검증 — 2026-09-13 00:50 KST
+# 데이터일자 20260911 · 검증 2697/2697종목 · 허용오차 8%
+# 네이버 제공 항목(코드): accumulatedtradingvolume, foreignrate, highprice, highpriceof52weeks, lastcloseprice, lowprice, lowpriceof52weeks, openprice
 
 ⛔ 대형 오차(>25%) — 우선 수정 대상: 337건
    75800% [per] 삼부토건(001470) 7.59 vs 0.01
