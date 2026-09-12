@@ -39,6 +39,9 @@ ROE 와 TTM 순이익은 주식수와 무관하므로 그대로 둔다.
 """
 import json, glob, os, sys, datetime
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import number_spacing       # 원본과 같은 저장 형식을 찾는 dump_like 를 쓴다
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 APPLY = "--apply" in sys.argv
 TODAY = datetime.date.today().isoformat()
@@ -56,6 +59,26 @@ def current_shares():
     raw = open(os.path.join(ROOT, "data", "stocks.js"), encoding="utf-8").read()
     d = json.loads(raw[raw.find("{"): raw.rfind("}") + 1])
     return {s["ticker"]: s for s in d["stocks"]}
+
+
+def _write_same_shape(path, doc):
+    """원본과 같은 형식으로 쓴다.
+
+    예전에는 무조건 indent=1 로 썼다. 저장소의 리포트 JSON 은 형식이 한 가지가
+    아니라서(indent=1 로 쓴 것과 한 줄로 쓴 것이 섞여 있다) 한 줄짜리 파일을
+    고치면 값 하나 바꾼 것이 370줄 바뀐 것으로 보였다. 실제로 006490·286750
+    두 개가 그랬다. 형식을 못 알아보면 예전처럼 indent=1 로 쓴다 — 교정을
+    빠뜨리는 것보다는 낫다."""
+    raw = None
+    try:
+        raw = open(path, encoding="utf-8").read()
+    except Exception:
+        pass
+    out = number_spacing.dump_like(raw, doc) if raw else None
+    if out is None:
+        out = json.dumps(doc, ensure_ascii=False, indent=1)
+    with open(path, "w", encoding="utf-8") as fp:
+        fp.write(out)
 
 
 def clean_factor(r):
@@ -120,8 +143,7 @@ def fix_mixed_eps(files, cur, apply):
                                "why": "두 공시가 어긋나 어느 쪽인지 모른다"}
             hidden.append((s.get("name", tk), tk, a, int(b), r))
             if apply:
-                with open(path, "w", encoding="utf-8") as fp:
-                    json.dump(doc, fp, ensure_ascii=False, indent=1)
+                _write_same_shape(path, doc)
             continue
         v["eps"] = int(round(b))
         px = s.get("price")
@@ -133,8 +155,7 @@ def fix_mixed_eps(files, cur, apply):
                                 "why": "액면병합·감자로 주당이익 기준이 섞였다"}
         fixed.append((s.get("name", tk), tk, a, int(b), r))
         if apply:
-            with open(path, "w", encoding="utf-8") as fp:
-                json.dump(doc, fp, ensure_ascii=False, indent=1)
+            _write_same_shape(path, doc)
     return fixed, hidden
 
 
@@ -205,10 +226,7 @@ def main():
             clears.append((name, tk, ratio))
 
         if APPLY:
-            # generate_reports_v2.py 와 같은 모양으로 쓴다(indent=1). 형식이
-            # 갈리면 한 줄만 고쳐도 파일 전체가 바뀐 것으로 보여 diff 를 못 읽는다.
-            with open(path, "w", encoding="utf-8") as fp:
-                json.dump(doc, fp, ensure_ascii=False, indent=1)
+            _write_same_shape(path, doc)
 
     eps_fixed, eps_hidden = fix_mixed_eps(files, cur, APPLY)
 

@@ -328,10 +328,10 @@
    }
   ],
   "valuation": {
-   "price": 820,
+   "price": 3545,
    "mcap": 0.0273,
-   "shares": 33250916,
-   "total_shares": 33250916,
+   "shares": 6650183,
+   "total_shares": 6650183,
    "wavg_shares": null,
    "per": null,
    "eps": null,
@@ -343,14 +343,21 @@
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": null,
-   "pbr_krx": 0.54,
-   "bps_krx": 1520.0,
+   "pbr_krx": 0.47,
+   "bps_krx": 7600.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0,
    "hidden": {
     "eps": "mismatch",
     "bps": "mismatch"
+   },
+   "shares_patched": {
+    "on": "2026-09-12",
+    "was": 33250916,
+    "now": 6650183,
+    "factor": 5.0,
+    "why": "액면병합·분할·감자 — 배수로 환산"
    }
   }
  }
