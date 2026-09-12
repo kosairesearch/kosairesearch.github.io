@@ -354,9 +354,14 @@ def manual():
     last = max((r["date"] for r in out), default="")
     if not ahead:
         gap = (today - datetime.date.fromisoformat(last)).days if last else 9999
-        return out, _health("수동 등록", False, len(out),
-                            f"앞으로 잡힌 것이 하나도 없다 — 마지막 등록 {last or '없음'}"
-                            f"({gap}일 지남). 손으로 채우는 파일이라 말라붙은 것이다")
+        # 예전에는 이것을 문제로 잡았다. 그때는 일정의 절반이 이 파일이었기
+        # 때문이다. 지금은 FOMC·미국 지표·금통위가 자동으로 들어오므로 이
+        # 파일이 비어도 달력은 채워진다. 그래서 알리되 경보는 울리지 않는다.
+        # 달력이 정말 비면 아래 '앞으로 N일에 몇 건' 검사가 잡는다.
+        return out, _health("수동 등록", True, len(out),
+                            f"앞으로 잡힌 것이 없다 — 마지막 등록 {last or '없음'}"
+                            f"({gap}일 지남). 자동으로 안 잡히는 일정(실적 발표 등)은"
+                            " 여기에 적는다")
     return out, _health("수동 등록", True, len(out), f"앞으로 {len(ahead)}건")
 
 
