@@ -630,7 +630,25 @@ def recent_briefs(pub, n=7, out_dir=None):
     d = out_dir or OUT_DIR
     if not d.exists():
         return ""
-    files = sorted(x for x in d.glob("*.json") if x.stem < str(pub))[-n:]
+    # 올라간 것만 센다. 만들어만 두고 안 올린 초안(품질 확인용으로 돌린 것,
+    # 발행이 막힌 날의 잔해)은 아무도 못 본 글이다. 그것까지 "이미 나간
+    # 글"이라고 내밀면 없는 독자를 피해 쓰게 된다.
+    #
+    # 그래서 넉넉히 읽고 거른 뒤에 n개로 자른다. 거르기 전에 자르면 초안이
+    # 섞인 만큼 실제로 보여 주는 수가 줄어든다.
+    files = []
+    for x in sorted(d.glob("*.json"), reverse=True):
+        if x.stem >= str(pub):
+            continue
+        try:
+            if ((json.loads(x.read_text(encoding="utf-8")).get("meta") or {})
+                    .get("publishedAt")):
+                files.append(x)
+        except Exception:
+            continue
+        if len(files) >= n:
+            break
+    files.reverse()
     if not files:
         return ""
     L = ["\n=== 최근에 이미 나간 브리핑 (같은 글을 또 쓰지 않기 위해 보여준다) ===\n"]
@@ -653,6 +671,8 @@ def recent_briefs(pub, n=7, out_dir=None):
             if any(k in body for k in ("볼 것", "지켜볼", "확인할", "관전")):
                 L.append(f"   그날 볼 것으로 꼽음: {body[:180]}")
                 break
+    if len(L) == 1:            # 머리말만 남았다 — 보여 줄 것이 없다
+        return ""
     L.append("\n=== 최근 브리핑 끝 ===\n")
     return "\n".join(L)
 

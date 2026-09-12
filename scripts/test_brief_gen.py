@@ -612,6 +612,45 @@ ok("칸을 못 박지 않는다", "정해진 틀이 없다" in p)
 ok("미국부터 시작할 이유가 없다고 적는다", "미국 지수부터" in p)
 ok("대비 제목을 그만하라고 적는다", "A는 올랐고 B는 내렸다" in p)
 ok("이어지는 이야기를 권한다", "이어지는 이야기는 환영한다" in p)
+
+print("\n⑩-b 최근 브리핑은 '실제로 올라간 것'만 보여주는가")
+# 품질 확인용으로 발행 없이 돌린 초안이 남는다. 그것까지 "이미 나간 글"
+# 이라고 내밀면 아무도 못 본 글을 피해 쓰게 된다.
+import json as _json
+import tempfile as _tf
+from pathlib import Path as _P
+_dir = _P(_tf.mkdtemp())
+
+
+def _brief(day, title, published):
+    (_dir / f"2026-09-{day:02d}.json").write_text(_json.dumps({
+        "date": f"2026-09-{day:02d}",
+        "title": {"ko": title, "en": "x"},
+        "lead": {"ko": "리드", "en": "x"},
+        "sections": [{"id": "us", "heading": {"ko": "제목", "en": "x"},
+                      "paragraphs": [{"ko": "본문", "en": "x"}]}],
+        "meta": ({"publishedAt": "2026-09-01T07:28+09:00"} if published else {}),
+    }, ensure_ascii=False), encoding="utf-8")
+
+
+for _d in range(1, 10):
+    _brief(_d, f"올라간 글 {_d}", True)
+_brief(10, "안 올라간 초안", False)
+_old_dir, G.OUT_DIR = G.OUT_DIR, _dir
+try:
+    _t = G.recent_briefs("2026-09-11", 7)
+    ok("올라간 글만 보여준다", "안 올라간 초안" not in _t)
+    ok("7개로 자른다", _t.count("[2026-09-") == 7, str(_t.count("[2026-09-")))
+    ok("가장 최근 것이 들어 있다", "올라간 글 9" in _t)
+    ok("거르기 전에 자르지 않는다 (초안이 섞여도 7개를 채운다)",
+       "올라간 글 3" in _t, _t[:200])
+    _brief(10, "안 올라간 초안", False)
+    for _d in range(1, 10):
+        (_dir / f"2026-09-{_d:02d}.json").unlink()
+    ok("올라간 글이 하나도 없으면 아무것도 안 붙인다",
+       G.recent_briefs("2026-09-11", 7) == "")
+finally:
+    G.OUT_DIR = _old_dir
 ok("칸마다 글자 수를 배정하지 않는다",
    not any(x in p for x in ("약 700자", "약 650자", "약 600자")))
 # 칸별 배정은 없애되 전체 분량은 알려 줘야 한다. 목표를 모른 채 쓰다 상한을
