@@ -51,7 +51,9 @@ BLS_URL = "https://www.bls.gov/schedule/news_release/{year}_sched.htm"
 # 하나만 두면 그 하나가 바뀌는 날 조용히 0건이 된다.
 BOK_URLS = [
     "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?mtgSe=A&menuNo=200755",
+    "https://www.bok.or.kr/portal/singl/crncyPolicyDrcMtg/listYear.do?mtgSe=A&menuNo=200761",
     "https://www.bok.or.kr/eng/singl/crncyPolicyDrcMtg/listYear.do?mtgSe=A&menuNo=400241",
+    "https://www.bok.or.kr/portal/bbs/B0000217/list.do?menuNo=200761",
 ]
 # 앞으로 이 기간에 일정이 이 수보다 적으면 "수집이 빠졌을 수 있다"로 본다.
 # 9월 11일 사고 때가 14일에 1건이었다.
@@ -68,7 +70,16 @@ BLS_WANT = [
     ("Employment Cost Index", "미국 고용비용지수"),
     ("U.S. Import and Export Price Indexes", "미국 수출입물가"),
 ]
+# 우리를 봇이라고 밝히면 막는 곳이 있다. bls.gov 가 403 을 줬다.
+# 연준은 지금 UA 로 잘 되므로 기본은 그대로 두고, 막히는 곳에만 브라우저
+# UA 를 쓴다. 거짓말을 하려는 게 아니라 공개 페이지를 읽으려는 것이다.
 UA = {"User-Agent": "Mozilla/5.0 (compatible; KOSAI/1.0)"}
+UA_BROWSER = {
+    "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+                   " (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"),
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9,ko;q=0.8",
+}
 TIMEOUT = 20
 KST = datetime.timezone(datetime.timedelta(hours=9))
 
@@ -91,14 +102,24 @@ def _health(name, ok, found, note=""):
     return {"name": name, "ok": bool(ok), "found": int(found), "note": note}
 
 
-def _get(url):
-    """(본문, 실패사유). 실패해도 예외를 올리지 않는다."""
-    try:
-        r = requests.get(url, headers=UA, timeout=TIMEOUT)
-        r.raise_for_status()
-        return r.text, ""
-    except Exception as e:
-        return None, f"{type(e).__name__}: {e}"
+def _get(url, headers=None):
+    """(본문, 실패사유). 실패해도 예외를 올리지 않는다.
+
+    403 은 '없다'가 아니라 '우리를 막았다'이다. 그럴 때는 브라우저 UA 로
+    한 번 더 두드린다 — bls.gov 가 실제로 그랬다.
+    """
+    last = ""
+    for hdr in ([headers] if headers else [UA, UA_BROWSER]):
+        try:
+            r = requests.get(url, headers=hdr, timeout=TIMEOUT)
+            r.raise_for_status()
+            return r.text, ""
+        except Exception as e:
+            last = f"{type(e).__name__}: {e}"
+            code = getattr(getattr(e, "response", None), "status_code", None)
+            if code not in (401, 403, 406, 429):
+                break
+    return None, last
 
 
 # ────────────────────────────── FOMC ──────────────────────────────
@@ -294,7 +315,13 @@ def bok(year=None):
         if 6 <= len(out) <= 12:
             out.sort(key=lambda r: r["date"])
             return out, _health(f"금통위 {year}", True, len(out))
-        last_err = f"{len(out)}건을 읽었다 — 연 8회와 맞지 않는다({url})"
+        # 왜 안 됐는지를 남긴다. 다음에 이걸 보고 고친다 — 안 남기면 매번
+        # 처음부터 짐작해야 한다. 실패는 조용하면 안 되고 막연해서도 안 된다.
+        whole = _text(html)
+        last_err = (f"{len(out)}건 — 받은 크기 {len(html):,}바이트 · "
+                    f"'통화정책방향' 같은 말 {len(_BOK_HINT.findall(whole))}곳 · "
+                    f"{year}년 날짜 {len(set(m.group(0) for m in _KODATE.finditer(whole)))}개"
+                    f" ({url.split('?')[0]})")
     log(f"· 금통위 실패: {last_err}")
     return [], _health(f"금통위 {year}", False, 0, last_err or "후보 주소를 모두 못 읽었다")
 

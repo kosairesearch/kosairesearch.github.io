@@ -590,6 +590,19 @@ _f["schedule"]["events"] = [{"date": "2026-09-16", "kind": "FOMC",
 _f["schedule"]["health"] = {"ok": True, "thin": False, "problems": []}
 ok("멀쩡하면 경고를 붙이지 않는다", "불완전하다" not in G._facts_text(_f))
 
+print("\n⑨-c 뉴스를 '안 받은 것'과 '못 받은 것'을 구분하는가")
+# --facts-only 는 공짜 미리보기라 일부러 뉴스를 건너뛴다. 그런데 결과가
+# "한 건도 받지 못했다"로 찍혀 막힌 것처럼 보였다. 일정에서 당한 것과
+# 같은 병이라 같이 고친다.
+_g = _copy.deepcopy(FACTS)
+_g["news"] = None
+ok("정말 못 받았으면 그렇게 적는다", "한 건도 받지 못했다" in G._facts_text(_g))
+_g["news"] = {"skipped": True, "groups": {}, "tickers": {}}
+_t2 = G._facts_text(_g)
+ok("일부러 건너뛴 것은 그렇게 적는다", "일부러 받지 않았다" in _t2)
+ok("건너뛴 것을 '못 받았다'고 하지 않는다", "한 건도 받지 못했다" not in _t2)
+ok("미리보기만 보고 판단하지 말라고 적는다", "뉴스가 없다'고 판단하지 말 것" in _t2)
+
 print("\n⑩ 프롬프트 — 못을 박은 규칙이 실제로 들어가는지")
 p = G.build_prompt(FACTS)
 ok("커버리지 비중 제한이 프롬프트에 있다", "4분의 1을 넘지 않게" in p)

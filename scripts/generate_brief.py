@@ -297,7 +297,10 @@ def gather(trade_date=None, days=14, skip_news=False):
 
     # ④ 뉴스. 없으면 인과를 쓰지 않는다(지어내는 것보다 낫다).
     if skip_news:
-        facts["news"] = None
+        # '안 받은 것'과 '못 받은 것'은 다르다. --facts-only 는 공짜 미리보기라
+        # 일부러 뉴스를 건너뛰는데, 예전에는 결과가 "한 건도 받지 못했다"로
+        # 찍혀 막힌 것처럼 보였다. 일정에서 당한 것과 같은 병이다.
+        facts["news"] = {"skipped": True, "groups": {}, "tickers": {}}
     else:
         try:
             import news_data
@@ -509,6 +512,9 @@ def _facts_text(facts):
             L.append(f"  · {v['name']}({tk})")
             for r in v["items"][:4]:
                 L.append(f"      {r['title']}")
+    elif (facts.get("news") or {}).get("skipped"):
+        L.append("\n[뉴스] 이번 실행에서는 일부러 받지 않았다(미리보기) — "
+                 "실제 발행 때는 들어온다. 이 목록만 보고 '뉴스가 없다'고 판단하지 말 것.")
     else:
         L.append("\n[뉴스] 한 건도 받지 못했다 — 숫자만 쓰고 인과는 쓰지 말 것.")
 
