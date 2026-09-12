@@ -963,68 +963,299 @@ try{
      빛만 더한다(AdditiveBlending). 빛이 0 으로 잦아든 자리는 그대로
      배경이라 어디까지가 바닥인지 눈으로 찾을 수 없다.
      ─────────────────────────────────────────────────────── */
+  /* 바닥 높이 — 키 라이트가 비스듬해서 꺾인 빛이 카메라 쪽으로 멀리
+     날아간다. 바닥을 너무 낮추면 그 빛이 화면 아래로 떨어져 보이지
+     않는다. 화면 안에 들어오는 높이로 잡았다. */
+  const FLOOR_Y=-1.70;
+  const FLOOR_C=new THREE.Vector2(0.6,-5.0);/* 판 중심 (월드 x,z) */
+  const FLOOR_H=new THREE.Vector2(23,15);   /* 판 반 크기 */
   const floorMat=new THREE.ShaderMaterial({
     transparent:true, blending:THREE.AdditiveBlending,
     depthWrite:false, depthTest:false, side:THREE.DoubleSide,
-    uniforms:{uTime:{value:0}},
+    uniforms:{
+      uShadC:{value:new THREE.Vector2(0,0)},   /* 그림자 중심(월드 x,z) */
+      uShadE:{value:new THREE.Vector4(1,0,1,1)},/* 장축 xy · 반지름 s1,s2 */
+      uShadK:{value:0},                        /* 그림자 세기 */
+      uCauC :{value:new THREE.Vector2(0,0)},   /* 초점 중심 */
+      uCauE :{value:new THREE.Vector4(1,0,1,1)},
+      uCauK :{value:0},                        /* 초점 밝기 */
+      uDisp :{value:new THREE.Vector2(1,0)}    /* 분산 방향(빨강 쪽) */
+    },
     vertexShader:`varying vec2 vUv;
       void main(){ vUv=uv; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0); }`,
     fragmentShader:`
-      uniform float uTime; varying vec2 vUv;
+      uniform vec2 uShadC,uCauC,uDisp; uniform vec4 uShadE,uCauE;
+      uniform float uShadK,uCauK;
+      varying vec2 vUv;
       /* 값싼 잡티 — 넓은 그라데이션에 생기는 띠(밴딩)를 깨 준다 */
       float grain(vec2 p){ return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453); }
+      /* 타원 — 중심 c, 장축 ax, 반지름 s1·s2 인 가우시안 */
+      vec2 local(vec2 w, vec2 c, vec2 ax){
+        vec2 q=w-c; return vec2(dot(q,ax), dot(q,vec2(-ax.y,ax.x)));
+      }
       void main(){
         vec2 p=vUv*2.0-1.0;                       /* -1 .. 1 */
+        /* 판 위의 점을 월드 (x,z) 로 — rotation.x=-90도 라 (x,y)->(x,-y) */
+        vec2 w=vec2(0.6 + p.x*23.0, -5.0 - p.y*15.0);
+
+        /* (1) 바닥을 훑는 빛 — 방의 빛이므로 움직이지 않는다 */
         float far=smoothstep(1.0,-0.15,p.y);      /* 멀수록 잦아든다 */
         float near=smoothstep(-1.0,-0.55,p.y);    /* 코앞도 잦아든다 */
-        /* 스쳐 지나가는 빛줄기 — 왼쪽 아래에서 오른쪽 위로 */
-        float d=(p.x*0.92 + p.y*0.30 + 0.26 + 0.05*sin(uTime*0.16));
+        float d=(p.x*0.92 + p.y*0.30 + 0.26);
         float band=exp(-d*d*5.0)*1.0 + exp(-d*d*1.1)*0.30;   /* 좁은 심지 + 넓은 번짐 */
-        /* 옆으로도 잦아들게 해서 좌우 끝선을 지운다 */
-        float side=smoothstep(1.05,0.25,abs(p.x));
+        float side=smoothstep(1.05,0.25,abs(p.x));/* 좌우 끝선을 지운다 */
         float g=band*far*near*side;
-        g*=0.92+0.08*grain(gl_FragCoord.xy*0.5);
-        vec3 col=mix(vec3(0.40,0.47,0.62), vec3(0.72,0.80,0.95), band);
-        gl_FragColor=vec4(col*g*0.30, g);
+
+        /* (2) 프리즘 그림자 — 훑는 빛을 가린다 */
+        vec2 sl=local(w,uShadC,uShadE.xy);
+        float sh=exp(-0.5*(sl.x*sl.x/(uShadE.z*uShadE.z)+sl.y*sl.y/(uShadE.w*uShadE.w)));
+        g*=1.0-uShadK*sh;
+
+        vec3 col=mix(vec3(0.34,0.41,0.56), vec3(0.66,0.74,0.92), band)*g*g*0.16;
+
+        /* (3) 초점 — 유리를 지나 한 곳에 모인 빛. 파장마다 꺾임이 달라
+               분산 방향으로 무지개가 늘어진다. */
+        vec2 cl=local(w,uCauC,uCauE.xy);
+        float env=exp(-0.5*(cl.x*cl.x/(uCauE.z*uCauE.z)+cl.y*cl.y/(uCauE.w*uCauE.w)));
+        float core=exp(-0.5*(cl.x*cl.x/(uCauE.z*uCauE.z*0.26)+cl.y*cl.y/(uCauE.w*uCauE.w*0.26)));
+        float sgn=dot(uCauE.xy,uDisp)<0.0?-1.0:1.0;
+        /* 색이 갈리는 방향 — 파장이 짧을수록 더 꺾이므로 한쪽 끝이 파랑,
+           반대쪽 끝이 빨강이다. 띠의 길이를 초점 크기에 맞춘다. */
+        float h=clamp(0.5+0.62*(cl.x*sgn)/uCauE.z,0.0,1.0);
+        vec3 c1=vec3(.36,.46,1.),c2=vec3(.42,.86,.96),c3=vec3(.86,.94,.80),
+             c4=vec3(1.,.86,.55),c5=vec3(1.,.60,.48);
+        vec3 rain = h<.25? mix(c1,c2,h/.25) : h<.5? mix(c2,c3,(h-.25)/.25)
+                  : h<.75? mix(c3,c4,(h-.5)/.25) : mix(c4,c5,(h-.75)/.25);
+        col += rain*(env*0.95+core*0.30)*uCauK;
+
+        col*=0.94+0.06*grain(gl_FragCoord.xy*0.5);
+        gl_FragColor=vec4(col,1.0);
       }`
   });
-  const floorGlow=new THREE.Mesh(new THREE.PlaneGeometry(46,30),floorMat);
+  const floorGlow=new THREE.Mesh(new THREE.PlaneGeometry(FLOOR_H.x*2,FLOOR_H.y*2),floorMat);
   floorGlow.rotation.x=-Math.PI/2;                /* 눕힌다 */
-  floorGlow.position.set(0.6,-2.45,-5.0);
+  floorGlow.position.set(FLOOR_C.x,FLOOR_Y,FLOOR_C.y);
   floorGlow.renderOrder=-2;
   scene.add(floorGlow);
 
-  /* 프리즘 아래 무지개 번짐 — 유리를 지난 빛이 바닥에 떨어진 자국.
-     프리즘을 따라다니되 아주 옅게만 둔다. */
-  const spillMat=new THREE.ShaderMaterial({
-    transparent:true, blending:THREE.AdditiveBlending,
-    depthWrite:false, depthTest:false, side:THREE.DoubleSide,
-    uniforms:{uTime:{value:0}},
-    vertexShader:`varying vec2 vUv;
-      void main(){ vUv=uv; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0); }`,
-    fragmentShader:`
-      uniform float uTime; varying vec2 vUv;
-      void main(){
-        vec2 p=vUv*2.0-1.0;
-        /* 프리즘에서 비스듬히 뻗어 나가는 가는 줄기 */
-        float t=p.x*0.86+p.y*0.51;
-        float u=p.x*(-0.51)+p.y*0.86;
-        float streak=exp(-u*u*15.0)*exp(-t*t*1.5);
-        float head=exp(-(p.x*p.x+p.y*p.y)*7.0);   /* 프리즘 바로 밑 */
-        /* 무지개 — 줄기를 따라 색이 갈린다. 채도를 낮춰 과하지 않게. */
-        float h=clamp(t*0.62+0.5+0.05*sin(uTime*0.21),0.0,1.0);
-        vec3 c1=vec3(.36,.46,1.),c2=vec3(.42,.86,.96),c3=vec3(.86,.94,.80),
-             c4=vec3(1.,.86,.55),c5=vec3(1.,.60,.48);
-        vec3 col = h<.25? mix(c1,c2,h/.25) : h<.5? mix(c2,c3,(h-.25)/.25)
-                 : h<.75? mix(c3,c4,(h-.5)/.25) : mix(c4,c5,(h-.75)/.25);
-        float g=streak*0.62+head*0.44;
-        gl_FragColor=vec4(col*g*0.55, g);
-      }`
-  });
-  const spill=new THREE.Mesh(new THREE.PlaneGeometry(7.2,7.2),spillMat);
-  spill.rotation.x=-Math.PI/2;
-  spill.renderOrder=-1;
-  scene.add(spill);
+  /* ───────────────────────────────────────────────────────
+     바닥에 떨어지는 빛을 실제로 구한다.
+     키 라이트에서 프리즘 단면으로 광선 다발을 쏘고,
+      · 막힌 광선이 그대로 갔더라면 닿았을 자리 → 그림자
+      · 유리를 통과해 꺾여 나온 광선이 닿는 자리 → 초점(무지개)
+     프리즘 평면 61 개는 유리 셰이더가 쓰는 것과 같은 것을 쓴다.
+     ─────────────────────────────────────────────────────── */
+  /* 키 라이트가 오는 쪽. 유리 셰이더는 환경을 "방향"으로만 읽는다
+     (환경맵에는 거리가 없다). 그러니 바닥에 떨어지는 빛도 같은 방향에서
+     오는 평행광으로 봐야 앞뒤가 맞는다. 환경 리그의 키 박스가 있는
+     (4.2,2.2,-3.0) 방향을 정규화한 값이다. */
+  const KEY_DIR=new THREE.Vector3(-0.7420,-0.3887,0.5300).normalize();
+  const CAU_IOR=[1.5160,1.5200,1.5251];           /* 빨강·초록·파랑 */
+  const _fM3=new THREE.Matrix3(), _fInv=new THREE.Matrix4();
+  const _lw=new THREE.Vector3(), _lo=new THREE.Vector3(),
+        _bu=new THREE.Vector3(), _bv=new THREE.Vector3(),
+        _ro=new THREE.Vector3(), _rd=new THREE.Vector3(),
+        _pt=new THREE.Vector3(), _dr=new THREE.Vector3(),
+        _od=new THREE.Vector3(), _wp=new THREE.Vector3();
+  /* 광선 다발 자리 — 프리즘 단면을 덮는 원판 위 격자 */
+  const CAU_GRID=[]; {
+    const N=mobile?4:5, R=1.25;
+    for(let i=0;i<N;i++) for(let j=0;j<N;j++){
+      const a=((i+0.5)/N*2-1)*R, b=((j+0.5)/N*2-1)*R;
+      if(a*a+b*b<=R*R) CAU_GRID.push(a,b);
+    }
+  }
+  /* 볼록 다면체 진입 — 안쪽은 dot(n,p)+d <= 0 */
+  let _hitN=new THREE.Vector3(), _hitT=0;
+  function hullEnter(ro,rd){
+    let tIn=-1e9, tOut=1e9, ni=-1;
+    for(let i=0;i<RT_PLANES.length;i++){
+      const pl=RT_PLANES[i];
+      const den=pl.x*rd.x+pl.y*rd.y+pl.z*rd.z;
+      const num=-(pl.x*ro.x+pl.y*ro.y+pl.z*ro.z+pl.w);
+      if(den>-1e-7&&den<1e-7){ if(num<0.0) return false; continue; }
+      const t=num/den;
+      if(den<0.0){ if(t>tIn){ tIn=t; ni=i; } } else if(t<tOut) tOut=t;
+    }
+    if(ni<0||tIn>tOut||tOut<0.0) return false;
+    const pl=RT_PLANES[ni]; _hitN.set(pl.x,pl.y,pl.z); _hitT=tIn; return true;
+  }
+  function hullExit(ro,rd){
+    let tOut=1e9, ni=-1;
+    for(let i=0;i<RT_PLANES.length;i++){
+      const pl=RT_PLANES[i];
+      const den=pl.x*rd.x+pl.y*rd.y+pl.z*rd.z;
+      if(den<=1e-7) continue;
+      const t=(-(pl.x*ro.x+pl.y*ro.y+pl.z*ro.z+pl.w))/den;
+      if(t<tOut){ tOut=t; ni=i; }
+    }
+    if(ni<0) return false;
+    const pl=RT_PLANES[ni]; _hitN.set(pl.x,pl.y,pl.z); _hitT=tOut; return true;
+  }
+  /* 굴절 — N 은 들어오는 쪽을 향한 법선. 전반사면 false */
+  function refractV(out,I,N,eta){
+    const ci=-(N.x*I.x+N.y*I.y+N.z*I.z);
+    const k=1.0-eta*eta*(1.0-ci*ci);
+    if(k<0.0) return false;
+    const f=eta*ci-Math.sqrt(k);
+    out.set(I.x*eta+N.x*f, I.y*eta+N.y*f, I.z*eta+N.z*f);
+    return true;
+  }
+  function fresnel(c,ior){ const r0=((1.0-ior)/(1.0+ior))**2; return r0+(1.0-r0)*(1.0-c)**5; }
+
+  /* 점 무리의 중심과 주축 — 2x2 공분산의 고유분해 */
+  const _acc={n:0,w:0,sx:0,sy:0,xx:0,yy:0,xy:0};
+  function accReset(){ _acc.n=0;_acc.w=0;_acc.sx=0;_acc.sy=0;_acc.xx=0;_acc.yy=0;_acc.xy=0; }
+  function accAdd(x,y,w){ _acc.n++;_acc.w+=w;_acc.sx+=x*w;_acc.sy+=y*w;
+                          _acc.xx+=x*x*w;_acc.yy+=y*y*w;_acc.xy+=x*y*w; }
+  const _stat={cx:0,cy:0,ax:1,ay:0,s1:1,s2:1,w:0};
+  function accStat(){
+    const W=Math.max(_acc.w,1e-6);
+    const cx=_acc.sx/W, cy=_acc.sy/W;
+    let vxx=_acc.xx/W-cx*cx, vyy=_acc.yy/W-cy*cy, vxy=_acc.xy/W-cx*cy;
+    vxx=Math.max(vxx,0); vyy=Math.max(vyy,0);
+    const tr=vxx+vyy, det=vxx*vyy-vxy*vxy;
+    const disc=Math.sqrt(Math.max(tr*tr*0.25-det,0));
+    const l1=tr*0.5+disc, l2=Math.max(tr*0.5-disc,0);
+    let ax=1,ay=0;
+    if(Math.abs(vxy)>1e-9){ ax=l1-vyy; ay=vxy; const L=Math.hypot(ax,ay)||1; ax/=L; ay/=L; }
+    else if(vyy>vxx){ ax=0; ay=1; }
+    _stat.cx=cx;_stat.cy=cy;_stat.ax=ax;_stat.ay=ay;
+    _stat.s1=Math.sqrt(l1);_stat.s2=Math.sqrt(l2);_stat.w=_acc.w;
+    return _stat;
+  }
+  /* 부드럽게 따라가는 값 — 면이 바뀌는 순간 툭툭 끊기지 않게 */
+  const F={shx:0,shz:0,sax:1,say:0,ss1:1,ss2:1,sk:0,
+           cax:0,caz:0,cx1:1,cy1:0,cs1:.5,cs2:.3,ck:0,dx:1,dz:0,init:false};
+  function lerpTo(k){
+    const S=floorMat.uniforms;
+    S.uShadC.value.set(F.shx,F.shz);
+    S.uShadE.value.set(F.sax,F.say,Math.max(F.ss1,0.12),Math.max(F.ss2,0.12));
+    S.uShadK.value=F.sk;
+    S.uCauC.value.set(F.cax,F.caz);
+    S.uCauE.value.set(F.cx1,F.cy1,Math.max(F.cs1,0.10),Math.max(F.cs2,0.07));
+    S.uCauK.value=F.ck;
+    S.uDisp.value.set(F.dx,F.dz);
+  }
+  const _rHit=new THREE.Vector2(), _bHit=new THREE.Vector2();
+  function updateFloor(dt){
+    if(reduced&&F.init) return;              /* 프리즘이 멈춰 있으면 다시 구할 것이 없다 */
+    /* 프리즘 좌표계로 옮긴다 */
+    _fInv.copy(prism.matrixWorld).invert();
+    _fM3.setFromMatrix4(prism.matrixWorld);
+    _pt.setFromMatrixPosition(prism.matrixWorld);
+    _lw.copy(KEY_DIR);                                      /* 빛이 가는 방향(월드) */
+    _lo.copy(_lw).transformDirection(_fInv);                /* 물체 좌표계 */
+    /* 빛에 수직한 두 축 */
+    _bu.set(0,1,0); if(Math.abs(_lo.y)>0.9) _bu.set(1,0,0);
+    _bu.crossVectors(_lo,_bu).normalize(); _bv.crossVectors(_lo,_bu).normalize();
+
+    /* 프리즘 그림자의 한가운데 — 막히지 않은 빛이 바닥에 닿는 자리.
+       멀리 흩어진 미광을 걸러내는 기준으로도 쓴다. */
+    let gpx=0,gpz=0;
+    if(_lw.y<-1e-3){
+      const tg=(FLOOR_Y-_pt.y)/_lw.y;
+      gpx=_pt.x+_lw.x*tg; gpz=_pt.z+_lw.z*tg;
+    }
+    accReset();                                  /* 그림자 */
+    let sumW=0, sumRx=0,sumRz=0,sumBx=0,sumBz=0,wR=0,wB=0;
+    const gAcc={n:0,w:0,sx:0,sy:0,xx:0,yy:0,xy:0};   /* 초점(초록) */
+    for(let s=0;s<CAU_GRID.length;s+=2){
+      const a=CAU_GRID[s], b=CAU_GRID[s+1];
+      _ro.set(_bu.x*a+_bv.x*b-_lo.x*3.0, _bu.y*a+_bv.y*b-_lo.y*3.0, _bu.z*a+_bv.z*b-_lo.z*3.0);
+      _rd.copy(_lo);
+      if(!hullEnter(_ro,_rd)) continue;
+      const nx=_hitN.x,ny=_hitN.y,nz=_hitN.z, t0=_hitT;
+      /* 그림자 — 막히지 않았다면 그대로 갔을 자리 */
+      _pt.set(_ro.x+_rd.x*t0,_ro.y+_rd.y*t0,_ro.z+_rd.z*t0).applyMatrix4(prism.matrixWorld);
+      _dr.copy(_lw);
+      if(_dr.y<-1e-3){
+        const tf=(FLOOR_Y-_pt.y)/_dr.y;
+        if(tf>0) accAdd(_pt.x+_dr.x*tf, _pt.z+_dr.z*tf, 1);
+      }
+      /* 초점 — 파장마다 따로 통과시킨다 */
+      for(let c=0;c<3;c++){
+        const ior=CAU_IOR[c];
+        _hitN.set(nx,ny,nz);
+        const ci=-(nx*_rd.x+ny*_rd.y+nz*_rd.z);
+        let w=1.0-fresnel(Math.max(ci,0),ior);
+        if(!refractV(_dr,_rd,_hitN,1.0/ior)) continue;
+        _pt.set(_ro.x+_rd.x*t0,_ro.y+_rd.y*t0,_ro.z+_rd.z*t0);
+        let out=null;
+        for(let k=0;k<4;k++){
+          _pt.addScaledVector(_dr,2e-4);
+          if(!hullExit(_pt,_dr)) break;
+          const ex=_hitT, enx=_hitN.x,eny=_hitN.y,enz=_hitN.z;
+          _pt.addScaledVector(_dr,ex);
+          _hitN.set(-enx,-eny,-enz);
+          if(refractV(_od,_dr,_hitN,ior)){
+            const co=_od.x*enx+_od.y*eny+_od.z*enz;
+            w*=1.0-fresnel(Math.max(co,0),ior);
+            out=_od; break;
+          }
+          /* 전반사 — 안에서 튕겨 계속 간다 */
+          const dn=_dr.x*enx+_dr.y*eny+_dr.z*enz;
+          _dr.set(_dr.x-2*dn*enx,_dr.y-2*dn*eny,_dr.z-2*dn*enz);
+        }
+        if(!out||w<0.02) continue;
+        out.applyMatrix3(_fM3).normalize();
+        const wp=_wp.copy(_pt).applyMatrix4(prism.matrixWorld);
+        if(out.y>-1e-3) continue;
+        const tf=(FLOOR_Y-wp.y)/out.y;
+        if(tf<=0||tf>60) continue;
+        const hx=wp.x+out.x*tf, hz=wp.z+out.z*tf;
+        /* 멀리 튄 미광은 넓게 퍼져 바닥 밝기에 거의 보태지 않는다. 뺀다. */
+        if((hx-gpx)*(hx-gpx)+(hz-gpz)*(hz-gpz) > 30.0) continue;
+        if(c===0){ sumRx+=hx*w; sumRz+=hz*w; wR+=w; }
+        else if(c===2){ sumBx+=hx*w; sumBz+=hz*w; wB+=w; }
+        else{ gAcc.n++;gAcc.w+=w;gAcc.sx+=hx*w;gAcc.sy+=hz*w;
+              gAcc.xx+=hx*hx*w;gAcc.yy+=hz*hz*w;gAcc.xy+=hx*hz*w; sumW+=w; }
+      }
+    }
+    /* 목표값 */
+    let T;
+    const nRay=CAU_GRID.length/2;
+    if(_acc.n>0){
+      T=accStat();
+      var tShx=T.cx, tShz=T.cy, tSax=T.ax, tSay=T.ay,
+          tSs1=T.s1*1.75+0.16, tSs2=T.s2*1.75+0.16,
+          tSk=0.46*Math.min(1,_acc.n/(nRay*0.55));
+    }else{ var tShx=F.shx,tShz=F.shz,tSax=F.sax,tSay=F.say,tSs1=F.ss1,tSs2=F.ss2,tSk=0; }
+
+    var tCax=F.cax,tCaz=F.caz,tCx1=F.cx1,tCy1=F.cy1,tCs1=F.cs1,tCs2=F.cs2,tCk=0,
+        tDx=F.dx,tDz=F.dz;
+    if(gAcc.n>=3&&wR>0&&wB>0){
+      _acc.n=gAcc.n;_acc.w=gAcc.w;_acc.sx=gAcc.sx;_acc.sy=gAcc.sy;
+      _acc.xx=gAcc.xx;_acc.yy=gAcc.yy;_acc.xy=gAcc.xy;
+      T=accStat();
+      _rHit.set(sumRx/wR,sumRz/wR); _bHit.set(sumBx/wB,sumBz/wB);
+      const dspx=_rHit.x-_bHit.x, dspz=_rHit.y-_bHit.y;
+      const dl=Math.hypot(dspx,dspz);
+      tDx = dl>1e-4? dspx/dl : F.dx;  tDz = dl>1e-4? dspz/dl : F.dz;
+      tCax=T.cx; tCaz=T.cy; tCx1=T.ax; tCy1=T.ay;
+      tCs1=Math.min(T.s1*1.45+dl*0.8+0.20, 2.30);
+      tCs2=Math.min(T.s2*1.45+0.14, 1.35);
+      /* 에너지 보존 — 좁게 모일수록 밝다 */
+      const area=Math.max(tCs1*tCs2,0.03);
+      tCk=Math.min((sumW/nRay)*0.65/Math.sqrt(area), 0.95);
+    }
+    /* 방향은 부호가 뒤집힐 수 있으니 이전 것과 같은 쪽으로 맞춘다 */
+    if(tSax*F.sax+tSay*F.say<0){ tSax=-tSax; tSay=-tSay; }
+    if(tCx1*F.cx1+tCy1*F.cy1<0){ tCx1=-tCx1; tCy1=-tCy1; }
+
+    const k=(!F.init||dt<=0)?1:1-Math.exp(-dt/0.13);
+    F.init=true;
+    const L=(o,p,v)=>{ o[p]+=(v-o[p])*k; };
+    L(F,'shx',tShx);L(F,'shz',tShz);L(F,'sax',tSax);L(F,'say',tSay);
+    L(F,'ss1',tSs1);L(F,'ss2',tSs2);L(F,'sk',tSk);
+    L(F,'cax',tCax);L(F,'caz',tCaz);L(F,'cx1',tCx1);L(F,'cy1',tCy1);
+    L(F,'cs1',tCs1);L(F,'cs2',tCs2);L(F,'ck',tCk);
+    L(F,'dx',tDx);L(F,'dz',tDz);
+    let n1=Math.hypot(F.sax,F.say)||1; F.sax/=n1; F.say/=n1;
+    let n2=Math.hypot(F.cx1,F.cy1)||1; F.cx1/=n2; F.cy1/=n2;
+    let n3=Math.hypot(F.dx,F.dz)||1;   F.dx/=n3;  F.dz/=n3;
+    lerpTo(k);
+  }
 
   const _rtInv=new THREE.Matrix4();
   const group=new THREE.Group(); group.add(prism); scene.add(group);
@@ -1086,8 +1317,6 @@ try{
   function place(){
     if(mobile){ group.position.set(0,1.38,0); group.scale.setScalar(0.47); }
     else{ group.position.set(1.4,0.1,0); group.scale.setScalar(0.78); }
-    spill.position.set(group.position.x, -2.42, group.position.z-0.3);
-    spill.scale.setScalar(mobile?0.62:1.0);
   }
   resize(); addEventListener('resize',resize); setTimeout(resize,900);
   if(window.ResizeObserver) new ResizeObserver(()=>resize()).observe(document.body);
@@ -1105,6 +1334,7 @@ try{
     stage.addEventListener('pointerup',end);stage.addEventListener('pointercancel',end);
   }
 
+  let _lastT=0;
   const clock=new THREE.Clock();
   renderer.setAnimationLoop(()=>{
     const t=reduced?14:clock.getElapsedTime();
@@ -1119,11 +1349,12 @@ try{
     dust.rotation.y=t*0.02; dust.rotation.z=t*0.008;
     beam.material.opacity=0.13+Math.sin(t*0.45)*0.03+Math.sin(t*0.171+0.8)*0.02;
     glint.material.opacity=0.22+Math.sin(t*1.1)*0.07+Math.sin(t*0.437+1.9)*0.05;          // 부유
-    floorMat.uniforms.uTime.value=t; spillMat.uniforms.uTime.value=t;
     prism.updateMatrixWorld(true);
     _rtInv.copy(prism.matrixWorld).invert();
     glass.uniforms.uCamObj.value.copy(camera.position).applyMatrix4(_rtInv);
     glass.uniforms.uM3.value.setFromMatrix4(prism.matrixWorld);
+    const _dt=Math.min(0.05,Math.max(0,t-_lastT)); _lastT=t;
+    updateFloor(_dt);
     renderer.render(scene,camera);
   });
 }catch(e){ console.error('PRISM_ERR', e && (e.stack||e.message||String(e))); }
