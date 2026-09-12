@@ -293,7 +293,16 @@ def gather(trade_date=None, days=14, skip_news=False):
         facts["schedule"] = calendar_data.collect(days)
     except Exception as e:
         log(f"⚠️ 일정 조회 실패 — 섹션 3에서 일정을 뺀다: {type(e).__name__} {e}")
-        facts["schedule"] = None
+        # None 이 아니라 '비었고 그 이유가 있다'로 남긴다.
+        #
+        #   예전에는 None 이었다. 그러면 사실 블록이 "[일정] 없음" 만 적고,
+        #   "이 목록은 불완전하다" 경고는 붙지 않았다 — health 가 없으니까.
+        #   일부만 실패하면 경고가 붙는데 통째로 실패하면 안 붙는, 뒤집힌
+        #   구조였다. 제일 나쁜 경우가 제일 조용했다. 9월 11일 "일정은
+        #   FOMC 하나뿐"이 나간 것과 같은 병이다.
+        facts["schedule"] = {"events": [], "health": {
+            "ok": False,
+            "problems": [f"일정 수집이 통째로 실패했다: {type(e).__name__} {e}"]}}
 
     # ④ 뉴스. 없으면 인과를 쓰지 않는다(지어내는 것보다 낫다).
     if skip_news:
@@ -308,7 +317,11 @@ def gather(trade_date=None, days=14, skip_news=False):
             facts["news"] = news_data.collect(tks, names)
         except Exception as e:
             log(f"⚠️ 뉴스 조회 실패 — '왜'를 쓰지 않는다: {type(e).__name__} {e}")
-            facts["news"] = None
+            # 일정과 같은 이유로 None 을 쓰지 않는다 — 통째로 실패한 것이
+            # 조용히 넘어가면 안 된다.
+            facts["news"] = {"groups": {}, "tickers": {}, "health": {
+                "ok": False,
+                "problems": [f"뉴스 수집이 통째로 실패했다: {type(e).__name__} {e}"]}}
 
 
     # ── 재료가 빠졌으면 소리를 낸다 ────────────────────────────────
