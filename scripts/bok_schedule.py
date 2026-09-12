@@ -37,6 +37,59 @@ def log(*a):
     print(*a, file=sys.stderr, flush=True)
 
 
+def parse_lines(lines, year):
+    """화면 글자 → (행 목록, 이 목록이 몇 년치인가).
+
+    브라우저와 떼어 놓았다. 이 판정이 틀리면 없는 회의가 브리핑에 실리므로
+    네트워크 없이도 시험할 수 있어야 한다.
+    """
+    head = re.compile(r"^\s*(\d{1,2})\s*월\s*(\d{1,2})\s*일\s*(?:\(([월화수목금토일])\))?")
+    inline_year = re.compile(r"\((20\d\d)[.\-/](\d{1,2})\)")
+    page_year = year
+
+    # ① 먼저 줄만 모은다. 연도는 그 다음에 정한다.
+    raw = []
+    for i, ln in enumerate(lines):
+        m = head.match(ln)
+        if not m:
+            continue
+        tail = " ".join(x.strip() for x in lines[i + 1:i + 6] if x.strip())[:220]
+        ym = inline_year.search(tail) or inline_year.search(ln)
+        raw.append((m, tail, int(ym.group(1)) if ym else None))
+
+    # ② 이 목록이 몇 년치인가 — 줄에 적힌 연도의 다수결로 정한다.
+    #    자료가 붙은 줄에는 '(2026.04)' 처럼 연도가 적혀 있다. 앞으로의
+    #    회의에는 자료가 없어 연도가 없는데, 그 줄에 이 다수결을 쓴다.
+    #    인자(--year)는 요청일 뿐 진실이 아니다. 2027년을 눌렀을 때 화면은
+    #    2026년을 보여 줬고, 인자를 믿었으면 없는 회의 둘이 들어갔다.
+    import collections
+    votes = collections.Counter(y for _, _, y in raw if y)
+    list_year = votes.most_common(1)[0][0] if votes else page_year
+    if votes and len(votes) > 1:
+        log(f"· 줄에 적힌 연도가 섞여 있다: {dict(votes)} → {list_year}년으로 본다")
+    if list_year != year:
+        log(f"· {year}년을 요청했지만 화면은 {list_year}년 목록이다")
+
+    out, seen = [], set()
+    for m, tail, ym_y in raw:
+        y = ym_y or list_year
+        try:
+            d = datetime.date(y, int(m.group(1)), int(m.group(2)))
+        except ValueError:
+            continue
+        if d.isoformat() in seen:
+            continue
+        seen.add(d.isoformat())
+        # 화면에 적힌 요일과 실제 요일이 다르면 연도를 잘못 붙인 것이다.
+        wd = m.group(3)
+        if wd and "월화수목금토일"[d.weekday()] != wd:
+            log(f"· 요일이 어긋난다 — 화면 {wd} / 계산 "
+                f"{'월화수목금토일'[d.weekday()]} ({d}) — 연도를 잘못 붙였을 수 있다. 버린다")
+            continue
+        out.append({"date": d.isoformat(), "text": tail, "sel": "본문 줄"})
+    return sorted(out, key=lambda r: r["date"]), list_year
+
+
 def rows_from_page(year, headless=True):
     """(행 목록, 오류). 행은 {date, text}.
 
@@ -108,30 +161,10 @@ def rows_from_page(year, headless=True):
             return None, f"{type(e).__name__}: {e}"
         b.close()
 
-    out, seen = [], set()
-    for i, ln in enumerate(lines):
-        m = head.match(ln)
-        if not m:
-            continue
-        # 뒤따르는 줄에서 무슨 회의인지와 연도를 찾는다
-        tail = " ".join(x.strip() for x in lines[i + 1:i + 6] if x.strip())[:220]
-        ym = inline_year.search(tail) or inline_year.search(ln)
-        y = int(ym.group(1)) if ym else page_year
-        try:
-            d = datetime.date(y, int(m.group(1)), int(m.group(2)))
-        except ValueError:
-            continue
-        if d.isoformat() in seen:
-            continue
-        seen.add(d.isoformat())
-        # 화면에 적힌 요일과 실제 요일이 다르면 연도를 잘못 붙인 것이다.
-        wd = m.group(3)
-        if wd and "월화수목금토일"[d.weekday()] != wd:
-            log(f"· 요일이 어긋난다 — 화면 {wd} / 계산 "
-                f"{'월화수목금토일'[d.weekday()]} ({d}) — 연도를 잘못 붙였을 수 있다. 버린다")
-            continue
-        out.append({"date": d.isoformat(), "text": tail, "sel": "본문 줄"})
-    return sorted(out, key=lambda r: r["date"]), (f"@{page_year}" if page_year != year else "")
+    rows, list_year = parse_lines(lines, page_year)
+    return rows, (f"@{list_year}" if list_year != year else "")
+
+
 
 
 def main():

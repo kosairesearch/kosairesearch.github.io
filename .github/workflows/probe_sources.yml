@@ -25,20 +25,3 @@ jobs:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           HOLIDAY_API_KEY: ${{ secrets.HOLIDAY_API_KEY }}
         run: python scripts/probe_sources.py --raw
-
-      # 잠깐 붙인 조사 — 금통위 목록을 실제로 주는 주소를 찾는다.
-      # 찾으면 calendar_data.py 에 적고 이 단계와 scripts/_bok_probe.py 는 지운다.
-      - name: 금통위 목록 주소 찾기
-        if: always()
-        run: python scripts/_bok_probe.py
-
-      # 목록이 화면에서 그려지므로 실제 브라우저로 띄워 표를 읽는다.
-      # 먼저 보기만 한다 — 내용이 맞는지 눈으로 확인한 뒤에 쓰게 한다.
-      - name: 금통위 일정 브라우저로 읽어 보기
-        if: always()
-        run: |
-          pip install playwright
-          playwright install --with-deps chromium
-          python scripts/bok_schedule.py --year 2026 || true
-          echo "════════ 내년 ════════"
-          python scripts/bok_schedule.py --year 2027 || true

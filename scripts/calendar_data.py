@@ -53,15 +53,48 @@ FOMC_URL = "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
 # 대신 세인트루이스 연준(FRED)이 같은 발표 일정을 API 로 준다. 열쇠가
 # 필요하지만 무료다(https://fredaccount.stlouisfed.org/apikeys).
 FRED_URL = "https://api.stlouisfed.org/fred/releases/dates"
-# 금통위 일정은 자동으로 못 가져온다 — 2026-09-12 에 후보 4개를 재 봤다.
+BOK_FILE = ROOT / "data" / "bok_meetings.json"
+# (아래 주석은 왜 파일에서 읽는지를 적어 둔 것이다.)
+# 금통위 일정은 그냥 긁어서는 못 가져온다 — 2026-09-12 에 후보 4개를 재 봤다.
 # 국문 페이지는 472,179바이트가 열리는데 그 안에 한국식 날짜가 2개뿐이고
 # '통화정책방향'은 18번 나온다(메뉴 글자). 목록이 화면에서 그려진다는 뜻
 # 이라 긁을 것이 없다. 영문 페이지도 같고, 한은 RSS 는 500, 통계청은
 # 148바이트를 준다. ECOS API 는 통계 수치용이지 회의 일정을 주지 않는다.
 #
-# 그래서 금통위·국내 지표 발표는 data/calendar.json 에 적는다. 연 8회라
-# 한 해에 한 번 여덟 줄이면 된다. 문제는 그걸 잊는 것이었는데, 이제
-# 말라붙으면 경보가 울린다(아래 manual() 과 collect() 의 health).
+# 그래서 실제 브라우저로 띄워 읽는다 — scripts/bok_schedule.py 가 한 달에
+# 한 번 돌며 data/bok_meetings.json 에 적고, 여기서는 그 파일만 읽는다.
+# 매일 도는 브리핑이 브라우저를 띄울 이유는 없다.
+
+
+def bok():
+    """data/bok_meetings.json — 한국은행 페이지에서 읽어 둔 금통위 일정."""
+    if not BOK_FILE.exists():
+        return [], _health("금통위", True, 0,
+                           "아직 읽어 둔 것이 없다 — scripts/bok_schedule.py --write")
+    try:
+        doc = json.loads(BOK_FILE.read_text(encoding="utf-8"))
+        rows = doc.get("rows") or []
+    except Exception as e:
+        return [], _health("금통위", False, 0, f"파일을 못 읽었다 — {e}")
+
+    out = []
+    for r in rows:
+        try:
+            datetime.date.fromisoformat(r["date"])
+        except Exception:
+            continue
+        out.append({"kind": "국내 지표", "date": r["date"],
+                    "title": "한국은행 금융통화위원회(통화정책방향)",
+                    "detail": "기준금리 결정"})
+    # 읽어 둔 것이 낡았나. 올해 것이 없으면 갱신이 멈춘 것이다.
+    today = datetime.datetime.now(KST).date()
+    if not any(r["date"][:4] == str(today.year) for r in out):
+        return out, _health("금통위", False, len(out),
+                            f"{doc.get('year')}년치뿐이다 — {today.year}년 일정을 다시 읽어야 한다")
+    if len(out) != 8:
+        return out, _health("금통위", False, len(out), "연 8회와 다르다")
+    return out, _health("금통위", True, len(out),
+                        f"{doc.get('year')}년 · {str(doc.get('readAt'))[:10]} 에 읽음")
 # 앞으로 이 기간에 일정이 이 수보다 적으면 "수집이 빠졌을 수 있다"로 본다.
 # 9월 11일 사고 때가 14일에 1건이었다.
 THIN_DAYS, THIN_MIN = 14, 3
@@ -326,6 +359,9 @@ def collect(days=14, today=None):
             got, h = fn(y)
             rows += got
             sources.append(h)
+    got, h = bok()
+    rows += got
+    sources.append(h)
     got, h = manual()
     rows += got
     sources.append(h)
