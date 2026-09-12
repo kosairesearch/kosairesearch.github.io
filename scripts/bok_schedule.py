@@ -67,18 +67,40 @@ def rows_from_page(year, headless=True):
             pg.goto(URL, wait_until="networkidle", timeout=60000)
             pg.wait_for_timeout(2000)
 
-            # 연도를 고른다. 상자가 없거나 그 해가 없으면 보이는 대로 읽는다.
+            # 연도를 고른다. 고른 뒤 화면이 실제로 바뀌는지는 아래에서 확인한다.
             sel = pg.query_selector("select")
             if sel:
                 opts = [(o.get_attribute("value") or "", (o.inner_text() or "").strip())
                         for o in sel.query_selector_all("option")]
+                log(f"· 년도선택 값: {opts[:4]} …")
                 want = [v for v, t in opts if str(year) in (v or "") or str(year) in t]
                 if want:
+                    # select_option 만으로는 안 바뀌는 화면이 있다. onchange 를
+                    # 직접 깨워 준다.
                     sel.select_option(want[0])
-                    pg.wait_for_load_state("networkidle", timeout=60000)
-                    pg.wait_for_timeout(2000)
+                    pg.evaluate("""(el) => {
+                        el.dispatchEvent(new Event('change', {bubbles: true}));
+                    }""", sel)
+                    pg.wait_for_timeout(3000)
+                    try:
+                        pg.wait_for_load_state("networkidle", timeout=20000)
+                    except Exception:
+                        pass
                 else:
                     log(f"· {year}년이 년도선택에 없다: {[t for _, t in opts][:6]}")
+
+            # ★ 연도는 인자를 믿지 않고 화면이 말하는 것을 쓴다.
+            #   2027년을 눌렀는데 2026년 자료가 나온 적이 있다. 인자를 믿었으면
+            #   없는 회의 두 개가 들어갔을 것이다(요일 검산이 막았다).
+            shown = None
+            if sel:
+                v = pg.evaluate("(el) => el.options[el.selectedIndex].textContent", sel)
+                m0 = re.search(r"(20\d\d)", v or "")
+                if m0:
+                    shown = int(m0.group(1))
+            if shown and shown != year:
+                log(f"· 화면이 보여 주는 해는 {shown}년이다(요청 {year}년). 화면 쪽을 쓴다")
+            page_year = shown or year
 
             lines = (pg.inner_text("body") or "").split("\n")
         except Exception as e:
@@ -94,7 +116,7 @@ def rows_from_page(year, headless=True):
         # 뒤따르는 줄에서 무슨 회의인지와 연도를 찾는다
         tail = " ".join(x.strip() for x in lines[i + 1:i + 6] if x.strip())[:220]
         ym = inline_year.search(tail) or inline_year.search(ln)
-        y = int(ym.group(1)) if ym else year
+        y = int(ym.group(1)) if ym else page_year
         try:
             d = datetime.date(y, int(m.group(1)), int(m.group(2)))
         except ValueError:
@@ -109,7 +131,7 @@ def rows_from_page(year, headless=True):
                 f"{'월화수목금토일'[d.weekday()]} ({d}) — 연도를 잘못 붙였을 수 있다. 버린다")
             continue
         out.append({"date": d.isoformat(), "text": tail, "sel": "본문 줄"})
-    return sorted(out, key=lambda r: r["date"]), ""
+    return sorted(out, key=lambda r: r["date"]), (f"@{page_year}" if page_year != year else "")
 
 
 def main():
@@ -122,6 +144,14 @@ def main():
     if rows is None:
         log(f"❌ {a.year} 읽기 실패: {err}")
         return 1
+    if err.startswith("@"):
+        real = int(err[1:])
+        log(f"⚠️ {a.year}년을 눌렀는데 화면은 {real}년을 보여 준다 — {real}년으로 적는다")
+        a.year = real
+    # 통화정책방향 결정회의는 연 8회다. 8이 아니면 화면이 덜 그려졌거나
+    # 엉뚱한 것을 읽은 것이다. 반쪽짜리를 쓰느니 알리고 멈춘다.
+    if rows and len(rows) != 8:
+        log(f"⚠️ {len(rows)}건 — 연 8회와 다르다. 화면이 덜 그려졌을 수 있다")
     print(f"■ {a.year}년 · 표에서 읽은 줄 {len(rows)}개")
     for r in rows:
         wd = "월화수목금토일"[datetime.date.fromisoformat(r["date"]).weekday()]
