@@ -514,6 +514,12 @@ RULES = """이 글이 하는 일
 전부이고, 어떤 날은 서로 상관없는 다섯 가지를 짧게 훑는 것이 맞다. 미국 지수부터
 시작해야 할 이유는 없다. 그날 가장 중요한 것부터 쓰면 된다.
 
+다만 이건 '브리핑'이다. 아침에 읽는 글이니 2,000자에서 3,200자 사이에서
+끝난다 — 스크롤 두세 번이다. 그날 할 말이 적으면 짧게 끝내라, 채우려고 늘리지
+마라. 반대로 3,200자를 넘어가면 브리핑이 아니라 리포트가 된다(3,600자를 넘으면
+아예 발행되지 않는다). 분량이 날마다 달라지는 것은 괜찮다. 조용한 날과 시끄러운
+날이 같은 길이일 이유가 없다.
+
 섹션은 필요한 만큼 만들고, 각 섹션에 짧은 영문 id 를 붙인다(us · oil · rates ·
 chips · flows · calendar · fx … 그날 내용에 맞게). KOSAI 리포트의 확인 지점을
 다루는 섹션에만 id 를 coverage 로 붙여라 — 화면이 그 섹션에 출처 표시를 달아
@@ -575,6 +581,10 @@ chips · flows · calendar · fx … 그날 내용에 맞게). KOSAI 리포트�
   ]
 }
 ===JSON_END===
+
+섹션 개수와 id 는 자유지만 **이 모양은 자유가 아니다**. title·lead·summary·heading 은
+{"ko": …, "en": …} 객체이고, paragraphs 의 각 항목도 {"ko": …, "en": …} 객체다.
+문단을 글자로만 주면 화면이 읽지 못해 그날 브리핑이 나가지 못한다.
 """
 
 
@@ -754,18 +764,64 @@ def _plain(s):
     return re.sub(r"\*\*", "", s)
 
 
+def _lang(box, lang):
+    """{"ko": …, "en": …} 에서 한 쪽을 꺼낸다. 모양이 다르면 빈 문자열.
+
+    모델이 가끔 {"ko":…,"en":…} 대신 글자를 그냥 준다. 예전에는 여기서
+    AttributeError 로 통째로 터져 그날 브리핑이 못 나갔다. 검사기는 터지는
+    곳이 아니라 거부 사유를 돌려주는 곳이다 — 그래야 다시 써 달라고 할 수
+    있다. 모양 자체가 틀린 것은 validate 의 _shape_bad 가 따로 잡는다.
+    """
+    if isinstance(box, dict):
+        v = box.get(lang)
+        return v if isinstance(v, str) else ""
+    return ""
+
+
+def _shape_bad(brief):
+    """틀이 어긋난 곳. 비어 있으면 나머지 검사를 그대로 돌려도 된다."""
+    bad = []
+    for key in ("title", "lead", "summary"):
+        v = brief.get(key)
+        if v is not None and not isinstance(v, dict):
+            bad.append(f"{key} 가 {{\"ko\": …, \"en\": …}} 가 아니다")
+    secs = brief.get("sections")
+    if secs is not None and not isinstance(secs, list):
+        return bad + ["sections 가 배열이 아니다"]
+    for n, s in enumerate(secs or []):
+        if not isinstance(s, dict):
+            bad.append(f"{n+1}번째 섹션이 객체가 아니다")
+            continue
+        sid = s.get("id") or f"#{n}"
+        if s.get("heading") is not None and not isinstance(s.get("heading"), dict):
+            bad.append(f"{sid} 의 heading 이 {{\"ko\": …, \"en\": …}} 가 아니다")
+        ps = s.get("paragraphs")
+        if ps is not None and not isinstance(ps, list):
+            bad.append(f"{sid} 의 paragraphs 가 배열이 아니다")
+            continue
+        for i, p in enumerate(ps or []):
+            if not isinstance(p, dict):
+                bad.append(f"{sid} 의 {i+1}번째 문단이 객체가 아니다 — 문단은 "
+                           '{"ko": "…", "en": "…"} 로 쓴다. 글자만 주면 안 된다')
+    return bad
+
+
 def _walk(brief):
-    """(경로, 문자열) 전부. ko/en 양쪽."""
+    """(경로, 문자열) 전부. ko/en 양쪽. 모양이 달라도 터지지 않는다."""
     for key in ("title", "lead", "summary"):
         for lang in ("ko", "en"):
-            yield f"{key}.{lang}", ((brief.get(key) or {}).get(lang) or "")
-    for n, s in enumerate(brief.get("sections") or []):
+            yield f"{key}.{lang}", _lang(brief.get(key), lang)
+    secs = brief.get("sections")
+    for n, s in enumerate(secs if isinstance(secs, list) else []):
+        if not isinstance(s, dict):
+            continue
         sid = s.get("id") or f"#{n}"
         for lang in ("ko", "en"):
-            yield f"{sid}.heading.{lang}", ((s.get("heading") or {}).get(lang) or "")
-        for i, p in enumerate(s.get("paragraphs") or []):
+            yield f"{sid}.heading.{lang}", _lang(s.get("heading"), lang)
+        ps = s.get("paragraphs")
+        for i, p in enumerate(ps if isinstance(ps, list) else []):
             for lang in ("ko", "en"):
-                yield f"{sid}.p{i}.{lang}", ((p or {}).get(lang) or "")
+                yield f"{sid}.p{i}.{lang}", _lang(p, lang)
 
 
 BOLD_CODE = re.compile(r"\*\*([^*\n]{1,80})\*\*\s*\((\d{6})\)")
@@ -961,6 +1017,11 @@ def validate(brief, strict_coverage=True, facts=None):
     bad = []
     if not isinstance(brief, dict):
         return ["JSON 이 객체가 아니다"]
+    # 틀이 어긋나 있으면 아래 검사들이 엉뚱한 데서 터진다. 여기서 끊고
+    # 사유를 돌려줘야 다시 써 달라고 할 수 있다.
+    shape = _shape_bad(brief)
+    if shape:
+        return shape
 
     for key in ("title", "lead", "summary"):
         for lang in ("ko", "en"):
@@ -1196,6 +1257,17 @@ def main():
             log(f"⚠️ {attempt}차 파싱 실패 — {note}")
             if attempt == 2:
                 bail(text, [note])
+                return 3
+            continue
+        # 틀부터 본다. 아래 수리 함수들(repair_links·normalize_links…)은
+        # 문단이 {"ko":…,"en":…} 인 줄 알고 도므로, 모양이 어긋나 있으면
+        # 검사기에 닿기도 전에 터진다. 실제로 그렇게 한 번 죽었다.
+        shape = _shape_bad(cand)
+        if shape:
+            note = "\n".join(f"· {x}" for x in shape)
+            log(f"⚠️ {attempt}차 틀이 어긋났다:\n{note}")
+            if attempt == 2:
+                bail(text, shape)
                 return 3
             continue
         n_fixed = repair_links(cand)

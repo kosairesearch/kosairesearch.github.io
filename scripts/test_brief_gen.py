@@ -181,6 +181,27 @@ b = copy.deepcopy(base)
 b["title"]["en"] = ""
 ok("제목 영문 누락 거부", has(G.validate(b), "title.en"))
 
+print("\n⑤-b 틀이 어긋난 글 — 터지지 말고 거부해야 한다")
+# 자유롭게 쓰라고 풀었더니 모델이 문단을 {"ko":…,"en":…} 대신 글자로 줬다.
+# 예전에는 _walk 가 AttributeError 로 통째로 터져 그날 발행이 막혔을 것이다.
+b = copy.deepcopy(base)
+b["sections"][0]["paragraphs"] = ["그냥 글자로 온 문단"]
+ok("문단이 글자면 거부(안 터짐)", has(G.validate(b), "문단이 객체가 아니다"))
+ok("_walk 도 안 터진다", isinstance(list(G._walk(b)), list))
+b = copy.deepcopy(base)
+b["sections"][0]["heading"] = "글자 제목"
+ok("heading 이 글자면 거부", has(G.validate(b), "heading 이"))
+b = copy.deepcopy(base)
+b["title"] = "글자 제목"
+ok("title 이 글자면 거부", has(G.validate(b), "title 가"))
+b = copy.deepcopy(base)
+b["sections"] = "섹션이 아님"
+ok("sections 가 배열이 아니면 거부", has(G.validate(b), "배열이 아니다"))
+b = copy.deepcopy(base)
+b["sections"][1] = "섹션이 글자"
+ok("섹션이 객체가 아니면 거부", has(G.validate(b), "섹션이 객체가 아니다"))
+ok("멀쩡한 글은 틀 검사에 안 걸린다", G._shape_bad(copy.deepcopy(base)) == [])
+
 print("\n⑥ 섹션 구조")
 # 섹션은 고정하지 않는다. 18일치가 18일 모두 같은 네 칸이었던 것이 "매일
 # 같은 글"의 뼈대였다. 무엇을 몇 개, 어떤 순서로 쓸지는 글쓴이가 정한다.
@@ -561,6 +582,11 @@ ok("대비 제목을 그만하라고 적는다", "A는 올랐고 B는 내렸다"
 ok("이어지는 이야기를 권한다", "이어지는 이야기는 환영한다" in p)
 ok("칸마다 글자 수를 배정하지 않는다",
    not any(x in p for x in ("약 700자", "약 650자", "약 600자")))
+# 칸별 배정은 없애되 전체 분량은 알려 줘야 한다. 목표를 모른 채 쓰다 상한을
+# 넘기면 거부 → 다시 쓰기가 되고, 최악이면 그날 발행이 막힌다.
+ok("전체 분량은 알려 준다", "2,000자에서 3,200자" in p)
+ok("상한을 넘기면 어떻게 되는지도 알려 준다", "발행되지 않는다" in p)
+ok("날마다 길이가 달라도 된다고 적는다", "같은 길이일 이유가 없다" in p)
 ok("휴장 전제를 알려 준다", "'오늘 장'을 준비하는 글이 아니다" in p)
 ok("링크 형식을 지정한다", "[현대차](005380)" in p)
 ok("숫자 출처 규칙", "숫자는 시세에서, 이유는 뉴스에서" in p)
