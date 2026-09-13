@@ -6,9 +6,14 @@ name: 📈 주간 성과 보고 (마케팅)
 #   하루치는 요일마다 널뛴다. 월요일이 많고 토요일이 적은 건 매주 그런
 #   것이라 좋아졌는지 나빠졌는지를 말해 주지 않는다.
 #
-# 왜 숫자를 저장소에 쌓나
+# 숫자는 어디에 쌓나 — Firestore (비공개)
 #   GA4 는 오래된 기록을 지운다(기본 14개월). 매주 받아 두면 1년 뒤에도
-#   '작년 이맘때'와 비교할 수 있다. 파일로 남으니 읽는 쪽은 열쇠가 없어도 된다.
+#   '작년 이맘때'와 비교할 수 있다.
+#
+#   저장소에 커밋했다가 76분간 인터넷에 열렸다(2026-09-13). 이 저장소는
+#   GitHub Pages 무료 요금제라 공개여야 한다. 방문자 수·유입 경로·인기
+#   페이지가 그대로 보였다. 그래서 Firestore 로 옮겼다 — 이미 있고,
+#   기본이 비공개고, 영구적이다. scripts/ga4_store.py 참고.
 #
 # 처음 한 번 해야 하는 것 (setup 을 켜고 수동 실행하면 안내가 나온다)
 #   1. GA4_PROPERTY_ID 를 GitHub 시크릿에 넣는다 (GA4 관리>속성 의 숫자 9자리)
@@ -38,7 +43,7 @@ on:
         default: true
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: marketing-weekly
@@ -96,11 +101,8 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
         run: |
-          if [ ! -f data/ga4/weekly.json ]; then
-            echo "::error::받아 둔 숫자가 하나도 없다 — 설정(setup)을 먼저 끝내라"
-            exit 1
-          fi
           SEND=""
           [ "${{ inputs.send }}" != "false" ] && SEND="--send"
           python3 scripts/marketing_report.py $SEND | tee /tmp/report.md
@@ -109,26 +111,3 @@ jobs:
             echo ""
             cat /tmp/report.md
           } >> $GITHUB_STEP_SUMMARY
-
-      - name: ③ 숫자와 보고서를 저장소에 남긴다
-        if: ${{ !cancelled() && inputs.setup != true && inputs.probe != true }}
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ga4
-          if git diff --cached --quiet; then
-            echo "변경 없음 — 커밋하지 않는다"; exit 0
-          fi
-          git commit -m "📈 주간 성과 $(TZ='Asia/Seoul' date +'%Y-%m-%d')"
-          PUSHED=
-          for i in 1 2 3; do
-            if git pull --rebase origin main && git push origin HEAD:main; then
-              PUSHED=1; break
-            fi
-            git rebase --abort 2>/dev/null || true
-            echo "재시도 $i"; sleep $((i*4))
-          done
-          if [ -z "$PUSHED" ]; then
-            echo "::error::성과 기록을 올리지 못했다 — 세 번 다 실패했다"
-            exit 1
-          fi

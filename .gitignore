@@ -23,3 +23,8 @@ staging/tests/.work-co/
 firestore-debug.log
 ui-debug.log
 data/_replay/
+
+# GA4 마케팅 자료 — 이 저장소는 공개다. 방문자 수·유입 경로·인기 페이지가
+# 그대로 열린다. 2026-09-13 에 76분간 열려 있던 것을 내리고 Firestore 로
+# 옮겼다(scripts/ga4_store.py). 여기 파일이 생기는 건 열쇠가 없을 때뿐이다.
+data/ga4/

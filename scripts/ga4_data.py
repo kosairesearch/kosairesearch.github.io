@@ -436,22 +436,40 @@ def collect(weeks=8, today=None):
     }
 
 
-def merge_save(doc, path=OUT):
-    """이번에 받은 주를 기존 기록에 합친다. 옛 주는 지우지 않는다."""
-    old = {}
-    if path.exists():
-        try:
-            prev = json.loads(path.read_text(encoding="utf-8"))
-            old = {w["week"]: w for w in prev.get("weeks") or []}
-        except Exception as e:
-            log(f"· 기존 파일을 읽지 못했다(새로 쓴다): {e}")
+def merge_save(doc, path=None):
+    """이번에 받은 주를 기존 기록에 합친다. 옛 주는 지우지 않는다.
+
+    저장 위치는 Firestore 다 — 이 저장소는 공개라 여기 커밋하면 방문자
+    수가 인터넷에 열린다(2026-09-13 에 실제로 76분간 열려 있었다).
+    path 를 주면 그 파일에 쓴다. 시험할 때만 쓴다.
+    """
+    if path is not None:
+        prev = {}
+        if path.exists():
+            try:
+                prev = json.loads(path.read_text(encoding="utf-8"))
+            except Exception as e:
+                log(f"· 기존 파일을 읽지 못했다(새로 쓴다): {e}")
+        merged = _merge(prev, doc)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(merged, ensure_ascii=False, indent=2),
+                        encoding="utf-8")
+        return len(merged["weeks"])
+
+    import ga4_store
+    merged = _merge(ga4_store.load("weekly"), doc)
+    ga4_store.save("weekly", merged)
+    log(f"· 저장 위치: {ga4_store.where()}")
+    return len(merged["weeks"])
+
+
+def _merge(prev, doc):
+    old = {w["week"]: w for w in (prev or {}).get("weeks") or []}
     for w in doc.get("weeks") or []:
         old[w["week"]] = w
-    doc = dict(doc)
-    doc["weeks"] = [old[k] for k in sorted(old)]
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
-    return len(doc["weeks"])
+    out = dict(doc)
+    out["weeks"] = [old[k] for k in sorted(old)]
+    return out
 
 
 def show(doc):

@@ -396,11 +396,19 @@ def main():
     ap.add_argument("--data", help="쓸 파일 (기본 data/ga4/weekly.json)")
     a = ap.parse_args()
 
-    path = Path(a.data) if a.data else DATA
-    if not path.exists():
-        log(f"❌ {path} 가 없다 — 먼저 scripts/ga4_data.py --write 를 돌려라")
-        return 2
-    doc = json.loads(path.read_text(encoding="utf-8"))
+    if a.data:
+        path = Path(a.data)
+        if not path.exists():
+            log(f"❌ {path} 가 없다")
+            return 2
+        doc = json.loads(path.read_text(encoding="utf-8"))
+    else:
+        import ga4_store
+        doc = ga4_store.load("weekly")
+        if not (doc.get("weeks")):
+            log(f"❌ 받아 둔 숫자가 없다 ({ga4_store.where()})"
+                " — 먼저 scripts/ga4_data.py --write 를 돌려라")
+            return 2
 
     if a.dry:
         print(build_prompt(doc))
@@ -419,10 +427,15 @@ def main():
     text = metrics_block(doc) + "\n\n" + text
 
     cur = weeks[-1]
-    OUTDIR.mkdir(parents=True, exist_ok=True)
-    f = OUTDIR / f"{cur['week']}.md"
-    f.write_text(text + "\n", encoding="utf-8")
-    log(f"✅ {f.relative_to(ROOT)} · {len(text):,}자")
+    # 보고서도 저장소에 두지 않는다 — 전략과 숫자가 함께 적혀 있다.
+    import ga4_store
+    box = ga4_store.load("reports", {"items": []})
+    box.setdefault("items", [])
+    box["items"] = [x for x in box["items"] if x.get("week") != cur["week"]]
+    box["items"].append({"week": cur["week"], "to": cur.get("to"), "text": text})
+    box["items"] = box["items"][-52:]        # 1년치만 둔다
+    ga4_store.save("reports", box)
+    log(f"✅ 보고서 저장 · {len(text):,}자 · {ga4_store.where()}")
     print(text)
 
     if a.send:
