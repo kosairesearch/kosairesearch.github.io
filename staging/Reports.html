@@ -54,16 +54,10 @@
 html{scroll-behavior:smooth;scrollbar-gutter:stable}
 body{margin:0;font-family:var(--font-sans);color:var(--fg-1);background:#eef1ff;-webkit-font-smoothing:antialiased;min-height:100vh;position:relative;font-variant-numeric:tabular-nums}
 body::after{content:"";position:fixed;inset:0;z-index:-2;
-  background:radial-gradient(ellipse 50% 38% at 10% -2%, rgba(120,157,255,.50), transparent 62%),
-    radial-gradient(ellipse 52% 42% at 96% 6%, rgba(151,71,255,.40), transparent 64%),
-    radial-gradient(ellipse 80% 55% at 50% 104%, rgba(95,197,255,.32), transparent 70%),
-    linear-gradient(180deg,#eef1ff 0%, #e2e7fb 48%, #d5dbf6 100%);background-attachment:fixed}
+  background:#e2e7fb;background-attachment:fixed}
 :root[data-theme="dark"] body{background:#0e0e16}
 :root[data-theme="dark"] body::after{
-  background:radial-gradient(ellipse 50% 38% at 10% -2%, rgba(120,157,255,.32), transparent 62%),
-    radial-gradient(ellipse 52% 42% at 96% 6%, rgba(151,71,255,.30), transparent 64%),
-    radial-gradient(ellipse 80% 55% at 50% 104%, rgba(48,90,180,.30), transparent 70%),
-    linear-gradient(180deg,#10121d 0%, #0d0e18 60%, #0a0b13 100%)}
+  background:#0d0e18}
 /* 배경 격자(body::before 48px)는 뺐다 — 2026-09-14 사장 지시.
    스테이징에서만 뺀 것이고 실사이트에는 아직 남아 있다. */
 .glass{background:rgba(255,255,255,0.62);border:1px solid rgba(255,255,255,0.55);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.6);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-radius:var(--radius-xl)}
