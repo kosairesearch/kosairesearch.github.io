@@ -74,6 +74,7 @@ run "금통위 일정"   python3 scripts/tests/bok_schedule_test.py
 run "GA4 수집"     python3 scripts/tests/ga4_data_test.py
 run "성과 보고"    python3 scripts/tests/marketing_report_test.py
 run "집계 제외"    node tests/analytics-optout.test.mjs
+run "행동 기록"    node tests/analytics-events.test.mjs
 run "브리핑 생성"   python3 scripts/test_brief_gen.py
 # 생성기는 DART·KRX 를 부르고 요금이 나가서 통째로 못 돌린다. 그래서 분모를
 # 되묻는 블록만 원문에서 꺼내 실제 값으로 돌려 본다 — 틀렸던 종목은 고쳐지고
