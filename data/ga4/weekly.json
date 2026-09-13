@@ -1,0 +1,535 @@
+{
+  "collectedAt": "2026-09-13T14:24:04+09:00",
+  "propertyId": "540465604",
+  "weeks": [
+    {
+      "week": "2026-06-15",
+      "to": "2026-06-21",
+      "users": 11,
+      "newUsers": 11,
+      "returningUsers": 4,
+      "sessions": 21,
+      "engagedSessions": 13,
+      "pageViews": 198,
+      "avgSessionSec": 1094
+    },
+    {
+      "week": "2026-06-22",
+      "to": "2026-06-28",
+      "users": 32,
+      "newUsers": 31,
+      "returningUsers": 6,
+      "sessions": 57,
+      "engagedSessions": 35,
+      "pageViews": 236,
+      "avgSessionSec": 260
+    },
+    {
+      "week": "2026-06-29",
+      "to": "2026-07-05",
+      "users": 27,
+      "newUsers": 25,
+      "returningUsers": 2,
+      "sessions": 36,
+      "engagedSessions": 18,
+      "pageViews": 187,
+      "avgSessionSec": 401
+    },
+    {
+      "week": "2026-07-06",
+      "to": "2026-07-12",
+      "users": 227,
+      "newUsers": 225,
+      "returningUsers": 20,
+      "sessions": 282,
+      "engagedSessions": 208,
+      "pageViews": 859,
+      "avgSessionSec": 118
+    },
+    {
+      "week": "2026-07-13",
+      "to": "2026-07-19",
+      "users": 203,
+      "newUsers": 192,
+      "returningUsers": 32,
+      "sessions": 269,
+      "engagedSessions": 225,
+      "pageViews": 704,
+      "avgSessionSec": 206
+    },
+    {
+      "week": "2026-07-20",
+      "to": "2026-07-26",
+      "users": 112,
+      "newUsers": 100,
+      "returningUsers": 19,
+      "sessions": 138,
+      "engagedSessions": 121,
+      "pageViews": 241,
+      "avgSessionSec": 185
+    },
+    {
+      "week": "2026-07-27",
+      "to": "2026-08-02",
+      "users": 195,
+      "newUsers": 183,
+      "returningUsers": 24,
+      "sessions": 224,
+      "engagedSessions": 205,
+      "pageViews": 382,
+      "avgSessionSec": 222
+    },
+    {
+      "week": "2026-08-03",
+      "to": "2026-08-09",
+      "users": 318,
+      "newUsers": 303,
+      "returningUsers": 36,
+      "sessions": 373,
+      "engagedSessions": 333,
+      "pageViews": 765,
+      "avgSessionSec": 220
+    },
+    {
+      "week": "2026-08-10",
+      "to": "2026-08-16",
+      "users": 514,
+      "newUsers": 499,
+      "returningUsers": 58,
+      "sessions": 616,
+      "engagedSessions": 579,
+      "pageViews": 1182,
+      "avgSessionSec": 233
+    },
+    {
+      "week": "2026-08-17",
+      "to": "2026-08-23",
+      "users": 382,
+      "newUsers": 357,
+      "returningUsers": 56,
+      "sessions": 478,
+      "engagedSessions": 439,
+      "pageViews": 952,
+      "avgSessionSec": 232
+    },
+    {
+      "week": "2026-08-24",
+      "to": "2026-08-30",
+      "users": 427,
+      "newUsers": 400,
+      "returningUsers": 70,
+      "sessions": 551,
+      "engagedSessions": 501,
+      "pageViews": 1859,
+      "avgSessionSec": 352,
+      "channels": [
+        {
+          "sessionDefaultChannelGroup": "Organic Search",
+          "sessions": 458,
+          "totalUsers": 368
+        },
+        {
+          "sessionDefaultChannelGroup": "Direct",
+          "sessions": 60,
+          "totalUsers": 46
+        },
+        {
+          "sessionDefaultChannelGroup": "Referral",
+          "sessions": 16,
+          "totalUsers": 3
+        },
+        {
+          "sessionDefaultChannelGroup": "AI Assistant",
+          "sessions": 11,
+          "totalUsers": 11
+        },
+        {
+          "sessionDefaultChannelGroup": "Organic Social",
+          "sessions": 6,
+          "totalUsers": 3
+        }
+      ],
+      "pages": [
+        {
+          "pagePath": "/stock.html",
+          "screenPageViews": 583,
+          "totalUsers": 395
+        },
+        {
+          "pagePath": "/Home.html",
+          "screenPageViews": 377,
+          "totalUsers": 48
+        },
+        {
+          "pagePath": "/Login.html",
+          "screenPageViews": 240,
+          "totalUsers": 12
+        },
+        {
+          "pagePath": "/",
+          "screenPageViews": 99,
+          "totalUsers": 40
+        },
+        {
+          "pagePath": "/industry.html",
+          "screenPageViews": 82,
+          "totalUsers": 23
+        },
+        {
+          "pagePath": "/Consent.html",
+          "screenPageViews": 68,
+          "totalUsers": 6
+        },
+        {
+          "pagePath": "/Reports.html",
+          "screenPageViews": 65,
+          "totalUsers": 28
+        },
+        {
+          "pagePath": "/Admin.html",
+          "screenPageViews": 49,
+          "totalUsers": 1
+        },
+        {
+          "pagePath": "/brief.html",
+          "screenPageViews": 41,
+          "totalUsers": 14
+        },
+        {
+          "pagePath": "/Signup.html",
+          "screenPageViews": 33,
+          "totalUsers": 3
+        },
+        {
+          "pagePath": "/Screener.html",
+          "screenPageViews": 31,
+          "totalUsers": 16
+        },
+        {
+          "pagePath": "/staging/stock.html",
+          "screenPageViews": 30,
+          "totalUsers": 1
+        },
+        {
+          "pagePath": "/staging/pricing.html",
+          "screenPageViews": 25,
+          "totalUsers": 1
+        },
+        {
+          "pagePath": "/staging/Home.html",
+          "screenPageViews": 20,
+          "totalUsers": 1
+        },
+        {
+          "pagePath": "/staging/Reports.html",
+          "screenPageViews": 20,
+          "totalUsers": 1
+        }
+      ],
+      "events": [
+        {
+          "eventName": "page_view",
+          "eventCount": 1859
+        },
+        {
+          "eventName": "user_engagement",
+          "eventCount": 1502
+        },
+        {
+          "eventName": "report_view",
+          "eventCount": 609
+        },
+        {
+          "eventName": "session_start",
+          "eventCount": 550
+        },
+        {
+          "eventName": "first_visit",
+          "eventCount": 400
+        },
+        {
+          "eventName": "sign_up",
+          "eventCount": 29
+        }
+      ],
+      "devices": [
+        {
+          "deviceCategory": "mobile",
+          "totalUsers": 258
+        },
+        {
+          "deviceCategory": "desktop",
+          "totalUsers": 163
+        },
+        {
+          "deviceCategory": "tablet",
+          "totalUsers": 9
+        }
+      ],
+      "sources": [
+        {
+          "sessionSource": "m.search.naver.com",
+          "sessions": 292
+        },
+        {
+          "sessionSource": "naver",
+          "sessions": 165
+        },
+        {
+          "sessionSource": "(direct)",
+          "sessions": 60
+        },
+        {
+          "sessionSource": "chatgpt.com",
+          "sessions": 11
+        },
+        {
+          "sessionSource": "nid.naver.com",
+          "sessions": 10
+        },
+        {
+          "sessionSource": "kauth.kakao.com",
+          "sessions": 5
+        },
+        {
+          "sessionSource": "accounts.google.com",
+          "sessions": 2
+        },
+        {
+          "sessionSource": "searchadvisor.naver.com",
+          "sessions": 2
+        },
+        {
+          "sessionSource": "admin-nid.navercorp.com",
+          "sessions": 1
+        },
+        {
+          "sessionSource": "cafe.naver.com",
+          "sessions": 1
+        },
+        {
+          "sessionSource": "m.keep.naver.com",
+          "sessions": 1
+        }
+      ]
+    },
+    {
+      "week": "2026-08-31",
+      "to": "2026-09-06",
+      "users": 382,
+      "newUsers": 354,
+      "returningUsers": 55,
+      "sessions": 483,
+      "engagedSessions": 419,
+      "pageViews": 1136,
+      "avgSessionSec": 244,
+      "channels": [
+        {
+          "sessionDefaultChannelGroup": "Organic Search",
+          "sessions": 377,
+          "totalUsers": 310
+        },
+        {
+          "sessionDefaultChannelGroup": "Direct",
+          "sessions": 77,
+          "totalUsers": 65
+        },
+        {
+          "sessionDefaultChannelGroup": "Referral",
+          "sessions": 24,
+          "totalUsers": 4
+        },
+        {
+          "sessionDefaultChannelGroup": "AI Assistant",
+          "sessions": 3,
+          "totalUsers": 2
+        },
+        {
+          "sessionDefaultChannelGroup": "Organic Social",
+          "sessions": 2,
+          "totalUsers": 1
+        },
+        {
+          "sessionDefaultChannelGroup": "Unassigned",
+          "sessions": 1,
+          "totalUsers": 1
+        }
+      ],
+      "pages": [
+        {
+          "pagePath": "/stock.html",
+          "screenPageViews": 481,
+          "totalUsers": 342
+        },
+        {
+          "pagePath": "/",
+          "screenPageViews": 113,
+          "totalUsers": 45
+        },
+        {
+          "pagePath": "/Reports.html",
+          "screenPageViews": 110,
+          "totalUsers": 34
+        },
+        {
+          "pagePath": "/Home.html",
+          "screenPageViews": 106,
+          "totalUsers": 33
+        },
+        {
+          "pagePath": "/industry.html",
+          "screenPageViews": 101,
+          "totalUsers": 25
+        },
+        {
+          "pagePath": "/About.html",
+          "screenPageViews": 31,
+          "totalUsers": 21
+        },
+        {
+          "pagePath": "/staging/Reports.html",
+          "screenPageViews": 27,
+          "totalUsers": 2
+        },
+        {
+          "pagePath": "/Watchlist.html",
+          "screenPageViews": 26,
+          "totalUsers": 11
+        },
+        {
+          "pagePath": "/brief.html",
+          "screenPageViews": 24,
+          "totalUsers": 12
+        },
+        {
+          "pagePath": "/staging/Home.html",
+          "screenPageViews": 21,
+          "totalUsers": 2
+        },
+        {
+          "pagePath": "/staging/pricing.html",
+          "screenPageViews": 17,
+          "totalUsers": 2
+        },
+        {
+          "pagePath": "/Admin.html",
+          "screenPageViews": 16,
+          "totalUsers": 1
+        },
+        {
+          "pagePath": "/staging/industry.html",
+          "screenPageViews": 11,
+          "totalUsers": 2
+        },
+        {
+          "pagePath": "/Screener.html",
+          "screenPageViews": 9,
+          "totalUsers": 5
+        },
+        {
+          "pagePath": "/Login.html",
+          "screenPageViews": 7,
+          "totalUsers": 4
+        }
+      ],
+      "events": [
+        {
+          "eventName": "page_view",
+          "eventCount": 1136
+        },
+        {
+          "eventName": "user_engagement",
+          "eventCount": 976
+        },
+        {
+          "eventName": "report_view",
+          "eventCount": 487
+        },
+        {
+          "eventName": "session_start",
+          "eventCount": 485
+        },
+        {
+          "eventName": "first_visit",
+          "eventCount": 354
+        },
+        {
+          "eventName": "watchlist_add",
+          "eventCount": 16
+        },
+        {
+          "eventName": "sign_up",
+          "eventCount": 4
+        }
+      ],
+      "devices": [
+        {
+          "deviceCategory": "mobile",
+          "totalUsers": 217
+        },
+        {
+          "deviceCategory": "desktop",
+          "totalUsers": 162
+        },
+        {
+          "deviceCategory": "tablet",
+          "totalUsers": 4
+        }
+      ],
+      "sources": [
+        {
+          "sessionSource": "m.search.naver.com",
+          "sessions": 228
+        },
+        {
+          "sessionSource": "naver",
+          "sessions": 141
+        },
+        {
+          "sessionSource": "(direct)",
+          "sessions": 77
+        },
+        {
+          "sessionSource": "nid.naver.com",
+          "sessions": 15
+        },
+        {
+          "sessionSource": "chatgpt.com",
+          "sessions": 7
+        },
+        {
+          "sessionSource": "ntp.msn.com",
+          "sessions": 4
+        },
+        {
+          "sessionSource": "google",
+          "sessions": 3
+        },
+        {
+          "sessionSource": "kauth.kakao.com",
+          "sessions": 2
+        },
+        {
+          "sessionSource": "link.naver.com",
+          "sessions": 2
+        },
+        {
+          "sessionSource": "m.keep.naver.com",
+          "sessions": 2
+        },
+        {
+          "sessionSource": "(not set)",
+          "sessions": 1
+        },
+        {
+          "sessionSource": "searchadvisor.naver.com",
+          "sessions": 1
+        }
+      ]
+    }
+  ],
+  "health": {
+    "ok": true,
+    "problems": []
+  }
+}
