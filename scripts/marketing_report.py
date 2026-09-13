@@ -19,6 +19,7 @@ import argparse
 import datetime
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -110,7 +111,9 @@ def _w(t):
 
 
 def _pad(t, width):
-    return str(t) + " " * max(0, width - _w(t))
+    """이름표 뒤를 칸에 맞춘다. 이름이 칸보다 길어도 최소 한 칸은 띄운다 —
+    안 그러면 '끝까지 읽은 비율30%' 처럼 이름과 숫자가 달라붙는다."""
+    return str(t) + " " * max(1, width - _w(t))
 
 
 def _line(label, now, before, unit="", pad=16):
@@ -129,6 +132,113 @@ def split_pages(week):
     for r in rows:
         out[ga4_data.page_kind(r.get("pagePath"))] += r.get("screenPageViews") or 0
     return out, sum(out.values())
+
+
+# ── 행동 자료 ────────────────────────────────────────────────────────
+# GA4 가 주는 날것은 "eventName=stock_click, customEvent:ticker=005930,
+# eventCount=18" 같은 줄이다. 사람이 읽을 수 있는 모양으로 바꾸는 일을
+# 여기서 한 번만 하고, 숫자판과 모델 재료가 같은 함수를 쓴다. 두 군데서
+# 따로 계산하면 숫자판과 해설이 서로 다른 말을 하게 된다.
+
+def page_label(path):
+    """페이지 주소를 사람이 읽는 이름으로.
+
+    GA4 는 맞춤 측정기준을 켜기 전의 기록을 '(not set)' 으로 준다.
+    그대로 내보내면 사장 화면에 영어가 나가고, 무슨 뜻인지 알 수 없다."""
+    import ga4_data
+    p = (path or "").strip()
+    if not p or p in ("(not set)", "(none)"):
+        return "어딘지 기록 안 됨"
+    return ga4_data.PAGE_NAMES.get(p, ga4_data.PAGE_NAMES.get(p.split("?")[0], p))
+
+
+def _pairs(week, key, dim, met="eventCount"):
+    """[(차원값, 숫자)] 로 꺼내 큰 순서로 정렬한다. 없으면 빈 목록."""
+    out = []
+    for r in (week or {}).get(key) or []:
+        v, n = r.get(dim), r.get(met)
+        if v is None or n is None:
+            continue
+        out.append((str(v), n))
+    out.sort(key=lambda x: x[1], reverse=True)
+    return out
+
+
+def top_tickers(week, top=6):
+    """가장 많이 눌린 종목. [(이름, 횟수)]
+
+    tickers 는 eventName 과 ticker 를 함께 물어본 결과라 stock_click 이
+    아닌 줄도 섞여 온다. 그것까지 세면 '눌린 횟수' 가 아니게 된다."""
+    import ga4_data
+    agg = {}
+    for r in week.get("tickers") or []:
+        if r.get("eventName") != "stock_click":
+            continue
+        t = (r.get("customEvent:ticker") or "").strip()
+        if not t or t == "(not set)":
+            continue
+        agg[t] = agg.get(t, 0) + (r.get("eventCount") or 0)
+    rows = sorted(agg.items(), key=lambda x: x[1], reverse=True)
+    return [(ga4_data.ticker_name(t), n) for t, n in rows[:top]]
+
+
+def read_through(week):
+    """내려 읽기 시작한 사람 중 끝까지 간 비율. (비율%, 시작 수, 끝까지 수)
+
+    scroll_depth 는 25·50·75·100 에서 한 번씩 올라온다. 25 에 한 번도
+    닿지 않은 사람은 애초에 세어지지 않으므로, 이 비율은 '방문자 중
+    완독률' 이 아니라 '읽기 시작한 사람 중 완독률' 이다. 둘을 헷갈리면
+    숫자를 두 배 부풀려 말하게 된다."""
+    b = {}
+    for v, n in _pairs(week, "scroll", "customEvent:percent"):
+        if v.isdigit():
+            b[int(v)] = b.get(int(v), 0) + n
+    start = b.get(25)
+    if not start:
+        return None
+    return round((b.get(100, 0)) / start * 100), start, b.get(100, 0)
+
+
+def source_funnel(week, top=8):
+    """유입처별 '들어옴 → 가입'. [(이름, 방문 시작, 가입, 전환율%)]"""
+    import ga4_data
+    starts = dict(_pairs(week, "entrySource", "customEvent:entry_source"))
+    ups = dict(_pairs(week, "signupSource", "customEvent:entry_source"))
+    keys = sorted(set(starts) | set(ups),
+                  key=lambda k: (starts.get(k, 0), ups.get(k, 0)), reverse=True)
+    out = []
+    for k in keys[:top]:
+        v, su = starts.get(k, 0), ups.get(k, 0)
+        out.append((ga4_data.ENTRY_NAMES.get(k, k), v, su,
+                    (su / v * 100) if v else None))
+    return out
+
+
+def by_visitor(week, top=6):
+    """신규·재방문이 각각 뭘 봤나. {'재방문': [(페이지, 조회)], '신규': [...]}"""
+    import ga4_data
+    box = {"재방문": {}, "신규": {}}
+    for r in week.get("byVisitor") or []:
+        who = r.get("newVsReturning")
+        key = "재방문" if who == "returning" else ("신규" if who == "new" else None)
+        if not key:
+            continue
+        p = r.get("pagePath") or ""
+        if ga4_data.page_kind(p) != "콘텐츠":
+            continue            # 로그인·관리자는 손님 취향이 아니다
+        box[key][p] = box[key].get(p, 0) + (r.get("screenPageViews") or 0)
+    out = {}
+    for k, d in box.items():
+        rows = sorted(d.items(), key=lambda x: x[1], reverse=True)[:top]
+        out[k] = [(ga4_data.PAGE_NAMES.get(p, p), n) for p, n in rows]
+    return out
+
+
+def has_behavior(week):
+    """행동 자료가 한 가지라도 들어왔나."""
+    return any((week or {}).get(k) for k in
+               ("tickers", "scroll", "signupSource", "entrySource",
+                "landings", "leave", "byVisitor"))
 
 
 def metrics_block(doc):
@@ -211,6 +321,28 @@ def metrics_block(doc):
             L.append(_line("관심종목 담기", wl, pevs.get("watchlist_add"), "건"))
         L.append("")
 
+    # 손님이 실제로 뭘 했나. 숫자판에는 두 줄만 — 나머지는 해설이 맡는다.
+    # 여기에 다 쏟아 놓으면 사장이 숫자판을 안 읽는다.
+    tk = top_tickers(cur, 3)
+    rt = read_through(cur)
+    if tk or rt:
+        L.append("■ 손님이 무엇을 봤나")
+        if tk:
+            L.append(f"  {_pad('많이 열린 종목', 16)}"
+                     + " · ".join(f"{n} {c}회" for n, c in tk))
+        if rt:
+            pct, start, end = rt
+            L.append(f"  {_pad('끝까지 읽음', 16)}{pct}%"
+                     f"  (내려 읽기 시작 {_n(start)}회 중 {_n(end)}회)")
+        L.append("")
+    else:
+        # 빈 칸을 그냥 없애면 "원래 없는 것" 인지 "아직 안 쌓인 것" 인지
+        # 알 수 없다. 기록을 켠 다음 주부터는 이 줄이 저절로 사라진다.
+        L.append("■ 손님이 무엇을 봤나")
+        L.append("  아직 쌓이지 않았습니다 — 종목 클릭·읽은 길이는 기록을 켠"
+                 " 뒤부터 모입니다.")
+        L.append("")
+
     hl = doc.get("health") or {}
     if not hl.get("ok", True):
         L.append("⚠️ 이 숫자는 온전하지 않습니다 — " + " / ".join(hl.get("problems") or []))
@@ -275,6 +407,75 @@ def facts_text(doc):
     block("기기", "devices", "deviceCategory", "totalUsers", top=4,
           namer=lambda x: ga4_data.DEVICE_NAMES.get(x, x))
 
+    # ── 손님이 실제로 뭘 했나 ─────────────────────────────────────
+    # 방문자 수는 "왔다"까지만 말해 준다. 뭘 보고 어디서 멈췄는지를 알아야
+    # 다음 주에 뭘 고칠지가 나온다. 아래는 그걸 보려고 심어 둔 것들이다.
+    tk = top_tickers(cur, 8)
+    if tk:
+        L.append("\n[가장 많이 눌린 종목 · 누른 횟수]")
+        for name, c in tk:
+            L.append(f"  {name}: {_n(c)}")
+        L.append("  · 손님이 무엇을 궁금해하는지다. 여기 자주 나오는 종목의 리포트를"
+                 " 먼저 손보는 것이 아무 리포트나 늘리는 것보다 낫다.")
+
+    rt = read_through(cur)
+    if rt:
+        pct, start, end = rt
+        L.append(f"\n[얼마나 내려 읽나] 25%까지 {_n(start)}회 · 끝까지 {_n(end)}회"
+                 f" → 읽기 시작한 것 중 {pct}%가 끝까지 갔다.")
+        L.append("  · '방문자 중 완독률' 이 아니다. 내려 읽기 시작한 것 중 비율이다."
+                 " 방문자 수로 나눠 말하지 마라.")
+
+    fn = source_funnel(cur)
+    if fn:
+        L.append("\n[유입처별 들어옴 → 가입]")
+        for name, v, su, r in fn:
+            rr = f" · 가입 {r:.1f}%" if r is not None else ""
+            L.append(f"  {name}: 들어옴 {_n(v)} / 가입 {_n(su)}{rr}")
+        L.append("  · 수가 적으면 비율이 널뛴다. 들어옴이 30 미만인 줄은 비율을 말하지 마라.")
+
+    sp = _pairs(cur, "signupPage", "customEvent:from_page")
+    if sp:
+        L.append("\n[어느 페이지에서 가입을 눌렀나]")
+        for pth, n in sp[:8]:
+            L.append(f"  {page_label(pth)}: {_n(n)}")
+
+    lp = _pairs(cur, "landings", "landingPage", "sessions")
+    if lp:
+        bounce = {r.get("landingPage"): r.get("bounceRate")
+                  for r in (cur.get("landings") or [])}
+        L.append("\n[처음 열린 페이지 · 방문 횟수 · 그냥 나간 비율]")
+        for pth, n in lp[:8]:
+            b = bounce.get(pth)
+            bs = f" · 그냥 나감 {b * 100:.0f}%" if isinstance(b, (int, float)) else ""
+            L.append(f"  {page_label(pth)}: {_n(n)}{bs}")
+        L.append("  · '그냥 나감' 은 한 장만 보고 떠난 비율이다. 여기가 높은 페이지가"
+                 " 손님을 가장 많이 잃고 있는 자리다.")
+
+    lv = _pairs(cur, "leave", "customEvent:from_page")
+    if lv:
+        L.append("\n[어느 페이지에서 떠났나]")
+        for pth, n in lv[:8]:
+            L.append(f"  {page_label(pth)}: {_n(n)}")
+        L.append("  · 모든 페이지에서 언젠가는 떠난다. 조회 수에 견줘 유난히"
+                 " 큰 곳만 뜻이 있다.")
+
+    bv = by_visitor(cur)
+    if bv.get("재방문") or bv.get("신규"):
+        L.append("\n[누가 무엇을 보나 (콘텐츠 페이지만)]")
+        for who in ("재방문", "신규"):
+            rows = bv.get(who) or []
+            if rows:
+                L.append(f"  {who}: " + " · ".join(f"{n} {c}" for n, c in rows))
+        L.append("  · 다시 오는 사람이 보는 페이지가 우리 사이트의 진짜 상품이다."
+                 " 신규만 보고 재방문이 안 보는 페이지는 미끼일 뿐이다.")
+
+    miss = cur.get("_missing") or {}
+    if miss:
+        L.append("\n[못 받은 행동 자료] " + ", ".join(sorted(miss)))
+        L.append("  · GA4 '맞춤 측정기준' 등록 전이거나 아직 쌓이지 않은 것이다."
+                 " 0 이었다고 말하지 마라.")
+
     # 가입·관심종목도 우리가 시험하면 올라간다. 계정 페이지가 같이
     # 움직였으면 그 얘기를 먼저 해야 한다 — 8/24 주 가입 29건이
     # 그런 경우였다(같은 주 가입 페이지 33회·동의 68회).
@@ -336,11 +537,97 @@ PROMPT = """아래는 KOSAI 사이트의 지난주 숫자다. 산수는 이미 �
   · 위에 없는 숫자를 지어내지 마라. '받지 못했다'고 적힌 것을 0으로
     바꿔 말하지 마라.
   · 표를 그리지 마라. 굵게(**)도 쓰지 마라. 휴대폰 메신저로 읽는다.
-  · 전체 1,200자 안쪽. 짧고 정확한 것이 길고 그럴듯한 것보다 낫다."""
+  · 전체 1,200자 안쪽. 짧고 정확한 것이 길고 그럴듯한 것보다 낫다.
+
+마지막으로, 글 맨 끝에 아래 모양을 그대로 붙여라.
+'할 것' 중에서 **효과를 숫자로 확인할 수 있는 것 하나**만 고른다.
+이건 사장이 읽을 글이 아니라 실험 대장에 올릴 기록이다. 글자 하나라도
+모양이 다르면 대장에 안 올라가고 그냥 버려진다.
+
+<<실험제안>>
+제목: 한 줄. 25자 안쪽.
+이유: 어느 숫자 때문인지. 한 문장.
+할일: 사람이 실제로 손댈 일. 한 문장.
+지표: 아래 목록에서 하나를 골라 영어 그대로 적는다.
+<<끝>>
+
+고를 수 있는 지표 (이 중 하나만, 철자 그대로):
+  users returningUsers returnRate sessions pageViews
+  engagedRate avgSessionSec signUp signUpRate watchlistAdd
+
+붙이지 말아야 할 때 — 대장에 이미 같은 제안이 있을 때, 이번 주 숫자에서
+새로 나온 것이 없을 때. 억지로 만드는 것보다 안 내는 것이 낫다."""
 
 
-def build_prompt(doc):
-    return PROMPT.format(facts=facts_text(doc))
+def build_prompt(doc, exp=None):
+    facts = facts_text(doc)
+    if exp is not None:
+        import experiments
+        facts += "\n" + experiments.text_for_model(exp, doc.get("weeks") or [])
+    return PROMPT.format(facts=facts)
+
+
+EXP_RE = re.compile(r"<<\s*실험제안\s*>>(.*?)<<\s*끝\s*>>", re.S)
+
+
+def take_proposal(text):
+    """모델 글 끝에 붙은 제안 블록을 떼어 낸다. (남은 글, 제안 또는 None)
+
+    떼어 내는 이유 — 이 블록은 기계가 읽을 것이지 사장이 읽을 것이
+    아니다. 그대로 두면 보고서 끝에 꺾쇠 기호가 붙어 나간다."""
+    m = EXP_RE.search(text or "")
+    if not m:
+        return (text or "").strip(), None
+    # 두 번 붙여 보내는 경우가 있다. 첫 것만 읽되, 본문에서는 전부 지운다 —
+    # 하나라도 남으면 사장 화면에 꺾쇠가 보인다.
+    rest = EXP_RE.sub("", text).strip()
+    got = {}
+    for ln in m.group(1).splitlines():
+        if ":" not in ln:
+            continue
+        k, v = ln.split(":", 1)
+        got[k.strip().lstrip("·-*• ").strip()] = v.strip()
+    if not all(got.get(k) for k in ("제목", "이유", "할일", "지표")):
+        log("· 제안 블록이 모양에 안 맞아 버린다:", json.dumps(got, ensure_ascii=False))
+        return rest, None
+    return rest, got
+
+
+def exp_block(exp, fresh=None, done=None):
+    """보고서 맨 아래 실험 대장. 제안만 하고 끝내지 않기 위한 칸이다.
+
+    칸이 하나 비어 있다고 보고서 전체가 못 나가면 안 된다. 그래서
+    대장에서 꺼내는 값은 전부 .get 으로 읽는다."""
+    items = exp.get("items") or []
+    live = [x for x in items if x.get("status") == "진행중"]
+    wait = [x for x in items if x.get("status") == "제안됨"
+            and (not fresh or x.get("id") != fresh.get("id"))]
+    if not (live or wait or done or fresh):
+        return ""
+    L = ["■ 실험 대장"]
+    for it in (done or []):
+        r = it.get("result") or {}
+        L.append(f"  [끝남 · {r.get('verdict', '?')}] {it.get('title')}")
+        tail = f"  ({r['pct']:+.0f}%)" if r.get("pct") is not None else ""
+        L.append(f"     {it.get('metricLabel')}  {r.get('base')} → {r.get('now')}{tail}")
+    for it in live:
+        L.append(f"  [하는 중] {it.get('title')}")
+        L.append(f"     볼 지표: {it.get('metricLabel')} (시작값 {it.get('baseValue')})")
+    for it in wait:
+        L.append(f"  [아직 안 함] {it.get('id')} · {it.get('title')}")
+    if fresh:
+        L.append(f"  [새 제안] {fresh.get('id')} · {fresh.get('title')}")
+        L.append(f"     왜: {fresh.get('why')}")
+        L.append(f"     할 일: {fresh.get('action')}")
+        L.append(f"     볼 지표: {fresh.get('metricLabel')} (지금 {fresh.get('baseValue')})")
+    if fresh or wait:
+        nums = [str(x.get("id")) for x in ([fresh] if fresh else []) + wait]
+        ids = (nums[0] + " 을" if len(nums) == 1
+               else " · ".join(nums) + " 중 하나를")
+        L.append("  ▸ 했으면 알려주세요 — GitHub Actions ▸ '주간 성과 보고' ▸")
+        L.append(f"    Run workflow ▸ '실행 표시' 칸에 {ids} 적으면")
+        L.append("    다음 주부터 효과를 재기 시작합니다.")
+    return "\n".join(L)
 
 
 def generate(prompt):
@@ -410,21 +697,49 @@ def main():
                 " — 먼저 scripts/ga4_data.py --write 를 돌려라")
             return 2
 
+    import experiments
+    weeks = doc.get("weeks") or []
+
     if a.dry:
-        print(build_prompt(doc))
+        # 공짜로 보는 것이므로 대장을 건드리지 않는다 — 판정은 진짜
+        # 보고서를 쓸 때 한 번만 일어나야 한다.
+        print(build_prompt(doc, experiments.load()))
         return 0
 
-    weeks = doc.get("weeks") or []
     if not weeks:
         log("❌ 숫자가 한 주도 없다 — 보고서를 만들지 않는다")
         return 2
 
-    text, usage = generate(build_prompt(doc))
+    # ① 지난주에 시작한 실험이 있으면 이번 숫자에 대 본다.
+    exp = experiments.load()
+    done = experiments.review(exp, weeks)
+    if done:
+        experiments.save(exp)
+        log(f"· 실험 {len(done)}건 판정: "
+            + ", ".join(f"{x['title']}={x['result']['verdict']}" for x in done))
+
+    text, usage = generate(build_prompt(doc, exp))
     if not text:
         log("❌ 빈 응답")
         return 3
-    # 숫자판이 먼저, 해석이 뒤. 숫자는 코드가 찍었으므로 틀릴 수 없다.
-    text = metrics_block(doc) + "\n\n" + text
+
+    # ② 모델이 낸 새 제안을 대장에 올린다. 모양이 안 맞으면 그냥 버린다 —
+    #    보고서가 못 나가는 것보다 제안 하나를 잃는 편이 낫다.
+    text, got = take_proposal(text)
+    fresh = None
+    if got:
+        fresh, why = experiments.propose(exp, got["제목"], got["이유"],
+                                         got["지표"], got["할일"], weeks[-1])
+        if fresh:
+            experiments.save(exp)
+            log(f"· 새 실험 {fresh['id']} 대장에 올림 · 지표 {fresh['metricLabel']}")
+        else:
+            log(f"· 제안을 올리지 않았다: {why}")
+
+    # 숫자판이 먼저, 해석이 뒤, 대장이 맨 끝.
+    # 숫자는 코드가 찍었으므로 틀릴 수 없다.
+    tail = exp_block(exp, fresh, done)
+    text = metrics_block(doc) + "\n\n" + text + (("\n\n" + tail) if tail else "")
 
     cur = weeks[-1]
     # 보고서도 저장소에 두지 않는다 — 전략과 숫자가 함께 적혀 있다.

@@ -52,7 +52,13 @@ def load():
     """실험 대장도 저장소가 아니라 Firestore 다 — 무엇을 시험 중인지가
     사업 전략이라서 공개 저장소에 둘 것이 아니다."""
     import ga4_store
-    return ga4_store.load("experiments", {"items": []})
+    doc = ga4_store.load("experiments", {"items": []})
+    # 저장된 문서에 items 가 없을 수도 있다(처음이거나, 다른 모양으로
+    # 저장된 적이 있거나). 여기서 한 번 채워 두면 아래 모든 함수가
+    # doc["items"] 를 그냥 써도 된다.
+    if not isinstance(doc.get("items"), list):
+        doc["items"] = []
+    return doc
 
 
 def save(doc):
@@ -91,8 +97,16 @@ def propose(doc, title, why, metric, action, week):
     live = [x for x in doc["items"] if x["status"] in ("제안됨", "진행중")]
     if any(x["title"].strip() == title.strip() for x in live):
         return None, "같은 제안이 이미 대장에 있다"
+    # 번호는 '지금 몇 개냐' 가 아니라 '지금까지 가장 큰 번호' 에서 잇는다.
+    # 개수로 매기면 중간에 하나를 지웠을 때 이미 쓴 번호를 다시 내주고,
+    # 그러면 보고서에 적어 보낸 exp_3 이 다른 실험을 가리키게 된다.
+    used = []
+    for x in doc["items"]:
+        tail = str(x.get("id", "")).rsplit("_", 1)[-1]
+        if tail.isdigit():
+            used.append(int(tail))
     item = {
-        "id": f"exp_{len(doc['items']) + 1}",
+        "id": f"exp_{(max(used) + 1) if used else 1}",
         "title": title.strip(),
         "why": why.strip(),
         "action": action.strip(),
@@ -114,7 +128,6 @@ def review(doc, weeks):
     if not weeks:
         return []
     cur = weeks[-1]
-    by_week = {w.get("week"): w for w in weeks}
     done = []
     for it in doc["items"]:
         if it["status"] != "진행중" or not it.get("startedWeek"):

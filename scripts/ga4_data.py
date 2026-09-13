@@ -112,6 +112,26 @@ DEVICE_NAMES = {
     "tablet": "태블릿",
     "smart tv": "TV",
 }
+# 종목 번호는 사람이 못 읽는다. 005930 은 '삼성전자' 여야 한다.
+# 이름표가 없으면 보고서에 숫자 여섯 자리가 그대로 나가고, 그러면
+# "어느 종목이 인기인가" 라는 질문에 답을 못 한다.
+_TICKER_NAMES = None
+
+
+def ticker_name(code):
+    """'005930' → '삼성전자'. 모르면 번호를 그대로 돌려준다."""
+    global _TICKER_NAMES
+    if _TICKER_NAMES is None:
+        _TICKER_NAMES = {}
+        try:
+            f = Path(__file__).resolve().parent.parent / "data" / "listed_universe.json"
+            _TICKER_NAMES = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    code = str(code or "").strip()
+    return _TICKER_NAMES.get(code) or code
+
+
 SOURCE_NAMES = {
     "(direct)": "주소 직접·즐겨찾기",
     "google": "구글",
@@ -119,6 +139,22 @@ SOURCE_NAMES = {
     "daum": "다음",
     "t.co": "X(트위터)",
     "bing": "빙",
+}
+
+# analytics.js 가 entry_source 에 싣는 값들. SOURCE_NAMES 와 이름이
+# 비슷하지만 다른 표다 — 이쪽은 우리가 직접 정한 값이라 (direct) 가 아니라
+# direct 이고, x·instagram 처럼 우리가 묶어 둔 이름이 들어온다.
+ENTRY_NAMES = {
+    "direct": "주소 직접·즐겨찾기",
+    "internal": "사이트 안에서 이동",
+    "naver": "네이버",
+    "google": "구글",
+    "daum": "다음·카카오",
+    "bing": "빙",
+    "x": "X(트위터)",
+    "instagram": "인스타그램",
+    "facebook": "페이스북",
+    "(not set)": "알 수 없음",
 }
 
 

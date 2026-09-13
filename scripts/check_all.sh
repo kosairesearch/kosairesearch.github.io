@@ -73,6 +73,7 @@ run "브리핑 뉴스"   python3 scripts/tests/news_data_test.py
 run "금통위 일정"   python3 scripts/tests/bok_schedule_test.py
 run "GA4 수집"     python3 scripts/tests/ga4_data_test.py
 run "성과 보고"    python3 scripts/tests/marketing_report_test.py
+run "마케팅 MCP"  python3 scripts/tests/marketing_mcp_test.py
 run "집계 제외"    node tests/analytics-optout.test.mjs
 run "행동 기록"    node tests/analytics-events.test.mjs
 run "브리핑 생성"   python3 scripts/test_brief_gen.py
