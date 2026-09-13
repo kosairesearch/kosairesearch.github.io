@@ -547,6 +547,10 @@ body::after,body::before{display:none}
   KOSi18n.register(D, fix);
 })();
 </script>
+<style>/* lenis 가 요구하는 최소 CSS */
+html.lenis,html.lenis body{height:auto}
+.lenis [data-lenis-prevent]{overscroll-behavior:contain}
+.lenis.lenis-smooth iframe{pointer-events:none}</style>
 </head>
 <body>
 <div class="lp-bg"><canvas id="lpCanvas"></canvas></div>
@@ -1337,5 +1341,9 @@ try{
 }catch(e){ console.error('PRISM_ERR', e && (e.stack||e.message||String(e))); }
 </script>
 <style>#stgBadge{position:fixed;left:12px;bottom:12px;z-index:99999;font:600 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.08em;color:#0b1020;background:#ffd34d;padding:6px 10px;border-radius:999px;box-shadow:0 2px 10px rgba(0,0,0,.4);pointer-events:none}</style><style>#stgLinks{position:fixed;left:92px;bottom:12px;z-index:99999;font:600 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.06em}#stgLinks a{color:#cfe0ff;background:rgba(12,18,36,.82);border:1px solid rgba(160,190,255,.28);padding:6px 10px;border-radius:999px;text-decoration:none}</style><div id="stgBadge">STAGING</div><div id="stgLinks"><a href="pricing.html">요금제</a></div>
+<!-- 부드러운 스크롤. 안 뜨거나 손가락 화면이면 스스로 비켜선다 —
+     smooth-scroll.js 맨 위 설명 참고. 빼려면 이 두 줄만 지우면 된다. -->
+<script src="lenis.js?v=3a0cb7e8"></script>
+<script src="smooth-scroll.js?v=b8330e73"></script>
 </body>
 </html>

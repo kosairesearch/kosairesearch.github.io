@@ -571,6 +571,10 @@ KOSi18n.register({
   border-radius:50%;animation:spin .7s linear infinite;vertical-align:-3px;margin-right:7px}
 @keyframes spin{to{transform:rotate(360deg)}}
 </style>
+<style>/* lenis 가 요구하는 최소 CSS */
+html.lenis,html.lenis body{height:auto}
+.lenis [data-lenis-prevent]{overscroll-behavior:contain}
+.lenis.lenis-smooth iframe{pointer-events:none}</style>
 </head>
 <body>
 <div class="kos-staging-bar">
@@ -732,5 +736,9 @@ if(window.KOSi18n) KOSi18n.register({
 
 <script type="module" src="checkout.js?v=031161e8"></script>
 <script type="module" src="auth-state.js?v=6df6d66c"></script>
+<!-- 부드러운 스크롤. 안 뜨거나 손가락 화면이면 스스로 비켜선다 —
+     smooth-scroll.js 맨 위 설명 참고. 빼려면 이 두 줄만 지우면 된다. -->
+<script src="lenis.js?v=3a0cb7e8"></script>
+<script src="smooth-scroll.js?v=b8330e73"></script>
 </body>
 </html>
