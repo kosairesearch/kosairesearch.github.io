@@ -97,9 +97,8 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
     radial-gradient(ellipse 52% 42% at 96% 6%, rgba(151,71,255,.30), transparent 64%),
     radial-gradient(ellipse 80% 55% at 50% 104%, rgba(48,90,180,.30), transparent 70%),
     linear-gradient(180deg,#10121d 0%, #0d0e18 60%, #0a0b13 100%)}
-body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
-  background-image:linear-gradient(to right, rgba(255,255,255,.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255,255,255,.06) 1px, transparent 1px);background-size:48px 48px}
+/* 배경 격자(body::before 48px)는 뺐다 — 2026-09-14 사장 지시.
+   스테이징에서 먼저 빼 보고 괜찮아서 실사이트도 같이 뺐다. */
 
 .glass{background:rgba(255,255,255,0.62);border:1px solid rgba(255,255,255,0.55);
   box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.6);
