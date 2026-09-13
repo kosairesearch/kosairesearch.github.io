@@ -49,19 +49,16 @@ def log(*a):
 
 
 def load():
-    if not FILE.exists():
-        return {"items": []}
-    try:
-        return json.loads(FILE.read_text(encoding="utf-8"))
-    except Exception as e:
-        log(f"· 실험 대장을 읽지 못했다(새로 쓴다): {e}")
-        return {"items": []}
+    """실험 대장도 저장소가 아니라 Firestore 다 — 무엇을 시험 중인지가
+    사업 전략이라서 공개 저장소에 둘 것이 아니다."""
+    import ga4_store
+    return ga4_store.load("experiments", {"items": []})
 
 
 def save(doc):
-    FILE.parent.mkdir(parents=True, exist_ok=True)
+    import ga4_store
     doc["updatedAt"] = datetime.datetime.now(KST).isoformat(timespec="seconds")
-    FILE.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
+    ga4_store.save("experiments", doc)
 
 
 def value_of(week, key):
@@ -203,10 +200,8 @@ def main():
         if not it:
             log(f"❌ {a.start} 가 없다")
             return 2
-        weeks = []
-        wf = ROOT / "data" / "ga4" / "weekly.json"
-        if wf.exists():
-            weeks = json.loads(wf.read_text(encoding="utf-8")).get("weeks") or []
+        import ga4_store
+        weeks = ga4_store.load("weekly").get("weeks") or []
         it["status"] = "진행중"
         it["startedWeek"] = weeks[-1]["week"] if weeks else None
         # 시작 시점의 값으로 다시 잡는다 — 제안한 주와 실행한 주가 다를 수 있다.
