@@ -75,9 +75,24 @@ def patch(path, check=False):
         return None, ["foot-bottom 을 못 찾음"]
     indent = m.group(1)
     new_block = block(indent)
+
+    # 표시(BIZ:START)가 없는데 .biz 덩어리가 이미 있으면, 손으로 넣어 둔
+    # 옛 것이다. 스테이징 15개가 [상호]·[000-00-00000] 같은 자리표시자를
+    # 그대로 달고 있었다. 걷어내고 아래에서 새로 넣는다. 안 걷어내면
+    # 한 페이지에 사업자 정보가 두 벌 생긴다.
+    if MARK_START not in s and '<div class="biz">' in s:
+        s, n = re.subn(r'^[ \t]*<div class="biz">.*?</div>\n', "", s,
+                       count=1, flags=re.S | re.M)
+        if n:
+            notes.append("옛 덩어리 제거")
+            m = re.search(r'^([ \t]*)<div class="foot-bottom"', s, re.M)
+
     if MARK_START in s:
-        s = re.sub(re.escape(MARK_START) + r".*?" + re.escape(MARK_END) + r"\n",
-                   new_block, s, flags=re.S)
+        # 앞의 공백까지 같이 먹어야 한다. 안 그러면 남은 들여쓰기 위에
+        # new_block 이 제 들여쓰기를 또 붙여서, 돌릴 때마다 표시 줄이
+        # 여섯 칸씩 밀려난다(실사이트가 이미 두 번 밀려 있었다).
+        s = re.sub(r"^[ \t]*" + re.escape(MARK_START) + r".*?" + re.escape(MARK_END) + r"\n",
+                   new_block, s, flags=re.S | re.M)
         notes.append("마크업 갱신")
     else:
         s = s[:m.start()] + new_block + s[m.start():]
@@ -116,18 +131,28 @@ def patch(path, check=False):
 
 def main():
     check = "--check" in sys.argv
-    pages = sorted(p for p in ROOT.glob("*.html")
-                   if 'class="foot-bottom"' in p.read_text(encoding="utf-8"))
+    # 실사이트와 스테이징을 같이 훑는다. 스테이징만 빠져 있던 탓에 그쪽
+    # 푸터가 자리표시자([상호]·[000-00-00000])인 채로 오래 남아 있었다.
+    cand = sorted(ROOT.glob("*.html")) + sorted(ROOT.glob("staging/*.html"))
+    pages = [p for p in cand
+             if 'class="foot-bottom"' in p.read_text(encoding="utf-8")]
     changed = 0
     for p in pages:
         did, notes = patch(p, check)
+        rel = p.relative_to(ROOT).as_posix()
         if did is None:
-            print(f"  ❌ {p.name}: {notes[0]}")
+            print(f"  ❌ {rel}: {notes[0]}")
             continue
         if did:
             changed += 1
-        print(f"  {'·' if did else ' '} {p.name:22} {' / '.join(notes)}")
+        print(f"  {'·' if did else ' '} {rel:28} {' / '.join(notes)}")
     print(f"\n{'검사만 — ' if check else ''}푸터 {len(pages)}개 중 {changed}개 갱신")
+    # --check 는 어긋난 곳이 있으면 실패로 끝낸다. check_all.sh 가 이걸 보고
+    # 막는다. 스크립트만 있고 아무도 안 돌려서, 스테이징 15개가 [상호]·
+    # [000-00-00000] 같은 자리표시자를 그대로 달고 오래 서 있었다.
+    if check and changed:
+        print("  → 푸터가 원본과 어긋난다. python3 scripts/patch_biz_footer.py 를 돌려라.")
+        return 1
     return 0
 
 
