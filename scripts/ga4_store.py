@@ -58,8 +58,35 @@ def _client():
         return None
 
 
+_WARNED = set()
+
+
+def _dir():
+    """로컬 파일을 둘 곳. KOSAI_GA4_DIR 로 딴 데를 가리킬 수 있다 —
+    시험할 때 진짜 기록을 건드리지 않으려고 있는 문이다.
+
+    이 문이 저장소 안을 가리키면 시끄럽게 알린다. data/ga4 만
+    .gitignore 에 걸려 있어서, 딴 데를 가리키면 방문자 기록이 다시
+    공개 저장소로 흘러들 수 있다 — 2026-09-13 에 이미 한 번 그랬다."""
+    box = os.environ.get("KOSAI_GA4_DIR", "").strip()
+    if not box:
+        return LOCAL
+    d = Path(box)
+    try:
+        inside = d.resolve().is_relative_to(ROOT)
+        safe = d.resolve() == LOCAL.resolve()
+    except Exception:
+        inside, safe = False, False
+    if inside and not safe and box not in _WARNED:
+        _WARNED.add(box)
+        log(f"⚠️ KOSAI_GA4_DIR 이 저장소 안({d})을 가리킨다."
+            " 이 저장소는 공개다 — 방문자 기록이 커밋되면 그대로 열린다."
+            " 저장소 밖이나 data/ga4 를 쓰라.")
+    return d
+
+
 def _local(name):
-    return LOCAL / f"{name}.json"
+    return _dir() / f"{name}.json"
 
 
 def load(name, default=None):
@@ -93,15 +120,24 @@ def save(name, doc):
             return "firestore"
         except Exception as e:
             log(f"· Firestore 쓰기 실패 — 로컬에 남긴다: {type(e).__name__} {e}")
-    LOCAL.mkdir(parents=True, exist_ok=True)
-    _local(name).write_text(json.dumps(doc, ensure_ascii=False, indent=2),
-                            encoding="utf-8")
-    return f"local:{_local(name).relative_to(ROOT)}"
+    _dir().mkdir(parents=True, exist_ok=True)
+    f = _local(name)
+    f.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
+    try:
+        return f"local:{f.relative_to(ROOT)}"
+    except ValueError:
+        return f"local:{f}"
 
 
 def where():
     """지금 어디에 저장되는지. 사람에게 보여 주는 용도."""
-    return "Firestore(비공개)" if _client() else f"로컬 파일 {LOCAL.relative_to(ROOT)}"
+    if _client():
+        return "Firestore(비공개)"
+    d = _dir()
+    try:
+        return f"로컬 파일 {d.relative_to(ROOT)}"
+    except ValueError:
+        return f"로컬 파일 {d}"
 
 
 if __name__ == "__main__":

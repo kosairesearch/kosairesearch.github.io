@@ -15,6 +15,11 @@ name: 📈 주간 성과 보고 (마케팅)
 #   페이지가 그대로 보였다. 그래서 Firestore 로 옮겼다 — 이미 있고,
 #   기본이 비공개고, 영구적이다. scripts/ga4_store.py 참고.
 #
+# 보고를 읽고 되묻고 싶을 때 — scripts/marketing_mcp.py
+#   텔레그램 보고는 한 방향이다. "네이버에서 온 사람 중 몇 명이 가입했어?"
+#   같은 되묻기는 클로드 안에서 한다. 붙이는 법은 그 파일 맨 위에 적어 뒀고,
+#   `python scripts/marketing_mcp.py --config` 가 설정을 뽑아 준다.
+#
 # 처음 한 번 해야 하는 것 (setup 을 켜고 수동 실행하면 안내가 나온다)
 #   1. GA4_PROPERTY_ID 를 GitHub 시크릿에 넣는다 (GA4 관리>속성 의 숫자 9자리)
 #   2. 구글 클라우드에서 'Google Analytics Data API' 를 켠다
@@ -41,6 +46,12 @@ on:
         description: '텔레그램으로 보낼지'
         type: boolean
         default: true
+      started:
+        description: "실행 표시 — 다 한 실험 번호 (예: exp_3). 다음 주부터 효과를 잽니다"
+        default: ''
+      dropped:
+        description: "안 하기로 한 실험 번호 (예: exp_4)"
+        default: ''
 
 permissions:
   contents: read
@@ -91,6 +102,27 @@ jobs:
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
         run: |
           python3 scripts/ga4_data.py --weeks ${{ inputs.weeks || '12' }} --write --check
+
+      # 휴대폰으로 보고를 읽다가 "그거 했다" 를 누를 수 있어야 한다.
+      # 터미널을 열어야만 표시할 수 있으면 실험 대장은 결국 안 쓰인다.
+      # ①이 실패해도 표시는 남겨야 한다. "했다"고 눌렀는데 GA4 가 말을
+      # 안 들었다는 이유로 조용히 사라지면, 다음 주에 효과를 못 잰다.
+      # 칸에 적힌 값은 env 로 넘긴다 — 쉘 명령줄에 그대로 붙이면 따옴표
+      # 하나로 명령이 바뀐다.
+      - name: 실험 대장에 표시 (번호를 적었을 때만)
+        if: ${{ !cancelled() && (inputs.started != '' || inputs.dropped != '') }}
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+          STARTED: ${{ inputs.started }}
+          DROPPED: ${{ inputs.dropped }}
+        run: |
+          if [ -n "$STARTED" ]; then
+            python3 scripts/experiments.py --start "$STARTED"
+          fi
+          if [ -n "$DROPPED" ]; then
+            python3 scripts/experiments.py --drop "$DROPPED" --why "사장이 안 하기로 함"
+          fi
+          python3 scripts/experiments.py --list 2>&1 | tee -a $GITHUB_STEP_SUMMARY
 
       # ①이 실패해도 여기까지는 온다. 받아 둔 지난 기록으로라도 보고서를
       # 쓸 수 있으면 쓴다 — 이번 주 숫자가 없으면 재료가 그렇게 말해 준다.

@@ -167,6 +167,246 @@ ok("내용이 유실되지 않는다", all(f"{i}번 문단" in "".join(sent) for
 print("\n⑪ 숫자판이 한 통에 들어간다")
 ok("숫자판만으로 한도를 넘지 않는다", len(m) < 2000, f"{len(m)}자")
 
+print("\n⑫ 행동 — 손님이 무엇을 했나")
+BEH = wk("2026-09-07", "2026-09-13", 400, 350, 50, 500, 400, 1200, 200,
+         pages=PAGES_B,
+         events=[{"eventName": "sign_up", "eventCount": 6}],
+         tickers=[{"eventName": "stock_click", "customEvent:ticker": "005930",
+                   "eventCount": 18},
+                  {"eventName": "stock_click", "customEvent:ticker": "000660",
+                   "eventCount": 11},
+                  {"eventName": "stock_click", "customEvent:ticker": "(not set)",
+                   "eventCount": 99},
+                  {"eventName": "page_view", "customEvent:ticker": "005930",
+                   "eventCount": 500}],
+         scroll=[{"customEvent:percent": "25", "eventCount": 200},
+                 {"customEvent:percent": "50", "eventCount": 150},
+                 {"customEvent:percent": "100", "eventCount": 60},
+                 {"customEvent:percent": "(not set)", "eventCount": 7}],
+         entrySource=[{"customEvent:entry_source": "naver", "eventCount": 300},
+                      {"customEvent:entry_source": "direct", "eventCount": 100}],
+         signupSource=[{"customEvent:entry_source": "naver", "eventCount": 6}],
+         signupPage=[{"customEvent:from_page": "/stock.html", "eventCount": 5},
+                     {"customEvent:from_page": "/Home.html", "eventCount": 1}],
+         landings=[{"landingPage": "/stock.html", "sessions": 300,
+                    "bounceRate": 0.72},
+                   {"landingPage": "/", "sessions": 100, "bounceRate": 0.31}],
+         leave=[{"customEvent:from_page": "/stock.html", "eventCount": 280}],
+         byVisitor=[{"newVsReturning": "returning", "pagePath": "/brief.html",
+                     "screenPageViews": 90},
+                    {"newVsReturning": "new", "pagePath": "/stock.html",
+                     "screenPageViews": 400},
+                    {"newVsReturning": "returning", "pagePath": "/Admin.html",
+                     "screenPageViews": 300}])
+
+tk = M.top_tickers(BEH)
+eq("종목 이름표를 붙인다", tk[0], ("삼성전자", 18))
+eq("큰 순서", [n for n, _ in tk], ["삼성전자", "SK하이닉스"])
+ok("stock_click 이 아닌 줄은 안 센다", all(c != 500 for _, c in tk))
+ok("(not set) 은 버린다", all(n != "(not set)" for n, _ in tk))
+eq("행동 자료가 없으면 빈 목록", M.top_tickers(A), [])
+
+eq("끝까지 읽은 비율 = 100÷25", M.read_through(BEH), (30, 200, 60))
+eq("25 가 없으면 못 잰다", M.read_through(A), None)
+eq("숫자가 아닌 칸은 버린다",
+   M.read_through(wk("x", "y", 1, 1, 1, 1, 1, 1, 1,
+                     scroll=[{"customEvent:percent": "25", "eventCount": 10},
+                             {"customEvent:percent": "(not set)",
+                              "eventCount": 999}])), (0, 10, 0))
+
+fn = M.source_funnel(BEH)
+eq("유입처 이름을 옮긴다", fn[0][0], "네이버")
+eq("들어옴·가입·전환율", (fn[0][1], fn[0][2], round(fn[0][3], 1)), (300, 6, 2.0))
+eq("가입이 없는 유입처는 0", (fn[1][0], fn[1][2]), ("주소 직접·즐겨찾기", 0))
+
+bv = M.by_visitor(BEH)
+eq("재방문이 본 콘텐츠", bv["재방문"], [("모닝 브리핑", 90)])
+eq("신규가 본 콘텐츠", bv["신규"], [("종목 리포트", 400)])
+ok("관리자 페이지는 취향이 아니다",
+   all("관리자" not in n for n, _ in bv["재방문"]))
+
+ok("행동 자료가 있는지 안다", M.has_behavior(BEH) and not M.has_behavior(A))
+
+mb = M.metrics_block({"weeks": [B, BEH], "health": {"ok": True}})
+ok("숫자판에 종목 이름이 나온다", "삼성전자 18회" in mb, mb)
+ok("숫자판에 완독 비율이 나온다", "끝까지 읽음" in mb and "30%" in mb, mb)
+ok("이름표와 숫자가 달라붙지 않는다", "끝까지 읽음 " in mb, mb)
+eq("칸보다 긴 이름도 한 칸은 띄운다", M._pad("아주아주긴이름표입니다", 4),
+   "아주아주긴이름표입니다 ")
+ok("완독 비율의 분모를 밝힌다", "내려 읽기 시작" in mb, mb)
+ok("행동 자료가 없으면 그 칸이 아예 없다",
+   "손님이 무엇을 봤나" not in M.metrics_block(GOOD))
+
+ft = M.facts_text({"weeks": [B, BEH], "health": {"ok": True}})
+for want in ("가장 많이 눌린 종목", "얼마나 내려 읽나", "유입처별 들어옴 → 가입",
+             "어느 페이지에서 가입을 눌렀나", "처음 열린 페이지",
+             "어느 페이지에서 떠났나", "누가 무엇을 보나"):
+    ok(f"재료에 '{want}' 가 있다", want in ft)
+ok("그냥 나간 비율을 %로 적는다", "그냥 나감 72%" in ft, ft)
+ok("완독률을 방문자로 나누지 말라고 일러 준다", "방문자 수로 나눠 말하지 마라" in ft)
+ok("행동 자료가 없으면 그 칸을 안 만든다",
+   "가장 많이 눌린 종목" not in M.facts_text(GOOD))
+
+MISS = wk("2026-09-07", "2026-09-13", 10, 9, 1, 10, 5, 20, 30,
+          pages=PAGES_B, _missing={"scroll": "400 …", "tickers": "400 …"})
+ok("못 받은 것은 못 받았다고 적는다",
+   "[못 받은 행동 자료]" in M.facts_text({"weeks": [MISS]}))
+ok("못 받은 것을 0 으로 말하지 말라고 일러 준다",
+   "0 이었다고 말하지 마라" in M.facts_text({"weeks": [MISS]}))
+
+print("\n⑬ 실험 제안 블록")
+BODY = "■ 한 줄로 말하면\n좋았다.\n"
+GOTTEXT = BODY + "<<실험제안>>\n제목: 가입 버튼\n이유: 가입이 적다\n" \
+                 "할일: 버튼을 넣는다\n지표: signUpRate\n<<끝>>"
+rest, got = M.take_proposal(GOTTEXT)
+eq("본문만 남는다", rest, BODY.strip())
+eq("제목을 읽는다", got["제목"], "가입 버튼")
+eq("지표를 읽는다", got["지표"], "signUpRate")
+ok("꺾쇠가 보고서에 남지 않는다", "<<" not in rest)
+
+rest2, got2 = M.take_proposal(BODY)
+eq("블록이 없으면 글 그대로", rest2, BODY.strip())
+eq("블록이 없으면 제안도 없다", got2, None)
+
+rest3, got3 = M.take_proposal(BODY + "<<실험제안>>\n제목: 반쪽\n<<끝>>")
+eq("칸이 빠지면 버린다", got3, None)
+ok("버려도 본문은 살린다", rest3 == BODY.strip())
+
+rest4, got4 = M.take_proposal(BODY + "<< 실험제안 >>\n제목: ㄱ\n이유: ㄴ\n"
+                                     "할일: ㄷ\n지표: users\n<< 끝 >>")
+ok("꺾쇠 안 띄어쓰기를 봐준다", got4 is not None and got4["지표"] == "users")
+
+BLK = "<<실험제안>>\n제목: {}\n이유: ㄴ\n할일: ㄷ\n지표: users\n<<끝>>\n"
+rest5, got5 = M.take_proposal(BODY + BLK.format("첫째") + BLK.format("둘째"))
+eq("두 번 붙여 보내면 첫 것만 읽는다", got5["제목"], "첫째")
+ok("두 번째 블록도 본문에서 지운다", "<<" not in rest5 and "둘째" not in rest5, rest5)
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+import experiments as X
+
+EXP = {"items": [
+    {"id": "exp_1", "title": "끝난 것", "status": "끝남",
+     "metricLabel": "가입 전환율(%)",
+     "result": {"verdict": "효과 있음", "base": 0.9, "now": 1.4, "pct": 55.6}},
+    {"id": "exp_2", "title": "하는 중", "status": "진행중",
+     "metricLabel": "방문자 수", "baseValue": 382},
+    {"id": "exp_3", "title": "안 한 것", "status": "제안됨",
+     "metricLabel": "방문자 수", "baseValue": 382},
+]}
+blk = M.exp_block(EXP, None, [EXP["items"][0]])
+ok("끝난 실험의 판정을 적는다", "[끝남 · 효과 있음]" in blk, blk)
+ok("하는 중을 적는다", "[하는 중] 하는 중" in blk, blk)
+ok("안 한 것의 번호를 적는다", "exp_3" in blk, blk)
+ok("어떻게 표시하는지 알려 준다", "Run workflow" in blk, blk)
+eq("대장이 비면 칸을 안 만든다", M.exp_block({"items": []}), "")
+
+FRESH = {"id": "exp_4", "title": "새것", "why": "왜냐면", "action": "이걸 한다",
+         "metricLabel": "가입 건수", "baseValue": 6}
+blk2 = M.exp_block(EXP, FRESH, [])
+ok("새 제안에 할 일이 적힌다", "이걸 한다" in blk2, blk2)
+ok("새 제안에 볼 지표가 적힌다", "가입 건수" in blk2, blk2)
+
+d0 = {"items": []}
+w0 = dict(BEH)
+it, why = X.propose(d0, "ㄱ", "ㄴ", "signUp", "ㄷ", w0)
+eq("제안이 대장에 올라간다", (it["id"], it["baseValue"]), ("exp_1", 6))
+eq("같은 제목은 두 번 안 올라간다", X.propose(d0, "ㄱ", "x", "users", "y", w0)[0], None)
+eq("모르는 지표는 안 올라간다", X.propose(d0, "ㄴ", "x", "몰라", "y", w0)[0], None)
+
+d0["items"][0]["status"] = "진행중"
+d0["items"][0]["startedWeek"] = "2026-08-31"
+d0["items"][0]["baseValue"] = 4
+done = X.review(d0, [B, BEH])
+eq("시작한 다음 주부터 판정한다", (done[0]["result"]["verdict"], done[0]["status"]),
+   ("효과 있음", "끝남"))
+eq("판정한 것은 다시 판정하지 않는다", X.review(d0, [B, BEH]), [])
+
+d1 = {"items": [{"id": "exp_9", "title": "x", "status": "진행중",
+                 "metric": "users", "metricLabel": "방문자 수",
+                 "baseValue": 400, "startedWeek": "2026-09-07"}]}
+eq("시작한 그 주에는 판정하지 않는다", X.review(d1, [B, BEH]), [])
+
+print("\n⑭ 보고서 한 바퀴 — 판정 → 글 → 제안 → 저장 (모델은 가짜)")
+import contextlib
+import io
+import os
+import tempfile
+
+# 진짜 Firestore 도 저장소의 data/ga4 도 건드리지 않는다.
+os.environ["KOSAI_GA4_DIR"] = tempfile.mkdtemp(prefix="report-loop-")
+os.environ.pop("GCP_SA_KEY", None)
+os.environ.pop("GOOGLE_APPLICATION_CREDENTIALS", None)
+os.environ.pop("GITHUB_STEP_SUMMARY", None)      # CI 요약을 더럽히지 않는다
+import ga4_store
+import experiments as X2
+
+ga4_store.save("weekly", {"weeks": [A, B], "health": {"ok": True, "problems": []}})
+
+
+class FakeUsage:
+    input_tokens, output_tokens = 3000, 1000
+
+
+SAID = ("■ 한 줄로 말하면\n  손님은 늘었습니다.\n\n"
+        "■ 다음 주에 할 것\n  가입 버튼을 넣습니다.\n\n"
+        "<<실험제안>>\n제목: 리포트에 가입 버튼\n이유: 리포트는 481회 보는데 가입이 4건\n"
+        "할일: stock.html 본문 끝에 버튼을 넣는다\n지표: signUpRate\n<<끝>>")
+_real_generate = M.generate
+M.generate = lambda prompt: (SAID, FakeUsage())
+sys.argv = ["marketing_report.py"]
+
+buf = io.StringIO()
+with contextlib.redirect_stdout(buf):
+    rc = M.main()
+out = buf.getvalue()
+eq("정상으로 끝난다", rc, 0)
+ok("숫자판이 맨 앞", out.startswith("📊 KOSAI 주간 성과 보고"), out[:60])
+ok("모델 해설이 가운데", "손님은 늘었습니다" in out)
+ok("실험 대장이 맨 뒤", out.rstrip().rsplit("■", 1)[-1].startswith(" 실험 대장"), out[-300:])
+ok("꺾쇠가 사장 화면에 안 나간다", "<<" not in out, out[-300:])
+ok("새 제안이 보고서에 적힌다", "[새 제안] exp_1" in out, out[-400:])
+ok("어떻게 표시하는지 알려 준다", "Run workflow" in out)
+
+saved = ga4_store.load("reports", {"items": []})
+eq("보고서가 저장된다", len(saved.get("items") or []), 1)
+eq("저장된 글이 화면과 같다", saved["items"][0]["text"].strip(), out.strip())
+eq("어느 주 것인지 적힌다", saved["items"][0]["week"], B["week"])
+
+led = X2.load()
+eq("제안이 대장에 올라간다", len(led["items"]), 1)
+eq("아직 실행 전이다", led["items"][0]["status"], "제안됨")
+eq("시작값을 지난주 값으로 잡는다", led["items"][0]["baseValue"],
+   X2.value_of(B, "signUpRate"))
+
+# 같은 주에 또 돌려도 제안이 겹쳐 쌓이지 않는다
+with contextlib.redirect_stdout(io.StringIO()):
+    M.main()
+eq("같은 제안이 두 번 안 쌓인다", len(X2.load()["items"]), 1)
+eq("보고서도 같은 주 것은 하나만", len(ga4_store.load("reports")["items"]), 1)
+
+# 사장이 '했다'고 표시하고, 다음 주 숫자가 들어오면 판정된다
+led = X2.load()
+led["items"][0]["status"] = "진행중"
+led["items"][0]["startedWeek"] = B["week"]
+led["items"][0]["baseValue"] = 1.0
+X2.save(led)
+
+NEXT = wk("2026-09-07", "2026-09-13", 500, 420, 80, 600, 500, 1500, 240,
+          pages=PAGES_B, events=[{"eventName": "sign_up", "eventCount": 20}])
+ga4_store.save("weekly", {"weeks": [A, B, NEXT], "health": {"ok": True}})
+M.generate = lambda prompt: ("■ 한 줄로 말하면\n  효과가 있었습니다.", FakeUsage())
+buf2 = io.StringIO()
+with contextlib.redirect_stdout(buf2):
+    M.main()
+out2 = buf2.getvalue()
+led = X2.load()
+eq("다음 주에 판정된다", led["items"][0]["status"], "끝남")
+eq("효과를 재서 적는다", led["items"][0]["result"]["verdict"], "효과 있음")
+ok("보고서에 결과가 보인다", "[끝남 · 효과 있음]" in out2, out2[-400:])
+ok("재료에도 실려 모델이 짚을 수 있다",
+   "실험 대장" in M.build_prompt(ga4_store.load("weekly"), X2.load()))
+M.generate = _real_generate
+
 print("\n" + "=" * 52)
 print(f"PASS {P}  FAIL {F}")
 sys.exit(1 if F else 0)
