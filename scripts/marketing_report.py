@@ -29,6 +29,13 @@ KST = datetime.timezone(datetime.timedelta(hours=9))
 
 MODEL = os.getenv("MARKETING_MODEL", "claude-opus-5")
 MAX_TOKENS = 4000
+# 100만 토큰당 달러 (입력, 출력). generate_brief.py 와 같은 표다.
+PRICES = {
+    "claude-opus-5": (5.0, 25.0),
+    "claude-sonnet-5": (3.0, 15.0),
+    "claude-haiku-4-5": (1.0, 5.0),
+}
+USD_KRW = float(os.getenv("BRIEF_USD_KRW", "1400"))
 TG_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TG_CHAT = os.getenv("TELEGRAM_CHAT_ID", "")
 
@@ -274,8 +281,18 @@ def main():
 
     if a.send:
         log("· 텔레그램 " + ("보냄" if send_telegram(text) else "실패"))
+    # 얼마 들었는지는 한 번 보고 끝낼 것이 아니라 매주 눈에 보여야 한다.
+    # 조용히 새는 비용은 아무도 안 본다.
     if usage:
-        log(f"· 입력 {usage.input_tokens:,} / 출력 {usage.output_tokens:,} 토큰")
+        pin, pout = PRICES.get(MODEL, (0.0, 0.0))
+        usd = (usage.input_tokens * pin + usage.output_tokens * pout) / 1e6
+        line = (f"입력 {usage.input_tokens:,} / 출력 {usage.output_tokens:,} 토큰 · "
+                f"${usd:.3f} (약 {usd * USD_KRW:,.0f}원)")
+        log("· " + line)
+        sm = os.environ.get("GITHUB_STEP_SUMMARY")
+        if sm:
+            with open(sm, "a", encoding="utf-8") as f:
+                f.write(f"\n\n_이번 보고 비용 — {line}_\n")
     return 0
 
 
