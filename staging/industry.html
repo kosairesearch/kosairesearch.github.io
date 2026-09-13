@@ -85,6 +85,13 @@ setTimeout(function(){ document.documentElement.classList.remove('kos-locked'); 
   --shadow-2:0 1px 0 rgba(0,0,0,.2),0 10px 24px rgba(0,0,0,.4);
 }
 *{box-sizing:border-box}
+/* 글을 끌어 잡았을 때 — 브라우저 기본 파란 박스 대신 회색.
+   글자색은 건드리지 않는다. 색이 있는 숫자(등락률 빨강·파랑)까지
+   검게 만들면 무슨 값인지 알 수 없게 된다. */
+::selection{background:rgba(0,0,0,.14)}
+::-moz-selection{background:rgba(0,0,0,.14)}
+[data-theme="dark"] ::selection{background:rgba(255,255,255,.24)}
+[data-theme="dark"] ::-moz-selection{background:rgba(255,255,255,.24)}
 html{scroll-behavior:smooth;scrollbar-gutter:stable}
 body{margin:0;font-family:var(--font-sans);color:var(--fg-1);background:#f2f3f5;
   -webkit-font-smoothing:antialiased;min-height:100vh;position:relative;font-variant-numeric:tabular-nums}
