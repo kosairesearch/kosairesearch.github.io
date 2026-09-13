@@ -15,6 +15,15 @@ name: 📈 주간 성과 보고 (마케팅)
 #   페이지가 그대로 보였다. 그래서 Firestore 로 옮겼다 — 이미 있고,
 #   기본이 비공개고, 영구적이다. scripts/ga4_store.py 참고.
 #
+# 보고는 어디로 가나 — 클로드의 마케팅 창
+#   월요일 10:00 KST 에 루틴이 마케팅 창을 하나 열고 "지난주 보고" 를
+#   시킨다. 거기서 표로 읽고 그 자리에서 되물으면 된다.
+#   이 워크플로(09:00)는 그보다 한 시간 앞서 숫자를 받아 두는 일을 한다.
+#   순서가 뒤집히면 마케팅 창이 지지난주 숫자를 읽게 된다.
+#
+#   텔레그램은 이제 안 보낸다. 한 방향이라 되물을 수 없고, 표가 깨져서
+#   읽기 힘들다고 사장이 말했다. 보내고 싶으면 수동 실행에서 send 를 켜라.
+#
 # 보고를 읽고 되묻고 싶을 때 — scripts/marketing_mcp.py
 #   텔레그램 보고는 한 방향이다. "네이버에서 온 사람 중 몇 명이 가입했어?"
 #   같은 되묻기는 클로드 안에서 한다. 붙이는 법은 그 파일 맨 위에 적어 뒀고,
@@ -43,9 +52,9 @@ on:
         description: '몇 주치를 받을지'
         default: '12'
       send:
-        description: '텔레그램으로 보낼지'
+        description: '텔레그램으로도 보낼지 (평소엔 꺼 둔다 — 보고는 클로드 창으로 온다)'
         type: boolean
-        default: true
+        default: false
       started:
         description: "실행 표시 — 다 한 실험 번호 (예: exp_3). 다음 주부터 효과를 잽니다"
         default: ''
@@ -135,8 +144,11 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
         run: |
+          # 켜라고 한 때만 보낸다. 예전엔 '끄라고 안 하면 보낸다' 였는데,
+          # 크론 실행에는 입력이 비어 있어서 매주 조용히 텔레그램이 나갔다.
+          # 이제 보고는 클로드의 마케팅 창으로 간다(월요일 10시 루틴).
           SEND=""
-          [ "${{ inputs.send }}" != "false" ] && SEND="--send"
+          [ "${{ inputs.send }}" = "true" ] && SEND="--send"
           python3 scripts/marketing_report.py $SEND | tee /tmp/report.md
           {
             echo "## 주간 성과 보고"

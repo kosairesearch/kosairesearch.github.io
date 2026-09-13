@@ -218,6 +218,32 @@ def t_behavior(week=None):
     if not cur:
         return _need(doc, week)
     L = [f"[{cur['week']} ~ {cur.get('to')}] 어떻게 읽고 어디서 떠났나"]
+    rp = M.top_reports(cur, 10)
+    if rp:
+        L.append("\n■ 실제로 열린 리포트")
+        for name, c in rp:
+            L.append(f"  {name}: {c:,}회")
+        L.append("  ※ '눌린 종목' 과 다르다 — 저건 링크를 눌렀다는 것, 이건"
+                 " 페이지를 열었다는 것. 무엇이 읽히는지는 이쪽이 맞다.")
+
+    pt = M.page_time(cur)
+    if pt:
+        L.append("\n■ 페이지마다 얼마나 오래 보나")
+        for name, v, sec in pt:
+            L.append(f"  {name}: {v:,}회 · 1회당 {sec // 60}분 {sec % 60}초")
+        L.append("  ※ GA4 는 '이 페이지에서 나갔다' 를 세어 주지 않는다."
+                 " 페이지별 이탈률 대신 이걸 본다. 조회는 많은데 머문 시간이"
+                 " 짧은 페이지가 손님을 놓치는 자리다.")
+
+    sb = M.seen_before_signup(cur)
+    if sb:
+        L.append("\n■ 가입한 사람은 가입 전에 리포트를 몇 개 봤나")
+        for k, n, pu, pa in sb:
+            tail = f" · 전체는 {pa:.0f}%" if pa is not None else ""
+            L.append(f"  {k}개: {n:,}건 · 가입자 중 {pu:.0f}%{tail}")
+        L.append("  ※ 전체와 견줘 유난히 높은 묶음이 있으면, 그만큼 본 사람에게"
+                 " 가입을 권하는 것이 말이 된다. 가입이 10건 아래면 단정하지 마라.")
+
     rt = M.read_through(cur)
     if rt:
         pct, start, end = rt
@@ -255,6 +281,28 @@ def t_behavior(week=None):
         L.append("  ※ GA4 '맞춤 측정기준' 등록 전이거나 아직 안 쌓인 것. 0 이 아니다.")
     if len(L) == 1:
         L.append("  이 주에는 행동 자료가 없습니다.")
+    return "\n".join(L)
+
+
+def t_retention(weeks=6):
+    """첫 방문 뒤 언제 다시 오나."""
+    import marketing_report as M
+    doc = _weekly()
+    rows = M.retention_rows(doc, max(2, min(int(weeks or 6), 12)))
+    if not rows:
+        if not (doc.get("weeks") or []):
+            return _need(doc, None)
+        return ("아직 못 봤습니다 — 다음 수집 때 함께 받습니다."
+                " refresh 로 지금 받아올 수도 있습니다.")
+    L = ["■ 첫 방문 뒤 언제 다시 오나",
+         "  같은 주에 처음 온 사람들을 묶어서, 몇 주째에 몇 명이 돌아왔는지입니다.",
+         ""]
+    for wk, size, back in rows:
+        tail = " · ".join(f"{n}주 뒤 {v}명({r:.0f}%)" for n, v, r in back[:5])
+        L.append(f"  {wk}  처음 온 {size:,}명  " + (tail or "아직 돌아온 사람 없음"))
+    L.append("")
+    L.append("  ※ 가장 최근 주는 아직 시간이 안 지나서 낮게 나오는 것이 정상입니다.")
+    L.append("  ※ 볼 것은 '1주 뒤' 비율이 주마다 오르는지입니다.")
     return "\n".join(L)
 
 
@@ -371,6 +419,75 @@ def t_experiment_drop(id=None, why=""):
     return f"✅ {it['id']} ({it['title']}) 를 버렸습니다."
 
 
+# 새로 켠 기록이 실제로 들어오는지. 주간 보고를 기다리면 여드레가 걸린다.
+NEW_MARKS = {
+    "report_view": "어느 리포트를 열었나",
+    "stock_click": "어느 종목 링크를 눌렀나",
+    "scroll_depth": "얼마나 내려 읽었나",
+    "page_leave": "어디서 떠났나",
+    "sign_up": "회원가입",
+}
+DIM_MARKS = {
+    "ticker": "종목 번호 (많이 본 리포트)",
+    "reports_seen": "가입 전에 리포트를 몇 개 봤나",
+    "entry_source": "유입처 (네이버에서 온 사람이 가입까지 갔나)",
+    "percent": "읽은 깊이",
+    "from_page": "어느 페이지에서 일어났나",
+}
+
+
+def t_check(days=3):
+    """기록이 제대로 들어오고 있나. 성과가 아니라 배관 점검."""
+    import ga4_data as G
+    if not os.environ.get("GA4_PROPERTY_ID"):
+        return ("GA4_PROPERTY_ID 가 없습니다 — 이 점검은 GA4 에 직접 물어봅니다."
+                " 깃허브 Actions 의 '마케팅 숫자 물어보기' 로 돌려 주세요.")
+    try:
+        got = G.recent_events(G._client(), G._property(),
+                              days=max(1, min(int(days or 3), 28)))
+    except (Exception, SystemExit) as e:
+        return f"GA4 에 물어보지 못했습니다 — {type(e).__name__}: {e}"
+
+    evs = dict(got.get("events") or [])
+    L = [f"■ 최근 {days}일 ({got['from']} ~ {got['to']}) 들어온 기록", ""]
+    for name, n in (got.get("events") or [])[:15]:
+        tag = f"   ← {NEW_MARKS[name]}" if name in NEW_MARKS else ""
+        L.append(f"  {name:<20}{n:>8,}{tag}")
+    if not got.get("events"):
+        L.append("  아무 기록도 없습니다 — 속성 번호나 권한을 확인해 주세요.")
+
+    L.append("")
+    L.append("■ 새 기록이 들어오고 있나")
+    for name, what in NEW_MARKS.items():
+        n = evs.get(name)
+        L.append(f"  {'✅' if n else '❌'} {name} ({what}) — "
+                 + (f"{n:,}건" if n else "아직 없음"))
+
+    L.append("")
+    L.append("■ 값이 붙어 있나 (GA4 '맞춤 측정기준' 등록 여부)")
+    todo = []
+    for name, what in DIM_MARKS.items():
+        v = (got.get("dims") or {}).get(name)
+        if v is None:
+            L.append(f"  ❌ {name} ({what}) — 등록이 안 돼 있습니다")
+            todo.append(name)
+        elif v:
+            L.append(f"  ✅ {name} ({what}) — {v:,}건에 값이 붙었습니다")
+        else:
+            L.append(f"  ⏳ {name} ({what}) — 등록은 됐는데 아직 값이 없습니다")
+    if todo:
+        L.append("")
+        L.append("  등록하는 곳 — GA4 ▸ 관리 ▸ 맞춤 정의 ▸ 맞춤 측정기준 만들기")
+        L.append("  범위는 '이벤트', 이벤트 매개변수에 이 이름을 그대로: "
+                 + " · ".join(todo))
+        L.append("  ※ 등록 전에 지나간 기록은 되살아나지 않습니다. 등록한 뒤부터 쌓입니다.")
+
+    L.append("")
+    L.append("※ 이건 성과가 아니라 '기록이 잘 들어오는지' 보는 것입니다.")
+    L.append("※ GA4 는 몇 시간 늦게 들어옵니다. 방금 켰으면 내일 다시 보세요.")
+    return "\n".join(L)
+
+
 def t_weeks():
     doc = _weekly()
     weeks = doc.get("weeks") or []
@@ -458,6 +575,12 @@ TOOLS = [
                              "signUp", "signUpRate", "watchlistAdd"],
                     "description": "볼 지표 (기본 users)"},
          "weeks": {"type": "integer", "description": "몇 주치 (기본 12)"}}}},
+    {"name": "retention", "fn": t_retention,
+     "description": "첫 방문 뒤 언제 다시 오나 — 같은 주에 처음 온 사람들이 "
+                    "1주 뒤·2주 뒤에 몇 명이나 돌아왔는지. '재방문까지 얼마나 "
+                    "걸리나' '붙잡는 힘이 세지고 있나' 에 답한다.",
+     "inputSchema": {"type": "object", "properties": {
+         "weeks": {"type": "integer", "description": "몇 주치 (기본 6)"}}}},
     {"name": "report", "fn": t_report,
      "description": "저장해 둔 주간 보고서 원문 — 텔레그램으로 보낸 줄글 "
                     "그대로다. '지난주에 뭐라고 했었지' 처럼 지난 보고서 "
@@ -492,6 +615,13 @@ TOOLS = [
          "id": {"type": "string", "description": "실험 번호 (예: exp_3)"},
          "why": {"type": "string", "description": "안 하는 이유"}},
          "required": ["id"]}},
+    {"name": "check", "fn": t_check,
+     "description": "기록이 제대로 들어오고 있나 — 요 며칠 어떤 이벤트가 "
+                    "들어왔고, 값(맞춤 측정기준)이 붙어 있는지. 새 기록을 "
+                    "켠 뒤 '잘 되고 있나' 를 볼 때. 주간 보고는 끝난 주만 "
+                    "보므로 여기서만 오늘 것을 볼 수 있다. 성과가 아니다.",
+     "inputSchema": {"type": "object", "properties": {
+         "days": {"type": "integer", "description": "요 며칠 (기본 3, 최대 28)"}}}},
     {"name": "weeks", "fn": t_weeks,
      "description": "받아 둔 주가 몇 개이고 어디에 저장돼 있는지. 숫자가 "
                     "안 나올 때 여기부터 본다.",
@@ -641,7 +771,7 @@ def selftest():
     log("④ 도구 실행 —")
     bad = 0
     for t in TOOLS:
-        if t["name"].startswith("experiment_") or t["name"] == "refresh":
+        if t["name"].startswith("experiment_") or t["name"] in ("refresh", "check"):
             continue                     # 쓰는 도구는 시험에서 부르지 않는다
         text, err = call_tool(t["name"], {})
         head = (text or "").splitlines()[0][:60] if text else ""

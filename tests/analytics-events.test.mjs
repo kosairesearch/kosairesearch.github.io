@@ -59,6 +59,13 @@ function open(url, { referrer = "", session = {}, store = {}, html } = {}) {
     if (kind === "event") events.push({ name, params });
   };
   w.eval(SRC);
+  /* analytics.js 를 읽는 도중에 뜬 이벤트(리포트를 여는 순간의
+     report_view 같은 것)는 gtag.js 가 아직 안 붙었으므로 dataLayer 에
+     쌓인다. 진짜 브라우저에서는 gtag.js 가 나중에 와서 그걸 꺼내 보낸다.
+     여기서도 꺼내 와야 실제와 같아진다. */
+  for (const a of (w.dataLayer || [])) {
+    if (a && a[0] === "event") events.push({ name: a[1], params: a[2] });
+  }
   // analytics.js 가 gtag 를 자기 것으로 덮으므로 다시 우리 것으로
   w.gtag = function (kind, name, params) {
     if (kind === "event") events.push({ name, params });
@@ -180,6 +187,79 @@ console.log("\n⑦ 집계를 끈 경우엔 아무것도 안 뜬다");
   const { w, events } = open("https://kosai.kr/staging/Reports.html");
   w.KOSA.track("sign_up", {});
   eq("스테이징도 없다", events.length, 0);
+}
+
+console.log("\n⑧ 어느 리포트를 열었나 (report_view)");
+{
+  const { events } = open("https://kosai.kr/stock.html?ticker=005930");
+  const rv = events.filter((e) => e.name === "report_view");
+  eq("리포트를 열면 한 번 뜬다", rv.length, 1);
+  eq("어느 종목인지 실린다", rv[0].params.ticker, "005930");
+}
+{
+  const { events } = open("https://kosai.kr/stock.html?lang=en&ticker=000660");
+  eq("앞에 다른 값이 있어도 찾는다",
+     events.find((e) => e.name === "report_view").params.ticker, "000660");
+}
+{
+  const { events } = open("https://kosai.kr/Reports.html?ticker=005930");
+  eq("리포트 페이지가 아니면 안 뜬다",
+     events.filter((e) => e.name === "report_view").length, 0);
+}
+{
+  const { events } = open("https://kosai.kr/stock.html");
+  eq("종목 번호가 없으면 안 뜬다",
+     events.filter((e) => e.name === "report_view").length, 0);
+}
+{
+  const { events } = open("https://kosai.kr/stock.html?ticker=12345");
+  eq("여섯 자리가 아니면 안 뜬다",
+     events.filter((e) => e.name === "report_view").length, 0);
+}
+{
+  const { events } = open("https://kosai.kr/staging/stock.html?ticker=005930");
+  eq("스테이징에서는 안 뜬다", events.length, 0);
+}
+
+console.log("\n⑨ 여태 리포트를 몇 개 봤나 (reports_seen)");
+{
+  const store = {};
+  const a = open("https://kosai.kr/stock.html?ticker=005930", { store });
+  eq("처음 연 리포트에는 0 이 실린다",
+     a.events.find((e) => e.name === "report_view").params.reports_seen, "0");
+  eq("열고 나면 하나로 센다", store.kosai_reports_seen, "1");
+
+  const b = open("https://kosai.kr/stock.html?ticker=000660", { store });
+  eq("두 번째에는 1 이 실린다",
+     b.events.find((e) => e.name === "report_view").params.reports_seen, "1");
+  eq("둘로 센다", store.kosai_reports_seen, "2");
+}
+{
+  // 가입하는 순간 '여태 몇 개 봤는지' 가 같이 실려야 한다.
+  const { w, events } = open("https://kosai.kr/Signup.html",
+                             { store: { kosai_reports_seen: "7" } });
+  w.KOSA.track("sign_up", { method: "google" });
+  eq("가입에도 실린다",
+     events.find((e) => e.name === "sign_up").params.reports_seen, "6~10");
+}
+{
+  const cases = [["0", "0"], ["1", "1"], ["2", "2"], ["3", "3~5"], ["5", "3~5"],
+                 ["6", "6~10"], ["10", "6~10"], ["11", "11+"], ["999", "11+"]];
+  let good = true;
+  for (const [have, want] of cases) {
+    const { w, events } = open("https://kosai.kr/Reports.html",
+                               { store: { kosai_reports_seen: have } });
+    w.KOSA.track("ping", {});
+    good = good && events.find((e) => e.name === "ping").params.reports_seen === want;
+  }
+  ok("묶음이 제대로 나뉜다 (0·1·2·3~5·6~10·11+)", good);
+}
+{
+  const { w, events } = open("https://kosai.kr/Reports.html",
+                             { store: { kosai_reports_seen: "이상한값" } });
+  w.KOSA.track("ping", {});
+  eq("망가진 값은 0 으로 본다",
+     events.find((e) => e.name === "ping").params.reports_seen, "0");
 }
 
 console.log("\n" + "=".repeat(52));

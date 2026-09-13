@@ -59,11 +59,18 @@ for w, to, u, n, r in [("2026-08-24", "2026-08-30", 427, 400, 70),
         "leave": [{"customEvent:from_page": "/stock.html", "eventCount": 280}],
         "byVisitor": [{"newVsReturning": "returning", "pagePath": "/brief.html",
                        "screenPageViews": 90}],
+        "reports": [{"customEvent:ticker": "005930", "eventCount": 40}],
+        "signupSeen": [{"customEvent:reports_seen": "3~5", "eventCount": 6}],
+        "allSeen": [{"customEvent:reports_seen": "0", "eventCount": 300},
+                    {"customEvent:reports_seen": "3~5", "eventCount": 40}],
     })
 
 BOX = tempfile.mkdtemp(prefix="mcp-test-")
 (Path(BOX) / "weekly.json").write_text(
-    json.dumps({"weeks": WEEKS, "health": {"ok": True, "problems": []}},
+    json.dumps({"weeks": WEEKS, "health": {"ok": True, "problems": []},
+                "retention": [
+                    {"week": "2026-08-24", "size": 400, "back": {"1": 80, "2": 40}},
+                    {"week": "2026-08-31", "size": 350, "back": {"1": 77}}]},
                ensure_ascii=False), encoding="utf-8")
 (Path(BOX) / "reports.json").write_text(
     json.dumps({"items": [{"week": "2026-09-07", "to": "2026-09-13",
@@ -156,7 +163,7 @@ with Server() as s:
     names = [t["name"] for t in tools]
     ok("숫자 도구가 다 있다",
        all(n in names for n in ("weekly", "traffic", "pages", "behavior",
-                                "trend", "report", "weeks", "refresh")))
+                                "trend", "retention", "report", "weeks", "refresh")))
     ok("실험 도구가 다 있다",
        all(n in names for n in ("experiments", "experiment_add",
                                 "experiment_start", "experiment_drop")))
@@ -202,6 +209,19 @@ with Server() as s:
     t, _ = s.call("behavior")
     ok("완독 비율이 온다", "끝까지" in t and "30%" in t, t)
     ok("그냥 나간 비율이 온다", "그냥 나감 72%" in t, t)
+
+    t, _ = s.call("behavior")
+    ok("실제로 열린 리포트가 온다", "삼성전자" in t, t)
+    ok("페이지마다 머문 시간이 온다", "1회당" in t, t)
+    ok("가입 전에 몇 개 봤는지가 온다", "가입 전에 리포트를 몇 개" in t, t)
+    ok("가입자 몫과 전체 몫을 같이 준다", "전체는" in t, t)
+
+    t, err = s.call("retention")
+    ok("코호트가 온다", "첫 방문 뒤 언제 다시 오나" in t and not err, t)
+    ok("1주 뒤 비율이 보인다", "1주 뒤 80명(20%)" in t, t)
+    ok("최근 주가 낮은 이유를 일러 준다", "정상입니다" in t, t)
+    t, _ = s.call("retention", weeks=1)
+    ok("몇 주치를 달라고 해도 죽지 않는다", "첫 방문 뒤" in t, t)
 
     t, _ = s.call("trend", metric="returnRate", weeks=3)
     ok("재방문율 흐름이 온다", "재방문율" in t and "12.5" in t, t)
@@ -331,7 +351,7 @@ class Empty(Server):
 
 with Empty() as s:
     s.ask(id=1, method="initialize", params={"protocolVersion": "2025-06-18"})
-    for name in ("weekly", "traffic", "pages", "behavior", "trend"):
+    for name in ("weekly", "traffic", "pages", "behavior", "trend", "retention"):
         t, err = s.call(name)
         ok(f"{name}: 없으면 어떻게 하라고 알려 준다",
            not err and ("refresh" in t or "받아 둔 숫자가" in t), t[:80])
@@ -345,6 +365,50 @@ r = subprocess.run([sys.executable, str(SERVER), "--selftest"],
 eq("성공으로 끝난다", r.returncode, 0)
 ok("사람이 읽을 안내가 stderr 로 나온다", "도구" in r.stderr, r.stderr[:200])
 eq("stdout 은 비어 있다", r.stdout.strip(), "")
+
+print("\n⑨-2 기록이 잘 들어오나 (check)")
+with Server() as s:
+    s.ask(id=1, method="initialize", params={"protocolVersion": "2025-06-18"})
+    tools = s.ask(id=2, method="tools/list")["result"]["tools"]
+    ok("check 도구가 있다", any(t["name"] == "check" for t in tools))
+    ok("성과가 아니라고 설명에 적혀 있다",
+       any(t["name"] == "check" and "성과가 아니다" in t["description"]
+           for t in tools))
+    t, err = s.call("check")
+    ok("열쇠가 없으면 어디서 돌리라고 알려 준다",
+       not err and "물어보기" in t, t)
+
+# 진짜 GA4 를 부르지 않고 속을 본다 — 배관 점검이 사람 말로 나오는지.
+sys.path.insert(0, str(ROOT / "scripts"))
+import ga4_data as G
+import marketing_mcp as MC
+
+FAKE = {"from": "2026-09-11", "to": "2026-09-13",
+        "events": [("page_view", 320), ("scroll_depth", 180),
+                   ("report_view", 12), ("session_start", 95)],
+        "dims": {"ticker": 12, "reports_seen": None,
+                 "entry_source": 95, "percent": 180, "from_page": 0}}
+_real = G.recent_events
+G.recent_events = lambda *a, **k: FAKE
+G._client = lambda: None
+G._property = lambda: "properties/1"
+os.environ["GA4_PROPERTY_ID"] = "123456789"
+out = MC.t_check(3)
+G.recent_events = _real
+os.environ.pop("GA4_PROPERTY_ID", None)
+
+ok("언제부터 언제까지인지 적는다", "2026-09-11 ~ 2026-09-13" in out, out[:120])
+ok("들어온 기록을 센다", "report_view" in out and "12" in out, out)
+ok("새 기록에 이름표를 붙인다", "어느 리포트를 열었나" in out, out)
+ok("안 들어온 기록은 ❌", "❌ page_leave" in out, out)
+ok("등록 안 된 값은 ❌", "❌ reports_seen" in out, out)
+ok("등록은 됐는데 값이 없으면 ⏳", "⏳ from_page" in out, out)
+ok("값이 붙은 것은 ✅", "✅ ticker" in out, out)
+ok("등록하는 곳을 알려 준다", "맞춤 측정기준 만들기" in out, out)
+ok("등록할 이름을 그대로 적어 준다", "reports_seen" in out.split("그대로:")[-1], out)
+ok("지나간 기록은 안 되살아난다고 일러 준다", "되살아나지 않습니다" in out, out)
+ok("성과가 아니라고 못 박는다", "성과가 아니라" in out, out)
+ok("늦게 들어온다고 일러 준다", "몇 시간 늦게" in out, out)
 
 print("\n⑩ 클로드 앱 없이 물어보기 (--ask)")
 

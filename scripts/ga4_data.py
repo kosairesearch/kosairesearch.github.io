@@ -396,6 +396,20 @@ def one_week(client, prop, mon, sun, deep=False):
         row["entrySource"] = soft("entrySource", ["eventCount"],
                                   ["customEvent:entry_source"], limit=15,
                                   order="eventCount", filt="session_start")
+        # 실제로 연 리포트. tickers(누름) 와 다르다 — 눌러 놓고 안 읽는
+        # 사람이 있고, 즐겨찾기·검색으로 링크를 안 거치고 오는 사람도 있다.
+        row["reports"] = soft("reports", ["eventCount"],
+                              ["customEvent:ticker"], limit=30,
+                              order="eventCount", filt="report_view")
+        # 가입한 사람은 가입 전에 리포트를 몇 개 봤나. 그 옆에 '아무나'
+        # 의 분포를 같이 놓아야 뜻이 생긴다 — 가입자가 3~5 에 몰렸는데
+        # 전체도 3~5 에 몰려 있으면 그건 아무 말도 아니다.
+        row["signupSeen"] = soft("signupSeen", ["eventCount"],
+                                 ["customEvent:reports_seen"], limit=10,
+                                 order="eventCount", filt="sign_up")
+        row["allSeen"] = soft("allSeen", ["eventCount"],
+                              ["customEvent:reports_seen"], limit=10,
+                              order="eventCount", filt="session_start")
         # 얼마나 내려 읽나
         row["scroll"] = soft("scroll", ["eventCount"],
                              ["customEvent:percent"], limit=6,
@@ -405,6 +419,103 @@ def one_week(client, prop, mon, sun, deep=False):
                             ["customEvent:from_page"], limit=15,
                             order="eventCount", filt="page_leave")
     return row
+
+
+def recent_events(client, prop, days=3):
+    """요 며칠 어떤 기록이 들어왔나. 성과가 아니라 배관 점검이다.
+
+    왜 있나 — 주간 보고는 끝난 주만 본다. 오늘 새 기록을 켜도 그게
+    제대로 들어오는지는 다음 주 월요일에야 알 수 있다. 버그가 있으면
+    여드레를 날린다. 그 사이에 눈으로 볼 자리가 필요하다.
+
+    {"from","to","events":[(이름,수)],"dims":{이름: 수 또는 None}}
+    dims 의 None 은 'GA4 관리화면에 등록이 안 됐다' 는 뜻이다.
+    """
+    today = datetime.datetime.now(KST).date()
+    start = (today - datetime.timedelta(days=max(1, days) - 1)).isoformat()
+    end = today.isoformat()
+    rows = _run(client, prop, start, end, ["eventCount"], ["eventName"],
+                limit=40, order="eventCount")
+    out = {"from": start, "to": end,
+           "events": [(r.get("eventName"), r.get("eventCount")) for r in rows]}
+
+    # 맞춤 측정기준이 실제로 등록됐는지. 등록 전에는 400 이 난다 —
+    # 그 사실 자체가 답이라, 터뜨리지 않고 None 으로 적어 둔다.
+    dims = {}
+    for name, ev in (("ticker", "report_view"), ("reports_seen", "sign_up"),
+                     ("entry_source", "session_start"), ("percent", "scroll_depth"),
+                     ("from_page", "page_leave")):
+        try:
+            got = _run(client, prop, start, end, ["eventCount"],
+                       [f"customEvent:{name}"], limit=10, event_filter=ev)
+            dims[name] = sum((r.get("eventCount") or 0) for r in got
+                             if (r.get(f"customEvent:{name}") or "") not in
+                             ("(not set)", "", "(none)"))
+        except Exception:
+            dims[name] = None
+    out["dims"] = dims
+    return out
+
+
+def retention(client, prop, weeks=6):
+    """첫 방문 뒤 몇 주째에 다시 오나.
+
+    "첫 방문 후 재방문까지 걸린 시간" 은 보통 이렇게 본다 — 같은 주에
+    처음 온 사람들을 한 덩어리로 묶고(코호트), 그 덩어리가 다음 주·그
+    다음 주에 몇 명이나 돌아오는지를 센다.
+
+    이건 맞춤 측정기준이 필요 없다. GA4 가 첫 방문 날짜를 원래 갖고
+    있어서, 오늘 물어도 지난 몇 달치가 그대로 나온다. 다른 행동 자료와
+    달리 기다릴 필요가 없다.
+
+    [{week, size, back: {1: 명, 2: 명, ...}}] 를 돌려준다.
+    """
+    from google.analytics.data_v1beta.types import (
+        Cohort, CohortSpec, CohortsRange, DateRange, Dimension, Metric,
+        RunReportRequest)
+
+    today = datetime.datetime.now(KST).date()
+    bounds = week_bounds(today, weeks)
+    if not bounds:
+        return []
+    cohorts, order = [], []
+    for mon, sun in bounds:
+        name = mon.isoformat()
+        order.append(name)
+        cohorts.append(Cohort(name=name, dimension="firstSessionDate",
+                              date_range=DateRange(start_date=name,
+                                                   end_date=sun.isoformat())))
+    req = RunReportRequest(
+        property=prop,
+        dimensions=[Dimension(name="cohort"), Dimension(name="cohortNthWeek")],
+        metrics=[Metric(name="cohortActiveUsers")],
+        cohort_spec=CohortSpec(
+            cohorts=cohorts,
+            cohorts_range=CohortsRange(
+                granularity=CohortsRange.Granularity.WEEKLY,
+                start_offset=0, end_offset=max(1, weeks - 1))),
+        limit=500,
+    )
+    resp = client.run_report(req)
+    box = {}
+    for r in resp.rows:
+        who = r.dimension_values[0].value
+        nth = r.dimension_values[1].value
+        try:
+            n = int(r.metric_values[0].value)
+            nth = int(str(nth).lstrip("0") or 0)
+        except ValueError:
+            continue
+        box.setdefault(who, {})[nth] = n
+    out = []
+    for name in order:
+        got = box.get(name) or {}
+        size = got.get(0, 0)
+        if not size:
+            continue
+        out.append({"week": name, "size": size,
+                    "back": {k: v for k, v in sorted(got.items()) if k > 0}})
+    return out
 
 
 # GA4 에 실제로 뭘 물어볼 수 있는지 확인할 후보들.
@@ -429,6 +540,7 @@ PROBE_DIMENSIONS = [
     # 찔러 보면 "등록이 안 됐다" 와 "이름을 잘못 물었다" 가 구분되지 않는다.
     "customEvent:ticker", "customEvent:method", "customEvent:from_page",
     "customEvent:entry_source", "customEvent:entry_page", "customEvent:percent",
+    "customEvent:reports_seen",
 ]
 
 
@@ -516,10 +628,19 @@ def collect(weeks=8, today=None):
         # 구분할 수 없으니 문제로 적어 둔다.
         problems.append("가장 최근 주의 이용자가 0명이다 — 권한이나 속성 ID 를 확인하라")
 
+    # 코호트는 주 단위가 아니라 통째로 한 번 물어본다. 실패해도 나머지
+    # 보고는 나가야 하므로 따로 감싼다.
+    keep = []
+    try:
+        keep = retention(client, prop, weeks=min(weeks, 8))
+    except Exception as ex:
+        problems.append(f"재방문 코호트 조회 실패: {type(ex).__name__} {ex}")
+
     return {
         "collectedAt": datetime.datetime.now(KST).isoformat(timespec="seconds"),
         "propertyId": os.environ.get("GA4_PROPERTY_ID", ""),
         "weeks": rows,
+        "retention": keep,
         "health": {"ok": not problems, "problems": problems},
     }
 
@@ -557,6 +678,10 @@ def _merge(prev, doc):
         old[w["week"]] = w
     out = dict(doc)
     out["weeks"] = [old[k] for k in sorted(old)]
+    # 이번에 코호트를 못 받았으면 지난번 것을 그대로 둔다. 못 받은 것을
+    # 빈 값으로 덮으면 '아무도 안 돌아왔다' 로 읽힌다.
+    if not out.get("retention") and (prev or {}).get("retention"):
+        out["retention"] = prev["retention"]
     return out
 
 

@@ -139,6 +139,7 @@
      from_page     이 이벤트가 일어난 페이지
      entry_page    이번 방문에서 처음 열었던 페이지
      entry_source  이번 방문의 유입처 (naver·google·direct…)
+     reports_seen  이 브라우저가 지금까지 본 리포트 수 (0·1·2·3~5·6~10·11+)
      ──────────────────────────────────────────────────────────── */
   var SS_ENTRY = "kosai_entry";
 
@@ -179,9 +180,40 @@
     return box;
   }
 
+  /* 이 브라우저가 지금까지 연 리포트 수. 왜 세나 —
+     "가입한 사람은 가입 전에 리포트를 몇 개 봤나" 를 알아야 '몇 개쯤
+     보면 가입할 마음이 드는지' 가 보인다. 그걸 알면 그 선에서 가입을
+     권할 수 있다. GA4 는 사람별로 되짚어 볼 수 없으니, 가입하는 그
+     순간에 '여태 몇 개 봤는지' 를 같이 실어 보내는 수밖에 없다.
+
+     낱개 숫자 대신 묶음으로 보낸다. 1·2·3…을 그대로 보내면 GA4 에서
+     줄이 수백 개로 흩어져 아무것도 못 읽는다. */
+  var SEEN_KEY = "kosai_reports_seen";
+
+  function seenCount() {
+    try {
+      var n = parseInt(localStorage.getItem(SEEN_KEY) || "0", 10);
+      return isNaN(n) || n < 0 ? 0 : n;
+    } catch (e) { return 0; }
+  }
+
+  function seenBucket(n) {
+    if (n <= 0) return "0";
+    if (n === 1) return "1";
+    if (n === 2) return "2";
+    if (n <= 5) return "3~5";
+    if (n <= 10) return "6~10";
+    return "11+";
+  }
+
+  function bumpSeen() {
+    try { localStorage.setItem(SEEN_KEY, String(seenCount() + 1)); } catch (e) {}
+  }
+
   function withContext(params) {
     var e = entry();
-    var out = { from_page: pageKey(), entry_page: e.page, entry_source: e.source };
+    var out = { from_page: pageKey(), entry_page: e.page, entry_source: e.source,
+                reports_seen: seenBucket(seenCount()) };
     for (var k in (params || {})) {
       if (Object.prototype.hasOwnProperty.call(params, k)) out[k] = params[k];
     }
@@ -211,6 +243,19 @@
         if (m) KOSA.track("stock_click", { ticker: m[1] });
       } catch (e) {}
     }, true);
+
+    /* ①-2 어느 리포트를 실제로 열었나.
+       주소는 전부 /stock.html 한 덩어리라 페이지 이름만으로는 어느 종목
+       리포트를 봤는지 알 수 없다. 여는 순간에 종목 번호를 따로 실어 보낸다.
+       ①(누름)과 다르다 — 눌러 놓고 안 읽고 닫는 사람이 있고, 즐겨찾기나
+       검색으로 링크를 안 거치고 바로 들어오는 사람도 있다. */
+    try {
+      var seenTicker = /[?&]ticker=(\d{6})\b/.exec(location.search || "");
+      if (seenTicker && /\/stock\.html$/i.test(path)) {
+        KOSA.track("report_view", { ticker: seenTicker[1] });
+        bumpSeen();
+      }
+    } catch (e) {}
 
     /* ② 얼마나 내려 읽었나. 리포트를 끝까지 보는지가 여기서 보인다.
        25·50·75·100% 를 한 번씩만 보낸다. */
