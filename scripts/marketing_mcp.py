@@ -459,8 +459,10 @@ TOOLS = [
                     "description": "볼 지표 (기본 users)"},
          "weeks": {"type": "integer", "description": "몇 주치 (기본 12)"}}}},
     {"name": "report", "fn": t_report,
-     "description": "저장해 둔 주간 보고서 원문. 지난주에 무슨 말을 했는지 "
-                    "확인할 때.",
+     "description": "저장해 둔 주간 보고서 원문 — 텔레그램으로 보낸 줄글 "
+                    "그대로다. '지난주에 뭐라고 했었지' 처럼 지난 보고서 "
+                    "자체를 찾을 때만 써라. 성과를 물었으면 weekly 를 써라. "
+                    "그리고 이 글을 그대로 옮기지 말고 표로 다시 짜서 보여 줘라.",
      "inputSchema": {"type": "object", "properties": {"week": _week_arg()}}},
     {"name": "experiments", "fn": t_experiments,
      "description": "실험 대장 — 무엇을 하자고 했고, 했는지, 효과가 있었는지.",
