@@ -38,15 +38,60 @@ KST = datetime.timezone(datetime.timedelta(hours=9))
 
 # 페이지 주소를 사람이 읽는 이름으로. 보고서에 /stock.html 보다
 # '종목 리포트'가 낫다.
+# 페이지 주소 → 사람이 읽는 이름. 실제 파일 이름이 대문자로 시작하므로
+# (Home.html·Reports.html…) 그대로 적는다. 소문자로 적어 뒀더니 이름표가
+# 하나도 안 붙어 보고서에 /Home.html 이 그대로 나갔다.
 PAGE_NAMES = {
     "/": "홈",
     "/index.html": "홈",
+    "/Home.html": "홈(구 주소)",
     "/brief.html": "모닝 브리핑",
     "/stock.html": "종목 리포트",
-    "/reports.html": "리포트 목록",
-    "/pricing.html": "요금제",
-    "/about.html": "회사 소개",
+    "/Reports.html": "리포트 목록",
+    "/industry.html": "업종 분석",
+    "/Screener.html": "종목 검색",
+    "/Watchlist.html": "관심종목",
+    "/About.html": "회사 소개",
+    "/Contact.html": "문의",
+    "/Feedback.html": "의견 보내기",
+    "/Login.html": "로그인",
+    "/Signup.html": "회원가입",
+    "/Consent.html": "약관 동의",
+    "/Settings.html": "설정",
+    "/Admin.html": "관리자",
+    "/Privacy.html": "개인정보처리방침",
+    "/Terms.html": "이용약관",
 }
+
+# 페이지를 세 갈래로 나눈다. 마케팅이 보는 것은 '콘텐츠'뿐이다.
+#
+#   2026-09-13 에 이걸 넣은 이유 — 8/24 주 조회의 28%가 내부였다.
+#   로그인 240 · 동의 68 · 가입 33 · 관리자 49 가 다음 주에 한꺼번에
+#   23 으로 떨어졌는데, 첫 보고서는 이걸 "이용자가 빠졌다"로 읽고
+#   "링크가 끊겼을 수 있다"는 틀린 결론을 냈다. 사장이 그 주에 사이트
+#   시험을 멈춘 것뿐이었다. 내 발자국을 손님 발자국으로 세면 안 된다.
+CONTENT_PAGES = {"/", "/index.html", "/Home.html", "/brief.html", "/stock.html",
+                 "/Reports.html", "/industry.html", "/Screener.html",
+                 "/About.html", "/Contact.html", "/Feedback.html"}
+ACCOUNT_PAGES = {"/Login.html", "/Signup.html", "/Consent.html", "/Settings.html",
+                 "/Watchlist.html", "/Privacy.html", "/Terms.html",
+                 "/auth-action.html"}
+ADMIN_PAGES = {"/Admin.html"}
+
+
+def page_kind(path):
+    """'콘텐츠' · '계정' · '관리자' · '테스트' 중 하나."""
+    p = (path or "").split("?")[0]
+    if p.startswith("/staging/"):
+        return "테스트"
+    if p in ADMIN_PAGES:
+        return "관리자"
+    if p in ACCOUNT_PAGES:
+        return "계정"
+    if p in CONTENT_PAGES:
+        return "콘텐츠"
+    return "콘텐츠"          # 모르는 주소는 일단 콘텐츠로 본다
+
 
 # GA4 가 주는 영어 이름을 사람 말로. 보고서를 읽는 사람이 개발자가 아니다.
 CHANNEL_NAMES = {
