@@ -178,10 +178,17 @@ def _property():
 
 # ────────────────────────────── 조회 ──────────────────────────────
 
-def _run(client, prop, start, end, metrics, dimensions=None, limit=25, order=None):
-    """GA4 한 번 물어보기. (행 목록) 을 돌려준다."""
+def _run(client, prop, start, end, metrics, dimensions=None, limit=25, order=None,
+         event_filter=None):
+    """GA4 한 번 물어보기. (행 목록) 을 돌려준다.
+
+    event_filter 를 주면 그 이름의 이벤트만 센다. 'sign_up 이 어느 페이지에서
+    일어났나' 처럼, 같은 매개변수를 여러 이벤트가 공유할 때 꼭 필요하다 —
+    안 거르면 모든 이벤트의 from_page 가 뭉쳐서 아무 뜻도 없는 수가 된다.
+    """
     from google.analytics.data_v1beta.types import (
-        DateRange, Dimension, Metric, RunReportRequest, OrderBy)
+        DateRange, Dimension, Metric, RunReportRequest, OrderBy,
+        FilterExpression, Filter)
     req = RunReportRequest(
         property=prop,
         date_ranges=[DateRange(start_date=start, end_date=end)],
@@ -189,6 +196,10 @@ def _run(client, prop, start, end, metrics, dimensions=None, limit=25, order=Non
         dimensions=[Dimension(name=d) for d in (dimensions or [])],
         limit=limit,
     )
+    if event_filter:
+        req.dimension_filter = FilterExpression(filter=Filter(
+            field_name="eventName",
+            string_filter=Filter.StringFilter(value=event_filter)))
     if order:
         req.order_bys = [OrderBy(metric=OrderBy.MetricOrderBy(metric_name=order),
                                  desc=True)]
@@ -253,14 +264,58 @@ def one_week(client, prop, mon, sun, deep=False):
         row["channels"] = _run(client, prop, s, e, ["sessions", "totalUsers"],
                                ["sessionDefaultChannelGroup"], limit=12,
                                order="sessions")
-        row["pages"] = _run(client, prop, s, e, ["screenPageViews", "totalUsers"],
-                            ["pagePath"], limit=15, order="screenPageViews")
+        row["pages"] = _run(client, prop, s, e,
+                            ["screenPageViews", "totalUsers", "userEngagementDuration"],
+                            ["pagePath"], limit=20, order="screenPageViews")
         row["events"] = _run(client, prop, s, e, ["eventCount"],
-                             ["eventName"], limit=25, order="eventCount")
+                             ["eventName"], limit=30, order="eventCount")
         row["devices"] = _run(client, prop, s, e, ["totalUsers"],
                               ["deviceCategory"], limit=5, order="totalUsers")
-        row["sources"] = _run(client, prop, s, e, ["sessions"],
-                              ["sessionSource"], limit=12, order="sessions")
+        row["sources"] = _run(client, prop, s, e, ["sessions", "totalUsers"],
+                              ["sessionSource"], limit=15, order="sessions")
+
+        # ── 행동 ──────────────────────────────────────────────────
+        # 아래는 GA4 '맞춤 측정기준' 등록이 필요한 것들이다. 등록 전에는
+        # 400 이 나므로 하나씩 감싸서, 안 되는 것만 비워 두고 나머지는 살린다.
+        # 통째로 터뜨리면 주간 보고가 통째로 못 나간다.
+        def soft(name, metrics, dims, limit=15, order=None, filt=None):
+            try:
+                return _run(client, prop, s, e, metrics, dims, limit=limit,
+                            order=order, event_filter=filt)
+            except Exception as ex:
+                row.setdefault("_missing", {})[name] = f"{type(ex).__name__}: {str(ex)[:120]}"
+                return []
+
+        # 어디로 들어와서 어디서 나가나
+        row["landings"] = soft("landings", ["sessions", "bounceRate"],
+                               ["landingPage"], order="sessions")
+        # 재방문자는 뭘 보나 (신규와 갈라서)
+        row["byVisitor"] = soft("byVisitor", ["screenPageViews"],
+                                ["newVsReturning", "pagePath"], limit=30,
+                                order="screenPageViews")
+        # 가장 많이 본 리포트 · 가장 많이 눌린 종목
+        row["tickers"] = soft("tickers", ["eventCount"],
+                              ["eventName", "customEvent:ticker"], limit=40,
+                              order="eventCount")
+        # 어느 페이지에서 · 어느 유입처에서 가입했나
+        row["signupPage"] = soft("signupPage", ["eventCount"],
+                                 ["customEvent:from_page"], limit=15,
+                                 order="eventCount", filt="sign_up")
+        row["signupSource"] = soft("signupSource", ["eventCount"],
+                                   ["customEvent:entry_source"], limit=15,
+                                   order="eventCount", filt="sign_up")
+        # 유입처별 방문자 (가입과 나란히 놓고 전환을 본다)
+        row["entrySource"] = soft("entrySource", ["eventCount"],
+                                  ["customEvent:entry_source"], limit=15,
+                                  order="eventCount", filt="session_start")
+        # 얼마나 내려 읽나
+        row["scroll"] = soft("scroll", ["eventCount"],
+                             ["customEvent:percent"], limit=6,
+                             order="eventCount", filt="scroll_depth")
+        # 어느 페이지에서 떠나나
+        row["leave"] = soft("leave", ["eventCount"],
+                            ["customEvent:from_page"], limit=15,
+                            order="eventCount", filt="page_leave")
     return row
 
 
@@ -282,8 +337,10 @@ PROBE_DIMENSIONS = [
     "sessionDefaultChannelGroup", "firstUserDefaultChannelGroup", "firstUserSource",
     "newVsReturning", "deviceCategory", "eventName", "browser",
     "operatingSystem", "country", "city", "sessionCampaignName",
-    "customEvent:ticker", "customEvent:name", "customEvent:method",
-    "customEvent:from_page", "customEvent:source",
+    # 실제로 우리가 보내는 매개변수 이름 그대로여야 한다. 다른 이름으로
+    # 찔러 보면 "등록이 안 됐다" 와 "이름을 잘못 물었다" 가 구분되지 않는다.
+    "customEvent:ticker", "customEvent:method", "customEvent:from_page",
+    "customEvent:entry_source", "customEvent:entry_page", "customEvent:percent",
 ]
 
 
@@ -327,6 +384,9 @@ def probe(days=28):
     log("\n■ 우리가 쓰려는 조합")
     combos = [
         ("종목별 리포트 조회", ["eventCount"], ["eventName", "customEvent:ticker"]),
+        ("유입처별 가입", ["eventCount"], ["customEvent:entry_source", "eventName"]),
+        ("가입한 페이지", ["eventCount"], ["customEvent:from_page", "eventName"]),
+        ("스크롤 깊이", ["eventCount"], ["customEvent:percent", "eventName"]),
         ("유입경로별 가입", ["eventCount"], ["sessionDefaultChannelGroup", "eventName"]),
         ("착지 페이지별 이탈", ["sessions", "bounceRate"], ["landingPage"]),
         ("재방문자가 보는 페이지", ["screenPageViews"], ["newVsReturning", "pagePath"]),
