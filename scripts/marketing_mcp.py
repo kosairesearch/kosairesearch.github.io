@@ -159,13 +159,19 @@ def t_traffic(week=None):
         L.append("\n■ 유입 경로 · 방문 횟수")
         for k, n in ch:
             L.append(f"  {G.CHANNEL_NAMES.get(k, k)}: {n:,}")
-    src = M._pairs(cur, "sources", "sessionSource", "sessions")
+    src = M.labeled(cur, "sources", "sessionSource", "sessions", G.source_label)
     if src:
         L.append("\n■ 어느 사이트에서 · 방문 횟수")
-        for k, n in src[:10]:
-            L.append(f"  {G.SOURCE_NAMES.get(k, k)}: {n:,}")
+        for name, n in src[:12]:
+            L.append(f"  {name}: {n:,}")
+        L.append("  ※ 같은 곳은 묶여 있다(m.search.naver.com 과 naver 는 둘 다 네이버).")
+        L.append("  ※ '로그인하고 돌아옴' 은 새 손님이 아니다 — 우리 사이트에서"
+                 " 네이버·카카오 로그인을 누르고 되돌아온 것이다.")
     fn = M.source_funnel(cur)
-    if fn:
+    if fn and all(name == "알 수 없음" for name, *_ in fn):
+        L.append("\n■ 유입처별 들어옴 → 가입  아직 가를 수 없습니다 —"
+                 " 이 주의 기록에는 유입처가 안 붙어 있습니다. 다음 주부터 나옵니다.")
+    elif fn:
         L.append("\n■ 유입처별 들어옴 → 가입")
         for name, v, su, r in fn:
             rr = f" · 가입 {r:.1f}%" if r is not None else ""

@@ -164,6 +164,20 @@ def _pairs(week, key, dim, met="eventCount"):
     return out
 
 
+def labeled(week, key, dim, met, labeler):
+    """같은 이름이 되는 줄끼리 더한다.
+
+    GA4 는 네이버 하나를 m.search.naver.com · naver · link.naver.com 으로
+    흩어서 준다. 묶지 않으면 '네이버에서 141회' 라고 답하게 되는데 실제로는
+    369회다. 가장 큰 유입처를 두 배 넘게 틀리면 그 위에 세운 판단이 전부
+    헛것이 된다."""
+    agg = {}
+    for v, n in _pairs(week, key, dim, met):
+        name = labeler(v)
+        agg[name] = agg.get(name, 0) + n
+    return sorted(agg.items(), key=lambda x: x[1], reverse=True)
+
+
 def top_tickers(week, top=6):
     """가장 많이 눌린 종목. [(이름, 횟수)]
 
@@ -399,8 +413,24 @@ def facts_text(doc):
     block("어디로 들어왔나(유입 경로) · 방문 횟수", "channels",
           "sessionDefaultChannelGroup", "sessions",
           namer=lambda x: ga4_data.CHANNEL_NAMES.get(x, x))
-    block("어느 사이트에서 왔나 · 방문 횟수", "sources", "sessionSource", "sessions",
-          namer=lambda x: ga4_data.SOURCE_NAMES.get(x, x))
+    src = labeled(cur, "sources", "sessionSource", "sessions",
+                  ga4_data.source_label)
+    if src:
+        bef = dict(labeled(prev, "sources", "sessionSource", "sessions",
+                           ga4_data.source_label)) if prev else {}
+        L.append("\n[어느 사이트에서 왔나 · 방문 횟수]")
+        for name, n in src[:10]:
+            line = f"  {name}: {_n(n)}"
+            if name in bef:
+                d, _p = _delta(n, bef[name])
+                if d:
+                    line += f" (앞주 {_n(bef[name])} · {d})"
+            L.append(line)
+        L.append("  · 한 곳에서 온 것은 이미 묶여 있다(m.search.naver.com 과"
+                 " naver 는 둘 다 네이버다).")
+        L.append("  · '로그인하고 돌아옴' 은 새로 온 손님이 아니다."
+                 " 우리 사이트에서 네이버·카카오 로그인을 누르고 되돌아온"
+                 " 것이다. 유입으로 세지 마라.")
     block("페이지별 조회", "pages", "pagePath", "screenPageViews", top=12,
           namer=lambda p: ga4_data.PAGE_NAMES.get(p, p),
           kinder=ga4_data.page_kind)
@@ -427,7 +457,13 @@ def facts_text(doc):
                  " 방문자 수로 나눠 말하지 마라.")
 
     fn = source_funnel(cur)
-    if fn:
+    if fn and all(name == "알 수 없음" for name, *_ in fn):
+        # 맞춤 측정기준을 켜기 전 기록은 유입처가 전부 비어 있다. 그걸
+        # 한 덩어리로 묶어 '알 수 없음 0.8%' 라고 내놓으면 마치 어떤
+        # 유입처의 전환율인 것처럼 읽힌다. 아예 말하지 않는 편이 낫다.
+        L.append("\n[유입처별 들어옴 → 가입] 아직 가를 수 없다 — 이 주의 기록에는"
+                 " 유입처가 안 붙어 있다. 다음 주부터 나온다.")
+    elif fn:
         L.append("\n[유입처별 들어옴 → 가입]")
         for name, v, su, r in fn:
             rr = f" · 가입 {r:.1f}%" if r is not None else ""
