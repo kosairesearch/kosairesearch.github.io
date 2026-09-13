@@ -522,107 +522,6 @@ body::after,body::before{display:none}
   .lp-stats{justify-content:center;gap:26px}
   .lp-stage{order:-1;min-height:250px;max-height:280px;cursor:default;touch-action:auto}
 }
-
-
-/* ── 헤더에서 상자를 걷어낸다 (Resend 처럼) ──────────────────────
-   상자를 지우는 것만으로는 안 된다. 그 유리 상자가 밝아서 그 안에
-   '검은색' 워드마크와 검은 글씨가 들어가 있었다. 상자를 걷으면
-   검정 위에 검정이 되어 헤더가 통째로 사라진다.
-   그래서 로고를 흰 판본으로 바꾸고 글자색도 같이 올린다.
-
-   이 페이지 안에서만 바꾼다. .nav 는 다른 20개 페이지가 같이 쓰는
-   규칙이라 거기를 건드리면 밝은 페이지들의 헤더가 하얘진다. */
-.nav{background:none;border:0;box-shadow:none;border-radius:0;
-  -webkit-backdrop-filter:none;backdrop-filter:none;
-  top:0;margin-top:0;padding:20px 0;max-width:1180px}
-.nav .brand-logo--light{display:none}
-.nav .brand-logo--dark{display:block}
-.nav-links a{color:rgba(255,255,255,.66)}
-.nav-links a:hover{color:#fff;background:rgba(255,255,255,.07)}
-.nav .icon-btn{color:rgba(255,255,255,.72)}
-.nav .icon-btn:hover{color:#fff;background:rgba(255,255,255,.07)}
-
-/* 맨 위에서는 투명, 내려가면 화면 가로를 다 채우는 바가 깔린다.
-   .nav 는 가운데 1180px 짜리라 그 자체를 넓힐 수 없다. 그래서 뒤에
-   가짜 판을 하나 깔아 좌우로 늘린다. 구조를 안 건드리고 끝난다.
-   100vw 를 쓰면 세로 스크롤바 폭만큼 넘쳐서 가로 스크롤이 생기므로
-   화면 폭을 직접 재서 넣는다(--vw, 아래 스크립트). */
-.nav::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;
-  left:50%;width:var(--vw,100vw);transform:translateX(-50%);
-  background:rgba(7,11,22,.72);
-  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
-  border-bottom:1px solid rgba(255,255,255,.07);
-  opacity:0;transition:opacity .28s cubic-bezier(.22,.61,.36,1);pointer-events:none}
-.nav.is-stuck::before{opacity:1}
-
-/* ── 스크롤 섹션 ────────────────────────────────────────────────
-   프리즘이 하는 일을 그대로 따라간다 — 모든 별(넓은 커버리지) →
-   빛을 모은다(흩어진 자료) → 갈라져 나온다(다양한 인사이트).
-
-   움직임 규칙 두 가지만 지킨다.
-     · 아래에서 위로 24px, 투명도 0→1. 그 이상 하지 않는다.
-     · 완급은 히어로 버튼이 쓰던 cubic-bezier(.22,.61,.36,1) 그대로.
-   화려한 것을 하나 더 얹을 때마다 '고급' 에서 멀어진다. */
-.lp-feat{min-height:100vh;display:flex;flex-direction:column;justify-content:center;
-  align-items:center;text-align:center;padding:120px 0;gap:14px}
-.lp-num{font:700 12px var(--font-sans);letter-spacing:.16em;color:rgba(255,255,255,.28)}
-/* word-break:keep-all — 한글은 어절 단위로 끊어야 한다.
-   없으면 '리포트를 생성합 / 니다.' 처럼 단어 한가운데가 갈린다.
-   영어만 보고 만든 설정을 그대로 쓰면 반드시 이렇게 된다. */
-.lp-feat h2{margin:0;font-size:clamp(30px,4.4vw,48px);font-weight:800;letter-spacing:-.04em;
-  line-height:1.12;color:#fff;text-wrap:balance;word-break:keep-all;max-width:18ch}
-.lp-feat p{margin:0;font:400 17px/1.75 var(--font-sans);color:rgba(255,255,255,.6);
-  max-width:44ch;text-wrap:pretty;word-break:keep-all}
-.lp-vis{width:100%;margin-top:46px}
-
-/* ① 이름 벽 — 위에서 아래로 갈수록 작은 회사다. 들어 본 적 없는
-   이름이 아래에 깔려 있는 것 자체가 '같은 분량' 의 증거다. */
-.lp-wall{display:flex;flex-direction:column;gap:10px;overflow:hidden;
-  -webkit-mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent);
-  mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent)}
-.lp-row{display:flex;gap:10px;width:max-content;will-change:transform}
-.lp-chip{flex:none;padding:9px 15px;border-radius:var(--pill);white-space:nowrap;
-  font:500 13.5px var(--font-sans);color:rgba(255,255,255,.62);
-  border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.035)}
-.lp-row[data-size="mid"] .lp-chip{font-size:12.5px;color:rgba(255,255,255,.5)}
-.lp-row[data-size="small"] .lp-chip{font-size:11.5px;color:rgba(255,255,255,.38)}
-
-/* ② 모인다 — 흩어진 조각이 한 줄기로 */
-.lp-gather{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;max-width:470px;margin:0 auto}
-.lp-src{padding:10px 17px;border-radius:var(--pill);font:500 13.5px var(--font-sans);
-  color:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.13);
-  background:rgba(255,255,255,.05);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
-
-/* ③ 스펙트럼 — 프리즘 반대편. 리포트에 실제로 있는 13갈래다.
-   무지개로 쫙 펴면 싸구려가 된다. 색상환 200~286도 안에서만 움직여
-   '빛이 갈라졌다' 만 읽히게 한다. */
-.lp-spec{display:flex;flex-direction:column;gap:7px;max-width:560px;margin:0 auto;width:100%}
-.lp-band{display:grid;grid-template-columns:1fr 84px;align-items:center;gap:16px;padding:0 4px}
-.lp-band i{display:block;height:3px;border-radius:2px;width:var(--w,60%);
-  transform-origin:left center;background:linear-gradient(90deg,
-    hsla(var(--h),72%,68%,.9), hsla(var(--h),72%,68%,0))}
-.lp-band span{font:500 12.5px var(--font-sans);color:rgba(255,255,255,.5);white-space:nowrap}
-@media (max-width:560px){.lp-band{grid-template-columns:1fr 72px;gap:12px}}
-
-/* 마무리 */
-.lp-close{min-height:78vh;display:flex;flex-direction:column;justify-content:center;
-  align-items:center;text-align:center;padding:110px 0 130px;gap:16px}
-.lp-close h2{margin:0;font-size:clamp(30px,4.4vw,48px);font-weight:800;letter-spacing:-.04em;
-  line-height:1.12;color:#fff;text-wrap:balance;word-break:keep-all}
-.lp-close p{margin:0;font:400 17px/1.75 var(--font-sans);color:rgba(255,255,255,.6);
-  max-width:44ch;word-break:keep-all}
-
-@media (max-width:920px){
-  .lp-feat{min-height:auto;padding:96px 0;gap:12px}
-  .lp-feat h2{max-width:none}
-  .lp-vis{margin-top:34px}
-  .lp-close{min-height:auto;padding:90px 0 110px}
-}
-/* 움직임을 줄여 달라고 한 사람에게는 아무것도 움직이지 않는다.
-   멀미를 하는 사람이 있고, 그건 취향이 아니라 접근성이다. */
-@media (prefers-reduced-motion:reduce){
-  .lp-row{animation:none!important;transform:none!important}
-}
 </style>
   <script src="analytics.js?v=772effd5"></script>
 <script>
@@ -654,7 +553,7 @@ body::after,body::before{display:none}
 <div class="lp-vignette"></div>
 <div class="lp-grain"></div>
 
-<nav class="nav" data-screen-label="Contact · Nav">
+<nav class="nav glass" data-screen-label="Contact · Nav">
   <a class="brand" href="./"><img class="brand-logo brand-logo--light" src="../assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="../assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a>
   <div class="nav-links">
     <a href="Home.html">홈</a>
@@ -685,7 +584,7 @@ body::after,body::before{display:none}
     <section class="lp-hero">
       <div class="lp-copy">
         <div class="lp-kick">EVERY KOREAN STOCK · AI RESEARCH</div>
-        <h1 class="lp-h1">데이터를 인사이트로</h1>
+        <h1 class="lp-h1">한국 주식 전 종목,<br>AI 리서치로 한눈에</h1>
         <p class="lp-sub">증권사가 다루지 않는 소형주까지, 코스피·코스닥 2,700여 개 전 종목을 AI가 분석합니다. 재무·뉴스·밸류에이션을 한 페이지에.</p>
         <div class="lp-cta">
           <a class="btn btn-primary lp-btn" href="Home.html">시작하기</a>
@@ -710,53 +609,6 @@ body::after,body::before{display:none}
         </div>
       </div>
       <div class="lp-stage" id="lpStage" aria-hidden="true"></div>
-    </section>
-
-    <!-- ─────────────────────────────────────────────────────────────
-         프리즘이 하는 일을 스크롤로 따라간다.
-           ① 모든 별      — 넓은 커버리지
-           ② 빛을 모은다  — 흩어진 자료를 한곳에
-           ③ 갈라진다     — 복잡한 정보, 다양한 인사이트
-         카피는 사장이 직접 쓴 것이다. 손대지 말 것.
-         ───────────────────────────────────────────────────────────── -->
-    <section class="lp-feat" id="feat1">
-      <div class="lp-num" data-rise>01</div>
-      <h2 data-rise>넓은 커버리지</h2>
-      <p data-rise>코스피 코스닥에 상장된 모든 기업. 동일한 분량으로 리포트를 생성합니다.</p>
-      <div class="lp-vis" data-rise>
-        <div class="lp-wall" aria-hidden="true">
-          <div class="lp-row" data-size="big" data-dur="64"><span class="lp-chip">삼성전자</span><span class="lp-chip">SK하이닉스</span><span class="lp-chip">SK스퀘어</span><span class="lp-chip">삼성전기</span><span class="lp-chip">LG에너지솔루션</span><span class="lp-chip">현대차</span><span class="lp-chip">삼성바이오로직스</span><span class="lp-chip">KB금융</span><span class="lp-chip">삼성생명</span><span class="lp-chip">삼성물산</span><span class="lp-chip">두산에너빌리티</span><span class="lp-chip">한화에어로스페이스</span><span class="lp-chip">신한지주</span><span class="lp-chip">HD현대중공업</span><span class="lp-chip">기아</span><span class="lp-chip">삼성SDI</span><span class="lp-chip">삼성전자</span><span class="lp-chip">SK하이닉스</span><span class="lp-chip">SK스퀘어</span><span class="lp-chip">삼성전기</span><span class="lp-chip">LG에너지솔루션</span><span class="lp-chip">현대차</span><span class="lp-chip">삼성바이오로직스</span><span class="lp-chip">KB금융</span><span class="lp-chip">삼성생명</span><span class="lp-chip">삼성물산</span><span class="lp-chip">두산에너빌리티</span><span class="lp-chip">한화에어로스페이스</span><span class="lp-chip">신한지주</span><span class="lp-chip">HD현대중공업</span><span class="lp-chip">기아</span><span class="lp-chip">삼성SDI</span></div>
-          <div class="lp-row" data-size="mid" data-dur="82"><span class="lp-chip">HDC랩스</span><span class="lp-chip">티이엠씨</span><span class="lp-chip">동원개발</span><span class="lp-chip">대한제분</span><span class="lp-chip">네오위즈홀딩스</span><span class="lp-chip">디앤디플랫폼리츠</span><span class="lp-chip">BGF에코머티리얼즈</span><span class="lp-chip">그래피</span><span class="lp-chip">종근당홀딩스</span><span class="lp-chip">대성산업</span><span class="lp-chip">국보디자인</span><span class="lp-chip">한국유니온제약</span><span class="lp-chip">솔트룩스</span><span class="lp-chip">영진약품</span><span class="lp-chip">교촌에프앤비</span><span class="lp-chip">스카이라이프</span><span class="lp-chip">HDC랩스</span><span class="lp-chip">티이엠씨</span><span class="lp-chip">동원개발</span><span class="lp-chip">대한제분</span><span class="lp-chip">네오위즈홀딩스</span><span class="lp-chip">디앤디플랫폼리츠</span><span class="lp-chip">BGF에코머티리얼즈</span><span class="lp-chip">그래피</span><span class="lp-chip">종근당홀딩스</span><span class="lp-chip">대성산업</span><span class="lp-chip">국보디자인</span><span class="lp-chip">한국유니온제약</span><span class="lp-chip">솔트룩스</span><span class="lp-chip">영진약품</span><span class="lp-chip">교촌에프앤비</span><span class="lp-chip">스카이라이프</span></div>
-          <div class="lp-row" data-size="small" data-dur="74"><span class="lp-chip">엔지브이아이</span><span class="lp-chip">에스제이켐</span><span class="lp-chip">가이아코퍼레이션</span><span class="lp-chip">골드앤에스</span><span class="lp-chip">에이에프더블류</span><span class="lp-chip">바이오인프라생명과학</span><span class="lp-chip">씨앤에스링크</span><span class="lp-chip">애니메디솔루션</span><span class="lp-chip">원풍물산</span><span class="lp-chip">티엘엔지니어링</span><span class="lp-chip">위월드</span><span class="lp-chip">마이크로엔엑스</span><span class="lp-chip">레드우즈</span><span class="lp-chip">코스나인</span><span class="lp-chip">로지스몬</span><span class="lp-chip">코이즈</span><span class="lp-chip">엔지브이아이</span><span class="lp-chip">에스제이켐</span><span class="lp-chip">가이아코퍼레이션</span><span class="lp-chip">골드앤에스</span><span class="lp-chip">에이에프더블류</span><span class="lp-chip">바이오인프라생명과학</span><span class="lp-chip">씨앤에스링크</span><span class="lp-chip">애니메디솔루션</span><span class="lp-chip">원풍물산</span><span class="lp-chip">티엘엔지니어링</span><span class="lp-chip">위월드</span><span class="lp-chip">마이크로엔엑스</span><span class="lp-chip">레드우즈</span><span class="lp-chip">코스나인</span><span class="lp-chip">로지스몬</span><span class="lp-chip">코이즈</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="lp-feat" id="feat2">
-      <div class="lp-num" data-rise>02</div>
-      <h2 data-rise>흩어진 자료를 한곳에</h2>
-      <p data-rise>DART 공시, 뉴스, 재무 데이터까지 필요한 정보를 한곳에 모아 정리합니다.</p>
-      <div class="lp-vis" data-rise>
-        <div class="lp-gather" aria-hidden="true"><span class="lp-src">DART 공시</span><span class="lp-src">재무제표</span><span class="lp-src">실적 발표</span><span class="lp-src">뉴스</span><span class="lp-src">업종 자료</span><span class="lp-src">시세·거래량</span><span class="lp-src">밸류에이션 지표</span></div>
-      </div>
-    </section>
-
-    <section class="lp-feat" id="feat3">
-      <div class="lp-num" data-rise>03</div>
-      <h2 data-rise>복잡한 정보, 다양한 인사이트</h2>
-      <p data-rise>재무·뉴스·밸류에이션을 분석해 기업의 핵심을 다양한 관점으로 해석합니다.</p>
-      <div class="lp-vis" data-rise>
-        <div class="lp-spec" aria-hidden="true"><div class="lp-band"><i style="--h:200;--w:92%"></i><span>요약</span></div><div class="lp-band"><i style="--h:207;--w:74%"></i><span>핵심 포인트</span></div><div class="lp-band"><i style="--h:214;--w:80%"></i><span>사업 개요</span></div><div class="lp-band"><i style="--h:222;--w:88%"></i><span>실적</span></div><div class="lp-band"><i style="--h:229;--w:70%"></i><span>산업 동향</span></div><div class="lp-band"><i style="--h:236;--w:84%"></i><span>핵심 지표</span></div><div class="lp-band"><i style="--h:243;--w:66%"></i><span>전망</span></div><div class="lp-band"><i style="--h:250;--w:78%"></i><span>밸류에이션</span></div><div class="lp-band"><i style="--h:257;--w:90%"></i><span>강세 논리</span></div><div class="lp-band"><i style="--h:264;--w:86%"></i><span>약세 논리</span></div><div class="lp-band"><i style="--h:272;--w:72%"></i><span>리스크 요인</span></div><div class="lp-band"><i style="--h:279;--w:68%"></i><span>체크포인트</span></div><div class="lp-band"><i style="--h:286;--w:94%"></i><span>결론</span></div></div>
-      </div>
-    </section>
-
-    <section class="lp-close">
-      <h2 data-rise>종목 이름 하나면 됩니다</h2>
-      <p data-rise>검색창에 회사 이름을 넣으면 리포트가 바로 열립니다.</p>
-      <div class="lp-cta" data-rise style="margin-top:30px">
-        <a class="btn btn-primary lp-btn" href="Reports.html">리포트 둘러보기</a>
-        <a class="btn lp-btn lp-btn-soft" href="Signup.html">시작하기</a>
-      </div>
     </section>
   </div>
 </main>
@@ -1483,86 +1335,6 @@ try{
     renderer.render(scene,camera);
   });
 }catch(e){ console.error('PRISM_ERR', e && (e.stack||e.message||String(e))); }
-</script>
-<script>
-/* 헤더 바 — 조금이라도 내려가면 뒤판을 켠다. GSAP 과 무관하게 돈다.
-   헤더는 장식이 아니라서, 애니메이션 라이브러리가 실패해도 살아야 한다. */
-(function(){
-  var nav=document.querySelector('.nav'); if(!nav) return;
-  function vw(){ nav.style.setProperty('--vw', document.documentElement.clientWidth+'px'); }
-  function at(){ nav.classList.toggle('is-stuck', (window.scrollY||0) > 8); }
-  vw(); at();
-  addEventListener('scroll', at, {passive:true});
-  addEventListener('resize', vw, {passive:true});
-})();
-</script>
-<!-- ── 스크롤 움직임 ────────────────────────────────────────────────
-     GSAP 을 저장소에 넣어 둔 이유 — CDN 이 죽으면 애니메이션이 같이
-     죽고, 무엇보다 만든 사람이 여기서 돌려 볼 수가 없다. 46KB 다.
-     같은 페이지가 이미 three.js 260KB 를 받는다.
-
-     지켜야 할 것 하나 — 글은 CSS 로 숨기지 않는다.
-     숨겨 놓고 자바스크립트로 보이게 하면, 스크립트가 한 번 실패한
-     날 손님은 빈 화면을 본다. 그래서 처음 상태는 gsap.from 이
-     실행될 때 비로소 만들어진다. 스크립트가 없으면 그냥 다 보인다.
-     ───────────────────────────────────────────────────────────── -->
-<script src="vendor/gsap.min.js?v=0"></script>
-<script src="vendor/ScrollTrigger.min.js?v=0"></script>
-<script>
-(function () {
-  var g = window.gsap;
-  if (!g || !window.ScrollTrigger) return;      // 못 받았으면 조용히 그만둔다
-  var still = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (still) return;                            // 움직이지 말라고 한 사람에게는 안 움직인다
-  g.registerPlugin(ScrollTrigger);
-
-  var EASE = "power2.out";                      // 히어로 버튼이 쓰던 완급과 같은 결
-
-  /* ① 아래에서 위로. 24px 과 0.7초를 넘기지 않는다 —
-        더 크게 더 느리게 하면 '멋' 이 아니라 '느림' 이 된다. */
-  document.querySelectorAll(".lp-feat, .lp-close").forEach(function (sec) {
-    var bits = sec.querySelectorAll("[data-rise]");
-    if (!bits.length) return;
-    g.from(bits, {
-      y: 24, opacity: 0, duration: .7, ease: EASE, stagger: .08,
-      scrollTrigger: { trigger: sec, start: "top 76%", once: true }
-    });
-  });
-
-  /* ② 이름 벽 — 저절로 흐르지 않는다. 스크롤한 만큼만 움직인다.
-        저절로 흐르면 시선을 뺏고, 손님이 읽으려 할 때 도망간다. */
-  document.querySelectorAll(".lp-row").forEach(function (row, i) {
-    var span = row.scrollWidth / 2;             // 이름을 두 벌 깔아 두었다
-    if (!span) return;
-    var dir = i % 2 ? 1 : -1;
-    g.fromTo(row, { x: dir * span * -0.12 }, {
-      x: dir * span * 0.12, ease: "none",
-      scrollTrigger: { trigger: "#feat1", start: "top bottom",
-                       end: "bottom top", scrub: .6 }
-    });
-  });
-
-  /* ③ 모인다 — 조각이 흩어져 있다가 제자리로. 무작위를 쓰지 않는다.
-        새로고침할 때마다 다르게 보이면 만든 것이 아니라 흔들리는 것이다. */
-  var TILT = [-6, 4, -3, 7, -5, 3, -4];
-  document.querySelectorAll(".lp-gather .lp-src").forEach(function (el, i) {
-    g.from(el, {
-      y: 18, x: (i - 3) * 7, rotate: TILT[i % TILT.length], opacity: 0,
-      duration: .6, ease: EASE, delay: i * .045,
-      scrollTrigger: { trigger: "#feat2", start: "top 66%", once: true }
-    });
-  });
-
-  /* ④ 갈라진다 — 왼쪽에서 오른쪽으로 띠가 펴진다. 프리즘 반대편이다. */
-  g.from(".lp-spec .lp-band i", {
-    scaleX: 0, opacity: 0, duration: .55, ease: EASE, stagger: .045,
-    scrollTrigger: { trigger: "#feat3", start: "top 66%", once: true }
-  });
-  g.from(".lp-spec .lp-band span", {
-    opacity: 0, x: -6, duration: .45, ease: EASE, stagger: .045, delay: .12,
-    scrollTrigger: { trigger: "#feat3", start: "top 66%", once: true }
-  });
-})();
 </script>
 <style>#stgBadge{position:fixed;left:12px;bottom:12px;z-index:99999;font:600 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.08em;color:#0b1020;background:#ffd34d;padding:6px 10px;border-radius:999px;box-shadow:0 2px 10px rgba(0,0,0,.4);pointer-events:none}</style><style>#stgLinks{position:fixed;left:92px;bottom:12px;z-index:99999;font:600 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.06em}#stgLinks a{color:#cfe0ff;background:rgba(12,18,36,.82);border:1px solid rgba(160,190,255,.28);padding:6px 10px;border-radius:999px;text-decoration:none}</style><div id="stgBadge">STAGING</div><div id="stgLinks"><a href="pricing.html">요금제</a></div>
 </body>
