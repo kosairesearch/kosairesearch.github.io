@@ -377,6 +377,24 @@ d1 = {"items": [{"id": "exp_9", "title": "x", "status": "진행중",
                  "baseValue": 400, "startedWeek": "2026-09-07"}]}
 eq("시작한 그 주에는 판정하지 않는다", X.review(d1, [B, BEH]), [])
 
+print("\n⑬-2 채팅창 규칙과 텔레그램 규칙이 섞이지 않았나")
+# 한 번 섞였다. 텔레그램은 표가 깨지니까 '표를 그리지 마라' 인데,
+# 그걸 채팅창 담당에게도 복사해 놓아서 사장이 줄글을 받았다.
+SKILL = Path(__file__).resolve().parent.parent.parent / ".claude/skills/마케팅/SKILL.md"
+ok("마케팅 담당 설명서가 있다", SKILL.exists(), str(SKILL))
+if SKILL.exists():
+    sk = SKILL.read_text(encoding="utf-8")
+    ok("채팅창에서는 표를 쓰라고 한다", "표가 먼저다" in sk)
+    ok("채팅창에 '표를 그리지 마라' 가 들어가 있지 않다",
+       "표를 그리지 마라" not in sk)
+    ok("텔레그램은 다르다고 못 박아 뒀다", "텔레그램으로 가는" in sk)
+    ok("숫자 칸 오른쪽 정렬을 일러 준다", "---:" in sk)
+    ok("'됐는지 아는 법' 에 선을 적으라고 한다", "30회를 넘으면" in sk)
+ok("텔레그램 보고에는 표를 그리지 말라고 남아 있다",
+   "표를 그리지 마라" in M.PROMPT)
+ok("텔레그램 보고는 줄글 대신 짧은 줄로 쓰게 한다",
+   "문단으로 쓰지 마라" in M.PROMPT)
+
 print("\n⑭ 보고서 한 바퀴 — 판정 → 글 → 제안 → 저장 (모델은 가짜)")
 import contextlib
 import io
