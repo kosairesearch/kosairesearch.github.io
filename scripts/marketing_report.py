@@ -248,6 +248,77 @@ def by_visitor(week, top=6):
     return out
 
 
+def top_reports(week, top=8):
+    """실제로 열린 리포트. [(이름, 횟수)]
+
+    top_tickers 와 다르다 — 저건 '링크를 눌렀다', 이건 '페이지를 열었다'.
+    눌러 놓고 안 읽는 사람도 있고, 즐겨찾기나 검색으로 링크를 안 거치고
+    바로 오는 사람도 있다. 무엇이 읽히는지는 이쪽이 맞다."""
+    import ga4_data
+    agg = {}
+    for t, n in _pairs(week, "reports", "customEvent:ticker"):
+        t = t.strip()
+        if not t or t == "(not set)":
+            continue
+        agg[t] = agg.get(t, 0) + n
+    rows = sorted(agg.items(), key=lambda x: x[1], reverse=True)
+    return [(ga4_data.ticker_name(t), n) for t, n in rows[:top]]
+
+
+def page_time(week, top=10):
+    """페이지마다 얼마나 오래 보나. [(이름, 조회, 1회당 초)]
+
+    '페이지별 이탈률' 을 이걸로 대신한다. GA4 는 '이 페이지에서 나갔다'
+    를 세어 주지 않는다(옛 애널리틱스의 exit rate 는 GA4 에 없다).
+    억지로 만들면 page_leave ÷ 조회 가 되는데, 페이지를 떠날 때마다
+    뜨는 것이라 어느 페이지든 100%가 나온다 — 아무 말도 아니다.
+    대신 '얼마나 오래 붙잡았나' 를 본다. 이건 실제로 있는 숫자다."""
+    import ga4_data
+    out = []
+    for r in week.get("pages") or []:
+        v = r.get("screenPageViews") or 0
+        d = r.get("userEngagementDuration") or 0
+        if v < 5:
+            continue                 # 5회 미만은 평균이 널뛴다
+        out.append((ga4_data.PAGE_NAMES.get(r.get("pagePath"), r.get("pagePath")),
+                    v, round(d / v)))
+    out.sort(key=lambda x: x[1], reverse=True)
+    return out[:top]
+
+
+SEEN_ORDER = ["0", "1", "2", "3~5", "6~10", "11+"]
+
+
+def seen_before_signup(week):
+    """가입한 사람은 가입 전에 리포트를 몇 개 봤나.
+    [(묶음, 가입 수, 가입 몫%, 전체 몫%)] — 전체와 견줘야 뜻이 생긴다."""
+    up = dict(_pairs(week, "signupSeen", "customEvent:reports_seen"))
+    allv = dict(_pairs(week, "allSeen", "customEvent:reports_seen"))
+    tu, ta = sum(up.values()), sum(allv.values())
+    if not tu:
+        return []
+    out = []
+    for k in [k for k in SEEN_ORDER if k in up or k in allv]:
+        out.append((k, up.get(k, 0),
+                    up.get(k, 0) / tu * 100,
+                    (allv.get(k, 0) / ta * 100) if ta else None))
+    return out
+
+
+def retention_rows(doc, weeks=6):
+    """첫 방문 뒤 몇 주째에 다시 오나. [(주, 처음 온 사람, [(n주째, 명, %)])]"""
+    out = []
+    for c in (doc.get("retention") or [])[-weeks:]:
+        size = c.get("size") or 0
+        if not size:
+            continue
+        back = [(int(k), v, v / size * 100)
+                for k, v in sorted((c.get("back") or {}).items(),
+                                   key=lambda x: int(x[0]))]
+        out.append((c.get("week"), size, back))
+    return out
+
+
 def has_behavior(week):
     """행동 자료가 한 가지라도 들어왔나."""
     return any((week or {}).get(k) for k in
@@ -448,6 +519,34 @@ def facts_text(doc):
         L.append("  · 손님이 무엇을 궁금해하는지다. 여기 자주 나오는 종목의 리포트를"
                  " 먼저 손보는 것이 아무 리포트나 늘리는 것보다 낫다.")
 
+    rp = top_reports(cur)
+    if rp:
+        L.append("\n[실제로 열린 리포트 · 연 횟수]")
+        for name, c in rp:
+            L.append(f"  {name}: {_n(c)}")
+        L.append("  · 위의 '눌린 종목' 과 다르다. 저건 링크를 눌렀다는 것이고"
+                 " 이건 페이지를 열었다는 것이다. 무엇이 읽히는지는 이쪽이 맞다.")
+
+    pt = page_time(cur)
+    if pt:
+        L.append("\n[페이지마다 얼마나 오래 보나 · 조회 · 1회당 머문 시간]")
+        for name, v, sec in pt:
+            L.append(f"  {name}: {_n(v)}회 · {sec // 60}분 {sec % 60}초")
+        L.append("  · GA4 는 '이 페이지에서 나갔다' 를 세어 주지 않는다."
+                 " 그래서 페이지별 이탈률 대신 이걸 본다. 조회는 많은데"
+                 " 머문 시간이 유난히 짧은 페이지가 손님을 놓치는 자리다.")
+
+    sb = seen_before_signup(cur)
+    if sb:
+        L.append("\n[가입한 사람은 가입 전에 리포트를 몇 개 봤나]")
+        L.append("  묶음 · 가입 수 · 가입자 중 몫 · (견줄 값) 전체 방문 중 몫")
+        for k, n, pu, pa in sb:
+            tail = f" · 전체는 {pa:.0f}%" if pa is not None else ""
+            L.append(f"  {k}개: {_n(n)}건 · {pu:.0f}%{tail}")
+        L.append("  · 전체와 견줘서 유난히 높은 묶음이 있으면, 그 수만큼 본"
+                 " 사람에게 가입을 권하는 것이 말이 된다.")
+        L.append("  · 가입 수가 10건 아래면 우연일 수 있다. 단정하지 마라.")
+
     rt = read_through(cur)
     if rt:
         pct, start, end = rt
@@ -522,6 +621,19 @@ def facts_text(doc):
             L.append(f"\n[주의] 계정·관리자 페이지 조회가 {acc_bef}회에서 {acc_now}회로"
                      " 크게 움직였다. 가입·관심종목 같은 숫자도 우리가 시험하면 같이"
                      " 움직인다. 이 변화를 손님의 행동으로 읽지 마라.")
+
+    rr = retention_rows(doc)
+    if rr:
+        L.append("\n[첫 방문 뒤 언제 다시 오나]")
+        L.append("  처음 온 주 · 그 주에 처음 온 사람 · 1주 뒤 · 2주 뒤 …")
+        for wk, size, back in rr:
+            tail = " · ".join(f"{n}주 뒤 {v}명({r:.0f}%)" for n, v, r in back[:4])
+            L.append(f"  {wk}  {_n(size)}명  " + (tail or "아직 돌아온 사람 없음"))
+        L.append("  · 같은 주에 처음 온 사람들을 묶어서, 그 덩어리가 몇 주째에"
+                 " 몇 명이나 돌아왔는지다. 최근 주는 아직 시간이 안 지나서"
+                 " 낮게 나오는 것이 정상이다 — 그걸 '나빠졌다' 로 읽지 마라.")
+        L.append("  · 1주 뒤 비율이 주마다 어떻게 변하는지가 볼 것이다."
+                 " 그게 오르면 사이트가 붙잡는 힘이 세진 것이다.")
 
     L.append("\n[페이지 갈래가 뜻하는 것]")
     L.append("  콘텐츠 = 손님이 보러 오는 글. 마케팅이 키워야 할 숫자.")

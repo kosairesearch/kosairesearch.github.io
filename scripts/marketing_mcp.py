@@ -218,6 +218,32 @@ def t_behavior(week=None):
     if not cur:
         return _need(doc, week)
     L = [f"[{cur['week']} ~ {cur.get('to')}] 어떻게 읽고 어디서 떠났나"]
+    rp = M.top_reports(cur, 10)
+    if rp:
+        L.append("\n■ 실제로 열린 리포트")
+        for name, c in rp:
+            L.append(f"  {name}: {c:,}회")
+        L.append("  ※ '눌린 종목' 과 다르다 — 저건 링크를 눌렀다는 것, 이건"
+                 " 페이지를 열었다는 것. 무엇이 읽히는지는 이쪽이 맞다.")
+
+    pt = M.page_time(cur)
+    if pt:
+        L.append("\n■ 페이지마다 얼마나 오래 보나")
+        for name, v, sec in pt:
+            L.append(f"  {name}: {v:,}회 · 1회당 {sec // 60}분 {sec % 60}초")
+        L.append("  ※ GA4 는 '이 페이지에서 나갔다' 를 세어 주지 않는다."
+                 " 페이지별 이탈률 대신 이걸 본다. 조회는 많은데 머문 시간이"
+                 " 짧은 페이지가 손님을 놓치는 자리다.")
+
+    sb = M.seen_before_signup(cur)
+    if sb:
+        L.append("\n■ 가입한 사람은 가입 전에 리포트를 몇 개 봤나")
+        for k, n, pu, pa in sb:
+            tail = f" · 전체는 {pa:.0f}%" if pa is not None else ""
+            L.append(f"  {k}개: {n:,}건 · 가입자 중 {pu:.0f}%{tail}")
+        L.append("  ※ 전체와 견줘 유난히 높은 묶음이 있으면, 그만큼 본 사람에게"
+                 " 가입을 권하는 것이 말이 된다. 가입이 10건 아래면 단정하지 마라.")
+
     rt = M.read_through(cur)
     if rt:
         pct, start, end = rt
@@ -255,6 +281,28 @@ def t_behavior(week=None):
         L.append("  ※ GA4 '맞춤 측정기준' 등록 전이거나 아직 안 쌓인 것. 0 이 아니다.")
     if len(L) == 1:
         L.append("  이 주에는 행동 자료가 없습니다.")
+    return "\n".join(L)
+
+
+def t_retention(weeks=6):
+    """첫 방문 뒤 언제 다시 오나."""
+    import marketing_report as M
+    doc = _weekly()
+    rows = M.retention_rows(doc, max(2, min(int(weeks or 6), 12)))
+    if not rows:
+        if not (doc.get("weeks") or []):
+            return _need(doc, None)
+        return ("아직 못 봤습니다 — 다음 수집 때 함께 받습니다."
+                " refresh 로 지금 받아올 수도 있습니다.")
+    L = ["■ 첫 방문 뒤 언제 다시 오나",
+         "  같은 주에 처음 온 사람들을 묶어서, 몇 주째에 몇 명이 돌아왔는지입니다.",
+         ""]
+    for wk, size, back in rows:
+        tail = " · ".join(f"{n}주 뒤 {v}명({r:.0f}%)" for n, v, r in back[:5])
+        L.append(f"  {wk}  처음 온 {size:,}명  " + (tail or "아직 돌아온 사람 없음"))
+    L.append("")
+    L.append("  ※ 가장 최근 주는 아직 시간이 안 지나서 낮게 나오는 것이 정상입니다.")
+    L.append("  ※ 볼 것은 '1주 뒤' 비율이 주마다 오르는지입니다.")
     return "\n".join(L)
 
 
@@ -458,6 +506,12 @@ TOOLS = [
                              "signUp", "signUpRate", "watchlistAdd"],
                     "description": "볼 지표 (기본 users)"},
          "weeks": {"type": "integer", "description": "몇 주치 (기본 12)"}}}},
+    {"name": "retention", "fn": t_retention,
+     "description": "첫 방문 뒤 언제 다시 오나 — 같은 주에 처음 온 사람들이 "
+                    "1주 뒤·2주 뒤에 몇 명이나 돌아왔는지. '재방문까지 얼마나 "
+                    "걸리나' '붙잡는 힘이 세지고 있나' 에 답한다.",
+     "inputSchema": {"type": "object", "properties": {
+         "weeks": {"type": "integer", "description": "몇 주치 (기본 6)"}}}},
     {"name": "report", "fn": t_report,
      "description": "저장해 둔 주간 보고서 원문 — 텔레그램으로 보낸 줄글 "
                     "그대로다. '지난주에 뭐라고 했었지' 처럼 지난 보고서 "

@@ -299,6 +299,59 @@ ok("로그인 되돌아온 것을 유입으로 세지 말라고 일러 준다",
 ok("전부 '알 수 없음' 이면 전환율을 말하지 않는다",
    "아직 가를 수 없다" in ft2 and "알 수 없음: 들어옴" not in ft2, ft2)
 
+print("\n⑫-3 무엇이 읽혔나 · 얼마나 붙잡나 · 가입 전에 뭘 했나")
+DEEP = wk("2026-09-07", "2026-09-13", 400, 350, 50, 500, 400, 1200, 200,
+          pages=[{"pagePath": "/stock.html", "screenPageViews": 400,
+                  "userEngagementDuration": 36000},
+                 {"pagePath": "/brief.html", "screenPageViews": 100,
+                  "userEngagementDuration": 1200},
+                 {"pagePath": "/About.html", "screenPageViews": 3,
+                  "userEngagementDuration": 3}],
+          reports=[{"customEvent:ticker": t_, "eventCount": c} for t_, c in
+                   [("005930", 40), ("000660", 22), ("(not set)", 9)]],
+          tickers=[{"eventName": "stock_click",
+                    "customEvent:ticker": "005930", "eventCount": 18}],
+          signupSeen=[{"customEvent:reports_seen": "3~5", "eventCount": 6},
+                      {"customEvent:reports_seen": "0", "eventCount": 1}],
+          allSeen=[{"customEvent:reports_seen": "0", "eventCount": 300},
+                   {"customEvent:reports_seen": "3~5", "eventCount": 40}])
+
+rp = M.top_reports(DEEP)
+eq("열린 리포트에 이름표가 붙는다", rp[0], ("삼성전자", 40))
+ok("(not set) 은 버린다", all(n != "(not set)" for n, _ in rp))
+ok("'눌림' 과 '열림' 은 다른 수", M.top_tickers(DEEP)[0][1] != rp[0][1])
+
+pt = dict((n, (v, sec)) for n, v, sec in M.page_time(DEEP))
+eq("1회당 머문 시간을 잰다", pt["종목 리포트"], (400, 90))
+eq("짧게 보는 페이지도 보인다", pt["모닝 브리핑"], (100, 12))
+ok("조회가 너무 적은 페이지는 뺀다", "회사 소개" not in pt, pt)
+
+sb = dict((k, (n, round(pu), round(pa))) for k, n, pu, pa in M.seen_before_signup(DEEP))
+eq("가입자는 3~5개 본 사람이 많다", sb["3~5"], (6, 86, 12))
+ok("전체 분포와 견줄 수 있다", sb["0"][2] > sb["3~5"][2], sb)
+eq("가입이 없으면 빈 목록", M.seen_before_signup(B), [])
+
+KEEP = {"weeks": [B, DEEP],
+        "retention": [{"week": "2026-08-24", "size": 400, "back": {1: 80, 2: 40}},
+                      {"week": "2026-08-31", "size": 350, "back": {1: 77}},
+                      {"week": "2026-09-07", "size": 300, "back": {}}]}
+rr = M.retention_rows(KEEP)
+eq("코호트를 주별로 준다", len(rr), 3)
+eq("1주 뒤 비율", (rr[0][0], round(rr[0][2][0][2])), ("2026-08-24", 20))
+eq("아직 아무도 안 돌아온 주", rr[2][2], [])
+eq("코호트가 없으면 빈 목록", M.retention_rows({"weeks": [B]}), [])
+
+ft3 = M.facts_text(KEEP)
+for want in ("실제로 열린 리포트", "페이지마다 얼마나 오래 보나",
+             "가입한 사람은 가입 전에 리포트를 몇 개 봤나",
+             "첫 방문 뒤 언제 다시 오나"):
+    ok(f"재료에 '{want}' 가 있다", want in ft3)
+ok("GA4 에 이탈률이 없다는 것을 일러 준다",
+   "세어 주지 않는다" in ft3, ft3)
+ok("최근 코호트가 낮은 이유를 일러 준다",
+   "'나빠졌다' 로 읽지 마라" in ft3, ft3)
+ok("가입이 적으면 단정하지 말라고 한다", "단정하지 마라" in ft3)
+
 print("\n⑬ 실험 제안 블록")
 BODY = "■ 한 줄로 말하면\n좋았다.\n"
 GOTTEXT = BODY + "<<실험제안>>\n제목: 가입 버튼\n이유: 가입이 적다\n" \
