@@ -234,8 +234,22 @@ ok("이름표와 숫자가 달라붙지 않는다", "끝까지 읽음 " in mb, m
 eq("칸보다 긴 이름도 한 칸은 띄운다", M._pad("아주아주긴이름표입니다", 4),
    "아주아주긴이름표입니다 ")
 ok("완독 비율의 분모를 밝힌다", "내려 읽기 시작" in mb, mb)
-ok("행동 자료가 없으면 그 칸이 아예 없다",
-   "손님이 무엇을 봤나" not in M.metrics_block(GOOD))
+mb0 = M.metrics_block(GOOD)
+ok("행동 자료가 없으면 왜 없는지 말한다",
+   "손님이 무엇을 봤나" in mb0 and "아직 쌓이지 않았습니다" in mb0, mb0)
+ok("자료가 있으면 그 말을 하지 않는다", "아직 쌓이지 않았습니다" not in mb, mb)
+
+eq("(not set) 은 사람 말로 바꾼다", M.page_label("(not set)"), "어딘지 기록 안 됨")
+eq("빈 값도 마찬가지", M.page_label(""), "어딘지 기록 안 됨")
+eq("아는 주소는 이름표를", M.page_label("/stock.html"), "종목 리포트")
+eq("물음표 뒤는 떼고 본다", M.page_label("/stock.html?ticker=005930"), "종목 리포트")
+eq("모르는 주소는 그대로", M.page_label("/새페이지.html"), "/새페이지.html")
+
+NOTSET = wk("2026-09-07", "2026-09-13", 10, 9, 1, 10, 5, 20, 30, pages=PAGES_B,
+            signupPage=[{"customEvent:from_page": "(not set)", "eventCount": 4}])
+ok("재료에도 영어가 그대로 안 나간다",
+   "(not set)" not in M.facts_text({"weeks": [NOTSET]}),
+   M.facts_text({"weeks": [NOTSET]}))
 
 ft = M.facts_text({"weeks": [B, BEH], "health": {"ok": True}})
 for want in ("가장 많이 눌린 종목", "얼마나 내려 읽나", "유입처별 들어옴 → 가입",
@@ -293,11 +307,17 @@ EXP = {"items": [
     {"id": "exp_3", "title": "안 한 것", "status": "제안됨",
      "metricLabel": "방문자 수", "baseValue": 382},
 ]}
+FRESH0 = {"id": "exp_4", "title": "새것", "why": "왜", "action": "함",
+          "metricLabel": "가입 건수", "baseValue": 6}
 blk = M.exp_block(EXP, None, [EXP["items"][0]])
 ok("끝난 실험의 판정을 적는다", "[끝남 · 효과 있음]" in blk, blk)
 ok("하는 중을 적는다", "[하는 중] 하는 중" in blk, blk)
 ok("안 한 것의 번호를 적는다", "exp_3" in blk, blk)
 ok("어떻게 표시하는지 알려 준다", "Run workflow" in blk, blk)
+ok("번호가 하나면 '중 하나를' 이라고 하지 않는다",
+   "중 하나를" not in M.exp_block({"items": [EXP["items"][2]]}), blk)
+ok("번호가 여럿이면 고르라고 한다",
+   "중 하나를" in M.exp_block(EXP, FRESH0, []), blk)
 eq("대장이 비면 칸을 안 만든다", M.exp_block({"items": []}), "")
 
 FRESH = {"id": "exp_4", "title": "새것", "why": "왜냐면", "action": "이걸 한다",

@@ -185,7 +185,7 @@ def t_pages(week=None, top=15):
     if rows:
         L.append("\n■ 페이지별 조회 (갈래)")
         for p, n in rows[:max(1, min(int(top or 15), 40))]:
-            L.append(f"  {G.PAGE_NAMES.get(p, p)} [{G.page_kind(p)}]: {n:,}")
+            L.append(f"  {M.page_label(p)} [{G.page_kind(p)}]: {n:,}")
         kinds, tot = M.split_pages(cur)
         inner = kinds["계정"] + kinds["관리자"] + kinds["테스트"]
         if tot:
@@ -203,7 +203,6 @@ def t_pages(week=None, top=15):
 
 
 def t_behavior(week=None):
-    import ga4_data as G
     import marketing_report as M
     doc = _weekly()
     cur = _pick(doc, week)
@@ -224,17 +223,17 @@ def t_behavior(week=None):
         for p, n in lp[:10]:
             v = b.get(p)
             bs = f" · 그냥 나감 {v * 100:.0f}%" if isinstance(v, (int, float)) else ""
-            L.append(f"  {G.PAGE_NAMES.get(p.split('?')[0], p)}: {n:,}{bs}")
+            L.append(f"  {M.page_label(p)}: {n:,}{bs}")
     lv = M._pairs(cur, "leave", "customEvent:from_page")
     if lv:
         L.append("\n■ 어느 페이지에서 떠났나")
         for p, n in lv[:10]:
-            L.append(f"  {G.PAGE_NAMES.get(p, p)}: {n:,}")
+            L.append(f"  {M.page_label(p)}: {n:,}")
     sp = M._pairs(cur, "signupPage", "customEvent:from_page")
     if sp:
         L.append("\n■ 어느 페이지에서 가입을 눌렀나")
         for p, n in sp[:10]:
-            L.append(f"  {G.PAGE_NAMES.get(p, p)}: {n:,}")
+            L.append(f"  {M.page_label(p)}: {n:,}")
     bv = M.by_visitor(cur, 8)
     if bv.get("재방문") or bv.get("신규"):
         L.append("\n■ 누가 무엇을 보나 (콘텐츠만)")

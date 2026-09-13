@@ -140,6 +140,18 @@ def split_pages(week):
 # 여기서 한 번만 하고, 숫자판과 모델 재료가 같은 함수를 쓴다. 두 군데서
 # 따로 계산하면 숫자판과 해설이 서로 다른 말을 하게 된다.
 
+def page_label(path):
+    """페이지 주소를 사람이 읽는 이름으로.
+
+    GA4 는 맞춤 측정기준을 켜기 전의 기록을 '(not set)' 으로 준다.
+    그대로 내보내면 사장 화면에 영어가 나가고, 무슨 뜻인지 알 수 없다."""
+    import ga4_data
+    p = (path or "").strip()
+    if not p or p in ("(not set)", "(none)"):
+        return "어딘지 기록 안 됨"
+    return ga4_data.PAGE_NAMES.get(p, ga4_data.PAGE_NAMES.get(p.split("?")[0], p))
+
+
 def _pairs(week, key, dim, met="eventCount"):
     """[(차원값, 숫자)] 로 꺼내 큰 순서로 정렬한다. 없으면 빈 목록."""
     out = []
@@ -323,9 +335,12 @@ def metrics_block(doc):
             L.append(f"  {_pad('끝까지 읽음', 16)}{pct}%"
                      f"  (내려 읽기 시작 {_n(start)}회 중 {_n(end)}회)")
         L.append("")
-    elif cur.get("_missing") and not has_behavior(cur):
+    else:
+        # 빈 칸을 그냥 없애면 "원래 없는 것" 인지 "아직 안 쌓인 것" 인지
+        # 알 수 없다. 기록을 켠 다음 주부터는 이 줄이 저절로 사라진다.
         L.append("■ 손님이 무엇을 봤나")
-        L.append("  아직 받지 못했습니다 — GA4 '맞춤 측정기준' 등록 뒤 쌓이는 자료입니다.")
+        L.append("  아직 쌓이지 않았습니다 — 종목 클릭·읽은 길이는 기록을 켠"
+                 " 뒤부터 모입니다.")
         L.append("")
 
     hl = doc.get("health") or {}
@@ -423,7 +438,7 @@ def facts_text(doc):
     if sp:
         L.append("\n[어느 페이지에서 가입을 눌렀나]")
         for pth, n in sp[:8]:
-            L.append(f"  {ga4_data.PAGE_NAMES.get(pth, pth)}: {_n(n)}")
+            L.append(f"  {page_label(pth)}: {_n(n)}")
 
     lp = _pairs(cur, "landings", "landingPage", "sessions")
     if lp:
@@ -433,7 +448,7 @@ def facts_text(doc):
         for pth, n in lp[:8]:
             b = bounce.get(pth)
             bs = f" · 그냥 나감 {b * 100:.0f}%" if isinstance(b, (int, float)) else ""
-            L.append(f"  {ga4_data.PAGE_NAMES.get(pth.split('?')[0], pth)}: {_n(n)}{bs}")
+            L.append(f"  {page_label(pth)}: {_n(n)}{bs}")
         L.append("  · '그냥 나감' 은 한 장만 보고 떠난 비율이다. 여기가 높은 페이지가"
                  " 손님을 가장 많이 잃고 있는 자리다.")
 
@@ -441,7 +456,7 @@ def facts_text(doc):
     if lv:
         L.append("\n[어느 페이지에서 떠났나]")
         for pth, n in lv[:8]:
-            L.append(f"  {ga4_data.PAGE_NAMES.get(pth, pth)}: {_n(n)}")
+            L.append(f"  {page_label(pth)}: {_n(n)}")
         L.append("  · 모든 페이지에서 언젠가는 떠난다. 조회 수에 견줘 유난히"
                  " 큰 곳만 뜻이 있다.")
 
@@ -606,9 +621,11 @@ def exp_block(exp, fresh=None, done=None):
         L.append(f"     할 일: {fresh.get('action')}")
         L.append(f"     볼 지표: {fresh.get('metricLabel')} (지금 {fresh.get('baseValue')})")
     if fresh or wait:
-        ids = " · ".join(str(x.get("id")) for x in ([fresh] if fresh else []) + wait)
+        nums = [str(x.get("id")) for x in ([fresh] if fresh else []) + wait]
+        ids = (nums[0] + " 을" if len(nums) == 1
+               else " · ".join(nums) + " 중 하나를")
         L.append("  ▸ 했으면 알려주세요 — GitHub Actions ▸ '주간 성과 보고' ▸")
-        L.append(f"    Run workflow ▸ '실행 표시' 칸에 {ids} 중 하나를 적으면")
+        L.append(f"    Run workflow ▸ '실행 표시' 칸에 {ids} 적으면")
         L.append("    다음 주부터 효과를 재기 시작합니다.")
     return "\n".join(L)
 
