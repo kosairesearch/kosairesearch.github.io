@@ -52,6 +52,9 @@
 
     python scripts/marketing_mcp.py --selftest
 
+클로드 앱을 안 깔았으면 — 깃허브 Actions 의 '마케팅 숫자 물어보기' 를
+돌리면 된다. 그게 이 파일의 --ask 를 부른다.
+
 왜 규약을 직접 구현했나
 ----------------------
 MCP 표준 라이브러리를 쓰면 pydantic·starlette·uvicorn 까지 딸려 온다.
@@ -674,9 +677,41 @@ def config():
     return 0
 
 
+def ask(tool, argtext=""):
+    """도구 하나를 불러서 그냥 찍는다. 클로드 앱을 안 깔아도,
+    깃허브 Actions 에서 이걸 돌리면 숫자를 볼 수 있다.
+
+        python scripts/marketing_mcp.py --ask weekly
+        python scripts/marketing_mcp.py --ask trend --args "metric=returnRate weeks=8"
+    """
+    args = {}
+    for bit in (argtext or "").replace(",", " ").split():
+        if "=" not in bit:
+            continue
+        k, v = bit.split("=", 1)
+        k, v = k.strip(), v.strip()
+        if not k:
+            continue
+        args[k] = int(v) if v.lstrip("-").isdigit() else v
+    if tool not in BY_NAME:
+        log("쓸 수 있는 것: " + ", ".join(BY_NAME))
+        return 2
+    text, bad = call_tool(tool, args)
+    print(text)
+    return 1 if bad else 0
+
+
 def main():
     if "--selftest" in sys.argv:
         return selftest()
+    if "--ask" in sys.argv:
+        i = sys.argv.index("--ask")
+        tool = sys.argv[i + 1] if len(sys.argv) > i + 1 else ""
+        argtext = ""
+        if "--args" in sys.argv:
+            j = sys.argv.index("--args")
+            argtext = sys.argv[j + 1] if len(sys.argv) > j + 1 else ""
+        return ask(tool, argtext)
     if "--config" in sys.argv:
         return config()
     if "--tools" in sys.argv:

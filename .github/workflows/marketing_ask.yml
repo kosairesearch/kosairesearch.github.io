@@ -1,0 +1,70 @@
+name: 📊 마케팅 숫자 물어보기
+
+# 클로드 앱을 컴퓨터에 깔지 않아도 숫자를 볼 수 있게 하는 문.
+#
+# 왜 있나
+#   주간 보고는 월요일에 한 번 온다. 그 사이에 "네이버에서 온 사람 중
+#   몇 명이 가입했지?" 가 궁금해지면 다음 주까지 기다려야 했다.
+#   여기서 돌리면 바로 나온다. 요약(Summary) 칸에 찍힌다.
+#
+#   클로드(대화창)한테 물어보면 클로드가 이걸 대신 돌리고 읽어 준다.
+#   사람이 직접 돌려도 된다 — Run workflow 를 누르고 아래에서 고르면 된다.
+#
+# 돈 안 든다. 모델을 부르지 않고 이미 받아 둔 숫자를 꺼내 보기만 한다.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tool:
+        description: '무엇을 볼지'
+        type: choice
+        default: weekly
+        options:
+          - weekly       # 주간 숫자판 (텔레그램에 오는 그 표)
+          - traffic      # 어디서 왔나 · 유입처별 가입 전환
+          - pages        # 어느 페이지·어느 종목을 봤나
+          - behavior     # 얼마나 읽고 어디서 떠났나
+          - trend        # 한 지표의 여러 주 흐름
+          - report       # 지난 주간 보고서 원문
+          - experiments  # 실험 대장
+          - weeks        # 받아 둔 주가 몇 개인지
+      args:
+        description: "더 볼 것 (예: week=2026-08-31 · metric=returnRate weeks=8)"
+        default: ''
+
+permissions:
+  contents: read
+
+concurrency:
+  group: marketing-ask
+  cancel-in-progress: false
+
+jobs:
+  ask:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+
+      # 고른 값은 env 로 넘긴다 — 쉘 명령줄에 그대로 붙이면 따옴표
+      # 하나로 명령이 바뀐다.
+      - name: 물어본다
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+          TOOL: ${{ inputs.tool }}
+          ARGS: ${{ inputs.args }}
+        run: |
+          python3 scripts/marketing_mcp.py --ask "$TOOL" --args "$ARGS" \
+            2>&1 | tee /tmp/answer.txt
+          {
+            echo "## $TOOL ${ARGS:+· $ARGS}"
+            echo ''
+            echo '```'
+            cat /tmp/answer.txt
+            echo '```'
+          } >> $GITHUB_STEP_SUMMARY

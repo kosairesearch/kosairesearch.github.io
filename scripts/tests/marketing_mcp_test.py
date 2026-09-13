@@ -346,6 +346,38 @@ eq("성공으로 끝난다", r.returncode, 0)
 ok("사람이 읽을 안내가 stderr 로 나온다", "도구" in r.stderr, r.stderr[:200])
 eq("stdout 은 비어 있다", r.stdout.strip(), "")
 
+print("\n⑩ 클로드 앱 없이 물어보기 (--ask)")
+
+
+def run_ask(*a, env=None):
+    return subprocess.run([sys.executable, str(SERVER), "--ask", *a],
+                          capture_output=True, text=True, cwd=str(ROOT),
+                          env=env or ENV)
+
+
+r = run_ask("weekly")
+eq("정상으로 끝난다", r.returncode, 0)
+ok("숫자판이 stdout 으로 나온다", r.stdout.startswith("📊"), r.stdout[:80])
+
+r = run_ask("trend", "--args", "metric=returnRate weeks=3")
+ok("인자를 알아듣는다", "재방문율" in r.stdout, r.stdout[:120])
+ok("숫자 인자는 숫자로 읽는다", r.stdout.count("2026-") == 3, r.stdout)
+
+r = run_ask("weekly", "--args", "week=2026-08-31")
+ok("쉼표·공백 아무거나 써도 된다", "8월 31일" in r.stdout, r.stdout[:120])
+
+r = run_ask("없는도구")
+eq("모르는 이름은 실패로 끝낸다", r.returncode, 2)
+ok("쓸 수 있는 것을 알려 준다", "weekly" in r.stderr, r.stderr[:200])
+
+r = run_ask("weekly", "--args", "")
+eq("빈 인자도 괜찮다", r.returncode, 0)
+r = run_ask("weekly", "--args", "이상한값 week")
+eq("모양이 안 맞는 인자는 그냥 무시한다", r.returncode, 0)
+
+r = run_ask("experiment_start", "--args", "id=없음")
+ok("없는 번호는 없다고 적어 준다", "대장에 없습니다" in r.stdout, r.stdout)
+
 print("\n" + "=" * 52)
 print(f"PASS {P}  FAIL {F}")
 sys.exit(1 if F else 0)
