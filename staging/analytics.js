@@ -127,11 +127,130 @@
     document.head.appendChild(n);
   }
 
+  /* ── 행동 기록 ─────────────────────────────────────────────────
+     모든 이벤트에 '어느 페이지에서' 와 '어디서 들어온 사람인지' 를
+     자동으로 붙인다.
+
+     왜 여기서 붙이나. 부르는 곳이 스무 군데인데 거기마다 적으면 하나는
+     반드시 빠진다. 실제로 sign_up 에 출처 페이지가 없어서 "어느 페이지에서
+     가입하는지" 를 못 봤다. 여기서 붙이면 앞으로 만들 이벤트도 공짜로
+     따라온다.
+
+     from_page     이 이벤트가 일어난 페이지
+     entry_page    이번 방문에서 처음 열었던 페이지
+     entry_source  이번 방문의 유입처 (naver·google·direct…)
+     ──────────────────────────────────────────────────────────── */
+  var SS_ENTRY = "kosai_entry";
+
+  function pageKey() {
+    /* 종목 리포트는 주소가 stock.html?ticker=005930 인데, 페이지 이름으로는
+       전부 /stock.html 한 덩어리다. 그래서 종목은 ticker 로 따로 싣는다. */
+    return (location.pathname || "/").replace(/\/index\.html$/i, "/");
+  }
+
+  function entry() {
+    /* 이번 방문의 시작점. 첫 페이지에서 한 번 정해 두고 방문이 끝날 때까지
+       쓴다(sessionStorage 라 탭을 닫으면 사라진다). 이게 있어야 "네이버에서
+       온 사람이 가입까지 갔나" 를 셀 수 있다. */
+    try {
+      var v = sessionStorage.getItem(SS_ENTRY);
+      if (v) return JSON.parse(v);
+    } catch (e) {}
+    var ref = document.referrer || "";
+    var src = "direct";
+    try {
+      if (ref) {
+        var h = new URL(ref).hostname.replace(/^www\./, "");
+        if (h === location.hostname) src = "internal";
+        else if (/naver\./.test(h)) src = "naver";
+        else if (/google\./.test(h)) src = "google";
+        else if (/daum\.|kakao\./.test(h)) src = "daum";
+        else if (/bing\./.test(h)) src = "bing";
+        else if (/t\.co$|twitter\.|x\.com$/.test(h)) src = "x";
+        else if (/instagram\./.test(h)) src = "instagram";
+        else if (/facebook\./.test(h)) src = "facebook";
+        else src = h;
+      }
+      var q = new URLSearchParams(location.search);
+      if (q.get("utm_source")) src = q.get("utm_source");
+    } catch (e) {}
+    var box = { page: pageKey(), source: src };
+    try { sessionStorage.setItem(SS_ENTRY, JSON.stringify(box)); } catch (e) {}
+    return box;
+  }
+
+  function withContext(params) {
+    var e = entry();
+    var out = { from_page: pageKey(), entry_page: e.page, entry_source: e.source };
+    for (var k in (params || {})) {
+      if (Object.prototype.hasOwnProperty.call(params, k)) out[k] = params[k];
+    }
+    return out;
+  }
+
   // ── 공용 이벤트 헬퍼 — 코드 어디서든 KOSA.track() 호출 ──
   window.KOSA = {
     on: function () { return !!(GA4_ID || NAVER_ID); },
     track: function (name, params) {
-      try { if (window.gtag) gtag("event", name, params || {}); } catch (e) {}
+      try { if (window.gtag) gtag("event", name, withContext(params)); } catch (e) {}
     }
   };
+
+  /* ── 저절로 기록되는 것들 ─────────────────────────────────────── */
+  try {
+    entry();   // 첫 페이지에서 유입처를 잡아 둔다
+
+    /* ① 종목 링크 누름. 어느 종목이 실제로 눌리는지 본다.
+       링크마다 코드를 넣지 않고 문서 전체에서 한 번만 듣는다 — 나중에
+       목록을 새로 만들어도 저절로 따라온다. */
+    document.addEventListener("click", function (ev) {
+      try {
+        var a = ev.target && ev.target.closest && ev.target.closest("a[href]");
+        if (!a) return;
+        var m = /stock\.html\?(?:[^#]*&)?ticker=(\d{6})/.exec(a.getAttribute("href") || "");
+        if (m) KOSA.track("stock_click", { ticker: m[1] });
+      } catch (e) {}
+    }, true);
+
+    /* ② 얼마나 내려 읽었나. 리포트를 끝까지 보는지가 여기서 보인다.
+       25·50·75·100% 를 한 번씩만 보낸다. */
+    var hit = {}, maxPct = 0;
+    function depth() {
+      var h = document.documentElement;
+      var total = Math.max(h.scrollHeight, document.body ? document.body.scrollHeight : 0)
+        - window.innerHeight;
+      if (total <= 0) return 100;
+      return Math.min(100, Math.round((window.pageYOffset / total) * 100));
+    }
+    addEventListener("scroll", function () {
+      try {
+        var p = depth();
+        if (p > maxPct) maxPct = p;
+        [25, 50, 75, 100].forEach(function (step) {
+          if (p >= step && !hit[step]) {
+            hit[step] = 1;
+            KOSA.track("scroll_depth", { percent: step });
+          }
+        });
+      } catch (e) {}
+    }, { passive: true });
+
+    /* ③ 이 페이지를 언제 떠났나. 어디서 사람이 빠져나가는지 본다.
+       pagehide 는 탭을 닫아도 뜬다(unload 는 요즘 브라우저에서 안 뜬다). */
+    var t0 = Date.now(), left = false;
+    function leaving() {
+      if (left) return;
+      left = true;
+      try {
+        KOSA.track("page_leave", {
+          seconds: Math.round((Date.now() - t0) / 1000),
+          max_scroll: maxPct
+        });
+      } catch (e) {}
+    }
+    addEventListener("pagehide", leaving);
+    addEventListener("visibilitychange", function () {
+      if (document.visibilityState === "hidden") leaving();
+    });
+  } catch (e) {}
 })();
