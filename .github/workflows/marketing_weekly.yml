@@ -25,6 +25,10 @@ on:
         description: '처음 설정용 — 서비스 계정 이메일만 확인하고 끝낸다'
         type: boolean
         default: false
+      probe:
+        description: 'GA4 에 뭘 물어볼 수 있는지 확인만 하고 끝낸다'
+        type: boolean
+        default: false
       weeks:
         description: '몇 주치를 받을지'
         default: '12'
@@ -64,8 +68,18 @@ jobs:
           echo "GA4_PROPERTY_ID 시크릿: ${{ secrets.GA4_PROPERTY_ID && '등록됨' || '아직 없음' }}" \
             >> $GITHUB_STEP_SUMMARY
 
+      - name: GA4 능력 확인 (probe 를 켰을 때만)
+        if: inputs.probe == true
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+        run: |
+          python3 scripts/ga4_data.py --probe 2>&1 | tee /tmp/probe.txt
+          { echo '## GA4 에서 뭘 물어볼 수 있나'; echo '```'; cat /tmp/probe.txt; echo '```'; } \
+            >> $GITHUB_STEP_SUMMARY
+
       - name: ① GA4 에서 주간 숫자를 받는다
-        if: inputs.setup != true
+        if: inputs.setup != true && inputs.probe != true
         id: fetch
         env:
           GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
@@ -76,7 +90,7 @@ jobs:
       # ①이 실패해도 여기까지는 온다. 받아 둔 지난 기록으로라도 보고서를
       # 쓸 수 있으면 쓴다 — 이번 주 숫자가 없으면 재료가 그렇게 말해 준다.
       - name: ② 보고서를 쓴다
-        if: ${{ !cancelled() && inputs.setup != true }}
+        if: ${{ !cancelled() && inputs.setup != true && inputs.probe != true }}
         id: write
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -97,7 +111,7 @@ jobs:
           } >> $GITHUB_STEP_SUMMARY
 
       - name: ③ 숫자와 보고서를 저장소에 남긴다
-        if: ${{ !cancelled() && inputs.setup != true }}
+        if: ${{ !cancelled() && inputs.setup != true && inputs.probe != true }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

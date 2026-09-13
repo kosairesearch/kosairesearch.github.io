@@ -264,6 +264,82 @@ def one_week(client, prop, mon, sun, deep=False):
     return row
 
 
+# GA4 에 실제로 뭘 물어볼 수 있는지 확인할 후보들.
+#
+#   추측으로 만들면 "된다더니 안 되네" 가 난다. 특히 customEvent: 로 시작하는
+#   것들은 GA4 관리화면에서 '맞춤 측정기준' 으로 등록해야만 조회된다. 코드가
+#   이벤트에 값을 실어 보내고 있어도 등록 전에는 안 나온다. 그 사실을 여기서
+#   눈으로 확인하고 넘어간다.
+PROBE_METRICS = [
+    "totalUsers", "newUsers", "activeUsers", "sessions", "engagedSessions",
+    "bounceRate", "engagementRate", "screenPageViews", "screenPageViewsPerSession",
+    "averageSessionDuration", "userEngagementDuration", "eventCount",
+    "keyEvents", "sessionsPerUser", "eventCountPerUser",
+]
+PROBE_DIMENSIONS = [
+    "pagePath", "pageTitle", "landingPage", "landingPagePlusQueryString",
+    "sessionSource", "sessionMedium", "sessionSourceMedium",
+    "sessionDefaultChannelGroup", "firstUserDefaultChannelGroup", "firstUserSource",
+    "newVsReturning", "deviceCategory", "eventName", "browser",
+    "operatingSystem", "country", "city", "sessionCampaignName",
+    "customEvent:ticker", "customEvent:name", "customEvent:method",
+    "customEvent:from_page", "customEvent:source",
+]
+
+
+def probe(days=28):
+    """뭐가 되고 뭐가 안 되는지 하나씩 물어본다. 되는 것만 쓴다."""
+    from google.analytics.data_v1beta.types import (
+        DateRange, Dimension, Metric, RunReportRequest)
+    client, prop = _client(), _property()
+    end = datetime.datetime.now(KST).date()
+    start = end - datetime.timedelta(days=days)
+    rng = [DateRange(start_date=start.isoformat(), end_date=end.isoformat())]
+
+    def try_one(metrics, dimensions):
+        try:
+            r = client.run_report(RunReportRequest(
+                property=prop, date_ranges=rng,
+                metrics=[Metric(name=m) for m in metrics],
+                dimensions=[Dimension(name=d) for d in dimensions], limit=3))
+            rows = len(r.rows)
+            sample = ""
+            if r.rows and dimensions:
+                sample = r.rows[0].dimension_values[0].value[:40]
+            elif r.rows:
+                sample = r.rows[0].metric_values[0].value[:20]
+            return True, f"{rows}행 {sample}"
+        except Exception as e:
+            return False, f"{type(e).__name__}: {str(e)[:90]}"
+
+    out = {"metrics": {}, "dimensions": {}}
+    log(f"■ 지표 {len(PROBE_METRICS)}개 ({start} ~ {end})")
+    for m in PROBE_METRICS:
+        okx, note = try_one([m], [])
+        out["metrics"][m] = {"ok": okx, "note": note}
+        log(f"  {'✅' if okx else '❌'} {m:<30} {note}")
+    log(f"\n■ 차원 {len(PROBE_DIMENSIONS)}개 (totalUsers 와 함께)")
+    for d in PROBE_DIMENSIONS:
+        okx, note = try_one(["totalUsers"], [d])
+        out["dimensions"][d] = {"ok": okx, "note": note}
+        log(f"  {'✅' if okx else '❌'} {d:<30} {note}")
+
+    log("\n■ 우리가 쓰려는 조합")
+    combos = [
+        ("종목별 리포트 조회", ["eventCount"], ["eventName", "customEvent:ticker"]),
+        ("유입경로별 가입", ["eventCount"], ["sessionDefaultChannelGroup", "eventName"]),
+        ("착지 페이지별 이탈", ["sessions", "bounceRate"], ["landingPage"]),
+        ("재방문자가 보는 페이지", ["screenPageViews"], ["newVsReturning", "pagePath"]),
+        ("페이지별 참여시간", ["userEngagementDuration"], ["pagePath"]),
+    ]
+    for name, ms, ds in combos:
+        okx, note = try_one(ms, ds)
+        out.setdefault("combos", {})[name] = {"ok": okx, "note": note,
+                                              "metrics": ms, "dimensions": ds}
+        log(f"  {'✅' if okx else '❌'} {name:<24} {note}")
+    return out
+
+
 def collect(weeks=8, today=None):
     """주간 숫자 + 건강 기록.
 
@@ -337,6 +413,8 @@ def main():
     ap.add_argument("--write", action="store_true", help="data/ga4/weekly.json 에 저장")
     ap.add_argument("--check", action="store_true", help="비었으면 1 로 끝난다")
     ap.add_argument("--whoami", action="store_true", help="서비스 계정 이메일만 찍는다")
+    ap.add_argument("--probe", action="store_true",
+                    help="GA4 에 뭘 물어볼 수 있는지 하나씩 확인한다")
     ap.add_argument("--json", action="store_true")
     a = ap.parse_args()
 
@@ -348,6 +426,12 @@ def main():
         print("이 이메일을 GA4 에 뷰어로 넣어야 숫자를 읽을 수 있다.")
         print("  GA4 → 관리(왼쪽 아래 톱니) → 속성 → 속성 액세스 관리")
         print("  → 오른쪽 위 [+] → 사용자 추가 → 위 이메일 → 역할 '뷰어'")
+        return 0
+
+    if a.probe:
+        out = probe()
+        if a.json:
+            print(json.dumps(out, ensure_ascii=False, indent=2))
         return 0
 
     doc = collect(a.weeks)
