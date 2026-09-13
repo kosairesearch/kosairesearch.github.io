@@ -1,0 +1,120 @@
+name: 📈 주간 성과 보고 (마케팅)
+
+# 월요일 아침, 지난주(월~일) 성과를 GA4 에서 받아 보고서로 만들어 보낸다.
+#
+# 왜 주 단위인가
+#   하루치는 요일마다 널뛴다. 월요일이 많고 토요일이 적은 건 매주 그런
+#   것이라 좋아졌는지 나빠졌는지를 말해 주지 않는다.
+#
+# 왜 숫자를 저장소에 쌓나
+#   GA4 는 오래된 기록을 지운다(기본 14개월). 매주 받아 두면 1년 뒤에도
+#   '작년 이맘때'와 비교할 수 있다. 파일로 남으니 읽는 쪽은 열쇠가 없어도 된다.
+#
+# 처음 한 번 해야 하는 것 (setup 을 켜고 수동 실행하면 안내가 나온다)
+#   1. GA4_PROPERTY_ID 를 GitHub 시크릿에 넣는다 (GA4 관리>속성 의 숫자 9자리)
+#   2. 구글 클라우드에서 'Google Analytics Data API' 를 켠다
+#   3. 서비스 계정 이메일을 GA4 속성에 '뷰어'로 추가한다
+
+on:
+  schedule:
+    # 월요일 09:00 KST (= 월요일 00:00 UTC). 모닝 브리핑(07:30)과 겹치지 않는다.
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+    inputs:
+      setup:
+        description: '처음 설정용 — 서비스 계정 이메일만 확인하고 끝낸다'
+        type: boolean
+        default: false
+      weeks:
+        description: '몇 주치를 받을지'
+        default: '12'
+      send:
+        description: '텔레그램으로 보낼지'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: marketing-weekly
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+
+      # 처음 설정용. 서비스 계정 이메일을 찍어 준다 — 구글 콘솔을 뒤지지
+      # 않아도 되게. 이메일은 비밀이 아니다(신분증이지 열쇠가 아니다).
+      - name: 설정 안내 (setup 을 켰을 때만)
+        if: inputs.setup == true
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+        run: |
+          python3 scripts/ga4_data.py --whoami | tee -a $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "GA4_PROPERTY_ID 시크릿: ${{ secrets.GA4_PROPERTY_ID && '등록됨' || '아직 없음' }}" \
+            >> $GITHUB_STEP_SUMMARY
+
+      - name: ① GA4 에서 주간 숫자를 받는다
+        if: inputs.setup != true
+        id: fetch
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+        run: |
+          python3 scripts/ga4_data.py --weeks ${{ inputs.weeks || '12' }} --write --check
+
+      # ①이 실패해도 여기까지는 온다. 받아 둔 지난 기록으로라도 보고서를
+      # 쓸 수 있으면 쓴다 — 이번 주 숫자가 없으면 재료가 그렇게 말해 준다.
+      - name: ② 보고서를 쓴다
+        if: ${{ !cancelled() && inputs.setup != true }}
+        id: write
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ ! -f data/ga4/weekly.json ]; then
+            echo "::error::받아 둔 숫자가 하나도 없다 — 설정(setup)을 먼저 끝내라"
+            exit 1
+          fi
+          SEND=""
+          [ "${{ inputs.send }}" != "false" ] && SEND="--send"
+          python3 scripts/marketing_report.py $SEND | tee /tmp/report.md
+          {
+            echo "## 주간 성과 보고"
+            echo ""
+            cat /tmp/report.md
+          } >> $GITHUB_STEP_SUMMARY
+
+      - name: ③ 숫자와 보고서를 저장소에 남긴다
+        if: ${{ !cancelled() && inputs.setup != true }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ga4
+          if git diff --cached --quiet; then
+            echo "변경 없음 — 커밋하지 않는다"; exit 0
+          fi
+          git commit -m "📈 주간 성과 $(TZ='Asia/Seoul' date +'%Y-%m-%d')"
+          PUSHED=
+          for i in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              PUSHED=1; break
+            fi
+            git rebase --abort 2>/dev/null || true
+            echo "재시도 $i"; sleep $((i*4))
+          done
+          if [ -z "$PUSHED" ]; then
+            echo "::error::성과 기록을 올리지 못했다 — 세 번 다 실패했다"
+            exit 1
+          fi
