@@ -1240,7 +1240,10 @@ function applyTheme(t){
   document.getElementById('themeIcon').innerHTML = t==='dark' ? sunSVG : moonSVG;
   try{ localStorage.setItem('kos-theme', t); }catch(e){}
 }
-let saved='light'; try{ saved = localStorage.getItem('kos-theme')||'dark'; }catch(e){}
+/* 저장소를 못 읽는 경우(시크릿 창·사이트 데이터 차단)에도 어두운 판으로
+   시작한다. 여기만 'light' 로 시작해서, 그런 창에서는 홈만 밝고 나머지
+   페이지는 어두웠다. 다른 30개 페이지는 전부 'dark' 로 시작한다. */
+let saved='dark'; try{ saved = localStorage.getItem('kos-theme')||'dark'; }catch(e){}
 applyTheme(saved);
 themeBtn.addEventListener('click', ()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 

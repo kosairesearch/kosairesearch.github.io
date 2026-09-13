@@ -667,6 +667,10 @@ KOSi18n.register({
   KOSi18n.register(D, fix);
 })();
 </script>
+<style>/* lenis 가 요구하는 최소 CSS */
+html.lenis,html.lenis body{height:auto}
+.lenis [data-lenis-prevent]{overscroll-behavior:contain}
+.lenis.lenis-smooth iframe{pointer-events:none}</style>
 </head>
 <body>
 
@@ -1170,7 +1174,10 @@ function applyTheme(t){
   document.getElementById('themeIcon').innerHTML = t==='dark' ? sunSVG : moonSVG;
   try{ localStorage.setItem('kos-theme', t); }catch(e){}
 }
-let saved='light'; try{ saved = localStorage.getItem('kos-theme')||'dark'; }catch(e){}
+/* 저장소를 못 읽는 경우(시크릿 창·사이트 데이터 차단)에도 어두운 판으로
+   시작한다. 여기만 'light' 로 시작해서, 그런 창에서는 홈만 밝고 나머지
+   페이지는 어두웠다. 다른 30개 페이지는 전부 'dark' 로 시작한다. */
+let saved='dark'; try{ saved = localStorage.getItem('kos-theme')||'dark'; }catch(e){}
 applyTheme(saved);
 themeBtn.addEventListener('click', ()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
 
@@ -1221,5 +1228,9 @@ if(window.KOSi18n){
 </script>
 
 <script type="module" src="auth-state.js?v=158e9651"></script>
+<!-- 부드러운 스크롤. 안 뜨거나 손가락 화면이면 스스로 비켜선다 —
+     smooth-scroll.js 맨 위 설명 참고. 빼려면 이 두 줄만 지우면 된다. -->
+<script src="lenis.js?v=3a0cb7e8"></script>
+<script src="smooth-scroll.js?v=b8330e73"></script>
 </body>
 </html>

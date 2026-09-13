@@ -546,6 +546,10 @@ body::after,body::before{display:none}
   KOSi18n.register(D, fix);
 })();
 </script>
+<style>/* lenis 가 요구하는 최소 CSS */
+html.lenis,html.lenis body{height:auto}
+.lenis [data-lenis-prevent]{overscroll-behavior:contain}
+.lenis.lenis-smooth iframe{pointer-events:none}</style>
 </head>
 <body>
 <div class="lp-bg"><canvas id="lpCanvas"></canvas></div>
@@ -941,5 +945,9 @@ try{
   });
 }catch(e){ console.error('PRISM_ERR', e && (e.stack||e.message||String(e))); }
 </script>
+<!-- 부드러운 스크롤. 안 뜨거나 손가락 화면이면 스스로 비켜선다 —
+     smooth-scroll.js 맨 위 설명 참고. 빼려면 이 두 줄만 지우면 된다. -->
+<script src="lenis.js?v=3a0cb7e8"></script>
+<script src="smooth-scroll.js?v=b8330e73"></script>
 </body>
 </html>
