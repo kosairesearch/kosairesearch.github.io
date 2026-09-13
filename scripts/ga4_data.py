@@ -421,6 +421,42 @@ def one_week(client, prop, mon, sun, deep=False):
     return row
 
 
+def recent_events(client, prop, days=3):
+    """요 며칠 어떤 기록이 들어왔나. 성과가 아니라 배관 점검이다.
+
+    왜 있나 — 주간 보고는 끝난 주만 본다. 오늘 새 기록을 켜도 그게
+    제대로 들어오는지는 다음 주 월요일에야 알 수 있다. 버그가 있으면
+    여드레를 날린다. 그 사이에 눈으로 볼 자리가 필요하다.
+
+    {"from","to","events":[(이름,수)],"dims":{이름: 수 또는 None}}
+    dims 의 None 은 'GA4 관리화면에 등록이 안 됐다' 는 뜻이다.
+    """
+    today = datetime.datetime.now(KST).date()
+    start = (today - datetime.timedelta(days=max(1, days) - 1)).isoformat()
+    end = today.isoformat()
+    rows = _run(client, prop, start, end, ["eventCount"], ["eventName"],
+                limit=40, order="eventCount")
+    out = {"from": start, "to": end,
+           "events": [(r.get("eventName"), r.get("eventCount")) for r in rows]}
+
+    # 맞춤 측정기준이 실제로 등록됐는지. 등록 전에는 400 이 난다 —
+    # 그 사실 자체가 답이라, 터뜨리지 않고 None 으로 적어 둔다.
+    dims = {}
+    for name, ev in (("ticker", "report_view"), ("reports_seen", "sign_up"),
+                     ("entry_source", "session_start"), ("percent", "scroll_depth"),
+                     ("from_page", "page_leave")):
+        try:
+            got = _run(client, prop, start, end, ["eventCount"],
+                       [f"customEvent:{name}"], limit=10, event_filter=ev)
+            dims[name] = sum((r.get("eventCount") or 0) for r in got
+                             if (r.get(f"customEvent:{name}") or "") not in
+                             ("(not set)", "", "(none)"))
+        except Exception:
+            dims[name] = None
+    out["dims"] = dims
+    return out
+
+
 def retention(client, prop, weeks=6):
     """첫 방문 뒤 몇 주째에 다시 오나.
 

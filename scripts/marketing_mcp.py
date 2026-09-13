@@ -419,6 +419,75 @@ def t_experiment_drop(id=None, why=""):
     return f"✅ {it['id']} ({it['title']}) 를 버렸습니다."
 
 
+# 새로 켠 기록이 실제로 들어오는지. 주간 보고를 기다리면 여드레가 걸린다.
+NEW_MARKS = {
+    "report_view": "어느 리포트를 열었나",
+    "stock_click": "어느 종목 링크를 눌렀나",
+    "scroll_depth": "얼마나 내려 읽었나",
+    "page_leave": "어디서 떠났나",
+    "sign_up": "회원가입",
+}
+DIM_MARKS = {
+    "ticker": "종목 번호 (많이 본 리포트)",
+    "reports_seen": "가입 전에 리포트를 몇 개 봤나",
+    "entry_source": "유입처 (네이버에서 온 사람이 가입까지 갔나)",
+    "percent": "읽은 깊이",
+    "from_page": "어느 페이지에서 일어났나",
+}
+
+
+def t_check(days=3):
+    """기록이 제대로 들어오고 있나. 성과가 아니라 배관 점검."""
+    import ga4_data as G
+    if not os.environ.get("GA4_PROPERTY_ID"):
+        return ("GA4_PROPERTY_ID 가 없습니다 — 이 점검은 GA4 에 직접 물어봅니다."
+                " 깃허브 Actions 의 '마케팅 숫자 물어보기' 로 돌려 주세요.")
+    try:
+        got = G.recent_events(G._client(), G._property(),
+                              days=max(1, min(int(days or 3), 28)))
+    except (Exception, SystemExit) as e:
+        return f"GA4 에 물어보지 못했습니다 — {type(e).__name__}: {e}"
+
+    evs = dict(got.get("events") or [])
+    L = [f"■ 최근 {days}일 ({got['from']} ~ {got['to']}) 들어온 기록", ""]
+    for name, n in (got.get("events") or [])[:15]:
+        tag = f"   ← {NEW_MARKS[name]}" if name in NEW_MARKS else ""
+        L.append(f"  {name:<20}{n:>8,}{tag}")
+    if not got.get("events"):
+        L.append("  아무 기록도 없습니다 — 속성 번호나 권한을 확인해 주세요.")
+
+    L.append("")
+    L.append("■ 새 기록이 들어오고 있나")
+    for name, what in NEW_MARKS.items():
+        n = evs.get(name)
+        L.append(f"  {'✅' if n else '❌'} {name} ({what}) — "
+                 + (f"{n:,}건" if n else "아직 없음"))
+
+    L.append("")
+    L.append("■ 값이 붙어 있나 (GA4 '맞춤 측정기준' 등록 여부)")
+    todo = []
+    for name, what in DIM_MARKS.items():
+        v = (got.get("dims") or {}).get(name)
+        if v is None:
+            L.append(f"  ❌ {name} ({what}) — 등록이 안 돼 있습니다")
+            todo.append(name)
+        elif v:
+            L.append(f"  ✅ {name} ({what}) — {v:,}건에 값이 붙었습니다")
+        else:
+            L.append(f"  ⏳ {name} ({what}) — 등록은 됐는데 아직 값이 없습니다")
+    if todo:
+        L.append("")
+        L.append("  등록하는 곳 — GA4 ▸ 관리 ▸ 맞춤 정의 ▸ 맞춤 측정기준 만들기")
+        L.append("  범위는 '이벤트', 이벤트 매개변수에 이 이름을 그대로: "
+                 + " · ".join(todo))
+        L.append("  ※ 등록 전에 지나간 기록은 되살아나지 않습니다. 등록한 뒤부터 쌓입니다.")
+
+    L.append("")
+    L.append("※ 이건 성과가 아니라 '기록이 잘 들어오는지' 보는 것입니다.")
+    L.append("※ GA4 는 몇 시간 늦게 들어옵니다. 방금 켰으면 내일 다시 보세요.")
+    return "\n".join(L)
+
+
 def t_weeks():
     doc = _weekly()
     weeks = doc.get("weeks") or []
@@ -546,6 +615,13 @@ TOOLS = [
          "id": {"type": "string", "description": "실험 번호 (예: exp_3)"},
          "why": {"type": "string", "description": "안 하는 이유"}},
          "required": ["id"]}},
+    {"name": "check", "fn": t_check,
+     "description": "기록이 제대로 들어오고 있나 — 요 며칠 어떤 이벤트가 "
+                    "들어왔고, 값(맞춤 측정기준)이 붙어 있는지. 새 기록을 "
+                    "켠 뒤 '잘 되고 있나' 를 볼 때. 주간 보고는 끝난 주만 "
+                    "보므로 여기서만 오늘 것을 볼 수 있다. 성과가 아니다.",
+     "inputSchema": {"type": "object", "properties": {
+         "days": {"type": "integer", "description": "요 며칠 (기본 3, 최대 28)"}}}},
     {"name": "weeks", "fn": t_weeks,
      "description": "받아 둔 주가 몇 개이고 어디에 저장돼 있는지. 숫자가 "
                     "안 나올 때 여기부터 본다.",
@@ -695,7 +771,7 @@ def selftest():
     log("④ 도구 실행 —")
     bad = 0
     for t in TOOLS:
-        if t["name"].startswith("experiment_") or t["name"] == "refresh":
+        if t["name"].startswith("experiment_") or t["name"] in ("refresh", "check"):
             continue                     # 쓰는 도구는 시험에서 부르지 않는다
         text, err = call_tool(t["name"], {})
         head = (text or "").splitlines()[0][:60] if text else ""

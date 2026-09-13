@@ -27,6 +27,8 @@ on:
           - trend        # 한 지표의 여러 주 흐름
           - report       # 지난 주간 보고서 원문
           - experiments  # 실험 대장
+          - retention    # 첫 방문 뒤 1주 뒤·2주 뒤에 몇 명이 돌아왔나
+          - check        # 기록이 잘 들어오나 (성과 아님 · 오늘 것도 보임)
           - weeks        # 받아 둔 주가 몇 개인지
       args:
         description: "더 볼 것 (예: week=2026-08-31 · metric=returnRate weeks=8)"
@@ -56,6 +58,7 @@ jobs:
       - name: 물어본다
         env:
           GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
           TOOL: ${{ inputs.tool }}
           ARGS: ${{ inputs.args }}
         run: |

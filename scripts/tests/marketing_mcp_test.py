@@ -366,6 +366,50 @@ eq("성공으로 끝난다", r.returncode, 0)
 ok("사람이 읽을 안내가 stderr 로 나온다", "도구" in r.stderr, r.stderr[:200])
 eq("stdout 은 비어 있다", r.stdout.strip(), "")
 
+print("\n⑨-2 기록이 잘 들어오나 (check)")
+with Server() as s:
+    s.ask(id=1, method="initialize", params={"protocolVersion": "2025-06-18"})
+    tools = s.ask(id=2, method="tools/list")["result"]["tools"]
+    ok("check 도구가 있다", any(t["name"] == "check" for t in tools))
+    ok("성과가 아니라고 설명에 적혀 있다",
+       any(t["name"] == "check" and "성과가 아니다" in t["description"]
+           for t in tools))
+    t, err = s.call("check")
+    ok("열쇠가 없으면 어디서 돌리라고 알려 준다",
+       not err and "물어보기" in t, t)
+
+# 진짜 GA4 를 부르지 않고 속을 본다 — 배관 점검이 사람 말로 나오는지.
+sys.path.insert(0, str(ROOT / "scripts"))
+import ga4_data as G
+import marketing_mcp as MC
+
+FAKE = {"from": "2026-09-11", "to": "2026-09-13",
+        "events": [("page_view", 320), ("scroll_depth", 180),
+                   ("report_view", 12), ("session_start", 95)],
+        "dims": {"ticker": 12, "reports_seen": None,
+                 "entry_source": 95, "percent": 180, "from_page": 0}}
+_real = G.recent_events
+G.recent_events = lambda *a, **k: FAKE
+G._client = lambda: None
+G._property = lambda: "properties/1"
+os.environ["GA4_PROPERTY_ID"] = "123456789"
+out = MC.t_check(3)
+G.recent_events = _real
+os.environ.pop("GA4_PROPERTY_ID", None)
+
+ok("언제부터 언제까지인지 적는다", "2026-09-11 ~ 2026-09-13" in out, out[:120])
+ok("들어온 기록을 센다", "report_view" in out and "12" in out, out)
+ok("새 기록에 이름표를 붙인다", "어느 리포트를 열었나" in out, out)
+ok("안 들어온 기록은 ❌", "❌ page_leave" in out, out)
+ok("등록 안 된 값은 ❌", "❌ reports_seen" in out, out)
+ok("등록은 됐는데 값이 없으면 ⏳", "⏳ from_page" in out, out)
+ok("값이 붙은 것은 ✅", "✅ ticker" in out, out)
+ok("등록하는 곳을 알려 준다", "맞춤 측정기준 만들기" in out, out)
+ok("등록할 이름을 그대로 적어 준다", "reports_seen" in out.split("그대로:")[-1], out)
+ok("지나간 기록은 안 되살아난다고 일러 준다", "되살아나지 않습니다" in out, out)
+ok("성과가 아니라고 못 박는다", "성과가 아니라" in out, out)
+ok("늦게 들어온다고 일러 준다", "몇 시간 늦게" in out, out)
+
 print("\n⑩ 클로드 앱 없이 물어보기 (--ask)")
 
 
