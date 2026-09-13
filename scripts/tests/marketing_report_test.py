@@ -268,6 +268,37 @@ ok("못 받은 것은 못 받았다고 적는다",
 ok("못 받은 것을 0 으로 말하지 말라고 일러 준다",
    "0 이었다고 말하지 마라" in M.facts_text({"weeks": [MISS]}))
 
+print("\n⑫-2 한 곳에서 온 것은 묶어서 센다")
+# 2026-09-13 에 실제로 이렇게 흩어져 왔다.
+SPLIT = wk("2026-09-07", "2026-09-13", 400, 350, 50, 484, 400, 1200, 200,
+           pages=PAGES_B,
+           sources=[{"sessionSource": s, "sessions": n} for s, n in [
+               ("m.search.naver.com", 228), ("naver", 141),
+               ("(direct)", 77), ("nid.naver.com", 15), ("chatgpt.com", 7),
+               ("ntp.msn.com", 4), ("google", 3), ("kauth.kakao.com", 2),
+               ("link.naver.com", 2), ("m.keep.naver.com", 2)]],
+           entrySource=[{"customEvent:entry_source": "(not set)",
+                         "eventCount": 485}],
+           signupSource=[{"customEvent:entry_source": "(not set)",
+                          "eventCount": 4}])
+import ga4_data as GD
+rows = dict(M.labeled(SPLIT, "sources", "sessionSource", "sessions",
+                      GD.source_label))
+eq("네이버가 한 줄로 묶인다", rows["네이버"], 228 + 141 + 2 + 2)
+eq("로그인은 따로 샌다", rows["로그인하고 돌아옴"], 15 + 2)
+ok("네이버가 가장 큰 곳으로 보인다",
+   max(rows, key=rows.get) == "네이버", rows)
+eq("묶은 합이 원래 합과 같다", sum(rows.values()), 481)
+
+ft2 = M.facts_text({"weeks": [SPLIT]})
+ok("재료에 묶인 숫자가 나온다", "네이버: 373" in ft2, ft2)
+ok("숫자 줄에 날주소가 그대로 나가지 않는다",
+   "m.search.naver.com: " not in ft2 and "nid.naver.com: " not in ft2, ft2)
+ok("로그인 되돌아온 것을 유입으로 세지 말라고 일러 준다",
+   "유입으로 세지 마라" in ft2, ft2)
+ok("전부 '알 수 없음' 이면 전환율을 말하지 않는다",
+   "아직 가를 수 없다" in ft2 and "알 수 없음: 들어옴" not in ft2, ft2)
+
 print("\n⑬ 실험 제안 블록")
 BODY = "■ 한 줄로 말하면\n좋았다.\n"
 GOTTEXT = BODY + "<<실험제안>>\n제목: 가입 버튼\n이유: 가입이 적다\n" \

@@ -98,6 +98,28 @@ print("\n⑥ 페이지 이름표")
 ok("홈은 두 주소 다 같은 이름", G.PAGE_NAMES["/"] == G.PAGE_NAMES["/index.html"])
 ok("브리핑 이름이 있다", G.PAGE_NAMES.get("/brief.html") == "모닝 브리핑")
 
+print("\n⑦ 유입처 이름 묶기 — 2026-09-13 에 실제로 나온 줄들")
+eq("네이버 검색(모바일)", G.source_label("m.search.naver.com"), "네이버")
+eq("네이버 (GA4 가 주는 짧은 이름)", G.source_label("naver"), "네이버")
+eq("네이버 링크", G.source_label("link.naver.com"), "네이버")
+eq("네이버 킵", G.source_label("m.keep.naver.com"), "네이버")
+ok("네이버 로그인은 유입이 아니다",
+   G.source_label("nid.naver.com") == "로그인하고 돌아옴")
+ok("카카오 로그인도 마찬가지",
+   G.source_label("kauth.kakao.com") == "로그인하고 돌아옴")
+eq("직접 들어옴", G.source_label("(direct)"), "주소 직접·즐겨찾기")
+eq("챗GPT", G.source_label("chatgpt.com"), "챗GPT")
+eq("MSN 새 탭", G.source_label("ntp.msn.com"), "MSN")
+eq("구글", G.source_label("google"), "구글")
+eq("www. 는 떼고 본다", G.source_label("www.naver.com"), "네이버")
+eq("빈 값은 알 수 없음", G.source_label(""), "알 수 없음")
+eq("(not set) 도 알 수 없음", G.source_label("(not set)"), "알 수 없음")
+eq("모르는 곳은 그대로", G.source_label("blog.example.kr"), "blog.example.kr")
+ok("네이버를 가리키는 주소가 카카오로 새지 않는다",
+   G.source_label("naver.com.evil.kr") == "naver.com.evil.kr")
+ok("AI 챗봇 갈래에 이름표가 있다",
+   G.CHANNEL_NAMES.get("AI Assistant") is not None)
+
 print("\n" + "=" * 52)
 print(f"PASS {P}  FAIL {F}")
 sys.exit(1 if F else 0)

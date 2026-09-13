@@ -96,6 +96,7 @@ def page_kind(path):
 # GA4 가 주는 영어 이름을 사람 말로. 보고서를 읽는 사람이 개발자가 아니다.
 CHANNEL_NAMES = {
     "Organic Search": "검색으로 들어옴",
+    "AI Assistant": "AI 챗봇(챗GPT 등)",
     "Direct": "주소 직접·즐겨찾기",
     "Organic Social": "SNS",
     "Referral": "다른 사이트 링크",
@@ -140,6 +141,57 @@ SOURCE_NAMES = {
     "t.co": "X(트위터)",
     "bing": "빙",
 }
+
+# GA4 는 한 곳에서 온 손님을 여러 조각으로 준다. 2026-09-13 에 실제로
+# 이렇게 나왔다 —
+#
+#     m.search.naver.com  228
+#     naver               141
+#     nid.naver.com        15
+#     link.naver.com        2
+#     m.keep.naver.com      2
+#
+# 다 네이버다. 안 묶으면 "네이버에서 141명" 이라고 답하게 된다. 실제로는
+# 369명이다. 가장 큰 유입처를 두 배 넘게 틀리는 셈이라 그 위에 세운
+# 판단은 전부 헛것이 된다.
+#
+# 다만 로그인 주소는 따로 뺀다. nid.naver.com · kauth.kakao.com 은
+# '네이버로 로그인' 을 누르고 우리 사이트로 되돌아온 것이라, 새로 들어온
+# 손님이 아니라 이미 있던 손님이다. 이걸 유입으로 세면 성과가 부풀려진다.
+LOGIN_HOSTS = ("nid.naver.com", "kauth.kakao.com", "auth.kakao.com",
+               "accounts.google.com", "appleid.apple.com",
+               "accounts.kakao.com", "logins.daum.net")
+
+SOURCE_DOMAINS = (
+    ("naver.com", "네이버"), ("google.com", "구글"), ("google.co.kr", "구글"),
+    ("daum.net", "다음"), ("kakao.com", "카카오"), ("bing.com", "빙"),
+    ("msn.com", "MSN"), ("chatgpt.com", "챗GPT"), ("openai.com", "챗GPT"),
+    ("perplexity.ai", "퍼플렉시티"), ("claude.ai", "클로드"),
+    ("gemini.google.com", "제미나이"), ("t.co", "X(트위터)"),
+    ("x.com", "X(트위터)"), ("twitter.com", "X(트위터)"),
+    ("instagram.com", "인스타그램"), ("facebook.com", "페이스북"),
+    ("youtube.com", "유튜브"), ("tistory.com", "티스토리"),
+    ("blog.naver.com", "네이버 블로그"), ("kosai.kr", "우리 사이트 안에서"),
+)
+
+
+def source_label(src):
+    """유입처 주소를 사람이 읽는 한 이름으로. 같은 곳은 같은 이름이 된다."""
+    s = (src or "").strip().lower()
+    if not s or s in ("(not set)", "(none)"):
+        return "알 수 없음"
+    if s in ("(direct)", "direct"):
+        return "주소 직접·즐겨찾기"
+    if s in SOURCE_NAMES:
+        return SOURCE_NAMES[s]
+    host = s[4:] if s.startswith("www.") else s
+    if host in LOGIN_HOSTS:
+        return "로그인하고 돌아옴"
+    for tail, name in SOURCE_DOMAINS:
+        if host == tail or host.endswith("." + tail):
+            return name
+    return src
+
 
 # analytics.js 가 entry_source 에 싣는 값들. SOURCE_NAMES 와 이름이
 # 비슷하지만 다른 표다 — 이쪽은 우리가 직접 정한 값이라 (direct) 가 아니라
@@ -308,7 +360,7 @@ def one_week(client, prop, mon, sun, deep=False):
         row["devices"] = _run(client, prop, s, e, ["totalUsers"],
                               ["deviceCategory"], limit=5, order="totalUsers")
         row["sources"] = _run(client, prop, s, e, ["sessions", "totalUsers"],
-                              ["sessionSource"], limit=15, order="sessions")
+                              ["sessionSource"], limit=30, order="sessions")
 
         # ── 행동 ──────────────────────────────────────────────────
         # 아래는 GA4 '맞춤 측정기준' 등록이 필요한 것들이다. 등록 전에는
