@@ -864,6 +864,48 @@ b4c["summary"]["ko"] = "국내도 같은 자리가 눌렸는데, 지수를 끌�
 ok("'같은 자리' 같은 관용구는 업종 묶음으로 보지 않는다",
    not has(G.validate(b4c, facts=F16), "묶었다"))
 
+# ⑯-3b 9/14 낮 시험 생성에서 실제로 난 일 — "9월 12일(토) 공시가 … 다음 주
+# 월요일까지" 를 두 번 다 거부해 그날 글이 안 만들어졌다. 옛 방식은 문장 안에서
+# 가장 가까운 낱말과 날짜를 무조건 짝지었다. 이제는 바로 옆에 붙은 날짜만 본다.
+print("\n⑯-3b 멀리 있는 날짜와는 짝짓지 않는다 — 거짓 거부 하나가 그날 브리핑을 지운다")
+def _lead(text):
+    x = sample()
+    x["lead"]["ko"] = text + " " + x["lead"]["ko"]
+    return G.validate(x, facts=F16)
+ok("'9월 12일(토) 공시가 나왔고, 다음 주 월요일까지' 는 통과 (실제 거부됐던 문장)",
+   not has(_lead("9월 12일(토) 공시가 나왔고, 다음 주 월요일까지 거래소 결정이 걸려 있다."), "lead.ko"),
+   str(_lead("9월 12일(토) 공시가 나왔고, 다음 주 월요일까지 거래소 결정이 걸려 있다.")))
+ok("'이번 주 후반부터 9월 24일 연휴' 는 통과 (부터 = 다른 시점)",
+   not has(_lead("이번 주 후반부터 9월 24일 추석 연휴가 시작된다."), "lead.ko"))
+ok("'9월 12일 공시 뒤 다음 주에' 는 통과 (뒤 = 다른 시점)",
+   not has(_lead("9월 12일 공시 뒤 다음 주에 결정된다."), "lead.ko"))
+ok("'다음 주 월요일(9월 21일)' 은 통과", not has(_lead("다음 주 월요일(9월 21일)에 결정된다."), "lead.ko"))
+ok("'이번 주 월요일(9월 21일)' 은 거부 — 옆에 붙은 날짜는 본다",
+   has(_lead("이번 주 월요일(9월 21일)에 결정된다."), "lead.ko"))
+ok("'이번 주에는 9월 16일(수)' 은 통과", not has(_lead("이번 주에는 9월 16일(수) FOMC 가 있다."), "lead.ko"))
+ok("'9월 21일 결정이 이번 주 안에' 는 여전히 거부", has(_lead("9월 21일 결정이 이번 주 안에 나온다."), "lead.ko"))
+# 제목이 '다음 주 월요일까지' 처럼 요일까지 박은 것은 본문 날짜가 전부 지난 주여도 틀린 게 아니다.
+b8 = sample()
+b8["sections"][3]["heading"] = {"ko": "삼부토건, 다음 주 월요일까지 거래소 결정이 걸려 있다",
+                                "en": "Sambu: exchange decision due by next Monday"}
+b8["sections"][3]["paragraphs"][0]["ko"] = ("9월 12일(토)에 나온 공시가 있다. 거래소 결정은 다음 주 월요일까지 걸려 있다. "
+                                           "[삼부토건](001470). " + b8["sections"][3]["paragraphs"][0]["ko"])
+b8["sections"][3]["paragraphs"][0]["en"] = "Filed Sept 12. Decision due next Monday. [Sambu](001470). " + b8["sections"][3]["paragraphs"][0]["en"]
+ok("제목 '다음 주 월요일까지' + 본문 날짜가 9월 12일뿐이어도 통과",
+   not has(G.validate(b8, facts=F16), "다음 주"), str(G.validate(b8, facts=F16)))
+b9 = copy.deepcopy(b8)
+b9["sections"][3]["heading"]["ko"] = "삼부토건, 이번 주 결정을 기다린다"
+ok("제목 '이번 주' 인데 본문은 '다음 주 월요일까지' 면 거부", has(G.validate(b9, facts=F16), "이번 주"),
+   str(G.validate(b9, facts=F16)))
+# 2차 시도에서는 문장 검사로 글을 막지 않는다 — 경고만 남기고 내보낸다.
+b10 = sample()
+b10["lead"]["ko"] = "9월 21일 결정이 이번 주 안에 나온다. " + b10["lead"]["ko"]
+ok("1차(기본)는 거부", has(G.validate(b10, facts=F16), "이번 주"))
+ok("2차(strict_text=False)는 통과", not has(G.validate(b10, facts=F16, strict_text=False), "이번 주"))
+ok("2차에도 제목 검사(길이·번역체)는 그대로 — 검사 자체가 꺼진 게 아니다",
+   has(G.validate({**sample(), "sections": [dict(sample()["sections"][0], heading={"ko": "볼 것", "en": "x"})]},
+                  facts=F16, strict_text=False), "볼 것"))
+
 print("\n⑯-4 업종이 다른 종목을 '같은 …' 으로 묶으면 거부한다")
 b5 = sample()
 b5["sections"][1]["paragraphs"][0]["ko"] = (
