@@ -782,6 +782,110 @@ _pairs2 = R.chunk_pair(_ko, "One long English sentence without any splits at all
 ok("영어가 모자라면 짝을 깨지 않는다",
    all(k and e for k, e in _pairs2), str(len(_pairs2)))
 
+
+# ────────── ⑯ 요일·주 범위, 업종, 환율 기준 — 9월 14일 브리핑에서 새어 나간 것들 ──────────
+#
+# 9/14(월) 발행분이 (1) 9/21(다음 주 월) 시한을 제목에서 '이번 주 안에' 라고
+# 썼고, (2) 반도체 장비주 다섯 옆에 전자·부품(삼화콘덴서)을 '같은 부품' 으로
+# 붙였다. 둘 다 사실 블록에 답이 없어서 모델이 짐작한 자리다. 답을 사실
+# 블록에 적어 주고, 그래도 틀리면 검사가 거부한다.
+
+print("\n⑯ 요일·주 범위가 사실 블록에 적힌다")
+F16 = copy.deepcopy(FACTS)
+F16["domestic"]["calendar"] = {"today": "20260914", "open": True, "prev": "20260911",
+                               "next": "20260915", "gapDays": 2}
+F16["domestic"]["movers"] = {
+    "leaders": [{"ticker": "000810", "name": "삼성화재", "sector": "보험",
+                 "change": 6.03, "rel": 7.79, "tradingValue": 1200}],
+    "laggards": [], "up": [
+        {"ticker": "001820", "name": "삼화콘덴서", "sector": "전자·부품",
+         "change": 18.76, "rel": 20.52, "tradingValue": 5435}],
+    "down": [{"ticker": "042700", "name": "한미반도체", "sector": "반도체",
+              "change": -8.70, "rel": -6.94, "tradingValue": 3000},
+             {"ticker": "348210", "name": "넥스틴", "sector": "반도체",
+              "change": -8.42, "rel": -6.66, "tradingValue": 900}],
+    "actives": []}
+F16["domestic"]["filings"] = [{"ticker": "001470", "name": "삼부토건", "report": "사업보고서",
+    "mcap": 0.2, "totalFilings": 3,
+    "checkpoints": [{"when": "2026년 9월 21일까지", "what": "거래소 기업심사위원회 심의 대상 여부 결정"}]}]
+F16["markets"]["ust10y"] = {"label": "미 10년물", "close": 4.97, "prev": 4.94,
+                            "change": 0.63, "date": "2026-09-11", "unit": "%"}
+F16["markets"]["usdkrw"] = {"label": "원/달러", "close": 1344.15, "prev": 1348.19,
+                            "change": -0.30, "date": "2026-09-14", "unit": "원"}
+F16["schedule"] = {"from": "2026-09-14", "to": "2026-09-28",
+                   "events": [{"date": "2026-09-16", "kind": "FOMC", "title": "9월 FOMC 회의 종료"},
+                              {"date": "2026-09-21", "kind": "기타", "title": "삼부토건 심의 시한"}]}
+t16 = G._facts_text(F16)
+ok("오늘 요일을 적는다", "오늘 9월 14일(월)" in t16, t16[:300])
+ok("이번 주 범위를 적는다", "이번 주 9월 14일(월)~9월 20일(일)" in t16)
+ok("다음 주 시작을 적는다", "9월 21일(월)부터 다음 주" in t16)
+ok("일정에 요일·주 꼬리표", "2026-09-16(수·이번 주)" in t16 and "2026-09-21(월·다음 주)" in t16, t16)
+ok("확인 지점 날짜에 주 꼬리표", "9월 21일(월), 다음 주" in t16)
+ok("종목 괄호에 업종", "한미반도체(042700·반도체)" in t16 and "삼화콘덴서(001820·전자·부품)" in t16)
+ok("묶을 때 규칙을 적는다", "업종이 같을 때만" in t16)
+ok("10년물을 %p 로도 적는다", "4.94% → +0.03%p" in t16, t16)
+ok("환율 직전값·시계열을 밝힌다", "직전 값 1,348.19원 대비" in t16 and "KRW=X" in t16)
+ok("환율을 마감가와 견주지 말라고 적는다", "서울 외환시장 마감가와 다른 시계열" in t16)
+
+print("\n⑯-2 주(週) 계산 자체")
+_d = _dt.date
+ok("월요일 기준 이번 주", G.week_tag(_d(2026, 9, 20), _d(2026, 9, 14)) == "이번 주")
+ok("다음 주 월요일은 다음 주", G.week_tag(_d(2026, 9, 21), _d(2026, 9, 14)) == "다음 주")
+ok("지난 금요일은 지난 주", G.week_tag(_d(2026, 9, 11), _d(2026, 9, 14)) == "지난 주")
+ok("일요일도 같은 주에 든다", G.week_tag(_d(2026, 9, 14), _d(2026, 9, 20)) == "이번 주")
+ok("2주 뒤는 그 다음", G.week_tag(_d(2026, 9, 28), _d(2026, 9, 14)) == "그 다음")
+
+print("\n⑯-3 '이번 주' 가 틀리면 거부한다")
+b = sample()
+b["sections"][3]["heading"] = {"ko": "삼부토건, 이번 주 안에 거래소 결정이 걸려 있다",
+                               "en": "Sambu: exchange decision due this week"}
+b["sections"][3]["paragraphs"][0]["ko"] = ("9월 12일자 리포트는 9월 21일까지를 확인 지점으로 적어 뒀다. "
+                                          "[삼부토건](001470). " + b["sections"][3]["paragraphs"][0]["ko"])
+b["sections"][3]["paragraphs"][0]["en"] = "The Sept 12 report flags Sept 21. [Sambu](001470). " + b["sections"][3]["paragraphs"][0]["en"]
+r = G.validate(b, facts=F16)
+ok("제목의 '이번 주' 를 본문 날짜로 잡아낸다", has(r, "이번 주") and has(r, "다음 주"), str(r))
+b2 = copy.deepcopy(b)
+b2["sections"][3]["heading"]["ko"] = "삼부토건, 다음 주 월요일까지 거래소 결정이 걸려 있다"
+ok("맞게 고치면 통과", not has(G.validate(b2, facts=F16), "이번 주"), str(G.validate(b2, facts=F16)))
+b3 = sample()
+b3["lead"]["ko"] = "9월 21일 결정이 이번 주 안에 나온다. " + b3["lead"]["ko"]
+ok("같은 문장 안의 날짜로도 잡는다", has(G.validate(b3, facts=F16), "lead.ko"), str(G.validate(b3, facts=F16)))
+b4 = sample()
+b4["lead"]["ko"] = "이번 주는 조용하다. " + b4["lead"]["ko"]
+ok("날짜가 없는 '이번 주' 는 건드리지 않는다", not has(G.validate(b4, facts=F16), "이번 주"))
+ok("달력이 없으면 검사하지 않는다", G.check_weeks(b, {}) == [])
+b4b = sample()
+b4b["lead"]["ko"] = "지난 주 9월 11일에 판 뒤, 이번 주 9월 16일에 FOMC 가 끝난다. " + b4b["lead"]["ko"]
+ok("한 문장에 '지난 주 …'·'이번 주 …' 가 같이 와도 헛걸리지 않는다",
+   not has(G.validate(b4b, facts=F16), "lead.ko"), str(G.validate(b4b, facts=F16)))
+b4c = sample()
+b4c["summary"]["ko"] = "국내도 같은 자리가 눌렸는데, 지수를 끌어내린 무게가 상위에 몰렸다. " + b4c["summary"]["ko"]
+ok("'같은 자리' 같은 관용구는 업종 묶음으로 보지 않는다",
+   not has(G.validate(b4c, facts=F16), "묶었다"))
+
+print("\n⑯-4 업종이 다른 종목을 '같은 …' 으로 묶으면 거부한다")
+b5 = sample()
+b5["sections"][1]["paragraphs"][0]["ko"] = (
+    "[한미반도체](042700) -8.70%, [넥스틴](348210) -8.42%였다. "
+    "다만 같은 부품 안에서도 [삼화콘덴서](001820)가 18.76% 오르며 상위권에 들었다. "
+    + b5["sections"][1]["paragraphs"][0]["ko"])
+b5["sections"][1]["paragraphs"][0]["en"] = (
+    "[Hanmi](042700) fell 8.70% and [Nextin](348210) 8.42%. Within the same parts group "
+    "[Samwha Capacitor](001820) rose 18.76%. " + b5["sections"][1]["paragraphs"][0]["en"])
+r5 = G.validate(b5, facts=F16)
+ok("반도체+전자·부품을 '같은 부품' 으로 묶은 것을 잡는다", has(r5, "같은 부품") and has(r5, "전자·부품"), str(r5))
+b6 = copy.deepcopy(b5)
+b6["sections"][1]["paragraphs"][0]["ko"] = b6["sections"][1]["paragraphs"][0]["ko"].replace(
+    "다만 같은 부품 안에서도", "다만 옆 업종인 전자·부품에서는")
+ok("다르다고 쓰면 통과", not has(G.validate(b6, facts=F16), "묶었다"), str(G.validate(b6, facts=F16)))
+b7 = sample()
+b7["sections"][1]["paragraphs"][0]["ko"] = (
+    "같은 반도체 안에서 [한미반도체](042700)와 [넥스틴](348210)이 나란히 밀렸다. "
+    + b7["sections"][1]["paragraphs"][0]["ko"])
+b7["sections"][1]["paragraphs"][0]["en"] = "[Hanmi](042700) and [Nextin](348210). " + b7["sections"][1]["paragraphs"][0]["en"]
+ok("업종이 같으면 묶어도 된다", not has(G.validate(b7, facts=F16), "묶었다"), str(G.validate(b7, facts=F16)))
+ok("업종 정보가 없으면 검사하지 않는다", G.check_sector_grouping(b5, {}) == [])
+
 print("\n" + "=" * 60)
 if FAIL:
     print(f"❌ 실패 {len(FAIL)}건: {', '.join(FAIL)}")

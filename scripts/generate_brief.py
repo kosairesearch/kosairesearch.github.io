@@ -347,6 +347,69 @@ def _pct(v):
     return "—" if v is None else f"{v:+.2f}%"
 
 
+WEEK_KO = "월화수목금토일"
+
+
+def _date8(s):
+    """'20260914' → date. 아니면 None."""
+    try:
+        return datetime.date(int(s[:4]), int(s[4:6]), int(s[6:8]))
+    except (TypeError, ValueError):
+        return None
+
+
+def _wk(d):
+    """9월 14일(월) 꼴."""
+    return f"{d.month}월 {d.day}일({WEEK_KO[d.weekday()]})"
+
+
+def week_of(today):
+    """오늘이 속한 주의 월요일과 일요일."""
+    mon = today - datetime.timedelta(days=today.weekday())
+    return mon, mon + datetime.timedelta(days=6)
+
+
+def week_tag(d, today):
+    """어떤 날짜가 오늘 기준으로 '이번 주'인지 '다음 주'인지 — 글이 아니라
+    계산이 답한다. 9월 14일(월) 브리핑이 9월 21일(다음 주 월) 시한을
+    '이번 주 안에' 라고 적어 나간 적이 있다."""
+    mon, sun = week_of(today)
+    if mon <= d <= sun:
+        return "이번 주"
+    if sun < d <= sun + datetime.timedelta(days=7):
+        return "다음 주"
+    if d < mon:
+        return "지난 주" if d >= mon - datetime.timedelta(days=7) else "그 전"
+    return "그 다음"
+
+
+def week_note(cal):
+    """사실 블록 맨 위에 붙는 '오늘이 무슨 요일이고 이번 주가 어디까지인가'."""
+    today = _date8((cal or {}).get("today"))
+    if not today:
+        return None
+    mon, sun = week_of(today)
+    nxt = sun + datetime.timedelta(days=1)
+    return (f"  [요일] 오늘 {_wk(today)} · 이번 주 {_wk(mon)}~{_wk(sun)} · "
+            f"{_wk(nxt)}부터 다음 주. 날짜를 '이번 주'·'다음 주'로 옮길 때는 이 범위만 쓴다 —"
+            " 범위 밖 날짜에 '이번 주 안에'를 붙이지 마라.")
+
+
+_KDATE = re.compile(r"(?:(\d{4})년\s*)?(\d{1,2})월\s*(\d{1,2})일")
+
+
+def _dates_in(text, year):
+    """문장 속 'M월 D일'을 date 로. 연도가 없으면 올해."""
+    out = []
+    for m in _KDATE.finditer(text or ""):
+        y = int(m.group(1)) if m.group(1) else year
+        try:
+            out.append(datetime.date(y, int(m.group(2)), int(m.group(3))))
+        except ValueError:
+            continue
+    return out
+
+
 def _facts_text(facts):
     """모델에게 넘길 사실 블록.
 
@@ -381,6 +444,10 @@ def _facts_text(facts):
             L.append(f"  ※ 직전 거래일과 다음 개장 사이가 {gap}일이다. 그 사이 미국 시장이"
                      f" 여러 번 열리므로, 다음 개장일이 그것을 한꺼번에 반영한다.")
 
+    wn = week_note(cal)
+    if wn:
+        L.append(wn)
+
     ok_overnight, note = overnight_ok(facts)
     if note:
         L.append("  " + note)
@@ -390,9 +457,18 @@ def _facts_text(facts):
         L.append("\n[미국·해외 · 종가와 전일 대비]")
         for key in ("sp500", "nasdaq", "dow", "sox", "ust10y", "wti", "dxy"):
             v = ser.get(key)
-            if v:
-                L.append(f"  {v['label']}: {_n(v['close'])}{v['unit']} {_pct(v.get('change'))}"
-                         f"  (기준일 {v.get('date')})")
+            if not v:
+                continue
+            if key == "ust10y" and v.get("prev") is not None:
+                # 금리의 '+0.63%' 는 수익률의 상대 변화(4.94→4.97)지 %p 가
+                # 아니다. 그대로 적으면 독자는 %p 로 읽는다 — 4.97%(+0.63%) 가
+                # 그렇게 나갔다. 사람이 쓰는 단위(%p)로 바꿔 넘긴다.
+                dp = v["close"] - v["prev"]
+                L.append(f"  {v['label']}: {_n(v['close'])}% (전일 {_n(v['prev'])}% → "
+                         f"{dp:+.2f}%p · 상대 변화 {_pct(v.get('change'))})  (기준일 {v.get('date')})")
+                continue
+            L.append(f"  {v['label']}: {_n(v['close'])}{v['unit']} {_pct(v.get('change'))}"
+                     f"  (기준일 {v.get('date')})")
         miss = [lbl for k, lbl, *_ in SERIES
                 if k not in ser and k not in ("kospi", "kosdaq")]
         if miss:
@@ -442,8 +518,12 @@ def _facts_text(facts):
         got = m.get(key) or []
         if not got:
             return
+        # 업종을 괄호 안에 같이 적는다. 없으면 모델이 '같은 부품 안에서도'
+        # 처럼 제 짐작으로 묶는다 — 반도체 장비주 다섯과 전자·부품(삼화콘덴서)
+        # 을 한 묶음으로 쓴 적이 있다.
         L.append(f"  {title}: " + " · ".join(
-            f"{r['name']}({r['ticker']}) {_pct(r['change'])} rel {r['rel']:+.2f}" for r in got))
+            f"{r['name']}({r['ticker']}{'·' + r['sector'] if r.get('sector') else ''}) "
+            f"{_pct(r['change'])} rel {r['rel']:+.2f}" for r in got))
 
     rows("대형주 선전(시장 대비)", "leaders")
     rows("대형주 부진(시장 대비)", "laggards")
@@ -452,8 +532,13 @@ def _facts_text(facts):
     acts = m.get("actives") or []
     if acts:
         L.append("  거래대금 상위: " + " · ".join(
-            f"{r['name']}({r['ticker']}) {r['tradingValue']:,}억원 {_pct(r['change'])}"
+            f"{r['name']}({r['ticker']}{'·' + r['sector'] if r.get('sector') else ''}) "
+            f"{r['tradingValue']:,}억원 {_pct(r['change'])}"
             for r in acts))
+    if any(m.get(k) for k in ("leaders", "laggards", "up", "down", "actives")):
+        L.append("  종목 괄호 안 뒤쪽이 업종이다. 종목을 '같은 업종·같은 부품·같은 반도체'"
+                 " 처럼 묶어 쓸 때는 이 업종이 같을 때만 그렇게 쓴다. 다르면 '옆 업종인'"
+                 " 처럼 다르다고 쓴다.")
 
     sec = dom.get("sectors") or {}
     if sec.get("up"):
@@ -466,8 +551,17 @@ def _facts_text(facts):
     # 환율은 섹션 3에서 쓴다
     fx = ser.get("usdkrw") if ser else None
     if fx:
-        L.append(f"\n[환율] 원/달러 {_n(fx['close'])}원 {_pct(fx.get('change'))}"
-                 f" (기준일 {fx.get('date')})")
+        # 이 값은 야후 KRW=X 다 — 서울 외환시장 15:30 마감가가 아니라
+        # 하루 종일 도는 시세의 한 시점이고, 등락률도 그 시계열의 직전 봉
+        # 대비다. 그래서 뉴스의 '1,345.9원 마감·6.7원 상승'과 숫자도
+        # 방향도 어긋난다. 무엇 대비인지 적어 두어야 모델이 두 값을
+        # 같은 것으로 견주지 않는다.
+        prev = f" · 직전 값 {_n(fx['prev'])}원 대비" if fx.get("prev") is not None else ""
+        L.append(f"\n[환율] 원/달러 {_n(fx['close'])}원 {_pct(fx.get('change'))}{prev}"
+                 f" (야후 KRW=X · 기준일 {fx.get('date')})")
+        L.append("  ※ 서울 외환시장 마감가와 다른 시계열이다. 뉴스 제목의 '마감 환율'과"
+                 " 이 값의 등락률을 같은 자리에서 견주지 마라 — 쓰려면 '기준값' 이라고"
+                 " 부르고 기준일을 붙여라.")
 
     # 일정
     sch = facts.get("schedule") or {}
@@ -475,9 +569,16 @@ def _facts_text(facts):
     hl = sch.get("health") or {}
     if evs:
         L.append(f"\n[일정 · {sch.get('from')} ~ {sch.get('to')}]")
+        today_d = _date8(cal.get("today"))
         for e in evs[:14]:
             est = " (공개일 추정)" if e.get("estimated") else ""
-            L.append(f"  {e['date']} {e.get('kind', '')} {e.get('title', '')}{est}")
+            tag = ""
+            try:
+                d = datetime.date.fromisoformat(str(e["date"]))
+                tag = f"({WEEK_KO[d.weekday()]}" + (f"·{week_tag(d, today_d)})" if today_d else ")")
+            except (ValueError, KeyError, TypeError):
+                pass
+            L.append(f"  {e['date']}{tag} {e.get('kind', '')} {e.get('title', '')}{est}")
     else:
         L.append("\n[일정] 없음 — 일정 문장을 쓰지 말 것.")
     # 일정이 적은 것이 '조용한 주'인지 '우리가 못 가져온 것'인지를 밝힌다.
@@ -500,7 +601,14 @@ def _facts_text(facts):
                 L.append(f"     └ 리포트 작성일 {f['reportDate']}"
                          + (f" · 제목 「{f['reportTitle']}」" if f.get("reportTitle") else ""))
             for c in (f.get("checkpoints") or [])[:2]:
-                L.append(f"     └ 확인 지점 [{c.get('when', '')}] {c.get('what', '')}")
+                when = c.get("when", "")
+                tag = ""
+                td = _date8(cal.get("today"))
+                if td:
+                    ds = _dates_in(when, td.year)
+                    if ds:
+                        tag = f" ← {_wk(ds[0])}, {week_tag(ds[0], td)}"
+                L.append(f"     └ 확인 지점 [{when}]{tag} {c.get('what', '')}")
             for k, lbl in (("bull", "강세"), ("bear", "약세")):
                 if f.get(k):
                     L.append(f"     └ {lbl}: " + " / ".join(f[k]))
@@ -605,6 +713,16 @@ chips · flows · calendar · fx … 그날 내용에 맞게). KOSAI 리포트�
 9. 섹션 제목은 그날 그 섹션에서 가장 중요한 사실을 담는다. '간밤 뉴욕'·'볼 것'
    같은 빈 이름이나 '~에서'·'~에 대하여' 로 끝나는 번역체는 쓰지 마라. 기사 제목과
    같은 말을 섹션 제목으로 다시 쓰지 말고, 섹션끼리도 겹치지 않게 한다.
+10. 날짜를 '이번 주'·'다음 주'로 옮길 때는 사실 블록 맨 위 [요일] 의 범위로만
+    옮긴다. 월요일 아침에 다음 주 월요일 시한을 '이번 주 안에' 라고 쓴 적이 있다.
+    제목에서 특히 조심하라 — 본문은 맞고 제목만 틀리면 제목만 읽는 사람이 속는다.
+11. 종목을 '같은 업종·같은 부품·같은 반도체' 처럼 한 묶음으로 쓸 때는 사실 블록의
+    괄호 안 업종이 같을 때만 그렇게 쓴다. 업종이 다르면 '옆 업종인' 처럼 다르다고
+    쓴다. 반도체 장비주들 옆에 전자·부품(콘덴서)을 '같은 부품' 으로 붙인 적이 있다.
+12. 기준일이 다른 값을 한 문장에 섞지 마라. 환율은 오늘 기준값이고 유가·지수는
+    직전 세션 값이다 — 같은 문단에 놓을 때는 '오늘 기준값' 처럼 어느 날 값인지
+    붙여라. 수급을 요약에 옮길 때는 큰 쪽부터 쓴다(개인이 기타법인보다 크면
+    개인을 먼저, 작은 쪽만 골라 쓰지 않는다).
 
 출력 형식 — 머리말·설명 없이 곧바로 마커부터. 마커 앞뒤에 어떤 문장도 쓰지 마라.
 
@@ -1083,6 +1201,123 @@ def check_headings(brief, facts=None):
     return bad
 
 
+_SENT = re.compile(r"(?<=[.!?。])\s+|\n")
+_WEEKWORD = re.compile(r"(이번\s*주|다음\s*주|지난\s*주)")
+# '같은 …' 으로 종목을 한 묶음으로 만드는 말. 업종이 다르면 거짓이 된다.
+_SAME_GROUP = re.compile(r"같은\s*(업종|부품|반도체|섹터|장비|소재|업계)")
+
+
+def _sector_map(facts):
+    """종목코드 → 업종. 사실 블록에 적힌 것과 같은 출처(movers)다."""
+    out = {}
+    m = (((facts or {}).get("domestic") or {}).get("movers") or {})
+    for key in ("leaders", "laggards", "up", "down", "actives"):
+        for r in m.get(key) or []:
+            if r.get("ticker") and r.get("sector"):
+                out[r["ticker"]] = r["sector"]
+    return out
+
+
+def _ko_texts(brief):
+    """(경로, 한국어 문장들) — 제목·리드·요약·섹션 제목·문단."""
+    for path, s in _walk(brief):
+        if path.endswith(".ko"):
+            yield path, [x.strip() for x in _SENT.split(_plain(s)) if x.strip()]
+
+
+def check_weeks(brief, facts):
+    """'이번 주'·'다음 주'가 실제 달력과 맞는지.
+
+    9월 14일(월) 브리핑이 9월 21일(다음 주 월) 시한을 '이번 주 안에' 라고
+    제목에 달았다. 본문에는 날짜가 맞게 적혀 있었다 — 날짜를 주(週)로
+    옮기는 그 한 걸음에서 미끄러진 것이다. 그 걸음은 계산으로 검사할 수 있다.
+
+    보수적으로 본다: 같은 문장 안에 'M월 D일' 이 있을 때만 판정한다.
+    날짜가 없는 '이번 주'는 무엇을 가리키는지 모르므로 건드리지 않는다.
+    """
+    today = _date8((((facts or {}).get("domestic") or {}).get("calendar") or {}).get("today"))
+    if not today:
+        return []
+    bad = []
+    for path, sents in _ko_texts(brief):
+        for sent in sents:
+            words = list(_WEEKWORD.finditer(sent))
+            if not words:
+                continue
+            # 날짜는 앞에도 뒤에도 온다 — "9월 21일 결정이 이번 주 안에" 와
+            # "이번 주 9월 16일에". 한 문장에 '지난 주 … 이번 주 …' 가 같이
+            # 오기도 한다. 그래서 날짜마다 글자 거리가 가장 가까운 낱말을
+            # 그 날짜의 것으로 본다.
+            hit = False
+            for dm in _KDATE.finditer(sent):
+                d = _dates_in(dm.group(0), today.year)
+                if not d:
+                    continue
+                d = d[0]
+                near = min(words, key=lambda m: min(abs(m.start() - dm.end()),
+                                                     abs(dm.start() - m.end())))
+                word = re.sub(r"\s+", " ", near.group(1))
+                real = week_tag(d, today)
+                if real != word and real in ("이번 주", "다음 주", "지난 주"):
+                    bad.append(f"{path} 에 '{word}' — 그 문장의 {_wk(d)}은 {real}다"
+                               f" (오늘 {_wk(today)}). 사실 블록의 [요일] 범위를 보라")
+                    hit = True
+                    break
+            if hit:
+                continue
+    # 제목·섹션 제목은 날짜가 같은 문장에 없는 경우가 많다(제목은 짧다).
+    # 그럴 때는 본문의 확인 지점 날짜로 대신 판정한다 — 제목이 '이번 주'
+    # 라고 했는데 그 섹션 본문에 적힌 날짜가 전부 다음 주면 제목이 틀린 것.
+    for sec in brief.get("sections") or []:
+        head = _plain((sec.get("heading") or {}).get("ko") or "")
+        m = _WEEKWORD.search(head)
+        if not m or _KDATE.search(head):
+            continue
+        word = re.sub(r"\s+", " ", m.group(1))
+        body = " ".join(_plain(p.get("ko") or "") for p in sec.get("paragraphs") or [])
+        ds = _dates_in(body, today.year)
+        if not ds:
+            continue
+        tags = {week_tag(d, today) for d in ds}
+        if word not in tags and tags <= {"이번 주", "다음 주", "지난 주", "그 다음", "그 전"}:
+            got = " · ".join(f"{_wk(d)}={week_tag(d, today)}" for d in ds[:3])
+            bad.append(f"섹션 {sec.get('id')} 제목에 '{word}' — 본문의 날짜는 {got} 다"
+                       f" (오늘 {_wk(today)})")
+    return bad
+
+
+def check_sector_grouping(brief, facts):
+    """'같은 부품 안에서도' 처럼 묶어 놓은 종목들의 업종이 정말 같은지.
+
+    한미반도체·넥스틴·DB하이텍(반도체)을 늘어놓고 '같은 부품 안에서도
+    삼화콘덴서(전자·부품)가 올랐다' 고 쓴 적이 있다. 종목 링크의 코드로
+    업종을 찾을 수 있으니, 한 문장 안에서 두 업종 이상이 '같은' 으로
+    묶이면 거부한다.
+    """
+    smap = _sector_map(facts)
+    if not smap:
+        return []
+    bad = []
+    for path, sents in _ko_texts(brief):
+        # 링크는 _plain 이 벗기므로 원문에서 다시 본다.
+        raw = next((v for pth, v in _walk(brief) if pth == path), "")
+        raw_sents = [x for x in _SENT.split(raw) if x.strip()]
+        for i, sent in enumerate(raw_sents):
+            if not _SAME_GROUP.search(sent):
+                continue
+            # 묶음은 두 문장에 걸친다 — 앞 문장에 종목을 늘어놓고, 다음 문장이
+            # "다만 같은 부품 안에서도 X가 올랐다" 로 받는다. 실제로 그렇게
+            # 나갔다. 그래서 '같은 …' 문장과 바로 앞 문장을 한 창으로 본다.
+            window = (raw_sents[i - 1] + " " if i > 0 else "") + sent
+            codes = [m.group(2) for m in LINK.finditer(window)]
+            secs = {smap[c] for c in codes if c in smap}
+            if len(secs) >= 2:
+                pairs = ", ".join(f"{c}={smap[c]}" for c in codes if c in smap)
+                bad.append(f"{path} 에서 업종이 다른 종목을 '{_SAME_GROUP.search(sent).group(0)}'"
+                           f" 으로 묶었다 — {pairs}. 업종이 다르면 다르다고 써라")
+    return bad
+
+
 def validate(brief, strict_coverage=True, facts=None):
     """거부 이유 목록. 빈 목록이면 통과."""
     bad = []
@@ -1167,6 +1402,8 @@ def validate(brief, strict_coverage=True, facts=None):
                            f"{', '.join(sorted(en_codes - ko_codes))}")
 
     bad += check_headings(brief, facts)
+    bad += check_weeks(brief, facts)
+    bad += check_sector_grouping(brief, facts)
 
     # coverage 섹션은 출처를 밝혀야 한다. 이게 이 브리핑의 존재 이유인데,
     # 어디서 온 얘기인지 안 적으면 독자는 그냥 종목 소식으로 읽고 지나간다.
