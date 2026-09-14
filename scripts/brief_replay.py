@@ -44,9 +44,12 @@ def replay(cl, date):
 
     # 그날의 재료를 그대로 쓴다. 수집기를 다시 돌리면 오늘 값이 섞인다.
     G._facts_text = lambda facts: digest
+    # calendar.today 는 '발행하는 날' 이다(거래일이 아니다). 검사기(check_weeks)가
+    # 이 날짜로 '이번 주·다음 주' 를 세므로, 거래일을 넣으면 월요일 글이
+    # 엉뚱하게 '다음 주' 로 잡힌다.
     facts = {"domestic": {"publishDate": date,
                           "calendar": {"open": bool(old.get("marketOpen", True)),
-                                       "today": old.get("tradeDate") or ""}},
+                                       "today": date.replace("-", "")}},
              "markets": {}}
     prompt = G.build_prompt(facts)
     print(f"· {date} 프롬프트 {len(prompt):,}자 — 모델 호출", file=sys.stderr)

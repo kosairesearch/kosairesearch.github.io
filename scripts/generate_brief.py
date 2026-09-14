@@ -487,7 +487,13 @@ def _facts_text(facts):
                 if not same:
                     cell += f"({v.get('date')})"
                 cells.append(cell)
-            L.append(f"  {gname}: " + " · ".join(cells)
+            # 브리핑은 07:30 에 나간다. 도쿄·홍콩·상하이는 그 뒤에 연다 — 여기
+            # 적힌 값은 언제나 직전 마감값이다. 9/14 낮 시험 생성이 금요일
+            # 마감값을 "오늘 아시아는 … 엇갈려 있다" 로 썼다. 값 옆에 그 사실을
+            # 적어 두면 그렇게 쓰지 않는다.
+            head = (f"{gname}(오늘 장은 아직 열리기 전 · 아래는 직전 마감값)"
+                    if gname == "아시아" else gname)
+            L.append(f"  {head}: " + " · ".join(cells)
                      + (f"  (기준일 {dates.pop()})" if same else ""))
         miss = [lbl for k, lbl, *_ in SERIES
                 if k not in ser and k not in ("kospi", "kosdaq")]
@@ -1327,6 +1333,11 @@ _SENT = re.compile(r"(?<=[.!?。])\s+|\n")
 _WEEKWORD = re.compile(r"(이번\s*주|다음\s*주|지난\s*주)")
 # '같은 …' 으로 종목을 한 묶음으로 만드는 말. 업종이 다르면 거짓이 된다.
 _SAME_GROUP = re.compile(r"같은\s*(업종|부품|반도체|섹터|장비|소재|업계)")
+# '같은 X' 뒤에 이런 말이 오면 그 뒤 종목은 다른 묶음이다 — "같은 반도체
+# 안에서도 A는 올랐고, 옆 업종인 전자·부품에서는 B가 올랐다". 9/14 낮 시험
+# 생성이 이 문장을 1차에서 거부당했다(2차 관용으로 살았다). 맞는 문장이었다.
+_GROUP_CUT = re.compile(r"(?:옆|다른|별개의|바깥|인접)\s*(?:업종|섹터|묶음|그룹|분야)"
+                        r"|업종(?:이|은|과|와)\s*다른|반면|한편|달리|밖에서|바깥에서")
 
 
 def _sector_map(facts):
@@ -1347,6 +1358,48 @@ def _ko_texts(brief):
             yield path, [x.strip() for x in _SENT.split(_plain(s)) if x.strip()]
 
 
+# '다음 주 월요일'·'이번 주 후반' — 낱말이 스스로 날짜를 이룬다. 이런 것은
+# 문장 앞쪽의 다른 날짜와 짝지으면 안 된다.
+_WEEK_SELF = re.compile(r"^\s*(?:[월화수목금토일]요일|초|중반|후반|말|주말)")
+# 두 시점을 잇는 말. 이게 사이에 끼면 앞뒤 날짜는 서로 다른 일을 가리킨다 —
+# "9월 12일 공시 뒤 다음 주", "이번 주 후반부터 9월 24일 연휴".
+_WEEK_SEQ = re.compile(r"부터|까지|이후|이전|뒤|후|전에|앞서|지나|이어|다음")
+_WEEK_AFTER, _WEEK_BEFORE = 10, 8
+
+
+def _week_date(sent, m, today):
+    """'이번 주' 낱말(m)이 가리키는 날짜. 바로 옆에 붙어 있을 때만 답한다.
+
+    9월 14일(월) 시험 생성에서 "9월 12일(토) 공시가 … 다음 주 월요일까지"
+    를 두 번 다 거부해 그날 글이 안 만들어졌다. 옛 방식은 문장 안에서
+    글자 거리가 가장 가까운 낱말과 날짜를 무조건 짝지었는데, 그 문장의
+    '다음 주' 는 월요일(9월 21일)을 말하는 것이지 9월 12일을 말하는 게
+    아니었다. 멀리 있는 날짜는 무엇을 가리키는지 모른다 — 모르면 판정하지
+    않는다. 거짓 거부 하나가 그날 브리핑 전체를 지운다.
+
+      · 뒤에 붙은 날짜   "이번 주 9월 16일", "다음 주 월요일(9월 21일)"
+      · 낱말이 스스로 날짜  "다음 주 월요일까지" → 앞 날짜와 짝짓지 않는다
+      · 앞에 붙은 날짜   "9월 21일 결정이 이번 주 안에"
+      · 사이에 '부터·까지·뒤·이후' 가 있으면 다른 시점이다 → 짝짓지 않는다
+    """
+    tail = sent[m.end():]
+    dm = _KDATE.search(tail)
+    if dm and dm.start() <= _WEEK_AFTER and not _WEEK_SEQ.search(tail[:dm.start()]):
+        d = _dates_in(dm.group(0), today.year)
+        return d[0] if d else None
+    if _WEEK_SELF.match(tail):
+        return None
+    head = sent[:m.start()]
+    last = None
+    for dm in _KDATE.finditer(head):
+        last = dm
+    if last and len(head) - last.end() <= _WEEK_BEFORE \
+            and not _WEEK_SEQ.search(head[last.end():]):
+        d = _dates_in(last.group(0), today.year)
+        return d[0] if d else None
+    return None
+
+
 def check_weeks(brief, facts):
     """'이번 주'·'다음 주'가 실제 달력과 맞는지.
 
@@ -1363,30 +1416,16 @@ def check_weeks(brief, facts):
     bad = []
     for path, sents in _ko_texts(brief):
         for sent in sents:
-            words = list(_WEEKWORD.finditer(sent))
-            if not words:
-                continue
-            # 날짜는 앞에도 뒤에도 온다 — "9월 21일 결정이 이번 주 안에" 와
-            # "이번 주 9월 16일에". 한 문장에 '지난 주 … 이번 주 …' 가 같이
-            # 오기도 한다. 그래서 날짜마다 글자 거리가 가장 가까운 낱말을
-            # 그 날짜의 것으로 본다.
-            hit = False
-            for dm in _KDATE.finditer(sent):
-                d = _dates_in(dm.group(0), today.year)
+            for m in _WEEKWORD.finditer(sent):
+                d = _week_date(sent, m, today)
                 if not d:
                     continue
-                d = d[0]
-                near = min(words, key=lambda m: min(abs(m.start() - dm.end()),
-                                                     abs(dm.start() - m.end())))
-                word = re.sub(r"\s+", " ", near.group(1))
+                word = re.sub(r"\s+", " ", m.group(1))
                 real = week_tag(d, today)
                 if real != word and real in ("이번 주", "다음 주", "지난 주"):
                     bad.append(f"{path} 에 '{word}' — 그 문장의 {_wk(d)}은 {real}다"
                                f" (오늘 {_wk(today)}). 사실 블록의 [요일] 범위를 보라")
-                    hit = True
                     break
-            if hit:
-                continue
     # 제목·섹션 제목은 날짜가 같은 문장에 없는 경우가 많다(제목은 짧다).
     # 그럴 때는 본문의 확인 지점 날짜로 대신 판정한다 — 제목이 '이번 주'
     # 라고 했는데 그 섹션 본문에 적힌 날짜가 전부 다음 주면 제목이 틀린 것.
@@ -1396,7 +1435,16 @@ def check_weeks(brief, facts):
         if not m or _KDATE.search(head):
             continue
         word = re.sub(r"\s+", " ", m.group(1))
+        # '다음 주 월요일까지' 는 스스로 날짜다. 본문 날짜가 전부 지난 주여도
+        # (지난 주 공시 이야기를 하다 다음 주 시한을 말하는 글) 틀린 게 아니다.
+        if _WEEK_SELF.match(head[m.end():]):
+            continue
         body = " ".join(_plain(p.get("ko") or "") for p in sec.get("paragraphs") or [])
+        # 본문이 같은 말을 '다음 주 월요일' 처럼 요일까지 박아 쓰고 있으면
+        # 제목은 그 문장을 줄인 것이다. 본문 날짜가 전부 지난 주(공시 날짜)여도
+        # 틀린 게 아니므로 본문 날짜를 끌어다 걸지 않는다.
+        if re.search(word.replace(" ", r"\s*") + r"\s*(?:[월화수목금토일]요일|초|중반|후반|말|주말)", body):
+            continue
         ds = _dates_in(body, today.year)
         if not ds:
             continue
@@ -1425,12 +1473,17 @@ def check_sector_grouping(brief, facts):
         raw = next((v for pth, v in _walk(brief) if pth == path), "")
         raw_sents = [x for x in _SENT.split(raw) if x.strip()]
         for i, sent in enumerate(raw_sents):
-            if not _SAME_GROUP.search(sent):
+            g = _SAME_GROUP.search(sent)
+            if not g:
                 continue
             # 묶음은 두 문장에 걸친다 — 앞 문장에 종목을 늘어놓고, 다음 문장이
             # "다만 같은 부품 안에서도 X가 올랐다" 로 받는다. 실제로 그렇게
             # 나갔다. 그래서 '같은 …' 문장과 바로 앞 문장을 한 창으로 본다.
-            window = (raw_sents[i - 1] + " " if i > 0 else "") + sent
+            # 다만 '같은 X' 뒤에서 글쓴이가 스스로 "옆 업종인 …" 하고 갈라
+            # 놓았으면 거기까지만 본다 — 그 뒤 종목은 같은 묶음이 아니다.
+            cut = _GROUP_CUT.search(sent, g.end())
+            cur = sent[:cut.start()] if cut else sent
+            window = (raw_sents[i - 1] + " " if i > 0 else "") + cur
             codes = [m.group(2) for m in LINK.finditer(window)]
             secs = {smap[c] for c in codes if c in smap}
             if len(secs) >= 2:
@@ -1440,8 +1493,16 @@ def check_sector_grouping(brief, facts):
     return bad
 
 
-def validate(brief, strict_coverage=True, facts=None):
-    """거부 이유 목록. 빈 목록이면 통과."""
+def validate(brief, strict_coverage=True, facts=None, strict_text=True):
+    """거부 이유 목록. 빈 목록이면 통과.
+
+    strict_text — 문장을 읽어 판정하는 검사(주 범위·업종 묶음)를 거부
+    사유로 칠지. 1차에서는 친다. 2차에서는 경고만 남기고 내보낸다: 이
+    검사들은 글을 짐작으로 읽는 것이라 틀릴 수 있고, 같은 이유로 두 번
+    거부되면 그날 브리핑이 통째로 사라진다. 한 문장의 '이번 주' 가 어긋난
+    글이 글이 없는 것보다 낫다. 1차 거부 사유는 2차 프롬프트에 붙으므로
+    진짜 틀린 것은 2차에서 대개 고쳐져 온다.
+    """
     bad = []
     if not isinstance(brief, dict):
         return ["JSON 이 객체가 아니다"]
@@ -1524,8 +1585,14 @@ def validate(brief, strict_coverage=True, facts=None):
                            f"{', '.join(sorted(en_codes - ko_codes))}")
 
     bad += check_headings(brief, facts)
-    bad += check_weeks(brief, facts)
-    bad += check_sector_grouping(brief, facts)
+    soft = check_weeks(brief, facts) + check_sector_grouping(brief, facts)
+    if strict_text:
+        bad += soft
+    else:
+        for x in soft:
+            log(f"⚠️ 2차라 넘긴다(문장 검사): {x}")
+            if os.getenv("GITHUB_ACTIONS"):
+                print(f"::warning title=브리핑 문장 검사::{x}")
 
     # coverage 섹션은 출처를 밝혀야 한다. 이게 이 브리핑의 존재 이유인데,
     # 어디서 온 얘기인지 안 적으면 독자는 그냥 종목 소식으로 읽고 지나간다.
@@ -1715,7 +1782,8 @@ def main():
             log(f"· 요약 {n_sum}곳에서 링크·강조·글머리표를 벗겨 한 문단으로 이었다")
         # 1차는 설계대로 25% 로 본다. 2차는 30% 까지 눈감아 준다 — 발행이
         # 안 되는 것보다는 커버리지가 조금 긴 게 낫다. 그 위는 발행하지 않는다.
-        bad = validate(cand, strict_coverage=(attempt == 1), facts=facts)
+        bad = validate(cand, strict_coverage=(attempt == 1), facts=facts,
+                       strict_text=(attempt == 1))
         if not bad:
             brief = cand
             break
