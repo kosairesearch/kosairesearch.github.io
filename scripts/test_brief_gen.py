@@ -107,7 +107,8 @@ ok(f"커버리지 {ratio*100:.0f}% ≤ 25%", ratio <= G.COVERAGE_CAP, f"({ratio:
 check("거부 이유 없음", G.validate(base), [])
 
 print("\n② 분량 — 짧으면 거부, 길면 거부")
-ok("1,200자짜리 거부", has(G.validate(sample(300, 300, 300, 200)), "분량"))
+ok("800자짜리 거부", has(G.validate(sample(150, 150, 150, 90)), "분량"))
+ok("1,100자짜리는 통과(하한 1,000)", not has(G.validate(sample(300, 300, 300, 200)), "분량"))
 ok("5,000자짜리 거부", has(G.validate(sample(1400, 1400, 1400, 900)), "분량"))
 
 print("\n③ 커버리지 25% 상한 — 사용자가 처음 지적한 지점")
@@ -710,7 +711,7 @@ ok("칸마다 글자 수를 배정하지 않는다",
    not any(x in p for x in ("약 700자", "약 650자", "약 600자")))
 # 칸별 배정은 없애되 전체 분량은 알려 줘야 한다. 목표를 모른 채 쓰다 상한을
 # 넘기면 거부 → 다시 쓰기가 되고, 최악이면 그날 발행이 막힌다.
-ok("전체 분량은 알려 준다", "2,000자에서 3,200자" in p)
+ok("전체 분량은 알려 준다", "3,200자 안에서" in p and "1,000자" in p)
 ok("상한을 넘기면 어떻게 되는지도 알려 준다", "발행되지 않는다" in p)
 ok("날마다 길이가 달라도 된다고 적는다", "같은 길이일 이유가 없다" in p)
 ok("휴장 전제를 알려 준다", "'오늘 장'을 준비하는 글이 아니다" in p)
@@ -906,31 +907,14 @@ ok("표본(sample)은 두 묶음뿐", len(G.used_materials(sample())) == 2, str(
 _half = sample(); _half["lead"]["ko"] = "S&P 500이 올랐다. 외국인이 순매도했다. WTI는 100달러다. "
 ok("셋만 쓰면 셋+표본 둘 = 다섯", len(G.used_materials(_half)) == 5, str(G.used_materials(_half)))
 
-print("\n⑰-2 상한 — 1차 7개, 2차 9개, 열두 개는 어디서도 안 된다")
 def _with(n):
     b = sample()
     parts = ["S&P 500이 올랐다.", "코스피는 6,909.91로 마감했다.", "외국인이 순매도했다.",
              "중앙값은 -0.17%다.", "업종 상위는 조선이다.", "원/달러는 1,344원이다.",
              "WTI는 100달러다.", "미 10년물은 4.97%다.", "16일 FOMC가 끝난다.",
              "[a](000001) [b](000002) [c](000003) [d](000004) [e](000005)."]
-    b["lead"]["ko"] = " ".join(parts[:n])       # 표본이 이미 반도체지수·커버리지 둘을 쓴다
+    b["lead"]["ko"] = " ".join(parts[:n])
     return b
-ok("7개면 1차 통과", not has(G.validate(_with(5), facts=None), "재료"), str(G.validate(_with(5))))
-ok("8개면 1차 거부", has(G.validate(_with(6), facts=None), "8개를 다뤘다"))
-ok("8개도 2차(느슨)는 통과", not has(G.validate(_with(6), strict_coverage=False), "재료"))
-ok("10개면 2차도 거부", has(G.validate(_with(8), strict_coverage=False), "10개를 다뤘다"))
-r12 = G.validate(_with(10), strict_coverage=False)
-ok("열두 개는 2차도 거부", has(r12, "12개를 다뤘다"), str(r12))
-
-print("\n⑰-3 어제와 같은 조합")
-_today = _with(3)                     # 미국지수·국내지수·수급 + 반도체지수·커버리지
-_um = G.used_materials(_today)
-ok("같은 조합이면 거부", has(G.validate(_today, prev_materials=list(_um)), "어제와 같은 재료 조합"))
-ok("순서가 달라도 같은 조합", has(G.validate(_today, prev_materials=list(reversed(_um))), "어제와 같은"))
-ok("하나라도 다르면 통과", not has(G.validate(_today, prev_materials=_um[:-1] + ["유가"]), "어제와 같은"))
-ok("어제 것이 없으면 검사하지 않는다", not has(G.validate(_today, prev_materials=None), "어제와 같은"))
-ok("검사기 단독 호출도 같다", G.check_materials(_today, strict=True, prev=_um) and
-   not G.check_materials(_today, strict=True, prev=None))
 
 print("\n⑰-4 어제 재료는 나간 글에서만 읽는다")
 def _mat_brief(published):
@@ -945,6 +929,29 @@ with _tf.TemporaryDirectory() as _d:
     ok("초안(미발행)은 건너뛰고 나간 글을 읽는다", ym is not None, str(ym))
     ok("오늘 이후 파일은 읽지 않는다", G.yesterday_materials("2026-09-12", _dd) is None)
     ok("폴더가 없으면 None", G.yesterday_materials("2026-09-14", _dd / "없음") is None)
+
+
+print("\n⑱ 넓힌 재료 — 아시아·미국 개별·원자재·심리")
+F18 = copy.deepcopy(FACTS)
+F18["markets"].update({
+    "nikkei":   {"label": "닛케이",   "close": 45210.3, "change": 1.12, "date": "2026-08-14", "unit": ""},
+    "hangseng": {"label": "항셍",     "close": 24188.0, "change": -0.4, "date": "2026-08-14", "unit": ""},
+    "nvda":     {"label": "엔비디아", "close": 182.4,  "change": 2.3,  "date": "2026-08-14", "unit": "달러"},
+    "gold":     {"label": "금",       "close": 3410.5, "change": 0.8,  "date": "2026-08-14", "unit": "달러"},
+    "vix":      {"label": "VIX",      "close": 14.2,   "change": -5.1, "date": "2026-08-13", "unit": ""},
+    "btc":      {"label": "비트코인", "close": 63412.0, "change": 1.2,  "date": "2026-08-14", "unit": "달러"},
+})
+t18 = G._facts_text(F18)
+ok("아시아 묶음 한 줄", "아시아: 닛케이 45,210.30 +1.12% · 항셍 24,188.00 -0.40%  (기준일 2026-08-14)" in t18, t18)
+ok("미국 개별 묶음", "미국 개별: 엔비디아 182.40달러 +2.30%" in t18)
+ok("원자재 묶음", "원자재: 금 3,410.50달러 +0.80%" in t18)
+ok("기준일이 다르면 항목마다 붙는다", "심리·기타: VIX 14.20 -5.10%(2026-08-13) · 비트코인 63,412.00달러 +1.20%(2026-08-14)" in t18, [l for l in t18.split("\n") if "심리" in l])
+ok("못 받은 새 시리즈는 이름이 실린다", "못 받은 값(쓰지 말 것)" in t18 and "상하이종합" in t18 and "테슬라" in t18)
+ok("검출기가 새 종류를 센다",
+   {"아시아", "미국개별", "원자재", "공포지수"} <= set(G.used_materials(
+       {"lead": {"ko": "닛케이가 올랐고 엔비디아가 뛰었다. 금값도 올랐다. VIX는 내렸다."}, "summary": {}, "sections": []})))
+ok("분량 하한이 1,000 이다", G.LEN_MIN == 1000, str(G.LEN_MIN))
+ok("재료 상한 검사는 없다", not hasattr(G, "check_materials"))
 
 print("\n" + "=" * 60)
 if FAIL:
