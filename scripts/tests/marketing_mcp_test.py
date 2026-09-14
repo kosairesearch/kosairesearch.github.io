@@ -184,6 +184,9 @@ with Server() as s:
     t, err = s.call("weekly")
     ok("주간 숫자판이 온다", "KOSAI 주간 성과 보고" in t and not err, t[:80])
     ok("가장 최근 주다", "9월 7일" in t, t[:200])
+    # 두 주만 넘기던 때는 아래 줄들이 비어 나갔다.
+    ok("퍼널이 붙는다", "손님이 어디까지 가나" in t, t)
+    ok("붙잡는 힘이 붙는다", "붙잡는 힘" in t and "8월 31일" in t, t[t.find("붙잡"):][:120])
 
     t, _ = s.call("weekly", week="2026-08-31")
     ok("주를 골라 볼 수 있다", "8월 31일" in t, t[:200])
