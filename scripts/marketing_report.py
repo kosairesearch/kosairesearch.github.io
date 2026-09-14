@@ -392,9 +392,18 @@ def funnel(week):
 
 def latest_cohort(doc):
     """1주 뒤 재방문을 잴 수 있는 가장 최근 코호트와 그 앞 것.
-    [(주, 처음 온 수, 1주 뒤 돌아온 수, 비율%)] 최근 것이 뒤. 없으면 []."""
+    [(주, 처음 온 수, 1주 뒤 돌아온 수, 비율%)] 최근 것이 뒤. 없으면 [].
+
+    가장 최근 주의 코호트는 뺀다. GA4 는 다음 주가 시작되자마자 '1주 뒤'
+    칸을 채우기 시작하므로, 월요일에 받으면 그 칸에 몇 시간치만 들어 있다.
+    2026-09-14 에 9/7 코호트가 "396명 중 4명 → 1%" 로 찍혔다 — 하루도 안
+    지난 숫자였다. '1주 뒤' 창이 통째로 지난 코호트만 센다."""
+    weeks = doc.get("weeks") or []
+    latest = (weeks[-1] or {}).get("week") if weeks else None
     out = []
     for wk, size, back in retention_rows(doc, 12):
+        if latest and wk >= latest:
+            continue
         one = [(v, r) for n, v, r in back if n == 1]
         if one:
             out.append((wk, size, one[0][0], one[0][1]))
