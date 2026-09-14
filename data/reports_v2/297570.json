@@ -328,15 +328,15 @@
    }
   ],
   "valuation": {
-   "price": 869,
+   "price": 4260,
    "mcap": 0.0301,
-   "shares": 34621218,
-   "total_shares": 34621218,
-   "wavg_shares": 34722049,
+   "shares": 6924243,
+   "total_shares": 6924244,
+   "wavg_shares": 6944410,
    "per": null,
    "eps": null,
-   "pbr": 0.6509,
-   "bps": 1335,
+   "pbr": 0.64,
+   "bps": 6675,
    "roe_ttm": 10.7,
    "ttm_window": "2025Q1~2025Q4",
    "ttm_np_owner": 4965253042,
@@ -351,6 +351,13 @@
    "hidden": {
     "dps": "no_div",
     "eps": "ref_mismatch"
+   },
+   "shares_patched": {
+    "on": "2026-09-14",
+    "was": 34621218,
+    "now": 6924243,
+    "factor": 5.0,
+    "why": "액면병합·분할·감자 — 배수로 환산"
    }
   }
  }
