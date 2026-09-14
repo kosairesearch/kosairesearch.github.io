@@ -355,7 +355,9 @@ def one_week(client, prop, mon, sun, deep=False):
         row["pages"] = _run(client, prop, s, e,
                             ["screenPageViews", "totalUsers", "userEngagementDuration"],
                             ["pagePath"], limit=20, order="screenPageViews")
-        row["events"] = _run(client, prop, s, e, ["eventCount"],
+        # 사람 수도 같이 받는다. 건수만 있으면 "관심종목 33건" 이 한 사람이
+        # 33번 담은 건지 33명이 하나씩 담은 건지 모른다. 퍼널은 사람 수로 센다.
+        row["events"] = _run(client, prop, s, e, ["eventCount", "totalUsers"],
                              ["eventName"], limit=30, order="eventCount")
         row["devices"] = _run(client, prop, s, e, ["totalUsers"],
                               ["deviceCategory"], limit=5, order="totalUsers")

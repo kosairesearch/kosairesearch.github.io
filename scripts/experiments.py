@@ -123,6 +123,48 @@ def propose(doc, title, why, metric, action, week):
     return item, None
 
 
+RATE_METRICS = ("returnRate", "engagedRate", "signUpRate")
+
+
+def threshold_pct(base):
+    """건수 지표의 판정 문턱(%). 수가 적을수록 문턱이 높다.
+
+    예전엔 ±5% 하나로 봤다. 그러면 관심종목 16건 → 33건 같은 것도
+    '효과 있음' 이 된다 — 그 크기에서 주간 출렁임은 몇십 % 가 보통이다.
+    주간 건수는 대략 √n 만큼 흔들린다. 그 두 배를 문턱으로 잡는다.
+      16건 → ±50%   33건 → ±35%   100건 → ±20%   400건 → ±10%   1,600건 → ±5%
+    """
+    if not base or base <= 0:
+        return None
+    return max(5.0, 200.0 / (base ** 0.5))
+
+
+def judge(metric, base, now):
+    """(판정, 적용한 기준 문구).
+
+    비율 지표(재방문율 같은 것)는 %p 로 잰다. 14.4% → 17.1% 는 '2.7%p 올랐다'
+    이지 '19% 올랐다' 가 아니다 — 보고서가 지키는 규칙을 판정도 지켜야 한다.
+    건수 지표는 수에 따라 문턱을 달리한다(threshold_pct)."""
+    if metric in RATE_METRICS:
+        pp = now - base
+        rule = "±2%p"
+        if pp >= 2:
+            return "효과 있음", rule
+        if pp <= -2:
+            return "역효과", rule
+        return "변화 없음", rule
+    th = threshold_pct(base)
+    if th is None:
+        return "잴 수 없음", "기준값 0"
+    pct = (now - base) / base * 100
+    rule = f"±{th:.0f}%"
+    if pct >= th:
+        return "효과 있음", rule
+    if pct <= -th:
+        return "역효과", rule
+    return "변화 없음", rule
+
+
 def review(doc, weeks):
     """진행중인 실험을 지금 숫자에 대 본다. (끝난 것 목록)"""
     if not weeks:
@@ -144,19 +186,11 @@ def review(doc, weeks):
         else:
             diff = now - base
             pct = (diff / base * 100) if base else None
-            # 5% 안쪽 움직임은 주간 널뛰기와 구분되지 않는다.
-            if pct is None:
-                verdict = "잴 수 없음"
-            elif pct >= 5:
-                verdict = "효과 있음"
-            elif pct <= -5:
-                verdict = "역효과"
-            else:
-                verdict = "변화 없음"
+            verdict, rule = judge(it["metric"], base, now)
             it["result"] = {"week": cur.get("week"), "now": now, "base": base,
                             "diff": round(diff, 2),
                             "pct": round(pct, 1) if pct is not None else None,
-                            "verdict": verdict}
+                            "verdict": verdict, "rule": rule}
         it["status"] = "끝남"
         done.append(it)
     return done

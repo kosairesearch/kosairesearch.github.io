@@ -133,7 +133,10 @@ def t_weekly(week=None, weeks=1):
     # 고른 주에서 끝나는 창. 주를 골라 놓고 흐름만 '가장 최근 N주' 를
     # 보여 주면, 표와 흐름이 서로 다른 기간을 말하게 된다.
     i = all_w.index(cur)
-    out = [M.metrics_block({"weeks": all_w[max(0, i - 1):i + 1],
+    # 고른 주까지의 기록을 전부 준다 — 숫자판이 4주 평균·흔한 출렁임·
+    # 코호트를 그 앞 주들에서 계산한다. 두 주만 주면 그 줄들이 비어 나간다.
+    out = [M.metrics_block({"weeks": all_w[:i + 1],
+                            "retention": doc.get("retention"),
                             "health": doc.get("health")})]
     n = max(1, min(int(weeks or 1), 52))
     if n > 1:

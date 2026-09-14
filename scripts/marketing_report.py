@@ -326,7 +326,107 @@ def has_behavior(week):
                 "landings", "leave", "byVisitor"))
 
 
-def metrics_block(doc):
+# ── 기준선 · 퍼널 · 붙잡는 힘 ────────────────────────────────────────
+# 앞주와만 견주면 400명대에서 흔한 ±15% 출렁임을 성과로 읽게 된다.
+# 2026-09-14 보고가 "8주 중 가장 좋은 주" 라고 했는데 방문자는 8/10 이
+# 더 많았다. 그래서 4주 평균과 '흔한 출렁임 폭' 을 숫자판에 박는다.
+
+def four_week_avg(weeks, key):
+    """이번 주를 뺀 앞 4주 평균. key 는 값을 꺼내는 함수. 없으면 None."""
+    prior = [key(w) for w in (weeks or [])[:-1][-4:]]
+    prior = [v for v in prior if isinstance(v, (int, float))]
+    return sum(prior) / len(prior) if prior else None
+
+
+def swing_pct(weeks, n=8):
+    """지난 n 주 동안 방문자가 주마다 얼마나 흔들렸나 — 변화율 절댓값의
+    중앙값. '이 안의 움직임은 우연일 수 있다' 의 그 폭이다. 3주 미만이면 None."""
+    us = [w.get("users") for w in (weeks or [])[-n:]]
+    us = [u for u in us if isinstance(u, (int, float))]
+    if len(us) < 3:
+        return None
+    moves = sorted(abs(b / a - 1) * 100 for a, b in zip(us, us[1:]) if a)
+    return moves[len(moves) // 2] if moves else None
+
+
+def report_readers(week):
+    """종목 리포트(/stock.html)를 한 번이라도 연 사람 수. 옛 기록엔 없다."""
+    for r in (week or {}).get("pages") or []:
+        if (r.get("pagePath") or "").split("?")[0] == "/stock.html":
+            return r.get("totalUsers")
+    return None
+
+
+def event_users(week, name):
+    """그 일을 한 사람 수. 기록에 사람 수가 없으면(옛 기록) 건수를 (n, "건")
+    으로, 있으면 (n, "명") 으로 돌려준다. 아예 없으면 None."""
+    for e in (week or {}).get("events") or []:
+        if e.get("eventName") == name:
+            if isinstance(e.get("totalUsers"), (int, float)):
+                return e["totalUsers"], "명"
+            if isinstance(e.get("eventCount"), (int, float)):
+                return e["eventCount"], "건"
+    return None
+
+
+def funnel(week):
+    """손님이 어디까지 가나. [(단계, 값, 단위, 방문자 대비 %)]
+    값이 없는 단계는 값 None 으로 두고 빼지 않는다 — 빈칸은 0 으로 읽힌다."""
+    users = (week or {}).get("users") or 0
+    def pct(v):
+        return (v / users * 100) if (users and isinstance(v, (int, float))) else None
+    rows = [("사이트에 옴", users, "명", 100.0 if users else None)]
+    rd = report_readers(week)
+    rows.append(("리포트를 열어 봄", rd, "명", pct(rd)))
+    for label, ev in (("관심종목 담음", "watchlist_add"), ("가입함", "sign_up")):
+        got = event_users(week, ev)
+        if got:
+            v, unit = got
+            rows.append((label, v, unit, pct(v) if unit == "명" else None))
+        else:
+            rows.append((label, None, "명", None))
+    ret = (week or {}).get("returningUsers")
+    rows.append(("다시 옴", ret, "명", pct(ret)))
+    return rows
+
+
+def latest_cohort(doc):
+    """1주 뒤 재방문을 잴 수 있는 가장 최근 코호트와 그 앞 것.
+    [(주, 처음 온 수, 1주 뒤 돌아온 수, 비율%)] 최근 것이 뒤. 없으면 []."""
+    out = []
+    for wk, size, back in retention_rows(doc, 12):
+        one = [(v, r) for n, v, r in back if n == 1]
+        if one:
+            out.append((wk, size, one[0][0], one[0][1]))
+    return out[-2:]
+
+
+def device_split(week):
+    """[(이름, 몫%)] 큰 순서."""
+    import ga4_data
+    rows = [(ga4_data.DEVICE_NAMES.get(r.get("deviceCategory"), r.get("deviceCategory")),
+             r.get("totalUsers") or 0) for r in (week or {}).get("devices") or []]
+    tot = sum(n for _, n in rows)
+    return [(name, n / tot * 100) for name, n in sorted(rows, key=lambda x: -x[1])] if tot else []
+
+
+def stale_note(cur, today=None):
+    """보고 기간이 '지난주' 가 아니면 그 말을 맨 위에 박는다.
+
+    2026-09-14 에 저장이 깨져 지지난주가 제일 최근 주로 남았고, 보고가
+    그것을 '지난주' 라고 적어 나갔다. 숫자판이 스스로 알아채야 한다."""
+    import ga4_data
+    today = today or datetime.datetime.now(ga4_data.KST).date()
+    mon, sun = ga4_data.week_bounds(today, 1)[0]
+    to = (cur or {}).get("to")
+    if not to or to >= sun.isoformat():
+        return None
+    gap = (sun - datetime.date.fromisoformat(to)).days // 7
+    return (f"⚠️ 이건 지난주가 아닙니다 — {_d(to)} 에 끝난 주, {gap}주 전 숫자입니다."
+            f" 지난주({_d(mon.isoformat())}~{_d(sun.isoformat())}) 숫자가 아직 안 들어왔습니다.")
+
+
+def metrics_block(doc, today=None):
     """사람이 그대로 읽는 숫자판. 모델을 거치지 않는다.
 
     모델이 숫자를 옮겨 적다가 한 자리 틀리면 보고서 전체를 못 믿는다.
@@ -344,6 +444,9 @@ def metrics_block(doc):
         L.append(f"비교  {_d(prev['week'])} ~ {_d(prev['to'])}")
     else:
         L.append("비교  없음 (앞 주 기록이 아직 없습니다)")
+    st = stale_note(cur, today)
+    if st:
+        L.append(st)
     L.append("")
 
     L.append("■ 얼마나 왔나")
@@ -358,6 +461,17 @@ def metrics_block(doc):
         prevs = f"  (앞주 {r_bef:.1f}%)" if r_bef is not None else ""
         L.append(f"  {_pad('재방문율', 16)}{r_now:.1f}%{tail}{prevs}")
         L.append("     └ 다시 온 사람 ÷ 전체 방문자. 붙잡고 있는지를 보는 숫자입니다.")
+    avg_u = four_week_avg(weeks, lambda w: w.get("users"))
+    avg_r = four_week_avg(weeks, lambda w: _rate(w.get("returningUsers"), w.get("users")))
+    if avg_u:
+        d, pct = _delta(cur.get("users"), avg_u)
+        tail = f"  이번 주는 평균보다 {_arrow(pct)}{d.lstrip('+-')}" if d else ""
+        L.append(f"  {_pad('4주 평균', 16)}방문자 {avg_u:,.0f}명"
+                 + (f" · 재방문율 {avg_r:.1f}%" if avg_r is not None else "") + tail)
+    sw = swing_pct(weeks)
+    if sw is not None:
+        L.append(f"  {_pad('흔한 출렁임', 16)}±{sw:.0f}%  (지난 8주 기준)")
+        L.append("     └ 이 폭 안의 움직임은 우연일 수 있습니다. 밖으로 나간 것만 뜻이 있습니다.")
     L.append("")
 
     L.append("■ 얼마나 봤나")
@@ -376,6 +490,9 @@ def metrics_block(doc):
         L.append("     └ 10초 넘게 머물거나 2장 이상 본 방문의 비율입니다.")
     sec = cur.get("avgSessionSec") or 0
     L.append(f"  {_pad('머문 시간', 16)}{sec // 60}분 {sec % 60}초")
+    dv = device_split(cur)
+    if dv:
+        L.append(f"  {_pad('기기', 16)}" + " · ".join(f"{n} {p:.0f}%" for n, p in dv[:3]))
     L.append("")
 
     # 내부 발자국. 이걸 따로 떼어 놓지 않으면 성장 숫자가 허구가 된다.
@@ -404,6 +521,32 @@ def metrics_block(doc):
         wl = evs.get("watchlist_add")
         if wl is not None:
             L.append(_line("관심종목 담기", wl, pevs.get("watchlist_add"), "건"))
+        L.append("")
+
+    # 어디서 새는지. 방문자·가입을 따로따로 보면 "가입이 적다" 까지만
+    # 알고, 리포트를 연 사람이 적어서인지 열고도 안 담아서인지는 모른다.
+    fn = funnel(cur)
+    if any(v is not None for _, v, _, _ in fn[1:]):
+        L.append("■ 손님이 어디까지 가나 (방문자 100명 중)")
+        for label, v, unit, pc in fn:
+            if v is None:
+                L.append(f"  {_pad(label, 16)}아직 못 봄")
+            else:
+                pcs = f"  {pc:.0f}명" if pc is not None else ""
+                L.append(f"  {_pad(label, 16)}{_n(v)}{unit}{pcs}")
+        L.append("     └ 어느 단계에서 가장 많이 빠지는지가 다음에 손볼 자리입니다.")
+        L.append("")
+
+    # 붙잡는 힘. 재방문율은 '이번 주 온 사람 중 다시 온 사람' 이라 뜨내기가
+    # 많은 주에 저절로 내려간다. 코호트는 그렇지 않다 — 같은 주에 처음 온
+    # 사람들이 1주 뒤 몇 명 돌아왔는지라, 사이트가 붙잡는 힘 그 자체다.
+    co = latest_cohort(doc)
+    if co:
+        L.append("■ 붙잡는 힘 — 처음 온 사람이 1주 뒤 돌아온 비율")
+        wk, size, back1, r1 = co[-1]
+        prevs = f"  (앞 코호트 {co[-2][3]:.0f}%)" if len(co) >= 2 else ""
+        L.append(f"  {_d(wk)} 주에 처음 온 {_n(size)}명 중 {_n(back1)}명 → {r1:.0f}%{prevs}")
+        L.append("     └ 이 비율이 주마다 오르면 사이트가 붙잡는 힘이 세진 것입니다.")
         L.append("")
 
     # 손님이 실제로 뭘 했나. 숫자판에는 두 줄만 — 나머지는 해설이 맡는다.
@@ -635,6 +778,18 @@ def facts_text(doc):
         L.append("  · 1주 뒤 비율이 주마다 어떻게 변하는지가 볼 것이다."
                  " 그게 오르면 사이트가 붙잡는 힘이 세진 것이다.")
 
+    sw = swing_pct(weeks)
+    L.append("\n[읽는 기준]")
+    if sw is not None:
+        L.append(f"  · 흔한 출렁임 ±{sw:.0f}%. 이 폭 안의 변화는 '늘었다·줄었다' 로"
+                 " 단정하지 마라. '평소 출렁임 안' 이라고 말해라.")
+    L.append("  · 앞주보다 4주 평균이 기준이다. 앞주가 유난히 높거나 낮았으면"
+             " 앞주 대비 증감은 뜻이 없다.")
+    L.append("  · 퍼널에서 방문자 대비 비율이 가장 크게 떨어지는 단계가"
+             " 다음에 손볼 자리다. 거기를 짚어라.")
+    L.append("  · 붙잡는 힘(코호트 1주 뒤)이 재방문율보다 믿을 만하다."
+             " 재방문율은 뜨내기가 많은 주에 저절로 내려간다.")
+
     L.append("\n[페이지 갈래가 뜻하는 것]")
     L.append("  콘텐츠 = 손님이 보러 오는 글. 마케팅이 키워야 할 숫자.")
     L.append("  계정   = 로그인·가입·동의. 손님 것도 있지만 우리가 시험한 것이 많이 섞인다.")
@@ -672,11 +827,18 @@ PROMPT = """아래는 KOSAI 사이트의 지난주 숫자다. 산수는 이미 �
     아니라고 명시해라. 성과 얘기에서 빼고 말해야 한다.
 
 ■ 다음 주에 할 것
-  두세 개. 많을수록 좋은 게 아니다. 각각 딱 세 줄로 쓴다.
+  두세 개. 많을수록 좋은 게 아니다. 각각 딱 세 줄로 쓰고, 제목 앞에
+  어느 지렛대를 당기는 일인지 꼬리표를 단다 — [더 오게] [더 붙잡게] [가입하게].
 
-    1) 구글 서치콘솔에 사이트맵 내기
+    1) [더 오게] 구글 서치콘솔에 사이트맵 내기
        왜 — 방문 483회 중 구글이 3회뿐이다
        됐는지 — 구글에서 온 방문이 30회를 넘으면
+
+  지금 단계의 우선순위는 이 순서다. 사장이 바꾸기 전까지는 이대로 고른다.
+    ① 더 붙잡게 — 처음 온 사람이 다시 오게. 유료화 전이라 가입보다 습관이 먼저다.
+    ② 더 오게 — 네이버 한 곳에 기대는 것을 줄인다. 한 곳이 막히면 전부 끊긴다.
+    ③ 가입하게 — 습관이 생긴 사람에게 권한다. 아직은 세 번째다.
+  세 개를 낼 때 ①②③ 에서 하나씩이 기본이다. 한 지렛대에 셋을 몰지 마라.
 
   '됐는지' 에는 숫자와 선을 적어라. "늘어나면" 이 아니라 "30회를 넘으면"
   이다. 선이 없으면 다음 주에 됐는지 안 됐는지 말할 수 없다.
@@ -686,6 +848,8 @@ PROMPT = """아래는 KOSAI 사이트의 지난주 숫자다. 산수는 이미 �
 지켜야 할 것
   · 한 주 움직임으로 추세를 말하지 마라. 세 주 이상 같은 방향일 때만
     "추세"라는 말을 써라. 긴 흐름표가 위에 있으니 그걸 보고 판단해라.
+  · '흔한 출렁임' 폭 안의 변화를 성과로 읽지 마라. "가장 좋은 주" 같은
+    말은 4주 평균과 긴 흐름표 양쪽에서 확인된 때만 써라.
   · 비율의 변화는 %p 다. 14.4%에서 16.3%로 갔으면 '1.9%p 올랐다'이지
     '13% 올랐다'가 아니다.
   · 위에 없는 숫자를 지어내지 마라. '받지 못했다'고 적힌 것을 0으로

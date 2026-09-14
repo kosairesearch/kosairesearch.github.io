@@ -421,8 +421,11 @@ d0["items"][0]["status"] = "진행중"
 d0["items"][0]["startedWeek"] = "2026-08-31"
 d0["items"][0]["baseValue"] = 4
 done = X.review(d0, [B, BEH])
+# 가입 4건 → 6건은 +50% 지만, 그 크기에서 흔한 출렁임은 ±100% 다.
+# 예전 ±5% 규칙은 이걸 '효과 있음' 이라고 했다. 이제는 아니다.
 eq("시작한 다음 주부터 판정한다", (done[0]["result"]["verdict"], done[0]["status"]),
-   ("효과 있음", "끝남"))
+   ("변화 없음", "끝남"))
+eq("어떤 기준으로 판정했는지 남긴다", done[0]["result"]["rule"], "±100%")
 eq("판정한 것은 다시 판정하지 않는다", X.review(d0, [B, BEH]), [])
 
 d1 = {"items": [{"id": "exp_9", "title": "x", "status": "진행중",
@@ -547,6 +550,91 @@ eq("몇 주째는 숫자로 돌려준다", [n for n, _, _ in _rows[0][2]], [1, 2
 eq("10주째가 2주째보다 뒤에 온다 (글자 정렬이 아니다)",
    _rows[0][2][-1][0], 10)
 eq("비율을 센다", round(_rows[0][2][0][2]), 20)
+
+print("\n▣ 판정 기준은 수에 따라 다르다 — 비율은 %p")
+eq("16건은 ±50%", round(X.threshold_pct(16)), 50)
+eq("100건은 ±20%", round(X.threshold_pct(100)), 20)
+eq("400건은 ±10%", round(X.threshold_pct(400)), 10)
+eq("아주 크면 ±5% 바닥", X.threshold_pct(10000), 5.0)
+eq("16 → 33 은 효과 (+106%, 기준 ±50%)", X.judge("watchlistAdd", 16, 33), ("효과 있음", "±50%"))
+eq("16 → 20 은 변화 없음 (+25% < 50%)", X.judge("watchlistAdd", 16, 20), ("변화 없음", "±50%"))
+eq("400 → 430 은 변화 없음 (+7.5% < 10%)", X.judge("users", 400, 430), ("변화 없음", "±10%"))
+eq("400 → 340 은 역효과 (-15%)", X.judge("users", 400, 340), ("역효과", "±10%"))
+eq("재방문율 14.4 → 17.1 은 %p 로 재서 효과", X.judge("returnRate", 14.4, 17.1), ("효과 있음", "±2%p"))
+eq("재방문율 14.4 → 15.9 는 변화 없음 (1.5%p)", X.judge("returnRate", 14.4, 15.9), ("변화 없음", "±2%p"))
+eq("기준값이 0 이면 잴 수 없음", X.judge("signUp", 0, 3)[0], "잴 수 없음")
+
+print("\n▣ 기준선 — 4주 평균과 흔한 출렁임")
+import datetime as _dt
+_mon = _dt.date(2026, 7, 13)
+H = []
+for _i, _u in enumerate((200, 100, 300, 500, 380, 420, 380, 444)):
+    _m = _mon + _dt.timedelta(days=7 * _i)
+    H.append(wk(_m.isoformat(), (_m + _dt.timedelta(days=6)).isoformat(),
+                _u, _u - 30, 30, _u + 50, _u, _u * 3, 200))
+eq("이번 주를 뺀 앞 4주 평균", M.four_week_avg(H, lambda w: w["users"]), (500 + 380 + 420 + 380) / 4)
+eq("두 주뿐이면 앞 한 주", M.four_week_avg(H[-2:], lambda w: w["users"]), 380)
+eq("한 주뿐이면 없음", M.four_week_avg(H[-1:], lambda w: w["users"]), None)
+sw = M.swing_pct(H)
+ok("출렁임은 변화율 절댓값의 중앙값", sw is not None and 10 < sw < 70, sw)
+eq("세 주 미만이면 없음", M.swing_pct(H[-2:]), None)
+
+print("\n▣ 퍼널 — 사람 수로 세고, 없는 단계는 빼지 않는다")
+FW = wk("2026-09-07", "2026-09-13", 444, 396, 76, 583, 480, 1260, 287,
+        pages=[{"pagePath": "/stock.html", "screenPageViews": 900, "totalUsers": 310},
+               {"pagePath": "/", "screenPageViews": 100, "totalUsers": 90}],
+        events=[{"eventName": "sign_up", "eventCount": 4, "totalUsers": 4},
+                {"eventName": "watchlist_add", "eventCount": 33, "totalUsers": 21}],
+        devices=[{"deviceCategory": "mobile", "totalUsers": 350},
+                 {"deviceCategory": "desktop", "totalUsers": 94}])
+fn = M.funnel(FW)
+eq("단계 순서", [r[0] for r in fn], ["사이트에 옴", "리포트를 열어 봄", "관심종목 담음", "가입함", "다시 옴"])
+eq("리포트 연 사람은 /stock.html 의 사람 수", fn[1][1], 310)
+eq("담은 사람은 건수가 아니라 사람 수", (fn[2][1], fn[2][2]), (21, "명"))
+eq("방문자 100명 중", round(fn[2][3]), 5)
+eq("다시 온 사람", fn[4][1], 76)
+OLD = wk("2026-09-07", "2026-09-13", 444, 396, 76, 583, 480, 1260, 287,
+         pages=[{"pagePath": "/stock.html", "screenPageViews": 900}],
+         events=[{"eventName": "watchlist_add", "eventCount": 33}])
+fo = M.funnel(OLD)
+eq("옛 기록엔 리포트 연 사람이 없다 — 0 이 아니라 None", fo[1][1], None)
+eq("옛 기록의 담기는 건수로 (사람 수 없음)", (fo[2][1], fo[2][2], fo[2][3]), (33, "건", None))
+eq("기기 몫", [(n, round(pc)) for n, pc in M.device_split(FW)], [("휴대폰", 79), ("컴퓨터", 21)])
+
+print("\n▣ 붙잡는 힘 — 1주 뒤를 잴 수 있는 코호트만")
+RET = {"weeks": H, "retention": [
+    {"week": "2026-08-24", "size": 400, "back": {"1": 28, "2": 12}},
+    {"week": "2026-08-31", "size": 380, "back": {"1": 34}},
+    {"week": "2026-09-07", "size": 396, "back": {}}]}
+co = M.latest_cohort(RET)
+eq("가장 최근 두 코호트", [c[0] for c in co], ["2026-08-24", "2026-08-31"])
+eq("1주 뒤 비율", (co[-1][2], round(co[-1][3])), (34, 9))
+
+print("\n▣ 기간 확인 — 지지난주를 지난주라고 하지 않는다")
+today = _dt.date(2026, 9, 14)
+ok("지난주가 맞으면 조용", M.stale_note({"to": "2026-09-13"}, today) is None)
+st = M.stale_note({"to": "2026-09-06"}, today)
+ok("한 주 늦으면 경고", st and "지난주가 아닙니다" in st and "1주 전" in st, st)
+st2 = M.stale_note({"to": "2026-08-30"}, today)
+ok("두 주 늦으면 2주 전", st2 and "2주 전" in st2, st2)
+
+print("\n▣ 숫자판에 새 줄이 붙는다")
+DOC = {"weeks": H[:-1] + [FW], "retention": RET["retention"],
+       "health": {"ok": True, "problems": []}}
+mb = M.metrics_block(DOC, today=today)
+ok("4주 평균", "4주 평균" in mb and "방문자 420명" in mb, mb[mb.find("4주 평균"):][:80])
+ok("평균 대비 증감", "평균보다 ▲6%" in mb, mb[mb.find("4주 평균"):][:100])
+ok("흔한 출렁임", "흔한 출렁임" in mb and "±" in mb, mb[mb.find("흔한"):][:60])
+ok("퍼널", "손님이 어디까지 가나" in mb and "리포트를 열어 봄" in mb and "310명  70명" in mb,
+   mb[mb.find("어디까지"):][:200])
+ok("붙잡는 힘", "붙잡는 힘" in mb and "34명 → 9%" in mb and "(앞 코호트 7%)" in mb,
+   mb[mb.find("붙잡는"):][:120])
+ok("기기", "휴대폰 79% · 컴퓨터 21%" in mb, mb[mb.find("기기"):][:60])
+ok("지난주가 맞으면 경고 없음", "지난주가 아닙니다" not in mb)
+mb2 = M.metrics_block({"weeks": H[:-1], "health": {"ok": True, "problems": []}}, today=today)
+ok("지지난주가 최근이면 맨 위에 경고", "지난주가 아닙니다" in mb2.splitlines()[3], mb2[:300])
+mb3 = M.metrics_block({"weeks": [OLD], "health": {"ok": True, "problems": []}}, today=today)
+ok("옛 기록은 못 보는 단계를 '아직 못 봄' 으로", "아직 못 봄" in mb3, mb3[mb3.find("어디까지"):][:200])
 
 print("\n" + "=" * 52)
 print(f"PASS {P}  FAIL {F}")
