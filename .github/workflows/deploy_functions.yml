@@ -86,6 +86,11 @@ jobs:
       # 2시에 혼자 돌면서 만료된 구독의 카드에 결제를 건다. 부르는 화면이
       # 없어도 스스로 도는 함수라, 안 올리는 것이 유일하게 확실한 방법이다.
       #
+      # 목록에 없는 함수는 올라가지 않는다. reviewAdminAccessLogs(매월 1일
+      # 접속기록 점검 메일)는 9월 6일에 만들고 여기 넣는 것을 빠뜨려 아흐레
+      # 동안 올라가지 않았다. 새 함수를 만들면 여기까지가 한 일이다 —
+      # admin-access-log.test 가 이 목록을 같이 본다.
+      #
       # 그래서 올릴 함수를 하나씩 적는다. 결제를 실제로 넣을 때 아래 목록에
       # confirmBilling·changePlan·cancelSubscription·resumeSubscription·
       # requestRefund·renewSubscriptions 를 더하면 된다.
@@ -93,7 +98,7 @@ jobs:
         run: |
           set -o pipefail
           firebase deploy --project kosai-ae167 --non-interactive --force \
-            --only functions:socialLogin,functions:sendVerifyEmail,functions:sendResetEmail,functions:submitForm,functions:getReport,functions:deleteAccount,functions:getUsage,functions:recordSignupConsent,functions:setMarketingConsent,functions:purgeUnconsented,functions:signinHint,functions:adminConsentStats,functions:adminConsentLookup,functions:adminMarketingList,functions:adminUserList,functions:adminNotifyUnconsented,functions:wakeMorningBrief,functions:wakeMorningBriefBackup,functions:watchMorningBrief,functions:adminWakeBrief,functions:adminPurgeOrphans,functions:marketingRecheck,functions:adminMarketingRecheck \
+            --only functions:socialLogin,functions:sendVerifyEmail,functions:sendResetEmail,functions:submitForm,functions:getReport,functions:deleteAccount,functions:getUsage,functions:recordSignupConsent,functions:setMarketingConsent,functions:purgeUnconsented,functions:signinHint,functions:adminConsentStats,functions:adminConsentLookup,functions:adminMarketingList,functions:adminUserList,functions:adminNotifyUnconsented,functions:wakeMorningBrief,functions:wakeMorningBriefBackup,functions:watchMorningBrief,functions:adminWakeBrief,functions:adminPurgeOrphans,functions:marketingRecheck,functions:adminMarketingRecheck,functions:reviewAdminAccessLogs \
             2>&1 | tee -a /tmp/deploy.log
 
       - name: 배포 로그 저장(디버그)
