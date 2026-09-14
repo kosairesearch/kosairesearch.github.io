@@ -120,6 +120,58 @@ ok("네이버를 가리키는 주소가 카카오로 새지 않는다",
 ok("AI 챗봇 갈래에 이름표가 있다",
    G.CHANNEL_NAMES.get("AI Assistant") is not None)
 
+print("\n⑧ Firestore 가 받는 모양 — 표의 열쇠는 글자여야 한다")
+# 2026-09-14 사고. 코호트의 '몇 주째' 가 숫자 열쇠라 문서 전체가
+# 거절당했고, 지난주 숫자가 통째로 안 쌓였다. 그런데도 단계는 성공으로
+# 끝나서 보고가 지지난주 숫자를 '지난주' 라고 말했다.
+import ga4_store as S
+
+
+def all_keys_str(v):
+    if isinstance(v, dict):
+        return all(isinstance(k, str) for k in v) and all(
+            all_keys_str(x) for x in v.values())
+    if isinstance(v, list):
+        return all(all_keys_str(x) for x in v)
+    return True
+
+
+messy = {"retention": [{"week": "2026-09-07", "size": 10,
+                        "back": {1: 3, 2: 1}}],
+         "weeks": [{"week": "2026-09-07", "deep": {3: {4: "x"}}}]}
+ok("숫자 열쇠가 있으면 걸러내기 전에는 어긋나 있다", not all_keys_str(messy))
+ok("_map_safe 를 거치면 모든 열쇠가 글자다", all_keys_str(S._map_safe(messy)))
+eq("값은 그대로 둔다", S._map_safe(messy)["retention"][0]["back"]["1"], 3)
+eq("깊은 곳도 바꾼다", S._map_safe(messy)["weeks"][0]["deep"]["3"]["4"], "x")
+
+print("\n⑨ 저장이 실패하면 --check 가 알아채야 한다")
+_load, _save = S.load, S.save
+try:
+    S.load = lambda name, default=None: {}
+    S.save = lambda name, doc: "failed:data/ga4/weekly.json"
+    doc = {"weeks": [{"week": "2026-09-07"}],
+           "health": {"ok": True, "problems": []}}
+    G.merge_save(doc)
+    ok("건강 기록이 '문제 있음' 으로 바뀐다", doc["health"]["ok"] is False)
+    ok("무엇이 문제인지 적힌다",
+       any("Firestore" in x for x in doc["health"]["problems"]),
+       doc["health"]["problems"])
+
+    S.save = lambda name, doc: "firestore"
+    doc2 = {"weeks": [{"week": "2026-09-07"}],
+            "health": {"ok": True, "problems": []}}
+    G.merge_save(doc2)
+    ok("잘 들어갔으면 건드리지 않는다", doc2["health"]["ok"] is True)
+
+    # 내 컴퓨터에서 시험할 때(열쇠 없음)는 파일로 떨어져도 정상이다.
+    S.save = lambda name, doc: "local:data/ga4/weekly.json"
+    doc3 = {"weeks": [{"week": "2026-09-07"}],
+            "health": {"ok": True, "problems": []}}
+    G.merge_save(doc3)
+    ok("열쇠가 없어 파일에 둔 것은 실패가 아니다", doc3["health"]["ok"] is True)
+finally:
+    S.load, S.save = _load, _save
+
 print("\n" + "=" * 52)
 print(f"PASS {P}  FAIL {F}")
 sys.exit(1 if F else 0)
