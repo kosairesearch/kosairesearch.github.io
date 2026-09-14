@@ -655,10 +655,17 @@ RULES = """이 글이 하는 일
 수급, 업종, 거래가 몰린 곳, 개별 종목의 움직임, 환율·금리·유가, 앞으로의 일정과
 지표 발표, 공시, 뉴스 제목, 그리고 KOSAI 리포트에 적어 둔 확인 지점.
 
-그중 오늘 이야기할 값이 있는 것을 네가 고른다. 몇 가지를 다룰지, 무엇을 먼저
-놓을지, 각각에 얼마나 쓸지 — 정해진 틀이 없다. 어떤 날은 유가 하나가 그날의
-전부이고, 어떤 날은 서로 상관없는 다섯 가지를 짧게 훑는 것이 맞다. 미국 지수부터
-시작해야 할 이유는 없다. 그날 가장 중요한 것부터 쓰면 된다.
+그중 오늘 이야기할 값이 있는 것을 네가 고른다. 무엇을 먼저 놓을지, 각각에
+얼마나 쓸지 — 정해진 틀이 없다. 어떤 날은 유가 하나가 그날의 전부이고, 어떤 날은
+서로 상관없는 다섯 가지를 짧게 훑는 것이 맞다. 미국 지수부터 시작해야 할 이유는
+없다. 그날 가장 중요한 것부터 쓰면 된다.
+
+다만 '고른다'는 것은 **뺀다**는 뜻이다. 재료는 열두 묶음이다 — 미국지수 · 반도체지수
+· 국내지수 · 수급 · 장폭 · 업종 · 종목 · 환율 · 유가 · 금리 · 일정 · 커버리지.
+한 편에 **7개 이하**만 다룬다. 안 고른 묶음은 한 줄도 쓰지 않는다. 열두 개를 다
+훑으면 그건 고른 것이 아니라 낭독이고, 여덟 편이 연달아 그렇게 나가서 "매일 같은
+글" 이 됐다. 그리고 아래 '이미 쓴 글'에 적힌 어제의 재료 조합과 같은 조합은
+쓰지 않는다 — 하나 이상은 다른 것이어야 한다.
 
 다만 이건 '브리핑'이다. 아침에 읽는 글이니 2,000자에서 3,200자 사이에서
 끝난다 — 스크롤 두세 번이다. 그날 할 말이 적으면 짧게 끝내라, 채우려고 늘리지
@@ -796,6 +803,9 @@ def recent_briefs(pub, n=7, out_dir=None):
         heads = [h for h in heads if h]
         if heads:
             L.append("   섹션: " + " / ".join(heads))
+        um = used_materials(b)
+        if um:
+            L.append(f"   다룬 재료({len(um)}/{len(MATERIALS)}): " + " · ".join(um))
         # 그날 '볼 것'으로 꼽아 둔 대목 — 오늘 결과가 나왔으면 그게 오늘 이야기다.
         for sec in b.get("sections") or []:
             body = " ".join((x.get("ko") or "") for x in (sec.get("paragraphs") or []))
@@ -1201,6 +1211,86 @@ def check_headings(brief, facts=None):
     return bad
 
 
+# 사실 블록이 주는 재료 열두 묶음. 브리핑이 이 중 무엇을 다뤘는지 센다.
+#
+# 왜 세나. 여덟 편을 재 보니 여덟 편 전부가 열두 묶음을 다 다뤘다(지수를 못
+# 받은 날만 열한 개). 섹션 이름과 제목은 날마다 달라졌지만 내용은 같은 열두
+# 가지의 낭독이었다 — 사장이 "내용이 매일 똑같다" 고 한 것이 이것이다.
+# 규칙에 "그날 이야기할 것을 네가 고른다" 고 적어 두었지만 고르라는 말만으로는
+# 고르지 않는다. 그래서 몇 개까지인지를 정하고 검사가 센다.
+MATERIALS = [
+    ("미국지수",  re.compile(r"S&P|나스닥|다우")),
+    ("반도체지수", re.compile(r"필라델피아")),
+    ("국내지수",  re.compile(r"코스피[^.]{0,20}\d[\d,]*\.\d|코스닥[^.]{0,20}\d[\d,]*\.\d")),
+    ("수급",     re.compile(r"(외국인|기관|개인|기타법인)[^.]{0,30}(순매수|순매도|억원)")),
+    ("장폭",     re.compile(r"중앙값|상승 \d[\d,]*개|하락 \d[\d,]*개|장폭")),
+    ("업종",     re.compile(r"업종 (상위|하위)|업종은 |업종에서 ")),
+    ("종목",     None),                       # 링크가 5개 이상
+    ("환율",     re.compile(r"원/달러|원·달러|달러당")),
+    ("유가",     re.compile(r"WTI|유가|브렌트")),
+    ("금리",     re.compile(r"10년물|국채 금리|기준금리|금통위")),
+    ("일정",     re.compile(r"FOMC|발표된다|발표한다|공개된다|일정")),
+    ("커버리지",  re.compile(r"리포트")),
+]
+# 한 편이 다룰 수 있는 재료 수. 1차는 7, 2차는 9 — 열두 개를 다 다루는 것만은
+# 어느 차수에서도 통과하지 못한다. 커버리지 상한(25%/30%)과 같은 구조다.
+MATERIAL_CAP, MATERIAL_CAP_SOFT = 7, 9
+
+
+def _body_ko(brief):
+    b = brief or {}
+    parts = [(b.get("lead") or {}).get("ko") or "", (b.get("summary") or {}).get("ko") or ""]
+    for sec in b.get("sections") or []:
+        parts += [(p.get("ko") or "") for p in sec.get("paragraphs") or []]
+    return " ".join(parts)
+
+
+def used_materials(brief):
+    """브리핑이 다룬 재료 묶음의 이름들(정의 순서)."""
+    body = _body_ko(brief)
+    out = []
+    for name, pat in MATERIALS:
+        if pat is None:
+            hit = len(LINK.findall(body)) >= 5
+        else:
+            hit = bool(pat.search(_plain(body)))
+        if hit:
+            out.append(name)
+    return out
+
+
+def yesterday_materials(pub, out_dir=None):
+    """직전에 나간 브리핑이 다룬 재료. 없으면 None."""
+    d = out_dir or OUT_DIR
+    if not d.exists():
+        return None
+    for x in sorted(d.glob("*.json"), reverse=True):
+        if x.stem >= str(pub):
+            continue
+        try:
+            b = json.loads(x.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        if ((b.get("meta") or {}).get("publishedAt")):
+            return used_materials(b)
+    return None
+
+
+def check_materials(brief, strict=True, prev=None):
+    """재료를 너무 많이 다뤘거나, 어제와 같은 조합이면 거부."""
+    used = used_materials(brief)
+    cap = MATERIAL_CAP if strict else MATERIAL_CAP_SOFT
+    bad = []
+    if len(used) > cap:
+        bad.append(f"재료 {len(MATERIALS)}묶음 중 {len(used)}개를 다뤘다({' · '.join(used)}) — "
+                   f"{cap}개 이하로 골라라. 오늘 할 말이 있는 것만 남기고 나머지는 한 줄도 쓰지"
+                   " 않는다. 지수 등락률을 차례로 읽어 주는 것은 이야기가 아니다")
+    if prev is not None and used and set(used) == set(prev):
+        bad.append(f"어제와 같은 재료 조합이다({' · '.join(used)}) — 오늘만의 이야기를 앞에"
+                   " 놓고, 어제 다룬 것 중 하나 이상은 뺀다")
+    return bad
+
+
 _SENT = re.compile(r"(?<=[.!?。])\s+|\n")
 _WEEKWORD = re.compile(r"(이번\s*주|다음\s*주|지난\s*주)")
 # '같은 …' 으로 종목을 한 묶음으로 만드는 말. 업종이 다르면 거짓이 된다.
@@ -1318,7 +1408,7 @@ def check_sector_grouping(brief, facts):
     return bad
 
 
-def validate(brief, strict_coverage=True, facts=None):
+def validate(brief, strict_coverage=True, facts=None, prev_materials=None):
     """거부 이유 목록. 빈 목록이면 통과."""
     bad = []
     if not isinstance(brief, dict):
@@ -1404,6 +1494,7 @@ def validate(brief, strict_coverage=True, facts=None):
     bad += check_headings(brief, facts)
     bad += check_weeks(brief, facts)
     bad += check_sector_grouping(brief, facts)
+    bad += check_materials(brief, strict=strict_coverage, prev=prev_materials)
 
     # coverage 섹션은 출처를 밝혀야 한다. 이게 이 브리핑의 존재 이유인데,
     # 어디서 온 얘기인지 안 적으면 독자는 그냥 종목 소식으로 읽고 지나간다.
@@ -1545,6 +1636,7 @@ def main():
     cl = _client()
     from brief_data import load_stocks
     tickers = {s["ticker"] for s in load_stocks()[0]}
+    prev_mat = yesterday_materials(pub, out_dir)
 
     def bail(cand, reasons):
         """두 번 다 실패하면 사람이 봐야 한다. 대충 고쳐 내보내지 않는다."""
@@ -1592,7 +1684,8 @@ def main():
             log(f"· 요약 {n_sum}곳에서 링크·강조·글머리표를 벗겨 한 문단으로 이었다")
         # 1차는 설계대로 25% 로 본다. 2차는 30% 까지 눈감아 준다 — 발행이
         # 안 되는 것보다는 커버리지가 조금 긴 게 낫다. 그 위는 발행하지 않는다.
-        bad = validate(cand, strict_coverage=(attempt == 1), facts=facts)
+        bad = validate(cand, strict_coverage=(attempt == 1), facts=facts,
+                       prev_materials=prev_mat)
         if not bad:
             brief = cand
             break
@@ -1614,6 +1707,10 @@ def main():
     log(f"   분량  {n:,}자 (목표 {LEN_WANT[0]:,}~{LEN_WANT[1]:,}) · "
         f"커버리지 {ratio*100:.0f}% (상한 {COVERAGE_CAP*100:.0f}%)")
     log(f"   섹션  " + " → ".join(s["id"] for s in brief["sections"]))
+    um = used_materials(brief)
+    same = len(set(um) & set(prev_mat)) if prev_mat else None
+    log(f"   재료  {len(um)}/{len(MATERIALS)} ({' · '.join(um)})"
+        + (f" · 어제와 겹침 {same}" if same is not None else ""))
     if c:
         log(f"   비용  입력 {c['inputTokens']:,} / 출력 {c['outputTokens']:,} 토큰 · "
             f"${c['usd']} (약 {c['krw']:,}원)" + ("  ← 배치 반값" if batched else ""))
