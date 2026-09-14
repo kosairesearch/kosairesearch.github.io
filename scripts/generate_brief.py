@@ -76,8 +76,12 @@ USD_KRW = float(os.getenv("BRIEF_USD_KRW", "1400"))
 # 잡아 뒀는데 모델이 실제로 앉는 자리는 2,300~2,600 이다. 하한을 2,200 으로 두니
 # 8월 18일 06:00 시도에서 2차가 2,175자로 25자 모자라 거부됐고 그날 발행이 막혔다.
 # 분량은 글의 질이 아니라 형식이다 — 25자 때문에 브리핑을 못 내보내면 규칙이 잘못된 것이다.
-LEN_MIN, LEN_MAX = 1900, 3600
-LEN_WANT = (2300, 3000)
+# 하한을 1,900 → 1,000 으로 내린다(2026-09-14). 규칙에는 "할 말이 적으면
+# 짧게 끝내라" 고 적어 두고 바로 밑에서 2,000자를 요구했다 — 모순이었고, 그
+# 빈자리를 채우느라 매일 열두 재료를 다 훑었다(여덟 편 중 여덟 편). 길이가
+# 날마다 다른 것이 정상이다. 상한은 그대로 둔다 — 3,600자는 브리핑이 아니다.
+LEN_MIN, LEN_MAX = 1000, 3600
+LEN_WANT = (1200, 3000)
 # 설계 문서 1절: "4번(커버리지)은 전체의 25%를 넘지 않는다."
 COVERAGE_CAP = 0.25
 COVERAGE_HARD = 0.30      # 재시도 후에도 이걸 넘으면 발행하지 않는다
@@ -469,6 +473,22 @@ def _facts_text(facts):
                 continue
             L.append(f"  {v['label']}: {_n(v['close'])}{v['unit']} {_pct(v.get('change'))}"
                      f"  (기준일 {v.get('date')})")
+        # 넓힌 재료 — 묶음별 한 줄. 같은 묶음이 같은 기준일이면 끝에 한 번만 적는다.
+        from market_data import SERIES_GROUPS
+        for gname, keys in SERIES_GROUPS:
+            got = [(k, ser[k]) for k in keys if ser.get(k)]
+            if not got:
+                continue
+            dates = {v.get("date") for _, v in got}
+            same = len(dates) == 1
+            cells = []
+            for k, v in got:
+                cell = f"{v['label']} {_n(v['close'])}{v['unit']} {_pct(v.get('change'))}"
+                if not same:
+                    cell += f"({v.get('date')})"
+                cells.append(cell)
+            L.append(f"  {gname}: " + " · ".join(cells)
+                     + (f"  (기준일 {dates.pop()})" if same else ""))
         miss = [lbl for k, lbl, *_ in SERIES
                 if k not in ser and k not in ("kospi", "kosdaq")]
         if miss:
@@ -660,18 +680,35 @@ RULES = """이 글이 하는 일
 서로 상관없는 다섯 가지를 짧게 훑는 것이 맞다. 미국 지수부터 시작해야 할 이유는
 없다. 그날 가장 중요한 것부터 쓰면 된다.
 
-다만 '고른다'는 것은 **뺀다**는 뜻이다. 재료는 열두 묶음이다 — 미국지수 · 반도체지수
-· 국내지수 · 수급 · 장폭 · 업종 · 종목 · 환율 · 유가 · 금리 · 일정 · 커버리지.
-한 편에 **7개 이하**만 다룬다. 안 고른 묶음은 한 줄도 쓰지 않는다. 열두 개를 다
-훑으면 그건 고른 것이 아니라 낭독이고, 여덟 편이 연달아 그렇게 나가서 "매일 같은
-글" 이 됐다. 그리고 아래 '이미 쓴 글'에 적힌 어제의 재료 조합과 같은 조합은
-쓰지 않는다 — 하나 이상은 다른 것이어야 한다.
+고른다는 것은 뺀다는 뜻이다. 사실 블록에 있다고 다 쓰지 않는다. 오늘 이야기가
+안 되는 재료는 한 줄도 쓰지 않는다. 몇 개를 쓸지는 정해져 있지 않다 — 하나로
+끝나는 날도, 여덟 개를 짧게 엮는 날도 있다. 다만 사실 블록의 항목을 차례로 읽어
+주는 글은 안 된다. 여덟 편이 연달아 그렇게 나가서 "매일 같은 글"이 됐다.
 
-다만 이건 '브리핑'이다. 아침에 읽는 글이니 2,000자에서 3,200자 사이에서
-끝난다 — 스크롤 두세 번이다. 그날 할 말이 적으면 짧게 끝내라, 채우려고 늘리지
-마라. 반대로 3,200자를 넘어가면 브리핑이 아니라 리포트가 된다(3,600자를 넘으면
-아예 발행되지 않는다). 분량이 날마다 달라지는 것은 괜찮다. 조용한 날과 시끄러운
-날이 같은 길이일 이유가 없다.
+어떻게 읽혀야 하나
+
+증권사 모닝브리핑을 떠올려라. 그 글들은 시세표를 읽어 주지 않는다. **원인을 먼저
+말하고 숫자는 근거로 붙인다.** 문단마다 "그래서 오늘 무엇을 보나"가 있다. 관심
+업종·종목에는 반드시 '왜'가 붙는다. 그 리듬을 빌린다. 다만 그 글들이 하는 "상승
+출발 전망"·"매수 유효" 같은 전망·추천은 우리가 쓸 수 없다(아래 규칙 2) — 방향을
+말하지 않고도 이야기는 된다. 같은 사실을 두 가지로 쓸 수 있다.
+
+  낭독:  코스피는 6,909.91(-1.76%)로 마감했다. 외국인은 2조 2,984억원을 순매도했다.
+         조선은 3.48% 올랐고 정유는 4.41% 내렸다.
+  이야기: 지수는 1.76% 빠졌는데 종목 중앙값은 -0.17%였다 — 내린 것은 대형주 몇 개다.
+         외국인이 판 2조 3천억원이 그 자리에 있었고, 그 사이 조선은 HD현대중공업의
+         증설 보도와 겹치며 3.48% 올랐다.
+
+둘 다 사실 블록의 숫자만 썼다. 다른 것은 숫자 사이의 관계를 말했느냐다. 쓰기 전에
+스스로 답하라 — 개장 전 독자가 알아야 할 것은 무엇이고, 왜 그런가. 그 답이 첫
+문단이다. 나머지는 그 답에 붙는 이야기다. 어제 글(아래 '이미 쓴 글')의 첫 문단과
+같은 이야기로 시작하지 마라.
+
+다만 이건 '브리핑'이다. 아침에 읽는 글이니 길어도 3,200자 안에서 끝난다 —
+스크롤 두세 번이다. 하한은 없다시피 하다(1,000자). 그날 할 말이 적으면 1,200자로
+끝내라, 채우려고 늘리지 마라. 채우려고 늘린 글은 시세 낭독이 된다. 반대로 3,200자를
+넘어가면 브리핑이 아니라 리포트가 된다(3,600자를 넘으면 아예 발행되지 않는다).
+분량이 날마다 다른 것이 정상이다. 조용한 날과 시끄러운 날이 같은 길이일 이유가 없다.
 
 섹션은 필요한 만큼 만들고, 각 섹션에 짧은 영문 id 를 붙인다(us · oil · rates ·
 chips · flows · calendar · fx … 그날 내용에 맞게). KOSAI 리포트의 확인 지점을
@@ -825,7 +862,9 @@ def build_prompt(facts, retry_note=None):
     state = "개장" if cal.get("open") else "휴장"
 
     head = (f"{pub} 아침에 발행할 모닝 브리핑 본문을 쓴다. 오늘 국내 증시는 {state}이다.\n"
-            f"독자는 개장 전에 이 글 하나로 오늘(또는 다음 개장일) 준비를 마치려는 사람이다.\n")
+            f"독자는 개장 전에 이 글 하나로 오늘(또는 다음 개장일) 준비를 마치려는 사람이다.\n"
+            "쓰기 전에 한 문장으로 답하라 — 개장 전 독자가 알아야 할 것은 무엇이고, 왜 그런가."
+            " 그 답이 첫 문단이 된다.\n")
     if not cal.get("open"):
         head += ("휴장일이므로 '오늘 장'을 준비하는 글이 아니다. 다음 개장일이 무엇을"
                  " 한꺼번에 반영해야 하는지가 그날의 핵심이다.\n")
@@ -1231,10 +1270,13 @@ MATERIALS = [
     ("금리",     re.compile(r"10년물|국채 금리|기준금리|금통위")),
     ("일정",     re.compile(r"FOMC|발표된다|발표한다|공개된다|일정")),
     ("커버리지",  re.compile(r"리포트")),
+    # 2026-09-14 에 넓힌 종류 — market_data.SERIES 의 새 시리즈와 짝이다
+    ("아시아",    re.compile(r"닛케이|항셍|상하이")),
+    ("미국개별",  re.compile(r"엔비디아|TSMC|마이크론|테슬라")),
+    ("원자재",    re.compile(r"금값|금 가격|온스|구리|천연가스")),
+    ("공포지수",  re.compile(r"VIX|공포지수|변동성지수")),
+    ("비트코인",  re.compile(r"비트코인")),
 ]
-# 한 편이 다룰 수 있는 재료 수. 1차는 7, 2차는 9 — 열두 개를 다 다루는 것만은
-# 어느 차수에서도 통과하지 못한다. 커버리지 상한(25%/30%)과 같은 구조다.
-MATERIAL_CAP, MATERIAL_CAP_SOFT = 7, 9
 
 
 def _body_ko(brief):
@@ -1276,19 +1318,9 @@ def yesterday_materials(pub, out_dir=None):
     return None
 
 
-def check_materials(brief, strict=True, prev=None):
-    """재료를 너무 많이 다뤘거나, 어제와 같은 조합이면 거부."""
-    used = used_materials(brief)
-    cap = MATERIAL_CAP if strict else MATERIAL_CAP_SOFT
-    bad = []
-    if len(used) > cap:
-        bad.append(f"재료 {len(MATERIALS)}묶음 중 {len(used)}개를 다뤘다({' · '.join(used)}) — "
-                   f"{cap}개 이하로 골라라. 오늘 할 말이 있는 것만 남기고 나머지는 한 줄도 쓰지"
-                   " 않는다. 지수 등락률을 차례로 읽어 주는 것은 이야기가 아니다")
-    if prev is not None and used and set(used) == set(prev):
-        bad.append(f"어제와 같은 재료 조합이다({' · '.join(used)}) — 오늘만의 이야기를 앞에"
-                   " 놓고, 어제 다룬 것 중 하나 이상은 뺀다")
-    return bad
+# 재료 상한(7개)과 '어제와 같은 조합' 거부는 넣었다가 뺐다(2026-09-14).
+# 사장: "규칙을 넣으니까 너무 규격화된다." 맞는 말이다 — 몇 개를 쓸지는
+# 글쓴이가 정한다. 검출기(used_materials)는 로그와 '이미 쓴 글' 표시에만 쓴다.
 
 
 _SENT = re.compile(r"(?<=[.!?。])\s+|\n")
@@ -1408,7 +1440,7 @@ def check_sector_grouping(brief, facts):
     return bad
 
 
-def validate(brief, strict_coverage=True, facts=None, prev_materials=None):
+def validate(brief, strict_coverage=True, facts=None):
     """거부 이유 목록. 빈 목록이면 통과."""
     bad = []
     if not isinstance(brief, dict):
@@ -1494,7 +1526,6 @@ def validate(brief, strict_coverage=True, facts=None, prev_materials=None):
     bad += check_headings(brief, facts)
     bad += check_weeks(brief, facts)
     bad += check_sector_grouping(brief, facts)
-    bad += check_materials(brief, strict=strict_coverage, prev=prev_materials)
 
     # coverage 섹션은 출처를 밝혀야 한다. 이게 이 브리핑의 존재 이유인데,
     # 어디서 온 얘기인지 안 적으면 독자는 그냥 종목 소식으로 읽고 지나간다.
@@ -1684,8 +1715,7 @@ def main():
             log(f"· 요약 {n_sum}곳에서 링크·강조·글머리표를 벗겨 한 문단으로 이었다")
         # 1차는 설계대로 25% 로 본다. 2차는 30% 까지 눈감아 준다 — 발행이
         # 안 되는 것보다는 커버리지가 조금 긴 게 낫다. 그 위는 발행하지 않는다.
-        bad = validate(cand, strict_coverage=(attempt == 1), facts=facts,
-                       prev_materials=prev_mat)
+        bad = validate(cand, strict_coverage=(attempt == 1), facts=facts)
         if not bad:
             brief = cand
             break
