@@ -109,24 +109,56 @@ def load(name, default=None):
     return default if default is not None else {}
 
 
+def _map_safe(v):
+    """Firestore 가 받는 모양으로 맞춘다 — 표(map)의 열쇠는 글자여야 한다.
+
+    한 군데라도 숫자 열쇠가 있으면 그 항목만 빠지는 게 아니라 문서 전체가
+    "Failed to initialize MapValue" 로 거절당한다. 2026-09-14 에 코호트의
+    '몇 주째' 가 숫자 열쇠여서 지난주 숫자가 통째로 안 쌓였고, 월요일
+    보고가 지지난주 숫자를 '지난주' 라고 말했다.
+
+    보내는 쪽(ga4_data.retention)을 고쳤지만 여기서 한 번 더 맞춘다.
+    다음에 또 어딘가에서 숫자 열쇠가 생기더라도 한 주를 통째로 잃지는
+    않아야 한다. json 도 어차피 열쇠를 글자로 바꾸므로, 이렇게 두면
+    Firestore 와 로컬 파일의 모양이 같아진다.
+    """
+    if isinstance(v, dict):
+        return {str(k): _map_safe(x) for k, x in v.items()}
+    if isinstance(v, (list, tuple)):
+        return [_map_safe(x) for x in v]
+    return v
+
+
 def save(name, doc):
-    """marketing/<name> 에 쓴다. 어디에 썼는지를 돌려준다."""
-    doc = dict(doc)
+    """marketing/<name> 에 쓴다. 어디에 썼는지를 돌려준다.
+
+        firestore      제대로 들어갔다
+        local:<경로>   열쇠가 없어 파일에 뒀다 (내 컴퓨터에서 시험할 때)
+        failed:<경로>  쓰려다 실패해서 파일로 떨어뜨렸다
+
+    failed 를 local 과 갈라 놓는 이유 — 깃허브 러너에서는 그 파일이 일이
+    끝나면 버려진다. 부르는 쪽이 둘을 구분하지 못하면 '저장됐다' 로 읽고
+    넘어가게 된다. 실제로 그렇게 한 주를 잃었다.
+    """
+    doc = _map_safe(dict(doc))
     doc["savedAt"] = datetime.datetime.now(KST).isoformat(timespec="seconds")
     cl = _client()
+    failed = False
     if cl:
         try:
             cl.collection(COLLECTION).document(name).set(doc)
             return "firestore"
         except Exception as e:
+            failed = True
             log(f"· Firestore 쓰기 실패 — 로컬에 남긴다: {type(e).__name__} {e}")
     _dir().mkdir(parents=True, exist_ok=True)
     f = _local(name)
     f.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
     try:
-        return f"local:{f.relative_to(ROOT)}"
+        spot = str(f.relative_to(ROOT))
     except ValueError:
-        return f"local:{f}"
+        spot = str(f)
+    return f"failed:{spot}" if failed else f"local:{spot}"
 
 
 def where():

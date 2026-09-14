@@ -468,7 +468,8 @@ def retention(client, prop, weeks=6):
     있어서, 오늘 물어도 지난 몇 달치가 그대로 나온다. 다른 행동 자료와
     달리 기다릴 필요가 없다.
 
-    [{week, size, back: {1: 명, 2: 명, ...}}] 를 돌려준다.
+    [{week, size, back: {"1": 명, "2": 명, ...}}] 를 돌려준다.
+    몇 주째인지는 글자로 둔다 — 아래 back 을 만드는 자리 참고.
     """
     from google.analytics.data_v1beta.types import (
         Cohort, CohortSpec, CohortsRange, DateRange, Dimension, Metric,
@@ -513,8 +514,16 @@ def retention(client, prop, weeks=6):
         size = got.get(0, 0)
         if not size:
             continue
+        # 열쇠를 글자로 둔다. Firestore 의 표(map)는 글자 열쇠만 받는다.
+        # 숫자 열쇠를 주면 그 항목만이 아니라 문서 전체가
+        # "Failed to initialize MapValue" 로 거절당한다 — 2026-09-14 에
+        # 그것 때문에 지난주 숫자가 통째로 안 쌓였고, 월요일 보고가
+        # 지지난주 숫자를 지난주라고 말했다.
+        # 로컬 파일(json)로 떨어질 때도 어차피 글자가 되므로, 글자로
+        # 맞춰 두면 Firestore 와 파일이 같은 모양이 된다.
         out.append({"week": name, "size": size,
-                    "back": {k: v for k, v in sorted(got.items()) if k > 0}})
+                    "back": {str(k): v
+                             for k, v in sorted(got.items()) if k > 0}})
     return out
 
 
@@ -667,8 +676,20 @@ def merge_save(doc, path=None):
 
     import ga4_store
     merged = _merge(ga4_store.load("weekly"), doc)
-    ga4_store.save("weekly", merged)
-    log(f"· 저장 위치: {ga4_store.where()}")
+    landed = ga4_store.save("weekly", merged)
+    if landed.startswith("failed:"):
+        # 러너의 파일은 일이 끝나면 버려진다. 여기서 조용히 넘어가면 이번
+        # 주 숫자가 없는 채로 다음 단계가 돌고, 보고서는 남아 있는 제일
+        # 최근 주 — 곧 지지난주 — 를 '지난주' 라고 말한다. 2026-09-14 에
+        # 실제로 그렇게 나갔고 아무 경고도 없었다.
+        # 건강 기록에 적어 --check 가 1 로 끝나게 한다.
+        hs = doc.setdefault("health", {})
+        hs.setdefault("problems", []).append(
+            f"Firestore 에 쓰지 못했다({landed}) — 이번에 받은 주가 쌓이지 않았다")
+        hs["ok"] = False
+        log(f"· 저장 위치: {landed}  ⚠️ 쌓이지 않았다")
+    else:
+        log(f"· 저장 위치: {ga4_store.where()}")
     return len(merged["weeks"])
 
 

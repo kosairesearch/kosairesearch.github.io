@@ -535,6 +535,19 @@ ok("재료에도 실려 모델이 짚을 수 있다",
    "실험 대장" in M.build_prompt(ga4_store.load("weekly"), X2.load()))
 M.generate = _real_generate
 
+print("\n▣ 코호트 — 몇 주째가 글자 열쇠로 와도 읽는다")
+# Firestore 도 json 도 표의 열쇠를 글자로 돌려준다. 숫자로 오던 때와
+# 섞여도 같은 결과가 나와야 한다.
+_doc = {"retention": [{"week": "2026-09-07", "size": 100,
+                       "back": {"1": 20, "2": 5, "10": 1}}]}
+_rows = M.retention_rows(_doc)
+eq("한 줄 나온다", len(_rows), 1)
+eq("처음 온 사람 수", _rows[0][1], 100)
+eq("몇 주째는 숫자로 돌려준다", [n for n, _, _ in _rows[0][2]], [1, 2, 10])
+eq("10주째가 2주째보다 뒤에 온다 (글자 정렬이 아니다)",
+   _rows[0][2][-1][0], 10)
+eq("비율을 센다", round(_rows[0][2][0][2]), 20)
+
 print("\n" + "=" * 52)
 print(f"PASS {P}  FAIL {F}")
 sys.exit(1 if F else 0)
