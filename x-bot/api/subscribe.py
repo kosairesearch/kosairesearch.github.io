@@ -7,6 +7,7 @@
 X 에러 응답(유효값 안내)을 그대로 노출해 확정한다.
 """
 import json
+import hmac
 import os
 import sys
 import time
@@ -101,10 +102,21 @@ def run():
     return {"ok": False, "user_id": user_id, "webhook_id": hook_id, "steps": steps}
 
 
+def _key_ok(q):
+    """?key= 가 POLL_SECRET 과 같은가. 비밀이 아예 없으면 무조건 거부한다.
+
+    전에는 POLL_SECRET 이 비어 있으면 검사를 건너뛰었다 — 환경변수 하나
+    빠뜨리면 이 주소를 아는 누구나 봇을 돌릴 수 있는 구조였다. 비교는
+    글자 수 차이로 새지 않게 compare_digest 로 한다."""
+    secret = os.environ.get("POLL_SECRET") or ""
+    key = (q.get("key") or [""])[0]
+    return bool(secret) and hmac.compare_digest(key.encode("utf-8"), secret.encode("utf-8"))
+
+
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
         q = parse_qs(urlparse(self.path).query)
-        if os.environ.get("POLL_SECRET") and q.get("key", [""])[0] != os.environ["POLL_SECRET"]:
+        if not _key_ok(q):
             self.send_response(403); self.end_headers(); self.wfile.write(b"forbidden"); return
         try:
             out = run()

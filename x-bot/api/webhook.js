@@ -1,6 +1,6 @@
 // X Activity API 웹훅 수신부 — 멘션 실시간 수신(폴링 대체).
 // ① GET: CRC 검증(HMAC-SHA256, consumer secret) 즉시 응답
-// ② POST: 멘션 이벤트 → 중복체크(SET NX) → Redis 큐 적재 → /api/work 깨우기 → 즉시 200
+// ② POST: 서명 검증(HMAC-SHA256, 원본 본문) → 멘션 이벤트 → 중복체크(SET NX) → Redis 큐 적재 → /api/work 깨우기 → 즉시 200
 // 무거운 생성·게시는 전부 work(Python, maxDuration 300s)가 한다. X는 수 초 안에
 // 응답이 없으면 웹훅을 실패 처리하므로 여기서는 절대 기다리지 않는다.
 //
@@ -94,6 +94,31 @@ async function kickWork(host) {
   }
 }
 
+/* 본문을 원본 바이트 그대로 읽는다.
+
+   X 는 서명을 원본 본문으로 만든다. Vercel 이 미리 JSON 으로 풀어 버리면
+   되돌린 문자열은 원본과 달라 검증할 수 없다 — 그래서 예전에는 검증을
+   포기하고 '참고용' 으로만 적었다. 파싱을 끄면 원본이 그대로 온다. */
+function readRaw(req) {
+  return new Promise((resolve, reject) => {
+    const chunks = [];
+    req.on("data", (c) => chunks.push(Buffer.isBuffer(c) ? c : Buffer.from(c)));
+    req.on("end", () => resolve(Buffer.concat(chunks)));
+    req.on("error", reject);
+  });
+}
+
+/* x-twitter-webhooks-signature: "sha256=" + base64(HMAC-SHA256(consumer secret, 본문)).
+   길이가 다르면 timingSafeEqual 이 던지므로 먼저 길이를 본다. */
+function signatureOk(raw, header) {
+  const secret = process.env.X_API_SECRET || "";
+  if (!secret || !header) return false;
+  const expect = "sha256=" + crypto.createHmac("sha256", secret).update(raw).digest("base64");
+  const a = Buffer.from(String(header));
+  const b = Buffer.from(expect);
+  return a.length === b.length && crypto.timingSafeEqual(a, b);
+}
+
 module.exports = async (req, res) => {
   // ① CRC 검증 (등록 시 + X가 주기적으로 보냄)
   if (req.method === "GET") {
@@ -107,21 +132,32 @@ module.exports = async (req, res) => {
   }
   if (req.method !== "POST") return res.status(405).end();
 
-  const body = req.body || {};
+  // ② 서명 검증 — X 가 보낸 것만 받는다.
+  //    이게 없으면 이 주소를 아는 누구나 가짜 '멘션' 을 밀어 넣어, 봇이
+  //    아무 트윗에나 답글을 달게 만들 수 있다(생성 비용은 우리가 문다).
+  //    도착 기록은 검증 결과와 무관하게 먼저 남긴다 — 이벤트가 오는데 서명이
+  //    안 맞으면 /api/health 의 last_sig 가 'bad' 로 보이게.
+  const raw = await readRaw(req);
+  const sig = req.headers["x-twitter-webhooks-signature"];
+  const sigOk = signatureOk(raw, sig);
+  try {
+    await redis("SET", "debug:last_event_at", new Date().toISOString(), "EX", 86400);
+    await redis("SET", "debug:last_sig", sigOk ? "ok" : (sig ? "bad" : "missing"), "EX", 86400);
+  } catch (e) {
+    console.error("redis 오류:", e);
+  }
+  if (!sigOk) return res.status(401).json({ error: "bad signature" });
+
+  let body;
+  try { body = JSON.parse(raw.toString("utf8") || "{}") || {}; }
+  catch (_) { return res.status(400).json({ error: "bad json" }); }
+
   const mentions = extractMentions(body);
   let queued = 0;
   try {
-    // 도착 기록은 무조건 '가장 먼저'. (예전엔 서명 검증 401이 이 앞에서 튕겨
-    //  이벤트가 와도 last_event_at이 안 찍혔다.)
-    await redis("SET", "debug:last_event_at", new Date().toISOString(), "EX", 86400);
     await redis("SET", "debug:last_event",
       JSON.stringify(body).slice(0, 4000), "EX", 86400);
     await redis("SET", "debug:last_parsed", String(mentions.length), "EX", 86400);
-    // 서명은 참고용으로만 기록(차단하지 않음): 파싱된 body를 재직렬화한 값은
-    // X가 원본 바이트로 만든 서명과 구조적으로 일치할 수 없어 검증 근거로 못 쓴다.
-    // 소유권은 CRC(GET)로 이미 증명됨.
-    await redis("SET", "debug:last_sig",
-      req.headers["x-twitter-webhooks-signature"] ? "present" : "none", "EX", 86400);
     for (const m of mentions) {
       const fresh = await redis("SET", `proc:${m.id}`, "1", "NX", "EX", PROC_TTL);
       if (fresh !== "OK") continue; // 이미 처리/예약된 멘션
@@ -134,3 +170,6 @@ module.exports = async (req, res) => {
   if (queued) waitUntil(kickWork(req.headers.host));
   return res.status(200).json({ ok: true, parsed: mentions.length, queued });
 };
+
+// 본문 파싱을 끈다 — 위 readRaw 가 원본을 읽어야 서명을 검증할 수 있다.
+module.exports.config = { api: { bodyParser: false } };

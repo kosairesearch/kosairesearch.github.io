@@ -29,6 +29,9 @@ const eq = (g, w, m) => ok(g === w, m, g === w ? "" : `← ${JSON.stringify(g)} 
 const limitsSrc = SRC.match(/const MAIL_LIMITS = \[([\s\S]*?)\];/);
 if (!limitsSrc) { console.error("MAIL_LIMITS 를 못 찾음"); process.exit(1); }
 const MAIL_LIMITS = eval("[" + limitsSrc[1] + "]");
+const formSrc = SRC.match(/const FORM_LIMITS = \[([\s\S]*?)\];/);
+if (!formSrc) { console.error("FORM_LIMITS 를 못 찾음"); process.exit(1); }
+const FORM_LIMITS = eval("[" + formSrc[1] + "]");
 
 const bodySrc = SRC.match(/async function mailQuotaTake\(db, kind, email\) \{[\s\S]*?\n\}/);
 const msgSrc = SRC.match(/function mailQuotaMessage\(waitMs, lang\) \{[\s\S]*?\n\}/);
@@ -52,8 +55,8 @@ function fakeDb(store = new Map(), opts = {}) {
   };
 }
 
-const mailQuotaTake = new Function("crypto", "MAIL_LIMITS", "console",
-  `return ${bodySrc[0]}`)({ createHash }, MAIL_LIMITS, console);
+const mailQuotaTake = new Function("crypto", "MAIL_LIMITS", "FORM_LIMITS", "console",
+  `return ${bodySrc[0]}`)({ createHash }, MAIL_LIMITS, FORM_LIMITS, console);
 const mailQuotaMessage = new Function(`return ${msgSrc[0]}`)();
 
 const HOUR = MAIL_LIMITS.find(l => l.key === "h");
@@ -171,6 +174,28 @@ console.log("\n── 부르는 자리가 맞게 짜여 있는가 ──");
      "세는 자리는 아무에게도 열지 않는다");
   ok(/resource-exhausted/.test(readFileSync(join(ROOT, "auth-util.js"), "utf8")),
      "화면이 서버 문장을 그대로 보여 준다(언제 다시 되는지가 그 안에 있다)");
+}
+
+/* ── 문의·피드백 폼 — 한 IP 는 메일과 같은 창, 전체 합계는 따로 ──
+   폼은 로그인 없이 부를 수 있고 부를 때마다 메일이 나간다. 발송 계정이
+   인증·재설정 메일과 같아서, 한도가 없으면 폼으로 그 한도를 태울 수 있다. */
+{
+  const FH = FORM_LIMITS.find(l => l.key === "h");
+  ok(FH && FH.max > HOUR.max, "전체 합계 창은 한 사람 창보다 넓다");
+  const db = fakeDb();
+  let blocked = 0;
+  for (let i = 0; i < HOUR.max + 1; i++) if (!(await mailQuotaTake(db, "form", "1.2.3.4")).ok) blocked++;
+  eq(blocked, 1, "한 IP 는 1시간 창을 넘기면 막힌다");
+  ok((await mailQuotaTake(db, "form", "5.6.7.8")).ok, "다른 IP 는 따로 센다");
+  const db2 = fakeDb();
+  let all = 0;
+  for (let i = 0; i < FH.max + 1; i++) if (!(await mailQuotaTake(db2, "form_all", "all")).ok) all++;
+  eq(all, 1, "전체 합계는 FORM_LIMITS 로 센다 — 한 사람 창(5)이 아니라 30에서 막힌다");
+  const form = SRC.slice(SRC.indexOf("exports.submitForm"), SRC.indexOf("exports.getReport"));
+  ok(form.indexOf('mailQuotaTake(qdb, "form"') > 0 && form.indexOf('mailQuotaTake(qdb, "form_all"') > 0,
+     "폼은 IP 와 전체 합계를 둘 다 센다");
+  ok(form.indexOf("mailQuotaTake") < form.indexOf("resend.emails.send"), "폼 — 보내기 전에 센다");
+  ok(form.indexOf("if (d.hp) return") < form.indexOf("mailQuotaTake"), "허니팟에 걸린 봇은 한도를 쓰지 않는다");
 }
 
 console.log(`\n통과 ${pass} · 실패 ${fail}`);
