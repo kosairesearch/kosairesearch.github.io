@@ -532,9 +532,19 @@ async function kakaoProfile(code, redirectUri){
 
   const acc = me.kakao_account || {};
   const prof = acc.profile || {};
+  /* 카카오가 '확인된 주소' 라고 한 것만 이메일로 친다.
+
+     카카오계정은 확인 안 된 주소를 달고 있을 수 있다(is_email_verified=false).
+     그 주소를 그대로 심으면 이 계정이 그 주소의 주인 행세를 한다 — 남의
+     주소를 적어 둔 카카오 계정으로 먼저 들어오면, 진짜 주인은 나중에 그
+     주소로 가입하지 못하고(already-exists) 재설정 메일은 이 계정에 물린다.
+     확인 안 된 주소는 없는 것으로 본다. 아래는 이메일이 없어도 다 돈다. */
+  const emailOkByKakao = acc.is_email_verified === true;
+  if (acc.email && !emailOkByKakao)
+    console.warn(`[kakao] 확인 안 된 이메일은 심지 않는다 (id=${me.id})`);
   return {
     id: String(me.id),
-    email: acc.email || null,
+    email: emailOkByKakao && acc.email ? acc.email : null,
     name: prof.nickname || (me.properties && me.properties.nickname) || "",
     photo: prof.profile_image_url || (me.properties && me.properties.profile_image) || null,
     terms: await kakaoServiceTerms(tok.access_token)
