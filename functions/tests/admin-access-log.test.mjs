@@ -78,6 +78,9 @@ ok(!/await logAdminAccess\(/.test(bodies.adminWakeBrief || ""),
 console.log("\n④ 월간 점검");
 const rev = (SRC.match(/exports\.reviewAdminAccessLogs[\s\S]*?\n\);/) || [""])[0];
 ok(!!rev, "reviewAdminAccessLogs 가 있다");
+// 만들어 두고 배포 목록에 안 넣으면 없는 것과 같다 — 실제로 아흐레 동안 그랬다.
+const deployYml = readFileSync(join(ROOT, ".github", "workflows", "deploy_functions.yml"), "utf8");
+ok(/functions:reviewAdminAccessLogs\b/.test(deployYml), "배포 목록(deploy_functions.yml)에 reviewAdminAccessLogs 가 있다");
 ok(/onSchedule\(/.test(rev), "사람이 아니라 기계가 돌린다");
 ok(/schedule: "0 9 1 \* \*"/.test(rev), "매월 1일에 돈다(월 1회 이상)");
 ok(/timeZone: "Asia\/Seoul"/.test(rev), "한국 시간 기준");
