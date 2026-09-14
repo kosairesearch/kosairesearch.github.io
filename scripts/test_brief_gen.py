@@ -886,6 +886,66 @@ b7["sections"][1]["paragraphs"][0]["en"] = "[Hanmi](042700) and [Nextin](348210)
 ok("업종이 같으면 묶어도 된다", not has(G.validate(b7, facts=F16), "묶었다"), str(G.validate(b7, facts=F16)))
 ok("업종 정보가 없으면 검사하지 않는다", G.check_sector_grouping(b5, {}) == [])
 
+
+# ────────── ⑰ 재료 상한 · 어제와 같은 조합 — "내용이 매일 똑같다" ──────────
+#
+# 여덟 편을 재 보니 여덟 편 전부가 열두 재료를 다 다뤘다. 섹션 이름은 날마다
+# 달라졌지만 내용은 같은 열두 가지의 낭독이었다. 규칙에 "고른다"고만 적어서는
+# 고르지 않는다 — 몇 개까지인지를 정하고 검사가 센다.
+
+print("\n⑰ 다룬 재료를 센다")
+_full = ("S&P 500이 올랐고 필라델피아 반도체가 뛰었다. 코스피는 6,909.91로 마감했다. "
+         "외국인이 2조원을 순매도했다. 중앙값은 -0.17%였다. 업종 상위는 조선이었다. "
+         "[a](000001) [b](000002) [c](000003) [d](000004) [e](000005). "
+         "원/달러는 1,344원이다. WTI는 100달러다. 미 10년물은 4.97%다. 16일 FOMC가 끝난다. "
+         "9월 리포트가 확인 지점으로 꼽았다.")
+_fb = sample(); _fb["lead"]["ko"] = _full
+um = G.used_materials(_fb)
+ok("열두 묶음을 다 잡는다", len(um) == 12, str(um))
+ok("표본(sample)은 두 묶음뿐", len(G.used_materials(sample())) == 2, str(G.used_materials(sample())))
+_half = sample(); _half["lead"]["ko"] = "S&P 500이 올랐다. 외국인이 순매도했다. WTI는 100달러다. "
+ok("셋만 쓰면 셋+표본 둘 = 다섯", len(G.used_materials(_half)) == 5, str(G.used_materials(_half)))
+
+print("\n⑰-2 상한 — 1차 7개, 2차 9개, 열두 개는 어디서도 안 된다")
+def _with(n):
+    b = sample()
+    parts = ["S&P 500이 올랐다.", "코스피는 6,909.91로 마감했다.", "외국인이 순매도했다.",
+             "중앙값은 -0.17%다.", "업종 상위는 조선이다.", "원/달러는 1,344원이다.",
+             "WTI는 100달러다.", "미 10년물은 4.97%다.", "16일 FOMC가 끝난다.",
+             "[a](000001) [b](000002) [c](000003) [d](000004) [e](000005)."]
+    b["lead"]["ko"] = " ".join(parts[:n])       # 표본이 이미 반도체지수·커버리지 둘을 쓴다
+    return b
+ok("7개면 1차 통과", not has(G.validate(_with(5), facts=None), "재료"), str(G.validate(_with(5))))
+ok("8개면 1차 거부", has(G.validate(_with(6), facts=None), "8개를 다뤘다"))
+ok("8개도 2차(느슨)는 통과", not has(G.validate(_with(6), strict_coverage=False), "재료"))
+ok("10개면 2차도 거부", has(G.validate(_with(8), strict_coverage=False), "10개를 다뤘다"))
+r12 = G.validate(_with(10), strict_coverage=False)
+ok("열두 개는 2차도 거부", has(r12, "12개를 다뤘다"), str(r12))
+
+print("\n⑰-3 어제와 같은 조합")
+_today = _with(3)                     # 미국지수·국내지수·수급 + 반도체지수·커버리지
+_um = G.used_materials(_today)
+ok("같은 조합이면 거부", has(G.validate(_today, prev_materials=list(_um)), "어제와 같은 재료 조합"))
+ok("순서가 달라도 같은 조합", has(G.validate(_today, prev_materials=list(reversed(_um))), "어제와 같은"))
+ok("하나라도 다르면 통과", not has(G.validate(_today, prev_materials=_um[:-1] + ["유가"]), "어제와 같은"))
+ok("어제 것이 없으면 검사하지 않는다", not has(G.validate(_today, prev_materials=None), "어제와 같은"))
+ok("검사기 단독 호출도 같다", G.check_materials(_today, strict=True, prev=_um) and
+   not G.check_materials(_today, strict=True, prev=None))
+
+print("\n⑰-4 어제 재료는 나간 글에서만 읽는다")
+def _mat_brief(published):
+    b = _with(3)                       # 미국지수·국내지수·수급 + 반도체지수·커버리지
+    b["meta"] = {"publishedAt": "2026-09-12T07:28+09:00"} if published else {}
+    return b
+with _tf.TemporaryDirectory() as _d:
+    _dd = _P(_d)
+    (_dd / "2026-09-12.json").write_text(_json.dumps(_mat_brief(True), ensure_ascii=False), encoding="utf-8")
+    (_dd / "2026-09-13.json").write_text(_json.dumps(_mat_brief(False), ensure_ascii=False), encoding="utf-8")
+    ym = G.yesterday_materials("2026-09-14", _dd)
+    ok("초안(미발행)은 건너뛰고 나간 글을 읽는다", ym is not None, str(ym))
+    ok("오늘 이후 파일은 읽지 않는다", G.yesterday_materials("2026-09-12", _dd) is None)
+    ok("폴더가 없으면 None", G.yesterday_materials("2026-09-14", _dd / "없음") is None)
+
 print("\n" + "=" * 60)
 if FAIL:
     print(f"❌ 실패 {len(FAIL)}건: {', '.join(FAIL)}")
