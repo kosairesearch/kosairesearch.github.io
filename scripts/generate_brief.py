@@ -487,7 +487,13 @@ def _facts_text(facts):
                 if not same:
                     cell += f"({v.get('date')})"
                 cells.append(cell)
-            L.append(f"  {gname}: " + " · ".join(cells)
+            # 브리핑은 07:30 에 나간다. 도쿄·홍콩·상하이는 그 뒤에 연다 — 여기
+            # 적힌 값은 언제나 직전 마감값이다. 9/14 낮 시험 생성이 금요일
+            # 마감값을 "오늘 아시아는 … 엇갈려 있다" 로 썼다. 값 옆에 그 사실을
+            # 적어 두면 그렇게 쓰지 않는다.
+            head = (f"{gname}(오늘 장은 아직 열리기 전 · 아래는 직전 마감값)"
+                    if gname == "아시아" else gname)
+            L.append(f"  {head}: " + " · ".join(cells)
                      + (f"  (기준일 {dates.pop()})" if same else ""))
         miss = [lbl for k, lbl, *_ in SERIES
                 if k not in ser and k not in ("kospi", "kosdaq")]
@@ -1327,6 +1333,11 @@ _SENT = re.compile(r"(?<=[.!?。])\s+|\n")
 _WEEKWORD = re.compile(r"(이번\s*주|다음\s*주|지난\s*주)")
 # '같은 …' 으로 종목을 한 묶음으로 만드는 말. 업종이 다르면 거짓이 된다.
 _SAME_GROUP = re.compile(r"같은\s*(업종|부품|반도체|섹터|장비|소재|업계)")
+# '같은 X' 뒤에 이런 말이 오면 그 뒤 종목은 다른 묶음이다 — "같은 반도체
+# 안에서도 A는 올랐고, 옆 업종인 전자·부품에서는 B가 올랐다". 9/14 낮 시험
+# 생성이 이 문장을 1차에서 거부당했다(2차 관용으로 살았다). 맞는 문장이었다.
+_GROUP_CUT = re.compile(r"(?:옆|다른|별개의|바깥|인접)\s*(?:업종|섹터|묶음|그룹|분야)"
+                        r"|업종(?:이|은|과|와)\s*다른|반면|한편|달리|밖에서|바깥에서")
 
 
 def _sector_map(facts):
@@ -1462,12 +1473,17 @@ def check_sector_grouping(brief, facts):
         raw = next((v for pth, v in _walk(brief) if pth == path), "")
         raw_sents = [x for x in _SENT.split(raw) if x.strip()]
         for i, sent in enumerate(raw_sents):
-            if not _SAME_GROUP.search(sent):
+            g = _SAME_GROUP.search(sent)
+            if not g:
                 continue
             # 묶음은 두 문장에 걸친다 — 앞 문장에 종목을 늘어놓고, 다음 문장이
             # "다만 같은 부품 안에서도 X가 올랐다" 로 받는다. 실제로 그렇게
             # 나갔다. 그래서 '같은 …' 문장과 바로 앞 문장을 한 창으로 본다.
-            window = (raw_sents[i - 1] + " " if i > 0 else "") + sent
+            # 다만 '같은 X' 뒤에서 글쓴이가 스스로 "옆 업종인 …" 하고 갈라
+            # 놓았으면 거기까지만 본다 — 그 뒤 종목은 같은 묶음이 아니다.
+            cut = _GROUP_CUT.search(sent, g.end())
+            cur = sent[:cut.start()] if cut else sent
+            window = (raw_sents[i - 1] + " " if i > 0 else "") + cur
             codes = [m.group(2) for m in LINK.finditer(window)]
             secs = {smap[c] for c in codes if c in smap}
             if len(secs) >= 2:
