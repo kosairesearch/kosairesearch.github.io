@@ -7,6 +7,7 @@
 Vercel 환경변수 X_CLIENT_ID / X_CLIENT_SECRET 설정.
 """
 import json
+import hmac
 import os
 import secrets
 import sys
@@ -60,6 +61,17 @@ def try_subscribe(user_bearer):
     return {"ok": ok, "webhook_id": hook_id, "steps": steps}
 
 
+def _key_ok(q):
+    """?key= 가 POLL_SECRET 과 같은가. 비밀이 아예 없으면 무조건 거부한다.
+
+    전에는 POLL_SECRET 이 비어 있으면 검사를 건너뛰었다 — 환경변수 하나
+    빠뜨리면 이 주소를 아는 누구나 봇을 돌릴 수 있는 구조였다. 비교는
+    글자 수 차이로 새지 않게 compare_digest 로 한다."""
+    secret = os.environ.get("POLL_SECRET") or ""
+    key = (q.get("key") or [""])[0]
+    return bool(secret) and hmac.compare_digest(key.encode("utf-8"), secret.encode("utf-8"))
+
+
 class handler(BaseHTTPRequestHandler):
     def _out(self, code, body, ctype="application/json; charset=utf-8"):
         self.send_response(code)
@@ -73,7 +85,7 @@ class handler(BaseHTTPRequestHandler):
 
         if not code:
             # ① 승인 시작 — 키 확인 후 X 인가 페이지로 리다이렉트
-            if os.environ.get("POLL_SECRET") and q.get("key", [""])[0] != os.environ["POLL_SECRET"]:
+            if not _key_ok(q):
                 self._out(403, '{"error":"forbidden"}'); return
             if not os.environ.get("X_CLIENT_ID"):
                 self._out(500, '{"error":"X_CLIENT_ID/X_CLIENT_SECRET 환경변수를 먼저 넣고 재배포"}'); return

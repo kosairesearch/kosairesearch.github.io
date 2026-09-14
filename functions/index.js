@@ -532,9 +532,19 @@ async function kakaoProfile(code, redirectUri){
 
   const acc = me.kakao_account || {};
   const prof = acc.profile || {};
+  /* 카카오가 '확인된 주소' 라고 한 것만 이메일로 친다.
+
+     카카오계정은 확인 안 된 주소를 달고 있을 수 있다(is_email_verified=false).
+     그 주소를 그대로 심으면 이 계정이 그 주소의 주인 행세를 한다 — 남의
+     주소를 적어 둔 카카오 계정으로 먼저 들어오면, 진짜 주인은 나중에 그
+     주소로 가입하지 못하고(already-exists) 재설정 메일은 이 계정에 물린다.
+     확인 안 된 주소는 없는 것으로 본다. 아래는 이메일이 없어도 다 돈다. */
+  const emailOkByKakao = acc.is_email_verified === true;
+  if (acc.email && !emailOkByKakao)
+    console.warn(`[kakao] 확인 안 된 이메일은 심지 않는다 (id=${me.id})`);
   return {
     id: String(me.id),
-    email: acc.email || null,
+    email: emailOkByKakao && acc.email ? acc.email : null,
     name: prof.nickname || (me.properties && me.properties.nickname) || "",
     photo: prof.profile_image_url || (me.properties && me.properties.profile_image) || null,
     terms: await kakaoServiceTerms(tok.access_token)
@@ -1446,6 +1456,20 @@ const MAIL_LIMITS = [
   { key: "h", ms: 60 * 60 * 1000, max: 5 },        // 1시간에 5통
   { key: "d", ms: 24 * 60 * 60 * 1000, max: 20 },  // 하루에 20통
 ];
+/* 문의·피드백 폼 전체 합계 한도.
+
+   submitForm 은 로그인 없이 부를 수 있고, 부를 때마다 메일이 한 통 나간다.
+   한도가 없으면 스크립트 하나로 수천 통을 보낼 수 있다. 받는 사람은
+   우리지만, 발송 계정이 인증·재설정 메일과 같아서 그 한도까지 태우면
+   회원이 비밀번호를 못 되찾는다 — 그게 진짜 피해다.
+
+   한 IP 는 MAIL_LIMITS(1시간 5·하루 20)로 세고, 그 위에 전체 합계를 따로
+   센다. IP 는 헤더로 흉내 낼 수 있어도 합계는 못 넘는다. 사람이 보내는
+   문의는 하루 몇 통이라 이 값에 닿을 일이 없다. */
+const FORM_LIMITS = [
+  { key: "h", ms: 60 * 60 * 1000, max: 30 },        // 전체 1시간에 30통
+  { key: "d", ms: 24 * 60 * 60 * 1000, max: 150 },  // 전체 하루에 150통
+];
 
 async function mailQuotaTake(db, kind, email) {
   const id = kind + "_" +
@@ -1457,7 +1481,9 @@ async function mailQuotaTake(db, kind, email) {
       const now = Date.now();
       const next = {};
       let waitMs = 0;
-      for (const L of MAIL_LIMITS) {
+      // 폼 전체 합계(form_all)만 다른 창을 쓴다. 나머지는 주소·IP 하나의 한도다.
+      const limits = kind === "form_all" ? FORM_LIMITS : MAIL_LIMITS;
+      for (const L of limits) {
         const w = cur[L.key] || {};
         const at = typeof w.at === "number" ? w.at : 0;
         const n = typeof w.n === "number" ? w.n : 0;
@@ -1596,6 +1622,23 @@ exports.submitForm = onCall(
     <tr><td style="padding:18px 28px 24px"><div style="color:#a7a9b4;font:400 12px ${FONT}">${emailOk(email) ? "이 메일에 그대로 답장하면 보낸 사람에게 회신됩니다." : "보낸 사람이 이메일을 남기지 않았습니다."}</div></td></tr>
   </table>
 </td></tr></table></body></html>`;
+
+    /* 남용 한도 — 허니팟에 안 걸린 요청만 여기까지 온다.
+       IP 는 logConsent 와 같은 자리에서 읽는다(x-forwarded-for 첫 값). 그
+       값은 부르는 쪽이 꾸밀 수 있으므로 전체 합계(form_all)를 같이 센다.
+       셈에 실패하면 mailQuotaTake 가 막지 않고 통과시킨다 — 폼이 안 되는
+       것보다 몇 통 더 나가는 편이 낫다. */
+    const rq = req.rawRequest || {};
+    const ip = String(((rq.headers || {})["x-forwarded-for"]) || rq.ip || "")
+      .split(",")[0].trim().slice(0, 45);
+    const qdb = admin.firestore();
+    const q1 = ip ? await mailQuotaTake(qdb, "form", ip) : { ok: true };
+    const q2 = q1.ok ? await mailQuotaTake(qdb, "form_all", "all") : q1;
+    if (!q1.ok || !q2.ok) {
+      const waitMs = Math.max(q1.waitMs || 0, q2.waitMs || 0);
+      console.warn(`[submitForm] 한도 초과 ip=${ip || "?"} wait=${waitMs}`);
+      throw new HttpsError("resource-exhausted", mailQuotaMessage(waitMs, d.lang), { waitMs });
+    }
 
     const resend = new Resend(RESEND_API_KEY.value());
     const opts = { from: MAIL_FROM, to: FORM_TO, subject, html };
