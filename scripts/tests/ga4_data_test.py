@@ -118,6 +118,13 @@ finally:
 print("\n⑥ 페이지 이름표")
 ok("홈은 두 주소 다 같은 이름", G.PAGE_NAMES["/"] == G.PAGE_NAMES["/index.html"])
 ok("브리핑 이름이 있다", G.PAGE_NAMES.get("/brief.html") == "모닝 브리핑")
+# GA4 가 앞의 0 을 떼고 준 종목 번호 — 2026-09-15 보고서에 "37560 1회" 로 찍혔다.
+G._TICKER_NAMES = {"037560": "LG헬로비전", "005930": "삼성전자"}
+eq("앞의 0 이 떨어진 번호도 이름을 찾는다", G.ticker_name("37560"), "LG헬로비전")
+eq("숫자로 와도 찾는다", G.ticker_name(37560), "LG헬로비전")
+eq("여섯 자리는 그대로", G.ticker_name("005930"), "삼성전자")
+eq("모르는 번호는 채워서 돌려준다", G.ticker_name("1234"), "001234")
+G._TICKER_NAMES = None
 
 print("\n⑦ 유입처 이름 묶기 — 2026-09-13 에 실제로 나온 줄들")
 eq("네이버 검색(모바일)", G.source_label("m.search.naver.com"), "네이버")
