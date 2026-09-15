@@ -193,6 +193,46 @@ try:
 finally:
     S.load, S.save = _load, _save
 
+print("⑧ 업계 표준 지표 — 한 달에 온 사람(MAU)·하루 평균(DAU)·습관을 한 주에 붙인다")
+_run0 = G._run
+try:
+    def fake_run(client, prop, start, end, metrics, dimensions=None, limit=25, order=None,
+                 event_filter=None):
+        if "active28DayUsers" in metrics:
+            return [{"active28DayUsers": 1200, "active7DayUsers": 446}]
+        if dimensions == ["date"]:
+            # 아무도 안 온 날(이틀)은 줄이 안 온다 — 그래도 7 로 나눠야 한다.
+            return [{"date": d, "activeUsers": n}
+                    for d, n in zip(("20260907", "20260908", "20260909", "20260910", "20260911"),
+                                    (70, 70, 70, 70, 70))]
+        if dimensions == ["newVsReturning"]:
+            return [{"newVsReturning": "new", "totalUsers": 402},
+                    {"newVsReturning": "returning", "totalUsers": 76}]
+        return [{"totalUsers": 446, "newUsers": 402, "sessions": 600,
+                 "engagedSessions": 300, "screenPageViews": 1500,
+                 "averageSessionDuration": 60.0}]
+    G._run = fake_run
+    row = G.one_week(None, "p", datetime.date(2026, 9, 7), datetime.date(2026, 9, 13))
+    eq("지난 28일 동안 온 사람", row.get("mau28"), 1200)
+    eq("지난 7일 동안 온 사람", row.get("wau7"), 446)
+    eq("하루 평균은 온 날만이 아니라 7일로 나눈다", row.get("dauAvg"), 50.0)
+    eq("습관 = 하루 평균 ÷ 한 달 × 100", row.get("stickiness"), 4.2)
+    ok("실패 표시가 없다", "active" not in row.get("_missing", {}))
+    eq("본래 칸도 그대로", (row.get("users"), row.get("returningUsers")), (446, 76))
+
+    def broken_run(client, prop, start, end, metrics, dimensions=None, limit=25, order=None,
+                   event_filter=None):
+        if "active28DayUsers" in metrics:
+            raise RuntimeError("400 Field active28DayUsers is not a valid metric")
+        return fake_run(client, prop, start, end, metrics, dimensions, limit, order, event_filter)
+    G._run = broken_run
+    row = G.one_week(None, "p", datetime.date(2026, 9, 7), datetime.date(2026, 9, 13))
+    ok("지표가 안 되면 그 칸만 비운다", row.get("mau28") is None and row.get("stickiness") is None)
+    ok("주 전체는 살아 있다", row.get("users") == 446)
+    ok("왜 비었는지 남긴다", "not a valid metric" in row.get("_missing", {}).get("active", ""))
+finally:
+    G._run = _run0
+
 print("\n" + "=" * 52)
 print(f"PASS {P}  FAIL {F}")
 sys.exit(1 if F else 0)

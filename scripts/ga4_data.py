@@ -337,10 +337,38 @@ def one_week(client, prop, mon, sun, deep=False):
     nvr = _run(client, prop, s, e, ["totalUsers"], ["newVsReturning"], limit=10)
     buckets = {r.get("newVsReturning", ""): r.get("totalUsers", 0) for r in nvr}
 
+    # 업계 표준 지표 — 크기와 습관. 사장이 "DAU·MAU 가 뭐냐, 재방문율에 안
+    # 쓰냐" 고 물었다(2026-09-15). 업계가 쓰는 말 그대로 받는다.
+    #   active28DayUsers   그 주 일요일 기준 지난 28일 동안 온 사람 = MAU
+    #   active7DayUsers    그 주 일요일 기준 지난 7일 동안 온 사람 = WAU
+    #   activeUsers × date 하루하루 온 사람 → 7일 평균이 DAU
+    #   습관(stickiness) = DAU ÷ MAU. 10% 면 한 달에 3일쯤 온다는 뜻.
+    # active-N-day 지표는 날짜 범위의 마지막 날(일요일)을 기준으로 N일을
+    # 거슬러 센다. 실패해도 주 전체를 잃지 않게 따로 감싼다.
+    mau = wau7 = dau = stick = None
+    try:
+        act = _run(client, prop, s, e, ["active28DayUsers", "active7DayUsers"])
+        act = act[0] if act else {}
+        mau, wau7 = act.get("active28DayUsers"), act.get("active7DayUsers")
+        daily = _run(client, prop, s, e, ["activeUsers"], ["date"], limit=7)
+        days = [r.get("activeUsers", 0) for r in daily]
+        # 아무도 안 온 날은 줄이 안 온다. 그래도 그 날은 0 으로 쳐서 7 로 나눈다.
+        ndays = (sun - mon).days + 1
+        dau = round(sum(days) / ndays, 1) if days else None
+        stick = round(dau / mau * 100, 1) if (dau and mau) else None
+    except Exception as ex:
+        active_err = f"{type(ex).__name__}: {str(ex)[:120]}"
+    else:
+        active_err = None
+
     row = {
         "week": mon.isoformat(),
         "to": sun.isoformat(),
         "users": core.get("totalUsers", 0),
+        "mau28": mau,
+        "wau7": wau7,
+        "dauAvg": dau,
+        "stickiness": stick,
         "newUsers": core.get("newUsers", 0),
         "returningUsers": buckets.get("returning", 0),
         "sessions": core.get("sessions", 0),
@@ -348,6 +376,8 @@ def one_week(client, prop, mon, sun, deep=False):
         "pageViews": core.get("screenPageViews", 0),
         "avgSessionSec": round(core.get("averageSessionDuration", 0) or 0),
     }
+    if active_err:
+        row.setdefault("_missing", {})["active"] = active_err
     if deep:
         row["channels"] = _run(client, prop, s, e, ["sessions", "totalUsers"],
                                ["sessionDefaultChannelGroup"], limit=12,
@@ -540,6 +570,11 @@ PROBE_METRICS = [
     "bounceRate", "engagementRate", "screenPageViews", "screenPageViewsPerSession",
     "averageSessionDuration", "userEngagementDuration", "eventCount",
     "keyEvents", "sessionsPerUser", "eventCountPerUser",
+    # 업계 표준 — 크기(DAU·WAU·MAU)와 습관(DAU/MAU). 2026-09-15 에 사장이
+    # "DAU, MAU 는 뭐냐, 재방문율에 안 쓰냐" 고 물었다. 구글 문서가 이 환경에서
+    # 안 열려서 이름이 맞는지는 여기서 GA4 에 직접 물어 확인한다.
+    "active1DayUsers", "active7DayUsers", "active28DayUsers",
+    "dauPerMau", "dauPerWau", "wauPerMau",
 ]
 PROBE_DIMENSIONS = [
     "pagePath", "pageTitle", "landingPage", "landingPagePlusQueryString",

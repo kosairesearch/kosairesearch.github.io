@@ -47,6 +47,7 @@ B = wk("2026-08-31", "2026-09-06", 382, 354, 55, 483, 420, 1136, 244,
        events=[{"eventName": "sign_up", "eventCount": 4},
                {"eventName": "watchlist_add", "eventCount": 16}])
 C = wk("2026-09-07", "2026-09-13", 444, 396, 76, 583, 480, 1260, 287,
+       mau28=1200, wau7=444, dauAvg=63.4, stickiness=5.28,
        pages=[{"pagePath": "/stock.html", "screenPageViews": 900, "totalUsers": 387}],
        events=[{"eventName": "watchlist_add", "eventCount": 33, "totalUsers": 3},
                {"eventName": "sign_up", "eventCount": 4, "totalUsers": 3}])
@@ -96,6 +97,12 @@ eq("가입한 사람 수", rows[3][h["가입한 사람(명)"]], 3)
 eq("담기 건수", rows[3][h["관심종목 담기(건)"]], 33)
 eq("담은 사람 수 — 33건이 3명", rows[3][h["관심종목 담은 사람(명)"]], 3)
 eq("옛 기록엔 사람 수가 없다 — 빈칸", (rows[2][h["가입한 사람(명)"]], rows[2][h["관심종목 담은 사람(명)"]]), ("", ""))
+
+print("\n③-2 업계 표준 — MAU · DAU · 습관")
+eq("지난 28일 동안 온 사람", rows[3][h["지난 28일 동안 온 사람(명)"]], 1200)
+eq("하루 평균 온 사람", rows[3][h["하루 평균 온 사람(명)"]], 63.4)
+eq("습관은 소수 한 자리", rows[3][h["한 달에 온 사람 중 하루에 오는 비율(%)"]], 5.3)
+eq("안 받은 주는 빈칸", rows[2][h["지난 28일 동안 온 사람(명)"]], "")
 
 print("\n④ 다음 주 다시 온 비율 — 가장 최근 주는 비운다")
 k = h["처음 온 사람 중 다음 주 다시 온 비율(%)"]

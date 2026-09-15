@@ -668,6 +668,20 @@ ok("전에 쓴 주는 '다시 쓰는 것'", M.already_reported("2026-09-07", box
 ok("처음 쓰는 주는 아니다", not M.already_reported("2026-09-14", box))
 ok("보고서 상자가 비어 있으면 아니다", not M.already_reported("2026-09-07", {"items": []}))
 
+print("\n▣ 업계 표준 — MAU · DAU · 습관이 숫자판에 붙는다")
+ST = wk("2026-09-07", "2026-09-13", 444, 396, 76, 583, 480, 1260, 287,
+        mau28=1200, dauAvg=63.4, stickiness=5.3)
+ST0 = wk("2026-08-31", "2026-09-06", 382, 354, 55, 483, 420, 1136, 244,
+         mau28=1100, dauAvg=55.0, stickiness=5.0)
+mb = M.metrics_block({"weeks": [ST0, ST], "health": {"ok": True, "problems": []}})
+ok("칸이 있다", "한 달 크기와 습관" in mb and "MAU" in mb, mb[mb.find("한 달"):][:120])
+ok("28일 사람 수", "지난 28일 동안 온 사람 1,200명" in mb.replace("  ", " ").replace("  ", " ") or "1,200명" in mb)
+ok("습관은 %p 로 견준다", "5.3%" in mb and "▲0.3%p" in mb, mb[mb.find("습관"):][:80])
+mb0 = M.metrics_block({"weeks": [B], "health": {"ok": True, "problems": []}})
+ok("안 받은 주엔 칸이 없다", "한 달 크기와 습관" not in mb0)
+eq("습관은 비율이라 ±2%p 로 판정", X.judge("stickiness", 5.0, 7.5), ("효과 있음", "±2%p"))
+eq("MAU 는 건수 문턱", X.judge("mau28", 1200, 1230)[0], "변화 없음")
+
 print("\n" + "=" * 52)
 print(f"PASS {P}  FAIL {F}")
 sys.exit(1 if F else 0)
