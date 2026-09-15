@@ -3,6 +3,7 @@
 
 숫자판은 코드가 찍는다. 그래서 여기서 틀리면 보고서가 그대로 틀린다.
 """
+import re
 import sys
 from pathlib import Path
 
@@ -668,17 +669,26 @@ ok("전에 쓴 주는 '다시 쓰는 것'", M.already_reported("2026-09-07", box
 ok("처음 쓰는 주는 아니다", not M.already_reported("2026-09-14", box))
 ok("보고서 상자가 비어 있으면 아니다", not M.already_reported("2026-09-07", {"items": []}))
 
-print("\n▣ 업계 표준 — MAU · DAU · 습관이 숫자판에 붙는다")
+print("\n▣ MAU · WAU · DAU 가 숫자판에 그 말 그대로 붙는다 (사장: 아는 단어니까 그대로 써)")
 ST = wk("2026-09-07", "2026-09-13", 444, 396, 76, 583, 480, 1260, 287,
-        mau28=1200, dauAvg=63.4, stickiness=5.3)
+        mau28=1200, wau7=440, dauAvg=63.4, stickiness=5.3)
 ST0 = wk("2026-08-31", "2026-09-06", 382, 354, 55, 483, 420, 1136, 244,
-         mau28=1100, dauAvg=55.0, stickiness=5.0)
+         mau28=1100, wau7=378, dauAvg=55.0, stickiness=5.0)
 mb = M.metrics_block({"weeks": [ST0, ST], "health": {"ok": True, "problems": []}})
-ok("칸이 있다", "한 달 크기와 습관" in mb and "MAU" in mb, mb[mb.find("한 달"):][:120])
-ok("28일 사람 수", "지난 28일 동안 온 사람 1,200명" in mb.replace("  ", " ").replace("  ", " ") or "1,200명" in mb)
-ok("습관은 %p 로 견준다", "5.3%" in mb and "▲0.3%p" in mb, mb[mb.find("습관"):][:80])
+ok("칸 이름이 그 말 그대로", "■ MAU · WAU · DAU" in mb, mb[mb.find("■ MAU"):][:120])
+sec = mb[mb.find("■ MAU"):mb.find("■ 얼마나 봤나")]
+ok("MAU 줄", re.search(r"^  MAU\s+1,200명", sec, re.M) is not None, sec)
+ok("WAU 줄", re.search(r"^  WAU\s+440명", sec, re.M) is not None, sec)
+ok("DAU 줄", re.search(r"^  DAU\s+63\.4명", sec, re.M) is not None, sec)
+ok("DAU/MAU 는 %p 로 견준다", re.search(r"^  DAU/MAU\s+5\.3%  ▲0\.3%p", sec, re.M) is not None, sec)
+ok("풀어 쓴 옛 이름은 없다", "지난 28일 동안 온 사람" not in sec and "하루 평균 온 사람" not in sec
+   and "습관   " not in sec, sec)
 mb0 = M.metrics_block({"weeks": [B], "health": {"ok": True, "problems": []}})
-ok("안 받은 주엔 칸이 없다", "한 달 크기와 습관" not in mb0)
+ok("안 받은 주엔 칸이 없다", "■ MAU" not in mb0)
+ST1 = wk("2026-09-07", "2026-09-13", 444, 396, 76, 583, 480, 1260, 287,
+         mau28=1200, dauAvg=63.4, stickiness=5.3)
+mb1 = M.metrics_block({"weeks": [ST1], "health": {"ok": True, "problems": []}})
+ok("WAU 가 없는 옛 기록이면 그 줄만 빠진다", "  MAU" in mb1 and "  WAU" not in mb1)
 eq("습관은 비율이라 ±2%p 로 판정", X.judge("stickiness", 5.0, 7.5), ("효과 있음", "±2%p"))
 eq("MAU 는 건수 문턱", X.judge("mau28", 1200, 1230)[0], "변화 없음")
 

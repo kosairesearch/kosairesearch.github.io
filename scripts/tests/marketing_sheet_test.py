@@ -98,11 +98,21 @@ eq("담기 건수", rows[3][h["관심종목 담기(건)"]], 33)
 eq("담은 사람 수 — 33건이 3명", rows[3][h["관심종목 담은 사람(명)"]], 3)
 eq("옛 기록엔 사람 수가 없다 — 빈칸", (rows[2][h["가입한 사람(명)"]], rows[2][h["관심종목 담은 사람(명)"]]), ("", ""))
 
-print("\n③-2 업계 표준 — MAU · DAU · 습관")
-eq("지난 28일 동안 온 사람", rows[3][h["지난 28일 동안 온 사람(명)"]], 1200)
-eq("하루 평균 온 사람", rows[3][h["하루 평균 온 사람(명)"]], 63.4)
-eq("습관은 소수 한 자리", rows[3][h["한 달에 온 사람 중 하루에 오는 비율(%)"]], 5.3)
-eq("안 받은 주는 빈칸", rows[2][h["지난 28일 동안 온 사람(명)"]], "")
+print("\n③-2 DAU · WAU · MAU — 사장이 아는 말이라 그대로 쓴다 (2026-09-15)")
+ok("네 칸이 그 이름 그대로 있다",
+   all(k in h for k in ("DAU(명)", "WAU(명)", "MAU(명)", "DAU/MAU(%)")), S.WEEK_HEAD)
+eq("DAU · WAU · MAU 순서로 나란히", [S.WEEK_HEAD[h["DAU(명)"] + i] for i in range(4)],
+   ["DAU(명)", "WAU(명)", "MAU(명)", "DAU/MAU(%)"])
+eq("MAU", rows[3][h["MAU(명)"]], 1200)
+eq("WAU", rows[3][h["WAU(명)"]], 444)
+eq("DAU", rows[3][h["DAU(명)"]], 63.4)
+eq("DAU/MAU 는 소수 한 자리", rows[3][h["DAU/MAU(%)"]], 5.3)
+eq("안 받은 주는 빈칸", rows[2][h["MAU(명)"]], "")
+eq("열 글자 계산", [S._col_letter(i) for i in (0, 25, 26, 27, 28, 51, 52)],
+   ["A", "Z", "AA", "AB", "AC", "AZ", "BA"])
+memo_col = S._col_letter(len(S.WEEK_HEAD))
+ok(f"설명 탭이 메모 자리를 자동으로 쓰는 칸 바로 오른쪽({memo_col} 열)이라고 말한다",
+   any(f"({memo_col} 열부터)" in r[0] for r in S.explain_rows()))
 
 print("\n④ 다음 주 다시 온 비율 — 가장 최근 주는 비운다")
 k = h["처음 온 사람 중 다음 주 다시 온 비율(%)"]

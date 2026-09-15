@@ -40,9 +40,10 @@ METRICS = {
     "signUp": "회원가입 건수",
     "signUpRate": "가입 전환율(%)",
     "watchlistAdd": "관심종목 담기",
-    "mau28": "한 달에 온 사람 수(MAU)",
-    "dauAvg": "하루 평균 온 사람 수(DAU)",
-    "stickiness": "습관 — 하루÷한 달(%)",
+    "mau28": "MAU(지난 28일에 온 사람)",
+    "wau7": "WAU(지난 7일에 온 사람)",
+    "dauAvg": "DAU(하루 평균 온 사람)",
+    "stickiness": "DAU/MAU(%)",
 }
 STATUS = ("제안됨", "진행중", "끝남", "버림")
 
