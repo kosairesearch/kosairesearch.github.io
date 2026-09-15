@@ -1,4 +1,4 @@
-=== 공시 트리거 v2 생성 Mon Sep 14 16:44:26 UTC 2026 · 대상 451800,189690 ===
+=== 공시 트리거 v2 생성 Mon Sep 14 23:58:39 UTC 2026 · 대상 451800,189690 ===
 ## 🤖 리포트 v2 Batch 제출 — 2개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
 KRX 로그인 시도...
   로그인 ID: qjawnsdla
@@ -41,7 +41,7 @@ Error occurred in get_market_fundamental_by_ticker: Expecting value: line 1 colu
   2025Q4: 매출 71억 영업이익 7억 지배순이익 0억
   PER None | EPS None | PBR 0.5246 | BPS 2943 | ROE 6.0 | 배당 None% | DPS None
 - 모델 배분: claude-opus-5 0개 · claude-sonnet-5 2개
-- ✅ 배치 제출: msgbatch_01PAfupUaTQamPPfzD83cii8 (2건) → data/batches_v2/msgbatch_01PAfupUaTQamPPfzD83cii8.json
+- ✅ 배치 제출: msgbatch_01NL6rW88ZcHwbURM3VbbnDw (2건) → data/batches_v2/msgbatch_01NL6rW88ZcHwbURM3VbbnDw.json
   · 상태 in_progress · 처리 2/성공 0/오류 0
   · 상태 in_progress · 처리 2/성공 0/오류 0
   · 상태 in_progress · 처리 2/성공 0/오류 0
@@ -51,26 +51,9 @@ Error occurred in get_market_fundamental_by_ticker: Expecting value: line 1 colu
   · 상태 in_progress · 처리 2/성공 0/오류 0
   · 상태 in_progress · 처리 2/성공 0/오류 0
   · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-- ⏳ 시간 내 미완료 — 남은 배치는 collect_batch 가 회수한다
-- 아직 처리 중 — 여기서 끝낸다. collect_batch 가 회수한다(msgbatch_01PAfupUaTQamPPfzD83cii8).
+  · 상태 ended · 처리 0/성공 2/오류 0
+- msgbatch_01NL6rW88ZcHwbURM3VbbnDw · 상태 ended · 처리 0/성공 2/오류 0/만료 0/취소 0 · 주문 2026-09-15 08:58
+
+✅ v2 회수 완료 · 성공 2/실패 0 → data/reports_v2/ (2563개)
+💵 claude-sonnet-5 2건 · 입력 11,777(캐시쓰기 102,259·읽기 69,729) · 출력 46,749 · 검색 8 → 약 $0.46 (장당 $0.230)
+✅ msgbatch_01NL6rW88ZcHwbURM3VbbnDw 회수 완료 · 성공 2/실패 0
