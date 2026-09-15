@@ -692,6 +692,46 @@ ok("WAU 가 없는 옛 기록이면 그 줄만 빠진다", "  MAU" in mb1 and " 
 eq("습관은 비율이라 ±2%p 로 판정", X.judge("stickiness", 5.0, 7.5), ("효과 있음", "±2%p"))
 eq("MAU 는 건수 문턱", X.judge("mau28", 1200, 1230)[0], "변화 없음")
 
+print("\n▣ 실험 대장 CLI — 여럿 버리기 · JSON 으로 올리기 (Firestore 없이)")
+import json as _json
+import ga4_store as _GS
+_ld, _sv, _gl, _argv = X.load, X.save, _GS.load, sys.argv
+try:
+    box = {"items": [
+        {"id": "exp_1", "title": "리포트 상단에 관심종목 버튼", "status": "제안됨", "metric": "watchlistAdd"},
+        {"id": "exp_5", "title": "리포트 하단 관련 리포트 3개", "status": "제안됨", "metric": "pageViews"},
+        {"id": "exp_2", "title": "회사 소개에 리포트 이동 버튼", "status": "제안됨", "metric": "sessions"},
+    ]}
+    saved = []
+    X.load = lambda: box
+    X.save = lambda d: saved.append(_json.loads(_json.dumps(d)))
+    _GS.load = lambda name: {"weeks": [ST0, ST]}
+    sys.argv = ["experiments.py", "--drop", "exp_1, exp_5", "--why", "이미 사이트에 있었다"]
+    eq("둘 다 있으면 0", X.main(), 0)
+    st = {x["id"]: x["status"] for x in box["items"]}
+    eq("둘만 버림", st, {"exp_1": "버림", "exp_5": "버림", "exp_2": "제안됨"})
+    eq("이유가 남는다", box["items"][0].get("why_dropped"), "이미 사이트에 있었다")
+    ok("저장했다", len(saved) == 1)
+    sys.argv = ["experiments.py", "--drop", "exp_2,exp_9"]
+    eq("없는 번호가 섞이면 2 로 끝나되 있는 것은 버린다", X.main(), 2)
+    eq("exp_2 는 버려졌다", box["items"][2]["status"], "버림")
+    props = [{"title": "리포트 홈에 새로 나온 리포트 표시", "why": "단골이 11초 만에 나간다",
+              "metric": "returnRate", "action": "홈 맨 위에 오늘 새로 나온 리포트를 표시"},
+             {"title": "관심종목 새 리포트 알림 이메일", "why": "담을 이유가 없다",
+              "metric": "watchlistAdd", "action": "담아 둔 종목의 새 리포트를 이메일로"},
+             {"title": "모르는 지표", "why": "", "metric": "nope", "action": ""}]
+    sys.argv = ["experiments.py", "--propose", _json.dumps(props, ensure_ascii=False)]
+    eq("하나가 틀리면 2 로 끝나되 나머지는 올라간다", X.main(), 2)
+    new_ids = [x["id"] for x in box["items"] if x["status"] == "제안됨"]
+    eq("번호는 가장 큰 번호에서 잇는다", new_ids, ["exp_6", "exp_7"])
+    got = next(x for x in box["items"] if x["id"] == "exp_6")
+    eq("기준값은 가장 최근 주에서", (got["baseWeek"], got["baseValue"]), ("2026-09-07", 17.1))
+    eq("지표 이름표", got["metricLabel"], X.METRICS["returnRate"])
+    sys.argv = ["experiments.py", "--propose", "{not json"]
+    eq("JSON 이 아니면 2", X.main(), 2)
+finally:
+    X.load, X.save, _GS.load, sys.argv = _ld, _sv, _gl, _argv
+
 print("\n" + "=" * 52)
 print(f"PASS {P}  FAIL {F}")
 sys.exit(1 if F else 0)
