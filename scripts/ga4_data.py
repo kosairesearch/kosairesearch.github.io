@@ -130,6 +130,11 @@ def ticker_name(code):
         except Exception:
             pass
     code = str(code or "").strip()
+    # GA4 가 앞의 0 을 떼고 줄 때가 있다. 2026-09-15 보고서에 "많이 열린 종목
+    # 37560" 이라고 찍혔다 — 037560(LG헬로비전)이다. 숫자만 있고 여섯 자리가
+    # 안 되면 앞을 0 으로 채우고 찾는다.
+    if code.isdigit() and len(code) < 6:
+        code = code.zfill(6)
     return _TICKER_NAMES.get(code) or code
 
 
