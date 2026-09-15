@@ -1150,17 +1150,26 @@ acList.addEventListener('click', e=>{
   if(row){ window.location.href='stock.html?ticker='+row.dataset.tk; }
 });
 input.addEventListener('keydown', e=>{
+  /* 한글은 자음·모음이 한 글자로 뭉칠 때까지 '조합 중'이고, 그동안 오는 키는
+     브라우저의 입력기가 먼저 쓴다. 조합 중인 키의 기본 동작을 여기서 막으면
+     맥·아이폰에서는 입력기가 그 키를 못 받아 조합이 굳은 채 남는다. 그래서
+     조합 중에는 기본 동작을 막지 않는다. keyCode 229 는 옛 브라우저가
+     '입력기가 쓰는 키'를 알리는 표시다. */
+  const composing = e.isComposing || e.keyCode===229;
   if(e.key==='Enter'){
-    e.preventDefault();
+    if(!composing) e.preventDefault();
     /* 화살표로 골라 둔 항목이 있으면 그것, 없으면 추천 목록 맨 위 종목으로 간다.
        전에는 골라 둔 것이 없으면 아무 일도 안 했다 — 이름을 치고 엔터를 눌렀는데
        화면이 그대로인 것이 제일 나쁘다. 맞는 종목이 없으면 검색 버튼과 같은
-       동작(아래 목록을 거르고 그리로 스크롤)을 한다. */
+       동작(아래 목록을 거르고 그리로 스크롤)을 한다.
+       엔터는 조합 중이라도 처리한다 — 조합 중인 글자까지 값에 이미 들어 있고,
+       기기에 따라 조합이 끝난 뒤 엔터가 다시 오지 않기 때문이다. */
     const pick = (acActive>=0 && acItems[acActive]) ? acItems[acActive] : searchStocks(input.value)[0];
     if(pick){ window.location.href='stock.html?ticker='+pick.ticker; }
     else if(input.value.trim()){ document.getElementById('searchBtn').click(); }
     return;
   }
+  if(composing && e.key!=='Escape') return;   /* 화살표는 조합이 끝난 뒤 다시 누르면 된다 */
   if(!acList.classList.contains('show')) return;
   if(e.key==='ArrowDown'){ e.preventDefault(); setActive(acActive+1); }
   else if(e.key==='ArrowUp'){ e.preventDefault(); setActive(acActive-1); }
