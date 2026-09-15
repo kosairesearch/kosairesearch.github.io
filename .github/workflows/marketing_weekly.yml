@@ -115,6 +115,8 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "GA4_PROPERTY_ID 시크릿: ${{ secrets.GA4_PROPERTY_ID && '등록됨' || '아직 없음' }}" \
             >> $GITHUB_STEP_SUMMARY
+          echo "MARKETING_SHEET_ID 시크릿: ${{ secrets.MARKETING_SHEET_ID && '등록됨' || '아직 없음 — 숫자를 구글 시트에 쌓으려면 scripts/marketing_sheet.py 맨 위 네 줄을 따라 하라' }}" \
+            >> $GITHUB_STEP_SUMMARY
 
       - name: GA4 능력 확인 (probe 를 켰을 때만)
         if: inputs.probe == true
@@ -178,3 +180,15 @@ jobs:
             echo ""
             cat /tmp/report.md
           } >> $GITHUB_STEP_SUMMARY
+
+      # ③ 숫자를 구글 시트에 한 줄 붙인다 — 시간이 갈수록 한 눈에 보이게.
+      #    ② 뒤에 두는 이유: 이번 주 보고가 올린 새 실험까지 실험 탭에 실린다.
+      #    시크릿이 없으면 조용히 건너뛴다. 못 붙이면 이 단계만 빨갛게 남고
+      #    보고는 그대로 나간다 — 조용히 넘어가서 한 주를 잃은 적이 있다(2026-09-14).
+      - name: ③ 시트에 붙인다
+        if: ${{ !cancelled() && inputs.setup != true && inputs.probe != true }}
+        continue-on-error: true
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+          MARKETING_SHEET_ID: ${{ secrets.MARKETING_SHEET_ID }}
+        run: python3 scripts/marketing_sheet.py
