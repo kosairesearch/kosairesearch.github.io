@@ -794,8 +794,9 @@ def show(doc):
         share = f"{ret / w['users'] * 100:.0f}%" if w["users"] else "—"
         act = ""
         if w.get("mau28") is not None:
-            st = f" · 습관 {w['stickiness']:.1f}%" if w.get("stickiness") is not None else ""
-            act = f"  28일 {w['mau28']:>5,} · 하루평균 {w.get('dauAvg') or 0:>5,.1f}{st}"
+            st = f" · DAU/MAU {w['stickiness']:.1f}%" if w.get("stickiness") is not None else ""
+            act = (f"  MAU {w['mau28']:>5,} · WAU {w.get('wau7') or 0:>5,}"
+                   f" · DAU {w.get('dauAvg') or 0:>5,.1f}{st}")
         log(f"  {w['week']}~{w['to'][5:]}  이용자 {w['users']:>5,}"
             f" (신규 {w['newUsers']:>5,} · 재방문 {ret:>5,} {share:>4})"
             f"  세션 {w['sessions']:>5,}  조회 {w['pageViews']:>6,}{act}")
