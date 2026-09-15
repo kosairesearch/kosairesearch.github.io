@@ -74,6 +74,10 @@ on:
       weeks:
         description: '몇 주치를 받을지'
         default: '12'
+      deep:
+        description: '요청한 주 전부를 자세히 받는다 — 옛 주의 유입처·기기·사람 수를 채울 때 한 번'
+        type: boolean
+        default: false
       send:
         description: '텔레그램으로도 보낼지 (평소엔 꺼 둔다 — 보고는 클로드 창으로 온다)'
         type: boolean
@@ -135,7 +139,8 @@ jobs:
           GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
         run: |
-          python3 scripts/ga4_data.py --weeks ${{ inputs.weeks || '12' }} --write --check
+          python3 scripts/ga4_data.py --weeks ${{ inputs.weeks || '12' }} --write --check \
+            ${{ inputs.deep == true && '--deep' || '' }}
 
       # 휴대폰으로 보고를 읽다가 "그거 했다" 를 누를 수 있어야 한다.
       # 터미널을 열어야만 표시할 수 있으면 실험 대장은 결국 안 쓰인다.

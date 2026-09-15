@@ -611,7 +611,7 @@ def probe(days=28):
     return out
 
 
-def collect(weeks=8, today=None):
+def collect(weeks=8, today=None, deep_all=False):
     """주간 숫자 + 건강 기록.
 
     건강 기록을 같이 돌려주는 이유는 다른 수집기와 같다 — 받는 쪽이
@@ -626,7 +626,10 @@ def collect(weeks=8, today=None):
 
     rows, problems = [], []
     for i, (mon, sun) in enumerate(bounds):
-        deep = i >= len(bounds) - 2      # 최근 두 주만 자세히
+        # 평소엔 최근 두 주만 자세히 — 주마다 열 몇 번씩 묻는 것이라. 옛 주의
+        # 자세한 것은 _merge 가 지키므로 매주 다시 받을 필요가 없다.
+        # deep_all 은 처음 한 번 옛 주를 채울 때만 켠다(--deep).
+        deep = deep_all or i >= len(bounds) - 2
         try:
             rows.append(one_week(client, prop, mon, sun, deep=deep))
         except Exception as ex:
@@ -696,9 +699,24 @@ def merge_save(doc, path=None):
 
 
 def _merge(prev, doc):
+    """이번에 받은 주를 기존 기록에 합친다.
+
+    같은 주가 이미 있으면 **덮지 않고 합친다.** 매주 최근 두 주만 자세히
+    (유입처·페이지·행동) 받으므로, 그대로 덮으면 3주 전부터의 자세한 것이
+    매주 지워진다. 실제로 그랬다 — 2026-09-15 에 시트를 채우고 보니 옛 주의
+    유입처·기기·사람 수가 전부 빈칸이었다. 새 기록에 있는 값은 새것으로
+    (GA4 가 며칠 뒤에 숫자를 살짝 고치기도 한다), 새 기록에 없는 칸은 옛것을
+    그대로 둔다.
+    """
     old = {w["week"]: w for w in (prev or {}).get("weeks") or []}
     for w in doc.get("weeks") or []:
-        old[w["week"]] = w
+        k = w["week"]
+        if k in old:
+            kept = dict(old[k])
+            kept.update(w)
+            old[k] = kept
+        else:
+            old[k] = w
     out = dict(doc)
     out["weeks"] = [old[k] for k in sorted(old)]
     # 이번에 코호트를 못 받았으면 지난번 것을 그대로 둔다. 못 받은 것을
@@ -730,6 +748,8 @@ def main():
     ap.add_argument("--probe", action="store_true",
                     help="GA4 에 뭘 물어볼 수 있는지 하나씩 확인한다")
     ap.add_argument("--json", action="store_true")
+    ap.add_argument("--deep", action="store_true",
+                    help="요청한 주 전부를 자세히 받는다 (처음 한 번 옛 주를 채울 때)")
     a = ap.parse_args()
 
     if a.whoami:
@@ -748,7 +768,7 @@ def main():
             print(json.dumps(out, ensure_ascii=False, indent=2))
         return 0
 
-    doc = collect(a.weeks)
+    doc = collect(a.weeks, deep_all=a.deep)
     if a.json:
         print(json.dumps(doc, ensure_ascii=False, indent=2))
     else:

@@ -80,6 +80,27 @@ with tempfile.TemporaryDirectory() as td:
     n = G.merge_save({"weeks": [{"week": "2026-09-21", "users": 40}]}, p)
     eq("깨진 파일이어도 새로 쓴다", n, 1)
 
+print("\n④-2 합칠 때 옛 주의 자세한 것을 지우지 않는다")
+# 2026-09-15. 매주 최근 두 주만 자세히 받는데 _merge 가 통째로 덮어서,
+# 3주 전부터의 유입처·기기·사람 수가 매주 지워지고 있었다.
+deep_old = {"weeks": [{"week": "2026-08-24", "to": "2026-08-30", "users": 427,
+                       "sources": [{"sessionSource": "naver", "sessions": 300}],
+                       "devices": [{"deviceCategory": "mobile", "totalUsers": 250}],
+                       "_missing": {"tickers": "400"}}]}
+shallow_new = {"weeks": [{"week": "2026-08-24", "to": "2026-08-30", "users": 430}]}
+m2 = G._merge(deep_old, shallow_new)
+eq("숫자는 새것으로", m2["weeks"][0]["users"], 430)
+ok("유입처는 남는다", m2["weeks"][0].get("sources") == deep_old["weeks"][0]["sources"])
+ok("기기도 남는다", "devices" in m2["weeks"][0])
+deep_new = {"weeks": [{"week": "2026-08-24", "to": "2026-08-30", "users": 431,
+                       "sources": [{"sessionSource": "google", "sessions": 5}]}]}
+m3 = G._merge(deep_old, deep_new)
+eq("새 기록에 자세한 것이 있으면 그것이 이긴다",
+   m3["weeks"][0]["sources"], deep_new["weeks"][0]["sources"])
+ok("새 기록에 없는 칸은 여전히 옛것", "devices" in m3["weeks"][0])
+m4 = G._merge({}, shallow_new)
+eq("옛 기록이 없으면 그냥 들어간다", m4["weeks"][0]["users"], 430)
+
 print("\n⑤ 열쇠가 없으면 — 조용히 0 을 돌려주지 않는다")
 import os
 _save = {k: os.environ.pop(k, None) for k in ("GCP_SA_KEY", "GOOGLE_APPLICATION_CREDENTIALS")}
