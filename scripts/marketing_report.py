@@ -990,6 +990,14 @@ def exp_block(exp, fresh=None, done=None):
     return "\n".join(L)
 
 
+def already_reported(cur_week, box=None):
+    """이 주의 보고서를 전에 쓴 적이 있나. 있으면 다시 쓰는 것이다."""
+    if box is None:
+        import ga4_store
+        box = ga4_store.load("reports", {"items": []})
+    return any(x.get("week") == cur_week for x in (box or {}).get("items") or [])
+
+
 def generate(prompt):
     import anthropic
     key = os.getenv("ANTHROPIC_API_KEY")
@@ -1085,8 +1093,16 @@ def main():
 
     # ② 모델이 낸 새 제안을 대장에 올린다. 모양이 안 맞으면 그냥 버린다 —
     #    보고서가 못 나가는 것보다 제안 하나를 잃는 편이 낫다.
+    #
+    #    같은 주를 다시 쓸 때는 올리지 않는다. 제안은 '새 주의 숫자' 에서
+    #    나와야 하는데, 옛 주를 채우거나 시트를 다시 붙이느라 같은 주를
+    #    세 번 돌린 날(2026-09-15) 대장에 exp_4·exp_5 가 연달아 생겼다.
+    #    숫자는 그대로인데 제안만 늘면 사장에게는 잔소리다.
     text, got = take_proposal(text)
     fresh = None
+    if got and already_reported(cur_week=weeks[-1].get("week")):
+        log("· 같은 주를 다시 쓴 것이라 새 제안은 올리지 않는다")
+        got = None
     if got:
         fresh, why = experiments.propose(exp, got["제목"], got["이유"],
                                          got["지표"], got["할일"], weeks[-1])
