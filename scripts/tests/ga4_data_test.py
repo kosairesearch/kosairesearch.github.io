@@ -196,10 +196,13 @@ finally:
 print("⑧ 업계 표준 지표 — 한 달에 온 사람(MAU)·하루 평균(DAU)·습관을 한 주에 붙인다")
 _run0 = G._run
 try:
+    asked = []
+
     def fake_run(client, prop, start, end, metrics, dimensions=None, limit=25, order=None,
                  event_filter=None):
         if "active28DayUsers" in metrics:
-            return [{"active28DayUsers": 1200, "active7DayUsers": 446}]
+            asked.append((start, end))
+            return [{"active28DayUsers": 1200, "active7DayUsers": 440}]
         if dimensions == ["date"]:
             # 아무도 안 온 날(이틀)은 줄이 안 온다 — 그래도 7 로 나눠야 한다.
             return [{"date": d, "activeUsers": n}
@@ -214,7 +217,8 @@ try:
     G._run = fake_run
     row = G.one_week(None, "p", datetime.date(2026, 9, 7), datetime.date(2026, 9, 13))
     eq("지난 28일 동안 온 사람", row.get("mau28"), 1200)
-    eq("지난 7일 동안 온 사람", row.get("wau7"), 446)
+    eq("지난 7일 동안 온 사람", row.get("wau7"), 440)
+    eq("굴러가는 지표는 그 주 일요일 하루로만 묻는다", asked, [("2026-09-13", "2026-09-13")])
     eq("하루 평균은 온 날만이 아니라 7일로 나눈다", row.get("dauAvg"), 50.0)
     eq("습관 = 하루 평균 ÷ 한 달 × 100", row.get("stickiness"), 4.2)
     ok("실패 표시가 없다", "active" not in row.get("_missing", {}))
@@ -230,6 +234,31 @@ try:
     ok("지표가 안 되면 그 칸만 비운다", row.get("mau28") is None and row.get("stickiness") is None)
     ok("주 전체는 살아 있다", row.get("users") == 446)
     ok("왜 비었는지 남긴다", "not a valid metric" in row.get("_missing", {}).get("active", ""))
+
+    # 2026-09-15 probe 에서 본 것 — 여러 날을 물으면 날마다 더한 값이 온다.
+    # 그런 값이 오면(7일짜리가 방문자보다 훨씬 크면) 믿지 않고 비운다.
+    def summed_run(client, prop, start, end, metrics, dimensions=None, limit=25, order=None,
+                   event_filter=None):
+        if "active28DayUsers" in metrics:
+            return [{"active28DayUsers": 10500, "active7DayUsers": 3080}]
+        return fake_run(client, prop, start, end, metrics, dimensions, limit, order, event_filter)
+    G._run = summed_run
+    row = G.one_week(None, "p", datetime.date(2026, 9, 7), datetime.date(2026, 9, 13))
+    ok("7일짜리가 방문자보다 훨씬 크면 버린다",
+       row.get("mau28") is None and row.get("wau7") is None and row.get("stickiness") is None,
+       str({k: row.get(k) for k in ("mau28", "wau7", "dauAvg", "stickiness")}))
+    ok("이유를 남긴다", "더한 값" in row.get("_missing", {}).get("active", ""),
+       row.get("_missing"))
+
+    def upside_down(client, prop, start, end, metrics, dimensions=None, limit=25, order=None,
+                    event_filter=None):
+        if "active28DayUsers" in metrics:
+            return [{"active28DayUsers": 300, "active7DayUsers": 440}]
+        return fake_run(client, prop, start, end, metrics, dimensions, limit, order, event_filter)
+    G._run = upside_down
+    row = G.one_week(None, "p", datetime.date(2026, 9, 7), datetime.date(2026, 9, 13))
+    ok("28일이 7일보다 작으면 버린다", row.get("mau28") is None and "말이 안 된다" in
+       row.get("_missing", {}).get("active", ""), row.get("_missing"))
 finally:
     G._run = _run0
 
