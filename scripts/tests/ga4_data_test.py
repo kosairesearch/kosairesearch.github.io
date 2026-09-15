@@ -116,7 +116,12 @@ finally:
             os.environ[k] = v
 
 print("\n⑥ 페이지 이름표")
-ok("홈은 두 주소 다 같은 이름", G.PAGE_NAMES["/"] == G.PAGE_NAMES["/index.html"])
+ok("첫 화면은 두 주소 다 같은 이름", G.PAGE_NAMES["/"] == G.PAGE_NAMES["/index.html"])
+# Home.html 은 옛 주소가 아니라 리포트 홈이다(메뉴의 '홈'). 2026-09-15 에 '구 주소' 라고
+# 적어 둔 이름표 때문에 보고서가 "옛 북마크에 갇혔다" 고 잘못 읽었다.
+ok("리포트 홈을 옛 주소라고 부르지 않는다", "구" not in G.PAGE_NAMES["/Home.html"]
+   and "옛" not in G.PAGE_NAMES["/Home.html"])
+ok("첫 화면과 리포트 홈은 다른 이름", G.PAGE_NAMES["/"] != G.PAGE_NAMES["/Home.html"])
 ok("브리핑 이름이 있다", G.PAGE_NAMES.get("/brief.html") == "모닝 브리핑")
 # GA4 가 앞의 0 을 떼고 준 종목 번호 — 2026-09-15 보고서에 "37560 1회" 로 찍혔다.
 G._TICKER_NAMES = {"037560": "LG헬로비전", "005930": "삼성전자"}
