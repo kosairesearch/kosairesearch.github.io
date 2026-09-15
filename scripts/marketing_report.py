@@ -463,6 +463,11 @@ def metrics_block(doc, today=None):
     L.append(_line("├ 처음", cur.get("newUsers"), (prev or {}).get("newUsers"), "명"))
     L.append(_line("└ 다시 온", cur.get("returningUsers"),
                    (prev or {}).get("returningUsers"), "명"))
+    # 처음 + 다시 온 ≠ 방문자. 같은 주에 처음 오고 또 온 사람은 GA4 가
+    # 양쪽에 다 넣는다. 2026-09-15 에 사장이 "402+76 인데 왜 446이냐" 고
+    # 물었다 — ├ └ 모양이 둘을 더하면 방문자가 된다고 말하고 있었다.
+    L.append("     └ 처음 온 사람이 그 주에 또 오면 양쪽에 다 들어갑니다."
+             " 둘을 더하면 방문자보다 큽니다.")
     r_now = _rate(cur.get("returningUsers"), cur.get("users"))
     r_bef = _rate((prev or {}).get("returningUsers"), (prev or {}).get("users")) if prev else None
     if r_now is not None:
