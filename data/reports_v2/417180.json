@@ -328,28 +328,35 @@
    }
   ],
   "valuation": {
-   "price": 4550,
+   "price": 4250,
    "mcap": 0.0196,
-   "shares": 4309215,
+   "shares": 5714889,
    "total_shares": 3509724,
    "wavg_shares": null,
    "per": null,
    "eps": null,
-   "pbr": 0.513,
-   "bps": 8869,
+   "pbr": null,
+   "bps": null,
    "roe_ttm": 11.3,
    "ttm_window": "2025Q1~2025Q4",
    "ttm_np_owner": 3511556888,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "순이익÷주식수",
-   "pbr_krx": 0.51,
-   "bps_krx": 8876.0,
+   "pbr_krx": null,
+   "bps_krx": null,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
    "div": 0.0,
    "hidden": {
     "eps": "ref_mismatch"
+   },
+   "shares_patched": {
+    "on": "2026-09-15",
+    "was": 4309215,
+    "now": 5714889,
+    "factor": null,
+    "why": "주식수가 배수로 안 떨어진다(증자 등) — 자본을 다시 받아야 해서 값을 숨긴다"
    }
   }
  }
