@@ -337,10 +337,51 @@ def one_week(client, prop, mon, sun, deep=False):
     nvr = _run(client, prop, s, e, ["totalUsers"], ["newVsReturning"], limit=10)
     buckets = {r.get("newVsReturning", ""): r.get("totalUsers", 0) for r in nvr}
 
+    # 업계 표준 지표 — 크기와 습관. 사장이 "DAU·MAU 가 뭐냐, 재방문율에 안
+    # 쓰냐" 고 물었다(2026-09-15). 업계가 쓰는 말 그대로 받는다.
+    #   active28DayUsers   그 주 일요일 기준 지난 28일 동안 온 사람 = MAU
+    #   active7DayUsers    그 주 일요일 기준 지난 7일 동안 온 사람 = WAU
+    #   activeUsers × date 하루하루 온 사람 → 7일 평균이 DAU
+    #   습관(stickiness) = DAU ÷ MAU. 10% 면 한 달에 3일쯤 온다는 뜻.
+    #
+    # 조심 — active-N-day 지표는 반드시 하루짜리 범위로 묻는다.
+    # 날짜 차원 없이 여러 날을 물으면 GA4 가 날마다의 값을 전부 더해서 준다.
+    # 2026-09-15 probe: 29일 범위에서 active7DayUsers 11,927 ·
+    # active28DayUsers 43,796 — 한 달 방문자가 1,600명대인 사이트다.
+    # 그래서 그 주 일요일 하루(e~e)만 묻는다. 그러면 일요일에서 N일을
+    # 거슬러 센 값이 온다. 7일짜리는 우리 '방문자' 와 거의 같아야 한다 —
+    # 그보다 훨씬 크면 더해진 값이니 버린다.
+    # 실패해도 주 전체를 잃지 않게 따로 감싼다.
+    mau = wau7 = dau = stick = None
+    users_wk = core.get("totalUsers", 0)
+    try:
+        act = _run(client, prop, e, e, ["active28DayUsers", "active7DayUsers"])
+        act = act[0] if act else {}
+        mau, wau7 = act.get("active28DayUsers"), act.get("active7DayUsers")
+        if wau7 and users_wk and wau7 > users_wk * 1.2:
+            raise ValueError(f"active7DayUsers {wau7} > 방문자 {users_wk} — 날마다 더한 값이다")
+        if mau and wau7 and mau < wau7:
+            raise ValueError(f"active28DayUsers {mau} < active7DayUsers {wau7} — 말이 안 된다")
+        daily = _run(client, prop, s, e, ["activeUsers"], ["date"], limit=7)
+        days = [r.get("activeUsers", 0) for r in daily]
+        # 아무도 안 온 날은 줄이 안 온다. 그래도 그 날은 0 으로 쳐서 7 로 나눈다.
+        ndays = (sun - mon).days + 1
+        dau = round(sum(days) / ndays, 1) if days else None
+        stick = round(dau / mau * 100, 1) if (dau and mau) else None
+    except Exception as ex:
+        mau = wau7 = dau = stick = None
+        active_err = f"{type(ex).__name__}: {str(ex)[:120]}"
+    else:
+        active_err = None
+
     row = {
         "week": mon.isoformat(),
         "to": sun.isoformat(),
         "users": core.get("totalUsers", 0),
+        "mau28": mau,
+        "wau7": wau7,
+        "dauAvg": dau,
+        "stickiness": stick,
         "newUsers": core.get("newUsers", 0),
         "returningUsers": buckets.get("returning", 0),
         "sessions": core.get("sessions", 0),
@@ -348,6 +389,8 @@ def one_week(client, prop, mon, sun, deep=False):
         "pageViews": core.get("screenPageViews", 0),
         "avgSessionSec": round(core.get("averageSessionDuration", 0) or 0),
     }
+    if active_err:
+        row.setdefault("_missing", {})["active"] = active_err
     if deep:
         row["channels"] = _run(client, prop, s, e, ["sessions", "totalUsers"],
                                ["sessionDefaultChannelGroup"], limit=12,
@@ -540,6 +583,11 @@ PROBE_METRICS = [
     "bounceRate", "engagementRate", "screenPageViews", "screenPageViewsPerSession",
     "averageSessionDuration", "userEngagementDuration", "eventCount",
     "keyEvents", "sessionsPerUser", "eventCountPerUser",
+    # 업계 표준 — 크기(DAU·WAU·MAU)와 습관(DAU/MAU). 2026-09-15 에 사장이
+    # "DAU, MAU 는 뭐냐, 재방문율에 안 쓰냐" 고 물었다. 구글 문서가 이 환경에서
+    # 안 열려서 이름이 맞는지는 여기서 GA4 에 직접 물어 확인한다.
+    "active1DayUsers", "active7DayUsers", "active28DayUsers",
+    "dauPerMau", "dauPerWau", "wauPerMau",
 ]
 PROBE_DIMENSIONS = [
     "pagePath", "pageTitle", "landingPage", "landingPagePlusQueryString",
@@ -564,10 +612,18 @@ def probe(days=28):
     start = end - datetime.timedelta(days=days)
     rng = [DateRange(start_date=start.isoformat(), end_date=end.isoformat())]
 
+    # 굴러가는(rolling) 지표는 날짜 차원 없이 여러 날을 물으면 날마다의 값이
+    # 더해져 온다(2026-09-15 확인 — 29일에 active28DayUsers 43,796). 그래서
+    # 이것들은 마지막 날 하루로 묻는다. 수집(one_week)도 같은 이유로 그렇게 한다.
+    ROLLING = {"active1DayUsers", "active7DayUsers", "active28DayUsers",
+               "dauPerMau", "dauPerWau", "wauPerMau"}
+    rng_last = [DateRange(start_date=end.isoformat(), end_date=end.isoformat())]
+
     def try_one(metrics, dimensions):
         try:
+            one_day = bool(set(metrics) & ROLLING)
             r = client.run_report(RunReportRequest(
-                property=prop, date_ranges=rng,
+                property=prop, date_ranges=rng_last if one_day else rng,
                 metrics=[Metric(name=m) for m in metrics],
                 dimensions=[Dimension(name=d) for d in dimensions], limit=3))
             rows = len(r.rows)
@@ -576,7 +632,7 @@ def probe(days=28):
                 sample = r.rows[0].dimension_values[0].value[:40]
             elif r.rows:
                 sample = r.rows[0].metric_values[0].value[:20]
-            return True, f"{rows}행 {sample}"
+            return True, f"{rows}행 {sample}" + ("  (마지막 날 하루 기준)" if one_day else "")
         except Exception as e:
             return False, f"{type(e).__name__}: {str(e)[:90]}"
 
@@ -731,9 +787,13 @@ def show(doc):
     for w in doc.get("weeks") or []:
         ret = w["returningUsers"]
         share = f"{ret / w['users'] * 100:.0f}%" if w["users"] else "—"
+        act = ""
+        if w.get("mau28") is not None:
+            st = f" · 습관 {w['stickiness']:.1f}%" if w.get("stickiness") is not None else ""
+            act = f"  28일 {w['mau28']:>5,} · 하루평균 {w.get('dauAvg') or 0:>5,.1f}{st}"
         log(f"  {w['week']}~{w['to'][5:]}  이용자 {w['users']:>5,}"
             f" (신규 {w['newUsers']:>5,} · 재방문 {ret:>5,} {share:>4})"
-            f"  세션 {w['sessions']:>5,}  조회 {w['pageViews']:>6,}")
+            f"  세션 {w['sessions']:>5,}  조회 {w['pageViews']:>6,}{act}")
     if not hs.get("ok", True):
         for p in hs.get("problems") or []:
             log(f"  ⚠️ {p}")

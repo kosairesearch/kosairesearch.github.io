@@ -40,6 +40,9 @@ METRICS = {
     "signUp": "회원가입 건수",
     "signUpRate": "가입 전환율(%)",
     "watchlistAdd": "관심종목 담기",
+    "mau28": "한 달에 온 사람 수(MAU)",
+    "dauAvg": "하루 평균 온 사람 수(DAU)",
+    "stickiness": "습관 — 하루÷한 달(%)",
 }
 STATUS = ("제안됨", "진행중", "끝남", "버림")
 
@@ -123,7 +126,7 @@ def propose(doc, title, why, metric, action, week):
     return item, None
 
 
-RATE_METRICS = ("returnRate", "engagedRate", "signUpRate")
+RATE_METRICS = ("returnRate", "engagedRate", "signUpRate", "stickiness")
 
 
 def threshold_pct(base):

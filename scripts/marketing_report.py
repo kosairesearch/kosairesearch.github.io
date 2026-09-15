@@ -488,6 +488,19 @@ def metrics_block(doc, today=None):
         L.append("     └ 이 폭 안의 움직임은 우연일 수 있습니다. 밖으로 나간 것만 뜻이 있습니다.")
     L.append("")
 
+    # 업계 표준 — 크기(MAU·DAU)와 습관(DAU÷MAU). 사장이 "DAU·MAU 가 뭐냐" 고
+    # 물었다(2026-09-15). 마케팅 회사·투자자가 제일 먼저 묻는 숫자다.
+    if cur.get("mau28") is not None:
+        L.append("■ 한 달 크기와 습관 (업계 말로 MAU · DAU)")
+        L.append(_line("지난 28일 동안 온 사람", cur.get("mau28"), (prev or {}).get("mau28"), "명"))
+        L.append(_line("하루 평균 온 사람", cur.get("dauAvg"), (prev or {}).get("dauAvg"), "명"))
+        st, stb = cur.get("stickiness"), (prev or {}).get("stickiness")
+        if st is not None:
+            tail = f"  {_pp(st, stb)}  (앞주 {stb:.1f}%)" if stb is not None else ""
+            L.append(f"  {_pad('습관', 16)}{st:.1f}%{tail}")
+            L.append("     └ 하루 평균 온 사람 ÷ 한 달에 온 사람. 10%면 한 달에 3일쯤 온다는 뜻입니다.")
+        L.append("")
+
     L.append("■ 얼마나 봤나")
     L.append(_line("방문 횟수", cur.get("sessions"), (prev or {}).get("sessions"), "회"))
     L.append(_line("페이지 조회", cur.get("pageViews"), (prev or {}).get("pageViews"), "회"))
@@ -914,6 +927,7 @@ PROMPT = """아래는 KOSAI 사이트의 지난주 숫자다. 산수는 이미 �
 고를 수 있는 지표 (이 중 하나만, 철자 그대로):
   users returningUsers returnRate sessions pageViews
   engagedRate avgSessionSec signUp signUpRate watchlistAdd
+  mau28 dauAvg stickiness
 
 붙이지 말아야 할 때 — 대장에 이미 같은 제안이 있을 때, 이번 주 숫자에서
 새로 나온 것이 없을 때. 억지로 만드는 것보다 안 내는 것이 낫다."""
