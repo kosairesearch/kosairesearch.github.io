@@ -1133,6 +1133,14 @@ function renderAC(){
   acList.classList.add('show'); input.setAttribute('aria-expanded','true');
 }
 function closeAC(){ acList.classList.remove('show'); input.setAttribute('aria-expanded','false'); acActive=-1; }
+/* 종목 페이지로 넘어가기 전에 검색창의 초점을 뗀다.
+   한글은 자음·모음이 한 글자로 뭉치는 '조합 중'에 오는 엔터로 여기서
+   바로 페이지를 옮기면, 입력기가 조합을 끝맺지 못한 채 화면이 떠난다.
+   그 화면이 뒤로가기로 캐시에서 되살아나면 조합이 굳은 채 남아서, 검색창에
+   한글이 안 쳐지고 영어만 쳐지는 일이 있었다(실제로 '삼성' 치고 엔터 →
+   뒤로가기 → 한글 안 됨). 초점을 떼면 입력기가 조합을 정상으로 끝내고
+   정리하므로, 넘어가기 직전에 blur() 한 번을 둔다. */
+function goStock(tk){ try{ input.blur(); }catch(e){} window.location.href='stock.html?ticker='+tk; }
 function setActive(n){
   const els=[...acList.querySelectorAll('.ac-item')]; if(!els.length) return;
   acActive=(n+els.length)%els.length;
@@ -1147,7 +1155,7 @@ acList.addEventListener('click', e=>{
   if(x){ e.preventDefault(); e.stopPropagation(); setRecent(getRecent().filter(r=>r.t!==x.dataset.tk)); renderRecent(); return; }
   if(e.target.closest('#acClear')){ e.preventDefault(); setRecent([]); closeAC(); return; }
   const row=e.target.closest('.ac-recent');
-  if(row){ window.location.href='stock.html?ticker='+row.dataset.tk; }
+  if(row){ goStock(row.dataset.tk); }
 });
 input.addEventListener('keydown', e=>{
   /* 한글은 자음·모음이 한 글자로 뭉칠 때까지 '조합 중'이고, 그동안 오는 키는
@@ -1165,7 +1173,7 @@ input.addEventListener('keydown', e=>{
        엔터는 조합 중이라도 처리한다 — 조합 중인 글자까지 값에 이미 들어 있고,
        기기에 따라 조합이 끝난 뒤 엔터가 다시 오지 않기 때문이다. */
     const pick = (acActive>=0 && acItems[acActive]) ? acItems[acActive] : searchStocks(input.value)[0];
-    if(pick){ window.location.href='stock.html?ticker='+pick.ticker; }
+    if(pick){ goStock(pick.ticker); }
     else if(input.value.trim()){ document.getElementById('searchBtn').click(); }
     return;
   }
@@ -1176,6 +1184,12 @@ input.addEventListener('keydown', e=>{
   else if(e.key==='Escape'){ closeAC(); }
 });
 document.addEventListener('click', e=>{ if(!e.target.closest('.search-wrap')) closeAC(); });
+/* 뒤로가기로 이 화면이 캐시에서 통째로 되살아나는 경우(bfcache)의 안전망.
+   조합 중에 떠났던 흔적이 남아 검색창 입력기가 굳어 있을 수 있으므로,
+   초점을 떼고 목록을 닫아 깨끗한 상태로 되돌린다. 다시 누르면 입력기가
+   새로 잡혀 한글이 정상으로 돌아온다. (persisted 가 아닐 때는 새로 그린
+   화면이라 할 일이 없다.) */
+window.addEventListener('pageshow', e=>{ if(e.persisted){ try{ input.blur(); }catch(_){} closeAC(); } });
 
 document.getElementById('searchBtn').addEventListener('click', ()=>{
   renderReports(input.value);
