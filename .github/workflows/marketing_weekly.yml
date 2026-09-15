@@ -78,6 +78,10 @@ on:
         description: '요청한 주 전부를 자세히 받는다 — 옛 주의 유입처·기기·사람 수를 채울 때 한 번'
         type: boolean
         default: false
+      sheet:
+        description: '시트만 다시 붙인다 — 숫자를 새로 받지도, 보고서를 쓰지도 않는다'
+        type: boolean
+        default: false
       send:
         description: '텔레그램으로도 보낼지 (평소엔 꺼 둔다 — 보고는 클로드 창으로 온다)'
         type: boolean
@@ -133,7 +137,7 @@ jobs:
             >> $GITHUB_STEP_SUMMARY
 
       - name: ① GA4 에서 주간 숫자를 받는다
-        if: inputs.setup != true && inputs.probe != true
+        if: inputs.setup != true && inputs.probe != true && inputs.sheet != true
         id: fetch
         env:
           GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
@@ -166,7 +170,7 @@ jobs:
       # ①이 실패해도 여기까지는 온다. 받아 둔 지난 기록으로라도 보고서를
       # 쓸 수 있으면 쓴다 — 이번 주 숫자가 없으면 재료가 그렇게 말해 준다.
       - name: ② 보고서를 쓴다
-        if: ${{ !cancelled() && inputs.setup != true && inputs.probe != true }}
+        if: ${{ !cancelled() && inputs.setup != true && inputs.probe != true && inputs.sheet != true }}
         id: write
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
