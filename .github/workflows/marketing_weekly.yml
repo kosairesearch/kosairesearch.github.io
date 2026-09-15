@@ -90,7 +90,13 @@ on:
         description: "실행 표시 — 다 한 실험 번호 (예: exp_3). 다음 주부터 효과를 잽니다"
         default: ''
       dropped:
-        description: "안 하기로 한 실험 번호 (예: exp_4)"
+        description: "안 하기로 한 실험 번호 (예: exp_4 · 여럿이면 exp_1,exp_5)"
+        default: ''
+      why:
+        description: "버리는 이유 (dropped 와 같이) — 비우면 '사장이 안 하기로 함'"
+        default: ''
+      propose:
+        description: '새 실험 올리기 — JSON 목록 [{"title","why","metric","action"}]'
         default: ''
 
 permissions:
@@ -153,17 +159,22 @@ jobs:
       # 칸에 적힌 값은 env 로 넘긴다 — 쉘 명령줄에 그대로 붙이면 따옴표
       # 하나로 명령이 바뀐다.
       - name: 실험 대장에 표시 (번호를 적었을 때만)
-        if: ${{ !cancelled() && (inputs.started != '' || inputs.dropped != '') }}
+        if: ${{ !cancelled() && (inputs.started != '' || inputs.dropped != '' || inputs.propose != '') }}
         env:
           GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
           STARTED: ${{ inputs.started }}
           DROPPED: ${{ inputs.dropped }}
+          WHY: ${{ inputs.why }}
+          PROPOSE: ${{ inputs.propose }}
         run: |
           if [ -n "$STARTED" ]; then
             python3 scripts/experiments.py --start "$STARTED"
           fi
           if [ -n "$DROPPED" ]; then
-            python3 scripts/experiments.py --drop "$DROPPED" --why "사장이 안 하기로 함"
+            python3 scripts/experiments.py --drop "$DROPPED" --why "${WHY:-사장이 안 하기로 함}"
+          fi
+          if [ -n "$PROPOSE" ]; then
+            python3 scripts/experiments.py --propose "$PROPOSE"
           fi
           python3 scripts/experiments.py --list 2>&1 | tee -a $GITHUB_STEP_SUMMARY
 

@@ -21,6 +21,7 @@
 import argparse
 import datetime
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -241,8 +242,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--list", action="store_true")
     ap.add_argument("--start", help="실행했다고 표시할 실험 id")
-    ap.add_argument("--drop", help="버릴 실험 id")
+    ap.add_argument("--drop", help="버릴 실험 id (쉼표로 여럿: exp_1,exp_5)")
     ap.add_argument("--why", default="", help="버리는 이유")
+    ap.add_argument("--propose",
+                    help='새 실험을 올린다 — JSON 목록 [{"title","why","metric","action"}] 또는 그 파일 경로')
     a = ap.parse_args()
 
     doc = load()
@@ -262,15 +265,51 @@ def main():
         log(f"✅ {it['id']} 진행중 · 기준 {it['metricLabel']}={it['baseValue']}")
         return 0
     if a.drop:
-        it = next((x for x in doc["items"] if x["id"] == a.drop), None)
-        if not it:
-            log(f"❌ {a.drop} 가 없다")
+        # 여럿을 한 번에 버릴 수 있다 — 2026-09-15 에 exp_1·exp_5 가 이미 사이트에
+        # 있던 것으로 드러나 둘을 같은 이유로 버려야 했다.
+        ids = [s.strip() for s in a.drop.split(",") if s.strip()]
+        missing = []
+        for i in ids:
+            it = next((x for x in doc["items"] if x["id"] == i), None)
+            if not it:
+                missing.append(i)
+                continue
+            it["status"] = "버림"
+            it["why_dropped"] = a.why
+            log(f"✅ {i} 버림" + (f" — {a.why}" if a.why else ""))
+        if len(missing) < len(ids):
+            save(doc)
+        for i in missing:
+            log(f"❌ {i} 가 없다")
+        return 2 if missing else 0
+    if a.propose:
+        # 담당(클로드)이 근거를 들어 낸 실험을 대장에 올린다. 보고서를 새로 쓰지
+        # 않고도 올릴 수 있어야 한다 — 워크플로 입력으로 JSON 을 받는다.
+        raw = a.propose
+        if os.path.exists(raw):
+            with open(raw, encoding="utf-8") as f:
+                raw = f.read()
+        try:
+            items = json.loads(raw)
+        except Exception as e:
+            log(f"❌ JSON 이 아니다: {e}")
             return 2
-        it["status"] = "버림"
-        it["why_dropped"] = a.why
+        if isinstance(items, dict):
+            items = [items]
+        import ga4_store
+        weeks = ga4_store.load("weekly").get("weeks") or []
+        week = weeks[-1] if weeks else {}
+        bad = 0
+        for p in items:
+            item, err = propose(doc, str(p.get("title", "")), str(p.get("why", "")),
+                                str(p.get("metric", "")), str(p.get("action", "")), week)
+            if item:
+                log(f"✅ {item['id']} 제안됨 · {item['title']} · 기준 {item['metricLabel']}={item['baseValue']}")
+            else:
+                log(f"❌ {p.get('title', '?')}: {err}")
+                bad += 1
         save(doc)
-        log(f"✅ {it['id']} 버림")
-        return 0
+        return 2 if bad else 0
     show(doc)
     return 0
 
