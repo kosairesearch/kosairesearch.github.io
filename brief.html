@@ -436,8 +436,15 @@ KOSi18n.register({
   margin-bottom:12px}
 /* 목록이 아니라 문단 하나다. 항목으로 쪼개 늘어놓으면 사람이 쓴 글이 아니라
    기계가 뽑아낸 목록처럼 읽힌다는 피드백을 받았다. */
-.mb-sum-p{margin:0;font:400 15.5px/1.72 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
-@media (max-width:640px){.mb-sum{padding:16px}.mb-sum-p{font-size:15px}}
+/* 문단을 나눴으면 여백도 줘야 한다. 여기가 margin:0 이라 세 문단이 그대로
+   붙어 있었다. 데스크탑은 폭이 넓어 문단의 끝 줄이 짧게 끝나는 것으로 구분이
+   되지만, 휴대폰에서는 그 신호가 힘을 잃고 13줄이 한 덩어리로 보인다
+   (390px 기준 5·3·5줄 · 상자 393px). 본문 절의 문단이 24px 를 받는 것과
+   짝을 맞춰, 글자가 작은 만큼 줄인 값을 준다. */
+.mb-sum-p{margin:0 0 18px;font:400 15.5px/1.72 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
+/* 마지막 문단의 아래 여백은 뺀다 — 상자 안쪽 여백과 겹쳐 아래만 벌어진다. */
+.mb-sum-p:last-child{margin-bottom:0}
+@media (max-width:640px){.mb-sum{padding:16px}.mb-sum-p{font-size:15px;margin-bottom:16px}}
 
 /* 문단 사이가 좁아 글이 벽처럼 붙어 보인다는 피드백을 받았다. 줄높이는
    1.78 로 넉넉한데 문단 간격이 15px — 한 줄 높이(28px)의 절반이라
