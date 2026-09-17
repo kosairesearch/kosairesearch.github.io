@@ -1,0 +1,29 @@
+{
+ "batch_id": "msgbatch_01KhpA4ATkP4fcLAhNQD5hhA",
+ "created": "2026-09-18 00:27",
+ "model": "claude-opus-5",
+ "models": {
+  "086520": "claude-opus-5"
+ },
+ "tickers": [
+  "086520"
+ ],
+ "dataDate": "20260917",
+ "count": 1,
+ "usage": {
+  "claude-opus-5": {
+   "n": 1,
+   "in": 6023,
+   "cache_w": 83802,
+   "cache_r": 152348,
+   "out": 24472,
+   "search": 6,
+   "usd": 0.681
+  }
+ },
+ "collected": "2026-09-18 00:27",
+ "result": {
+  "ok": 1,
+  "fail": 0
+ }
+}

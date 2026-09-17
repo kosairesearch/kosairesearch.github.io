@@ -1,37 +1,17 @@
-=== 공시 트리거 v2 생성 Wed Sep 16 15:19:38 UTC 2026 · 대상 000270,208350 ===
-## 🤖 리포트 v2 Batch 제출 — 2개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
-- 정량 재사용 2개(숫자가 이미 최신·완전) · 다시 받을 0개
-- 모델 배분: claude-opus-5 1개 · claude-sonnet-5 1개
-- ✅ 배치 제출: msgbatch_01A7uVa7nzHy5RuFAjyP3i92 (2건) → data/batches_v2/msgbatch_01A7uVa7nzHy5RuFAjyP3i92.json
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-- ⏳ 시간 내 미완료 — 남은 배치는 collect_batch 가 회수한다
-- 아직 처리 중 — 여기서 끝낸다. collect_batch 가 회수한다(msgbatch_01A7uVa7nzHy5RuFAjyP3i92).
+=== 공시 트리거 v2 생성 Thu Sep 17 15:27:45 UTC 2026 · 대상 086520 ===
+## 🤖 리포트 v2 Batch 제출 — 1개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
+- 정량 재사용 1개(숫자가 이미 최신·완전) · 다시 받을 0개
+- 모델 배분: claude-opus-5 1개 · claude-sonnet-5 0개
+- ✅ 배치 제출: msgbatch_01KhpA4ATkP4fcLAhNQD5hhA (1건) → data/batches_v2/msgbatch_01KhpA4ATkP4fcLAhNQD5hhA.json
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 1/오류 0
+- msgbatch_01KhpA4ATkP4fcLAhNQD5hhA · 상태 ended · 처리 0/성공 1/오류 0/만료 0/취소 0 · 주문 2026-09-18 00:27
+
+✅ v2 회수 완료 · 성공 1/실패 0 → data/reports_v2/ (2563개)
+💵 claude-opus-5 1건 · 입력 6,023(캐시쓰기 83,802·읽기 152,348) · 출력 24,472 · 검색 6 → 약 $0.68 (장당 $0.681)
+✅ msgbatch_01KhpA4ATkP4fcLAhNQD5hhA 회수 완료 · 성공 1/실패 0
