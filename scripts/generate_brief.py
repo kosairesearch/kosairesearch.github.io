@@ -1899,7 +1899,13 @@ def main():
         if attempt == 2 and isinstance(cand, dict) and last_bad:
             # 1차 글은 틀이 멀쩡하고 검사에서만 걸렸다. 그 자리만 고친다 —
             # 하루에 글 한 편 값만 쓰자는 것이 이 자리의 목적이다.
-            repaired, usage = repair(cl, cand, last_bad)
+            try:
+                repaired, usage = repair(cl, cand, last_bad)
+            except Exception as e:
+                # 수리 호출 자체가 실패하면(통신·API) 글은 그대로 두고 포기한다.
+                # 예비 실행이 새로 쓴다. 여기서 터져 워크플로가 통째로 죽는 것보다 낫다.
+                log(f"⚠️ 수리 호출 실패: {type(e).__name__} {e}")
+                repaired, usage = 0, None
             spent.append(cost(usage, False, model=REPAIR_MODEL) or {})
             log(f"· 수리: {REPAIR_MODEL} 가 {repaired}곳을 고쳤다"
                 f" (${(spent[-1].get('usd') or 0):.3f})")
