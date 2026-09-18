@@ -363,6 +363,30 @@ ok("49자 — 2차에도 거부(여유를 넘었다)",
    has(G.check_headings(with_heads("반도체는 비켜갔다", "지수는 올랐다", "18일이 두 번을 받는다", _h49),
                         slack=G.HEAD_SLACK), "문장이다"))
 ok("여유는 4자로 고정", G.HEAD_SLACK == 4 and G.HEAD_MAX == 44)
+
+# ── 수리(repair): 1차 글이 검사에 걸리면 Opus 로 다시 쓰지 않고 걸린 자리만
+#    Sonnet 으로 고친다. 여기서는 API 없이 조각을 끼우는 부분만 본다. ──
+_b = copy.deepcopy(good)
+_b["lead"]["en"] = ""
+_paths = {p for p, _ in G._walk(_b)}
+ok("경로 목록에 lead.en 과 섹션 문단이 있다",
+   "lead.en" in _paths and any(p.endswith(".p0.ko") for p in _paths), str(sorted(_paths))[:200])
+_sid = _b["sections"][0]["id"]
+_n = G.apply_patch(_b, {"lead.en": "The Fed hiked; yields eased.",
+                        f"{_sid}.heading.ko": "새 제목",
+                        f"{_sid}.p0.en": "New first paragraph.",
+                        "없는.경로.ko": "버려야 한다", "title.ko": "   ", "summary.en": 42})
+ok("아는 경로 셋만 들어간다(모르는 경로·빈 값·글자 아닌 값은 버린다)", _n == 3, str(_n))
+ok("lead.en 이 채워졌다", _b["lead"]["en"] == "The Fed hiked; yields eased.")
+ok("섹션 제목·문단이 바뀌었다",
+   _b["sections"][0]["heading"]["ko"] == "새 제목" and _b["sections"][0]["paragraphs"][0]["en"] == "New first paragraph.")
+ok("다른 자리는 그대로", _b["sections"][0]["paragraphs"][0]["ko"] == good["sections"][0]["paragraphs"][0]["ko"])
+ok("patch 가 객체가 아니면 0", G.apply_patch(copy.deepcopy(good), ["x"]) == 0 and G.apply_patch(copy.deepcopy(good), None) == 0)
+_u = type("Usage", (), {"input_tokens": 20000, "output_tokens": 5000})()   # 아래 ⑬의 U() 와 같은 값
+ok("수리 모델은 Sonnet · 값이 그 단가로 계산된다 (2만/5천 토큰 → $0.135, Opus 면 $0.225)",
+   G.REPAIR_MODEL == "claude-sonnet-5" and abs(G.cost(_u, model="claude-sonnet-5")["usd"] - 0.135) < 1e-6
+   and abs(G.cost(_u)["usd"] - 0.225) < 1e-6, str(G.cost(_u, model="claude-sonnet-5")))
+ok("출력 한도 24,000 — 사고 토큰까지 담는다", G.MAX_TOKENS >= 24000)
 # 30자 상한이 "A는 올랐고 B는 내렸다" 식 짧은 대비 제목만 살아남게 했다.
 ok("35자 제목은 이제 통과",
    G.check_headings(with_heads("반도체는 비켜갔다", "지수는 올랐다", "18일이 두 번을 받는다",
@@ -731,7 +755,7 @@ ok("칸마다 글자 수를 배정하지 않는다",
    not any(x in p for x in ("약 700자", "약 650자", "약 600자")))
 # 칸별 배정은 없애되 전체 분량은 알려 줘야 한다. 목표를 모른 채 쓰다 상한을
 # 넘기면 거부 → 다시 쓰기가 되고, 최악이면 그날 발행이 막힌다.
-ok("전체 분량은 알려 준다", "3,200자 안에서" in p and "1,000자" in p)
+ok("전체 분량은 알려 준다 (상한 2,800자 · 하한 1,000자)", "길어도 2,800자" in p and "1,000자" in p)
 ok("상한을 넘기면 어떻게 되는지도 알려 준다", "발행되지 않는다" in p)
 ok("날마다 길이가 달라도 된다고 적는다", "같은 길이일 이유가 없다" in p)
 ok("휴장 전제를 알려 준다", "'오늘 장'을 준비하는 글이 아니다" in p)
