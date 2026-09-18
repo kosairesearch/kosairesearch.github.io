@@ -50,7 +50,15 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 KST = datetime.timezone(datetime.timedelta(hours=9))
 
 MODEL = os.getenv("BRIEF_MODEL", "claude-opus-5")
-MAX_TOKENS = int(os.getenv("BRIEF_MAX_TOKENS", "16000"))
+# 사고(thinking) 토큰도 이 한도 안에서 센다. 통과한 글이 9,500~11,600 토큰을
+# 썼는데 한도가 16,000 이면 재료가 많은 날 잘린다 — 잘린 JSON 은 repair 가
+# 억지로 닫아 빈 칸 투성이 글이 되고, 그건 거부돼 $0.3 가 날아간다. 쓴 만큼만
+# 내므로 한도를 올리는 데는 돈이 안 든다.
+MAX_TOKENS = int(os.getenv("BRIEF_MAX_TOKENS", "24000"))
+# 1차 글이 검사에 걸렸을 때 그 자리만 고치는 모델. 글 전체를 Opus 로 다시
+# 쓰면 $0.31, 걸린 자리만 Sonnet 으로 고치면 $0.05 안팎이다.
+REPAIR_MODEL = os.getenv("BRIEF_REPAIR_MODEL", "claude-sonnet-5")
+REPAIR_MAX_TOKENS = 8000
 USE_BATCH = os.getenv("BRIEF_USE_BATCH", "") == "1"
 BATCH_CUTOFF = int(os.getenv("BRIEF_BATCH_CUTOFF", "2400"))
 # 뉴스를 종목별로 받을 개수. 구글 뉴스는 1초에 여덟 번 때리면 503 을 준다.
@@ -81,7 +89,7 @@ USD_KRW = float(os.getenv("BRIEF_USD_KRW", "1400"))
 # 빈자리를 채우느라 매일 열두 재료를 다 훑었다(여덟 편 중 여덟 편). 길이가
 # 날마다 다른 것이 정상이다. 상한은 그대로 둔다 — 3,600자는 브리핑이 아니다.
 LEN_MIN, LEN_MAX = 1000, 3600
-LEN_WANT = (1200, 3000)
+LEN_WANT = (1200, 2800)
 # 설계 문서 1절: "4번(커버리지)은 전체의 25%를 넘지 않는다."
 COVERAGE_CAP = 0.25
 COVERAGE_HARD = 0.30      # 재시도 후에도 이걸 넘으면 발행하지 않는다
@@ -149,10 +157,12 @@ BANNED = [(re.compile(p, re.I), n) for p, n in [
 ]]
 
 SYSTEM = (
-    "당신은 한국 주식시장(코스피·코스닥)을 다루는 시니어 리서치 애널리스트입니다. "
-    "매일 장 시작 전에 발행되는 모닝 브리핑을 씁니다. "
+    "당신은 한국 주식시장(코스피·코스닥)을 오래 본 이코노미스트입니다. "
+    "매일 장 시작 전에 발행되는 모닝 브리핑을 씁니다. 시세를 읽어 주는 사람이 아니라, "
+    "무엇이 왜 움직였고 그래서 오늘 무엇을 봐야 하는지를 짧게 말하는 사람입니다. "
     "주어진 사실 블록에 있는 숫자만 사용하고, 없는 값은 추측하지 않습니다. "
-    "당신의 글은 한국어와 영어로 동시에 제공됩니다."
+    "이유도 사실 블록과 뉴스에 있는 것만 붙이고, 없으면 붙이지 않습니다. "
+    "당신의 글은 한국어와 영어로 동시에 제공되며, 영문을 비워 두면 발행되지 않습니다."
 )
 
 
@@ -715,10 +725,31 @@ RULES = """이 글이 하는 일
 문단이다. 나머지는 그 답에 붙는 이야기다. 어제 글(아래 '이미 쓴 글')의 첫 문단과
 같은 이야기로 시작하지 마라.
 
-다만 이건 '브리핑'이다. 아침에 읽는 글이니 길어도 3,200자 안에서 끝난다 —
-스크롤 두세 번이다. 하한은 없다시피 하다(1,000자). 그날 할 말이 적으면 1,200자로
-끝내라, 채우려고 늘리지 마라. 채우려고 늘린 글은 시세 낭독이 된다. 반대로 3,200자를
-넘어가면 브리핑이 아니라 리포트가 된다(3,600자를 넘으면 아예 발행되지 않는다).
+숫자와 이유 — 이코노미스트의 규칙
+
+너는 시세를 읽어 주는 사람이 아니다. 독자가 알아야 하는 것은 '무엇이 얼마나'가
+아니라 '무엇이 왜, 그래서 오늘 무엇을 보나'다.
+
+  · 이유가 있으면 한 구절로 붙인다 — "유가가 물러서며", "인텔과의 협상 보도가 나온
+    뒤", "연준이 올린 다음 날". 길게 풀지 않는다. 브리핑이다.
+  · 이유가 사실 블록·뉴스에 없으면 붙이지 않는다. 그냥 올랐다고 쓰고 넘어간다.
+    지어낸 이유 하나가 글 전체의 믿음을 깎는다. 비어 있는 것이 낫다.
+  · 숫자는 근거다. 한 문장에 두어 개면 족하다. "S&P 500 +1.14%, 나스닥 +1.69%,
+    다우 +0.61%" 처럼 셋을 차례로 적는 것은 시세표다 — 같은 방향이면 대표 하나,
+    갈렸으면 갈린 둘만. "숫자로 보면 …" 하고 시세를 나열하는 문장은 쓰지 않는다.
+  · 출처를 문장마다 달지 않는다. "연합뉴스는 …전했고 MBC는 …보도했다"는 기사
+    모음이지 브리핑이 아니다. 인용이 꼭 필요한 곳에서 한 번만 밝힌다.
+  · 중국·일본·홍콩 시장, 엔·위안, 해외 거시(일본은행·중국 지표·미국 고용·물가)는
+    한국 시장에 닿는 날에만 쓴다 — 닛케이가 크게 움직였거나, 엔이나 위안이 원화와
+    함께 밀렸거나, 중국 지표가 우리 수출 업종에 연결되는 날. 그런 날이 아니면
+    아시아 줄은 한 문장도 쓰지 않는다. 매일 넣으면 매일 같은 글이 된다.
+  · 쓸지 말지의 기준은 하나다 — 오늘 개장 전 독자가 이것을 알아야 하나. 아니면 뺀다.
+
+다만 이건 '브리핑'이다. 아침에 읽는 글이니 보통 1,400~2,400자, 길어도 2,800자
+안에서 끝난다 — 스크롤 두 번이다. 하한은 없다시피 하다(1,000자). 그날 할 말이
+적으면 1,200자로 끝내라, 채우려고 늘리지 마라. 채우려고 늘린 글은 시세 낭독이
+된다. 반대로 2,800자를 넘어가면 브리핑이 아니라 리포트가 된다(3,600자를 넘으면
+아예 발행되지 않는다).
 분량이 날마다 다른 것이 정상이다. 조용한 날과 시끄러운 날이 같은 길이일 이유가 없다.
 
 섹션은 필요한 만큼 만들고, 각 섹션에 짧은 영문 id 를 붙인다(us · oil · rates ·
@@ -761,7 +792,8 @@ chips · flows · calendar · fx … 그날 내용에 맞게). KOSAI 리포트�
 6. 시간 표현을 조심하라. 사실 블록에 '[표현 주의]' 가 적혀 있으면 '간밤'·'어젯밤'·
    '어제'를 쓸 수 없는 날이다. 미국은 화~금 아침에만 어젯밤에 열렸다.
 7. 영어는 번역투가 아니라 영문 기사로 읽히게 쓴다. 한국어와 같은 사실, 같은 순서.
-   종목 링크와 **굵게**는 영어에도 같이 넣는다.
+   종목 링크와 **굵게**는 영어에도 같이 넣는다. title·lead·summary 의 en 도 본문과
+   똑같이 채운다 — en 을 빈 문자열로 두면 그날 글은 발행되지 않는다.
 8. 요약(summary)은 이어지는 문장으로 쓴다. 줄바꿈·글머리표·번호를 쓰지 마라 —
    항목을 나눠 늘어놓으면 사람이 쓴 글이 아니라 기계가 뽑아낸 목록처럼 읽힌다.
    본문에 없는 사실을 요약에만 새로 쓰지 말고, 종목 링크와 굵게는 요약에 쓰지 않는다.
@@ -786,9 +818,10 @@ chips · flows · calendar · fx … 그날 내용에 맞게). KOSAI 리포트�
 
 ===JSON_START===
 {
-  "title": {"ko": "제목", "en": "headline"},
-  "lead":  {"ko": "리드", "en": "..."},
-  "summary": {"ko": "요약 한 문단 — 줄바꿈도 글머리표도 없이 이어지는 문장", "en": "..."},
+  "title": {"ko": "제목", "en": "English headline"},
+  "lead":  {"ko": "리드", "en": "English lead — same facts as ko, never empty"},
+  "summary": {"ko": "요약 한 문단 — 줄바꿈도 글머리표도 없이 이어지는 문장",
+              "en": "English summary — same facts as ko, never empty"},
   "sections": [
     {"id": "그날 내용에 맞는 짧은 영문 id", "heading": {"ko": "섹션 제목", "en": "..."},
      "paragraphs": [{"ko": "문단", "en": "paragraph"}]}
@@ -1061,6 +1094,99 @@ def _walk(brief):
         for i, p in enumerate(ps if isinstance(ps, list) else []):
             for lang in ("ko", "en"):
                 yield f"{sid}.p{i}.{lang}", _lang(p, lang)
+
+
+def _set_path(brief, path, value):
+    """_walk 가 내는 경로에 값을 쓴다. 성공하면 True.
+
+    수리(repair)가 돌려준 조각을 제자리에 넣을 때 쓴다. 경로는 _walk 와 같은
+    규칙이다 — title.ko · lead.en · {섹션id}.heading.ko · {섹션id}.p{n}.en.
+    """
+    parts = path.rsplit(".", 2)
+    if len(parts) == 2 and parts[0] in ("title", "lead", "summary") and parts[1] in ("ko", "en"):
+        if not isinstance(brief.get(parts[0]), dict):
+            brief[parts[0]] = {}
+        brief[parts[0]][parts[1]] = value
+        return True
+    if len(parts) == 3 and parts[2] in ("ko", "en"):
+        sid, what, lang = parts
+        secs = brief.get("sections")
+        for n, s in enumerate(secs if isinstance(secs, list) else []):
+            if not isinstance(s, dict) or (s.get("id") or f"#{n}") != sid:
+                continue
+            if what == "heading":
+                if not isinstance(s.get("heading"), dict):
+                    s["heading"] = {}
+                s["heading"][lang] = value
+                return True
+            m = re.fullmatch(r"p(\d+)", what)
+            ps = s.get("paragraphs")
+            if m and isinstance(ps, list):
+                i = int(m.group(1))
+                if i < len(ps) and isinstance(ps[i], dict):
+                    ps[i][lang] = value
+                    return True
+    return False
+
+
+def apply_patch(brief, patch):
+    """수리 결과({경로: 새 글})를 글에 넣는다. 넣은 자리 수를 돌려준다.
+
+    모르는 경로·빈 값은 버린다. 그래서 수리 모델이 엉뚱한 키를 내도 글이
+    깨지지 않는다 — 안 고쳐졌을 뿐이고, 그건 다음 검사에서 드러난다.
+    """
+    if not isinstance(patch, dict):
+        return 0
+    known = {p for p, _ in _walk(brief)}
+    n = 0
+    for k, v in patch.items():
+        if k in known and isinstance(v, str) and v.strip() and _set_path(brief, k, v.strip()):
+            n += 1
+    return n
+
+
+def repair(cl, brief, reasons):
+    """검사에 걸린 자리만 고친다 — 글 전체를 다시 쓰지 않는다.
+
+    왜. 1차 글이 거부되면 전에는 Opus 로 처음부터 다시 썼다($0.31). 그런데
+    거부 사유는 대개 '영문이 비었다'·'소제목이 길다'·'업종을 잘못 묶었다'
+    같은 한두 자리다. 그 자리만 Sonnet 에게 고치게 하면 $0.05 안팎이고,
+    잘 쓴 나머지 문단을 새 주사위에 걸지 않는다. 9/18 에 한 편 내려고 다섯 번
+    생성한 뒤에 만들었다.
+
+    돌려주는 것: (고친 자리 수, usage). 0 이면 부르는 쪽이 포기한다.
+    """
+    paths = [p for p, _ in _walk(brief)]
+    rules = RULES[RULES.index("지켜야 할 것"):RULES.index("출력 형식")]
+    prompt = (
+        "아래 모닝 브리핑(JSON)이 발행 전 검사에서 거부됐다. 거부 사유:\n"
+        + "\n".join(f"· {r}" for r in reasons)
+        + "\n\n고칠 자리만 고쳐라. 글 전체를 다시 쓰지 마라. 사유에 없는 자리는 손대지 마라.\n"
+        "출력은 JSON 객체 하나 — 키는 아래 경로 중 하나, 값은 그 자리에 들어갈 글 전체"
+        "(부분이 아니라 통째로).\n"
+        "쓸 수 있는 경로: " + ", ".join(paths) + "\n\n"
+        "고치는 법:\n"
+        "· '영문이 없다'·'en 가 비었다' → 그 자리의 한국어를 영문 기사처럼 옮긴다. 같은 사실,"
+        " 같은 순서, 같은 종목 링크([Name](005930))와 **굵게**.\n"
+        "· 한국어를 고쳤으면 대응하는 영문(같은 경로의 .en)도 같이 고친다.\n"
+        "· '제목이 …자' → 44자 이하로 줄인다. 그날 내용은 담는다.\n"
+        "· '업종이 다른 종목을 …묶었다' → 사유에 적힌 업종대로, 다르면 '옆 업종인' 처럼 다르다고 쓴다.\n"
+        "· '금지 표현' → 그 표현만 사실 병치로 바꾼다.\n"
+        "· '분량'·'커버리지 … 초과' → 지목된 쪽 문단을 줄인다. 새 사실은 넣지 않는다.\n"
+        "· 새 숫자·새 사실을 넣지 마라. 아래 규칙은 그대로 지킨다.\n\n"
+        + rules
+        + "\n===JSON_START===\n{\"경로\": \"새 글\"}\n===JSON_END===\n\n"
+        "고칠 글:\n" + json.dumps(brief, ensure_ascii=False)
+    )
+    msg = cl.messages.create(model=REPAIR_MODEL, max_tokens=REPAIR_MAX_TOKENS,
+                             thinking={"type": "adaptive"},
+                             messages=[{"role": "user", "content": prompt}])
+    try:
+        patch = parse(_text_of(msg))
+    except Exception as e:
+        log(f"⚠️ 수리 결과를 읽을 수 없다: {type(e).__name__} {e}")
+        return 0, msg.usage
+    return apply_patch(brief, patch), msg.usage
 
 
 BOLD_CODE = re.compile(r"\*\*([^*\n]{1,80})\*\*\s*\((\d{6})\)")
@@ -1666,10 +1792,10 @@ def save(brief, facts, meta, out_dir=OUT_DIR):
     return path
 
 
-def cost(usage, batch=False):
+def cost(usage, batch=False, model=None):
     if not usage:
         return None
-    pin, pout = PRICES.get(MODEL, (0.0, 0.0))
+    pin, pout = PRICES.get(model or MODEL, (0.0, 0.0))
     i = getattr(usage, "input_tokens", 0) or 0
     o = getattr(usage, "output_tokens", 0) or 0
     usd = (i * pin + o * pout) / 1e6
@@ -1767,29 +1893,45 @@ def main():
         log(f"   버린 돈  {len(spent)}회 생성 · ${usd:.3f} (약 {round(usd * USD_KRW):,}원)")
 
     brief, batched, usage, note = None, False, None, None
+    cand, last_bad, repaired = None, None, 0
+    gen_usage, gen_batched = None, False      # Opus 생성분만 — 수리 호출과 따로 센다
     for attempt in (1, 2):
-        text, usage, batched = generate(cl, build_prompt(facts, note))
-        spent.append(cost(usage, batched) or {})
-        try:
-            cand = parse(text)
-        except Exception as e:
-            note = f"JSON 을 읽을 수 없었다: {type(e).__name__} {e}"
-            log(f"⚠️ {attempt}차 파싱 실패 — {note}")
-            if attempt == 2:
-                bail(text, [note])
+        if attempt == 2 and isinstance(cand, dict) and last_bad:
+            # 1차 글은 틀이 멀쩡하고 검사에서만 걸렸다. 그 자리만 고친다 —
+            # 하루에 글 한 편 값만 쓰자는 것이 이 자리의 목적이다.
+            repaired, usage = repair(cl, cand, last_bad)
+            spent.append(cost(usage, False, model=REPAIR_MODEL) or {})
+            log(f"· 수리: {REPAIR_MODEL} 가 {repaired}곳을 고쳤다"
+                f" (${(spent[-1].get('usd') or 0):.3f})")
+            if not repaired:
+                bail(cand, last_bad + ["수리 결과를 적용하지 못했다"])
                 return 3
-            continue
-        # 틀부터 본다. 아래 수리 함수들(repair_links·normalize_links…)은
-        # 문단이 {"ko":…,"en":…} 인 줄 알고 도므로, 모양이 어긋나 있으면
-        # 검사기에 닿기도 전에 터진다. 실제로 그렇게 한 번 죽었다.
-        shape = _shape_bad(cand)
-        if shape:
-            note = "\n".join(f"· {x}" for x in shape)
-            log(f"⚠️ {attempt}차 틀이 어긋났다:\n{note}")
-            if attempt == 2:
-                bail(text, shape)
-                return 3
-            continue
+        else:
+            text, usage, batched = generate(cl, build_prompt(facts, note))
+            gen_usage, gen_batched = usage, batched
+            spent.append(cost(usage, batched) or {})
+            try:
+                cand = parse(text)
+            except Exception as e:
+                cand = None
+                note = f"JSON 을 읽을 수 없었다: {type(e).__name__} {e}"
+                log(f"⚠️ {attempt}차 파싱 실패 — {note}")
+                if attempt == 2:
+                    bail(text, [note])
+                    return 3
+                continue
+            # 틀부터 본다. 아래 수리 함수들(repair_links·normalize_links…)은
+            # 문단이 {"ko":…,"en":…} 인 줄 알고 도므로, 모양이 어긋나 있으면
+            # 검사기에 닿기도 전에 터진다. 실제로 그렇게 한 번 죽었다.
+            shape = _shape_bad(cand)
+            if shape:
+                cand = None
+                note = "\n".join(f"· {x}" for x in shape)
+                log(f"⚠️ {attempt}차 틀이 어긋났다:\n{note}")
+                if attempt == 2:
+                    bail(text, shape)
+                    return 3
+                continue
         n_fixed = repair_links(cand)
         if n_fixed:
             log(f"· **이름**(코드) 형식 {n_fixed}곳을 링크로 고쳤다")
@@ -1804,12 +1946,13 @@ def main():
             log(f"· 요약 {n_sum}곳에서 링크·강조·글머리표를 벗겨 한 문단으로 이었다")
         # 1차는 설계대로 25% 로 본다. 2차는 30% 까지 눈감아 준다 — 발행이
         # 안 되는 것보다는 커버리지가 조금 긴 게 낫다. 그 위는 발행하지 않는다.
+        # 소제목 길이 여유는 1차에도 준다 — 45자 하나로 $0.05 라도 더 쓸 이유가 없다.
         bad = validate(cand, strict_coverage=(attempt == 1), facts=facts,
-                       strict_text=(attempt == 1),
-                       head_slack=(0 if attempt == 1 else HEAD_SLACK))
+                       strict_text=(attempt == 1), head_slack=HEAD_SLACK)
         if not bad:
             brief = cand
             break
+        last_bad = bad
         note = "\n".join(f"· {x}" for x in bad)
         log(f"⚠️ {attempt}차 거부:\n{note}")
         if attempt == 2:
@@ -1817,12 +1960,15 @@ def main():
             return 3
 
     n, ratio = measure(brief)
-    c = cost(usage, batched)
+    c = cost(gen_usage, gen_batched)
     if c and len(spent) > 1:
-        # 2차에서 통과했으면 1차 글값도 나갔다. usd 는 통과한 글 한 편의 값이고,
-        # 그날 실제로 쓴 돈은 usdAll 이다. 콘솔 청구와 맞춰 볼 때는 이쪽을 본다.
+        # usd 는 Opus 가 쓴 글 한 편의 값이고, 그날 실제로 쓴 돈은 usdAll 이다
+        # (수리 호출이나 1차 실패분이 더해진다). 콘솔 청구와 맞춰 볼 때는 이쪽을 본다.
         c["attempts"] = len(spent)
         c["usdAll"] = round(sum(x.get("usd", 0) for x in spent), 4)
+        if repaired:
+            c["repaired"] = {"model": REPAIR_MODEL, "fields": repaired,
+                             "usd": spent[-1].get("usd")}
     meta = {"model": MODEL, "batched": batched, "chars": n,
             "coverageRatio": round(ratio, 3), "usage": c,
             "generatedAt": facts["generatedAt"]}
@@ -1840,8 +1986,11 @@ def main():
     if c:
         log(f"   비용  입력 {c['inputTokens']:,} / 출력 {c['outputTokens']:,} 토큰 · "
             f"${c['usd']} (약 {c['krw']:,}원)" + ("  ← 배치 반값" if batched else ""))
-        if c.get("attempts", 1) > 1:
-            log(f"   전체  {c['attempts']}회 생성 · ${c['usdAll']} — 1차는 거부돼 버렸다")
+        if c.get("repaired"):
+            log(f"   수리  {REPAIR_MODEL} 가 {repaired}곳 · ${c['repaired']['usd']}"
+                f" → 그날 합계 ${c['usdAll']}")
+        elif c.get("attempts", 1) > 1:
+            log(f"   전체  {c['attempts']}회 생성 · ${c['usdAll']} — 1차는 버렸다")
     if n < LEN_WANT[0] or n > LEN_WANT[1]:
         log("   ⚠️ 목표 분량을 벗어났다(통과 범위 안이라 발행은 한다)")
     return 0

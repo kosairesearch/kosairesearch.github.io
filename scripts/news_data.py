@@ -80,6 +80,11 @@ QUERIES_EN = [
     ("미국 지표", "US inflation data"),
     ("미국 금리·연준", "Federal Reserve rate decision Treasury yields"),
     ("원자재·에너지", "oil prices OPEC"),
+    # 2026-09-18 — 사장: "미국뿐 아니라 한국에 영향을 주는 중국·일본 시장, 거시도
+    # 필요할 때만". 재료를 주되 쓸지는 규칙(RULES '숫자와 이유')이 정한다 —
+    # 한국 시장에 닿는 날에만 쓴다.
+    ("아시아 증시", "Nikkei OR \"Hang Seng\" OR Shanghai stocks close"),
+    ("중국·일본 거시", "\"Bank of Japan\" OR yen OR yuan OR \"China economy\" OR PBOC"),
 ]
 
 
