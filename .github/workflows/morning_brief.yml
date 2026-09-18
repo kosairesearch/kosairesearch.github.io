@@ -80,7 +80,15 @@ jobs:
       # main 하나만 본다. brief.html·스크립트·data/ 가 모두 여기 있다.
       # (전에는 브랜치와 main 을 둘 다 체크아웃했는데, 브랜치의 stocks.js 가
       #  8월 4일에 멈춰 있어 8월 14일 장을 그 데이터로 쓰는 사고가 났다.)
+      #
+      # ref 를 main 으로 못 박는다. 기본값은 '이 실행이 만들어진 순간의 커밋' 이라,
+      # concurrency 큐에서 기다린 실행은 앞 실행이 방금 올린 브리핑을 못 본다.
+      # 9/18 에 07:15 예비가 07:04 가 올린 글을 못 보고 같은 글을 두 번 만들어
+      # 둘 다 버렸다(약 $0.6). 큐에서 풀린 시점의 main 을 받으면 파일이 있으니
+      # generate_brief.py 가 '이미 있다' 로 건너뛰고 API 를 부르지 않는다.
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
