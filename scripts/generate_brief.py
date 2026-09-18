@@ -109,6 +109,11 @@ COVERAGE_ID = "coverage"
 # 짧은 대비 제목만 살아남게 만들었다(18일 중 8일). 한 줄을 넘기지 않는 선만
 # 지키면 되고, 제목의 모양은 글쓴이가 정한다.
 HEAD_MIN, HEAD_MAX = 6, 44
+# 2차 시도에서만 주는 길이 여유. 9/18 에 2차 글이 소제목 45자 하나로 거부돼
+# $0.3 를 버리고 그날 브리핑을 놓칠 뻔했다. 44자를 넘으면 문장이라는 판정은
+# 그대로 두되, 한두 글자 차이로 하루치를 잃지는 않는다. 48자도 휴대폰에서는
+# 44자와 같은 3줄이다.
+HEAD_SLACK = 4
 # 영어 제목을 그대로 옮긴 티가 나는 끝맺음.
 HEAD_TRANSLATIONESE = re.compile(r"(에서|에 관하여|에 관해|에 대하여|에 대해|으로부터|로부터)$")
 # 미국이 어젯밤에 열리지 않은 날에는 쓸 수 없는 말.
@@ -1212,8 +1217,10 @@ def measure(brief):
     return total, (cov / total if total else 0.0)
 
 
-def check_headings(brief, facts=None):
+def check_headings(brief, facts=None, slack=0):
     """섹션 제목 검사. 제목을 매일 새로 쓰기로 했으니 여기가 그 대가다.
+
+    slack — 길이 상한에 얹는 여유(자). 1차는 0, 2차는 HEAD_SLACK.
 
     고정 제목이면 한 번 정하고 끝인데, 매일 달라지면 매일 검증해야 한다.
     사용자가 그 비용을 알고 고른 선택이므로 조용히 넘기지 않는다.
@@ -1231,8 +1238,8 @@ def check_headings(brief, facts=None):
         if len(ko) < HEAD_MIN:
             bad.append(f"{sid} 제목 '{ko}' 이 {len(ko)}자 — {HEAD_MIN}자 이상. "
                        "그날 내용을 담아라('볼 것' 같은 건 내용이 없다)")
-        elif len(ko) > HEAD_MAX:
-            bad.append(f"{sid} 제목이 {len(ko)}자 — {HEAD_MAX}자 이하. 제목이 아니라 문장이다")
+        elif len(ko) > HEAD_MAX + slack:
+            bad.append(f"{sid} 제목이 {len(ko)}자 — {HEAD_MAX + slack}자 이하. 제목이 아니라 문장이다")
         if HEAD_TRANSLATIONESE.search(ko):
             bad.append(f"{sid} 제목 '{ko}' 이 번역체로 끝난다 — "
                        "'~에서', '~에 대하여' 로 끝내지 마라")
@@ -1496,8 +1503,13 @@ def check_sector_grouping(brief, facts):
     return bad
 
 
-def validate(brief, strict_coverage=True, facts=None, strict_text=True):
+def validate(brief, strict_coverage=True, facts=None, strict_text=True,
+             head_slack=0):
     """거부 이유 목록. 빈 목록이면 통과.
+
+    head_slack — 소제목 길이 상한에 얹는 여유(자). 2차에서 HEAD_SLACK 을 준다.
+    검사 자체는 2차에도 산다(길이는 짐작이 아니라 셈이라 틀릴 수 없다). 다만
+    한두 글자 차이로 $0.3 글을 버리고 그날 브리핑을 놓치지는 않는다.
 
     strict_text — 문장을 읽어 판정하는 검사(주 범위·업종 묶음)를 거부
     사유로 칠지. 1차에서는 친다. 2차에서는 경고만 남기고 내보낸다: 이
@@ -1587,7 +1599,7 @@ def validate(brief, strict_coverage=True, facts=None, strict_text=True):
                 bad.append(f"{sid}.p{i} 영문에만 있는 종목 링크: "
                            f"{', '.join(sorted(en_codes - ko_codes))}")
 
-    bad += check_headings(brief, facts)
+    bad += check_headings(brief, facts, slack=head_slack)
     soft = check_weeks(brief, facts) + check_sector_grouping(brief, facts)
     if strict_text:
         bad += soft
@@ -1739,18 +1751,25 @@ def main():
     tickers = {s["ticker"] for s in load_stocks()[0]}
     prev_mat = yesterday_materials(pub, out_dir)
 
+    # 시도마다 쓴 돈. 버려진 글도 돈은 나갔다 — 전에는 통과한 글의 값만 남겨서
+    # 콘솔 청구와 로그가 안 맞았다(9/18: 다섯 번 생성, 기록은 한 편 값).
+    spent = []
+
     def bail(cand, reasons):
         """두 번 다 실패하면 사람이 봐야 한다. 대충 고쳐 내보내지 않는다."""
         log("❌ 두 번 시도했으나 규칙을 통과하지 못했다 — 발행하지 않는다")
         (out_dir / "_rejected").mkdir(parents=True, exist_ok=True)
         f = out_dir / "_rejected" / f"{pub}.json"
-        f.write_text(json.dumps({"brief": cand, "reasons": reasons},
+        f.write_text(json.dumps({"brief": cand, "reasons": reasons, "spent": spent},
                                 ensure_ascii=False, indent=2), encoding="utf-8")
         log(f"   거부된 결과를 {f} 에 남겼다")
+        usd = sum(x.get("usd", 0) for x in spent)
+        log(f"   버린 돈  {len(spent)}회 생성 · ${usd:.3f} (약 {round(usd * USD_KRW):,}원)")
 
     brief, batched, usage, note = None, False, None, None
     for attempt in (1, 2):
         text, usage, batched = generate(cl, build_prompt(facts, note))
+        spent.append(cost(usage, batched) or {})
         try:
             cand = parse(text)
         except Exception as e:
@@ -1786,7 +1805,8 @@ def main():
         # 1차는 설계대로 25% 로 본다. 2차는 30% 까지 눈감아 준다 — 발행이
         # 안 되는 것보다는 커버리지가 조금 긴 게 낫다. 그 위는 발행하지 않는다.
         bad = validate(cand, strict_coverage=(attempt == 1), facts=facts,
-                       strict_text=(attempt == 1))
+                       strict_text=(attempt == 1),
+                       head_slack=(0 if attempt == 1 else HEAD_SLACK))
         if not bad:
             brief = cand
             break
@@ -1798,6 +1818,11 @@ def main():
 
     n, ratio = measure(brief)
     c = cost(usage, batched)
+    if c and len(spent) > 1:
+        # 2차에서 통과했으면 1차 글값도 나갔다. usd 는 통과한 글 한 편의 값이고,
+        # 그날 실제로 쓴 돈은 usdAll 이다. 콘솔 청구와 맞춰 볼 때는 이쪽을 본다.
+        c["attempts"] = len(spent)
+        c["usdAll"] = round(sum(x.get("usd", 0) for x in spent), 4)
     meta = {"model": MODEL, "batched": batched, "chars": n,
             "coverageRatio": round(ratio, 3), "usage": c,
             "generatedAt": facts["generatedAt"]}
@@ -1815,6 +1840,8 @@ def main():
     if c:
         log(f"   비용  입력 {c['inputTokens']:,} / 출력 {c['outputTokens']:,} 토큰 · "
             f"${c['usd']} (약 {c['krw']:,}원)" + ("  ← 배치 반값" if batched else ""))
+        if c.get("attempts", 1) > 1:
+            log(f"   전체  {c['attempts']}회 생성 · ${c['usdAll']} — 1차는 거부돼 버렸다")
     if n < LEN_WANT[0] or n > LEN_WANT[1]:
         log("   ⚠️ 목표 분량을 벗어났다(통과 범위 안이라 발행은 한다)")
     return 0
