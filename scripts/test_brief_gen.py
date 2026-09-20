@@ -946,6 +946,22 @@ b10 = sample()
 b10["lead"]["ko"] = "9월 21일 결정이 이번 주 안에 나온다. " + b10["lead"]["ko"]
 ok("1차(기본)는 거부", has(G.validate(b10, facts=F16), "이번 주"))
 ok("2차(strict_text=False)는 통과", not has(G.validate(b10, facts=F16, strict_text=False), "이번 주"))
+# 9/21 에 실제로 난 일 — 제목 "이번 주 미 지표는 비어 있고, 다음 주 29일부터 넷이
+# 몰린다" 를 앞 낱말('이번 주')만 보고 걸어 $0.05 수리를 헛되이 썼다. 제목의 주
+# 낱말 가운데 하나라도 본문 날짜와 맞으면 제목은 맞는 것이다.
+b11 = sample()
+b11["sections"][3]["heading"] = {"ko": "이번 주 미 지표는 비어 있고, 다음 주 21일부터 넷이 몰린다",
+                                 "en": "No US data this week; four land next week from the 21st"}
+b11["sections"][3]["paragraphs"][0]["ko"] = ("이번 주에는 확인할 미국 지표가 없다. 다음 주 9월 21일 구인·이직, "
+                                            "9월 22일 GDP 가 나온다. " + b11["sections"][3]["paragraphs"][0]["ko"])
+b11["sections"][3]["paragraphs"][0]["en"] = ("No US data this week. Next week Sept 21 JOLTS, Sept 22 GDP. "
+                                            + b11["sections"][3]["paragraphs"][0]["en"])
+ok("제목에 '이번 주'와 '다음 주'가 같이 있고 본문 날짜가 다음 주면 통과 (9/21 실제 오탐)",
+   not has(G.validate(b11, facts=F16), "제목에"), str(G.validate(b11, facts=F16)))
+b12 = copy.deepcopy(b11)
+b12["sections"][3]["heading"]["ko"] = "이번 주 안에 미 지표 넷이 몰린다"
+ok("제목이 '이번 주' 뿐인데 본문 날짜가 다음 주면 여전히 거부",
+   has(G.validate(b12, facts=F16), "제목에"), str(G.validate(b12, facts=F16)))
 ok("2차에도 제목 검사(길이·번역체)는 그대로 — 검사 자체가 꺼진 게 아니다",
    has(G.validate({**sample(), "sections": [dict(sample()["sections"][0], heading={"ko": "볼 것", "en": "x"})]},
                   facts=F16, strict_text=False), "볼 것"))
