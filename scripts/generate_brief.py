@@ -1585,7 +1585,11 @@ def check_weeks(brief, facts):
         if not ds:
             continue
         tags = {week_tag(d, today) for d in ds}
-        if word not in tags and tags <= {"이번 주", "다음 주", "지난 주", "그 다음", "그 전"}:
+        # 제목에 주(週) 낱말이 둘 이상이면 어느 하나라도 본문 날짜와 맞으면 된다.
+        # 9/21 에 "이번 주 미 지표는 비어 있고, 다음 주 29일부터 넷이 몰린다" 를
+        # 앞 낱말('이번 주')만 보고 걸어서, 맞는 제목을 고치느라 $0.05 를 썼다.
+        words = {re.sub(r"\s+", " ", x.group(1)) for x in _WEEKWORD.finditer(head)}
+        if not (words & tags) and tags <= {"이번 주", "다음 주", "지난 주", "그 다음", "그 전"}:
             got = " · ".join(f"{_wk(d)}={week_tag(d, today)}" for d in ds[:3])
             bad.append(f"섹션 {sec.get('id')} 제목에 '{word}' — 본문의 날짜는 {got} 다"
                        f" (오늘 {_wk(today)})")
