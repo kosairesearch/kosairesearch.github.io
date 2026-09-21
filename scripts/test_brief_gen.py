@@ -394,7 +394,8 @@ _sid0, _sid1 = good["sections"][0]["id"], good["sections"][1]["id"]
 ok("글 전체가 와도 바뀐 자리 셋을 조각으로 끼운다",
    G.apply_patch(_t, _whole, None, _ch) == 3 and set(_ch) == {"lead.en", f"{_sid0}.p0.ko", f"{_sid1}.heading.ko"}, str(_ch))
 _allow = G._allowed_paths(_orig, ["lead.en 가 비었다", f"{_sid0}.p0 에 종목 링크 7개 · 등락률 10개 — 나열이다"])
-ok("사유가 가리킨 자리(lead·그 문단)의 ko·en 만 허용", {"lead.ko", "lead.en", f"{_sid0}.p0.ko", f"{_sid0}.p0.en"} <= _allow and f"{_sid1}.heading.ko" not in _allow, str(sorted(_allow)))
+ok("사유가 가리킨 자리만 — 영문만 비었으면 영문 칸만, 나열 문단은 ko·en",
+   {"lead.en", f"{_sid0}.p0.ko", f"{_sid0}.p0.en"} <= _allow and "lead.ko" not in _allow and f"{_sid1}.heading.ko" not in _allow, str(sorted(_allow)))
 _t = copy.deepcopy(_orig); _ch = []
 ok("허용 밖(다른 섹션 제목)은 버린다", G.apply_patch(_t, _whole, _allow, _ch) == 2 and _t["sections"][1]["heading"]["ko"] == _orig["sections"][1]["heading"]["ko"], str(_ch))
 ok("제목 사유는 heading 을, '요약' 사유는 summary 를 연다",
@@ -406,12 +407,23 @@ _src = copy.deepcopy(_orig)
 _src["sections"][1]["paragraphs"][0]["ko"] = "사유에 없는 문단의 표식 문장 QX7."   # 표본 문단은 서로 비슷해서 표식을 박는다
 _pr, _al = G._repair_prompt(_src, ["lead.en 가 비었다", f"{_sid0}.p0 에 종목 링크 7개 · 등락률 10개 — 나열이다"])
 ok("수리 프롬프트에 문서(JSON) 를 통째로 넣지 않는다", '"sections"' not in _pr and '"paragraphs"' not in _pr)
-ok("고칠 칸의 현재 글은 들어 있다", f"[{_sid0}.p0.ko]" in _pr and _src["sections"][0]["paragraphs"][0]["ko"][:30] in _pr and "[lead.ko]" in _pr)
+ok("고칠 칸의 현재 글은 들어 있다", f"[{_sid0}.p0.ko]" in _pr and _src["sections"][0]["paragraphs"][0]["ko"][:30] in _pr)
+ok("영문만 비었으면 한국어 원문은 읽기용으로만 준다", "[lead.ko] (참고)" in _pr and "lead.ko" not in _al and "lead.en" in _al)
 ok("사유에 없는 문단은 들어 있지 않다", "QX7" not in _pr)
-ok("출력 예시의 키가 그 칸 경로다", '"lead.ko": "…"' in _pr or '"lead.en": "…"' in _pr)
+ok("출력 예시가 changes 목록이고 path 가 그 칸 경로다", '"changes"' in _pr and '"path": "lead.en"' in _pr and "JSON_START" not in _pr)
+_sc = G._repair_schema(_al)
+ok("출력 틀 — path 는 허용된 경로만(enum) · 덧붙이는 키 없음",
+   _sc["properties"]["changes"]["items"]["properties"]["path"]["enum"] == sorted(_al)
+   and _sc["additionalProperties"] is False and _sc["properties"]["changes"]["items"]["additionalProperties"] is False
+   and _sc["properties"]["changes"]["items"]["required"] == ["path", "text"])
+ok("changes 목록을 {경로: 글} 로 — 모양이 틀린 항목은 버린다",
+   G._patch_of({"changes": [{"path": "lead.en", "text": "A"}, {"text": "no path"}, "junk", {"path": 3, "text": "x"}]}) == {"lead.en": "A"}
+   and G._patch_of({"lead.en": "B"}) == {"lead.en": "B"})
+ok("자리를 하나도 못 짚는 사유면 전부 연다(빈 enum 을 API 에 보내지 않는다)",
+   G._allowed_paths(_orig, ["제목이 이상하다"]) == {p for p, _ in G._walk(_orig)})
 _u = type("Usage", (), {"input_tokens": 20000, "output_tokens": 5000})()   # 아래 ⑬의 U() 와 같은 값
-ok("수리 모델은 Sonnet · 값이 그 단가로 계산된다 (2만/5천 토큰 → $0.135, Opus 면 $0.225)",
-   G.REPAIR_MODEL == "claude-sonnet-5" and abs(G.cost(_u, model="claude-sonnet-5")["usd"] - 0.135) < 1e-6
+ok("수리 모델은 Sonnet · 값이 그 단가($2/$10)로 계산된다 (2만/5천 토큰 → $0.09, Opus 면 $0.225)",
+   G.REPAIR_MODEL == "claude-sonnet-5" and abs(G.cost(_u, model="claude-sonnet-5")["usd"] - 0.09) < 1e-6
    and abs(G.cost(_u)["usd"] - 0.225) < 1e-6, str(G.cost(_u, model="claude-sonnet-5")))
 ok("출력 한도 24,000 — 사고 토큰까지 담는다", G.MAX_TOKENS >= 24000)
 # 30자 상한이 "A는 올랐고 B는 내렸다" 식 짧은 대비 제목만 살아남게 했다.

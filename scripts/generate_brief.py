@@ -74,7 +74,7 @@ MAX_DATA_LAG = int(os.getenv("BRIEF_MAX_DATA_LAG", "0"))
 PRICES = {
     "claude-opus-5": (5.0, 25.0),
     "claude-opus-4-8": (5.0, 25.0),
-    "claude-sonnet-5": (3.0, 15.0),
+    "claude-sonnet-5": (2.0, 10.0),     # 9/21 요금표 확인 — 출시 특가 $2/$10 이 정식 요금이 됐다
     "claude-sonnet-4-6": (3.0, 15.0),
     "claude-haiku-4-5": (1.0, 5.0),
 }
@@ -1155,14 +1155,29 @@ def _allowed_paths(brief, reasons):
     """
     known = [p for p, _ in _walk(brief)]
     text = " ".join(reasons)
-    stems = {p[:-3] for p in known if p[:-3] in text}
-    for m in re.finditer(r"섹션 (\S+) 제목|(\S+) 제목이 \d+자", text):
-        stems.add(f"{m.group(1) or m.group(2)}.heading")
-    if "요약" in text:
-        stems.add("summary")
-    if not stems or any(("분량" in r or "커버리지" in r) for r in reasons):
+    if not any(p[:-3] in text for p in known) and "요약" not in text and "제목" not in text \
+            or any(("분량" in r or "커버리지" in r) for r in reasons):
         return set(known)
-    return {p for p in known if p[:-3] in stems}
+    # 영문만 비었으면 영문 칸만 연다. 9/21 시험에서 lead.en 만 비었는데 모델이
+    # lead.ko 까지 새로 써 왔다 — 멀쩡한 한국어를 새 주사위에 걸 이유가 없다.
+    en_only = set()
+    for m in re.finditer(r"(\S+)\.en 가 비었다|(\S+)\.ko 에 대응하는 영문이 없다", text):
+        en_only.add(m.group(1) or m.group(2))
+    both = set()
+    for r in reasons:
+        if re.search(r"\.en 가 비었다|에 대응하는 영문이 없다", r):
+            continue
+        both |= {p[:-3] for p in known if p[:-3] in r}
+        for m in re.finditer(r"섹션 (\S+) 제목|(\S+) 제목이 \d+자", r):
+            both.add(f"{m.group(1) or m.group(2)}.heading")
+        if "요약" in r:
+            both.add("summary")
+    out = set()
+    for p in known:
+        stem = p[:-3]
+        if stem in both or (stem in en_only and p.endswith(".en")):
+            out.add(p)
+    return out or set(known)
 
 
 def apply_patch(brief, patch, allowed=None, changed=None):
@@ -1204,12 +1219,18 @@ def _repair_prompt(brief, reasons):
     allowed = _allowed_paths(brief, reasons)
     cur = dict(_walk(brief))
     fields = [p for p in cur if p in allowed]
+    # 영문 칸만 열린 자리는 한국어 원문을 읽기용으로 같이 준다 — 옮길 글이 있어야 한다.
+    ref = [p[:-3] + ".ko" for p in fields if p.endswith(".en") and p[:-3] + ".ko" not in allowed]
     rules = RULES[RULES.index("지켜야 할 것"):RULES.index("출력 형식")]
     heads = " / ".join(_plain((x.get("heading") or {}).get("ko") or "")
                        for x in (brief.get("sections") or []) if isinstance(x, dict))
     title = _plain((brief.get("title") or {}).get("ko") or "")
     block = "\n".join(f"[{p}]\n{cur[p].strip() or '(비어 있음)'}\n" for p in fields)
-    ex = ", ".join(f'"{p}": "…"' for p in fields[:2]) or '"lead.en": "…"'
+    if ref:
+        block += "\n읽기만 — 옮길 원문(고치지 말 것):\n\n" + "\n".join(
+            f"[{p}] (참고)\n{cur[p].strip()}\n" for p in ref)
+    ex = ", ".join(f'{{"path": "{p}", "text": "…"}}' for p in fields[:2]) \
+        or '{"path": "lead.en", "text": "…"}'
     return (
         "모닝 브리핑 한 편이 발행 전 검사에서 거부됐다. 거부 사유:\n"
         + "\n".join(f"· {r}" for r in reasons)
@@ -1228,10 +1249,36 @@ def _repair_prompt(brief, reasons):
         + rules
         + f"\n참고 — 글 제목: {title}\n참고 — 섹션 제목: {heads}\n\n"
         "고칠 칸(현재 글):\n\n" + block
-        + "\n출력은 JSON 객체 하나뿐이다. 키는 위 [경로] 그대로, 값은 그 칸에 들어갈 글 전체. "
-        "바꾸지 않는 칸은 빼라. 설명·머리말 없이 마커부터.\n"
-        f"===JSON_START===\n{{{ex}}}\n===JSON_END===\n"
+        + "\n출력은 JSON 하나뿐이다. changes 목록에 고친 칸만 넣는다 — path 는 위 [경로] 그대로, "
+        "text 는 그 칸에 들어갈 글 전체. 바꾸지 않는 칸은 넣지 마라. 설명은 쓰지 마라.\n"
+        f'{{"changes": [{ex}]}}\n'
     ), allowed
+
+
+def _repair_schema(allowed):
+    """수리 출력의 틀. output_config.format 으로 넘겨 JSON 밖의 글을 한 글자도 못 내게 한다.
+
+    9/21 시험 셋 다 출력이 7,700~8,300 토큰이었다. 고칠 칸은 여섯이었는데 —
+    나머지는 설명과 사고였다. 틀로 묶으면 답은 고친 칸의 글뿐이다.
+    """
+    return {
+        "type": "object",
+        "properties": {"changes": {"type": "array", "items": {
+            "type": "object",
+            "properties": {"path": {"type": "string", "enum": sorted(allowed)},
+                           "text": {"type": "string"}},
+            "required": ["path", "text"], "additionalProperties": False}}},
+        "required": ["changes"], "additionalProperties": False,
+    }
+
+
+def _patch_of(obj):
+    """수리 모델의 답을 {경로: 새 글} 로. {"changes":[{"path","text"}]} 도, 옛 모양(경로가
+    바로 키)도, 글 전체를 돌려준 것도(apply_patch 가 조각으로 가른다) 받는다."""
+    if isinstance(obj, dict) and isinstance(obj.get("changes"), list):
+        return {c.get("path"): c.get("text") for c in obj["changes"]
+                if isinstance(c, dict) and isinstance(c.get("path"), str)}
+    return obj
 
 
 def repair(cl, brief, reasons):
@@ -1246,10 +1293,23 @@ def repair(cl, brief, reasons):
     돌려주는 것: (고친 자리 수, usage). 0 이면 부르는 쪽이 포기한다.
     """
     prompt, allowed = _repair_prompt(brief, reasons)
-    msg = cl.messages.create(model=REPAIR_MODEL, max_tokens=REPAIR_MAX_TOKENS,
-                             messages=[{"role": "user", "content": prompt}])
+    # 사고는 끈다. Sonnet 5 는 thinking 을 비워 두면 사고가 *켜진다* — 9/21 시험에서
+    # 출력 7,745 토큰 중 고친 글은 2,000 남짓이고 나머지가 사고였다. 옮기고 줄이는
+    # 일이라 사고 없이 된다. 출력 틀(output_config.format)은 JSON 밖의 글을 막는다.
+    params = dict(model=REPAIR_MODEL, max_tokens=REPAIR_MAX_TOKENS,
+                  thinking={"type": "disabled"},
+                  messages=[{"role": "user", "content": prompt}])
     try:
-        patch = parse(_text_of(msg))
+        msg = cl.messages.create(output_config={"format": {
+            "type": "json_schema", "schema": _repair_schema(allowed)}}, **params)
+    except Exception as e:
+        # 틀 자체를 API 가 안 받는 날(400) — 그날 브리핑을 잃는 것보다 자유 출력이 낫다.
+        if type(e).__name__ != "BadRequestError":
+            raise
+        log(f"⚠️ 수리 출력 틀을 못 받았다 — 자유 출력으로 부른다: {e}")
+        msg = cl.messages.create(**params)
+    try:
+        patch = _patch_of(parse(_text_of(msg)))
     except Exception as e:
         log(f"⚠️ 수리 결과를 읽을 수 없다: {type(e).__name__} {e}")
         return 0, msg.usage
