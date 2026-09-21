@@ -25,6 +25,10 @@ on:
         description: '오늘 재료를 실제로 모아 처음부터 한 편 만든다 (발행 안 함)'
         type: boolean
         default: false
+      repair_only:
+        description: '수리 경로만 (최근 나간 글의 영문 리드를 비우고 Sonnet 이 고치는지 · 약 $0.05)'
+        type: boolean
+        default: false
 
 jobs:
   replay:
@@ -42,7 +46,7 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: 다시 써 보기
-        if: ${{ !inputs.live }}
+        if: ${{ !inputs.live && !inputs.repair_only }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python3 scripts/brief_replay.py ${{ inputs.dates }}
@@ -63,6 +67,18 @@ jobs:
         run: |
           python scripts/test_flows.py
           python scripts/test_brief_gen.py
+
+      # ── 수리 경로만. 생성($0.31)은 하지 않는다. 9/21 시험에서 수리가 0곳으로
+      #    끝나 $0.55 를 버린 뒤에 만들었다 — 수리를 고쳤으면 이걸로 확인한다. ──
+      - name: 수리 경로만 (Sonnet 한 번 · 약 $0.05)
+        if: ${{ inputs.repair_only }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -o pipefail
+          F=$(ls data/briefs/20*.json | sort | tail -1)
+          echo "시험 대상: $F" | tee -a $GITHUB_STEP_SUMMARY
+          python scripts/generate_brief.py --repair-only "$F" 2>&1 | tee -a $GITHUB_STEP_SUMMARY
 
       - name: 오늘 재료로 처음부터 한 편 (발행 안 함)
         if: ${{ inputs.live }}
