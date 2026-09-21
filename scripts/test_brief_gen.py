@@ -401,6 +401,14 @@ ok("제목 사유는 heading 을, '요약' 사유는 summary 를 연다",
    f"{_sid1}.heading.ko" in G._allowed_paths(_orig, [f"섹션 {_sid1} 제목에 '이번 주' — …"])
    and "summary.en" in G._allowed_paths(_orig, ["요약에 글머리표·번호가 있다"]))
 ok("분량 사유면 전부 연다", G._allowed_paths(_orig, ["분량 3,700자 — 1,000~3,600자를 벗어났다"]) == {p for p, _ in G._walk(_orig)})
+# 9/21 시험 둘 다 모델이 글 전체를 되돌려 보냈다($0.15). 문서를 안 주면 되돌릴 것이 없다.
+_src = copy.deepcopy(_orig)
+_src["sections"][1]["paragraphs"][0]["ko"] = "사유에 없는 문단의 표식 문장 QX7."   # 표본 문단은 서로 비슷해서 표식을 박는다
+_pr, _al = G._repair_prompt(_src, ["lead.en 가 비었다", f"{_sid0}.p0 에 종목 링크 7개 · 등락률 10개 — 나열이다"])
+ok("수리 프롬프트에 문서(JSON) 를 통째로 넣지 않는다", '"sections"' not in _pr and '"paragraphs"' not in _pr)
+ok("고칠 칸의 현재 글은 들어 있다", f"[{_sid0}.p0.ko]" in _pr and _src["sections"][0]["paragraphs"][0]["ko"][:30] in _pr and "[lead.ko]" in _pr)
+ok("사유에 없는 문단은 들어 있지 않다", "QX7" not in _pr)
+ok("출력 예시의 키가 그 칸 경로다", '"lead.ko": "…"' in _pr or '"lead.en": "…"' in _pr)
 _u = type("Usage", (), {"input_tokens": 20000, "output_tokens": 5000})()   # 아래 ⑬의 U() 와 같은 값
 ok("수리 모델은 Sonnet · 값이 그 단가로 계산된다 (2만/5천 토큰 → $0.135, Opus 면 $0.225)",
    G.REPAIR_MODEL == "claude-sonnet-5" and abs(G.cost(_u, model="claude-sonnet-5")["usd"] - 0.135) < 1e-6

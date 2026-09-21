@@ -1192,43 +1192,60 @@ def apply_patch(brief, patch, allowed=None, changed=None):
     return n
 
 
+def _repair_prompt(brief, reasons):
+    """수리 모델에게 줄 글. 문서를 통째로 주지 않는다.
+
+    9/21 시험 둘 다 모델이 조각 대신 글 전체를 되돌려 보냈다(출력 8,000 토큰 ·
+    $0.15). "전체를 돌려주지 마라" 고 써도 소용없었다 — 손에 문서가 있으니
+    문서를 낸다. 그래서 문서를 주지 않는다. 사유가 가리킨 칸만 현재 글과 함께
+    목록으로 주고, 나머지는 제목·섹션 제목만 참고로 준다. 되돌려 보낼 문서가
+    없으니 답은 고친 칸뿐이다.
+    """
+    allowed = _allowed_paths(brief, reasons)
+    cur = dict(_walk(brief))
+    fields = [p for p in cur if p in allowed]
+    rules = RULES[RULES.index("지켜야 할 것"):RULES.index("출력 형식")]
+    heads = " / ".join(_plain((x.get("heading") or {}).get("ko") or "")
+                       for x in (brief.get("sections") or []) if isinstance(x, dict))
+    title = _plain((brief.get("title") or {}).get("ko") or "")
+    block = "\n".join(f"[{p}]\n{cur[p].strip() or '(비어 있음)'}\n" for p in fields)
+    ex = ", ".join(f'"{p}": "…"' for p in fields[:2]) or '"lead.en": "…"'
+    return (
+        "모닝 브리핑 한 편이 발행 전 검사에서 거부됐다. 거부 사유:\n"
+        + "\n".join(f"· {r}" for r in reasons)
+        + "\n\n아래 칸만 고친다. 다른 칸은 보이지도 않고 고칠 수도 없다.\n"
+        "고치는 법:\n"
+        "· '영문이 없다'·'en 가 비었다' → 그 자리의 한국어(.ko)를 영문 기사처럼 옮긴다. 같은 사실,"
+        " 같은 순서, 같은 종목 링크([Name](005930))와 **굵게**.\n"
+        "· 한국어(.ko)를 고쳤으면 짝인 영문(.en)도 같이 고친다.\n"
+        "· '제목이 …자' → 44자 이하로 줄인다. 그날 내용은 담는다.\n"
+        "· '업종이 다른 종목을 …묶었다' → 사유에 적힌 업종대로, 다르면 '옆 업종인' 처럼 다르다고 쓴다.\n"
+        "· '금지 표현' → 그 표현만 사실 병치로 바꾼다.\n"
+        "· '분량'·'커버리지 … 초과' → 지목된 쪽을 줄인다. 새 사실은 넣지 않는다.\n"
+        "· '나열이다' → 종목 이름과 등락률을 빼 링크 넷·등락률 대여섯 개 안으로 만든다. 뺀 종목은"
+        " 업종으로 묶어 한 구절로 말한다. 한국어·영문 같이.\n"
+        "· 새 숫자·새 사실을 넣지 마라. 사유와 상관없는 문장은 그대로 둔다.\n\n"
+        + rules
+        + f"\n참고 — 글 제목: {title}\n참고 — 섹션 제목: {heads}\n\n"
+        "고칠 칸(현재 글):\n\n" + block
+        + "\n출력은 JSON 객체 하나뿐이다. 키는 위 [경로] 그대로, 값은 그 칸에 들어갈 글 전체. "
+        "바꾸지 않는 칸은 빼라. 설명·머리말 없이 마커부터.\n"
+        f"===JSON_START===\n{{{ex}}}\n===JSON_END===\n"
+    ), allowed
+
+
 def repair(cl, brief, reasons):
     """검사에 걸린 자리만 고친다 — 글 전체를 다시 쓰지 않는다.
 
     왜. 1차 글이 거부되면 전에는 Opus 로 처음부터 다시 썼다($0.31). 그런데
-    거부 사유는 대개 '영문이 비었다'·'소제목이 길다'·'업종을 잘못 묶었다'
-    같은 한두 자리다. 그 자리만 Sonnet 에게 고치게 하면 $0.05 안팎이고,
-    잘 쓴 나머지 문단을 새 주사위에 걸지 않는다. 9/18 에 한 편 내려고 다섯 번
-    생성한 뒤에 만들었다.
+    거부 사유는 대개 '영문이 비었다'·'소제목이 길다'·'나열이다' 같은 한두
+    자리다. 그 자리만 Sonnet 에게 고치게 하면 $0.05 안팎이고, 잘 쓴 나머지
+    문단을 새 주사위에 걸지 않는다. 9/18 에 한 편 내려고 다섯 번 생성한 뒤에
+    만들었다.
 
     돌려주는 것: (고친 자리 수, usage). 0 이면 부르는 쪽이 포기한다.
     """
-    allowed = _allowed_paths(brief, reasons)
-    paths = [p for p, _ in _walk(brief) if p in allowed]
-    rules = RULES[RULES.index("지켜야 할 것"):RULES.index("출력 형식")]
-    prompt = (
-        "아래 모닝 브리핑(JSON)이 발행 전 검사에서 거부됐다. 거부 사유:\n"
-        + "\n".join(f"· {r}" for r in reasons)
-        + "\n\n고칠 자리만 고쳐라. 글 전체를 다시 쓰지 마라. 사유에 없는 자리는 손대지 마라.\n"
-        "출력은 JSON 객체 하나 — 키는 아래 경로 중 하나, 값은 그 자리에 들어갈 글 전체"
-        "(부분이 아니라 통째로). **글 전체(title·lead·sections…)를 돌려주지 마라.** 바뀌는"
-        " 자리만 돌려준다 — 대개 두세 개다.\n"
-        "쓸 수 있는 경로: " + ", ".join(paths) + "\n\n"
-        "고치는 법:\n"
-        "· '영문이 없다'·'en 가 비었다' → 그 자리의 한국어를 영문 기사처럼 옮긴다. 같은 사실,"
-        " 같은 순서, 같은 종목 링크([Name](005930))와 **굵게**.\n"
-        "· 한국어를 고쳤으면 대응하는 영문(같은 경로의 .en)도 같이 고친다.\n"
-        "· '제목이 …자' → 44자 이하로 줄인다. 그날 내용은 담는다.\n"
-        "· '업종이 다른 종목을 …묶었다' → 사유에 적힌 업종대로, 다르면 '옆 업종인' 처럼 다르다고 쓴다.\n"
-        "· '금지 표현' → 그 표현만 사실 병치로 바꾼다.\n"
-        "· '분량'·'커버리지 … 초과' → 지목된 쪽 문단을 줄인다. 새 사실은 넣지 않는다.\n"
-        "· '나열이다' → 지목된 문단에서 종목 이름과 등락률을 빼 링크 넷·등락률 대여섯 개 안으로"
-        " 만든다. 뺀 종목은 업종으로 묶어 한 구절로 말한다. 한국어와 영문을 같이 고친다.\n"
-        "· 새 숫자·새 사실을 넣지 마라. 아래 규칙은 그대로 지킨다.\n\n"
-        + rules
-        + "\n===JSON_START===\n{\"경로\": \"새 글\"}\n===JSON_END===\n\n"
-        "고칠 글:\n" + json.dumps(brief, ensure_ascii=False)
-    )
+    prompt, allowed = _repair_prompt(brief, reasons)
     msg = cl.messages.create(model=REPAIR_MODEL, max_tokens=REPAIR_MAX_TOKENS,
                              messages=[{"role": "user", "content": prompt}])
     try:
