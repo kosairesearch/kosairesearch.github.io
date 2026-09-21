@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-09-22 04:58",
+  "lastUpdated": "2026-09-22 05:00",
   "dataDate": "20260921",
   "stocks": [
     {
@@ -9739,7 +9739,7 @@ window.KOS_LIVE_DATA = {
       "name": "네오사피엔스",
       "name_en": "",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "IT·소프트웨어",
       "price": 36100,
       "change": 261.0,
       "volume": 39911291,
@@ -9747,7 +9747,8 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.419,
       "shares": 12215845,
       "categories": [
-        "기타"
+        "IT·소프트웨어",
+        "인공지능(AI)"
       ],
       "rank": 541
     },
