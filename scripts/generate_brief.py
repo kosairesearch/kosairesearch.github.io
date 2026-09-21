@@ -58,7 +58,9 @@ MAX_TOKENS = int(os.getenv("BRIEF_MAX_TOKENS", "24000"))
 # 1차 글이 검사에 걸렸을 때 그 자리만 고치는 모델. 글 전체를 Opus 로 다시
 # 쓰면 $0.31, 걸린 자리만 Sonnet 으로 고치면 $0.05 안팎이다.
 REPAIR_MODEL = os.getenv("BRIEF_REPAIR_MODEL", "claude-sonnet-5")
-REPAIR_MAX_TOKENS = 8000
+# 사고(thinking)는 켜지 않는다. 편집이라 필요 없고, 9/21 시험에서 사고 토큰이
+# 한도 8,000 을 먹어 답이 잘리고 $0.14 가 나갔다. 한도는 넉넉히 — 쓴 만큼만 낸다.
+REPAIR_MAX_TOKENS = 16000
 USE_BATCH = os.getenv("BRIEF_USE_BATCH", "") == "1"
 BATCH_CUTOFF = int(os.getenv("BRIEF_BATCH_CUTOFF", "2400"))
 # 뉴스를 종목별로 받을 개수. 구글 뉴스는 1초에 여덟 번 때리면 503 을 준다.
@@ -72,7 +74,7 @@ MAX_DATA_LAG = int(os.getenv("BRIEF_MAX_DATA_LAG", "0"))
 PRICES = {
     "claude-opus-5": (5.0, 25.0),
     "claude-opus-4-8": (5.0, 25.0),
-    "claude-sonnet-5": (3.0, 15.0),
+    "claude-sonnet-5": (2.0, 10.0),     # 9/21 요금표 확인 — 출시 특가 $2/$10 이 정식 요금이 됐다
     "claude-sonnet-4-6": (3.0, 15.0),
     "claude-haiku-4-5": (1.0, 5.0),
 }
@@ -131,7 +133,10 @@ BRAND_KO = re.compile(r"코사이")
 
 # 요약이 목록으로 흐르는 것을 잡는다. 줄바꿈, 글머리표(· • - ―), "1." 같은
 # 번호 매김. 이어지는 문장으로 써야 사람이 쓴 글로 읽힌다.
-SUM_LIST = re.compile(r"[\n\r]|(?:^|\s)[·•▪◦\-–—]\s|(?:^|\s)\d[.)]\s")
+# 줄표(– —)는 뺀다. 이 글은 "…했다 — 연준이…" 처럼 줄표를 문장부호로 쓰는데,
+# 9/21 시험 생성의 요약이 그 줄표 하나로 '글머리표' 라며 거부됐다. 목록 표시는
+# 가운뎃점·불릿·붙임표와 번호만 본다(줄 머리의 것은 repair_summary 가 먼저 뗀다).
+SUM_LIST = re.compile(r"[\n\r]|(?:^|\s)[·•▪◦\-]\s|(?:^|\s)\d[.)]\s")
 
 # 투자권유로 읽히는 표현. 종목 리포트와 같은 규칙이다(6-1항).
 # '순매수'는 사실이므로 막지 않는다 — 그래서 매수/매도는 뒤에 추천·의견·권유가
@@ -577,6 +582,8 @@ def _facts_text(facts):
             f"{r['tradingValue']:,}억원 {_pct(r['change'])}"
             for r in acts))
     if any(m.get(k) for k in ("leaders", "laggards", "up", "down", "actives")):
+        L.append("  이 목록을 다 옮기지 마라. 한 문단에 종목 넷·등락률 대여섯 개까지다. 나머지는"
+                 " 업종으로 묶어 말하라 — 목록은 화면의 표가 보여 준다.")
         L.append("  종목 괄호 안 뒤쪽이 업종이다. 종목을 '같은 업종·같은 부품·같은 반도체'"
                  " 처럼 묶어 쓸 때는 이 업종이 같을 때만 그렇게 쓴다. 다르면 '옆 업종인'"
                  " 처럼 다르다고 쓴다.")
@@ -737,6 +744,11 @@ RULES = """이 글이 하는 일
   · 숫자는 근거다. 한 문장에 두어 개면 족하다. "S&P 500 +1.14%, 나스닥 +1.69%,
     다우 +0.61%" 처럼 셋을 차례로 적는 것은 시세표다 — 같은 방향이면 대표 하나,
     갈렸으면 갈린 둘만. "숫자로 보면 …" 하고 시세를 나열하는 문장은 쓰지 않는다.
+  · 종목을 늘어놓지 않는다. 한 문단에 종목 링크는 넷까지, 등락률 숫자는 대여섯
+    개까지다. 그 이상은 이름을 빼고 업종으로 묶어 말한다 — "조선은 HD현대가
+    6.52% 빠지며 업종 전체가 밀렸다" 로 충분하다. 삼성중공업·HD한국조선해양의
+    등락률까지 붙이면 시세표가 된다. 상승 상위·하락 상위를 순서대로 읽어 주지
+    마라. 독자는 표를 원하면 화면의 표를 본다. 글은 표가 못 하는 일을 한다.
   · 출처를 문장마다 달지 않는다. "연합뉴스는 …전했고 MBC는 …보도했다"는 기사
     모음이지 브리핑이 아니다. 인용이 꼭 필요한 곳에서 한 번만 밝힌다.
   · 중국·일본·홍콩 시장, 엔·위안, 해외 거시(일본은행·중국 지표·미국 고용·물가)는
@@ -797,6 +809,7 @@ chips · flows · calendar · fx … 그날 내용에 맞게). KOSAI 리포트�
 8. 요약(summary)은 이어지는 문장으로 쓴다. 줄바꿈·글머리표·번호를 쓰지 마라 —
    항목을 나눠 늘어놓으면 사람이 쓴 글이 아니라 기계가 뽑아낸 목록처럼 읽힌다.
    본문에 없는 사실을 요약에만 새로 쓰지 말고, 종목 링크와 굵게는 요약에 쓰지 않는다.
+   요약도 등락률 숫자는 대여섯 개면 족하다. 그날의 방향과 이유가 요약이지 시세가 아니다.
 9. 섹션 제목은 그날 그 섹션에서 가장 중요한 사실을 담는다. '간밤 뉴욕'·'볼 것'
    같은 빈 이름이나 '~에서'·'~에 대하여' 로 끝나는 번역체는 쓰지 마라. 기사 제목과
    같은 말을 섹션 제목으로 다시 쓰지 말고, 섹션끼리도 겹치지 않게 한다.
@@ -813,6 +826,9 @@ chips · flows · calendar · fx … 그날 내용에 맞게). KOSAI 리포트�
 13. 사실 블록의 ※ 나 '…하지 마라' 는 너에게 주는 규칙이지 독자에게 할 말이
     아니다. 그 문장을 글에 옮겨 적지 마라 — "…와 나란히 두지 않는 게 낫다" 처럼
     쓰면 독자는 누구에게 하는 말인지 알 수 없다. 규칙은 지키되 말하지 않는다.
+14. 한 문단에 종목 링크는 넷까지, 등락률 숫자는 대여섯 개까지다. 사실 블록의
+    상승·하락·거래대금 목록을 차례로 옮기지 마라 — 그 목록은 화면의 표에 있다.
+    이 선을 넘긴 문단은 발행 전에 잘려 나간다.
 
 출력 형식 — 머리말·설명 없이 곧바로 마커부터. 마커 앞뒤에 어떤 문장도 쓰지 마라.
 
@@ -1129,64 +1145,179 @@ def _set_path(brief, path, value):
     return False
 
 
-def apply_patch(brief, patch):
+def _allowed_paths(brief, reasons):
+    """거부 사유가 가리키는 자리만 고치게 한다.
+
+    사유 문장은 검사기가 _walk 경로 그대로 쓴다("chips.p0 에 …", "lead.en 가
+    비었다"). 그 자리의 ko·en 만 허용한다. 제목 사유("섹션 X 제목에", "X 제목이
+    45자")는 X.heading 이고, '요약' 은 summary 다. 분량·커버리지처럼 자리가 없는
+    사유가 있으면 전부 허용한다.
+    """
+    known = [p for p, _ in _walk(brief)]
+    text = " ".join(reasons)
+    if not any(p[:-3] in text for p in known) and "요약" not in text and "제목" not in text \
+            or any(("분량" in r or "커버리지" in r) for r in reasons):
+        return set(known)
+    # 영문만 비었으면 영문 칸만 연다. 9/21 시험에서 lead.en 만 비었는데 모델이
+    # lead.ko 까지 새로 써 왔다 — 멀쩡한 한국어를 새 주사위에 걸 이유가 없다.
+    en_only = set()
+    for m in re.finditer(r"(\S+)\.en 가 비었다|(\S+)\.ko 에 대응하는 영문이 없다", text):
+        en_only.add(m.group(1) or m.group(2))
+    both = set()
+    for r in reasons:
+        if re.search(r"\.en 가 비었다|에 대응하는 영문이 없다", r):
+            continue
+        both |= {p[:-3] for p in known if p[:-3] in r}
+        for m in re.finditer(r"섹션 (\S+) 제목|(\S+) 제목이 \d+자", r):
+            both.add(f"{m.group(1) or m.group(2)}.heading")
+        if "요약" in r:
+            both.add("summary")
+    out = set()
+    for p in known:
+        stem = p[:-3]
+        if stem in both or (stem in en_only and p.endswith(".en")):
+            out.add(p)
+    return out or set(known)
+
+
+def apply_patch(brief, patch, allowed=None, changed=None):
     """수리 결과({경로: 새 글})를 글에 넣는다. 넣은 자리 수를 돌려준다.
 
-    모르는 경로·빈 값은 버린다. 그래서 수리 모델이 엉뚱한 키를 내도 글이
-    깨지지 않는다 — 안 고쳐졌을 뿐이고, 그건 다음 검사에서 드러난다.
+    모르는 경로·빈 값·허용되지 않은 자리는 버린다. 그래서 수리 모델이 엉뚱한
+    키를 내거나 사유에 없는 문단까지 손대도 글이 깨지지 않는다.
+
+    모델이 조각 대신 글 전체를 돌려주는 날이 있다(9/21 시험 — 그래서 0곳으로
+    끝났다). 그러면 원문과 다른 자리만 골라 조각으로 바꿔 넣는다.
     """
     if not isinstance(patch, dict):
         return 0
     known = {p for p, _ in _walk(brief)}
+    if allowed is None:
+        allowed = known
+    if any(k in ("title", "lead", "summary", "sections") for k in patch):
+        before = dict(_walk(brief))
+        patch = {p: v for p, v in _walk(patch) if v.strip() and v != before.get(p)}
     n = 0
     for k, v in patch.items():
-        if k in known and isinstance(v, str) and v.strip() and _set_path(brief, k, v.strip()):
+        if (k in known and k in allowed and isinstance(v, str) and v.strip()
+                and _set_path(brief, k, v.strip())):
             n += 1
+            if changed is not None:
+                changed.append(k)
     return n
+
+
+def _repair_prompt(brief, reasons):
+    """수리 모델에게 줄 글. 문서를 통째로 주지 않는다.
+
+    9/21 시험 둘 다 모델이 조각 대신 글 전체를 되돌려 보냈다(출력 8,000 토큰 ·
+    $0.15). "전체를 돌려주지 마라" 고 써도 소용없었다 — 손에 문서가 있으니
+    문서를 낸다. 그래서 문서를 주지 않는다. 사유가 가리킨 칸만 현재 글과 함께
+    목록으로 주고, 나머지는 제목·섹션 제목만 참고로 준다. 되돌려 보낼 문서가
+    없으니 답은 고친 칸뿐이다.
+    """
+    allowed = _allowed_paths(brief, reasons)
+    cur = dict(_walk(brief))
+    fields = [p for p in cur if p in allowed]
+    # 영문 칸만 열린 자리는 한국어 원문을 읽기용으로 같이 준다 — 옮길 글이 있어야 한다.
+    ref = [p[:-3] + ".ko" for p in fields if p.endswith(".en") and p[:-3] + ".ko" not in allowed]
+    rules = RULES[RULES.index("지켜야 할 것"):RULES.index("출력 형식")]
+    heads = " / ".join(_plain((x.get("heading") or {}).get("ko") or "")
+                       for x in (brief.get("sections") or []) if isinstance(x, dict))
+    title = _plain((brief.get("title") or {}).get("ko") or "")
+    block = "\n".join(f"[{p}]\n{cur[p].strip() or '(비어 있음)'}\n" for p in fields)
+    if ref:
+        block += "\n읽기만 — 옮길 원문(고치지 말 것):\n\n" + "\n".join(
+            f"[{p}] (참고)\n{cur[p].strip()}\n" for p in ref)
+    ex = ", ".join(f'{{"path": "{p}", "text": "…"}}' for p in fields[:2]) \
+        or '{"path": "lead.en", "text": "…"}'
+    return (
+        "모닝 브리핑 한 편이 발행 전 검사에서 거부됐다. 거부 사유:\n"
+        + "\n".join(f"· {r}" for r in reasons)
+        + "\n\n아래 칸만 고친다. 다른 칸은 보이지도 않고 고칠 수도 없다.\n"
+        "고치는 법:\n"
+        "· '영문이 없다'·'en 가 비었다' → 그 자리의 한국어(.ko)를 영문 기사처럼 옮긴다. 같은 사실,"
+        " 같은 순서, 같은 종목 링크([Name](005930))와 **굵게**.\n"
+        "· 한국어(.ko)를 고쳤으면 짝인 영문(.en)도 같이 고친다.\n"
+        "· '제목이 …자' → 44자 이하로 줄인다. 그날 내용은 담는다.\n"
+        "· '업종이 다른 종목을 …묶었다' → 사유에 적힌 업종대로, 다르면 '옆 업종인' 처럼 다르다고 쓴다.\n"
+        "· '금지 표현' → 그 표현만 사실 병치로 바꾼다.\n"
+        "· '분량'·'커버리지 … 초과' → 지목된 쪽을 줄인다. 새 사실은 넣지 않는다.\n"
+        "· '나열이다' → 종목 이름과 등락률을 빼 링크 넷·등락률 대여섯 개 안으로 만든다. 뺀 종목은"
+        " 업종으로 묶어 한 구절로 말한다. 한국어·영문 같이.\n"
+        "· 새 숫자·새 사실을 넣지 마라. 사유와 상관없는 문장은 그대로 둔다.\n\n"
+        + rules
+        + f"\n참고 — 글 제목: {title}\n참고 — 섹션 제목: {heads}\n\n"
+        "고칠 칸(현재 글):\n\n" + block
+        + "\n출력은 JSON 하나뿐이다. changes 목록에 고친 칸만 넣는다 — path 는 위 [경로] 그대로, "
+        "text 는 그 칸에 들어갈 글 전체. 바꾸지 않는 칸은 넣지 마라. 설명은 쓰지 마라.\n"
+        f'{{"changes": [{ex}]}}\n'
+    ), allowed
+
+
+def _repair_schema(allowed):
+    """수리 출력의 틀. output_config.format 으로 넘겨 JSON 밖의 글을 한 글자도 못 내게 한다.
+
+    9/21 시험 셋 다 출력이 7,700~8,300 토큰이었다. 고칠 칸은 여섯이었는데 —
+    나머지는 설명과 사고였다. 틀로 묶으면 답은 고친 칸의 글뿐이다.
+    """
+    return {
+        "type": "object",
+        "properties": {"changes": {"type": "array", "items": {
+            "type": "object",
+            "properties": {"path": {"type": "string", "enum": sorted(allowed)},
+                           "text": {"type": "string"}},
+            "required": ["path", "text"], "additionalProperties": False}}},
+        "required": ["changes"], "additionalProperties": False,
+    }
+
+
+def _patch_of(obj):
+    """수리 모델의 답을 {경로: 새 글} 로. {"changes":[{"path","text"}]} 도, 옛 모양(경로가
+    바로 키)도, 글 전체를 돌려준 것도(apply_patch 가 조각으로 가른다) 받는다."""
+    if isinstance(obj, dict) and isinstance(obj.get("changes"), list):
+        return {c.get("path"): c.get("text") for c in obj["changes"]
+                if isinstance(c, dict) and isinstance(c.get("path"), str)}
+    return obj
 
 
 def repair(cl, brief, reasons):
     """검사에 걸린 자리만 고친다 — 글 전체를 다시 쓰지 않는다.
 
     왜. 1차 글이 거부되면 전에는 Opus 로 처음부터 다시 썼다($0.31). 그런데
-    거부 사유는 대개 '영문이 비었다'·'소제목이 길다'·'업종을 잘못 묶었다'
-    같은 한두 자리다. 그 자리만 Sonnet 에게 고치게 하면 $0.05 안팎이고,
-    잘 쓴 나머지 문단을 새 주사위에 걸지 않는다. 9/18 에 한 편 내려고 다섯 번
-    생성한 뒤에 만들었다.
+    거부 사유는 대개 '영문이 비었다'·'소제목이 길다'·'나열이다' 같은 한두
+    자리다. 그 자리만 Sonnet 에게 고치게 하면 $0.05 안팎이고, 잘 쓴 나머지
+    문단을 새 주사위에 걸지 않는다. 9/18 에 한 편 내려고 다섯 번 생성한 뒤에
+    만들었다.
 
     돌려주는 것: (고친 자리 수, usage). 0 이면 부르는 쪽이 포기한다.
     """
-    paths = [p for p, _ in _walk(brief)]
-    rules = RULES[RULES.index("지켜야 할 것"):RULES.index("출력 형식")]
-    prompt = (
-        "아래 모닝 브리핑(JSON)이 발행 전 검사에서 거부됐다. 거부 사유:\n"
-        + "\n".join(f"· {r}" for r in reasons)
-        + "\n\n고칠 자리만 고쳐라. 글 전체를 다시 쓰지 마라. 사유에 없는 자리는 손대지 마라.\n"
-        "출력은 JSON 객체 하나 — 키는 아래 경로 중 하나, 값은 그 자리에 들어갈 글 전체"
-        "(부분이 아니라 통째로).\n"
-        "쓸 수 있는 경로: " + ", ".join(paths) + "\n\n"
-        "고치는 법:\n"
-        "· '영문이 없다'·'en 가 비었다' → 그 자리의 한국어를 영문 기사처럼 옮긴다. 같은 사실,"
-        " 같은 순서, 같은 종목 링크([Name](005930))와 **굵게**.\n"
-        "· 한국어를 고쳤으면 대응하는 영문(같은 경로의 .en)도 같이 고친다.\n"
-        "· '제목이 …자' → 44자 이하로 줄인다. 그날 내용은 담는다.\n"
-        "· '업종이 다른 종목을 …묶었다' → 사유에 적힌 업종대로, 다르면 '옆 업종인' 처럼 다르다고 쓴다.\n"
-        "· '금지 표현' → 그 표현만 사실 병치로 바꾼다.\n"
-        "· '분량'·'커버리지 … 초과' → 지목된 쪽 문단을 줄인다. 새 사실은 넣지 않는다.\n"
-        "· 새 숫자·새 사실을 넣지 마라. 아래 규칙은 그대로 지킨다.\n\n"
-        + rules
-        + "\n===JSON_START===\n{\"경로\": \"새 글\"}\n===JSON_END===\n\n"
-        "고칠 글:\n" + json.dumps(brief, ensure_ascii=False)
-    )
-    msg = cl.messages.create(model=REPAIR_MODEL, max_tokens=REPAIR_MAX_TOKENS,
-                             thinking={"type": "adaptive"},
-                             messages=[{"role": "user", "content": prompt}])
+    prompt, allowed = _repair_prompt(brief, reasons)
+    # 사고는 끈다. Sonnet 5 는 thinking 을 비워 두면 사고가 *켜진다* — 9/21 시험에서
+    # 출력 7,745 토큰 중 고친 글은 2,000 남짓이고 나머지가 사고였다. 옮기고 줄이는
+    # 일이라 사고 없이 된다. 출력 틀(output_config.format)은 JSON 밖의 글을 막는다.
+    params = dict(model=REPAIR_MODEL, max_tokens=REPAIR_MAX_TOKENS,
+                  thinking={"type": "disabled"},
+                  messages=[{"role": "user", "content": prompt}])
     try:
-        patch = parse(_text_of(msg))
+        msg = cl.messages.create(output_config={"format": {
+            "type": "json_schema", "schema": _repair_schema(allowed)}}, **params)
+    except Exception as e:
+        # 틀 자체를 API 가 안 받는 날(400) — 그날 브리핑을 잃는 것보다 자유 출력이 낫다.
+        if type(e).__name__ != "BadRequestError":
+            raise
+        log(f"⚠️ 수리 출력 틀을 못 받았다 — 자유 출력으로 부른다: {e}")
+        msg = cl.messages.create(**params)
+    try:
+        patch = _patch_of(parse(_text_of(msg)))
     except Exception as e:
         log(f"⚠️ 수리 결과를 읽을 수 없다: {type(e).__name__} {e}")
         return 0, msg.usage
-    return apply_patch(brief, patch), msg.usage
+    changed = []
+    n = apply_patch(brief, patch, allowed, changed)
+    if changed:
+        log("· 수리한 자리: " + ", ".join(changed))
+    return n, msg.usage
 
 
 BOLD_CODE = re.compile(r"\*\*([^*\n]{1,80})\*\*\s*\((\d{6})\)")
@@ -1499,7 +1630,9 @@ def _ko_texts(brief):
 _WEEK_SELF = re.compile(r"^\s*(?:[월화수목금토일]요일|초|중반|후반|말|주말)")
 # 두 시점을 잇는 말. 이게 사이에 끼면 앞뒤 날짜는 서로 다른 일을 가리킨다 —
 # "9월 12일 공시 뒤 다음 주", "이번 주 후반부터 9월 24일 연휴".
-_WEEK_SEQ = re.compile(r"부터|까지|이후|이전|뒤|후|전에|앞서|지나|이어|다음")
+# '없·비어' — "이번 주에는 없고 9월 29일 JOLTS" 는 이번 주가 비었다는 말이고 9월
+# 29일은 그다음 얘기다. 9/21 시험 생성이 이 꼴로 걸렸다. 모르면 판정하지 않는다.
+_WEEK_SEQ = re.compile(r"부터|까지|이후|이전|뒤|후|전에|앞서|지나|이어|다음|없|비어")
 _WEEK_AFTER, _WEEK_BEFORE = 10, 8
 
 
@@ -1593,6 +1726,38 @@ def check_weeks(brief, facts):
             got = " · ".join(f"{_wk(d)}={week_tag(d, today)}" for d in ds[:3])
             bad.append(f"섹션 {sec.get('id')} 제목에 '{word}' — 본문의 날짜는 {got} 다"
                        f" (오늘 {_wk(today)})")
+    return bad
+
+
+# 이 수를 넘으면 나열로 본다. 프롬프트는 넷·대여섯을 말하고 여기는 그보다 조금
+# 위에서 잡는다 — 한두 개 차이로 수리 호출($0.05)을 부르지 않기 위해서다.
+LIST_LINKS, LIST_PCTS = 5, 7
+_PCT = re.compile(r"[-+]?\d+(?:[.,]\d+)?%")
+
+
+def check_listing(brief):
+    """한 문단에 종목·등락률을 늘어놓았는지.
+
+    9/21 사장: "너무 나열하는 느낌이 강하다". 그날 글에 종목 링크 7개·등락률
+    11개짜리 문단이 둘 있었다. 링크·숫자를 세는 것이라 짐작은 아니지만
+    어디까지가 나열인지는 취향의 선이므로, 문장 검사와 같이 2차에는 막지
+    않는다 — 1차에 걸리면 수리가 그 문단만 줄인다.
+    """
+    bad = []
+    for n, s in enumerate(brief.get("sections") or []):
+        sid = s.get("id") or f"#{n}"
+        for i, p in enumerate(s.get("paragraphs") if isinstance(s.get("paragraphs"), list) else []):
+            ko = (p.get("ko") or "") if isinstance(p, dict) else ""
+            links = len(LINK.findall(ko))
+            pcts = len(_PCT.findall(_plain(ko)))
+            if links > LIST_LINKS or pcts > LIST_PCTS:
+                bad.append(f"{sid}.p{i} 에 종목 링크 {links}개 · 등락률 {pcts}개 — 나열이다. "
+                           "링크는 넷까지, 등락률은 대여섯 개까지. 나머지는 이름을 빼고 업종으로 묶어 말하라")
+    # 리드·요약은 하루를 눌러 담는 자리라 조금 더 준다.
+    for key in ("lead", "summary"):
+        pcts = len(_PCT.findall(_plain(_lang(brief.get(key), "ko"))))
+        if pcts > LIST_PCTS + 2:
+            bad.append(f"{key}.ko 에 등락률 {pcts}개 — 나열이다. 대여섯 개까지만 두고 나머지는 말로 하라")
     return bad
 
 
@@ -1730,7 +1895,7 @@ def validate(brief, strict_coverage=True, facts=None, strict_text=True,
                            f"{', '.join(sorted(en_codes - ko_codes))}")
 
     bad += check_headings(brief, facts, slack=head_slack)
-    soft = check_weeks(brief, facts) + check_sector_grouping(brief, facts)
+    soft = check_weeks(brief, facts) + check_sector_grouping(brief, facts) + check_listing(brief)
     if strict_text:
         bad += soft
     else:
@@ -1809,6 +1974,39 @@ def cost(usage, batch=False, model=None):
             "usd": round(usd, 4), "krw": round(usd * USD_KRW)}
 
 
+def repair_only(path):
+    """수리 경로만 돌려 본다(시험용 · Sonnet 한 번 · $0.05 안팎).
+
+    나간 글 하나를 읽어 lead.en 을 비우고(영문 번역이 걸리게), 나열 검사가
+    잡는 문단은 그대로 둔 채 repair() 를 부른다. 9/21 live 시험에서 수리가
+    0곳으로 끝나 $0.55 를 버린 뒤, 생성($0.31) 없이 수리만 확인하는 길을 뒀다.
+    """
+    cl = _client()
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    brief = {k: doc[k] for k in ("title", "lead", "summary", "sections") if k in doc}
+    brief["lead"]["en"] = ""
+    reasons = validate(brief, strict_coverage=True, facts=None, strict_text=True,
+                       head_slack=HEAD_SLACK)
+    log("거부 사유(시험):\n" + "\n".join(f"· {r}" for r in reasons))
+    if not reasons:
+        log("· 잡히는 것이 없다 — 시험할 것이 없다")
+        return 0
+    n, usage = repair(cl, brief, reasons)
+    c = cost(usage, False, model=REPAIR_MODEL) or {}
+    log(f"· 수리: {n}곳 · ${c.get('usd', 0):.3f} (입력 {c.get('inputTokens', 0):,} / "
+        f"출력 {c.get('outputTokens', 0):,} 토큰)")
+    left = validate(brief, strict_coverage=False, facts=None, strict_text=False,
+                    head_slack=HEAD_SLACK)
+    for r in left:
+        log(f"  남은 사유: {r}")
+    listing_left = check_listing(brief)
+    for r in listing_left:
+        log(f"  나열 남음(2차 관용): {r}")
+    ok = n > 0 and not left and bool((brief["lead"].get("en") or "").strip())
+    log("✅ 수리 경로 정상" if ok else "❌ 수리 경로 실패")
+    return 0 if ok else 2
+
+
 # ────────────────────────────── main ──────────────────────────────
 
 def main():
@@ -1823,9 +2021,13 @@ def main():
     ap.add_argument("--allow-closed", action="store_true",
                     help="휴장일에도 만든다 (품질 확인용. 발행하는 글이 아니다)")
     ap.add_argument("--out", help="출력 폴더 (기본 data/briefs)")
+    ap.add_argument("--repair-only", metavar="BRIEF_JSON",
+                    help="시험용: 나간 글 하나를 읽어 수리 경로만 돌린다 (Sonnet 한 번 · 약 $0.05)")
     a = ap.parse_args()
 
     out_dir = Path(a.out) if a.out else OUT_DIR
+    if a.repair_only:
+        return repair_only(Path(a.repair_only))
 
     facts, fatal = gather(a.date, a.days, skip_news=a.no_news or a.facts_only)
     prompt = None

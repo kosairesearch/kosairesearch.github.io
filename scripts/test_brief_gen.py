@@ -382,9 +382,48 @@ ok("섹션 제목·문단이 바뀌었다",
    _b["sections"][0]["heading"]["ko"] == "새 제목" and _b["sections"][0]["paragraphs"][0]["en"] == "New first paragraph.")
 ok("다른 자리는 그대로", _b["sections"][0]["paragraphs"][0]["ko"] == good["sections"][0]["paragraphs"][0]["ko"])
 ok("patch 가 객체가 아니면 0", G.apply_patch(copy.deepcopy(good), ["x"]) == 0 and G.apply_patch(copy.deepcopy(good), None) == 0)
+# 9/21 시험: 수리 모델이 조각 대신 글 전체를 돌려줘 0곳으로 끝났다. 이제는 원문과
+# 다른 자리만 골라 끼운다. 그리고 사유가 가리킨 자리 밖은 손대지 못한다.
+_orig = copy.deepcopy(good)
+_whole = copy.deepcopy(good)
+_whole["lead"]["en"] = "Whole-document echo: new lead."
+_whole["sections"][0]["paragraphs"][0]["ko"] = "통째로 돌려준 글의 바뀐 문단."
+_whole["sections"][1]["heading"]["ko"] = "사유에 없는 자리를 멋대로 바꿈"
+_t = copy.deepcopy(_orig); _ch = []
+_sid0, _sid1 = good["sections"][0]["id"], good["sections"][1]["id"]
+ok("글 전체가 와도 바뀐 자리 셋을 조각으로 끼운다",
+   G.apply_patch(_t, _whole, None, _ch) == 3 and set(_ch) == {"lead.en", f"{_sid0}.p0.ko", f"{_sid1}.heading.ko"}, str(_ch))
+_allow = G._allowed_paths(_orig, ["lead.en 가 비었다", f"{_sid0}.p0 에 종목 링크 7개 · 등락률 10개 — 나열이다"])
+ok("사유가 가리킨 자리만 — 영문만 비었으면 영문 칸만, 나열 문단은 ko·en",
+   {"lead.en", f"{_sid0}.p0.ko", f"{_sid0}.p0.en"} <= _allow and "lead.ko" not in _allow and f"{_sid1}.heading.ko" not in _allow, str(sorted(_allow)))
+_t = copy.deepcopy(_orig); _ch = []
+ok("허용 밖(다른 섹션 제목)은 버린다", G.apply_patch(_t, _whole, _allow, _ch) == 2 and _t["sections"][1]["heading"]["ko"] == _orig["sections"][1]["heading"]["ko"], str(_ch))
+ok("제목 사유는 heading 을, '요약' 사유는 summary 를 연다",
+   f"{_sid1}.heading.ko" in G._allowed_paths(_orig, [f"섹션 {_sid1} 제목에 '이번 주' — …"])
+   and "summary.en" in G._allowed_paths(_orig, ["요약에 글머리표·번호가 있다"]))
+ok("분량 사유면 전부 연다", G._allowed_paths(_orig, ["분량 3,700자 — 1,000~3,600자를 벗어났다"]) == {p for p, _ in G._walk(_orig)})
+# 9/21 시험 둘 다 모델이 글 전체를 되돌려 보냈다($0.15). 문서를 안 주면 되돌릴 것이 없다.
+_src = copy.deepcopy(_orig)
+_src["sections"][1]["paragraphs"][0]["ko"] = "사유에 없는 문단의 표식 문장 QX7."   # 표본 문단은 서로 비슷해서 표식을 박는다
+_pr, _al = G._repair_prompt(_src, ["lead.en 가 비었다", f"{_sid0}.p0 에 종목 링크 7개 · 등락률 10개 — 나열이다"])
+ok("수리 프롬프트에 문서(JSON) 를 통째로 넣지 않는다", '"sections"' not in _pr and '"paragraphs"' not in _pr)
+ok("고칠 칸의 현재 글은 들어 있다", f"[{_sid0}.p0.ko]" in _pr and _src["sections"][0]["paragraphs"][0]["ko"][:30] in _pr)
+ok("영문만 비었으면 한국어 원문은 읽기용으로만 준다", "[lead.ko] (참고)" in _pr and "lead.ko" not in _al and "lead.en" in _al)
+ok("사유에 없는 문단은 들어 있지 않다", "QX7" not in _pr)
+ok("출력 예시가 changes 목록이고 path 가 그 칸 경로다", '"changes"' in _pr and '"path": "lead.en"' in _pr and "JSON_START" not in _pr)
+_sc = G._repair_schema(_al)
+ok("출력 틀 — path 는 허용된 경로만(enum) · 덧붙이는 키 없음",
+   _sc["properties"]["changes"]["items"]["properties"]["path"]["enum"] == sorted(_al)
+   and _sc["additionalProperties"] is False and _sc["properties"]["changes"]["items"]["additionalProperties"] is False
+   and _sc["properties"]["changes"]["items"]["required"] == ["path", "text"])
+ok("changes 목록을 {경로: 글} 로 — 모양이 틀린 항목은 버린다",
+   G._patch_of({"changes": [{"path": "lead.en", "text": "A"}, {"text": "no path"}, "junk", {"path": 3, "text": "x"}]}) == {"lead.en": "A"}
+   and G._patch_of({"lead.en": "B"}) == {"lead.en": "B"})
+ok("자리를 하나도 못 짚는 사유면 전부 연다(빈 enum 을 API 에 보내지 않는다)",
+   G._allowed_paths(_orig, ["제목이 이상하다"]) == {p for p, _ in G._walk(_orig)})
 _u = type("Usage", (), {"input_tokens": 20000, "output_tokens": 5000})()   # 아래 ⑬의 U() 와 같은 값
-ok("수리 모델은 Sonnet · 값이 그 단가로 계산된다 (2만/5천 토큰 → $0.135, Opus 면 $0.225)",
-   G.REPAIR_MODEL == "claude-sonnet-5" and abs(G.cost(_u, model="claude-sonnet-5")["usd"] - 0.135) < 1e-6
+ok("수리 모델은 Sonnet · 값이 그 단가($2/$10)로 계산된다 (2만/5천 토큰 → $0.09, Opus 면 $0.225)",
+   G.REPAIR_MODEL == "claude-sonnet-5" and abs(G.cost(_u, model="claude-sonnet-5")["usd"] - 0.09) < 1e-6
    and abs(G.cost(_u)["usd"] - 0.225) < 1e-6, str(G.cost(_u, model="claude-sonnet-5")))
 ok("출력 한도 24,000 — 사고 토큰까지 담는다", G.MAX_TOKENS >= 24000)
 # 30자 상한이 "A는 올랐고 B는 내렸다" 식 짧은 대비 제목만 살아남게 했다.
@@ -928,6 +967,10 @@ ok("'이번 주 월요일(9월 21일)' 은 거부 — 옆에 붙은 날짜는 �
    has(_lead("이번 주 월요일(9월 21일)에 결정된다."), "lead.ko"))
 ok("'이번 주에는 9월 16일(수)' 은 통과", not has(_lead("이번 주에는 9월 16일(수) FOMC 가 있다."), "lead.ko"))
 ok("'9월 21일 결정이 이번 주 안에' 는 여전히 거부", has(_lead("9월 21일 결정이 이번 주 안에 나온다."), "lead.ko"))
+# 9/21 시험 생성: "이번 주에는 없고 9월 29일 JOLTS" 를 짝지어 걸었다. '없·비어' 사이면 다른 시점이다.
+ok("'이번 주에는 없고 9월 21일 결정' 은 통과 (없고 = 다른 시점)", not has(_lead("미국 지표는 이번 주에는 없고 9월 21일 결정이 먼저다."), "lead.ko"),
+   str(_lead("미국 지표는 이번 주에는 없고 9월 21일 결정이 먼저다.")))
+ok("'이번 주 비어 있고 9월 21일' 도 통과", not has(_lead("일정은 이번 주 비어 있고 9월 21일 GDP 가 나온다."), "lead.ko"))
 # 제목이 '다음 주 월요일까지' 처럼 요일까지 박은 것은 본문 날짜가 전부 지난 주여도 틀린 게 아니다.
 b8 = sample()
 b8["sections"][3]["heading"] = {"ko": "삼부토건, 다음 주 월요일까지 거래소 결정이 걸려 있다",
@@ -962,6 +1005,39 @@ b12 = copy.deepcopy(b11)
 b12["sections"][3]["heading"]["ko"] = "이번 주 안에 미 지표 넷이 몰린다"
 ok("제목이 '이번 주' 뿐인데 본문 날짜가 다음 주면 여전히 거부",
    has(G.validate(b12, facts=F16), "제목에"), str(G.validate(b12, facts=F16)))
+
+# ⑯-5 나열 — 9/21 사장: "너무 나열하는 느낌이 강하다". 그날 글의 문단 그대로.
+print("\n⑯-5 종목·등락률을 늘어놓으면 잡는다 (2차에는 막지 않는다)")
+_listy = ("업종 상위는 전기장비 5.48%, 반도체 4.66%, 전자·부품 3.35% 순이었다. [SK하이닉스](000660)가 6.42% "
+          "오르며 하루 거래대금 8조 7,781억원을 혼자 소화했고, [삼성전자](005930)는 3.37% 올라 4조 5,543억원이 "
+          "붙었다. [SK스퀘어](402340)는 7.04%로 대형주 중 가장 앞섰다. 같은 전기장비 안에서는 [가온전선](000500)이 "
+          "25.53%, [LS ELECTRIC](010120)이 4.70% 올랐고, 옆 업종인 전자·부품에서 [대한광통신](010170)이 13.58%, "
+          "지주로 분류된 [LS에코에너지](229640)가 14.15% 상승해 전선·전력 쪽 이름들이 함께 움직였다.")
+_tight = ("업종 상위는 전기장비 5.48%, 반도체 4.66% 였다. [SK하이닉스](000660)가 6.42% 오르며 거래대금 8조 7,781억원을 "
+          "혼자 소화했고 [삼성전자](005930)가 3.37% 따라왔다. 전선·전력 쪽에서는 [가온전선](000500)이 25.53% 뛰며 "
+          "업종 전체가 함께 움직였다.")
+b13 = sample()
+b13["sections"][0]["paragraphs"][0]["ko"] = _listy
+b13["sections"][0]["paragraphs"][0]["en"] = "[SK Hynix](000660) [Samsung](005930) [SK Square](402340) [Gaon](000500) [LS ELECTRIC](010120) [Daehan](010170) [LS Eco](229640) rose."
+r13 = G.check_listing(b13)
+ok("링크 7개·등락률 10개 문단은 나열로 잡힌다", has(r13, "나열이다") and "링크 7개" in str(r13) and "등락률 10개" in str(r13), str(r13))
+ok("1차(기본)는 거부 사유에 든다", has(G.validate(b13, facts=F16), "나열이다"))
+ok("2차(strict_text=False)는 막지 않는다", not has(G.validate(b13, facts=F16, strict_text=False), "나열이다"))
+b14 = sample()
+b14["sections"][0]["paragraphs"][0]["ko"] = _tight
+b14["sections"][0]["paragraphs"][0]["en"] = "[SK Hynix](000660) [Samsung](005930) [Gaon](000500) rose."
+ok("링크 3개·등락률 5개로 줄인 문단은 통과", G.check_listing(b14) == [], str(G.check_listing(b14)))
+b15 = sample()
+b15["sections"][0]["paragraphs"][0]["ko"] = "S&P 500이 0.17%, 나스닥이 0.39% 오르는 동안 반도체 지수만 2.78% 뛰었고 VIX는 4.08% 내렸다. 마이크론이 3.92%, 엔비디아가 1.34% 올랐다. 다우는 0.18% 내렸다."
+ok("등락률 7개(경계)는 통과 — 한두 개 차이로 수리를 부르지 않는다", G.check_listing(b15) == [], str(G.check_listing(b15)))
+b16 = sample()
+b16["summary"]["ko"] = "A 1%, B 2%, C 3%, D 4%, E 5%, F 6%, G 7%, H 8%, I 9%, J 10% 올랐다."
+ok("요약에 등락률 10개면 나열", has(G.check_listing(b16), "summary.ko"))
+ok("요약 등락률 9개까지는 둔다", G.check_listing({**sample(), "summary": {"ko": "A 1%, B 2%, C 3%, D 4%, E 5%, F 6%, G 7%, H 8%, I 9%.", "en": "x"}}) == [])
+# 9/21 시험 생성: 요약 가운데의 줄표(" — ")를 글머리표로 보고 거부했다. 줄표는 문장부호다.
+ok("요약 가운데 줄표는 글머리표가 아니다", not G.SUM_LIST.search("유가는 내렸다 — 금리는 남았다. 원화는 7일째 밀렸다."))
+ok("가운뎃점 목록('· 항목')은 여전히 잡는다", bool(G.SUM_LIST.search("유가 · 금리 · 환율 순으로 본다 · 반도체")))
+ok("번호 목록('1. ')도 잡는다", bool(G.SUM_LIST.search("볼 것은 셋이다. 1. 유가 2. 금리")))
 ok("2차에도 제목 검사(길이·번역체)는 그대로 — 검사 자체가 꺼진 게 아니다",
    has(G.validate({**sample(), "sections": [dict(sample()["sections"][0], heading={"ko": "볼 것", "en": "x"})]},
                   facts=F16, strict_text=False), "볼 것"))
