@@ -962,6 +962,35 @@ b12 = copy.deepcopy(b11)
 b12["sections"][3]["heading"]["ko"] = "이번 주 안에 미 지표 넷이 몰린다"
 ok("제목이 '이번 주' 뿐인데 본문 날짜가 다음 주면 여전히 거부",
    has(G.validate(b12, facts=F16), "제목에"), str(G.validate(b12, facts=F16)))
+
+# ⑯-5 나열 — 9/21 사장: "너무 나열하는 느낌이 강하다". 그날 글의 문단 그대로.
+print("\n⑯-5 종목·등락률을 늘어놓으면 잡는다 (2차에는 막지 않는다)")
+_listy = ("업종 상위는 전기장비 5.48%, 반도체 4.66%, 전자·부품 3.35% 순이었다. [SK하이닉스](000660)가 6.42% "
+          "오르며 하루 거래대금 8조 7,781억원을 혼자 소화했고, [삼성전자](005930)는 3.37% 올라 4조 5,543억원이 "
+          "붙었다. [SK스퀘어](402340)는 7.04%로 대형주 중 가장 앞섰다. 같은 전기장비 안에서는 [가온전선](000500)이 "
+          "25.53%, [LS ELECTRIC](010120)이 4.70% 올랐고, 옆 업종인 전자·부품에서 [대한광통신](010170)이 13.58%, "
+          "지주로 분류된 [LS에코에너지](229640)가 14.15% 상승해 전선·전력 쪽 이름들이 함께 움직였다.")
+_tight = ("업종 상위는 전기장비 5.48%, 반도체 4.66% 였다. [SK하이닉스](000660)가 6.42% 오르며 거래대금 8조 7,781억원을 "
+          "혼자 소화했고 [삼성전자](005930)가 3.37% 따라왔다. 전선·전력 쪽에서는 [가온전선](000500)이 25.53% 뛰며 "
+          "업종 전체가 함께 움직였다.")
+b13 = sample()
+b13["sections"][0]["paragraphs"][0]["ko"] = _listy
+b13["sections"][0]["paragraphs"][0]["en"] = "[SK Hynix](000660) [Samsung](005930) [SK Square](402340) [Gaon](000500) [LS ELECTRIC](010120) [Daehan](010170) [LS Eco](229640) rose."
+r13 = G.check_listing(b13)
+ok("링크 7개·등락률 10개 문단은 나열로 잡힌다", has(r13, "나열이다") and "링크 7개" in str(r13) and "등락률 10개" in str(r13), str(r13))
+ok("1차(기본)는 거부 사유에 든다", has(G.validate(b13, facts=F16), "나열이다"))
+ok("2차(strict_text=False)는 막지 않는다", not has(G.validate(b13, facts=F16, strict_text=False), "나열이다"))
+b14 = sample()
+b14["sections"][0]["paragraphs"][0]["ko"] = _tight
+b14["sections"][0]["paragraphs"][0]["en"] = "[SK Hynix](000660) [Samsung](005930) [Gaon](000500) rose."
+ok("링크 3개·등락률 5개로 줄인 문단은 통과", G.check_listing(b14) == [], str(G.check_listing(b14)))
+b15 = sample()
+b15["sections"][0]["paragraphs"][0]["ko"] = "S&P 500이 0.17%, 나스닥이 0.39% 오르는 동안 반도체 지수만 2.78% 뛰었고 VIX는 4.08% 내렸다. 마이크론이 3.92%, 엔비디아가 1.34% 올랐다. 다우는 0.18% 내렸다."
+ok("등락률 7개(경계)는 통과 — 한두 개 차이로 수리를 부르지 않는다", G.check_listing(b15) == [], str(G.check_listing(b15)))
+b16 = sample()
+b16["summary"]["ko"] = "A 1%, B 2%, C 3%, D 4%, E 5%, F 6%, G 7%, H 8%, I 9%, J 10% 올랐다."
+ok("요약에 등락률 10개면 나열", has(G.check_listing(b16), "summary.ko"))
+ok("요약 등락률 9개까지는 둔다", G.check_listing({**sample(), "summary": {"ko": "A 1%, B 2%, C 3%, D 4%, E 5%, F 6%, G 7%, H 8%, I 9%.", "en": "x"}}) == [])
 ok("2차에도 제목 검사(길이·번역체)는 그대로 — 검사 자체가 꺼진 게 아니다",
    has(G.validate({**sample(), "sections": [dict(sample()["sections"][0], heading={"ko": "볼 것", "en": "x"})]},
                   facts=F16, strict_text=False), "볼 것"))

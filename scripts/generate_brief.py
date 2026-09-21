@@ -737,6 +737,11 @@ RULES = """이 글이 하는 일
   · 숫자는 근거다. 한 문장에 두어 개면 족하다. "S&P 500 +1.14%, 나스닥 +1.69%,
     다우 +0.61%" 처럼 셋을 차례로 적는 것은 시세표다 — 같은 방향이면 대표 하나,
     갈렸으면 갈린 둘만. "숫자로 보면 …" 하고 시세를 나열하는 문장은 쓰지 않는다.
+  · 종목을 늘어놓지 않는다. 한 문단에 종목 링크는 넷까지, 등락률 숫자는 대여섯
+    개까지다. 그 이상은 이름을 빼고 업종으로 묶어 말한다 — "조선은 HD현대가
+    6.52% 빠지며 업종 전체가 밀렸다" 로 충분하다. 삼성중공업·HD한국조선해양의
+    등락률까지 붙이면 시세표가 된다. 상승 상위·하락 상위를 순서대로 읽어 주지
+    마라. 독자는 표를 원하면 화면의 표를 본다. 글은 표가 못 하는 일을 한다.
   · 출처를 문장마다 달지 않는다. "연합뉴스는 …전했고 MBC는 …보도했다"는 기사
     모음이지 브리핑이 아니다. 인용이 꼭 필요한 곳에서 한 번만 밝힌다.
   · 중국·일본·홍콩 시장, 엔·위안, 해외 거시(일본은행·중국 지표·미국 고용·물가)는
@@ -797,6 +802,7 @@ chips · flows · calendar · fx … 그날 내용에 맞게). KOSAI 리포트�
 8. 요약(summary)은 이어지는 문장으로 쓴다. 줄바꿈·글머리표·번호를 쓰지 마라 —
    항목을 나눠 늘어놓으면 사람이 쓴 글이 아니라 기계가 뽑아낸 목록처럼 읽힌다.
    본문에 없는 사실을 요약에만 새로 쓰지 말고, 종목 링크와 굵게는 요약에 쓰지 않는다.
+   요약도 등락률 숫자는 대여섯 개면 족하다. 그날의 방향과 이유가 요약이지 시세가 아니다.
 9. 섹션 제목은 그날 그 섹션에서 가장 중요한 사실을 담는다. '간밤 뉴욕'·'볼 것'
    같은 빈 이름이나 '~에서'·'~에 대하여' 로 끝나는 번역체는 쓰지 마라. 기사 제목과
    같은 말을 섹션 제목으로 다시 쓰지 말고, 섹션끼리도 겹치지 않게 한다.
@@ -1173,6 +1179,8 @@ def repair(cl, brief, reasons):
         "· '업종이 다른 종목을 …묶었다' → 사유에 적힌 업종대로, 다르면 '옆 업종인' 처럼 다르다고 쓴다.\n"
         "· '금지 표현' → 그 표현만 사실 병치로 바꾼다.\n"
         "· '분량'·'커버리지 … 초과' → 지목된 쪽 문단을 줄인다. 새 사실은 넣지 않는다.\n"
+        "· '나열이다' → 지목된 문단에서 종목 이름과 등락률을 빼 링크 넷·등락률 대여섯 개 안으로"
+        " 만든다. 뺀 종목은 업종으로 묶어 한 구절로 말한다. 한국어와 영문을 같이 고친다.\n"
         "· 새 숫자·새 사실을 넣지 마라. 아래 규칙은 그대로 지킨다.\n\n"
         + rules
         + "\n===JSON_START===\n{\"경로\": \"새 글\"}\n===JSON_END===\n\n"
@@ -1596,6 +1604,38 @@ def check_weeks(brief, facts):
     return bad
 
 
+# 이 수를 넘으면 나열로 본다. 프롬프트는 넷·대여섯을 말하고 여기는 그보다 조금
+# 위에서 잡는다 — 한두 개 차이로 수리 호출($0.05)을 부르지 않기 위해서다.
+LIST_LINKS, LIST_PCTS = 5, 7
+_PCT = re.compile(r"[-+]?\d+(?:[.,]\d+)?%")
+
+
+def check_listing(brief):
+    """한 문단에 종목·등락률을 늘어놓았는지.
+
+    9/21 사장: "너무 나열하는 느낌이 강하다". 그날 글에 종목 링크 7개·등락률
+    11개짜리 문단이 둘 있었다. 링크·숫자를 세는 것이라 짐작은 아니지만
+    어디까지가 나열인지는 취향의 선이므로, 문장 검사와 같이 2차에는 막지
+    않는다 — 1차에 걸리면 수리가 그 문단만 줄인다.
+    """
+    bad = []
+    for n, s in enumerate(brief.get("sections") or []):
+        sid = s.get("id") or f"#{n}"
+        for i, p in enumerate(s.get("paragraphs") if isinstance(s.get("paragraphs"), list) else []):
+            ko = (p.get("ko") or "") if isinstance(p, dict) else ""
+            links = len(LINK.findall(ko))
+            pcts = len(_PCT.findall(_plain(ko)))
+            if links > LIST_LINKS or pcts > LIST_PCTS:
+                bad.append(f"{sid}.p{i} 에 종목 링크 {links}개 · 등락률 {pcts}개 — 나열이다. "
+                           "링크는 넷까지, 등락률은 대여섯 개까지. 나머지는 이름을 빼고 업종으로 묶어 말하라")
+    # 리드·요약은 하루를 눌러 담는 자리라 조금 더 준다.
+    for key in ("lead", "summary"):
+        pcts = len(_PCT.findall(_plain(_lang(brief.get(key), "ko"))))
+        if pcts > LIST_PCTS + 2:
+            bad.append(f"{key}.ko 에 등락률 {pcts}개 — 나열이다. 대여섯 개까지만 두고 나머지는 말로 하라")
+    return bad
+
+
 def check_sector_grouping(brief, facts):
     """'같은 부품 안에서도' 처럼 묶어 놓은 종목들의 업종이 정말 같은지.
 
@@ -1730,7 +1770,7 @@ def validate(brief, strict_coverage=True, facts=None, strict_text=True,
                            f"{', '.join(sorted(en_codes - ko_codes))}")
 
     bad += check_headings(brief, facts, slack=head_slack)
-    soft = check_weeks(brief, facts) + check_sector_grouping(brief, facts)
+    soft = check_weeks(brief, facts) + check_sector_grouping(brief, facts) + check_listing(brief)
     if strict_text:
         bad += soft
     else:
