@@ -1,0 +1,29 @@
+{
+ "batch_id": "msgbatch_01UZBKhvLcwSV73c6ziZ5A7X",
+ "created": "2026-09-22 09:12",
+ "model": "claude-opus-5",
+ "models": {
+  "950210": "claude-sonnet-5"
+ },
+ "tickers": [
+  "950210"
+ ],
+ "dataDate": "20260921",
+ "count": 1,
+ "usage": {
+  "claude-sonnet-5": {
+   "n": 1,
+   "in": 6148,
+   "cache_w": 71888,
+   "cache_r": 115074,
+   "out": 18631,
+   "search": 5,
+   "usd": 0.251
+  }
+ },
+ "collected": "2026-09-22 09:12",
+ "result": {
+  "ok": 1,
+  "fail": 0
+ }
+}
