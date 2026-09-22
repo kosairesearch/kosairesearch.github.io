@@ -29,6 +29,10 @@ on:
         description: '수리 경로만 (최근 나간 글의 영문 리드를 비우고 Sonnet 이 고치는지 · 약 $0.05)'
         type: boolean
         default: false
+      probe:
+        description: '재료 공급처 진단만 (지수·수급 주소가 살아 있는지 · 돈 안 듦)'
+        type: boolean
+        default: false
 
 jobs:
   replay:
@@ -46,7 +50,7 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: 다시 써 보기
-        if: ${{ !inputs.live && !inputs.repair_only }}
+        if: ${{ !inputs.live && !inputs.repair_only && !inputs.probe }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python3 scripts/brief_replay.py ${{ inputs.dates }}
@@ -79,6 +83,14 @@ jobs:
           F=$(ls data/briefs/20*.json | sort | tail -1)
           echo "시험 대상: $F" | tee -a $GITHUB_STEP_SUMMARY
           python scripts/generate_brief.py --repair-only "$F" 2>&1 | tee -a $GITHUB_STEP_SUMMARY
+
+      # ── 재료 공급처 진단. 러너의 네트워크에서만 답이 나오는 질문이다 — 샌드박스는
+      #    네이버·다음이 막혀 있다. API 호출이 없으니 돈이 들지 않는다. ──
+      - name: 재료 공급처 진단 (돈 안 듦)
+        if: ${{ inputs.probe }}
+        run: |
+          set -o pipefail
+          python scripts/probe_sources.py 2>&1 | tee -a $GITHUB_STEP_SUMMARY
 
       - name: 오늘 재료로 처음부터 한 편 (발행 안 함)
         if: ${{ inputs.live }}
