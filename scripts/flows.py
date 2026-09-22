@@ -384,7 +384,9 @@ def market(sosok, code, bizdate):
             log(f"· {name} 에 {bizdate} 행이 없다(가장 최근 {max(r[0] for r in rows)}) — 버린다")
             continue
         d, vals = picked
-        ok, why = _score(vals, named=bool(keys_used) and set(keys_used) <= NAMED_KEYS)
+        # keys_used 는 JSON 이면 [[키, 키, 키]], 라벨 파서면 ["라벨 인접값"] — 펴서 본다.
+        used = {k for ks in keys_used for k in (ks if isinstance(ks, list) else [ks])}
+        ok, why = _score(vals, named=bool(used) and used <= NAMED_KEYS)
         if not ok:
             log(f"· {name} 검증 실패({why}) — 버린다 · 값 {vals}")
             continue

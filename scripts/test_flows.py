@@ -202,6 +202,33 @@ ok("후보 맨 앞 둘이 살아 있는 주소다",
    [c[0] for c in F.candidates("01", "KOSPI", "20260921")[:2]] == ["모바일 API · trend", "다음 market_index/days"])
 ok("다음 요청에는 Referer 가 있다", "daum" in F.DAUM_UA["Referer"])
 
+print("\n⑨ market() 을 통째로 — 응답만 흉내 내고 나머지는 실제 코드")
+_orig_fetch = F._fetch
+def _fake(url, headers):
+    if "/trend" in url:
+        return TREND, "json", 100
+    if "daum" in url:
+        return DAUM, "json", 900
+    raise RuntimeError("404")
+F._fetch = _fake
+try:
+    got = F.market("01", "KOSPI", "20260921")
+    ok("네이버 trend 로 그날 값을 받는다", got and got["source"] == "모바일 API · trend"
+       and got["date"] == "2026-09-21" and got["values"] == {"개인": -15996, "외국인": 2010, "기관": -479}, str(got))
+    # 장중: 네이버 trend 가 오늘 미완성 행만 준다 → 건너뛰고 다음의 9/21 행을 쓴다
+    def _fake2(url, headers):
+        if "/trend" in url:
+            return {**TREND, "bizdate": "20260922"}, "json", 100
+        return _fake(url, headers)
+    F._fetch = _fake2
+    got2 = F.market("01", "KOSPI", "20260921")
+    ok("거래일이 안 맞으면 다음 후보(다음 · 원→억원)로 넘어간다", got2 and got2["source"] == "다음 market_index/days"
+       and got2["date"] == "2026-09-21" and got2["values"]["외국인"] == 5000 and got2["values"]["개인"] == -8200, str(got2))
+    F._fetch = lambda url, headers: (_ for _ in ()).throw(RuntimeError("죽었다"))
+    ok("전부 죽으면 None (브리핑은 '수급 못 받았다' 로 간다)", F.market("01", "KOSPI", "20260921") is None)
+finally:
+    F._fetch = _orig_fetch
+
 print("\n" + "=" * 60)
 
 if FAIL:
