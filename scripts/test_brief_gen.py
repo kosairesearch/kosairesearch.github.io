@@ -410,6 +410,10 @@ ok("수리 프롬프트에 문서(JSON) 를 통째로 넣지 않는다", '"secti
 ok("고칠 칸의 현재 글은 들어 있다", f"[{_sid0}.p0.ko]" in _pr and _src["sections"][0]["paragraphs"][0]["ko"][:30] in _pr)
 ok("영문만 비었으면 한국어 원문은 읽기용으로만 준다", "[lead.ko] (참고)" in _pr and "lead.ko" not in _al and "lead.en" in _al)
 ok("사유에 없는 문단은 들어 있지 않다", "QX7" not in _pr)
+ok("나열 사유에는 지워야 할 개수를 숫자로 준다 (9/23 실전 — 10개 그대로 나왔다)",
+   f"[{_sid0}.p0.ko] 지금 종목 링크 7개 · 등락률 숫자 10개 → 링크 3개, 등락률 숫자 5개를 지워야 통과한다" in _pr, _pr[:600])
+_pr2, _ = G._repair_prompt(_src, ["summary.ko 에 등락률 11개 — 나열이다. 대여섯 개까지만 두고 나머지는 말로 하라"])
+ok("요약 나열도 개수로", "[summary.ko] 지금 등락률 숫자 11개 → 5개를 지워야 통과한다" in _pr2, _pr2[:400])
 ok("출력 예시가 changes 목록이고 path 가 그 칸 경로다", '"changes"' in _pr and '"path": "lead.en"' in _pr and "JSON_START" not in _pr)
 _sc = G._repair_schema(_al)
 ok("출력 틀 — path 는 허용된 경로만(enum) · 덧붙이는 키 없음",

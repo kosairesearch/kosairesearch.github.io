@@ -217,8 +217,13 @@ for p_ in targets:
     body = strip_notes(p_.read_text(errors="ignore"))
     for ln_no, ln in enumerate(body.split("\n"), 1):
         for g in GHOST:
-            if g in ln:
-                ghost.append(f"{p_.relative_to(ROOT).as_posix()}:{ln_no}:{g}")
+            if g not in ln:
+                continue
+            # 법원의 자율 구조조정 지원(ARS) 프로그램은 전화 창구가 아니다. 9/23 브리핑이
+            # "ARS 협의기간" 을 쓰자 여기서 걸렸다 — 그 말은 기업 뉴스에 계속 나온다.
+            if g == "ARS" and re.search(r"ARS\s*(협의|프로그램|제도)", ln):
+                continue
+            ghost.append(f"{p_.relative_to(ROOT).as_posix()}:{ln_no}:{g}")
 check(not ghost, "없는 창구(고객센터 등)로 안내하지 않음", ", ".join(ghost[:6]))
 
 # 13) 메뉴 이름이 페이지마다 같은가
