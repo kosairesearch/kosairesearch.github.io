@@ -72,6 +72,85 @@ def log(*a):
 
 _MEMO = {}
 
+# ── 국내 지수의 예비 — 네이버 모바일 지수 API ──
+#
+# 야후는 코스피·코스닥 종가를 하루 늦게 올리는 날이 있다. 9/18 과 9/22 아침
+# 실행에서 직전 거래일 값 대신 그 전날 값이 왔고, 브리핑은 "지수 날짜가 다르다"
+# 며 지수를 아예 쓰지 않았다 — 코스피 숫자가 없는 코스피 브리핑이 나갔다.
+# 네이버 모바일 API 는 5일치 종가를 준다(9/22 러너 실측 · 필드 localTradedAt ·
+# closePrice · fluctuationsRatio). 야후 날짜가 어긋나면 여기서 그날 값을 받는다.
+# 등락률은 우리가 앞뒤 종가로 계산한다 — 부호 규칙을 믿지 않으려고.
+NAVER_INDEX = {"kospi": "KOSPI", "kosdaq": "KOSDAQ"}
+NAVER_MOB_UA = {
+    "User-Agent": ("Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) "
+                   "AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile Safari/604.1"),
+    "Referer": "https://m.stock.naver.com/",
+    "Accept": "application/json",
+}
+
+
+def _num(s):
+    """'3,432.11' · '+2.66' · 3432.11 → float. 못 읽으면 None."""
+    if isinstance(s, (int, float)):
+        return float(s)
+    if not isinstance(s, str):
+        return None
+    t = s.replace(",", "").replace("+", "").strip()
+    try:
+        return float(t)
+    except ValueError:
+        return None
+
+
+def parse_naver_index(rows, want_date=None):
+    """네이버 지수 API 의 행들 → {date, close, change, prev}.
+
+    행 순서를 믿지 않고 날짜로 정렬한다. want_date 를 주면 그날 행이 있어야
+    하고(없으면 None — 다른 날 값을 그날 값인 척 주지 않는다), 등락률은 바로
+    앞 행의 종가로 계산한다.
+    """
+    pts = {}
+    for it in rows or []:
+        if not isinstance(it, dict):
+            continue
+        d = "".join(ch for ch in str(it.get("localTradedAt") or "") if ch.isdigit())[:8]
+        c = _num(it.get("closePrice"))
+        if len(d) == 8 and c is not None:
+            pts[f"{d[:4]}-{d[4:6]}-{d[6:]}"] = c
+    days = sorted(pts)
+    if not days:
+        return None
+    if want_date:
+        if want_date not in pts:
+            return None
+        i = days.index(want_date)
+    else:
+        i = len(days) - 1
+    d, c = days[i], pts[days[i]]
+    prev = pts[days[i - 1]] if i > 0 else None
+    return {"date": d, "close": round(c, 2),
+            "change": round((c / prev - 1) * 100, 2) if prev else None,
+            "prev": round(prev, 2) if prev else None}
+
+
+def naver_index(key, want_date=None):
+    """코스피·코스닥 종가를 네이버에서. 실패하면 None — 부르는 쪽이 야후 값을 둔다."""
+    code = NAVER_INDEX.get(key)
+    if not code:
+        return None
+    try:
+        import requests
+        r = requests.get(f"https://m.stock.naver.com/api/index/{code}/price?pageSize=5",
+                         headers=NAVER_MOB_UA, timeout=15)
+        r.raise_for_status()
+        got = parse_naver_index(r.json(), want_date)
+    except Exception as e:
+        log(f"· 네이버 지수({code}) 실패: {type(e).__name__} {str(e)[:80]}")
+        return None
+    if not got:
+        log(f"· 네이버 지수({code}) 에 {want_date or '최근'} 행이 없다")
+    return got
+
 
 def fetch(period="10d"):
     """심볼별로 최근 종가와 전일 대비 등락률. 실패한 심볼은 빠지고 나머지는 남는다.

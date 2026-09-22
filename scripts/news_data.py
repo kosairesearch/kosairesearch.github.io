@@ -74,6 +74,12 @@ QUERIES_KO = [
     ("국내 수출입·무역", "수출 무역수지"),
     ("국내 정책·제도", "금융위원회 증시"),
 ]
+# 핵심 갈래의 예비 검색어. 9/22 아침 '코스피 마감 외국인 순매수' 가 0건이었다 —
+# 다른 갈래는 다 왔으니 막힌 게 아니라 낱말 셋이 다 든 제목이 없었던 것이다.
+# 좁은 검색어가 비면 넓은 것으로 한 번 더 찾는다. 예비까지 비면 그때 막힌 것이고,
+# collect() 의 경보가 그렇게 판정한다.
+FALLBACK_KO = {"시황": "코스피 마감"}
+FALLBACK_EN = {"미국 지수": "Wall Street stocks close"}
 QUERIES_EN = [
     ("미국 지수", "stock market close S&P 500 Nasdaq"),
     ("미국 반도체", "semiconductor stocks Nvidia Broadcom"),
@@ -251,8 +257,14 @@ def collect(tickers=None, names=None):
     groups = {}
     for label, q in QUERIES_KO:
         groups[label] = rss(q, "ko", "KR", "KR:ko") + naver(q)
+        if not groups[label] and label in FALLBACK_KO:
+            groups[label] = rss(FALLBACK_KO[label], "ko", "KR", "KR:ko")
+            log(f"· «{q}» 0건 → 예비 «{FALLBACK_KO[label]}» {len(groups[label])}건")
     for label, q in QUERIES_EN:
         groups[label] = rss(q, "en-US", "US", "US:en")
+        if not groups[label] and label in FALLBACK_EN:
+            groups[label] = rss(FALLBACK_EN[label], "en-US", "US", "US:en")
+            log(f"· «{q}» 0건 → 예비 «{FALLBACK_EN[label]}» {len(groups[label])}건")
 
     empty = [k for k, v in groups.items() if not v]
     problems = []

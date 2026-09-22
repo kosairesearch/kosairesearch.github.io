@@ -14,10 +14,11 @@
   1. 지수 — 네이버 모바일 지수 API 의 원본 행을 그대로 보여 준다(필드 이름·
      날짜·부호 규칙을 확인하려고).
   2. 수급 — 후보 주소들을 차례로 찔러 상태·크기·JSON 뼈대를 보여 준다.
-  3. 발견 — 네이버 새 금융 사이트(React)의 스크립트를 내려받아 'investor' 가
-     들어간 API 경로를 긁어낸다. 추측 대신 실제 주소를 찾는다.
+  3. 수급 수집기를 실제로 돌려 브리핑이 받을 값을 보여 준다.
+  4. 지수 예비(야후가 늦으면 네이버)까지 합친 결과를 보여 준다.
 """
 import json
+import os
 import re
 import sys
 
@@ -100,40 +101,21 @@ def main():
     for name, url, h in cands:
         show(name, url, h, raw=500)
 
-    print("\n■ 3. 발견 — 새 네이버 금융 사이트 스크립트에서 API 경로 긁기")
-    found = set()
-    for page in ("https://finance.naver.com/market/stock/kr/index",
-                 "https://finance.naver.com/market/stock/kr/investor",
-                 "https://finance.naver.com/sise/sise_index.naver?code=KOSPI"):
-        r, info = get(page, WEB_UA)
-        print(f"\n[페이지] {page}\n   {info}")
-        if r is None or r.status_code != 200:
-            continue
-        html = r.text
-        for m in re.finditer(r"https?://[^\s\"'<>]*api[^\s\"'<>]*", html):
-            found.add(m.group(0)[:160])
-        srcs = re.findall(r"<script[^>]+src=[\"']([^\"']+)[\"']", html)
-        print(f"   스크립트 {len(srcs)}개")
-        total = 0
-        for s in srcs[:25]:
-            u = s if s.startswith("http") else ("https://finance.naver.com" + s if s.startswith("/") else s)
-            rr, _ = get(u, WEB_UA)
-            if rr is None or rr.status_code != 200:
-                continue
-            js = rr.text
-            total += len(js)
-            for m in re.finditer(r"[\"'`](/?(?:api|[a-z0-9.-]*\.naver\.com)[^\"'`\s]{0,120}(?:investor|Investor|deal|Deal|trend|Trend)[^\"'`\s]{0,80})[\"'`]", js):
-                found.add(m.group(1)[:200])
-            for m in re.finditer(r"[\"'`]((?:https?:)?//[a-z0-9.-]*stock\.naver\.com/api[^\"'`\s]{0,120})[\"'`]", js):
-                found.add(m.group(1)[:200])
-            if total > 12_000_000:
-                break
-        print(f"   내려받은 스크립트 {total:,}바이트")
-    print("\n   후보 경로:")
-    for f in sorted(found):
-        print("   ·", f)
-    if not found:
-        print("   (없음)")
+    print("\n■ 3. 수급 수집기(flows.collect) 실제 결과 — 브리핑이 받는 그대로")
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import flows
+    d = flows.collect()
+    print(flows.summarize(d))
+
+    print("\n■ 4. 지수(야후 → 네이버 예비) — brief_data.index_and_flows")
+    from market_data import open_today
+    _, around = open_today()
+    prev = ((around or {}).get("prev") or "").replace("-", "")
+    from brief_data import index_and_flows
+    idx, fl = index_and_flows(prev)
+    print(f"   직전 거래일 {prev}")
+    print(f"   지수: {json.dumps(idx, ensure_ascii=False)}")
+    print(f"   수급: {json.dumps(fl, ensure_ascii=False)}")
     return 0
 
 

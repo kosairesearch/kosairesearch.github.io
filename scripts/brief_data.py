@@ -276,13 +276,31 @@ def index_and_flows(trade_date):
     flows = {}
     try:
         from flows import collect as _flows
-        f = _flows()
+        f = _flows(trade_date)          # 지수·장폭과 같은 날의 수급만 받는다
         for key in ("kospi", "kosdaq"):
             v = f.get(key)
             if v:
                 flows[key] = v["values"] | {"_date": v["date"]}
     except Exception as e:
         log(f"· 수급 조회 실패: {type(e).__name__} {e}")
+
+    # 야후가 하루 늦는 날(9/18 · 9/22)은 네이버에서 그날 값을 받는다. 그래도
+    # 못 받으면 아래에서 '날짜 불일치' 로 표시하고 지수는 쓰지 않는다 —
+    # 다른 날 값을 그날 값인 척 쓰는 것보다 빈 것이 낫다.
+    if trade_date:
+        want = f"{trade_date[:4]}-{trade_date[4:6]}-{trade_date[6:]}"
+        try:
+            from market_data import naver_index as _naver
+        except Exception:
+            _naver = None
+        for key, label in (("kospi", "코스피"), ("kosdaq", "코스닥")):
+            v = idx.get(key)
+            if v and v.get("date") == want:
+                continue
+            got = _naver(key, want) if _naver else None
+            if got:
+                log(f"· 지수({key}) 야후 {v.get('date') if v else '없음'} → 네이버 {got['date']} 값으로")
+                idx[key] = {"close": got["close"], "change": got["change"], "date": got["date"]}
 
     # 지수 날짜가 우리 시세 날짜와 다르면 표시해 둔다. 브리핑에서 "8월 14일
     # 코스피"라고 쓰는데 실제로는 다른 날 값이면 안 된다.
