@@ -81,6 +81,32 @@ def _write_same_shape(path, doc):
         fp.write(out)
 
 
+def _mcap_off(val, tol=0.02):
+    """리포트 안의 시가총액이 주가×주식수와 어긋나는가.
+
+    9/21 까지는 주식수를 오늘 값으로 바꾸면서 시가총액은 리포트 만들 때 값을
+    그대로 뒀다. 그래서 고친 리포트마다 셋이 서로 다른 날 값이 됐고, 숫자
+    삼각대조가 '시총불일치' 로 잡았다(한탑 15% · 프리티 37%). 상장주식수와
+    거래소 시총의 1% 안팎 차이는 원래 있는 것이라 2% 부터 본다."""
+    m, p, sh = val.get("mcap"), val.get("price"), val.get("shares")
+    if not (m and p and sh):
+        return False
+    return abs(m / (p * sh / 1e12) - 1) > tol
+
+
+def _resync_price(val, s):
+    """주가·시가총액을 오늘 줄에서 다시 받고, 주가로 만드는 값(PER·PBR)도 같이 맞춘다.
+    ② 갈래가 하는 것과 같은 산식이다."""
+    px = s.get("price")
+    if px:
+        val["price"] = px
+        val["per"] = round(px / val["eps"], 2) if val.get("eps") else None
+        val["pbr"] = round(px / val["bps"], 2) if val.get("bps") else None
+        val["pbr_krx"] = round(px / val["bps_krx"], 2) if val.get("bps_krx") else None
+    if s.get("mcap"):
+        val["mcap"] = s["mcap"]
+
+
 def clean_factor(r):
     """r 이 n배 또는 1/n배에 (오차 1% 안에서) 맞으면 그 값을, 아니면 None."""
     for n in range(2, MAX_N + 1):
@@ -165,7 +191,7 @@ def main():
                    + glob.glob(os.path.join(ROOT, "data", "reports", "*.json")))
 
     skipped = fixed = cleared = 0
-    fixes, clears = [], []
+    fixes, clears, resynced = [], [], []
 
     for path in files:
         tk = os.path.basename(path)[:-5]
@@ -185,7 +211,13 @@ def main():
             continue
         ratio = old_sh / new_sh
         if abs(ratio - 1) <= DRIFT:
-            skipped += 1
+            if val.get("shares_patched") and _mcap_off(val):
+                _resync_price(val, s)
+                resynced.append((s.get("name", tk), tk))
+                if APPLY:
+                    _write_same_shape(path, doc)
+            else:
+                skipped += 1
             continue
 
         name = s.get("name", tk)
@@ -201,6 +233,8 @@ def main():
                 if val.get(k):
                     val[k] = int(round(val[k] / div))
             val["shares"] = new_sh
+            if s.get("mcap"):
+                val["mcap"] = s["mcap"]      # 주가·주식수·시총은 같은 날 값이어야 한다
             if price:
                 val["price"] = price
                 val["per"] = round(price / val["eps"], 2) if val.get("eps") else None
@@ -216,6 +250,8 @@ def main():
             for k in ("eps", "bps", "per", "pbr", "bps_krx", "pbr_krx"):
                 val[k] = None
             val["shares"] = new_sh
+            if s.get("mcap"):
+                val["mcap"] = s["mcap"]      # 주가·주식수·시총은 같은 날 값이어야 한다
             if price:
                 val["price"] = price
             val["shares_patched"] = {"on": TODAY, "was": old_sh, "now": new_sh,
@@ -276,6 +312,7 @@ def main():
     log(f"  ① 그대로 둠 (±{int(DRIFT*100)}% 잔변동)  {skipped:,}")
     log(f"  ② 배수로 환산                  {fixed:,}")
     log(f"  ③ 값을 숨김                    {cleared:,}")
+    log(f"  전에 고친 것의 시총을 오늘 값으로   {len(resynced):,}")
     log(f"\n  주당이익 기준이 섞여 바로잡음   {len(eps_fixed):,}")
     log(f"  두 공시가 어긋나 숨김          {len(eps_hidden):,}")
     for name, tk, a, b, r in sorted(eps_fixed, key=lambda x: -x[4])[:10]:
@@ -285,6 +322,9 @@ def main():
         log("\n② 환산한 종목 (상위 15)")
         for n, t, r, f, b, e in sorted(fixes, key=lambda x: -x[2])[:15]:
             log(f"   {n}({t})  {r:.2f}배 → EPS·BPS ×{f:g}   BPS={b} EPS={e}")
+    if resynced:
+        log("\n시총을 오늘 값으로 맞춘 종목: " + ", ".join(f"{n}({t})" for n, t in resynced[:20])
+            + (" …" if len(resynced) > 20 else ""))
     if clears:
         log("\n③ 숨긴 종목 (상위 15) — 리포트를 다시 만들면 채워진다")
         for n, t, r in sorted(clears, key=lambda x: -abs(x[2] - 1))[:15]:
