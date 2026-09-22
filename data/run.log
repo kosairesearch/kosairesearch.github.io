@@ -1,5 +1,5 @@
 DART_KEY_SET=true (len=40)
-=== 스크립트 시작 Tue Sep 22 09:16:16 UTC 2026 ===
+=== 스크립트 시작 Tue Sep 22 12:04:44 UTC 2026 ===
 =======================================================
   KOS ai 데이터 수집 시작
 =======================================================
@@ -15,21 +15,22 @@ KRX 로그인 시도...
    오류 메시지: 패스워드 변경 필요
    https://www.krx.co.kr 에서 비밀번호를 변경한 후 다시 시도하세요.
 KRX 로그인 실패: 자격 증명을 확인하세요.
-  기준 거래일: 20260922  |  현재 게시본: 20260921
+  기준 거래일: 20260922  |  현재 게시본: 20260922
 
 ## KOS ai 데이터 수집 — 기준 거래일 20260922
   [krx-cache] 20260922 CSV 2869행 로드
   [krx-cache] 가격 유효 2681개 종목 (우선주·스팩 188개 제외)
 - 시세 수집: 2681개 종목 (데이터 거래일 20260922)
 - 영문명 이월: 2680개
-  [DART] 초기화 실패: HTTPSConnectionPool(host='opendart.fss.or.kr', port=443): Max retries exceeded with url: /api/corpCode.xml?crtfc_key=fe32f957e40b37428b0d5f4807aa495839506436 (Caused by ConnectTimeoutError(<HTTPSConnection(host='opendart.fss.or.kr', port=443) at 0x7f66a8f38290>, 'Connection to opendart.fss.or.kr timed out. (connect timeout=None)'))
+  [DART] 영문명 미보강 29개 종목 DART 수집 중...
+  [DART] 영문명·시총 보강 완료
   [분류] AI 업종 캐시 2711개 적용
   [분류] 카테고리 부여 완료 — 기타 35/2681개
 - 전 종목 수집 2681개(기존 2681) — 상폐 자동 정리 적용
-✅ data/stocks.js 생성 완료 — 2681개 종목 (2026-09-22 18:18 KST)
+✅ data/stocks.js 생성 완료 — 2681개 종목 (2026-09-22 21:05 KST)
 - 최종 출력: 2681개 종목 — dataDate 20260922
 =======================================================
-게시본: dataDate=20260922  종목 2681개  lastUpdated=2026-09-22 18:18
-⚠️ valuation.js(20260921)가 시세(20260922)보다 뒤처짐 — collect_valuation 이 아직 안 돈 정상 시차(최대 2시간).
+게시본: dataDate=20260922  종목 2681개  lastUpdated=2026-09-22 21:05
+valuation.js dataDate=20260922 — 시세와 일치
 KRX 로그인 실패: KRX_ID 또는 KRX_PW 환경 변수가 설정되지 않았습니다.
 ✅ 신선도 정상 — 최신 거래일 20260922 종가가 게시돼 있다.
