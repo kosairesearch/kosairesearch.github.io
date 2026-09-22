@@ -30,7 +30,9 @@ import news_data as N  # noqa: E402
 
 PASS = FAIL = 0
 ART = [{"title": "기사 제목", "source": "매체", "published": None, "link": ""}]
-CORE_Q = ("코스피 마감 외국인 순매수", "stock market close S&P 500 Nasdaq")
+# 핵심 갈래의 본 검색어와 예비 검색어. 둘 다 비어야 "핵심이 비었다" 다.
+CORE_Q = ("코스피 마감 외국인 순매수", "stock market close S&P 500 Nasdaq",
+          "코스피 마감", "Wall Street stocks close")
 
 
 def ok(name, cond, detail=""):
@@ -83,6 +85,8 @@ h = run(_half)["health"]
 # 절반쯤 비는 것은 이제 정상으로 본다 — 조용한 갈래는 원래 있다.
 ok("절반쯤 비는 것은 정상 (경보가 무뎌지면 안 되니까)", h["ok"], str(h["problems"]))
 _dead = {q for _, q in _ALL[:8]}
+# 죽은 갈래의 예비 검색어도 같이 죽어야 "대부분이 비었다" 가 된다.
+_dead |= {N.FALLBACK_KO.get(l) or N.FALLBACK_EN.get(l) for l, _ in _ALL[:8]} - {None}
 h = run(lambda q, *a, **k: ([] if q in _dead else ART))["health"]
 ok("대부분(8/11)이 비면 그때는 경보", not h["ok"], str(h["problems"]))
 
@@ -118,6 +122,19 @@ try:
                not N.collect()["health"]["ok"])
 finally:
     N.EMPTY_ALARM = _keep
+
+print("\n── 좁은 검색어가 비면 넓은 예비로 한 번 더 (9/22 '시황' 0건) ──")
+_calls = []
+def _narrow_empty(q, *a, **k):
+    _calls.append(q)
+    return [] if q == "코스피 마감 외국인 순매수" else ART
+d = run(_narrow_empty)
+ok("예비 검색어가 갈래를 채운다", d["groups"]["시황"] == ART and d["health"]["ok"], str(d["health"]))
+ok("예비는 본 검색어가 비었을 때만 부른다",
+   _calls.count("코스피 마감") == 1 and _calls.count("Wall Street stocks close") == 0, str(_calls))
+ok("예비 검색어도 핵심 갈래에 있다", set(N.FALLBACK_KO) | set(N.FALLBACK_EN) == set(N.CORE_GROUPS))
+h = run(lambda q, *a, **k: [] if q in CORE_Q else ART)["health"]
+ok("본·예비가 다 비면 그제야 핵심 경보", not h["ok"] and any("핵심 갈래" in p for p in h["problems"]), str(h["problems"]))
 
 one_quiet = "한국은행 기준금리 금통위"
 h = run(lambda q, *a, **k: [] if q == one_quiet else ART)["health"]

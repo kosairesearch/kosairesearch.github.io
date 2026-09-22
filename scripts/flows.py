@@ -15,6 +15,20 @@
 모르므로 후보를 늘려 두고, 실패하면 응답의 모양을 로그에 남긴다. 추측으로
 고치면 왕복만 늘어난다 — 실제로 그래서 한 번 헛돌았다.
 
+2026-09-22 (probe_sources.py 로 러너에서 실측)
+  · 네이버가 9/18 쯤 finance.naver.com/sise/investorDealTrend* 를 닫았다(410).
+    그날부터 브리핑에 외국인·기관이 빠졌는데 아무도 몰랐다 — 재료 하나 없어도
+    발행하는 구조라서. 살아 있는 것 둘을 맨 앞에 둔다.
+  · m.stock.naver.com/api/index/KOSPI/trend — 하루치 한 줄, 억원.
+    {bizdate, personalValue, foreignValue, institutionalValue}
+  · finance.daum.net/api/market_index/days?market=KOSPI — 여러 날, 원 단위.
+    Referer 가 있어야 한다. data[].{date, *StraightPurchasePrice}
+  · 둘 다 개인·외국인·기관 셋뿐이라 기타법인이 없다. 셋의 합은 0 이 아니고
+    (9/22 낮 실측: 개인 -1.6조 · 외국인 +0.2조 · 기관 -0.05조), 합 검증을 그대로
+    걸면 멀쩡한 값이 죽는다. 키 이름이 뜻을 못 박는 응답은 합 검증을 건너뛴다.
+  · 날짜가 맞는 행만 쓴다. 장중에 부르면 오늘 미완성 행이 맨 위에 오는데,
+    그걸 '직전 장' 이라고 브리핑에 내보내면 안 된다.
+
 지키는 것
   · 파싱 결과를 스스로 채점한다. 개인·외국인·기관 순매수의 합은 0 에
     가까워야 한다(누가 사면 누가 팔았으므로). 벗어나면 컬럼을 잘못 읽은
@@ -50,6 +64,12 @@ MOB_UA = {
     "Accept": "application/json",
 }
 
+DAUM_UA = {
+    "User-Agent": WEB_UA["User-Agent"],
+    "Referer": "https://finance.daum.net/",
+    "Accept": "application/json",
+}
+
 DUMP = os.getenv("FLOWS_DUMP", "1") == "1"
 # 순매수 합이 최댓값의 이 비율을 넘으면 오독으로 본다. 기타법인까지 넣으면
 # 합은 거의 정확히 0 이 되므로(3차 실측 0.004) 여유를 조여도 된다.
@@ -65,6 +85,12 @@ def log(*a):
 # (이름, 종류, URL 틀). 종류가 json 이면 JSON 으로 읽는다.
 def candidates(sosok, code, bizdate):
     return [
+        # 2026-09-22 실측으로 살아 있는 둘. 아래 옛 주소들은 죽었지만(404·410) 네이버가
+        # 되살릴 수도 있어 예비로 남긴다 — 앞의 둘이 되면 거기까지 가지 않는다.
+        ("모바일 API · trend", "json", MOB_UA,
+         f"https://m.stock.naver.com/api/index/{code}/trend"),
+        ("다음 market_index/days", "json", DAUM_UA,
+         f"https://finance.daum.net/api/market_index/days?market={code}&perPage=5&page=1"),
         ("모바일 API · investorTrend", "json", MOB_UA,
          f"https://m.stock.naver.com/api/index/{code}/investorTrend"),
         ("모바일 API · investors", "json", MOB_UA,
@@ -216,12 +242,20 @@ def _from_labeled(html, fallback_date):
 # 영문 키를 쓴다(individual/foreigner/institution 계열).
 JSON_KEYS = {
     "개인": ("individual", "individualPureBuyQuant", "individualPureBuyAmount",
-             "individualNetPurchase", "personal"),
+             "individualNetPurchase", "personal",
+             "personalValue", "individualStraightPurchasePrice"),
     "외국인": ("foreigner", "foreign", "foreignerPureBuyQuant",
-              "foreignerPureBuyAmount", "foreignerNetPurchase"),
+              "foreignerPureBuyAmount", "foreignerNetPurchase",
+              "foreignValue", "foreignStraightPurchasePrice"),
     "기관": ("institution", "organization", "institutionPureBuyQuant",
-            "institutionPureBuyAmount", "institutionNetPurchase"),
+            "institutionPureBuyAmount", "institutionNetPurchase",
+            "institutionalValue", "institutionStraightPurchasePrice"),
 }
+# 뜻이 이름에 못 박힌 키. 이런 응답은 컬럼을 잘못 읽을 수가 없으므로 합 검증을
+# 건너뛴다 — 셋뿐인 응답(기타법인 없음)은 합이 0 이 아니어서 검증이 오히려 해친다.
+NAMED_KEYS = {"personalValue", "foreignValue", "institutionalValue",
+              "individualStraightPurchasePrice", "foreignStraightPurchasePrice",
+              "institutionStraightPurchasePrice"}
 JSON_DATE_KEYS = ("localTradedAt", "tradeDate", "bizdate", "date", "dt", "localDate")
 
 
@@ -265,7 +299,7 @@ def _from_json(obj):
 
 # ────────────────────────────── 검증 ──────────────────────────────
 
-def _score(vals):
+def _score(vals, named=False):
     """순매수 합이 0 에 가까운지. 벗어나면 컬럼을 잘못 읽었다.
 
     3차 실행에서 이 검증기가 정상 데이터를 죽였다. '기관계'와 '기관'을
@@ -285,6 +319,8 @@ def _score(vals):
         return False, "주체 3개를 못 채웠다"
     scale = max(abs(x) for x in picks) or 1
     ratio = abs(sum(picks)) / scale
+    if named:
+        return True, f"이름 붙은 키 · 합/최대 {ratio:.3f}(검증 안 함)"
     return ratio <= SUM_TOLERANCE, f"합/최대 {ratio:.3f}"
 
 
@@ -343,9 +379,14 @@ def market(sosok, code, bizdate):
                         log(f"    '외국인' 없음 · 앞부분: {txt[:260]!r}")
             continue
 
-        rows.sort(key=lambda r: r[0])
-        d, vals = rows[-1]
-        ok, why = _score(vals)
+        picked = _pick(rows, bizdate)
+        if not picked:
+            log(f"· {name} 에 {bizdate} 행이 없다(가장 최근 {max(r[0] for r in rows)}) — 버린다")
+            continue
+        d, vals = picked
+        # keys_used 는 JSON 이면 [[키, 키, 키]], 라벨 파서면 ["라벨 인접값"] — 펴서 본다.
+        used = {k for ks in keys_used for k in (ks if isinstance(ks, list) else [ks])}
+        ok, why = _score(vals, named=bool(used) and used <= NAMED_KEYS)
         if not ok:
             log(f"· {name} 검증 실패({why}) — 버린다 · 값 {vals}")
             continue
@@ -361,6 +402,19 @@ def market(sosok, code, bizdate):
             "values": {k: round(v * mul) for k, v in vals.items()},
         }
     return None
+
+
+def _pick(rows, bizdate):
+    """거래일이 맞는 행. 없으면 None — 다른 날 값을 그날 값인 척 내보내지 않는다.
+
+    장중에 부르면 오늘 미완성 행이 맨 위에 온다(9/22 낮 실측). 예전에는 가장
+    최근 행을 집었는데, 그건 새벽 실행에서만 맞는 가정이었다.
+    """
+    want = _date(bizdate) if bizdate else None
+    if want is None:
+        return max(rows, key=lambda r: r[0]) if rows else None
+    hit = [r for r in rows if r[0] == want]
+    return hit[-1] if hit else None
 
 
 def _shape(o, depth=0):
