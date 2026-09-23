@@ -144,9 +144,14 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
    전에는 목록 전체를 유리 상자에 담았다. 사장이 준 시안대로 상자를 걷고 줄은
    가는 선으로만 나눈다. 칸은 번호 · 종목 · 현재가 · 리포트 제목 · 발행일 · 관심종목
    — 번호와 발행일은 칸 왼쪽에 붙이고, 관심종목 표시는 맨 끝 칸에 둔다.
-   바꾼 것은 구조뿐 — 글씨(글씨체·크기·굵기·색·문구)는 그대로 둔다(사장 지시). */
+   글씨(글씨체·크기·굵기·색·문구)는 그대로 둔다(사장 지시). 머리줄에만 시안의
+   'NO.'·'북마크' 두 낱말을 더했다(사장 지시). */
 .rl-head,.rl-row{display:grid;grid-template-columns:56px minmax(0,2.7fr) minmax(0,1.4fr) minmax(0,3.6fr) minmax(0,1.3fr) 40px;column-gap:20px;align-items:center}
 .rl-head{padding:14px 0;font:600 12px var(--font-sans);color:var(--fg-3);letter-spacing:.03em;border-bottom:1px solid var(--border-2)}
+/* 북마크 머리글과 아이콘은 둘 다 맨 끝 칸 오른쪽 끝에 붙인다 — 그러면 '북마크' 세 글자
+   가운데 밑에 아이콘이 온다. 칸(40px)보다 긴 영어(Bookmark)는 왼쪽으로 늘어나고,
+   선 끝 밖으로 삐져나가지 않는다. */
+.rl-head .h-wl{justify-self:end;white-space:nowrap}
 .rl-row{padding:20px 0;border-top:1px solid var(--hair);cursor:pointer;text-decoration:none;color:var(--fg-1);position:relative;isolation:isolate}
 .rl-row:first-of-type{border-top:0}
 .rl-row:last-child{border-bottom:1px solid var(--hair)}
@@ -175,9 +180,9 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 :root[data-theme="dark"] .c-date .badge{background:rgba(255,255,255,.08)}
 .c-chev{color:var(--fg-3);display:flex;justify-content:flex-end}
 .c-chev svg{width:16px;height:16px}
-/* 관심종목(워치리스트) 별 버튼 — 넓은 화면에서는 맨 끝 칸 가운데. 좁은 화면(920px 이하)은
+/* 관심종목(워치리스트) 별 버튼 — 넓은 화면에서는 맨 끝 칸 오른쪽 끝. 좁은 화면(920px 이하)은
    칸이 두 개뿐이라 줄 오른쪽 끝에 띄운다(아래 반응형). */
-.wl-btn{position:relative;justify-self:center;width:30px;height:30px;display:flex;align-items:center;justify-content:center;border:0;background:transparent;cursor:pointer;color:var(--fg-3);border-radius:8px;transition:background .12s,color .12s;padding:0;z-index:2}
+.wl-btn{position:relative;justify-self:end;width:30px;height:30px;display:flex;align-items:center;justify-content:center;border:0;background:transparent;cursor:pointer;color:var(--fg-3);border-radius:8px;transition:background .12s,color .12s;padding:0;z-index:2}
 .wl-btn:hover{background:rgba(0,0,0,.06);color:var(--fg-1)}
 :root[data-theme="dark"] .wl-btn:hover{background:rgba(255,255,255,.1)}
 .wl-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linejoin:round;stroke-linecap:round}
@@ -785,11 +790,12 @@ document.addEventListener('click', function (e) {
 
   <div class="rl" id="rl">
     <div class="rl-head">
-      <span></span>
+      <span>NO.</span>
       <span>종목</span>
       <span>현재가</span>
       <span>리포트 제목</span>
       <span>발행일</span>
+      <span class="h-wl">북마크</span>
     </div>
     <div id="rows" data-i18n-skip></div>
   </div>
@@ -1274,7 +1280,7 @@ const REPORTS_DICT={
   "한국 상장사의 AI 분석 리포트를 종목별로 확인하실 수 있습니다. 종목을 선택하시면 상세 리포트로 이동합니다.":"Browse AI analysis reports on Korean public companies. Click a stock to open its full report.",
   "티커 · 종목명 · 업종 검색":"Search ticker · name · industry",
   "개 리포트":" reports","최근 AI 코멘트":"Latest AI Comment","현재가":"Price","정렬":"Sort",
-  "종목":"Stock","AI 한줄 요약":"AI Summary","리포트 제목":"Report Title","리포트 준비 중":"Report coming soon","발행일":"Date",
+  "종목":"Stock","AI 한줄 요약":"AI Summary","리포트 제목":"Report Title","리포트 준비 중":"Report coming soon","발행일":"Date","북마크":"Bookmark",
   "시가총액순":"By Market Cap","등락률순":"By Change","최신 리포트순":"Latest First","종목명순":"By Name",
   "시가총액 높은 순":"Market Cap: High→Low","시가총액 낮은 순":"Market Cap: Low→High","등락률 높은 순":"Change: High→Low","등락률 낮은 순":"Change: Low→High",
   "필터 추가":"Add filter","필터":"Filters","모두 지우기":"Clear all","적용":"Apply","제거":"Remove",
