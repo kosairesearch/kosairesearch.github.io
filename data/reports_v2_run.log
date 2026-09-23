@@ -1,83 +1,37 @@
-=== 공시 트리거 v2 생성 Wed Sep 23 05:32:59 UTC 2026 · 대상 950210,058860 ===
-## 🤖 리포트 v2 Batch 제출 — 2개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
-KRX 로그인 시도...
-  로그인 ID: qjawnsdla
-⚠️ KRX 비밀번호 변경이 필요합니다.
-   오류 메시지: 패스워드 변경 필요
-   https://www.krx.co.kr 에서 비밀번호를 변경한 후 다시 시도하세요.
-KRX 로그인 실패: 자격 증명을 확인하세요.
-KRX 로그인 시도...
-  로그인 ID: qjawnsdla
-⚠️ KRX 비밀번호 변경이 필요합니다.
-   오류 메시지: 패스워드 변경 필요
-   https://www.krx.co.kr 에서 비밀번호를 변경한 후 다시 시도하세요.
-KRX 로그인 실패: 자격 증명을 확인하세요.
-Error occurred in get_market_fundamental_by_ticker: Expecting value: line 1 column 1 (char 0)
-- (KRX 펀더멘털 실패: KeyError: "None of [Index(['BPS', 'PER', 'PBR', 'EPS', 'DIV', 'DPS'], dtype='object')] are in the [columns]") — KRX 값 없이 진행
-- 정량 수집 950210 프레스티지바이오파마...
-  💱 950210 공시 통화 USD — 원화 환산 ×1,353.70
-  [단위보정] 950210 ×1,354 (환율 환산 포함 · 천원/백만원 단위 공시 추정)
-  · 발행주식총수 DART 12,019,231 ↔ KRX 60,096,155 (0.200배) — KRX 를 쓴다
-  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 358 → 채택 358
-  · BPS 입력: 자본 0.4조(2025년말·연간폴백) ÷ 주식수 60백만(발행총수) = BPS 6826
-  ❌ 프레스티지바이오파마 중대오류 차단 → 해당 지표 숨김: EPS 358↔ref -954.0
-### 프레스티지바이오파마
-  2025: 매출 138억 영업이익 -650억 지배순이익 215억 OPM -470.1% ROE 5.2% 부채비율 46.7%
-  2024: 매출 7억 영업이익 -638억 지배순이익 -334억 OPM -9111.2% ROE -7.8% 부채비율 38.1%
-  2023: 매출 2억 영업이익 -712억 지배순이익 180억 OPM -42988.4% ROE 3.9% 부채비율 35.8%
-  2022: 매출 0억 영업이익 -660억 지배순이익 -2,383억 OPM None% ROE -52.9% 부채비율 16.3%
-  2024Q4: 매출 — 영업이익 -94억 지배순이익 -92억
-  2025Q1: 매출 23억 영업이익 -237억 지배순이익 -121억
-  2025Q2: 매출 74억 영업이익 -178억 지배순이익 -144억
-  2025Q3: 매출 — 영업이익 -97억 지배순이익 565억
-  2025Q4: 매출 53억 영업이익 -138억 지배순이익 -85억
-  PER None | EPS None | PBR 0.8585 | BPS 6826 | ROE 5.2 | 배당 None% | DPS None
-- 정량 수집 058860 KTis...
-  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 1060 → 채택 1060
-  · BPS 입력: 자본 0.2조(분기말·총자본-폴백) ÷ 주식수 35백만(발행총수) = BPS 7002
-  ✅ KTis 검증 통과 PER 2.311 PBR 0.3499 EPS 1060 BPS 7002 | 참조 EPS 1062.0 BPS 7970.0 PER 2.44
-### KTis
-  2025: 매출 5,888억 영업이익 247억 지배순이익 364억 OPM 4.2% ROE 15.2% 부채비율 88.6%
-  2024: 매출 6,039억 영업이익 210억 지배순이익 119억 OPM 3.5% ROE 5.7% 부채비율 125.8%
-  2023: 매출 5,930억 영업이익 205억 지배순이익 139억 OPM 3.5% ROE 6.8% 부채비율 119.3%
-  2022: 매출 5,358억 영업이익 195억 지배순이익 159억 OPM 3.6% ROE 8.1% 부채비율 101.1%
-  2025Q2: 매출 1,271억 영업이익 76억 지배순이익 55억
-  2025Q3: 매출 — 영업이익 — 지배순이익 —
-  2025Q4: 매출 — 영업이익 — 지배순이익 —
-  2026Q1: 매출 1,549억 영업이익 52억 지배순이익 48억
-  2026Q2: 매출 1,554억 영업이익 71억 지배순이익 58억
-  PER 2.311 | EPS 1060 | PBR 0.3499 | BPS 7002 | ROE 16.0 | 배당 5.71% | DPS 140.0
-- 모델 배분: claude-opus-5 0개 · claude-sonnet-5 2개
-- ✅ 배치 제출: msgbatch_016bqQrbKMgpDopwZWUqZVLy (2건) → data/batches_v2/msgbatch_016bqQrbKMgpDopwZWUqZVLy.json
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
+=== 공시 트리거 v2 생성 Wed Sep 23 15:20:52 UTC 2026 · 대상 030530 ===
+## 🤖 리포트 v2 Batch 제출 — 1개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
+- 정량 재사용 1개(숫자가 이미 최신·완전) · 다시 받을 0개
+- 모델 배분: claude-opus-5 1개 · claude-sonnet-5 0개
+- ✅ 배치 제출: msgbatch_01GUrkTgWgs8d3Yu2xbFECmz (1건) → data/batches_v2/msgbatch_01GUrkTgWgs8d3Yu2xbFECmz.json
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
 - ⏳ 시간 내 미완료 — 남은 배치는 collect_batch 가 회수한다
-- 아직 처리 중 — 여기서 끝낸다. collect_batch 가 회수한다(msgbatch_016bqQrbKMgpDopwZWUqZVLy).
+- 아직 처리 중 — 여기서 끝낸다. collect_batch 가 회수한다(msgbatch_01GUrkTgWgs8d3Yu2xbFECmz).
