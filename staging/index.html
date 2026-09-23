@@ -486,26 +486,10 @@ KOSi18n.register({
 .lp-bg canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
 .lp-vignette{position:absolute;top:0;left:0;right:0;height:100vh;z-index:-2;pointer-events:none;background:
   radial-gradient(ellipse 72% 92% at 8% 34%, rgba(2,3,8,.55) 0%, transparent 64%)}
-/* 그레인 — Resend 랜딩처럼 화면에 고운 필름 결을 준다(2026-09-23 사장 지시: "너무 과하지 않게,
-   지금은 너무 밋밋하다"). 스테이징만이다. 전에는 같은 자리에 opacity .08 의 SVG 잡음이 있었는데
-   사실상 안 보여 화면이 매끈한 플라스틱처럼 보였다.
-   · 128px 흑백 잡음 PNG 타일을 soft-light 로 얹는다 — 빛이 닿은 곳(푸른 번짐·바닥 빛)에 결이 서고,
-     거의 검은 곳과 유리의 흰 면에서는 거의 사라진다. 글자·버튼은 이 층보다 위라 건드리지 않는다.
-   · .lp-grain 은 쌓임 맥락을 만들지 않게 둔다(z-index 없음 · opacity 없음) — 그래야 ::after 의
-     블렌드가 캔버스·배경과 섞인다. ::before 는 예전 층이 깔던 옅은 막이라 전체 밝기가 전과 같다.
-   · 레티나(2x 이상)는 타일을 절반 크기로 — 점 하나가 기기 픽셀 하나라 결이 곱다.
-   · 세기 — 처음에는 결을 표준편차 11.5 단계로 만들어 opacity .55 로 얹었는데 "아예 티가 안
-     난다"(사장). 실제 크기로 견주니 정말 안 보였다. 결을 두 배(24 단계)로 키우고 opacity 를 1 로
-     올렸다 — 푸른 바탕에서 결 세기(픽셀 - 5x5 평균 의 표준편차)가 1.9 → 6.8 이다. 여기서 더
-     올리려면 타일의 표준편차를 키운다(18 이면 약 5, 30 이면 약 8.5).
-   · 타일: python3 scripts/gengrain.py grain.png 128 24 12 2 7 (PNG 6,684바이트). */
+/* 옅은 막 — 예전 잡음 층이 깔던 평균 밝기(2.4%)만 남겼다. 결 자체는 캔버스 안에서 프리즘
+   뒤에 그린다(아래 스크립트의 '그레인'). 캔버스 위에 CSS 로 덮으면 프리즘에도 결이 앉는다. */
 .lp-grain{position:absolute;top:0;left:0;right:0;bottom:0;pointer-events:none}
-.lp-grain::before,.lp-grain::after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;pointer-events:none}
-.lp-grain::before{background:rgba(187,187,187,.024)}
-@supports (mix-blend-mode:soft-light){
-  .lp-grain::after{opacity:1;mix-blend-mode:soft-light;background:url("data:image/png;base64,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") 0 0/128px 128px repeat}
-  @media (min-resolution:2dppx),(-webkit-min-device-pixel-ratio:2){.lp-grain::after{background-size:64px 64px}}
-}
+.lp-grain::before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;pointer-events:none;background:rgba(187,187,187,.024)}
 body{position:relative;background:
   radial-gradient(ellipse 640px 420px at 72% 320px, rgba(56,82,148,.34) 0%, rgba(30,46,88,.12) 45%, transparent 70%),
   radial-gradient(ellipse 900px 240px at 50% -60px, rgba(64,90,150,.18) 0%, transparent 60%),
@@ -1304,6 +1288,54 @@ try{
      흩어져 보였다. 2026-09-23 사장 지시. 스테이징에서만 뺀 것이고 실사이트
      index.html 에는 아직 있다(되살리려면 실사이트의 같은 자리를 가져오면 된다). */
 
+  /* ───────────────────────────────────────────────────────
+     그레인 — Resend 랜딩처럼 배경에만 고운 결(2026-09-23 사장 지시). 스테이징만이다.
+     처음에는 캔버스 위에 CSS 층으로 덮었더니 프리즘에도 결이 앉았다("Resend 는 큐브를
+     안 덮었는데 왜 프리즘은 덮었냐"). 그래서 결을 캔버스 안에서, 프리즘 뒤에 그린다.
+      · 화면을 덮는 삼각형 하나를 프리즘과 배경판 사이 깊이(카메라에서 20)에 둔다.
+        프리즘이 그린 자리는 깊이 검사에 걸려 빠진다 — 프리즘은 늘 깨끗하다.
+        바닥 빛은 깊이 검사를 안 하고 먼저 그려지므로 그 위에는 결이 앉는다.
+      · 섞는 법 — 점마다 흰 점이나 검은 점을 옅게 얹는다(보통 섞기). 그래야 거의 검은
+        가장자리에서도 결이 보인다. 전에 쓴 soft-light 는 밝은 곳에만 결이 서고 검은
+        곳에서는 사라져, 가운데가 가장 거칠고 가장자리는 매끈한 거꾸로 된 모양이었다.
+      · 세기 — 가운데(글과 프리즘 둘레)는 옅게(uLo), 가장자리로 갈수록 짙게(uHi).
+        첫 화면 아래는 가로로만 따진다 — 가운데 줄은 중간, 양옆은 짙게.
+      · 결은 움직이지 않는다. 캔버스 픽셀 하나에 점 하나. */
+  const grainMat=new THREE.ShaderMaterial({
+    transparent:true, depthTest:true, depthWrite:false,
+    uniforms:{
+      uZ:{value:0.99}, uBuf:{value:new THREE.Vector2(1,1)}, uH:{value:1}, uVh:{value:1},
+      uC:{value:mobile?new THREE.Vector2(0.5,0.34):new THREE.Vector2(0.56,0.48)},
+      uLo:{value:0.018}, uHi:{value:0.08}
+    },
+    vertexShader:`uniform float uZ;
+      void main(){ gl_Position=vec4(position.xy,uZ,1.0); }`,
+    fragmentShader:`
+      uniform vec2 uBuf,uC; uniform float uH,uVh,uLo,uHi;
+      float h12(vec2 p){ vec3 q=fract(vec3(p.xyx)*.1031); q+=dot(q,q.yzx+33.33); return fract((q.x+q.y)*q.z); }
+      void main(){
+        vec2 px=floor(gl_FragCoord.xy);
+        float n=h12(px)+h12(px+vec2(71.0,113.0))-1.0;         /* -1..1, 0 근처가 잦다 */
+        float x=gl_FragCoord.x/uBuf.x;                          /* 0..1 왼쪽부터 */
+        float y=(1.0-gl_FragCoord.y/uBuf.y)*uH;                 /* 위에서부터 CSS px */
+        vec2 d=vec2((x-uC.x)/0.5, min((y/uVh-uC.y)/0.5, 0.75));
+        float k=mix(uLo,uHi,smoothstep(0.3,1.1,length(d)));
+        gl_FragColor=vec4(vec3(step(0.0,n)),k*abs(n));
+      }`
+  });
+  const grainTri=new THREE.BufferGeometry();
+  grainTri.setAttribute('position',new THREE.Float32BufferAttribute([-1,-1,0, 3,-1,0, -1,3,0],3));
+  const grain=new THREE.Mesh(grainTri,grainMat);
+  grain.frustumCulled=false; grain.renderOrder=10;
+  scene.add(grain);
+  const _gz=new THREE.Vector4();
+  function sizeGrain(hFull){
+    const u=grainMat.uniforms;
+    renderer.getDrawingBufferSize(u.uBuf.value);
+    u.uH.value=hFull; u.uVh.value=vhRef;
+    _gz.set(0,0,-20,1).applyMatrix4(camera.projectionMatrix); u.uZ.value=_gz.z/_gz.w;
+  }
+
   /* 리사이즈(비용 큰 작업)는 창 크기 변경 때만 */
   /* 리사이즈 — 캔버스는 페이지 전체. 구도는 첫 화면 기준(vhRef)으로 고정하고
      setViewOffset 으로 아래로만 화면을 연장 → 배경이 한 장으로 이어짐(경계 없음).
@@ -1317,6 +1349,7 @@ try{
     camera.aspect=w/vhRef;
     camera.setViewOffset(w,vhRef,0,0,w,hFull);
     camera.updateProjectionMatrix();
+    sizeGrain(hFull);
     place();
   }
   /* 배치 — 고정 좌표(마우스·스크롤 영향 없음). 데스크톱=오른쪽, 모바일=상단 중앙 */
