@@ -149,22 +149,33 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 .clear-all{display:inline-flex;align-items:center;font:600 13px var(--font-sans);color:var(--down);background:transparent;border:1px solid var(--down);padding:9px 15px;border-radius:var(--pill);cursor:pointer;transition:.15s;white-space:nowrap}
 .clear-all:hover{background:var(--down);color:#fff}
 
-/* list */
-.wl{padding:6px 8px;overflow:hidden}
-.wl-head,.wl-row{display:grid;grid-template-columns:1.7fr 1.15fr 2.5fr 16px;gap:26px;align-items:center;padding:0 16px}
-.wl.edit .wl-head,.wl.edit .wl-row{grid-template-columns:28px 1.7fr 1.15fr 2.5fr 16px}
-.wl-head{padding-top:14px;padding-bottom:14px;font:600 12px var(--font-sans);color:var(--fg-3);letter-spacing:.03em;border-bottom:1px solid var(--border-2)}
+/* list — 리포트 목록과 같은 모양 (2026-09-23)
+   상자 없이 바탕 위에 바로 놓고 줄은 가는 선으로만 나눈다. 칸은 NO. · 종목 · 현재가 ·
+   리포트 제목 · 발행일 — Reports.html 목록(.rl-*)과 같은 값에서 북마크 칸만 뺐다.
+   관심종목 페이지라 북마크가 또 있을 까닭이 없다(사장). 빼는 일은 '편집'이 한다.
+   사장: "디자인의 일관성" — 한쪽을 고치면 다른 쪽도 같이 고친다.
+   편집 중에는 맨 앞에 빼기 단추 칸(28px)이 붙는다. */
+.wl-head,.wl-row{display:grid;grid-template-columns:56px minmax(0,2.7fr) minmax(0,1.4fr) minmax(0,3.6fr) minmax(0,1.3fr);column-gap:20px;align-items:center}
+.wl.edit .wl-head,.wl.edit .wl-row{grid-template-columns:28px 56px minmax(0,2.7fr) minmax(0,1.4fr) minmax(0,3.6fr) minmax(0,1.3fr)}
+.wl-head{padding:14px 0;font:600 12px var(--font-sans);color:var(--fg-3);letter-spacing:.03em;border-bottom:1px solid var(--border-2)}
 .wl-head .h-edit{display:none}
 .wl.edit .wl-head .h-edit{display:block}
 .wl-head .h-price{text-align:left}
-.wl-row{padding-top:16px;padding-bottom:16px;border-top:1px solid var(--hair);cursor:pointer;transition:background .12s;text-decoration:none;color:var(--fg-1)}
+.wl-row{padding:20px 0;border-top:1px solid var(--hair);cursor:pointer;text-decoration:none;color:var(--fg-1);position:relative;isolation:isolate}
 .wl-row:first-of-type{border-top:0}
-.wl-row:hover{background:rgba(0,0,0,.03)}
-:root[data-theme="dark"] .wl-row:hover{background:rgba(255,255,255,.04)}
+.wl-row:last-child{border-bottom:1px solid var(--hair)}
+/* 마우스를 올린 줄은 옅게 밝히되 양옆으로 12px 넓힌다 — 글자가 선 끝에 붙어 있어서
+   밝힌 자리 가장자리에 닿으면 답답해 보인다(리포트 목록과 같다). */
+@media (hover:hover) and (min-width:881px){
+  .wl-row::before{content:"";position:absolute;inset:0 -12px;z-index:-1;border-radius:10px;transition:background .12s}
+  .wl-row:hover::before{background:rgba(0,0,0,.03)}
+  :root[data-theme="dark"] .wl-row:hover::before{background:rgba(255,255,255,.04)}
+}
 .minus{display:none;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--border-2);background:transparent;cursor:pointer;align-items:center;justify-content:center;color:var(--up);flex:0 0 auto}
 .minus svg{width:14px;height:14px}
 .minus:hover{background:var(--up);border-color:var(--up);color:#fff}
 .wl.edit .minus{display:flex}
+.c-rank{font:600 14px var(--font-sans);color:var(--fg-3)}
 .c-nm{min-width:0}
 .c-nm .nm{font:700 17px var(--font-sans);letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .c-nm .id{margin-top:3px;font:500 12px var(--font-sans);color:var(--fg-3);display:flex;gap:6px;flex-wrap:wrap}
@@ -175,6 +186,10 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 .c-price .ch{font:600 13px var(--font-sans);margin-top:3px}
 .c-price .ch.up{color:var(--up)}.c-price .ch.down{color:var(--down)}.c-price .ch.flat{color:var(--flat)}
 .c-ai{font:400 13.5px/1.5 var(--font-sans);color:var(--fg-2);margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+/* 리포트 제목·발행일 글씨는 리포트 목록 것 그대로 */
+.c-title{font-weight:650;color:var(--fg-1);font-size:14.5px}
+.c-ai-none{color:var(--fg-3);font-weight:400;font-style:italic}
+.c-date{font:500 12px var(--font-sans);color:var(--fg-3);white-space:nowrap}
 .c-chev{color:var(--fg-3);display:flex;justify-content:flex-end}
 .c-chev svg{width:16px;height:16px}
 
@@ -221,12 +236,15 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 @media (min-width:1180px){:root{--pad:0px}.nav{width:100%}}
 @media (max-width:880px){
   .wl-head{display:none}
-  .wl-row{grid-template-columns:1fr auto;gap:8px 14px;row-gap:10px;align-items:start}
+  .wl-row{grid-template-columns:1fr auto;gap:8px 14px;row-gap:10px;align-items:start;padding:16px 0}
   .wl.edit .wl-row{grid-template-columns:28px 1fr auto}
+  .c-rank{display:none}
   .c-price{grid-column:2;grid-row:1;text-align:right}
   .wl.edit .c-price{grid-column:3}
   .c-ai{grid-column:1 / -1;grid-row:2}
   .wl.edit .c-ai{grid-column:2 / -1}
+  .c-date{grid-column:1 / -1;grid-row:3}
+  .wl.edit .c-date{grid-column:2 / -1}
   .c-chev{display:none}
 }
 @media (max-width:767px){
@@ -592,13 +610,14 @@ html.lenis,html.lenis body{height:auto}
   </div>
 
   <!-- LIST -->
-  <div class="wl glass" id="wl">
+  <div class="wl" id="wl">
     <div class="wl-head">
       <span class="h-edit"></span>
+      <span>NO.</span>
       <span>종목</span>
       <span class="h-price">현재가</span>
       <span>리포트 제목</span>
-      <span></span>
+      <span>발행일</span>
     </div>
     <div id="rows" data-i18n-skip></div>
   </div>
@@ -677,17 +696,23 @@ function sorted(){
   else if(sortKey==='name')l.sort((a,b)=>a.name.localeCompare(b.name,'ko'));
   return l;
 }
-function rowHtml(s){
+function repDate(tk){ const R=window.KOS_REPORTS&&KOS_REPORTS.reports&&KOS_REPORTS.reports[tk]; return R&&R.reportDate ? R.reportDate : ''; }
+/* 줄 모양은 리포트 목록(Reports.html rowHtml)과 같다 — 번호 · 종목 · 현재가 · 리포트 제목 ·
+   발행일. 북마크는 없다(관심종목 페이지다). 번호는 지금 정렬에서의 순서(쪽을 넘겨도 이어진다). */
+function rowHtml(s,i){
   const dir=s.change>0?'up':s.change<0?'down':'flat',arw=s.change>0?'▲':s.change<0?'▼':'–';
+  const title=repTitle(s.ticker);
+  const titleHtml=title?title:`<span class="c-ai-none">${T('리포트 준비 중')}</span>`;
   return `<a class="wl-row" href="stock.html?ticker=${s.ticker}" data-tk="${s.ticker}">
     <button class="minus" data-remove="${s.ticker}" title="${T('제거')}" aria-label="${T('제거')}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14"/></svg></button>
+    <span class="c-rank">${i+1}</span>
     <div class="c-nm">
       <div class="nm">${T(s.name)}</div>
       <div class="id"><span class="tk">${s.ticker}</span><span class="dot">·</span><span>${T(s.market)}</span><span class="dot">·</span><span>${T(s.sector)}</span></div>
     </div>
     <div class="c-price"><div class="px">${KOS.won(s.price)}</div><div class="ch ${dir}"><span style="font-size:10px">${arw}</span> ${KOS.pct(s.change)}</div></div>
-    <p class="c-ai">${repTitle(s.ticker)||''}</p>
-    <span class="c-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span>
+    <p class="c-ai c-title">${titleHtml}</p>
+    <div class="c-date">${repDate(s.ticker) || '—'}</div>
   </a>`;
 }
 let page=1; const PAGE_SIZE=10;
@@ -703,7 +728,7 @@ function render(){
   const list=sorted(), total=list.length, pages=Math.max(1,Math.ceil(total/PAGE_SIZE));
   if(page>pages)page=pages; if(page<1)page=1;
   const start=(page-1)*PAGE_SIZE;
-  rowsEl.innerHTML=list.slice(start,start+PAGE_SIZE).map(rowHtml).join('');
+  rowsEl.innerHTML=list.slice(start,start+PAGE_SIZE).map((s,i)=>rowHtml(s,start+i)).join('');
   // pager (10개씩, 모바일 5 / 데스크톱 10 블록)
   if(pages<=1){ pagerEl.style.display='none'; return; }
   pagerEl.style.display='';
@@ -782,7 +807,7 @@ const WATCHLIST_DICT={
   "정렬":"Sort","등락률순":"By Change","시가총액순":"By Market Cap","추가 순서":"By Date Added","종목명순":"By Name",
   "등락률 높은 순":"Change: High→Low","등락률 낮은 순":"Change: Low→High","시가총액 높은 순":"Market Cap: High→Low","시가총액 낮은 순":"Market Cap: Low→High",
   " 편집":" Edit"," 완료":" Done","편집":"Edit","전체 삭제":"Clear All",
-  "종목":"Stock","현재가":"Price","리포트 제목":"Report Title",
+  "종목":"Stock","현재가":"Price","리포트 제목":"Report Title","발행일":"Date","리포트 준비 중":"Report coming soon",
   "관심 종목이 비어 있습니다":"Your watchlist is empty",
   "리포트 페이지에서 업종·시가총액·PER 등 조건으로 종목을 찾으시거나, 종목 상세 페이지에서 관심종목에 추가하실 수 있습니다.":"Find stocks on the Reports page by industry, market cap, PER and other conditions, or add them from a stock's detail page.",
   "리포트 둘러보기":"Browse reports",
