@@ -452,8 +452,17 @@ rows = [{"pagePathPlusQueryString": "/stock.html?ticker=037560", "screenPageView
         {"pagePathPlusQueryString": "/stock.html?ticker=005930", "screenPageViews": 5, "totalUsers": 5},
         {"pagePathPlusQueryString": "/Reports.html", "screenPageViews": 99, "totalUsers": 50},
         {"pagePathPlusQueryString": "/stock.html?ticker=001234", "screenPageViews": 1, "totalUsers": 1}]
-meta = {"037560": ("LG헬로비전", "통신", "코스피"), "005930": ("삼성전자", "반도체", "코스피")}
+meta = {"037560": ("LG헬로비전", "통신", "코스피", "중형주"), "005930": ("삼성전자", "반도체", "코스피", "대형주")}
 tab = X.ticker_table(rows, meta, 10)
+eq("규모별로 묶인다 — 거래소 기준", [(k, v, c) for k, v, c in tab["sizes"]],
+   [("대형주", 5, 1), ("중형주", 15, 1), ("규모 모름", 1, 1)])
+eq("규모 구분 규칙: 코스피 100·300, 코스닥 100·400",
+   (X.size_class("코스피", 100), X.size_class("코스피", 101), X.size_class("코스피", 301),
+    X.size_class("코스닥", 400), X.size_class("코스닥", 401), X.size_class("코스닥", 0)),
+   ("대형주", "중형주", "소형주", "중형주", "소형주", "규모 모름"))
+ok("규모별만 보려면 top=0", X.ticker_table(rows, meta, 0)["items"] == [])
+ok("규모별 줄이 표에 나온다", "■ 규모별" in "\n".join(X._ticker_lines(tab, "[시험]", 0))
+   and "많이 본 종목" not in "\n".join(X._ticker_lines(tab, "[시험]", 0)))
 eq("리포트가 아닌 페이지는 안 센다", tab["total"], 21)
 eq("언어 변형 주소는 같은 종목으로 합친다", tab["items"][0]["views"], 15)
 eq("몫은 조회 기준", round(tab["items"][0]["share"], 1), 71.4)
@@ -467,7 +476,12 @@ ok("표가 읽힌다", "LG헬로비전 (037560) · 통신 · 코스피  15회  7
 empty = X.ticker_table([], meta, 10)
 ok("자료가 없으면 0 으로", empty["total"] == 0 and "기록이 없습니다" in "\n".join(X._ticker_lines(empty, "[빈]", 10)))
 m = X.load_stock_meta()
-ok("stocks.js 에서 종목 이름·업종·시장을 읽는다", m.get("005930", ("",))[0] == "삼성전자" and len(m) > 2000, str(len(m)))
+ok("stocks.js 에서 종목 이름·업종·시장·규모를 읽는다", m.get("005930", ("",))[0] == "삼성전자"
+   and m["005930"][3] == "대형주" and len(m) > 2000, str(m.get("005930")))
+_sizes = {}
+for _tk, _v in m.items():
+    _sizes[_v[3]] = _sizes.get(_v[3], 0) + 1
+ok("코스피·코스닥 대형주가 각 100개 = 200개", _sizes.get("대형주") == 200, str(_sizes))
 ok("도구 목록에 tickers 가 있다", any(x["name"] == "tickers" for x in X.TOOLS))
 
 print("\n" + "=" * 52)
