@@ -31,6 +31,8 @@ setTimeout(function(){ document.documentElement.classList.remove('kos-locked'); 
 <title>종목 분석 · 주가·PER·PBR·배당·실적 | KOSAI</title>
 <meta name="description" content="종목별 AI 분석 리포트 — 핵심 지표, 재무 분석, 밸류에이션, 뉴스 요약과 리스크 요인." />
 <link rel="canonical" href="https://kosai.kr/stock.html" />
+<!-- KEY DATA 숫자 글꼴(9KB) — 첫 화면에서 다른 글꼴로 번쩍였다 바뀌지 않게 미리 받는다 -->
+<link rel="preload" href="../fonts/NotoSerifKR-KeyData-500.woff2" as="font" type="font/woff2" crossorigin>
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="KOSAI" />
 <meta property="og:locale" content="ko_KR" />
@@ -65,6 +67,9 @@ setTimeout(function(){ document.documentElement.classList.remove('kos-locked'); 
 @font-face{font-family:"Pretendard";font-weight:600;font-style:normal;font-display:swap;src:url("../fonts/Pretendard-SemiBold.woff2") format("woff2"), url("../fonts/Pretendard-SemiBold.otf") format("opentype")}
 @font-face{font-family:"Pretendard";font-weight:700;font-style:normal;font-display:swap;src:url("../fonts/Pretendard-Bold.woff2") format("woff2"), url("../fonts/Pretendard-Bold.otf") format("opentype")}
 @font-face{font-family:"Pretendard";font-weight:800;font-style:normal;font-display:swap;src:url("../fonts/Pretendard-ExtraBold.woff2") format("woff2"), url("../fonts/Pretendard-ExtraBold.otf") format("opentype")}
+/* KEY DATA 숫자·제목용 명조 — Noto Serif KR 500 에서 숫자·로마자·원조억만주배만 떼어 낸 9KB 조각(OFL).
+   여기 없는 글자는 --font-serif 의 다음 글꼴로 넘어간다. */
+@font-face{font-family:"KOS Serif";font-weight:500;font-style:normal;font-display:swap;src:url("../fonts/NotoSerifKR-KeyData-500.woff2") format("woff2")}
 
 :root{
   --brand-blue:rgb(13,105,212);--brand-cyan:rgb(95,197,255);
@@ -77,6 +82,7 @@ setTimeout(function(){ document.documentElement.classList.remove('kos-locked'); 
   --shadow-3:0 1px 0 rgba(0,0,0,.05),0 18px 40px rgba(0,0,0,.18);
   --radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:20px;--pill:9999px;
   --font-sans:"Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --font-serif:"KOS Serif","Noto Serif KR","Nanum Myeongjo","AppleMyungjo",serif;
   --pad:20px;
 }
 :root[data-theme="dark"]{
@@ -151,39 +157,55 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 .crumb a{color:var(--fg-3);text-decoration:none}.crumb a:hover{color:var(--fg-1)}
 .crumb b{color:var(--fg-2);font-weight:600}
 
-/* ===== HEADER CARD ===== */
-.tk-head{padding:0;overflow:hidden}
-.th-sec{padding:24px 28px;border-top:1px solid var(--hair)}
-.th-sec:first-child{border-top:0}
-.th-id-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font:500 13px var(--font-sans);color:var(--fg-3);margin-bottom:12px}
-.th-id-row .pill{font:600 12px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);padding:4px 10px;border-radius:var(--pill);letter-spacing:.02em}
+/* ===== HEADER — 상자 없이 바탕 위에 바로 (2026-09-23 스테이징 실험) =====
+   전에는 이름·가격·지표 8칸을 유리 상자 하나에 담았다. 사장이 준 시안대로
+   상자를 걷고, 지표 8칸은 아래 KEY DATA 로 뺐다. 실사이트는 아직 상자다. */
+.tk-head{padding:6px 0 38px}
+.th-id-row{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.th-id-row .pill{font:600 13px/1 var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);padding:7px 10px;border-radius:7px;letter-spacing:.01em}
 :root[data-theme="dark"] .th-id-row .pill{background:rgba(255,255,255,.08)}
-.th-id-row .sep{opacity:.5}
-.th-name-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-.th-name{margin:0;font-size:clamp(30px,4.4vw,44px);font-weight:800;letter-spacing:-.035em;line-height:1}
-.watch-btn{display:inline-flex;align-items:center;gap:6px;font:600 13px var(--font-sans);color:var(--fg-1);white-space:nowrap;
-  background:rgba(0,0,0,.05);border:1px solid var(--border-2);padding:8px 14px;border-radius:var(--pill);cursor:pointer;transition:.15s}
-.watch-btn:hover{background:rgba(0,0,0,.09)}
-:root[data-theme="dark"] .watch-btn{background:rgba(255,255,255,.08)}
-.watch-btn svg{width:15px;height:15px}
-.watch-btn.on{background:var(--fg-1);color:var(--bg-1);border-color:var(--fg-1)}
-.watch-btn.on svg{fill:currentColor}
-.th-meta{margin-top:10px;font:400 13px/1.5 var(--font-sans);color:var(--fg-3)}
+.th-name{margin:0;font-size:clamp(30px,4.4vw,44px);font-weight:800;letter-spacing:-.035em;line-height:1.1}
+.th-meta{margin-top:10px;font:400 14px/1.5 var(--font-sans);color:var(--fg-3)}
+/* 관심 담기 — 테두리만 있는 버튼. 담으면 채운다.
+   채운 상태의 글자색은 테마마다 적는다 — --bg-1 은 밝은 테마에만 있어서
+   그걸 쓰면 어두운 테마에서 흰 바탕에 흰 글자가 된다. */
+.watch-btn{display:inline-flex;align-items:center;gap:9px;margin-top:26px;font:500 14px/1 var(--font-sans);color:var(--fg-2);white-space:nowrap;
+  background:transparent;border:1px solid var(--border-2);padding:12px 18px 12px 15px;border-radius:var(--radius-sm);cursor:pointer;transition:.15s}
+.watch-btn:hover{color:var(--fg-1);border-color:var(--fg-3)}
+.watch-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.watch-btn .wb-on{display:none}
+.watch-btn.on{background:var(--fg-1);border-color:var(--fg-1);color:#fff}
+:root[data-theme="dark"] .watch-btn.on{color:#0d0e18}
+.watch-btn.on .wb-add{display:none}
+.watch-btn.on .wb-on{display:block}
 
 /* price */
-.th-price{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
-.th-now{font:800 42px/1 var(--font-sans);letter-spacing:-.03em}
+.th-price{display:flex;align-items:baseline;gap:6px 16px;flex-wrap:wrap;margin-top:26px}
+.th-now{font:800 46px/1 var(--font-sans);letter-spacing:-.03em}
 .th-chg{font:700 17px var(--font-sans)}
 .th-chg.up{color:var(--up)}.th-chg.down{color:var(--down)}
+.th-asof{margin-top:12px;font:500 13px var(--font-sans);color:var(--fg-3)}
+.th-asof:empty{display:none}
 .th-ts{margin-left:auto;font:500 12px var(--font-sans);color:var(--fg-3);align-self:flex-end}
 
-/* metric grid */
-.mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hair);border:1px solid var(--hair);border-radius:var(--radius-md);overflow:hidden}
-.m{background:rgba(255,255,255,0.4);padding:14px 16px}
-:root[data-theme="dark"] .m{background:rgba(255,255,255,0.02)}
-.m .k{font:500 12px var(--font-sans);color:var(--fg-3)}
-.m .val{font:700 22px var(--font-sans);letter-spacing:-.02em;margin-top:5px;line-height:1.05;white-space:nowrap}
-.m .peer{font:500 11.5px/1.35 var(--font-sans);color:var(--fg-3);margin-top:6px}
+/* ===== KEY DATA — 지표 8칸 =====
+   바깥 상자·칸 상자 없이 가는 선으로만 나눈다. 세로선은 글자 높이만큼만
+   긋고(위아래를 띄운다) 두 줄 사이는 한 줄로 가로지른다. 숫자는 명조. */
+.kd{border-top:1px solid var(--hair);padding-top:40px}
+.kd-head{display:flex;align-items:center;gap:22px}
+.kd-title{font:500 19px/1 var(--font-serif);letter-spacing:.2em;color:var(--fg-1);white-space:nowrap}
+.kd-rule{flex:1;height:1px;background:var(--border-2)}
+.kd-asof{font:500 13px var(--font-sans);color:var(--fg-3);white-space:nowrap}
+.kd-asof:empty{display:none}
+.mgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:14px}
+.m{position:relative;min-width:0;padding:26px 16px 26px 40px}
+.m::before{content:"";position:absolute;left:0;top:26px;bottom:26px;width:1px;background:var(--hair)}
+.m:nth-child(4n+1){padding-left:0}
+.m:nth-child(4n+1)::before{display:none}
+.m:nth-child(n+5){border-top:1px solid var(--hair)}
+.m .k{font:500 14px/1.3 var(--font-sans);color:var(--fg-2)}
+.m .val{font:500 27px/1.2 var(--font-serif);margin-top:10px;white-space:nowrap}
+.m .peer{font:500 13px/1.4 var(--font-sans);color:var(--fg-3);margin-top:8px}
 .m .peer b{color:var(--fg-2);font-weight:600}
 .m .peer .d.up{color:var(--up);font-weight:700}.m .peer .d.down{color:var(--down);font-weight:700}
 
@@ -407,7 +429,6 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 @media (max-width:920px){.th-grid2{grid-template-columns:1fr;gap:22px}}
 @media (max-width:767px){
   .nav-links{display:none}.menu-btn{display:inline-flex}
-  .th-sec{padding:20px 18px}
   .th-ts{margin-left:0;width:100%}
   .risk{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:repeat(3,1fr);gap:16px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}
@@ -422,10 +443,24 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
   .kchart .blabel{font-size:12px}
   .kchart .axlabel{font-size:12px}
 }
+/* KEY DATA — 태블릿은 네 칸 그대로 좁히고, 휴대폰은 두 칸씩 네 줄 */
+@media (max-width:1023px){
+  .m{padding:22px 10px 22px 24px}
+  .m::before{top:22px;bottom:22px}
+  .m .val{font-size:24px}
+}
 @media (max-width:767px){
-  .m{padding:10px 7px;overflow:hidden}
-  .m .k{font-size:10.5px;white-space:nowrap}
-  .m .val{font-size:15px;margin-top:3px}
+  .kd{padding-top:30px}
+  .kd-head{gap:14px}
+  .kd-title{font-size:16px}
+  .mgrid{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:6px}
+  .m{padding:20px 8px 20px 20px}
+  .m::before{top:20px;bottom:20px}
+  .m:nth-child(2n+1){padding-left:0}
+  .m:nth-child(2n+1)::before{display:none}
+  .m:nth-child(n+3){border-top:1px solid var(--hair)}
+  .m .k{font-size:13px}
+  .m .val{font-size:22px;margin-top:8px}
 }
 @media (max-width:479px){.th-now{font-size:34px}}
 
@@ -1002,24 +1037,24 @@ document.addEventListener('click', function (e) {
 
   <div class="crumb" id="crumb"></div>
 
-  <!-- ===== HEADER CARD ===== -->
-  <header class="tk-head glass">
-    <div class="th-sec">
-      <div class="th-id-row" id="thId"></div>
-      <div class="th-name-row">
-        <h1 class="th-name" id="thName"></h1>
-        <button class="watch-btn" id="watchBtn"><span id="watchTxt"></span></button>
-      </div>
-      <div class="th-meta" id="thMeta"></div>
-      <div class="th-price" style="margin-top:22px">
-        <span class="th-now" id="thNow"></span>
-        <span class="th-chg" id="thChg"></span>
-      </div>
+  <!-- ===== HEADER — 상자 없이 ===== -->
+  <header class="tk-head">
+    <div class="th-id-row" id="thId"></div>
+    <h1 class="th-name" id="thName"></h1>
+    <div class="th-meta" id="thMeta"></div>
+    <div class="th-price">
+      <span class="th-now" id="thNow"></span>
+      <span class="th-chg" id="thChg"></span>
     </div>
-    <div class="th-sec">
-      <div class="mgrid" id="mgrid"></div>
-    </div>
+    <div class="th-asof" id="thAsOf"></div>
+    <button class="watch-btn" id="watchBtn"><svg class="wb-add" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><svg class="wb-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span id="watchTxt"></span></button>
   </header>
+
+  <!-- ===== KEY DATA — 지표 8칸 ===== -->
+  <section class="kd" aria-label="Key data">
+    <div class="kd-head"><span class="kd-title">KEY DATA</span><span class="kd-rule" aria-hidden="true"></span><span class="kd-asof" id="kdAsOf"></span></div>
+    <div class="mgrid" id="mgrid"></div>
+  </section>
 
   <!-- ===== AI REPORT BODY (rendered) ===== -->
   <div id="reportBody"></div>
@@ -1104,7 +1139,7 @@ document.addEventListener('click', function (e) {
       fin:{annual:'연간 실적 (연결)',quarterly:'분기 실적 (연결)',year:'연도',q:'분기',rev:'매출액',op:'영업이익',np:'지배주주 순이익',opm:'영업이익률',roe:'ROE',debt:'부채비율',per:'PER',pbr:'PBR',divy:'배당수익률',eps:'EPS',bps:'BPS',dps:'주당배당금',na:'산출 불가 (적자)',nodata:'—',
         hiddenT:'표시하지 않은 값', hidden:{loss:'최근 4개 분기 적자라 산출하지 않음',fx:'공시 통화의 환율을 확보하지 못함',shares:'주식수를 확인하지 못함',mismatch:'회사가 공시한 두 값이 서로 어긋나 확인하지 못함',no_income:'최근 4개 분기 순이익을 확인하지 못함',impaired:'자본잠식(자본이 0 이하)',equity_check:'자본 항등식이 맞지 않아 확인하지 못함',no_equity:'분기말 자본을 확인하지 못함',no_div:'배당 공시가 없음',ref_mismatch:'외부 참조값과 크게 달라 보류함',unknown:'확인하지 못함'},chartAnnual:'연간 매출·영업이익 추이',chartQuarter:'분기 매출·영업이익 추이',unitJo:'단위: 조원',
         foot:'· 재무는 DART 공시 연결 확정치 · PER·EPS는 최근 4개 분기({win}) 지배주주 순이익, PBR·BPS는 최근 분기말 지배주주 자본 기준 · 배당은 DART 공시 주당현금배당금 기준'},
-      eyebrow:'AI 리서치 리포트', reportDate:'리포트 작성일', dataDate:'데이터 기준일', model:'생성 모델', stance:'투자 의견',
+      eyebrow:'AI 리서치 리포트', reportDate:'리포트 작성일', dataDate:'데이터 기준일', priceAsOf:'{d} 장마감 기준', asOf:'{d} 기준', model:'생성 모델', stance:'투자 의견',
       srcKRX:'한국거래소 (KRX)', srcKRXsub:'시세·시가총액 데이터', srcDART:'금융감독원 전자공시 (DART)', srcDARTsub:'재무·공시 원문',
       discT:'면책 조항',
       disc:'· 본 콘텐츠는 AI가 시장 데이터와 웹 검색 결과를 분석한 정보 제공용이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 책임은 투자자 본인에게 있습니다. 데이터는 지연되거나 오류가 포함될 수 있습니다.',
@@ -1126,7 +1161,7 @@ document.addEventListener('click', function (e) {
       fin:{annual:'Annual (consolidated)',quarterly:'Quarterly (consolidated)',year:'Year',q:'Quarter',rev:'Revenue',op:'Operating profit',np:'Net profit (owners)',opm:'OP margin',roe:'ROE',debt:'Debt ratio',per:'P/E',pbr:'P/B',divy:'Div. yield',eps:'EPS',bps:'BPS',dps:'DPS',na:'n/a (loss)',nodata:'—',
         hiddenT:'Not shown', hidden:{loss:'trailing-4-quarter loss, not computed',fx:'FX rate for the filing currency unavailable',shares:'share count could not be confirmed',mismatch:'two disclosed figures disagree; not confirmed',no_income:'trailing-4-quarter net profit unavailable',impaired:'negative equity (capital impairment)',equity_check:'equity identity does not hold; not confirmed',no_equity:'latest-quarter equity unavailable',no_div:'no dividend disclosure',ref_mismatch:'differs sharply from external reference; withheld',unknown:'could not be confirmed'},chartAnnual:'Annual revenue & operating profit',chartQuarter:'Quarterly revenue & operating profit',unitJo:'Unit: ₩ trillion',
         foot:'· Financials are confirmed DART consolidated figures · P/E & EPS use trailing-4-quarter net profit attributable to owners ({win}); P/B & BPS use latest-quarter equity attributable to owners · Dividend is based on DART-disclosed cash dividend per share'},
-      eyebrow:'AI Research Report', reportDate:'Report date', dataDate:'Data as of', model:'Model', stance:'Stance',
+      eyebrow:'AI Research Report', reportDate:'Report date', dataDate:'Data as of', priceAsOf:'As of {d} close', asOf:'As of {d}', model:'Model', stance:'Stance',
       srcKRX:'Korea Exchange (KRX)', srcKRXsub:'Price & market-cap data', srcDART:'DART (FSS e-disclosure)', srcDARTsub:'Financials & filings',
       discT:'Disclaimer',
       disc:'· This content is AI-generated analysis of market data and web search results, for information only — not investment solicitation or a recommendation. Investment decisions and their outcomes are your own responsibility. Data may be delayed or contain errors.',
@@ -1677,11 +1712,17 @@ document.addEventListener('click', function (e) {
     var cc=chg>0?'up':chg<0?'down':'flat', sign=chg>0?'+':'';
 
     document.getElementById('crumb').innerHTML='<a href="Home.html">'+esc(u.home)+'</a> / <a href="Reports.html">'+esc(u.reports)+'</a> / <b>'+esc(tname(STOCK.name))+' ('+TK+')</b>';
-    document.getElementById('thId').innerHTML='<span>'+TK+'</span><span class="sep">·</span><span>'+esc(tname(STOCK.market))+'</span><span class="sep">·</span><span>'+esc(tname(STOCK.sector))+'</span>';
+    document.getElementById('thId').innerHTML=[TK,tname(STOCK.market),tname(STOCK.sector)].filter(function(x){return x;}).map(function(x){return '<span class="pill">'+esc(x)+'</span>';}).join('');
     document.getElementById('thName').textContent=tname(STOCK.name);
     document.getElementById('thMeta').textContent = REP ? (u.reportDate+' '+(REP.reportDate||'')) : '';
     document.getElementById('thNow').textContent=won(STOCK.price);
     var tc=document.getElementById('thChg'); tc.className='th-chg '+cc; tc.textContent=(chg>0?'▲ ':chg<0?'▼ ':'– ')+sign+chg.toFixed(2)+'%';
+    /* 시세 기준일 — 가격 밑과 KEY DATA 오른쪽. 시세 파일(stocks.js)에 없는 종목은
+       가격도 없으니 날짜도 달지 않는다. */
+    var dd=String((window.KOS_LIVE_DATA&&KOS_LIVE_DATA.dataDate)||'');
+    dd=(/^\d{8}$/.test(dd)&&STOCK.price!=null)? dd.slice(0,4)+'-'+dd.slice(4,6)+'-'+dd.slice(6):'';
+    document.getElementById('thAsOf').textContent=dd?u.priceAsOf.replace('{d}',dd):'';
+    document.getElementById('kdAsOf').textContent=dd?u.asOf.replace('{d}',dd):'';
 
     // 밸류에이션 데이터: valuation.js 우선, 없으면 v2 리포트 quant 폴백
     var VAL=(window.KOS_VALUATION&&KOS_VALUATION.stocks&&KOS_VALUATION.stocks[TK])||null;
