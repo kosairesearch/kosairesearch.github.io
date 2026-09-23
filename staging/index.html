@@ -1316,14 +1316,16 @@ try{
         셰이더와 같은 값을 함께 쓴다) 둘레면 결을 걷는다 — 타원 3배 안은 0, 5배 밖은 그대로.
         무지개가 옅은 순간(데스크톱 밝기 0.1~0.14, 시간의 10~25%)에도 다 걷도록 밝기 문턱을
         0.06 에서 채운다 — 전에는 0.2 라 옅은 순간에는 반만 걷혀 무지개에 결이 앉았다.
-        무지개가 움직이면 빈자리도
-        따라간다. 휴대폰은 무지개가 가장자리(숫자 줄 왼쪽)에 떨어져 이 빈자리가 특히 쓰인다.
-      · 결은 움직이지 않는다. 캔버스 픽셀 하나에 점 하나. */
+        무지개가 움직이면 빈자리도 따라간다.
+      · 결은 움직이지 않는다. 캔버스 픽셀 하나에 점 하나.
+      · 휴대폰 배치(920px 이하)에서는 결을 그리지 않는다(2026-09-23 사장: "모바일에서는
+        그레인을 아예 없애줄래?"). 재료(grainMat)는 그대로 둔다 — 빛 셰이더가 화면 크기·카메라
+        값을 여기서 함께 쓴다. 그리지만 않는다. */
   const grainMat=new THREE.ShaderMaterial({
     transparent:true, depthTest:true, depthWrite:false,
     uniforms:{
       uZ:{value:0.99}, uBuf:{value:new THREE.Vector2(1,1)}, uH:{value:1}, uVh:{value:1},
-      uC:{value:mobile?new THREE.Vector2(0.5,0.34):new THREE.Vector2(0.52,0.56)},
+      uC:{value:new THREE.Vector2(0.52,0.56)},
       uLo:{value:0.0}, uHi:{value:0.08},
       uPInv:{value:camera.projectionMatrixInverse}, uCamW:{value:camera.matrixWorld}, uFloorY:{value:FLOOR_Y},
       uCauC:floorMat.uniforms.uCauC, uCauE:floorMat.uniforms.uCauE, uCauK:floorMat.uniforms.uCauK
@@ -1357,7 +1359,7 @@ try{
   const grainTri=new THREE.BufferGeometry();
   grainTri.setAttribute('position',new THREE.Float32BufferAttribute([-1,-1,0, 3,-1,0, -1,3,0],3));
   const grain=new THREE.Mesh(grainTri,grainMat);
-  grain.frustumCulled=false; grain.renderOrder=10;
+  grain.frustumCulled=false; grain.renderOrder=10; grain.visible=!mobile;
   scene.add(grain);
   const _gz=new THREE.Vector4();
   function sizeGrain(hFull){
