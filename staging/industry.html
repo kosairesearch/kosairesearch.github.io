@@ -980,9 +980,15 @@ document.addEventListener('click', function (e) {
      넘어가 그 줄(행)의 박스만 길어졌다(182px·201px, 영어는 네 가지). 모든 행을 가장 긴
      박스 높이로 맞춘다. 내용은 위에 붙으므로 가는 선과 주요 종목은 어느 박스나 같은 높이다. */
   .ind-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));grid-auto-rows:1fr;gap:14px;margin-top:22px}
-  .ind-card{display:block;text-decoration:none;color:var(--fg-1);padding:20px;border:1px solid var(--border-2);border-radius:var(--radius-md);transition:border-color .15s,background .15s}
+  .ind-card{display:block;text-decoration:none;color:var(--fg-1);padding:20px;border:1px solid var(--border-2);border-radius:var(--radius-md);
+    transition:transform .22s cubic-bezier(.2,.7,.2,1),box-shadow .22s ease,border-color .15s,background .15s}
   .ind-card:hover{border-color:var(--fg-3);background:rgba(0,0,0,.02)}
   :root[data-theme="dark"] .ind-card:hover{background:rgba(255,255,255,.03)}
+  /* 마우스를 올리면 살짝 떠오른다(사장 지시) — 4px 위로, 그림자는 사이트 공용 --shadow-2.
+     마우스가 있는 기기에서만: 휴대폰은 누른 뒤 뜬 채로 남는다. 움직임 줄이기를 켠
+     사람에게는 띄우지 않는다(테두리·화살표가 밝아지는 것은 그대로). */
+  @media (hover:hover){.ind-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-2)}}
+  @media (prefers-reduced-motion:reduce){.ind-card:hover{transform:none}}
   .ind-card .ic-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
   .ind-card .ic-name{font:700 18px var(--font-sans);letter-spacing:-.01em}
   .ind-card .ic-arrow{width:16px;height:16px;flex:none;fill:none;stroke:var(--fg-3);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:stroke .15s}
