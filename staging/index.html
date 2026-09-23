@@ -1300,19 +1300,34 @@ try{
         곳에서는 사라져, 가운데가 가장 거칠고 가장자리는 매끈한 거꾸로 된 모양이었다.
       · 세기 — 가운데(글과 프리즘 둘레)는 옅게(uLo), 가장자리로 갈수록 짙게(uHi).
         첫 화면 아래는 가로로만 따진다 — 가운데 줄은 중간, 양옆은 짙게.
+      · 바닥의 무지개(초점) 자리는 결을 뺀다 — 무지개가 또렷해야 한다(2026-09-23 사장 지시).
+        화소마다 카메라에서 바닥까지 광선을 내려 닿는 점을 구하고, 그 점이 초점 타원(바닥
+        셰이더와 같은 값을 함께 쓴다) 안이면 결을 걷는다. 무지개가 움직이면 빈자리도 따라간다.
       · 결은 움직이지 않는다. 캔버스 픽셀 하나에 점 하나. */
   const grainMat=new THREE.ShaderMaterial({
     transparent:true, depthTest:true, depthWrite:false,
     uniforms:{
       uZ:{value:0.99}, uBuf:{value:new THREE.Vector2(1,1)}, uH:{value:1}, uVh:{value:1},
       uC:{value:mobile?new THREE.Vector2(0.5,0.34):new THREE.Vector2(0.56,0.48)},
-      uLo:{value:0.018}, uHi:{value:0.08}
+      uLo:{value:0.018}, uHi:{value:0.08},
+      uPInv:{value:camera.projectionMatrixInverse}, uCamW:{value:camera.matrixWorld}, uFloorY:{value:FLOOR_Y},
+      uCauC:floorMat.uniforms.uCauC, uCauE:floorMat.uniforms.uCauE, uCauK:floorMat.uniforms.uCauK
     },
     vertexShader:`uniform float uZ;
       void main(){ gl_Position=vec4(position.xy,uZ,1.0); }`,
     fragmentShader:`
       uniform vec2 uBuf,uC; uniform float uH,uVh,uLo,uHi;
+      uniform mat4 uPInv,uCamW; uniform float uFloorY; uniform vec2 uCauC; uniform vec4 uCauE; uniform float uCauK;
       float h12(vec2 p){ vec3 q=fract(vec3(p.xyx)*.1031); q+=dot(q,q.yzx+33.33); return fract((q.x+q.y)*q.z); }
+      /* 이 화소가 바라보는 바닥 점이 무지개 안인가 (0..1). 초점 타원을 1.4배로 조금 넉넉히 잡는다. */
+      float rainbow(){
+        vec4 v=uPInv*vec4(gl_FragCoord.xy/uBuf*2.0-1.0,1.0,1.0);
+        vec3 dir=(uCamW*vec4(v.xyz/v.w,0.0)).xyz, ro=uCamW[3].xyz;
+        if(dir.y>=0.0) return 0.0;
+        vec2 q=(ro+dir*((uFloorY-ro.y)/dir.y)).xz-uCauC;
+        vec2 cl=vec2(dot(q,uCauE.xy),dot(q,vec2(-uCauE.y,uCauE.x)))/(uCauE.zw*1.4);
+        return exp(-0.5*dot(cl,cl))*smoothstep(0.0,0.2,uCauK);
+      }
       void main(){
         vec2 px=floor(gl_FragCoord.xy);
         float n=h12(px)+h12(px+vec2(71.0,113.0))-1.0;         /* -1..1, 0 근처가 잦다 */
@@ -1320,6 +1335,7 @@ try{
         float y=(1.0-gl_FragCoord.y/uBuf.y)*uH;                 /* 위에서부터 CSS px */
         vec2 d=vec2((x-uC.x)/0.5, min((y/uVh-uC.y)/0.5, 0.75));
         float k=mix(uLo,uHi,smoothstep(0.3,1.1,length(d)));
+        k*=1.0-smoothstep(0.1,0.6,rainbow());
         gl_FragColor=vec4(vec3(step(0.0,n)),k*abs(n));
       }`
   });
