@@ -1282,12 +1282,9 @@ try{
   const _rtInv=new THREE.Matrix4();
   const group=new THREE.Group(); group.add(prism); scene.add(group);
 
-  /* 미세 먼지 — 프리즘 주변을 아주 천천히 떠다님 */
-  const DN=70, dpos=new Float32Array(DN*3);
-  for(let i=0;i<DN;i++){ dpos[i*3]=(Math.random()*2-1)*3.4; dpos[i*3+1]=(Math.random()*2-1)*2.6; dpos[i*3+2]=(Math.random()*2-1)*2; }
-  const dgeo=new THREE.BufferGeometry(); dgeo.setAttribute('position',new THREE.BufferAttribute(dpos,3));
-  const dust=new THREE.Points(dgeo,new THREE.PointsMaterial({color:0x7f93b8,size:0.025}));
-  scene.add(dust);
+  /* 미세 먼지(프리즘 주변을 떠다니던 점 70개)는 뺐다 — 화면 전체에 별처럼
+     흩어져 보였다. 2026-09-23 사장 지시. 스테이징에서만 뺀 것이고 실사이트
+     index.html 에는 아직 있다(되살리려면 실사이트의 같은 자리를 가져오면 된다). */
 
   /* 리사이즈(비용 큰 작업)는 창 크기 변경 때만 */
   /* 리사이즈 — 캔버스는 페이지 전체. 구도는 첫 화면 기준(vhRef)으로 고정하고
@@ -1336,7 +1333,6 @@ try{
     group.rotation.z=Math.sin(t*0.131)*0.08+Math.sin(t*0.0713+0.9)*0.04;
     prism.position.y=reduced?0:Math.sin(t*0.7)*0.06+Math.sin(t*0.413+1.1)*0.04;
     prism.position.x=reduced?0:Math.sin(t*0.157+0.6)*0.05;
-    dust.rotation.y=t*0.02; dust.rotation.z=t*0.008;
     prism.updateMatrixWorld(true);
     _rtInv.copy(prism.matrixWorld).invert();
     glass.uniforms.uCamObj.value.copy(camera.position).applyMatrix4(_rtInv);
