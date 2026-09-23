@@ -150,36 +150,52 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 .crumb a{color:var(--fg-3);text-decoration:none}.crumb a:hover{color:var(--fg-1)}
 .crumb b{color:var(--fg-2);font-weight:600}
 
-/* ===== HEADER CARD ===== */
-.tk-head{padding:0;overflow:hidden}
-.th-sec{padding:24px 28px;border-top:1px solid var(--hair)}
-.th-sec:first-child{border-top:0}
-.th-id-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font:500 13px var(--font-sans);color:var(--fg-3);margin-bottom:12px}
-.th-id-row .pill{font:600 12px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);padding:4px 10px;border-radius:var(--pill);letter-spacing:.02em}
+/* ===== HEADER — 상자 없이 바탕 위에 바로 (2026-09-23) =====
+   전에는 이름·가격·지표 8칸을 유리 상자 하나에 담았다. 사장이 준 시안대로
+   상자를 걷고 지표 8칸은 가는 선으로 나눈 칸으로 바꿨다. 바꾼 것은 구조뿐 —
+   글씨체·글자 크기는 상자 시절 그대로 둔다(사장 지시). 스테이징에서 먼저
+   해 보고 같은 날 실사이트로 옮겼다 — 두 쪽이 같다. */
+.tk-head{padding:6px 0 38px}
+.th-id-row{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.th-id-row .pill{font:500 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);padding:5px 10px;border-radius:7px}
 :root[data-theme="dark"] .th-id-row .pill{background:rgba(255,255,255,.08)}
-.th-id-row .sep{opacity:.5}
-.th-name-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .th-name{margin:0;font-size:clamp(30px,4.4vw,44px);font-weight:800;letter-spacing:-.035em;line-height:1}
-.watch-btn{display:inline-flex;align-items:center;gap:6px;font:600 13px var(--font-sans);color:var(--fg-1);white-space:nowrap;
-  background:rgba(0,0,0,.05);border:1px solid var(--border-2);padding:8px 14px;border-radius:var(--pill);cursor:pointer;transition:.15s}
-.watch-btn:hover{background:rgba(0,0,0,.09)}
-:root[data-theme="dark"] .watch-btn{background:rgba(255,255,255,.08)}
-.watch-btn svg{width:15px;height:15px}
-.watch-btn.on{background:var(--fg-1);color:var(--bg-1);border-color:var(--fg-1)}
-.watch-btn.on svg{fill:currentColor}
 .th-meta{margin-top:10px;font:400 13px/1.5 var(--font-sans);color:var(--fg-3)}
+/* 관심종목 담기 — 안 담았을 때 눈에 띄게 채운다(어두운 테마 흰색 · 밝은 테마 검정,
+   사이트 기본 버튼 .btn-primary 와 같은 짝). 담은 뒤에는 테두리만 남긴다.
+   글자색은 테마마다 적는다 — --bg-1 은 밝은 테마에만 있어서 그걸 쓰면
+   어두운 테마에서 흰 바탕에 흰 글자가 된다. */
+.watch-btn{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font:600 13px var(--font-sans);white-space:nowrap;
+  color:#fff;background:#000;border:1px solid #000;padding:10px 16px 10px 13px;border-radius:var(--radius-sm);cursor:pointer;
+  box-shadow:var(--shadow-1);transition:filter .15s,border-color .15s}
+:root[data-theme="dark"] .watch-btn{color:#17171c;background:linear-gradient(180deg,#fff,#e8e8ed);border-color:#fff}
+.watch-btn:hover{filter:brightness(.92)}
+.watch-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.watch-btn .wb-on{display:none}
+.watch-btn.on,:root[data-theme="dark"] .watch-btn.on{color:var(--fg-1);background:transparent;border-color:var(--border-2);box-shadow:none}
+.watch-btn.on:hover{filter:none;border-color:var(--fg-3)}
+.watch-btn.on .wb-add{display:none}
+.watch-btn.on .wb-on{display:block}
 
 /* price */
-.th-price{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+.th-price{display:flex;align-items:baseline;gap:6px 16px;flex-wrap:wrap;margin-top:26px}
 .th-now{font:800 42px/1 var(--font-sans);letter-spacing:-.03em}
 .th-chg{font:700 17px var(--font-sans)}
 .th-chg.up{color:var(--up)}.th-chg.down{color:var(--down)}
+.th-asof{margin-top:12px;font:500 13px var(--font-sans);color:var(--fg-3)}
+.th-asof:empty{display:none}
 .th-ts{margin-left:auto;font:500 12px var(--font-sans);color:var(--fg-3);align-self:flex-end}
 
-/* metric grid */
-.mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hair);border:1px solid var(--hair);border-radius:var(--radius-md);overflow:hidden}
-.m{background:rgba(255,255,255,0.4);padding:14px 16px}
-:root[data-theme="dark"] .m{background:rgba(255,255,255,0.02)}
+/* ===== 지표 8칸 =====
+   바깥 상자·칸 상자 없이 가는 선으로만 나눈다. 세로선은 글자 높이만큼만
+   긋고(위아래를 띄운다) 두 줄 사이는 한 줄로 가로지른다. */
+.kd{border-top:1px solid var(--hair);padding-top:14px}
+.mgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.m{position:relative;min-width:0;padding:22px 16px 22px 36px}
+.m::before{content:"";position:absolute;left:0;top:22px;bottom:22px;width:1px;background:var(--hair)}
+.m:nth-child(4n+1){padding-left:0}
+.m:nth-child(4n+1)::before{display:none}
+.m:nth-child(n+5){border-top:1px solid var(--hair)}
 .m .k{font:500 12px var(--font-sans);color:var(--fg-3)}
 .m .val{font:700 22px var(--font-sans);letter-spacing:-.02em;margin-top:5px;line-height:1.05;white-space:nowrap}
 .m .peer{font:500 11.5px/1.35 var(--font-sans);color:var(--fg-3);margin-top:6px}
@@ -214,6 +230,26 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 .sec-kicker{font:700 12px var(--font-sans);letter-spacing:.1em;color:var(--fg-3);margin-bottom:7px}
 .sec-num{color:var(--brand-blue)}:root[data-theme="dark"] .sec-num{color:var(--brand-cyan)}
 .sec-title{margin:0 0 18px;font-size:clamp(22px,3vw,28px);font-weight:700;letter-spacing:-.03em}
+
+/* ===== 리포트 목차 — 왼쪽에 붙어 따라오고, 지금 읽는 섹션을 밝힌다 (2026-09-23) =====
+   누르면 그 섹션으로 간다. 목록은 그려진 본문의 섹션(번호·제목)에서 뽑는다 —
+   섹션이 늘어도 여기를 고칠 일이 없다.
+   넓은 화면(1100px~)에서만 편다. 좁으면 본문 옆에 목차 자리가 없다. */
+.rp-aside{display:none}
+@media (min-width:1100px){
+  .rp-layout.has-toc{display:grid;grid-template-columns:200px minmax(0,1fr);column-gap:40px;align-items:stretch}
+  .rp-layout.has-toc .rp-aside{display:block;border-right:1px solid var(--hair)}
+}
+.rp-toc{position:sticky;top:var(--toc-top,110px);margin-top:62px;padding:0 18px 24px 0;
+  max-height:calc(100vh - var(--toc-top,110px) - 16px);overflow-y:auto}
+.rp-toc-h{font:700 14px var(--font-sans);color:var(--fg-1);margin:0 0 14px;padding-left:16px}
+.rp-toc ol{list-style:none;margin:0;padding:0}
+.rp-toc a{display:flex;align-items:baseline;gap:8px;padding:10px 12px 10px 13px;border-left:3px solid transparent;border-radius:0 8px 8px 0;
+  font:500 14px/1.35 var(--font-sans);color:var(--fg-3);text-decoration:none;transition:color .15s,background .15s}
+.rp-toc a:hover{color:var(--fg-1)}
+.rp-toc a .n{font-variant-numeric:tabular-nums;flex:none}
+.rp-toc a.on{color:var(--fg-1);font-weight:600;background:rgba(0,0,0,.04);border-left-color:var(--brand-blue)}
+:root[data-theme="dark"] .rp-toc a.on{background:rgba(255,255,255,.05);border-left-color:var(--brand-cyan)}
 .hairline{border:0;border-top:1px solid var(--hair);max-width:880px;margin:42px auto 0}
 
 .prose p{margin:0 0 20px;font:400 16px/1.75 var(--font-sans);color:var(--fg-2);text-wrap:pretty}
@@ -353,7 +389,6 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 @media (max-width:920px){.th-grid2{grid-template-columns:1fr;gap:22px}}
 @media (max-width:767px){
   .nav-links{display:none}.menu-btn{display:inline-flex}
-  .th-sec{padding:20px 18px}
   .th-ts{margin-left:0;width:100%}
   .risk{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:repeat(3,1fr);gap:16px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}
@@ -368,10 +403,18 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
   .kchart .blabel{font-size:12px}
   .kchart .axlabel{font-size:12px}
 }
+/* 지표 8칸 — 태블릿은 네 칸 그대로 좁히고, 휴대폰은 두 칸씩 네 줄 */
+@media (max-width:1023px){
+  .m{padding-left:22px;padding-right:8px}
+}
 @media (max-width:767px){
-  .m{padding:10px 7px;overflow:hidden}
-  .m .k{font-size:10.5px;white-space:nowrap}
-  .m .val{font-size:15px;margin-top:3px}
+  .kd{padding-top:4px}
+  .mgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .m{padding:18px 8px 18px 20px}
+  .m::before{top:18px;bottom:18px}
+  .m:nth-child(2n+1){padding-left:0}
+  .m:nth-child(2n+1)::before{display:none}
+  .m:nth-child(n+3){border-top:1px solid var(--hair)}
 }
 @media (max-width:479px){.th-now{font-size:34px}}
 
@@ -883,24 +926,28 @@ html.lenis,html.lenis body{height:auto}
 
   <div class="crumb" id="crumb"></div>
 
-  <!-- ===== HEADER CARD ===== -->
-  <header class="tk-head glass">
-    <div class="th-sec">
-      <div class="th-id-row" id="thId"></div>
-      <div class="th-name-row">
-        <h1 class="th-name" id="thName"></h1>
-        <button class="watch-btn" id="watchBtn"><span id="watchTxt"></span></button>
-      </div>
-      <div class="th-meta" id="thMeta"></div>
-      <div class="th-price" style="margin-top:22px">
-        <span class="th-now" id="thNow"></span>
-        <span class="th-chg" id="thChg"></span>
-      </div>
+  <!-- ===== HEADER — 상자 없이 ===== -->
+  <header class="tk-head">
+    <div class="th-id-row" id="thId"></div>
+    <h1 class="th-name" id="thName"></h1>
+    <div class="th-meta" id="thMeta"></div>
+    <div class="th-price">
+      <span class="th-now" id="thNow"></span>
+      <span class="th-chg" id="thChg"></span>
     </div>
-    <div class="th-sec">
-      <div class="mgrid" id="mgrid"></div>
-    </div>
+    <div class="th-asof" id="thAsOf"></div>
+    <button class="watch-btn" id="watchBtn"><svg class="wb-add" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><svg class="wb-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span id="watchTxt"></span></button>
   </header>
+
+  <!-- ===== 지표 8칸 ===== -->
+  <div class="kd">
+    <div class="mgrid" id="mgrid"></div>
+  </div>
+
+  <!-- ===== 리포트 목차 + 본문 — 넓은 화면에서 두 칸 ===== -->
+  <div class="rp-layout" id="rpLayout">
+    <aside class="rp-aside"><nav class="rp-toc" id="rpToc"></nav></aside>
+    <div class="rp-main">
 
   <!-- ===== AI REPORT BODY (rendered) ===== -->
   <div id="reportBody"></div>
@@ -909,6 +956,9 @@ html.lenis,html.lenis body{height:auto}
   <div id="peersBox"></div>
 
   <div class="disclaimer" id="disclaimer"></div>
+
+    </div>
+  </div>
 
 </div>
 
@@ -979,24 +1029,24 @@ html.lenis,html.lenis body{height:auto}
   function esc(x){ return String(x==null?'':x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
   var UI={
-    ko:{ home:'홈', reports:'리포트', watch:'관심종목 추가', watched:'관심종목 추가됨', watchShort:'관심종목',
+    ko:{ home:'홈', reports:'리포트', toc:'리포트', watch:'관심종목 추가', watched:'관심종목 추가됨', watchShort:'관심종목',
       mk:{price:'현재가',chg:'전일 대비',mcap:'시가총액',amt:'거래대금',vol:'거래량',shares:'상장주식수',market:'시장',sector:'업종',per:'PER',pbr:'PBR',roe:'ROE',eps:'EPS',divy:'배당수익률'},
       sec:{overview:'리포트 개요',business:'사업 구조',recent:'최근 실적·주가',outlook:'전망',bull:'강세 요인',bear:'약세 요인',risk:'리스크 요인',verdict:'종합 의견',sources:'참고 출처',fin:'실적 추이',earnings:'실적 분석',industry:'산업 분석',valuation:'밸류에이션',chk:'다음 체크포인트'},
       fin:{annual:'연간 실적 (연결)',quarterly:'분기 실적 (연결)',year:'연도',q:'분기',rev:'매출액',op:'영업이익',np:'지배주주 순이익',opm:'영업이익률',roe:'ROE',debt:'부채비율',per:'PER',pbr:'PBR',divy:'배당수익률',eps:'EPS',bps:'BPS',dps:'주당배당금',na:'산출 불가 (적자)',nodata:'—',
         hiddenT:'표시하지 않은 값', hidden:{loss:'최근 4개 분기 적자라 산출하지 않음',fx:'공시 통화의 환율을 확보하지 못함',shares:'주식수를 확인하지 못함',mismatch:'회사가 공시한 두 값이 서로 어긋나 확인하지 못함',no_income:'최근 4개 분기 순이익을 확인하지 못함',impaired:'자본잠식(자본이 0 이하)',equity_check:'자본 항등식이 맞지 않아 확인하지 못함',no_equity:'분기말 자본을 확인하지 못함',no_div:'배당 공시가 없음',ref_mismatch:'외부 참조값과 크게 달라 보류함',unknown:'확인하지 못함'},chartAnnual:'연간 매출·영업이익 추이',chartQuarter:'분기 매출·영업이익 추이',unitJo:'단위: 조원',
         foot:'· 재무는 DART 공시 연결 확정치 · PER·EPS는 최근 4개 분기({win}) 지배주주 순이익, PBR·BPS는 최근 분기말 지배주주 자본 기준 · 배당은 DART 공시 주당현금배당금 기준'},
-      eyebrow:'AI 리서치 리포트', reportDate:'리포트 작성일', dataDate:'데이터 기준일', model:'생성 모델', stance:'투자 의견',
+      eyebrow:'AI 리서치 리포트', reportDate:'리포트 작성일', dataDate:'데이터 기준일', priceAsOf:'{d} 장마감 기준', model:'생성 모델', stance:'투자 의견',
       srcKRX:'한국거래소 (KRX)', srcKRXsub:'시세·시가총액 데이터', srcDART:'금융감독원 전자공시 (DART)', srcDARTsub:'재무·공시 원문',
       discT:'면책 조항',
       disc:'· 본 콘텐츠는 AI가 시장 데이터와 웹 검색 결과를 분석한 정보 제공용이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 책임은 투자자 본인에게 있습니다. 데이터는 지연되거나 오류가 포함될 수 있습니다.',
       none:'이 종목의 AI 리포트는 아직 준비되지 않았습니다. 시가총액 상위 종목부터 순차적으로 생성하고 있습니다.' },
-    en:{ home:'Home', reports:'Reports', watch:'Add to watchlist', watched:'Added to watchlist', watchShort:'Watchlist',
+    en:{ home:'Home', reports:'Reports', toc:'Report', watch:'Add to watchlist', watched:'Added to watchlist', watchShort:'Watchlist',
       mk:{price:'Price',chg:'Day change',mcap:'Market cap',amt:'Trading value',vol:'Volume',shares:'Shares out.',market:'Market',sector:'Sector',per:'P/E',pbr:'P/B',roe:'ROE',eps:'EPS',divy:'Div. yield'},
       sec:{overview:'Report Overview',business:'Business',recent:'Recent Results & Price',outlook:'Outlook',bull:'Bull Factors',bear:'Bear Factors',risk:'Risk Factors',verdict:'Verdict',sources:'Sources',fin:'Financial Trends',earnings:'Earnings Analysis',industry:'Industry',valuation:'Valuation',chk:'What to Watch Next'},
       fin:{annual:'Annual (consolidated)',quarterly:'Quarterly (consolidated)',year:'Year',q:'Quarter',rev:'Revenue',op:'Operating profit',np:'Net profit (owners)',opm:'OP margin',roe:'ROE',debt:'Debt ratio',per:'P/E',pbr:'P/B',divy:'Div. yield',eps:'EPS',bps:'BPS',dps:'DPS',na:'n/a (loss)',nodata:'—',
         hiddenT:'Not shown', hidden:{loss:'trailing-4-quarter loss, not computed',fx:'FX rate for the filing currency unavailable',shares:'share count could not be confirmed',mismatch:'two disclosed figures disagree; not confirmed',no_income:'trailing-4-quarter net profit unavailable',impaired:'negative equity (capital impairment)',equity_check:'equity identity does not hold; not confirmed',no_equity:'latest-quarter equity unavailable',no_div:'no dividend disclosure',ref_mismatch:'differs sharply from external reference; withheld',unknown:'could not be confirmed'},chartAnnual:'Annual revenue & operating profit',chartQuarter:'Quarterly revenue & operating profit',unitJo:'Unit: ₩ trillion',
         foot:'· Financials are confirmed DART consolidated figures · P/E & EPS use trailing-4-quarter net profit attributable to owners ({win}); P/B & BPS use latest-quarter equity attributable to owners · Dividend is based on DART-disclosed cash dividend per share'},
-      eyebrow:'AI Research Report', reportDate:'Report date', dataDate:'Data as of', model:'Model', stance:'Stance',
+      eyebrow:'AI Research Report', reportDate:'Report date', dataDate:'Data as of', priceAsOf:'As of {d} close', model:'Model', stance:'Stance',
       srcKRX:'Korea Exchange (KRX)', srcKRXsub:'Price & market-cap data', srcDART:'DART (FSS e-disclosure)', srcDARTsub:'Financials & filings',
       discT:'Disclaimer',
       disc:'· This content is AI-generated analysis of market data and web search results, for information only — not investment solicitation or a recommendation. Investment decisions and their outcomes are your own responsibility. Data may be delayed or contain errors.',
@@ -1265,17 +1315,78 @@ html.lenis,html.lenis body{height:auto}
     h+='<div class="col"><div class="rep-meta rep-meta-end"><span><b>'+esc(u.reportDate)+'</b>'+esc(REP.reportDate||'')+'</span></div></div>';
     return h;
   }
+  /* ===== 리포트 목차 =====
+     render() 가 본문을 다시 그릴 때마다(언어 전환) 새로 만든다.
+     실사이트에는 구독 구간이 없어 자물쇠를 달지 않는다(스테이징에만 있다). */
+  var _tocSecs=[], _tocLinks=[], _tocRaf=0;
+  /* 떠 있는 머리띠의 아래 끝 — 목차가 붙는 자리이자 이동할 때 비켜 설 높이 */
+  function tocTop(){ var nv=document.querySelector('.nav'); return nv? Math.max(0,nv.getBoundingClientRect().bottom) : 0; }
+  function buildToc(u){
+    var lay=document.getElementById('rpLayout'), toc=document.getElementById('rpToc');
+    if(!lay||!toc) return;
+    var secs=[].slice.call(document.querySelectorAll('#reportBody section.sec')).filter(function(s){
+      return s.querySelector('.sec-num') && s.querySelector('.sec-title'); });
+    _tocSecs=[]; _tocLinks=[];
+    if(secs.length<2){ lay.classList.remove('has-toc'); toc.innerHTML=''; return; }
+    var h='<div class="rp-toc-h">'+esc(u.toc)+'</div><ol>';
+    secs.forEach(function(s){
+      var num=s.querySelector('.sec-num').textContent.trim(), ttl=s.querySelector('.sec-title').textContent.trim();
+      s.id='sec-'+num;
+      h+='<li><a href="#sec-'+esc(num)+'"><span class="n">'+esc(num)+'.</span><span class="t">'+esc(ttl)+'</span></a></li>';
+    });
+    toc.innerHTML=h+'</ol>';
+    toc.setAttribute('aria-label',u.toc);
+    toc.style.setProperty('--toc-top',(tocTop()+24)+'px');
+    lay.classList.add('has-toc');
+    _tocSecs=secs; _tocLinks=[].slice.call(toc.querySelectorAll('a'));
+    tocSpy();
+  }
+  /* 지금 읽는 섹션 — 머리띠 아래 화면의 위쪽 30% 선을 넘어선 마지막 섹션. 맨 아래까지 내리면 마지막 섹션. */
+  function tocSpy(){
+    _tocRaf=0;
+    if(!_tocLinks.length) return;
+    var top=tocTop(), line=top+(innerHeight-top)*0.3, cur=0, i;
+    for(i=0;i<_tocSecs.length;i++){ if(_tocSecs[i].getBoundingClientRect().top<=line) cur=i; else break; }
+    if(innerHeight+scrollY>=document.documentElement.scrollHeight-2) cur=_tocSecs.length-1;
+    _tocLinks.forEach(function(a,k){
+      a.classList.toggle('on',k===cur);
+      if(k===cur) a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current');
+    });
+  }
+  function tocQueue(){ if(!_tocRaf) _tocRaf=requestAnimationFrame(tocSpy); }
+  window.addEventListener('scroll',tocQueue,{passive:true});
+  window.addEventListener('resize',function(){
+    var toc=document.getElementById('rpToc'); if(toc) toc.style.setProperty('--toc-top',(tocTop()+24)+'px');
+    tocQueue();
+  });
+  /* 누르면 그 섹션 제목이 머리띠 바로 아래 오도록. 부드러운 스크롤(lenis)이 켜져 있으면
+     그걸로 — smooth-scroll.js 의 #앵커 처리는 머리띠 높이를 90px 로 못 박아 두었다. */
+  document.getElementById('rpToc').addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href^="#sec-"]'); if(!a) return;
+    var el=document.getElementById(a.getAttribute('href').slice(1)); if(!el) return;
+    e.preventDefault(); e.stopPropagation();
+    var head=el.querySelector('.sec-kicker')||el;
+    var y=Math.max(0, head.getBoundingClientRect().top+scrollY-tocTop()-24);
+    var ls=window.KOSSmoothScroll;
+    if(ls&&typeof ls.scrollTo==='function') ls.scrollTo(y); else window.scrollTo({top:y,behavior:'smooth'});
+  });
+
   function render(){
     var u=U(), Ln=L();
     var chg=(STOCK.change==null?0:STOCK.change);
     var cc=chg>0?'up':chg<0?'down':'flat', sign=chg>0?'+':'';
 
     document.getElementById('crumb').innerHTML='<a href="Home.html">'+esc(u.home)+'</a> / <a href="Reports.html">'+esc(u.reports)+'</a> / <b>'+esc(tname(STOCK.name))+' ('+TK+')</b>';
-    document.getElementById('thId').innerHTML='<span>'+TK+'</span><span class="sep">·</span><span>'+esc(tname(STOCK.market))+'</span><span class="sep">·</span><span>'+esc(tname(STOCK.sector))+'</span>';
+    document.getElementById('thId').innerHTML=[TK,tname(STOCK.market),tname(STOCK.sector)].filter(function(x){return x;}).map(function(x){return '<span class="pill">'+esc(x)+'</span>';}).join('');
     document.getElementById('thName').textContent=tname(STOCK.name);
     document.getElementById('thMeta').textContent = REP ? (u.reportDate+' '+(REP.reportDate||'')) : '';
     document.getElementById('thNow').textContent=won(STOCK.price);
     var tc=document.getElementById('thChg'); tc.className='th-chg '+cc; tc.textContent=(chg>0?'▲ ':chg<0?'▼ ':'– ')+sign+chg.toFixed(2)+'%';
+    /* 시세 기준일 — 가격 밑. 시세 파일(stocks.js)에 없는 종목은
+       가격도 없으니 날짜도 달지 않는다. */
+    var dd=String((window.KOS_LIVE_DATA&&KOS_LIVE_DATA.dataDate)||'');
+    dd=(/^\d{8}$/.test(dd)&&STOCK.price!=null)? dd.slice(0,4)+'-'+dd.slice(4,6)+'-'+dd.slice(6):'';
+    document.getElementById('thAsOf').textContent=dd?u.priceAsOf.replace('{d}',dd):'';
 
     // 밸류에이션 데이터: valuation.js 우선, 없으면 v2 리포트 quant 폴백
     var VAL=(window.KOS_VALUATION&&KOS_VALUATION.stocks&&KOS_VALUATION.stocks[TK])||null;
@@ -1339,6 +1450,7 @@ html.lenis,html.lenis body{height:auto}
       rb.innerHTML=h;
     }
 
+    buildToc(u);
     document.getElementById('disclaimer').innerHTML='<b>'+esc(u.discT)+'</b> '+esc(u.disc);
     (function setSEO(){
       try{
