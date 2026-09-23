@@ -151,17 +151,16 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 
 /* list — 리포트 목록과 같은 모양 (2026-09-23 스테이징)
    상자 없이 바탕 위에 바로 놓고 줄은 가는 선으로만 나눈다. 칸은 NO. · 종목 · 현재가 ·
-   리포트 제목 · 발행일 · 북마크 — staging/Reports.html 목록(.rl-*)과 같은 값이다.
+   리포트 제목 · 발행일 — staging/Reports.html 목록(.rl-*)과 같은 값에서 북마크 칸만 뺐다.
+   관심종목 페이지라 북마크가 또 있을 까닭이 없다(사장). 빼는 일은 '편집'이 한다.
    사장: "디자인의 일관성" — 한쪽을 고치면 다른 쪽도 같이 고친다.
    편집 중에는 맨 앞에 빼기 단추 칸(28px)이 붙는다. */
-.wl-head,.wl-row{display:grid;grid-template-columns:56px minmax(0,2.7fr) minmax(0,1.4fr) minmax(0,3.6fr) minmax(0,1.3fr) 40px;column-gap:20px;align-items:center}
-.wl.edit .wl-head,.wl.edit .wl-row{grid-template-columns:28px 56px minmax(0,2.7fr) minmax(0,1.4fr) minmax(0,3.6fr) minmax(0,1.3fr) 40px}
+.wl-head,.wl-row{display:grid;grid-template-columns:56px minmax(0,2.7fr) minmax(0,1.4fr) minmax(0,3.6fr) minmax(0,1.3fr);column-gap:20px;align-items:center}
+.wl.edit .wl-head,.wl.edit .wl-row{grid-template-columns:28px 56px minmax(0,2.7fr) minmax(0,1.4fr) minmax(0,3.6fr) minmax(0,1.3fr)}
 .wl-head{padding:14px 0;font:600 12px var(--font-sans);color:var(--fg-3);letter-spacing:.03em;border-bottom:1px solid var(--border-2)}
 .wl-head .h-edit{display:none}
 .wl.edit .wl-head .h-edit{display:block}
 .wl-head .h-price{text-align:left}
-/* 북마크 머리글과 아이콘은 둘 다 맨 끝 칸 오른쪽 끝 — '북마크' 가운데 밑에 아이콘이 온다. */
-.wl-head .h-wl{justify-self:end;white-space:nowrap}
 .wl-row{padding:20px 0;border-top:1px solid var(--hair);cursor:pointer;text-decoration:none;color:var(--fg-1);position:relative;isolation:isolate}
 .wl-row:first-of-type{border-top:0}
 .wl-row:last-child{border-bottom:1px solid var(--hair)}
@@ -193,16 +192,6 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 .c-date{font:500 12px var(--font-sans);color:var(--fg-3);white-space:nowrap}
 .c-chev{color:var(--fg-3);display:flex;justify-content:flex-end}
 .c-chev svg{width:16px;height:16px}
-/* 북마크(관심종목) 단추 — 리포트 목록과 같다. 넓은 화면에서는 맨 끝 칸 오른쪽 끝,
-   좁은 화면(880px 이하)은 줄 오른쪽 끝에 띄운다(아래 반응형). 여기서 누르면 관심종목에서 빠진다. */
-.wl-btn{position:relative;justify-self:end;width:30px;height:30px;display:flex;align-items:center;justify-content:center;border:0;background:transparent;cursor:pointer;color:var(--fg-3);border-radius:8px;transition:background .12s,color .12s;padding:0;z-index:2}
-.wl-btn:hover{background:rgba(0,0,0,.06);color:var(--fg-1)}
-:root[data-theme="dark"] .wl-btn:hover{background:rgba(255,255,255,.1)}
-.wl-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linejoin:round;stroke-linecap:round}
-.wl-btn.on{color:#6b7280}
-.wl-btn.on svg{fill:#6b7280;stroke:#6b7280}
-:root[data-theme="dark"] .wl-btn.on{color:#fff}
-:root[data-theme="dark"] .wl-btn.on svg{fill:#fff;stroke:#fff}
 
 /* pager */
 .pager{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px}
@@ -247,10 +236,8 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 @media (min-width:1180px){:root{--pad:0px}.nav{width:100%}}
 @media (max-width:880px){
   .wl-head{display:none}
-  .wl-row{grid-template-columns:1fr auto;gap:8px 14px;row-gap:10px;align-items:start;padding:16px 34px 16px 0}
+  .wl-row{grid-template-columns:1fr auto;gap:8px 14px;row-gap:10px;align-items:start;padding:16px 0}
   .wl.edit .wl-row{grid-template-columns:28px 1fr auto}
-  /* 아이콘 오른쪽 끝을 선 끝에 맞춘다(버튼 안쪽 여백 6px 만큼 밖으로) */
-  .wl-btn{position:absolute;top:50%;right:-6px;transform:translateY(-50%)}
   .c-rank{display:none}
   .c-price{grid-column:2;grid-row:1;text-align:right}
   .wl.edit .c-price{grid-column:3}
@@ -260,7 +247,6 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
   .wl.edit .c-date{grid-column:2 / -1}
   .c-chev{display:none}
 }
-@media (max-width:640px){.wl-btn{top:14px;transform:none}}
 @media (max-width:767px){
   .nav-links{display:none}.menu-btn{display:inline-flex}
   .page-head{padding:28px 0 4px}
@@ -697,7 +683,6 @@ document.addEventListener('click', function (e) {
       <span class="h-price">현재가</span>
       <span>리포트 제목</span>
       <span>발행일</span>
-      <span class="h-wl">북마크</span>
     </div>
     <div id="rows" data-i18n-skip></div>
   </div>
@@ -778,7 +763,7 @@ function sorted(){
 }
 function repDate(tk){ const R=window.KOS_REPORTS&&KOS_REPORTS.reports&&KOS_REPORTS.reports[tk]; return R&&R.reportDate ? R.reportDate : ''; }
 /* 줄 모양은 리포트 목록(staging/Reports.html rowHtml)과 같다 — 번호 · 종목 · 현재가 · 리포트 제목 ·
-   발행일 · 북마크. 번호는 지금 정렬에서의 순서(쪽을 넘겨도 이어진다). */
+   발행일. 북마크는 없다(관심종목 페이지다). 번호는 지금 정렬에서의 순서(쪽을 넘겨도 이어진다). */
 function rowHtml(s,i){
   const dir=s.change>0?'up':s.change<0?'down':'flat',arw=s.change>0?'▲':s.change<0?'▼':'–';
   const title=repTitle(s.ticker);
@@ -793,9 +778,6 @@ function rowHtml(s,i){
     <div class="c-price"><div class="px">${KOS.won(s.price)}</div><div class="ch ${dir}"><span style="font-size:10px">${arw}</span> ${KOS.pct(s.change)}</div></div>
     <p class="c-ai c-title">${titleHtml}</p>
     <div class="c-date">${repDate(s.ticker) || '—'}</div>
-    <span class="wl-btn ${isWatched(s.ticker)?'on':''}" data-wl="${s.ticker}" role="button" aria-label="${T('관심종목')}" title="${T('관심종목 추가/해제')}">
-      <svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-    </span>
   </a>`;
 }
 let page=1; const PAGE_SIZE=10;
@@ -863,9 +845,6 @@ document.getElementById('clearAllBtn').addEventListener('click',()=>{
 rowsEl.addEventListener('click',e=>{
   const rm=e.target.closest('[data-remove]');
   if(rm){e.preventDefault();if(window.KOSWatch)window.KOSWatch.remove(rm.dataset.remove);LIST=getWatched();render();return;}
-  // 북마크 — 리포트 목록과 같은 단추. 이 목록은 전부 담긴 종목이라 누르면 빠진다.
-  const wb=e.target.closest('.wl-btn');
-  if(wb){e.preventDefault();e.stopPropagation();if(window.KOSWatch){const tk=wb.dataset.wl;if(isWatched(tk))window.KOSWatch.remove(tk);else window.KOSWatch.add(tk);}LIST=getWatched();render();return;}
 });
 // 워치리스트(Firestore) 변경·로딩 시 목록 재동기화
 function refreshWl(){ LIST=getWatched(); render(); }
@@ -893,7 +872,7 @@ const WATCHLIST_DICT={
   "정렬":"Sort","등락률순":"By Change","시가총액순":"By Market Cap","추가 순서":"By Date Added","종목명순":"By Name",
   "등락률 높은 순":"Change: High→Low","등락률 낮은 순":"Change: Low→High","시가총액 높은 순":"Market Cap: High→Low","시가총액 낮은 순":"Market Cap: Low→High",
   " 편집":" Edit"," 완료":" Done","편집":"Edit","전체 삭제":"Clear All",
-  "종목":"Stock","현재가":"Price","리포트 제목":"Report Title","발행일":"Date","북마크":"Bookmark","리포트 준비 중":"Report coming soon",
+  "종목":"Stock","현재가":"Price","리포트 제목":"Report Title","발행일":"Date","리포트 준비 중":"Report coming soon",
   "관심 종목이 비어 있습니다":"Your watchlist is empty",
   "리포트 페이지에서 업종·시가총액·PER 등 조건으로 종목을 찾으시거나, 종목 상세 페이지에서 관심종목에 추가하실 수 있습니다.":"Find stocks on the Reports page by industry, market cap, PER and other conditions, or add them from a stock's detail page.",
   "리포트 둘러보기":"Browse reports",
