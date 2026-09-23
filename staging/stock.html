@@ -230,6 +230,27 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 .sec-kicker{font:700 12px var(--font-sans);letter-spacing:.1em;color:var(--fg-3);margin-bottom:7px}
 .sec-num{color:var(--brand-blue)}:root[data-theme="dark"] .sec-num{color:var(--brand-cyan)}
 .sec-title{margin:0 0 18px;font-size:clamp(22px,3vw,28px);font-weight:700;letter-spacing:-.03em}
+
+/* ===== 리포트 목차 — 왼쪽에 붙어 따라오고, 지금 읽는 섹션을 밝힌다 (2026-09-23 스테이징) =====
+   누르면 그 섹션으로 간다. 목록은 그려진 본문의 섹션(번호·제목)에서 뽑는다 —
+   섹션이 늘거나 잠긴 구간이 바뀌어도 여기를 고칠 일이 없다.
+   넓은 화면(1100px~)에서만 편다. 좁으면 본문 옆에 목차 자리가 없다. */
+.rp-aside{display:none}
+@media (min-width:1100px){
+  .rp-layout.has-toc{display:grid;grid-template-columns:200px minmax(0,1fr);column-gap:40px;align-items:stretch}
+  .rp-layout.has-toc .rp-aside{display:block;border-right:1px solid var(--hair)}
+}
+.rp-toc{position:sticky;top:var(--toc-top,110px);margin-top:62px;padding:0 18px 24px 0;
+  max-height:calc(100vh - var(--toc-top,110px) - 16px);overflow-y:auto}
+.rp-toc-h{font:700 14px var(--font-sans);color:var(--fg-1);margin:0 0 14px;padding-left:16px}
+.rp-toc ol{list-style:none;margin:0;padding:0}
+.rp-toc a{display:flex;align-items:baseline;gap:8px;padding:10px 12px 10px 13px;border-left:3px solid transparent;border-radius:0 8px 8px 0;
+  font:500 14px/1.35 var(--font-sans);color:var(--fg-3);text-decoration:none;transition:color .15s,background .15s}
+.rp-toc a:hover{color:var(--fg-1)}
+.rp-toc a .n{font-variant-numeric:tabular-nums;flex:none}
+.rp-toc a.on{color:var(--fg-1);font-weight:600;background:rgba(0,0,0,.04);border-left-color:var(--brand-blue)}
+:root[data-theme="dark"] .rp-toc a.on{background:rgba(255,255,255,.05);border-left-color:var(--brand-cyan)}
+.rp-toc a .lk{margin-left:auto;align-self:center;width:12px;height:12px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;opacity:.55}
 .hairline{border:0;border-top:1px solid var(--hair);max-width:880px;margin:42px auto 0}
 
 .prose p{margin:0 0 20px;font:400 16px/1.75 var(--font-sans);color:var(--fg-2);text-wrap:pretty}
@@ -1042,6 +1063,11 @@ document.addEventListener('click', function (e) {
     <div class="mgrid" id="mgrid"></div>
   </div>
 
+  <!-- ===== 리포트 목차 + 본문 — 넓은 화면에서 두 칸 ===== -->
+  <div class="rp-layout" id="rpLayout">
+    <aside class="rp-aside"><nav class="rp-toc" id="rpToc"></nav></aside>
+    <div class="rp-main">
+
   <!-- ===== AI REPORT BODY (rendered) ===== -->
   <div id="reportBody"></div>
 
@@ -1049,6 +1075,9 @@ document.addEventListener('click', function (e) {
   <div id="peersBox"></div>
 
   <div class="disclaimer" id="disclaimer"></div>
+
+    </div>
+  </div>
 
 </div>
 
@@ -1119,7 +1148,7 @@ document.addEventListener('click', function (e) {
   function esc(x){ return String(x==null?'':x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
   var UI={
-    ko:{ home:'홈', reports:'리포트', watch:'관심종목 추가', watched:'관심종목 추가됨', watchShort:'관심종목',
+    ko:{ home:'홈', reports:'리포트', toc:'리포트', watch:'관심종목 추가', watched:'관심종목 추가됨', watchShort:'관심종목',
       mk:{price:'현재가',chg:'전일 대비',mcap:'시가총액',amt:'거래대금',vol:'거래량',shares:'상장주식수',market:'시장',sector:'업종',per:'PER',pbr:'PBR',roe:'ROE',eps:'EPS',divy:'배당수익률'},
       sec:{overview:'리포트 개요',business:'사업 구조',recent:'최근 실적·주가',outlook:'전망',bull:'강세 요인',bear:'약세 요인',risk:'리스크 요인',verdict:'종합 의견',sources:'참고 출처',fin:'실적 추이',earnings:'실적 분석',industry:'산업 분석',valuation:'밸류에이션',chk:'다음 체크포인트'},
       fin:{annual:'연간 실적 (연결)',quarterly:'분기 실적 (연결)',year:'연도',q:'분기',rev:'매출액',op:'영업이익',np:'지배주주 순이익',opm:'영업이익률',roe:'ROE',debt:'부채비율',per:'PER',pbr:'PBR',divy:'배당수익률',eps:'EPS',bps:'BPS',dps:'주당배당금',na:'산출 불가 (적자)',nodata:'—',
@@ -1141,7 +1170,7 @@ document.addEventListener('click', function (e) {
         upgrade:'PRO로 업그레이드',
         errNone:'이 종목은 유료 구간이 아직 준비되지 않았습니다.',
         errFail:'불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.' } },
-    en:{ home:'Home', reports:'Reports', watch:'Add to watchlist', watched:'Added to watchlist', watchShort:'Watchlist',
+    en:{ home:'Home', reports:'Reports', toc:'Report', watch:'Add to watchlist', watched:'Added to watchlist', watchShort:'Watchlist',
       mk:{price:'Price',chg:'Day change',mcap:'Market cap',amt:'Trading value',vol:'Volume',shares:'Shares out.',market:'Market',sector:'Sector',per:'P/E',pbr:'P/B',roe:'ROE',eps:'EPS',divy:'Div. yield'},
       sec:{overview:'Report Overview',business:'Business',recent:'Recent Results & Price',outlook:'Outlook',bull:'Bull Factors',bear:'Bear Factors',risk:'Risk Factors',verdict:'Verdict',sources:'Sources',fin:'Financial Trends',earnings:'Earnings Analysis',industry:'Industry',valuation:'Valuation',chk:'What to Watch Next'},
       fin:{annual:'Annual (consolidated)',quarterly:'Quarterly (consolidated)',year:'Year',q:'Quarter',rev:'Revenue',op:'Operating profit',np:'Net profit (owners)',opm:'OP margin',roe:'ROE',debt:'Debt ratio',per:'P/E',pbr:'P/B',divy:'Div. yield',eps:'EPS',bps:'BPS',dps:'DPS',na:'n/a (loss)',nodata:'—',
@@ -1692,6 +1721,63 @@ document.addEventListener('click', function (e) {
     h+='<div class="wrapup glass">'+ps(REP.verdict?pk(REP.verdict.body):'')+'</div></section>';
     return h+srcMeta(u,pad(n));
   }
+  /* ===== 리포트 목차 =====
+     render() 가 본문을 다시 그릴 때마다(언어 전환·잠금 해제) 새로 만든다. */
+  var _tocSecs=[], _tocLinks=[], _tocRaf=0;
+  var TOC_LOCK='<svg class="lk" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
+  /* 떠 있는 머리띠(스테이징은 그 위 띠까지)의 아래 끝 — 목차가 붙는 자리이자 이동할 때 비켜 설 높이 */
+  function tocTop(){ var nv=document.querySelector('.nav'); return nv? Math.max(0,nv.getBoundingClientRect().bottom) : 0; }
+  function buildToc(u){
+    var lay=document.getElementById('rpLayout'), toc=document.getElementById('rpToc');
+    if(!lay||!toc) return;
+    var secs=[].slice.call(document.querySelectorAll('#reportBody section.sec')).filter(function(s){
+      return s.querySelector('.sec-num') && s.querySelector('.sec-title'); });
+    _tocSecs=[]; _tocLinks=[];
+    if(secs.length<2){ lay.classList.remove('has-toc'); toc.innerHTML=''; return; }
+    var h='<div class="rp-toc-h">'+esc(u.toc)+'</div><ol>';
+    secs.forEach(function(s){
+      var num=s.querySelector('.sec-num').textContent.trim(), ttl=s.querySelector('.sec-title').textContent.trim();
+      var locked=!!s.closest('.tz-body');          // 구독 구간 — 흐리게 깔린 미리보기
+      s.id='sec-'+num;
+      h+='<li><a href="#sec-'+esc(num)+'"><span class="n">'+esc(num)+'.</span><span class="t">'+esc(ttl)+'</span>'+(locked?TOC_LOCK:'')+'</a></li>';
+    });
+    toc.innerHTML=h+'</ol>';
+    toc.setAttribute('aria-label',u.toc);
+    toc.style.setProperty('--toc-top',(tocTop()+24)+'px');
+    lay.classList.add('has-toc');
+    _tocSecs=secs; _tocLinks=[].slice.call(toc.querySelectorAll('a'));
+    tocSpy();
+  }
+  /* 지금 읽는 섹션 — 머리띠 아래 화면의 위쪽 30% 선을 넘어선 마지막 섹션. 맨 아래까지 내리면 마지막 섹션. */
+  function tocSpy(){
+    _tocRaf=0;
+    if(!_tocLinks.length) return;
+    var top=tocTop(), line=top+(innerHeight-top)*0.3, cur=0, i;
+    for(i=0;i<_tocSecs.length;i++){ if(_tocSecs[i].getBoundingClientRect().top<=line) cur=i; else break; }
+    if(innerHeight+scrollY>=document.documentElement.scrollHeight-2) cur=_tocSecs.length-1;
+    _tocLinks.forEach(function(a,k){
+      a.classList.toggle('on',k===cur);
+      if(k===cur) a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current');
+    });
+  }
+  function tocQueue(){ if(!_tocRaf) _tocRaf=requestAnimationFrame(tocSpy); }
+  window.addEventListener('scroll',tocQueue,{passive:true});
+  window.addEventListener('resize',function(){
+    var toc=document.getElementById('rpToc'); if(toc) toc.style.setProperty('--toc-top',(tocTop()+24)+'px');
+    tocQueue();
+  });
+  /* 누르면 그 섹션 제목이 머리띠 바로 아래 오도록. 부드러운 스크롤(lenis)이 켜져 있으면
+     그걸로 — smooth-scroll.js 의 #앵커 처리는 머리띠 높이를 90px 로 잡아 스테이징에선 가린다. */
+  document.getElementById('rpToc').addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href^="#sec-"]'); if(!a) return;
+    var el=document.getElementById(a.getAttribute('href').slice(1)); if(!el) return;
+    e.preventDefault(); e.stopPropagation();
+    var head=el.querySelector('.sec-kicker')||el;
+    var y=Math.max(0, head.getBoundingClientRect().top+scrollY-tocTop()-24);
+    var ls=window.KOSSmoothScroll;
+    if(ls&&typeof ls.scrollTo==='function') ls.scrollTo(y); else window.scrollTo({top:y,behavior:'smooth'});
+  });
+
   function render(){
     var u=U(), Ln=L();
     var chg=(STOCK.change==null?0:STOCK.change);
@@ -1772,6 +1858,7 @@ document.addEventListener('click', function (e) {
       rb.innerHTML=h;
     }
 
+    buildToc(u);
     document.getElementById('disclaimer').innerHTML='<b>'+esc(u.discT)+'</b> '+esc(u.disc);
     (function setSEO(){
       try{
