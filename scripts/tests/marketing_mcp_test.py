@@ -445,6 +445,46 @@ eq("모양이 안 맞는 인자는 그냥 무시한다", r.returncode, 0)
 r = run_ask("experiment_start", "--args", "id=없음")
 ok("없는 번호는 없다고 적어 준다", "대장에 없습니다" in r.stdout, r.stdout)
 
+print("\n⑨ 어느 종목을 봤나 — 주소의 종목 번호로 세고, 변형 주소는 합친다")
+import marketing_mcp as X
+rows = [{"pagePathPlusQueryString": "/stock.html?ticker=037560", "screenPageViews": 12, "totalUsers": 9},
+        {"pagePathPlusQueryString": "/stock.html?ticker=037560&lang=en", "screenPageViews": 3, "totalUsers": 2},
+        {"pagePathPlusQueryString": "/stock.html?ticker=005930", "screenPageViews": 5, "totalUsers": 5},
+        {"pagePathPlusQueryString": "/Reports.html", "screenPageViews": 99, "totalUsers": 50},
+        {"pagePathPlusQueryString": "/stock.html?ticker=001234", "screenPageViews": 1, "totalUsers": 1}]
+meta = {"037560": ("LG헬로비전", "통신", "코스피", "중형주"), "005930": ("삼성전자", "반도체", "코스피", "대형주")}
+tab = X.ticker_table(rows, meta, 10)
+eq("규모별로 묶인다 — 거래소 기준", [(k, v, c) for k, v, c in tab["sizes"]],
+   [("대형주", 5, 1), ("중형주", 15, 1), ("규모 모름", 1, 1)])
+eq("규모 구분 규칙: 코스피 100·300, 코스닥 100·400",
+   (X.size_class("코스피", 100), X.size_class("코스피", 101), X.size_class("코스피", 301),
+    X.size_class("코스닥", 400), X.size_class("코스닥", 401), X.size_class("코스닥", 0),
+    X.size_class("코넥스", 1)),
+   ("대형주", "중형주", "소형주", "중형주", "소형주", "규모 모름", "소형주"))
+ok("규모별만 보려면 top=0", X.ticker_table(rows, meta, 0)["items"] == [])
+ok("규모별 줄이 표에 나온다", "■ 규모별" in "\n".join(X._ticker_lines(tab, "[시험]", 0))
+   and "많이 본 종목" not in "\n".join(X._ticker_lines(tab, "[시험]", 0)))
+eq("리포트가 아닌 페이지는 안 센다", tab["total"], 21)
+eq("언어 변형 주소는 같은 종목으로 합친다", tab["items"][0]["views"], 15)
+eq("몫은 조회 기준", round(tab["items"][0]["share"], 1), 71.4)
+eq("이름·업종·시장이 붙는다", (tab["items"][0]["name"], tab["items"][0]["sector"]), ("LG헬로비전", "통신"))
+eq("모르는 종목은 번호 그대로", tab["items"][2]["name"], "001234")
+eq("1회만 열린 종목 수", tab["once"], 1)
+eq("업종별 몫은 큰 순", [s for s, _ in tab["sectors"]][:2], ["통신", "반도체"])
+ok("상위 N 집중도", tab["top10"] == 100.0)
+txt = "\n".join(X._ticker_lines(tab, "[시험]", 10))
+ok("표가 읽힌다", "LG헬로비전 (037560) · 중형주 · 통신 · 코스피  15회  71.4%" in txt and "상위 10종목이 전체의 100%" in txt, txt)
+empty = X.ticker_table([], meta, 10)
+ok("자료가 없으면 0 으로", empty["total"] == 0 and "기록이 없습니다" in "\n".join(X._ticker_lines(empty, "[빈]", 10)))
+m = X.load_stock_meta()
+ok("stocks.js 에서 종목 이름·업종·시장·규모를 읽는다", m.get("005930", ("",))[0] == "삼성전자"
+   and m["005930"][3] == "대형주" and len(m) > 2000, str(m.get("005930")))
+_sizes = {}
+for _tk, _v in m.items():
+    _sizes[_v[3]] = _sizes.get(_v[3], 0) + 1
+ok("코스피·코스닥 대형주가 각 100개 = 200개", _sizes.get("대형주") == 200, str(_sizes))
+ok("도구 목록에 tickers 가 있다", any(x["name"] == "tickers" for x in X.TOOLS))
+
 print("\n" + "=" * 52)
 print(f"PASS {P}  FAIL {F}")
 sys.exit(1 if F else 0)

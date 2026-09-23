@@ -69,6 +69,7 @@ import datetime
 import json
 import os
 import sys
+import re
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -491,6 +492,194 @@ def t_check(days=3):
     return "\n".join(L)
 
 
+_TICKER_RE = re.compile(r"[?&]ticker=(\d{6})\b")
+
+
+# 규모 구분은 거래소(KRX) 규모별 지수 기준을 따른다 — 시장 안에서 시가총액 순위로.
+#   코스피  대형주 1~100위 · 중형주 101~300위 · 소형주 301위~
+#   코스닥  대형주 1~100위 · 중형주 101~400위 · 소형주 401위~
+# 사장이 "종목별로 나눌 필요 없고 대형주·중형주·소형주로" 라고 했다(2026-09-23).
+SIZE_RULE = {"코스피": (100, 300), "코스닥": (100, 400)}
+SIZE_ORDER = ("대형주", "중형주", "소형주", "규모 모름")
+
+
+def size_class(market, rank_in_market):
+    if not rank_in_market:
+        return "규모 모름"
+    if market not in SIZE_RULE:
+        # 코넥스 등 규모 지수가 없는 시장은 전부 소형주로 친다 — 실제로 다 작다.
+        return "소형주"
+    big, mid = SIZE_RULE[market]
+    return "대형주" if rank_in_market <= big else ("중형주" if rank_in_market <= mid else "소형주")
+
+
+def load_stock_meta():
+    """data/stocks.js 에서 종목 번호 → (이름, 업종, 시장, 규모). 없으면 빈 표.
+
+    규모는 그 시장 안에서 시가총액 순위를 매겨 정한다. 오늘 시가총액 기준이라
+    몇 달 전에 본 시점의 순위와는 다를 수 있다.
+    """
+    try:
+        from pathlib import Path
+        raw = (Path(__file__).resolve().parent.parent / "data" / "stocks.js").read_text(encoding="utf-8")
+        body = raw[raw.index("{"): raw.rindex("}") + 1]
+        stocks = [s for s in (json.loads(body).get("stocks") or []) if s.get("ticker")]
+        rank = {}
+        for market in {s.get("market") or "" for s in stocks}:
+            group = sorted((s for s in stocks if (s.get("market") or "") == market),
+                           key=lambda s: -(s.get("mcap") or 0))
+            for i, s in enumerate(group, 1):
+                rank[str(s["ticker"]).zfill(6)] = i if (s.get("mcap") or 0) > 0 else 0
+        out = {}
+        for s in stocks:
+            tk = str(s["ticker"]).zfill(6)
+            market = s.get("market") or ""
+            out[tk] = (s.get("name") or tk, s.get("sector") or "", market,
+                       size_class(market, rank.get(tk, 0)))
+        return out
+    except Exception:
+        return {}
+
+
+def ticker_table(rows, meta=None, top=25):
+    """GA4 가 준 '페이지 주소+물음표 뒤' 줄들을 종목별로 모은다.
+
+    rows: [{"pagePathPlusQueryString": "/stock.html?ticker=037560&lang=en",
+            "screenPageViews": 12, "totalUsers": 9}, …]
+    같은 종목이 주소 변형(언어·탭)으로 여러 줄일 수 있어 조회는 더하고,
+    사람 수는 더하면 겹치므로 '대략' 으로만 쓴다.
+    """
+    import ga4_data as G
+    meta = meta or {}
+    acc = {}
+    for r in rows or []:
+        m = _TICKER_RE.search(str(r.get("pagePathPlusQueryString") or ""))
+        if not m:
+            continue
+        tk = m.group(1)
+        a = acc.setdefault(tk, {"views": 0, "users": 0})
+        a["views"] += int(r.get("screenPageViews") or 0)
+        a["users"] += int(r.get("totalUsers") or 0)
+    total = sum(a["views"] for a in acc.values())
+    items = []
+    for tk, a in acc.items():
+        m = tuple(meta.get(tk) or ())
+        name = m[0] if len(m) > 0 and m[0] else G.ticker_name(tk)
+        sector = m[1] if len(m) > 1 else ""
+        market = m[2] if len(m) > 2 else ""
+        size = m[3] if len(m) > 3 else "규모 모름"
+        items.append({"ticker": tk, "name": name, "sector": sector or "(업종 모름)",
+                      "market": market or "", "size": size or "규모 모름",
+                      "views": a["views"], "users": a["users"],
+                      "share": (a["views"] / total * 100) if total else 0.0})
+    items.sort(key=lambda x: (-x["views"], x["ticker"]))
+    by_sector, by_market, by_size = {}, {}, {}
+    for it in items:
+        by_sector[it["sector"]] = by_sector.get(it["sector"], 0) + it["views"]
+        if it["market"]:
+            by_market[it["market"]] = by_market.get(it["market"], 0) + it["views"]
+        z = by_size.setdefault(it["size"], {"views": 0, "count": 0})
+        z["views"] += it["views"]
+        z["count"] += 1
+    def share_of(n):
+        return sum(x["views"] for x in items[:n]) / total * 100 if total else 0.0
+    return {
+        "total": total, "count": len(items), "items": items[:max(0, min(int(top or 0), 100))],
+        "top10": share_of(10), "top30": share_of(30),
+        "once": sum(1 for x in items if x["views"] == 1),
+        "sectors": sorted(by_sector.items(), key=lambda kv: -kv[1]),
+        "markets": sorted(by_market.items(), key=lambda kv: -kv[1]),
+        "sizes": [(k, by_size[k]["views"], by_size[k]["count"]) for k in SIZE_ORDER if k in by_size],
+    }
+
+
+def _ticker_lines(tab, head, top_n):
+    L = [head]
+    if not tab["total"]:
+        L.append("  이 기간엔 종목 리포트 조회 기록이 없습니다.")
+        return L
+    L.append(f"  종목 리포트 조회 {tab['total']:,}회 · 열린 종목 {tab['count']:,}개")
+    if tab.get("sizes"):
+        L.append("")
+        L.append("■ 규모별 (거래소 기준 — 코스피 상위 100 대형 · 300 까지 중형 · 나머지 소형,"
+                 " 코스닥은 100 · 400)")
+        for name, v, c in tab["sizes"]:
+            L.append(f"  {name:<6} {v:>6,}회  {v / tab['total'] * 100:5.1f}%   열린 종목 {c:,}개")
+    if top_n and tab["items"]:
+        L.append("")
+        L.append(f"■ 많이 본 종목 (상위 {min(top_n, len(tab['items']))})")
+        cum = 0.0
+        for i, it in enumerate(tab["items"][:top_n], 1):
+            cum += it["share"]
+            tag = " · ".join(x for x in (it["size"], it["sector"], it["market"])
+                             if x and x not in ("(업종 모름)", "규모 모름"))
+            L.append(f"  {i:>2}. {it['name']} ({it['ticker']})" + (f" · {tag}" if tag else "")
+                     + f"  {it['views']:,}회  {it['share']:.1f}%  누적 {cum:.0f}%")
+    L.append("")
+    L.append("■ 얼마나 몰려 있나")
+    L.append(f"  상위 10종목이 전체의 {tab['top10']:.0f}% · 상위 30종목 {tab['top30']:.0f}%"
+             f" · 1회만 열린 종목 {tab['once']:,}개")
+    if tab["sectors"]:
+        L.append("")
+        L.append("■ 업종별 몫")
+        L.append("  " + " · ".join(f"{s} {n / tab['total'] * 100:.0f}%"
+                                  for s, n in tab["sectors"][:8]))
+    if tab["markets"]:
+        L.append("  " + " · ".join(f"{m} {n / tab['total'] * 100:.0f}%" for m, n in tab["markets"]))
+    return L
+
+
+def t_tickers(days="all", top=10):
+    """어느 종목 리포트를 봤나 — 종목별 조회수와 몫. GA4 에 직접 묻는다.
+
+    주소의 '?ticker=번호' 로 세므로 맞춤 측정기준 등록 전 기간까지 다 나온다.
+    2026-09-13 전에는 우리가 시험하며 연 것이 섞여 있어, 전체 기간을 볼 때는
+    최근 7일(깨끗한 기간)을 같이 보여 준다.
+    """
+    import ga4_data as G
+    if not os.environ.get("GA4_PROPERTY_ID"):
+        return ("GA4_PROPERTY_ID 가 없습니다 — 이 물음은 GA4 에 직접 물어봅니다."
+                " 깃허브 Actions 의 '마케팅 숫자 물어보기' 로 돌려 주세요.")
+    top_n = max(0, min(int(top if top is not None else 10), 100))
+    today = datetime.datetime.now(G.KST).date()
+    end = today - datetime.timedelta(days=1)
+    all_time = str(days).strip().lower() in ("", "all", "0", "none", "전체")
+    if all_time:
+        doc = _weekly()
+        first = (doc["weeks"][0].get("week") if doc.get("weeks") else None) or "2026-06-15"
+        start = datetime.date.fromisoformat(first)
+    else:
+        start = end - datetime.timedelta(days=max(1, min(int(days), 400)) - 1)
+    meta = load_stock_meta()
+
+    def fetch(s, e):
+        rows = G._run(G._client(), G._property(), s.isoformat(), e.isoformat(),
+                      ["screenPageViews", "totalUsers"], ["pagePathPlusQueryString"],
+                      limit=5000, order="screenPageViews")
+        return [r for r in rows if "ticker=" in str(r.get("pagePathPlusQueryString") or "")]
+
+    try:
+        main_rows = fetch(start, end)
+    except (Exception, SystemExit) as e:
+        return f"GA4 에 물어보지 못했습니다 — {type(e).__name__}: {e}"
+    L = _ticker_lines(ticker_table(main_rows, meta, top_n),
+                      f"[{start} ~ {end}] 어느 종목 리포트를 봤나", top_n)
+    if all_time:
+        s7 = end - datetime.timedelta(days=6)
+        try:
+            week_rows = fetch(s7, end)
+            L.append("")
+            L += _ticker_lines(ticker_table(week_rows, meta, 10),
+                               f"■ 최근 7일 [{s7} ~ {end}] — 우리 발자국이 없는 깨끗한 기간", 10)
+        except (Exception, SystemExit) as e:
+            L.append(f"  (최근 7일은 못 받았습니다 — {type(e).__name__})")
+        L.append("")
+        L.append("※ 9월 13일 전 기간에는 우리가 시험하며 연 리포트가 섞여 있습니다."
+                 " 손님만의 것은 최근 7일 표입니다.")
+    L.append("※ 조회는 더한 것이고, 사람 수는 겹칠 수 있어 적지 않았습니다.")
+    return "\n".join(L)
+
+
 def t_weeks():
     doc = _weekly()
     weeks = doc.get("weeks") or []
@@ -625,6 +814,13 @@ TOOLS = [
                     "보므로 여기서만 오늘 것을 볼 수 있다. 성과가 아니다.",
      "inputSchema": {"type": "object", "properties": {
          "days": {"type": "integer", "description": "요 며칠 (기본 3, 최대 28)"}}}},
+    {"name": "tickers", "fn": t_tickers,
+     "description": "어느 종목 리포트를 봤나 — 대형·중형·소형주별 몫, 종목별 조회수, "
+                    "상위 10종목 집중도, 업종·시장별 몫. 주소의 종목 번호로 세서 처음부터 다 나온다. "
+                    "'사람들이 어떤 종목을 보나' 에 이것을 부른다. GA4 에 직접 묻는다.",
+     "inputSchema": {"type": "object", "properties": {
+         "days": {"type": "string", "description": "며칠치 (숫자, 기본 all = 처음부터)"},
+         "top": {"type": "integer", "description": "종목별 목록을 몇 개까지 (기본 10, 0 이면 규모별만)"}}}},
     {"name": "weeks", "fn": t_weeks,
      "description": "받아 둔 주가 몇 개이고 어디에 저장돼 있는지. 숫자가 "
                     "안 나올 때 여기부터 본다.",
