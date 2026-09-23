@@ -1352,6 +1352,176 @@ try{
     _gz.set(0,0,-20,1).applyMatrix4(camera.projectionMatrix); u.uZ.value=_gz.z/_gz.w;
   }
 
+  /* ───────────────────────────────────────────────────────
+     빛 — Resend 랜딩처럼 배경에 빛 두 가지(2026-09-23 사장 지시). 스테이징만이다.
+     바닥 무지개가 먼저다("무지개가 잘 보여야 하니까") — 빛은 무지개 둘레를 넓게 비켜 간다.
+      · 빛줄기 — 오른쪽 위 구석 너머에서 왼쪽 아래로 비스듬히 내려오는 길고 흐린 빛.
+        화면 맨 위가 가장 밝고, 내려올수록·가장자리로 갈수록 잦아든다. 프리즘 오른쪽으로 비껴간다.
+        구석의 둥근 번짐이 아니라 긴 줄기로 읽히도록 시작은 좁고 길게 늘였다.
+      · 테두리 빛(호) — 아주 큰 어두운 둥근 면의 가장자리를 빛이 스치는 모양. 원의 윗둘레라
+        오른쪽으로 갈수록 완만하게 올라간다. 빛이 오른쪽 위에서 오므로 오른쪽이 밝다.
+        호 바로 밑은 면이 빛을 받아 조금 밝고, 호 위로는 곧 꺼진다.
+        데스크톱 — 맨 위 호는 숫자 줄(.lp-stats) 밑·무지개 위로 화면을 가로질러 프리즘 뒤를
+        지나고, 아래 호 둘은 프리즘 밑에서 오른쪽으로 뻗어 나온다(둘이 한 점으로 모여 꺾쇠처럼
+        보이지 않게 아래 것은 옅고 낮게). 낮은 화면(노트북 700px 안팎)에서는 글이 내려와 맨 위
+        호가 숫자 줄을 지난다. 호를 밑으로 밀면 무지개에 닿으므로 호는 제자리에 두고 숫자 줄
+        뒤에서만 걷는다 — 호가 글 뒤로 지나가는 모양이 된다.
+        휴대폰 — 글이 화면 아래까지 차 있어 호는 하나, 프리즘 윗머리 뒤 글이 없는 띠에 긋는다.
+        가운데는 프리즘 뒤에 숨고(깊이 검사), 왼쪽은 어둡게 둔다. 어느 폭에서도 첫 줄 글
+        (EVERY KOREAN STOCK, 화면 높이의 0.42 안팎) 위로 지나도록 낮게 휘지 않는다.
+        호는 세 점을 지나는 원으로 적는다(폭·높이 비율). 원은 화면 비율이 바뀔 때 다시 구한다.
+      · 그레인보다 먼저(renderOrder 5), 프리즘 뒤 깊이(카메라에서 30)에 그린다. 그래서 결이
+        빛 위에 앉고(Resend 도 그렇다), 프리즘은 깊이 검사에 걸려 빛이 앉지 않는다.
+      · 비키는 자리 — 글 뭉치 뒤는 빛을 다 걷는다(글 뒤 바탕은 지금 그대로). 글 뭉치 자리는
+        화면에서 잰다(.lp-copy 의 글자·단추 상자) — 921~1100px 처럼 글이 넓게 차는 폭에서도 맞다.
+        바닥 무지개(초점) 자리는 모두 걷고, 그 둘레(2배 타원)도 넓게 낮춘다 — 무지개 바로 위
+        띠가 밝아지면 무지개가 흐려 보인다. 무지개는 프리즘이 돌면 움직이므로 그레인과 같은
+        방법으로 화소마다 따라간다.
+      · 첫 화면 끝(uVh)에 닿기 전에 0 이 된다 — 아래 푸터는 지금 그대로다.
+      · 빛은 아주 옅은 기울기라 8비트에서 층이 진다. 반 칸짜리 떨림을 얹어 층을 깬다.
+      · 움직이지 않는다. 표본을 여러 번 뜨지 않는 값싼 식만 쓴다. */
+  const LIGHT=mobile?{
+    sh:[1.04,-0.06, 0.70,0.45], shW:[0.06,0.12,0.42], shK:0.14,
+    /* 세 점(x,y 비율) · 두께 · 켜지는 x 구간(시작,끝) · 왼쪽 밝기 · 세기 */
+    arcs:[[0.00,0.330, 0.60,0.205, 1.00,0.165, 0.012, 0.40,0.95,0.45,0.09],
+          [0,0,0,0,0,0,0.01,0,1,0,0],                                    /* 둘째·셋째 호 없음(세기 0) */
+          [0,0,0,0,0,0,0.01,0,1,0,0]],
+    textF:0.10, fade:[0.945,0.99]
+  }:{
+    sh:[1.02,-0.35, 0.78,0.45], shW:[0.10,0.12,0.70], shK:0.12,
+    arcs:[[0.00,0.800, 0.45,0.690, 1.00,0.630, 0.016, 0.00,0.95,0.75,0.12],
+          [0.56,0.930, 0.75,0.800, 1.00,0.700, 0.014, 0.46,0.80,0.0,0.10],
+          [0.66,0.975, 0.84,0.880, 1.00,0.795, 0.012, 0.68,0.92,0.0,0.055]],
+    textF:0.18, fade:[0.86,0.975]
+  };
+  const lightMat=new THREE.ShaderMaterial({
+    transparent:true, blending:THREE.AdditiveBlending, depthTest:true, depthWrite:false,
+    uniforms:{
+      uZ:{value:0.99}, uYb:{value:-1}, uBuf:grainMat.uniforms.uBuf, uH:grainMat.uniforms.uH, uVh:grainMat.uniforms.uVh,
+      uPInv:grainMat.uniforms.uPInv, uCamW:grainMat.uniforms.uCamW, uFloorY:grainMat.uniforms.uFloorY,
+      uCauC:floorMat.uniforms.uCauC, uCauE:floorMat.uniforms.uCauE, uCauK:floorMat.uniforms.uCauK,
+      uSh:{value:new THREE.Vector4(...LIGHT.sh)},      /* 빛줄기 시작점 · 향하는 점 (x 폭 비율, y 첫 화면 비율) */
+      uShW:{value:new THREE.Vector3(...LIGHT.shW)},    /* 시작 폭 · 퍼짐 · 길이 */
+      uShK:{value:LIGHT.shK},
+      uArc:{value:[0,1,2].map(()=>new THREE.Vector4())},   /* 원 중심 xy · 반지름 · 두께 (sizeLight 가 채운다) */
+      uArcL:{value:LIGHT.arcs.map(a=>new THREE.Vector4(a[7],a[8],a[9],a[10]))},
+      uText:{value:new THREE.Vector4(0.5,-9,0,0)},    /* 글 뭉치 가운데 x,y · 반 폭 · 반 높이 (sizeLight 가 잰다) */
+      uTextF:{value:LIGHT.textF},                       /* 글 뭉치 밖으로 빛이 되살아나는 거리 */
+      uStat:{value:new THREE.Vector4(0.5,-9,0,0)},    /* 숫자 줄(.lp-stat 들) 가운데 x,y · 반 폭 · 반 높이 */
+      uFade:{value:new THREE.Vector2(...LIGHT.fade)}
+    },
+    /* 캔버스는 페이지 전체라 아래(푸터)가 훨씬 길다. 빛이 꺼지는 줄(uYb) 위만 그리도록
+       삼각형을 세로로 눌러 둔다 — 빈 곳을 칠하느라 드는 값을 아낀다. */
+    vertexShader:`uniform float uZ,uYb;
+      void main(){ gl_Position=vec4(position.x,uYb+(position.y+1.0)*0.5*(1.0-uYb),uZ,1.0); }`,
+    fragmentShader:`
+      uniform vec2 uBuf; uniform float uH,uVh;
+      uniform mat4 uPInv,uCamW; uniform float uFloorY; uniform vec2 uCauC; uniform vec4 uCauE; uniform float uCauK;
+      uniform vec4 uSh,uText,uStat; uniform vec3 uShW; uniform float uShK,uTextF;
+      uniform vec4 uArc[3],uArcL[3]; uniform vec2 uFade;
+      float h12(vec2 p){ vec3 q=fract(vec3(p.xyx)*.1031); q+=dot(q,q.yzx+33.33); return fract((q.x+q.y)*q.z); }
+      /* 무지개 — 그레인의 것과 같다. x 는 타원 1.4배(그레인과 같은 자리), y 는 2배(빛이 넓게 낮아지는 둘레). */
+      vec2 rainbow(){
+        vec4 v=uPInv*vec4(gl_FragCoord.xy/uBuf*2.0-1.0,1.0,1.0);
+        vec3 dir=(uCamW*vec4(v.xyz/v.w,0.0)).xyz, ro=uCamW[3].xyz;
+        if(dir.y>=0.0) return vec2(0.0);
+        vec2 q=(ro+dir*((uFloorY-ro.y)/dir.y)).xz-uCauC;
+        vec2 cl=vec2(dot(q,uCauE.xy),dot(q,vec2(-uCauE.y,uCauE.x)))/uCauE.zw;
+        return exp(-0.5*dot(cl,cl)/vec2(1.96,4.0))*smoothstep(0.0,0.2,uCauK);
+      }
+      /* 테두리 한 줄 — d>0 은 호 위(바깥), d<0 은 호 밑(면). 위로는 곧 꺼지고 밑으로는 번진다.
+         밑 번짐(면)은 옅게(0.20) 둔다 — 짙으면 호 밑 넓은 띠가 뜨고 무지개 위까지 밝힌다. */
+      float rim(vec2 p,vec4 a,float x,vec4 l){
+        if(l.w<=0.0) return 0.0;
+        float d=length(p-a.xy)-a.z, w=a.w;
+        float r=d>0.0 ? exp(-d*d/(w*w)) : 0.80*exp(-d*d/(w*w))+0.20*exp(-d*d/(36.0*w*w));
+        return r*mix(l.z,1.0,smoothstep(l.x,l.y,x))*l.w;
+      }
+      void main(){
+        float x=gl_FragCoord.x/uBuf.x;                          /* 0..1 왼쪽부터 */
+        float y=(1.0-gl_FragCoord.y/uBuf.y)*uH/uVh;             /* 첫 화면 높이 = 1 */
+        float ar=uBuf.x/uBuf.y*uH/uVh;                          /* 폭 / 첫 화면 높이 */
+        vec2 p=vec2(x*ar,y);
+
+        /* 빛줄기 — 원뿔. 폭은 내려올수록 넓어지고, 밝기는 화면 맨 위에서부터 잦아든다.
+           단면은 가우스보다 어깨가 조금 넓은 꼴(지수 2.6) — 흐린 덩어리가 아니라 줄기로 읽힌다. */
+        vec2 s=vec2(uSh.x*ar,uSh.y), dv=normalize(vec2(uSh.z*ar,uSh.w)-s);
+        vec2 q=p-s; float a=dot(q,dv), c=dot(q,vec2(-dv.y,dv.x));
+        float w=uShW.x+max(a,0.0)*uShW.y, a0=-s.y/max(dv.y,1e-3);
+        float fall=max(a-a0,0.0)/uShW.z;
+        float shaft=exp(-pow(abs(c)/w,2.6))*exp(-fall*fall);
+        /* 빛살 — 시작점에서 부챗살로 퍼지는 가는 결 몇 가닥(±10% 안). 덩어리가 아니라 빛으로 읽힌다. */
+        float th=c/max(a,0.05), m=0.5+0.25*sin(th*31.0+0.7)+0.25*sin(th*53.0+2.1);
+        shaft*=0.9+0.1*m*m;
+        /* 글 뒤로는 줄기를 걷는다 — 글 상자 안은 0, 밖으로 uTextF 만큼 가며 되살아난다.
+           호는 이 넓은 덮개를 받지 않는다(맨 위 호의 왼쪽이 통째로 꺼진다). 호는 아래에서
+           숫자 줄 상자로만 걷는다. */
+        vec2 tb=max(abs(p-vec2(uText.x*ar,uText.y))-vec2(uText.z*ar,uText.w),0.0);
+        shaft*=smoothstep(0.0,uTextF,length(tb));
+        vec3 col=vec3(0.78,0.86,1.0)*shaft*uShK;
+
+        /* 테두리 빛 — 숫자 줄 상자 안은 0. 옆으로는 넓게(0.075) 위아래로는 좁게(0.03) 풀어,
+           호가 숫자 줄 끝에서 네모나게 잘리지 않고 글 뒤로 스며들듯 사라진다. */
+        float r=rim(p,uArc[0],x,uArcL[0])+rim(p,uArc[1],x,uArcL[1])+rim(p,uArc[2],x,uArcL[2]);
+        vec2 sb=max(abs(p-vec2(uStat.x*ar,uStat.y))-vec2(uStat.z*ar,uStat.w),0.0);
+        r*=smoothstep(0.0,0.03,length(sb*vec2(0.4,1.0)));
+        col+=vec3(0.72,0.82,1.0)*r;
+
+        /* 무지개 둘레(2배 타원)는 빛을 0.3 까지 낮춘다 — 호 밑 번짐과 줄기 끝이 무지개 바로 위
+           띠를 밝히면 무지개와 둘레의 차이가 줄어 흐려 보인다. 다 지우지 않는 것은 무지개 둘레에
+           빈 구멍이 보이지 않게. 무지개 자리(1.4배 타원)는 모두 걷는다. */
+        vec2 rb=rainbow();
+        col*=1.0-0.7*smoothstep(0.05,0.5,rb.y);
+        col*=1.0-smoothstep(0.1,0.6,rb.x);
+        /* 첫 화면 끝에 닿기 전에 꺼진다 */
+        col*=1.0-smoothstep(uFade.x,uFade.y,y);
+        /* 8비트 층 깨기 — 빛이 있는 자리에만 반 칸 */
+        col+=(h12(gl_FragCoord.xy+17.0)-0.5)/255.0*smoothstep(0.0,0.004,col.b);
+        gl_FragColor=vec4(max(col,0.0),1.0);
+      }`
+  });
+  const light=new THREE.Mesh(grainTri,lightMat);
+  light.frustumCulled=false; light.renderOrder=5;
+  scene.add(light);
+  /* 세 점을 지나는 원 — 화면 비율(ar)을 곱한 자리에서 구해야 둥근 호가 된다 */
+  function circ3(ax,ay,bx,by,cx,cy,out){
+    const d=2*(ax*(by-cy)+bx*(cy-ay)+cx*(ay-by));
+    if(Math.abs(d)<1e-9){ out.set(0,0,0,out.w); return; }
+    const a2=ax*ax+ay*ay, b2=bx*bx+by*by, c2=cx*cx+cy*cy;
+    const ux=(a2*(by-cy)+b2*(cy-ay)+c2*(ay-by))/d, uy=(a2*(cx-bx)+b2*(ax-cx)+c2*(bx-ax))/d;
+    out.set(ux,uy,Math.hypot(ax-ux,ay-uy),out.w);
+  }
+  const _rg=document.createRange();
+  function sizeLight(){
+    const u=lightMat.uniforms;
+    _gz.set(0,0,-30,1).applyMatrix4(camera.projectionMatrix); u.uZ.value=_gz.z/_gz.w;
+    u.uYb.value=Math.max(-1,1-2*LIGHT.fade[1]*vhRef/u.uH.value);
+    const W=canvas.clientWidth||innerWidth, ar=W/vhRef;
+    LIGHT.arcs.forEach((a,i)=>{
+      u.uArc.value[i].w=a[6];
+      circ3(a[0]*ar,a[1],a[2]*ar,a[3],a[4]*ar,a[5],u.uArc.value[i]);
+    });
+    /* 글 뭉치 자리 — 글자·단추가 실제로 차지한 상자만 모은다(블록 전체 폭이 아니라). */
+    const cp=document.querySelector('.lp-copy');
+    if(cp){
+      let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
+      for(const el of cp.children){
+        _rg.selectNodeContents(el); const r=_rg.getBoundingClientRect();
+        if(!r.width||!r.height) continue;
+        x0=Math.min(x0,r.left); x1=Math.max(x1,r.right); y0=Math.min(y0,r.top); y1=Math.max(y1,r.bottom);
+      }
+      if(x1>x0) u.uText.value.set((x0+x1)/2/W,((y0+y1)/2+scrollY)/vhRef,(x1-x0)/2/W,(y1-y0)/2/vhRef);
+    }
+    /* 숫자 줄 자리 — 낮은 화면에서는 글이 내려와 맨 위 호가 숫자 줄을 지난다. 호를 밑으로
+       밀면 무지개에 닿으므로 호는 두고, 숫자 줄 뒤에서만 걷는다(호가 글 뒤로 지나가는 모양). */
+    let sx0=1e9,sy0=1e9,sx1=-1e9,sy1=-1e9;
+    for(const el of document.querySelectorAll('.lp-stat')){
+      const r=el.getBoundingClientRect(); if(!r.width) continue;
+      sx0=Math.min(sx0,r.left); sx1=Math.max(sx1,r.right); sy0=Math.min(sy0,r.top); sy1=Math.max(sy1,r.bottom);
+    }
+    if(sx1>sx0) u.uStat.value.set((sx0+sx1)/2/W,((sy0+sy1)/2+scrollY)/vhRef,(sx1-sx0)/2/W,(sy1-sy0)/2/vhRef);
+  }
+
   /* 리사이즈(비용 큰 작업)는 창 크기 변경 때만 */
   /* 리사이즈 — 캔버스는 페이지 전체. 구도는 첫 화면 기준(vhRef)으로 고정하고
      setViewOffset 으로 아래로만 화면을 연장 → 배경이 한 장으로 이어짐(경계 없음).
@@ -1365,7 +1535,7 @@ try{
     camera.aspect=w/vhRef;
     camera.setViewOffset(w,vhRef,0,0,w,hFull);
     camera.updateProjectionMatrix();
-    sizeGrain(hFull);
+    sizeGrain(hFull); sizeLight();
     place();
   }
   /* 배치 — 고정 좌표(마우스·스크롤 영향 없음). 데스크톱=오른쪽, 모바일=상단 중앙 */
@@ -1374,6 +1544,8 @@ try{
     else{ group.position.set(1.4,0.1,0); group.scale.setScalar(0.78); }
   }
   resize(); addEventListener('resize',resize); setTimeout(resize,900);
+  /* 글꼴이 늦게 오면 글 자리가 바뀐다 — 빛이 비키는 자리(sizeLight)를 다시 잰다 */
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(resize);
   if(window.ResizeObserver) new ResizeObserver(()=>resize()).observe(document.body);
 
   /* 인터랙션 — 드래그 텀블(관성). 모바일은 Resend처럼 자동 회전만(터치 미반응) */
