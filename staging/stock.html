@@ -161,16 +161,19 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 :root[data-theme="dark"] .th-id-row .pill{background:rgba(255,255,255,.08)}
 .th-name{margin:0;font-size:clamp(30px,4.4vw,44px);font-weight:800;letter-spacing:-.035em;line-height:1}
 .th-meta{margin-top:10px;font:400 13px/1.5 var(--font-sans);color:var(--fg-3)}
-/* 관심 담기 — 테두리만 있는 버튼. 담으면 채운다.
-   채운 상태의 글자색은 테마마다 적는다 — --bg-1 은 밝은 테마에만 있어서
-   그걸 쓰면 어두운 테마에서 흰 바탕에 흰 글자가 된다. */
-.watch-btn{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font:600 13px var(--font-sans);color:var(--fg-1);white-space:nowrap;
-  background:transparent;border:1px solid var(--border-2);padding:10px 16px 10px 13px;border-radius:var(--radius-sm);cursor:pointer;transition:.15s}
-.watch-btn:hover{border-color:var(--fg-3)}
+/* 관심종목 담기 — 안 담았을 때 눈에 띄게 채운다(어두운 테마 흰색 · 밝은 테마 검정,
+   사이트 기본 버튼 .btn-primary 와 같은 짝). 담은 뒤에는 테두리만 남긴다.
+   글자색은 테마마다 적는다 — --bg-1 은 밝은 테마에만 있어서 그걸 쓰면
+   어두운 테마에서 흰 바탕에 흰 글자가 된다. */
+.watch-btn{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font:600 13px var(--font-sans);white-space:nowrap;
+  color:#fff;background:#000;border:1px solid #000;padding:10px 16px 10px 13px;border-radius:var(--radius-sm);cursor:pointer;
+  box-shadow:var(--shadow-1);transition:filter .15s,border-color .15s}
+:root[data-theme="dark"] .watch-btn{color:#17171c;background:linear-gradient(180deg,#fff,#e8e8ed);border-color:#fff}
+.watch-btn:hover{filter:brightness(.92)}
 .watch-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
 .watch-btn .wb-on{display:none}
-.watch-btn.on{background:var(--fg-1);border-color:var(--fg-1);color:#fff}
-:root[data-theme="dark"] .watch-btn.on{color:#0d0e18}
+.watch-btn.on,:root[data-theme="dark"] .watch-btn.on{color:var(--fg-1);background:transparent;border-color:var(--border-2);box-shadow:none}
+.watch-btn.on:hover{filter:none;border-color:var(--fg-3)}
 .watch-btn.on .wb-add{display:none}
 .watch-btn.on .wb-on{display:block}
 
@@ -718,7 +721,7 @@ KOSi18n.register({
   // ----- chrome -----
   "삼성전자":"Samsung Electronics","SK하이닉스":"SK Hynix","마이크론 (US)":"Micron (US)",
   "78,400원":"₩78,400",
-  "워치리스트":"Watchlist","워치리스트 추가":"Add to watchlist","워치리스트 추가됨":"Added to watchlist",
+  "워치리스트":"Watchlist","관심종목 추가":"Add to watchlist","관심종목 추가됨":"Added to watchlist",
   "Samsung Electronics Co., Ltd. · 결산월 12월 · 대표 한종희·전영현 · 상장일 1975-06-11":"Samsung Electronics Co., Ltd. · Fiscal year-end Dec · CEOs Han Jong-hee, Jun Young-hyun · Listed 1975-06-11",
   "반도체":"Semiconductors",
 
@@ -996,7 +999,7 @@ document.addEventListener('click', function (e) {
     <a href="Home.html">홈</a>
     <a href="Reports.html" class="active">리포트</a>
     <a href="industry.html">업종 분석</a>
-      <a href="Watchlist.html">워치리스트</a>
+      <a href="Watchlist.html">관심종목</a>
     <a href="pricing.html">멤버십</a>
     <a href="brief.html">모닝브리핑</a>
   </div>
@@ -1012,7 +1015,7 @@ document.addEventListener('click', function (e) {
   <a href="Home.html">홈</a>
   <a href="Reports.html" class="active">리포트</a>
   <a href="industry.html">업종 분석</a>
-  <a href="Watchlist.html">워치리스트</a>
+  <a href="Watchlist.html">관심종목</a>
   <a href="pricing.html">멤버십</a>
   <a href="brief.html">모닝브리핑</a>
 </div>
@@ -1055,7 +1058,7 @@ document.addEventListener('click', function (e) {
     <div class="foot-inner glass">
       <div class="foot-grid">
         <div class="foot-brand"><a class="brand" href="./"><img class="brand-logo brand-logo--light" src="../assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="../assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
-        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종 분석</a></li><li><a href="Watchlist.html">워치리스트</a></li><li><a href="pricing.html">멤버십</a></li><li><a href="brief.html">모닝브리핑</a></li></ul></div>
+        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종 분석</a></li><li><a href="Watchlist.html">관심종목</a></li><li><a href="pricing.html">멤버십</a></li><li><a href="brief.html">모닝브리핑</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
         
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
@@ -1116,7 +1119,7 @@ document.addEventListener('click', function (e) {
   function esc(x){ return String(x==null?'':x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
   var UI={
-    ko:{ home:'홈', reports:'리포트', watch:'워치리스트 추가', watched:'워치리스트 추가됨', watchShort:'워치리스트',
+    ko:{ home:'홈', reports:'리포트', watch:'관심종목 추가', watched:'관심종목 추가됨', watchShort:'관심종목',
       mk:{price:'현재가',chg:'전일 대비',mcap:'시가총액',amt:'거래대금',vol:'거래량',shares:'상장주식수',market:'시장',sector:'업종',per:'PER',pbr:'PBR',roe:'ROE',eps:'EPS',divy:'배당수익률'},
       sec:{overview:'리포트 개요',business:'사업 구조',recent:'최근 실적·주가',outlook:'전망',bull:'강세 요인',bear:'약세 요인',risk:'리스크 요인',verdict:'종합 의견',sources:'참고 출처',fin:'실적 추이',earnings:'실적 분석',industry:'산업 분석',valuation:'밸류에이션',chk:'다음 체크포인트'},
       fin:{annual:'연간 실적 (연결)',quarterly:'분기 실적 (연결)',year:'연도',q:'분기',rev:'매출액',op:'영업이익',np:'지배주주 순이익',opm:'영업이익률',roe:'ROE',debt:'부채비율',per:'PER',pbr:'PBR',divy:'배당수익률',eps:'EPS',bps:'BPS',dps:'주당배당금',na:'산출 불가 (적자)',nodata:'—',
@@ -1876,8 +1879,8 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
 
 </script>
 <script type="module" src="paywall.js?v=01294faf"></script>
-<script type="module" src="auth-guard.js?v=addad0f2"></script>
-<script type="module" src="watchlist.js?v=2298e9d7"></script>
+<script type="module" src="auth-guard.js?v=cf23b954"></script>
+<script type="module" src="watchlist.js?v=f95b0bf8"></script>
 <script type="module" src="auth-state.js?v=6df6d66c"></script>
 <!-- 부드러운 스크롤. 안 뜨거나 손가락 화면이면 스스로 비켜선다 —
      smooth-scroll.js 맨 위 설명 참고. 빼려면 이 두 줄만 지우면 된다. -->

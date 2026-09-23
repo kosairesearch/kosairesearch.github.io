@@ -16,8 +16,8 @@ if(window.KOSi18n) window.KOSi18n.register({
   "로그인이 필요합니다":"Sign-in required",
   "이 리포트는 로그인 후 열람하실 수 있습니다.":"Please sign in to view this report.",
   "이 기능은 로그인 후 이용하실 수 있습니다.":"Please sign in to use this feature.",
-  "워치리스트에 추가하시려면 로그인이 필요합니다.":"Please sign in to add to your watchlist.",
-  "이메일 인증 후 워치리스트를 이용하실 수 있습니다.":"Verify your email to use the watchlist.",
+  "관심종목에 추가하시려면 로그인이 필요합니다.":"Please sign in to add to your watchlist.",
+  "이메일 인증 후 관심종목을 이용하실 수 있습니다.":"Verify your email to use the watchlist.",
   "로그인":"Sign in", "회원가입":"Sign up", "홈으로":"Back to home",
   "이메일 인증이 필요합니다":"Email verification required",
   "받으신 메일의 링크를 눌러 이메일 인증을 완료하여 주시기 바랍니다.":"Please click the link in the email we sent to verify your address.",
@@ -143,7 +143,7 @@ function showLoginPopup(msg){
   var ex = document.getElementById('kosPopup'); if(ex) ex.remove();
   var ov = document.createElement('div');
   ov.id = 'kosPopup'; ov.className = 'kg-overlay kg-dismiss';
-  ov.appendChild(buildCard({ dismissable:true, msg: msg || '워치리스트에 추가하시려면 로그인이 필요합니다.' }));
+  ov.appendChild(buildCard({ dismissable:true, msg: msg || '관심종목에 추가하시려면 로그인이 필요합니다.' }));
   document.body.appendChild(ov);
   function close(){ ov.remove(); }
   ov.addEventListener('click', function(e){ if(e.target === ov) close(); });
