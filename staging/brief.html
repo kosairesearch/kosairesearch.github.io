@@ -64,7 +64,7 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 :root[data-theme="dark"] body::after{
   background:#0d0e18}
 /* 배경 격자(body::before 48px)는 뺐다 — 2026-09-14 사장 지시.
-   스테이징에서만 뺀 것이고 실사이트에는 아직 남아 있다. */
+   스테이징에서 먼저 빼 보고 괜찮아서 실사이트도 같이 뺐다. */
 .glass{background:rgba(255,255,255,0.62);border:1px solid rgba(255,255,255,0.55);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.6);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-radius:var(--radius-xl)}
 :root[data-theme="dark"] .glass{background:rgba(28,30,42,0.62);border-color:rgba(255,255,255,0.10);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.08)}
 .btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 15px/1 var(--font-sans);border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s,filter .15s;white-space:nowrap}
@@ -87,6 +87,7 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 .nav-links a.active{color:var(--fg-1);background:rgba(0,0,0,.07);font-weight:600}
 :root[data-theme="dark"] .nav-links a.active{background:rgba(255,255,255,.10)}
 .nav-spacer{flex:1}
+
 .icon-btn{width:38px;height:38px;border-radius:var(--radius-sm);border:0;background:transparent;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;color:var(--fg-2);transition:.15s}
 .icon-btn:hover{background:rgba(0,0,0,.06);color:var(--fg-1)}
 :root[data-theme="dark"] .icon-btn:hover{background:rgba(255,255,255,.08)}
@@ -119,8 +120,8 @@ main{flex:1;padding:8px 0 64px}
 .disclaimer{margin-top:28px;padding:16px 18px;border-radius:var(--radius-md);background:rgba(0,0,0,.04);border:1px solid var(--border-2);font:400 13px/1.6 var(--font-sans);color:var(--fg-2)}
 :root[data-theme="dark"] .disclaimer{background:rgba(255,255,255,.04)}
 .disclaimer b{color:var(--fg-1)}
-.biz{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;padding-top:16px;border-top:1px solid var(--border-2);font:500 12px/1.7 var(--font-sans);color:var(--fg-3)}
 .biz b{font-weight:600;color:var(--fg-2)}
+.biz{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;padding-top:16px;border-top:1px solid var(--border-2);font:500 12px/1.7 var(--font-sans);color:var(--fg-3)}
 .foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid var(--border-2);font:500 12px var(--font-sans);color:var(--fg-3)}
 
 @media (min-width:768px){:root{--pad:24px}}
@@ -417,10 +418,60 @@ KOSi18n.register({
 .mb-head h1{margin:0 0 16px;font:600 clamp(26px,4.4vw,38px)/1.22 var(--font-sans);color:var(--fg-1);letter-spacing:-.02em}
 .mb-lead{margin:0 0 14px;font:400 17.5px/1.62 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
 .mb-meta{font:400 13px var(--font-sans);color:var(--fg-3)}
-.mb-sec{margin:0 0 34px}
-.mb-sec h2{margin:0 0 14px;font:600 15px var(--font-sans);color:var(--fg-2);
-  letter-spacing:.02em;padding-bottom:8px;border-bottom:1px solid var(--hair)}
-.mb-sec p{margin:0 0 15px;font:400 16px/1.78 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
+/* 커버리지 섹션은 성격이 다르다 — 시황이 아니라 우리 리포트에서 나온 것이다.
+   글에서도 밝히지만(프롬프트 6-1항) 눈으로도 구분되게 왼쪽에 선을 두고
+   출처 표시를 얹는다. 이 섹션이 이 브리핑의 존재 이유다. */
+.mb-sec--cov{padding-left:18px;border-left:2px solid var(--brand-blue)}
+.mb-src{font:700 11.5px var(--font-sans);letter-spacing:.06em;color:var(--brand-blue);
+  text-transform:none;margin-bottom:8px}
+:root[data-theme="dark"] .mb-sec--cov{border-left-color:var(--brand-cyan)}
+:root[data-theme="dark"] .mb-src{color:var(--brand-cyan)}
+@media (max-width:640px){.mb-sec--cov{padding-left:14px}}
+
+/* 요약 — 제목 아래, 본문 앞. 세 줄만 읽고 나가는 사람을 위한 자리다.
+   테두리 대신 배경으로 구분한다. 선을 두르면 상자가 먼저 눈에 들어와서
+   정작 읽어야 할 세 줄이 뒤로 밀린다. */
+.mb-sum{margin:0 0 34px;padding:18px 20px;border-radius:var(--radius-md);
+  background:rgba(0,0,0,.035)}
+:root[data-theme="dark"] .mb-sum{background:rgba(255,255,255,.05)}
+.mb-sum-h{font:700 11.5px var(--font-sans);letter-spacing:.06em;color:var(--fg-3);
+  margin-bottom:12px}
+/* 목록이 아니라 문단 하나다. 항목으로 쪼개 늘어놓으면 사람이 쓴 글이 아니라
+   기계가 뽑아낸 목록처럼 읽힌다는 피드백을 받았다. */
+/* 문단을 나눴으면 여백도 줘야 한다. 여기가 margin:0 이라 세 문단이 그대로
+   붙어 있었다. 데스크탑은 폭이 넓어 문단의 끝 줄이 짧게 끝나는 것으로 구분이
+   되지만, 휴대폰에서는 그 신호가 힘을 잃고 13줄이 한 덩어리로 보인다
+   (390px 기준 5·3·5줄 · 상자 393px). 본문 절의 문단이 24px 를 받는 것과
+   짝을 맞춰, 글자가 작은 만큼 줄인 값을 준다. */
+.mb-sum-p{margin:0 0 18px;font:400 15.5px/1.72 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
+/* 마지막 문단의 아래 여백은 뺀다 — 상자 안쪽 여백과 겹쳐 아래만 벌어진다. */
+.mb-sum-p:last-child{margin-bottom:0}
+@media (max-width:640px){.mb-sum{padding:16px}.mb-sum-p{font-size:15px;margin-bottom:16px}}
+
+/* 문단 사이가 좁아 글이 벽처럼 붙어 보인다는 피드백을 받았다. 줄높이는
+   1.78 로 넉넉한데 문단 간격이 15px — 한 줄 높이(28px)의 절반이라
+   문단이 바뀌는 것이 눈에 안 잡혔다. 간격을 한 줄보다 크게 벌린다. */
+.mb-sec{margin:0 0 50px}
+/* 소제목이 본문처럼 읽혀 글 전체가 한 덩어리로 보인다는 피드백을 받았다.
+   재 보니 그럴 만했다 — 소제목이 15px·fg-2 인데 본문이 16px·fg-1 이라,
+   굵기만 600 일 뿐 실제로는 본문보다 작고 흐렸다. 굵기 하나로 위계를
+   세우려 한 것이 잘못이다.
+
+   크기·굵기·색을 한꺼번에 올려 본문과 갈라 놓는다. 밑줄은 뺐다 — 소제목
+   아래 가로선은 '여기서 끝난다'로 읽혀서, 절이 시작한다는 신호와 반대다.
+   대신 위에 짧은 막대를 둔다.
+
+   막대를 span 이 아니라 ::before 로 그리는 이유가 있다. 이 사이트의 i18n
+   엔진은 화면의 한국어 텍스트 노드를 키로 삼아 번역하는데, 장식용 요소를
+   넣으면 그것까지 훑는다. CSS 로 그리면 DOM 에 안 잡힌다. */
+.mb-sec h2{margin:0 0 16px;font:800 20px/1.35 var(--font-sans);color:var(--fg-1);
+  letter-spacing:-.025em}
+.mb-sec h2::before{content:"";display:block;width:26px;height:3px;border-radius:2px;
+  background:var(--brand-blue);margin-bottom:12px}
+:root[data-theme="dark"] .mb-sec h2::before{background:var(--brand-cyan)}
+/* 커버리지 절은 왼쪽 세로선과 라벨을 이미 갖고 있다. 막대까지 더하면 셋이 된다. */
+.mb-sec--cov h2::before{display:none}
+.mb-sec p{margin:0 0 24px;font:400 16px/1.8 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
 .mb-sec p:last-child{margin-bottom:0}
 .mb-sec a{color:var(--fg-1);text-decoration:none;border-bottom:1px solid var(--hair);
   transition:border-color .15s}
@@ -431,6 +482,9 @@ KOSi18n.register({
 @media (max-width:640px){
   .mb-sec p{font-size:15.5px}
   .mb-lead{font-size:16.5px}
+  /* 본문이 15.5px 로 줄므로 소제목도 같이 줄이되, 차이는 유지한다. */
+  .mb-sec h2{font-size:18.5px}
+  .mb-sec{margin-bottom:44px}
 }
 </style>
 <style>/* lenis 가 요구하는 최소 CSS */
@@ -538,39 +592,60 @@ document.addEventListener('click', function (e) {
     <!-- BRIEF:BODY:START · 여기부터 END 까지는 scripts/render_brief.py 가 만든다.
          손으로 고치면 다음 생성에서 덮인다. -->
     <header class="mb-head">
-      <div class="mb-date">2026년 8월 17일 (월)</div>
-      <h1>18일 개장은 미국 두 번을 안고 시작한다</h1>
-      <p class="mb-lead" data-i18n-block>오늘 국내 증시는 휴장이고, 직전 거래일은 8월 14일, 다음 개장은 8월 18일이다. 그 사이 미국이 여러 차례 열렸고, 3대 지수는 제자리인데 반도체 지수만 홀로 뛴 조합을 18일이 한꺼번에 받는다.</p>
-      <div class="mb-meta">국내 증시 휴장 · 마지막 거래일 8월 14일(금) 종가 기준</div>
+      <div class="mb-date">2026년 9월 23일 (수) 07:28</div>
+      <h1>어제 상승분을 되돌리게 한 유가, 밤사이 89달러로 내려왔다</h1>
+      <div class="mb-meta">국내 증시 개장 · 직전 거래일 9월 22일(화) 종가 기준</div>
     </header>
 
+    <aside class="mb-sum">
+      <div class="mb-sum-h">요약</div>
+      <p class="mb-sum-p" data-i18n-block>직전 거래일 국내 증시의 상승분을 지운 유가 반등이 간밤 6% 넘는 급락으로 되돌려졌고, 미 10년물은 4.97%로 사실상 제자리에 남았다. 뉴욕에서는 나스닥이 사상 최고 종가를 썼고 필라델피아 반도체가 2% 넘게 올랐다.</p>
+      <p class="mb-sum-p" data-i18n-block>국내에서는 엔비디아 냉각 솔루션 규격 승인 소식이 나온 LG전자를 필두로 전자·부품이 업종 상위 첫 자리에 올랐지만, 지수 중앙값은 마이너스였고 개인이 코스피에서 1조 5,643억원을 팔았다.</p>
+      <p class="mb-sum-p" data-i18n-block>원화는 추석 전 네고물량으로 두 달 반 만에 가장 크게 내렸고, 한은 금통위원의 추가 긴축 시기 언급이 함께 나왔다. 이번 주 미 지표는 비어 있고 다음 주 화요일부터 넷이 몰린다.</p>
+    </aside>
+
     <section class="mb-sec">
-      <h2>지수는 멈췄고 반도체만 갔다</h2>
-      <p data-i18n-block>가장 최근 미국 종가에서 S&amp;P 500은 7,780.29로 0.07% 내렸고, 나스닥은 26,754.51로 0.09% 올랐다. 다우는 53,643.64로 0.17% 하락했다. 세 지수가 소폭으로 서로 다른 방향을 향해 방향성이 없었던 반면, 필라델피아 반도체 지수는 12,657.27로 1.93% 올라 홀로 뚜렷했다. CNBC는 S&amp;P 500이 최고치에서 물러났지만 3주 연속 주간 상승을 기록했다고 전했고, Yahoo Finance는 소매 유통업체 실적 발표를 앞둔 관망 흐름을 지적했다. 지수 레벨은 쉬고 자금은 반도체 쪽으로 좁게 붙은 구도다.</p>
-      <p data-i18n-block>금리와 통화는 방향이 갈렸다. 미 10년물은 4.71%로 올랐고 달러인덱스는 99.45로 0.22% 내렸다. WTI는 82.74달러로 0.41% 상승했다. 국내로 옮겨붙는 성격을 따지면 지수 전체가 아니라 반도체 대형주로 좁혀지는 쪽이다. 다만 8월 14일 국내 장에서 이미 <a href="stock.html?ticker=000660">SK하이닉스</a>와 <a href="stock.html?ticker=005930">삼성전자</a>에 거래대금이 쏠렸던 만큼, 18일에 남은 폭이 얼마인지가 관건이다.</p>
+      <h2>90달러가 깨졌는데, 10년물은 4.97%에 그대로 있다</h2>
+      <p data-i18n-block>WTI는 89.85달러로 6.19% 내렸다. 이 브리핑이 지난주부터 금리·환율 압력의 공통 배경으로 붙여 온 항목이 100달러대에서 90달러 아래까지 내려온 셈이다. 다만 미 10년물은 4.96%에서 4.97%로, 사실상 움직이지 않았다.</p>
+      <p data-i18n-block>유가가 빠진 만큼 금리가 따라 내려오지는 않았다는 뜻이고, 연준 쪽에서는 굴스비 총재가 강한 수요가 물가를 밀어올리고 있을 수 있다고 말한 것이 함께 전해졌다. 유가와 금리가 같은 방향으로 움직였던 지난주 초와는 조합이 달라졌다.</p>
     </section>
 
     <section class="mb-sec">
-      <h2>올린 건 지수, 오른 건 상위 몇 종목</h2>
-      <p data-i18n-block>8월 14일 코스피는 6,977.94로 2.42% 올라 7000선 턱밑에서 마감했다. 코스닥은 864.65로 0.38% 상승에 머물렀다. 코스피에서 외국인이 3조387억원을 순매수하는 동안 개인이 1조9,820억원, 기관계가 1조298억원을 팔았다. 코스닥은 반대로 개인이 3,145억원을 사고 기관계가 2,524억원을 팔았다.</p>
-      <p data-i18n-block>지수 상승폭과 체감은 달랐다. 시총가중 등락률은 +2.31%였는데 중앙값은 +0.38%였다. 상승 1,518 대 하락 941로 종목 수는 위쪽이 많았지만, 지수를 끌어올린 몫은 상위 대형주에 몰렸다. 업종은 자동차 +6.05%, 통신 +6.01%, 정유 +5.24%가 위였고, 철강·금속 -1.37%, 항공·방산 -1.35%, 전기장비 -1.00%가 아래였다.</p>
-      <p data-i18n-block>개별로는 <a href="stock.html?ticker=017670">SK텔레콤</a>이 10.32% 올라 시장 대비 초과폭이 가장 컸고, 투자한 AI 스타트업 앤스로픽의 지분가치 관련 보도가 함께 나왔다. <a href="stock.html?ticker=307950">현대오토에버</a> +9.02%, <a href="stock.html?ticker=005380">현대차</a> +8.24%, <a href="stock.html?ticker=012330">현대모비스</a> +7.05%로 자동차 계열이 나란히 붙었다. 반대편에서 <a href="stock.html?ticker=010120">LS ELECTRIC</a> -3.50%, <a href="stock.html?ticker=047810">한국항공우주</a> -3.17%는 시장 대비 5%포인트 넘게 뒤처졌다. 거래대금은 SK하이닉스 7조4,897억원, 삼성전자 5조8,745억원 두 종목에 집중됐다.</p>
+      <h2>추석 전 네고물량에 원화 기준값 1,355.66원</h2>
+      <p data-i18n-block>9월 22일 기준 원/달러는 1,384.86원에서 1,355.66원으로 2.11% 내렸다. 외환시장 쪽 보도는 추석을 앞둔 수출업체 네고물량과 위험선호 회복을 이유로 들었고, 두 달 반 만에 가장 큰 낙폭이라고 전했다.</p>
+      <p data-i18n-block>달러인덱스가 같은 날 0.12% 오른 100.55였던 것을 감안하면 달러가 약해져서 생긴 움직임은 아니다. 여기에 한은에서는 장용성 금통위원이 수도권 집값과 가계대출을 들어 부동산발 금융불균형을 경계하며 추가 긴축 시기를 검토해야 한다는 취지로 발언했다. 환율이 빠르게 내려온 구간과 추가 인상 논의가 겹쳐 있다는 점이 오늘 수출주 쪽을 볼 때의 배경이다.</p>
     </section>
 
     <section class="mb-sec">
-      <h2>환율은 내렸고 금리는 올랐다</h2>
-      <p data-i18n-block>원/달러는 1,412.99원으로 0.27% 내렸다. 8월 14일 국내 장의 외국인 순매수와 수출업체 네고 물량이 환율 마감 보도에서 함께 언급됐다. 달러인덱스가 내리는 동안 미 10년물이 4.71%로 오른 조합은, 사흘 공백을 지나 외국인 수급이 이어질지 볼 때 같이 놓고 봐야 한다.</p>
-      <p data-i18n-block>일정은 촘촘하다. 18일 홈디포, 19일 타깃·로우스 실적이 이어지고 같은 19일에 7월 FOMC 의사록이 공개될 예정이다(공개일 추정). 21일에는 국내 8월 1~20일 수출과 미국 8월 PMI 속보치가 같은 날 나오고 잭슨홀 심포지엄이 개막한다. 27일에는 엔비디아 회계 2분기 실적과 워시 의장 기조연설이 겹친다. 소비는 소매 실적으로, 금리는 의사록과 잭슨홀로 확인하는 순서이며 반도체 이벤트는 27일에 몰려 있다.</p>
-      <p data-i18n-block>다음 개장까지 볼 지점은 셋이다. 8월 14일의 외국인 순매수와 지수 상승 흐름이 공백을 넘어 이어지는지, 중앙값 +0.38%에 그친 폭이 넓어지는지, 그리고 반도체 지수 강세가 이미 거래가 쏠린 국내 대형주에 어느 정도 더 얹히는지다.</p>
+      <h2>나스닥 최고치와 마이크론 5% — 그런데 국내 주역은 하이닉스가 아니었다</h2>
+      <p data-i18n-block>뉴욕에서는 나스닥이 0.45% 올라 사상 최고 종가를 썼고 필라델피아 반도체가 2.06%, 마이크론이 5.00% 올랐다. 반면 다우는 0.36% 내려 지수 간 방향이 갈렸다.</p>
+      <p data-i18n-block>국내 직전 장은 그 흐름이 다른 이름으로 나왔다 — <a href="stock.html?ticker=066570">LG전자</a>가 대용량 냉각수 분배장치의 엔비디아 규격 승인 소식과 함께 6.91% 올랐고, 지주사인 <a href="stock.html?ticker=003550">LG</a>가 4.67%, 같은 전자·부품 업종의 <a href="stock.html?ticker=011070">LG이노텍</a>과 <a href="stock.html?ticker=009150">삼성전기</a>도 각각 4%대, 3%대로 올라 업종 전체가 3.72% 올라 상위 첫 자리에 섰다.</p>
+      <p data-i18n-block>정작 거래대금 1위였던 <a href="stock.html?ticker=000660">SK하이닉스</a>는 1.50% 내렸다. 6조 1,715억원이 지나가고 지수와 반대로 끝난 자리다.</p>
+      <p data-i18n-block>기판 쪽은 더 크게 움직였다. <a href="stock.html?ticker=007810">코리아써키트</a> 25.43%, <a href="stock.html?ticker=356860">티엘비</a> 16.80%로 전자·부품 안에서 두 자릿수가 나왔고, 옆 업종인 반도체의 <a href="stock.html?ticker=222800">심텍</a>도 13.31% 올랐다. 다만 이 종목들의 개별 사유는 확인된 것이 없다.</p>
+      <p data-i18n-block>미국 쪽에서는 AI 리더들의 개발 속도조절 요구로 칩 주식이 흔들렸다는 보도와 AI 수요를 근거로 한 랠리 보도가 같은 날 함께 나와 있어, 반도체 안에서도 메모리와 그 주변이 따로 움직인 하루였다.</p>
     </section>
 
     <section class="mb-sec">
-      <h2>8월 안에 답이 나오는 것들</h2>
-      <p data-i18n-block>커버리지에서 8월 안에 결과가 나오는 확인 지점이 겹쳐 있다. SK하이닉스는 3분기 중 확정될 추가 주주환원의 규모와 방식이 8~9월 확인 대상이고, 주당 375원 분기배당의 배당기준일이 8월 31일로 잡혀 있다. 8월 14일 거래대금 1위였던 만큼 다음 개장에서도 수급의 중심에 놓인다.</p>
-      <p data-i18n-block><a href="stock.html?ticker=012450">한화에어로스페이스</a>는 회사가 8월 중 발표를 예상한 미국 자주포 현대화 사업 우선협상대상자 선정 결과가 걸려 있다. 8월 14일 이 종목은 2.11% 내렸고 항공·방산 업종도 하락해, 결과 자체가 방향을 다시 잡는 항목이다. <a href="stock.html?ticker=105560">KB금융</a>은 홍콩 ELS 제재안의 최종 과징금 규모와 의결일이 8월 중 확인 대상이며, 이미 반영해 둔 금액 대비 환입 여부가 갈린다. <a href="stock.html?ticker=009150">삼성전기</a>는 9월 1일 예정된 글라셈 주식 취득 절차가 공시대로 진행되는지가 다음 체크 포인트다. 나머지 대형주 확인 지점은 대체로 10월 3분기 실적 구간에 몰려 있다.</p>
+      <h2>오른 종목보다 내린 종목이 457개 많았다</h2>
+      <p data-i18n-block>코스피는 0.15% 올랐지만 시총가중이 0.16%인 데 비해 종목 중앙값은 -0.19%였고, 상승 974 대 하락 1,431이었다. 위쪽 몇 개가 지수를 붙들어 둔 모양이다. 수급에서는 개인이 코스피에서 1조 5,643억원을 순매도했고 기관도 1,295억원을 팔았으며 외국인만 494억원 순매수였다.</p>
+      <p data-i18n-block>코스닥은 0.23% 내렸고 개인이 1,548억원을 받았다. 업종 하위는 미디어·엔터, 화장품, 바이오·제약 순으로 1%대 하락이 이어졌고, 대형주에서는 <a href="stock.html?ticker=068270">셀트리온</a>과 <a href="stock.html?ticker=196170">알테오젠</a>도 함께 내려 바이오 쪽이 하루 종일 무거웠다.</p>
     </section>
 
-    <p class="mb-disc" data-i18n-block>본 자료는 공시(DART)·국내 시장 데이터와 공개된 해외 시장·일정 자료를 바탕으로 작성한 정보 제공 자료이며 투자 권유가 아닙니다. 국내 수치는 2026년 8월 14일 종가 기준입니다.</p>
+    <section class="mb-sec">
+      <h2>미 지표는 다음 주 화요일부터, 사흘 만에 넷</h2>
+      <p data-i18n-block>일정표상 이번 주(9월 21~27일)에 확인할 미국 지표는 없다. 다음 주 9월 29일 구인·이직, 30일 GDP와 개인소비·PCE, 10월 2일 고용보고서가 사흘 만에 몰려 나오고, 9월 FOMC 의사록은 10월 7일로 잡혀 있다.</p>
+      <p data-i18n-block>국내에서는 9월 1~20일 수출이 반도체 주도로 역대 최대라는 집계가 나와 있어, 지표 공백 구간의 재료는 유가·환율과 수출 쪽에 있는 셈이다.</p>
+    </section>
+
+    <section class="mb-sec mb-sec--cov">
+      <div class="mb-src">KOSAI 리포트 확인 지점</div>
+      <h2>제이알글로벌리츠, 실사보고서 제출일이 다음 주 월요일</h2>
+      <p data-i18n-block>오늘 자 KOSAI 리포트에서 <a href="stock.html?ticker=348950">제이알글로벌리츠</a>의 확인 지점으로 꼽아 둔 첫 날짜는 다음 주 월요일인 9월 28일이다. 삼일회계법인 실사보고서 제출 예정일로, 자산·부채와 채무상환 능력 점검 결과가 이후 채권자 협상의 기준점이 된다.</p>
+      <p data-i18n-block>세 차례 연장된 ARS 협의기간 마감일은 10월 14일이다. 감사의견 거절로 상장폐지 심사가 진행 중이고 상반기 실적이 대규모 적자로 정정된 상태라, 일정 자체가 가격 신호가 되는 구간이다.</p>
+      <p data-i18n-block>같은 날 접수분에서는 <a href="stock.html?ticker=021820">세원정공</a>의 확인 지점이 11월 3분기 실적과 4분기 중 현대차·기아의 미국 현지 부품 조달 확대 진행 상황으로 잡혀 있어, 결과 확인은 한참 뒤다.</p>
+    </section>
+
+    <p class="mb-disc" data-i18n-block>본 자료는 공시(DART)·국내 시장 데이터와 공개된 해외 시장·일정 자료를 바탕으로 작성한 정보 제공 자료이며 투자 권유가 아닙니다. 국내 수치는 2026년 9월 22일 종가 기준입니다.</p>
     <!-- BRIEF:BODY:END -->
   </article>
 </div>
@@ -621,25 +696,37 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
 /* BRIEF:I18N:START · scripts/render_brief.py 가 만든다 */
 if(window.KOSi18n) KOSi18n.register({
   "모닝 브리핑":"Morning Brief",
-  "2026년 8월 17일 (월)":"Monday, August 17, 2026",
-  "국내 증시 휴장 · 마지막 거래일 8월 14일(금) 종가 기준":"Korean markets closed · Figures as of the Friday, August 14 close",
-  "본 자료는 공시(DART)·국내 시장 데이터와 공개된 해외 시장·일정 자료를 바탕으로 작성한 정보 제공 자료이며 투자 권유가 아닙니다. 국내 수치는 2026년 8월 14일 종가 기준입니다.":"This material is compiled from regulatory filings (DART), Korean market data and publicly available overseas market and calendar sources, for information purposes only. It is not investment advice. Korean figures are as of the August 14, 2026 close.",
-  "18일 개장은 미국 두 번을 안고 시작한다":"Aug 18 Opens Carrying Two U.S. Sessions",
-  "오늘 국내 증시는 휴장이고, 직전 거래일은 8월 14일, 다음 개장은 8월 18일이다. 그 사이 미국이 여러 차례 열렸고, 3대 지수는 제자리인데 반도체 지수만 홀로 뛴 조합을 18일이 한꺼번에 받는다.":"Korean markets are closed today; the last session was Aug 14 and the next open is Aug 18. Wall Street traded more than once in between, and Aug 18 has to absorb it all at once — flat headline indexes alongside a semiconductor gauge that moved on its own.",
-  "지수는 멈췄고 반도체만 갔다":"Indexes Stalled, Chips Did Not",
-  "가장 최근 미국 종가에서 S&P 500은 7,780.29로 0.07% 내렸고, 나스닥은 26,754.51로 0.09% 올랐다. 다우는 53,643.64로 0.17% 하락했다. 세 지수가 소폭으로 서로 다른 방향을 향해 방향성이 없었던 반면, 필라델피아 반도체 지수는 12,657.27로 1.93% 올라 홀로 뚜렷했다. CNBC는 S&P 500이 최고치에서 물러났지만 3주 연속 주간 상승을 기록했다고 전했고, Yahoo Finance는 소매 유통업체 실적 발표를 앞둔 관망 흐름을 지적했다. 지수 레벨은 쉬고 자금은 반도체 쪽으로 좁게 붙은 구도다.":"In the most recent U.S. close, the S&P 500 slipped 0.07% to 7,780.29 while the Nasdaq added 0.09% to 26,754.51. The Dow fell 0.17% to 53,643.64. The three headline indexes drifted in different directions by small margins; the Philadelphia Semiconductor Index stood apart, up 1.93% at 12,657.27. CNBC noted the S&P 500 pulled back from a record but still logged a third straight weekly gain, and Yahoo Finance pointed to caution ahead of retailer earnings. Index levels rested while money concentrated narrowly on chips.",
-  "금리와 통화는 방향이 갈렸다. 미 10년물은 4.71%로 올랐고 달러인덱스는 99.45로 0.22% 내렸다. WTI는 82.74달러로 0.41% 상승했다. 국내로 옮겨붙는 성격을 따지면 지수 전체가 아니라 반도체 대형주로 좁혀지는 쪽이다. 다만 8월 14일 국내 장에서 이미 SK하이닉스와 삼성전자에 거래대금이 쏠렸던 만큼, 18일에 남은 폭이 얼마인지가 관건이다.":"Rates and the dollar split. The U.S. 10-year yield rose to 4.71% while the dollar index fell 0.22% to 99.45. WTI gained 0.41% to $82.74. In terms of what travels to Seoul, the read-across looks narrow — large-cap semiconductors rather than the whole market. Yet turnover on Aug 14 was already piled into <a href=\"stock.html?ticker=000660\">SK Hynix<\/a> and <a href=\"stock.html?ticker=005930\">Samsung Electronics<\/a>, so the question for Aug 18 is how much room is left.",
-  "올린 건 지수, 오른 건 상위 몇 종목":"The Index Rose; A Few Names Did the Lifting",
-  "8월 14일 코스피는 6,977.94로 2.42% 올라 7000선 턱밑에서 마감했다. 코스닥은 864.65로 0.38% 상승에 머물렀다. 코스피에서 외국인이 3조387억원을 순매수하는 동안 개인이 1조9,820억원, 기관계가 1조298억원을 팔았다. 코스닥은 반대로 개인이 3,145억원을 사고 기관계가 2,524억원을 팔았다.":"On Aug 14 the KOSPI rose 2.42% to 6,977.94, closing just under the 7,000 line. The KOSDAQ managed only 0.38% at 864.65. Foreign investors bought a net 3.04 trillion won of KOSPI stocks while retail sold 1.98 trillion and institutions 1.03 trillion. On the KOSDAQ the pattern reversed: retail bought a net 314.5 billion won and institutions sold 252.4 billion.",
-  "지수 상승폭과 체감은 달랐다. 시총가중 등락률은 +2.31%였는데 중앙값은 +0.38%였다. 상승 1,518 대 하락 941로 종목 수는 위쪽이 많았지만, 지수를 끌어올린 몫은 상위 대형주에 몰렸다. 업종은 자동차 +6.05%, 통신 +6.01%, 정유 +5.24%가 위였고, 철강·금속 -1.37%, 항공·방산 -1.35%, 전기장비 -1.00%가 아래였다.":"The index gain and the felt gain were different things. The cap-weighted move was +2.31%, the median just +0.38%. Advancers led decliners 1,518 to 941, but the lifting came from the top of the board. By sector, autos (+6.05%), telecom (+6.01%) and refining (+5.24%) led, while steel and metals (-1.37%), aerospace and defense (-1.35%) and electrical equipment (-1.00%) lagged.",
-  "개별로는 SK텔레콤이 10.32% 올라 시장 대비 초과폭이 가장 컸고, 투자한 AI 스타트업 앤스로픽의 지분가치 관련 보도가 함께 나왔다. 현대오토에버 +9.02%, 현대차 +8.24%, 현대모비스 +7.05%로 자동차 계열이 나란히 붙었다. 반대편에서 LS ELECTRIC -3.50%, 한국항공우주 -3.17%는 시장 대비 5%포인트 넘게 뒤처졌다. 거래대금은 SK하이닉스 7조4,897억원, 삼성전자 5조8,745억원 두 종목에 집중됐다.":"Among single names, <a href=\"stock.html?ticker=017670\">SK Telecom<\/a> rose 10.32%, the widest outperformance of the day, alongside reports on the value of its stake in AI startup Anthropic. Auto-related names moved together: <a href=\"stock.html?ticker=307950\">Hyundai AutoEver<\/a> +9.02%, <a href=\"stock.html?ticker=005380\">Hyundai Motor<\/a> +8.24% and <a href=\"stock.html?ticker=012330\">Hyundai Mobis<\/a> +7.05%. On the other side, <a href=\"stock.html?ticker=010120\">LS Electric<\/a> -3.50% and <a href=\"stock.html?ticker=047810\">Korea Aerospace Industries<\/a> -3.17% trailed the market by more than five percentage points. Turnover clustered in SK Hynix (7.49 trillion won) and Samsung Electronics (5.87 trillion won).",
-  "환율은 내렸고 금리는 올랐다":"The Won Firmed, Yields Rose",
-  "원/달러는 1,412.99원으로 0.27% 내렸다. 8월 14일 국내 장의 외국인 순매수와 수출업체 네고 물량이 환율 마감 보도에서 함께 언급됐다. 달러인덱스가 내리는 동안 미 10년물이 4.71%로 오른 조합은, 사흘 공백을 지나 외국인 수급이 이어질지 볼 때 같이 놓고 봐야 한다.":"The won firmed 0.27% to 1,412.99 per dollar. Market wraps tied the move to foreign buying in the Aug 14 session and exporter hedging flows. The combination of a softer dollar index and a 10-year yield up at 4.71% is worth holding together when judging whether foreign flows persist across the three-day gap.",
-  "일정은 촘촘하다. 18일 홈디포, 19일 타깃·로우스 실적이 이어지고 같은 19일에 7월 FOMC 의사록이 공개될 예정이다(공개일 추정). 21일에는 국내 8월 1~20일 수출과 미국 8월 PMI 속보치가 같은 날 나오고 잭슨홀 심포지엄이 개막한다. 27일에는 엔비디아 회계 2분기 실적과 워시 의장 기조연설이 겹친다. 소비는 소매 실적으로, 금리는 의사록과 잭슨홀로 확인하는 순서이며 반도체 이벤트는 27일에 몰려 있다.":"The calendar is dense. Home Depot reports on Aug 18, Target and Lowe's on Aug 19, the same day the July FOMC minutes are due (release date estimated). On Aug 21, Korea's Aug 1–20 export data and the flash U.S. August PMI land together as the Jackson Hole symposium opens. On Aug 27, Nvidia's fiscal second-quarter results overlap with Chair Warsh's keynote. Consumption gets tested through retail earnings, rates through the minutes and Jackson Hole, and the semiconductor event risk is bunched on Aug 27.",
-  "다음 개장까지 볼 지점은 셋이다. 8월 14일의 외국인 순매수와 지수 상승 흐름이 공백을 넘어 이어지는지, 중앙값 +0.38%에 그친 폭이 넓어지는지, 그리고 반도체 지수 강세가 이미 거래가 쏠린 국내 대형주에 어느 정도 더 얹히는지다.":"Three things to watch into the next session: whether the foreign buying and index momentum of Aug 14 carry across the break, whether breadth widens from a +0.38% median, and how much of the semiconductor strength attaches to Korean large caps where turnover was already concentrated.",
-  "8월 안에 답이 나오는 것들":"What Gets Answered Within August",
-  "커버리지에서 8월 안에 결과가 나오는 확인 지점이 겹쳐 있다. SK하이닉스는 3분기 중 확정될 추가 주주환원의 규모와 방식이 8~9월 확인 대상이고, 주당 375원 분기배당의 배당기준일이 8월 31일로 잡혀 있다. 8월 14일 거래대금 1위였던 만큼 다음 개장에서도 수급의 중심에 놓인다.":"Several coverage checkpoints resolve inside August. For SK Hynix, the size and form of additional shareholder returns to be finalized during the third quarter is an August–September item, and the record date for the 375-won quarterly dividend is set for Aug 31. As the top turnover name on Aug 14, it sits at the center of flows again at the next open.",
-  "한화에어로스페이스는 회사가 8월 중 발표를 예상한 미국 자주포 현대화 사업 우선협상대상자 선정 결과가 걸려 있다. 8월 14일 이 종목은 2.11% 내렸고 항공·방산 업종도 하락해, 결과 자체가 방향을 다시 잡는 항목이다. KB금융은 홍콩 ELS 제재안의 최종 과징금 규모와 의결일이 8월 중 확인 대상이며, 이미 반영해 둔 금액 대비 환입 여부가 갈린다. 삼성전기는 9월 1일 예정된 글라셈 주식 취득 절차가 공시대로 진행되는지가 다음 체크 포인트다. 나머지 대형주 확인 지점은 대체로 10월 3분기 실적 구간에 몰려 있다.":"<a href=\"stock.html?ticker=012450\">Hanwha Aerospace<\/a> awaits the preferred-bidder decision on the U.S. self-propelled howitzer modernization program, which the company expected during August. The stock fell 2.11% on Aug 14 as the aerospace and defense sector declined, leaving the outcome itself as the direction-setter. For <a href=\"stock.html?ticker=105560\">KB Financial<\/a>, the final fine and resolution date on the Hong Kong ELS sanctions are August items, determining any reversal against the amount already provisioned. For <a href=\"stock.html?ticker=009150\">Samsung Electro-Mechanics<\/a>, the next checkpoint is whether the Glasem share acquisition scheduled for Sept 1 proceeds as disclosed. Most other large-cap checkpoints cluster in the October third-quarter earnings window."
+  "2026년 9월 23일 (수) 07:28":"Wednesday, September 23, 2026 · 07:28 KST",
+  "국내 증시 개장 · 직전 거래일 9월 22일(화) 종가 기준":"Korean markets open · Figures as of the Tuesday, September 22 close",
+  "본 자료는 공시(DART)·국내 시장 데이터와 공개된 해외 시장·일정 자료를 바탕으로 작성한 정보 제공 자료이며 투자 권유가 아닙니다. 국내 수치는 2026년 9월 22일 종가 기준입니다.":"This material is compiled from regulatory filings (DART), Korean market data and publicly available overseas market and calendar sources, for information purposes only. It is not investment advice. Korean figures are as of the September 22, 2026 close.",
+  "어제 상승분을 되돌리게 한 유가, 밤사이 89달러로 내려왔다":"The oil bounce that erased Korea's rally reversed overnight — WTI back to $89",
+  "요약":"In brief",
+  "직전 거래일 국내 증시의 상승분을 지운 유가 반등이 간밤 6% 넘는 급락으로 되돌려졌고, 미 10년물은 4.97%로 사실상 제자리에 남았다. 뉴욕에서는 나스닥이 사상 최고 종가를 썼고 필라델피아 반도체가 2% 넘게 올랐다.":"The oil rebound that erased Korea's intraday rally reversed overnight with a drop of more than 6%, while the US 10-year sat essentially unchanged at 4.97%.",
+  "국내에서는 엔비디아 냉각 솔루션 규격 승인 소식이 나온 LG전자를 필두로 전자·부품이 업종 상위 첫 자리에 올랐지만, 지수 중앙값은 마이너스였고 개인이 코스피에서 1조 5,643억원을 팔았다.":"In New York the Nasdaq closed at a record and the Philadelphia semiconductor index gained over 2%. At home, electronics components led sectors after LG Electronics won Nvidia certification for its cooling solution, but the median stock still fell and retail investors sold 1.56 trillion won on KOSPI.",
+  "원화는 추석 전 네고물량으로 두 달 반 만에 가장 크게 내렸고, 한은 금통위원의 추가 긴축 시기 언급이 함께 나왔다. 이번 주 미 지표는 비어 있고 다음 주 화요일부터 넷이 몰린다.":"The won posted its largest drop in two and a half months on pre-holiday exporter flows, alongside a BOK board member's remarks on the timing of further tightening. No US data this week; four releases arrive starting next Tuesday.",
+  "90달러가 깨졌는데, 10년물은 4.97%에 그대로 있다":"Oil breaks $90, but the 10-year stays at 4.97%",
+  "WTI는 89.85달러로 6.19% 내렸다. 이 브리핑이 지난주부터 금리·환율 압력의 공통 배경으로 붙여 온 항목이 100달러대에서 90달러 아래까지 내려온 셈이다. 다만 미 10년물은 4.96%에서 4.97%로, 사실상 움직이지 않았다.":"WTI settled at $89.85, down 6.19% — the factor this briefing has been citing as the common backdrop for rate and currency pressure has now fallen from above $100 to under $90. Yet the US 10-year barely moved, 4.96% to 4.97%.",
+  "유가가 빠진 만큼 금리가 따라 내려오지는 않았다는 뜻이고, 연준 쪽에서는 굴스비 총재가 강한 수요가 물가를 밀어올리고 있을 수 있다고 말한 것이 함께 전해졌다. 유가와 금리가 같은 방향으로 움직였던 지난주 초와는 조합이 달라졌다.":"Rates did not follow oil down, and separately Fed's Goolsbee said strong demand may be adding to inflation. The combination differs from early last week, when oil and yields moved together.",
+  "추석 전 네고물량에 원화 기준값 1,355.66원":"Won reference rate at 1,355.66 on pre-holiday exporter selling",
+  "9월 22일 기준 원/달러는 1,384.86원에서 1,355.66원으로 2.11% 내렸다. 외환시장 쪽 보도는 추석을 앞둔 수출업체 네고물량과 위험선호 회복을 이유로 들었고, 두 달 반 만에 가장 큰 낙폭이라고 전했다.":"The won reference rate fell 2.11%, from 1,384.86 to 1,355.66 as of Sept 22. FX desks attributed the move to exporter selling ahead of the Chuseok holiday and a recovery in risk appetite, calling it the largest single-day drop in two and a half months.",
+  "달러인덱스가 같은 날 0.12% 오른 100.55였던 것을 감안하면 달러가 약해져서 생긴 움직임은 아니다. 여기에 한은에서는 장용성 금통위원이 수도권 집값과 가계대출을 들어 부동산발 금융불균형을 경계하며 추가 긴축 시기를 검토해야 한다는 취지로 발언했다. 환율이 빠르게 내려온 구간과 추가 인상 논의가 겹쳐 있다는 점이 오늘 수출주 쪽을 볼 때의 배경이다.":"With the dollar index up 0.12% at 100.55 the same day, this was not dollar weakness. Meanwhile BOK board member Chang Yong-sung flagged financial imbalances from property and household credit and said the timing of further tightening needs review. A fast-falling won overlapping with renewed tightening talk is the backdrop for exporters today.",
+  "나스닥 최고치와 마이크론 5% — 그런데 국내 주역은 하이닉스가 아니었다":"Record Nasdaq and Micron +5% — but Seoul's leader wasn't Hynix",
+  "뉴욕에서는 나스닥이 0.45% 올라 사상 최고 종가를 썼고 필라델피아 반도체가 2.06%, 마이크론이 5.00% 올랐다. 반면 다우는 0.36% 내려 지수 간 방향이 갈렸다.":"In New York the Nasdaq rose 0.45% to a record close, with the Philadelphia semiconductor index up 2.06% and Micron up 5.00%; the Dow fell 0.36%, so the indices split.",
+  "국내 직전 장은 그 흐름이 다른 이름으로 나왔다 — LG전자가 대용량 냉각수 분배장치의 엔비디아 규격 승인 소식과 함께 6.91% 올랐고, 지주사인 LG가 4.67%, 같은 전자·부품 업종의 LG이노텍과 삼성전기도 각각 4%대, 3%대로 올라 업종 전체가 3.72% 올라 상위 첫 자리에 섰다.":"Seoul's last session expressed the same theme through different names — <a href=\"stock.html?ticker=066570\">LG Electronics<\/a> rose 6.91% after Nvidia certified its high-capacity coolant distribution unit, holding company <a href=\"stock.html?ticker=003550\">LG<\/a> gained 4.67%, and the same electronics-components sector, including <a href=\"stock.html?ticker=011070\">LG Innotek<\/a> and <a href=\"stock.html?ticker=009150\">Samsung Electro-Mechanics<\/a>, also rose, lifting the sector 3.72% to the top of the board.",
+  "정작 거래대금 1위였던 SK하이닉스는 1.50% 내렸다. 6조 1,715억원이 지나가고 지수와 반대로 끝난 자리다.":"Yet <a href=\"stock.html?ticker=000660\">SK Hynix<\/a>, the day's busiest stock at 6.17 trillion won traded, fell 1.50% — against the index.",
+  "기판 쪽은 더 크게 움직였다. 코리아써키트 25.43%, 티엘비 16.80%로 전자·부품 안에서 두 자릿수가 나왔고, 옆 업종인 반도체의 심텍도 13.31% 올랐다. 다만 이 종목들의 개별 사유는 확인된 것이 없다.":"Substrate names moved harder. <a href=\"stock.html?ticker=007810\">Korea Circuit<\/a> jumped 25.43% and <a href=\"stock.html?ticker=356860\">TLB<\/a> 16.80% within electronics components, while <a href=\"stock.html?ticker=222800\">Simmtech<\/a> in the neighboring semiconductor sector rose 13.31%.",
+  "미국 쪽에서는 AI 리더들의 개발 속도조절 요구로 칩 주식이 흔들렸다는 보도와 AI 수요를 근거로 한 랠리 보도가 같은 날 함께 나와 있어, 반도체 안에서도 메모리와 그 주변이 따로 움직인 하루였다.":"No stock-specific reason is confirmed for these moves. In the US, reports of chip stocks wobbling on AI leaders' calls to slow development ran alongside reports of an AI-demand rally the same day — memory and its periphery traded on separate tracks.",
+  "오른 종목보다 내린 종목이 457개 많았다":"457 more decliners than advancers",
+  "코스피는 0.15% 올랐지만 시총가중이 0.16%인 데 비해 종목 중앙값은 -0.19%였고, 상승 974 대 하락 1,431이었다. 위쪽 몇 개가 지수를 붙들어 둔 모양이다. 수급에서는 개인이 코스피에서 1조 5,643억원을 순매도했고 기관도 1,295억원을 팔았으며 외국인만 494억원 순매수였다.":"KOSPI rose 0.15% and the cap-weighted move was 0.16%, but the median stock fell 0.19%, with 974 advancers against 1,431 decliners — a handful of large caps held the index up. Retail investors sold a net 1.56 trillion won on KOSPI and institutions sold 130 billion, while foreigners bought just 49 billion.",
+  "코스닥은 0.23% 내렸고 개인이 1,548억원을 받았다. 업종 하위는 미디어·엔터, 화장품, 바이오·제약 순으로 1%대 하락이 이어졌고, 대형주에서는 셀트리온과 알테오젠도 함께 내려 바이오 쪽이 하루 종일 무거웠다.":"KOSDAQ fell 0.23% with retail buying 155 billion. Sector laggards were media-entertainment, cosmetics and biopharma, each down in the 1% range; among large caps <a href=\"stock.html?ticker=068270\">Celltrion<\/a> and <a href=\"stock.html?ticker=196170\">Alteogen<\/a> also fell, leaving biotech heavy all day.",
+  "미 지표는 다음 주 화요일부터, 사흘 만에 넷":"US data resumes next Tuesday — four releases in three days",
+  "일정표상 이번 주(9월 21~27일)에 확인할 미국 지표는 없다. 다음 주 9월 29일 구인·이직, 30일 GDP와 개인소비·PCE, 10월 2일 고용보고서가 사흘 만에 몰려 나오고, 9월 FOMC 의사록은 10월 7일로 잡혀 있다.":"There are no US data releases this week (Sept 21–27). Next week brings JOLTS on Sept 29, GDP and personal consumption/PCE on Sept 30, and the jobs report on Oct 2 — four in three days — with September FOMC minutes scheduled for Oct 7.",
+  "국내에서는 9월 1~20일 수출이 반도체 주도로 역대 최대라는 집계가 나와 있어, 지표 공백 구간의 재료는 유가·환율과 수출 쪽에 있는 셈이다.":"Domestically, September 1–20 exports were reported at a record led by semiconductors. In this data gap, the drivers sit with oil, the currency and exports.",
+  "제이알글로벌리츠, 실사보고서 제출일이 다음 주 월요일":"JR Global REIT: due-diligence report lands next Monday",
+  "KOSAI 리포트 확인 지점":"From KOSAI report checkpoints",
+  "오늘 자 KOSAI 리포트에서 제이알글로벌리츠의 확인 지점으로 꼽아 둔 첫 날짜는 다음 주 월요일인 9월 28일이다. 삼일회계법인 실사보고서 제출 예정일로, 자산·부채와 채무상환 능력 점검 결과가 이후 채권자 협상의 기준점이 된다.":"In today's KOSAI report, the first checkpoint flagged for <a href=\"stock.html?ticker=348950\">JR Global REIT<\/a> is next Monday, Sept 28 — the scheduled submission date for Samil PwC's due-diligence report, whose findings on assets, liabilities and debt-servicing capacity become the reference point for creditor talks.",
+  "세 차례 연장된 ARS 협의기간 마감일은 10월 14일이다. 감사의견 거절로 상장폐지 심사가 진행 중이고 상반기 실적이 대규모 적자로 정정된 상태라, 일정 자체가 가격 신호가 되는 구간이다.":"The thrice-extended ARS negotiation period ends Oct 14.",
+  "같은 날 접수분에서는 세원정공의 확인 지점이 11월 3분기 실적과 4분기 중 현대차·기아의 미국 현지 부품 조달 확대 진행 상황으로 잡혀 있어, 결과 확인은 한참 뒤다.":"With a disclaimer of audit opinion triggering delisting review and first-half results restated to a large loss, the calendar itself is the price signal here. From the same day's filings, <a href=\"stock.html?ticker=021820\">Sewon Precision<\/a> has checkpoints set at November's third-quarter results and fourth-quarter progress on Hyundai and Kia's expanded US local parts sourcing — results are some way off."
 });
 /* BRIEF:I18N:END */
 </script>
