@@ -1052,7 +1052,14 @@ try{
                   : h<.75? mix(c3,c4,(h-.5)/.25) : mix(c4,c5,(h-.75)/.25);
         col += rain*(env*0.95+core*0.30)*uCauK;
 
-        col*=0.94+0.06*grain(gl_FragCoord.xy*0.5);
+        /* 무지개와 그 둘레(초점 타원 2배로 잰 넓은 자리)에서는 이 잡티(±3%)를 빼고 반 칸짜리
+           떨림만 둔다 — 무지개에는 결이 없어야 한다(2026-09-23 사장: "무지개가 보이는 부분은
+           그냥 그레인이 없었으면"). 반 칸은 눈에 안 보이면서 8비트 띠는 깬다.
+           그레인 셰이더의 rainbow() 와 같은 자리·같은 문턱이다. */
+        float quiet=smoothstep(0.03,0.3,exp(-0.125*(cl.x*cl.x/(uCauE.z*uCauE.z)+cl.y*cl.y/(uCauE.w*uCauE.w)))
+                                         *smoothstep(0.0,0.06,uCauK));
+        col*=mix(0.94+0.06*grain(gl_FragCoord.xy*0.5),1.0,quiet);
+        col+=quiet*(grain(gl_FragCoord.xy+17.0)-0.5)/255.0;
         gl_FragColor=vec4(col,1.0);
       }`
   });
@@ -1306,7 +1313,10 @@ try{
         첫 화면 아래는 가로로만 따진다 — 가운데 줄은 중간, 양옆은 짙게.
       · 바닥의 무지개(초점) 자리는 결을 뺀다 — 무지개가 또렷해야 한다(2026-09-23 사장 지시).
         화소마다 카메라에서 바닥까지 광선을 내려 닿는 점을 구하고, 그 점이 초점 타원(바닥
-        셰이더와 같은 값을 함께 쓴다)의 2배 안이면 결을 걷는다. 무지개가 움직이면 빈자리도
+        셰이더와 같은 값을 함께 쓴다) 둘레면 결을 걷는다 — 타원 3배 안은 0, 5배 밖은 그대로.
+        무지개가 옅은 순간(데스크톱 밝기 0.1~0.14, 시간의 10~25%)에도 다 걷도록 밝기 문턱을
+        0.06 에서 채운다 — 전에는 0.2 라 옅은 순간에는 반만 걷혀 무지개에 결이 앉았다.
+        무지개가 움직이면 빈자리도
         따라간다. 휴대폰은 무지개가 가장자리(숫자 줄 왼쪽)에 떨어져 이 빈자리가 특히 쓰인다.
       · 결은 움직이지 않는다. 캔버스 픽셀 하나에 점 하나. */
   const grainMat=new THREE.ShaderMaterial({
@@ -1331,7 +1341,7 @@ try{
         if(dir.y>=0.0) return 0.0;
         vec2 q=(ro+dir*((uFloorY-ro.y)/dir.y)).xz-uCauC;
         vec2 cl=vec2(dot(q,uCauE.xy),dot(q,vec2(-uCauE.y,uCauE.x)))/(uCauE.zw*2.0);
-        return exp(-0.5*dot(cl,cl))*smoothstep(0.0,0.2,uCauK);
+        return exp(-0.5*dot(cl,cl))*smoothstep(0.0,0.06,uCauK);
       }
       void main(){
         vec2 px=floor(gl_FragCoord.xy);
@@ -1340,7 +1350,7 @@ try{
         float y=(1.0-gl_FragCoord.y/uBuf.y)*uH;                 /* 위에서부터 CSS px */
         vec2 d=vec2((x-uC.x)/0.5, min((y/uVh-uC.y)/0.5, 0.75));
         float k=mix(uLo,uHi,smoothstep(0.6,1.2,length(d)));
-        k*=1.0-smoothstep(0.08,0.55,rainbow());
+        k*=1.0-smoothstep(0.03,0.3,rainbow());
         gl_FragColor=vec4(vec3(step(0.0,n)),k*abs(n));
       }`
   });
