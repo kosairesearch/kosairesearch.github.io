@@ -458,8 +458,9 @@ eq("규모별로 묶인다 — 거래소 기준", [(k, v, c) for k, v, c in tab[
    [("대형주", 5, 1), ("중형주", 15, 1), ("규모 모름", 1, 1)])
 eq("규모 구분 규칙: 코스피 100·300, 코스닥 100·400",
    (X.size_class("코스피", 100), X.size_class("코스피", 101), X.size_class("코스피", 301),
-    X.size_class("코스닥", 400), X.size_class("코스닥", 401), X.size_class("코스닥", 0)),
-   ("대형주", "중형주", "소형주", "중형주", "소형주", "규모 모름"))
+    X.size_class("코스닥", 400), X.size_class("코스닥", 401), X.size_class("코스닥", 0),
+    X.size_class("코넥스", 1)),
+   ("대형주", "중형주", "소형주", "중형주", "소형주", "규모 모름", "소형주"))
 ok("규모별만 보려면 top=0", X.ticker_table(rows, meta, 0)["items"] == [])
 ok("규모별 줄이 표에 나온다", "■ 규모별" in "\n".join(X._ticker_lines(tab, "[시험]", 0))
    and "많이 본 종목" not in "\n".join(X._ticker_lines(tab, "[시험]", 0)))
@@ -472,7 +473,7 @@ eq("1회만 열린 종목 수", tab["once"], 1)
 eq("업종별 몫은 큰 순", [s for s, _ in tab["sectors"]][:2], ["통신", "반도체"])
 ok("상위 N 집중도", tab["top10"] == 100.0)
 txt = "\n".join(X._ticker_lines(tab, "[시험]", 10))
-ok("표가 읽힌다", "LG헬로비전 (037560) · 통신 · 코스피  15회  71.4%" in txt and "상위 10종목이 전체의 100%" in txt, txt)
+ok("표가 읽힌다", "LG헬로비전 (037560) · 중형주 · 통신 · 코스피  15회  71.4%" in txt and "상위 10종목이 전체의 100%" in txt, txt)
 empty = X.ticker_table([], meta, 10)
 ok("자료가 없으면 0 으로", empty["total"] == 0 and "기록이 없습니다" in "\n".join(X._ticker_lines(empty, "[빈]", 10)))
 m = X.load_stock_meta()

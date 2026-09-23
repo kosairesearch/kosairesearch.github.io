@@ -504,9 +504,12 @@ SIZE_ORDER = ("대형주", "중형주", "소형주", "규모 모름")
 
 
 def size_class(market, rank_in_market):
-    big, mid = SIZE_RULE.get(market or "", (100, 300))
     if not rank_in_market:
         return "규모 모름"
+    if market not in SIZE_RULE:
+        # 코넥스 등 규모 지수가 없는 시장은 전부 소형주로 친다 — 실제로 다 작다.
+        return "소형주"
+    big, mid = SIZE_RULE[market]
     return "대형주" if rank_in_market <= big else ("중형주" if rank_in_market <= mid else "소형주")
 
 
