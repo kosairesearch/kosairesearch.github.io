@@ -970,18 +970,28 @@ document.addEventListener('click', function (e) {
   .ph-kicker{font:700 12px var(--font-sans);letter-spacing:.1em;color:var(--fg-3);margin-bottom:8px}
   .page-head h1{margin:0;font-size:clamp(30px,4.4vw,42px);font-weight:800;letter-spacing:-.035em;line-height:1}
   .page-head .sub{margin:14px 0 0;font:400 16px/1.6 var(--font-sans);color:var(--fg-3);max-width:600px;text-wrap:pretty;word-break:keep-all}
+  /* 업종 카드 — 사장이 준 시안대로 (2026-09-23 스테이징)
+     이름 · 화살표 / 시가총액 · 등락률 / 종목 수 / 가는 선 / 주요 종목 셋.
+     시안의 작은 추이 차트는 넣지 않는다(사장 지시). 유리 상자 대신 가는 테두리만
+     두른 판이고, 마우스를 올리면 테두리와 화살표가 밝아진다.
+     글씨(크기·굵기·색)는 전 카드 그대로다. 시장 비중(%)은 시안에 없어 카드에서
+     뺐다 — 업종 상세의 '시장 비중'에는 그대로 있다. */
   .ind-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:22px}
-  .ind-card{display:block;text-decoration:none;color:var(--fg-1);padding:18px;border-radius:var(--radius-lg);transition:transform .12s,box-shadow .15s}
-  .ind-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-2)}
-  .ind-card .ic-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .ind-card{display:block;text-decoration:none;color:var(--fg-1);padding:20px;border:1px solid var(--border-2);border-radius:var(--radius-md);transition:border-color .15s,background .15s}
+  .ind-card:hover{border-color:var(--fg-3);background:rgba(0,0,0,.02)}
+  :root[data-theme="dark"] .ind-card:hover{background:rgba(255,255,255,.03)}
+  .ind-card .ic-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
   .ind-card .ic-name{font:700 18px var(--font-sans);letter-spacing:-.01em}
-  .ind-card .ic-w{font:600 13px var(--font-sans);color:var(--fg-3);font-variant-numeric:tabular-nums}
-  .ind-card .ic-mc{margin-top:10px;font:700 22px var(--font-sans);font-variant-numeric:tabular-nums}
+  .ind-card .ic-arrow{width:16px;height:16px;flex:none;fill:none;stroke:var(--fg-3);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:stroke .15s}
+  .ind-card:hover .ic-arrow{stroke:var(--fg-1)}
+  .ind-card .ic-val{margin-top:10px;display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 10px}
+  .ind-card .ic-mc{font:700 22px var(--font-sans);font-variant-numeric:tabular-nums}
   .ind-card .ic-meta{margin-top:4px;font:500 12.5px var(--font-sans);color:var(--fg-3)}
-  .ind-card .ic-chg{font-weight:700}.ic-chg.up{color:var(--up)}.ic-chg.down{color:var(--down)}.ic-chg.flat{color:var(--flat)}
-  .ind-card .ic-top3{margin-top:12px;font:500 12.5px var(--font-sans);color:var(--fg-2);display:flex;flex-wrap:wrap;gap:6px}
-  .ind-card .ic-top3 span{background:rgba(0,0,0,.05);padding:3px 9px;border-radius:var(--pill)}
-  :root[data-theme="dark"] .ind-card .ic-top3 span{background:rgba(255,255,255,.08)}
+  .ind-card .ic-chg{font:700 12.5px var(--font-sans)}.ic-chg.up{color:var(--up)}.ic-chg.down{color:var(--down)}.ic-chg.flat{color:var(--flat)}
+  .ind-card .ic-arw{font-size:10px}
+  .ind-card .ic-keys{margin-top:14px;padding-top:12px;border-top:1px solid var(--hair)}
+  .ind-card .ic-kl{font:500 12.5px var(--font-sans);color:var(--fg-3)}
+  .ind-card .ic-top3{margin-top:7px;font:500 12.5px var(--font-sans);color:var(--fg-2);display:flex;flex-wrap:wrap;gap:4px 16px}
   .ind-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:var(--border-2);border-radius:var(--radius-lg);overflow:hidden;margin-top:18px}
   .ind-kpi{background:#fff;padding:16px 18px}
   :root[data-theme="dark"] .ind-kpi{background:#15161f}
@@ -1075,7 +1085,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
     "한국 상장사를 업종으로 나눠 시가총액·등락률과 AI 업종 분석을 제공합니다.":"Korean listed companies grouped by industry — market cap, returns, and AI sector analysis.",
     "시가총액 합계":"Total market cap","시장 비중":"Market weight","종목 수":"Stocks","평균 등락률":"Avg. change",
     "업종 개요":"Overview","산업 구조·가치사슬":"Structure & value chain","최근 동향":"Recent trends","향후 전망":"Outlook",
-    "리스크 요인":"Risk factors","업종 내 주요 종목":"Key stocks","AI 업종 분석 준비 중입니다.":"AI sector analysis coming soon.","테마":"Themes",
+    "리스크 요인":"Risk factors","업종 내 주요 종목":"Key stocks","주요 종목":"Key stocks","AI 업종 분석 준비 중입니다.":"AI sector analysis coming soon.","테마":"Themes",
     "분석 참고: 업종 상장사 종합 + 웹 검색":"Source: aggregated listed peers + web search",
     "종목":"Stock","현재가":"Price","등락률":"Change","시가총액":"Market Cap","리포트":"Report"
   });}
@@ -1112,23 +1122,25 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
     return {rows:rows,themeRows:themeRows,total:total,byCat:byCat};
   }
   var app=document.getElementById('indApp');
+  /* 업종 카드 한 장. 업종과 테마가 같은 틀을 쓴다(전에는 두 벌이라 테마 쪽만 비중이 빠져 있었다). */
+  var IC_ARROW='<svg class="ic-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+  function card(r){
+    var d=dir(r.chg), arw=r.chg>0?'\u25b2':r.chg<0?'\u25bc':'\u2013';
+    var tops=r.list.slice(0,3).map(function(s){return '<span>'+esc(tn(s.name))+'</span>';}).join('');
+    return '<a class="ind-card" href="industry.html?sector='+encodeURIComponent(r.sec)+'">'
+      +'<div class="ic-top"><span class="ic-name">'+esc(tn(r.sec))+'</span>'+IC_ARROW+'</div>'
+      +'<div class="ic-val"><span class="ic-mc">'+mcap(r.mc)+'</span><span class="ic-chg '+d+'"><span class="ic-arw">'+arw+'</span> '+pct(r.chg)+'</span></div>'
+      +'<div class="ic-meta">'+(EN()?r.n+' stocks':'\uc885\ubaa9 \uc218 '+r.n+'\uac1c')+'</div>'
+      +'<div class="ic-keys"><div class="ic-kl">'+T('주요 종목')+'</div><div class="ic-top3">'+tops+'</div></div></a>';
+  }
   function renderList(){
     var a=agg();
-    var cards=a.rows.map(function(r){
-      var d=dir(r.chg);
-      var tops=r.list.slice(0,3).map(function(s){return '<span>'+esc(tn(s.name))+'</span>';}).join('');
-      return '<a class="ind-card glass" href="industry.html?sector='+encodeURIComponent(r.sec)+'">'
-        +'<div class="ic-top"><span class="ic-name">'+esc(tn(r.sec))+'</span><span class="ic-w">'+r.w.toFixed(1)+'%</span></div>'
-        +'<div class="ic-mc">'+mcap(r.mc)+'</div>'
-        +'<div class="ic-meta">'+(EN()?r.n+' stocks':r.n+'\uac1c')+' \u00b7 <span class="ic-chg '+d+'">'+pct(r.chg)+'</span></div>'
-        +'<div class="ic-top3">'+tops+'</div></a>';
-    }).join('');
     app.innerHTML='<div class="crumb"><a href="Home.html">'+T('홈')+'</a> / <b>'+T('업종 분석')+'</b></div>'
       +'<div class="page-head"><div class="ph-kicker">INDUSTRIES</div>'
       +'<h1>'+T('업종 분석')+'</h1>'
       +'<p class="sub">'+T('한국 상장사를 업종으로 나눠 시가총액·등락률과 AI 업종 분석을 제공합니다.')+'</p></div>'
-      +'<div class="ind-grid">'+cards+'</div>'
-      +((a.themeRows||[]).length?('<h2 style="margin:38px 0 14px;font:700 18px var(--font-sans);letter-spacing:-.02em;color:var(--fg-2)">'+T('테마')+'</h2><div class="ind-grid">'+a.themeRows.map(function(r){var d=dir(r.chg);var tops=r.list.slice(0,3).map(function(s){return '<span>'+esc(tn(s.name))+'</span>';}).join('');return '<a class="ind-card glass" href="industry.html?sector='+encodeURIComponent(r.sec)+'"><div class="ic-top"><span class="ic-name">'+esc(tn(r.sec))+'</span></div><div class="ic-mc">'+mcap(r.mc)+'</div><div class="ic-meta">'+(EN()?r.n+' stocks':r.n+'개')+' · <span class="ic-chg '+d+'">'+pct(r.chg)+'</span></div><div class="ic-top3">'+tops+'</div></a>';}).join('')+'</div>'):'');
+      +'<div class="ind-grid">'+a.rows.map(card).join('')+'</div>'
+      +((a.themeRows||[]).length?('<h2 style="margin:38px 0 14px;font:700 18px var(--font-sans);letter-spacing:-.02em;color:var(--fg-2)">'+T('테마')+'</h2><div class="ind-grid">'+a.themeRows.map(card).join('')+'</div>'):'');
   }
   function renderDetail(sec){
     var a=agg();
