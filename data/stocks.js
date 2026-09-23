@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-09-24 05:01",
+  "lastUpdated": "2026-09-24 06:51",
   "dataDate": "20260923",
   "stocks": [
     {
@@ -9108,7 +9108,7 @@ window.KOS_LIVE_DATA = {
       "name": "와이즈플래닛컴퍼니",
       "name_en": "",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "미디어·엔터",
       "price": 46300,
       "change": 285.83,
       "volume": 26080671,
@@ -9116,7 +9116,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.4639,
       "shares": 10020030,
       "categories": [
-        "기타"
+        "미디어·엔터"
       ],
       "rank": 506
     },
