@@ -45,7 +45,8 @@ MARK_START = "<!-- BIZ:START · scripts/patch_biz_footer.py 가 넣는다 -->"
 MARK_END = "<!-- BIZ:END -->"
 
 # margin-top 96px — 위의 면책 상자를 뺀 뒤(2026-09-24) 링크와 사업자 정보가 붙어 보여서 18 → 40 → 96 으로 벌렸다(사장: "훨씬 더").
-CSS_BOX = (".biz{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:96px;padding-top:16px;"
+# padding-top 22px — 아래 foot-bottom 의 margin-top(22px)과 같게 해서 사업자 정보가 위·아래 선 한가운데 온다(사장: "약간 위로 올라간 느낌").
+CSS_BOX = (".biz{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:96px;padding-top:22px;"
            "border-top:1px solid var(--border-2);font:500 12px/1.7 var(--font-sans);"
            "color:var(--fg-3)}\n")
 CSS_B = ".biz b{font-weight:600;color:var(--fg-2)}\n"
