@@ -81,16 +81,21 @@ def _write_same_shape(path, doc):
         fp.write(out)
 
 
-def _mcap_off(val, tol=0.02):
-    """리포트 안의 시가총액이 주가×주식수와 어긋나는가.
+def _mcap_off(val):
+    """리포트 안의 시가총액이 주가×주식수와 어긋나는가 — 숫자 삼각대조와 같은 잣대.
 
     9/21 까지는 주식수를 오늘 값으로 바꾸면서 시가총액은 리포트 만들 때 값을
     그대로 뒀다. 그래서 고친 리포트마다 셋이 서로 다른 날 값이 됐고, 숫자
-    삼각대조가 '시총불일치' 로 잡았다(한탑 15% · 프리티 37%). 상장주식수와
-    거래소 시총의 1% 안팎 차이는 원래 있는 것이라 2% 부터 본다."""
+    삼각대조가 '시총불일치' 로 잡았다(한탑 15% · 프리티 37%).
+
+    처음엔 2% 부터 봤는데, 삼각대조는 1% 부터 잡는다(반올림 몫은 봐준다 — 시총은
+    조 단위 넷째 자리, 곧 억원까지만 적혀 있어 작은 회사는 반올림만으로 몇 %
+    가 벌어진다). 잣대가 다르니 1~2% 사이의 것(상상인증권 1.1%)이 영영 남았다.
+    같은 잣대로 본다."""
     m, p, sh = val.get("mcap"), val.get("price"), val.get("shares")
     if not (m and p and sh):
         return False
+    tol = max(0.01, 0.00005 / abs(m))          # 넷째 자리 반올림 반 칸
     return abs(m / (p * sh / 1e12) - 1) > tol
 
 
@@ -211,7 +216,10 @@ def main():
             continue
         ratio = old_sh / new_sh
         if abs(ratio - 1) <= DRIFT:
-            if val.get("shares_patched") and _mcap_off(val):
+            # 오늘 줄 자체가 안 맞는 날(9/22 상상인증권은 주가와 시총이 1.1% 어긋난
+            # 채로 왔다)은 건너뛴다 — 그걸 옮겨 적으면 리포트도 같이 어긋난다.
+            if val.get("shares_patched") and _mcap_off(val) and not _mcap_off(
+                    {"mcap": s.get("mcap"), "price": s.get("price"), "shares": s.get("shares")}):
                 _resync_price(val, s)
                 resynced.append((s.get("name", tk), tk))
                 if APPLY:
