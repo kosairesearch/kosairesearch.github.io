@@ -44,6 +44,8 @@
        메뉴 사이는 14px(글자 사이 40px) — 2px 였을 때 "버튼들이 너무 붙어있어"(사장).
        휴대폰(767px 이하)에서는 전처럼 숨고 메뉴 단추가 대신한다.
      · .nav-spacer 에 최소 높이를 줘 단추가 없는 페이지(랜딩은 테마 단추를 숨긴다)도 높이가 준다.
+     · 헤더 로고는 12px → 14px(휴대폰 11 → 13). Resend 의 로고는 메뉴 글씨보다 조금 크다
+       (2026-09-24 사장: "로고 크기를 살짝만 키워줘 resend 웹사이트처럼"). 푸터 로고는 그대로.
      · 색은 --nav-bar · --nav-line 변수다. 랜딩(항상 남색)은 body 에서 제 값으로 덮는다.
   3. 스테이징 띠(.kos-staging-bar)가 있는 페이지는 그 밑에 붙는다(top: var(--kos-bar-h)).
   4. 푸터(.foot-inner.glass)와 로그인·회원가입 카드(.auth-card.glass)의 유리 상자도 걷는다 — 배경·테두리·
@@ -73,6 +75,8 @@ html .nav{top:var(--kos-bar-h,0px);margin:0;max-width:none;width:auto;min-height
   transition:background-color .25s ease,box-shadow .25s ease}
 html .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--nav-line)}
 html .nav-spacer{min-height:32px}
+html .nav .brand-logo{height:14px}
+@media(max-width:640px){html .nav .brand-logo{height:13px}}
 html .nav-links{position:absolute;left:50%%;top:50%%;transform:translate(-50%%,-50%%);margin-left:0;gap:14px}
 html .nav-links a:hover,html .nav .icon-btn:hover,html:root[data-theme="dark"] .nav-links a:hover,html:root[data-theme="dark"] .nav .icon-btn:hover{background:transparent}
 html .nav-links a.active,html:root[data-theme="dark"] .nav-links a.active{background:transparent}
