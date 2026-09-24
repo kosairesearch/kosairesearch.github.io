@@ -143,9 +143,10 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
    글씨체·글자 크기는 상자 시절 그대로 둔다(사장 지시). 스테이징에서 먼저
    해 보고 같은 날 실사이트로 옮겼다 — 두 쪽이 같다. */
 .tk-head{padding:6px 0 38px}
-.th-id-row{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:16px}
-.th-id-row .pill{font:500 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);padding:5px 10px;border-radius:7px}
-:root[data-theme="dark"] .th-id-row .pill{background:rgba(255,255,255,.08)}
+/* 종목코드·시장·업종 세 칩은 상자 없이 글자만 — 여백·배경을 빼고 사이만 14px 벌린다
+   (2026-09-24 사장: "종목명 위에 저거 3개 박스 없애줘"). */
+.th-id-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+.th-id-row .pill{font:500 13px var(--font-sans);color:var(--fg-2)}
 .th-name{margin:0;font-size:clamp(30px,4.4vw,44px);font-weight:800;letter-spacing:-.035em;line-height:1}
 .th-meta{margin-top:10px;font:400 13px/1.5 var(--font-sans);color:var(--fg-3)}
 /* 관심종목 담기 — 안 담았을 때 눈에 띄게 채운다(어두운 테마 흰색 · 밝은 테마 검정,
