@@ -42,10 +42,10 @@ function injectCss(){
     visibility:visible;background:rgba(247,248,252,.94);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
   :root[data-theme="dark"] .kg-overlay{background:rgba(13,15,23,.94)}
   .kg-overlay.kg-dismiss{background:rgba(15,17,25,.5)}
+  /* 안내 창의 상자(배경·테두리·그림자·흐림)는 뺐다 — 자물쇠·글·단추만 덮개 위에 놓인다
+     (2026-09-24 사장: "로그인해야 된다는 거 뜰 때도 겉에 로그인 박스만 없애줄래"). 폭·여백은 그대로다. */
   .kg-card{width:min(92vw,384px);padding:36px 28px 28px;border-radius:22px;text-align:center;position:relative;
-    background:rgba(255,255,255,.9);border:1px solid rgba(0,0,0,.06);box-shadow:0 24px 64px rgba(15,23,42,.22);
-    -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}
-  :root[data-theme="dark"] .kg-card{background:rgba(28,30,42,.94);border-color:rgba(255,255,255,.08)}
+    background:transparent;border:0;box-shadow:none}
   .kg-ico{width:60px;height:60px;margin:0 auto 16px;border-radius:50%;display:flex;align-items:center;justify-content:center;
     background:linear-gradient(135deg,var(--brand-blue,#2f6df6),var(--brand-cyan,#22b8cf))}
   .kg-ico svg{width:28px;height:28px;stroke:#fff;fill:none;stroke-width:2}
