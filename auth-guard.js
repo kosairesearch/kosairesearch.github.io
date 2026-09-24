@@ -94,8 +94,16 @@ function lockPage(msg){
   ov.id = 'kosGate'; ov.className = 'kg-overlay';
   ov.appendChild(buildCard({ dismissable:false, msg: msg || '이 리포트는 로그인 후 열람하실 수 있습니다.' }));
   document.body.appendChild(ov);
+  reveal();
   if(window.KOSi18n) window.KOSi18n.apply();
 }
+
+/* 안내 창을 띄우는 순간 가림막(html.kos-locked · body 숨김)을 걷는다.
+   전에는 걷지 않아서, 창 뒤가 처음 2.5초는 아무것도 없는 검정(가림막 시한이
+   풀리기 전)이었다가 갑자기 흐린 페이지로 바뀌었다(2026-09-24 사장: "처음에는
+   배경이 불투명했다가 3초 정도 있다가 갑자기 투명해진다"). 창이 페이지를 다
+   덮으므로 먼저 걷어도 보호할 내용이 새지 않는다. */
+function reveal(){ document.documentElement.classList.remove('kos-locked'); }
 
 function lockVerify(user){
   clearGate();
@@ -137,6 +145,7 @@ function lockVerify(user){
   card.querySelector('#kgLogout').addEventListener('click', async function(e){
     e.preventDefault(); try{ await signOut(auth); }catch(e2){} location.href = 'Login.html';
   });
+  reveal();
 }
 
 function showLoginPopup(msg){
