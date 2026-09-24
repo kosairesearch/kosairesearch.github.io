@@ -737,15 +737,17 @@ if(window.KOSi18n) KOSi18n.register({
 <script src="smooth-scroll.js?v=b93f971f"></script>
 <!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 가운데. scripts/patch_header.py 가 넣는다. 손으로 고치지 말 것. -->
 <style id="kosNav">
-:root{--nav-bar:rgba(255,255,255,.72);--nav-line:rgba(0,0,0,.06)}
-:root[data-theme="dark"]{--nav-bar:rgba(14,14,22,.72);--nav-line:rgba(255,255,255,.08)}
-.nav{top:var(--kos-bar-h,0px);margin:0;max-width:none;width:auto;border:0;border-top:12px solid transparent;border-radius:0;
-  padding:10px calc(max(var(--pad),(100% - 1120px)/2) + 12px) 10px calc(max(var(--pad),(100% - 1120px)/2) + 16px);
+:root{--nav-bar:rgba(255,255,255,.58);--nav-line:rgba(0,0,0,.06)}
+:root[data-theme="dark"]{--nav-bar:rgba(14,14,22,.55);--nav-line:rgba(255,255,255,.08)}
+.nav{top:var(--kos-bar-h,0px);margin:0;max-width:none;width:auto;min-height:60px;border:0;border-radius:0;
+  padding:11px calc(max(var(--pad),(100% - 1120px)/2) + 12px) 11px calc(max(var(--pad),(100% - 1120px)/2) + 16px);
   background:transparent;box-shadow:none;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
   transition:background-color .25s ease,box-shadow .25s ease}
 .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--nav-line)}
 .nav-spacer{min-height:32px}
-.nav-links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin-left:0}
+.nav-links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin-left:0;gap:14px}
+.nav-links a:hover,.nav .icon-btn:hover,:root[data-theme="dark"] .nav-links a:hover,:root[data-theme="dark"] .nav .icon-btn:hover{background:transparent}
+.mobile-menu{top:calc(60px + var(--kos-bar-h,0px))}
 </style>
 <script>
 (function(){

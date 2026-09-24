@@ -14,13 +14,18 @@
   2. </body> 앞에 <style id="kosNav"> 와 스크립트 한 덩이를 넣는다(있으면 갈아 끼운다). 맨 아래라
      페이지의 .nav 규칙(스테이징 띠 밑으로 내리는 top 까지)을 다 이긴다.
      · .nav 를 화면 폭으로 펴고, 안쪽 여백을 max(--pad, (100% - 1120px)/2) 로 잡아 로고·단추가
-       전과 같은 자리(1120px 기둥 안)에 놓이게 한다. 위 12px 는 투명한 테두리다 — 배경은 테두리
-       상자까지 칠하므로(background-clip 기본값) 띠가 화면 맨 위부터 덮이면서 로고 자리와
-       헤더 높이(70px)는 그대로다. 그래서 아래 내용도, 휴대폰 메뉴(top 70px)도 안 움직인다.
+       전과 같은 기둥(1120px) 안에 놓이게 한다. 높이는 60px 이고 글자·단추는 그 한가운데다 —
+       처음에는 위 12px 를 투명 테두리로 두고 70px 였는데 띠가 생기면 글자가 아래로 치우쳐
+       보였다("위 아래 간격이 다르잖아", 사장). Resend 처럼 조금 더 위로(글자 중심 38 → 30px).
+       휴대폰 메뉴는 그 밑(60px + 스테이징 띠)에 붙인다.
      · 맨 위에서는 투명. 32px 넘게 내리면 .scrolled — 반투명 배경 + 아래 선(box-shadow 라 높이가
        안 변한다). 흐림(backdrop-filter)은 늘 켜 둔다 — 맨 위에서는 뒤에 바탕뿐이라 표가 안 나고,
-       켰다 껐다 하면 툭 튄다.
+       켰다 껐다 하면 툭 튄다. 배경은 라이트 흰색 .58 · 다크 #0e0e16 .55 — .72 로 했더니
+       "박스가 너무 진해, Resend 처럼 조금만 더 투명하게"(사장).
+     · 메뉴 글자와 아이콘 단추에 마우스를 올리면 네모 상자 없이 글자만 밝아진다("호버했을 때
+       생기는 네모 박스 없애줘. 글씨에 빛만 들어오게", 사장). 지금 페이지를 알리는 .active 상자는 둔다.
      · .nav-links 는 헤더 가운데에 절대 배치 — 로고·단추 폭과 상관없이 화면 가운데(Resend 처럼).
+       메뉴 사이는 14px(글자 사이 40px) — 2px 였을 때 "버튼들이 너무 붙어있어"(사장).
        휴대폰(767px 이하)에서는 전처럼 숨고 메뉴 단추가 대신한다.
      · .nav-spacer 에 최소 높이를 줘 단추가 없는 페이지(랜딩은 테마 단추를 숨긴다)도 높이가 준다.
      · 색은 --nav-bar · --nav-line 변수다. 랜딩(항상 남색)은 body 에서 제 값으로 덮는다.
@@ -36,15 +41,17 @@ ROOT = Path(__file__).resolve().parent.parent
 MARK = 'id="kosNav"'
 BLOCK = '''<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 가운데. scripts/patch_header.py 가 넣는다. 손으로 고치지 말 것. -->
 <style id="kosNav">
-:root{--nav-bar:rgba(255,255,255,.72);--nav-line:rgba(0,0,0,.06)}
-:root[data-theme="dark"]{--nav-bar:rgba(14,14,22,.72);--nav-line:rgba(255,255,255,.08)}
-.nav{top:var(--kos-bar-h,0px);margin:0;max-width:none;width:auto;border:0;border-top:12px solid transparent;border-radius:0;
-  padding:10px calc(max(var(--pad),(100% - 1120px)/2) + 12px) 10px calc(max(var(--pad),(100% - 1120px)/2) + 16px);
+:root{--nav-bar:rgba(255,255,255,.58);--nav-line:rgba(0,0,0,.06)}
+:root[data-theme="dark"]{--nav-bar:rgba(14,14,22,.55);--nav-line:rgba(255,255,255,.08)}
+.nav{top:var(--kos-bar-h,0px);margin:0;max-width:none;width:auto;min-height:60px;border:0;border-radius:0;
+  padding:11px calc(max(var(--pad),(100% - 1120px)/2) + 12px) 11px calc(max(var(--pad),(100% - 1120px)/2) + 16px);
   background:transparent;box-shadow:none;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
   transition:background-color .25s ease,box-shadow .25s ease}
 .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--nav-line)}
 .nav-spacer{min-height:32px}
-.nav-links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin-left:0}
+.nav-links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin-left:0;gap:14px}
+.nav-links a:hover,.nav .icon-btn:hover,:root[data-theme="dark"] .nav-links a:hover,:root[data-theme="dark"] .nav .icon-btn:hover{background:transparent}
+.mobile-menu{top:calc(60px + var(--kos-bar-h,0px))}
 </style>
 <script>
 (function(){
