@@ -39,12 +39,12 @@ function injectCss(){
   var st = document.createElement('style'); st.id = 'kosGateCss';
   st.textContent = `
   .kg-overlay{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;padding:24px;
-    visibility:visible;background:rgba(247,248,252,.94);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+    visibility:visible;background:rgba(249,248,246,.94);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
   :root[data-theme="dark"] .kg-overlay{background:rgba(13,15,23,.94)}
   /* 관심종목 추가 팝업(닫을 수 있는 쪽)의 덮개 — 가림창과 같은 방식으로 테마를 따르되 뒤가 살짝 비치게 88%.
      전에는 검정 50% 고정이라 라이트 모드에서 흰 페이지가 회색으로 흐려지고, 상자를 뺀 글자가 그 위에
      떠 보였다(2026-09-24 사장). 다크 규칙은 :root[data-theme] .kg-overlay 보다 특이도가 높아야 이긴다. */
-  .kg-overlay.kg-dismiss{background:rgba(247,248,252,.88)}
+  .kg-overlay.kg-dismiss{background:rgba(249,248,246,.88)}
   :root[data-theme="dark"] .kg-overlay.kg-dismiss{background:rgba(13,15,23,.88)}
   /* 안내 창의 상자(배경·테두리·그림자·흐림)는 뺐다 — 자물쇠·글·단추만 덮개 위에 놓인다
      (2026-09-24 사장: "로그인해야 된다는 거 뜰 때도 겉에 로그인 박스만 없애줄래"). 폭·여백은 그대로다. */

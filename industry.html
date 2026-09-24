@@ -52,7 +52,7 @@
 /* ===== shared tokens ===== */
 :root{
   --brand-blue:rgb(13,105,212);--brand-cyan:rgb(95,197,255);
-  --bg-1:rgb(242,243,250);--fg-1:rgb(0,0,0);--fg-2:rgba(0,0,0,0.7);--fg-3:rgba(0,0,0,0.5);
+  --bg-1:rgb(249,248,246);--fg-1:rgb(20,20,20);--fg-2:rgba(0,0,0,0.7);--fg-3:rgba(0,0,0,0.5);
   --border-2:rgba(0,0,0,0.1);--hair:rgba(0,0,0,0.07);
   --up:#e5383b;--down:rgb(13,105,212);--flat:rgba(0,0,0,0.45);
   --up-soft:rgba(229,56,59,0.10);--down-soft:rgba(13,105,212,0.10);
@@ -78,10 +78,10 @@
 [data-theme="dark"] ::selection{background:rgba(255,255,255,.24)}
 [data-theme="dark"] ::-moz-selection{background:rgba(255,255,255,.24)}
 html{scroll-behavior:smooth;scrollbar-gutter:stable}
-body{margin:0;font-family:var(--font-sans);color:var(--fg-1);background:#f2f3f5;
+body{margin:0;font-family:var(--font-sans);color:var(--fg-1);background:#f9f8f6;
   -webkit-font-smoothing:antialiased;min-height:100vh;position:relative;font-variant-numeric:tabular-nums}
 body::after{content:"";position:fixed;inset:0;z-index:-2;
-  background:#f2f3f5;background-attachment:fixed}
+  background:#f9f8f6;background-attachment:fixed}
 :root[data-theme="dark"] body{background:#0e0e16}
 :root[data-theme="dark"] body::after{
   background:#0d0e18}
@@ -142,7 +142,7 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
   padding:7px 14px;border-radius:var(--pill);cursor:pointer;white-space:nowrap;transition:.15s;box-shadow:var(--shadow-1)}
 .sw-chip:hover{color:var(--fg-1);transform:translateY(-1px)}
 :root[data-theme="dark"] .sw-chip{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12)}
-.sw-chip.active{background:#000;color:#fff;border-color:#000}
+.sw-chip.active{background:#141414;color:#fff;border-color:#141414}
 :root[data-theme="dark"] .sw-chip.active{background:#fff;color:#000;border-color:#fff}
 .sw-chip.more{color:var(--fg-2);border:1px dashed var(--border-2);background:rgba(255,255,255,.4);box-shadow:none}
 .sw-chip.more:hover{color:var(--fg-1);border-color:var(--fg-3)}
@@ -253,7 +253,7 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 .stk-tabs{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
 .stk-tab{font:500 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);border:0;padding:8px 14px;border-radius:var(--pill);cursor:pointer;transition:.15s}
 .stk-tab:hover{color:var(--fg-1)}
-.stk-tab.active{background:#000;color:#fff}
+.stk-tab.active{background:#141414;color:#fff}
 :root[data-theme="dark"] .stk-tab{background:rgba(255,255,255,.08)}
 :root[data-theme="dark"] .stk-tab.active{background:#fff;color:#000}
 .stk-tabs .right{margin-left:auto;font:500 13px var(--font-sans);color:var(--fg-3)}
@@ -1234,7 +1234,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
   if(window.KOSi18n)KOSi18n.register({},render);
 })();
 </script>
-<script type="module" src="auth-guard.js?v=25fb1c74"></script>
+<script type="module" src="auth-guard.js?v=23df674c"></script>
 <script type="module" src="auth-state.js?v=b2e09b3c"></script>
 <!-- 부드러운 스크롤. 안 뜨거나 손가락 화면이면 스스로 비켜선다 —
      smooth-scroll.js 맨 위 설명 참고. 빼려면 이 두 줄만 지우면 된다. -->

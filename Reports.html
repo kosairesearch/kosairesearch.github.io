@@ -33,7 +33,7 @@
 @font-face{font-family:"Pretendard";font-weight:800;font-style:normal;font-display:swap;src:url("fonts/Pretendard-ExtraBold.woff2") format("woff2"), url("fonts/Pretendard-ExtraBold.otf") format("opentype")}
 :root{
   --brand-blue:rgb(13,105,212);--brand-cyan:rgb(95,197,255);
-  --bg-1:rgb(242,243,250);--fg-1:rgb(0,0,0);--fg-2:rgba(0,0,0,0.7);--fg-3:rgba(0,0,0,0.5);
+  --bg-1:rgb(249,248,246);--fg-1:rgb(20,20,20);--fg-2:rgba(0,0,0,0.7);--fg-3:rgba(0,0,0,0.5);
   --border-2:rgba(0,0,0,0.1);--hair:rgba(0,0,0,0.07);
   --up:#e5383b;--down:rgb(13,105,212);--flat:rgba(0,0,0,0.45);
   --shadow-1:0 1px 0 rgba(0,0,0,.05),0 4px 4px rgba(0,0,0,.05);
@@ -57,9 +57,9 @@
 [data-theme="dark"] ::selection{background:rgba(255,255,255,.24)}
 [data-theme="dark"] ::-moz-selection{background:rgba(255,255,255,.24)}
 html{scroll-behavior:smooth;scrollbar-gutter:stable}
-body{margin:0;font-family:var(--font-sans);color:var(--fg-1);background:#f2f3f5;-webkit-font-smoothing:antialiased;min-height:100vh;position:relative;font-variant-numeric:tabular-nums}
+body{margin:0;font-family:var(--font-sans);color:var(--fg-1);background:#f9f8f6;-webkit-font-smoothing:antialiased;min-height:100vh;position:relative;font-variant-numeric:tabular-nums}
 body::after{content:"";position:fixed;inset:0;z-index:-2;
-  background:#f2f3f5;background-attachment:fixed}
+  background:#f9f8f6;background-attachment:fixed}
 :root[data-theme="dark"] body{background:#0e0e16}
 :root[data-theme="dark"] body::after{
   background:#0d0e18}
@@ -69,7 +69,7 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 :root[data-theme="dark"] .glass{background:rgba(28,30,42,0.62);border-color:rgba(255,255,255,0.10);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.08)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 14px/1 var(--font-sans);border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s,filter .15s,background .15s;white-space:nowrap}
 .btn:active{transform:scale(.98)}
-.btn-primary{background:#000;color:#fff;padding:11px 18px;box-shadow:var(--shadow-1)}
+.btn-primary{background:#141414;color:#fff;padding:11px 18px;box-shadow:var(--shadow-1)}
 :root[data-theme="dark"] .btn-primary{background:#fff;color:#000}
 .btn-soft{background:rgba(0,0,0,.05);color:var(--fg-1);padding:11px 18px;border:1px solid var(--border-2)}
 .btn-soft:hover{background:rgba(0,0,0,.09)}
@@ -224,7 +224,7 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
    기본 화면은 그대로다. 필터를 걸지 않으면 예전과 한 픽셀도 다르지 않다.
    숫자 입력칸은 '필터 추가' 뒤에 숨겨 두고, 처음 오는 사람에게는 테마
    버튼(저PER 가치주 · 고배당주 …)만 보이게 했다. */
-.add-filter{display:inline-flex;align-items:center;gap:7px;font:600 14px var(--font-sans);color:#fff;background:#000;
+.add-filter{display:inline-flex;align-items:center;gap:7px;font:600 14px var(--font-sans);color:#fff;background:#141414;
   border:0;padding:11px 16px 11px 14px;border-radius:var(--pill);cursor:pointer;box-shadow:var(--shadow-1);transition:transform .12s,filter .15s}
 .add-filter:hover{filter:brightness(1.1)}.add-filter:active{transform:scale(.98)}
 :root[data-theme="dark"] .add-filter{background:#fff;color:#000}
@@ -293,7 +293,7 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 .check .box{width:18px;height:18px;border:1.5px solid var(--border-2);border-radius:6px;flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;transition:.12s}
 .check .box svg{width:12px;height:12px;color:#fff;opacity:0}
 .check.on{color:var(--fg-1);font-weight:600}
-.check.on .box{background:#000;border-color:#000}.check.on .box svg{opacity:1}
+.check.on .box{background:#141414;border-color:#141414}.check.on .box svg{opacity:1}
 :root[data-theme="dark"] .check.on .box{background:#fff;border-color:#fff}
 :root[data-theme="dark"] .check.on .box svg{color:#000}
 .check .count{margin-left:auto;font:500 12px var(--font-sans);color:var(--fg-3)}
@@ -1275,7 +1275,7 @@ const REPORTS_DICT={
 };
 if(window.KOSi18n) KOSi18n.register(REPORTS_DICT, render);
 </script>
-<script type="module" src="auth-guard.js?v=25fb1c74"></script>
+<script type="module" src="auth-guard.js?v=23df674c"></script>
 <script type="module" src="watchlist.js?v=5263582c"></script>
 <script type="module" src="auth-state.js?v=b2e09b3c"></script>
 <!-- 부드러운 스크롤. 안 뜨거나 손가락 화면이면 스스로 비켜선다 —
