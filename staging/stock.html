@@ -1015,7 +1015,7 @@ document.addEventListener('click', function (e) {
 
 
 <!-- NAV -->
-<nav class="nav glass" data-screen-label="Ticker · Nav">
+<nav class="nav" data-screen-label="Ticker · Nav">
   <a class="brand" href="./"><img class="brand-logo brand-logo--light" src="../assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="../assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a>
   <div class="nav-links">
     <a href="Home.html">홈</a>
@@ -1974,5 +1974,25 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
      smooth-scroll.js 맨 위 설명 참고. 빼려면 이 두 줄만 지우면 된다. -->
 <script src="lenis.js?v=3a0cb7e8"></script>
 <script src="smooth-scroll.js?v=b93f971f"></script>
+<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 가운데. scripts/patch_header.py 가 넣는다. 손으로 고치지 말 것. -->
+<style id="kosNav">
+:root{--nav-bar:rgba(255,255,255,.72);--nav-line:rgba(0,0,0,.06)}
+:root[data-theme="dark"]{--nav-bar:rgba(14,14,22,.72);--nav-line:rgba(255,255,255,.08)}
+.nav{top:var(--kos-bar-h,0px);margin:0;max-width:none;width:auto;border:0;border-top:12px solid transparent;border-radius:0;
+  padding:10px calc(max(var(--pad),(100% - 1120px)/2) + 12px) 10px calc(max(var(--pad),(100% - 1120px)/2) + 16px);
+  background:transparent;box-shadow:none;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+  transition:background-color .25s ease,box-shadow .25s ease}
+.nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--nav-line)}
+.nav-spacer{min-height:32px}
+.nav-links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin-left:0}
+</style>
+<script>
+(function(){
+  var nav=document.querySelector('.nav'); if(!nav) return; var tick=false;
+  function upd(){ tick=false; nav.classList.toggle('scrolled',(window.scrollY||document.documentElement.scrollTop)>32); }
+  addEventListener('scroll',function(){ if(!tick){ tick=true; requestAnimationFrame(upd); } },{passive:true});
+  upd();
+})();
+</script>
 </body>
 </html>

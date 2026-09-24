@@ -14,6 +14,8 @@
   · 맨 위 빨간 STAGING 띠와 그 스크립트
   · 메뉴·모바일 메뉴·푸터의 '멤버십'(pricing.html)
   · 자바스크립트 ?v= 해시 — 스테이징 파일 기준으로 다시 찍는다(stamp_assets 규칙)
+  · 헤더 — 상자 없이·내리면 띠·메뉴 가운데(patch_header 규칙). 실사이트가 같은 헤더가 되면
+    저절로 같은 결과가 나온다(두 번 넣지 않는다).
 
 얹을 것 중 head 두 줄과 띠는 지금의 staging/brief.html 에서 떼어 온다. 자리를
 하나라도 못 찾으면 아무것도 쓰지 않고 멈춘다 — 반쯤 바뀐 페이지를 남기지 않는다.
@@ -25,6 +27,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import stamp_assets  # noqa: E402  같은 규칙으로 ?v= 를 찍는다
+import patch_header  # noqa: E402  같은 규칙으로 헤더를 넣는다
 
 ROOT = Path(__file__).resolve().parent.parent
 LIVE = ROOT / "brief.html"
@@ -74,6 +77,7 @@ def build(live, staging):
     js = sorted((ROOT / "staging").glob("*.js"))
     hashes = {p.name: stamp_assets.digest(p.read_text(encoding="utf-8")) for p in js}
     out, _ = stamp_assets.stamp(out, hashes)
+    out = patch_header.apply(out)
     return out
 
 
