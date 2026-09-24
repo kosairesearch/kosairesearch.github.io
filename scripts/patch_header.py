@@ -30,7 +30,10 @@
        큰 스크립트(data/stocks.js)를 받는 사이에 답이 와서 첫 그림부터 제 글꼴이다. 주소는 페이지의
        @font-face 에서 읽는다(실사이트 fonts/ · 스테이징 ../fonts/).
      · .nav 를 화면 폭으로 펴고, 안쪽 여백을 max(--pad, (100% - 1120px)/2) 로 잡아 로고·단추가
-       전과 같은 기둥(1120px) 안에 놓이게 한다. 높이는 60px 이고 글자·단추는 그 한가운데다 —
+       전과 같은 기둥(1120px) 안에 놓이게 한다. 왼쪽은 딱 그 값이라 로고의 첫 획이 본문 왼쪽 선(빵부스러기·
+       제목)과 같은 x 에 선다 — 전에는 옛 상자의 안쪽 여백 16px 가 남아 로고가 본문보다 16px
+       오른쪽에 있었다(2026-09-24 사장: "모바일에서 로고가 왼쪽으로 더 붙어야, 정렬이 안 맞아").
+       오른쪽은 +12px 그대로다(아이콘 단추 38px 안에 그림이 가운데라 단추 상자 기준이다). 높이는 60px 이고 글자·단추는 그 한가운데다 —
        처음에는 위 12px 를 투명 테두리로 두고 70px 였는데 띠가 생기면 글자가 아래로 치우쳐
        보였다("위 아래 간격이 다르잖아", 사장). Resend 처럼 조금 더 위로(글자 중심 38 → 30px).
        휴대폰 메뉴는 그 밑(60px + 스테이징 띠)에 붙인다.
@@ -74,7 +77,7 @@ HEAD = '''<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 �
 :root{--nav-bar:rgba(255,255,255,.58);--nav-line:rgba(0,0,0,.06)}
 :root[data-theme="dark"]{--nav-bar:rgba(14,14,22,.55);--nav-line:rgba(255,255,255,.08)}
 html .nav{top:var(--kos-bar-h,0px);margin:0;max-width:none;width:auto;min-height:60px;border:0;border-radius:0;
-  padding:11px calc(max(var(--pad),(100%% - 1120px)/2) + 12px) 11px calc(max(var(--pad),(100%% - 1120px)/2) + 16px);
+  padding:11px calc(max(var(--pad),(100%% - 1120px)/2) + 12px) 11px max(var(--pad),(100%% - 1120px)/2);
   background:transparent;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;
   transition:background-color .25s ease,box-shadow .25s ease,-webkit-backdrop-filter .25s ease,backdrop-filter .25s ease}
 html .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--nav-line);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
