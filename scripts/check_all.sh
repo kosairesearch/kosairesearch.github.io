@@ -48,6 +48,7 @@ run "SEO·구조"      python3 scripts/check_seo.py
 # 있었지만 아무도 안 돌려서 스테이징 15개가 [상호]·[000-00-00000]
 # 같은 자리표시자를 달고 오래 서 있었다. 어긋나면 여기서 막는다.
 run "사업자 정보"   python3 scripts/patch_biz_footer.py --check
+run "헤더"          python3 scripts/patch_header.py staging --check
 # 업종 분석은 분기에 한 번만 돈다. 무엇이 어긋나도 다음 분기까지 아무도
 # 모르므로(실제로 7·8월 예정 실행이 아무것도 안 하고 성공으로 끝났다)
 # 요금 창구·일정·화면 안내가 서로 맞는지 여기서 본다.

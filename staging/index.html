@@ -481,18 +481,9 @@ KOSi18n.register({
 <style>
 /* landing — Resend풍 다크 스튜디오 (이 페이지는 항상 다크) */
 #themeBtn{display:none}
-/* 헤더 — Resend 처럼 맨 위에서는 상자 없이 로고·메뉴만 바탕 위에 놓이고, 조금 내리면 화면 폭
-   전체의 흐린 띠가 생긴다(2026-09-24 사장 지시). 스테이징만이다. 다른 페이지는 유리 상자 그대로.
-   · 마크업에서 .glass 를 뗐다 — .nav 자체는 늘 투명하고 자리(top 12px · 최대 1120px)는 전과 같다.
-   · 띠는 .nav::before 하나다. 뷰포트 기준(fixed)으로 맨 위에 붙여 가로를 다 덮는다 — 100vw 로
-     늘이면 세로 스크롤바 폭만큼 가로 스크롤이 생긴다. fixed 의 기준이 .nav 가 되지 않도록 .nav 에는
-     backdrop-filter 를 두지 않는다(흐림은 띠에만).
-   · 높이 70px = 위 여백 12 + 헤더 58(단추 38 + 안쪽 여백 20). 스크롤 32px 부터 .scrolled 가 붙고
-     (아래 스크립트) 투명도만 바뀐다. */
-.nav::before{content:"";position:fixed;left:0;right:0;top:0;height:70px;z-index:-1;pointer-events:none;
-  background:rgba(4,6,15,.68);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
-  border-bottom:1px solid rgba(255,255,255,.08);opacity:0;transition:opacity .25s ease}
-.nav.scrolled::before{opacity:1}
+/* 헤더 띠 색 — 공통 헤더(scripts/patch_header.py 가 맨 아래에 넣는다)는 다크에서 #0e0e16 계열을
+   쓰는데 랜딩 바탕은 남색이라 body 에서 제 값으로 덮는다(:root 보다 가까워 이긴다). */
+body{--nav-bar:rgba(4,6,15,.68);--nav-line:rgba(255,255,255,.08)}
 .lp-bg{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-3;background:
   radial-gradient(ellipse 85% 65% at 62% 40%, #0c1424 0%, #060a14 55%, #02030a 100%)}
 .lp-bg canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
@@ -666,13 +657,6 @@ html.lenis,html.lenis body{height:auto}
 const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
 menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
 mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.remove('open')));
-/* 헤더 띠 — 32px 넘게 내리면 .scrolled (위 .nav::before 참고). 프레임마다 한 번만 본다. */
-{
-  const nav=document.querySelector('.nav'); let tick=false;
-  const upd=()=>{ tick=false; nav.classList.toggle('scrolled',(window.scrollY||document.documentElement.scrollTop)>32); };
-  addEventListener('scroll',()=>{ if(!tick){ tick=true; requestAnimationFrame(upd); } },{passive:true});
-  upd();
-}
 const root=document.documentElement,themeBtn=document.getElementById('themeBtn');
 const sunSVG='<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>';
 const moonSVG='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
@@ -1758,5 +1742,25 @@ try{
      smooth-scroll.js 맨 위 설명 참고. 빼려면 이 두 줄만 지우면 된다. -->
 <script src="lenis.js?v=3a0cb7e8"></script>
 <script src="smooth-scroll.js?v=b93f971f"></script>
+<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 가운데. scripts/patch_header.py 가 넣는다. 손으로 고치지 말 것. -->
+<style id="kosNav">
+:root{--nav-bar:rgba(255,255,255,.72);--nav-line:rgba(0,0,0,.06)}
+:root[data-theme="dark"]{--nav-bar:rgba(14,14,22,.72);--nav-line:rgba(255,255,255,.08)}
+.nav{top:var(--kos-bar-h,0px);margin:0;max-width:none;width:auto;border:0;border-top:12px solid transparent;border-radius:0;
+  padding:10px calc(max(var(--pad),(100% - 1120px)/2) + 12px) 10px calc(max(var(--pad),(100% - 1120px)/2) + 16px);
+  background:transparent;box-shadow:none;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+  transition:background-color .25s ease,box-shadow .25s ease}
+.nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--nav-line)}
+.nav-spacer{min-height:32px}
+.nav-links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin-left:0}
+</style>
+<script>
+(function(){
+  var nav=document.querySelector('.nav'); if(!nav) return; var tick=false;
+  function upd(){ tick=false; nav.classList.toggle('scrolled',(window.scrollY||document.documentElement.scrollTop)>32); }
+  addEventListener('scroll',function(){ if(!tick){ tick=true; requestAnimationFrame(upd); } },{passive:true});
+  upd();
+})();
+</script>
 </body>
 </html>
