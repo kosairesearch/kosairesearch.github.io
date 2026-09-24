@@ -44,7 +44,8 @@ LABEL_EN = {
 MARK_START = "<!-- BIZ:START · scripts/patch_biz_footer.py 가 넣는다 -->"
 MARK_END = "<!-- BIZ:END -->"
 
-CSS_BOX = (".biz{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;padding-top:16px;"
+# margin-top 40px — 위의 면책 상자를 뺀 뒤(2026-09-24) 링크와 사업자 정보가 붙어 보여서 18 → 40 으로 벌렸다(사장).
+CSS_BOX = (".biz{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:40px;padding-top:16px;"
            "border-top:1px solid var(--border-2);font:500 12px/1.7 var(--font-sans);"
            "color:var(--fg-3)}\n")
 CSS_B = ".biz b{font-weight:600;color:var(--fg-2)}\n"
