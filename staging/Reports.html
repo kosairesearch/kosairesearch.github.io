@@ -658,6 +658,8 @@ html .nav{top:var(--kos-bar-h,0px);margin:0;max-width:none;width:auto;min-height
   transition:background-color .25s ease,box-shadow .25s ease}
 html .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--nav-line)}
 html .nav-spacer{min-height:32px}
+html .nav .brand-logo{height:14px}
+@media(max-width:640px){html .nav .brand-logo{height:13px}}
 html .nav-links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin-left:0;gap:14px}
 html .nav-links a:hover,html .nav .icon-btn:hover,html:root[data-theme="dark"] .nav-links a:hover,html:root[data-theme="dark"] .nav .icon-btn:hover{background:transparent}
 html .nav-links a.active,html:root[data-theme="dark"] .nav-links a.active{background:transparent}
