@@ -359,11 +359,10 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 .pager{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px}
 .pager .pinfo{font:500 13px var(--font-sans);color:var(--fg-3)}
 .pager .pctl{display:flex;gap:4px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
-.pager .pctl button{min-width:34px;height:34px;padding:0 10px;border:0;border-radius:8px;cursor:pointer;font:600 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);transition:.12s}
+/* 페이지 번호·화살표는 상자 없이 글자만 — 지금 페이지는 밝고 굵게 (2026-09-24 사장: "화살표랑 숫자를 감싸고 있는 박스들 없애줘"). */
+.pager .pctl button{min-width:34px;height:34px;padding:0 10px;border:0;border-radius:8px;cursor:pointer;font:600 13px var(--font-sans);color:var(--fg-2);background:transparent;transition:.12s}
 .pager .pctl button:hover:not(:disabled){color:var(--fg-1)}
-.pager .pctl button.active{background:#000;color:#fff}
-:root[data-theme="dark"] .pager .pctl button{background:rgba(255,255,255,.08)}
-:root[data-theme="dark"] .pager .pctl button.active{background:#fff;color:#000}
+.pager .pctl button.active{color:var(--fg-1);font-weight:800}
 .pager .pctl button:disabled{opacity:.4;cursor:default}
 .pager .pctl .gap{color:var(--fg-3);padding:0 2px}
 .pager .pctl .pell{min-width:20px;text-align:center;color:var(--fg-3);font:600 13px var(--font-sans);align-self:center}
