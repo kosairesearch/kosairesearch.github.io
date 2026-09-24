@@ -51,8 +51,8 @@
   --brand-violet:rgb(151,71,255);
   --brand-cyan:rgb(95,197,255);
 
-  --bg-1:rgb(242,243,250);
-  --fg-1:rgb(0,0,0);
+  --bg-1:rgb(249,248,246);
+  --fg-1:rgb(20,20,20);
   --fg-2:rgba(0,0,0,0.7);
   --fg-3:rgba(0,0,0,0.5);
   --border-2:rgba(0,0,0,0.1);
@@ -100,7 +100,7 @@ body{
   margin:0;
   font-family:var(--font-sans);
   color:var(--fg-1);
-  background:#f2f3f5;
+  background:#f9f8f6;
   -webkit-font-smoothing:antialiased;
   min-height:100vh;
   position:relative;
@@ -108,7 +108,7 @@ body{
 /* signature wallpaper — cooler/finance variant */
 body::after{
   content:"";position:fixed;inset:0;z-index:-2;
-  background:#f2f3f5;
+  background:#f9f8f6;
   background-attachment:fixed;
 }
 :root[data-theme="dark"] body{background:#0e0e16}
@@ -142,10 +142,10 @@ body::after{
 .btn{display:inline-flex;align-items:center;gap:6px;font:600 14px/1 var(--font-sans);
   border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s ease,filter .15s ease,background .15s ease;white-space:nowrap}
 .btn:active{transform:scale(.98)}
-.btn-primary{background:#000;color:#fff;padding:10px 16px;box-shadow:var(--shadow-1)}
+.btn-primary{background:#141414;color:#fff;padding:10px 16px;box-shadow:var(--shadow-1)}
 :root[data-theme="dark"] .btn-primary{background:#fff;color:#000}
 .search-go{height:44px;flex:0 0 auto;padding:0 24px;border-radius:var(--pill);border:0;cursor:pointer;
-  display:inline-flex;align-items:center;justify-content:center;background:#000;color:#fff;
+  display:inline-flex;align-items:center;justify-content:center;background:#141414;color:#fff;
   font:600 16px var(--font-sans);box-shadow:var(--shadow-1);transition:transform .12s ease,filter .15s ease}
 .search-go:hover{filter:brightness(1.12)}
 .search-go:active{transform:scale(.96)}
@@ -326,7 +326,7 @@ section.block{padding:36px 0}
 .tab:hover{transform:translateY(-1px);color:var(--fg-1)}
 .tab-more{border-style:dashed;color:var(--fg-3);box-shadow:none}
 :root[data-theme="dark"] .tab{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12)}
-.tab.active{background:#000;color:#fff;border-color:#000}
+.tab.active{background:#141414;color:#fff;border-color:#141414}
 :root[data-theme="dark"] .tab.active{background:#fff;color:#000;border-color:#fff}
 
 .mover-row{overflow:hidden;padding:4px 4px 16px;cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none}

@@ -55,7 +55,7 @@
 
 :root{
   --brand-blue:rgb(13,105,212);--brand-cyan:rgb(95,197,255);
-  --bg-1:rgb(242,243,250);--fg-1:rgb(0,0,0);--fg-2:rgba(0,0,0,0.7);--fg-3:rgba(0,0,0,0.5);
+  --bg-1:rgb(249,248,246);--fg-1:rgb(20,20,20);--fg-2:rgba(0,0,0,0.7);--fg-3:rgba(0,0,0,0.5);
   --border-2:rgba(0,0,0,0.1);--hair:rgba(0,0,0,0.07);
   --up:#e5383b;--down:rgb(13,105,212);--flat:rgba(0,0,0,0.45);
   --up-soft:rgba(229,56,59,0.09);--down-soft:rgba(13,105,212,0.09);
@@ -83,10 +83,10 @@
 [data-theme="dark"] ::selection{background:rgba(255,255,255,.24)}
 [data-theme="dark"] ::-moz-selection{background:rgba(255,255,255,.24)}
 html{scroll-behavior:smooth;scrollbar-gutter:stable;overflow-x:clip}
-body{margin:0;font-family:var(--font-sans);color:var(--fg-1);background:#f2f3f5;
+body{margin:0;font-family:var(--font-sans);color:var(--fg-1);background:#f9f8f6;
   -webkit-font-smoothing:antialiased;min-height:100vh;position:relative;font-variant-numeric:tabular-nums}
 body::after{content:"";position:fixed;inset:0;z-index:-2;
-  background:#f2f3f5;background-attachment:fixed}
+  background:#f9f8f6;background-attachment:fixed}
 :root[data-theme="dark"] body{background:#0e0e16}
 :root[data-theme="dark"] body::after{
   background:#0d0e18}
@@ -102,7 +102,7 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
 .btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 14px/1 var(--font-sans);
   border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s,filter .15s,background .15s;white-space:nowrap}
 .btn:active{transform:scale(.98)}
-.btn-primary{background:#000;color:#fff;padding:11px 16px;box-shadow:var(--shadow-1)}
+.btn-primary{background:#141414;color:#fff;padding:11px 16px;box-shadow:var(--shadow-1)}
 :root[data-theme="dark"] .btn-primary{background:#fff;color:#000}
 .btn-soft{background:rgba(0,0,0,.05);color:var(--fg-1);padding:10px 14px;border:1px solid var(--border-2)}
 .btn-soft:hover{background:rgba(0,0,0,.09)}
@@ -155,7 +155,7 @@ body::after{content:"";position:fixed;inset:0;z-index:-2;
    글자색은 테마마다 적는다 — --bg-1 은 밝은 테마에만 있어서 그걸 쓰면
    어두운 테마에서 흰 바탕에 흰 글자가 된다. */
 .watch-btn{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font:600 13px var(--font-sans);white-space:nowrap;
-  color:#fff;background:#000;border:1px solid #000;padding:10px 16px 10px 13px;border-radius:var(--radius-sm);cursor:pointer;
+  color:#fff;background:#141414;border:1px solid #141414;padding:10px 16px 10px 13px;border-radius:var(--radius-sm);cursor:pointer;
   box-shadow:var(--shadow-1);transition:filter .15s,border-color .15s}
 :root[data-theme="dark"] .watch-btn{color:#17171c;background:linear-gradient(180deg,#fff,#e8e8ed);border-color:#fff}
 .watch-btn:hover{filter:brightness(.92)}
@@ -325,7 +325,7 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 .fin-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
 .fin-tab{font:600 13px var(--font-sans);color:var(--fg-2);background:rgba(0,0,0,.05);border:0;padding:9px 15px;border-radius:var(--pill);cursor:pointer;transition:.15s}
 .fin-tab:hover{color:var(--fg-1)}
-.fin-tab.active{background:#000;color:#fff}
+.fin-tab.active{background:#141414;color:#fff}
 :root[data-theme="dark"] .fin-tab{background:rgba(255,255,255,.08)}
 :root[data-theme="dark"] .fin-tab.active{background:#fff;color:#000}
 
@@ -1983,7 +1983,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
 
 </script>
 <script type="module" src="paywall.js?v=01294faf"></script>
-<script type="module" src="auth-guard.js?v=25fb1c74"></script>
+<script type="module" src="auth-guard.js?v=23df674c"></script>
 <script type="module" src="watchlist.js?v=5263582c"></script>
 <script type="module" src="auth-state.js?v=3c52a83a"></script>
 <!-- 부드러운 스크롤. 안 뜨거나 손가락 화면이면 스스로 비켜선다 —
