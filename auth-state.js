@@ -159,10 +159,11 @@ function injectCss(){
   const st = document.createElement('style'); st.id = 'navAuthCss';
   st.textContent = `
   #navAuth{display:inline-flex;align-items:center;margin-right:2px}
+  /* 로그인 글자를 둘러싸던 알약 상자는 뺐다 — 헤더의 다른 글자처럼 상자 없이, 올리면 글자만 밝아진다
+     (2026-09-24 사장: "헤더에 로그인을 둘러싸고 있는 박스를 없애줘"). 여백은 그대로 두어 자리가 안 바뀐다. */
   #navAuth .login-link{font:600 13px var(--font-sans);color:var(--fg-2);text-decoration:none;
-    padding:8px 14px;border-radius:9999px;background:rgba(0,0,0,.05);transition:.15s;white-space:nowrap}
+    padding:8px 14px;border-radius:9999px;background:transparent;transition:.15s;white-space:nowrap}
   #navAuth .login-link:hover{color:var(--fg-1)}
-  :root[data-theme="dark"] #navAuth .login-link{background:rgba(255,255,255,.08)}
   #navAuth .acct{position:relative}
   #navAuth .acct-btn{display:inline-flex;align-items:center;border:0;background:transparent;cursor:pointer;
     padding:3px;border-radius:9999px;transition:.15s}
