@@ -587,9 +587,9 @@ html.lenis,html.lenis body{height:auto}
 :root[data-theme="dark"]{--nav-bar:rgba(14,14,22,.55);--nav-line:rgba(255,255,255,.08)}
 html .nav{top:var(--kos-bar-h,0px);margin:0;max-width:none;width:auto;min-height:60px;border:0;border-radius:0;
   padding:11px calc(max(var(--pad),(100% - 1120px)/2) + 12px) 11px calc(max(var(--pad),(100% - 1120px)/2) + 16px);
-  background:transparent;box-shadow:none;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
-  transition:background-color .25s ease,box-shadow .25s ease}
-html .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--nav-line)}
+  background:transparent;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;
+  transition:background-color .25s ease,box-shadow .25s ease,-webkit-backdrop-filter .25s ease,backdrop-filter .25s ease}
+html .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--nav-line);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
 html .nav-spacer{min-height:32px}
 html .nav .brand-logo{height:14px}
 @media(max-width:640px){html .nav .brand-logo{height:13px}}
