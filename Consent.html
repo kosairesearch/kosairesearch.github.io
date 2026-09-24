@@ -529,6 +529,12 @@ html.lenis,html.lenis body{height:auto}
 .lenis.lenis-smooth iframe{pointer-events:none}</style>
 <!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 가운데 · 푸터·로그인 상자 없음. scripts/patch_header.py 가 넣는다. 손으로 고치지 말 것. -->
 <script id="kosTheme">(function(){var t='dark';try{t=localStorage.getItem('kos-theme')||'dark'}catch(e){}document.documentElement.setAttribute('data-theme',t)})();</script>
+<meta name="theme-color" content="#f9f8f6">
+<script id="kosThemeColor">/* 사파리(iOS) 상태바·주소창 색 — 알려 주지 않으면 사파리가 페이지 배경을 짐작해 칠하는데, 테마를 바꿔도
+   다시 짐작하지 않아 옛 색이 위아래에 남는다(2026-09-24 사장). 테마(data-theme)가 바뀔 때마다 직접 알린다. */
+(function(){var m=document.querySelector('meta[name="theme-color"]'),r=document.documentElement;
+  function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0e0e16':'#f9f8f6')}
+  tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme']})})();</script>
 <style id="kosNav">
 @view-transition{navigation:auto}
 :root{--nav-bar:rgba(255,255,255,.58);--nav-line:rgba(0,0,0,.06)}

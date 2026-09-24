@@ -21,6 +21,11 @@
      · 테마도 같은 이유로 <head> 에서 먼저 정한다 — 원래는 본문 끝 applyTheme() 가 정해서 다크로
        쓰는 사람에게는 매 이동마다 밝은 바탕이 한 번 번쩍였다. 저장 키 kos-theme, 기본 다크,
        랜딩은 늘 다크(본문의 "랜딩은 항상 다크" 표시로 안다).
+     · <meta name="theme-color"> + #kosThemeColor — iOS 사파리는 상태바(위)와 주소창(아래) 뒤를 페이지
+       배경색으로 칠하는데, 색을 알려 주지 않으면 스스로 짐작하고 테마를 바꿔도 다시 짐작하지 않는다.
+       그래서 라이트↔다크를 누르면 위아래에 옛 색이 남았다(2026-09-24 사장, 휴대폰). 테마마다
+       라이트 #f9f8f6 · 다크 #0e0e16 을 직접 알리고, data-theme 가 바뀌면(어느 페이지의 전환 단추든)
+       MutationObserver 가 따라 바꾼다.
      · @view-transition{navigation:auto} — 같은 사이트 안에서 페이지를 옮길 때 브라우저가 옛 화면과
        새 화면을 0.25초 겹쳐 보여 준다(크롬 126+ · 사파리 18.2+, 나머지는 그냥 넘어간다).
        Resend 처럼 "부드럽게 전환"되는 느낌은 여기서 온다.
@@ -72,6 +77,12 @@ THEME_JS = "(function(){var t='dark';try{t=localStorage.getItem('kos-theme')||'d
 THEME_JS_DARK = "document.documentElement.setAttribute('data-theme','dark');"
 HEAD = '''<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 가운데 · 푸터·로그인 상자 없음. scripts/patch_header.py 가 넣는다. 손으로 고치지 말 것. -->
 <script id="kosTheme">%s</script>
+<meta name="theme-color" content="#f9f8f6">
+<script id="kosThemeColor">/* 사파리(iOS) 상태바·주소창 색 — 알려 주지 않으면 사파리가 페이지 배경을 짐작해 칠하는데, 테마를 바꿔도
+   다시 짐작하지 않아 옛 색이 위아래에 남는다(2026-09-24 사장). 테마(data-theme)가 바뀔 때마다 직접 알린다. */
+(function(){var m=document.querySelector('meta[name="theme-color"]'),r=document.documentElement;
+  function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0e0e16':'#f9f8f6')}
+  tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme']})})();</script>
 <style id="kosNav">
 @view-transition{navigation:auto}
 :root{--nav-bar:rgba(255,255,255,.58);--nav-line:rgba(0,0,0,.06)}
