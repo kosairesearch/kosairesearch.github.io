@@ -1746,7 +1746,11 @@ try{
     group.rotation.z=Math.sin(t*0.131)*0.08+Math.sin(t*0.0713+0.9)*0.04;
     prism.position.y=reduced?0:Math.sin(t*0.7)*0.06+Math.sin(t*0.413+1.1)*0.04;
     prism.position.x=reduced?0:Math.sin(t*0.157+0.6)*0.05;
-    prism.updateMatrixWorld(true);
+    /* 부모(group)부터 새로 계산한다. 전에는 prism.updateMatrixWorld(true) 였는데, 그 호출은
+       group 의 행렬을 다시 만들지 않아 광선 계산(uCamObj·uM3)이 한 프레임 전 회전을 썼다.
+       상자 껍데기는 render() 안에서 현재 회전으로 그려지므로 둘이 어긋났고, 마우스로 빨리
+       돌리면 껍데기가 유리를 엉뚱한 자리에서 잘라 두 조각으로 보였다(2026-09-24 사장). */
+    prism.updateWorldMatrix(true,false);
     _rtInv.copy(prism.matrixWorld).invert();
     glass.uniforms.uCamObj.value.copy(camera.position).applyMatrix4(_rtInv);
     glass.uniforms.uM3.value.setFromMatrix4(prism.matrixWorld);
