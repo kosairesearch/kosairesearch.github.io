@@ -273,7 +273,7 @@ for (const [label, pre] of [["실사이트", ""], ["스테이징", "/staging"]])
 }
 
 /* ── 바깥 서버가 죽어도 화면이 빈 채로 남지 않는가 ────────
-   업종·종목·워치리스트는 로그인 확인이 끝날 때까지 화면을 가려 둔다
+   워치리스트는 로그인 확인이 끝날 때까지 화면을 가려 둔다
    (html.kos-locked → body{visibility:hidden}). 풀어 주는 것은 auth-guard.js
    인데, 그 파일은 파이어베이스를 구글 서버에서 받아 온다.
 
@@ -283,10 +283,25 @@ for (const [label, pre] of [["실사이트", ""], ["스테이징", "/staging"]])
 
    그래서 가림막에 시한을 뒀다. 여기서는 구글 서버를 실제로 끊어 놓고
    그 시한이 정말 도는지 본다 — 이 검사가 없으면 시한이 지워져도 아무도
-   모른다(평소에는 파이어베이스가 잘 오므로 티가 안 난다). */
+   모른다(평소에는 파이어베이스가 잘 오므로 티가 안 난다).
+
+   업종·종목은 공개 페이지라 가림막을 쓰지 않는다(스테이징, 2026-09-24).
+   auth-guard.js 가 확인 없이 바로 풀어 주는데도 가려 두었더니, 그 모듈이
+   파이어베이스를 다 받아 올 때까지 빈 화면이 잠깐 보였다("업종분석 누를 때
+   아주 살짝 깜빡", 사장). 실사이트는 아직 가리므로(옮기기 전) 페이지 소스에
+   가림막이 있는지로 기대를 정한다. 워치리스트는 이 브라우저가 로그인 상태였다고
+   기억하면(kos-signed=1) 가리지 않는다 — 그것도 여기서 본다. */
 console.log("\n── 구글 서버가 막혀도 화면이 나온다 ──\n");
+const GATE_SRC = "classList.add('kos-locked')";
 for (const [label, pre] of [["실사이트", ""], ["스테이징", "/staging"]]) {
   for (const path of ["/industry.html", "/stock.html", "/Watchlist.html"]) {
+    const src = await readFile(join(ROOT, pre, path), "utf8");
+    const gated = src.includes(GATE_SRC);
+    if (pre) {
+      ok(`${label}${path} — ${path === "/Watchlist.html" ? "가림막이 있다" : "공개 페이지라 가림막이 없다"}`,
+         gated === (path === "/Watchlist.html"),
+         "공개 페이지를 가리면 페이지를 옮길 때마다 빈 화면이 잠깐 보인다");
+    }
     const page = await browser.newPage({ viewport: { width: 1280, height: 800 } });
     await page.route("**gstatic.com/**", (r) => r.abort());   // 파이어베이스를 끊는다
     await page.goto(BASE + pre + path, { waitUntil: "domcontentloaded" });
@@ -300,11 +315,27 @@ for (const [label, pre] of [["실사이트", ""], ["스테이징", "/staging"]])
       chars: document.body.innerText.trim().length,
     }));
     await page.close();
-    ok(`${label}${path} — 확인 전에는 가려 둔다`, early,
-       "가리지 않으면 로그인 확인 전 내용이 번쩍 보인다");
+    if (gated) {
+      ok(`${label}${path} — 확인 전에는 가려 둔다`, early,
+         "가리지 않으면 로그인 확인 전 내용이 번쩍 보인다");
+    } else {
+      ok(`${label}${path} — 처음부터 보인다`, !early, "공개 페이지는 가릴 이유가 없다");
+    }
     ok(`${label}${path} — 파이어베이스가 안 와도 결국 보인다`,
        !got.locked && got.vis === "visible", JSON.stringify(got));
     ok(`${label}${path} — 글자가 실제로 그려진다`, got.chars > 50, `본문 ${got.chars}자`);
+  }
+  /* 워치리스트 — 로그인 상태였다고 기억하면 가리지 않는다(스테이징만; 실사이트는 옮기기 전) */
+  if (pre) {
+    const ctx = await browser.newContext({ viewport: { width: 1280, height: 800 } });
+    await ctx.addInitScript(() => { try { localStorage.setItem("kos-signed", "1"); } catch (e) {} });
+    const page = await ctx.newPage();
+    await page.route("**gstatic.com/**", (r) => r.abort());
+    await page.goto(BASE + pre + "/Watchlist.html", { waitUntil: "domcontentloaded" });
+    const early = await page.evaluate(() => getComputedStyle(document.body).visibility);
+    await ctx.close();
+    ok(`${label}/Watchlist.html — 로그인 상태였다고 기억하면 처음부터 보인다`, early === "visible",
+       "kos-signed=1 인데도 가리면 로그인한 사람에게 매번 빈 화면이 잠깐 보인다");
   }
 }
 
