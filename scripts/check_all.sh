@@ -50,6 +50,9 @@ run "SEO·구조"      python3 scripts/check_seo.py
 run "사업자 정보"   python3 scripts/patch_biz_footer.py --check
 run "헤더(스테이징)" python3 scripts/patch_header.py staging --check
 run "헤더(실사이트)" python3 scripts/patch_header.py . --check
+# 푸터의 면책 상자는 2026-09-24 에 뺐다(무료라 법정 의무 없음 · 리포트 본문 한 줄과 약관 제15조만 남김).
+# 옛 페이지를 복사해 오면 되살아나므로 여기서 잡는다. 유료화 때는 scripts/strip_footer_disclaimer.py 머리말 참고.
+run "푸터 면책"     python3 scripts/strip_footer_disclaimer.py --check
 # 업종 분석은 분기에 한 번만 돈다. 무엇이 어긋나도 다음 분기까지 아무도
 # 모르므로(실제로 7·8월 예정 실행이 아무것도 안 하고 성공으로 끝났다)
 # 요금 창구·일정·화면 안내가 서로 맞는지 여기서 본다.
