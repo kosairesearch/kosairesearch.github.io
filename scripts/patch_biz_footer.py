@@ -67,9 +67,9 @@ def patch(path, check=False):
     s = orig = path.read_text(encoding="utf-8")
     notes = []
 
-    # ① 마크업 — foot-bottom 바로 앞에 넣는다(면책 조항 아래·저작권 위).
-    #    disclaimer 는 페이지마다 형태가 달라(한 줄·여러 줄·JS 로 채우는 빈 div)
-    #    앵커로 못 쓴다. foot-bottom 은 17개 페이지가 모두 같은 모양이다.
+    # ① 마크업 — foot-bottom 바로 앞에 넣는다(저작권 위). 그 위에 있던 면책 상자는
+    #    2026-09-24 에 뺐다(scripts/strip_footer_disclaimer.py). foot-bottom 은
+    #    17개 페이지가 모두 같은 모양이라 앵커로 쓴다.
     m = re.search(r'^([ \t]*)<div class="foot-bottom"', s, re.M)
     if not m:
         return None, ["foot-bottom 을 못 찾음"]
