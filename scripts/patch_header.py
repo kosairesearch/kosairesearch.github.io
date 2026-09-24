@@ -7,7 +7,8 @@
 스크롤해서 내리면 박스가 또 저렇게 생겨 · 다른 페이지에서도 헤더 박스 없애야지 · 홈, 리포트,
 업종 분석 버튼들 중앙으로 옮겨줘 resend 웹사이트처럼". 페이지마다 CSS 가 따로 박혀 있어(공유
 스타일시트가 없다) 손으로 열여섯 장을 고치면 하나는 빠진다. 그래서 patch_biz_footer.py 처럼
-한 스크립트가 같은 것을 같은 자리에 넣는다. 실사이트로 옮길 때는 폴더만 바꿔 다시 돌린다.
+한 스크립트가 같은 것을 같은 자리에 넣는다. 실사이트는 폴더를 . 으로 준다(2026-09-24 에 옮겼다) —
+두 곳 다 check_all.sh 가 --check 로 지킨다.
 
 무엇을 하나 — 표준 헤더(<nav class="nav"> 안에 .brand · .nav-links · .nav-spacer)가 있는 페이지만:
   1. <nav class="nav glass"> 의 glass 를 뗀다 — 유리 상자(배경·테두리·그림자·둥근 모서리)가 없어진다.
@@ -127,7 +128,8 @@ def apply(s):
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith('--')]
     check = '--check' in sys.argv
-    folder = ROOT / (args[0] if args else 'staging')
+    where = args[0] if args else 'staging'
+    folder = ROOT / where
     pages = sorted(p for p in folder.glob('*.html'))
     changed, done, skipped = [], [], []
     for p in pages:
@@ -145,7 +147,7 @@ def main():
     if check:
         if changed:
             print(f"❌ 헤더가 아직 옛 모양인 페이지 {len(changed)}장: {' '.join(changed)}")
-            print("   python3 scripts/patch_header.py " + folder.name)
+            print("   python3 scripts/patch_header.py " + where)
             return 1
         print(f"✅ 헤더 {len(done)}장 모두 상자 없는 모양 · 건너뜀 {len(skipped)}장({' '.join(skipped)})")
         return 0
