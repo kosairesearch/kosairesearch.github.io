@@ -23,6 +23,11 @@
      · @view-transition{navigation:auto} — 같은 사이트 안에서 페이지를 옮길 때 브라우저가 옛 화면과
        새 화면을 0.25초 겹쳐 보여 준다(크롬 126+ · 사파리 18.2+, 나머지는 그냥 넘어간다).
        Resend 처럼 "부드럽게 전환"되는 느낌은 여기서 온다.
+     · 글꼴 미리 받기(<link rel="preload"> 넷: 400·500·600·700) — GitHub Pages 는 모든 파일에
+       max-age=600 을 붙이므로 10분이 지나면 브라우저가 글꼴을 서버에 다시 물어본다(304). 그 왕복
+       동안 글씨가 대체 글꼴로 그려졌다가 바뀌어 "가끔 깜빡"였다. 머리에서 먼저 물어보면 본문의
+       큰 스크립트(data/stocks.js)를 받는 사이에 답이 와서 첫 그림부터 제 글꼴이다. 주소는 페이지의
+       @font-face 에서 읽는다(실사이트 fonts/ · 스테이징 ../fonts/).
      · .nav 를 화면 폭으로 펴고, 안쪽 여백을 max(--pad, (100% - 1120px)/2) 로 잡아 로고·단추가
        전과 같은 기둥(1120px) 안에 놓이게 한다. 높이는 60px 이고 글자·단추는 그 한가운데다 —
        처음에는 위 12px 를 투명 테두리로 두고 70px 였는데 띠가 생기면 글자가 아래로 치우쳐
@@ -81,7 +86,7 @@ BODY = '''<script id="kosNavJs">
 '''
 # 전에 넣은 것(본문 끝의 스타일+스크립트 한 덩이)과 지금 것(head 의 스타일 · 본문 끝의 스크립트) 모두 걷는다
 OLD_RE = re.compile(r'<!-- 헤더 — 상자 없이[^\n]*\n<style id="kosNav">.*?</script>\n', re.S)
-HEAD_RE = re.compile(r'<!-- 헤더 — 상자 없이[^\n]*\n<script id="kosTheme">.*?</style>\n', re.S)
+HEAD_RE = re.compile(r'<!-- 헤더 — 상자 없이[^\n]*\n<script id="kosTheme">.*?</style>\n(?:<link rel="preload" as="font"[^\n]*\n)*', re.S)
 BODY_RE = re.compile(r'<script id="kosNavJs">.*?</script>\n', re.S)
 
 
@@ -102,7 +107,10 @@ def apply(s):
     if '</head>' not in s or '</body>' not in s:
         raise SystemExit('❌ </head> 나 </body> 가 없습니다')
     theme = THEME_JS_DARK if '랜딩은 항상 다크' in s else THEME_JS
-    s = s.replace('</head>', (HEAD % theme) + '</head>', 1)
+    m = re.search(r'url\("([^"]*)Pretendard-Regular\.woff2"\)', s)
+    pre = ''.join(f'<link rel="preload" as="font" type="font/woff2" crossorigin href="{m.group(1)}Pretendard-{w}.woff2">\n'
+                  for w in ('Regular', 'Medium', 'SemiBold', 'Bold')) if m else ''
+    s = s.replace('</head>', (HEAD % theme) + pre + '</head>', 1)
     return s.replace('</body>', BODY + '</body>', 1)
 
 

@@ -366,15 +366,34 @@ function renderMobileAuth(user){
   if(window.KOSi18n) window.KOSi18n.apply();
 }
 
+/* 첫 그림 — 지난번 계정 표시를 기억해 두고(kos-signed=1 · kos-signed-user=이메일), 파이어베이스가
+   세션을 되살리기 전에 그것으로 먼저 그린다. 헤더 오른쪽 아바타가 페이지마다 몇백 밀리초 뒤에
+   '툭' 나타나던 것을 없앤다(2026-09-24 사장: "홈 버튼 누를 때도 가끔 깜빡"). 기억이 없으면
+   '로그인' 링크를 바로 그린다. 확인이 끝나면 진짜 상태로 다시 그린다 — 기억이 틀렸을 때
+   (세션 만료)만 눈에 띈다. kos-signed 는 워치리스트 가림막·관심종목 목록·모의 구독도 읽는다. */
+function remembered(){
+  try{
+    if(localStorage.getItem('kos-signed') !== '1') return null;
+    const email = localStorage.getItem('kos-signed-user');
+    return email ? { email, provisional: true } : null;
+  }catch(e){ return null; }
+}
+function rememberUser(user){
+  try{
+    if(user){ localStorage.setItem('kos-signed','1'); localStorage.setItem('kos-signed-user', user.email || user.displayName || ''); }
+    else { localStorage.removeItem('kos-signed'); localStorage.removeItem('kos-signed-user'); }
+  }catch(e){}
+}
+
 function start(){
   const wrap = mount();
   if(!wrap) return;
   if(!isConfigured){ renderLoggedOut(wrap); renderMobileAuth(null); return; }
+  const guess = remembered();
+  if(guess){ renderLoggedIn(wrap, guess); renderMobileAuth(guess); }
+  else { renderLoggedOut(wrap); renderMobileAuth(null); }
   onAuthStateChanged(auth, user => {
-    /* 이 브라우저가 로그인 상태였는지 표시해 둔다. 워치리스트는 인증이 끝날
-       때까지 화면을 감추는데, 이 값이 있으면 감추지 않고 바로 그린다 — 그래야
-       그 페이지만 깜빡이지 않는다. */
-    try{ user ? localStorage.setItem('kos-signed','1') : localStorage.removeItem('kos-signed'); }catch(e){}
+    rememberUser(user);
     user ? renderLoggedIn(wrap, user) : renderLoggedOut(wrap); renderMobileAuth(user);
     autoOpenSettings(user);
   });
