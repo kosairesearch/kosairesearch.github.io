@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<script type="module" src="demo-backend.js?v=6b8abc22"></script>
+<script type="module" src="demo-backend.js?v=7f8de79b"></script>
 <meta name="robots" content="noindex,nofollow" />
 <meta charset="utf-8" />
 <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -1189,7 +1189,11 @@ btns.forEach((btn) => {
 });
 
 if (P) {
-  P.onChange((s) => { st = s; paint(); });
+  /* 첫 그림 — 인증 확인이 끝나기 전에는 미리보기(P.peek — 모의 결제에만 있다)로 그린다. 없으면
+     지금처럼 확인 전 상태로 그린다. 확인이 끝나면 진짜 상태로 한 번 더 그린다(기억이 틀렸을 때). */
+  let settled = false;
+  P.onChange((s) => { st = (!settled && P.peek) ? P.peek() : s; paint(); });
+  if (P.ready && P.ready.then) P.ready.then(() => { settled = true; st = P.state(); paint(); });
 } else {
   paint();
 }
