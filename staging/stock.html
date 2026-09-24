@@ -465,15 +465,15 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
 
 
 /* AI report source cards */
-.srcgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;margin-top:6px}
-.src-card{display:flex;align-items:center;gap:11px;padding:11px 13px;border:1px solid var(--border-2);border-radius:12px;background:rgba(128,128,150,.06);text-decoration:none;transition:transform .12s ease,border-color .12s ease,box-shadow .12s ease}
-.src-card:hover{transform:translateY(-1px);border-color:#5b7cfa;background:rgba(128,128,150,.11);box-shadow:0 4px 14px rgba(0,0,0,.08)}
-.src-ico{flex:0 0 30px;width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#fff;background:linear-gradient(135deg,#5b7cfa,#8a5cf6)}
-.src-ico-base{background:rgba(91,124,250,.14);font-size:15px}
-.src-body{display:flex;flex-direction:column;min-width:0;flex:1}
-.src-host{font-size:13px;font-weight:600;color:var(--fg-1);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.src-ttl{font-size:11.5px;color:var(--fg-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
-.src-ext{width:15px;height:15px;color:var(--fg-3);flex:0 0 auto}
+/* 참고 출처 — 한 줄에 하나, 글자만(로고·상자 없음). 한국거래소·전자공시만 보이고 나머지는 '더보기' 안에
+   (2026-09-24 사장: "한국거래소랑 DART 빼고 다 더보기 안에 · 로고 제거 · 네모 박스 제거 · 한 줄에 출처 1개"). */
+.srcgrid{display:flex;flex-direction:column;align-items:flex-start;gap:9px;margin-top:6px}
+.src-card{font:500 14px/1.5 var(--font-sans);color:var(--fg-2);text-decoration:none}
+.src-card:hover{color:var(--fg-1)}
+.srcgrid .src-hide{display:none}
+.srcgrid.src-open .src-hide{display:block}
+.src-more{font:500 14px/1.5 var(--font-sans);color:var(--fg-3);background:transparent;border:0;padding:0;cursor:pointer;text-align:left}
+.src-more:hover{color:var(--fg-1)}
 
 /* AI report masthead */
 .rep-masthead{max-width:880px;margin:62px auto 24px;padding-bottom:20px;border-bottom:1px solid var(--border-2)}
@@ -1168,7 +1168,7 @@ document.addEventListener('click', function (e) {
         hiddenT:'표시하지 않은 값', hidden:{loss:'최근 4개 분기 적자라 산출하지 않음',fx:'공시 통화의 환율을 확보하지 못함',shares:'주식수를 확인하지 못함',mismatch:'회사가 공시한 두 값이 서로 어긋나 확인하지 못함',no_income:'최근 4개 분기 순이익을 확인하지 못함',impaired:'자본잠식(자본이 0 이하)',equity_check:'자본 항등식이 맞지 않아 확인하지 못함',no_equity:'분기말 자본을 확인하지 못함',no_div:'배당 공시가 없음',ref_mismatch:'외부 참조값과 크게 달라 보류함',unknown:'확인하지 못함'},chartAnnual:'연간 매출·영업이익 추이',chartQuarter:'분기 매출·영업이익 추이',unitJo:'단위: 조원',
         foot:'· 재무는 DART 공시 연결 확정치 · PER·EPS는 최근 4개 분기({win}) 지배주주 순이익, PBR·BPS는 최근 분기말 지배주주 자본 기준 · 배당은 DART 공시 주당현금배당금 기준'},
       eyebrow:'AI 리서치 리포트', reportDate:'리포트 작성일', dataDate:'데이터 기준일', priceAsOf:'{d} 장마감 기준', model:'생성 모델', stance:'투자 의견',
-      srcKRX:'한국거래소 (KRX)', srcKRXsub:'시세·시가총액 데이터', srcDART:'금융감독원 전자공시 (DART)', srcDARTsub:'재무·공시 원문',
+      srcKRX:'한국거래소', srcDART:'금융감독원 전자공시', srcMore:'더보기', srcLess:'접기',
       discT:'면책 조항',
       disc:'· 본 콘텐츠는 AI가 시장 데이터와 웹 검색 결과를 분석한 정보 제공용이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 책임은 투자자 본인에게 있습니다. 데이터는 지연되거나 오류가 포함될 수 있습니다.',
       none:'이 종목의 AI 리포트는 아직 준비되지 않았습니다. 시가총액 상위 종목부터 순차적으로 생성하고 있습니다.',
@@ -1190,7 +1190,7 @@ document.addEventListener('click', function (e) {
         hiddenT:'Not shown', hidden:{loss:'trailing-4-quarter loss, not computed',fx:'FX rate for the filing currency unavailable',shares:'share count could not be confirmed',mismatch:'two disclosed figures disagree; not confirmed',no_income:'trailing-4-quarter net profit unavailable',impaired:'negative equity (capital impairment)',equity_check:'equity identity does not hold; not confirmed',no_equity:'latest-quarter equity unavailable',no_div:'no dividend disclosure',ref_mismatch:'differs sharply from external reference; withheld',unknown:'could not be confirmed'},chartAnnual:'Annual revenue & operating profit',chartQuarter:'Quarterly revenue & operating profit',unitJo:'Unit: ₩ trillion',
         foot:'· Financials are confirmed DART consolidated figures · P/E & EPS use trailing-4-quarter net profit attributable to owners ({win}); P/B & BPS use latest-quarter equity attributable to owners · Dividend is based on DART-disclosed cash dividend per share'},
       eyebrow:'AI Research Report', reportDate:'Report date', dataDate:'Data as of', priceAsOf:'As of {d} close', model:'Model', stance:'Stance',
-      srcKRX:'Korea Exchange (KRX)', srcKRXsub:'Price & market-cap data', srcDART:'DART (FSS e-disclosure)', srcDARTsub:'Financials & filings',
+      srcKRX:'Korea Exchange (KRX)', srcDART:'DART (FSS e-disclosure)', srcMore:'Show more', srcLess:'Show less',
       discT:'Disclaimer',
       disc:'· This content is AI-generated analysis of market data and web search results, for information only — not investment solicitation or a recommendation. Investment decisions and their outcomes are your own responsibility. Data may be delayed or contain errors.',
       none:'An AI report for this stock is not ready yet. We are generating them in order of market cap.',
@@ -1425,15 +1425,15 @@ document.addEventListener('click', function (e) {
   window.addEventListener('koswatch:change', syncWatch);
 
   function srcHost(u){ try{ return new URL(u).hostname.replace(/^www\./,''); }catch(e){ return String(u).replace(/^https?:\/\//,'').split('/')[0]; } }
-  function srcTitle(u){ try{ var p=new URL(u); var t=decodeURIComponent(p.pathname).replace(/[\/\-_]+/g,' ').replace(/\.(html?|php|aspx?)$/i,'').trim(); return t.length>4?t.slice(0,54):''; }catch(e){ return ''; } }
-  function srcCardL(host, ttl, url, ico){
-    host=esc(host); ttl=esc(ttl||''); url=esc(url);
-    return '<a class="src-card" href="'+url+'" target="_blank" rel="noopener">'
-      +'<span class="src-ico'+(ico?' src-ico-base':'')+'">'+esc(ico||host.charAt(0).toUpperCase())+'</span>'
-      +'<span class="src-body"><span class="src-host">'+host+'</span>'
-      +(ttl?'<span class="src-ttl">'+ttl+'</span>':'')+'</span>'
-      +'<svg class="src-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M17 7H9M17 7v8"/></svg></a>'; }
-  function srcCard(u){ return srcCardL(srcHost(u), srcTitle(u), u); }
+  function srcCardL(host, url, hidden){
+    return '<a class="src-card'+(hidden?' src-hide':'')+'" href="'+esc(url)+'" target="_blank" rel="noopener">'+esc(host)+'</a>'; }
+  function srcCard(u){ return srcCardL(srcHost(u), u, true); }
+  /* '더보기' — 숨긴 출처를 펴고 접는다. 본문을 다시 그려도(언어 전환) 살아 있도록 문서에 한 번만 건다. */
+  document.addEventListener('click', function(e){
+    var b=e.target.closest&&e.target.closest('.src-more'); if(!b) return;
+    var g=b.parentNode, open=g.classList.toggle('src-open');
+    b.textContent=open?b.getAttribute('data-less'):b.getAttribute('data-more');
+  });
   function fwon(v){ if(v==null)return '—'; v=+v; var sg=v<0?'-':''; var a=Math.abs(v);
     if(L()==='en'){ if(a>=1e12)return sg+'₩'+(a/1e12).toFixed(1)+'T'; if(a>=1e8)return sg+'₩'+(a/1e9).toFixed(1)+'B'; return sg+'₩'+Math.round(a).toLocaleString('en-US'); }
     if(a>=1e12)return sg+(a/1e12).toFixed(1)+'조'; if(a>=1e8)return sg+Math.round(a/1e8).toLocaleString('en-US')+'억'; return sg+Math.round(a).toLocaleString('en-US')+'원'; }
@@ -1535,13 +1535,11 @@ document.addEventListener('click', function (e) {
   }
   /* 참고 출처 + 리포트 작성일 — 잠금 화면에서도 그대로 보인다(요금제 고지와 동일). */
   function srcMeta(u,n){
-    var baseCards=[
-      srcCardL(u.srcKRX, u.srcKRXsub, 'https://data.krx.co.kr', '📊'),
-      srcCardL(u.srcDART, u.srcDARTsub, 'https://dart.fss.or.kr', '📄')
-    ];
+    var baseCards=[srcCardL(u.srcKRX,'https://data.krx.co.kr'), srcCardL(u.srcDART,'https://dart.fss.or.kr')];
     var webCards=(REP.sources||[]).map(srcCard);
     return '<hr class="hairline" />'+secOpen(pad(n),'SOURCES',u.sec.sources)
-      +'<div class="srcgrid">'+baseCards.concat(webCards).join('')+'</div></section>'
+      +'<div class="srcgrid">'+baseCards.join('')+webCards.join('')
+      +(webCards.length?'<button type="button" class="src-more" data-more="'+esc(u.srcMore)+'" data-less="'+esc(u.srcLess)+'">'+esc(u.srcMore)+'</button>':'')+'</div></section>'
       +'<div class="col"><div class="rep-meta rep-meta-end"><span><b>'+esc(u.reportDate)+'</b>'+esc(REP.reportDate||'')+'</span></div></div>';
   }
 
@@ -1868,13 +1866,11 @@ document.addEventListener('click', function (e) {
       // 투자의견(stance)은 표시하지 않음 — 당사는 투자자문업 등록 사업자가 아님(법적 제약). 정성 요약(body)만 노출.
       h+='<div class="wrapup glass">'+ps(REP.verdict?pk(REP.verdict.body):'')+'</div></section>';
       // 참고 출처: 기본(KRX·DART)을 항상 먼저, 그 뒤 웹 인용
-      var baseCards=[
-        srcCardL(u.srcKRX, u.srcKRXsub, 'https://data.krx.co.kr', '📊'),
-        srcCardL(u.srcDART, u.srcDARTsub, 'https://dart.fss.or.kr', '📄')
-      ];
+      var baseCards=[srcCardL(u.srcKRX,'https://data.krx.co.kr'), srcCardL(u.srcDART,'https://dart.fss.or.kr')];
       var webCards=(REP.sources||[]).map(srcCard);
       h+='<hr class="hairline" />'+secOpen(pad(n++),'SOURCES',u.sec.sources);
-      h+='<div class="srcgrid">'+baseCards.concat(webCards).join('')+'</div></section>';
+      h+='<div class="srcgrid">'+baseCards.join('')+webCards.join('')
+        +(webCards.length?'<button type="button" class="src-more" data-more="'+esc(u.srcMore)+'" data-less="'+esc(u.srcLess)+'">'+esc(u.srcMore)+'</button>':'')+'</div></section>';
       h+='<div class="col"><div class="rep-meta rep-meta-end"><span><b>'+esc(u.reportDate)+'</b>'+esc(REP.reportDate||'')+'</span></div></div>';
       rb.innerHTML=h;
     }
