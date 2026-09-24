@@ -23,7 +23,8 @@
        켰다 껐다 하면 툭 튄다. 배경은 라이트 흰색 .58 · 다크 #0e0e16 .55 — .72 로 했더니
        "박스가 너무 진해, Resend 처럼 조금만 더 투명하게"(사장).
      · 메뉴 글자와 아이콘 단추에 마우스를 올리면 네모 상자 없이 글자만 밝아진다("호버했을 때
-       생기는 네모 박스 없애줘. 글씨에 빛만 들어오게", 사장). 지금 페이지를 알리는 .active 상자는 둔다.
+       생기는 네모 박스 없애줘. 글씨에 빛만 들어오게", 사장). 지금 페이지를 알리는 .active 도 상자 없이
+       글자만 밝고 굵게("홈 버튼에 저렇게 네모 박스가 유지되어 있는데 저것도 없애줘", 사장).
      · .nav-links 는 헤더 가운데에 절대 배치 — 로고·단추 폭과 상관없이 화면 가운데(Resend 처럼).
        메뉴 사이는 14px(글자 사이 40px) — 2px 였을 때 "버튼들이 너무 붙어있어"(사장).
        휴대폰(767px 이하)에서는 전처럼 숨고 메뉴 단추가 대신한다.
@@ -51,6 +52,7 @@ BLOCK = '''<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 �
 .nav-spacer{min-height:32px}
 .nav-links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin-left:0;gap:14px}
 .nav-links a:hover,.nav .icon-btn:hover,:root[data-theme="dark"] .nav-links a:hover,:root[data-theme="dark"] .nav .icon-btn:hover{background:transparent}
+.nav-links a.active,:root[data-theme="dark"] .nav-links a.active{background:transparent}
 .mobile-menu{top:calc(60px + var(--kos-bar-h,0px))}
 </style>
 <script>
