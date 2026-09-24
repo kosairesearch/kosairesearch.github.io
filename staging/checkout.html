@@ -582,7 +582,7 @@ KOSi18n.register({
 html.lenis,html.lenis body{height:auto}
 .lenis [data-lenis-prevent]{overscroll-behavior:contain}
 .lenis.lenis-smooth iframe{pointer-events:none}</style>
-<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 가운데. scripts/patch_header.py 가 넣는다. 손으로 고치지 말 것. -->
+<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 가운데 · 푸터·로그인 상자 없음. scripts/patch_header.py 가 넣는다. 손으로 고치지 말 것. -->
 <script id="kosTheme">(function(){var t='dark';try{t=localStorage.getItem('kos-theme')||'dark'}catch(e){}document.documentElement.setAttribute('data-theme',t)})();</script>
 <style id="kosNav">
 @view-transition{navigation:auto}
@@ -598,6 +598,7 @@ html .nav-links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%
 html .nav-links a:hover,html .nav .icon-btn:hover,html:root[data-theme="dark"] .nav-links a:hover,html:root[data-theme="dark"] .nav .icon-btn:hover{background:transparent}
 html .nav-links a.active,html:root[data-theme="dark"] .nav-links a.active{background:transparent}
 html .mobile-menu{top:calc(60px + var(--kos-bar-h,0px))}
+html .foot-inner,html:root[data-theme="dark"] .foot-inner,html .auth-card,html:root[data-theme="dark"] .auth-card{background:transparent;border:0;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none}
 </style>
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/Pretendard-Regular.woff2">
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/Pretendard-Medium.woff2">

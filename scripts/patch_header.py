@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""헤더를 Resend 식으로 — 상자 없이, 조금 내리면 화면 폭 띠, 메뉴는 가운데.
+"""헤더를 Resend 식으로 — 상자 없이, 조금 내리면 화면 폭 띠, 메뉴는 가운데. 푸터·로그인 상자도 없앤다.
 
     python3 scripts/patch_header.py [폴더=staging] [--check]
 
@@ -46,6 +46,11 @@
      · .nav-spacer 에 최소 높이를 줘 단추가 없는 페이지(랜딩은 테마 단추를 숨긴다)도 높이가 준다.
      · 색은 --nav-bar · --nav-line 변수다. 랜딩(항상 남색)은 body 에서 제 값으로 덮는다.
   3. 스테이징 띠(.kos-staging-bar)가 있는 페이지는 그 밑에 붙는다(top: var(--kos-bar-h)).
+  4. 푸터(.foot-inner.glass)와 로그인·회원가입 카드(.auth-card.glass)의 유리 상자도 걷는다 — 배경·테두리·
+     그림자·흐림만 빼고 글씨와 자리는 그대로(2026-09-24 사장: "푸터 박스 없애줘. 글씨는 냅두고 박스만.
+     로그인 페이지, 회원가입 페이지에서도 박스 없애줘"). 다크의 :root[data-theme] .glass 보다 특이도가
+     높아야 하므로 html:root[data-theme="dark"] 를 같이 적는다. 휴대폰 메뉴판(.mobile-menu.glass)은
+     떠 있는 창이라 상자를 둔다.
 
 --check 는 바꾸지 않고, 표준 헤더가 있는 페이지가 모두 이 상태인지만 본다(check_all.sh 가 돌린다).
 """
@@ -56,7 +61,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 THEME_JS = "(function(){var t='dark';try{t=localStorage.getItem('kos-theme')||'dark'}catch(e){}document.documentElement.setAttribute('data-theme',t)})();"
 THEME_JS_DARK = "document.documentElement.setAttribute('data-theme','dark');"
-HEAD = '''<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 가운데. scripts/patch_header.py 가 넣는다. 손으로 고치지 말 것. -->
+HEAD = '''<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 가운데 · 푸터·로그인 상자 없음. scripts/patch_header.py 가 넣는다. 손으로 고치지 말 것. -->
 <script id="kosTheme">%s</script>
 <style id="kosNav">
 @view-transition{navigation:auto}
@@ -72,6 +77,7 @@ html .nav-links{position:absolute;left:50%%;top:50%%;transform:translate(-50%%,-
 html .nav-links a:hover,html .nav .icon-btn:hover,html:root[data-theme="dark"] .nav-links a:hover,html:root[data-theme="dark"] .nav .icon-btn:hover{background:transparent}
 html .nav-links a.active,html:root[data-theme="dark"] .nav-links a.active{background:transparent}
 html .mobile-menu{top:calc(60px + var(--kos-bar-h,0px))}
+html .foot-inner,html:root[data-theme="dark"] .foot-inner,html .auth-card,html:root[data-theme="dark"] .auth-card{background:transparent;border:0;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none}
 </style>
 '''
 BODY = '''<script id="kosNavJs">
