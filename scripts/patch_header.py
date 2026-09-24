@@ -35,8 +35,11 @@
        보였다("위 아래 간격이 다르잖아", 사장). Resend 처럼 조금 더 위로(글자 중심 38 → 30px).
        휴대폰 메뉴는 그 밑(60px + 스테이징 띠)에 붙인다.
      · 맨 위에서는 투명. 32px 넘게 내리면 .scrolled — 반투명 배경 + 아래 선(box-shadow 라 높이가
-       안 변한다). 흐림(backdrop-filter)은 늘 켜 둔다 — 맨 위에서는 뒤에 바탕뿐이라 표가 안 나고,
-       켰다 껐다 하면 툭 튄다. 배경은 라이트 흰색 .58 · 다크 #0e0e16 .55 — .72 로 했더니
+       안 변한다). 흐림(backdrop-filter)도 .scrolled 일 때만 건다 — 처음에는 늘 켜 뒀는데, 휴대폰
+       랜딩에서 맨 위인데도 헤더 자리가 옅은 상자로 비쳤다(2026-09-24 사장). 투명한 헤더에 흐림만
+       걸려 있으면 사파리가 그 직사각형을 뒤 배경과 살짝 다르게 그린다(WebGL 배경 위에서 특히).
+       맨 위에서는 뒤에 바탕뿐이라 흐림이 할 일도 없다. 띠가 생길 때 흐림도 같이 .25s 로 든다.
+       배경은 라이트 흰색 .58 · 다크 #0e0e16 .55 — .72 로 했더니
        "박스가 너무 진해, Resend 처럼 조금만 더 투명하게"(사장).
      · 메뉴 글자와 아이콘 단추에 마우스를 올리면 네모 상자 없이 글자만 밝아진다("호버했을 때
        생기는 네모 박스 없애줘. 글씨에 빛만 들어오게", 사장). 지금 페이지를 알리는 .active 도 상자 없이
@@ -72,9 +75,9 @@ HEAD = '''<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 �
 :root[data-theme="dark"]{--nav-bar:rgba(14,14,22,.55);--nav-line:rgba(255,255,255,.08)}
 html .nav{top:var(--kos-bar-h,0px);margin:0;max-width:none;width:auto;min-height:60px;border:0;border-radius:0;
   padding:11px calc(max(var(--pad),(100%% - 1120px)/2) + 12px) 11px calc(max(var(--pad),(100%% - 1120px)/2) + 16px);
-  background:transparent;box-shadow:none;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
-  transition:background-color .25s ease,box-shadow .25s ease}
-html .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--nav-line)}
+  background:transparent;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;
+  transition:background-color .25s ease,box-shadow .25s ease,-webkit-backdrop-filter .25s ease,backdrop-filter .25s ease}
+html .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--nav-line);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
 html .nav-spacer{min-height:32px}
 html .nav .brand-logo{height:14px}
 @media(max-width:640px){html .nav .brand-logo{height:13px}}
