@@ -387,6 +387,8 @@ table.dt .pos{color:var(--up);font-weight:700}table.dt .neg{color:var(--down);fo
    앞 섹션이 잘린 게 아니라 '여기서부터 유료'임을 보여야 하므로,
    잠긴 섹션 제목을 그대로 나열해 무엇을 사는지 알 수 있게 한다. */
 .lockwrap{margin:8px auto 0;max-width:880px}
+/* 구독을 기억하는 사람에게는 확인이 끝날 때까지 잠금 카드를 자리만 잡고 숨긴다(wireLock 참고) */
+.lockwrap.pending{visibility:hidden}
 .lock{position:relative;padding:30px 26px 28px;text-align:center;overflow:hidden}
 .lock::before{content:"";position:absolute;left:0;right:0;top:-46px;height:46px;
   background:linear-gradient(to bottom,transparent,var(--bg-1))}
@@ -951,6 +953,10 @@ html .nav-links a:hover,html .nav .icon-btn:hover,html:root[data-theme="dark"] .
 html .nav-links a.active,html:root[data-theme="dark"] .nav-links a.active{background:transparent}
 html .mobile-menu{top:calc(60px + var(--kos-bar-h,0px))}
 </style>
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/Pretendard-Regular.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/Pretendard-Medium.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/Pretendard-SemiBold.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/Pretendard-Bold.woff2">
 </head>
 <body>
 <div class="kos-staging-bar">
@@ -1560,6 +1566,14 @@ document.addEventListener('click', function (e) {
     }
     function show(msg,isHtml){ err[isHtml?'innerHTML':'textContent']=msg; err.classList.add('show'); }
     var note=lockCardEl&&lockCardEl.querySelector('.lock-note');
+    /* 구독자에게 첫 그림에 '로그인하고 이어보기'가 박힌 잠금 카드가 보였다가, 확인이 끝나면 본문으로
+       바뀌던 것을 없앤다(2026-09-24). 로그인·구독을 기억하면(P.peek — 모의 결제에만 있다) 확인이
+       끝날 때까지 카드를 자리만 잡고 숨긴다. 확인 결과 구독이 아니면 그때 드러낸다. */
+    var wrapEl=lockCardEl&&lockCardEl.parentNode;
+    if(wrapEl&&P.peek&&P.ready&&P.ready.then){
+      var pk=P.peek();
+      if(pk&&pk.provisional&&pk.active){ wrapEl.classList.add('pending'); P.ready.then(function(){ wrapEl.classList.remove('pending'); }); }
+    }
     _lockOff=P.onChange(function(st){
       /* 상태가 셋이다. 로그인 여부만 보고 문구를 정하면, 로그인한 사람에게
          '로그인하고 이어보기'가 뜬다. */
@@ -1973,7 +1987,7 @@ themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')
 <script type="module" src="paywall.js?v=01294faf"></script>
 <script type="module" src="auth-guard.js?v=cf23b954"></script>
 <script type="module" src="watchlist.js?v=5263582c"></script>
-<script type="module" src="auth-state.js?v=6df6d66c"></script>
+<script type="module" src="auth-state.js?v=6f0192d0"></script>
 <!-- 부드러운 스크롤. 안 뜨거나 손가락 화면이면 스스로 비켜선다 —
      smooth-scroll.js 맨 위 설명 참고. 빼려면 이 두 줄만 지우면 된다. -->
 <script src="lenis.js?v=3a0cb7e8"></script>
