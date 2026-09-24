@@ -69,6 +69,20 @@ function snapshot() {
 }
 function emit() { const s = snapshot(); listeners.forEach((fn) => { try { fn(s); } catch (e) {} }); }
 
+/* 인증 확인 전 미리보기 — 이 브라우저가 로그인 상태였다고 기억하면(kos-signed=1, auth-state.js 가
+   로그인·로그아웃 때 적는다) 저장된 구독을 그대로 답한다. 멤버십 페이지가 첫 그림에 '업그레이드'를
+   그렸다가 파이어베이스가 세션을 되살린 뒤 '이용 중'으로 바꾸던 것을 없앤다(2026-09-24 사장:
+   "아주 잠깐 구독이 안 되어 있는 것처럼 되어 있다가 구독으로 뜨는데"). snapshot() 은 그대로다 —
+   종목 페이지는 '구독은 있는데 로그인은 안 된 사람'을 보면 로그인으로 보내므로 거기엔 쓰지 않는다.
+   기억이 틀리면(세션 만료) 확인이 끝난 뒤 진짜 상태로 다시 그려진다. */
+function peek() {
+  let hinted = false; try { hinted = localStorage.getItem("kos-signed") === "1"; } catch (e) {}
+  if (user || !hinted) return snapshot();
+  const sub = read(SUB_KEY, null), plan = sub ? sub.plan : null;
+  return { user: null, provisional: true, sub, active: activeNow(sub), plan,
+           limit: (PLANS[plan] || {}).limit || null, plans: PLANS };
+}
+
 if (isConfigured) {
   onAuthStateChanged(auth, (u) => { user = u || null; emit(); resolveReady(snapshot()); });
 } else {
@@ -579,7 +593,7 @@ window.KOSDemo = {
   },
 };
 window.KOSPaywall = {
-  ready, isConfigured: true, state: snapshot,
+  ready, isConfigured: true, state: snapshot, peek,
   onChange(fn) { listeners.add(fn); fn(snapshot()); return () => listeners.delete(fn); },
   fetchPaid,
 };

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<script type="module" src="demo-backend.js?v=6b8abc22"></script>
+<script type="module" src="demo-backend.js?v=7f8de79b"></script>
 <meta charset="utf-8" />
 <meta name="referrer" content="strict-origin-when-cross-origin" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -812,7 +812,12 @@ function render(){
   if(_eb&&_eb.lastChild){ _eb.lastChild.textContent= wlEl.classList.contains('edit')?T(' 완료'):T(' 편집'); }
   const cn=document.getElementById('countN'); if(cn) cn.textContent=LIST.length;
   const cu=document.getElementById('countUnit'); if(cu) cu.textContent=EN()?(LIST.length===1?' stock':' stocks'):'개 종목';
-  if(LIST.length===0){wlEl.style.display='none';emptyEl.classList.add('show');pagerEl.style.display='none';return;}
+  if(LIST.length===0){
+    /* 파이어스토어 답을 기다리는 동안은 '비어 있습니다'를 보이지 않는다 — 있는 목록을 잠깐 없다고
+       말하던 것이다(2026-09-24 사장). 답이 오면 비었는지 그때 안다. */
+    if(window.KOSWatch&&!window.KOSWatch.ready){wlEl.style.display='none';emptyEl.classList.remove('show');pagerEl.style.display='none';return;}
+    wlEl.style.display='none';emptyEl.classList.add('show');pagerEl.style.display='none';return;
+  }
   wlEl.style.display='';emptyEl.classList.remove('show');
   const list=sorted(), total=list.length, pages=Math.max(1,Math.ceil(total/PAGE_SIZE));
   if(page>pages)page=pages; if(page<1)page=1;
@@ -916,7 +921,7 @@ const WATCHLIST_DICT={
 if(window.KOSi18n) KOSi18n.register(WATCHLIST_DICT, render);
 </script>
 <script type="module" src="auth-guard.js?v=cf23b954"></script>
-<script type="module" src="watchlist.js?v=f95b0bf8"></script>
+<script type="module" src="watchlist.js?v=5263582c"></script>
 <script type="module" src="auth-state.js?v=6df6d66c"></script>
 <!-- 부드러운 스크롤. 안 뜨거나 손가락 화면이면 스스로 비켜선다 —
      smooth-scroll.js 맨 위 설명 참고. 빼려면 이 두 줄만 지우면 된다. -->
