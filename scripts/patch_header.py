@@ -11,8 +11,18 @@
 
 무엇을 하나 — 표준 헤더(<nav class="nav"> 안에 .brand · .nav-links · .nav-spacer)가 있는 페이지만:
   1. <nav class="nav glass"> 의 glass 를 뗀다 — 유리 상자(배경·테두리·그림자·둥근 모서리)가 없어진다.
-  2. </body> 앞에 <style id="kosNav"> 와 스크립트 한 덩이를 넣는다(있으면 갈아 끼운다). 맨 아래라
-     페이지의 .nav 규칙(스테이징 띠 밑으로 내리는 top 까지)을 다 이긴다.
+  2. </head> 앞에 <style id="kosNav">(+ 테마 선적용 스크립트)를, </body> 앞에 스크롤 스크립트를
+     넣는다(있으면 갈아 끼운다). 처음에는 둘 다 본문 끝에 넣었는데, 페이지를 옮길 때마다 첫 그림에
+     옛 헤더(왼쪽 정렬 메뉴 · 지금 페이지 상자)가 잠깐 그려진 뒤 바뀌어 "0.1초 깜빡이고 단추 둘레에
+     상자가 보인다"(사장)고 했다. 첫 그림부터 맞으려면 스타일이 <head> 에 있어야 한다. 그러면 본문
+     안의 스테이징 띠 스타일(.nav{top:…} · .mobile-menu{top:…})이 뒤에 오므로, 선택자마다 html 을
+     앞에 붙여 특이도로 이긴다(순서에 기대지 않는다).
+     · 테마도 같은 이유로 <head> 에서 먼저 정한다 — 원래는 본문 끝 applyTheme() 가 정해서 다크로
+       쓰는 사람에게는 매 이동마다 밝은 바탕이 한 번 번쩍였다. 저장 키 kos-theme, 기본 다크,
+       랜딩은 늘 다크(본문의 "랜딩은 항상 다크" 표시로 안다).
+     · @view-transition{navigation:auto} — 같은 사이트 안에서 페이지를 옮길 때 브라우저가 옛 화면과
+       새 화면을 0.25초 겹쳐 보여 준다(크롬 126+ · 사파리 18.2+, 나머지는 그냥 넘어간다).
+       Resend 처럼 "부드럽게 전환"되는 느낌은 여기서 온다.
      · .nav 를 화면 폭으로 펴고, 안쪽 여백을 max(--pad, (100% - 1120px)/2) 로 잡아 로고·단추가
        전과 같은 기둥(1120px) 안에 놓이게 한다. 높이는 60px 이고 글자·단추는 그 한가운데다 —
        처음에는 위 12px 를 투명 테두리로 두고 70px 였는데 띠가 생기면 글자가 아래로 치우쳐
@@ -39,23 +49,28 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-MARK = 'id="kosNav"'
-BLOCK = '''<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 가운데. scripts/patch_header.py 가 넣는다. 손으로 고치지 말 것. -->
+THEME_JS = "(function(){var t='dark';try{t=localStorage.getItem('kos-theme')||'dark'}catch(e){}document.documentElement.setAttribute('data-theme',t)})();"
+THEME_JS_DARK = "document.documentElement.setAttribute('data-theme','dark');"
+HEAD = '''<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 가운데. scripts/patch_header.py 가 넣는다. 손으로 고치지 말 것. -->
+<script id="kosTheme">%s</script>
 <style id="kosNav">
+@view-transition{navigation:auto}
 :root{--nav-bar:rgba(255,255,255,.58);--nav-line:rgba(0,0,0,.06)}
 :root[data-theme="dark"]{--nav-bar:rgba(14,14,22,.55);--nav-line:rgba(255,255,255,.08)}
-.nav{top:var(--kos-bar-h,0px);margin:0;max-width:none;width:auto;min-height:60px;border:0;border-radius:0;
-  padding:11px calc(max(var(--pad),(100% - 1120px)/2) + 12px) 11px calc(max(var(--pad),(100% - 1120px)/2) + 16px);
+html .nav{top:var(--kos-bar-h,0px);margin:0;max-width:none;width:auto;min-height:60px;border:0;border-radius:0;
+  padding:11px calc(max(var(--pad),(100%% - 1120px)/2) + 12px) 11px calc(max(var(--pad),(100%% - 1120px)/2) + 16px);
   background:transparent;box-shadow:none;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
   transition:background-color .25s ease,box-shadow .25s ease}
-.nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--nav-line)}
-.nav-spacer{min-height:32px}
-.nav-links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin-left:0;gap:14px}
-.nav-links a:hover,.nav .icon-btn:hover,:root[data-theme="dark"] .nav-links a:hover,:root[data-theme="dark"] .nav .icon-btn:hover{background:transparent}
-.nav-links a.active,:root[data-theme="dark"] .nav-links a.active{background:transparent}
-.mobile-menu{top:calc(60px + var(--kos-bar-h,0px))}
+html .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--nav-line)}
+html .nav-spacer{min-height:32px}
+html .nav-links{position:absolute;left:50%%;top:50%%;transform:translate(-50%%,-50%%);margin-left:0;gap:14px}
+html .nav-links a:hover,html .nav .icon-btn:hover,html:root[data-theme="dark"] .nav-links a:hover,html:root[data-theme="dark"] .nav .icon-btn:hover{background:transparent}
+html .nav-links a.active,html:root[data-theme="dark"] .nav-links a.active{background:transparent}
+html .mobile-menu{top:calc(60px + var(--kos-bar-h,0px))}
 </style>
-<script>
+'''
+BODY = '''<script id="kosNavJs">
+/* 헤더 띠 — 32px 넘게 내리면 .scrolled (head 의 #kosNav 참고). 프레임마다 한 번만 본다. */
 (function(){
   var nav=document.querySelector('.nav'); if(!nav) return; var tick=false;
   function upd(){ tick=false; nav.classList.toggle('scrolled',(window.scrollY||document.documentElement.scrollTop)>32); }
@@ -64,7 +79,10 @@ BLOCK = '''<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 �
 })();
 </script>
 '''
-BLOCK_RE = re.compile(r'<!-- 헤더 — 상자 없이[^\n]*\n<style id="kosNav">.*?</script>\n', re.S)
+# 전에 넣은 것(본문 끝의 스타일+스크립트 한 덩이)과 지금 것(head 의 스타일 · 본문 끝의 스크립트) 모두 걷는다
+OLD_RE = re.compile(r'<!-- 헤더 — 상자 없이[^\n]*\n<style id="kosNav">.*?</script>\n', re.S)
+HEAD_RE = re.compile(r'<!-- 헤더 — 상자 없이[^\n]*\n<script id="kosTheme">.*?</style>\n', re.S)
+BODY_RE = re.compile(r'<script id="kosNavJs">.*?</script>\n', re.S)
 
 
 def has_std_header(s):
@@ -78,10 +96,14 @@ def apply(s):
     if not has_std_header(s):
         return s
     s = s.replace('<nav class="nav glass"', '<nav class="nav"')
-    s = BLOCK_RE.sub('', s)
-    if '</body>' not in s:
-        raise SystemExit('❌ </body> 가 없습니다')
-    return s.replace('</body>', BLOCK + '</body>', 1)
+    s = OLD_RE.sub('', s)
+    s = HEAD_RE.sub('', s)
+    s = BODY_RE.sub('', s)
+    if '</head>' not in s or '</body>' not in s:
+        raise SystemExit('❌ </head> 나 </body> 가 없습니다')
+    theme = THEME_JS_DARK if '랜딩은 항상 다크' in s else THEME_JS
+    s = s.replace('</head>', (HEAD % theme) + '</head>', 1)
+    return s.replace('</body>', BODY + '</body>', 1)
 
 
 def main():
