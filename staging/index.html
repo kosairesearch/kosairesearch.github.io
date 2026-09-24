@@ -351,7 +351,7 @@ main{flex:1;padding:8px 0 64px}
     "검색 결과가 없습니다":"No results found",
     "다른 종목명·티커·업종으로 검색해 보시기 바랍니다.":"Try a different name, ticker, or sector.",
     "해당 업종 종목이 없습니다.":"No stocks in this sector.",
-    "관심 종목":"Watchlist","관심종목":"Watchlist",
+    "관심 종목":"Watchlist","관심종목":"Watchlist","멤버십":"Pricing",
     "코스피":"KOSPI","코스닥":"KOSDAQ","코넥스":"KONEX",
     "시가총액":"Market Cap","거래대금":"Turnover","거래량":"Volume",
     "현재가":"Price","등락률":"Change","시장":"Market","상승 종목":"Gainers",
@@ -563,6 +563,23 @@ body::after,body::before{display:none}
 html.lenis,html.lenis body{height:auto}
 .lenis [data-lenis-prevent]{overscroll-behavior:contain}
 .lenis.lenis-smooth iframe{pointer-events:none}</style>
+<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 가운데. scripts/patch_header.py 가 넣는다. 손으로 고치지 말 것. -->
+<script id="kosTheme">document.documentElement.setAttribute('data-theme','dark');</script>
+<style id="kosNav">
+@view-transition{navigation:auto}
+:root{--nav-bar:rgba(255,255,255,.58);--nav-line:rgba(0,0,0,.06)}
+:root[data-theme="dark"]{--nav-bar:rgba(14,14,22,.55);--nav-line:rgba(255,255,255,.08)}
+html .nav{top:var(--kos-bar-h,0px);margin:0;max-width:none;width:auto;min-height:60px;border:0;border-radius:0;
+  padding:11px calc(max(var(--pad),(100% - 1120px)/2) + 12px) 11px calc(max(var(--pad),(100% - 1120px)/2) + 16px);
+  background:transparent;box-shadow:none;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+  transition:background-color .25s ease,box-shadow .25s ease}
+html .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--nav-line)}
+html .nav-spacer{min-height:32px}
+html .nav-links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin-left:0;gap:14px}
+html .nav-links a:hover,html .nav .icon-btn:hover,html:root[data-theme="dark"] .nav-links a:hover,html:root[data-theme="dark"] .nav .icon-btn:hover{background:transparent}
+html .nav-links a.active,html:root[data-theme="dark"] .nav-links a.active{background:transparent}
+html .mobile-menu{top:calc(60px + var(--kos-bar-h,0px))}
+</style>
 </head>
 <body>
 <div class="lp-bg"><canvas id="lpCanvas"></canvas></div>
@@ -576,6 +593,7 @@ html.lenis,html.lenis body{height:auto}
     <a href="Reports.html">리포트</a>
     <a href="industry.html">업종 분석</a>
       <a href="Watchlist.html">관심종목</a>
+    <a href="pricing.html">멤버십</a>
     <a href="brief.html">모닝브리핑</a>
   </div>
   <div class="nav-spacer"></div>
@@ -591,6 +609,7 @@ html.lenis,html.lenis body{height:auto}
   <a href="Reports.html">리포트</a>
   <a href="industry.html">업종 분석</a>
   <a href="Watchlist.html">관심종목</a>
+  <a href="pricing.html">멤버십</a>
   <a href="brief.html">모닝브리핑</a>
 </div>
 
@@ -634,7 +653,7 @@ html.lenis,html.lenis body{height:auto}
     <div class="foot-inner glass">
       <div class="foot-grid">
         <div class="foot-brand"><a class="brand" href="./"><img class="brand-logo brand-logo--light" src="../assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="../assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
-        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종 분석</a></li><li><a href="Watchlist.html">관심종목</a></li><li><a href="brief.html">모닝브리핑</a></li></ul></div>
+        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종 분석</a></li><li><a href="Watchlist.html">관심종목</a></li><li><a href="pricing.html">멤버십</a></li><li><a href="brief.html">모닝브리핑</a></li></ul></div>
         <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
         <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
       </div>
@@ -1742,22 +1761,8 @@ try{
      smooth-scroll.js 맨 위 설명 참고. 빼려면 이 두 줄만 지우면 된다. -->
 <script src="lenis.js?v=3a0cb7e8"></script>
 <script src="smooth-scroll.js?v=b93f971f"></script>
-<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 가운데. scripts/patch_header.py 가 넣는다. 손으로 고치지 말 것. -->
-<style id="kosNav">
-:root{--nav-bar:rgba(255,255,255,.58);--nav-line:rgba(0,0,0,.06)}
-:root[data-theme="dark"]{--nav-bar:rgba(14,14,22,.55);--nav-line:rgba(255,255,255,.08)}
-.nav{top:var(--kos-bar-h,0px);margin:0;max-width:none;width:auto;min-height:60px;border:0;border-radius:0;
-  padding:11px calc(max(var(--pad),(100% - 1120px)/2) + 12px) 11px calc(max(var(--pad),(100% - 1120px)/2) + 16px);
-  background:transparent;box-shadow:none;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
-  transition:background-color .25s ease,box-shadow .25s ease}
-.nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--nav-line)}
-.nav-spacer{min-height:32px}
-.nav-links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin-left:0;gap:14px}
-.nav-links a:hover,.nav .icon-btn:hover,:root[data-theme="dark"] .nav-links a:hover,:root[data-theme="dark"] .nav .icon-btn:hover{background:transparent}
-.nav-links a.active,:root[data-theme="dark"] .nav-links a.active{background:transparent}
-.mobile-menu{top:calc(60px + var(--kos-bar-h,0px))}
-</style>
-<script>
+<script id="kosNavJs">
+/* 헤더 띠 — 32px 넘게 내리면 .scrolled (head 의 #kosNav 참고). 프레임마다 한 번만 본다. */
 (function(){
   var nav=document.querySelector('.nav'); if(!nav) return; var tick=false;
   function upd(){ tick=false; nav.classList.toggle('scrolled',(window.scrollY||document.documentElement.scrollTop)>32); }
