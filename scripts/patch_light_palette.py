@@ -9,7 +9,8 @@
 
 무엇을 바꾸나 — 테마 변수(--fg-1)가 있는 페이지 전부, 랜딩(index.html)은 뺀다(항상 다크라 라이트 규칙이 안 먹는다).
   · :root 의 --fg-1:rgb(0,0,0) → rgb(20,20,20), --bg-1:rgb(242,243,250) → rgb(249,248,246)
-    (--bg-1 은 '페이지 바탕색' 토큰이다 — 스테이징 stock 의 페이월 흐림이 이 색으로 사라지므로 바탕과 같아야 이음새가 없다)
+    (--bg-1 은 '페이지 바탕색' 토큰이다 — 카드·팝업 바탕(auth-state · consent · settings-panel · 스테이징 pricing)과
+     검정 단추 위 글자색(Watchlist · About)에 쓰이므로 바탕과 같은 색이어야 한다)
   · body · body::after 의 background:#f2f3f5 → #f9f8f6
   · <style> 안의 라이트 규칙(선택자에 data-theme="dark" 가 없는 규칙)에 박힌 순검정 #000 → #141414
     — 검정 단추(.btn-primary · .watch-btn · .search-go · 탭 active · 체크박스). 다크 규칙의 #000(흰 단추의 글자)은 그대로.
