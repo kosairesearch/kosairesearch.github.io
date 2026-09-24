@@ -21,11 +21,14 @@
      · 테마도 같은 이유로 <head> 에서 먼저 정한다 — 원래는 본문 끝 applyTheme() 가 정해서 다크로
        쓰는 사람에게는 매 이동마다 밝은 바탕이 한 번 번쩍였다. 저장 키 kos-theme, 기본 다크,
        랜딩은 늘 다크(본문의 "랜딩은 항상 다크" 표시로 안다).
-     · <meta name="theme-color"> + #kosThemeColor — iOS 사파리는 상태바(위)와 주소창(아래) 뒤를 페이지
-       배경색으로 칠하는데, 색을 알려 주지 않으면 스스로 짐작하고 테마를 바꿔도 다시 짐작하지 않는다.
-       그래서 라이트↔다크를 누르면 위아래에 옛 색이 남았다(2026-09-24 사장, 휴대폰). 테마마다
-       라이트 #f9f8f6 · 다크 #0e0e16 을 직접 알리고, data-theme 가 바뀌면(어느 페이지의 전환 단추든)
-       MutationObserver 가 따라 바꾼다.
+     · 상태바·주소창 뒤 색(휴대폰) — 라이트↔다크를 누르면 위아래에 옛 색이 남았다(2026-09-24 사장).
+       두 겹으로 막는다. (1) <meta name="theme-color"> + #kosThemeColor: 안드로이드 크롬·iOS 15~18·
+       macOS 사파리는 이 메타를 쓴다. data-theme 가 바뀌면 MutationObserver 가 값을 따라 바꾼다.
+       (2) #kosEdgeTop/#kosEdgeBot 띠: iOS 26 사파리(유리 UI)는 메타를 안 쓰고, 화면 위·아래 가장자리에
+       닿은 fixed/sticky 요소의 배경색을 읽어 칠한다(WebKit LocalFrameView::fixedContainerEdges).
+       우리 .nav 는 투명이라 사파리가 처음 찍어 둔 색을 계속 썼다 — 그래서 옛 색. 페이지색 12px·20%
+       띠를 위아래에 두면 매번 현재 테마 색을 읽는다(손가락 기기에서만, 랜딩은 끔). 사파리가 없는
+       환경이라 실기기 검증은 사장 휴대폰에서 한다.
      · @view-transition{navigation:auto} — 같은 사이트 안에서 페이지를 옮길 때 브라우저가 옛 화면과
        새 화면을 0.25초 겹쳐 보여 준다(크롬 126+ · 사파리 18.2+, 나머지는 그냥 넘어간다).
        Resend 처럼 "부드럽게 전환"되는 느낌은 여기서 온다.
@@ -78,8 +81,8 @@ THEME_JS_DARK = "document.documentElement.setAttribute('data-theme','dark');"
 HEAD = '''<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 가운데 · 푸터·로그인 상자 없음. scripts/patch_header.py 가 넣는다. 손으로 고치지 말 것. -->
 <script id="kosTheme">%s</script>
 <meta name="theme-color" content="#f9f8f6">
-<script id="kosThemeColor">/* 사파리(iOS) 상태바·주소창 색 — 알려 주지 않으면 사파리가 페이지 배경을 짐작해 칠하는데, 테마를 바꿔도
-   다시 짐작하지 않아 옛 색이 위아래에 남는다(2026-09-24 사장). 테마(data-theme)가 바뀔 때마다 직접 알린다. */
+<script id="kosThemeColor">/* 상태바·주소창 색 힌트(theme-color) — 안드로이드 크롬 · iOS 15~18 · macOS 사파리용. 테마(data-theme)가 바뀌면 따라 바꾼다.
+   iOS 26 사파리는 이 메타를 안 쓴다 — 화면 위·아래 가장자리에 닿은 fixed 요소의 배경색을 스스로 읽는다(아래 #kosEdgeTop/#kosEdgeBot). */
 (function(){var m=document.querySelector('meta[name="theme-color"]'),r=document.documentElement;
   function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0e0e16':'#f9f8f6')}
   tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme']})})();</script>
@@ -100,9 +103,21 @@ html .nav-links a:hover,html .nav .icon-btn:hover,html:root[data-theme="dark"] .
 html .nav-links a.active,html:root[data-theme="dark"] .nav-links a.active{background:transparent}
 html .mobile-menu{top:calc(60px + var(--kos-bar-h,0px))}
 html .foot-inner,html:root[data-theme="dark"] .foot-inner,html .auth-card,html:root[data-theme="dark"] .auth-card{background:transparent;border:0;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none}
-</style>
+/* iOS 26 사파리의 상태바·주소창 뒤 색 — 사파리가 화면 위·아래 가장자리(가운데, 4px 안쪽)에 닿은 fixed/sticky 요소를 찾아 그 배경색으로
+   칠한다(theme-color 메타는 안 쓴다). 투명한 .nav 만 있으면 처음 찍어 둔 색을 계속 쓰므로 테마를 바꿔도 위아래에 옛 색이 남았다
+   (2026-09-24 사장, 휴대폰). 색만 있는 12px 띠 둘을 가장자리에 두면 사파리가 매번 현재 테마 색을 읽는다. 페이지색 20%% 라 보이지 않고,
+   손가락 기기에서만 둔다. WebKit LocalFrameView::fixedContainerEdges 조건: 두께 >10px · 불투명도 ≥.1 · 폭 ≥90%% · 배경색이 있을 것. */
+#kosEdgeTop,#kosEdgeBot{display:none}
+@media (hover:none) and (pointer:coarse){
+  #kosEdgeTop,#kosEdgeBot{display:block;position:fixed;left:0;right:0;height:12px;z-index:60;pointer-events:none;opacity:.2;background:#f9f8f6}
+  #kosEdgeTop{top:0}
+  #kosEdgeBot{bottom:0}
+  :root[data-theme="dark"] #kosEdgeTop,:root[data-theme="dark"] #kosEdgeBot{background:#0e0e16}
+}
+%s</style>
 '''
-BODY = '''<script id="kosNavJs">
+BODY = '''<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>
+<script id="kosNavJs">
 /* 헤더 띠 — 32px 넘게 내리면 .scrolled (head 의 #kosNav 참고). 프레임마다 한 번만 본다. */
 (function(){
   var nav=document.querySelector('.nav'); if(!nav) return; var tick=false;
@@ -115,7 +130,7 @@ BODY = '''<script id="kosNavJs">
 # 전에 넣은 것(본문 끝의 스타일+스크립트 한 덩이)과 지금 것(head 의 스타일 · 본문 끝의 스크립트) 모두 걷는다
 OLD_RE = re.compile(r'<!-- 헤더 — 상자 없이[^\n]*\n<style id="kosNav">.*?</script>\n', re.S)
 HEAD_RE = re.compile(r'<!-- 헤더 — 상자 없이[^\n]*\n<script id="kosTheme">.*?</style>\n(?:<link rel="preload" as="font"[^\n]*\n)*', re.S)
-BODY_RE = re.compile(r'<script id="kosNavJs">.*?</script>\n', re.S)
+BODY_RE = re.compile(r'(?:<div id="kosEdgeTop"[^\n]*\n)?<script id="kosNavJs">.*?</script>\n', re.S)
 
 
 def has_std_header(s):
@@ -134,11 +149,14 @@ def apply(s):
     s = BODY_RE.sub('', s)
     if '</head>' not in s or '</body>' not in s:
         raise SystemExit('❌ </head> 나 </body> 가 없습니다')
-    theme = THEME_JS_DARK if '랜딩은 항상 다크' in s else THEME_JS
+    landing = '랜딩은 항상 다크' in s
+    theme = THEME_JS_DARK if landing else THEME_JS
+    # 랜딩은 테마 전환이 없고 배경이 그라디언트라 띠가 오히려 색을 어긋나게 한다 — 끈다
+    edge_off = 'html #kosEdgeTop,html #kosEdgeBot{display:none}\n' if landing else ''
     m = re.search(r'url\("([^"]*)Pretendard-Regular\.woff2"\)', s)
     pre = ''.join(f'<link rel="preload" as="font" type="font/woff2" crossorigin href="{m.group(1)}Pretendard-{w}.woff2">\n'
                   for w in ('Regular', 'Medium', 'SemiBold', 'Bold')) if m else ''
-    s = s.replace('</head>', (HEAD % theme) + pre + '</head>', 1)
+    s = s.replace('</head>', (HEAD % (theme, edge_off)) + pre + '</head>', 1)
     return s.replace('</body>', BODY + '</body>', 1)
 
 

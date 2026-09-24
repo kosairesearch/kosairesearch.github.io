@@ -422,8 +422,8 @@ html.lenis,html.lenis body{height:auto}
 <!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 가운데 · 푸터·로그인 상자 없음. scripts/patch_header.py 가 넣는다. 손으로 고치지 말 것. -->
 <script id="kosTheme">(function(){var t='dark';try{t=localStorage.getItem('kos-theme')||'dark'}catch(e){}document.documentElement.setAttribute('data-theme',t)})();</script>
 <meta name="theme-color" content="#f9f8f6">
-<script id="kosThemeColor">/* 사파리(iOS) 상태바·주소창 색 — 알려 주지 않으면 사파리가 페이지 배경을 짐작해 칠하는데, 테마를 바꿔도
-   다시 짐작하지 않아 옛 색이 위아래에 남는다(2026-09-24 사장). 테마(data-theme)가 바뀔 때마다 직접 알린다. */
+<script id="kosThemeColor">/* 상태바·주소창 색 힌트(theme-color) — 안드로이드 크롬 · iOS 15~18 · macOS 사파리용. 테마(data-theme)가 바뀌면 따라 바꾼다.
+   iOS 26 사파리는 이 메타를 안 쓴다 — 화면 위·아래 가장자리에 닿은 fixed 요소의 배경색을 스스로 읽는다(아래 #kosEdgeTop/#kosEdgeBot). */
 (function(){var m=document.querySelector('meta[name="theme-color"]'),r=document.documentElement;
   function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0e0e16':'#f9f8f6')}
   tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme']})})();</script>
@@ -444,6 +444,17 @@ html .nav-links a:hover,html .nav .icon-btn:hover,html:root[data-theme="dark"] .
 html .nav-links a.active,html:root[data-theme="dark"] .nav-links a.active{background:transparent}
 html .mobile-menu{top:calc(60px + var(--kos-bar-h,0px))}
 html .foot-inner,html:root[data-theme="dark"] .foot-inner,html .auth-card,html:root[data-theme="dark"] .auth-card{background:transparent;border:0;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+/* iOS 26 사파리의 상태바·주소창 뒤 색 — 사파리가 화면 위·아래 가장자리(가운데, 4px 안쪽)에 닿은 fixed/sticky 요소를 찾아 그 배경색으로
+   칠한다(theme-color 메타는 안 쓴다). 투명한 .nav 만 있으면 처음 찍어 둔 색을 계속 쓰므로 테마를 바꿔도 위아래에 옛 색이 남았다
+   (2026-09-24 사장, 휴대폰). 색만 있는 12px 띠 둘을 가장자리에 두면 사파리가 매번 현재 테마 색을 읽는다. 페이지색 20% 라 보이지 않고,
+   손가락 기기에서만 둔다. WebKit LocalFrameView::fixedContainerEdges 조건: 두께 >10px · 불투명도 ≥.1 · 폭 ≥90% · 배경색이 있을 것. */
+#kosEdgeTop,#kosEdgeBot{display:none}
+@media (hover:none) and (pointer:coarse){
+  #kosEdgeTop,#kosEdgeBot{display:block;position:fixed;left:0;right:0;height:12px;z-index:60;pointer-events:none;opacity:.2;background:#f9f8f6}
+  #kosEdgeTop{top:0}
+  #kosEdgeBot{bottom:0}
+  :root[data-theme="dark"] #kosEdgeTop,:root[data-theme="dark"] #kosEdgeBot{background:#0e0e16}
+}
 </style>
 <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/Pretendard-Regular.woff2">
 <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/Pretendard-Medium.woff2">
@@ -811,6 +822,7 @@ if(window.KOSi18n) KOSi18n.register({
      smooth-scroll.js 맨 위 설명 참고. 빼려면 이 두 줄만 지우면 된다. -->
 <script src="lenis.js?v=3a0cb7e8"></script>
 <script src="smooth-scroll.js?v=b93f971f"></script>
+<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>
 <script id="kosNavJs">
 /* 헤더 띠 — 32px 넘게 내리면 .scrolled (head 의 #kosNav 참고). 프레임마다 한 번만 본다. */
 (function(){
