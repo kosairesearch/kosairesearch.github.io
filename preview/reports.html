@@ -152,7 +152,7 @@ a{color:inherit;text-decoration:none}
 .r-price{text-align:right;font:500 16px/22px var(--font);white-space:nowrap} .r-price .c{margin-left:8px;font:600 13px/18px var(--font)}
 .r-date{text-align:right;font:400 13px/18px var(--font);color:var(--ink-55)}
 .wl{width:36px;height:36px;border:0;background:none;display:inline-flex;align-items:center;justify-content:center;color:var(--ink-30);cursor:pointer;border-radius:8px;padding:0;justify-self:center;transition:color .12s} .wl:hover{color:var(--ink)}
-.wl svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round} .wl.on{color:var(--ink)} .wl.on svg{fill:currentColor}
+.wl svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round} .wl .ck{display:none} .wl.on{color:var(--ink)} .wl.on .pl{display:none} .wl.on .ck{display:block;stroke-width:2.4}
 /* 쪽 넘기기 */
 .pager{display:flex;justify-content:space-between;align-items:center;margin-top:18px;font:400 13px/20px var(--font);color:var(--ink-55)}
 .pctl{position:relative;display:flex;gap:2px} .pctl>.ind{margin-top:4px} .pctl button{border:0;background:none;min-width:32px;height:32px;padding:0 6px;font:500 13px var(--font);color:var(--ink-55);cursor:pointer}
@@ -231,7 +231,7 @@ a{color:inherit;text-decoration:none}
   <div class="fchips" id="fchips"></div>
   <p class="count"><b id="countN">0</b>개 종목</p>
   <div class="rl" id="rl">
-    <div class="rl-head"><span>NO.</span><span>종목</span><span>리포트 제목</span><span>현재가</span><span>작성일</span><span>북마크</span></div>
+    <div class="rl-head"><span>NO.</span><span>종목</span><span>리포트 제목</span><span>현재가</span><span>작성일</span><span>관심</span></div>
     <div id="rows"></div>
   </div>
   <div class="pager" id="pager" hidden><span id="pinfo"></span><div class="pctl" id="pctl"></div></div>
@@ -293,12 +293,13 @@ a{color:inherit;text-decoration:none}
     return l}
   /* 북마크 — 실사이트에서는 KOSWatch(Firestore)가 맡는다. 시안은 화면 안에서만. */
   var WL={};function isW(tk){return !!WL[tk]}
-  var bmSvg='<svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>';
+  /* 관심종목 단추 — 더하기(추가) → 체크(추가됨). 상세 페이지의 '＋ 관심종목 추가' 와 같은 기호 */
+  var bmSvg='<svg class="pl" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>';
   function rowHtml(r,i){var c=r.change||0,t=repTitle(r.ticker),d=repDate(r.ticker);
     return '<a class="row" href="/stock.html?ticker='+r.ticker+'" data-tk="'+r.ticker+'"><span class="rk">'+(i+1)+'</span>'
       +'<div><div class="r-name">'+esc(r.name)+'</div><div class="r-meta">'+r.ticker+' · '+esc(r.market)+' · '+esc(r.sector)+metricBits(r).map(function(m){return ' · '+m}).join('')+(d?'<span class="md"> · <b>'+esc(d)+'</b></span>':'')+'</div></div>'
       +'<div class="r-title'+(t?'':' none')+'">'+(t?esc(t):'리포트 준비 중')+'</div><div class="r-price">'+won(r.price)+'<span class="c '+dir(c)+'">'+chg(c)+'</span></div><div class="r-date">'+esc(d||'—')+'</div>'
-      +'<button type="button" class="wl'+(isW(r.ticker)?' on':'')+'" data-wl="'+r.ticker+'" aria-label="관심종목 추가/해제">'+bmSvg+'</button></a>'}
+      +'<button type="button" class="wl'+(isW(r.ticker)?' on':'')+'" data-wl="'+r.ticker+'" title="'+(isW(r.ticker)?'관심종목에서 빼기':'관심종목 추가')+'" aria-label="'+(isW(r.ticker)?'관심종목에서 빼기':'관심종목 추가')+'" aria-pressed="'+(isW(r.ticker)?'true':'false')+'">'+bmSvg+'</button></a>'}
   /* ── 숫자 조건 ── PER·PBR·배당·성장률은 /data/valuation.js 에 있다. 필터를 처음 건드릴 때 받는다. */
   var valState='none',valPromise=null;
   function attachVal(){var VAL=(window.KOS_VALUATION&&KOS_VALUATION.stocks)||{};REPORTS.forEach(function(s){var v=VAL[s.ticker];if(!v)return;
@@ -394,7 +395,7 @@ a{color:inherit;text-decoration:none}
     for(var i=bs;i<=be;i++)b+='<button type="button" class="'+(i===state.page?'on':'')+'" data-pg="'+i+'"><span>'+i+'</span></button>';b+='<button type="button" '+(state.page>=pages?'disabled':'')+' data-pg="next">›</button>';
     var pc=document.getElementById('pctl');pc.querySelectorAll('button').forEach(function(x){x.remove()});pc.insertAdjacentHTML('afterbegin',b);window.kosInd(pc,'x','.on>span')(true)}
   document.getElementById('searchInput').addEventListener('input',function(e){state.q=e.target.value;state.page=1;render()});
-  rowsEl.addEventListener('click',function(e){var b=e.target.closest('.wl');if(!b)return;e.preventDefault();e.stopPropagation();var tk=b.dataset.wl;if(isW(tk))delete WL[tk];else WL[tk]=1;b.classList.toggle('on',isW(tk))});
+  rowsEl.addEventListener('click',function(e){var b=e.target.closest('.wl');if(!b)return;e.preventDefault();e.stopPropagation();var tk=b.dataset.wl;if(isW(tk))delete WL[tk];else WL[tk]=1;var on=isW(tk);b.classList.toggle('on',on);b.title=on?'관심종목에서 빼기':'관심종목 추가';b.setAttribute('aria-label',b.title);b.setAttribute('aria-pressed',on?'true':'false')});
   document.getElementById('pctl').addEventListener('click',function(e){var b=e.target.closest('button[data-pg]');if(!b)return;var pg=b.dataset.pg;if(pg==='prev')state.page=Math.max(1,state.page-1);else if(pg==='next')state.page++;else state.page=+pg;render();
     var pad=parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop)||0;window.scrollTo({top:rlEl.getBoundingClientRect().top+window.scrollY-pad,behavior:'smooth'})});
   document.getElementById('emptyReset').addEventListener('click',function(){state.filters={};state.page=1;render()});
