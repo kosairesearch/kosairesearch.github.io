@@ -3,5 +3,6 @@ Allow: /
 Disallow: /auth-action.html
 Disallow: /Watchlist.html
 Disallow: /staging/   # 브랜치 미리보기 — 검색에 나오면 안 된다
+Disallow: /preview/   # 디자인 미리보기(scripts/make_preview.py) — 검색에 나오면 안 된다
 
 Sitemap: https://kosai.kr/sitemap.xml
