@@ -247,6 +247,18 @@ WebKit 소스(LocalFrameView::fixedContainerEdges)로 확인한 기제:
     손가락 기기(hover:none·pointer:coarse)에서만, 랜딩은 끈다. theme-color 메타는 다른 브라우저용으로 남긴다.
   · 이 환경에는 사파리가 없다. 실기기(사장 휴대폰)에서만 확인된다. 되돌리거나 띠를 얇게/투명하게 하면 재발한다.
 
+## 종목 페이지는 종목마다 미리 만든다 — r/ 로봇용 사본은 갈 것 *(2026-09-25 사장 "대기업처럼 해줘")*
+
+`stock.html` 은 빈 틀이고 글은 JS 가 그린다. 로봇은 JS 를 안 돌려 `r/{ticker}.html`(로봇용 사본 2,681장)을
+따로 두고 있었는데, 사람이 검색으로 그 페이지에 떨어진다. 결정: 큰 회사처럼 종목마다 완성된 HTML 을 미리 만든다.
+
+  · 그리는 모듈 `scripts/stock_page.py` — 시안 한 장(`build_stock_comp.py` → preview/stock.html)과 전 종목 생성기
+    (`build_stock_pages.py` → stock/{ticker}.html · assets 한 벌)가 같은 render 를 쓴다. 옷은 한 곳(PAGE_CSS)에만 있다.
+  · 등급 셋: 전체(v2) · 옛 형식(v1, 재무 수치 없음) · 리포트 준비 중(새 상장). 셋 다 페이지가 있어야 한다.
+  · 지금은 표본 38장만 `preview/stock/` 에 있다(noindex). 전 종목(약 100MB, r/ 와 같음)은 실사이트로 옮기는 날
+    `--all --out stock --index` 로. 순서(자동화 교체 · 링크 · 옛 주소 껍데기 · r/ 폐기 · 사이트맵)는
+    `docs/design/static-stock-pages.md` 에 있다. 그날까지 `generate_geo_pages.py` 와 r/ 는 그대로 둔다.
+
 ## 디자인 헌장 — docs/design/KOSAI-design-charter.md *(2026-09-24, 아직 적용 전)*
 
 사장이 "세계 최고의 웹 디자이너가 되어 모든 이론을 학습하라" 고 해서 12갈래 조사(311 출처) → 종합 → 세 비평 → 수정을
