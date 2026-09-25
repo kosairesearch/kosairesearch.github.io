@@ -33,7 +33,9 @@ CSS = '''
 /* 로그인·회원가입·약관 동의·계정 인증은 400px 단을 가운데에 — 제목도 가운데, 입력 칸 이름표는 왼쪽(읽는 방향) */
 .auth:not(.wide){margin-left:auto;margin-right:auto} .auth:not(.wide) .crumb,.auth:not(.wide) h1,.auth:not(.wide) .sub{text-align:center}
 .ac-body{text-align:center}
-.alert.info{border-top-color:var(--ink);color:var(--ink-72)}
+.alert.info{color:var(--ink-72)}
+.consent+.alert{margin:14px 0 0}
+.ac-body form{text-align:left}
 /* 약관 동의 */
 .consent{margin-top:28px;border-top:1px solid var(--line)} .consent .check{padding:13px 0} .consent .check.all{font-weight:600;border-bottom:1px solid var(--line)}
 .consent .doc{margin-left:auto;font:400 12px/16px var(--font);color:var(--ink-55);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .consent .doc:hover{color:var(--ink)}
@@ -67,13 +69,13 @@ CSS = '''
 LOGIN = f'''<main class="wrap"><div class="auth">
   <p class="crumb">계정</p><h1>로그인</h1>
   <p class="sub">KOSAI 계정으로 로그인하시면 관심 종목과 리포트를 이어서 보실 수 있습니다.</p>
-  <div class="alert" id="authErr" role="alert"></div>
   {social('home')}
   <div class="divider">또는 이메일로 로그인</div>
   <form id="emailForm" novalidate>
-    <div class="fld"><label for="email">이메일</label><input id="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
-    <div class="fld"><label for="password">비밀번호</label><input id="password" type="password" autocomplete="current-password" placeholder="비밀번호를 입력하십시오" required></div>
+    <div class="fld"><label for="email">이메일</label><input id="email" type="email" autocomplete="email" placeholder="you@example.com" required><div class="msg"></div></div>
+    <div class="fld"><label for="password">비밀번호</label><input id="password" type="password" autocomplete="current-password" placeholder="비밀번호를 입력하십시오" required><div class="msg"></div></div>
     <div class="row-r"><a href="#" id="forgotLink">비밀번호를 잊으셨나요?</a></div>
+    <div class="alert" id="authErr" role="alert"></div>
     <button type="submit" class="btn btn-ink" id="emailSubmit">로그인</button>
   </form>
   <p class="auth-foot">아직 계정이 없으신가요? <a href="/preview/signup.html">회원가입</a></p>
@@ -82,13 +84,13 @@ LOGIN = f'''<main class="wrap"><div class="auth">
 SIGNUP = f'''<main class="wrap"><div class="auth">
   <p class="crumb">계정</p><h1>회원가입</h1>
   <p class="sub">무료 계정을 만드시면 관심 종목과 AI 리포트를 저장하실 수 있습니다.</p>
-  <div class="alert" id="authErr" role="alert"></div>
   {social('consent')}
   <div class="divider">또는 이메일로 가입</div>
   <form id="emailForm" novalidate>
-    <div class="fld"><label for="email">이메일</label><input id="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
-    <div class="fld"><label for="password">비밀번호</label><input id="password" type="password" autocomplete="new-password" placeholder="영문·숫자 포함 8자 이상" required></div>
-    <div class="fld"><label for="password2">비밀번호 확인</label><input id="password2" type="password" autocomplete="new-password" placeholder="비밀번호를 다시 입력하십시오" required></div>
+    <div class="fld"><label for="email">이메일</label><input id="email" type="email" autocomplete="email" placeholder="you@example.com" required><div class="msg"></div></div>
+    <div class="fld"><label for="password">비밀번호</label><input id="password" type="password" autocomplete="new-password" placeholder="영문·숫자 포함 8자 이상" required><div class="msg"></div></div>
+    <div class="fld"><label for="password2">비밀번호 확인</label><input id="password2" type="password" autocomplete="new-password" placeholder="비밀번호를 다시 입력하십시오" required><div class="msg"></div></div>
+    <div class="alert" id="authErr" role="alert"></div>
     <button type="submit" class="btn btn-ink" id="emailSubmit">회원가입</button>
   </form>
   <p class="auth-foot">이미 계정이 있으신가요? <a href="/preview/login.html">로그인</a></p>
@@ -97,7 +99,6 @@ SIGNUP = f'''<main class="wrap"><div class="auth">
 CONSENT = f'''<main class="wrap"><div class="auth">
   <p class="crumb">계정</p><h1 id="ttl">약관 동의</h1>
   <p class="sub" id="lede">가입을 완료하시려면 아래 항목에 동의하여 주시기 바랍니다.</p>
-  <div class="alert" id="authErr" role="alert"></div>
   <div class="consent" id="consentMount">
     <label class="check all" data-k="all"><span class="box">{CHECK}</span>전체 동의</label>
     <label class="check" data-k="age14" data-req="1"><span class="box">{CHECK}</span>[필수] 만 14세 이상입니다</label>
@@ -105,6 +106,7 @@ CONSENT = f'''<main class="wrap"><div class="auth">
     <label class="check" data-k="privacy" data-req="1"><span class="box">{CHECK}</span>[필수] 개인정보 수집·이용 동의<a class="doc" href="/preview/privacy.html" target="_blank" rel="noopener">보기</a></label>
     <label class="check" data-k="marketing"><span class="box">{CHECK}</span>[선택] 마케팅 정보 수신 동의</label>
   </div>
+  <div class="alert" id="authErr" role="alert"></div>
   <div class="acts"><button type="button" class="btn btn-ink" id="agreeBtn">동의하고 시작하기</button><button type="button" class="tbtn" id="cancelBtn">동의하지 않고 취소</button></div>
   <p class="auth-note" id="foot">동의하지 않으면 가입이 취소되고 계정은 남지 않습니다.</p>
 </div></main>'''
@@ -150,30 +152,38 @@ REASONS = ["원하는 종목·정보가 부족합니다", "정보가 정확하�
 
 JS_COMMON = r'''
   var EMAIL=/^[^@\s]+@[^@\s]+\.[^@\s]+$/,err=document.getElementById('authErr');
+  /* 오류는 그 칸 밑에(.fld .msg) — 빈 칸은 한꺼번에 다 표시하고 첫 칸에 초점. 단추 위의 .alert 은 칸 하나에 매이지 않는 것만:
+     실사이트에서는 서버 응답(비밀번호 틀림 · 시도 초과 · 인증 안 된 계정)이 여기 온다. 시안에서는 안내(정보색)만 쓴다. */
   function showErr(m,info){if(!err)return;err.textContent=m;err.classList.toggle('info',!!info);err.classList.add('show')}
   function hideErr(){if(err)err.classList.remove('show')}
+  function fldMsg(id,m){var f=document.getElementById(id).closest('.fld');f.querySelector('.msg').textContent=m;f.classList.add('err')}
+  function clearAll(){hideErr();document.querySelectorAll('.fld.err').forEach(function(f){f.classList.remove('err')})}
+  function focusBad(ids){var id=ids.filter(function(i){return document.getElementById(i).closest('.fld').classList.contains('err')})[0];if(id)document.getElementById(id).focus();return !!id}
+  document.querySelectorAll('.fld input').forEach(function(i){i.addEventListener('input',function(){i.closest('.fld').classList.remove('err')})});
   function go(page,email){location.href='/preview/'+page+'.html'+(email?'?user='+encodeURIComponent(email):'')}
 '''
 
 LOGIN_JS = r'''(function(){''' + JS_COMMON + r'''
   document.querySelectorAll('.sbtn').forEach(function(b){b.addEventListener('click',function(){go('home',b.dataset.user)})});
-  document.getElementById('emailForm').addEventListener('submit',function(e){e.preventDefault();hideErr();var email=document.getElementById('email').value.trim(),pw=document.getElementById('password').value;
-    if(!email){showErr('이메일을 입력하여 주시기 바랍니다.');document.getElementById('email').focus();return}
-    if(!pw){showErr('비밀번호를 입력하여 주시기 바랍니다.');document.getElementById('password').focus();return}
-    if(!EMAIL.test(email)){showErr('올바른 이메일 형식이 아닙니다.');return}
-    /* 실사이트: signInWithEmailAndPassword → 인증 안 된 계정이면 '이메일 인증이 필요합니다…' — 시안은 홈으로 */
+  document.getElementById('emailForm').addEventListener('submit',function(e){e.preventDefault();clearAll();var email=document.getElementById('email').value.trim(),pw=document.getElementById('password').value;
+    if(!email)fldMsg('email','이메일을 입력하여 주시기 바랍니다.');else if(!EMAIL.test(email))fldMsg('email','올바른 이메일 형식이 아닙니다.');
+    if(!pw)fldMsg('password','비밀번호를 입력하여 주시기 바랍니다.');
+    if(focusBad(['email','password']))return;
+    /* 실사이트: signInWithEmailAndPassword → 틀리면 단추 위 .alert 에 '이메일 또는 비밀번호가 올바르지 않습니다' · 인증 안 된 계정이면 안내 — 시안은 홈으로 */
     go('home',email)});
-  document.getElementById('forgotLink').addEventListener('click',function(e){e.preventDefault();var email=document.getElementById('email').value.trim();
-    if(!email){showErr('이메일을 먼저 입력하여 주시기 바랍니다.');document.getElementById('email').focus();return}
+  document.getElementById('forgotLink').addEventListener('click',function(e){e.preventDefault();clearAll();var email=document.getElementById('email').value.trim();
+    if(!email)fldMsg('email','이메일을 먼저 입력하여 주시기 바랍니다.');else if(!EMAIL.test(email))fldMsg('email','올바른 이메일 형식이 아닙니다.');
+    if(focusBad(['email']))return;
     showErr('비밀번호 재설정 메일을 보내 드렸습니다. 메일함을 확인하여 주시기 바랍니다.',true)});
 })();'''
 
 SIGNUP_JS = r'''(function(){''' + JS_COMMON + r'''
   document.querySelectorAll('.sbtn').forEach(function(b){b.addEventListener('click',function(){go('consent',b.dataset.user)})});
-  document.getElementById('emailForm').addEventListener('submit',function(e){e.preventDefault();hideErr();var email=document.getElementById('email').value.trim(),pw=document.getElementById('password').value,pw2=document.getElementById('password2').value;
-    if(!email||!EMAIL.test(email)){showErr(email?'올바른 이메일 형식이 아닙니다.':'이메일을 입력하여 주시기 바랍니다.');document.getElementById('email').focus();return}
-    if(pw.length<8||!/[A-Za-z]/.test(pw)||!/[0-9]/.test(pw)){showErr('비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.');document.getElementById('password').focus();return}
-    if(pw!==pw2){showErr('비밀번호가 일치하지 않습니다.');document.getElementById('password2').focus();return}
+  document.getElementById('emailForm').addEventListener('submit',function(e){e.preventDefault();clearAll();var email=document.getElementById('email').value.trim(),pw=document.getElementById('password').value,pw2=document.getElementById('password2').value;
+    if(!email)fldMsg('email','이메일을 입력하여 주시기 바랍니다.');else if(!EMAIL.test(email))fldMsg('email','올바른 이메일 형식이 아닙니다.');
+    if(!pw)fldMsg('password','비밀번호를 입력하여 주시기 바랍니다.');else if(pw.length<8||!/[A-Za-z]/.test(pw)||!/[0-9]/.test(pw))fldMsg('password','비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.');
+    if(!pw2)fldMsg('password2','비밀번호를 다시 입력하여 주시기 바랍니다.');else if(pw!==pw2)fldMsg('password2','비밀번호가 일치하지 않습니다.');
+    if(focusBad(['email','password','password2']))return;
     /* 실사이트: 계정을 만든 뒤 Consent.html 로 — 동의는 거기서 받는다 */
     go('consent',email)});
 })();'''
@@ -182,7 +192,7 @@ CONSENT_JS = r'''(function(){''' + JS_COMMON + r'''
   var qs=new URLSearchParams(location.search),email=qs.get('user')||'you@example.com';
   var rows=[].slice.call(document.querySelectorAll('#consentMount .check')),all=rows.shift();
   function sync(){all.classList.toggle('on',rows.every(function(r){return r.classList.contains('on')}))}
-  all.addEventListener('click',function(){var on=!all.classList.contains('on');rows.forEach(function(r){r.classList.toggle('on',on)});sync()});
+  all.addEventListener('click',function(){var on=!all.classList.contains('on');rows.forEach(function(r){r.classList.toggle('on',on)});sync();hideErr()});
   rows.forEach(function(r){r.addEventListener('click',function(e){if(e.target.closest('a'))return;r.classList.toggle('on');sync();hideErr()})});
   document.getElementById('agreeBtn').addEventListener('click',function(){var ok=rows.filter(function(r){return r.dataset.req}).every(function(r){return r.classList.contains('on')});
     if(!ok){showErr('필수 항목에 모두 동의하셔야 가입하실 수 있습니다.');return}
@@ -200,10 +210,14 @@ ACTION_JS = r'''(function(){
     else if(s==='error'){crumb.textContent='계정 인증';title.textContent='링크가 만료되었습니다';desc.textContent='보안을 위해 인증 링크는 일정 시간이 지나면 만료됩니다. 메일을 다시 요청하여 주시기 바랍니다.';body.innerHTML=btn('로그인 페이지로','/preview/login.html')}
     else if(s==='done'){crumb.textContent='비밀번호 재설정';title.textContent='비밀번호가 변경되었습니다';desc.textContent='새 비밀번호로 로그인하여 주시기 바랍니다.';body.innerHTML=btn('로그인하러 가기','/preview/login.html')}
     else if(s==='reset'){crumb.textContent='비밀번호 재설정';title.textContent='새 비밀번호 설정';desc.textContent=email+' 계정의 새 비밀번호를 입력하여 주시기 바랍니다.';
-      body.innerHTML='<form id="rs" novalidate><div class="fld"><label for="np">새 비밀번호</label><input id="np" type="password" autocomplete="new-password" placeholder="영문·숫자 포함 8자 이상" required></div><div class="fld"><label for="np2">새 비밀번호 확인</label><input id="np2" type="password" autocomplete="new-password" placeholder="비밀번호를 다시 입력하십시오" required></div><button type="submit" class="btn btn-ink" id="rsSubmit">비밀번호 변경</button></form>';
-      document.getElementById('rs').addEventListener('submit',function(e){e.preventDefault();var pw=document.getElementById('np').value,pw2=document.getElementById('np2').value;
-        if(pw.length<8||!/[A-Za-z]/.test(pw)||!/[0-9]/.test(pw)){err.textContent='비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.';err.classList.add('show');return}
-        if(pw!==pw2){err.textContent='비밀번호가 일치하지 않습니다.';err.classList.add('show');return}
+      body.innerHTML='<form id="rs" novalidate><div class="fld"><label for="np">새 비밀번호</label><input id="np" type="password" autocomplete="new-password" placeholder="영문·숫자 포함 8자 이상" required><div class="msg"></div></div><div class="fld"><label for="np2">새 비밀번호 확인</label><input id="np2" type="password" autocomplete="new-password" placeholder="비밀번호를 다시 입력하십시오" required><div class="msg"></div></div><button type="submit" class="btn btn-ink" id="rsSubmit">비밀번호 변경</button></form>';
+      var np=document.getElementById('np'),np2=document.getElementById('np2');
+      function fm(i,m){var f=i.closest('.fld');f.querySelector('.msg').textContent=m;f.classList.add('err')}
+      [np,np2].forEach(function(i){i.addEventListener('input',function(){i.closest('.fld').classList.remove('err')})});
+      document.getElementById('rs').addEventListener('submit',function(e){e.preventDefault();err.classList.remove('show');[np,np2].forEach(function(i){i.closest('.fld').classList.remove('err')});var pw=np.value,pw2=np2.value;
+        if(!pw)fm(np,'비밀번호를 입력하여 주시기 바랍니다.');else if(pw.length<8||!/[A-Za-z]/.test(pw)||!/[0-9]/.test(pw))fm(np,'비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.');
+        if(!pw2)fm(np2,'비밀번호를 다시 입력하여 주시기 바랍니다.');else if(pw!==pw2)fm(np2,'비밀번호가 일치하지 않습니다.');
+        var bad=[np,np2].filter(function(i){return i.closest('.fld').classList.contains('err')})[0];if(bad){bad.focus();return}
         show('done')})}
     else{crumb.textContent='계정 인증';title.textContent='처리 중…';desc.textContent='잠시만 기다려 주시기 바랍니다.';body.innerHTML='<div class="spin" aria-label="로딩"></div>'}}
   show(state);window.__acShow=show;

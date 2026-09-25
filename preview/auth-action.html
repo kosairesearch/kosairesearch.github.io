@@ -137,7 +137,8 @@ a{color:inherit;text-decoration:none}
 .check .count{margin-left:auto;font:400 12px/16px var(--font);color:var(--ink-55)}
 .submit{display:flex;align-items:center;gap:20px;margin-top:8px;flex-wrap:wrap} .form-note{margin:0;font:400 13px/20px var(--font);color:var(--ink-55)}
 .btn:disabled{opacity:.35;cursor:default}
-.alert{display:none;margin:0 0 20px;padding:10px 0;border-top:1px solid var(--up);border-bottom:1px solid var(--hair);font:400 13px/20px var(--font);color:var(--up)} .alert.show{display:block}
+/* 경고 글 — 상자·선 없이 붉은 글 한 줄, 단추 바로 위. 칸 하나에 매인 오류는 .fld .msg 로 그 칸 밑에 (2026-09-26 사장: "빨간 줄이 왜 있어?") */
+.alert{display:none;margin:0 0 18px;font:400 13px/20px var(--font);color:var(--up)} .alert.show{display:block}
 .tbtn{border:0;background:none;padding:0;font:500 13px/1 var(--font);color:var(--ink-72);cursor:pointer;transition:color .12s} .tbtn:hover{color:var(--ink)} .tbtn.danger{color:var(--up)}
 .sent{padding:8px 0 24px;max-width:520px} .sent h2{margin:0;font:700 22px/30px var(--font);letter-spacing:-.02em} .sent p{margin:12px 0 24px;font:400 15px/24px var(--font);color:var(--ink-72)}
 .auth{max-width:400px;padding:44px 0 72px} .auth .crumb{font:500 13px/20px var(--font);color:var(--ink-55)} .auth h1{margin:12px 0 0;font:700 32px/40px var(--font);letter-spacing:-.02em} .auth .sub{margin:12px 0 0;font:400 15px/24px var(--font);color:var(--ink-72)}
@@ -156,7 +157,9 @@ a{color:inherit;text-decoration:none}
 /* 로그인·회원가입·약관 동의·계정 인증은 400px 단을 가운데에 — 제목도 가운데, 입력 칸 이름표는 왼쪽(읽는 방향) */
 .auth:not(.wide){margin-left:auto;margin-right:auto} .auth:not(.wide) .crumb,.auth:not(.wide) h1,.auth:not(.wide) .sub{text-align:center}
 .ac-body{text-align:center}
-.alert.info{border-top-color:var(--ink);color:var(--ink-72)}
+.alert.info{color:var(--ink-72)}
+.consent+.alert{margin:14px 0 0}
+.ac-body form{text-align:left}
 /* 약관 동의 */
 .consent{margin-top:28px;border-top:1px solid var(--line)} .consent .check{padding:13px 0} .consent .check.all{font-weight:600;border-bottom:1px solid var(--line)}
 .consent .doc{margin-left:auto;font:400 12px/16px var(--font);color:var(--ink-55);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .consent .doc:hover{color:var(--ink)}
@@ -233,10 +236,14 @@ a{color:inherit;text-decoration:none}
     else if(s==='error'){crumb.textContent='계정 인증';title.textContent='링크가 만료되었습니다';desc.textContent='보안을 위해 인증 링크는 일정 시간이 지나면 만료됩니다. 메일을 다시 요청하여 주시기 바랍니다.';body.innerHTML=btn('로그인 페이지로','/preview/login.html')}
     else if(s==='done'){crumb.textContent='비밀번호 재설정';title.textContent='비밀번호가 변경되었습니다';desc.textContent='새 비밀번호로 로그인하여 주시기 바랍니다.';body.innerHTML=btn('로그인하러 가기','/preview/login.html')}
     else if(s==='reset'){crumb.textContent='비밀번호 재설정';title.textContent='새 비밀번호 설정';desc.textContent=email+' 계정의 새 비밀번호를 입력하여 주시기 바랍니다.';
-      body.innerHTML='<form id="rs" novalidate><div class="fld"><label for="np">새 비밀번호</label><input id="np" type="password" autocomplete="new-password" placeholder="영문·숫자 포함 8자 이상" required></div><div class="fld"><label for="np2">새 비밀번호 확인</label><input id="np2" type="password" autocomplete="new-password" placeholder="비밀번호를 다시 입력하십시오" required></div><button type="submit" class="btn btn-ink" id="rsSubmit">비밀번호 변경</button></form>';
-      document.getElementById('rs').addEventListener('submit',function(e){e.preventDefault();var pw=document.getElementById('np').value,pw2=document.getElementById('np2').value;
-        if(pw.length<8||!/[A-Za-z]/.test(pw)||!/[0-9]/.test(pw)){err.textContent='비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.';err.classList.add('show');return}
-        if(pw!==pw2){err.textContent='비밀번호가 일치하지 않습니다.';err.classList.add('show');return}
+      body.innerHTML='<form id="rs" novalidate><div class="fld"><label for="np">새 비밀번호</label><input id="np" type="password" autocomplete="new-password" placeholder="영문·숫자 포함 8자 이상" required><div class="msg"></div></div><div class="fld"><label for="np2">새 비밀번호 확인</label><input id="np2" type="password" autocomplete="new-password" placeholder="비밀번호를 다시 입력하십시오" required><div class="msg"></div></div><button type="submit" class="btn btn-ink" id="rsSubmit">비밀번호 변경</button></form>';
+      var np=document.getElementById('np'),np2=document.getElementById('np2');
+      function fm(i,m){var f=i.closest('.fld');f.querySelector('.msg').textContent=m;f.classList.add('err')}
+      [np,np2].forEach(function(i){i.addEventListener('input',function(){i.closest('.fld').classList.remove('err')})});
+      document.getElementById('rs').addEventListener('submit',function(e){e.preventDefault();err.classList.remove('show');[np,np2].forEach(function(i){i.closest('.fld').classList.remove('err')});var pw=np.value,pw2=np2.value;
+        if(!pw)fm(np,'비밀번호를 입력하여 주시기 바랍니다.');else if(pw.length<8||!/[A-Za-z]/.test(pw)||!/[0-9]/.test(pw))fm(np,'비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.');
+        if(!pw2)fm(np2,'비밀번호를 다시 입력하여 주시기 바랍니다.');else if(pw!==pw2)fm(np2,'비밀번호가 일치하지 않습니다.');
+        var bad=[np,np2].filter(function(i){return i.closest('.fld').classList.contains('err')})[0];if(bad){bad.focus();return}
         show('done')})}
     else{crumb.textContent='계정 인증';title.textContent='처리 중…';desc.textContent='잠시만 기다려 주시기 바랍니다.';body.innerHTML='<div class="spin" aria-label="로딩"></div>'}}
   show(state);window.__acShow=show;
