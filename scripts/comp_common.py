@@ -133,3 +133,44 @@ JS = '''(function(){
   var root=document.documentElement,icon=document.getElementById('themeIcon');function paint(){icon.innerHTML=root.getAttribute('data-theme')==='dark'?sun:moon}paint();
   document.getElementById('themeBtn').addEventListener('click',function(){var t=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',t);try{localStorage.setItem('kos-theme',t)}catch(e){}paint();});
 })();'''
+
+
+# 본문 두 단 — 왼쪽 붙박이 목차 · 오른쪽 절. 절은 <section class="sec" id="sNN"> · 목차는 #toc a[href=#sNN] · 휴대폰 탭은 #chips a
+TOC_CSS = '''.body{display:grid;grid-template-columns:200px minmax(0,1fr);gap:64px;padding:56px 0 0}
+.toc{position:sticky;top:84px;align-self:start;display:flex;flex-direction:column;gap:2px}
+.toc a{display:flex;gap:10px;align-items:baseline;padding:7px 0 7px 12px;border-left:2px solid transparent;font:500 13px/18px var(--font);color:var(--ink-55);transition:color .12s}
+.toc a .n{font-weight:500;font-size:11px;color:var(--ink-30);min-width:18px}
+.toc a:hover{color:var(--ink)} .toc a.on{color:var(--ink);border-left-color:var(--ink);font-weight:600} .toc a.on .n{color:var(--ink-55)}
+.chips-bar,.chips-mark{display:none}
+.content{min-width:0}
+.sec{max-width:720px;padding:0 0 88px} .sec.wide{max-width:880px}'''
+
+# 휴대폰: 목차는 헤더 아래 밑줄 탭. 표식(#chipsMark)이 헤더 아래로 지나가면 탭 띠를 헤더 안으로 옮겨 붙인다(TOC_JS).
+TOC_MOBILE_CSS = '''@media (max-width:820px){
+  .body{display:block;padding-top:8px} .toc{display:none}
+  .chips-mark{display:block;height:0}
+  .chips-bar{display:block;background:var(--bg);margin:0 calc(-1 * var(--pad)) 12px;border-bottom:1px solid var(--hair)}
+  .nav .chips-bar{position:absolute;top:60px;left:0;right:0;margin:0}
+  html{scroll-padding-top:116px}
+  .chips{position:relative;display:flex;gap:22px;height:44px;padding:0 var(--pad);overflow-x:auto;overflow-y:hidden;scrollbar-width:none;touch-action:pan-x;overscroll-behavior-x:contain} .chips::-webkit-scrollbar{display:none}
+  .chips a{flex:none;position:relative;font:500 13px/44px var(--font);color:var(--ink-55);transition:color .12s} .chips a.on{color:var(--ink);font-weight:600}
+  .chips a.on::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--ink)}
+  .sec{padding-bottom:64px}
+}'''
+
+# 헤더 안으로 옮겨 붙이기(pin) · 현재 절 표시(spy). 절을 나중에 그리는 페이지는 그린 뒤 window.kosTocInit() 을 다시 부른다.
+TOC_JS = '''window.kosTocInit=function(){
+  var nav=document.getElementById('nav'),mark=document.getElementById('chipsMark'),bar=document.getElementById('chipsBar'),mq=window.matchMedia('(max-width:820px)');
+  if(!mark||!bar){window.kosOnScroll=null;window.__kosSpy=null;return}
+  function pin(){var inNav=bar.parentNode===nav;
+    if(!mq.matches){if(inNav){mark.after(bar);mark.style.height=''}return}
+    var top=mark.getBoundingClientRect().top;
+    if(!inNav&&top<=60){mark.style.height=(bar.offsetHeight+12)+'px';nav.appendChild(bar)}
+    else if(inNav&&top>60){mark.after(bar);mark.style.height=''}}
+  window.kosOnScroll=pin;
+  var links=[].slice.call(document.querySelectorAll('#toc a, #chips a')),secs=[].slice.call(document.querySelectorAll('section.sec'));
+  function spy(){if(!secs.length)return;var y=window.scrollY+window.innerHeight*.3,cur=secs[0];secs.forEach(function(s){if(s.offsetTop<=y)cur=s});links.forEach(function(a){var on=a.getAttribute('href')==='#'+cur.id;if(on&&!a.classList.contains('on')&&a.parentNode.id==='chips'){a.parentNode.scrollTo({left:Math.max(0,a.offsetLeft-20),behavior:'smooth'})}a.classList.toggle('on',on)})}
+  if(!window.__kosSpyBound){addEventListener('scroll',function(){if(window.__kosSpy)requestAnimationFrame(window.__kosSpy)},{passive:true});window.__kosSpyBound=true}
+  window.__kosSpy=spy;spy();pin();
+};
+window.kosTocInit();'''
