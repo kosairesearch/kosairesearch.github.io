@@ -136,7 +136,6 @@ a{color:inherit;text-decoration:none}
   .hero{padding:24px 0 4px} .hero h1{font-size:32px;line-height:40px} .sub{font-size:15px;line-height:24px;margin-top:12px}
   .search-wrap{margin-top:24px} .search{height:50px} .search input{font-size:16px} .search .btn{height:32px;padding:0 12px;font-size:13px}
   .sec{padding-top:48px}
-  .eb-date{display:none}
   .row{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"name price" "title title";gap:8px 12px;padding:14px 0;align-items:start}
   .row>div:first-child{grid-area:name} .r-title{grid-area:title;font-size:15px;line-height:22px;color:var(--ink-72)} .r-price{grid-area:price}
   .r-date{display:none} .r-meta .md{display:inline}
@@ -203,8 +202,9 @@ a{color:inherit;text-decoration:none}
     dir:function(c){return c>0?'up':c<0?'down':'flat'},
     mcap:function(n){return !n?'—':(n>=1?(+n).toLocaleString('en-US',{maximumFractionDigits:1})+'조':Math.round(n*10000).toLocaleString('ko-KR')+'억')},
     amt:function(n){return !n?'—':(n>=1e12?(n/1e12).toFixed(1)+'조':Math.round(n/1e8).toLocaleString('ko-KR')+'억')}};
-  var nRep=Object.keys(RREP).length;
-  document.getElementById('eyebrow').innerHTML='코스피 · 코스닥 '+live.length.toLocaleString('ko-KR')+'개 종목 · 리포트 '+nRep.toLocaleString('ko-KR')+'편'+(dateF?'<span class="eb-date"> · 시세 '+dateF+' 장마감</span>':'');
+  // 리포트가 있는 종목 수 하나만 — 종목 수와 리포트 수를 나란히 두면 새로 상장돼 아직 리포트가 없는 종목만큼 어긋나 보인다
+  var nBoth=live.filter(function(s){return RREP[s.ticker]}).length;
+  document.getElementById('eyebrow').textContent='코스피 · 코스닥 상장사 '+nBoth.toLocaleString('ko-KR')+'종목 리포트';
 
   /* ---- 최신 리포트 6편 (Home.html 과 같은 규칙) ---- */
   var REPORTS=live.filter(function(s){return RREP[s.ticker]}).map(function(s){var r=RREP[s.ticker];return Object.assign({},s,{reportDate:r.reportDate,reportTs:r.reportTs||r.reportDate,title:(r.title&&r.title.ko)||''})});
@@ -237,7 +237,7 @@ a{color:inherit;text-decoration:none}
       return '<tr data-tk="'+m.ticker+'"><td><span class="m-rank">'+(i+1)+'</span><a class="m-name" href="/stock.html?ticker='+m.ticker+'">'+esc(m.name)+'</a><div class="m-meta">'+m.ticker+' · '+esc(m.sector)+'</div></td>'
         +'<td>'+fmt.won(m.price)+'</td><td class="'+fmt.dir(c)+'">'+fmt.chg(c)+'</td><td>'+fmt.amt(m.trading_value)+'</td><td>'+fmt.mcap(m.mcap)+'</td></tr>'}).join('')
       :'<tr><td colspan="5" class="empty-td">해당 업종 종목이 없습니다.</td></tr>';
-    document.getElementById('moverNote').textContent=(active==='전체'?'전체':active)+' · 거래대금 순 상위 '+list.length+'종목'+(dateF?' · 시세 '+dateF+' 장마감':'');
+    document.getElementById('moverNote').textContent=(active==='전체'?'전체':active)+' · 거래대금 순 상위 '+list.length+'종목'+(dateF?' · '+dateF+' 종가 기준':'');
   }
   tabsEl.addEventListener('click',function(e){var b=e.target.closest('.tab');if(!b)return;if(b.dataset.more){expanded=!expanded;renderTabs();return}active=b.dataset.s;renderTabs();renderMovers()});
   body.addEventListener('click',function(e){var tr=e.target.closest('tr[data-tk]');if(!tr||e.target.closest('a'))return;location.href='/stock.html?ticker='+tr.dataset.tk});
