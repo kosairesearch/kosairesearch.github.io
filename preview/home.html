@@ -91,7 +91,6 @@ a{color:inherit;text-decoration:none}
 .mm-links{display:flex;flex-direction:column} .mm-links a{display:block;padding:10px 0;font:600 28px/36px var(--font);letter-spacing:-.02em;color:var(--ink-72);text-decoration:none} .mm-links a.on{color:var(--ink);font-weight:700}
 .mmenu .sep{height:1px;background:var(--hair);margin:20px 0 22px}
 .mm-auth{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px} .mm-auth a,.mm-auth button{border:0;background:none;padding:0;font:600 16px/24px var(--font);color:var(--ink);text-decoration:none;cursor:pointer}
-.mm-me{flex-basis:100%;display:flex;align-items:center;gap:10px} .mm-me .avatar{margin:0} .mm-me .em{font:400 13px/18px var(--font);color:var(--ink-55);word-break:break-all}
 .mm-foot{margin-top:auto;padding-top:32px;display:flex;flex-wrap:wrap;gap:6px 18px} .mm-foot a{font:400 13px/20px var(--font);color:var(--ink-55);text-decoration:none}
 /* 계정(로그인 상태) — 이메일 첫 글자 동그라미와 작은 메뉴. 시안은 ?user=이메일 로 켠다 */
 .acct{position:relative;display:none;align-items:center} .acct.show{display:inline-flex} .right.user .login{display:none}
@@ -213,15 +212,15 @@ a{color:inherit;text-decoration:none}
 <body>
 <div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>
 <nav class="nav" id="nav"><div class="nav-in">
-  <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
-  <div class="links"><a href="/Home.html" class="on">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div>
-  <div class="right" id="navRight"><a class="login" href="/Login.html">로그인</a><div class="acct" id="acct"></div>
+  <a class="brand" href="/preview/home.html"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <div class="links"><a href="/preview/home.html" class="on">홈</a><a href="/preview/reports.html">리포트</a><a href="/preview/industry.html">업종 분석</a><a href="/preview/watchlist.html">관심종목</a><a href="/preview/brief.html">모닝브리핑</a></div>
+  <div class="right" id="navRight"><a class="login" href="/preview/login.html">로그인</a><div class="acct" id="acct"></div>
     <button class="ib" id="themeBtn" aria-label="테마 전환"><svg viewBox="0 0 24 24" id="themeIcon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
     <button class="ib menu" id="menuBtn" aria-label="메뉴" aria-expanded="false" aria-controls="mmenu"><svg class="ham" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
 </div>
 </nav>
-<div class="mmenu" id="mmenu"><div class="mm-links"><a href="/Home.html" class="on">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div><div class="sep"></div><div class="mm-auth" id="mauth"><a href="/Login.html">로그인</a><a href="/Signup.html">회원가입</a></div>
-<div class="mm-foot"><a href="/About.html">About</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보처리방침</a></div></div>
+<div class="mmenu" id="mmenu"><div class="mm-links"><a href="/preview/home.html" class="on">홈</a><a href="/preview/reports.html">리포트</a><a href="/preview/industry.html">업종 분석</a><a href="/preview/watchlist.html">관심종목</a><a href="/preview/brief.html">모닝브리핑</a></div><div class="sep"></div><div class="mm-auth" id="mauth"><a href="/preview/login.html">로그인</a><a href="/preview/signup.html">회원가입</a></div>
+<div class="mm-foot"><a href="/preview/about.html">About</a><a href="/preview/contact.html">문의하기</a><a href="/preview/feedback.html">피드백</a><a href="/preview/terms.html">이용약관</a><a href="/preview/privacy.html">개인정보처리방침</a></div></div>
 <main class="wrap">
   <header class="hero">
     <p class="eyebrow" id="eyebrow">코스피 · 코스닥 상장사 리서치</p>
@@ -251,12 +250,12 @@ a{color:inherit;text-decoration:none}
 <div class="pop-backdrop" id="sectorBack"></div>
 <div class="sheet" id="sectorSheet" role="dialog" aria-modal="true" aria-label="업종 고르기"><div class="pop-head"><div class="pop-title">업종</div><button type="button" class="pop-close" id="sectorClose" aria-label="닫기"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="pop-body" id="sectorBody"></div></div>
 <footer class="foot"><div class="wrap">
-  <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <a class="brand" href="/preview/home.html"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
   <p class="ftag">한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p>
   <div class="fgrid">
-    <div class="fcol"><h4>서비스</h4><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div>
-    <div class="fcol"><h4>회사</h4><a href="/About.html">About</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a></div>
-    <div class="fcol"><h4>정책</h4><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보처리방침</a></div>
+    <div class="fcol"><h4>서비스</h4><a href="/preview/home.html">홈</a><a href="/preview/reports.html">리포트</a><a href="/preview/industry.html">업종 분석</a><a href="/preview/watchlist.html">관심종목</a><a href="/preview/brief.html">모닝브리핑</a></div>
+    <div class="fcol"><h4>회사</h4><a href="/preview/about.html">About</a><a href="/preview/contact.html">문의하기</a><a href="/preview/feedback.html">피드백</a></div>
+    <div class="fcol"><h4>정책</h4><a href="/preview/terms.html">이용약관</a><a href="/preview/privacy.html">개인정보처리방침</a></div>
   </div>
   <div class="biz"><span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span><span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span></div>
   <div class="copy">© 2026 KOSAI — All rights reserved.</div>
@@ -385,11 +384,13 @@ a{color:inherit;text-decoration:none}
   var qs=new URLSearchParams(location.search),u=qs.get('user');
   if(u){var email=(u==='1'||u==='')?'you@example.com':u,init=(email.charAt(0)||'K').toUpperCase(),acct=document.getElementById('acct');
     document.getElementById('navRight').classList.add('user');acct.classList.add('show');
-    acct.innerHTML='<button type="button" class="avatar" id="acctBtn" aria-haspopup="true" aria-expanded="false" aria-label="계정 메뉴">'+init+'</button><div class="acct-menu" role="menu"><div class="em">'+email+'</div><a href="/Settings.html">설정</a><button type="button" id="signOut">로그아웃</button></div>';
+    acct.innerHTML='<button type="button" class="avatar" id="acctBtn" aria-haspopup="true" aria-expanded="false" aria-label="계정 메뉴">'+init+'</button><div class="acct-menu" role="menu"><div class="em">'+email+'</div><a href="/preview/settings.html">설정</a><button type="button" id="signOut">로그아웃</button></div>';
     var ab=document.getElementById('acctBtn');ab.addEventListener('click',function(e){e.stopPropagation();var on=!acct.classList.contains('open');acct.classList.toggle('open',on);ab.setAttribute('aria-expanded',on?'true':'false')});
     document.addEventListener('click',function(e){if(!acct.contains(e.target)){acct.classList.remove('open');ab.setAttribute('aria-expanded','false')}});
-    document.getElementById('mauth').innerHTML='<div class="mm-me"><span class="avatar">'+init+'</span><span class="em">'+email+'</span></div><a href="/Settings.html">설정</a><button type="button" id="signOutM">로그아웃</button>';
-    var out=function(){var url=new URL(location.href);url.searchParams.delete('user');location.href=url.pathname+(url.search||'')};document.getElementById('signOut').addEventListener('click',out);document.getElementById('signOutM').addEventListener('click',out);}
+    document.getElementById('mauth').innerHTML='<a href="/preview/settings.html">설정</a><button type="button" id="signOutM">로그아웃</button>';  /* 이메일·동그라미 줄은 뺐다(9/26 사장) — 헤더의 동그라미가 이미 로그인 상태를 말한다 */
+    var out=function(){var url=new URL(location.href);url.searchParams.delete('user');location.href=url.pathname+(url.search||'')};document.getElementById('signOut').addEventListener('click',out);document.getElementById('signOutM').addEventListener('click',out);
+    /* 미리보기끼리 오갈 때 로그인 상태(?user=)를 같이 들고 간다 — 시안에서만 */
+    document.querySelectorAll('a[href^="/preview/"]').forEach(function(a){var h=a.getAttribute('href');if(h.indexOf('user=')<0)a.setAttribute('href',h+(h.indexOf('?')<0?'?':'&')+'user='+encodeURIComponent(email))});}
 })();
 </script>
 </body>

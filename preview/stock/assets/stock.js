@@ -37,9 +37,11 @@ window.kosTocInit();
   var qs=new URLSearchParams(location.search),u=qs.get('user');
   if(u){var email=(u==='1'||u==='')?'you@example.com':u,init=(email.charAt(0)||'K').toUpperCase(),acct=document.getElementById('acct');
     document.getElementById('navRight').classList.add('user');acct.classList.add('show');
-    acct.innerHTML='<button type="button" class="avatar" id="acctBtn" aria-haspopup="true" aria-expanded="false" aria-label="계정 메뉴">'+init+'</button><div class="acct-menu" role="menu"><div class="em">'+email+'</div><a href="/Settings.html">설정</a><button type="button" id="signOut">로그아웃</button></div>';
+    acct.innerHTML='<button type="button" class="avatar" id="acctBtn" aria-haspopup="true" aria-expanded="false" aria-label="계정 메뉴">'+init+'</button><div class="acct-menu" role="menu"><div class="em">'+email+'</div><a href="/preview/settings.html">설정</a><button type="button" id="signOut">로그아웃</button></div>';
     var ab=document.getElementById('acctBtn');ab.addEventListener('click',function(e){e.stopPropagation();var on=!acct.classList.contains('open');acct.classList.toggle('open',on);ab.setAttribute('aria-expanded',on?'true':'false')});
     document.addEventListener('click',function(e){if(!acct.contains(e.target)){acct.classList.remove('open');ab.setAttribute('aria-expanded','false')}});
-    document.getElementById('mauth').innerHTML='<div class="mm-me"><span class="avatar">'+init+'</span><span class="em">'+email+'</span></div><a href="/Settings.html">설정</a><button type="button" id="signOutM">로그아웃</button>';
-    var out=function(){var url=new URL(location.href);url.searchParams.delete('user');location.href=url.pathname+(url.search||'')};document.getElementById('signOut').addEventListener('click',out);document.getElementById('signOutM').addEventListener('click',out);}
+    document.getElementById('mauth').innerHTML='<a href="/preview/settings.html">설정</a><button type="button" id="signOutM">로그아웃</button>';  /* 이메일·동그라미 줄은 뺐다(9/26 사장) — 헤더의 동그라미가 이미 로그인 상태를 말한다 */
+    var out=function(){var url=new URL(location.href);url.searchParams.delete('user');location.href=url.pathname+(url.search||'')};document.getElementById('signOut').addEventListener('click',out);document.getElementById('signOutM').addEventListener('click',out);
+    /* 미리보기끼리 오갈 때 로그인 상태(?user=)를 같이 들고 간다 — 시안에서만 */
+    document.querySelectorAll('a[href^="/preview/"]').forEach(function(a){var h=a.getAttribute('href');if(h.indexOf('user=')<0)a.setAttribute('href',h+(h.indexOf('?')<0?'?':'&')+'user='+encodeURIComponent(email))});}
 })();
