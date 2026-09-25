@@ -417,6 +417,11 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
   var sun='<path d="M12 4V2M12 22v-2M4.9 4.9 3.5 3.5M20.5 20.5l-1.4-1.4M4 12H2M22 12h-2M4.9 19.1l-1.4 1.4M20.5 3.5l-1.4 1.4"/><circle cx="12" cy="12" r="4"/>',moon='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
   var root=document.documentElement,icon=document.getElementById('themeIcon');function paint(){{icon.innerHTML=root.getAttribute('data-theme')==='dark'?sun:moon}}paint();
   document.getElementById('themeBtn').addEventListener('click',function(){{var t=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',t);try{{localStorage.setItem('kos-theme',t)}}catch(e){{}}paint();}});
+  // 사파리: 목차를 옆으로 넘겨 관성으로 흐르는 중에 다시 잡으면 touch-action 을 무시하고 페이지가 세로로 따라간다.
+  // 첫 움직임의 방향을 보고 세로면 그 손짓 전체를 막는다(가로는 그대로 둔다).
+  var chipsEl=document.getElementById('chips'),tx=0,ty=0,axis=0;
+  chipsEl.addEventListener('touchstart',function(e){{var t=e.touches[0];tx=t.clientX;ty=t.clientY;axis=0}},{{passive:true}});
+  chipsEl.addEventListener('touchmove',function(e){{if(!axis){{var t=e.touches[0];axis=Math.abs(t.clientX-tx)>=Math.abs(t.clientY-ty)?1:2}}if(axis===2&&e.cancelable)e.preventDefault()}},{{passive:false}});
   var links=[].slice.call(document.querySelectorAll('#toc a, #chips a')),secs=[].slice.call(document.querySelectorAll('section.sec'));
   function spy(){{var y=window.scrollY+window.innerHeight*.3,cur=secs[0];secs.forEach(function(s){{if(s.offsetTop<=y)cur=s}});links.forEach(function(a){{var on=a.getAttribute('href')==='#'+cur.id;if(on&&!a.classList.contains('on')&&a.parentNode.id==='chips'){{a.parentNode.scrollTo({{left:Math.max(0,a.offsetLeft-20),behavior:'smooth'}})}}a.classList.toggle('on',on)}})}}
   addEventListener('scroll',function(){{requestAnimationFrame(spy)}},{{passive:true}});spy();
