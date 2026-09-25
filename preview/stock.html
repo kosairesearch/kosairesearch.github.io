@@ -18,7 +18,6 @@
   --ink:#141414; --ink-72:rgba(20,20,20,.72); --ink-55:rgba(20,20,20,.55); --ink-30:rgba(20,20,20,.30);
   --hair:rgba(20,20,20,.08); --line:rgba(20,20,20,.14);
   --up:#c8102e; --down:#1e5fbf; --up-bg:rgba(200,16,46,.08); --down-bg:rgba(30,95,191,.08);
-  --shadow:0 1px 2px rgba(20,20,20,.03),0 8px 24px rgba(20,20,20,.05);
   --font:"Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   --wrap:1120px; --pad:32px; --nav-bar:rgba(249,248,246,.72);
   color-scheme:light;
@@ -28,7 +27,7 @@
   --ink:#ececea; --ink-72:rgba(236,236,234,.72); --ink-55:rgba(236,236,234,.55); --ink-30:rgba(236,236,234,.30);
   --hair:rgba(255,255,255,.08); --line:rgba(255,255,255,.14);
   --up:#f0655f; --down:#6f9cf5; --up-bg:rgba(240,101,95,.12); --down-bg:rgba(111,156,245,.12);
-  --shadow:none; --nav-bar:rgba(13,13,14,.72);
+  --nav-bar:rgba(13,13,14,.72);
   color-scheme:dark;
 }
 *{box-sizing:border-box}
@@ -62,9 +61,9 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
 .btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .btn-ink{background:var(--ink);color:var(--bg)} .btn-ink:hover{opacity:.9}
 .btn-soft{background:var(--surface-2);color:var(--ink)} .btn-soft:hover{background:var(--line)}
-.tile figcaption{font:500 13px/20px var(--font);color:var(--ink-72);display:flex;justify-content:space-between}
+.tile figcaption{font:500 13px/20px var(--font);color:var(--ink-72);display:flex;justify-content:space-between;padding-bottom:10px;border-bottom:1px solid var(--hair)}
 .tile figcaption span{color:var(--ink-55);font-weight:400}
-.ch{width:100%;height:auto;display:block;margin-top:6px}
+.ch{width:100%;height:auto;display:block;margin-top:10px}
 .ch-base{stroke:var(--line);stroke-width:1} .ch-rev{fill:var(--ink)} .ch-op{fill:var(--ink-30)}
 .ch-val{font:500 13px var(--font);fill:var(--ink-55)} .ch-lab{font:500 13px var(--font);fill:var(--ink-55)}
 .lg{display:flex;align-items:center;gap:6px;font:400 12px/16px var(--font);color:var(--ink-55);margin-top:8px}
@@ -87,16 +86,16 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
 .sec-h h2{margin:0;font:700 24px/32px var(--font);letter-spacing:-.02em}
 .prose p{margin:0 0 20px;font:400 17px/28px var(--font);letter-spacing:-.005em} .prose p:last-child{margin-bottom:0}
 .note{margin:16px 0 0;font:400 12px/18px var(--font);color:var(--ink-55)}
-/* 초록(요약) 카드 */
-.abstract{background:var(--surface);border:1px solid var(--hair);border-radius:20px;padding:30px 32px 28px;box-shadow:var(--shadow)}
-.ab-meta{font:500 12px/16px var(--font);color:var(--ink-55)}
-.ab-title{margin:14px 0 0;font:700 28px/36px var(--font);letter-spacing:-.02em;text-wrap:balance}
-.ab-lead{margin:14px 0 0;font:400 17px/28px var(--font);color:var(--ink-72)}
-.kp{list-style:none;margin:22px 0 0;padding:20px 0 0;border-top:1px solid var(--hair);display:grid;gap:12px}
+/* 초록(요약) — 상자 없이 제목·바이라인·요지·핵심 목록 */
+.abstract{padding:0}
+.ab-title{margin:4px 0 0;font:700 30px/40px var(--font);letter-spacing:-.02em;text-wrap:balance}
+.ab-meta{margin-top:12px;font:500 12px/16px var(--font);color:var(--ink-55)}
+.ab-lead{margin:20px 0 0;font:400 18px/30px var(--font);color:var(--ink-72)}
+.kp{list-style:none;margin:26px 0 0;padding:22px 0 0;border-top:1px solid var(--hair);display:grid;gap:12px}
 .kp li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:10px;align-items:baseline} .kp .n{font:600 12px/24px var(--font);color:var(--ink-30)} .kp p{margin:0;font:400 15px/24px var(--font)}
 /* 차트 타일 · 표 */
-.tiles{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px}
-.tile{margin:0;background:var(--surface);border:1px solid var(--hair);border-radius:16px;padding:16px 18px 12px;box-shadow:var(--shadow)}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:32px}
+.tile{margin:0;padding:0}
 .tbl-wrap{overflow-x:auto;margin-top:28px}
 .tbl{width:100%;border-collapse:collapse} .tbl.narrow{max-width:560px}
 .tbl caption{text-align:left;font:500 13px/20px var(--font);color:var(--ink-72);padding:0 0 10px}
@@ -105,10 +104,10 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
 .tbl th:first-child,.tbl td:first-child{text-align:left;padding-left:0;font-weight:500} .tbl th:last-child,.tbl td:last-child{padding-right:0}
 .tbl tbody th{font-weight:500}
 /* 밸류 스트립 */
-.vstrip{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;padding:20px 24px;background:var(--surface);border:1px solid var(--hair);border-radius:16px;margin-bottom:26px;box-shadow:var(--shadow)}
-/* 요인 카드 */
-.fcs{display:grid;grid-template-columns:1fr;gap:14px}
-.fc{background:var(--surface);border:1px solid var(--hair);border-radius:16px;padding:22px 24px 20px;box-shadow:var(--shadow)}
+.vstrip{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;padding:20px 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);margin-bottom:28px}
+/* 요인 — 줄로 나눈 목록 */
+.fcs{border-top:1px solid var(--line)}
+.fc{padding:22px 0 20px;border-bottom:1px solid var(--hair)}
 .fc h4{margin:0 0 10px;font:600 16px/24px var(--font);letter-spacing:-.01em;display:flex;gap:10px;align-items:baseline}
 .fc .dot{width:8px;height:8px;border-radius:50%;flex:none;position:relative;top:-2px} .fc.bull .dot{background:var(--up)} .fc.bear .dot{background:var(--down)}
 .fc p{margin:0 0 12px;font:400 15px/24px var(--font);color:var(--ink-72)} .fc p:last-child{margin-bottom:0}
@@ -117,9 +116,9 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
 .rk{display:grid;grid-template-columns:180px minmax(0,1fr);gap:24px;padding:20px 0;border-bottom:1px solid var(--hair)}
 .rk-c{font:600 14px/24px var(--font)} .rk-b p{margin:0 0 12px;font:400 15px/24px var(--font);color:var(--ink-72)} .rk-b p:last-child{margin:0}
 /* 체크포인트 */
-.cps{list-style:none;margin:0;padding:0;display:grid;gap:18px}
-.cps li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;align-items:start}
-.cps .when{display:inline-block;font:500 12px/20px var(--font);color:var(--ink-72);background:var(--surface-2);border-radius:999px;padding:1px 10px;white-space:nowrap}
+.cps{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.cps li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;align-items:start;padding:16px 0;border-bottom:1px solid var(--hair)}
+.cps .when{font:500 13px/24px var(--font);color:var(--ink-55);white-space:nowrap}
 .cps p{margin:0;font:400 15px/24px var(--font)}
 .verdict p{font-size:17px}
 /* 출처 */
@@ -140,12 +139,12 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
   h1.name{font-size:32px;line-height:38px;margin-top:8px} .price{margin-top:16px} .price .p{font-size:32px;line-height:36px}
   .stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px;padding:18px 0} .st-v{font-size:17px}
   .body{display:block;padding-top:8px} .toc{display:none}
-  .chips{display:flex;gap:8px;overflow-x:auto;padding:10px 0 12px;margin:0 calc(-1 * var(--pad)) 8px;padding-left:var(--pad);padding-right:var(--pad);scrollbar-width:none;position:sticky;top:60px;z-index:5;background:var(--bg)} .chips::-webkit-scrollbar{display:none}
-  .chips a{flex:none;font:500 12px/28px var(--font);color:var(--ink-72);background:var(--surface-2);padding:0 12px;border-radius:999px} .chips a.on{background:var(--ink);color:var(--bg)}
+  .chips{display:flex;gap:22px;overflow-x:auto;margin:0 calc(-1 * var(--pad)) 12px;padding:0 var(--pad);scrollbar-width:none;position:sticky;top:60px;z-index:5;background:var(--bg);border-bottom:1px solid var(--hair)} .chips::-webkit-scrollbar{display:none}
+  .chips a{flex:none;font:500 13px/42px var(--font);color:var(--ink-55);border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .12s} .chips a.on{color:var(--ink);font-weight:600;border-bottom-color:var(--ink)}
   .sec{padding-bottom:64px} .sec-h h2{font-size:22px;line-height:28px}
-  .abstract{padding:22px 20px 20px;border-radius:16px} .ab-title{font-size:22px;line-height:30px} .ab-lead{font-size:16px;line-height:26px}
-  .tiles{grid-template-columns:1fr} .fcs{grid-template-columns:1fr} .vstrip{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 10px;padding:16px}
-  .rk{grid-template-columns:1fr;gap:6px;padding:16px 0} .cps li{grid-template-columns:1fr;gap:6px}
+  .ab-title{font-size:24px;line-height:32px} .ab-lead{font-size:16px;line-height:26px}
+  .tiles{grid-template-columns:1fr} .fcs{grid-template-columns:1fr} .vstrip{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 10px;padding:16px 0}
+  .rk{grid-template-columns:1fr;gap:6px;padding:16px 0} .cps li{grid-template-columns:1fr;gap:4px;padding:14px 0}
   .tbl th,.tbl td{padding:10px 10px;font-size:13px} .tbl th:first-child,.tbl td:first-child{position:sticky;left:0;background:var(--bg)}
   .prose p{font-size:16px;line-height:27px}
 }
@@ -176,8 +175,8 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
     <div class="content">
       <nav class="chips" id="chips"><a href="#s01">01 리포트 개요</a><a href="#s02">02 사업 구조</a><a href="#s03">03 실적 추이</a><a href="#s04">04 실적 분석</a><a href="#s05">05 산업 분석</a><a href="#s06">06 전망</a><a href="#s07">07 밸류에이션</a><a href="#s08">08 강세 요인</a><a href="#s09">09 약세 요인</a><a href="#s10">10 리스크 요인</a><a href="#s11">11 다음 체크포인트</a><a href="#s12">12 종합 의견</a><a href="#s13">13 참고 출처</a></nav>
       <section class="sec" id="s01"><div class="sec-h sec-h-quiet"><span class="num">01</span><h2>리포트 개요</h2></div>
-        <div class="abstract"><div class="ab-meta">AI 작성 · 리포트 2026-09-05 · 데이터 2026-09-04</div>
-        <h3 class="ab-title">사상 최대 이익, 반도체 쏠림이 변수</h3><p class="ab-lead">AI 메모리 가격 급등으로 분기 매출·영업이익이 사상 최대 수준까지 올라왔지만, 이익의 거의 전부가 반도체 한 부문에서 나온다는 구조가 동시에 드러났다.</p>
+        <div class="abstract"><h3 class="ab-title">사상 최대 이익, 반도체 쏠림이 변수</h3><div class="ab-meta">AI 작성 · 리포트 2026-09-05 · 데이터 2026-09-04</div>
+        <p class="ab-lead">AI 메모리 가격 급등으로 분기 매출·영업이익이 사상 최대 수준까지 올라왔지만, 이익의 거의 전부가 반도체 한 부문에서 나온다는 구조가 동시에 드러났다.</p>
         <ol class="kp"><li><span class="n">1</span><p>2026년 2분기 매출 171조 4995억원, 영업이익 89조 4924억원으로 분기 기준 최대치를 기록했고, 영업이익률은 52.2% 수준까지 상승했다.</p></li><li><span class="n">2</span><p>회사는 2026년 2분기 컨퍼런스콜에서 3분기 HBM4 매출이 전분기 대비 3배 이상 늘고 하반기 HBM4가 전체 HBM 매출의 60%를 넘을 것으로 전망했다.</p></li><li><span class="n">3</span><p>2026년 2분기 영업이익의 99.7%가 DS(반도체) 부문에서 나왔고, DX 부문은 부문 출범 이후 첫 분기 영업손실을 냈다.</p></li><li><span class="n">4</span><p>2026년 8월 21일 이사회는 약 90조~110조원 규모의 2026년 주주환원 시행 방안과 임직원 보상용 약 15조원 자사주 매입을 의결했다.</p></li><li><span class="n">5</span><p>메모리 사이클을 두고 2027~2028년 공급 부족 지속론과 중국 증설·투자 둔화로 인한 가격 하락 경고가 함께 제기돼 있다.</p></li></ol></div></section><section class="sec" id="s02"><div class="sec-h"><span class="num">02</span><h2>사업 구조</h2></div><div class="prose"><p>삼성전자는 반도체를 담당하는 DS 부문과 스마트폰·TV·가전을 담당하는 DX 부문, 그리고 삼성디스플레이·하만 등 자회사를 함께 보유한 종합 전자 기업이다.</p><p>DS 부문은 메모리(D램·낸드), 시스템LSI, 파운드리로 구성되며 2026년 2분기 기준 DS부문 영업이익은 89조 2000억원으로 전사 영업이익의 약 99.7%를 차지했다.</p><p>메모리는 에이전틱 AI 확산으로 수요가 강했던 서버용 제품을 중심으로 대응하며 역대 최대 분기 실적을 냈고, HBM4 공급을 확대하는 동시에 업계 최초로 HBM4E 샘플을 출하했다.</p><p>낸드에서는 회사가 올해 자사 낸드 매출에서 서버용 SSD 비중이 60%를 넘어설 것으로 전망했고, 주요 고객사와 다년 계약을 체결해 중장기 사업 가시성을 높였다고 밝혔다.</p><p>시스템LSI는 전반적인 수요 감소에도 모바일 SoC와 센서 판매 확대로 상반기 최대 매출을 달성했고, 파운드리는 HBM 베이스 다이와 미주 고객 중심 수요 증가로 매출이 늘었다.</p><p>HBM 구조 측면에서 삼성전자는 10나노급 6세대(1c) D램 공정을 HBM4에 적용하고 베이스 다이는 자사 파운드리 4나노 공정으로 조달하는 방식을 택해 경쟁사와 다른 공급망을 갖췄다.</p><p>전방 고객은 AI 가속기 업체로, HBM4는 엔비디아 베라 루빈과 AMD MI450에 탑재될 차세대 가속기용 메모리로 거론되며 파운드리에서는 미국 대형 고객의 2나노 고성능 컴퓨팅 주문을 확보했다고 회사가 밝혔고 공급망에서는 테슬라 AI 칩으로 지목됐다.</p><p>반면 DX 부문은 갤럭시 S26 시리즈와 A시리즈 판매 호조로 매출은 전년 대비 성장했으나 부품 원가 상승으로 영업이익이 감소하는 구조에 놓였다. 경쟁 구도는 메모리에서 SK하이닉스·마이크론, 파운드리에서 TSMC와의 격차 축소가 핵심 축이다.</p></div></section><section class="sec wide" id="s03"><div class="sec-h"><span class="num">03</span><h2>실적 추이</h2></div><div class="tiles"><figure class="tile"><figcaption>분기 매출 · 영업이익 <span>조원</span></figcaption><svg class="ch" viewBox="0 0 520 220" role="img" aria-label="매출·영업이익 막대그래프"><line x1="8" y1="192" x2="512" y2="192" class="ch-base"/><rect class="ch-rev" x="33.4" y="120.7" width="22.0" height="71.3" rx="2"/><text class="ch-val" x="44.4" y="114.7" text-anchor="middle">74.6</text><rect class="ch-op" x="61.4" y="187.5" width="22.0" height="4.5" rx="2"/><text class="ch-val" x="72.4" y="181.5" text-anchor="middle">4.7</text><text class="ch-lab" x="58.4" y="212" text-anchor="middle">25Q2</text><rect class="ch-rev" x="134.2" y="109.7" width="22.0" height="82.3" rx="2"/><text class="ch-val" x="145.2" y="103.7" text-anchor="middle">86.1</text><rect class="ch-op" x="162.2" y="180.4" width="22.0" height="11.6" rx="2"/><text class="ch-val" x="173.2" y="174.4" text-anchor="middle">12.2</text><text class="ch-lab" x="159.2" y="212" text-anchor="middle">25Q3</text><rect class="ch-rev" x="235.0" y="102.3" width="22.0" height="89.7" rx="2"/><text class="ch-val" x="246.0" y="96.3" text-anchor="middle">93.8</text><rect class="ch-op" x="263.0" y="172.8" width="22.0" height="19.2" rx="2"/><text class="ch-val" x="274.0" y="166.8" text-anchor="middle">20.1</text><text class="ch-lab" x="260.0" y="212" text-anchor="middle">25Q4</text><rect class="ch-rev" x="335.8" y="64.0" width="22.0" height="128.0" rx="2"/><text class="ch-val" x="346.8" y="58.0" text-anchor="middle">133.9</text><rect class="ch-op" x="363.8" y="137.3" width="22.0" height="54.7" rx="2"/><text class="ch-val" x="374.8" y="131.3" text-anchor="middle">57.2</text><text class="ch-lab" x="360.8" y="212" text-anchor="middle">26Q1</text><rect class="ch-rev" x="436.6" y="28.0" width="22.0" height="164.0" rx="2"/><text class="ch-val" x="447.6" y="22.0" text-anchor="middle">171.5</text><rect class="ch-op" x="464.6" y="106.4" width="22.0" height="85.6" rx="2"/><text class="ch-val" x="475.6" y="100.4" text-anchor="middle">89.5</text><text class="ch-lab" x="461.6" y="212" text-anchor="middle">26Q2</text></svg><div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div></figure>
         <figure class="tile"><figcaption>연간 매출 · 영업이익 <span>조원 · 연결</span></figcaption><svg class="ch" viewBox="0 0 520 220" role="img" aria-label="매출·영업이익 막대그래프"><line x1="8" y1="192" x2="512" y2="192" class="ch-base"/><rect class="ch-rev" x="46.0" y="43.4" width="22.0" height="148.6" rx="2"/><text class="ch-val" x="57.0" y="37.4" text-anchor="middle">302.2</text><rect class="ch-op" x="74.0" y="170.7" width="22.0" height="21.3" rx="2"/><text class="ch-val" x="85.0" y="164.7" text-anchor="middle">43.4</text><text class="ch-lab" x="71.0" y="212" text-anchor="middle">2022</text><rect class="ch-rev" x="172.0" y="64.7" width="22.0" height="127.3" rx="2"/><text class="ch-val" x="183.0" y="58.7" text-anchor="middle">258.9</text><rect class="ch-op" x="200.0" y="188.8" width="22.0" height="3.2" rx="2"/><text class="ch-val" x="211.0" y="182.8" text-anchor="middle">6.6</text><text class="ch-lab" x="197.0" y="212" text-anchor="middle">2023</text><rect class="ch-rev" x="298.0" y="44.1" width="22.0" height="147.9" rx="2"/><text class="ch-val" x="309.0" y="38.1" text-anchor="middle">300.9</text><rect class="ch-op" x="326.0" y="175.9" width="22.0" height="16.1" rx="2"/><text class="ch-val" x="337.0" y="169.9" text-anchor="middle">32.7</text><text class="ch-lab" x="323.0" y="212" text-anchor="middle">2024</text><rect class="ch-rev" x="424.0" y="28.0" width="22.0" height="164.0" rx="2"/><text class="ch-val" x="435.0" y="22.0" text-anchor="middle">333.6</text><rect class="ch-op" x="452.0" y="170.6" width="22.0" height="21.4" rx="2"/><text class="ch-val" x="463.0" y="164.6" text-anchor="middle">43.6</text><text class="ch-lab" x="449.0" y="212" text-anchor="middle">2025</text></svg><div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div></figure></div>
         <div class="tbl-wrap"><table class="tbl"><caption>연간 실적 · 연결 · 조원</caption><thead><tr><th>연도</th><th>매출액</th><th>영업이익</th><th>지배주주 순이익</th><th>영업이익률</th><th>ROE</th><th>부채비율</th></tr></thead><tbody><tr class=""><th scope="row">2022</th><td>302.2</td><td>43.4</td><td>54.7</td><td>14.4%</td><td>15.9%</td><td>26.4%</td></tr><tr class=""><th scope="row">2023</th><td>258.9</td><td>6.6</td><td>14.5</td><td>2.5%</td><td>4.1%</td><td>25.4%</td></tr><tr class=""><th scope="row">2024</th><td>300.9</td><td>32.7</td><td>33.6</td><td>10.9%</td><td>8.6%</td><td>27.9%</td></tr><tr class=""><th scope="row">2025</th><td>333.6</td><td>43.6</td><td>44.3</td><td>13.1%</td><td>10.4%</td><td>29.9%</td></tr></tbody></table></div>
@@ -202,7 +201,7 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
   var root=document.documentElement,icon=document.getElementById('themeIcon');function paint(){icon.innerHTML=root.getAttribute('data-theme')==='dark'?sun:moon}paint();
   document.getElementById('themeBtn').addEventListener('click',function(){var t=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',t);try{localStorage.setItem('kos-theme',t)}catch(e){}paint();});
   var links=[].slice.call(document.querySelectorAll('#toc a, #chips a')),secs=[].slice.call(document.querySelectorAll('section.sec'));
-  function spy(){var y=window.scrollY+window.innerHeight*.3,cur=secs[0];secs.forEach(function(s){if(s.offsetTop<=y)cur=s});links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+cur.id)})}
+  function spy(){var y=window.scrollY+window.innerHeight*.3,cur=secs[0];secs.forEach(function(s){if(s.offsetTop<=y)cur=s});links.forEach(function(a){var on=a.getAttribute('href')==='#'+cur.id;if(on&&!a.classList.contains('on')&&a.parentNode.id==='chips'){a.parentNode.scrollTo({left:Math.max(0,a.offsetLeft-20),behavior:'smooth'})}a.classList.toggle('on',on)})}
   addEventListener('scroll',function(){requestAnimationFrame(spy)},{passive:true});spy();
 })();
 </script>

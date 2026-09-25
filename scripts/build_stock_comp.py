@@ -179,8 +179,8 @@ def build(tk, out_path):
     body = ''.join([
         # 01 개요 — 초록(abstract) 카드
         f'''<section class="sec" id="s01"><div class="sec-h sec-h-quiet"><span class="num">01</span><h2>리포트 개요</h2></div>
-        <div class="abstract"><div class="ab-meta">AI 작성 · 리포트 {esc(rep["reportDate"])} · 데이터 {data_date_f}</div>
-        <h3 class="ab-title">{esc(rep["title"]["ko"])}</h3><p class="ab-lead">{esc(rep["lead"]["ko"])}</p>
+        <div class="abstract"><h3 class="ab-title">{esc(rep["title"]["ko"])}</h3><div class="ab-meta">AI 작성 · 리포트 {esc(rep["reportDate"])} · 데이터 {data_date_f}</div>
+        <p class="ab-lead">{esc(rep["lead"]["ko"])}</p>
         <ol class="kp">{kp_li}</ol></div></section>''',
         sec(2, '사업 구조', f'<div class="prose">{paras(rep["business"]["ko"])}</div>'),
         sec(3, '실적 추이', f'''<div class="tiles"><figure class="tile"><figcaption>분기 매출 · 영업이익 <span>조원</span></figcaption>{q_chart}<div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div></figure>
@@ -221,7 +221,6 @@ def build(tk, out_path):
   --ink:#141414; --ink-72:rgba(20,20,20,.72); --ink-55:rgba(20,20,20,.55); --ink-30:rgba(20,20,20,.30);
   --hair:rgba(20,20,20,.08); --line:rgba(20,20,20,.14);
   --up:#c8102e; --down:#1e5fbf; --up-bg:rgba(200,16,46,.08); --down-bg:rgba(30,95,191,.08);
-  --shadow:0 1px 2px rgba(20,20,20,.03),0 8px 24px rgba(20,20,20,.05);
   --font:"Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   --wrap:1120px; --pad:32px; --nav-bar:rgba(249,248,246,.72);
   color-scheme:light;
@@ -231,7 +230,7 @@ def build(tk, out_path):
   --ink:#ececea; --ink-72:rgba(236,236,234,.72); --ink-55:rgba(236,236,234,.55); --ink-30:rgba(236,236,234,.30);
   --hair:rgba(255,255,255,.08); --line:rgba(255,255,255,.14);
   --up:#f0655f; --down:#6f9cf5; --up-bg:rgba(240,101,95,.12); --down-bg:rgba(111,156,245,.12);
-  --shadow:none; --nav-bar:rgba(13,13,14,.72);
+  --nav-bar:rgba(13,13,14,.72);
   color-scheme:dark;
 }}
 *{{box-sizing:border-box}}
@@ -265,9 +264,9 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 .btn svg{{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}}
 .btn-ink{{background:var(--ink);color:var(--bg)}} .btn-ink:hover{{opacity:.9}}
 .btn-soft{{background:var(--surface-2);color:var(--ink)}} .btn-soft:hover{{background:var(--line)}}
-.tile figcaption{{font:500 13px/20px var(--font);color:var(--ink-72);display:flex;justify-content:space-between}}
+.tile figcaption{{font:500 13px/20px var(--font);color:var(--ink-72);display:flex;justify-content:space-between;padding-bottom:10px;border-bottom:1px solid var(--hair)}}
 .tile figcaption span{{color:var(--ink-55);font-weight:400}}
-.ch{{width:100%;height:auto;display:block;margin-top:6px}}
+.ch{{width:100%;height:auto;display:block;margin-top:10px}}
 .ch-base{{stroke:var(--line);stroke-width:1}} .ch-rev{{fill:var(--ink)}} .ch-op{{fill:var(--ink-30)}}
 .ch-val{{font:500 13px var(--font);fill:var(--ink-55)}} .ch-lab{{font:500 13px var(--font);fill:var(--ink-55)}}
 .lg{{display:flex;align-items:center;gap:6px;font:400 12px/16px var(--font);color:var(--ink-55);margin-top:8px}}
@@ -290,16 +289,16 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 .sec-h h2{{margin:0;font:700 24px/32px var(--font);letter-spacing:-.02em}}
 .prose p{{margin:0 0 20px;font:400 17px/28px var(--font);letter-spacing:-.005em}} .prose p:last-child{{margin-bottom:0}}
 .note{{margin:16px 0 0;font:400 12px/18px var(--font);color:var(--ink-55)}}
-/* 초록(요약) 카드 */
-.abstract{{background:var(--surface);border:1px solid var(--hair);border-radius:20px;padding:30px 32px 28px;box-shadow:var(--shadow)}}
-.ab-meta{{font:500 12px/16px var(--font);color:var(--ink-55)}}
-.ab-title{{margin:14px 0 0;font:700 28px/36px var(--font);letter-spacing:-.02em;text-wrap:balance}}
-.ab-lead{{margin:14px 0 0;font:400 17px/28px var(--font);color:var(--ink-72)}}
-.kp{{list-style:none;margin:22px 0 0;padding:20px 0 0;border-top:1px solid var(--hair);display:grid;gap:12px}}
+/* 초록(요약) — 상자 없이 제목·바이라인·요지·핵심 목록 */
+.abstract{{padding:0}}
+.ab-title{{margin:4px 0 0;font:700 30px/40px var(--font);letter-spacing:-.02em;text-wrap:balance}}
+.ab-meta{{margin-top:12px;font:500 12px/16px var(--font);color:var(--ink-55)}}
+.ab-lead{{margin:20px 0 0;font:400 18px/30px var(--font);color:var(--ink-72)}}
+.kp{{list-style:none;margin:26px 0 0;padding:22px 0 0;border-top:1px solid var(--hair);display:grid;gap:12px}}
 .kp li{{display:grid;grid-template-columns:22px minmax(0,1fr);gap:10px;align-items:baseline}} .kp .n{{font:600 12px/24px var(--font);color:var(--ink-30)}} .kp p{{margin:0;font:400 15px/24px var(--font)}}
 /* 차트 타일 · 표 */
-.tiles{{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px}}
-.tile{{margin:0;background:var(--surface);border:1px solid var(--hair);border-radius:16px;padding:16px 18px 12px;box-shadow:var(--shadow)}}
+.tiles{{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:32px}}
+.tile{{margin:0;padding:0}}
 .tbl-wrap{{overflow-x:auto;margin-top:28px}}
 .tbl{{width:100%;border-collapse:collapse}} .tbl.narrow{{max-width:560px}}
 .tbl caption{{text-align:left;font:500 13px/20px var(--font);color:var(--ink-72);padding:0 0 10px}}
@@ -308,10 +307,10 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 .tbl th:first-child,.tbl td:first-child{{text-align:left;padding-left:0;font-weight:500}} .tbl th:last-child,.tbl td:last-child{{padding-right:0}}
 .tbl tbody th{{font-weight:500}}
 /* 밸류 스트립 */
-.vstrip{{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;padding:20px 24px;background:var(--surface);border:1px solid var(--hair);border-radius:16px;margin-bottom:26px;box-shadow:var(--shadow)}}
-/* 요인 카드 */
-.fcs{{display:grid;grid-template-columns:1fr;gap:14px}}
-.fc{{background:var(--surface);border:1px solid var(--hair);border-radius:16px;padding:22px 24px 20px;box-shadow:var(--shadow)}}
+.vstrip{{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;padding:20px 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);margin-bottom:28px}}
+/* 요인 — 줄로 나눈 목록 */
+.fcs{{border-top:1px solid var(--line)}}
+.fc{{padding:22px 0 20px;border-bottom:1px solid var(--hair)}}
 .fc h4{{margin:0 0 10px;font:600 16px/24px var(--font);letter-spacing:-.01em;display:flex;gap:10px;align-items:baseline}}
 .fc .dot{{width:8px;height:8px;border-radius:50%;flex:none;position:relative;top:-2px}} .fc.bull .dot{{background:var(--up)}} .fc.bear .dot{{background:var(--down)}}
 .fc p{{margin:0 0 12px;font:400 15px/24px var(--font);color:var(--ink-72)}} .fc p:last-child{{margin-bottom:0}}
@@ -320,9 +319,9 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 .rk{{display:grid;grid-template-columns:180px minmax(0,1fr);gap:24px;padding:20px 0;border-bottom:1px solid var(--hair)}}
 .rk-c{{font:600 14px/24px var(--font)}} .rk-b p{{margin:0 0 12px;font:400 15px/24px var(--font);color:var(--ink-72)}} .rk-b p:last-child{{margin:0}}
 /* 체크포인트 */
-.cps{{list-style:none;margin:0;padding:0;display:grid;gap:18px}}
-.cps li{{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;align-items:start}}
-.cps .when{{display:inline-block;font:500 12px/20px var(--font);color:var(--ink-72);background:var(--surface-2);border-radius:999px;padding:1px 10px;white-space:nowrap}}
+.cps{{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}}
+.cps li{{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;align-items:start;padding:16px 0;border-bottom:1px solid var(--hair)}}
+.cps .when{{font:500 13px/24px var(--font);color:var(--ink-55);white-space:nowrap}}
 .cps p{{margin:0;font:400 15px/24px var(--font)}}
 .verdict p{{font-size:17px}}
 /* 출처 */
@@ -343,12 +342,12 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
   h1.name{{font-size:32px;line-height:38px;margin-top:8px}} .price{{margin-top:16px}} .price .p{{font-size:32px;line-height:36px}}
   .stats{{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px;padding:18px 0}} .st-v{{font-size:17px}}
   .body{{display:block;padding-top:8px}} .toc{{display:none}}
-  .chips{{display:flex;gap:8px;overflow-x:auto;padding:10px 0 12px;margin:0 calc(-1 * var(--pad)) 8px;padding-left:var(--pad);padding-right:var(--pad);scrollbar-width:none;position:sticky;top:60px;z-index:5;background:var(--bg)}} .chips::-webkit-scrollbar{{display:none}}
-  .chips a{{flex:none;font:500 12px/28px var(--font);color:var(--ink-72);background:var(--surface-2);padding:0 12px;border-radius:999px}} .chips a.on{{background:var(--ink);color:var(--bg)}}
+  .chips{{display:flex;gap:22px;overflow-x:auto;margin:0 calc(-1 * var(--pad)) 12px;padding:0 var(--pad);scrollbar-width:none;position:sticky;top:60px;z-index:5;background:var(--bg);border-bottom:1px solid var(--hair)}} .chips::-webkit-scrollbar{{display:none}}
+  .chips a{{flex:none;font:500 13px/42px var(--font);color:var(--ink-55);border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .12s}} .chips a.on{{color:var(--ink);font-weight:600;border-bottom-color:var(--ink)}}
   .sec{{padding-bottom:64px}} .sec-h h2{{font-size:22px;line-height:28px}}
-  .abstract{{padding:22px 20px 20px;border-radius:16px}} .ab-title{{font-size:22px;line-height:30px}} .ab-lead{{font-size:16px;line-height:26px}}
-  .tiles{{grid-template-columns:1fr}} .fcs{{grid-template-columns:1fr}} .vstrip{{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 10px;padding:16px}}
-  .rk{{grid-template-columns:1fr;gap:6px;padding:16px 0}} .cps li{{grid-template-columns:1fr;gap:6px}}
+  .ab-title{{font-size:24px;line-height:32px}} .ab-lead{{font-size:16px;line-height:26px}}
+  .tiles{{grid-template-columns:1fr}} .fcs{{grid-template-columns:1fr}} .vstrip{{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 10px;padding:16px 0}}
+  .rk{{grid-template-columns:1fr;gap:6px;padding:16px 0}} .cps li{{grid-template-columns:1fr;gap:4px;padding:14px 0}}
   .tbl th,.tbl td{{padding:10px 10px;font-size:13px}} .tbl th:first-child,.tbl td:first-child{{position:sticky;left:0;background:var(--bg)}}
   .prose p{{font-size:16px;line-height:27px}}
 }}
@@ -397,7 +396,7 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
   var root=document.documentElement,icon=document.getElementById('themeIcon');function paint(){{icon.innerHTML=root.getAttribute('data-theme')==='dark'?sun:moon}}paint();
   document.getElementById('themeBtn').addEventListener('click',function(){{var t=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',t);try{{localStorage.setItem('kos-theme',t)}}catch(e){{}}paint();}});
   var links=[].slice.call(document.querySelectorAll('#toc a, #chips a')),secs=[].slice.call(document.querySelectorAll('section.sec'));
-  function spy(){{var y=window.scrollY+window.innerHeight*.3,cur=secs[0];secs.forEach(function(s){{if(s.offsetTop<=y)cur=s}});links.forEach(function(a){{a.classList.toggle('on',a.getAttribute('href')==='#'+cur.id)}})}}
+  function spy(){{var y=window.scrollY+window.innerHeight*.3,cur=secs[0];secs.forEach(function(s){{if(s.offsetTop<=y)cur=s}});links.forEach(function(a){{var on=a.getAttribute('href')==='#'+cur.id;if(on&&!a.classList.contains('on')&&a.parentNode.id==='chips'){{a.parentNode.scrollTo({{left:Math.max(0,a.offsetLeft-20),behavior:'smooth'}})}}a.classList.toggle('on',on)}})}}
   addEventListener('scroll',function(){{requestAnimationFrame(spy)}},{{passive:true}});spy();
 }})();
 </script>
