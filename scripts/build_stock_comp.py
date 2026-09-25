@@ -167,8 +167,10 @@ def build(tk, out_path):
     def host(u):
         return re.sub(r'^www\.', '', re.sub(r'^https?://', '', u).split('/')[0])
     srcs = rep['sources']
-    src_li = ''.join(f'<li><a href="{esc(u)}" target="_blank" rel="noopener">{esc(host(u))}</a></li>' for u in srcs[:6])
-    src_more = ''.join(f'<li><a href="{esc(u)}" target="_blank" rel="noopener">{esc(host(u))}</a></li>' for u in srcs[6:])
+    # 시세·재무 데이터의 원천 둘만 밖에 두고, 기사·자료 링크는 전부 더보기 안에
+    primary = [('한국거래소 (KRX) — 시세 · 시가총액 · 거래량', 'https://www.krx.co.kr'), ('금융감독원 전자공시 (DART) — 재무제표 · 배당 공시', 'https://dart.fss.or.kr')]
+    src_li = ''.join(f'<li><a href="{esc(u)}" target="_blank" rel="noopener">{esc(t)}</a></li>' for t, u in primary)
+    src_more = ''.join(f'<li><a href="{esc(u)}" target="_blank" rel="noopener">{esc(host(u))}</a></li>' for u in srcs)
     kp_li = ''.join(f'<li><span class="n">{i + 1}</span><p>{esc(k["ko"])}</p></li>' for i, k in enumerate(rep['keypoints']))
     toc = ''.join(f'<a href="#s{i + 1:02d}"><span class="n">{i + 1:02d}</span>{esc(t)}</a>' for i, t in enumerate(SECTIONS))
     chips = ''.join(f'<a href="#s{i + 1:02d}">{i + 1:02d} {esc(t)}</a>' for i, t in enumerate(SECTIONS))
@@ -179,15 +181,15 @@ def build(tk, out_path):
     body = ''.join([
         # 01 개요 — 초록(abstract) 카드
         f'''<section class="sec" id="s01"><div class="sec-h sec-h-quiet"><span class="num">01</span><h2>리포트 개요</h2></div>
-        <div class="abstract"><h3 class="ab-title">{esc(rep["title"]["ko"])}</h3><div class="ab-meta">AI 작성 · 리포트 {esc(rep["reportDate"])} · 데이터 {data_date_f}</div>
+        <div class="abstract"><h3 class="ab-title">{esc(rep["title"]["ko"])}</h3>
         <p class="ab-lead">{esc(rep["lead"]["ko"])}</p>
         <ol class="kp">{kp_li}</ol></div></section>''',
         sec(2, '사업 구조', f'<div class="prose">{paras(rep["business"]["ko"])}</div>'),
-        sec(3, '실적 추이', f'''<div class="tiles"><figure class="tile"><figcaption>분기 매출 · 영업이익 <span>조원</span></figcaption>{q_chart}<div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div></figure>
-        <figure class="tile"><figcaption>연간 매출 · 영업이익 <span>조원 · 연결</span></figcaption>{annual_chart}<div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div></figure></div>
-        <div class="tbl-wrap"><table class="tbl"><caption>연간 실적 · 연결 · 조원</caption><thead><tr><th>연도</th><th>매출액</th><th>영업이익</th><th>지배주주 순이익</th><th>영업이익률</th><th>ROE</th><th>부채비율</th></tr></thead><tbody>{ann_rows}</tbody></table></div>
-        <div class="tbl-wrap"><table class="tbl narrow"><caption>분기 실적 · 최근 5분기 · 조원</caption><thead><tr><th>분기</th><th>매출액</th><th>영업이익</th><th>영업이익률</th></tr></thead><tbody>{qtr_rows}</tbody></table></div>
-        <p class="note">{esc(q["fs_basis"])} · 기준 {esc(q["asOf"])}</p>''', wide=True),
+        sec(3, '실적 추이', f'''<div class="tiles"><figure class="tile"><figcaption>분기 매출 · 영업이익 <span>단위: 조원</span></figcaption>{q_chart}<div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div></figure>
+        <figure class="tile"><figcaption>연간 매출 · 영업이익 <span>단위: 조원</span></figcaption>{annual_chart}<div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div></figure></div>
+        <div class="tbl-wrap"><table class="tbl narrow"><caption><div class="cap"><span>분기 실적 · 최근 5분기</span><span class="u">단위: 조원</span></div></caption><thead><tr><th>분기</th><th>매출액</th><th>영업이익</th><th>영업이익률</th></tr></thead><tbody>{qtr_rows}</tbody></table></div>
+        <div class="tbl-wrap"><table class="tbl"><caption><div class="cap"><span>연간 실적</span><span class="u">단위: 조원</span></div></caption><thead><tr><th>연도</th><th>매출액</th><th>영업이익</th><th>지배주주 순이익</th><th>영업이익률</th><th>ROE</th><th>부채비율</th></tr></thead><tbody>{ann_rows}</tbody></table></div>
+        <p class="note">연결 기준(자회사 실적을 합친 재무제표) · DART 공시 확정치 · 순이익은 지배주주 기준 · 데이터 {esc(q["asOf"])}</p>''', wide=True),
         sec(4, '실적 분석', f'<div class="prose">{paras(rep["earnings"]["ko"])}</div>'),
         sec(5, '산업 분석', f'<div class="prose">{paras(rep["industry"]["ko"])}</div>'),
         sec(6, '전망', f'<div class="prose">{paras(rep["outlook"]["ko"])}</div>'),
@@ -198,7 +200,7 @@ def build(tk, out_path):
         sec(10, '리스크 요인', f'<div class="rks">{risk_rows}</div>', wide=True),
         sec(11, '다음 체크포인트', f'<ol class="cps">{cp_rows}</ol>'),
         sec(12, '종합 의견', f'<div class="prose verdict">{paras(rep["verdict"]["body"]["ko"])}</div>'),
-        sec(13, '참고 출처', f'<ol class="srcs">{src_li}</ol><details class="srcmore"><summary>출처 {len(srcs) - 6}건 더 보기</summary><ol class="srcs" start="7">{src_more}</ol></details>'),
+        sec(13, '참고 출처', f'<ol class="srcs">{src_li}</ol><details class="srcmore"><summary>기사·자료 {len(srcs)}건 더 보기</summary><ol class="srcs">{src_more}</ol></details>'),
     ])
 
     html = f'''<!doctype html>
@@ -281,7 +283,7 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 .toc a{{display:flex;gap:10px;align-items:baseline;padding:7px 0 7px 12px;border-left:2px solid transparent;font:500 13px/18px var(--font);color:var(--ink-55);transition:color .12s}}
 .toc a .n{{font-weight:500;font-size:11px;color:var(--ink-30);min-width:18px}}
 .toc a:hover{{color:var(--ink)}} .toc a.on{{color:var(--ink);border-left-color:var(--ink);font-weight:600}} .toc a.on .n{{color:var(--ink-55)}}
-.chips{{display:none}}
+.chips-bar{{display:none}}
 .content{{min-width:0}}
 .sec{{max-width:720px;padding:0 0 88px}} .sec.wide{{max-width:880px}}
 .sec-h{{display:flex;align-items:baseline;gap:14px;margin:0 0 22px}}
@@ -292,7 +294,6 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 /* 초록(요약) — 상자 없이 제목·바이라인·요지·핵심 목록 */
 .abstract{{padding:0}}
 .ab-title{{margin:4px 0 0;font:700 30px/40px var(--font);letter-spacing:-.02em;text-wrap:balance}}
-.ab-meta{{margin-top:12px;font:500 12px/16px var(--font);color:var(--ink-55)}}
 .ab-lead{{margin:20px 0 0;font:400 18px/30px var(--font);color:var(--ink-72)}}
 .kp{{list-style:none;margin:26px 0 0;padding:22px 0 0;border-top:1px solid var(--hair);display:grid;gap:12px}}
 .kp li{{display:grid;grid-template-columns:22px minmax(0,1fr);gap:10px;align-items:baseline}} .kp .n{{font:600 12px/24px var(--font);color:var(--ink-30)}} .kp p{{margin:0;font:400 15px/24px var(--font)}}
@@ -301,7 +302,7 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 .tile{{margin:0;padding:0}}
 .tbl-wrap{{overflow-x:auto;margin-top:28px}}
 .tbl{{width:100%;border-collapse:collapse}} .tbl.narrow{{max-width:560px}}
-.tbl caption{{text-align:left;font:500 13px/20px var(--font);color:var(--ink-72);padding:0 0 10px}}
+.tbl caption{{text-align:left;padding:0 0 10px}} .tbl .cap{{display:flex;justify-content:space-between;align-items:baseline;font:500 13px/20px var(--font);color:var(--ink-72)}} .tbl .cap .u{{font-weight:400;color:var(--ink-55)}}
 .tbl th,.tbl td{{padding:11px 12px;font:400 14px/20px var(--font);text-align:right;white-space:nowrap;border-top:1px solid var(--hair)}}
 .tbl thead th{{font:500 12px/16px var(--font);color:var(--ink-55);border-top:0;border-bottom:1px solid var(--line);padding-top:0}}
 .tbl th:first-child,.tbl td:first-child{{text-align:left;padding-left:0;font-weight:500}} .tbl th:last-child,.tbl td:last-child{{padding-right:0}}
@@ -342,7 +343,8 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
   h1.name{{font-size:32px;line-height:38px;margin-top:8px}} .price{{margin-top:16px}} .price .p{{font-size:32px;line-height:36px}}
   .stats{{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px;padding:18px 0}} .st-v{{font-size:17px}}
   .body{{display:block;padding-top:8px}} .toc{{display:none}}
-  .chips{{display:flex;gap:22px;overflow-x:auto;margin:0 calc(-1 * var(--pad)) 12px;padding:0 var(--pad);scrollbar-width:none;position:sticky;top:60px;z-index:5;background:var(--bg);border-bottom:1px solid var(--hair)}} .chips::-webkit-scrollbar{{display:none}}
+  .chips-bar{{display:block;position:-webkit-sticky;position:sticky;top:60px;z-index:5;background:var(--bg);margin:0 calc(-1 * var(--pad)) 12px;border-bottom:1px solid var(--hair)}}
+  .chips{{display:flex;gap:22px;overflow-x:auto;padding:0 var(--pad);scrollbar-width:none;-webkit-overflow-scrolling:touch}} .chips::-webkit-scrollbar{{display:none}}
   .chips a{{flex:none;font:500 13px/42px var(--font);color:var(--ink-55);border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .12s}} .chips a.on{{color:var(--ink);font-weight:600;border-bottom-color:var(--ink)}}
   .sec{{padding-bottom:64px}} .sec-h h2{{font-size:22px;line-height:28px}}
   .ab-title{{font-size:24px;line-height:32px}} .ab-lead{{font-size:16px;line-height:26px}}
@@ -376,7 +378,7 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
   <div class="body">
     <aside class="toc" id="toc">{toc}</aside>
     <div class="content">
-      <nav class="chips" id="chips">{chips}</nav>
+      <div class="chips-bar"><nav class="chips" id="chips">{chips}</nav></div>
       {body}
       <p class="disc">본 콘텐츠는 AI가 시장 데이터와 웹 검색 결과를 분석한 정보 제공용이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 책임은 투자자 본인에게 있습니다. 데이터는 지연되거나 오류가 포함될 수 있습니다.</p>
     </div>
