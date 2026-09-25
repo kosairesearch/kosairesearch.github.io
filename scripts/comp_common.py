@@ -104,7 +104,6 @@ a{color:inherit;text-decoration:none}
 .mm-links{display:flex;flex-direction:column} .mm-links a{display:block;padding:10px 0;font:600 28px/36px var(--font);letter-spacing:-.02em;color:var(--ink-72);text-decoration:none} .mm-links a.on{color:var(--ink);font-weight:700}
 .mmenu .sep{height:1px;background:var(--hair);margin:20px 0 22px}
 .mm-auth{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px} .mm-auth a,.mm-auth button{border:0;background:none;padding:0;font:600 16px/24px var(--font);color:var(--ink);text-decoration:none;cursor:pointer}
-.mm-me{flex-basis:100%;display:flex;align-items:center;gap:10px} .mm-me .avatar{margin:0} .mm-me .em{font:400 13px/18px var(--font);color:var(--ink-55);word-break:break-all}
 .mm-foot{margin-top:auto;padding-top:32px;display:flex;flex-wrap:wrap;gap:6px 18px} .mm-foot a{font:400 13px/20px var(--font);color:var(--ink-55);text-decoration:none}
 /* 계정(로그인 상태) — 이메일 첫 글자 동그라미와 작은 메뉴. 시안은 ?user=이메일 로 켠다 */
 .acct{position:relative;display:none;align-items:center} .acct.show{display:inline-flex} .right.user .login{display:none}
@@ -154,21 +153,37 @@ MOBILE_CSS = '''@media (max-width:820px){
 
 PAGES = [('/Home.html', '홈'), ('/Reports.html', '리포트'), ('/industry.html', '업종 분석'), ('/Watchlist.html', '관심종목'), ('/brief.html', '모닝브리핑')]
 
+# 미리보기끼리 이어지게 — 시안은 kosai.kr/preview/ 에 있어 실사이트 주소(/Reports.html)로 가면 옛 디자인이 뜬다.
+# 9/26 사장: 시안에서 로그인해도 설정으로 못 갔다(메뉴가 실사이트 /Settings.html 로 보냈다). 실사이트로 옮기는 날 PREVIEW = False.
+PREVIEW = True
+LIVE2PREVIEW = {'/': '/preview/home.html', '/Home.html': '/preview/home.html', '/Reports.html': '/preview/reports.html', '/industry.html': '/preview/industry.html',
+                '/Watchlist.html': '/preview/watchlist.html', '/brief.html': '/preview/brief.html', '/About.html': '/preview/about.html', '/Contact.html': '/preview/contact.html',
+                '/Feedback.html': '/preview/feedback.html', '/Terms.html': '/preview/terms.html', '/Privacy.html': '/preview/privacy.html', '/Login.html': '/preview/login.html',
+                '/Signup.html': '/preview/signup.html', '/Settings.html': '/preview/settings.html'}
+
+
+def links(html):
+    """헤더·푸터·메뉴의 실사이트 주소를 미리보기 주소로. PREVIEW 가 아니면 그대로."""
+    if not PREVIEW:
+        return html
+    for live, prev in LIVE2PREVIEW.items():
+        html = html.replace(f'href="{live}"', f'href="{prev}"')
+    return html
+
 
 def nav(active):
-    links = ''.join(f'<a href="{h}" class="on">{t}</a>' if t == active else f'<a href="{h}">{t}</a>' for h, t in PAGES)
-    mlinks = links
-    return f'''<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>
+    lk = ''.join(f'<a href="{h}" class="on">{t}</a>' if t == active else f'<a href="{h}">{t}</a>' for h, t in PAGES)
+    return links(f'''<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>
 <nav class="nav" id="nav"><div class="nav-in">
   <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
-  <div class="links">{links}</div>
+  <div class="links">{lk}</div>
   <div class="right" id="navRight"><a class="login" href="/Login.html">로그인</a><div class="acct" id="acct"></div>
     <button class="ib" id="themeBtn" aria-label="테마 전환"><svg viewBox="0 0 24 24" id="themeIcon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
     <button class="ib menu" id="menuBtn" aria-label="메뉴" aria-expanded="false" aria-controls="mmenu"><svg class="ham" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
 </div>
 </nav>
-<div class="mmenu" id="mmenu"><div class="mm-links">{mlinks}</div><div class="sep"></div><div class="mm-auth" id="mauth"><a href="/Login.html">로그인</a><a href="/Signup.html">회원가입</a></div>
-<div class="mm-foot"><a href="/About.html">About</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보처리방침</a></div></div>'''
+<div class="mmenu" id="mmenu"><div class="mm-links">{lk}</div><div class="sep"></div><div class="mm-auth" id="mauth"><a href="/Login.html">로그인</a><a href="/Signup.html">회원가입</a></div>
+<div class="mm-foot"><a href="/About.html">About</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보처리방침</a></div></div>''')
 
 
 FOOTER = '''<footer class="foot"><div class="wrap">
@@ -182,6 +197,7 @@ FOOTER = '''<footer class="foot"><div class="wrap">
   <div class="biz"><span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span><span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span></div>
   <div class="copy">© 2026 KOSAI — All rights reserved.</div>
 </div></footer>'''
+FOOTER = links(FOOTER)
 
 
 # 헤더 띠(내리면 배경) · 테마 전환. 페이지가 스크롤마다 할 일이 있으면 window.kosOnScroll 에 넣는다.
@@ -205,9 +221,12 @@ JS = '''(function(){
     acct.innerHTML='<button type="button" class="avatar" id="acctBtn" aria-haspopup="true" aria-expanded="false" aria-label="계정 메뉴">'+init+'</button><div class="acct-menu" role="menu"><div class="em">'+email+'</div><a href="/Settings.html">설정</a><button type="button" id="signOut">로그아웃</button></div>';
     var ab=document.getElementById('acctBtn');ab.addEventListener('click',function(e){e.stopPropagation();var on=!acct.classList.contains('open');acct.classList.toggle('open',on);ab.setAttribute('aria-expanded',on?'true':'false')});
     document.addEventListener('click',function(e){if(!acct.contains(e.target)){acct.classList.remove('open');ab.setAttribute('aria-expanded','false')}});
-    document.getElementById('mauth').innerHTML='<div class="mm-me"><span class="avatar">'+init+'</span><span class="em">'+email+'</span></div><a href="/Settings.html">설정</a><button type="button" id="signOutM">로그아웃</button>';
-    var out=function(){var url=new URL(location.href);url.searchParams.delete('user');location.href=url.pathname+(url.search||'')};document.getElementById('signOut').addEventListener('click',out);document.getElementById('signOutM').addEventListener('click',out);}
+    document.getElementById('mauth').innerHTML='<a href="/Settings.html">설정</a><button type="button" id="signOutM">로그아웃</button>';  /* 이메일·동그라미 줄은 뺐다(9/26 사장) — 헤더의 동그라미가 이미 로그인 상태를 말한다 */
+    var out=function(){var url=new URL(location.href);url.searchParams.delete('user');location.href=url.pathname+(url.search||'')};document.getElementById('signOut').addEventListener('click',out);document.getElementById('signOutM').addEventListener('click',out);
+    /* 미리보기끼리 오갈 때 로그인 상태(?user=)를 같이 들고 간다 — 시안에서만 */
+    document.querySelectorAll('a[href^="/preview/"]').forEach(function(a){var h=a.getAttribute('href');if(h.indexOf('user=')<0)a.setAttribute('href',h+(h.indexOf('?')<0?'?':'&')+'user='+encodeURIComponent(email))});}
 })();'''
+JS = links(JS)
 
 
 # 폼 — 밑줄 입력(검색과 같은 문법) · 구분 탭 · 체크 · 오류 글. 문의·피드백·로그인·회원가입·리포트 필터 창이 쓴다
