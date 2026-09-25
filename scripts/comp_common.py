@@ -59,7 +59,7 @@ a{color:inherit;text-decoration:none}
 .menu{display:none}
 @media (max-width:820px){.links,.login{display:none} .menu{display:inline-flex}}
 /* 단추 */
-.btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 18px 0 14px;border-radius:999px;border:0;font:600 14px/1 var(--font);cursor:pointer;transition:background-color .12s,color .12s}
+.btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 18px;border-radius:999px;border:0;font:600 14px/1 var(--font);cursor:pointer;transition:background-color .12s,color .12s} .btn.ico{padding-left:14px}
 .btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .btn-ink{background:var(--ink);color:var(--bg)} .btn-ink:hover{opacity:.9}
 .btn-soft{background:var(--surface-2);color:var(--ink)} .btn-soft:hover{background:var(--line)}

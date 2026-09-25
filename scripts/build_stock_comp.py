@@ -291,7 +291,7 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
       <div class="eyebrow"><b>{esc(rep["market"])}</b><span>{esc(rep["sector"])}</span><span>{tk}</span></div>
       <h1 class="name">{esc(name)}</h1>
       <div class="price"><span class="p">{price:,.0f}원</span><span class="c {chg_cls}">{arrow} {pct(abs(chg), True).lstrip("+")}</span><span class="d">{price_date} 장마감</span></div>
-      <div class="actions"><button class="btn btn-ink"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>관심종목 추가</button></div>
+      <div class="actions"><button class="btn btn-ink ico"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>관심종목 추가</button></div>
     </div>
   </header>
   <section class="stats" aria-label="핵심 지표">{stat_html}</section>
