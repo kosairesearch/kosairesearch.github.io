@@ -207,7 +207,7 @@ def build(tk, out_path):
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <meta name="theme-color" content="#f9f8f6">
 <title>{esc(name)}({tk}) 리포트 — 디자인 시안 | KOSAI</title>
@@ -236,7 +236,7 @@ def build(tk, out_path):
   color-scheme:dark;
 }}
 *{{box-sizing:border-box}}
-html{{scroll-behavior:smooth;scroll-padding-top:84px}}
+html{{scroll-behavior:smooth;scroll-padding-top:84px;overflow-x:clip}}
 body{{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums lining-nums;word-break:keep-all;overflow-wrap:anywhere}}
 a{{color:inherit;text-decoration:none}}
 ::selection{{background:rgba(20,20,20,.14)}} :root[data-theme="dark"] ::selection{{background:rgba(255,255,255,.22)}}
