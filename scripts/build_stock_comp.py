@@ -219,6 +219,9 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 .price .c{{font:600 17px/24px var(--font)}}
 .price .d{{font:400 13px/20px var(--font);color:var(--ink-55)}}
 .actions{{margin-top:26px;display:flex;gap:10px;align-items:center}}
+/* 관심종목 단추 — 더하기(추가) → 체크(추가됨). 목록 페이지의 +/✓ 와 같은 기호. 켜면 선 테두리 알약 */
+.btn .wb-on{{display:none}} .btn.on .wb-add{{display:none}} .btn.on .wb-on{{display:block;stroke-width:2.4}}
+.btn.on{{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}} .btn.on:hover{{box-shadow:inset 0 0 0 1px var(--ink)}}
 .tile figcaption{{font:500 13px/20px var(--font);color:var(--ink-72);display:flex;justify-content:space-between;padding-bottom:10px;border-bottom:1px solid var(--hair)}}
 .tile figcaption span{{color:var(--ink-55);font-weight:400}}
 .ch{{width:100%;height:auto;display:block;margin-top:10px}}
@@ -291,7 +294,7 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
       <div class="eyebrow"><b>{esc(rep["market"])}</b><span>{esc(rep["sector"])}</span><span>{tk}</span></div>
       <h1 class="name">{esc(name)}</h1>
       <div class="price"><span class="p">{price:,.0f}원</span><span class="c {chg_cls}">{arrow} {pct(abs(chg), True).lstrip("+")}</span><span class="d">{price_date} 장마감</span></div>
-      <div class="actions"><button class="btn btn-ink ico"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>관심종목 추가</button></div>
+      <div class="actions"><button type="button" class="btn btn-ink ico" id="watchBtn" aria-pressed="false"><svg class="wb-add" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><svg class="wb-on" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span id="watchTxt">관심종목 추가</span></button></div>
     </div>
   </header>
   <section class="stats" aria-label="핵심 지표">{stat_html}</section>
@@ -308,6 +311,8 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 </main>
 {C.FOOTER}
 <script>
+/* 관심종목 단추(시안) — 실사이트에서는 KOSWatch(Firestore)가 켜고 끈다 */
+(function(){{var b=document.getElementById('watchBtn'),t=document.getElementById('watchTxt');if(!b)return;b.addEventListener('click',function(){{var on=!b.classList.contains('on');b.classList.toggle('on',on);b.setAttribute('aria-pressed',on?'true':'false');t.textContent=on?'관심종목 추가됨':'관심종목 추가'}})}})();
 {C.TOC_JS}
 {C.JS}
 </script>

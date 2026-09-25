@@ -76,19 +76,13 @@ CSS = '''
 .pop-field{display:flex;align-items:center;gap:10px;width:100%;border:0;background:none;padding:11px 18px;font:400 14px/20px var(--font);color:var(--ink);cursor:pointer;text-align:left} .pop-field:hover{background:var(--surface-2)}
 .pop-field .dot{width:6px;height:6px;border-radius:50%;background:var(--ink);flex:none;margin:0 2px 0 -12px} .pop-field .fi{flex:none} .pop-field .cur{flex:1;min-width:0;font:400 13px/18px var(--font);color:var(--ink-55);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:right} .pop-field .arr{color:var(--ink-30);flex:none;margin-left:auto} .pop-field .cur+.arr{margin-left:0}
 .pop-editor{padding:4px 18px 12px}
-.seg{position:relative;display:flex;gap:22px;border-bottom:1px solid var(--hair)} .seg button{border:0;background:none;padding:0;font:500 13px/40px var(--font);color:var(--ink-55);cursor:pointer;transition:color .12s} .seg button:hover{color:var(--ink)} .seg button.on{color:var(--ink);font-weight:600}
 .checks{display:flex;flex-direction:column}
-.check{display:flex;align-items:center;gap:12px;padding:9px 0;font:400 14px/20px var(--font);color:var(--ink);cursor:pointer;border-bottom:1px solid var(--hair);user-select:none} .check:last-child{border-bottom:0}
-.check .box{width:18px;height:18px;border:1px solid var(--line);border-radius:5px;display:inline-flex;align-items:center;justify-content:center;flex:none;color:var(--bg);transition:background-color .12s,border-color .12s}
-.check .box svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;opacity:0} .check.on .box{background:var(--ink);border-color:var(--ink)} .check.on .box svg{opacity:1}
-.check .count{margin-left:auto;font:400 12px/16px var(--font);color:var(--ink-55)}
 .range-inputs{display:flex;align-items:center;gap:12px;margin-top:6px}
 .range-inputs input{flex:1;min-width:0;width:100%;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;font:400 16px/24px var(--font);color:var(--ink);padding:8px 0;outline:0;-moz-appearance:textfield;transition:border-color .15s} .range-inputs input:focus{border-bottom-color:var(--ink)}
 .range-inputs input::-webkit-outer-spin-button,.range-inputs input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0} .range-inputs input::placeholder{color:var(--ink-30)} .range-inputs .tilde{color:var(--ink-30);flex:none}
 .unit-note{margin-top:10px;font:400 12px/16px var(--font);color:var(--ink-55)}
 .range-quick{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px} .range-quick button{border:1px solid var(--line);background:none;border-radius:999px;padding:0 11px;height:28px;font:500 12px/1 var(--font);color:var(--ink-72);cursor:pointer;transition:border-color .12s,color .12s} .range-quick button:hover{border-color:var(--ink);color:var(--ink)}
 .pop-foot{display:flex;justify-content:flex-end;align-items:center;gap:18px;padding:12px 18px;border-top:1px solid var(--hair);flex:none} .pop-foot .btn{height:36px;padding:0 16px;font-size:13px}
-.tbtn{border:0;background:none;padding:0;font:500 13px/1 var(--font);color:var(--ink-72);cursor:pointer;transition:color .12s} .tbtn:hover{color:var(--ink)} .tbtn.danger{color:var(--up)}
 '''
 
 MOBILE_CSS = '''@media (max-width:820px){
@@ -284,7 +278,7 @@ JS = r'''(function(){
 
 
 def build(out_path):
-    html = (C.head('종목 리포트 — 디자인 시안 | KOSAI') + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+    html = (C.head('종목 리포트 — 디자인 시안 | KOSAI') + '\n<style>\n' + C.CSS + '\n' + C.FORM_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('리포트') + '\n' + BODY + '\n' + C.FOOTER + '\n'
             + '<script src="/data/stocks.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + JS + C.JS + '\n</script>\n</body>\n</html>')
     Path(out_path).write_text(html, encoding='utf-8')
