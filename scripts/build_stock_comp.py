@@ -352,8 +352,9 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
   .nav .chips-bar{{position:absolute;top:60px;left:0;right:0;margin:0}}
   .nav,.nav.scrolled{{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}}
   html{{scroll-padding-top:116px}}
-  .chips{{overflow:hidden;touch-action:none}} .chips-in{{position:relative;display:flex;gap:22px;padding:0 var(--pad);width:max-content;will-change:transform}}
-  .chips a{{flex:none;font:500 13px/42px var(--font);color:var(--ink-55);border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .12s}} .chips a.on{{color:var(--ink);font-weight:600;border-bottom-color:var(--ink)}}
+  .chips{{position:relative;display:flex;gap:22px;height:44px;padding:0 var(--pad);overflow-x:auto;overflow-y:hidden;scrollbar-width:none;touch-action:pan-x;overscroll-behavior-x:contain}} .chips::-webkit-scrollbar{{display:none}}
+  .chips a{{flex:none;position:relative;font:500 13px/44px var(--font);color:var(--ink-55);transition:color .12s}} .chips a.on{{color:var(--ink);font-weight:600}}
+  .chips a.on::after{{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--ink)}}
   .sec{{padding-bottom:64px}} .sec-h h2{{font-size:22px;line-height:28px}}
   .ab-title{{font-size:24px;line-height:32px}} .ab-lead{{font-size:16px;line-height:26px}}
   .tiles{{grid-template-columns:1fr}} .fcs{{grid-template-columns:1fr}} .vstrip{{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 10px;padding:16px 0}}
@@ -386,7 +387,7 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
   <div class="body">
     <aside class="toc" id="toc">{toc}</aside>
     <div class="content">
-      <div class="chips-mark" id="chipsMark"></div><div class="chips-bar" id="chipsBar"><nav class="chips" id="chips"><div class="chips-in">{chips}</div></nav></div>
+      <div class="chips-mark" id="chipsMark"></div><div class="chips-bar" id="chipsBar"><nav class="chips" id="chips">{chips}</nav></div>
       {body}
       <p class="rdate">리포트 작성 {esc(rep["reportDate"])} · 데이터 기준 {data_date_f}</p>
       <p class="disc">본 콘텐츠는 AI가 시장 데이터와 웹 검색 결과를 분석한 정보 제공용이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 책임은 투자자 본인에게 있습니다. 데이터는 지연되거나 오류가 포함될 수 있습니다.</p>
@@ -417,17 +418,8 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
   var sun='<path d="M12 4V2M12 22v-2M4.9 4.9 3.5 3.5M20.5 20.5l-1.4-1.4M4 12H2M22 12h-2M4.9 19.1l-1.4 1.4M20.5 3.5l-1.4 1.4"/><circle cx="12" cy="12" r="4"/>',moon='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
   var root=document.documentElement,icon=document.getElementById('themeIcon');function paint(){{icon.innerHTML=root.getAttribute('data-theme')==='dark'?sun:moon}}paint();
   document.getElementById('themeBtn').addEventListener('click',function(){{var t=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',t);try{{localStorage.setItem('kos-theme',t)}}catch(e){{}}paint();}});
-  // 휴대폰 목차 — 브라우저의 가로 스크롤을 쓰지 않는다. 사파리는 관성으로 흐르는 스크롤 상자를 손으로 잡으면
-  // 그 터치를 페이지 세로 스크롤로 넘겨 버린다. 그래서 가로 이동·관성을 직접 그린다(translateX). 목차 위의 터치는 페이지로 가지 않는다.
-  var chipsEl=document.getElementById('chips'),track=chipsEl.firstElementChild,cx=0,sx=0,sy=0,cx0=0,vx=0,lt=0,lx=0,raf=0,axis=0;
-  function maxX(){{return Math.max(0,track.scrollWidth-chipsEl.clientWidth)}}
-  function setX(x){{cx=Math.min(0,Math.max(-maxX(),x));track.style.transform='translateX('+cx+'px)'}}
-  chipsEl.addEventListener('touchstart',function(e){{cancelAnimationFrame(raf);var t=e.touches[0];sx=lx=t.clientX;sy=t.clientY;cx0=cx;lt=e.timeStamp;vx=0;axis=0}},{{passive:true}});
-  chipsEl.addEventListener('touchmove',function(e){{var t=e.touches[0];if(!axis)axis=Math.abs(t.clientX-sx)>=Math.abs(t.clientY-sy)?1:2;if(e.cancelable)e.preventDefault();
-    if(axis===1){{setX(cx0+t.clientX-sx);var dt=e.timeStamp-lt;if(dt>0)vx=(t.clientX-lx)/dt;lx=t.clientX;lt=e.timeStamp}}}},{{passive:false}});
-  chipsEl.addEventListener('touchend',function(){{if(axis!==1)return;var v=vx*16;function step(){{v*=.94;setX(cx+v);if(Math.abs(v)>.2)raf=requestAnimationFrame(step)}}raf=requestAnimationFrame(step)}});
   var links=[].slice.call(document.querySelectorAll('#toc a, #chips a')),secs=[].slice.call(document.querySelectorAll('section.sec'));
-  function spy(){{var y=window.scrollY+window.innerHeight*.3,cur=secs[0];secs.forEach(function(s){{if(s.offsetTop<=y)cur=s}});links.forEach(function(a){{var on=a.getAttribute('href')==='#'+cur.id;if(on&&!a.classList.contains('on')&&a.parentNode===track){{cancelAnimationFrame(raf);setX(-(a.offsetLeft-20))}}a.classList.toggle('on',on)}})}}
+  function spy(){{var y=window.scrollY+window.innerHeight*.3,cur=secs[0];secs.forEach(function(s){{if(s.offsetTop<=y)cur=s}});links.forEach(function(a){{var on=a.getAttribute('href')==='#'+cur.id;if(on&&!a.classList.contains('on')&&a.parentNode.id==='chips'){{a.parentNode.scrollTo({{left:Math.max(0,a.offsetLeft-20),behavior:'smooth'}})}}a.classList.toggle('on',on)}})}}
   addEventListener('scroll',function(){{requestAnimationFrame(spy)}},{{passive:true}});spy();
 }})();
 </script>
