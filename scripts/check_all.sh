@@ -49,6 +49,7 @@ run "SEO·구조"      python3 scripts/check_seo.py
 # 같은 자리표시자를 달고 오래 서 있었다. 어긋나면 여기서 막는다.
 run "사업자 정보"   python3 scripts/patch_biz_footer.py --check
 run "헤더(스테이징)" python3 scripts/patch_header.py staging --check
+run "스테이징 생성기" python3 scripts/build_staging.py --check
 run "헤더(실사이트)" python3 scripts/patch_header.py . --check
 # 푸터의 면책 상자는 2026-09-24 에 뺐다(무료라 법정 의무 없음 · 리포트 본문 한 줄과 약관 제15조만 남김).
 # 옛 페이지를 복사해 오면 되살아나므로 여기서 잡는다. 유료화 때는 scripts/strip_footer_disclaimer.py 머리말 참고.

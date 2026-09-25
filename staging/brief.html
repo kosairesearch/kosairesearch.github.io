@@ -1,534 +1,181 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" data-staging>
 <head>
+<meta charset="utf-8">
 <script type="module" src="demo-backend.js?v=7f8de79b"></script>
-<meta name="robots" content="noindex,nofollow" />
-<meta charset="utf-8" />
-<meta name="referrer" content="strict-origin-when-cross-origin" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<!-- 사업자등록번호(380-25-02019)를 아이폰 사파리가 전화번호로 알아보고 파란
-     글씨에 누르면 전화가 걸리게 만들어 버린다. 번호 모양이 전화번호와 같아
-     생기는 일이라 글자로는 막을 수가 없다. 사이트에 전화번호는 하나도 없으므로
-     자동 인식을 통째로 끈다. -->
-<meta name="format-detection" content="telephone=no" />
-<title>모닝 브리핑 · KOSAI</title>
-<meta name="description" content="간밤 미국 시장과 직전 국내 장, 이번 주 일정을 매일 아침 한 편으로 정리합니다. 오늘 장을 준비하는 데 필요한 것만." />
-<link rel="canonical" href="https://kosai.kr/brief.html" />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="KOSAI" />
-<meta property="og:locale" content="ko_KR" />
-<meta property="og:title" content="모닝 브리핑 — KOSAI" />
-<meta property="og:description" content="간밤 미국 시장과 직전 국내 장, 이번 주 일정을 매일 아침 한 편으로." />
-<meta property="og:url" content="https://kosai.kr/brief.html" />
-<meta property="og:image" content="https://kosai.kr/assets/og-image.png?v=3" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="모닝 브리핑 — KOSAI" />
-<meta name="twitter:description" content="간밤 미국 시장과 직전 국내 장, 이번 주 일정을 매일 아침 한 편으로." />
-<meta name="twitter:image" content="https://kosai.kr/assets/og-image.png?v=3" />
-<style>
-@font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("../fonts/Pretendard-Regular.woff2") format("woff2"), url("../fonts/Pretendard-Regular.otf") format("opentype")}
-@font-face{font-family:"Pretendard";font-weight:500;font-style:normal;font-display:swap;src:url("../fonts/Pretendard-Medium.woff2") format("woff2"), url("../fonts/Pretendard-Medium.otf") format("opentype")}
-@font-face{font-family:"Pretendard";font-weight:600;font-style:normal;font-display:swap;src:url("../fonts/Pretendard-SemiBold.woff2") format("woff2"), url("../fonts/Pretendard-SemiBold.otf") format("opentype")}
-@font-face{font-family:"Pretendard";font-weight:700;font-style:normal;font-display:swap;src:url("../fonts/Pretendard-Bold.woff2") format("woff2"), url("../fonts/Pretendard-Bold.otf") format("opentype")}
-@font-face{font-family:"Pretendard";font-weight:800;font-style:normal;font-display:swap;src:url("../fonts/Pretendard-ExtraBold.woff2") format("woff2"), url("../fonts/Pretendard-ExtraBold.otf") format("opentype")}
-:root{
-  --brand-blue:rgb(13,105,212);--brand-cyan:rgb(95,197,255);
-  --bg-1:rgb(249,248,246);--fg-1:rgb(20,20,20);--fg-2:rgba(0,0,0,0.7);--fg-3:rgba(0,0,0,0.5);
-  --border-2:rgba(0,0,0,0.1);--hair:rgba(0,0,0,0.07);
-  --shadow-1:0 1px 0 rgba(0,0,0,.05),0 4px 4px rgba(0,0,0,.05);
-  --shadow-2:0 1px 0 rgba(0,0,0,.05),0 4px 4px rgba(0,0,0,.05),0 10px 20px rgba(0,0,0,.08);
-  --radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:20px;--pill:9999px;
-  --font-sans:"Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  --pad:20px;
-}
-:root[data-theme="dark"]{
-  --fg-1:rgb(255,255,255);--fg-2:rgba(255,255,255,0.72);--fg-3:rgba(255,255,255,0.5);
-  --border-2:rgba(255,255,255,0.12);--hair:rgba(255,255,255,0.08);
-  --shadow-2:0 1px 0 rgba(0,0,0,.2),0 10px 24px rgba(0,0,0,.4);
-}
-*{box-sizing:border-box}
-/* 글을 끌어 잡았을 때 — 브라우저 기본 파란 박스 대신 회색.
-   글자색은 건드리지 않는다. 색이 있는 숫자(등락률 빨강·파랑)까지
-   검게 만들면 무슨 값인지 알 수 없게 된다. */
-::selection{background:rgba(0,0,0,.14)}
-::-moz-selection{background:rgba(0,0,0,.14)}
-[data-theme="dark"] ::selection{background:rgba(255,255,255,.24)}
-[data-theme="dark"] ::-moz-selection{background:rgba(255,255,255,.24)}
-html{scroll-behavior:smooth;scrollbar-gutter:stable}
-body{margin:0;font-family:var(--font-sans);color:var(--fg-1);background:#f9f8f6;-webkit-font-smoothing:antialiased;min-height:100vh;position:relative;display:flex;flex-direction:column}
-body::after{content:"";position:fixed;inset:0;z-index:-2;
-  background:#f9f8f6;background-attachment:fixed}
-:root[data-theme="dark"] body{background:#0e0e16}
-:root[data-theme="dark"] body::after{
-  background:#0d0e18}
-/* 배경 격자(body::before 48px)는 뺐다 — 2026-09-14 사장 지시.
-   스테이징에서 먼저 빼 보고 괜찮아서 실사이트도 같이 뺐다. */
-.glass{background:rgba(255,255,255,0.62);border:1px solid rgba(255,255,255,0.55);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.6);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-radius:var(--radius-xl)}
-:root[data-theme="dark"] .glass{background:rgba(28,30,42,0.62);border-color:rgba(255,255,255,0.10);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.08)}
-.btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 15px/1 var(--font-sans);border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s,filter .15s;white-space:nowrap}
-.btn:active{transform:scale(.98)}
-.btn-primary{background:#141414;color:#fff;padding:14px 20px;box-shadow:var(--shadow-1)}
-.btn-primary:hover{filter:brightness(1.1)}
-:root[data-theme="dark"] .btn-primary{background:#fff;color:#000}
-.wrap{max-width:1120px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad);width:100%}
-
-/* nav */
-.nav{position:sticky;top:12px;z-index:50;margin:12px auto 0;max-width:1120px;width:calc(100% - 2*var(--pad));display:flex;align-items:center;gap:16px;padding:10px 12px 10px 16px;border-radius:var(--radius-lg)}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--fg-1)}
-.brand-name{font:700 19px/1 var(--font-sans);letter-spacing:-.02em;color:var(--fg-1)}
-.nav-links{display:flex;gap:2px;margin-left:8px}
-.nav-links a{font:500 14px var(--font-sans);color:var(--fg-2);text-decoration:none;padding:8px 13px;border-radius:var(--radius-sm);transition:.15s;white-space:nowrap}
-.nav-links a:hover{color:var(--fg-1);background:rgba(0,0,0,.05)}
-:root[data-theme="dark"] .nav-links a:hover{background:rgba(255,255,255,.08)}
-/* 현재 페이지 표시. 이 규칙이 없으면 class="active" 를 달아도 아무 일이 없다 —
-   실제로 멤버십 페이지가 그랬다. */
-.nav-links a.active{color:var(--fg-1);background:rgba(0,0,0,.07);font-weight:600}
-:root[data-theme="dark"] .nav-links a.active{background:rgba(255,255,255,.10)}
-.nav-spacer{flex:1}
-
-.icon-btn{width:38px;height:38px;border-radius:var(--radius-sm);border:0;background:transparent;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;color:var(--fg-2);transition:.15s}
-.icon-btn:hover{background:rgba(0,0,0,.06);color:var(--fg-1)}
-:root[data-theme="dark"] .icon-btn:hover{background:rgba(255,255,255,.08)}
-.icon-btn svg{width:19px;height:19px}
-.menu-btn{display:none}
-.mobile-menu{display:none;position:fixed;top:70px;left:var(--pad);right:var(--pad);z-index:49;padding:8px;border-radius:var(--radius-lg);flex-direction:column;gap:2px}
-.mobile-menu.open{display:flex}
-.mobile-menu a{font:600 16px var(--font-sans);color:var(--fg-1);text-decoration:none;padding:13px 14px;border-radius:var(--radius-sm)}
-.mobile-menu a:hover{background:rgba(0,0,0,.06)}
-:root[data-theme="dark"] .mobile-menu a:hover{background:rgba(255,255,255,.08)}
-.mobile-menu a.active{background:rgba(0,0,0,.06)}
-:root[data-theme="dark"] .mobile-menu a.active{background:rgba(255,255,255,.08)}
-
-.crumb{font:500 13px var(--font-sans);color:var(--fg-3);padding-top:28px;margin-bottom:12px}
-.crumb a{color:var(--fg-3);text-decoration:none}.crumb a:hover{color:var(--fg-1)}
-.crumb b{color:var(--fg-2);font-weight:600}
-
-/* main */
-main{flex:1;padding:8px 0 64px}
-/* footer */
-.foot{padding:44px 0 28px}
-.foot-inner{border-radius:var(--radius-xl);padding:36px 32px 26px}
-.foot-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:28px}
-.foot-brand .brand{margin-bottom:12px}
-.foot-brand p{margin:0;font:400 14px/1.55 var(--font-sans);color:var(--fg-2);max-width:260px}
-.foot-col h4{margin:0 0 12px;font:600 12px var(--font-sans);color:var(--fg-3)}
-.foot-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
-.foot-col a{font:400 14px var(--font-sans);color:var(--fg-2);text-decoration:none}
-.foot-col a:hover{color:var(--fg-1)}
-.disclaimer{margin-top:28px;padding:16px 18px;border-radius:var(--radius-md);background:rgba(0,0,0,.04);border:1px solid var(--border-2);font:400 13px/1.6 var(--font-sans);color:var(--fg-2)}
-:root[data-theme="dark"] .disclaimer{background:rgba(255,255,255,.04)}
-.disclaimer b{color:var(--fg-1)}
-.biz b{font-weight:600;color:var(--fg-2)}
-.biz{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:96px;padding-top:22px;border-top:1px solid var(--border-2);font:500 12px/1.7 var(--font-sans);color:var(--fg-3)}
-.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid var(--border-2);font:500 12px var(--font-sans);color:var(--fg-3)}
-
-@media (min-width:768px){:root{--pad:24px}}
-@media (min-width:1024px){:root{--pad:32px}}
-@media (min-width:1180px){:root{--pad:0px}.nav{width:100%}}
-@media (max-width:767px){
-  .nav-links{display:none}.menu-btn{display:inline-flex}
-  .foot-grid{grid-template-columns:repeat(3,1fr);gap:16px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}
-}
-</style>
-<script>
-/* ============================================================
-   KOSAI — lightweight in-place i18n (KO ⇄ EN)
-   Text-node level translation: dictionary keyed by visible
-   Korean text (whitespace-normalized). No reload, reversible.
-   - Injects a KO/EN toggle to the left of #themeBtn
-   - localStorage('kos-lang')
-   - Pages: KOSi18n.register(dict, onChange)
-   - Dynamic (JS-rendered) regions: mark container [data-i18n-skip]
-     and re-render with KOSi18n.t() inside the onChange callback.
-   - Placeholders: add attribute data-i18n-ph to the input.
-   ============================================================ */
-(function(){
-  const KEY='kos-lang';
-  const dict={};                 // normalized KO -> EN
-  const listeners=[];
-  const txtOrig=new WeakMap();   // textNode -> original nodeValue
-  const phOrig=new WeakMap();    // element  -> original placeholder
-  const blockOrig=new WeakMap(); // element  -> {html, key}
-  let lang='ko';
-
-  function getLang(){ try{ const v=localStorage.getItem(KEY); if(v) return v; return 'ko'; }catch(e){ return 'ko'; } }
-  function norm(s){ return (s==null?'':String(s)).replace(/\s+/g,' ').trim(); }
-
-  function translateText(orig){
-    const m=orig.match(/^(\s*)([\s\S]*?)(\s*)$/);
-    const lead=m[1], core=norm(m[2]), trail=m[3];
-    if(!core) return orig;
-    const en=dict[core];
-    return (en!=null)? (lead+en+trail) : orig;
-  }
-
-  function walk(node){
-    if(node.nodeType===1){ // element
-      const tag=node.tagName;
-      if(tag==='SCRIPT'||tag==='STYLE'||tag==='NOSCRIPT') return;
-      if(node.hasAttribute('data-i18n-skip')) return;
-      if(node.hasAttribute('data-i18n-ph')){
-        if(!phOrig.has(node)) phOrig.set(node, node.getAttribute('placeholder')||'');
-        const ko=phOrig.get(node);
-        node.setAttribute('placeholder', lang==='en' ? (dict[norm(ko)]||ko) : ko);
-      }
-      if(node.hasAttribute('data-i18n-block')){
-        if(!blockOrig.has(node)) blockOrig.set(node, {html:node.innerHTML, key:norm(node.textContent||'')});
-        const rec=blockOrig.get(node);
-        if(lang==='en'){
-          let en=dict[rec.key];
-          if(en==null){
-            // try with leading bull/bear marker stripped ("▲ X" / "▼ X" → "X")
-            const stripped=rec.key.replace(/^[▲▼]\s*/,'');
-            if(stripped!==rec.key && dict[stripped]!=null){
-              const mk=rec.key.slice(0,1);
-              en=mk+' '+dict[stripped];
-            }
-          }
-          // 영문 값에 태그가 들어 있으면 그대로 넣는다 — 문단 안의 종목 링크와
-          // 굵은 글씨가 영어 모드에서 사라지지 않게 한다.
-          if(en!=null){ if(/</.test(en)) node.innerHTML=en; else node.textContent=en; }
-          else node.innerHTML=rec.html;
-        } else {
-          node.innerHTML=rec.html;
-        }
-        return;
-      }
-      for(let c=node.firstChild;c;c=c.nextSibling) walk(c);
-    }else if(node.nodeType===3){ // text
-      const v=node.nodeValue;
-      if(!v || !v.trim()) return;
-      if(!txtOrig.has(node)) txtOrig.set(node, v);
-      const orig=txtOrig.get(node);
-      node.nodeValue = (lang==='en') ? translateText(orig) : orig;
-    }
-  }
-
-  function apply(){
-    document.documentElement.setAttribute('lang', lang);
-    if(document.body) walk(document.body);
-    updateToggle();
-  }
-
-  function setLang(l){
-    lang=l;
-    try{ localStorage.setItem(KEY,l); }catch(e){}
-    listeners.forEach(fn=>{ try{ fn(lang); }catch(e){} });  // let pages re-render dynamic parts first
-    apply();
-  }
-
-  function t(ko){ if(ko==null) return ''; return lang==='en' ? (dict[norm(ko)]!=null?dict[norm(ko)]:ko) : ko; }
-
-  function register(d, onChange){
-    if(d){ for(const k in d){ dict[norm(k)]=d[k]; } }
-    if(onChange){ listeners.push(onChange); try{ onChange(lang); }catch(e){} }
-    apply();
-  }
-
-  /* ---- toggle UI ---- */
-  /* 헤더의 KO/EN 토글은 걷어냈다. 언어는 설정 화면에서 바꾼다
-     (settings-panel.js 의 '언어' 줄). 같은 것을 두 곳에 두면 헤더가
-     붐비고, 테마 토글과 나란히 있어 무엇이 무엇인지 한눈에 안 잡혔다.
-
-     함수는 남겨 둔다 — init() 이 부르고 있어서, 지우려면 페이지마다 조금씩
-     다른 init 을 17벌 손봐야 한다. updateToggle 도 그대로다. 엘리먼트가
-     없으면 스스로 빠져나간다. */
-  function buildToggle(){ return; }
-  function updateToggle(){
-    const wrap=document.getElementById('langToggle'); if(!wrap) return;
-    wrap.querySelectorAll('button').forEach(b=>b.classList.toggle('on', b.dataset.l===lang));
-  }
-
-  function autoMarkBlocks(){
-    // Treat each visually-distinct prose unit as a single translation block,
-    // so inline <b>/<strong>/<span> highlights don't split text into pieces
-    // the dictionary can't match.
-    const sel='.prose p,.factor p,.tldr p,.kpoints li,.risk .body,.wrapup p,.lead,.desc,.sec-lead';
-    document.querySelectorAll(sel).forEach(el=>{
-      if(!el.hasAttribute('data-i18n-block')) el.setAttribute('data-i18n-block','');
-    });
-  }
-
-  function init(){ lang=getLang(); buildToggle(); autoMarkBlocks(); listeners.forEach(fn=>{ try{ fn(lang); }catch(e){} }); apply(); }
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init);
-  else init();
-
-  window.KOSi18n={ register, t, setLang, get lang(){return lang;}, apply };
-})();
-
-</script>
-<script>
-/* === 영어 모드 한글 제거: 라이브 종목명·업종명 폴백 등록 (손사전이 우선하도록 chrome 앞에 위치) === */
-(function(){
-  if(!window.KOSi18n) return;
-  KOSi18n.register({
-  /* BIZ:I18N:START */
-  "상호":"Company",
-  "대표":"CEO",
-  "사업자등록번호":"Business Reg. No.",
-  "주소":"Address",
-  "이메일":"Email",
-  "코사이":"KOSAI",
-  "임범준":"Beomjun Lim",
-  "서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호":"#459, 4F Dongseong Bldg., 50 Mokdongdong-ro 12-gil, Yangcheon-gu, Seoul, Republic of Korea",
-  /* BIZ:I18N:END */
-    "전자·부품":"Electronic Components","IT·소프트웨어":"IT & Software","게임":"Games",
-    "전기장비":"Electrical Equipment","기계·장비":"Machinery","조선":"Shipbuilding",
-    "항공·방산":"Aerospace & Defense","운송·물류":"Transport & Logistics","철강·금속":"Steel & Metals",
-    "정유":"Oil Refining","에너지·전력":"Energy & Power","건설·건자재":"Construction & Materials",
-    "바이오·제약":"Biotech & Pharma","화장품":"Cosmetics","식음료":"Food & Beverage",
-    "섬유·패션·생활":"Apparel & Living","미디어·엔터":"Media & Entertainment","호텔·레저":"Hotel & Leisure",
-    "보험":"Insurance","지주":"Holding Companies","부동산·리츠":"Real Estate & REITs",
-    "인공지능(AI)":"AI","로봇":"Robotics","자율주행·전기차":"EV & Autonomous",
-    "원전·전력":"Nuclear & Power","우주·방산":"Space & Defense","바이오·신약":"Biotech & New Drugs",
-    "K-콘텐츠·엔터":"K-Content","수소·신재생":"Hydrogen & Renewables",
-    "반도체":"Semiconductors","IT 서비스":"IT Services","2차전지":"Batteries",
-    "바이오/제약":"Biotech & Pharma","자동차":"Automotive","금융":"Finance",
-    "에너지":"Energy","화학":"Chemicals","철강":"Steel",
-    "조선·방산":"Shipbuilding & Defense","통신":"Telecom","유통·소비재":"Retail & Consumer",
-    "식품":"Food & Beverage","엔터·미디어":"Entertainment & Media","건설":"Construction",
-    "기계·로봇":"Machinery & Robotics","기타":"Others",
-    "검색 결과가 없습니다":"No results found",
-    "다른 종목명·티커·업종으로 검색해 보시기 바랍니다.":"Try a different name, ticker, or sector.",
-    "해당 업종 종목이 없습니다.":"No stocks in this sector.",
-    "관심 종목":"Watchlist","관심종목":"Watchlist",
-    "코스피":"KOSPI","코스닥":"KOSDAQ","코넥스":"KONEX",
-    "시가총액":"Market Cap","거래대금":"Turnover","거래량":"Volume",
-    "현재가":"Price","등락률":"Change","시장":"Market","상승 종목":"Gainers",
-    "평균 등락률":"Avg. change","거래대금 합계":"Total turnover","시가총액 1위":"Top by mkt cap",
-    "업종 시가총액 합계":"Sector market cap","시가총액(조)":"Mkt cap (₩T)","거래대금(조)":"Turnover (₩T)",
-    "거래대금순":"By turnover","종목 수":"Stocks",
-    "전일 대비":"Day change","상장주식수":"Shares out.","52주 최고":"52W high","52주 최저":"52W low",
-    "하락 종목":"Decliners","시장 비중":"Market weight"
-  });
-  function cleanEn(s){
-    s=(s||'').trim();
-    var prev;
-    do{ prev=s;
-      s=s.replace(/[\s,\.]*\b(CO|LTD|INC|CORP|CORPORATION|LIMITED|PLC|LLC)\b\.?\s*,?\s*\.?$/i,'').trim();
-    }while(s!==prev && s);
-    s=s.replace(/[,.\s]+$/,'').trim();
-    var letters=s.replace(/[^A-Za-z]/g,'');
-    var upper=s.replace(/[^A-Z]/g,'');
-    if(letters && upper.length/letters.length>0.8){
-      var ACR={LG:1,SK:1,KB:1,KT:1,HD:1,CJ:1,GS:1,LS:1,DB:1,NH:1,SC:1,POSCO:1,NAVER:1,HMM:1,OCI:1,DL:1,BGF:1,JYP:1,YG:1,SM:1,HLB:1,KCC:1,DGB:1,BNK:1,JB:1,NHN:1,SDI:1,BM:1,IPS:1,NC:1,LX:1,KG:1,DN:1};
-      s=s.split(/\s+/).map(function(w){
-        var wu=w.toUpperCase().replace(/[.,]/g,'');
-        if(ACR[wu]) return wu;
-        if(/[&]/.test(w) && w===w.toUpperCase()) return w;
-        return w.charAt(0).toUpperCase()+w.slice(1).toLowerCase();
-      }).join(' ');
-    }
-    return s;
-  }
-  var live=(window.KOS_LIVE_DATA&&window.KOS_LIVE_DATA.stocks)||[];
-  var d={};
-  live.forEach(function(s){ if(s.name_en) d[s.name]=cleanEn(s.name_en); });
-  KOSi18n.register(d);
-})();
-</script>
-<script>
-/* Shared chrome translations (nav + footer + disclaimer) for every page. */
-KOSi18n.register({
-  // brand / nav
-  "KOSAI":"KOSAI",
-  "홈":"Home",
-  
-  "업종 분석":"Industry Analysis",
-  "리포트":"Reports",
-  "워치리스트":"Watchlist","상호":"Company","대표":"CEO","사업자등록번호":"Business Reg. No.","통신판매업 신고":"Mail-order Reg. No.","주소":"Address","대표전화":"Phone","전자우편":"Email","요금제":"Pricing","멤버십":"Pricing","모닝브리핑":"Morning Brief",
-  // footer headings
-  "서비스":"Services",
-  "회사":"Company",
-  "정책":"Legal",
-  // footer links
-  "About":"About",
-  "문의하기":"Contact",
-  "피드백":"Feedback",
-  "이용약관":"Terms of Service",
-  "개인정보처리방침":"Privacy Policy",
-  "로그인":"Sign in",
-  "회원가입":"Sign up",
-  // brand tagline
-  "한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.":
-    "AI investment research for Korean public companies — data and analysis on a single page.",
-  // disclaimer
-  // footer bottom
-  "© 2026 KOSAI — All rights reserved.":"© 2026 KOSAI — All rights reserved.",
-  "대표 · 사업자등록번호 · 주소 · 연락처":"CEO · Business Reg. No. · Address · Contact"
-});
-
-</script>
-<style id="en-updown">
-/* English/Western convention: 상승=green, 하락=red (flips KO red/blue when lang=en) */
-:root[lang="en"]{--up:#1f9d57;--down:#e5383b;--up-soft:rgba(31,157,87,0.10);--down-soft:rgba(229,56,59,0.10)}
-:root[lang="en"][data-theme="dark"]{--up:#3ddc84;--down:#ff5b5e;--up-soft:rgba(61,220,132,0.12);--down-soft:rgba(255,91,94,0.12)}
-</style>
-<style>
-/* KOSAI 로고 (테마별 자동 전환) */
-.brand-logo{height:12px;width:auto;display:block}
-.brand-logo--dark{display:none}
-:root[data-theme="dark"] .brand-logo--light{display:none}
-:root[data-theme="dark"] .brand-logo--dark{display:block}
-.foot-brand .brand-logo{height:14px}
-@media(max-width:640px){.brand-logo{height:11px}}
-</style>
-<link rel="icon" type="image/svg+xml" href="../assets/kosai-icon-dark.svg?v=k2">
-  <link rel="icon" type="image/png" sizes="512x512" href="../assets/favicon.png?v=k2">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png?v=k2">
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png?v=k2">
-  <script src="analytics.js?v=772effd5"></script>
-<script>
-/* i18n: title·aria-label 속성 번역(영어 모드). 동적(data-i18n-skip) 영역은 각 페이지 템플릿의 T()가 담당 */
-(function(){
-  if(!window.KOSi18n) return;
-  var D={"라이트/다크 전환":"Switch light/dark","테마 전환":"Toggle theme","메뉴":"Menu","관심종목 추가/해제":"Add/remove from watchlist","관심종목":"Watchlist","제거":"Remove","닫기":"Close","뒤로":"Back","필터 설정":"Filter settings","정렬":"Sort","로딩":"Loading","검색":"Search","삭제":"Delete"};
-  function nm(s){return (s==null?'':String(s)).replace(/\s+/g,' ').trim();}
-  var orig=new WeakMap();
-  function fix(l){
-    if(!document.body) return;
-    document.querySelectorAll('[title],[aria-label]').forEach(function(el){
-      if(el.closest('[data-i18n-skip]')) return;
-      var rec=orig.get(el); if(!rec){rec={};orig.set(el,rec);}
-      ['title','aria-label'].forEach(function(a){
-        if(!el.hasAttribute(a)) return;
-        if(rec[a]==null) rec[a]=el.getAttribute(a);
-        var v=(l==='en')?KOSi18n.t(nm(rec[a])):rec[a];
-        if(el.getAttribute(a)!==v) el.setAttribute(a,v);
-      });
-    });
-  }
-  KOSi18n.register(D, fix);
-})();
-</script>
-
-<style>
-/* ── 모닝 브리핑 ─────────────────────────────────────────
-   글이 주인공인 화면이다. 읽는 폭을 좁게 잡고 행간을 넉넉히 둔다. */
-.mb{max-width:720px;margin:0 auto;padding:8px 0 56px}
-.mb-head{padding-bottom:26px;margin-bottom:30px;border-bottom:1px solid var(--hair)}
-/* 날짜는 붉은색이었는데(브릭 레드) 경고처럼 읽혀서 회색으로 바꿨다.
-   기사 머리의 날짜는 눈에 걸리는 자리가 아니라 조용히 있어야 하는 자리다. */
-.mb-date{font:600 13px var(--font-sans);color:var(--fg-3);letter-spacing:.02em;margin-bottom:10px}
-.mb-head h1{margin:0 0 16px;font:600 clamp(26px,4.4vw,38px)/1.22 var(--font-sans);color:var(--fg-1);letter-spacing:-.02em}
-.mb-lead{margin:0 0 14px;font:400 17.5px/1.62 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
-.mb-meta{font:400 13px var(--font-sans);color:var(--fg-3)}
-/* 커버리지 섹션은 성격이 다르다 — 시황이 아니라 우리 리포트에서 나온 것이다.
-   글에서도 밝히지만(프롬프트 6-1항) 눈으로도 구분되게 왼쪽에 선을 두고
-   출처 표시를 얹는다. 이 섹션이 이 브리핑의 존재 이유다. */
-.mb-sec--cov{padding-left:18px;border-left:2px solid var(--brand-blue)}
-.mb-src{font:700 11.5px var(--font-sans);letter-spacing:.06em;color:var(--brand-blue);
-  text-transform:none;margin-bottom:8px}
-:root[data-theme="dark"] .mb-sec--cov{border-left-color:var(--brand-cyan)}
-:root[data-theme="dark"] .mb-src{color:var(--brand-cyan)}
-@media (max-width:640px){.mb-sec--cov{padding-left:14px}}
-
-/* 요약 — 제목 아래, 본문 앞. 세 줄만 읽고 나가는 사람을 위한 자리다.
-   테두리 대신 배경으로 구분한다. 선을 두르면 상자가 먼저 눈에 들어와서
-   정작 읽어야 할 세 줄이 뒤로 밀린다. */
-.mb-sum{margin:0 0 34px;padding:18px 20px;border-radius:var(--radius-md);
-  background:rgba(0,0,0,.035)}
-:root[data-theme="dark"] .mb-sum{background:rgba(255,255,255,.05)}
-.mb-sum-h{font:700 11.5px var(--font-sans);letter-spacing:.06em;color:var(--fg-3);
-  margin-bottom:12px}
-/* 목록이 아니라 문단 하나다. 항목으로 쪼개 늘어놓으면 사람이 쓴 글이 아니라
-   기계가 뽑아낸 목록처럼 읽힌다는 피드백을 받았다. */
-/* 문단을 나눴으면 여백도 줘야 한다. 여기가 margin:0 이라 세 문단이 그대로
-   붙어 있었다. 데스크탑은 폭이 넓어 문단의 끝 줄이 짧게 끝나는 것으로 구분이
-   되지만, 휴대폰에서는 그 신호가 힘을 잃고 13줄이 한 덩어리로 보인다
-   (390px 기준 5·3·5줄 · 상자 393px). 본문 절의 문단이 24px 를 받는 것과
-   짝을 맞춰, 글자가 작은 만큼 줄인 값을 준다. */
-.mb-sum-p{margin:0 0 18px;font:400 15.5px/1.72 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
-/* 마지막 문단의 아래 여백은 뺀다 — 상자 안쪽 여백과 겹쳐 아래만 벌어진다. */
-.mb-sum-p:last-child{margin-bottom:0}
-@media (max-width:640px){.mb-sum{padding:16px}.mb-sum-p{font-size:15px;margin-bottom:16px}}
-
-/* 문단 사이가 좁아 글이 벽처럼 붙어 보인다는 피드백을 받았다. 줄높이는
-   1.78 로 넉넉한데 문단 간격이 15px — 한 줄 높이(28px)의 절반이라
-   문단이 바뀌는 것이 눈에 안 잡혔다. 간격을 한 줄보다 크게 벌린다. */
-.mb-sec{margin:0 0 50px}
-/* 소제목이 본문처럼 읽혀 글 전체가 한 덩어리로 보인다는 피드백을 받았다.
-   재 보니 그럴 만했다 — 소제목이 15px·fg-2 인데 본문이 16px·fg-1 이라,
-   굵기만 600 일 뿐 실제로는 본문보다 작고 흐렸다. 굵기 하나로 위계를
-   세우려 한 것이 잘못이다.
-
-   크기·굵기·색을 한꺼번에 올려 본문과 갈라 놓는다. 밑줄은 뺐다 — 소제목
-   아래 가로선은 '여기서 끝난다'로 읽혀서, 절이 시작한다는 신호와 반대다.
-   대신 위에 짧은 막대를 둔다.
-
-   막대를 span 이 아니라 ::before 로 그리는 이유가 있다. 이 사이트의 i18n
-   엔진은 화면의 한국어 텍스트 노드를 키로 삼아 번역하는데, 장식용 요소를
-   넣으면 그것까지 훑는다. CSS 로 그리면 DOM 에 안 잡힌다. */
-.mb-sec h2{margin:0 0 16px;font:800 20px/1.35 var(--font-sans);color:var(--fg-1);
-  letter-spacing:-.025em}
-.mb-sec h2::before{content:"";display:block;width:26px;height:3px;border-radius:2px;
-  background:var(--brand-blue);margin-bottom:12px}
-:root[data-theme="dark"] .mb-sec h2::before{background:var(--brand-cyan)}
-/* 커버리지 절은 왼쪽 세로선과 라벨을 이미 갖고 있다. 막대까지 더하면 셋이 된다. */
-.mb-sec--cov h2::before{display:none}
-.mb-sec p{margin:0 0 24px;font:400 16px/1.8 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
-.mb-sec p:last-child{margin-bottom:0}
-.mb-sec a{color:var(--fg-1);text-decoration:none;border-bottom:1px solid var(--hair);
-  transition:border-color .15s}
-.mb-sec a:hover{border-bottom-color:var(--fg-1)}
-.mb-sec b{font-weight:600}
-.mb-disc{margin:34px 0 0;padding-top:18px;border-top:1px solid var(--hair);
-  font:400 13px/1.7 var(--font-sans);color:var(--fg-3)}
-@media (max-width:640px){
-  .mb-sec p{font-size:15.5px}
-  .mb-lead{font-size:16.5px}
-  /* 본문이 15.5px 로 줄므로 소제목도 같이 줄이되, 차이는 유지한다. */
-  .mb-sec h2{font-size:18.5px}
-  .mb-sec{margin-bottom:44px}
-}
-</style>
-<style>/* lenis 가 요구하는 최소 CSS */
-html.lenis,html.lenis body{height:auto}
-.lenis [data-lenis-prevent]{overscroll-behavior:contain}
-.lenis.lenis-smooth iframe{pointer-events:none}</style>
-<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 가운데 · 푸터·로그인 상자 없음. scripts/patch_header.py 가 넣는다. 손으로 고치지 말 것. -->
-<script id="kosTheme">(function(){var t='dark';try{t=localStorage.getItem('kos-theme')||'dark'}catch(e){}document.documentElement.setAttribute('data-theme',t)})();</script>
+<script src="analytics.js?v=772effd5"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="noindex,nofollow">
 <meta name="theme-color" content="#f9f8f6">
-<script id="kosThemeColor">/* 상태바·주소창 색 힌트(theme-color) — 안드로이드 크롬 · iOS 15~18 · macOS 사파리용. 테마(data-theme)가 바뀌면 따라 바꾼다.
-   iOS 26 사파리는 이 메타를 안 쓴다 — 화면 위·아래 가장자리에 닿은 fixed 요소의 배경색을 스스로 읽는다(아래 #kosEdgeTop/#kosEdgeBot). */
-(function(){var m=document.querySelector('meta[name="theme-color"]'),r=document.documentElement;
-  function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0e0e16':'#f9f8f6')}
-  tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme']})})();</script>
-<style id="kosNav">
-@view-transition{navigation:auto}
-:root{--nav-bar:rgba(255,255,255,.58);--nav-line:rgba(0,0,0,.06)}
-:root[data-theme="dark"]{--nav-bar:rgba(14,14,22,.55);--nav-line:rgba(255,255,255,.08)}
-html .nav{top:var(--kos-bar-h,0px);margin:0;max-width:none;width:auto;min-height:60px;border:0;border-radius:0;
-  padding:11px calc(max(var(--pad),(100% - 1120px)/2) + 12px) 11px max(var(--pad),(100% - 1120px)/2);
-  background:transparent;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;
-  transition:background-color .25s ease,box-shadow .25s ease,-webkit-backdrop-filter .25s ease,backdrop-filter .25s ease}
-html .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--nav-line);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
-html .nav-spacer{min-height:32px}
-html .nav .brand-logo{height:14px}
-@media(max-width:640px){html .nav .brand-logo{height:13px}}
-html .nav-links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin-left:0;gap:14px}
-html .nav-links a:hover,html .nav .icon-btn:hover,html:root[data-theme="dark"] .nav-links a:hover,html:root[data-theme="dark"] .nav .icon-btn:hover{background:transparent}
-html .nav-links a.active,html:root[data-theme="dark"] .nav-links a.active{background:transparent}
-html .mobile-menu{top:calc(60px + var(--kos-bar-h,0px))}
-html .foot-inner,html:root[data-theme="dark"] .foot-inner,html .auth-card,html:root[data-theme="dark"] .auth-card{background:transparent;border:0;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none}
-/* iOS 26 사파리의 상태바·주소창 뒤 색 — 사파리가 화면 위·아래 가장자리(가운데, 4px 안쪽)에 닿은 fixed/sticky 요소를 찾아 그 배경색으로
-   칠한다(theme-color 메타는 안 쓴다). 투명한 .nav 만 있으면 처음 찍어 둔 색을 계속 쓰므로 테마를 바꿔도 위아래에 옛 색이 남았다
-   (2026-09-24 사장, 휴대폰). 색만 있는 12px 띠 둘을 가장자리에 두면 사파리가 매번 현재 테마 색을 읽는다. 페이지색 20% 라 보이지 않고,
-   손가락 기기에서만 둔다. WebKit LocalFrameView::fixedContainerEdges 조건: 두께 >10px · 불투명도 ≥.1 · 폭 ≥90% · 배경색이 있을 것. */
-#kosEdgeTop,#kosEdgeBot{display:none}
-@media (hover:none) and (pointer:coarse){
-  #kosEdgeTop,#kosEdgeBot{display:block;position:fixed;left:0;right:0;height:12px;z-index:60;pointer-events:none;opacity:.2;background:#f9f8f6}
-  #kosEdgeTop{top:0}
-  #kosEdgeBot{bottom:0}
-  :root[data-theme="dark"] #kosEdgeTop,:root[data-theme="dark"] #kosEdgeBot{background:#0e0e16}
-}
-</style>
+<title>어제 상승분을 되돌리게 한 유가, 밤사이 89달러로 내려왔다 — 모닝브리핑 디자인 시안 | KOSAI</title>
+<link rel="icon" href="../assets/favicon.png?v=k2">
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/Pretendard-Regular.woff2">
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/Pretendard-Medium.woff2">
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/Pretendard-SemiBold.woff2">
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/Pretendard-Bold.woff2">
+<script>(function(){var t='light';try{t=localStorage.getItem('kos-theme')||'light'}catch(e){}document.documentElement.setAttribute('data-theme',t);})();</script>
+<script id="kosThemeColor">(function(){var m=document.querySelector('meta[name="theme-color"]'),r=document.documentElement;
+  function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0d0d0e':'#f9f8f6')}
+  tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme']})})();</script>
+<script>
+/* 활성 표시선 — 컨테이너마다 선 하나를 두고, 활성 항목(.on)의 자리로 미끄러뜨린다.
+   axis 'x' = 밑줄, 'y' = 왼쪽 세로선. sel 로 활성 항목 선택자를 바꿀 수 있다(기본 .on).
+   첫 자리는 그냥 놓고, 그 뒤부터 element.animate() 로 이전 자리에서 새 자리로 움직인다.
+   CSS transition 을 안 쓰는 이유: 휴대폰 목차 띠가 헤더 안으로 옮겨 붙는 프레임에 항목이 같이 바뀌면
+   방금 옮겨진 요소라 transition 이 시작되지 않는다. animate() 는 DOM 이동과 무관하게 움직인다.
+   window.kosIndMs 로 길이를 바꿀 수 있다(시험용). 움직임 줄이기 설정이면 바로 놓는다. */
+window.kosInd=function(box,axis,sel){
+  if(!box)return function(){};
+  if(box.__ind)return box.__ind;
+  var ind=document.createElement('span');ind.className='ind '+(axis==='y'?'ind-v':'ind-h');ind.setAttribute('aria-hidden','true');box.appendChild(ind);
+  var last=null,placed=false,anim=null,rm=window.matchMedia?matchMedia('(prefers-reduced-motion:reduce)'):null;
+  function move(force){
+    var a=box.querySelector(sel||'.on');
+    if(!a){ind.style.opacity='0';last=null;return}
+    if(a===last&&!force)return;
+    var b=box.getBoundingClientRect(),r=a.getBoundingClientRect();
+    if(!r.width&&!r.height)return;
+    last=a;
+    var x=r.left-b.left-box.clientLeft+box.scrollLeft,y=r.top-b.top-box.clientTop+box.scrollTop;
+    var to={transform:'translate('+x+'px,'+(axis==='y'?y:y+r.height-2)+'px)'};
+    if(axis==='y')to.height=r.height+'px';else to.width=r.width+'px';
+    var from=null;
+    if(placed&&ind.animate&&!(rm&&rm.matches)){var cs=getComputedStyle(ind);from={transform:cs.transform};if(axis==='y')from.height=cs.height;else from.width=cs.width;if(anim){anim.cancel();anim=null}}
+    ind.style.opacity='';ind.style.transform=to.transform;if(axis==='y')ind.style.height=to.height;else ind.style.width=to.width;
+    if(from){anim=ind.animate([from,to],{duration:window.kosIndMs||300,easing:'cubic-bezier(.2,.8,.2,1)'});anim.onfinish=function(){anim=null}}
+    placed=true;
+  }
+  addEventListener('resize',function(){move(true)});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){move(true)});
+  box.__ind=move;move();return move;
+};
+</script>
+<style>
+@font-face{font-family:"Pretendard";font-weight:400;font-display:swap;src:url("../fonts/Pretendard-Regular.woff2") format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:500;font-display:swap;src:url("../fonts/Pretendard-Medium.woff2") format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:600;font-display:swap;src:url("../fonts/Pretendard-SemiBold.woff2") format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:700;font-display:swap;src:url("../fonts/Pretendard-Bold.woff2") format("woff2")}
+:root{
+  --bg:#f9f8f6; --surface:#ffffff; --surface-2:#f1efeb;
+  --ink:#141414; --ink-72:rgba(20,20,20,.72); --ink-55:rgba(20,20,20,.55); --ink-30:rgba(20,20,20,.30);
+  --hair:rgba(20,20,20,.08); --line:rgba(20,20,20,.14);
+  --up:#c8102e; --down:#1e5fbf; --up-bg:rgba(200,16,46,.08); --down-bg:rgba(30,95,191,.08);
+  --font:"Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --wrap:1120px; --pad:32px; --nav-bar:rgba(249,248,246,.72);
+  color-scheme:light;
+}
+:root[data-theme="dark"]{
+  --bg:#0d0d0e; --surface:#161617; --surface-2:#1e1e20;
+  --ink:#ececea; --ink-72:rgba(236,236,234,.72); --ink-55:rgba(236,236,234,.55); --ink-30:rgba(236,236,234,.30);
+  --hair:rgba(255,255,255,.08); --line:rgba(255,255,255,.14);
+  --up:#f0655f; --down:#6f9cf5; --up-bg:rgba(240,101,95,.12); --down-bg:rgba(111,156,245,.12);
+  --nav-bar:rgba(13,13,14,.72);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(84px + var(--kos-bar-h,0px));overflow-x:clip}
+/* 옛 모듈(auth-state · settings-panel · auth-guard · consent · checkout)이 쓰는 토큰 이름 — 새 토큰에 잇는다. 모듈을 새 이름으로 고칠 때까지의 다리 */
+:root{--font-sans:var(--font);--fg-1:var(--ink);--fg-2:var(--ink-72);--fg-3:var(--ink-55);--bg-1:var(--surface);--border-2:var(--line);--shadow-2:0 8px 24px rgba(20,20,20,.08);--brand-blue:var(--ink);--brand-cyan:var(--ink-72);--radius-sm:8px;--radius-md:12px;--radius-lg:16px}
+[hidden]{display:none!important} /* hidden 속성이 .pager{display:flex} 같은 클래스 규칙에 밀리지 않게 */
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums lining-nums;word-break:keep-all;overflow-wrap:anywhere}
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(20,20,20,.14)} :root[data-theme="dark"] ::selection{background:rgba(255,255,255,.22)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--ink-55)}
+/* 헤더 — 사이트 규칙 그대로(60px · 맨 위 투명 · 내리면 띠) */
+.nav{position:sticky;top:var(--kos-bar-h,0px);z-index:50;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0;transition:background-color .2s,box-shadow .2s}
+.nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--hair);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+.nav-in{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;position:relative}
+.brand img{height:14px;display:block} .brand .dk{display:none} :root[data-theme="dark"] .brand .lt{display:none} :root[data-theme="dark"] .brand .dk{display:block}
+.links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:28px}
+.links a{font:500 14px/1 var(--font);color:var(--ink-72);transition:color .12s} .links a:hover,.links a.on{color:var(--ink)} .links a.on{font-weight:600}
+.right{display:flex;align-items:center;gap:6px} .login{font:600 13px/1 var(--font);color:var(--ink-72);padding:8px 10px} .login:hover{color:var(--ink)}
+.ib{width:38px;height:38px;border:0;background:transparent;color:var(--ink-72);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;border-radius:10px} .ib:hover{color:var(--ink)} .ib svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.menu{display:none}
+@media (max-width:820px){.links,.login,.acct{display:none} .menu{display:inline-flex}}
+/* 휴대폰 메뉴 — ☰ 를 누르면 헤더 아래를 페이지색 한 장이 다 덮는다. 큰 글자 다섯 · 계정 · 맨 아래 작은 링크.
+   (9/26 사장: 헤더에서 내려오던 목록이 안 예쁘다 — 그건 기능만 있던 자리였다.) nav 바깥에 둔다: .nav.scrolled 의
+   backdrop-filter 가 fixed 의 기준이 되어 안에 두면 내린 뒤 여는 순간 높이가 0 이 된다. */
+.menu .x{display:none} .nav.menu-open .menu .ham{display:none} .nav.menu-open .menu .x{display:block}
+.mmenu{display:none;position:fixed;top:calc(60px + var(--kos-bar-h,0px));left:0;right:0;bottom:0;z-index:49;background:var(--bg);flex-direction:column;box-sizing:border-box;padding:22px var(--pad) max(28px,env(safe-area-inset-bottom));overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+@media (max-width:820px){.mmenu.open{display:flex;animation:mmIn .18s ease-out}} @keyframes mmIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}} @media (prefers-reduced-motion:reduce){.mmenu.open{animation:none}}
+.mm-links{display:flex;flex-direction:column} .mm-links a{display:block;padding:10px 0;font:600 28px/36px var(--font);letter-spacing:-.02em;color:var(--ink-72);text-decoration:none} .mm-links a.on{color:var(--ink);font-weight:700}
+.mmenu .sep{height:1px;background:var(--hair);margin:20px 0 22px}
+.mm-auth{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px} .mm-auth a,.mm-auth button{border:0;background:none;padding:0;font:600 16px/24px var(--font);color:var(--ink);text-decoration:none;cursor:pointer}
+.mm-foot{margin-top:auto;padding-top:32px;display:flex;flex-wrap:wrap;gap:6px 18px} .mm-foot a{font:400 13px/20px var(--font);color:var(--ink-55);text-decoration:none}
+/* 계정(로그인 상태) — 이메일 첫 글자 동그라미와 작은 메뉴. 시안은 ?user=이메일 로 켠다 */
+.acct{position:relative;display:none;align-items:center} .acct.show{display:inline-flex} .right.user .login{display:none}
+.avatar{width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--bg);font:600 13px/1 var(--font);display:inline-flex;align-items:center;justify-content:center;border:0;cursor:pointer;padding:0;margin:0 4px}
+.acct-menu{display:none;position:absolute;right:0;top:calc(100% + 10px);min-width:220px;background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:6px 0;box-shadow:0 8px 24px rgba(20,20,20,.08);z-index:60}
+.acct.open .acct-menu{display:block} .acct-menu .em{padding:8px 16px 10px;font:400 12px/16px var(--font);color:var(--ink-55);border-bottom:1px solid var(--hair);margin-bottom:4px;word-break:break-all}
+.acct-menu a,.acct-menu button{display:block;width:100%;box-sizing:border-box;text-align:left;border:0;background:none;padding:9px 16px;font:500 14px/20px var(--font);color:var(--ink-72);cursor:pointer;text-decoration:none} .acct-menu a:hover,.acct-menu button:hover{background:var(--surface-2);color:var(--ink)}
+/* 단추 */
+/* 활성 표시선(kosInd) — 목차 세로선·밑줄 탭·쪽 번호가 쓴다. 움직임은 IND_JS 의 animate() */
+.ind{position:absolute;left:0;top:0;background:var(--ink);pointer-events:none;will-change:transform} .ind-v{width:2px} .ind-h{height:2px}
+.btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 18px;border-radius:999px;border:0;font:600 14px/1 var(--font);cursor:pointer;transition:background-color .12s,color .12s} .btn.ico{padding-left:14px}
+.btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+.btn-ink,.btn-primary{background:var(--ink);color:var(--bg)} .btn-ink:hover,.btn-primary:hover{opacity:.9}
+.btn-soft{background:var(--surface-2);color:var(--ink)} .btn-soft:hover{background:var(--line)}
+/* 절 제목 · 더보기 링크 */
+.sec-h{display:flex;align-items:baseline;gap:14px;margin:0 0 22px}
+.sec-h .num{font:600 13px/20px var(--font);color:var(--ink-30)}
+.sec-h h2{margin:0;font:700 24px/32px var(--font);letter-spacing:-.02em}
+.sec-h .more{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font:500 14px/20px var(--font);color:var(--ink-72);white-space:nowrap} .sec-h .more:hover{color:var(--ink)}
+.sec-h .more svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+/* 표 — 틀 없이 줄로만 */
+.tbl-wrap{overflow-x:auto}
+.tbl{width:100%;border-collapse:collapse}
+.tbl caption{text-align:left;padding:0 0 10px} .tbl .cap{display:flex;justify-content:space-between;align-items:baseline;font:500 13px/20px var(--font);color:var(--ink-72)} .tbl .cap .u{font-weight:400;color:var(--ink-55)}
+.tbl th,.tbl td{padding:11px 12px;font:400 14px/20px var(--font);text-align:right;white-space:nowrap;border-top:1px solid var(--hair)}
+.tbl thead th{font:500 12px/16px var(--font);color:var(--ink-55);border-top:0;border-bottom:1px solid var(--line);padding-top:0}
+.tbl th:first-child,.tbl td:first-child{text-align:left;padding-left:0;font-weight:500} .tbl th:last-child,.tbl td:last-child{padding-right:0}
+.tbl tbody th{font-weight:500}
+/* 푸터 */
+.foot{margin-top:96px;border-top:1px solid var(--hair);padding:56px 0 48px}
+.foot .brand img{height:13px} .ftag{margin:14px 0 0;font:400 14px/22px var(--font);color:var(--ink-72);max-width:260px}
+.fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;max-width:560px;margin-top:32px}
+.fcol{display:flex;flex-direction:column;gap:9px} .fcol h4{margin:0 0 4px;font:600 12px/16px var(--font);color:var(--ink-55)} .fcol a{font:400 14px/20px var(--font);color:var(--ink-72)} .fcol a:hover{color:var(--ink)}
+.biz{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:4px 16px;font:400 12px/18px var(--font);color:var(--ink-55)} .copy{margin-top:32px;font:400 12px/18px var(--font);color:var(--ink-55)}
+/* 휴대폰 사파리 상태바·주소창 뒤 색 — 페이지색 띠 (CLAUDE.md 2026-09-24) */
+#kosEdgeTop,#kosEdgeBot{display:none}
+@media (hover:none) and (pointer:coarse){#kosEdgeTop,#kosEdgeBot{display:block;position:fixed;left:0;right:0;height:12px;z-index:60;pointer-events:none;opacity:.2;background:var(--bg)} #kosEdgeTop{top:0} #kosEdgeBot{bottom:0}}
+
+/* 글 한 단 — 읽기 폭 720 */
+.mb{max-width:720px;padding:44px 0 0}
+.mb-date{font:500 13px/20px var(--font);color:var(--ink-55)} .mb-date::before{content:"모닝브리핑 · "}
+.mb h1{margin:12px 0 0;font:700 36px/48px var(--font);letter-spacing:-.025em;text-wrap:balance}
+.mb-lead{margin:18px 0 0;font:400 18px/30px var(--font);color:var(--ink-72)}
+.mb-meta{margin-top:14px;font:400 13px/20px var(--font);color:var(--ink-55)}
+/* 요약 — 상자 대신 위아래 줄 */
+.mb-sum{margin:36px 0 0;padding:26px 0 8px;border-top:1px solid var(--line);border-bottom:1px solid var(--hair)}
+.mb-sum-h{font:600 12px/16px var(--font);color:var(--ink-55);margin:0 0 14px}
+.mb-sum-p{margin:0 0 18px;font:400 18px/30px var(--font);letter-spacing:-.005em}
+/* 절 */
+.mb-sec{padding-top:48px}
+.mb-sec h2{margin:0 0 18px;font:700 24px/32px var(--font);letter-spacing:-.02em;text-wrap:balance}
+.mb-sec p{margin:0 0 20px;font:400 17px/28px var(--font);letter-spacing:-.005em} .mb-sec p:last-child{margin-bottom:0}
+.mb-sec a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px;text-decoration-thickness:1px} .mb-sec a:hover{text-decoration-color:var(--ink)}
+.mb-sec b{font-weight:600}
+/* KOSAI 리포트 확인 지점 — 우리 리포트에서 나온 절이라 줄 하나로 구분 */
+.mb-sec--cov{margin-top:56px;padding-top:36px;border-top:1px solid var(--line)}
+.mb-src{font:600 12px/16px var(--font);color:var(--ink-55);margin:0 0 10px}
+.mb-disc{margin:56px 0 0;padding-top:18px;border-top:1px solid var(--hair);font:400 12px/18px var(--font);color:var(--ink-55)}
+
+@media (max-width:820px){
+  :root{--pad:20px}
+  .nav{display:block;height:60px;padding:0} .nav-in{height:60px;padding:0 var(--pad)}
+  .nav,.nav.scrolled{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}
+  .sec-h h2{font-size:22px;line-height:28px}
+  .tbl th,.tbl td{padding:10px 10px;font-size:13px} .tbl th:first-child,.tbl td:first-child{position:sticky;left:0;background:var(--bg)}
+}
+@media (max-width:820px){
+  .mb{padding:20px 0 0} .mb h1{font-size:28px;line-height:38px} .mb-lead{font-size:16px;line-height:27px}
+  .mb-sum{margin-top:28px;padding:22px 0 4px} .mb-sum-p{font-size:16px;line-height:27px}
+  .mb-sec{padding-top:40px} .mb-sec h2{font-size:21px;line-height:29px} .mb-sec p{font-size:16px;line-height:27px}
+  .mb-sec--cov{margin-top:44px;padding-top:30px}
+}
+</style>
 </head>
 <body>
 <div class="kos-staging-bar">
@@ -536,99 +183,26 @@ html .foot-inner,html:root[data-theme="dark"] .foot-inner,html .auth-card,html:r
   <a href="#" id="kosDemoReset">구독 초기화</a>
   <a href="../">실제 사이트로</a>
 </div>
-<style>
-/* 이 띠는 화면 맨 위에 붙어 있다(sticky top:0). 그래서 아래에 오는 것들과
-   자리·순서를 정해 두지 않으면 서로 겹친다. 실제로 두 가지가 겹쳤다.
-
-   z-index 는 60 이다. 헤더(50)와 모바일 메뉴(49) 위에 오되, 확인 창(80)과
-   설정 창(1100) 아래에 둔다. 200 이었을 때는 확인 창이 띠에 가렸다 —
-   .dlg-box 는 최대 88vh 를 가운데 정렬하므로, 내용이 긴 창은 제목이 있는
-   윗부분이 띠 밑으로 들어가 읽을 수가 없었다.
-
-   그리고 헤더와 모바일 메뉴를 띠 높이만큼 내린다. 둘은 화면 위쪽에서 각각
-   12px·70px 떨어진 자리를 잡는데, 그 값은 위에 아무것도 없는 실사이트
-   기준이다. 여기서는 띠가 그 자리를 차지하고 있어 헤더가 띠 밑으로
-   들어가고, 메뉴를 열면 첫 두 칸(홈·리포트)이 헤더에 덮여 보이지 않았다.
-
-   띠는 화면이 좁으면 두세 줄로 접혀 높이가 달라진다. 그래서 값을 적어 두지
-   않고 아래 스크립트가 재어 넣는다(--kos-bar-h). */
-.kos-staging-bar{position:sticky;top:0;z-index:60;display:flex;flex-wrap:wrap;align-items:center;
-  gap:12px;padding:9px 16px;background:#b4341f;color:#fff;
-  font:600 12.5px var(--font-sans),system-ui,sans-serif}
-.kos-staging-bar b{font-weight:800;letter-spacing:.05em}
-.kos-staging-bar span{margin-right:auto}
-.kos-staging-bar a{color:#fff;text-decoration:underline;text-underline-offset:2px}
-.nav{top:calc(12px + var(--kos-bar-h,0px))}
-.mobile-menu{top:calc(70px + var(--kos-bar-h,0px))}
-</style>
-<script>
-/* 띠 높이를 CSS 로 넘긴다(--kos-bar-h). 위 주석에 적은 대로 헤더와 모바일
-   메뉴가 이만큼 내려간다.
-
-   높이를 숫자로 적어 두지 않는 이유. 화면이 좁으면 안내 문구와 링크가
-   접혀 한 줄이 두 줄, 세 줄이 된다. 글꼴이 늦게 도착해도 달라진다. 그래서
-   재고, 바뀌면 다시 잰다 — 창 크기 변화와 띠 자체의 크기 변화 둘 다 본다. */
-(function () {
-  var bar = document.querySelector('.kos-staging-bar');
-  if (!bar) return;
-  function measure() {
-    document.documentElement.style.setProperty('--kos-bar-h', bar.offsetHeight + 'px');
-  }
-  measure();
-  addEventListener('resize', measure);
-  addEventListener('load', measure);          // 글꼴이 늦게 와서 줄 수가 바뀌는 경우
-  if (window.ResizeObserver) new ResizeObserver(measure).observe(bar);
-})();
-
-/* 모의 구독을 지운다. 여러 상태(비구독 → BASIC → PRO → 해지)를 몇 번이고
-   다시 밟아 볼 수 있어야 미리보기가 쓸모 있다. 모듈보다 먼저 실행되므로
-   KOSDemo 는 누를 때 찾는다. */
-document.addEventListener('click', function (e) {
-  var a = e.target.closest && e.target.closest('#kosDemoReset');
-  if (!a) return;
-  e.preventDefault();
-  if (window.KOSDemo) window.KOSDemo.reset();
-  else ['kos-demo-sub', 'kos-demo-reads', 'kos-demo-pays', 'kos-demo-reasons'].forEach(function (k) {
-    try { localStorage.removeItem(k); } catch (err) {}
-  });
-  location.reload();
-});
-</script>
-
-
-<nav class="nav" data-screen-label="Brief · Nav">
-  <a class="brand" href="./"><img class="brand-logo brand-logo--light" src="../assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="../assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a>
-  <div class="nav-links">
-    <a href="Home.html">홈</a>
-    <a href="Reports.html">리포트</a>
-    <a href="industry.html">업종 분석</a>
-      <a href="Watchlist.html">관심종목</a>
-    <a href="pricing.html">멤버십</a>
-    <a href="brief.html" class="active">모닝브리핑</a>
-  </div>
-  <div class="nav-spacer"></div>
-  <button class="icon-btn" id="themeBtn" aria-label="테마 전환" title="라이트/다크 전환">
-    <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-  </button>
-  <button class="icon-btn menu-btn" id="menuBtn" aria-label="메뉴">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-  </button>
-</nav>
-<div class="mobile-menu glass" id="mobileMenu">
-  <a href="Home.html">홈</a>
-  <a href="Reports.html">리포트</a>
-  <a href="industry.html">업종 분석</a>
-  <a href="Watchlist.html">관심종목</a>
-  <a href="pricing.html">멤버십</a>
-  <a href="brief.html" class="active">모닝브리핑</a>
+<style>.kos-staging-bar{position:sticky;top:0;z-index:60;display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:9px 16px;background:#b4341f;color:#fff;font:600 12.5px var(--font),system-ui,sans-serif}
+.kos-staging-bar b{font-weight:800;letter-spacing:.05em} .kos-staging-bar span{margin-right:auto} .kos-staging-bar a{color:#fff;text-decoration:underline;text-underline-offset:2px}</style>
+<script>(function(){var bar=document.querySelector('.kos-staging-bar');if(!bar)return;
+  function measure(){document.documentElement.style.setProperty('--kos-bar-h',bar.offsetHeight+'px')}
+  measure();addEventListener('resize',measure);addEventListener('load',measure);if(window.ResizeObserver)new ResizeObserver(measure).observe(bar);})();
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('#kosDemoReset');if(!a)return;e.preventDefault();
+  try{if(window.KOSDemo&&KOSDemo.reset)KOSDemo.reset();else['kos-demo-sub','kos-demo-reads','kos-demo-pays','kos-demo-reasons'].forEach(function(k){localStorage.removeItem(k)})}catch(x){}location.reload()});</script>
+<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>
+<nav class="nav" id="nav"><div class="nav-in">
+  <a class="brand" href="./"><img class="lt" src="../assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="../assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <div class="links"><a href="Home.html">홈</a><a href="Reports.html">리포트</a><a href="industry.html">업종 분석</a><a href="Watchlist.html">관심종목</a><a href="pricing.html">멤버십</a><a href="brief.html" class="on">모닝브리핑</a></div>
+  <div class="right" id="navRight"><a class="login" href="Login.html">로그인</a><div class="acct" id="acct"></div>
+    <button class="ib" id="themeBtn" aria-label="테마 전환"><svg viewBox="0 0 24 24" id="themeIcon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    <button class="ib menu" id="menuBtn" aria-label="메뉴" aria-expanded="false" aria-controls="mmenu"><svg class="ham" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
 </div>
-
-<div class="wrap" data-screen-label="10 Morning Brief">
-  <div class="crumb"><a href="Home.html">홈</a> / <b>모닝 브리핑</b></div>
-
+</nav>
+<div class="mmenu" id="mmenu"><div class="mm-links"><a href="Home.html">홈</a><a href="Reports.html">리포트</a><a href="industry.html">업종 분석</a><a href="Watchlist.html">관심종목</a><a href="pricing.html">멤버십</a><a href="brief.html" class="on">모닝브리핑</a></div><div class="sep"></div><div class="mm-auth" id="mauth"><a href="Login.html">로그인</a><a href="Signup.html">회원가입</a></div>
+<div class="mm-foot"><a href="About.html">About</a><a href="Contact.html">문의하기</a><a href="Feedback.html">피드백</a><a href="Terms.html">이용약관</a><a href="Privacy.html">개인정보처리방침</a></div></div>
+<main class="wrap">
   <article class="mb">
-    <!-- BRIEF:BODY:START · 여기부터 END 까지는 scripts/render_brief.py 가 만든다.
-         손으로 고치면 다음 생성에서 덮인다. -->
     <header class="mb-head">
       <div class="mb-date">2026년 9월 23일 (수) 07:28</div>
       <h1>어제 상승분을 되돌리게 한 유가, 밤사이 89달러로 내려왔다</h1>
@@ -684,103 +258,35 @@ document.addEventListener('click', function (e) {
     </section>
 
     <p class="mb-disc" data-i18n-block>본 자료는 공시(DART)·국내 시장 데이터와 공개된 해외 시장·일정 자료를 바탕으로 작성한 정보 제공 자료이며 투자 권유가 아닙니다. 국내 수치는 2026년 9월 22일 종가 기준입니다.</p>
-    <!-- BRIEF:BODY:END -->
   </article>
-</div>
-
-<footer class="foot">
-  <div class="wrap">
-    <div class="foot-inner glass">
-      <div class="foot-grid">
-        <div class="foot-brand"><a class="brand" href="./"><img class="brand-logo brand-logo--light" src="../assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="../assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
-        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종 분석</a></li><li><a href="Watchlist.html">관심종목</a></li><li><a href="pricing.html">멤버십</a></li><li><a href="brief.html">모닝브리핑</a></li></ul></div>
-        <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
-        <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
-      </div>
-      <!-- BIZ:START · scripts/patch_biz_footer.py 가 넣는다 -->
-      <div class="biz">
-        <span>상호 <b>코사이</b></span>
-        <span>대표 <b>임범준</b></span>
-        <span>사업자등록번호 <b>380-25-02019</b></span>
-        <span>주소 <b>서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</b></span>
-        <span>이메일 <b>hello@kosai.kr</b></span>
-      </div>
-      <!-- BIZ:END -->
-      <div class="foot-bottom"><span>© 2026 KOSAI — All rights reserved.</span></div>
-    </div>
+</main>
+<footer class="foot"><div class="wrap">
+  <a class="brand" href="./"><img class="lt" src="../assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="../assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <p class="ftag">한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p>
+  <div class="fgrid">
+    <div class="fcol"><h4>서비스</h4><a href="Home.html">홈</a><a href="Reports.html">리포트</a><a href="industry.html">업종 분석</a><a href="Watchlist.html">관심종목</a><a href="pricing.html">멤버십</a><a href="brief.html">모닝브리핑</a></div>
+    <div class="fcol"><h4>회사</h4><a href="About.html">About</a><a href="Contact.html">문의하기</a><a href="Feedback.html">피드백</a></div>
+    <div class="fcol"><h4>정책</h4><a href="Terms.html">이용약관</a><a href="Privacy.html">개인정보처리방침</a></div>
   </div>
-</footer>
-
+  <div class="biz"><span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span><span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span></div>
+  <div class="copy">© 2026 KOSAI — All rights reserved.</div>
+</div></footer>
 <script>
-/* 헤더 동작 — 모바일 메뉴와 라이트/다크 전환.
-   문의하기 페이지 껍데기에서 이 페이지를 만들면서 같이 딸려 온 문의 폼
-   스크립트를 걷어낼 때 이 부분까지 지워져, 다크 모드가 먹지 않았다. */
-const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
-menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
-mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.remove('open')));
-const root=document.documentElement,themeBtn=document.getElementById('themeBtn');
-const sunSVG='<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>';
-const moonSVG='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
-function applyTheme(t){root.setAttribute('data-theme',t);document.getElementById('themeIcon').innerHTML=t==='dark'?sunSVG:moonSVG;try{localStorage.setItem('kos-theme',t)}catch(e){}}
-let saved='dark';try{saved=localStorage.getItem('kos-theme')||'dark'}catch(e){}
-applyTheme(saved);
-themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
-
-/* 브리핑 본문 영문. 문단은 data-i18n-block 이라 통째로 갈아끼워지므로,
-   종목 링크가 영어 모드에서 사라지지 않도록 값 안에 태그를 그대로 둔다.
-   사전의 키는 화면에 보이는 한국어를 공백 정규화한 것이다(engine 의 norm).
-   그래서 키에는 태그가 없고 &amp; 같은 엔티티는 풀린 상태여야 한다. */
-/* BRIEF:I18N:START · scripts/render_brief.py 가 만든다 */
-if(window.KOSi18n) KOSi18n.register({
-  "모닝 브리핑":"Morning Brief",
-  "2026년 9월 23일 (수) 07:28":"Wednesday, September 23, 2026 · 07:28 KST",
-  "국내 증시 개장 · 직전 거래일 9월 22일(화) 종가 기준":"Korean markets open · Figures as of the Tuesday, September 22 close",
-  "본 자료는 공시(DART)·국내 시장 데이터와 공개된 해외 시장·일정 자료를 바탕으로 작성한 정보 제공 자료이며 투자 권유가 아닙니다. 국내 수치는 2026년 9월 22일 종가 기준입니다.":"This material is compiled from regulatory filings (DART), Korean market data and publicly available overseas market and calendar sources, for information purposes only. It is not investment advice. Korean figures are as of the September 22, 2026 close.",
-  "어제 상승분을 되돌리게 한 유가, 밤사이 89달러로 내려왔다":"The oil bounce that erased Korea's rally reversed overnight — WTI back to $89",
-  "요약":"In brief",
-  "직전 거래일 국내 증시의 상승분을 지운 유가 반등이 간밤 6% 넘는 급락으로 되돌려졌고, 미 10년물은 4.97%로 사실상 제자리에 남았다. 뉴욕에서는 나스닥이 사상 최고 종가를 썼고 필라델피아 반도체가 2% 넘게 올랐다.":"The oil rebound that erased Korea's intraday rally reversed overnight with a drop of more than 6%, while the US 10-year sat essentially unchanged at 4.97%.",
-  "국내에서는 엔비디아 냉각 솔루션 규격 승인 소식이 나온 LG전자를 필두로 전자·부품이 업종 상위 첫 자리에 올랐지만, 지수 중앙값은 마이너스였고 개인이 코스피에서 1조 5,643억원을 팔았다.":"In New York the Nasdaq closed at a record and the Philadelphia semiconductor index gained over 2%. At home, electronics components led sectors after LG Electronics won Nvidia certification for its cooling solution, but the median stock still fell and retail investors sold 1.56 trillion won on KOSPI.",
-  "원화는 추석 전 네고물량으로 두 달 반 만에 가장 크게 내렸고, 한은 금통위원의 추가 긴축 시기 언급이 함께 나왔다. 이번 주 미 지표는 비어 있고 다음 주 화요일부터 넷이 몰린다.":"The won posted its largest drop in two and a half months on pre-holiday exporter flows, alongside a BOK board member's remarks on the timing of further tightening. No US data this week; four releases arrive starting next Tuesday.",
-  "90달러가 깨졌는데, 10년물은 4.97%에 그대로 있다":"Oil breaks $90, but the 10-year stays at 4.97%",
-  "WTI는 89.85달러로 6.19% 내렸다. 이 브리핑이 지난주부터 금리·환율 압력의 공통 배경으로 붙여 온 항목이 100달러대에서 90달러 아래까지 내려온 셈이다. 다만 미 10년물은 4.96%에서 4.97%로, 사실상 움직이지 않았다.":"WTI settled at $89.85, down 6.19% — the factor this briefing has been citing as the common backdrop for rate and currency pressure has now fallen from above $100 to under $90. Yet the US 10-year barely moved, 4.96% to 4.97%.",
-  "유가가 빠진 만큼 금리가 따라 내려오지는 않았다는 뜻이고, 연준 쪽에서는 굴스비 총재가 강한 수요가 물가를 밀어올리고 있을 수 있다고 말한 것이 함께 전해졌다. 유가와 금리가 같은 방향으로 움직였던 지난주 초와는 조합이 달라졌다.":"Rates did not follow oil down, and separately Fed's Goolsbee said strong demand may be adding to inflation. The combination differs from early last week, when oil and yields moved together.",
-  "추석 전 네고물량에 원화 기준값 1,355.66원":"Won reference rate at 1,355.66 on pre-holiday exporter selling",
-  "9월 22일 기준 원/달러는 1,384.86원에서 1,355.66원으로 2.11% 내렸다. 외환시장 쪽 보도는 추석을 앞둔 수출업체 네고물량과 위험선호 회복을 이유로 들었고, 두 달 반 만에 가장 큰 낙폭이라고 전했다.":"The won reference rate fell 2.11%, from 1,384.86 to 1,355.66 as of Sept 22. FX desks attributed the move to exporter selling ahead of the Chuseok holiday and a recovery in risk appetite, calling it the largest single-day drop in two and a half months.",
-  "달러인덱스가 같은 날 0.12% 오른 100.55였던 것을 감안하면 달러가 약해져서 생긴 움직임은 아니다. 여기에 한은에서는 장용성 금통위원이 수도권 집값과 가계대출을 들어 부동산발 금융불균형을 경계하며 추가 긴축 시기를 검토해야 한다는 취지로 발언했다. 환율이 빠르게 내려온 구간과 추가 인상 논의가 겹쳐 있다는 점이 오늘 수출주 쪽을 볼 때의 배경이다.":"With the dollar index up 0.12% at 100.55 the same day, this was not dollar weakness. Meanwhile BOK board member Chang Yong-sung flagged financial imbalances from property and household credit and said the timing of further tightening needs review. A fast-falling won overlapping with renewed tightening talk is the backdrop for exporters today.",
-  "나스닥 최고치와 마이크론 5% — 그런데 국내 주역은 하이닉스가 아니었다":"Record Nasdaq and Micron +5% — but Seoul's leader wasn't Hynix",
-  "뉴욕에서는 나스닥이 0.45% 올라 사상 최고 종가를 썼고 필라델피아 반도체가 2.06%, 마이크론이 5.00% 올랐다. 반면 다우는 0.36% 내려 지수 간 방향이 갈렸다.":"In New York the Nasdaq rose 0.45% to a record close, with the Philadelphia semiconductor index up 2.06% and Micron up 5.00%; the Dow fell 0.36%, so the indices split.",
-  "국내 직전 장은 그 흐름이 다른 이름으로 나왔다 — LG전자가 대용량 냉각수 분배장치의 엔비디아 규격 승인 소식과 함께 6.91% 올랐고, 지주사인 LG가 4.67%, 같은 전자·부품 업종의 LG이노텍과 삼성전기도 각각 4%대, 3%대로 올라 업종 전체가 3.72% 올라 상위 첫 자리에 섰다.":"Seoul's last session expressed the same theme through different names — <a href=\"stock.html?ticker=066570\">LG Electronics<\/a> rose 6.91% after Nvidia certified its high-capacity coolant distribution unit, holding company <a href=\"stock.html?ticker=003550\">LG<\/a> gained 4.67%, and the same electronics-components sector, including <a href=\"stock.html?ticker=011070\">LG Innotek<\/a> and <a href=\"stock.html?ticker=009150\">Samsung Electro-Mechanics<\/a>, also rose, lifting the sector 3.72% to the top of the board.",
-  "정작 거래대금 1위였던 SK하이닉스는 1.50% 내렸다. 6조 1,715억원이 지나가고 지수와 반대로 끝난 자리다.":"Yet <a href=\"stock.html?ticker=000660\">SK Hynix<\/a>, the day's busiest stock at 6.17 trillion won traded, fell 1.50% — against the index.",
-  "기판 쪽은 더 크게 움직였다. 코리아써키트 25.43%, 티엘비 16.80%로 전자·부품 안에서 두 자릿수가 나왔고, 옆 업종인 반도체의 심텍도 13.31% 올랐다. 다만 이 종목들의 개별 사유는 확인된 것이 없다.":"Substrate names moved harder. <a href=\"stock.html?ticker=007810\">Korea Circuit<\/a> jumped 25.43% and <a href=\"stock.html?ticker=356860\">TLB<\/a> 16.80% within electronics components, while <a href=\"stock.html?ticker=222800\">Simmtech<\/a> in the neighboring semiconductor sector rose 13.31%.",
-  "미국 쪽에서는 AI 리더들의 개발 속도조절 요구로 칩 주식이 흔들렸다는 보도와 AI 수요를 근거로 한 랠리 보도가 같은 날 함께 나와 있어, 반도체 안에서도 메모리와 그 주변이 따로 움직인 하루였다.":"No stock-specific reason is confirmed for these moves. In the US, reports of chip stocks wobbling on AI leaders' calls to slow development ran alongside reports of an AI-demand rally the same day — memory and its periphery traded on separate tracks.",
-  "오른 종목보다 내린 종목이 457개 많았다":"457 more decliners than advancers",
-  "코스피는 0.15% 올랐지만 시총가중이 0.16%인 데 비해 종목 중앙값은 -0.19%였고, 상승 974 대 하락 1,431이었다. 위쪽 몇 개가 지수를 붙들어 둔 모양이다. 수급에서는 개인이 코스피에서 1조 5,643억원을 순매도했고 기관도 1,295억원을 팔았으며 외국인만 494억원 순매수였다.":"KOSPI rose 0.15% and the cap-weighted move was 0.16%, but the median stock fell 0.19%, with 974 advancers against 1,431 decliners — a handful of large caps held the index up. Retail investors sold a net 1.56 trillion won on KOSPI and institutions sold 130 billion, while foreigners bought just 49 billion.",
-  "코스닥은 0.23% 내렸고 개인이 1,548억원을 받았다. 업종 하위는 미디어·엔터, 화장품, 바이오·제약 순으로 1%대 하락이 이어졌고, 대형주에서는 셀트리온과 알테오젠도 함께 내려 바이오 쪽이 하루 종일 무거웠다.":"KOSDAQ fell 0.23% with retail buying 155 billion. Sector laggards were media-entertainment, cosmetics and biopharma, each down in the 1% range; among large caps <a href=\"stock.html?ticker=068270\">Celltrion<\/a> and <a href=\"stock.html?ticker=196170\">Alteogen<\/a> also fell, leaving biotech heavy all day.",
-  "미 지표는 다음 주 화요일부터, 사흘 만에 넷":"US data resumes next Tuesday — four releases in three days",
-  "일정표상 이번 주(9월 21~27일)에 확인할 미국 지표는 없다. 다음 주 9월 29일 구인·이직, 30일 GDP와 개인소비·PCE, 10월 2일 고용보고서가 사흘 만에 몰려 나오고, 9월 FOMC 의사록은 10월 7일로 잡혀 있다.":"There are no US data releases this week (Sept 21–27). Next week brings JOLTS on Sept 29, GDP and personal consumption/PCE on Sept 30, and the jobs report on Oct 2 — four in three days — with September FOMC minutes scheduled for Oct 7.",
-  "국내에서는 9월 1~20일 수출이 반도체 주도로 역대 최대라는 집계가 나와 있어, 지표 공백 구간의 재료는 유가·환율과 수출 쪽에 있는 셈이다.":"Domestically, September 1–20 exports were reported at a record led by semiconductors. In this data gap, the drivers sit with oil, the currency and exports.",
-  "제이알글로벌리츠, 실사보고서 제출일이 다음 주 월요일":"JR Global REIT: due-diligence report lands next Monday",
-  "KOSAI 리포트 확인 지점":"From KOSAI report checkpoints",
-  "오늘 자 KOSAI 리포트에서 제이알글로벌리츠의 확인 지점으로 꼽아 둔 첫 날짜는 다음 주 월요일인 9월 28일이다. 삼일회계법인 실사보고서 제출 예정일로, 자산·부채와 채무상환 능력 점검 결과가 이후 채권자 협상의 기준점이 된다.":"In today's KOSAI report, the first checkpoint flagged for <a href=\"stock.html?ticker=348950\">JR Global REIT<\/a> is next Monday, Sept 28 — the scheduled submission date for Samil PwC's due-diligence report, whose findings on assets, liabilities and debt-servicing capacity become the reference point for creditor talks.",
-  "세 차례 연장된 ARS 협의기간 마감일은 10월 14일이다. 감사의견 거절로 상장폐지 심사가 진행 중이고 상반기 실적이 대규모 적자로 정정된 상태라, 일정 자체가 가격 신호가 되는 구간이다.":"The thrice-extended ARS negotiation period ends Oct 14.",
-  "같은 날 접수분에서는 세원정공의 확인 지점이 11월 3분기 실적과 4분기 중 현대차·기아의 미국 현지 부품 조달 확대 진행 상황으로 잡혀 있어, 결과 확인은 한참 뒤다.":"With a disclaimer of audit opinion triggering delisting review and first-half results restated to a large loss, the calendar itself is the price signal here. From the same day's filings, <a href=\"stock.html?ticker=021820\">Sewon Precision<\/a> has checkpoints set at November's third-quarter results and fourth-quarter progress on Hyundai and Kia's expanded US local parts sourcing — results are some way off."
-});
-/* BRIEF:I18N:END */
-</script>
-<script type="module" src="auth-state.js?v=3c52a83a"></script>
-<!-- 부드러운 스크롤. 안 뜨거나 손가락 화면이면 스스로 비켜선다 —
-     smooth-scroll.js 맨 위 설명 참고. 빼려면 이 두 줄만 지우면 된다. -->
-<script src="lenis.js?v=3a0cb7e8"></script>
-<script src="smooth-scroll.js?v=b93f971f"></script>
-<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>
-<script id="kosNavJs">
-/* 헤더 띠 — 32px 넘게 내리면 .scrolled (head 의 #kosNav 참고). 프레임마다 한 번만 본다. */
 (function(){
-  var nav=document.querySelector('.nav'); if(!nav) return; var tick=false;
-  function upd(){ tick=false; nav.classList.toggle('scrolled',(window.scrollY||document.documentElement.scrollTop)>32); }
-  addEventListener('scroll',function(){ if(!tick){ tick=true; requestAnimationFrame(upd); } },{passive:true});
-  upd();
+  var nav=document.getElementById('nav'),tick=false;
+  function upd(){tick=false;nav.classList.toggle('scrolled',window.scrollY>32);if(window.kosOnScroll)window.kosOnScroll()}
+  addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+  var sun='<path d="M12 4V2M12 22v-2M4.9 4.9 3.5 3.5M20.5 20.5l-1.4-1.4M4 12H2M22 12h-2M4.9 19.1l-1.4 1.4M20.5 3.5l-1.4 1.4"/><circle cx="12" cy="12" r="4"/>',moon='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
+  var root=document.documentElement,icon=document.getElementById('themeIcon');function paint(){icon.innerHTML=root.getAttribute('data-theme')==='dark'?sun:moon}paint();window.__kosPaintTheme=paint;
+  document.getElementById('themeBtn').addEventListener('click',function(){var t=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',t);try{localStorage.setItem('kos-theme',t)}catch(e){}paint();});
+  /* 휴대폰 메뉴 */
+  var mb=document.getElementById('menuBtn'),mm=document.getElementById('mmenu');
+  function setMenu(on){nav.classList.toggle('menu-open',on);mm.classList.toggle('open',on);mb.setAttribute('aria-expanded',on?'true':'false');document.documentElement.style.overflow=on?'hidden':''}  /* html 에 건다 — body 에 걸면 sticky 헤더가 사라진다(html 이 overflow-x:hidden 이라 body 가 스크롤 상자가 됨) */
+  mb.addEventListener('click',function(){setMenu(!nav.classList.contains('menu-open'))});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('menu-open'))setMenu(false)});
+  window.matchMedia('(min-width:821px)').addEventListener('change',function(e){if(e.matches)setMenu(false)});
 })();
 </script>
+<script type="module" src="auth-state.js?v=1691fc81"></script>
 </body>
 </html>

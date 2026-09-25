@@ -261,6 +261,8 @@ jobs:
             echo "대기 없음 (지금 $(TZ='Asia/Seoul' date +%H:%M) · 계산된 대기 ${WAIT}초)"
           fi
           python scripts/render_brief.py --date "$D"
+          # 스테이징(새 디자인)의 브리핑은 생성기가 data/briefs 에서 그린다 — 같이 다시 만든다(2026-09-26).
+          python scripts/build_staging.py
 
       # 요약은 사람이 읽는 보고일 뿐이다. 여기서 터져도 ⑥ 커밋을 막으면
       # 안 된다 — 400원짜리 글을 보고문 하나 때문에 버리는 꼴이다.
@@ -315,13 +317,13 @@ jobs:
           # 반쯤 쓰인 상태일 수 있으므로 손대지 않는다 — 깨진 페이지를
           # 올리느니 전날 글을 그대로 두는 게 낫다.
           if [ "${{ steps.render.outcome }}" = "success" ]; then
-            git add data/briefs brief.html
+            git add data/briefs brief.html staging
             MSG="📰 모닝 브리핑 $D"
           else
             # ④가 페이지를 반쯤 쓰다 멈췄을 수 있다. 되돌려 놔야 한다 —
             # 고치지 않은 채로 두면 git pull --rebase 가 "unstaged changes"
             # 라며 막아서, 정작 살리려던 초안까지 못 올린다.
-            git checkout -- brief.html 2>/dev/null || true
+            git checkout -- brief.html staging 2>/dev/null || true
             git add data/briefs
             MSG="📰 모닝 브리핑 초안 $D (발행 대기)"
           fi

@@ -136,7 +136,8 @@ function matchParen(s, i) {
        confirmBilling  checkout.js 가 KOSDemo.subscribe 로 빠진다
        getReport       paywall.js 가 미리보기면 자리를 안 잡는다
        나머지 셋       로그인 계열이라 미리보기에서도 진짜 서버를 쓴다 */
-  const SKIP = new Set(["confirmBilling", "getReport", "sendResetEmail", "sendVerifyEmail", "socialLogin"]);
+  const SKIP = new Set(["confirmBilling", "getReport", "sendResetEmail", "sendVerifyEmail", "socialLogin",
+                        "signinHint"]);   // auth-hint.js — 이메일의 가입 경로 힌트. 읽기만 하고 모의 결제와 무관해 실제 함수를 그대로 부른다
   const demoSrc = readFileSync(join(STAGING, "demo-backend.js"), "utf8");
   const demo = new Set([...demoSrc.matchAll(/name === "([A-Za-z]\w*)"/g)].map((m) => m[1]));
   const gaps = [...names].filter((n) => !SKIP.has(n) && !demo.has(n));

@@ -5,7 +5,7 @@ window.kosTocInit=function(){
   if(!mark||!bar){window.kosOnScroll=null;window.__kosSpy=null;return}
   function pin(){var inNav=bar.parentNode===nav;
     if(!mq.matches){if(inNav){mark.after(bar);mark.style.height=''}return}
-    var top=mark.getBoundingClientRect().top;
+    var top=mark.getBoundingClientRect().top-(parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--kos-bar-h'))||0);
     if(!inNav&&top<=60){mark.style.height=(bar.offsetHeight+12)+'px';nav.appendChild(bar);void bar.offsetHeight}
     else if(inNav&&top>60){mark.after(bar);mark.style.height='';void bar.offsetHeight}}
   window.kosOnScroll=pin;
@@ -33,11 +33,11 @@ window.kosTocInit();
   mb.addEventListener('click',function(){setMenu(!nav.classList.contains('menu-open'))});
   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('menu-open'))setMenu(false)});
   window.matchMedia('(min-width:821px)').addEventListener('change',function(e){if(e.matches)setMenu(false)});
-  /* 로그인 상태(시안) — 실사이트에서는 auth-state.js 가 Firebase 세션으로 같은 자리를 채운다. ?user=1 또는 ?user=이메일 */
   var qs=new URLSearchParams(location.search),u=qs.get('user');
   if(u){var email=(u==='1'||u==='')?'you@example.com':u,init=(email.charAt(0)||'K').toUpperCase(),acct=document.getElementById('acct');
     document.getElementById('navRight').classList.add('user');acct.classList.add('show');
-    acct.innerHTML='<button type="button" class="avatar" id="acctBtn" aria-haspopup="true" aria-expanded="false" aria-label="계정 메뉴">'+init+'</button><div class="acct-menu" role="menu"><div class="em">'+email+'</div><a href="/preview/settings.html">설정</a><button type="button" id="signOut">로그아웃</button></div>';
+    acct.innerHTML='<button type="button" class="avatar" id="acctBtn" aria-haspopup="true" aria-expanded="false" aria-label="계정 메뉴"></button><div class="acct-menu" role="menu"><div class="em"></div><a href="/preview/settings.html">설정</a><button type="button" id="signOut">로그아웃</button></div>';
+    document.getElementById('acctBtn').textContent=init;acct.querySelector('.em').textContent=email;
     var ab=document.getElementById('acctBtn');ab.addEventListener('click',function(e){e.stopPropagation();var on=!acct.classList.contains('open');acct.classList.toggle('open',on);ab.setAttribute('aria-expanded',on?'true':'false')});
     document.addEventListener('click',function(e){if(!acct.contains(e.target)){acct.classList.remove('open');ab.setAttribute('aria-expanded','false')}});
     document.getElementById('mauth').innerHTML='<a href="/preview/settings.html">설정</a><button type="button" id="signOutM">로그아웃</button>';  /* 이메일·동그라미 줄은 뺐다(9/26 사장) — 헤더의 동그라미가 이미 로그인 상태를 말한다 */

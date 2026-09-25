@@ -24,9 +24,9 @@ CHECK = '<svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>'
 
 
 def social(next_page):
-    return (f'<div class="social"><button type="button" class="sbtn google" data-user="you@gmail.com">{G_SVG}Google로 계속하기</button>'
-            f'<button type="button" class="sbtn kakao" data-user="you@kakao.com">{K_SVG}카카오로 계속하기</button>'
-            f'<button type="button" class="sbtn naver" data-user="you@naver.com">{N_SVG}네이버로 계속하기</button></div>')
+    return (f'<div class="social"><button type="button" class="sbtn google" id="googleBtn" data-user="you@gmail.com">{G_SVG}Google로 계속하기</button>'
+            f'<button type="button" class="sbtn kakao" id="kakaoBtn" data-user="you@kakao.com">{K_SVG}카카오로 계속하기</button>'
+            f'<button type="button" class="sbtn naver" id="naverBtn" data-user="you@naver.com">{N_SVG}네이버로 계속하기</button></div>')
 
 
 CSS = '''
@@ -256,21 +256,31 @@ SETTINGS_JS = r'''(function(){
 })();'''
 
 
-def page(title, body, js, extra_css=''):
+def page(title, body, js, extra_css='', module=None):
+    """js 는 시안용 흉내(IIFE). module 이 있으면(스테이징) 그 대신 실제 Firebase 모듈(scripts/auth_staging.py)을 붙인다."""
+    tail = ('\n<script>\n' + C.JS + '\n</script>\n<script type="module">\n' + module + '\n</script>') if module else ('\n<script>\n' + js + '\n' + C.JS + '\n</script>')
     return (C.head(title) + '\n<style>\n' + C.CSS + '\n' + C.FORM_CSS + '\n' + C.AUTH_CSS + '\n' + CSS + extra_css + '\n' + C.MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
-            + C.nav('') + '\n' + body + '\n' + C.FOOTER + '\n<script>\n' + js + '\n' + C.JS + '\n</script>\n</body>\n</html>')
+            + C.nav('') + '\n' + body + '\n' + C.FOOTER + tail + '\n</body>\n</html>')
 
 
-def build():
-    for out, title, body, js in [
-        ('preview/login.html', '로그인 — 디자인 시안 | KOSAI', LOGIN, LOGIN_JS),
-        ('preview/signup.html', '회원가입 — 디자인 시안 | KOSAI', SIGNUP, SIGNUP_JS),
-        ('preview/consent.html', '약관 동의 — 디자인 시안 | KOSAI', CONSENT, CONSENT_JS),
-        ('preview/auth-action.html', '계정 인증 — 디자인 시안 | KOSAI', ACTION, ACTION_JS),
-        ('preview/settings.html', '설정 — 디자인 시안 | KOSAI', SETTINGS, SETTINGS_JS),
+def build(outs=None):
+    outs = outs or {'login': 'preview/login.html', 'signup': 'preview/signup.html', 'consent': 'preview/consent.html', 'action': 'preview/auth-action.html', 'settings': 'preview/settings.html'}
+    stg = C.MODE == 'staging'
+    real = {}
+    if stg:   # 스테이징: 실제 Firebase 인증 모듈. 설정은 build_settings_staging 이 따로 만든다.
+        import auth_staging as A
+        real = {'login': A.LOGIN_JS, 'signup': A.SIGNUP_JS, 'consent': A.CONSENT_JS, 'action': A.ACTION_JS}
+    for key, out, title, body, js in [
+        ('login', outs['login'], '로그인 | KOSAI', LOGIN, LOGIN_JS),
+        ('signup', outs['signup'], '회원가입 | KOSAI', SIGNUP, SIGNUP_JS),
+        ('consent', outs['consent'], '약관 동의 | KOSAI', CONSENT, CONSENT_JS),
+        ('action', outs['action'], '계정 인증 | KOSAI', ACTION, ACTION_JS),
+        ('settings', outs['settings'], '설정 | KOSAI', SETTINGS, SETTINGS_JS),
     ]:
-        html = page(title, body, js)
-        (ROOT / out).write_text(html, encoding='utf-8')
+        if stg and key == 'settings':
+            continue
+        html = page(title if stg else title.replace(' | KOSAI', ' — 디자인 시안 | KOSAI'), body, js, module=real.get(key))
+        C.emit(ROOT / out, html)
         print(f'✅ {ROOT / out} · {len(html):,}자')
 
 

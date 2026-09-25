@@ -40,18 +40,20 @@ const ok = (cond, name, extra) => {
   return false;
 };
 
-/* 본문(<main>)만 떼어 글자만 남긴다. 껍데기(스테이징 띠·메뉴·글꼴 경로)는
-   두 쪽이 달라야 정상이므로 비교 대상이 아니다. */
+/* 법률 본문만 떼어 글자만 남긴다. 껍데기(스테이징 띠·메뉴·글꼴 경로·목차)는 두 쪽이 달라야 정상이므로 비교 대상이 아니다.
+   실사이트(옛 디자인)는 .legal 상자 하나에 공고일 줄·머리말·조문이 다 들어 있다. 스테이징(새 디자인, 2026-09-26)은
+   같은 글을 제목 아래 .meta(공고일) · .intro(머리말) · section.sec(조문)으로 펼쳐 놓았다 — build_legal_comp.py 가
+   만들 때 실사이트 .legal 과 글자가 같은지 스스로 확인하고, 여기서는 만들어진 파일끼리 다시 본다. */
+import { JSDOM } from "jsdom";
+const norm = (t) => t.replace(/\s+/g, " ").trim();
 function body(file) {
-  const s = readFileSync(file, "utf8");
-  const m = s.match(/<main>[\s\S]*?<\/main>/);
-  if (!m) return null;
-  return m[0]
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;/g, " ").replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"')
-    .replace(/\s+/g, " ")
-    .trim();
+  const doc = new JSDOM(readFileSync(file, "utf8").replace(/<br\s*\/?>/gi, " ")).window.document;   // 줄바꿈 태그는 띄어쓰기로 — 글자 비교라서
+  const legal = doc.querySelector(".legal");
+  if (legal) return norm(legal.textContent);
+  const parts = [doc.querySelector(".page-hero .meta"), doc.querySelector(".page-hero .intro"),
+                 ...[...doc.querySelectorAll("section.sec")].flatMap((s) => [s.querySelector("h2"), s.querySelector(".prose")])];
+  if (parts.some((x) => !x) || parts.length < 4) return null;
+  return norm(parts.map((x) => x.textContent).join(" "));
 }
 
 /* 어디서부터 달라지는지 한 줄로 짚어 준다. 5천 자를 통째로 찍으면
@@ -66,8 +68,8 @@ function firstDiff(a, b) {
 for (const name of ["Terms.html", "Privacy.html"]) {
   const live = body(join(ROOT, name));
   const stg = body(join(STAGING, name));
-  if (!ok(live, `실사이트 ${name} 에 <main> 이 있다`)) continue;
-  if (!ok(stg, `스테이징 ${name} 에 <main> 이 있다`)) continue;
+  if (!ok(live, `실사이트 ${name} 에 법률 본문(.legal)이 있다`)) continue;
+  if (!ok(stg, `스테이징 ${name} 에 법률 본문(.legal 또는 .meta·.intro·section.sec)이 있다`)) continue;
   ok(live === stg, `${name} 본문이 양쪽에서 같다`,
      live === stg ? "" : firstDiff(live, stg));
 

@@ -57,7 +57,7 @@ def extract(src_html):
     return lede, upd, intro, sections, legal
 
 
-def build(key):
+def build(key, out_path=None):
     cfg = PAGES[key]
     src = (ROOT / cfg['src']).read_text(encoding='utf-8')
     lede, upd, intro, sections, legal = extract(src)
@@ -92,7 +92,9 @@ def build(key):
     got = text_of(f'<p>{upd}</p>' + intro + ''.join(f'<h2>{t}</h2>{b}' for t, b in sections))
     assert want == got, f'{key}: 본문 글자가 실사이트와 다르다'
     out = ROOT / cfg['out']
-    out.write_text(html, encoding='utf-8')
+    if out_path:
+        out = Path(out_path)
+    C.emit(out, html)
     print(f'✅ {out} · {len(sections)}절 · {len(html):,}자 · 글자 일치')
 
 

@@ -82,7 +82,7 @@ async function open(viewport = DESK) {
   await page.waitForTimeout(500);
   return page;
 }
-const shown = (p) => p.evaluate(() => +document.getElementById("countN").textContent);
+const shown = (p) => p.evaluate(() => +document.getElementById("countN").textContent.replace(/,/g, ""));
 const chips = (p) => p.evaluate(() => [...document.querySelectorAll(".fchip .lab")].map((e) => e.textContent));
 
 /* 원자료에서 직접 센다. 화면과 같은 코드를 쓰지 않는 것이 요점이다. */
@@ -95,7 +95,7 @@ console.log("── 필터를 안 쓰면 밸류에이션 자료를 받지 않는
 {
   const p = await open();
   const st = await p.evaluate(() => ({
-    n: +document.getElementById("countN").textContent,
+    n: +document.getElementById("countN").textContent.replace(/,/g, ""),
     val: !!window.KOS_VALUATION,
     rows: document.querySelectorAll(".rl-row").length,
     /* 조건을 고르는 자리는 '필터 추가' 하나뿐이어야 한다. 업종 칩을 따로 두면
@@ -300,7 +300,7 @@ console.log("\n── 조건 때문에 비면 다른 말을 한다 ──\n");
   await p.click("#popApply");
   await p.waitForTimeout(1400);
   const st = await p.evaluate(() => ({
-    n: +document.getElementById("countN").textContent,
+    n: +document.getElementById("countN").textContent.replace(/,/g, ""),
     msg: document.getElementById("emptyMsg").textContent,
     reset: getComputedStyle(document.getElementById("emptyActs")).display !== "none",
   }));
@@ -399,7 +399,7 @@ console.log("\n── 실사이트 리포트 페이지 ──\n");
   await page.waitForTimeout(700);
 
   const st = await page.evaluate(() => ({
-    n: +document.getElementById("countN").textContent,
+    n: +document.getElementById("countN").textContent.replace(/,/g, ""),
     val: !!window.KOS_VALUATION,
     chips: document.querySelectorAll(".chip").length,
     btn: !!document.getElementById("addFilterBtn"),
@@ -414,7 +414,7 @@ console.log("\n── 실사이트 리포트 페이지 ──\n");
   await page.fill("#rMax", "10");
   await page.click("#popApply"); await page.waitForTimeout(1800);
 
-  const got = await page.evaluate(() => +document.getElementById("countN").textContent);
+  const got = await page.evaluate(() => +document.getElementById("countN").textContent.replace(/,/g, ""));
   const want = await page.evaluate(() => {
     const V = window.KOS_VALUATION && KOS_VALUATION.stocks; if (!V) return -1;
     return KOS_LIVE_DATA.stocks.filter((s) => {

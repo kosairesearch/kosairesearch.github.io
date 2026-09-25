@@ -1,29 +1,6 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8">
-<meta name="robots" content="noindex,follow">
-<title>구독 관리 · 이동 중… | KOSAI</title>
-<!--
-  구독 관리를 페이지에서 설정 창의 한 칸으로 옮겼다.
-
-  왜. 구독 관리는 리포트를 보다가 잠깐 들르는 곳이지 찾아가는 곳이 아니다.
-  페이지로 두면 보던 화면을 잃고 뒤로가기로 돌아와야 한다. 테마·언어·마케팅
-  수신과 같은 성격의 설정인데 그것만 페이지로 떨어져 있을 이유도 없다.
-
-  이 파일을 지우지 않고 껍데기로 남긴 이유. billing.html 을 가리키는 자리가
-  열두 군데다(요금제·종목·결제·계정 메뉴·안내 문구). 하나씩 고치면 결제
-  흐름 어딘가가 조용히 끊긴다. 여기 한 곳만 두면 그 열두 군데가 전부 새
-  자리로 온다.
-
-  ?card=1 은 결제 수단을 바꾸고 돌아올 때 붙는 표시다. 그대로 넘겨서 설정
-  창이 안내를 띄우게 한다.
--->
-<script>
-(function () {
-  var q = new URLSearchParams(location.search);
-  var to = "Home.html?settings=subscription" + (q.get("card") ? "&card=1" : "");
-  location.replace(to);
-})();
-</script>
-<meta http-equiv="refresh" content="0;url=Home.html?settings=subscription">
-</head><body>
-<p>구독 관리는 <a href="Home.html?settings=subscription">설정 창</a>으로 옮겼습니다.</p>
-</body></html>
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><title>구독 관리 | KOSAI</title>
+<meta http-equiv="refresh" content="0;url=Settings.html?tab=subscription">
+<script>/* 옛 주소(billing.html) — 구독 관리는 설정 페이지의 구독 탭이다. checkout·pricing·리포트 잠금 카드가 이 주소로 보낸다. */
+(function(){var q=new URLSearchParams(location.search);location.replace('Settings.html?tab=subscription'+(q.get('card')?'&card=1':''));})();</script>
+</head><body></body></html>
