@@ -60,7 +60,7 @@ CSS = '''
 .sheet{display:none;position:fixed;z-index:41;left:0;right:0;bottom:0;max-height:82vh;background:var(--surface);border:1px solid var(--hair);border-bottom:0;border-radius:16px 16px 0 0;box-shadow:0 12px 32px rgba(20,20,20,.12);flex-direction:column;overflow:hidden} .sheet.open{display:flex}
 .pop-head{display:flex;align-items:center;gap:4px;padding:10px 10px 10px 18px;border-bottom:1px solid var(--hair);flex:none} .pop-title{flex:1;font:600 14px/20px var(--font)}
 .pop-close{border:0;background:none;width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;color:var(--ink-55);cursor:pointer;padding:0;border-radius:8px} .pop-close:hover{color:var(--ink)} .pop-close svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.pop-body{overflow:auto;padding:8px 18px max(20px,env(safe-area-inset-bottom));min-height:0}
+.pop-body{overflow:auto;overscroll-behavior:contain;padding:8px 18px max(20px,env(safe-area-inset-bottom));min-height:0}
 .sg{margin:12px 0 0} .sg:first-child{margin-top:4px} .sg h4{margin:0 0 2px;font:500 12px/20px var(--font);color:var(--ink-55)}
 .sw{display:flex;flex-wrap:wrap;gap:0 22px} .sw button{position:relative;border:0;background:none;padding:0;font:500 15px/40px var(--font);color:var(--ink-72);cursor:pointer;white-space:nowrap} .sw button.on{color:var(--ink);font-weight:600} .sw button.on::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:2px;background:var(--ink)}
 .sg.top .sw button{font-weight:600}
@@ -172,8 +172,8 @@ JS = r'''(function(){
   function sBtn(s){return '<button type="button"'+(s===active?' class="on"':'')+' data-s="'+esc(s)+'">'+esc(s)+'</button>'}
   function renderSheet(){var by={};ORDER.forEach(function(o){(by[o.g]=by[o.g]||[]).push(o.s)});
     sbody.innerHTML='<div class="sg top"><div class="sw">'+sBtn('전체')+'</div></div>'+GROUPS.map(function(g){var ws=by[g[0]]||[];return ws.length?'<div class="sg"><h4>'+esc(g[0])+'</h4><div class="sw">'+ws.map(sBtn).join('')+'</div></div>':''}).join('')}
-  function openSheet(){renderSheet();sheet.classList.add('open');back.classList.add('open');document.body.style.overflow='hidden'}
-  function closeSheet(){sheet.classList.remove('open');back.classList.remove('open');document.body.style.overflow=''}
+  function openSheet(){renderSheet();sheet.classList.add('open');back.classList.add('open');document.documentElement.style.overflow='hidden'}  /* html 에 — body 에 걸면 sticky 헤더가 사라진다 */
+  function closeSheet(){sheet.classList.remove('open');back.classList.remove('open');document.documentElement.style.overflow=''}
   document.getElementById('sectorClose').addEventListener('click',closeSheet);back.addEventListener('click',closeSheet);
   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&sheet.classList.contains('open'))closeSheet()});
   sbody.addEventListener('click',function(e){var b=e.target.closest('button[data-s]');if(!b)return;active=b.dataset.s;closeSheet();renderTabs();renderMovers();tabsEl.scrollLeft=0});
