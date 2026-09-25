@@ -283,7 +283,7 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 .toc a{{display:flex;gap:10px;align-items:baseline;padding:7px 0 7px 12px;border-left:2px solid transparent;font:500 13px/18px var(--font);color:var(--ink-55);transition:color .12s}}
 .toc a .n{{font-weight:500;font-size:11px;color:var(--ink-30);min-width:18px}}
 .toc a:hover{{color:var(--ink)}} .toc a.on{{color:var(--ink);border-left-color:var(--ink);font-weight:600}} .toc a.on .n{{color:var(--ink-55)}}
-.chips-bar{{display:none}}
+.chips-bar,.chips-mark{{display:none}}
 .content{{min-width:0}}
 .sec{{max-width:720px;padding:0 0 88px}} .sec.wide{{max-width:880px}}
 .sec-h{{display:flex;align-items:baseline;gap:14px;margin:0 0 22px}}
@@ -328,7 +328,8 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 /* 출처 */
 .srcs{{margin:0;padding:0 0 0 22px;display:grid;gap:8px}} .srcs li{{font:400 14px/20px var(--font);color:var(--ink-55)}} .srcs a{{color:var(--ink-72);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}} .srcs a:hover{{color:var(--ink);text-decoration-color:var(--ink)}}
 .srcmore summary{{margin-top:14px;font:500 13px/20px var(--font);color:var(--ink-55);cursor:pointer;list-style:none}} .srcmore[open] summary{{margin-bottom:8px}}
-.disc{{max-width:880px;margin:8px 0 0;padding:18px 0 0;border-top:1px solid var(--hair);font:400 12px/18px var(--font);color:var(--ink-55)}}
+.rdate{{max-width:880px;margin:-40px 0 0;font:500 13px/20px var(--font);color:var(--ink-55)}}
+.disc{{max-width:880px;margin:24px 0 0;padding:18px 0 0;border-top:1px solid var(--hair);font:400 12px/18px var(--font);color:var(--ink-55)}}
 /* 푸터 */
 .foot{{margin-top:96px;border-top:1px solid var(--hair);padding:56px 0 48px}}
 .foot .brand img{{height:13px}} .ftag{{margin:14px 0 0;font:400 14px/22px var(--font);color:var(--ink-72);max-width:260px}}
@@ -345,7 +346,10 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
   h1.name{{font-size:32px;line-height:38px;margin-top:8px}} .price{{margin-top:16px}} .price .p{{font-size:32px;line-height:36px}}
   .stats{{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px;padding:18px 0}} .st-v{{font-size:17px}}
   .body{{display:block;padding-top:8px}} .toc{{display:none}}
+  .chips-mark{{display:block;height:0}}
   .chips-bar{{display:block;position:-webkit-sticky;position:sticky;top:60px;z-index:5;background:var(--bg);margin:0 calc(-1 * var(--pad)) 12px;border-bottom:1px solid var(--hair)}}
+  .chips-bar.fixed{{position:fixed;top:60px;left:0;right:0;margin:0}}
+  .nav,.nav.scrolled{{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}}
   .chips{{display:flex;gap:22px;overflow-x:auto;padding:0 var(--pad);scrollbar-width:none;-webkit-overflow-scrolling:touch}} .chips::-webkit-scrollbar{{display:none}}
   .chips a{{flex:none;font:500 13px/42px var(--font);color:var(--ink-55);border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .12s}} .chips a.on{{color:var(--ink);font-weight:600;border-bottom-color:var(--ink)}}
   .sec{{padding-bottom:64px}} .sec-h h2{{font-size:22px;line-height:28px}}
@@ -380,8 +384,9 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
   <div class="body">
     <aside class="toc" id="toc">{toc}</aside>
     <div class="content">
-      <div class="chips-bar"><nav class="chips" id="chips">{chips}</nav></div>
+      <div class="chips-mark" id="chipsMark"></div><div class="chips-bar" id="chipsBar"><nav class="chips" id="chips">{chips}</nav></div>
       {body}
+      <p class="rdate">리포트 작성 {esc(rep["reportDate"])} · 데이터 기준 {data_date_f} · AI 작성</p>
       <p class="disc">본 콘텐츠는 AI가 시장 데이터와 웹 검색 결과를 분석한 정보 제공용이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 책임은 투자자 본인에게 있습니다. 데이터는 지연되거나 오류가 포함될 수 있습니다.</p>
     </div>
   </div>
@@ -400,7 +405,12 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 <script>
 (function(){{
   var nav=document.getElementById('nav'),tick=false;
-  function upd(){{tick=false;nav.classList.toggle('scrolled',window.scrollY>32)}} addEventListener('scroll',function(){{if(!tick){{tick=true;requestAnimationFrame(upd)}}}},{{passive:true}});upd();
+  var mark=document.getElementById('chipsMark'),bar=document.getElementById('chipsBar'),mq=window.matchMedia('(max-width:820px)');
+  function pin(){{if(!mq.matches){{bar.classList.remove('fixed');mark.style.height='';return}}
+    var fixed=bar.classList.contains('fixed'),top=mark.getBoundingClientRect().top;
+    if(!fixed&&top<=60){{mark.style.height=(bar.offsetHeight+12)+'px';bar.classList.add('fixed')}}
+    else if(fixed&&top>60){{bar.classList.remove('fixed');mark.style.height=''}}}}
+  function upd(){{tick=false;nav.classList.toggle('scrolled',window.scrollY>32);pin()}} addEventListener('scroll',function(){{if(!tick){{tick=true;requestAnimationFrame(upd)}}}},{{passive:true}});upd();
   var sun='<path d="M12 4V2M12 22v-2M4.9 4.9 3.5 3.5M20.5 20.5l-1.4-1.4M4 12H2M22 12h-2M4.9 19.1l-1.4 1.4M20.5 3.5l-1.4 1.4"/><circle cx="12" cy="12" r="4"/>',moon='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
   var root=document.documentElement,icon=document.getElementById('themeIcon');function paint(){{icon.innerHTML=root.getAttribute('data-theme')==='dark'?sun:moon}}paint();
   document.getElementById('themeBtn').addEventListener('click',function(){{var t=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',t);try{{localStorage.setItem('kos-theme',t)}}catch(e){{}}paint();}});
