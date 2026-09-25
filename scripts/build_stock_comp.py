@@ -331,8 +331,10 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 .disc{{max-width:880px;margin:8px 0 0;padding:18px 0 0;border-top:1px solid var(--hair);font:400 12px/18px var(--font);color:var(--ink-55)}}
 /* 푸터 */
 .foot{{margin-top:96px;border-top:1px solid var(--hair);padding:56px 0 48px}}
-.foot .brand img{{height:13px}} .flinks{{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:20px}} .flinks a{{font:400 14px/20px var(--font);color:var(--ink-72)}} .flinks a:hover{{color:var(--ink)}}
-.biz{{margin-top:40px;display:flex;flex-wrap:wrap;gap:4px 16px;font:400 12px/18px var(--font);color:var(--ink-55)}} .copy{{margin-top:32px;font:400 12px/18px var(--font);color:var(--ink-55)}}
+.foot .brand img{{height:13px}} .ftag{{margin:14px 0 0;font:400 14px/22px var(--font);color:var(--ink-72);max-width:260px}}
+.fgrid{{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;max-width:560px;margin-top:32px}}
+.fcol{{display:flex;flex-direction:column;gap:9px}} .fcol h4{{margin:0 0 4px;font:600 12px/16px var(--font);color:var(--ink-55)}} .fcol a{{font:400 14px/20px var(--font);color:var(--ink-72)}} .fcol a:hover{{color:var(--ink)}}
+.biz{{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:4px 16px;font:400 12px/18px var(--font);color:var(--ink-55)}} .copy{{margin-top:32px;font:400 12px/18px var(--font);color:var(--ink-55)}}
 #kosEdgeTop,#kosEdgeBot{{display:none}}
 @media (hover:none) and (pointer:coarse){{#kosEdgeTop,#kosEdgeBot{{display:block;position:fixed;left:0;right:0;height:12px;z-index:60;pointer-events:none;opacity:.2;background:var(--bg)}} #kosEdgeTop{{top:0}} #kosEdgeBot{{bottom:0}}}}
 /* 태블릿·휴대폰 */
@@ -386,7 +388,12 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 </main>
 <footer class="foot"><div class="wrap">
   <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
-  <div class="flinks"><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a><a href="/About.html">About</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보처리방침</a></div>
+  <p class="ftag">한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p>
+  <div class="fgrid">
+    <div class="fcol"><h4>서비스</h4><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div>
+    <div class="fcol"><h4>회사</h4><a href="/About.html">About</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a></div>
+    <div class="fcol"><h4>정책</h4><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보처리방침</a></div>
+  </div>
   <div class="biz"><span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span><span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span></div>
   <div class="copy">© 2026 KOSAI — All rights reserved.</div>
 </div></footer>
