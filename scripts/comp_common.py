@@ -48,9 +48,9 @@ a{color:inherit;text-decoration:none}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
 .up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--ink-55)}
 /* 헤더 — 사이트 규칙 그대로(60px · 맨 위 투명 · 내리면 띠) */
-.nav{position:sticky;top:0;z-index:50;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 var(--pad);transition:background-color .2s,box-shadow .2s}
+.nav{position:sticky;top:0;z-index:50;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0;transition:background-color .2s,box-shadow .2s}
 .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--hair);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
-.nav-in{width:100%;max-width:var(--wrap);margin:0 auto;display:flex;align-items:center;justify-content:space-between;position:relative}
+.nav-in{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;position:relative}
 .brand img{height:14px;display:block} .brand .dk{display:none} :root[data-theme="dark"] .brand .lt{display:none} :root[data-theme="dark"] .brand .dk{display:block}
 .links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:28px}
 .links a{font:500 14px/1 var(--font);color:var(--ink-72);transition:color .12s} .links a:hover,.links a.on{color:var(--ink)} .links a.on{font-weight:600}
