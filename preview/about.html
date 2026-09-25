@@ -82,13 +82,17 @@ a{color:inherit;text-decoration:none}
 .ib{width:38px;height:38px;border:0;background:transparent;color:var(--ink-72);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;border-radius:10px} .ib:hover{color:var(--ink)} .ib svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .menu{display:none}
 @media (max-width:820px){.links,.login,.acct{display:none} .menu{display:inline-flex}}
-/* 휴대폰 메뉴 — ☰ 를 누르면 헤더 아래로 펼쳐지는 목록. 링크 다섯 + 로그인(또는 계정) */
+/* 휴대폰 메뉴 — ☰ 를 누르면 헤더 아래를 페이지색 한 장이 다 덮는다. 큰 글자 다섯 · 계정 · 맨 아래 작은 링크.
+   (9/26 사장: 헤더에서 내려오던 목록이 안 예쁘다 — 그건 기능만 있던 자리였다.) nav 바깥에 둔다: .nav.scrolled 의
+   backdrop-filter 가 fixed 의 기준이 되어 안에 두면 내린 뒤 여는 순간 높이가 0 이 된다. */
 .menu .x{display:none} .nav.menu-open .menu .ham{display:none} .nav.menu-open .menu .x{display:block}
-.mmenu{display:none;position:absolute;top:60px;left:0;right:0;background:var(--bg);border-top:1px solid var(--hair);border-bottom:1px solid var(--line);padding:6px 0 10px;z-index:56}
-.nav.menu-open .mmenu{display:block}
-.mmenu a,.mmenu button{display:block;width:100%;box-sizing:border-box;text-align:left;border:0;background:none;padding:14px var(--pad);font:500 18px/24px var(--font);color:var(--ink-72);text-decoration:none;cursor:pointer} .mmenu a.on{color:var(--ink);font-weight:600}
-.mmenu .sep{height:1px;background:var(--hair);margin:6px var(--pad)} .mmenu .em{padding:10px var(--pad) 0;font:400 12px/16px var(--font);color:var(--ink-55);word-break:break-all}
-.mback{display:none;position:fixed;left:0;right:0;top:60px;bottom:0;background:rgba(20,20,20,.16);z-index:55} .nav.menu-open .mback{display:block}
+.mmenu{display:none;position:fixed;top:60px;left:0;right:0;bottom:0;z-index:49;background:var(--bg);flex-direction:column;box-sizing:border-box;padding:22px var(--pad) max(28px,env(safe-area-inset-bottom));overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+@media (max-width:820px){.mmenu.open{display:flex;animation:mmIn .18s ease-out}} @keyframes mmIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}} @media (prefers-reduced-motion:reduce){.mmenu.open{animation:none}}
+.mm-links{display:flex;flex-direction:column} .mm-links a{display:block;padding:10px 0;font:600 28px/36px var(--font);letter-spacing:-.02em;color:var(--ink-72);text-decoration:none} .mm-links a.on{color:var(--ink);font-weight:700}
+.mmenu .sep{height:1px;background:var(--hair);margin:20px 0 22px}
+.mm-auth{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px} .mm-auth a,.mm-auth button{border:0;background:none;padding:0;font:600 16px/24px var(--font);color:var(--ink);text-decoration:none;cursor:pointer}
+.mm-me{flex-basis:100%;display:flex;align-items:center;gap:10px} .mm-me .avatar{margin:0} .mm-me .em{font:400 13px/18px var(--font);color:var(--ink-55);word-break:break-all}
+.mm-foot{margin-top:auto;padding-top:32px;display:flex;flex-wrap:wrap;gap:6px 18px} .mm-foot a{font:400 13px/20px var(--font);color:var(--ink-55);text-decoration:none}
 /* 계정(로그인 상태) — 이메일 첫 글자 동그라미와 작은 메뉴. 시안은 ?user=이메일 로 켠다 */
 .acct{position:relative;display:none;align-items:center} .acct.show{display:inline-flex} .right.user .login{display:none}
 .avatar{width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--bg);font:600 13px/1 var(--font);display:inline-flex;align-items:center;justify-content:center;border:0;cursor:pointer;padding:0;margin:0 4px}
@@ -193,8 +197,9 @@ a{color:inherit;text-decoration:none}
     <button class="ib" id="themeBtn" aria-label="테마 전환"><svg viewBox="0 0 24 24" id="themeIcon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
     <button class="ib menu" id="menuBtn" aria-label="메뉴" aria-expanded="false" aria-controls="mmenu"><svg class="ham" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
 </div>
-<div class="mmenu" id="mmenu"><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a><div class="sep"></div><div id="mauth"><a href="/Login.html">로그인</a></div></div>
-<div class="mback" id="mback"></div></nav>
+</nav>
+<div class="mmenu" id="mmenu"><div class="mm-links"><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div><div class="sep"></div><div class="mm-auth" id="mauth"><a href="/Login.html">로그인</a><a href="/Signup.html">회원가입</a></div>
+<div class="mm-foot"><a href="/About.html">About</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보처리방침</a></div></div>
 <main class="wrap">
   <header class="page-hero">
     <p class="crumb">회사</p>
@@ -272,11 +277,10 @@ window.kosTocInit();
   var root=document.documentElement,icon=document.getElementById('themeIcon');function paint(){icon.innerHTML=root.getAttribute('data-theme')==='dark'?sun:moon}paint();window.__kosPaintTheme=paint;
   document.getElementById('themeBtn').addEventListener('click',function(){var t=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',t);try{localStorage.setItem('kos-theme',t)}catch(e){}paint();});
   /* 휴대폰 메뉴 */
-  var mb=document.getElementById('menuBtn');
-  function setMenu(on){nav.classList.toggle('menu-open',on);mb.setAttribute('aria-expanded',on?'true':'false')}
+  var mb=document.getElementById('menuBtn'),mm=document.getElementById('mmenu');
+  function setMenu(on){nav.classList.toggle('menu-open',on);mm.classList.toggle('open',on);mb.setAttribute('aria-expanded',on?'true':'false');document.documentElement.style.overflow=on?'hidden':''}  /* html 에 건다 — body 에 걸면 sticky 헤더가 사라진다(html 이 overflow-x:hidden 이라 body 가 스크롤 상자가 됨) */
   mb.addEventListener('click',function(){setMenu(!nav.classList.contains('menu-open'))});
-  document.getElementById('mback').addEventListener('click',function(){setMenu(false)});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('menu-open'))setMenu(false)});
   window.matchMedia('(min-width:821px)').addEventListener('change',function(e){if(e.matches)setMenu(false)});
   /* 로그인 상태(시안) — 실사이트에서는 auth-state.js 가 Firebase 세션으로 같은 자리를 채운다. ?user=1 또는 ?user=이메일 */
   var qs=new URLSearchParams(location.search),u=qs.get('user');
@@ -285,7 +289,7 @@ window.kosTocInit();
     acct.innerHTML='<button type="button" class="avatar" id="acctBtn" aria-haspopup="true" aria-expanded="false" aria-label="계정 메뉴">'+init+'</button><div class="acct-menu" role="menu"><div class="em">'+email+'</div><a href="/Settings.html">설정</a><button type="button" id="signOut">로그아웃</button></div>';
     var ab=document.getElementById('acctBtn');ab.addEventListener('click',function(e){e.stopPropagation();var on=!acct.classList.contains('open');acct.classList.toggle('open',on);ab.setAttribute('aria-expanded',on?'true':'false')});
     document.addEventListener('click',function(e){if(!acct.contains(e.target)){acct.classList.remove('open');ab.setAttribute('aria-expanded','false')}});
-    document.getElementById('mauth').innerHTML='<div class="em">'+email+'</div><a href="/Settings.html">설정</a><button type="button" id="signOutM">로그아웃</button>';
+    document.getElementById('mauth').innerHTML='<div class="mm-me"><span class="avatar">'+init+'</span><span class="em">'+email+'</span></div><a href="/Settings.html">설정</a><button type="button" id="signOutM">로그아웃</button>';
     var out=function(){var url=new URL(location.href);url.searchParams.delete('user');location.href=url.pathname+(url.search||'')};document.getElementById('signOut').addEventListener('click',out);document.getElementById('signOutM').addEventListener('click',out);}
 })();
 </script>
