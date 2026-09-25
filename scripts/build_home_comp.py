@@ -50,10 +50,10 @@ CSS = '''
 .r-date{text-align:right;font:400 13px/18px var(--font);color:var(--ink-55)}
 .empty{margin:0;padding:28px 0;font:400 14px/20px var(--font);color:var(--ink-55)}
 /* 업종 탭 — 데스크톱: 정해진 순서로 전부 두 줄(더보기 없음). 줄 사이 23px 로 가로 간격(22px)과 맞춘다 — 한 줄용 44px 칸을
-   그대로 쌓으면 줄 사이가 51px 로 벌어져 두 덩어리로 보인다(9/26 사장). 묶음 사이만 12px 더 띄운다. */
+   그대로 쌓으면 줄 사이가 51px 로 벌어져 두 덩어리로 보인다(9/26 사장). 간격은 어디나 22px 로 같다 — 묶음 사이만
+   1.5배 띄워 봤더니 묶음이 아니라 '간격이 제각각'으로 읽혔다(9/26 사장). 묶음은 순서로만 보이고, 휴대폰 시트에는 이름표가 있다. */
 .tabs{position:relative;display:flex;flex-wrap:wrap;gap:8px 22px;padding-bottom:8px;border-bottom:1px solid var(--hair);margin-bottom:10px}
 .tab{flex:none;position:relative;border:0;background:none;padding:0;font:500 13px/30px var(--font);color:var(--ink-55);cursor:pointer;white-space:nowrap;transition:color .12s} .tab:hover{color:var(--ink)} .tab.on{color:var(--ink);font-weight:600}
-.tab.g0{margin-left:12px}
 .tab.more{display:none}
 /* 업종 고르기 시트 — 휴대폰에서 '전체 업종'을 누르면 아래에서 올라온다. 리포트 목록의 필터 시트와 같은 옷 */
 .pop-backdrop{display:none;position:fixed;inset:0;z-index:40;background:rgba(20,20,20,.16)} .pop-backdrop.open{display:block}
@@ -85,7 +85,7 @@ MOBILE_CSS = '''@media (max-width:820px){
   .tbl.movers th:first-child,.tbl.movers td:first-child{min-width:150px}
   /* 업종 탭 — 한 줄 스크롤. '전체 업종'은 줄 맨 끝이라 끝까지 밀어야 보인다(9/26 사장: 처음부터 보이면 지저분하다) */
   .tabs{flex-wrap:nowrap;gap:22px;height:44px;padding-bottom:0;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;touch-action:pan-x;overscroll-behavior-x:contain} .tabs::-webkit-scrollbar{display:none}
-  .tab{line-height:44px} .tab.g0{margin-left:0}
+  .tab{line-height:44px}
   .tab.more{display:inline-flex;align-items:center;gap:3px;color:var(--ink);padding-right:2px} .tab.more svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 }'''
 
@@ -154,7 +154,6 @@ JS = r'''(function(){
   var have={}; HOT.forEach(function(c){have[c]=1});
   var ORDER=[]; GROUPS.forEach(function(g){g[1].forEach(function(s){if(have[s])ORDER.push({s:s,g:g[0]})})});
   HOT.forEach(function(c){if(!ORDER.some(function(o){return o.s===c}))ORDER.push({s:c,g:GROUPS[GROUPS.length-1][0]})});
-  ORDER.forEach(function(o,i){o.first=i>0&&ORDER[i-1].g!==o.g});
   var LIMIT=10,active='전체',mq=window.matchMedia('(max-width:820px)');
   var tabsEl=document.getElementById('tabs'),body=document.getElementById('moverBody');
   function tabBtn(s,cls){return '<button type="button" class="tab'+(s===active?' on':'')+(cls||'')+'" data-s="'+esc(s)+'">'+esc(s)+'</button>'}
@@ -163,8 +162,8 @@ JS = r'''(function(){
     if(mq.matches){ /* 휴대폰: 전체 · (고른 업종) · 오늘 거래가 몰린 업종 아홉 · 맨 끝에 '전체 업종'(시트) */
       var shown=HOT.slice(0,LIMIT-1); if(active!=='전체'&&shown.indexOf(active)<0)shown.unshift(active);
       h=tabBtn('전체')+shown.map(function(s){return tabBtn(s)}).join('')+'<button type="button" class="tab more" data-more="1">전체 업종 <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>';
-    }else{ /* 데스크톱: 정해진 순서로 전부, 묶음 사이만 살짝 띄워 */
-      h=tabBtn('전체')+ORDER.map(function(o){return tabBtn(o.s,o.first?' g0':'')}).join('');
+    }else{ /* 데스크톱: 정해진 순서로 전부 */
+      h=tabBtn('전체')+ORDER.map(function(o){return tabBtn(o.s)}).join('');
     }
     tabsEl.querySelectorAll('.tab').forEach(function(b){b.remove()});tabsEl.insertAdjacentHTML('afterbegin',h); window.kosInd(tabsEl,'x')(true);
   }
