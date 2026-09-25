@@ -348,8 +348,8 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
   .body{{display:block;padding-top:8px}} .toc{{display:none}}
   .chips-mark{{display:block;height:0}}
   .chips-bar{{display:block;background:var(--bg);margin:0 calc(-1 * var(--pad)) 12px;border-bottom:1px solid var(--hair)}}
-  .nav{{display:block;height:auto;padding:0}} .nav-in{{height:60px;padding:0 var(--pad)}}
-  .nav .chips-bar{{margin:0;border-bottom:0}}
+  .nav{{display:block;height:60px;padding:0}} .nav-in{{height:60px;padding:0 var(--pad)}}
+  .nav .chips-bar{{position:absolute;top:60px;left:0;right:0;margin:0}}
   .nav,.nav.scrolled{{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}}
   html{{scroll-padding-top:116px}}
   .chips{{display:flex;gap:22px;overflow-x:auto;padding:0 var(--pad);scrollbar-width:none;touch-action:pan-x;overscroll-behavior-x:contain}} .chips::-webkit-scrollbar{{display:none}}
