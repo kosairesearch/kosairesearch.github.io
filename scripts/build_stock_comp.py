@@ -132,10 +132,10 @@ def build(tk, out_path):
         ('거래대금', fwon(st['trading_value']) + '원', None),
         ('거래량', f'{st["volume"] / 1e4:,.0f}만주', None),
         ('상장주식수', f'{st["shares"] / 1e8:,.1f}억주', None),
-        ('PER', f'{val["per"]:.1f}배', f'TTM {val["ttm_window"]}'),
+        ('PER', f'{val["per"]:.1f}배', None),
         ('PBR', f'{val["pbr"]:.1f}배', None),
         ('EPS', f'{val["eps"]:,.0f}원', None),
-        ('배당수익률', f'{val["div"]:.2f}%', f'주당 {val["dps"]:,.0f}원'),
+        ('배당수익률', f'{val["div"]:.2f}%', None),
     ]
     stat_html = ''.join(
         f'<div class="st"><div class="st-k">{esc(k)}</div><div class="st-v">{esc(v)}</div>' + (f'<div class="st-s">{esc(s)}</div>' if s else '') + '</div>'
@@ -178,7 +178,7 @@ def build(tk, out_path):
 
     body = ''.join([
         # 01 개요 — 초록(abstract) 카드
-        f'''<section class="sec" id="s01"><div class="sec-h"><span class="num">01</span><h2>리포트 개요</h2></div>
+        f'''<section class="sec" id="s01"><div class="sec-h sec-h-quiet"><span class="num">01</span><h2>리포트 개요</h2></div>
         <div class="abstract"><div class="ab-meta">AI 작성 · 리포트 {esc(rep["reportDate"])} · 데이터 {data_date_f}</div>
         <h3 class="ab-title">{esc(rep["title"]["ko"])}</h3><p class="ab-lead">{esc(rep["lead"]["ko"])}</p>
         <ol class="kp">{kp_li}</ol></div></section>''',
@@ -252,7 +252,7 @@ a{{color:inherit;text-decoration:none}}
 .menu{{display:none}}
 @media (max-width:820px){{.links,.login{{display:none}} .menu{{display:inline-flex}}}}
 /* 히어로 */
-.hero{{padding:40px 0 36px;display:grid;grid-template-columns:minmax(0,1fr) 520px;gap:48px;align-items:center}}
+.hero{{padding:28px 0 32px;display:grid;grid-template-columns:minmax(0,1fr) 520px;gap:48px;align-items:center}}
 .eyebrow{{font:500 13px/20px var(--font);color:var(--ink-55);display:flex;gap:10px;align-items:center}}
 .eyebrow b{{font-weight:500;color:var(--ink-72)}}
 h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
@@ -265,16 +265,17 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 .btn svg{{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}}
 .btn-ink{{background:var(--ink);color:var(--bg)}} .btn-ink:hover{{opacity:.9}}
 .btn-soft{{background:var(--surface-2);color:var(--ink)}} .btn-soft:hover{{background:var(--line)}}
-.hero-chart{{background:var(--surface);border:1px solid var(--hair);border-radius:20px;padding:18px 20px 12px;box-shadow:var(--shadow)}}
+.hero-chart{{margin:0;background:var(--surface);border:1px solid var(--hair);border-radius:20px;padding:18px 20px 12px;box-shadow:var(--shadow)}}
 .hero-chart figcaption,.tile figcaption{{font:500 13px/20px var(--font);color:var(--ink-72);display:flex;justify-content:space-between}}
 .hero-chart figcaption span,.tile figcaption span{{color:var(--ink-55);font-weight:400}}
 .ch{{width:100%;height:auto;display:block;margin-top:6px}}
 .ch-base{{stroke:var(--line);stroke-width:1}} .ch-rev{{fill:var(--ink)}} .ch-op{{fill:var(--ink-30)}}
-.ch-val{{font:500 11px var(--font);fill:var(--ink-55)}} .ch-lab{{font:500 12px var(--font);fill:var(--ink-55)}}
+.ch-val{{font:500 13px var(--font);fill:var(--ink-55)}} .ch-lab{{font:500 13px var(--font);fill:var(--ink-55)}}
 .lg{{display:flex;align-items:center;gap:6px;font:400 12px/16px var(--font);color:var(--ink-55);margin-top:8px}}
 .lg i{{width:10px;height:10px;border-radius:2px;display:inline-block;margin-left:10px}} .lg i:first-child{{margin-left:0}} .l-rev{{background:var(--ink)}} .l-op{{background:var(--ink-30)}}
 /* 지표 스트립 */
 .stats{{border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:22px 0;display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:16px}}
+.stats-note{{margin:10px 0 0;font:400 12px/16px var(--font);color:var(--ink-55)}}
 .st-k{{font:500 12px/16px var(--font);color:var(--ink-55)}} .st-v{{margin-top:6px;font:600 19px/24px var(--font);letter-spacing:-.01em;white-space:nowrap}} .st-s{{margin-top:4px;font:400 11px/14px var(--font);color:var(--ink-55)}}
 /* 본문 */
 .body{{display:grid;grid-template-columns:200px minmax(0,1fr);gap:64px;padding:56px 0 0}}
@@ -286,7 +287,7 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 .content{{min-width:0}}
 .sec{{max-width:720px;padding:0 0 88px}} .sec.wide{{max-width:880px}}
 .sec-h{{display:flex;align-items:baseline;gap:14px;margin:0 0 22px}}
-.sec-h .num{{font:600 13px/20px var(--font);color:var(--ink-30)}}
+.sec-h .num{{font:600 13px/20px var(--font);color:var(--ink-30)}} .sec-h-quiet h2{{font-size:13px;line-height:20px;font-weight:600;color:var(--ink-55);letter-spacing:0}}
 .sec-h h2{{margin:0;font:700 24px/32px var(--font);letter-spacing:-.02em}}
 .prose p{{margin:0 0 20px;font:400 17px/28px var(--font);letter-spacing:-.005em}} .prose p:last-child{{margin-bottom:0}}
 .note{{margin:16px 0 0;font:400 12px/18px var(--font);color:var(--ink-55)}}
@@ -339,7 +340,7 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 @media (max-width:1100px){{.hero{{grid-template-columns:minmax(0,1fr) 440px;gap:32px}} .stats{{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 16px}} .body{{grid-template-columns:180px minmax(0,1fr);gap:40px}} .fcs{{grid-template-columns:1fr}} .vstrip{{grid-template-columns:repeat(3,minmax(0,1fr))}}}}
 @media (max-width:820px){{
   :root{{--pad:20px}}
-  .hero{{grid-template-columns:1fr;gap:24px;padding:24px 0 28px;align-items:start}}
+  .hero{{grid-template-columns:1fr;gap:22px;padding:20px 0 24px;align-items:start}}
   h1.name{{font-size:32px;line-height:38px;margin-top:8px}} .price{{margin-top:16px}} .price .p{{font-size:32px;line-height:36px}}
   .hero-chart{{padding:14px 14px 10px;border-radius:16px}}
   .stats{{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px;padding:18px 0}} .st-v{{font-size:17px}}
@@ -375,6 +376,7 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
     <figure class="hero-chart"><figcaption>분기 매출 · 영업이익 <span>최근 5분기 · 조원</span></figcaption>{hero_chart}<div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div></figure>
   </header>
   <section class="stats" aria-label="핵심 지표">{stat_html}</section>
+  <p class="stats-note">PER·EPS·PBR·BPS 는 최근 4개 분기({esc(val["ttm_window"])}) 기준 자체 산출 · 배당수익률은 주당 {val["dps"]:,.0f}원 기준 · 시세 {price_date} 장마감</p>
   <div class="body">
     <aside class="toc" id="toc">{toc}</aside>
     <div class="content">
