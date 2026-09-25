@@ -347,10 +347,12 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
   .stats{{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px;padding:18px 0}} .st-v{{font-size:17px}}
   .body{{display:block;padding-top:8px}} .toc{{display:none}}
   .chips-mark{{display:block;height:0}}
-  .chips-bar{{display:block;position:-webkit-sticky;position:sticky;top:60px;z-index:5;background:var(--bg);margin:0 calc(-1 * var(--pad)) 12px;border-bottom:1px solid var(--hair)}}
-  .chips-bar.fixed{{position:fixed;top:60px;left:0;right:0;margin:0}}
+  .chips-bar{{display:block;background:var(--bg);margin:0 calc(-1 * var(--pad)) 12px;border-bottom:1px solid var(--hair)}}
+  .nav{{display:block;height:auto;padding:0}} .nav-in{{height:60px;padding:0 var(--pad)}}
+  .nav .chips-bar{{margin:0;border-bottom:0}}
   .nav,.nav.scrolled{{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}}
-  .chips{{display:flex;gap:22px;overflow-x:auto;padding:0 var(--pad);scrollbar-width:none;-webkit-overflow-scrolling:touch}} .chips::-webkit-scrollbar{{display:none}}
+  html{{scroll-padding-top:116px}}
+  .chips{{display:flex;gap:22px;overflow-x:auto;padding:0 var(--pad);scrollbar-width:none}} .chips::-webkit-scrollbar{{display:none}}
   .chips a{{flex:none;font:500 13px/42px var(--font);color:var(--ink-55);border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .12s}} .chips a.on{{color:var(--ink);font-weight:600;border-bottom-color:var(--ink)}}
   .sec{{padding-bottom:64px}} .sec-h h2{{font-size:22px;line-height:28px}}
   .ab-title{{font-size:24px;line-height:32px}} .ab-lead{{font-size:16px;line-height:26px}}
@@ -386,7 +388,7 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
     <div class="content">
       <div class="chips-mark" id="chipsMark"></div><div class="chips-bar" id="chipsBar"><nav class="chips" id="chips">{chips}</nav></div>
       {body}
-      <p class="rdate">리포트 작성 {esc(rep["reportDate"])} · 데이터 기준 {data_date_f} · AI 작성</p>
+      <p class="rdate">리포트 작성 {esc(rep["reportDate"])} · 데이터 기준 {data_date_f}</p>
       <p class="disc">본 콘텐츠는 AI가 시장 데이터와 웹 검색 결과를 분석한 정보 제공용이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 책임은 투자자 본인에게 있습니다. 데이터는 지연되거나 오류가 포함될 수 있습니다.</p>
     </div>
   </div>
@@ -406,10 +408,11 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 (function(){{
   var nav=document.getElementById('nav'),tick=false;
   var mark=document.getElementById('chipsMark'),bar=document.getElementById('chipsBar'),mq=window.matchMedia('(max-width:820px)');
-  function pin(){{if(!mq.matches){{bar.classList.remove('fixed');mark.style.height='';return}}
-    var fixed=bar.classList.contains('fixed'),top=mark.getBoundingClientRect().top;
-    if(!fixed&&top<=60){{mark.style.height=(bar.offsetHeight+12)+'px';bar.classList.add('fixed')}}
-    else if(fixed&&top>60){{bar.classList.remove('fixed');mark.style.height=''}}}}
+  function pin(){{var inNav=bar.parentNode===nav;
+    if(!mq.matches){{if(inNav){{mark.after(bar);mark.style.height=''}}return}}
+    var top=mark.getBoundingClientRect().top;
+    if(!inNav&&top<=60){{mark.style.height=(bar.offsetHeight+12)+'px';nav.appendChild(bar)}}
+    else if(inNav&&top>60){{mark.after(bar);mark.style.height=''}}}}
   function upd(){{tick=false;nav.classList.toggle('scrolled',window.scrollY>32);pin()}} addEventListener('scroll',function(){{if(!tick){{tick=true;requestAnimationFrame(upd)}}}},{{passive:true}});upd();
   var sun='<path d="M12 4V2M12 22v-2M4.9 4.9 3.5 3.5M20.5 20.5l-1.4-1.4M4 12H2M22 12h-2M4.9 19.1l-1.4 1.4M20.5 3.5l-1.4 1.4"/><circle cx="12" cy="12" r="4"/>',moon='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
   var root=document.documentElement,icon=document.getElementById('themeIcon');function paint(){{icon.innerHTML=root.getAttribute('data-theme')==='dark'?sun:moon}}paint();
