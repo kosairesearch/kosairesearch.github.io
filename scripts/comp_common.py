@@ -5,6 +5,41 @@ preview/ 의 시안 페이지들(build_stock_comp.py · build_home_comp.py …)�
 """
 
 
+IND_JS = '''
+<script>
+/* 활성 표시선 — 컨테이너마다 선 하나를 두고, 활성 항목(.on)의 자리로 미끄러뜨린다.
+   axis 'x' = 밑줄, 'y' = 왼쪽 세로선. sel 로 활성 항목 선택자를 바꿀 수 있다(기본 .on).
+   첫 자리는 그냥 놓고, 그 뒤부터 element.animate() 로 이전 자리에서 새 자리로 움직인다.
+   CSS transition 을 안 쓰는 이유: 휴대폰 목차 띠가 헤더 안으로 옮겨 붙는 프레임에 항목이 같이 바뀌면
+   방금 옮겨진 요소라 transition 이 시작되지 않는다. animate() 는 DOM 이동과 무관하게 움직인다.
+   window.kosIndMs 로 길이를 바꿀 수 있다(시험용). 움직임 줄이기 설정이면 바로 놓는다. */
+window.kosInd=function(box,axis,sel){
+  if(!box)return function(){};
+  if(box.__ind)return box.__ind;
+  var ind=document.createElement('span');ind.className='ind '+(axis==='y'?'ind-v':'ind-h');ind.setAttribute('aria-hidden','true');box.appendChild(ind);
+  var last=null,placed=false,anim=null,rm=window.matchMedia?matchMedia('(prefers-reduced-motion:reduce)'):null;
+  function move(force){
+    var a=box.querySelector(sel||'.on');
+    if(!a){ind.style.opacity='0';last=null;return}
+    if(a===last&&!force)return;
+    var b=box.getBoundingClientRect(),r=a.getBoundingClientRect();
+    if(!r.width&&!r.height)return;
+    last=a;
+    var x=r.left-b.left-box.clientLeft+box.scrollLeft,y=r.top-b.top-box.clientTop+box.scrollTop;
+    var to={transform:'translate('+x+'px,'+(axis==='y'?y:y+r.height-2)+'px)'};
+    if(axis==='y')to.height=r.height+'px';else to.width=r.width+'px';
+    var from=null;
+    if(placed&&ind.animate&&!(rm&&rm.matches)){var cs=getComputedStyle(ind);from={transform:cs.transform};if(axis==='y')from.height=cs.height;else from.width=cs.width;if(anim){anim.cancel();anim=null}}
+    ind.style.opacity='';ind.style.transform=to.transform;if(axis==='y')ind.style.height=to.height;else ind.style.width=to.width;
+    if(from){anim=ind.animate([from,to],{duration:window.kosIndMs||300,easing:'cubic-bezier(.2,.8,.2,1)'});anim.onfinish=function(){anim=null}}
+    placed=true;
+  }
+  addEventListener('resize',function(){move(true)});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){move(true)});
+  box.__ind=move;move();return move;
+};
+</script>'''
+
 def head(title):
     return f'''<!doctype html>
 <html lang="ko">
@@ -15,7 +50,7 @@ def head(title):
 <meta name="theme-color" content="#f9f8f6">
 <title>{title}</title>
 <link rel="icon" href="/assets/favicon.png?v=k2">
-<script>(function(){{var t='light';try{{t=localStorage.getItem('kos-theme')||'light'}}catch(e){{}}document.documentElement.setAttribute('data-theme',t);}})();</script>'''
+<script>(function(){{var t='light';try{{t=localStorage.getItem('kos-theme')||'light'}}catch(e){{}}document.documentElement.setAttribute('data-theme',t);}})();</script>''' + IND_JS
 
 
 # 글꼴 · 색 토큰 · 바탕 · 헤더 · 푸터. 라이트 바탕 #f9f8f6 · 먹색 #141414 (CLAUDE.md 2026-09-24 결정).
@@ -59,6 +94,8 @@ a{color:inherit;text-decoration:none}
 .menu{display:none}
 @media (max-width:820px){.links,.login{display:none} .menu{display:inline-flex}}
 /* 단추 */
+/* 활성 표시선(kosInd) — 목차 세로선·밑줄 탭·쪽 번호가 쓴다. 움직임은 IND_JS 의 animate() */
+.ind{position:absolute;left:0;top:0;background:var(--ink);pointer-events:none;will-change:transform} .ind-v{width:2px} .ind-h{height:2px}
 .btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 18px;border-radius:999px;border:0;font:600 14px/1 var(--font);cursor:pointer;transition:background-color .12s,color .12s} .btn.ico{padding-left:14px}
 .btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .btn-ink{background:var(--ink);color:var(--bg)} .btn-ink:hover{opacity:.9}
@@ -140,7 +177,7 @@ TOC_CSS = '''.body{display:grid;grid-template-columns:200px minmax(0,1fr);gap:64
 .toc{position:sticky;top:84px;align-self:start;display:flex;flex-direction:column;gap:2px}
 .toc a{display:flex;gap:10px;align-items:baseline;padding:7px 0 7px 12px;border-left:2px solid transparent;font:500 13px/18px var(--font);color:var(--ink-55);transition:color .12s}
 .toc a .n{font-weight:500;font-size:11px;color:var(--ink-30);min-width:18px}
-.toc a:hover{color:var(--ink)} .toc a.on{color:var(--ink);border-left-color:var(--ink);font-weight:600} .toc a.on .n{color:var(--ink-55)}
+.toc a:hover{color:var(--ink)} .toc a.on{color:var(--ink);font-weight:600} .toc a.on .n{color:var(--ink-55)}
 .chips-bar,.chips-mark{display:none}
 .content{min-width:0}
 .sec{max-width:720px;padding:0 0 88px} .sec.wide{max-width:880px}'''
@@ -154,7 +191,6 @@ TOC_MOBILE_CSS = '''@media (max-width:820px){
   html{scroll-padding-top:116px}
   .chips{position:relative;display:flex;gap:22px;height:44px;padding:0 var(--pad);overflow-x:auto;overflow-y:hidden;scrollbar-width:none;touch-action:pan-x;overscroll-behavior-x:contain} .chips::-webkit-scrollbar{display:none}
   .chips a{flex:none;position:relative;font:500 13px/44px var(--font);color:var(--ink-55);transition:color .12s} .chips a.on{color:var(--ink);font-weight:600}
-  .chips a.on::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--ink)}
   .sec{padding-bottom:64px}
 }'''
 
@@ -165,11 +201,12 @@ TOC_JS = '''window.kosTocInit=function(){
   function pin(){var inNav=bar.parentNode===nav;
     if(!mq.matches){if(inNav){mark.after(bar);mark.style.height=''}return}
     var top=mark.getBoundingClientRect().top;
-    if(!inNav&&top<=60){mark.style.height=(bar.offsetHeight+12)+'px';nav.appendChild(bar)}
-    else if(inNav&&top>60){mark.after(bar);mark.style.height=''}}
+    if(!inNav&&top<=60){mark.style.height=(bar.offsetHeight+12)+'px';nav.appendChild(bar);void bar.offsetHeight}
+    else if(inNav&&top>60){mark.after(bar);mark.style.height='';void bar.offsetHeight}}
   window.kosOnScroll=pin;
   var links=[].slice.call(document.querySelectorAll('#toc a, #chips a')),secs=[].slice.call(document.querySelectorAll('section.sec'));
-  function spy(){if(!secs.length)return;var y=window.scrollY+window.innerHeight*.3,cur=secs[0];secs.forEach(function(s){if(s.offsetTop<=y)cur=s});links.forEach(function(a){var on=a.getAttribute('href')==='#'+cur.id;if(on&&!a.classList.contains('on')&&a.parentNode.id==='chips'){a.parentNode.scrollTo({left:Math.max(0,a.offsetLeft-20),behavior:'smooth'})}a.classList.toggle('on',on)})}
+  var mvT=window.kosInd(document.getElementById('toc'),'y'),mvC=window.kosInd(document.getElementById('chips'),'x');
+  function spy(){if(!secs.length)return;var y=window.scrollY+window.innerHeight*.3,cur=secs[0];secs.forEach(function(s){if(s.offsetTop<=y)cur=s});links.forEach(function(a){var on=a.getAttribute('href')==='#'+cur.id;if(on&&!a.classList.contains('on')&&a.parentNode.id==='chips'){a.parentNode.scrollTo({left:Math.max(0,a.offsetLeft-20),behavior:'smooth'})}a.classList.toggle('on',on)});mvT();mvC()}
   if(!window.__kosSpyBound){addEventListener('scroll',function(){if(window.__kosSpy)requestAnimationFrame(window.__kosSpy)},{passive:true});window.__kosSpyBound=true}
   window.__kosSpy=spy;spy();pin();
 };
