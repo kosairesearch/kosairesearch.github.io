@@ -25,6 +25,8 @@ PAGES = {
 CSS = '''
 .sec-h h2{font-size:20px;line-height:28px} .sec{padding-bottom:56px} .sec:last-child{padding-bottom:24px}
 .intro{margin-top:28px}
+/* 맺음 주석 — 실사이트의 회색 상자. 여기서는 위 선 하나와 작은 회색 글자(각주) */
+.prose .note{margin-top:32px;padding-top:16px;border-top:1px solid var(--hair);font:400 13px/20px var(--font);color:var(--ink-55)}
 '''
 MOBILE_CSS = '''@media (max-width:820px){ .sec-h h2{font-size:18px;line-height:26px} .sec{padding-bottom:44px} }'''
 
@@ -48,7 +50,10 @@ def extract(src_html):
     sections = []
     for part in parts[1:]:
         m = re.match(r'<h2[^>]*>(.*?)</h2>(.*)', part, re.S)
-        sections.append((m.group(1).strip(), m.group(2).strip()))
+        body_html = m.group(2).strip()
+        # 주석 안의 '운영자: … · 문의: …' 는 제 줄에 — 글자는 그대로, 줄바꿈만 넣는다(글자 검사는 공백을 하나로 본다)
+        body_html = re.sub(r'(<div class="note">[^<]*?)\s+(운영자:)', r'\1<br>\2', body_html)
+        sections.append((m.group(1).strip(), body_html))
     return lede, upd, intro, sections, legal
 
 

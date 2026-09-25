@@ -30,6 +30,9 @@ def social(next_page):
 
 
 CSS = '''
+/* 로그인·회원가입·약관 동의·계정 인증은 400px 단을 가운데에 — 제목도 가운데, 입력 칸 이름표는 왼쪽(읽는 방향) */
+.auth:not(.wide){margin-left:auto;margin-right:auto} .auth:not(.wide) .crumb,.auth:not(.wide) h1,.auth:not(.wide) .sub{text-align:center}
+.ac-body{text-align:center}
 .alert.info{border-top-color:var(--ink);color:var(--ink-72)}
 /* 약관 동의 */
 .consent{margin-top:28px;border-top:1px solid var(--line)} .consent .check{padding:13px 0} .consent .check.all{font-weight:600;border-bottom:1px solid var(--line)}
