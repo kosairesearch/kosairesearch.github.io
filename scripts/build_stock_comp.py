@@ -122,7 +122,7 @@ def build(tk, out_path):
     # ── 히어로 차트: 분기 매출·영업이익 (최근 5분기)
     qgroups = [(x['q'].replace('20', "'", 1).replace('Q', 'Q'), x['rev'], x['op']) for x in quarterly]
     qgroups = [(x['q'][2:4] + 'Q' + x['q'][-1], x['rev'], x['op']) for x in quarterly]
-    hero_chart = bar_chart(qgroups, w=520, h=220)
+    q_chart = bar_chart(qgroups, w=520, h=220)
     agroups = [(str(a['year']), a['rev'], a['op']) for a in annual]
     annual_chart = bar_chart(agroups, w=520, h=220)
 
@@ -183,7 +183,7 @@ def build(tk, out_path):
         <h3 class="ab-title">{esc(rep["title"]["ko"])}</h3><p class="ab-lead">{esc(rep["lead"]["ko"])}</p>
         <ol class="kp">{kp_li}</ol></div></section>''',
         sec(2, '사업 구조', f'<div class="prose">{paras(rep["business"]["ko"])}</div>'),
-        sec(3, '실적 추이', f'''<div class="tiles"><figure class="tile"><figcaption>분기 매출 · 영업이익 <span>조원</span></figcaption>{hero_chart}<div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div></figure>
+        sec(3, '실적 추이', f'''<div class="tiles"><figure class="tile"><figcaption>분기 매출 · 영업이익 <span>조원</span></figcaption>{q_chart}<div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div></figure>
         <figure class="tile"><figcaption>연간 매출 · 영업이익 <span>조원 · 연결</span></figcaption>{annual_chart}<div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div></figure></div>
         <div class="tbl-wrap"><table class="tbl"><caption>연간 실적 · 연결 · 조원</caption><thead><tr><th>연도</th><th>매출액</th><th>영업이익</th><th>지배주주 순이익</th><th>영업이익률</th><th>ROE</th><th>부채비율</th></tr></thead><tbody>{ann_rows}</tbody></table></div>
         <div class="tbl-wrap"><table class="tbl narrow"><caption>분기 실적 · 최근 5분기 · 조원</caption><thead><tr><th>분기</th><th>매출액</th><th>영업이익</th><th>영업이익률</th></tr></thead><tbody>{qtr_rows}</tbody></table></div>
@@ -252,7 +252,7 @@ a{{color:inherit;text-decoration:none}}
 .menu{{display:none}}
 @media (max-width:820px){{.links,.login{{display:none}} .menu{{display:inline-flex}}}}
 /* 히어로 */
-.hero{{padding:28px 0 32px;display:grid;grid-template-columns:minmax(0,1fr) 520px;gap:48px;align-items:center}}
+.hero{{padding:32px 0 36px}}
 .eyebrow{{font:500 13px/20px var(--font);color:var(--ink-55);display:flex;gap:10px;align-items:center}}
 .eyebrow b{{font-weight:500;color:var(--ink-72)}}
 h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
@@ -265,9 +265,8 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 .btn svg{{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}}
 .btn-ink{{background:var(--ink);color:var(--bg)}} .btn-ink:hover{{opacity:.9}}
 .btn-soft{{background:var(--surface-2);color:var(--ink)}} .btn-soft:hover{{background:var(--line)}}
-.hero-chart{{margin:0;background:var(--surface);border:1px solid var(--hair);border-radius:20px;padding:18px 20px 12px;box-shadow:var(--shadow)}}
-.hero-chart figcaption,.tile figcaption{{font:500 13px/20px var(--font);color:var(--ink-72);display:flex;justify-content:space-between}}
-.hero-chart figcaption span,.tile figcaption span{{color:var(--ink-55);font-weight:400}}
+.tile figcaption{{font:500 13px/20px var(--font);color:var(--ink-72);display:flex;justify-content:space-between}}
+.tile figcaption span{{color:var(--ink-55);font-weight:400}}
 .ch{{width:100%;height:auto;display:block;margin-top:6px}}
 .ch-base{{stroke:var(--line);stroke-width:1}} .ch-rev{{fill:var(--ink)}} .ch-op{{fill:var(--ink-30)}}
 .ch-val{{font:500 13px var(--font);fill:var(--ink-55)}} .ch-lab{{font:500 13px var(--font);fill:var(--ink-55)}}
@@ -337,12 +336,11 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 #kosEdgeTop,#kosEdgeBot{{display:none}}
 @media (hover:none) and (pointer:coarse){{#kosEdgeTop,#kosEdgeBot{{display:block;position:fixed;left:0;right:0;height:12px;z-index:60;pointer-events:none;opacity:.2;background:var(--bg)}} #kosEdgeTop{{top:0}} #kosEdgeBot{{bottom:0}}}}
 /* 태블릿·휴대폰 */
-@media (max-width:1100px){{.hero{{grid-template-columns:minmax(0,1fr) 440px;gap:32px}} .stats{{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 16px}} .body{{grid-template-columns:180px minmax(0,1fr);gap:40px}} .fcs{{grid-template-columns:1fr}} .vstrip{{grid-template-columns:repeat(3,minmax(0,1fr))}}}}
+@media (max-width:1100px){{.stats{{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 16px}} .body{{grid-template-columns:180px minmax(0,1fr);gap:40px}} .fcs{{grid-template-columns:1fr}} .vstrip{{grid-template-columns:repeat(3,minmax(0,1fr))}}}}
 @media (max-width:820px){{
   :root{{--pad:20px}}
-  .hero{{grid-template-columns:1fr;gap:22px;padding:20px 0 24px;align-items:start}}
+  .hero{{padding:20px 0 26px}}
   h1.name{{font-size:32px;line-height:38px;margin-top:8px}} .price{{margin-top:16px}} .price .p{{font-size:32px;line-height:36px}}
-  .hero-chart{{padding:14px 14px 10px;border-radius:16px}}
   .stats{{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px;padding:18px 0}} .st-v{{font-size:17px}}
   .body{{display:block;padding-top:8px}} .toc{{display:none}}
   .chips{{display:flex;gap:8px;overflow-x:auto;padding:10px 0 12px;margin:0 calc(-1 * var(--pad)) 8px;padding-left:var(--pad);padding-right:var(--pad);scrollbar-width:none;position:sticky;top:60px;z-index:5;background:var(--bg)}} .chips::-webkit-scrollbar{{display:none}}
@@ -373,7 +371,6 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
       <div class="price"><span class="p">{price:,.0f}원</span><span class="c {chg_cls}">{arrow} {pct(abs(chg), True).lstrip("+")}</span><span class="d">{price_date} 장마감</span></div>
       <div class="actions"><button class="btn btn-ink"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>관심종목 추가</button></div>
     </div>
-    <figure class="hero-chart"><figcaption>분기 매출 · 영업이익 <span>최근 5분기 · 조원</span></figcaption>{hero_chart}<div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div></figure>
   </header>
   <section class="stats" aria-label="핵심 지표">{stat_html}</section>
   <p class="stats-note">PER·EPS·PBR·BPS 는 최근 4개 분기({esc(val["ttm_window"])}) 기준 자체 산출 · 배당수익률은 주당 {val["dps"]:,.0f}원 기준 · 시세 {price_date} 장마감</p>
