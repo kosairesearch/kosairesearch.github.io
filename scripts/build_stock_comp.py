@@ -187,7 +187,7 @@ def build(tk, out_path):
         sec(2, '사업 구조', f'<div class="prose">{paras(rep["business"]["ko"])}</div>'),
         sec(3, '실적 추이', f'''<div class="tiles"><figure class="tile"><figcaption>분기 매출 · 영업이익 <span>단위: 조원</span></figcaption>{q_chart}<div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div></figure>
         <figure class="tile"><figcaption>연간 매출 · 영업이익 <span>단위: 조원</span></figcaption>{annual_chart}<div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div></figure></div>
-        <div class="tbl-wrap"><table class="tbl narrow"><caption><div class="cap"><span>분기 실적 · 최근 5분기</span><span class="u">단위: 조원</span></div></caption><thead><tr><th>분기</th><th>매출액</th><th>영업이익</th><th>영업이익률</th></tr></thead><tbody>{qtr_rows}</tbody></table></div>
+        <div class="tbl-wrap"><table class="tbl"><caption><div class="cap"><span>분기 실적 · 최근 5분기</span><span class="u">단위: 조원</span></div></caption><thead><tr><th>분기</th><th>매출액</th><th>영업이익</th><th>영업이익률</th></tr></thead><tbody>{qtr_rows}</tbody></table></div>
         <div class="tbl-wrap"><table class="tbl"><caption><div class="cap"><span>연간 실적</span><span class="u">단위: 조원</span></div></caption><thead><tr><th>연도</th><th>매출액</th><th>영업이익</th><th>지배주주 순이익</th><th>영업이익률</th><th>ROE</th><th>부채비율</th></tr></thead><tbody>{ann_rows}</tbody></table></div>
         <p class="note">연결 기준(자회사 실적을 합친 재무제표) · DART 공시 확정치 · 순이익은 지배주주 기준 · 데이터 {esc(q["asOf"])}</p>''', wide=True),
         sec(4, '실적 분석', f'<div class="prose">{paras(rep["earnings"]["ko"])}</div>'),
@@ -301,7 +301,7 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 .tiles{{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:32px}}
 .tile{{margin:0;padding:0}}
 .tbl-wrap{{overflow-x:auto;margin-top:28px}}
-.tbl{{width:100%;border-collapse:collapse}} .tbl.narrow{{max-width:560px}}
+.tbl{{width:100%;border-collapse:collapse}}
 .tbl caption{{text-align:left;padding:0 0 10px}} .tbl .cap{{display:flex;justify-content:space-between;align-items:baseline;font:500 13px/20px var(--font);color:var(--ink-72)}} .tbl .cap .u{{font-weight:400;color:var(--ink-55)}}
 .tbl th,.tbl td{{padding:11px 12px;font:400 14px/20px var(--font);text-align:right;white-space:nowrap;border-top:1px solid var(--hair)}}
 .tbl thead th{{font:500 12px/16px var(--font);color:var(--ink-55);border-top:0;border-bottom:1px solid var(--line);padding-top:0}}
