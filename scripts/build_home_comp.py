@@ -50,10 +50,9 @@ CSS = '''
 .r-date{text-align:right;font:400 13px/18px var(--font);color:var(--ink-55)}
 .empty{margin:0;padding:28px 0;font:400 14px/20px var(--font);color:var(--ink-55)}
 /* 업종 탭 — 밑줄 탭 */
-.tabs{display:flex;gap:22px;height:44px;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;border-bottom:1px solid var(--hair);margin-bottom:10px;touch-action:pan-x;overscroll-behavior-x:contain} .tabs::-webkit-scrollbar{display:none}
+.tabs{position:relative;display:flex;gap:22px;height:44px;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;border-bottom:1px solid var(--hair);margin-bottom:10px;touch-action:pan-x;overscroll-behavior-x:contain} .tabs::-webkit-scrollbar{display:none}
 .tabs.all{flex-wrap:wrap;height:auto}
 .tab{flex:none;position:relative;border:0;background:none;padding:0;font:500 13px/44px var(--font);color:var(--ink-55);cursor:pointer;white-space:nowrap;transition:color .12s} .tab:hover{color:var(--ink)} .tab.on{color:var(--ink);font-weight:600}
-.tab.on::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--ink)}
 .tab.more{color:var(--ink-30)}
 /* 종목 표 */
 .tbl.movers th:first-child,.tbl.movers td:first-child{white-space:normal;min-width:200px}
@@ -139,7 +138,7 @@ JS = r'''(function(){
     var shown=expanded?TABS:TABS.slice(0,LIMIT);
     var h=shown.map(function(s){return '<button type="button" class="tab'+(s===active?' on':'')+'" data-s="'+esc(s)+'">'+esc(s)+'</button>'}).join('');
     if(TABS.length>LIMIT)h+='<button type="button" class="tab more" data-more="1">'+(expanded?'접기':'+'+(TABS.length-LIMIT)+' 더보기')+'</button>';
-    tabsEl.innerHTML=h; tabsEl.classList.toggle('all',expanded);
+    tabsEl.querySelectorAll('.tab').forEach(function(b){b.remove()});tabsEl.insertAdjacentHTML('afterbegin',h); tabsEl.classList.toggle('all',expanded); window.kosInd(tabsEl,'x')(true);
   }
   function renderMovers(){
     var list=(active==='전체'?MOVERS:MOVERS.filter(function(m){return mcats(m).indexOf(active)>=0})).slice(0,12);

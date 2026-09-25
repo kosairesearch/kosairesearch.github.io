@@ -22,11 +22,10 @@ CSS = '''
 .hero .sub{margin:16px 0 0;font:400 17px/28px var(--font);color:var(--ink-72);max-width:640px}
 /* 정렬 · 편집 줄 */
 .bar{margin-top:36px;display:flex;align-items:center;gap:24px;border-bottom:1px solid var(--hair)}
-.sorts{display:flex;gap:20px;align-items:center;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0} .sorts::-webkit-scrollbar{display:none}
+.sorts{position:relative;display:flex;gap:20px;align-items:center;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0} .sorts::-webkit-scrollbar{display:none}
 .sorts .lbl{font:500 12px/44px var(--font);color:var(--ink-30);flex:none;margin-right:2px}
 .sorts button{flex:none;position:relative;border:0;background:none;padding:0;font:500 13px/44px var(--font);color:var(--ink-55);cursor:pointer;white-space:nowrap;transition:color .12s}
 .sorts button:hover{color:var(--ink)} .sorts button.on{color:var(--ink);font-weight:600}
-.sorts button.on::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--ink)}
 .sortsel{display:none}
 .acts{display:flex;gap:18px;flex:none}
 .tbtn{border:0;background:none;padding:0;font:500 13px/44px var(--font);color:var(--ink-72);cursor:pointer;transition:color .12s} .tbtn:hover{color:var(--ink)} .tbtn.on{color:var(--ink);font-weight:600} .tbtn.danger{color:var(--up)}
@@ -43,8 +42,8 @@ CSS = '''
 .r-date{text-align:right;font:400 13px/18px var(--font);color:var(--ink-55)}
 /* 쪽 넘기기 */
 .pager{display:flex;justify-content:space-between;align-items:center;margin-top:18px;font:400 13px/20px var(--font);color:var(--ink-55)}
-.pctl{display:flex;gap:2px} .pctl button{border:0;background:none;min-width:32px;height:32px;padding:0 6px;font:500 13px var(--font);color:var(--ink-55);cursor:pointer}
-.pctl button:hover{color:var(--ink)} .pctl button.on{color:var(--ink);font-weight:600;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px} .pctl button:disabled{color:var(--ink-30);cursor:default}
+.pctl{position:relative;display:flex;gap:2px} .pctl>.ind{margin-top:4px} .pctl button{border:0;background:none;min-width:32px;height:32px;padding:0 6px;font:500 13px var(--font);color:var(--ink-55);cursor:pointer}
+.pctl button:hover{color:var(--ink)} .pctl button.on{color:var(--ink);font-weight:600} .pctl button:disabled{color:var(--ink-30);cursor:default}
 /* 빈 목록 */
 .empty{padding:56px 0 24px;max-width:520px} .empty h2{margin:0;font:700 22px/30px var(--font);letter-spacing:-.02em} .empty p{margin:12px 0 24px;font:400 15px/24px var(--font);color:var(--ink-72)}
 '''
@@ -110,9 +109,10 @@ JS = r'''(function(){
     if(pages<=1){pagerEl.hidden=true;return}pagerEl.hidden=false;
     document.getElementById('pinfo').textContent=(start+1)+'–'+Math.min(start+PAGE,total)+' / 총 '+total+'개';
     var BLK=matchMedia('(max-width:640px)').matches?5:10,blk=Math.floor((page-1)/BLK),bs=blk*BLK+1,be=Math.min(bs+BLK-1,pages),b='<button type="button" '+(page<=1?'disabled':'')+' data-pg="prev">‹</button>';
-    for(var i=bs;i<=be;i++)b+='<button type="button" class="'+(i===page?'on':'')+'" data-pg="'+i+'">'+i+'</button>';b+='<button type="button" '+(page>=pages?'disabled':'')+' data-pg="next">›</button>';document.getElementById('pctl').innerHTML=b}
-  function applySort(k){sortKey=k;page=1;document.querySelectorAll('#sorts button').forEach(function(b){b.classList.toggle('on',b.dataset.sort===k)});document.getElementById('sortSelect').value=k;render()}
+    for(var i=bs;i<=be;i++)b+='<button type="button" class="'+(i===page?'on':'')+'" data-pg="'+i+'"><span>'+i+'</span></button>';b+='<button type="button" '+(page>=pages?'disabled':'')+' data-pg="next">›</button>';var pc=document.getElementById('pctl');pc.querySelectorAll('button').forEach(function(x){x.remove()});pc.insertAdjacentHTML('afterbegin',b);window.kosInd(pc,'x','.on>span')(true)}
+  function applySort(k){sortKey=k;page=1;document.querySelectorAll('#sorts button').forEach(function(b){b.classList.toggle('on',b.dataset.sort===k)});window.kosInd(document.getElementById('sorts'),'x')();document.getElementById('sortSelect').value=k;render()}
   document.getElementById('sorts').addEventListener('click',function(e){var b=e.target.closest('button');if(b)applySort(b.dataset.sort)});
+  window.kosInd(document.getElementById('sorts'),'x');
   document.getElementById('sortSelect').addEventListener('change',function(e){applySort(e.target.value)});
   var editBtn=document.getElementById('editBtn'),clearBtn=document.getElementById('clearAll');
   function setEdit(on){edit=on;editBtn.textContent=on?'완료':'편집';editBtn.classList.toggle('on',on);clearBtn.hidden=!on;rowsEl.classList.toggle('edit',on)}
