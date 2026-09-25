@@ -21,7 +21,7 @@ import comp_common as C  # noqa: E402
 C.set_mode('staging')
 import build_about_comp, build_auth_comp, build_brief_comp, build_forms_comp, build_home_comp  # noqa: E402
 import build_industry_comp, build_legal_comp, build_reports_comp, build_watchlist_comp  # noqa: E402
-import build_pricing, build_checkout, build_settings_staging  # noqa: E402
+import build_pricing, build_checkout, build_settings_staging, build_stock_staging  # noqa: E402
 
 
 def build_all(out_dir: Path):
@@ -40,6 +40,7 @@ def build_all(out_dir: Path):
     build_pricing.build(str(out_dir / 'pricing.html'))
     build_checkout.build(str(out_dir / 'checkout.html'))
     build_settings_staging.build(str(out_dir / 'Settings.html'))
+    build_stock_staging.build(out_dir)   # 종목 상세 — JS 렌더 + 페이월
 
 
 def main():

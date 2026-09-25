@@ -111,7 +111,7 @@ async function completeLogin(code, returnedState, saved, onError){
     if(code.indexOf("already-exists") >= 0){
       let msg = "";
       try{
-        const { hintText } = await import("./auth-hint.js");
+        const { hintText } = await import("./auth-hint.js?v=f7531b46");
         msg = hintText((err && err.details && err.details.method) || "");
       }catch(_){}
       onError && onError(msg || err.message || T("이미 다른 방법으로 가입된 이메일입니다."));
