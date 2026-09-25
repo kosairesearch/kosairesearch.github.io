@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#f9f8f6">
+<title>About — 디자인 시안 | KOSAI</title>
+<link rel="icon" href="/assets/favicon.png?v=k2">
+<script>(function(){var t='light';try{t=localStorage.getItem('kos-theme')||'light'}catch(e){}document.documentElement.setAttribute('data-theme',t);})();</script>
+<script>
+/* 활성 표시선 — 컨테이너마다 선 하나를 두고, 활성 항목(.on)의 자리로 미끄러뜨린다.
+   axis 'x' = 밑줄, 'y' = 왼쪽 세로선. sel 로 활성 항목 선택자를 바꿀 수 있다(기본 .on).
+   첫 자리는 그냥 놓고, 그 뒤부터 element.animate() 로 이전 자리에서 새 자리로 움직인다.
+   CSS transition 을 안 쓰는 이유: 휴대폰 목차 띠가 헤더 안으로 옮겨 붙는 프레임에 항목이 같이 바뀌면
+   방금 옮겨진 요소라 transition 이 시작되지 않는다. animate() 는 DOM 이동과 무관하게 움직인다.
+   window.kosIndMs 로 길이를 바꿀 수 있다(시험용). 움직임 줄이기 설정이면 바로 놓는다. */
+window.kosInd=function(box,axis,sel){
+  if(!box)return function(){};
+  if(box.__ind)return box.__ind;
+  var ind=document.createElement('span');ind.className='ind '+(axis==='y'?'ind-v':'ind-h');ind.setAttribute('aria-hidden','true');box.appendChild(ind);
+  var last=null,placed=false,anim=null,rm=window.matchMedia?matchMedia('(prefers-reduced-motion:reduce)'):null;
+  function move(force){
+    var a=box.querySelector(sel||'.on');
+    if(!a){ind.style.opacity='0';last=null;return}
+    if(a===last&&!force)return;
+    var b=box.getBoundingClientRect(),r=a.getBoundingClientRect();
+    if(!r.width&&!r.height)return;
+    last=a;
+    var x=r.left-b.left-box.clientLeft+box.scrollLeft,y=r.top-b.top-box.clientTop+box.scrollTop;
+    var to={transform:'translate('+x+'px,'+(axis==='y'?y:y+r.height-2)+'px)'};
+    if(axis==='y')to.height=r.height+'px';else to.width=r.width+'px';
+    var from=null;
+    if(placed&&ind.animate&&!(rm&&rm.matches)){var cs=getComputedStyle(ind);from={transform:cs.transform};if(axis==='y')from.height=cs.height;else from.width=cs.width;if(anim){anim.cancel();anim=null}}
+    ind.style.opacity='';ind.style.transform=to.transform;if(axis==='y')ind.style.height=to.height;else ind.style.width=to.width;
+    if(from){anim=ind.animate([from,to],{duration:window.kosIndMs||300,easing:'cubic-bezier(.2,.8,.2,1)'});anim.onfinish=function(){anim=null}}
+    placed=true;
+  }
+  addEventListener('resize',function(){move(true)});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){move(true)});
+  box.__ind=move;move();return move;
+};
+</script>
+<style>
+@font-face{font-family:"Pretendard";font-weight:400;font-display:swap;src:url("/fonts/Pretendard-Regular.woff2") format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:500;font-display:swap;src:url("/fonts/Pretendard-Medium.woff2") format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:600;font-display:swap;src:url("/fonts/Pretendard-SemiBold.woff2") format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:700;font-display:swap;src:url("/fonts/Pretendard-Bold.woff2") format("woff2")}
+:root{
+  --bg:#f9f8f6; --surface:#ffffff; --surface-2:#f1efeb;
+  --ink:#141414; --ink-72:rgba(20,20,20,.72); --ink-55:rgba(20,20,20,.55); --ink-30:rgba(20,20,20,.30);
+  --hair:rgba(20,20,20,.08); --line:rgba(20,20,20,.14);
+  --up:#c8102e; --down:#1e5fbf; --up-bg:rgba(200,16,46,.08); --down-bg:rgba(30,95,191,.08);
+  --font:"Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --wrap:1120px; --pad:32px; --nav-bar:rgba(249,248,246,.72);
+  color-scheme:light;
+}
+:root[data-theme="dark"]{
+  --bg:#0d0d0e; --surface:#161617; --surface-2:#1e1e20;
+  --ink:#ececea; --ink-72:rgba(236,236,234,.72); --ink-55:rgba(236,236,234,.55); --ink-30:rgba(236,236,234,.30);
+  --hair:rgba(255,255,255,.08); --line:rgba(255,255,255,.14);
+  --up:#f0655f; --down:#6f9cf5; --up-bg:rgba(240,101,95,.12); --down-bg:rgba(111,156,245,.12);
+  --nav-bar:rgba(13,13,14,.72);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;overflow-x:clip}
+[hidden]{display:none!important} /* hidden 속성이 .pager{display:flex} 같은 클래스 규칙에 밀리지 않게 */
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums lining-nums;word-break:keep-all;overflow-wrap:anywhere}
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(20,20,20,.14)} :root[data-theme="dark"] ::selection{background:rgba(255,255,255,.22)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--ink-55)}
+/* 헤더 — 사이트 규칙 그대로(60px · 맨 위 투명 · 내리면 띠) */
+.nav{position:sticky;top:0;z-index:50;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0;transition:background-color .2s,box-shadow .2s}
+.nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--hair);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+.nav-in{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;position:relative}
+.brand img{height:14px;display:block} .brand .dk{display:none} :root[data-theme="dark"] .brand .lt{display:none} :root[data-theme="dark"] .brand .dk{display:block}
+.links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:28px}
+.links a{font:500 14px/1 var(--font);color:var(--ink-72);transition:color .12s} .links a:hover,.links a.on{color:var(--ink)} .links a.on{font-weight:600}
+.right{display:flex;align-items:center;gap:6px} .login{font:600 13px/1 var(--font);color:var(--ink-72);padding:8px 10px} .login:hover{color:var(--ink)}
+.ib{width:38px;height:38px;border:0;background:transparent;color:var(--ink-72);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;border-radius:10px} .ib:hover{color:var(--ink)} .ib svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.menu{display:none}
+@media (max-width:820px){.links,.login,.acct{display:none} .menu{display:inline-flex}}
+/* 휴대폰 메뉴 — ☰ 를 누르면 헤더 아래로 펼쳐지는 목록. 링크 다섯 + 로그인(또는 계정) */
+.menu .x{display:none} .nav.menu-open .menu .ham{display:none} .nav.menu-open .menu .x{display:block}
+.mmenu{display:none;position:absolute;top:60px;left:0;right:0;background:var(--bg);border-top:1px solid var(--hair);border-bottom:1px solid var(--line);padding:6px 0 10px;z-index:56}
+.nav.menu-open .mmenu{display:block}
+.mmenu a,.mmenu button{display:block;width:100%;box-sizing:border-box;text-align:left;border:0;background:none;padding:14px var(--pad);font:500 18px/24px var(--font);color:var(--ink-72);text-decoration:none;cursor:pointer} .mmenu a.on{color:var(--ink);font-weight:600}
+.mmenu .sep{height:1px;background:var(--hair);margin:6px var(--pad)} .mmenu .em{padding:10px var(--pad) 0;font:400 12px/16px var(--font);color:var(--ink-55);word-break:break-all}
+.mback{display:none;position:fixed;left:0;right:0;top:60px;bottom:0;background:rgba(20,20,20,.16);z-index:55} .nav.menu-open .mback{display:block}
+/* 계정(로그인 상태) — 이메일 첫 글자 동그라미와 작은 메뉴. 시안은 ?user=이메일 로 켠다 */
+.acct{position:relative;display:none;align-items:center} .acct.show{display:inline-flex} .right.user .login{display:none}
+.avatar{width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--bg);font:600 13px/1 var(--font);display:inline-flex;align-items:center;justify-content:center;border:0;cursor:pointer;padding:0;margin:0 4px}
+.acct-menu{display:none;position:absolute;right:0;top:calc(100% + 10px);min-width:220px;background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:6px 0;box-shadow:0 8px 24px rgba(20,20,20,.08);z-index:60}
+.acct.open .acct-menu{display:block} .acct-menu .em{padding:8px 16px 10px;font:400 12px/16px var(--font);color:var(--ink-55);border-bottom:1px solid var(--hair);margin-bottom:4px;word-break:break-all}
+.acct-menu a,.acct-menu button{display:block;width:100%;box-sizing:border-box;text-align:left;border:0;background:none;padding:9px 16px;font:500 14px/20px var(--font);color:var(--ink-72);cursor:pointer;text-decoration:none} .acct-menu a:hover,.acct-menu button:hover{background:var(--surface-2);color:var(--ink)}
+/* 단추 */
+/* 활성 표시선(kosInd) — 목차 세로선·밑줄 탭·쪽 번호가 쓴다. 움직임은 IND_JS 의 animate() */
+.ind{position:absolute;left:0;top:0;background:var(--ink);pointer-events:none;will-change:transform} .ind-v{width:2px} .ind-h{height:2px}
+.btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 18px;border-radius:999px;border:0;font:600 14px/1 var(--font);cursor:pointer;transition:background-color .12s,color .12s} .btn.ico{padding-left:14px}
+.btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+.btn-ink{background:var(--ink);color:var(--bg)} .btn-ink:hover{opacity:.9}
+.btn-soft{background:var(--surface-2);color:var(--ink)} .btn-soft:hover{background:var(--line)}
+/* 절 제목 · 더보기 링크 */
+.sec-h{display:flex;align-items:baseline;gap:14px;margin:0 0 22px}
+.sec-h .num{font:600 13px/20px var(--font);color:var(--ink-30)}
+.sec-h h2{margin:0;font:700 24px/32px var(--font);letter-spacing:-.02em}
+.sec-h .more{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font:500 14px/20px var(--font);color:var(--ink-72);white-space:nowrap} .sec-h .more:hover{color:var(--ink)}
+.sec-h .more svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+/* 표 — 틀 없이 줄로만 */
+.tbl-wrap{overflow-x:auto}
+.tbl{width:100%;border-collapse:collapse}
+.tbl caption{text-align:left;padding:0 0 10px} .tbl .cap{display:flex;justify-content:space-between;align-items:baseline;font:500 13px/20px var(--font);color:var(--ink-72)} .tbl .cap .u{font-weight:400;color:var(--ink-55)}
+.tbl th,.tbl td{padding:11px 12px;font:400 14px/20px var(--font);text-align:right;white-space:nowrap;border-top:1px solid var(--hair)}
+.tbl thead th{font:500 12px/16px var(--font);color:var(--ink-55);border-top:0;border-bottom:1px solid var(--line);padding-top:0}
+.tbl th:first-child,.tbl td:first-child{text-align:left;padding-left:0;font-weight:500} .tbl th:last-child,.tbl td:last-child{padding-right:0}
+.tbl tbody th{font-weight:500}
+/* 푸터 */
+.foot{margin-top:96px;border-top:1px solid var(--hair);padding:56px 0 48px}
+.foot .brand img{height:13px} .ftag{margin:14px 0 0;font:400 14px/22px var(--font);color:var(--ink-72);max-width:260px}
+.fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;max-width:560px;margin-top:32px}
+.fcol{display:flex;flex-direction:column;gap:9px} .fcol h4{margin:0 0 4px;font:600 12px/16px var(--font);color:var(--ink-55)} .fcol a{font:400 14px/20px var(--font);color:var(--ink-72)} .fcol a:hover{color:var(--ink)}
+.biz{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:4px 16px;font:400 12px/18px var(--font);color:var(--ink-55)} .copy{margin-top:32px;font:400 12px/18px var(--font);color:var(--ink-55)}
+/* 휴대폰 사파리 상태바·주소창 뒤 색 — 페이지색 띠 (CLAUDE.md 2026-09-24) */
+#kosEdgeTop,#kosEdgeBot{display:none}
+@media (hover:none) and (pointer:coarse){#kosEdgeTop,#kosEdgeBot{display:block;position:fixed;left:0;right:0;height:12px;z-index:60;pointer-events:none;opacity:.2;background:var(--bg)} #kosEdgeTop{top:0} #kosEdgeBot{bottom:0}}
+.prose{font:400 16px/28px var(--font);color:var(--ink)} .prose p{margin:0 0 18px} .prose p:last-child{margin-bottom:0}
+.prose ul,.prose ol{margin:0 0 18px;padding-left:20px} .prose li{margin:0 0 6px} .prose li::marker{color:var(--ink-30)}
+.prose h3,.prose h4{margin:26px 0 8px;font:600 16px/24px var(--font)} .prose b{font-weight:600}
+.prose a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .prose a:hover{text-decoration-color:var(--ink)}
+.prose.lead{font-size:17px;color:var(--ink-72)}
+.page-hero{padding:44px 0 0;max-width:720px} .page-hero .crumb{font:500 13px/20px var(--font);color:var(--ink-55)} .page-hero h1{margin:12px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em} .page-hero .sub{margin:16px 0 0;font:400 17px/28px var(--font);color:var(--ink-72)}
+.page-hero .meta{margin:20px 0 0;font:400 13px/20px var(--font);color:var(--ink-55)}
+.page-body{padding:40px 0 64px;max-width:720px}
+.hr{height:1px;background:var(--hair);margin:8px 0 32px}
+@media (max-width:820px){.page-hero{padding-top:20px} .page-hero h1{font-size:32px;line-height:38px} .page-hero .sub{font-size:15px;line-height:24px} .prose{font-size:15px;line-height:26px} .page-body{padding:28px 0 48px}}
+.body{display:grid;grid-template-columns:200px minmax(0,1fr);gap:64px;padding:56px 0 0}
+.toc{position:sticky;top:84px;align-self:start;display:flex;flex-direction:column;gap:2px}
+.toc a{display:flex;gap:10px;align-items:baseline;padding:7px 0 7px 12px;border-left:2px solid transparent;font:500 13px/18px var(--font);color:var(--ink-55);transition:color .12s}
+.toc a .n{font-weight:500;font-size:11px;color:var(--ink-30);min-width:18px}
+.toc a:hover{color:var(--ink)} .toc a.on{color:var(--ink);font-weight:600} .toc a.on .n{color:var(--ink-55)}
+.chips-bar,.chips-mark{display:none}
+.content{min-width:0}
+.sec{max-width:720px;padding:0 0 88px} .sec.wide{max-width:880px}
+
+.page-hero{max-width:820px} .page-hero h1{font-size:48px;line-height:58px}
+/* 세 단계 — 카드 대신 위 선 하나씩 */
+.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:0 32px;margin-top:40px;max-width:820px}
+.steps3>div{border-top:1px solid var(--line);padding-top:14px} .steps3 .k{font:500 12px/16px var(--font);color:var(--ink-55)} .steps3 h3{margin:8px 0 6px;font:600 16px/24px var(--font)} .steps3 p{margin:0;font:400 14px/22px var(--font);color:var(--ink-72)}
+/* 절 안 부품 */
+.sec .prose{max-width:720px}
+.steps4{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;margin-top:32px} .steps4>div{border-top:1px solid var(--hair);padding:14px 0 18px} .steps4 .k{font:500 12px/16px var(--font);color:var(--ink-55)} .steps4 h4{margin:6px 0 4px;font:600 15px/22px var(--font)} .steps4 p{margin:0;font:400 14px/22px var(--font);color:var(--ink-72)}
+.srcs{margin-top:28px;border-top:1px solid var(--line)} .src{display:grid;grid-template-columns:160px minmax(0,1fr);gap:4px 24px;padding:18px 0;border-bottom:1px solid var(--hair);color:inherit;text-decoration:none}
+.src h4{margin:0;font:600 16px/24px var(--font)} .src .kind{font:500 12px/16px var(--font);color:var(--ink-55)} .src p{margin:0;font:400 14px/22px var(--font);color:var(--ink-72)} .src .link{margin-top:6px;font:500 12px/16px var(--font);color:var(--ink-55);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .src:hover .link{color:var(--ink)}
+.abil{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:32px} .abil>div{border-top:1px solid var(--line);padding-top:14px} .abil .k{font:500 12px/16px var(--font);color:var(--ink-55)} .abil h4{margin:6px 0 10px;font:600 16px/24px var(--font)} .abil ul{margin:0;padding-left:18px;font:400 14px/22px var(--font);color:var(--ink-72)} .abil li{margin:0 0 6px} .abil li::marker{color:var(--ink-30)}
+.tbl.sched th:nth-child(1){width:160px} .tbl.sched th:nth-child(2){width:100px} .tbl.sched th:nth-child(3){width:200px} .tbl.sched th,.tbl.sched td{text-align:left} .tbl.sched td{white-space:normal;vertical-align:top} .tbl.sched td b{font-weight:600}
+.tbl-note{margin:14px 0 0;font:400 13px/20px var(--font);color:var(--ink-55)}
+.disc-list{margin-top:28px;border-top:1px solid var(--line)} .disc-list>div{padding:16px 0;border-bottom:1px solid var(--hair)} .disc-list b{display:block;font:600 15px/22px var(--font)} .disc-list p{margin:4px 0 0;font:400 14px/22px var(--font);color:var(--ink-72)}
+.disc-final{margin:24px 0 0;font:600 16px/26px var(--font)}
+.contacts{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:8px} .contacts>div{border-top:1px solid var(--line);padding-top:14px} .contacts .k{font:500 12px/16px var(--font);color:var(--ink-55)} .contacts .v{margin:6px 0 6px;font:600 18px/26px var(--font)} .contacts p{margin:0;font:400 14px/22px var(--font);color:var(--ink-72)}
+
+@media (max-width:820px){
+  :root{--pad:20px}
+  .nav{display:block;height:60px;padding:0} .nav-in{height:60px;padding:0 var(--pad)}
+  .nav,.nav.scrolled{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}
+  .sec-h h2{font-size:22px;line-height:28px}
+  .tbl th,.tbl td{padding:10px 10px;font-size:13px} .tbl th:first-child,.tbl td:first-child{position:sticky;left:0;background:var(--bg)}
+}
+@media (max-width:820px){
+  .body{display:block;padding-top:8px} .toc{display:none}
+  .chips-mark{display:block;height:0}
+  .chips-bar{display:block;background:var(--bg);margin:0 calc(-1 * var(--pad)) 12px;border-bottom:1px solid var(--hair)}
+  .nav .chips-bar{position:absolute;top:60px;left:0;right:0;margin:0}
+  html{scroll-padding-top:116px}
+  .chips{position:relative;display:flex;gap:22px;height:44px;padding:0 var(--pad);overflow-x:auto;overflow-y:hidden;scrollbar-width:none;touch-action:pan-x;overscroll-behavior-x:contain} .chips::-webkit-scrollbar{display:none}
+  .chips a{flex:none;position:relative;font:500 13px/44px var(--font);color:var(--ink-55);transition:color .12s} .chips a.on{color:var(--ink);font-weight:600}
+  .sec{padding-bottom:64px}
+}
+@media (max-width:820px){
+  .page-hero h1{font-size:34px;line-height:42px} .steps3{grid-template-columns:1fr;gap:0;margin-top:28px} .steps3>div{padding:14px 0 18px;border-top:1px solid var(--hair)} .steps3>div:first-child{border-top-color:var(--line)}
+  .steps4,.abil,.contacts{grid-template-columns:1fr;gap:0} .abil>div+div,.contacts>div+div{margin-top:28px}
+  .src{grid-template-columns:1fr;gap:4px}
+}
+</style>
+</head>
+<body>
+<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>
+<nav class="nav" id="nav"><div class="nav-in">
+  <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <div class="links"><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div>
+  <div class="right" id="navRight"><a class="login" href="/Login.html">로그인</a><div class="acct" id="acct"></div>
+    <button class="ib" id="themeBtn" aria-label="테마 전환"><svg viewBox="0 0 24 24" id="themeIcon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    <button class="ib menu" id="menuBtn" aria-label="메뉴" aria-expanded="false" aria-controls="mmenu"><svg class="ham" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+</div>
+<div class="mmenu" id="mmenu"><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a><div class="sep"></div><div id="mauth"><a href="/Login.html">로그인</a></div></div>
+<div class="mback" id="mback"></div></nav>
+<main class="wrap">
+  <header class="page-hero">
+    <p class="crumb">회사</p>
+    <h1>한국 상장사 정보,<br>누구나 제대로<br>이해할 수 있도록.</h1>
+    <p class="sub">KOSAI는 코스피·코스닥 전 종목의 시세·시가총액·공시 데이터를 AI가 정리해 보여주는 리서치 도구입니다. 개인 투자자가 무엇을 봐야 할지 막막할 때, 시작점이 되는 한 페이지를 만드는 것이 목표입니다.</p>
+    <div class="steps3"><div><div class="k">01 · COLLECT</div><h3>시세·시가총액·공시</h3><p>분산된 원천 데이터를 한 곳으로 모읍니다.</p></div><div><div class="k">02 · STRUCTURE</div><h3>AI 분석·정리</h3><p>사람이 읽기 쉬운 형태로 구조화합니다.</p></div><div><div class="k">03 · DISCLOSE</div><h3>투명한 출처</h3><p>근거 데이터와 갱신 시각을 함께 보여드립니다.</p></div></div>
+  </header>
+  <div class="body">
+    <aside class="toc" id="toc"><a href="#s01"><span class="n">01</span>서비스 소개</a><a href="#s02"><span class="n">02</span>문제 의식</a><a href="#s03"><span class="n">03</span>AI는 어떻게 종목을 분석하는가</a><a href="#s04"><span class="n">04</span>우리가 사용하는 데이터</a><a href="#s05"><span class="n">05</span>AI 분석의 한계</a><a href="#s06"><span class="n">06</span>데이터는 얼마나 자주 업데이트되나</a><a href="#s07"><span class="n">07</span>중요 안내사항 (면책 조항)</a><a href="#s08"><span class="n">08</span>연락처</a></aside>
+    <div class="content">
+      <div class="chips-mark" id="chipsMark"></div><div class="chips-bar" id="chipsBar"><nav class="chips" id="chips"><a href="#s01">01 서비스 소개</a><a href="#s02">02 문제 의식</a><a href="#s03">03 AI는 어떻게 종목을 분석하는가</a><a href="#s04">04 우리가 사용하는 데이터</a><a href="#s05">05 AI 분석의 한계</a><a href="#s06">06 데이터는 얼마나 자주 업데이트되나</a><a href="#s07">07 중요 안내사항 (면책 조항)</a><a href="#s08">08 연락처</a></nav></div>
+      <section class="sec wide" id="s01"><div class="sec-h"><span class="num">01</span><h2>서비스 소개</h2></div><div class="prose"><p>KOSAI는 한국 증시에 상장된 기업의 정보를 AI가 정리해 보여주는 리서치 사이트입니다. 종목 검색·업종별 탐색·조건 검색·관심종목을 통해 코스피·코스닥 전 종목(약 2,700개)의 기본 정보와 최근 흐름을 확인할 수 있습니다.</p>
+      <p>각 종목 페이지에는 종가·거래량·시가총액 등 기본 시장 데이터와 함께 AI가 작성한 요약 리포트가 제공됩니다. 리포트는 사업 구조·최근 실적·강세 요인·약세 요인·리스크 요인을 균형 있게 다루며, 특정 매매 판단을 권유하는 형태가 아닌 정보 정리를 목적으로 합니다.</p>
+      <p>업종 분석 페이지에서는 반도체·2차전지·바이오 등 산업군별 AI 분석을 확인할 수 있으며, 리포트 페이지에서 업종·시가총액·PER·PBR·배당수익률·매출 성장률 등의 조건으로 종목을 추릴 수 있습니다. 관심종목 기능으로 원하는 종목을 모아 관리할 수도 있습니다.</p>
+      <p>모든 콘텐츠는 무료로 제공됩니다. 종목 정보·리포트·업종 분석·조건 검색은 로그인 없이 이용할 수 있으며, 관심종목은 여러 기기에서 동기화되도록 로그인(이메일 또는 Google·카카오·네이버 계정)이 필요합니다. 저희가 직접 매매를 중개하거나 자문하지 않으며, 어떠한 형태의 종목 추천도 제공하지 않습니다.</p></div></section><section class="sec wide" id="s02"><div class="sec-h"><span class="num">02</span><h2>문제 의식</h2></div><div class="prose"><p>한국에서 개인 투자자가 한 종목을 제대로 이해하려면, 공시는 DART에서, 시세는 증권사 HTS에서, 뉴스는 포털에서, 컨센서스는 별도 유료 서비스에서 따로 봐야 합니다. 정보가 흩어져 있을 뿐 아니라, 상당수의 자료가 기관 투자자 기준의 용어와 형식으로 작성되어 있어 진입 장벽이 큰 편입니다.</p>
+      <p>반면 시장에서 가장 쉽게 접하는 정보는 종목 토론방이나 유튜브의 추천 콘텐츠인 경우가 많습니다. 이런 콘텐츠는 빠르고 자극적이지만, 출처가 불분명하거나 한쪽 의견만 강조되는 경우가 적지 않습니다. 그 사이에서 균형 잡힌 정보를 차분히 정리해 보여주는 도구가 부족하다는 생각에서 KOSAI를 시작했습니다.</p>
+      <p>저희가 만들고 싶은 것은 화려한 예측이나 점쟁이 같은 추천이 아닙니다. 공시·시장 데이터가 어떻게 변하고 있는지, 그 변화가 어떤 의미를 가질 수 있는지를 누구나 읽을 수 있는 문장으로 정리하는 것 — 그것이 출발점입니다.</p></div></section><section class="sec wide" id="s03"><div class="sec-h"><span class="num">03</span><h2>AI는 어떻게 종목을 분석하는가</h2></div><div class="prose"><p>저희의 AI 리포트는 Claude(대형 언어 모델)가 정해진 양식을 따라 작성합니다. 모델이 자유롭게 글을 지어내는 것이 아니라, 수집·정리한 시장 데이터를 바탕으로 정해진 항목 구조(사업 개요·실적·강세/약세·리스크)에 맞춰 정리하는 구조입니다.</p>
+      <p>전체 과정은 자동화되어 있습니다. 매 거래일 저녁 KRX 시장 데이터(종가·거래량·시가총액 등)와 DART 기업 정보를 수집해 종목·업종 단위로 정리합니다. 신규 상장 종목은 자동으로 추가되고, 상장폐지 종목은 자동으로 제외됩니다.</p>
+      <p>종목의 업종 분류도 AI가 수행합니다. 전 종목을 실제 사업 내용 기준으로 업종과 테마(인공지능·로봇 등)에 배정하며, 새 종목이 상장되면 같은 기준으로 자동 분류됩니다.</p>
+      <p>리포트 본문은 Claude API로 작성합니다. 작성 시 매수·매도·목표주가 같은 투자 권유 표현을 쓰지 않도록 지시하며, 필요한 경우 웹 검색으로 최근 업황을 확인하고 참고한 출처를 함께 남깁니다. 또한 모든 상장 종목은 DART에 사업·분기·반기보고서 같은 정기 공시가 새로 제출되면, 최신 실적을 반영해 해당 종목 리포트를 자동으로 다시 작성합니다.</p>
+      <p>완성된 리포트와 데이터는 자동화 파이프라인을 통해 사이트에 반영됩니다. 각 페이지에는 데이터 기준 시각이 표기되어, 어느 시점의 정보를 사용하고 있는지 확인할 수 있습니다.</p>
+      <p>AI는 빠르고 일관적이지만, 사람의 판단을 완전히 대체하지는 못합니다. 그래서 저희는 리포트의 형식과 한계를 명확히 적어두는 쪽을 택했습니다. 한계는 다음 섹션에서 다시 설명합니다.</p></div><div class="steps4"><div><div class="k">STEP 01</div><h4>데이터 수집</h4><p>매 거래일 저녁 KRX 시장 데이터와 DART 기업 정보를 자동 수집합니다.</p></div><div><div class="k">STEP 02</div><h4>업종 분류</h4><p>AI가 전 종목을 실제 사업 기준으로 업종·테마(AI·로봇 등)에 자동 분류합니다.</p></div><div><div class="k">STEP 03</div><h4>AI 리포트</h4><p>Claude가 사업·실적·강세/약세·리스크를 항목별로 작성합니다.</p></div><div><div class="k">STEP 04</div><h4>업종 분석</h4><p>업종별 집계와 AI 업종 분석 리포트를 생성합니다.</p></div></div></section><section class="sec wide" id="s04"><div class="sec-h"><span class="num">04</span><h2>우리가 사용하는 데이터</h2></div><div class="prose lead"><p>KOSAI는 자체적으로 시장 데이터를 생성하지 않으며, 아래 출처에서 데이터를 받아 사용합니다. 각 데이터의 갱신 주기와 사용 범위는 출처별로 다릅니다.</p></div><div class="srcs"><a class="src" href="https://www.krx.co.kr" target="_blank" rel="noopener"><div><h4>KRX</h4><div class="kind">원천 데이터</div></div><div><p>한국거래소. 종가·거래량·거래대금·시가총액·상장주식수·업종(KSIC) 분류 등 모든 시장 데이터의 원천 출처입니다.</p><div class="link">krx.co.kr ↗</div></div></a><a class="src" href="https://github.com/FinanceData/fdr_krx_data_cache" target="_blank" rel="noopener"><div><h4>FinanceData</h4><div class="kind">시세 수집 경로</div></div><div><p>한국거래소(KRX)의 일별 시세를 매일 CSV로 공개 미러링하는 오픈 데이터 저장소입니다. 본 사이트가 매 거래일 종가·거래대금·시가총액·상장주식수를 실제로 받아오는 주 수집 경로입니다.</p><div class="link">github.com/FinanceData ↗</div></div></a><a class="src" href="https://pypi.org/project/pykrx" target="_blank" rel="noopener"><div><h4>pykrx</h4><div class="kind">예비 수집</div></div><div><p>한국거래소 데이터를 직접 받아오는 오픈소스 파이썬 라이브러리입니다. 상장 종목 목록 확인과, 주 수집 경로가 미확보일 때의 예비 경로로 사용합니다.</p><div class="link">pypi.org/pykrx ↗</div></div></a><a class="src" href="https://dart.fss.or.kr" target="_blank" rel="noopener"><div><h4>DART</h4><div class="kind">공시</div></div><div><p>금융감독원 전자공시시스템. 상장주식수·영문 회사명 등 기업 기본 정보를 보강하는 데 사용합니다.</p><div class="link">dart.fss.or.kr ↗</div></div></a><a class="src" href="https://www.anthropic.com" target="_blank" rel="noopener"><div><h4>Anthropic Claude</h4><div class="kind">AI 모델</div></div><div><p>리포트·업종 분석 작성과 종목 업종 자동 분류에 사용하는 LLM입니다. 작성 시 웹 검색으로 최근 업황을 확인합니다.</p><div class="link">anthropic.com ↗</div></div></a><a class="src" href="https://finance.yahoo.com" target="_blank" rel="noopener"><div><h4>Yahoo Finance</h4><div class="kind">해외 시세 · 모닝 브리핑</div></div><div><p>모닝 브리핑이 쓰는 간밤 미국 시장 데이터입니다. S&amp;P 500·나스닥·다우·필라델피아 반도체지수, 미 10년물 금리, WTI, 달러인덱스, 원/달러 환율, 그리고 코스피·코스닥 지수를 종가 기준으로 받아옵니다.</p><div class="link">finance.yahoo.com ↗</div></div></a><a class="src" href="https://finance.naver.com" target="_blank" rel="noopener"><div><h4>네이버 금융</h4><div class="kind">투자자별 수급 · 모닝 브리핑</div></div><div><p>코스피·코스닥의 일별 투자자별 순매수(개인·외국인·기관)를 받아옵니다. 받은 값은 세 주체의 합이 0에 가까운지, 자릿수가 억원 단위와 맞는지 자동 검증한 뒤에만 사용합니다.</p><div class="link">finance.naver.com ↗</div></div></a><a class="src" href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" target="_blank" rel="noopener"><div><h4>미 연방준비제도</h4><div class="kind">일정 · 모닝 브리핑</div></div><div><p>FOMC 회의 일정과 의사록 공개일을 연준 공식 페이지에서 직접 확인합니다. 공개일은 추정하지 않고 페이지에 적힌 확정 날짜를 사용합니다.</p><div class="link">federalreserve.gov ↗</div></div></a><a class="src" href="https://news.google.com" target="_blank" rel="noopener"><div><h4>Google News</h4><div class="kind">뉴스 단서 · 모닝 브리핑</div></div><div><p>시장이 왜 움직였는지 파악하기 위한 <b>기사 제목만</b> 받아옵니다. 본문은 수집하지 않으며, 제목에 나온 수치는 브리핑에 옮기지 않습니다 — 숫자는 시세 데이터에서만 가져옵니다.</p><div class="link">news.google.com ↗</div></div></a></div><p class="tbl-note">실시간 시세는 제공되지 않으며, 본 사이트의 시세는 매 거래일 종가 기준입니다.</p></section><section class="sec wide" id="s05"><div class="sec-h"><span class="num">05</span><h2>AI 분석의 한계</h2></div><div class="prose"><p>AI는 잘하는 것과 못하는 것이 분명합니다. 저희가 만든 리포트도 마찬가지입니다. AI는 방대한 공시·뉴스를 일관된 양식으로 정리하고, 같은 종목을 매일 동일한 기준으로 살펴보는 일에 강합니다. 반면 시장의 분위기·정성적 판단·아직 데이터로 드러나지 않은 변화는 잘 감지하지 못합니다.</p>
+      <p>또한 LLM은 데이터에 없는 내용을 그럴듯하게 만들어내는 경우(이른바 '환각')가 드물게 발생할 수 있습니다. 작성 시 시장 데이터를 함께 제공하고 투자 권유 표현을 금지하는 등의 장치를 두지만, 이런 방식이 모든 오류를 잡아낸다고 보장할 수는 없습니다. 의심스러운 수치는 원천 공시(DART)에서 한 번 더 확인해 주시기 바랍니다.</p>
+      <p>본문에는 웹 검색으로 확인한 시장 전망이나 외부 기관의 추정이 인용될 수 있습니다. 이런 전망치는 미래에 대한 추정이지 보장이 아니며, 실제 결과와 다를 수 있다는 점을 분명히 적어둡니다.</p></div><div class="abil"><div><div class="k">AI가 잘하는 일</div><h4>일관된 정리</h4><ul><li>방대한 공시·뉴스 데이터를 동일한 양식으로 요약</li><li>매일 같은 기준으로 종목 상태 점검</li><li>정량 지표를 업종 평균과 비교</li><li>강세/약세 요인을 균형 있게 나열</li></ul></div><div><div class="k">AI가 못하는 일</div><h4>가치 판단</h4><ul><li>"지금 사야 할지" 같은 매매 판단</li><li>경영진의 의도·시장 심리 해석</li><li>아직 공시되지 않은 변화 예측</li><li>개인의 자금·세제·목표에 맞춘 조언</li></ul></div></div></section><section class="sec wide" id="s06"><div class="sec-h"><span class="num">06</span><h2>데이터는 얼마나 자주 업데이트되나</h2></div><div class="prose lead"><p>데이터 종류별로 갱신 주기가 다릅니다. 페이지 곳곳에 표시된 '데이터 기준 시각'을 통해 해당 페이지가 어느 시점의 정보를 사용하고 있는지 확인할 수 있습니다.</p></div><div class="tbl-wrap" style="margin-top:28px"><table class="tbl sched">
+          <thead><tr><th>데이터 종류</th><th>갱신 주기</th><th>다음 업데이트 예정</th><th>비고</th></tr></thead>
+          <tbody>
+            <tr><td><b>모닝 브리핑</b></td><td><span>매 거래일</span></td><td>평일 오전 7시 30분(KST)</td><td>국내 증시가 열리는 날에만 발행합니다. 주말·공휴일·대체공휴일에는 발행하지 않으며, 다음 브리핑이 올라올 때까지 직전 브리핑이 그대로 유지됩니다.</td></tr>
+            <tr><td><b>시세·거래량·시가총액</b></td><td><span>매 거래일</span></td><td>평일 저녁 19~22시(KST)</td><td>일일 종가 기준이며, 실시간 시세는 제공되지 않습니다.</td></tr>
+            <tr><td><b>종목 업종 분류</b></td><td><span>수시</span></td><td>신규 상장 종목 감지 시</td><td>AI가 사업 내용 기준으로 자동 분류합니다.</td></tr>
+            <tr><td><b>종목 리포트</b></td><td><span>수시</span></td><td>신규 상장 시 · 정기보고서 제출 시</td><td>전 종목 대상으로, 사업·분기·반기보고서가 새로 공시되면 해당 종목 리포트를 최신 실적 기준으로 다시 작성합니다.</td></tr>
+            <tr><td><b>업종 분석</b></td><td><span>분기별</span></td><td>4월 7일 · 5·8·11월 21일</td><td>AI가 전 업종의 분석 본문을 다시 작성합니다. 사업·반기·분기보고서 공시가 마무리되는 시점에 맞춰 일정을 정했습니다. 업종별 등락률·시가총액 같은 집계 수치는 이와 별개로 매 거래일 갱신되며, 본문에 오류가 확인되면 분기 중에도 다시 작성합니다.</td></tr>
+            <tr><td><b>신규·상장폐지 종목</b></td><td><span>매 거래일</span></td><td>자동 반영</td><td>신규는 자동 추가·분류, 폐지는 자동 제외됩니다.</td></tr>
+          </tbody>
+        </table></div><p class="tbl-note">갱신 주기는 데이터 제공사 정책 변경 시 사전 공지 없이 바뀔 수 있습니다.</p></section><section class="sec wide" id="s07"><div class="sec-h"><span class="num">07</span><h2>중요 안내사항 (면책 조항)</h2></div><div class="prose lead"><p>본 사이트를 이용하시기 전에 아래 내용을 반드시 확인하시기 바랍니다.</p></div><div class="disc-list"><div><b>본 사이트의 모든 콘텐츠는 정보 제공을 목적으로 합니다.</b><p>특정 종목의 매수·매도·보유에 대한 권유나 추천이 아니며, 어떠한 투자 의견도 제시하지 않습니다.</p></div><div><b>투자 판단과 그 결과에 대한 책임은 전적으로 이용자 본인에게 있습니다.</b><p>본 사이트의 정보를 근거로 한 매매 결과로 발생하는 어떠한 손익에 대해서도 운영자는 책임지지 않습니다.</p></div><div><b>데이터의 정확성·완전성을 보증하지 않습니다.</b><p>본 사이트의 데이터는 외부 출처에서 제공받은 자료를 기반으로 하며, 지연·누락·오류가 포함될 수 있습니다.</p></div><div><b>유사투자자문업·투자자문업·투자일임업 등록 사업자가 아닙니다.</b><p>금융위원회·금융감독원에 어떠한 형태의 금융업으로도 등록되어 있지 않으며, 개별 종목에 대한 자문·일임 서비스를 제공하지 않습니다.</p></div><div><b>AI가 생성한 콘텐츠는 환각(hallucination) 가능성이 존재합니다.</b><p>본 사이트의 AI 리포트는 검증 절차를 거치지만, 모든 오류를 완벽하게 차단할 수는 없습니다. 중요한 수치는 원천 공시(DART)에서 다시 확인해 주시기 바랍니다.</p></div><div><b>과거 수익률·실적·전망치는 미래의 결과를 보장하지 않습니다.</b><p>본문에 인용된 컨센서스·시장 전망은 시장 평균치를 요약한 것이며, 실제 결과는 이와 크게 다를 수 있습니다.</p></div><div><b>본 사이트는 광고·제휴 수익에 의존하지 않습니다.</b><p>특정 종목·증권사·금융 상품으로부터 대가를 받고 콘텐츠 방향을 결정하지 않습니다. 이해상충이 발생하는 경우 해당 페이지 상단에 명시합니다.</p></div><div><b>본 안내사항은 사전 공지 후 변경될 수 있습니다.</b><p>중대한 변경이 있을 경우 사이트 공지를 통해 안내드리며, 변경 이후의 이용에 대해서는 변경된 안내사항이 적용됩니다.</p></div></div><p class="disc-final">투자 전에는 반드시 공식 공시(DART)와 본인의 판단으로 결정하시기 바랍니다.</p></section><section class="sec wide" id="s08"><div class="sec-h"><span class="num">08</span><h2>연락처</h2></div><div class="contacts"><div><div class="k">이메일</div><div class="v">hello@kosai.kr</div><p>서비스 의견·협업 제안·데이터 오류 제보를 환영합니다. 오류 제보는 페이지 URL과 함께 보내주시면 빠르게 확인합니다.</p></div><div><div class="k">문의 양식</div><div class="v">문의하기 페이지</div><p>사이트의 문의하기·피드백 페이지에서 양식으로 바로 보내실 수도 있습니다.</p></div></div></section>
+    </div>
+  </div>
+</main>
+<footer class="foot"><div class="wrap">
+  <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <p class="ftag">한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p>
+  <div class="fgrid">
+    <div class="fcol"><h4>서비스</h4><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div>
+    <div class="fcol"><h4>회사</h4><a href="/About.html">About</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a></div>
+    <div class="fcol"><h4>정책</h4><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보처리방침</a></div>
+  </div>
+  <div class="biz"><span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span><span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span></div>
+  <div class="copy">© 2026 KOSAI — All rights reserved.</div>
+</div></footer>
+<script>
+window.kosTocInit=function(){
+  var nav=document.getElementById('nav'),mark=document.getElementById('chipsMark'),bar=document.getElementById('chipsBar'),mq=window.matchMedia('(max-width:820px)');
+  if(!mark||!bar){window.kosOnScroll=null;window.__kosSpy=null;return}
+  function pin(){var inNav=bar.parentNode===nav;
+    if(!mq.matches){if(inNav){mark.after(bar);mark.style.height=''}return}
+    var top=mark.getBoundingClientRect().top;
+    if(!inNav&&top<=60){mark.style.height=(bar.offsetHeight+12)+'px';nav.appendChild(bar);void bar.offsetHeight}
+    else if(inNav&&top>60){mark.after(bar);mark.style.height='';void bar.offsetHeight}}
+  window.kosOnScroll=pin;
+  var links=[].slice.call(document.querySelectorAll('#toc a, #chips a')),secs=[].slice.call(document.querySelectorAll('section.sec'));
+  var mvT=window.kosInd(document.getElementById('toc'),'y'),mvC=window.kosInd(document.getElementById('chips'),'x');
+  // 목차 클릭 — 앵커 이동은 해시마다 방문 기록을 쌓아 뒤로가기가 이전 목차로 간다. 스크롤만 하고 주소는 replaceState 로 바꾼다.
+  links.forEach(function(a){if(a.__tocBound)return;a.__tocBound=true;a.addEventListener('click',function(e){var id=(a.getAttribute('href')||'').slice(1),s=id&&document.getElementById(id);if(!s)return;e.preventDefault();
+    var pad=parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop)||0;window.scrollTo({top:s.getBoundingClientRect().top+window.scrollY-pad,behavior:'smooth'});
+    try{history.replaceState(null,'','#'+id)}catch(x){}})});
+  function spy(){if(!secs.length)return;var y=window.scrollY+window.innerHeight*.3,cur=secs[0];secs.forEach(function(s){if(s.offsetTop<=y)cur=s});links.forEach(function(a){var on=a.getAttribute('href')==='#'+cur.id;if(on&&!a.classList.contains('on')&&a.parentNode.id==='chips'){a.parentNode.scrollTo({left:Math.max(0,a.offsetLeft-20),behavior:'smooth'})}a.classList.toggle('on',on)});mvT();mvC()}
+  if(!window.__kosSpyBound){addEventListener('scroll',function(){if(window.__kosSpy)requestAnimationFrame(window.__kosSpy)},{passive:true});window.__kosSpyBound=true}
+  window.__kosSpy=spy;spy();pin();
+};
+window.kosTocInit();
+(function(){
+  var nav=document.getElementById('nav'),tick=false;
+  function upd(){tick=false;nav.classList.toggle('scrolled',window.scrollY>32);if(window.kosOnScroll)window.kosOnScroll()}
+  addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+  var sun='<path d="M12 4V2M12 22v-2M4.9 4.9 3.5 3.5M20.5 20.5l-1.4-1.4M4 12H2M22 12h-2M4.9 19.1l-1.4 1.4M20.5 3.5l-1.4 1.4"/><circle cx="12" cy="12" r="4"/>',moon='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
+  var root=document.documentElement,icon=document.getElementById('themeIcon');function paint(){icon.innerHTML=root.getAttribute('data-theme')==='dark'?sun:moon}paint();window.__kosPaintTheme=paint;
+  document.getElementById('themeBtn').addEventListener('click',function(){var t=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',t);try{localStorage.setItem('kos-theme',t)}catch(e){}paint();});
+  /* 휴대폰 메뉴 */
+  var mb=document.getElementById('menuBtn');
+  function setMenu(on){nav.classList.toggle('menu-open',on);mb.setAttribute('aria-expanded',on?'true':'false')}
+  mb.addEventListener('click',function(){setMenu(!nav.classList.contains('menu-open'))});
+  document.getElementById('mback').addEventListener('click',function(){setMenu(false)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});
+  window.matchMedia('(min-width:821px)').addEventListener('change',function(e){if(e.matches)setMenu(false)});
+  /* 로그인 상태(시안) — 실사이트에서는 auth-state.js 가 Firebase 세션으로 같은 자리를 채운다. ?user=1 또는 ?user=이메일 */
+  var qs=new URLSearchParams(location.search),u=qs.get('user');
+  if(u){var email=(u==='1'||u==='')?'you@example.com':u,init=(email.charAt(0)||'K').toUpperCase(),acct=document.getElementById('acct');
+    document.getElementById('navRight').classList.add('user');acct.classList.add('show');
+    acct.innerHTML='<button type="button" class="avatar" id="acctBtn" aria-haspopup="true" aria-expanded="false" aria-label="계정 메뉴">'+init+'</button><div class="acct-menu" role="menu"><div class="em">'+email+'</div><a href="/Settings.html">설정</a><button type="button" id="signOut">로그아웃</button></div>';
+    var ab=document.getElementById('acctBtn');ab.addEventListener('click',function(e){e.stopPropagation();var on=!acct.classList.contains('open');acct.classList.toggle('open',on);ab.setAttribute('aria-expanded',on?'true':'false')});
+    document.addEventListener('click',function(e){if(!acct.contains(e.target)){acct.classList.remove('open');ab.setAttribute('aria-expanded','false')}});
+    document.getElementById('mauth').innerHTML='<div class="em">'+email+'</div><a href="/Settings.html">설정</a><button type="button" id="signOutM">로그아웃</button>';
+    var out=function(){var url=new URL(location.href);url.searchParams.delete('user');location.href=url.pathname+(url.search||'')};document.getElementById('signOut').addEventListener('click',out);document.getElementById('signOutM').addEventListener('click',out);}
+})();
+</script>
+</body>
+</html>
