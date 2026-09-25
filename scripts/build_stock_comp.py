@@ -231,15 +231,8 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 .stats-note{{margin:10px 0 0;font:400 12px/16px var(--font);color:var(--ink-55)}}
 .st-k{{font:500 12px/16px var(--font);color:var(--ink-55)}} .st-v{{margin-top:6px;font:600 19px/24px var(--font);letter-spacing:-.01em;white-space:nowrap}} .st-s{{margin-top:4px;font:400 11px/14px var(--font);color:var(--ink-55)}}
 /* 본문 */
-.body{{display:grid;grid-template-columns:200px minmax(0,1fr);gap:64px;padding:56px 0 0}}
-.toc{{position:sticky;top:84px;align-self:start;display:flex;flex-direction:column;gap:2px}}
-.toc a{{display:flex;gap:10px;align-items:baseline;padding:7px 0 7px 12px;border-left:2px solid transparent;font:500 13px/18px var(--font);color:var(--ink-55);transition:color .12s}}
-.toc a .n{{font-weight:500;font-size:11px;color:var(--ink-30);min-width:18px}}
-.toc a:hover{{color:var(--ink)}} .toc a.on{{color:var(--ink);border-left-color:var(--ink);font-weight:600}} .toc a.on .n{{color:var(--ink-55)}}
-.chips-bar,.chips-mark{{display:none}}
-.content{{min-width:0}}
-.sec{{max-width:720px;padding:0 0 88px}} .sec.wide{{max-width:880px}}
-.sec-h .num{{font:600 13px/20px var(--font);color:var(--ink-30)}} .sec-h.sec-h-quiet h2{{font-size:13px;line-height:20px;font-weight:600;color:var(--ink-55);letter-spacing:0}}
+{C.TOC_CSS}
+.sec-h.sec-h-quiet h2{{font-size:13px;line-height:20px;font-weight:600;color:var(--ink-55);letter-spacing:0}}
 .prose p{{margin:0 0 20px;font:400 17px/28px var(--font);letter-spacing:-.005em}} .prose p:last-child{{margin-bottom:0}}
 .note{{margin:16px 0 0;font:400 12px/18px var(--font);color:var(--ink-55)}}
 /* 초록(요약) — 상자 없이 제목·바이라인·요지·핵심 목록 */
@@ -281,21 +274,13 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
   .hero{{padding:20px 0 26px}}
   h1.name{{font-size:32px;line-height:38px;margin-top:8px}} .price{{margin-top:16px}} .price .p{{font-size:32px;line-height:36px}}
   .stats{{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px;padding:18px 0}} .st-v{{font-size:17px}}
-  .body{{display:block;padding-top:8px}} .toc{{display:none}}
-  .chips-mark{{display:block;height:0}}
-  .chips-bar{{display:block;background:var(--bg);margin:0 calc(-1 * var(--pad)) 12px;border-bottom:1px solid var(--hair)}}
-  .nav .chips-bar{{position:absolute;top:60px;left:0;right:0;margin:0}}
-  html{{scroll-padding-top:116px}}
-  .chips{{position:relative;display:flex;gap:22px;height:44px;padding:0 var(--pad);overflow-x:auto;overflow-y:hidden;scrollbar-width:none;touch-action:pan-x;overscroll-behavior-x:contain}} .chips::-webkit-scrollbar{{display:none}}
-  .chips a{{flex:none;position:relative;font:500 13px/44px var(--font);color:var(--ink-55);transition:color .12s}} .chips a.on{{color:var(--ink);font-weight:600}}
-  .chips a.on::after{{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--ink)}}
-  .sec{{padding-bottom:64px}}
   .ab-title{{font-size:24px;line-height:32px}} .ab-lead{{font-size:16px;line-height:26px}}
   .tiles{{grid-template-columns:1fr}} .fcs{{grid-template-columns:1fr}} .vstrip{{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 10px;padding:16px 0}}
   .rk{{grid-template-columns:1fr;gap:6px;padding:16px 0}} .cps li{{grid-template-columns:1fr;gap:4px;padding:14px 0}}
   .prose p{{font-size:16px;line-height:27px}}
 }}
 {C.MOBILE_CSS}
+{C.TOC_MOBILE_CSS}
 </style>
 </head>
 <body>
@@ -323,19 +308,7 @@ h1.name{{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}}
 </main>
 {C.FOOTER}
 <script>
-(function(){{
-  var nav=document.getElementById('nav');
-  var mark=document.getElementById('chipsMark'),bar=document.getElementById('chipsBar'),mq=window.matchMedia('(max-width:820px)');
-  function pin(){{var inNav=bar.parentNode===nav;
-    if(!mq.matches){{if(inNav){{mark.after(bar);mark.style.height=''}}return}}
-    var top=mark.getBoundingClientRect().top;
-    if(!inNav&&top<=60){{mark.style.height=(bar.offsetHeight+12)+'px';nav.appendChild(bar)}}
-    else if(inNav&&top>60){{mark.after(bar);mark.style.height=''}}}}
-  window.kosOnScroll=pin;
-  var links=[].slice.call(document.querySelectorAll('#toc a, #chips a')),secs=[].slice.call(document.querySelectorAll('section.sec'));
-  function spy(){{var y=window.scrollY+window.innerHeight*.3,cur=secs[0];secs.forEach(function(s){{if(s.offsetTop<=y)cur=s}});links.forEach(function(a){{var on=a.getAttribute('href')==='#'+cur.id;if(on&&!a.classList.contains('on')&&a.parentNode.id==='chips'){{a.parentNode.scrollTo({{left:Math.max(0,a.offsetLeft-20),behavior:'smooth'}})}}a.classList.toggle('on',on)}})}}
-  addEventListener('scroll',function(){{requestAnimationFrame(spy)}},{{passive:true}});spy();
-}})();
+{C.TOC_JS}
 {C.JS}
 </script>
 </body>
