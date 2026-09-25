@@ -3,11 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
 <meta name="robots" content="noindex,nofollow">
 <meta name="theme-color" content="#f9f8f6">
 <title>About — 디자인 시안 | KOSAI</title>
 <link rel="icon" href="/assets/favicon.png?v=k2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/Pretendard-Regular.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/Pretendard-Medium.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/Pretendard-SemiBold.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/Pretendard-Bold.woff2">
 <script>(function(){var t='light';try{t=localStorage.getItem('kos-theme')||'light'}catch(e){}document.documentElement.setAttribute('data-theme',t);})();</script>
+<script id="kosThemeColor">(function(){var m=document.querySelector('meta[name="theme-color"]'),r=document.documentElement;
+  function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0d0d0e':'#f9f8f6')}
+  tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme']})})();</script>
 <script>
 /* 활성 표시선 — 컨테이너마다 선 하나를 두고, 활성 항목(.on)의 자리로 미끄러뜨린다.
    axis 'x' = 밑줄, 'y' = 왼쪽 세로선. sel 로 활성 항목 선택자를 바꿀 수 있다(기본 .on).
@@ -64,7 +72,9 @@ window.kosInd=function(box,axis,sel){
   color-scheme:dark;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:84px;overflow-x:clip}
+html{scroll-behavior:smooth;scroll-padding-top:calc(84px + var(--kos-bar-h,0px));overflow-x:clip}
+/* 옛 모듈(auth-state · settings-panel · auth-guard · consent · checkout)이 쓰는 토큰 이름 — 새 토큰에 잇는다. 모듈을 새 이름으로 고칠 때까지의 다리 */
+:root{--font-sans:var(--font);--fg-1:var(--ink);--fg-2:var(--ink-72);--fg-3:var(--ink-55);--bg-1:var(--surface);--border-2:var(--line);--shadow-2:0 8px 24px rgba(20,20,20,.08);--brand-blue:var(--ink);--brand-cyan:var(--ink-72);--radius-sm:8px;--radius-md:12px;--radius-lg:16px}
 [hidden]{display:none!important} /* hidden 속성이 .pager{display:flex} 같은 클래스 규칙에 밀리지 않게 */
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums lining-nums;word-break:keep-all;overflow-wrap:anywhere}
 a{color:inherit;text-decoration:none}
@@ -72,7 +82,7 @@ a{color:inherit;text-decoration:none}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
 .up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--ink-55)}
 /* 헤더 — 사이트 규칙 그대로(60px · 맨 위 투명 · 내리면 띠) */
-.nav{position:sticky;top:0;z-index:50;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0;transition:background-color .2s,box-shadow .2s}
+.nav{position:sticky;top:var(--kos-bar-h,0px);z-index:50;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0;transition:background-color .2s,box-shadow .2s}
 .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--hair);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
 .nav-in{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;position:relative}
 .brand img{height:14px;display:block} .brand .dk{display:none} :root[data-theme="dark"] .brand .lt{display:none} :root[data-theme="dark"] .brand .dk{display:block}
@@ -86,7 +96,7 @@ a{color:inherit;text-decoration:none}
    (9/26 사장: 헤더에서 내려오던 목록이 안 예쁘다 — 그건 기능만 있던 자리였다.) nav 바깥에 둔다: .nav.scrolled 의
    backdrop-filter 가 fixed 의 기준이 되어 안에 두면 내린 뒤 여는 순간 높이가 0 이 된다. */
 .menu .x{display:none} .nav.menu-open .menu .ham{display:none} .nav.menu-open .menu .x{display:block}
-.mmenu{display:none;position:fixed;top:60px;left:0;right:0;bottom:0;z-index:49;background:var(--bg);flex-direction:column;box-sizing:border-box;padding:22px var(--pad) max(28px,env(safe-area-inset-bottom));overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.mmenu{display:none;position:fixed;top:calc(60px + var(--kos-bar-h,0px));left:0;right:0;bottom:0;z-index:49;background:var(--bg);flex-direction:column;box-sizing:border-box;padding:22px var(--pad) max(28px,env(safe-area-inset-bottom));overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
 @media (max-width:820px){.mmenu.open{display:flex;animation:mmIn .18s ease-out}} @keyframes mmIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}} @media (prefers-reduced-motion:reduce){.mmenu.open{animation:none}}
 .mm-links{display:flex;flex-direction:column} .mm-links a{display:block;padding:10px 0;font:600 28px/36px var(--font);letter-spacing:-.02em;color:var(--ink-72);text-decoration:none} .mm-links a.on{color:var(--ink);font-weight:700}
 .mmenu .sep{height:1px;background:var(--hair);margin:20px 0 22px}
@@ -103,7 +113,7 @@ a{color:inherit;text-decoration:none}
 .ind{position:absolute;left:0;top:0;background:var(--ink);pointer-events:none;will-change:transform} .ind-v{width:2px} .ind-h{height:2px}
 .btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 18px;border-radius:999px;border:0;font:600 14px/1 var(--font);cursor:pointer;transition:background-color .12s,color .12s} .btn.ico{padding-left:14px}
 .btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
-.btn-ink{background:var(--ink);color:var(--bg)} .btn-ink:hover{opacity:.9}
+.btn-ink,.btn-primary{background:var(--ink);color:var(--bg)} .btn-ink:hover,.btn-primary:hover{opacity:.9}
 .btn-soft{background:var(--surface-2);color:var(--ink)} .btn-soft:hover{background:var(--line)}
 /* 절 제목 · 더보기 링크 */
 .sec-h{display:flex;align-items:baseline;gap:14px;margin:0 0 22px}
@@ -139,7 +149,7 @@ a{color:inherit;text-decoration:none}
 .hr{height:1px;background:var(--hair);margin:8px 0 32px}
 @media (max-width:820px){.page-hero{padding-top:20px} .page-hero h1{font-size:32px;line-height:38px} .page-hero .sub{font-size:15px;line-height:24px} .prose{font-size:15px;line-height:26px} .page-body{padding:28px 0 48px}}
 .body{display:grid;grid-template-columns:200px minmax(0,1fr);gap:64px;padding:56px 0 0}
-.toc{position:sticky;top:84px;align-self:start;display:flex;flex-direction:column;gap:2px}
+.toc{position:sticky;top:calc(84px + var(--kos-bar-h,0px));align-self:start;display:flex;flex-direction:column;gap:2px}
 .toc a{display:flex;gap:10px;align-items:baseline;padding:7px 0 7px 12px;border-left:2px solid transparent;font:500 13px/18px var(--font);color:var(--ink-55);transition:color .12s}
 .toc a .n{font-weight:500;font-size:11px;color:var(--ink-30);min-width:18px}
 .toc a:hover{color:var(--ink)} .toc a.on{color:var(--ink);font-weight:600} .toc a.on .n{color:var(--ink-55)}
@@ -175,7 +185,7 @@ a{color:inherit;text-decoration:none}
   .chips-mark{display:block;height:0}
   .chips-bar{display:block;background:var(--bg);margin:0 calc(-1 * var(--pad)) 12px;border-bottom:1px solid var(--hair)}
   .nav .chips-bar{position:absolute;top:60px;left:0;right:0;margin:0}
-  html{scroll-padding-top:116px}
+  html{scroll-padding-top:calc(116px + var(--kos-bar-h,0px))}
   .chips{position:relative;display:flex;gap:22px;height:44px;padding:0 var(--pad);overflow-x:auto;overflow-y:hidden;scrollbar-width:none;touch-action:pan-x;overscroll-behavior-x:contain} .chips::-webkit-scrollbar{display:none}
   .chips a{flex:none;position:relative;font:500 13px/44px var(--font);color:var(--ink-55);transition:color .12s} .chips a.on{color:var(--ink);font-weight:600}
   .sec{padding-bottom:64px}
@@ -225,12 +235,12 @@ a{color:inherit;text-decoration:none}
       <p>본문에는 웹 검색으로 확인한 시장 전망이나 외부 기관의 추정이 인용될 수 있습니다. 이런 전망치는 미래에 대한 추정이지 보장이 아니며, 실제 결과와 다를 수 있다는 점을 분명히 적어둡니다.</p></div><div class="abil"><div><div class="k">AI가 잘하는 일</div><h4>일관된 정리</h4><ul><li>방대한 공시·뉴스 데이터를 동일한 양식으로 요약</li><li>매일 같은 기준으로 종목 상태 점검</li><li>정량 지표를 업종 평균과 비교</li><li>강세/약세 요인을 균형 있게 나열</li></ul></div><div><div class="k">AI가 못하는 일</div><h4>가치 판단</h4><ul><li>"지금 사야 할지" 같은 매매 판단</li><li>경영진의 의도·시장 심리 해석</li><li>아직 공시되지 않은 변화 예측</li><li>개인의 자금·세제·목표에 맞춘 조언</li></ul></div></div></section><section class="sec wide" id="s06"><div class="sec-h"><span class="num">06</span><h2>데이터는 얼마나 자주 업데이트되나</h2></div><div class="prose lead"><p>데이터 종류별로 갱신 주기가 다릅니다. 페이지 곳곳에 표시된 '데이터 기준 시각'을 통해 해당 페이지가 어느 시점의 정보를 사용하고 있는지 확인할 수 있습니다.</p></div><div class="tbl-wrap" style="margin-top:28px"><table class="tbl sched">
           <thead><tr><th>데이터 종류</th><th>갱신 주기</th><th>다음 업데이트 예정</th><th>비고</th></tr></thead>
           <tbody>
-            <tr><td><b>모닝 브리핑</b></td><td><span>매 거래일</span></td><td>평일 오전 7시 30분(KST)</td><td>국내 증시가 열리는 날에만 발행합니다. 주말·공휴일·대체공휴일에는 발행하지 않으며, 다음 브리핑이 올라올 때까지 직전 브리핑이 그대로 유지됩니다.</td></tr>
-            <tr><td><b>시세·거래량·시가총액</b></td><td><span>매 거래일</span></td><td>평일 저녁 19~22시(KST)</td><td>일일 종가 기준이며, 실시간 시세는 제공되지 않습니다.</td></tr>
-            <tr><td><b>종목 업종 분류</b></td><td><span>수시</span></td><td>신규 상장 종목 감지 시</td><td>AI가 사업 내용 기준으로 자동 분류합니다.</td></tr>
-            <tr><td><b>종목 리포트</b></td><td><span>수시</span></td><td>신규 상장 시 · 정기보고서 제출 시</td><td>전 종목 대상으로, 사업·분기·반기보고서가 새로 공시되면 해당 종목 리포트를 최신 실적 기준으로 다시 작성합니다.</td></tr>
-            <tr><td><b>업종 분석</b></td><td><span>분기별</span></td><td>4월 7일 · 5·8·11월 21일</td><td>AI가 전 업종의 분석 본문을 다시 작성합니다. 사업·반기·분기보고서 공시가 마무리되는 시점에 맞춰 일정을 정했습니다. 업종별 등락률·시가총액 같은 집계 수치는 이와 별개로 매 거래일 갱신되며, 본문에 오류가 확인되면 분기 중에도 다시 작성합니다.</td></tr>
-            <tr><td><b>신규·상장폐지 종목</b></td><td><span>매 거래일</span></td><td>자동 반영</td><td>신규는 자동 추가·분류, 폐지는 자동 제외됩니다.</td></tr>
+            <tr><td><b>모닝 브리핑</b></td><td><span class="cyc">매 거래일</span></td><td>평일 오전 7시 30분(KST)</td><td>국내 증시가 열리는 날에만 발행합니다. 주말·공휴일·대체공휴일에는 발행하지 않으며, 다음 브리핑이 올라올 때까지 직전 브리핑이 그대로 유지됩니다.</td></tr>
+            <tr><td><b>시세·거래량·시가총액</b></td><td><span class="cyc">매 거래일</span></td><td>평일 저녁 19~22시(KST)</td><td>일일 종가 기준이며, 실시간 시세는 제공되지 않습니다.</td></tr>
+            <tr><td><b>종목 업종 분류</b></td><td><span class="cyc">수시</span></td><td>신규 상장 종목 감지 시</td><td>AI가 사업 내용 기준으로 자동 분류합니다.</td></tr>
+            <tr><td><b>종목 리포트</b></td><td><span class="cyc">수시</span></td><td>신규 상장 시 · 정기보고서 제출 시</td><td>전 종목 대상으로, 사업·분기·반기보고서가 새로 공시되면 해당 종목 리포트를 최신 실적 기준으로 다시 작성합니다.</td></tr>
+            <tr><td><b>업종 분석</b></td><td><span class="cyc">분기별</span></td><td>4월 7일 · 5·8·11월 21일</td><td>AI가 전 업종의 분석 본문을 다시 작성합니다. 사업·반기·분기보고서 공시가 마무리되는 시점에 맞춰 일정을 정했습니다. 업종별 등락률·시가총액 같은 집계 수치는 이와 별개로 매 거래일 갱신되며, 본문에 오류가 확인되면 분기 중에도 다시 작성합니다.</td></tr>
+            <tr><td><b>신규·상장폐지 종목</b></td><td><span class="cyc">매 거래일</span></td><td>자동 반영</td><td>신규는 자동 추가·분류, 폐지는 자동 제외됩니다.</td></tr>
           </tbody>
         </table></div><p class="tbl-note">갱신 주기는 데이터 제공사 정책 변경 시 사전 공지 없이 바뀔 수 있습니다.</p></section><section class="sec wide" id="s07"><div class="sec-h"><span class="num">07</span><h2>중요 안내사항 (면책 조항)</h2></div><div class="prose lead"><p>본 사이트를 이용하시기 전에 아래 내용을 반드시 확인하시기 바랍니다.</p></div><div class="disc-list"><div><b>본 사이트의 모든 콘텐츠는 정보 제공을 목적으로 합니다.</b><p>특정 종목의 매수·매도·보유에 대한 권유나 추천이 아니며, 어떠한 투자 의견도 제시하지 않습니다.</p></div><div><b>투자 판단과 그 결과에 대한 책임은 전적으로 이용자 본인에게 있습니다.</b><p>본 사이트의 정보를 근거로 한 매매 결과로 발생하는 어떠한 손익에 대해서도 운영자는 책임지지 않습니다.</p></div><div><b>데이터의 정확성·완전성을 보증하지 않습니다.</b><p>본 사이트의 데이터는 외부 출처에서 제공받은 자료를 기반으로 하며, 지연·누락·오류가 포함될 수 있습니다.</p></div><div><b>유사투자자문업·투자자문업·투자일임업 등록 사업자가 아닙니다.</b><p>금융위원회·금융감독원에 어떠한 형태의 금융업으로도 등록되어 있지 않으며, 개별 종목에 대한 자문·일임 서비스를 제공하지 않습니다.</p></div><div><b>AI가 생성한 콘텐츠는 환각(hallucination) 가능성이 존재합니다.</b><p>본 사이트의 AI 리포트는 검증 절차를 거치지만, 모든 오류를 완벽하게 차단할 수는 없습니다. 중요한 수치는 원천 공시(DART)에서 다시 확인해 주시기 바랍니다.</p></div><div><b>과거 수익률·실적·전망치는 미래의 결과를 보장하지 않습니다.</b><p>본문에 인용된 컨센서스·시장 전망은 시장 평균치를 요약한 것이며, 실제 결과는 이와 크게 다를 수 있습니다.</p></div><div><b>본 사이트는 광고·제휴 수익에 의존하지 않습니다.</b><p>특정 종목·증권사·금융 상품으로부터 대가를 받고 콘텐츠 방향을 결정하지 않습니다. 이해상충이 발생하는 경우 해당 페이지 상단에 명시합니다.</p></div><div><b>본 안내사항은 사전 공지 후 변경될 수 있습니다.</b><p>중대한 변경이 있을 경우 사이트 공지를 통해 안내드리며, 변경 이후의 이용에 대해서는 변경된 안내사항이 적용됩니다.</p></div></div><p class="disc-final">투자 전에는 반드시 공식 공시(DART)와 본인의 판단으로 결정하시기 바랍니다.</p></section><section class="sec wide" id="s08"><div class="sec-h"><span class="num">08</span><h2>연락처</h2></div><div class="contacts"><div><div class="k">이메일</div><div class="v">hello@kosai.kr</div><p>서비스 의견·협업 제안·데이터 오류 제보를 환영합니다. 오류 제보는 페이지 URL과 함께 보내주시면 빠르게 확인합니다.</p></div><div><div class="k">문의 양식</div><div class="v">문의하기 페이지</div><p>사이트의 문의하기·피드백 페이지에서 양식으로 바로 보내실 수도 있습니다.</p></div></div></section>
     </div>
@@ -253,7 +263,7 @@ window.kosTocInit=function(){
   if(!mark||!bar){window.kosOnScroll=null;window.__kosSpy=null;return}
   function pin(){var inNav=bar.parentNode===nav;
     if(!mq.matches){if(inNav){mark.after(bar);mark.style.height=''}return}
-    var top=mark.getBoundingClientRect().top;
+    var top=mark.getBoundingClientRect().top-(parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--kos-bar-h'))||0);
     if(!inNav&&top<=60){mark.style.height=(bar.offsetHeight+12)+'px';nav.appendChild(bar);void bar.offsetHeight}
     else if(inNav&&top>60){mark.after(bar);mark.style.height='';void bar.offsetHeight}}
   window.kosOnScroll=pin;
@@ -281,11 +291,11 @@ window.kosTocInit();
   mb.addEventListener('click',function(){setMenu(!nav.classList.contains('menu-open'))});
   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('menu-open'))setMenu(false)});
   window.matchMedia('(min-width:821px)').addEventListener('change',function(e){if(e.matches)setMenu(false)});
-  /* 로그인 상태(시안) — 실사이트에서는 auth-state.js 가 Firebase 세션으로 같은 자리를 채운다. ?user=1 또는 ?user=이메일 */
   var qs=new URLSearchParams(location.search),u=qs.get('user');
   if(u){var email=(u==='1'||u==='')?'you@example.com':u,init=(email.charAt(0)||'K').toUpperCase(),acct=document.getElementById('acct');
     document.getElementById('navRight').classList.add('user');acct.classList.add('show');
-    acct.innerHTML='<button type="button" class="avatar" id="acctBtn" aria-haspopup="true" aria-expanded="false" aria-label="계정 메뉴">'+init+'</button><div class="acct-menu" role="menu"><div class="em">'+email+'</div><a href="/preview/settings.html">설정</a><button type="button" id="signOut">로그아웃</button></div>';
+    acct.innerHTML='<button type="button" class="avatar" id="acctBtn" aria-haspopup="true" aria-expanded="false" aria-label="계정 메뉴"></button><div class="acct-menu" role="menu"><div class="em"></div><a href="/preview/settings.html">설정</a><button type="button" id="signOut">로그아웃</button></div>';
+    document.getElementById('acctBtn').textContent=init;acct.querySelector('.em').textContent=email;
     var ab=document.getElementById('acctBtn');ab.addEventListener('click',function(e){e.stopPropagation();var on=!acct.classList.contains('open');acct.classList.toggle('open',on);ab.setAttribute('aria-expanded',on?'true':'false')});
     document.addEventListener('click',function(e){if(!acct.contains(e.target)){acct.classList.remove('open');ab.setAttribute('aria-expanded','false')}});
     document.getElementById('mauth').innerHTML='<a href="/preview/settings.html">설정</a><button type="button" id="signOutM">로그아웃</button>';  /* 이메일·동그라미 줄은 뺐다(9/26 사장) — 헤더의 동그라미가 이미 로그인 상태를 말한다 */

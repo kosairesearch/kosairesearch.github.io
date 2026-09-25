@@ -84,7 +84,7 @@ def build(out_path):
             parts.append('<div class="abil">' + ''.join(f'<div><div class="k">{k}</div><h4>{h}</h4>{ul}</div>' for k, h, ul in abil) + '</div>')
         table = g(r'(<table class="dt">.*?</table>)', sc)
         if table:
-            table = table.replace('class="dt"', 'class="tbl sched"').replace('<span class="cyc">', '<span>')
+            table = table.replace('class="dt"', 'class="tbl sched"')   # 행은 그대로 — check_sectors.py 가 실사이트 행과 글자 하나까지 견준다
             table = re.sub(r' style="width:\d+px"', '', table)
             parts.append(f'<div class="tbl-wrap" style="margin-top:28px">{table}</div>')
         items = re.findall(r'<div class="item"><b>(.*?)</b><p>(.*?)</p></div>', sc, re.S)
@@ -128,7 +128,7 @@ def build(out_path):
     want_words, got_words = want.split(), got.split()
     missing = [w for w in want_words if w not in got_words and w not in ('홈', '/', 'About', 'ABOUT', 'KOSAI', '·')]
     assert not missing, f'About: 빠진 글 {missing[:12]}'
-    Path(out_path).write_text(html, encoding='utf-8')
+    C.emit(out_path, html)
     print(f'✅ {out_path} · {len(secs)}절 · {len(html):,}자 · 글 빠짐 없음')
 
 

@@ -247,6 +247,33 @@ WebKit 소스(LocalFrameView::fixedContainerEdges)로 확인한 기제:
     손가락 기기(hover:none·pointer:coarse)에서만, 랜딩은 끈다. theme-color 메타는 다른 브라우저용으로 남긴다.
   · 이 환경에는 사파리가 없다. 실기기(사장 휴대폰)에서만 확인된다. 되돌리거나 띠를 얇게/투명하게 하면 재발한다.
 
+## 스테이징은 새 디자인이다 — 생성기가 만든다, 손으로 고치지 마라 *(2026-09-26 사장 "스테이징에 적용해줘")*
+
+`staging/*.html` 은 이제 손으로 쓰는 파일이 아니다. 시안 생성기(`scripts/build_*_comp.py` + `comp_common.py`)가
+`set_mode('staging')` 으로 돌아 만든다 — 상대 경로(`../data` · `Home.html`), 맨 위 STAGING 띠, `demo-backend` · `analytics`
+머리 스크립트, 페이지마다 실제 모듈(`auth-state` · `auth-guard` · `watchlist` · `paywall` · `submit-form` · `checkout`),
+`?v=` 해시까지 `comp_common.finish()` 와 `stamp_assets` 가 붙인다. 시안(preview/)과 스테이징의 옷은 늘 같다.
+
+    python3 scripts/build_staging.py            # staging/ 을 다시 만든다 (검사 묶음의 "스테이징 생성기"가 같은지 본다)
+    python3 scripts/build_404.py                # 루트 404.html (live 모드 — 절대 주소, 띠 없음)
+
+  · 종목 상세는 `scripts/build_stock_staging.py` — 2,682장을 미리 만들지 않고 JS 로 그린다(페이월 때문). 문단 자르기
+    함수 셋은 실사이트 stock.html 과 글자 하나까지 같다(`same-paragraphs.test.mjs`).
+  · 설정은 페이지(`Settings.html?tab=…`)다. 내용은 `settings-panel.js` 의 `renderSettings` 가 그리고 옷만 새로 입혔다.
+    `billing.html` 은 `Settings.html?tab=subscription` 으로 넘기는 껍데기. 헤더 계정 메뉴는 `staging/auth-state.js`(새 DOM용으로
+    다시 씀 · 실사이트 auth-state 의 guardConsent 도 들어 있다). 로그인·가입·동의·인증의 실제 Firebase 코드는
+    `scripts/auth_staging.py`(문자열 넷) — `build_auth_comp.py` 가 스테이징 모드에서 붙인다.
+  · 요금제는 `build_pricing.py`(옛 인라인 모듈 `scripts/pricing_module.js` 그대로), 결제는 `build_checkout.py`(화면은 `checkout.js`).
+  · 옛 모듈이 쓰는 토큰 이름(`--fg-1` `--bg-1` `--font-sans` …)은 `comp_common.CSS` 에서 새 토큰에 잇는다. 모듈을 새 이름으로
+    고치면 그 다리를 뺀다. 실사이트와 같아야 하는 모듈 다섯(`social-login` `auth-util` `auth-guard` `auth-emails` `consent`)은
+    손대지 않았다(`auth-table.test.mjs`).
+  · 아침 브리핑 워크플로가 `render_brief.py` 뒤에 `build_staging.py` 를 돌려 `staging/brief.html` 도 같이 올린다.
+    옛 `sync_staging_brief.py` 는 지웠다 — 돌리면 옛 디자인이 돌아온다.
+  · 검사는 새 구조에 맞췄다: `layout.test.mjs`(스테이징은 `.mmenu` · 눈썹 `.crumb` 일관성), `same-legal.test.mjs`(법률 본문만
+    jsdom 으로 비교), `reports-filter.test.mjs`(개수의 쉼표), `same-paragraphs.test.mjs`(`wrapup` 정규식). 요구 사항은 그대로다.
+  · 실사이트로 옮기는 날: `comp_common.set_mode('live')` 로 루트에 내면 된다(404.html 이 이미 그 길로 나온다). 그때
+    `patch_header.py` · `patch_biz_footer.py` 의 옛 템플릿 검사는 새 구조 검사(생성기 = 저장소)로 바꾼다.
+
 ## 종목 페이지는 종목마다 미리 만든다 — r/ 로봇용 사본은 갈 것 *(2026-09-25 사장 "대기업처럼 해줘")*
 
 `stock.html` 은 빈 틀이고 글은 JS 가 그린다. 로봇은 JS 를 안 돌려 `r/{ticker}.html`(로봇용 사본 2,681장)을

@@ -47,14 +47,14 @@ CSS = '''
 .count{margin-top:28px;font:400 13px/20px var(--font);color:var(--ink-55)} .count b{font-weight:600;color:var(--ink)}
 /* 목록 — 관심종목·홈 최신 리포트와 같은 줄 + 순위·북마크 */
 .rl{margin-top:8px}
-.rl-head,.row{display:grid;grid-template-columns:36px 200px minmax(0,1fr) 170px 96px 36px;gap:0 20px}
+.rl-head,.rl-row{display:grid;grid-template-columns:36px 200px minmax(0,1fr) 170px 96px 36px;gap:0 20px}
 .rl-head{padding:10px 0;border-bottom:1px solid var(--line);font:500 12px/16px var(--font);color:var(--ink-55)}
 .rl-head span:nth-child(4),.rl-head span:nth-child(5){text-align:right} .rl-head span:last-child{text-align:center}
-.row{align-items:center;padding:16px 0;border-bottom:1px solid var(--hair);color:inherit;text-decoration:none}
+.rl-row{align-items:center;padding:16px 0;border-bottom:1px solid var(--hair);color:inherit;text-decoration:none}
 .rk{font:500 12px/16px var(--font);color:var(--ink-30)}
 .r-name{font:600 16px/22px var(--font)} .r-meta{margin-top:3px;font:400 12px/16px var(--font);color:var(--ink-55)} .r-meta .md{display:none} .r-meta .mval{color:var(--ink-72)}
 .r-title{font:400 16px/24px var(--font)} .r-title.none{color:var(--ink-30)}
-.row:hover .r-title{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px}
+.rl-row:hover .r-title{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px}
 .r-price{text-align:right;font:500 16px/22px var(--font);white-space:nowrap} .r-price .c{margin-left:8px;font:600 13px/18px var(--font)}
 .r-date{text-align:right;font:400 13px/18px var(--font);color:var(--ink-55)}
 .wl{width:36px;height:36px;border:0;background:none;display:inline-flex;align-items:center;justify-content:center;color:var(--ink-30);cursor:pointer;border-radius:8px;padding:0;justify-self:center;transition:color .12s} .wl:hover{color:var(--ink)}
@@ -90,8 +90,8 @@ MOBILE_CSS = '''@media (max-width:820px){
   .tools{margin-top:24px;flex-wrap:wrap;gap:0 24px} .search{flex-basis:100%;height:48px} .search input{font-size:16px}
   .tool{height:44px} .sortwrap{margin-left:auto}
   .rl-head{display:none} .rl{margin-top:4px;border-top:1px solid var(--line)}
-  .row{grid-template-columns:24px minmax(0,1fr) auto;grid-template-areas:"rk name price" "rk title wl";gap:8px 12px;padding:14px 0;align-items:start}
-  .rk{grid-area:rk;line-height:22px} .row>div:nth-of-type(1){grid-area:name} .r-title{grid-area:title;font-size:15px;line-height:22px;color:var(--ink-72)} .r-price{grid-area:price}
+  .rl-row{grid-template-columns:24px minmax(0,1fr) auto;grid-template-areas:"rk name price" "rk title wl";gap:8px 12px;padding:14px 0;align-items:start}
+  .rk{grid-area:rk;line-height:22px} .rl-row>div:nth-of-type(1){grid-area:name} .r-title{grid-area:title;font-size:15px;line-height:22px;color:var(--ink-72)} .r-price{grid-area:price}
   .wl{grid-area:wl;width:24px;height:22px;justify-self:end;align-self:center} .r-date{display:none} .r-meta .md{display:inline} .r-meta .md b{font-weight:400;white-space:nowrap}
   .r-price{font-size:15px;line-height:22px} .r-price .c{display:block;margin:2px 0 0}
   .popover.sheet{left:0!important;right:0;top:auto!important;bottom:0;width:auto;max-height:82vh;border-radius:16px 16px 0 0;border-bottom:0}
@@ -122,7 +122,7 @@ BODY = '''<main class="wrap">
   <div class="empty" id="empty" hidden>
     <h2 id="emptyH">검색 결과가 없습니다</h2>
     <p id="emptyMsg">다른 종목명·티커·업종으로 검색해 보시기 바랍니다.</p>
-    <button type="button" class="btn btn-ink" id="emptyReset" hidden>필터 초기화</button>
+    <div id="emptyActs" hidden><button type="button" class="btn btn-ink" id="emptyReset">필터 초기화</button></div>
   </div>
 </main>
 <div class="pop-backdrop" id="popBackdrop"></div>
@@ -162,12 +162,14 @@ JS = r'''(function(){
     else if(s==='name')l.sort(function(a,b){return a.name.localeCompare(b.name,'ko')});
     else if(s==='per_asc')l.sort(byNum('per',1));else if(s==='pbr_asc')l.sort(byNum('pbr',1));else if(s==='div_desc')l.sort(byNum('div',-1));
     return l}
-  /* 북마크 — 실사이트에서는 KOSWatch(Firestore)가 맡는다. 시안은 화면 안에서만. */
-  var WL={};function isW(tk){return !!WL[tk]}
+  /* 북마크 — 스테이징·실사이트에서는 KOSWatch(Firestore, watchlist.js)가 맡는다. 시안(KOSWatch 없음)은 화면 안에서만. */
+  var WL={};function isW(tk){return window.KOSWatch?KOSWatch.has(tk):!!WL[tk]}
+  function syncWl(){rowsEl.querySelectorAll('.wl').forEach(function(b){var on=isW(b.dataset.wl);b.classList.toggle('on',on);b.title=on?'관심종목에서 빼기':'관심종목 추가';b.setAttribute('aria-label',b.title);b.setAttribute('aria-pressed',on?'true':'false')})}
+  addEventListener('koswatch:change',syncWl);
   /* 관심종목 단추 — 더하기(추가) → 체크(추가됨). 상세 페이지의 '＋ 관심종목 추가' 와 같은 기호 */
   var bmSvg='<svg class="pl" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>';
   function rowHtml(r,i){var c=r.change||0,t=repTitle(r.ticker),d=repDate(r.ticker);
-    return '<a class="row" href="/stock.html?ticker='+r.ticker+'" data-tk="'+r.ticker+'"><span class="rk">'+(i+1)+'</span>'
+    return '<a class="rl-row" href="/stock.html?ticker='+r.ticker+'" data-tk="'+r.ticker+'"><span class="rk">'+(i+1)+'</span>'
       +'<div><div class="r-name">'+esc(r.name)+'</div><div class="r-meta">'+r.ticker+' · '+esc(r.market)+' · '+esc(r.sector)+metricBits(r).map(function(m){return ' · '+m}).join('')+(d?'<span class="md"> · <b>'+esc(d)+'</b></span>':'')+'</div></div>'
       +'<div class="r-title'+(t?'':' none')+'">'+(t?esc(t):'리포트 준비 중')+'</div><div class="r-price">'+won(r.price)+'<span class="c '+dir(c)+'">'+chg(c)+'</span></div><div class="r-date">'+esc(d||'—')+'</div>'
       +'<button type="button" class="wl'+(isW(r.ticker)?' on':'')+'" data-wl="'+r.ticker+'" title="'+(isW(r.ticker)?'관심종목에서 빼기':'관심종목 추가')+'" aria-label="'+(isW(r.ticker)?'관심종목에서 빼기':'관심종목 추가')+'" aria-pressed="'+(isW(r.ticker)?'true':'false')+'">'+bmSvg+'</button></a>'}
@@ -256,7 +258,7 @@ JS = r'''(function(){
     if(!l.length){rlEl.hidden=true;pagerEl.hidden=true;emptyEl.hidden=false;var on=anyFilter();
       /* 조건 때문에 빈 것과 검색어 때문에 빈 것은 다음 할 일이 다르다 */
       document.getElementById('emptyH').textContent=on?'조건에 맞는 종목이 없습니다':'검색 결과가 없습니다';
-      document.getElementById('emptyMsg').textContent=on?'조건을 넓히거나 지워 보시기 바랍니다.':'다른 종목명·티커·업종으로 검색해 보시기 바랍니다.';document.getElementById('emptyReset').hidden=!on;return}
+      document.getElementById('emptyMsg').textContent=on?'조건을 넓히거나 지워 보시기 바랍니다.':'다른 종목명·티커·업종으로 검색해 보시기 바랍니다.';document.getElementById('emptyActs').hidden=!on;return}
     rlEl.hidden=false;emptyEl.hidden=true;
     var total=l.length,size=state.pageSize,pages=Math.max(1,Math.ceil(total/size));if(state.page>pages)state.page=pages;if(state.page<1)state.page=1;var start=(state.page-1)*size;
     rowsEl.innerHTML=l.slice(start,start+size).map(function(r,i){return rowHtml(r,start+i)}).join('');
@@ -266,7 +268,7 @@ JS = r'''(function(){
     for(var i=bs;i<=be;i++)b+='<button type="button" class="'+(i===state.page?'on':'')+'" data-pg="'+i+'"><span>'+i+'</span></button>';b+='<button type="button" '+(state.page>=pages?'disabled':'')+' data-pg="next">›</button>';
     var pc=document.getElementById('pctl');pc.querySelectorAll('button').forEach(function(x){x.remove()});pc.insertAdjacentHTML('afterbegin',b);window.kosInd(pc,'x','.on>span')(true)}
   document.getElementById('searchInput').addEventListener('input',function(e){state.q=e.target.value;state.page=1;render()});
-  rowsEl.addEventListener('click',function(e){var b=e.target.closest('.wl');if(!b)return;e.preventDefault();e.stopPropagation();var tk=b.dataset.wl;if(isW(tk))delete WL[tk];else WL[tk]=1;var on=isW(tk);b.classList.toggle('on',on);b.title=on?'관심종목에서 빼기':'관심종목 추가';b.setAttribute('aria-label',b.title);b.setAttribute('aria-pressed',on?'true':'false')});
+  rowsEl.addEventListener('click',function(e){var b=e.target.closest('.wl');if(!b)return;e.preventDefault();e.stopPropagation();var tk=b.dataset.wl;if(window.KOSWatch){if(KOSWatch.has(tk))KOSWatch.remove(tk);else if(!KOSWatch.add(tk))return;}else if(isW(tk))delete WL[tk];else WL[tk]=1;var on=isW(tk);b.classList.toggle('on',on);b.title=on?'관심종목에서 빼기':'관심종목 추가';b.setAttribute('aria-label',b.title);b.setAttribute('aria-pressed',on?'true':'false')});
   document.getElementById('pctl').addEventListener('click',function(e){var b=e.target.closest('button[data-pg]');if(!b)return;var pg=b.dataset.pg;if(pg==='prev')state.page=Math.max(1,state.page-1);else if(pg==='next')state.page++;else state.page=+pg;render();
     var pad=parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop)||0;window.scrollTo({top:rlEl.getBoundingClientRect().top+window.scrollY-pad,behavior:'smooth'})});
   document.getElementById('emptyReset').addEventListener('click',function(){state.filters={};state.page=1;render()});
@@ -281,7 +283,7 @@ def build(out_path):
     html = (C.head('종목 리포트 — 디자인 시안 | KOSAI') + '\n<style>\n' + C.CSS + '\n' + C.FORM_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('리포트') + '\n' + BODY + '\n' + C.FOOTER + '\n'
             + '<script src="/data/stocks.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + JS + C.JS + '\n</script>\n</body>\n</html>')
-    Path(out_path).write_text(html, encoding='utf-8')
+    C.emit(out_path, html)
     print(f'✅ {out_path} · {len(html):,}자')
 
 

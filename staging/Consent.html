@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="ko" data-staging>
+<head>
+<meta charset="utf-8">
+<script type="module" src="demo-backend.js?v=7f8de79b"></script>
+<script src="analytics.js?v=772effd5"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#f9f8f6">
+<title>약관 동의 | KOSAI</title>
+<link rel="icon" href="../assets/favicon.png?v=k2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/Pretendard-Regular.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/Pretendard-Medium.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/Pretendard-SemiBold.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/Pretendard-Bold.woff2">
+<script>(function(){var t='light';try{t=localStorage.getItem('kos-theme')||'light'}catch(e){}document.documentElement.setAttribute('data-theme',t);})();</script>
+<script id="kosThemeColor">(function(){var m=document.querySelector('meta[name="theme-color"]'),r=document.documentElement;
+  function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0d0d0e':'#f9f8f6')}
+  tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme']})})();</script>
+<script>
+/* 활성 표시선 — 컨테이너마다 선 하나를 두고, 활성 항목(.on)의 자리로 미끄러뜨린다.
+   axis 'x' = 밑줄, 'y' = 왼쪽 세로선. sel 로 활성 항목 선택자를 바꿀 수 있다(기본 .on).
+   첫 자리는 그냥 놓고, 그 뒤부터 element.animate() 로 이전 자리에서 새 자리로 움직인다.
+   CSS transition 을 안 쓰는 이유: 휴대폰 목차 띠가 헤더 안으로 옮겨 붙는 프레임에 항목이 같이 바뀌면
+   방금 옮겨진 요소라 transition 이 시작되지 않는다. animate() 는 DOM 이동과 무관하게 움직인다.
+   window.kosIndMs 로 길이를 바꿀 수 있다(시험용). 움직임 줄이기 설정이면 바로 놓는다. */
+window.kosInd=function(box,axis,sel){
+  if(!box)return function(){};
+  if(box.__ind)return box.__ind;
+  var ind=document.createElement('span');ind.className='ind '+(axis==='y'?'ind-v':'ind-h');ind.setAttribute('aria-hidden','true');box.appendChild(ind);
+  var last=null,placed=false,anim=null,rm=window.matchMedia?matchMedia('(prefers-reduced-motion:reduce)'):null;
+  function move(force){
+    var a=box.querySelector(sel||'.on');
+    if(!a){ind.style.opacity='0';last=null;return}
+    if(a===last&&!force)return;
+    var b=box.getBoundingClientRect(),r=a.getBoundingClientRect();
+    if(!r.width&&!r.height)return;
+    last=a;
+    var x=r.left-b.left-box.clientLeft+box.scrollLeft,y=r.top-b.top-box.clientTop+box.scrollTop;
+    var to={transform:'translate('+x+'px,'+(axis==='y'?y:y+r.height-2)+'px)'};
+    if(axis==='y')to.height=r.height+'px';else to.width=r.width+'px';
+    var from=null;
+    if(placed&&ind.animate&&!(rm&&rm.matches)){var cs=getComputedStyle(ind);from={transform:cs.transform};if(axis==='y')from.height=cs.height;else from.width=cs.width;if(anim){anim.cancel();anim=null}}
+    ind.style.opacity='';ind.style.transform=to.transform;if(axis==='y')ind.style.height=to.height;else ind.style.width=to.width;
+    if(from){anim=ind.animate([from,to],{duration:window.kosIndMs||300,easing:'cubic-bezier(.2,.8,.2,1)'});anim.onfinish=function(){anim=null}}
+    placed=true;
+  }
+  addEventListener('resize',function(){move(true)});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){move(true)});
+  box.__ind=move;move();return move;
+};
+</script>
+<style>
+@font-face{font-family:"Pretendard";font-weight:400;font-display:swap;src:url("../fonts/Pretendard-Regular.woff2") format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:500;font-display:swap;src:url("../fonts/Pretendard-Medium.woff2") format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:600;font-display:swap;src:url("../fonts/Pretendard-SemiBold.woff2") format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:700;font-display:swap;src:url("../fonts/Pretendard-Bold.woff2") format("woff2")}
+:root{
+  --bg:#f9f8f6; --surface:#ffffff; --surface-2:#f1efeb;
+  --ink:#141414; --ink-72:rgba(20,20,20,.72); --ink-55:rgba(20,20,20,.55); --ink-30:rgba(20,20,20,.30);
+  --hair:rgba(20,20,20,.08); --line:rgba(20,20,20,.14);
+  --up:#c8102e; --down:#1e5fbf; --up-bg:rgba(200,16,46,.08); --down-bg:rgba(30,95,191,.08);
+  --font:"Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --wrap:1120px; --pad:32px; --nav-bar:rgba(249,248,246,.72);
+  color-scheme:light;
+}
+:root[data-theme="dark"]{
+  --bg:#0d0d0e; --surface:#161617; --surface-2:#1e1e20;
+  --ink:#ececea; --ink-72:rgba(236,236,234,.72); --ink-55:rgba(236,236,234,.55); --ink-30:rgba(236,236,234,.30);
+  --hair:rgba(255,255,255,.08); --line:rgba(255,255,255,.14);
+  --up:#f0655f; --down:#6f9cf5; --up-bg:rgba(240,101,95,.12); --down-bg:rgba(111,156,245,.12);
+  --nav-bar:rgba(13,13,14,.72);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(84px + var(--kos-bar-h,0px));overflow-x:clip}
+/* 옛 모듈(auth-state · settings-panel · auth-guard · consent · checkout)이 쓰는 토큰 이름 — 새 토큰에 잇는다. 모듈을 새 이름으로 고칠 때까지의 다리 */
+:root{--font-sans:var(--font);--fg-1:var(--ink);--fg-2:var(--ink-72);--fg-3:var(--ink-55);--bg-1:var(--surface);--border-2:var(--line);--shadow-2:0 8px 24px rgba(20,20,20,.08);--brand-blue:var(--ink);--brand-cyan:var(--ink-72);--radius-sm:8px;--radius-md:12px;--radius-lg:16px}
+[hidden]{display:none!important} /* hidden 속성이 .pager{display:flex} 같은 클래스 규칙에 밀리지 않게 */
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums lining-nums;word-break:keep-all;overflow-wrap:anywhere}
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(20,20,20,.14)} :root[data-theme="dark"] ::selection{background:rgba(255,255,255,.22)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--ink-55)}
+/* 헤더 — 사이트 규칙 그대로(60px · 맨 위 투명 · 내리면 띠) */
+.nav{position:sticky;top:var(--kos-bar-h,0px);z-index:50;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0;transition:background-color .2s,box-shadow .2s}
+.nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--hair);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+.nav-in{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;position:relative}
+.brand img{height:14px;display:block} .brand .dk{display:none} :root[data-theme="dark"] .brand .lt{display:none} :root[data-theme="dark"] .brand .dk{display:block}
+.links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:28px}
+.links a{font:500 14px/1 var(--font);color:var(--ink-72);transition:color .12s} .links a:hover,.links a.on{color:var(--ink)} .links a.on{font-weight:600}
+.right{display:flex;align-items:center;gap:6px} .login{font:600 13px/1 var(--font);color:var(--ink-72);padding:8px 10px} .login:hover{color:var(--ink)}
+.ib{width:38px;height:38px;border:0;background:transparent;color:var(--ink-72);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;border-radius:10px} .ib:hover{color:var(--ink)} .ib svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.menu{display:none}
+@media (max-width:820px){.links,.login,.acct{display:none} .menu{display:inline-flex}}
+/* 휴대폰 메뉴 — ☰ 를 누르면 헤더 아래를 페이지색 한 장이 다 덮는다. 큰 글자 다섯 · 계정 · 맨 아래 작은 링크.
+   (9/26 사장: 헤더에서 내려오던 목록이 안 예쁘다 — 그건 기능만 있던 자리였다.) nav 바깥에 둔다: .nav.scrolled 의
+   backdrop-filter 가 fixed 의 기준이 되어 안에 두면 내린 뒤 여는 순간 높이가 0 이 된다. */
+.menu .x{display:none} .nav.menu-open .menu .ham{display:none} .nav.menu-open .menu .x{display:block}
+.mmenu{display:none;position:fixed;top:calc(60px + var(--kos-bar-h,0px));left:0;right:0;bottom:0;z-index:49;background:var(--bg);flex-direction:column;box-sizing:border-box;padding:22px var(--pad) max(28px,env(safe-area-inset-bottom));overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+@media (max-width:820px){.mmenu.open{display:flex;animation:mmIn .18s ease-out}} @keyframes mmIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}} @media (prefers-reduced-motion:reduce){.mmenu.open{animation:none}}
+.mm-links{display:flex;flex-direction:column} .mm-links a{display:block;padding:10px 0;font:600 28px/36px var(--font);letter-spacing:-.02em;color:var(--ink-72);text-decoration:none} .mm-links a.on{color:var(--ink);font-weight:700}
+.mmenu .sep{height:1px;background:var(--hair);margin:20px 0 22px}
+.mm-auth{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px} .mm-auth a,.mm-auth button{border:0;background:none;padding:0;font:600 16px/24px var(--font);color:var(--ink);text-decoration:none;cursor:pointer}
+.mm-foot{margin-top:auto;padding-top:32px;display:flex;flex-wrap:wrap;gap:6px 18px} .mm-foot a{font:400 13px/20px var(--font);color:var(--ink-55);text-decoration:none}
+/* 계정(로그인 상태) — 이메일 첫 글자 동그라미와 작은 메뉴. 시안은 ?user=이메일 로 켠다 */
+.acct{position:relative;display:none;align-items:center} .acct.show{display:inline-flex} .right.user .login{display:none}
+.avatar{width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--bg);font:600 13px/1 var(--font);display:inline-flex;align-items:center;justify-content:center;border:0;cursor:pointer;padding:0;margin:0 4px}
+.acct-menu{display:none;position:absolute;right:0;top:calc(100% + 10px);min-width:220px;background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:6px 0;box-shadow:0 8px 24px rgba(20,20,20,.08);z-index:60}
+.acct.open .acct-menu{display:block} .acct-menu .em{padding:8px 16px 10px;font:400 12px/16px var(--font);color:var(--ink-55);border-bottom:1px solid var(--hair);margin-bottom:4px;word-break:break-all}
+.acct-menu a,.acct-menu button{display:block;width:100%;box-sizing:border-box;text-align:left;border:0;background:none;padding:9px 16px;font:500 14px/20px var(--font);color:var(--ink-72);cursor:pointer;text-decoration:none} .acct-menu a:hover,.acct-menu button:hover{background:var(--surface-2);color:var(--ink)}
+/* 단추 */
+/* 활성 표시선(kosInd) — 목차 세로선·밑줄 탭·쪽 번호가 쓴다. 움직임은 IND_JS 의 animate() */
+.ind{position:absolute;left:0;top:0;background:var(--ink);pointer-events:none;will-change:transform} .ind-v{width:2px} .ind-h{height:2px}
+.btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 18px;border-radius:999px;border:0;font:600 14px/1 var(--font);cursor:pointer;transition:background-color .12s,color .12s} .btn.ico{padding-left:14px}
+.btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+.btn-ink,.btn-primary{background:var(--ink);color:var(--bg)} .btn-ink:hover,.btn-primary:hover{opacity:.9}
+.btn-soft{background:var(--surface-2);color:var(--ink)} .btn-soft:hover{background:var(--line)}
+/* 절 제목 · 더보기 링크 */
+.sec-h{display:flex;align-items:baseline;gap:14px;margin:0 0 22px}
+.sec-h .num{font:600 13px/20px var(--font);color:var(--ink-30)}
+.sec-h h2{margin:0;font:700 24px/32px var(--font);letter-spacing:-.02em}
+.sec-h .more{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font:500 14px/20px var(--font);color:var(--ink-72);white-space:nowrap} .sec-h .more:hover{color:var(--ink)}
+.sec-h .more svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+/* 표 — 틀 없이 줄로만 */
+.tbl-wrap{overflow-x:auto}
+.tbl{width:100%;border-collapse:collapse}
+.tbl caption{text-align:left;padding:0 0 10px} .tbl .cap{display:flex;justify-content:space-between;align-items:baseline;font:500 13px/20px var(--font);color:var(--ink-72)} .tbl .cap .u{font-weight:400;color:var(--ink-55)}
+.tbl th,.tbl td{padding:11px 12px;font:400 14px/20px var(--font);text-align:right;white-space:nowrap;border-top:1px solid var(--hair)}
+.tbl thead th{font:500 12px/16px var(--font);color:var(--ink-55);border-top:0;border-bottom:1px solid var(--line);padding-top:0}
+.tbl th:first-child,.tbl td:first-child{text-align:left;padding-left:0;font-weight:500} .tbl th:last-child,.tbl td:last-child{padding-right:0}
+.tbl tbody th{font-weight:500}
+/* 푸터 */
+.foot{margin-top:96px;border-top:1px solid var(--hair);padding:56px 0 48px}
+.foot .brand img{height:13px} .ftag{margin:14px 0 0;font:400 14px/22px var(--font);color:var(--ink-72);max-width:260px}
+.fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;max-width:560px;margin-top:32px}
+.fcol{display:flex;flex-direction:column;gap:9px} .fcol h4{margin:0 0 4px;font:600 12px/16px var(--font);color:var(--ink-55)} .fcol a{font:400 14px/20px var(--font);color:var(--ink-72)} .fcol a:hover{color:var(--ink)}
+.biz{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:4px 16px;font:400 12px/18px var(--font);color:var(--ink-55)} .copy{margin-top:32px;font:400 12px/18px var(--font);color:var(--ink-55)}
+/* 휴대폰 사파리 상태바·주소창 뒤 색 — 페이지색 띠 (CLAUDE.md 2026-09-24) */
+#kosEdgeTop,#kosEdgeBot{display:none}
+@media (hover:none) and (pointer:coarse){#kosEdgeTop,#kosEdgeBot{display:block;position:fixed;left:0;right:0;height:12px;z-index:60;pointer-events:none;opacity:.2;background:var(--bg)} #kosEdgeTop{top:0} #kosEdgeBot{bottom:0}}
+.fld{display:block;margin:0 0 26px} .fld>label,.fld .lbl{display:block;font:500 12px/16px var(--font);color:var(--ink-55);margin-bottom:4px} .fld .opt{font-weight:400;color:var(--ink-30)}
+.fld input:not([type=checkbox]):not([type=radio]),.fld textarea{display:block;width:100%;box-sizing:border-box;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;font:400 16px/24px var(--font);color:var(--ink);padding:8px 0;outline:0;transition:border-color .15s;-webkit-appearance:none;appearance:none}
+.fld input:focus,.fld textarea:focus{border-bottom-color:var(--ink)} .fld input::placeholder,.fld textarea::placeholder{color:var(--ink-30)} .fld textarea{min-height:120px;resize:vertical}
+.fld.err input,.fld.err textarea{border-bottom-color:var(--up)} .fld .msg{display:none;margin-top:6px;font:400 12px/16px var(--font);color:var(--up)} .fld.err .msg{display:block}
+.seg{position:relative;display:flex;gap:22px;border-bottom:1px solid var(--hair);overflow-x:auto;scrollbar-width:none} .seg::-webkit-scrollbar{display:none}
+.seg button{flex:none;border:0;background:none;padding:0;font:500 13px/40px var(--font);color:var(--ink-55);cursor:pointer;transition:color .12s;white-space:nowrap} .seg button:hover{color:var(--ink)} .seg button.on{color:var(--ink);font-weight:600}
+.check{display:flex;align-items:center;gap:12px;padding:9px 0;font:400 14px/20px var(--font);color:var(--ink);cursor:pointer;border-bottom:1px solid var(--hair);user-select:none} .check:last-child{border-bottom:0}
+.check .box{width:18px;height:18px;border:1px solid var(--line);border-radius:5px;display:inline-flex;align-items:center;justify-content:center;flex:none;color:var(--bg);transition:background-color .12s,border-color .12s}
+.check .box svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;opacity:0} .check.on .box{background:var(--ink);border-color:var(--ink)} .check.on .box svg{opacity:1}
+.check .count{margin-left:auto;font:400 12px/16px var(--font);color:var(--ink-55)}
+.submit{display:flex;align-items:center;gap:20px;margin-top:8px;flex-wrap:wrap} .form-note{margin:0;font:400 13px/20px var(--font);color:var(--ink-55)}
+.btn:disabled{opacity:.35;cursor:default}
+/* 경고 글 — 상자·선 없이 붉은 글 한 줄, 단추 바로 위. 칸 하나에 매인 오류는 .fld .msg 로 그 칸 밑에 (2026-09-26 사장: "빨간 줄이 왜 있어?") */
+.alert{display:none;margin:0 0 18px;font:400 13px/20px var(--font);color:var(--up)} .alert.show{display:block}
+.tbtn{border:0;background:none;padding:0;font:500 13px/1 var(--font);color:var(--ink-72);cursor:pointer;transition:color .12s} .tbtn:hover{color:var(--ink)} .tbtn.danger{color:var(--up)}
+.sent{padding:8px 0 24px;max-width:520px} .sent h2{margin:0;font:700 22px/30px var(--font);letter-spacing:-.02em} .sent p{margin:12px 0 24px;font:400 15px/24px var(--font);color:var(--ink-72)}
+.auth{max-width:400px;padding:44px 0 72px} .auth .crumb{font:500 13px/20px var(--font);color:var(--ink-55)} .auth h1{margin:12px 0 0;font:700 32px/40px var(--font);letter-spacing:-.02em} .auth .sub{margin:12px 0 0;font:400 15px/24px var(--font);color:var(--ink-72)}
+.social{display:flex;flex-direction:column;gap:10px;margin-top:32px}
+.sbtn{display:flex;align-items:center;justify-content:center;gap:10px;height:44px;border:1px solid var(--line);border-radius:999px;background:transparent;font:600 14px/1 var(--font);color:var(--ink);cursor:pointer;transition:border-color .12s} .sbtn:hover{border-color:var(--ink)} .sbtn svg{width:18px;height:18px;flex:none}
+.sbtn.kakao{background:#FEE500;border-color:#FEE500;color:#191600} .sbtn.naver{background:#03C75A;border-color:#03C75A;color:#fff}
+.divider{display:flex;align-items:center;gap:12px;margin:26px 0 22px;font:400 12px/16px var(--font);color:var(--ink-55)} .divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--hair)}
+.auth .btn{width:100%;justify-content:center;height:44px;font-size:14px}
+.auth .row-r{display:flex;justify-content:flex-end;margin:-14px 0 22px} .auth .row-r a{font:400 13px/20px var(--font);color:var(--ink-55);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .auth .row-r a:hover{color:var(--ink)}
+.auth-foot{margin:24px 0 0;font:400 13px/20px var(--font);color:var(--ink-55);text-align:center} .auth-foot a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
+.auth-note{margin:28px 0 0;padding-top:16px;border-top:1px solid var(--hair);font:400 12px/18px var(--font);color:var(--ink-55)}
+.spin{width:22px;height:22px;border:2px solid var(--line);border-top-color:var(--ink);border-radius:50%;animation:kspin .8s linear infinite;margin:12px 0} @keyframes kspin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.spin{animation:none}}
+@media (max-width:820px){.auth{padding-top:20px} .auth h1{font-size:28px;line-height:36px}}
+
+/* 로그인·회원가입·약관 동의·계정 인증은 400px 단을 가운데에 — 제목도 가운데, 입력 칸 이름표는 왼쪽(읽는 방향) */
+.auth:not(.wide){margin-left:auto;margin-right:auto} .auth:not(.wide) .crumb,.auth:not(.wide) h1,.auth:not(.wide) .sub{text-align:center}
+.ac-body{text-align:center}
+.alert.info{color:var(--ink-72)}
+.consent+.alert{margin:14px 0 0}
+.ac-body form{text-align:left}
+/* 약관 동의 */
+.consent{margin-top:28px;border-top:1px solid var(--line)} .consent .check{padding:13px 0} .consent .check.all{font-weight:600;border-bottom:1px solid var(--line)}
+.consent .doc{margin-left:auto;font:400 12px/16px var(--font);color:var(--ink-55);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .consent .doc:hover{color:var(--ink)}
+.acts{display:flex;flex-direction:column;align-items:center;gap:16px;margin-top:28px} .acts .btn{width:100%}
+/* 계정 인증 */
+.ac-body{margin-top:28px} .ac-body .btn{margin-top:8px}
+/* 설정 */
+.auth.wide{max-width:560px}
+.tabs-s{margin-top:28px} .pane{padding:8px 0 0} .pane[hidden]{display:none}
+.srow{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 0;border-bottom:1px solid var(--hair)} .srow .k{font:500 15px/22px var(--font)} .srow .k small{display:block;margin-top:4px;font:400 13px/20px var(--font);color:var(--ink-55);max-width:360px}
+.opts{position:relative;display:flex;gap:18px;flex:none} .opts button{border:0;background:none;padding:0;font:500 13px/32px var(--font);color:var(--ink-55);cursor:pointer;transition:color .12s} .opts button.on{color:var(--ink);font-weight:600} .opts>.ind{margin-top:-4px}
+.sw{position:relative;width:40px;height:22px;border-radius:999px;border:1px solid var(--line);background:transparent;cursor:pointer;padding:0;flex:none;transition:background-color .15s,border-color .15s} .sw::after{content:"";position:absolute;top:3px;left:3px;width:14px;height:14px;border-radius:50%;background:var(--ink-55);transition:transform .15s,background-color .15s}
+.sw[aria-checked="true"]{background:var(--ink);border-color:var(--ink)} .sw[aria-checked="true"]::after{background:var(--bg);transform:translateX(18px)}
+.smsg{margin:10px 0 0;font:400 12px/16px var(--font);color:var(--ink-55);min-height:16px}
+.kv{margin:0;display:grid;grid-template-columns:96px 1fr;gap:12px 16px;padding:18px 0;border-bottom:1px solid var(--hair);font:400 15px/22px var(--font)} .kv dt{color:var(--ink-55)} .kv dd{margin:0;word-break:break-all}
+.sbtns{display:flex;gap:24px;padding:22px 0 0} .sbtns .tbtn{font-size:14px}
+.need{margin-top:32px;padding-top:24px;border-top:1px solid var(--line)} .need p{margin:0 0 20px;font:400 15px/24px var(--font);color:var(--ink-72)}
+/* 탈퇴 창 — 떠 있는 면 */
+.ov{display:none;position:fixed;inset:0;z-index:80;background:rgba(20,20,20,.32);align-items:center;justify-content:center;padding:24px} .ov.open{display:flex}
+.dlg{width:100%;max-width:480px;max-height:90vh;overflow:auto;background:var(--surface);border:1px solid var(--hair);border-radius:16px;box-shadow:0 24px 60px rgba(20,20,20,.18);padding:28px 28px 24px;box-sizing:border-box}
+.dlg h2{margin:0;font:700 22px/30px var(--font);letter-spacing:-.02em} .dlg .em{margin:6px 0 0;font:400 13px/20px var(--font);color:var(--ink-55);word-break:break-all} .dlg .warn{margin:16px 0 0;font:400 14px/22px var(--font);color:var(--up)}
+.dlg .q{margin:26px 0 4px;font:500 13px/20px var(--font);color:var(--ink-72)} .dlg .check{padding:10px 0;font-size:14px}
+.dlg textarea{display:block;width:100%;box-sizing:border-box;border:0;border-bottom:1px solid var(--line);background:transparent;font:400 15px/24px var(--font);color:var(--ink);padding:8px 0;outline:0;resize:vertical;min-height:56px;margin-top:8px} .dlg textarea:focus{border-bottom-color:var(--ink)}
+.dlg .ack{margin-top:22px;border-bottom:0;font-size:13px;align-items:flex-start} .dlg .ack .box{margin-top:1px}
+.dlg input.type{display:block;width:100%;box-sizing:border-box;border:0;border-bottom:1px solid var(--line);background:transparent;font:500 15px/24px var(--font);color:var(--ink);padding:8px 0;outline:0;margin-top:10px} .dlg input.type:focus{border-bottom-color:var(--ink)}
+.dlg .dacts{display:flex;justify-content:flex-end;align-items:center;gap:20px;margin-top:26px} .dlg .btn.danger{background:var(--up);color:#fff}
+.done{text-align:center;padding:8px 0} .done h2{font-size:22px} .done p{margin:10px 0 24px;font:400 15px/24px var(--font);color:var(--ink-72)}
+@media (max-width:820px){.kv{grid-template-columns:80px 1fr} .srow{align-items:flex-start;flex-direction:column;gap:10px}}
+
+@media (max-width:820px){
+  :root{--pad:20px}
+  .nav{display:block;height:60px;padding:0} .nav-in{height:60px;padding:0 var(--pad)}
+  .nav,.nav.scrolled{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}
+  .sec-h h2{font-size:22px;line-height:28px}
+  .tbl th,.tbl td{padding:10px 10px;font-size:13px} .tbl th:first-child,.tbl td:first-child{position:sticky;left:0;background:var(--bg)}
+}
+</style>
+</head>
+<body>
+<div class="kos-staging-bar">
+  <b>STAGING</b><span>미리보기입니다. 결제는 모의 결제이며 실제로 돈이 오가지 않습니다.</span>
+  <a href="#" id="kosDemoReset">구독 초기화</a>
+  <a href="../">실제 사이트로</a>
+</div>
+<style>.kos-staging-bar{position:sticky;top:0;z-index:60;display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:9px 16px;background:#b4341f;color:#fff;font:600 12.5px var(--font),system-ui,sans-serif}
+.kos-staging-bar b{font-weight:800;letter-spacing:.05em} .kos-staging-bar span{margin-right:auto} .kos-staging-bar a{color:#fff;text-decoration:underline;text-underline-offset:2px}</style>
+<script>(function(){var bar=document.querySelector('.kos-staging-bar');if(!bar)return;
+  function measure(){document.documentElement.style.setProperty('--kos-bar-h',bar.offsetHeight+'px')}
+  measure();addEventListener('resize',measure);addEventListener('load',measure);if(window.ResizeObserver)new ResizeObserver(measure).observe(bar);})();
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('#kosDemoReset');if(!a)return;e.preventDefault();
+  try{if(window.KOSDemo&&KOSDemo.reset)KOSDemo.reset();else['kos-demo-sub','kos-demo-reads','kos-demo-pays','kos-demo-reasons'].forEach(function(k){localStorage.removeItem(k)})}catch(x){}location.reload()});</script>
+<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>
+<nav class="nav" id="nav"><div class="nav-in">
+  <a class="brand" href="./"><img class="lt" src="../assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="../assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <div class="links"><a href="Home.html">홈</a><a href="Reports.html">리포트</a><a href="industry.html">업종 분석</a><a href="Watchlist.html">관심종목</a><a href="pricing.html">멤버십</a><a href="brief.html">모닝브리핑</a></div>
+  <div class="right" id="navRight"><a class="login" href="Login.html">로그인</a><div class="acct" id="acct"></div>
+    <button class="ib" id="themeBtn" aria-label="테마 전환"><svg viewBox="0 0 24 24" id="themeIcon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    <button class="ib menu" id="menuBtn" aria-label="메뉴" aria-expanded="false" aria-controls="mmenu"><svg class="ham" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+</div>
+</nav>
+<div class="mmenu" id="mmenu"><div class="mm-links"><a href="Home.html">홈</a><a href="Reports.html">리포트</a><a href="industry.html">업종 분석</a><a href="Watchlist.html">관심종목</a><a href="pricing.html">멤버십</a><a href="brief.html">모닝브리핑</a></div><div class="sep"></div><div class="mm-auth" id="mauth"><a href="Login.html">로그인</a><a href="Signup.html">회원가입</a></div>
+<div class="mm-foot"><a href="About.html">About</a><a href="Contact.html">문의하기</a><a href="Feedback.html">피드백</a><a href="Terms.html">이용약관</a><a href="Privacy.html">개인정보처리방침</a></div></div>
+<main class="wrap"><div class="auth">
+  <p class="crumb">계정</p><h1 id="ttl">약관 동의</h1>
+  <p class="sub" id="lede">가입을 완료하시려면 아래 항목에 동의하여 주시기 바랍니다.</p>
+  <div class="consent" id="consentMount">
+    <label class="check all" data-k="all"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>전체 동의</label>
+    <label class="check" data-k="age14" data-req="1"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>[필수] 만 14세 이상입니다</label>
+    <label class="check" data-k="terms" data-req="1"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>[필수] 이용약관 동의<a class="doc" href="Terms.html" target="_blank" rel="noopener">보기</a></label>
+    <label class="check" data-k="privacy" data-req="1"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>[필수] 개인정보 수집·이용 동의<a class="doc" href="Privacy.html" target="_blank" rel="noopener">보기</a></label>
+    <label class="check" data-k="marketing"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>[선택] 마케팅 정보 수신 동의</label>
+  </div>
+  <div class="alert" id="authErr" role="alert"></div>
+  <div class="acts"><button type="button" class="btn btn-ink" id="agreeBtn">동의하고 시작하기</button><button type="button" class="tbtn" id="cancelBtn">동의하지 않고 취소</button></div>
+  <p class="auth-note" id="foot">동의하지 않으면 가입이 취소되고 계정은 남지 않습니다.</p>
+</div></main>
+<footer class="foot"><div class="wrap">
+  <a class="brand" href="./"><img class="lt" src="../assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="../assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <p class="ftag">한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p>
+  <div class="fgrid">
+    <div class="fcol"><h4>서비스</h4><a href="Home.html">홈</a><a href="Reports.html">리포트</a><a href="industry.html">업종 분석</a><a href="Watchlist.html">관심종목</a><a href="pricing.html">멤버십</a><a href="brief.html">모닝브리핑</a></div>
+    <div class="fcol"><h4>회사</h4><a href="About.html">About</a><a href="Contact.html">문의하기</a><a href="Feedback.html">피드백</a></div>
+    <div class="fcol"><h4>정책</h4><a href="Terms.html">이용약관</a><a href="Privacy.html">개인정보처리방침</a></div>
+  </div>
+  <div class="biz"><span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span><span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span></div>
+  <div class="copy">© 2026 KOSAI — All rights reserved.</div>
+</div></footer>
+<script>
+(function(){
+  var nav=document.getElementById('nav'),tick=false;
+  function upd(){tick=false;nav.classList.toggle('scrolled',window.scrollY>32);if(window.kosOnScroll)window.kosOnScroll()}
+  addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+  var sun='<path d="M12 4V2M12 22v-2M4.9 4.9 3.5 3.5M20.5 20.5l-1.4-1.4M4 12H2M22 12h-2M4.9 19.1l-1.4 1.4M20.5 3.5l-1.4 1.4"/><circle cx="12" cy="12" r="4"/>',moon='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
+  var root=document.documentElement,icon=document.getElementById('themeIcon');function paint(){icon.innerHTML=root.getAttribute('data-theme')==='dark'?sun:moon}paint();window.__kosPaintTheme=paint;
+  document.getElementById('themeBtn').addEventListener('click',function(){var t=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',t);try{localStorage.setItem('kos-theme',t)}catch(e){}paint();});
+  /* 휴대폰 메뉴 */
+  var mb=document.getElementById('menuBtn'),mm=document.getElementById('mmenu');
+  function setMenu(on){nav.classList.toggle('menu-open',on);mm.classList.toggle('open',on);mb.setAttribute('aria-expanded',on?'true':'false');document.documentElement.style.overflow=on?'hidden':''}  /* html 에 건다 — body 에 걸면 sticky 헤더가 사라진다(html 이 overflow-x:hidden 이라 body 가 스크롤 상자가 됨) */
+  mb.addEventListener('click',function(){setMenu(!nav.classList.contains('menu-open'))});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('menu-open'))setMenu(false)});
+  window.matchMedia('(min-width:821px)').addEventListener('change',function(e){if(e.matches)setMenu(false)});
+})();
+</script>
+<script type="module">
+/* 가입 마지막 단계 — 약관 동의. 로그인된 사용자를 전제로 한다. 계정은 이미 만들어져 있고 여기서
+   동의를 받아야 가입이 성립한다. 동의하지 않으면 계정을 지운다 — 동의 기록 없는 계정을 남기지 않는다. */
+import { auth } from "./firebase-config.js?v=7b8f27a5";
+import { onAuthStateChanged, deleteUser, signOut }
+  from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { saveConsent, consentStage, deleteMyAccount } from "./consent.js?v=206cdd28";
+import { sendVerifyEmail } from "./auth-emails.js?v=bce0955f";
+import { safeNext } from "./auth-util.js?v=0ad15dc5";
+
+const $ = s => document.querySelector(s);
+const errBox = $('#authErr');
+function showErr(msg, info){ errBox.textContent = msg; errBox.classList.toggle('info', !!info); errBox.classList.add('show'); }
+function hideErr(){ errBox.classList.remove('show', 'info'); errBox.textContent = ''; }
+function link(text, href){
+  const a = document.createElement('a');
+  a.href = href || '#'; a.textContent = text;
+  a.style.cssText = 'color:inherit;font-weight:600;text-decoration:underline;text-underline-offset:3px';
+  return a;
+}
+
+/* 돌아갈 곳. ?next= 는 사용자가 고칠 수 있는 값이라 auth-util 의 자물쇠를 거친다 — 우리 사이트 안의
+   .html 하나만, 아니면 Home.html. */
+const NEXT = safeNext();
+
+/* 동의 줄은 마크업에 있다(consent.js 의 renderConsent 를 붙이지 않는다). class on = 체크. */
+const allRow = $('#consentMount .check[data-k="all"]');
+let items = [...document.querySelectorAll('#consentMount .check')].filter(r => r !== allRow);
+function isOn(r){ return r.classList.contains('on'); }
+function syncAll(){ allRow.classList.toggle('on', items.every(isOn)); }
+allRow.addEventListener('click', () => { const on = !isOn(allRow); items.forEach(r => r.classList.toggle('on', on)); syncAll(); hideErr(); });
+items.forEach(r => r.addEventListener('click', e => {
+  if(e.target.closest('a')) return;      /* 약관을 보려던 것뿐이다 — 체크를 건드리지 않는다 */
+  r.classList.toggle('on'); syncAll(); hideErr();
+}));
+function values(){ const v = {}; items.forEach(r => { v[r.dataset.k] = isOn(r); }); return v; }
+function validate(){
+  const bad = items.filter(r => r.dataset.req && !isOn(r));
+  if(!bad.length) return true;
+  showErr('필수 항목에 모두 동의하셔야 가입하실 수 있습니다.');
+  try{ bad[0].scrollIntoView({ block: 'center', behavior: 'smooth' }); }catch(_){}
+  return false;
+}
+
+/* 이 사람이 여기 온 이유. 'none' 이면 가입을 마치지 못한 계정, 'stale' 이면 약관이 개정돼 다시 받는
+   것이다. stageKnown 은 그 판단이 실제 기록을 보고 내려졌는가 — 취소 단추가 계정을 지울지 이걸로 가른다. */
+let painted = false, stage = 'none', stageKnown = false;
+
+/* 우리가 일부러 로그아웃하거나 계정을 지우는 동안 아래 리스너가 로그인 페이지로 보내 버리지 못하게 막는 빗장. */
+let finishing = false;
+
+const RECONSENT = {
+  ttl:  '개정된 약관 동의',
+  lede: '이용약관이 개정되었습니다. 계속 이용하시려면 동의하여 주시기 바랍니다.',
+  btn:  '동의하고 계속하기',
+  no:   '나중에 하기',
+  foot: '동의하지 않으면 로그아웃됩니다. 계정과 자료는 그대로 남습니다.'
+};
+function paintReconsent(){
+  $('#ttl').textContent = RECONSENT.ttl;
+  $('#lede').textContent = RECONSENT.lede;
+  $('#agreeBtn').textContent = RECONSENT.btn;
+  $('#cancelBtn').textContent = RECONSENT.no;
+  $('#foot').textContent = RECONSENT.foot;
+  /* 재동의는 필수 항목만 묻는다. 마케팅은 설정 화면이 관리한다 — 서버도 재동의 때는 건드리지 않는다. */
+  items.filter(r => !r.dataset.req).forEach(r => { r.classList.remove('on'); r.style.display = 'none'; });
+  items = items.filter(r => r.dataset.req);
+  syncAll();
+}
+
+onAuthStateChanged(auth, async user => {
+  if(finishing) return;
+  if(!user){
+    /* 로그인 없이 이 주소로 들어온 경우 — 가입 흐름 밖이므로 로그인으로 보낸다. */
+    location.replace('Login.html?next=' + encodeURIComponent(NEXT));
+    return;
+  }
+  /* 이미 동의한 계정이 뒤로가기 등으로 다시 들어오면 그냥 통과. 조회에 실패하면(null) 막지 않고
+     가입 화면으로 띄운다 — 통신이 잠깐 끊겼다고 가입을 세우지 않는다. */
+  const st = await consentStage(user.uid);
+  if(st === 'ok'){ location.replace(NEXT); return; }
+  if(painted) return;                    /* 인증 상태가 두 번 울려도 한 번만 */
+  painted = true;
+  stage = st === 'stale' ? 'stale' : 'none';
+  stageKnown = (st === 'stale' || st === 'none');
+  if(stage === 'stale') paintReconsent();
+});
+
+function providerOf(user){
+  const head = String(user.uid).split(':')[0];
+  if(head === 'kakao' || head === 'naver') return head;
+  return ((user.providerData || [])[0] || {}).providerId === 'google.com' ? 'google' : 'email';
+}
+
+$('#agreeBtn').addEventListener('click', async () => {
+  const user = auth.currentUser;
+  if(!user){ showErr('로그인이 필요합니다.'); return; }
+  if(!painted || !validate()) return;
+  const btn = $('#agreeBtn');
+  btn.disabled = true;
+  try{
+    const provider = providerOf(user);
+    const r = await saveConsent(user.uid, values(), provider, user.email || '');
+
+    /* 개정 때문에 다시 받은 것이면 여기서 끝 — 가입이 아니므로 집계도 인증 메일도 로그아웃도 없다.
+       판단은 서버 대답을 따르고, 대답이 없으면 화면이 고른 stage 로 물러선다. */
+    const reconsent = r && typeof r.reconsent === 'boolean' ? r.reconsent : (stage === 'stale');
+    if(reconsent){ location.replace(NEXT); return; }
+
+    if(window.KOSA) window.KOSA.track('sign_up', { method: provider });
+
+    /* 이메일 가입은 메일 인증이 남아 있어 바로 들여보내지 않는다. 인증이 남은 사람만 — 동의 절차가
+       생기기 전에 가입해 이미 인증을 마친 회원은 붙잡지 않는다(그 메일은 오지 않는다). */
+    if(provider === 'email' && !user.emailVerified){
+      const mail = user.email || '';
+      let sent = true;                    /* 발송 실패를 삼키지 않는다 — 화면이 문구를 갈라 준다 */
+      try{ await sendVerifyEmail(mail); }catch(_){ sent = false; }
+      finishing = true;                   /* 아래 signOut 이 리스너를 깨우지 못하게 */
+      try{ await signOut(auth); }catch(_){}
+      showVerifySent(mail, sent);
+      return;
+    }
+    location.replace(NEXT);
+  }catch(e){
+    btn.disabled = false;
+    const code = (e && (e.code || '')) + '';
+
+    /* 같은 이메일을 쓰는 계정이 이미 있어 서버가 거부했다. 방금 만든 이 계정은 지우고 원래 방법으로
+       안내한다 — 계정 둘을 남기면 관심 종목이 갈리고 같은 주소로 메일이 두 번 간다. */
+    if(/already-exists/.test(code)){
+      finishing = true;
+      try{ await deleteUser(auth.currentUser); }
+      catch(_){ try{ await signOut(auth); }catch(__){} }
+      let msg = '';
+      try{
+        const { hintText } = await import("./auth-hint.js?v=f7531b46");
+        msg = hintText((e && e.details && e.details.method) || '');
+      }catch(_){}
+      hideErr();
+      errBox.appendChild(document.createTextNode((msg || (e && e.message) || '이미 다른 방법으로 가입된 이메일입니다.') + ' '));
+      errBox.appendChild(link('로그인하러 가기', 'Login.html'));
+      errBox.classList.add('show');
+      $('.acts').style.display = 'none';
+      return;
+    }
+
+    /* 동의를 마치지 않은 계정은 24시간 뒤 purgeUnconsented 가 지운다 — 하룻밤 켜 둔 화면에서 누르면
+       계정이 이미 없을 수 있다. */
+    if(/not-found|user-not-found|unauthenticated|permission-denied/.test(code)){
+      hideErr();
+      errBox.appendChild(document.createTextNode('가입이 만료되어 계정이 삭제되었습니다. 처음부터 다시 가입하여 주시기 바랍니다. '));
+      errBox.appendChild(link('다시 가입하기', 'Signup.html'));
+      errBox.classList.add('show');
+      btn.disabled = true;
+      return;
+    }
+    showErr('동의를 저장하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.');
+  }
+});
+
+/* 이메일 가입 마무리 — 같은 자리에서 안내문으로 갈아 끼운다. 페이지를 또 옮기면 뒤로가기로 여기 되돌아
+   오는데 그때는 이미 로그아웃돼 있어 로그인 페이지로 튕긴다. 머리글도 같이 바꾼다 — 본문은 메일을
+   보냈다는데 위에서는 '아래 항목에 동의하여 주시기 바랍니다' 면 화면이 두 말을 한다. */
+function showVerifySent(mail, sent){
+  $('#ttl').textContent = '가입 완료';
+  $('#lede').textContent = '메일 인증만 남았습니다.';
+  $('#consentMount').style.display = 'none';
+  $('.acts').style.display = 'none';
+  $('#foot').style.display = 'none';
+  hideErr();
+
+  const box = document.createElement('div');
+  box.className = 'sent';
+  const h = document.createElement('h2');
+  h.textContent = sent ? '인증 메일을 보내 드렸습니다' : '인증 메일을 보내 드리지 못했습니다';
+  const p = document.createElement('p');
+  p.textContent = mail + ' ' + (sent
+    ? '주소로 인증 링크를 보내 드렸습니다. 메일의 링크를 눌러 인증하신 뒤 로그인하여 주시기 바랍니다. (스팸함도 함께 확인해 주십시오)'
+    : '주소로 인증 링크를 보내지 못했습니다. 아래에서 다시 요청하여 주시기 바랍니다.');
+  const go = document.createElement('a');
+  go.className = 'btn btn-ink'; go.href = 'Login.html'; go.textContent = '로그인하러 가기';
+
+  /* 다시 보내기. 성공했을 때도 둔다 — 스팸함으로 갔거나 지웠을 수 있다. sendVerifyEmail 은 이메일을
+     본문에 실어 보내므로 로그아웃 뒤에도 된다. */
+  const again = document.createElement('button');
+  again.type = 'button'; again.className = 'tbtn'; again.textContent = '인증 메일 다시 보내기';
+  again.addEventListener('click', async () => {
+    again.disabled = true;
+    try{ await sendVerifyEmail(mail); again.textContent = '다시 보내 드렸습니다. 메일함을 확인하여 주시기 바랍니다.'; }
+    catch(_){ again.disabled = false; again.textContent = '보내지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.'; }
+  });
+
+  const acts = document.createElement('div');
+  acts.className = 'acts';
+  acts.appendChild(go); acts.appendChild(again);
+  box.appendChild(h); box.appendChild(p); box.appendChild(acts);
+  $('.auth').appendChild(box);
+}
+
+$('#cancelBtn').addEventListener('click', async () => {
+  $('#cancelBtn').disabled = true;
+  finishing = true;                       /* deleteUser 가 리스너를 깨우지 못하게 */
+
+  /* 개정 재동의를 미룬 경우, 그리고 조회에 실패해 여기 온 이유를 모르는 경우에는 로그아웃만 한다.
+     절대 지우지 않는다 — 이미 쓰고 있던 회원의 워치리스트·구독이 같이 사라지고 되돌릴 수 없다.
+     안 지워서 생기는 일은 '동의 없는 계정이 하루 더 남는 것' 뿐이고 그건 purgeUnconsented 가 치운다. */
+  if(stage === 'stale' || !stageKnown){
+    try{ await signOut(auth); }catch(_){}
+    location.replace('Home.html');
+    return;
+  }
+
+  /* 가입을 마치지 않은 계정은 지운다. 서버(deleteAccount)에 맡긴다 — deleteUser 만 부르면 Auth 사용자만
+     사라지고 users 문서가 남아 다음 가입의 중복 검사에 걸린다. 서버가 실패하면 그때는 브라우저에서라도
+     Auth 사용자를 지운다. 남은 문서는 purgeUnconsented 가 다음 날 치운다. */
+  try{
+    await deleteMyAccount();
+  }catch(e){
+    console.warn('[consent] 서버 탈퇴 실패, 계정만 지운다:', e && e.message);
+    try{ await deleteUser(auth.currentUser); }
+    catch(_){ try{ await signOut(auth); }catch(__){} }
+  }
+  location.replace('Home.html');
+});
+
+</script>
+<script type="module" src="auth-state.js?v=1691fc81"></script>
+</body>
+</html>

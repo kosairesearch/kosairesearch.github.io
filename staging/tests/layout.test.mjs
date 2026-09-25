@@ -87,7 +87,11 @@ const browser = await chromium.launch({ executablePath: CHROME });
 const PHONE = { width: 390, height: 844 };
 
 /* 한 페이지를 열어 메뉴를 펴고, 무엇이 무엇을 가리는지 잰다. */
+/* 스테이징은 새 디자인(2026-09-26): 메뉴가 .mmenu(헤더 아래를 다 덮는 한 장)다. 실사이트는 아직 .mobile-menu. */
+const menuSel = (path) => path.startsWith("/staging/") ? ".mmenu" : ".mobile-menu";
+
 async function measure(path, { scrollTo = 0 } = {}) {
+  const MENU = menuSel(path);
   const page = await browser.newPage({ viewport: PHONE, deviceScaleFactor: 2 });
   await page.goto(BASE + path, { waitUntil: "domcontentloaded" });
   // 띠 높이를 재는 스크립트와 글꼴이 자리를 잡을 틈을 준다.
@@ -96,21 +100,21 @@ async function measure(path, { scrollTo = 0 } = {}) {
   await page.click("#menuBtn");
   await page.waitForTimeout(150);
 
-  const got = await page.evaluate(() => {
+  const got = await page.evaluate((MENU) => {
     const box = (el) => { if (!el) return null; const r = el.getBoundingClientRect();
       return { top: r.top, bottom: r.bottom, left: r.left, right: r.right, h: r.height }; };
-    const items = [...document.querySelectorAll(".mobile-menu a")].map((a) => ({
+    const items = [...document.querySelectorAll(MENU + " a")].map((a) => ({
       text: a.textContent.trim(), ...box(a),
     }));
     return {
       bar: box(document.querySelector(".kos-staging-bar")),
       nav: box(document.querySelector(".nav")),
-      menu: box(document.querySelector(".mobile-menu")),
-      open: document.querySelector(".mobile-menu").classList.contains("open"),
+      menu: box(document.querySelector(MENU)),
+      open: document.querySelector(MENU).classList.contains("open"),
       items,
       innerHeight,
     };
-  });
+  }, MENU);
   await page.close();
   return got;
 }
@@ -174,7 +178,7 @@ console.log("\n── 띠 문구가 길어져도 따라간다 ──\n");
     const box = (s) => { const r = document.querySelector(s).getBoundingClientRect();
       return { top: r.top, bottom: r.bottom, h: r.height }; };
     return { bar: box(".kos-staging-bar"), nav: box(".nav"),
-             first: box(".mobile-menu a") };
+             first: box(".mmenu a") };
   });
   await page.close();
   ok("띠가 실제로 길어졌다", m.bar.h > before + 10, `${before.toFixed(1)} → ${m.bar.h.toFixed(1)}`);
@@ -195,7 +199,7 @@ console.log("\n── 확인 창이 띠에 가리지 않는다 ──\n");
   const z = await page.evaluate(() => {
     const num = (s) => parseInt(getComputedStyle(document.querySelector(s)).zIndex, 10);
     return { bar: num(".kos-staging-bar"), nav: num(".nav"),
-             menu: num(".mobile-menu"), dlg: num(".dlg") };
+             menu: num(".mmenu"), dlg: num(".dlg") };
   });
   await page.close();
   ok("띠가 헤더·메뉴보다 위에 그려진다", z.bar > z.nav && z.bar > z.menu, JSON.stringify(z));
@@ -234,8 +238,12 @@ for (const p of ["/Home.html", "/Reports.html", "/index.html"]) {
 
    그래서 사람 눈이 아니라 브라우저가 잰 값으로 못 박는다. */
 console.log("\n── 빵부스러기가 페이지마다 같다 ──\n");
+/* 스테이징(새 디자인)은 빵부스러기가 아니라 제목 위 눈썹(.crumb — '리포트' · '업종 분석' 같은 한 낱말)이다. 현재 위치는 헤더의
+   활성 메뉴가 말한다. 그래서 스테이징은 눈썹이 있는 페이지끼리 글씨·색·자간·높이가 같은지만 본다. */
 for (const [label, pre] of [["실사이트", ""], ["스테이징", "/staging"]]) {
-  const PAGES = ["/Reports.html", "/industry.html", "/Watchlist.html",
+  const NEW = pre === "/staging";
+  const PAGES = NEW ? ["/Reports.html", "/industry.html", "/Watchlist.html", "/About.html", "/Terms.html"]
+                    : ["/Reports.html", "/industry.html", "/Watchlist.html",
                  "/brief.html", "/About.html", "/stock.html"];
   const seen = [];
   for (const path of PAGES) {
@@ -267,6 +275,7 @@ for (const [label, pre] of [["실사이트", ""], ["스테이징", "/staging"]])
     /* '홈' 은 눌러서 갈 수 있어야 하고, 지금 위치는 굵게 보여야 한다.
        업종별 페이지는 둘 다 없어서 빵부스러기 노릇을 못 하고 있었다. */
     for (const [path, g] of seen) {
+      if (NEW) continue;
       ok(`${label}${path} — 앞 단계가 링크다`, g.link, "누를 수 없으면 빵부스러기가 아니다");
       ok(`${label}${path} — 지금 위치가 강조된다`, g.bold);
     }

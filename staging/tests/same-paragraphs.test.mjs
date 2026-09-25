@@ -72,7 +72,7 @@ ok(budget(live) === budget(stg), "문단 예산(PARA_KO·PARA_EN)이 양쪽에�
 const uses = [
   [/function factors\([^\n]*ps\(pk\(f\.body\)\)/, "bull·bear 본문이 ps() 를 거친다"],
   [/function risksH\([^\n]*ps\(pk\(r\.body\)\)/, "risk 본문이 ps() 를 거친다"],
-  [/wrapup glass">'\+ps\(REP\.verdict/,          "종합 의견이 ps() 를 거친다"],
+  [/wrapup[^"]*">'\+ps\(REP\.verdict/,        "종합 의견이 ps() 를 거친다"],
   [/chunkPara\(p\.trim\(\)\)/,                    "prose() 가 글자 수 방식으로 자른다"],
 ];
 for (const [re, name] of uses) {

@@ -63,7 +63,7 @@ BODY = '''<main class="wrap">
   <header class="hero">
     <p class="crumb" id="count">관심종목</p>
     <h1>관심 종목</h1>
-    <p class="sub">종목 페이지에서 추가한 종목을 한 줄씩 모아 봅니다. 시안이라 로그인 없이 예시 종목으로 그렸습니다.</p>
+    <p class="sub">종목 페이지에서 추가한 종목을 한 줄씩 모아 봅니다.__DEMO_NOTE__</p>
   </header>
   <div class="bar">
     <div class="sorts" id="sorts"><span class="lbl">정렬</span>
@@ -85,10 +85,13 @@ JS = r'''(function(){
   var live=(window.KOS_LIVE_DATA&&KOS_LIVE_DATA.stocks)||[], RREP=(window.KOS_REPORTS&&KOS_REPORTS.reports)||{};
   function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
   function won(n){return n==null?'—':Number(n).toLocaleString('ko-KR')+'원'} function chg(c){c=c||0;return (c>0?'▲ ':c<0?'▼ ':'')+Math.abs(c).toFixed(2)+'%'} function dir(c){return c>0?'up':c<0?'down':'flat'}
-  /* 예시 목록 — 실사이트에서는 KOSWatch(Firestore 계정별 목록)가 이 자리를 채운다 */
+  /* 목록 — 스테이징·실사이트는 KOSWatch(Firestore 계정별 목록, watchlist.js)가 채운다. 모듈은 이 스크립트보다 늦게 오므로 나타날 때까지 기다리고, 바뀔 때마다(koswatch:change) 다시 그린다. 시안(KOSWatch 없음)은 예시 목록. */
   var q=new URLSearchParams(location.search),byTk={};live.forEach(function(s){byTk[s.ticker]=s});
-  var DEFAULT=['005930','000660','035420','035720','005380','068270'],LIST;
-  if(q.get('empty'))LIST=[];
+  var DEFAULT=['005930','000660','035420','035720','005380','068270'],LIST,W=null,waitedW=false;
+  function fromWatch(){return W.tickers().map(function(t){var s=byTk[t];return s?Object.assign({},s,{added:(W.addedAt&&W.addedAt(t))||0}):null}).filter(Boolean)}
+  function bindWatch(){W=window.KOSWatch;if(!W)return false;LIST=fromWatch();addEventListener('koswatch:change',function(){LIST=fromWatch();page=1;render()});render();return true}
+  if(document.documentElement.hasAttribute('data-staging')){LIST=[];waitedW=true;(function poll(n){if(bindWatch()||n>200)return;setTimeout(function(){poll(n+1)},50)})(0)}
+  else if(q.get('empty'))LIST=[];
   else if(q.get('demo'))LIST=live.slice().sort(function(a,b){return (b.trading_value||0)-(a.trading_value||0)}).slice(0,Math.max(1,+q.get('demo')||25)).map(function(s,i){return Object.assign({},s,{added:1000-i})});
   else LIST=DEFAULT.map(function(t){return byTk[t]}).filter(Boolean).map(function(s,i){return Object.assign({},s,{added:i})});
   var sortKey='mcap_desc',page=1,PAGE=10,edit=false;
@@ -102,7 +105,7 @@ JS = r'''(function(){
       +'<div><div class="r-name">'+esc(s.name)+'</div><div class="r-meta">'+s.ticker+' · '+esc(s.market)+' · '+esc(s.sector)+(r&&r.reportDate?'<span class="md"> · <b>'+esc(r.reportDate)+'</b></span>':'')+'</div></div>'
       +'<div class="r-title'+(t?'':' none')+'">'+(t?esc(t):'리포트 준비 중')+'</div><div class="r-price">'+won(s.price)+'<span class="c '+dir(c)+'">'+chg(c)+'</span></div><div class="r-date">'+esc(r&&r.reportDate||'—')+'</div></a>'}
   function render(){document.getElementById('count').textContent='관심종목 · '+LIST.length+'개 종목';
-    if(!LIST.length){rowsEl.innerHTML='';emptyEl.hidden=false;pagerEl.hidden=true;document.querySelector('.bar').hidden=true;return}
+    if(!LIST.length){rowsEl.innerHTML='';emptyEl.hidden=!!(waitedW&&(!W||(W.ready===false)));pagerEl.hidden=true;document.querySelector('.bar').hidden=true;return}
     emptyEl.hidden=true;document.querySelector('.bar').hidden=false;
     var list=sorted(),total=list.length,pages=Math.max(1,Math.ceil(total/PAGE));if(page>pages)page=pages;if(page<1)page=1;var start=(page-1)*PAGE;
     rowsEl.innerHTML=list.slice(start,start+PAGE).map(function(s,i){return row(s,start+i)}).join('');rowsEl.classList.toggle('edit',edit);
@@ -117,19 +120,26 @@ JS = r'''(function(){
   var editBtn=document.getElementById('editBtn'),clearBtn=document.getElementById('clearAll');
   function setEdit(on){edit=on;editBtn.textContent=on?'완료':'편집';editBtn.classList.toggle('on',on);clearBtn.hidden=!on;rowsEl.classList.toggle('edit',on)}
   editBtn.addEventListener('click',function(){setEdit(!edit)});
-  clearBtn.addEventListener('click',function(){if(!confirm('관심 종목을 전체 삭제하시겠습니까?'))return;LIST=[];setEdit(false);page=1;render()});
-  rowsEl.addEventListener('click',function(e){var rm=e.target.closest('[data-rm]');if(rm){e.preventDefault();LIST=LIST.filter(function(s){return s.ticker!==rm.dataset.rm});render()}});
+  clearBtn.addEventListener('click',function(){if(!confirm('관심 종목을 전체 삭제하시겠습니까?'))return;setEdit(false);page=1;if(W){W.clear();return}LIST=[];render()});
+  rowsEl.addEventListener('click',function(e){var rm=e.target.closest('[data-rm]');if(rm){e.preventDefault();if(W){W.remove(rm.dataset.rm);return}LIST=LIST.filter(function(s){return s.ticker!==rm.dataset.rm});render()}});
   document.getElementById('pctl').addEventListener('click',function(e){var b=e.target.closest('button[data-pg]');if(!b)return;var pg=b.dataset.pg;if(pg==='prev')page=Math.max(1,page-1);else if(pg==='next')page++;else page=+pg;render();window.scrollTo({top:0,behavior:'smooth'})});
   render();
 })();
 '''
 
 
+# 로그인 관문(스테이징·실사이트) — 로그인 전에는 본문을 숨기고 auth-guard.js 가 푼다. kos-signed=1 이면 바로 보인다. 2.5초 안에 못 풀면 그냥 보인다.
+# staging/tests/layout.test.mjs 가 이 문자열(classList.add('kos-locked'))이 관심종목에만 있는지 본다.
+GATE = "<style>html.kos-locked body{visibility:hidden}</style>\n<script>(function(){try{if(localStorage.getItem('kos-signed')==='1')return}catch(e){}document.documentElement.classList.add('kos-locked');setTimeout(function(){document.documentElement.classList.remove('kos-locked')},2500)})();</script>\n"
+
+
 def build(out_path):
-    html = (C.head('관심 종목 — 디자인 시안 | KOSAI') + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
-            + C.nav('관심종목') + '\n' + BODY + '\n' + C.FOOTER + '\n'
+    stg = C.MODE == 'staging'
+    body = BODY.replace('__DEMO_NOTE__', '' if stg else ' 시안이라 로그인 없이 예시 종목으로 그렸습니다.')
+    html = (C.head('관심 종목 | KOSAI' if stg else '관심 종목 — 디자인 시안 | KOSAI', extra=GATE if stg else '') + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+            + C.nav('관심종목') + '\n' + body + '\n' + C.FOOTER + '\n'
             + '<script src="/data/stocks.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + JS + C.JS + '\n</script>\n</body>\n</html>')
-    Path(out_path).write_text(html, encoding='utf-8')
+    C.emit(out_path, html)
     print(f'✅ {out_path} · {len(html):,}자')
 
 

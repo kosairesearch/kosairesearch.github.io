@@ -44,6 +44,7 @@ CONTACT = '''<main class="wrap">
       <div class="fld"><label for="f-email">이메일</label><input id="f-email" type="email" placeholder="답변받으실 이메일 주소" autocomplete="email" required><div class="msg"></div></div>
       <div class="fld"><label for="f-msg">문의 내용</label><textarea id="f-msg" placeholder="문의하실 내용을 자세히 적어 주십시오. 데이터 오류 제보의 경우 해당 페이지 주소를 함께 남겨주시면 빠르게 확인할 수 있습니다." required></textarea><div class="msg"></div></div>
       <input type="text" id="hp" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+      <div class="alert" id="formErr" role="alert"></div>
       <div class="submit"><button type="submit" class="btn btn-ink">문의 보내기</button><p class="form-note">보내주신 정보는 문의 응대 목적으로만 사용되며, 답변 후 안전하게 폐기됩니다.</p></div>
     </form>
     <div class="sent" id="sent" hidden>
@@ -75,6 +76,7 @@ FEEDBACK = '''<main class="wrap">
       <div class="fld"><label for="f-msg">내용</label><textarea id="f-msg" placeholder="어떤 점이 좋았는지, 무엇이 불편했는지, 어떤 기능이 있으면 좋겠는지 자유롭게 적어 주십시오." required></textarea><div class="msg"></div></div>
       <div class="fld"><label for="f-email">이메일 <span class="opt">(선택 · 답변이 필요한 경우)</span></label><input id="f-email" type="email" placeholder="답변받으실 이메일 주소" autocomplete="email"><div class="msg"></div></div>
       <input type="text" id="hp" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+      <div class="alert" id="formErr" role="alert"></div>
       <div class="submit"><button type="submit" class="btn btn-ink" id="submitBtn" disabled>피드백 보내기</button><p class="form-note" id="note">만족도를 선택하시면 전송하실 수 있습니다. 익명으로 보내셔도 괜찮습니다.</p></div>
     </form>
     <div class="sent" id="sent" hidden>
@@ -93,6 +95,15 @@ JS_COMMON = r'''
   window.kosInd(catSeg,'x');
   var EMAIL=/^[^@\s]+@[^@\s]+\.[^@\s]+$/;
   function sent(){document.getElementById('form').hidden=true;document.getElementById('sent').hidden=false;window.scrollTo({top:0,behavior:'smooth'})}
+  /* 보내기 — 스테이징·실사이트는 KOSsubmitForm(submit-form.js → Firebase 함수)으로 실제로 보낸다. 시안(모듈 없음)은 접수 화면만. */
+  var formErr=document.getElementById('formErr'),btn=document.querySelector('#form .submit .btn');
+  function send(payload){formErr.classList.remove('show');
+    if(!window.KOSsubmitForm){sent();return}
+    payload.hp=(document.getElementById('hp')||{}).value||'';payload.page=location.pathname.split('/').pop();
+    btn.disabled=true;var was=btn.textContent;btn.textContent='보내는 중…';
+    window.KOSsubmitForm(payload).then(function(){sent()}).catch(function(err){formErr.textContent='보내지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.'+(err&&err.message?' ('+err.message+')':'');formErr.classList.add('show')})
+      .then(function(){btn.disabled=false;btn.textContent=was})}
+  function cat(){var b=catSeg.querySelector('.on');return b?b.dataset.cat:''}
 '''
 
 CONTACT_JS = r'''(function(){''' + JS_COMMON + r'''
@@ -102,8 +113,7 @@ CONTACT_JS = r'''(function(){''' + JS_COMMON + r'''
     if(!ev){fldErr(email,'이메일을 입력하여 주시기 바랍니다.');bad=bad||email}else if(!EMAIL.test(ev)){fldErr(email,'올바른 이메일 형식이 아닙니다.');bad=bad||email}else fldClear(email);
     var mv=msg.value.trim();if(!mv){fldErr(msg,'문의 내용을 입력하여 주시기 바랍니다.');bad=bad||msg}else if(mv.length<5){fldErr(msg,'내용을 조금 더 자세히 입력하여 주시기 바랍니다.');bad=bad||msg}else fldClear(msg);
     if(bad){bad.focus();return}
-    /* 실사이트: KOSsubmitForm({kind:'contact',name,email,category,message,hp}) — 시안은 접수 화면만 */
-    sent()});
+    send({kind:'contact',name:document.getElementById('f-name').value.trim(),email:ev,category:cat(),message:mv})});
 })();'''
 
 FEEDBACK_JS = r'''(function(){''' + JS_COMMON + r'''
@@ -115,8 +125,7 @@ FEEDBACK_JS = r'''(function(){''' + JS_COMMON + r'''
     if(!mv){fldErr(msg,'내용을 입력하여 주시기 바랍니다.');bad=bad||msg}else if(mv.length<5){fldErr(msg,'내용을 조금 더 자세히 입력하여 주시기 바랍니다.');bad=bad||msg}else fldClear(msg);
     var ev=email.value.trim();if(ev&&!EMAIL.test(ev)){fldErr(email,'올바른 이메일 형식이 아닙니다.');bad=bad||email}else fldClear(email);
     if(bad){bad.focus();return}
-    /* 실사이트: KOSsubmitForm({kind:'feedback',email,rating,category,message,hp}) — 시안은 접수 화면만 */
-    sent()});
+    var rv=rating.querySelector('.rate.on');send({kind:'feedback',email:ev,rating:rv?+rv.dataset.v:null,category:cat(),message:mv})});
 })();'''
 
 
@@ -125,11 +134,12 @@ def page(title, body, js):
             + C.nav('') + '\n' + body + '\n' + C.FOOTER + '\n<script>\n' + js + '\n' + C.JS + '\n</script>\n</body>\n</html>')
 
 
-def build():
-    for out, title, body, js in [('preview/contact.html', '문의하기 — 디자인 시안 | KOSAI', CONTACT, CONTACT_JS),
-                                 ('preview/feedback.html', '피드백 — 디자인 시안 | KOSAI', FEEDBACK, FEEDBACK_JS)]:
+def build(outs=None):
+    outs = outs or {'contact': 'preview/contact.html', 'feedback': 'preview/feedback.html'}
+    for out, title, body, js in [(outs['contact'], '문의하기 — 디자인 시안 | KOSAI', CONTACT, CONTACT_JS),
+                                 (outs['feedback'], '피드백 — 디자인 시안 | KOSAI', FEEDBACK, FEEDBACK_JS)]:
         html = page(title, body, js)
-        (ROOT / out).write_text(html, encoding='utf-8')
+        C.emit(ROOT / out, html)
         print(f'✅ {ROOT / out} · {len(html):,}자')
 
 

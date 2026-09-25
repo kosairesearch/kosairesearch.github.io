@@ -60,7 +60,7 @@ def build(date=None, out_path=None):
             + C.nav('모닝브리핑') + '\n<main class="wrap">\n  <article class="mb">\n' + body + '\n  </article>\n</main>\n' + C.FOOTER + '\n'
             + '<script>\n' + C.JS + '\n</script>\n</body>\n</html>')
     out = Path(out_path) if out_path else ROOT / 'preview/brief.html'
-    out.write_text(html, encoding='utf-8')
+    C.emit(out, html)
     print(f'✅ {out} · {Path(path).stem} · {len(html):,}자')
 
 

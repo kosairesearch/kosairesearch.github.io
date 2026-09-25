@@ -229,7 +229,7 @@ def build(out_path):
     html = (C.head('홈 — 디자인 시안 | KOSAI') + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('홈') + '\n' + BODY + '\n' + C.FOOTER + '\n'
             + '<script src="/data/stocks.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + JS + C.JS + '\n</script>\n</body>\n</html>')
-    Path(out_path).write_text(html, encoding='utf-8')
+    C.emit(out_path, html)
     print(f'✅ {out_path} · {len(html):,}자')
 
 
