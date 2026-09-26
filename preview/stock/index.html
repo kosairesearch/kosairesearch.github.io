@@ -8,10 +8,7 @@
 <meta name="theme-color" content="#f9f8f6">
 <title>종목 페이지 38장 | KOSAI</title>
 <link rel="icon" href="/assets/favicon.png?v=k2">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/Pretendard-Regular.woff2">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/Pretendard-Medium.woff2">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/Pretendard-SemiBold.woff2">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/Pretendard-Bold.woff2">
+<link rel="stylesheet" href="/fonts/pretendard-subset.css">
 <script>(function(){var t='light';try{t=localStorage.getItem('kos-theme')||'light'}catch(e){}document.documentElement.setAttribute('data-theme',t);})();</script>
 <script id="kosThemeColor">(function(){var m=document.querySelector('meta[name="theme-color"]'),r=document.documentElement;
   function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0d0d0e':'#f9f8f6')}
@@ -50,13 +47,9 @@ window.kosInd=function(box,axis,sel){
 };
 </script>
 <style>
-@font-face{font-family:"Pretendard";font-weight:400;font-display:swap;src:url("/fonts/Pretendard-Regular.woff2") format("woff2")}
-@font-face{font-family:"Pretendard";font-weight:500;font-display:swap;src:url("/fonts/Pretendard-Medium.woff2") format("woff2")}
-@font-face{font-family:"Pretendard";font-weight:600;font-display:swap;src:url("/fonts/Pretendard-SemiBold.woff2") format("woff2")}
-@font-face{font-family:"Pretendard";font-weight:700;font-display:swap;src:url("/fonts/Pretendard-Bold.woff2") format("woff2")}
 :root{
   --bg:#f9f8f6; --surface:#ffffff; --surface-2:#f1efeb;
-  --ink:#141414; --ink-72:rgba(20,20,20,.72); --ink-55:rgba(20,20,20,.55); --ink-30:rgba(20,20,20,.30);
+  --ink:#141414; --ink-72:rgba(20,20,20,.72); --ink-62:rgba(20,20,20,.62); --ink-30:rgba(20,20,20,.30);
   --hair:rgba(20,20,20,.08); --line:rgba(20,20,20,.14);
   --up:#c8102e; --down:#1e5fbf; --up-bg:rgba(200,16,46,.08); --down-bg:rgba(30,95,191,.08);
   --font:"Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
@@ -65,7 +58,7 @@ window.kosInd=function(box,axis,sel){
 }
 :root[data-theme="dark"]{
   --bg:#0d0d0e; --surface:#161617; --surface-2:#1e1e20;
-  --ink:#ececea; --ink-72:rgba(236,236,234,.72); --ink-55:rgba(236,236,234,.55); --ink-30:rgba(236,236,234,.30);
+  --ink:#ececea; --ink-72:rgba(236,236,234,.72); --ink-62:rgba(236,236,234,.62); --ink-30:rgba(236,236,234,.30);
   --hair:rgba(255,255,255,.08); --line:rgba(255,255,255,.14);
   --up:#f0655f; --down:#6f9cf5; --up-bg:rgba(240,101,95,.12); --down-bg:rgba(111,156,245,.12);
   --nav-bar:rgba(13,13,14,.72);
@@ -77,13 +70,13 @@ html{scroll-behavior:smooth;scroll-padding-top:calc(84px + var(--kos-bar-h,0px))
 @view-transition{navigation:auto}
 .kos-staging-bar{view-transition-name:kos-bar} .nav{view-transition-name:kos-nav}
 /* 옛 모듈(auth-state · settings-panel · auth-guard · consent · checkout)이 쓰는 토큰 이름 — 새 토큰에 잇는다. 모듈을 새 이름으로 고칠 때까지의 다리 */
-:root{--font-sans:var(--font);--fg-1:var(--ink);--fg-2:var(--ink-72);--fg-3:var(--ink-55);--bg-1:var(--surface);--border-2:var(--line);--shadow-2:0 8px 24px rgba(20,20,20,.08);--brand-blue:var(--ink);--brand-cyan:var(--ink-72);--radius-sm:8px;--radius-md:12px;--radius-lg:16px}
+:root{--font-sans:var(--font);--fg-1:var(--ink);--fg-2:var(--ink-72);--fg-3:var(--ink-62);--bg-1:var(--surface);--border-2:var(--line);--shadow-2:0 8px 24px rgba(20,20,20,.08);--brand-blue:var(--ink);--brand-cyan:var(--ink-72);--radius-sm:8px;--radius-md:12px;--radius-lg:16px}
 [hidden]{display:none!important} /* hidden 속성이 .pager{display:flex} 같은 클래스 규칙에 밀리지 않게 */
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums lining-nums;word-break:keep-all;overflow-wrap:anywhere}
 a{color:inherit;text-decoration:none}
 ::selection{background:rgba(20,20,20,.14)} :root[data-theme="dark"] ::selection{background:rgba(255,255,255,.22)}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
-.up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--ink-55)}
+.up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--ink-62)}
 /* 헤더 — 사이트 규칙 그대로(60px · 맨 위 투명 · 내리면 띠) */
 .nav{position:sticky;top:var(--kos-bar-h,0px);z-index:50;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0;transition:background-color .2s,box-shadow .2s}
 .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--hair);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
@@ -104,12 +97,12 @@ a{color:inherit;text-decoration:none}
 .mm-links{display:flex;flex-direction:column} .mm-links a{display:block;padding:10px 0;font:600 28px/36px var(--font);letter-spacing:-.02em;color:var(--ink-72);text-decoration:none} .mm-links a.on{color:var(--ink);font-weight:700}
 .mmenu .sep{height:1px;background:var(--hair);margin:20px 0 22px}
 .mm-auth{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px} .mm-auth a,.mm-auth button{border:0;background:none;padding:0;font:600 16px/24px var(--font);color:var(--ink);text-decoration:none;cursor:pointer}
-.mm-foot{margin-top:auto;padding-top:32px;display:flex;flex-wrap:wrap;gap:6px 18px} .mm-foot a{font:400 13px/20px var(--font);color:var(--ink-55);text-decoration:none}
+.mm-foot{margin-top:auto;padding-top:32px;display:flex;flex-wrap:wrap;gap:6px 18px} .mm-foot a{font:400 13px/20px var(--font);color:var(--ink-62);text-decoration:none}
 /* 계정(로그인 상태) — 이메일 첫 글자 동그라미와 작은 메뉴. 시안은 ?user=이메일 로 켠다 */
 .acct{position:relative;display:none;align-items:center} .acct.show{display:inline-flex} .right.user .login{display:none}
 .avatar{width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--bg);font:600 13px/1 var(--font);display:inline-flex;align-items:center;justify-content:center;border:0;cursor:pointer;padding:0;margin:0 4px}
 .acct-menu{display:none;position:absolute;right:0;top:calc(100% + 10px);min-width:220px;background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:6px 0;box-shadow:0 8px 24px rgba(20,20,20,.08);z-index:60}
-.acct.open .acct-menu{display:block} .acct-menu .em{padding:8px 16px 10px;font:400 12px/16px var(--font);color:var(--ink-55);border-bottom:1px solid var(--hair);margin-bottom:4px;word-break:break-all}
+.acct.open .acct-menu{display:block} .acct-menu .em{padding:8px 16px 10px;font:400 12px/16px var(--font);color:var(--ink-62);border-bottom:1px solid var(--hair);margin-bottom:4px;word-break:break-all}
 .acct-menu a,.acct-menu button{display:block;width:100%;box-sizing:border-box;text-align:left;border:0;background:none;padding:9px 16px;font:500 14px/20px var(--font);color:var(--ink-72);cursor:pointer;text-decoration:none} .acct-menu a:hover,.acct-menu button:hover{background:var(--surface-2);color:var(--ink)}
 /* 단추 */
 /* 활성 표시선(kosInd) — 목차 세로선·밑줄 탭·쪽 번호가 쓴다. 움직임은 IND_JS 의 animate() */
@@ -117,6 +110,11 @@ a{color:inherit;text-decoration:none}
 .btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 18px;border-radius:999px;border:0;font:600 14px/1 var(--font);cursor:pointer;transition:background-color .12s,color .12s} .btn.ico{padding-left:14px}
 .btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .btn-ink,.btn-primary{background:var(--ink);color:var(--bg)} .btn-ink:hover,.btn-primary:hover{opacity:.9}
+/* 키보드 포커스 — 먹색 2px 윤곽을 2px 띄워 두른다(브라우저 기본 고리는 파랑·이중선이라 옷과 따로 논다). 마우스로 누를 땐 안 나온다(:focus-visible).
+   가로로 넘기는 띠(.chips·.tabs·.seg·.sorts·설정 탭·표 틀) 안에서는 윤곽이 잘리므로 안쪽에 그린다. 밑줄 입력칸·검색창은 원래 밑줄이 먹색으로 바뀌는데, 거기에 1px 을 더해 2px 로 굵게 한다. */
+:is(a,button,summary,select,[tabindex],[role=tab],[role=button],[role=radio],input[type=checkbox],input[type=radio]):focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+:is(.chips,.tabs,.seg,.sorts,.ks-nav,.tbl-wrap,.fchips) :focus-visible{outline-offset:-2px}
+:is(.fld input:not([type=checkbox]):not([type=radio]),.fld textarea,.range-inputs input,.dlg textarea,.dlg input.type,.ks-dlg-d,.wd-detail,.wd-type):focus-visible,.search:focus-within{box-shadow:0 1px 0 0 var(--ink)}
 /* 로그인 가림창 — auth-guard.js 가 그리는 .kg-* . 모듈은 실사이트와 같아야 해서(auth-table.test) 손대지 않고 옷만 여기서 덮는다.
    모듈이 <style id=kosGateCss> 를 나중에 꽂고 다크 규칙이 :root[data-theme=dark] .kg-*(0,3,0)라, :root[data-theme] body …(0,3,1)로 적어야 라이트·다크 모두 이긴다. 덮개는 헤더 아래부터 페이지색으로
    덮고(z 40 — 헤더 50·휴대폰 메뉴 49 아래라 메뉴·테마 단추가 그대로 산다), 자물쇠는 먹색 선, 단추는 알약이다. */
@@ -127,39 +125,39 @@ a{color:inherit;text-decoration:none}
 :root[data-theme] body .kg-ico{width:auto;height:auto;margin:0 0 22px;border-radius:0;background:none;display:block}
 :root[data-theme] body .kg-ico svg{width:30px;height:30px;stroke:var(--ink);stroke-width:1.4;fill:none}
 :root[data-theme] body .kg-title{margin:0 0 10px;font:600 24px/32px var(--font);letter-spacing:-.01em;color:var(--ink)}
-:root[data-theme] body .kg-sub{margin:0 0 28px;font:400 15px/24px var(--font);color:var(--ink-55)}
+:root[data-theme] body .kg-sub{margin:0 0 28px;font:400 15px/24px var(--font);color:var(--ink-62)}
 :root[data-theme] body .kg-btns{display:flex;flex-direction:column;gap:10px;max-width:320px;margin:0 auto}
 :root[data-theme] body .kg-btn{display:flex;align-items:center;justify-content:center;height:48px;padding:0 20px;border-radius:999px;border:1px solid var(--line);
   background:transparent;color:var(--ink);font:600 15px/1 var(--font);text-decoration:none;box-shadow:none;cursor:pointer}
 :root[data-theme] body .kg-btn:hover{background:var(--surface-2)}
 :root[data-theme] body .kg-primary,:root[data-theme] body .kg-primary:hover{background:var(--ink);border-color:var(--ink);color:var(--bg)}
 :root[data-theme] body .kg-primary:hover{opacity:.9}
-:root[data-theme] body .kg-home{display:inline-block;margin-top:24px;font:400 14px/20px var(--font);color:var(--ink-55);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
+:root[data-theme] body .kg-home{display:inline-block;margin-top:24px;font:400 14px/20px var(--font);color:var(--ink-62);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
 :root[data-theme] body .kg-home:hover{color:var(--ink)}
 :root[data-theme] body .kg-x{position:fixed;top:calc(66px + var(--kos-bar-h,0px));right:calc(var(--pad) - 10px);width:44px;height:44px;border:0;border-radius:22px;background:none;
-  color:var(--ink-55);font-size:22px;line-height:44px;text-align:center;cursor:pointer}
+  color:var(--ink-62);font-size:22px;line-height:44px;text-align:center;cursor:pointer}
 :root[data-theme] body .kg-x:hover{color:var(--ink)}
 .btn-soft{background:var(--surface-2);color:var(--ink)} .btn-soft:hover{background:var(--line)}
 /* 절 제목 · 더보기 링크 */
 .sec-h{display:flex;align-items:baseline;gap:14px;margin:0 0 22px}
-.sec-h .num{font:600 13px/20px var(--font);color:var(--ink-30)}
+.sec-h .num{font:600 13px/20px var(--font);color:var(--ink-62)}
 .sec-h h2{margin:0;font:700 24px/32px var(--font);letter-spacing:-.02em}
 .sec-h .more{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font:500 14px/20px var(--font);color:var(--ink-72);white-space:nowrap} .sec-h .more:hover{color:var(--ink)}
 .sec-h .more svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 /* 표 — 틀 없이 줄로만 */
 .tbl-wrap{overflow-x:auto}
 .tbl{width:100%;border-collapse:collapse}
-.tbl caption{text-align:left;padding:0 0 10px} .tbl .cap{display:flex;justify-content:space-between;align-items:baseline;font:500 13px/20px var(--font);color:var(--ink-72)} .tbl .cap .u{font-weight:400;color:var(--ink-55)}
+.tbl caption{text-align:left;padding:0 0 10px} .tbl .cap{display:flex;justify-content:space-between;align-items:baseline;font:500 13px/20px var(--font);color:var(--ink-72)} .tbl .cap .u{font-weight:400;color:var(--ink-62)}
 .tbl th,.tbl td{padding:11px 12px;font:400 14px/20px var(--font);text-align:right;white-space:nowrap;border-top:1px solid var(--hair)}
-.tbl thead th{font:500 12px/16px var(--font);color:var(--ink-55);border-top:0;border-bottom:1px solid var(--line);padding-top:0}
+.tbl thead th{font:500 12px/16px var(--font);color:var(--ink-62);border-top:0;border-bottom:1px solid var(--line);padding-top:0}
 .tbl th:first-child,.tbl td:first-child{text-align:left;padding-left:0;font-weight:500} .tbl th:last-child,.tbl td:last-child{padding-right:0}
 .tbl tbody th{font-weight:500}
 /* 푸터 */
 .foot{margin-top:96px;border-top:1px solid var(--hair);padding:56px 0 48px}
 .foot .brand img{height:13px} .ftag{margin:14px 0 0;font:400 14px/22px var(--font);color:var(--ink-72);max-width:260px}
 .fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;max-width:560px;margin-top:32px}
-.fcol{display:flex;flex-direction:column;gap:9px} .fcol h4{margin:0 0 4px;font:600 12px/16px var(--font);color:var(--ink-55)} .fcol a{font:400 14px/20px var(--font);color:var(--ink-72)} .fcol a:hover{color:var(--ink)}
-.biz{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:4px 16px;font:400 12px/18px var(--font);color:var(--ink-55)} .copy{margin-top:32px;font:400 12px/18px var(--font);color:var(--ink-55)}
+.fcol{display:flex;flex-direction:column;gap:9px} .fcol h4{margin:0 0 4px;font:600 12px/16px var(--font);color:var(--ink-62)} .fcol a{font:400 14px/20px var(--font);color:var(--ink-72)} .fcol a:hover{color:var(--ink)}
+.biz{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:4px 16px;font:400 12px/18px var(--font);color:var(--ink-62)} .copy{margin-top:32px;font:400 12px/18px var(--font);color:var(--ink-62)}
 /* 휴대폰 사파리 상태바·주소창 뒤 색 — 페이지색 띠 (CLAUDE.md 2026-09-24) */
 #kosEdgeTop,#kosEdgeBot{display:none}
 @media (hover:none) and (pointer:coarse){#kosEdgeTop,#kosEdgeBot{display:block;position:fixed;left:0;right:0;height:12px;z-index:60;pointer-events:none;opacity:.2;background:var(--bg)} #kosEdgeTop{top:0} #kosEdgeBot{bottom:0}}
@@ -186,7 +184,7 @@ a{color:inherit;text-decoration:none}
 <div class="mmenu" id="mmenu"><div class="mm-links"><a href="/preview/home.html">홈</a><a href="/preview/reports.html" class="on">리포트</a><a href="/preview/industry.html">업종 분석</a><a href="/preview/watchlist.html">관심종목</a><a href="/preview/brief.html">모닝브리핑</a></div><div class="sep"></div><div class="mm-auth" id="mauth"><a href="/preview/login.html">로그인</a><a href="/preview/signup.html">회원가입</a></div>
 <div class="mm-foot"><a href="/preview/about.html">About</a><a href="/preview/contact.html">문의하기</a><a href="/preview/feedback.html">피드백</a><a href="/preview/terms.html">이용약관</a><a href="/preview/privacy.html">개인정보처리방침</a></div></div>
 <main class="wrap"><h1>종목 페이지 38장</h1><p class="sub">종목마다 미리 만든 페이지. 리포트 글·표·지표가 HTML 에 들어 있어 로봇과 사람이 같은 페이지를 본다. 미리보기(noindex).</p>
-<div class="tbl-wrap"><table class="tbl"><thead><tr><th>종목</th><th>코드</th><th>리포트</th><th>크기</th></tr></thead><tbody><tr><td><a href="000150.html">두산</a></td><td>000150</td><td>전체 리포트</td><td>41KB</td></tr><tr><td><a href="000270.html">기아</a></td><td>000270</td><td>전체 리포트</td><td>39KB</td></tr><tr><td><a href="000660.html">SK하이닉스</a></td><td>000660</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="000810.html">삼성화재</a></td><td>000810</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="0009K0.html">에임드바이오</a></td><td>0009K0</td><td>기본 리포트(옛 형식)</td><td>31KB</td></tr><tr><td><a href="0010S0.html">와이즈플래닛컴퍼니</a></td><td>0010S0</td><td>리포트 준비 중</td><td>10KB</td></tr><tr><td><a href="005380.html">현대차</a></td><td>005380</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="005490.html">POSCO홀딩스</a></td><td>005490</td><td>전체 리포트</td><td>40KB</td></tr><tr><td><a href="005930.html">삼성전자</a></td><td>005930</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="006400.html">삼성SDI</a></td><td>006400</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="009150.html">삼성전기</a></td><td>009150</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="010120.html">LS ELECTRIC</a></td><td>010120</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="012330.html">현대모비스</a></td><td>012330</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="012450.html">한화에어로스페이스</a></td><td>012450</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="0126Z0.html">삼성에피스홀딩스</a></td><td>0126Z0</td><td>기본 리포트(옛 형식)</td><td>30KB</td></tr><tr><td><a href="0220W0.html">한화머시너리앤서비스홀딩스</a></td><td>0220W0</td><td>리포트 준비 중</td><td>10KB</td></tr><tr><td><a href="028260.html">삼성물산</a></td><td>028260</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="032830.html">삼성생명</a></td><td>032830</td><td>전체 리포트</td><td>46KB</td></tr><tr><td><a href="034020.html">두산에너빌리티</a></td><td>034020</td><td>전체 리포트</td><td>41KB</td></tr><tr><td><a href="034730.html">SK</a></td><td>034730</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="035420.html">NAVER</a></td><td>035420</td><td>전체 리포트</td><td>41KB</td></tr><tr><td><a href="055550.html">신한지주</a></td><td>055550</td><td>전체 리포트</td><td>40KB</td></tr><tr><td><a href="066570.html">LG전자</a></td><td>066570</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="068270.html">셀트리온</a></td><td>068270</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="086790.html">하나금융지주</a></td><td>086790</td><td>전체 리포트</td><td>44KB</td></tr><tr><td><a href="088980.html">맥쿼리인프라</a></td><td>088980</td><td>기본 리포트(옛 형식)</td><td>27KB</td></tr><tr><td><a href="096770.html">SK이노베이션</a></td><td>096770</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="105560.html">KB금융</a></td><td>105560</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="207940.html">삼성바이오로직스</a></td><td>207940</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="267260.html">HD현대일렉트릭</a></td><td>267260</td><td>전체 리포트</td><td>41KB</td></tr><tr><td><a href="298040.html">효성중공업</a></td><td>298040</td><td>전체 리포트</td><td>46KB</td></tr><tr><td><a href="316140.html">우리금융지주</a></td><td>316140</td><td>전체 리포트</td><td>40KB</td></tr><tr><td><a href="329180.html">HD현대중공업</a></td><td>329180</td><td>전체 리포트</td><td>41KB</td></tr><tr><td><a href="373220.html">LG에너지솔루션</a></td><td>373220</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="402340.html">SK스퀘어</a></td><td>402340</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="415640.html">KB발해인프라</a></td><td>415640</td><td>기본 리포트(옛 형식)</td><td>30KB</td></tr><tr><td><a href="496320.html">본시스템즈</a></td><td>496320</td><td>기본 리포트(옛 형식)</td><td>27KB</td></tr><tr><td><a href="950260.html">인제니아테라퓨틱스(Reg.S)</a></td><td>950260</td><td>기본 리포트(옛 형식)</td><td>31KB</td></tr></tbody></table></div></main>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>종목</th><th>코드</th><th>리포트</th><th>크기</th></tr></thead><tbody><tr><td><a href="000150.html">두산</a></td><td>000150</td><td>전체 리포트</td><td>40KB</td></tr><tr><td><a href="000270.html">기아</a></td><td>000270</td><td>전체 리포트</td><td>38KB</td></tr><tr><td><a href="000660.html">SK하이닉스</a></td><td>000660</td><td>전체 리포트</td><td>41KB</td></tr><tr><td><a href="000810.html">삼성화재</a></td><td>000810</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="0009K0.html">에임드바이오</a></td><td>0009K0</td><td>기본 리포트(옛 형식)</td><td>31KB</td></tr><tr><td><a href="0010S0.html">와이즈플래닛컴퍼니</a></td><td>0010S0</td><td>리포트 준비 중</td><td>10KB</td></tr><tr><td><a href="005380.html">현대차</a></td><td>005380</td><td>전체 리포트</td><td>41KB</td></tr><tr><td><a href="005490.html">POSCO홀딩스</a></td><td>005490</td><td>전체 리포트</td><td>40KB</td></tr><tr><td><a href="005930.html">삼성전자</a></td><td>005930</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="006400.html">삼성SDI</a></td><td>006400</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="009150.html">삼성전기</a></td><td>009150</td><td>전체 리포트</td><td>41KB</td></tr><tr><td><a href="010120.html">LS ELECTRIC</a></td><td>010120</td><td>전체 리포트</td><td>41KB</td></tr><tr><td><a href="012330.html">현대모비스</a></td><td>012330</td><td>전체 리포트</td><td>41KB</td></tr><tr><td><a href="012450.html">한화에어로스페이스</a></td><td>012450</td><td>전체 리포트</td><td>41KB</td></tr><tr><td><a href="0126Z0.html">삼성에피스홀딩스</a></td><td>0126Z0</td><td>기본 리포트(옛 형식)</td><td>30KB</td></tr><tr><td><a href="0220W0.html">한화머시너리앤서비스홀딩스</a></td><td>0220W0</td><td>리포트 준비 중</td><td>10KB</td></tr><tr><td><a href="028260.html">삼성물산</a></td><td>028260</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="032830.html">삼성생명</a></td><td>032830</td><td>전체 리포트</td><td>45KB</td></tr><tr><td><a href="034020.html">두산에너빌리티</a></td><td>034020</td><td>전체 리포트</td><td>41KB</td></tr><tr><td><a href="034730.html">SK</a></td><td>034730</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="035420.html">NAVER</a></td><td>035420</td><td>전체 리포트</td><td>41KB</td></tr><tr><td><a href="055550.html">신한지주</a></td><td>055550</td><td>전체 리포트</td><td>39KB</td></tr><tr><td><a href="066570.html">LG전자</a></td><td>066570</td><td>전체 리포트</td><td>41KB</td></tr><tr><td><a href="068270.html">셀트리온</a></td><td>068270</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="086790.html">하나금융지주</a></td><td>086790</td><td>전체 리포트</td><td>44KB</td></tr><tr><td><a href="088980.html">맥쿼리인프라</a></td><td>088980</td><td>기본 리포트(옛 형식)</td><td>27KB</td></tr><tr><td><a href="096770.html">SK이노베이션</a></td><td>096770</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="105560.html">KB금융</a></td><td>105560</td><td>전체 리포트</td><td>41KB</td></tr><tr><td><a href="207940.html">삼성바이오로직스</a></td><td>207940</td><td>전체 리포트</td><td>41KB</td></tr><tr><td><a href="267260.html">HD현대일렉트릭</a></td><td>267260</td><td>전체 리포트</td><td>41KB</td></tr><tr><td><a href="298040.html">효성중공업</a></td><td>298040</td><td>전체 리포트</td><td>45KB</td></tr><tr><td><a href="316140.html">우리금융지주</a></td><td>316140</td><td>전체 리포트</td><td>40KB</td></tr><tr><td><a href="329180.html">HD현대중공업</a></td><td>329180</td><td>전체 리포트</td><td>41KB</td></tr><tr><td><a href="373220.html">LG에너지솔루션</a></td><td>373220</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="402340.html">SK스퀘어</a></td><td>402340</td><td>전체 리포트</td><td>42KB</td></tr><tr><td><a href="415640.html">KB발해인프라</a></td><td>415640</td><td>기본 리포트(옛 형식)</td><td>30KB</td></tr><tr><td><a href="496320.html">본시스템즈</a></td><td>496320</td><td>기본 리포트(옛 형식)</td><td>27KB</td></tr><tr><td><a href="950260.html">인제니아테라퓨틱스(Reg.S)</a></td><td>950260</td><td>기본 리포트(옛 형식)</td><td>31KB</td></tr></tbody></table></div></main>
 <footer class="foot"><div class="wrap">
   <a class="brand" href="/preview/home.html"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
   <p class="ftag">한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p>

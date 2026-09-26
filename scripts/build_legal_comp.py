@@ -26,7 +26,7 @@ CSS = '''
 .sec-h h2{font-size:20px;line-height:28px} .sec{padding-bottom:56px} .sec:last-child{padding-bottom:24px}
 .intro{margin-top:28px}
 /* 맺음 주석 — 실사이트의 회색 상자. 여기서는 위 선 하나와 작은 회색 글자(각주) */
-.prose .note{margin-top:32px;padding-top:16px;border-top:1px solid var(--hair);font:400 13px/20px var(--font);color:var(--ink-55)}
+.prose .note{margin-top:32px;padding-top:16px;border-top:1px solid var(--hair);font:400 13px/20px var(--font);color:var(--ink-62)}
 '''
 MOBILE_CSS = '''@media (max-width:820px){ .sec-h h2{font-size:18px;line-height:26px} .sec{padding-bottom:44px} }'''
 

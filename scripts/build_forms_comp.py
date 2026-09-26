@@ -20,11 +20,11 @@ CSS = '''
 form .fld:last-of-type{margin-bottom:30px}
 /* 만족도 — 세 얼굴. 고른 것만 먹색 */
 .rating{display:flex;gap:28px;padding:6px 0 2px}
-.rate{display:flex;flex-direction:column;align-items:center;gap:8px;border:0;background:none;padding:0;cursor:pointer;color:var(--ink-30);transition:color .12s} .rate:hover{color:var(--ink-72)} .rate.on{color:var(--ink)}
+.rate{display:flex;flex-direction:column;align-items:center;gap:8px;border:0;background:none;padding:0;cursor:pointer;color:var(--ink-62);transition:color .12s} .rate:hover{color:var(--ink-72)} .rate.on{color:var(--ink)}
 .rate svg{width:36px;height:36px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round} .rate .lab{font:500 12px/16px var(--font)}
 .rate.on .lab{font-weight:600}
 .direct{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);display:flex;justify-content:space-between;align-items:baseline;gap:16px;text-decoration:none;color:inherit}
-.direct .k{font:400 13px/20px var(--font);color:var(--ink-55)} .direct .v{font:500 15px/20px var(--font);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .direct:hover .v{text-decoration-color:var(--ink)}
+.direct .k{font:400 13px/20px var(--font);color:var(--ink-62)} .direct .v{font:500 15px/20px var(--font);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .direct:hover .v{text-decoration-color:var(--ink)}
 .sent .tbtn{font-size:14px;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
 @media (max-width:820px){.rating{gap:22px} .page-body{padding-top:28px}}
 '''

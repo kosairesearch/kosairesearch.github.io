@@ -13,10 +13,10 @@ import comp_common as C  # noqa: E402
 C.set_mode('live')
 
 CSS = '''
-.nf{max-width:640px;padding:96px 0 120px} .nf .crumb{font:500 13px/20px var(--font);color:var(--ink-55)}
+.nf{max-width:640px;padding:96px 0 120px} .nf .crumb{font:500 13px/20px var(--font);color:var(--ink-62)}
 .nf h1{margin:12px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em} .nf .sub{margin:16px 0 0;font:400 17px/28px var(--font);color:var(--ink-72)}
 .nf .acts{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;margin-top:32px}
-.nf .alt{margin:40px 0 0;padding-top:24px;border-top:1px solid var(--hair);font:400 14px/22px var(--font);color:var(--ink-55)} .nf .alt a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
+.nf .alt{margin:40px 0 0;padding-top:24px;border-top:1px solid var(--hair);font:400 14px/22px var(--font);color:var(--ink-62)} .nf .alt a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
 @media (max-width:820px){.nf{padding:40px 0 72px} .nf h1{font-size:32px;line-height:38px} .nf .sub{font-size:15px;line-height:24px}}'''
 
 BODY = '''<main class="wrap"><div class="nf">

@@ -18,37 +18,37 @@ import comp_common as C  # noqa: E402
 CSS = '''
 /* 눈썹줄 · 제목 */
 .hero{padding:44px 0 0}
-.crumb{font:500 13px/20px var(--font);color:var(--ink-55);display:flex;gap:8px;align-items:center} .crumb a:hover{color:var(--ink)}
+.crumb{font:500 13px/20px var(--font);color:var(--ink-62);display:flex;gap:8px;align-items:center} .crumb a:hover{color:var(--ink)}
 .crumb svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;color:var(--ink-30)}
 .hero h1{margin:12px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
 .hero .sub{margin:16px 0 0;font:400 17px/28px var(--font);color:var(--ink-72);max-width:640px}
 .hero .lead{margin:18px 0 0;font:400 18px/30px var(--font);color:var(--ink-72);max-width:720px}
 /* 지표 띠 — 리포트 페이지와 같은 문법 */
 .stats{margin-top:36px;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:22px 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
-.st-k{font:500 12px/16px var(--font);color:var(--ink-55)} .st-v{margin-top:6px;font:600 19px/24px var(--font);letter-spacing:-.01em;white-space:nowrap}
-.stats-note{margin:10px 0 0;font:400 12px/16px var(--font);color:var(--ink-55)}
+.st-k{font:500 12px/16px var(--font);color:var(--ink-62)} .st-v{margin-top:6px;font:600 19px/24px var(--font);letter-spacing:-.01em;white-space:nowrap}
+.stats-note{margin:10px 0 0;font:400 12px/16px var(--font);color:var(--ink-62)}
 /* 업종 표(목록) */
 .list{padding-top:48px} .list .sec-h{margin-bottom:14px}
 .tbl.sectors th:first-child,.tbl.sectors td:first-child{min-width:150px}
 .tbl.sectors td{padding-top:13px;padding-bottom:13px}
 .s-name{font:600 15px/20px var(--font)}
 .tbl.sectors td.w{text-align:left;white-space:nowrap;min-width:190px} .wb{display:inline-block;width:calc(var(--w) * 120px);min-width:2px;height:3px;background:var(--ink);vertical-align:middle;margin-right:10px}
-.tbl.sectors td.keys,.tbl.sectors th.keys{text-align:left;white-space:normal;font-size:13px;color:var(--ink-55)}
+.tbl.sectors td.keys,.tbl.sectors th.keys{text-align:left;white-space:normal;font-size:13px;color:var(--ink-62)}
 .tbl.sectors tbody tr{cursor:pointer} .tbl.sectors tbody tr:hover .s-name{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
-.note{margin:14px 0 0;font:400 12px/18px var(--font);color:var(--ink-55)}
+.note{margin:14px 0 0;font:400 12px/18px var(--font);color:var(--ink-62)}
 /* 본문 절 */
 .prose p{margin:0 0 20px;font:400 17px/28px var(--font);letter-spacing:-.005em} .prose p:last-child{margin-bottom:0}
 .rks{border-top:1px solid var(--line)} .rk{padding:20px 0 18px;border-bottom:1px solid var(--hair)} .rk h4{margin:0 0 8px;font:600 16px/24px var(--font)} .rk p{margin:0;font:400 15px/24px var(--font);color:var(--ink-72)}
-.stamp{margin:24px 0 0;font:400 12px/18px var(--font);color:var(--ink-55)}
-.srcmore summary{margin-top:10px;font:500 13px/20px var(--font);color:var(--ink-55);cursor:pointer;list-style:none}
-.srcs{margin:8px 0 0;padding:0 0 0 22px;display:grid;gap:8px} .srcs li{font:400 14px/20px var(--font);color:var(--ink-55)} .srcs a{color:var(--ink-72);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px} .srcs a:hover{color:var(--ink)}
-.ainote{margin:0;font:400 15px/24px var(--font);color:var(--ink-55)}
+.stamp{margin:24px 0 0;font:400 12px/18px var(--font);color:var(--ink-62)}
+.srcmore summary{margin-top:10px;font:500 13px/20px var(--font);color:var(--ink-62);cursor:pointer;list-style:none}
+.srcs{margin:8px 0 0;padding:0 0 0 22px;display:grid;gap:8px} .srcs li{font:400 14px/20px var(--font);color:var(--ink-62)} .srcs a{color:var(--ink-72);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px} .srcs a:hover{color:var(--ink)}
+.ainote{margin:0;font:400 15px/24px var(--font);color:var(--ink-62)}
 /* 업종 내 주요 종목 표 */
 .tbl.stocks th:first-child,.tbl.stocks td:first-child{white-space:normal;min-width:170px}
 .tbl.stocks td{padding-top:12px;padding-bottom:12px}
 .tbl.stocks tbody tr{cursor:pointer} .tbl.stocks tbody tr:hover .m-name{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
-.m-rank{display:inline-block;width:24px;font:500 12px/16px var(--font);color:var(--ink-30)}
-.m-name{font:500 14px/20px var(--font)} .m-meta{margin:2px 0 0 24px;font:400 12px/16px var(--font);color:var(--ink-55)}
+.m-rank{display:inline-block;width:24px;font:500 12px/16px var(--font);color:var(--ink-62)}
+.m-name{font:500 14px/20px var(--font)} .m-meta{margin:2px 0 0 24px;font:400 12px/16px var(--font);color:var(--ink-62)}
 .tbl.stocks td.rt,.tbl.stocks th.rt{text-align:left;white-space:normal;color:var(--ink-72);max-width:320px}
 '''
 

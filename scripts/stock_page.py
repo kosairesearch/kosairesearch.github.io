@@ -124,69 +124,104 @@ def load_report(tk, D):
 
 # ── 차트 ─────────────────────────────────────────────────────────────────────
 def bar_chart(groups, w=520, h=220, pad_l=8, pad_r=8, top=28, bottom=28):
-    """groups: [(label, rev, op)] → 두 막대(매출 먹색 · 영업이익 옅은 먹색) + 값 라벨. SVG 문자열."""
+    """groups: [(label, rev, op)] → 막대 둘(매출 먹색 · 영업이익 옅은 먹색) + 값·연도 라벨.
+
+    막대는 SVG 가 그리되 가로로만 늘어나고(preserveAspectRatio none · 높이는 px 고정), 라벨은 HTML 로 얹는다 — 칸이
+    좁아져도 글자가 12px 그대로다. 전에는 라벨까지 SVG 안에 있어 휴대폰(358px)에서 13px 이 8.8px 로 줄었다(2026-09-26).
+    적자(음수)는 0선 아래로 그린다. 전에는 max(val, 0) 으로 잘라 적자가 흑자처럼 0선 위 2px 막대로 보였다.
+    음수가 있으면 아래 라벨 자리 20px 을 더 둔다. 한 묶음의 두 라벨이 같은 쪽에서 겹치면 바깥쪽 라벨을 14px 더 민다.
+    영업이익 흑자 라벨은 막대 왼쪽 끝에서 오른쪽으로 쓴다(가운데면 휴대폰에서 옆 매출 막대를 덮는다).
+    build_stock_staging.barChart(JS)가 같은 좌표·표기를 쓴다 — 한쪽만 고치지 말 것."""
     n = len(groups)
     if not n:
         return ''
-    mx = max(max(g[1] or 0, g[2] or 0) for g in groups) or 1
+    vals = [v for g in groups for v in (g[1], g[2]) if v is not None]
+    mx = max([0] + vals)
+    mn = min([0] + vals)
+    if mx == mn:
+        mx = 1
+    extra = 20 if mn < 0 else 0
+    H = h + extra
+    plot_h = h - top - bottom
+    rng = mx - mn
+    y0 = top + plot_h * mx / rng
     gw = (w - pad_l - pad_r) / n
     bw = min(22, gw * 0.24)
     gap = 6
-    plot_h = h - top - bottom
-    out = [f'<svg class="ch" viewBox="0 0 {w} {h}" role="img" aria-label="매출·영업이익 막대그래프">']
-    out.append(f'<line x1="{pad_l}" y1="{top + plot_h}" x2="{w - pad_r}" y2="{top + plot_h}" class="ch-base"/>')
+    svg = [f'<svg viewBox="0 0 {w} {H}" preserveAspectRatio="none" aria-hidden="true">',
+           f'<line x1="{pad_l}" y1="{y0:.1f}" x2="{w - pad_r}" y2="{y0:.1f}" class="ch-base" vector-effect="non-scaling-stroke"/>']
+    labs = []
     for i, (label, rev, op) in enumerate(groups):
         cx = pad_l + gw * i + gw / 2
+        marks = []
         for j, (val, cls) in enumerate([(rev, 'ch-rev'), (op, 'ch-op')]):
             if val is None:
                 continue
-            bh = max(2, plot_h * max(val, 0) / mx)
             x = cx - bw - gap / 2 if j == 0 else cx + gap / 2
-            y = top + plot_h - bh
-            out.append(f'<rect class="{cls}" x="{x:.1f}" y="{y:.1f}" width="{bw:.1f}" height="{bh:.1f}" rx="2"/>')
-            out.append(f'<text class="ch-val" x="{x + bw / 2:.1f}" y="{y - 6:.1f}" text-anchor="middle">{fjo(val)}</text>')
-        out.append(f'<text class="ch-lab" x="{cx:.1f}" y="{h - 8}" text-anchor="middle">{esc(label)}</text>')
-    out.append('</svg>')
-    return ''.join(out)
+            bh = plot_h * abs(val) / rng
+            if val:
+                bh = max(1.5, bh)
+                y = y0 - bh if val > 0 else y0
+                svg.append(f'<rect class="{cls}" x="{x:.1f}" y="{y:.1f}" width="{bw:.1f}" height="{bh:.1f}"/>')
+            up = val >= 0
+            # 영업이익(오른쪽) 흑자 라벨은 막대 왼쪽 끝에서 오른쪽으로 쓴다 — 가운데에 두면 옆의 더 긴 매출 막대 위로 번진다
+            lft = j == 1 and up
+            marks.append([x if lft else x + bw / 2, (y0 - bh - 5) if up else (y0 + bh + 5), up, fjo(val), lft])
+        if len(marks) == 2 and marks[0][2] == marks[1][2] and abs(marks[0][1] - marks[1][1]) < 14:
+            a, b = marks
+            if a[2]:
+                hi, lo = (a, b) if a[1] <= b[1] else (b, a)
+                hi[1] = lo[1] - 14
+            else:
+                deep, sh = (a, b) if a[1] >= b[1] else (b, a)
+                deep[1] = sh[1] + 14
+        for mx_, ly, up, txt, lft in marks:
+            cls = 'ch-val' + ('' if up else ' dn') + (' l' if lft else '')
+            labs.append(f'<span class="{cls}" style="left:{mx_ / w * 100:.2f}%;top:{ly:.1f}px">{txt}</span>')
+        labs.append(f'<span class="ch-lab" style="left:{cx / w * 100:.2f}%;top:{H - 20}px">{esc(label)}</span>')
+    svg.append('</svg>')
+    return (f'<div class="ch" role="img" aria-label="매출·영업이익 막대그래프" style="height:{H}px">'
+            + ''.join(svg) + ''.join(labs) + '</div>')
 
 
 # ── 옷 ───────────────────────────────────────────────────────────────────────
 PAGE_CSS = '''
 /* 히어로 */
 .hero{padding:32px 0 36px}
-.eyebrow{font:500 13px/20px var(--font);color:var(--ink-55);display:flex;gap:10px;align-items:center}
+.eyebrow{font:500 13px/20px var(--font);color:var(--ink-62);display:flex;gap:10px;align-items:center}
 .eyebrow b{font-weight:500;color:var(--ink-72)}
 h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
 .price{margin-top:22px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
 .price .p{font:600 40px/44px var(--font);letter-spacing:-.02em}
 .price .c{font:600 17px/24px var(--font)}
-.price .d{font:400 13px/20px var(--font);color:var(--ink-55)}
+.price .d{font:400 13px/20px var(--font);color:var(--ink-62)}
 .actions{margin-top:26px;display:flex;gap:10px;align-items:center}
 /* 관심종목 단추 — 더하기(추가) → 체크(추가됨). 목록 페이지의 +/✓ 와 같은 기호. 켜면 선 테두리 알약 */
 .btn .wb-on{display:none} .btn.on .wb-add{display:none} .btn.on .wb-on{display:block;stroke-width:2.4}
 .btn.on{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)} .btn.on:hover{box-shadow:inset 0 0 0 1px var(--ink)}
 .tile figcaption{font:500 13px/20px var(--font);color:var(--ink-72);display:flex;justify-content:space-between;padding-bottom:10px;border-bottom:1px solid var(--hair)}
-.tile figcaption span{color:var(--ink-55);font-weight:400}
-.ch{width:100%;height:auto;display:block;margin-top:10px}
+.tile figcaption span{color:var(--ink-62);font-weight:400}
+.ch{position:relative;margin-top:10px} .ch svg{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible}
 .ch-base{stroke:var(--line);stroke-width:1} .ch-rev{fill:var(--ink)} .ch-op{fill:var(--ink-30)}
-.ch-val{font:500 13px var(--font);fill:var(--ink-55)} .ch-lab{font:500 13px var(--font);fill:var(--ink-55)}
-.lg{display:flex;align-items:center;gap:6px;font:400 12px/16px var(--font);color:var(--ink-55);margin-top:8px}
+.ch-val,.ch-lab{position:absolute;white-space:nowrap;font:500 12px/1 var(--font);color:var(--ink-62);font-variant-numeric:tabular-nums}
+.ch-val{transform:translate(-50%,-100%)} .ch-val.dn,.ch-lab{transform:translateX(-50%)} .ch-val.l{transform:translateY(-100%)}
+.lg{display:flex;align-items:center;gap:6px;font:400 12px/16px var(--font);color:var(--ink-62);margin-top:8px}
 .lg i{width:10px;height:10px;border-radius:2px;display:inline-block;margin-left:10px} .lg i:first-child{margin-left:0} .l-rev{background:var(--ink)} .l-op{background:var(--ink-30)}
 /* 지표 스트립 */
 .stats{border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:22px 0;display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:16px}
-.stats-note{margin:10px 0 0;font:400 12px/16px var(--font);color:var(--ink-55)}
-.st-k{font:500 12px/16px var(--font);color:var(--ink-55)} .st-v{margin-top:6px;font:600 19px/24px var(--font);letter-spacing:-.01em;white-space:nowrap} .st-s{margin-top:4px;font:400 11px/14px var(--font);color:var(--ink-55)}
+.stats-note{margin:10px 0 0;font:400 12px/16px var(--font);color:var(--ink-62)}
+.st-k{font:500 12px/16px var(--font);color:var(--ink-62)} .st-v{margin-top:6px;font:600 19px/24px var(--font);letter-spacing:-.01em;white-space:nowrap} .st-s{margin-top:4px;font:400 11px/14px var(--font);color:var(--ink-62)}
 /* 본문 */
 ''' + C.TOC_CSS + '''
-.sec-h.sec-h-quiet h2{font-size:13px;line-height:20px;font-weight:600;color:var(--ink-55);letter-spacing:0}
+.sec-h.sec-h-quiet h2{font-size:13px;line-height:20px;font-weight:600;color:var(--ink-62);letter-spacing:0}
 .prose p{margin:0 0 20px;font:400 17px/28px var(--font);letter-spacing:-.005em} .prose p:last-child{margin-bottom:0}
-.note{margin:16px 0 0;font:400 12px/18px var(--font);color:var(--ink-55)}
+.note{margin:16px 0 0;font:400 12px/18px var(--font);color:var(--ink-62)}
 /* 초록(요약) — 상자 없이 제목·요지·핵심 목록 */
 .abstract{padding:0}
 .ab-title{margin:4px 0 0;font:700 30px/40px var(--font);letter-spacing:-.02em;text-wrap:balance}
 .ab-lead{margin:20px 0 0;font:400 18px/30px var(--font);color:var(--ink-72)}
 .kp{list-style:none;margin:26px 0 0;padding:22px 0 0;border-top:1px solid var(--hair);display:grid;gap:12px}
-.kp li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:10px;align-items:baseline} .kp .n{font:600 12px/24px var(--font);color:var(--ink-30)} .kp p{margin:0;font:400 15px/24px var(--font)}
+.kp li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:10px;align-items:baseline} .kp .n{font:600 12px/24px var(--font);color:var(--ink-62)} .kp p{margin:0;font:400 15px/24px var(--font)}
 /* 차트 타일 · 표 */
 .tiles{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:32px}
 .tile{margin:0;padding:0}
@@ -206,14 +241,14 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
 /* 체크포인트 */
 .cps{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 .cps li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;align-items:start;padding:16px 0;border-bottom:1px solid var(--hair)}
-.cps .when{font:500 13px/24px var(--font);color:var(--ink-55);white-space:nowrap}
+.cps .when{font:500 13px/24px var(--font);color:var(--ink-62);white-space:nowrap}
 .cps p{margin:0;font:400 15px/24px var(--font)}
 .verdict p{font-size:17px}
 /* 출처 */
-.srcs{margin:0;padding:0 0 0 22px;display:grid;gap:8px} .srcs li{font:400 14px/20px var(--font);color:var(--ink-55)} .srcs a{color:var(--ink-72);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px} .srcs a:hover{color:var(--ink);text-decoration-color:var(--ink)}
-.srcmore summary{margin-top:14px;font:500 13px/20px var(--font);color:var(--ink-55);cursor:pointer;list-style:none} .srcmore[open] summary{margin-bottom:8px}
-.rdate{max-width:880px;margin:-40px 0 0;font:500 13px/20px var(--font);color:var(--ink-55)}
-.disc{max-width:880px;margin:24px 0 0;padding:18px 0 0;border-top:1px solid var(--hair);font:400 12px/18px var(--font);color:var(--ink-55)}
+.srcs{margin:0;padding:0 0 0 22px;display:grid;gap:8px} .srcs li{font:400 14px/20px var(--font);color:var(--ink-62)} .srcs a{color:var(--ink-72);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px} .srcs a:hover{color:var(--ink);text-decoration-color:var(--ink)}
+.srcmore summary{margin-top:14px;font:500 13px/20px var(--font);color:var(--ink-62);cursor:pointer;list-style:none} .srcmore[open] summary{margin-bottom:8px}
+.rdate{max-width:880px;margin:-40px 0 0;font:500 13px/20px var(--font);color:var(--ink-62)}
+.disc{max-width:880px;margin:24px 0 0;padding:18px 0 0;border-top:1px solid var(--hair);font:400 12px/18px var(--font);color:var(--ink-62)}
 /* 리포트가 아직 없는 종목 */
 .pending{max-width:720px;padding:48px 0 24px} .pending h2{margin:0;font:700 24px/32px var(--font);letter-spacing:-.02em} .pending p{margin:14px 0 0;font:400 16px/27px var(--font);color:var(--ink-72)}
 .pending .srcs{margin-top:28px}

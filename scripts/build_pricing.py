@@ -62,9 +62,9 @@ CSS = '''
 /* 플랜 세 단 — 상자 없이 가는 선으로 가른다 */
 .plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 40px;margin-top:44px;border-top:1px solid var(--line)}
 .plan{position:relative;padding:28px 0 36px;border-bottom:1px solid var(--hair)} .plan+.plan{border-left:1px solid var(--hair);padding-left:32px;margin-left:-8px}
-.plan-name{margin:0;font:600 12px/16px var(--font);letter-spacing:.06em;color:var(--ink-55)}
-.plan-price{margin:12px 0 0;font:700 36px/44px var(--font);letter-spacing:-.02em} .plan-price span{font:500 14px/20px var(--font);letter-spacing:0;color:var(--ink-55);margin-left:6px}
-.plan-sub{margin:4px 0 0;font:400 13px/20px var(--font);color:var(--ink-55);min-height:20px}
+.plan-name{margin:0;font:600 12px/16px var(--font);letter-spacing:.06em;color:var(--ink-62)}
+.plan-price{margin:12px 0 0;font:700 36px/44px var(--font);letter-spacing:-.02em} .plan-price span{font:500 14px/20px var(--font);letter-spacing:0;color:var(--ink-62);margin-left:6px}
+.plan-sub{margin:4px 0 0;font:400 13px/20px var(--font);color:var(--ink-62);min-height:20px}
 .plan-feats{list-style:none;margin:22px 0 0;padding:0} .plan-feats li{padding:9px 0;border-top:1px solid var(--hair);font:400 14px/20px var(--font)}
 .plan .btn{margin-top:24px;width:100%;justify-content:center;height:44px;font-size:14px}
 /* 세 칸의 단추를 한 줄에 — 무료 칸의 항목이 하나 더 많아 단추가 아래로 처졌다(2026-09-26 사장). 칸을 세로 flex 로 두고 단추를 바닥에 붙인다. */
@@ -72,9 +72,9 @@ CSS = '''
 .plan-msg{display:none;margin:12px 0 0;font:400 13px/20px var(--font);color:var(--ink-72)} .plan-msg.show{display:block} .plan-msg.err{color:var(--up)}
 .plan-badge.js{position:absolute;top:28px;right:0;font:600 12px/16px var(--font);color:var(--ink)}
 /* 제공 범위 표 */
-.cmp{padding-top:88px} .cmp-t th:first-child,.cmp-t td:first-child{width:auto;white-space:normal} .cmp-t .d{display:block;margin-top:2px;font:400 12px/16px var(--font);color:var(--ink-55)}
+.cmp{padding-top:88px} .cmp-t th:first-child,.cmp-t td:first-child{width:auto;white-space:normal} .cmp-t .d{display:block;margin-top:2px;font:400 12px/16px var(--font);color:var(--ink-62)}
 .cmp-t th,.cmp-t td{text-align:center;vertical-align:top} .cmp-t th:first-child,.cmp-t td:first-child{text-align:left}
-.mk{font:500 14px/20px var(--font)} .mk-y{color:var(--ink)} .mk-n{color:var(--ink-30)} .cmp-t tr.lim td{font-weight:500}
+.mk{font:500 14px/20px var(--font)} .mk-y{color:var(--ink)} .mk-n{color:var(--ink-62)} .cmp-t tr.lim td{font-weight:500}
 /* 자주 묻는 질문 */
 .faq{padding-top:88px;max-width:760px} .qa{border-top:1px solid var(--hair)} .qa:last-of-type{border-bottom:1px solid var(--hair)}
 .qa summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:18px 0;font:600 16px/24px var(--font)} .qa summary::-webkit-details-marker{display:none}
