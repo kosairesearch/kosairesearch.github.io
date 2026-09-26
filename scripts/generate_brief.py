@@ -644,7 +644,7 @@ def _facts_text(facts):
         more = f" (전체 {total:,}건 중 시총 상위 {len(fils)}건)" if total > len(fils) else ""
         L.append(f"\n[정기보고서 접수 · 커버리지 종목{more}]")
         for f in fils[:12]:
-            L.append(f"  {f['name']}({f['ticker']}) {f['report']} · 시총 {f.get('mcap', 0):.1f}조")
+            L.append(f"  {f['name']}({f['ticker']}) {f['report']} · 시총 {number_spacing.mcap_text(f.get('mcap'))}")
             if f.get("reportDate"):
                 L.append(f"     └ 리포트 작성일 {f['reportDate']}"
                          + (f" · 제목 「{f['reportTitle']}」" if f.get("reportTitle") else ""))

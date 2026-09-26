@@ -99,5 +99,14 @@ eq("quant 는 건너뛴다", out["quant"]["note"]["ko"], "3조4,000억원")
 eq("sources 도 건너뛴다", out["sources"][0], "https://example.com/1조2,345억원")
 eq("바뀐 곳 수를 센다 — 제목·리드·목록 셋", n, 3)
 
+print("\n── 시가총액 표기 mcap_text — 조 한 자리로 고정하지 않는다 ──")
+from number_spacing import mcap_text  # noqa: E402
+eq("1조 미만은 억 — 0.0조가 되지 않는다", mcap_text(0.0512), "512억")
+eq("0.4조 → 4,000억", mcap_text(0.4), "4,000억")
+eq("1조 이상은 소수 한 자리", mcap_text(468.2), "468.2조")
+eq("끝의 .0 은 뗀다", mcap_text(3.0), "3조")
+eq("천 단위 쉼표", mcap_text(1669.1125), "1,669.1조")
+eq("값이 없으면 —", (mcap_text(None), mcap_text(0)), ("—", "—"))
+
 print(f"\nPASS {PASS}  FAIL {FAIL}")
 sys.exit(1 if FAIL else 0)

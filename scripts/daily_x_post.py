@@ -25,6 +25,9 @@ from pathlib import Path
 
 import requests
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import number_spacing  # noqa: E402  시가총액 표기 — 1조 미만은 억(0.0조 → 500억)
+
 ROOT = Path(__file__).resolve().parent.parent
 STATE = ROOT / "data" / "_x_daily.json"
 KST = timezone(timedelta(hours=9))
@@ -126,7 +129,7 @@ def choose_with_judgment(cands):
         s = c["stock"]
         rows.append(
             f'{s["ticker"]} {s.get("name")} | {s.get("sector")} | 당일 {c["change"]}% '
-            f'| 시총 {round(s.get("mcap",0),1)}조 | PER {c["per"]} | PBR {c["pbr"]} '
+            f'| 시총 {number_spacing.mcap_text(s.get("mcap"))} | PER {c["per"]} | PBR {c["pbr"]} '
             f'| 배당 {c["div"]}% | [{c["tag"]}] | 논지: {(c["lead"] or c["title"])[:160]}')
     sys_p = (
         "You are the editor of KOSAI, an English research brand on Korean stocks. "
