@@ -185,13 +185,15 @@ def sectors():
         m = s.get("mcap") or 0
         a["mcap"] += m
         a["w"] += m * (s.get("change") or 0)
-        a["top"].append((m, s["name"]))
+        a["top"].append((m, s["name"], s.get("change") or 0, s["ticker"]))
     tot = sum(a["mcap"] for a in agg.values())
     out = []
     for a in agg.values():
         a["chg"] = a["w"] / a["mcap"] if a["mcap"] else 0
         a["share"] = a["mcap"] / tot * 100
-        a["top"] = [nm for _, nm in sorted(a["top"], reverse=True)[:3]]
+        tops = sorted(a["top"], reverse=True)
+        a["tops"] = [{"name": nm, "chg": ch, "mcap": m, "tk": tk} for m, nm, ch, tk in tops[:3]]
+        a["top"] = [nm for _, nm, _, _ in tops[:3]]
         a["lead"] = (SECTORS_AI.get(a["name"], {}).get("lead") or {}).get("ko", "")
         out.append(a)
     return sorted(out, key=lambda a: -a["mcap"]), tot
@@ -263,3 +265,26 @@ def squarify(items, x, y, w, h):
 
 def esc(s):
     return (str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;"))
+
+
+def now_date():
+    """이 페이지의 '오늘' — 데이터 가운데 가장 늦은 날짜(리포트·시세·브리핑)."""
+    ds = [PRICE_DATE, brief()["date"].replace("-", "")]
+    ds += [r.get("reportDate", "").replace("-", "") for r in INDEX.values() if r.get("reportDate")]
+    return max(d for d in ds if d)
+
+
+def publish_time(b):
+    """브리핑 실제 발행 시각 '오전 7시 28분'"""
+    t = ((b.get("meta") or {}).get("publishedAt") or "")[11:16]
+    if not t:
+        return ""
+    h, m = int(t[:2]), int(t[3:])
+    return f"{'오전' if h < 12 else '오후'} {h if h <= 12 else h - 12}시 {m}분"
+
+
+def breadth_today():
+    """최근 거래일(stocks.js) 전 종목의 오름·내림·보합 수"""
+    up = sum(1 for s in STOCKS["stocks"] if (s.get("change") or 0) > 0)
+    dn = sum(1 for s in STOCKS["stocks"] if (s.get("change") or 0) < 0)
+    return up, dn, len(STOCKS["stocks"]) - up - dn

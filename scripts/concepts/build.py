@@ -28,8 +28,6 @@ def build(which):
 
 
 CONCEPTS = [
-    ("a", "A", "종이 에디션", "인쇄된 리서치 저널. 명조 제목과 세리프 숫자, 괘선, 발행 번호. 조용하고 오래가는 고급.", "#f9f8f6", "#141414"),
-    ("b", "B", "다크 시네마틱", "깊은 검정 위 새벽빛 하나. 아침 7시 발행을 빛으로 말하고, 실제 데이터로 그린 제품 화면을 보여 준다.", "#07070a", "#f4f3f1"),
     ("c", "C", "쇼케이스", "한 장면에 한 메시지. 큰 제목과 큰 숫자, 리포트를 제품 사진처럼. 밝고 또렷한 고급.", "#f5f5f7", "#1d1d1f"),
 ]
 
@@ -58,8 +56,8 @@ def gallery():
     html = ('<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             '<meta name="robots" content="noindex,nofollow"><title>KOSAI 디자인 시안</title>'
             '<link href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">'
-            f'<style>{css}</style></head><body><main class="w"><header class="top"><small>KOSAI</small><h1>디자인 시안 — 세 갈래</h1>'
-            '<p>같은 데이터(9월 23일 브리핑·시세, 삼성전자 리포트)로 그린 세 가지 방향입니다. 홈과 리포트 페이지를 휴대폰과 PC에서 각각 보실 수 있습니다. '
+            f'<style>{css}</style></head><body><main class="w"><header class="top"><small>KOSAI</small><h1>디자인 시안</h1>'
+            '<p>9월 23일 브리핑·시세와 삼성전자 리포트로 그린 시안입니다. 홈과 리포트 페이지를 휴대폰과 PC에서 각각 보실 수 있습니다. '
             '스테이징·실사이트와는 별개의 미리보기입니다.</p></header>'
             f'{rows}<p class="foot">검색에 나오지 않는 미리보기 페이지입니다(noindex). 링크·단추는 모양만 있습니다.</p></main></body></html>')
     write("index.html", html)
@@ -85,7 +83,7 @@ if __name__ == "__main__":
     if args[:1] == ["thumbs"]:
         thumbs(args[1])
         sys.exit(0)
-    for w in (args or ["a", "b", "c"]):
+    for w in (args or [k for k, *_ in CONCEPTS]):
         if os.path.exists(os.path.join(os.path.dirname(__file__), f"{w}.py")):
             build(w)
     if not args:
