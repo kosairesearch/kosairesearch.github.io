@@ -1,5 +1,50 @@
 /* 관심종목 단추 — 실사이트에서는 KOSWatch(Firestore)가 켜고 끈다. 여기서는 화면 안에서만 */
 (function(){var b=document.getElementById('watchBtn'),t=document.getElementById('watchTxt');if(!b)return;b.addEventListener('click',function(){var on=!b.classList.contains('on');b.classList.toggle('on',on);b.setAttribute('aria-pressed',on?'true':'false');t.textContent=on?'관심종목 추가됨':'관심종목 추가'})})();
+(function(){
+function box(e){ var r=e.getBoundingClientRect(); return {l:r.left,r:r.right,t:r.top,b:r.bottom}; }
+function mv(b,dx){ return {l:b.l+dx,r:b.r+dx,t:b.t,b:b.b}; }
+function fit(ch){
+  var labs=[].slice.call(ch.querySelectorAll('.ch-val'));
+  ch.style.marginTop=''; ch.style.marginBottom=''; labs.forEach(function(l){ l.style.marginTop=''; l.style.marginLeft=''; });
+  var c0=box(ch); if(c0.r-c0.l<1) return;
+  var rects=[].slice.call(ch.querySelectorAll('rect')).map(box), obst=rects.concat([].slice.call(ch.querySelectorAll('.ch-lab')).map(box)), lo=c0.t, hi=c0.b;
+  function inside(b,dx){ if(b.r+dx>c0.r) dx=c0.r-b.r; if(b.l+dx<c0.l) dx=c0.l-b.l; return dx; }
+  function lift(b,up){
+    var dy=0, n, k, o, hit;
+    for(n=0;n<24;n++){
+      hit=null;
+      for(k=0;k<obst.length;k++){ o=obst[k]; if(b.l<o.r-.5&&o.l<b.r-.5&&b.t+dy<o.b-.5&&o.t<b.b+dy-.5){ hit=o; break; } }
+      if(!hit) break;
+      dy=up?hit.t-2-b.b:hit.b+2-b.t;
+    }
+    return dy;
+  }
+  labs.map(function(l){ return {el:l, up:!l.classList.contains('dn'), b:box(l)}; })
+    .sort(function(a,c){ return a.up!==c.up?(a.up?-1:1):(a.up?a.b.t-c.b.t:c.b.b-a.b.b); })
+    .forEach(function(it){
+      var b=it.b, dx=inside(b,0), dy=lift(mv(b,dx),it.up), bar, cx, cy;
+      /* 막대 왼쪽 끝에서 쓰는 영업이익 라벨(.l)이 비켜야 하면 제 막대 가운데로 옮긴 자리와 견줘, 덜 움직이는 쪽(비슷하면 가운데)을 쓴다 —
+         멀리 떠오른 라벨은 제 막대 바로 위에 있어야 어느 막대의 값인지 읽힌다 */
+      if(dy&&it.el.classList.contains('l')){
+        bar=rects.filter(function(r){ return Math.abs(r.l-b.l)<1.5; })[0];
+        if(bar){ cx=inside(b,(bar.r-bar.l)/2-(b.r-b.l)/2); cy=lift(mv(b,cx),it.up); if(Math.abs(cy)<=Math.abs(dy)+4){ dx=cx; dy=cy; } }
+      }
+      if(dx) it.el.style.marginLeft=dx+'px';
+      if(dy) it.el.style.marginTop=dy+'px';
+      var f={l:b.l+dx,r:b.r+dx,t:b.t+dy,b:b.b+dy}; obst.push(f); lo=Math.min(lo,f.t); hi=Math.max(hi,f.b);
+    });
+  var cs=getComputedStyle(ch), mt=parseFloat(cs.marginTop)||0, up=c0.t-lo-mt+4, dn=hi-c0.b;
+  if(up>0) ch.style.marginTop=(mt+up)+'px';
+  if(dn>0) ch.style.marginBottom=((parseFloat(cs.marginBottom)||0)+dn)+'px';
+}
+var ro=window.ResizeObserver?new ResizeObserver(function(es){ es.forEach(function(e){ fit(e.target); }); }):null;
+window.kosFitCharts=function(){
+  if(ro) ro.disconnect();
+  [].forEach.call(document.querySelectorAll('.ch'),function(ch){ fit(ch); if(ro) ro.observe(ch); });
+};
+if(document.fonts&&document.fonts.ready) document.fonts.ready.then(function(){ window.kosFitCharts(); });
+window.kosFitCharts();
+})();
 window.kosTocInit=function(){
   var nav=document.getElementById('nav'),mark=document.getElementById('chipsMark'),bar=document.getElementById('chipsBar'),mq=window.matchMedia('(max-width:820px)');
   if(!mark||!bar){window.kosOnScroll=null;window.__kosSpy=null;return}

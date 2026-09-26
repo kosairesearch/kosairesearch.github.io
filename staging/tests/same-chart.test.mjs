@@ -25,7 +25,7 @@ const ROOT = join(HERE, "..", "..");
 let pass = 0, fail = 0;
 const ok = (cond, name, extra) => { cond ? pass++ : fail++; console.log(`${cond ? "PASS" : "FAIL"}  ${name}${cond || !extra ? "" : "  ← " + extra}`); };
 
-/* 스테이징 페이지에서 함수 넷을 떼어 온다 */
+/* 스테이징 페이지에서 함수 넷을 떼어 온다(값 라벨의 fwon 은 실사이트와 같은지 same-units.test.mjs 가 본다) */
 const html = readFileSync(join(ROOT, "staging/stock.html"), "utf8");
 function grab(name) {
   const i = html.indexOf("function " + name + "(");
@@ -36,7 +36,7 @@ function grab(name) {
     else if (html[k] === "}" && --depth === 0) return html.slice(i, k + 1);
   }
 }
-const barChart = new Function(["esc", "pyf", "fjo", "barChart"].map(grab).join("\n") + "\nreturn barChart;")();
+const barChart = new Function(["esc", "pyf", "fwon", "barChart"].map(grab).join("\n") + "\nreturn barChart;")();
 
 /* 만든 예 — 적자만 · 흑자만 · 섞임 · 0 · 비어 있음 · 두 막대 높이가 비슷함 */
 const cases = [

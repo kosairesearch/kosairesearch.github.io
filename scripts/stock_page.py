@@ -20,6 +20,7 @@ import hashlib
 import json
 import re
 import sys
+from decimal import ROUND_HALF_UP, Decimal
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -66,19 +67,71 @@ def pk(v):
     return v or ''
 
 
+# 돈·주식 수 — 실사이트 stock.html 의 fwon · mcap · amt · shN 과 글자 하나까지 같다(빈 값만 '—').
+# 값마다 조·억·만을 붙인다. 한때 '조원' 하나로 고정했더니 작은 회사는 표·차트가 0.0 · -0.0, 시가총액이 0.4조원,
+# 주식 수가 0.3억주로 나왔다(2026-09-26 · 2,551곳 중 2,261곳). 실사이트가 예전에 이미 고친 버그다 — 되돌리지 말 것.
+# 반올림도 자바스크립트를 따른다: 딱 반인 값(1.25)을 toFixed·Math.round 는 올리고(1.3) 파이썬 format 은 짝수로(1.2) 붙인다.
+# 게다가 둘이 재는 값이 다르다 — toFixed·Math.round 는 이진수 값 그대로(1.15 는 사실 1.1499… → 1.1),
+# toLocaleString 은 가장 짧은 십진 표기(1.15 → 1.2)를 반올림한다.
+# 지키는 검사: staging/tests/same-units.test.mjs (실사이트 · 스테이징 JS · 이 파일 셋이 같은지)
+def _half_up(x, f=0):
+    """자바스크립트 x.toFixed(f) · Math.round(x) 의 반올림(x ≥ 0) — 이진수 값 그대로 재고, 딱 반이면 올린다."""
+    return Decimal(x).quantize(Decimal(1).scaleb(-f), rounding=ROUND_HALF_UP)
+
+
+def _grp(d):
+    """toLocaleString('en-US') 처럼 천 단위마다 쉼표."""
+    i, dot, frac = format(d, 'f').partition('.')
+    return f'{int(i):,}{dot}{frac}'
+
+
+def _intl(x, f):
+    """x.toLocaleString('en-US', {maximumFractionDigits: f}) (x ≥ 0) — 가장 짧은 십진 표기(repr)를 반올림하고 끝의 0 을 지운다."""
+    s = _grp(Decimal(repr(x)).quantize(Decimal(1).scaleb(-f), rounding=ROUND_HALF_UP))
+    return s.rstrip('0').rstrip('.') if '.' in s else s
+
+
 def fwon(v):
+    """실적(매출·영업이익·순이익) — '302.2조' · '-1,042억' · '11,633,176원'."""
     if v is None:
         return '—'
-    a = abs(v)
+    sg, a = ('-' if v < 0 else ''), abs(v)
     if a >= 1e12:
-        return f'{v / 1e12:,.1f}조'
+        return f'{sg}{_half_up(a / 1e12, 1)}조'
     if a >= 1e8:
-        return f'{v / 1e8:,.0f}억'
-    return f'{v:,.0f}'
+        return f'{sg}{_grp(_half_up(a / 1e8))}억'
+    return f'{sg}{_grp(_half_up(a))}원'
 
 
-def fjo(v):
-    return '—' if v is None else f'{v / 1e12:,.1f}'
+def fmcap(jo):
+    """시가총액(값이 조 단위) — '1,669.1조원' · '3조원' · '4,000억원'."""
+    if jo is None:
+        return '—'
+    if jo >= 1:
+        return _intl(jo, 1) + '조원'
+    return f'{_grp(_half_up(jo * 10000))}억원'
+
+
+def famt(v):
+    """거래대금(원) — '5.9조원' · '1,234억원' · '0원'."""
+    if v is None:
+        return '—'
+    if v >= 1e12:
+        return f'{_half_up(v / 1e12, 1)}조원'
+    if v >= 1e8:
+        return f'{_grp(_half_up(v / 1e8))}억원'
+    return f'{_grp(_half_up(v))}원'
+
+
+def fshares(v):
+    """거래량·상장주식수 — '58.5억주' · '3,000만주' · '8,500주'."""
+    if v is None:
+        return '—'
+    if v >= 1e8:
+        return f'{_half_up(v / 1e8, 1)}억주'
+    if v >= 1e4:
+        return f'{_grp(_half_up(v / 1e4))}만주'
+    return _intl(v, 3) + '주'
 
 
 def pct(v, signed=False):
@@ -166,7 +219,7 @@ def bar_chart(groups, w=520, h=220, pad_l=8, pad_r=8, top=28, bottom=28):
             up = val >= 0
             # 영업이익(오른쪽) 흑자 라벨은 막대 왼쪽 끝에서 오른쪽으로 쓴다 — 가운데에 두면 옆의 더 긴 매출 막대 위로 번진다
             lft = j == 1 and up
-            marks.append([x if lft else x + bw / 2, (y0 - bh - 5) if up else (y0 + bh + 5), up, fjo(val), lft])
+            marks.append([x if lft else x + bw / 2, (y0 - bh - 5) if up else (y0 + bh + 5), up, fwon(val), lft])
         if len(marks) == 2 and marks[0][2] == marks[1][2] and abs(marks[0][1] - marks[1][1]) < 14:
             a, b = marks
             if a[2]:
@@ -200,7 +253,6 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
 .btn .wb-on{display:none} .btn.on .wb-add{display:none} .btn.on .wb-on{display:block;stroke-width:2.4}
 .btn.on{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)} .btn.on:hover{box-shadow:inset 0 0 0 1px var(--ink)}
 .tile figcaption{font:500 13px/20px var(--font);color:var(--ink-72);display:flex;justify-content:space-between;padding-bottom:10px;border-bottom:1px solid var(--hair)}
-.tile figcaption span{color:var(--ink-62);font-weight:400}
 .ch{position:relative;margin-top:10px} .ch svg{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible}
 .ch-base{stroke:var(--line);stroke-width:1} .ch-rev{fill:var(--ink)} .ch-op{fill:var(--ink-30)}
 .ch-val,.ch-lab{position:absolute;white-space:nowrap;font:500 12px/1 var(--font);color:var(--ink-62);font-variant-numeric:tabular-nums}
@@ -266,9 +318,61 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
 }
 ''' + C.MOBILE_CSS + '\n' + C.TOC_MOBILE_CSS
 
+# 차트 값 라벨 비켜 세우기 — 값마다 억·조가 붙은 라벨('-1,042억' · 45px 안팎 · '11,633,176원' 은 77px)은 칸이 좁으면
+# (휴대폰 · 5분기) 옆 막대나 라벨에 닿는다. 그린 뒤 실제 폭에서 재어 닿는 라벨만 흑자는 위로, 적자는 아래로 옮긴다.
+# 높은(적자는 깊은) 라벨부터 제자리를 잡고 낮은 라벨이 비킨다. 차트 옆으로 삐져나가는 라벨(맨 오른쪽 영업이익)은 안으로 들이고,
+# 위·아래로 넘치면 그만큼 차트 여백을 늘린다. 폭이 바뀌거나 글꼴이 늦게 오면 다시 한다.
+# 처음 자리(bar_chart · build_stock_staging.barChart)는 그대로 — 자바스크립트 없이도 읽힌다. 휴대폰 390px 에서 비키는 라벨은 약 2%.
+# 정적 페이지는 PAGE_JS 로, 스테이징은 build_stock_staging 이 이 글을 그대로 넣고 그린 뒤 kosFitCharts() 를 부른다.
+CHART_FIT_JS = r'''(function(){
+function box(e){ var r=e.getBoundingClientRect(); return {l:r.left,r:r.right,t:r.top,b:r.bottom}; }
+function mv(b,dx){ return {l:b.l+dx,r:b.r+dx,t:b.t,b:b.b}; }
+function fit(ch){
+  var labs=[].slice.call(ch.querySelectorAll('.ch-val'));
+  ch.style.marginTop=''; ch.style.marginBottom=''; labs.forEach(function(l){ l.style.marginTop=''; l.style.marginLeft=''; });
+  var c0=box(ch); if(c0.r-c0.l<1) return;
+  var rects=[].slice.call(ch.querySelectorAll('rect')).map(box), obst=rects.concat([].slice.call(ch.querySelectorAll('.ch-lab')).map(box)), lo=c0.t, hi=c0.b;
+  function inside(b,dx){ if(b.r+dx>c0.r) dx=c0.r-b.r; if(b.l+dx<c0.l) dx=c0.l-b.l; return dx; }
+  function lift(b,up){
+    var dy=0, n, k, o, hit;
+    for(n=0;n<24;n++){
+      hit=null;
+      for(k=0;k<obst.length;k++){ o=obst[k]; if(b.l<o.r-.5&&o.l<b.r-.5&&b.t+dy<o.b-.5&&o.t<b.b+dy-.5){ hit=o; break; } }
+      if(!hit) break;
+      dy=up?hit.t-2-b.b:hit.b+2-b.t;
+    }
+    return dy;
+  }
+  labs.map(function(l){ return {el:l, up:!l.classList.contains('dn'), b:box(l)}; })
+    .sort(function(a,c){ return a.up!==c.up?(a.up?-1:1):(a.up?a.b.t-c.b.t:c.b.b-a.b.b); })
+    .forEach(function(it){
+      var b=it.b, dx=inside(b,0), dy=lift(mv(b,dx),it.up), bar, cx, cy;
+      /* 막대 왼쪽 끝에서 쓰는 영업이익 라벨(.l)이 비켜야 하면 제 막대 가운데로 옮긴 자리와 견줘, 덜 움직이는 쪽(비슷하면 가운데)을 쓴다 —
+         멀리 떠오른 라벨은 제 막대 바로 위에 있어야 어느 막대의 값인지 읽힌다 */
+      if(dy&&it.el.classList.contains('l')){
+        bar=rects.filter(function(r){ return Math.abs(r.l-b.l)<1.5; })[0];
+        if(bar){ cx=inside(b,(bar.r-bar.l)/2-(b.r-b.l)/2); cy=lift(mv(b,cx),it.up); if(Math.abs(cy)<=Math.abs(dy)+4){ dx=cx; dy=cy; } }
+      }
+      if(dx) it.el.style.marginLeft=dx+'px';
+      if(dy) it.el.style.marginTop=dy+'px';
+      var f={l:b.l+dx,r:b.r+dx,t:b.t+dy,b:b.b+dy}; obst.push(f); lo=Math.min(lo,f.t); hi=Math.max(hi,f.b);
+    });
+  var cs=getComputedStyle(ch), mt=parseFloat(cs.marginTop)||0, up=c0.t-lo-mt+4, dn=hi-c0.b;
+  if(up>0) ch.style.marginTop=(mt+up)+'px';
+  if(dn>0) ch.style.marginBottom=((parseFloat(cs.marginBottom)||0)+dn)+'px';
+}
+var ro=window.ResizeObserver?new ResizeObserver(function(es){ es.forEach(function(e){ fit(e.target); }); }):null;
+window.kosFitCharts=function(){
+  if(ro) ro.disconnect();
+  [].forEach.call(document.querySelectorAll('.ch'),function(ch){ fit(ch); if(ro) ro.observe(ch); });
+};
+if(document.fonts&&document.fonts.ready) document.fonts.ready.then(function(){ window.kosFitCharts(); });
+window.kosFitCharts();
+})();'''
+
 PAGE_JS = ('/* 관심종목 단추 — 실사이트에서는 KOSWatch(Firestore)가 켜고 끈다. 여기서는 화면 안에서만 */\n'
            "(function(){var b=document.getElementById('watchBtn'),t=document.getElementById('watchTxt');if(!b)return;b.addEventListener('click',function(){var on=!b.classList.contains('on');b.classList.toggle('on',on);b.setAttribute('aria-pressed',on?'true':'false');t.textContent=on?'관심종목 추가됨':'관심종목 추가'})})();\n"
-           + C.TOC_JS + '\n' + C.JS)
+           + CHART_FIT_JS + '\n' + C.TOC_JS + '\n' + C.JS)
 
 
 def asset_version(text):
@@ -291,9 +395,8 @@ def _stats(st, rep, tier, D):
         window = None
     def f(v, fmt):
         return '—' if v is None else fmt.format(v)
-    stats = [('시가총액', f(st.get('mcap'), '{:,.1f}조원')), ('거래대금', (fwon(st.get('trading_value')) + '원') if st.get('trading_value') is not None else '—'),
-             ('거래량', f(st.get('volume'), '{:,.0f}주') if (st.get('volume') or 0) < 1e4 else f((st.get('volume') or 0) / 1e4, '{:,.0f}만주')),
-             ('상장주식수', f((st.get('shares') or 0) / 1e8 if st.get('shares') else None, '{:,.1f}억주')),
+    stats = [('시가총액', fmcap(st.get('mcap'))), ('거래대금', famt(st.get('trading_value'))),
+             ('거래량', fshares(st.get('volume'))), ('상장주식수', fshares(st.get('shares'))),
              ('PER', f(per, '{:.1f}배')), ('PBR', f(pbr, '{:.1f}배')), ('EPS', f(eps, '{:,.0f}원')), ('배당수익률', f(div, '{:.2f}%'))]
     html = ''.join(f'<div class="st"><div class="st-k">{esc(k)}</div><div class="st-v">{esc(v)}</div></div>' for k, v in stats)
     if tier == 'v2':
@@ -329,8 +432,8 @@ def _body_v2(rep):
     quarterly = q.get('quarterly') or []
     q_chart = bar_chart([(x['q'][2:4] + 'Q' + x['q'][-1], x.get('rev'), x.get('op')) for x in quarterly])
     a_chart = bar_chart([(str(a['year']), a.get('rev'), a.get('op')) for a in annual])
-    ann_rows = ''.join(f'<tr><th scope="row">{a["year"]}</th><td>{fjo(a.get("rev"))}</td><td>{fjo(a.get("op"))}</td><td>{fjo(a.get("np_owner"))}</td><td>{pct(a.get("opm"))}</td><td>{pct(a.get("roe"))}</td><td>{pct(a.get("debt_ratio"))}</td></tr>' for a in annual)
-    qtr_rows = ''.join(f'<tr><th scope="row">{esc(x["q"])}</th><td>{fjo(x.get("rev"))}</td><td>{fjo(x.get("op"))}</td><td>{pct(x["op"] / x["rev"] * 100) if x.get("rev") and x.get("op") is not None else "—"}</td></tr>' for x in quarterly)
+    ann_rows = ''.join(f'<tr><th scope="row">{a["year"]}</th><td>{fwon(a.get("rev"))}</td><td>{fwon(a.get("op"))}</td><td>{fwon(a.get("np_owner"))}</td><td>{pct(a.get("opm"))}</td><td>{pct(a.get("roe"))}</td><td>{pct(a.get("debt_ratio"))}</td></tr>' for a in annual)
+    qtr_rows = ''.join(f'<tr><th scope="row">{esc(x["q"])}</th><td>{fwon(x.get("rev"))}</td><td>{fwon(x.get("op"))}</td><td>{pct(x["op"] / x["rev"] * 100) if x.get("rev") and x.get("op") is not None else "—"}</td></tr>' for x in quarterly)
     risk_rows = ''.join(f'<div class="rk"><div class="rk-c">{esc(pk(r.get("cat")))}</div><div class="rk-b">{paras(pk(r.get("body")))}</div></div>' for r in rep.get('risks') or [])
     cp_rows = ''.join(f'<li><span class="when">{esc(pk(c.get("when")))}</span><p>{esc(pk(c.get("what")))}</p></li>' for c in rep.get('checkpoints') or [])
     kp = ''.join(f'<li><span class="n">{i + 1}</span><p>{esc(pk(k))}</p></li>' for i, k in enumerate(rep.get('keypoints') or []))
@@ -341,10 +444,10 @@ def _body_v2(rep):
         f'''<section class="sec" id="s01"><div class="sec-h sec-h-quiet"><span class="num">01</span><h2>리포트 개요</h2></div>
         <div class="abstract"><h3 class="ab-title">{esc(pk(rep.get("title")))}</h3><p class="ab-lead">{esc(pk(rep.get("lead")))}</p><ol class="kp">{kp}</ol></div></section>''',
         _sec(2, '사업 구조', f'<div class="prose">{paras(pk(rep.get("business")))}</div>'),
-        _sec(3, '실적 추이', f'''<div class="tiles"><figure class="tile"><figcaption>분기 매출 · 영업이익 <span>단위: 조원</span></figcaption>{q_chart}<div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div></figure>
-        <figure class="tile"><figcaption>연간 매출 · 영업이익 <span>단위: 조원</span></figcaption>{a_chart}<div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div></figure></div>
-        <div class="tbl-wrap"><table class="tbl"><caption><div class="cap"><span>분기 실적 · 최근 {len(quarterly)}분기</span><span class="u">단위: 조원</span></div></caption><thead><tr><th>분기</th><th>매출액</th><th>영업이익</th><th>영업이익률</th></tr></thead><tbody>{qtr_rows}</tbody></table></div>
-        <div class="tbl-wrap"><table class="tbl"><caption><div class="cap"><span>연간 실적</span><span class="u">단위: 조원</span></div></caption><thead><tr><th>연도</th><th>매출액</th><th>영업이익</th><th>지배주주 순이익</th><th>영업이익률</th><th>ROE</th><th>부채비율</th></tr></thead><tbody>{ann_rows}</tbody></table></div>
+        _sec(3, '실적 추이', f'''<div class="tiles"><figure class="tile"><figcaption>분기 매출 · 영업이익</figcaption>{q_chart}<div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div></figure>
+        <figure class="tile"><figcaption>연간 매출 · 영업이익</figcaption>{a_chart}<div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div></figure></div>
+        <div class="tbl-wrap"><table class="tbl"><caption><div class="cap"><span>분기 실적 · 최근 {len(quarterly)}분기</span></div></caption><thead><tr><th>분기</th><th>매출액</th><th>영업이익</th><th>영업이익률</th></tr></thead><tbody>{qtr_rows}</tbody></table></div>
+        <div class="tbl-wrap"><table class="tbl"><caption><div class="cap"><span>연간 실적</span></div></caption><thead><tr><th>연도</th><th>매출액</th><th>영업이익</th><th>지배주주 순이익</th><th>영업이익률</th><th>ROE</th><th>부채비율</th></tr></thead><tbody>{ann_rows}</tbody></table></div>
         <p class="note">연결 기준(자회사 실적을 합친 재무제표) · DART 공시 확정치 · 순이익은 지배주주 기준 · 데이터 {esc(q.get("asOf"))}</p>''', wide=True),
         _sec(4, '실적 분석', f'<div class="prose">{paras(pk(rep.get("earnings")))}</div>'),
         _sec(5, '산업 분석', f'<div class="prose">{paras(pk(rep.get("industry")))}</div>'),

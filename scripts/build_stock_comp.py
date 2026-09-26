@@ -19,7 +19,7 @@ import stock_page as S  # noqa: E402
 
 # 다른 시안 생성기가 참고하던 이름들 — 그대로 내보낸다
 SECTIONS = S.SECTIONS_V2
-esc, chunk, paras, fwon, fjo, pct, bar_chart = S.esc, S.chunk, S.paras, S.fwon, S.fjo, S.pct, S.bar_chart
+esc, chunk, paras, fwon, pct, bar_chart = S.esc, S.chunk, S.paras, S.fwon, S.pct, S.bar_chart
 
 
 def build(tk, out_path):
