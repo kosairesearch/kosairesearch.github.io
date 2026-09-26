@@ -87,5 +87,74 @@ eq("멀쩡한 문장은 아무것도 안 걸린다",
 print("\n── 교정 프롬프트에 새 규칙이 들어갔나 ──")
 eq("_RULE_TEXT 에 pershare 설명이 있다", "pershare" in C._RULE_TEXT, True)
 
+# ── 글자 결함 (2026-09-26) ───────────────────────────────────────────────
+# 사장이 HLB 본문에서 '<sup index="36-2,36-3"></sup>' 를 먼저 봤다. 전수로 훑으니 태그 5개 리포트,
+# 깨진 글자(�) 186개 리포트, '경쁴력'·'플랕폼' 같은 엉뚱한 글자 150여 곳이 있었다. 금지 표현 검사는
+# 표현만 봤지 글자를 보지 않았다. 여기서는 검사가 그것을 잡는지, 멀쩡한 말은 건드리지 않는지,
+# 그리고 지금 화면에 나오는 리포트·업종 분석 전부에 결함이 없는지 본다(맨 아래 '전수').
+print("\n── 글자 결함: 태그·인용 표시는 지우고 감싼 글은 남긴다 (clean_markup) ──")
+cm = C.clean_markup
+eq("sup 인용 번호", cm('HLB이엔지로 나뉜다<sup index="36-2,36-3"></sup>. 즉'), "HLB이엔지로 나뉜다. 즉")
+eq("citation", cm('평가된다<citation index="29-13"></citation>. 사업은'), "평가된다. 사업은")
+eq("a href — 감싼 글은 남긴다", cm('나뉘는데, <a href="https://x.kr/1">멤피스 공장은 유일하다</a>. 끝'), "나뉘는데, 멤피스 공장은 유일하다. 끝")
+eq("br", cm("Birmingham.'<br> With"), "Birmingham.' With")
+eq("br 뒤 문단", cm("있다.\n\n</br>또한"), "있다.\n\n또한")
+eq("마크다운 굵게", cm("크게 **하이테크 사업부문**과"), "크게 하이테크 사업부문과")
+eq("HTML 이름표", cm("LS CABLE &amp; SYSTEM"), "LS CABLE & SYSTEM")
+eq("꺾쇠로 쓴 제목은 그대로", cm("<세브란스: 단절> 과 <A Killer Paradox>"), "<세브란스: 단절> 과 <A Killer Paradox>")
+eq("멀쩡한 글은 그대로", cm("매출은 1,797억원이다."), "매출은 1,797억원이다.")
+
+
+def drules(ko, en="ok"):
+    return sorted({h["rule"] for h in C.defects({"lead": {"ko": ko, "en": en}})})
+
+
+print("\n── 글자 결함: 잡아야 하는 것 ──")
+for ko in ["규모의 경�제 측면에서", "가격 경쁴력을 갖췄다", "경쟟하는 구조다", "공개경쥉입찰", "AI 신약개발 플랕폼",
+           "성장 동력으로 꾽힌다", "흑자전환 딖 HBM 훈풍", "정�ّ밀부품", "경쨍하는 시장", "뇌졭중 영역"]:
+    eq(ko, drules(ko), ["broken_char"])
+eq("영문에 섞인 한자", drules("정상", "the半-year report"), ["broken_char"])
+eq("남은 태그", drules('나뉜다<sup index="1-2"></sup>.'), ["markup"])
+eq("단어에 붙은 한자", drules("영업이익은 88億원"), ["hanja"])
+eq("받은 자료를 가리키는 말", drules("3분기 수치는 제공된 데이터셋에 포함되지 않아"), ["meta"])
+eq("영문 data window", drules("정상", "the highest within the disclosed data window"), ["meta"])
+eq("제목·라벨도 본다", sorted({h["section"] for h in C.defects({"title": {"ko": "손익은 널�뛰기", "en": "t"}})}), ["title"])
+
+print("\n── 글자 결함: 건드리면 안 되는 것 ──")
+for ko in ["디스플레이용 웻 스테이션", "쓰촨성 몐양 라인", "초전도 코일 퀜치 검출", "중수(重水) 사업", "상저하고(上低下高) 흐름",
+           "TGF-β 억제제", "경쟁 구도가 치열하다", "경제·경영·경향·경우·경기", "달걀노른자 추출물", "<세브란스: 단절> 흥행",
+           "AI 학습용 데이터셋 사업"]:
+    eq(ko, drules(ko), [])
+eq("영문 TGF-β·®", drules("정상", "TGF-β and NeoPAC® are fine"), [])
+eq("출처·숫자 칸은 보지 않는다", C.defects({"sources": ["https://x.kr/<sup>"], "quant": {"note": "�"}}), [])
+
+print("\n── 교정 지시에 글자 결함 규칙이 들어갔나 ──")
+eq("_RULE_TEXT 에 broken_char·markup·meta·hanja", all(k in C._RULE_TEXT for k in ("broken_char", "markup", "meta", "hanja")), True)
+
+print("\n── 전수: 화면에 나오는 리포트·업종 분석에 글자 결함이 없다 ──")
+import json, re  # noqa: E402
+ROOT = HERE.parent.parent
+v2 = {f.stem for f in (ROOT / "data" / "reports_v2").glob("*.json")}
+files = sorted((ROOT / "data" / "reports_v2").glob("*.json")) + \
+    [f for f in sorted((ROOT / "data" / "reports").glob("*.json")) if f.stem not in v2]   # v2 가 있으면 v1 은 안 나온다
+bad, n = [], 0
+for f in files:
+    try:
+        rep = json.loads(f.read_text(encoding="utf-8"))
+    except Exception:
+        continue
+    if not isinstance(rep, dict):
+        continue
+    n += 1
+    bad += [(f.parent.name + "/" + f.stem, h) for h in C.defects(rep)]
+sec_js = (ROOT / "data" / "sectors.js").read_text(encoding="utf-8")
+sectors = json.loads(re.search(r"=\s*(\{.*\})\s*;?\s*$", sec_js, re.S).group(1)).get("sectors") or {}
+for name, obj in sectors.items():
+    if isinstance(obj, dict):
+        bad += [("sectors/" + name, h) for h in C.defects(obj)]
+for where, h in bad[:8]:
+    print(f"      {where} [{h['section']}] {h['rule']} {h['match']!r} — {h['sentence'][:70]}")
+eq(f"리포트 {n:,}개 · 업종 {len(sectors)}개 — 깨진 글자·태그·받은 자료 언급·한자 0", len(bad), 0)
+
 print(f"\nPASS {PASS}  FAIL {FAIL}")
 sys.exit(1 if FAIL else 0)

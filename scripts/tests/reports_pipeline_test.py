@@ -653,6 +653,30 @@ ok("比" not in rep["earnings"]["ko"] and "전년 대비" in rep["earnings"]["ko
 ok("저평가된" not in rep["earnings"]["ko"] and "순자산을 밑도는" in rep["earnings"]["ko"], "교정된 문장이 저장된다")
 ok(not T.check(rep), "저장된 리포트는 검사를 통과한다")
 
+# (h) 글자 결함 — 태그는 저장 전에 지우고(감싼 글·마침표는 남는다), 교정 뒤에도 깨진 글자가 남으면 저장하지
+#     않는다(있던 리포트 그대로 · 실패로 세어 다시 만든다). 2026-09-26 HLB 본문의 '<sup index="36-2"></sup>' ·
+#     186개 리포트의 '경�쟁' 이 그대로 화면에 찍혀 있었다.
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+mk("msgbatch_D", ["000020", "005930"])
+cl = FakeClient()
+t_tag = report_text("000020").replace("실적 문장이다.", '실적은 개선됐다<sup index=\\"36-2\\"></sup>.', 1)
+t_bad = report_text("005930").replace("실적 문장이다.", "실적은 경쁴력이 약해졌다.", 1)
+cl.messages.batches.store["msgbatch_D"] = batch_obj("msgbatch_D", "ended", [
+    result("000020", text=t_tag, usage=USAGE), result("005930", text=t_bad, usage=USAGE)])
+T.repair = lambda cl_, rep_, hits_, model=None: None          # 교정이 고치지 못한 경우
+p5930 = S.OUT_DIR / "005930.json"
+old5930 = p5930.read_text(encoding="utf-8") if p5930.exists() else None
+f0 = S.fail_count("005930")
+M.pickup(cl, "2026-09-05 06:00")
+rep = json.loads((S.OUT_DIR / "000020.json").read_text(encoding="utf-8"))
+ok("<sup" not in json.dumps(rep, ensure_ascii=False) and "실적은 개선됐다." in rep["earnings"]["ko"],
+   "태그는 저장 전에 지운다 — 감싼 글·마침표는 남는다", rep["earnings"]["ko"][:30])
+ok((p5930.read_text(encoding="utf-8") if p5930.exists() else None) == old5930,
+   "교정 뒤에도 깨진 글자가 남으면 저장하지 않는다 — 있던 리포트 그대로")
+ok(S.fail_count("005930") == f0 + 1, "실패로 세어 다음 회차가 다시 만든다", f"{f0} → {S.fail_count('005930')}")
+T.repair = _repair_stub
+
 # ═══ ⑩ 정량 재사용 — 이미 맞다는 것이 확인될 때만 ═══════════════════════
 print("⑩ 정량 재사용")
 M.collect_all_quant = REAL_COLLECT_ALL          # ⑥에서 가짜로 바꿔 둔 것을 되돌린다
