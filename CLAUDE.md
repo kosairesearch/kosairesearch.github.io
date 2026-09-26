@@ -329,6 +329,10 @@ WebKit 소스(LocalFrameView::fixedContainerEdges)로 확인한 기제:
     은 프로그램 스크롤을 못 막아서다. 목차 클릭(TOC_JS)은 lenis 가 있으면 lenis 로 옮기고 전파를 막는다(문서 핸들러의 -90 offset 을
     타면 헤더 여백이 어긋난다). 실사이트로 옮기는 날 0.6 을 실사이트에도 쓸지 정한다.
   · 페이지 전환: `@view-transition{navigation:auto}`(실사이트와 같음) + 띠·헤더에 `view-transition-name` 을 줘 본문만 크로스페이드한다.
+  · 관심종목 단추와 뒤로 가기(2026-09-26 사장): 뒤로·앞으로 가기로 되살아난 페이지(bfcache)는 떠날 때의 목록을 들고 있어, 상세에서
+    추가하고 돌아온 목록이 '+' 로 남았다(실사이트도 같았다). `watchlist.js`(실사이트·스테이징 같은 파일)가 pageshow(persisted) 에서
+    기억(`kos-wl-cache`)으로 맞춘다. 페이지 쪽 pageshow 다시 그리기는 옛 목록을 읽어 소용없었다. 지키는 검사 `staging/tests/watchlist-back.test.mjs`
+    (파이어베이스를 가짜로 끼우고 크로미움 bfcache 를 켜서 두 사이트를 본다 · `WL_MODULE=옛 파일` 로 돌리면 실패하는 것까지 확인).
   · 로그인 가림창(`.kg-*`)은 `auth-guard.js` 가 그리고 옷만 `comp_common.CSS` 가 덮는다 — 모듈은 실사이트와 같아야 하므로.
     선택자는 `:root[data-theme] body .kg-*` 여야 한다: 모듈의 다크 규칙이 `:root[data-theme=dark] .kg-*`(0,3,0)라 그보다 세야 한다.
     `html[data-theme] body …`(0,2,2)로 적었다가 다크에서 옛 옷이 남았다. 덮개는 헤더 아래부터(z 40)라 메뉴·테마 단추가 산다.

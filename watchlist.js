@@ -101,6 +101,19 @@ const KOSWatch = {
 
 window.KOSWatch = KOSWatch;
 
+/* 뒤로·앞으로 가기로 되살아난 페이지(bfcache)는 떠날 때의 items 를 그대로 들고 있다. 상세에서 추가하고 목록으로
+   돌아오면 단추가 '+' 로 남고 새로고침해야 '✓' 가 됐다(빼는 쪽도 같음 · 2026-09-26 사장). 페이지들이 pageshow 에서
+   다시 그리기는 했지만 읽는 곳이 이 옛 items 라 소용이 없었다. 다른 페이지가 바꿀 때마다 remember() 로 적어 둔
+   기억(kos-wl-cache)으로 곧바로 맞춘다. 서버 답은 파이어스토어가 연결을 다시 붙이면 지금 구독으로 온다. 여기서 구독을
+   새로 걸지 않는 것은, 새 구독이 오프라인이면 빈 목록부터 내놓아 목록이 지워진 것처럼 보이기 때문이다. */
+function fromCache(){
+  try{
+    var c = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null');
+    if(user && c && c.uid === user.uid && c.items && typeof c.items === 'object'){ items = c.items; fire(); }
+  }catch(e){}
+}
+window.addEventListener('pageshow', function(e){ if(e.persisted) fromCache(); });
+
 if(isConfigured){
   if(provisional) fire();          // 기억한 목록으로 먼저 그린다
   onAuthStateChanged(auth, function(u){ user = u || null; ready = false; listen(); });
