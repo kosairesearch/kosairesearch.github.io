@@ -1634,7 +1634,12 @@ def build_prompt_v2(stock, quant, as_of):
 
 
 def _sanitize(obj):
-    """모델이 가끔 줄바꿈을 '<개행>' 같은 리터럴 태그로 출력하는 것을 정리(재귀)."""
+    """모델이 가끔 줄바꿈을 '<개행>' 같은 리터럴 태그로 출력하는 것을 정리(재귀).
+
+    웹 검색 인용을 흉내 낸 태그도 여기서 지운다 — '<sup index="36-2"></sup>' ·
+    '<citation index="29-13"></citation>' · '<a href="…">문장</a>' · '<br>'. 2026-09-05
+    배치의 5개 리포트가 이걸 본문에 담은 채 저장돼 화면에 글자 그대로 찍혔다(HLB,
+    사장이 먼저 봤다). 감싼 글은 남기고 표시만 지운다(check_report_text.clean_markup)."""
     import re as _re
     if isinstance(obj, dict):
         for k, v in obj.items():
@@ -1645,6 +1650,7 @@ def _sanitize(obj):
     if isinstance(obj, str):
         s = _re.sub(r"\s*<\s*개행\s*>\s*", "\n\n", obj)
         s = s.replace("<개행>", " ").replace("개행", "")
+        s = check_report_text.clean_markup(s)
         return _re.sub(r"[ \t]+\n", "\n", s).strip()
     return obj
 
@@ -2612,6 +2618,17 @@ def collect(cl, as_of, state):
                 risky = any(h["level"] == "위험" for h in bad_text)
                 log(f"  · {'🚫' if risky else '⚠️'} {tk} 금지 표현 {len(bad_text)}건 "
                     f"({', '.join(kinds)}) — {bad_text[0]['sentence'][:70]}")
+            # 깨진 글자·태그는 표현이 아니라 글자가 망가진 것이다 — 화면에 '경�쟁'·'경쁴력'·'<sup …>' 가
+            # 그대로 찍힌다(2026-09-26 사장이 먼저 봤다). 교정 뒤에도 남았으면 저장하지 않는다. 있던
+            # 리포트는 그대로 둔다(낡아도 읽힌다). fail 에 세므로 다음 회차가 다시 만들고, 거듭 실패하면
+            # 다른 실패와 같이 멈춰 사람이 본다. 나머지 표현 문제는 전처럼 로그만 남기고 쓴다.
+            broken = [h for h in bad_text if h["rule"] in ("broken_char", "markup")]
+            if broken:
+                fail += 1
+                n = S.bump_fail(tk)
+                log(f"  · 🚫 {tk} 깨진 글자·태그 {len(broken)}곳이 교정 뒤에도 남아 저장하지 않음 ({n}번째 실패) "
+                    f"— [{broken[0]['section']}] {broken[0]['match']!r} · {broken[0]['sentence'][:60]}")
+                continue
 
             (OUT_DIR / f"{tk}.json").write_text(
                 json.dumps(rep, ensure_ascii=False, indent=1), encoding="utf-8")
