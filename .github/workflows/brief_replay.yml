@@ -33,12 +33,6 @@ on:
         description: '재료 공급처 진단만 (지수·수급 주소가 살아 있는지 · 돈 안 듦)'
         type: boolean
         default: false
-      read_urls:
-        description: '(임시) 러너에서 이 주소들을 읽어 글만 찍는다 · 공백 구분 · 돈 안 듦'
-        default: ''
-      read_follow:
-        description: '(임시) 위 페이지의 링크 중 이 정규식에 맞는 것을 한 단계 더 읽는다'
-        default: ''
 
 jobs:
   replay:
@@ -56,7 +50,7 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: 다시 써 보기
-        if: ${{ !inputs.live && !inputs.repair_only && !inputs.probe && inputs.read_urls == '' }}
+        if: ${{ !inputs.live && !inputs.repair_only && !inputs.probe }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python3 scripts/brief_replay.py ${{ inputs.dates }}
@@ -97,14 +91,6 @@ jobs:
         run: |
           set -o pipefail
           python scripts/probe_feeds.py 2>&1 | tee -a $GITHUB_STEP_SUMMARY
-
-      # ── (임시) 샌드박스가 못 여는 페이지를 러너에서 읽는다. API 호출 없음. ──
-      - name: 페이지 읽기 (돈 안 듦)
-        if: ${{ inputs.read_urls != '' }}
-        env:
-          URLS: ${{ inputs.read_urls }}
-          FOLLOW: ${{ inputs.read_follow }}
-        run: python scripts/read_pages.py $URLS --follow "$FOLLOW" --max 40
 
       - name: 오늘 재료로 처음부터 한 편 (발행 안 함)
         if: ${{ inputs.live }}
