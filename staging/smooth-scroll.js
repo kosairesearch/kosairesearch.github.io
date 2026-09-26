@@ -1,3 +1,5 @@
+/* 스테이징 사본 — 실사이트 smooth-scroll.js 와 같고 duration(0.7 → 0.6)과 defaultPrevented 검사 한 줄만 다르다.
+   실사이트로 옮길 때 이 둘을 어떻게 할지 정한다. */
 /* 스크롤을 부드럽게 — 마우스 휠 한 칸이 툭 떨어지지 않고 미끄러지듯 멈춘다.
 
    왜. 윈도우에서 휠을 굴리면 운영체제가 100px 씩 뚝뚝 끊어 옮긴다. 맥
@@ -56,7 +58,7 @@
       // 0.9 로 시작했는데 사장이 "좀 늦게 멈춘다" 고 해서 0.7 로 줄였다.
       // 휠 한 번(600px)이 완전히 멎기까지 864ms → 694ms 다. 0.6 도 재 봤지만
       // (614ms) "너무 짧게는 하지 말라" 고 해서 그 앞에서 멈췄다.
-      duration: 0.7,
+      duration: 0.6,   // 스테이징 사본 — 실사이트(0.7)보다 조금 빠르게(휠 한 번 694ms → 614ms). 사장 2026-09-26 "실사이트보다 조금 더 빠르게".
       // 빠르게 시작해 부드럽게 선다.
       easing: function (t) { return 1 - Math.pow(1 - t, 3); },
       wheelMultiplier: 1,          // 한 번 굴리는 거리는 운영체제 기본과 같게
@@ -79,6 +81,7 @@
   /* #앵커로 뛰는 링크. 그냥 두면 브라우저가 순간이동시키고 lenis 가 뒤늦게
      따라와 두 번 움직인다. 여기서 받아 한 번에 미끄러지게 한다. */
   document.addEventListener("click", function (e) {
+    if (e.defaultPrevented) return;      // 목차(TOC_JS)처럼 페이지가 이미 받은 클릭은 두 번 옮기지 않는다
     var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
     if (!a || a.hasAttribute("data-lenis-prevent")) return;
     var id = a.getAttribute("href");

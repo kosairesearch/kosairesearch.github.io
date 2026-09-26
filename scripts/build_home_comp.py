@@ -172,8 +172,8 @@ JS = r'''(function(){
   function sBtn(s){return '<button type="button"'+(s===active?' class="on"':'')+' data-s="'+esc(s)+'">'+esc(s)+'</button>'}
   function renderSheet(){var by={};ORDER.forEach(function(o){(by[o.g]=by[o.g]||[]).push(o.s)});
     sbody.innerHTML='<div class="sg top"><div class="sw">'+sBtn('전체')+'</div></div>'+GROUPS.map(function(g){var ws=by[g[0]]||[];return ws.length?'<div class="sg"><h4>'+esc(g[0])+'</h4><div class="sw">'+ws.map(sBtn).join('')+'</div></div>':''}).join('')}
-  function openSheet(){renderSheet();sheet.classList.add('open');back.classList.add('open');document.documentElement.style.overflow='hidden'}  /* html 에 — body 에 걸면 sticky 헤더가 사라진다 */
-  function closeSheet(){sheet.classList.remove('open');back.classList.remove('open');document.documentElement.style.overflow=''}
+  function openSheet(){renderSheet();sheet.classList.add('open');back.classList.add('open');document.documentElement.style.overflow='hidden';if(window.KOSSmoothScroll)window.KOSSmoothScroll.stop()}  /* html 에 — body 에 걸면 sticky 헤더가 사라진다 */
+  function closeSheet(){sheet.classList.remove('open');back.classList.remove('open');document.documentElement.style.overflow='';if(window.KOSSmoothScroll)window.KOSSmoothScroll.start()}
   document.getElementById('sectorClose').addEventListener('click',closeSheet);back.addEventListener('click',closeSheet);
   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&sheet.classList.contains('open'))closeSheet()});
   sbody.addEventListener('click',function(e){var b=e.target.closest('button[data-s]');if(!b)return;active=b.dataset.s;closeSheet();renderTabs();renderMovers();tabsEl.scrollLeft=0});

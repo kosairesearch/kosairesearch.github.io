@@ -273,6 +273,15 @@ WebKit 소스(LocalFrameView::fixedContainerEdges)로 확인한 기제:
     jsdom 으로 비교), `reports-filter.test.mjs`(개수의 쉼표), `same-paragraphs.test.mjs`(`wrapup` 정규식). 요구 사항은 그대로다.
   · 실사이트로 옮기는 날: `comp_common.set_mode('live')` 로 루트에 내면 된다(404.html 이 이미 그 길로 나온다). 그때
     `patch_header.py` · `patch_biz_footer.py` 의 옛 템플릿 검사는 새 구조 검사(생성기 = 저장소)로 바꾼다.
+  · 휠 스크롤(2026-09-26 사장): `staging/lenis.js` · `staging/smooth-scroll.js` 는 실사이트 사본이고 `duration` 만 0.7 → 0.6
+    (사장 "실사이트보다 조금 더 빠르게" · 휠 한 번 694ms → 614ms). `comp_common.finish()` 가 모든 스테이징 페이지 꼬리에 붙인다.
+    휴대폰(pointer:coarse)·움직임 줄임에서는 스스로 꺼진다. 메뉴·업종 시트가 열리면 `KOSSmoothScroll.stop()` — html overflow:hidden
+    은 프로그램 스크롤을 못 막아서다. 목차 클릭(TOC_JS)은 lenis 가 있으면 lenis 로 옮기고 전파를 막는다(문서 핸들러의 -90 offset 을
+    타면 헤더 여백이 어긋난다). 실사이트로 옮기는 날 0.6 을 실사이트에도 쓸지 정한다.
+  · 페이지 전환: `@view-transition{navigation:auto}`(실사이트와 같음) + 띠·헤더에 `view-transition-name` 을 줘 본문만 크로스페이드한다.
+  · 로그인 가림창(`.kg-*`)은 `auth-guard.js` 가 그리고 옷만 `comp_common.CSS` 가 덮는다 — 모듈은 실사이트와 같아야 하므로.
+    선택자는 `:root[data-theme] body .kg-*` 여야 한다: 모듈의 다크 규칙이 `:root[data-theme=dark] .kg-*`(0,3,0)라 그보다 세야 한다.
+    `html[data-theme] body …`(0,2,2)로 적었다가 다크에서 옛 옷이 남았다. 덮개는 헤더 아래부터(z 40)라 메뉴·테마 단추가 산다.
 
 ## 종목 페이지는 종목마다 미리 만든다 — r/ 로봇용 사본은 갈 것 *(2026-09-25 사장 "대기업처럼 해줘")*
 
