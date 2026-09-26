@@ -31,6 +31,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import number_spacing  # noqa: E402  시가총액 표기 — 1조 미만은 억(0.0조 → 500억)
+
 ROOT = Path(__file__).resolve().parent.parent
 STOCKS_JS = ROOT / "data" / "stocks.js"
 REPORTS_INDEX = ROOT / "data" / "reports-index.js"
@@ -544,13 +547,13 @@ def summarize(d):
             L.append("   " + fmt(s))
 
     rows(f"\n▲ 절대 상승 (대상 {m['poolSize']:,}종목 중)", "up",
-         lambda s: f"{s['change']:+6.2f}% (rel {s['rel']:+6.2f}) {s['name']:<14} {s['sector']:<10} {s['mcap']}조")
+         lambda s: f"{s['change']:+6.2f}% (rel {s['rel']:+6.2f}) {s['name']:<14} {s['sector']:<10} {number_spacing.mcap_text(s['mcap'])}")
     rows("▼ 절대 하락", "down",
-         lambda s: f"{s['change']:+6.2f}% (rel {s['rel']:+6.2f}) {s['name']:<14} {s['sector']:<10} {s['mcap']}조")
+         lambda s: f"{s['change']:+6.2f}% (rel {s['rel']:+6.2f}) {s['name']:<14} {s['sector']:<10} {number_spacing.mcap_text(s['mcap'])}")
     rows(f"\n★ 대형주 선전 (시총 상위 {m['bigCapN']} 중, 시장 대비)", "leaders",
-         lambda s: f"rel {s['rel']:+6.2f}  ({s['change']:+.2f}%) {s['name']:<14} {s['mcap']}조")
+         lambda s: f"rel {s['rel']:+6.2f}  ({s['change']:+.2f}%) {s['name']:<14} {number_spacing.mcap_text(s['mcap'])}")
     rows("☆ 대형주 부진", "laggards",
-         lambda s: f"rel {s['rel']:+6.2f}  ({s['change']:+.2f}%) {s['name']:<14} {s['mcap']}조")
+         lambda s: f"rel {s['rel']:+6.2f}  ({s['change']:+.2f}%) {s['name']:<14} {number_spacing.mcap_text(s['mcap'])}")
     rows("\n● 거래대금", "actives",
          lambda s: f"{s['tradingValue']:>7,}억  {s['name']:<14} {s['change']:+.2f}% (rel {s['rel']:+.2f})")
 
@@ -566,7 +569,7 @@ def summarize(d):
     L.append(f"\n□ 정기보고서 {len(d['filings'])}건{more}")
     for f in d["filings"][:12]:
         cp = f" · 체크포인트 {len(f['checkpoints'])}개" if f.get("checkpoints") else ""
-        L.append(f"   {f['name']:<14} {f.get('mcap', 0):>7.2f}조  {f['report']}{cp}")
+        L.append(f"   {f['name']:<14} {number_spacing.mcap_text(f.get('mcap')):>8}  {f['report']}{cp}")
     return "\n".join(L)
 
 

@@ -153,13 +153,13 @@ def load_sectors():
         out[sec] = {
             "count": len(lst), "mcap": round(mc, 1),
             "weight": round(mc / total * 100, 1) if total else 0,
-            "top": [(t["name"], round(t.get("mcap", 0) or 0, 2)) for t in top],
+            "top": [(t["name"], t.get("mcap", 0) or 0) for t in top],
         }
     return out
 
 
 def build_prompt(sec, info):
-    tops = "\n".join(f"  - {nm} (시총 {mc}조)" for nm, mc in info["top"])
+    tops = "\n".join(f"  - {nm} (시총 {number_spacing.mcap_text(mc)})" for nm, mc in info["top"])
     return (
         f"[업종] {sec}\n"
         f"[집계 · 참고용, 본문에 수치로 옮기지 말 것] 상장 종목 {info['count']}개 · "
