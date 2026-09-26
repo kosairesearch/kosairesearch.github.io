@@ -97,7 +97,8 @@ CANON_JS = '''<script>(function(){try{var m=location.search.match(/[?&]ticker=([
 var u='https://kosai.kr/stock.html?ticker='+t;function set(sel,attr,val){var e=document.querySelector(sel);if(e)e.setAttribute(attr,val)}set('link[rel=canonical]','href',u);set('meta[property="og:url"]','content',u)}catch(e){}})();</script>'''
 
 # ── 페이지 스크립트 ─────────────────────────────────────────────────────────
-# stock_page.render() 와 같은 DOM 을 만든다. 숫자 표기는 파이썬 '{:,.1f}' 규칙(정확히 반이면 짝수로)을 따른다.
+# stock_page.render() 와 같은 DOM 을 만든다. 좌표·비율·배수는 파이썬 '{:,.1f}' 규칙(정확히 반이면 짝수로 · pyf),
+# 돈·주식 수는 실사이트 stock.html 의 포매터 그대로(딱 반이면 올림 · fwon·mcap·amt·shN)다.
 PAGE_JS = r'''/* ===== 종목 페이지 — 데이터로 그린다 (stock_page.render 와 같은 DOM) ===== */
 (function(){
 'use strict';
@@ -121,7 +122,7 @@ if(!TK){ var ks=Object.keys(REPORTS); TK=ks[0]||(LIVE[0]&&LIVE[0].ticker)||'0059
 var STOCK=null,i; for(i=0;i<LIVE.length;i++){ if(LIVE[i].ticker===TK){ STOCK=LIVE[i]; break; } }
 var REP=null, TIER='none', KNOWN=!!STOCK, LOADED=false;
 
-/* ── 글자·숫자 (stock_page.py 의 esc·fwon·fjo·pct·fdate·pk 와 같은 결과) ── */
+/* ── 글자·숫자 (stock_page.py 의 esc·fwon·fmcap·famt·fshares·pct·fdate·pk 와 같은 결과) ── */
 function esc(x){ return String(x==null?'':x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 /* 파이썬 '{:,.Nf}' 와 같은 글자. 정확히 반인 값(12.25)은 파이썬처럼 짝수로 붙인다 — toFixed 는 올려 버린다(12.3). */
 function pyf(v,f,grp){
@@ -132,8 +133,18 @@ function pyf(v,f,grp){
   return (v<0?'-':'')+out;
 }
 function pyround(x,n){ return Number(pyf(x,n)); }   /* 파이썬 round(x, n) */
-function fwon(v){ if(v==null)return '—'; var a=Math.abs(v); if(a>=1e12)return pyf(v/1e12,1,true)+'조'; if(a>=1e8)return pyf(v/1e8,0,true)+'억'; return pyf(v,0,true); }
-function fjo(v){ return v==null?'—':pyf(v/1e12,1,true); }
+/* 돈·주식 수 — 실사이트 stock.html 의 fwon·mcap·amt·shN(한국어 쪽) 그대로다. 빈 값만 '—'. 값마다 조·억·만을 붙인다:
+   '조원' 하나로 고정했더니 작은 회사는 표·차트가 0.0, 시가총액이 0.4조원, 주식 수가 0.3억주로 나왔다(2026-09-26).
+   반올림도 실사이트처럼 toFixed·Math.round(딱 반이면 올림)다. 셋이 같은지 staging/tests/same-units.test.mjs 가 본다. */
+function fwon(v){ if(v==null)return '—'; v=+v; var sg=v<0?'-':''; var a=Math.abs(v);
+  if(a>=1e12)return sg+(a/1e12).toFixed(1)+'조'; if(a>=1e8)return sg+Math.round(a/1e8).toLocaleString('en-US')+'억'; return sg+Math.round(a).toLocaleString('en-US')+'원'; }
+function mcap(v){ if(v==null)return '—'; v=+v;
+  if(v>=1){ var n=v.toLocaleString('en-US',{maximumFractionDigits:1}); return n+'조원'; }
+  return Math.round(v*10000).toLocaleString('ko-KR')+'억원'; }
+function amt(v){ if(v==null)return '—'; v=+v;
+  if(v>=1e12)return (v/1e12).toFixed(1)+'조원'; if(v>=1e8)return Math.round(v/1e8).toLocaleString('en-US')+'억원'; return Math.round(v).toLocaleString('en-US')+'원'; }
+function shN(v){ if(v==null)return '—'; v=+v;
+  if(v>=1e8)return (v/1e8).toFixed(1)+'억주'; if(v>=1e4)return Math.round(v/1e4).toLocaleString('en-US')+'만주'; return v.toLocaleString('en-US')+'주'; }
 function pct(v,signed){ if(v==null)return '—'; var s=(signed?(v<0?'':'+')+pyf(v,2):pyf(v,1))+'%'; return s.replace(/-/g,'−'); }
 function fdate(d){ d=String(d==null?'':d); return /^\d{8}$/.test(d)?d.slice(0,4)+'-'+d.slice(4,6)+'-'+d.slice(6):d; }
 function pk(o){ if(o==null)return ''; if(typeof o==='object')return o.ko||o.en||''; return o||''; }
@@ -177,7 +188,7 @@ function barChart(groups){
       if(val){ bh=Math.max(1.5,bh); var y=val>0?y0-bh:y0;
         svg+='<rect class="'+b[1]+'" x="'+pyf(x,1)+'" y="'+pyf(y,1)+'" width="'+pyf(bw,1)+'" height="'+pyf(bh,1)+'"/>'; }
       var up=val>=0, lft=(j===1&&up);   /* 영업이익 흑자 라벨은 막대 왼쪽 끝에서 오른쪽으로 — 옆 매출 막대를 덮지 않게 */
-      marks.push([lft?x:x+bw/2, up?(y0-bh-5):(y0+bh+5), up, fjo(val), lft]);
+      marks.push([lft?x:x+bw/2, up?(y0-bh-5):(y0+bh+5), up, fwon(val), lft]);
     });
     if(marks.length===2 && marks[0][2]===marks[1][2] && Math.abs(marks[0][1]-marks[1][1])<14){
       var a=marks[0], c=marks[1];
@@ -210,12 +221,11 @@ function statsH(st){
     div=(dps!=null&&price)?pyround(dps/price*100,2):null; win=null;
   }
   function f(x,fn){ return x==null?'—':fn(x); }
-  var vol=st.volume;
   var rows=[
-    ['시가총액', f(st.mcap,function(x){ return pyf(x,1,true)+'조원'; })],
-    ['거래대금', st.trading_value!=null?fwon(st.trading_value)+'원':'—'],
-    ['거래량', ((vol||0)<1e4)?f(vol,function(x){ return pyf(x,0,true)+'주'; }):pyf((vol||0)/1e4,0,true)+'만주'],
-    ['상장주식수', f(st.shares?st.shares/1e8:null,function(x){ return pyf(x,1,true)+'억주'; })],
+    ['시가총액', mcap(st.mcap)],
+    ['거래대금', amt(st.trading_value)],
+    ['거래량', shN(st.volume)],
+    ['상장주식수', shN(st.shares)],
     ['PER', f(per,function(x){ return pyf(x,1)+'배'; })],
     ['PBR', f(pbr,function(x){ return pyf(x,1)+'배'; })],
     ['EPS', f(eps,function(x){ return pyf(x,0,true)+'원'; })],
@@ -232,12 +242,12 @@ function v2Parts(){
   var annual=(q.annual||[]).slice().sort(function(a,b){ return a.year-b.year; }), quarterly=q.quarterly||[];
   var qChart=barChart(quarterly.map(function(x){ return [String(x.q).slice(2,4)+'Q'+String(x.q).slice(-1), x.rev, x.op]; }));
   var aChart=barChart(annual.map(function(a){ return [String(a.year), a.rev, a.op]; }));
-  var annRows=annual.map(function(a){ return '<tr><th scope="row">'+a.year+'</th><td>'+fjo(a.rev)+'</td><td>'+fjo(a.op)+'</td><td>'+fjo(a.np_owner)+'</td><td>'+pct(a.opm)+'</td><td>'+pct(a.roe)+'</td><td>'+pct(a.debt_ratio)+'</td></tr>'; }).join('');
-  var qtrRows=quarterly.map(function(x){ return '<tr><th scope="row">'+esc(x.q)+'</th><td>'+fjo(x.rev)+'</td><td>'+fjo(x.op)+'</td><td>'+((x.rev&&x.op!=null)?pct(x.op/x.rev*100):'—')+'</td></tr>'; }).join('');
+  var annRows=annual.map(function(a){ return '<tr><th scope="row">'+a.year+'</th><td>'+fwon(a.rev)+'</td><td>'+fwon(a.op)+'</td><td>'+fwon(a.np_owner)+'</td><td>'+pct(a.opm)+'</td><td>'+pct(a.roe)+'</td><td>'+pct(a.debt_ratio)+'</td></tr>'; }).join('');
+  var qtrRows=quarterly.map(function(x){ return '<tr><th scope="row">'+esc(x.q)+'</th><td>'+fwon(x.rev)+'</td><td>'+fwon(x.op)+'</td><td>'+((x.rev&&x.op!=null)?pct(x.op/x.rev*100):'—')+'</td></tr>'; }).join('');
   var lg='<div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div>';
-  var fin='<div class="tiles"><figure class="tile"><figcaption>분기 매출 · 영업이익 <span>단위: 조원</span></figcaption>'+qChart+lg+'</figure><figure class="tile"><figcaption>연간 매출 · 영업이익 <span>단위: 조원</span></figcaption>'+aChart+lg+'</figure></div>'
-    +'<div class="tbl-wrap"><table class="tbl"><caption><div class="cap"><span>분기 실적 · 최근 '+quarterly.length+'분기</span><span class="u">단위: 조원</span></div></caption><thead><tr><th>분기</th><th>매출액</th><th>영업이익</th><th>영업이익률</th></tr></thead><tbody>'+qtrRows+'</tbody></table></div>'
-    +'<div class="tbl-wrap"><table class="tbl"><caption><div class="cap"><span>연간 실적</span><span class="u">단위: 조원</span></div></caption><thead><tr><th>연도</th><th>매출액</th><th>영업이익</th><th>지배주주 순이익</th><th>영업이익률</th><th>ROE</th><th>부채비율</th></tr></thead><tbody>'+annRows+'</tbody></table></div>'
+  var fin='<div class="tiles"><figure class="tile"><figcaption>분기 매출 · 영업이익</figcaption>'+qChart+lg+'</figure><figure class="tile"><figcaption>연간 매출 · 영업이익</figcaption>'+aChart+lg+'</figure></div>'
+    +'<div class="tbl-wrap"><table class="tbl"><caption><div class="cap"><span>분기 실적 · 최근 '+quarterly.length+'분기</span></div></caption><thead><tr><th>분기</th><th>매출액</th><th>영업이익</th><th>영업이익률</th></tr></thead><tbody>'+qtrRows+'</tbody></table></div>'
+    +'<div class="tbl-wrap"><table class="tbl"><caption><div class="cap"><span>연간 실적</span></div></caption><thead><tr><th>연도</th><th>매출액</th><th>영업이익</th><th>지배주주 순이익</th><th>영업이익률</th><th>ROE</th><th>부채비율</th></tr></thead><tbody>'+annRows+'</tbody></table></div>'
     +'<p class="note">연결 기준(자회사 실적을 합친 재무제표) · DART 공시 확정치 · 순이익은 지배주주 기준 · 데이터 '+esc(q.asOf)+'</p>';
   function vv(key,fn){ var x=val[key]; return x==null?'—':fn(x); }
   var mul=function(x){ return pyf(x,1)+'배'; }, won=function(x){ return pyf(x,0,true)+'원'; };
@@ -439,6 +449,7 @@ function render(){
   /* 휴대폰 목차 띠가 헤더 안에 붙어 있으면(pin) 본문 밖에 있다 — 새로 그리기 전에 뗀다. 안 그러면 id 가 둘이 된다. */
   var old=document.getElementById('chipsBar'); if(old) old.parentNode.removeChild(old);
   var main=document.getElementById('page'); main.innerHTML=h;
+  if(window.kosFitCharts) window.kosFitCharts();   /* 차트 값 라벨이 옆 막대·라벨에 닿으면 비켜 세운다(stock_page.CHART_FIT_JS) */
   if(LOADED) main.setAttribute('data-tier',REP?TIER:(KNOWN?'none':'unknown'));
   if(window.kosTocInit) window.kosTocInit();
   syncWatch();
@@ -542,6 +553,7 @@ def build_html():
 <script>
 {C.TOC_JS}
 {C.JS}
+{S.CHART_FIT_JS}
 {page_js()}
 </script>
 </body>

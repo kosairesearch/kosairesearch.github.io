@@ -351,6 +351,47 @@ for (const [label, pre] of [["실사이트", ""], ["스테이징", "/staging"]])
   }
 }
 
+/* ── 리포트 차트 값 라벨이 막대·다른 라벨에 닿지 않는다 (스테이징) ──────
+   값마다 억·조를 붙이자(2026-09-26 · 실사이트와 같게) 라벨이 45px 안팎으로 길어졌다
+   ('-1,042억' · 1억 미만은 '11,633,176원' 77px). 칸이 좁은 폭(휴대폰 · 두 칸으로 놓인
+   데스크톱)에서는 옆 막대·라벨에 닿는다. stock_page.CHART_FIT_JS 가 그린 뒤 실제 폭에서 재어
+   닿는 라벨만 비켜 세운다 — 그게 도는지 본다. 종목은 은행(영업이익이 매출보다 큼) · 1억 미만
+   값 · 칸이 빽빽함 · 적자 회사 · 초대형. */
+console.log("\n── 리포트 차트 값 라벨이 막대·다른 라벨에 닿지 않는다 (스테이징) ──\n");
+for (const width of [320, 390, 1440]) {
+  for (const tk of ["055550", "012690", "207940", "028300", "005930"]) {
+    const page = await browser.newPage({ viewport: { width, height: 900 } });
+    await page.route("**gstatic.com/**", (r) => r.abort());
+    await page.goto(`${BASE}/staging/stock.html?ticker=${tk}&paywall=0`, { waitUntil: "domcontentloaded" });
+    await page.waitForSelector(".ch .ch-val", { timeout: 20000 });
+    await page.waitForTimeout(400);
+    const got = await page.evaluate(() => {
+      const out = []; let n = 0;
+      const B = (e) => e.getBoundingClientRect();
+      const hit = (a, b) => a.left < b.right - 0.5 && b.left < a.right - 0.5 && a.top < b.bottom - 0.5 && b.top < a.bottom - 0.5;
+      document.querySelectorAll(".ch").forEach((c) => {
+        const vals = [...c.querySelectorAll(".ch-val")].map((e) => ({ t: e.textContent, r: B(e) }));
+        const others = [...c.querySelectorAll("rect")].map((e) => ({ t: "막대", r: B(e) }))
+          .concat([...c.querySelectorAll(".ch-lab")].map((e) => ({ t: "축 " + e.textContent, r: B(e) })));
+        const cr = B(c), fig = c.closest("figure");
+        const cap = fig && fig.querySelector("figcaption"), lg = fig && fig.querySelector(".lg");
+        vals.forEach((a, i) => {
+          n++;
+          others.forEach((o) => { if (hit(a.r, o.r)) out.push(`${a.t}~${o.t}`); });
+          vals.forEach((b, j) => { if (j > i && hit(a.r, b.r)) out.push(`${a.t}~${b.t}`); });
+          if (a.r.left < cr.left - 0.5 || a.r.right > cr.right + 0.5) out.push(`${a.t} 차트 밖`);
+          if (cap && a.r.top < B(cap).bottom + 1) out.push(`${a.t}~제목`);
+          if (lg && a.r.bottom > B(lg).top - 1) out.push(`${a.t}~범례`);
+        });
+      });
+      return { out, n };
+    });
+    await page.close();
+    ok(`${width}px ${tk} — 값 라벨 ${got.n}개가 막대·라벨·축·제목·범례에 닿지 않고 차트 안에 있다`,
+       got.n > 0 && !got.out.length, got.out.slice(0, 4).join(" | "));
+  }
+}
+
 await browser.close();
 server.close();
 console.log(`\n통과 ${pass} · 실패 ${fail}`);
