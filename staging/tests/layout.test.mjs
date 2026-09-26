@@ -46,9 +46,14 @@ const ROOT = fileURLToPath(new URL("../../", import.meta.url));
 const CHROME = (() => {
   const base = process.env.PLAYWRIGHT_BROWSERS_PATH || "/opt/pw-browsers";
   if (!existsSync(base)) return null;
-  const dir = readdirSync(base).filter((d) => /^chromium-\d+$/.test(d)).sort().pop();
-  const p = dir && `${base}/${dir}/chrome-linux/chrome`;
-  return p && existsSync(p) ? p : null;
+  // 판마다 폴더 이름이 다르다(1194: chrome-linux · 1243: chrome-linux64). 최신 판부터 둘 다 본다.
+  const dirs = readdirSync(base).filter((d) => /^chromium-\d+$/.test(d))
+    .sort((a, b) => Number(b.split("-")[1]) - Number(a.split("-")[1]));
+  for (const d of dirs) for (const sub of ["chrome-linux64", "chrome-linux"]) {
+    const p = `${base}/${d}/${sub}/chrome`;
+    if (existsSync(p)) return p;
+  }
+  return null;
 })();
 if (!CHROME) {
   console.error("크로미움을 찾지 못했습니다(PLAYWRIGHT_BROWSERS_PATH 확인).");
