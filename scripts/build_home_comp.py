@@ -18,60 +18,60 @@ import comp_common as C  # noqa: E402
 CSS = '''
 /* 히어로 — 왼쪽 정렬 · 구호 · 한 줄 검색 */
 .hero{padding:56px 0 8px;max-width:680px}
-.eyebrow{margin:0;font:500 13px/20px var(--font);color:var(--ink-55)}
+.eyebrow{margin:0;font:500 13px/20px var(--font);color:var(--ink-62)}
 .hero h1{margin:14px 0 0;font:700 44px/54px var(--font);letter-spacing:-.025em}
 .sub{margin:18px 0 0;font:400 17px/28px var(--font);color:var(--ink-72);max-width:560px}
 .search-wrap{position:relative;margin-top:36px}
 .search{display:flex;align-items:center;gap:12px;height:56px;border-bottom:1px solid var(--line);transition:border-color .15s}
 .search:focus-within{border-bottom-color:var(--ink)}
-.search svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;color:var(--ink-55);flex:none}
+.search svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;color:var(--ink-62);flex:none}
 .search input{flex:1;min-width:0;border:0;background:transparent;font:400 17px/24px var(--font);color:var(--ink);outline:0;padding:0}
-.search input::placeholder{color:var(--ink-30)}
+.search input::placeholder{color:var(--ink-62)}
 .search .btn{height:36px;padding:0 16px;flex:none}
 /* 자동완성 — 본문 위에 뜨는 판이라 여기만 면·그림자를 쓴다 */
 .ac{display:none;position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:20;background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:6px 0;box-shadow:0 8px 24px rgba(20,20,20,.08)}
 .ac.show{display:block}
-.ac-head{display:flex;justify-content:space-between;align-items:center;padding:8px 16px 6px;font:500 12px/16px var(--font);color:var(--ink-55)}
-.ac-head button{border:0;background:none;font:500 12px/16px var(--font);color:var(--ink-55);cursor:pointer;padding:0} .ac-head button:hover{color:var(--ink)}
+.ac-head{display:flex;justify-content:space-between;align-items:center;padding:8px 16px 6px;font:500 12px/16px var(--font);color:var(--ink-62)}
+.ac-head button{border:0;background:none;font:500 12px/16px var(--font);color:var(--ink-62);cursor:pointer;padding:0} .ac-head button:hover{color:var(--ink)}
 .ac-item{display:flex;align-items:center;gap:14px;padding:10px 16px;font:400 15px/20px var(--font);color:var(--ink);cursor:pointer}
 .ac-item:hover,.ac-item.active{background:var(--surface-2)}
-.ac-tk{font:500 12px/16px var(--font);color:var(--ink-55);width:56px;flex:none} .ac-nm{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} .ac-nm mark{background:none;color:inherit;font-weight:600} .ac-sec{font:400 12px/16px var(--font);color:var(--ink-55)}
-.ac-x{border:0;background:none;color:var(--ink-30);font:400 18px/1 var(--font);cursor:pointer;padding:0 2px} .ac-x:hover{color:var(--ink)}
-.ac-empty{padding:12px 16px;font:400 14px/20px var(--font);color:var(--ink-55)}
+.ac-tk{font:500 12px/16px var(--font);color:var(--ink-62);width:56px;flex:none} .ac-nm{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} .ac-nm mark{background:none;color:inherit;font-weight:600} .ac-sec{font:400 12px/16px var(--font);color:var(--ink-62)}
+.ac-x{border:0;background:none;color:var(--ink-62);font:400 18px/1 var(--font);cursor:pointer;padding:0 2px} .ac-x:hover{color:var(--ink)}
+.ac-empty{padding:12px 16px;font:400 14px/20px var(--font);color:var(--ink-62)}
 /* 절 */
 .sec{padding-top:72px}
 /* 최신 리포트 — 줄 목록 */
 .rows{border-top:1px solid var(--line)}
 .row{display:grid;grid-template-columns:200px minmax(0,1fr) 170px 96px;gap:24px;align-items:center;padding:18px 0;border-bottom:1px solid var(--hair)}
 .row:hover .r-title{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px}
-.r-name{font:600 16px/22px var(--font)} .r-meta{margin-top:3px;font:400 12px/16px var(--font);color:var(--ink-55)} .r-meta .md{display:none}
+.r-name{font:600 16px/22px var(--font)} .r-meta{margin-top:3px;font:400 12px/16px var(--font);color:var(--ink-62)} .r-meta .md{display:none}
 .r-title{font:400 16px/24px var(--font);color:var(--ink)}
 .r-price{text-align:right;font:500 16px/22px var(--font);white-space:nowrap} .r-price .c{margin-left:8px;font:600 13px/18px var(--font)}
-.r-date{text-align:right;font:400 13px/18px var(--font);color:var(--ink-55)}
-.empty{margin:0;padding:28px 0;font:400 14px/20px var(--font);color:var(--ink-55)}
+.r-date{text-align:right;font:400 13px/18px var(--font);color:var(--ink-62)}
+.empty{margin:0;padding:28px 0;font:400 14px/20px var(--font);color:var(--ink-62)}
 /* 업종 탭 — 데스크톱: 정해진 순서로 전부 두 줄(더보기 없음). 줄 사이 23px 로 가로 간격(22px)과 맞춘다 — 한 줄용 44px 칸을
    그대로 쌓으면 줄 사이가 51px 로 벌어져 두 덩어리로 보인다(9/26 사장). 간격은 어디나 22px 로 같다 — 묶음 사이만
    1.5배 띄워 봤더니 묶음이 아니라 '간격이 제각각'으로 읽혔다(9/26 사장). 묶음은 순서로만 보이고, 휴대폰 시트에는 이름표가 있다. */
 .tabs{position:relative;display:flex;flex-wrap:wrap;gap:8px 22px;padding-bottom:8px;border-bottom:1px solid var(--hair);margin-bottom:10px}
-.tab{flex:none;position:relative;border:0;background:none;padding:0;font:500 13px/30px var(--font);color:var(--ink-55);cursor:pointer;white-space:nowrap;transition:color .12s} .tab:hover{color:var(--ink)} .tab.on{color:var(--ink);font-weight:600}
+.tab{flex:none;position:relative;border:0;background:none;padding:0;font:500 13px/30px var(--font);color:var(--ink-62);cursor:pointer;white-space:nowrap;transition:color .12s} .tab:hover{color:var(--ink)} .tab.on{color:var(--ink);font-weight:600}
 .tab.more{display:none}
 /* 업종 고르기 시트 — 휴대폰에서 '전체 업종'을 누르면 아래에서 올라온다. 리포트 목록의 필터 시트와 같은 옷 */
 .pop-backdrop{display:none;position:fixed;inset:0;z-index:40;background:rgba(20,20,20,.16)} .pop-backdrop.open{display:block}
 .sheet{display:none;position:fixed;z-index:41;left:0;right:0;bottom:0;max-height:82vh;background:var(--surface);border:1px solid var(--hair);border-bottom:0;border-radius:16px 16px 0 0;box-shadow:0 12px 32px rgba(20,20,20,.12);flex-direction:column;overflow:hidden} .sheet.open{display:flex}
 .pop-head{display:flex;align-items:center;gap:4px;padding:10px 10px 10px 18px;border-bottom:1px solid var(--hair);flex:none} .pop-title{flex:1;font:600 14px/20px var(--font)}
-.pop-close{border:0;background:none;width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;color:var(--ink-55);cursor:pointer;padding:0;border-radius:8px} .pop-close:hover{color:var(--ink)} .pop-close svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.pop-close{border:0;background:none;width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;color:var(--ink-62);cursor:pointer;padding:0;border-radius:8px} .pop-close:hover{color:var(--ink)} .pop-close svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 .pop-body{overflow:auto;overscroll-behavior:contain;padding:8px 18px max(20px,env(safe-area-inset-bottom));min-height:0}
-.sg{margin:12px 0 0} .sg:first-child{margin-top:4px} .sg h4{margin:0 0 2px;font:500 12px/20px var(--font);color:var(--ink-55)}
+.sg{margin:12px 0 0} .sg:first-child{margin-top:4px} .sg h4{margin:0 0 2px;font:500 12px/20px var(--font);color:var(--ink-62)}
 .sw{display:flex;flex-wrap:wrap;gap:0 22px} .sw button{position:relative;border:0;background:none;padding:0;font:500 15px/40px var(--font);color:var(--ink-72);cursor:pointer;white-space:nowrap} .sw button.on{color:var(--ink);font-weight:600} .sw button.on::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:2px;background:var(--ink)}
 .sg.top .sw button{font-weight:600}
 /* 종목 표 */
 .tbl.movers th:first-child,.tbl.movers td:first-child{white-space:normal;min-width:200px}
 .tbl.movers tbody tr{cursor:pointer} .tbl.movers tbody tr:hover .m-name{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
 .tbl.movers td{padding-top:13px;padding-bottom:13px}
-.m-rank{display:inline-block;width:24px;font:500 12px/16px var(--font);color:var(--ink-30)}
-.m-name{font:500 14px/20px var(--font)} .m-meta{margin:2px 0 0 24px;font:400 12px/16px var(--font);color:var(--ink-55)}
-.empty-td{text-align:left;color:var(--ink-55);padding:28px 0}
-.note{margin:16px 0 0;font:400 12px/18px var(--font);color:var(--ink-55)}
+.m-rank{display:inline-block;width:24px;font:500 12px/16px var(--font);color:var(--ink-62)}
+.m-name{font:500 14px/20px var(--font)} .m-meta{margin:2px 0 0 24px;font:400 12px/16px var(--font);color:var(--ink-62)}
+.empty-td{text-align:left;color:var(--ink-62);padding:28px 0}
+.note{margin:16px 0 0;font:400 12px/18px var(--font);color:var(--ink-62)}
 '''
 
 MOBILE_CSS = '''@media (max-width:820px){

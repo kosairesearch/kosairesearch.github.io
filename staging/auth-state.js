@@ -243,7 +243,7 @@ function injectCss(){
     background:var(--surface);border:1px solid var(--hair);border-radius:16px;box-shadow:0 24px 60px rgba(20,20,20,.18);
     color:var(--ink);font-family:var(--font)}
   .wd-h{margin:0;font:700 22px/30px var(--font);letter-spacing:-.02em;color:var(--ink)}
-  .wd-em{margin:6px 0 0;font:400 13px/20px var(--font);color:var(--ink-55);word-break:break-all}
+  .wd-em{margin:6px 0 0;font:400 13px/20px var(--font);color:var(--ink-62);word-break:break-all}
   .wd-warn{margin:16px 0 0;font:400 14px/22px var(--font);color:var(--up)}
   .wd-sub{margin:18px 0 0;padding:14px 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
   .wd-sub b{display:block;font:600 13px/20px var(--font);color:var(--ink)}
@@ -269,7 +269,7 @@ function injectCss(){
     border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;padding:8px 0;
     font:400 15px/24px var(--font);color:var(--ink);outline:0;transition:border-color .15s}
   .wd-detail:focus{border-bottom-color:var(--ink)}
-  .wd-detail::placeholder,.wd-type::placeholder{color:var(--ink-30)}
+  .wd-detail::placeholder,.wd-type::placeholder{color:var(--ink-62)}
   .wd-ack{margin-top:22px;border-bottom:0;font-size:13px;align-items:flex-start;color:var(--ink-72)}
   .wd-ack .wd-box{margin-top:1px}
   .wd-type{display:block;width:100%;box-sizing:border-box;margin-top:10px;border:0;border-bottom:1px solid var(--line);

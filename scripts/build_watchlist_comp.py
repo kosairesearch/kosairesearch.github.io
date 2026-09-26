@@ -17,14 +17,14 @@ import comp_common as C  # noqa: E402
 
 CSS = '''
 .hero{padding:44px 0 0}
-.crumb{font:500 13px/20px var(--font);color:var(--ink-55)}
+.crumb{font:500 13px/20px var(--font);color:var(--ink-62)}
 .hero h1{margin:12px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
 .hero .sub{margin:16px 0 0;font:400 17px/28px var(--font);color:var(--ink-72);max-width:640px}
 /* 정렬 · 편집 줄 */
 .bar{margin-top:36px;display:flex;align-items:center;gap:24px;border-bottom:1px solid var(--hair)}
 .sorts{position:relative;display:flex;gap:20px;align-items:center;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0} .sorts::-webkit-scrollbar{display:none}
-.sorts .lbl{font:500 12px/44px var(--font);color:var(--ink-30);flex:none;margin-right:2px}
-.sorts button{flex:none;position:relative;border:0;background:none;padding:0;font:500 13px/44px var(--font);color:var(--ink-55);cursor:pointer;white-space:nowrap;transition:color .12s}
+.sorts .lbl{font:500 12px/44px var(--font);color:var(--ink-62);flex:none;margin-right:2px}
+.sorts button{flex:none;position:relative;border:0;background:none;padding:0;font:500 13px/44px var(--font);color:var(--ink-62);cursor:pointer;white-space:nowrap;transition:color .12s}
 .sorts button:hover{color:var(--ink)} .sorts button.on{color:var(--ink);font-weight:600}
 .sortsel{display:none}
 .acts{display:flex;gap:18px;flex:none}
@@ -34,15 +34,15 @@ CSS = '''
 .rows.edit .row{grid-template-columns:28px 36px 200px minmax(0,1fr) 170px 96px}
 .rm{width:24px;height:24px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink-72);display:none;align-items:center;justify-content:center;cursor:pointer;padding:0} .rows.edit .rm{display:inline-flex} .rm:hover{border-color:var(--up);color:var(--up)}
 .rm svg{width:12px;height:12px;stroke:currentColor;stroke-width:2.2;fill:none;stroke-linecap:round}
-.rk{font:500 12px/16px var(--font);color:var(--ink-30)}
-.r-name{font:600 16px/22px var(--font)} .r-meta{margin-top:3px;font:400 12px/16px var(--font);color:var(--ink-55)} .r-meta .md{display:none}
-.r-title{font:400 16px/24px var(--font)} .r-title.none{color:var(--ink-30)}
+.rk{font:500 12px/16px var(--font);color:var(--ink-62)}
+.r-name{font:600 16px/22px var(--font)} .r-meta{margin-top:3px;font:400 12px/16px var(--font);color:var(--ink-62)} .r-meta .md{display:none}
+.r-title{font:400 16px/24px var(--font)} .r-title.none{color:var(--ink-62)}
 .row:hover .r-title{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px}
 .r-price{text-align:right;font:500 16px/22px var(--font);white-space:nowrap} .r-price .c{margin-left:8px;font:600 13px/18px var(--font)}
-.r-date{text-align:right;font:400 13px/18px var(--font);color:var(--ink-55)}
+.r-date{text-align:right;font:400 13px/18px var(--font);color:var(--ink-62)}
 /* 쪽 넘기기 */
-.pager{display:flex;justify-content:space-between;align-items:center;margin-top:18px;font:400 13px/20px var(--font);color:var(--ink-55)}
-.pctl{position:relative;display:flex;gap:2px} .pctl>.ind{margin-top:4px} .pctl button{border:0;background:none;min-width:32px;height:32px;padding:0 6px;font:500 13px var(--font);color:var(--ink-55);cursor:pointer}
+.pager{display:flex;justify-content:space-between;align-items:center;margin-top:18px;font:400 13px/20px var(--font);color:var(--ink-62)}
+.pctl{position:relative;display:flex;gap:2px} .pctl>.ind{margin-top:4px} .pctl button{border:0;background:none;min-width:32px;height:32px;padding:0 6px;font:500 13px var(--font);color:var(--ink-62);cursor:pointer}
 .pctl button:hover{color:var(--ink)} .pctl button.on{color:var(--ink);font-weight:600} .pctl button:disabled{color:var(--ink-30);cursor:default}
 /* 빈 목록 */
 .empty{padding:56px 0 24px;max-width:520px} .empty h2{margin:0;font:700 22px/30px var(--font);letter-spacing:-.02em} .empty p{margin:12px 0 24px;font:400 15px/24px var(--font);color:var(--ink-72)}

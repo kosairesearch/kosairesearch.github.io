@@ -82,9 +82,9 @@ LOCK_CSS = '''/* 유료 구간 — 흐린 미리보기 뒤에 잠금 카드. 상
 .lock{border-top:1px solid var(--line);padding:32px 0;margin:0}
 .lock h3{margin:0;font:700 22px/30px var(--font);letter-spacing:-.02em}
 .lock-sub{margin:8px 0 0;font:400 14px/22px var(--font);color:var(--ink-72)}
-.lock-list{margin:14px 0 0;font:400 13px/20px var(--font);color:var(--ink-55)} .lock-list span+span::before{content:" · "}
+.lock-list{margin:14px 0 0;font:400 13px/20px var(--font);color:var(--ink-62)} .lock-list span+span::before{content:" · "}
 .lock-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-.lock-note{margin:14px 0 0;font:400 12px/18px var(--font);color:var(--ink-55)}
+.lock-note{margin:14px 0 0;font:400 12px/18px var(--font);color:var(--ink-62)}
 .lock-err{display:none;margin:12px 0 0;font:400 13px/20px var(--font);color:var(--up)} .lock-err.show{display:block}
 /* 목차의 자물쇠 — 잠긴 절 */
 .toc a .lk{width:11px;height:11px;flex:none;margin-left:auto;align-self:center;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;opacity:.55}
@@ -162,22 +162,32 @@ function secH(i,title,inner,wide,quiet,tag){ tag=tag||'section'; var n=pad(i); r
 /* ── 차트 (stock_page.bar_chart 과 같은 좌표·표기) ── */
 function barChart(groups){
   var w=520,h=220,padL=8,padR=8,top=28,bottom=28,n=groups.length; if(!n) return '';
-  var mx=null; groups.forEach(function(g){ var m=Math.max(g[1]||0,g[2]||0); mx=(mx==null||m>mx)?m:mx; }); mx=mx||1;
-  var gw=(w-padL-padR)/n, bw=Math.min(22,gw*0.24), gap=6, plotH=h-top-bottom;
-  var out='<svg class="ch" viewBox="0 0 '+w+' '+h+'" role="img" aria-label="매출·영업이익 막대그래프">';
-  out+='<line x1="'+padL+'" y1="'+(top+plotH)+'" x2="'+(w-padR)+'" y2="'+(top+plotH)+'" class="ch-base"/>';
+  var vals=[]; groups.forEach(function(g){ [g[1],g[2]].forEach(function(v){ if(v!=null) vals.push(v); }); });
+  var mx=Math.max.apply(null,[0].concat(vals)), mn=Math.min.apply(null,[0].concat(vals)); if(mx===mn) mx=1;
+  var extra=mn<0?20:0, H=h+extra, plotH=h-top-bottom, rng=mx-mn, y0=top+plotH*mx/rng;
+  var gw=(w-padL-padR)/n, bw=Math.min(22,gw*0.24), gap=6;
+  var svg='<svg viewBox="0 0 '+w+' '+H+'" preserveAspectRatio="none" aria-hidden="true">'
+    +'<line x1="'+padL+'" y1="'+pyf(y0,1)+'" x2="'+(w-padR)+'" y2="'+pyf(y0,1)+'" class="ch-base" vector-effect="non-scaling-stroke"/>';
+  var labs='';
   groups.forEach(function(g,i){
-    var cx=padL+gw*i+gw/2;
+    var cx=padL+gw*i+gw/2, marks=[];
     [[g[1],'ch-rev'],[g[2],'ch-op']].forEach(function(b,j){
       var val=b[0]; if(val==null) return;
-      var bh=Math.max(2,plotH*Math.max(val,0)/mx);
-      var x=(j===0)?cx-bw-gap/2:cx+gap/2, y=top+plotH-bh;
-      out+='<rect class="'+b[1]+'" x="'+pyf(x,1)+'" y="'+pyf(y,1)+'" width="'+pyf(bw,1)+'" height="'+pyf(bh,1)+'" rx="2"/>';
-      out+='<text class="ch-val" x="'+pyf(x+bw/2,1)+'" y="'+pyf(y-6,1)+'" text-anchor="middle">'+fjo(val)+'</text>';
+      var x=(j===0)?cx-bw-gap/2:cx+gap/2, bh=plotH*Math.abs(val)/rng;
+      if(val){ bh=Math.max(1.5,bh); var y=val>0?y0-bh:y0;
+        svg+='<rect class="'+b[1]+'" x="'+pyf(x,1)+'" y="'+pyf(y,1)+'" width="'+pyf(bw,1)+'" height="'+pyf(bh,1)+'"/>'; }
+      var up=val>=0, lft=(j===1&&up);   /* 영업이익 흑자 라벨은 막대 왼쪽 끝에서 오른쪽으로 — 옆 매출 막대를 덮지 않게 */
+      marks.push([lft?x:x+bw/2, up?(y0-bh-5):(y0+bh+5), up, fjo(val), lft]);
     });
-    out+='<text class="ch-lab" x="'+pyf(cx,1)+'" y="'+(h-8)+'" text-anchor="middle">'+esc(g[0])+'</text>';
+    if(marks.length===2 && marks[0][2]===marks[1][2] && Math.abs(marks[0][1]-marks[1][1])<14){
+      var a=marks[0], c=marks[1];
+      if(a[2]){ var hi=a[1]<=c[1]?a:c, lo=hi===a?c:a; hi[1]=lo[1]-14; }
+      else { var deep=a[1]>=c[1]?a:c, sh=deep===a?c:a; deep[1]=sh[1]+14; }
+    }
+    marks.forEach(function(m){ labs+='<span class="ch-val'+(m[2]?'':' dn')+(m[4]?' l':'')+'" style="left:'+pyf(m[0]/w*100,2)+'%;top:'+pyf(m[1],1)+'px">'+m[3]+'</span>'; });
+    labs+='<span class="ch-lab" style="left:'+pyf(cx/w*100,2)+'%;top:'+(H-20)+'px">'+esc(g[0])+'</span>';
   });
-  return out+'</svg>';
+  return '<div class="ch" role="img" aria-label="매출·영업이익 막대그래프" style="height:'+H+'px">'+svg+'</svg>'+labs+'</div>';
 }
 
 /* ── 히어로 · 지표 (stock_page.render · _stats) ── */

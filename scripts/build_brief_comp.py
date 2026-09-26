@@ -20,13 +20,13 @@ import render_brief as RB  # noqa: E402
 CSS = '''
 /* 글 한 단 — 읽기 폭 720 */
 .mb{max-width:720px;padding:44px 0 0}
-.mb-date{font:500 13px/20px var(--font);color:var(--ink-55)} .mb-date::before{content:"모닝브리핑 · "}
+.mb-date{font:500 13px/20px var(--font);color:var(--ink-62)} .mb-date::before{content:"모닝브리핑 · "}
 .mb h1{margin:12px 0 0;font:700 36px/48px var(--font);letter-spacing:-.025em;text-wrap:balance}
 .mb-lead{margin:18px 0 0;font:400 18px/30px var(--font);color:var(--ink-72)}
-.mb-meta{margin-top:14px;font:400 13px/20px var(--font);color:var(--ink-55)}
+.mb-meta{margin-top:14px;font:400 13px/20px var(--font);color:var(--ink-62)}
 /* 요약 — 상자 대신 위아래 줄 */
 .mb-sum{margin:36px 0 0;padding:26px 0 8px;border-top:1px solid var(--line);border-bottom:1px solid var(--hair)}
-.mb-sum-h{font:600 12px/16px var(--font);color:var(--ink-55);margin:0 0 14px}
+.mb-sum-h{font:600 12px/16px var(--font);color:var(--ink-62);margin:0 0 14px}
 .mb-sum-p{margin:0 0 18px;font:400 18px/30px var(--font);letter-spacing:-.005em}
 /* 절 */
 .mb-sec{padding-top:48px}
@@ -36,8 +36,8 @@ CSS = '''
 .mb-sec b{font-weight:600}
 /* KOSAI 리포트 확인 지점 — 우리 리포트에서 나온 절이라 줄 하나로 구분 */
 .mb-sec--cov{margin-top:56px;padding-top:36px;border-top:1px solid var(--line)}
-.mb-src{font:600 12px/16px var(--font);color:var(--ink-55);margin:0 0 10px}
-.mb-disc{margin:56px 0 0;padding-top:18px;border-top:1px solid var(--hair);font:400 12px/18px var(--font);color:var(--ink-55)}
+.mb-src{font:600 12px/16px var(--font);color:var(--ink-62);margin:0 0 10px}
+.mb-disc{margin:56px 0 0;padding-top:18px;border-top:1px solid var(--hair);font:400 12px/18px var(--font);color:var(--ink-62)}
 '''
 
 MOBILE_CSS = '''@media (max-width:820px){
