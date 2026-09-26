@@ -11,6 +11,7 @@
 """
 import argparse
 import html
+import json
 import re
 import sys
 import urllib.parse
@@ -69,6 +70,21 @@ def show(url):
     body = text_of(raw) if "html" in ctype.lower() or raw.lstrip().startswith("<") else raw
     print("-" * 100)
     print(body)
+    # 스크립트 안에 JSON 으로 실린 본문(고객센터처럼 화면을 스크립트로 그리는 곳)을 꺼낸다
+    blobs = []
+    for sc in re.findall(r"<script[^>]*>(.*?)</script>", raw, re.S):
+        for lit in re.findall(r'"((?:[^"\\]|\\.){40,})"', sc):
+            try:
+                val = json.loads('"' + lit + '"')
+            except Exception:
+                continue
+            if len(re.findall(r"[가-힣]", val)) >= 20 and val not in blobs:
+                blobs.append(val)
+    if blobs:
+        print("-" * 40 + f" 스크립트 속 한글 글 {len(blobs)}개")
+        for b in blobs:
+            print(text_of(b) if "<" in b else b)
+            print("·" * 20)
     if len(body) < 400:
         # 글이 거의 없으면 스크립트로 그리는 페이지다 — 불러오는 주소를 찾으려고 원문 앞부분을 본다
         print("-" * 40 + " (글이 거의 없다 — 원문 앞부분)")
@@ -107,7 +123,13 @@ def main():
             print("  ·", l)
     for l in queue[:a.max]:
         seen.add(l)
-        show(l)
+        got = show(l)
+        if got:
+            final, raw = got
+            links = links_of(final, raw)
+            print("-" * 40 + f" 이 페이지의 링크 {len(links)}개")
+            for x, label in links:
+                print(f"  [{label[:60]}] {x}")
     return 0
 
 
