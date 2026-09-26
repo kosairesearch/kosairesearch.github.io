@@ -90,7 +90,7 @@ jobs:
         if: ${{ inputs.probe }}
         run: |
           set -o pipefail
-          python scripts/probe_sources.py 2>&1 | tee -a $GITHUB_STEP_SUMMARY
+          python scripts/probe_feeds.py 2>&1 | tee -a $GITHUB_STEP_SUMMARY
 
       - name: 오늘 재료로 처음부터 한 편 (발행 안 함)
         if: ${{ inputs.live }}
