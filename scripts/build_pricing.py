@@ -66,7 +66,9 @@ CSS = '''
 .plan-price{margin:12px 0 0;font:700 36px/44px var(--font);letter-spacing:-.02em} .plan-price span{font:500 14px/20px var(--font);letter-spacing:0;color:var(--ink-55);margin-left:6px}
 .plan-sub{margin:4px 0 0;font:400 13px/20px var(--font);color:var(--ink-55);min-height:20px}
 .plan-feats{list-style:none;margin:22px 0 0;padding:0} .plan-feats li{padding:9px 0;border-top:1px solid var(--hair);font:400 14px/20px var(--font)}
-.plan .btn{margin-top:24px;width:100%;justify-content:center;height:44px;font-size:14px} .plan .btn.is-current{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+.plan .btn{margin-top:24px;width:100%;justify-content:center;height:44px;font-size:14px}
+/* 세 칸의 단추를 한 줄에 — 무료 칸의 항목이 하나 더 많아 단추가 아래로 처졌다(2026-09-26 사장). 칸을 세로 flex 로 두고 단추를 바닥에 붙인다. */
+.plan{display:flex;flex-direction:column} .plan .btn{margin-top:auto} .plan-feats{margin-bottom:24px} .plan .btn.is-current{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
 .plan-msg{display:none;margin:12px 0 0;font:400 13px/20px var(--font);color:var(--ink-72)} .plan-msg.show{display:block} .plan-msg.err{color:var(--up)}
 .plan-badge.js{position:absolute;top:28px;right:0;font:600 12px/16px var(--font);color:var(--ink)}
 /* 제공 범위 표 */
