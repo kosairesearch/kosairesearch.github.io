@@ -34,10 +34,11 @@ def get(url):
 
 def links_of(base, raw):
     out = []
-    for m in re.finditer(r"""href\s*=\s*["']([^"'#]+)""", raw):
+    for m in re.finditer(r"""<a\b[^>]*href\s*=\s*["']([^"'#]+)["'][^>]*>(.*?)</a>""", raw, re.S):
         u = urllib.parse.urljoin(base, html.unescape(m.group(1)).strip())
-        if u.startswith("http") and u not in out:
-            out.append(u)
+        label = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", m.group(2)))).strip()
+        if u.startswith("http") and u not in [x for x, _ in out]:
+            out.append((u, label))
     return out
 
 
@@ -88,13 +89,17 @@ def main():
     for u in a.urls:
         seen.add(u)
         got = show(u)
-        if got and a.follow:
+        if got:
             final, raw = got
-            host = urllib.parse.urlparse(final).netloc
-            for l in links_of(final, raw):
-                if (urllib.parse.urlparse(l).netloc == host and re.search(a.follow, l)
-                        and l not in seen and l not in queue):
-                    queue.append(l)
+            links = links_of(final, raw)
+            print("-" * 40 + f" 이 페이지의 링크 {len(links)}개")
+            for l, label in links:
+                print(f"  [{label[:60]}] {l}")
+            if a.follow:
+                for l, label in links:
+                    if (re.search(a.follow, l) or re.search(a.follow, label)) \
+                            and l not in seen and l not in queue:
+                        queue.append(l)
     if a.follow:
         print("\n" + "=" * 100)
         print(f"■ 따라갈 링크 {len(queue)}개 (최대 {a.max}개 읽음)")
