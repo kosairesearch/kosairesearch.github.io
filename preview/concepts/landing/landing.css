@@ -101,7 +101,7 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
    뒤에서 올라오는 빛에 윤곽만 밝게 드러나는 행성. 캔버스는 글 뒤로 --orb-x 만큼 올라가 빛이 잘리지 않게 번진다 */
 .orb-box{position:relative;margin-top:auto;height:var(--orb-v);pointer-events:none}
 .orb{position:absolute;left:0;right:0;bottom:0;z-index:-1;display:block;width:100%;height:calc(100% + var(--orb-x));
-  -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 66%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0,#000 66%,transparent 100%)}
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 16%,#000 66%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0,#000 16%,#000 66%,transparent 100%)}
 /* 처음 열 때 — 글이 먼저 올라오고 행성의 빛이 뒤따라 밝아진다(움직임 줄임이면 없음) */
 @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:no-preference){
