@@ -36,57 +36,80 @@ ORB_SEED = 2680                                         # 첫 화면 구의 점 
 
 ORB_JS = r"""(function(){
 var cv=document.getElementById('orb');if(!cv||!cv.getContext)return;
-var D=JSON.parse(document.getElementById('orbData').textContent),N=D.n,S=D.s,RS={},i;D.r.forEach(function(j){RS[j]=1});
-/* 피보나치 구면 — 점 N개를 고르게 */
-var ctx=cv.getContext('2d'),P=new Float32Array(N*3),ga=Math.PI*(3-Math.sqrt(5));
-for(i=0;i<N;i++){var y=1-(i/(N-1))*2,r=Math.sqrt(1-y*y),th=ga*i;P[i*3]=Math.cos(th)*r;P[i*3+1]=y;P[i*3+2]=Math.sin(th)*r}
-var sp=document.createElement('canvas');sp.width=sp.height=32;
+var D=JSON.parse(document.getElementById('orbData').textContent),N=D.n,RS={},i;D.r.forEach(function(j){RS[j]=1});
+/* 모양 — 축을 뒤로 0.3 눕혀 북극이 윗변 너머에 숨는다(점 줄이 지평선과 나란한 호가 된다). 반지름은 PC 화면 폭의 절반(최대 1000), 휴대폰은 폭의 1.1배 */
+var TL=-.3,ct=Math.cos(TL),st=Math.sin(TL);
+var ctx=cv.getContext('2d'),P=null,sp=document.createElement('canvas');sp.width=sp.height=32;
 var sx=sp.getContext('2d'),g=sx.createRadialGradient(16,16,0,16,16,16);
-g.addColorStop(0,'rgba(248,247,244,1)');g.addColorStop(.42,'rgba(248,247,244,.8)');g.addColorStop(1,'rgba(248,247,244,0)');sx.fillStyle=g;sx.fillRect(0,0,32,32);
-var root=document.documentElement,W=0,H=0,rad=0,cx=0,cy=0,k=1,band='#141414',ang=.9,last=0,t0=0,on=false,
-    TL=.36,ct=Math.cos(TL),st=Math.sin(TL),red=matchMedia('(prefers-reduced-motion: reduce)').matches,pt=0,pv=0;
+g.addColorStop(0,'rgba(248,247,244,1)');g.addColorStop(.45,'rgba(248,247,244,.85)');g.addColorStop(1,'rgba(248,247,244,0)');sx.fillStyle=g;sx.fillRect(0,0,32,32);
+var G=document.createElement('canvas'),gx=G.getContext('2d');
+var root=document.documentElement,W=0,H=0,dpr=1,rad=0,cx=0,cy=0,SZ=1,band='#141414',ang=.9,last=0,t0=0,on=false,rz=0,
+    red=matchMedia('(prefers-reduced-motion: reduce)').matches,pt=0,pv=0;
 function col(){band=getComputedStyle(root).getPropertyValue('--band').trim()||'#141414'}
+function rgba(hx,a){var h=hx.replace('#','');if(h.length===3)h=h.replace(/(.)/g,'$1$1');var n=parseInt(h,16);return 'rgba('+(n>>16&255)+','+(n>>8&255)+','+(n&255)+','+a+')'}
+/* 규칙적인 점 — 화면에 보이는 위도 띠(lo~hi)에 고리를 같은 간격으로 두르고, 고리마다 점을 같은 간격으로 놓는다.
+   고리 사이는 점 사이의 두 배(점이 줄을 이룬다), 이웃 고리는 반 칸 엇갈린다. 점은 모두 N개(리포트가 있는 종목 수) */
+function grid(lo,hi){
+  var area=2*Math.PI*(Math.sin(hi)-Math.sin(lo)),d=Math.sqrt(area/N),R=Math.max(1,Math.round((hi-lo)/(d*2))),lat=[],cnt=[],tot=0,k,acc=0;
+  for(k=0;k<R;k++){var ph=lo+(k+.5)*(hi-lo)/R,c=2*Math.PI*Math.cos(ph)/(d/2);lat.push(ph);cnt.push(c);tot+=c}
+  for(k=0;k<R;k++){cnt[k]=Math.max(1,Math.round(cnt[k]*N/tot));acc+=cnt[k]}
+  for(k=0;acc!==N;k++){var dd=acc<N?1:-1;if(cnt[k%R]+dd>0){cnt[k%R]+=dd;acc+=dd}}
+  P=new Float32Array(N*3);var n=0;
+  for(k=0;k<R;k++){var cp=Math.cos(lat[k]),s1=Math.sin(lat[k]),m=cnt[k],off=(k%2)*.5;
+    for(var j=0;j<m&&n<N;j++,n++){var th=2*Math.PI*(j+off)/m;P[n*3]=cp*Math.cos(th);P[n*3+1]=s1;P[n*3+2]=cp*Math.sin(th)}}
+}
+/* 빛 — 크기가 바뀔 때 한 번만 그려 둔다. 뒤에서 올라오는 새벽빛, 가장자리가 빛 속으로 풀리는 몸, 가장자리를 가운데로
+   안팎으로 번지는 대기(선 없음 — 위쪽이 가장 밝고 옆으로 내려가며 옅어진다) */
+function light(){
+  G.width=cv.width;G.height=cv.height;gx.setTransform(dpr,0,0,dpr,0,0);gx.clearRect(0,0,W,H);
+  var top=cy-rad,A=Math.PI*2;
+  var b=gx.createRadialGradient(cx,top+rad*.06,0,cx,top+rad*.06,rad*.95);
+  b.addColorStop(0,'rgba(255,255,255,.13)');b.addColorStop(.3,'rgba(255,255,255,.05)');b.addColorStop(1,'rgba(255,255,255,0)');
+  gx.fillStyle=b;gx.fillRect(0,0,W,H);
+  var re=rad*1.025,bd=gx.createRadialGradient(cx,cy,0,cx,cy,re);
+  bd.addColorStop(0,rgba(band,1));bd.addColorStop(rad*.9/re,rgba(band,1));bd.addColorStop(1,rgba(band,0));
+  gx.fillStyle=bd;gx.beginPath();gx.arc(cx,cy,re,0,A);gx.fill();
+  var R=document.createElement('canvas');R.width=G.width;R.height=G.height;var rx=R.getContext('2d');rx.setTransform(dpr,0,0,dpr,0,0);
+  var r0=rad*.82,r1=rad*1.3,a=rx.createRadialGradient(cx,cy,r0,cx,cy,r1);
+  function at(r,al){a.addColorStop((r-r0)/(r1-r0),'rgba(246,245,242,'+al+')')}
+  at(r0,0);at(rad*.93,.045);at(rad*.97,.11);at(rad,.19);at(rad*1.03,.13);at(rad*1.08,.06);at(rad*1.16,.022);at(r1,0);
+  rx.fillStyle=a;rx.fillRect(0,0,W,H);
+  rx.globalCompositeOperation='destination-in';
+  var v=rx.createLinearGradient(0,top-rad*.08,0,top+rad*.85);
+  v.addColorStop(0,'rgba(0,0,0,1)');v.addColorStop(.4,'rgba(0,0,0,.6)');v.addColorStop(1,'rgba(0,0,0,.18)');
+  rx.fillStyle=v;rx.fillRect(0,0,W,H);
+  gx.setTransform(1,0,0,1,0,0);gx.drawImage(R,0,0);
+}
+/* 한 장 — 빛을 깔고 점을 찍는다. 점은 가장자리에 가까울수록 빛 속으로 사라지고(경계를 만들지 않는다), 윤곽 쪽과 위쪽이 조금 더 밝다.
+   최근 14일 안에 새로 쓴 리포트의 점은 천천히 밝아졌다 어두워진다 */
 function draw(t){
   if(!t0)t0=t;var e=red?1:Math.min(1,(t-t0)/1800);e=1-Math.pow(1-e,3);
-  var c=cy+(1-e)*56,top=c-rad,A=Math.PI*2;
-  ctx.clearRect(0,0,W,H);
-  /* 뒤에서 올라오는 빛 */
-  var b=ctx.createRadialGradient(cx,top+rad*.12,0,cx,top+rad*.12,rad*1.12);
-  b.addColorStop(0,'rgba(255,255,255,'+.12*e+')');b.addColorStop(.38,'rgba(255,255,255,'+.04*e+')');b.addColorStop(1,'rgba(255,255,255,0)');
-  ctx.fillStyle=b;ctx.fillRect(0,0,W,H);
-  /* 대기 — 위쪽이 두꺼운 빛 테 */
-  var ay=c+rad*.05,a=ctx.createRadialGradient(cx,ay,rad*.95,cx,ay,rad*1.16);
-  a.addColorStop(0,'rgba(248,247,244,'+.3*e+')');a.addColorStop(.18,'rgba(248,247,244,'+.1*e+')');a.addColorStop(1,'rgba(248,247,244,0)');
-  ctx.fillStyle=a;ctx.beginPath();ctx.arc(cx,ay,rad*1.16,0,A);ctx.fill();
-  /* 몸 — 무대 색, 가장자리만 안쪽으로 살짝 밝게 */
-  ctx.save();ctx.beginPath();ctx.arc(cx,c,rad,0,A);ctx.clip();ctx.fillStyle=band;ctx.fillRect(cx-rad,top,rad*2,rad*2);
-  var s=ctx.createRadialGradient(cx,c+rad*.14,rad*.6,cx,c+rad*.14,rad*1.14);
-  s.addColorStop(0,'rgba(255,255,255,0)');s.addColorStop(1,'rgba(255,255,255,'+.075*e+')');ctx.fillStyle=s;ctx.fillRect(cx-rad,top,rad*2,rad*2);ctx.restore();
-  /* 윤곽선 — 꼭대기가 가장 밝고 옆으로 사라진다 */
-  var l=ctx.createLinearGradient(0,top,0,top+rad*.8);
-  l.addColorStop(0,'rgba(250,249,246,'+.85*e+')');l.addColorStop(.35,'rgba(250,249,246,'+.28*e+')');l.addColorStop(1,'rgba(250,249,246,0)');
-  ctx.strokeStyle=l;ctx.lineWidth=1.2;ctx.beginPath();ctx.arc(cx,c,rad-.6,0,A);ctx.stroke();
-  /* 종목 — 윤곽 쪽과 위쪽일수록 밝다(뒤에서 비추는 빛) */
-  pv+=(pt-pv)*.05;var q=ang+pv,ca=Math.cos(q),sa=Math.sin(q);
+  var oy=(1-e)*50,c=cy+oy;
+  ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,cv.width,cv.height);
+  ctx.globalAlpha=e;ctx.drawImage(G,0,Math.round(oy*dpr));ctx.globalAlpha=1;ctx.setTransform(dpr,0,0,dpr,0,0);
+  pv+=(pt-pv)*.05;var qq=ang+pv,ca=Math.cos(qq),sa=Math.sin(qq);
   for(i=0;i<N;i++){
     var x=P[i*3],y=P[i*3+1],z=P[i*3+2],x1=x*ca-z*sa,z1=x*sa+z*ca,y2=y*ct-z1*st,z2=y*st+z1*ct;
-    if(z2<=0)continue;var px=cx+x1*rad,py=c-y2*rad;if(py<-4||py>H+4)continue;
-    var f=1-z2,al=(.34+.5*f*f)*(.55+.45*(y2+1)/2)*e,sz=(.6+(S.charCodeAt(i)-48)*.085+f*.35)*k;
-    if(RS[i]){var p=.5+.5*Math.sin(t*.0016+i*1.7);al=Math.min(1,al+.4*p*e);sz+=.7*p*k}
-    ctx.globalAlpha=al;ctx.drawImage(sp,px-sz,py-sz,sz*2,sz*2)
+    if(z2<=0)continue;var px=cx+x1*rad,py=c-y2*rad;if(py<-4||py>H+4||px<-4||px>W+4)continue;
+    var f=1-z2,s=Math.min(1,z2/.32),fade=s*s*(3-2*s),al=Math.min(1,(.3+.45*f*f)*(.55+.45*(y2+1)/2)*fade*e*1.25);
+    if(RS[i])al=Math.min(1,al+.3*(.5+.5*Math.sin(t*.0014+i*1.7))*fade*e);
+    if(al<.01)continue;ctx.globalAlpha=al;ctx.drawImage(sp,px-SZ,py-SZ,SZ*2,SZ*2)
   }
   ctx.globalAlpha=1
 }
 function fit(){
-  var bx=cv.getBoundingClientRect(),V=cv.parentNode.getBoundingClientRect().height,dpr=Math.min(window.devicePixelRatio||1,2);
-  W=bx.width;H=bx.height;cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);
-  rad=W>820?Math.min(W*.37,V*1.02,560):Math.min(W*.82,V*.95);k=Math.max(.84,Math.min(1,rad/520));
-  cx=W/2;cy=(H-V)+rad*1.17+10;col();draw(performance.now())
+  var bx=cv.getBoundingClientRect(),V=cv.parentNode.getBoundingClientRect().height;dpr=Math.min(window.devicePixelRatio||1,2);
+  W=bx.width;H=bx.height;cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);var EX=H-V,T;
+  if(W>820){rad=Math.min(W*.5,1000);T=100;SZ=1.2}else{rad=W*1.1;T=64;SZ=1.05}
+  cx=W/2;cy=EX+T+rad;
+  /* 보이는 위도 — 캔버스 아래쪽(92%)에서 보이는 가장 낮은 위도부터, 꼭대기 너머로 넘어가는 위도까지 */
+  var vmin=Math.max(-1,Math.min(1,(cy-H*.92)/rad));
+  grid(Math.max(-Math.PI/2,Math.asin(vmin)+TL-.03),Math.min(Math.PI/2,Math.PI/2+TL+.03));col();light();draw(performance.now())
 }
 function tick(t){if(!on)return;if(!last||t-last>=32){ang+=(last?Math.min(t-last,64):32)*.00004;last=t;draw(t)}requestAnimationFrame(tick)}
 function go(v){if(red||v===on)return;on=v;last=0;if(v)requestAnimationFrame(tick)}
-fit();addEventListener('resize',fit);
-new MutationObserver(function(){col();if(!on)draw(performance.now())}).observe(root,{attributes:true,attributeFilter:['data-theme']});
+fit();addEventListener('resize',function(){cancelAnimationFrame(rz);rz=requestAnimationFrame(fit)});
+new MutationObserver(function(){col();light();if(!on)draw(performance.now())}).observe(root,{attributes:true,attributeFilter:['data-theme']});
 /* 마우스가 있으면 행성이 손을 따라 아주 조금 돈다 */
 if(matchMedia('(pointer:fine)').matches)addEventListener('mousemove',function(ev){pt=(ev.clientX/innerWidth-.5)*.5},{passive:true});
 if('IntersectionObserver' in window)new IntersectionObserver(function(en){go(en[0].isIntersecting&&!document.hidden)}).observe(cv);else go(true);
@@ -197,7 +220,7 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
    뒤에서 올라오는 빛에 윤곽만 밝게 드러나는 행성. 캔버스는 글 뒤로 --orb-x 만큼 올라가 빛이 잘리지 않게 번진다 */
 .orb-box{position:relative;margin-top:auto;height:var(--orb-v);pointer-events:none}
 .orb{position:absolute;left:0;right:0;bottom:0;z-index:-1;display:block;width:100%;height:calc(100% + var(--orb-x));
-  -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 66%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0,#000 66%,transparent 100%)}
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 16%,#000 66%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0,#000 16%,#000 66%,transparent 100%)}
 /* 처음 열 때 — 글이 먼저 올라오고 행성의 빛이 뒤따라 밝아진다(움직임 줄임이면 없음) */
 @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:no-preference){
@@ -368,21 +391,17 @@ def search_box(ph="종목명 또는 종목코드"):
 
 
 def orb_data():
-    """첫 화면의 구 — 리포트가 있는 종목 하나가 점 하나. 점 크기는 시가총액(로그, 0~9 열 단계),
-    최근 14일 안에 새로 쓴 리포트는 천천히 밝아졌다 어두워진다(r). 순서는 고정 씨앗으로 섞어 빌드마다 같다.
-    이름을 늘어놓는 대신(4판 '이름 띠' — 사장 "개구려") 수천 개의 종목을 하나의 형태로 보여 준다."""
+    """첫 화면의 행성 — 리포트가 있는 종목 하나가 점 하나(n). 점은 모두 같은 크기로 규칙적인 줄에 놓인다(ORB_JS 의 grid).
+    최근 14일 안에 새로 쓴 리포트의 점(r)은 천천히 밝아졌다 어두워진다. 종목 순서는 고정 씨앗으로 섞어 빌드마다 같다.
+    5판 뒤 구 다듬기(사장 2026-09-27 "점이 불규칙하게 위치해 있어서 규칙적으로") — 피보나치 배치와 시가총액 크기를 버렸다."""
     import json
-    import math
     import random
     rnd = random.Random(ORB_SEED)
     tks = [t for t in INDEX if t in BY]
     rnd.shuffle(tks)
-    caps = [max(BY[t].get("mcap") or 0, 1e-4) for t in tks]
-    lo, hi = math.log10(min(caps)), math.log10(max(caps))
-    sizes = "".join(str(min(9, int((math.log10(c) - lo) / (hi - lo) * 10))) for c in caps)
     recent = [i for i, t in enumerate(tks)
               if INDEX[t].get("reportDate") and (BASE - datetime.date.fromisoformat(INDEX[t]["reportDate"])).days <= 14]
-    return json.dumps({"n": len(tks), "s": sizes, "r": recent}, separators=(",", ":"))
+    return json.dumps({"n": len(tks), "r": recent}, separators=(",", ":"))
 
 
 def sources_avg():
