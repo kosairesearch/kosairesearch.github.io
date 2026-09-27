@@ -1,17 +1,20 @@
-"""랜딩 시안 3판 — 스테이징 옷 그대로, 절마다 '큰 제목 · 짧은 서브 · 그림' 하나씩.
+"""랜딩 시안 5판 — 스테이징 옷 그대로, 절마다 '큰 제목 · 짧은 서브 · 그림' 하나씩.
 
     python3 scripts/concepts/landing.py      # → preview/concepts/landing/index.html · landing.css
 
-  · 3판은 사장 피드백(2026-09-27)대로 줄였다 — "초중반에 글이 너무 많다 · 메인카피·서브카피·이미지 · 여백 ·
-    리포트 이미지를 넣으니 글이 많아진다 · 랜딩에서 멤버십 이야기를 왜 꺼내나 · -다로만 끝나 지루하다(AI 톤)".
-    그래서 리포트 카드 · 최근 목록 · 업종 칸 · 신뢰 세 기둥의 긴 글 · 요금 · 질문 · 브리핑 카드 · 그림 자리의 긴 설명을 뺐다.
+  · 3판은 사장 피드백(2026-09-27)대로 줄였다 — 리포트 카드 · 최근 목록 · 업종 칸 · 요금 · 질문 · 브리핑 카드를 빼고,
     멤버십은 머리·꼬리 메뉴에서도 뺐다(가격 문구는 유료화 법정 절차 뒤 — CLAUDE.md).
-  · 절 순서: 첫 화면 → 리포트 → 태도 → 갱신 → 근거 → 모닝브리핑(어두운 띠) → 업종 → 마지막. 태도를 리포트 바로 뒤에 둔 것은
-    '투자 추천인가'에 일찍 답하려고(보고서 8부 ⑬)이고, 그래서 그림 있는 절과 글만 있는 절이 번갈아 온다.
-  · 문구는 copy_text() 한 곳에 모았다. 말투는 우리 사이트 목소리(노트 20) — 제목은 명사형을 기본으로 절마다 모양을 바꾸고,
-    서브는 합쇼체에 명사로 끝나는 짧은 줄을 섞는다. 해요체 평서문과 쉼표로 가른 'A, B' 제목은 쓰지 않는다. 근거와 규칙은
-    reports/카피라이팅과 랜딩페이지 구성 이론 총정리.md 와 노트 16–20(한국어 카피 실측 · 카피라이터 원칙 · AI 말투 · KOSAI 말투).
-  · 그림·영상·3D 는 만들지 않는다. 들어갈 자리만 표시한다(종류 · 비율 · 한 줄 이름). 권장 소재는 보고서 5부.
+  · 5판(같은 날 사장 "AI가 씁니다는 싸구려 · 이름 띠는 구리다 · 판단은 읽는 분의 몫도 구리다 · 대기업 말투로 ·
+    강세·약세를 왜 바로 보여 주나 · 플리토 출처는 왜 · 특정 종목 예시는 왜"):
+      - 첫 화면은 이름 띠 대신 행성 하나 — 점 하나가 리포트 있는 종목 하나(2,680개), 뒤에서 올라오는 빛에 윤곽이 드러난다.
+      - 문구는 대기업 말투(끝까지 쓴 합쇼체 서브, 꾸밈 없는 사실). 첫 화면 서브에 'AI' 없음.
+      - 둘째 절은 얻는 것(한 편에 담은 기업 분석)으로 열고 강세·약세 요인은 그 근거로만.
+      - 특정 종목은 어디에도 없다 — 예시 링크 · 칩 · 검색창 안내의 '예: 삼성전자'까지 뺐다.
+  · 절 순서: 첫 화면 → 리포트 → 태도(가운데 선언) → 갱신 → 원칙 셋 → 모닝브리핑(어두운 띠) → 업종 → 마지막.
+  · 문구는 copy_text() 한 곳에 모았다. 제목은 명사형을 기본으로 절마다 모양을 바꾸고, 서브는 합쇼체. 해요체 평서문과
+    쉼표로 가른 'A, B' 제목은 쓰지 않는다. 근거와 규칙은 reports/카피라이팅과 랜딩페이지 구성 이론 총정리.md 와 노트 16–20.
+  · 그림·영상·3D 는 만들지 않는다. 들어갈 자리만 표시한다(종류 · 비율 · 한 줄 이름). 첫 화면의 행성은 그림이 아니라
+    data/ 로 그린 캔버스다.
   · 숫자는 전부 data/ 에서 계산한다 — 손으로 적은 숫자·날짜 없음. 스테이징·실사이트 파일은 건드리지 않는다.
 """
 import datetime
@@ -21,18 +24,74 @@ import sys
 from collections import Counter
 
 sys.path.insert(0, os.path.dirname(__file__))
-from data import ROOT, BY, STOCKS, INDEX, esc, jo, brief, now_date, report  # noqa: E402
+from data import ROOT, BY, STOCKS, INDEX, esc, brief, now_date  # noqa: E402
 from common import g  # noqa: E402
 
 OUT = os.path.join(ROOT, "preview", "concepts", "landing")
 ASSETS = "../../../assets"
 FONTS = "../../../fonts"
-HERO_REPORT = "005930"                                  # 첫 화면 보조 링크 — 누구나 아는 대형주 한 편
-CHIPS = ["005930", "000660", "300080", "093240"]        # 마무리 칩 — 시가총액 1,669조부터 182억까지(넷 다 글자 결함 0)
 BASE = datetime.date.fromisoformat(f"{now_date()[:4]}-{now_date()[4:6]}-{now_date()[6:8]}")   # 데이터의 '오늘'
 MARKETS = "코스피, 코스닥, 코넥스"                        # 가운뎃점(·)은 쓰지 않는다(사장 2026-09-27)
-TRUST_REPORT = "300080"                                 # 근거 절 링크 — 작은 회사 리포트의 출처 목록(플리토 · 결함 0)
-NAME_ANCHORS = ["005930", "000660", "005380", "035420", "035720", "068270", "373220", "207940"]   # 첫 화면 이름 띠에 꼭 넣을 큰 회사(알아보는 이름)
+ORB_SEED = 2680                                         # 첫 화면 구의 점 순서 — 고정 씨앗(빌드마다 같게)
+
+ORB_JS = r"""(function(){
+var cv=document.getElementById('orb');if(!cv||!cv.getContext)return;
+var D=JSON.parse(document.getElementById('orbData').textContent),N=D.n,S=D.s,RS={},i;D.r.forEach(function(j){RS[j]=1});
+/* 피보나치 구면 — 점 N개를 고르게 */
+var ctx=cv.getContext('2d'),P=new Float32Array(N*3),ga=Math.PI*(3-Math.sqrt(5));
+for(i=0;i<N;i++){var y=1-(i/(N-1))*2,r=Math.sqrt(1-y*y),th=ga*i;P[i*3]=Math.cos(th)*r;P[i*3+1]=y;P[i*3+2]=Math.sin(th)*r}
+var sp=document.createElement('canvas');sp.width=sp.height=32;
+var sx=sp.getContext('2d'),g=sx.createRadialGradient(16,16,0,16,16,16);
+g.addColorStop(0,'rgba(248,247,244,1)');g.addColorStop(.42,'rgba(248,247,244,.8)');g.addColorStop(1,'rgba(248,247,244,0)');sx.fillStyle=g;sx.fillRect(0,0,32,32);
+var root=document.documentElement,W=0,H=0,rad=0,cx=0,cy=0,k=1,band='#141414',ang=.9,last=0,t0=0,on=false,
+    TL=.36,ct=Math.cos(TL),st=Math.sin(TL),red=matchMedia('(prefers-reduced-motion: reduce)').matches,pt=0,pv=0;
+function col(){band=getComputedStyle(root).getPropertyValue('--band').trim()||'#141414'}
+function draw(t){
+  if(!t0)t0=t;var e=red?1:Math.min(1,(t-t0)/1800);e=1-Math.pow(1-e,3);
+  var c=cy+(1-e)*56,top=c-rad,A=Math.PI*2;
+  ctx.clearRect(0,0,W,H);
+  /* 뒤에서 올라오는 빛 */
+  var b=ctx.createRadialGradient(cx,top+rad*.12,0,cx,top+rad*.12,rad*1.12);
+  b.addColorStop(0,'rgba(255,255,255,'+.12*e+')');b.addColorStop(.38,'rgba(255,255,255,'+.04*e+')');b.addColorStop(1,'rgba(255,255,255,0)');
+  ctx.fillStyle=b;ctx.fillRect(0,0,W,H);
+  /* 대기 — 위쪽이 두꺼운 빛 테 */
+  var ay=c+rad*.05,a=ctx.createRadialGradient(cx,ay,rad*.95,cx,ay,rad*1.16);
+  a.addColorStop(0,'rgba(248,247,244,'+.3*e+')');a.addColorStop(.18,'rgba(248,247,244,'+.1*e+')');a.addColorStop(1,'rgba(248,247,244,0)');
+  ctx.fillStyle=a;ctx.beginPath();ctx.arc(cx,ay,rad*1.16,0,A);ctx.fill();
+  /* 몸 — 무대 색, 가장자리만 안쪽으로 살짝 밝게 */
+  ctx.save();ctx.beginPath();ctx.arc(cx,c,rad,0,A);ctx.clip();ctx.fillStyle=band;ctx.fillRect(cx-rad,top,rad*2,rad*2);
+  var s=ctx.createRadialGradient(cx,c+rad*.14,rad*.6,cx,c+rad*.14,rad*1.14);
+  s.addColorStop(0,'rgba(255,255,255,0)');s.addColorStop(1,'rgba(255,255,255,'+.075*e+')');ctx.fillStyle=s;ctx.fillRect(cx-rad,top,rad*2,rad*2);ctx.restore();
+  /* 윤곽선 — 꼭대기가 가장 밝고 옆으로 사라진다 */
+  var l=ctx.createLinearGradient(0,top,0,top+rad*.8);
+  l.addColorStop(0,'rgba(250,249,246,'+.85*e+')');l.addColorStop(.35,'rgba(250,249,246,'+.28*e+')');l.addColorStop(1,'rgba(250,249,246,0)');
+  ctx.strokeStyle=l;ctx.lineWidth=1.2;ctx.beginPath();ctx.arc(cx,c,rad-.6,0,A);ctx.stroke();
+  /* 종목 — 윤곽 쪽과 위쪽일수록 밝다(뒤에서 비추는 빛) */
+  pv+=(pt-pv)*.05;var q=ang+pv,ca=Math.cos(q),sa=Math.sin(q);
+  for(i=0;i<N;i++){
+    var x=P[i*3],y=P[i*3+1],z=P[i*3+2],x1=x*ca-z*sa,z1=x*sa+z*ca,y2=y*ct-z1*st,z2=y*st+z1*ct;
+    if(z2<=0)continue;var px=cx+x1*rad,py=c-y2*rad;if(py<-4||py>H+4)continue;
+    var f=1-z2,al=(.34+.5*f*f)*(.55+.45*(y2+1)/2)*e,sz=(.6+(S.charCodeAt(i)-48)*.085+f*.35)*k;
+    if(RS[i]){var p=.5+.5*Math.sin(t*.0016+i*1.7);al=Math.min(1,al+.4*p*e);sz+=.7*p*k}
+    ctx.globalAlpha=al;ctx.drawImage(sp,px-sz,py-sz,sz*2,sz*2)
+  }
+  ctx.globalAlpha=1
+}
+function fit(){
+  var bx=cv.getBoundingClientRect(),V=cv.parentNode.getBoundingClientRect().height,dpr=Math.min(window.devicePixelRatio||1,2);
+  W=bx.width;H=bx.height;cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);
+  rad=W>820?Math.min(W*.37,V*1.02,560):Math.min(W*.82,V*.95);k=Math.max(.84,Math.min(1,rad/520));
+  cx=W/2;cy=(H-V)+rad*1.17+10;col();draw(performance.now())
+}
+function tick(t){if(!on)return;if(!last||t-last>=32){ang+=(last?Math.min(t-last,64):32)*.00004;last=t;draw(t)}requestAnimationFrame(tick)}
+function go(v){if(red||v===on)return;on=v;last=0;if(v)requestAnimationFrame(tick)}
+fit();addEventListener('resize',fit);
+new MutationObserver(function(){col();if(!on)draw(performance.now())}).observe(root,{attributes:true,attributeFilter:['data-theme']});
+/* 마우스가 있으면 행성이 손을 따라 아주 조금 돈다 */
+if(matchMedia('(pointer:fine)').matches)addEventListener('mousemove',function(ev){pt=(ev.clientX/innerWidth-.5)*.5},{passive:true});
+if('IntersectionObserver' in window)new IntersectionObserver(function(en){go(en[0].isIntersecting&&!document.hidden)}).observe(cv);else go(true);
+document.addEventListener('visibilitychange',function(){go(!document.hidden&&cv.getBoundingClientRect().bottom>0)})
+})();"""
 
 CSS = r"""
 :root{
@@ -116,12 +175,13 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .slot .st span{font-weight:500;color:var(--ink-62)}
 .slot figcaption{position:absolute;left:22px;right:22px;bottom:20px;font:500 14px/1.45 var(--font);color:var(--ink-62)}
 
-/* 첫 화면 — 어두운 무대 · 큰 제목 · 검색 · 실제 상장사 이름이 흐르는 띠(그림 없이 데이터로) */
-.hero{position:relative;isolation:isolate;margin-top:-60px;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;
+/* 첫 화면 — 어두운 무대 · 큰 제목 · 검색 · 아래에서 떠오르는 종목의 행성(그림 없이 데이터로) */
+.hero{--orb-v:clamp(320px,62vh,640px);--orb-x:280px;
+  position:relative;isolation:isolate;margin-top:-60px;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;
   background:var(--band);color:var(--band-ink);overflow:hidden}
 .hero::before{content:"";position:absolute;z-index:-1;left:50%;top:-18%;width:min(1280px,130vw);height:78%;transform:translateX(-50%);
-  background:radial-gradient(closest-side,rgba(255,255,255,.085),rgba(255,255,255,0));pointer-events:none}
-.hero-in{width:100%;margin-block:auto;padding-top:calc(60px + 104px);text-align:center}   /* 남는 높이는 글 위아래로 나눈다 — 이름 띠는 늘 바닥 */
+  background:radial-gradient(closest-side,rgba(255,255,255,.06),rgba(255,255,255,0));pointer-events:none}
+.hero-in{position:relative;width:100%;padding-top:calc(60px + 104px);text-align:center}
 .hero h1{margin:0 auto;max-width:1120px;font:600 clamp(46px,7.6vw,116px)/1.06 var(--font);letter-spacing:-.05em;text-wrap:balance}
 .lede{margin-top:30px;max-width:540px;font:400 19px/1.65 var(--font);color:var(--ink-62);text-wrap:pretty}
 .lede .s,.sub .s{display:inline-block}
@@ -133,21 +193,17 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .hero .btn-ink{background:var(--band-ink);color:var(--band)}
 .hero .alt{margin-top:8px}
 .hero .more{color:var(--band-ink)}
-/* 이름 띠 — 같은 크기, 흐린 먹빛, 줄마다 다른 방향·속도. 가장자리는 서서히 사라진다 */
-.names{padding:64px 0 36px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent);
-  mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent)}
-.row{display:flex;width:max-content;margin:0;white-space:nowrap;font:500 17px/46px var(--font);letter-spacing:-.01em;color:rgba(242,241,238,.3);
-  animation:drift var(--t,150s) linear infinite;will-change:transform}
-.row:nth-child(even){animation-direction:reverse}
-.row .set{display:flex}
-.row .set span{padding:0 20px}
-.row .set .hi{color:rgba(242,241,238,.72)}
-.r1{--t:150s;opacity:.55;animation-delay:-12s} .r2{--t:190s;opacity:.8;animation-delay:-61s} .r3{--t:130s;animation-delay:-33s}
-.r4{--t:175s;animation-delay:-94s} .r5{--t:160s;opacity:.8;animation-delay:-47s} .r6{--t:140s;opacity:.55;animation-delay:-73s}
-.r7{--t:165s;opacity:.45;animation-delay:-25s} .r8{--t:185s;opacity:.35;animation-delay:-108s}
-@media (min-width:821px){.r7,.r8{display:none}}
-@keyframes drift{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
-@media (prefers-reduced-motion:reduce){.row{animation:none}}
+/* 행성 — 점 하나가 리포트가 있는 종목 하나(2,680개). 크기는 시가총액, 최근 14일에 새로 쓴 리포트는 천천히 밝아진다.
+   뒤에서 올라오는 빛에 윤곽만 밝게 드러나는 행성. 캔버스는 글 뒤로 --orb-x 만큼 올라가 빛이 잘리지 않게 번진다 */
+.orb-box{position:relative;margin-top:auto;height:var(--orb-v);pointer-events:none}
+.orb{position:absolute;left:0;right:0;bottom:0;z-index:-1;display:block;width:100%;height:calc(100% + var(--orb-x));
+  -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 66%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0,#000 66%,transparent 100%)}
+/* 처음 열 때 — 글이 먼저 올라오고 행성의 빛이 뒤따라 밝아진다(움직임 줄임이면 없음) */
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:no-preference){
+  .hero-in>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+  .hero-in>.lede{animation-delay:.12s} .hero-in>.search{animation-delay:.22s} .hero-in>.alt{animation-delay:.3s}
+}
 
 /* 절 — 작은 이름표 · 큰 제목 · 짧은 서브 · 그림 */
 .sec{padding-top:var(--sec)}
@@ -163,7 +219,8 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .split.rev>.tx{grid-column:8/13}
 .split.rev>.slot{grid-column:1/7}
 .stack>.slot{margin-top:80px;aspect-ratio:21/9}
-.solo .sub{max-width:520px}
+/* 태도 절 — 그림 없는 선언 한 줄은 가운데에(빈 반쪽이 그림 빠진 자리처럼 보이지 않게) */
+.solo{text-align:center} .solo .h2{margin:0 auto;max-width:900px} .solo .sub{margin-left:auto;margin-right:auto;max-width:560px}
 /* 근거 절 — 믿을 근거 셋(짧은 이름 + 한두 문장) */
 .proof{margin-top:56px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:var(--gap)}
 .proof li{padding-top:22px;border-top:1px solid var(--line)}
@@ -182,14 +239,10 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .band .slot{background-color:var(--band-slot);background-image:linear-gradient(155deg,var(--band-slot),var(--band-slot-2))}
 .band .slot .st{border-color:var(--band-hair);color:var(--band-ink)} .band .slot .st span,.band .slot figcaption{color:var(--band-62)}
 
-/* 마무리 — 질문 하나 · 같은 검색창 · 종목 칩 */
+/* 마무리 — 질문 하나 · 같은 검색창(특정 종목 칩은 두지 않는다) */
 .end{padding-top:var(--sec);text-align:center}
 .end .h2{margin:0 auto;max-width:820px;font-size:clamp(40px,5.8vw,80px);line-height:1.1;letter-spacing:-.045em}
 .end .search{margin:48px auto 0;max-width:560px;text-align:left}
-.chips{margin-top:18px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
-.chips a{display:inline-flex;align-items:center;height:40px;padding:0 14px;border-radius:999px;background:var(--surface-2);font:500 14px/1 var(--font);color:var(--ink);transition:background-color .12s}
-.chips a:hover{background:var(--line)}
-.chips a span{margin-left:6px;font-weight:400;color:var(--ink-62)}
 
 /* 꼬리 — 스테이징 그대로 */
 .foot{margin-top:var(--sec);border-top:1px solid var(--hair);padding:56px 0 48px}
@@ -209,7 +262,6 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
   .hero h1{font-size:clamp(46px,min(7.6vw,12vh),116px)}
   .hero .lede{margin-top:22px}
   .hero .search{margin-top:32px}
-  .names{padding-top:40px}
 }
 /* 태블릿·작은 노트북 */
 @media (max-width:1060px){
@@ -242,20 +294,18 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
   .lede{margin-top:22px;font-size:17px}
   .hero .lede{margin-top:22px}
   .hero .search{margin-top:32px}
-  .names{padding:48px 0 28px}
-  .row{font-size:14px;line-height:36px}
-  .row .set span{padding:0 13px}
+  .hero{--orb-v:clamp(300px,58vh,520px);--orb-x:180px}
   .search input{font-size:16px}
   .search .btn{height:44px;padding:0 16px}
   .eyebrow{margin-bottom:16px}
   .h2{font-size:32px;line-height:1.25;letter-spacing:-.03em}
   .end .h2{font-size:36px;line-height:1.2}
   .sub{margin-top:18px;font-size:16px}
+  .solo{text-align:left} .solo .h2,.solo .sub{margin-left:0}   /* 한 열에서는 빈 반쪽이 없으니 다른 절처럼 왼쪽 정렬 */
   .split>.slot,.stack>.slot,#fresh .split>.slot{margin-top:44px;aspect-ratio:1/1}
   .slot{border-radius:16px}
   .band{padding:72px 0}
   .end .search{margin-top:36px}
-  .chips a{height:44px}
   .fgrid{grid-template-columns:auto auto auto;justify-content:space-between;column-gap:16px}
   .fcol a{padding:12px 0}
   .foot{padding-top:44px}
@@ -311,77 +361,82 @@ def foot():
             '<div class="copy">© 2026 KOSAI</div></div></footer>')
 
 
-def search_box(ph="종목명 또는 종목코드(예: 삼성전자, 005930)", ph_m="종목명 또는 종목코드"):
-    """휴대폰(과 좁은 칸)은 예시가 잘리므로 짧은 안내(data-m)로 바꾼다."""
-    return (f'<form class="search" role="search" onsubmit="return false">{I["search"]}<input placeholder="{ph}" data-m="{ph_m}" aria-label="종목 검색" autocomplete="off">'
+def search_box(ph="종목명 또는 종목코드"):
+    """검색창 — 안내에 특정 종목 예시를 넣지 않는다(사장 "예시로 특정 종목을 왜 보여주나")."""
+    return (f'<form class="search" role="search" onsubmit="return false">{I["search"]}<input placeholder="{ph}" aria-label="종목 검색" autocomplete="off">'
             '<button class="btn btn-ink" type="button">리포트 찾기</button></form>')
 
 
-def name_rows(n_rows=8, per_row=30, seed=2680):
-    """첫 화면의 이름 띠 — 리포트가 있는 실제 상장사 이름을 여섯 줄로 흘린다(장식 · 읽는 프로그램에는 숨김).
-    크기는 모두 같다: 삼성전자와 작은 회사가 같은 크기로 지나간다 — '증권사가 다루지 않는 종목까지'를 그림으로.
-    PC 는 여섯 줄, 한 열(820px 이하)은 여덟 줄을 보인다. 이름은 고정 씨앗으로 섞어 빌드할 때마다 같게, 알아보는 큰 회사 몇(NAME_ANCHORS)은 꼭 넣는다. 한 줄은 같은 묶음을
-    두 번 이어 붙여 -50% 만큼 흘리면 끊김 없이 돈다. 줄마다 방향과 속도가 다르고, 움직임 줄임 설정이면 멈춘다."""
+def orb_data():
+    """첫 화면의 구 — 리포트가 있는 종목 하나가 점 하나. 점 크기는 시가총액(로그, 0~9 열 단계),
+    최근 14일 안에 새로 쓴 리포트는 천천히 밝아졌다 어두워진다(r). 순서는 고정 씨앗으로 섞어 빌드마다 같다.
+    이름을 늘어놓는 대신(4판 '이름 띠' — 사장 "개구려") 수천 개의 종목을 하나의 형태로 보여 준다."""
+    import json
+    import math
     import random
-    rnd = random.Random(seed)
-    anchors = [t for t in NAME_ANCHORS if t in BY and t in INDEX]
-    pool = [t for t in INDEX if t in BY and t not in anchors]
-    rnd.shuffle(pool)
-    picks = pool[:n_rows * per_row - len(anchors)] + anchors
-    rnd.shuffle(picks)
-    out = []
-    for i in range(n_rows):
-        row = picks[i::n_rows]
-        hi = ' class="hi"'
-        spans = "".join(f'<span{hi if (j * 5 + i * 3) % 9 == 0 else ""}>{esc(BY[t]["name"])}</span>' for j, t in enumerate(row))
-        out.append(f'<p class="row r{i + 1}"><span class="set">{spans}</span><span class="set">{spans}</span></p>')
-    return '<div class="names" aria-hidden="true">' + "".join(out) + "</div>"
+    rnd = random.Random(ORB_SEED)
+    tks = [t for t in INDEX if t in BY]
+    rnd.shuffle(tks)
+    caps = [max(BY[t].get("mcap") or 0, 1e-4) for t in tks]
+    lo, hi = math.log10(min(caps)), math.log10(max(caps))
+    sizes = "".join(str(min(9, int((math.log10(c) - lo) / (hi - lo) * 10))) for c in caps)
+    recent = [i for i, t in enumerate(tks)
+              if INDEX[t].get("reportDate") and (BASE - datetime.date.fromisoformat(INDEX[t]["reportDate"])).days <= 14]
+    return json.dumps({"n": len(tks), "s": sizes, "r": recent}, separators=(",", ":"))
 
 
-def copy_text(n_rep, n_sec, brief_no, n_src, trust_name):
-    """랜딩 문구 전부 — KOSAI 가 이미 쓰는 목소리(노트 20 실측): 제목은 명사형(사이트 제목의 90% 이상), 서브는 합쇼체에
-    명사로 끝나는 짧은 줄을 섞는다(절마다 끝 모양을 번갈아). 해요체는 쓰지 않는다(사이트에서는 FAQ·로그인 질문에만).
-    제목 모양은 절마다 다르게(노트 17: 반복이 안 느껴지는 페이지는 5~9가지) — 조사 끝 · 명사구 · 합쇼체 단언 한 번 ·
-    관형형+명사 · '-나'로 닫은 질문('~되나', 물음표 없이 — About 의 '데이터는 얼마나 자주 업데이트되나'와 같은 꼴) ·
-    부사어+수량('아침에 한 편') · 숫자+명사구 · 조사 끝. 이웃한 두 제목의 모양이 같지 않게 놓았다. 쉼표로 가른 'A, B' 제목 0.
-    첫 제목 '까지'와 마지막 '부터'가 짝.
+def sources_avg():
+    """화면에 나오는 리포트(새 형식, 없으면 옛 형식)의 출처 수 평균 — 소수 첫째 자리까지."""
+    import json
+    tot = n = 0
+    for t in INDEX:
+        for d in ("reports_v2", "reports"):
+            f = os.path.join(ROOT, "data", d, f"{t}.json")
+            if os.path.exists(f):
+                tot += len(json.load(open(f, encoding="utf-8")).get("sources") or [])
+                n += 1
+                break
+    v = round(tot / n, 1)
+    return f"{v:g}"
 
-    4판(2026-09-27 사장): 가운뎃점(·) 없음 · 기준일 없음(숫자는 빌드할 때 데이터에서 — 실사이트로 옮기면 stamp_counts 처럼
-    자동으로) · 근거 절은 믿을 근거 셋을 확신 있게(코드로 확인한 사실만) · '틀린 곳 알리기' 뺌 · '아침의 한 편' → '아침에 한 편'
-    (수량 표현 '한 편'은 부사어 '아침에'와 어울린다 — '하루에 한 번') · 태도 절 서브를 채움."""
+
+def copy_text(n_rep, n_sec, brief_no, src_avg):
+    """랜딩 문구 전부 — 5판(2026-09-27 사장 "AI 말투를 없애고 대기업 말투를 적용해"):
+    서브는 조각 없이 끝까지 쓴 합쇼체 문장으로, 말장난·대구·'~의 몫' 같은 꾸밈 없이 사실을 담담하게. 주어가 필요하면 'KOSAI'.
+    제목은 명사구 중심, 합쇼체 단언 하나(태도), 요청 하나(마지막). 가운뎃점 없음 · 기준일 없음 · 특정 종목 예시 링크 없음.
+    첫 화면 서브에서 'AI가 씁니다'를 뺐다(사장 "싸구려 느낌") — AI 는 원칙 절에서 한 번, 무엇을 AI 가 하지 않는지로 말한다.
+    둘째 절은 '좋게 볼 이유와 조심할 이유'가 아니라 방문자가 얻는 것(한 편에 담은 기업 분석)으로 연다 — 강세·약세 요인은 그 근거로."""
     return {
         "h1": "증권사가 다루지\u00a0않는<br>종목까지",
         "h1_plain": "증권사가 다루지 않는 종목까지",
-        # 숫자는 한 덩어리로 묶는다(.num) — 실사이트로 옮기면 stamp_counts.py 가 이 자리를 30분마다 맞춘다(리포트 수로)
-        "lede": (f"{MARKETS}에 상장된", f"{n_rep:,}개 종목의 리포트.", "공시와 뉴스를 읽고 AI가 씁니다."),
-        "report": ("리포트", "좋게 볼 이유와<br>조심할 이유",
-                   "리포트마다 강세 요인과 약세 요인을 셋씩 나란히 적습니다. 사업 구조에서 종합 의견까지, 늘 같은 순서로."),
-        "stance": ("", "사라고도 팔라고도<br>하지 않습니다",
-                   # '목표주가도 없습니다'는 틀린 말 — 새 형식 2,563편 중 616편이 증권사 목표주가를 출처와 함께 인용한다. KOSAI 가 매기지 않을 뿐
-                   "목표주가도 직접 매기지 않습니다. 오를지 내릴지를 맞히는 대신, 무엇이 주가를 움직이는지를 씁니다. 판단은 읽는 분의\u00a0몫."),
-        "fresh": ("", "공시가 나오면<br>다시 쓰는 리포트",
-                  "분기마다 실적 공시가 올라오면 그\u00a0숫자로 고쳐\u00a0씁니다. 주가와 PER은 거래일 저녁마다 바뀝니다."),
-        # 근거 절 — 셋 다 코드로 확인한 사실만(보고서 4-8 사실 장부): 실적 표와 차트는 DART 원본(generate_reports_v2 "재무 숫자는
-        # AI가 쓰지 않는다"), 출처 링크 중앙값 18(새 형식 최소 14), 발행 전 검사(check_report_text 의 투자 권유 표현 규칙 → 교정).
-        # '숫자는 AI가 만들지 않는다'처럼 넓히지 않는다 — AI가 해석 문장에 적은 숫자는 검증 경로 밖이다.
-        "trust": ("", "AI가 쓴 리포트를<br>믿어도 되나", ""),
+        "lede": f"{MARKETS} {n_rep:,}개 종목의 기업\u00a0분석\u00a0리포트를 제공합니다.",
+        "report": ("리포트", "한 편에 담은<br>기업 분석",
+                   "사업 구조와 실적, 업황, 전망, 리스크를 차례로 정리합니다. 강세 요인과 약세 요인을 함께 제시해 어느\u00a0한쪽으로\u00a0치우치지\u00a0않습니다."),
+        # '목표주가도 없습니다'는 틀린 말 — 새 형식 2,563편 중 616편이 증권사 목표주가를 출처와 함께 인용한다. KOSAI 가 제시하지 않을 뿐('자체')
+        "stance": ("", "매수도 매도도<br>권하지 않습니다",
+                   "KOSAI는 자체 투자의견과 목표주가를 제시하지 않습니다. 투자 판단에 필요한 사실과 근거를 정리하는 데 집중합니다."),
+        "fresh": ("", "공시와 함께<br>갱신되는 리포트",
+                  "분기보고서와 반기보고서, 사업보고서가 공시되면 리포트를\u00a0새로\u00a0작성합니다. 주가와 밸류에이션 지표는 거래일마다 반영합니다."),
+        # 원칙 셋 — 코드로 확인한 사실만(보고서 4부 사실 장부). '숫자는 AI가 만들지 않는다'처럼 넓히지 않는다(AI 해석 문장의 숫자는 검증 밖)
+        "trust": ("", "리포트의<br>세 가지 원칙", ""),
         "trust_points": [
-            ("공시 원본 그대로", "실적 표와 차트는 AI가 만들지 않습니다. DART 공시의 숫자를 그대로\u00a0씁니다."),
-            ("근거는 링크로", f"근거가 된 기사와 공시를 리포트마다 링크로 답니다. 한 편에 보통 {n_src}개."),
-            ("올리기 전에 검사", "투자 권유로 읽히는 표현은 올리기 전에 자동으로 찾아 고칩니다."),
+            ("공시 원본 수치", "실적 표와 차트의 수치는 금융감독원 전자공시\u2060(DART) 원본에서 가져오며, AI가\u00a0생성하지\u00a0않습니다."),
+            ("출처 공개", f"분석의 근거가 된 자료를 리포트마다 출처로\u00a0공개합니다. 한\u00a0편당 평균\u00a0{src_avg}건입니다."),
+            ("발행 전 검수", "투자 권유로 읽힐 수 있는 표현은 발행\u00a0전에 자동으로 검수해\u00a0수정합니다."),
         ],
-        "trust_link": f"{trust_name} 리포트의 출처 {n_src}개 보기",
-        "brief": ("모닝브리핑", "장이 열리기 전<br>아침에 한 편",
-                  "전날 국내 시장과 밤사이 해외 소식, 오늘 일정까지. 거래일에는 보통 7시 30분 무렵에\u00a0나옵니다."),
+        "trust_link": "작성 방식 자세히 보기",
+        "hero_link": "전체 리포트 보기",
+        "brief": ("모닝브리핑", "개장 전에 읽는<br>시장 브리핑",
+                  "전일 국내 증시와 간밤의 해외 시장, 주요\u00a0일정을\u00a0정리합니다. 발행 시각은 거래일 오전\u00a07시\u00a030분 전후입니다."),
         "sectors": ("업종 분석", f"{n_sec}개 업종의 흐름",
-                    "업종마다 업황과 주요 종목을 따로 정리합니다. 한 회사를 읽을\u00a0때 옆 회사도 함께."),
-        "end": "궁금한 종목부터",
+                    "업종마다 업황과 주요 종목을 정리합니다. 개별 기업을 산업 전체의 맥락에서 살펴볼 수 있습니다."),
+        "end": "궁금한 종목의<br>리포트를 확인하세요",
         "brief_link": f"제{brief_no}호 읽기",
-        "sectors_link": f"{n_sec}개 업종 분석 보기",
-        "title": f"KOSAI — {MARKETS} {n_rep:,}개 종목의 리포트",
-        "og_title": "KOSAI 리포트 — 증권사가 다루지 않는 종목까지",
-        "desc": f"{MARKETS}에 상장된 {n_rep:,}개 종목의 리포트. 공시와 뉴스를 읽고 AI가 씁니다.",
-        "og_desc": f"{MARKETS} {n_rep:,}개 종목의 리포트와 모닝브리핑",
+        "sectors_link": "전체 업종 보기",
+        "title": f"KOSAI — {MARKETS} {n_rep:,}개 종목의 기업 분석 리포트",
+        "og_title": "KOSAI — 증권사가 다루지 않는 종목까지",
+        "desc": f"{MARKETS} {n_rep:,}개 종목의 기업 분석 리포트와 모닝브리핑, 업종 분석을 제공합니다.",
+        "og_desc": f"{MARKETS} {n_rep:,}개 종목의 기업 분석 리포트",
     }
 
 
@@ -389,46 +444,42 @@ def page():
     n_rep = len(INDEX)
     b = brief()
     cnt = Counter(c for x in STOCKS["stocks"] for c in (x.get("categories") or []) if c != "기타")
-    src = report(TRUST_REPORT) or {}
-    n_src = len(src.get("sources") or [])
-    C = copy_text(n_rep, len(cnt), b["_no"], n_src, BY[TRUST_REPORT]["name"])
+    C = copy_text(n_rep, len(cnt), b["_no"], sources_avg())
 
     def head_block(key, link=""):
         eb, h, sub = C[key]
         return ((f'<p class="eyebrow">{eb}</p>' if eb else "") + f'<h2 class="h2">{h}</h2><p class="sub">{sents(sub)}</p>' + link)
 
-    la, lb, lc = C["lede"]
     num = f"{n_rep:,}"
-    lb_html = g(lb).replace(num, f'<span class="num">{num}</span>', 1)   # 실사이트로 옮기면 stamp_counts 가 맞추는 자리
-    # 첫 화면 — 어두운 무대(.dz: 머리·사파리 가장자리 띠가 어두운 색을 따른다) · 큰 제목 · 검색 · 실제 상장사 이름이 흐르는 띠
-    hero = (f'<header class="hero dz" id="hero"><div class="hero-in w"><h1>{C["h1"]}</h1>'
-            f'<p class="lede"><span class="s">{g(la)} <span class="nw">{lb_html}</span></span> <span class="s">{g(lc)}</span></p>'
+    lede = g(C["lede"]).replace(num, f'<span class="num">{num}</span>', 1)   # 실사이트로 옮기면 stamp_counts 가 맞추는 자리
+    # 첫 화면 — 어두운 무대(.dz: 머리·사파리 가장자리 띠가 어두운 색을 따른다) · 큰 제목 · 검색 · 아래에서 떠오르는 종목의 구
+    hero = (f'<header class="hero dz" id="hero"><div class="hero-in w"><h1>{C["h1"]}</h1><p class="lede"><span class="s">{lede}</span></p>'
             + search_box()
-            + f'<div class="alt">{more(esc(BY[HERO_REPORT]["name"]) + " 리포트 보기")}</div></div>'
-            + name_rows() + '</header>')
+            + f'<div class="alt">{more(C["hero_link"])}</div></div>'
+            f'<div class="orb-box" aria-hidden="true"><canvas class="orb" id="orb"></canvas></div>'
+            f'<script type="application/json" id="orbData">{orb_data()}</script></header>')
     sec_report = (f'<section class="sec w" id="report"><div class="split"><div class="tx">{head_block("report")}</div>'
-                  + slot("이미지", "image", "PC 4:5 / 휴대폰 1:1", "리포트 화면, 강세 요인과 약세 요인") + '</div></section>')
+                  + slot("이미지", "image", "PC 4:5 / 휴대폰 1:1", "리포트 한 편의 화면") + '</div></section>')
     sec_fresh = (f'<section class="sec w" id="fresh"><div class="split rev"><div class="tx">{head_block("fresh")}</div>'
                  + slot("이미지", "image", "PC 4:3 / 휴대폰 1:1", "공시 반영 뒤 바뀐 기준일(확대)") + '</div></section>')
     pts = "".join(f'<li><h3>{g(t)}</h3><p>{sents(d)}</p></li>' for t, d in C["trust_points"])
     sec_trust = (f'<section class="sec w trust"><h2 class="h2">{C["trust"][1]}</h2><ul class="proof">{pts}</ul>'
-                 + more(C["trust_link"]) + '</section>')
+                 + more(C["trust_link"]) + '</section>')   # 링크는 작성 방식(회사 소개) — 특정 종목 예시는 두지 않는다(사장)
     sec_brief = (f'<section class="band dz" id="brief"><div class="w split"><div class="tx">{head_block("brief", more(C["brief_link"]))}</div>'
                  + slot("사진", "image", "1:1", "개장 전 아침, 책상 위 휴대폰") + '</div></section>')
     sec_sectors = (f'<section class="sec w stack" id="sectors">{head_block("sectors", more(C["sectors_link"]))}'
                    + slot("이미지", "image", "21:9 / 휴대폰 1:1", "업종 분석 화면") + '</section>')
     sec_stance = f'<section class="sec w solo">{head_block("stance")}</section>'
-    chips = "".join(f'<a href="#">{esc(BY[t]["name"])}<span>{jo(BY[t]["mcap"])}</span></a>' for t in CHIPS if t in BY)
-    sec_end = (f'<section class="end w"><h2 class="h2">{C["end"]}</h2>{search_box(ph="종목명 또는 종목코드")}'
-               f'<div class="chips">{chips}</div></section>')
+    sec_end = f'<section class="end w"><h2 class="h2">{C["end"]}</h2>{search_box()}</section>'
 
+    orb_js = "<script>" + ORB_JS + "</script>"
     js = ("<script>(function(){"
           "var root=document.documentElement,nav=document.getElementById('nav'),zs=[].slice.call(document.querySelectorAll('.dz')),"
           "meta=document.querySelector('meta[name=\"theme-color\"]'),tick=false;"
           "function over(y){for(var i=0;i<zs.length;i++){var b=zs[i].getBoundingClientRect();if(b.top<=y&&b.bottom>=y)return true}return false}"
           "function upd(){tick=false;nav.classList.toggle('scrolled',scrollY>32);"
           "var open=nav.classList.contains('menu-open'),H=innerHeight,top=!open&&over(6);"
-          "nav.classList.toggle('on-band',!open&&over(30));root.classList.toggle('band-top',top);root.classList.toggle('band-bot',over(H-6));"
+          "nav.classList.toggle('on-band',!open&&over(30));root.classList.toggle('band-top',top);root.classList.toggle('band-bot',!open&&over(H-6));"
           "var cs=getComputedStyle(root);meta.setAttribute('content',(top?cs.getPropertyValue('--band'):cs.getPropertyValue('--bg')).trim())}"
           "function req(){if(!tick){tick=true;requestAnimationFrame(upd)}}"
           "addEventListener('scroll',req,{passive:true});addEventListener('resize',req);upd();"
@@ -442,8 +493,7 @@ def page():
           "mb.addEventListener('click',function(){setMenu(!nav.classList.contains('menu-open'))});"
           "mm.addEventListener('click',function(e){if(e.target.closest('a'))setMenu(false)});"
           "document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('menu-open')){setMenu(false);mb.focus()}});"
-          "matchMedia('(min-width:821px)').addEventListener('change',function(e){if(e.matches)setMenu(false)});"
-          "if(matchMedia('(max-width:720px)').matches)document.querySelectorAll('input[data-m]').forEach(function(i){i.placeholder=i.getAttribute('data-m')})"
+          "matchMedia('(min-width:821px)').addEventListener('change',function(e){if(e.matches)setMenu(false)})"
           "})();</script>")
     # 첫 화면이 어두운 무대라 처음 색은 무대 색 — 내리면 upd() 가 페이지 색으로 바꾼다
     theme = ("<script>(function(){var t='light';try{t=localStorage.getItem('kos-theme')||'light'}catch(e){}var r=document.documentElement;"
@@ -455,7 +505,7 @@ def page():
             f'<meta property="og:description" content="{esc(C["og_desc"])}">'
             f'<link rel="stylesheet" href="{FONTS}/pretendard-subset.css"><link rel="stylesheet" href="landing.css">{theme}</head><body>')
     return (head + nav() + f"<main>{hero}{sec_report}{sec_stance}{sec_fresh}{sec_trust}{sec_brief}{sec_sectors}{sec_end}</main>"
-            + foot() + js + "</body></html>")
+            + foot() + orb_js + js + "</body></html>")
 
 
 if __name__ == "__main__":

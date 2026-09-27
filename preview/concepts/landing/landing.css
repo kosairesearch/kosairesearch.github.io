@@ -79,12 +79,13 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .slot .st span{font-weight:500;color:var(--ink-62)}
 .slot figcaption{position:absolute;left:22px;right:22px;bottom:20px;font:500 14px/1.45 var(--font);color:var(--ink-62)}
 
-/* 첫 화면 — 어두운 무대 · 큰 제목 · 검색 · 실제 상장사 이름이 흐르는 띠(그림 없이 데이터로) */
-.hero{position:relative;isolation:isolate;margin-top:-60px;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;
+/* 첫 화면 — 어두운 무대 · 큰 제목 · 검색 · 아래에서 떠오르는 종목의 행성(그림 없이 데이터로) */
+.hero{--orb-v:clamp(320px,62vh,640px);--orb-x:280px;
+  position:relative;isolation:isolate;margin-top:-60px;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;
   background:var(--band);color:var(--band-ink);overflow:hidden}
 .hero::before{content:"";position:absolute;z-index:-1;left:50%;top:-18%;width:min(1280px,130vw);height:78%;transform:translateX(-50%);
-  background:radial-gradient(closest-side,rgba(255,255,255,.085),rgba(255,255,255,0));pointer-events:none}
-.hero-in{width:100%;margin-block:auto;padding-top:calc(60px + 104px);text-align:center}   /* 남는 높이는 글 위아래로 나눈다 — 이름 띠는 늘 바닥 */
+  background:radial-gradient(closest-side,rgba(255,255,255,.06),rgba(255,255,255,0));pointer-events:none}
+.hero-in{position:relative;width:100%;padding-top:calc(60px + 104px);text-align:center}
 .hero h1{margin:0 auto;max-width:1120px;font:600 clamp(46px,7.6vw,116px)/1.06 var(--font);letter-spacing:-.05em;text-wrap:balance}
 .lede{margin-top:30px;max-width:540px;font:400 19px/1.65 var(--font);color:var(--ink-62);text-wrap:pretty}
 .lede .s,.sub .s{display:inline-block}
@@ -96,21 +97,17 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .hero .btn-ink{background:var(--band-ink);color:var(--band)}
 .hero .alt{margin-top:8px}
 .hero .more{color:var(--band-ink)}
-/* 이름 띠 — 같은 크기, 흐린 먹빛, 줄마다 다른 방향·속도. 가장자리는 서서히 사라진다 */
-.names{padding:64px 0 36px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent);
-  mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent)}
-.row{display:flex;width:max-content;margin:0;white-space:nowrap;font:500 17px/46px var(--font);letter-spacing:-.01em;color:rgba(242,241,238,.3);
-  animation:drift var(--t,150s) linear infinite;will-change:transform}
-.row:nth-child(even){animation-direction:reverse}
-.row .set{display:flex}
-.row .set span{padding:0 20px}
-.row .set .hi{color:rgba(242,241,238,.72)}
-.r1{--t:150s;opacity:.55;animation-delay:-12s} .r2{--t:190s;opacity:.8;animation-delay:-61s} .r3{--t:130s;animation-delay:-33s}
-.r4{--t:175s;animation-delay:-94s} .r5{--t:160s;opacity:.8;animation-delay:-47s} .r6{--t:140s;opacity:.55;animation-delay:-73s}
-.r7{--t:165s;opacity:.45;animation-delay:-25s} .r8{--t:185s;opacity:.35;animation-delay:-108s}
-@media (min-width:821px){.r7,.r8{display:none}}
-@keyframes drift{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
-@media (prefers-reduced-motion:reduce){.row{animation:none}}
+/* 행성 — 점 하나가 리포트가 있는 종목 하나(2,680개). 크기는 시가총액, 최근 14일에 새로 쓴 리포트는 천천히 밝아진다.
+   뒤에서 올라오는 빛에 윤곽만 밝게 드러나는 행성. 캔버스는 글 뒤로 --orb-x 만큼 올라가 빛이 잘리지 않게 번진다 */
+.orb-box{position:relative;margin-top:auto;height:var(--orb-v);pointer-events:none}
+.orb{position:absolute;left:0;right:0;bottom:0;z-index:-1;display:block;width:100%;height:calc(100% + var(--orb-x));
+  -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 66%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0,#000 66%,transparent 100%)}
+/* 처음 열 때 — 글이 먼저 올라오고 행성의 빛이 뒤따라 밝아진다(움직임 줄임이면 없음) */
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:no-preference){
+  .hero-in>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+  .hero-in>.lede{animation-delay:.12s} .hero-in>.search{animation-delay:.22s} .hero-in>.alt{animation-delay:.3s}
+}
 
 /* 절 — 작은 이름표 · 큰 제목 · 짧은 서브 · 그림 */
 .sec{padding-top:var(--sec)}
@@ -126,7 +123,8 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .split.rev>.tx{grid-column:8/13}
 .split.rev>.slot{grid-column:1/7}
 .stack>.slot{margin-top:80px;aspect-ratio:21/9}
-.solo .sub{max-width:520px}
+/* 태도 절 — 그림 없는 선언 한 줄은 가운데에(빈 반쪽이 그림 빠진 자리처럼 보이지 않게) */
+.solo{text-align:center} .solo .h2{margin:0 auto;max-width:900px} .solo .sub{margin-left:auto;margin-right:auto;max-width:560px}
 /* 근거 절 — 믿을 근거 셋(짧은 이름 + 한두 문장) */
 .proof{margin-top:56px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:var(--gap)}
 .proof li{padding-top:22px;border-top:1px solid var(--line)}
@@ -145,14 +143,10 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .band .slot{background-color:var(--band-slot);background-image:linear-gradient(155deg,var(--band-slot),var(--band-slot-2))}
 .band .slot .st{border-color:var(--band-hair);color:var(--band-ink)} .band .slot .st span,.band .slot figcaption{color:var(--band-62)}
 
-/* 마무리 — 질문 하나 · 같은 검색창 · 종목 칩 */
+/* 마무리 — 질문 하나 · 같은 검색창(특정 종목 칩은 두지 않는다) */
 .end{padding-top:var(--sec);text-align:center}
 .end .h2{margin:0 auto;max-width:820px;font-size:clamp(40px,5.8vw,80px);line-height:1.1;letter-spacing:-.045em}
 .end .search{margin:48px auto 0;max-width:560px;text-align:left}
-.chips{margin-top:18px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
-.chips a{display:inline-flex;align-items:center;height:40px;padding:0 14px;border-radius:999px;background:var(--surface-2);font:500 14px/1 var(--font);color:var(--ink);transition:background-color .12s}
-.chips a:hover{background:var(--line)}
-.chips a span{margin-left:6px;font-weight:400;color:var(--ink-62)}
 
 /* 꼬리 — 스테이징 그대로 */
 .foot{margin-top:var(--sec);border-top:1px solid var(--hair);padding:56px 0 48px}
@@ -172,7 +166,6 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
   .hero h1{font-size:clamp(46px,min(7.6vw,12vh),116px)}
   .hero .lede{margin-top:22px}
   .hero .search{margin-top:32px}
-  .names{padding-top:40px}
 }
 /* 태블릿·작은 노트북 */
 @media (max-width:1060px){
@@ -205,20 +198,18 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
   .lede{margin-top:22px;font-size:17px}
   .hero .lede{margin-top:22px}
   .hero .search{margin-top:32px}
-  .names{padding:48px 0 28px}
-  .row{font-size:14px;line-height:36px}
-  .row .set span{padding:0 13px}
+  .hero{--orb-v:clamp(300px,58vh,520px);--orb-x:180px}
   .search input{font-size:16px}
   .search .btn{height:44px;padding:0 16px}
   .eyebrow{margin-bottom:16px}
   .h2{font-size:32px;line-height:1.25;letter-spacing:-.03em}
   .end .h2{font-size:36px;line-height:1.2}
   .sub{margin-top:18px;font-size:16px}
+  .solo{text-align:left} .solo .h2,.solo .sub{margin-left:0}   /* 한 열에서는 빈 반쪽이 없으니 다른 절처럼 왼쪽 정렬 */
   .split>.slot,.stack>.slot,#fresh .split>.slot{margin-top:44px;aspect-ratio:1/1}
   .slot{border-radius:16px}
   .band{padding:72px 0}
   .end .search{margin-top:36px}
-  .chips a{height:44px}
   .fgrid{grid-template-columns:auto auto auto;justify-content:space-between;column-gap:16px}
   .fcol a{padding:12px 0}
   .foot{padding-top:44px}
