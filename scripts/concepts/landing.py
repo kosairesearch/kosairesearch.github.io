@@ -36,10 +36,11 @@ ORB_SEED = 2680                                         # 첫 화면 구의 점 
 
 ORB_JS = r"""(function(){
 var cv=document.getElementById('orb');if(!cv||!cv.getContext)return;
-var D=JSON.parse(document.getElementById('orbData').textContent),N=D.n,RS={},i;D.r.forEach(function(j){RS[j]=1});
-/* 모양 — 축을 뒤로 0.3 눕혀 북극이 윗변 너머에 숨는다(점 줄이 지평선과 나란한 호가 된다). 반지름은 PC 화면 폭의 절반(최대 1000), 휴대폰은 폭의 1.1배 */
+var D=JSON.parse(document.getElementById('orbData').textContent),N=D.n,RS=null,i;
+/* 모양 — 축을 뒤로 0.3 눕혀 북극이 윗변 너머에 숨는다(경선은 그쪽으로 모이고, 위선은 지평선과 나란한 호가 된다).
+   반지름은 PC 화면 폭의 0.64배(최대 1240), 휴대폰은 폭의 1.4배 */
 var TL=-.3,ct=Math.cos(TL),st=Math.sin(TL);
-var ctx=cv.getContext('2d'),P=null,sp=document.createElement('canvas');sp.width=sp.height=32;
+var ctx=cv.getContext('2d'),P=null,NP=0,sp=document.createElement('canvas');sp.width=sp.height=32;
 var sx=sp.getContext('2d'),g=sx.createRadialGradient(16,16,0,16,16,16);
 g.addColorStop(0,'rgba(248,247,244,1)');g.addColorStop(.45,'rgba(248,247,244,.85)');g.addColorStop(1,'rgba(248,247,244,0)');sx.fillStyle=g;sx.fillRect(0,0,32,32);
 var G=document.createElement('canvas'),gx=G.getContext('2d');
@@ -47,16 +48,16 @@ var root=document.documentElement,W=0,H=0,dpr=1,rad=0,cx=0,cy=0,SZ=1,band='#1414
     red=matchMedia('(prefers-reduced-motion: reduce)').matches,pt=0,pv=0;
 function col(){band=getComputedStyle(root).getPropertyValue('--band').trim()||'#141414'}
 function rgba(hx,a){var h=hx.replace('#','');if(h.length===3)h=h.replace(/(.)/g,'$1$1');var n=parseInt(h,16);return 'rgba('+(n>>16&255)+','+(n>>8&255)+','+(n&255)+','+a+')'}
-/* 규칙적인 점 — 화면에 보이는 위도 띠(lo~hi)에 고리를 같은 간격으로 두르고, 고리마다 점을 같은 간격으로 놓는다.
-   고리 사이는 점 사이의 두 배(점이 줄을 이룬다), 이웃 고리는 반 칸 엇갈린다. 점은 모두 N개(리포트가 있는 종목 수) */
+/* 규칙적인 점 — 지구본의 경위선처럼 경선 M개와 위선 L개가 만나는 자리마다 점 하나. 경선은 360°를 같은 간격으로, 위선은
+   화면에 보이는 위도 띠(lo~hi)를 같은 간격으로 나눈다. 경선이 극 쪽으로 모이고 위선이 둥글게 휘어 구의 입체가 드러난다.
+   칸이 띠 가운데 위도에서 정사각이 되게 M 을 정하고, M×L 이 종목 수(N)에 가깝게 L 을 정한다(사장 2026-09-27 "규칙적으로 잘
+   표현해야 구의 입체성이 드러난다") */
 function grid(lo,hi){
-  var area=2*Math.PI*(Math.sin(hi)-Math.sin(lo)),d=Math.sqrt(area/N),R=Math.max(1,Math.round((hi-lo)/(d*2))),lat=[],cnt=[],tot=0,k,acc=0;
-  for(k=0;k<R;k++){var ph=lo+(k+.5)*(hi-lo)/R,c=2*Math.PI*Math.cos(ph)/(d/2);lat.push(ph);cnt.push(c);tot+=c}
-  for(k=0;k<R;k++){cnt[k]=Math.max(1,Math.round(cnt[k]*N/tot));acc+=cnt[k]}
-  for(k=0;acc!==N;k++){var dd=acc<N?1:-1;if(cnt[k%R]+dd>0){cnt[k%R]+=dd;acc+=dd}}
-  P=new Float32Array(N*3);var n=0;
-  for(k=0;k<R;k++){var cp=Math.cos(lat[k]),s1=Math.sin(lat[k]),m=cnt[k],off=(k%2)*.5;
-    for(var j=0;j<m&&n<N;j++,n++){var th=2*Math.PI*(j+off)/m;P[n*3]=cp*Math.cos(th);P[n*3+1]=s1;P[n*3+2]=cp*Math.sin(th)}}
+  var mid=(lo+hi)/2,band=hi-lo,M=Math.max(24,Math.round(Math.sqrt(N*2*Math.PI*Math.cos(mid)/band))),L=Math.max(4,Math.round(N/M)),k,j,n=0;
+  NP=M*L;P=new Float32Array(NP*3);cv.setAttribute('data-grid',M+'x'+L);
+  RS=new Uint8Array(NP);D.r.forEach(function(r){RS[r%NP]=1});
+  for(k=0;k<L;k++){var ph=lo+(k+.5)*band/L,cp=Math.cos(ph),s1=Math.sin(ph);
+    for(j=0;j<M;j++,n++){var th=2*Math.PI*j/M;P[n*3]=cp*Math.cos(th);P[n*3+1]=s1;P[n*3+2]=cp*Math.sin(th)}}
 }
 /* 빛 — 크기가 바뀔 때 한 번만 그려 둔다. 뒤에서 올라오는 새벽빛, 가장자리가 빛 속으로 풀리는 몸, 가장자리를 가운데로
    안팎으로 번지는 대기(선 없음 — 위쪽이 가장 밝고 옆으로 내려가며 옅어진다) */
@@ -88,7 +89,7 @@ function draw(t){
   ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,cv.width,cv.height);
   ctx.globalAlpha=e;ctx.drawImage(G,0,Math.round(oy*dpr));ctx.globalAlpha=1;ctx.setTransform(dpr,0,0,dpr,0,0);
   pv+=(pt-pv)*.05;var qq=ang+pv,ca=Math.cos(qq),sa=Math.sin(qq);
-  for(i=0;i<N;i++){
+  for(i=0;i<NP;i++){
     var x=P[i*3],y=P[i*3+1],z=P[i*3+2],x1=x*ca-z*sa,z1=x*sa+z*ca,y2=y*ct-z1*st,z2=y*st+z1*ct;
     if(z2<=0)continue;var px=cx+x1*rad,py=c-y2*rad;if(py<-4||py>H+4||px<-4||px>W+4)continue;
     var f=1-z2,s=Math.min(1,z2/.32),fade=s*s*(3-2*s),al=Math.min(1,(.3+.45*f*f)*(.55+.45*(y2+1)/2)*fade*e*1.25);
@@ -100,7 +101,7 @@ function draw(t){
 function fit(){
   var bx=cv.getBoundingClientRect(),V=cv.parentNode.getBoundingClientRect().height;dpr=Math.min(window.devicePixelRatio||1,2);
   W=bx.width;H=bx.height;cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);var EX=H-V,T;
-  if(W>820){rad=Math.min(W*.5,1000);T=100;SZ=1.2}else{rad=W*1.1;T=64;SZ=1.05}
+  if(W>820){rad=Math.min(W*.64,1240);T=100;SZ=1.2}else{rad=W*1.4;T=64;SZ=1.05}
   cx=W/2;cy=EX+T+rad;
   /* 보이는 위도 — 캔버스 아래쪽(92%)에서 보이는 가장 낮은 위도부터, 꼭대기 너머로 넘어가는 위도까지 */
   var vmin=Math.max(-1,Math.min(1,(cy-H*.92)/rad));
@@ -391,7 +392,8 @@ def search_box(ph="종목명 또는 종목코드"):
 
 
 def orb_data():
-    """첫 화면의 행성 — 리포트가 있는 종목 하나가 점 하나(n). 점은 모두 같은 크기로 규칙적인 줄에 놓인다(ORB_JS 의 grid).
+    """첫 화면의 행성 — 점의 수는 리포트가 있는 종목 수(n)에 맞춘다. 점은 모두 같은 크기로 경위선 격자의 교차점에 놓인다(ORB_JS 의 grid —
+    경선 × 위선 = n 에 가깝게).
     최근 14일 안에 새로 쓴 리포트의 점(r)은 천천히 밝아졌다 어두워진다. 종목 순서는 고정 씨앗으로 섞어 빌드마다 같다.
     5판 뒤 구 다듬기(사장 2026-09-27 "점이 불규칙하게 위치해 있어서 규칙적으로") — 피보나치 배치와 시가총액 크기를 버렸다."""
     import json
