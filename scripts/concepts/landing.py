@@ -22,8 +22,8 @@ FONTS = "../../../fonts"
 SAMPLE = "052330"                      # 코텍 — 코스닥 소형주, 5개 분기 연속 이익 증가
 BASE = datetime.date(2026, 9, 26)      # 이 시안의 '기준일'
 TOC = [("무엇으로 돈을 버는 회사인가", ["리포트 개요", "사업 구조", "실적 추이"], True),
-       ("숫자 뒤의 이유", ["실적 분석", "산업 분석", "전망", "밸류에이션"], False),
-       ("양쪽 이유와 다음 일정", ["강세 요인", "약세 요인", "리스크 요인", "다음 체크포인트", "종합 의견"], False),
+       ("실적의 배경과 전망", ["실적 분석", "산업 분석", "전망", "밸류에이션"], False),
+       ("강세와 약세, 다음 일정", ["강세 요인", "약세 요인", "리스크 요인", "다음 체크포인트", "종합 의견"], False),
        ("근거", ["참고 출처"], True)]      # staging/stock.html 의 실제 목차 13개 절을 네 묶음으로(무료 = True)
 
 CSS = r"""
@@ -212,7 +212,7 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .plan{display:flex;flex-direction:column;padding:28px 0 8px}
 .plan-name{font:600 12px/16px var(--font);letter-spacing:.06em;color:var(--ink-62)}
 .plan-price{margin-top:12px;font:700 36px/44px var(--font);letter-spacing:-.02em}
-.plan-price small{margin-left:4px;font:500 15px/1 var(--font);letter-spacing:0;color:var(--ink-62)}
+.plan-price small{margin-right:6px;font:500 15px/1 var(--font);letter-spacing:0;color:var(--ink-62)}
 .plan-sub{margin-top:6px;font:400 14px/1.5 var(--font);color:var(--ink-72);min-height:42px}
 .plan ul{margin:18px 0 24px;border-top:1px solid var(--hair);flex:1}
 .plan li{padding:10px 0;border-bottom:1px solid var(--hair);font:400 14px/1.5 var(--font);color:var(--ink-72)}
@@ -318,6 +318,19 @@ I = {
 }
 
 
+def dots(items, sep=" · "):
+    """가운뎃점 목록 — 항목은 한 덩어리(nowrap), 점은 앞 항목 끝에 붙어 줄 첫머리로 가지 않는다."""
+    items = [x for x in items if x]
+    return " ".join(f'<span class="nw">{x}{sep.rstrip() if i < len(items) - 1 else ""}</span>' for i, x in enumerate(items))
+
+
+def tail(html_text):
+    """제목 끝 두 어절을 붙여 한두 음절짜리 외톨이 줄을 막는다 · '다음 주'도 한 덩어리."""
+    t = html_text.replace("다음 주", "다음\u00a0주")
+    i = t.rfind(" ")
+    return t if i < 0 or len(t) - i > 8 else t[:i] + "\u00a0" + t[i + 1:]
+
+
 def slot(klass, kind, icon, ratio, title, note):
     return (f'<figure class="slot {klass}" aria-label="{esc(kind)} 자리 — {esc(title)}"><span class="st">{I[icon]}{esc(kind)}</span>'
             f'<span class="sr">{esc(ratio)}</span><figcaption><b>{esc(title)}</b>{esc(note)}</figcaption></figure>')
@@ -350,15 +363,15 @@ def nav():
 def foot():
     return (f'<footer class="foot"><div class="w"><a class="brand" href="#"><img class="lt" src="{ASSETS}/kosai-wordmark-black.png" alt="KOSAI">'
             f'<img class="dk" src="{ASSETS}/kosai-wordmark-white.png" alt="KOSAI"></a>'
-            '<p class="ftag">코스피·코스닥 상장사의 리포트, 업종 분석, 모닝브리핑.</p>'
+            '<p class="ftag">코스피·코스닥 종목 리포트, 업종 분석, 모닝브리핑</p>'
             '<div class="fgrid"><div class="fcol"><h4>서비스</h4><a href="#">홈</a><a href="#">리포트</a><a href="#">업종 분석</a><a href="#">관심종목</a><a href="#">멤버십</a><a href="#">모닝브리핑</a></div>'
             '<div class="fcol"><h4>회사</h4><a href="#">회사 소개</a><a href="#">문의하기</a><a href="#">피드백</a></div>'
-            '<div class="fcol"><h4>정책</h4><a href="#">이용약관</a><a class="pp" href="#">개인정보처리방침</a></div></div>'
+            '<div class="fcol"><h4>정책</h4><a href="#">이용약관</a><a class="pp" href="#">개인정보 처리방침</a></div></div>'
             '<div class="biz"><span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span><span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span></div>'
             '<div class="copy">© 2026 KOSAI</div></div></footer>')
 
 
-def search_box(ph="종목명 또는 종목코드 (예: 삼성전자, 005930)", ph_m="종목명 또는 종목코드"):
+def search_box(ph="종목명 또는 종목코드(예: 삼성전자, 005930)", ph_m="종목명 또는 종목코드"):
     """휴대폰은 칸이 좁아 예시가 잘리므로 짧은 안내(data-m)로 바꾼다."""
     return (f'<form class="search" role="search" onsubmit="return false">{I["search"]}<input placeholder="{ph}" data-m="{ph_m}" aria-label="종목 검색" autocomplete="off">'
             '<button class="btn btn-ink" type="button">리포트 찾기</button></form>')
@@ -377,19 +390,19 @@ def page():
     hero = (f'<header class="hero w"><a class="pill" href="#brief"><b>모닝브리핑 제{b["_no"]}호</b>'
             f'<span>{kdate(b["date"])} {publish_time(b)}</span>{I["arrow"]}</a>'
             '<h1>증권사가 다루지 않는 종목도<br>리포트가 있습니다</h1>'
-            '<p class="lede">실적 숫자는 공시에서 그대로 가져오고, 해석은 AI가 씁니다. '
-            f'<span class="nw">코스피와 코스닥</span> {n_rep:,}개 종목을 다루고, 실적이 새로 공시되면 다시 씁니다.</p>'
+            f'<p class="lede"><span class="nw">코스피와 코스닥</span> {n_rep:,}개 종목을 다룹니다. '
+            '실적 숫자는 공시에서 그대로 가져오고, 해석은 새 실적이 나올 때마다 AI가 다시 씁니다.</p>'
             + search_box()
-            + f'<p class="hint"><span>요약과 실적은 가입 없이 무료 · {asof}</span></p>'
+            + f'<p class="hint">{dots(["요약과 실적은 가입 없이 무료", "종목 수는 " + asof])}</p>'
             + f'<a class="more hero-alt" href="#">삼성전자 리포트 보기 {I["arrow"]}</a>'
-            + slot("m-hero", "영상 · 3D", "video", "21 : 9 · 휴대폰 4 : 5", "첫 화면의 얼굴",
-                   "권장: 실제 리포트 화면이 보이는 장면 — 예를 들어 좋은 빛 아래 노트북과 휴대폰에 열린 리포트. "
-                   "6~8초, 소리 없이 반복, 멈춤 단추. 글자와 숫자는 그림에 넣지 않고 페이지가 얹습니다.")
+            + slot("m-hero", "영상 · 3D", "video", "21:9 · 휴대폰 4:5", "첫 화면의 얼굴",
+                   "권장: 실제 리포트 화면이 보이는 장면 — 예를 들어 빛이 좋은 곳에서 노트북과 휴대폰에 열린 리포트. "
+                   "6~8초, 소리 없이 반복, 멈춤 단추. 글자와 숫자는 그림에 넣지 않고 페이지에서 얹습니다.")
             + '</header>')
 
     # ── 한 문단 선언 — 대안이 주는 것 · KOSAI 가 쓰는 것 ──
     stmt = ('<section class="statement w"><p><span>시세 앱과 뉴스는 오늘 무슨 일이 있었는지 알려 줍니다.</span> '
-            'KOSAI 리포트는 그 회사가 무엇으로 돈을 벌고, 무엇을 조심해야 하는지 씁니다.</p></section>')
+            'KOSAI\u00a0리포트는 회사가 무엇으로 돈을 벌고, 무엇을 조심해야 하는지 씁니다.</p></section>')
 
     # ── 리포트 한 편(코텍) ────────────────────────────
     q = r["quant"]["quarterly"]
@@ -405,16 +418,16 @@ def page():
     card = (f'<article class="card" aria-label="{esc(s["name"])} 리포트에서 옮긴 부분"><div class="cd-top"><div><b>{esc(s["name"])}</b>'
             f'<span>{esc(s["market"])} · {esc(s["sector"])} · {SAMPLE}</span></div>'
             f'<div class="cd-px"><b>{grp(s["price"])}원</b>{arrow_pct(s["change"])}</div></div>'
-            f'<p class="cd-meta">시가총액 {jo(s["mcap"])} · {rd[:4]}년 {int(rd[5:7])}월 {int(rd[8:10])}일 발행 · 재무 {ymd(r["quant"]["asOf"])} 기준 · 주가 {ymd(PRICE_DATE)} 종가</p>'
+            f'<p class="cd-meta">{dots(["시가총액 " + jo(s["mcap"]), ymd(rd) + " 발행", "재무 " + ymd(r["quant"]["asOf"]) + " 기준", "주가 " + ymd(PRICE_DATE) + " 종가"])}</p>'
             f'<h3>{g(r["title"]["ko"])}</h3><p class="cd-lede">{g(r["lead"]["ko"])}</p>'
-            f'<div class="cd-chart"><p>분기 영업이익<span>연결 · DART 공시 · {labels[0]}~{labels[-1]}</span></p><div class="cd">{chart_d}</div><div class="cm">{chart_m}</div></div>'
+            f'<div class="cd-chart"><p>분기 영업이익<span>연결 · DART 공시 · {q[0]["q"][2:4]}년 {q[0]["q"][-1]}분기~{q[-1]["q"][2:4]}년 {q[-1]["q"][-1]}분기</span></p><div class="cd">{chart_d}</div><div class="cm">{chart_m}</div></div>'
             f'<div class="bb"><div><h4>강세 요인<span>{len(r["bull"])}</span></h4><ul>{bull}</ul></div>'
             f'<div><h4>약세 요인<span>{len(r["bear"])}</span></h4><ul>{bear}</ul></div></div>'
             f'<p class="cd-foot"><span>참고 출처 {len(r.get("sources") or [])}개</span><span>리포트 13개 절 가운데 일부</span></p></article>')
-    toc = "".join(f'<li><p class="tg">{t}{"<span>무료</span>" if free else ""}</p><p class="tn">{" · ".join(ns)}</p></li>' for t, ns, free in TOC)
+    toc = "".join(f'<li><p class="tg">{t}{"<span>무료</span>" if free else ""}</p><p class="tn">{dots(ns)}</p></li>' for t, ns, free in TOC)
     sec_report = ('<section class="sec w" id="report"><p class="eyebrow">리포트</p><h2 class="h2">좋은 이야기만 쓰지 않습니다</h2>'
-                  '<div class="grid demo"><div class="c-l"><p class="sub">리포트마다 강세 요인 셋과 약세 요인 셋을 같은 무게로 씁니다. '
-                  '사업 구조에서 종합 의견까지 순서가 정해져 있어, 처음 보는 회사도 익숙하게 읽힙니다.</p>'
+                  '<div class="grid demo"><div class="c-l"><p class="sub">리포트마다 강세 요인 셋과 약세 요인 셋을 같은 무게로 담습니다. '
+                  '사업 구조부터 종합 의견까지 순서가 같아서, 처음 보는 회사의 리포트도 낯설지 않습니다.</p>'
                   f'<ul class="toc" aria-label="리포트 목차">{toc}</ul>'
                   f'<a class="more" href="#">{esc(s["name"])} 리포트 전체 보기 {I["arrow"]}</a></div>'
                   f'<div class="c-r">{card}<p class="fine card-note">{esc(s["name"])} 리포트에서 옮긴 부분입니다. 문장과 숫자는 고치지 않았습니다. '
@@ -427,28 +440,28 @@ def page():
                    f'<span class="tt">{g(rr["title"]["ko"])}</span><span class="mc">시가총액 {jo(BY[tk]["mcap"])}</span><span class="dt">{ymd(rr["reportDate"])}</span></a>'
                    for _, tk, rr in recent)
     sec_fresh = ('<section class="sec w" id="fresh"><p class="eyebrow">갱신</p><h2 class="h2">공시가 나오면 리포트도 바뀝니다</h2>'
-                 '<p class="sub">회사가 분기·반기·사업보고서를 DART에 내면 최신 실적으로 다시 씁니다. 주가와 시가총액, PER은 거래일마다 저녁에 갱신합니다.</p>'
-                 f'<div class="fresh"><p class="rows-cap">최근에 쓴 리포트<span>지난 7일 {n7}편 · {asof}</span></p><div class="rows">{rows}</div>'
-                 f'<a class="more" href="#">최근 갱신된 리포트 보기 {I["arrow"]}</a></div>'
+                 '<p class="sub">회사가 분기·반기·사업보고서를 DART에 공시하면 최신 실적으로 다시 씁니다. 주가·시가총액·PER은 거래일마다 저녁에 갱신합니다.</p>'
+                 f'<div class="fresh"><p class="rows-cap">최근에 쓴 리포트<span>{dots(["지난 7일 " + str(n7) + "편", asof])}</span></p><div class="rows">{rows}</div>'
+                 f'<a class="more" href="#">최근에 쓴 리포트 더 보기 {I["arrow"]}</a></div>'
                  '<div class="trust"><div><h3>실적 숫자는 AI가 쓰지 않습니다</h3>'
-                 '<p>분기·연간 실적과 재무제표 숫자는 금융감독원 전자공시(DART)에서, 주가는 한국거래소에서 직접 가져옵니다. AI는 그 숫자를 근거로 해석을 씁니다.</p></div>'
+                 '<p>분기·연간 실적과 재무제표 숫자는 금융감독원 <span class="nw">전자공시시스템(DART)에서</span>, 주가는 한국거래소에서 직접 가져옵니다. AI는 그 숫자를 근거로 해석을 씁니다.</p></div>'
                  '<div><h3>참고한 자료는 링크로 남깁니다</h3>'
-                 f'<p>사업 현황과 업황, 뉴스를 찾아 읽은 자료를 리포트 끝에 모아 둡니다. 한 편에 보통 {n_src}개입니다.</p></div>'
-                 '<div><h3>AI가 씁니다. 그래서 틀릴 수 있습니다.</h3><p>틀린 곳을 알려 주시면 확인해서 고칩니다.</p>'
+                 f'<p>사업 현황과 업황을 알아보며 읽은 뉴스와 자료를 리포트 끝에 모아 둡니다. 한 편에 보통 {n_src}개입니다.</p></div>'
+                 '<div><h3>해석은 AI가 씁니다. 그래서 틀릴 수 있습니다.</h3><p>틀린 곳을 알려 주시면 확인해서 고칩니다.</p>'
                  f'<a class="more" href="#">틀린 곳 알리기 {I["arrow"]}</a></div></div></section>')
 
     # ── 모닝브리핑 — 어두운 띠 ─────────────────────────
-    secs = "".join(f"<li><span>{g(x['heading']['ko'])}</span></li>" for x in b["sections"])
+    secs = "".join(f"<li><span>{tail(g(x['heading']['ko']))}</span></li>" for x in b["sections"])
     stats = ""
     for k in ["코스피", "나스닥", "WTI", "미 10년물"]:
         v, c = f[k]
-        chg = (f'<small class="{cls(c)}">{"+" if c > 0 else ""}{c:.2f}%p</small>' if k.endswith("10년물") else f"<small>{arrow_pct(c)}</small>")
+        chg = (f'<small>{arrow_pct(c).replace("%<", "%p<")}</small>' if k.endswith("10년물") else f"<small>{arrow_pct(c)}</small>")
         stats += f"<div><dt>{k}</dt><dd>{v}{chg}</dd></div>"
     first = briefs()[0][:10]
     sec_brief = ('<section class="band" id="brief"><div class="w"><p class="eyebrow">모닝브리핑</p><h2 class="h2">장이 열리기 전에 읽는 한 편</h2><div class="grid bgrid"><div class="c-l">'
-                 '<p class="sub">밤사이 해외 시장에서 일어난 일 가운데 한국 시장에 닿는 것만 골라 씁니다. 움직인 이유가 분명한 숫자에는 이유를 한 구절 붙입니다.</p>'
+                 f'<p class="sub">{g("전날 국내 시장과, 밤사이 해외 시장에서 한국에 닿는 일을 골라 정리합니다. 숫자가 움직인 이유가 분명하면 한 구절로 덧붙입니다.")}</p>'
                  f'<a class="more" href="#">제{b["_no"]}호 읽기 {I["arrow"]}</a>'
-                 f'<p class="fine">거래일 아침, 보통 7시 30분 무렵에 나옵니다 · {ymd(first)} 창간</p></div>'
+                 f'<p class="fine">{dots(["거래일 아침 7시 30분 무렵 발행", ymd(first) + " 창간"])}</p></div>'
                  f'<div class="c-r"><article class="bcard" aria-label="모닝브리핑 제{b["_no"]}호"><p class="bm">제{b["_no"]}호 · {kdate(b["date"])} {publish_time(b)} 발행</p>'
                  f'<h3>{g(b["title"]["ko"])}</h3><ol class="bsec">{secs}</ol><dl class="bstats">{stats}</dl></article></div></div></div></section>')
 
@@ -458,40 +471,40 @@ def page():
     mx = top[0][1]
     grid = "".join(f'<li><span class="sn">{esc(k)}<b>{v:,}</b></span><span class="bar"><i style="width:{v / mx * 100:.1f}%"></i></span></li>' for k, v in top)
     sec_sectors = ('<section class="sec w" id="sectors"><p class="eyebrow">업종 분석</p><h2 class="h2">업종 안에서 회사를 봅니다</h2>'
-                   f'<p class="sub">{len(top)}개 업종마다 업황과 주요 종목을 따로 정리합니다. 한 회사를 읽을 때 그 업종의 흐름도 함께 볼 수 있습니다.</p>'
-                   f'<ul class="sgrid">{grid}</ul><div class="s-foot"><p class="fine">숫자는 업종에 속한 종목 수입니다. 한 종목이 두 업종에 들기도 합니다.</p>'
+                   f'<p class="sub">{g(f"{len(top)}개 업종마다 업황과 주요 종목을 따로 정리합니다. 한 회사를 읽을 때 그 업종의 흐름도 함께 볼 수 있습니다.")}</p>'
+                   f'<ul class="sgrid">{grid}</ul><div class="s-foot"><p class="fine">숫자는 업종에 속한 종목 수입니다. 한 종목이 여러 업종에 들기도 합니다.</p>'
                    f'<a class="more s-all" href="#">{len(top)}개 업종 분석 보기 {I["arrow"]}</a></div></section>')
 
     # ── 하지 않는 것 — 그리고 누구를 위해 쓰는가 ─────────────
-    sec_stance = ('<section class="sec w"><div class="grid stance"><h2 class="h2 c-l">사라, 팔라<br>하지 않습니다</h2>'
-                  '<div class="c-r"><p>매수·매도 의견도, 목표주가도 내지 않습니다. 판단에 필요한 사실과 근거를 모으고, 판단은 읽는 분께 맡깁니다.</p>'
-                  '<p>직접 종목을 고르는 분을 위해 씁니다. 시세와 주문은 쓰던 앱에서, 사기 전의 공부는 여기서.</p></div></div></section>')
+    sec_stance = ('<section class="sec w"><div class="grid stance"><h2 class="h2 c-l">사라고도 팔라고도<br>하지 않습니다</h2>'
+                  '<div class="c-r"><p>매수·매도 의견도, 목표주가도 내지 않습니다. 사실과 근거를 모으고, 판단은 읽는 분께 맡깁니다.</p>'
+                  '<p>직접 종목을 고르는 분을 위한 리포트입니다. 매매 신호나 목표주가를 찾는다면 KOSAI는 맞지 않습니다.</p></div></div></section>')
 
     # ── 멤버십 ───────────────────────────────────────
     plans = [
-        ("무료", "0원", "", "종목을 처음 살필 때", ["핵심 지표 — 현재가·시가총액·PER", "리포트 개요와 요약", "사업 구조", "최근 4개 연도·5개 분기 실적"],
-         '<a class="btn btn-soft" href="#">무료 리포트 보기</a>', "가입 없이 읽을 수 있습니다"),
-        ("BASIC", "9,900원", " / 월", "보유 종목을 꾸준히 챙길 때", ["리포트 전체 — 실적 분석부터 종합 의견까지", "하루 5개 종목"],
+        ("무료", "0원", "", "종목을 처음 살필 때", ["핵심 지표 — 주가·시가총액·PER", "리포트 개요와 요약", "사업 구조", "최근 4년·5분기 실적", "참고 출처"],
+         '<a class="btn btn-soft" href="#">리포트 찾기</a>', "가입 없이"),
+        ("BASIC", "9,900원", "월", "보유 종목을 꾸준히 챙길 때", ["리포트 전체 — 실적 분석부터 종합 의견까지", "하루 5개 종목"],
          '<a class="btn btn-ink" href="#">BASIC 시작하기</a>', "부가세 포함 · 매달 자동 결제 · 언제든 해지"),
-        ("PRO", "14,900원", " / 월", "여러 종목을 견줘 볼 때", ["리포트 전체 — 실적 분석부터 종합 의견까지", "하루 15개 종목"],
+        ("PRO", "14,900원", "월", "여러 종목을 견줘 볼 때", ["리포트 전체 — 실적 분석부터 종합 의견까지", "하루 15개 종목"],
          '<a class="btn btn-ink" href="#">PRO 시작하기</a>', "부가세 포함 · 매달 자동 결제 · 언제든 해지"),
     ]
-    ph = "".join(f'<div class="plan"><p class="plan-name">{nm}</p><p class="plan-price">{pr}<small>{unit}</small></p><p class="plan-sub">{sub}</p><ul>'
+    ph = "".join(f'<div class="plan"><p class="plan-name">{nm}</p><p class="plan-price">{f"<small>{unit}</small>" if unit else ""}{pr}</p><p class="plan-sub">{sub}</p><ul>'
                  + "".join(f"<li>{esc(x)}</li>" for x in fs) + f'</ul>{cta}<p class="under">{under}</p></div>'
                  for nm, pr, unit, sub, fs, cta, under in plans)
-    sec_price = ('<section class="sec w" id="pricing"><p class="eyebrow">멤버십</p><h2 class="h2">리포트 요약은 무료입니다</h2>'
-                 '<p class="sub">모든 리포트의 요약과 사업 구조, 최근 실적은 가입 없이 읽을 수 있습니다. 실적 분석부터 종합 의견까지, 리포트 전체는 구독하면 열립니다.</p>'
-                 '<p class="fine same">두 유료 플랜의 내용은 같습니다. 다른 것은 하루에 볼 수 있는 종목 수뿐입니다.</p>'
+    sec_price = ('<section class="sec w" id="pricing"><p class="eyebrow">멤버십</p><h2 class="h2">요약과 실적은 무료입니다</h2>'
+                 '<p class="sub">요약과 사업 구조, 최근 실적은 가입 없이 읽을 수 있습니다. 실적 분석부터 종합 의견까지, 리포트 전체는 구독하면 열립니다.</p>'
+                 '<p class="fine same">BASIC과 PRO는 리포트 내용이 같고, 하루에 볼 수 있는 종목 수만 다릅니다.</p>'
                  f'<div class="plans">{ph}</div></section>')
 
     # ── 자주 묻는 질문 — 믿어도 되나 · 추천인가 · 무엇이 다른가 · 누가 · 해지 ──
     qa = [
-        ("AI가 쓴 리포트, 믿어도 되나요?", "리포트는 AI가 쓰고, 그래서 틀릴 수 있습니다. 다만 실적과 재무제표 숫자는 AI가 쓰지 않고 DART 공시에서 그대로 가져옵니다. "
+        ("AI가 쓴 리포트, 믿어도 되나요?", "리포트는 AI가 쓰기 때문에 틀릴 수 있습니다. 다만 실적과 재무제표 숫자는 AI가 쓰지 않고 DART 공시에서 그대로 가져옵니다. "
          "글을 쓰며 참고한 자료는 리포트 끝에 링크로 남기니, 중요한 내용은 원문에서 한 번 더 확인하세요. 틀린 곳을 알려 주시면 확인해서 고칩니다."),
-        ("종목을 추천해 주나요?", "아닙니다. KOSAI는 매수·매도 의견도, 목표주가도 내지 않습니다. 리포트는 판단을 돕는 참고 자료이고, 판단과 그 결과는 읽는 분의 몫입니다."),
-        ("증권사 리포트와 무엇이 다른가요?", f"증권사 리포트는 주로 규모가 큰 회사를 다룹니다. KOSAI는 코스피·코스닥 상장사 {n_listed:,}곳 가운데 {n_rep:,}곳의 리포트를 씁니다. "
-         f"나머지 {n_listed - n_rep}곳은 새로 상장해 준비하고 있습니다. 증권사 리포트가 있는 종목이라면 함께 읽고, 없는 종목이라면 여기서 시작해 보세요."),
-        ("누가 만드나요?", "코사이가 만듭니다. 리포트는 AI가 쓰고, 코사이는 AI가 따를 작성 규칙을 정하고 저장하기 전에 결함 있는 글을 거르는 검사를 만들어 고칩니다. "
+        ("종목을 추천해 주나요?", "아닙니다. KOSAI는 매수·매도 의견도, 목표주가도 내지 않습니다. 리포트는 참고 자료이고, 판단과 그 결과는 읽는 분의 몫입니다."),
+        ("증권사 리포트와 무엇이 다른가요?", f"증권사 리포트는 주로 규모가 큰 회사를 다룹니다. KOSAI는 코스피·코스닥 {n_listed:,}개 종목 가운데 {n_rep:,}개의 리포트를 씁니다. "
+         f"나머지 {n_listed - n_rep}개는 새로 상장한 종목이라 리포트를 준비하고 있습니다. 증권사 리포트가 있는 종목이라면 함께 읽고, 없는 종목은 여기서 먼저 읽어 보세요."),
+        ("누가 만드나요?", "리포트는 AI가 씁니다. 코사이는 AI가 따를 작성 규칙을 정하고, 저장하기 전에 결함 있는 글을 걸러 고치는 검사를 만듭니다. "
          "사업자 정보는 이 페이지 맨 아래에 있습니다."),
         ("구독은 언제든 해지할 수 있나요?", "설정의 구독 항목에서 바로 해지할 수 있습니다. 해지한 뒤에도 이미 결제한 기간이 끝날 때까지 그대로 볼 수 있습니다."),
     ]
@@ -502,7 +515,7 @@ def page():
     picks = ["005930", "000660", SAMPLE, "093240"]
     chips = "".join(f'<a href="#">{esc(BY[t]["name"])}<span>{jo(BY[t]["mcap"])}</span></a>' for t in picks if t in BY)
     sec_end = ('<section class="sec w end">'
-               + slot("m-end", "이미지", "image", "21 : 8 · 휴대폰 4 : 3", "마무리 장면",
+               + slot("m-end", "이미지", "image", "21:8 · 휴대폰 4:3", "마무리 장면",
                       "첫 화면과 같은 빛과 재질로 만든 정지 그림 한 장. 첫 화면 영상의 마지막 장면을 써도 됩니다.")
                + f'<h2 class="h2">찾는 종목의 리포트가<br>이미 있습니다</h2>{search_box()}<div class="chips">{chips}</div></section>')
 
@@ -515,7 +528,7 @@ def page():
     head = ('<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
             f'<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#f9f8f6"><title>KOSAI — {h1}</title>'
             f'<meta name="description" content="{desc}"><meta property="og:title" content="{h1}">'
-            f'<meta property="og:description" content="코스피·코스닥 {n_rep:,}개 종목의 리포트 · 요약은 무료">'
+            f'<meta property="og:description" content="코스피·코스닥 {n_rep:,}개 종목의 리포트 · 요약과 실적은 무료">'
             f'<link rel="stylesheet" href="{FONTS}/pretendard-subset.css"><link rel="stylesheet" href="landing.css"></head><body>')
     return (head + nav() + f"<main>{hero}{stmt}{sec_report}{sec_fresh}{sec_brief}{sec_sectors}{sec_stance}{sec_price}{sec_faq}{sec_end}</main>"
             + foot() + js + "</body></html>")

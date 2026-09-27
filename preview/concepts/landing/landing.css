@@ -183,7 +183,7 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .plan{display:flex;flex-direction:column;padding:28px 0 8px}
 .plan-name{font:600 12px/16px var(--font);letter-spacing:.06em;color:var(--ink-62)}
 .plan-price{margin-top:12px;font:700 36px/44px var(--font);letter-spacing:-.02em}
-.plan-price small{margin-left:4px;font:500 15px/1 var(--font);letter-spacing:0;color:var(--ink-62)}
+.plan-price small{margin-right:6px;font:500 15px/1 var(--font);letter-spacing:0;color:var(--ink-62)}
 .plan-sub{margin-top:6px;font:400 14px/1.5 var(--font);color:var(--ink-72);min-height:42px}
 .plan ul{margin:18px 0 24px;border-top:1px solid var(--hair);flex:1}
 .plan li{padding:10px 0;border-bottom:1px solid var(--hair);font:400 14px/1.5 var(--font);color:var(--ink-72)}
