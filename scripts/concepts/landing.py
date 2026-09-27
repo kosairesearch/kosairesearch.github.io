@@ -5,8 +5,12 @@
   · 3판은 사장 피드백(2026-09-27)대로 줄였다 — "초중반에 글이 너무 많다 · 메인카피·서브카피·이미지 · 여백 ·
     리포트 이미지를 넣으니 글이 많아진다 · 랜딩에서 멤버십 이야기를 왜 꺼내나 · -다로만 끝나 지루하다(AI 톤)".
     그래서 리포트 카드 · 최근 목록 · 업종 칸 · 신뢰 세 기둥의 긴 글 · 요금 · 질문 · 브리핑 카드 · 그림 자리의 긴 설명을 뺐다.
-  · 문구는 COPY 한 곳에 모았다. 말끝은 섞는다(제목은 조각·조사 끝, 서브는 해요체 중심). 근거와 규칙은
-    reports/카피라이팅과 랜딩페이지 구성 이론 총정리.md 와 노트 16–19(한국어 카피 말끝 · AI 말투).
+    멤버십은 머리·꼬리 메뉴에서도 뺐다(가격 문구는 유료화 법정 절차 뒤 — CLAUDE.md).
+  · 절 순서: 첫 화면 → 리포트 → 태도 → 갱신 → 근거 → 모닝브리핑(어두운 띠) → 업종 → 마지막. 태도를 리포트 바로 뒤에 둔 것은
+    '투자 추천인가'에 일찍 답하려고(보고서 8부 ⑬)이고, 그래서 그림 있는 절과 글만 있는 절이 번갈아 온다.
+  · 문구는 copy_text() 한 곳에 모았다. 말투는 우리 사이트 목소리(노트 20) — 제목은 명사형을 기본으로 절마다 모양을 바꾸고,
+    서브는 합쇼체에 명사로 끝나는 짧은 줄을 섞는다. 해요체 평서문과 쉼표로 가른 'A, B' 제목은 쓰지 않는다. 근거와 규칙은
+    reports/카피라이팅과 랜딩페이지 구성 이론 총정리.md 와 노트 16–20(한국어 카피 실측 · 카피라이터 원칙 · AI 말투 · KOSAI 말투).
   · 그림·영상·3D 는 만들지 않는다. 들어갈 자리만 표시한다(종류 · 비율 · 한 줄 이름). 권장 소재는 보고서 5부.
   · 숫자는 전부 data/ 에서 계산한다 — 손으로 적은 숫자·날짜 없음. 스테이징·실사이트 파일은 건드리지 않는다.
 """
@@ -230,7 +234,7 @@ I = {
     "ham": '<svg class="ham" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>',
     "x": '<svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>',
 }
-LINKS = [("홈", "#"), ("리포트", "#report"), ("업종 분석", "#sectors"), ("관심종목", "#"), ("멤버십", "#"), ("모닝브리핑", "#brief")]
+LINKS = [("홈", "#"), ("리포트", "#report"), ("업종 분석", "#sectors"), ("관심종목", "#"), ("모닝브리핑", "#brief")]   # 멤버십은 뺐다 — 랜딩은 KOSAI 소개, 가격 문구는 유료화 법정 절차 뒤(CLAUDE.md)
 
 
 def sents(text):
@@ -263,7 +267,7 @@ def foot():
     return (f'<footer class="foot"><div class="w"><a class="brand" href="#"><img class="lt" src="{ASSETS}/kosai-wordmark-black.png" alt="KOSAI">'
             f'<img class="dk" src="{ASSETS}/kosai-wordmark-white.png" alt="KOSAI"></a>'
             '<p class="ftag">국내 상장사 리포트, 업종 분석, 모닝브리핑</p>'
-            '<div class="fgrid"><div class="fcol"><h4>서비스</h4><a href="#">홈</a><a href="#">리포트</a><a href="#">업종 분석</a><a href="#">관심종목</a><a href="#">멤버십</a><a href="#">모닝브리핑</a></div>'
+            '<div class="fgrid"><div class="fcol"><h4>서비스</h4><a href="#">홈</a><a href="#">리포트</a><a href="#">업종 분석</a><a href="#">관심종목</a><a href="#">모닝브리핑</a></div>'
             '<div class="fcol"><h4>회사</h4><a href="#">회사 소개</a><a href="#">문의하기</a><a href="#">피드백</a></div>'
             '<div class="fcol"><h4>정책</h4><a href="#">이용약관</a><a class="pp" href="#">개인정보 처리방침</a></div></div>'
             '<div class="biz"><span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span><span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span></div>'
@@ -280,28 +284,30 @@ def copy_text(n_rep, n_sec, brief_no, asof):
     """랜딩 문구 전부 — KOSAI 가 이미 쓰는 목소리(노트 20 실측): 제목은 명사형(사이트 제목의 90% 이상), 서브는 합쇼체에
     명사로 끝나는 짧은 줄을 섞는다(절마다 끝 모양을 번갈아). 해요체는 쓰지 않는다(사이트에서는 FAQ·로그인 질문에만).
     제목 모양은 절마다 다르게(노트 17: 반복이 안 느껴지는 페이지는 5~9가지) — 조사 끝 · 명사구 · 관형형+명사 ·
-    명사형 질문('~되나', 물음표 없이 — About 의 '데이터는 얼마나 자주 업데이트되나'와 같은 꼴) · 의+명사구 · 숫자+명사구 ·
-    합쇼체 단언 한 번 · 조사 끝. 쉼표로 가른 'A, B' 제목 0(3판 초안은 8개 중 6개였다). 첫 제목 '까지'와 마지막 '부터'가 짝."""
+    '-나'로 닫은 질문('~되나', 물음표 없이 — About 의 '데이터는 얼마나 자주 업데이트되나'와 같은 꼴) · 의+명사구 · 숫자+명사구 ·
+    합쇼체 단언 한 번 · 조사 끝. 이웃한 두 제목의 모양이 같지 않게 놓았다. 쉼표로 가른 'A, B' 제목 0(3판 초안은 8개 중 6개였다). 첫 제목 '까지'와 마지막 '부터'가 짝."""
     return {
         "h1": "증권사가 다루지\u00a0않는<br>종목까지",
         "h1_plain": "증권사가 다루지 않는 종목까지",
-        "lede": (f"{MARKETS} {n_rep:,}개 종목의", f"리포트({asof})."),   # 둘째 조각은 한 덩어리. 방법(실적 표는 공시에서)은 근거 절이 말한다 — 겹치지 않게
+        "lede": (f"{MARKETS} {n_rep:,}개 종목의", f"리포트({asof}).", "공시와 뉴스를 읽고 AI가 씁니다."),   # 둘째 조각은 한 덩어리 · 셋째는 짧은 한 문장(누가 쓰는지)
         "report": ("리포트", "좋게 볼 이유와<br>조심할 이유",
                    "리포트마다 강세 요인과 약세 요인을 셋씩 나란히 적습니다. 사업 구조에서 종합 의견까지, 늘 같은 순서로."),
         "fresh": ("", "공시가 나오면<br>다시 쓰는 리포트",
-                  "분기·반기·사업보고서가 나오면 최신 실적으로 고쳐\u00a0씁니다. 주가와 PER은 거래일 저녁마다 바뀝니다."),
+                  "분기·반기·사업보고서가 올라오면 그\u00a0실적으로 고쳐\u00a0씁니다. 주가와 PER은 거래일 저녁마다 바뀝니다."),
         "trust": ("", "AI가 쓴 리포트를<br>믿어도 되나",
-                  "실적 표와 차트는 DART 공시에서 그대로 옮깁니다. AI가 쓰는 것은 그 숫자를 읽은 해석."),
+                  "실적 표와 차트는 DART 공시에서 그대로 옮깁니다. 참고한 뉴스와 자료는 리포트 끝에 링크로 남깁니다."),
         "brief": ("모닝브리핑", "장이 열리기 전<br>아침의 한 편",
-                  "전날 국내 시장과 밤사이 해외 소식, 오늘 일정까지. 거래일\u00a0아침 7시 30분 무렵에 나옵니다."),
+                  "전날 국내 시장과 밤사이 해외 소식, 오늘 일정까지. 거래일\u00a0아침, 보통 7시 30분 무렵에 나옵니다."),
         "sectors": ("업종 분석", f"{n_sec}개 업종의 흐름",
                     "업종마다 업황과 주요 종목을 따로 정리합니다. 한 회사를 읽을\u00a0때 옆 회사도 함께."),
         "stance": ("", "사라고도 팔라고도<br>하지 않습니다",
-                   "목표주가도 쓰지 않습니다. 근거를 모으는 데까지가 KOSAI의\u00a0일."),
+                   "목표주가도 없습니다."),
         "end": "궁금한 종목부터",
         "brief_link": f"제{brief_no}호 읽기",
         "sectors_link": f"{n_sec}개 업종 분석 보기",
-        "desc": f"{MARKETS} {n_rep:,}개 종목의 리포트. 실적 표는 공시에서 가져오고, 해석은 AI가 씁니다.",
+        "title": f"KOSAI — {MARKETS} {n_rep:,}개 종목의 리포트",
+        "og_title": "KOSAI 리포트 — 증권사가 다루지 않는 종목까지",
+        "desc": f"{MARKETS} {n_rep:,}개 종목의 리포트. 공시와 뉴스를 읽고 AI가 씁니다.",
         "og_desc": f"{MARKETS} {n_rep:,}개 종목의 리포트와 모닝브리핑",
     }
 
@@ -316,8 +322,8 @@ def page():
         eb, h, sub = C[key]
         return ((f'<p class="eyebrow">{eb}</p>' if eb else "") + f'<h2 class="h2">{h}</h2><p class="sub">{sents(sub)}</p>' + link)
 
-    la, lb = C["lede"]
-    hero = (f'<header class="hero w"><h1>{C["h1"]}</h1><p class="lede"><span class="s">{g(la)} <span class="nw">{g(lb)}</span></span></p>'
+    la, lb, lc = C["lede"]
+    hero = (f'<header class="hero w"><h1>{C["h1"]}</h1><p class="lede"><span class="s">{g(la)} <span class="nw">{g(lb)}</span></span> <span class="s">{g(lc)}</span></p>'
             + search_box()
             + f'<div class="alt">{more(esc(BY[HERO_REPORT]["name"]) + " 리포트 보기")}</div>'
             + slot("영상 · 사진", "video", "16:9 · 휴대폰 1:1", "손에 든 휴대폰 속 KOSAI 리포트")
@@ -362,11 +368,11 @@ def page():
              "function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0d0d0e':'#f9f8f6')}"
              "tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme']})})();</script>")
     head = ('<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
-            f'<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#f9f8f6"><title>KOSAI — {esc(C["h1_plain"])}</title>'
-            f'<meta name="description" content="{esc(C["desc"])}"><meta property="og:title" content="{esc(C["h1_plain"])}">'
+            f'<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#f9f8f6"><title>{esc(C["title"])}</title>'
+            f'<meta name="description" content="{esc(C["desc"])}"><meta property="og:title" content="{esc(C["og_title"])}">'
             f'<meta property="og:description" content="{esc(C["og_desc"])}">'
             f'<link rel="stylesheet" href="{FONTS}/pretendard-subset.css"><link rel="stylesheet" href="landing.css">{theme}</head><body>')
-    return (head + nav() + f"<main>{hero}{sec_report}{sec_fresh}{sec_trust}{sec_brief}{sec_sectors}{sec_stance}{sec_end}</main>"
+    return (head + nav() + f"<main>{hero}{sec_report}{sec_stance}{sec_fresh}{sec_trust}{sec_brief}{sec_sectors}{sec_end}</main>"
             + foot() + js + "</body></html>")
 
 
