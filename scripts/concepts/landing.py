@@ -481,8 +481,8 @@ def page():
 
     # ── 첫 화면 — 제목(차별 하나) · 서브(범위 · 방법) · 검색 · 걱정 하나와 태도 · 제품이 보이는 장면 ──
     hero = ('<header class="hero w"><h1>증권사가<br class="m"> 다루지 않는 종목도<br>리포트가 있습니다</h1>'
-            f'<p class="lede"><span class="nw">{MARKETS}</span> <span class="nw">{n_rep:,}개 종목({asof})을</span> 다룹니다. '
-            '실적 표는 공시에서 그대로 가져오고, 해석은 AI가 씁니다.</p>'
+            f'<p class="lede"><span class="nw">{MARKETS}</span> {n_rep:,}개 종목을 <span class="nw">다룹니다({asof}).</span> '
+            '<span class="nw">실적 표는</span> 공시에서 그대로 가져오고, 해석은 AI가 씁니다.</p>'
             + search_box()
             + f'<div class="hint-row"><p class="hint">{dots(["요약과 실적은 가입 없이 무료", "매수·매도 의견과 목표주가는 없습니다"])}</p>'
             + f'<a class="more" href="#">{esc(BY[HERO_REPORT]["name"])} 리포트 보기 {I["arrow"]}</a></div>'
@@ -527,7 +527,7 @@ def page():
                    f'<span class="tt">{g(rr["title"]["ko"])}</span><span class="mc">시가총액 {jo(BY[tk]["mcap"])}</span><span class="dt">{ymd(rr["reportDate"])}</span></a>'
                    for _, tk, rr in recent)
     sec_fresh = ('<section class="sec s w" id="fresh"><p class="eyebrow">갱신</p><h2 class="h2">공시가 나오면 리포트도 바뀝니다</h2>'
-                 '<p class="sub">회사가 분기·반기·사업보고서를 DART에 공시하면 최신 실적으로 다시 씁니다. 주가·시가총액·PER은 거래일마다 저녁에 갱신합니다.</p>'
+                 '<p class="sub">회사가 분기·반기·사업보고서를 DART에 공시하면 <span class="nw">최신 실적으로</span> 다시 씁니다. 주가·시가총액·PER은 거래일마다 저녁에 갱신합니다.</p>'
                  f'<div class="fresh"><p class="rows-cap">최근에 쓴 리포트{dots(["지난 7일 " + str(n7) + "편", asof])}</p><div class="rows">{rows}</div>'
                  f'<a class="more" href="#">최근에 쓴 리포트 모두 보기 {I["arrow"]}</a></div>'
                  '<div class="trust"><div><h3>실적 표와 차트는 AI가 쓰지 않습니다</h3>'
@@ -585,7 +585,7 @@ def page():
                  for nm, ko, pr, unit, sub, fs, cta, under in plans)
     sec_price = ('<section class="sec w" id="pricing"><p class="eyebrow">멤버십</p><h2 class="h2">요약과 실적은 무료입니다</h2>'
                  '<p class="sub">요약과 사업 구조, 최근 실적은 가입 없이 읽을 수 있습니다. 실적 분석부터 종합 의견까지, 리포트 전체는 구독하면 열립니다.</p>'
-                 '<p class="fine same">BASIC과 PRO는 리포트 내용이 같고, 하루에 볼 수 있는 종목 수만 다릅니다.</p>'
+                 '<p class="fine same">BASIC과 PRO는 리포트 내용이 같고, 하루에 볼 수 있는 <span class="nw">종목 수만</span> 다릅니다.</p>'
                  f'<div class="plans">{ph}</div>'
                  '<p class="fine price-fine">재무 공시가 없어 실적 표가 없는 종목은 리포트 전체를 무료로 공개합니다.</p>'
                  '<p class="note-slot price-note"><b>유료 개시 뒤 이 자리에 들어갈 문구</b>유사투자자문업 신고번호 · 개별 투자 상담과 자금 운용을 하지 않는다는 안내 · '
