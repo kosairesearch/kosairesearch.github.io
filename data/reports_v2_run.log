@@ -1,5 +1,7 @@
-=== 공시 트리거 v2 생성 Mon Sep 28 06:25:26 UTC 2026 · 대상 334970 ===
-## 🤖 리포트 v2 Batch 제출 — 1개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
+=== 공시 트리거 v2 생성 Mon Sep 28 18:25:24 UTC 2026 · 대상 145720,019010,004410,417860,127980 ===
+## 🤖 리포트 v2 Batch 제출 — 5개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
+- 정량 재사용 4개(숫자가 이미 최신·완전) · 다시 받을 1개
+    · 다시 받는 이유 1개: 최근 분기(2026Q2)가 반영되지 않음
 KRX 로그인 시도...
   로그인 ID: qjawnsdla
 ⚠️ KRX 비밀번호 변경이 필요합니다.
@@ -14,52 +16,41 @@ KRX 로그인 시도...
 KRX 로그인 실패: 자격 증명을 확인하세요.
 Error occurred in get_market_fundamental_by_ticker: Expecting value: line 1 column 1 (char 0)
 - (KRX 펀더멘털 실패: KeyError: "None of [Index(['BPS', 'PER', 'PBR', 'EPS', 'DIV', 'DPS'], dtype='object')] are in the [columns]") — KRX 값 없이 진행
-- 정량 수집 334970 프레스티지바이오로직스...
-  · EPS 입력: 공시롤포워드=-373(작년연간 -373 − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 -353 → 채택 -373
-  · BPS 입력: 자본 0.1조(2025년말·연간폴백) ÷ 주식수 74백만(가중평균) = BPS 1836
-  ❌ 프레스티지바이오로직스 중대오류 차단 → 해당 지표 숨김: EPS -373↔ref -659.0 / BPS 1836↔ref 1163.0
-### 프레스티지바이오로직스
-  2025: 매출 125억 영업이익 -337억 지배순이익 -275억 OPM -268.7% ROE -20.3% 부채비율 99.9%
-  2024: 매출 22억 영업이익 -334억 지배순이익 -294억 OPM -1541.2% ROE -41.0% 부채비율 303.7%
-  2023: 매출 17억 영업이익 -221억 지배순이익 -180억 OPM -1277.6% ROE -18.0% 부채비율 206.4%
-  2022: 매출 0억 영업이익 -366억 지배순이익 -497억 OPM -235333.1% ROE -42.3% 부채비율 119.4%
-  2024Q4: 매출 — 영업이익 -19억 지배순이익 -50억
-  2025Q1: 매출 12억 영업이익 -136억 지배순이익 -129억
-  2025Q2: 매출 89억 영업이익 -97억 지배순이익 -83억
-  2025Q3: 매출 — 영업이익 -62억 지배순이익 -67억
-  2025Q4: 매출 57억 영업이익 -42억 지배순이익 4억
-  PER None | EPS None | PBR None | BPS None | ROE -20.3 | 배당 None% | DPS None
-- 모델 배분: claude-opus-5 0개 · claude-sonnet-5 1개
-- ✅ 배치 제출: msgbatch_0156vV5gbpmFLXKqPQV8ApTM (1건) → data/batches_v2/msgbatch_0156vV5gbpmFLXKqPQV8ApTM.json
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-- ⏳ 시간 내 미완료 — 남은 배치는 collect_batch 가 회수한다
-- 아직 처리 중 — 여기서 끝낸다. collect_batch 가 회수한다(msgbatch_0156vV5gbpmFLXKqPQV8ApTM).
+- 정량 수집 417860 오브젠...
+  · EPS 입력: 공시롤포워드=-769(작년연간 -769 − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 -728 → 채택 -769
+  · BPS 입력: 자본 0.0조(2025년말·연간폴백) ÷ 주식수 4백만(가중평균) = BPS 2355
+  ❌ 오브젠 중대오류 차단 → 해당 지표 숨김: EPS -769↔ref 2368.0 / BPS 2355↔ref 3167.0
+### 오브젠
+  2025: 매출 234억 영업이익 0억 지배순이익 -34억 OPM 0.0% ROE -32.7% 부채비율 410.5%
+  2024: 매출 152억 영업이익 -41억 지배순이익 -33억 OPM -27.3% ROE -32.9% 부채비율 195.0%
+  2023: 매출 170억 영업이익 -58억 지배순이익 -54억 OPM -34.3% ROE -65.9% 부채비율 132.1%
+  2022: 매출 259억 영업이익 -20억 지배순이익 -19억 OPM -7.9% ROE -1836.9% 부채비율 9839.0%
+  2025Q2: 매출 65억 영업이익 7억 지배순이익 -102억
+  2025Q3: 매출 63억 영업이익 1억 지배순이익 64억
+  2025Q4: 매출 — 영업이익 — 지배순이익 —
+  2026Q1: 매출 131억 영업이익 -5억 지배순이익 -5억
+  2026Q2: 매출 125억 영업이익 -7억 지배순이익 43억
+  PER None | EPS None | PBR None | BPS None | ROE -32.7 | 배당 None% | DPS None
+- 모델 배분: claude-opus-5 0개 · claude-sonnet-5 5개
+- ✅ 배치 제출: msgbatch_01ULArAo1gLjh2z3kSbS1Bd1 (5건) → data/batches_v2/msgbatch_01ULArAo1gLjh2z3kSbS1Bd1.json
+  · 상태 in_progress · 처리 5/성공 0/오류 0
+  · 상태 in_progress · 처리 5/성공 0/오류 0
+  · 상태 in_progress · 처리 5/성공 0/오류 0
+  · 상태 in_progress · 처리 5/성공 0/오류 0
+  · 상태 in_progress · 처리 5/성공 0/오류 0
+  · 상태 in_progress · 처리 5/성공 0/오류 0
+  · 상태 in_progress · 처리 5/성공 0/오류 0
+  · 상태 in_progress · 처리 5/성공 0/오류 0
+  · 상태 in_progress · 처리 5/성공 0/오류 0
+  · 상태 in_progress · 처리 5/성공 0/오류 0
+  · 상태 in_progress · 처리 5/성공 0/오류 0
+  · 상태 in_progress · 처리 5/성공 0/오류 0
+  · 상태 in_progress · 처리 5/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 5/오류 0
+- msgbatch_01ULArAo1gLjh2z3kSbS1Bd1 · 상태 ended · 처리 0/성공 5/오류 0/만료 0/취소 0 · 주문 2026-09-29 03:25
+  · 127980 금액 표기 1곳 정리 (79조3,187억원 → 79조 3,187억원)
+  · ✏️ 019010 표현 교정 1건 → 남은 0건
+
+✅ v2 회수 완료 · 성공 5/실패 0 → data/reports_v2/ (2563개)
+💵 claude-sonnet-5 5건 · 입력 29,759(캐시쓰기 340,185·읽기 364,404) · 출력 110,380 · 검색 26 → 약 $1.30 (장당 $0.261)
+✅ msgbatch_01ULArAo1gLjh2z3kSbS1Bd1 회수 완료 · 성공 5/실패 0
