@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-09-30 05:32",
+  "lastUpdated": "2026-09-30 07:42",
   "dataDate": "20260929",
   "stocks": [
     {
@@ -10857,7 +10857,7 @@ window.KOS_LIVE_DATA = {
       "name": "글로벌테크놀로지",
       "name_en": "Global Technologies Co., Ltd.",
       "market": "코스닥",
-      "sector": "반도체",
+      "sector": "IT·소프트웨어",
       "price": 15240,
       "change": 52.4,
       "volume": 47052434,
@@ -10866,7 +10866,7 @@ window.KOS_LIVE_DATA = {
       "shares": 19646144,
       "induty_code": "26112",
       "categories": [
-        "반도체"
+        "IT·소프트웨어"
       ],
       "rank": 603
     },
@@ -11994,7 +11994,7 @@ window.KOS_LIVE_DATA = {
       "name": "빅웨이브로보틱스",
       "name_en": "",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "기계·장비",
       "price": 29150,
       "change": 61.94,
       "volume": 14171610,
@@ -12002,7 +12002,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.3071,
       "shares": 10270411,
       "categories": [
-        "기타",
+        "기계·장비",
         "로봇"
       ],
       "rank": 666
