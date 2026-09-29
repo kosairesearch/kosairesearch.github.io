@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-09-30 04:38",
+  "lastUpdated": "2026-09-30 05:32",
   "dataDate": "20260929",
   "stocks": [
     {
@@ -10855,17 +10855,18 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "486510",
       "name": "글로벌테크놀로지",
-      "name_en": "",
+      "name_en": "Global Technologies Co., Ltd.",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "반도체",
       "price": 15240,
       "change": 52.4,
       "volume": 47052434,
       "trading_value": 1118304927850,
       "mcap": 0.358,
       "shares": 19646144,
+      "induty_code": "26112",
       "categories": [
-        "기타"
+        "반도체"
       ],
       "rank": 603
     },
