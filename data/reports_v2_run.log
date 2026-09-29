@@ -1,5 +1,7 @@
-=== 공시 트리거 v2 생성 Tue Sep 29 01:06:41 UTC 2026 · 대상 417180 ===
-## 🤖 리포트 v2 Batch 제출 — 1개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
+=== 공시 트리거 v2 생성 Tue Sep 29 06:37:02 UTC 2026 · 대상 000650,140670,101170,090850,008700,040420,056360,083550,332290,013000,045300,044780,417180,088290 ===
+## 🤖 리포트 v2 Batch 제출 — 14개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
+- 정량 재사용 12개(숫자가 이미 최신·완전) · 다시 받을 2개
+    · 다시 받는 이유 2개: 최근 분기(2026Q2)가 반영되지 않음
 KRX 로그인 시도...
   로그인 ID: qjawnsdla
 ⚠️ KRX 비밀번호 변경이 필요합니다.
@@ -30,34 +32,48 @@ Error occurred in get_market_fundamental_by_ticker: Expecting value: line 1 colu
   2026Q1: 매출 50억 영업이익 -1억 지배순이익 -0억
   2026Q2: 매출 48억 영업이익 -3억 지배순이익 6억
   PER None | EPS None | PBR 0.4741 | BPS 8869 | ROE 11.3 | 배당 None% | DPS None
-- 모델 배분: claude-opus-5 0개 · claude-sonnet-5 1개
-- ✅ 배치 제출: msgbatch_01MUhGWN482UpJjZtPRMnb7E (1건) → data/batches_v2/msgbatch_01MUhGWN482UpJjZtPRMnb7E.json
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 ended · 처리 0/성공 1/오류 0
-- msgbatch_01MUhGWN482UpJjZtPRMnb7E · 상태 ended · 처리 0/성공 1/오류 0/만료 0/취소 0 · 주문 2026-09-29 10:06
+- 정량 수집 088290 이원컴포텍...
+  ❌ 두 공시가 어긋나고 분기표로도 확인이 안 된다(공시 -111 vs 순이익÷주식수 -514, 4.63배) — EPS·PER 숨김
+  · EPS 입력: 공시롤포워드=없음(작년연간 -111 − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 -514 → 채택 None
+  · BPS 입력: 자본 0.0조(2025년말·연간폴백) ÷ 주식수 8백만(발행총수) = BPS None
+  ✅ 이원컴포텍 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS 36.0 BPS 1040.0 PER 64.44
+### 이원컴포텍
+  2025: 매출 566억 영업이익 16억 지배순이익 -41억 OPM 2.8% ROE -43.0% 부채비율 148.7%
+  2024: 매출 525억 영업이익 25억 지배순이익 -210억 OPM 4.7% ROE -102.4% 부채비율 120.8%
+  2023: 매출 471억 영업이익 9억 지배순이익 -24억 OPM 1.9% ROE -4.8% 부채비율 60.3%
+  2022: 매출 478억 영업이익 17억 지배순이익 -96억 OPM 3.6% ROE -19.5% 부채비율 97.6%
+  2025Q2: 매출 166억 영업이익 7억 지배순이익 1억
+  2025Q3: 매출 156억 영업이익 11억 지배순이익 6억
+  2025Q4: 매출 — 영업이익 — 지배순이익 —
+  2026Q1: 매출 85억 영업이익 -9억 지배순이익 -15억
+  2026Q2: 매출 155억 영업이익 13억 지배순이익 11억
+  PER None | EPS None | PBR None | BPS None | ROE -43.0 | 배당 None% | DPS None
+- 모델 배분: claude-opus-5 0개 · claude-sonnet-5 14개
+- ✅ 배치 제출: msgbatch_0144Uuwa46Y3k4M7HRvUaSfi (14건) → data/batches_v2/msgbatch_0144Uuwa46Y3k4M7HRvUaSfi.json
+  · 상태 in_progress · 처리 14/성공 0/오류 0
+  · 상태 in_progress · 처리 14/성공 0/오류 0
+  · 상태 in_progress · 처리 14/성공 0/오류 0
+  · 상태 in_progress · 처리 14/성공 0/오류 0
+  · 상태 in_progress · 처리 14/성공 0/오류 0
+  · 상태 in_progress · 처리 14/성공 0/오류 0
+  · 상태 in_progress · 처리 14/성공 0/오류 0
+  · 상태 in_progress · 처리 14/성공 0/오류 0
+  · 상태 in_progress · 처리 14/성공 0/오류 0
+  · 상태 in_progress · 처리 14/성공 0/오류 0
+  · 상태 in_progress · 처리 14/성공 0/오류 0
+  · 상태 in_progress · 처리 14/성공 0/오류 0
+  · 상태 in_progress · 처리 14/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 14/오류 0
+- msgbatch_0144Uuwa46Y3k4M7HRvUaSfi · 상태 ended · 처리 0/성공 14/오류 0/만료 0/취소 0 · 주문 2026-09-29 15:37
+  · 🈯 140670 영문 9곳을 채워 되살렸다
+  · ✏️ 140670 표현 교정 1건 → 남은 0건
+  · ✏️ 090850 표현 교정 1건 → 남은 0건
+  · 083550 금액 표기 4곳 정리 (79조3,187억원 → 79조 3,187억원)
+  · 🈯 000650 영문 9곳을 채워 되살렸다
+  · 000650 금액 표기 1곳 정리 (79조3,187억원 → 79조 3,187억원)
+  · 417180 금액 표기 25곳 정리 (79조3,187억원 → 79조 3,187억원)
+  · 101170 한자 1곳 한글로: 전환 신호와 보스턴다이내믹→발
 
-✅ v2 회수 완료 · 성공 1/실패 0 → data/reports_v2/ (2563개)
-💵 claude-sonnet-5 1건 · 입력 5,987(캐시쓰기 64,598·읽기 86,342) · 출력 24,617 · 검색 5 → 약 $0.27 (장당 $0.268)
-✅ msgbatch_01MUhGWN482UpJjZtPRMnb7E 회수 완료 · 성공 1/실패 0
+✅ v2 회수 완료 · 성공 14/실패 0 → data/reports_v2/ (2563개)
+💵 claude-sonnet-5 14건 · 입력 83,614(캐시쓰기 765,017·읽기 745,977) · 출력 297,132 · 검색 62 → 약 $3.22 (장당 $0.230)
+✅ msgbatch_0144Uuwa46Y3k4M7HRvUaSfi 회수 완료 · 성공 14/실패 0
