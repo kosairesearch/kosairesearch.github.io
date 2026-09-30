@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-10-01 04:47",
+  "lastUpdated": "2026-10-01 05:04",
   "dataDate": "20260930",
   "stocks": [
     {
@@ -11322,17 +11322,18 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "266690",
       "name": "덕산넵코어스",
-      "name_en": "",
+      "name_en": "DUKSAN NAVCOURS CO.,LTD.",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "반도체",
       "price": 17320,
       "change": 18.63,
       "volume": 45305186,
       "trading_value": 968715605330,
       "mcap": 0.3397,
       "shares": 18893889,
+      "induty_code": "313",
       "categories": [
-        "기타"
+        "반도체"
       ],
       "rank": 629
     },
