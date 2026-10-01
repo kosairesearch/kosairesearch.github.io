@@ -103,6 +103,23 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
 }
 @media (max-width:720px){.shot{margin-top:28px} .shot .m1,.shot .m2{border-radius:14px}}
 
+/* 갱신 절 그림 — 1년 공시 시계(CYC_JS 가 공휴일 자료로 그린다 · 상자 없음 · 사장 2026-10-01). 바깥 원의 점 하나가 거래일 하루,
+   안쪽 선이 정기보고서 제출 기간. 상자는 정사각으로 자리를 미리 잡는다(그리기 전후로 밀리지 않게). 범례 항목 안의 글은 한 덩어리로
+   둔다(.cyc-lg>span 이 inline-flex 라 글이 나뉘면 사이가 벌어진다) */
+.cyc{grid-column:1/7;grid-row:1;display:flex;flex-direction:column;align-items:center;color:var(--ink)}
+.cyc-box{width:min(100%,460px);aspect-ratio:1/1}
+.cyc-box svg{display:block;width:100%;height:100%;overflow:visible}
+.cyc text{fill:currentColor;font-family:var(--font);font-variant-numeric:tabular-nums}
+.cyc .ring{stroke:var(--bg);stroke-width:2.5px;paint-order:stroke}
+.cyc-lg{margin-top:18px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 26px;font:500 13px/1.4 var(--font)}
+.cyc-lg>span{display:inline-flex;align-items:center;gap:9px}
+.cyc-lg em{font-style:normal;font-weight:400;color:var(--ink-62);margin-left:6px}
+.cyc-lg .g-tk{width:5px;height:5px;border-radius:50%;background:currentColor;opacity:.72}
+.cyc-lg .g-ar{position:relative;width:18px;height:2px;background:currentColor}
+.cyc-lg .g-ar::after{content:"";position:absolute;right:-3px;top:-2.5px;width:7px;height:7px;border-radius:50%;background:currentColor}
+@media (max-width:820px){.cyc{margin-top:48px} .cyc-box{width:min(100%,420px)}}
+@media (max-width:720px){.cyc{margin-top:36px} .cyc-lg{font-size:12px;gap:6px 18px}}
+
 /* 첫 화면 — 어두운 무대 · 큰 제목 · 검색 · 아래에서 떠오르는 종목의 행성(그림 없이 데이터로) */
 .hero{--orb-v:clamp(320px,62vh,640px);--orb-x:280px;
   position:relative;isolation:isolate;margin-top:-60px;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;
@@ -170,7 +187,6 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
 .proof h3{margin:0;font:600 19px/1.4 var(--font);letter-spacing:-.01em}
 .proof p{margin-top:10px;max-width:330px;font:400 16px/1.7 var(--font);color:var(--ink-62);text-wrap:pretty}
 .trust>.more{margin-top:40px}
-#fresh .split>.slot{aspect-ratio:4/3}
 
 /* 모닝브리핑 — 어두운 띠 하나 */
 .band{margin-top:var(--sec);min-height:calc(100vh - 60px);min-height:calc(100svh - 60px);display:flex;align-items:center;padding:96px 0;background:var(--band);color:var(--band-ink);scroll-margin-top:-24px}
@@ -248,7 +264,7 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
   .sub{margin-top:18px;font-size:16px}
   .solo{text-align:left} .solo .h2,.solo .sub{margin-left:0}   /* 한 열에서는 빈 반쪽이 없으니 다른 절처럼 왼쪽 정렬 */
   .stat .sub{margin-top:20px}
-  .split>.slot,.stack>.slot,#fresh .split>.slot{margin-top:44px;aspect-ratio:1/1}
+  .split>.slot,.stack>.slot{margin-top:44px;aspect-ratio:1/1}
   .slot{border-radius:16px}
   .band{padding:72px 0}
   .end .search{margin-top:36px}
