@@ -46,14 +46,16 @@ NAV = 60   # 머리 줄 높이 — 찍은 뒤 덜어 낸다
 M1 = 700 + 390 * .25   # 왼쪽 휴대폰 화면의 아래 끝 — 오른쪽(700)보다 화면 폭의 25% 길다. 랜딩의 .m2{margin-top:12%} ÷ 화면 폭 48%
 # 이름: (화면 폭, 높이, 배율, 머리 아래 올 절(None 이면 맨 위 그대로), 그 절의 화면 위 거리, 자를 범위(화면 좌표 x0 · y0 · x1 · y1),
 #        저장 폭, 켜져 있어야 할 목차, 아래를 끊을 자리(선택자와 그 위쪽 여유 — 자를 범위의 y1 보다 위면 거기서 끊는다, None 이면 y1 그대로.
-#        데스크톱 화면은 거기서 자르고, 휴대폰 화면은 크기를 지키려고 그 아래를 바탕색으로 덮는다))
+#        데스크톱 화면은 그 위 마지막 글줄 아래 TAIL 에서 자르고, 휴대폰 화면은 크기를 지키려고 그 아래를 바탕색으로 덮는다))
+TAIL = 18   # 데스크톱 화면을 끊을 때 마지막 글줄 아래에 남기는 여백 — 리포트 절 데스크톱 화면의 마지막 글줄도 그림 끝에서 이만큼 위다
 SHOTS = {
     "desk": (1280, 1000, 2, "#s01", 92, (56, NAV, 1280, 1000), 1840, "01", None),
     "m1": (390, 844, 3, "#s01", 112, (0, NAV, 390, M1), 900, "01", ("#s02", 8)),
     "m2": (390, 844, 3, "#s03", 112, (0, NAV, 390, 700), 900, "03", ("#s04", 8)),
 }
-# 업종 화면 — 데스크톱은 본문 폭(1056px)에 16px 씩 여유를 둔 범위를 2112px(2배)로 담는다. 아래는 다음 절(02) 제목 8px 위, 01 업종 개요가
-# 끝난 여백에서 끊는다 — 제목 윗부분이 그림 끝에 흐리게 비쳤다(사장 2026-10-01 "글씨가 살짝 보이는데 저거 거슬리네")
+# 업종 화면 — 데스크톱은 본문 폭(1056px)에 16px 씩 여유를 둔 범위를 2112px(2배)로 담는다. 아래는 다음 절(02) 제목에 닿기 전, 01 업종 개요의
+# 마지막 글줄 아래 TAIL 에서 끊는다 — 처음에는 제목 윗부분이 그림 끝에 흐리게 비쳤고(사장 2026-10-01 "글씨가 살짝 보이는데 저거 거슬리네"),
+# 그 뒤 여백까지 담았을 때는 리포트 절처럼 글이 그림 끝에서 풀리지 않아 흐려지는 범위가 달라 보였다(사장 "왜 달라??")
 SECTOR_SHOTS = {
     "desk": (1280, 900, 2, None, 0, (96, 84, 1184, 760), 2112, "01", ("#s02", 8)),
     "m1": (390, 844, 3, None, 0, (0, NAV, 390, M1), 900, "01", ("#s02", 8)),
@@ -63,14 +65,16 @@ HIDE = ".stats,.stats-note{display:none!important}"   # 업종 화면의 매일 
 
 
 # 끊는 선(y)에 글줄이 걸쳐 있으면 그 줄 위로 올린다 — 올린 자리에 또 걸치면 거듭. 그 위 줄이 선에 6px 안으로 붙어 있어도 뺀다(가장자리에
-# 붙은 줄은 잘린 것처럼 보인다 · 6px 은 본문 줄 사이 틈보다 작아 한 줄만 빠진다). 글줄은 글자 칸(Range 의 줄 상자)으로 잰다
+# 붙은 줄은 잘린 것처럼 보인다 · 6px 은 본문 줄 사이 틈보다 작아 한 줄만 빠진다). 글줄은 글자 칸(Range 의 줄 상자)으로 잰다.
+# 돌려주는 값은 [끊는 선, 그 위 마지막 글줄의 아래]
 LAST_LINE = """([x0,x1,y])=>{const rows=[];const tw=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
   for(let n;(n=tw.nextNode());){if(!n.textContent.trim())continue;const r=document.createRange();r.selectNodeContents(n);
     for(const b of r.getClientRects())if(b.width&&b.height&&b.right>x0&&b.left<x1)rows.push([b.top,b.bottom])}
   for(const t of document.querySelectorAll('svg text')){const b=t.getBoundingClientRect();if(b.width&&b.right>x0&&b.left<x1)rows.push([b.top,b.bottom])}
   const up=()=>{for(let moved=true;moved;){moved=false;for(const [t,b] of rows)if(t<y&&b>y){y=t;moved=true}}};
   up();const near=rows.filter(([t,b])=>b<=y&&b>y-6);if(near.length){y=Math.min(...near.map(r=>r[0]));up()}
-  return y}"""
+  const above=rows.filter(([t,b])=>b<=y).map(r=>r[1]);
+  return [y,above.length?Math.max(...above):y]}"""
 
 
 class Quiet(SimpleHTTPRequestHandler):
@@ -107,9 +111,9 @@ def take(br, url, shots, prefix, route=None, css=None):
             if cut:
                 stop = min(y1, round(pg.evaluate("s=>{const e=document.querySelector(s);return e?e.getBoundingClientRect().top:1e9}",
                                                  cut[0])) - cut[1])
-                if not phone:
-                    y1 = stop
-            stop = pg.evaluate(LAST_LINE, [x0, x1, stop])   # 아래 끝에 걸친 글줄은 통째로 뺀다
+            stop, ink = pg.evaluate(LAST_LINE, [x0, x1, stop])   # 아래 끝에 걸친 글줄은 통째로 뺀다
+            if cut and not phone:   # 데스크톱 화면은 마지막 글줄 아래 TAIL 에서 자른다 — 글이 그림 끝에서 풀려야 흐려지는 범위가 리포트 절과 같다
+                y1 = stop = min(stop, round(ink) + TAIL)
             ctx.close()
             im = im.crop((x0 * dpr, y0 * dpr, x1 * dpr, y1 * dpr))
             fy = round((stop - y0) * dpr)
