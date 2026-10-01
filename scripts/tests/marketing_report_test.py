@@ -648,6 +648,19 @@ mb2 = M.metrics_block({"weeks": H[:-1], "health": {"ok": True, "problems": []}},
 ok("지지난주가 최근이면 맨 위에 경고", "지난주가 아닙니다" in mb2.splitlines()[3], mb2[:300])
 mb3 = M.metrics_block({"weeks": [OLD], "health": {"ok": True, "problems": []}}, today=today)
 ok("옛 기록은 못 보는 단계를 '아직 못 봄' 으로", "아직 못 봄" in mb3, mb3[mb3.find("어디까지"):][:200])
+# 2026-10-01. 9/21 주에 관심종목 담기가 한 건도 없었는데 숫자판이 '아직 못 봄' 이라고
+# 찍었다. GA4 는 0건인 이벤트를 줄로 안 준다 — 목록을 받았으면 없는 이름은 0 이다.
+FW0 = dict(FW, events=[{"eventName": "sign_up", "eventCount": 1, "totalUsers": 1}])
+f0 = M.funnel(FW0)
+eq("이벤트 목록을 받았는데 그 이름이 없으면 0명 — '못 봄' 이 아니다",
+   (f0[2][1], f0[2][2]), (0, "명"))
+eq("0명은 100명 중 0명", round(f0[2][3]), 0)
+eq("이벤트 목록 자체가 없으면 그때만 None", M.event_users({"users": 10}, "watchlist_add"), None)
+mb0 = M.metrics_block({"weeks": H[:-1] + [FW0], "retention": RET["retention"],
+                       "health": {"ok": True, "problems": []}}, today=today)
+seg0 = mb0[mb0.find("어디까지"):mb0.find("붙잡는 힘")]
+ok("숫자판은 0명을 0명이라 찍는다", "관심종목 담음" in seg0 and "0명  0명" in seg0
+   and "아직 못 봄" not in seg0, seg0[:200])
 
 print("\n▣ 이미 해 놓은 일을 다시 제안하지 않게 재료에 실어 준다")
 # 2026-09-14. 보고서가 '구글 서치콘솔에 사이트맵 제출' 을 제안했는데
