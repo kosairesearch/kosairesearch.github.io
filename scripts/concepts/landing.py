@@ -16,8 +16,8 @@
     넓히면 → 시장으로 넓히면(브리핑) → 다시 내 종목으로(검색).
   · 문구는 copy_text() 한 곳에 모았다. 제목은 명사형을 기본으로 절마다 모양을 바꾸고, 서브는 합쇼체. 해요체 평서문과
     쉼표로 가른 'A, B' 제목은 쓰지 않는다. 근거와 규칙은 reports/카피라이팅과 랜딩페이지 구성 이론 총정리.md 와 노트 16–20.
-  · 그림·영상·3D 는 만들지 않는다. 들어갈 자리만 표시한다(종류 · 비율 · 한 줄 이름) — 리포트 절은 실제 리포트 화면을 찍어
-    상자 없이 두고(landing_art.py · shot()), 갱신 절은 공휴일 자료로 그린 1년 공시 시계다(cyc() · CYC_JS — 둘 다 2026-10-01 사장).
+  · 그림·영상·3D 는 만들지 않는다. 들어갈 자리만 표시한다(종류 · 비율 · 한 줄 이름) — 리포트 절과 업종 절은 실제 화면을 찍어
+    상자 없이 두고(landing_art.py · shot()), 갱신 절은 공휴일 자료로 그린 1년 공시 시계다(cyc() · CYC_JS — 셋 다 2026-10-01 사장).
     첫 화면의 행성은 그림이 아니라 data/ 로 그린 캔버스다.
   · 숫자는 전부 data/ 에서 계산한다 — 손으로 적은 숫자·날짜 없음. 스테이징·실사이트 파일은 건드리지 않는다.
 """
@@ -353,6 +353,14 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
   .shot .m2{margin-top:12%}
 }
 @media (max-width:720px){.shot{margin-top:28px} .shot .m1,.shot .m2{border-radius:14px}}
+/* 업종 절 그림 — 실제 업종 분석 화면(2026-10-01 사장 "업종 분석해준다는 걸 이야기 못하는 것 같아 … 히트맵으로 정리해놓는다는 식으로밖에
+   안 들려"). 리포트 절과 같은 옷이되, 넓은 화면은 데스크톱 화면 한 장을 본문 폭 그대로 둔다 — 제목 아래에 쌓는 절이라 오른쪽으로 잇지
+   않는다. 한 열은 리포트 절처럼 휴대폰 화면 두 장(01 업종 개요 · 05 리스크 요인) */
+.shot.full{margin:48px -48px -48px;padding:24px 48px 48px;
+  -webkit-mask-image:linear-gradient(to bottom,#000 58%,transparent 95%);mask-image:linear-gradient(to bottom,#000 58%,transparent 95%)}
+.shot.full .desk{width:auto}
+@media (max-width:820px){.shot.full{margin:40px calc(-1 * var(--pad)) -40px;padding:16px var(--pad) 40px}}
+@media (max-width:720px){.shot.full{margin-top:28px}}
 
 /* 갱신 절 그림 — 1년 공시 시계(CYC_JS 가 그린다 · 상자 없음 · 사장 2026-10-01). 바깥 원은 한 해의 길(같은 간격의 점), 안쪽 선이
    정기보고서 제출 기간. 상자는 정사각으로 자리를 미리 잡는다(그리기 전후로 밀리지 않게). 범례는 제출 기간 하나 */
@@ -421,7 +429,6 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
 .split>.slot{grid-column:7/13;grid-row:1;aspect-ratio:4/5}
 .split.rev>.tx{grid-column:8/13}
 .split.rev>.slot{grid-column:1/7}
-.stack>.slot{margin-top:80px;aspect-ratio:21/9}
 /* 태도 절 — 그림 없는 선언 한 줄은 가운데에(빈 반쪽이 그림 빠진 자리처럼 보이지 않게) */
 .solo{text-align:center} .solo .h2{margin:0 auto;max-width:900px} .solo .sub{margin-left:auto;margin-right:auto;max-width:560px}
 /* 숫자 하나 — 첫 화면 제목('증권사가 다루지 않는 종목까지')의 증거라 첫 화면 바로 다음 절(사장 2026-10-01). 제목이 숫자를 설명하고
@@ -514,7 +521,7 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
   .solo{text-align:left} .solo .h2,.solo .sub{margin-left:0}   /* 한 열에서는 빈 반쪽이 없으니 다른 절처럼 왼쪽 정렬 */
   .stat-n{margin-top:10px}
   .stat .sub{margin-top:20px}
-  .split>.slot,.stack>.slot{margin-top:44px;aspect-ratio:1/1}
+  .split>.slot{margin-top:44px;aspect-ratio:1/1}
   .slot{border-radius:16px}
   .band{padding:72px 0}
   .end .search{margin-top:36px}
@@ -547,19 +554,21 @@ def slot(kind, icon, ratio, name):
             f'<figcaption>{esc(name)}</figcaption></figure>')
 
 
-# 리포트 절 그림 — landing_art.py 가 찍는 실제 리포트 화면. 이름: (가로, 세로) — img 의 width · height(자리를 미리 잡아 밀림이 없게)
-SHOT = {"desk": (1840, 1413), "m1": (900, 1477), "m2": (900, 1477)}
+# 리포트 절 · 업종 절 그림 — landing_art.py 가 찍는 실제 화면. 이름: (가로, 세로) — img 의 width · height(자리를 미리 잡아 밀림이 없게)
+SHOT = {"report": {"desk": (1840, 1413), "m1": (900, 1477), "m2": (900, 1477)},
+        "sector": {"desk": (2112, 1312), "m1": (900, 1477), "m2": (900, 1477)}}
 
 
-def shot(label):
-    """리포트 절 그림 — 상자 없이 실제 리포트 화면만. 넓은 화면은 데스크톱 화면 한 장, 한 열(820px 이하)은 휴대폰 화면 두 장.
-    테마와 폭에 맞는 그림만 받는다(loading=lazy · display:none). 그림마다 alt 를 비우고 이름은 figure 가 갖는다"""
+def shot(kind, label, cls="shot"):
+    """실제 화면 그림 — 상자 없이 화면만. 넓은 화면은 데스크톱 화면 한 장, 한 열(820px 이하)은 휴대폰 화면 두 장.
+    테마와 폭에 맞는 그림만 받는다(loading=lazy · display:none). 그림마다 alt 를 비우고 이름은 figure 가 갖는다.
+    리포트 절(.shot)은 데스크톱 화면이 오른쪽 끝까지 이어지고, 업종 절(.shot.full)은 본문 폭 그대로다"""
     def two(n):
-        w, h = SHOT[n]
-        return "".join(f'<img class="{c}" src="img/report-{n}-{t}.webp" width="{w}" height="{h}" alt="" loading="lazy" decoding="async">'
+        w, h = SHOT[kind][n]
+        return "".join(f'<img class="{c}" src="img/{kind}-{n}-{t}.webp" width="{w}" height="{h}" alt="" loading="lazy" decoding="async">'
                        for c, t in (("lt", "light"), ("dk", "dark")))
-    return (f'<figure class="shot" role="img" aria-label="{esc(label)}">'
-            + "".join(f'<div class="scr {n}">{two(n)}</div>' for n in SHOT) + "</figure>")
+    return (f'<figure class="{cls}" role="img" aria-label="{esc(label)}">'
+            + "".join(f'<div class="scr {n}">{two(n)}</div>' for n in SHOT[kind]) + "</figure>")
 
 
 # 갱신 절 그림 — 1년 공시 시계(사장 2026-10-01: 1안 → 단순화 → 달 이름은 1월, 4월, 7월, 10월 → 거래일은 뺀다). 한 해를 원 하나로 —
@@ -722,8 +731,11 @@ def copy_text(n_rep, n_sec, brief_no, src_avg):
         "hero_link": "전체 리포트 보기",
         "brief": ("모닝브리핑", "개장 전에 읽는<br>시장 브리핑",
                   "전일 국내 증시와 간밤의 해외 시장, 주요\u00a0일정을\u00a0정리합니다. 발행 시각은 거래일 오전\u00a07시\u00a030분 전후입니다."),
-        "sectors": ("업종 분석", f"{n_sec}개 업종의 흐름",
-                    "업종마다 업황과 주요 종목을 정리합니다. 개별 기업을 산업 전체의 맥락에서 살펴볼 수 있습니다."),
+        # 업종 절 — '흐름'과 '정리합니다'는 업종 분석을 제공한다는 말로 들리지 않았다(사장 2026-10-01 "히트맵으로 정리해놓는다는 식으로밖에
+        # 안 들려"). 제목에 '분석 리포트', 서브에는 업종 화면의 실제 목차 항목(산업 구조 · 최근 동향 · 향후 전망 · 리스크 요인)
+        "sectors": ("업종 분석", f"{n_sec}개 업종의<br>분석 리포트",
+                    "업종마다 산업 구조와 최근 동향, 향후 전망, 리스크\u00a0요인을 분석합니다. 개별 기업을 산업 전체의 맥락에서 살펴볼 수 있습니다."),
+        "sectors_shot": "KOSAI 업종 분석의 실제 화면. 업종 요약과 목차, 업종 개요, 리스크 요인이 차례로 보입니다.",
         "end": "궁금한 종목의<br>리포트를 확인하세요",
         "brief_link": f"제{brief_no}호 읽기",
         "sectors_link": "전체 업종 보기",
@@ -759,7 +771,7 @@ def page():
     sec_gap = (f'<section class="sec w solo stat" id="gap"><h2 class="stat-h rv"><span class="h2">{C["gap_h"]}</span> <span class="cnt stat-n">{esc(gp)}</span></h2>'
                f'<p class="sub rv">{sents(gs)}</p><p class="src rv">{g(gsrc)}</p></section>')
     sec_report = (f'<section class="sec w" id="report"><div class="split"><div class="tx">{head_block("report")}</div>'
-                  + shot(C["report_shot"]) + '</div></section>')
+                  + shot("report", C["report_shot"]) + '</div></section>')
     sec_fresh = (f'<section class="sec w" id="fresh"><div class="split rev"><div class="tx">{head_block("fresh")}</div>'
                  + cyc(C["cyc"]) + '</div></section>')
     pts = "".join(f'<li class="rv"><h3>{g(t)}</h3><p>{sents(d)}</p></li>' for t, d in C["trust_points"])
@@ -768,7 +780,7 @@ def page():
     sec_brief = (f'<section class="band dz" id="brief"><div class="w split"><div class="tx">{head_block("brief", more(C["brief_link"]))}</div>'
                  + slot("사진", "image", "1:1", "개장 전 아침, 책상 위 휴대폰") + '</div></section>')
     sec_sectors = (f'<section class="sec w stack" id="sectors">{head_block("sectors", more(C["sectors_link"]))}'
-                   + slot("이미지", "image", "21:9 / 휴대폰 1:1", "업종 분석 화면") + '</section>')
+                   + shot("sector", C["sectors_shot"], "shot full") + '</section>')
     sec_stance = f'<section class="sec w solo">{head_block("stance")}</section>'
     sec_end = (f'<section class="end w"><h2 class="h2 rv">{C["end"]}</h2>'
                + f'<div class="rv">{search_box()}</div></section>')   # 검색창은 밑줄 transition 이 있어 감싼 상자를 올린다
@@ -813,9 +825,10 @@ def page():
 
 
 if __name__ == "__main__":
-    missing = [f"img/report-{n}-{t}.webp" for n in SHOT for t in ("light", "dark") if not os.path.exists(os.path.join(OUT, "img", f"report-{n}-{t}.webp"))]
+    missing = [f"img/{k}-{n}-{t}.webp" for k in SHOT for n in SHOT[k] for t in ("light", "dark")
+               if not os.path.exists(os.path.join(OUT, "img", f"{k}-{n}-{t}.webp"))]
     if missing:
-        sys.exit(f"리포트 절 그림이 없다 — python3 scripts/concepts/landing_art.py 를 먼저 돌린다: {missing}")
+        sys.exit(f"리포트 절 · 업종 절 그림이 없다 — python3 scripts/concepts/landing_art.py 를 먼저 돌린다: {missing}")
     os.makedirs(OUT, exist_ok=True)
     open(os.path.join(OUT, "landing.css"), "w", encoding="utf-8").write(CSS.strip() + "\n")
     html = page()
