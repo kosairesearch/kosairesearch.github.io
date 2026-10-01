@@ -38,6 +38,16 @@ ORB_SEED = 2680                                         # 첫 화면 구의 점 
 # 한국IR협의회 기업리서치센터가 해마다 2월쯤 전년 집계를 낸다 — 그때 이 넷을 고친다. 2025년: 2,674곳 중 1,573곳(뉴스핌 2026-02-11 보도)
 GAP = {"year": 2025, "none": 1573, "total": 2674, "src": "한국IR협의회 기업리서치센터"}
 
+# 스크롤 등장 — .rv 가 화면 높이 90% 선 위로 들어오면 한 번 올라온다(CSS .rv-on .rv · 애플의 시작점 't - 90vh'). 같은 순간 함께 들어온 글끼리만
+# 0.08초씩 차례를 두고(최대 0.4초), 이미 지나간 글(앵커·되돌아온 스크롤 자리)은 곧바로 보인다. 어디서든 실패하면 숨김을 풀어 글을 살린다
+RV_JS = (
+    "(function(){var r=document.documentElement;if(!r.classList.contains('rv-on'))return;"
+    "try{var io=new IntersectionObserver(function(es){var j=0;for(var k=0;k<es.length;k++){var e=es[k],t=e.target;"
+    "if(e.isIntersecting){t.style.setProperty('--d',Math.min(j++,5)*.08+'s');t.classList.add('in');io.unobserve(t)}"
+    "else if(e.boundingClientRect.top<0){t.classList.add('in');io.unobserve(t)}}},{rootMargin:'0px 0px -10% 0px'});"
+    "var rv=document.querySelectorAll('.rv');for(var k=0;k<rv.length;k++)io.observe(rv[k])}catch(x){r.classList.remove('rv-on')}})();"
+)
+
 ORB_JS = r"""(function(){
 var cv=document.getElementById('orb');if(!cv||!cv.getContext)return;
 var D=JSON.parse(document.getElementById('orbData').textContent),N=D.n,RS=null,i;
@@ -239,6 +249,15 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
   .hero-in>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
   .hero-in>.lede{animation-delay:.12s} .hero-in>.search{animation-delay:.22s} .hero-in>.alt{animation-delay:.3s}
 }
+/* 스크롤 등장 — 첫 화면 아래의 글이 아래에서 위로 조용히 올라온다(사장 2026-10-01 "애플이나 Valley AI 처럼, 화려하지 않고 과하지 않게").
+   거리는 애플(--content-offset-y-distance 24px), 빠르기는 Valley AI(0.6초 ease-out — 90%까지 0.41초)와 같다: 24px · 1초 강한
+   ease-out(90%까지 0.44초, 0.59초면 1px 안). Valley 의 50px 는 쓰지 않는다(과하지 않게). 한 번만. 한꺼번에 들어온 글끼리만
+   0.08초씩 차례로(RV_JS 가 --d 를 준다 — 혼자 들어온 글은 기다리지 않는다).
+   스크립트가 켤 때만 숨기고(html.rv-on — 스크립트가 안 돌거나 실패하면 처음부터 보인다), 움직임 줄임이면 켜지 않는다.
+   그림 자리는 움직이지 않는다 */
+.rv-on .rv{opacity:0;transform:translate3d(0,24px,0);transition:opacity 1s cubic-bezier(.2,.7,.2,1) var(--d,0s),transform 1s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
+.rv-on .rv.in{opacity:1;transform:none}
+@media print,(prefers-reduced-motion:reduce){.rv-on .rv{opacity:1;transform:none;transition:none}}
 
 /* 절 — 작은 이름표 · 큰 제목 · 짧은 서브 · 그림 */
 .sec{padding-top:var(--sec)}
@@ -495,9 +514,10 @@ def page():
     cnt = Counter(c for x in STOCKS["stocks"] for c in (x.get("categories") or []) if c != "기타")
     C = copy_text(n_rep, len(cnt), b["_no"], sources_avg())
 
-    def head_block(key, link=""):
+    def head_block(key, link=""):   # .rv — 스크롤 등장(RV_JS)
         eb, h, sub = C[key]
-        return ((f'<p class="eyebrow">{eb}</p>' if eb else "") + f'<h2 class="h2">{h}</h2><p class="sub">{sents(sub)}</p>' + link)
+        return ((f'<p class="eyebrow rv">{eb}</p>' if eb else "") + f'<h2 class="h2 rv">{h}</h2><p class="sub rv">{sents(sub)}</p>'
+                + link.replace('class="more"', 'class="more rv"', 1))
 
     num = f"{n_rep:,}"
     lede = g(C["lede"]).replace(num, f'<span class="num">{num}</span>', 1)   # 실사이트로 옮기면 stamp_counts 가 맞추는 자리
@@ -509,23 +529,25 @@ def page():
             f'<script type="application/json" id="orbData">{orb_data()}</script></header>')
     # 숫자 하나 — 첫 화면 제목의 증거라 바로 다음 절. 숫자가 그림 몫이고, 제목 목록에서도 뜻이 통하게 숨은 설명을 붙인다
     gp, gs, gsrc = C["gap"]
-    sec_gap = (f'<section class="sec w solo stat" id="gap"><h2 class="stat-n">{esc(gp)}<span class="vh">, {esc(C["gap_sr"])}</span></h2>'
-               f'<p class="sub">{sents(gs)}</p><p class="src">{g(gsrc)}</p></section>')
+    sec_gap = (f'<section class="sec w solo stat" id="gap"><h2 class="stat-n rv">{esc(gp)}<span class="vh">, {esc(C["gap_sr"])}</span></h2>'
+               f'<p class="sub rv">{sents(gs)}</p><p class="src rv">{g(gsrc)}</p></section>')
     sec_report = (f'<section class="sec w" id="report"><div class="split"><div class="tx">{head_block("report")}</div>'
                   + slot("이미지", "image", "PC 4:5 / 휴대폰 1:1", "리포트 한 편의 화면") + '</div></section>')
     sec_fresh = (f'<section class="sec w" id="fresh"><div class="split rev"><div class="tx">{head_block("fresh")}</div>'
                  + slot("이미지", "image", "PC 4:3 / 휴대폰 1:1", "공시 반영 뒤 바뀐 기준일(확대)") + '</div></section>')
-    pts = "".join(f'<li><h3>{g(t)}</h3><p>{sents(d)}</p></li>' for t, d in C["trust_points"])
-    sec_trust = (f'<section class="sec w trust"><h2 class="h2">{C["trust"][1]}</h2><ul class="proof">{pts}</ul>'
-                 + more(C["trust_link"]) + '</section>')   # 링크는 작성 방식(회사 소개) — 특정 종목 예시는 두지 않는다(사장)
+    pts = "".join(f'<li class="rv"><h3>{g(t)}</h3><p>{sents(d)}</p></li>' for t, d in C["trust_points"])
+    sec_trust = (f'<section class="sec w trust"><h2 class="h2 rv">{C["trust"][1]}</h2><ul class="proof">{pts}</ul>'
+                 + more(C["trust_link"]).replace('class="more"', 'class="more rv"', 1) + '</section>')   # 링크는 작성 방식(회사 소개) — 특정 종목 예시는 두지 않는다(사장)
     sec_brief = (f'<section class="band dz" id="brief"><div class="w split"><div class="tx">{head_block("brief", more(C["brief_link"]))}</div>'
                  + slot("사진", "image", "1:1", "개장 전 아침, 책상 위 휴대폰") + '</div></section>')
     sec_sectors = (f'<section class="sec w stack" id="sectors">{head_block("sectors", more(C["sectors_link"]))}'
                    + slot("이미지", "image", "21:9 / 휴대폰 1:1", "업종 분석 화면") + '</section>')
     sec_stance = f'<section class="sec w solo">{head_block("stance")}</section>'
-    sec_end = f'<section class="end w"><h2 class="h2">{C["end"]}</h2>{search_box()}</section>'
+    sec_end = (f'<section class="end w"><h2 class="h2 rv">{C["end"]}</h2>'
+               + f'<div class="rv">{search_box()}</div></section>')   # 검색창은 밑줄 transition 이 있어 감싼 상자를 올린다
 
     orb_js = "<script>" + ORB_JS + "</script>"
+    rv_js = "<script>" + RV_JS + "</script>"   # 다른 스크립트와 따로 — 저쪽이 실패해도 글이 숨은 채로 남지 않게
     js = ("<script>(function(){"
           "var root=document.documentElement,nav=document.getElementById('nav'),zs=[].slice.call(document.querySelectorAll('.dz')),"
           "meta=document.querySelector('meta[name=\"theme-color\"]'),tick=false;"
@@ -551,6 +573,7 @@ def page():
     # 첫 화면이 어두운 무대라 처음 색은 무대 색 — 내리면 upd() 가 페이지 색으로 바꾼다
     theme = ("<script>(function(){var t='light';try{t=localStorage.getItem('kos-theme')||'light'}catch(e){}var r=document.documentElement;"
              "r.setAttribute('data-theme',t);r.classList.add('band-top');"
+             "if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches)r.classList.add('rv-on');"
              "document.querySelector('meta[name=\"theme-color\"]').setAttribute('content',t==='dark'?'#1c1c1e':'#141414')})();</script>")
     head = ('<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
             f'<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#141414"><title>{esc(C["title"])}</title>'
@@ -558,7 +581,7 @@ def page():
             f'<meta property="og:description" content="{esc(C["og_desc"])}">'
             f'<link rel="stylesheet" href="{FONTS}/pretendard-subset.css"><link rel="stylesheet" href="landing.css">{theme}</head><body>')
     return (head + nav() + f"<main>{hero}{sec_gap}{sec_report}{sec_stance}{sec_fresh}{sec_trust}{sec_brief}{sec_sectors}{sec_end}</main>"
-            + foot() + orb_js + js + "</body></html>")
+            + foot() + rv_js + orb_js + js + "</body></html>")
 
 
 if __name__ == "__main__":
