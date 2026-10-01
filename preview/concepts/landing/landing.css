@@ -125,6 +125,12 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .stack>.slot{margin-top:80px;aspect-ratio:21/9}
 /* 태도 절 — 그림 없는 선언 한 줄은 가운데에(빈 반쪽이 그림 빠진 자리처럼 보이지 않게) */
 .solo{text-align:center} .solo .h2{margin:0 auto;max-width:900px} .solo .sub{margin-left:auto;margin-right:auto;max-width:560px}
+/* 숫자 하나 — 첫 화면 제목('증권사가 다루지 않는 종목까지')의 증거라 첫 화면 바로 다음 절(사장 2026-10-01). 숫자가 그림 몫이고,
+   바깥 통계라 출처 줄을 단다 */
+.stat-n{font:600 clamp(72px,9vw,132px)/1 var(--font);letter-spacing:-.05em}
+.stat .sub{margin-top:28px}
+.src{margin-top:16px;font:400 13px/1.6 var(--font);color:var(--ink-62)}
+.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 /* 근거 절 — 믿을 근거 셋(짧은 이름 + 한두 문장) */
 .proof{margin-top:56px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:var(--gap)}
 .proof li{padding-top:22px;border-top:1px solid var(--line)}
@@ -208,6 +214,7 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
   .end .h2{font-size:36px;line-height:1.2}
   .sub{margin-top:18px;font-size:16px}
   .solo{text-align:left} .solo .h2,.solo .sub{margin-left:0}   /* 한 열에서는 빈 반쪽이 없으니 다른 절처럼 왼쪽 정렬 */
+  .stat .sub{margin-top:20px}
   .split>.slot,.stack>.slot,#fresh .split>.slot{margin-top:44px;aspect-ratio:1/1}
   .slot{border-radius:16px}
   .band{padding:72px 0}
