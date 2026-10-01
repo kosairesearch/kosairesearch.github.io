@@ -10,7 +10,8 @@
       - 문구는 대기업 말투(끝까지 쓴 합쇼체 서브, 꾸밈 없는 사실). 첫 화면 서브에 'AI' 없음.
       - 둘째 절은 얻는 것(한 편에 담은 기업 분석)으로 열고 강세·약세 요인은 그 근거로만.
       - 특정 종목은 어디에도 없다 — 예시 링크 · 칩 · 검색창 안내의 '예: 삼성전자'까지 뺐다.
-  · 절 순서: 첫 화면 → 리포트 → 태도(가운데 선언) → 갱신 → 원칙 셋 → 모닝브리핑(어두운 띠) → 업종 → 마지막.
+  · 절 순서: 첫 화면 → 숫자 하나(증권사 리포트가 없는 상장사 — 첫 화면 제목의 증거) → 리포트 → 태도(가운데 선언) → 갱신 → 원칙 셋 →
+    모닝브리핑(어두운 띠) → 업종 → 마지막. 절마다 앞 절이 남긴 질문에 답한다(보고서 5부).
   · 문구는 copy_text() 한 곳에 모았다. 제목은 명사형을 기본으로 절마다 모양을 바꾸고, 서브는 합쇼체. 해요체 평서문과
     쉼표로 가른 'A, B' 제목은 쓰지 않는다. 근거와 규칙은 reports/카피라이팅과 랜딩페이지 구성 이론 총정리.md 와 노트 16–20.
   · 그림·영상·3D 는 만들지 않는다. 들어갈 자리만 표시한다(종류 · 비율 · 한 줄 이름). 첫 화면의 행성은 그림이 아니라
@@ -33,6 +34,9 @@ FONTS = "../../../fonts"
 BASE = datetime.date.fromisoformat(f"{now_date()[:4]}-{now_date()[4:6]}-{now_date()[6:8]}")   # 데이터의 '오늘'
 MARKETS = "코스피, 코스닥, 코넥스"                        # 가운뎃점(·)은 쓰지 않는다(사장 2026-09-27)
 ORB_SEED = 2680                                         # 첫 화면 구의 점 순서 — 고정 씨앗(빌드마다 같게)
+# 증권사 리포트가 없는 상장사 — 우리 데이터가 아니라 바깥 통계라 출처 줄을 단다(사장 2026-10-01 "첫 화면 말고 스크롤했을 때").
+# 한국IR협의회 기업리서치센터가 해마다 2월쯤 전년 집계를 낸다 — 그때 이 넷을 고친다. 2025년: 2,674곳 중 1,573곳(뉴스핌 2026-02-11 보도)
+GAP = {"year": 2025, "none": 1573, "total": 2674, "src": "한국IR협의회 기업리서치센터"}
 
 ORB_JS = r"""(function(){
 var cv=document.getElementById('orb');if(!cv||!cv.getContext)return;
@@ -252,6 +256,12 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .stack>.slot{margin-top:80px;aspect-ratio:21/9}
 /* 태도 절 — 그림 없는 선언 한 줄은 가운데에(빈 반쪽이 그림 빠진 자리처럼 보이지 않게) */
 .solo{text-align:center} .solo .h2{margin:0 auto;max-width:900px} .solo .sub{margin-left:auto;margin-right:auto;max-width:560px}
+/* 숫자 하나 — 첫 화면 제목('증권사가 다루지 않는 종목까지')의 증거라 첫 화면 바로 다음 절(사장 2026-10-01). 숫자가 그림 몫이고,
+   바깥 통계라 출처 줄을 단다 */
+.stat-n{font:600 clamp(72px,9vw,132px)/1 var(--font);letter-spacing:-.05em}
+.stat .sub{margin-top:28px}
+.src{margin-top:16px;font:400 13px/1.6 var(--font);color:var(--ink-62)}
+.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 /* 근거 절 — 믿을 근거 셋(짧은 이름 + 한두 문장) */
 .proof{margin-top:56px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:var(--gap)}
 .proof li{padding-top:22px;border-top:1px solid var(--line)}
@@ -335,6 +345,7 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
   .end .h2{font-size:36px;line-height:1.2}
   .sub{margin-top:18px;font-size:16px}
   .solo{text-align:left} .solo .h2,.solo .sub{margin-left:0}   /* 한 열에서는 빈 반쪽이 없으니 다른 절처럼 왼쪽 정렬 */
+  .stat .sub{margin-top:20px}
   .split>.slot,.stack>.slot,#fresh .split>.slot{margin-top:44px;aspect-ratio:1/1}
   .slot{border-radius:16px}
   .band{padding:72px 0}
@@ -435,11 +446,18 @@ def copy_text(n_rep, n_sec, brief_no, src_avg):
     서브는 조각 없이 끝까지 쓴 합쇼체 문장으로, 말장난·대구·'~의 몫' 같은 꾸밈 없이 사실을 담담하게. 주어가 필요하면 'KOSAI'.
     제목은 명사구 중심, 합쇼체 단언 하나(태도), 요청 하나(마지막). 가운뎃점 없음 · 기준일 없음 · 특정 종목 예시 링크 없음.
     첫 화면 서브에서 'AI가 씁니다'를 뺐다(사장 "싸구려 느낌") — AI 는 원칙 절에서 한 번, 무엇을 AI 가 하지 않는지로 말한다.
-    둘째 절은 '좋게 볼 이유와 조심할 이유'가 아니라 방문자가 얻는 것(한 편에 담은 기업 분석)으로 연다 — 강세·약세 요인은 그 근거로."""
+    둘째 절은 '좋게 볼 이유와 조심할 이유'가 아니라 방문자가 얻는 것(한 편에 담은 기업 분석)으로 연다 — 강세·약세 요인은 그 근거로.
+    첫 화면 다음에는 숫자 하나(2026-10-01 사장) — 제목 '증권사가 다루지 않는 종목까지'의 증거다."""
+    pct = f"{GAP['none'] / GAP['total'] * 100:.1f}"
+    when = "지난해" if BASE.year == GAP["year"] + 1 else f"{GAP['year']}년"   # 집계가 묵으면 '지난해'가 틀린 말이 된다
     return {
         "h1": "증권사가 다루지\u00a0않는<br>종목까지",
         "h1_plain": "증권사가 다루지 않는 종목까지",
         "lede": f"{MARKETS} {n_rep:,}개 종목의 기업\u00a0분석\u00a0리포트를 제공합니다.",
+        # '10곳 중 6곳'은 60%라 부풀린 말이 된다 — 정확한 비율로. 총수(2,674)는 첫 화면의 종목 수와 헷갈리니 출처 줄에만
+        "gap": (f"{pct}%", f"{when} 국내 상장사 {GAP['none']:,}곳은 증권사 분석 보고서가 한\u00a0건도 나오지\u00a0않았습니다.",
+                f"{GAP['src']}, {GAP['year']}년 상장사 {GAP['total']:,}곳 집계"),
+        "gap_sr": f"{when} 증권사 분석 보고서가 나오지 않은 상장사의 비율",
         "report": ("리포트", "한 편에 담은<br>기업 분석",
                    "사업 구조와 실적, 업황, 전망, 리스크를 차례로 정리합니다. 강세 요인과 약세 요인을 함께 제시해 어느\u00a0한쪽으로\u00a0치우치지\u00a0않습니다."),
         # '목표주가도 없습니다'는 틀린 말 — 새 형식 2,563편 중 616편이 증권사 목표주가를 출처와 함께 인용한다. KOSAI 가 제시하지 않을 뿐('자체')
@@ -488,6 +506,10 @@ def page():
             + f'<div class="alt">{more(C["hero_link"])}</div></div>'
             f'<div class="orb-box" aria-hidden="true"><canvas class="orb" id="orb"></canvas></div>'
             f'<script type="application/json" id="orbData">{orb_data()}</script></header>')
+    # 숫자 하나 — 첫 화면 제목의 증거라 바로 다음 절. 숫자가 그림 몫이고, 제목 목록에서도 뜻이 통하게 숨은 설명을 붙인다
+    gp, gs, gsrc = C["gap"]
+    sec_gap = (f'<section class="sec w solo stat" id="gap"><h2 class="stat-n">{esc(gp)}<span class="vh">, {esc(C["gap_sr"])}</span></h2>'
+               f'<p class="sub">{sents(gs)}</p><p class="src">{g(gsrc)}</p></section>')
     sec_report = (f'<section class="sec w" id="report"><div class="split"><div class="tx">{head_block("report")}</div>'
                   + slot("이미지", "image", "PC 4:5 / 휴대폰 1:1", "리포트 한 편의 화면") + '</div></section>')
     sec_fresh = (f'<section class="sec w" id="fresh"><div class="split rev"><div class="tx">{head_block("fresh")}</div>'
@@ -534,7 +556,7 @@ def page():
             f'<meta name="description" content="{esc(C["desc"])}"><meta property="og:title" content="{esc(C["og_title"])}">'
             f'<meta property="og:description" content="{esc(C["og_desc"])}">'
             f'<link rel="stylesheet" href="{FONTS}/pretendard-subset.css"><link rel="stylesheet" href="landing.css">{theme}</head><body>')
-    return (head + nav() + f"<main>{hero}{sec_report}{sec_stance}{sec_fresh}{sec_trust}{sec_brief}{sec_sectors}{sec_end}</main>"
+    return (head + nav() + f"<main>{hero}{sec_gap}{sec_report}{sec_stance}{sec_fresh}{sec_trust}{sec_brief}{sec_sectors}{sec_end}</main>"
             + foot() + orb_js + js + "</body></html>")
 
 
