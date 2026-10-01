@@ -18,6 +18,10 @@
     분석 > 바이오·제약 · 업종 요약)와 목차 · 01 업종 개요가 보이는 데스크톱 화면 한 장, 한 열은 휴대폰 화면 두 장(01 업종 개요 ·
     05 리스크 요인). 머리 아래 수치 줄(시가총액 합계 · 시장 비중 · 종목 수 · 평균 등락률)과 기준 줄은 매일 바뀌는 값이라 가리고
     찍는다 — 리포트 절이 종목 머리를 덜어 낸 것과 같은 이치. 업종 분석 글(data/sectors.js)이 새로 쓰이면 다시 찍는다.
+  · 그림은 글줄 한가운데서 끝나지 않는다(사장 2026-10-01 "모바일에서 업종 절 왼쪽 이미지 아래 보면 글이 잘려 있어") — 아래 끝에 걸친
+    줄은 통째로 빼고 그 아래는 바탕색으로 덮는다(LAST_LINE). 휴대폰 화면은 틀에 꼭 맞는 크기라 끊을 자리(다음 절)도 자르지 않고 덮는다.
+    왼쪽 휴대폰 화면은 오른쪽보다 화면 폭의 25%만큼 길게 찍는다 — 랜딩에서 오른쪽 화면이 그만큼 내려서고 두 틀의 아래 끝이 같아서,
+    같은 길이로 찍었을 때는 왼쪽 틀 아래가 비고 그 위에서 글줄이 잘려 보였다.
   · Playwright(크로미움)가 있어야 돈다. 랜딩 빌드(landing.py)는 그림 파일만 쓴다.
 """
 import functools
@@ -39,21 +43,34 @@ TK = "066130"
 SECTOR = "바이오·제약"
 OUT = os.path.join(ROOT, "preview", "concepts", "landing", "img")
 NAV = 60   # 머리 줄 높이 — 찍은 뒤 덜어 낸다
+M1 = 700 + 390 * .25   # 왼쪽 휴대폰 화면의 아래 끝 — 오른쪽(700)보다 화면 폭의 25% 길다. 랜딩의 .m2{margin-top:12%} ÷ 화면 폭 48%
 # 이름: (화면 폭, 높이, 배율, 머리 아래 올 절(None 이면 맨 위 그대로), 그 절의 화면 위 거리, 자를 범위(화면 좌표 x0 · y0 · x1 · y1),
-#        저장 폭, 켜져 있어야 할 목차, 아래를 끊을 자리(선택자와 그 위쪽 여유 — 자를 범위의 y1 보다 위면 거기서 끊는다, None 이면 y1 그대로))
+#        저장 폭, 켜져 있어야 할 목차, 아래를 끊을 자리(선택자와 그 위쪽 여유 — 자를 범위의 y1 보다 위면 거기서 끊는다, None 이면 y1 그대로.
+#        데스크톱 화면은 거기서 자르고, 휴대폰 화면은 크기를 지키려고 그 아래를 바탕색으로 덮는다))
 SHOTS = {
     "desk": (1280, 1000, 2, "#s01", 92, (56, NAV, 1280, 1000), 1840, "01", None),
-    "m1": (390, 844, 3, "#s01", 112, (0, NAV, 390, 700), 900, "01", None),
-    "m2": (390, 844, 3, "#s03", 112, (0, NAV, 390, 700), 900, "03", None),
+    "m1": (390, 844, 3, "#s01", 112, (0, NAV, 390, M1), 900, "01", ("#s02", 8)),
+    "m2": (390, 844, 3, "#s03", 112, (0, NAV, 390, 700), 900, "03", ("#s04", 8)),
 }
 # 업종 화면 — 데스크톱은 본문 폭(1056px)에 16px 씩 여유를 둔 범위를 2112px(2배)로 담는다. 아래는 다음 절(02) 제목 8px 위, 01 업종 개요가
 # 끝난 여백에서 끊는다 — 제목 윗부분이 그림 끝에 흐리게 비쳤다(사장 2026-10-01 "글씨가 살짝 보이는데 저거 거슬리네")
 SECTOR_SHOTS = {
     "desk": (1280, 900, 2, None, 0, (96, 84, 1184, 760), 2112, "01", ("#s02", 8)),
-    "m1": (390, 844, 3, None, 0, (0, NAV, 390, 700), 900, "01", None),
-    "m2": (390, 844, 3, "#s05", 112, (0, NAV, 390, 700), 900, "05", None),
+    "m1": (390, 844, 3, None, 0, (0, NAV, 390, M1), 900, "01", ("#s02", 8)),
+    "m2": (390, 844, 3, "#s05", 112, (0, NAV, 390, 700), 900, "05", ("#s06", 8)),
 }
 HIDE = ".stats,.stats-note{display:none!important}"   # 업종 화면의 매일 바뀌는 수치 줄
+
+
+# 끊는 선(y)에 글줄이 걸쳐 있으면 그 줄 위로 올린다 — 올린 자리에 또 걸치면 거듭. 그 위 줄이 선에 6px 안으로 붙어 있어도 뺀다(가장자리에
+# 붙은 줄은 잘린 것처럼 보인다 · 6px 은 본문 줄 사이 틈보다 작아 한 줄만 빠진다). 글줄은 글자 칸(Range 의 줄 상자)으로 잰다
+LAST_LINE = """([x0,x1,y])=>{const rows=[];const tw=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+  for(let n;(n=tw.nextNode());){if(!n.textContent.trim())continue;const r=document.createRange();r.selectNodeContents(n);
+    for(const b of r.getClientRects())if(b.width&&b.height&&b.right>x0&&b.left<x1)rows.push([b.top,b.bottom])}
+  for(const t of document.querySelectorAll('svg text')){const b=t.getBoundingClientRect();if(b.width&&b.right>x0&&b.left<x1)rows.push([b.top,b.bottom])}
+  const up=()=>{for(let moved=true;moved;){moved=false;for(const [t,b] of rows)if(t<y&&b>y){y=t;moved=true}}};
+  up();const near=rows.filter(([t,b])=>b<=y&&b>y-6);if(near.length){y=Math.min(...near.map(r=>r[0]));up()}
+  return y}"""
 
 
 class Quiet(SimpleHTTPRequestHandler):
@@ -63,7 +80,7 @@ class Quiet(SimpleHTTPRequestHandler):
 
 def take(br, url, shots, prefix, route=None, css=None):
     """shots 대로 라이트 · 다크를 찍어 prefix-{이름}-{테마}.webp 로 저장한다. 목차 표시가 맞지 않으면 멈춘다"""
-    from PIL import Image
+    from PIL import Image, ImageDraw
     for name, (w, h, dpr, sel, off, box, out_w, want, cut) in shots.items():
         for theme in ("light", "dark"):
             phone = w < 500
@@ -86,14 +103,24 @@ def take(br, url, shots, prefix, route=None, css=None):
                 sys.exit(f"{prefix} {name} {theme}: 목차 표시가 {want} 가 아니다 — {on}")
             im = Image.open(io.BytesIO(pg.screenshot())).convert("RGB")
             x0, y0, x1, y1 = box
+            stop = y1
             if cut:
-                y1 = min(y1, round(pg.evaluate("s=>document.querySelector(s).getBoundingClientRect().top", cut[0])) - cut[1])
+                stop = min(y1, round(pg.evaluate("s=>{const e=document.querySelector(s);return e?e.getBoundingClientRect().top:1e9}",
+                                                 cut[0])) - cut[1])
+                if not phone:
+                    y1 = stop
+            stop = pg.evaluate(LAST_LINE, [x0, x1, stop])   # 아래 끝에 걸친 글줄은 통째로 뺀다
             ctx.close()
             im = im.crop((x0 * dpr, y0 * dpr, x1 * dpr, y1 * dpr))
+            fy = round((stop - y0) * dpr)
+            if fy < im.height:   # 뺀 줄부터 아래를 바탕색(그 위 한 줄에서 가장 많은 색)으로 덮는다 — 그림 크기는 그대로
+                bg = max(im.crop((0, fy - 1, im.width, fy)).getcolors(im.width))[1]
+                ImageDraw.Draw(im).rectangle((0, fy, im.width, im.height), fill=bg)
             im = im.resize((out_w, round(im.height * out_w / im.width)), Image.LANCZOS)
             path = os.path.join(OUT, f"{prefix}-{name}-{theme}.webp")
             im.save(path, "WEBP", quality=84, method=6)
-            print(f"{os.path.relpath(path, ROOT)} {im.size[0]}×{im.size[1]} {os.path.getsize(path) // 1024}KB")
+            print(f"{os.path.relpath(path, ROOT)} {im.size[0]}×{im.size[1]} {os.path.getsize(path) // 1024}KB"
+                  + (f" · 아래 {round(y1 - stop)}px 덮음" if fy < round((y1 - y0) * dpr) else ""))
 
 
 def report(br, base):
