@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-10-02 05:14",
+  "lastUpdated": "2026-10-02 05:23",
   "dataDate": "20261001",
   "stocks": [
     {
@@ -11307,7 +11307,7 @@ window.KOS_LIVE_DATA = {
       "name": "브릴스",
       "name_en": "BRILS Corp.",
       "market": "코스닥",
-      "sector": "기계·장비",
+      "sector": "바이오·제약",
       "price": 30950,
       "change": 58.72,
       "volume": 17669571,
@@ -11316,7 +11316,7 @@ window.KOS_LIVE_DATA = {
       "shares": 11363649,
       "induty_code": "29299",
       "categories": [
-        "기계·장비"
+        "바이오·제약"
       ],
       "rank": 628
     },
