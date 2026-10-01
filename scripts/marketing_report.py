@@ -359,14 +359,22 @@ def report_readers(week):
 
 def event_users(week, name):
     """그 일을 한 사람 수. 기록에 사람 수가 없으면(옛 기록) 건수를 (n, "건")
-    으로, 있으면 (n, "명") 으로 돌려준다. 아예 없으면 None."""
-    for e in (week or {}).get("events") or []:
+    으로, 있으면 (n, "명") 으로 돌려준다.
+
+    이벤트 목록 자체가 없으면(얕게 받은 옛 주) None — 숫자판에 '아직 못 봄'.
+    목록은 받았는데 그 이름이 없으면 (0, "명") — 그 주에 아무도 안 한 것이다.
+    GA4 는 한 건도 없는 이벤트를 줄로 주지 않아서, 둘을 섞으면 9/21 주처럼
+    '한 건도 없다' 가 '못 잰다' 로 찍힌다. 0 은 0 이라고 말해야 한다."""
+    evs = (week or {}).get("events")
+    if not isinstance(evs, list):
+        return None
+    for e in evs:
         if e.get("eventName") == name:
             if isinstance(e.get("totalUsers"), (int, float)):
                 return e["totalUsers"], "명"
             if isinstance(e.get("eventCount"), (int, float)):
                 return e["eventCount"], "건"
-    return None
+    return 0, "명"
 
 
 def funnel(week):
