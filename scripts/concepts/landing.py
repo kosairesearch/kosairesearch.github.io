@@ -6,7 +6,7 @@
     멤버십은 머리·꼬리 메뉴에서도 뺐다(가격 문구는 유료화 법정 절차 뒤 — CLAUDE.md).
   · 5판(같은 날 사장 "AI가 씁니다는 싸구려 · 이름 띠는 구리다 · 판단은 읽는 분의 몫도 구리다 · 대기업 말투로 ·
     강세·약세를 왜 바로 보여 주나 · 플리토 출처는 왜 · 특정 종목 예시는 왜"):
-      - 첫 화면은 이름 띠 대신 행성 하나 — 점 하나가 리포트 있는 종목 하나(2,680개), 뒤에서 올라오는 빛에 윤곽이 드러난다.
+      - 첫 화면은 이름 띠 대신 행성 하나 — 뒤에서 올라오는 빛에 윤곽이 드러난다(점의 자리와 수는 ORB_JS 의 grid).
       - 문구는 대기업 말투(끝까지 쓴 합쇼체 서브, 꾸밈 없는 사실). 첫 화면 서브에 'AI' 없음.
       - 둘째 절은 얻는 것(한 편에 담은 기업 분석)으로 열고 강세·약세 요인은 그 근거로만.
       - 특정 종목은 어디에도 없다 — 예시 링크 · 칩 · 검색창 안내의 '예: 삼성전자'까지 뺐다.
@@ -44,18 +44,25 @@ var ctx=cv.getContext('2d'),P=null,NP=0,sp=document.createElement('canvas');sp.w
 var sx=sp.getContext('2d'),g=sx.createRadialGradient(16,16,0,16,16,16);
 g.addColorStop(0,'rgba(248,247,244,1)');g.addColorStop(.45,'rgba(248,247,244,.85)');g.addColorStop(1,'rgba(248,247,244,0)');sx.fillStyle=g;sx.fillRect(0,0,32,32);
 var G=document.createElement('canvas'),gx=G.getContext('2d');
-var root=document.documentElement,W=0,H=0,dpr=1,rad=0,cx=0,cy=0,SZ=1,band='#141414',ang=.9,last=0,t0=0,on=false,rz=0,
+var root=document.documentElement,W=0,H=0,dpr=1,rad=0,cx=0,cy=0,SZ=1,PD=47,band='#141414',ang=.9,last=0,t0=0,on=false,rz=0,
     red=matchMedia('(prefers-reduced-motion: reduce)').matches,pt=0,pv=0;
 function col(){band=getComputedStyle(root).getPropertyValue('--band').trim()||'#141414'}
 function rgba(hx,a){var h=hx.replace('#','');if(h.length===3)h=h.replace(/(.)/g,'$1$1');var n=parseInt(h,16);return 'rgba('+(n>>16&255)+','+(n>>8&255)+','+(n&255)+','+a+')'}
 /* 규칙적인 점 — 지구본의 경위선처럼 경선 M개와 위선 L개가 만나는 자리마다 점 하나. 경선은 360°를 같은 간격으로, 위선은
    화면에 보이는 위도 띠(lo~hi)를 같은 간격으로 나눈다. 경선이 극 쪽으로 모이고 위선이 둥글게 휘어 구의 입체가 드러난다.
-   칸이 띠 가운데 위도에서 정사각이 되게 M 을 정하고, M×L 이 종목 수(N)에 가깝게 L 을 정한다(사장 2026-09-27 "규칙적으로 잘
-   표현해야 구의 입체성이 드러난다") */
+   점의 수는 종목 수가 아니라 간격에서 나온다(사장 2026-10-01 "점 수를 종목 수만큼 넣을 필요는 없어 … 너무 촘촘해 … 점들 사이의
+   간격이 완벽한 비율로"). 첫 화면에서 눈이 머무는 빛 띠의 가운데(정면에서 60° 기운 곳, z=.5)에서 이웃한 점이 가로·세로 모두
+   시각도 0.9° 떨어지게 M 과 L 을 고른다.
+   · 0.9° — 점 사이가 약 1°보다 좁으면 눈은 점을 하나하나 보지 않고 결(texture)로 뭉쳐 본다. 경계는 점 지름 0.25°에서 0.96°,
+     0.58°에서 1.05°로 점이 작을수록 조금 좁다(Anobile 외 2015, J Vis 15(5):4). 여기 점은 지름 약 0.05°라 직선으로 늘려 잡아 0.9°.
+   · 가로=세로 — 두 방향 간격이 1.5배 넘게 벌어지면 가까운 쪽으로 줄이 져 점이 아니라 선으로 읽힌다(Kubovy 외 1998, 근접성의 법칙).
+     빛 띠에서 아래로 내려오면 간격이 조금씩 넓어지고 윤곽 쪽은 좁아진다 — 곡면이 멀어지며 결이 촘촘해지는 것(결의 기울기)이
+     구의 입체를 만드니 그대로 둔다.
+   · 각도를 픽셀로: 1° = PC 47px(CSS 기준 픽셀이 팔 길이에서 0.0213°) · 휴대폰 34px(웹을 볼 때 눈과 화면 32cm, Bababekova 외 2011) */
 function grid(lo,hi){
-  var mid=(lo+hi)/2,band=hi-lo,M=Math.max(24,Math.round(Math.sqrt(N*2*Math.PI*Math.cos(mid)/band))),L=Math.max(4,Math.round(N/M)),k,j,n=0;
+  var band=hi-lo,gs=.9*PD,M=Math.max(24,Math.round(2*Math.PI*rad*Math.cos(Math.PI/3+TL)/gs)),L=Math.max(4,Math.round(band*rad*.5/gs)),k,j,n=0;
   NP=M*L;P=new Float32Array(NP*3);cv.setAttribute('data-grid',M+'x'+L);
-  RS=new Uint8Array(NP);D.r.forEach(function(r){RS[r%NP]=1});
+  RS=new Uint8Array(NP);D.r.slice(0,Math.round(NP*D.r.length/N)).forEach(function(r){RS[r%NP]=1});
   for(k=0;k<L;k++){var ph=lo+(k+.5)*band/L,cp=Math.cos(ph),s1=Math.sin(ph);
     for(j=0;j<M;j++,n++){var th=2*Math.PI*j/M;P[n*3]=cp*Math.cos(th);P[n*3+1]=s1;P[n*3+2]=cp*Math.sin(th)}}
 }
@@ -82,7 +89,7 @@ function light(){
   gx.setTransform(1,0,0,1,0,0);gx.drawImage(R,0,0);
 }
 /* 한 장 — 빛을 깔고 점을 찍는다. 점은 가장자리에 가까울수록 빛 속으로 사라지고(경계를 만들지 않는다), 윤곽 쪽과 위쪽이 조금 더 밝다.
-   최근 14일 안에 새로 쓴 리포트의 점은 천천히 밝아졌다 어두워진다 */
+   최근 14일 안에 새로 쓴 리포트의 비율만큼 점이 천천히 밝아졌다 어두워진다 */
 function draw(t){
   if(!t0)t0=t;var e=red?1:Math.min(1,(t-t0)/1800);e=1-Math.pow(1-e,3);
   var oy=(1-e)*50,c=cy+oy;
@@ -101,7 +108,7 @@ function draw(t){
 function fit(){
   var bx=cv.getBoundingClientRect(),V=cv.parentNode.getBoundingClientRect().height;dpr=Math.min(window.devicePixelRatio||1,2);
   W=bx.width;H=bx.height;cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);var EX=H-V,T;
-  if(W>820){rad=Math.min(W*.64,1240);T=100;SZ=1.2}else{rad=W*1.4;T=64;SZ=1.05}
+  if(W>820){rad=Math.min(W*.64,1240);T=100;SZ=1.2;PD=47}else{rad=W*1.4;T=64;SZ=1.05;PD=34}
   cx=W/2;cy=EX+T+rad;
   /* 보이는 위도 — 캔버스 아래쪽(92%)에서 보이는 가장 낮은 위도부터, 꼭대기 너머로 넘어가는 위도까지 */
   var vmin=Math.max(-1,Math.min(1,(cy-H*.92)/rad));
@@ -217,8 +224,8 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .hero .btn-ink{background:var(--band-ink);color:var(--band)}
 .hero .alt{margin-top:8px}
 .hero .more{color:var(--band-ink)}
-/* 행성 — 점 하나가 리포트가 있는 종목 하나(2,680개). 크기는 시가총액, 최근 14일에 새로 쓴 리포트는 천천히 밝아진다.
-   뒤에서 올라오는 빛에 윤곽만 밝게 드러나는 행성. 캔버스는 글 뒤로 --orb-x 만큼 올라가 빛이 잘리지 않게 번진다 */
+/* 행성 — 경위선 격자의 점(ORB_JS). 뒤에서 올라오는 빛에 윤곽만 밝게 드러나는 행성.
+   캔버스는 글 뒤로 --orb-x 만큼 올라가 빛이 잘리지 않게 번진다 */
 .orb-box{position:relative;margin-top:auto;height:var(--orb-v);pointer-events:none}
 .orb{position:absolute;left:0;right:0;bottom:0;z-index:-1;display:block;width:100%;height:calc(100% + var(--orb-x));
   -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 16%,#000 66%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0,#000 16%,#000 66%,transparent 100%)}
@@ -392,9 +399,10 @@ def search_box(ph="종목명 또는 종목코드"):
 
 
 def orb_data():
-    """첫 화면의 행성 — 점의 수는 리포트가 있는 종목 수(n)에 맞춘다. 점은 모두 같은 크기로 경위선 격자의 교차점에 놓인다(ORB_JS 의 grid —
-    경선 × 위선 = n 에 가깝게).
-    최근 14일 안에 새로 쓴 리포트의 점(r)은 천천히 밝아졌다 어두워진다. 종목 순서는 고정 씨앗으로 섞어 빌드마다 같다.
+    """첫 화면의 행성 — 점은 모두 같은 크기로 경위선 격자의 교차점에 놓이고, 점의 수는 종목 수가 아니라 간격에서 나온다(ORB_JS 의
+    grid — 눈에 보이는 간격 0.9°. 사장 2026-10-01 "점 수를 종목 수만큼 넣을 필요는 없어"). 여기서 넘기는 것은 반짝임의 몫뿐이다 —
+    최근 14일 안에 새로 쓴 리포트(r)가 전체 종목(n)에서 차지하는 비율만큼 점이 천천히 밝아졌다 어두워진다. 종목 순서는 고정 씨앗으로
+    섞어 빌드마다 같다.
     5판 뒤 구 다듬기(사장 2026-09-27 "점이 불규칙하게 위치해 있어서 규칙적으로") — 피보나치 배치와 시가총액 크기를 버렸다."""
     import json
     import random
