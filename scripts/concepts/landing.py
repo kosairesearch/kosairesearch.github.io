@@ -166,11 +166,11 @@ document.addEventListener('visibilitychange',function(){go(!document.hidden&&cv.
 
 # 갱신 절 그림 — 1년 공시 시계(cyc() 가 자리와 자료를 두고 여기서 그린다). 오늘은 방문자 화면이 한국 시간(UTC+9, 서머타임 없음)으로
 # 정하므로 1월 1일 0시가 지나면 저절로 다음 해 시계가 된다. 페이지를 연 채 자정을 넘겨도 다시 그린다(다음 자정에 맞춘 타이머 · 탭으로
-# 돌아올 때). 그해 자료가 없으면(페이지를 한 해 넘게 다시 만들지 않았을 때) 가장 가까운 해를 오늘 표시와 기한 날짜 없이 그린다.
+# 돌아올 때). 그해 자료가 없으면(페이지를 다섯 해 넘게 다시 만들지 않았을 때) 가장 가까운 해를 오늘 표시와 기한 날짜 없이 그린다.
 # 크기는 상자 폭에서 나온다(420px 아래는 작은 판). 색은 글자색 하나의 농도뿐이라 테마를 바꿔도 다시 그리지 않는다. 움직이지 않는다
 CYC_JS = r"""(function(){
 var fg=document.getElementById('cyc'),box=document.getElementById('cycBox'),el=document.getElementById('cycData');if(!fg||!box||!el)return;
-var A=JSON.parse(el.textContent),Y=A.years,T=A.t,ks=Object.keys(Y).sort(),D=null,ti=-1,day='',num=document.getElementById('cycN');
+var A=JSON.parse(el.textContent),Y=A.years,T=A.t,ks=Object.keys(Y).sort(),D=null,ti=-1,day='';
 function fill(s,o){return s.replace(/\{(\w+)\}/g,function(m,k){return k in o?o[k]:m})}
 function pick(){var k=new Date(Date.now()+324e5),y=k.getUTCFullYear(),s=String(y),c;
   if(Y[s]){D=Y[s];ti=Math.round((Date.UTC(y,k.getUTCMonth(),k.getUTCDate())-Date.UTC(y,0,1))/864e5)}
@@ -185,10 +185,12 @@ function draw(){
   var sm=S<420,cx=S/2,cy=S/2,R=S/2-(sm?22:28),rw=R*.8,h='',i,k,p,q,an=0,nx=-1;
   function a(d){return d/D.n*2*Math.PI-Math.PI/2}
   function px(r,t){return [cx+r*Math.cos(t),cy+r*Math.sin(t)]}
-  /* 거래일 — 하루에 점 하나(첫 화면 행성의 점과 같은 말투). 지난 날은 진하게, 남은 날은 옅게 */
-  var dr=sm?.95:1.15,past='',fut='';
-  for(i=0;i<D.n;i++){if(D.bits.charAt(i)!=='1')continue;p=px(R,a(i+.5));
-    var c='<circle cx="'+f(p[0])+'" cy="'+f(p[1])+'" r="'+dr+'"/>';if(ti>=0&&i<ti)past+=c;else fut+=c}
+  /* 바깥 원 — 한 해의 길. 같은 간격의 점이고 자료가 아니다(거래일을 그렸다가 뺐다 — 사장 2026-10-01 "필요한 정보도 아닌데").
+     점의 말투는 첫 화면 행성과 같다. 간격은 컴퓨터 8px · 휴대폰 6px(어느 쪽이든 160개 안팎) — 더 좁히면 점이 아니라 점선으로 읽힌다.
+     오늘까지는 진하게, 남은 날 쪽은 옅게 */
+  var dr=sm?.95:1.15,N=Math.round(2*Math.PI*R/(sm?6:8)),past='',fut='';
+  for(i=0;i<N;i++){var u=(i+.5)/N;p=px(R,u*2*Math.PI-Math.PI/2);
+    var c='<circle cx="'+f(p[0])+'" cy="'+f(p[1])+'" r="'+dr+'"/>';if(ti>=0&&u*D.n<ti+.5)past+=c;else fut+=c}
   h+='<g fill="currentColor" fill-opacity=".72">'+past+'</g><g fill="currentColor" fill-opacity=".22">'+fut+'</g>';
   /* 달 이름 — 분기 첫 달 넷만. 제출 기간이 모두 이 달 1일에 시작한다(사장 2026-10-01 — 1월, 4월, 7월, 10월) */
   var MS=[0,31,59,90,120,151,181,212,243,273,304,334],lp=D.n===366?1:0;
@@ -211,9 +213,8 @@ function draw(){
   h+='<text x="'+f(cx)+'" y="'+f(cy)+'" font-size="'+(sm?22:30)+'" font-weight="400" text-anchor="middle" dominant-baseline="central" letter-spacing="-.02em">'+D.y+'</text>';
   box.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 '+S+' '+S+'" aria-hidden="true">'+h+'</svg>';
   try{fit(box.firstChild,cx,cy,R,an,sm)}catch(e){}
-  /* 범례의 거래일 수와 읽는 프로그램의 설명도 그해 것으로 */
-  if(num)num.textContent=fill(T.lg,{n:D.trading});
-  fg.setAttribute('aria-label',fill(T.label,{y:D.y,n:D.trading})+(nx>=0?' '+fill(T.next,{w:D.win[nx][0],m:D.win[nx][3],d:D.win[nx][4]}):''))
+  /* 읽는 프로그램의 설명도 그해 것으로 */
+  fg.setAttribute('aria-label',fill(T.label,{y:D.y})+(nx>=0?' '+fill(T.next,{w:D.win[nx][0],m:D.win[nx][3],d:D.win[nx][4]}):''))
 }
 /* 자리 다듬기 — 그린 뒤 글자의 실제 크기를 재어, 다가오는 기한의 글(.n1 .n2)과 '오늘'(.td)이 다른 글자, 점, 선과 닿으면 닿지 않는
    가장 가까운 자리로 옮긴다. 넓은 화면에서는 처음 자리 그대로이고, 작은 휴대폰에서 주로 움직인다(두 해 모든 날 × 폭 9가지로 잼) */
@@ -353,9 +354,8 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
 }
 @media (max-width:720px){.shot{margin-top:28px} .shot .m1,.shot .m2{border-radius:14px}}
 
-/* 갱신 절 그림 — 1년 공시 시계(CYC_JS 가 공휴일 자료로 그린다 · 상자 없음 · 사장 2026-10-01). 바깥 원의 점 하나가 거래일 하루,
-   안쪽 선이 정기보고서 제출 기간. 상자는 정사각으로 자리를 미리 잡는다(그리기 전후로 밀리지 않게). 범례 항목 안의 글은 한 덩어리로
-   둔다(.cyc-lg>span 이 inline-flex 라 글이 나뉘면 사이가 벌어진다) */
+/* 갱신 절 그림 — 1년 공시 시계(CYC_JS 가 그린다 · 상자 없음 · 사장 2026-10-01). 바깥 원은 한 해의 길(같은 간격의 점), 안쪽 선이
+   정기보고서 제출 기간. 상자는 정사각으로 자리를 미리 잡는다(그리기 전후로 밀리지 않게). 범례는 제출 기간 하나 */
 .cyc{grid-column:1/7;grid-row:1;display:flex;flex-direction:column;align-items:center;color:var(--ink)}
 .cyc-box{width:min(100%,460px);aspect-ratio:1/1}
 .cyc-box svg{display:block;width:100%;height:100%;overflow:visible}
@@ -364,7 +364,6 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
 .cyc-lg{margin-top:18px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 26px;font:500 13px/1.4 var(--font)}
 .cyc-lg>span{display:inline-flex;align-items:center;gap:9px}
 .cyc-lg em{font-style:normal;font-weight:400;color:var(--ink-62);margin-left:6px}
-.cyc-lg .g-tk{width:5px;height:5px;border-radius:50%;background:currentColor;opacity:.72}
 .cyc-lg .g-ar{position:relative;width:18px;height:2px;background:currentColor}
 .cyc-lg .g-ar::after{content:"";position:absolute;right:-3px;top:-2.5px;width:7px;height:7px;border-radius:50%;background:currentColor}
 @media (max-width:820px){.cyc{margin-top:48px} .cyc-box{width:min(100%,420px)}}
@@ -562,27 +561,26 @@ def shot(label):
             + "".join(f'<div class="scr {n}">{two(n)}</div>' for n in SHOT) + "</figure>")
 
 
-# 갱신 절 그림 — 1년 공시 시계(사장 2026-10-01: 1안 → 단순화 → 달 이름은 1월, 4월, 7월, 10월). 한 해를 원 하나로 — 바깥 원의 점 하나가
-# 거래일 하루, 안쪽 선이 12월 결산 법인의 정기보고서 제출 기간이다. 제출 기한은 사업연도가 끝난 뒤 90일(사업보고서), 분기와 반기가 끝난 뒤
-# 45일이고(자본시장법 제159조 · 제160조), 마지막 날이 토요일 · 공휴일이면 다음 날이다(민법 제161조). 날로 세므로 윤년에는 사업보고서 기한이
-# 3월 30일이다(2020년이 그랬다 — 서울신문 2020-02-27). 거래일은 브리핑의 개장 판정(market_data.open_today)과 같은 규칙 — 공휴일 패키지에
-# 근로자의 날과 연말 휴장일을 더한다. 근로자의 날과 연말 휴장일은 기한 계산의 공휴일이 아니다
+# 갱신 절 그림 — 1년 공시 시계(사장 2026-10-01: 1안 → 단순화 → 달 이름은 1월, 4월, 7월, 10월 → 거래일은 뺀다). 한 해를 원 하나로 —
+# 바깥 원은 한 해의 길, 안쪽 선이 12월 결산 법인의 정기보고서 제출 기간이다. 제출 기한은 사업연도가 끝난 뒤 90일(사업보고서), 분기와 반기가
+# 끝난 뒤 45일이고(자본시장법 제159조 · 제160조), 마지막 날이 토요일 · 공휴일이면 다음 날이다(민법 제161조). 날로 세므로 윤년에는 사업보고서
+# 기한이 3월 30일이다(2020년이 그랬다 — 서울신문 2020-02-27). 공휴일은 브리핑의 개장 판정(market_data.open_today)과 같은 공휴일 패키지.
+# 처음에는 바깥 원에 거래일(점 하나가 하루)을 그렸다 — 임시공휴일이 지정될 때마다 다시 만들어야 맞아서 뺐다(사장 "매일 셀 수도 없고").
+# 이제 공휴일이 닿는 곳은 기한 넷이 토요일 · 공휴일과 겹쳐 하루씩 밀리는 자리뿐이다
 CYC_DUE = ((12, 31, -1, 90), (3, 31, 0, 45), (6, 30, 0, 45), (9, 30, 0, 45))   # 기간 끝(월, 일, 해 차이)과 그 뒤 날 수 — 이름은 copy_text 의 cyc.wins 순서
 
 
 def cyc_data(wins):
-    """공시 시계의 자료 — 기준 해(데이터의 오늘)와 그다음 해. 해마다 날 수(n), 날짜별 개장 여부(bits — '1' 이 거래일), 거래일 수(trading),
-    제출 기간 [이름, 시작 날 번호, 기한 날 번호, 기한 월, 기한 일](날 번호는 1월 1일이 0). 다음 해까지 담아 두므로 1월 1일에 저절로
-    넘어간다. 그 뒤 해는 담지 않는다 — 선거일 같은 공휴일이 아직 확정되지 않았을 수 있다. 페이지를 다시 만들면 기준 해가 데이터의
-    오늘을 따라가고, 그사이 지정된 임시공휴일도 들어간다."""
+    """공시 시계의 자료 — 기준 해(데이터의 오늘)부터 다섯 해. 해마다 날 수(n)와 제출 기간 [이름, 시작 날 번호, 기한 날 번호, 기한 월,
+    기한 일](날 번호는 1월 1일이 0). 다섯 해를 담아 두므로 1월 1일마다 저절로 넘어가고, 페이지를 다시 만들면 기준 해가 데이터의 오늘을
+    따라간다. 기한이 공휴일에 닿아 밀리는 경우만 공휴일 자료를 쓴다 — 기한 당일이 나중에 임시공휴일로 지정되면(2015년 8월 14일,
+    그해 반기보고서 기한일) 다시 만들어야 하루 밀린 날짜가 들어간다."""
     import holidays as H
     out = {}
-    for y in (BASE.year, BASE.year + 1):
+    for y in range(BASE.year, BASE.year + 5):
         kr = H.country_holidays("KR", years=[y - 1, y, y + 1])
         d0 = datetime.date(y, 1, 1)
         n = (datetime.date(y + 1, 1, 1) - d0).days
-        bits = "".join("1" if d.weekday() < 5 and d not in kr and (d.month, d.day) not in ((5, 1), (12, 31)) else "0"
-                       for d in (d0 + datetime.timedelta(i) for i in range(n)))
         win = []
         for name, (m, d, dy, k) in zip(wins, CYC_DUE):
             end = datetime.date(y + dy, m, d)
@@ -590,23 +588,21 @@ def cyc_data(wins):
             while due.weekday() >= 5 or due in kr:
                 due += datetime.timedelta(1)
             win.append([name, (end + datetime.timedelta(1) - d0).days, (due - d0).days, due.month, due.day])
-        out[str(y)] = {"y": y, "n": n, "bits": bits, "trading": bits.count("1"), "win": win}
+        out[str(y)] = {"y": y, "n": n, "win": win}
     return out
 
 
 def cyc(T):
-    """갱신 절 그림 — 공시 시계의 자리, 범례, 자료. 그림은 CYC_JS 가 방문자 화면에서 그린다(오늘이 날마다 바뀌므로). 여기 적는 거래일 수와
-    설명은 기준 해의 것이고, 해가 바뀌면 CYC_JS 가 그해 것으로 고친다."""
+    """갱신 절 그림 — 공시 시계의 자리, 범례, 자료. 그림은 CYC_JS 가 방문자 화면에서 그린다(오늘이 날마다 바뀌므로). 여기 적는 설명은
+    기준 해의 것이고, 해가 바뀌면 CYC_JS 가 그해 것으로 고친다."""
     import json
     data = cyc_data(T["wins"])
     y0 = data[str(BASE.year)]
-    t = {k: T[k] for k in ("label", "next", "mon", "due", "today", "lg")}
+    t = {k: T[k] for k in ("label", "next", "mon", "due", "today")}
     blob = json.dumps({"years": data, "t": t}, ensure_ascii=False, separators=(",", ":"))
-    label = T["label"].format(y=y0["y"], n=y0["trading"])
-    lg = T["lg"].format(n=y0["trading"])
+    label = T["label"].format(y=y0["y"])
     return (f'<figure class="cyc" id="cyc" role="img" aria-label="{esc(label)}"><div class="cyc-box" id="cycBox"></div>'
-            f'<figcaption class="cyc-lg"><span><i class="g-tk"></i><span id="cycN">{esc(lg)}</span></span>'
-            f'<span><i class="g-ar"></i>{esc(T["lg_ar"])}<em>{esc(T["lg_em"])}</em></span></figcaption>'
+            f'<figcaption class="cyc-lg"><span><i class="g-ar"></i>{esc(T["lg_ar"])}<em>{esc(T["lg_em"])}</em></span></figcaption>'
             f'<script type="application/json" id="cycData">{blob}</script></figure>')
 
 
@@ -703,13 +699,12 @@ def copy_text(n_rep, n_sec, brief_no, src_avg):
                    "KOSAI는 자체 투자의견과 목표주가를 제시하지 않습니다. 투자 판단에 필요한 사실과 근거를 정리하는 데 집중합니다."),
         "fresh": ("", "공시와 함께<br>갱신되는 리포트",
                   "분기보고서와 반기보고서, 사업보고서가 공시되면 리포트를\u00a0새로\u00a0작성합니다. 주가와 밸류에이션 지표는 거래일마다 반영합니다."),
-        # 갱신 절 그림(공시 시계) — 그림 안 글자와 읽는 프로그램의 설명. {y} 해 · {n} 거래일 수 · {w} 보고서 · {m}월 {d}일(CYC_JS 가 채운다)
+        # 갱신 절 그림(공시 시계) — 그림 안 글자와 읽는 프로그램의 설명. {y} 해 · {w} 보고서 · {m}월 {d}일(CYC_JS 가 채운다)
         "cyc": {
-            "label": "{y}년의 거래일과 정기보고서 제출 기간을 원으로 나타낸 그림입니다. 바깥 원의 점 하나가 거래일 하루이며, "
-                     "{y}년 거래일은 {n}일입니다. 안쪽 선은 12월 결산 법인의 정기보고서 제출 기간입니다.",
+            "label": "{y}년 한 해를 원으로 나타낸 그림입니다. 안쪽 선은 12월 결산 법인의 정기보고서 제출 기간입니다.",
             "next": "{w} 제출 기한은 {m}월 {d}일입니다.",
             "mon": "{m}월", "due": "{m}월 {d}일까지", "today": "오늘",
-            "lg": "거래일 {n}일", "lg_ar": "정기보고서 제출 기간", "lg_em": "12월 결산 법인 기준",
+            "lg_ar": "정기보고서 제출 기간", "lg_em": "12월 결산 법인 기준",
             "wins": ["사업보고서", "1분기보고서", "반기보고서", "3분기보고서"],
         },
         # 원칙 셋 — 코드로 확인한 사실만(보고서 4부 사실 장부). '숫자는 AI가 만들지 않는다'처럼 넓히지 않는다(AI 해석 문장의 숫자는 검증 밖)
