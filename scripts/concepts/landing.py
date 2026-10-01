@@ -187,6 +187,9 @@ html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:84p
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums lining-nums;
   word-break:keep-all;overflow-wrap:anywhere}
 ::selection{background:rgba(20,20,20,.14)} :root[data-theme="dark"] ::selection{background:rgba(255,255,255,.22)}
+/* 어두운 무대(.dz — 첫 화면 · 브리핑 띠)에서는 라이트 모드에서도 밝은 선택 색. 반투명 검정은 어두운 바탕에서 보이지 않아
+   첫 화면 검색창에서 더블클릭 · 드래그로 고른 글이 안 고른 것처럼 보였다(사장 2026-10-01). 선택과 지우기 자체는 늘 됐다 */
+.dz ::selection{background:rgba(255,255,255,.22)}
 a{color:inherit;text-decoration:none}
 h1,h2,h3,h4,p,ul,ol,figure{margin:0}
 ul,ol{padding:0;list-style:none}
