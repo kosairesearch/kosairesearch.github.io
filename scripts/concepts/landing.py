@@ -16,8 +16,8 @@
     넓히면 → 시장으로 넓히면(브리핑) → 다시 내 종목으로(검색).
   · 문구는 copy_text() 한 곳에 모았다. 제목은 명사형을 기본으로 절마다 모양을 바꾸고, 서브는 합쇼체. 해요체 평서문과
     쉼표로 가른 'A, B' 제목은 쓰지 않는다. 근거와 규칙은 reports/카피라이팅과 랜딩페이지 구성 이론 총정리.md 와 노트 16–20.
-  · 그림·영상·3D 는 만들지 않는다. 들어갈 자리만 표시한다(종류 · 비율 · 한 줄 이름). 첫 화면의 행성은 그림이 아니라
-    data/ 로 그린 캔버스다.
+  · 그림·영상·3D 는 만들지 않는다. 들어갈 자리만 표시한다(종류 · 비율 · 한 줄 이름) — 리포트 절만 실제 리포트 화면을 찍어
+    상자 없이 둔다(landing_art.py · shot() · 2026-10-01 사장). 첫 화면의 행성은 그림이 아니라 data/ 로 그린 캔버스다.
   · 숫자는 전부 data/ 에서 계산한다 — 손으로 적은 숫자·날짜 없음. 스테이징·실사이트 파일은 건드리지 않는다.
 """
 import datetime
@@ -167,7 +167,7 @@ CSS = r"""
 :root{
   --bg:#f9f8f6; --surface:#fff; --surface-2:#f1efeb; --slot:#eceae6; --slot-2:#e3e1dc;
   --ink:#141414; --ink-72:rgba(20,20,20,.72); --ink-62:rgba(20,20,20,.62); --ink-30:rgba(20,20,20,.3);
-  --hair:rgba(20,20,20,.08); --line:rgba(20,20,20,.14);
+  --hair:rgba(20,20,20,.08); --line:rgba(20,20,20,.14); --shot-edge:rgba(20,20,20,.09); --shot-sh1:rgba(20,20,20,.05); --shot-sh2:rgba(20,20,20,.13);
   --band:#141414; --band-ink:#f2f1ee; --band-62:rgba(242,241,238,.62); --band-hair:rgba(255,255,255,.14); --band-slot:#222224; --band-slot-2:#1a1a1c;
   --font:"Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Segoe UI",sans-serif;
   --wrap:1120px; --pad:32px; --gap:24px; --sec:216px; --nav-bar:rgba(249,248,246,.72);
@@ -176,7 +176,7 @@ CSS = r"""
 :root[data-theme="dark"]{
   --bg:#0d0d0e; --surface:#161617; --surface-2:#1e1e20; --slot:#18181a; --slot-2:#202023;
   --ink:#ececea; --ink-72:rgba(236,236,234,.72); --ink-62:rgba(236,236,234,.62); --ink-30:rgba(236,236,234,.3);
-  --hair:rgba(255,255,255,.08); --line:rgba(255,255,255,.14);
+  --hair:rgba(255,255,255,.08); --line:rgba(255,255,255,.14); --shot-edge:rgba(255,255,255,.12); --shot-sh1:rgba(0,0,0,.4); --shot-sh2:rgba(0,0,0,.6);
   --band:#1c1c1e; --band-ink:#ececea; --band-62:rgba(236,236,234,.62); --band-hair:rgba(255,255,255,.12); --band-slot:#262628; --band-slot-2:#202022;
   --nav-bar:rgba(13,13,14,.72);
   color-scheme:dark;
@@ -247,6 +247,27 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .slot .st svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round}
 .slot .st span{font-weight:500;color:var(--ink-62)}
 .slot figcaption{position:absolute;left:22px;right:22px;bottom:20px;font:500 14px/1.45 var(--font);color:var(--ink-62)}
+
+/* 리포트 절 그림 — 상자 없이 실제 리포트 화면만(scripts/concepts/landing_art.py 가 찍는다 · 2026-10-01 사장 "이미지 박스를 없애고
+   리포트만"). 넓은 화면은 데스크톱 화면 한 장이 오른쪽 끝까지 이어지고, 한 열에서는 휴대폰 화면 두 장이 나란히 선다. 가장자리는
+   얇은 선과 옅은 그림자뿐이고 아래는 바탕으로 풀린다 — 그림자까지 풀리게 마스크는 여백을 둔 figure 에 건다. 그림이라 움직이지 않는다 */
+main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 화면이 가로 스크롤을 만들지 않게(clip 을 모르는 옛 브라우저는 hidden) */
+.shot{position:relative;grid-column:7/13;grid-row:1;margin:-48px calc(-1 * (max(0px,(100vw - var(--wrap)) / 2) + var(--pad))) -48px -48px;padding:48px 0 48px 48px;
+  -webkit-mask-image:linear-gradient(to bottom,#000 60%,transparent 94%);mask-image:linear-gradient(to bottom,#000 60%,transparent 94%)}
+.shot .scr{position:relative;overflow:hidden;background:var(--bg);box-shadow:0 0 0 1px var(--shot-edge),0 1px 3px var(--shot-sh1),0 24px 56px -20px var(--shot-sh2)}
+.shot img{display:block;width:100%;height:auto}
+.shot .dk{display:none} :root[data-theme="dark"] .shot .lt{display:none} :root[data-theme="dark"] .shot .dk{display:block}
+.shot .desk{width:880px;border-radius:12px}
+.shot .m1,.shot .m2{display:none}
+@media (max-width:1180px){.shot .desk{width:780px}}
+/* 한 열(리포트도 한 열로 보이는 폭) — 휴대폰 화면 두 장(01 개요 · 03 실적 추이), 오른쪽은 조금 아래 */
+@media (max-width:820px){
+  .shot{margin:40px calc(-1 * var(--pad)) -40px;padding:16px var(--pad) 40px;display:flex;gap:4%}
+  .shot .desk{display:none}
+  .shot .m1,.shot .m2{display:block;flex:1 1 0;min-width:0;border-radius:18px}
+  .shot .m2{margin-top:12%}
+}
+@media (max-width:720px){.shot{margin-top:28px} .shot .m1,.shot .m2{border-radius:14px}}
 
 /* 첫 화면 — 어두운 무대 · 큰 제목 · 검색 · 아래에서 떠오르는 종목의 행성(그림 없이 데이터로) */
 .hero{--orb-v:clamp(320px,62vh,640px);--orb-x:280px;
@@ -426,6 +447,21 @@ def slot(kind, icon, ratio, name):
             f'<figcaption>{esc(name)}</figcaption></figure>')
 
 
+# 리포트 절 그림 — landing_art.py 가 찍는 실제 리포트 화면. 이름: (가로, 세로) — img 의 width · height(자리를 미리 잡아 밀림이 없게)
+SHOT = {"desk": (1840, 1413), "m1": (900, 1477), "m2": (900, 1477)}
+
+
+def shot(label):
+    """리포트 절 그림 — 상자 없이 실제 리포트 화면만. 넓은 화면은 데스크톱 화면 한 장, 한 열(820px 이하)은 휴대폰 화면 두 장.
+    테마와 폭에 맞는 그림만 받는다(loading=lazy · display:none). 그림마다 alt 를 비우고 이름은 figure 가 갖는다"""
+    def two(n):
+        w, h = SHOT[n]
+        return "".join(f'<img class="{c}" src="img/report-{n}-{t}.webp" width="{w}" height="{h}" alt="" loading="lazy" decoding="async">'
+                       for c, t in (("lt", "light"), ("dk", "dark")))
+    return (f'<figure class="shot" role="img" aria-label="{esc(label)}">'
+            + "".join(f'<div class="scr {n}">{two(n)}</div>' for n in SHOT) + "</figure>")
+
+
 def more(label, href="#"):
     return f'<a class="more" href="{href}">{label} {I["arrow"]}</a>'
 
@@ -513,6 +549,7 @@ def copy_text(n_rep, n_sec, brief_no, src_avg):
         "gap_sr": f"{when} 증권사 기업분석 보고서가 발간되지 않은 국내 상장사 비율",
         "report": ("리포트", "한 편에 담은<br>기업 분석",
                    "사업 구조와 실적, 업황, 전망, 리스크를 차례로 정리합니다. 강세 요인과 약세 요인을 함께 제시해 어느\u00a0한쪽으로\u00a0치우치지\u00a0않습니다."),
+        "report_shot": "KOSAI 기업 분석 리포트의 실제 화면. 목차와 리포트 개요, 사업 구조, 실적 추이가 차례로 보입니다.",
         # '목표주가도 없습니다'는 틀린 말 — 새 형식 2,563편 중 616편이 증권사 목표주가를 출처와 함께 인용한다. KOSAI 가 제시하지 않을 뿐('자체')
         "stance": ("", "매수도 매도도<br>권하지 않습니다",
                    "KOSAI는 자체 투자의견과 목표주가를 제시하지 않습니다. 투자 판단에 필요한 사실과 근거를 정리하는 데 집중합니다."),
@@ -565,7 +602,7 @@ def page():
     sec_gap = (f'<section class="sec w solo stat" id="gap"><h2 class="stat-n rv"><span class="cnt">{esc(gp)}</span><span class="vh">, {esc(C["gap_sr"])}</span></h2>'
                f'<p class="sub rv">{sents(gs)}</p><p class="src rv">{g(gsrc)}</p></section>')
     sec_report = (f'<section class="sec w" id="report"><div class="split"><div class="tx">{head_block("report")}</div>'
-                  + slot("이미지", "image", "PC 4:5 / 휴대폰 1:1", "리포트 한 편의 화면") + '</div></section>')
+                  + shot(C["report_shot"]) + '</div></section>')
     sec_fresh = (f'<section class="sec w" id="fresh"><div class="split rev"><div class="tx">{head_block("fresh")}</div>'
                  + slot("이미지", "image", "PC 4:3 / 휴대폰 1:1", "공시 반영 뒤 바뀐 기준일(확대)") + '</div></section>')
     pts = "".join(f'<li class="rv"><h3>{g(t)}</h3><p>{sents(d)}</p></li>' for t, d in C["trust_points"])
@@ -618,6 +655,9 @@ def page():
 
 
 if __name__ == "__main__":
+    missing = [f"img/report-{n}-{t}.webp" for n in SHOT for t in ("light", "dark") if not os.path.exists(os.path.join(OUT, "img", f"report-{n}-{t}.webp"))]
+    if missing:
+        sys.exit(f"리포트 절 그림이 없다 — python3 scripts/concepts/landing_art.py 를 먼저 돌린다: {missing}")
     os.makedirs(OUT, exist_ok=True)
     open(os.path.join(OUT, "landing.css"), "w", encoding="utf-8").write(CSS.strip() + "\n")
     html = page()
