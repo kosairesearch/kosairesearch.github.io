@@ -1,22 +1,67 @@
-=== 공시 트리거 v2 생성 Thu Oct  1 00:43:46 UTC 2026 · 대상 023160,044960 ===
-## 🤖 리포트 v2 Batch 제출 — 2개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
-- 정량 재사용 2개(숫자가 이미 최신·완전) · 다시 받을 0개
-- 모델 배분: claude-opus-5 0개 · claude-sonnet-5 2개
-- ✅ 배치 제출: msgbatch_014YCZiQnbcxQZgYsVsv7fwb (2건) → data/batches_v2/msgbatch_014YCZiQnbcxQZgYsVsv7fwb.json
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 in_progress · 처리 2/성공 0/오류 0
-  · 상태 ended · 처리 0/성공 2/오류 0
-- msgbatch_014YCZiQnbcxQZgYsVsv7fwb · 상태 ended · 처리 0/성공 2/오류 0/만료 0/취소 0 · 주문 2026-10-01 09:43
-  · 023160 금액 표기 8곳 정리 (79조3,187억원 → 79조 3,187억원)
-
-✅ v2 회수 완료 · 성공 2/실패 0 → data/reports_v2/ (2563개)
-💵 claude-sonnet-5 2건 · 입력 11,967(캐시쓰기 93,497·읽기 71,778) · 출력 39,479 · 검색 8 → 약 $0.41 (장당 $0.206)
-✅ msgbatch_014YCZiQnbcxQZgYsVsv7fwb 회수 완료 · 성공 2/실패 0
+=== 공시 트리거 v2 생성 Thu Oct  1 06:54:46 UTC 2026 · 대상 310200,123040,248170,058860,123010,221800,025550,099520,288180,027050,263770,026040,032860 ===
+## 🤖 리포트 v2 Batch 제출 — 13개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
+- 정량 재사용 12개(숫자가 이미 최신·완전) · 다시 받을 1개
+    · 다시 받는 이유 1개: 분기 표에 빈칸
+KRX 로그인 시도...
+  로그인 ID: qjawnsdla
+⚠️ KRX 비밀번호 변경이 필요합니다.
+   오류 메시지: 패스워드 변경 필요
+   https://www.krx.co.kr 에서 비밀번호를 변경한 후 다시 시도하세요.
+KRX 로그인 실패: 자격 증명을 확인하세요.
+KRX 로그인 시도...
+  로그인 ID: qjawnsdla
+⚠️ KRX 비밀번호 변경이 필요합니다.
+   오류 메시지: 패스워드 변경 필요
+   https://www.krx.co.kr 에서 비밀번호를 변경한 후 다시 시도하세요.
+KRX 로그인 실패: 자격 증명을 확인하세요.
+Error occurred in get_market_fundamental_by_ticker: Expecting value: line 1 column 1 (char 0)
+- (KRX 펀더멘털 실패: KeyError: "None of [Index(['BPS', 'PER', 'PBR', 'EPS', 'DIV', 'DPS'], dtype='object')] are in the [columns]") — KRX 값 없이 진행
+- 정량 수집 058860 KTis...
+  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 1060 → 채택 1060
+  · BPS 입력: 자본 0.2조(분기말·총자본-폴백) ÷ 주식수 35백만(발행총수) = BPS 7002
+  ✅ KTis 검증 통과 PER 2.439 PBR 0.3692 EPS 1060 BPS 7002 | 참조 EPS 1062.0 BPS 7970.0 PER 2.43
+### KTis
+  2025: 매출 5,888억 영업이익 247억 지배순이익 364억 OPM 4.2% ROE 15.2% 부채비율 88.6%
+  2024: 매출 6,039억 영업이익 210억 지배순이익 119억 OPM 3.5% ROE 5.7% 부채비율 125.8%
+  2023: 매출 5,930억 영업이익 205억 지배순이익 139억 OPM 3.5% ROE 6.8% 부채비율 119.3%
+  2022: 매출 5,358억 영업이익 195억 지배순이익 159억 OPM 3.6% ROE 8.1% 부채비율 101.1%
+  2025Q2: 매출 1,271억 영업이익 76억 지배순이익 55억
+  2025Q3: 매출 — 영업이익 — 지배순이익 —
+  2025Q4: 매출 — 영업이익 — 지배순이익 —
+  2026Q1: 매출 1,549억 영업이익 52억 지배순이익 48억
+  2026Q2: 매출 1,554억 영업이익 71억 지배순이익 58억
+  PER 2.439 | EPS 1060 | PBR 0.3692 | BPS 7002 | ROE 16.0 | 배당 5.42% | DPS 140.0
+- 모델 배분: claude-opus-5 0개 · claude-sonnet-5 13개
+- ✅ 배치 제출: msgbatch_01LW8RLrod4hZs9oTSVbvDp7 (13건) → data/batches_v2/msgbatch_01LW8RLrod4hZs9oTSVbvDp7.json
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+  · 상태 in_progress · 처리 13/성공 0/오류 0
+- ⏳ 시간 내 미완료 — 남은 배치는 collect_batch 가 회수한다
+- 아직 처리 중 — 여기서 끝낸다. collect_batch 가 회수한다(msgbatch_01LW8RLrod4hZs9oTSVbvDp7).
