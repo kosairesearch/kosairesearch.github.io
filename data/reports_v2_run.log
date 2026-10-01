@@ -1,25 +1,15 @@
-=== 공시 트리거 v2 생성 Thu Oct  1 06:54:46 UTC 2026 · 대상 310200,123040,248170,058860,123010,221800,025550,099520,288180,027050,263770,026040,032860 ===
-## 🤖 리포트 v2 Batch 제출 — 13개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
-- 정량 재사용 12개(숫자가 이미 최신·완전) · 다시 받을 1개
+=== 공시 트리거 v2 생성 Thu Oct  1 17:14:02 UTC 2026 · 대상 445680,376900,006910,310200,123040,248170,123010,058860,071090,221800,025550,099520,288180,027050,263770,007680,026040,088790,073570,128540,069920,032860 ===
+## 🤖 리포트 v2 Batch 제출 — 22개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
+- 정량 재사용 20개(숫자가 이미 최신·완전) · 다시 받을 2개
     · 다시 받는 이유 1개: 분기 표에 빈칸
+    · 다시 받는 이유 1개: 최근 분기(2026Q2)가 반영되지 않음
 KRX 로그인 시도...
   로그인 ID: qjawnsdla
-⚠️ KRX 비밀번호 변경이 필요합니다.
-   오류 메시지: 패스워드 변경 필요
-   https://www.krx.co.kr 에서 비밀번호를 변경한 후 다시 시도하세요.
-KRX 로그인 실패: 자격 증명을 확인하세요.
-KRX 로그인 시도...
-  로그인 ID: qjawnsdla
-⚠️ KRX 비밀번호 변경이 필요합니다.
-   오류 메시지: 패스워드 변경 필요
-   https://www.krx.co.kr 에서 비밀번호를 변경한 후 다시 시도하세요.
-KRX 로그인 실패: 자격 증명을 확인하세요.
-Error occurred in get_market_fundamental_by_ticker: Expecting value: line 1 column 1 (char 0)
-- (KRX 펀더멘털 실패: KeyError: "None of [Index(['BPS', 'PER', 'PBR', 'EPS', 'DIV', 'DPS'], dtype='object')] are in the [columns]") — KRX 값 없이 진행
+- (KRX 펀더멘털 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)) — KRX 값 없이 진행
 - 정량 수집 058860 KTis...
   · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 1060 → 채택 1060
   · BPS 입력: 자본 0.2조(분기말·총자본-폴백) ÷ 주식수 35백만(발행총수) = BPS 7002
-  ✅ KTis 검증 통과 PER 2.439 PBR 0.3692 EPS 1060 BPS 7002 | 참조 EPS 1062.0 BPS 7970.0 PER 2.43
+  ✅ KTis 검증 통과 PER 2.448 PBR 0.3706 EPS 1060 BPS 7002 | 참조 EPS 1062.0 BPS 7970.0 PER 2.44
 ### KTis
   2025: 매출 5,888억 영업이익 247억 지배순이익 364억 OPM 4.2% ROE 15.2% 부채비율 88.6%
   2024: 매출 6,039억 영업이익 210억 지배순이익 119억 OPM 3.5% ROE 5.7% 부채비율 125.8%
@@ -30,38 +20,55 @@ Error occurred in get_market_fundamental_by_ticker: Expecting value: line 1 colu
   2025Q4: 매출 — 영업이익 — 지배순이익 —
   2026Q1: 매출 1,549억 영업이익 52억 지배순이익 48억
   2026Q2: 매출 1,554억 영업이익 71억 지배순이익 58억
-  PER 2.439 | EPS 1060 | PBR 0.3692 | BPS 7002 | ROE 16.0 | 배당 5.42% | DPS 140.0
-- 모델 배분: claude-opus-5 0개 · claude-sonnet-5 13개
-- ✅ 배치 제출: msgbatch_01LW8RLrod4hZs9oTSVbvDp7 (13건) → data/batches_v2/msgbatch_01LW8RLrod4hZs9oTSVbvDp7.json
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
-  · 상태 in_progress · 처리 13/성공 0/오류 0
+  PER 2.448 | EPS 1060 | PBR 0.3706 | BPS 7002 | ROE 16.0 | 배당 5.39% | DPS 140.0
+- 정량 수집 069920 엑시온그룹...
+  · 발행주식총수 DART 9,296,521 ↔ KRX 22,694,418 (0.410배) — KRX 를 쓴다
+  ❌ 두 공시가 어긋나고 분기표로도 확인이 안 된다(공시 -572 vs 순이익÷주식수 -983, 1.72배) — EPS·PER 숨김
+  · EPS 입력: 공시롤포워드=없음(작년연간 -572 − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 -983 → 채택 None
+  · BPS 입력: 자본 0.0조(2025년말·연간폴백) ÷ 주식수 23백만(발행총수) = BPS None
+  ✅ 엑시온그룹 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS -1932.0 BPS 4089.0 PER None
+### 엑시온그룹
+  2025: 매출 240억 영업이익 -59억 지배순이익 -223억 OPM -24.6% ROE -58.6% 부채비율 103.8%
+  2024: 매출 48억 영업이익 -105억 지배순이익 -169억 OPM -217.8% ROE -37.2% 부채비율 29.2%
+  2023: 매출 46억 영업이익 -116억 지배순이익 -153억 OPM -248.9% ROE -36.5% 부채비율 8.0%
+  2022: 매출 55억 영업이익 -121억 지배순이익 -111억 OPM -220.7% ROE -19.4% 부채비율 8.2%
+  2025Q2: 매출 8억 영업이익 -14억 지배순이익 -36억
+  2025Q3: 매출 — 영업이익 — 지배순이익 —
+  2025Q4: 매출 161억 영업이익 -37억 지배순이익 -186억
+  2026Q1: 매출 211억 영업이익 -5억 지배순이익 -2억
+  2026Q2: 매출 239억 영업이익 8억 지배순이익 -6억
+  PER None | EPS None | PBR None | BPS None | ROE -58.6 | 배당 0.0% | DPS 0.0
+- 모델 배분: claude-opus-5 0개 · claude-sonnet-5 22개
+- ✅ 배치 제출: msgbatch_01LpUzDGhsJWFqv9qPj2cBMr (22건) → data/batches_v2/msgbatch_01LpUzDGhsJWFqv9qPj2cBMr.json
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
+  · 상태 in_progress · 처리 22/성공 0/오류 0
 - ⏳ 시간 내 미완료 — 남은 배치는 collect_batch 가 회수한다
-- 아직 처리 중 — 여기서 끝낸다. collect_batch 가 회수한다(msgbatch_01LW8RLrod4hZs9oTSVbvDp7).
+- 아직 처리 중 — 여기서 끝낸다. collect_batch 가 회수한다(msgbatch_01LpUzDGhsJWFqv9qPj2cBMr).
