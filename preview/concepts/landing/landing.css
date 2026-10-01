@@ -94,7 +94,8 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
 .shot .desk{width:880px;border-radius:12px}
 .shot .m1,.shot .m2{display:none}
 @media (max-width:1180px){.shot .desk{width:780px}}
-/* 한 열(리포트도 한 열로 보이는 폭) — 휴대폰 화면 두 장(01 개요 · 03 실적 추이), 오른쪽은 조금 아래 */
+/* 한 열(리포트도 한 열로 보이는 폭) — 휴대폰 화면 두 장(01 개요 · 03 실적 추이), 오른쪽은 조금 아래. 두 틀의 아래 끝이 같으므로
+   왼쪽 화면은 오른쪽이 내려선 만큼 길게 찍어 틀을 꼭 채운다(SHOT · landing_art.py) — 같은 길이였을 때는 왼쪽 틀 아래가 비었다 */
 @media (max-width:820px){
   .shot{margin:40px calc(-1 * var(--pad)) -40px;padding:16px var(--pad) 40px;display:flex;gap:4%}
   .shot .desk{display:none}

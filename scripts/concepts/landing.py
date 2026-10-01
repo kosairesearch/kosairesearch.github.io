@@ -345,7 +345,8 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
 .shot .desk{width:880px;border-radius:12px}
 .shot .m1,.shot .m2{display:none}
 @media (max-width:1180px){.shot .desk{width:780px}}
-/* 한 열(리포트도 한 열로 보이는 폭) — 휴대폰 화면 두 장(01 개요 · 03 실적 추이), 오른쪽은 조금 아래 */
+/* 한 열(리포트도 한 열로 보이는 폭) — 휴대폰 화면 두 장(01 개요 · 03 실적 추이), 오른쪽은 조금 아래. 두 틀의 아래 끝이 같으므로
+   왼쪽 화면은 오른쪽이 내려선 만큼 길게 찍어 틀을 꼭 채운다(SHOT · landing_art.py) — 같은 길이였을 때는 왼쪽 틀 아래가 비었다 */
 @media (max-width:820px){
   .shot{margin:40px calc(-1 * var(--pad)) -40px;padding:16px var(--pad) 40px;display:flex;gap:4%}
   .shot .desk{display:none}
@@ -558,9 +559,25 @@ def slot(kind, icon, ratio, name):
             f'<figcaption>{esc(name)}</figcaption></figure>')
 
 
-# 리포트 절 · 업종 절 그림 — landing_art.py 가 찍는 실제 화면. 이름: (가로, 세로) — img 의 width · height(자리를 미리 잡아 밀림이 없게)
-SHOT = {"report": {"desk": (1840, 1413), "m1": (900, 1477), "m2": (900, 1477)},
-        "sector": {"desk": (2112, 1277), "m1": (900, 1477), "m2": (900, 1477)}}
+# 리포트 절 · 업종 절 그림 — landing_art.py 가 찍는 실제 화면. 이름: (가로, 세로) — img 의 width · height(자리를 미리 잡아 밀림이 없게).
+# 왼쪽 휴대폰 화면(m1)은 오른쪽(m2)보다 폭의 25%(900 → 225) 길다 — 오른쪽이 그만큼 내려서고(.m2{margin-top:12%} ÷ 화면 폭 48%)
+# 두 틀의 아래 끝이 같아서다. 같은 길이였을 때는 왼쪽 틀 아래가 비었다
+SHOT = {"report": {"desk": (1840, 1413), "m1": (900, 1702), "m2": (900, 1477)},
+        "sector": {"desk": (2112, 1277), "m1": (900, 1702), "m2": (900, 1477)}}
+
+
+def webp_size(path):
+    """WebP 그림의 가로 · 세로 — 파일 머리만 읽는다(손실 VP8 · 무손실 VP8L · 확장 VP8X)"""
+    b = open(path, "rb").read(30)
+    kind = b[12:16]
+    if kind == b"VP8 ":
+        return int.from_bytes(b[26:28], "little") & 0x3FFF, int.from_bytes(b[28:30], "little") & 0x3FFF
+    if kind == b"VP8L":
+        v = int.from_bytes(b[21:25], "little")
+        return 1 + (v & 0x3FFF), 1 + ((v >> 14) & 0x3FFF)
+    if kind == b"VP8X":
+        return 1 + int.from_bytes(b[24:27], "little"), 1 + int.from_bytes(b[27:30], "little")
+    return None
 
 
 def shot(kind, label, cls="shot"):
@@ -833,6 +850,10 @@ if __name__ == "__main__":
                if not os.path.exists(os.path.join(OUT, "img", f"{k}-{n}-{t}.webp"))]
     if missing:
         sys.exit(f"리포트 절 · 업종 절 그림이 없다 — python3 scripts/concepts/landing_art.py 를 먼저 돌린다: {missing}")
+    wrong = [f"img/{k}-{n}-{t}.webp {got} ≠ {SHOT[k][n]}" for k in SHOT for n in SHOT[k] for t in ("light", "dark")
+             if (got := webp_size(os.path.join(OUT, "img", f"{k}-{n}-{t}.webp"))) != SHOT[k][n]]
+    if wrong:   # 다시 찍어 크기가 바뀌었는데 SHOT 을 그대로 두면 자리가 어긋난다(왼쪽 휴대폰 화면은 틀에 꼭 맞아야 한다)
+        sys.exit(f"그림 크기가 SHOT 과 다르다 — SHOT 을 고치거나 landing_art.py 의 자를 범위를 본다: {wrong}")
     os.makedirs(OUT, exist_ok=True)
     open(os.path.join(OUT, "landing.css"), "w", encoding="utf-8").write(CSS.strip() + "\n")
     html = page()
