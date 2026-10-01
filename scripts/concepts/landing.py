@@ -16,8 +16,9 @@
     넓히면 → 시장으로 넓히면(브리핑) → 다시 내 종목으로(검색).
   · 문구는 copy_text() 한 곳에 모았다. 제목은 명사형을 기본으로 절마다 모양을 바꾸고, 서브는 합쇼체. 해요체 평서문과
     쉼표로 가른 'A, B' 제목은 쓰지 않는다. 근거와 규칙은 reports/카피라이팅과 랜딩페이지 구성 이론 총정리.md 와 노트 16–20.
-  · 그림·영상·3D 는 만들지 않는다. 들어갈 자리만 표시한다(종류 · 비율 · 한 줄 이름) — 리포트 절만 실제 리포트 화면을 찍어
-    상자 없이 둔다(landing_art.py · shot() · 2026-10-01 사장). 첫 화면의 행성은 그림이 아니라 data/ 로 그린 캔버스다.
+  · 그림·영상·3D 는 만들지 않는다. 들어갈 자리만 표시한다(종류 · 비율 · 한 줄 이름) — 리포트 절은 실제 리포트 화면을 찍어
+    상자 없이 두고(landing_art.py · shot()), 갱신 절은 공휴일 자료로 그린 1년 공시 시계다(cyc() · CYC_JS — 둘 다 2026-10-01 사장).
+    첫 화면의 행성은 그림이 아니라 data/ 로 그린 캔버스다.
   · 숫자는 전부 data/ 에서 계산한다 — 손으로 적은 숫자·날짜 없음. 스테이징·실사이트 파일은 건드리지 않는다.
 """
 import datetime
@@ -163,6 +164,89 @@ if('IntersectionObserver' in window)new IntersectionObserver(function(en){go(en[
 document.addEventListener('visibilitychange',function(){go(!document.hidden&&cv.getBoundingClientRect().bottom>0)})
 })();"""
 
+# 갱신 절 그림 — 1년 공시 시계(cyc() 가 자리와 자료를 두고 여기서 그린다). 오늘은 방문자 화면이 한국 시간(UTC+9, 서머타임 없음)으로
+# 정하므로 1월 1일 0시가 지나면 저절로 다음 해 시계가 된다. 페이지를 연 채 자정을 넘겨도 다시 그린다(다음 자정에 맞춘 타이머 · 탭으로
+# 돌아올 때). 그해 자료가 없으면(페이지를 한 해 넘게 다시 만들지 않았을 때) 가장 가까운 해를 오늘 표시와 기한 날짜 없이 그린다.
+# 크기는 상자 폭에서 나온다(420px 아래는 작은 판). 색은 글자색 하나의 농도뿐이라 테마를 바꿔도 다시 그리지 않는다. 움직이지 않는다
+CYC_JS = r"""(function(){
+var fg=document.getElementById('cyc'),box=document.getElementById('cycBox'),el=document.getElementById('cycData');if(!fg||!box||!el)return;
+var A=JSON.parse(el.textContent),Y=A.years,T=A.t,ks=Object.keys(Y).sort(),D=null,ti=-1,day='',num=document.getElementById('cycN');
+function fill(s,o){return s.replace(/\{(\w+)\}/g,function(m,k){return k in o?o[k]:m})}
+function pick(){var k=new Date(Date.now()+324e5),y=k.getUTCFullYear(),s=String(y),c;
+  if(Y[s]){D=Y[s];ti=Math.round((Date.UTC(y,k.getUTCMonth(),k.getUTCDate())-Date.UTC(y,0,1))/864e5)}
+  else{D=Y[y>+ks[ks.length-1]?ks[ks.length-1]:ks[0]];ti=-1}
+  c=D.y+':'+ti;if(c===day)return false;day=c;return true}
+function f(v){return v.toFixed(2)}
+function tx(c,x,y,sz,wt,op,al,s,mid){return '<text'+(c?' class="'+c+'"':'')+' x="'+f(x)+'" y="'+f(y)+'" font-size="'+sz+'" font-weight="'+wt+'"'+
+  (op<1?' fill-opacity="'+op+'"':'')+' text-anchor="'+al+'"'+(mid?' dominant-baseline="central"':'')+'>'+s+'</text>'}
+function side(dx,out){return Math.abs(dx)<.3?'middle':((dx>0)===out?'start':'end')}   // 원 바깥 글은 바깥으로, 안쪽 글은 안쪽으로 뻗는다
+function draw(){
+  var S=box.clientWidth;if(!S||!D)return;
+  var sm=S<420,cx=S/2,cy=S/2,R=S/2-(sm?22:28),rw=R*.8,h='',i,k,p,q,an=0,nx=-1;
+  function a(d){return d/D.n*2*Math.PI-Math.PI/2}
+  function px(r,t){return [cx+r*Math.cos(t),cy+r*Math.sin(t)]}
+  /* 거래일 — 하루에 점 하나(첫 화면 행성의 점과 같은 말투). 지난 날은 진하게, 남은 날은 옅게 */
+  var dr=sm?.95:1.15,past='',fut='';
+  for(i=0;i<D.n;i++){if(D.bits.charAt(i)!=='1')continue;p=px(R,a(i+.5));
+    var c='<circle cx="'+f(p[0])+'" cy="'+f(p[1])+'" r="'+dr+'"/>';if(ti>=0&&i<ti)past+=c;else fut+=c}
+  h+='<g fill="currentColor" fill-opacity=".72">'+past+'</g><g fill="currentColor" fill-opacity=".22">'+fut+'</g>';
+  /* 달 이름 — 분기 첫 달 넷만. 제출 기간이 모두 이 달 1일에 시작한다(사장 2026-10-01 — 1월, 4월, 7월, 10월) */
+  var MS=[0,31,59,90,120,151,181,212,243,273,304,334],lp=D.n===366?1:0;
+  [0,3,6,9].forEach(function(m){var t=a(MS[m]+(m>1?lp:0));p=px(R+(sm?13:16),t);
+    h+=tx('',p[0],p[1],sm?10.5:11.5,500,.62,side(Math.cos(t),true),fill(T.mon,{m:m+1}),1)});
+  /* 정기보고서 제출 기간 — 선과 기한의 점. 지난 기간은 옅게 이름만, 다가오는 기한 하나만 날짜를 단다 */
+  var fl=sm?10.5:12,fd=sm?11.5:13.5;
+  if(ti>=0)for(k=0;k<D.win.length;k++)if(D.win[k][2]>=ti){nx=k;break}
+  D.win.forEach(function(w,k){var a0=a(w[1]),a1=a(w[2]+1),p0=px(rw,a0),p1=px(rw,a1),done=ti>=0&&w[2]<ti,anc=Math.cos(a1)>0?'end':'start';
+    h+='<path d="M'+f(p0[0])+' '+f(p0[1])+'A'+f(rw)+' '+f(rw)+' 0 0 1 '+f(p1[0])+' '+f(p1[1])+'" fill="none" stroke="currentColor"'+(done?' stroke-opacity=".3"':'')+' stroke-width="'+(sm?1.5:1.8)+'"/>';
+    h+='<circle cx="'+f(p1[0])+'" cy="'+f(p1[1])+'" r="'+(sm?2.8:3.3)+'" fill="currentColor"'+(done?' fill-opacity=".3"':'')+' class="ring"/>';
+    q=px(rw-(sm?11:14),a1);
+    if(k===nx)h+=tx('n1',q[0],q[1]-fd*.38,fl,500,.62,anc,w[0])+tx('n2',q[0],q[1]+fd*.98,fd,600,1,anc,fill(T.due,{m:w[3],d:w[4]}));
+    else h+=tx('',q[0],q[1],fl,500,done?.45:.62,anc,w[0],1)});
+  /* 오늘 — 점 하나와 글자. 글자는 점에서 지난 날 쪽으로 조금 비켜 안쪽에 둔다(오늘 시작하는 제출 기간 선과 닿지 않게) */
+  if(ti>=0){an=a(ti+.5);p=px(R,an);
+    h+='<circle cx="'+f(p[0])+'" cy="'+f(p[1])+'" r="'+(sm?3.4:4)+'" fill="currentColor" class="ring"/>';
+    var la=an-(sm?15:16)/R;q=px(R-(sm?11:14),la);h+=tx('td',q[0],q[1],sm?10.5:11.5,600,1,side(Math.cos(la),false),T.today,1)}
+  /* 가운데 — 해 */
+  h+='<text x="'+f(cx)+'" y="'+f(cy)+'" font-size="'+(sm?22:30)+'" font-weight="400" text-anchor="middle" dominant-baseline="central" letter-spacing="-.02em">'+D.y+'</text>';
+  box.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 '+S+' '+S+'" aria-hidden="true">'+h+'</svg>';
+  try{fit(box.firstChild,cx,cy,R,an,sm)}catch(e){}
+  /* 범례의 거래일 수와 읽는 프로그램의 설명도 그해 것으로 */
+  if(num)num.textContent=fill(T.lg,{n:D.trading});
+  fg.setAttribute('aria-label',fill(T.label,{y:D.y,n:D.trading})+(nx>=0?' '+fill(T.next,{w:D.win[nx][0],m:D.win[nx][3],d:D.win[nx][4]}):''))
+}
+/* 자리 다듬기 — 그린 뒤 글자의 실제 크기를 재어, 다가오는 기한의 글(.n1 .n2)과 '오늘'(.td)이 다른 글자, 점, 선과 닿으면 닿지 않는
+   가장 가까운 자리로 옮긴다. 넓은 화면에서는 처음 자리 그대로이고, 작은 휴대폰에서 주로 움직인다(두 해 모든 날 × 폭 9가지로 잼) */
+function fit(sv,cx,cy,R,an,sm){
+  var ob=[],n1=sv.querySelector('.n1'),n2=sv.querySelector('.n2'),td=sv.querySelector('.td'),k;
+  function bb(e,m){var r=e.getBBox();m=m||0;return [r.x-m,r.y-m,r.x+r.width+m,r.y+r.height+m]}
+  function ok(b){for(var j=0;j<ob.length;j++){var o=ob[j];if(b[0]<o[2]&&o[0]<b[2]&&b[1]<o[3]&&o[1]<b[3])return false}return true}
+  [].forEach.call(sv.querySelectorAll('circle'),function(c){var r=+c.getAttribute('r')+(c.getAttribute('class')?2.25:.5),x=+c.getAttribute('cx'),y=+c.getAttribute('cy');ob.push([x-r,y-r,x+r,y+r])});
+  [].forEach.call(sv.querySelectorAll('path'),function(p){var n=p.getTotalLength(),w=+p.getAttribute('stroke-width')/2+1;
+    for(var l=0;l<=n;l+=2){var q=p.getPointAtLength(l);ob.push([q.x-w,q.y-w,q.x+w,q.y+w])}});
+  [].forEach.call(sv.querySelectorAll('text'),function(t){if(t!==n1&&t!==n2&&t!==td)ob.push(bb(t,2))});
+  if(n1){var u=bb(n1),v=bb(n2),b=[Math.min(u[0],v[0]),Math.min(u[1],v[1]),Math.max(u[2],v[2]),Math.max(u[3],v[3])],best=null;
+    if(!ok(b)){var sy=(b[1]+b[3])/2<cy?-1:1,sx=(b[0]+b[2])/2<cx?1:-1,bd=1e9,dx,dy,d;
+      for(dx=-30;dx<=30;dx+=2)for(dy=-60;dy<=60;dy+=2){d=dx*dx+dy*dy+(dy*sy<0?.5:0)+(dx*sx<0?.25:0);   // 같은 거리면 가운데의 해에서 멀어지는 쪽
+        if(d<bd&&ok([b[0]+dx,b[1]+dy,b[2]+dx,b[3]+dy])){bd=d;best=[dx,dy]}}
+      if(best){[n1,n2].forEach(function(t){t.setAttribute('x',f(+t.getAttribute('x')+best[0]));t.setAttribute('y',f(+t.getAttribute('y')+best[1]))});
+        b=[b[0]+best[0],b[1]+best[1],b[2]+best[0],b[3]+best[1]]}}
+    ob.push([b[0]-2,b[1]-2,b[2]+2,b[3]+2])}
+  if(td){var t0=bb(td),w=t0[2]-t0[0],y0=+td.getAttribute('y'),o0=t0[1]-y0,o1=t0[3]-y0,ri=R-(sm?11:14),ro=R+(sm?13:16),s=(sm?15:16)/R,c=[];
+    function at(r,t,out){return [cx+r*Math.cos(t),cy+r*Math.sin(t),side(Math.cos(t),out)]}
+    c.push(at(ri,an-s,false),at(ri,an+s,false),at(ro,an,true));   // 안쪽(지난 날 쪽 · 남은 날 쪽) → 바깥 → 바깥에서 달 이름을 비켜
+    for(k=1;k<=5;k++)c.push(at(ro,an-k*8/ro,true),at(ro,an+k*8/ro,true));
+    for(k=0;k<c.length;k++){var q=c[k],x0=q[2]==='end'?q[0]-w:q[2]==='middle'?q[0]-w/2:q[0];
+      if(ok([x0,q[1]+o0,x0+w,q[1]+o1])){if(k){td.setAttribute('x',f(q[0]));td.setAttribute('y',f(q[1]));td.setAttribute('text-anchor',q[2])}break}}}
+}
+function wait(){return 864e5-(Date.now()+324e5)%864e5+500}
+function tick(){if(pick())draw();setTimeout(tick,wait())}
+pick();draw();setTimeout(tick,wait());
+if('ResizeObserver' in window)new ResizeObserver(function(){draw()}).observe(box);else addEventListener('resize',draw);
+if(document.fonts&&document.fonts.addEventListener)document.fonts.addEventListener('loadingdone',function(){draw()});   // 글꼴이 늦게 오면 다시 잰다
+document.addEventListener('visibilitychange',function(){if(!document.hidden&&pick())draw()})
+})();"""
+
 CSS = r"""
 :root{
   --bg:#f9f8f6; --surface:#fff; --surface-2:#f1efeb; --slot:#eceae6; --slot-2:#e3e1dc;
@@ -269,6 +353,23 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
 }
 @media (max-width:720px){.shot{margin-top:28px} .shot .m1,.shot .m2{border-radius:14px}}
 
+/* 갱신 절 그림 — 1년 공시 시계(CYC_JS 가 공휴일 자료로 그린다 · 상자 없음 · 사장 2026-10-01). 바깥 원의 점 하나가 거래일 하루,
+   안쪽 선이 정기보고서 제출 기간. 상자는 정사각으로 자리를 미리 잡는다(그리기 전후로 밀리지 않게). 범례 항목 안의 글은 한 덩어리로
+   둔다(.cyc-lg>span 이 inline-flex 라 글이 나뉘면 사이가 벌어진다) */
+.cyc{grid-column:1/7;grid-row:1;display:flex;flex-direction:column;align-items:center;color:var(--ink)}
+.cyc-box{width:min(100%,460px);aspect-ratio:1/1}
+.cyc-box svg{display:block;width:100%;height:100%;overflow:visible}
+.cyc text{fill:currentColor;font-family:var(--font);font-variant-numeric:tabular-nums}
+.cyc .ring{stroke:var(--bg);stroke-width:2.5px;paint-order:stroke}
+.cyc-lg{margin-top:18px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 26px;font:500 13px/1.4 var(--font)}
+.cyc-lg>span{display:inline-flex;align-items:center;gap:9px}
+.cyc-lg em{font-style:normal;font-weight:400;color:var(--ink-62);margin-left:6px}
+.cyc-lg .g-tk{width:5px;height:5px;border-radius:50%;background:currentColor;opacity:.72}
+.cyc-lg .g-ar{position:relative;width:18px;height:2px;background:currentColor}
+.cyc-lg .g-ar::after{content:"";position:absolute;right:-3px;top:-2.5px;width:7px;height:7px;border-radius:50%;background:currentColor}
+@media (max-width:820px){.cyc{margin-top:48px} .cyc-box{width:min(100%,420px)}}
+@media (max-width:720px){.cyc{margin-top:36px} .cyc-lg{font-size:12px;gap:6px 18px}}
+
 /* 첫 화면 — 어두운 무대 · 큰 제목 · 검색 · 아래에서 떠오르는 종목의 행성(그림 없이 데이터로) */
 .hero{--orb-v:clamp(320px,62vh,640px);--orb-x:280px;
   position:relative;isolation:isolate;margin-top:-60px;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;
@@ -336,7 +437,6 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
 .proof h3{margin:0;font:600 19px/1.4 var(--font);letter-spacing:-.01em}
 .proof p{margin-top:10px;max-width:330px;font:400 16px/1.7 var(--font);color:var(--ink-62);text-wrap:pretty}
 .trust>.more{margin-top:40px}
-#fresh .split>.slot{aspect-ratio:4/3}
 
 /* 모닝브리핑 — 어두운 띠 하나 */
 .band{margin-top:var(--sec);min-height:calc(100vh - 60px);min-height:calc(100svh - 60px);display:flex;align-items:center;padding:96px 0;background:var(--band);color:var(--band-ink);scroll-margin-top:-24px}
@@ -414,7 +514,7 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
   .sub{margin-top:18px;font-size:16px}
   .solo{text-align:left} .solo .h2,.solo .sub{margin-left:0}   /* 한 열에서는 빈 반쪽이 없으니 다른 절처럼 왼쪽 정렬 */
   .stat .sub{margin-top:20px}
-  .split>.slot,.stack>.slot,#fresh .split>.slot{margin-top:44px;aspect-ratio:1/1}
+  .split>.slot,.stack>.slot{margin-top:44px;aspect-ratio:1/1}
   .slot{border-radius:16px}
   .band{padding:72px 0}
   .end .search{margin-top:36px}
@@ -460,6 +560,54 @@ def shot(label):
                        for c, t in (("lt", "light"), ("dk", "dark")))
     return (f'<figure class="shot" role="img" aria-label="{esc(label)}">'
             + "".join(f'<div class="scr {n}">{two(n)}</div>' for n in SHOT) + "</figure>")
+
+
+# 갱신 절 그림 — 1년 공시 시계(사장 2026-10-01: 1안 → 단순화 → 달 이름은 1월, 4월, 7월, 10월). 한 해를 원 하나로 — 바깥 원의 점 하나가
+# 거래일 하루, 안쪽 선이 12월 결산 법인의 정기보고서 제출 기간이다. 제출 기한은 사업연도가 끝난 뒤 90일(사업보고서), 분기와 반기가 끝난 뒤
+# 45일이고(자본시장법 제159조 · 제160조), 마지막 날이 토요일 · 공휴일이면 다음 날이다(민법 제161조). 날로 세므로 윤년에는 사업보고서 기한이
+# 3월 30일이다(2020년이 그랬다 — 서울신문 2020-02-27). 거래일은 브리핑의 개장 판정(market_data.open_today)과 같은 규칙 — 공휴일 패키지에
+# 근로자의 날과 연말 휴장일을 더한다. 근로자의 날과 연말 휴장일은 기한 계산의 공휴일이 아니다
+CYC_DUE = ((12, 31, -1, 90), (3, 31, 0, 45), (6, 30, 0, 45), (9, 30, 0, 45))   # 기간 끝(월, 일, 해 차이)과 그 뒤 날 수 — 이름은 copy_text 의 cyc.wins 순서
+
+
+def cyc_data(wins):
+    """공시 시계의 자료 — 기준 해(데이터의 오늘)와 그다음 해. 해마다 날 수(n), 날짜별 개장 여부(bits — '1' 이 거래일), 거래일 수(trading),
+    제출 기간 [이름, 시작 날 번호, 기한 날 번호, 기한 월, 기한 일](날 번호는 1월 1일이 0). 다음 해까지 담아 두므로 1월 1일에 저절로
+    넘어간다. 그 뒤 해는 담지 않는다 — 선거일 같은 공휴일이 아직 확정되지 않았을 수 있다. 페이지를 다시 만들면 기준 해가 데이터의
+    오늘을 따라가고, 그사이 지정된 임시공휴일도 들어간다."""
+    import holidays as H
+    out = {}
+    for y in (BASE.year, BASE.year + 1):
+        kr = H.country_holidays("KR", years=[y - 1, y, y + 1])
+        d0 = datetime.date(y, 1, 1)
+        n = (datetime.date(y + 1, 1, 1) - d0).days
+        bits = "".join("1" if d.weekday() < 5 and d not in kr and (d.month, d.day) not in ((5, 1), (12, 31)) else "0"
+                       for d in (d0 + datetime.timedelta(i) for i in range(n)))
+        win = []
+        for name, (m, d, dy, k) in zip(wins, CYC_DUE):
+            end = datetime.date(y + dy, m, d)
+            due = end + datetime.timedelta(k)
+            while due.weekday() >= 5 or due in kr:
+                due += datetime.timedelta(1)
+            win.append([name, (end + datetime.timedelta(1) - d0).days, (due - d0).days, due.month, due.day])
+        out[str(y)] = {"y": y, "n": n, "bits": bits, "trading": bits.count("1"), "win": win}
+    return out
+
+
+def cyc(T):
+    """갱신 절 그림 — 공시 시계의 자리, 범례, 자료. 그림은 CYC_JS 가 방문자 화면에서 그린다(오늘이 날마다 바뀌므로). 여기 적는 거래일 수와
+    설명은 기준 해의 것이고, 해가 바뀌면 CYC_JS 가 그해 것으로 고친다."""
+    import json
+    data = cyc_data(T["wins"])
+    y0 = data[str(BASE.year)]
+    t = {k: T[k] for k in ("label", "next", "mon", "due", "today", "lg")}
+    blob = json.dumps({"years": data, "t": t}, ensure_ascii=False, separators=(",", ":"))
+    label = T["label"].format(y=y0["y"], n=y0["trading"])
+    lg = T["lg"].format(n=y0["trading"])
+    return (f'<figure class="cyc" id="cyc" role="img" aria-label="{esc(label)}"><div class="cyc-box" id="cycBox"></div>'
+            f'<figcaption class="cyc-lg"><span><i class="g-tk"></i><span id="cycN">{esc(lg)}</span></span>'
+            f'<span><i class="g-ar"></i>{esc(T["lg_ar"])}<em>{esc(T["lg_em"])}</em></span></figcaption>'
+            f'<script type="application/json" id="cycData">{blob}</script></figure>')
 
 
 def more(label, href="#"):
@@ -555,6 +703,15 @@ def copy_text(n_rep, n_sec, brief_no, src_avg):
                    "KOSAI는 자체 투자의견과 목표주가를 제시하지 않습니다. 투자 판단에 필요한 사실과 근거를 정리하는 데 집중합니다."),
         "fresh": ("", "공시와 함께<br>갱신되는 리포트",
                   "분기보고서와 반기보고서, 사업보고서가 공시되면 리포트를\u00a0새로\u00a0작성합니다. 주가와 밸류에이션 지표는 거래일마다 반영합니다."),
+        # 갱신 절 그림(공시 시계) — 그림 안 글자와 읽는 프로그램의 설명. {y} 해 · {n} 거래일 수 · {w} 보고서 · {m}월 {d}일(CYC_JS 가 채운다)
+        "cyc": {
+            "label": "{y}년의 거래일과 정기보고서 제출 기간을 원으로 나타낸 그림입니다. 바깥 원의 점 하나가 거래일 하루이며, "
+                     "{y}년 거래일은 {n}일입니다. 안쪽 선은 12월 결산 법인의 정기보고서 제출 기간입니다.",
+            "next": "{w} 제출 기한은 {m}월 {d}일입니다.",
+            "mon": "{m}월", "due": "{m}월 {d}일까지", "today": "오늘",
+            "lg": "거래일 {n}일", "lg_ar": "정기보고서 제출 기간", "lg_em": "12월 결산 법인 기준",
+            "wins": ["사업보고서", "1분기보고서", "반기보고서", "3분기보고서"],
+        },
         # 원칙 셋 — 코드로 확인한 사실만(보고서 4부 사실 장부). '숫자는 AI가 만들지 않는다'처럼 넓히지 않는다(AI 해석 문장의 숫자는 검증 밖)
         "trust": ("", "리포트의<br>세 가지 원칙", ""),
         "trust_points": [
@@ -604,7 +761,7 @@ def page():
     sec_report = (f'<section class="sec w" id="report"><div class="split"><div class="tx">{head_block("report")}</div>'
                   + shot(C["report_shot"]) + '</div></section>')
     sec_fresh = (f'<section class="sec w" id="fresh"><div class="split rev"><div class="tx">{head_block("fresh")}</div>'
-                 + slot("이미지", "image", "PC 4:3 / 휴대폰 1:1", "공시 반영 뒤 바뀐 기준일(확대)") + '</div></section>')
+                 + cyc(C["cyc"]) + '</div></section>')
     pts = "".join(f'<li class="rv"><h3>{g(t)}</h3><p>{sents(d)}</p></li>' for t, d in C["trust_points"])
     sec_trust = (f'<section class="sec w trust"><h2 class="h2 rv">{C["trust"][1]}</h2><ul class="proof">{pts}</ul>'
                  + more(C["trust_link"]).replace('class="more"', 'class="more rv"', 1) + '</section>')   # 링크는 작성 방식(회사 소개) — 특정 종목 예시는 두지 않는다(사장)
@@ -618,6 +775,7 @@ def page():
 
     orb_js = "<script>" + ORB_JS + "</script>"
     rv_js = "<script>" + RV_JS + "</script>"   # 다른 스크립트와 따로 — 저쪽이 실패해도 글이 숨은 채로 남지 않게
+    cyc_js = "<script>" + CYC_JS + "</script>"   # 공시 시계도 따로 — 실패해도 다른 것은 돈다
     js = ("<script>(function(){"
           "var root=document.documentElement,nav=document.getElementById('nav'),zs=[].slice.call(document.querySelectorAll('.dz')),"
           "meta=document.querySelector('meta[name=\"theme-color\"]'),tick=false;"
@@ -651,7 +809,7 @@ def page():
             f'<meta property="og:description" content="{esc(C["og_desc"])}">'
             f'<link rel="stylesheet" href="{FONTS}/pretendard-subset.css"><link rel="stylesheet" href="landing.css">{theme}</head><body>')
     return (head + nav() + f"<main>{hero}{sec_gap}{sec_report}{sec_stance}{sec_trust}{sec_fresh}{sec_sectors}{sec_brief}{sec_end}</main>"
-            + foot() + rv_js + orb_js + js + "</body></html>")
+            + foot() + rv_js + cyc_js + orb_js + js + "</body></html>")
 
 
 if __name__ == "__main__":
