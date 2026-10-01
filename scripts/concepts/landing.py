@@ -40,10 +40,28 @@ GAP = {"year": 2025, "none": 1573, "total": 2674, "src": "한국IR협의회 기�
 
 # 스크롤 등장 — .rv 가 화면 높이 90% 선 위로 들어오면 한 번 올라온다(CSS .rv-on .rv · 애플의 시작점 't - 90vh'). 같은 순간 함께 들어온 글끼리만
 # 0.08초씩 차례를 두고(최대 0.4초), 이미 지나간 글(앵커·되돌아온 스크롤 자리)은 곧바로 보인다. 어디서든 실패하면 숨김을 풀어 글을 살린다
+# 숫자 카운트(.cnt — 58.8% 하나만, 사장 2026-10-01): 나타나는 순간 0에서 최종값까지 1초, 올라오는 움직임과 같은 곡선. 최종 글자마다
+# 폭을 재어 칸을 고정해 세는 동안 줄이 흔들리지 않고, 끝나면 원래 글로 되돌린다(끝난 화면 = 세지 않은 화면). 세는 동안만 제목에
+# aria-label(최종값)을 달아 읽는 프로그램이 중간값을 읽지 않게 한다. 지나친 숫자 · 글꼴이 아직 안 받아졌을 때는 세지 않는다
 RV_JS = (
     "(function(){var r=document.documentElement;if(!r.classList.contains('rv-on'))return;"
+    "function bz(x){var lo=0,hi=1,t=x,u;for(var i=0;i<24;i++){t=(lo+hi)/2;u=1-t;if(3*u*u*t*.2+3*u*t*t*.2+t*t*t<x)lo=t;else hi=t}"
+    "u=1-t;return 3*u*u*t*.7+3*u*t*t+t*t*t}"   # cubic-bezier(.2,.7,.2,1)
+    r"function cnt(el,d){var s=el.textContent,m=s.match(/^(\d+)(?:\.(\d+))?(\D*)$/);"
+    "if(!m||(document.fonts&&document.fonts.status!=='loaded'))return;"
+    "var hd=el.parentNode,ip=m[1],fp=m[2]||'',to=parseFloat(ip+(fp?'.'+fp:'')),dp=fp.length,ch=s.split(''),h='',i,w=[];"
+    "hd.setAttribute('aria-label',hd.textContent);el.setAttribute('aria-hidden','true');"
+    "for(i=0;i<ch.length;i++)h+='<span>'+ch[i]+'</span>';el.innerHTML=h;var sp=el.children;"
+    "for(i=0;i<sp.length;i++)w.push(sp[i].getBoundingClientRect().width);"
+    "for(i=0;i<sp.length;i++)sp[i].style.cssText='display:inline-block;text-align:center;width:'+w[i]+'px';"
+    "function show(v){var a=v.toFixed(dp).split('.'),n=ip.length,k;for(i=0;i<n;i++){k=a[0].length-n+i;sp[i].textContent=k>=0?a[0].charAt(k):''}"
+    "for(i=0;i<dp;i++)sp[n+1+i].textContent=(a[1]||'').charAt(i)}"
+    "show(0);var t0=null;function f(ts){if(t0===null)t0=ts+d*1000;var p=Math.max(0,Math.min(1,(ts-t0)/1000));"
+    "if(p<1){show(to*bz(p));requestAnimationFrame(f)}else{el.textContent=s;el.removeAttribute('aria-hidden');hd.removeAttribute('aria-label')}}"
+    "requestAnimationFrame(f)}"
     "try{var io=new IntersectionObserver(function(es){var j=0;for(var k=0;k<es.length;k++){var e=es[k],t=e.target;"
-    "if(e.isIntersecting){t.style.setProperty('--d',Math.min(j++,5)*.08+'s');t.classList.add('in');io.unobserve(t)}"
+    "if(e.isIntersecting){var d=Math.min(j++,5)*.08;t.style.setProperty('--d',d+'s');t.classList.add('in');io.unobserve(t);"
+    "var c=t.querySelector('.cnt');if(c)cnt(c,d)}"
     "else if(e.boundingClientRect.top<0){t.classList.add('in');io.unobserve(t)}}},{rootMargin:'0px 0px -10% 0px'});"
     "var rv=document.querySelectorAll('.rv');for(var k=0;k<rv.length;k++)io.observe(rv[k])}catch(x){r.classList.remove('rv-on')}})();"
 )
@@ -529,7 +547,7 @@ def page():
             f'<script type="application/json" id="orbData">{orb_data()}</script></header>')
     # 숫자 하나 — 첫 화면 제목의 증거라 바로 다음 절. 숫자가 그림 몫이고, 제목 목록에서도 뜻이 통하게 숨은 설명을 붙인다
     gp, gs, gsrc = C["gap"]
-    sec_gap = (f'<section class="sec w solo stat" id="gap"><h2 class="stat-n rv">{esc(gp)}<span class="vh">, {esc(C["gap_sr"])}</span></h2>'
+    sec_gap = (f'<section class="sec w solo stat" id="gap"><h2 class="stat-n rv"><span class="cnt">{esc(gp)}</span><span class="vh">, {esc(C["gap_sr"])}</span></h2>'
                f'<p class="sub rv">{sents(gs)}</p><p class="src rv">{g(gsrc)}</p></section>')
     sec_report = (f'<section class="sec w" id="report"><div class="split"><div class="tx">{head_block("report")}</div>'
                   + slot("이미지", "image", "PC 4:5 / 휴대폰 1:1", "리포트 한 편의 화면") + '</div></section>')
