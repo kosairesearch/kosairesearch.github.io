@@ -424,12 +424,12 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
 .stack>.slot{margin-top:80px;aspect-ratio:21/9}
 /* 태도 절 — 그림 없는 선언 한 줄은 가운데에(빈 반쪽이 그림 빠진 자리처럼 보이지 않게) */
 .solo{text-align:center} .solo .h2{margin:0 auto;max-width:900px} .solo .sub{margin-left:auto;margin-right:auto;max-width:560px}
-/* 숫자 하나 — 첫 화면 제목('증권사가 다루지 않는 종목까지')의 증거라 첫 화면 바로 다음 절(사장 2026-10-01). 숫자가 그림 몫이고,
-   바깥 통계라 출처 줄을 단다 */
-.stat-n{font:600 clamp(72px,9vw,132px)/1 var(--font);letter-spacing:-.05em}
+/* 숫자 하나 — 첫 화면 제목('증권사가 다루지 않는 종목까지')의 증거라 첫 화면 바로 다음 절(사장 2026-10-01). 제목이 숫자를 설명하고
+   (다른 절 제목과 같은 크기) 큰 숫자가 그 아래에 선다 — 숫자가 그림 몫이다. 바깥 통계라 출처 줄을 단다 */
+.stat-h{margin:0} .stat-h .h2{display:block}
+.stat-n{display:inline-block;vertical-align:top;margin-top:14px;font:600 clamp(72px,9vw,132px)/1 var(--font);letter-spacing:-.05em}   /* 글 폭만큼(세는 칸의 폭 = 원래 글 폭) */
 .stat .sub{margin-top:28px}
 .src{margin-top:16px;font:400 13px/1.6 var(--font);color:var(--ink-62)}
-.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 /* 근거 절 — 믿을 근거 셋(짧은 이름 + 한두 문장) */
 .proof{margin-top:56px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:var(--gap)}
 .proof li{padding-top:22px;border-top:1px solid var(--line)}
@@ -512,6 +512,7 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
   .end .h2{font-size:36px;line-height:1.2}
   .sub{margin-top:18px;font-size:16px}
   .solo{text-align:left} .solo .h2,.solo .sub{margin-left:0}   /* 한 열에서는 빈 반쪽이 없으니 다른 절처럼 왼쪽 정렬 */
+  .stat-n{margin-top:10px}
   .stat .sub{margin-top:20px}
   .split>.slot,.stack>.slot{margin-top:44px;aspect-ratio:1/1}
   .slot{border-radius:16px}
@@ -687,10 +688,13 @@ def copy_text(n_rep, n_sec, brief_no, src_avg):
         "lede": f"{SCOPE} {n_rep:,}개 종목의 기업\u00a0분석\u00a0리포트를 제공합니다.",
         # '10곳 중 6곳'은 60%라 부풀린 말이 된다 — 정확한 비율로. 총수(2,674)는 첫 화면의 종목 수와 헷갈리니 출처 줄에만
         # 대기업 말투 — '나오다'(구어) 대신 '발간', '한 건도' 같은 강조 없이, 회사 수는 '개사'(사장 2026-10-01 "대기업 말투 좀 써")
-        "gap": (f"{pct}%", f"{when} 증권사 기업분석 보고서가 발간되지\u00a0않은 국내\u00a0상장사는 {GAP['none']:,}개사입니다. "
+        # 제목이 숫자를 설명한다 — 큰 숫자만 두면 '58.8%가 뭔데?'가 되고, 아래 문장은 기업 수라 비율과 바로 이어지지 않았다(사장 2026-10-01
+        # "메인 카피로 설명할 수는 없을까" → 권장안 승인). 제목은 쉬운 말('증권사 리포트'), 서브는 정확한 정의와 기업 수 — 제목과 같은 말을
+        # 되풀이하지 않게 서브의 '국내 상장사는'을 '기업은'으로. 첫 화면 제목과 같이 '증권사'로 시작해 주장과 근거가 이어진다
+        "gap_h": "증권사 리포트가 없는<br class=\"m\"> 국내\u00a0상장사",
+        "gap": (f"{pct}%", f"{when} 증권사 기업분석 보고서가 발간되지\u00a0않은 기업은 {GAP['none']:,}개사입니다. "
                            "KOSAI는 해당 기업에 대해서도 분석\u00a0리포트를\u00a0제공합니다.",
                 f"자료: {GAP['src']}, {GAP['year']}년 상장사 {GAP['total']:,}개사 집계"),
-        "gap_sr": f"{when} 증권사 기업분석 보고서가 발간되지 않은 국내 상장사 비율",
         "report": ("리포트", "한 편에 담은<br>기업 분석",
                    "사업 구조와 실적, 업황, 전망, 리스크를 차례로 정리합니다. 강세 요인과 약세 요인을 함께 제시해 어느\u00a0한쪽으로\u00a0치우치지\u00a0않습니다."),
         "report_shot": "KOSAI 기업 분석 리포트의 실제 화면. 목차와 리포트 개요, 사업 구조, 실적 추이가 차례로 보입니다.",
@@ -749,9 +753,10 @@ def page():
             + f'<div class="alt">{more(C["hero_link"])}</div></div>'
             f'<div class="orb-box" aria-hidden="true"><canvas class="orb" id="orb"></canvas></div>'
             f'<script type="application/json" id="orbData">{orb_data()}</script></header>')
-    # 숫자 하나 — 첫 화면 제목의 증거라 바로 다음 절. 숫자가 그림 몫이고, 제목 목록에서도 뜻이 통하게 숨은 설명을 붙인다
+    # 숫자 하나 — 첫 화면 제목의 증거라 바로 다음 절. 제목이 숫자를 설명하고(무엇) 큰 숫자가 그 아래(얼마). 숫자 칸(.cnt)은 h2 바로
+    # 아래 두어야 RV_JS 의 cnt() 가 h2 에 읽는 프로그램용 이름(제목 + 최종값)을 단다
     gp, gs, gsrc = C["gap"]
-    sec_gap = (f'<section class="sec w solo stat" id="gap"><h2 class="stat-n rv"><span class="cnt">{esc(gp)}</span><span class="vh">, {esc(C["gap_sr"])}</span></h2>'
+    sec_gap = (f'<section class="sec w solo stat" id="gap"><h2 class="stat-h rv"><span class="h2">{C["gap_h"]}</span> <span class="cnt stat-n">{esc(gp)}</span></h2>'
                f'<p class="sub rv">{sents(gs)}</p><p class="src rv">{g(gsrc)}</p></section>')
     sec_report = (f'<section class="sec w" id="report"><div class="split"><div class="tx">{head_block("report")}</div>'
                   + shot(C["report_shot"]) + '</div></section>')
