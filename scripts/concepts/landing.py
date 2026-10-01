@@ -355,11 +355,15 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
 @media (max-width:720px){.shot{margin-top:28px} .shot .m1,.shot .m2{border-radius:14px}}
 /* 업종 절 그림 — 실제 업종 분석 화면(2026-10-01 사장 "업종 분석해준다는 걸 이야기 못하는 것 같아 … 히트맵으로 정리해놓는다는 식으로밖에
    안 들려"). 리포트 절과 같은 옷이되, 넓은 화면은 데스크톱 화면 한 장을 본문 폭 그대로 둔다 — 제목 아래에 쌓는 절이라 오른쪽으로 잇지
-   않는다. 한 열은 리포트 절처럼 휴대폰 화면 두 장(01 업종 개요 · 05 리스크 요인) */
+   않는다. 한 열은 리포트 절처럼 휴대폰 화면 두 장(01 업종 개요 · 05 리스크 요인).
+   데스크톱 화면은 01 업종 개요가 끝난 여백에서 끊겨 있고(landing_art.py), 흐려지는 구간은 그 여백(아래 64px)에만 건다 — 글은 끝까지 또렷하고
+   다음 절 제목이 흐리게 비치지 않는다(사장 2026-10-01 "글씨가 살짝 보이는데 저거 거슬리네"). 휴대폰 화면은 리포트 절처럼 글이 이어지다 풀린다 */
 .shot.full{margin:48px -48px -48px;padding:24px 48px 48px;
-  -webkit-mask-image:linear-gradient(to bottom,#000 58%,transparent 95%);mask-image:linear-gradient(to bottom,#000 58%,transparent 95%)}
+  -webkit-mask-image:linear-gradient(to bottom,#000 calc(100% - 112px),transparent calc(100% - 48px));
+  mask-image:linear-gradient(to bottom,#000 calc(100% - 112px),transparent calc(100% - 48px))}
 .shot.full .desk{width:auto}
-@media (max-width:820px){.shot.full{margin:40px calc(-1 * var(--pad)) -40px;padding:16px var(--pad) 40px}}
+@media (max-width:820px){.shot.full{margin:40px calc(-1 * var(--pad)) -40px;padding:16px var(--pad) 40px;
+  -webkit-mask-image:linear-gradient(to bottom,#000 58%,transparent 95%);mask-image:linear-gradient(to bottom,#000 58%,transparent 95%)}}
 @media (max-width:720px){.shot.full{margin-top:28px}}
 
 /* 갱신 절 그림 — 1년 공시 시계(CYC_JS 가 그린다 · 상자 없음 · 사장 2026-10-01). 바깥 원은 한 해의 길(같은 간격의 점), 안쪽 선이
@@ -556,7 +560,7 @@ def slot(kind, icon, ratio, name):
 
 # 리포트 절 · 업종 절 그림 — landing_art.py 가 찍는 실제 화면. 이름: (가로, 세로) — img 의 width · height(자리를 미리 잡아 밀림이 없게)
 SHOT = {"report": {"desk": (1840, 1413), "m1": (900, 1477), "m2": (900, 1477)},
-        "sector": {"desk": (2112, 1312), "m1": (900, 1477), "m2": (900, 1477)}}
+        "sector": {"desk": (2112, 1277), "m1": (900, 1477), "m2": (900, 1477)}}
 
 
 def shot(kind, label, cls="shot"):
