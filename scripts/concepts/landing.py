@@ -40,24 +40,27 @@ GAP = {"year": 2025, "none": 1573, "total": 2674, "src": "한국IR협의회 기�
 
 # 스크롤 등장 — .rv 가 화면 높이 90% 선 위로 들어오면 한 번 올라온다(CSS .rv-on .rv · 애플의 시작점 't - 90vh'). 같은 순간 함께 들어온 글끼리만
 # 0.08초씩 차례를 두고(최대 0.4초), 이미 지나간 글(앵커·되돌아온 스크롤 자리)은 곧바로 보인다. 어디서든 실패하면 숨김을 풀어 글을 살린다
-# 숫자 카운트(.cnt — 58.8% 하나만, 사장 2026-10-01): 나타나는 순간 0에서 최종값까지 1초, 올라오는 움직임과 같은 곡선. 최종 글자마다
-# 폭을 재어 칸을 고정해 세는 동안 줄이 흔들리지 않고, 끝나면 원래 글로 되돌린다(끝난 화면 = 세지 않은 화면). 세는 동안만 제목에
-# aria-label(최종값)을 달아 읽는 프로그램이 중간값을 읽지 않게 한다. 지나친 숫자 · 글꼴이 아직 안 받아졌을 때는 세지 않는다
+# 숫자 카운트(.cnt — 58.8% 하나만, 사장 2026-10-01): 나타나는 순간 0에서 최종값까지 1초, 올라오는 움직임과 같은 곡선.
+# 원래 글에서 글자마다 시작 자리를 재어(Range — 커닝 · 자간 포함) 그 간격대로 칸을 고정하므로 세는 동안 줄이 흔들리지 않는다.
+# 끝나도 원래 글로 되돌리지 않는다 — 되돌리면 사파리가 글자 간격을 다시 계산해 '%'가 끝에서 움직였다(사장 휴대폰 2026-10-01).
+# 칸 폭은 em 이라 화면 크기가 바뀌어도 같이 커진다. 세기 시작하면 제목에 aria-label(최종값)을 달고 숫자 칸은 읽는 프로그램에서
+# 숨긴다(칸이 한 글자씩 읽히지 않게). 지나친 숫자 · 움직임 줄임 · 글꼴을 받기 전에는 세지 않는다
 RV_JS = (
     "(function(){var r=document.documentElement;if(!r.classList.contains('rv-on'))return;"
     "function bz(x){var lo=0,hi=1,t=x,u;for(var i=0;i<24;i++){t=(lo+hi)/2;u=1-t;if(3*u*u*t*.2+3*u*t*t*.2+t*t*t<x)lo=t;else hi=t}"
     "u=1-t;return 3*u*u*t*.7+3*u*t*t+t*t*t}"   # cubic-bezier(.2,.7,.2,1)
-    r"function cnt(el,d){var s=el.textContent,m=s.match(/^(\d+)(?:\.(\d+))?(\D*)$/);"
-    "if(!m||(document.fonts&&document.fonts.status!=='loaded'))return;"
-    "var hd=el.parentNode,ip=m[1],fp=m[2]||'',to=parseFloat(ip+(fp?'.'+fp:'')),dp=fp.length,ch=s.split(''),h='',i,w=[];"
-    "hd.setAttribute('aria-label',hd.textContent);el.setAttribute('aria-hidden','true');"
+    r"function cnt(el,d){var s=el.textContent,m=s.match(/^(\d+)(?:\.(\d+))?(\D*)$/),tn=el.firstChild;"
+    "if(!m||!tn||(document.fonts&&document.fonts.status!=='loaded'))return;"
+    "var hd=el.parentNode,ip=m[1],fp=m[2]||'',to=parseFloat(ip+(fp?'.'+fp:'')),dp=fp.length,ch=s.split(''),h='',i,b,x=[],"
+    "fs=parseFloat(getComputedStyle(el).fontSize),rg=document.createRange();"
+    "for(i=0;i<ch.length;i++){rg.setStart(tn,i);rg.setEnd(tn,i+1);b=rg.getBoundingClientRect();x.push([b.left,b.width])}"
+    "hd.setAttribute('aria-label',hd.textContent);el.setAttribute('aria-hidden','true');el.style.whiteSpace='nowrap';"
     "for(i=0;i<ch.length;i++)h+='<span>'+ch[i]+'</span>';el.innerHTML=h;var sp=el.children;"
-    "for(i=0;i<sp.length;i++)w.push(sp[i].getBoundingClientRect().width);"
-    "for(i=0;i<sp.length;i++)sp[i].style.cssText='display:inline-block;text-align:center;width:'+w[i]+'px';"
+    "for(i=0;i<sp.length;i++)sp[i].style.cssText='display:inline-block;text-align:center;width:'+((i<sp.length-1?x[i+1][0]-x[i][0]:x[i][1])/fs).toFixed(4)+'em';"
     "function show(v){var a=v.toFixed(dp).split('.'),n=ip.length,k;for(i=0;i<n;i++){k=a[0].length-n+i;sp[i].textContent=k>=0?a[0].charAt(k):''}"
     "for(i=0;i<dp;i++)sp[n+1+i].textContent=(a[1]||'').charAt(i)}"
     "show(0);var t0=null;function f(ts){if(t0===null)t0=ts+d*1000;var p=Math.max(0,Math.min(1,(ts-t0)/1000));"
-    "if(p<1){show(to*bz(p));requestAnimationFrame(f)}else{el.textContent=s;el.removeAttribute('aria-hidden');hd.removeAttribute('aria-label')}}"
+    "if(p<1){show(to*bz(p));requestAnimationFrame(f)}else for(i=0;i<sp.length;i++)sp[i].textContent=ch[i]}"
     "requestAnimationFrame(f)}"
     "try{var io=new IntersectionObserver(function(es){var j=0;for(var k=0;k<es.length;k++){var e=es[k],t=e.target;"
     "if(e.isIntersecting){var d=Math.min(j++,5)*.08;t.style.setProperty('--d',d+'s');t.classList.add('in');io.unobserve(t);"
