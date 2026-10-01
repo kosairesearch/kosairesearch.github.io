@@ -275,15 +275,17 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .end .h2{margin:0 auto;max-width:820px;font-size:clamp(40px,5.8vw,80px);line-height:1.1;letter-spacing:-.045em}
 .end .search{margin:48px auto 0;max-width:560px;text-align:left}
 
-/* 꼬리 — 스테이징 그대로 */
+/* 꼬리 — 스테이징 옷. 로고 아래 소개 문장은 두지 않는다 — 바로 아래 '서비스' 목록과 같은 말이고, 명사만 늘어놓은 줄은 한국어로
+   메뉴처럼 읽힌다(사장 2026-10-01 "카피 이론을 잘 활용하는 건 중요하지. 근데 한국어로 자연스럽게").
+   개인정보 처리방침은 옆 링크보다 한 단계만 굵게(500, 색은 같게) — 표준 개인정보 보호지침 제20조①의 '다른 고지사항과 구분'.
+   굵기는 법 의무가 아니라 위원회 권장 기준(법 제12조)이고, 국내 6곳 실측도 구분은 하되 컬리 · 카카오페이는 한 단계만이었다 */
 .foot{margin-top:var(--sec);border-top:1px solid var(--hair);padding:56px 0 48px}
 .foot .brand{display:inline-flex;min-height:44px} .foot .brand img{height:13px}
-.ftag{margin-top:14px;font:400 14px/22px var(--font);color:var(--ink-72);max-width:320px}
 .fgrid{display:grid;grid-template-columns:auto auto auto;justify-content:start;column-gap:72px;margin-top:32px}
 .fcol{display:flex;flex-direction:column}
 .fcol h4{margin:0 0 6px;font:600 12px/16px var(--font);color:var(--ink-62)}
 .fcol a{font:400 14px/20px var(--font);color:var(--ink-72);padding:6px 0;white-space:nowrap} .fcol a:hover{color:var(--ink)}
-.fcol a.pp{font-weight:600;color:var(--ink)}
+.fcol a.pp{font-weight:500}
 .biz{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:4px 16px;font:400 12px/18px var(--font);color:var(--ink-62)}
 .copy{margin-top:28px;font:400 12px/18px var(--font);color:var(--ink-62)}
 
@@ -384,7 +386,6 @@ def nav():
 def foot():
     return (f'<footer class="foot"><div class="w"><a class="brand" href="#"><img class="lt" src="{ASSETS}/kosai-wordmark-black.png" alt="KOSAI">'
             f'<img class="dk" src="{ASSETS}/kosai-wordmark-white.png" alt="KOSAI"></a>'
-            '<p class="ftag">국내 상장사 리포트, 업종 분석, 모닝브리핑</p>'
             '<div class="fgrid"><div class="fcol"><h4>서비스</h4><a href="#">홈</a><a href="#">리포트</a><a href="#">업종 분석</a><a href="#">관심종목</a><a href="#">모닝브리핑</a></div>'
             '<div class="fcol"><h4>회사</h4><a href="#">회사 소개</a><a href="#">문의하기</a><a href="#">피드백</a></div>'
             '<div class="fcol"><h4>정책</h4><a href="#">이용약관</a><a class="pp" href="#">개인정보 처리방침</a></div></div>'
