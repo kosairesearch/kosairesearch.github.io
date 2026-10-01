@@ -40,17 +40,18 @@ SECTOR = "바이오·제약"
 OUT = os.path.join(ROOT, "preview", "concepts", "landing", "img")
 NAV = 60   # 머리 줄 높이 — 찍은 뒤 덜어 낸다
 # 이름: (화면 폭, 높이, 배율, 머리 아래 올 절(None 이면 맨 위 그대로), 그 절의 화면 위 거리, 자를 범위(화면 좌표 x0 · y0 · x1 · y1),
-#        저장 폭, 켜져 있어야 할 목차)
+#        저장 폭, 켜져 있어야 할 목차, 아래를 끊을 자리(선택자와 그 위쪽 여유 — 자를 범위의 y1 보다 위면 거기서 끊는다, None 이면 y1 그대로))
 SHOTS = {
-    "desk": (1280, 1000, 2, "#s01", 92, (56, NAV, 1280, 1000), 1840, "01"),
-    "m1": (390, 844, 3, "#s01", 112, (0, NAV, 390, 700), 900, "01"),
-    "m2": (390, 844, 3, "#s03", 112, (0, NAV, 390, 700), 900, "03"),
+    "desk": (1280, 1000, 2, "#s01", 92, (56, NAV, 1280, 1000), 1840, "01", None),
+    "m1": (390, 844, 3, "#s01", 112, (0, NAV, 390, 700), 900, "01", None),
+    "m2": (390, 844, 3, "#s03", 112, (0, NAV, 390, 700), 900, "03", None),
 }
-# 업종 화면 — 데스크톱은 본문 폭(1056px)에 16px 씩 여유를 둔 범위를 2112px(2배)로 담는다
+# 업종 화면 — 데스크톱은 본문 폭(1056px)에 16px 씩 여유를 둔 범위를 2112px(2배)로 담는다. 아래는 다음 절(02) 제목 8px 위, 01 업종 개요가
+# 끝난 여백에서 끊는다 — 제목 윗부분이 그림 끝에 흐리게 비쳤다(사장 2026-10-01 "글씨가 살짝 보이는데 저거 거슬리네")
 SECTOR_SHOTS = {
-    "desk": (1280, 900, 2, None, 0, (96, 84, 1184, 760), 2112, "01"),
-    "m1": (390, 844, 3, None, 0, (0, NAV, 390, 700), 900, "01"),
-    "m2": (390, 844, 3, "#s05", 112, (0, NAV, 390, 700), 900, "05"),
+    "desk": (1280, 900, 2, None, 0, (96, 84, 1184, 760), 2112, "01", ("#s02", 8)),
+    "m1": (390, 844, 3, None, 0, (0, NAV, 390, 700), 900, "01", None),
+    "m2": (390, 844, 3, "#s05", 112, (0, NAV, 390, 700), 900, "05", None),
 }
 HIDE = ".stats,.stats-note{display:none!important}"   # 업종 화면의 매일 바뀌는 수치 줄
 
@@ -63,7 +64,7 @@ class Quiet(SimpleHTTPRequestHandler):
 def take(br, url, shots, prefix, route=None, css=None):
     """shots 대로 라이트 · 다크를 찍어 prefix-{이름}-{테마}.webp 로 저장한다. 목차 표시가 맞지 않으면 멈춘다"""
     from PIL import Image
-    for name, (w, h, dpr, sel, off, box, out_w, want) in shots.items():
+    for name, (w, h, dpr, sel, off, box, out_w, want, cut) in shots.items():
         for theme in ("light", "dark"):
             phone = w < 500
             ctx = br.new_context(viewport={"width": w, "height": h}, device_scale_factor=dpr, reduced_motion="reduce",
@@ -84,8 +85,10 @@ def take(br, url, shots, prefix, route=None, css=None):
             if not any(t.startswith(want) for t in on):
                 sys.exit(f"{prefix} {name} {theme}: 목차 표시가 {want} 가 아니다 — {on}")
             im = Image.open(io.BytesIO(pg.screenshot())).convert("RGB")
-            ctx.close()
             x0, y0, x1, y1 = box
+            if cut:
+                y1 = min(y1, round(pg.evaluate("s=>document.querySelector(s).getBoundingClientRect().top", cut[0])) - cut[1])
+            ctx.close()
             im = im.crop((x0 * dpr, y0 * dpr, x1 * dpr, y1 * dpr))
             im = im.resize((out_w, round(im.height * out_w / im.width)), Image.LANCZOS)
             path = os.path.join(OUT, f"{prefix}-{name}-{theme}.webp")
