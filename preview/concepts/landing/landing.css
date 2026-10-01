@@ -108,6 +108,15 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
   .hero-in>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
   .hero-in>.lede{animation-delay:.12s} .hero-in>.search{animation-delay:.22s} .hero-in>.alt{animation-delay:.3s}
 }
+/* 스크롤 등장 — 첫 화면 아래의 글이 아래에서 위로 조용히 올라온다(사장 2026-10-01 "애플이나 Valley AI 처럼, 화려하지 않고 과하지 않게").
+   거리는 애플(--content-offset-y-distance 24px), 빠르기는 Valley AI(0.6초 ease-out — 90%까지 0.41초)와 같다: 24px · 1초 강한
+   ease-out(90%까지 0.44초, 0.59초면 1px 안). Valley 의 50px 는 쓰지 않는다(과하지 않게). 한 번만. 한꺼번에 들어온 글끼리만
+   0.08초씩 차례로(RV_JS 가 --d 를 준다 — 혼자 들어온 글은 기다리지 않는다).
+   스크립트가 켤 때만 숨기고(html.rv-on — 스크립트가 안 돌거나 실패하면 처음부터 보인다), 움직임 줄임이면 켜지 않는다.
+   그림 자리는 움직이지 않는다 */
+.rv-on .rv{opacity:0;transform:translate3d(0,24px,0);transition:opacity 1s cubic-bezier(.2,.7,.2,1) var(--d,0s),transform 1s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
+.rv-on .rv.in{opacity:1;transform:none}
+@media print,(prefers-reduced-motion:reduce){.rv-on .rv{opacity:1;transform:none;transition:none}}
 
 /* 절 — 작은 이름표 · 큰 제목 · 짧은 서브 · 그림 */
 .sec{padding-top:var(--sec)}
