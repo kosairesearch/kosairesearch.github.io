@@ -23,7 +23,7 @@ BODY = '''<main class="wrap"><div class="nf">
   <p class="crumb">404</p>
   <h1>페이지를 찾을 수 없습니다</h1>
   <p class="sub">주소가 바뀌었거나 잘못 입력되었을 수 있습니다. 종목 리포트는 리포트 목록에서 종목명이나 종목코드로 찾으실 수 있습니다.</p>
-  <div class="acts"><a class="btn btn-ink" href="/Reports.html">리포트 목록으로</a><a class="tbtn" href="/Home.html">홈으로</a></div>
+  <div class="acts"><a class="btn btn-ink" href="/Reports.html">전체 리포트 보기</a><a class="tbtn" href="/Home.html">홈으로</a></div>
   <p class="alt">계속 같은 화면이 보이면 <a href="/Contact.html">문의하기</a>로 알려 주시기 바랍니다. 주소를 함께 적어 주시면 빠르게 확인하겠습니다.</p>
 </div></main>'''
 

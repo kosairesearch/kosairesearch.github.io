@@ -187,7 +187,7 @@ a{color:inherit;text-decoration:none}
 .tbl tbody th{font-weight:500}
 /* 푸터 */
 .foot{margin-top:96px;border-top:1px solid var(--hair);padding:56px 0 48px}
-.foot .brand img{height:13px} .ftag{margin:14px 0 0;font:400 14px/22px var(--font);color:var(--ink-72);max-width:260px}
+.foot .brand img{height:13px}
 .fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;max-width:560px;margin-top:32px}
 .fcol{display:flex;flex-direction:column;gap:9px} .fcol h4{margin:0 0 4px;font:600 12px/16px var(--font);color:var(--ink-62)} .fcol a{font:400 14px/20px var(--font);color:var(--ink-72)} .fcol a:hover{color:var(--ink)}
 .biz{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:4px 16px;font:400 12px/18px var(--font);color:var(--ink-62)} .copy{margin-top:32px;font:400 12px/18px var(--font);color:var(--ink-62)}
@@ -259,6 +259,11 @@ def set_mode(mode):
     JS = links(JS_T + (JS_DEMO if mode == 'preview' else '') + '\n})();')
 
 
+def title(name):
+    """문서 제목(브라우저 탭 이름). '— 디자인 시안' 은 시안(preview)에만 붙인다 — 스테이징 · 실사이트 탭에 남지 않게(2026-10-03 문구 점검)."""
+    return f'{name} — 디자인 시안 | KOSAI' if MODE == 'preview' else f'{name} | KOSAI'
+
+
 def links(html):
     """헤더·푸터·메뉴의 실사이트 주소를 모드에 맞게."""
     if MODE == 'live':
@@ -305,7 +310,7 @@ def nav(active):
 </div>
 </nav>
 <div class="mmenu" id="mmenu"><div class="mm-links">{lk}</div><div class="sep"></div><div class="mm-auth" id="mauth"><a href="/Login.html">로그인</a><a href="/Signup.html">회원가입</a></div>
-<div class="mm-foot"><a href="/About.html">About</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보처리방침</a></div></div>''')
+<div class="mm-foot"><a href="/About.html">회사 소개</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보 처리방침</a></div></div>''')
 
 
 # 사업자 정보는 scripts/patch_biz_footer.py 의 BIZ 하나가 원본이다(옛 푸터 34장도 같은 곳에서 나온다) — 여기서 베끼지 않는다
@@ -314,14 +319,13 @@ BIZ_SPANS = ''.join(f'<span>{k} {v}</span>' for k, v, _en in _biz.BIZ)
 
 FOOTER_T = '''<footer class="foot"><div class="wrap">
   <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
-  <p class="ftag">한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p>
   <div class="fgrid">
     <div class="fcol"><h4>서비스</h4><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div>
-    <div class="fcol"><h4>회사</h4><a href="/About.html">About</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a></div>
-    <div class="fcol"><h4>정책</h4><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보처리방침</a></div>
+    <div class="fcol"><h4>회사</h4><a href="/About.html">회사 소개</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a></div>
+    <div class="fcol"><h4>정책</h4><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보 처리방침</a></div>
   </div>
   <div class="biz">{BIZ_SPANS}</div>
-  <div class="copy">© 2026 KOSAI — All rights reserved.</div>
+  <div class="copy">© 2026 KOSAI</div>
 </div></footer>'''.replace('{BIZ_SPANS}', BIZ_SPANS)
 
 

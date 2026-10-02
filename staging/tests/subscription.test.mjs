@@ -136,16 +136,16 @@ ok("가입 직후 오늘 열람 0", w.KOSDemo.readsToday() === 0);
 console.log("\n── 구독 없음 ──");
 localStorage.clear();
 await openSubs();
-ok("무료 안내를 보여 준다", txt().includes("무료로 이용 중입니다"));
-ok("플랜 보기로 보낸다", btns().includes("플랜 보기"), btns().join("|"));
+ok("무료 안내를 보여 준다", txt().includes("무료로 이용하고 계십니다"));
+ok("멤버십 보기로 보낸다", btns().includes("멤버십 보기"), btns().join("|"));
 ok("해지·환불 버튼은 없다", !btns().includes("구독 해지") && !btns().includes("환불 신청"));
 
 console.log("\n── 이용 중 ──");
 w.KOSDemo.subscribe("basic");
 await openSubs();
 /* ready 는 한 번 resolve 되면 그때의 스냅샷을 영원히 들고 있다. 그걸로 그리면
-   결제 전에 창을 한 번 열어 본 사람은 결제 후에도 '무료로 이용 중' 을 본다. */
-ok("결제했으면 무료라고 하지 않는다", !txt().includes("무료로 이용 중입니다"), txt().slice(0, 160));
+   결제 전에 창을 한 번 열어 본 사람은 결제 후에도 '무료로 이용하고 계십니다' 를 본다. */
+ok("결제했으면 무료라고 하지 않는다", !txt().includes("무료로 이용하고 계십니다"), txt().slice(0, 160));
 ok("이용 중인 플랜 BASIC", /이용 중인 플랜\s*BASIC/.test(txt()));
 ok("하루 한도와 남은 열람을 보여 준다", txt().includes("하루 열람 한도") && left() === "5");
 ok("다음 결제일을 보여 준다", txt().includes("다음 결제일"));
@@ -582,9 +582,9 @@ console.log("\n── 업그레이드하고 나서 환불 ──");
 console.log("\n── 결제 실패 ──");
 localStorage.clear(); w.KOSDemo.subscribe("basic"); w.KOSDemo.simulate("past_due");
 await openSubs();
-/* 카드가 거절된 유료 회원에게 '무료로 이용 중' 을 보여 주면, 자기가 왜 못
+/* 카드가 거절된 유료 회원에게 '무료로 이용하고 계십니다' 를 보여 주면, 자기가 왜 못
    보는지도 카드를 어떻게 고치는지도 알 수 없다. */
-ok("무료라고 하지 않는다", !txt().includes("무료로 이용 중입니다"), txt().slice(0, 160));
+ok("무료라고 하지 않는다", !txt().includes("무료로 이용하고 계십니다"), txt().slice(0, 160));
 ok("배지가 '결제 실패'", txt().includes("결제 실패"));
 ok("왜 막혔는지 설명한다", txt().includes("승인되지 않았습니다"));
 /* 카드 재등록과 해지, 둘뿐이다. 플랜 변경까지 두면 무엇부터 눌러야 할지가

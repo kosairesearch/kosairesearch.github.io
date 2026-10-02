@@ -17,9 +17,9 @@ import comp_common as C  # noqa: E402
 
 PAGES = {
     'terms':   dict(src='Terms.html',   out='preview/terms.html',   h1='이용약관',
-                    title='이용약관 — 디자인 시안 | KOSAI', num=re.compile(r'^제(\d+)조\s*\((.*)\)\s*$')),
-    'privacy': dict(src='Privacy.html', out='preview/privacy.html', h1='개인정보처리방침',
-                    title='개인정보처리방침 — 디자인 시안 | KOSAI', num=re.compile(r'^(\d+)\.\s*(.*)$')),
+                    title='이용약관', num=re.compile(r'^제(\d+)조\s*\((.*)\)\s*$')),
+    'privacy': dict(src='Privacy.html', out='preview/privacy.html', h1='개인정보 처리방침',
+                    title='개인정보 처리방침', num=re.compile(r'^(\d+)\.\s*(.*)$')),
 }
 
 CSS = '''
@@ -68,7 +68,7 @@ def build(key, out_path=None):
         toc.append(f'<a href="#s{i:02d}"><span class="n">{i:02d}</span>{short}</a>')
         chips.append(f'<a href="#s{i:02d}">{i:02d} {short}</a>')
         body.append(f'<section class="sec" id="s{i:02d}"><div class="sec-h"><h2>{title}</h2></div><div class="prose">{inner}</div></section>')
-    html = (C.head(cfg['title']) + '\n<style>\n' + C.CSS + '\n' + C.PROSE_CSS + '\n' + C.TOC_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + C.TOC_MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+    html = (C.head(C.title(cfg['title'])) + '\n<style>\n' + C.CSS + '\n' + C.PROSE_CSS + '\n' + C.TOC_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + C.TOC_MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('') + f'''
 <main class="wrap">
   <header class="page-hero">

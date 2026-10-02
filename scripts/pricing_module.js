@@ -12,7 +12,7 @@ const EN = () => {
   return !!(window.KOSi18n && window.KOSi18n.lang === 'en');
 };
 const T = {
-  ko: { start: '업그레이드', current: '이용 중', manage: '구독 관리',
+  ko: { start: '{p} 구독하기', current: '이용 중', manage: '구독 관리',
         up: 'PRO로 업그레이드', down: 'BASIC으로 변경', badge: '이용 중',
         pend: '{d}부터 적용', pendBadge: '변경 예정',
         undo: '변경 취소', fixCard: '결제 수단 변경',
@@ -30,7 +30,7 @@ const T = {
         okDown: '{d}부터 BASIC 플랜으로 변경됩니다.',
         okUndo: '플랜 변경이 취소되었습니다.',
         fail: '처리에 실패했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.' },
-  en: { start: 'Upgrade', current: 'Current plan', manage: 'Manage subscription',
+  en: { start: 'Subscribe to {p}', current: 'Current plan', manage: 'Manage subscription',
         up: 'Upgrade to PRO', down: 'Switch to BASIC', badge: 'Current',
         pend: 'From {d}', pendBadge: 'Scheduled',
         undo: 'Undo change', fixCard: 'Change card',
@@ -117,7 +117,7 @@ function paint() {
       msg.className = 'plan-msg show' + (flash.err ? ' err' : '');
     }
 
-    let label = k.start, badge = null;
+    let label = k.start.replace('{p}', id === 'pro' ? 'PRO' : 'BASIC'), badge = null;   // 구독 전에는 '업그레이드'가 아니라 어느 요금제를 구독하는지 말한다(2026-10-03)
     if (due) {
       // 결제가 밀려 멈춘 구독이다. 플랜을 바꿀 게 아니라 카드를 먼저 고쳐야 한다.
       label = k.fixCard;

@@ -54,7 +54,7 @@ if(window.KOSi18n) window.KOSi18n.register({
   "자세한 의견 (선택)":"Tell us more (optional)",
   "위 내용을 이해했으며 되돌릴 수 없음에 동의합니다":
     "I understand this is permanent and cannot be undone",
-  "확인을 위해 '탈퇴' 를 입력하여 주십시오":"Type ‘탈퇴’ to confirm",
+  "확인을 위해 '탈퇴'를 입력하여 주십시오":"Type ‘탈퇴’ to confirm",
   "탈퇴하기":"Delete account", "취소":"Cancel",
   "회원 탈퇴가 완료되었습니다":"Your account has been deleted",
   "그동안 이용해 주셔서 감사합니다.":"Thank you for using KOSAI.",
@@ -116,7 +116,7 @@ async function openWithdrawModal(){
   const lang = (window.KOSi18n ? KOSi18n.lang : 'ko');
   const WORD = lang === 'en' ? 'DELETE' : '탈퇴';          // 언어별 확인 문구
   const typePlaceholder = lang === 'en'
-    ? `Type ‘${WORD}’ to confirm` : `확인을 위해 ‘${WORD}’ 를 입력하십시오`;
+    ? `Type ‘${WORD}’ to confirm` : `확인을 위해 ‘${WORD}’를 입력하십시오`;
   const ov = document.createElement('div');
   ov.id = 'wdModal'; ov.className = 'wd-ov';
   /* 아래 틀에는 우리 문구와 상수만 들어간다. 이메일(카카오는 닉네임이 올 수 있다 —

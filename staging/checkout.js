@@ -46,7 +46,7 @@ const T = {
     agree1: '<a href="Terms.html" target="_blank" rel="noopener">이용약관</a>과 <a href="Privacy.html" target="_blank" rel="noopener">개인정보 처리방침</a>에 동의합니다. (필수)',
     agree2: "매월 같은 날짜에 등록하신 카드로 자동 결제되는 정기결제에 동의합니다. 결제가 승인되지 않는 경우 1일·3일·5일·7일째에 다시 시도되는 것에 동의합니다. (필수)",
     agree3: "디지털 콘텐츠 특성상 리포트를 열람하시면 청약철회가 제한될 수 있음을 확인했습니다. (필수)",
-    agree4: "만 19세 이상입니다. 미성년자인 경우 법정대리인의 동의를 받았습니다. (필수)",
+    agree4: "만 19세 이상이거나, 미성년자인 경우 법정대리인의 동의를 받았습니다. (필수)",
     pay: "결제하고 시작하기",
     fine: '결제 후 7일 이내에 리포트를 열람하지 않으셨다면 전액 환불됩니다. 자세한 기준은 <a href="pricing.html#faq">환불 기준</a>을 확인하여 주시기 바랍니다. 구독은 <a href="billing.html">구독 관리</a>에서 언제든지 해지하실 수 있습니다.',
     loading: "불러오는 중…", paying: "결제창을 여는 중…", confirming: "결제를 확인하는 중…",
@@ -83,7 +83,7 @@ const T = {
     agree1: 'I agree to the <a href="Terms.html" target="_blank" rel="noopener">Terms of Service</a> and <a href="Privacy.html" target="_blank" rel="noopener">Privacy Policy</a>. (required)',
     agree2: "I agree to recurring monthly charges to the card I register, on the same date each month, and to retries on days 1, 3, 5 and 7 if a charge is declined. (required)",
     agree3: "I understand that opening a report may limit my right to withdraw, as this is digital content. (required)",
-    agree4: "I am 19 or older. If I am a minor, I have my legal guardian's consent. (required)",
+    agree4: "I am 19 or older, or I am a minor with my legal guardian's consent. (required)",
     pay: "Pay and start",
     fine: 'If you have not opened a report within 7 days of payment, you get a full refund. See <a href="pricing.html#faq">refund terms</a> for details. You can cancel anytime on the <a href="billing.html">subscription page</a>.',
     loading: "Loading…", paying: "Opening the payment window…", confirming: "Confirming your payment…",
@@ -178,7 +178,7 @@ function form(plan, sub) {
 
     <aside class="sum glass">
       <span class="plan-badge">${esc(plan.name)}</span>
-      <div class="amt">${esc(won(plan.price, EN()))}<small> / ${EN() ? "mo" : "월"}</small></div>
+      <div class="amt">${EN() ? `${esc(won(plan.price, true))}<small> / mo</small>` : `<small class="pre">월 </small>${esc(won(plan.price, false))}`}</div>
       <div class="cyc">${esc(k.vat)}</div>
       <ul>
         <li><span>${esc(k.sumPlan)}</span><b>${esc(plan.name)}</b></li>

@@ -109,10 +109,10 @@ var REPORTS=(window.KOS_REPORTS&&KOS_REPORTS.reports)||{};
 var VALS=(window.KOS_VALUATION&&KOS_VALUATION.stocks)||{};
 var SITE_URL='https://kosai.kr/stock.html?ticker=';
 var T={ watch:'관심종목 추가', watched:'관심종목 추가됨',
-  lockTitle:'리포트 전문은 구독 회원에게 제공됩니다', lockSub:'BASIC 월 9,900원부터', lockSubN:'{s}개 섹션 · 약 {m}분 분량 · BASIC 월 9,900원부터',
-  cta:'멤버십 보기', ctaLogin:'로그인하고 이어보기', ctaOpen:'이어서 읽기', loading:'불러오는 중…',
+  lockTitle:'리포트 전체는 구독 회원에게 제공됩니다', lockSub:'BASIC 월 9,900원부터', lockSubN:'{s}개 섹션 · 약 {m}분 분량 · BASIC 월 9,900원부터',
+  cta:'멤버십 보기', ctaLogin:'로그인하고 이어 보기', ctaOpen:'이어서 읽기', loading:'불러오는 중…',
   note:'이미 구독 중이시라면 로그인하여 주시기 바랍니다.',
-  limitT:'일일 열람 한도에 도달했습니다', limitS:'열람 한도는 매일 자정(한국 시간)에 초기화됩니다.', upgrade:'PRO로 업그레이드',
+  limitT:'하루 열람 한도에 도달했습니다', limitS:'열람 한도는 매일 자정(한국 시간)에 초기화됩니다.', upgrade:'PRO로 업그레이드',
   errNone:'이 종목은 유료 구간이 아직 준비되지 않았습니다.', errFail:'불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.' };
 var LOCK_SVG='<svg class="lk" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
 function qp(n){ return new URLSearchParams(location.search).get(n); }
@@ -231,7 +231,7 @@ function statsH(st){
     ['EPS', f(eps,function(x){ return pyf(x,0,true)+'원'; })],
     ['배당수익률', f(div,function(x){ return pyf(x,2)+'%'; })]];
   var html=rows.map(function(r){ return '<div class="st"><div class="st-k">'+esc(r[0])+'</div><div class="st-v">'+esc(r[1])+'</div></div>'; }).join('');
-  if(TIER==='v2') note='PER·EPS·PBR·BPS 는 최근 4개 분기('+esc(win)+') 기준 자체 산출'+(dps!=null?' · 배당수익률은 주당 '+pyf(dps,0,true)+'원 기준':'');
+  if(TIER==='v2') note='PER·EPS·PBR·BPS는 최근 4개 분기('+esc(win)+') 기준 자체 산출'+(dps!=null?' · 배당수익률은 주당 '+pyf(dps,0,true)+'원 기준':'');
   else note='PER·PBR·배당수익률은 최근 확정 실적(EPS·BPS·주당배당금)과 현재 주가로 산출';
   return {html:html, note:note};
 }
@@ -427,7 +427,7 @@ function tocH(titles,locked){
 }
 function pendingH(){
   var li=PRIMARY_SRC.map(function(s){ return '<li><a href="'+esc(s[1])+'" target="_blank" rel="noopener">'+esc(s[0])+'</a></li>'; }).join('');
-  return '<div class="pending"><h2>이 종목의 리포트는 준비 중입니다</h2><p>새로 상장된 종목은 첫 사업·분기보고서가 공시된 뒤에 리포트를 작성합니다. 시세·시가총액·PER·PBR 같은 지표는 매 거래일 저녁에 갱신됩니다.</p><ol class="srcs">'+li+'</ol><p class="disc">'+DISC+'</p></div>';
+  return '<div class="pending"><h2>이 종목의 리포트는 준비 중입니다</h2><p>새로 상장된 종목은 첫 정기보고서가 공시된 뒤 리포트를 작성합니다. 시세·시가총액·PER·PBR 같은 지표는 매 거래일 저녁에 갱신됩니다.</p><ol class="srcs">'+li+'</ol><p class="disc">'+DISC+'</p></div>';
 }
 function notFoundH(){
   return '<div class="pending"><h2>종목을 찾을 수 없습니다</h2><p>요청하신 종목코드('+esc(TK)+')에 해당하는 종목이 없습니다. <a href="Reports.html">리포트 목록</a>에서 종목을 다시 찾아 주시기 바랍니다.</p></div>';

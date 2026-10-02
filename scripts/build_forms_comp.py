@@ -33,12 +33,12 @@ CONTACT = '''<main class="wrap">
   <header class="page-hero">
     <p class="crumb">도움말</p>
     <h1>문의하기</h1>
-    <p class="sub">서비스 의견·협업 제안·데이터 오류 제보를 보내 주시기 바랍니다. 영업일 기준 2~3일 내에 답변드립니다.</p>
+    <p class="sub">서비스 의견과 협업 제안, 데이터 오류 제보를 보내 주시기 바랍니다. 영업일 기준 2~3일 내에 답변드립니다.</p>
   </header>
   <div class="page-body">
     <form id="form" novalidate>
       <div class="fld"><span class="lbl">문의 유형</span>
-        <div class="seg" id="catSeg"><button type="button" class="on" data-cat="일반 문의">일반 문의</button><button type="button" data-cat="데이터 오류 제보">데이터 오류 제보</button><button type="button" data-cat="협업·제휴">협업·제휴</button></div>
+        <div class="seg" id="catSeg"><button type="button" class="on" data-cat="일반 문의">일반 문의</button><button type="button" data-cat="데이터 오류 제보">데이터 오류 제보</button><button type="button" data-cat="협업 제안">협업 제안</button></div>
       </div>
       <div class="fld"><label for="f-name">이름 <span class="opt">(선택)</span></label><input id="f-name" type="text" placeholder="성함을 입력하십시오" autocomplete="name"></div>
       <div class="fld"><label for="f-email">이메일</label><input id="f-email" type="email" placeholder="답변받으실 이메일 주소" autocomplete="email" required><div class="msg"></div></div>
@@ -71,13 +71,13 @@ FEEDBACK = '''<main class="wrap">
         </div>
       </div>
       <div class="fld"><span class="lbl">어떤 피드백인가요?</span>
-        <div class="seg" id="catSeg"><button type="button" class="on" data-cat="개선 제안">개선 제안</button><button type="button" data-cat="버그 신고">버그 신고</button><button type="button" data-cat="칭찬·응원">칭찬·응원</button><button type="button" data-cat="기타">기타</button></div>
+        <div class="seg" id="catSeg"><button type="button" class="on" data-cat="개선 제안">개선 제안</button><button type="button" data-cat="버그 신고">버그 신고</button><button type="button" data-cat="칭찬과 응원">칭찬과 응원</button><button type="button" data-cat="기타">기타</button></div>
       </div>
       <div class="fld"><label for="f-msg">내용</label><textarea id="f-msg" placeholder="어떤 점이 좋았는지, 무엇이 불편했는지, 어떤 기능이 있으면 좋겠는지 자유롭게 적어 주십시오." required></textarea><div class="msg"></div></div>
-      <div class="fld"><label for="f-email">이메일 <span class="opt">(선택 · 답변이 필요한 경우)</span></label><input id="f-email" type="email" placeholder="답변받으실 이메일 주소" autocomplete="email"><div class="msg"></div></div>
+      <div class="fld"><label for="f-email">이메일 <span class="opt">(선택, 답변이 필요한 경우)</span></label><input id="f-email" type="email" placeholder="답변받으실 이메일 주소" autocomplete="email"><div class="msg"></div></div>
       <input type="text" id="hp" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
       <div class="alert" id="formErr" role="alert"></div>
-      <div class="submit"><button type="submit" class="btn btn-ink" id="submitBtn" disabled>피드백 보내기</button><p class="form-note" id="note">만족도를 선택하시면 전송하실 수 있습니다. 익명으로 보내셔도 괜찮습니다.</p></div>
+      <div class="submit"><button type="submit" class="btn btn-ink" id="submitBtn" disabled>피드백 보내기</button><p class="form-note" id="note">만족도를 선택하시면 전송하실 수 있습니다. 익명으로 보내실 수 있습니다.</p></div>
     </form>
     <div class="sent" id="sent" hidden>
       <h2>소중한 피드백 감사합니다</h2>
@@ -118,7 +118,7 @@ CONTACT_JS = r'''(function(){''' + JS_COMMON + r'''
 
 FEEDBACK_JS = r'''(function(){''' + JS_COMMON + r'''
   var rating=document.getElementById('rating'),submitBtn=document.getElementById('submitBtn'),note=document.getElementById('note'),rated=false;
-  rating.addEventListener('click',function(e){var r=e.target.closest('.rate');if(!r)return;[].slice.call(rating.children).forEach(function(c){var on=c===r;c.classList.toggle('on',on);c.setAttribute('aria-checked',on?'true':'false')});rated=true;submitBtn.disabled=false;note.textContent='익명으로 보내셔도 괜찮습니다.'});
+  rating.addEventListener('click',function(e){var r=e.target.closest('.rate');if(!r)return;[].slice.call(rating.children).forEach(function(c){var on=c===r;c.classList.toggle('on',on);c.setAttribute('aria-checked',on?'true':'false')});rated=true;submitBtn.disabled=false;note.textContent='익명으로 보내실 수 있습니다.'});
   ['f-msg','f-email'].forEach(function(id){var el=document.getElementById(id);if(el)el.addEventListener('input',function(){fldClear(el)})});
   document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();if(!rated)return;
     var msg=document.getElementById('f-msg'),email=document.getElementById('f-email'),bad=null,mv=msg.value.trim();
@@ -136,8 +136,8 @@ def page(title, body, js):
 
 def build(outs=None):
     outs = outs or {'contact': 'preview/contact.html', 'feedback': 'preview/feedback.html'}
-    for out, title, body, js in [(outs['contact'], '문의하기 — 디자인 시안 | KOSAI', CONTACT, CONTACT_JS),
-                                 (outs['feedback'], '피드백 — 디자인 시안 | KOSAI', FEEDBACK, FEEDBACK_JS)]:
+    for out, title, body, js in [(outs['contact'], C.title('문의하기'), CONTACT, CONTACT_JS),
+                                 (outs['feedback'], C.title('피드백'), FEEDBACK, FEEDBACK_JS)]:
         html = page(title, body, js)
         C.emit(ROOT / out, html)
         print(f'✅ {ROOT / out} · {len(html):,}자')

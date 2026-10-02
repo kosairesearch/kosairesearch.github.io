@@ -100,12 +100,12 @@ MOBILE_CSS = '''@media (max-width:820px){
 
 BODY = '''<main class="wrap">
   <header class="hero">
-    <p class="crumb" id="eyebrow">국내 상장사 리서치</p>
+    <p class="crumb" id="eyebrow">국내 상장 종목 리포트</p>
     <h1>종목 리포트</h1>
-    <p class="sub">한국 상장사의 분석 리포트를 종목별로 확인하실 수 있습니다. 종목을 선택하시면 상세 리포트로 이동합니다.</p>
+    <p class="sub">국내 상장사의 분석 리포트를 종목별로 확인하실 수 있습니다. 종목을 선택하시면 상세 리포트로 이동합니다.</p>
   </header>
   <div class="tools">
-    <label class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-3.5-3.5"/></svg><input id="searchInput" placeholder="티커 · 종목명 · 업종 검색" autocomplete="off"></label>
+    <label class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-3.5-3.5"/></svg><input id="searchInput" placeholder="종목명, 종목코드 또는 업종" autocomplete="off"></label>
     <button type="button" class="tool" id="addFilterBtn"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>필터 추가</button>
     <div class="sortwrap" id="sortWrap">
       <button type="button" class="tool" id="sortBtn"><span id="sortLabel">시가총액 높은 순</span><svg class="caret" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -121,7 +121,7 @@ BODY = '''<main class="wrap">
   <div class="pager" id="pager" hidden><span id="pinfo"></span><div class="pctl" id="pctl"></div></div>
   <div class="empty" id="empty" hidden>
     <h2 id="emptyH">검색 결과가 없습니다</h2>
-    <p id="emptyMsg">다른 종목명·티커·업종으로 검색해 보시기 바랍니다.</p>
+    <p id="emptyMsg">다른 종목명이나 종목코드, 업종으로 검색하여 주시기 바랍니다.</p>
     <div id="emptyActs" hidden><button type="button" class="btn btn-ink" id="emptyReset">필터 초기화</button></div>
   </div>
 </main>
@@ -149,7 +149,7 @@ JS = r'''(function(){
   var SORT_LABEL={mcap_desc:'시가총액 높은 순',mcap_asc:'시가총액 낮은 순',change_desc:'등락률 높은 순',change_asc:'등락률 낮은 순',date:'최신 리포트순',name:'종목명순',per_asc:'PER 낮은 순',pbr_asc:'PBR 낮은 순',div_desc:'배당수익률 높은 순'};
   var rowsEl=document.getElementById('rows'),rlEl=document.getElementById('rl'),emptyEl=document.getElementById('empty'),pagerEl=document.getElementById('pager');
   var nBoth=REPORTS.filter(function(s){return RREP[s.ticker]}).length;
-  document.getElementById('eyebrow').textContent='국내 상장사 '+nBoth.toLocaleString('ko-KR')+'종목 리포트';
+  document.getElementById('eyebrow').textContent='국내 상장 '+nBoth.toLocaleString('ko-KR')+'개 종목 리포트';   // 랜딩 첫 화면과 같은 표기(2026-10-03)
   /* 값이 없는 종목은 방향과 상관없이 뒤로 보낸다. 앞에 두면 'PER 낮은 순'의 첫 화면이 전부 '—' 가 된다. */
   function byNum(k,d){return function(a,b){var x=a[k],y=b[k],xb=(x==null||isNaN(x)),yb=(y==null||isNaN(y));if(xb&&yb)return (b.mcap||0)-(a.mcap||0);if(xb)return 1;if(yb)return -1;return (x-y)*d}}
   function repTitle(tk){var R=RREP[tk];return R&&R.title?(R.title.ko||R.title.en||''):''} function repDate(tk){var R=RREP[tk];return R&&R.reportDate?R.reportDate:''} function repTs(tk){var R=RREP[tk];return R?(R.reportTs||R.reportDate||''):''}
@@ -258,7 +258,7 @@ JS = r'''(function(){
     if(!l.length){rlEl.hidden=true;pagerEl.hidden=true;emptyEl.hidden=false;var on=anyFilter();
       /* 조건 때문에 빈 것과 검색어 때문에 빈 것은 다음 할 일이 다르다 */
       document.getElementById('emptyH').textContent=on?'조건에 맞는 종목이 없습니다':'검색 결과가 없습니다';
-      document.getElementById('emptyMsg').textContent=on?'조건을 넓히거나 지워 보시기 바랍니다.':'다른 종목명·티커·업종으로 검색해 보시기 바랍니다.';document.getElementById('emptyActs').hidden=!on;return}
+      document.getElementById('emptyMsg').textContent=on?'조건을 넓히거나 지워 주시기 바랍니다.':'다른 종목명이나 종목코드, 업종으로 검색하여 주시기 바랍니다.';document.getElementById('emptyActs').hidden=!on;return}
     rlEl.hidden=false;emptyEl.hidden=true;
     var total=l.length,size=state.pageSize,pages=Math.max(1,Math.ceil(total/size));if(state.page>pages)state.page=pages;if(state.page<1)state.page=1;var start=(state.page-1)*size;
     rowsEl.innerHTML=l.slice(start,start+size).map(function(r,i){return rowHtml(r,start+i)}).join('');
@@ -280,7 +280,7 @@ JS = r'''(function(){
 
 
 def build(out_path):
-    html = (C.head('종목 리포트 — 디자인 시안 | KOSAI') + '\n<style>\n' + C.CSS + '\n' + C.FORM_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+    html = (C.head(C.title('종목 리포트')) + '\n<style>\n' + C.CSS + '\n' + C.FORM_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('리포트') + '\n' + BODY + '\n' + C.FOOTER + '\n'
             + '<script src="/data/stocks.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + JS + C.JS + '\n</script>\n</body>\n</html>')
     C.emit(out_path, html)

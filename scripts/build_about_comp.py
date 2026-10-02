@@ -38,7 +38,7 @@ MOBILE_CSS = '''@media (max-width:820px){
   .src{grid-template-columns:1fr;gap:4px}
 }
 /* 갱신 주기 표 — 휴대폰에서는 네 칸이 안 들어가 '비고'가 한 글자씩 세로로 떨어졌다(2026-09-26 사장). 행을 세로로 쌓는다:
-   이름 / 갱신 주기 · 다음 업데이트(이름표는 ::before) / 비고는 작은 글로. 행 markup 은 실사이트와 같아야 해서(check_sectors) CSS 만 쓴다. */
+   이름 / 갱신 주기 · 다음 갱신(이름표는 ::before) / 비고는 작은 글로. 행 markup 은 실사이트와 같아야 해서(check_sectors) CSS 만 쓴다. */
 @media (max-width:720px){
   .tbl.sched thead{display:none}
   .tbl.sched,.tbl.sched tbody,.tbl.sched tr,.tbl.sched td{display:block;width:auto}
@@ -46,7 +46,7 @@ MOBILE_CSS = '''@media (max-width:820px){
   .tbl.sched td{padding:0;border:0;position:static;background:none;font:400 14px/22px var(--font);color:var(--ink);white-space:normal}
   .tbl.sched td:first-child{font:600 15px/22px var(--font);margin-bottom:8px}
   .tbl.sched td:nth-child(2),.tbl.sched td:nth-child(3){display:flex;gap:12px;margin-top:2px}
-  .tbl.sched td:nth-child(2)::before{content:'갱신 주기'} .tbl.sched td:nth-child(3)::before{content:'다음 업데이트'}
+  .tbl.sched td:nth-child(2)::before{content:'갱신 주기'} .tbl.sched td:nth-child(3)::before{content:'다음 갱신'}
   .tbl.sched td:nth-child(2)::before,.tbl.sched td:nth-child(3)::before{flex:0 0 88px;color:var(--ink-62)}
   .tbl.sched td:nth-child(4){margin-top:10px;font:400 13px/20px var(--font);color:var(--ink-62)}
   .tbl.sched td:empty{display:none}
@@ -117,7 +117,7 @@ def build(out_path):
         body.append(f'<section class="sec wide" id="s{i:02d}"><div class="sec-h"><span class="num">{i:02d}</span><h2>{title}</h2></div>{"".join(parts)}</section>')
         pieces.append(title + ' ' + ' '.join(parts))
 
-    html = (C.head('About — 디자인 시안 | KOSAI') + '\n<style>\n' + C.CSS + '\n' + C.PROSE_CSS + '\n' + C.TOC_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + C.TOC_MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+    html = (C.head(C.title('회사 소개')) + '\n<style>\n' + C.CSS + '\n' + C.PROSE_CSS + '\n' + C.TOC_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + C.TOC_MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('') + f'''
 <main class="wrap">
   <header class="page-hero">
