@@ -35,12 +35,15 @@ sys.path.insert(0, os.path.dirname(__file__))
 sys.path.insert(1, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))   # scripts/ — 스테이징 출력이 comp_common 을 쓴다
 from data import ROOT, BY, STOCKS, INDEX, esc, brief, now_date  # noqa: E402
 from common import g  # noqa: E402
-from stamp_counts import sector_count  # noqa: E402 — 업종 수는 실사이트 첫 화면과 같은 규칙(분석 글이 있는 대표 업종)
+# 매일 바뀌는 값의 정의는 stamp_counts 한 곳에 있다 — 실사이트 첫 화면을 30분마다 고치는 스크립트와 이 생성기가 같은 값을 낸다
+from stamp_counts import sector_count, report_count, brief_no, gap_when, orb_json, GAP, ORB_SEED  # noqa: E402,F401
+import stamp_counts as SC  # noqa: E402
 
 OUT = os.path.join(ROOT, "preview", "concepts", "landing")
 ASSETS = "../../../assets"
 FONTS = "../../../fonts"
-# 어디에 내나 — 'preview'(preview/concepts/landing/) · 'staging'(staging/index.html · build_staging() 가 바꾼다)
+# 어디에 내나 — 'preview'(preview/concepts/landing/) · 'staging'(staging/index.html · build_staging() 가 바꾼다) ·
+# 'live'(실사이트 index.html · build_live() 가 바꾼다 — 멤버십 없음, 절대 주소, 검색 노출 머리)
 MODE = "preview"
 # 스테이징에서 링크가 가는 곳(staging/ 안의 상대 주소). 시안은 '#'(머리의 리포트 · 업종 분석 · 모닝브리핑은 같은 페이지의 절)
 HREF = {"홈": "Home.html", "리포트": "Reports.html", "업종 분석": "industry.html", "관심종목": "Watchlist.html", "멤버십": "pricing.html", "모닝브리핑": "brief.html",
@@ -49,16 +52,23 @@ HREF = {"홈": "Home.html", "리포트": "Reports.html", "업종 분석": "indus
         "hero_link": "Reports.html", "trust_link": "About.html#s03", "brief_link": "brief.html", "sectors_link": "industry.html"}
 
 
+def real():
+    """실제 페이지로 내는가(스테이징 · 실사이트) — 링크 · 로그인 상태 · 검색 · 영어판 그림이 붙는다. 시안은 아니다."""
+    return MODE in ("staging", "live")
+
+
 def href(key, preview="#"):
+    """링크가 가는 곳. 스테이징은 staging/ 안의 상대 주소, 실사이트는 절대 주소(/Home.html · /About.html#s03 · 로고는 /)."""
+    if MODE == "live":
+        v = HREF[key]
+        return "/" if v == "./" else "/" + v
     return HREF[key] if MODE == "staging" else preview
 BASE = datetime.date.fromisoformat(f"{now_date()[:4]}-{now_date()[4:6]}-{now_date()[6:8]}")   # 데이터의 '오늘'
 # 범위는 '국내 상장'으로 묶는다(사장 2026-10-01 — 첫 화면 서브의 '코스피, 코스닥, 코넥스' 나열 대신). 세 시장이 다 들어가는 말이라
 # 정확하다(상장 2,685 = 코스피 831 · 코스닥 1,747 · 코넥스 107). 시장 이름을 따로 쓸 때는 셋 다 쓴다 — 둘만 쓰면 틀린 말이 된다
 SCOPE = "국내 상장"
-ORB_SEED = 2680                                         # 첫 화면 구의 점 순서 — 고정 씨앗(빌드마다 같게)
-# 증권사 리포트가 없는 상장사 — 우리 데이터가 아니라 바깥 통계라 출처 줄을 단다(사장 2026-10-01 "첫 화면 말고 스크롤했을 때").
-# 한국IR협의회 기업리서치센터가 해마다 2월쯤 전년 집계를 낸다 — 그때 이 넷을 고친다. 2025년: 2,674곳 중 1,573곳(뉴스핌 2026-02-11 보도)
-GAP = {"year": 2025, "none": 1573, "total": 2674, "src": "한국IR협의회 기업리서치센터"}
+# 증권사 리포트가 없는 상장사(GAP) — 우리 데이터가 아니라 바깥 통계라 출처 줄을 단다(사장 2026-10-01 "첫 화면 말고 스크롤했을 때").
+# 한국IR협의회 기업리서치센터가 해마다 2월쯤 전년 집계를 낸다 — 그때 scripts/stamp_counts.py 의 GAP 넷을 고친다(첫 화면의 '지난해'도 거기서 센다).
 
 # 스크롤 등장 — .rv 가 화면 높이 90% 선 위로 들어오면 한 번 올라온다(CSS .rv-on .rv · 애플의 시작점 't - 90vh'). 같은 순간 함께 들어온 글끼리만
 # 0.08초씩 차례를 두고(최대 0.4초), 이미 지나간 글(앵커·되돌아온 스크롤 자리)은 곧바로 보인다. 어디서든 실패하면 숨김을 풀어 글을 살린다
@@ -837,6 +847,18 @@ html{scroll-padding-top:calc(84px + var(--kos-bar-h,0px))}
 .dz .ac ::selection{background:rgba(20,20,20,.14)} :root[data-theme="dark"] .dz .ac ::selection{background:rgba(255,255,255,.22)}
 """
 
+# 실사이트(index.html)에 붙는 옷 — 스테이징 옷에서 STAGING 띠의 전환 이름 규칙만 뺀 것(띠가 없다). 띠 높이(--kos-bar-h)를 쓰는 규칙은
+# 값이 없으면 0 이라 그대로 둔다.
+LIVE_CSS = re.sub(r"/\*.*?\*/\n?", "", STAGING_CSS.replace(".kos-staging-bar{view-transition-name:kos-bar}\n", ""), flags=re.S)   # 주석(스테이징 설명)도 뺀다
+assert ".kos-staging-bar" not in LIVE_CSS and "STAGING" not in LIVE_CSS
+# 첫 화면만의 검색 노출 머리 — 옛 실사이트 index.html 의 값 그대로(네이버 서치어드바이저 소유확인 · 구조화 데이터). 바꾸면 소유확인이 풀린다
+NAVER_VERIFY = "f8f4b5b432258c81a7635ea2fabc0ab0f967b885"
+LD_JSON = ('\n{"@context":"https://schema.org","@graph":[\n {"@type":"Organization","@id":"https://kosai.kr/#org","name":"KOSAI",\n'
+           '  "url":"https://kosai.kr/","logo":"https://kosai.kr/assets/favicon.png",\n'
+           '  "contactPoint":{"@type":"ContactPoint","email":"hello@kosai.kr","contactType":"customer support"}},\n'
+           ' {"@type":"WebSite","@id":"https://kosai.kr/#website","name":"KOSAI",\n  "alternateName":"코사이","url":"https://kosai.kr/",\n'
+           '  "description":"국내 상장 종목 AI 분석 리포트",\n  "publisher":{"@id":"https://kosai.kr/#org"},"inLanguage":"ko"}\n]}\n')
+
 # 스테이징 검색 — 홈(build_home_comp)과 같은 찾기 규칙: 이름 앞 · 종목코드 앞 · 이름 속 · 종목코드 속 · 업종 순, 같은 순위는 가나다순, 8개까지.
 # 종목 자료(../data/stocks.js · 1.1MB)는 첫 화면을 무겁게 하지 않도록 검색창을 처음 누를 때 받는다.
 # '리포트 찾기'는 종목이 하나로 정해질 때(고른 후보 · 결과 하나 · 이름이나 종목코드가 꼭 맞음)만 그 리포트로 가고, 여럿이면 후보를 펼친다.
@@ -896,7 +918,7 @@ LINKS = [("홈", "#"), ("리포트", "#report"), ("업종 분석", "#sectors"), 
 def nav_links():
     """머리 · 휴대폰 메뉴의 링크. 스테이징은 다른 스테이징 페이지 머리(comp_common.PAGES_STAGING)와 같은 자리 — 관심종목 다음 — 에 멤버십을 둔다
     (사장 2026-10-02 "스테이징 랜딩페이지 헤더에는 멤버십 버튼도 넣어야지" · "꼬리에도 당연히 넣어야지"). 꼬리 '서비스' 목록도 이 목록을 쓴다. 시안에는 넣지 않았다."""
-    if MODE != "staging":
+    if MODE != "staging":   # 시안 · 실사이트 — 멤버십 없음(실사이트에는 유료 서비스가 없다)
         return LINKS
     i = [t for t, _ in LINKS].index("관심종목") + 1
     return LINKS[:i] + [("멤버십", "#")] + LINKS[i:]
@@ -939,7 +961,7 @@ def shot(kind, label, cls="shot"):
     리포트 절(.shot)은 데스크톱 화면이 오른쪽 끝까지 이어지고, 업종 절(.shot.full)은 본문 폭 그대로다.
     스테이징은 영어판 그림도 함께 둔다(data-lang — 지금 말이 아닌 쪽은 숨겨 받지도 않는다). 영어 데스크톱 업종 화면은 글 길이가 달라
     높이가 한국어와 다르므로 크기를 그림 파일에서 읽는다"""
-    en = MODE == "staging" and en_shots(kind)
+    en = real() and en_shots(kind)
 
     def two(n, sfx=""):
         w, h = webp_size(os.path.join(OUT, "img", f"{kind}-{n}-light{sfx}.webp")) if sfx else SHOT[kind][n]
@@ -998,7 +1020,7 @@ def cyc(T):
     y0 = data[str(BASE.year)]
     t = {k: T[k] for k in ("label", "next", "mon", "due", "today")}
     d = {"years": data, "t": t}
-    if MODE == "staging":   # 영어 화면 — {M} 은 달 약자(Jan …). 보고서 이름은 wins 와 같은 차례
+    if real():   # 영어 화면 — {M} 은 달 약자(Jan …). 보고서 이름은 wins 와 같은 차례
         d["te"] = CYC_EN
     blob = json.dumps(d, ensure_ascii=False, separators=(",", ":"))
     label = T["label"].format(y=y0["y"])
@@ -1014,8 +1036,8 @@ def more(label, href="#"):
 
 
 def nav():
-    """머리 · 휴대폰 메뉴. 스테이징은 실제 페이지로 가고, 로그인 상태(auth-state.js)가 찾는 자리(#navRight · #acct · #mauth)를 둔다."""
-    stg = MODE == "staging"
+    """머리 · 휴대폰 메뉴. 스테이징 · 실사이트는 실제 페이지로 가고, 로그인 상태(auth-state.js)가 찾는 자리(#navRight · #acct · #mauth)를 둔다."""
+    stg = real()
     lk = "".join(f'<a href="{href(t, h)}">{t}</a>' for t, h in nav_links())
     a = lambda t: f'<a href="{href(t)}">{t}</a>'
     return ('<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>'
@@ -1032,7 +1054,7 @@ def nav():
 
 def foot():
     a = lambda t, cls="": f'<a{cls} href="{href(t)}">{t}</a>'
-    if MODE == "staging":   # 사업자 정보의 원본은 patch_biz_footer.BIZ 하나다(comp_common.BIZ_SPANS — 다른 스테이징 페이지와 같은 글)
+    if real():   # 사업자 정보의 원본은 patch_biz_footer.BIZ 하나다(comp_common.BIZ_SPANS — 다른 스테이징 · 실사이트 페이지와 같은 글)
         import comp_common
         biz = comp_common.BIZ_SPANS
     else:
@@ -1048,8 +1070,8 @@ def foot():
 
 
 def search_box(ph="종목명 또는 종목코드", sid=""):
-    """검색창 — 안내에 특정 종목 예시를 넣지 않는다(사장 "예시로 특정 종목을 왜 보여주나"). 스테이징은 자동완성 판(.ac)을 안에 둔다(SEARCH_JS)."""
-    if MODE == "staging":
+    """검색창 — 안내에 특정 종목 예시를 넣지 않는다(사장 "예시로 특정 종목을 왜 보여주나"). 스테이징 · 실사이트는 자동완성 판(.ac)을 안에 둔다(SEARCH_JS)."""
+    if real():
         return (f'<form class="search" role="search" onsubmit="return false">{I["search"]}<input placeholder="{ph}" aria-label="종목 검색" autocomplete="off"'
                 f' role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="{sid}">'
                 f'<button class="btn btn-ink" type="button">리포트 찾기</button><div class="ac" id="{sid}" role="listbox"></div></form>')
@@ -1061,31 +1083,14 @@ def orb_data():
     """첫 화면의 행성 — 점은 모두 같은 크기로 경위선 격자의 교차점에 놓이고, 점의 수는 종목 수가 아니라 간격에서 나온다(ORB_JS 의
     grid — 눈에 보이는 간격 0.9°. 사장 2026-10-01 "점 수를 종목 수만큼 넣을 필요는 없어"). 여기서 넘기는 것은 반짝임의 몫뿐이다 —
     최근 14일 안에 새로 쓴 리포트(r)가 전체 종목(n)에서 차지하는 비율만큼 점이 천천히 밝아졌다 어두워진다. 종목 순서는 고정 씨앗으로
-    섞어 빌드마다 같다.
+    섞어 빌드마다 같다. 계산은 stamp_counts.orb_json — 실사이트 첫 화면을 30분마다 고치는 스크립트와 같은 함수다.
     5판 뒤 구 다듬기(사장 2026-09-27 "점이 불규칙하게 위치해 있어서 규칙적으로") — 피보나치 배치와 시가총액 크기를 버렸다."""
-    import json
-    import random
-    rnd = random.Random(ORB_SEED)
-    tks = [t for t in INDEX if t in BY]
-    rnd.shuffle(tks)
-    recent = [i for i, t in enumerate(tks)
-              if INDEX[t].get("reportDate") and (BASE - datetime.date.fromisoformat(INDEX[t]["reportDate"])).days <= 14]
-    return json.dumps({"n": len(tks), "r": recent}, separators=(",", ":"))
+    return orb_json(BASE)
 
 
 def sources_avg():
-    """화면에 나오는 리포트(새 형식, 없으면 옛 형식)의 출처 수 평균 — 소수 첫째 자리까지."""
-    import json
-    tot = n = 0
-    for t in INDEX:
-        for d in ("reports_v2", "reports"):
-            f = os.path.join(ROOT, "data", d, f"{t}.json")
-            if os.path.exists(f):
-                tot += len(json.load(open(f, encoding="utf-8")).get("sources") or [])
-                n += 1
-                break
-    v = round(tot / n, 1)
-    return f"{v:g}"
+    """화면에 나오는 리포트(새 형식, 없으면 옛 형식)의 출처 수 평균 — 소수 첫째 자리까지. 정의는 stamp_counts.sources_avg."""
+    return SC.sources_avg()
 
 
 def copy_text(n_rep, n_sec, brief_no, src_avg):
@@ -1100,7 +1105,7 @@ def copy_text(n_rep, n_sec, brief_no, src_avg):
     처음 문장 '이들 기업의 리포트도 발행합니다'는 '기업이 낸 보고서'로도 읽히고 앞 문장의 '보고서 · 발간'과 말이 엇갈려(사장 "어색하다")
     '해당 기업에 대해서도'(무엇에 관한 리포트인지 분명) · '제공합니다'(첫 화면 서브와 같은 동사)로 고쳤다."""
     pct = f"{GAP['none'] / GAP['total'] * 100:.1f}"
-    when = "지난해" if BASE.year == GAP["year"] + 1 else f"{GAP['year']}년"   # 집계가 묵으면 '지난해'가 틀린 말이 된다
+    when = gap_when(BASE)   # 집계가 묵으면 '지난해'가 틀린 말이 된다(stamp_counts.gap_when)
     return {
         "h1": "증권사가 다루지\u00a0않는<br>종목까지",
         "h1_plain": "증권사가 다루지 않는 종목까지",
@@ -1156,9 +1161,10 @@ def copy_text(n_rep, n_sec, brief_no, src_avg):
     }
 
 
-def live(v):
-    """매일 바뀌는 값 — 스테이징에서는 data-live 로 감싸 생성기 비교(build_staging --check)에서 뺀다(mask). 시안은 그대로."""
-    return f'<span data-live>{v}</span>' if MODE == "staging" else v
+def live(v, name):
+    """매일 바뀌는 값 — 스테이징 · 실사이트에서는 data-live="이름" 으로 감싼다. 생성기 비교(build_staging · build_live --check)는
+    그 자리를 빼고 견주고(mask), 실사이트는 stamp_counts.py 가 그 이름으로 찾아 값을 고친다. 시안은 그대로."""
+    return f'<span data-live="{name}">{v}</span>' if real() else v
 
 
 def mask(html):
@@ -1169,12 +1175,13 @@ def mask(html):
 
 
 def page():
-    stg = MODE == "staging"
-    n_rep = len(INDEX)
-    b = brief()
+    stg = real()   # 스테이징 · 실사이트 — 매일 바뀌는 값에 data-live 표시
+    # 리포트 수 — 리포트가 있는 상장 종목(상장 종목 ∩ 색인). 색인 항목 수를 그대로 쓰면 상장폐지 종목이 남은 동안 많게 나온다
+    n_rep = report_count()
     src = sources_avg()
     # 업종 수 — 분석 글이 있는 대표 업종만(테마 둘과 '기타' 는 빼고). 분류(categories)를 세면 테마가 업종으로 들어가 30 이 됐다(2026-10-02 → 28)
-    C = copy_text(n_rep, live(sector_count()), live(b["_no"]), src)
+    # 브리핑 호수 — 발행한 브리핑 수(발행하지 않은 원고는 세지 않는다 · 10/2 실측 파일 32 · 발행 31)
+    C = copy_text(n_rep, live(sector_count(), "sec"), live(brief_no(), "brief"), src)
 
     def head_block(key, link=""):   # .rv — 스크롤 등장(RV_JS)
         eb, h, sub = C[key]
@@ -1182,34 +1189,35 @@ def page():
                 + link.replace('class="more"', 'class="more rv"', 1))
 
     num = f"{n_rep:,}"
-    dl = " data-live" if stg else ""
-    lede = g(C["lede"]).replace(num, f'<span class="num"{dl}>{num}</span>', 1)   # 실사이트로 옮기면 stamp_counts 가 맞추는 자리
+    dl = ' data-live="rep"' if stg else ""
+    dorb = ' data-live="orb"' if stg else ""
+    lede = g(C["lede"]).replace(num, f'<span class="num"{dl}>{num}</span>', 1)   # 실사이트는 stamp_counts.py 가 30분마다 맞추는 자리
     # 첫 화면 — 어두운 무대(.dz: 머리·사파리 가장자리 띠가 어두운 색을 따른다) · 큰 제목 · 검색 · 아래에서 떠오르는 종목의 구
     hero = (f'<header class="hero dz" id="hero"><div class="hero-in w"><h1>{C["h1"]}</h1><p class="lede"><span class="s">{lede}</span></p>'
             + search_box(sid="acHero")
             + f'<div class="alt">{more(C["hero_link"], href("hero_link"))}</div></div>'
             f'<div class="orb-box" aria-hidden="true"><canvas class="orb" id="orb"></canvas></div>'
-            f'<script type="application/json" id="orbData"{dl}>{orb_data()}</script></header>')
+            f'<script type="application/json" id="orbData"{dorb}>{orb_data()}</script></header>')
     # 숫자 하나 — 첫 화면 제목의 증거라 바로 다음 절. 제목이 숫자를 설명하고(무엇) 큰 숫자가 그 아래(얼마). 숫자 칸(.cnt)은 h2 바로
     # 아래 두어야 RV_JS 의 cnt() 가 h2 에 읽는 프로그램용 이름(제목 + 최종값)을 단다. data-i18n-skip — 영어 화면(i18n.js)이 제목 덩어리를
     # 통째로 바꾸면서 세는 칸을 지우지 않게(제목 글만 바뀐다)
     gp, gs, gsrc = C["gap"]
     sec_gap = (f'<section class="sec w solo stat" id="gap"><h2 class="stat-h rv"><span class="h2">{C["gap_h"]}</span> <span class="cnt stat-n" data-i18n-skip>{esc(gp)}</span></h2>'
                f'<p class="sub rv">{sents(gs)}</p><p class="src rv">{g(gsrc)}</p></section>')
-    if stg:   # '지난해'는 데이터의 해가 바뀌면 '2025년'이 된다(copy_text)
-        when = "지난해" if BASE.year == GAP["year"] + 1 else f"{GAP['year']}년"
+    if stg:   # '지난해'는 데이터의 해가 바뀌면 '2025년'이 된다(copy_text · stamp_counts.gap_when)
+        when = gap_when(BASE)
         assert sec_gap.count(f"{when} 증권사") == 1, when
-        sec_gap = sec_gap.replace(f"{when} 증권사", f"{live(when)} 증권사", 1)
+        sec_gap = sec_gap.replace(f"{when} 증권사", f"{live(when, 'when')} 증권사", 1)
     sec_report = (f'<section class="sec w" id="report"><div class="split"><div class="tx">{head_block("report")}</div>'
                   + shot("report", C["report_shot"]) + '</div></section>')
     sec_fresh = (f'<section class="sec w" id="fresh"><div class="split rev"><div class="tx">{head_block("fresh")}</div>'
                  + cyc(C["cyc"]) + '</div></section>')
     if stg:
-        sec_fresh = sec_fresh.replace('<script type="application/json" id="cycData">', '<script type="application/json" id="cycData" data-live>', 1)
+        sec_fresh = sec_fresh.replace('<script type="application/json" id="cycData">', '<script type="application/json" id="cycData" data-live="cyc">', 1)
     pts = "".join(f'<li class="rv"><h3>{g(t)}</h3><p>{sents(d)}</p></li>' for t, d in C["trust_points"])
     if stg:   # 출처 평균 — 문장은 글자로 다듬어 들어가므로(sents) 다 만든 뒤에 감싼다
         assert pts.count(f"{src}건") == 1, src
-        pts = pts.replace(f"{src}건", f"{live(src)}건", 1)
+        pts = pts.replace(f"{src}건", f"{live(src, 'src')}건", 1)
     sec_trust = (f'<section class="sec w trust"><h2 class="h2 rv">{C["trust"][1]}</h2><ul class="proof">{pts}</ul>'
                  + more(C["trust_link"], href("trust_link")).replace('class="more"', 'class="more rv"', 1) + '</section>')   # 링크는 작성 방식(회사 소개) — 특정 종목 예시는 두지 않는다(사장)
     sec_brief = (f'<section class="band dz" id="brief"><canvas class="dawn" id="dawn" aria-hidden="true"></canvas>'
@@ -1252,6 +1260,21 @@ def page():
              "if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches)r.classList.add('rv-on');"
              "document.querySelector('meta[name=\"theme-color\"]').setAttribute('content',t==='dark'?'#1c1c1e':'#141414')})();</script>")
     main = f"<main>{hero}{sec_gap}{sec_report}{sec_stance}{sec_trust}{sec_fresh}{sec_sectors}{sec_brief}{sec_end}</main>"
+    if MODE == "live":
+        # 실사이트 — 멤버십 · STAGING 띠 · 모의 결제 없음. 검색 노출 머리는 옛 실사이트 첫 화면에서 지키던 것을 그대로 둔다:
+        # canonical https://kosai.kr/ · 네이버 소유확인 · 구조화 데이터(Organization + WebSite) · 공유 그림. 문서 제목 · 설명 · 공유 설명은
+        # copy_text 의 것(국내 상장 N개 종목)이고, 그 N 은 stamp_counts.py 가 30분마다 맞춘다(머리의 같은 문구 넷).
+        # 번역 엔진 · 통계는 머리, 로그인 상태 · 휠 스크롤 모듈과 번역 사전은 comp_common.finish 가 꼬리에 붙인다
+        import comp_common as CC
+        head = ('<!doctype html><html lang="ko"><head><meta charset="utf-8">\n' + CC.LIVE_HEAD
+                + '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="format-detection" content="telephone=no">\n'
+                f'<meta name="theme-color" content="#141414"><title>{esc(C["title"])}</title>\n'
+                + CC.seo_tags(CC.SITE + "/", C["title"], C["desc"], og_title=C["og_title"], og_desc=C["og_desc"])
+                + f'<meta name="naver-site-verification" content="{NAVER_VERIFY}">\n<script type="application/ld+json">{LD_JSON}</script>\n'
+                f'<link rel="icon" href="{ASSETS}/favicon.png?v=k2"><link rel="stylesheet" href="{FONTS}/pretendard-subset.css">'
+                f'<style>\n{CSS.strip()}\n{LIVE_CSS.strip()}\n</style>{theme}</head><body>')
+        return (head + nav() + main + foot() + rv_js + cyc_js + dawn_js + orb_js + js
+                + "<script>" + SEARCH_JS.replace("'../data/stocks.js'", "'/data/stocks.js'") + "</script>\n</body></html>")
     if stg:
         # 스테이징 — 다른 스테이징 페이지와 같은 머리 스크립트(모의 결제 · 통계 끔) · 전화번호 자동인식 끔 · 아이콘. 옷은 한 장에 담는다(생성기 비교가
         # html 만 보므로). 설명 · 공유 메타는 두지 않는다(noindex). STAGING 띠는 머리 위, 로그인 상태 · 휠 스크롤 모듈은 comp_common.finish 가 붙인다
@@ -1312,6 +1335,39 @@ def build_staging(out_dir):
                     a, b = os.path.join(OUT, "img", f"{k}-{n}-{t}{sfx}.webp"), os.path.join(out_dir, "img", f"{k}-{n}-{t}{sfx}.webp")
                     if not os.path.exists(b) or open(a, "rb").read() != open(b, "rb").read():
                         shutil.copyfile(a, b)
+    open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8").write(html)
+    return html
+
+
+def copy_imgs(out_dir):
+    """리포트 절 · 업종 절 그림(시안 그림의 사본)을 out_dir/img/ 로 — 바뀐 것만 쓴다."""
+    import shutil
+    os.makedirs(os.path.join(out_dir, "img"), exist_ok=True)
+    for k in SHOT:
+        for n in SHOT[k]:
+            for t in ("light", "dark"):
+                for sfx in ("", "-en") if en_shots(k) else ("",):
+                    a, b = os.path.join(OUT, "img", f"{k}-{n}-{t}{sfx}.webp"), os.path.join(out_dir, "img", f"{k}-{n}-{t}{sfx}.webp")
+                    if not os.path.exists(b) or open(a, "rb").read() != open(b, "rb").read():
+                        shutil.copyfile(a, b)
+
+
+def build_live(out_dir):
+    """실사이트 첫 페이지 — out_dir/index.html 과 그림(out_dir/img/). scripts/build_live.py 가 부른다(--check 는 임시 폴더로).
+    멤버십 없음 · 절대 주소 · 검색 노출 머리. 매일 바뀌는 값(data-live="이름")은 stamp_counts.py 가 30분마다 맞춘다."""
+    global MODE, ASSETS, FONTS
+    why = check_imgs()
+    if why:
+        raise RuntimeError(why)
+    import comp_common as CC
+    if CC.MODE != "live":
+        CC.set_mode("live")
+    MODE, ASSETS, FONTS = "live", "/assets", "/fonts"
+    try:
+        html = CC.live_stamp(CC.finish(page(), "index.html"))
+    finally:
+        MODE, ASSETS, FONTS = "preview", "../../../assets", "../../../fonts"
+    copy_imgs(out_dir)
     open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8").write(html)
     return html
 

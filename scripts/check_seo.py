@@ -48,7 +48,7 @@ check(not dup, "index.html 직접 링크 없음(루트 URL 분열 방지)", ",".
 # 5) 랜딩페이지 자체
 s = (ROOT / "index.html").read_text()
 check('<link rel="canonical" href="https://kosai.kr/"' in s, "랜딩 canonical 이 루트")
-check("KOSAI" in re.search(r"<title>([^<]*)</title>", s).group(1), "랜딩 title 에 KOSAI")
+check("KOSAI" in re.search(r"<title[^>]*>([^<]*)</title>", s).group(1), "랜딩 title 에 KOSAI")
 check(not re.search(r'<meta name="robots"[^>]*noindex', s), "랜딩에 noindex 없음")
 check('"@type":"WebSite"' in s.replace(" ", "") or '"WebSite"' in s, "랜딩에 WebSite 구조화 데이터")
 check('naver-site-verification' in s, "네이버 사이트 소유확인 메타 있음")
@@ -65,32 +65,19 @@ for p in pages:
 clash = {k: v for k, v in canon.items() if len(v) > 1}
 check(not clash, "canonical 이 겹치는 페이지 없음", str(clash))
 
-# 7) 랜딩 페이지의 'AI 리포트' 수가 실제 종목 수와 같은가
-#    손으로 적어 둔 숫자라 아무도 안 고쳐 2,684 로 굳어 있었다. 이제
-#    stamp_counts.py 가 리포트를 만들 때마다 박아 넣는데, 그 단계가 언젠가
-#    빠져도 여기서 걸린다.
+# 7) 첫 화면의 매일 바뀌는 값이 실제와 같은가 — 리포트 수 · 업종 수 · 출처 평균 · 브리핑 호수 · '지난해' · 행성 자료,
+#    그리고 문서 제목 · 검색 설명 · 공유 설명의 '국내 상장 N개 종목'.
+#    손으로 적어 둔 숫자라 아무도 안 고쳐 2,684 로 굳어 있던 일이 있었다. 이제 stamp_counts.py 가 리포트 워치독 ·
+#    모닝브리핑에서 박아 넣는데(data-live="이름" 자리), 그 단계가 언젠가 빠지거나 마크업이 바뀌어 자리를 못 찾으면 여기서 걸린다.
+#    값의 정의(리포트가 있는 상장 종목 · 분석 글이 있는 대표 업종 · 발행한 브리핑 수 …)는 그 스크립트 한 곳에 있다.
 try:
-    import json
-    idx = (ROOT / "data" / "reports-index.js").read_text(encoding="utf-8")
-    payload = json.loads(idx[idx.index("=") + 1:].strip().rstrip(";"))
-    want = f'{payload.get("stockCount") or len(payload.get("reports") or {}):,}'
-    m = re.search(r'<b id="lpRepN"[^>]*>([^<]*)</b>', s)
-    have = m.group(1).strip() if m else "(없음)"
-    check(have == want, "랜딩의 AI 리포트 수가 실제와 같음", f"페이지 {have} · 실제 {want}")
-except Exception as e:                                  # 인덱스가 없는 환경
-    check(True, f"랜딩 리포트 수 확인 건너뜀 ({e.__class__.__name__})")
-
-#    업종 수도 같은 자리에 있는데 이건 손으로 적혀 있어 실제와 어긋나 있었다
-#    (적힌 29 · 실제 30). 이제 stamp_counts.py 가 박아 넣는다. 세는 규칙(분석 글이 있는
-#    대표 업종 — 테마 둘과 '기타' 는 빼고, 2026-10-02 30 → 28)도 그 스크립트 한 곳에 있다.
-try:
-    from stamp_counts import sector_count
-    want = str(sector_count())
-    m = re.search(r'<b id="lpSecN"[^>]*>([^<]*)</b>', s)
-    have = m.group(1).strip() if m else "(없음)"
-    check(have == want, "랜딩의 업종 수가 실제와 같음", f"페이지 {have} · 실제 {want}")
-except Exception as e:
-    check(True, f"랜딩 업종 수 확인 건너뜀 ({e.__class__.__name__})")
+    import stamp_counts
+    vals = stamp_counts.values()
+    _new, changes, missing = stamp_counts.stamp(s, vals)
+    check(not missing, "첫 화면에 매일 바뀌는 값의 자리(data-live)가 모두 있음", ", ".join(missing))
+    check(not changes, "첫 화면의 리포트 수 · 업종 수 · 출처 평균 · 브리핑 호수가 실제와 같음", " / ".join(changes[:4]))
+except Exception as e:                                  # 자료가 없는 환경
+    check(True, f"첫 화면 숫자 확인 건너뜀 ({e.__class__.__name__})")
 
 # 8) 없앤 페이지의 흔적이 남아 있지 않은가
 #
@@ -288,7 +275,8 @@ for name in ("Terms.html", "Privacy.html"):
     if not f.exists():
         continue
     body = markup_only(f.read_text(errors="ignore"))
-    head = re.search(r'class="upd">([^<]*)<', body)
+    # 새 디자인(2026-10-03 실사이트 이전)은 공고일 · 시행일 줄이 제목 아래 <p class="meta"> 다(옛 디자인은 class="upd")
+    head = re.search(r'class="(?:upd|meta)">([^<]*시행일[^<]*)<', body)
     if not head:
         check(False, f"{name} 에 시행일 줄이 있음")
         continue

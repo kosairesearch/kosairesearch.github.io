@@ -1,5 +1,5 @@
 /* ============================================================
-   영어 화면에 한국어가 남지 않는다 — 스테이징 전 페이지 (2026-10-03)
+   영어 화면에 한국어가 남지 않는다 — 스테이징 · 실사이트 전 페이지 (2026-10-03)
 
    왜 있는가. 9월 26일 스테이징을 새 디자인으로 옮기면서 번역(KOSi18n)이
    통째로 빠졌고, 설정 화면의 '언어' 줄까지 사라졌는데 아무도 몰랐다.
@@ -15,10 +15,15 @@
      · 영문명이 없는 종목(자료에 name_en 이 빈 종목)의 이름은 예외.
      · 두 말로 미리 그려 둔 곳의 한국어 쪽(data-lang="ko")은 예외.
      · 언어를 고르는 줄의 '한국어' 는 예외(언어 이름은 그 말로 쓴다).
+     · 두 사이트를 같은 장면으로 본다. 실사이트(루트)도 2026-10-03 부터 같은 생성기
+       (scripts/build_live.py)가 만든 새 디자인이고 번역 엔진(i18n.js)과 사전도 같은
+       방식으로 싣는다. 멤버십 장면(요금제 · 결제 · 설정의 구독 칸)은 실사이트에 없어
+       실사이트에서만 뺀다.
 
    실행
      node staging/tests/english.test.mjs           # 실패하면 남은 한국어를 페이지별로 보여 준다
-     LIST=1 node staging/tests/english.test.mjs    # 남은 문구를 JSON 으로(번역 작업용)
+     LIST=파일 node staging/tests/english.test.mjs # 남은 문구를 JSON 으로(번역 작업용)
+     ONLY=실사이트 node staging/tests/english.test.mjs   # 이름이 맞는 장면만(정규식)
    ============================================================ */
 import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
@@ -161,42 +166,46 @@ const openMenu = async (page) => { await page.setViewportSize({ width: 390, heig
 const openDetails = async (page) => page.evaluate(() => document.querySelectorAll("details").forEach((d) => (d.open = true)));
 const scrollAll = async (page) => { for (let y = 0; y < 12000; y += 700) { await page.evaluate((y) => scrollTo(0, y), y); await page.waitForTimeout(120); } };
 
-const CASES = [
-  ["첫 화면(랜딩)", "/staging/", { act: seq(scrollAll, typeIn("#q, input[type=search], .search input", "sam")) }],
-  ["첫 화면 — 휴대폰 메뉴", "/staging/", { act: openMenu }],
-  ["홈", "/staging/Home.html", { act: typeIn("input[type=search], .search input, #q", "sam") }],
-  ["홈 — 로그인", "/staging/Home.html", { signedIn: true, act: clickAll("#acct button, .acct button, .acct-btn") }],
-  ["리포트 목록", "/staging/Reports.html", { act: clickAll(".flt button, .filters button, [data-sort], .sort button") }],
-  ["리포트 목록 — 검색 결과 없음", "/staging/Reports.html", { act: typeIn("input[type=search], .search input, #q", "zzzzzz") }],
-  ["업종 분석", "/staging/industry.html", {}],
-  ["업종 분석 — 업종 하나", "/staging/industry.html?sector=%EB%B0%98%EB%8F%84%EC%B2%B4", {}],
-  ["관심종목 — 로그아웃", "/staging/Watchlist.html", {}],
-  ["관심종목 — 로그인(비어 있음)", "/staging/Watchlist.html", { signedIn: true }],
-  ["모닝브리핑", "/staging/brief.html", {}],
-  ["회사 소개", "/staging/About.html", {}],
-  ["문의하기", "/staging/Contact.html", { act: clickAll("button[type=submit]") }],
-  ["피드백", "/staging/Feedback.html", { act: clickAll("button[type=submit]") }],
-  ["이용약관", "/staging/Terms.html", {}],
-  ["개인정보 처리방침", "/staging/Privacy.html", {}],
-  ["로그인", "/staging/Login.html", { act: clickAll("button[type=submit]") }],
-  ["회원가입", "/staging/Signup.html", { act: clickAll("button[type=submit]") }],
-  ["약관 동의", "/staging/Consent.html", { signedIn: true }],
-  ["계정 인증 — 비밀번호 재설정", "/staging/auth-action.html?mode=resetPassword&oobCode=x", {}],
-  ["계정 인증 — 이메일 확인", "/staging/auth-action.html?mode=verifyEmail&oobCode=x", {}],
-  ["멤버십 — 로그아웃", "/staging/pricing.html", { act: openDetails }],
-  ["멤버십 — 로그인", "/staging/pricing.html", { signedIn: true, act: openDetails }],
-  ["결제", "/staging/checkout.html?plan=basic", { signedIn: true }],
-  ["설정 — 로그아웃", "/staging/Settings.html", {}],
-  ["설정 — 일반", "/staging/Settings.html?tab=general", { signedIn: true }],
-  ["설정 — 알림", "/staging/Settings.html?tab=notifications", { signedIn: true }],
-  ["설정 — 구독", "/staging/Settings.html?tab=subscription", { signedIn: true }],
-  ["설정 — 계정", "/staging/Settings.html?tab=account", { signedIn: true }],
-  ["리포트 상세 — 새 형식", "/staging/stock.html?ticker=005930", { act: openDetails }],
-  ["리포트 상세 — 새 형식(로그인)", "/staging/stock.html?ticker=005930", { signedIn: true, act: openDetails }],
-  ["리포트 상세 — 옛 형식", "/staging/stock.html?ticker=0001A0", { act: openDetails }],
-  ["리포트 상세 — 준비 중", `/staging/stock.html?ticker=${PENDING}`, { pending: true }],
-  ["리포트 상세 — 없는 종목", "/staging/stock.html?ticker=999999", {}],
+/* 장면 — [이름, 사이트 안 주소, 동작, 멤버십 장면인가]. 멤버십 장면은 스테이징에서만 돈다. */
+const SCENES = [
+  ["첫 화면(랜딩)", "/", { act: seq(scrollAll, typeIn("#q, input[type=search], .search input", "sam")) }],
+  ["첫 화면 — 휴대폰 메뉴", "/", { act: openMenu }],
+  ["홈", "/Home.html", { act: typeIn("input[type=search], .search input, #q", "sam") }],
+  ["홈 — 로그인", "/Home.html", { signedIn: true, act: clickAll("#acct button, .acct button, .acct-btn") }],
+  ["리포트 목록", "/Reports.html", { act: clickAll(".flt button, .filters button, [data-sort], .sort button") }],
+  ["리포트 목록 — 검색 결과 없음", "/Reports.html", { act: typeIn("input[type=search], .search input, #q", "zzzzzz") }],
+  ["업종 분석", "/industry.html", {}],
+  ["업종 분석 — 업종 하나", "/industry.html?sector=%EB%B0%98%EB%8F%84%EC%B2%B4", {}],
+  ["관심종목 — 로그아웃", "/Watchlist.html", {}],
+  ["관심종목 — 로그인(비어 있음)", "/Watchlist.html", { signedIn: true }],
+  ["모닝브리핑", "/brief.html", {}],
+  ["회사 소개", "/About.html", {}],
+  ["문의하기", "/Contact.html", { act: clickAll("button[type=submit]") }],
+  ["피드백", "/Feedback.html", { act: clickAll("button[type=submit]") }],
+  ["이용약관", "/Terms.html", {}],
+  ["개인정보 처리방침", "/Privacy.html", {}],
+  ["로그인", "/Login.html", { act: clickAll("button[type=submit]") }],
+  ["회원가입", "/Signup.html", { act: clickAll("button[type=submit]") }],
+  ["약관 동의", "/Consent.html", { signedIn: true }],
+  ["계정 인증 — 비밀번호 재설정", "/auth-action.html?mode=resetPassword&oobCode=x", {}],
+  ["계정 인증 — 이메일 확인", "/auth-action.html?mode=verifyEmail&oobCode=x", {}],
+  ["멤버십 — 로그아웃", "/pricing.html", { act: openDetails, paid: true }],
+  ["멤버십 — 로그인", "/pricing.html", { signedIn: true, act: openDetails, paid: true }],
+  ["결제", "/checkout.html?plan=basic", { signedIn: true, paid: true }],
+  ["설정 — 로그아웃", "/Settings.html", {}],
+  ["설정 — 일반", "/Settings.html?tab=general", { signedIn: true }],
+  ["설정 — 알림", "/Settings.html?tab=notifications", { signedIn: true }],
+  ["설정 — 구독", "/Settings.html?tab=subscription", { signedIn: true, paid: true }],
+  ["설정 — 계정", "/Settings.html?tab=account", { signedIn: true }],
+  ["리포트 상세 — 새 형식", "/stock.html?ticker=005930", { act: openDetails }],
+  ["리포트 상세 — 새 형식(로그인)", "/stock.html?ticker=005930", { signedIn: true, act: openDetails }],
+  ["리포트 상세 — 옛 형식", "/stock.html?ticker=0001A0", { act: openDetails }],
+  ["리포트 상세 — 준비 중", `/stock.html?ticker=${PENDING}`, { pending: true }],
+  ["리포트 상세 — 없는 종목", "/stock.html?ticker=999999", {}],
 ];
+const SITES = [["스테이징", "/staging"], ["실사이트", ""]];
+const CASES = SITES.flatMap(([site, pre]) => SCENES.filter(([, , opt]) => !(opt.paid && !pre))
+  .map(([name, path, opt]) => [`${site} · ${name}`, pre + path, opt]));
 
 const only = process.env.ONLY ? new RegExp(process.env.ONLY) : null;
 const report = {};
@@ -212,7 +221,7 @@ for (const [name, path, opt] of CASES) {
 }
 /* 설정에서 말을 바꿨다가 되돌린다 — 한국어로 연 화면 → 'English' → 'Korean'. 영어 화면에 한글이 없고(언어 줄의 '한국어' 빼고),
    되돌린 화면이 처음 한국어 화면과 글자 하나까지 같아야 한다. 스크립트가 그린 설정 칸이 영어로 남던 자리다 */
-async function roundTrip() {
+async function roundTrip(pre) {
   const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
   const fake = FAKE(true);
   await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, (route) => {
@@ -238,7 +247,7 @@ async function roundTrip() {
   };
   const out = [];
   try {
-    await page.goto(BASE + "/staging/Settings.html?tab=general", { waitUntil: "load" });
+    await page.goto(BASE + pre + "/Settings.html?tab=general", { waitUntil: "load" });
     await page.waitForTimeout(1200);
     const ko0 = await text();
     if (!(await page.$('.ks-seg button:has-text("English")'))) out.push("설정에 언어 줄이 없습니다");
@@ -256,10 +265,12 @@ async function roundTrip() {
   await ctx.close();
   return out;
 }
-if (!only || only.test("설정 — 언어 바꾸고 되돌리기")) {
-  const rt = await roundTrip();
-  if (rt.length) { fail++; console.log("FAIL  설정 — 언어 바꾸고 되돌리기"); rt.forEach((m) => console.log("        " + m.slice(0, 200))); }
-  else { pass++; console.log("PASS  설정 — 언어 바꾸고 되돌리기"); }
+for (const [site, pre] of SITES) {
+  const name = `${site} · 설정 — 언어 바꾸고 되돌리기`;
+  if (only && !only.test(name)) continue;
+  const rt = await roundTrip(pre);
+  if (rt.length) { fail++; report[name] = rt; console.log("FAIL  " + name); rt.forEach((m) => console.log("        " + m.slice(0, 200))); }
+  else { pass++; console.log("PASS  " + name); }
 }
 if (process.env.LIST) writeFileSync(process.env.LIST, JSON.stringify(report, null, 1));
 await browser.close(); server.close();

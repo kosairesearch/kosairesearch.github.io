@@ -4,6 +4,10 @@
    그 반대도 마찬가지." 되살아난 페이지(bfcache)는 떠날 때의 목록을 들고 있어서였다. 페이지마다 pageshow 에서
    다시 그리기는 했지만 읽는 곳이 그 옛 목록이었다. 이제 watchlist.js 가 되살아날 때(pageshow · persisted)
    기억(kos-wl-cache)으로 맞춘다. 실사이트와 스테이징이 같은 모듈을 쓰므로 둘 다 본다.
+   2026-10-03 부터는 화면도 같다 — 실사이트 페이지도 스테이징과 같은 생성기(scripts/build_live.py)가 만들어
+   리포트 목록의 줄(a.rl-row)과 관심종목 페이지의 줄(a.row[data-tk])이 두 사이트에서 같은 선택자다.
+   옛 실사이트 선택자(a.wl-row)로 보면 관심종목 쪽 두 확인이 아무것도 보지 못한다 — '보인다' 는 실패하고
+   '사라진다' 는 헛되이 통과한다.
 
    파이어베이스는 가짜로 바꿔 끼운다 — 로그인은 된 것으로, 파이어스토어는 브라우저 저장소에 둔 '서버'로.
    가짜 구독은 붙는 순간 한 번, 그리고 같은 페이지에서 쓸 때만 답한다. 되살아난 페이지에 서버가 새 답을
@@ -118,7 +122,11 @@ function ok(cond, msg, extra) {
   else { fail++; console.log("  ❌ " + msg + (extra ? " — " + extra : "")); }
 }
 
-async function site(label, dir, rowsSel, wlRowSel) {
+/* 두 사이트에 같은 선택자 — 리포트 목록의 줄 · 관심종목 페이지의 줄 */
+const ROWS = "a.rl-row", WL_ROW = "a.row";
+
+async function site(label, dir) {
+  const rowsSel = ROWS, wlRowSel = WL_ROW;
   console.log(`\n${label}`);
   const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
   await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, (route) => {
@@ -177,7 +185,7 @@ async function site(label, dir, rowsSel, wlRowSel) {
   ok(await isOn("#watchBtn") === true, "상세에서 다시 추가하면 ✓");
   await page.goto(`${BASE}/${dir}Watchlist.html`);
   await ready();
-  /* 보이는지로 본다 — 실사이트 관심종목 페이지는 목록이 비면 줄을 지우지 않고 목록째 숨긴다 */
+  /* 보이는지로 본다 — 줄을 지우든(지금 페이지는 목록이 비면 줄을 지운다) 목록째 숨기든 같은 답이 나오게 */
   const wlRow = page.locator(`${wlRowSel}[data-tk="${tk}"]`);
   await wlRow.waitFor({ state: "visible", timeout: 15000 }).catch(() => {});
   ok(await wlRow.isVisible(), `관심종목 페이지에 ${tk} 가 보인다`);
@@ -194,8 +202,8 @@ async function site(label, dir, rowsSel, wlRowSel) {
 }
 
 try {
-  await site("스테이징", "staging/", "a.rl-row", "a.row");
-  await site("실사이트", "", "a.rl-row", "a.wl-row");
+  await site("스테이징", "staging/");
+  await site("실사이트", "");
 } finally {
   await browser.close();
   server.close();

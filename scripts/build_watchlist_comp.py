@@ -136,11 +136,13 @@ GATE = "<style>html.kos-locked body{visibility:hidden}</style>\n<script>(functio
 
 
 def build(out_path):
-    stg = C.MODE == 'staging'
+    stg = C.MODE in ('staging', 'live')   # 실제 페이지 — 계정별 목록(KOSWatch)과 로그인 관문. 시안만 예시 종목
     body = BODY.replace('__DEMO_NOTE__', '' if stg else ' 시안이라 로그인 없이 예시 종목으로 그렸습니다.')
+    # 목록을 KOSWatch 에서 받을지 — 스테이징은 <html data-staging> 으로 알아보고, 실사이트는 그 표시가 없으므로 생성기가 '참'으로 박는다
+    js = JS.replace("document.documentElement.hasAttribute('data-staging')", 'true') if C.MODE == 'live' else JS
     html = (C.head(C.title('관심종목'), extra=GATE if stg else '') + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('관심종목') + '\n' + body + '\n' + C.FOOTER + '\n'
-            + '<script src="/data/stocks.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + JS + C.JS + '\n</script>\n</body>\n</html>')
+            + '<script src="/data/stocks.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + js + C.JS + '\n</script>\n</body>\n</html>')
     C.emit(out_path, html)
     print(f'✅ {out_path} · {len(html):,}자')
 

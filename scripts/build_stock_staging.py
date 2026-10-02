@@ -32,7 +32,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import comp_common as C  # noqa: E402
 import stock_page as S  # noqa: E402
 
-C.set_mode('staging')
+# 모드는 부르는 쪽이 정한다 — build_staging.py 는 staging, build_live.py 는 live, 이 파일을 바로 돌리면 main() 이 staging.
+# (전에는 읽는 순간 staging 으로 바꿔, 실사이트 생성 도중에 모드가 몰래 바뀌었다.)
 
 TITLE = '종목 리포트 | KOSAI'
 DESC = '종목별 AI 분석 리포트 — 핵심 지표, 실적 추이, 밸류에이션, 강세·약세 요인과 리스크.'
@@ -58,17 +59,22 @@ def grab(src, head):
     return None
 
 
+PARAGRAPHS = ROOT / 'scripts' / 'content' / 'stock-paragraphs.js'
+
+
 def live_paragraph_code():
-    live = (ROOT / 'stock.html').read_text(encoding='utf-8')
+    """문단 자르기 함수 셋(splitSentences · PARA_KO/EN · chunkPara · ps). 원래 실사이트 stock.html 에서 떼어 왔는데, 실사이트 stock.html 도
+    이 생성기의 결과가 된 뒤로(2026-10-03) 원본은 scripts/content/stock-paragraphs.js 다. 실사이트 · 스테이징이 같은 글을 받는다."""
+    src = PARAGRAPHS.read_text(encoding='utf-8')
     parts = []
     for head in LIVE_FUNCS:
-        code = grab(live, head)
+        code = grab(src, head)
         if not code:
-            raise SystemExit(f'stock.html 에서 {head} 를 찾지 못했다 — 실사이트 문단 규칙이 바뀌었는지 확인할 것')
+            raise SystemExit(f'{PARAGRAPHS.name} 에서 {head} 를 찾지 못했다 — 문단 규칙 원본을 확인할 것')
         parts.append(code)
-    m = re.search(r'var PARA_KO=\d+,\s*PARA_EN=\d+;', live)
+    m = re.search(r'var PARA_KO=\d+,\s*PARA_EN=\d+;', src)
     if not m:
-        raise SystemExit('stock.html 에 PARA_KO·PARA_EN 이 없다')
+        raise SystemExit(f'{PARAGRAPHS.name} 에 PARA_KO·PARA_EN 이 없다')
     return '\n'.join([parts[0], m.group(0), parts[1], parts[2]])
 
 
@@ -110,18 +116,18 @@ var VALS=(window.KOS_VALUATION&&KOS_VALUATION.stocks)||{};
 var SITE_URL='https://kosai.kr/stock.html?ticker=';
 /* 영어 화면(staging/i18n.js) — 리포트 본문은 자료의 영어 쪽(pk), 라벨은 아래 T, 나머지 한국어 문구는 사전이 바꾼다. */
 var I18=window.KOSi18n; function EN(){ return !!(I18&&I18.lang==='en'); }
-var T_EN={ watch:'Add to Watchlist', watched:'In Watchlist',
+var T_EN={ watch:'Add to Watchlist', watched:'In Watchlist',/*@paid*/
   lockTitle:'The full report is available to members', lockSub:'BASIC from ₩9,900 a month', lockSubN:'{s} sections · about {m} min read · BASIC from ₩9,900 a month',
   cta:'See membership', ctaLogin:'Sign in to keep reading', ctaOpen:'Continue reading', loading:'Loading…',
   note:'Already a member? Please sign in.',
   limitT:'You have reached your daily reading limit', limitS:'Your reading limit resets every day at midnight (Korea time).', upgrade:'Upgrade to PRO',
-  errNone:'The members-only sections for this stock are not ready yet.', errFail:'Could not load. Please try again shortly.' };
-var T={ watch:'관심종목 추가', watched:'관심종목 추가됨',
+  errNone:'The members-only sections for this stock are not ready yet.', errFail:'Could not load. Please try again shortly.'/*@/paid*/ };
+var T={ watch:'관심종목 추가', watched:'관심종목 추가됨',/*@paid*/
   lockTitle:'리포트 전체는 구독 회원에게 제공됩니다', lockSub:'BASIC 월 9,900원부터', lockSubN:'{s}개 섹션 · 약 {m}분 분량 · BASIC 월 9,900원부터',
   cta:'멤버십 보기', ctaLogin:'로그인하고 이어 보기', ctaOpen:'이어서 읽기', loading:'불러오는 중…',
   note:'이미 구독 중이시라면 로그인하여 주시기 바랍니다.',
   limitT:'하루 열람 한도에 도달했습니다', limitS:'열람 한도는 매일 자정(한국 시간)에 초기화됩니다.', upgrade:'PRO로 업그레이드',
-  errNone:'이 종목은 유료 구간이 아직 준비되지 않았습니다.', errFail:'불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.' };
+  errNone:'이 종목은 유료 구간이 아직 준비되지 않았습니다.', errFail:'불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.'/*@/paid*/ };
 if(EN()) T=T_EN;
 var LOCK_SVG='<svg class="lk" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
 function qp(n){ return new URLSearchParams(location.search).get(n); }
@@ -291,7 +297,7 @@ function bodyV1(){
   return {titles:items.map(function(t){ return t[0]; }), html:items.map(function(it,i){ return secH(i+1,it[0],it[1],it[2],it[3]); }).join(''), locked:[]};
 }
 
-/* ── 유료 구간 잠금 ─────────────────────────────────────────
+/*@paid*//* ── 유료 구간 잠금 ─────────────────────────────────────────
    정적 파일에는 무료 구간만 담기고 hasPaid:true 가 붙는다. 유료 구간은 서버(Firestore)에만 있고
    KOSPaywall.fetchPaid 가 받아온다. 전환 전 데이터에는 hasPaid 가 없어 실사이트에서는 그대로 다 보인다.
    스테이징은 기본이 잠금(FORCE_LOCK) — ?paywall=0 으로 끈다. */
@@ -428,7 +434,10 @@ function wireLock(){
     }
   }
   btn.addEventListener('click',open);
-}
+}/*@/paid*//*@live
+/* 실사이트 — 유료 구간이 없다(멤버십 전). 잠금 카드 · 흐린 미리보기 · paywall 모듈을 싣지 않고 모든 절을 그린다 */
+var _lockOff=null; function paywalled(){ return false; }
+@*/
 
 /* ── 목차 · 페이지 ── */
 function tocH(titles,locked){
@@ -471,7 +480,7 @@ function render(){
   if(LOADED) setSEO(locked);
 }
 
-/* 잠긴 절의 목차 항목 — 흐린 판 속으로 들어가지 않고 유료 구간이 시작하는 자리로 간다 */
+/*@paid*//* 잠긴 절의 목차 항목 — 흐린 판 속으로 들어가지 않고 유료 구간이 시작하는 자리로 간다 */
 document.addEventListener('click',function(e){
   var a=e.target.closest&&e.target.closest('#toc a[data-lock], #chips a[data-lock]'); if(!a) return;
   var tz=document.getElementById('tz'); if(!tz) return;
@@ -479,7 +488,7 @@ document.addEventListener('click',function(e){
   var padTop=parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop)||0;
   window.scrollTo({top:tz.getBoundingClientRect().top+window.scrollY-padTop,behavior:'smooth'});
   try{ history.replaceState(null,'',a.getAttribute('href')); }catch(x){}
-},true);
+},true);/*@/paid*/
 
 /* 관심종목 단추 — KOSWatch(Firestore)가 켜고 끈다. 새로 그릴 때마다 단추가 바뀌므로 문서에 한 번만 건다. */
 var watched=false;
@@ -545,19 +554,42 @@ getJson('/data/reports_v2/'+encodeURIComponent(TK)+'.json').then(function(r){
 })();'''
 
 
+# 유료 구간(멤버십)만의 코드 — /*@paid*/ … /*@/paid*/ 로 감쌌다. 스테이징은 표시만 지우고(글자 그대로), 실사이트는 통째로 뺀다.
+# /*@live … @*/ 는 그 반대 — 실사이트에만 들어간다(잠금이 없다는 것을 말하는 한 줄). 실사이트에 멤버십 문구 · pricing.html · paywall 이
+# 실리지 않게 한다(사장 2026-10-03 "실사이트에는 멤버십 페이지가 없잖아. 그런 거 잘 고려해서 옮겨줘").
+_PAID = re.compile(r'/\*@paid\*/(.*?)/\*@/paid\*/', re.S)
+_LIVE = re.compile(r'/\*@live\n(.*?)\n@\*/', re.S)
+
+
+def for_mode(js):
+    if C.MODE == 'live':
+        js = _LIVE.sub(lambda m: m.group(1), _PAID.sub('', js))
+    else:
+        js = _LIVE.sub('', _PAID.sub(lambda m: m.group(1), js))
+    assert '/*@' not in js and '@*/' not in js
+    return js
+
+
 def page_js():
     const = ('var DISC=' + json.dumps(S.DISC, ensure_ascii=False) + ', PRIMARY_SRC=' + json.dumps(S.PRIMARY_SRC, ensure_ascii=False)
              + ', SECTIONS_V2=' + json.dumps(S.SECTIONS_V2, ensure_ascii=False) + ';')
-    return PAGE_JS.replace('__CONST__', const).replace('__LIVE_FUNCS__', live_paragraph_code())
+    return for_mode(PAGE_JS).replace('__CONST__', const).replace('__LIVE_FUNCS__', live_paragraph_code())
 
 
 def build_html():
+    live = C.MODE == 'live'
     extra = (f'<meta name="description" content="{S.esc(DESC)}">\n'
              '<link rel="canonical" href="https://kosai.kr/stock.html">\n'
              f'<meta property="og:title" content="{S.esc(TITLE)}">\n<meta property="og:description" content="{S.esc(DESC)}">\n'
              '<meta property="og:url" content="https://kosai.kr/stock.html">\n<meta property="og:type" content="article">\n'
+             # 실사이트 — 공유 그림 · 사이트 이름 · 아이콘(옛 실사이트 stock.html 과 같은 값). 제목 · 설명 · canonical 은 setSEO() 가 종목별로 바꾼다
+             + ('<meta property="og:site_name" content="KOSAI">\n<meta property="og:locale" content="ko_KR">\n'
+                f'<meta property="og:image" content="{C.OG_IMAGE}">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n'
+                f'<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:image" content="{C.OG_IMAGE}">\n'
+                '<link rel="icon" type="image/svg+xml" href="/assets/kosai-icon-dark.svg?v=k2">\n<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=k2">\n'
+                if live else '')
              + CANON_JS + '\n'
-             '<style>\n' + C.CSS + '\n' + S.PAGE_CSS + '\n' + LOCK_CSS + '\n</style>\n')
+             '<style>\n' + C.CSS + '\n' + S.PAGE_CSS + '\n' + ('' if live else LOCK_CSS + '\n') + '</style>\n')
     head = C.head(TITLE, extra=extra)
     return f'''{head}
 </head>
@@ -591,6 +623,7 @@ def unstamped(s):
 
 
 def main():
+    C.set_mode('staging')   # 이 파일을 바로 돌리면 스테이징(staging/stock.html)
     ap = argparse.ArgumentParser()
     ap.add_argument('--out', default=str(ROOT / 'staging'), help='내보낼 폴더 (파일 이름은 stock.html)')
     ap.add_argument('--check', action='store_true')

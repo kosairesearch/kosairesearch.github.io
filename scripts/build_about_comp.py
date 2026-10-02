@@ -62,10 +62,15 @@ def g(pat, s, flags=re.S):
     return m.group(1).strip() if m else ''
 
 
+# 원문 — 옛 실사이트 About.html 의 본문을 그대로 옮긴 파일(2026-10-03 실사이트가 새 디자인이 되며 루트 About.html 은 이 생성기의 결과가 됐다)
+SRC = ROOT / 'scripts' / 'content' / 'about.src.html'
+
+
 def build(out_path):
-    src = (ROOT / 'About.html').read_text(encoding='utf-8')
+    src = SRC.read_text(encoding='utf-8')
     a = src.index('<div class="wrap" data-screen-label="08 About">')
-    b = src.index('<footer', a)
+    b = src.find('<footer', a)
+    b = len(src) if b < 0 else b
     live = re.sub(r'<script.*?</script>', '', src[a:b], flags=re.S)
 
     # 머리

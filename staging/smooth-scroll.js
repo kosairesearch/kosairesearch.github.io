@@ -1,5 +1,5 @@
-/* 스테이징 사본 — 실사이트 smooth-scroll.js 와 같고 duration(0.7 → 0.6)과 defaultPrevented 검사 한 줄만 다르다.
-   실사이트로 옮길 때 이 둘을 어떻게 할지 정한다. */
+/* 스테이징 사본 — 실사이트 smooth-scroll.js 와 같다. 2026-10-03 새 디자인을 실사이트로 옮기며 실사이트도 duration 0.6 과
+   defaultPrevented 검사 한 줄을 받았다(staging/tests/smooth-wheel.test.mjs 가 이 머리말 · duration 줄 · 검사 줄 말고 같은지 본다). */
 /* 스크롤을 부드럽게 — 마우스 휠 한 칸이 툭 떨어지지 않고 미끄러지듯 멈춘다.
 
    왜. 윈도우에서 휠을 굴리면 운영체제가 100px 씩 뚝뚝 끊어 옮긴다. 맥

@@ -56,7 +56,8 @@ if (window.KOSi18n) window.KOSi18n.register({
   "닫기": "Close",
   "약관과 개인정보 처리에 관한 내용은": "You can review our",
   "이용약관": "Terms of Service",
-  "개인정보처리방침": "Privacy Policy",
+  "개인정보 처리방침": "Privacy Policy",
+  "과 ": " and ",
   "에서 확인할 수 있습니다.": "."
 });
 
@@ -345,8 +346,8 @@ function paneAccount(user, opts) {
   const note = el("p", "ks-note");
   note.appendChild(document.createTextNode(T("약관과 개인정보 처리에 관한 내용은") + " "));
   const t1 = el("a", null, T("이용약관")); t1.href = "Terms.html"; note.appendChild(t1);
-  note.appendChild(document.createTextNode(" · "));
-  const t2 = el("a", null, T("개인정보처리방침")); t2.href = "Privacy.html"; note.appendChild(t2);
+  note.appendChild(document.createTextNode(T("과 ")));   // 법정 명칭은 띄어 쓴다('개인정보 처리방침') — 스테이징 · 새 디자인과 같은 문장
+  const t2 = el("a", null, T("개인정보 처리방침")); t2.href = "Privacy.html"; note.appendChild(t2);
   note.appendChild(document.createTextNode(T("에서 확인할 수 있습니다.")));
   s.appendChild(note);
 

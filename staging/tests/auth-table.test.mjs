@@ -18,6 +18,17 @@
    표를 코드로 옮겨 놓고 눌러 본다. 기대와 다르면 표가 틀렸거나 코드가
    틀렸거나 둘 중 하나다.
 
+   2026-10-03 부터 실사이트(루트)의 화면 넷도 스테이징과 같은 인라인 모듈
+   (scripts/auth_staging.py)을 쓰고, 루트 auth-state.js 는 staging/auth-state.js
+   에서 구독 안내만 뺀 사본이다(scripts/build_live.py). 그래서 화면 넷과
+   auth-state 에 거는 기대는 두 사이트에 똑같이 건다. 옛 코드의 모양
+   (auth-action 의 href="${esc(href)}" · Consent 의 자체 정규식 NEXT · 계정 메뉴의
+   .em/.m-em textContent)은 새 코드의 모양으로 바꿨다 — 막는 것은 같다:
+   계정 인증 화면은 마크업 문자열 없이 그리고 단추 주소는 a.href 에 글자로만,
+   동의 화면은 auth-util 의 safeNext 를 거친 NEXT 로만 이동, 헤더 계정 메뉴는
+   createElement · textContent 로만. 관리자 화면(Admin.html)은 옛 디자인 그대로라
+   옮기기 전 모듈(auth-state-legacy.js)을 쓴다 — 그 파일에는 옛 기대를 그대로 건다.
+
    실행
      node staging/tests/auth-table.test.mjs
    ============================================================ */
@@ -97,25 +108,51 @@ console.log("\n── ② 이동하는 자리가 전부 자물쇠를 거치는�
        `${dir || "실사이트/"}social-login.js — 검사 없이 넘기던 옛 줄이 남지 않았다`);
   }
 
-  const aa = read("auth-action.html");
-  ok(/const continueUrl = safeNext\(/.test(aa),
-     "auth-action.html — continueUrl 이 safeNext 를 거친다");
-  ok(!/const continueUrl = params\.get\('continueUrl'\)\s*\|\|/.test(aa),
-     "auth-action.html — 검사 없이 받던 옛 줄이 남지 않았다");
-  ok(/href="\$\{esc\(href\)\}"/.test(aa),
-     "auth-action.html — 버튼 주소를 마크업에 넣기 전에 한 번 더 막는다");
+  /* 인라인 모듈 본문 — 화면 넷의 로직은 페이지 안 <script type="module"> 에 있다 */
+  const modules = t => [...t.matchAll(/<script type="module">([\s\S]*?)<\/script>/g)].map(m => m[1]).join("\n");
 
-  /* Consent.html 은 자기 자물쇠를 쓴다. 규칙이 다르더라도 바깥으로는
-     못 나가야 한다 — 그 정규식을 그대로 꺼내 시험한다. */
-  const cm = read("Consent.html").match(/const NEXT = (\/[^;]+\/)\.test\(raw\)/);
-  ok(!!cm, "Consent.html — 돌아갈 주소를 거르는 자물쇠가 있다");
-  if (cm) {
-    const re = new RegExp(cm[1].slice(1, -1));
+  for (const dir of ["", "staging/"]) {
+    const site = dir || "실사이트/";
+
+    /* 계정 인증 — 메일의 링크로 와서 continueUrl 로 돌아간다. 옛 화면은 단추를 마크업 문자열로
+       그려 href="${esc(href)}" 로 한 번 더 막았다. 새 화면은 마크업 문자열을 아예 쓰지 않는다
+       (createElement · textContent) — 주소는 a.href 에 글자로만 들어가 따옴표로 속성을 깰 자리가 없다. */
+    const aa = read(dir + "auth-action.html"), am = modules(aa);
+    ok(/const continueUrl = safeNext\(/.test(am),
+       `${site}auth-action.html — continueUrl 이 safeNext 를 거친다`);
+    ok(!/const continueUrl = params\.get\('continueUrl'\)\s*\|\|/.test(am),
+       `${site}auth-action.html — 검사 없이 받던 옛 줄이 남지 않았다`);
+    ok(am.length > 0 && !/innerHTML|outerHTML|insertAdjacentHTML|document\.write/.test(am),
+       `${site}auth-action.html — 화면을 마크업 문자열로 그리지 않는다(주소가 마크업으로 읽힐 자리가 없다)`);
+    ok(/function goBtn\(label, href\)\{[^}]*el\('a'[^}]*\.href = href;/.test(am),
+       `${site}auth-action.html — 단추 주소는 만든 요소의 a.href 에 글자로만 넣는다`);
+    const hrefs = [...am.matchAll(/\bhref:\s*([^,}\s]+)/g)].map(m => m[1]);
+    const gos = [...am.matchAll(/goBtn\('[^']*',\s*([^)]+)\)/g)].map(m => m[1].trim());
+    const fixed = v => /^'[A-Za-z0-9_-]+\.html'$/.test(v);
+    ok(hrefs.length > 0 && hrefs.every(v => v === "continueUrl" || fixed(v))
+         && gos.length > 0 && gos.every(v => v === "s.href" || fixed(v)),
+       `${site}auth-action.html — 단추가 가는 곳은 자물쇠를 거친 continueUrl 이나 고정 주소뿐이다`,
+       `← href: ${hrefs.join(", ")} · goBtn: ${gos.join(", ")}`);
+
+    /* 동의 화면 — 옛 화면은 자기 정규식(const NEXT = /…/.test(raw))을 썼다. 새 화면은 공용 자물쇠
+       safeNext() 를 그대로 쓴다(인자 없이 부르면 주소의 ?next= 를 읽는다). 바깥으로 못 나가는지는
+       그 길 그대로 — 주소에 ?next= 를 실어 safeNext() 를 불러 — 시험한다. */
+    const cp = read(dir + "Consent.html"), cmod = modules(cp);
+    ok(/import\s*\{[^}]*\bsafeNext\b[^}]*\}\s*from\s*"\.\/auth-util\.js(\?v=[0-9a-f]{8})?"/.test(cmod)
+         && /const NEXT = safeNext\(\);/.test(cmod),
+       `${site}Consent.html — 돌아갈 주소를 auth-util 의 자물쇠(safeNext)로 거른다`);
+    const moves = [...cmod.matchAll(/location\.(?:href|replace)\s*(?:=|\()\s*([^;\n]+)/g)].map(m => m[1].trim().replace(/\)$/, ""));
+    ok(moves.length > 0 && moves.every(a => /^(NEXT|'[A-Za-z0-9_.-]+\.html(\?next=)?'(\s*\+\s*encodeURIComponent\(NEXT\))?)$/.test(a)),
+       `${site}Consent.html — 이동은 거른 NEXT 나 고정 주소로만 한다`, `← ${moves.join(" · ")}`);
+  }
+  {
+    const viaQuery = raw => { globalThis.location = { pathname: "/Consent.html", search: "?next=" + encodeURIComponent(raw) }; return safeNext(); };
     for (const bad of ["https://evil.example.com", "//evil.example.com",
                        "javascript:alert(1)", "../x.html",
                        '"><img src=x onerror=alert(1)>'])
-      ok(!re.test(bad), `Consent.html — 막는다: ${bad.slice(0, 28)}`);
-    ok(re.test("Home.html"), "Consent.html — 평범한 페이지는 통과한다");
+      eq(viaQuery(bad), "Home.html", `Consent.html — 막는다: ${bad.slice(0, 28)}`);
+    eq(viaQuery("Home.html"), "Home.html", "Consent.html — 평범한 페이지는 통과한다");
+    eq(viaQuery("stock.html?ticker=005930"), "stock.html?ticker=005930", "Consent.html — 쿼리가 붙은 우리 페이지도 통과한다");
   }
 }
 
@@ -157,13 +194,13 @@ ok(!isUserCancelled({ code: "auth/wrong-password" }), "취소 — 비밀번호 �
 
 /* Login.html 이 아는 코드와 문구 표가 아는 코드가 어긋나지 않는가.
    실제로 여기가 갈려 있었다 — 화면은 알고 표는 몰랐다. */
-{
-  const m = read("Login.html").match(/if\(\/([^/]+)\/\.test\(code\)\)/);
-  ok(!!m, "Login.html — 안내를 띄울 코드 목록이 있다");
+for (const dir of ["", "staging/"]) {
+  const m = read(dir + "Login.html").match(/if\(\/([^/]+)\/\.test\(code\)\)/);
+  ok(!!m, `${dir || "실사이트/"}Login.html — 안내를 띄울 코드 목록이 있다`);
   if (m) for (const part of m[1].split("|"))
     ok(mapAuthError({ code: "auth/" + part }) !== undefined
        && !mapAuthError({ code: "auth/" + part }).startsWith(GENERIC),
-       `문구 표도 아는 코드: ${part}`);
+       `${dir || "실사이트/"}Login.html — 문구 표도 아는 코드: ${part}`);
 }
 
 /* ══════════════════════════════════════════════════════════
@@ -171,11 +208,34 @@ ok(!isUserCancelled({ code: "auth/wrong-password" }), "취소 — 비밀번호 �
    ══════════════════════════════════════════════════════════ */
 console.log("\n── ④ 상태 × 동작 — 코드가 표대로 갈라지는가 ──");
 
-const login = read("Login.html"), signup = read("Signup.html");
-const consentPage = read("Consent.html"), state = read("auth-state.js");
 const guard = read("auth-guard.js"), consentJs = read("consent.js");
 
-const SPEC = [
+/* 함수 하나의 본문 — 이름으로 찾아 중괄호를 센다. 보는 함수(el · renderLoggedIn · renderLoggedOut)에는
+   문자열 속 중괄호가 없다 — 생기면 본문이 어긋나 아래 확인이 실패로 알린다. */
+function fnBody(src, name) {
+  const i = src.indexOf("function " + name + "(");
+  if (i < 0) return null;
+  let depth = 0;
+  for (let k = src.indexOf("{", i); k < src.length; k++) {
+    if (src[k] === "{") depth++;
+    else if (src[k] === "}" && --depth === 0) return src.slice(i, k + 1);
+  }
+  return null;
+}
+
+/* 헤더 계정 메뉴 — 새 auth-state 는 innerHTML 없이 el()(createElement · textContent)로만 짓는다.
+   이메일(카카오는 닉네임)은 .em 줄에, 머리글자는 동그라미에 글자로 들어간다. 휴대폰 메뉴에는 이메일
+   줄이 없다(9/26 사장 — 헤더의 동그라미가 로그인 상태를 말한다). 옛 모듈은 .em · .m-em 에 textContent. */
+const menuAsText = state => {
+  const el = fnBody(state, "el"), li = fnBody(state, "renderLoggedIn"), lo = fnBody(state, "renderLoggedOut");
+  const markup = /innerHTML|outerHTML|insertAdjacentHTML/;
+  return !!el && /n\.textContent = text/.test(el) && !markup.test(el)
+      && !!li && /el\('div', \{ 'class': 'em' \}, email\)/.test(li) && /\}, initial\)/.test(li) && !markup.test(li)
+      && !!lo && !markup.test(lo);
+};
+const menuAsTextOld = state => /\.em'\)\.textContent = email/.test(state) && /m-em'\)\.textContent = email/.test(state);
+
+const spec = (login, signup, consentPage, state, menuCheck) => [
   ["가입 중단(동의 없음) → 이메일 로그인", "동의 화면으로",
    () => /consentState\(cred\.user\.uid\) === false/.test(login)
       && /Consent\.html\?next=/.test(login)],
@@ -229,19 +289,39 @@ const SPEC = [
   ["보호 페이지에 인증 안 한 계정", "인증 안내를 덮는다",
    () => /lockVerify\(u\)/.test(guard)],
 
-  ["동의 없이 다른 페이지로 들어옴", "동의 화면으로 되돌린다",
-   () => /guardConsent/.test(state) && /Consent\.html\?next=/.test(state)],
-
-  ["동의 화면으로 두 번 튕김", "가두지 않고 통과시킨다",
-   () => /bounced >= 1/.test(state)],
-
-  ["로그인·가입 화면에서는 되돌리지 않는다", "고리를 만들지 않는다",
-   () => /CONSENT_SKIP = \/\^\(Consent\|Login\|Signup/.test(state)],
-
-  ["계정 메뉴의 이름·이메일", "글자로 넣는다(마크업으로 잇지 않는다)",
-   () => /\.em'\)\.textContent = email/.test(state) && /m-em'\)\.textContent = email/.test(state)],
+  ...authStateSpec(state, menuCheck),
 ];
-for (const [when, then, check] of SPEC) ok(check(), `${when} → ${then}`);
+/* auth-state 혼자의 몫 — 관리자 화면의 옛 모듈에도 같이 건다 */
+function authStateSpec(state, menuCheck) {
+  return [
+    ["동의 없이 다른 페이지로 들어옴", "동의 화면으로 되돌린다",
+     () => /guardConsent/.test(state) && /Consent\.html\?next=/.test(state)],
+
+    ["동의 화면으로 두 번 튕김", "가두지 않고 통과시킨다",
+     () => /bounced >= 1/.test(state)],
+
+    ["로그인·가입 화면에서는 되돌리지 않는다", "고리를 만들지 않는다",
+     () => /CONSENT_SKIP = \/\^\(Consent\|Login\|Signup/.test(state)],
+
+    ["계정 메뉴의 이름·이메일", "글자로 넣는다(마크업으로 잇지 않는다)",
+     () => menuCheck(state)],
+
+    ["탈퇴 확인 창의 이메일", "글자로 넣는다(마크업으로 잇지 않는다)",
+     () => /\.wd-em'\)\.textContent = email/.test(state)],
+  ];
+}
+for (const dir of ["", "staging/"]) {
+  const SPEC = spec(read(dir + "Login.html"), read(dir + "Signup.html"), read(dir + "Consent.html"), read(dir + "auth-state.js"), menuAsText);
+  for (const [when, then, check] of SPEC) ok(check(), `${dir ? "스테이징" : "실사이트"} — ${when} → ${then}`);
+}
+/* 관리자 화면(Admin.html)은 옛 디자인 그대로 옮기기 전 모듈을 쓴다 — 옛 기대를 그대로 */
+for (const [when, then, check] of authStateSpec(read("auth-state-legacy.js"), menuAsTextOld))
+  ok(check(), `관리자 화면(auth-state-legacy.js) — ${when} → ${then}`);
+{
+  const admin = read("Admin.html");
+  ok(/<script type="module" src="auth-state-legacy\.js(\?v=[0-9a-f]{8})?"><\/script>/.test(admin) && !/src="auth-state\.js/.test(admin),
+     "관리자 화면은 옛 모듈(auth-state-legacy.js)을 쓴다 — 위 옛 기대가 실제로 도는 코드를 본다");
+}
 
 /* ══════════════════════════════════════════════════════════
    5) 구조 — 같은 실수가 다시 들어오지 못하게
@@ -277,14 +357,12 @@ console.log("\n── ⑥ 같은 실수가 다시 들어올 자리 ──");
     .replace(/\/\*[\s\S]*?\*\//g, "")
     .replace(/(?<![:/])\/\/[^\n]*/g, "");
 
-  const files = ["Login.html", "Signup.html", "Consent.html", "auth-action.html",
-                 "auth-state.js", "auth-guard.js", "social-login.js", "consent.js",
-                 "auth-util.js",
-                 "staging/Login.html", "staging/Signup.html",
-                 "staging/auth-state.js", "staging/auth-guard.js",
-                 "staging/social-login.js", "staging/consent.js",
-                 "staging/auth-util.js"]
-    .filter(f => existsSync(join(ROOT, f)));
+  /* 두 사이트가 같은 코드라 같은 목록 — 관리자 화면이 쓰는 옛 모듈(auth-state-legacy.js)도 실사이트 코드다 */
+  const ALL = ["Login.html", "Signup.html", "Consent.html", "auth-action.html",
+               "auth-state.js", "auth-guard.js", "social-login.js", "consent.js", "auth-util.js"];
+  const files = [...ALL, "auth-state-legacy.js", ...ALL.map(f => "staging/" + f)];
+  ok(files.every(f => existsSync(join(ROOT, f))), "훑을 파일이 모두 있다",
+     files.filter(f => !existsSync(join(ROOT, f))).join(" · "));
 
   /* 진짜 위험은 '주소에서 읽은 next 가 검사 없이 이동에 쓰이는 것' 이다.
      그래서 이동하는 줄을 세는 대신, next 를 읽는 파일마다 자물쇠가 함께

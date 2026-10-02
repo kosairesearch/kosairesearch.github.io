@@ -1,566 +1,242 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<meta charset="utf-8" />
-<meta name="referrer" content="strict-origin-when-cross-origin" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<!-- 사업자등록번호(380-25-02019)를 아이폰 사파리가 전화번호로 알아보고 파란
-     글씨에 누르면 전화가 걸리게 만들어 버린다. 번호 모양이 전화번호와 같아
-     생기는 일이라 글자로는 막을 수가 없다. 사이트에 전화번호는 하나도 없으므로
-     자동 인식을 통째로 끈다. -->
-<meta name="format-detection" content="telephone=no" />
-<title>모닝 브리핑 · KOSAI</title>
-<meta name="description" content="간밤 미국 시장과 직전 국내 장, 이번 주 일정을 매일 아침 한 편으로 정리합니다. 오늘 장을 준비하는 데 필요한 것만." />
-<link rel="canonical" href="https://kosai.kr/brief.html" />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="KOSAI" />
-<meta property="og:locale" content="ko_KR" />
-<meta property="og:title" content="모닝 브리핑 — KOSAI" />
-<meta property="og:description" content="간밤 미국 시장과 직전 국내 장, 이번 주 일정을 매일 아침 한 편으로." />
-<meta property="og:url" content="https://kosai.kr/brief.html" />
-<meta property="og:image" content="https://kosai.kr/assets/og-image.png?v=3" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="모닝 브리핑 — KOSAI" />
-<meta name="twitter:description" content="간밤 미국 시장과 직전 국내 장, 이번 주 일정을 매일 아침 한 편으로." />
-<meta name="twitter:image" content="https://kosai.kr/assets/og-image.png?v=3" />
+<meta charset="utf-8">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<script src="i18n.js?v=bc892c22"></script>
+<script src="analytics.js?v=772effd5"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#f9f8f6">
+<title>10년물이 2주 만에 5.24%로 물러섰다 — 오늘 밤 고용보고서 — 모닝브리핑 | KOSAI</title>
+<meta name="description" content="전일 국내 증시와 간밤의 해외 시장, 주요 일정을 정리합니다. 발행 시각은 거래일 오전 7시 30분 전후입니다.">
+<link rel="canonical" href="https://kosai.kr/brief.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KOSAI">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="10년물이 2주 만에 5.24%로 물러섰다 — 오늘 밤 고용보고서 — 모닝브리핑 | KOSAI">
+<meta property="og:description" content="전일 국내 증시와 간밤의 해외 시장, 주요 일정을 정리합니다. 발행 시각은 거래일 오전 7시 30분 전후입니다.">
+<meta property="og:url" content="https://kosai.kr/brief.html">
+<meta property="og:image" content="https://kosai.kr/assets/og-image.png?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="10년물이 2주 만에 5.24%로 물러섰다 — 오늘 밤 고용보고서 — 모닝브리핑 | KOSAI">
+<meta name="twitter:description" content="전일 국내 증시와 간밤의 해외 시장, 주요 일정을 정리합니다. 발행 시각은 거래일 오전 7시 30분 전후입니다.">
+<meta name="twitter:image" content="https://kosai.kr/assets/og-image.png?v=3">
+<link rel="icon" type="image/svg+xml" href="/assets/kosai-icon-dark.svg?v=k2">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=k2">
+<link rel="icon" href="/assets/favicon.png?v=k2">
+<link rel="stylesheet" href="/fonts/pretendard-subset.css">
+<script>(function(){var t='light';try{t=localStorage.getItem('kos-theme')||'light'}catch(e){}document.documentElement.setAttribute('data-theme',t);})();</script>
+<script id="kosThemeColor">(function(){var m=document.querySelector('meta[name="theme-color"]'),r=document.documentElement;
+  function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0d0d0e':'#f9f8f6')}
+  tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme']})})();</script>
+<script>
+/* 활성 표시선 — 컨테이너마다 선 하나를 두고, 활성 항목(.on)의 자리로 미끄러뜨린다.
+   axis 'x' = 밑줄, 'y' = 왼쪽 세로선. sel 로 활성 항목 선택자를 바꿀 수 있다(기본 .on).
+   첫 자리는 그냥 놓고, 그 뒤부터 element.animate() 로 이전 자리에서 새 자리로 움직인다.
+   CSS transition 을 안 쓰는 이유: 휴대폰 목차 띠가 헤더 안으로 옮겨 붙는 프레임에 항목이 같이 바뀌면
+   방금 옮겨진 요소라 transition 이 시작되지 않는다. animate() 는 DOM 이동과 무관하게 움직인다.
+   window.kosIndMs 로 길이를 바꿀 수 있다(시험용). 움직임 줄이기 설정이면 바로 놓는다. */
+window.kosInd=function(box,axis,sel){
+  if(!box)return function(){};
+  if(box.__ind)return box.__ind;
+  var ind=document.createElement('span');ind.className='ind '+(axis==='y'?'ind-v':'ind-h');ind.setAttribute('aria-hidden','true');box.appendChild(ind);
+  var last=null,placed=false,anim=null,rm=window.matchMedia?matchMedia('(prefers-reduced-motion:reduce)'):null;
+  function move(force){
+    var a=box.querySelector(sel||'.on');
+    if(!a){ind.style.opacity='0';last=null;return}
+    if(a===last&&!force)return;
+    var b=box.getBoundingClientRect(),r=a.getBoundingClientRect();
+    if(!r.width&&!r.height)return;
+    last=a;
+    var x=r.left-b.left-box.clientLeft+box.scrollLeft,y=r.top-b.top-box.clientTop+box.scrollTop;
+    var to={transform:'translate('+x+'px,'+(axis==='y'?y:y+r.height-2)+'px)'};
+    if(axis==='y')to.height=r.height+'px';else to.width=r.width+'px';
+    var from=null;
+    if(placed&&ind.animate&&!(rm&&rm.matches)){var cs=getComputedStyle(ind);from={transform:cs.transform};if(axis==='y')from.height=cs.height;else from.width=cs.width;if(anim){anim.cancel();anim=null}}
+    ind.style.opacity='';ind.style.transform=to.transform;if(axis==='y')ind.style.height=to.height;else ind.style.width=to.width;
+    if(from){anim=ind.animate([from,to],{duration:window.kosIndMs||300,easing:'cubic-bezier(.2,.8,.2,1)'});anim.onfinish=function(){anim=null}}
+    placed=true;
+  }
+  addEventListener('resize',function(){move(true)});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){move(true)});
+  box.__ind=move;move();return move;
+};
+</script>
 <style>
-@font-face{font-family:"Pretendard";font-weight:400;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Regular.woff2") format("woff2"), url("fonts/Pretendard-Regular.otf") format("opentype")}
-@font-face{font-family:"Pretendard";font-weight:500;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Medium.woff2") format("woff2"), url("fonts/Pretendard-Medium.otf") format("opentype")}
-@font-face{font-family:"Pretendard";font-weight:600;font-style:normal;font-display:swap;src:url("fonts/Pretendard-SemiBold.woff2") format("woff2"), url("fonts/Pretendard-SemiBold.otf") format("opentype")}
-@font-face{font-family:"Pretendard";font-weight:700;font-style:normal;font-display:swap;src:url("fonts/Pretendard-Bold.woff2") format("woff2"), url("fonts/Pretendard-Bold.otf") format("opentype")}
-@font-face{font-family:"Pretendard";font-weight:800;font-style:normal;font-display:swap;src:url("fonts/Pretendard-ExtraBold.woff2") format("woff2"), url("fonts/Pretendard-ExtraBold.otf") format("opentype")}
 :root{
-  --brand-blue:rgb(13,105,212);--brand-cyan:rgb(95,197,255);
-  --bg-1:rgb(249,248,246);--fg-1:rgb(20,20,20);--fg-2:rgba(0,0,0,0.7);--fg-3:rgba(0,0,0,0.5);
-  --border-2:rgba(0,0,0,0.1);--hair:rgba(0,0,0,0.07);
-  --shadow-1:0 1px 0 rgba(0,0,0,.05),0 4px 4px rgba(0,0,0,.05);
-  --shadow-2:0 1px 0 rgba(0,0,0,.05),0 4px 4px rgba(0,0,0,.05),0 10px 20px rgba(0,0,0,.08);
-  --radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:20px;--pill:9999px;
-  --font-sans:"Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  --pad:20px;
+  --bg:#f9f8f6; --surface:#ffffff; --surface-2:#f1efeb;
+  --ink:#141414; --ink-72:rgba(20,20,20,.72); --ink-62:rgba(20,20,20,.62); --ink-30:rgba(20,20,20,.30);
+  --hair:rgba(20,20,20,.08); --line:rgba(20,20,20,.14);
+  --up:#c8102e; --down:#1e5fbf; --up-bg:rgba(200,16,46,.08); --down-bg:rgba(30,95,191,.08);
+  --font:"Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --wrap:1120px; --pad:32px; --nav-bar:rgba(249,248,246,.72);
+  color-scheme:light;
 }
 :root[data-theme="dark"]{
-  --fg-1:rgb(255,255,255);--fg-2:rgba(255,255,255,0.72);--fg-3:rgba(255,255,255,0.5);
-  --border-2:rgba(255,255,255,0.12);--hair:rgba(255,255,255,0.08);
-  --shadow-2:0 1px 0 rgba(0,0,0,.2),0 10px 24px rgba(0,0,0,.4);
+  --bg:#0d0d0e; --surface:#161617; --surface-2:#1e1e20;
+  --ink:#ececea; --ink-72:rgba(236,236,234,.72); --ink-62:rgba(236,236,234,.62); --ink-30:rgba(236,236,234,.30);
+  --hair:rgba(255,255,255,.08); --line:rgba(255,255,255,.14);
+  --up:#f0655f; --down:#6f9cf5; --up-bg:rgba(240,101,95,.12); --down-bg:rgba(111,156,245,.12);
+  --nav-bar:rgba(13,13,14,.72);
+  color-scheme:dark;
 }
+/* 가격 방향 색 — 한국어는 오르면 빨강 · 내리면 파랑, 영어는 해외 관례대로 오르면 초록 · 내리면 빨강(실사이트 영어판과 같은 방향).
+   --up 은 오류 · 경고 글자에도 쓰므로 그대로 두고, 가격 방향(.up · .down · 강세/약세 점)만 이 둘을 쓴다.
+   초록은 빨강과 밝기를 맞췄다 — 바탕에 대한 명암비 라이트 5.4:1 · 다크 6.5:1(빨강 5.5:1 · 6.2:1). */
+:root{--rise:var(--up);--fall:var(--down)}
+:root[lang="en"]{--rise:#0a7637;--fall:var(--up)}
+:root[lang="en"][data-theme="dark"]{--rise:#31aa64}
 *{box-sizing:border-box}
-/* 글을 끌어 잡았을 때 — 브라우저 기본 파란 박스 대신 회색.
-   글자색은 건드리지 않는다. 색이 있는 숫자(등락률 빨강·파랑)까지
-   검게 만들면 무슨 값인지 알 수 없게 된다. */
-::selection{background:rgba(0,0,0,.14)}
-::-moz-selection{background:rgba(0,0,0,.14)}
-[data-theme="dark"] ::selection{background:rgba(255,255,255,.24)}
-[data-theme="dark"] ::-moz-selection{background:rgba(255,255,255,.24)}
-html{scroll-behavior:smooth;scrollbar-gutter:stable}
-body{margin:0;font-family:var(--font-sans);color:var(--fg-1);background:#f9f8f6;-webkit-font-smoothing:antialiased;min-height:100vh;position:relative;display:flex;flex-direction:column}
-body::after{content:"";position:fixed;inset:0;z-index:-2;
-  background:#f9f8f6;background-attachment:fixed}
-:root[data-theme="dark"] body{background:#0e0e16}
-:root[data-theme="dark"] body::after{
-  background:#0d0e18}
-/* 배경 격자(body::before 48px)는 뺐다 — 2026-09-14 사장 지시.
-   스테이징에서 먼저 빼 보고 괜찮아서 실사이트도 같이 뺐다. */
-.glass{background:rgba(255,255,255,0.62);border:1px solid rgba(255,255,255,0.55);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.6);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-radius:var(--radius-xl)}
-:root[data-theme="dark"] .glass{background:rgba(28,30,42,0.62);border-color:rgba(255,255,255,0.10);box-shadow:var(--shadow-2),inset 0 1px 0 rgba(255,255,255,0.08)}
-.btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;font:600 15px/1 var(--font-sans);border-radius:var(--radius-sm);cursor:pointer;border:0;transition:transform .12s,filter .15s;white-space:nowrap}
-.btn:active{transform:scale(.98)}
-.btn-primary{background:#141414;color:#fff;padding:14px 20px;box-shadow:var(--shadow-1)}
-.btn-primary:hover{filter:brightness(1.1)}
-:root[data-theme="dark"] .btn-primary{background:#fff;color:#000}
-.wrap{max-width:1120px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad);width:100%}
-
-/* nav */
-.nav{position:sticky;top:12px;z-index:50;margin:12px auto 0;max-width:1120px;width:calc(100% - 2*var(--pad));display:flex;align-items:center;gap:16px;padding:10px 12px 10px 16px;border-radius:var(--radius-lg)}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--fg-1)}
-.brand-name{font:700 19px/1 var(--font-sans);letter-spacing:-.02em;color:var(--fg-1)}
-.nav-links{display:flex;gap:2px;margin-left:8px}
-.nav-links a{font:500 14px var(--font-sans);color:var(--fg-2);text-decoration:none;padding:8px 13px;border-radius:var(--radius-sm);transition:.15s;white-space:nowrap}
-.nav-links a:hover{color:var(--fg-1);background:rgba(0,0,0,.05)}
-:root[data-theme="dark"] .nav-links a:hover{background:rgba(255,255,255,.08)}
-/* 현재 페이지 표시. 이 규칙이 없으면 class="active" 를 달아도 아무 일이 없다 —
-   실제로 멤버십 페이지가 그랬다. */
-.nav-links a.active{color:var(--fg-1);background:rgba(0,0,0,.07);font-weight:600}
-:root[data-theme="dark"] .nav-links a.active{background:rgba(255,255,255,.10)}
-.nav-spacer{flex:1}
-
-.icon-btn{width:38px;height:38px;border-radius:var(--radius-sm);border:0;background:transparent;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;color:var(--fg-2);transition:.15s}
-.icon-btn:hover{background:rgba(0,0,0,.06);color:var(--fg-1)}
-:root[data-theme="dark"] .icon-btn:hover{background:rgba(255,255,255,.08)}
-.icon-btn svg{width:19px;height:19px}
-.menu-btn{display:none}
-.mobile-menu{display:none;position:fixed;top:70px;left:var(--pad);right:var(--pad);z-index:49;padding:8px;border-radius:var(--radius-lg);flex-direction:column;gap:2px}
-.mobile-menu.open{display:flex}
-.mobile-menu a{font:600 16px var(--font-sans);color:var(--fg-1);text-decoration:none;padding:13px 14px;border-radius:var(--radius-sm)}
-.mobile-menu a:hover{background:rgba(0,0,0,.06)}
-:root[data-theme="dark"] .mobile-menu a:hover{background:rgba(255,255,255,.08)}
-.mobile-menu a.active{background:rgba(0,0,0,.06)}
-:root[data-theme="dark"] .mobile-menu a.active{background:rgba(255,255,255,.08)}
-
-.crumb{font:500 13px var(--font-sans);color:var(--fg-3);padding-top:28px;margin-bottom:12px}
-.crumb a{color:var(--fg-3);text-decoration:none}.crumb a:hover{color:var(--fg-1)}
-.crumb b{color:var(--fg-2);font-weight:600}
-
-/* main */
-main{flex:1;padding:8px 0 64px}
-/* footer */
-.foot{padding:44px 0 28px}
-.foot-inner{border-radius:var(--radius-xl);padding:36px 32px 26px}
-.foot-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:28px}
-.foot-brand .brand{margin-bottom:12px}
-.foot-brand p{margin:0;font:400 14px/1.55 var(--font-sans);color:var(--fg-2);max-width:260px}
-.foot-col h4{margin:0 0 12px;font:600 12px var(--font-sans);color:var(--fg-3)}
-.foot-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
-.foot-col a{font:400 14px var(--font-sans);color:var(--fg-2);text-decoration:none}
-.foot-col a:hover{color:var(--fg-1)}
-.disclaimer{margin-top:28px;padding:16px 18px;border-radius:var(--radius-md);background:rgba(0,0,0,.04);border:1px solid var(--border-2);font:400 13px/1.6 var(--font-sans);color:var(--fg-2)}
-:root[data-theme="dark"] .disclaimer{background:rgba(255,255,255,.04)}
-.disclaimer b{color:var(--fg-1)}
-.biz b{font-weight:600;color:var(--fg-2)}
-.biz{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:96px;padding-top:22px;border-top:1px solid var(--border-2);font:500 12px/1.7 var(--font-sans);color:var(--fg-3)}
-.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid var(--border-2);font:500 12px var(--font-sans);color:var(--fg-3)}
-
-@media (min-width:768px){:root{--pad:24px}}
-@media (min-width:1024px){:root{--pad:32px}}
-@media (min-width:1180px){:root{--pad:0px}.nav{width:100%}}
-@media (max-width:767px){
-  .nav-links{display:none}.menu-btn{display:inline-flex}
-  .foot-grid{grid-template-columns:repeat(3,1fr);gap:16px}.foot-brand{grid-column:1/-1}.foot-bottom{flex-direction:column;gap:8px}
-}
-</style>
-<script>
-/* ============================================================
-   KOSAI — lightweight in-place i18n (KO ⇄ EN)
-   Text-node level translation: dictionary keyed by visible
-   Korean text (whitespace-normalized). No reload, reversible.
-   - Injects a KO/EN toggle to the left of #themeBtn
-   - localStorage('kos-lang')
-   - Pages: KOSi18n.register(dict, onChange)
-   - Dynamic (JS-rendered) regions: mark container [data-i18n-skip]
-     and re-render with KOSi18n.t() inside the onChange callback.
-   - Placeholders: add attribute data-i18n-ph to the input.
-   ============================================================ */
-(function(){
-  const KEY='kos-lang';
-  const dict={};                 // normalized KO -> EN
-  const listeners=[];
-  const txtOrig=new WeakMap();   // textNode -> original nodeValue
-  const phOrig=new WeakMap();    // element  -> original placeholder
-  const blockOrig=new WeakMap(); // element  -> {html, key}
-  let lang='ko';
-
-  function getLang(){ try{ const v=localStorage.getItem(KEY); if(v) return v; return 'ko'; }catch(e){ return 'ko'; } }
-  function norm(s){ return (s==null?'':String(s)).replace(/\s+/g,' ').trim(); }
-
-  function translateText(orig){
-    const m=orig.match(/^(\s*)([\s\S]*?)(\s*)$/);
-    const lead=m[1], core=norm(m[2]), trail=m[3];
-    if(!core) return orig;
-    const en=dict[core];
-    return (en!=null)? (lead+en+trail) : orig;
-  }
-
-  function walk(node){
-    if(node.nodeType===1){ // element
-      const tag=node.tagName;
-      if(tag==='SCRIPT'||tag==='STYLE'||tag==='NOSCRIPT') return;
-      if(node.hasAttribute('data-i18n-skip')) return;
-      if(node.hasAttribute('data-i18n-ph')){
-        if(!phOrig.has(node)) phOrig.set(node, node.getAttribute('placeholder')||'');
-        const ko=phOrig.get(node);
-        node.setAttribute('placeholder', lang==='en' ? (dict[norm(ko)]||ko) : ko);
-      }
-      if(node.hasAttribute('data-i18n-block')){
-        if(!blockOrig.has(node)) blockOrig.set(node, {html:node.innerHTML, key:norm(node.textContent||'')});
-        const rec=blockOrig.get(node);
-        if(lang==='en'){
-          let en=dict[rec.key];
-          if(en==null){
-            // try with leading bull/bear marker stripped ("▲ X" / "▼ X" → "X")
-            const stripped=rec.key.replace(/^[▲▼]\s*/,'');
-            if(stripped!==rec.key && dict[stripped]!=null){
-              const mk=rec.key.slice(0,1);
-              en=mk+' '+dict[stripped];
-            }
-          }
-          // 영문 값에 태그가 들어 있으면 그대로 넣는다 — 문단 안의 종목 링크와
-          // 굵은 글씨가 영어 모드에서 사라지지 않게 한다.
-          if(en!=null){ if(/</.test(en)) node.innerHTML=en; else node.textContent=en; }
-          else node.innerHTML=rec.html;
-        } else {
-          node.innerHTML=rec.html;
-        }
-        return;
-      }
-      for(let c=node.firstChild;c;c=c.nextSibling) walk(c);
-    }else if(node.nodeType===3){ // text
-      const v=node.nodeValue;
-      if(!v || !v.trim()) return;
-      if(!txtOrig.has(node)) txtOrig.set(node, v);
-      const orig=txtOrig.get(node);
-      node.nodeValue = (lang==='en') ? translateText(orig) : orig;
-    }
-  }
-
-  function apply(){
-    document.documentElement.setAttribute('lang', lang);
-    if(document.body) walk(document.body);
-    updateToggle();
-  }
-
-  function setLang(l){
-    lang=l;
-    try{ localStorage.setItem(KEY,l); }catch(e){}
-    listeners.forEach(fn=>{ try{ fn(lang); }catch(e){} });  // let pages re-render dynamic parts first
-    apply();
-  }
-
-  function t(ko){ if(ko==null) return ''; return lang==='en' ? (dict[norm(ko)]!=null?dict[norm(ko)]:ko) : ko; }
-
-  function register(d, onChange){
-    if(d){ for(const k in d){ dict[norm(k)]=d[k]; } }
-    if(onChange){ listeners.push(onChange); try{ onChange(lang); }catch(e){} }
-    apply();
-  }
-
-  /* ---- toggle UI ---- */
-  /* 헤더의 KO/EN 토글은 걷어냈다. 언어는 설정 화면에서 바꾼다
-     (settings-panel.js 의 '언어' 줄). 같은 것을 두 곳에 두면 헤더가
-     붐비고, 테마 토글과 나란히 있어 무엇이 무엇인지 한눈에 안 잡혔다.
-
-     함수는 남겨 둔다 — init() 이 부르고 있어서, 지우려면 페이지마다 조금씩
-     다른 init 을 17벌 손봐야 한다. updateToggle 도 그대로다. 엘리먼트가
-     없으면 스스로 빠져나간다. */
-  function buildToggle(){ return; }
-  function updateToggle(){
-    const wrap=document.getElementById('langToggle'); if(!wrap) return;
-    wrap.querySelectorAll('button').forEach(b=>b.classList.toggle('on', b.dataset.l===lang));
-  }
-
-  function autoMarkBlocks(){
-    // Treat each visually-distinct prose unit as a single translation block,
-    // so inline <b>/<strong>/<span> highlights don't split text into pieces
-    // the dictionary can't match.
-    const sel='.prose p,.factor p,.tldr p,.kpoints li,.risk .body,.wrapup p,.lead,.desc,.sec-lead';
-    document.querySelectorAll(sel).forEach(el=>{
-      if(!el.hasAttribute('data-i18n-block')) el.setAttribute('data-i18n-block','');
-    });
-  }
-
-  function init(){ lang=getLang(); buildToggle(); autoMarkBlocks(); listeners.forEach(fn=>{ try{ fn(lang); }catch(e){} }); apply(); }
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init);
-  else init();
-
-  window.KOSi18n={ register, t, setLang, get lang(){return lang;}, apply };
-})();
-
-</script>
-<script>
-/* === 영어 모드 한글 제거: 라이브 종목명·업종명 폴백 등록 (손사전이 우선하도록 chrome 앞에 위치) === */
-(function(){
-  if(!window.KOSi18n) return;
-  KOSi18n.register({
-  /* BIZ:I18N:START */
-  "상호":"Company",
-  "대표":"CEO",
-  "사업자등록번호":"Business Reg. No.",
-  "주소":"Address",
-  "이메일":"Email",
-  "코사이":"KOSAI",
-  "임범준":"Beomjun Lim",
-  "서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호":"#459, 4F Dongseong Bldg., 50 Mokdongdong-ro 12-gil, Yangcheon-gu, Seoul, Republic of Korea",
-  /* BIZ:I18N:END */
-    "전자·부품":"Electronic Components","IT·소프트웨어":"IT & Software","게임":"Games",
-    "전기장비":"Electrical Equipment","기계·장비":"Machinery","조선":"Shipbuilding",
-    "항공·방산":"Aerospace & Defense","운송·물류":"Transport & Logistics","철강·금속":"Steel & Metals",
-    "정유":"Oil Refining","에너지·전력":"Energy & Power","건설·건자재":"Construction & Materials",
-    "바이오·제약":"Biotech & Pharma","화장품":"Cosmetics","식음료":"Food & Beverage",
-    "섬유·패션·생활":"Apparel & Living","미디어·엔터":"Media & Entertainment","호텔·레저":"Hotel & Leisure",
-    "보험":"Insurance","지주":"Holding Companies","부동산·리츠":"Real Estate & REITs",
-    "인공지능(AI)":"AI","로봇":"Robotics","자율주행·전기차":"EV & Autonomous",
-    "원전·전력":"Nuclear & Power","우주·방산":"Space & Defense","바이오·신약":"Biotech & New Drugs",
-    "K-콘텐츠·엔터":"K-Content","수소·신재생":"Hydrogen & Renewables",
-    "반도체":"Semiconductors","IT 서비스":"IT Services","2차전지":"Batteries",
-    "바이오/제약":"Biotech & Pharma","자동차":"Automotive","금융":"Finance",
-    "에너지":"Energy","화학":"Chemicals","철강":"Steel",
-    "조선·방산":"Shipbuilding & Defense","통신":"Telecom","유통·소비재":"Retail & Consumer",
-    "식품":"Food & Beverage","엔터·미디어":"Entertainment & Media","건설":"Construction",
-    "기계·로봇":"Machinery & Robotics","기타":"Others",
-    "검색 결과가 없습니다":"No results found",
-    "다른 종목명·티커·업종으로 검색해 보시기 바랍니다.":"Try a different name, ticker, or sector.",
-    "해당 업종 종목이 없습니다.":"No stocks in this sector.",
-    "관심 종목":"Watchlist","관심종목":"Watchlist",
-    "코스피":"KOSPI","코스닥":"KOSDAQ","코넥스":"KONEX",
-    "시가총액":"Market Cap","거래대금":"Turnover","거래량":"Volume",
-    "현재가":"Price","등락률":"Change","시장":"Market","상승 종목":"Gainers",
-    "평균 등락률":"Avg. change","거래대금 합계":"Total turnover","시가총액 1위":"Top by mkt cap",
-    "업종 시가총액 합계":"Sector market cap","시가총액(조)":"Mkt cap (₩T)","거래대금(조)":"Turnover (₩T)",
-    "거래대금순":"By turnover","종목 수":"Stocks",
-    "전일 대비":"Day change","상장주식수":"Shares out.","52주 최고":"52W high","52주 최저":"52W low",
-    "하락 종목":"Decliners","시장 비중":"Market weight"
-  });
-  function cleanEn(s){
-    s=(s||'').trim();
-    var prev;
-    do{ prev=s;
-      s=s.replace(/[\s,\.]*\b(CO|LTD|INC|CORP|CORPORATION|LIMITED|PLC|LLC)\b\.?\s*,?\s*\.?$/i,'').trim();
-    }while(s!==prev && s);
-    s=s.replace(/[,.\s]+$/,'').trim();
-    var letters=s.replace(/[^A-Za-z]/g,'');
-    var upper=s.replace(/[^A-Z]/g,'');
-    if(letters && upper.length/letters.length>0.8){
-      var ACR={LG:1,SK:1,KB:1,KT:1,HD:1,CJ:1,GS:1,LS:1,DB:1,NH:1,SC:1,POSCO:1,NAVER:1,HMM:1,OCI:1,DL:1,BGF:1,JYP:1,YG:1,SM:1,HLB:1,KCC:1,DGB:1,BNK:1,JB:1,NHN:1,SDI:1,BM:1,IPS:1,NC:1,LX:1,KG:1,DN:1};
-      s=s.split(/\s+/).map(function(w){
-        var wu=w.toUpperCase().replace(/[.,]/g,'');
-        if(ACR[wu]) return wu;
-        if(/[&]/.test(w) && w===w.toUpperCase()) return w;
-        return w.charAt(0).toUpperCase()+w.slice(1).toLowerCase();
-      }).join(' ');
-    }
-    return s;
-  }
-  var live=(window.KOS_LIVE_DATA&&window.KOS_LIVE_DATA.stocks)||[];
-  var d={};
-  live.forEach(function(s){ if(s.name_en) d[s.name]=cleanEn(s.name_en); });
-  KOSi18n.register(d);
-})();
-</script>
-<script>
-/* Shared chrome translations (nav + footer + disclaimer) for every page. */
-KOSi18n.register({
-  // brand / nav
-  "KOSAI":"KOSAI",
-  "홈":"Home",
-  
-  "업종 분석":"Industry Analysis",
-  "리포트":"Reports",
-  "워치리스트":"Watchlist","상호":"Company","대표":"CEO","사업자등록번호":"Business Reg. No.","통신판매업 신고":"Mail-order Reg. No.","주소":"Address","대표전화":"Phone","전자우편":"Email","요금제":"Pricing","멤버십":"Pricing","모닝브리핑":"Morning Brief",
-  // footer headings
-  "서비스":"Services",
-  "회사":"Company",
-  "정책":"Legal",
-  // footer links
-  "About":"About",
-  "문의하기":"Contact",
-  "피드백":"Feedback",
-  "이용약관":"Terms of Service",
-  "개인정보처리방침":"Privacy Policy",
-  "로그인":"Sign in",
-  "회원가입":"Sign up",
-  // brand tagline
-  "한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.":
-    "AI investment research for Korean public companies — data and analysis on a single page.",
-  // disclaimer
-  // footer bottom
-  "© 2026 KOSAI — All rights reserved.":"© 2026 KOSAI — All rights reserved.",
-  "대표 · 사업자등록번호 · 주소 · 연락처":"CEO · Business Reg. No. · Address · Contact"
-});
-
-</script>
-<style id="en-updown">
-/* English/Western convention: 상승=green, 하락=red (flips KO red/blue when lang=en) */
-:root[lang="en"]{--up:#1f9d57;--down:#e5383b;--up-soft:rgba(31,157,87,0.10);--down-soft:rgba(229,56,59,0.10)}
-:root[lang="en"][data-theme="dark"]{--up:#3ddc84;--down:#ff5b5e;--up-soft:rgba(61,220,132,0.12);--down-soft:rgba(255,91,94,0.12)}
-</style>
-<style>
-/* KOSAI 로고 (테마별 자동 전환) */
-.brand-logo{height:12px;width:auto;display:block}
-.brand-logo--dark{display:none}
-:root[data-theme="dark"] .brand-logo--light{display:none}
-:root[data-theme="dark"] .brand-logo--dark{display:block}
-.foot-brand .brand-logo{height:14px}
-@media(max-width:640px){.brand-logo{height:11px}}
-</style>
-<link rel="icon" type="image/svg+xml" href="assets/kosai-icon-dark.svg?v=k2">
-  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png?v=k2">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png?v=k2">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=k2">
-  <script src="analytics.js?v=772effd5"></script>
-<script>
-/* i18n: title·aria-label 속성 번역(영어 모드). 동적(data-i18n-skip) 영역은 각 페이지 템플릿의 T()가 담당 */
-(function(){
-  if(!window.KOSi18n) return;
-  var D={"라이트/다크 전환":"Switch light/dark","테마 전환":"Toggle theme","메뉴":"Menu","관심종목 추가/해제":"Add/remove from watchlist","관심종목":"Watchlist","제거":"Remove","닫기":"Close","뒤로":"Back","필터 설정":"Filter settings","정렬":"Sort","로딩":"Loading","검색":"Search","삭제":"Delete"};
-  function nm(s){return (s==null?'':String(s)).replace(/\s+/g,' ').trim();}
-  var orig=new WeakMap();
-  function fix(l){
-    if(!document.body) return;
-    document.querySelectorAll('[title],[aria-label]').forEach(function(el){
-      if(el.closest('[data-i18n-skip]')) return;
-      var rec=orig.get(el); if(!rec){rec={};orig.set(el,rec);}
-      ['title','aria-label'].forEach(function(a){
-        if(!el.hasAttribute(a)) return;
-        if(rec[a]==null) rec[a]=el.getAttribute(a);
-        var v=(l==='en')?KOSi18n.t(nm(rec[a])):rec[a];
-        if(el.getAttribute(a)!==v) el.setAttribute(a,v);
-      });
-    });
-  }
-  KOSi18n.register(D, fix);
-})();
-</script>
-
-<style>
-/* ── 모닝 브리핑 ─────────────────────────────────────────
-   글이 주인공인 화면이다. 읽는 폭을 좁게 잡고 행간을 넉넉히 둔다. */
-.mb{max-width:720px;margin:0 auto;padding:8px 0 56px}
-.mb-head{padding-bottom:26px;margin-bottom:30px;border-bottom:1px solid var(--hair)}
-/* 날짜는 붉은색이었는데(브릭 레드) 경고처럼 읽혀서 회색으로 바꿨다.
-   기사 머리의 날짜는 눈에 걸리는 자리가 아니라 조용히 있어야 하는 자리다. */
-.mb-date{font:600 13px var(--font-sans);color:var(--fg-3);letter-spacing:.02em;margin-bottom:10px}
-.mb-head h1{margin:0 0 16px;font:600 clamp(26px,4.4vw,38px)/1.22 var(--font-sans);color:var(--fg-1);letter-spacing:-.02em}
-.mb-lead{margin:0 0 14px;font:400 17.5px/1.62 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
-.mb-meta{font:400 13px var(--font-sans);color:var(--fg-3)}
-/* 커버리지 섹션은 성격이 다르다 — 시황이 아니라 우리 리포트에서 나온 것이다.
-   글에서도 밝히지만(프롬프트 6-1항) 눈으로도 구분되게 왼쪽에 선을 두고
-   출처 표시를 얹는다. 이 섹션이 이 브리핑의 존재 이유다. */
-.mb-sec--cov{padding-left:18px;border-left:2px solid var(--brand-blue)}
-.mb-src{font:700 11.5px var(--font-sans);letter-spacing:.06em;color:var(--brand-blue);
-  text-transform:none;margin-bottom:8px}
-:root[data-theme="dark"] .mb-sec--cov{border-left-color:var(--brand-cyan)}
-:root[data-theme="dark"] .mb-src{color:var(--brand-cyan)}
-@media (max-width:640px){.mb-sec--cov{padding-left:14px}}
-
-/* 요약 — 제목 아래, 본문 앞. 세 줄만 읽고 나가는 사람을 위한 자리다.
-   테두리 대신 배경으로 구분한다. 선을 두르면 상자가 먼저 눈에 들어와서
-   정작 읽어야 할 세 줄이 뒤로 밀린다. */
-.mb-sum{margin:0 0 34px;padding:18px 20px;border-radius:var(--radius-md);
-  background:rgba(0,0,0,.035)}
-:root[data-theme="dark"] .mb-sum{background:rgba(255,255,255,.05)}
-.mb-sum-h{font:700 11.5px var(--font-sans);letter-spacing:.06em;color:var(--fg-3);
-  margin-bottom:12px}
-/* 목록이 아니라 문단 하나다. 항목으로 쪼개 늘어놓으면 사람이 쓴 글이 아니라
-   기계가 뽑아낸 목록처럼 읽힌다는 피드백을 받았다. */
-/* 문단을 나눴으면 여백도 줘야 한다. 여기가 margin:0 이라 세 문단이 그대로
-   붙어 있었다. 데스크탑은 폭이 넓어 문단의 끝 줄이 짧게 끝나는 것으로 구분이
-   되지만, 휴대폰에서는 그 신호가 힘을 잃고 13줄이 한 덩어리로 보인다
-   (390px 기준 5·3·5줄 · 상자 393px). 본문 절의 문단이 24px 를 받는 것과
-   짝을 맞춰, 글자가 작은 만큼 줄인 값을 준다. */
-.mb-sum-p{margin:0 0 18px;font:400 15.5px/1.72 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
-/* 마지막 문단의 아래 여백은 뺀다 — 상자 안쪽 여백과 겹쳐 아래만 벌어진다. */
-.mb-sum-p:last-child{margin-bottom:0}
-@media (max-width:640px){.mb-sum{padding:16px}.mb-sum-p{font-size:15px;margin-bottom:16px}}
-
-/* 문단 사이가 좁아 글이 벽처럼 붙어 보인다는 피드백을 받았다. 줄높이는
-   1.78 로 넉넉한데 문단 간격이 15px — 한 줄 높이(28px)의 절반이라
-   문단이 바뀌는 것이 눈에 안 잡혔다. 간격을 한 줄보다 크게 벌린다. */
-.mb-sec{margin:0 0 50px}
-/* 소제목이 본문처럼 읽혀 글 전체가 한 덩어리로 보인다는 피드백을 받았다.
-   재 보니 그럴 만했다 — 소제목이 15px·fg-2 인데 본문이 16px·fg-1 이라,
-   굵기만 600 일 뿐 실제로는 본문보다 작고 흐렸다. 굵기 하나로 위계를
-   세우려 한 것이 잘못이다.
-
-   크기·굵기·색을 한꺼번에 올려 본문과 갈라 놓는다. 밑줄은 뺐다 — 소제목
-   아래 가로선은 '여기서 끝난다'로 읽혀서, 절이 시작한다는 신호와 반대다.
-   대신 위에 짧은 막대를 둔다.
-
-   막대를 span 이 아니라 ::before 로 그리는 이유가 있다. 이 사이트의 i18n
-   엔진은 화면의 한국어 텍스트 노드를 키로 삼아 번역하는데, 장식용 요소를
-   넣으면 그것까지 훑는다. CSS 로 그리면 DOM 에 안 잡힌다. */
-.mb-sec h2{margin:0 0 16px;font:800 20px/1.35 var(--font-sans);color:var(--fg-1);
-  letter-spacing:-.025em}
-.mb-sec h2::before{content:"";display:block;width:26px;height:3px;border-radius:2px;
-  background:var(--brand-blue);margin-bottom:12px}
-:root[data-theme="dark"] .mb-sec h2::before{background:var(--brand-cyan)}
-/* 커버리지 절은 왼쪽 세로선과 라벨을 이미 갖고 있다. 막대까지 더하면 셋이 된다. */
-.mb-sec--cov h2::before{display:none}
-.mb-sec p{margin:0 0 24px;font:400 16px/1.8 var(--font-sans);color:var(--fg-1);text-wrap:pretty}
-.mb-sec p:last-child{margin-bottom:0}
-.mb-sec a{color:var(--fg-1);text-decoration:none;border-bottom:1px solid var(--hair);
-  transition:border-color .15s}
-.mb-sec a:hover{border-bottom-color:var(--fg-1)}
-.mb-sec b{font-weight:600}
-.mb-disc{margin:34px 0 0;padding-top:18px;border-top:1px solid var(--hair);
-  font:400 13px/1.7 var(--font-sans);color:var(--fg-3)}
-@media (max-width:640px){
-  .mb-sec p{font-size:15.5px}
-  .mb-lead{font-size:16.5px}
-  /* 본문이 15.5px 로 줄므로 소제목도 같이 줄이되, 차이는 유지한다. */
-  .mb-sec h2{font-size:18.5px}
-  .mb-sec{margin-bottom:44px}
-}
-</style>
-<style>/* lenis 가 요구하는 최소 CSS */
-html.lenis,html.lenis body{height:auto}
-.lenis [data-lenis-prevent]{overscroll-behavior:contain}
-.lenis.lenis-smooth iframe{pointer-events:none}</style>
-<!-- 헤더 — 상자 없이 · 내리면 화면 폭 띠 · 메뉴 가운데 · 푸터·로그인 상자 없음. scripts/patch_header.py 가 넣는다. 손으로 고치지 말 것. -->
-<script id="kosTheme">(function(){var t='dark';try{t=localStorage.getItem('kos-theme')||'dark'}catch(e){}document.documentElement.setAttribute('data-theme',t)})();</script>
-<meta name="theme-color" content="#f9f8f6">
-<script id="kosThemeColor">/* 상태바·주소창 색 힌트(theme-color) — 안드로이드 크롬 · iOS 15~18 · macOS 사파리용. 테마(data-theme)가 바뀌면 따라 바꾼다.
-   iOS 26 사파리는 이 메타를 안 쓴다 — 화면 위·아래 가장자리에 닿은 fixed 요소의 배경색을 스스로 읽는다(아래 #kosEdgeTop/#kosEdgeBot). */
-(function(){var m=document.querySelector('meta[name="theme-color"]'),r=document.documentElement;
-  function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0e0e16':'#f9f8f6')}
-  tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme']})})();</script>
-<style id="kosNav">
+html{scroll-behavior:smooth;scroll-padding-top:calc(84px + var(--kos-bar-h,0px));overflow-x:clip}
+/* 페이지 전환 — 실사이트와 같은 문서 간 크로스페이드(크롬 126+ · 사파리 18.2+). 띠와 헤더는 이름을 줘 제자리에 두고 본문만 바뀐다. */
 @view-transition{navigation:auto}
-:root{--nav-bar:rgba(255,255,255,.58);--nav-line:rgba(0,0,0,.06)}
-:root[data-theme="dark"]{--nav-bar:rgba(14,14,22,.55);--nav-line:rgba(255,255,255,.08)}
-html .nav{top:var(--kos-bar-h,0px);margin:0;max-width:none;width:auto;min-height:60px;border:0;border-radius:0;
-  padding:11px calc(max(var(--pad),(100% - 1120px)/2) + 12px) 11px max(var(--pad),(100% - 1120px)/2);
-  background:transparent;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;
-  transition:background-color .25s ease,box-shadow .25s ease,-webkit-backdrop-filter .25s ease,backdrop-filter .25s ease}
-html .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--nav-line);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
-html .nav-spacer{min-height:32px}
-html .nav .brand-logo{height:14px}
-@media(max-width:640px){html .nav .brand-logo{height:13px}}
-html .nav-links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin-left:0;gap:14px}
-html .nav-links a:hover,html .nav .icon-btn:hover,html:root[data-theme="dark"] .nav-links a:hover,html:root[data-theme="dark"] .nav .icon-btn:hover{background:transparent}
-html .nav-links a.active,html:root[data-theme="dark"] .nav-links a.active{background:transparent}
-html .mobile-menu{top:calc(60px + var(--kos-bar-h,0px))}
-html .foot-inner,html:root[data-theme="dark"] .foot-inner,html .auth-card,html:root[data-theme="dark"] .auth-card{background:transparent;border:0;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none}
-/* iOS 26 사파리의 상태바·주소창 뒤 색 — 사파리가 화면 위·아래 가장자리(가운데, 4px 안쪽)에 닿은 fixed/sticky 요소를 찾아 그 배경색으로
-   칠한다(theme-color 메타는 안 쓴다). 투명한 .nav 만 있으면 처음 찍어 둔 색을 계속 쓰므로 테마를 바꿔도 위아래에 옛 색이 남았다
-   (2026-09-24 사장, 휴대폰). 색만 있는 12px 띠 둘을 가장자리에 두면 사파리가 매번 현재 테마 색을 읽는다. 페이지색 20% 라 보이지 않고,
-   손가락 기기에서만 둔다. WebKit LocalFrameView::fixedContainerEdges 조건: 두께 >10px · 불투명도 ≥.1 · 폭 ≥90% · 배경색이 있을 것. */
+.nav{view-transition-name:kos-nav}
+/* 옛 모듈(auth-state · settings-panel · auth-guard · consent · checkout)이 쓰는 토큰 이름 — 새 토큰에 잇는다. 모듈을 새 이름으로 고칠 때까지의 다리 */
+:root{--font-sans:var(--font);--fg-1:var(--ink);--fg-2:var(--ink-72);--fg-3:var(--ink-62);--bg-1:var(--surface);--border-2:var(--line);--shadow-2:0 8px 24px rgba(20,20,20,.08);--brand-blue:var(--ink);--brand-cyan:var(--ink-72);--radius-sm:8px;--radius-md:12px;--radius-lg:16px}
+[hidden]{display:none!important} /* hidden 속성이 .pager{display:flex} 같은 클래스 규칙에 밀리지 않게 */
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums lining-nums;word-break:keep-all;overflow-wrap:anywhere}
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(20,20,20,.14)} :root[data-theme="dark"] ::selection{background:rgba(255,255,255,.22)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.up{color:var(--rise)} .down{color:var(--fall)} .flat{color:var(--ink-62)}
+/* 헤더 — 사이트 규칙 그대로(60px · 맨 위 투명 · 내리면 띠) */
+.nav{position:sticky;top:var(--kos-bar-h,0px);z-index:50;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0;transition:background-color .2s,box-shadow .2s}
+.nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--hair);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+.nav-in{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;position:relative}
+.brand img{height:14px;display:block} .brand .dk{display:none} :root[data-theme="dark"] .brand .lt{display:none} :root[data-theme="dark"] .brand .dk{display:block}
+.links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:34px;width:max-content;white-space:nowrap}   /* 28 → 34(사장 2026-10-02) — 랜딩 머리와 같은 값이어야 페이지를 옮길 때 메뉴가 움직이지 않는다 */
+.links a{font:500 14px/1 var(--font);color:var(--ink-72);transition:color .12s} .links a:hover,.links a.on{color:var(--ink)} .links a.on{font-weight:600}
+.right{display:flex;align-items:center;gap:6px} .login{font:600 13px/1 var(--font);color:var(--ink-72);padding:8px 10px} .login:hover{color:var(--ink)}
+.ib{width:38px;height:38px;border:0;background:transparent;color:var(--ink-72);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;border-radius:10px} .ib:hover{color:var(--ink)} .ib svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.menu{display:none}
+@media (max-width:820px){.links,.login,.right .acct,.right .acct.show{display:none} .menu{display:inline-flex}}  /* 휴대폰은 햄버거 메뉴 안(#mauth)에 설정·로그아웃이 있어 아바타를 겹쳐 두지 않는다. 뒤에 오는 .acct.show{inline-flex} 보다 세게(.right 를 붙여) 적어야 로그인 뒤에도 숨는다 */
+/* 휴대폰 메뉴 — ☰ 를 누르면 헤더 아래를 페이지색 한 장이 다 덮는다. 큰 글자 다섯 · 계정 · 맨 아래 작은 링크.
+   (9/26 사장: 헤더에서 내려오던 목록이 안 예쁘다 — 그건 기능만 있던 자리였다.) nav 바깥에 둔다: .nav.scrolled 의
+   backdrop-filter 가 fixed 의 기준이 되어 안에 두면 내린 뒤 여는 순간 높이가 0 이 된다. */
+.menu .x{display:none} .nav.menu-open .menu .ham{display:none} .nav.menu-open .menu .x{display:block}
+.mmenu{display:none;position:fixed;top:calc(60px + var(--kos-bar-h,0px));left:0;right:0;bottom:0;z-index:49;background:var(--bg);flex-direction:column;box-sizing:border-box;padding:22px var(--pad) max(28px,env(safe-area-inset-bottom));overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+@media (max-width:820px){.mmenu.open{display:flex;animation:mmIn .18s ease-out}} @keyframes mmIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}} @media (prefers-reduced-motion:reduce){.mmenu.open{animation:none}}
+.mm-links{display:flex;flex-direction:column} .mm-links a{display:block;padding:10px 0;font:600 28px/36px var(--font);letter-spacing:-.02em;color:var(--ink-72);text-decoration:none} .mm-links a.on{color:var(--ink);font-weight:700}
+.mmenu .sep{height:1px;background:var(--hair);margin:20px 0 22px}
+.mm-auth{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px} .mm-auth a,.mm-auth button{border:0;background:none;padding:0;font:600 16px/24px var(--font);color:var(--ink);text-decoration:none;cursor:pointer}
+.mm-foot{margin-top:auto;padding-top:32px;display:flex;flex-wrap:wrap;gap:6px 18px} .mm-foot a{font:400 13px/20px var(--font);color:var(--ink-62);text-decoration:none}
+/* 계정(로그인 상태) — 이메일 첫 글자 동그라미와 작은 메뉴. 시안은 ?user=이메일 로 켠다 */
+.acct{position:relative;display:none;align-items:center} .acct.show{display:inline-flex} .right.user .login{display:none}
+.avatar{width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--bg);font:600 13px/1 var(--font);display:inline-flex;align-items:center;justify-content:center;border:0;cursor:pointer;padding:0;margin:0 4px}
+.acct-menu{display:none;position:absolute;right:0;top:calc(100% + 10px);min-width:220px;background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:6px 0;box-shadow:0 8px 24px rgba(20,20,20,.08);z-index:60}
+.acct.open .acct-menu{display:block} .acct-menu .em{padding:8px 16px 10px;font:400 12px/16px var(--font);color:var(--ink-62);border-bottom:1px solid var(--hair);margin-bottom:4px;word-break:break-all}
+.acct-menu a,.acct-menu button{display:block;width:100%;box-sizing:border-box;text-align:left;border:0;background:none;padding:9px 16px;font:500 14px/20px var(--font);color:var(--ink-72);cursor:pointer;text-decoration:none} .acct-menu a:hover,.acct-menu button:hover{background:var(--surface-2);color:var(--ink)}
+/* 단추 */
+/* 활성 표시선(kosInd) — 목차 세로선·밑줄 탭·쪽 번호가 쓴다. 움직임은 IND_JS 의 animate() */
+.ind{position:absolute;left:0;top:0;background:var(--ink);pointer-events:none;will-change:transform} .ind-v{width:2px} .ind-h{height:2px}
+.btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 18px;border-radius:999px;border:0;font:600 14px/1 var(--font);cursor:pointer;transition:background-color .12s,color .12s} .btn.ico{padding-left:14px}
+.btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+.btn-ink,.btn-primary{background:var(--ink);color:var(--bg)} .btn-ink:hover,.btn-primary:hover{opacity:.9}
+/* 키보드 포커스 — 먹색 2px 윤곽을 2px 띄워 두른다(브라우저 기본 고리는 파랑·이중선이라 옷과 따로 논다). 마우스로 누를 땐 안 나온다(:focus-visible).
+   가로로 넘기는 띠(.chips·.tabs·.seg·.sorts·설정 탭·표 틀) 안에서는 윤곽이 잘리므로 안쪽에 그린다. 밑줄 입력칸·검색창은 원래 밑줄이 먹색으로 바뀌는데, 거기에 1px 을 더해 2px 로 굵게 한다. */
+:is(a,button,summary,select,[tabindex],[role=tab],[role=button],[role=radio],input[type=checkbox],input[type=radio]):focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+:is(.chips,.tabs,.seg,.sorts,.ks-nav,.tbl-wrap,.fchips) :focus-visible{outline-offset:-2px}
+:is(.fld input:not([type=checkbox]):not([type=radio]),.fld textarea,.range-inputs input,.dlg textarea,.dlg input.type,.ks-dlg-d,.wd-detail,.wd-type):focus-visible,.search:focus-within{box-shadow:0 1px 0 0 var(--ink)}
+/* 로그인 가림창 — auth-guard.js 가 그리는 .kg-* . 모듈은 실사이트와 같아야 해서(auth-table.test) 손대지 않고 옷만 여기서 덮는다.
+   모듈이 <style id=kosGateCss> 를 나중에 꽂고 다크 규칙이 :root[data-theme=dark] .kg-*(0,3,0)라, :root[data-theme] body …(0,3,1)로 적어야 라이트·다크 모두 이긴다. 덮개는 헤더 아래부터 페이지색으로
+   덮고(z 40 — 헤더 50·휴대폰 메뉴 49 아래라 메뉴·테마 단추가 그대로 산다), 자물쇠는 먹색 선, 단추는 알약이다. */
+:root[data-theme] body .kg-overlay{top:calc(60px + var(--kos-bar-h,0px));left:0;right:0;bottom:0;z-index:40;align-items:flex-start;padding:clamp(56px,14vh,128px) var(--pad) 40px;
+  background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}
+:root[data-theme] body .kg-overlay.kg-dismiss{background:var(--bg)}
+:root[data-theme] body .kg-card{width:min(100%,400px);padding:0;border-radius:0;background:transparent;border:0;box-shadow:none;text-align:center}
+:root[data-theme] body .kg-ico{width:auto;height:auto;margin:0 0 22px;border-radius:0;background:none;display:block}
+:root[data-theme] body .kg-ico svg{width:30px;height:30px;stroke:var(--ink);stroke-width:1.4;fill:none}
+:root[data-theme] body .kg-title{margin:0 0 10px;font:600 24px/32px var(--font);letter-spacing:-.01em;color:var(--ink)}
+:root[data-theme] body .kg-sub{margin:0 0 28px;font:400 15px/24px var(--font);color:var(--ink-62)}
+:root[data-theme] body .kg-btns{display:flex;flex-direction:column;gap:10px;max-width:320px;margin:0 auto}
+:root[data-theme] body .kg-btn{display:flex;align-items:center;justify-content:center;height:48px;padding:0 20px;border-radius:999px;border:1px solid var(--line);
+  background:transparent;color:var(--ink);font:600 15px/1 var(--font);text-decoration:none;box-shadow:none;cursor:pointer}
+:root[data-theme] body .kg-btn:hover{background:var(--surface-2)}
+:root[data-theme] body .kg-primary,:root[data-theme] body .kg-primary:hover{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+:root[data-theme] body .kg-primary:hover{opacity:.9}
+:root[data-theme] body .kg-home{display:inline-block;margin-top:24px;font:400 14px/20px var(--font);color:var(--ink-62);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
+:root[data-theme] body .kg-home:hover{color:var(--ink)}
+:root[data-theme] body .kg-x{position:fixed;top:calc(66px + var(--kos-bar-h,0px));right:calc(var(--pad) - 10px);width:44px;height:44px;border:0;border-radius:22px;background:none;
+  color:var(--ink-62);font-size:22px;line-height:44px;text-align:center;cursor:pointer}
+:root[data-theme] body .kg-x:hover{color:var(--ink)}
+.btn-soft{background:var(--surface-2);color:var(--ink)} .btn-soft:hover{background:var(--line)}
+/* 절 제목 · 더보기 링크 */
+.sec-h{display:flex;align-items:baseline;gap:14px;margin:0 0 22px}
+.sec-h .num{font:600 13px/20px var(--font);color:var(--ink-62)}
+.sec-h h2{margin:0;font:700 24px/32px var(--font);letter-spacing:-.02em}
+.sec-h .more{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font:500 14px/20px var(--font);color:var(--ink-72);white-space:nowrap} .sec-h .more:hover{color:var(--ink)}
+.sec-h .more svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+/* 표 — 틀 없이 줄로만 */
+.tbl-wrap{overflow-x:auto}
+.tbl{width:100%;border-collapse:collapse}
+.tbl caption{text-align:left;padding:0 0 10px} .tbl .cap{display:flex;justify-content:space-between;align-items:baseline;font:500 13px/20px var(--font);color:var(--ink-72)} .tbl .cap .u{font-weight:400;color:var(--ink-62)}
+.tbl th,.tbl td{padding:11px 12px;font:400 14px/20px var(--font);text-align:right;white-space:nowrap;border-top:1px solid var(--hair)}
+.tbl thead th{font:500 12px/16px var(--font);color:var(--ink-62);border-top:0;border-bottom:1px solid var(--line);padding-top:0}
+.tbl th:first-child,.tbl td:first-child{text-align:left;padding-left:0;font-weight:500} .tbl th:last-child,.tbl td:last-child{padding-right:0}
+.tbl tbody th{font-weight:500}
+/* 푸터 */
+.foot{margin-top:96px;border-top:1px solid var(--hair);padding:56px 0 48px}
+.foot .brand img{height:13px}
+.fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;max-width:560px;margin-top:32px}
+.fcol{display:flex;flex-direction:column;gap:9px} .fcol h4{margin:0 0 4px;font:600 12px/16px var(--font);color:var(--ink-62)} .fcol a{font:400 14px/20px var(--font);color:var(--ink-72)} .fcol a:hover{color:var(--ink)}
+.biz{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:4px 16px;font:400 12px/18px var(--font);color:var(--ink-62)} .copy{margin-top:32px;font:400 12px/18px var(--font);color:var(--ink-62)}
+/* 휴대폰 사파리 상태바·주소창 뒤 색 — 페이지색 띠 (CLAUDE.md 2026-09-24) */
 #kosEdgeTop,#kosEdgeBot{display:none}
-@media (hover:none) and (pointer:coarse){
-  #kosEdgeTop,#kosEdgeBot{display:block;position:fixed;left:0;right:0;height:12px;z-index:60;pointer-events:none;opacity:.2;background:#f9f8f6}
-  #kosEdgeTop{top:0}
-  #kosEdgeBot{bottom:0}
-  :root[data-theme="dark"] #kosEdgeTop,:root[data-theme="dark"] #kosEdgeBot{background:#0e0e16}
+@media (hover:none) and (pointer:coarse){#kosEdgeTop,#kosEdgeBot{display:block;position:fixed;left:0;right:0;height:12px;z-index:60;pointer-events:none;opacity:.2;background:var(--bg)} #kosEdgeTop{top:0} #kosEdgeBot{bottom:0}}
+
+/* 글 한 단 — 읽기 폭 720 */
+.mb{max-width:720px;padding:44px 0 0}
+.mb-date{font:500 13px/20px var(--font);color:var(--ink-62)} .mb-date::before{content:"모닝브리핑 · "} html[lang="en"] .mb-date::before{content:"Morning Brief · "}
+.mb h1{margin:12px 0 0;font:700 36px/48px var(--font);letter-spacing:-.025em;text-wrap:balance}
+.mb-lead{margin:18px 0 0;font:400 18px/30px var(--font);color:var(--ink-72)}
+.mb-meta{margin-top:14px;font:400 13px/20px var(--font);color:var(--ink-62)}
+/* 요약 — 상자 대신 위아래 줄 */
+.mb-sum{margin:36px 0 0;padding:26px 0 8px;border-top:1px solid var(--line);border-bottom:1px solid var(--hair)}
+.mb-sum-h{font:600 12px/16px var(--font);color:var(--ink-62);margin:0 0 14px}
+.mb-sum-p{margin:0 0 18px;font:400 18px/30px var(--font);letter-spacing:-.005em}
+/* 절 */
+.mb-sec{padding-top:48px}
+.mb-sec h2{margin:0 0 18px;font:700 24px/32px var(--font);letter-spacing:-.02em;text-wrap:balance}
+.mb-sec p{margin:0 0 20px;font:400 17px/28px var(--font);letter-spacing:-.005em} .mb-sec p:last-child{margin-bottom:0}
+.mb-sec a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px;text-decoration-thickness:1px} .mb-sec a:hover{text-decoration-color:var(--ink)}
+.mb-sec b{font-weight:600}
+/* KOSAI 리포트 확인 지점 — 우리 리포트에서 나온 절이라 줄 하나로 구분 */
+.mb-sec--cov{margin-top:56px;padding-top:36px;border-top:1px solid var(--line)}
+.mb-src{font:600 12px/16px var(--font);color:var(--ink-62);margin:0 0 10px}
+.mb-disc{margin:56px 0 0;padding-top:18px;border-top:1px solid var(--hair);font:400 12px/18px var(--font);color:var(--ink-62)}
+
+@media (max-width:820px){
+  :root{--pad:20px}
+  .nav{display:block;height:60px;padding:0} .nav-in{height:60px;padding:0 var(--pad)}
+  .nav,.nav.scrolled{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}
+  .sec-h h2{font-size:22px;line-height:28px}
+  .tbl th,.tbl td{padding:10px 10px;font-size:13px} .tbl th:first-child,.tbl td:first-child{position:sticky;left:0;background:var(--bg)}
+}
+@media (max-width:820px){
+  .mb{padding:20px 0 0} .mb h1{font-size:28px;line-height:38px} .mb-lead{font-size:16px;line-height:27px}
+  .mb-sum{margin-top:28px;padding:22px 0 4px} .mb-sum-p{font-size:16px;line-height:27px}
+  .mb-sec{padding-top:40px} .mb-sec h2{font-size:21px;line-height:29px} .mb-sec p{font-size:16px;line-height:27px}
+  .mb-sec--cov{margin-top:44px;padding-top:30px}
 }
 </style>
-<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/Pretendard-Regular.woff2">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/Pretendard-Medium.woff2">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/Pretendard-SemiBold.woff2">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/Pretendard-Bold.woff2">
 </head>
 <body>
-
-<nav class="nav" data-screen-label="Brief · Nav">
-  <a class="brand" href="/"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a>
-  <div class="nav-links">
-    <a href="Home.html">홈</a>
-    <a href="Reports.html">리포트</a>
-    <a href="industry.html">업종 분석</a>
-      <a href="Watchlist.html">관심종목</a>
-    <a href="brief.html" class="active">모닝브리핑</a>
-  </div>
-  <div class="nav-spacer"></div>
-  <button class="icon-btn" id="themeBtn" aria-label="테마 전환" title="라이트/다크 전환">
-    <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-  </button>
-  <button class="icon-btn menu-btn" id="menuBtn" aria-label="메뉴">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-  </button>
-</nav>
-<div class="mobile-menu glass" id="mobileMenu">
-  <a href="Home.html">홈</a>
-  <a href="Reports.html">리포트</a>
-  <a href="industry.html">업종 분석</a>
-  <a href="Watchlist.html">관심종목</a>
-  <a href="brief.html" class="active">모닝브리핑</a>
+<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>
+<nav class="nav" id="nav"><div class="nav-in">
+  <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <div class="links"><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html" class="on">모닝브리핑</a></div>
+  <div class="right" id="navRight"><a class="login" href="/Login.html">로그인</a><div class="acct" id="acct"></div>
+    <button class="ib" id="themeBtn" aria-label="테마 전환"><svg viewBox="0 0 24 24" id="themeIcon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    <button class="ib menu" id="menuBtn" aria-label="메뉴" aria-expanded="false" aria-controls="mmenu"><svg class="ham" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
 </div>
-
-<div class="wrap" data-screen-label="10 Morning Brief">
-  <div class="crumb"><a href="Home.html">홈</a> / <b>모닝 브리핑</b></div>
-
+</nav>
+<div class="mmenu" id="mmenu"><div class="mm-links"><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html" class="on">모닝브리핑</a></div><div class="sep"></div><div class="mm-auth" id="mauth"><a href="/Login.html">로그인</a><a href="/Signup.html">회원가입</a></div>
+<div class="mm-foot"><a href="/About.html">회사 소개</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보 처리방침</a></div></div>
+<main class="wrap">
   <article class="mb">
-    <!-- BRIEF:BODY:START · 여기부터 END 까지는 scripts/render_brief.py 가 만든다.
-         손으로 고치면 다음 생성에서 덮인다. -->
     <header class="mb-head">
       <div class="mb-date">2026년 10월 2일 (금) 07:28</div>
       <h1>10년물이 2주 만에 5.24%로 물러섰다 — 오늘 밤 고용보고서</h1>
@@ -585,17 +261,17 @@ html .foot-inner,html:root[data-theme="dark"] .foot-inner,html .auth-card,html:r
       <h2>코스닥 4.48%, 상승 1,802종목 — 그런데 개인은 양쪽에서 팔았다</h2>
       <p data-i18n-block>어제 국내 장은 9월 수출과 무역흑자가 역대 최대, 반도체 수출도 역대 최대라는 집계와 마이크론 호실적 보도가 겹친 날이었다. 코스피는 6,971.35(+1.95%), 코스닥은 894.29(+4.48%)로 끝났다.</p>
       <p data-i18n-block>폭도 좁지 않았다 — 오른 종목이 1,802개, 내린 종목이 657개였고 중앙값은 +0.87%였다. 다만 시총가중(+1.61%)이 지수 등락률을 밑돈 것을 보면 끌어올린 쪽은 결국 대형주 몇 개다.</p>
-      <p data-i18n-block>거래대금은 <a href="stock.html?ticker=000660">SK하이닉스</a> 3조 9,286억원(+2.48%)과 <a href="stock.html?ticker=005930">삼성전자</a> 3조 6,831억원(+1.68%)이 1·2위를 채웠다.</p>
+      <p data-i18n-block>거래대금은 <a href="/stock.html?ticker=000660">SK하이닉스</a> 3조 9,286억원(+2.48%)과 <a href="/stock.html?ticker=005930">삼성전자</a> 3조 6,831억원(+1.68%)이 1·2위를 채웠다.</p>
       <p data-i18n-block>수급은 지수 모양과 어긋났다. 코스피에서 개인이 1조 4,102억원, 외국인이 5,558억원을 순매도했고 기관만 3,239억원을 샀다. 코스닥도 4.48% 급등한 날인데 개인은 7,770억원을 팔았다 — 받아낸 것은 기관 5,684억원과 외국인 2,280억원이다.</p>
       <p data-i18n-block>이틀 전까지 외국인이 조 단위로 팔던 코스피에서 외국인 매도 규모가 5천억원대로 줄었다는 점이 어제의 수급상 변화다.</p>
     </section>
 
     <section class="mb-sec">
       <h2>바이오 3.85%가 업종 1위, 정유만 5.79% 빠졌다</h2>
-      <p data-i18n-block>업종 상위는 바이오·제약(+3.85%)과 게임(+3.44%)이었고 전자·부품, 반도체, 항공·방산이 2%대로 뒤를 이었다. 코스닥 급등의 몸통도 바이오였다 — 절대 상승 상위가 대부분 바이오·제약으로 채워졌고, <a href="stock.html?ticker=468670">브릴스</a>는 58.72% 오르며 거래대금 6,898억원으로 전체 5위에 들었다.</p>
-      <p data-i18n-block>방산에서는 3분기 신규 수주로 종목 간 희비가 갈렸다는 보도와 함께 <a href="stock.html?ticker=079550">LIG디펜스앤에어로스페이스</a>가 6.01%, <a href="stock.html?ticker=272210">한화시스템</a>이 5.20% 올랐다.</p>
-      <p data-i18n-block>내린 쪽은 좁았다. 정유가 5.79% 빠지며 사실상 유일한 급락 업종이었다 — <a href="stock.html?ticker=010950">S-Oil</a> -6.56%, <a href="stock.html?ticker=096770">SK이노베이션</a> -5.44%로 시장 대비 7~8%포인트 뒤처졌다.</p>
-      <p data-i18n-block>금융도 -0.60%로 밀렸고, 거래대금 4위에 오른 <a href="stock.html?ticker=316140">우리금융지주</a>가 4.01% 하락했다. 유통·소비재, 보험, 조선이 1% 안쪽 약세였던 것을 빼면 어제 하락은 이 둘에 몰려 있었다.</p>
+      <p data-i18n-block>업종 상위는 바이오·제약(+3.85%)과 게임(+3.44%)이었고 전자·부품, 반도체, 항공·방산이 2%대로 뒤를 이었다. 코스닥 급등의 몸통도 바이오였다 — 절대 상승 상위가 대부분 바이오·제약으로 채워졌고, <a href="/stock.html?ticker=468670">브릴스</a>는 58.72% 오르며 거래대금 6,898억원으로 전체 5위에 들었다.</p>
+      <p data-i18n-block>방산에서는 3분기 신규 수주로 종목 간 희비가 갈렸다는 보도와 함께 <a href="/stock.html?ticker=079550">LIG디펜스앤에어로스페이스</a>가 6.01%, <a href="/stock.html?ticker=272210">한화시스템</a>이 5.20% 올랐다.</p>
+      <p data-i18n-block>내린 쪽은 좁았다. 정유가 5.79% 빠지며 사실상 유일한 급락 업종이었다 — <a href="/stock.html?ticker=010950">S-Oil</a> -6.56%, <a href="/stock.html?ticker=096770">SK이노베이션</a> -5.44%로 시장 대비 7~8%포인트 뒤처졌다.</p>
+      <p data-i18n-block>금융도 -0.60%로 밀렸고, 거래대금 4위에 오른 <a href="/stock.html?ticker=316140">우리금융지주</a>가 4.01% 하락했다. 유통·소비재, 보험, 조선이 1% 안쪽 약세였던 것을 빼면 어제 하락은 이 둘에 몰려 있었다.</p>
     </section>
 
     <section class="mb-sec">
@@ -613,110 +289,44 @@ html .foot-inner,html:root[data-theme="dark"] .foot-inner,html .auth-card,html:r
     <section class="mb-sec mb-sec--cov">
       <div class="mb-src">KOSAI 리포트 확인 지점</div>
       <h2>KTis 자사주 소각일이 이달 30일, 태광은 중동 비중이 관전점</h2>
-      <p data-i18n-block>어제 정정 보고서가 들어온 커버리지 종목 중 날짜가 가까운 쪽은 둘이다. <a href="stock.html?ticker=058860">KTis</a>는 오늘자 KOSAI 리포트가 발행주식총수의 9.76%에 해당하는 자사주 소각 시행 여부를 10월 30일 확인 지점으로 꼽았다 — 실제 소각이 끝나면 주당 지표가 달라진다.</p>
-      <p data-i18n-block><a href="stock.html?ticker=023160">태광</a>은 어제(10월 1일) 작성한 리포트에서 LNG 피팅 호황과 중동 매출 쏠림을 함께 짚으며, 공시된 자사주 100억원 매입·소각 계획이 연내 구체적 규모·시기로 확정되는지를 확인 지점으로 적어 뒀다. 나머지 정정 보고서 종목들은 3분기 보고서 법정 제출기한인 11월 16일이 공통 확인 시점이다.</p>
+      <p data-i18n-block>어제 정정 보고서가 들어온 커버리지 종목 중 날짜가 가까운 쪽은 둘이다. <a href="/stock.html?ticker=058860">KTis</a>는 오늘자 KOSAI 리포트가 발행주식총수의 9.76%에 해당하는 자사주 소각 시행 여부를 10월 30일 확인 지점으로 꼽았다 — 실제 소각이 끝나면 주당 지표가 달라진다.</p>
+      <p data-i18n-block><a href="/stock.html?ticker=023160">태광</a>은 어제(10월 1일) 작성한 리포트에서 LNG 피팅 호황과 중동 매출 쏠림을 함께 짚으며, 공시된 자사주 100억원 매입·소각 계획이 연내 구체적 규모·시기로 확정되는지를 확인 지점으로 적어 뒀다. 나머지 정정 보고서 종목들은 3분기 보고서 법정 제출기한인 11월 16일이 공통 확인 시점이다.</p>
     </section>
 
     <p class="mb-disc" data-i18n-block>본 자료는 공시(DART)·국내 시장 데이터와 공개된 해외 시장·일정 자료를 바탕으로 작성한 정보 제공 자료이며 투자 권유가 아닙니다. 국내 수치는 2026년 10월 1일 종가 기준입니다.</p>
-    <!-- BRIEF:BODY:END -->
   </article>
-</div>
-
-<footer class="foot">
-  <div class="wrap">
-    <div class="foot-inner glass">
-      <div class="foot-grid">
-        <div class="foot-brand"><a class="brand" href="/"><img class="brand-logo brand-logo--light" src="assets/kosai-wordmark-black.png" alt="KOSAI" width="148" height="24"><img class="brand-logo brand-logo--dark" src="assets/kosai-wordmark-white.png" alt="KOSAI" width="148" height="24"></a><p>한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p></div>
-        <div class="foot-col"><h4>서비스</h4><ul><li><a href="Home.html">홈</a></li><li><a href="Reports.html">리포트</a></li><li><a href="industry.html">업종 분석</a></li><li><a href="Watchlist.html">관심종목</a></li><li><a href="brief.html">모닝브리핑</a></li></ul></div>
-        <div class="foot-col"><h4>회사</h4><ul><li><a href="About.html">About</a></li><li><a href="Contact.html">문의하기</a></li><li><a href="Feedback.html">피드백</a></li></ul></div>
-        <div class="foot-col"><h4>정책</h4><ul><li><a href="Terms.html">이용약관</a></li><li><a href="Privacy.html">개인정보처리방침</a></li></ul></div>
-      </div>
-      <!-- BIZ:START · scripts/patch_biz_footer.py 가 넣는다 -->
-      <div class="biz">
-        <span>상호 <b>코사이</b></span>
-        <span>대표 <b>임범준</b></span>
-        <span>사업자등록번호 <b>380-25-02019</b></span>
-        <span>주소 <b>서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</b></span>
-        <span>이메일 <b>hello@kosai.kr</b></span>
-      </div>
-      <!-- BIZ:END -->
-      <div class="foot-bottom"><span>© 2026 KOSAI — All rights reserved.</span></div>
-    </div>
+</main>
+<footer class="foot"><div class="wrap">
+  <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <div class="fgrid">
+    <div class="fcol"><h4>서비스</h4><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div>
+    <div class="fcol"><h4>회사</h4><a href="/About.html">회사 소개</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a></div>
+    <div class="fcol"><h4>정책</h4><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보 처리방침</a></div>
   </div>
-</footer>
-
+  <div class="biz"><span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span><span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span></div>
+  <div class="copy">© 2026 KOSAI</div>
+</div></footer>
+<script type="application/json" data-kos-i18n>{"모닝 브리핑":"Morning Brief","2026년 10월 2일 (금) 07:28":"Friday, October 2, 2026 · 07:28 KST","국내 증시 개장 · 직전 거래일 10월 1일(목) 종가 기준":"Korean markets open · Figures as of the Thursday, October 1 close","본 자료는 공시(DART)·국내 시장 데이터와 공개된 해외 시장·일정 자료를 바탕으로 작성한 정보 제공 자료이며 투자 권유가 아닙니다. 국내 수치는 2026년 10월 1일 종가 기준입니다.":"This material is compiled from regulatory filings (DART), Korean market data and publicly available overseas market and calendar sources, for information purposes only. It is not investment advice. Korean figures are as of the October 1, 2026 close.","10년물이 2주 만에 5.24%로 물러섰다 — 오늘 밤 고용보고서":"The 10-Year Backs Off to 5.24% for the First Time in Two Weeks — Payrolls Tonight","요약":"In brief","유가가 반등했는데도 미 10년물이 5.29%에서 5.24%로 물러서며 2주 넘게 이어진 금리 압력이 처음 느슨해졌고, 그 위에서 필라델피아 반도체가 1.59% 올랐다.":"The US 10-year slipped from 5.29% to 5.24% even as oil rebounded, loosening a rate squeeze that had held for more than two weeks, while the Philadelphia Semiconductor Index gained 1.59%.","직전 거래일 국내 증시는 9월 수출·반도체 수출 역대 최대 집계와 마이크론 호실적 보도가 겹치며 코스피 1.95%, 코스닥 4.48% 급등했고 상승 종목이 1,802개로 폭도 넓었지만, 코스피에서는 개인이 1조 4,102억원, 외국인이 5,558억원을 팔고 기관만 3,239억원을 샀다.":"In the previous Korean session, record September exports and record chip exports combined with Micron's results coverage to lift KOSPI 1.95% and KOSDAQ 4.48%, with 1,802 gainers showing unusual breadth — yet on KOSPI retail investors sold 1.41 trillion won and foreigners 556 billion won, with only institutions buying 324 billion won.","업종은 바이오·제약과 게임, 반도체, 방산이 끌어올렸고 정유가 5.79% 밀리며 유일하게 크게 빠졌다. 원화 기준값은 1,359.72원으로 올랐고, 오늘 밤 미국 고용보고서에 이어 9월 FOMC 의사록이 다음 주 수요일로 잡혀 있다.":"Biotech, games, semiconductors and defence led the gains while refiners fell 5.79%, the only sector down sharply. The won reference rate rose to 1,359.72, and tonight's US payrolls report is followed by the September FOMC minutes next Wednesday.","유가가 올랐는데 금리가 내려왔다 — 방향이 바뀐 자리":"Oil Up, Yields Down — The Link Flips","9월 하순 내내 이 브리핑이 붙들고 있던 고리는 유가와 금리였다. 유가가 89달러 아래로 빠져도, 연준이 보는 근원 물가가 예상을 밑돌아도 미 10년물은 5.2%대에서 내려오지 않았다. 간밤은 반대였다 — WTI는 2.75% 올라 92.91달러인데 10년물은 5.24%로 0.06%p 내렸다.":"Through late September the thread this briefing kept pulling was oil and yields. Even when WTI slid below $89, even when the Fed's preferred core gauge came in lighter than expected, the 10-year stayed parked in the 5.2% range.","로이터는 물러선 국채 금리를 지수 반등의 배경으로 전했고, 세 지수는 0.04~0.19%로 소폭이지만 함께 올랐다.":"Overnight it was the reverse — WTI rose 2.75% to $92.91 while the 10-year eased 6bp to 5.24%. Reuters attributed the equity rebound to receding Treasury yields; the three main indexes all closed higher, if only by 0.04% to 0.19%.","지수보다 눈에 띄는 쪽은 반도체다. 필라델피아 반도체가 1.59% 오르며 지수들을 앞섰고, [마이크론] 호실적 이후 3.03% 추가 상승했다. 엔비디아는 1.09%, TSMC는 0.66%다. 달러인덱스는 102.00으로 0.55% 올라 금리와는 다른 방향을 봤다.":"The standout was chips, not the headline indexes. The Philadelphia Semiconductor Index rose 1.59%, outpacing the broad market, with Micron adding another 3.03% after its results. Nvidia gained 1.09% and TSMC 0.66%. The dollar index, meanwhile, climbed 0.55% to 102.00 — moving against the yield.","코스닥 4.48%, 상승 1,802종목 — 그런데 개인은 양쪽에서 팔았다":"KOSDAQ +4.48%, 1,802 Gainers — Yet Retail Sold on Both Boards","어제 국내 장은 9월 수출과 무역흑자가 역대 최대, 반도체 수출도 역대 최대라는 집계와 마이크론 호실적 보도가 겹친 날이었다. 코스피는 6,971.35(+1.95%), 코스닥은 894.29(+4.48%)로 끝났다.":"Yesterday's session landed on a day when September exports and the trade surplus were tallied at record highs — chip exports included — alongside coverage of Micron's results.","폭도 좁지 않았다 — 오른 종목이 1,802개, 내린 종목이 657개였고 중앙값은 +0.87%였다. 다만 시총가중(+1.61%)이 지수 등락률을 밑돈 것을 보면 끌어올린 쪽은 결국 대형주 몇 개다.":"KOSPI closed at 6,971.35 (+1.95%) and KOSDAQ at 894.29 (+4.48%).","거래대금은 SK하이닉스 3조 9,286억원(+2.48%)과 삼성전자 3조 6,831억원(+1.68%)이 1·2위를 채웠다.":"Breadth was wide: 1,802 gainers against 657 decliners, with a median of +0.87%. Still, the cap-weighted move (+1.61%) lagged the index itself, which points back to a handful of large caps. <a href=\"stock.html?ticker=000660\">SK Hynix<\/a> led turnover at 3.93 trillion won (+2.48%), followed by <a href=\"stock.html?ticker=005930\">Samsung Electronics<\/a> at 3.68 trillion won (+1.68%).","수급은 지수 모양과 어긋났다. 코스피에서 개인이 1조 4,102억원, 외국인이 5,558억원을 순매도했고 기관만 3,239억원을 샀다. 코스닥도 4.48% 급등한 날인데 개인은 7,770억원을 팔았다 — 받아낸 것은 기관 5,684억원과 외국인 2,280억원이다.":"Flows did not match the index shape. On KOSPI, retail investors sold a net 1.41 trillion won and foreigners 556 billion won, with institutions the only buyers at 324 billion won.","이틀 전까지 외국인이 조 단위로 팔던 코스피에서 외국인 매도 규모가 5천억원대로 줄었다는 점이 어제의 수급상 변화다.":"On KOSDAQ, despite the 4.48% jump, retail sold 777 billion won — absorbed by institutions (568 billion) and foreigners (228 billion). The notable shift is on KOSPI: foreign selling, running in the trillions earlier this week, shrank to the hundreds of billions.","바이오 3.85%가 업종 1위, 정유만 5.79% 빠졌다":"Biotech Tops at +3.85%, Refiners Alone Fall 5.79%","업종 상위는 바이오·제약(+3.85%)과 게임(+3.44%)이었고 전자·부품, 반도체, 항공·방산이 2%대로 뒤를 이었다. 코스닥 급등의 몸통도 바이오였다 — 절대 상승 상위가 대부분 바이오·제약으로 채워졌고, 브릴스는 58.72% 오르며 거래대금 6,898억원으로 전체 5위에 들었다.":"Biotech/pharma (+3.85%) and games (+3.44%) led, with electronics components, semiconductors and aerospace/defence in the 2% range.","방산에서는 3분기 신규 수주로 종목 간 희비가 갈렸다는 보도와 함께 LIG디펜스앤에어로스페이스가 6.01%, 한화시스템이 5.20% 올랐다.":"Biotech was the body of the KOSDAQ surge — most of the day's biggest absolute gainers were biotech names, and <a href=\"stock.html?ticker=468670\">Brills<\/a> jumped 58.72% on 690 billion won of turnover, fifth-largest in the market. In defence, amid reporting that third-quarter new orders were splitting winners from losers, <a href=\"stock.html?ticker=079550\">LIG Defense &amp; Aerospace<\/a> rose 6.01% and <a href=\"stock.html?ticker=272210\">Hanwha Systems<\/a> 5.20%.","내린 쪽은 좁았다. 정유가 5.79% 빠지며 사실상 유일한 급락 업종이었다 — S-Oil -6.56%, SK이노베이션 -5.44%로 시장 대비 7~8%포인트 뒤처졌다.":"The downside was narrow. Refiners fell 5.79%, effectively the only sector to drop hard — <a href=\"stock.html?ticker=010950\">S-Oil<\/a> -6.56% and <a href=\"stock.html?ticker=096770\">SK Innovation<\/a> -5.44%, lagging the market by seven to eight percentage points.","금융도 -0.60%로 밀렸고, 거래대금 4위에 오른 우리금융지주가 4.01% 하락했다. 유통·소비재, 보험, 조선이 1% 안쪽 약세였던 것을 빼면 어제 하락은 이 둘에 몰려 있었다.":"Financials also slipped 0.60%, with <a href=\"stock.html?ticker=316140\">Woori Financial Group<\/a>, fourth in turnover, down 4.01%. Apart from sub-1% softness in retail, insurance and shipbuilding, yesterday's declines were concentrated in these two.","원화 기준값 1,359.72원, 네고물량이 받친 1,360원 안팎":"Won Reference at 1,359.72, Exporter Flows Capping the 1,360 Line","원/달러 기준값(10월 1일 기준)은 1,359.72원으로 직전 1,350.50원에서 0.68% 올랐다. 서울 외환시장에서는 수출업체 네고물량이 강달러를 막아서며 1,360원 안팎에서 움직였다는 보도와, WGBI 자금 유입 공백·미 고금리 장기화 우려가 상승 요인으로 거론됐다.":"The won reference rate (as of 1 October) stood at 1,359.72, up 0.68% from 1,350.50.","달러인덱스가 102.00으로 함께 오른 자리라, 금리가 하루 물러섰다고 해서 달러 쪽 압력까지 같이 풀린 것은 아니다.":"In the Seoul market, reporting pointed to exporter conversion flows blocking dollar strength around the 1,360 line, with the gap in WGBI-related inflows and worries about prolonged high US rates cited on the other side. With the dollar index also up at 102.00, one day of easing yields has not released the pressure on the currency.","오늘 밤 고용보고서, 9월 FOMC 의사록은 다음 주 수요일":"Payrolls Tonight, September FOMC Minutes Next Wednesday","지난주부터 '사흘에 몰린 지표'라고 적어 온 묶음의 마지막이 오늘 밤 미국 고용보고서다. 구인·이직과 GDP·PCE를 거치며 10년물은 5.18%에서 5.29%까지 올랐다가 어제 5.24%로 돌아섰다.":"Tonight's US payrolls report closes out the cluster this briefing has been flagging for a week. Through JOLTS and GDP/PCE the 10-year ran from 5.18% to 5.29% before turning back to 5.24%.","니케이아시아는 수정된 물가 지표를 두고 10월 동결 쪽에 무게가 실린다고 전했는데, 그 판단의 다음 재료가 오늘 밤 숫자다. 9월 FOMC 의사록은 다음 주 수요일(10월 7일), 미국 소비자물가는 10월 14일로 그 다음 주다 — 다음 주 수요일까지는 고용 하나가 금리 쪽 이야기를 끌고 간다.":"Nikkei Asia reported that revised inflation data has shifted bets toward an October pause; tonight's number is the next input to that call. The September FOMC minutes land next Wednesday (7 October) and US CPI on 14 October — until next Wednesday, payrolls alone carries the rates story.","KTis 자사주 소각일이 이달 30일, 태광은 중동 비중이 관전점":"KTis Share Cancellation Set for 30 October; Taekwang's Middle East Mix in Focus","KOSAI 리포트 확인 지점":"From KOSAI report checkpoints","어제 정정 보고서가 들어온 커버리지 종목 중 날짜가 가까운 쪽은 둘이다. KTis는 오늘자 KOSAI 리포트가 발행주식총수의 9.76%에 해당하는 자사주 소각 시행 여부를 10월 30일 확인 지점으로 꼽았다 — 실제 소각이 끝나면 주당 지표가 달라진다.":"Two of yesterday's amended-filing coverage names have near-term dates. For <a href=\"stock.html?ticker=058860\">KTis<\/a>, today's KOSAI report flags 30 October as the checkpoint for whether the cancellation of treasury shares equal to 9.76% of total shares outstanding proceeds as scheduled — completion would change per-share metrics.","태광은 어제(10월 1일) 작성한 리포트에서 LNG 피팅 호황과 중동 매출 쏠림을 함께 짚으며, 공시된 자사주 100억원 매입·소각 계획이 연내 구체적 규모·시기로 확정되는지를 확인 지점으로 적어 뒀다. 나머지 정정 보고서 종목들은 3분기 보고서 법정 제출기한인 11월 16일이 공통 확인 시점이다.":"For <a href=\"stock.html?ticker=023160\">Taekwang<\/a>, the report written yesterday (1 October) sets out the LNG fittings upcycle alongside concentration in Middle East revenue, and lists as a checkpoint whether the disclosed 10 billion won buyback-and-cancellation plan is firmed up with specific size and timing within the year. For the remaining amended filers, the shared checkpoint is 16 November, the statutory deadline for third-quarter reports.","10년물이 2주 만에 5.24%로 물러섰다 — 오늘 밤 고용보고서 — 모닝브리핑 | KOSAI":"The 10-Year Backs Off to 5.24% for the First Time in Two Weeks — Payrolls Tonight — Morning Brief | KOSAI"}</script>
 <script>
-/* 헤더 동작 — 모바일 메뉴와 라이트/다크 전환.
-   문의하기 페이지 껍데기에서 이 페이지를 만들면서 같이 딸려 온 문의 폼
-   스크립트를 걷어낼 때 이 부분까지 지워져, 다크 모드가 먹지 않았다. */
-const menuBtn=document.getElementById('menuBtn'),mobileMenu=document.getElementById('mobileMenu');
-menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
-mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.remove('open')));
-const root=document.documentElement,themeBtn=document.getElementById('themeBtn');
-const sunSVG='<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>';
-const moonSVG='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
-function applyTheme(t){root.setAttribute('data-theme',t);document.getElementById('themeIcon').innerHTML=t==='dark'?sunSVG:moonSVG;try{localStorage.setItem('kos-theme',t)}catch(e){}}
-let saved='dark';try{saved=localStorage.getItem('kos-theme')||'dark'}catch(e){}
-applyTheme(saved);
-themeBtn.addEventListener('click',()=>applyTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
-
-/* 브리핑 본문 영문. 문단은 data-i18n-block 이라 통째로 갈아끼워지므로,
-   종목 링크가 영어 모드에서 사라지지 않도록 값 안에 태그를 그대로 둔다.
-   사전의 키는 화면에 보이는 한국어를 공백 정규화한 것이다(engine 의 norm).
-   그래서 키에는 태그가 없고 &amp; 같은 엔티티는 풀린 상태여야 한다. */
-/* BRIEF:I18N:START · scripts/render_brief.py 가 만든다 */
-if(window.KOSi18n) KOSi18n.register({
-  "모닝 브리핑":"Morning Brief",
-  "2026년 10월 2일 (금) 07:28":"Friday, October 2, 2026 · 07:28 KST",
-  "국내 증시 개장 · 직전 거래일 10월 1일(목) 종가 기준":"Korean markets open · Figures as of the Thursday, October 1 close",
-  "본 자료는 공시(DART)·국내 시장 데이터와 공개된 해외 시장·일정 자료를 바탕으로 작성한 정보 제공 자료이며 투자 권유가 아닙니다. 국내 수치는 2026년 10월 1일 종가 기준입니다.":"This material is compiled from regulatory filings (DART), Korean market data and publicly available overseas market and calendar sources, for information purposes only. It is not investment advice. Korean figures are as of the October 1, 2026 close.",
-  "10년물이 2주 만에 5.24%로 물러섰다 — 오늘 밤 고용보고서":"The 10-Year Backs Off to 5.24% for the First Time in Two Weeks — Payrolls Tonight",
-  "요약":"In brief",
-  "유가가 반등했는데도 미 10년물이 5.29%에서 5.24%로 물러서며 2주 넘게 이어진 금리 압력이 처음 느슨해졌고, 그 위에서 필라델피아 반도체가 1.59% 올랐다.":"The US 10-year slipped from 5.29% to 5.24% even as oil rebounded, loosening a rate squeeze that had held for more than two weeks, while the Philadelphia Semiconductor Index gained 1.59%.",
-  "직전 거래일 국내 증시는 9월 수출·반도체 수출 역대 최대 집계와 마이크론 호실적 보도가 겹치며 코스피 1.95%, 코스닥 4.48% 급등했고 상승 종목이 1,802개로 폭도 넓었지만, 코스피에서는 개인이 1조 4,102억원, 외국인이 5,558억원을 팔고 기관만 3,239억원을 샀다.":"In the previous Korean session, record September exports and record chip exports combined with Micron's results coverage to lift KOSPI 1.95% and KOSDAQ 4.48%, with 1,802 gainers showing unusual breadth — yet on KOSPI retail investors sold 1.41 trillion won and foreigners 556 billion won, with only institutions buying 324 billion won.",
-  "업종은 바이오·제약과 게임, 반도체, 방산이 끌어올렸고 정유가 5.79% 밀리며 유일하게 크게 빠졌다. 원화 기준값은 1,359.72원으로 올랐고, 오늘 밤 미국 고용보고서에 이어 9월 FOMC 의사록이 다음 주 수요일로 잡혀 있다.":"Biotech, games, semiconductors and defence led the gains while refiners fell 5.79%, the only sector down sharply. The won reference rate rose to 1,359.72, and tonight's US payrolls report is followed by the September FOMC minutes next Wednesday.",
-  "유가가 올랐는데 금리가 내려왔다 — 방향이 바뀐 자리":"Oil Up, Yields Down — The Link Flips",
-  "9월 하순 내내 이 브리핑이 붙들고 있던 고리는 유가와 금리였다. 유가가 89달러 아래로 빠져도, 연준이 보는 근원 물가가 예상을 밑돌아도 미 10년물은 5.2%대에서 내려오지 않았다. 간밤은 반대였다 — WTI는 2.75% 올라 92.91달러인데 10년물은 5.24%로 0.06%p 내렸다.":"Through late September the thread this briefing kept pulling was oil and yields. Even when WTI slid below $89, even when the Fed's preferred core gauge came in lighter than expected, the 10-year stayed parked in the 5.2% range.",
-  "로이터는 물러선 국채 금리를 지수 반등의 배경으로 전했고, 세 지수는 0.04~0.19%로 소폭이지만 함께 올랐다.":"Overnight it was the reverse — WTI rose 2.75% to $92.91 while the 10-year eased 6bp to 5.24%. Reuters attributed the equity rebound to receding Treasury yields; the three main indexes all closed higher, if only by 0.04% to 0.19%.",
-  "지수보다 눈에 띄는 쪽은 반도체다. 필라델피아 반도체가 1.59% 오르며 지수들을 앞섰고, [마이크론] 호실적 이후 3.03% 추가 상승했다. 엔비디아는 1.09%, TSMC는 0.66%다. 달러인덱스는 102.00으로 0.55% 올라 금리와는 다른 방향을 봤다.":"The standout was chips, not the headline indexes. The Philadelphia Semiconductor Index rose 1.59%, outpacing the broad market, with Micron adding another 3.03% after its results. Nvidia gained 1.09% and TSMC 0.66%. The dollar index, meanwhile, climbed 0.55% to 102.00 — moving against the yield.",
-  "코스닥 4.48%, 상승 1,802종목 — 그런데 개인은 양쪽에서 팔았다":"KOSDAQ +4.48%, 1,802 Gainers — Yet Retail Sold on Both Boards",
-  "어제 국내 장은 9월 수출과 무역흑자가 역대 최대, 반도체 수출도 역대 최대라는 집계와 마이크론 호실적 보도가 겹친 날이었다. 코스피는 6,971.35(+1.95%), 코스닥은 894.29(+4.48%)로 끝났다.":"Yesterday's session landed on a day when September exports and the trade surplus were tallied at record highs — chip exports included — alongside coverage of Micron's results.",
-  "폭도 좁지 않았다 — 오른 종목이 1,802개, 내린 종목이 657개였고 중앙값은 +0.87%였다. 다만 시총가중(+1.61%)이 지수 등락률을 밑돈 것을 보면 끌어올린 쪽은 결국 대형주 몇 개다.":"KOSPI closed at 6,971.35 (+1.95%) and KOSDAQ at 894.29 (+4.48%).",
-  "거래대금은 SK하이닉스 3조 9,286억원(+2.48%)과 삼성전자 3조 6,831억원(+1.68%)이 1·2위를 채웠다.":"Breadth was wide: 1,802 gainers against 657 decliners, with a median of +0.87%. Still, the cap-weighted move (+1.61%) lagged the index itself, which points back to a handful of large caps. <a href=\"stock.html?ticker=000660\">SK Hynix<\/a> led turnover at 3.93 trillion won (+2.48%), followed by <a href=\"stock.html?ticker=005930\">Samsung Electronics<\/a> at 3.68 trillion won (+1.68%).",
-  "수급은 지수 모양과 어긋났다. 코스피에서 개인이 1조 4,102억원, 외국인이 5,558억원을 순매도했고 기관만 3,239억원을 샀다. 코스닥도 4.48% 급등한 날인데 개인은 7,770억원을 팔았다 — 받아낸 것은 기관 5,684억원과 외국인 2,280억원이다.":"Flows did not match the index shape. On KOSPI, retail investors sold a net 1.41 trillion won and foreigners 556 billion won, with institutions the only buyers at 324 billion won.",
-  "이틀 전까지 외국인이 조 단위로 팔던 코스피에서 외국인 매도 규모가 5천억원대로 줄었다는 점이 어제의 수급상 변화다.":"On KOSDAQ, despite the 4.48% jump, retail sold 777 billion won — absorbed by institutions (568 billion) and foreigners (228 billion). The notable shift is on KOSPI: foreign selling, running in the trillions earlier this week, shrank to the hundreds of billions.",
-  "바이오 3.85%가 업종 1위, 정유만 5.79% 빠졌다":"Biotech Tops at +3.85%, Refiners Alone Fall 5.79%",
-  "업종 상위는 바이오·제약(+3.85%)과 게임(+3.44%)이었고 전자·부품, 반도체, 항공·방산이 2%대로 뒤를 이었다. 코스닥 급등의 몸통도 바이오였다 — 절대 상승 상위가 대부분 바이오·제약으로 채워졌고, 브릴스는 58.72% 오르며 거래대금 6,898억원으로 전체 5위에 들었다.":"Biotech/pharma (+3.85%) and games (+3.44%) led, with electronics components, semiconductors and aerospace/defence in the 2% range.",
-  "방산에서는 3분기 신규 수주로 종목 간 희비가 갈렸다는 보도와 함께 LIG디펜스앤에어로스페이스가 6.01%, 한화시스템이 5.20% 올랐다.":"Biotech was the body of the KOSDAQ surge — most of the day's biggest absolute gainers were biotech names, and <a href=\"stock.html?ticker=468670\">Brills<\/a> jumped 58.72% on 690 billion won of turnover, fifth-largest in the market. In defence, amid reporting that third-quarter new orders were splitting winners from losers, <a href=\"stock.html?ticker=079550\">LIG Defense &amp; Aerospace<\/a> rose 6.01% and <a href=\"stock.html?ticker=272210\">Hanwha Systems<\/a> 5.20%.",
-  "내린 쪽은 좁았다. 정유가 5.79% 빠지며 사실상 유일한 급락 업종이었다 — S-Oil -6.56%, SK이노베이션 -5.44%로 시장 대비 7~8%포인트 뒤처졌다.":"The downside was narrow. Refiners fell 5.79%, effectively the only sector to drop hard — <a href=\"stock.html?ticker=010950\">S-Oil<\/a> -6.56% and <a href=\"stock.html?ticker=096770\">SK Innovation<\/a> -5.44%, lagging the market by seven to eight percentage points.",
-  "금융도 -0.60%로 밀렸고, 거래대금 4위에 오른 우리금융지주가 4.01% 하락했다. 유통·소비재, 보험, 조선이 1% 안쪽 약세였던 것을 빼면 어제 하락은 이 둘에 몰려 있었다.":"Financials also slipped 0.60%, with <a href=\"stock.html?ticker=316140\">Woori Financial Group<\/a>, fourth in turnover, down 4.01%. Apart from sub-1% softness in retail, insurance and shipbuilding, yesterday's declines were concentrated in these two.",
-  "원화 기준값 1,359.72원, 네고물량이 받친 1,360원 안팎":"Won Reference at 1,359.72, Exporter Flows Capping the 1,360 Line",
-  "원/달러 기준값(10월 1일 기준)은 1,359.72원으로 직전 1,350.50원에서 0.68% 올랐다. 서울 외환시장에서는 수출업체 네고물량이 강달러를 막아서며 1,360원 안팎에서 움직였다는 보도와, WGBI 자금 유입 공백·미 고금리 장기화 우려가 상승 요인으로 거론됐다.":"The won reference rate (as of 1 October) stood at 1,359.72, up 0.68% from 1,350.50.",
-  "달러인덱스가 102.00으로 함께 오른 자리라, 금리가 하루 물러섰다고 해서 달러 쪽 압력까지 같이 풀린 것은 아니다.":"In the Seoul market, reporting pointed to exporter conversion flows blocking dollar strength around the 1,360 line, with the gap in WGBI-related inflows and worries about prolonged high US rates cited on the other side. With the dollar index also up at 102.00, one day of easing yields has not released the pressure on the currency.",
-  "오늘 밤 고용보고서, 9월 FOMC 의사록은 다음 주 수요일":"Payrolls Tonight, September FOMC Minutes Next Wednesday",
-  "지난주부터 '사흘에 몰린 지표'라고 적어 온 묶음의 마지막이 오늘 밤 미국 고용보고서다. 구인·이직과 GDP·PCE를 거치며 10년물은 5.18%에서 5.29%까지 올랐다가 어제 5.24%로 돌아섰다.":"Tonight's US payrolls report closes out the cluster this briefing has been flagging for a week. Through JOLTS and GDP/PCE the 10-year ran from 5.18% to 5.29% before turning back to 5.24%.",
-  "니케이아시아는 수정된 물가 지표를 두고 10월 동결 쪽에 무게가 실린다고 전했는데, 그 판단의 다음 재료가 오늘 밤 숫자다. 9월 FOMC 의사록은 다음 주 수요일(10월 7일), 미국 소비자물가는 10월 14일로 그 다음 주다 — 다음 주 수요일까지는 고용 하나가 금리 쪽 이야기를 끌고 간다.":"Nikkei Asia reported that revised inflation data has shifted bets toward an October pause; tonight's number is the next input to that call. The September FOMC minutes land next Wednesday (7 October) and US CPI on 14 October — until next Wednesday, payrolls alone carries the rates story.",
-  "KTis 자사주 소각일이 이달 30일, 태광은 중동 비중이 관전점":"KTis Share Cancellation Set for 30 October; Taekwang's Middle East Mix in Focus",
-  "KOSAI 리포트 확인 지점":"From KOSAI report checkpoints",
-  "어제 정정 보고서가 들어온 커버리지 종목 중 날짜가 가까운 쪽은 둘이다. KTis는 오늘자 KOSAI 리포트가 발행주식총수의 9.76%에 해당하는 자사주 소각 시행 여부를 10월 30일 확인 지점으로 꼽았다 — 실제 소각이 끝나면 주당 지표가 달라진다.":"Two of yesterday's amended-filing coverage names have near-term dates. For <a href=\"stock.html?ticker=058860\">KTis<\/a>, today's KOSAI report flags 30 October as the checkpoint for whether the cancellation of treasury shares equal to 9.76% of total shares outstanding proceeds as scheduled — completion would change per-share metrics.",
-  "태광은 어제(10월 1일) 작성한 리포트에서 LNG 피팅 호황과 중동 매출 쏠림을 함께 짚으며, 공시된 자사주 100억원 매입·소각 계획이 연내 구체적 규모·시기로 확정되는지를 확인 지점으로 적어 뒀다. 나머지 정정 보고서 종목들은 3분기 보고서 법정 제출기한인 11월 16일이 공통 확인 시점이다.":"For <a href=\"stock.html?ticker=023160\">Taekwang<\/a>, the report written yesterday (1 October) sets out the LNG fittings upcycle alongside concentration in Middle East revenue, and lists as a checkpoint whether the disclosed 10 billion won buyback-and-cancellation plan is firmed up with specific size and timing within the year. For the remaining amended filers, the shared checkpoint is 16 November, the statutory deadline for third-quarter reports."
-});
-/* BRIEF:I18N:END */
-</script>
-<script type="module" src="auth-state.js?v=b2e09b3c"></script>
-<!-- 부드러운 스크롤. 안 뜨거나 손가락 화면이면 스스로 비켜선다 —
-     smooth-scroll.js 맨 위 설명 참고. 빼려면 이 두 줄만 지우면 된다. -->
-<script src="lenis.js?v=3a0cb7e8"></script>
-<script src="smooth-scroll.js?v=d642736b"></script>
-<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>
-<script id="kosNavJs">
-/* 헤더 띠 — 32px 넘게 내리면 .scrolled (head 의 #kosNav 참고). 프레임마다 한 번만 본다. */
 (function(){
-  var nav=document.querySelector('.nav'); if(!nav) return; var tick=false;
-  function upd(){ tick=false; nav.classList.toggle('scrolled',(window.scrollY||document.documentElement.scrollTop)>32); }
-  addEventListener('scroll',function(){ if(!tick){ tick=true; requestAnimationFrame(upd); } },{passive:true});
-  upd();
+  var nav=document.getElementById('nav'),tick=false;
+  function upd(){tick=false;nav.classList.toggle('scrolled',window.scrollY>32);if(window.kosOnScroll)window.kosOnScroll()}
+  addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+  var sun='<path d="M12 4V2M12 22v-2M4.9 4.9 3.5 3.5M20.5 20.5l-1.4-1.4M4 12H2M22 12h-2M4.9 19.1l-1.4 1.4M20.5 3.5l-1.4 1.4"/><circle cx="12" cy="12" r="4"/>',moon='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
+  var root=document.documentElement,icon=document.getElementById('themeIcon');function paint(){icon.innerHTML=root.getAttribute('data-theme')==='dark'?sun:moon}paint();window.__kosPaintTheme=paint;
+  document.getElementById('themeBtn').addEventListener('click',function(){var t=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',t);try{localStorage.setItem('kos-theme',t)}catch(e){}paint();});
+  /* 휴대폰 메뉴 */
+  var mb=document.getElementById('menuBtn'),mm=document.getElementById('mmenu');
+  function setMenu(on){nav.classList.toggle('menu-open',on);mm.classList.toggle('open',on);mb.setAttribute('aria-expanded',on?'true':'false');document.documentElement.style.overflow=on?'hidden':'';if(window.KOSSmoothScroll){on?window.KOSSmoothScroll.stop():window.KOSSmoothScroll.start()}}  /* html 에 건다 — body 에 걸면 sticky 헤더가 사라진다(html 이 overflow-x:hidden 이라 body 가 스크롤 상자가 됨) */
+  mb.addEventListener('click',function(){setMenu(!nav.classList.contains('menu-open'))});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('menu-open'))setMenu(false)});
+  window.matchMedia('(min-width:821px)').addEventListener('change',function(e){if(e.matches)setMenu(false)});
 })();
 </script>
+<script type="application/json" data-kos-i18n>{"#-#-# 종가 기준":"As of the #-#-# close","#개":"#","#개 종목":"# stocks","#배":"#×","(선택)":"(optional)","10년물이 2주 만에 5.24%로 물러섰다 — 오늘 밤 고용보고서":"The 10-Year Backs Off to 5.24% for the First Time in Two Weeks — Payrolls Tonight","1위":"#1","2026년 10월 2일 (금) 07:28":"Friday, October 2, 2026 · 07:28 KST","2차전지":"Batteries","9월 하순 내내 이 브리핑이 붙들고 있던 고리는 유가와 금리였다. 유가가 89달러 아래로 빠져도, 연준이 보는 근원 물가가 예상을 밑돌아도 미 10년물은 5.2%대에서 내려오지 않았다. 간밤은 반대였다 — WTI는 2.75% 올라 92.91달러인데 10년물은 5.24%로 0.06%p 내렸다.":"Through late September the thread this briefing kept pulling was oil and yields. Even when WTI slid below $89, even when the Fed's preferred core gauge came in lighter than expected, the 10-year stayed parked in the 5.2% range.","@ 작성":"Written @","AI 리포트":"AI report","Firebase 설정이 필요합니다. firebase-config.js를 확인하여 주시기 바랍니다.":"Firebase is not configured yet. See firebase-config.js.","IT 서비스":"IT Services","IT·소프트웨어":"IT & Software","KOSAI 리포트 확인 지점":"From KOSAI report checkpoints","KTis 자사주 소각일이 이달 30일, 태광은 중동 비중이 관전점":"KTis Share Cancellation Set for 30 October; Taekwang's Middle East Mix in Focus","SK하이닉스":"SK Hynix","[선택] 마케팅 정보 수신 동의":"[Selective] Marketing messages","[필수] 개인정보 수집·이용 동의":"[Required] Collection and use of personal data","[필수] 만 14세 이상입니다":"[Required] I am 14 or older","[필수] 이용약관 동의":"[Required] Terms of Service","가격":"Pricing","가입":" joined","가입 방법":"Sign-up","가입 완료":"Almost done","가입을 완료하시려면 아래 항목에 동의하여 주시기 바랍니다":"To finish signing up, please accept the items below","개 종목":" stocks","개인정보 처리방침":"Privacy Policy","개인정보처리방침":"Privacy Policy","거래대금":"Turnover","거래대금은 SK하이닉스 3조 9,286억원(+2.48%)과 삼성전자 3조 6,831억원(+1.68%)이 1·2위를 채웠다.":"Breadth was wide: 1,802 gainers against 657 decliners, with a median of +0.87%. Still, the cap-weighted move (+1.61%) lagged the index itself, which points back to a handful of large caps. <a href=\"stock.html?ticker=000660\">SK Hynix<\/a> led turnover at 3.93 trillion won (+2.48%), followed by <a href=\"stock.html?ticker=005930\">Samsung Electronics<\/a> at 3.68 trillion won (+1.68%).","건설":"Construction","건설·건자재":"Construction & Materials","검색":"Search","게임":"Games","계정":"Account","계정 메뉴":"Account menu","계정 설정을 보려면 로그인이 필요합니다.":"Sign in to view your account settings.","계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.":"Your account and saved watchlist will be permanently deleted. This cannot be undone.","공시":"Disclosures","과":" and ","관심":"Watch","관심종목":"Watchlist","구글":"Google","구독":"Subscription","구독 관리":"Subscription","구독 초기화":"Reset subscription","국내 상장 #개 종목":"# stocks listed in Korea","국내 증시 개장 · 직전 거래일 10월 1일(목) 종가 기준":"Korean markets open · Figures as of the Thursday, October 1 close","그동안 이용해 주셔서 감사합니다.":"Thank you for using KOSAI.","금액":"Amount","금융":"Finance","금융도 -0.60%로 밀렸고, 거래대금 4위에 오른 우리금융지주가 4.01% 하락했다. 유통·소비재, 보험, 조선이 1% 안쪽 약세였던 것을 빼면 어제 하락은 이 둘에 몰려 있었다.":"Financials also slipped 0.60%, with <a href=\"stock.html?ticker=316140\">Woori Financial Group<\/a>, fourth in turnover, down 4.01%. Apart from sub-1% softness in retail, insurance and shipbuilding, yesterday's declines were concentrated in these two.","기계·장비":"Machinery","기준 #-#-#":"As of #-#-#","기타":"Others","내린 쪽은 좁았다. 정유가 5.79% 빠지며 사실상 유일한 급락 업종이었다 — S-Oil -6.56%, SK이노베이션 -5.44%로 시장 대비 7~8%포인트 뒤처졌다.":"The downside was narrow. Refiners fell 5.79%, effectively the only sector to drop hard — <a href=\"stock.html?ticker=010950\">S-Oil<\/a> -6.56% and <a href=\"stock.html?ticker=096770\">SK Innovation<\/a> -5.44%, lagging the market by seven to eight percentage points.","내용":"Message","네이버":"Naver","네이버 동의 화면":"Naver consent screen","네이버 로그인":"Naver sign-in","네트워크 연결을 확인하여 주시기 바랍니다.":"Please check your network connection.","니케이아시아는 수정된 물가 지표를 두고 10월 동결 쪽에 무게가 실린다고 전했는데, 그 판단의 다음 재료가 오늘 밤 숫자다. 9월 FOMC 의사록은 다음 주 수요일(10월 7일), 미국 소비자물가는 10월 14일로 그 다음 주다 — 다음 주 수요일까지는 고용 하나가 금리 쪽 이야기를 끌고 간다.":"Nikkei Asia reported that revised inflation data has shifted bets toward an October pause; tonight's number is the next input to that call. The September FOMC minutes land next Wednesday (7 October) and US CPI on 14 October — until next Wednesday, payrolls alone carries the rates story.","닉네임":"Nickname","다크":"Dark","닫기":"Close","달러인덱스가 102.00으로 함께 오른 자리라, 금리가 하루 물러섰다고 해서 달러 쪽 압력까지 같이 풀린 것은 아니다.":"In the Seoul market, reporting pointed to exporter conversion flows blocking dollar strength around the 1,360 line, with the gap in WGBI-related inflows and worries about prolonged high US rates cited on the other side. With the dollar index also up at 102.00, one day of easing yields has not released the pressure on the currency.","대비":"vs.","대표":"CEO","대표 임범준":"CEO Beomjun Lim","더보기":"More","데이터 #-#-#":"Data as of #-#-#","동의 시각":"Agreed","동의 안 함":"No","동의를 저장하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"Could not save your agreement. Please try again in a moment.","동의서 판":"Consent version","동의하고 가입 완료":"Agree and finish signing up","동의하지 않고 취소":"Cancel","동의하지 않으면 가입이 진행되지 않습니다. 계정은 아직 생성되지 않았습니다.":"Without your consent we will not create the account — nothing has been created yet.","동의하지 않으면 가입이 취소됩니다.":"If you do not agree, your sign-up is cancelled.","동의함":"Yes","뒤로":"Back","등락률":"Change","등록된 주소 없음":"No address on file","떠나시는 이유를 알려주시면 개선에 반영하겠습니다 (복수 선택 가능)":"Telling us why helps us improve (select all that apply)","라이트":"Light","로그아웃":"Sign out","로그인":"Sign in","로그인 요청이 만료되었습니다. 다시 시도하여 주시기 바랍니다.":"Your sign-in request expired. Please try again.","로그인 창이 닫혔습니다. 다시 시도하여 주시기 바랍니다.":"The sign-in window was closed. Please try again.","로그인 페이지로":"Go to sign in","로그인이 필요합니다":"Sign-in required","로그인이 필요합니다.":"Please sign in.","로봇":"Robotics","로이터는 물러선 국채 금리를 지수 반등의 배경으로 전했고, 세 지수는 0.04~0.19%로 소폭이지만 함께 올랐다.":"Overnight it was the reverse — WTI rose 2.75% to $92.91 while the 10-year eased 6bp to 5.24%. Reuters attributed the equity rebound to receding Treasury yields; the three main indexes all closed higher, if only by 0.04% to 0.19%.","리포트":"Reports","마케팅":"Marketing","마케팅 동의":"Marketing opt-in","마케팅 수신 설정":"Marketing messages","마케팅 정보 수신":"Marketing messages","만 14세 이상이며,":"I am 14 or older, and agree to the","매출":"Revenue","메뉴":"Menu","멤버십":"Membership","모닝 브리핑":"Morning Brief","모닝브리핑":"Morning Brief","모의 결제":"Simulated payments","모의 결제 · 돈이 오가지 않습니다":"Simulated payments · No money changes hands","목적":"Purpose","문의하기":"Contact","미디어·엔터":"Media & Entertainment","미리보기입니다. 결제는 모의 결제이며 실제로 돈이 오가지 않습니다.":"This is a preview. Payments are simulated and no money changes hands.","및":"and","바이오":"Biotech","바이오 3.85%가 업종 1위, 정유만 5.79% 빠졌다":"Biotech Tops at +3.85%, Refiners Alone Fall 5.79%","바이오·제약":"Biotech & Pharma","반도체":"Semiconductors","받지 않아도 서비스 이용에는 아무 영향이 없습니다.":"Turning this off does not affect your use of the service.","발행 시각은 거래일 오전 7시 30분 전후입니다.":"It is published around 7:30 a.m. KST on trading days.","방산에서는 3분기 신규 수주로 종목 간 희비가 갈렸다는 보도와 함께 LIG디펜스앤에어로스페이스가 6.01%, 한화시스템이 5.20% 올랐다.":"Biotech was the body of the KOSDAQ surge — most of the day's biggest absolute gainers were biotech names, and <a href=\"stock.html?ticker=468670\">Brills<\/a> jumped 58.72% on 690 billion won of turnover, fifth-largest in the market. In defence, amid reporting that third-quarter new orders were splitting winners from losers, <a href=\"stock.html?ticker=079550\">LIG Defense &amp; Aerospace<\/a> rose 6.01% and <a href=\"stock.html?ticker=272210\">Hanwha Systems<\/a> 5.20%.","보기":"View","보안을 위해 다시 로그인하신 뒤 진행하여 주시기 바랍니다.":"For security, please sign in again and then continue.","보안을 위해 다시 로그인하신 뒤 탈퇴를 진행하여 주시기 바랍니다.":"For security, please sign in again and then delete your account.","보유 기간: 회원 탈퇴 시까지":"Retained: until the account is deleted","보통":"It's okay","보험":"Insurance","본 자료는 공시(DART)·국내 시장 데이터와 공개된 해외 시장·일정 자료를 바탕으로 작성한 정보 제공 자료이며 투자 권유가 아닙니다. 국내 수치는 2026년 10월 1일 종가 기준입니다.":"This material is compiled from regulatory filings (DART), Korean market data and publicly available overseas market and calendar sources, for information purposes only. It is not investment advice. Korean figures are as of the October 1, 2026 close.","부동산·리츠":"Real Estate & REITs","분기":"Quarter","불러오지 못했습니다.":"Could not load.","불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"Could not load. Please try again in a moment.","브라우저가 팝업을 막았습니다. 팝업을 허용하신 뒤 다시 시도하여 주시기 바랍니다.":"Your browser blocked the popup. Please allow popups and try again.","비밀번호":"Password","비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.":"Password must be at least 8 characters with letters and numbers.","비중":"Share","사업자등록번호":"Business Reg. No.","사업자등록번호 380-25-02019":"Business Reg. No. 380-25-02019","삭제":"Delete","삼성전자":"Samsung Electronics","상승 종목":"Gainers","상태":"Status","상호":"Company","상호 코사이":"Company KOSAI","새 리포트·서비스 소식을 이메일로 받습니다. 동의하지 않아도 가입할 수 있습니다.":"Receive news about new reports and the service by email. You can sign up without agreeing.","새 리포트와 서비스 소식을 이메일로 받습니다.":"Get news about new reports and the service by email.","새 리포트와 서비스 소식을 이메일로 받습니다. 받지 않아도 서비스 이용에는 아무 영향이 없습니다.":"Get news about new reports and the service by email. Turning this off does not affect your use of the service.","서비스":"Services","서비스를 이용하려면 약관 동의가 필요합니다":"Using the service requires your agreement","서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호":"#459, 4F Dongseong Bldg., 50 Mokdongdong-ro 12-gil, Yangcheon-gu, Seoul, Republic of Korea","설정":"Settings","섬유·패션·생활":"Apparel & Living","소셜 로그인에 실패했습니다.":"Social sign-in failed.","수급은 지수 모양과 어긋났다. 코스피에서 개인이 1조 4,102억원, 외국인이 5,558억원을 순매도했고 기관만 3,239억원을 샀다. 코스닥도 4.48% 급등한 날인데 개인은 7,770억원을 팔았다 — 받아낸 것은 기관 5,684억원과 외국인 2,280억원이다.":"Flows did not match the index shape. On KOSPI, retail investors sold a net 1.41 trillion won and foreigners 556 billion won, with institutions the only buyers at 324 billion won.","수신 동의 안 함":"Not subscribed","수신 동의함":"Subscribed","수집 항목: 이메일, 닉네임, 로그인 수단":"Collected: email, nickname, sign-in provider","시장":"Market","시총":"Mkt cap","식음료":"Food & Beverage","식품":"Food & Beverage","실적":"Earnings","실제 사이트로":"Go to live site","실패":"failed","알림":"Notifications","약관 동의":"Agreements","약관과 개인정보 처리에 관한 내용은":"You can review our","어제 국내 장은 9월 수출과 무역흑자가 역대 최대, 반도체 수출도 역대 최대라는 집계와 마이크론 호실적 보도가 겹친 날이었다. 코스피는 6,971.35(+1.95%), 코스닥은 894.29(+4.48%)로 끝났다.":"Yesterday's session landed on a day when September exports and the trade surplus were tallied at record highs — chip exports included — alongside coverage of Micron's results.","어제 정정 보고서가 들어온 커버리지 종목 중 날짜가 가까운 쪽은 둘이다. KTis는 오늘자 KOSAI 리포트가 발행주식총수의 9.76%에 해당하는 자사주 소각 시행 여부를 10월 30일 확인 지점으로 꼽았다 — 실제 소각이 끝나면 주당 지표가 달라진다.":"Two of yesterday's amended-filing coverage names have near-term dates. For <a href=\"stock.html?ticker=058860\">KTis<\/a>, today's KOSAI report flags 30 October as the checkpoint for whether the cancellation of treasury shares equal to 9.76% of total shares outstanding proceeds as scheduled — completion would change per-share metrics.","언어":"Language","언제든 철회할 수 있습니다.":"You can withdraw at any time.","업종":"Industry","업종 분석":"Industry Analysis","업종 상위는 바이오·제약(+3.85%)과 게임(+3.44%)이었고 전자·부품, 반도체, 항공·방산이 2%대로 뒤를 이었다. 코스닥 급등의 몸통도 바이오였다 — 절대 상승 상위가 대부분 바이오·제약으로 채워졌고, 브릴스는 58.72% 오르며 거래대금 6,898억원으로 전체 5위에 들었다.":"Biotech/pharma (+3.85%) and games (+3.44%) led, with electronics components, semiconductors and aerospace/defence in the 2% range.","업종은 바이오·제약과 게임, 반도체, 방산이 끌어올렸고 정유가 5.79% 밀리며 유일하게 크게 빠졌다. 원화 기준값은 1,359.72원으로 올랐고, 오늘 밤 미국 고용보고서에 이어 9월 FOMC 의사록이 다음 주 수요일로 잡혀 있다.":"Biotech, games, semiconductors and defence led the gains while refiners fell 5.79%, the only sector down sharply. The won reference rate rose to 1,359.72, and tonight's US payrolls report is followed by the September FOMC minutes next Wednesday.","없음":"None","에너지":"Energy","에너지·전력":"Energy & Power","에서 확인할 수 있습니다.":".","오늘":"Today","오늘 밤 고용보고서, 9월 FOMC 의사록은 다음 주 수요일":"Payrolls Tonight, September FOMC Minutes Next Wednesday","오전 7시 30분 전후":"Around 07:30 KST","완료":"Verified","요약":"Summary","요청이 많아 잠시 막혔습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"Too many attempts. Please try again in a moment.","운송·물류":"Transport & Logistics","워치리스트":"Watchlist","원/달러 기준값(10월 1일 기준)은 1,359.72원으로 직전 1,350.50원에서 0.68% 올랐다. 서울 외환시장에서는 수출업체 네고물량이 강달러를 막아서며 1,360원 안팎에서 움직였다는 보도와, WGBI 자금 유입 공백·미 고금리 장기화 우려가 상승 요인으로 거론됐다.":"The won reference rate (as of 1 October) stood at 1,359.72, up 0.68% from 1,350.50.","원하는 종목·정보가 부족합니다":"Missing stocks or information I want","원화 기준값 1,359.72원, 네고물량이 받친 1,360원 안팎":"Won Reference at 1,359.72, Exporter Flows Capping the 1,360 Line","월 #원":"<b>₩#<\/b><span>/month<\/span>","위 내용을 이해했으며 되돌릴 수 없음에 동의합니다":"I understand this is permanent and cannot be undone","유가가 반등했는데도 미 10년물이 5.29%에서 5.24%로 물러서며 2주 넘게 이어진 금리 압력이 처음 느슨해졌고, 그 위에서 필라델피아 반도체가 1.59% 올랐다.":"The US 10-year slipped from 5.29% to 5.24% even as oil rebounded, loosening a rate squeeze that had held for more than two weeks, while the Philadelphia Semiconductor Index gained 1.59%.","유가가 올랐는데 금리가 내려왔다 — 방향이 바뀐 자리":"Oil Up, Yields Down — The Link Flips","유통·소비재":"Retail & Consumer","은행":"Banks","이 계정은 사용이 중지되었습니다. hello@kosai.kr로 문의하여 주시기 바랍니다.":"This account has been disabled. Please contact hello@kosai.kr.","이 이메일은 다른 방법으로 가입되어 있습니다. 아래 버튼 중 처음 가입하실 때 쓰신 것으로 로그인하여 주시기 바랍니다.":"This email is registered with a different sign-in method. Please use the one you signed up with.","이름":"Name","이메일":"Email","이메일 hello@kosai.kr":"Email hello@kosai.kr","이메일 가입":"Email sign-up","이메일 또는 비밀번호가 올바르지 않습니다.":"Incorrect email or password.","이메일 형식이 올바르지 않습니다.":"That email address looks invalid.","이미 가입된 이메일입니다.":"This email is already registered.","이미 다른 방법으로 가입된 이메일입니다.":"This email is already registered with another sign-in method.","이용 목적: 회원 식별과 서비스 제공":"Purpose: identifying members and providing the service","이용 방법이 불편합니다":"Hard to use","이용약관":"Terms of Service","이틀 전까지 외국인이 조 단위로 팔던 코스피에서 외국인 매도 규모가 5천억원대로 줄었다는 점이 어제의 수급상 변화다.":"On KOSDAQ, despite the 4.48% jump, retail sold 777 billion won — absorbed by institutions (568 billion) and foreigners (228 billion). The notable shift is on KOSPI: foreign selling, running in the trillions earlier this week, shrank to the hundreds of billions.","인공지능(AI)":"AI","일반":"General","임범준":"Beomjun Lim","자동차":"Automotive","자동차·부품":"Autos & Parts","자세한 의견 (선택)":"Tell us more (optional)","자주 이용하지 않습니다":"I don't use it often","잠시 후 다시 시도하여 주시기 바랍니다.":"Too many attempts — please try again shortly.","저장":"Save","저장하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"Could not save. Please try again in a moment.","저장했습니다.":"Saved.","전기장비":"Electrical Equipment","전일 국내 증시와 간밤의 해외 시장, 주요 일정을 정리합니다.":"It covers the previous day's Korean market, overnight global markets and upcoming key events.","전자·부품":"Electronic Components","전체":"All","전체 동의":"Agree to all","절대":"Absolute","정리":"Wrap-up","정말 탈퇴하시겠습니까?":"Delete your account?","정보가 정확하지 않습니다":"Information isn't accurate","정유":"Oil Refining","정의":"Definitions","정책":"Legal","조선":"Shipbuilding","조회":"Search","종목":"Stock","종목 리포트":"Stock reports","주소":"Address","주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호":"Address #459, 4F Dongseong Bldg., 50 Mokdongdong-ro 12-gil, Yangcheon-gu, Seoul, Republic of Korea","주소 없음":"no address","증권":"Securities","증권사가 다루지 않는 종목까지":"Beyond broker<br>coverage","지난주부터 '사흘에 몰린 지표'라고 적어 온 묶음의 마지막이 오늘 밤 미국 고용보고서다. 구인·이직과 GDP·PCE를 거치며 10년물은 5.18%에서 5.29%까지 올랐다가 어제 5.24%로 돌아섰다.":"Tonight's US payrolls report closes out the cluster this briefing has been flagging for a week. Through JOLTS and GDP/PCE the 10-year ran from 5.18% to 5.29% before turning back to 5.24%.","지수보다 눈에 띄는 쪽은 반도체다. 필라델피아 반도체가 1.59% 오르며 지수들을 앞섰고, [마이크론] 호실적 이후 3.03% 추가 상승했다. 엔비디아는 1.09%, TSMC는 0.66%다. 달러인덱스는 102.00으로 0.55% 올라 금리와는 다른 방향을 봤다.":"The standout was chips, not the headline indexes. The Philadelphia Semiconductor Index rose 1.59%, outpacing the broad market, with Micron adding another 3.03% after its results. Nvidia gained 1.09% and TSMC 0.66%. The dollar index, meanwhile, climbed 0.55% to 102.00 — moving against the yield.","지주":"Holding Companies","지표":"Metric","직전 거래일 국내 증시는 9월 수출·반도체 수출 역대 최대 집계와 마이크론 호실적 보도가 겹치며 코스피 1.95%, 코스닥 4.48% 급등했고 상승 종목이 1,802개로 폭도 넓었지만, 코스피에서는 개인이 1조 4,102억원, 외국인이 5,558억원을 팔고 기관만 3,239억원을 샀다.":"In the previous Korean session, record September exports and record chip exports combined with Micron's results coverage to lift KOSPI 1.95% and KOSDAQ 4.48%, with 1,802 gainers showing unusual breadth — yet on KOSPI retail investors sold 1.41 trillion won and foreigners 556 billion won, with only institutions buying 324 billion won.","처리 중 오류가 발생했습니다.":"Something went wrong.","철강":"Steel","철강·금속":"Steel & Metals","체크박스":"Checkbox","최대":"Max","취소":"Cancel","카카오":"Kakao","카카오·네이버 로그인은 앱 키 설정이 필요합니다. (firebase-config.js 참고)":"Kakao/Naver sign-in needs app keys to be configured (see firebase-config.js).","코넥스":"KONEX","코사이":"KOSAI","코스닥":"KOSDAQ","코스닥 4.48%, 상승 1,802종목 — 그런데 개인은 양쪽에서 팔았다":"KOSDAQ +4.48%, 1,802 Gainers — Yet Retail Sold on Both Boards","코스피":"KOSPI","탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"Something went wrong while deleting your account. Please try again later.","탈퇴하기":"Delete account","태광은 어제(10월 1일) 작성한 리포트에서 LNG 피팅 호황과 중동 매출 쏠림을 함께 짚으며, 공시된 자사주 100억원 매입·소각 계획이 연내 구체적 규모·시기로 확정되는지를 확인 지점으로 적어 뒀다. 나머지 정정 보고서 종목들은 3분기 보고서 법정 제출기한인 11월 16일이 공통 확인 시점이다.":"For <a href=\"stock.html?ticker=023160\">Taekwang<\/a>, the report written yesterday (1 October) sets out the LNG fittings upcycle alongside concentration in Middle East revenue, and lists as a checkpoint whether the disclosed 10 billion won buyback-and-cancellation plan is firmed up with specific size and timing within the year. For the remaining amended filers, the shared checkpoint is 16 November, the statutory deadline for third-quarter reports.","테마":"Themes","테마 전환":"Toggle theme","통신":"Telecom","포함":"Included","폭도 좁지 않았다 — 오른 종목이 1,802개, 내린 종목이 657개였고 중앙값은 +0.87%였다. 다만 시총가중(+1.61%)이 지수 등락률을 밑돈 것을 보면 끌어올린 쪽은 결국 대형주 몇 개다.":"KOSPI closed at 6,971.35 (+1.95%) and KOSDAQ at 894.29 (+4.48%).","피드백":"Feedback","필수 항목에 모두 동의하셔야 가입하실 수 있습니다.":"You must accept the required items to continue.","한국어":"Korean","항공·방산":"Aerospace & Defense","현재":"Current","호텔·레저":"Hotel & Leisure","홈":"Home","홈으로":"Back to home","화장품":"Cosmetics","화학":"Chemicals","확인":"Confirm","환불":"Refunded","회사":"Company","회사 소개":"About","회원 탈퇴":"Delete account","회원 탈퇴가 완료되었습니다":"Your account has been deleted","회원 탈퇴가 완료되었습니다. 그동안 이용해 주셔서 감사합니다.":"Your account has been deleted. Thank you for using KOSAI.","회원가입":"Sign up"}</script>
+<script>window.KOSi18n&&KOSi18n.load()</script>
+<script type="module" src="auth-state.js?v=d66d3af5"></script>
+<script src="lenis.js?v=3a0cb7e8"></script>
+<script src="smooth-scroll.js?v=bd8a60e4"></script>
 </body>
 </html>
