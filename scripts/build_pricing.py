@@ -18,9 +18,9 @@ PLANS = [
     dict(id='free', name='무료', price='0', unit='원', sub='가입 없이', feats=['현재가·시가총액·PER·PBR 등 핵심 지표', '리포트 개요와 핵심 요약', '사업 구조', '최근 4개 연도·5개 분기 실적 추이', '조건 검색과 업종 분석', '관심종목(무료 회원가입 후)'],
          cta='<a class="btn btn-soft" href="/Reports.html">전체 리포트 보기</a>'),
     dict(id='basic', name='BASIC', price='9,900', per='월', unit='원', sub='언제든지 해지 가능', feats=['무료 플랜의 모든 항목', '잠금 없이 리포트 전체 열람', '국내 상장 2,500여 개 종목', '하루 5개 리포트 열람'],
-         cta='<button type="button" class="btn btn-ink" data-plan="basic" data-i18n-skip>BASIC 구독하기</button>'),
+         cta='<button type="button" class="btn btn-ink" data-plan="basic">BASIC 구독하기</button>'),
     dict(id='pro', name='PRO', price='14,900', per='월', unit='원', sub='언제든지 해지 가능', feats=['무료 플랜의 모든 항목', '잠금 없이 리포트 전체 열람', '국내 상장 2,500여 개 종목', '하루 15개 리포트 열람'],
-         cta='<button type="button" class="btn btn-ink" data-plan="pro" data-i18n-skip>PRO 구독하기</button>'),
+         cta='<button type="button" class="btn btn-ink" data-plan="pro">PRO 구독하기</button>'),
 ]
 
 # (항목, 설명, 무료, BASIC, PRO) — True 포함 · False 미포함 · 문자열은 그대로
@@ -129,7 +129,7 @@ def build(out_path=None):
   <section class="faq" id="faq"><div class="sec-h"><h2>자주 묻는 질문</h2></div>{faq}</section>
   <section class="notes"><h3>유의사항</h3><ul>{notes}</ul></section>
 </main>
-<div class="dlg" id="dlg" role="dialog" aria-modal="true" aria-labelledby="dlgT" data-i18n-skip><div class="dlg-box"><h3 id="dlgT"></h3><div id="dlgB"></div>
+<div class="dlg" id="dlg" role="dialog" aria-modal="true" aria-labelledby="dlgT"><div class="dlg-box"><h3 id="dlgT"></h3><div id="dlgB"></div>
   <div class="dlg-acts"><button type="button" class="tbtn" id="dlgNo">취소</button><button type="button" class="btn btn-ink" id="dlgYes">확인</button></div></div></div>'''
     html = (C.head('멤버십 | KOSAI') + '\n<style>\n' + C.CSS + '\n' + C.FORM_CSS + '\n' + C.PROSE_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('멤버십') + '\n' + body + '\n' + C.FOOTER + '\n<script>\n' + C.JS + '\n</script>\n<script type="module">\n' + module + '\n</script>\n</body>\n</html>')

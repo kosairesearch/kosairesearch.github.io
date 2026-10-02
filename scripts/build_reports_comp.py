@@ -138,6 +138,8 @@ BODY = '''<main class="wrap">
 
 JS = r'''(function(){
   var REPORTS=(window.KOS_LIVE_DATA&&KOS_LIVE_DATA.stocks)||[], RREP=(window.KOS_REPORTS&&KOS_REPORTS.reports)||{};
+  /* 영어 화면(staging/i18n.js) — 리포트 제목은 자료의 영어 쪽, 검색 · 이름순은 영문명으로도. 한국어 문구는 사전이 바꾼다. */
+  var I=window.KOSi18n, PK=function(o){return I?I.pick(o):(o&&(o.ko||o.en))||''}, NM=function(s){return I?I.name(s):s.name};
   function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
   function won(n){return n==null?'—':Number(n).toLocaleString('ko-KR')+'원'} function chg(c){c=c||0;return (c>0?'▲ ':c<0?'▼ ':'')+Math.abs(c).toFixed(2)+'%'} function dir(c){return c>0?'up':c<0?'down':'flat'}
   /* 시가총액 단위는 조. 1조 미만은 억으로 읽는다 — 0.3조 보다 3,000억 이 읽기 쉽다. */
@@ -152,14 +154,14 @@ JS = r'''(function(){
   document.getElementById('eyebrow').textContent='국내 상장 '+nBoth.toLocaleString('ko-KR')+'개 종목 리포트';   // 랜딩 첫 화면과 같은 표기(2026-10-03)
   /* 값이 없는 종목은 방향과 상관없이 뒤로 보낸다. 앞에 두면 'PER 낮은 순'의 첫 화면이 전부 '—' 가 된다. */
   function byNum(k,d){return function(a,b){var x=a[k],y=b[k],xb=(x==null||isNaN(x)),yb=(y==null||isNaN(y));if(xb&&yb)return (b.mcap||0)-(a.mcap||0);if(xb)return 1;if(yb)return -1;return (x-y)*d}}
-  function repTitle(tk){var R=RREP[tk];return R&&R.title?(R.title.ko||R.title.en||''):''} function repDate(tk){var R=RREP[tk];return R&&R.reportDate?R.reportDate:''} function repTs(tk){var R=RREP[tk];return R?(R.reportTs||R.reportDate||''):''}
+  function repTitle(tk){var R=RREP[tk];return R&&R.title?PK(R.title):''} function repDate(tk){var R=RREP[tk];return R&&R.reportDate?R.reportDate:''} function repTs(tk){var R=RREP[tk];return R?(R.reportTs||R.reportDate||''):''}
   function getList(){var t=state.q.trim().toLowerCase();
-    var l=REPORTS.filter(function(r){if(!passesFilters(r))return false;if(t&&!(r.name.toLowerCase().indexOf(t)>=0||r.ticker.indexOf(t)>=0||(r.sector||'').toLowerCase().indexOf(t)>=0))return false;return true});
+    var l=REPORTS.filter(function(r){if(!passesFilters(r))return false;if(t&&!(r.name.toLowerCase().indexOf(t)>=0||NM(r).toLowerCase().indexOf(t)>=0||r.ticker.indexOf(t)>=0||(r.sector||'').toLowerCase().indexOf(t)>=0))return false;return true});
     var s=state.sort;
     if(s==='mcap_desc')l.sort(function(a,b){return (b.mcap||0)-(a.mcap||0)});else if(s==='mcap_asc')l.sort(function(a,b){return (a.mcap||0)-(b.mcap||0)});
     else if(s==='change_desc')l.sort(function(a,b){return (b.change||0)-(a.change||0)});else if(s==='change_asc')l.sort(function(a,b){return (a.change||0)-(b.change||0)});
     else if(s==='date')l.sort(function(a,b){return String(repTs(b.ticker)).localeCompare(String(repTs(a.ticker)))||(b.mcap||0)-(a.mcap||0)});
-    else if(s==='name')l.sort(function(a,b){return a.name.localeCompare(b.name,'ko')});
+    else if(s==='name')l.sort(function(a,b){return NM(a).localeCompare(NM(b),I&&I.lang==='en'?'en':'ko')});
     else if(s==='per_asc')l.sort(byNum('per',1));else if(s==='pbr_asc')l.sort(byNum('pbr',1));else if(s==='div_desc')l.sort(byNum('div',-1));
     return l}
   /* 북마크 — 스테이징·실사이트에서는 KOSWatch(Firestore, watchlist.js)가 맡는다. 시안(KOSWatch 없음)은 화면 안에서만. */

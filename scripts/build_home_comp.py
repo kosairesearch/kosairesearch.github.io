@@ -121,6 +121,8 @@ BODY = '''<main class="wrap">
 JS = r'''(function(){
   var live=(window.KOS_LIVE_DATA&&KOS_LIVE_DATA.stocks)||[], RREP=(window.KOS_REPORTS&&KOS_REPORTS.reports)||{};
   var dd=(window.KOS_LIVE_DATA&&KOS_LIVE_DATA.dataDate)||''; var dateF=dd?dd.slice(0,4)+'-'+dd.slice(4,6)+'-'+dd.slice(6,8):'';
+  /* 영어 화면(staging/i18n.js) — 리포트 제목은 자료의 영어 쪽, 검색은 영문명으로도. 한국어 문구는 사전이 바꾼다. */
+  var I=window.KOSi18n, EN=function(){return !!(I&&I.lang==='en')}, PK=function(o){return I?I.pick(o):(o&&o.ko)||''}, NM=function(s){return I?I.name(s):s.name};
   function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
   var fmt={won:function(n){return n==null?'—':n.toLocaleString('ko-KR')+'원'},
     chg:function(c){c=c||0;return (c>0?'▲ ':c<0?'▼ ':'')+Math.abs(c).toFixed(2)+'%'},
@@ -132,15 +134,15 @@ JS = r'''(function(){
   document.getElementById('eyebrow').textContent='국내 상장 '+nBoth.toLocaleString('ko-KR')+'개 종목';   // 랜딩 첫 화면과 같은 표기(2026-10-03)
 
   /* ---- 최신 리포트 6편 (Home.html 과 같은 규칙) ---- */
-  var REPORTS=live.filter(function(s){return RREP[s.ticker]}).map(function(s){var r=RREP[s.ticker];return Object.assign({},s,{reportDate:r.reportDate,reportTs:r.reportTs||r.reportDate,title:(r.title&&r.title.ko)||''})});
+  var REPORTS=live.filter(function(s){return RREP[s.ticker]}).map(function(s){var r=RREP[s.ticker];return Object.assign({},s,{reportDate:r.reportDate,reportTs:r.reportTs||r.reportDate,title:r.title||''})});
   REPORTS.sort(function(a,b){return String(b.reportTs||'').localeCompare(String(a.reportTs||''))||(b.mcap||0)-(a.mcap||0)}); REPORTS=REPORTS.slice(0,6);
   var rowsEl=document.getElementById('reportRows'),emptyEl=document.getElementById('reportEmpty');
   function renderReports(q){
     var t=(q||'').trim().toLowerCase();
-    var list=REPORTS.filter(function(d){return !t||d.name.toLowerCase().indexOf(t)>=0||d.ticker.indexOf(t)>=0||(d.sector||'').toLowerCase().indexOf(t)>=0});
+    var list=REPORTS.filter(function(d){return !t||d.name.toLowerCase().indexOf(t)>=0||NM(d).toLowerCase().indexOf(t)>=0||d.ticker.indexOf(t)>=0||(d.sector||'').toLowerCase().indexOf(t)>=0});
     rowsEl.innerHTML=list.map(function(d){var c=d.change||0;
       return '<a class="row" href="/stock.html?ticker='+d.ticker+'"><div><div class="r-name">'+esc(d.name)+'</div><div class="r-meta">'+d.ticker+' · '+esc(d.market)+' · '+esc(d.sector)+'<span class="md"> · '+esc(d.reportDate)+'</span></div></div>'
-        +'<div class="r-title">'+esc(d.title)+'</div><div class="r-price">'+fmt.won(d.price)+'<span class="c '+fmt.dir(c)+'">'+fmt.chg(c)+'</span></div><div class="r-date">'+esc(d.reportDate)+'</div></a>'}).join('');
+        +'<div class="r-title">'+esc(PK(d.title))+'</div><div class="r-price">'+fmt.won(d.price)+'<span class="c '+fmt.dir(c)+'">'+fmt.chg(c)+'</span></div><div class="r-date">'+esc(d.reportDate)+'</div></a>'}).join('');
     emptyEl.hidden=!!list.length;
   }
 
@@ -190,10 +192,10 @@ JS = r'''(function(){
   body.addEventListener('click',function(e){var tr=e.target.closest('tr[data-tk]');if(!tr||e.target.closest('a'))return;location.href='/stock.html?ticker='+tr.dataset.tk});
 
   /* ---- 검색 · 자동완성 · 최근 본 종목 (Home.html 의 규칙 그대로) ---- */
-  var INDEX=[],seen={}; live.forEach(function(s){if(seen[s.ticker])return;seen[s.ticker]=1;INDEX.push({ticker:s.ticker,name:s.name,sector:s.sector||''})});
+  var INDEX=[],seen={}; live.forEach(function(s){if(seen[s.ticker])return;seen[s.ticker]=1;INDEX.push({ticker:s.ticker,name:s.name,en:I?I.nameEn(s):'',sector:s.sector||''})});
   function search(q){var t=q.trim().toLowerCase();if(!t)return[];
-    return INDEX.map(function(s){var nm=s.name.toLowerCase(),sc=-1;
-      if(nm.indexOf(t)===0)sc=0;else if(s.ticker.indexOf(t)===0)sc=1;else if(nm.indexOf(t)>=0)sc=2;else if(s.ticker.indexOf(t)>=0)sc=3;else if(s.sector.toLowerCase().indexOf(t)>=0)sc=4;
+    return INDEX.map(function(s){var nm=s.name.toLowerCase(),ne=(s.en||'').toLowerCase(),sc=-1;
+      if(nm.indexOf(t)===0||ne.indexOf(t)===0)sc=0;else if(s.ticker.indexOf(t)===0)sc=1;else if(nm.indexOf(t)>=0||ne.indexOf(t)>=0)sc=2;else if(s.ticker.indexOf(t)>=0)sc=3;else if(s.sector.toLowerCase().indexOf(t)>=0)sc=4;
       return {s:s,sc:sc}}).filter(function(x){return x.sc>=0}).sort(function(a,b){return a.sc-b.sc||a.s.name.localeCompare(b.s.name,'ko')}).slice(0,8).map(function(x){return x.s})}
   function hl(name,q){var t=q.trim();if(!t)return esc(name);var i=name.toLowerCase().indexOf(t.toLowerCase());if(i<0)return esc(name);return esc(name.slice(0,i))+'<mark>'+esc(name.slice(i,i+t.length))+'</mark>'+esc(name.slice(i+t.length))}
   var input=document.getElementById('searchInput'),ac=document.getElementById('acList'),items=[],act=-1,RKEY='kos-recent';
@@ -204,8 +206,8 @@ JS = r'''(function(){
   function renderRecent(){var rec=getRecent();if(!rec.length){closeAC();return}items=rec.map(function(x){return{ticker:x.t,name:x.n}});act=-1;
     ac.innerHTML='<div class="ac-head"><span>최근 본 종목</span><button type="button" id="acClear">전체 삭제</button></div>'+rec.map(function(x,i){return '<div class="ac-item ac-recent" data-i="'+i+'" data-tk="'+esc(x.t)+'" role="option"><span class="ac-tk">'+esc(x.t)+'</span><span class="ac-nm">'+esc(x.n)+'</span><button type="button" class="ac-x" data-tk="'+esc(x.t)+'" aria-label="삭제">×</button></div>'}).join('');open()}
   function renderAC(){var q=input.value;if(!q.trim()){renderRecent();return}items=search(q);act=-1;
-    ac.innerHTML=items.length?items.map(function(s,i){return '<a class="ac-item" href="/stock.html?ticker='+s.ticker+'" data-i="'+i+'" role="option"><span class="ac-tk">'+s.ticker+'</span><span class="ac-nm">'+hl(s.name,q)+'</span><span class="ac-sec">'+esc(s.sector)+'</span></a>'}).join('')
-      :'<div class="ac-empty">“'+esc(q.trim())+'” 검색 결과가 없습니다</div>';open()}
+    ac.innerHTML=items.length?items.map(function(s,i){return '<a class="ac-item" href="/stock.html?ticker='+s.ticker+'" data-i="'+i+'" role="option"><span class="ac-tk">'+s.ticker+'</span><span class="ac-nm">'+hl(EN()&&s.en?s.en:s.name,q)+'</span><span class="ac-sec">'+esc(s.sector)+'</span></a>'}).join('')
+      :'<div class="ac-empty">'+(EN()?'No results for “'+esc(q.trim())+'”':'“'+esc(q.trim())+'” 검색 결과가 없습니다')+'</div>';open()}
   function goStock(tk){try{input.blur()}catch(e){}location.href='/stock.html?ticker='+tk}
   function setActive(n){var els=ac.querySelectorAll('.ac-item');if(!els.length)return;act=(n+els.length)%els.length;els.forEach(function(el,i){el.classList.toggle('active',i===act)});els[act].scrollIntoView({block:'nearest'})}
   input.addEventListener('input',function(){renderReports(input.value);renderAC()});

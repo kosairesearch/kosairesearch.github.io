@@ -187,8 +187,11 @@ document.addEventListener('visibilitychange',function(){go(!document.hidden&&cv.
 # 크기는 상자 폭에서 나온다(420px 아래는 작은 판). 색은 글자색 하나의 농도뿐이라 테마를 바꿔도 다시 그리지 않는다. 움직이지 않는다
 CYC_JS = r"""(function(){
 var fg=document.getElementById('cyc'),box=document.getElementById('cycBox'),el=document.getElementById('cycData');if(!fg||!box||!el)return;
-var A=JSON.parse(el.textContent),Y=A.years,T=A.t,ks=Object.keys(Y).sort(),D=null,ti=-1,day='';
-function fill(s,o){return s.replace(/\{(\w+)\}/g,function(m,k){return k in o?o[k]:m})}
+var A=JSON.parse(el.textContent),Y=A.years,ks=Object.keys(Y).sort(),D=null,ti=-1,day='';
+/* 영어 화면(staging/i18n.js)이면 처음부터 영어로 그린다 — 그린 뒤 바꾸면 fit() 이 잰 글자 폭이 어긋난다 */
+var EN=!!(A.te&&window.KOSi18n&&KOSi18n.lang==='en'),T=EN?A.te:A.t,MN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function wn(k,w){return EN?A.te.wins[k]:w[0]}
+function fill(s,o){return s.replace(/\{(\w+)\}/g,function(m,k){return k in o?o[k]:k==='M'&&'m' in o?MN[o.m-1]:m})}
 function pick(){var k=new Date(Date.now()+324e5),y=k.getUTCFullYear(),s=String(y),c;
   if(Y[s]){D=Y[s];ti=Math.round((Date.UTC(y,k.getUTCMonth(),k.getUTCDate())-Date.UTC(y,0,1))/864e5)}
   else{D=Y[y>+ks[ks.length-1]?ks[ks.length-1]:ks[0]];ti=-1}
@@ -220,8 +223,8 @@ function draw(){
     h+='<path d="M'+f(p0[0])+' '+f(p0[1])+'A'+f(rw)+' '+f(rw)+' 0 0 1 '+f(p1[0])+' '+f(p1[1])+'" fill="none" stroke="currentColor"'+(done?' stroke-opacity=".3"':'')+' stroke-width="'+(sm?1.5:1.8)+'"/>';
     h+='<circle cx="'+f(p1[0])+'" cy="'+f(p1[1])+'" r="'+(sm?2.8:3.3)+'" fill="currentColor"'+(done?' fill-opacity=".3"':'')+' class="ring"/>';
     q=px(rw-(sm?11:14),a1);
-    if(k===nx)h+=tx('n1',q[0],q[1]-fd*.38,fl,500,.62,anc,w[0])+tx('n2',q[0],q[1]+fd*.98,fd,600,1,anc,fill(T.due,{m:w[3],d:w[4]}));
-    else h+=tx('',q[0],q[1],fl,500,done?.45:.62,anc,w[0],1)});
+    if(k===nx)h+=tx('n1',q[0],q[1]-fd*.38,fl,500,.62,anc,wn(k,w))+tx('n2',q[0],q[1]+fd*.98,fd,600,1,anc,fill(T.due,{m:w[3],d:w[4]}));
+    else h+=tx('',q[0],q[1],fl,500,done?.45:.62,anc,wn(k,w),1)});
   /* 오늘 — 점 하나와 글자. 글자는 점에서 지난 날 쪽으로 조금 비켜 안쪽에 둔다(오늘 시작하는 제출 기간 선과 닿지 않게) */
   if(ti>=0){an=a(ti+.5);p=px(R,an);
     h+='<circle cx="'+f(p[0])+'" cy="'+f(p[1])+'" r="'+(sm?3.4:4)+'" fill="currentColor" class="ring"/>';
@@ -231,14 +234,18 @@ function draw(){
   box.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 '+S+' '+S+'" aria-hidden="true">'+h+'</svg>';
   try{fit(box.firstChild,cx,cy,R,an,sm)}catch(e){}
   /* 읽는 프로그램의 설명도 그해 것으로 */
-  fg.setAttribute('aria-label',fill(T.label,{y:D.y})+(nx>=0?' '+fill(T.next,{w:D.win[nx][0],m:D.win[nx][3],d:D.win[nx][4]}):''))
+  fg.setAttribute('aria-label',fill(T.label,{y:D.y})+(nx>=0?' '+fill(T.next,{w:wn(nx,D.win[nx]),m:D.win[nx][3],d:D.win[nx][4]}):''))
 }
 /* 자리 다듬기 — 그린 뒤 글자의 실제 크기를 재어, 다가오는 기한의 글(.n1 .n2)과 '오늘'(.td)이 다른 글자, 점, 선과 닿으면 닿지 않는
    가장 가까운 자리로 옮긴다. 넓은 화면에서는 처음 자리 그대로이고, 작은 휴대폰에서 주로 움직인다(두 해 모든 날 × 폭 9가지로 잼) */
 function fit(sv,cx,cy,R,an,sm){
   var ob=[],n1=sv.querySelector('.n1'),n2=sv.querySelector('.n2'),td=sv.querySelector('.td'),k;
   function bb(e,m){var r=e.getBBox();m=m||0;return [r.x-m,r.y-m,r.x+r.width+m,r.y+r.height+m]}
-  function ok(b){for(var j=0;j<ob.length;j++){var o=ob[j];if(b[0]<o[2]&&o[0]<b[2]&&b[1]<o[3]&&o[1]<b[3])return false}return true}
+  /* 화면 양 끝(4px 안쪽)을 넘는 자리는 쓰지 않는다 — 그림 상자 밖(달 이름이 걸치는 여백)은 괜찮지만 화면 밖은 잘린다
+     (영어 'Today' 가 작은 휴대폰에서 왼쪽 끝에 걸렸다). 그림은 1:1 크기라 화면 거리를 그대로 쓴다 */
+  var sr=sv.getBoundingClientRect(),lo=4-sr.left,hi=2*cx+(document.documentElement.clientWidth-sr.right)-4;
+  function ok(b){if(b[0]<lo||b[2]>hi)return false;
+    for(var j=0;j<ob.length;j++){var o=ob[j];if(b[0]<o[2]&&o[0]<b[2]&&b[1]<o[3]&&o[1]<b[3])return false}return true}
   [].forEach.call(sv.querySelectorAll('circle'),function(c){var r=+c.getAttribute('r')+(c.getAttribute('class')?2.25:.5),x=+c.getAttribute('cx'),y=+c.getAttribute('cy');ob.push([x-r,y-r,x+r,y+r])});
   [].forEach.call(sv.querySelectorAll('path'),function(p){var n=p.getTotalLength(),w=+p.getAttribute('stroke-width')/2+1;
     for(var l=0;l<=n;l+=2){var q=p.getPointAtLength(l);ob.push([q.x-w,q.y-w,q.x+w,q.y+w])}});
@@ -254,6 +261,8 @@ function fit(sv,cx,cy,R,an,sm){
     function at(r,t,out){return [cx+r*Math.cos(t),cy+r*Math.sin(t),side(Math.cos(t),out)]}
     c.push(at(ri,an-s,false),at(ri,an+s,false),at(ro,an,true));   // 안쪽(지난 날 쪽 · 남은 날 쪽) → 바깥 → 바깥에서 달 이름을 비켜
     for(k=1;k<=5;k++)c.push(at(ro,an-k*8/ro,true),at(ro,an+k*8/ro,true));
+    for(k=2;k<=6;k++)c.push(at(ri,an-k*s,false),at(ri,an+k*s,false));   // 그래도 없으면 안쪽에서 조금씩 더 비켜(영어 'Today' 는 '오늘'보다 넓다 — 뒤에 붙여 한국어 자리는 그대로)
+    for(k=0;k<=4;k++)c.push(at(R*.8-(sm?11:14),an-k*s,false),at(R*.8-(sm?11:14),an+k*s,false));   // 마지막으로 제출 기간 선 안쪽(4월 초 작은 화면 — 바깥은 달 이름과 화면 끝, 그 사이는 선에 막힌다)
     for(k=0;k<c.length;k++){var q=c[k],x0=q[2]==='end'?q[0]-w:q[2]==='middle'?q[0]-w/2:q[0];
       if(ok([x0,q[1]+o0,x0+w,q[1]+o1])){if(k){td.setAttribute('x',f(q[0]));td.setAttribute('y',f(q[1]));td.setAttribute('text-anchor',q[2])}break}}}
 }
@@ -542,7 +551,7 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .nav-in{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;position:relative}
 .brand{display:flex;align-items:center;min-height:44px}
 .brand img{height:14px;display:block} .brand .dk{display:none} :root[data-theme="dark"] .brand .lt{display:none} :root[data-theme="dark"] .brand .dk{display:block}
-.links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:34px}   /* 28 → 34(사장 2026-10-02 "조금만 더 벌려줘") — comp_common 머리와 같은 값 */
+.links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:34px;width:max-content;white-space:nowrap}   /* 28 → 34(사장 2026-10-02 "조금만 더 벌려줘") — comp_common 머리와 같은 값 */
 .links a{padding:15px 0;font:500 14px/1 var(--font);color:var(--ink-72);transition:color .12s} .links a:hover{color:var(--ink)}
 .nav.on-band{--nav-bar:rgba(20,20,20,.72);--ink:#f2f1ee;--ink-72:rgba(242,241,238,.72);--hair:rgba(255,255,255,.1)}
 .nav.on-band .brand .lt{display:none} .nav.on-band .brand .dk{display:block}
@@ -778,6 +787,8 @@ STAGING_CSS = r"""
 /* 페이지 전환 — 다른 스테이징 페이지와 같은 문서 간 크로스페이드. STAGING 띠만 제자리에 두고 나머지는 바뀐다 */
 @view-transition{navigation:auto}
 .kos-staging-bar{view-transition-name:kos-bar}
+/* 영어 화면(i18n.js) — 리포트 · 업종 그림은 그 말의 화면으로. i18n.js 가 html lang 을 바꾸고, 이 규칙은 그것이 늦거나 없어도 한국어를 지킨다 */
+html:not([lang="en"]) .shot [data-lang="en"],html[lang="en"] .shot [data-lang="ko"]{display:none!important}
 /* STAGING 띠(맨 위 · sticky · 높이를 --kos-bar-h 로 넘긴다) 밑으로 머리와 휴대폰 메뉴를 내린다. 첫 화면과 브리핑 띠의 '한 화면'도 띠만큼 줄인다 */
 html{scroll-padding-top:calc(84px + var(--kos-bar-h,0px))}
 .nav{top:var(--kos-bar-h,0px)}
@@ -821,15 +832,17 @@ html{scroll-padding-top:calc(84px + var(--kos-bar-h,0px))}
 SEARCH_JS = r"""(function(){
 var forms=[].slice.call(document.querySelectorAll('form.search'));if(!forms.length)return;
 var IDX=null,busy=false,wait=[];
+/* 영어 화면(staging/i18n.js) — 영문명으로도 찾고, 후보는 영문명으로 보인다 */
+var I=window.KOSi18n, EN=function(){return !!(I&&I.lang==='en')};
 function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
 function load(cb){if(IDX){cb();return}wait.push(cb);if(busy)return;busy=true;
-  function done(){var d=window.KOS_LIVE_DATA,seen={};IDX=[];((d&&d.stocks)||[]).forEach(function(s){if(seen[s.ticker])return;seen[s.ticker]=1;IDX.push({t:s.ticker,n:s.name,s:s.sector||''})});
+  function done(){var d=window.KOS_LIVE_DATA,seen={};IDX=[];((d&&d.stocks)||[]).forEach(function(s){if(seen[s.ticker])return;seen[s.ticker]=1;IDX.push({t:s.ticker,n:s.name,e:I?I.nameEn(s):'',s:s.sector||''})});
     var w=wait;wait=[];w.forEach(function(f){f()})}
   if(window.KOS_LIVE_DATA){done();return}
   var sc=document.createElement('script');sc.src='../data/stocks.js';sc.onload=done;sc.onerror=function(){busy=false;wait=[]};document.head.appendChild(sc)}
 function find(q){var t=q.trim().toLowerCase();if(!t||!IDX)return[];
-  return IDX.map(function(s){var nm=s.n.toLowerCase(),sc=-1;
-    if(nm.indexOf(t)===0)sc=0;else if(s.t.toLowerCase().indexOf(t)===0)sc=1;else if(nm.indexOf(t)>=0)sc=2;else if(s.t.toLowerCase().indexOf(t)>=0)sc=3;else if(s.s.toLowerCase().indexOf(t)>=0)sc=4;
+  return IDX.map(function(s){var nm=s.n.toLowerCase(),ne=(s.e||'').toLowerCase(),sc=-1;
+    if(nm.indexOf(t)===0||ne.indexOf(t)===0)sc=0;else if(s.t.toLowerCase().indexOf(t)===0)sc=1;else if(nm.indexOf(t)>=0||ne.indexOf(t)>=0)sc=2;else if(s.t.toLowerCase().indexOf(t)>=0)sc=3;else if(s.s.toLowerCase().indexOf(t)>=0)sc=4;
     return {s:s,sc:sc}}).filter(function(x){return x.sc>=0}).sort(function(a,b){return a.sc-b.sc||a.s.n.localeCompare(b.s.n,'ko')}).slice(0,8).map(function(x){return x.s})}
 function hl(name,q){var t=q.trim(),i=name.toLowerCase().indexOf(t.toLowerCase());if(!t||i<0)return esc(name);return esc(name.slice(0,i))+'<mark>'+esc(name.slice(i,i+t.length))+'</mark>'+esc(name.slice(i+t.length))}
 function go(t){location.href='stock.html?ticker='+encodeURIComponent(t)}
@@ -837,8 +850,8 @@ forms.forEach(function(f){
   var input=f.querySelector('input'),btn=f.querySelector('button'),ac=f.querySelector('.ac'),items=[],act=-1;if(!input||!btn||!ac)return;
   function close(){ac.classList.remove('show');input.setAttribute('aria-expanded','false');act=-1}
   function render(){var q=input.value;if(!q.trim()){close();return}if(!IDX){load(render);return}items=find(q);act=-1;
-    ac.innerHTML=items.length?items.map(function(s,i){return '<a class="ac-item" role="option" href="stock.html?ticker='+encodeURIComponent(s.t)+'" data-i="'+i+'"><span class="ac-tk">'+esc(s.t)+'</span><span class="ac-nm">'+hl(s.n,q)+'</span><span class="ac-sec">'+esc(s.s)+'</span></a>'}).join('')
-      :'<div class="ac-empty">“'+esc(q.trim())+'” 검색 결과가 없습니다</div>';
+    ac.innerHTML=items.length?items.map(function(s,i){return '<a class="ac-item" role="option" href="stock.html?ticker='+encodeURIComponent(s.t)+'" data-i="'+i+'"><span class="ac-tk">'+esc(s.t)+'</span><span class="ac-nm">'+hl(EN()&&s.e?s.e:s.n,q)+'</span><span class="ac-sec">'+esc(s.s)+'</span></a>'}).join('')
+      :'<div class="ac-empty">'+(EN()?'No results for “'+esc(q.trim())+'”':'“'+esc(q.trim())+'” 검색 결과가 없습니다')+'</div>';
     ac.classList.add('show');input.setAttribute('aria-expanded','true');fit()}
   function fit(){ac.style.maxHeight='';var h=f.closest('.hero');if(!h)return;var a=ac.getBoundingClientRect(),room=h.getBoundingClientRect().bottom-a.top-16;
     if(room<a.height)ac.style.maxHeight=Math.max(132,room)+'px'}   // 첫 화면 끝에서 잘리지 않게 — 넘치는 후보는 판 안에서 내려 본다
@@ -903,16 +916,26 @@ def webp_size(path):
     return None
 
 
+def en_shots(kind):
+    """영어판 그림(…-en.webp, landing_art.py)이 다 있는가 — 스테이징 랜딩만 쓴다"""
+    return all(os.path.exists(os.path.join(OUT, "img", f"{kind}-{n}-{t}-en.webp")) for n in SHOT[kind] for t in ("light", "dark"))
+
+
 def shot(kind, label, cls="shot"):
     """실제 화면 그림 — 상자 없이 화면만. 넓은 화면은 데스크톱 화면 한 장, 한 열(820px 이하)은 휴대폰 화면 두 장.
     테마와 폭에 맞는 그림만 받는다(loading=lazy · display:none). 그림마다 alt 를 비우고 이름은 figure 가 갖는다.
-    리포트 절(.shot)은 데스크톱 화면이 오른쪽 끝까지 이어지고, 업종 절(.shot.full)은 본문 폭 그대로다"""
-    def two(n):
-        w, h = SHOT[kind][n]
-        return "".join(f'<img class="{c}" src="img/{kind}-{n}-{t}.webp" width="{w}" height="{h}" alt="" loading="lazy" decoding="async">'
+    리포트 절(.shot)은 데스크톱 화면이 오른쪽 끝까지 이어지고, 업종 절(.shot.full)은 본문 폭 그대로다.
+    스테이징은 영어판 그림도 함께 둔다(data-lang — 지금 말이 아닌 쪽은 숨겨 받지도 않는다). 영어 데스크톱 업종 화면은 글 길이가 달라
+    높이가 한국어와 다르므로 크기를 그림 파일에서 읽는다"""
+    en = MODE == "staging" and en_shots(kind)
+
+    def two(n, sfx=""):
+        w, h = webp_size(os.path.join(OUT, "img", f"{kind}-{n}-light{sfx}.webp")) if sfx else SHOT[kind][n]
+        dl = (' data-lang="en"' if sfx else ' data-lang="ko"') if en else ""
+        return "".join(f'<img class="{c}" src="img/{kind}-{n}-{t}{sfx}.webp" width="{w}" height="{h}" alt=""{dl} loading="lazy" decoding="async">'
                        for c, t in (("lt", "light"), ("dk", "dark")))
     return (f'<figure class="{cls}" role="img" aria-label="{esc(label)}">'
-            + "".join(f'<div class="scr {n}">{two(n)}</div>' for n in SHOT[kind]) + "</figure>")
+            + "".join(f'<div class="scr {n}">{two(n)}{two(n, "-en") if en else ""}</div>' for n in SHOT[kind]) + "</figure>")
 
 
 # 갱신 절 그림 — 1년 공시 시계(사장 2026-10-01: 1안 → 단순화 → 달 이름은 1월, 4월, 7월, 10월 → 거래일은 뺀다). 한 해를 원 하나로 —
@@ -946,6 +969,15 @@ def cyc_data(wins):
     return out
 
 
+# 공시 시계의 영어 글자(스테이징 영어 화면). 그림 안 글자는 CYC_JS 가 그릴 때 고른다 — 사전으로 나중에 바꾸면 자리 다듬기가 어긋난다
+CYC_EN = {
+    "label": "The year {y} shown as a circle. The inner lines mark the periodic report filing windows for companies with a December fiscal year-end.",
+    "next": "Next deadline: {w}, {M} {d}.",
+    "mon": "{M}", "due": "Due {M} {d}", "today": "Today",
+    "wins": ["Annual report", "Q1 report", "Half-year report", "Q3 report"],
+}
+
+
 def cyc(T):
     """갱신 절 그림 — 공시 시계의 자리, 범례, 자료. 그림은 CYC_JS 가 방문자 화면에서 그린다(오늘이 날마다 바뀌므로). 여기 적는 설명은
     기준 해의 것이고, 해가 바뀌면 CYC_JS 가 그해 것으로 고친다."""
@@ -953,7 +985,10 @@ def cyc(T):
     data = cyc_data(T["wins"])
     y0 = data[str(BASE.year)]
     t = {k: T[k] for k in ("label", "next", "mon", "due", "today")}
-    blob = json.dumps({"years": data, "t": t}, ensure_ascii=False, separators=(",", ":"))
+    d = {"years": data, "t": t}
+    if MODE == "staging":   # 영어 화면 — {M} 은 달 약자(Jan …). 보고서 이름은 wins 와 같은 차례
+        d["te"] = CYC_EN
+    blob = json.dumps(d, ensure_ascii=False, separators=(",", ":"))
     label = T["label"].format(y=y0["y"])
     return (f'<figure class="cyc" id="cyc" role="img" aria-label="{esc(label)}"><div class="cyc-box" id="cycBox"></div>'
             f'<figcaption class="cyc-lg"><span><i class="g-ar"></i>{esc(T["lg_ar"])}<em>{esc(T["lg_em"])}</em></span></figcaption>'
@@ -961,7 +996,9 @@ def cyc(T):
 
 
 def more(label, href="#"):
-    return f'<a class="more" href="{href}">{label} {I["arrow"]}</a>'
+    """'…보기' 링크. 글은 span 하나로 감싼다 — 링크가 inline-flex 라 글 사이에 요소(스테이징의 data-live 호수)가 끼면 조각마다 6px 씩
+    벌어지고, 영어 화면도 글을 한 덩어리로 바꿀 수 있어야 한다('제32호 읽기' → 'Read issue 32')"""
+    return f'<a class="more" href="{href}"><span>{label}</span> {I["arrow"]}</a>'
 
 
 def nav():
@@ -1142,9 +1179,10 @@ def page():
             f'<div class="orb-box" aria-hidden="true"><canvas class="orb" id="orb"></canvas></div>'
             f'<script type="application/json" id="orbData"{dl}>{orb_data()}</script></header>')
     # 숫자 하나 — 첫 화면 제목의 증거라 바로 다음 절. 제목이 숫자를 설명하고(무엇) 큰 숫자가 그 아래(얼마). 숫자 칸(.cnt)은 h2 바로
-    # 아래 두어야 RV_JS 의 cnt() 가 h2 에 읽는 프로그램용 이름(제목 + 최종값)을 단다
+    # 아래 두어야 RV_JS 의 cnt() 가 h2 에 읽는 프로그램용 이름(제목 + 최종값)을 단다. data-i18n-skip — 영어 화면(i18n.js)이 제목 덩어리를
+    # 통째로 바꾸면서 세는 칸을 지우지 않게(제목 글만 바뀐다)
     gp, gs, gsrc = C["gap"]
-    sec_gap = (f'<section class="sec w solo stat" id="gap"><h2 class="stat-h rv"><span class="h2">{C["gap_h"]}</span> <span class="cnt stat-n">{esc(gp)}</span></h2>'
+    sec_gap = (f'<section class="sec w solo stat" id="gap"><h2 class="stat-h rv"><span class="h2">{C["gap_h"]}</span> <span class="cnt stat-n" data-i18n-skip>{esc(gp)}</span></h2>'
                f'<p class="sub rv">{sents(gs)}</p><p class="src rv">{g(gsrc)}</p></section>')
     if stg:   # '지난해'는 데이터의 해가 바뀌면 '2025년'이 된다(copy_text)
         when = "지난해" if BASE.year == GAP["year"] + 1 else f"{GAP['year']}년"
@@ -1231,6 +1269,11 @@ def check_imgs():
              if (got := webp_size(os.path.join(OUT, "img", f"{k}-{n}-{t}.webp"))) != SHOT[k][n]]
     if wrong:   # 다시 찍어 크기가 바뀌었는데 SHOT 을 그대로 두면 자리가 어긋난다(왼쪽 휴대폰 화면은 틀에 꼭 맞아야 한다)
         return f"그림 크기가 SHOT 과 다르다 — SHOT 을 고치거나 landing_art.py 의 자를 범위를 본다: {wrong}"
+    # 영어판 — 휴대폰 화면은 틀에 꼭 맞아야 하므로 한국어와 같은 크기, 데스크톱 화면은 같은 폭(업종 화면 높이는 글 길이를 따른다)
+    wrong = [f"img/{k}-{n}-{t}-en.webp {got} ≠ {SHOT[k][n]}" for k in SHOT if en_shots(k) for n in SHOT[k] for t in ("light", "dark")
+             if (got := webp_size(os.path.join(OUT, "img", f"{k}-{n}-{t}-en.webp"))) != SHOT[k][n] and (n != "desk" or got[0] != SHOT[k][n][0])]
+    if wrong:
+        return f"영어판 그림 크기가 한국어와 다르다 — landing_art.py 의 자를 범위를 본다: {wrong}"
     return None
 
 
@@ -1253,9 +1296,10 @@ def build_staging(out_dir):
     for k in SHOT:
         for n in SHOT[k]:
             for t in ("light", "dark"):
-                a, b = os.path.join(OUT, "img", f"{k}-{n}-{t}.webp"), os.path.join(out_dir, "img", f"{k}-{n}-{t}.webp")
-                if not os.path.exists(b) or open(a, "rb").read() != open(b, "rb").read():
-                    shutil.copyfile(a, b)
+                for sfx in ("", "-en") if en_shots(k) else ("",):   # 영어판 그림도 — 스테이징 랜딩만 쓴다
+                    a, b = os.path.join(OUT, "img", f"{k}-{n}-{t}{sfx}.webp"), os.path.join(out_dir, "img", f"{k}-{n}-{t}{sfx}.webp")
+                    if not os.path.exists(b) or open(a, "rb").read() != open(b, "rb").read():
+                        shutil.copyfile(a, b)
     open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8").write(html)
     return html
 

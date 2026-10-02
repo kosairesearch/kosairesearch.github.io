@@ -20,7 +20,7 @@ import render_brief as RB  # noqa: E402
 CSS = '''
 /* 글 한 단 — 읽기 폭 720 */
 .mb{max-width:720px;padding:44px 0 0}
-.mb-date{font:500 13px/20px var(--font);color:var(--ink-62)} .mb-date::before{content:"모닝브리핑 · "}
+.mb-date{font:500 13px/20px var(--font);color:var(--ink-62)} .mb-date::before{content:"모닝브리핑 · "} html[lang="en"] .mb-date::before{content:"Morning Brief · "}
 .mb h1{margin:12px 0 0;font:700 36px/48px var(--font);letter-spacing:-.025em;text-wrap:balance}
 .mb-lead{margin:18px 0 0;font:400 18px/30px var(--font);color:var(--ink-72)}
 .mb-meta{margin-top:14px;font:400 13px/20px var(--font);color:var(--ink-62)}
@@ -53,11 +53,21 @@ def build(date=None, out_path=None):
     doc = json.loads(Path(path).read_text(encoding='utf-8'))
     pub = (doc.get('meta') or {}).get('publishedAt')
     at = datetime.datetime.fromisoformat(pub) if pub else None
-    body, _dic = RB.build(doc, at)
+    body, dic = RB.build(doc, at)
     body = body.replace('href="stock.html?ticker=', 'href="/stock.html?ticker=')   # 시안 폴더 밖 실사이트 종목 페이지로
     title = re.sub(r'<[^>]+>', '', (doc['title'].get('ko') or '')).strip()
-    html = (C.head(f'{title} — ' + (C.title('모닝브리핑') if C.MODE != 'preview' else '모닝브리핑 디자인 시안 | KOSAI')) + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
-            + C.nav('모닝브리핑') + '\n<main class="wrap">\n  <article class="mb">\n' + body + '\n  </article>\n</main>\n' + C.FOOTER + '\n'
+    head_title = f'{title} — ' + (C.title('모닝브리핑') if C.MODE != 'preview' else '모닝브리핑 디자인 시안 | KOSAI')
+    # 영어 화면(staging/i18n.js) — 본문 문단은 data-i18n-block 이고, 그 영어는 실사이트와 같은 render_brief 사전(dic)이다.
+    # 문서 제목은 제목 안의 ' — ' 때문에 조각으로는 못 맞추므로 통째로 넣는다.
+    i18n = ''
+    if C.MODE == 'staging':
+        title_en = re.sub(r'<[^>]+>', '', (doc['title'].get('en') or '')).strip()
+        if title_en:
+            dic[C._i18n_norm(head_title)] = f'{title_en} — Morning Brief | KOSAI'
+        i18n = ('<script type="application/json" data-kos-i18n>'
+                + json.dumps(dic, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + '</script>\n')
+    html = (C.head(head_title) + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+            + C.nav('모닝브리핑') + '\n<main class="wrap">\n  <article class="mb">\n' + body + '\n  </article>\n</main>\n' + C.FOOTER + '\n' + i18n
             + '<script>\n' + C.JS + '\n</script>\n</body>\n</html>')
     out = Path(out_path) if out_path else ROOT / 'preview/brief.html'
     C.emit(out, html)

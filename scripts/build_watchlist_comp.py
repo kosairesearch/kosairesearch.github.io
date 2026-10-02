@@ -84,6 +84,8 @@ BODY = '''<main class="wrap">
 JS = r'''(function(){
   var live=(window.KOS_LIVE_DATA&&KOS_LIVE_DATA.stocks)||[], RREP=(window.KOS_REPORTS&&KOS_REPORTS.reports)||{};
   function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+  /* 영어 화면(staging/i18n.js) — 리포트 제목은 자료의 영어 쪽. 한국어 문구는 사전이 바꾼다. */
+  var I=window.KOSi18n, PK=function(o){return I?I.pick(o):(o&&o.ko)||''}, NM=function(s){return I?I.name(s):s.name};
   function won(n){return n==null?'—':Number(n).toLocaleString('ko-KR')+'원'} function chg(c){c=c||0;return (c>0?'▲ ':c<0?'▼ ':'')+Math.abs(c).toFixed(2)+'%'} function dir(c){return c>0?'up':c<0?'down':'flat'}
   /* 목록 — 스테이징·실사이트는 KOSWatch(Firestore 계정별 목록, watchlist.js)가 채운다. 모듈은 이 스크립트보다 늦게 오므로 나타날 때까지 기다리고, 바뀔 때마다(koswatch:change) 다시 그린다. 시안(KOSWatch 없음)은 예시 목록. */
   var q=new URLSearchParams(location.search),byTk={};live.forEach(function(s){byTk[s.ticker]=s});
@@ -99,8 +101,8 @@ JS = r'''(function(){
   function sorted(){var l=LIST.slice();
     if(sortKey==='change_desc')l.sort(function(a,b){return (b.change||0)-(a.change||0)});else if(sortKey==='change_asc')l.sort(function(a,b){return (a.change||0)-(b.change||0)});
     else if(sortKey==='mcap_desc')l.sort(function(a,b){return (b.mcap||0)-(a.mcap||0)});else if(sortKey==='mcap_asc')l.sort(function(a,b){return (a.mcap||0)-(b.mcap||0)});
-    else if(sortKey==='added')l.sort(function(a,b){return b.added-a.added});else if(sortKey==='name')l.sort(function(a,b){return a.name.localeCompare(b.name,'ko')});return l}
-  function row(s,i){var r=RREP[s.ticker],t=r&&r.title&&r.title.ko,c=s.change||0;
+    else if(sortKey==='added')l.sort(function(a,b){return b.added-a.added});else if(sortKey==='name')l.sort(function(a,b){return NM(a).localeCompare(NM(b),I&&I.lang==='en'?'en':'ko')});return l}
+  function row(s,i){var r=RREP[s.ticker],t=r&&r.title&&PK(r.title),c=s.change||0;
     return '<a class="row" href="/stock.html?ticker='+s.ticker+'" data-tk="'+s.ticker+'"><button type="button" class="rm" data-rm="'+s.ticker+'" aria-label="제거"><svg viewBox="0 0 24 24"><path d="M5 12h14"/></svg></button><span class="rk">'+(i+1)+'</span>'
       +'<div><div class="r-name">'+esc(s.name)+'</div><div class="r-meta">'+s.ticker+' · '+esc(s.market)+' · '+esc(s.sector)+(r&&r.reportDate?'<span class="md"> · <b>'+esc(r.reportDate)+'</b></span>':'')+'</div></div>'
       +'<div class="r-title'+(t?'':' none')+'">'+(t?esc(t):'리포트 준비 중')+'</div><div class="r-price">'+won(s.price)+'<span class="c '+dir(c)+'">'+chg(c)+'</span></div><div class="r-date">'+esc(r&&r.reportDate||'—')+'</div></a>'}
