@@ -16,19 +16,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import comp_common as C  # noqa: E402
 
 CSS = '''
-/* 눈썹줄 · 제목 */
-.hero{padding:44px 0 0}
-.crumb{font:500 13px/20px var(--font);color:var(--ink-62);display:flex;gap:8px;align-items:center} .crumb a:hover{color:var(--ink)}
-.crumb svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;color:var(--ink-30)}
-.hero h1{margin:12px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
-.hero .sub{margin:16px 0 0;font:400 17px/28px var(--font);color:var(--ink-72);max-width:640px}
-.hero .lead{margin:18px 0 0;font:400 18px/30px var(--font);color:var(--ink-72);max-width:720px}
+/* 머리 — 어두운 무대(comp_common .ph). 상세의 요약(업종 분석의 첫 문단)은 서브보다 길어 단을 조금 넓힌다 */
+.ph .sub.lead{max-width:720px}
 /* 지표 띠 — 리포트 페이지와 같은 문법 */
-.stats{margin-top:36px;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:22px 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.stats{margin-top:48px;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:22px 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
 .st-k{font:500 12px/16px var(--font);color:var(--ink-62)} .st-v{margin-top:6px;font:600 19px/24px var(--font);letter-spacing:-.01em;white-space:nowrap}
 .stats-note{margin:10px 0 0;font:400 12px/16px var(--font);color:var(--ink-62)}
 /* 업종 표(목록) */
-.list{padding-top:48px} .list .sec-h{margin-bottom:14px}
+.list{padding-top:64px} .list .sec-h{margin-bottom:18px}
 .tbl.sectors th:first-child,.tbl.sectors td:first-child{min-width:150px}
 .tbl.sectors td{padding-top:13px;padding-bottom:13px}
 .s-name{font:600 15px/20px var(--font)}
@@ -53,9 +48,8 @@ CSS = '''
 '''
 
 MOBILE_CSS = '''@media (max-width:820px){
-  .hero{padding:20px 0 0} .hero h1{font-size:32px;line-height:38px} .hero .sub,.hero .lead{font-size:15px;line-height:24px}
-  .stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px;padding:18px 0;margin-top:24px} .st-v{font-size:17px}
-  .list{padding-top:32px}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px;padding:18px 0;margin-top:32px} .st-v{font-size:17px}
+  .list{padding-top:44px}
   .tbl.sectors td.w{min-width:120px} .wb{width:calc(var(--w) * 56px);margin-right:8px}
   .tbl.sectors .keys,.tbl.stocks .rt{display:none}
   .prose p{font-size:16px;line-height:27px}
@@ -63,7 +57,7 @@ MOBILE_CSS = '''@media (max-width:820px){
 
 JS = r'''(function(){
   var STOCKS=(window.KOS_LIVE_DATA&&KOS_LIVE_DATA.stocks)||[], SECTORS=(window.KOS_SECTORS&&KOS_SECTORS.sectors)||{}, RREP=(window.KOS_REPORTS&&KOS_REPORTS.reports)||{};
-  var dd=(window.KOS_LIVE_DATA&&KOS_LIVE_DATA.dataDate)||''; var dateF=dd?dd.slice(0,4)+'-'+dd.slice(4,6)+'-'+dd.slice(6,8):'';
+  var dd=(window.KOS_LIVE_DATA&&KOS_LIVE_DATA.dataDate)||''; var dateF=dd?dd.slice(0,4)+'-'+dd.slice(4,6)+'-'+dd.slice(6,8):'',dateK=dd?(+dd.slice(4,6))+'월 '+(+dd.slice(6,8))+'일':'';
   function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
   function won(n){return n==null?'—':Number(n).toLocaleString('ko-KR')+'원'}
   function chg(c){c=c||0;return (c>0?'▲ ':c<0?'▼ ':'')+Math.abs(c).toFixed(2)+'%'}
@@ -91,30 +85,31 @@ JS = r'''(function(){
       +rows.map(function(r){return '<tr data-sec="'+esc(r.sec)+'"><td><a class="s-name" href="'+secLink(r.sec)+'">'+esc(r.sec)+'</a></td><td>'+mcap(r.mc)+'</td>'
         +(withW?'<td class="w"><i class="wb" style="--w:'+(r.w/maxW).toFixed(3)+'"></i>'+r.w.toFixed(1)+'%</td>':'')
         +'<td>'+r.n+'</td><td class="'+dir(r.chg)+'">'+chg(r.chg)+'</td><td class="keys">'+r.list.slice(0,3).map(function(s){return esc(s.name)}).join(' · ')+'</td></tr>'}).join('')+'</tbody></table></div>'}
-  function renderList(){var a=agg();document.title='업종 분석 — 디자인 시안 | KOSAI';
-    app.innerHTML='<header class="hero"><p class="crumb">코스피 · 코스닥 '+STOCKS.length.toLocaleString('ko-KR')+'개 종목 · '+a.rows.length+'개 업종 · '+a.themeRows.length+'개 테마</p><h1>업종 분석</h1><p class="sub">한국 상장사를 업종으로 나눠 시가총액·등락률과 AI 업종 분석을 제공합니다.</p></header>'
-      +'<section class="list"><div class="sec-h"><h2>업종</h2></div>'+sectorTable(a.rows,true)+'<p class="note">시가총액 순 · 시장 비중은 코스피·코스닥 전체 시가총액 대비 · 평균 등락률은 시가총액 가중'+(dateF?' · '+dateF+' 종가 기준':'')+'</p></section>'
+  /* 업종 수 — 랜딩 업종 절('30개 업종의 분석 리포트')과 같은 셈: 대표 업종과 테마 가운데 '기타'(분류 안내 · 분석 없음)를 뺀 수 */
+  function renderList(){var a=agg(),nSec=a.rows.length+a.themeRows.length-(a.byCat['기타']||a.rows.some(function(r){return r.sec==='기타'})?1:0);document.title='업종 분석'+TSUF;
+    app.innerHTML='<header class="ph dz"><p class="crumb">업종 분석</p><h1>'+nSec+'개 업종의 분석 리포트</h1><p class="sub"><span class="s">업종마다 산업 구조와 최근 동향, 향후 전망, 리스크 요인을 분석합니다.</span> <span class="s">개별 기업을 산업 전체의 맥락에서 살펴볼 수 있습니다.</span></p></header>'
+      +'<section class="list"><div class="sec-h"><h2>업종</h2></div>'+sectorTable(a.rows,true)+'<p class="note">시가총액이 큰 순서입니다. 시장 비중은 국내 상장 종목 전체 시가총액 대비 비율이고, 평균 등락률은 시가총액 가중 평균입니다.'+(dateK?' '+dateK+' 종가 기준입니다.':'')+'</p></section>'
       +(a.themeRows.length?'<section class="list"><div class="sec-h"><h2>테마</h2></div>'+sectorTable(a.themeRows,false)+'<p class="note">테마는 여러 업종에 걸친 묶음이라 시장 비중을 따로 두지 않습니다.</p></section>':'')}
   function renderDetail(sec){var a=agg(),row=null;a.rows.forEach(function(r){if(r.sec===sec)row=r});var isTheme=!row;if(!row&&a.byCat[sec])row=mkRow(sec,a.byCat[sec],a.total);if(!row){renderList();return}
-    var an=SECTORS[sec]||null;document.title=sec+' 업종 분석 — 디자인 시안 | KOSAI';
+    var an=SECTORS[sec]||null;document.title=sec+' 업종 분석'+TSUF;
     var stats='<section class="stats"><div><div class="st-k">시가총액 합계</div><div class="st-v">'+mcap(row.mc)+'</div></div>'+(isTheme?'':'<div><div class="st-k">시장 비중</div><div class="st-v">'+row.w.toFixed(1)+'%</div></div>')
       +'<div><div class="st-k">종목 수</div><div class="st-v">'+row.n+'개</div></div><div><div class="st-k">평균 등락률</div><div class="st-v '+dir(row.chg)+'">'+chg(row.chg)+'</div></div></section>'
-      +'<p class="stats-note">평균 등락률은 시가총액 가중'+(isTheme?' · 테마는 여러 업종에 걸쳐 있어 시장 비중을 두지 않습니다':'')+(dateF?' · '+dateF+' 종가 기준':'')+'</p>';
+      +'<p class="stats-note">평균 등락률은 시가총액 가중 평균입니다.'+(isTheme?' 테마는 여러 업종에 걸쳐 있어 시장 비중을 두지 않습니다.':'')+(dateK?' '+dateK+' 종가 기준입니다.':'')+'</p>';
     var secs=[]; // {title, html, wide}
-    if(an){secs.push({t:'업종 개요',h:paras(an.overview)});secs.push({t:'산업 구조·가치사슬',h:paras(an.structure)});secs.push({t:'최근 동향',h:paras(an.trends)});secs.push({t:'향후 전망',h:paras(an.outlook)});
+    if(an){secs.push({t:'업종 개요',h:paras(an.overview)});secs.push({t:'산업 구조와 가치사슬',h:paras(an.structure)});secs.push({t:'최근 동향',h:paras(an.trends)});secs.push({t:'향후 전망',h:paras(an.outlook)});
       var risks=(an.risks||[]).map(function(r){return '<div class="rk"><h4>'+esc(r.title&&r.title.ko)+'</h4><p>'+esc(r.body&&r.body.ko)+'</p></div>'}).join('');
       var d=fmtDay(an.generatedAt||(window.KOS_SECTORS&&KOS_SECTORS.lastUpdated)),src=an.sources||[];
-      var tail=(d?'<p class="stamp">'+d+' 작성 · 업종 상장사 종합과 웹 검색 참고 · 본문 수치는 작성 시점 기준이며, 위 지표는 '+(dateF||'최근')+' 종가입니다.</p>':'')
+      var tail=(d?'<p class="stamp">'+d+'에 작성했습니다. 업종 상장사 자료와 웹 검색 결과를 참고했습니다. 본문의 수치는 작성 시점 기준이며, 위 지표는 '+(dateK||'최근')+' 종가입니다.</p>':'')
         +(src.length?'<details class="srcmore"><summary>참고 자료 '+src.length+'건 더 보기</summary><ol class="srcs">'+src.map(function(u){return '<li><a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(host(u))+'</a></li>'}).join('')+'</ol></details>':'');
       if(risks)secs.push({t:'리스크 요인',h:'<div class="rks">'+risks+'</div>'+tail});else if(tail)secs[secs.length-1].h+=tail}
     else if(sec==='기타'){secs.push({t:'분류 안내',h:'<div class="prose"><p>여러 업종에 걸쳐 있거나 기존 분류에 속하지 않는 기업을 모은 구간입니다. 사업 내용이 서로 달라 하나의 업황으로 묶이지 않으므로 AI 업종 분석을 제공하지 않습니다.</p><p>각 기업의 사업 구조와 실적은 아래 종목의 개별 리포트에서 확인하실 수 있습니다.</p></div>'})}
     else{secs.push({t:'업종 분석',h:'<p class="ainote">AI 업종 분석은 분기별 갱신 시 반영됩니다.</p>'})}
     var rows=row.list.slice(0,20).map(function(s,i){var c=s.change||0,r=RREP[s.ticker];return '<tr data-tk="'+s.ticker+'"><td><span class="m-rank">'+(i+1)+'</span><a class="m-name" href="/stock.html?ticker='+s.ticker+'">'+esc(s.name)+'</a><div class="m-meta">'+s.ticker+' · '+esc(s.market)+'</div></td><td>'+won(s.price)+'</td><td class="'+dir(c)+'">'+chg(c)+'</td><td>'+mcap(s.mcap)+'</td><td class="rt">'+esc(r&&r.title&&r.title.ko||'')+'</td></tr>'}).join('');
-    secs.push({t:'업종 내 주요 종목',wide:true,h:'<div class="tbl-wrap"><table class="tbl stocks"><thead><tr><th>종목</th><th>현재가</th><th>등락률</th><th>시가총액</th><th class="rt">리포트</th></tr></thead><tbody>'+rows+'</tbody></table></div><p class="note">시가총액 순 상위 '+Math.min(20,row.list.length)+'종목'+(row.list.length>20?' (전체 '+row.list.length+'종목)':'')+(dateF?' · '+dateF+' 종가 기준':'')+'</p>'});
+    secs.push({t:'업종 내 주요 종목',wide:true,h:'<div class="tbl-wrap"><table class="tbl stocks"><thead><tr><th>종목</th><th>현재가</th><th>등락률</th><th>시가총액</th><th class="rt">리포트</th></tr></thead><tbody>'+rows+'</tbody></table></div><p class="note">시가총액 상위 '+Math.min(20,row.list.length)+'개 종목입니다'+(row.list.length>20?'(전체 '+row.list.length+'개 종목)':'')+'.'+(dateK?' '+dateK+' 종가 기준입니다.':'')+'</p>'});
     var toc=secs.map(function(s,i){var n=String(i+1).padStart(2,'0');return '<a href="#s'+n+'"><span class="n">'+n+'</span>'+esc(s.t)+'</a>'}).join('');
     var chips=secs.map(function(s,i){var n=String(i+1).padStart(2,'0');return '<a href="#s'+n+'">'+n+' '+esc(s.t)+'</a>'}).join('');
     var body=secs.map(function(s,i){var n=String(i+1).padStart(2,'0');return '<section class="sec'+(s.wide?' wide':'')+'" id="s'+n+'"><div class="sec-h"><span class="num">'+n+'</span><h2>'+esc(s.t)+'</h2></div>'+s.h+'</section>'}).join('');
-    app.innerHTML='<header class="hero"><p class="crumb"><a href="/preview/industry.html">업종 분석</a><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg><span>'+esc(sec)+'</span></p><h1>'+esc(sec)+'</h1>'+(an&&an.lead?'<p class="lead">'+esc(an.lead.ko||an.lead.en)+'</p>':'')+'</header>'+stats
+    app.innerHTML='<header class="ph dz"><p class="crumb"><a href="/preview/industry.html">업종 분석</a></p><h1>'+esc(sec)+'</h1>'+(an&&an.lead?'<p class="sub lead">'+esc(an.lead.ko||an.lead.en)+'</p>':'')+'</header>'+stats
       +'<div class="body"><aside class="toc" id="toc">'+toc+'</aside><div class="content"><div class="chips-mark" id="chipsMark"></div><div class="chips-bar" id="chipsBar"><nav class="chips" id="chips">'+chips+'</nav></div>'+body+'</div></div>';
   }
   app.addEventListener('click',function(e){if(e.target.closest('a'))return;var tr=e.target.closest('tr[data-sec]');if(tr){location.href=secLink(tr.dataset.sec);return}var tk=e.target.closest('tr[data-tk]');if(tk)location.href='/stock.html?ticker='+tk.dataset.tk});
@@ -124,9 +119,10 @@ JS = r'''(function(){
 
 
 def build(out_path):
-    html = (C.head('업종 분석 — 디자인 시안 | KOSAI') + '\n<style>\n' + C.CSS + '\n' + C.TOC_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + C.TOC_MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+    tsuf = C.title('')[1:]   # ' — 디자인 시안 | KOSAI' 또는 ' | KOSAI' — 상세는 업종 이름을 앞에 붙인다
+    html = (C.head(C.title('업종 분석')) + '\n<style>\n' + C.CSS + '\n' + C.TOC_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + C.TOC_MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('업종 분석') + '\n<main class="wrap" id="app"></main>\n' + C.FOOTER + '\n'
-            + '<script src="/data/stocks.js"></script>\n<script src="/data/sectors.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + JS + C.TOC_JS + '\n' + C.JS + '\n</script>\n</body>\n</html>')
+            + '<script src="/data/stocks.js"></script>\n<script src="/data/sectors.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\nvar TSUF=' + repr(' ' + tsuf).replace("'", '"') + ';\n' + JS + C.TOC_JS + '\n' + C.JS + '\n</script>\n</body>\n</html>')
     C.emit(out_path, html)
     print(f'✅ {out_path} · {len(html):,}자')
 

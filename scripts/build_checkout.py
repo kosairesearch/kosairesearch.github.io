@@ -15,7 +15,7 @@ import comp_common as C  # noqa: E402
 
 CSS = '''
 .glass{}  /* checkout.js 가 붙이는 옛 이름 — 상자는 없다 */
-.co{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:64px;margin-top:40px;align-items:start}
+.co{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:64px;margin-top:56px;align-items:start}
 .co-step{display:flex;align-items:center;gap:12px;margin:0 0 14px} .co-step .n{width:24px;height:24px;border-radius:50%;background:var(--ink);color:var(--bg);font:600 12px/24px var(--font);text-align:center;flex:none} .co-step h3{margin:0;font:600 16px/24px var(--font)}
 .co-card>.co-step+*+.co-step,.co-card>.co-step~.co-step{margin-top:40px;padding-top:28px;border-top:1px solid var(--hair)}
 input[type=radio],input[type=checkbox]{accent-color:var(--ink);width:16px;height:16px;margin:2px 0 0;flex:none}
@@ -34,10 +34,10 @@ input[type=radio],input[type=checkbox]{accent-color:var(--ink);width:16px;height
 /* 상태 화면(로그인 필요 · 이미 이용 중 · 실패 …) */
 .co-state{max-width:560px;padding:40px 0 16px} .co-state h2{margin:0;font:700 24px/32px var(--font);letter-spacing:-.02em} .co-state p{margin:12px 0 24px;font:400 15px/24px var(--font);color:var(--ink-72)}
 .co-state .spin{display:inline-block;vertical-align:-3px;width:16px;height:16px;margin:0 8px 0 0}
-@media (max-width:820px){.co{grid-template-columns:1fr;gap:36px;margin-top:24px} .sum{position:static;order:-1;border-top:0;padding-top:0;border-bottom:1px solid var(--line);padding-bottom:20px}}'''
+@media (max-width:820px){.co{grid-template-columns:1fr;gap:36px;margin-top:40px} .sum{position:static;order:-1;border-top:0;padding-top:0;border-bottom:1px solid var(--line);padding-bottom:20px}}'''
 
 BODY = '''<main class="wrap">
-  <header class="page-hero">
+  <header class="ph dz">
     <p class="crumb">멤버십</p>
     <h1 id="coH1">구독 시작하기</h1>
     <p class="sub" id="coH2">결제 수단을 등록하시면 바로 이용하실 수 있습니다. 언제든지 해지하실 수 있습니다.</p>

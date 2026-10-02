@@ -30,21 +30,20 @@ def social(next_page):
 
 
 CSS = '''
-/* 로그인·회원가입·약관 동의·계정 인증은 400px 단을 가운데에 — 제목도 가운데, 입력 칸 이름표는 왼쪽(읽는 방향) */
-.auth:not(.wide){margin-left:auto;margin-right:auto} .auth:not(.wide) .crumb,.auth:not(.wide) h1,.auth:not(.wide) .sub{text-align:center}
+/* 로그인·회원가입·약관 동의·계정 인증 — 머리는 가운데 정렬 무대(.ph.c), 아래 400px 단도 가운데. 입력 칸 이름표는 왼쪽(읽는 방향) */
 .ac-body{text-align:center}
 .alert.info{color:var(--ink-72)}
 .consent+.alert{margin:14px 0 0}
 .ac-body form{text-align:left}
 /* 약관 동의 */
-.consent{margin-top:28px;border-top:1px solid var(--line)} .consent .check{padding:13px 0} .consent .check.all{font-weight:600;border-bottom:1px solid var(--line)}
+.consent{border-top:1px solid var(--line)} .consent .check{padding:13px 0} .consent .check.all{font-weight:600;border-bottom:1px solid var(--line)}
 .consent .doc{margin-left:auto;font:400 12px/16px var(--font);color:var(--ink-62);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .consent .doc:hover{color:var(--ink)}
 .acts{display:flex;flex-direction:column;align-items:center;gap:16px;margin-top:28px} .acts .btn{width:100%}
 /* 계정 인증 */
-.ac-body{margin-top:28px} .ac-body .btn{margin-top:8px}
+.ac-body .btn{margin-top:8px}
 /* 설정 */
 .auth.wide{max-width:560px}
-.tabs-s{margin-top:28px} .pane{padding:8px 0 0} .pane[hidden]{display:none}
+.pane{padding:8px 0 0} .pane[hidden]{display:none}
 .srow{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 0;border-bottom:1px solid var(--hair)} .srow .k{font:500 15px/22px var(--font)} .srow .k small{display:block;margin-top:4px;font:400 13px/20px var(--font);color:var(--ink-62);max-width:360px}
 .opts{position:relative;display:flex;gap:18px;flex:none} .opts button{border:0;background:none;padding:0;font:500 13px/32px var(--font);color:var(--ink-62);cursor:pointer;transition:color .12s} .opts button.on{color:var(--ink);font-weight:600} .opts>.ind{margin-top:-4px}
 .sw{position:relative;width:40px;height:22px;border-radius:999px;border:1px solid var(--line);background:transparent;cursor:pointer;padding:0;flex:none;transition:background-color .15s,border-color .15s} .sw::after{content:"";position:absolute;top:3px;left:3px;width:14px;height:14px;border-radius:50%;background:var(--ink-62);transition:transform .15s,background-color .15s}
@@ -66,9 +65,8 @@ CSS = '''
 @media (max-width:820px){.kv{grid-template-columns:80px 1fr} .srow{align-items:flex-start;flex-direction:column;gap:10px}}
 '''
 
-LOGIN = f'''<main class="wrap"><div class="auth">
-  <p class="crumb">계정</p><h1>로그인</h1>
-  <p class="sub">KOSAI 계정으로 로그인하시면 관심 종목과 리포트를 이어서 보실 수 있습니다.</p>
+LOGIN = f'''<main class="wrap"><header class="ph dz c"><p class="crumb">계정</p><h1>로그인</h1>
+  <p class="sub">로그인하면 관심종목을 휴대폰과 컴퓨터에서 같이 볼 수 있습니다.</p></header><div class="auth">
   {social('home')}
   <div class="divider">또는 이메일로 로그인</div>
   <form id="emailForm" novalidate>
@@ -81,14 +79,13 @@ LOGIN = f'''<main class="wrap"><div class="auth">
   <p class="auth-foot">아직 계정이 없으신가요? <a href="/preview/signup.html">회원가입</a></p>
 </div></main>'''
 
-SIGNUP = f'''<main class="wrap"><div class="auth">
-  <p class="crumb">계정</p><h1>회원가입</h1>
-  <p class="sub">무료 계정을 만드시면 관심 종목과 AI 리포트를 저장하실 수 있습니다.</p>
+SIGNUP = f'''<main class="wrap"><header class="ph dz c"><p class="crumb">계정</p><h1>회원가입</h1>
+  <p class="sub">계정을 만들면 관심종목을 저장해 휴대폰과 컴퓨터에서 같이 볼 수 있습니다.</p></header><div class="auth">
   {social('consent')}
   <div class="divider">또는 이메일로 가입</div>
   <form id="emailForm" novalidate>
     <div class="fld"><label for="email">이메일</label><input id="email" type="email" autocomplete="email" placeholder="you@example.com" required><div class="msg"></div></div>
-    <div class="fld"><label for="password">비밀번호</label><input id="password" type="password" autocomplete="new-password" placeholder="영문·숫자 포함 8자 이상" required><div class="msg"></div></div>
+    <div class="fld"><label for="password">비밀번호</label><input id="password" type="password" autocomplete="new-password" placeholder="영문과 숫자를 포함해 8자 이상" required><div class="msg"></div></div>
     <div class="fld"><label for="password2">비밀번호 확인</label><input id="password2" type="password" autocomplete="new-password" placeholder="비밀번호를 다시 입력하십시오" required><div class="msg"></div></div>
     <div class="alert" id="authErr" role="alert"></div>
     <button type="submit" class="btn btn-ink" id="emailSubmit">회원가입</button>
@@ -96,9 +93,8 @@ SIGNUP = f'''<main class="wrap"><div class="auth">
   <p class="auth-foot">이미 계정이 있으신가요? <a href="/preview/login.html">로그인</a></p>
 </div></main>'''
 
-CONSENT = f'''<main class="wrap"><div class="auth">
-  <p class="crumb">계정</p><h1 id="ttl">약관 동의</h1>
-  <p class="sub" id="lede">가입을 완료하시려면 아래 항목에 동의하여 주시기 바랍니다.</p>
+CONSENT = f'''<main class="wrap"><header class="ph dz c"><p class="crumb">계정</p><h1 id="ttl">약관 동의</h1>
+  <p class="sub" id="lede">가입을 완료하시려면 아래 항목에 동의하여 주시기 바랍니다.</p></header><div class="auth">
   <div class="consent" id="consentMount">
     <label class="check all" data-k="all"><span class="box">{CHECK}</span>전체 동의</label>
     <label class="check" data-k="age14" data-req="1"><span class="box">{CHECK}</span>[필수] 만 14세 이상입니다</label>
@@ -111,15 +107,13 @@ CONSENT = f'''<main class="wrap"><div class="auth">
   <p class="auth-note" id="foot">동의하지 않으면 가입이 취소되고 계정은 남지 않습니다.</p>
 </div></main>'''
 
-ACTION = '''<main class="wrap"><div class="auth">
-  <p class="crumb" id="crumbLabel">계정 인증</p><h1 id="acTitle">처리 중…</h1>
-  <p class="sub" id="acDesc">잠시만 기다려 주시기 바랍니다.</p>
+ACTION = '''<main class="wrap"><header class="ph dz c"><p class="crumb" id="crumbLabel">계정 인증</p><h1 id="acTitle">처리 중…</h1>
+  <p class="sub" id="acDesc">잠시만 기다려 주시기 바랍니다.</p></header><div class="auth">
   <div class="alert" id="acErr" role="alert"></div>
   <div class="ac-body" id="acBody"><div class="spin" aria-label="로딩"></div></div>
 </div></main>'''
 
-SETTINGS = '''<main class="wrap"><div class="auth wide">
-  <p class="crumb">계정</p><h1>설정</h1>
+SETTINGS = '''<main class="wrap"><header class="ph dz c"><p class="crumb">계정</p><h1>설정</h1></header><div class="auth wide">
   <div id="need" class="need" hidden><p>계정 설정을 보려면 로그인이 필요합니다.</p><a class="btn btn-ink" href="/preview/login.html" style="width:auto">로그인</a></div>
   <div id="panel" hidden>
     <div class="seg tabs-s" id="tabs"><button type="button" class="on" data-t="general">일반</button><button type="button" data-t="notifications">알림</button><button type="button" data-t="account">계정</button></div>
@@ -210,7 +204,7 @@ ACTION_JS = r'''(function(){
     else if(s==='error'){crumb.textContent='계정 인증';title.textContent='링크가 만료되었습니다';desc.textContent='보안을 위해 인증 링크는 일정 시간이 지나면 만료됩니다. 메일을 다시 요청하여 주시기 바랍니다.';body.innerHTML=btn('로그인 페이지로','/preview/login.html')}
     else if(s==='done'){crumb.textContent='비밀번호 재설정';title.textContent='비밀번호가 변경되었습니다';desc.textContent='새 비밀번호로 로그인하여 주시기 바랍니다.';body.innerHTML=btn('로그인하러 가기','/preview/login.html')}
     else if(s==='reset'){crumb.textContent='비밀번호 재설정';title.textContent='새 비밀번호 설정';desc.textContent=email+' 계정의 새 비밀번호를 입력하여 주시기 바랍니다.';
-      body.innerHTML='<form id="rs" novalidate><div class="fld"><label for="np">새 비밀번호</label><input id="np" type="password" autocomplete="new-password" placeholder="영문·숫자 포함 8자 이상" required><div class="msg"></div></div><div class="fld"><label for="np2">새 비밀번호 확인</label><input id="np2" type="password" autocomplete="new-password" placeholder="비밀번호를 다시 입력하십시오" required><div class="msg"></div></div><button type="submit" class="btn btn-ink" id="rsSubmit">비밀번호 변경</button></form>';
+      body.innerHTML='<form id="rs" novalidate><div class="fld"><label for="np">새 비밀번호</label><input id="np" type="password" autocomplete="new-password" placeholder="영문과 숫자를 포함해 8자 이상" required><div class="msg"></div></div><div class="fld"><label for="np2">새 비밀번호 확인</label><input id="np2" type="password" autocomplete="new-password" placeholder="비밀번호를 다시 입력하십시오" required><div class="msg"></div></div><button type="submit" class="btn btn-ink" id="rsSubmit">비밀번호 변경</button></form>';
       var np=document.getElementById('np'),np2=document.getElementById('np2');
       function fm(i,m){var f=i.closest('.fld');f.querySelector('.msg').textContent=m;f.classList.add('err')}
       [np,np2].forEach(function(i){i.addEventListener('input',function(){i.closest('.fld').classList.remove('err')})});
@@ -279,7 +273,7 @@ def build(outs=None):
     ]:
         if stg and key == 'settings':
             continue
-        html = page(title if stg else title.replace(' | KOSAI', ' — 디자인 시안 | KOSAI'), body, js, module=real.get(key))
+        html = page(C.title(title.replace(' | KOSAI', '')), body, js, module=real.get(key))
         C.emit(ROOT / out, html)
         print(f'✅ {ROOT / out} · {len(html):,}자')
 

@@ -5,14 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="format-detection" content="telephone=no">
 <meta name="robots" content="noindex,nofollow">
-<meta name="theme-color" content="#f9f8f6">
-<title>어제 상승분을 되돌리게 한 유가, 밤사이 89달러로 내려왔다 — 모닝브리핑 디자인 시안 | KOSAI</title>
+<meta name="theme-color" content="#141414">
+<title>10년물이 2주 만에 5.24%로 물러섰다 — 오늘 밤 고용보고서 — 모닝브리핑 — 디자인 시안 | KOSAI</title>
 <link rel="icon" href="/assets/favicon.png?v=k2">
 <link rel="stylesheet" href="/fonts/pretendard-subset.css">
-<script>(function(){var t='light';try{t=localStorage.getItem('kos-theme')||'light'}catch(e){}document.documentElement.setAttribute('data-theme',t);})();</script>
+<script>(function(){var t='light';try{t=localStorage.getItem('kos-theme')||'light'}catch(e){}var r=document.documentElement;r.setAttribute('data-theme',t);r.classList.add('band-top');})();</script>
 <script id="kosThemeColor">(function(){var m=document.querySelector('meta[name="theme-color"]'),r=document.documentElement;
-  function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0d0d0e':'#f9f8f6')}
-  tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme']})})();</script>
+  /* 맨 위가 어두운 머리 띠(.dz)이면 띠 색, 내리면 페이지 색. 머리 스크립트가 band-top 을 붙이고 뗀다(랜딩과 같음) */
+  function tc(){var d=r.getAttribute('data-theme')==='dark',b=r.classList.contains('band-top');m.setAttribute('content',b?(d?'#1c1c1e':'#141414'):(d?'#0d0d0e':'#f9f8f6'))}
+  tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme','class']})})();</script>
 <script>
 /* 활성 표시선 — 컨테이너마다 선 하나를 두고, 활성 항목(.on)의 자리로 미끄러뜨린다.
    axis 'x' = 밑줄, 'y' = 왼쪽 세로선. sel 로 활성 항목 선택자를 바꿀 수 있다(기본 .on).
@@ -54,6 +55,7 @@ window.kosInd=function(box,axis,sel){
   --up:#c8102e; --down:#1e5fbf; --up-bg:rgba(200,16,46,.08); --down-bg:rgba(30,95,191,.08);
   --font:"Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   --wrap:1120px; --pad:32px; --nav-bar:rgba(249,248,246,.72);
+  --band:#141414; --band-ink:#f2f1ee; --band-62:rgba(242,241,238,.62);
   color-scheme:light;
 }
 :root[data-theme="dark"]{
@@ -62,6 +64,7 @@ window.kosInd=function(box,axis,sel){
   --hair:rgba(255,255,255,.08); --line:rgba(255,255,255,.14);
   --up:#f0655f; --down:#6f9cf5; --up-bg:rgba(240,101,95,.12); --down-bg:rgba(111,156,245,.12);
   --nav-bar:rgba(13,13,14,.72);
+  --band:#1c1c1e; --band-ink:#ececea; --band-62:rgba(236,236,234,.62);
   color-scheme:dark;
 }
 *{box-sizing:border-box}
@@ -107,7 +110,7 @@ a{color:inherit;text-decoration:none}
 /* 단추 */
 /* 활성 표시선(kosInd) — 목차 세로선·밑줄 탭·쪽 번호가 쓴다. 움직임은 IND_JS 의 animate() */
 .ind{position:absolute;left:0;top:0;background:var(--ink);pointer-events:none;will-change:transform} .ind-v{width:2px} .ind-h{height:2px}
-.btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 18px;border-radius:999px;border:0;font:600 14px/1 var(--font);cursor:pointer;transition:background-color .12s,color .12s} .btn.ico{padding-left:14px}
+.btn{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 20px;border-radius:999px;border:0;font:600 14px/1 var(--font);cursor:pointer;transition:background-color .12s,color .12s} .btn.ico{padding-left:14px}
 .btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .btn-ink,.btn-primary{background:var(--ink);color:var(--bg)} .btn-ink:hover,.btn-primary:hover{opacity:.9}
 /* 키보드 포커스 — 먹색 2px 윤곽을 2px 띄워 두른다(브라우저 기본 고리는 파랑·이중선이라 옷과 따로 논다). 마우스로 누를 땐 안 나온다(:focus-visible).
@@ -139,11 +142,21 @@ a{color:inherit;text-decoration:none}
 :root[data-theme] body .kg-x:hover{color:var(--ink)}
 .btn-soft{background:var(--surface-2);color:var(--ink)} .btn-soft:hover{background:var(--line)}
 /* 절 제목 · 더보기 링크 */
-.sec-h{display:flex;align-items:baseline;gap:14px;margin:0 0 22px}
+.sec-h{display:flex;align-items:baseline;gap:14px;margin:0 0 24px}
 .sec-h .num{font:600 13px/20px var(--font);color:var(--ink-62)}
-.sec-h h2{margin:0;font:700 24px/32px var(--font);letter-spacing:-.02em}
-.sec-h .more{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font:500 14px/20px var(--font);color:var(--ink-72);white-space:nowrap} .sec-h .more:hover{color:var(--ink)}
-.sec-h .more svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sec-h h2{margin:0;font:600 28px/36px var(--font);letter-spacing:-.03em}
+.more{display:inline-flex;align-items:center;gap:6px;font:600 15px/20px var(--font);color:var(--ink);white-space:nowrap}
+.more svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}
+.more:hover svg{transform:translateX(3px)}
+.sec-h .more{margin-left:auto}
+/* 검색창 — 랜딩과 같은 밑줄 검색(높이 60 · 글 17px · 단추 40). 무대(.dz) 안에서는 토큰이 무대 색이라 밝은 옷을 저절로 입는다 */
+.search{display:flex;align-items:center;gap:12px;height:60px;border-bottom:1px solid var(--line);transition:border-color .15s,box-shadow .15s}
+.search:focus-within{border-bottom-color:var(--ink)}
+.search svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;color:var(--ink-62);flex:none}
+.search input{flex:1;min-width:0;align-self:stretch;border:0;background:transparent;font:400 17px/24px var(--font);color:var(--ink);outline:0;padding:0}
+.search input::placeholder{color:var(--ink-62)}
+.search .btn{height:40px;padding:0 18px;flex:none}
+.dz .search{border-bottom-color:rgba(255,255,255,.24)}
 /* 표 — 틀 없이 줄로만 */
 .tbl-wrap{overflow-x:auto}
 .tbl{width:100%;border-collapse:collapse}
@@ -152,20 +165,52 @@ a{color:inherit;text-decoration:none}
 .tbl thead th{font:500 12px/16px var(--font);color:var(--ink-62);border-top:0;border-bottom:1px solid var(--line);padding-top:0}
 .tbl th:first-child,.tbl td:first-child{text-align:left;padding-left:0;font-weight:500} .tbl th:last-child,.tbl td:last-child{padding-right:0}
 .tbl tbody th{font-weight:500}
-/* 푸터 */
-.foot{margin-top:96px;border-top:1px solid var(--hair);padding:56px 0 48px}
-.foot .brand img{height:13px} .ftag{margin:14px 0 0;font:400 14px/22px var(--font);color:var(--ink-72);max-width:260px}
-.fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;max-width:560px;margin-top:32px}
-.fcol{display:flex;flex-direction:column;gap:9px} .fcol h4{margin:0 0 4px;font:600 12px/16px var(--font);color:var(--ink-62)} .fcol a{font:400 14px/20px var(--font);color:var(--ink-72)} .fcol a:hover{color:var(--ink)}
-.biz{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:4px 16px;font:400 12px/18px var(--font);color:var(--ink-62)} .copy{margin-top:32px;font:400 12px/18px var(--font);color:var(--ink-62)}
+/* 꼬리 — 랜딩과 같은 옷. 로고 아래 소개 문장은 두지 않는다(바로 아래 '서비스' 목록과 같은 말 — 사장 2026-10-01).
+   개인정보 처리방침은 옆 링크보다 한 단계만 굵게(500, 색은 같게 — 표준 개인정보 보호지침 제20조①의 구분) */
+.foot{margin-top:144px;border-top:1px solid var(--hair);padding:56px 0 48px}
+.foot .brand{display:inline-flex;min-height:44px;align-items:center} .foot .brand img{height:13px}
+.fgrid{display:grid;grid-template-columns:auto auto auto;justify-content:start;column-gap:72px;margin-top:32px}
+.fcol{display:flex;flex-direction:column} .fcol h4{margin:0 0 6px;font:600 12px/16px var(--font);color:var(--ink-62)}
+.fcol a{font:400 14px/20px var(--font);color:var(--ink-72);padding:6px 0;white-space:nowrap} .fcol a:hover{color:var(--ink)} .fcol a.pp{font-weight:500}
+.biz{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:4px 16px;font:400 12px/18px var(--font);color:var(--ink-62)} .copy{margin-top:28px;font:400 12px/18px var(--font);color:var(--ink-62)}
 /* 휴대폰 사파리 상태바·주소창 뒤 색 — 페이지색 띠 (CLAUDE.md 2026-09-24) */
 #kosEdgeTop,#kosEdgeBot{display:none}
-@media (hover:none) and (pointer:coarse){#kosEdgeTop,#kosEdgeBot{display:block;position:fixed;left:0;right:0;height:12px;z-index:60;pointer-events:none;opacity:.2;background:var(--bg)} #kosEdgeTop{top:0} #kosEdgeBot{bottom:0}}
+@media (hover:none) and (pointer:coarse){#kosEdgeTop,#kosEdgeBot{display:block;position:fixed;left:0;right:0;height:12px;z-index:60;pointer-events:none;opacity:.2;background:var(--bg)} #kosEdgeTop{top:0} #kosEdgeBot{bottom:0}
+  html.band-top #kosEdgeTop,html.band-bot #kosEdgeBot{background:var(--band)}}
+/* ── 랜딩의 디자인 언어(2026-10-02 사장 "랜딩페이지 느낌을 그대로 살려 모든 페이지의 디자인 언어가 통합되도록") ──
+   모든 페이지는 랜딩 첫 화면과 같은 어두운 무대(.dz)에서 시작한다. 작은 이름표(600 13px) · 큰 제목(600, 자간 -3.8%) · 짧은 서브(18px, 62%).
+   무대 안에서는 색 토큰을 무대 색으로 바꿔 두어 단추 · 검색창 · 링크 · 지표 · 등락색이 저절로 무대 옷을 입는다. 본문은 밝은 바탕 그대로 */
+.dz{--ink:var(--band-ink);--ink-72:rgba(242,241,238,.72);--ink-62:var(--band-62);--ink-30:rgba(242,241,238,.3);--hair:rgba(255,255,255,.1);--line:rgba(255,255,255,.2);
+  --up:#f0655f;--down:#6f9cf5;--up-bg:rgba(240,101,95,.14);--down-bg:rgba(111,156,245,.14);--bg:var(--band);--surface:#1f1f21;--surface-2:#29292b;color:var(--ink)}
+:root[data-theme="dark"] .dz{--ink-72:rgba(236,236,234,.72);--ink-30:rgba(236,236,234,.3);--surface:#252527;--surface-2:#2e2e31}
+.dz ::selection{background:rgba(255,255,255,.22)}
+/* 페이지 머리 — 본문 폭(.wrap) 안에 두어도 화면 끝까지 칠하고 글은 본문 선에 맞춘다. 헤더(60px) 밑까지 올라가 헤더가 무대 위에 뜬다 */
+.ph{position:relative;margin:-60px calc(50% - 50vw) 0;padding:calc(60px + 88px) calc(50vw - 50%) 80px;background:var(--band)}
+:root[data-theme="dark"] .ph{box-shadow:inset 0 -1px 0 rgba(255,255,255,.06)}
+.ph .crumb{display:block;margin:0 0 22px;font:600 13px/1 var(--font);color:var(--ink)}
+.ph .crumb a{color:inherit} .ph .crumb a:hover{text-decoration:underline;text-underline-offset:3px}
+.ph h1,.ph .h1{margin:0;max-width:900px;font:600 clamp(36px,4.6vw,62px)/1.16 var(--font);letter-spacing:-.038em;text-wrap:balance}
+.ph .sub{margin:24px 0 0;max-width:560px;font:400 18px/1.7 var(--font);color:var(--ink-62);text-wrap:pretty}
+.ph .s{display:inline-block}
+.ph .meta{margin:20px 0 0;font:400 13px/20px var(--font);color:var(--ink-62)}
+.ph.c{text-align:center} .ph.c h1,.ph.c .h1,.ph.c .sub{margin-left:auto;margin-right:auto}
+/* 머리 — 무대 위에서는 밝은 글자(랜딩과 같은 규칙 · 머리 스크립트가 on-band 를 붙이고 뗀다) */
+.nav.on-band{--nav-bar:rgba(20,20,20,.72);--ink:#f2f1ee;--ink-72:rgba(242,241,238,.72);--hair:rgba(255,255,255,.1)}
+:root[data-theme="dark"] .nav.on-band{--nav-bar:rgba(28,28,30,.72)}
+.nav.on-band .brand .lt{display:none} .nav.on-band .brand .dk{display:block}
+.nav.on-band .avatar{color:var(--band)}
+:root:not([data-theme="dark"]) .nav.on-band .acct-menu{--ink:#141414;--ink-72:rgba(20,20,20,.72);--ink-62:rgba(20,20,20,.62);--hair:rgba(20,20,20,.08)}
 
+/* 머리 — 랜딩 브리핑 띠와 같은 무대 · 같은 그림(DAWN_JS). 글은 왼쪽 위, 그림은 글 단 오른쪽(넓은 화면) · 글 아래(한 열).
+   그림의 배치 규칙은 랜딩과 같다 — 물가는 띠 아래 끝에서 140(넓은 화면) · 96(한 열) 위, 한 열에서는 글 아래에 그림 자리를 비워 둔다
+   (52 + 가장 높은 탑 305 × 배율 — 랜딩 #brief>.w 와 같은 식, 띠의 아래 여백 72 에 더한다). 띠 높이는 그림이 배율 1 로 서는 640(넓은 화면) */
+.mast{min-height:640px}
+.mast .dawn{position:absolute;left:0;top:0;width:100%;height:100%;display:block;pointer-events:none}
+.mast>.tx{position:relative;z-index:1;width:40%;min-width:360px;max-width:460px}
 /* 글 한 단 — 읽기 폭 720 */
-.mb{max-width:720px;padding:44px 0 0}
-.mb-date{font:500 13px/20px var(--font);color:var(--ink-62)} .mb-date::before{content:"모닝브리핑 · "}
-.mb h1{margin:12px 0 0;font:700 36px/48px var(--font);letter-spacing:-.025em;text-wrap:balance}
+.mb{max-width:720px;padding:56px 0 0}
+.mb-date{font:500 13px/20px var(--font);color:var(--ink-62)} .mb-date .no{margin-right:10px;font-weight:600;color:var(--ink)}
+.mb h1{margin:12px 0 0;font:600 40px/1.3 var(--font);letter-spacing:-.03em;text-wrap:balance}
 .mb-lead{margin:18px 0 0;font:400 18px/30px var(--font);color:var(--ink-72)}
 .mb-meta{margin-top:14px;font:400 13px/20px var(--font);color:var(--ink-62)}
 /* 요약 — 상자 대신 위아래 줄 */
@@ -174,7 +219,7 @@ a{color:inherit;text-decoration:none}
 .mb-sum-p{margin:0 0 18px;font:400 18px/30px var(--font);letter-spacing:-.005em}
 /* 절 */
 .mb-sec{padding-top:48px}
-.mb-sec h2{margin:0 0 18px;font:700 24px/32px var(--font);letter-spacing:-.02em;text-wrap:balance}
+.mb-sec h2{margin:0 0 18px;font:600 24px/32px var(--font);letter-spacing:-.025em;text-wrap:balance}
 .mb-sec p{margin:0 0 20px;font:400 17px/28px var(--font);letter-spacing:-.005em} .mb-sec p:last-child{margin-bottom:0}
 .mb-sec a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px;text-decoration-thickness:1px} .mb-sec a:hover{text-decoration-color:var(--ink)}
 .mb-sec b{font-weight:600}
@@ -187,11 +232,17 @@ a{color:inherit;text-decoration:none}
   :root{--pad:20px}
   .nav{display:block;height:60px;padding:0} .nav-in{height:60px;padding:0 var(--pad)}
   .nav,.nav.scrolled{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}
-  .sec-h h2{font-size:22px;line-height:28px}
+  .nav.on-band,.nav.on-band.scrolled{background:var(--band)} .nav.on-band:not(.scrolled){background:transparent}
+  .sec-h h2{font-size:22px;line-height:30px;letter-spacing:-.025em}
+  .ph{padding-top:calc(60px + 44px);padding-bottom:56px} .ph .crumb{margin-bottom:16px}
+  .ph h1,.ph .h1{font-size:32px;line-height:1.25;letter-spacing:-.03em} .ph .sub{margin-top:18px;font-size:16px}
+  .search input{font-size:16px} .search .btn{height:44px;padding:0 16px}
+  .fgrid{grid-template-columns:auto auto auto;justify-content:space-between;column-gap:16px} .fcol a{padding:12px 0} .foot{margin-top:112px;padding-top:44px}
   .tbl th,.tbl td{padding:10px 10px;font-size:13px} .tbl th:first-child,.tbl td:first-child{position:sticky;left:0;background:var(--bg)}
 }
 @media (max-width:820px){
-  .mb{padding:20px 0 0} .mb h1{font-size:28px;line-height:38px} .mb-lead{font-size:16px;line-height:27px}
+  .mast{min-height:0;padding-bottom:calc(72px + 52px + min(66.474vw, 305px))} .mast>.tx{width:auto;min-width:0;max-width:none}   /* 그림 자리는 띠의 아래 여백으로 — 글 묶음(.tx)에 주면 그림이 글 끝을 그만큼 아래로 읽는다 */
+  .mb{padding:40px 0 0} .mb h1{font-size:28px;line-height:1.35;letter-spacing:-.025em} .mb-lead{font-size:16px;line-height:27px}
   .mb-sum{margin-top:28px;padding:22px 0 4px} .mb-sum-p{font-size:16px;line-height:27px}
   .mb-sec{padding-top:40px} .mb-sec h2{font-size:21px;line-height:29px} .mb-sec p{font-size:16px;line-height:27px}
   .mb-sec--cov{margin-top:44px;padding-top:30px}
@@ -200,8 +251,8 @@ a{color:inherit;text-decoration:none}
 </head>
 <body>
 <div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>
-<nav class="nav" id="nav"><div class="nav-in">
-  <a class="brand" href="/preview/home.html"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+<nav class="nav on-band" id="nav"><div class="nav-in">
+  <a class="brand" href="/preview/concepts/landing/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
   <div class="links"><a href="/preview/home.html">홈</a><a href="/preview/reports.html">리포트</a><a href="/preview/industry.html">업종 분석</a><a href="/preview/watchlist.html">관심종목</a><a href="/preview/brief.html" class="on">모닝브리핑</a></div>
   <div class="right" id="navRight"><a class="login" href="/preview/login.html">로그인</a><div class="acct" id="acct"></div>
     <button class="ib" id="themeBtn" aria-label="테마 전환"><svg viewBox="0 0 24 24" id="themeIcon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
@@ -209,88 +260,96 @@ a{color:inherit;text-decoration:none}
 </div>
 </nav>
 <div class="mmenu" id="mmenu"><div class="mm-links"><a href="/preview/home.html">홈</a><a href="/preview/reports.html">리포트</a><a href="/preview/industry.html">업종 분석</a><a href="/preview/watchlist.html">관심종목</a><a href="/preview/brief.html" class="on">모닝브리핑</a></div><div class="sep"></div><div class="mm-auth" id="mauth"><a href="/preview/login.html">로그인</a><a href="/preview/signup.html">회원가입</a></div>
-<div class="mm-foot"><a href="/preview/about.html">About</a><a href="/preview/contact.html">문의하기</a><a href="/preview/feedback.html">피드백</a><a href="/preview/terms.html">이용약관</a><a href="/preview/privacy.html">개인정보처리방침</a></div></div>
+<div class="mm-foot"><a href="/preview/about.html">회사 소개</a><a href="/preview/contact.html">문의하기</a><a href="/preview/feedback.html">피드백</a><a href="/preview/terms.html">이용약관</a><a href="/preview/privacy.html">개인정보 처리방침</a></div></div>
 <main class="wrap">
+  <header class="ph dz mast"><canvas class="dawn" id="dawn" aria-hidden="true"></canvas><div class="tx"><p class="crumb">모닝브리핑</p><p class="h1">개장 전에 읽는<br>시장 브리핑</p><p class="sub"><span class="s">전일 국내 증시와 간밤의 해외 시장, 주요 일정을 정리합니다.</span> <span class="s">발행 시각은 거래일 오전 7시 30분 전후입니다.</span></p></div></header>
   <article class="mb">
     <header class="mb-head">
-      <div class="mb-date">2026년 9월 23일 (수) 07:28</div>
-      <h1>어제 상승분을 되돌리게 한 유가, 밤사이 89달러로 내려왔다</h1>
-      <div class="mb-meta">국내 증시 개장 · 직전 거래일 9월 22일(화) 종가 기준</div>
+      <div class="mb-date"><span class="no">제32호</span>2026년 10월 2일 (금) 07:28</div>
+      <h1>10년물이 2주 만에 5.24%로 물러섰다 — 오늘 밤 고용보고서</h1>
+      <div class="mb-meta">국내 증시 개장 · 직전 거래일 10월 1일(목) 종가 기준</div>
     </header>
 
     <aside class="mb-sum">
       <div class="mb-sum-h">요약</div>
-      <p class="mb-sum-p" data-i18n-block>직전 거래일 국내 증시의 상승분을 지운 유가 반등이 간밤 6% 넘는 급락으로 되돌려졌고, 미 10년물은 4.97%로 사실상 제자리에 남았다. 뉴욕에서는 나스닥이 사상 최고 종가를 썼고 필라델피아 반도체가 2% 넘게 올랐다.</p>
-      <p class="mb-sum-p" data-i18n-block>국내에서는 엔비디아 냉각 솔루션 규격 승인 소식이 나온 LG전자를 필두로 전자·부품이 업종 상위 첫 자리에 올랐지만, 지수 중앙값은 마이너스였고 개인이 코스피에서 1조 5,643억원을 팔았다.</p>
-      <p class="mb-sum-p" data-i18n-block>원화는 추석 전 네고물량으로 두 달 반 만에 가장 크게 내렸고, 한은 금통위원의 추가 긴축 시기 언급이 함께 나왔다. 이번 주 미 지표는 비어 있고 다음 주 화요일부터 넷이 몰린다.</p>
+      <p class="mb-sum-p" data-i18n-block>유가가 반등했는데도 미 10년물이 5.29%에서 5.24%로 물러서며 2주 넘게 이어진 금리 압력이 처음 느슨해졌고, 그 위에서 필라델피아 반도체가 1.59% 올랐다.</p>
+      <p class="mb-sum-p" data-i18n-block>직전 거래일 국내 증시는 9월 수출·반도체 수출 역대 최대 집계와 마이크론 호실적 보도가 겹치며 코스피 1.95%, 코스닥 4.48% 급등했고 상승 종목이 1,802개로 폭도 넓었지만, 코스피에서는 개인이 1조 4,102억원, 외국인이 5,558억원을 팔고 기관만 3,239억원을 샀다.</p>
+      <p class="mb-sum-p" data-i18n-block>업종은 바이오·제약과 게임, 반도체, 방산이 끌어올렸고 정유가 5.79% 밀리며 유일하게 크게 빠졌다. 원화 기준값은 1,359.72원으로 올랐고, 오늘 밤 미국 고용보고서에 이어 9월 FOMC 의사록이 다음 주 수요일로 잡혀 있다.</p>
     </aside>
 
     <section class="mb-sec">
-      <h2>90달러가 깨졌는데, 10년물은 4.97%에 그대로 있다</h2>
-      <p data-i18n-block>WTI는 89.85달러로 6.19% 내렸다. 이 브리핑이 지난주부터 금리·환율 압력의 공통 배경으로 붙여 온 항목이 100달러대에서 90달러 아래까지 내려온 셈이다. 다만 미 10년물은 4.96%에서 4.97%로, 사실상 움직이지 않았다.</p>
-      <p data-i18n-block>유가가 빠진 만큼 금리가 따라 내려오지는 않았다는 뜻이고, 연준 쪽에서는 굴스비 총재가 강한 수요가 물가를 밀어올리고 있을 수 있다고 말한 것이 함께 전해졌다. 유가와 금리가 같은 방향으로 움직였던 지난주 초와는 조합이 달라졌다.</p>
+      <h2>유가가 올랐는데 금리가 내려왔다 — 방향이 바뀐 자리</h2>
+      <p data-i18n-block>9월 하순 내내 이 브리핑이 붙들고 있던 고리는 유가와 금리였다. 유가가 89달러 아래로 빠져도, 연준이 보는 근원 물가가 예상을 밑돌아도 미 10년물은 5.2%대에서 내려오지 않았다. 간밤은 반대였다 — WTI는 2.75% 올라 92.91달러인데 10년물은 5.24%로 0.06%p 내렸다.</p>
+      <p data-i18n-block>로이터는 물러선 국채 금리를 지수 반등의 배경으로 전했고, 세 지수는 0.04~0.19%로 소폭이지만 함께 올랐다.</p>
+      <p data-i18n-block>지수보다 눈에 띄는 쪽은 반도체다. 필라델피아 반도체가 1.59% 오르며 지수들을 앞섰고, [마이크론] 호실적 이후 3.03% 추가 상승했다. 엔비디아는 1.09%, TSMC는 0.66%다. 달러인덱스는 102.00으로 0.55% 올라 금리와는 다른 방향을 봤다.</p>
     </section>
 
     <section class="mb-sec">
-      <h2>추석 전 네고물량에 원화 기준값 1,355.66원</h2>
-      <p data-i18n-block>9월 22일 기준 원/달러는 1,384.86원에서 1,355.66원으로 2.11% 내렸다. 외환시장 쪽 보도는 추석을 앞둔 수출업체 네고물량과 위험선호 회복을 이유로 들었고, 두 달 반 만에 가장 큰 낙폭이라고 전했다.</p>
-      <p data-i18n-block>달러인덱스가 같은 날 0.12% 오른 100.55였던 것을 감안하면 달러가 약해져서 생긴 움직임은 아니다. 여기에 한은에서는 장용성 금통위원이 수도권 집값과 가계대출을 들어 부동산발 금융불균형을 경계하며 추가 긴축 시기를 검토해야 한다는 취지로 발언했다. 환율이 빠르게 내려온 구간과 추가 인상 논의가 겹쳐 있다는 점이 오늘 수출주 쪽을 볼 때의 배경이다.</p>
+      <h2>코스닥 4.48%, 상승 1,802종목 — 그런데 개인은 양쪽에서 팔았다</h2>
+      <p data-i18n-block>어제 국내 장은 9월 수출과 무역흑자가 역대 최대, 반도체 수출도 역대 최대라는 집계와 마이크론 호실적 보도가 겹친 날이었다. 코스피는 6,971.35(+1.95%), 코스닥은 894.29(+4.48%)로 끝났다.</p>
+      <p data-i18n-block>폭도 좁지 않았다 — 오른 종목이 1,802개, 내린 종목이 657개였고 중앙값은 +0.87%였다. 다만 시총가중(+1.61%)이 지수 등락률을 밑돈 것을 보면 끌어올린 쪽은 결국 대형주 몇 개다.</p>
+      <p data-i18n-block>거래대금은 <a href="/stock.html?ticker=000660">SK하이닉스</a> 3조 9,286억원(+2.48%)과 <a href="/stock.html?ticker=005930">삼성전자</a> 3조 6,831억원(+1.68%)이 1·2위를 채웠다.</p>
+      <p data-i18n-block>수급은 지수 모양과 어긋났다. 코스피에서 개인이 1조 4,102억원, 외국인이 5,558억원을 순매도했고 기관만 3,239억원을 샀다. 코스닥도 4.48% 급등한 날인데 개인은 7,770억원을 팔았다 — 받아낸 것은 기관 5,684억원과 외국인 2,280억원이다.</p>
+      <p data-i18n-block>이틀 전까지 외국인이 조 단위로 팔던 코스피에서 외국인 매도 규모가 5천억원대로 줄었다는 점이 어제의 수급상 변화다.</p>
     </section>
 
     <section class="mb-sec">
-      <h2>나스닥 최고치와 마이크론 5% — 그런데 국내 주역은 하이닉스가 아니었다</h2>
-      <p data-i18n-block>뉴욕에서는 나스닥이 0.45% 올라 사상 최고 종가를 썼고 필라델피아 반도체가 2.06%, 마이크론이 5.00% 올랐다. 반면 다우는 0.36% 내려 지수 간 방향이 갈렸다.</p>
-      <p data-i18n-block>국내 직전 장은 그 흐름이 다른 이름으로 나왔다 — <a href="/stock.html?ticker=066570">LG전자</a>가 대용량 냉각수 분배장치의 엔비디아 규격 승인 소식과 함께 6.91% 올랐고, 지주사인 <a href="/stock.html?ticker=003550">LG</a>가 4.67%, 같은 전자·부품 업종의 <a href="/stock.html?ticker=011070">LG이노텍</a>과 <a href="/stock.html?ticker=009150">삼성전기</a>도 각각 4%대, 3%대로 올라 업종 전체가 3.72% 올라 상위 첫 자리에 섰다.</p>
-      <p data-i18n-block>정작 거래대금 1위였던 <a href="/stock.html?ticker=000660">SK하이닉스</a>는 1.50% 내렸다. 6조 1,715억원이 지나가고 지수와 반대로 끝난 자리다.</p>
-      <p data-i18n-block>기판 쪽은 더 크게 움직였다. <a href="/stock.html?ticker=007810">코리아써키트</a> 25.43%, <a href="/stock.html?ticker=356860">티엘비</a> 16.80%로 전자·부품 안에서 두 자릿수가 나왔고, 옆 업종인 반도체의 <a href="/stock.html?ticker=222800">심텍</a>도 13.31% 올랐다. 다만 이 종목들의 개별 사유는 확인된 것이 없다.</p>
-      <p data-i18n-block>미국 쪽에서는 AI 리더들의 개발 속도조절 요구로 칩 주식이 흔들렸다는 보도와 AI 수요를 근거로 한 랠리 보도가 같은 날 함께 나와 있어, 반도체 안에서도 메모리와 그 주변이 따로 움직인 하루였다.</p>
+      <h2>바이오 3.85%가 업종 1위, 정유만 5.79% 빠졌다</h2>
+      <p data-i18n-block>업종 상위는 바이오·제약(+3.85%)과 게임(+3.44%)이었고 전자·부품, 반도체, 항공·방산이 2%대로 뒤를 이었다. 코스닥 급등의 몸통도 바이오였다 — 절대 상승 상위가 대부분 바이오·제약으로 채워졌고, <a href="/stock.html?ticker=468670">브릴스</a>는 58.72% 오르며 거래대금 6,898억원으로 전체 5위에 들었다.</p>
+      <p data-i18n-block>방산에서는 3분기 신규 수주로 종목 간 희비가 갈렸다는 보도와 함께 <a href="/stock.html?ticker=079550">LIG디펜스앤에어로스페이스</a>가 6.01%, <a href="/stock.html?ticker=272210">한화시스템</a>이 5.20% 올랐다.</p>
+      <p data-i18n-block>내린 쪽은 좁았다. 정유가 5.79% 빠지며 사실상 유일한 급락 업종이었다 — <a href="/stock.html?ticker=010950">S-Oil</a> -6.56%, <a href="/stock.html?ticker=096770">SK이노베이션</a> -5.44%로 시장 대비 7~8%포인트 뒤처졌다.</p>
+      <p data-i18n-block>금융도 -0.60%로 밀렸고, 거래대금 4위에 오른 <a href="/stock.html?ticker=316140">우리금융지주</a>가 4.01% 하락했다. 유통·소비재, 보험, 조선이 1% 안쪽 약세였던 것을 빼면 어제 하락은 이 둘에 몰려 있었다.</p>
     </section>
 
     <section class="mb-sec">
-      <h2>오른 종목보다 내린 종목이 457개 많았다</h2>
-      <p data-i18n-block>코스피는 0.15% 올랐지만 시총가중이 0.16%인 데 비해 종목 중앙값은 -0.19%였고, 상승 974 대 하락 1,431이었다. 위쪽 몇 개가 지수를 붙들어 둔 모양이다. 수급에서는 개인이 코스피에서 1조 5,643억원을 순매도했고 기관도 1,295억원을 팔았으며 외국인만 494억원 순매수였다.</p>
-      <p data-i18n-block>코스닥은 0.23% 내렸고 개인이 1,548억원을 받았다. 업종 하위는 미디어·엔터, 화장품, 바이오·제약 순으로 1%대 하락이 이어졌고, 대형주에서는 <a href="/stock.html?ticker=068270">셀트리온</a>과 <a href="/stock.html?ticker=196170">알테오젠</a>도 함께 내려 바이오 쪽이 하루 종일 무거웠다.</p>
+      <h2>원화 기준값 1,359.72원, 네고물량이 받친 1,360원 안팎</h2>
+      <p data-i18n-block>원/달러 기준값(10월 1일 기준)은 1,359.72원으로 직전 1,350.50원에서 0.68% 올랐다. 서울 외환시장에서는 수출업체 네고물량이 강달러를 막아서며 1,360원 안팎에서 움직였다는 보도와, WGBI 자금 유입 공백·미 고금리 장기화 우려가 상승 요인으로 거론됐다.</p>
+      <p data-i18n-block>달러인덱스가 102.00으로 함께 오른 자리라, 금리가 하루 물러섰다고 해서 달러 쪽 압력까지 같이 풀린 것은 아니다.</p>
     </section>
 
     <section class="mb-sec">
-      <h2>미 지표는 다음 주 화요일부터, 사흘 만에 넷</h2>
-      <p data-i18n-block>일정표상 이번 주(9월 21~27일)에 확인할 미국 지표는 없다. 다음 주 9월 29일 구인·이직, 30일 GDP와 개인소비·PCE, 10월 2일 고용보고서가 사흘 만에 몰려 나오고, 9월 FOMC 의사록은 10월 7일로 잡혀 있다.</p>
-      <p data-i18n-block>국내에서는 9월 1~20일 수출이 반도체 주도로 역대 최대라는 집계가 나와 있어, 지표 공백 구간의 재료는 유가·환율과 수출 쪽에 있는 셈이다.</p>
+      <h2>오늘 밤 고용보고서, 9월 FOMC 의사록은 다음 주 수요일</h2>
+      <p data-i18n-block>지난주부터 '사흘에 몰린 지표'라고 적어 온 묶음의 마지막이 오늘 밤 미국 고용보고서다. 구인·이직과 GDP·PCE를 거치며 10년물은 5.18%에서 5.29%까지 올랐다가 어제 5.24%로 돌아섰다.</p>
+      <p data-i18n-block>니케이아시아는 수정된 물가 지표를 두고 10월 동결 쪽에 무게가 실린다고 전했는데, 그 판단의 다음 재료가 오늘 밤 숫자다. 9월 FOMC 의사록은 다음 주 수요일(10월 7일), 미국 소비자물가는 10월 14일로 그 다음 주다 — 다음 주 수요일까지는 고용 하나가 금리 쪽 이야기를 끌고 간다.</p>
     </section>
 
     <section class="mb-sec mb-sec--cov">
       <div class="mb-src">KOSAI 리포트 확인 지점</div>
-      <h2>제이알글로벌리츠, 실사보고서 제출일이 다음 주 월요일</h2>
-      <p data-i18n-block>오늘 자 KOSAI 리포트에서 <a href="/stock.html?ticker=348950">제이알글로벌리츠</a>의 확인 지점으로 꼽아 둔 첫 날짜는 다음 주 월요일인 9월 28일이다. 삼일회계법인 실사보고서 제출 예정일로, 자산·부채와 채무상환 능력 점검 결과가 이후 채권자 협상의 기준점이 된다.</p>
-      <p data-i18n-block>세 차례 연장된 ARS 협의기간 마감일은 10월 14일이다. 감사의견 거절로 상장폐지 심사가 진행 중이고 상반기 실적이 대규모 적자로 정정된 상태라, 일정 자체가 가격 신호가 되는 구간이다.</p>
-      <p data-i18n-block>같은 날 접수분에서는 <a href="/stock.html?ticker=021820">세원정공</a>의 확인 지점이 11월 3분기 실적과 4분기 중 현대차·기아의 미국 현지 부품 조달 확대 진행 상황으로 잡혀 있어, 결과 확인은 한참 뒤다.</p>
+      <h2>KTis 자사주 소각일이 이달 30일, 태광은 중동 비중이 관전점</h2>
+      <p data-i18n-block>어제 정정 보고서가 들어온 커버리지 종목 중 날짜가 가까운 쪽은 둘이다. <a href="/stock.html?ticker=058860">KTis</a>는 오늘자 KOSAI 리포트가 발행주식총수의 9.76%에 해당하는 자사주 소각 시행 여부를 10월 30일 확인 지점으로 꼽았다 — 실제 소각이 끝나면 주당 지표가 달라진다.</p>
+      <p data-i18n-block><a href="/stock.html?ticker=023160">태광</a>은 어제(10월 1일) 작성한 리포트에서 LNG 피팅 호황과 중동 매출 쏠림을 함께 짚으며, 공시된 자사주 100억원 매입·소각 계획이 연내 구체적 규모·시기로 확정되는지를 확인 지점으로 적어 뒀다. 나머지 정정 보고서 종목들은 3분기 보고서 법정 제출기한인 11월 16일이 공통 확인 시점이다.</p>
     </section>
 
-    <p class="mb-disc" data-i18n-block>본 자료는 공시(DART)·국내 시장 데이터와 공개된 해외 시장·일정 자료를 바탕으로 작성한 정보 제공 자료이며 투자 권유가 아닙니다. 국내 수치는 2026년 9월 22일 종가 기준입니다.</p>
+    <p class="mb-disc" data-i18n-block>본 자료는 공시(DART)·국내 시장 데이터와 공개된 해외 시장·일정 자료를 바탕으로 작성한 정보 제공 자료이며 투자 권유가 아닙니다. 국내 수치는 2026년 10월 1일 종가 기준입니다.</p>
   </article>
 </main>
 <footer class="foot"><div class="wrap">
-  <a class="brand" href="/preview/home.html"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
-  <p class="ftag">한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p>
+  <a class="brand" href="/preview/concepts/landing/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
   <div class="fgrid">
     <div class="fcol"><h4>서비스</h4><a href="/preview/home.html">홈</a><a href="/preview/reports.html">리포트</a><a href="/preview/industry.html">업종 분석</a><a href="/preview/watchlist.html">관심종목</a><a href="/preview/brief.html">모닝브리핑</a></div>
-    <div class="fcol"><h4>회사</h4><a href="/preview/about.html">About</a><a href="/preview/contact.html">문의하기</a><a href="/preview/feedback.html">피드백</a></div>
-    <div class="fcol"><h4>정책</h4><a href="/preview/terms.html">이용약관</a><a href="/preview/privacy.html">개인정보처리방침</a></div>
+    <div class="fcol"><h4>회사</h4><a href="/preview/about.html">회사 소개</a><a href="/preview/contact.html">문의하기</a><a href="/preview/feedback.html">피드백</a></div>
+    <div class="fcol"><h4>정책</h4><a href="/preview/terms.html">이용약관</a><a class="pp" href="/preview/privacy.html">개인정보 처리방침</a></div>
   </div>
   <div class="biz"><span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span><span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span></div>
-  <div class="copy">© 2026 KOSAI — All rights reserved.</div>
+  <div class="copy">© 2026 KOSAI</div>
 </div></footer>
 <script>
 (function(){
-  var nav=document.getElementById('nav'),tick=false;
-  function upd(){tick=false;nav.classList.toggle('scrolled',window.scrollY>32);if(window.kosOnScroll)window.kosOnScroll()}
-  addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+  var nav=document.getElementById('nav'),tick=false,root=document.documentElement;
+  /* 무대(.dz — 페이지 머리 띠) 위에 있으면 머리를 밝은 글자로, 화면 맨 위 · 맨 아래 가장자리가 무대이면 사파리 띠와 theme-color 도 무대 색(랜딩과 같은 규칙) */
+  function over(y){var zs=document.querySelectorAll('.dz');for(var i=0;i<zs.length;i++){var b=zs[i].getBoundingClientRect();if(b.top<=y&&b.bottom>=y)return true}return false}
+  function upd(){tick=false;nav.classList.toggle('scrolled',window.scrollY>32);
+    var open=nav.classList.contains('menu-open'),nb=nav.getBoundingClientRect();
+    nav.classList.toggle('on-band',!open&&over(nb.top+nb.height/2));root.classList.toggle('band-top',!open&&over(6));root.classList.toggle('band-bot',!open&&over(innerHeight-6));
+    if(window.kosOnScroll)window.kosOnScroll()}
+  function req(){if(!tick){tick=true;requestAnimationFrame(upd)}}
+  addEventListener('scroll',req,{passive:true});addEventListener('resize',req);upd();window.kosBandUpd=req;
   var sun='<path d="M12 4V2M12 22v-2M4.9 4.9 3.5 3.5M20.5 20.5l-1.4-1.4M4 12H2M22 12h-2M4.9 19.1l-1.4 1.4M20.5 3.5l-1.4 1.4"/><circle cx="12" cy="12" r="4"/>',moon='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
   var root=document.documentElement,icon=document.getElementById('themeIcon');function paint(){icon.innerHTML=root.getAttribute('data-theme')==='dark'?sun:moon}paint();window.__kosPaintTheme=paint;
   document.getElementById('themeBtn').addEventListener('click',function(){var t=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',t);try{localStorage.setItem('kos-theme',t)}catch(e){}paint();});
   /* 휴대폰 메뉴 */
   var mb=document.getElementById('menuBtn'),mm=document.getElementById('mmenu');
-  function setMenu(on){nav.classList.toggle('menu-open',on);mm.classList.toggle('open',on);mb.setAttribute('aria-expanded',on?'true':'false');document.documentElement.style.overflow=on?'hidden':'';if(window.KOSSmoothScroll){on?window.KOSSmoothScroll.stop():window.KOSSmoothScroll.start()}}  /* html 에 건다 — body 에 걸면 sticky 헤더가 사라진다(html 이 overflow-x:hidden 이라 body 가 스크롤 상자가 됨) */
+  function setMenu(on){nav.classList.toggle('menu-open',on);mm.classList.toggle('open',on);mb.setAttribute('aria-expanded',on?'true':'false');document.documentElement.style.overflow=on?'hidden':'';if(window.KOSSmoothScroll){on?window.KOSSmoothScroll.stop():window.KOSSmoothScroll.start()}upd()}  /* html 에 건다 — body 에 걸면 sticky 헤더가 사라진다(html 이 overflow-x:hidden 이라 body 가 스크롤 상자가 됨) */
   mb.addEventListener('click',function(){setMenu(!nav.classList.contains('menu-open'))});
   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('menu-open'))setMenu(false)});
   window.matchMedia('(min-width:821px)').addEventListener('change',function(e){if(e.matches)setMenu(false)});
@@ -307,5 +366,225 @@ a{color:inherit;text-decoration:none}
     document.querySelectorAll('a[href^="/preview/"]').forEach(function(a){var h=a.getAttribute('href');if(h.indexOf('user=')<0)a.setAttribute('href',h+(h.indexOf('?')<0?'?':'&')+'user='+encodeURIComponent(email))});}
 })();
 </script>
+<script>(function(){
+var cv=document.getElementById('dawn');if(!cv||!cv.getContext)return;
+var ctx=cv.getContext('2d'),one=matchMedia('(max-width:820px)'),W=0,H=0,dpr=1,L=null,last='';
+function sm(a,b,x){var t=Math.max(0,Math.min(1,(x-a)/(b-a)));return t*t*(3-2*t)}
+function hh(a,b){var x=(a*374761393+b*668265263)|0;x=Math.imul(x^(x>>>13),1274126177);x^=x>>>16;return (x>>>0)/4294967296}   // 고정 해시 — 늘 같은 그림
+function rnd(s){return function(){s=s+0x6D2B79F5|0;var t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function vn(x,y,s){var i=Math.floor(x),j=Math.floor(y),fx=x-i,fy=y-j;fx=fx*fx*(3-2*fx);fy=fy*fy*(3-2*fy);var o=s*7919;
+  var a=hh(i+o,j),b=hh(i+1+o,j),c=hh(i+o,j+1),d=hh(i+1+o,j+1);return 2*((a+(b-a)*fx)*(1-fy)+(c+(d-c)*fx)*fy)-1}   // 부드러운 잡음(-1~1, 고정)
+
+/* ── 찍기 ── 점은 또렷한 원 — 펜으로 찍은 점처럼 가장자리만 부드럽다. 밝기(1/48)별로 모아 한 경로로 한 번에 채운다(같은 밝기의 점이
+   겹치면 덮인 자리만 남는다). 반지름은 부드러운 점과 같은 빛의 양이 되게 0.69배 */
+var DS={},NDOT=0;
+function dot(x,y,r,a){if(a<.03||r<=0)return;var k=Math.max(1,Math.min(48,Math.round(a*48)));(DS[k]||(DS[k]=[])).push(x,y,r*.69);NDOT++}
+function paint(){ctx.fillStyle='rgb(248,247,244)';for(var k in DS){var s=DS[k];ctx.globalAlpha=k/48;ctx.beginPath();for(var i=0;i<s.length;i+=3){ctx.moveTo(s[i]+s[i+2],s[i+1]);ctx.arc(s[i],s[i+1],s[i+2],0,6.2832)}ctx.fill()}ctx.globalAlpha=1}
+
+/* ── 자리 ── 넓은 화면은 63빌딩 왼쪽 끝을 글 단 오른쪽 끝 + 48 밖에 두고 띠가 낮으면 배율을 0.75까지 줄인다.
+   한 열은 배율 0.85 × 폭 ÷ 390(최대 1)으로 63빌딩 왼쪽 끝을 글 왼쪽 선에 맞춘다(오른쪽 탑은 잘려도 된다). 물가는 띠 아래 끝에서 96 위 —
+   #brief>.w 의 아래 여백(52 + 305 × 배율)이 그 위에 가장 높은 탑과 글과의 틈 28 을 남긴다. 띠가 한 화면 높이라 더 길면(태블릿 세로)
+   그림은 아래에 붙고 남는 자리는 하늘이 된다 */
+function layout(t,b){
+  var o={},tr=t?t.right-b.left:0,tl=t?t.left-b.left:20,tb=t?t.bottom-b.top:0;
+  if(!one.matches){o.yw=H-140;o.s=Math.max(.75,Math.min(1,(o.yw-120)/305));o.dx=Math.max((W-1440)/2,tr+48-640*o.s);o.R0=1.2;o.sp=3.2;o.tr=tr+24}
+  else{o.s=Math.min(1,.85*W/390);o.dx=tl-640*o.s;o.yw=Math.max(H-96,tb+28+305*o.s);o.R0=1;o.sp=2.8;o.tr=W}
+  o.X=function(x){return o.dx+x*o.s};o.h=function(v){return v*o.s};o.k=Math.sqrt(o.s);o.sx=o.X(560);o.tb=tb;
+  return o;
+}
+
+/* ── 하늘 ── 지평선 전체에 낮게 깔린 빛, 해가 오를 자리의 둥근 빛, 얇은 구름 띠 셋(해 위로 길게, 양 끝이 가늘어지고 살짝 휜다) */
+var CL=[[-330,380,34,5.5,.62,.3],[-200,170,63,3,.45,1.7],[120,520,21,3.2,.4,2.6]];
+function skyT(x,z){if(z<=0)return 0;var s=L.s,dx=x-L.sx,e1=dx/(270*s),e2=dx/(520*s),e3=dx/(700*s),
+  T=.62*Math.exp(-e1*e1-z/(34*s))+.18*Math.exp(-e2*e2-z/(50*s))+.30*(1+.30*Math.exp(-e3*e3))*Math.exp(-z/(62*s)),i;
+  for(i=0;i<CL.length;i++){var c=CL[i],u=(dx-c[0]*s)/((c[1]-c[0])*s);if(u<0||u>1)continue;
+    var yc=c[2]*s+2.2*s*Math.sin(u*3.1+c[5])+1.5*s*Math.sin(u*9.3+c[5]*2),w=c[3]*s*Math.pow(Math.sin(Math.PI*u),.7)+.01;T*=1-c[4]*Math.exp(-Math.pow((z-yc)/w,2))}
+  return Math.min(1,T*(.62+.38*sm(-60*s,300*s,x)))}
+
+/* ── 건물 ── 윤곽(앞 건물은 어둡게 비운다 · 먼 건물은 하늘의 점을 성기게) */
+var B=[],CB=[],CH=[];   // B {x0,x1,zt(x),haze,rv(x,z)} · CB/CH 세로 1px 칸마다 그 칸에 걸친 건물(앞 건물부터) · 먼 건물
+function reg(b){var c=b.haze?CH:CB,i0=Math.max(0,Math.floor(b.x0-1)),i1=Math.min(c.length-1,Math.floor(b.x1+1));for(var i=i0;i<=i1;i++)c[i].push(b)}
+function colAt(c,x){var i=Math.floor(x);return i>=0&&i<c.length?c[i]:[]}
+function inB(x,z,m){var c=colAt(CB,x);for(var i=0;i<c.length;i++){var b=c[i];if(x>b.x0-m&&x<b.x1+m&&z<b.zt(x)+m)return b}return null}
+function hazeAt(x,z){var c=colAt(CH,x),f=1;for(var i=0;i<c.length;i++){var b=c[i];if(x>b.x0&&x<b.x1&&z<b.zt(x))f=Math.min(f,b.haze)}return f}
+function hid(x,z,me){var c=colAt(CB,x);for(var i=0;i<c.length;i++){var b=c[i];if(b===me)return false;if(x>b.x0-.4&&x<b.x1+.4&&z<b.zt(x)+.4)return true}return false}   // 앞(먼저 넣은) 건물에 가렸나
+
+/* 격자 점 — 결 방향 'h'(가로줄: 점은 촘촘, 줄은 성기게) · 'v'(세로줄) · 'g'(고른 격자). tone(x,z) → 투명도 */
+function face(x0,x1,z0,z1,st,tone,me,o){o=o||{};var yw=L.yw,k=L.k,R=L.R0,a,x,z,i,j,xs=[],zs=[];
+  var p1=st==='h'?Math.max(2.5,2.6*k):st==='v'?Math.max(4,4.6*k):Math.max(2.8,(o.cs||4.6)*k),   // 가로 간격
+      p2=st==='h'?Math.max(3.6,4.1*k):st==='v'?Math.max(2.5,2.7*k):Math.max(2.7,(o.rs||4)*k);    // 세로 간격
+  if(o.p1)p1=o.p1;if(o.p2)p2=o.p2;
+  var nx=Math.max(1,Math.round((x1-x0)/p1)),dxx=(x1-x0)/nx;for(i=0;i<nx;i++)xs.push(x0+(i+.5)*dxx);
+  for(z=z0+p2*.6;z<z1;z+=p2)zs.push(z);
+  for(j=0;j<zs.length;j++)for(i=0;i<xs.length;i++){x=xs[i];z=zs[j];if(o.zt&&z>o.zt(x)-p2*.3)continue;a=tone(x,z,i,j,xs.length);if(a<.035)continue;if(hid(x,z,me))continue;
+    dot(x,yw-z,R*(o.z||1)*(.86+.18*Math.min(1,a)),Math.min(1,a))}
+  return {xs:xs,zs:zs}}
+/* 그물판 점 — 넓이가 밝기에 비례(반지름 ∝ √밝기). 가장 작은 점(최대의 0.4배) 아래로는 크기 대신 옅어진다 */
+function hd(x,y,a,z){a=Math.min(1,a);var rm=L.R0*1.12*(z||1),r=rm*Math.sqrt(a),r0=rm*.4;if(r<r0){dot(x,y,r0,.92*a/.16);return}dot(x,y,r,.92)}
+function col1(x,z0,z1,step,tone,me,z){for(var q=z0;q<=z1+1e-6;q+=step){var a=tone(q);if(a<.035||hid(x,q,me))continue;hd(x,L.yw-q,a,z||.9)}}   // 세로로 늘어선 점 한 줄
+function row1(x0,x1,z,step,tone,me,zz){var n=Math.max(1,Math.round((x1-x0)/step));for(var i=0;i<=n;i++){var x=x0+(x1-x0)*i/n,a=tone(x);if(a<.035||hid(x,z,me))continue;hd(x,L.yw-z,a,zz||.9)}}
+
+/* 높이에 따른 첫 햇빛 — 위층부터(start 위에서 밝아진다) */
+function lit(light,start,hy){return light*Math.pow(sm(start,1,hy),1.3)}
+
+/* 탑 하나 — 처음 판과 같은 결: 'v' 유리 탑은 세로줄(줄 사이 4.6, 줄 안의 점 2.7), 'h' 63빌딩은 가로줄, 'g' 창이 뚫린 탑은 고른 격자.
+   양 끝 줄이 곧 윤곽이다. 왼쪽 끝 줄은 해 쪽 모서리라 먼저 빛난다(rim) */
+function tower(o){var x0=L.X(o.x0),x1=L.X(o.x1),Ht=L.h(o.h),k=L.k,yw=L.yw,xs=[],zs=[],i,j,nx,me;
+  me={x0:x0,x1:x1,zt:o.zt?function(x){return o.zt(x,x0,x1,Ht)}:function(){return Ht},haze:0};
+  if(o.st==='h'){var ls=Math.max(3.6,4.1*k),st=Math.max(2.5,2.6*k);nx=Math.max(2,Math.round((x1-x0-1)/st));for(i=0;i<nx;i++)xs.push(x0+.5+(i+.5)*(x1-x0-1)/nx);for(var z=ls*.7;z<Ht+L.h(30);z+=ls)zs.push(z)}
+  else if(o.st==='g'){var cs=Math.max(2.8,(o.cs||4.6)*k),rs=Math.max(2.7,(o.rs||4)*k);nx=Math.max(1,Math.round((x1-x0-1)/cs));for(i=0;i<nx;i++)xs.push(x0+.5+(i+.5)*(x1-x0-1)/nx);for(var z2=rs*.8;z2<Ht+L.h(30);z2+=rs)zs.push(z2)}
+  else{var ls2=Math.max(4,4.6*k),st2=Math.max(2.5,2.7*k);nx=Math.max(2,Math.round((x1-x0-1.8)/ls2)+1);for(i=0;i<nx;i++)xs.push(x0+.9+(x1-x0-1.8)*i/(nx-1));for(var z3=st2*.6;z3<Ht+L.h(30);z3+=st2)zs.push(z3)}
+  for(j=0;j<zs.length;j++)for(i=0;i<xs.length;i++){var x=xs[i],zz=zs[j];if(zz>me.zt(x)-.6)continue;var hy=Math.min(1,zz/Ht),u=(x-x0)/Math.max(1,x1-x0),a=o.tone?o.tone(u,hy,i,j,x,zz):lit(o.light,o.start,hy);
+    if(o.rim&&i===0)a=Math.max(a,o.rim*Math.pow(sm(o.start-.2,1,hy),1.1));
+    if(a<.035||hid(x,zz,me))continue;hd(x,yw-zz,a,o.zd)}
+  me.rv=function(x,z){var hy=Math.min(1,z/Ht),u=Math.max(0,Math.min(1,(x-x0)/Math.max(1,x1-x0)));if(o.mirror)return o.mirror*Math.max(0,o.tone(u,hy,1,0,x,z));return o.refl!=null?o.refl:.45*(o.tone?o.tone(.3,hy,1,0,x,z):lit(o.light,o.start,hy))+.015};
+  B.push(me);if(o.after)o.after(x0,x1,Ht,me,xs,zs);reg(me);return me}
+function haze(x0u,x1u,hu,f,zt){var x0=L.X(x0u),x1=L.X(x1u),Ht=L.h(hu),b={x0:x0,x1:x1,zt:zt?function(x){return zt(x,x0,x1,Ht)}:function(){return Ht},haze:f};B.push(b);reg(b)}
+
+/* 장면 — 강북에서 남쪽으로 본 여의도(왼쪽이 동쪽). 처음 판의 배치와 순서를 따르고, 앞에 선 건물부터 넣는다(뒤 건물의 점은 가려진다) */
+function scene(){var Q=[];
+  /* 63빌딩 — 금빛 유리, 가로줄. 밑동부터 꼭대기까지 밝아지고 오른쪽 끝은 그늘. 해 쪽(왼쪽) 좁은 면은 홈 둘이 있는 세로 띠로
+     가장 밝고, 피난층 둘(.30 · .60)과 꼭대기 간판 띠는 한 줄씩 어둡다. 지붕 위 낮은 기계실과 2단 철탑, 끝의 항공등 */
+  tower({x0:640,x1:692,h:230,st:'h',refl:.62,tone:function(u,hy){if(hy>.932&&hy<.968)return 0;var a=(.14+.78*Math.pow(hy,.95))*(1.08-.22*u)*(1+.13*Math.sin((u*.55+hy*2.1)*6.283*1.6+.8)+.06*vn(u*5,hy*14,4));
+      if(Math.abs(hy-.30)<.012||Math.abs(hy-.60)<.012)a*=.3;if(u>.84)a*=.55;if(u<.27){if((u>.075&&u<.115)||(u>.16&&u<.2))return 0;a=Math.max(a,Math.pow(sm(.2,1,hy),1.1))*1.04}return a},
+    after:function(x0,x1,Ht,me){var gd=[x0,x1];L.gold=gd;var mx0=x0+(x1-x0)*.12,mx1=x0+(x1-x0)*.86,st=Math.max(2.4,2.6*L.k);
+      row1(mx0,mx1,Ht+L.h(3),st,function(x){return .5-.22*(x-mx0)/(mx1-mx0)},null,.8);
+      var c=x0+(x1-x0)*.3,zb=Ht+L.h(3.4),Mh=L.h(22),z1=zb+Mh*.5,q;
+      for(q=0;q<=1.0001;q+=.2){var zz=zb+(z1-zb)*q,w=L.h(1.5)*(1-q)+L.h(.45)*q;dot(c-w,L.yw-zz,L.R0*.66,.72);dot(c+w,L.yw-zz,L.R0*.66,.46)}
+      for(q=.2;q<.95;q+=.2)dot(c,L.yw-(z1+Mh*.5*q),L.R0*(.68-.2*q),.8-.25*q);
+      L.lights.push([c,L.yw-(z1+Mh*.5+L.h(1)),1])}});
+  /* 파크원 B · A — 유리는 세로줄, 붉은 틀 넷(양 끝과 가운데 둘)은 밑동부터 꼭대기 너머까지 촘촘히 늘어선 점(해 쪽이 밝다).
+     꼭대기는 닫힌 상자 위의 넓은 판 */
+  function parc(x0,x1,h,light,start,box,plate,lamp){tower({x0:x0,x1:x1,h:h,st:'v',light:light,start:start,rim:0,
+    tone:function(u,hy){var c=Math.abs(u-.5);if(c<.07)return 0;return lit(light,start,hy)*(1-.15*u)},
+    after:function(X0,X1,Ht,me){var rs=Math.max(1.9,2.1*L.k),w=X1-X0,cm=X0+w*.5,fx=[X0+L.h(.8),cm-w*.05,cm+w*.05,X1-L.h(.8)];
+      fx.forEach(function(x,k){col1(x,rs*.5,Ht+L.h(2),rs,function(z){var hy=Math.min(1,z/Ht);return (k===0||k===2?.66:.38)*(.18+.82*Math.pow(sm(.25,1,hy),1.2))},me,.88)});
+      var bw=w*box,pw=w*plate,cb=X0+w*.5,bh=L.h(6);
+      for(var z=Ht+L.h(2.2);z<Ht+bh;z+=Math.max(2.3,2.5*L.k))row1(cb-bw/2,cb+bw/2,z,Math.max(2.3,2.6*L.k),function(x){return .42-.2*(x-(cb-bw/2))/bw},null,.8);
+      row1(cb-pw/2,cb+pw/2,Ht+bh+L.h(1),Math.max(2.1,2.4*L.k),function(x){return .62-.3*(x-(cb-pw/2))/pw},null,.84);
+      me.zt=function(x){return Ht+(Math.abs(x-cb)<pw/2?bh+L.h(2):0)};
+      if(lamp)L.lights.push([cb+pw/2-L.h(1),L.yw-(Ht+bh+L.h(3.4)),.95])}})}
+  parc(902,948,226,.5,.40,.38,.9,0);
+  parc(962,1016,292,.56,.38,.42,.94,1);
+  /* 콘래드 — 어두운 유리, 늦게 밝아진다 */
+  tower({x0:1096,x1:1142,h:182,st:'v',light:.26,start:.55,rim:.5});
+  /* 원 IFC — 지붕이 오른쪽으로 비스듬히 내려간다 */
+  tower({x0:1150,x1:1188,h:156,st:'v',light:.34,start:.45,rim:.6,zt:function(x,x0,x1,Ht){return Ht-L.h(16)*(x-x0)/(x1-x0)},
+    after:function(x0,x1,Ht,me){var n=Math.max(8,Math.round((x1-x0)/Math.max(2.3,2.5*L.k)));for(var i=0;i<=n;i++){var x=x0+(x1-x0)*i/n;dot(x,L.yw-me.zt(x)-L.h(.8),L.R0*.8,.42-.2*i/n)}}});
+  /* 모자 탑(TP) — 꼭대기가 넓어지는 역사다리꼴 모자 */
+  tower({x0:1318,x1:1362,h:188,st:'v',light:.3,start:.5,rim:.5,
+    after:function(x0,x1,Ht,me){var w=x1-x0,cw=w*1.32,c=(x0+x1)/2,ch=L.h(14),q,st=Math.max(2.3,2.5*L.k);
+      for(q=.25;q<1;q+=.33){var ww=w+(cw-w)*q;row1(c-ww/2,c+ww/2,Ht+ch*q,st,function(x){return .34-.14*(x-(c-ww/2))/ww},null,.8)}
+      me.zt=function(x){var d=Math.abs(x-c)-w/2;return Ht+(d<=0?ch:Math.max(0,ch-d*ch/((cw-w)/2)))};me.x0=c-cw/2;me.x1=c+cw/2}});
+  /* 뒷줄 — 쓰리 IFC(매끈한 면은 세로줄, 접힌 면은 결을 바꿔 가로줄 · 위 접힌 면은 하늘을 향해 밝다), 원반과 깔때기 */
+  tower({x0:1052,x1:1104,h:246,st:'v',light:.48,start:.42,rim:.75,
+    tone:function(u,hy){var a=lit(.48,.42,hy);if(hy>.64&&u>.18-.05*(hy-.64)/.36&&u<.56+.07*(hy-.64)/.36)return Math.min(1,a*1.32+.03);
+      if(hy<.645&&hy>.30&&u>.5-.25*(hy-.3)/.345&&u<.62+.35*(hy-.3)/.345)return a*.62;if(hy<=.30&&u>.5&&u<.64)return a*.62;return a*(u<.5?1.12:.92)},
+    after:function(x0,x1,Ht,me){var w=x1-x0,k=L.k,z;
+      var c=x0+w*.47,dw=L.h(64)/2,rise=L.h(11),zt0=Ht+rise,n=Math.max(10,Math.round(2*dw/Math.max(2.3,2.6*k))),i,t;
+      for(i=0;i<=n;i++){t=i/n;var xx=c-dw+2*dw*t,ey=Math.sin(Math.PI*t);dot(xx,L.yw-(zt0-L.h(.6)*ey),L.R0*.84,.56-.22*t);dot(xx,L.yw-(zt0+L.h(1)*ey),L.R0*.7,.26-.1*t)}
+      var bw=w*.36;for(z=Ht+L.h(2.6);z<zt0-L.h(1.5);z+=Math.max(2.4,2.6*k)){var f=(z-Ht)/rise,ww=bw+(2*dw*.8-bw)*f;row1(c-ww/2,c+ww/2,z,Math.max(2.6,3*k),function(){return .3},null,.76)}
+      L.lights.push([c+dw-L.h(1.5),L.yw-(zt0+L.h(2.6)),.95]);me.zt=function(x){return Ht+(Math.abs(x-c)<dw?rise+L.h(1.5):0)}}});
+  /* 전경련회관 — 접힌 가로 띠라 가로줄, 띠 끝이 모서리 밖으로 한 점씩 엇갈려 톱니가 된다. 지붕은 평평하다 */
+  tower({x0:1226,x1:1270,h:214,st:'h',light:.42,start:.45,rim:.7,tone:function(u,hy){return lit(.42,.45,hy)*(u<.5?1.25:.8)},
+    after:function(x0,x1,Ht,me,xs,zs){zs.forEach(function(z,j){if(j%2||z>Ht)return;var a=lit(.42,.45,z/Ht);if(a<.05)return;dot(x0-L.h(1.3),L.yw-z,L.R0*.8,a*.9);dot(x1+L.h(1.3),L.yw-z,L.R0*.8,a*.45)})}});
+  /* LG 트윈타워 — 창이 뚫린 돌벽이라 고른 격자. 바깥 모서리는 곡면이라 칸이 좁아지고 어둡다. 꼭대기 바깥 어깨는 다섯 단 */
+  function lg(x0u,x1u,sd){tower({x0:x0u,x1:x1u,h:120,st:'g',cs:4.6,rs:4,light:.30,start:.5,rim:sd<0?.62:0,
+    zt:function(x,x0,x1,Ht){var w=x1-x0,fp=Ht/34,z8=Ht-8*fp,d=sd<0?x-x0:x1-x;for(var k=5;k>=1;k--)if(d<w*.35*(1-Math.sqrt(Math.max(0,1-Math.pow(k/5,2)))))return z8+(k-1)*8*fp/5;return Ht},
+    tone:function(u,hy){var d=sd<0?u:1-u;return lit(.30,.5,hy)*(d<.25?.7:1)}})}
+  lg(752,800,-1);lg(818,866,1);
+  /* 강가의 낮은 건물 — 탑 밑동을 잇는다(어둡고 위층에만 옅은 격자) */
+  [[628,640,30],[692,708,26],[708,752,46],[800,818,36],[866,902,56],[948,962,40],[1016,1052,62],[1142,1150,44],[1188,1226,70],[1270,1318,52],[1362,1440,46]].forEach(function(t){
+    tower({x0:t[0],x1:t[1],h:t[2],st:'g',cs:4.6,rs:4.2,light:.10,start:.6,rim:.25,refl:.02})});
+  /* 먼 건물 — 안개 너머(하늘의 점이 그 자리에서만 성겨진다) */
+  [[700,728,70],[728,746,54],[866,892,92],[1020,1046,104],[1138,1160,120],[1196,1222,96],[1272,1300,112],[1300,1318,84],[1372,1404,98],[1404,1440,76]].forEach(function(t){haze(t[0],t[1],t[2],.42)});
+  [[-30,40,16],[40,96,24],[96,150,12],[150,230,20],[230,300,27],[300,352,17],[352,420,24],[420,470,14],[470,520,21],[520,570,29],[570,610,20],[610,640,26]].forEach(function(t){haze(t[0],t[1],t[2],.58)});
+}
+
+/* ── 고르게 흩어진 점 ── 밝기 T 에서 점의 투명도 a(어두운 곳만 옅어진다)와 촘촘함 D = T/a 를 정하고,
+   이웃과의 거리가 1/√D 에 비례하게 점을 놓는다(포아송 원판 — 손으로 찍은 듯 고르되 줄이 서지 않는다) */
+var FADE=.22;
+function stip(x0,y0,x1,y1,T,seed){
+  var R=rnd(seed),r0=L.sp*.92,cs=r0/Math.SQRT2,gw=Math.max(1,Math.ceil((x1-x0)/cs)),gh=Math.max(1,Math.ceil((y1-y0)/cs)),G=new Int32Array(gw*gh).fill(-1),
+      PX=[],PY=[],PR=[],PA=[],act=[];
+  function prm(x,y){var t=T(x,y);if(t<.006)return null;var a=Math.pow(Math.min(1,t/FADE),.8);if(a<.12)return null;return [r0/Math.sqrt(Math.min(1,t/a)),a]}
+  function ok(x,y,r){var gx=Math.floor((x-x0)/cs),gy=Math.floor((y-y0)/cs),n=Math.ceil(r/cs),i,j;
+    for(j=Math.max(0,gy-n);j<=Math.min(gh-1,gy+n);j++)for(i=Math.max(0,gx-n);i<=Math.min(gw-1,gx+n);i++){var p=G[j*gw+i];if(p<0)continue;var dx=PX[p]-x,dy=PY[p]-y;if(dx*dx+dy*dy<r*r*.98)return false}return true}
+  function add(x,y,q){var gx=Math.floor((x-x0)/cs),gy=Math.floor((y-y0)/cs);if(G[gy*gw+gx]>=0)return false;G[gy*gw+gx]=PX.length;PX.push(x);PY.push(y);PR.push(q[0]);PA.push(q[1]);act.push(PX.length-1);return true}
+  var sd=r0*6,x,y,q;
+  for(y=y0+sd*.5;y<y1;y+=sd)for(x=x0+sd*.5;x<x1;x+=sd){var jx=x+(R()-.5)*sd*.8,jy=y+(R()-.5)*sd*.8;if(jx<x0||jx>=x1||jy<y0||jy>=y1)continue;q=prm(jx,jy);if(q&&ok(jx,jy,q[0]))add(jx,jy,q)}
+  while(act.length){var ai=Math.floor(R()*act.length),p=act[ai],found=false;
+    for(var k=0;k<14;k++){var an=R()*6.28318,dd=PR[p]*(1+R()*.9),cx=PX[p]+Math.cos(an)*dd,cy=PY[p]+Math.sin(an)*dd;if(cx<x0||cx>=x1||cy<y0||cy>=y1)continue;
+      q=prm(cx,cy);if(!q)continue;if(ok(cx,cy,Math.max(q[0],PR[p]*.85))&&add(cx,cy,q)){found=true;break}}
+    if(!found){act[ai]=act[act.length-1];act.pop()}}
+  return {x0:x0,y0:y0,x1:x1,y1:y1,T:T,r0:r0,PX:PX,PY:PY,PR:PR,PA:PA}}
+/* 고르게 펴기 — 가까운 이웃끼리 조금씩 밀어 낸다(세 번). 건물 윤곽 안이나 범위 밖으로는 옮기지 않는다 */
+function relax(S){var x0=S.x0,y0=S.y0,x1=S.x1,y1=S.y1,T=S.T,PX=S.PX,PY=S.PY,PR=S.PR,r0=S.r0;
+  var n=PX.length,it,i,j,c2=r0*2.4,w2=Math.max(1,Math.ceil((x1-x0)/c2)),h2=Math.max(1,Math.ceil((y1-y0)/c2));
+  for(it=0;it<3;it++){var G2=new Int32Array(w2*h2).fill(-1),NX=new Int32Array(n).fill(-1);
+    for(i=0;i<n;i++){var c=Math.floor((PY[i]-y0)/c2)*w2+Math.floor((PX[i]-x0)/c2);if(c>=0&&c<G2.length){NX[i]=G2[c];G2[c]=i}}
+    var MX=new Float32Array(n),MY=new Float32Array(n);
+    for(i=0;i<n;i++){var r=PR[i]*1.45,gx=Math.floor((PX[i]-x0)/c2),gy=Math.floor((PY[i]-y0)/c2),m=Math.ceil(r/c2),fx=0,fy=0;
+      for(var yy=Math.max(0,gy-m);yy<=Math.min(h2-1,gy+m);yy++)for(var xx=Math.max(0,gx-m);xx<=Math.min(w2-1,gx+m);xx++)for(j=G2[yy*w2+xx];j>=0;j=NX[j]){if(j===i)continue;var dx=PX[i]-PX[j],dy=PY[i]-PY[j],dd=Math.sqrt(dx*dx+dy*dy);if(dd>=r||dd<1e-6)continue;var f=(r-dd)/r;fx+=dx/dd*f;fy+=dy/dd*f}
+      MX[i]=fx*PR[i]*.2;MY[i]=fy*PR[i]*.2}
+    for(i=0;i<n;i++){var nx2=PX[i]+MX[i],ny2=PY[i]+MY[i];if(nx2<x0||nx2>=x1||ny2<y0||ny2>=y1)continue;if(T(nx2,ny2)<.006)continue;PX[i]=nx2;PY[i]=ny2}}
+}
+function emit(S){for(var i=0;i<S.PX.length;i++)dot(S.PX[i],S.PY[i],L.R0,S.PA[i])}
+
+/* ── 강물 ── 거울처럼 비추되 물결이 옆으로 흔들고 가로로 끊는다. 물가 바로 아래는 지평선 빛의 얇은 띠, 해 아래는 반짝이는 길,
+   63빌딩 아래는 금빛 기둥. 띠 아래 끝으로 갈수록 사그라진다 */
+function shore(x){return L.h(7)+L.h(1.6)*vn(x/(60*L.s),.5,9)}
+function reflect(x,z){if(z<shore(x))return 0;var b=inB(x,z,0);if(b)return b.rv?b.rv(x,z):.02;return skyT(x,z)*hazeAt(x,z)}
+function waterT(x,y){var d=y-L.yw;if(d<=.8)return 0;var s=L.s,Lx=(26+.55*d)*s,vv=Math.log(1+.055*d/1.6)/(.055*s),
+    n1=vn(x/Lx,vv,11),n2=vn(x/(Lx/.6),vv*.5,12),amp=(.6+.05*d)*s,ux=x+amp*n2,zm=d*.93+(.3+.02*d)*n1*s,
+    R=reflect(ux,zm),calm=Math.exp(-d/(8*s)),rip=calm+(1-calm)*Math.max(0,Math.min(1.2,.5+.75*n1)),
+    att=.55*Math.exp(-d/(34*s))+.10*Math.exp(-d/(170*s)),Tw=R*att*rip,
+    sig=(16+.32*d)*s,path=.86*Math.exp(-Math.pow((ux-L.sx)/sig,2))*Math.max(0,Math.min(1.25,.2+1.15*n1))*Math.exp(-d/(170*s));
+  if(L.gold){var g0=L.gold[0],g1=L.gold[1],bx=sm(g0-2,g0+3,ux)*(1-sm(g1-3,g1+2,ux));path=Math.max(path,.5*bx*Math.max(0,Math.min(1.2,.35+.9*n1))*Math.exp(-d/(110*s)))}
+  return Math.min(1,Math.max(Tw,path)*sm(H-1,H-70*s,y)*(.62+.38*sm(-60*s,300*s,x)))}
+
+/* 강물 점 — 가로줄. 줄 간격은 물가에서 촘촘하고 아래로 넓어진다. 줄 안에서는 밝기를 쌓아 1이 넘을 때마다 점 하나(밝을수록 촘촘),
+   어두운 곳은 점이 옅어진다. 줄은 느리게 출렁이고 점마다 아주 조금 어긋난다 */
+function rows(y0,y1){var s=L.s,v=2.4,k=0,sp=L.sp*1.05;
+  while(L.yw+v<y1){var y=L.yw+v,acc=hh(k,3),x;
+    for(x=0;x<W;x+=1){var t=waterT(x,y);if(t<.006){acc=Math.min(acc,.5);continue}var a=Math.pow(Math.min(1,t/FADE),.8);if(a<.12)continue;
+      var st=Math.sqrt(t/a)/sp*(.8+.4*hh(Math.floor(x),k+9));acc+=st;if(acc>=1){var fr=(acc-1)/st;acc-=1;var px=x-fr,wob=(vn(px/(34*s),k*.31,5)*1.3+vn(px/(11*s),k*.7,6)*.45)*(1+.025*v)*s;dot(px+(hh(k,Math.floor(x))-.5)*.6,y+wob,L.R0,a)}}
+    v+=Math.max(3,(3.3+.06*v)*Math.sqrt(s));k++}}
+/* 해 자리의 아주 옅은 빛 — 첫 화면 행성 뒤의 빛과 같은 방식(점이 아닌 부드러운 빛). 건너편 둑에서 끊기고, 강물에는 30%만 비쳐
+   아래로 사그라진다. 부드러운 빛이라 1/4 크기로 그려 늘인다 */
+var GC=null;
+function glow(){var q=4,gw=Math.ceil(W/q)+1,gh=Math.ceil(H/q)+1,g,i,rg,lg,rx=340*L.s/q,ry=95*L.s/q,yw=L.yw/q,sh=L.h(7)/q,fd=L.h(24)/q;
+  GC=GC||document.createElement('canvas');GC.width=gw;GC.height=gh;g=GC.getContext('2d');
+  g.save();g.translate(L.sx/q,yw);g.scale(rx/ry,1);rg=g.createRadialGradient(0,0,0,0,0,ry*2.2);
+  for(i=0;i<=10;i++){var t=i/10,u=t*2.2;rg.addColorStop(t,'rgba(248,247,244,'+(.05*Math.exp(-u*u)).toFixed(4)+')')}
+  g.fillStyle=rg;g.fillRect(-ry*2.3,-ry*2.3,ry*4.6,ry*4.6);g.restore();
+  function o(y){return Math.max(0,Math.min(1,y/gh))}
+  lg=g.createLinearGradient(0,0,0,gh);lg.addColorStop(0,'rgba(0,0,0,1)');lg.addColorStop(o(yw-sh-fd),'rgba(0,0,0,1)');lg.addColorStop(o(yw-sh),'rgba(0,0,0,0)');
+  lg.addColorStop(o(yw+.25),'rgba(0,0,0,0)');lg.addColorStop(o(yw+.75),'rgba(0,0,0,.3)');lg.addColorStop(o(yw+L.h(60)/q),'rgba(0,0,0,0)');lg.addColorStop(1,'rgba(0,0,0,0)');
+  g.globalCompositeOperation='destination-in';g.fillStyle=lg;g.fillRect(0,0,gw,gh);g.globalCompositeOperation='source-over';
+  ctx.globalCompositeOperation='destination-over';ctx.drawImage(GC,0,0,gw*q,gh*q);ctx.globalCompositeOperation='source-over'}
+var job=0,done='',cache=null;
+function draw(){
+  var b=cv.getBoundingClientRect();if(!b.width||!b.height||!cv.parentNode)return;
+  var tx=cv.parentNode.querySelector('.tx'),t=tx?tx.getBoundingClientRect():null,vv=window.visualViewport,d=Math.min(6,(window.devicePixelRatio||1)*Math.max(1,vv?vv.scale:1));
+  if(b.width*b.height*d*d>167e5)d=Math.sqrt(167e5/(b.width*b.height));
+  var key=[b.width,b.height,one.matches,t?t.left-b.left:0,t?t.right-b.left:0,t?t.bottom-b.top:0].join(),pk=key+'/'+d;
+  if(pk===done)return;
+  var my=++job,steps=[],S;
+  if(key!==last||!cache)steps.push(
+    function(){W=b.width;H=b.height;L=layout(t,b);B=[];NDOT=0;DS={};L.lights=[];L.gold=null;CB=[];CH=[];for(var i=0;i<Math.ceil(W)+2;i++){CB.push([]);CH.push([])}scene()},
+    function(){var yw=L.yw;S=stip(0,Math.max(0,L.tb+10),W,yw-1,function(x,y){var z=yw-y;if(z<shore(x))return 0;if(inB(x,z,.6))return 0;var T=skyT(x,z)*hazeAt(x,z);if(x<L.tr&&y<L.tb+40)T*=sm(L.tb+8,L.tb+40,y);return T},7)},
+    function(){relax(S)},
+    function(){S&&emit(S);rows(L.yw+2,H);L.lights.forEach(function(p){dot(p[0],p[1],L.R0,p[2])});cache={DS:DS,L:L,W:W,H:H,n:NDOT};last=key});
+  steps.push(function(){var c=cache;DS=c.DS;L=c.L;W=c.W;H=c.H;dpr=d;
+    cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,W,H);paint();glow();done=pk;window.__dawnDots=c.n});
+  (function run(){if(my!==job)return;steps.shift()();if(steps.length)setTimeout(run,0)})();
+}
+var on=false;function go(){if(on)return;on=true;draw();
+  if('ResizeObserver' in window)new ResizeObserver(function(){draw()}).observe(cv);
+  addEventListener('resize',function(){draw()});
+  if(window.visualViewport){var zt=0;visualViewport.addEventListener('resize',function(){clearTimeout(zt);zt=setTimeout(draw,150)})}}
+try{var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){io.disconnect();go()}},{rootMargin:'100% 0px'});io.observe(cv)}catch(e){go()}   // 지켜보기가 없거나 실패하면 바로 그린다
+})();</script>
 </body>
 </html>

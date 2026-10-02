@@ -16,18 +16,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import comp_common as C  # noqa: E402
 
 CSS = '''
-/* 히어로 — 왼쪽 정렬 · 구호 · 한 줄 검색 */
-.hero{padding:56px 0 8px;max-width:680px}
-.eyebrow{margin:0;font:500 13px/20px var(--font);color:var(--ink-62)}
-.hero h1{margin:14px 0 0;font:700 44px/54px var(--font);letter-spacing:-.025em}
-.sub{margin:18px 0 0;font:400 17px/28px var(--font);color:var(--ink-72);max-width:560px}
-.search-wrap{position:relative;margin-top:36px}
-.search{display:flex;align-items:center;gap:12px;height:56px;border-bottom:1px solid var(--line);transition:border-color .15s}
-.search:focus-within{border-bottom-color:var(--ink)}
-.search svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;color:var(--ink-62);flex:none}
-.search input{flex:1;min-width:0;border:0;background:transparent;font:400 17px/24px var(--font);color:var(--ink);outline:0;padding:0}
-.search input::placeholder{color:var(--ink-62)}
-.search .btn{height:36px;padding:0 16px;flex:none}
+/* 머리 — 랜딩 첫 화면처럼 가운데 정렬 · 제목 하나 · 검색창(comp_common 의 밑줄 검색). 무대 안이라 자동완성 판도 무대 색 */
+.ph.home{padding-bottom:96px}
+.search-wrap{position:relative;margin:44px auto 0;max-width:560px;text-align:left}
 /* 자동완성 — 본문 위에 뜨는 판이라 여기만 면·그림자를 쓴다 */
 .ac{display:none;position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:20;background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:6px 0;box-shadow:0 8px 24px rgba(20,20,20,.08)}
 .ac.show{display:block}
@@ -39,7 +30,7 @@ CSS = '''
 .ac-x{border:0;background:none;color:var(--ink-62);font:400 18px/1 var(--font);cursor:pointer;padding:0 2px} .ac-x:hover{color:var(--ink)}
 .ac-empty{padding:12px 16px;font:400 14px/20px var(--font);color:var(--ink-62)}
 /* 절 */
-.sec{padding-top:72px}
+.sec{padding-top:96px}
 /* 최신 리포트 — 줄 목록 */
 .rows{border-top:1px solid var(--line)}
 .row{display:grid;grid-template-columns:200px minmax(0,1fr) 170px 96px;gap:24px;align-items:center;padding:18px 0;border-bottom:1px solid var(--hair)}
@@ -75,9 +66,8 @@ CSS = '''
 '''
 
 MOBILE_CSS = '''@media (max-width:820px){
-  .hero{padding:24px 0 4px} .hero h1{font-size:32px;line-height:40px} .sub{font-size:15px;line-height:24px;margin-top:12px}
-  .search-wrap{margin-top:24px} .search{height:50px} .search input{font-size:16px} .search .btn{height:32px;padding:0 12px;font-size:13px}
-  .sec{padding-top:48px}
+  .ph.home{padding-bottom:64px} .search-wrap{margin-top:32px}
+  .sec{padding-top:64px}
   .row{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"name price" "title title";gap:8px 12px;padding:14px 0;align-items:start}
   .row>div:first-child{grid-area:name} .r-title{grid-area:title;font-size:15px;line-height:22px;color:var(--ink-72)} .r-price{grid-area:price}
   .r-date{display:none} .r-meta .md{display:inline}
@@ -90,15 +80,13 @@ MOBILE_CSS = '''@media (max-width:820px){
 }'''
 
 BODY = '''<main class="wrap">
-  <header class="hero">
-    <p class="eyebrow" id="eyebrow">코스피 · 코스닥 상장사 리서치</p>
-    <h1>한국 상장사,<br>AI 리서치로 한눈에.</h1>
-    <p class="sub">재무·실적·밸류에이션을 한 페이지에. 핵심만 정리한 종목 분석으로 시장을 빠르게 파악하실 수 있습니다.</p>
+  <header class="ph dz c home">
+    <h1 id="homeH1">국내 상장 종목의<br>기업 분석 리포트</h1>
     <div class="search-wrap">
       <form class="search" id="searchForm" role="search" autocomplete="off" onsubmit="return false">
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-3.5-3.5"/></svg>
-        <input id="searchInput" placeholder="티커 · 종목명 · 업종 검색" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="acList">
-        <button class="btn btn-ink" type="button" id="searchBtn">검색</button>
+        <input id="searchInput" placeholder="종목명 또는 종목코드" aria-label="종목 검색" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="acList">
+        <button class="btn btn-ink" type="button" id="searchBtn">리포트 찾기</button>
       </form>
       <div class="ac" id="acList" role="listbox"></div>
     </div>
@@ -109,7 +97,7 @@ BODY = '''<main class="wrap">
     <p class="empty" id="reportEmpty" hidden>검색 결과가 없습니다.</p>
   </section>
   <section class="sec" id="movers">
-    <div class="sec-h"><h2>업종별 주목 종목</h2><a class="more" href="/industry.html">업종 분석 페이지로 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    <div class="sec-h"><h2>업종별 거래대금 상위 종목</h2><a class="more" href="/industry.html">전체 업종 보기 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
     <div class="tabs" id="tabs"></div>
     <div class="tbl-wrap"><table class="tbl movers"><thead><tr><th>종목</th><th>현재가</th><th>등락률</th><th>거래대금</th><th>시가총액</th></tr></thead><tbody id="moverBody"></tbody></table></div>
     <p class="note" id="moverNote"></p>
@@ -127,9 +115,9 @@ JS = r'''(function(){
     dir:function(c){return c>0?'up':c<0?'down':'flat'},
     mcap:function(n){return !n?'—':(n>=1?(+n).toLocaleString('en-US',{maximumFractionDigits:1})+'조':Math.round(n*10000).toLocaleString('ko-KR')+'억')},
     amt:function(n){return !n?'—':(n>=1e12?(n/1e12).toFixed(1)+'조':Math.round(n/1e8).toLocaleString('ko-KR')+'억')}};
-  // 리포트가 있는 종목 수 하나만 — 종목 수와 리포트 수를 나란히 두면 새로 상장돼 아직 리포트가 없는 종목만큼 어긋나 보인다
+  // 제목의 수는 리포트가 있는 종목 수 하나만 — 랜딩 첫 화면의 '국내 상장 N개 종목'과 같은 수. 화면에서 데이터로 센다
   var nBoth=live.filter(function(s){return RREP[s.ticker]}).length;
-  document.getElementById('eyebrow').textContent='코스피 · 코스닥 상장사 '+nBoth.toLocaleString('ko-KR')+'종목 리포트';
+  if(nBoth)document.getElementById('homeH1').innerHTML='국내 상장 '+nBoth.toLocaleString('ko-KR')+'개 종목의<br>기업 분석 리포트';
 
   /* ---- 최신 리포트 6편 (Home.html 과 같은 규칙) ---- */
   var REPORTS=live.filter(function(s){return RREP[s.ticker]}).map(function(s){var r=RREP[s.ticker];return Object.assign({},s,{reportDate:r.reportDate,reportTs:r.reportTs||r.reportDate,title:(r.title&&r.title.ko)||''})});
@@ -184,7 +172,7 @@ JS = r'''(function(){
       return '<tr data-tk="'+m.ticker+'"><td><span class="m-rank">'+(i+1)+'</span><a class="m-name" href="/stock.html?ticker='+m.ticker+'">'+esc(m.name)+'</a><div class="m-meta">'+m.ticker+' · '+esc(m.sector)+'</div></td>'
         +'<td>'+fmt.won(m.price)+'</td><td class="'+fmt.dir(c)+'">'+fmt.chg(c)+'</td><td>'+fmt.amt(m.trading_value)+'</td><td>'+fmt.mcap(m.mcap)+'</td></tr>'}).join('')
       :'<tr><td colspan="5" class="empty-td">해당 업종 종목이 없습니다.</td></tr>';
-    document.getElementById('moverNote').textContent=(active==='전체'?'전체':active)+' · 거래대금 순 상위 '+list.length+'종목'+(dateF?' · '+dateF+' 종가 기준':'');
+    document.getElementById('moverNote').textContent=(active==='전체'?'전체 종목':active+' 업종')+'의 거래대금 상위 '+list.length+'개 종목입니다.'+(dd?' '+(+dd.slice(4,6))+'월 '+(+dd.slice(6,8))+'일 종가 기준입니다.':'');
   }
   tabsEl.addEventListener('click',function(e){var b=e.target.closest('.tab');if(!b)return;if(b.dataset.more){openSheet();return}active=b.dataset.s;renderTabs();renderMovers()});
   body.addEventListener('click',function(e){var tr=e.target.closest('tr[data-tk]');if(!tr||e.target.closest('a'))return;location.href='/stock.html?ticker='+tr.dataset.tk});
@@ -213,12 +201,17 @@ JS = r'''(function(){
   ac.addEventListener('click',function(e){var x=e.target.closest('.ac-x');if(x){e.preventDefault();e.stopPropagation();setRecent(getRecent().filter(function(r){return r.t!==x.dataset.tk}));renderRecent();return}
     if(e.target.closest('#acClear')){e.preventDefault();setRecent([]);closeAC();return}var row=e.target.closest('.ac-recent');if(row)goStock(row.dataset.tk)});
   input.addEventListener('keydown',function(e){var composing=e.isComposing||e.keyCode===229;
-    if(e.key==='Enter'){if(!composing)e.preventDefault();var pick=(act>=0&&items[act])?items[act]:search(input.value)[0];if(pick)goStock(pick.ticker);else if(input.value.trim())document.getElementById('searchBtn').click();return}
+    if(e.key==='Enter'){if(!composing)e.preventDefault();var pick=(act>=0&&items[act])?items[act]:search(input.value)[0];if(pick)goStock(pick.ticker);else if(input.value.trim()){renderReports(input.value);closeAC();document.getElementById('reports').scrollIntoView({behavior:'smooth',block:'start'})}return}
     if(composing&&e.key!=='Escape')return;if(!ac.classList.contains('show'))return;
     if(e.key==='ArrowDown'){e.preventDefault();setActive(act+1)}else if(e.key==='ArrowUp'){e.preventDefault();setActive(act-1)}else if(e.key==='Escape')closeAC()});
   document.addEventListener('click',function(e){if(!e.target.closest('.search-wrap'))closeAC()});
   window.addEventListener('pageshow',function(e){if(e.persisted){try{input.blur()}catch(_){}closeAC()}});
-  document.getElementById('searchBtn').addEventListener('click',function(){renderReports(input.value);closeAC();document.getElementById('reports').scrollIntoView({behavior:'smooth',block:'start'})});
+  /* '리포트 찾기' — 종목이 하나로 정해지면(고른 후보 · 결과 하나 · 이름이나 종목코드가 꼭 맞음) 그 리포트로 간다. 여럿이면 후보 목록을 펼쳐 고르게 하고,
+     없으면 목록이 '검색 결과가 없습니다'를 말한다. 엔터는 예전처럼 첫 후보로 간다(실사이트와 같음) */
+  document.getElementById('searchBtn').addEventListener('click',function(){var q=input.value.trim();if(!q){input.focus();return}
+    if(act>=0&&items[act]){goStock(items[act].ticker);return}
+    var rs=search(q),ex=rs.filter(function(s){return s.name===q||s.ticker===q})[0];if(ex||rs.length===1){goStock((ex||rs[0]).ticker);return}
+    renderAC();input.focus()});
 
   renderReports('');renderTabs();renderMovers();
 })();
@@ -226,7 +219,7 @@ JS = r'''(function(){
 
 
 def build(out_path):
-    html = (C.head('홈 — 디자인 시안 | KOSAI') + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+    html = (C.head(C.title('홈')) + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('홈') + '\n' + BODY + '\n' + C.FOOTER + '\n'
             + '<script src="/data/stocks.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + JS + C.JS + '\n</script>\n</body>\n</html>')
     C.emit(out_path, html)

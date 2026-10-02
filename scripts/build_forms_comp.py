@@ -15,8 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import comp_common as C  # noqa: E402
 
 CSS = '''
-.page-hero,.page-body{max-width:640px}
-.page-body{padding-top:36px}
+.page-body{max-width:640px}
 form .fld:last-of-type{margin-bottom:30px}
 /* 만족도 — 세 얼굴. 고른 것만 먹색 */
 .rating{display:flex;gap:28px;padding:6px 0 2px}
@@ -26,41 +25,33 @@ form .fld:last-of-type{margin-bottom:30px}
 .direct{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);display:flex;justify-content:space-between;align-items:baseline;gap:16px;text-decoration:none;color:inherit}
 .direct .k{font:400 13px/20px var(--font);color:var(--ink-62)} .direct .v{font:500 15px/20px var(--font);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .direct:hover .v{text-decoration-color:var(--ink)}
 .sent .tbtn{font-size:14px;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
-@media (max-width:820px){.rating{gap:22px} .page-body{padding-top:28px}}
+@media (max-width:820px){.rating{gap:22px}}
 '''
 
 CONTACT = '''<main class="wrap">
-  <header class="page-hero">
-    <p class="crumb">도움말</p>
-    <h1>문의하기</h1>
-    <p class="sub">서비스 의견·협업 제안·데이터 오류 제보를 보내 주시기 바랍니다. 영업일 기준 2~3일 내에 답변드립니다.</p>
-  </header>
+  __HEAD_CONTACT__
   <div class="page-body">
     <form id="form" novalidate>
       <div class="fld"><span class="lbl">문의 유형</span>
-        <div class="seg" id="catSeg"><button type="button" class="on" data-cat="일반 문의">일반 문의</button><button type="button" data-cat="데이터 오류 제보">데이터 오류 제보</button><button type="button" data-cat="협업·제휴">협업·제휴</button></div>
+        <div class="seg" id="catSeg"><button type="button" class="on" data-cat="일반 문의">일반 문의</button><button type="button" data-cat="데이터 오류 제보">데이터 오류 제보</button><button type="button" data-cat="협업과 제휴">협업과 제휴</button></div>
       </div>
       <div class="fld"><label for="f-name">이름 <span class="opt">(선택)</span></label><input id="f-name" type="text" placeholder="성함을 입력하십시오" autocomplete="name"></div>
       <div class="fld"><label for="f-email">이메일</label><input id="f-email" type="email" placeholder="답변받으실 이메일 주소" autocomplete="email" required><div class="msg"></div></div>
-      <div class="fld"><label for="f-msg">문의 내용</label><textarea id="f-msg" placeholder="문의하실 내용을 자세히 적어 주십시오. 데이터 오류 제보의 경우 해당 페이지 주소를 함께 남겨주시면 빠르게 확인할 수 있습니다." required></textarea><div class="msg"></div></div>
+      <div class="fld"><label for="f-msg">문의 내용</label><textarea id="f-msg" placeholder="문의하실 내용을 자세히 적어 주십시오. 데이터 오류 제보의 경우 해당 페이지 주소를 함께 남겨 주시면 빠르게 확인할 수 있습니다." required></textarea><div class="msg"></div></div>
       <input type="text" id="hp" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
       <div class="alert" id="formErr" role="alert"></div>
-      <div class="submit"><button type="submit" class="btn btn-ink">문의 보내기</button><p class="form-note">보내주신 정보는 문의 응대 목적으로만 사용되며, 답변 후 안전하게 폐기됩니다.</p></div>
+      <div class="submit"><button type="submit" class="btn btn-ink">문의 보내기</button><p class="form-note">보내 주신 정보는 문의 응대 목적으로만 사용되며, 답변 후 안전하게 폐기됩니다.</p></div>
     </form>
     <div class="sent" id="sent" hidden>
-      <h2>문의가 접수되었습니다</h2>
-      <p>소중한 의견 감사합니다. 입력해 주신 이메일로 영업일 기준 2~3일 내에 답변드리겠습니다.</p>
+      <h2>문의를 접수했습니다</h2>
+      <p>입력하신 이메일로 영업일 기준 2~3일 안에 답변드립니다.</p>
     </div>
     <a class="direct" href="mailto:hello@kosai.kr"><span class="k">직접 메일 보내기</span><span class="v">hello@kosai.kr</span></a>
   </div>
 </main>'''
 
 FEEDBACK = '''<main class="wrap">
-  <header class="page-hero">
-    <p class="crumb">도움말</p>
-    <h1>피드백 보내기</h1>
-    <p class="sub">KOSAI를 이용하시면서 느끼신 점을 들려주시기 바랍니다. 좋았던 점도, 아쉬웠던 점도 모두 환영합니다.</p>
-  </header>
+  __HEAD_FEEDBACK__
   <div class="page-body">
     <form id="form" novalidate>
       <div class="fld"><span class="lbl">전반적인 만족도</span>
@@ -71,17 +62,17 @@ FEEDBACK = '''<main class="wrap">
         </div>
       </div>
       <div class="fld"><span class="lbl">어떤 피드백인가요?</span>
-        <div class="seg" id="catSeg"><button type="button" class="on" data-cat="개선 제안">개선 제안</button><button type="button" data-cat="버그 신고">버그 신고</button><button type="button" data-cat="칭찬·응원">칭찬·응원</button><button type="button" data-cat="기타">기타</button></div>
+        <div class="seg" id="catSeg"><button type="button" class="on" data-cat="개선 제안">개선 제안</button><button type="button" data-cat="버그 신고">버그 신고</button><button type="button" data-cat="칭찬과 응원">칭찬과 응원</button><button type="button" data-cat="기타">기타</button></div>
       </div>
       <div class="fld"><label for="f-msg">내용</label><textarea id="f-msg" placeholder="어떤 점이 좋았는지, 무엇이 불편했는지, 어떤 기능이 있으면 좋겠는지 자유롭게 적어 주십시오." required></textarea><div class="msg"></div></div>
-      <div class="fld"><label for="f-email">이메일 <span class="opt">(선택 · 답변이 필요한 경우)</span></label><input id="f-email" type="email" placeholder="답변받으실 이메일 주소" autocomplete="email"><div class="msg"></div></div>
+      <div class="fld"><label for="f-email">이메일 <span class="opt">(선택, 답변이 필요한 경우)</span></label><input id="f-email" type="email" placeholder="답변받으실 이메일 주소" autocomplete="email"><div class="msg"></div></div>
       <input type="text" id="hp" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
       <div class="alert" id="formErr" role="alert"></div>
-      <div class="submit"><button type="submit" class="btn btn-ink" id="submitBtn" disabled>피드백 보내기</button><p class="form-note" id="note">만족도를 선택하시면 전송하실 수 있습니다. 익명으로 보내셔도 괜찮습니다.</p></div>
+      <div class="submit"><button type="submit" class="btn btn-ink" id="submitBtn" disabled>피드백 보내기</button><p class="form-note" id="note">만족도를 선택하시면 보내실 수 있습니다. 이메일 없이 익명으로 보내셔도 됩니다.</p></div>
     </form>
     <div class="sent" id="sent" hidden>
-      <h2>소중한 피드백 감사합니다</h2>
-      <p>보내주신 의견은 빠짐없이 읽고, 서비스를 개선하는 데 활용하겠습니다.</p>
+      <h2>피드백을 접수했습니다</h2>
+      <p>보내 주신 의견은 모두 읽고 서비스 개선에 참고합니다.</p>
       <a class="tbtn" href="/Home.html">홈으로 돌아가기</a>
     </div>
   </div>
@@ -118,7 +109,7 @@ CONTACT_JS = r'''(function(){''' + JS_COMMON + r'''
 
 FEEDBACK_JS = r'''(function(){''' + JS_COMMON + r'''
   var rating=document.getElementById('rating'),submitBtn=document.getElementById('submitBtn'),note=document.getElementById('note'),rated=false;
-  rating.addEventListener('click',function(e){var r=e.target.closest('.rate');if(!r)return;[].slice.call(rating.children).forEach(function(c){var on=c===r;c.classList.toggle('on',on);c.setAttribute('aria-checked',on?'true':'false')});rated=true;submitBtn.disabled=false;note.textContent='익명으로 보내셔도 괜찮습니다.'});
+  rating.addEventListener('click',function(e){var r=e.target.closest('.rate');if(!r)return;[].slice.call(rating.children).forEach(function(c){var on=c===r;c.classList.toggle('on',on);c.setAttribute('aria-checked',on?'true':'false')});rated=true;submitBtn.disabled=false;note.textContent='이메일 없이 익명으로 보내셔도 됩니다.'});
   ['f-msg','f-email'].forEach(function(id){var el=document.getElementById(id);if(el)el.addEventListener('input',function(){fldClear(el)})});
   document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();if(!rated)return;
     var msg=document.getElementById('f-msg'),email=document.getElementById('f-email'),bad=null,mv=msg.value.trim();
@@ -134,10 +125,17 @@ def page(title, body, js):
             + C.nav('') + '\n' + body + '\n' + C.FOOTER + '\n<script>\n' + js + '\n' + C.JS + '\n</script>\n</body>\n</html>')
 
 
+# 머리 — 이름표는 꼬리의 묶음 이름('회사')과 같다
+HEAD_CONTACT = ('회사', '문의하기', '서비스에 대한 의견과 협업 제안, 데이터 오류 제보를 받습니다. 영업일 기준 2~3일 안에 답변드립니다.')
+HEAD_FEEDBACK = ('회사', '피드백 보내기', 'KOSAI를 이용하시면서 느끼신 점을 보내 주시기 바랍니다. 좋았던 점과 불편했던 점 모두 서비스 개선에 참고합니다.')
+
+
 def build(outs=None):
     outs = outs or {'contact': 'preview/contact.html', 'feedback': 'preview/feedback.html'}
-    for out, title, body, js in [(outs['contact'], '문의하기 — 디자인 시안 | KOSAI', CONTACT, CONTACT_JS),
-                                 (outs['feedback'], '피드백 — 디자인 시안 | KOSAI', FEEDBACK, FEEDBACK_JS)]:
+    contact = CONTACT.replace('__HEAD_CONTACT__', C.page_head(*HEAD_CONTACT))
+    feedback = FEEDBACK.replace('__HEAD_FEEDBACK__', C.page_head(*HEAD_FEEDBACK))
+    for out, title, body, js in [(outs['contact'], C.title('문의하기'), contact, CONTACT_JS),
+                                 (outs['feedback'], C.title('피드백'), feedback, FEEDBACK_JS)]:
         html = page(title, body, js)
         C.emit(ROOT / out, html)
         print(f'✅ {ROOT / out} · {len(html):,}자')

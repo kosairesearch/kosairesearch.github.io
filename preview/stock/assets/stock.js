@@ -66,15 +66,21 @@ window.kosTocInit=function(){
 };
 window.kosTocInit();
 (function(){
-  var nav=document.getElementById('nav'),tick=false;
-  function upd(){tick=false;nav.classList.toggle('scrolled',window.scrollY>32);if(window.kosOnScroll)window.kosOnScroll()}
-  addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+  var nav=document.getElementById('nav'),tick=false,root=document.documentElement;
+  /* 무대(.dz — 페이지 머리 띠) 위에 있으면 머리를 밝은 글자로, 화면 맨 위 · 맨 아래 가장자리가 무대이면 사파리 띠와 theme-color 도 무대 색(랜딩과 같은 규칙) */
+  function over(y){var zs=document.querySelectorAll('.dz');for(var i=0;i<zs.length;i++){var b=zs[i].getBoundingClientRect();if(b.top<=y&&b.bottom>=y)return true}return false}
+  function upd(){tick=false;nav.classList.toggle('scrolled',window.scrollY>32);
+    var open=nav.classList.contains('menu-open'),nb=nav.getBoundingClientRect();
+    nav.classList.toggle('on-band',!open&&over(nb.top+nb.height/2));root.classList.toggle('band-top',!open&&over(6));root.classList.toggle('band-bot',!open&&over(innerHeight-6));
+    if(window.kosOnScroll)window.kosOnScroll()}
+  function req(){if(!tick){tick=true;requestAnimationFrame(upd)}}
+  addEventListener('scroll',req,{passive:true});addEventListener('resize',req);upd();window.kosBandUpd=req;
   var sun='<path d="M12 4V2M12 22v-2M4.9 4.9 3.5 3.5M20.5 20.5l-1.4-1.4M4 12H2M22 12h-2M4.9 19.1l-1.4 1.4M20.5 3.5l-1.4 1.4"/><circle cx="12" cy="12" r="4"/>',moon='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
   var root=document.documentElement,icon=document.getElementById('themeIcon');function paint(){icon.innerHTML=root.getAttribute('data-theme')==='dark'?sun:moon}paint();window.__kosPaintTheme=paint;
   document.getElementById('themeBtn').addEventListener('click',function(){var t=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',t);try{localStorage.setItem('kos-theme',t)}catch(e){}paint();});
   /* 휴대폰 메뉴 */
   var mb=document.getElementById('menuBtn'),mm=document.getElementById('mmenu');
-  function setMenu(on){nav.classList.toggle('menu-open',on);mm.classList.toggle('open',on);mb.setAttribute('aria-expanded',on?'true':'false');document.documentElement.style.overflow=on?'hidden':'';if(window.KOSSmoothScroll){on?window.KOSSmoothScroll.stop():window.KOSSmoothScroll.start()}}  /* html 에 건다 — body 에 걸면 sticky 헤더가 사라진다(html 이 overflow-x:hidden 이라 body 가 스크롤 상자가 됨) */
+  function setMenu(on){nav.classList.toggle('menu-open',on);mm.classList.toggle('open',on);mb.setAttribute('aria-expanded',on?'true':'false');document.documentElement.style.overflow=on?'hidden':'';if(window.KOSSmoothScroll){on?window.KOSSmoothScroll.stop():window.KOSSmoothScroll.start()}upd()}  /* html 에 건다 — body 에 걸면 sticky 헤더가 사라진다(html 이 overflow-x:hidden 이라 body 가 스크롤 상자가 됨) */
   mb.addEventListener('click',function(){setMenu(!nav.classList.contains('menu-open'))});
   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('menu-open'))setMenu(false)});
   window.matchMedia('(min-width:821px)').addEventListener('change',function(e){if(e.matches)setMenu(false)});

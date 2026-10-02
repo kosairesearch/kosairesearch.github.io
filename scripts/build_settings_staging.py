@@ -42,8 +42,7 @@ body .ks-dlg .ks-btns{display:flex;justify-content:flex-end;gap:12px;margin-top:
 .need{margin-top:32px;padding-top:24px;border-top:1px solid var(--line)} .need p{margin:0 0 20px;font:400 15px/24px var(--font);color:var(--ink-72)}
 @media (max-width:820px){#mount .ks-kv{grid-template-columns:96px 1fr} #mount .ks-row{align-items:flex-start;flex-direction:column;gap:10px}}'''
 
-BODY = '''<main class="wrap"><div class="auth wide">
-  <p class="crumb">계정</p><h1>설정</h1>
+BODY = '''<main class="wrap"><header class="ph dz c"><p class="crumb">계정</p><h1>설정</h1></header><div class="auth wide">
   <div id="mount" aria-live="polite"><p class="ks-note">불러오는 중…</p></div>
 </div></main>'''
 

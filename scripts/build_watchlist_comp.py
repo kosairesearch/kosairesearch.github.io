@@ -16,12 +16,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import comp_common as C  # noqa: E402
 
 CSS = '''
-.hero{padding:44px 0 0}
-.crumb{font:500 13px/20px var(--font);color:var(--ink-62)}
-.hero h1{margin:12px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
-.hero .sub{margin:16px 0 0;font:400 17px/28px var(--font);color:var(--ink-72);max-width:640px}
 /* 정렬 · 편집 줄 */
-.bar{margin-top:36px;display:flex;align-items:center;gap:24px;border-bottom:1px solid var(--hair)}
+.bar{margin-top:48px;display:flex;align-items:center;gap:24px;border-bottom:1px solid var(--hair)}
 .sorts{position:relative;display:flex;gap:20px;align-items:center;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0} .sorts::-webkit-scrollbar{display:none}
 .sorts .lbl{font:500 12px/44px var(--font);color:var(--ink-62);flex:none;margin-right:2px}
 .sorts button{flex:none;position:relative;border:0;background:none;padding:0;font:500 13px/44px var(--font);color:var(--ink-62);cursor:pointer;white-space:nowrap;transition:color .12s}
@@ -45,12 +41,11 @@ CSS = '''
 .pctl{position:relative;display:flex;gap:2px} .pctl>.ind{margin-top:4px} .pctl button{border:0;background:none;min-width:32px;height:32px;padding:0 6px;font:500 13px var(--font);color:var(--ink-62);cursor:pointer}
 .pctl button:hover{color:var(--ink)} .pctl button.on{color:var(--ink);font-weight:600} .pctl button:disabled{color:var(--ink-30);cursor:default}
 /* 빈 목록 */
-.empty{padding:56px 0 24px;max-width:520px} .empty h2{margin:0;font:700 22px/30px var(--font);letter-spacing:-.02em} .empty p{margin:12px 0 24px;font:400 15px/24px var(--font);color:var(--ink-72)}
+.empty{padding:48px 0 24px;max-width:520px} .empty p{margin:0 0 24px;font:400 16px/26px var(--font);color:var(--ink-72)}
 '''
 
 MOBILE_CSS = '''@media (max-width:820px){
-  .hero{padding:20px 0 0} .hero h1{font-size:32px;line-height:38px} .hero .sub{font-size:15px;line-height:24px}
-  .bar{margin-top:24px;gap:12px} .sorts{display:none}
+  .bar{margin-top:32px;gap:12px} .sorts{display:none}
   .sortsel{display:block;flex:1;min-width:0;height:44px;border:0;background:transparent;font:500 14px var(--font);color:var(--ink);padding:0;outline:0}
   .row{grid-template-columns:24px minmax(0,1fr) auto;grid-template-areas:"rk name price" "rk title title";gap:8px 12px;padding:14px 0;align-items:start}
   .rows.edit .row{grid-template-columns:28px 24px minmax(0,1fr) auto;grid-template-areas:"rm rk name price" "rm rk title title"}
@@ -60,10 +55,10 @@ MOBILE_CSS = '''@media (max-width:820px){
 }'''
 
 BODY = '''<main class="wrap">
-  <header class="hero">
-    <p class="crumb" id="count">관심종목</p>
-    <h1>관심 종목</h1>
-    <p class="sub">종목 페이지에서 추가한 종목을 한 줄씩 모아 봅니다.__DEMO_NOTE__</p>
+  <header class="ph dz">
+    <p class="crumb">관심종목</p>
+    <h1 id="wlH1">추가한 종목</h1>
+    <p class="sub">__SUB__</p>
   </header>
   <div class="bar">
     <div class="sorts" id="sorts"><span class="lbl">정렬</span>
@@ -75,9 +70,8 @@ BODY = '''<main class="wrap">
   <div class="rows" id="rows"></div>
   <div class="pager" id="pager" hidden><span id="pinfo"></span><div class="pctl" id="pctl"></div></div>
   <div class="empty" id="empty" hidden>
-    <h2>관심 종목이 비어 있습니다</h2>
-    <p>리포트 페이지에서 업종·시가총액·PER 등 조건으로 종목을 찾으시거나, 종목 상세 페이지에서 관심종목에 추가하실 수 있습니다.</p>
-    <a class="btn btn-ink" href="/Reports.html">리포트 둘러보기</a>
+    <p>리포트 목록에서 업종이나 시가총액, PER 같은 조건으로 종목을 찾을 수 있습니다.</p>
+    <a class="btn btn-ink" href="/Reports.html">전체 리포트 보기</a>
   </div>
 </main>'''
 
@@ -104,8 +98,9 @@ JS = r'''(function(){
     return '<a class="row" href="/stock.html?ticker='+s.ticker+'" data-tk="'+s.ticker+'"><button type="button" class="rm" data-rm="'+s.ticker+'" aria-label="제거"><svg viewBox="0 0 24 24"><path d="M5 12h14"/></svg></button><span class="rk">'+(i+1)+'</span>'
       +'<div><div class="r-name">'+esc(s.name)+'</div><div class="r-meta">'+s.ticker+' · '+esc(s.market)+' · '+esc(s.sector)+(r&&r.reportDate?'<span class="md"> · <b>'+esc(r.reportDate)+'</b></span>':'')+'</div></div>'
       +'<div class="r-title'+(t?'':' none')+'">'+(t?esc(t):'리포트 준비 중')+'</div><div class="r-price">'+won(s.price)+'<span class="c '+dir(c)+'">'+chg(c)+'</span></div><div class="r-date">'+esc(r&&r.reportDate||'—')+'</div></a>'}
-  function render(){document.getElementById('count').textContent='관심종목 · '+LIST.length+'개 종목';
-    if(!LIST.length){rowsEl.innerHTML='';emptyEl.hidden=!!(waitedW&&(!W||(W.ready===false)));pagerEl.hidden=true;document.querySelector('.bar').hidden=true;return}
+  var h1=document.getElementById('wlH1');
+  function render(){var loading=!!(waitedW&&(!W||(W.ready===false)));if(!loading)h1.textContent=LIST.length?'추가한 종목 '+LIST.length+'개':'추가한 종목이 없습니다';
+    if(!LIST.length){rowsEl.innerHTML='';emptyEl.hidden=loading;pagerEl.hidden=true;document.querySelector('.bar').hidden=true;return}
     emptyEl.hidden=true;document.querySelector('.bar').hidden=false;
     var list=sorted(),total=list.length,pages=Math.max(1,Math.ceil(total/PAGE));if(page>pages)page=pages;if(page<1)page=1;var start=(page-1)*PAGE;
     rowsEl.innerHTML=list.slice(start,start+PAGE).map(function(s,i){return row(s,start+i)}).join('');rowsEl.classList.toggle('edit',edit);
@@ -120,13 +115,16 @@ JS = r'''(function(){
   var editBtn=document.getElementById('editBtn'),clearBtn=document.getElementById('clearAll');
   function setEdit(on){edit=on;editBtn.textContent=on?'완료':'편집';editBtn.classList.toggle('on',on);clearBtn.hidden=!on;rowsEl.classList.toggle('edit',on)}
   editBtn.addEventListener('click',function(){setEdit(!edit)});
-  clearBtn.addEventListener('click',function(){if(!confirm('관심 종목을 전체 삭제하시겠습니까?'))return;setEdit(false);page=1;if(W){W.clear();return}LIST=[];render()});
+  clearBtn.addEventListener('click',function(){if(!confirm('관심종목을 모두 삭제하시겠습니까?'))return;setEdit(false);page=1;if(W){W.clear();return}LIST=[];render()});
   rowsEl.addEventListener('click',function(e){var rm=e.target.closest('[data-rm]');if(rm){e.preventDefault();if(W){W.remove(rm.dataset.rm);return}LIST=LIST.filter(function(s){return s.ticker!==rm.dataset.rm});render()}});
   document.getElementById('pctl').addEventListener('click',function(e){var b=e.target.closest('button[data-pg]');if(!b)return;var pg=b.dataset.pg;if(pg==='prev')page=Math.max(1,page-1);else if(pg==='next')page++;else page=+pg;render();window.scrollTo({top:0,behavior:'smooth'})});
   render();
 })();
 '''
 
+
+# 서브 — 어디서 추가하는지, 목록이 어디에 남는지(계정 · Firestore 라 기기를 바꿔도 같다)
+SUB = '리포트 목록이나 종목 리포트에서 관심종목에 추가할 수 있습니다. 목록은 계정에 저장되어 휴대폰과 컴퓨터에서 같이 볼 수 있습니다.'
 
 # 로그인 관문(스테이징·실사이트) — 로그인 전에는 본문을 숨기고 auth-guard.js 가 푼다. kos-signed=1 이면 바로 보인다. 2.5초 안에 못 풀면 그냥 보인다.
 # staging/tests/layout.test.mjs 가 이 문자열(classList.add('kos-locked'))이 관심종목에만 있는지 본다.
@@ -135,8 +133,9 @@ GATE = "<style>html.kos-locked body{visibility:hidden}</style>\n<script>(functio
 
 def build(out_path):
     stg = C.MODE == 'staging'
-    body = BODY.replace('__DEMO_NOTE__', '' if stg else ' 시안이라 로그인 없이 예시 종목으로 그렸습니다.')
-    html = (C.head('관심 종목 | KOSAI' if stg else '관심 종목 — 디자인 시안 | KOSAI', extra=GATE if stg else '') + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+    sub = SUB + ('' if stg else ' 시안이라 로그인 없이 예시 종목으로 그렸습니다.')
+    body = BODY.replace('__SUB__', C.sents(sub))
+    html = (C.head(C.title('관심종목'), extra=GATE if stg else '') + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('관심종목') + '\n' + body + '\n' + C.FOOTER + '\n'
             + '<script src="/data/stocks.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + JS + C.JS + '\n</script>\n</body>\n</html>')
     C.emit(out_path, html)
