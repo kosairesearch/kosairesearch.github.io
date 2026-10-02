@@ -31,8 +31,8 @@ SITE = 'https://kosai.kr'
 PARA_KO = 170
 SECTIONS_V2 = ['리포트 개요', '사업 구조', '실적 추이', '실적 분석', '산업 분석', '전망', '밸류에이션',
                '강세 요인', '약세 요인', '리스크 요인', '다음 체크포인트', '종합 의견', '참고 출처']
-PRIMARY_SRC = [('한국거래소 (KRX) — 시세 · 시가총액 · 거래량', 'https://www.krx.co.kr'),
-               ('금융감독원 전자공시 (DART) — 재무제표 · 배당 공시', 'https://dart.fss.or.kr')]
+PRIMARY_SRC = [('한국거래소(KRX) — 시세 · 시가총액 · 거래량', 'https://www.krx.co.kr'),
+               ('금융감독원 전자공시(DART) — 재무제표 · 배당 공시', 'https://dart.fss.or.kr')]
 DISC = '본 콘텐츠는 AI가 시장 데이터와 웹 검색 결과를 분석한 정보 제공용이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 책임은 투자자 본인에게 있습니다. 데이터는 지연되거나 오류가 포함될 수 있습니다.'
 
 
@@ -400,7 +400,7 @@ def _stats(st, rep, tier, D):
              ('PER', f(per, '{:.1f}배')), ('PBR', f(pbr, '{:.1f}배')), ('EPS', f(eps, '{:,.0f}원')), ('배당수익률', f(div, '{:.2f}%'))]
     html = ''.join(f'<div class="st"><div class="st-k">{esc(k)}</div><div class="st-v">{esc(v)}</div></div>' for k, v in stats)
     if tier == 'v2':
-        note = f'PER·EPS·PBR·BPS 는 최근 4개 분기({esc(window)}) 기준 자체 산출 · 배당수익률은 주당 {dps:,.0f}원 기준' if dps is not None else f'PER·EPS·PBR·BPS 는 최근 4개 분기({esc(window)}) 기준 자체 산출'
+        note = f'PER·EPS·PBR·BPS는 최근 4개 분기({esc(window)}) 기준 자체 산출 · 배당수익률은 주당 {dps:,.0f}원 기준' if dps is not None else f'PER·EPS·PBR·BPS는 최근 4개 분기({esc(window)}) 기준 자체 산출'
     else:
         note = 'PER·PBR·배당수익률은 최근 확정 실적(EPS·BPS·주당배당금)과 현재 주가로 산출'
     return html, note
@@ -527,7 +527,7 @@ def render(tk, D, inline=True, assets=None, index=False, base=SITE, dir_path='st
         head_title = f'{name}({tk}) 종목 — 리포트 준비 중 | KOSAI'
         desc = f'{name}({tk}) 시세·시가총액·PER·PBR. AI 분석 리포트는 첫 정기보고서가 공시된 뒤 작성됩니다.'
         main_body = f'''<div class="pending"><h2>이 종목의 리포트는 준비 중입니다</h2>
-    <p>새로 상장된 종목은 첫 사업·분기보고서가 공시된 뒤에 리포트를 작성합니다. 시세·시가총액·PER·PBR 같은 지표는 매 거래일 저녁에 갱신됩니다.</p>
+    <p>새로 상장된 종목은 첫 정기보고서가 공시된 뒤 리포트를 작성합니다. 시세·시가총액·PER·PBR 같은 지표는 매 거래일 저녁에 갱신됩니다.</p>
     <ol class="srcs">{''.join(f'<li><a href="{esc(u)}" target="_blank" rel="noopener">{esc(t)}</a></li>' for t, u in PRIMARY_SRC)}</ol>
     <p class="disc">{DISC}</p></div>'''
 

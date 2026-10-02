@@ -27,7 +27,7 @@ input[type=radio],input[type=checkbox]{accent-color:var(--ink);width:16px;height
 /* 요약 — 오른쪽에 붙박이 */
 .sum{position:sticky;top:calc(84px + var(--kos-bar-h,0px));border-top:1px solid var(--line);padding-top:16px}
 .plan-badge{display:inline-block;font:600 12px/16px var(--font);letter-spacing:.06em;color:var(--ink-62)}
-.sum .amt{margin:8px 0 0;font:700 32px/40px var(--font);letter-spacing:-.02em} .sum .amt small{font:500 14px/20px var(--font);letter-spacing:0;color:var(--ink-62);margin-left:4px}
+.sum .amt{margin:8px 0 0;font:700 32px/40px var(--font);letter-spacing:-.02em} .sum .amt small{font:500 14px/20px var(--font);letter-spacing:0;color:var(--ink-62);margin-left:4px} .sum .amt small.pre{margin:0 2px 0 0}   /* '월 9,900원' — 작은 '월'을 앞에(가이드 4-5) */
 .sum .cyc{margin:2px 0 0;font:400 13px/20px var(--font);color:var(--ink-62)}
 .sum ul{list-style:none;margin:20px 0 0;padding:0} .sum li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px solid var(--hair);font:400 14px/20px var(--font)} .sum li span{color:var(--ink-62)} .sum li b{font-weight:500;text-align:right}
 .sum .total{display:flex;justify-content:space-between;margin-top:6px;padding-top:14px;border-top:1px solid var(--line);font:600 15px/22px var(--font)}

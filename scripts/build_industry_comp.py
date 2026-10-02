@@ -62,6 +62,7 @@ MOBILE_CSS = '''@media (max-width:820px){
 }'''
 
 JS = r'''(function(){
+  var TSUF='__TSUF__';   /* 문서 제목 꼬리 — 시안만 '— 디자인 시안'(C.title) */
   var STOCKS=(window.KOS_LIVE_DATA&&KOS_LIVE_DATA.stocks)||[], SECTORS=(window.KOS_SECTORS&&KOS_SECTORS.sectors)||{}, RREP=(window.KOS_REPORTS&&KOS_REPORTS.reports)||{};
   var dd=(window.KOS_LIVE_DATA&&KOS_LIVE_DATA.dataDate)||''; var dateF=dd?dd.slice(0,4)+'-'+dd.slice(4,6)+'-'+dd.slice(6,8):'';
   function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
@@ -91,14 +92,14 @@ JS = r'''(function(){
       +rows.map(function(r){return '<tr data-sec="'+esc(r.sec)+'"><td><a class="s-name" href="'+secLink(r.sec)+'">'+esc(r.sec)+'</a></td><td>'+mcap(r.mc)+'</td>'
         +(withW?'<td class="w"><i class="wb" style="--w:'+(r.w/maxW).toFixed(3)+'"></i>'+r.w.toFixed(1)+'%</td>':'')
         +'<td>'+r.n+'</td><td class="'+dir(r.chg)+'">'+chg(r.chg)+'</td><td class="keys">'+r.list.slice(0,3).map(function(s){return esc(s.name)}).join(' · ')+'</td></tr>'}).join('')+'</tbody></table></div>'}
-  function renderList(){var a=agg();document.title='업종 분석 — 디자인 시안 | KOSAI';
+  function renderList(){var a=agg();document.title='업종 분석'+TSUF;
     /* 업종 수는 분석 글이 있는 대표 업종만 — '기타' 줄은 표에 두되 세지 않는다(랜딩 · 실사이트 첫 화면과 같은 규칙 · stamp_counts.sector_count).
        종목은 코넥스까지 들어 있어 '국내 상장'(2026-10-02) */
-    app.innerHTML='<header class="hero"><p class="crumb">국내 상장 '+STOCKS.length.toLocaleString('ko-KR')+'개 종목 · '+a.rows.filter(function(r){return SECTORS[r.sec]}).length+'개 업종 · '+a.themeRows.length+'개 테마</p><h1>업종 분석</h1><p class="sub">한국 상장사를 업종으로 나눠 시가총액·등락률과 AI 업종 분석을 제공합니다.</p></header>'
+    app.innerHTML='<header class="hero"><p class="crumb">국내 상장 '+STOCKS.length.toLocaleString('ko-KR')+'개 종목 · '+a.rows.filter(function(r){return SECTORS[r.sec]}).length+'개 업종 · '+a.themeRows.length+'개 테마</p><h1>업종 분석</h1><p class="sub">국내 상장사를 업종별로 나누어 시가총액과 등락률, 업종 분석을 제공합니다.</p></header>'
       +'<section class="list"><div class="sec-h"><h2>업종</h2></div>'+sectorTable(a.rows,true)+'<p class="note">시가총액 순 · 시장 비중은 코스피·코스닥 전체 시가총액 대비 · 평균 등락률은 시가총액 가중'+(dateF?' · '+dateF+' 종가 기준':'')+'</p></section>'
       +(a.themeRows.length?'<section class="list"><div class="sec-h"><h2>테마</h2></div>'+sectorTable(a.themeRows,false)+'<p class="note">테마는 여러 업종에 걸친 묶음이라 시장 비중을 따로 두지 않습니다.</p></section>':'')}
   function renderDetail(sec){var a=agg(),row=null;a.rows.forEach(function(r){if(r.sec===sec)row=r});var isTheme=!row;if(!row&&a.byCat[sec])row=mkRow(sec,a.byCat[sec],a.total);if(!row){renderList();return}
-    var an=SECTORS[sec]||null;document.title=sec+' 업종 분석 — 디자인 시안 | KOSAI';
+    var an=SECTORS[sec]||null;document.title=sec+' 업종 분석'+TSUF;
     var stats='<section class="stats"><div><div class="st-k">시가총액 합계</div><div class="st-v">'+mcap(row.mc)+'</div></div>'+(isTheme?'':'<div><div class="st-k">시장 비중</div><div class="st-v">'+row.w.toFixed(1)+'%</div></div>')
       +'<div><div class="st-k">종목 수</div><div class="st-v">'+row.n+'개</div></div><div><div class="st-k">평균 등락률</div><div class="st-v '+dir(row.chg)+'">'+chg(row.chg)+'</div></div></section>'
       +'<p class="stats-note">평균 등락률은 시가총액 가중'+(isTheme?' · 테마는 여러 업종에 걸쳐 있어 시장 비중을 두지 않습니다':'')+(dateF?' · '+dateF+' 종가 기준':'')+'</p>';
@@ -106,13 +107,13 @@ JS = r'''(function(){
     if(an){secs.push({t:'업종 개요',h:paras(an.overview)});secs.push({t:'산업 구조·가치사슬',h:paras(an.structure)});secs.push({t:'최근 동향',h:paras(an.trends)});secs.push({t:'향후 전망',h:paras(an.outlook)});
       var risks=(an.risks||[]).map(function(r){return '<div class="rk"><h4>'+esc(r.title&&r.title.ko)+'</h4><p>'+esc(r.body&&r.body.ko)+'</p></div>'}).join('');
       var d=fmtDay(an.generatedAt||(window.KOS_SECTORS&&KOS_SECTORS.lastUpdated)),src=an.sources||[];
-      var tail=(d?'<p class="stamp">'+d+' 작성 · 업종 상장사 종합과 웹 검색 참고 · 본문 수치는 작성 시점 기준이며, 위 지표는 '+(dateF||'최근')+' 종가입니다.</p>':'')
+      var tail=(d?'<p class="stamp">'+d+' 작성 · 업종 내 상장사 자료와 웹 검색 참고 · 본문 수치는 작성 시점 기준이며, 위 지표는 '+(dateF||'최근')+' 종가입니다.</p>':'')
         +(src.length?'<details class="srcmore"><summary>참고 자료 '+src.length+'건 더 보기</summary><ol class="srcs">'+src.map(function(u){return '<li><a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(host(u))+'</a></li>'}).join('')+'</ol></details>':'');
       if(risks)secs.push({t:'리스크 요인',h:'<div class="rks">'+risks+'</div>'+tail});else if(tail)secs[secs.length-1].h+=tail}
     else if(sec==='기타'){secs.push({t:'분류 안내',h:'<div class="prose"><p>여러 업종에 걸쳐 있거나 기존 분류에 속하지 않는 기업을 모은 구간입니다. 사업 내용이 서로 달라 하나의 업황으로 묶이지 않으므로 AI 업종 분석을 제공하지 않습니다.</p><p>각 기업의 사업 구조와 실적은 아래 종목의 개별 리포트에서 확인하실 수 있습니다.</p></div>'})}
     else{secs.push({t:'업종 분석',h:'<p class="ainote">AI 업종 분석은 분기별 갱신 시 반영됩니다.</p>'})}
     var rows=row.list.slice(0,20).map(function(s,i){var c=s.change||0,r=RREP[s.ticker];return '<tr data-tk="'+s.ticker+'"><td><span class="m-rank">'+(i+1)+'</span><a class="m-name" href="/stock.html?ticker='+s.ticker+'">'+esc(s.name)+'</a><div class="m-meta">'+s.ticker+' · '+esc(s.market)+'</div></td><td>'+won(s.price)+'</td><td class="'+dir(c)+'">'+chg(c)+'</td><td>'+mcap(s.mcap)+'</td><td class="rt">'+esc(r&&r.title&&r.title.ko||'')+'</td></tr>'}).join('');
-    secs.push({t:'업종 내 주요 종목',wide:true,h:'<div class="tbl-wrap"><table class="tbl stocks"><thead><tr><th>종목</th><th>현재가</th><th>등락률</th><th>시가총액</th><th class="rt">리포트</th></tr></thead><tbody>'+rows+'</tbody></table></div><p class="note">시가총액 순 상위 '+Math.min(20,row.list.length)+'종목'+(row.list.length>20?' (전체 '+row.list.length+'종목)':'')+(dateF?' · '+dateF+' 종가 기준':'')+'</p>'});
+    secs.push({t:(isTheme?'테마':'업종')+' 내 주요 종목',wide:true,h:'<div class="tbl-wrap"><table class="tbl stocks"><thead><tr><th>종목</th><th>현재가</th><th>등락률</th><th>시가총액</th><th class="rt">리포트</th></tr></thead><tbody>'+rows+'</tbody></table></div><p class="note">시가총액 순 상위 '+Math.min(20,row.list.length)+'종목'+(row.list.length>20?' (전체 '+row.list.length+'종목)':'')+(dateF?' · '+dateF+' 종가 기준':'')+'</p>'});
     var toc=secs.map(function(s,i){var n=String(i+1).padStart(2,'0');return '<a href="#s'+n+'"><span class="n">'+n+'</span>'+esc(s.t)+'</a>'}).join('');
     var chips=secs.map(function(s,i){var n=String(i+1).padStart(2,'0');return '<a href="#s'+n+'">'+n+' '+esc(s.t)+'</a>'}).join('');
     var body=secs.map(function(s,i){var n=String(i+1).padStart(2,'0');return '<section class="sec'+(s.wide?' wide':'')+'" id="s'+n+'"><div class="sec-h"><span class="num">'+n+'</span><h2>'+esc(s.t)+'</h2></div>'+s.h+'</section>'}).join('');
@@ -126,9 +127,9 @@ JS = r'''(function(){
 
 
 def build(out_path):
-    html = (C.head('업종 분석 — 디자인 시안 | KOSAI') + '\n<style>\n' + C.CSS + '\n' + C.TOC_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + C.TOC_MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+    html = (C.head(C.title('업종 분석')) + '\n<style>\n' + C.CSS + '\n' + C.TOC_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + C.TOC_MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('업종 분석') + '\n<main class="wrap" id="app"></main>\n' + C.FOOTER + '\n'
-            + '<script src="/data/stocks.js"></script>\n<script src="/data/sectors.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + JS + C.TOC_JS + '\n' + C.JS + '\n</script>\n</body>\n</html>')
+            + '<script src="/data/stocks.js"></script>\n<script src="/data/sectors.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + JS.replace('__TSUF__', C.title('')) + C.TOC_JS + '\n' + C.JS + '\n</script>\n</body>\n</html>')
     C.emit(out_path, html)
     print(f'✅ {out_path} · {len(html):,}자')
 

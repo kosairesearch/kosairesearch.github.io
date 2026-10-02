@@ -62,8 +62,8 @@ MOBILE_CSS = '''@media (max-width:820px){
 BODY = '''<main class="wrap">
   <header class="hero">
     <p class="crumb" id="count">관심종목</p>
-    <h1>관심 종목</h1>
-    <p class="sub">종목 페이지에서 추가한 종목을 한 줄씩 모아 봅니다.__DEMO_NOTE__</p>
+    <h1>관심종목</h1>
+    <p class="sub">추가하신 종목을 모아 보여 드립니다.__DEMO_NOTE__</p>
   </header>
   <div class="bar">
     <div class="sorts" id="sorts"><span class="lbl">정렬</span>
@@ -75,9 +75,9 @@ BODY = '''<main class="wrap">
   <div class="rows" id="rows"></div>
   <div class="pager" id="pager" hidden><span id="pinfo"></span><div class="pctl" id="pctl"></div></div>
   <div class="empty" id="empty" hidden>
-    <h2>관심 종목이 비어 있습니다</h2>
-    <p>리포트 페이지에서 업종·시가총액·PER 등 조건으로 종목을 찾으시거나, 종목 상세 페이지에서 관심종목에 추가하실 수 있습니다.</p>
-    <a class="btn btn-ink" href="/Reports.html">리포트 둘러보기</a>
+    <h2>관심종목이 비어 있습니다</h2>
+    <p>리포트 목록이나 리포트 화면에서 ‘관심종목 추가’를 누르시면 이곳에 표시됩니다.</p>
+    <a class="btn btn-ink" href="/Reports.html">전체 리포트 보기</a>
   </div>
 </main>'''
 
@@ -120,7 +120,7 @@ JS = r'''(function(){
   var editBtn=document.getElementById('editBtn'),clearBtn=document.getElementById('clearAll');
   function setEdit(on){edit=on;editBtn.textContent=on?'완료':'편집';editBtn.classList.toggle('on',on);clearBtn.hidden=!on;rowsEl.classList.toggle('edit',on)}
   editBtn.addEventListener('click',function(){setEdit(!edit)});
-  clearBtn.addEventListener('click',function(){if(!confirm('관심 종목을 전체 삭제하시겠습니까?'))return;setEdit(false);page=1;if(W){W.clear();return}LIST=[];render()});
+  clearBtn.addEventListener('click',function(){if(!confirm('관심종목을 전체 삭제하시겠습니까?'))return;setEdit(false);page=1;if(W){W.clear();return}LIST=[];render()});
   rowsEl.addEventListener('click',function(e){var rm=e.target.closest('[data-rm]');if(rm){e.preventDefault();if(W){W.remove(rm.dataset.rm);return}LIST=LIST.filter(function(s){return s.ticker!==rm.dataset.rm});render()}});
   document.getElementById('pctl').addEventListener('click',function(e){var b=e.target.closest('button[data-pg]');if(!b)return;var pg=b.dataset.pg;if(pg==='prev')page=Math.max(1,page-1);else if(pg==='next')page++;else page=+pg;render();window.scrollTo({top:0,behavior:'smooth'})});
   render();
@@ -136,7 +136,7 @@ GATE = "<style>html.kos-locked body{visibility:hidden}</style>\n<script>(functio
 def build(out_path):
     stg = C.MODE == 'staging'
     body = BODY.replace('__DEMO_NOTE__', '' if stg else ' 시안이라 로그인 없이 예시 종목으로 그렸습니다.')
-    html = (C.head('관심 종목 | KOSAI' if stg else '관심 종목 — 디자인 시안 | KOSAI', extra=GATE if stg else '') + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+    html = (C.head(C.title('관심종목'), extra=GATE if stg else '') + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('관심종목') + '\n' + body + '\n' + C.FOOTER + '\n'
             + '<script src="/data/stocks.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + JS + C.JS + '\n</script>\n</body>\n</html>')
     C.emit(out_path, html)

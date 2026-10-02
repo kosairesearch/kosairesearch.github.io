@@ -15,12 +15,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import comp_common as C  # noqa: E402
 
 PLANS = [
-    dict(id='free', name='무료', price='0', unit='원', sub='가입 없이', feats=['현재가·시가총액·PER·PBR 등 핵심 지표', '리포트 개요와 핵심 요약', '사업 구조', '최근 4개 연도·5개 분기 실적 추이', '조건 검색 · 업종 분석 · 관심종목'],
-         cta='<a class="btn btn-soft" href="/Reports.html">리포트 둘러보기</a>'),
-    dict(id='basic', name='BASIC', price='9,900', unit='원 / 월', sub='언제든지 해지 가능', feats=['무료 플랜의 모든 항목', '잠금 없이 리포트 전문 열람', '국내 상장 2,500여 개 종목', '하루 5개 리포트 열람'],
-         cta='<button type="button" class="btn btn-ink" data-plan="basic" data-i18n-skip>업그레이드</button>'),
-    dict(id='pro', name='PRO', price='14,900', unit='원 / 월', sub='언제든지 해지 가능', feats=['무료 플랜의 모든 항목', '잠금 없이 리포트 전문 열람', '국내 상장 2,500여 개 종목', '하루 15개 리포트 열람'],
-         cta='<button type="button" class="btn btn-ink" data-plan="pro" data-i18n-skip>업그레이드</button>'),
+    dict(id='free', name='무료', price='0', unit='원', sub='가입 없이', feats=['현재가·시가총액·PER·PBR 등 핵심 지표', '리포트 개요와 핵심 요약', '사업 구조', '최근 4개 연도·5개 분기 실적 추이', '조건 검색과 업종 분석', '관심종목(무료 회원가입 후)'],
+         cta='<a class="btn btn-soft" href="/Reports.html">전체 리포트 보기</a>'),
+    dict(id='basic', name='BASIC', price='9,900', per='월', unit='원', sub='언제든지 해지 가능', feats=['무료 플랜의 모든 항목', '잠금 없이 리포트 전체 열람', '국내 상장 2,500여 개 종목', '하루 5개 리포트 열람'],
+         cta='<button type="button" class="btn btn-ink" data-plan="basic" data-i18n-skip>BASIC 구독하기</button>'),
+    dict(id='pro', name='PRO', price='14,900', per='월', unit='원', sub='언제든지 해지 가능', feats=['무료 플랜의 모든 항목', '잠금 없이 리포트 전체 열람', '국내 상장 2,500여 개 종목', '하루 15개 리포트 열람'],
+         cta='<button type="button" class="btn btn-ink" data-plan="pro" data-i18n-skip>PRO 구독하기</button>'),
 ]
 
 # (항목, 설명, 무료, BASIC, PRO) — True 포함 · False 미포함 · 문자열은 그대로
@@ -42,20 +42,20 @@ CMP = [
 ]
 
 FAQ = [
-    ('BASIC과 PRO의 차이는 무엇인가요?', '<p>두 플랜의 제공 내용은 동일합니다. 국내 상장 2,500여 개 종목의 리포트를 전문 그대로 열람하실 수 있습니다.</p><p>차이는 하루에 열람할 수 있는 종목 수입니다. BASIC은 5개, PRO는 15개입니다. 보유 종목을 중심으로 확인하신다면 BASIC이, 여러 종목을 비교하며 검토하신다면 PRO가 적합합니다.</p><p>플랜은 언제든지 변경하실 수 있습니다.</p>'),
+    ('BASIC과 PRO의 차이는 무엇인가요?', '<p>두 플랜의 제공 내용은 동일합니다. 국내 상장 2,500여 개 종목의 리포트 전체를 열람하실 수 있습니다.</p><p>차이는 하루에 열람할 수 있는 종목 수입니다. BASIC은 5개, PRO는 15개입니다. 보유 종목을 중심으로 확인하신다면 BASIC이, 여러 종목을 비교하며 검토하신다면 PRO가 적합합니다.</p><p>플랜은 언제든지 변경하실 수 있습니다.</p>'),
     ('구독은 언제든지 해지할 수 있나요?', '<p>설정의 구독 항목에서 직접 해지하실 수 있으며, 별도의 전화나 문의 접수 절차는 필요하지 않습니다. 해지 이후에도 이미 결제된 이용 기간이 종료될 때까지는 그대로 이용하실 수 있습니다.</p>'),
     ('결제가 승인되지 않으면 어떻게 되나요?', '<p>등록하신 카드로 정기결제가 승인되지 않으면 유료 구간의 이용이 일시 중지되며, 최초 승인 거절일부터 1일·3일·5일·7일이 되는 날에 자동으로 다시 시도합니다. 결제가 완료되면 그 시점부터 새로운 한 달의 이용 기간이 시작되므로, 이용하지 못하신 기간은 요금에 포함되지 않습니다.</p><p>기다리지 않고 바로 재개하시려면 설정의 구독 항목에서 결제 수단을 다시 등록해 주시기 바랍니다. 재시도를 원하지 않으시는 경우에는 같은 곳에서 해지하실 수 있으며, 해지하시면 재시도가 즉시 중지됩니다. 4회의 재시도가 모두 승인되지 않으면 구독은 자동으로 종료되고, 별도로 청구되는 금액은 없습니다.</p>'),
     ('플랜을 중간에 바꾸면 어떻게 되나요?', '<p>BASIC에서 PRO로 변경하시면 신청 즉시 PRO가 적용됩니다. 이미 결제하신 BASIC 이용 기간 중 남은 몫은 PRO 요금에서 차감되므로, 차액만 결제하시면 됩니다. 매달 결제되는 날짜는 기존 주기 그대로 유지됩니다.</p><p>변경 당일 이미 열람하신 리포트는 그대로 유지되며, 하루 열람 한도만 15개로 늘어납니다.</p><p>PRO에서 BASIC으로 변경하시는 경우에는 다음 결제일부터 적용됩니다. 그때까지는 PRO를 그대로 이용하실 수 있습니다.</p>'),
     ('환불 기준은 어떻게 되나요?', '<p>결제 이후 리포트 열람 여부에 따라 적용 기준이 달라집니다.</p><h4>리포트를 열람하지 않으신 경우</h4><ul><li>결제 후 7일 이내 — 전액 환불</li><li>결제 후 7일 경과 — 잔여 이용 기간에 해당하는 금액에서 서비스 수수료 10%를 제외하고 환불</li></ul><h4>리포트를 열람하신 경우</h4><p>이용하신 일수를 차감한 뒤, 서비스 수수료 10%를 제외한 금액이 환불됩니다.</p><h4>신청하신 날은 어떻게 계산되나요?</h4><p>열람 한도는 하루 단위로 드리므로 차감도 하루 단위로 합니다. 신청하신 날 리포트를 한 건이라도 열람하셨다면 그날은 이용하신 날로 보아 차감하고, 그날 자정까지 남은 열람 한도를 그대로 사용하실 수 있습니다. 한 건도 열람하지 않으셨다면 그날은 차감하지 않으며, 이용 권한은 신청 즉시 종료됩니다.</p><p>환불 신청은 설정의 구독 항목에서 직접 하실 수 있습니다. 개별 확인이 필요한 경우 <a href="/Contact.html">문의하기</a>로 접수하여 주시기 바랍니다.</p>'),
     ('하루 열람 한도는 어떻게 산정되나요?', '<p>하루 동안 열람하신 종목의 수를 기준으로 산정합니다. 동일한 종목을 새로고침하거나 다른 기기에서 다시 열람하시는 경우에는 추가로 차감되지 않습니다.</p><p>한도는 매일 자정(한국 시간)에 초기화됩니다. 무료로 공개되는 영역은 한도와 무관하게 언제든지 이용하실 수 있습니다.</p>'),
-    ('리포트는 어떤 주기로 갱신되나요?', '<p>주가·시가총액·PER 등 시장 데이터는 매 거래일 저녁에 갱신됩니다.</p><p>리포트 본문은 해당 기업이 DART에 사업보고서·반기보고서·분기보고서를 제출하면 최신 실적을 반영해 자동으로 재작성됩니다. 신규 상장 종목은 상장 직후 리포트가 생성됩니다.</p>'),
+    ('리포트는 어떤 주기로 갱신되나요?', '<p>주가·시가총액·PER 등 시장 데이터는 매 거래일 저녁에 갱신됩니다.</p><p>리포트 본문은 해당 기업이 DART에 사업보고서와 반기보고서, 분기보고서를 제출하면 최신 실적을 반영해 자동으로 다시 작성됩니다. 새로 상장된 종목은 첫 정기보고서가 공시된 뒤 리포트가 작성됩니다.</p>'),
     ('이용 가능한 결제 수단은 무엇인가요?', '<p>국내에서 발급된 신용카드와 체크카드로 결제하실 수 있습니다. 매달 결제일에 자동으로 결제되며, 결제 내역과 영수증은 설정의 구독 항목에서 확인하실 수 있습니다.</p>'),
-    ('구독하면 종목 추천을 받을 수 있나요?', '<p>KOSAI는 매수·매도 의견이나 목표주가를 제시하지 않습니다. 구독 플랜에서 추가로 제공되는 것은 공시와 실적을 근거로 한 분석·전망·리스크 정리이며, 투자 판단과 그 결과에 대한 책임은 이용자 본인에게 있습니다.</p><p>리포트 작성 기준은 <a href="/About.html">About</a>에서 확인하실 수 있습니다.</p>'),
+    ('구독하면 종목 추천을 받을 수 있나요?', '<p>KOSAI는 자체 투자의견과 목표주가를 제시하지 않습니다. 구독 플랜에서 추가로 제공되는 것은 공시와 실적을 근거로 한 분석·전망·리스크 정리이며, 투자 판단과 그 결과에 대한 책임은 이용자 본인에게 있습니다.</p><p>리포트 작성 기준은 <a href="/About.html">회사 소개</a>에서 확인하실 수 있습니다.</p>'),
 ]
 
 NOTES = ['KOSAI의 모든 분석·리포트는 투자 참고용 정보이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 결과에 대한 책임은 이용자 본인에게 있습니다.',
          '표시 금액은 부가가치세가 포함된 가격입니다. 요금 변경 시 기존 구독자에게는 사전에 안내하며, 사전 고지 없이 인상하지 않습니다.',
-         'DART에 재무 정보가 공시되지 않는 일부 종목은 실적 표와 일부 분석 항목을 제공하지 못합니다. 해당 종목의 리포트는 구독 여부와 관계없이 전문을 무료로 공개합니다.',
+         'DART에 재무 정보가 공시되지 않는 일부 종목은 실적 표와 일부 분석 항목을 제공하지 못합니다. 해당 종목의 리포트는 구독 여부와 관계없이 전체를 무료로 공개합니다.',
          '유료 콘텐츠의 복제·재배포·판매는 허용되지 않습니다.']
 
 CSS = '''
@@ -63,7 +63,7 @@ CSS = '''
 .plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 40px;margin-top:44px;border-top:1px solid var(--line)}
 .plan{position:relative;padding:28px 0 36px;border-bottom:1px solid var(--hair)} .plan+.plan{border-left:1px solid var(--hair);padding-left:32px;margin-left:-8px}
 .plan-name{margin:0;font:600 12px/16px var(--font);letter-spacing:.06em;color:var(--ink-62)}
-.plan-price{margin:12px 0 0;font:700 36px/44px var(--font);letter-spacing:-.02em} .plan-price span{font:500 14px/20px var(--font);letter-spacing:0;color:var(--ink-62);margin-left:6px}
+.plan-price{margin:12px 0 0;font:700 36px/44px var(--font);letter-spacing:-.02em} .plan-price span{font:500 14px/20px var(--font);letter-spacing:0;color:var(--ink-62);margin-left:6px} .plan-price .pre{margin:0 2px 0 0}   /* '월 9,900원' — 작은 '월'을 앞에(가이드 4-5, 2026-10-03) */
 .plan-sub{margin:4px 0 0;font:400 13px/20px var(--font);color:var(--ink-62);min-height:20px}
 .plan-feats{list-style:none;margin:22px 0 0;padding:0} .plan-feats li{padding:9px 0;border-top:1px solid var(--hair);font:400 14px/20px var(--font)}
 .plan .btn{margin-top:24px;width:100%;justify-content:center;height:44px;font-size:14px}
@@ -94,8 +94,9 @@ CSS = '''
 
 def plan_html(p):
     feats = ''.join(f'<li>{f}</li>' for f in p['feats'])
+    pre = f'<span class="pre">{p["per"]} </span>' if p.get('per') else ''   # '월 9,900원' — 작은 '월'이 숫자 앞(가이드 4-5)
     return (f'<section class="plan{" plan-pro" if p["id"] == "pro" else ""}" data-id="{p["id"]}"><p class="plan-name">{p["name"]}</p>'
-            f'<p class="plan-price"><b>{p["price"]}</b><span>{p["unit"]}</span></p><p class="plan-sub">{p["sub"]}</p>'
+            f'<p class="plan-price">{pre}<b>{p["price"]}</b><span>{p["unit"]}</span></p><p class="plan-sub">{p["sub"]}</p>'
             f'<ul class="plan-feats">{feats}</ul>{p["cta"]}<div class="plan-msg"></div></section>')
 
 

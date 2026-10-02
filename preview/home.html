@@ -154,7 +154,7 @@ a{color:inherit;text-decoration:none}
 .tbl tbody th{font-weight:500}
 /* 푸터 */
 .foot{margin-top:96px;border-top:1px solid var(--hair);padding:56px 0 48px}
-.foot .brand img{height:13px} .ftag{margin:14px 0 0;font:400 14px/22px var(--font);color:var(--ink-72);max-width:260px}
+.foot .brand img{height:13px}
 .fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;max-width:560px;margin-top:32px}
 .fcol{display:flex;flex-direction:column;gap:9px} .fcol h4{margin:0 0 4px;font:600 12px/16px var(--font);color:var(--ink-62)} .fcol a{font:400 14px/20px var(--font);color:var(--ink-72)} .fcol a:hover{color:var(--ink)}
 .biz{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:4px 16px;font:400 12px/18px var(--font);color:var(--ink-62)} .copy{margin-top:32px;font:400 12px/18px var(--font);color:var(--ink-62)}
@@ -253,17 +253,17 @@ a{color:inherit;text-decoration:none}
 </div>
 </nav>
 <div class="mmenu" id="mmenu"><div class="mm-links"><a href="/preview/home.html" class="on">홈</a><a href="/preview/reports.html">리포트</a><a href="/preview/industry.html">업종 분석</a><a href="/preview/watchlist.html">관심종목</a><a href="/preview/brief.html">모닝브리핑</a></div><div class="sep"></div><div class="mm-auth" id="mauth"><a href="/preview/login.html">로그인</a><a href="/preview/signup.html">회원가입</a></div>
-<div class="mm-foot"><a href="/preview/about.html">About</a><a href="/preview/contact.html">문의하기</a><a href="/preview/feedback.html">피드백</a><a href="/preview/terms.html">이용약관</a><a href="/preview/privacy.html">개인정보처리방침</a></div></div>
+<div class="mm-foot"><a href="/preview/about.html">회사 소개</a><a href="/preview/contact.html">문의하기</a><a href="/preview/feedback.html">피드백</a><a href="/preview/terms.html">이용약관</a><a href="/preview/privacy.html">개인정보 처리방침</a></div></div>
 <main class="wrap">
   <header class="hero">
-    <p class="eyebrow" id="eyebrow">국내 상장사 리서치</p>
-    <h1>한국 상장사,<br>AI 리서치로 한눈에.</h1>
-    <p class="sub">재무·실적·밸류에이션을 한 페이지에. 핵심만 정리한 종목 분석으로 시장을 빠르게 파악하실 수 있습니다.</p>
+    <p class="eyebrow" id="eyebrow">국내 상장 종목</p>
+    <h1>기업 분석 리포트</h1>
+    <p class="sub">종목명이나 종목코드로 리포트를 찾으실 수 있습니다. 최신 리포트와 업종별 거래대금 상위 종목을 함께 제공합니다.</p>
     <div class="search-wrap">
       <form class="search" id="searchForm" role="search" autocomplete="off" onsubmit="return false">
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-3.5-3.5"/></svg>
-        <input id="searchInput" placeholder="티커 · 종목명 · 업종 검색" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="acList">
-        <button class="btn btn-ink" type="button" id="searchBtn">검색</button>
+        <input id="searchInput" placeholder="종목명 또는 종목코드" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="acList">
+        <button class="btn btn-ink" type="button" id="searchBtn">리포트 찾기</button>
       </form>
       <div class="ac" id="acList" role="listbox"></div>
     </div>
@@ -274,7 +274,7 @@ a{color:inherit;text-decoration:none}
     <p class="empty" id="reportEmpty" hidden>검색 결과가 없습니다.</p>
   </section>
   <section class="sec" id="movers">
-    <div class="sec-h"><h2>업종별 주목 종목</h2><a class="more" href="/industry.html">업종 분석 페이지로 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    <div class="sec-h"><h2>업종별 거래대금 상위 종목</h2><a class="more" href="/industry.html">전체 업종 보기 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
     <div class="tabs" id="tabs"></div>
     <div class="tbl-wrap"><table class="tbl movers"><thead><tr><th>종목</th><th>현재가</th><th>등락률</th><th>거래대금</th><th>시가총액</th></tr></thead><tbody id="moverBody"></tbody></table></div>
     <p class="note" id="moverNote"></p>
@@ -284,14 +284,13 @@ a{color:inherit;text-decoration:none}
 <div class="sheet" id="sectorSheet" role="dialog" aria-modal="true" aria-label="업종 고르기"><div class="pop-head"><div class="pop-title">업종</div><button type="button" class="pop-close" id="sectorClose" aria-label="닫기"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="pop-body" id="sectorBody"></div></div>
 <footer class="foot"><div class="wrap">
   <a class="brand" href="/preview/home.html"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
-  <p class="ftag">한국 상장사를 위한 AI 투자 리서치. 데이터와 분석을 한 페이지에.</p>
   <div class="fgrid">
     <div class="fcol"><h4>서비스</h4><a href="/preview/home.html">홈</a><a href="/preview/reports.html">리포트</a><a href="/preview/industry.html">업종 분석</a><a href="/preview/watchlist.html">관심종목</a><a href="/preview/brief.html">모닝브리핑</a></div>
-    <div class="fcol"><h4>회사</h4><a href="/preview/about.html">About</a><a href="/preview/contact.html">문의하기</a><a href="/preview/feedback.html">피드백</a></div>
-    <div class="fcol"><h4>정책</h4><a href="/preview/terms.html">이용약관</a><a href="/preview/privacy.html">개인정보처리방침</a></div>
+    <div class="fcol"><h4>회사</h4><a href="/preview/about.html">회사 소개</a><a href="/preview/contact.html">문의하기</a><a href="/preview/feedback.html">피드백</a></div>
+    <div class="fcol"><h4>정책</h4><a href="/preview/terms.html">이용약관</a><a href="/preview/privacy.html">개인정보 처리방침</a></div>
   </div>
   <div class="biz"><span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span><span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span></div>
-  <div class="copy">© 2026 KOSAI — All rights reserved.</div>
+  <div class="copy">© 2026 KOSAI</div>
 </div></footer>
 <script src="/data/stocks.js"></script>
 <script src="/data/reports-index.js"></script>
@@ -307,7 +306,7 @@ a{color:inherit;text-decoration:none}
     amt:function(n){return !n?'—':(n>=1e12?(n/1e12).toFixed(1)+'조':Math.round(n/1e8).toLocaleString('ko-KR')+'억')}};
   // 리포트가 있는 종목 수 하나만 — 종목 수와 리포트 수를 나란히 두면 새로 상장돼 아직 리포트가 없는 종목만큼 어긋나 보인다
   var nBoth=live.filter(function(s){return RREP[s.ticker]}).length;
-  document.getElementById('eyebrow').textContent='국내 상장사 '+nBoth.toLocaleString('ko-KR')+'종목 리포트';
+  document.getElementById('eyebrow').textContent='국내 상장 '+nBoth.toLocaleString('ko-KR')+'개 종목';   // 랜딩 첫 화면과 같은 표기(2026-10-03)
 
   /* ---- 최신 리포트 6편 (Home.html 과 같은 규칙) ---- */
   var REPORTS=live.filter(function(s){return RREP[s.ticker]}).map(function(s){var r=RREP[s.ticker];return Object.assign({},s,{reportDate:r.reportDate,reportTs:r.reportTs||r.reportDate,title:(r.title&&r.title.ko)||''})});

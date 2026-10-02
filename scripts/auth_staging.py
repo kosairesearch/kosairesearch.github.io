@@ -565,7 +565,7 @@ function render(){
     bodyEl.appendChild(goBtn('로그인하러 가기', s.href));
   } else if(s.kind === 'error'){
     paint(s.crumb || '계정 인증', s.title, s.desc);
-    bodyEl.appendChild(goBtn('로그인 페이지로', 'Login.html'));
+    bodyEl.appendChild(goBtn('로그인하러 가기', 'Login.html'));   // 같은 곳으로 가는 단추는 같은 이름(2026-10-03)
   } else if(s.kind === 'reset'){
     paint('비밀번호 재설정', '새 비밀번호 설정', s.email + ' 계정의 새 비밀번호를 입력하여 주시기 바랍니다.');
     const form = el('form'); form.id = 'rs'; form.noValidate = true;

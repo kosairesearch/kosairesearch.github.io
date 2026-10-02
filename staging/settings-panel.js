@@ -72,16 +72,16 @@ if (window.KOSi18n) window.KOSi18n.register({
   "닫기": "Close",
   "약관과 개인정보 처리에 관한 내용은": "You can review our",
   "이용약관": "Terms of Service",
-  "개인정보처리방침": "Privacy Policy",
+  "개인정보 처리방침": "Privacy Policy",
+  "과 ": " and ",
   "에서 확인할 수 있습니다.": ".",
   /* 구독 — 문구는 옛 구독 관리 페이지가 쓰던 것을 그대로 옮겼다. 화면만
      바뀌었을 뿐 사용자가 읽는 말이 달라질 이유가 없다. */
   "불러오는 중…": "Loading…",
   "이용 중인 플랜": "Current plan",
   "무료": "Free",
-  "무료로 이용 중입니다. 분석·전망·리스크 등 유료 구간은 멤버십에서 보실 수 있습니다.":
-    "You are on the free plan. The analysis, outlook, and risk sections come with a plan.",
-  "플랜 보기": "See plans",
+  "무료로 이용하고 계십니다. 분석과 전망, 리스크 진단은 멤버십 구독 후 보실 수 있습니다.":
+    "You are on the free plan. The analysis, outlook, and risk sections come with a membership.",
   "멤버십 보기": "See plans",
   "상태": "Status",
   "이용 중": "Active",
@@ -703,9 +703,9 @@ function paneSubscription() {
 
     if (!sub || (!active && !due && !ended)) {
       body.appendChild(el("p", "ks-note",
-        T("무료로 이용 중입니다. 분석·전망·리스크 등 유료 구간은 멤버십에서 보실 수 있습니다.")));
+        T("무료로 이용하고 계십니다. 분석과 전망, 리스크 진단은 멤버십 구독 후 보실 수 있습니다.")));
       const btns = el("div", "ks-btns");
-      const a = el("a", "ks-btn primary", T("플랜 보기"));
+      const a = el("a", "ks-btn primary", T("멤버십 보기"));   // 리포트 화면 잠금과 같은 이름(2026-10-03)
       a.href = "pricing.html";
       btns.appendChild(a);
       body.appendChild(btns);
@@ -1039,8 +1039,8 @@ function paneAccount(user, opts) {
   const note = el("p", "ks-note");
   note.appendChild(document.createTextNode(T("약관과 개인정보 처리에 관한 내용은") + " "));
   const t1 = el("a", null, T("이용약관")); t1.href = "Terms.html"; note.appendChild(t1);
-  note.appendChild(document.createTextNode(" · "));
-  const t2 = el("a", null, T("개인정보처리방침")); t2.href = "Privacy.html"; note.appendChild(t2);
+  note.appendChild(document.createTextNode(T("과 ")));
+  const t2 = el("a", null, T("개인정보 처리방침")); t2.href = "Privacy.html"; note.appendChild(t2);
   note.appendChild(document.createTextNode(T("에서 확인할 수 있습니다.")));
   s.appendChild(note);
 

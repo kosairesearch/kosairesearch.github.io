@@ -56,7 +56,7 @@ def build(date=None, out_path=None):
     body, _dic = RB.build(doc, at)
     body = body.replace('href="stock.html?ticker=', 'href="/stock.html?ticker=')   # 시안 폴더 밖 실사이트 종목 페이지로
     title = re.sub(r'<[^>]+>', '', (doc['title'].get('ko') or '')).strip()
-    html = (C.head(f'{title} — 모닝브리핑 디자인 시안 | KOSAI') + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+    html = (C.head(f'{title} — ' + (C.title('모닝브리핑') if C.MODE != 'preview' else '모닝브리핑 디자인 시안 | KOSAI')) + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('모닝브리핑') + '\n<main class="wrap">\n  <article class="mb">\n' + body + '\n  </article>\n</main>\n' + C.FOOTER + '\n'
             + '<script>\n' + C.JS + '\n</script>\n</body>\n</html>')
     out = Path(out_path) if out_path else ROOT / 'preview/brief.html'

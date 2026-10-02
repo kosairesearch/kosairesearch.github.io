@@ -91,14 +91,14 @@ MOBILE_CSS = '''@media (max-width:820px){
 
 BODY = '''<main class="wrap">
   <header class="hero">
-    <p class="eyebrow" id="eyebrow">국내 상장사 리서치</p>
-    <h1>한국 상장사,<br>AI 리서치로 한눈에.</h1>
-    <p class="sub">재무·실적·밸류에이션을 한 페이지에. 핵심만 정리한 종목 분석으로 시장을 빠르게 파악하실 수 있습니다.</p>
+    <p class="eyebrow" id="eyebrow">국내 상장 종목</p>
+    <h1>기업 분석 리포트</h1>
+    <p class="sub">종목명이나 종목코드로 리포트를 찾으실 수 있습니다. 최신 리포트와 업종별 거래대금 상위 종목을 함께 제공합니다.</p>
     <div class="search-wrap">
       <form class="search" id="searchForm" role="search" autocomplete="off" onsubmit="return false">
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-3.5-3.5"/></svg>
-        <input id="searchInput" placeholder="티커 · 종목명 · 업종 검색" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="acList">
-        <button class="btn btn-ink" type="button" id="searchBtn">검색</button>
+        <input id="searchInput" placeholder="종목명 또는 종목코드" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="acList">
+        <button class="btn btn-ink" type="button" id="searchBtn">리포트 찾기</button>
       </form>
       <div class="ac" id="acList" role="listbox"></div>
     </div>
@@ -109,7 +109,7 @@ BODY = '''<main class="wrap">
     <p class="empty" id="reportEmpty" hidden>검색 결과가 없습니다.</p>
   </section>
   <section class="sec" id="movers">
-    <div class="sec-h"><h2>업종별 주목 종목</h2><a class="more" href="/industry.html">업종 분석 페이지로 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    <div class="sec-h"><h2>업종별 거래대금 상위 종목</h2><a class="more" href="/industry.html">전체 업종 보기 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
     <div class="tabs" id="tabs"></div>
     <div class="tbl-wrap"><table class="tbl movers"><thead><tr><th>종목</th><th>현재가</th><th>등락률</th><th>거래대금</th><th>시가총액</th></tr></thead><tbody id="moverBody"></tbody></table></div>
     <p class="note" id="moverNote"></p>
@@ -129,7 +129,7 @@ JS = r'''(function(){
     amt:function(n){return !n?'—':(n>=1e12?(n/1e12).toFixed(1)+'조':Math.round(n/1e8).toLocaleString('ko-KR')+'억')}};
   // 리포트가 있는 종목 수 하나만 — 종목 수와 리포트 수를 나란히 두면 새로 상장돼 아직 리포트가 없는 종목만큼 어긋나 보인다
   var nBoth=live.filter(function(s){return RREP[s.ticker]}).length;
-  document.getElementById('eyebrow').textContent='국내 상장사 '+nBoth.toLocaleString('ko-KR')+'종목 리포트';
+  document.getElementById('eyebrow').textContent='국내 상장 '+nBoth.toLocaleString('ko-KR')+'개 종목';   // 랜딩 첫 화면과 같은 표기(2026-10-03)
 
   /* ---- 최신 리포트 6편 (Home.html 과 같은 규칙) ---- */
   var REPORTS=live.filter(function(s){return RREP[s.ticker]}).map(function(s){var r=RREP[s.ticker];return Object.assign({},s,{reportDate:r.reportDate,reportTs:r.reportTs||r.reportDate,title:(r.title&&r.title.ko)||''})});
@@ -226,7 +226,7 @@ JS = r'''(function(){
 
 
 def build(out_path):
-    html = (C.head('홈 — 디자인 시안 | KOSAI') + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+    html = (C.head(C.title('홈')) + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('홈') + '\n' + BODY + '\n' + C.FOOTER + '\n'
             + '<script src="/data/stocks.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + JS + C.JS + '\n</script>\n</body>\n</html>')
     C.emit(out_path, html)

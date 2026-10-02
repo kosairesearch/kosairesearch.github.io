@@ -68,7 +68,7 @@ CSS = '''
 
 LOGIN = f'''<main class="wrap"><div class="auth">
   <p class="crumb">계정</p><h1>로그인</h1>
-  <p class="sub">KOSAI 계정으로 로그인하시면 관심 종목과 리포트를 이어서 보실 수 있습니다.</p>
+  <p class="sub">KOSAI 계정으로 로그인하시면 관심종목과 리포트를 이어서 보실 수 있습니다.</p>
   {social('home')}
   <div class="divider">또는 이메일로 로그인</div>
   <form id="emailForm" novalidate>
@@ -83,7 +83,7 @@ LOGIN = f'''<main class="wrap"><div class="auth">
 
 SIGNUP = f'''<main class="wrap"><div class="auth">
   <p class="crumb">계정</p><h1>회원가입</h1>
-  <p class="sub">무료 계정을 만드시면 관심 종목과 AI 리포트를 저장하실 수 있습니다.</p>
+  <p class="sub">무료 계정을 만드시면 관심종목을 저장하고 여러 기기에서 함께 보실 수 있습니다.</p>
   {social('consent')}
   <div class="divider">또는 이메일로 가입</div>
   <form id="emailForm" novalidate>
