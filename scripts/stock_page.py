@@ -284,7 +284,7 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
 .fcs{border-top:1px solid var(--line)}
 .fc{padding:22px 0 20px;border-bottom:1px solid var(--hair)}
 .fc h4{margin:0 0 10px;font:600 16px/24px var(--font);letter-spacing:-.01em;display:flex;gap:10px;align-items:baseline}
-.fc .dot{width:8px;height:8px;border-radius:50%;flex:none;position:relative;top:-2px} .fc.bull .dot{background:var(--up)} .fc.bear .dot{background:var(--down)}
+.fc .dot{width:8px;height:8px;border-radius:50%;flex:none;position:relative;top:-2px} .fc.bull .dot{background:var(--rise)} .fc.bear .dot{background:var(--fall)}
 .fc p{margin:0 0 12px;font:400 15px/24px var(--font);color:var(--ink-72)} .fc p:last-child{margin-bottom:0}
 /* 리스크 */
 .rks{border-top:1px solid var(--line)}

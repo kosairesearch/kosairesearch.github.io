@@ -367,10 +367,12 @@ function draw(){
     q=px(rw-(sm?11:14),a1);
     if(k===nx)h+=tx('n1',q[0],q[1]-fd*.38,fl,500,.62,anc,wn(k,w))+tx('n2',q[0],q[1]+fd*.98,fd,600,1,anc,fill(T.due,{m:w[3],d:w[4]}));
     else h+=tx('',q[0],q[1],fl,500,done?.45:.62,anc,wn(k,w),1)});
-  /* 오늘 — 점 하나와 글자. 글자는 점에서 지난 날 쪽으로 조금 비켜 안쪽에 둔다(오늘 시작하는 제출 기간 선과 닿지 않게) */
+  /* 오늘 — 점 하나와 글자. 글자는 원 바깥, 달 이름과 같은 줄에 둔다(사장 2026-10-03 — 안쪽과 바깥 중 나은 쪽을 판단해 정하라는 지시).
+     오늘은 바깥 원(한 해의 길) 위의 한 점이라, 같은 원의 표지인 달 이름처럼 바깥에 둬야 '바깥은 날짜, 안쪽은 제출 기간'으로 읽힌다.
+     안쪽에 두면 제출 기간 선의 머리에 붙어 그 선의 이름처럼 읽혔고, 한국어는 넓은 화면에서 안쪽 · 휴대폰에서 바깥으로 오갔다 */
   if(ti>=0){an=a(ti+.5);p=px(R,an);
     h+='<circle cx="'+f(p[0])+'" cy="'+f(p[1])+'" r="'+(sm?3.4:4)+'" fill="currentColor" class="ring"/>';
-    var la=an-(sm?15:16)/R;q=px(R-(sm?11:14),la);h+=tx('td',q[0],q[1],sm?10.5:11.5,600,1,side(Math.cos(la),false),T.today,1)}
+    q=px(R+(sm?13:16),an);h+=tx('td',q[0],q[1],sm?10.5:11.5,600,1,side(Math.cos(an),true),T.today,1)}
   /* 가운데 — 해 */
   h+='<text x="'+f(cx)+'" y="'+f(cy)+'" font-size="'+(sm?22:30)+'" font-weight="400" text-anchor="middle" dominant-baseline="central" letter-spacing="-.02em">'+D.y+'</text>';
   box.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 '+S+' '+S+'" aria-hidden="true">'+h+'</svg>';
@@ -379,7 +381,8 @@ function draw(){
   fg.setAttribute('aria-label',fill(T.label,{y:D.y})+(nx>=0?' '+fill(T.next,{w:wn(nx,D.win[nx]),m:D.win[nx][3],d:D.win[nx][4]}):''))
 }
 /* 자리 다듬기 — 그린 뒤 글자의 실제 크기를 재어, 다가오는 기한의 글(.n1 .n2)과 '오늘'(.td)이 다른 글자, 점, 선과 닿으면 닿지 않는
-   가장 가까운 자리로 옮긴다. 넓은 화면에서는 처음 자리 그대로이고, 작은 휴대폰에서 주로 움직인다(두 해 모든 날 × 폭 9가지로 잼) */
+   가장 가까운 자리로 옮긴다. 기한의 글은 작은 휴대폰에서 주로 움직이고, '오늘'은 분기 첫날 무렵 달 이름을 비켜 움직인다
+   (두 해 모든 날 × 폭 12가지 × 한국어 · 영어로 잼 — 닿는 날 · 화면 밖 0) */
 function fit(sv,cx,cy,R,an,sm){
   var ob=[],n1=sv.querySelector('.n1'),n2=sv.querySelector('.n2'),td=sv.querySelector('.td'),k;
   function bb(e,m){var r=e.getBBox();m=m||0;return [r.x-m,r.y-m,r.x+r.width+m,r.y+r.height+m]}
@@ -391,22 +394,31 @@ function fit(sv,cx,cy,R,an,sm){
   [].forEach.call(sv.querySelectorAll('circle'),function(c){var r=+c.getAttribute('r')+(c.getAttribute('class')?2.25:.5),x=+c.getAttribute('cx'),y=+c.getAttribute('cy');ob.push([x-r,y-r,x+r,y+r])});
   [].forEach.call(sv.querySelectorAll('path'),function(p){var n=p.getTotalLength(),w=+p.getAttribute('stroke-width')/2+1;
     for(var l=0;l<=n;l+=2){var q=p.getPointAtLength(l);ob.push([q.x-w,q.y-w,q.x+w,q.y+w])}});
-  [].forEach.call(sv.querySelectorAll('text'),function(t){if(t!==n1&&t!==n2&&t!==td)ob.push(bb(t,2))});
+  var tb=[];   // 글자 상자 — '오늘'은 옆 글자와 가로로 한 글자 가까이 띄운다(붙으면 '1월 오늘' · '오늘 7월'이 한 덩이로 읽혔다)
+  [].forEach.call(sv.querySelectorAll('text'),function(t){if(t!==n1&&t!==n2&&t!==td){var b=bb(t,2);ob.push(b);tb.push(b)}});
   if(n1){var u=bb(n1),v=bb(n2),b=[Math.min(u[0],v[0]),Math.min(u[1],v[1]),Math.max(u[2],v[2]),Math.max(u[3],v[3])],best=null;
     if(!ok(b)){var sy=(b[1]+b[3])/2<cy?-1:1,sx=(b[0]+b[2])/2<cx?1:-1,bd=1e9,dx,dy,d;
       for(dx=-30;dx<=30;dx+=2)for(dy=-60;dy<=60;dy+=2){d=dx*dx+dy*dy+(dy*sy<0?.5:0)+(dx*sx<0?.25:0);   // 같은 거리면 가운데의 해에서 멀어지는 쪽
         if(d<bd&&ok([b[0]+dx,b[1]+dy,b[2]+dx,b[3]+dy])){bd=d;best=[dx,dy]}}
       if(best){[n1,n2].forEach(function(t){t.setAttribute('x',f(+t.getAttribute('x')+best[0]));t.setAttribute('y',f(+t.getAttribute('y')+best[1]))});
         b=[b[0]+best[0],b[1]+best[1],b[2]+best[0],b[3]+best[1]]}}
-    ob.push([b[0]-2,b[1]-2,b[2]+2,b[3]+2])}
+    ob.push([b[0]-2,b[1]-2,b[2]+2,b[3]+2]);tb.push(ob[ob.length-1])}
   if(td){var t0=bb(td),w=t0[2]-t0[0],y0=+td.getAttribute('y'),o0=t0[1]-y0,o1=t0[3]-y0,ri=R-(sm?11:14),ro=R+(sm?13:16),s=(sm?15:16)/R,c=[];
     function at(r,t,out){return [cx+r*Math.cos(t),cy+r*Math.sin(t),side(Math.cos(t),out)]}
-    c.push(at(ri,an-s,false),at(ri,an+s,false),at(ro,an,true));   // 안쪽(지난 날 쪽 · 남은 날 쪽) → 바깥 → 바깥에서 달 이름을 비켜
+    c.push(at(ro,an,true));   // 바깥(처음 자리) → 바깥에서 달 이름을 비켜 위아래로 → 바깥이 막히면(달 이름 · 화면 끝) 안쪽
     for(k=1;k<=5;k++)c.push(at(ro,an-k*8/ro,true),at(ro,an+k*8/ro,true));
-    for(k=2;k<=6;k++)c.push(at(ri,an-k*s,false),at(ri,an+k*s,false));   // 그래도 없으면 안쪽에서 조금씩 더 비켜(영어 'Today' 는 '오늘'보다 넓다 — 뒤에 붙여 한국어 자리는 그대로)
+    for(k=1;k<=6;k++)c.push(at(ri,an-k*s,false),at(ri,an+k*s,false));
     for(k=0;k<=4;k++)c.push(at(R*.8-(sm?11:14),an-k*s,false),at(R*.8-(sm?11:14),an+k*s,false));   // 마지막으로 제출 기간 선 안쪽(4월 초 작은 화면 — 바깥은 달 이름과 화면 끝, 그 사이는 선에 막힌다)
-    for(k=0;k<c.length;k++){var q=c[k],x0=q[2]==='end'?q[0]-w:q[2]==='middle'?q[0]-w/2:q[0];
-      if(ok([x0,q[1]+o0,x0+w,q[1]+o1])){if(k){td.setAttribute('x',f(q[0]));td.setAttribute('y',f(q[1]));td.setAttribute('text-anchor',q[2])}break}}}
+    var g=sm?7:8;
+    function far(b){for(var j=0;j<tb.length;j++){var o=tb[j];if(b[0]-g<o[2]&&o[0]<b[2]+g&&b[1]<o[3]&&o[1]<b[3])return false}return true}
+    /* 바깥 자리(c[0]~c[10])가 화면 끝을 넘으면 넘는 만큼 화면 안으로 당겨 본다 — 원의 점 · 달 이름과 닿으면 ok 가 거른다
+       (영어 'Today' 가 폭 414px 의 4월 2일 · 10월 1일에 화면 끝에 막혀 안쪽으로 들어갔다) */
+    var mv=false;
+    for(k=0;k<c.length;k++){var q=c[k],x0=q[2]==='end'?q[0]-w:q[2]==='middle'?q[0]-w/2:q[0],
+        sh=k<11?(x0<lo?lo-x0:x0+w>hi?hi-x0-w:0):0,b1=[x0+sh,q[1]+o0,x0+sh+w,q[1]+o1];
+      if(ok(b1)&&far(b1)){if(sh){c[k]=[q[0]+sh,q[1],q[2]];mv=true}break}}
+    if(k===c.length)k=11;   // 어디에도 안 맞으면 안쪽 첫 자리 c[11](바깥은 화면 끝에서 잘릴 수 있다)
+    if(k||mv){q=c[k];td.setAttribute('x',f(q[0]));td.setAttribute('y',f(q[1]));td.setAttribute('text-anchor',q[2])}}
 }
 function wait(){return 864e5-(Date.now()+324e5)%864e5+500}
 function tick(){if(pick())draw();setTimeout(tick,wait())}

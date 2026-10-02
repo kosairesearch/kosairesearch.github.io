@@ -101,6 +101,12 @@ CSS = ''':root{
   --nav-bar:rgba(13,13,14,.72);
   color-scheme:dark;
 }
+/* 가격 방향 색 — 한국어는 오르면 빨강 · 내리면 파랑, 영어는 해외 관례대로 오르면 초록 · 내리면 빨강(실사이트 영어판과 같은 방향).
+   --up 은 오류 · 경고 글자에도 쓰므로 그대로 두고, 가격 방향(.up · .down · 강세/약세 점)만 이 둘을 쓴다.
+   초록은 빨강과 밝기를 맞췄다 — 바탕에 대한 명암비 라이트 5.4:1 · 다크 6.5:1(빨강 5.5:1 · 6.2:1). */
+:root{--rise:var(--up);--fall:var(--down)}
+:root[lang="en"]{--rise:#0a7637;--fall:var(--up)}
+:root[lang="en"][data-theme="dark"]{--rise:#31aa64}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:calc(84px + var(--kos-bar-h,0px));overflow-x:clip}
 /* 페이지 전환 — 실사이트와 같은 문서 간 크로스페이드(크롬 126+ · 사파리 18.2+). 띠와 헤더는 이름을 줘 제자리에 두고 본문만 바뀐다. */
@@ -113,7 +119,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);-web
 a{color:inherit;text-decoration:none}
 ::selection{background:rgba(20,20,20,.14)} :root[data-theme="dark"] ::selection{background:rgba(255,255,255,.22)}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
-.up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--ink-62)}
+.up{color:var(--rise)} .down{color:var(--fall)} .flat{color:var(--ink-62)}
 /* 헤더 — 사이트 규칙 그대로(60px · 맨 위 투명 · 내리면 띠) */
 .nav{position:sticky;top:var(--kos-bar-h,0px);z-index:50;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0;transition:background-color .2s,box-shadow .2s}
 .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--hair);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
