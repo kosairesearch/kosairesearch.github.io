@@ -525,9 +525,9 @@ def render(tk, D, inline=True, assets=None, index=False, base=SITE, dir_path='st
   </div>'''
     else:
         head_title = f'{name}({tk}) 종목 — 리포트 준비 중 | KOSAI'
-        desc = f'{name}({tk}) 시세·시가총액·PER·PBR. AI 분석 리포트는 첫 정기보고서가 공시된 뒤 작성됩니다.'
+        desc = f'{name}({tk}) 시세·시가총액·PER·PBR. AI 분석 리포트는 상장 직후 작성됩니다.'
         main_body = f'''<div class="pending"><h2>이 종목의 리포트는 준비 중입니다</h2>
-    <p>새로 상장된 종목은 첫 정기보고서가 공시된 뒤 리포트를 작성합니다. 시세·시가총액·PER·PBR 같은 지표는 매 거래일 저녁에 갱신됩니다.</p>
+    <p>새로 상장된 종목은 상장 직후 리포트를 작성합니다. 시세·시가총액·PER·PBR 같은 지표는 매 거래일 저녁에 갱신됩니다.</p>
     <ol class="srcs">{''.join(f'<li><a href="{esc(u)}" target="_blank" rel="noopener">{esc(t)}</a></li>' for t, u in PRIMARY_SRC)}</ol>
     <p class="disc">{DISC}</p></div>'''
 
