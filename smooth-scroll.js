@@ -11,13 +11,24 @@
    창을 진짜로 옮기는 것이라 position:sticky·스크롤 이벤트·주소창의 #앵커가
    그대로 산다(변형(transform)으로 밀어 올리는 옛 방식은 이게 다 깨진다).
 
-   안 켜는 경우 — 셋 다 켜면 오히려 불편해지는 자리다.
+   안 켜는 경우 — 넷 다 켜면 오히려 불편해지는 자리다.
      1. 손가락으로 넘기는 화면(휴대폰·태블릿). 원래 부드럽고, 여기서
         가로채면 손가락을 뗀 뒤에도 화면이 따라와 멀미가 난다.
      2. 움직임을 줄여 달라고 설정한 사람(prefers-reduced-motion).
         전정기관이 예민하면 이런 감속이 어지럼증을 만든다.
-     3. lenis.js 가 못 떴을 때. 그냥 원래 스크롤로 둔다 — 화면이 안
+     3. 맥. 트랙패드와 매직 마우스는 운영체제가 이미 관성을 준다. 그 위에
+        감속을 한 번 더 걸면 화면이 손가락보다 늦게 따라오고, 손을 뗀 뒤
+        운영체제의 관성이 끝난 자리에서 한 번 더 미끄러진다. 사장이 맥북
+        트랙패드로 스크롤해 보고 "좀 이상하더라" 고 했다(2026-10-02).
+        맥 사파리는 트랙패드와 마우스 휠을 같은 꼴의 값으로 보내 둘을 가르기
+        어려워서, 맥은 통째로 끈다. 맥에 보통 마우스를 꽂은 사람도 맥의 원래
+        스크롤을 쓴다.
+     4. lenis.js 가 못 떴을 때. 그냥 원래 스크롤로 둔다 — 화면이 안
         움직이는 것보다 낫다.
+
+   켜더라도 휠 한 칸씩 끊기는 마우스만 감속한다. 윈도우 노트북의 정밀
+   터치패드, 크롬북·리눅스의 터치패드, 잘게 굴러가는 고해상도 휠도 맥처럼
+   이미 부드럽다. 그런 입력은 브라우저에 그대로 넘긴다 — 아래 sortWheel.
 
    되돌리기. 이 파일과 lenis.js 를 부르는 <script> 두 줄만 빼면 원래대로
    돌아온다. 화면 코드는 이 파일을 모른다.
@@ -27,7 +38,54 @@
 
   var coarse = window.matchMedia("(pointer: coarse)").matches;          // 손가락 화면
   var calm   = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (coarse || calm || typeof window.Lenis !== "function") return;
+  if (coarse || calm || isMac() || typeof window.Lenis !== "function") return;
+
+  /* 맥인지 — 크롬 계열은 userAgentData, 사파리·파이어폭스는 platform 이
+     'MacIntel' 이다(애플 실리콘도 같다). 데스크톱 모드 아이패드도 맥으로
+     잡히지만 손가락 화면이라 위에서 이미 빠진다. */
+  function isMac() {
+    var n = window.navigator || {};
+    var p = (n.userAgentData && n.userAgentData.platform) || n.platform || "";
+    return /mac/i.test(p) || /Macintosh/.test(n.userAgent || "");
+  }
+
+  /* 휠 한 칸씩 끊기는 마우스인지 — lenis 가 휠 이벤트마다 이 함수를 먼저
+     부른다(virtualScroll). 아니면 그 이벤트는 브라우저가 원래대로 옮긴다
+     (lenis 가 smoothWheel 이 꺼진 이벤트는 가로채지 않고, 하던 감속도 멈춘다).
+
+     잣대는 wheelDeltaY 다. 브라우저는 휠 한 칸을 120 으로 적는다 — 두 칸이
+     한 이벤트로 묶이면 240. 크롬·엣지·웨일은 크로미움 123판(2024)부터 이
+     값을 화면 배율(devicePixelRatio)로 나누고 소수점을 버린다 — 125% 화면은
+     96, 150% 는 80. 파이어폭스(90판부터)는 배율과 관계없이 120 이다. 정밀
+     터치패드는 손가락이 움직인 거리를, 고해상도 휠은 한 칸을 잘게 나눈 값을
+     보내서 이 값들과 맞지 않고, 관성 구간은 0 이다. 마우스 휠은 가로 값도 0 이다.
+
+     한 동작은 첫 이벤트가 정한다 — 이벤트 사이가 0.5초 안이면 같은 동작이다
+     (크롬도 마지막 휠 뒤 0.5초 안에 온 휠을 한 묶음으로 본다). 동작 중에 한
+     번이라도 잘게 오면 그 동작이 끝날 때까지 원래 스크롤로 둔다. 터치패드가
+     우연히 한 칸 값을 낸 이벤트 하나에 감속이 끼어들지 않게, 그리고 크롬은
+     묶음의 첫 휠을 막지 않으면 나머지 휠을 막을 수 없게 보내서다 — 그때
+     lenis 로 넘기면 lenis 와 브라우저가 같이 옮긴다. 판단이 서지 않는 값은
+     원래 스크롤 쪽으로 둔다 — 감속이 빠지면 조금 덜 부드러울 뿐이지만,
+     감속이 겹치면 화면이 늦게 따라온다. */
+  function oneNotch(w) {
+    if (typeof w !== "number" || !w) return false;
+    var a = Math.abs(w), d = window.devicePixelRatio || 1;
+    if (a % 120 === 0) return true;                       // 파이어폭스 · 배율 100% 크롬
+    var k = Math.round(a * d / 120);                      // 크롬: 120 × 칸 수 ÷ 배율, 소수점 버림
+    return k >= 1 && Math.abs(a - 120 * k / d) < 1.01;
+  }
+  var GAP = 500, lastAt = -Infinity, notched = true;
+  function sortWheel(data) {
+    var e = data && data.event;
+    if (!e || e.type !== "wheel" || e.ctrlKey || !e.deltaY) return;   // 손가락 · 확대(ctrl) · 가로 휠은 lenis 가 원래 안 받는다
+    var notch = oneNotch(e.wheelDeltaY) && !e.deltaX;
+    var t = e.timeStamp;
+    if (!(t - lastAt < GAP)) notched = notch;    // 새 동작 — 첫 이벤트가 정한다
+    else if (!notch) notched = false;            // 동작 중에 잘게 왔다 — 끝까지 원래 스크롤
+    lastAt = t;
+    if (lenis) lenis.options.smoothWheel = notched;
+  }
 
   /* 안에서 따로 굴러가는 상자 — 설정 창의 목록·칸, 대화상자, 가로로 넘기는
      표. 여기서는 가로채면 안 된다. 상자 안에서 휠을 굴렸는데 뒤쪽 본문이
@@ -64,7 +122,8 @@
       syncTouch: false,            // 손가락은 원래 스크롤 그대로
       orientation: "vertical",
       gestureOrientation: "vertical",
-      prevent: scrollsItself
+      prevent: scrollsItself,
+      virtualScroll: function (data) { sortWheel(data); return true; }
     });
   } catch (e) { return; }
 
