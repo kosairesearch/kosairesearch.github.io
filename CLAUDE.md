@@ -361,8 +361,12 @@ Consent · auth-action · Settings · stock · 404)은 스테이징과 같은 �
   · 검색 노출: 페이지마다 설명 · canonical · 공유 · 색인 여부는 `comp_common.LIVE_SEO`(설명은 그 페이지 머리의 소개 문장). 색인 제외는 옛 실사이트와
     같은 넷(관심종목 · 약관 동의 · 계정 인증 · 404). 첫 화면은 네이버 소유확인 · 구조화 데이터를 옛 값 그대로 둔다(`landing.NAVER_VERIFY` · `LD_JSON`).
     머리 스크립트(i18n.js · analytics.js)와 꼬리 모듈은 맨 이름으로 적어야 `?v=` 가 찍힌다. 404 는 어느 주소에서나 열려 스크립트를 넣지 않는다.
+    업종 상세(`industry.html?sector=…`)는 머리의 즉시 보정과 `SEO()` 가 canonical · og:url 을 사이트맵 주소(`urllib.parse.quote` 와 같은 글자 —
+    괄호는 %28 %29)로, 제목 · 설명을 업종 이름으로 고친다(옛 실사이트와 같음 · `build_industry_comp.SEO_HEAD/SEO_FN` · 실사이트만). 빼면 사이트맵이
+    올린 업종 상세 30개가 목록의 중복으로 읽힌다 — 지키는 검사 `staging/tests/industry-seo.test.mjs`.
   · **모닝브리핑**: 아침 작업 ④의 `render_brief.py` 가 새 디자인 brief.html 전체를 그린다(`build_brief_comp.page_html` · build_live 와 글자 하나까지
-    같다). 발행 시각 기록은 그대로 이 스크립트가 한다. 페이지를 못 그리면 3 으로 끝난다(1 은 '영문 사전 누락' 경고). 스테이징 생성이 실패해도
+    같다). 발행 시각 기록은 그대로 이 스크립트가 한다. 글을 읽거나 조립하거나 페이지를 그리다 멈추면 3 으로 끝난다(1 은 '영문 사전 누락' 경고 —
+    브리핑 다시 써 보기가 1 을 경고로 넘기므로 진짜 오류를 1 로 내지 말 것). 스테이징 생성이 실패해도
     실사이트 발행은 계속한다(실패로 끝내면 발행 시각만 남은 글이 올라가 그날 브리핑이 조용히 빠진다). 페이지에 내는 브리핑은 발행된 것만이다
     (`latest_published` — 원고 · 시험 글이 나가지 않게).
   · **첫 화면 숫자는 자동이다**: 매일 바뀌는 값마다 `data-live="rep|sec|src|brief|when|orb|cyc"` 표시가 있고, `stamp_counts.py` 가 리포트

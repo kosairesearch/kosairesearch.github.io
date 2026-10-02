@@ -94,14 +94,14 @@ JS = r'''(function(){
       +rows.map(function(r){return '<tr data-sec="'+esc(r.sec)+'"><td><a class="s-name" href="'+secLink(r.sec)+'">'+esc(r.sec)+'</a></td><td>'+mcap(r.mc)+'</td>'
         +(withW?'<td class="w"><i class="wb" style="--w:'+(r.w/maxW).toFixed(3)+'"></i>'+r.w.toFixed(1)+'%</td>':'')
         +'<td>'+r.n+'</td><td class="'+dir(r.chg)+'">'+chg(r.chg)+'</td><td class="keys">'+r.list.slice(0,3).map(function(s){return esc(s.name)}).join(' · ')+'</td></tr>'}).join('')+'</tbody></table></div>'}
-  function renderList(){var a=agg();document.title='업종 분석'+TSUF;
+  function renderList(){var a=agg();document.title='업종 분석'+TSUF;__SEO_LIST__
     /* 업종 수는 분석 글이 있는 대표 업종만 — '기타' 줄은 표에 두되 세지 않는다(랜딩 · 실사이트 첫 화면과 같은 규칙 · stamp_counts.sector_count).
        종목은 코넥스까지 들어 있어 '국내 상장'(2026-10-02) */
     app.innerHTML='<header class="hero"><p class="crumb">국내 상장 '+STOCKS.length.toLocaleString('ko-KR')+'개 종목 · '+a.rows.filter(function(r){return SECTORS[r.sec]}).length+'개 업종 · '+a.themeRows.length+'개 테마</p><h1>업종 분석</h1><p class="sub">국내 상장사를 업종별로 나누어 시가총액과 등락률, 업종 분석을 제공합니다.</p></header>'
       +'<section class="list"><div class="sec-h"><h2>업종</h2></div>'+sectorTable(a.rows,true)+'<p class="note">시가총액 순 · 시장 비중은 코스피·코스닥 전체 시가총액 대비 · 평균 등락률은 시가총액 가중'+(dateF?' · '+dateF+' 종가 기준':'')+'</p></section>'
       +(a.themeRows.length?'<section class="list"><div class="sec-h"><h2>테마</h2></div>'+sectorTable(a.themeRows,false)+'<p class="note">테마는 여러 업종에 걸친 묶음이라 시장 비중을 따로 두지 않습니다.</p></section>':'')}
   function renderDetail(sec){var a=agg(),row=null;a.rows.forEach(function(r){if(r.sec===sec)row=r});var isTheme=!row;if(!row&&a.byCat[sec])row=mkRow(sec,a.byCat[sec],a.total);if(!row){renderList();return}
-    var an=SECTORS[sec]||null;document.title=(EN()?TT(sec)+' — '+TT('업종 분석'):sec+' 업종 분석')+TSUF;
+    var an=SECTORS[sec]||null;document.title=(EN()?TT(sec)+' — '+TT('업종 분석'):sec+' 업종 분석')+TSUF;__SEO_DETAIL__
     var stats='<section class="stats"><div><div class="st-k">시가총액 합계</div><div class="st-v">'+mcap(row.mc)+'</div></div>'+(isTheme?'':'<div><div class="st-k">시장 비중</div><div class="st-v">'+row.w.toFixed(1)+'%</div></div>')
       +'<div><div class="st-k">종목 수</div><div class="st-v">'+row.n+'개</div></div><div><div class="st-k">평균 등락률</div><div class="st-v '+dir(row.chg)+'">'+chg(row.chg)+'</div></div></section>'
       +'<p class="stats-note">평균 등락률은 시가총액 가중'+(isTheme?' · 테마는 여러 업종에 걸쳐 있어 시장 비중을 두지 않습니다':'')+(dateF?' · '+dateF+' 종가 기준':'')+'</p>';
@@ -128,10 +128,36 @@ JS = r'''(function(){
 '''
 
 
+# 실사이트 — 업종 상세(industry.html?sector=…)의 검색 노출 머리. 옛 실사이트가 하던 일(머리의 즉시 보정 + setSEO)을 되살린다
+# (2026-10-03 독립 검토: 새 판은 canonical 이 목록 주소로 고정돼, 사이트맵이 따로 올린 업종 상세 30개가 목록의 중복으로 읽혔다).
+# 업종 주소는 사이트맵(generate_sitemap · urllib.parse.quote)과 같은 글자로 만든다 — encodeURIComponent 에 ! ' ( ) * 까지 % 로.
+# 시안 · 스테이징은 noindex 라 넣지 않는다(스테이징 결과는 그대로).
+SEO_ENC = "function(s){return encodeURIComponent(s).replace(/[!'()*]/g,function(c){return '%'+c.charCodeAt(0).toString(16).toUpperCase()})}"
+SEO_HEAD = ("<script>(function(){try{var m=location.search.match(/[?&]sector=([^&]+)/);if(!m)return;var s=decodeURIComponent(m[1].replace(/\\+/g,' '));if(!s)return;\n"
+            "var u='https://kosai.kr/industry.html?sector='+(" + SEO_ENC + ")(s);function set(q,a,v){var e=document.querySelector(q);if(e)e.setAttribute(a,v)}"
+            "set('link[rel=canonical]','href',u);set('meta[property=\"og:url\"]','content',u)}catch(e){}})();</script>\n")
+SEO_FN = ("  /* 검색 노출 머리 — 상세는 업종 주소 · 업종 이름이 든 제목과 설명, 목록과 모르는 업종은 목록 그대로(실사이트만 · build_industry_comp.SEO_*) */\n"
+          "  var SEO_D0=(document.querySelector('meta[name=description]')||{}).content||'';\n"
+          "  function SEO(sec,an){try{var u='https://kosai.kr/industry.html'+(sec?'?sector='+(" + SEO_ENC + ")(sec):''),t=document.title,"
+          "d=sec&&an?(EN()?TT(sec)+': industry structure, recent developments, outlook and risk factors.':sec+' 업종의 산업 구조와 최근 동향, 향후 전망, 리스크 요인을 분석합니다.'):SEO_D0;"
+          "function sm(q,a,v){var e=document.querySelector(q);if(e)e.setAttribute(a,v)}sm('link[rel=canonical]','href',u);sm('meta[property=\"og:url\"]','content',u);"
+          "sm('meta[name=description]','content',d);sm('meta[property=\"og:title\"]','content',t);sm('meta[property=\"og:description\"]','content',d);"
+          "sm('meta[name=\"twitter:title\"]','content',t);sm('meta[name=\"twitter:description\"]','content',d)}catch(e){}}\n")
+
+
+def page_js():
+    live = C.MODE == 'live'
+    js = JS.replace('__TSUF__', C.title(''))
+    js = js.replace('__SEO_LIST__', 'SEO(null);' if live else '').replace('__SEO_DETAIL__', 'SEO(sec,an);' if live else '')
+    if live:
+        js = js.replace("  var TSUF=", SEO_FN + "  var TSUF=", 1)
+    return js
+
+
 def build(out_path):
-    html = (C.head(C.title('업종 분석')) + '\n<style>\n' + C.CSS + '\n' + C.TOC_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + C.TOC_MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+    html = (C.head(C.title('업종 분석'), extra=SEO_HEAD if C.MODE == 'live' else '') + '\n<style>\n' + C.CSS + '\n' + C.TOC_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + C.TOC_MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('업종 분석') + '\n<main class="wrap" id="app"></main>\n' + C.FOOTER + '\n'
-            + '<script src="/data/stocks.js"></script>\n<script src="/data/sectors.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + JS.replace('__TSUF__', C.title('')) + C.TOC_JS + '\n' + C.JS + '\n</script>\n</body>\n</html>')
+            + '<script src="/data/stocks.js"></script>\n<script src="/data/sectors.js"></script>\n<script src="/data/reports-index.js"></script>\n<script>\n' + page_js() + C.TOC_JS + '\n' + C.JS + '\n</script>\n</body>\n</html>')
     C.emit(out_path, html)
     print(f'✅ {out_path} · {len(html):,}자')
 

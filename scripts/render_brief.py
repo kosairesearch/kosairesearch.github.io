@@ -390,7 +390,11 @@ def main():
     if not src or not src.exists():
         log(f"❌ 브리핑 JSON 이 없습니다: {src or BRIEFS}")
         return 2
-    doc = json.loads(src.read_text(encoding="utf-8"))
+    try:
+        doc = json.loads(src.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as e:
+        log(f"❌ 브리핑 JSON 을 읽지 못했습니다: {type(e).__name__}: {e}")
+        return 3
     # 금액 표기 통일 — 본문 HTML 과 영문 사전 키가 같은 문자열에서 나오므로
     # 여기서 한 번 맞추면 둘이 어긋날 일이 없다.
     _nsp, doc = number_spacing.normalize_report(doc)
@@ -410,7 +414,12 @@ def main():
     if a.at:
         h, m = a.at.split(":")
         at = at.replace(hour=int(h), minute=int(m))
-    body, dic = build(doc, at)
+    # 조립하다 멈춘 것도 3 — 1 은 '영문 사전에 빠진 문단'(경고)이라, 브리핑 다시 써 보기(brief_replay)가 진짜 오류를 경고로 넘기지 않게.
+    try:
+        body, dic = build(doc, at)
+    except Exception as e:  # noqa: BLE001
+        log(f"❌ 브리핑 본문을 조립하지 못했습니다: {type(e).__name__}: {e}")
+        return 3
     page_path = Path(a.page) if a.page else PAGE
     old_page = page_path.read_text(encoding="utf-8") if page_path.exists() else ""
     if BODY_START in old_page:
