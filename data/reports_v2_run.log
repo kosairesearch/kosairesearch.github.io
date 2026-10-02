@@ -1,23 +1,27 @@
-=== 공시 트리거 v2 생성 Fri Oct  2 00:58:29 UTC 2026 · 대상 445680 ===
-## 🤖 리포트 v2 Batch 제출 — 1개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
-- 정량 재사용 1개(숫자가 이미 최신·완전) · 다시 받을 0개
-- 모델 배분: claude-opus-5 0개 · claude-sonnet-5 1개
-- ✅ 배치 제출: msgbatch_01Acm5uJFiA4A1MkaAENVMT3 (1건) → data/batches_v2/msgbatch_01Acm5uJFiA4A1MkaAENVMT3.json
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 ended · 처리 0/성공 1/오류 0
-- msgbatch_01Acm5uJFiA4A1MkaAENVMT3 · 상태 ended · 처리 0/성공 1/오류 0/만료 0/취소 0 · 주문 2026-10-02 09:58
+=== 공시 트리거 v2 생성 Fri Oct  2 06:49:08 UTC 2026 · 대상 033920,000020,024090,085670,131400,007110,026940,307280,065950,146060,009620 ===
+## 🤖 리포트 v2 Batch 제출 — 11개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
+- 정량 재사용 11개(숫자가 이미 최신·완전) · 다시 받을 0개
+- 모델 배분: claude-opus-5 0개 · claude-sonnet-5 11개
+- ✅ 배치 제출: msgbatch_01BRbiZNJEJqL8tReNeQFXP2 (11건) → data/batches_v2/msgbatch_01BRbiZNJEJqL8tReNeQFXP2.json
+  · 상태 in_progress · 처리 11/성공 0/오류 0
+  · 상태 in_progress · 처리 11/성공 0/오류 0
+  · 상태 in_progress · 처리 11/성공 0/오류 0
+  · 상태 in_progress · 처리 11/성공 0/오류 0
+  · 상태 in_progress · 처리 11/성공 0/오류 0
+  · 상태 in_progress · 처리 11/성공 0/오류 0
+  · 상태 in_progress · 처리 11/성공 0/오류 0
+  · 상태 in_progress · 처리 11/성공 0/오류 0
+  · 상태 in_progress · 처리 11/성공 0/오류 0
+  · 상태 in_progress · 처리 11/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 11/오류 0
+- msgbatch_01BRbiZNJEJqL8tReNeQFXP2 · 상태 ended · 처리 0/성공 11/오류 0/만료 0/취소 0 · 주문 2026-10-02 15:49
+    (검증 실패: 누락 키 ['bear', 'risks', 'checkpoints', 'verdict'])
+  · ⚠️ 026940 스키마 불완전 — 건너뜀 (1번째 실패)
+  · 🈯 146060 영문 9곳을 채워 되살렸다
+  · 024090 한자 1곳 한글로: 세 부담이 구체화될 경우 → 대상
+  · ✏️ 085670 표현 교정 1건 → 남은 0건
+  · ✏️ 065950 표현 교정 1건 → 남은 0건
 
-✅ v2 회수 완료 · 성공 1/실패 0 → data/reports_v2/ (2563개)
-💵 claude-sonnet-5 1건 · 입력 6,035(캐시쓰기 56,041·읽기 83,838) · 출력 32,997 · 검색 5 → 약 $0.30 (장당 $0.299)
-✅ msgbatch_01Acm5uJFiA4A1MkaAENVMT3 회수 완료 · 성공 1/실패 0
+✅ v2 회수 완료 · 성공 10/실패 1 → data/reports_v2/ (2563개)
+💵 claude-sonnet-5 11건 · 입력 65,874(캐시쓰기 524,858·읽기 597,018) · 출력 259,052 · 검색 51 → 약 $2.59 (장당 $0.235)
+✅ msgbatch_01BRbiZNJEJqL8tReNeQFXP2 회수 완료 · 성공 10/실패 1
