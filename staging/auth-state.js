@@ -28,7 +28,7 @@ const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
 function applyI18n(){ if(window.KOSi18n && typeof window.KOSi18n.apply === 'function') window.KOSi18n.apply(); }
 if(window.KOSi18n) window.KOSi18n.register({
   "로그인":"Sign in", "로그아웃":"Sign out", "회원가입":"Sign up", "설정":"Settings",
-  "회원 탈퇴":"Delete account", "구독 관리":"Subscription",
+  "회원 탈퇴":"Delete account", /*@paid*/"구독 관리":"Subscription",/*@/paid*/
   "회원 탈퇴가 완료되었습니다. 그동안 이용해 주셔서 감사합니다.":
     "Your account has been deleted. Thank you for using KOSAI.",
   "보안을 위해 다시 로그인하신 뒤 탈퇴를 진행하여 주시기 바랍니다.":
@@ -36,12 +36,12 @@ if(window.KOSi18n) window.KOSi18n.register({
   "탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":
     "Something went wrong while deleting your account. Please try again later.",
   "정말 탈퇴하시겠습니까?":"Delete your account?",
-  "이용 중인 구독이 있습니다":"You have an active subscription",
+  /*@paid*/"이용 중인 구독이 있습니다":"You have an active subscription",
   "탈퇴하시면 구독이 즉시 해지되고, 환불 기준에 따라 산정된 금액이 자동으로 환불됩니다. 오늘 리포트를 열람하셨다면 오늘은 이용일로 차감되며, 계정이 삭제되므로 오늘 남은 열람은 사용하실 수 없습니다. 금액을 먼저 확인하시거나 오늘 남은 열람을 사용하신 뒤 나가시려면 구독 관리에서 환불을 신청하여 주시기 바랍니다.":
     "Deleting your account cancels the subscription right away and refunds the amount due under our refund terms. If you opened a report today, today counts as a used day, and because the account is deleted you cannot use the rest of today's limit. To see the amount first, or to use the rest of today before leaving, request the refund under Subscription instead.",
   "구독 관리로 이동":"Go to subscription",
   "환불을 처리하지 못하여 탈퇴를 진행하지 않았습니다. 구독 관리에서 환불을 먼저 신청하여 주시기 바랍니다.":
-    "We could not process the refund, so your account was not deleted. Please request the refund on the subscription page first.",
+    "We could not process the refund, so your account was not deleted. Please request the refund on the subscription page first.",/*@/paid*/
   "계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.":
     "Your account and saved watchlist will be permanently deleted. This cannot be undone.",
   "떠나시는 이유를 알려주시면 개선에 반영하겠습니다 (복수 선택 가능)":
@@ -90,7 +90,7 @@ const WD_CHECK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5
 
 /* 지금 유료 구독 중인가. 탈퇴하면 남은 기간을 잃으므로 미리 알려야 한다.
    실패하면(규칙·네트워크) 경고만 못 붙일 뿐, 탈퇴 자체는 서버가 안전하게 처리한다. */
-async function activeSub(uid){
+/*@paid*/async function activeSub(uid){
   if (window.__KOSDEMO) {
     var st = window.KOSPaywall && window.KOSPaywall.state();
     return st && st.active ? st.sub : null;
@@ -104,7 +104,9 @@ async function activeSub(uid){
              : typeof end === "number" ? end : Date.parse(end);
     return (Number.isFinite(ms) && ms > Date.now()) ? s : null;
   }catch(e){ return null; }
-}
+}/*@/paid*//*@live
+async function activeSub(){ return null; }   // 실사이트 — 구독 기능이 없다(멤버십 전). 탈퇴 창에 구독 안내를 붙이지 않는다
+@*/
 
 async function openWithdrawModal(){
   const user = auth.currentUser;
@@ -126,11 +128,11 @@ async function openWithdrawModal(){
       <h2 class="wd-h">${T("정말 탈퇴하시겠습니까?")}</h2>
       <p class="wd-em"></p>
       <p class="wd-warn">${T("계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.")}</p>
-      ${sub ? `<div class="wd-sub">
+      ${/*@paid*/sub ? `<div class="wd-sub">
         <b>${T("이용 중인 구독이 있습니다")}</b>
         <p>${T("탈퇴하시면 구독이 즉시 해지되고, 환불 기준에 따라 산정된 금액이 자동으로 환불됩니다. 오늘 리포트를 열람하셨다면 오늘은 이용일로 차감되며, 계정이 삭제되므로 오늘 남은 열람은 사용하실 수 없습니다. 금액을 먼저 확인하시거나 오늘 남은 열람을 사용하신 뒤 나가시려면 구독 관리에서 환불을 신청하여 주시기 바랍니다.")}</p>
         <button type="button" class="wd-tosubs">${T("구독 관리로 이동")}</button>
-      </div>` : ""}
+      </div>` : /*@/paid*/""}
       <p class="wd-q">${T("떠나시는 이유를 알려주시면 개선에 반영하겠습니다 (복수 선택 가능)")}</p>
       <div class="wd-reasons">${WD_REASONS.map((r)=>
         `<label class="wd-r"><input type="checkbox" name="wdReason" value="${r}"><span class="wd-box">${WD_CHECK}</span><span>${T(r)}</span></label>`).join('')}</div>
@@ -152,10 +154,10 @@ async function openWithdrawModal(){
   const close = () => ov.remove();
   ov.querySelector('.wd-cancel').addEventListener('click', close);
   ov.addEventListener('click', e => { if(e.target === ov) close(); });
-  /* 환불 금액을 보러 설정 페이지의 구독 칸으로 간다. 설정은 이제 창이 아니라 페이지라
+  /*@paid*//* 환불 금액을 보러 설정 페이지의 구독 칸으로 간다. 설정은 이제 창이 아니라 페이지라
      자리를 옮기지만, 탈퇴 창은 설정 페이지에서도 다시 열 수 있다. */
   const toSubs = ov.querySelector('.wd-tosubs');
-  if(toSubs) toSubs.addEventListener('click', () => { close(); openSettings('subscription'); });
+  if(toSubs) toSubs.addEventListener('click', () => { close(); openSettings('subscription'); });/*@/paid*/
   go.addEventListener('click', async () => {
     go.disabled = true; go.textContent = '...';
     const reason = [...ov.querySelectorAll('input[name=wdReason]:checked')]
@@ -245,12 +247,12 @@ function injectCss(){
   .wd-h{margin:0;font:700 22px/30px var(--font);letter-spacing:-.02em;color:var(--ink)}
   .wd-em{margin:6px 0 0;font:400 13px/20px var(--font);color:var(--ink-62);word-break:break-all}
   .wd-warn{margin:16px 0 0;font:400 14px/22px var(--font);color:var(--up)}
-  .wd-sub{margin:18px 0 0;padding:14px 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+  /*@paid*/.wd-sub{margin:18px 0 0;padding:14px 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
   .wd-sub b{display:block;font:600 13px/20px var(--font);color:var(--ink)}
   .wd-sub p{margin:4px 0 0;font:400 13px/20px var(--font);color:var(--ink-72);word-break:keep-all}
   .wd-tosubs{display:inline-block;margin-top:8px;border:0;background:none;padding:0;font:500 13px/20px var(--font);
     color:var(--ink);cursor:pointer;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
-  .wd-tosubs:hover{text-decoration-color:var(--ink)}
+  .wd-tosubs:hover{text-decoration-color:var(--ink)}/*@/paid*/
   .wd-q{margin:26px 0 4px;font:500 13px/20px var(--font);color:var(--ink-72)}
   .wd-reasons{display:flex;flex-direction:column}
   /* 체크 줄 — 진짜 checkbox 는 보이지 않게 두고(논리·키보드·읽기 도구는 그대로) 상자(.wd-box)를 그린다 */

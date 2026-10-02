@@ -3,7 +3,8 @@
 
     python3 scripts/build_legal_comp.py            # preview/terms.html · preview/privacy.html
 
-본문은 실사이트 파일의 .legal 안 글을 그대로 옮긴다 — 약관 글자는 한 자도 바꾸지 않는다(아래 check 가 지킨다).
+본문은 원문 파일(scripts/content/terms.src.html · privacy.src.html — 옛 실사이트 파일의 .legal 그대로)의 글을 옮긴다 —
+약관 글자는 한 자도 바꾸지 않는다(아래 check 가 지킨다). 실사이트 · 스테이징 · 시안이 모두 이 원문에서 나온다.
 바뀌는 것은 옷뿐: 카드 상자를 없애고 720px 한 단, 리포트 상세와 같은 목차(데스크톱 왼쪽 세로선 · 휴대폰 밑줄 칩).
 공고일·시행일 줄은 제목 아래 메타로, 머리말 두 문단은 제목 아래 글로 간다.
 """
@@ -16,9 +17,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import comp_common as C  # noqa: E402
 
 PAGES = {
-    'terms':   dict(src='Terms.html',   out='preview/terms.html',   h1='이용약관',
+    'terms':   dict(src='scripts/content/terms.src.html',   out='preview/terms.html',   h1='이용약관',
                     title='이용약관', num=re.compile(r'^제(\d+)조\s*\((.*)\)\s*$')),
-    'privacy': dict(src='Privacy.html', out='preview/privacy.html', h1='개인정보 처리방침',
+    'privacy': dict(src='scripts/content/privacy.src.html', out='preview/privacy.html', h1='개인정보 처리방침',
                     title='개인정보 처리방침', num=re.compile(r'^(\d+)\.\s*(.*)$')),
 }
 

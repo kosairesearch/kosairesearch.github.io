@@ -12,14 +12,21 @@
      · 테마를 바꾸면 문서와 헤더 아이콘이 함께 따라가는가
      · 비회원에게는 '일반' 하나와 로그인 길만 보이는가
      · 목록과 내용을 가르는 선이 두 테마 모두에서 색을 갖는가
-       (Settings.html 은 창이 아니라 본문에 펴므로 .ks-card 가 없다.
-        --ks-line 을 .ks-main 에도 걸어 두지 않으면 선이 글자색이 된다)
+       (창이 아닌 자리에 펴면 .ks-card 가 없다. --ks-line 을 .ks-main 에도
+        걸어 두지 않으면 선이 글자색이 된다)
+     · Settings.html 이 이 모듈을 본문(#mount)에 그리는가 — 2026-10-03 부터
+       실사이트 설정 페이지도 새 디자인이다(scripts/build_settings_staging.py 의
+       live 판). 목록은 위 탭 줄, 구독 칸은 주소(?tab=subscription)로도 안 열린다.
+       페이지의 모듈을 그대로 돌려 본다(파이어베이스만 갈아 끼운다)
+     · 이 파일을 부르는 곳(설정 페이지 · 관리자 화면의 auth-state-legacy.js)마다
+       캐시 판본이 붙어 있고 서로 같고 지금 내용과 맞는가
 
    실행
      npm install --no-save jsdom
      node tests/settings-panel.test.mjs
    ============================================================ */
-import { readFileSync, writeFileSync, mkdirSync, rmSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, rmSync, readdirSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { createRequire } from "node:module";
@@ -199,10 +206,70 @@ ok("scrollbar-color 를 모르는 곳(사파리)에도 바탕이 없다",
    /::-webkit-scrollbar-track\{background:transparent\}/.test(style));
 ok("실사이트에는 확인 대화상자가 없으므로 그 규칙도 없다", !/ks-dlg/.test(style));
 
-/* ── ⑧ Settings.html 이 창과 같은 폭을 갖고 있는가 ───────────────── */
+/* ── ⑧ Settings.html — 이 창을 본문(#mount)에 그리는 페이지 ──────────
+   옛 실사이트 Settings.html 은 .set-card(최대 860px) 안에 창과 같은 두 칸(왼쪽 목록 ·
+   오른쪽 내용)을 폈다. 그래서 카드가 두 칸을 담을 만큼 넓은지를 봤다.
+   2026-10-03 부터는 새 디자인이다 — 로그인 칸(.auth)보다 넓은 글 칸(.auth.wide)에서 목록을
+   위 탭 줄로 눕히고 내용을 그 아래에 쌓는다(#mount .ks-main{display:block}). 두 칸 폭은 더
+   필요 없으니, 그 대신 이 페이지가 정말 이 모듈을 불러 #mount 에 그리는지를 페이지의 모듈
+   그대로 돌려 본다 — 주소의 ?tab= 과 로그인 상태에 따라 무엇이 열리는가. */
 const setHtml = readFileSync(join(ROOT, "Settings.html"), "utf8");
-ok("Settings.html 의 카드가 두 칸을 담을 만큼 넓다",
-   /\.set-card\{max-width:860px/.test(setHtml));
+const pageMod = (setHtml.match(/<script type="module">([\s\S]*?)<\/script>/) || [])[1] || "";
+ok("Settings.html 이 ./settings-panel.js 의 renderSettings 를 부른다",
+   /import \{ renderSettings \} from "\.\/settings-panel\.js(\?v=[0-9a-f]{8})?";/.test(pageMod));
+ok("실사이트 설정 페이지가 여는 칸에 구독이 없다",
+   /const TABS = \["general", "notifications", "account"\];/.test(pageMod) && !/subscription|__KOS_CARD_NOTICE/.test(pageMod));
+const wide = +((setHtml.match(/\.auth\.wide\{max-width:(\d+)px\}/) || [])[1] || 0);
+const narrow = +((setHtml.match(/\.auth\{max-width:(\d+)px/) || [])[1] || 0);
+ok("설정은 로그인 칸(.auth)보다 넓은 칸(.auth.wide)에 편다",
+   /<div class="auth wide">[\s\S]*?<div id="mount"/.test(setHtml) && narrow > 0 && wide > narrow, `${wide}px vs ${narrow}px`);
+ok("목록은 위 탭 줄로 눕고 내용은 그 아래에 쌓인다",
+   /#mount \.ks-main\{display:block\}/.test(setHtml) && /#mount \.ks-nav\{[^}]*display:flex/.test(setHtml));
+ok("탭 줄 아래 선은 페이지 토큰(--hair)이고 두 테마 모두 정의돼 있다",
+   /#mount \.ks-nav\{[^}]*border-bottom:1px solid var\(--hair\)/.test(setHtml)
+   && /:root\{[^}]*--hair:rgba\(/.test(setHtml) && /:root\[data-theme="dark"\]\{[^}]*--hair:rgba\(/.test(setHtml));
+
+writeFileSync(join(TMP, "page.js"), pageMod
+  .replace(/from "\.\/firebase-config\.js(?:\?v=[0-9a-f]+)?"/g, 'from "./stub.js"')
+  .replace(/from "https:\/\/www\.gstatic\.com\/firebasejs\/[^"]+"/g, 'from "./stub.js"')
+  .replace(/from "\.\/settings-panel\.js(?:\?v=[0-9a-f]+)?"/g, 'from "./panel.js"'));   // 위에서 들인 그 모듈(P) 그대로
+const GLOBALS = ["window", "document", "Event", "Node", "HTMLElement", "location", "localStorage",
+                 "URL", "URLSearchParams", "MutationObserver"];
+let runs = 0;
+async function settingsPage(query, user) {
+  const d = new JSDOM(setHtml.replace(/<script\b[\s\S]*?<\/script>/g, ""),   // 마크업만 — 모듈은 아래에서 돌린다
+    { url: "https://kosai.kr/Settings.html" + query, pretendToBeVisual: true });
+  d.window.KOSi18n = window.KOSi18n;
+  const saved = Object.fromEntries(GLOBALS.map(k => [k, globalThis[k]]));
+  for (const k of GLOBALS) globalThis[k] = d.window[k];
+  stub.auth.currentUser = user;
+  try {
+    await import(`file://${join(TMP, "page.js")}?run=${++runs}`);
+    await tick();
+    const m = d.window.document.getElementById("mount");
+    if (!m) return { mount: false, nav: [], sel: [], seg: 0, dd: [], login: null };   // 자리째 지워졌다 — 아래 확인이 실패로 알린다
+    return { mount: true, nav: [...m.querySelectorAll(".ks-nav button")].map(b => b.textContent),
+             sel: [...m.querySelectorAll('.ks-nav button[aria-selected="true"]')].map(b => b.textContent),
+             seg: m.querySelectorAll(".ks-seg").length,
+             dd: [...m.querySelectorAll(".ks-kv dd")].map(x => x.textContent),
+             login: m.querySelector("a.ks-btn.primary") ? m.querySelector("a.ks-btn.primary").getAttribute("href") : null };
+  } finally { for (const k of GLOBALS) globalThis[k] = saved[k]; }
+}
+const USER = { uid: "u1", email: "a@b.c", displayName: "홍길동" };
+{
+  const g = await settingsPage("", USER);
+  ok("Settings.html — #mount 에 일반·알림·계정을 그리고 일반을 연다",
+     g.nav.join("/") === "일반/알림/계정" && g.sel.join() === "일반" && g.seg === 2, JSON.stringify(g));
+  const a = await settingsPage("?tab=account", USER);
+  ok("Settings.html?tab=account — 계정 칸을 연다",
+     a.sel.join() === "계정" && a.dd.join("/") === "홍길동/a@b.c", JSON.stringify(a));
+  const s = await settingsPage("?tab=subscription", USER);
+  ok("Settings.html?tab=subscription — 없는 칸이라 일반을 연다(구독 칸 없음)",
+     s.sel.join() === "일반" && !s.nav.includes("구독"), JSON.stringify(s));
+  const o = await settingsPage("?tab=account", null);
+  ok("Settings.html — 비회원은 일반 하나와 이 페이지로 돌아오는 로그인 길",
+     o.nav.join("/") === "일반" && o.login === "Login.html?next=" + encodeURIComponent("Settings.html?tab=account"), JSON.stringify(o));
+}
 
 /* ── ⑨ 캐시 주소 ─────────────────────────────────────────────────
    창을 두 칸으로 새로 짜고 배포했는데 화면은 옛 창이었다. 이 파일만
@@ -210,14 +277,29 @@ ok("Settings.html 의 카드가 두 칸을 담을 만큼 넓다",
    계속 쓰고 있었다. stamp_assets.py 가 그 뒤로 세 모양을 모두 보지만,
    못 보는 모양이 또 생기면 --check 는 아무 말도 하지 않는다(맨 주소는
    '최신이 아닌 해시' 가 아니라 '해시 없음' 이라 눈에 안 띈다).
-   그래서 여기서 직접 본다. */
-const authSrc = readFileSync(join(ROOT, "auth-state.js"), "utf8");
-const vOf = t => (t.match(/settings-panel\.js\?v=([0-9a-f]{8})/) || [])[1];
-ok("auth-state.js 가 부르는 주소에 판본이 붙어 있다", !!vOf(authSrc),
-   (authSrc.match(/import\("\.\/settings-panel[^)]*\)/) || ["없음"])[0]);
-ok("Settings.html 이 부르는 주소에도 붙어 있다", !!vOf(setHtml));
-ok("두 곳의 판본이 같다 — 갈리면 창이 두 벌로 뜬다", vOf(authSrc) === vOf(setHtml),
-   `${vOf(authSrc)} vs ${vOf(setHtml)}`);
+   그래서 여기서 직접 본다.
+
+   2026-10-03 부터 이 파일을 부르는 곳은 설정 페이지(Settings.html)와 관리자 화면이 쓰는
+   옛 모듈(auth-state-legacy.js 의 import())이다. 새 auth-state.js 는 설정을 창으로 띄우지
+   않고 페이지로 보내 이 파일을 부르지 않는다. 그래서 이름을 정해 두지 않고 루트 파일을 다
+   훑어 부르는 자리를 모은 뒤, 자리마다 판본이 붙었는지 · 서로 같은지 · 지금 내용의 해시와
+   맞는지 본다 — 새로 부르는 곳이 생겨도 같이 걸린다. */
+const refs = [];
+for (const f of readdirSync(ROOT).filter(f => /\.(html|js)$/.test(f)).sort()) {
+  const t = readFileSync(join(ROOT, f), "utf8");
+  for (const m of t.matchAll(/settings-panel\.js(\?v=([0-9a-f]+))?["'`]/g)) refs.push({ f, v: m[2] || null });
+}
+const users = [...new Set(refs.map(r => r.f))];
+ok("부르는 곳에 설정 페이지와 관리자 화면의 모듈이 있다",
+   users.includes("Settings.html") && users.includes("auth-state-legacy.js"), users.join(", ") || "없음");
+ok("부르는 자리마다 판본이 붙어 있다", refs.length > 0 && refs.every(r => r.v),
+   refs.filter(r => !r.v).map(r => r.f).join(", "));
+const vs = [...new Set(refs.map(r => r.v))];
+ok("판본이 모두 같다 — 갈리면 한쪽은 옛 창을 쓴다", vs.length === 1,
+   refs.map(r => `${r.f} ${r.v}`).join(" · "));
+const want = createHash("sha1").update(SRC, "utf8").digest("hex").slice(0, 8);
+ok("판본이 지금 파일 내용과 맞다(stamp_assets.py 와 같은 해시)", vs.length === 1 && vs[0] === want,
+   `${vs.join(",")} vs ${want}`);
 
 rmSync(TMP, { recursive: true, force: true });
 console.log(`\n통과 ${pass} · 실패 ${fail}`);

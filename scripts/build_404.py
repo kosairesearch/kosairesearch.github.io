@@ -29,7 +29,8 @@ BODY = '''<main class="wrap"><div class="nf">
 
 
 def build(out_path=None):
-    html = (C.head('페이지를 찾을 수 없습니다 | KOSAI') + '\n<style>\n' + C.CSS + '\n' + C.FORM_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+    # 색인 제외 · 머리 스크립트 없음 — 없는 주소 어디에서나 열리는 페이지라 상대 주소(i18n.js · analytics.js)가 깨진다
+    html = (C.head('페이지를 찾을 수 없습니다 | KOSAI', robots='noindex,nofollow', scripts=False) + '\n<style>\n' + C.CSS + '\n' + C.FORM_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('') + '\n' + BODY + '\n' + C.FOOTER + '\n<script>\n' + C.JS + '\n</script>\n</body>\n</html>')
     out = Path(out_path) if out_path else ROOT / '404.html'
     C.emit(out, html)

@@ -66,10 +66,15 @@ new MutationObserver(() => { if (window.__kosPaintTheme) window.__kosPaintTheme(
 if (isConfigured && auth) onAuthStateChanged(auth, paint); else paint();'''
 
 
-def build(out_path=None):
-    C.set_mode('staging')
+def build(out_path=None, live=False):
+    """live=True — 실사이트 Settings.html(루트). 멤버십이 없으므로 '구독' 칸을 주소(?tab=subscription)로도 열지 않고,
+    모듈은 루트 settings-panel.js(구독 칸이 없는 판 · tests/settings-panel.test.mjs 가 지킨다)를 쓴다."""
+    C.set_mode('live' if live else 'staging')
+    js = (JS.replace('const TABS = ["general", "notifications", "subscription", "account"];', 'const TABS = ["general", "notifications", "account"];')
+            .replace('if (q.get("card") === "1") window.__KOS_CARD_NOTICE = true;\n', '')) if live else JS   # 결제 수단 변경 알림도 실사이트에는 없다
+    assert not live or ('"subscription"' not in js and '__KOS_CARD_NOTICE' not in js)
     html = (C.head('설정 | KOSAI') + '\n<style>\n' + C.CSS + '\n' + C.FORM_CSS + '\n' + C.AUTH_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
-            + C.nav('') + '\n' + BODY + '\n' + C.FOOTER + '\n<script>\n' + C.JS + '\n</script>\n<script type="module">\n' + JS + '\n</script>\n</body>\n</html>')
+            + C.nav('') + '\n' + BODY + '\n' + C.FOOTER + '\n<script>\n' + C.JS + '\n</script>\n<script type="module">\n' + js + '\n</script>\n</body>\n</html>')
     out = Path(out_path) if out_path else ROOT / 'staging/Settings.html'
     C.emit(out, html)
     print(f'✅ {out} · {len(html):,}자')

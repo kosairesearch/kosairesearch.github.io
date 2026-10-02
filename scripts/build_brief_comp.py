@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import comp_common as C  # noqa: E402
 import render_brief as RB  # noqa: E402
+import number_spacing  # noqa: E402  금액 표기 통일(render_brief.main 과 같은 규칙)
 
 CSS = '''
 /* 글 한 단 — 읽기 폭 720 */
@@ -48,27 +49,47 @@ MOBILE_CSS = '''@media (max-width:820px){
 }'''
 
 
-def build(date=None, out_path=None):
-    path = (RB.BRIEFS / f'{date}.json') if date else RB.latest()
-    doc = json.loads(Path(path).read_text(encoding='utf-8'))
-    pub = (doc.get('meta') or {}).get('publishedAt')
-    at = datetime.datetime.fromisoformat(pub) if pub else None
+def latest_published():
+    """페이지에 낼 브리핑 — 발행된 것(meta.publishedAt) 가운데 가장 늦은 날. 만들어만 두고 올리지 않은 원고
+    (발행 대기 초안 · 휴장일 시험 · 9월 13일 시험 원고)가 페이지에 나가지 않게 한다. 발행된 것이 하나도 없으면 가장 늦은 파일."""
+    files = sorted(p for p in RB.BRIEFS.glob('*.json') if re.fullmatch(r'\d{4}-\d\d-\d\d', p.stem))
+    for f in reversed(files):
+        try:
+            if (json.loads(f.read_text(encoding='utf-8')).get('meta') or {}).get('publishedAt'):
+                return f
+        except (ValueError, OSError):
+            continue
+    return files[-1] if files else None
+
+
+def page_html(doc, at):
+    """브리핑 한 편의 페이지(모드에 맞는 옷). 본문은 실사이트와 같은 render_brief.build() — 아침 브리핑 작업(render_brief.py)도 이 함수로
+    실사이트 brief.html 을 그린다. 금액 표기는 render_brief 와 같은 규칙으로 맞춘 뒤 그린다(두 길이 같은 글을 내게)."""
+    _n, doc = number_spacing.normalize_report(doc)
     body, dic = RB.build(doc, at)
     body = body.replace('href="stock.html?ticker=', 'href="/stock.html?ticker=')   # 시안 폴더 밖 실사이트 종목 페이지로
     title = re.sub(r'<[^>]+>', '', (doc['title'].get('ko') or '')).strip()
     head_title = f'{title} — ' + (C.title('모닝브리핑') if C.MODE != 'preview' else '모닝브리핑 디자인 시안 | KOSAI')
-    # 영어 화면(staging/i18n.js) — 본문 문단은 data-i18n-block 이고, 그 영어는 실사이트와 같은 render_brief 사전(dic)이다.
+    # 영어 화면(i18n.js) — 본문 문단은 data-i18n-block 이고, 그 영어는 실사이트와 같은 render_brief 사전(dic)이다.
     # 문서 제목은 제목 안의 ' — ' 때문에 조각으로는 못 맞추므로 통째로 넣는다.
     i18n = ''
-    if C.MODE == 'staging':
+    if C.MODE in ('staging', 'live'):
         title_en = re.sub(r'<[^>]+>', '', (doc['title'].get('en') or '')).strip()
         if title_en:
             dic[C._i18n_norm(head_title)] = f'{title_en} — Morning Brief | KOSAI'
         i18n = ('<script type="application/json" data-kos-i18n>'
                 + json.dumps(dic, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + '</script>\n')
-    html = (C.head(head_title) + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+    return (C.head(head_title) + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('모닝브리핑') + '\n<main class="wrap">\n  <article class="mb">\n' + body + '\n  </article>\n</main>\n' + C.FOOTER + '\n' + i18n
             + '<script>\n' + C.JS + '\n</script>\n</body>\n</html>')
+
+
+def build(date=None, out_path=None):
+    path = (RB.BRIEFS / f'{date}.json') if date else latest_published()
+    doc = json.loads(Path(path).read_text(encoding='utf-8'))
+    pub = (doc.get('meta') or {}).get('publishedAt')
+    at = datetime.datetime.fromisoformat(pub) if pub else None
+    html = page_html(doc, at)
     out = Path(out_path) if out_path else ROOT / 'preview/brief.html'
     C.emit(out, html)
     print(f'✅ {out} · {Path(path).stem} · {len(html):,}자')

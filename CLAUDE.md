@@ -244,6 +244,7 @@ Firebase Functions 의 `NAVER_CLIENT_ID` 는 네이버 로그인용이라 다른
   초안은 따로 갈래에 두고, 정한 시행일에 실사이트·스테이징을 같이 바꾼다.
   지난 초안: git show 3cf1db027:staging/Terms.html · :staging/Privacy.html
   지키는 검사: staging/tests/same-legal.test.mjs
+  2026-10-03 부터 약관 · 방침 원문은 `scripts/content/terms.src.html` · `privacy.src.html` 하나다 — 실사이트 · 스테이징이 둘 다 거기서 나온다.
 
 ### 푸터 면책 상자는 뺐다 — 유료화 때 법정 문구로 다시 넣는다 *(2026-09-24)*
 
@@ -331,6 +332,50 @@ WebKit 소스(LocalFrameView::fixedContainerEdges)로 확인한 기제:
     "터치패드인지 마우스인지 감지할 수 없다"는 입장이다(lenis 토론 #358 · 이슈 #237 · #397). 크롬 151판의 `WheelEvent.momentum` 은 관성
     구간에서만 참이라 첫 이벤트 판정에는 늦다.
 
+## 실사이트도 새 디자인이다 — build_live.py 가 만든다, 손으로 고치지 마라 *(2026-10-03 사장 "새로 디자인한 페이지들 … 실사이트로 옮겨줘. 근데 실사이트에는 멤버십 페이지가 없잖아")*
+
+루트의 페이지 18장(index · Home · Reports · industry · Watchlist · brief · About · Terms · Privacy · Contact · Feedback · Login · Signup ·
+Consent · auth-action · Settings · stock · 404)은 스테이징과 같은 생성기가 `comp_common.set_mode('live')` 로 만든다. 옷 · 문구는 스테이징과
+글자 하나까지 같고(본문 비교로 확인), 다른 것은 live 모드가 맡는다.
+
+    python3 scripts/build_live.py            # 루트 페이지 · i18n.js · auth-state.js · img/ 를 다시 만들고 ?v= 를 찍는다
+    python3 scripts/build_live.py --check    # 저장소 = 생성기 결과인지 · 멤버십/스테이징 흔적이 없는지 (check_all '실사이트 생성기')
+
+  · **멤버십은 실사이트에 없다.** 머리 · 꼬리 · 휴대폰 메뉴에 '멤버십' 없음(`PAGES_LIVE` · 랜딩 `nav_links`), 종목 상세 잠금 없음
+    (`build_stock_staging` 의 `/*@paid*/ … /*@/paid*/` 구간을 live 에서 통째로 뺀다 · `/*@live … @*/` 는 live 에만), 결제 모듈 없음
+    (`LIVE_PAGE_SCRIPTS` 가 paywall · checkout 을 뺀다), 설정의 '구독' 칸 없음(루트 settings-panel.js 는 구독 칸 없는 판, `TABS` 에서도 뺀다).
+    pricing · checkout · billing · demo-backend · subscription-api · payment-config 는 루트에 두지 않는다 — `build_live --check` 가 막는다.
+    유료화하는 날 이 표시들을 걷어 내면 스테이징 판이 그대로 실사이트 판이 된다.
+  · 페이지 끝 번역 사전에도 멤버십 말을 싣지 않는다 — 화면에는 안 보여도 페이지 소스에는 보인다. 스테이징 전용 말(STAGING 띠 · 멤버십 메뉴)은
+    `scripts/i18n/staging.json` 에 두어 스테이징에만 늘 싣고, 모듈 주석 · 코드에 걸려 실리던 멤버십 낱말 넷은 `comp_common.LIVE_DICT_DROP` 으로
+    뺀다(`build_live --check` 감사가 본다). **사전을 고를 때 주석을 통째로 빼지 말 것** — 자료에서 그리는 글('업종 내 주요 종목' 등)이 주석 덕에
+    실려 있어 함께 빠진다(그렇게 했다가 english.test 가 업종 상세에서 잡았다).
+  · 루트 모듈: `i18n.js` 는 `staging/i18n.js` 사본(같은 엔진), `auth-state.js` 는 `staging/auth-state.js` 에서 구독 안내(`@paid`)를 뺀 사본 —
+    **둘 다 build_live 가 쓴다. 루트 파일을 고치지 말고 staging 쪽을 고친 뒤 돌린다.** 나머지 모듈은 루트 파일 그대로(다섯 공용 모듈은 원래 같다).
+    `settings-panel.js` 는 루트 판(구독 칸 없음 · `tests/settings-panel.test.mjs`). 휠 감속은 실사이트도 0.6초(스테이징에서 사장이 고른 값).
+  · 관리자 화면(Admin.html)만 옛 디자인이다 — 옛 머리용 로그인 상태 모듈을 `auth-state-legacy.js` 로 남겨 그것을 쓴다. `build_admin_page.py` 는
+    옛 Login.html 을 껍데기로 쓰고 문구도 낡아(손으로 고친 Admin.html 과 다르다) 돌리지 않는다. `build_consent_page.py` 도 옛 디자인을 만드는
+    것이라 돌리지 않는다(약관 동의 화면은 build_auth_comp 가 만든다).
+  · 원문 자리: 회사 소개 · 약관 · 방침 글은 `scripts/content/about.src.html` · `terms.src.html` · `privacy.src.html`, 리포트 문단 자르기 함수는
+    `scripts/content/stock-paragraphs.js` 다(옛 루트 페이지에서 글자 그대로 옮겼다). 고칠 때는 그 파일을 고치고 build_live · build_staging 을 같이 돈다.
+  · 검색 노출: 페이지마다 설명 · canonical · 공유 · 색인 여부는 `comp_common.LIVE_SEO`(설명은 그 페이지 머리의 소개 문장). 색인 제외는 옛 실사이트와
+    같은 넷(관심종목 · 약관 동의 · 계정 인증 · 404). 첫 화면은 네이버 소유확인 · 구조화 데이터를 옛 값 그대로 둔다(`landing.NAVER_VERIFY` · `LD_JSON`).
+    머리 스크립트(i18n.js · analytics.js)와 꼬리 모듈은 맨 이름으로 적어야 `?v=` 가 찍힌다. 404 는 어느 주소에서나 열려 스크립트를 넣지 않는다.
+    업종 상세(`industry.html?sector=…`)는 머리의 즉시 보정과 `SEO()` 가 canonical · og:url 을 사이트맵 주소(`urllib.parse.quote` 와 같은 글자 —
+    괄호는 %28 %29)로, 제목 · 설명을 업종 이름으로 고친다(옛 실사이트와 같음 · `build_industry_comp.SEO_HEAD/SEO_FN` · 실사이트만). 빼면 사이트맵이
+    올린 업종 상세 30개가 목록의 중복으로 읽힌다 — 지키는 검사 `staging/tests/industry-seo.test.mjs`.
+  · **모닝브리핑**: 아침 작업 ④의 `render_brief.py` 가 새 디자인 brief.html 전체를 그린다(`build_brief_comp.page_html` · build_live 와 글자 하나까지
+    같다). 발행 시각 기록은 그대로 이 스크립트가 한다. 글을 읽거나 조립하거나 페이지를 그리다 멈추면 3 으로 끝난다(1 은 '영문 사전 누락' 경고 —
+    브리핑 다시 써 보기가 1 을 경고로 넘기므로 진짜 오류를 1 로 내지 말 것). 스테이징 생성이 실패해도
+    실사이트 발행은 계속한다(실패로 끝내면 발행 시각만 남은 글이 올라가 그날 브리핑이 조용히 빠진다). 페이지에 내는 브리핑은 발행된 것만이다
+    (`latest_published` — 원고 · 시험 글이 나가지 않게).
+  · **첫 화면 숫자는 자동이다**: 매일 바뀌는 값마다 `data-live="rep|sec|src|brief|when|orb|cyc"` 표시가 있고, `stamp_counts.py` 가 리포트
+    워치독(30분 예약)과 아침 작업 ⑦(발행 직후, 실패해도 브리핑에는 영향 없음)에서 고친다. 정의도 그 파일 한 곳 — 리포트 수 = 리포트가 있는
+    상장 종목(상장 ∩ 색인 · 홈 · 리포트 페이지 머리 줄과 같다), 업종 수 = 분석 글이 있는 대표 업종, 호수 = 발행한 브리핑 수, '지난해' = 바깥
+    통계(GAP)의 다음 해만. 문서 제목 · 설명 · 공유 설명의 '국내 상장 N개 종목'도 같이 고친다. 표시를 못 찾으면 고치지 않고 1 로 끝난다.
+    check_seo 7번이 어긋남을 잡는다. 공시 시계 자료(cyc)는 다섯 해를 담아 두므로 박지 않는다(`holidays` 패키지가 워치독에 없다).
+  · 홈 · 리포트 · 업종 페이지의 숫자는 브라우저가 자료(stocks.js · reports-index.js)에서 바로 센다 — 따로 할 일이 없다.
+
 ## 스테이징은 새 디자인이다 — 생성기가 만든다, 손으로 고치지 마라 *(2026-09-26 사장 "스테이징에 적용해줘")*
 
 `staging/*.html` 은 이제 손으로 쓰는 파일이 아니다. 시안 생성기(`scripts/build_*_comp.py` + `comp_common.py`)가
@@ -355,14 +400,14 @@ WebKit 소스(LocalFrameView::fixedContainerEdges)로 확인한 기제:
     옛 `sync_staging_brief.py` 는 지웠다 — 돌리면 옛 디자인이 돌아온다.
   · 검사는 새 구조에 맞췄다: `layout.test.mjs`(스테이징은 `.mmenu` · 눈썹 `.crumb` 일관성), `same-legal.test.mjs`(법률 본문만
     jsdom 으로 비교), `reports-filter.test.mjs`(개수의 쉼표), `same-paragraphs.test.mjs`(`wrapup` 정규식). 요구 사항은 그대로다.
-  · 실사이트로 옮기는 날: `comp_common.set_mode('live')` 로 루트에 내면 된다(404.html 이 이미 그 길로 나온다). 그때
-    `patch_header.py` · `patch_biz_footer.py` 의 옛 템플릿 검사는 새 구조 검사(생성기 = 저장소)로 바꾼다.
+  · 실사이트로 옮겼다(2026-10-03 · 위 '실사이트도 새 디자인이다' 절). `patch_header.py` · `patch_biz_footer.py` 의 옛 템플릿 검사는 이제
+    관리자 화면 한 장만 보고, 새 구조는 `build_live.py --check`(생성기 = 저장소)가 지킨다.
   · 휠 스크롤(2026-09-26 사장): `staging/lenis.js` · `staging/smooth-scroll.js` 는 실사이트 사본이고 `duration` 만 0.7 → 0.6
     (사장 "실사이트보다 조금 더 빠르게" · 휠 한 번 694ms → 614ms). `comp_common.finish()` 가 모든 스테이징 페이지 꼬리에 붙인다.
     휴대폰(pointer:coarse)·움직임 줄임·맥에서는 스스로 꺼지고, 켜져도 휠 한 칸 입력만 감속한다(아래 '휠 감속' 절).
     메뉴·업종 시트가 열리면 `KOSSmoothScroll.stop()` — html overflow:hidden
     은 프로그램 스크롤을 못 막아서다. 목차 클릭(TOC_JS)은 lenis 가 있으면 lenis 로 옮기고 전파를 막는다(문서 핸들러의 -90 offset 을
-    타면 헤더 여백이 어긋난다). 실사이트로 옮기는 날 0.6 을 실사이트에도 쓸지 정한다.
+    타면 헤더 여백이 어긋난다). 실사이트도 2026-10-03 새 디자인과 함께 0.6 · defaultPrevented 검사 줄을 받았다.
   · 페이지 전환: `@view-transition{navigation:auto}`(실사이트와 같음) + 띠·헤더에 `view-transition-name` 을 줘 본문만 크로스페이드한다.
   · 관심종목 단추와 뒤로 가기(2026-09-26 사장): 뒤로·앞으로 가기로 되살아난 페이지(bfcache)는 떠날 때의 목록을 들고 있어, 상세에서
     추가하고 돌아온 목록이 '+' 로 남았다(실사이트도 같았다). `watchlist.js`(실사이트·스테이징 같은 파일)가 pageshow(persisted) 에서
@@ -376,7 +421,7 @@ WebKit 소스(LocalFrameView::fixedContainerEdges)로 확인한 기제:
        번호·필터 라벨·평가 라벨·'미포함' 표시)도 `--ink-62` 로. `--ink-30` 은 이제 장식·비활성·아이콘 전용이다 — 글자에 다시 쓰지 말 것(1.96:1).
     ② 글꼴은 `fonts/pretendard-subset.css`(Pretendard 1.3.9 공식 분할판 400~700 · `scripts/build_font_subset.py`). 통파일 넷 preload(3.1MB)를
        뺐다 — 페이지당 약 0.4~0.55MB. 링크는 가리는(render-blocking) 채로 둔다: 안 가리게 하면 페이지를 옮길 때마다 기본 글꼴이 먼저 그려져 깜빡인다.
-       실사이트 루트는 아직 통파일이다.
+       실사이트도 2026-10-03 부터 분할판이다(통파일은 옛 디자인인 관리자 화면만 쓴다 — 지우지 말 것).
     ③④ 실적 차트는 `stock_page.bar_chart`(파이썬)와 `build_stock_staging.barChart`(JS) 두 곳이 그린다. 적자는 0선 아래, 라벨은 SVG 밖 HTML(12px 고정),
        영업이익 흑자 라벨은 막대 왼쪽 끝부터. 두 쪽이 글자 하나까지 같은지 `staging/tests/same-chart.test.mjs` 가 본다 — 한쪽만 고치면 걸린다.
     ⑤ 키보드 포커스: `comp_common.CSS` 의 `:focus-visible` 먹색 2px 윤곽(가로 스크롤 띠 안은 안쪽), 밑줄 입력칸·검색창은 밑줄 2px.
@@ -404,8 +449,8 @@ WebKit 소스(LocalFrameView::fixedContainerEdges)로 확인한 기제:
     821~1440px 실측: 링크 자리가 홈과 같고, 821px 에서도 로고와 87px · 오른쪽 단추와 70px 띄어 있다). 머리가 무대 위인지는 머리의 실제 자리로 본다(띠만큼 내려가 있어서) — 시안도 같은 코드다.
   · 그림은 시안 그림을 `staging/img/` 로 복사한다. 리포트 · 업종 화면을 다시 찍으면(landing_art.py) 스테이징도 다시 만든다 — `--check` 가 그림까지 견준다.
   · 매일 바뀌는 값(리포트 수 · 업종 수 · 출처 평균 · 브리핑 호수 · 행성 자료 · 공시 시계 자료 · '지난해')은 `data-live` 로 감싸고, `build_staging --check`
-    는 그 자리를 빼고 견준다(`landing.mask`). 아침 브리핑 작업이 날마다 다시 만들어 숫자를 맞춘다. 실사이트로 옮기는 날은 stamp_counts 처럼
-    리포트 워크플로 · 워치독에서도 숫자를 맞추게 한다.
+    는 그 자리를 빼고 견준다(`landing.mask`). 아침 브리핑 작업이 날마다 다시 만들어 숫자를 맞춘다. 실사이트 첫 화면은 stamp_counts.py 가
+    워치독 · 아침 작업 ⑦에서 같은 자리(`data-live="이름"`)를 고친다(위 '실사이트도 새 디자인이다').
   · 아침 브리핑 작업이 `build_staging.py` 를 돌리므로, 랜딩이 실패해도 멈추지 않는다 — 경고만 내고 있던 index.html 을 둔다(`--check` 에서는 실패).
   · 검색 후보 판(.ac) — 첫 화면의 글은 떠오르는 움직임(rise) 때문에 저마다 쌓임 맥락을 가져, 검색창을 한 칸 위(z-index 2)로 올리지 않으면
     아래 '전체 리포트 보기'가 판 위에 비친다. 첫 화면은 행성을 자르느라 overflow:hidden 이라 판 높이를 첫 화면 끝에 맞춘다(`fit`).
@@ -428,8 +473,8 @@ WebKit 소스(LocalFrameView::fixedContainerEdges)로 확인한 기제:
     (MutationObserver) · placeholder/aria-label/title/alt · 문서 제목 · 숫자 틀(`#`) · 날짜 틀(`@` → 'Oct 2, 2026') · 금액(조·억·만 → ₩T·B·M,
     실사이트 영어판과 같은 꼴) · `<br>` 로 나뉜 제목 덩어리(값에 `<br>` 을 넣으면 영어도 그 자리에서 줄을 바꾼다 — 덩어리는 전부 번역될 때만 바꾼다).
     말을 바꾸면 페이지를 다시 연다 — 스크립트가 그린 글(설정 칸 · 목록 · 리포트 본문)까지 처음부터 그 말로 그리게(실사이트는 그 자리에서 바꾼다).
-  · 사전 `scripts/i18n/*.json` — common(머리·꼬리·업종명, 모든 페이지) · live(실사이트 영어판에서 가져온 것, 스테이징에서 쓰는 것만) · landing ·
-    pages · pricing · stock · legal · industry. `comp_common.finish()` 가 그 페이지에 나오는 문구만 골라 페이지 끝에 싣는다(한국어로 보는 사람은 읽지
+  · 사전 `scripts/i18n/*.json` — common(머리·꼬리·업종명, 모든 페이지) · staging(STAGING 띠 · 멤버십 메뉴, 스테이징 모든 페이지 · 실사이트 제외) ·
+    live(실사이트 영어판에서 가져온 것, 스테이징에서 쓰는 것만) · landing · pages · pricing · stock · legal · industry. `comp_common.finish()` 가 그 페이지에 나오는 문구만 골라 페이지 끝에 싣는다(한국어로 보는 사람은 읽지
     않는다). 페이지 글에 없고 자료에서 오는 문구(리포트의 밸류에이션 기준 줄 등)는 파일에 `"//always": "stock.html"` 로 늘 싣는다.
     **한국어 문구를 고치거나 새로 넣으면 영어도 같이** — 키가 한국어 원문이라 원문이 바뀌면 영어가 빠진다.
   · 자료는 자료의 영어판: 종목명은 `name_en`(실사이트 cleanEn 으로 다듬음, 없으면 한국어 이름 그대로) · 리포트/업종/브리핑 본문은 `en` 필드.
@@ -491,8 +536,8 @@ PR 하나, 스테이징·실사이트 같이. 조사 원자료는 `docs/design/r
 보고서 **4부(KOSAI 카피 가이드 — 목소리 · 자리별 문체표 · 용어집 · 숫자 표기 · 금지어 · CTA 체계 · 사실 장부)**를 기준으로 한다.
 
   · 숫자는 데이터에서 박는다 — **기준일 꼬리('9월 24일 기준')는 달지 않고 숫자를 늘 맞게 둔다**(2026-09-27 사장 "날짜 기준을 왜 집어넣어").
-    실사이트 랜딩은 `stamp_counts.py` 가 리포트 워크플로·워치독(30분마다)에서 다시 박는다 — 다만 지금은 `stockCount`(상장 2,682)를 '리포트' 자리에
-    박으니, 새 랜딩을 올리는 날 리포트 수(2,680, 새 랜딩의 `.num`)를 박도록 바꿀 것. **'2,700여 개' 는 틀린 말이다**('-여' = 그 수를 넘음).
+    실사이트 첫 화면은 `stamp_counts.py` 가 리포트 워치독 · 아침 작업에서 다시 박는다 — 리포트 수는 리포트가 있는 상장 종목 수다(2026-10-03 부터,
+    전에는 상장 종목 수 `stockCount` 를 박아 새 상장 때 많게 나왔다). **'2,700여 개' 는 틀린 말이다**('-여' = 그 수를 넘음).
   · **카피에 가운뎃점(·)을 쓰지 않는다**(2026-09-27 사장 "아래아(ㆍ)를 사용하지 않았으면") — 쉼표나 '와/과'로 잇는다.
   · **범위는 '국내 상장'으로 묶는다**(2026-10-01 사장 승인 — 첫 화면 서브 · 페이지 제목 · 검색 설명 · 공유 설명의 '코스피, 코스닥,
     코넥스' 나열 대신. `landing.py` 의 `SCOPE` 한 곳). 지금 첫 화면 서브: "국내 상장 2,683개 종목의 기업 분석 리포트를 제공합니다."
@@ -615,7 +660,7 @@ PR 하나, 스테이징·실사이트 같이. 조사 원자료는 `docs/design/r
     한때(2026-10-03 #318) '첫 정기보고서가 공시된 뒤' 로 바꿨던 것은 잘못 짚은 것이다 — 8월 말 · 9월 상장 2개사(0220W0 · 0010S0)가 몇 주씩 빠진 것은
     절차가 없어서가 아니라 생성이 한 번 실패했기 때문이다(0220W0 배치 결과 불완전 · 0010S0 배치 80분 초과). `known_tickers.json` 은 성공과 상관없이
     갱신돼 다시 잡히지 않았다 → `new_listings.py` 가 리포트가 하나도 없는 종목도 다시 대상에 넣는다(인덱스가 종목 수의 절반 미만이면 재시도 안 함).
-    회사 소개(About)는 실사이트 About.html 의 글을 그대로 가져오므로 실사이트 파일과 번역 사전(한국어 문장이
+    회사 소개(About)의 글은 `scripts/content/about.src.html`(옛 실사이트 About.html 본문)에서 오므로 그 파일과 번역 사전(한국어 문장이
     열쇠)을 같이 고친다. 요청 문장의 '-하여 주시기 바랍니다' 는 대기업 말투라 그대로 두었고, 멤버십 화면의 '열람' · '플랜' 과 제목 대구
     ('데이터는 무료로, 해석은 구독으로')는 결제 · 환불 안내와 얽혀 유료화 전 변호사 검토 때 함께 정리한다.
   · **랜딩에 특정 종목을 예시로 두지 않는다**(2026-09-27 사장 "플리토 출처를 갑자기 왜 … 예시로 특정 종목을 왜") — 출처 링크 · '삼성전자

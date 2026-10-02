@@ -265,9 +265,9 @@ def page(title, body, js, extra_css='', module=None):
 
 def build(outs=None):
     outs = outs or {'login': 'preview/login.html', 'signup': 'preview/signup.html', 'consent': 'preview/consent.html', 'action': 'preview/auth-action.html', 'settings': 'preview/settings.html'}
-    stg = C.MODE == 'staging'
+    stg = C.MODE in ('staging', 'live')
     real = {}
-    if stg:   # 스테이징: 실제 Firebase 인증 모듈. 설정은 build_settings_staging 이 따로 만든다.
+    if stg:   # 스테이징 · 실사이트: 실제 Firebase 인증 모듈. 설정은 build_settings_staging 이 따로 만든다.
         import auth_staging as A
         real = {'login': A.LOGIN_JS, 'signup': A.SIGNUP_JS, 'consent': A.CONSENT_JS, 'action': A.ACTION_JS}
     for key, out, title, body, js in [

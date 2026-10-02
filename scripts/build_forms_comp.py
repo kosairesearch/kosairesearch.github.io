@@ -95,10 +95,11 @@ JS_COMMON = r'''
   window.kosInd(catSeg,'x');
   var EMAIL=/^[^@\s]+@[^@\s]+\.[^@\s]+$/;
   function sent(){document.getElementById('form').hidden=true;document.getElementById('sent').hidden=false;window.scrollTo({top:0,behavior:'smooth'})}
-  /* 보내기 — 스테이징·실사이트는 KOSsubmitForm(submit-form.js → Firebase 함수)으로 실제로 보낸다. 시안(모듈 없음)은 접수 화면만. */
+  /* 보내기 — 스테이징·실사이트는 KOSsubmitForm(submit-form.js → Firebase 함수)으로 실제로 보낸다. 시안(모듈 없음)은 접수 화면만.
+     실제 페이지에서 모듈이 아직 없거나 못 받았으면 접수 화면을 띄우지 않고 오류를 보인다 — 보내지 않은 문의를 받았다고 하면 그 문의는 사라진다. */
   var formErr=document.getElementById('formErr'),btn=document.querySelector('#form .submit .btn');
   function send(payload){formErr.classList.remove('show');
-    if(!window.KOSsubmitForm){sent();return}
+    if(!window.KOSsubmitForm){if(!__REAL__){sent();return}formErr.textContent='보내지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.';formErr.classList.add('show');return}
     payload.hp=(document.getElementById('hp')||{}).value||'';payload.page=location.pathname.split('/').pop();
     btn.disabled=true;var was=btn.textContent;btn.textContent='보내는 중…';
     window.KOSsubmitForm(payload).then(function(){sent()}).catch(function(err){formErr.textContent='보내지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.'+(err&&err.message?' ('+err.message+')':'');formErr.classList.add('show')})
@@ -125,11 +126,13 @@ FEEDBACK_JS = r'''(function(){''' + JS_COMMON + r'''
     if(!mv){fldErr(msg,'내용을 입력하여 주시기 바랍니다.');bad=bad||msg}else if(mv.length<5){fldErr(msg,'내용을 조금 더 자세히 입력하여 주시기 바랍니다.');bad=bad||msg}else fldClear(msg);
     var ev=email.value.trim();if(ev&&!EMAIL.test(ev)){fldErr(email,'올바른 이메일 형식이 아닙니다.');bad=bad||email}else fldClear(email);
     if(bad){bad.focus();return}
-    var rv=rating.querySelector('.rate.on');send({kind:'feedback',email:ev,rating:rv?+rv.dataset.v:null,category:cat(),message:mv})});
+    /* 만족도는 글자로 보낸다(실사이트 옛 양식과 같다) — 메일 제목 · 본문에 그대로 찍혀 숫자(1~3)로는 읽는 사람이 뜻을 모른다 */
+    var rv=rating.querySelector('.rate.on');send({kind:'feedback',email:ev,rating:rv?['','아쉬움','보통','만족'][+rv.dataset.v]||null:null,category:cat(),message:mv})});
 })();'''
 
 
 def page(title, body, js):
+    js = js.replace('__REAL__', 'true' if C.MODE in ('staging', 'live') else 'false')
     return (C.head(title) + '\n<style>\n' + C.CSS + '\n' + C.FORM_CSS + '\n' + C.PROSE_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('') + '\n' + body + '\n' + C.FOOTER + '\n<script>\n' + js + '\n' + C.JS + '\n</script>\n</body>\n</html>')
 

@@ -19,6 +19,13 @@
    숫자를 하나 더 크게 고쳐 놓고 끝내면 다음에 띠 문구가 한 줄 늘 때 또
    어긋난다. 띠 높이를 재서 둘 다 그만큼 내리도록 고쳤고, 이 검사는 그것이
    실제로 지켜지는지를 화면을 그려서 확인한다.
+
+   2026-10-03 부터 실사이트(루트)도 스테이징과 같은 생성기(scripts/build_live.py)가
+   만든 새 디자인이다 — 메뉴는 두 곳 모두 .mmenu, 제목 위 눈썹은 .crumb 한 낱말,
+   지금 위치는 헤더의 활성 메뉴. 그래서 실사이트에도 스테이징과 같은 기대를 건다.
+   다른 것은 STAGING 띠 하나뿐이다 — 실사이트에는 띠가 없어야 하고(.kos-staging-bar
+   없음) 헤더는 화면 맨 위(0px)에 붙는다. 띠에만 걸린 확인(띠 아래 · 띠가 길어질 때 ·
+   띠와 확인 창의 층)은 스테이징에서만 본다.
    ───────────────────────────────────────────────────────────
    돌리려면:
 
@@ -92,11 +99,10 @@ const browser = await chromium.launch({ executablePath: CHROME });
 const PHONE = { width: 390, height: 844 };
 
 /* 한 페이지를 열어 메뉴를 펴고, 무엇이 무엇을 가리는지 잰다. */
-/* 스테이징은 새 디자인(2026-09-26): 메뉴가 .mmenu(헤더 아래를 다 덮는 한 장)다. 실사이트는 아직 .mobile-menu. */
-const menuSel = (path) => path.startsWith("/staging/") ? ".mmenu" : ".mobile-menu";
+/* 새 디자인의 메뉴는 .mmenu(헤더 아래를 다 덮는 한 장) — 스테이징은 2026-09-26, 실사이트는 2026-10-03 부터. 옛 실사이트는 .mobile-menu 였다. */
+const MENU = ".mmenu";
 
 async function measure(path, { scrollTo = 0 } = {}) {
-  const MENU = menuSel(path);
   const page = await browser.newPage({ viewport: PHONE, deviceScaleFactor: 2 });
   await page.goto(BASE + path, { waitUntil: "domcontentloaded" });
   // 띠 높이를 재는 스크립트와 글꼴이 자리를 잡을 틈을 준다.
@@ -115,7 +121,7 @@ async function measure(path, { scrollTo = 0 } = {}) {
       bar: box(document.querySelector(".kos-staging-bar")),
       nav: box(document.querySelector(".nav")),
       menu: box(document.querySelector(MENU)),
-      open: document.querySelector(MENU).classList.contains("open"),
+      open: !!document.querySelector(MENU) && document.querySelector(MENU).classList.contains("open"),   // 메뉴가 없으면 "메뉴가 열린다" 로 걸린다
       items,
       innerHeight,
     };
@@ -127,7 +133,7 @@ async function measure(path, { scrollTo = 0 } = {}) {
 /* ── 스테이징: 메뉴 첫 칸이 헤더에 가리지 않는가 ──────────── */
 console.log("── 모바일 메뉴가 헤더에 가리지 않는다 (스테이징) ──\n");
 
-const PAGES = ["/staging/pricing.html", "/staging/Home.html", "/staging/Reports.html",
+const PAGES = ["/staging/pricing.html", "/staging/Home.html", "/staging/Reports.html", "/staging/index.html",
                "/staging/stock.html", "/staging/Terms.html", "/staging/checkout.html"];
 
 for (const p of PAGES) {
@@ -211,28 +217,32 @@ console.log("\n── 확인 창이 띠에 가리지 않는다 ──\n");
   ok("띠가 확인 창보다는 아래에 그려진다", z.bar < z.dlg, JSON.stringify(z));
 }
 
-/* ── 실사이트는 그대로여야 한다 ────────────────────────────
-   띠가 없으므로 --kos-bar-h 는 0 이고, 헤더는 화면 맨 위(0px)에 붙는다
-   (상자 없는 헤더 · scripts/patch_header.py — 2026-09-24 실사이트에도 적용). */
-console.log("\n── 실사이트는 달라지지 않는다 ──\n");
-for (const p of ["/Home.html", "/Reports.html", "/index.html"]) {
-  const page = await browser.newPage({ viewport: PHONE, deviceScaleFactor: 2 });
-  await page.goto(BASE + p, { waitUntil: "domcontentloaded" });
-  await page.waitForTimeout(400);
-  await page.click("#menuBtn");
-  await page.waitForTimeout(150);
-  const m = await page.evaluate(() => {
-    const box = (s) => { const el = document.querySelector(s); if (!el) return null;
-      const r = el.getBoundingClientRect(); return { top: r.top, bottom: r.bottom }; };
-    return { bar: box(".kos-staging-bar"), nav: box(".nav"), first: box(".mobile-menu a"),
-             items: document.querySelectorAll(".mobile-menu a").length };
-  });
-  await page.close();
+/* ── 실사이트 — 띠가 없을 뿐 메뉴는 스테이징과 같다 ───────────
+   띠가 없으므로 --kos-bar-h 는 0 이고, 헤더는 화면 맨 위(0px)에 붙는다. 메뉴 첫 칸이 헤더
+   아래에 있고 마지막 칸까지 화면 안에 들어오는 것은 스테이징과 같은 기대다. 멤버십 화면
+   (pricing · checkout)은 실사이트에 없어 빼고, 첫 화면(index)을 더 본다. */
+console.log("\n── 실사이트: 띠 없이 같은 메뉴 ──\n");
+for (const p of ["/Home.html", "/Reports.html", "/index.html", "/stock.html", "/Terms.html"]) {
+  const m = await measure(p);
   const name = p.slice(1);
   ok(`${name} — STAGING 띠가 없다`, m.bar === null);
-  ok(`${name} — 헤더가 화면 맨 위(0px)에 붙어 있다`, Math.abs(m.nav.top) < 1.5, `top ${m.nav.top.toFixed(1)}`);
-  ok(`${name} — 첫 칸이 헤더 아래에 있다`, m.items > 0 && m.first.top >= m.nav.bottom - 0.5,
-     `첫 칸 top ${m.first && m.first.top.toFixed(1)} · 헤더 bottom ${m.nav.bottom.toFixed(1)}`);
+  ok(`${name} — 헤더가 화면 맨 위(0px)에 붙어 있다`, !!m.nav && Math.abs(m.nav.top) < 1.5, `top ${m.nav && m.nav.top.toFixed(1)}`);
+  if (!m.open || !m.items.length) { ok(`${name} — 메뉴가 열린다`, false, JSON.stringify({ open: m.open, n: m.items.length })); continue; }
+  const first = m.items[0];
+  ok(`${name} — 첫 칸(${first.text})이 헤더 아래에 있다`,
+     first.top >= m.nav.bottom - 0.5,
+     `첫 칸 top ${first.top.toFixed(1)} · 헤더 bottom ${m.nav.bottom.toFixed(1)}`);
+  ok(`${name} — 메뉴가 화면 안에 다 들어온다`,
+     m.items[m.items.length - 1].bottom <= m.innerHeight + 0.5,
+     `마지막 칸 bottom ${m.items[m.items.length - 1].bottom.toFixed(1)} · 화면 ${m.innerHeight}`);
+}
+{
+  const m = await measure("/Terms.html", { scrollTo: 900 });
+  ok("실사이트 스크롤 후 — 헤더가 화면 맨 위에 그대로 있다",
+     !!m.nav && Math.abs(m.nav.top) < 1.5, `헤더 top ${m.nav && m.nav.top.toFixed(1)}`);
+  ok("실사이트 스크롤 후 — 첫 칸이 헤더 아래에 그대로 있다",
+     m.items.length > 0 && m.items[0].top >= m.nav.bottom - 0.5,
+     `첫 칸 top ${m.items[0] && m.items[0].top.toFixed(1)} · 헤더 bottom ${m.nav.bottom.toFixed(1)}`);
 }
 
 /* ── 빵부스러기('홈 / 리포트')가 페이지마다 같은가 ────────
@@ -241,17 +251,20 @@ for (const p of ["/Home.html", "/Reports.html", "/index.html"]) {
    자간 0.36px 에 '홈' 은 링크도 아니고 현재 위치 강조도 없었다. 나머지 아홉
    페이지는 13px·500·링크·강조였다. 여백도 세 가지로 갈려 있었다.
 
-   그래서 사람 눈이 아니라 브라우저가 잰 값으로 못 박는다. */
-console.log("\n── 빵부스러기가 페이지마다 같다 ──\n");
-/* 스테이징(새 디자인)은 빵부스러기가 아니라 제목 위 눈썹(.crumb — '리포트' · '업종 분석' 같은 한 낱말)이다. 현재 위치는 헤더의
-   활성 메뉴가 말한다. 그래서 스테이징은 눈썹이 있는 페이지끼리 글씨·색·자간·높이가 같은지만 본다. */
+   그래서 사람 눈이 아니라 브라우저가 잰 값으로 못 박는다.
+
+   새 디자인(스테이징 2026-09-26 · 실사이트 2026-10-03)에는 빵부스러기가 없다. 그 자리에
+   제목 위 눈썹(.crumb — '리포트' · '업종 분석' 같은 한 낱말)이 있다. 그래서 눈썹이 있는
+   페이지끼리 글씨·색·자간·높이가 같은지, 두 사이트의 눈썹이 같은 옷인지 본다. 모닝브리핑 ·
+   종목 상세에는 눈썹이 없다(두 사이트 같음). 빵부스러기가 하던 나머지 두 일은 아래에서 본다 —
+   '지금 위치가 강조된다' 는 헤더의 활성 메뉴가, '앞 단계가 링크다' 는 그 활성 메뉴 자체와
+   업종 하나를 연 화면의 눈썹(업종 목록으로 가는 링크)이 맡는다. */
+console.log("\n── 눈썹이 페이지마다 같다 ──\n");
+const CRUMB_PAGES = ["/Reports.html", "/industry.html", "/Watchlist.html", "/About.html", "/Terms.html"];
+const crumbOf = {};
 for (const [label, pre] of [["실사이트", ""], ["스테이징", "/staging"]]) {
-  const NEW = pre === "/staging";
-  const PAGES = NEW ? ["/Reports.html", "/industry.html", "/Watchlist.html", "/About.html", "/Terms.html"]
-                    : ["/Reports.html", "/industry.html", "/Watchlist.html",
-                 "/brief.html", "/About.html", "/stock.html"];
   const seen = [];
-  for (const path of PAGES) {
+  for (const path of CRUMB_PAGES) {
     const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
     await page.goto(BASE + pre + path, { waitUntil: "domcontentloaded" });
     await page.waitForTimeout(1400);
@@ -260,11 +273,10 @@ for (const [label, pre] of [["실사이트", ""], ["스테이징", "/staging"]])
       if (!c) return null;
       const cs = getComputedStyle(c), r = c.getBoundingClientRect();
       return { size: cs.fontSize, weight: cs.fontWeight, color: cs.color,
-               letter: cs.letterSpacing, top: Math.round(r.top),
-               link: !!c.querySelector("a"), bold: !!c.querySelector("b") };
+               letter: cs.letterSpacing, top: Math.round(r.top) };
     });
     await page.close();
-    ok(`${label}${path} — 빵부스러기가 있다`, got !== null);
+    ok(`${label}${path} — 눈썹이 있다`, got !== null);
     if (got) seen.push([path, got]);
   }
   if (seen.length > 1) {
@@ -277,13 +289,58 @@ for (const [label, pre] of [["실사이트", ""], ["스테이징", "/staging"]])
       ok(`${label}${path} — 헤더에서 같은 높이에 앉는다`,
          Math.abs(g.top - first.top) <= 1, `${g.top} vs ${first.top}`);
     }
-    /* '홈' 은 눌러서 갈 수 있어야 하고, 지금 위치는 굵게 보여야 한다.
-       업종별 페이지는 둘 다 없어서 빵부스러기 노릇을 못 하고 있었다. */
-    for (const [path, g] of seen) {
-      if (NEW) continue;
-      ok(`${label}${path} — 앞 단계가 링크다`, g.link, "누를 수 없으면 빵부스러기가 아니다");
-      ok(`${label}${path} — 지금 위치가 강조된다`, g.bold);
-    }
+  }
+  crumbOf[label] = seen.length ? seen[0][1] : null;
+}
+{
+  const a = crumbOf["실사이트"], b = crumbOf["스테이징"];
+  ok("두 사이트의 눈썹이 같은 옷이다(글씨·굵기·색·자간)",
+     !!a && !!b && a.size === b.size && a.weight === b.weight && a.color === b.color && a.letter === b.letter,
+     JSON.stringify({ 실사이트: a, 스테이징: b }));
+}
+
+/* ── 지금 위치 — 헤더의 활성 메뉴 ───────────────────────────
+   옛 빵부스러기의 '지금 위치는 굵게 · 앞 단계는 링크' 를 새 디자인에서는 헤더가 한다. 지금 페이지가
+   속한 메뉴 하나만 활성(.on)이고, 다른 메뉴보다 굵고 진하게 보이며, 그 메뉴는 그 칸의 첫 페이지로 가는
+   링크다 — 종목 상세에서는 '리포트'(목록으로 돌아가는 앞 단계). 메뉴가 줄지어 보이는 넓은 화면에서 잰다. */
+console.log("\n── 지금 위치가 헤더에 표시된다 ──\n");
+const SECTIONS = [["/Reports.html", "리포트", "/Reports.html"], ["/industry.html", "업종 분석", "/industry.html"],
+                  ["/Watchlist.html", "관심종목", "/Watchlist.html"], ["/brief.html", "모닝브리핑", "/brief.html"],
+                  ["/stock.html?ticker=005930", "리포트", "/Reports.html"]];
+for (const [label, pre] of [["실사이트", ""], ["스테이징", "/staging"]]) {
+  for (const [path, want, target] of SECTIONS) {
+    const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+    await page.route("**gstatic.com/**", (r) => r.abort());
+    await page.goto(BASE + pre + path, { waitUntil: "domcontentloaded" });
+    await page.waitForTimeout(600);
+    const g = await page.evaluate(() => {
+      const links = [...document.querySelectorAll(".nav .links a")];
+      const on = links.filter((a) => a.classList.contains("on")), off = links.filter((a) => !a.classList.contains("on"));
+      const st = (a) => { const cs = getComputedStyle(a); return { w: Number(cs.fontWeight), c: cs.color }; };
+      return { n: on.length, links: links.length, text: on[0] && on[0].textContent.trim(),
+               path: on[0] && new URL(on[0].href).pathname, on: on[0] && st(on[0]), off: off.map(st) };
+    });
+    await page.close();
+    const name = `${label}${path.split("?")[0]}`;
+    ok(`${name} — 헤더에 지금 위치 하나가 표시된다(${want})`,
+       g.n === 1 && g.text === want, JSON.stringify({ 활성: g.n, 글: g.text }));
+    ok(`${name} — 그 메뉴가 ${want} 페이지로 가는 링크다`, g.path === pre + target, `${g.path}`);
+    ok(`${name} — 지금 위치가 다른 메뉴보다 굵고 진하게 보인다`,
+       !!g.on && g.off.length > 0 && g.off.every((o) => g.on.w > o.w && g.on.c !== o.c), JSON.stringify({ 활성: g.on, 나머지: g.off }));
+  }
+  /* 업종 하나를 연 화면 — 눈썹이 업종 목록으로 가는 링크다(앞 단계) */
+  {
+    const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+    await page.route("**gstatic.com/**", (r) => r.abort());
+    await page.goto(`${BASE}${pre}/industry.html?sector=${encodeURIComponent("반도체")}`, { waitUntil: "domcontentloaded" });
+    await page.waitForTimeout(1200);
+    const g = await page.evaluate(() => {
+      const a = document.querySelector(".crumb a");
+      return a ? { text: a.textContent.trim(), path: new URL(a.href).pathname } : null;
+    });
+    await page.close();
+    ok(`${label}/industry.html?sector=반도체 — 눈썹이 업종 목록으로 가는 링크다`,
+       !!g && g.text === "업종 분석" && g.path === pre + "/industry.html", JSON.stringify(g));
   }
 }
 
@@ -351,18 +408,20 @@ for (const [label, pre] of [["실사이트", ""], ["스테이징", "/staging"]])
   }
 }
 
-/* ── 리포트 차트 값 라벨이 막대·다른 라벨에 닿지 않는다 (스테이징) ──────
+/* ── 리포트 차트 값 라벨이 막대·다른 라벨에 닿지 않는다 (두 사이트) ──────
    값마다 억·조를 붙이자(2026-09-26 · 실사이트와 같게) 라벨이 45px 안팎으로 길어졌다
    ('-1,042억' · 1억 미만은 '11,633,176원' 77px). 칸이 좁은 폭(휴대폰 · 두 칸으로 놓인
    데스크톱)에서는 옆 막대·라벨에 닿는다. stock_page.CHART_FIT_JS 가 그린 뒤 실제 폭에서 재어
    닿는 라벨만 비켜 세운다 — 그게 도는지 본다. 종목은 은행(영업이익이 매출보다 큼) · 1억 미만
-   값 · 칸이 빽빽함 · 적자 회사 · 초대형. */
-console.log("\n── 리포트 차트 값 라벨이 막대·다른 라벨에 닿지 않는다 (스테이징) ──\n");
+   값 · 칸이 빽빽함 · 적자 회사 · 초대형. 실사이트 stock.html 도 같은 생성기(live 판)라 같은 기대를 건다. */
+console.log("\n── 리포트 차트 값 라벨이 막대·다른 라벨에 닿지 않는다 (두 사이트) ──\n");
+for (const [label, url] of [["스테이징", (tk) => `${BASE}/staging/stock.html?ticker=${tk}&paywall=0`],
+                            ["실사이트", (tk) => `${BASE}/stock.html?ticker=${tk}`]])
 for (const width of [320, 390, 1440]) {
   for (const tk of ["055550", "012690", "207940", "028300", "005930"]) {
     const page = await browser.newPage({ viewport: { width, height: 900 } });
     await page.route("**gstatic.com/**", (r) => r.abort());
-    await page.goto(`${BASE}/staging/stock.html?ticker=${tk}&paywall=0`, { waitUntil: "domcontentloaded" });
+    await page.goto(url(tk), { waitUntil: "domcontentloaded" });
     await page.waitForSelector(".ch .ch-val", { timeout: 20000 });
     await page.waitForTimeout(400);
     const got = await page.evaluate(() => {
@@ -387,7 +446,7 @@ for (const width of [320, 390, 1440]) {
       return { out, n };
     });
     await page.close();
-    ok(`${width}px ${tk} — 값 라벨 ${got.n}개가 막대·라벨·축·제목·범례에 닿지 않고 차트 안에 있다`,
+    ok(`${label} ${width}px ${tk} — 값 라벨 ${got.n}개가 막대·라벨·축·제목·범례에 닿지 않고 차트 안에 있다`,
        got.n > 0 && !got.out.length, got.out.slice(0, 4).join(" | "));
   }
 }

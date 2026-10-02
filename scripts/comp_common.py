@@ -7,7 +7,9 @@ build_*_comp.py 가 같은 것을 쓴다. 한 곳을 고치면 모든 페이지�
   · staging — kosai.kr/staging/ 의 실제 스테이징 페이지. 상대 경로(../data · ../assets · Home.html), STAGING 띠,
     demo-backend · analytics 머리 스크립트, 페이지마다 실제 모듈(auth-state · auth-guard · watchlist …) 꼬리 스크립트,
     옛 모듈이 쓰는 토큰 별칭(--fg-1 …). 페이지는 emit() 으로 내야 finish() 가 경로를 바꾼다.
-    실사이트로 옮기는 날은 'live' 모드를 하나 더 두면 된다(절대 경로 · 띠 없음).
+  · live — kosai.kr 루트의 실사이트 페이지(2026-10-03 사장 "새로 디자인한 페이지들을 실사이트로 옮겨줘"). 절대 경로, 띠 없음,
+    멤버십 없음(머리 · 꼬리 · 종목 잠금 · 결제 모듈 모두 뺀다), 검색 노출 머리(설명 · canonical · 공유 · 색인 여부 — LIVE_SEO),
+    번역 엔진 · 통계 머리 스크립트, 페이지마다 루트 모듈 꼬리. emit() 이 ?v= 도장까지 찍는다. scripts/build_live.py 가 낸다.
 """
 import json
 import re
@@ -56,17 +58,70 @@ STAGING_HEAD = '''<script src="i18n.js"></script>
 <script type="module" src="demo-backend.js"></script>
 <script src="analytics.js"></script>
 '''
+# 실사이트 머리 — 번역 엔진은 앞에(영어로 정한 사람에게 한국어가 먼저 비치지 않게 본문을 가린다), 통계(GA4 · 네이버)는 그다음.
+# 맨 이름(i18n.js)으로 적어야 stamp_assets.py 가 ?v= 를 찍는다 — /i18n.js 처럼 쓰면 도장이 빠지고 경고도 없다.
+# 404.html 은 없는 주소 어디에서나 열리므로(상대 주소가 깨진다) 스크립트를 넣지 않는다(head(scripts=False)).
+LIVE_HEAD = '<meta name="referrer" content="strict-origin-when-cross-origin">\n<script src="i18n.js"></script>\n<script src="analytics.js"></script>\n'
+SITE = 'https://kosai.kr'
+OG_IMAGE = SITE + '/assets/og-image.png?v=3'   # 1200×630 — 옛 실사이트 페이지와 같은 그림
+# 페이지마다 검색 설명 · 색인 여부. 설명은 그 페이지 머리의 소개 문장(새 디자인 문구)을 쓴다 — 머리에 소개 문장이 없는 페이지만 따로 적었다.
+# 색인 여부는 옛 실사이트와 같다: 관심종목 · 약관 동의 · 계정 인증만 noindex(robots.txt 도 관심종목 · 계정 인증을 막는다).
+# 종목 상세(stock.html)와 첫 화면(index.html)은 생성기가 머리를 직접 쓴다(종목별 canonical · 구조화 데이터).
+LIVE_SEO = {
+    'Home.html': ('종목명이나 종목코드로 리포트를 찾으실 수 있습니다. 최신 리포트와 업종별 거래대금 상위 종목을 함께 제공합니다.', None),
+    'Reports.html': ('국내 상장사의 분석 리포트를 종목별로 확인하실 수 있습니다.', None),
+    'industry.html': ('국내 상장사를 업종별로 나누어 시가총액과 등락률, 업종 분석을 제공합니다.', None),
+    'Watchlist.html': ('추가하신 종목을 모아 보여 드립니다.', 'noindex,nofollow'),
+    'brief.html': ('전일 국내 증시와 간밤의 해외 시장, 주요 일정을 정리합니다. 발행 시각은 거래일 오전 7시 30분 전후입니다.', None),
+    'About.html': ('KOSAI의 서비스와 분석 방식, 사용하는 데이터, 갱신 주기를 소개합니다.', None),
+    'Contact.html': ('서비스 의견과 협업 제안, 데이터 오류 제보를 보내 주시기 바랍니다. 영업일 기준 2~3일 내에 답변드립니다.', None),
+    'Feedback.html': ('KOSAI를 이용하시면서 느끼신 점을 들려주시기 바랍니다.', None),
+    'Terms.html': ('KOSAI 서비스 이용에 관한 기본적인 사항을 규정합니다.', None),
+    'Privacy.html': ('KOSAI는 이용자의 개인정보를 소중히 여기며, 관련 법령을 준수합니다.', None),
+    'Login.html': ('KOSAI 계정으로 로그인하시면 관심종목과 리포트를 이어서 보실 수 있습니다.', None),
+    'Signup.html': ('무료 계정을 만드시면 관심종목을 저장하고 여러 기기에서 함께 보실 수 있습니다.', None),
+    'Consent.html': ('가입을 완료하시려면 약관에 동의하여 주시기 바랍니다.', 'noindex,nofollow'),
+    'auth-action.html': ('KOSAI 계정의 이메일 인증과 비밀번호 재설정을 처리합니다.', 'noindex,nofollow'),
+    'Settings.html': ('화면 테마와 언어, 알림 수신, 계정 정보를 설정하실 수 있습니다.', None),
+}
+
+
+def _attr(v):
+    return str(v).replace('&', '&amp;').replace('"', '&quot;').replace('<', '&lt;').replace('>', '&gt;')
+
+
+def seo_tags(url, title, desc, robots=None, og_type='website', og_title=None, og_desc=None):
+    """검색 노출 머리 — 설명 · canonical · 공유(og · twitter) · 아이콘. 실사이트 페이지만 쓴다(시안 · 스테이징은 noindex)."""
+    og_title, og_desc = og_title or title, og_desc or desc
+    return ((f'<meta name="robots" content="{robots}">\n' if robots else '')
+            + f'<meta name="description" content="{_attr(desc)}">\n<link rel="canonical" href="{url}">\n'
+            f'<meta property="og:type" content="{og_type}">\n<meta property="og:site_name" content="KOSAI">\n<meta property="og:locale" content="ko_KR">\n'
+            f'<meta property="og:title" content="{_attr(og_title)}">\n<meta property="og:description" content="{_attr(og_desc)}">\n'
+            f'<meta property="og:url" content="{url}">\n<meta property="og:image" content="{OG_IMAGE}">\n'
+            '<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n'
+            f'<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:title" content="{_attr(og_title)}">\n'
+            f'<meta name="twitter:description" content="{_attr(og_desc)}">\n<meta name="twitter:image" content="{OG_IMAGE}">\n'
+            '<link rel="icon" type="image/svg+xml" href="/assets/kosai-icon-dark.svg?v=k2">\n<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=k2">\n')
+
+
 # 글꼴 — Pretendard 1.3.9 공식 분할판(fonts/pretendard-subset.css · scripts/build_font_subset.py). 글자 묶음마다 파일이 나뉘어
 # 페이지에 나온 글자의 묶음만 받는다. 전에는 굵기 넷의 통파일(각 790~820KB, 합 3.2MB)을 preload 로 모든 페이지가 받았다(2026-09-26).
 # 가리지 않는 방식(media=print 꼼수)으로 바꾸지 말 것 — 페이지를 옮길 때마다 기본 글꼴이 먼저 그려져 깜빡인다.
 PRELOADS = '<link rel="stylesheet" href="/fonts/pretendard-subset.css">\n'
 
 
-def head(title, robots='noindex,nofollow', extra=''):
-    """머리. 시안·스테이징은 noindex(기본). 실제 종목 페이지 생성기는 robots='index,follow' 와 extra(설명·canonical·OG·JSON-LD)를 준다.
+_ROBOTS_DEFAULT = object()   # 기본값 표시 — 시안 · 스테이징은 noindex, 실사이트는 finish() 가 LIVE_SEO 로 정한다
+
+
+def head(title, robots=_ROBOTS_DEFAULT, extra='', scripts=True):
+    """머리. 시안·스테이징은 noindex(기본). 실사이트(live)는 기본값이면 robots 줄을 쓰지 않는다 — 색인 여부는 finish() 가
+    LIVE_SEO 로 정한다(404 처럼 robots 를 직접 주면 그대로 쓴다). 실제 종목 페이지 생성기는 extra(설명·canonical·OG·JSON-LD)를 준다.
+    scripts=False — 실사이트 머리 스크립트(번역 · 통계)를 넣지 않는다(404).
     theme-color 는 테마를 따라 바꾼다(안드로이드 크롬 · iOS 15~18). iOS 26 사파리는 #kosEdgeTop/Bot 띠가 맡는다(CLAUDE.md 2026-09-24)."""
+    if robots is _ROBOTS_DEFAULT:
+        robots = None if MODE == 'live' else 'noindex,nofollow'
     robots_tag = f'<meta name="robots" content="{robots}">\n' if robots else ''
-    stg = STAGING_HEAD if MODE == 'staging' else ''
+    stg = STAGING_HEAD if MODE == 'staging' else (LIVE_HEAD if MODE == 'live' and scripts else '')
     mark = ' data-staging' if MODE == 'staging' else ''
     return f'''<!doctype html>
 <html lang="ko"{mark}>
@@ -84,7 +139,8 @@ def head(title, robots='noindex,nofollow', extra=''):
 
 
 # 글꼴 · 색 토큰 · 바탕 · 헤더 · 푸터. 라이트 바탕 #f9f8f6 · 먹색 #141414 (CLAUDE.md 2026-09-24 결정).
-CSS = ''':root{
+# 생성기는 CSS 를 쓴다 — set_mode() 가 CSS_ALL 에서 모드에 맞게 고른다(실사이트는 STAGING 띠 규칙을 뺀다).
+CSS_ALL = CSS = ''':root{
   --bg:#f9f8f6; --surface:#ffffff; --surface-2:#f1efeb;
   --ink:#141414; --ink-72:rgba(20,20,20,.72); --ink-62:rgba(20,20,20,.62); --ink-30:rgba(20,20,20,.30);
   --hair:rgba(20,20,20,.08); --line:rgba(20,20,20,.14);
@@ -232,6 +288,7 @@ LIVE2STAGING = {'/': './', '/Home.html': 'Home.html', '/Reports.html': 'Reports.
 PREVIEW2STAGING = {v: LIVE2STAGING[k] for k, v in LIVE2PREVIEW.items() if k in LIVE2STAGING}
 
 # 스테이징 페이지마다 끝에 붙는 실제 모듈(순서대로). stamp_assets.py 가 ?v= 를 붙인다.
+# 실사이트는 LIVE_PAGE_SCRIPTS — 같은 목록에서 멤버십 모듈(paywall · checkout)과 멤버십 페이지를 뺀 것.
 PAGE_SCRIPTS = {
     'Home.html': ['auth-state.js'], 'Reports.html': ['auth-guard.js', 'watchlist.js', 'auth-state.js'], 'industry.html': ['auth-guard.js', 'auth-state.js'],
     'stock.html': ['paywall.js', 'auth-guard.js', 'watchlist.js', 'auth-state.js'], 'Watchlist.html': ['auth-guard.js', 'watchlist.js', 'auth-state.js'],
@@ -240,6 +297,10 @@ PAGE_SCRIPTS = {
     'About.html': ['auth-state.js'], 'Privacy.html': ['auth-state.js'], 'Terms.html': ['auth-state.js'], 'brief.html': ['auth-state.js'],
     'Settings.html': ['auth-state.js'], 'Consent.html': ['auth-state.js'], 'auth-action.html': ['auth-state.js'],
 }
+
+MEMBERSHIP_JS = ('paywall.js', 'checkout.js', 'subscription-api.js', 'payment-config.js', 'demo-backend.js')
+MEMBERSHIP_PAGES = ('pricing.html', 'checkout.html', 'billing.html')
+LIVE_PAGE_SCRIPTS = {k: [m for m in v if m not in MEMBERSHIP_JS] for k, v in PAGE_SCRIPTS.items() if k not in MEMBERSHIP_PAGES}
 
 # STAGING 띠 — 맨 위에 붙어 있고(sticky) 높이를 --kos-bar-h 로 넘긴다. 헤더(50)·메뉴(49) 위, 확인 창(80) 아래. staging/tests/layout.test.mjs 가 잰다.
 STAGING_BAR = '''<div class="kos-staging-bar">
@@ -260,10 +321,12 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 
 
 def set_mode(mode):
-    """'preview' | 'staging'. 빌더를 부르기 전에 한 번."""
-    global MODE, PAGES, FOOTER, JS
+    """'preview' | 'staging' | 'live'. 빌더를 부르기 전에 한 번."""
+    global MODE, PAGES, FOOTER, JS, CSS
     assert mode in ('preview', 'staging', 'live'), mode
     MODE = mode
+    # 실사이트에는 STAGING 띠가 없다 — 띠의 전환 이름 규칙도 뺀다(reports-filter.test 가 실사이트 글에 'kos-staging-bar' 가 없는지 본다)
+    CSS = CSS_ALL.replace('.kos-staging-bar{view-transition-name:kos-bar} ', '') if mode == 'live' else CSS_ALL
     PAGES = PAGES_STAGING if mode == 'staging' else PAGES_LIVE
     FOOTER = links(FOOTER_T if mode != 'staging' else FOOTER_T.replace('<a href="/Watchlist.html">관심종목</a>', '<a href="/Watchlist.html">관심종목</a><a href="/pricing.html">멤버십</a>'))
     JS = links(JS_T + (JS_DEMO if mode == 'preview' else '') + '\n})();')
@@ -288,7 +351,8 @@ def links(html):
 # 9월 26일 새 디자인으로 옮기며 실사이트의 번역(KOSi18n)이 빠져 설정 화면의 '언어' 줄까지 사라졌다. 엔진은 staging/i18n.js,
 # 사전은 scripts/i18n/*.json(정규화한 한국어 → 영어 · 키의 '#' 은 아무 숫자). 페이지마다 그 페이지 글과 그 페이지가 부르는 모듈에
 # 나오는 문구만 골라 맨 끝에 JSON 으로 넣는다 — 한국어로 보는 사람은 읽지 않는다. common.json 은 자료에서 오는 말(업종 · 시장 등)이라
-# 늘 넣는다. 빠진 번역은 staging/tests/english.test.mjs 가 영어 화면에서 잡는다.
+# 늘 넣는다. staging.json(STAGING 띠 · 멤버십 메뉴)은 스테이징에만 늘 넣고 실사이트에는 넣지 않는다. 빠진 번역은
+# staging/tests/english.test.mjs 가 영어 화면에서 잡는다.
 I18N_DIR = Path(__file__).resolve().parent / 'i18n'
 _I18N = {}
 
@@ -298,44 +362,57 @@ def _i18n_norm(s):
 
 
 def i18n_table():
-    """{'common': {...}, 'all': {...}, 'always': {페이지: {...}}} — 사전 파일을 한 번 읽어 둔다.
+    """{'common': {...}, 'stg': {...}, 'all': {...}, 'always': {페이지: {...}}} — 사전 파일을 한 번 읽어 둔다.
     파일에 "//always": "stock.html" 처럼 페이지를 적으면 그 파일의 문구는 그 페이지에 늘 싣는다 — 페이지 글이 아니라
     자료에서 오는 문구(리포트의 밸류에이션 기준 줄 등)는 페이지를 훑어서는 찾을 수 없다."""
     if not _I18N:
-        allp, common, always = {}, {}, {}
+        allp, common, stg, always = {}, {}, {}, {}
         for p in sorted(I18N_DIR.glob('*.json')):
             raw = json.loads(p.read_text(encoding='utf-8'))
             d = {_i18n_norm(k): v for k, v in raw.items() if not k.startswith('//')}
             allp.update(d)
             if p.stem == 'common':
                 common.update(d)
+            elif p.stem == 'staging':
+                stg.update(d)
             for pg in str(raw.get('//always', '')).split(','):
                 if pg.strip():
                     always.setdefault(pg.strip(), set()).update(d)
-        _I18N['all'], _I18N['common'], _I18N['always'] = allp, common, always
+        _I18N['all'], _I18N['common'], _I18N['stg'], _I18N['always'] = allp, common, stg, always
     return _I18N
 
 
 def _i18n_corpus(html, page):
-    """이 페이지에서 화면에 나올 수 있는 글 — 페이지 HTML(글 · 속성 · 인라인 스크립트)과 그 페이지가 부르는 스테이징 모듈."""
+    """이 페이지에서 화면에 나올 수 있는 글 — 페이지 HTML(글 · 속성 · 인라인 스크립트)과 그 페이지가 부르는 모듈
+    (스테이징은 staging/ 의 모듈, 실사이트는 루트 모듈 — 실사이트에 없는 멤버십 문구가 사전에 실리지 않게)."""
     import html as _h
     # 태그를 띄어쓰기로 바꾼 글과 그냥 지운 글 둘 다 — '<a>문의하기</a>로' 처럼 안쪽 요소에 붙은 말은 덩어리째 찾는다(<br> 은 띄어쓰기)
     srcs = [html, _h.unescape(re.sub(r'<[^>]+>', ' ', html)), _h.unescape(re.sub(r'<[^>]+>', '', re.sub(r'<br\b[^>]*>', ' ', html)))]
-    stg = Path(__file__).resolve().parent.parent / 'staging'
-    for m in set(re.findall(r'src="([\w.-]+\.js)', html)) | set(PAGE_SCRIPTS.get(page, ['auth-state.js'])) | {'settings-panel.js', 'consent.js', 'auth-util.js', 'social-login.js'}:
+    live = MODE == 'live'
+    stg = Path(__file__).resolve().parent.parent / ('' if live else 'staging')
+    scripts = (LIVE_PAGE_SCRIPTS if live else PAGE_SCRIPTS).get(page, ['auth-state.js'])
+    for m in set(re.findall(r'src="([\w.-]+\.js)', html)) | set(scripts) | {'settings-panel.js', 'consent.js', 'auth-util.js', 'social-login.js'}:
         f = stg / m
         if f.exists():
             srcs.append(f.read_text(encoding='utf-8'))
     return _i18n_norm(' '.join(srcs))
 
 
+# 실사이트 화면에는 나올 수 없는 멤버십 낱말 — 모듈 주석 · 코드('구독 관리' 주석, 탈퇴 오류의 '환불' 판별 등)에 걸려 사전에 실리던 것.
+# 주석을 통째로 빼고 훑는 방법은 쓰지 않는다 — 자료에서 그리는 글('업종 내 주요 종목' 등)이 주석 덕에 실려 있어 함께 빠진다
+# (2026-10-03 english.test 가 잡았다). 그래서 이 넷만 뺀다. STAGING 띠 · 멤버십 메뉴는 staging.json 이 맡는다.
+LIVE_DICT_DROP = {'구독', '구독 관리', '결제 내역', '환불'}
+
+
 def i18n_block(html, page):
     tb = i18n_table()
     corpus = _i18n_corpus(html, page)
     pick = dict(tb['common'])
+    if MODE != 'live':
+        pick.update(tb['stg'])   # STAGING 띠 · 멤버십 메뉴 — 스테이징 모든 페이지
     pick.update({k: tb['all'][k] for k in tb['always'].get(page, ())})
     for k, v in tb['all'].items():
-        if k in pick:
+        if k in pick or (MODE == 'live' and (k in tb['stg'] or k in LIVE_DICT_DROP)):
             continue
         if '#' in k or '@' in k:   # 숫자(#) · 날짜(@) 자리 — 나머지 조각이 모두 페이지에 있으면
             parts = [x.strip() for x in re.split(r'[#@]', k) if x.strip()]
@@ -347,8 +424,31 @@ def i18n_block(html, page):
     return f'<script type="application/json" data-kos-i18n>{body}</script>\n<script>window.KOSi18n&&KOSi18n.load()</script>\n'
 
 
+# 시안 안에서 쓴 /preview/… 주소 → 실사이트 주소 (live 의 finish 가 바꾼다). '/preview/home.html' 은 '/' 와 '/Home.html' 둘에서
+# 오는데, 뒤의 것(/Home.html)이 남는다 — 스테이징(PREVIEW2STAGING)과 같은 규칙
+PREVIEW2LIVE = {v: k for k, v in LIVE2PREVIEW.items()}
+
+
 def finish(html, page):
-    """페이지 하나를 내기 직전에. staging: 절대 경로를 상대로, 시안 주소를 스테이징 이름으로, 꼬리 모듈을 붙인다."""
+    """페이지 하나를 내기 직전에. staging: 절대 경로를 상대로, 시안 주소를 스테이징 이름으로, 꼬리 모듈을 붙인다.
+    live: 시안 주소를 실사이트 주소로, 검색 노출 머리(LIVE_SEO)와 꼬리(번역 사전 · 루트 모듈 · 휠 스크롤)를 붙인다.
+    404.html 은 없는 주소 어디에서나 열려 상대 주소가 깨지므로 아무것도 붙이지 않는다(옛 실사이트 404 와 같다)."""
+    if MODE == 'live':
+        if page == '404.html':
+            return html
+        for pv, lv in sorted(PREVIEW2LIVE.items(), key=lambda x: -len(x[0])):
+            html = html.replace(pv, lv)
+        if '<link rel="canonical"' not in html:   # 머리를 생성기가 직접 쓴 페이지(종목 · 첫 화면)는 그대로
+            import html as _h
+            desc, robots = LIVE_SEO[page]
+            m = re.search(r'<title>(.*?)</title>\n', html, re.S)
+            assert m, page
+            html = html.replace(m.group(0), m.group(0) + seo_tags(f'{SITE}/{page}', _h.unescape(m.group(1)), desc, robots), 1)
+        tail = i18n_block(html, page)
+        tail += ''.join(f'<script type="module" src="{m}"></script>\n' for m in LIVE_PAGE_SCRIPTS.get(page, ['auth-state.js']))
+        tail += '<script src="lenis.js"></script>\n<script src="smooth-scroll.js"></script>\n'
+        assert html.count('</body>') == 1, page
+        return html.replace('</body>', tail + '</body>')
     if MODE != 'staging':
         return html
     for pv, st in PREVIEW2STAGING.items():
@@ -363,12 +463,24 @@ def finish(html, page):
     return html.replace('</body>', tail + '</body>')
 
 
+def live_stamp(html):
+    """실사이트 페이지의 모듈 주소에 ?v=해시(루트 *.js 의 지금 내용) — stamp_assets.py 와 같은 규칙. 아침 브리핑처럼
+    한 장만 다시 쓸 때도 도장이 맞게 쓰기 전에 찍는다."""
+    import stamp_assets
+    root = Path(__file__).resolve().parent.parent
+    hashes = {p.name: stamp_assets.digest(p.read_text(encoding='utf-8')) for p in root.glob('*.js')}
+    return stamp_assets.stamp(html, hashes)[0]
+
+
 def emit(out_path, html):
-    """빌더는 이걸로 쓴다 — finish() 를 거쳐야 스테이징 경로가 맞는다."""
+    """빌더는 이걸로 쓴다 — finish() 를 거쳐야 스테이징 경로가 맞는다. 실사이트는 ?v= 도장까지 찍어 쓴다."""
     from pathlib import Path as _P
     out = _P(out_path)
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(finish(html, out.name), encoding='utf-8')
+    html = finish(html, out.name)
+    if MODE == 'live':
+        html = live_stamp(html)
+    out.write_text(html, encoding='utf-8')
 
 
 def nav(active):

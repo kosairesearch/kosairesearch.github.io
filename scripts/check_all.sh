@@ -50,6 +50,9 @@ run "SEO·구조"      python3 scripts/check_seo.py
 run "사업자 정보"   python3 scripts/patch_biz_footer.py --check
 run "헤더(스테이징)" python3 scripts/patch_header.py staging --check
 run "스테이징 생성기" python3 scripts/build_staging.py --check
+# 실사이트(루트)도 2026-10-03 부터 같은 생성기의 결과다(live 모드 · 멤버십 없음). 손으로 고친 페이지가 생성기와 어긋나거나,
+# 멤버십 · 스테이징 흔적(pricing · paywall · STAGING 띠 · 시안 주소)이 실사이트에 실리면 여기서 막는다.
+run "실사이트 생성기" python3 scripts/build_live.py --check
 run "헤더(실사이트)" python3 scripts/patch_header.py . --check
 # 푸터의 면책 상자는 2026-09-24 에 뺐다(무료라 법정 의무 없음 · 리포트 본문 한 줄과 약관 제15조만 남김).
 # 옛 페이지를 복사해 오면 되살아나므로 여기서 잡는다. 유료화 때는 scripts/strip_footer_disclaimer.py 머리말 참고.

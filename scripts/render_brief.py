@@ -346,13 +346,24 @@ def splice(page, body, dj):
 
 
 def verify(page, dic):
+    """영어 모드에서 한국어가 남는 경로를 미리 잡는다(옛 디자인 페이지 — 표식 사이의 본문을 본다)."""
+    return verify_body(page[page.index(BODY_START):page.index(BODY_END)], dic)
+
+
+def live_page(doc, at):
+    """새 디자인 brief.html 한 장(실사이트 모드 · ?v= 도장까지). 아침 브리핑 작업이 이것으로 실사이트 페이지를 쓴다."""
+    import build_brief_comp as BB
+    BB.C.set_mode("live")
+    return BB.C.live_stamp(BB.C.finish(BB.page_html(doc, at), "brief.html"))
+
+
+def verify_body(body, dic):
     """영어 모드에서 한국어가 남는 경로를 미리 잡는다.
 
     data-i18n-block 문단의 키가 사전에 없으면 그 문단은 영어 모드에서
     한국어로 남는다. 화면을 열어 보지 않으면 눈치채기 어려운 종류라서
     렌더링 직후에 확인한다.
     """
-    body = page[page.index(BODY_START):page.index(BODY_END)]
     bad = []
     for m in re.finditer(r"<(p|h1|h2)[^>]*>(.*?)</\1>", body, re.S):
         text = re.sub(r"<[^>]+>", "", m.group(2))
@@ -379,7 +390,11 @@ def main():
     if not src or not src.exists():
         log(f"❌ 브리핑 JSON 이 없습니다: {src or BRIEFS}")
         return 2
-    doc = json.loads(src.read_text(encoding="utf-8"))
+    try:
+        doc = json.loads(src.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as e:
+        log(f"❌ 브리핑 JSON 을 읽지 못했습니다: {type(e).__name__}: {e}")
+        return 3
     # 금액 표기 통일 — 본문 HTML 과 영문 사전 키가 같은 문자열에서 나오므로
     # 여기서 한 번 맞추면 둘이 어긋날 일이 없다.
     _nsp, doc = number_spacing.normalize_report(doc)
@@ -399,11 +414,28 @@ def main():
     if a.at:
         h, m = a.at.split(":")
         at = at.replace(hour=int(h), minute=int(m))
-    body, dic = build(doc, at)
+    # 조립하다 멈춘 것도 3 — 1 은 '영문 사전에 빠진 문단'(경고)이라, 브리핑 다시 써 보기(brief_replay)가 진짜 오류를 경고로 넘기지 않게.
+    try:
+        body, dic = build(doc, at)
+    except Exception as e:  # noqa: BLE001
+        log(f"❌ 브리핑 본문을 조립하지 못했습니다: {type(e).__name__}: {e}")
+        return 3
     page_path = Path(a.page) if a.page else PAGE
-    page = splice(page_path.read_text(encoding="utf-8"), body, dict_js(dic))
+    old_page = page_path.read_text(encoding="utf-8") if page_path.exists() else ""
+    if BODY_START in old_page:
+        # 옛 디자인 페이지(표식 넷이 있는 brief.html) — 두 구역만 갈아끼운다. --page 로 옛 틀을 줄 때만 쓴다.
+        page = splice(old_page, body, dict_js(dic))
+    else:
+        # 새 디자인(2026-10-03 실사이트 이전) — 페이지 전체를 생성기(build_brief_comp · 실사이트 모드)가 그린다.
+        # 머리 · 꼬리 · 번역 사전 · 모듈 도장까지 build_live.py 가 내는 brief.html 과 글자 하나까지 같다.
+        # 그리다 멈추면 3 으로 끝낸다 — 1 은 '영문 사전에 빠진 문단'(발행은 되는 경고)이라 브리핑 다시 써 보기가 그것과 섞지 않게.
+        try:
+            page = live_page(doc, at)
+        except Exception as e:  # noqa: BLE001
+            log(f"❌ 새 디자인 brief.html 을 그리지 못했습니다: {type(e).__name__}: {e}")
+            return 3
 
-    missing = verify(page, dic)
+    missing = verify_body(body, dic)
     if missing:
         # 발행을 막지는 않는다 — 영어에서 한국어가 남는 것과 글이 아예 안
         # 나가는 것은 무게가 다르다. 대신 반드시 눈에 띄게 남긴다.
