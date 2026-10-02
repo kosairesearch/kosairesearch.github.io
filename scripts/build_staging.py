@@ -7,6 +7,11 @@
 
 시안 빌더(build_*_comp.py)와 같은 코드가 comp_common.set_mode('staging') 으로 돈다 — 상대 경로 · STAGING 띠 ·
 실제 모듈 연결은 comp_common.finish() 가 한다. 그래서 시안과 스테이징의 옷은 늘 같다.
+
+첫 페이지(index.html)는 랜딩 새 디자인이다(2026-10-02 사장 "일단 우리가 만든 랜딩페이지 새 디자인을 스테이징 사이트로 옮겨줘") —
+scripts/concepts/landing.py 의 build_staging() 이 낸다(그림은 staging/img/ 로 복사). 매일 바뀌는 값은 data-live 로 표시돼 있어
+--check 는 그 자리를 빼고 견준다(landing.mask). 아침 브리핑 작업이 이 생성기를 돌리므로, 랜딩이 실패해도 다른 페이지는 만들고
+있던 index.html 을 그대로 둔다(--check 에서는 실패로 친다).
 """
 import argparse
 import subprocess
@@ -22,9 +27,15 @@ C.set_mode('staging')
 import build_about_comp, build_auth_comp, build_brief_comp, build_forms_comp, build_home_comp  # noqa: E402
 import build_industry_comp, build_legal_comp, build_reports_comp, build_watchlist_comp  # noqa: E402
 import build_pricing, build_checkout, build_settings_staging, build_stock_staging  # noqa: E402
+sys.path.insert(0, str(Path(__file__).resolve().parent / 'concepts'))
+try:   # 첫 페이지(랜딩 새 디자인) — scripts/concepts/landing.py. 읽다가 실패해도 다른 페이지는 만든다(아침 브리핑 작업)
+    import landing  # noqa: E402
+    LANDING_ERR = None
+except Exception as e:  # pragma: no cover
+    landing, LANDING_ERR = None, e
 
 
-def build_all(out_dir: Path):
+def build_all(out_dir: Path, strict=False):
     out_dir.mkdir(parents=True, exist_ok=True)
     build_home_comp.build(str(out_dir / 'Home.html'))
     build_reports_comp.build(str(out_dir / 'Reports.html'))
@@ -41,6 +52,15 @@ def build_all(out_dir: Path):
     build_checkout.build(str(out_dir / 'checkout.html'))
     build_settings_staging.build(str(out_dir / 'Settings.html'))
     build_stock_staging.build(out_dir)   # 종목 상세 — JS 렌더 + 페이월
+    try:
+        if landing is None:
+            raise RuntimeError(f'랜딩 생성기를 읽지 못했다: {LANDING_ERR}')
+        landing.build_staging(str(out_dir))   # 첫 페이지 — 랜딩 새 디자인
+        print(f'✅ {out_dir / "index.html"} · 랜딩')
+    except Exception as e:   # 아침 브리핑 작업을 멈추지 않는다 — 있던 index.html 은 그대로
+        if strict:
+            raise
+        print(f'⚠ 랜딩(index.html)을 만들지 못했다 — 있던 파일을 그대로 둔다: {e}')
 
 
 def main():
@@ -52,13 +72,24 @@ def main():
         import stamp_assets  # noqa: E402  저장소의 페이지는 ?v= 가 찍혀 있다 — 같은 규칙으로 찍은 뒤 견준다
         hashes = {p.name: stamp_assets.digest(p.read_text(encoding='utf-8')) for p in (ROOT / 'staging').glob('*.js')}
         with tempfile.TemporaryDirectory() as td:
-            build_all(Path(td))
+            try:
+                build_all(Path(td), strict=True)
+            except Exception as e:
+                print(f'❌ 스테이징 생성기가 멈췄다: {e}')
+                sys.exit(1)
             bad = []
             for f in sorted(Path(td).glob('*.html')):
                 cur = ROOT / 'staging' / f.name
                 fresh, _ = stamp_assets.stamp(f.read_text(encoding='utf-8'), hashes)
-                if not cur.exists() or cur.read_text(encoding='utf-8') != fresh:
+                have = cur.read_text(encoding='utf-8') if cur.exists() else None
+                if f.name == 'index.html' and have is not None and landing is not None:   # 랜딩 — 매일 바뀌는 값(data-live)은 빼고 견준다
+                    have, fresh = landing.mask(have), landing.mask(fresh)
+                if have != fresh:
                     bad.append(f.name)
+            for f in sorted((Path(td) / 'img').glob('*.webp')):   # 랜딩 그림(시안 그림의 사본)
+                cur = ROOT / 'staging' / 'img' / f.name
+                if not cur.exists() or cur.read_bytes() != f.read_bytes():
+                    bad.append('img/' + f.name)
             print(('❌ 스테이징이 생성기와 다르다: ' + ', '.join(bad) + ' → python3 scripts/build_staging.py') if bad else '✅ 스테이징 = 생성기 결과')
             sys.exit(1 if bad else 0)
     build_all(Path(a.out))

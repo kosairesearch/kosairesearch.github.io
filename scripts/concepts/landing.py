@@ -19,7 +19,12 @@
   · 그림 자리 넷을 모두 채웠다(사진 · 영상 · 3D 는 쓰지 않는다) — 리포트 절과 업종 절은 실제 화면을 찍어 상자 없이 두고
     (landing_art.py · shot()), 갱신 절은 공휴일 자료로 그린 1년 공시 시계(cyc() · CYC_JS — 셋 다 2026-10-01 사장), 브리핑 띠는 점과
     빛으로 그린 개장 전 여의도의 새벽이다(DAWN_JS — 2026-10-02 사장). 첫 화면의 행성도 그림이 아니라 data/ 로 그린 캔버스다.
-  · 숫자는 전부 data/ 에서 계산한다 — 손으로 적은 숫자·날짜 없음. 스테이징·실사이트 파일은 건드리지 않는다.
+  · 숫자는 전부 data/ 에서 계산한다 — 손으로 적은 숫자·날짜 없음.
+  · 스테이징(2026-10-02 사장 "일단 우리가 만든 랜딩페이지 새 디자인을 스테이징 사이트로 옮겨줘") — build_staging.py 가 build_staging()
+    으로 staging/index.html 을 낸다. 옷 · 문구 · 그림은 시안과 같고, 스테이징에서만 붙는 것은: STAGING 띠, 실제 페이지로 가는 머리 ·
+    꼬리 · '…보기' 링크, 작동하는 검색(자동완성 — 처음 누를 때 종목 자료를 받는다), 로그인 상태(auth-state), 휠 스크롤(lenis).
+    매일 바뀌는 값(리포트 수 · 업종 수 · 출처 평균 · 호수 · 행성 · 공시 시계의 해)은 data-live 로 표시해 생성기 비교(--check)에서 뺀다 —
+    아침 브리핑 작업이 날마다 스테이징을 다시 만들어 맞춘다. 실사이트 파일은 건드리지 않는다.
 """
 import datetime
 import os
@@ -28,12 +33,24 @@ import sys
 from collections import Counter
 
 sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(1, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))   # scripts/ — 스테이징 출력이 comp_common 을 쓴다
 from data import ROOT, BY, STOCKS, INDEX, esc, brief, now_date  # noqa: E402
 from common import g  # noqa: E402
 
 OUT = os.path.join(ROOT, "preview", "concepts", "landing")
 ASSETS = "../../../assets"
 FONTS = "../../../fonts"
+# 어디에 내나 — 'preview'(preview/concepts/landing/) · 'staging'(staging/index.html · build_staging() 가 바꾼다)
+MODE = "preview"
+# 스테이징에서 링크가 가는 곳(staging/ 안의 상대 주소). 시안은 '#'(머리의 리포트 · 업종 분석 · 모닝브리핑은 같은 페이지의 절)
+HREF = {"홈": "Home.html", "리포트": "Reports.html", "업종 분석": "industry.html", "관심종목": "Watchlist.html", "모닝브리핑": "brief.html",
+        "회사 소개": "About.html", "문의하기": "Contact.html", "피드백": "Feedback.html", "이용약관": "Terms.html", "개인정보 처리방침": "Privacy.html",
+        "로그인": "Login.html", "회원가입": "Signup.html", "brand": "./",
+        "hero_link": "Reports.html", "trust_link": "About.html#s03", "brief_link": "brief.html", "sectors_link": "industry.html"}
+
+
+def href(key, preview="#"):
+    return HREF[key] if MODE == "staging" else preview
 BASE = datetime.date.fromisoformat(f"{now_date()[:4]}-{now_date()[4:6]}-{now_date()[6:8]}")   # 데이터의 '오늘'
 # 범위는 '국내 상장'으로 묶는다(사장 2026-10-01 — 첫 화면 서브의 '코스피, 코스닥, 코넥스' 나열 대신). 세 시장이 다 들어가는 말이라
 # 정확하다(상장 2,685 = 코스피 831 · 코스닥 1,747 · 코넥스 107). 시장 이름을 따로 쓸 때는 셋 다 쓴다 — 둘만 쓰면 틀린 말이 된다
@@ -755,6 +772,92 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
 }
 """
 
+# 스테이징에서만 덧붙는 옷(staging/index.html). 시안의 옷(CSS)은 그대로 두고 그 뒤에 붙인다
+STAGING_CSS = r"""
+/* ── 스테이징(staging/index.html)에서만 ── */
+/* 페이지 전환 — 다른 스테이징 페이지와 같은 문서 간 크로스페이드. STAGING 띠만 제자리에 두고 나머지는 바뀐다 */
+@view-transition{navigation:auto}
+.kos-staging-bar{view-transition-name:kos-bar}
+/* STAGING 띠(맨 위 · sticky · 높이를 --kos-bar-h 로 넘긴다) 밑으로 머리와 휴대폰 메뉴를 내린다. 첫 화면과 브리핑 띠의 '한 화면'도 띠만큼 줄인다 */
+html{scroll-padding-top:calc(84px + var(--kos-bar-h,0px))}
+.nav{top:var(--kos-bar-h,0px)}
+.mmenu{top:calc(60px + var(--kos-bar-h,0px))}
+.hero{min-height:calc(100vh - var(--kos-bar-h,0px));min-height:calc(100svh - var(--kos-bar-h,0px))}
+.band{min-height:calc(100vh - 60px - var(--kos-bar-h,0px));min-height:calc(100svh - 60px - var(--kos-bar-h,0px))}
+/* 로그인 상태 — staging/auth-state.js 가 #acct 에 머리글자 동그라미와 작은 메뉴를 그린다(다른 스테이징 페이지와 같은 옷 · comp_common) */
+.acct{position:relative;display:none;align-items:center} .acct.show{display:inline-flex} .right.user .login{display:none}
+.avatar{width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--bg);font:600 13px/1 var(--font);display:inline-flex;align-items:center;justify-content:center;border:0;cursor:pointer;padding:0;margin:0 4px}
+.acct-menu{display:none;position:absolute;right:0;top:calc(100% + 10px);min-width:220px;background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:6px 0;box-shadow:0 8px 24px rgba(20,20,20,.08);z-index:60}
+.acct.open .acct-menu{display:block} .acct-menu .em{padding:8px 16px 10px;font:400 12px/16px var(--font);color:var(--ink-62);border-bottom:1px solid var(--hair);margin-bottom:4px;word-break:break-all}
+.acct-menu a,.acct-menu button{display:block;width:100%;text-align:left;border:0;background:none;padding:9px 16px;font:500 14px/20px var(--font);color:var(--ink-72);cursor:pointer}
+.acct-menu a:hover,.acct-menu button:hover{background:var(--surface-2);color:var(--ink)}
+.mm-auth button{border:0;background:none;padding:10px 0;font:600 16px/24px var(--font);color:var(--ink);cursor:pointer}
+/* 머리가 어두운 무대 위일 때(.on-band) — 동그라미는 무대 글자색으로 뒤집고, 펼친 메뉴는 페이지 색 그대로 둔다 */
+.nav.on-band .avatar{background:var(--band-ink);color:var(--band)}
+.nav.on-band .acct-menu{--ink:#141414;--ink-72:rgba(20,20,20,.72);--ink-62:rgba(20,20,20,.62);--hair:rgba(20,20,20,.08)}
+:root[data-theme="dark"] .nav.on-band .acct-menu{--ink:#ececea;--ink-72:rgba(236,236,234,.72);--ink-62:rgba(236,236,234,.62);--hair:rgba(255,255,255,.08)}
+@media (max-width:820px){.right .acct,.right .acct.show{display:none}}   /* 휴대폰은 메뉴 안(#mauth)에 설정 · 로그아웃이 있다 */
+/* 검색 자동완성 — 입력칸 바로 아래에 뜨는 판(홈 검색과 같은 규칙). 어두운 무대 안에서도 판은 페이지 색이다.
+   첫 화면의 글은 떠오르는 움직임(rise) 때문에 저마다 쌓임 맥락을 가져, 검색창을 한 칸 위로 올리지 않으면 뒤에 오는 '전체 리포트 보기'가
+   판 위에 비친다. 첫 화면은 행성을 자르느라 overflow:hidden 이라 판이 첫 화면 끝에서 잘리지 않게 SEARCH_JS 가 높이를 맞춘다 */
+.search{position:relative;z-index:2}
+.ac{display:none;position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:30;max-height:min(360px,46vh);overflow:auto;overscroll-behavior:contain;
+  background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:6px 0;box-shadow:0 12px 32px rgba(20,20,20,.14);text-align:left;color:var(--ink)}
+.ac.show{display:block}
+.ac-item{display:flex;align-items:center;gap:14px;padding:10px 16px;font:400 15px/20px var(--font);color:var(--ink)}
+.ac-item:hover,.ac-item.on{background:var(--surface-2)}
+.ac-tk{flex:none;width:56px;font:500 12px/16px var(--font);color:var(--ink-62)}
+.ac-nm{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} .ac-nm mark{background:none;color:inherit;font-weight:600}
+.ac-sec{flex:none;font:400 12px/16px var(--font);color:var(--ink-62)}
+.ac-empty{padding:12px 16px;font:400 14px/20px var(--font);color:var(--ink-62)}
+.hero .ac :focus-visible{outline-color:var(--ink)}
+.dz .ac ::selection{background:rgba(20,20,20,.14)} :root[data-theme="dark"] .dz .ac ::selection{background:rgba(255,255,255,.22)}
+"""
+
+# 스테이징 검색 — 홈(build_home_comp)과 같은 찾기 규칙: 이름 앞 · 종목코드 앞 · 이름 속 · 종목코드 속 · 업종 순, 같은 순위는 가나다순, 8개까지.
+# 종목 자료(../data/stocks.js · 1.1MB)는 첫 화면을 무겁게 하지 않도록 검색창을 처음 누를 때 받는다.
+# '리포트 찾기'는 종목이 하나로 정해질 때(고른 후보 · 결과 하나 · 이름이나 종목코드가 꼭 맞음)만 그 리포트로 가고, 여럿이면 후보를 펼친다.
+# 엔터는 홈처럼 고른 후보, 없으면 첫 후보로 간다(실사이트와 같음)
+SEARCH_JS = r"""(function(){
+var forms=[].slice.call(document.querySelectorAll('form.search'));if(!forms.length)return;
+var IDX=null,busy=false,wait=[];
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function load(cb){if(IDX){cb();return}wait.push(cb);if(busy)return;busy=true;
+  function done(){var d=window.KOS_LIVE_DATA,seen={};IDX=[];((d&&d.stocks)||[]).forEach(function(s){if(seen[s.ticker])return;seen[s.ticker]=1;IDX.push({t:s.ticker,n:s.name,s:s.sector||''})});
+    var w=wait;wait=[];w.forEach(function(f){f()})}
+  if(window.KOS_LIVE_DATA){done();return}
+  var sc=document.createElement('script');sc.src='../data/stocks.js';sc.onload=done;sc.onerror=function(){busy=false;wait=[]};document.head.appendChild(sc)}
+function find(q){var t=q.trim().toLowerCase();if(!t||!IDX)return[];
+  return IDX.map(function(s){var nm=s.n.toLowerCase(),sc=-1;
+    if(nm.indexOf(t)===0)sc=0;else if(s.t.toLowerCase().indexOf(t)===0)sc=1;else if(nm.indexOf(t)>=0)sc=2;else if(s.t.toLowerCase().indexOf(t)>=0)sc=3;else if(s.s.toLowerCase().indexOf(t)>=0)sc=4;
+    return {s:s,sc:sc}}).filter(function(x){return x.sc>=0}).sort(function(a,b){return a.sc-b.sc||a.s.n.localeCompare(b.s.n,'ko')}).slice(0,8).map(function(x){return x.s})}
+function hl(name,q){var t=q.trim(),i=name.toLowerCase().indexOf(t.toLowerCase());if(!t||i<0)return esc(name);return esc(name.slice(0,i))+'<mark>'+esc(name.slice(i,i+t.length))+'</mark>'+esc(name.slice(i+t.length))}
+function go(t){location.href='stock.html?ticker='+encodeURIComponent(t)}
+forms.forEach(function(f){
+  var input=f.querySelector('input'),btn=f.querySelector('button'),ac=f.querySelector('.ac'),items=[],act=-1;if(!input||!btn||!ac)return;
+  function close(){ac.classList.remove('show');input.setAttribute('aria-expanded','false');act=-1}
+  function render(){var q=input.value;if(!q.trim()){close();return}if(!IDX){load(render);return}items=find(q);act=-1;
+    ac.innerHTML=items.length?items.map(function(s,i){return '<a class="ac-item" role="option" href="stock.html?ticker='+encodeURIComponent(s.t)+'" data-i="'+i+'"><span class="ac-tk">'+esc(s.t)+'</span><span class="ac-nm">'+hl(s.n,q)+'</span><span class="ac-sec">'+esc(s.s)+'</span></a>'}).join('')
+      :'<div class="ac-empty">“'+esc(q.trim())+'” 검색 결과가 없습니다</div>';
+    ac.classList.add('show');input.setAttribute('aria-expanded','true');fit()}
+  function fit(){ac.style.maxHeight='';var h=f.closest('.hero');if(!h)return;var a=ac.getBoundingClientRect(),room=h.getBoundingClientRect().bottom-a.top-16;
+    if(room<a.height)ac.style.maxHeight=Math.max(132,room)+'px'}   // 첫 화면 끝에서 잘리지 않게 — 넘치는 후보는 판 안에서 내려 본다
+  function mark(n){var els=ac.querySelectorAll('.ac-item');if(!els.length)return;act=(n+els.length)%els.length;els.forEach(function(el,i){el.classList.toggle('on',i===act)});els[act].scrollIntoView({block:'nearest'})}
+  input.addEventListener('focus',function(){load(function(){if(input.value.trim())render()})});
+  input.addEventListener('input',render);
+  input.addEventListener('keydown',function(e){var composing=e.isComposing||e.keyCode===229;
+    if(e.key==='Enter'){if(!composing)e.preventDefault();load(function(){var pick=(act>=0&&items[act])?items[act]:find(input.value)[0];if(pick)go(pick.t);else if(input.value.trim())render()});return}
+    if(composing&&e.key!=='Escape')return;if(!ac.classList.contains('show'))return;
+    if(e.key==='ArrowDown'){e.preventDefault();mark(act+1)}else if(e.key==='ArrowUp'){e.preventDefault();mark(act-1)}else if(e.key==='Escape')close()});
+  btn.addEventListener('click',function(){var q=input.value.trim();if(!q){input.focus();return}
+    load(function(){if(act>=0&&items[act]){go(items[act].t);return}
+      var rs=find(q),ex=rs.filter(function(s){return s.n===q||s.t===q})[0];if(ex||rs.length===1){go((ex||rs[0]).t);return}
+      render();input.focus()})});
+  document.addEventListener('click',function(e){if(!f.contains(e.target))close()});
+  addEventListener('pageshow',function(e){if(e.persisted)close()});   // 뒤로 가기로 돌아온 페이지에 펼친 판이 남지 않게
+});
+})();"""
+
 I = {
     "arrow": '<svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
     "search": '<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-3.5-3.5"/></svg>',
@@ -853,28 +956,45 @@ def more(label, href="#"):
 
 
 def nav():
-    lk = "".join(f'<a href="{h}">{t}</a>' for t, h in LINKS)
+    """머리 · 휴대폰 메뉴. 스테이징은 실제 페이지로 가고, 로그인 상태(auth-state.js)가 찾는 자리(#navRight · #acct · #mauth)를 둔다."""
+    stg = MODE == "staging"
+    lk = "".join(f'<a href="{href(t, h)}">{t}</a>' for t, h in LINKS)
+    a = lambda t: f'<a href="{href(t)}">{t}</a>'
     return ('<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>'
-            f'<nav class="nav on-band" id="nav"><div class="nav-in"><a class="brand" href="#"><img class="lt" src="{ASSETS}/kosai-wordmark-black.png" alt="KOSAI">'
+            f'<nav class="nav on-band" id="nav"><div class="nav-in"><a class="brand" href="{href("brand")}"><img class="lt" src="{ASSETS}/kosai-wordmark-black.png" alt="KOSAI">'
             f'<img class="dk" src="{ASSETS}/kosai-wordmark-white.png" alt="KOSAI"></a><div class="links">{lk}</div>'
-            f'<div class="right"><a class="login" href="#">로그인</a><button class="ib" id="themeBtn" aria-label="테마 전환"><svg viewBox="0 0 24 24" id="themeIcon">{I["moon"]}</svg></button>'
+            + ('<div class="right" id="navRight">' if stg else '<div class="right">')
+            + f'<a class="login" href="{href("로그인")}">로그인</a>' + ('<div class="acct" id="acct"></div>' if stg else '')
+            + f'<button class="ib" id="themeBtn" aria-label="테마 전환"><svg viewBox="0 0 24 24" id="themeIcon">{I["moon"]}</svg></button>'
             f'<button class="ib menu" id="menuBtn" aria-label="메뉴" aria-expanded="false" aria-controls="mmenu">{I["ham"]}{I["x"]}</button></div></div></nav>'
-            f'<div class="mmenu" id="mmenu"><div class="mm-links">{lk}</div><div class="sep"></div><div class="mm-auth"><a href="#">로그인</a><a href="#">회원가입</a></div>'
-            '<div class="mm-foot"><a href="#">회사 소개</a><a href="#">문의하기</a><a href="#">피드백</a><a href="#">이용약관</a><a href="#">개인정보 처리방침</a></div></div>')
+            f'<div class="mmenu" id="mmenu"><div class="mm-links">{lk}</div><div class="sep"></div>'
+            + ('<div class="mm-auth" id="mauth">' if stg else '<div class="mm-auth">') + a("로그인") + a("회원가입") + '</div>'
+            '<div class="mm-foot">' + "".join(a(t) for t in ("회사 소개", "문의하기", "피드백", "이용약관", "개인정보 처리방침")) + '</div></div>')
 
 
 def foot():
-    return (f'<footer class="foot"><div class="w"><a class="brand" href="#"><img class="lt" src="{ASSETS}/kosai-wordmark-black.png" alt="KOSAI">'
+    a = lambda t, cls="": f'<a{cls} href="{href(t)}">{t}</a>'
+    if MODE == "staging":   # 사업자 정보의 원본은 patch_biz_footer.BIZ 하나다(comp_common.BIZ_SPANS — 다른 스테이징 페이지와 같은 글)
+        import comp_common
+        biz = comp_common.BIZ_SPANS
+    else:
+        biz = ('<span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span>'
+               '<span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span>')
+    return (f'<footer class="foot"><div class="w"><a class="brand" href="{href("brand")}"><img class="lt" src="{ASSETS}/kosai-wordmark-black.png" alt="KOSAI">'
             f'<img class="dk" src="{ASSETS}/kosai-wordmark-white.png" alt="KOSAI"></a>'
-            '<div class="fgrid"><div class="fcol"><h4>서비스</h4><a href="#">홈</a><a href="#">리포트</a><a href="#">업종 분석</a><a href="#">관심종목</a><a href="#">모닝브리핑</a></div>'
-            '<div class="fcol"><h4>회사</h4><a href="#">회사 소개</a><a href="#">문의하기</a><a href="#">피드백</a></div>'
-            '<div class="fcol"><h4>정책</h4><a href="#">이용약관</a><a class="pp" href="#">개인정보 처리방침</a></div></div>'
-            '<div class="biz"><span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span><span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span></div>'
+            '<div class="fgrid"><div class="fcol"><h4>서비스</h4>' + "".join(a(t) for t in ("홈", "리포트", "업종 분석", "관심종목", "모닝브리핑")) + '</div>'
+            '<div class="fcol"><h4>회사</h4>' + "".join(a(t) for t in ("회사 소개", "문의하기", "피드백")) + '</div>'
+            '<div class="fcol"><h4>정책</h4>' + a("이용약관") + a("개인정보 처리방침", ' class="pp"') + '</div></div>'
+            f'<div class="biz">{biz}</div>'
             '<div class="copy">© 2026 KOSAI</div></div></footer>')
 
 
-def search_box(ph="종목명 또는 종목코드"):
-    """검색창 — 안내에 특정 종목 예시를 넣지 않는다(사장 "예시로 특정 종목을 왜 보여주나")."""
+def search_box(ph="종목명 또는 종목코드", sid=""):
+    """검색창 — 안내에 특정 종목 예시를 넣지 않는다(사장 "예시로 특정 종목을 왜 보여주나"). 스테이징은 자동완성 판(.ac)을 안에 둔다(SEARCH_JS)."""
+    if MODE == "staging":
+        return (f'<form class="search" role="search" onsubmit="return false">{I["search"]}<input placeholder="{ph}" aria-label="종목 검색" autocomplete="off"'
+                f' role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="{sid}">'
+                f'<button class="btn btn-ink" type="button">리포트 찾기</button><div class="ac" id="{sid}" role="listbox"></div></form>')
     return (f'<form class="search" role="search" onsubmit="return false">{I["search"]}<input placeholder="{ph}" aria-label="종목 검색" autocomplete="off">'
             '<button class="btn btn-ink" type="button">리포트 찾기</button></form>')
 
@@ -978,11 +1098,25 @@ def copy_text(n_rep, n_sec, brief_no, src_avg):
     }
 
 
+def live(v):
+    """매일 바뀌는 값 — 스테이징에서는 data-live 로 감싸 생성기 비교(build_staging --check)에서 뺀다(mask). 시안은 그대로."""
+    return f'<span data-live>{v}</span>' if MODE == "staging" else v
+
+
+def mask(html):
+    """생성기 비교에서 뺄 자리 — data-live 로 표시한 매일 바뀌는 값(리포트 수 · 업종 수 · 출처 평균 · 호수 · 행성 · 공시 시계 자료 · '지난해')과
+    공시 시계 설명의 해. 아침 브리핑 작업이 날마다 스테이징을 다시 만들어 맞추므로, 낮 동안 자료가 바뀌어도 비교가 깨지지 않게 한다."""
+    html = re.sub(r'(<(span|script|title)\b[^>]*\sdata-live\b[^>]*>).*?(</\2>)', r'\1\3', html, flags=re.S)
+    return re.sub(r'(<figure class="cyc" id="cyc" role="img" aria-label=")[^"]*', r'\1', html)
+
+
 def page():
+    stg = MODE == "staging"
     n_rep = len(INDEX)
     b = brief()
     cnt = Counter(c for x in STOCKS["stocks"] for c in (x.get("categories") or []) if c != "기타")
-    C = copy_text(n_rep, len(cnt), b["_no"], sources_avg())
+    src = sources_avg()
+    C = copy_text(n_rep, live(len(cnt)), live(b["_no"]), src)
 
     def head_block(key, link=""):   # .rv — 스크롤 등장(RV_JS)
         eb, h, sub = C[key]
@@ -990,32 +1124,42 @@ def page():
                 + link.replace('class="more"', 'class="more rv"', 1))
 
     num = f"{n_rep:,}"
-    lede = g(C["lede"]).replace(num, f'<span class="num">{num}</span>', 1)   # 실사이트로 옮기면 stamp_counts 가 맞추는 자리
+    dl = " data-live" if stg else ""
+    lede = g(C["lede"]).replace(num, f'<span class="num"{dl}>{num}</span>', 1)   # 실사이트로 옮기면 stamp_counts 가 맞추는 자리
     # 첫 화면 — 어두운 무대(.dz: 머리·사파리 가장자리 띠가 어두운 색을 따른다) · 큰 제목 · 검색 · 아래에서 떠오르는 종목의 구
     hero = (f'<header class="hero dz" id="hero"><div class="hero-in w"><h1>{C["h1"]}</h1><p class="lede"><span class="s">{lede}</span></p>'
-            + search_box()
-            + f'<div class="alt">{more(C["hero_link"])}</div></div>'
+            + search_box(sid="acHero")
+            + f'<div class="alt">{more(C["hero_link"], href("hero_link"))}</div></div>'
             f'<div class="orb-box" aria-hidden="true"><canvas class="orb" id="orb"></canvas></div>'
-            f'<script type="application/json" id="orbData">{orb_data()}</script></header>')
+            f'<script type="application/json" id="orbData"{dl}>{orb_data()}</script></header>')
     # 숫자 하나 — 첫 화면 제목의 증거라 바로 다음 절. 제목이 숫자를 설명하고(무엇) 큰 숫자가 그 아래(얼마). 숫자 칸(.cnt)은 h2 바로
     # 아래 두어야 RV_JS 의 cnt() 가 h2 에 읽는 프로그램용 이름(제목 + 최종값)을 단다
     gp, gs, gsrc = C["gap"]
     sec_gap = (f'<section class="sec w solo stat" id="gap"><h2 class="stat-h rv"><span class="h2">{C["gap_h"]}</span> <span class="cnt stat-n">{esc(gp)}</span></h2>'
                f'<p class="sub rv">{sents(gs)}</p><p class="src rv">{g(gsrc)}</p></section>')
+    if stg:   # '지난해'는 데이터의 해가 바뀌면 '2025년'이 된다(copy_text)
+        when = "지난해" if BASE.year == GAP["year"] + 1 else f"{GAP['year']}년"
+        assert sec_gap.count(f"{when} 증권사") == 1, when
+        sec_gap = sec_gap.replace(f"{when} 증권사", f"{live(when)} 증권사", 1)
     sec_report = (f'<section class="sec w" id="report"><div class="split"><div class="tx">{head_block("report")}</div>'
                   + shot("report", C["report_shot"]) + '</div></section>')
     sec_fresh = (f'<section class="sec w" id="fresh"><div class="split rev"><div class="tx">{head_block("fresh")}</div>'
                  + cyc(C["cyc"]) + '</div></section>')
+    if stg:
+        sec_fresh = sec_fresh.replace('<script type="application/json" id="cycData">', '<script type="application/json" id="cycData" data-live>', 1)
     pts = "".join(f'<li class="rv"><h3>{g(t)}</h3><p>{sents(d)}</p></li>' for t, d in C["trust_points"])
+    if stg:   # 출처 평균 — 문장은 글자로 다듬어 들어가므로(sents) 다 만든 뒤에 감싼다
+        assert pts.count(f"{src}건") == 1, src
+        pts = pts.replace(f"{src}건", f"{live(src)}건", 1)
     sec_trust = (f'<section class="sec w trust"><h2 class="h2 rv">{C["trust"][1]}</h2><ul class="proof">{pts}</ul>'
-                 + more(C["trust_link"]).replace('class="more"', 'class="more rv"', 1) + '</section>')   # 링크는 작성 방식(회사 소개) — 특정 종목 예시는 두지 않는다(사장)
+                 + more(C["trust_link"], href("trust_link")).replace('class="more"', 'class="more rv"', 1) + '</section>')   # 링크는 작성 방식(회사 소개) — 특정 종목 예시는 두지 않는다(사장)
     sec_brief = (f'<section class="band dz" id="brief"><canvas class="dawn" id="dawn" aria-hidden="true"></canvas>'
-                 f'<div class="w split"><div class="tx">{head_block("brief", more(C["brief_link"]))}</div></div></section>')   # 그림은 DAWN_JS
-    sec_sectors = (f'<section class="sec w stack" id="sectors">{head_block("sectors", more(C["sectors_link"]))}'
+                 f'<div class="w split"><div class="tx">{head_block("brief", more(C["brief_link"], href("brief_link")))}</div></div></section>')   # 그림은 DAWN_JS
+    sec_sectors = (f'<section class="sec w stack" id="sectors">{head_block("sectors", more(C["sectors_link"], href("sectors_link")))}'
                    + shot("sector", C["sectors_shot"], "shot full") + '</section>')
     sec_stance = f'<section class="sec w solo">{head_block("stance")}</section>'
     sec_end = (f'<section class="end w"><h2 class="h2 rv">{C["end"]}</h2>'
-               + f'<div class="rv">{search_box()}</div></section>')   # 검색창은 밑줄 transition 이 있어 감싼 상자를 올린다
+               + f'<div class="rv">{search_box(sid="acEnd")}</div></section>')   # 검색창은 밑줄 transition 이 있어 감싼 상자를 올린다
 
     orb_js = "<script>" + ORB_JS + "</script>"
     rv_js = "<script>" + RV_JS + "</script>"   # 다른 스크립트와 따로 — 저쪽이 실패해도 글이 숨은 채로 남지 않게
@@ -1027,7 +1171,7 @@ def page():
           "function over(y){for(var i=0;i<zs.length;i++){var b=zs[i].getBoundingClientRect();if(b.top<=y&&b.bottom>=y)return true}return false}"
           "function upd(){tick=false;nav.classList.toggle('scrolled',scrollY>32);"
           "var open=nav.classList.contains('menu-open'),H=innerHeight,top=!open&&over(6);"
-          "nav.classList.toggle('on-band',!open&&over(30));root.classList.toggle('band-top',top);root.classList.toggle('band-bot',!open&&over(H-6));"
+          "var nb=nav.getBoundingClientRect();nav.classList.toggle('on-band',!open&&over(nb.top+nb.height/2));root.classList.toggle('band-top',top);root.classList.toggle('band-bot',!open&&over(H-6));"
           "var cs=getComputedStyle(root);meta.setAttribute('content',(top?cs.getPropertyValue('--band'):cs.getPropertyValue('--bg')).trim())}"
           "function req(){if(!tick){tick=true;requestAnimationFrame(upd)}}"
           "addEventListener('scroll',req,{passive:true});addEventListener('resize',req);upd();"
@@ -1037,7 +1181,7 @@ def page():
           "document.getElementById('themeBtn').addEventListener('click',function(){var t=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',t);"
           "try{localStorage.setItem('kos-theme',t)}catch(e){}paint();upd()});"
           "var mb=document.getElementById('menuBtn'),mm=document.getElementById('mmenu'),mn=document.querySelector('main'),ft=document.querySelector('footer');"
-          "function setMenu(on){nav.classList.toggle('menu-open',on);mm.classList.toggle('open',on);mb.setAttribute('aria-expanded',on?'true':'false');root.style.overflow=on?'hidden':'';mn.inert=on;ft.inert=on;upd()}"
+          "function setMenu(on){nav.classList.toggle('menu-open',on);mm.classList.toggle('open',on);mb.setAttribute('aria-expanded',on?'true':'false');root.style.overflow=on?'hidden':'';mn.inert=on;ft.inert=on;if(window.KOSSmoothScroll){on?KOSSmoothScroll.stop():KOSSmoothScroll.start()}upd()}"
           "mb.addEventListener('click',function(){setMenu(!nav.classList.contains('menu-open'))});"
           "mm.addEventListener('click',function(e){if(e.target.closest('a'))setMenu(false)});"
           "document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('menu-open')){setMenu(false);mb.focus()}});"
@@ -1048,24 +1192,69 @@ def page():
              "r.setAttribute('data-theme',t);r.classList.add('band-top');"
              "if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches)r.classList.add('rv-on');"
              "document.querySelector('meta[name=\"theme-color\"]').setAttribute('content',t==='dark'?'#1c1c1e':'#141414')})();</script>")
+    main = f"<main>{hero}{sec_gap}{sec_report}{sec_stance}{sec_trust}{sec_fresh}{sec_sectors}{sec_brief}{sec_end}</main>"
+    if stg:
+        # 스테이징 — 다른 스테이징 페이지와 같은 머리 스크립트(모의 결제 · 통계 끔) · 전화번호 자동인식 끔 · 아이콘. 옷은 한 장에 담는다(생성기 비교가
+        # html 만 보므로). 설명 · 공유 메타는 두지 않는다(noindex). STAGING 띠는 머리 위, 로그인 상태 · 휠 스크롤 모듈은 comp_common.finish 가 붙인다
+        import comp_common as CC
+        head = ('<!doctype html><html lang="ko" data-staging><head><meta charset="utf-8">\n' + CC.STAGING_HEAD
+                + '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="format-detection" content="telephone=no">'
+                f'<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#141414"><title data-live>{esc(C["title"])}</title>'
+                f'<link rel="icon" href="{ASSETS}/favicon.png?v=k2"><link rel="stylesheet" href="{FONTS}/pretendard-subset.css">'
+                f'<style>\n{CSS.strip()}\n{STAGING_CSS.strip()}\n</style>{theme}</head><body>')
+        return (head + CC.STAGING_BAR + nav() + main + foot() + rv_js + cyc_js + dawn_js + orb_js + js
+                + "<script>" + SEARCH_JS + "</script>\n</body></html>")
     head = ('<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
             f'<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#141414"><title>{esc(C["title"])}</title>'
             f'<meta name="description" content="{esc(C["desc"])}"><meta property="og:title" content="{esc(C["og_title"])}">'
             f'<meta property="og:description" content="{esc(C["og_desc"])}">'
             f'<link rel="stylesheet" href="{FONTS}/pretendard-subset.css"><link rel="stylesheet" href="landing.css">{theme}</head><body>')
-    return (head + nav() + f"<main>{hero}{sec_gap}{sec_report}{sec_stance}{sec_trust}{sec_fresh}{sec_sectors}{sec_brief}{sec_end}</main>"
-            + foot() + rv_js + cyc_js + dawn_js + orb_js + js + "</body></html>")
+    return head + nav() + main + foot() + rv_js + cyc_js + dawn_js + orb_js + js + "</body></html>"
 
 
-if __name__ == "__main__":
+def check_imgs():
+    """리포트 절 · 업종 절 그림이 다 있고 SHOT 크기와 같은가 — 틀리면 까닭을 돌려준다(없으면 None)."""
     missing = [f"img/{k}-{n}-{t}.webp" for k in SHOT for n in SHOT[k] for t in ("light", "dark")
                if not os.path.exists(os.path.join(OUT, "img", f"{k}-{n}-{t}.webp"))]
     if missing:
-        sys.exit(f"리포트 절 · 업종 절 그림이 없다 — python3 scripts/concepts/landing_art.py 를 먼저 돌린다: {missing}")
+        return f"리포트 절 · 업종 절 그림이 없다 — python3 scripts/concepts/landing_art.py 를 먼저 돌린다: {missing}"
     wrong = [f"img/{k}-{n}-{t}.webp {got} ≠ {SHOT[k][n]}" for k in SHOT for n in SHOT[k] for t in ("light", "dark")
              if (got := webp_size(os.path.join(OUT, "img", f"{k}-{n}-{t}.webp"))) != SHOT[k][n]]
     if wrong:   # 다시 찍어 크기가 바뀌었는데 SHOT 을 그대로 두면 자리가 어긋난다(왼쪽 휴대폰 화면은 틀에 꼭 맞아야 한다)
-        sys.exit(f"그림 크기가 SHOT 과 다르다 — SHOT 을 고치거나 landing_art.py 의 자를 범위를 본다: {wrong}")
+        return f"그림 크기가 SHOT 과 다르다 — SHOT 을 고치거나 landing_art.py 의 자를 범위를 본다: {wrong}"
+    return None
+
+
+def build_staging(out_dir):
+    """스테이징 첫 페이지 — out_dir/index.html 과 그림(out_dir/img/ · 시안 그림을 그대로 복사). build_staging.py 가 부른다(--check 는 임시 폴더로)."""
+    global MODE, ASSETS, FONTS
+    import shutil
+    why = check_imgs()
+    if why:
+        raise RuntimeError(why)
+    import comp_common as CC
+    if CC.MODE != "staging":
+        CC.set_mode("staging")
+    MODE, ASSETS, FONTS = "staging", "../assets", "../fonts"
+    try:
+        html = CC.finish(page(), "index.html")
+    finally:
+        MODE, ASSETS, FONTS = "preview", "../../../assets", "../../../fonts"
+    os.makedirs(os.path.join(out_dir, "img"), exist_ok=True)
+    for k in SHOT:
+        for n in SHOT[k]:
+            for t in ("light", "dark"):
+                a, b = os.path.join(OUT, "img", f"{k}-{n}-{t}.webp"), os.path.join(out_dir, "img", f"{k}-{n}-{t}.webp")
+                if not os.path.exists(b) or open(a, "rb").read() != open(b, "rb").read():
+                    shutil.copyfile(a, b)
+    open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8").write(html)
+    return html
+
+
+if __name__ == "__main__":
+    why = check_imgs()
+    if why:
+        sys.exit(why)
     os.makedirs(OUT, exist_ok=True)
     open(os.path.join(OUT, "landing.css"), "w", encoding="utf-8").write(CSS.strip() + "\n")
     html = page()
