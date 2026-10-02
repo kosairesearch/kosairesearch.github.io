@@ -870,7 +870,7 @@ LINKS = [("홈", "#"), ("리포트", "#report"), ("업종 분석", "#sectors"), 
 
 def nav_links():
     """머리 · 휴대폰 메뉴의 링크. 스테이징은 다른 스테이징 페이지 머리(comp_common.PAGES_STAGING)와 같은 자리 — 관심종목 다음 — 에 멤버십을 둔다
-    (사장 2026-10-02 "스테이징 랜딩페이지 헤더에는 멤버십 버튼도 넣어야지"). 꼬리와 시안에는 넣지 않았다."""
+    (사장 2026-10-02 "스테이징 랜딩페이지 헤더에는 멤버십 버튼도 넣어야지" · "꼬리에도 당연히 넣어야지"). 꼬리 '서비스' 목록도 이 목록을 쓴다. 시안에는 넣지 않았다."""
     if MODE != "staging":
         return LINKS
     i = [t for t, _ in LINKS].index("관심종목") + 1
@@ -991,7 +991,7 @@ def foot():
                '<span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span>')
     return (f'<footer class="foot"><div class="w"><a class="brand" href="{href("brand")}"><img class="lt" src="{ASSETS}/kosai-wordmark-black.png" alt="KOSAI">'
             f'<img class="dk" src="{ASSETS}/kosai-wordmark-white.png" alt="KOSAI"></a>'
-            '<div class="fgrid"><div class="fcol"><h4>서비스</h4>' + "".join(a(t) for t in ("홈", "리포트", "업종 분석", "관심종목", "모닝브리핑")) + '</div>'
+            '<div class="fgrid"><div class="fcol"><h4>서비스</h4>' + "".join(a(t) for t, _ in nav_links()) + '</div>'   # 머리와 같은 목록 — 스테이징은 멤버십까지(다른 스테이징 페이지 꼬리와 같음)
             '<div class="fcol"><h4>회사</h4>' + "".join(a(t) for t in ("회사 소개", "문의하기", "피드백")) + '</div>'
             '<div class="fcol"><h4>정책</h4>' + a("이용약관") + a("개인정보 처리방침", ' class="pp"') + '</div></div>'
             f'<div class="biz">{biz}</div>'
