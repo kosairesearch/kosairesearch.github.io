@@ -1,27 +1,37 @@
-=== 공시 트리거 v2 생성 Fri Oct  2 06:49:08 UTC 2026 · 대상 033920,000020,024090,085670,131400,007110,026940,307280,065950,146060,009620 ===
-## 🤖 리포트 v2 Batch 제출 — 11개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
-- 정량 재사용 11개(숫자가 이미 최신·완전) · 다시 받을 0개
-- 모델 배분: claude-opus-5 0개 · claude-sonnet-5 11개
-- ✅ 배치 제출: msgbatch_01BRbiZNJEJqL8tReNeQFXP2 (11건) → data/batches_v2/msgbatch_01BRbiZNJEJqL8tReNeQFXP2.json
-  · 상태 in_progress · 처리 11/성공 0/오류 0
-  · 상태 in_progress · 처리 11/성공 0/오류 0
-  · 상태 in_progress · 처리 11/성공 0/오류 0
-  · 상태 in_progress · 처리 11/성공 0/오류 0
-  · 상태 in_progress · 처리 11/성공 0/오류 0
-  · 상태 in_progress · 처리 11/성공 0/오류 0
-  · 상태 in_progress · 처리 11/성공 0/오류 0
-  · 상태 in_progress · 처리 11/성공 0/오류 0
-  · 상태 in_progress · 처리 11/성공 0/오류 0
-  · 상태 in_progress · 처리 11/성공 0/오류 0
-  · 상태 ended · 처리 0/성공 11/오류 0
-- msgbatch_01BRbiZNJEJqL8tReNeQFXP2 · 상태 ended · 처리 0/성공 11/오류 0/만료 0/취소 0 · 주문 2026-10-02 15:49
-    (검증 실패: 누락 키 ['bear', 'risks', 'checkpoints', 'verdict'])
-  · ⚠️ 026940 스키마 불완전 — 건너뜀 (1번째 실패)
-  · 🈯 146060 영문 9곳을 채워 되살렸다
-  · 024090 한자 1곳 한글로: 세 부담이 구체화될 경우 → 대상
-  · ✏️ 085670 표현 교정 1건 → 남은 0건
-  · ✏️ 065950 표현 교정 1건 → 남은 0건
-
-✅ v2 회수 완료 · 성공 10/실패 1 → data/reports_v2/ (2563개)
-💵 claude-sonnet-5 11건 · 입력 65,874(캐시쓰기 524,858·읽기 597,018) · 출력 259,052 · 검색 51 → 약 $2.59 (장당 $0.235)
-✅ msgbatch_01BRbiZNJEJqL8tReNeQFXP2 회수 완료 · 성공 10/실패 1
+=== 공시 트리거 v2 생성 Fri Oct  2 16:31:19 UTC 2026 · 대상 310210,048410,204620,307750,027710,950220,026940,019490,043340 ===
+## 🤖 리포트 v2 Batch 제출 — 9개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
+- 정량 재사용 9개(숫자가 이미 최신·완전) · 다시 받을 0개
+- 모델 배분: claude-opus-5 1개 · claude-sonnet-5 8개
+- ✅ 배치 제출: msgbatch_017xBfUZMY2jzCpi6LyFThPe (9건) → data/batches_v2/msgbatch_017xBfUZMY2jzCpi6LyFThPe.json
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+  · 상태 in_progress · 처리 9/성공 0/오류 0
+- ⏳ 시간 내 미완료 — 남은 배치는 collect_batch 가 회수한다
+- 아직 처리 중 — 여기서 끝낸다. collect_batch 가 회수한다(msgbatch_017xBfUZMY2jzCpi6LyFThPe).
