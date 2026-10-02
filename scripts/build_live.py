@@ -18,6 +18,7 @@
 모닝브리핑(brief.html)은 아침 작업의 render_brief.py 가 같은 생성기로 그린다(발행된 가장 최근 브리핑).
 """
 import argparse
+import json
 import re
 import shutil
 import subprocess
@@ -87,6 +88,9 @@ def build_pages(out_dir: Path):
 FORBIDDEN = ('pricing.html', 'checkout.html', 'billing.html', 'paywall.js', 'checkout.js', 'subscription-api', 'payment-config',
              'demo-backend', 'KOSPaywall', '__KOSDEMO', 'kos-staging-bar', 'data-staging', '/preview/', '../data/', '../assets/', '../fonts/',
              'lockCard', 'paywall=')
+# 번역 사전(페이지 끝 JSON)에도 멤버십 · 스테이징 문구를 싣지 않는다 — 화면에는 안 보여도 페이지 소스에는 보인다.
+# 스테이징 전용 말은 scripts/i18n/staging.json 이 원본이다(STAGING 띠 · 멤버십 메뉴).
+DICT_FORBIDDEN = ('멤버십', '모의 결제', '구독 관리', '구독 초기화', '결제 내역')
 FORBIDDEN_JS = {'auth-state.js': ('subscriptions', 'KOSPaywall', '구독 관리로 이동', 'wd-sub', 'wd-tosubs', 'activeSub(uid)'),
                 'settings-panel.js': ('subscription-api', 'payment-config', 'paneSubscription')}
 
@@ -100,6 +104,7 @@ def visible_text(html):
 def audit(dir_: Path):
     """멤버십 · 스테이징 흔적, 색인 설정, 모듈 문법. 문제 목록을 돌려준다."""
     bad = []
+    stg_keys = {re.sub(r'\s+', ' ', k).strip() for k in json.loads((ROOT / 'scripts/i18n/staging.json').read_text(encoding='utf-8')) if not k.startswith('//')}
     for name in PAGES:
         f = dir_ / name
         if not f.exists():
@@ -109,6 +114,13 @@ def audit(dir_: Path):
         for w in FORBIDDEN:
             if w in h:
                 bad.append(f'{name}: "{w}"')
+        # 공통 사전(comp_common.i18n_block) 블록만 — 모닝브리핑 본문 사전(기사 문장)은 화면에 보이는 글이라 보지 않는다
+        for m in re.finditer(r'<script type="application/json" data-kos-i18n>(.*?)</script>', h, re.S):
+            if not h.startswith('\n<script>window.KOSi18n&&KOSi18n.load()</script>', m.end()):
+                continue
+            for k in json.loads(m.group(1).replace('<\\/', '</')):
+                if k in stg_keys or any(w in k for w in DICT_FORBIDDEN):
+                    bad.append(f'{name}: 번역 사전에 멤버십 · 스테이징 문구 "{k[:30]}"')
         vt = visible_text(h) + ' '.join(re.findall(r'<title>(.*?)</title>', h, re.S))
         for w in ('멤버십', '디자인 시안', 'STAGING'):
             if w in vt:

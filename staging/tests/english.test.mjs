@@ -166,7 +166,8 @@ const openMenu = async (page) => { await page.setViewportSize({ width: 390, heig
 const openDetails = async (page) => page.evaluate(() => document.querySelectorAll("details").forEach((d) => (d.open = true)));
 const scrollAll = async (page) => { for (let y = 0; y < 12000; y += 700) { await page.evaluate((y) => scrollTo(0, y), y); await page.waitForTimeout(120); } };
 
-/* 장면 — [이름, 사이트 안 주소, 동작, 멤버십 장면인가]. 멤버십 장면은 스테이징에서만 돈다. */
+/* 장면 — [이름, 사이트 안 주소, { signedIn 로그인 · act 동작 · pending 준비 중 · paid 멤버십 장면 }].
+   paid 장면(요금제 · 결제 · 설정의 구독 칸)은 실사이트에 없어 스테이징에서만 돈다. */
 const SCENES = [
   ["첫 화면(랜딩)", "/", { act: seq(scrollAll, typeIn("#q, input[type=search], .search input", "sam")) }],
   ["첫 화면 — 휴대폰 메뉴", "/", { act: openMenu }],
@@ -269,7 +270,7 @@ for (const [site, pre] of SITES) {
   const name = `${site} · 설정 — 언어 바꾸고 되돌리기`;
   if (only && !only.test(name)) continue;
   const rt = await roundTrip(pre);
-  if (rt.length) { fail++; report[name] = rt; console.log("FAIL  " + name); rt.forEach((m) => console.log("        " + m.slice(0, 200))); }
+  if (rt.length) { fail++; console.log("FAIL  " + name); rt.forEach((m) => console.log("        " + m.slice(0, 200))); }
   else { pass++; console.log("PASS  " + name); }
 }
 if (process.env.LIST) writeFileSync(process.env.LIST, JSON.stringify(report, null, 1));

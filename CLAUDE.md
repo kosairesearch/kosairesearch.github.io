@@ -346,6 +346,10 @@ Consent · auth-action · Settings · stock · 404)은 스테이징과 같은 �
     (`LIVE_PAGE_SCRIPTS` 가 paywall · checkout 을 뺀다), 설정의 '구독' 칸 없음(루트 settings-panel.js 는 구독 칸 없는 판, `TABS` 에서도 뺀다).
     pricing · checkout · billing · demo-backend · subscription-api · payment-config 는 루트에 두지 않는다 — `build_live --check` 가 막는다.
     유료화하는 날 이 표시들을 걷어 내면 스테이징 판이 그대로 실사이트 판이 된다.
+  · 페이지 끝 번역 사전에도 멤버십 말을 싣지 않는다 — 화면에는 안 보여도 페이지 소스에는 보인다. 스테이징 전용 말(STAGING 띠 · 멤버십 메뉴)은
+    `scripts/i18n/staging.json` 에 두어 스테이징에만 늘 싣고, 모듈 주석 · 코드에 걸려 실리던 멤버십 낱말 넷은 `comp_common.LIVE_DICT_DROP` 으로
+    뺀다(`build_live --check` 감사가 본다). **사전을 고를 때 주석을 통째로 빼지 말 것** — 자료에서 그리는 글('업종 내 주요 종목' 등)이 주석 덕에
+    실려 있어 함께 빠진다(그렇게 했다가 english.test 가 업종 상세에서 잡았다).
   · 루트 모듈: `i18n.js` 는 `staging/i18n.js` 사본(같은 엔진), `auth-state.js` 는 `staging/auth-state.js` 에서 구독 안내(`@paid`)를 뺀 사본 —
     **둘 다 build_live 가 쓴다. 루트 파일을 고치지 말고 staging 쪽을 고친 뒤 돌린다.** 나머지 모듈은 루트 파일 그대로(다섯 공용 모듈은 원래 같다).
     `settings-panel.js` 는 루트 판(구독 칸 없음 · `tests/settings-panel.test.mjs`). 휠 감속은 실사이트도 0.6초(스테이징에서 사장이 고른 값).
@@ -465,8 +469,8 @@ Consent · auth-action · Settings · stock · 404)은 스테이징과 같은 �
     (MutationObserver) · placeholder/aria-label/title/alt · 문서 제목 · 숫자 틀(`#`) · 날짜 틀(`@` → 'Oct 2, 2026') · 금액(조·억·만 → ₩T·B·M,
     실사이트 영어판과 같은 꼴) · `<br>` 로 나뉜 제목 덩어리(값에 `<br>` 을 넣으면 영어도 그 자리에서 줄을 바꾼다 — 덩어리는 전부 번역될 때만 바꾼다).
     말을 바꾸면 페이지를 다시 연다 — 스크립트가 그린 글(설정 칸 · 목록 · 리포트 본문)까지 처음부터 그 말로 그리게(실사이트는 그 자리에서 바꾼다).
-  · 사전 `scripts/i18n/*.json` — common(머리·꼬리·업종명, 모든 페이지) · live(실사이트 영어판에서 가져온 것, 스테이징에서 쓰는 것만) · landing ·
-    pages · pricing · stock · legal · industry. `comp_common.finish()` 가 그 페이지에 나오는 문구만 골라 페이지 끝에 싣는다(한국어로 보는 사람은 읽지
+  · 사전 `scripts/i18n/*.json` — common(머리·꼬리·업종명, 모든 페이지) · staging(STAGING 띠 · 멤버십 메뉴, 스테이징 모든 페이지 · 실사이트 제외) ·
+    live(실사이트 영어판에서 가져온 것, 스테이징에서 쓰는 것만) · landing · pages · pricing · stock · legal · industry. `comp_common.finish()` 가 그 페이지에 나오는 문구만 골라 페이지 끝에 싣는다(한국어로 보는 사람은 읽지
     않는다). 페이지 글에 없고 자료에서 오는 문구(리포트의 밸류에이션 기준 줄 등)는 파일에 `"//always": "stock.html"` 로 늘 싣는다.
     **한국어 문구를 고치거나 새로 넣으면 영어도 같이** — 키가 한국어 원문이라 원문이 바뀌면 영어가 빠진다.
   · 자료는 자료의 영어판: 종목명은 `name_en`(실사이트 cleanEn 으로 다듬음, 없으면 한국어 이름 그대로) · 리포트/업종/브리핑 본문은 `en` 필드.

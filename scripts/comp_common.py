@@ -351,7 +351,8 @@ def links(html):
 # 9월 26일 새 디자인으로 옮기며 실사이트의 번역(KOSi18n)이 빠져 설정 화면의 '언어' 줄까지 사라졌다. 엔진은 staging/i18n.js,
 # 사전은 scripts/i18n/*.json(정규화한 한국어 → 영어 · 키의 '#' 은 아무 숫자). 페이지마다 그 페이지 글과 그 페이지가 부르는 모듈에
 # 나오는 문구만 골라 맨 끝에 JSON 으로 넣는다 — 한국어로 보는 사람은 읽지 않는다. common.json 은 자료에서 오는 말(업종 · 시장 등)이라
-# 늘 넣는다. 빠진 번역은 staging/tests/english.test.mjs 가 영어 화면에서 잡는다.
+# 늘 넣는다. staging.json(STAGING 띠 · 멤버십 메뉴)은 스테이징에만 늘 넣고 실사이트에는 넣지 않는다. 빠진 번역은
+# staging/tests/english.test.mjs 가 영어 화면에서 잡는다.
 I18N_DIR = Path(__file__).resolve().parent / 'i18n'
 _I18N = {}
 
@@ -361,21 +362,23 @@ def _i18n_norm(s):
 
 
 def i18n_table():
-    """{'common': {...}, 'all': {...}, 'always': {페이지: {...}}} — 사전 파일을 한 번 읽어 둔다.
+    """{'common': {...}, 'stg': {...}, 'all': {...}, 'always': {페이지: {...}}} — 사전 파일을 한 번 읽어 둔다.
     파일에 "//always": "stock.html" 처럼 페이지를 적으면 그 파일의 문구는 그 페이지에 늘 싣는다 — 페이지 글이 아니라
     자료에서 오는 문구(리포트의 밸류에이션 기준 줄 등)는 페이지를 훑어서는 찾을 수 없다."""
     if not _I18N:
-        allp, common, always = {}, {}, {}
+        allp, common, stg, always = {}, {}, {}, {}
         for p in sorted(I18N_DIR.glob('*.json')):
             raw = json.loads(p.read_text(encoding='utf-8'))
             d = {_i18n_norm(k): v for k, v in raw.items() if not k.startswith('//')}
             allp.update(d)
             if p.stem == 'common':
                 common.update(d)
+            elif p.stem == 'staging':
+                stg.update(d)
             for pg in str(raw.get('//always', '')).split(','):
                 if pg.strip():
                     always.setdefault(pg.strip(), set()).update(d)
-        _I18N['all'], _I18N['common'], _I18N['always'] = allp, common, always
+        _I18N['all'], _I18N['common'], _I18N['stg'], _I18N['always'] = allp, common, stg, always
     return _I18N
 
 
@@ -395,13 +398,21 @@ def _i18n_corpus(html, page):
     return _i18n_norm(' '.join(srcs))
 
 
+# 실사이트 화면에는 나올 수 없는 멤버십 낱말 — 모듈 주석 · 코드('구독 관리' 주석, 탈퇴 오류의 '환불' 판별 등)에 걸려 사전에 실리던 것.
+# 주석을 통째로 빼고 훑는 방법은 쓰지 않는다 — 자료에서 그리는 글('업종 내 주요 종목' 등)이 주석 덕에 실려 있어 함께 빠진다
+# (2026-10-03 english.test 가 잡았다). 그래서 이 넷만 뺀다. STAGING 띠 · 멤버십 메뉴는 staging.json 이 맡는다.
+LIVE_DICT_DROP = {'구독', '구독 관리', '결제 내역', '환불'}
+
+
 def i18n_block(html, page):
     tb = i18n_table()
     corpus = _i18n_corpus(html, page)
     pick = dict(tb['common'])
+    if MODE != 'live':
+        pick.update(tb['stg'])   # STAGING 띠 · 멤버십 메뉴 — 스테이징 모든 페이지
     pick.update({k: tb['all'][k] for k in tb['always'].get(page, ())})
     for k, v in tb['all'].items():
-        if k in pick:
+        if k in pick or (MODE == 'live' and (k in tb['stg'] or k in LIVE_DICT_DROP)):
             continue
         if '#' in k or '@' in k:   # 숫자(#) · 날짜(@) 자리 — 나머지 조각이 모두 페이지에 있으면
             parts = [x.strip() for x in re.split(r'[#@]', k) if x.strip()]
