@@ -81,11 +81,11 @@ except Exception as e:                                  # 인덱스가 없는 �
     check(True, f"랜딩 리포트 수 확인 건너뜀 ({e.__class__.__name__})")
 
 #    업종 수도 같은 자리에 있는데 이건 손으로 적혀 있어 실제와 어긋나 있었다
-#    (적힌 29 · 실제 30). 이제 stamp_counts.py 가 박아 넣는다.
+#    (적힌 29 · 실제 30). 이제 stamp_counts.py 가 박아 넣는다. 세는 규칙(분석 글이 있는
+#    대표 업종 — 테마 둘과 '기타' 는 빼고, 2026-10-02 30 → 28)도 그 스크립트 한 곳에 있다.
 try:
-    import json
-    sj = (ROOT / "data" / "sectors.js").read_text(encoding="utf-8")
-    want = str(len(json.loads(sj[sj.index("{"):].rstrip().rstrip(";"))["sectors"]))
+    from stamp_counts import sector_count
+    want = str(sector_count())
     m = re.search(r'<b id="lpSecN"[^>]*>([^<]*)</b>', s)
     have = m.group(1).strip() if m else "(없음)"
     check(have == want, "랜딩의 업종 수가 실제와 같음", f"페이지 {have} · 실제 {want}")

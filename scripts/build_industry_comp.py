@@ -92,7 +92,9 @@ JS = r'''(function(){
         +(withW?'<td class="w"><i class="wb" style="--w:'+(r.w/maxW).toFixed(3)+'"></i>'+r.w.toFixed(1)+'%</td>':'')
         +'<td>'+r.n+'</td><td class="'+dir(r.chg)+'">'+chg(r.chg)+'</td><td class="keys">'+r.list.slice(0,3).map(function(s){return esc(s.name)}).join(' · ')+'</td></tr>'}).join('')+'</tbody></table></div>'}
   function renderList(){var a=agg();document.title='업종 분석 — 디자인 시안 | KOSAI';
-    app.innerHTML='<header class="hero"><p class="crumb">코스피 · 코스닥 '+STOCKS.length.toLocaleString('ko-KR')+'개 종목 · '+a.rows.length+'개 업종 · '+a.themeRows.length+'개 테마</p><h1>업종 분석</h1><p class="sub">한국 상장사를 업종으로 나눠 시가총액·등락률과 AI 업종 분석을 제공합니다.</p></header>'
+    /* 업종 수는 분석 글이 있는 대표 업종만 — '기타' 줄은 표에 두되 세지 않는다(랜딩 · 실사이트 첫 화면과 같은 규칙 · stamp_counts.sector_count).
+       종목은 코넥스까지 들어 있어 '국내 상장'(2026-10-02) */
+    app.innerHTML='<header class="hero"><p class="crumb">국내 상장 '+STOCKS.length.toLocaleString('ko-KR')+'개 종목 · '+a.rows.filter(function(r){return SECTORS[r.sec]}).length+'개 업종 · '+a.themeRows.length+'개 테마</p><h1>업종 분석</h1><p class="sub">한국 상장사를 업종으로 나눠 시가총액·등락률과 AI 업종 분석을 제공합니다.</p></header>'
       +'<section class="list"><div class="sec-h"><h2>업종</h2></div>'+sectorTable(a.rows,true)+'<p class="note">시가총액 순 · 시장 비중은 코스피·코스닥 전체 시가총액 대비 · 평균 등락률은 시가총액 가중'+(dateF?' · '+dateF+' 종가 기준':'')+'</p></section>'
       +(a.themeRows.length?'<section class="list"><div class="sec-h"><h2>테마</h2></div>'+sectorTable(a.themeRows,false)+'<p class="note">테마는 여러 업종에 걸친 묶음이라 시장 비중을 따로 두지 않습니다.</p></section>':'')}
   function renderDetail(sec){var a=agg(),row=null;a.rows.forEach(function(r){if(r.sec===sec)row=r});var isTheme=!row;if(!row&&a.byCat[sec])row=mkRow(sec,a.byCat[sec],a.total);if(!row){renderList();return}

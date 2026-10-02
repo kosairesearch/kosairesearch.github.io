@@ -30,12 +30,12 @@ import datetime
 import os
 import re
 import sys
-from collections import Counter
 
 sys.path.insert(0, os.path.dirname(__file__))
 sys.path.insert(1, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))   # scripts/ — 스테이징 출력이 comp_common 을 쓴다
 from data import ROOT, BY, STOCKS, INDEX, esc, brief, now_date  # noqa: E402
 from common import g  # noqa: E402
+from stamp_counts import sector_count  # noqa: E402 — 업종 수는 실사이트 첫 화면과 같은 규칙(분석 글이 있는 대표 업종)
 
 OUT = os.path.join(ROOT, "preview", "concepts", "landing")
 ASSETS = "../../../assets"
@@ -1114,9 +1114,9 @@ def page():
     stg = MODE == "staging"
     n_rep = len(INDEX)
     b = brief()
-    cnt = Counter(c for x in STOCKS["stocks"] for c in (x.get("categories") or []) if c != "기타")
     src = sources_avg()
-    C = copy_text(n_rep, live(len(cnt)), live(b["_no"]), src)
+    # 업종 수 — 분석 글이 있는 대표 업종만(테마 둘과 '기타' 는 빼고). 분류(categories)를 세면 테마가 업종으로 들어가 30 이 됐다(2026-10-02 → 28)
+    C = copy_text(n_rep, live(sector_count()), live(b["_no"]), src)
 
     def head_block(key, link=""):   # .rv — 스크롤 등장(RV_JS)
         eb, h, sub = C[key]
