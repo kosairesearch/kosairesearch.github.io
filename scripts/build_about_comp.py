@@ -3,8 +3,7 @@
 
     python3 scripts/build_about_comp.py            # preview/about.html
 
-본문 글은 실사이트 About.html 에서 그대로 가져온다(생성기가 글자 일치를 검사). 머리(제목 · 서브 · 세 단계)만 카피 가이드대로
-새로 썼다(2026-10-02 — 실사이트 머리는 마침표 끝 제목 · '코스피·코스닥 전 종목' · 영문 COLLECT 같은 표기라). 바뀌는 것은 그 밖에 옷뿐:
+글은 실사이트 About.html 에서 그대로 가져온다(생성기가 글자 일치를 검사). 바뀌는 것은 옷뿐:
 유리 카드(단계·출처·표·면책·연락처)를 선 목록과 열린 표로 바꾸고, 리포트 상세와 같은 목차를 붙인다.
 영문 kicker(WHAT WE DO …)는 번호만 남긴다 — 한글 제목이 이미 그 말을 한다.
 """
@@ -17,8 +16,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import comp_common as C  # noqa: E402
 
 CSS = '''
-/* 세 단계 — 머리 띠 바로 아래. 카드 대신 위 선 하나씩 */
-.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:0 32px;margin-top:56px;max-width:820px}
+.page-hero{max-width:820px} .page-hero h1{font-size:48px;line-height:58px}
+/* 세 단계 — 카드 대신 위 선 하나씩 */
+.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:0 32px;margin-top:40px;max-width:820px}
 .steps3>div{border-top:1px solid var(--line);padding-top:14px} .steps3 .k{font:500 12px/16px var(--font);color:var(--ink-62)} .steps3 h3{margin:8px 0 6px;font:600 16px/24px var(--font)} .steps3 p{margin:0;font:400 14px/22px var(--font);color:var(--ink-72)}
 /* 절 안 부품 */
 .sec .prose{max-width:720px}
@@ -33,7 +33,7 @@ CSS = '''
 .contacts{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:8px} .contacts>div{border-top:1px solid var(--line);padding-top:14px} .contacts .k{font:500 12px/16px var(--font);color:var(--ink-62)} .contacts .v{margin:6px 0 6px;font:600 18px/26px var(--font)} .contacts p{margin:0;font:400 14px/22px var(--font);color:var(--ink-72)}
 '''
 MOBILE_CSS = '''@media (max-width:820px){
-  .steps3{grid-template-columns:1fr;gap:0;margin-top:36px} .steps3>div{padding:14px 0 18px;border-top:1px solid var(--hair)} .steps3>div:first-child{border-top-color:var(--line)}
+  .page-hero h1{font-size:34px;line-height:42px} .steps3{grid-template-columns:1fr;gap:0;margin-top:28px} .steps3>div{padding:14px 0 18px;border-top:1px solid var(--hair)} .steps3>div:first-child{border-top-color:var(--line)}
   .steps4,.abil,.contacts{grid-template-columns:1fr;gap:0} .abil>div+div,.contacts>div+div{margin-top:28px}
   .src{grid-template-columns:1fr;gap:4px}
 }
@@ -53,15 +53,6 @@ MOBILE_CSS = '''@media (max-width:820px){
 }'''
 
 
-# 머리 — 실사이트의 "한국 상장사 정보, 누구나 제대로 이해할 수 있도록." · "코스피·코스닥 전 종목의 …" 를 다시 썼다
-H1 = '누구나 제대로 이해할\u00a0수\u00a0있는 상장사 정보'   # '이해할 / 수' 로 끊기지 않게(카피 가이드 4-5 줄바꿈)
-SUB = ('KOSAI는 국내 상장 종목의 공시와 시세 자료를 바탕으로 기업 분석 리포트를 발행합니다. '
-       '개인 투자자가 종목을 검토할 때 출발점으로 삼을 수 있는 자료를 만드는 것이 목표입니다.')
-STEPS = [('01 수집', '시세와 시가총액, 공시', '여러 곳에 흩어진 원천 데이터를 모읍니다.'),
-         ('02 정리', 'AI 분석과 정리', '사람이 읽기 쉬운 형태로 구조화합니다.'),
-         ('03 공개', '출처 공개', '근거 데이터와 갱신 시각을 함께 표시합니다.')]
-
-
 def text_of(html):
     return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', html)).strip()
 
@@ -77,8 +68,12 @@ def build(out_path):
     b = src.index('<footer', a)
     live = re.sub(r'<script.*?</script>', '', src[a:b], flags=re.S)
 
-    # 머리 — 새로 쓴 글(위 H1 · SUB · STEPS)
-    steps3 = ''.join(f'<div><div class="k">{k}</div><h3>{h}</h3><p>{p}</p></div>' for k, h, p in STEPS)
+    # 머리
+    hero = g(r'<header class="hero">(.*?)</header>', live)
+    h1 = g(r'<h1>(.*?)</h1>', hero)
+    sub = g(r'<p class="sub">(.*?)</p>', hero)
+    hv = re.findall(r'<div class="hv glass"><div class="step">(.*?)</div><h3>(.*?)</h3><p>(.*?)</p></div>', hero, re.S)
+    steps3 = ''.join(f'<div><div class="k">{k}</div><h3>{h}</h3><p>{p}</p></div>' for k, h, p in hv)
 
     secs = re.findall(r'<section class="sec"[^>]*>(.*?)</section>', live, re.S)
     toc, chips, body, pieces = [], [], [], []
@@ -122,15 +117,15 @@ def build(out_path):
         body.append(f'<section class="sec wide" id="s{i:02d}"><div class="sec-h"><span class="num">{i:02d}</span><h2>{title}</h2></div>{"".join(parts)}</section>')
         pieces.append(title + ' ' + ' '.join(parts))
 
-    html = (C.head(C.title('회사 소개')) + '\n<style>\n' + C.CSS + '\n' + C.PROSE_CSS + '\n' + C.TOC_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + C.TOC_MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+    html = (C.head('About — 디자인 시안 | KOSAI') + '\n<style>\n' + C.CSS + '\n' + C.PROSE_CSS + '\n' + C.TOC_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + C.TOC_MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('') + f'''
 <main class="wrap">
-  <header class="ph dz">
-    <p class="crumb">회사 소개</p>
-    <h1>{H1}</h1>
-    <p class="sub">{C.sents(SUB)}</p>
+  <header class="page-hero">
+    <p class="crumb">회사</p>
+    <h1>{h1}</h1>
+    <p class="sub">{sub}</p>
+    <div class="steps3">{steps3}</div>
   </header>
-  <div class="steps3">{steps3}</div>
   <div class="body">
     <aside class="toc" id="toc">{''.join(toc)}</aside>
     <div class="content">
@@ -141,10 +136,9 @@ def build(out_path):
 </main>
 ''' + C.FOOTER + '\n<script>\n' + C.TOC_JS + '\n' + C.JS + '\n</script>\n</body>\n</html>')
 
-    # 글자 검사 — 본문 여덟 절은 영문 kicker(WHAT WE DO …)만 빼고 실사이트와 같아야 한다. 머리는 새로 썼으므로 견주지 않는다
-    body_live = re.sub(r'<header class="hero">.*?</header>', '', live, flags=re.S)
-    want = text_of(re.sub(r'<div class="sec-kicker">.*?</div>', '', body_live, flags=re.S))
-    got = text_of(' '.join(pieces))
+    # 글자 검사 — 영문 kicker(WHAT WE DO …)만 빼고 실사이트와 같아야 한다
+    want = text_of(re.sub(r'<div class="sec-kicker">.*?</div>', '', live, flags=re.S))
+    got = text_of(h1 + ' ' + sub + ' ' + ' '.join(f'{k} {h} {p}' for k, h, p in hv) + ' ' + ' '.join(pieces))
     want_words, got_words = want.split(), got.split()
     missing = [w for w in want_words if w not in got_words and w not in ('홈', '/', 'About', 'ABOUT', 'KOSAI', '·')]
     assert not missing, f'About: 빠진 글 {missing[:12]}'

@@ -42,15 +42,15 @@ const ok = (cond, name, extra) => {
 
 /* 법률 본문만 떼어 글자만 남긴다. 껍데기(스테이징 띠·메뉴·글꼴 경로·목차)는 두 쪽이 달라야 정상이므로 비교 대상이 아니다.
    실사이트(옛 디자인)는 .legal 상자 하나에 공고일 줄·머리말·조문이 다 들어 있다. 스테이징(새 디자인, 2026-09-26)은
-   같은 글을 .meta(공고일 · 2026-10-02 부터 머리 띠 안) · .intro(머리말 · 본문 첫머리) · section.sec(조문)으로 펼쳐 놓았다 —
-   build_legal_comp.py 가 만들 때 실사이트 .legal 과 글자가 같은지 스스로 확인하고, 여기서는 만들어진 파일끼리 다시 본다. */
+   같은 글을 제목 아래 .meta(공고일) · .intro(머리말) · section.sec(조문)으로 펼쳐 놓았다 — build_legal_comp.py 가
+   만들 때 실사이트 .legal 과 글자가 같은지 스스로 확인하고, 여기서는 만들어진 파일끼리 다시 본다. */
 import { JSDOM } from "jsdom";
 const norm = (t) => t.replace(/\s+/g, " ").trim();
 function body(file) {
   const doc = new JSDOM(readFileSync(file, "utf8").replace(/<br\s*\/?>/gi, " ")).window.document;   // 줄바꿈 태그는 띄어쓰기로 — 글자 비교라서
   const legal = doc.querySelector(".legal");
   if (legal) return norm(legal.textContent);
-  const parts = [doc.querySelector("main .meta"), doc.querySelector("main .intro"),
+  const parts = [doc.querySelector(".page-hero .meta"), doc.querySelector(".page-hero .intro"),
                  ...[...doc.querySelectorAll("section.sec")].flatMap((s) => [s.querySelector("h2"), s.querySelector(".prose")])];
   if (parts.some((x) => !x) || parts.length < 4) return null;
   return norm(parts.map((x) => x.textContent).join(" "));

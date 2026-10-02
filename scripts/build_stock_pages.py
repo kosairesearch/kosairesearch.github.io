@@ -51,9 +51,9 @@ def write_assets(out_dir):
 def build_index(out_dir, rows, dir_path, index):
     """만든 목록 — 표본을 훑어볼 때. 실사이트에서는 리포트 목록(Reports)이 이 자리다."""
     tr = ''.join(f'<tr><td><a href="{tk}.html">{S.esc(name)}</a></td><td>{tk}</td><td>{S.esc(TIER_KO[tier])}</td><td>{size // 1024}KB</td></tr>' for tk, name, tier, size in rows)
-    html = (C.head(f'종목 페이지 {len(rows):,}장 | KOSAI', robots='noindex,nofollow') + '\n<style>\n' + C.CSS + '\n.ph+.tbl-wrap{margin-top:48px} .tbl td a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}\n' + C.MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+    html = (C.head(f'종목 페이지 {len(rows):,}장 | KOSAI', robots='noindex,nofollow') + '\n<style>\n' + C.CSS + '\n.wrap{padding-top:44px} h1{margin:0 0 8px;font:700 32px/40px var(--font);letter-spacing:-.02em} .sub{margin:0 0 28px;font:400 15px/24px var(--font);color:var(--ink-72)} .tbl td a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}\n' + C.MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('리포트') + f'''
-<main class="wrap">{C.page_head('리포트', f'종목 페이지 {len(rows):,}장', '종목마다 미리 만든 페이지입니다. 리포트의 글과 표, 지표가 HTML 에 들어 있어 검색 로봇과 사람이 같은 페이지를 봅니다. ' + ('검색을 허용합니다.' if index else '미리보기라 검색에서 제외합니다.'))}
+<main class="wrap"><h1>종목 페이지 {len(rows):,}장</h1><p class="sub">종목마다 미리 만든 페이지. 리포트 글·표·지표가 HTML 에 들어 있어 로봇과 사람이 같은 페이지를 본다. {'검색 허용' if index else '미리보기(noindex)'}.</p>
 <div class="tbl-wrap"><table class="tbl"><thead><tr><th>종목</th><th>코드</th><th>리포트</th><th>크기</th></tr></thead><tbody>{tr}</tbody></table></div></main>
 ''' + C.FOOTER + '\n<script>\n' + C.JS + '\n</script>\n</body>\n</html>')
     (out_dir / 'index.html').write_text(html, encoding='utf-8')

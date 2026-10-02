@@ -569,7 +569,7 @@ function render(){
   } else if(s.kind === 'reset'){
     paint('비밀번호 재설정', '새 비밀번호 설정', s.email + ' 계정의 새 비밀번호를 입력하여 주시기 바랍니다.');
     const form = el('form'); form.id = 'rs'; form.noValidate = true;
-    form.appendChild(fld('np', '새 비밀번호', '영문과 숫자를 포함해 8자 이상'));
+    form.appendChild(fld('np', '새 비밀번호', '영문·숫자 포함 8자 이상'));
     form.appendChild(fld('np2', '새 비밀번호 확인', '비밀번호를 다시 입력하십시오'));
     const btn = el('button', 'btn btn-ink', '비밀번호 변경'); btn.type = 'submit'; btn.id = 'rsSubmit';
     form.appendChild(btn);

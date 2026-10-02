@@ -427,7 +427,7 @@ function tocH(titles,locked){
 }
 function pendingH(){
   var li=PRIMARY_SRC.map(function(s){ return '<li><a href="'+esc(s[1])+'" target="_blank" rel="noopener">'+esc(s[0])+'</a></li>'; }).join('');
-  return '<div class="pending"><h2>이 종목의 리포트는 준비 중입니다</h2><p>새로 상장된 종목은 첫 사업보고서나 분기보고서가 공시된 뒤에 리포트를 작성합니다. 시세와 시가총액, PER, PBR 같은 지표는 거래일마다 저녁에 갱신합니다.</p><ol class="srcs">'+li+'</ol><p class="disc">'+DISC+'</p></div>';
+  return '<div class="pending"><h2>이 종목의 리포트는 준비 중입니다</h2><p>새로 상장된 종목은 첫 사업·분기보고서가 공시된 뒤에 리포트를 작성합니다. 시세·시가총액·PER·PBR 같은 지표는 매 거래일 저녁에 갱신됩니다.</p><ol class="srcs">'+li+'</ol><p class="disc">'+DISC+'</p></div>';
 }
 function notFoundH(){
   return '<div class="pending"><h2>종목을 찾을 수 없습니다</h2><p>요청하신 종목코드('+esc(TK)+')에 해당하는 종목이 없습니다. <a href="Reports.html">리포트 목록</a>에서 종목을 다시 찾아 주시기 바랍니다.</p></div>';
@@ -435,7 +435,7 @@ function notFoundH(){
 function render(){
   var st=STOCK||{ticker:TK, name:(REP&&REP.name)||TK, name_en:(REP&&REP.name_en)||'', market:(REP&&REP.market)||'', sector:(REP&&REP.sector)||'', price:null, change:0};
   var stats=statsH(st);
-  var h='<header class="hero ph dz">'+heroH(st)+'</header><section class="stats" aria-label="핵심 지표">'+stats.html+'</section><p class="stats-note">'+stats.note+' · 시세 '+fdate(DATA_DATE)+' 장마감</p>';
+  var h='<header class="hero">'+heroH(st)+'</header><section class="stats" aria-label="핵심 지표">'+stats.html+'</section><p class="stats-note">'+stats.note+' · 시세 '+fdate(DATA_DATE)+' 장마감</p>';
   var locked=false;
   if(LOADED){
     if(REP){
@@ -449,7 +449,6 @@ function render(){
   /* 휴대폰 목차 띠가 헤더 안에 붙어 있으면(pin) 본문 밖에 있다 — 새로 그리기 전에 뗀다. 안 그러면 id 가 둘이 된다. */
   var old=document.getElementById('chipsBar'); if(old) old.parentNode.removeChild(old);
   var main=document.getElementById('page'); main.innerHTML=h;
-  if(window.kosBandUpd) window.kosBandUpd();   /* 머리 무대가 이제 생겼다 — 헤더 글자색 · 상태바 색을 다시 맞춘다(comp_common JS) */
   if(window.kosFitCharts) window.kosFitCharts();   /* 차트 값 라벨이 옆 막대·라벨에 닿으면 비켜 세운다(stock_page.CHART_FIT_JS) */
   if(LOADED) main.setAttribute('data-tier',REP?TIER:(KNOWN?'none':'unknown'));
   if(window.kosTocInit) window.kosTocInit();

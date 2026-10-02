@@ -5,7 +5,7 @@
 
 본문은 실사이트 파일의 .legal 안 글을 그대로 옮긴다 — 약관 글자는 한 자도 바꾸지 않는다(아래 check 가 지킨다).
 바뀌는 것은 옷뿐: 카드 상자를 없애고 720px 한 단, 리포트 상세와 같은 목차(데스크톱 왼쪽 세로선 · 휴대폰 밑줄 칩).
-공고일·시행일 줄은 머리 띠의 제목 아래(.ph .meta)로, 머리말 두 문단은 본문 첫머리(조문 앞 .intro)로 간다.
+공고일·시행일 줄은 제목 아래 메타로, 머리말 두 문단은 제목 아래 글로 간다.
 """
 import re
 import sys
@@ -16,19 +16,19 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import comp_common as C  # noqa: E402
 
 PAGES = {
-    'terms':   dict(src='Terms.html',   out='preview/terms.html',   h1='이용약관', num=re.compile(r'^제(\d+)조\s*\((.*)\)\s*$')),
-    # 법정 이름은 띄어쓰기까지 법대로(개인정보 보호법 제30조 '개인정보 처리방침' · 카피 가이드 4-5)
-    'privacy': dict(src='Privacy.html', out='preview/privacy.html', h1='개인정보 처리방침', num=re.compile(r'^(\d+)\.\s*(.*)$')),
+    'terms':   dict(src='Terms.html',   out='preview/terms.html',   h1='이용약관',
+                    title='이용약관 — 디자인 시안 | KOSAI', num=re.compile(r'^제(\d+)조\s*\((.*)\)\s*$')),
+    'privacy': dict(src='Privacy.html', out='preview/privacy.html', h1='개인정보처리방침',
+                    title='개인정보처리방침 — 디자인 시안 | KOSAI', num=re.compile(r'^(\d+)\.\s*(.*)$')),
 }
 
 CSS = '''
 .sec-h h2{font-size:20px;line-height:28px} .sec{padding-bottom:56px} .sec:last-child{padding-bottom:24px}
-/* 머리말 — 본문 첫머리, 조문 앞 */
-.intro{max-width:720px;margin:0 0 56px}
+.intro{margin-top:28px}
 /* 맺음 주석 — 실사이트의 회색 상자. 여기서는 위 선 하나와 작은 회색 글자(각주) */
 .prose .note{margin-top:32px;padding-top:16px;border-top:1px solid var(--hair);font:400 13px/20px var(--font);color:var(--ink-62)}
 '''
-MOBILE_CSS = '''@media (max-width:820px){ .sec-h h2{font-size:18px;line-height:26px} .sec{padding-bottom:44px} .intro{margin:8px 0 36px} }'''
+MOBILE_CSS = '''@media (max-width:820px){ .sec-h h2{font-size:18px;line-height:26px} .sec{padding-bottom:44px} }'''
 
 
 def text_of(html):
@@ -68,19 +68,19 @@ def build(key, out_path=None):
         toc.append(f'<a href="#s{i:02d}"><span class="n">{i:02d}</span>{short}</a>')
         chips.append(f'<a href="#s{i:02d}">{i:02d} {short}</a>')
         body.append(f'<section class="sec" id="s{i:02d}"><div class="sec-h"><h2>{title}</h2></div><div class="prose">{inner}</div></section>')
-    html = (C.head(C.title(cfg['h1'])) + '\n<style>\n' + C.CSS + '\n' + C.PROSE_CSS + '\n' + C.TOC_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + C.TOC_MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
+    html = (C.head(cfg['title']) + '\n<style>\n' + C.CSS + '\n' + C.PROSE_CSS + '\n' + C.TOC_CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + C.TOC_MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'
             + C.nav('') + f'''
 <main class="wrap">
-  <header class="ph dz">
+  <header class="page-hero">
     <p class="crumb">정책</p>
     <h1>{cfg['h1']}</h1>
     <p class="sub">{lede}</p>
     <p class="meta">{upd}</p>
+    <div class="prose intro">{intro}</div>
   </header>
   <div class="body">
     <aside class="toc" id="toc">{''.join(toc)}</aside>
     <div class="content">
-      <div class="prose intro">{intro}</div>
       <div class="chips-mark" id="chipsMark"></div><div class="chips-bar" id="chipsBar"><nav class="chips" id="chips">{''.join(chips)}</nav></div>
       {''.join(body)}
     </div>

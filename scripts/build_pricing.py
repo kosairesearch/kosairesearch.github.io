@@ -60,7 +60,7 @@ NOTES = ['KOSAI의 모든 분석·리포트는 투자 참고용 정보이며, �
 
 CSS = '''
 /* 플랜 세 단 — 상자 없이 가는 선으로 가른다 */
-.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 40px;margin-top:56px;border-top:1px solid var(--line)}
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 40px;margin-top:44px;border-top:1px solid var(--line)}
 .plan{position:relative;padding:28px 0 36px;border-bottom:1px solid var(--hair)} .plan+.plan{border-left:1px solid var(--hair);padding-left:32px;margin-left:-8px}
 .plan-name{margin:0;font:600 12px/16px var(--font);letter-spacing:.06em;color:var(--ink-62)}
 .plan-price{margin:12px 0 0;font:700 36px/44px var(--font);letter-spacing:-.02em} .plan-price span{font:500 14px/20px var(--font);letter-spacing:0;color:var(--ink-62);margin-left:6px}
@@ -88,7 +88,7 @@ CSS = '''
 .dlg-box{width:100%;max-width:440px;background:var(--surface);border:1px solid var(--hair);border-radius:16px;box-shadow:0 24px 60px rgba(20,20,20,.18);padding:28px;box-sizing:border-box}
 .dlg h3{margin:0;font:700 20px/28px var(--font);letter-spacing:-.02em} #dlgB p{margin:12px 0 0;font:400 15px/24px var(--font);color:var(--ink-72)}
 .dlg-acts{display:flex;justify-content:flex-end;align-items:center;gap:20px;margin-top:26px}
-@media (max-width:820px){.plans{grid-template-columns:1fr;gap:0;margin-top:40px} .plan+.plan{border-left:0;padding-left:0;margin-left:0} .plan-badge.js{top:28px}
+@media (max-width:820px){.plans{grid-template-columns:1fr;gap:0;margin-top:28px} .plan+.plan{border-left:0;padding-left:0;margin-left:0} .plan-badge.js{top:28px}
   .cmp,.faq{padding-top:56px} .notes{margin-top:56px}}'''
 
 
@@ -117,10 +117,10 @@ def build(out_path=None):
     notes = ''.join(f'<li>{n}</li>' for n in NOTES)
     module = (ROOT / 'scripts/pricing_module.js').read_text(encoding='utf-8')
     body = f'''<main class="wrap">
-  <header class="ph dz">
+  <header class="page-hero">
     <p class="crumb">멤버십</p>
     <h1>데이터는 무료로, 해석은 구독으로</h1>
-    <p class="sub"><span class="s">주가와 실적 등 사실 데이터는 모든 이용자에게 무료로 공개합니다.</span> <span class="s">이를 바탕으로 작성한 분석과 전망, 리스크 진단은 구독 플랜에서 제공합니다.</span></p>
+    <p class="sub">주가와 실적 등 사실 데이터는 모든 이용자에게 무료로 공개합니다. 이를 바탕으로 작성한 분석과 전망, 리스크 진단은 구독 플랜에서 제공합니다.</p>
   </header>
   <div class="plans" id="plans">{''.join(plan_html(p) for p in PLANS)}</div>
   <section class="cmp" id="cmp"><div class="sec-h"><h2>리포트 구성과 제공 범위</h2></div>

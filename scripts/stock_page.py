@@ -239,16 +239,16 @@ def bar_chart(groups, w=520, h=220, pad_l=8, pad_r=8, top=28, bottom=28):
 
 # ── 옷 ───────────────────────────────────────────────────────────────────────
 PAGE_CSS = '''
-/* 머리 — 다른 페이지와 같은 어두운 무대(comp_common .ph.dz · 2026-10-02). 이름표 줄(시장 · 업종 · 종목코드)은 무대 이름표와 같은 600 13px,
-   종목명은 무대 제목(.ph h1)의 크기 · 굵기 · 자간 그대로, 시세와 관심종목 단추는 그 아래. 색은 무대 토큰이 바꾼다 */
-.eyebrow{font:600 13px/20px var(--font);color:var(--ink);display:flex;gap:10px;align-items:center}
-.eyebrow span{font-weight:500;color:var(--ink-62)}
-h1.name{margin:16px 0 0}
-.price{margin-top:24px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
-.price .p{font:600 40px/44px var(--font);letter-spacing:-.025em}
+/* 히어로 */
+.hero{padding:32px 0 36px}
+.eyebrow{font:500 13px/20px var(--font);color:var(--ink-62);display:flex;gap:10px;align-items:center}
+.eyebrow b{font-weight:500;color:var(--ink-72)}
+h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
+.price{margin-top:22px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.price .p{font:600 40px/44px var(--font);letter-spacing:-.02em}
 .price .c{font:600 17px/24px var(--font)}
 .price .d{font:400 13px/20px var(--font);color:var(--ink-62)}
-.actions{margin-top:32px;display:flex;gap:10px;align-items:center}
+.actions{margin-top:26px;display:flex;gap:10px;align-items:center}
 /* 관심종목 단추 — 더하기(추가) → 체크(추가됨). 목록 페이지의 +/✓ 와 같은 기호. 켜면 선 테두리 알약 */
 .btn .wb-on{display:none} .btn.on .wb-add{display:none} .btn.on .wb-on{display:block;stroke-width:2.4}
 .btn.on{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)} .btn.on:hover{box-shadow:inset 0 0 0 1px var(--ink)}
@@ -260,7 +260,7 @@ h1.name{margin:16px 0 0}
 .lg{display:flex;align-items:center;gap:6px;font:400 12px/16px var(--font);color:var(--ink-62);margin-top:8px}
 .lg i{width:10px;height:10px;border-radius:2px;display:inline-block;margin-left:10px} .lg i:first-child{margin-left:0} .l-rev{background:var(--ink)} .l-op{background:var(--ink-30)}
 /* 지표 스트립 */
-.stats{margin-top:40px;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:22px 0;display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:16px}
+.stats{border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:22px 0;display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:16px}
 .stats-note{margin:10px 0 0;font:400 12px/16px var(--font);color:var(--ink-62)}
 .st-k{font:500 12px/16px var(--font);color:var(--ink-62)} .st-v{margin-top:6px;font:600 19px/24px var(--font);letter-spacing:-.01em;white-space:nowrap} .st-s{margin-top:4px;font:400 11px/14px var(--font);color:var(--ink-62)}
 /* 본문 */
@@ -270,7 +270,7 @@ h1.name{margin:16px 0 0}
 .note{margin:16px 0 0;font:400 12px/18px var(--font);color:var(--ink-62)}
 /* 초록(요약) — 상자 없이 제목·요지·핵심 목록 */
 .abstract{padding:0}
-.ab-title{margin:4px 0 0;font:600 30px/40px var(--font);letter-spacing:-.03em;text-wrap:balance}
+.ab-title{margin:4px 0 0;font:700 30px/40px var(--font);letter-spacing:-.02em;text-wrap:balance}
 .ab-lead{margin:20px 0 0;font:400 18px/30px var(--font);color:var(--ink-72)}
 .kp{list-style:none;margin:26px 0 0;padding:22px 0 0;border-top:1px solid var(--hair);display:grid;gap:12px}
 .kp li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:10px;align-items:baseline} .kp .n{font:600 12px/24px var(--font);color:var(--ink-62)} .kp p{margin:0;font:400 15px/24px var(--font)}
@@ -302,12 +302,13 @@ h1.name{margin:16px 0 0}
 .rdate{max-width:880px;margin:-40px 0 0;font:500 13px/20px var(--font);color:var(--ink-62)}
 .disc{max-width:880px;margin:24px 0 0;padding:18px 0 0;border-top:1px solid var(--hair);font:400 12px/18px var(--font);color:var(--ink-62)}
 /* 리포트가 아직 없는 종목 */
-.pending{max-width:720px;padding:48px 0 24px} .pending h2{margin:0;font:600 24px/32px var(--font);letter-spacing:-.025em} .pending p{margin:14px 0 0;font:400 16px/27px var(--font);color:var(--ink-72)}
+.pending{max-width:720px;padding:48px 0 24px} .pending h2{margin:0;font:700 24px/32px var(--font);letter-spacing:-.02em} .pending p{margin:14px 0 0;font:400 16px/27px var(--font);color:var(--ink-72)}
 .pending .srcs{margin-top:28px}
 /* 태블릿·휴대폰 */
 @media (max-width:1100px){.stats{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 16px} .body{grid-template-columns:180px minmax(0,1fr);gap:40px} .vstrip{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:820px){
-  h1.name{margin-top:12px} .price{margin-top:18px} .price .p{font-size:32px;line-height:36px} .actions{margin-top:24px} .stats{margin-top:28px}
+  .hero{padding:20px 0 26px}
+  h1.name{font-size:32px;line-height:38px;margin-top:8px} .price{margin-top:16px} .price .p{font-size:32px;line-height:36px}
   .stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px;padding:18px 0} .st-v{font-size:17px}
   .ab-title{font-size:24px;line-height:32px} .ab-lead{font-size:16px;line-height:26px}
   .tiles{grid-template-columns:1fr} .vstrip{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 10px;padding:16px 0}
@@ -526,7 +527,7 @@ def render(tk, D, inline=True, assets=None, index=False, base=SITE, dir_path='st
         head_title = f'{name}({tk}) 종목 — 리포트 준비 중 | KOSAI'
         desc = f'{name}({tk}) 시세·시가총액·PER·PBR. AI 분석 리포트는 첫 정기보고서가 공시된 뒤 작성됩니다.'
         main_body = f'''<div class="pending"><h2>이 종목의 리포트는 준비 중입니다</h2>
-    <p>새로 상장된 종목은 첫 사업보고서나 분기보고서가 공시된 뒤에 리포트를 작성합니다. 시세와 시가총액, PER, PBR 같은 지표는 거래일마다 저녁에 갱신합니다.</p>
+    <p>새로 상장된 종목은 첫 사업·분기보고서가 공시된 뒤에 리포트를 작성합니다. 시세·시가총액·PER·PBR 같은 지표는 매 거래일 저녁에 갱신됩니다.</p>
     <ol class="srcs">{''.join(f'<li><a href="{esc(u)}" target="_blank" rel="noopener">{esc(t)}</a></li>' for t, u in PRIMARY_SRC)}</ol>
     <p class="disc">{DISC}</p></div>'''
 
@@ -551,7 +552,7 @@ def render(tk, D, inline=True, assets=None, index=False, base=SITE, dir_path='st
 <body>
 {C.nav('리포트')}
 <main class="wrap">
-  <header class="hero ph dz">
+  <header class="hero">
     <div>
       <div class="eyebrow"><b>{esc(market)}</b><span>{esc(sector)}</span><span>{tk}</span></div>
       <h1 class="name">{esc(name)}</h1>
