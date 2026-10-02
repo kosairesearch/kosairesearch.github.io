@@ -713,14 +713,18 @@ print("\n⑨-b2 수집이 '통째로' 터진 경우가 제일 조용하면 안 �
 import io as _io, contextlib as _ctx
 import calendar_data as _cd, news_data as _nd
 _boom = lambda *a, **k: (_ for _ in ()).throw(RuntimeError("사이트 모양이 바뀌었다"))
-_cd_save, _nd_save = _cd.collect, _nd.collect
+_cd_save, _nd_save, _st_save = _cd.collect, _nd.collect, G.stale_data
 _cd.collect, _nd.collect = _boom, _boom
+# 날짜 대조는 이 절이 보는 것이 아니라 끈다(대조 자체는 ⑨-5 가 본다). 켜 두면 실제 시세 파일과
+# 실제 시각을 견주므로, 거래일 저녁에 시세가 그날 종가로 갱신된 뒤 돌리면 직전 거래일과 하루가
+# 어긋나 수집 앞에서 멈추고 아래 다섯 항목이 줄줄이 실패했다(2026-10-02 저녁).
+G.stale_data = lambda *a, **k: None
 try:
     _out = _io.StringIO()
     with _ctx.redirect_stderr(_io.StringIO()), _ctx.redirect_stdout(_out):
         _fx, _fatal = G.gather(skip_news=False)
 finally:
-    _cd.collect, _nd.collect = _cd_save, _nd_save
+    _cd.collect, _nd.collect, G.stale_data = _cd_save, _nd_save, _st_save
 _warns = [l for l in _out.getvalue().split("\n") if "::warning" in l]
 ok("통째로 터져도 발행을 막지는 않는다", _fatal is None, str(_fatal))
 ok("일정이 통째로 터지면 워크플로에 경고가 뜬다",
