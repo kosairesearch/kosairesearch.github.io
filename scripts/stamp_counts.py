@@ -26,6 +26,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 INDEX = ROOT / "data" / "reports-index.js"
 SECTORS = ROOT / "data" / "sectors.js"
+STOCKS = ROOT / "data" / "stocks.js"
 PAGE = ROOT / "index.html"
 
 # <b id="lpRepN" data-i18n-skip>2,684</b>
@@ -43,11 +44,22 @@ def stock_count() -> int:
     return int(n)
 
 
+def _payload(path):
+    text = path.read_text(encoding="utf-8")
+    return json.loads(text[text.index("{"):text.rindex("}") + 1])
+
+
 def sector_count() -> int:
-    """업종 분석이 실제로 있는 업종 수. 업종 페이지가 그리는 것과 같은 자료다."""
-    text = SECTORS.read_text(encoding="utf-8")
-    payload = json.loads(text[text.index("{"):].rstrip().rstrip(";"))
-    n = len(payload.get("sectors") or {})
+    """업종 분석이 있는 대표 업종 수. 랜딩 새 디자인(concepts/landing.py)과 업종 페이지 상단
+    (build_industry_comp.py)도 같은 규칙으로 센다 — 세 곳이 같은 수여야 한다.
+
+    분석 글(data/sectors.js)을 그대로 세면 테마 둘('로봇' · '인공지능(AI)' — 여러 업종에 걸친
+    묶음이라 대표 업종이 아니다)이 업종으로 들어간다. 그래서 종목의 대표 업종(data/stocks.js 의
+    sector) 가운데 분석 글이 있는 것만 센다 — '기타' 는 분석 글이 없어 빠진다. 2026-10-02 에
+    30 → 28(사장 "기타 포함하면 29개고 포함 안 하면 28개 맞아? 테마는 2개인데")."""
+    sectors = _payload(SECTORS).get("sectors") or {}
+    reps = {s.get("sector") for s in (_payload(STOCKS).get("stocks") or []) if s.get("sector")}
+    n = len(reps.intersection(sectors))
     if not n:
         raise SystemExit("stamp_counts: 업종 수를 읽지 못했습니다.")
     return n
