@@ -9,6 +9,9 @@ build_*_comp.py 가 같은 것을 쓴다. 한 곳을 고치면 모든 페이지�
     옛 모듈이 쓰는 토큰 별칭(--fg-1 …). 페이지는 emit() 으로 내야 finish() 가 경로를 바꾼다.
     실사이트로 옮기는 날은 'live' 모드를 하나 더 두면 된다(절대 경로 · 띠 없음).
 """
+import json
+import re
+from pathlib import Path
 
 
 IND_JS = '''
@@ -49,7 +52,8 @@ window.kosInd=function(box,axis,sel){
 MODE = 'preview'   # set_mode() 로 바꾼다
 
 # 스테이징 머리: demo-backend 는 반드시 <head> 의 첫 module 이어야 한다(__KOSDEMO 를 먼저 세워야 paywall·subscription-api·checkout 이 모의로 돈다).
-STAGING_HEAD = '''<script type="module" src="demo-backend.js"></script>
+STAGING_HEAD = '''<script src="i18n.js"></script>
+<script type="module" src="demo-backend.js"></script>
 <script src="analytics.js"></script>
 '''
 # 글꼴 — Pretendard 1.3.9 공식 분할판(fonts/pretendard-subset.css · scripts/build_font_subset.py). 글자 묶음마다 파일이 나뉘어
@@ -115,7 +119,7 @@ a{color:inherit;text-decoration:none}
 .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--hair);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
 .nav-in{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;position:relative}
 .brand img{height:14px;display:block} .brand .dk{display:none} :root[data-theme="dark"] .brand .lt{display:none} :root[data-theme="dark"] .brand .dk{display:block}
-.links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:34px}   /* 28 → 34(사장 2026-10-02) — 랜딩 머리와 같은 값이어야 페이지를 옮길 때 메뉴가 움직이지 않는다 */
+.links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:34px;width:max-content;white-space:nowrap}   /* 28 → 34(사장 2026-10-02) — 랜딩 머리와 같은 값이어야 페이지를 옮길 때 메뉴가 움직이지 않는다 */
 .links a{font:500 14px/1 var(--font);color:var(--ink-72);transition:color .12s} .links a:hover,.links a.on{color:var(--ink)} .links a.on{font-weight:600}
 .right{display:flex;align-items:center;gap:6px} .login{font:600 13px/1 var(--font);color:var(--ink-72);padding:8px 10px} .login:hover{color:var(--ink)}
 .ib{width:38px;height:38px;border:0;background:transparent;color:var(--ink-72);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;border-radius:10px} .ib:hover{color:var(--ink)} .ib svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
@@ -274,6 +278,69 @@ def links(html):
     return html
 
 
+# ── 영어(한국어 ⇄ 영어) — 2026-10-03 사장 "스테이징 사이트에 언어 설정 넣어주고 다 제대로 맞게 번역해" ──────────────
+# 9월 26일 새 디자인으로 옮기며 실사이트의 번역(KOSi18n)이 빠져 설정 화면의 '언어' 줄까지 사라졌다. 엔진은 staging/i18n.js,
+# 사전은 scripts/i18n/*.json(정규화한 한국어 → 영어 · 키의 '#' 은 아무 숫자). 페이지마다 그 페이지 글과 그 페이지가 부르는 모듈에
+# 나오는 문구만 골라 맨 끝에 JSON 으로 넣는다 — 한국어로 보는 사람은 읽지 않는다. common.json 은 자료에서 오는 말(업종 · 시장 등)이라
+# 늘 넣는다. 빠진 번역은 staging/tests/english.test.mjs 가 영어 화면에서 잡는다.
+I18N_DIR = Path(__file__).resolve().parent / 'i18n'
+_I18N = {}
+
+
+def _i18n_norm(s):
+    return re.sub(r'\s+', ' ', s or '').strip()
+
+
+def i18n_table():
+    """{'common': {...}, 'all': {...}, 'always': {페이지: {...}}} — 사전 파일을 한 번 읽어 둔다.
+    파일에 "//always": "stock.html" 처럼 페이지를 적으면 그 파일의 문구는 그 페이지에 늘 싣는다 — 페이지 글이 아니라
+    자료에서 오는 문구(리포트의 밸류에이션 기준 줄 등)는 페이지를 훑어서는 찾을 수 없다."""
+    if not _I18N:
+        allp, common, always = {}, {}, {}
+        for p in sorted(I18N_DIR.glob('*.json')):
+            raw = json.loads(p.read_text(encoding='utf-8'))
+            d = {_i18n_norm(k): v for k, v in raw.items() if not k.startswith('//')}
+            allp.update(d)
+            if p.stem == 'common':
+                common.update(d)
+            for pg in str(raw.get('//always', '')).split(','):
+                if pg.strip():
+                    always.setdefault(pg.strip(), set()).update(d)
+        _I18N['all'], _I18N['common'], _I18N['always'] = allp, common, always
+    return _I18N
+
+
+def _i18n_corpus(html, page):
+    """이 페이지에서 화면에 나올 수 있는 글 — 페이지 HTML(글 · 속성 · 인라인 스크립트)과 그 페이지가 부르는 스테이징 모듈."""
+    import html as _h
+    # 태그를 띄어쓰기로 바꾼 글과 그냥 지운 글 둘 다 — '<a>문의하기</a>로' 처럼 안쪽 요소에 붙은 말은 덩어리째 찾는다(<br> 은 띄어쓰기)
+    srcs = [html, _h.unescape(re.sub(r'<[^>]+>', ' ', html)), _h.unescape(re.sub(r'<[^>]+>', '', re.sub(r'<br\b[^>]*>', ' ', html)))]
+    stg = Path(__file__).resolve().parent.parent / 'staging'
+    for m in set(re.findall(r'src="([\w.-]+\.js)', html)) | set(PAGE_SCRIPTS.get(page, ['auth-state.js'])) | {'settings-panel.js', 'consent.js', 'auth-util.js', 'social-login.js'}:
+        f = stg / m
+        if f.exists():
+            srcs.append(f.read_text(encoding='utf-8'))
+    return _i18n_norm(' '.join(srcs))
+
+
+def i18n_block(html, page):
+    tb = i18n_table()
+    corpus = _i18n_corpus(html, page)
+    pick = dict(tb['common'])
+    pick.update({k: tb['all'][k] for k in tb['always'].get(page, ())})
+    for k, v in tb['all'].items():
+        if k in pick:
+            continue
+        if '#' in k or '@' in k:   # 숫자(#) · 날짜(@) 자리 — 나머지 조각이 모두 페이지에 있으면
+            parts = [x.strip() for x in re.split(r'[#@]', k) if x.strip()]
+            if parts and all(x in corpus for x in parts):
+                pick[k] = v
+        elif k in corpus:
+            pick[k] = v
+    body = json.dumps(dict(sorted(pick.items())), ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+    return f'<script type="application/json" data-kos-i18n>{body}</script>\n<script>window.KOSi18n&&KOSi18n.load()</script>\n'
+
+
 def finish(html, page):
     """페이지 하나를 내기 직전에. staging: 절대 경로를 상대로, 시안 주소를 스테이징 이름으로, 꼬리 모듈을 붙인다."""
     if MODE != 'staging':
@@ -283,7 +350,8 @@ def finish(html, page):
     for a, b in (('"/data/', '"../data/'), ("'/data/", "'../data/"), ('"/assets/', '"../assets/'), ("'/assets/", "'../assets/"),
                  ('url("/fonts/', 'url("../fonts/'), ('href="/fonts/', 'href="../fonts/'), ('"/stock.html', '"stock.html'), ("'/stock.html", "'stock.html")):
         html = html.replace(a, b)
-    tail = ''.join(f'<script type="module" src="{m}"></script>\n' for m in PAGE_SCRIPTS.get(page, ['auth-state.js']))
+    tail = i18n_block(html, page)   # 영어 사전 — 이 페이지에 나오는 문구만(staging/i18n.js 가 영어일 때만 읽는다)
+    tail += ''.join(f'<script type="module" src="{m}"></script>\n' for m in PAGE_SCRIPTS.get(page, ['auth-state.js']))
     tail += '<script src="lenis.js"></script>\n<script src="smooth-scroll.js"></script>\n'  # 휠 스크롤을 부드럽게 — 실사이트와 같은 방식, 스테이징 사본은 0.6초
     assert html.count('</body>') == 1, page
     return html.replace('</body>', tail + '</body>')

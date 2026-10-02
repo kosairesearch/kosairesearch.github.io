@@ -66,6 +66,8 @@ JS = r'''(function(){
   var STOCKS=(window.KOS_LIVE_DATA&&KOS_LIVE_DATA.stocks)||[], SECTORS=(window.KOS_SECTORS&&KOS_SECTORS.sectors)||{}, RREP=(window.KOS_REPORTS&&KOS_REPORTS.reports)||{};
   var dd=(window.KOS_LIVE_DATA&&KOS_LIVE_DATA.dataDate)||''; var dateF=dd?dd.slice(0,4)+'-'+dd.slice(4,6)+'-'+dd.slice(6,8):'';
   function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+  /* 영어 화면(staging/i18n.js) — 업종 분석 글 · 리포트 제목은 자료의 영어 쪽, 문서 제목은 영어 순서로. 한국어 문구는 사전이 바꾼다. */
+  var I=window.KOSi18n, EN=function(){return !!(I&&I.lang==='en')}, PK=function(o){return I?I.pick(o):(o&&(o.ko||o.en))||''}, TT=function(s){return I?I.t(s):s};
   function won(n){return n==null?'—':Number(n).toLocaleString('ko-KR')+'원'}
   function chg(c){c=c||0;return (c>0?'▲ ':c<0?'▼ ':'')+Math.abs(c).toFixed(2)+'%'}
   function dir(c){return c>0?'up':c<0?'down':'flat'}
@@ -74,10 +76,10 @@ JS = r'''(function(){
   function host(u){return String(u).replace(/^https?:\/\//,'').replace(/^www\./,'').split('/')[0]}
   /* 문단 나누기 — industry.html 과 같은 규칙(빈 줄로만 나누고, 긴 덩어리는 문장 경계에서 280자 안팎으로) */
   function sents(t){var out=[],last=0,re=/[.!?](?=\s)/g,m;while((m=re.exec(t))){out.push(t.slice(last,m.index+1));last=m.index+1}if(last<t.length)out.push(t.slice(last));return out.map(function(s){return s.replace(/^\s+/,'')}).filter(Boolean)}
-  function chunk(t){t=t.trim();if(t.length<=320)return[t];var ss=sents(t);if(ss.length<2)return[t];var n=Math.max(2,Math.round(t.length/280)),target=t.length/n,out=[],cur='';
+  function chunk(t){t=t.trim();var k=EN()?1.8:1;if(t.length<=320*k)return[t];var ss=sents(t);if(ss.length<2)return[t];var n=Math.max(2,Math.round(t.length/(280*k))),target=t.length/n,out=[],cur='';
     ss.forEach(function(s){if(cur&&cur.length+s.length>target*1.35){out.push(cur);cur=s}else cur=cur?cur+' '+s:s});if(cur)out.push(cur);
-    for(var i=out.length-1;i>0;i--)if(out[i].length<100){out[i-1]+=' '+out[i];out.splice(i,1)}if(out.length>1&&out[0].length<100){out[1]=out[0]+' '+out[1];out.shift()}return out}
-  function paras(o){var t=o&&(o.ko||o.en)||'';if(!t)return '';var out=[];String(t).split(/\n\n+/).forEach(function(b){out=out.concat(chunk(b.replace(/\s*\n\s*/g,' ')))});return '<div class="prose">'+out.map(function(x){return '<p>'+esc(x)+'</p>'}).join('')+'</div>'}
+    for(var i=out.length-1;i>0;i--)if(out[i].length<100*k){out[i-1]+=' '+out[i];out.splice(i,1)}if(out.length>1&&out[0].length<100*k){out[1]=out[0]+' '+out[1];out.shift()}return out}
+  function paras(o){var t=PK(o);if(!t)return '';var out=[];String(t).split(/\n\n+/).forEach(function(b){out=out.concat(chunk(b.replace(/\s*\n\s*/g,' ')))});return '<div class="prose">'+out.map(function(x){return '<p>'+esc(x)+'</p>'}).join('')+'</div>'}
   /* 집계 — industry.html 과 같은 규칙: 대표 업종(sector) 하나로 나눠 비중 합이 100%, 테마(로봇·AI)는 categories 로 따로 */
   function scats(s){return (s.categories&&s.categories.length)?s.categories:[s.sector||'기타']}
   function mkRow(sec,lst,total){var mc=0,wc=0;lst.forEach(function(s){mc+=(s.mcap||0);wc+=(s.change||0)*(s.mcap||0)});lst=lst.slice().sort(function(a,b){return (b.mcap||0)-(a.mcap||0)});return {sec:sec,n:lst.length,mc:mc,w:total?mc/total*100:0,chg:mc?wc/mc:0,list:lst}}
@@ -99,25 +101,25 @@ JS = r'''(function(){
       +'<section class="list"><div class="sec-h"><h2>업종</h2></div>'+sectorTable(a.rows,true)+'<p class="note">시가총액 순 · 시장 비중은 코스피·코스닥 전체 시가총액 대비 · 평균 등락률은 시가총액 가중'+(dateF?' · '+dateF+' 종가 기준':'')+'</p></section>'
       +(a.themeRows.length?'<section class="list"><div class="sec-h"><h2>테마</h2></div>'+sectorTable(a.themeRows,false)+'<p class="note">테마는 여러 업종에 걸친 묶음이라 시장 비중을 따로 두지 않습니다.</p></section>':'')}
   function renderDetail(sec){var a=agg(),row=null;a.rows.forEach(function(r){if(r.sec===sec)row=r});var isTheme=!row;if(!row&&a.byCat[sec])row=mkRow(sec,a.byCat[sec],a.total);if(!row){renderList();return}
-    var an=SECTORS[sec]||null;document.title=sec+' 업종 분석'+TSUF;
+    var an=SECTORS[sec]||null;document.title=(EN()?TT(sec)+' — '+TT('업종 분석'):sec+' 업종 분석')+TSUF;
     var stats='<section class="stats"><div><div class="st-k">시가총액 합계</div><div class="st-v">'+mcap(row.mc)+'</div></div>'+(isTheme?'':'<div><div class="st-k">시장 비중</div><div class="st-v">'+row.w.toFixed(1)+'%</div></div>')
       +'<div><div class="st-k">종목 수</div><div class="st-v">'+row.n+'개</div></div><div><div class="st-k">평균 등락률</div><div class="st-v '+dir(row.chg)+'">'+chg(row.chg)+'</div></div></section>'
       +'<p class="stats-note">평균 등락률은 시가총액 가중'+(isTheme?' · 테마는 여러 업종에 걸쳐 있어 시장 비중을 두지 않습니다':'')+(dateF?' · '+dateF+' 종가 기준':'')+'</p>';
     var secs=[]; // {title, html, wide}
     if(an){secs.push({t:'업종 개요',h:paras(an.overview)});secs.push({t:'산업 구조·가치사슬',h:paras(an.structure)});secs.push({t:'최근 동향',h:paras(an.trends)});secs.push({t:'향후 전망',h:paras(an.outlook)});
-      var risks=(an.risks||[]).map(function(r){return '<div class="rk"><h4>'+esc(r.title&&r.title.ko)+'</h4><p>'+esc(r.body&&r.body.ko)+'</p></div>'}).join('');
+      var risks=(an.risks||[]).map(function(r){return '<div class="rk"><h4>'+esc(PK(r.title))+'</h4><p>'+esc(PK(r.body))+'</p></div>'}).join('');
       var d=fmtDay(an.generatedAt||(window.KOS_SECTORS&&KOS_SECTORS.lastUpdated)),src=an.sources||[];
       var tail=(d?'<p class="stamp">'+d+' 작성 · 업종 내 상장사 자료와 웹 검색 참고 · 본문 수치는 작성 시점 기준이며, 위 지표는 '+(dateF||'최근')+' 종가입니다.</p>':'')
         +(src.length?'<details class="srcmore"><summary>참고 자료 '+src.length+'건 더 보기</summary><ol class="srcs">'+src.map(function(u){return '<li><a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(host(u))+'</a></li>'}).join('')+'</ol></details>':'');
       if(risks)secs.push({t:'리스크 요인',h:'<div class="rks">'+risks+'</div>'+tail});else if(tail)secs[secs.length-1].h+=tail}
     else if(sec==='기타'){secs.push({t:'분류 안내',h:'<div class="prose"><p>여러 업종에 걸쳐 있거나 기존 분류에 속하지 않는 기업을 모은 구간입니다. 사업 내용이 서로 달라 하나의 업황으로 묶이지 않으므로 AI 업종 분석을 제공하지 않습니다.</p><p>각 기업의 사업 구조와 실적은 아래 종목의 개별 리포트에서 확인하실 수 있습니다.</p></div>'})}
     else{secs.push({t:'업종 분석',h:'<p class="ainote">AI 업종 분석은 분기별 갱신 시 반영됩니다.</p>'})}
-    var rows=row.list.slice(0,20).map(function(s,i){var c=s.change||0,r=RREP[s.ticker];return '<tr data-tk="'+s.ticker+'"><td><span class="m-rank">'+(i+1)+'</span><a class="m-name" href="/stock.html?ticker='+s.ticker+'">'+esc(s.name)+'</a><div class="m-meta">'+s.ticker+' · '+esc(s.market)+'</div></td><td>'+won(s.price)+'</td><td class="'+dir(c)+'">'+chg(c)+'</td><td>'+mcap(s.mcap)+'</td><td class="rt">'+esc(r&&r.title&&r.title.ko||'')+'</td></tr>'}).join('');
+    var rows=row.list.slice(0,20).map(function(s,i){var c=s.change||0,r=RREP[s.ticker];return '<tr data-tk="'+s.ticker+'"><td><span class="m-rank">'+(i+1)+'</span><a class="m-name" href="/stock.html?ticker='+s.ticker+'">'+esc(s.name)+'</a><div class="m-meta">'+s.ticker+' · '+esc(s.market)+'</div></td><td>'+won(s.price)+'</td><td class="'+dir(c)+'">'+chg(c)+'</td><td>'+mcap(s.mcap)+'</td><td class="rt">'+esc(r&&r.title&&PK(r.title)||'')+'</td></tr>'}).join('');
     secs.push({t:(isTheme?'테마':'업종')+' 내 주요 종목',wide:true,h:'<div class="tbl-wrap"><table class="tbl stocks"><thead><tr><th>종목</th><th>현재가</th><th>등락률</th><th>시가총액</th><th class="rt">리포트</th></tr></thead><tbody>'+rows+'</tbody></table></div><p class="note">시가총액 순 상위 '+Math.min(20,row.list.length)+'종목'+(row.list.length>20?' (전체 '+row.list.length+'종목)':'')+(dateF?' · '+dateF+' 종가 기준':'')+'</p>'});
     var toc=secs.map(function(s,i){var n=String(i+1).padStart(2,'0');return '<a href="#s'+n+'"><span class="n">'+n+'</span>'+esc(s.t)+'</a>'}).join('');
     var chips=secs.map(function(s,i){var n=String(i+1).padStart(2,'0');return '<a href="#s'+n+'">'+n+' '+esc(s.t)+'</a>'}).join('');
     var body=secs.map(function(s,i){var n=String(i+1).padStart(2,'0');return '<section class="sec'+(s.wide?' wide':'')+'" id="s'+n+'"><div class="sec-h"><span class="num">'+n+'</span><h2>'+esc(s.t)+'</h2></div>'+s.h+'</section>'}).join('');
-    app.innerHTML='<header class="hero"><p class="crumb"><a href="/preview/industry.html">업종 분석</a><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg><span>'+esc(sec)+'</span></p><h1>'+esc(sec)+'</h1>'+(an&&an.lead?'<p class="lead">'+esc(an.lead.ko||an.lead.en)+'</p>':'')+'</header>'+stats
+    app.innerHTML='<header class="hero"><p class="crumb"><a href="/preview/industry.html">업종 분석</a><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg><span>'+esc(sec)+'</span></p><h1>'+esc(sec)+'</h1>'+(an&&an.lead?'<p class="lead">'+esc(PK(an.lead))+'</p>':'')+'</header>'+stats
       +'<div class="body"><aside class="toc" id="toc">'+toc+'</aside><div class="content"><div class="chips-mark" id="chipsMark"></div><div class="chips-bar" id="chipsBar"><nav class="chips" id="chips">'+chips+'</nav></div>'+body+'</div></div>';
   }
   app.addEventListener('click',function(e){if(e.target.closest('a'))return;var tr=e.target.closest('tr[data-sec]');if(tr){location.href=secLink(tr.dataset.sec);return}var tk=e.target.closest('tr[data-tk]');if(tk)location.href='/stock.html?ticker='+tk.dataset.tk});

@@ -1,8 +1,9 @@
 """랜딩 그림 — 실제 리포트 화면(리포트 절)과 실제 업종 분석 화면(업종 절)을 사용자가 보는 그대로 찍는다.
 
-    python3 scripts/concepts/landing_art.py           # 둘 다
-    python3 scripts/concepts/landing_art.py report    # → preview/concepts/landing/img/report-{desk,m1,m2}-{light,dark}.webp
-    python3 scripts/concepts/landing_art.py sector    # → preview/concepts/landing/img/sector-{desk,m1,m2}-{light,dark}.webp
+    python3 scripts/concepts/landing_art.py           # 둘 다(한국어 · 영어)
+    python3 scripts/concepts/landing_art.py report    # → preview/concepts/landing/img/report-{desk,m1,m2}-{light,dark}[-en].webp
+    python3 scripts/concepts/landing_art.py sector    # → preview/concepts/landing/img/sector-{desk,m1,m2}-{light,dark}[-en].webp
+    python3 scripts/concepts/landing_art.py en        # 영어판만(한국어 그림은 그대로 둔다) — ko 도 같은 식
 
   · 사장 2026-10-01: 편집 디자인으로 다시 짠 지면은 "실제 리포트 내용이랑 다르고 내용이 적어 부실해 보인다", 이어서 "이미지 박스를
     없애고 리포트만". 그래서 제품이 그리는 화면(stock_page.render)을 그대로 찍고, 랜딩에서는 회색 그림 자리 없이 화면만 둔다
@@ -22,6 +23,10 @@
     줄은 통째로 빼고 그 아래는 바탕색으로 덮는다(LAST_LINE). 휴대폰 화면은 틀에 꼭 맞는 크기라 끊을 자리(다음 절)도 자르지 않고 덮는다.
     왼쪽 휴대폰 화면은 오른쪽보다 화면 폭의 25%만큼 길게 찍는다 — 랜딩에서 오른쪽 화면이 그만큼 내려서고 두 틀의 아래 끝이 같아서,
     같은 길이로 찍었을 때는 왼쪽 틀 아래가 비고 그 위에서 글줄이 잘려 보였다.
+  · 영어판(…-en.webp) — 스테이징 랜딩을 영어로 보는 사람에게는 영어 화면을 보여 준다(2026-10-03 사장 "다 제대로 맞게 번역해").
+    한국어 그림과 같은 종목 · 같은 자리 · 같은 자를 범위로, 스테이징의 리포트 화면과 업종 화면(영어 · kos-lang=en)을 찍는다.
+    스테이징 띠와 목차의 자물쇠(로그인 전 잠긴 절 표시)는 가리고 찍는다 — 한국어 그림(시안 화면)에는 둘 다 없다. 찍는 절(01 · 03 ·
+    05)은 모두 무료 구간이라 본문이 그대로 보인다. 리포트나 업종 글을 다시 찍을 때 한국어와 함께 찍힌다.
   · Playwright(크로미움)가 있어야 돈다. 랜딩 빌드(landing.py)는 그림 파일만 쓴다.
 """
 import functools
@@ -62,6 +67,7 @@ SECTOR_SHOTS = {
     "m2": (390, 844, 3, "#s05", 112, (0, NAV, 390, 700), 900, "05", ("#s06", 8)),
 }
 HIDE = ".stats,.stats-note{display:none!important}"   # 업종 화면의 매일 바뀌는 수치 줄
+STAGING_HIDE = ".kos-staging-bar,.toc .lk,.chips .lk{display:none!important}"   # 영어판(스테이징 화면) — 스테이징 띠와 목차 자물쇠는 시안 화면에 없다
 
 
 # 끊는 선(y)에 글줄이 걸쳐 있으면 그 줄 위로 올린다 — 올린 자리에 또 걸치면 거듭. 그 위 줄이 선에 6px 안으로 붙어 있어도 뺀다(가장자리에
@@ -82,15 +88,17 @@ class Quiet(SimpleHTTPRequestHandler):
         pass
 
 
-def take(br, url, shots, prefix, route=None, css=None):
-    """shots 대로 라이트 · 다크를 찍어 prefix-{이름}-{테마}.webp 로 저장한다. 목차 표시가 맞지 않으면 멈춘다"""
+def take(br, url, shots, prefix, route=None, css=None, lang="ko"):
+    """shots 대로 라이트 · 다크를 찍어 prefix-{이름}-{테마}.webp 로 저장한다(영어는 …-en.webp). 목차 표시가 맞지 않으면 멈춘다"""
     from PIL import Image, ImageDraw
     for name, (w, h, dpr, sel, off, box, out_w, want, cut) in shots.items():
         for theme in ("light", "dark"):
             phone = w < 500
             ctx = br.new_context(viewport={"width": w, "height": h}, device_scale_factor=dpr, reduced_motion="reduce",
                                  is_mobile=phone, has_touch=phone)
-            ctx.add_init_script(f"try{{localStorage.setItem('kos-theme','{theme}')}}catch(e){{}}")
+            ctx.add_init_script(f"try{{localStorage.setItem('kos-theme','{theme}');localStorage.setItem('kos-lang','{lang}')}}catch(e){{}}")
+            if lang != "ko":   # 스테이징 화면 — 로그인 모듈이 바깥(파이어베이스)에서 받는 것은 막는다(로그인 전 화면 그대로)
+                ctx.route(re.compile(r"^https?://(?!127\.0\.0\.1)"), lambda r: r.abort())
             if route:
                 ctx.route(*route)
             pg = ctx.new_page()
@@ -121,13 +129,13 @@ def take(br, url, shots, prefix, route=None, css=None):
                 bg = max(im.crop((0, fy - 1, im.width, fy)).getcolors(im.width))[1]
                 ImageDraw.Draw(im).rectangle((0, fy, im.width, im.height), fill=bg)
             im = im.resize((out_w, round(im.height * out_w / im.width)), Image.LANCZOS)
-            path = os.path.join(OUT, f"{prefix}-{name}-{theme}.webp")
+            path = os.path.join(OUT, f"{prefix}-{name}-{theme}{'' if lang == 'ko' else '-' + lang}.webp")
             im.save(path, "WEBP", quality=84, method=6)
             print(f"{os.path.relpath(path, ROOT)} {im.size[0]}×{im.size[1]} {os.path.getsize(path) // 1024}KB"
                   + (f" · 아래 {round(y1 - stop)}px 덮음" if fy < round((y1 - y0) * dpr) else ""))
 
 
-def report(br, base):
+def report(br, base, langs):
     d = json.load(open(os.path.join(ROOT, "data", "reports_v2", f"{TK}.json"), encoding="utf-8"))
     bad = CR.defects(d) or CR.check(d)
     if bad:
@@ -135,11 +143,14 @@ def report(br, base):
     page, tier = SP.render(TK, SP.load_data(), inline=True, preview=True)
     if tier != "v2":
         sys.exit(f"{TK} 리포트가 새 형식이 아니다: {tier}")
-    take(br, f"{base}/__stock.html", SHOTS, "report",
-         route=(f"{base}/__stock.html", lambda r: r.fulfill(status=200, content_type="text/html; charset=utf-8", body=page)))
+    if "ko" in langs:
+        take(br, f"{base}/__stock.html", SHOTS, "report",
+             route=(f"{base}/__stock.html", lambda r: r.fulfill(status=200, content_type="text/html; charset=utf-8", body=page)))
+    if "en" in langs:
+        take(br, f"{base}/staging/stock.html?ticker={TK}", SHOTS, "report", css=STAGING_HIDE, lang="en")
 
 
-def sector(br, base):
+def sector(br, base, langs):
     js = open(os.path.join(ROOT, "data", "sectors.js"), encoding="utf-8").read()
     sec = (json.loads(re.search(r"=\s*(\{.*\})\s*;?\s*$", js, re.S).group(1)).get("sectors") or {}).get(SECTOR)
     if not sec:
@@ -147,11 +158,15 @@ def sector(br, base):
     bad = CR.defects(sec) or CR.check(sec)
     if bad:
         sys.exit(f"{SECTOR} 업종 분석이 검사에 걸려 찍지 않는다: {bad}")
-    take(br, f"{base}/preview/industry.html?sector={urllib.parse.quote(SECTOR)}", SECTOR_SHOTS, "sector", css=HIDE)
+    if "ko" in langs:
+        take(br, f"{base}/preview/industry.html?sector={urllib.parse.quote(SECTOR)}", SECTOR_SHOTS, "sector", css=HIDE)
+    if "en" in langs:
+        take(br, f"{base}/staging/industry.html?sector={urllib.parse.quote(SECTOR)}", SECTOR_SHOTS, "sector", css=HIDE + STAGING_HIDE, lang="en")
 
 
 def main():
-    which = sys.argv[1:] or ["report", "sector"]
+    which = [a for a in sys.argv[1:] if a in ("report", "sector")] or ["report", "sector"]
+    langs = [a for a in sys.argv[1:] if a in ("ko", "en")] or ["ko", "en"]
     os.makedirs(OUT, exist_ok=True)
     srv = ThreadingHTTPServer(("127.0.0.1", 0), functools.partial(Quiet, directory=ROOT))   # 글꼴 · 로고 · 업종 화면은 저장소에서
     threading.Thread(target=srv.serve_forever, daemon=True).start()
@@ -160,7 +175,7 @@ def main():
     with sync_playwright() as pw:
         br = pw.chromium.launch(args=["--no-proxy-server"])
         for w in which:
-            {"report": report, "sector": sector}[w](br, base)
+            {"report": report, "sector": sector}[w](br, base, langs)
         br.close()
     srv.shutdown()
 

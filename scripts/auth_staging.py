@@ -567,7 +567,9 @@ function render(){
     paint(s.crumb || '계정 인증', s.title, s.desc);
     bodyEl.appendChild(goBtn('로그인하러 가기', 'Login.html'));   // 같은 곳으로 가는 단추는 같은 이름(2026-10-03)
   } else if(s.kind === 'reset'){
-    paint('비밀번호 재설정', '새 비밀번호 설정', s.email + ' 계정의 새 비밀번호를 입력하여 주시기 바랍니다.');
+    // 이메일이 문장 안에 들어가 사전으로는 못 바꾼다 — 영어 화면(i18n.js)은 여기서 바로
+    const en = !!(window.KOSi18n && window.KOSi18n.lang === 'en');
+    paint('비밀번호 재설정', '새 비밀번호 설정', en ? 'Enter a new password for ' + s.email + '.' : s.email + ' 계정의 새 비밀번호를 입력하여 주시기 바랍니다.');
     const form = el('form'); form.id = 'rs'; form.noValidate = true;
     form.appendChild(fld('np', '새 비밀번호', '영문·숫자 포함 8자 이상'));
     form.appendChild(fld('np2', '새 비밀번호 확인', '비밀번호를 다시 입력하십시오'));

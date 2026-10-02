@@ -108,12 +108,21 @@ var DATA_DATE=String((window.KOS_LIVE_DATA&&KOS_LIVE_DATA.dataDate)||'');
 var REPORTS=(window.KOS_REPORTS&&KOS_REPORTS.reports)||{};
 var VALS=(window.KOS_VALUATION&&KOS_VALUATION.stocks)||{};
 var SITE_URL='https://kosai.kr/stock.html?ticker=';
+/* 영어 화면(staging/i18n.js) — 리포트 본문은 자료의 영어 쪽(pk), 라벨은 아래 T, 나머지 한국어 문구는 사전이 바꾼다. */
+var I18=window.KOSi18n; function EN(){ return !!(I18&&I18.lang==='en'); }
+var T_EN={ watch:'Add to Watchlist', watched:'In Watchlist',
+  lockTitle:'The full report is available to members', lockSub:'BASIC from ₩9,900 a month', lockSubN:'{s} sections · about {m} min read · BASIC from ₩9,900 a month',
+  cta:'See membership', ctaLogin:'Sign in to keep reading', ctaOpen:'Continue reading', loading:'Loading…',
+  note:'Already a member? Please sign in.',
+  limitT:'You have reached your daily reading limit', limitS:'Your reading limit resets every day at midnight (Korea time).', upgrade:'Upgrade to PRO',
+  errNone:'The members-only sections for this stock are not ready yet.', errFail:'Could not load. Please try again shortly.' };
 var T={ watch:'관심종목 추가', watched:'관심종목 추가됨',
   lockTitle:'리포트 전체는 구독 회원에게 제공됩니다', lockSub:'BASIC 월 9,900원부터', lockSubN:'{s}개 섹션 · 약 {m}분 분량 · BASIC 월 9,900원부터',
   cta:'멤버십 보기', ctaLogin:'로그인하고 이어 보기', ctaOpen:'이어서 읽기', loading:'불러오는 중…',
   note:'이미 구독 중이시라면 로그인하여 주시기 바랍니다.',
   limitT:'하루 열람 한도에 도달했습니다', limitS:'열람 한도는 매일 자정(한국 시간)에 초기화됩니다.', upgrade:'PRO로 업그레이드',
   errNone:'이 종목은 유료 구간이 아직 준비되지 않았습니다.', errFail:'불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.' };
+if(EN()) T=T_EN;
 var LOCK_SVG='<svg class="lk" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
 function qp(n){ return new URLSearchParams(location.search).get(n); }
 
@@ -147,7 +156,7 @@ function shN(v){ if(v==null)return '—'; v=+v;
   if(v>=1e8)return (v/1e8).toFixed(1)+'억주'; if(v>=1e4)return Math.round(v/1e4).toLocaleString('en-US')+'만주'; return v.toLocaleString('en-US')+'주'; }
 function pct(v,signed){ if(v==null)return '—'; var s=(signed?(v<0?'':'+')+pyf(v,2):pyf(v,1))+'%'; return s.replace(/-/g,'−'); }
 function fdate(d){ d=String(d==null?'':d); return /^\d{8}$/.test(d)?d.slice(0,4)+'-'+d.slice(4,6)+'-'+d.slice(6):d; }
-function pk(o){ if(o==null)return ''; if(typeof o==='object')return o.ko||o.en||''; return o||''; }
+function pk(o){ if(o==null)return ''; if(typeof o==='object')return (EN()&&o.en)||o.ko||o.en||''; return o||''; }
 function pad(x){ return x<10?'0'+x:''+x; }
 
 /* ── 문단 — 실사이트 stock.html 의 것을 그대로(빌드할 때 떼어 온다). 손으로 고치지 말 것 ── */
@@ -295,6 +304,8 @@ function nextParam(){ var page=location.pathname.split('/').pop()||'stock.html';
    문단 수·항목 수·길이와 마크업은 실제 렌더와 같게 맞춘다 — 그래야 흐린 판이 진짜 리포트가 이어지는 것처럼 보인다. */
 var TZ_KEYS=['earnings','industry','outlook','valuation_comment','bull','bear','risks','checkpoints','verdict'];
 var TZ_NUM={earnings:4,industry:5,outlook:6,valuation_comment:7,bull:8,bear:9,risks:10,checkpoints:11,verdict:12};
+var TZ_POOL_EN='revenueoperatingprofitdemandsupplypriceoutlookgrowthmarginshareinvestmentcostmarketresultsbasisgainlossyearquarter'
+           +'0123456789.%()0123456789$₩TB202520262027';
 var TZ_POOL='매출영업이익수요공급가격전망성장확대둔화개선부담경쟁점유율투자비용시장실적기준증가감소'
            +'대비수익구조원가환율금리재고출하단가물량비중전년동기수준유지회복'
            +'0123456789.%()0123456789조원억달러202520262027';
@@ -302,11 +313,12 @@ var _tzSeed=0;
 /* 길이만 맞춘 글자. 같은 리포트면 늘 같은 모양이 나오도록 난수는 결정적으로 돌린다 — 다시 그릴 때마다 출렁이면 거슬린다. */
 function fillerText(len){
   var out='',gap=0,k,r=(_tzSeed=(_tzSeed*1103515245+12345)&0x7fffffff)||9973;
-  len=Math.max(2,Math.round(len));
+  var en=EN(), pool=en?TZ_POOL_EN:TZ_POOL, wmin=en?3:2;
+  len=Math.max(2,Math.round(len*(en?1.8:1)));
   for(k=0;k<len;k++){
     r=(r*1103515245+12345)&0x7fffffff;
-    out+=TZ_POOL.charAt(r%TZ_POOL.length);
-    if(++gap>=2+(r>>9)%5 && k<len-1){ out+=' '; gap=0; }   /* 서너 글자마다 띄어 줄바꿈 자리가 실제와 비슷해진다 */
+    out+=pool.charAt(r%pool.length);
+    if(++gap>=wmin+(r>>9)%5 && k<len-1){ out+=' '; gap=0; }   /* 서너 글자마다 띄어 줄바꿈 자리가 실제와 비슷해진다 */
   }
   return out;
 }
@@ -429,7 +441,8 @@ function pendingH(){
   var li=PRIMARY_SRC.map(function(s){ return '<li><a href="'+esc(s[1])+'" target="_blank" rel="noopener">'+esc(s[0])+'</a></li>'; }).join('');
   return '<div class="pending"><h2>이 종목의 리포트는 준비 중입니다</h2><p>새로 상장된 종목은 상장 직후 리포트를 작성합니다. 시세·시가총액·PER·PBR 같은 지표는 매 거래일 저녁에 갱신됩니다.</p><ol class="srcs">'+li+'</ol><p class="disc">'+DISC+'</p></div>';
 }
-function notFoundH(){
+function notFoundH(){   // 종목코드가 문장 안에 들어가 사전으로는 못 바꾼다 — 영어 화면은 여기서 바로
+  if(EN()) return '<div class="pending"><h2>Stock not found</h2><p>No stock matches the ticker you requested ('+esc(TK)+'). Please look it up again in the <a href="Reports.html">report list</a>.</p></div>';
   return '<div class="pending"><h2>종목을 찾을 수 없습니다</h2><p>요청하신 종목코드('+esc(TK)+')에 해당하는 종목이 없습니다. <a href="Reports.html">리포트 목록</a>에서 종목을 다시 찾아 주시기 바랍니다.</p></div>';
 }
 function render(){
@@ -487,7 +500,12 @@ document.addEventListener('click',function(e){
 function setSEO(locked){
   try{
     var url=SITE_URL+encodeURIComponent(TK), name=(STOCK&&STOCK.name)||(REP&&REP.name)||TK, rt=REP?pk(REP.title):'', ttl, dsc;
-    if(REP){ ttl=rt?name+'('+TK+') 리포트 — '+rt+' | KOSAI':name+'('+TK+') 리포트 | KOSAI'; dsc=String(pk(REP.lead)||pk(REP.desc)).replace(/\s+/g,' ').slice(0,158); }
+    if(EN()){ var ne=STOCK&&I18?I18.nameEn(STOCK):name;
+      if(REP){ ttl=ne+' ('+TK+') Report'+(rt?' — '+rt:'')+' | KOSAI'; dsc=String(pk(REP.lead)||pk(REP.desc)).replace(/\s+/g,' ').slice(0,158); }
+      else if(KNOWN){ ttl=ne+' ('+TK+') — Report in preparation | KOSAI'; dsc=ne+' ('+TK+') price, market cap, P/E and P/B. Reports for newly listed stocks are written right after listing.'; }
+      else{ ttl=TK+' — Stock not found | KOSAI'; dsc='No stock matches the requested code.'; }
+    }
+    else if(REP){ ttl=rt?name+'('+TK+') 리포트 — '+rt+' | KOSAI':name+'('+TK+') 리포트 | KOSAI'; dsc=String(pk(REP.lead)||pk(REP.desc)).replace(/\s+/g,' ').slice(0,158); }
     else if(KNOWN){ ttl=name+'('+TK+') 종목 — 리포트 준비 중 | KOSAI'; dsc=name+'('+TK+') 시세·시가총액·PER·PBR. AI 분석 리포트는 상장 직후 작성됩니다.'; }
     else{ ttl=TK+' — 종목을 찾을 수 없습니다 | KOSAI'; dsc='요청하신 종목코드에 해당하는 종목이 없습니다.'; }
     function setMeta(sel,attr,val){ var el=document.querySelector(sel); if(el) el.setAttribute(attr,val); }
