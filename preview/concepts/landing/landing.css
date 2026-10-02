@@ -193,8 +193,8 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
 .band .eyebrow{color:var(--band-ink)} .band .sub{color:var(--band-62)}
 .band .more{color:var(--band-ink)}
 /* 브리핑 띠 그림 — 개장 전 여의도의 새벽(DAWN_JS 가 띠 전체에 그린다 · 사장 2026-10-02). 글은 띠 위쪽에 두고 그림은 그 아래와 오른쪽에.
-   한 열에서는 글 아래에 그림 자리를 비워 둔다 — 탑의 가장 높은 곳(설계 305 × 배율)에 글과의 틈 28 과 물가 아래 108 을 더하고
-   띠의 아래 안쪽 여백 72 를 뺀 만큼(64 + 305 × 배율). 배율이나 가장 높은 탑을 바꾸면 #brief>.w 의 아래 여백도 같이 고친다 */
+   한 열에서는 글 아래에 그림 자리를 비워 둔다 — 탑의 가장 높은 곳(설계 305 × 배율)에 글과의 틈 28 과 물가 아래 96 을 더하고
+   띠의 아래 안쪽 여백 72 를 뺀 만큼(52 + 305 × 배율). 배율이나 가장 높은 탑을 바꾸면 #brief>.w 의 아래 여백도 같이 고친다 */
 #brief{position:relative;align-items:flex-start}
 #brief>.w{position:relative;z-index:1}
 #brief .dawn{position:absolute;left:0;top:0;width:100%;height:100%;display:block;pointer-events:none}
@@ -236,7 +236,7 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
   .nav,.nav.scrolled{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}
   .mmenu.open{display:flex}
   .split{display:block}
-  #brief>.w{padding-bottom:calc(64px + min(57.872vw, 305px))}   /* 배율 0.74 × 폭 ÷ 390(최대 1) × 305 — DAWN_JS 의 한 열 배율과 같다 */
+  #brief>.w{padding-bottom:calc(52px + min(66.474vw, 305px))}   /* 배율 0.85 × 폭 ÷ 390(최대 1) × 305 — DAWN_JS 의 한 열 배율과 같다 */
   .nav.on-band,.nav.on-band.scrolled{background:var(--band)}
   .nav.on-band:not(.scrolled){background:transparent}   /* 첫 화면 맨 위에서는 무대의 빛이 머리 뒤까지 이어지게 */
   .proof{grid-template-columns:1fr;row-gap:28px;margin-top:40px}

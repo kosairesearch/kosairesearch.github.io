@@ -248,161 +248,238 @@ if(document.fonts&&document.fonts.addEventListener)document.fonts.addEventListen
 document.addEventListener('visibilitychange',function(){if(!document.hidden&&pick())draw()})
 })();"""
 
-# 브리핑 띠 그림 — 개장 전 여의도의 새벽(사장 2026-10-02: 아이디어 중 '점묘로 그린 개장 전 아침' → 시안 → "미리보기 사이트에 적용해줘").
-# 강북에서 남쪽으로 본 여의도이고, 해는 아직 지평선 아래, 높은 층에만 첫 햇빛이 닿은 몇 분이다. 재료는 첫 화면 행성과 같은 셋뿐이다 —
-# 같은 모양의 성긴 규칙 점, 부드러운 빛(후광), 띠 색 실루엣. 무작위로 만든 것은 두지 않는다(불 켠 창 · 가로등 · 크기만 다른 상자 ·
-# 불규칙 점묘는 두 차례 비평에서 '인공지능이 만든 티'로 걸러 냈다). 윤곽과 순서는 위키미디어 공용의 여의도 사진 넷을 따르고 건물마다
-# 표지 하나를 살렸다 — 63빌딩 안테나와 꼭대기 띠, LG 트윈타워의 계단 어깨, 파크원 세로 틀 셋과 받침 위 판, 쓰리 IFC 의 깔때기 받침,
-# 전경련회관의 비스듬한 지붕선. 햇빛 경계선은 하나(물가 위 150, 아래로 55에 걸쳐 꺼진다)이고 63빌딩만 금빛 유리가 하늘을 비춰
-# 밑동까지 밝다. 점 간격은 두 방향 비 1.25 이하 — 첫 화면의 근접성 기준(1.5)을 넘으면 점이 아니라 줄무늬로 읽힌다.
+# 브리핑 띠 그림 — 개장 전 여의도의 새벽(사장 2026-10-02). 처음 시안(점묘)을 사장이 다시 골라 "여기서 발전시키되 선보다는 점" 이라 해
+# 그 판을 바탕으로 다시 그렸다 — 그 사이의 규칙 점 + 띠 색 실루엣 판, 헤드컷 선 판은 버렸다. 강북에서 남쪽으로 본 여의도이고, 해는 아직
+# 지평선 아래, 높은 층에만 첫 햇빛이 닿은 몇 분이다. 모두 점이다(선 없음 — 안테나와 지붕선도 점을 늘어놓았다). 하늘과 강물은 고르게 흩어진
+# 점(포아송 원판 + 세 번 펴기 · 밝을수록 촘촘), 건물은 재료마다 결이 다른 격자 점(유리 탑 세로줄 · 63빌딩과 전경련회관 가로줄 · LG 고른 격자)이고
+# 밝을수록 점이 크다. 점은 펜으로 찍은 듯한 또렷한 원이다 — 부드러운 점은 손가락으로 키우면 번져 'AI 티'로 읽혔다(확대 배율로 다시 그린다).
+# 덧붙인 것은 두지 않는다 — 산 능선 · 나무 줄 · 가로등 · 임의로 켠 창(사장 "관악산, 나무 이런 걸 집어넣는 게 디테일이 아니야").
+# 디테일은 건물마다 실제 외관에서 — 63빌딩 2단 철탑 · 꼭대기 띠 · 피난층 두 줄 · 해 쪽 좁은 면, 파크원 지붕 위로 솟는 틀 기둥과 꼭대기 판,
+# 쓰리 IFC 접힌 면의 밝기 차와 원반 지붕, 원 IFC 비스듬한 지붕, LG 트윈타워 계단 어깨, 전경련회관 톱니 모서리, TP 타워 넓어지는 모자.
+# 63빌딩만 금빛 유리라 물에 밝게 비친다. 해 자리의 아주 옅은 빛(5%)은 첫 화면 행성 뒤의 빛과 같은 방식이고 건너편 둑에서 끊긴다.
 # 금빛 비교안(63빌딩과 그 반사만 230,205,165)은 강조색이라 사장이 정하기 전에는 넣지 않는다(디자인 헌장).
-# 자리 — 넓은 화면은 63빌딩 왼쪽 끝을 글 단 오른쪽 끝 + 48 밖에 두고(오른쪽 탑은 잘려도 된다) 띠가 낮으면 배율을 0.75까지 줄인다.
-# 한 열(820px 이하)은 63빌딩 왼쪽 끝을 글 왼쪽 선에 맞추고, 글 아래 그림 자리는 CSS 가 비워 둔다(#brief>.w 의 아래 여백 — 탑 꼭대기와
-# 글 사이 28). 크기 · 테마가 바뀔 때만 다시 그리고 움직이지 않는다. 14가지 화면 크기 × 라이트 · 다크에서 글과 겹친 화소 0
+# 띠가 화면 가까이 올 때 처음 그리고(첫 화면을 여는 데 시간을 쓰지 않는다), 계산을 네 작업으로 나눠 한 번에 오래 멈추지 않으며(처리 속도
+# 1/4 휴대폰에서 가장 긴 멈춤 0.05초), 다 그린 뒤 한 번에 바꾼다. 크기 · 배율이 바뀔 때만 다시 그리고 움직이지 않는다. 테마는 그림에 쓰지
+# 않는다(띠는 두 테마 모두 어둡다). 14가지 화면 크기 × 라이트 · 다크에서 글과 겹친 화소 0
 DAWN_JS = r"""(function(){
 var cv=document.getElementById('dawn');if(!cv||!cv.getContext)return;
-var ctx=cv.getContext('2d'),root=document.documentElement,one=matchMedia('(max-width:820px)'),band='#141414',W=0,H=0,dpr=1,L=null,last='';
-/* 점 — 첫 화면 행성과 같은 모양(가운데 1 · 45% 지점 .85 · 끝 0) */
-var SP=document.createElement('canvas');SP.width=SP.height=32;
-(function(){var s=SP.getContext('2d'),g=s.createRadialGradient(16,16,0,16,16,16);
- g.addColorStop(0,'rgba(248,247,244,1)');g.addColorStop(.45,'rgba(248,247,244,.85)');g.addColorStop(1,'rgba(248,247,244,0)');s.fillStyle=g;s.fillRect(0,0,32,32)})();
-function col(){band=getComputedStyle(root).getPropertyValue('--band').trim()||'#141414'}
-function rgba(hx,a){var h=hx.replace('#','');if(h.length===3)h=h.replace(/(.)/g,'$1$1');var n=parseInt(h,16);return 'rgba('+(n>>16&255)+','+(n>>8&255)+','+(n&255)+','+a+')'}
+var ctx=cv.getContext('2d'),one=matchMedia('(max-width:820px)'),W=0,H=0,dpr=1,L=null,last='';
 function sm(a,b,x){var t=Math.max(0,Math.min(1,(x-a)/(b-a)));return t*t*(3-2*t)}
-/* 좌표는 데스크톱 1440px 설계값(x, 물가 위 높이)이고 화면에 맞춰 옮기고 줄인다. 뒤쪽 줄 — 점 없이 하늘보다 조금 어두운 실루엣 */
-var BACK=[
-  {x0:1100,x1:1146,h:178},                          // 콘래드
-  {x0:1174,x1:1212,h:136,top:[[1,-15],[0,0]]},      // 투 IFC — 비스듬한 지붕
-  {x0:1318,x1:1364,h:186}                           // TP 타워
-];
-/* 앞쪽 탑 — 점이 있는 것. g: 점 간격 [가로, 세로] */
-var TW=[
-  {x0:748,x1:800,h:116,step:'L',g:[6.5,6.5],faint:1},   // LG 트윈타워 — 바깥 어깨가 계단으로 깎여 서로 마주 본다
-  {x0:844,x1:896,h:116,step:'R',g:[6.5,6.5],faint:1},
-  {x0:916,x1:962,h:226,g:[7.5,6],crown:'parc',frames:1},  // 파크원 — 양 끝과 가운데 붉은 틀 자리가 이어진 점선
-  {x0:976,x1:1030,h:292,g:[7.5,6],crown:'parc',frames:1},
-  {x0:1066,x1:1118,h:246,g:[7.5,6],crown:'ifc',facet:1},   // 쓰리 IFC — 깔때기 받침 위 원반, 접힌 면 하나
-  {x0:1240,x1:1284,h:210,g:[7.5,6],top:[[1,0],[1,16],[.34,28],[0,28]],roof:1},  // 전경련회관 — 비스듬한 지붕선
-  {x0:640,x1:692,h:230,taper:3,g:[6,7.5],gold:1,antenna:20}  // 63빌딩 — 금빛 유리가 하늘을 비춰 밑동까지 밝다
-];
+function hh(a,b){var x=(a*374761393+b*668265263)|0;x=Math.imul(x^(x>>>13),1274126177);x^=x>>>16;return (x>>>0)/4294967296}   // 고정 해시 — 늘 같은 그림
+function rnd(s){return function(){s=s+0x6D2B79F5|0;var t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function vn(x,y,s){var i=Math.floor(x),j=Math.floor(y),fx=x-i,fy=y-j;fx=fx*fx*(3-2*fx);fy=fy*fy*(3-2*fy);var o=s*7919;
+  var a=hh(i+o,j),b=hh(i+1+o,j),c=hh(i+o,j+1),d=hh(i+1+o,j+1);return 2*((a+(b-a)*fx)*(1-fy)+(c+(d-c)*fx)*fy)-1}   // 부드러운 잡음(-1~1, 고정)
+
+/* ── 찍기 ── 점은 또렷한 원 — 펜으로 찍은 점처럼 가장자리만 부드럽다. 밝기(1/48)별로 모아 한 경로로 한 번에 채운다(같은 밝기의 점이
+   겹치면 덮인 자리만 남는다). 반지름은 부드러운 점과 같은 빛의 양이 되게 0.69배 */
+var DS={},NDOT=0;
+function dot(x,y,r,a){if(a<.03||r<=0)return;var k=Math.max(1,Math.min(48,Math.round(a*48)));(DS[k]||(DS[k]=[])).push(x,y,r*.69);NDOT++}
+function paint(){ctx.fillStyle='rgb(248,247,244)';for(var k in DS){var s=DS[k];ctx.globalAlpha=k/48;ctx.beginPath();for(var i=0;i<s.length;i+=3){ctx.moveTo(s[i]+s[i+2],s[i+1]);ctx.arc(s[i],s[i+1],s[i+2],0,6.2832)}ctx.fill()}ctx.globalAlpha=1}
+
+/* ── 자리 ── 넓은 화면은 63빌딩 왼쪽 끝을 글 단 오른쪽 끝 + 48 밖에 두고 띠가 낮으면 배율을 0.75까지 줄인다.
+   한 열은 배율 0.85 × 폭 ÷ 390(최대 1)으로 63빌딩 왼쪽 끝을 글 왼쪽 선에 맞춘다(오른쪽 탑은 잘려도 된다). 물가는 띠 아래 끝에서 96 위 —
+   #brief>.w 의 아래 여백(52 + 305 × 배율)이 그 위에 가장 높은 탑과 글과의 틈 28 을 남긴다. 띠가 한 화면 높이라 더 길면(태블릿 세로)
+   그림은 아래에 붙고 남는 자리는 하늘이 된다 */
 function layout(t,b){
-  var o={},tr=t?t.right-b.left:0,tl=t?t.left-b.left:20;
-  /* 넓은 화면 — 63빌딩 왼쪽 끝이 글 단 오른쪽 끝 + 48 안으로 들어오지 않게 옮긴다(오른쪽 탑은 잘려도 된다). 띠가 낮으면 배율을 줄인다.
-     한 열 — 63빌딩 왼쪽 끝을 글 왼쪽 선에 맞춘다 */
-  if(!one.matches){o.yw=H-140;o.s=Math.max(.75,Math.min(1,(o.yw-120)/305));o.dx=Math.max((W-1440)/2,tr+48-640*o.s);o.SZ=1.2;o.sun=440;o.k=1}
-  else{o.s=Math.min(1,.74*W/390);o.dx=tl-640*o.s;o.yw=H-108;o.SZ=1.05;o.sun=610;o.k=.86}
-  o.X=function(x){return o.dx+x*o.s};o.h=function(v){return v*o.s};
-  o.light=o.h(150);o.fade=o.h(55);                       // 햇빛 경계선 — 모든 탑이 같은 높이에서 밝아진다
-  o.sx=o.X(o.sun);o.R=o.h(370);
+  var o={},tr=t?t.right-b.left:0,tl=t?t.left-b.left:20,tb=t?t.bottom-b.top:0;
+  if(!one.matches){o.yw=H-140;o.s=Math.max(.75,Math.min(1,(o.yw-120)/305));o.dx=Math.max((W-1440)/2,tr+48-640*o.s);o.R0=1.2;o.sp=3.2;o.tr=tr+24}
+  else{o.s=Math.min(1,.85*W/390);o.dx=tl-640*o.s;o.yw=Math.max(H-96,tb+28+305*o.s);o.R0=1;o.sp=2.8;o.tr=W}
+  o.X=function(x){return o.dx+x*o.s};o.h=function(v){return v*o.s};o.k=Math.sqrt(o.s);o.sx=o.X(560);o.tb=tb;
   return o;
 }
-function poly(t){
-  var X=L.X,h=L.h,yw=L.yw,x0=X(t.x0),x1=X(t.x1),top=yw-h(t.h),b=yw+3,w=x1-x0,p=[[x0,b],[x1,b]],k,n=t.step?8:5;
-  if(t.top){t.top.forEach(function(q){p.push([x0+w*q[0],top-h(q[1])])});return p}
-  if(t.step==='L'){ /* 계단 — 바깥 위 모서리를 폭 30%, 높이 30% 안에서 여덟 단으로 */
-    p.push([x1,top]);for(k=0;k<=n;k++){var xx=x0+w*.3*(1-k/n),yy=top+h(t.h)*.3*k/n;p.push([xx,yy]);if(k<n)p.push([xx,top+h(t.h)*.3*(k+1)/n])}
-    return p}
-  if(t.step==='R'){p.length=2;for(k=n;k>=0;k--){var xr=x1-w*.3*(1-k/n),yr=top+h(t.h)*.3*k/n;if(k<n)p.push([xr,top+h(t.h)*.3*(k+1)/n]);p.push([xr,yr])}
-    p.push([x0,top]);return p}
-  var tp=h(t.taper||0);p.push([x1-tp,top],[x0+tp,top]);return p;
+
+/* ── 하늘 ── 지평선 전체에 낮게 깔린 빛, 해가 오를 자리의 둥근 빛, 얇은 구름 띠 셋(해 위로 길게, 양 끝이 가늘어지고 살짝 휜다) */
+var CL=[[-330,380,34,5.5,.62,.3],[-200,170,63,3,.45,1.7],[120,520,21,3.2,.4,2.6]];
+function skyT(x,z){if(z<=0)return 0;var s=L.s,dx=x-L.sx,e1=dx/(270*s),e2=dx/(520*s),e3=dx/(700*s),
+  T=.62*Math.exp(-e1*e1-z/(34*s))+.18*Math.exp(-e2*e2-z/(50*s))+.30*(1+.30*Math.exp(-e3*e3))*Math.exp(-z/(62*s)),i;
+  for(i=0;i<CL.length;i++){var c=CL[i],u=(dx-c[0]*s)/((c[1]-c[0])*s);if(u<0||u>1)continue;
+    var yc=c[2]*s+2.2*s*Math.sin(u*3.1+c[5])+1.5*s*Math.sin(u*9.3+c[5]*2),w=c[3]*s*Math.pow(Math.sin(Math.PI*u),.7)+.01;T*=1-c[4]*Math.exp(-Math.pow((z-yc)/w,2))}
+  return Math.min(1,T*(.62+.38*sm(-60*s,300*s,x)))}
+
+/* ── 건물 ── 윤곽(앞 건물은 어둡게 비운다 · 먼 건물은 하늘의 점을 성기게) */
+var B=[],CB=[],CH=[];   // B {x0,x1,zt(x),haze,rv(x,z)} · CB/CH 세로 1px 칸마다 그 칸에 걸친 건물(앞 건물부터) · 먼 건물
+function reg(b){var c=b.haze?CH:CB,i0=Math.max(0,Math.floor(b.x0-1)),i1=Math.min(c.length-1,Math.floor(b.x1+1));for(var i=i0;i<=i1;i++)c[i].push(b)}
+function colAt(c,x){var i=Math.floor(x);return i>=0&&i<c.length?c[i]:[]}
+function inB(x,z,m){var c=colAt(CB,x);for(var i=0;i<c.length;i++){var b=c[i];if(x>b.x0-m&&x<b.x1+m&&z<b.zt(x)+m)return b}return null}
+function hazeAt(x,z){var c=colAt(CH,x),f=1;for(var i=0;i<c.length;i++){var b=c[i];if(x>b.x0&&x<b.x1&&z<b.zt(x))f=Math.min(f,b.haze)}return f}
+function hid(x,z,me){var c=colAt(CB,x);for(var i=0;i<c.length;i++){var b=c[i];if(b===me)return false;if(x>b.x0-.4&&x<b.x1+.4&&z<b.zt(x)+.4)return true}return false}   // 앞(먼저 넣은) 건물에 가렸나
+
+/* 격자 점 — 결 방향 'h'(가로줄: 점은 촘촘, 줄은 성기게) · 'v'(세로줄) · 'g'(고른 격자). tone(x,z) → 투명도 */
+function face(x0,x1,z0,z1,st,tone,me,o){o=o||{};var yw=L.yw,k=L.k,R=L.R0,a,x,z,i,j,xs=[],zs=[];
+  var p1=st==='h'?Math.max(2.5,2.6*k):st==='v'?Math.max(4,4.6*k):Math.max(2.8,(o.cs||4.6)*k),   // 가로 간격
+      p2=st==='h'?Math.max(3.6,4.1*k):st==='v'?Math.max(2.5,2.7*k):Math.max(2.7,(o.rs||4)*k);    // 세로 간격
+  if(o.p1)p1=o.p1;if(o.p2)p2=o.p2;
+  var nx=Math.max(1,Math.round((x1-x0)/p1)),dxx=(x1-x0)/nx;for(i=0;i<nx;i++)xs.push(x0+(i+.5)*dxx);
+  for(z=z0+p2*.6;z<z1;z+=p2)zs.push(z);
+  for(j=0;j<zs.length;j++)for(i=0;i<xs.length;i++){x=xs[i];z=zs[j];if(o.zt&&z>o.zt(x)-p2*.3)continue;a=tone(x,z,i,j,xs.length);if(a<.035)continue;if(hid(x,z,me))continue;
+    dot(x,yw-z,R*(o.z||1)*(.86+.18*Math.min(1,a)),Math.min(1,a))}
+  return {xs:xs,zs:zs}}
+/* 그물판 점 — 넓이가 밝기에 비례(반지름 ∝ √밝기). 가장 작은 점(최대의 0.4배) 아래로는 크기 대신 옅어진다 */
+function hd(x,y,a,z){a=Math.min(1,a);var rm=L.R0*1.12*(z||1),r=rm*Math.sqrt(a),r0=rm*.4;if(r<r0){dot(x,y,r0,.92*a/.16);return}dot(x,y,r,.92)}
+function col1(x,z0,z1,step,tone,me,z){for(var q=z0;q<=z1+1e-6;q+=step){var a=tone(q);if(a<.035||hid(x,q,me))continue;hd(x,L.yw-q,a,z||.9)}}   // 세로로 늘어선 점 한 줄
+function row1(x0,x1,z,step,tone,me,zz){var n=Math.max(1,Math.round((x1-x0)/step));for(var i=0;i<=n;i++){var x=x0+(x1-x0)*i/n,a=tone(x);if(a<.035||hid(x,z,me))continue;hd(x,L.yw-z,a,zz||.9)}}
+
+/* 높이에 따른 첫 햇빛 — 위층부터(start 위에서 밝아진다) */
+function lit(light,start,hy){return light*Math.pow(sm(start,1,hy),1.3)}
+
+/* 탑 하나 — 처음 판과 같은 결: 'v' 유리 탑은 세로줄(줄 사이 4.6, 줄 안의 점 2.7), 'h' 63빌딩은 가로줄, 'g' 창이 뚫린 탑은 고른 격자.
+   양 끝 줄이 곧 윤곽이다. 왼쪽 끝 줄은 해 쪽 모서리라 먼저 빛난다(rim) */
+function tower(o){var x0=L.X(o.x0),x1=L.X(o.x1),Ht=L.h(o.h),k=L.k,yw=L.yw,xs=[],zs=[],i,j,nx,me;
+  me={x0:x0,x1:x1,zt:o.zt?function(x){return o.zt(x,x0,x1,Ht)}:function(){return Ht},haze:0};
+  if(o.st==='h'){var ls=Math.max(3.6,4.1*k),st=Math.max(2.5,2.6*k);nx=Math.max(2,Math.round((x1-x0-1)/st));for(i=0;i<nx;i++)xs.push(x0+.5+(i+.5)*(x1-x0-1)/nx);for(var z=ls*.7;z<Ht+L.h(30);z+=ls)zs.push(z)}
+  else if(o.st==='g'){var cs=Math.max(2.8,(o.cs||4.6)*k),rs=Math.max(2.7,(o.rs||4)*k);nx=Math.max(1,Math.round((x1-x0-1)/cs));for(i=0;i<nx;i++)xs.push(x0+.5+(i+.5)*(x1-x0-1)/nx);for(var z2=rs*.8;z2<Ht+L.h(30);z2+=rs)zs.push(z2)}
+  else{var ls2=Math.max(4,4.6*k),st2=Math.max(2.5,2.7*k);nx=Math.max(2,Math.round((x1-x0-1.8)/ls2)+1);for(i=0;i<nx;i++)xs.push(x0+.9+(x1-x0-1.8)*i/(nx-1));for(var z3=st2*.6;z3<Ht+L.h(30);z3+=st2)zs.push(z3)}
+  for(j=0;j<zs.length;j++)for(i=0;i<xs.length;i++){var x=xs[i],zz=zs[j];if(zz>me.zt(x)-.6)continue;var hy=Math.min(1,zz/Ht),u=(x-x0)/Math.max(1,x1-x0),a=o.tone?o.tone(u,hy,i,j,x,zz):lit(o.light,o.start,hy);
+    if(o.rim&&i===0)a=Math.max(a,o.rim*Math.pow(sm(o.start-.2,1,hy),1.1));
+    if(a<.035||hid(x,zz,me))continue;hd(x,yw-zz,a,o.zd)}
+  me.rv=function(x,z){var hy=Math.min(1,z/Ht),u=Math.max(0,Math.min(1,(x-x0)/Math.max(1,x1-x0)));if(o.mirror)return o.mirror*Math.max(0,o.tone(u,hy,1,0,x,z));return o.refl!=null?o.refl:.45*(o.tone?o.tone(.3,hy,1,0,x,z):lit(o.light,o.start,hy))+.015};
+  B.push(me);if(o.after)o.after(x0,x1,Ht,me,xs,zs);reg(me);return me}
+function haze(x0u,x1u,hu,f,zt){var x0=L.X(x0u),x1=L.X(x1u),Ht=L.h(hu),b={x0:x0,x1:x1,zt:zt?function(x){return zt(x,x0,x1,Ht)}:function(){return Ht},haze:f};B.push(b);reg(b)}
+
+/* 장면 — 강북에서 남쪽으로 본 여의도(왼쪽이 동쪽). 처음 판의 배치와 순서를 따르고, 앞에 선 건물부터 넣는다(뒤 건물의 점은 가려진다) */
+function scene(){var Q=[];
+  /* 63빌딩 — 금빛 유리, 가로줄. 밑동부터 꼭대기까지 밝아지고 오른쪽 끝은 그늘. 해 쪽(왼쪽) 좁은 면은 홈 둘이 있는 세로 띠로
+     가장 밝고, 피난층 둘(.30 · .60)과 꼭대기 간판 띠는 한 줄씩 어둡다. 지붕 위 낮은 기계실과 2단 철탑, 끝의 항공등 */
+  tower({x0:640,x1:692,h:230,st:'h',refl:.62,tone:function(u,hy){if(hy>.932&&hy<.968)return 0;var a=(.14+.78*Math.pow(hy,.95))*(1.08-.22*u)*(1+.13*Math.sin((u*.55+hy*2.1)*6.283*1.6+.8)+.06*vn(u*5,hy*14,4));
+      if(Math.abs(hy-.30)<.012||Math.abs(hy-.60)<.012)a*=.3;if(u>.84)a*=.55;if(u<.27){if((u>.075&&u<.115)||(u>.16&&u<.2))return 0;a=Math.max(a,Math.pow(sm(.2,1,hy),1.1))*1.04}return a},
+    after:function(x0,x1,Ht,me){var gd=[x0,x1];L.gold=gd;var mx0=x0+(x1-x0)*.12,mx1=x0+(x1-x0)*.86,st=Math.max(2.4,2.6*L.k);
+      row1(mx0,mx1,Ht+L.h(3),st,function(x){return .5-.22*(x-mx0)/(mx1-mx0)},null,.8);
+      var c=x0+(x1-x0)*.3,zb=Ht+L.h(3.4),Mh=L.h(22),z1=zb+Mh*.5,q;
+      for(q=0;q<=1.0001;q+=.2){var zz=zb+(z1-zb)*q,w=L.h(1.5)*(1-q)+L.h(.45)*q;dot(c-w,L.yw-zz,L.R0*.66,.72);dot(c+w,L.yw-zz,L.R0*.66,.46)}
+      for(q=.2;q<.95;q+=.2)dot(c,L.yw-(z1+Mh*.5*q),L.R0*(.68-.2*q),.8-.25*q);
+      L.lights.push([c,L.yw-(z1+Mh*.5+L.h(1)),1])}});
+  /* 파크원 B · A — 유리는 세로줄, 붉은 틀 넷(양 끝과 가운데 둘)은 밑동부터 꼭대기 너머까지 촘촘히 늘어선 점(해 쪽이 밝다).
+     꼭대기는 닫힌 상자 위의 넓은 판 */
+  function parc(x0,x1,h,light,start,box,plate,lamp){tower({x0:x0,x1:x1,h:h,st:'v',light:light,start:start,rim:0,
+    tone:function(u,hy){var c=Math.abs(u-.5);if(c<.07)return 0;return lit(light,start,hy)*(1-.15*u)},
+    after:function(X0,X1,Ht,me){var rs=Math.max(1.9,2.1*L.k),w=X1-X0,cm=X0+w*.5,fx=[X0+L.h(.8),cm-w*.05,cm+w*.05,X1-L.h(.8)];
+      fx.forEach(function(x,k){col1(x,rs*.5,Ht+L.h(2),rs,function(z){var hy=Math.min(1,z/Ht);return (k===0||k===2?.66:.38)*(.18+.82*Math.pow(sm(.25,1,hy),1.2))},me,.88)});
+      var bw=w*box,pw=w*plate,cb=X0+w*.5,bh=L.h(6);
+      for(var z=Ht+L.h(2.2);z<Ht+bh;z+=Math.max(2.3,2.5*L.k))row1(cb-bw/2,cb+bw/2,z,Math.max(2.3,2.6*L.k),function(x){return .42-.2*(x-(cb-bw/2))/bw},null,.8);
+      row1(cb-pw/2,cb+pw/2,Ht+bh+L.h(1),Math.max(2.1,2.4*L.k),function(x){return .62-.3*(x-(cb-pw/2))/pw},null,.84);
+      me.zt=function(x){return Ht+(Math.abs(x-cb)<pw/2?bh+L.h(2):0)};
+      if(lamp)L.lights.push([cb+pw/2-L.h(1),L.yw-(Ht+bh+L.h(3.4)),.95])}})}
+  parc(902,948,226,.5,.40,.38,.9,0);
+  parc(962,1016,292,.56,.38,.42,.94,1);
+  /* 콘래드 — 어두운 유리, 늦게 밝아진다 */
+  tower({x0:1096,x1:1142,h:182,st:'v',light:.26,start:.55,rim:.5});
+  /* 원 IFC — 지붕이 오른쪽으로 비스듬히 내려간다 */
+  tower({x0:1150,x1:1188,h:156,st:'v',light:.34,start:.45,rim:.6,zt:function(x,x0,x1,Ht){return Ht-L.h(16)*(x-x0)/(x1-x0)},
+    after:function(x0,x1,Ht,me){var n=Math.max(8,Math.round((x1-x0)/Math.max(2.3,2.5*L.k)));for(var i=0;i<=n;i++){var x=x0+(x1-x0)*i/n;dot(x,L.yw-me.zt(x)-L.h(.8),L.R0*.8,.42-.2*i/n)}}});
+  /* 모자 탑(TP) — 꼭대기가 넓어지는 역사다리꼴 모자 */
+  tower({x0:1318,x1:1362,h:188,st:'v',light:.3,start:.5,rim:.5,
+    after:function(x0,x1,Ht,me){var w=x1-x0,cw=w*1.32,c=(x0+x1)/2,ch=L.h(14),q,st=Math.max(2.3,2.5*L.k);
+      for(q=.25;q<1;q+=.33){var ww=w+(cw-w)*q;row1(c-ww/2,c+ww/2,Ht+ch*q,st,function(x){return .34-.14*(x-(c-ww/2))/ww},null,.8)}
+      me.zt=function(x){var d=Math.abs(x-c)-w/2;return Ht+(d<=0?ch:Math.max(0,ch-d*ch/((cw-w)/2)))};me.x0=c-cw/2;me.x1=c+cw/2}});
+  /* 뒷줄 — 쓰리 IFC(매끈한 면은 세로줄, 접힌 면은 결을 바꿔 가로줄 · 위 접힌 면은 하늘을 향해 밝다), 원반과 깔때기 */
+  tower({x0:1052,x1:1104,h:246,st:'v',light:.48,start:.42,rim:.75,
+    tone:function(u,hy){var a=lit(.48,.42,hy);if(hy>.64&&u>.18-.05*(hy-.64)/.36&&u<.56+.07*(hy-.64)/.36)return Math.min(1,a*1.32+.03);
+      if(hy<.645&&hy>.30&&u>.5-.25*(hy-.3)/.345&&u<.62+.35*(hy-.3)/.345)return a*.62;if(hy<=.30&&u>.5&&u<.64)return a*.62;return a*(u<.5?1.12:.92)},
+    after:function(x0,x1,Ht,me){var w=x1-x0,k=L.k,z;
+      var c=x0+w*.47,dw=L.h(64)/2,rise=L.h(11),zt0=Ht+rise,n=Math.max(10,Math.round(2*dw/Math.max(2.3,2.6*k))),i,t;
+      for(i=0;i<=n;i++){t=i/n;var xx=c-dw+2*dw*t,ey=Math.sin(Math.PI*t);dot(xx,L.yw-(zt0-L.h(.6)*ey),L.R0*.84,.56-.22*t);dot(xx,L.yw-(zt0+L.h(1)*ey),L.R0*.7,.26-.1*t)}
+      var bw=w*.36;for(z=Ht+L.h(2.6);z<zt0-L.h(1.5);z+=Math.max(2.4,2.6*k)){var f=(z-Ht)/rise,ww=bw+(2*dw*.8-bw)*f;row1(c-ww/2,c+ww/2,z,Math.max(2.6,3*k),function(){return .3},null,.76)}
+      L.lights.push([c+dw-L.h(1.5),L.yw-(zt0+L.h(2.6)),.95]);me.zt=function(x){return Ht+(Math.abs(x-c)<dw?rise+L.h(1.5):0)}}});
+  /* 전경련회관 — 접힌 가로 띠라 가로줄, 띠 끝이 모서리 밖으로 한 점씩 엇갈려 톱니가 된다. 지붕은 평평하다 */
+  tower({x0:1226,x1:1270,h:214,st:'h',light:.42,start:.45,rim:.7,tone:function(u,hy){return lit(.42,.45,hy)*(u<.5?1.25:.8)},
+    after:function(x0,x1,Ht,me,xs,zs){zs.forEach(function(z,j){if(j%2||z>Ht)return;var a=lit(.42,.45,z/Ht);if(a<.05)return;dot(x0-L.h(1.3),L.yw-z,L.R0*.8,a*.9);dot(x1+L.h(1.3),L.yw-z,L.R0*.8,a*.45)})}});
+  /* LG 트윈타워 — 창이 뚫린 돌벽이라 고른 격자. 바깥 모서리는 곡면이라 칸이 좁아지고 어둡다. 꼭대기 바깥 어깨는 다섯 단 */
+  function lg(x0u,x1u,sd){tower({x0:x0u,x1:x1u,h:120,st:'g',cs:4.6,rs:4,light:.30,start:.5,rim:sd<0?.62:0,
+    zt:function(x,x0,x1,Ht){var w=x1-x0,fp=Ht/34,z8=Ht-8*fp,d=sd<0?x-x0:x1-x;for(var k=5;k>=1;k--)if(d<w*.35*(1-Math.sqrt(Math.max(0,1-Math.pow(k/5,2)))))return z8+(k-1)*8*fp/5;return Ht},
+    tone:function(u,hy){var d=sd<0?u:1-u;return lit(.30,.5,hy)*(d<.25?.7:1)}})}
+  lg(752,800,-1);lg(818,866,1);
+  /* 강가의 낮은 건물 — 탑 밑동을 잇는다(어둡고 위층에만 옅은 격자) */
+  [[628,640,30],[692,708,26],[708,752,46],[800,818,36],[866,902,56],[948,962,40],[1016,1052,62],[1142,1150,44],[1188,1226,70],[1270,1318,52],[1362,1440,46]].forEach(function(t){
+    tower({x0:t[0],x1:t[1],h:t[2],st:'g',cs:4.6,rs:4.2,light:.10,start:.6,rim:.25,refl:.02})});
+  /* 먼 건물 — 안개 너머(하늘의 점이 그 자리에서만 성겨진다) */
+  [[700,728,70],[728,746,54],[866,892,92],[1020,1046,104],[1138,1160,120],[1196,1222,96],[1272,1300,112],[1300,1318,84],[1372,1404,98],[1404,1440,76]].forEach(function(t){haze(t[0],t[1],t[2],.42)});
+  [[-30,40,16],[40,96,24],[96,150,12],[150,230,20],[230,300,27],[300,352,17],[352,420,24],[420,470,14],[470,520,21],[520,570,29],[570,610,20],[610,640,26]].forEach(function(t){haze(t[0],t[1],t[2],.58)});
 }
-function fillPoly(p,c){ctx.globalAlpha=1;ctx.fillStyle=c;ctx.beginPath();ctx.moveTo(p[0][0],p[0][1]);for(var i=1;i<p.length;i++)ctx.lineTo(p[i][0],p[i][1]);ctx.closePath();ctx.fill()}
-function inside(p,x,y){var c=false,i,j;for(i=0,j=p.length-1;i<p.length;j=i++){var a=p[i],b=p[j];if(((a[1]>y)!==(b[1]>y))&&(x<(b[0]-a[0])*(y-a[1])/(b[1]-a[1])+a[0]))c=!c}return c}
-function dot(x,y,a,z){if(a<.02)return;ctx.globalAlpha=Math.min(1,a);var r=L.SZ*(z||1);ctx.drawImage(SP,x-r,y-r,r*2,r*2)}
-/* 하늘빛의 세기(0~1) — 강물에 비칠 밝기를 정할 때 쓴다. 그리는 빛과 같은 식 */
-function skyA(x,y){var h=L.yw-y,a=.03+.04*Math.max(0,Math.min(1,y/L.yw))+.09*Math.exp(-Math.max(0,h)/L.h(110));
-  var ex=(x-L.sx)/L.R,ey=(y-(L.yw+L.h(40)))/(L.R*.52),r=Math.sqrt(ex*ex+ey*ey);if(r<1)a+=.36*Math.pow(1-r,1.5);return a}
-function sky(){ /* 하늘 — 띠 위까지 아주 옅게 들어 올리고, 지평선에 붙은 빛과 지평선 아래 해의 둥근 후광(첫 화면의 빛과 같은 방식) */
-  var yw=L.yw;
-  ctx.save();ctx.beginPath();ctx.rect(0,0,W,yw+.5);ctx.clip();
-  var g=ctx.createLinearGradient(0,0,0,yw);g.addColorStop(0,'rgba(255,255,255,.03)');g.addColorStop(1,'rgba(255,255,255,.07)');ctx.fillStyle=g;ctx.fillRect(0,0,W,yw);
-  var hb=ctx.createLinearGradient(0,yw-L.h(440),0,yw),i;for(i=0;i<=8;i++){var hh=L.h(440)*(1-i/8);hb.addColorStop(i/8,'rgba(255,255,255,'+(.09*Math.exp(-hh/L.h(110))).toFixed(4)+')')}
-  ctx.fillStyle=hb;ctx.fillRect(0,yw-L.h(440),W,L.h(440));
-  halo(yw+L.h(40),1);ctx.restore();
-  ctx.save();ctx.beginPath();ctx.rect(0,yw,W,H-yw);ctx.clip();halo(yw-L.h(40),.42);ctx.restore();   // 강물에 비친 후광
+
+/* ── 고르게 흩어진 점 ── 밝기 T 에서 점의 투명도 a(어두운 곳만 옅어진다)와 촘촘함 D = T/a 를 정하고,
+   이웃과의 거리가 1/√D 에 비례하게 점을 놓는다(포아송 원판 — 손으로 찍은 듯 고르되 줄이 서지 않는다) */
+var FADE=.22;
+function stip(x0,y0,x1,y1,T,seed){
+  var R=rnd(seed),r0=L.sp*.92,cs=r0/Math.SQRT2,gw=Math.max(1,Math.ceil((x1-x0)/cs)),gh=Math.max(1,Math.ceil((y1-y0)/cs)),G=new Int32Array(gw*gh).fill(-1),
+      PX=[],PY=[],PR=[],PA=[],act=[];
+  function prm(x,y){var t=T(x,y);if(t<.006)return null;var a=Math.pow(Math.min(1,t/FADE),.8);if(a<.12)return null;return [r0/Math.sqrt(Math.min(1,t/a)),a]}
+  function ok(x,y,r){var gx=Math.floor((x-x0)/cs),gy=Math.floor((y-y0)/cs),n=Math.ceil(r/cs),i,j;
+    for(j=Math.max(0,gy-n);j<=Math.min(gh-1,gy+n);j++)for(i=Math.max(0,gx-n);i<=Math.min(gw-1,gx+n);i++){var p=G[j*gw+i];if(p<0)continue;var dx=PX[p]-x,dy=PY[p]-y;if(dx*dx+dy*dy<r*r*.98)return false}return true}
+  function add(x,y,q){var gx=Math.floor((x-x0)/cs),gy=Math.floor((y-y0)/cs);if(G[gy*gw+gx]>=0)return false;G[gy*gw+gx]=PX.length;PX.push(x);PY.push(y);PR.push(q[0]);PA.push(q[1]);act.push(PX.length-1);return true}
+  var sd=r0*6,x,y,q;
+  for(y=y0+sd*.5;y<y1;y+=sd)for(x=x0+sd*.5;x<x1;x+=sd){var jx=x+(R()-.5)*sd*.8,jy=y+(R()-.5)*sd*.8;if(jx<x0||jx>=x1||jy<y0||jy>=y1)continue;q=prm(jx,jy);if(q&&ok(jx,jy,q[0]))add(jx,jy,q)}
+  while(act.length){var ai=Math.floor(R()*act.length),p=act[ai],found=false;
+    for(var k=0;k<14;k++){var an=R()*6.28318,dd=PR[p]*(1+R()*.9),cx=PX[p]+Math.cos(an)*dd,cy=PY[p]+Math.sin(an)*dd;if(cx<x0||cx>=x1||cy<y0||cy>=y1)continue;
+      q=prm(cx,cy);if(!q)continue;if(ok(cx,cy,Math.max(q[0],PR[p]*.85))&&add(cx,cy,q)){found=true;break}}
+    if(!found){act[ai]=act[act.length-1];act.pop()}}
+  return {x0:x0,y0:y0,x1:x1,y1:y1,T:T,r0:r0,PX:PX,PY:PY,PR:PR,PA:PA}}
+/* 고르게 펴기 — 가까운 이웃끼리 조금씩 밀어 낸다(세 번). 건물 윤곽 안이나 범위 밖으로는 옮기지 않는다 */
+function relax(S){var x0=S.x0,y0=S.y0,x1=S.x1,y1=S.y1,T=S.T,PX=S.PX,PY=S.PY,PR=S.PR,r0=S.r0;
+  var n=PX.length,it,i,j,c2=r0*2.4,w2=Math.max(1,Math.ceil((x1-x0)/c2)),h2=Math.max(1,Math.ceil((y1-y0)/c2));
+  for(it=0;it<3;it++){var G2=new Int32Array(w2*h2).fill(-1),NX=new Int32Array(n).fill(-1);
+    for(i=0;i<n;i++){var c=Math.floor((PY[i]-y0)/c2)*w2+Math.floor((PX[i]-x0)/c2);if(c>=0&&c<G2.length){NX[i]=G2[c];G2[c]=i}}
+    var MX=new Float32Array(n),MY=new Float32Array(n);
+    for(i=0;i<n;i++){var r=PR[i]*1.45,gx=Math.floor((PX[i]-x0)/c2),gy=Math.floor((PY[i]-y0)/c2),m=Math.ceil(r/c2),fx=0,fy=0;
+      for(var yy=Math.max(0,gy-m);yy<=Math.min(h2-1,gy+m);yy++)for(var xx=Math.max(0,gx-m);xx<=Math.min(w2-1,gx+m);xx++)for(j=G2[yy*w2+xx];j>=0;j=NX[j]){if(j===i)continue;var dx=PX[i]-PX[j],dy=PY[i]-PY[j],dd=Math.sqrt(dx*dx+dy*dy);if(dd>=r||dd<1e-6)continue;var f=(r-dd)/r;fx+=dx/dd*f;fy+=dy/dd*f}
+      MX[i]=fx*PR[i]*.2;MY[i]=fy*PR[i]*.2}
+    for(i=0;i<n;i++){var nx2=PX[i]+MX[i],ny2=PY[i]+MY[i];if(nx2<x0||nx2>=x1||ny2<y0||ny2>=y1)continue;if(T(nx2,ny2)<.006)continue;PX[i]=nx2;PY[i]=ny2}}
 }
-function halo(cy,k){ctx.save();ctx.globalAlpha=1;ctx.translate(L.sx,cy);ctx.scale(1,.52);var g=ctx.createRadialGradient(0,0,0,0,0,L.R),i;
-  for(i=0;i<=10;i++){var r=i/10;g.addColorStop(r,'rgba(255,255,255,'+(k*.36*Math.pow(1-r,1.5)).toFixed(4)+')')}
-  ctx.fillStyle=g;ctx.fillRect(-L.R,-L.R,L.R*2,L.R*2);ctx.restore()}
-function far(){ /* 먼 시가지 — 윤곽 없는 흐린 띠. 위 가장자리를 1px 씩 내려 여러 번 옅게 겹쳐 부드럽게 */
-  var yw=L.yw,p=[],x;for(x=-10;x<=W+10;x+=6){var u=(x-L.X(560))/Math.max(1,L.X(1440)-L.X(560));
-    var hh=(L.h(14)+L.h(26)*sm(-.15,.35,u)+L.h(2)*Math.sin(x/(L.h(53)))+L.h(1.2)*Math.sin(x/(L.h(19))+1))*(1-.7*sm(1.0,1.45,u));p.push([x,yw-hh])}
-  for(var k=0;k<7;k++){var q=[[-10,yw+3]].concat(p.map(function(v){return [v[0],v[1]+k*1.1]})).concat([[W+10,yw+3]]);fillPoly(q,rgba(band,.035))}
-}
-function back(){BACK.forEach(function(t){var p=poly(t),top=L.yw-L.h(t.h)-L.h(16),g=ctx.createLinearGradient(0,top,0,L.yw);
-  g.addColorStop(0,rgba(band,.40));g.addColorStop(1,rgba(band,.12));
-  [-.25,.25].forEach(function(o){fillPoly(p.map(function(v){return [v[0]+o,v[1]]}),g)})})}   // 0.5px 어긋나게 두 번 — 가장자리를 무르게
-function tower(t){
-  var p=poly(t),X=L.X,h=L.h,yw=L.yw,x0=X(t.x0),x1=X(t.x1),Ht=h(t.h),top=yw-Ht,gx=h(t.g[0]),gy=h(t.g[1]),w=x1-x0;
-  fillPoly(p,band);
-  var c=(x0+x1)/2,peak=0;if(t.top)t.top.forEach(function(q){peak=Math.max(peak,h(q[1]))});
-  for(var y=yw-gy*.6;y>top-peak;y-=gy){
-    var hy=yw-y,f=Math.min(1,hy/Ht),tp=h(t.taper||0)*Math.min(1,(yw+3-y)/(yw+3-top)),xa=x0+tp,xb=x1-tp;
-    var n=Math.max(2,Math.round((xb-xa)/gx)),i;
-    for(i=0;i<n;i++){
-      var x=xa+(i+.5)*(xb-xa)/n;if(!inside(p,x-L.SZ,y)||!inside(p,x+L.SZ,y))continue;var a;   // 점은 좌우 끝까지 윤곽 안일 때만
-      if(t.frames&&(i===0||i===n-1||i===Math.floor(n/2)))continue;            // 파크원의 붉은 틀 자리 — 아래에서 이어진 점선으로
-      if(t.crown==='parc'&&y<top+gy&&Math.abs(x-c)<w*.33/2+L.SZ)continue;  // 받침이 가리는 맨 윗줄
-      if(t.roof){var u2=(x-x0)/w,yr=u2<.34?top-h(28):top-h(28)+(h(28)-h(16))*(u2-.34)/.66;if(y<yr+3.6)continue}   // 지붕선 점과 겹치지 않게
-      if(t.gold){a=.30+.65*f;if(top-y>-gy*1.6&&top-y<-gy*.4)a*=.35;if(Math.abs(f-.335)<.02||Math.abs(f-.67)<.02)a*=.75;if(i===n-1)a*=.55;if(i===0)a*=1.12}
-      else if(t.faint){a=.16*sm(Ht-h(40),Ht,hy)}
-      else{a=.8*sm(L.light-L.fade,L.light,hy)*(.72+.28*Math.max(0,(hy-L.light)/Math.max(1,Ht-L.light)));
-        if(t.facet&&(x-x0)/w>.18+.64*f)a*=.4}
-      dot(x,y,a);
-    }
-  }
-  if(t.frames){var n2=Math.max(2,Math.round(w/gx)),cols=[x0+.5*w/n2,x1-.5*w/n2,x0+(Math.floor(n2/2)+.5)*w/n2];   // 양 끝과 가운데 — 간격 3.2의 이어진 점선
-    cols.forEach(function(fx){var y0=L.yw-L.light+L.fade,yy;for(yy=y0;yy>top+1.5;yy-=3.2*Math.sqrt(L.s)){dot(fx,yy,.5*sm(L.light-L.fade,L.light,L.yw-yy),.9)}})}
-  if(t.crown==='parc'){var bw=w*.33,bh=h(7);fillPoly([[c-bw/2,top+1],[c+bw/2,top+1],[c+bw/2,top-bh],[c-bw/2,top-bh]],band);
-    line(c-w*.35,top-bh-1.5,c+w*.35,top-bh-1.5,.62)}
-  if(t.crown==='ifc'){var fh=h(9);fillPoly([[c-w*.2,top+1],[c+w*.2,top+1],[c+w*.31,top-fh],[c-w*.31,top-fh]],band);
-    line(c-w*.31,top-fh-1.5,c+w*.31,top-fh-1.5,.62)}
-  if(t.antenna){var ax=x0+w*.56;line(ax,top-2,ax,top-h(t.antenna),.5)}
-  if(t.roof){line(x0+.5,top-h(28)+1.5,x0+w*.34,top-h(28)+1.5,.55);line(x0+w*.34,top-h(28)+1.5,x1-.5,top-h(16)+1.5,.55)}
-}
-function line(xa,ya,xb,yb,a){var d=Math.hypot(xb-xa,yb-ya),n=Math.max(1,Math.round(d/(3.2*Math.sqrt(L.s)))),i;for(i=0;i<=n;i++)dot(xa+(xb-xa)*i/n,ya+(yb-ya)*i/n,a,.9)}
-function trees(){ /* 여의도 한강공원 나무 줄 — 매끈한 띠, 높이 6~8 */
-  var yw=L.yw,p=[[-10,yw+3]],x;for(x=-10;x<=W+10;x+=4)p.push([x,yw-L.h(7)-L.h(1.4)*Math.sin(x/L.h(37))-L.h(.8)*Math.sin(x/L.h(13)+1)]);p.push([W+10,yw+3]);fillPoly(p,band)}
-function water(polys){ /* 강물 — 가로 점줄. 줄 간격은 물가에서 아래로 갈수록 넓어지고 줄마다 반 칸 어긋난다. 비치는 것은 하늘빛과 63빌딩뿐 */
-  var yw=L.yw,gx=7*L.k,d=L.h(3),k=0,g63=null;polys.forEach(function(q){if(q.gold)g63=q});
-  var c63=g63?(g63.p[0][0]+g63.p[1][0])/2:0;
-  function fr(v){return v-Math.floor(v)}
-  while(yw+d<H-6){
-    var y=yw+d,ym=yw-d*.92,off=(k%2)*gx/2,lam=L.h(64)+2.2*d,ph=k*1.7;
-    var amp=1.5+.05*d,wl=40+20*fr(k*.618+.2),wk=1+.25*(2*fr(k*.754+.3)-1),ak=.55+.45*fr(k*.381+.7);
-    for(var x=off;x<W;x+=gx){
-      var xs=x+amp*Math.sin(2*Math.PI*x/wl+ph),a=0,hit=null;                 // 물결이 비춰 볼 자리를 옆으로 흔든다
-      for(var q=0;q<polys.length;q++){var tx2=polys[q].gold?c63+(xs-c63)/wk:xs;if(inside(polys[q].p,tx2,ym)){hit=polys[q];break}}
-      var hb=Math.exp(-d/L.h(24)),hh=Math.exp(-d/L.h(95));
-      var ex=(xs-L.sx)/L.R,glow=Math.max(0,1-Math.abs(ex));
-      if(hit){if(hit.gold)a=.62*ak*(.55+.45*Math.min(1,(yw-ym)/L.h(230)))*Math.exp(-d/L.h(100))/Math.exp(-d/L.h(120));else a=(1-hit.a)*(skyA(xs,ym)/.46)*(hb+glow*hh)}
-      else if(d<L.h(9))a=0;                                      // 물가 바로 아래는 나무 줄의 그림자
-      else a=(skyA(xs,ym)/.46)*(hb+glow*hh);
-      var rip=.55+.45*Math.sin(2*Math.PI*x/lam+ph)*Math.sin(2*Math.PI*x/(lam*2.7)+ph*.6+1);
-      a=Math.min(.66,a*.95*rip*Math.exp(-d/L.h(120)));
-      a*=sm(.02,.14,a);                                           // 문턱 없이 부드럽게 사그라진다
-      if(a>=.02)dot(x,y,a);
-    }
-    d+=L.h(3.6)+.065*d;k++;
-  }
-}
-function draw(){ /* 크기 · 배율 · 테마 · 글 자리가 그대로면 다시 그리지 않는다(보이지 않거나 문서에서 떨어졌으면 그리지 않는다) */
+function emit(S){for(var i=0;i<S.PX.length;i++)dot(S.PX[i],S.PY[i],L.R0,S.PA[i])}
+
+/* ── 강물 ── 거울처럼 비추되 물결이 옆으로 흔들고 가로로 끊는다. 물가 바로 아래는 지평선 빛의 얇은 띠, 해 아래는 반짝이는 길,
+   63빌딩 아래는 금빛 기둥. 띠 아래 끝으로 갈수록 사그라진다 */
+function shore(x){return L.h(7)+L.h(1.6)*vn(x/(60*L.s),.5,9)}
+function reflect(x,z){if(z<shore(x))return 0;var b=inB(x,z,0);if(b)return b.rv?b.rv(x,z):.02;return skyT(x,z)*hazeAt(x,z)}
+function waterT(x,y){var d=y-L.yw;if(d<=.8)return 0;var s=L.s,Lx=(26+.55*d)*s,vv=Math.log(1+.055*d/1.6)/(.055*s),
+    n1=vn(x/Lx,vv,11),n2=vn(x/(Lx/.6),vv*.5,12),amp=(.6+.05*d)*s,ux=x+amp*n2,zm=d*.93+(.3+.02*d)*n1*s,
+    R=reflect(ux,zm),calm=Math.exp(-d/(8*s)),rip=calm+(1-calm)*Math.max(0,Math.min(1.2,.5+.75*n1)),
+    att=.55*Math.exp(-d/(34*s))+.10*Math.exp(-d/(170*s)),Tw=R*att*rip,
+    sig=(16+.32*d)*s,path=.86*Math.exp(-Math.pow((ux-L.sx)/sig,2))*Math.max(0,Math.min(1.25,.2+1.15*n1))*Math.exp(-d/(170*s));
+  if(L.gold){var g0=L.gold[0],g1=L.gold[1],bx=sm(g0-2,g0+3,ux)*(1-sm(g1-3,g1+2,ux));path=Math.max(path,.5*bx*Math.max(0,Math.min(1.2,.35+.9*n1))*Math.exp(-d/(110*s)))}
+  return Math.min(1,Math.max(Tw,path)*sm(H-1,H-70*s,y)*(.62+.38*sm(-60*s,300*s,x)))}
+
+/* 강물 점 — 가로줄. 줄 간격은 물가에서 촘촘하고 아래로 넓어진다. 줄 안에서는 밝기를 쌓아 1이 넘을 때마다 점 하나(밝을수록 촘촘),
+   어두운 곳은 점이 옅어진다. 줄은 느리게 출렁이고 점마다 아주 조금 어긋난다 */
+function rows(y0,y1){var s=L.s,v=2.4,k=0,sp=L.sp*1.05;
+  while(L.yw+v<y1){var y=L.yw+v,acc=hh(k,3),x;
+    for(x=0;x<W;x+=1){var t=waterT(x,y);if(t<.006){acc=Math.min(acc,.5);continue}var a=Math.pow(Math.min(1,t/FADE),.8);if(a<.12)continue;
+      var st=Math.sqrt(t/a)/sp*(.8+.4*hh(Math.floor(x),k+9));acc+=st;if(acc>=1){var fr=(acc-1)/st;acc-=1;var px=x-fr,wob=(vn(px/(34*s),k*.31,5)*1.3+vn(px/(11*s),k*.7,6)*.45)*(1+.025*v)*s;dot(px+(hh(k,Math.floor(x))-.5)*.6,y+wob,L.R0,a)}}
+    v+=Math.max(3,(3.3+.06*v)*Math.sqrt(s));k++}}
+/* 해 자리의 아주 옅은 빛 — 첫 화면 행성 뒤의 빛과 같은 방식(점이 아닌 부드러운 빛). 건너편 둑에서 끊기고, 강물에는 30%만 비쳐
+   아래로 사그라진다. 부드러운 빛이라 1/4 크기로 그려 늘인다 */
+var GC=null;
+function glow(){var q=4,gw=Math.ceil(W/q)+1,gh=Math.ceil(H/q)+1,g,i,rg,lg,rx=340*L.s/q,ry=95*L.s/q,yw=L.yw/q,sh=L.h(7)/q,fd=L.h(24)/q;
+  GC=GC||document.createElement('canvas');GC.width=gw;GC.height=gh;g=GC.getContext('2d');
+  g.save();g.translate(L.sx/q,yw);g.scale(rx/ry,1);rg=g.createRadialGradient(0,0,0,0,0,ry*2.2);
+  for(i=0;i<=10;i++){var t=i/10,u=t*2.2;rg.addColorStop(t,'rgba(248,247,244,'+(.05*Math.exp(-u*u)).toFixed(4)+')')}
+  g.fillStyle=rg;g.fillRect(-ry*2.3,-ry*2.3,ry*4.6,ry*4.6);g.restore();
+  function o(y){return Math.max(0,Math.min(1,y/gh))}
+  lg=g.createLinearGradient(0,0,0,gh);lg.addColorStop(0,'rgba(0,0,0,1)');lg.addColorStop(o(yw-sh-fd),'rgba(0,0,0,1)');lg.addColorStop(o(yw-sh),'rgba(0,0,0,0)');
+  lg.addColorStop(o(yw+.25),'rgba(0,0,0,0)');lg.addColorStop(o(yw+.75),'rgba(0,0,0,.3)');lg.addColorStop(o(yw+L.h(60)/q),'rgba(0,0,0,0)');lg.addColorStop(1,'rgba(0,0,0,0)');
+  g.globalCompositeOperation='destination-in';g.fillStyle=lg;g.fillRect(0,0,gw,gh);g.globalCompositeOperation='source-over';
+  ctx.globalCompositeOperation='destination-over';ctx.drawImage(GC,0,0,gw*q,gh*q);ctx.globalCompositeOperation='source-over'}
+var job=0,done='',cache=null;
+function draw(){
   var b=cv.getBoundingClientRect();if(!b.width||!b.height||!cv.parentNode)return;
-  var tx=cv.parentNode.querySelector('.tx'),t=tx?tx.getBoundingClientRect():null,d=Math.min(window.devicePixelRatio||1,2);col();
-  var key=[b.width,b.height,d,band,one.matches,t?t.left-b.left:0,t?t.right-b.left:0].join();
-  if(key===last)return;last=key;
-  W=b.width;H=b.height;dpr=d;
-  cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,W,H);
-  L=layout(t,b);sky();far();back();
-  var polys=[];BACK.forEach(function(t){polys.push({p:poly(t),a:.26})});
-  TW.forEach(function(t){if(!t.gold)tower(t)});TW.forEach(function(t){if(t.gold)tower(t)});
-  TW.forEach(function(t){polys.push({p:poly(t),gold:!!t.gold})});
-  trees();water(polys);ctx.globalAlpha=1;
+  var tx=cv.parentNode.querySelector('.tx'),t=tx?tx.getBoundingClientRect():null,vv=window.visualViewport,d=Math.min(6,(window.devicePixelRatio||1)*Math.max(1,vv?vv.scale:1));
+  if(b.width*b.height*d*d>167e5)d=Math.sqrt(167e5/(b.width*b.height));
+  var key=[b.width,b.height,one.matches,t?t.left-b.left:0,t?t.right-b.left:0,t?t.bottom-b.top:0].join(),pk=key+'/'+d;
+  if(pk===done)return;
+  var my=++job,steps=[],S;
+  if(key!==last||!cache)steps.push(
+    function(){W=b.width;H=b.height;L=layout(t,b);B=[];NDOT=0;DS={};L.lights=[];L.gold=null;CB=[];CH=[];for(var i=0;i<Math.ceil(W)+2;i++){CB.push([]);CH.push([])}scene()},
+    function(){var yw=L.yw;S=stip(0,Math.max(0,L.tb+10),W,yw-1,function(x,y){var z=yw-y;if(z<shore(x))return 0;if(inB(x,z,.6))return 0;var T=skyT(x,z)*hazeAt(x,z);if(x<L.tr&&y<L.tb+40)T*=sm(L.tb+8,L.tb+40,y);return T},7)},
+    function(){relax(S)},
+    function(){S&&emit(S);rows(L.yw+2,H);L.lights.forEach(function(p){dot(p[0],p[1],L.R0,p[2])});cache={DS:DS,L:L,W:W,H:H,n:NDOT};last=key});
+  steps.push(function(){var c=cache;DS=c.DS;L=c.L;W=c.W;H=c.H;dpr=d;
+    cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,W,H);paint();glow();done=pk;window.__dawnDots=c.n});
+  (function run(){if(my!==job)return;steps.shift()();if(steps.length)setTimeout(run,0)})();
 }
-draw();
-if('ResizeObserver' in window)new ResizeObserver(function(){draw()}).observe(cv);   // 글꼴이 늦게 와 띠 높이가 바뀌어도 다시 그린다
-addEventListener('resize',function(){draw()});                                     // 배율만 바뀌는 경우(확대 · 다른 화면으로 옮김)
-new MutationObserver(function(){draw()}).observe(root,{attributes:true,attributeFilter:['data-theme']});
+var on=false;function go(){if(on)return;on=true;draw();
+  if('ResizeObserver' in window)new ResizeObserver(function(){draw()}).observe(cv);
+  addEventListener('resize',function(){draw()});
+  if(window.visualViewport){var zt=0;visualViewport.addEventListener('resize',function(){clearTimeout(zt);zt=setTimeout(draw,150)})}}
+try{var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){io.disconnect();go()}},{rootMargin:'100% 0px'});io.observe(cv)}catch(e){go()}   // 지켜보기가 없거나 실패하면 바로 그린다
 })();"""
 
 CSS = r"""
@@ -601,8 +678,8 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
 .band .eyebrow{color:var(--band-ink)} .band .sub{color:var(--band-62)}
 .band .more{color:var(--band-ink)}
 /* 브리핑 띠 그림 — 개장 전 여의도의 새벽(DAWN_JS 가 띠 전체에 그린다 · 사장 2026-10-02). 글은 띠 위쪽에 두고 그림은 그 아래와 오른쪽에.
-   한 열에서는 글 아래에 그림 자리를 비워 둔다 — 탑의 가장 높은 곳(설계 305 × 배율)에 글과의 틈 28 과 물가 아래 108 을 더하고
-   띠의 아래 안쪽 여백 72 를 뺀 만큼(64 + 305 × 배율). 배율이나 가장 높은 탑을 바꾸면 #brief>.w 의 아래 여백도 같이 고친다 */
+   한 열에서는 글 아래에 그림 자리를 비워 둔다 — 탑의 가장 높은 곳(설계 305 × 배율)에 글과의 틈 28 과 물가 아래 96 을 더하고
+   띠의 아래 안쪽 여백 72 를 뺀 만큼(52 + 305 × 배율). 배율이나 가장 높은 탑을 바꾸면 #brief>.w 의 아래 여백도 같이 고친다 */
 #brief{position:relative;align-items:flex-start}
 #brief>.w{position:relative;z-index:1}
 #brief .dawn{position:absolute;left:0;top:0;width:100%;height:100%;display:block;pointer-events:none}
@@ -644,7 +721,7 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
   .nav,.nav.scrolled{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}
   .mmenu.open{display:flex}
   .split{display:block}
-  #brief>.w{padding-bottom:calc(64px + min(57.872vw, 305px))}   /* 배율 0.74 × 폭 ÷ 390(최대 1) × 305 — DAWN_JS 의 한 열 배율과 같다 */
+  #brief>.w{padding-bottom:calc(52px + min(66.474vw, 305px))}   /* 배율 0.85 × 폭 ÷ 390(최대 1) × 305 — DAWN_JS 의 한 열 배율과 같다 */
   .nav.on-band,.nav.on-band.scrolled{background:var(--band)}
   .nav.on-band:not(.scrolled){background:transparent}   /* 첫 화면 맨 위에서는 무대의 빛이 머리 뒤까지 이어지게 */
   .proof{grid-template-columns:1fr;row-gap:28px;margin-top:40px}
