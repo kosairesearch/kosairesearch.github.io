@@ -16,9 +16,9 @@
     넓히면 → 시장으로 넓히면(브리핑) → 다시 내 종목으로(검색).
   · 문구는 copy_text() 한 곳에 모았다. 제목은 명사형을 기본으로 절마다 모양을 바꾸고, 서브는 합쇼체. 해요체 평서문과
     쉼표로 가른 'A, B' 제목은 쓰지 않는다. 근거와 규칙은 reports/카피라이팅과 랜딩페이지 구성 이론 총정리.md 와 노트 16–20.
-  · 그림·영상·3D 는 만들지 않는다. 들어갈 자리만 표시한다(종류 · 비율 · 한 줄 이름) — 리포트 절과 업종 절은 실제 화면을 찍어
-    상자 없이 두고(landing_art.py · shot()), 갱신 절은 공휴일 자료로 그린 1년 공시 시계다(cyc() · CYC_JS — 셋 다 2026-10-01 사장).
-    첫 화면의 행성은 그림이 아니라 data/ 로 그린 캔버스다.
+  · 그림 자리 넷을 모두 채웠다(사진 · 영상 · 3D 는 쓰지 않는다) — 리포트 절과 업종 절은 실제 화면을 찍어 상자 없이 두고
+    (landing_art.py · shot()), 갱신 절은 공휴일 자료로 그린 1년 공시 시계(cyc() · CYC_JS — 셋 다 2026-10-01 사장), 브리핑 띠는 점과
+    빛으로 그린 개장 전 여의도의 새벽이다(DAWN_JS — 2026-10-02 사장). 첫 화면의 행성도 그림이 아니라 data/ 로 그린 캔버스다.
   · 숫자는 전부 data/ 에서 계산한다 — 손으로 적은 숫자·날짜 없음. 스테이징·실사이트 파일은 건드리지 않는다.
 """
 import datetime
@@ -248,21 +248,178 @@ if(document.fonts&&document.fonts.addEventListener)document.fonts.addEventListen
 document.addEventListener('visibilitychange',function(){if(!document.hidden&&pick())draw()})
 })();"""
 
+# 브리핑 띠 그림 — 개장 전 여의도의 새벽(사장 2026-10-02: 아이디어 중 '점묘로 그린 개장 전 아침' → 시안 → "미리보기 사이트에 적용해줘").
+# 강북에서 남쪽으로 본 여의도이고, 해는 아직 지평선 아래, 높은 층에만 첫 햇빛이 닿은 몇 분이다. 재료는 첫 화면 행성과 같은 셋뿐이다 —
+# 같은 모양의 성긴 규칙 점, 부드러운 빛(후광), 띠 색 실루엣. 무작위로 만든 것은 두지 않는다(불 켠 창 · 가로등 · 크기만 다른 상자 ·
+# 불규칙 점묘는 두 차례 비평에서 '인공지능이 만든 티'로 걸러 냈다). 윤곽과 순서는 위키미디어 공용의 여의도 사진 넷을 따르고 건물마다
+# 표지 하나를 살렸다 — 63빌딩 안테나와 꼭대기 띠, LG 트윈타워의 계단 어깨, 파크원 세로 틀 셋과 받침 위 판, 쓰리 IFC 의 깔때기 받침,
+# 전경련회관의 비스듬한 지붕선. 햇빛 경계선은 하나(물가 위 150, 아래로 55에 걸쳐 꺼진다)이고 63빌딩만 금빛 유리가 하늘을 비춰
+# 밑동까지 밝다. 점 간격은 두 방향 비 1.25 이하 — 첫 화면의 근접성 기준(1.5)을 넘으면 점이 아니라 줄무늬로 읽힌다.
+# 금빛 비교안(63빌딩과 그 반사만 230,205,165)은 강조색이라 사장이 정하기 전에는 넣지 않는다(디자인 헌장).
+# 자리 — 넓은 화면은 63빌딩 왼쪽 끝을 글 단 오른쪽 끝 + 48 밖에 두고(오른쪽 탑은 잘려도 된다) 띠가 낮으면 배율을 0.75까지 줄인다.
+# 한 열(820px 이하)은 63빌딩 왼쪽 끝을 글 왼쪽 선에 맞추고, 글 아래 그림 자리는 CSS 가 비워 둔다(#brief>.w 의 아래 여백 — 탑 꼭대기와
+# 글 사이 28). 크기 · 테마가 바뀔 때만 다시 그리고 움직이지 않는다. 14가지 화면 크기 × 라이트 · 다크에서 글과 겹친 화소 0
+DAWN_JS = r"""(function(){
+var cv=document.getElementById('dawn');if(!cv||!cv.getContext)return;
+var ctx=cv.getContext('2d'),root=document.documentElement,one=matchMedia('(max-width:820px)'),band='#141414',W=0,H=0,dpr=1,L=null,last='';
+/* 점 — 첫 화면 행성과 같은 모양(가운데 1 · 45% 지점 .85 · 끝 0) */
+var SP=document.createElement('canvas');SP.width=SP.height=32;
+(function(){var s=SP.getContext('2d'),g=s.createRadialGradient(16,16,0,16,16,16);
+ g.addColorStop(0,'rgba(248,247,244,1)');g.addColorStop(.45,'rgba(248,247,244,.85)');g.addColorStop(1,'rgba(248,247,244,0)');s.fillStyle=g;s.fillRect(0,0,32,32)})();
+function col(){band=getComputedStyle(root).getPropertyValue('--band').trim()||'#141414'}
+function rgba(hx,a){var h=hx.replace('#','');if(h.length===3)h=h.replace(/(.)/g,'$1$1');var n=parseInt(h,16);return 'rgba('+(n>>16&255)+','+(n>>8&255)+','+(n&255)+','+a+')'}
+function sm(a,b,x){var t=Math.max(0,Math.min(1,(x-a)/(b-a)));return t*t*(3-2*t)}
+/* 좌표는 데스크톱 1440px 설계값(x, 물가 위 높이)이고 화면에 맞춰 옮기고 줄인다. 뒤쪽 줄 — 점 없이 하늘보다 조금 어두운 실루엣 */
+var BACK=[
+  {x0:1100,x1:1146,h:178},                          // 콘래드
+  {x0:1174,x1:1212,h:136,top:[[1,-15],[0,0]]},      // 투 IFC — 비스듬한 지붕
+  {x0:1318,x1:1364,h:186}                           // TP 타워
+];
+/* 앞쪽 탑 — 점이 있는 것. g: 점 간격 [가로, 세로] */
+var TW=[
+  {x0:748,x1:800,h:116,step:'L',g:[6.5,6.5],faint:1},   // LG 트윈타워 — 바깥 어깨가 계단으로 깎여 서로 마주 본다
+  {x0:844,x1:896,h:116,step:'R',g:[6.5,6.5],faint:1},
+  {x0:916,x1:962,h:226,g:[7.5,6],crown:'parc',frames:1},  // 파크원 — 양 끝과 가운데 붉은 틀 자리가 이어진 점선
+  {x0:976,x1:1030,h:292,g:[7.5,6],crown:'parc',frames:1},
+  {x0:1066,x1:1118,h:246,g:[7.5,6],crown:'ifc',facet:1},   // 쓰리 IFC — 깔때기 받침 위 원반, 접힌 면 하나
+  {x0:1240,x1:1284,h:210,g:[7.5,6],top:[[1,0],[1,16],[.34,28],[0,28]],roof:1},  // 전경련회관 — 비스듬한 지붕선
+  {x0:640,x1:692,h:230,taper:3,g:[6,7.5],gold:1,antenna:20}  // 63빌딩 — 금빛 유리가 하늘을 비춰 밑동까지 밝다
+];
+function layout(t,b){
+  var o={},tr=t?t.right-b.left:0,tl=t?t.left-b.left:20;
+  /* 넓은 화면 — 63빌딩 왼쪽 끝이 글 단 오른쪽 끝 + 48 안으로 들어오지 않게 옮긴다(오른쪽 탑은 잘려도 된다). 띠가 낮으면 배율을 줄인다.
+     한 열 — 63빌딩 왼쪽 끝을 글 왼쪽 선에 맞춘다 */
+  if(!one.matches){o.yw=H-140;o.s=Math.max(.75,Math.min(1,(o.yw-120)/305));o.dx=Math.max((W-1440)/2,tr+48-640*o.s);o.SZ=1.2;o.sun=440;o.k=1}
+  else{o.s=Math.min(1,.74*W/390);o.dx=tl-640*o.s;o.yw=H-108;o.SZ=1.05;o.sun=610;o.k=.86}
+  o.X=function(x){return o.dx+x*o.s};o.h=function(v){return v*o.s};
+  o.light=o.h(150);o.fade=o.h(55);                       // 햇빛 경계선 — 모든 탑이 같은 높이에서 밝아진다
+  o.sx=o.X(o.sun);o.R=o.h(370);
+  return o;
+}
+function poly(t){
+  var X=L.X,h=L.h,yw=L.yw,x0=X(t.x0),x1=X(t.x1),top=yw-h(t.h),b=yw+3,w=x1-x0,p=[[x0,b],[x1,b]],k,n=t.step?8:5;
+  if(t.top){t.top.forEach(function(q){p.push([x0+w*q[0],top-h(q[1])])});return p}
+  if(t.step==='L'){ /* 계단 — 바깥 위 모서리를 폭 30%, 높이 30% 안에서 여덟 단으로 */
+    p.push([x1,top]);for(k=0;k<=n;k++){var xx=x0+w*.3*(1-k/n),yy=top+h(t.h)*.3*k/n;p.push([xx,yy]);if(k<n)p.push([xx,top+h(t.h)*.3*(k+1)/n])}
+    return p}
+  if(t.step==='R'){p.length=2;for(k=n;k>=0;k--){var xr=x1-w*.3*(1-k/n),yr=top+h(t.h)*.3*k/n;if(k<n)p.push([xr,top+h(t.h)*.3*(k+1)/n]);p.push([xr,yr])}
+    p.push([x0,top]);return p}
+  var tp=h(t.taper||0);p.push([x1-tp,top],[x0+tp,top]);return p;
+}
+function fillPoly(p,c){ctx.globalAlpha=1;ctx.fillStyle=c;ctx.beginPath();ctx.moveTo(p[0][0],p[0][1]);for(var i=1;i<p.length;i++)ctx.lineTo(p[i][0],p[i][1]);ctx.closePath();ctx.fill()}
+function inside(p,x,y){var c=false,i,j;for(i=0,j=p.length-1;i<p.length;j=i++){var a=p[i],b=p[j];if(((a[1]>y)!==(b[1]>y))&&(x<(b[0]-a[0])*(y-a[1])/(b[1]-a[1])+a[0]))c=!c}return c}
+function dot(x,y,a,z){if(a<.02)return;ctx.globalAlpha=Math.min(1,a);var r=L.SZ*(z||1);ctx.drawImage(SP,x-r,y-r,r*2,r*2)}
+/* 하늘빛의 세기(0~1) — 강물에 비칠 밝기를 정할 때 쓴다. 그리는 빛과 같은 식 */
+function skyA(x,y){var h=L.yw-y,a=.03+.04*Math.max(0,Math.min(1,y/L.yw))+.09*Math.exp(-Math.max(0,h)/L.h(110));
+  var ex=(x-L.sx)/L.R,ey=(y-(L.yw+L.h(40)))/(L.R*.52),r=Math.sqrt(ex*ex+ey*ey);if(r<1)a+=.36*Math.pow(1-r,1.5);return a}
+function sky(){ /* 하늘 — 띠 위까지 아주 옅게 들어 올리고, 지평선에 붙은 빛과 지평선 아래 해의 둥근 후광(첫 화면의 빛과 같은 방식) */
+  var yw=L.yw;
+  ctx.save();ctx.beginPath();ctx.rect(0,0,W,yw+.5);ctx.clip();
+  var g=ctx.createLinearGradient(0,0,0,yw);g.addColorStop(0,'rgba(255,255,255,.03)');g.addColorStop(1,'rgba(255,255,255,.07)');ctx.fillStyle=g;ctx.fillRect(0,0,W,yw);
+  var hb=ctx.createLinearGradient(0,yw-L.h(440),0,yw),i;for(i=0;i<=8;i++){var hh=L.h(440)*(1-i/8);hb.addColorStop(i/8,'rgba(255,255,255,'+(.09*Math.exp(-hh/L.h(110))).toFixed(4)+')')}
+  ctx.fillStyle=hb;ctx.fillRect(0,yw-L.h(440),W,L.h(440));
+  halo(yw+L.h(40),1);ctx.restore();
+  ctx.save();ctx.beginPath();ctx.rect(0,yw,W,H-yw);ctx.clip();halo(yw-L.h(40),.42);ctx.restore();   // 강물에 비친 후광
+}
+function halo(cy,k){ctx.save();ctx.globalAlpha=1;ctx.translate(L.sx,cy);ctx.scale(1,.52);var g=ctx.createRadialGradient(0,0,0,0,0,L.R),i;
+  for(i=0;i<=10;i++){var r=i/10;g.addColorStop(r,'rgba(255,255,255,'+(k*.36*Math.pow(1-r,1.5)).toFixed(4)+')')}
+  ctx.fillStyle=g;ctx.fillRect(-L.R,-L.R,L.R*2,L.R*2);ctx.restore()}
+function far(){ /* 먼 시가지 — 윤곽 없는 흐린 띠. 위 가장자리를 1px 씩 내려 여러 번 옅게 겹쳐 부드럽게 */
+  var yw=L.yw,p=[],x;for(x=-10;x<=W+10;x+=6){var u=(x-L.X(560))/Math.max(1,L.X(1440)-L.X(560));
+    var hh=(L.h(14)+L.h(26)*sm(-.15,.35,u)+L.h(2)*Math.sin(x/(L.h(53)))+L.h(1.2)*Math.sin(x/(L.h(19))+1))*(1-.7*sm(1.0,1.45,u));p.push([x,yw-hh])}
+  for(var k=0;k<7;k++){var q=[[-10,yw+3]].concat(p.map(function(v){return [v[0],v[1]+k*1.1]})).concat([[W+10,yw+3]]);fillPoly(q,rgba(band,.035))}
+}
+function back(){BACK.forEach(function(t){var p=poly(t),top=L.yw-L.h(t.h)-L.h(16),g=ctx.createLinearGradient(0,top,0,L.yw);
+  g.addColorStop(0,rgba(band,.40));g.addColorStop(1,rgba(band,.12));
+  [-.25,.25].forEach(function(o){fillPoly(p.map(function(v){return [v[0]+o,v[1]]}),g)})})}   // 0.5px 어긋나게 두 번 — 가장자리를 무르게
+function tower(t){
+  var p=poly(t),X=L.X,h=L.h,yw=L.yw,x0=X(t.x0),x1=X(t.x1),Ht=h(t.h),top=yw-Ht,gx=h(t.g[0]),gy=h(t.g[1]),w=x1-x0;
+  fillPoly(p,band);
+  var c=(x0+x1)/2,peak=0;if(t.top)t.top.forEach(function(q){peak=Math.max(peak,h(q[1]))});
+  for(var y=yw-gy*.6;y>top-peak;y-=gy){
+    var hy=yw-y,f=Math.min(1,hy/Ht),tp=h(t.taper||0)*Math.min(1,(yw+3-y)/(yw+3-top)),xa=x0+tp,xb=x1-tp;
+    var n=Math.max(2,Math.round((xb-xa)/gx)),i;
+    for(i=0;i<n;i++){
+      var x=xa+(i+.5)*(xb-xa)/n;if(!inside(p,x-L.SZ,y)||!inside(p,x+L.SZ,y))continue;var a;   // 점은 좌우 끝까지 윤곽 안일 때만
+      if(t.frames&&(i===0||i===n-1||i===Math.floor(n/2)))continue;            // 파크원의 붉은 틀 자리 — 아래에서 이어진 점선으로
+      if(t.crown==='parc'&&y<top+gy&&Math.abs(x-c)<w*.33/2+L.SZ)continue;  // 받침이 가리는 맨 윗줄
+      if(t.roof){var u2=(x-x0)/w,yr=u2<.34?top-h(28):top-h(28)+(h(28)-h(16))*(u2-.34)/.66;if(y<yr+3.6)continue}   // 지붕선 점과 겹치지 않게
+      if(t.gold){a=.30+.65*f;if(top-y>-gy*1.6&&top-y<-gy*.4)a*=.35;if(Math.abs(f-.335)<.02||Math.abs(f-.67)<.02)a*=.75;if(i===n-1)a*=.55;if(i===0)a*=1.12}
+      else if(t.faint){a=.16*sm(Ht-h(40),Ht,hy)}
+      else{a=.8*sm(L.light-L.fade,L.light,hy)*(.72+.28*Math.max(0,(hy-L.light)/Math.max(1,Ht-L.light)));
+        if(t.facet&&(x-x0)/w>.18+.64*f)a*=.4}
+      dot(x,y,a);
+    }
+  }
+  if(t.frames){var n2=Math.max(2,Math.round(w/gx)),cols=[x0+.5*w/n2,x1-.5*w/n2,x0+(Math.floor(n2/2)+.5)*w/n2];   // 양 끝과 가운데 — 간격 3.2의 이어진 점선
+    cols.forEach(function(fx){var y0=L.yw-L.light+L.fade,yy;for(yy=y0;yy>top+1.5;yy-=3.2*Math.sqrt(L.s)){dot(fx,yy,.5*sm(L.light-L.fade,L.light,L.yw-yy),.9)}})}
+  if(t.crown==='parc'){var bw=w*.33,bh=h(7);fillPoly([[c-bw/2,top+1],[c+bw/2,top+1],[c+bw/2,top-bh],[c-bw/2,top-bh]],band);
+    line(c-w*.35,top-bh-1.5,c+w*.35,top-bh-1.5,.62)}
+  if(t.crown==='ifc'){var fh=h(9);fillPoly([[c-w*.2,top+1],[c+w*.2,top+1],[c+w*.31,top-fh],[c-w*.31,top-fh]],band);
+    line(c-w*.31,top-fh-1.5,c+w*.31,top-fh-1.5,.62)}
+  if(t.antenna){var ax=x0+w*.56;line(ax,top-2,ax,top-h(t.antenna),.5)}
+  if(t.roof){line(x0+.5,top-h(28)+1.5,x0+w*.34,top-h(28)+1.5,.55);line(x0+w*.34,top-h(28)+1.5,x1-.5,top-h(16)+1.5,.55)}
+}
+function line(xa,ya,xb,yb,a){var d=Math.hypot(xb-xa,yb-ya),n=Math.max(1,Math.round(d/(3.2*Math.sqrt(L.s)))),i;for(i=0;i<=n;i++)dot(xa+(xb-xa)*i/n,ya+(yb-ya)*i/n,a,.9)}
+function trees(){ /* 여의도 한강공원 나무 줄 — 매끈한 띠, 높이 6~8 */
+  var yw=L.yw,p=[[-10,yw+3]],x;for(x=-10;x<=W+10;x+=4)p.push([x,yw-L.h(7)-L.h(1.4)*Math.sin(x/L.h(37))-L.h(.8)*Math.sin(x/L.h(13)+1)]);p.push([W+10,yw+3]);fillPoly(p,band)}
+function water(polys){ /* 강물 — 가로 점줄. 줄 간격은 물가에서 아래로 갈수록 넓어지고 줄마다 반 칸 어긋난다. 비치는 것은 하늘빛과 63빌딩뿐 */
+  var yw=L.yw,gx=7*L.k,d=L.h(3),k=0,g63=null;polys.forEach(function(q){if(q.gold)g63=q});
+  var c63=g63?(g63.p[0][0]+g63.p[1][0])/2:0;
+  function fr(v){return v-Math.floor(v)}
+  while(yw+d<H-6){
+    var y=yw+d,ym=yw-d*.92,off=(k%2)*gx/2,lam=L.h(64)+2.2*d,ph=k*1.7;
+    var amp=1.5+.05*d,wl=40+20*fr(k*.618+.2),wk=1+.25*(2*fr(k*.754+.3)-1),ak=.55+.45*fr(k*.381+.7);
+    for(var x=off;x<W;x+=gx){
+      var xs=x+amp*Math.sin(2*Math.PI*x/wl+ph),a=0,hit=null;                 // 물결이 비춰 볼 자리를 옆으로 흔든다
+      for(var q=0;q<polys.length;q++){var tx2=polys[q].gold?c63+(xs-c63)/wk:xs;if(inside(polys[q].p,tx2,ym)){hit=polys[q];break}}
+      var hb=Math.exp(-d/L.h(24)),hh=Math.exp(-d/L.h(95));
+      var ex=(xs-L.sx)/L.R,glow=Math.max(0,1-Math.abs(ex));
+      if(hit){if(hit.gold)a=.62*ak*(.55+.45*Math.min(1,(yw-ym)/L.h(230)))*Math.exp(-d/L.h(100))/Math.exp(-d/L.h(120));else a=(1-hit.a)*(skyA(xs,ym)/.46)*(hb+glow*hh)}
+      else if(d<L.h(9))a=0;                                      // 물가 바로 아래는 나무 줄의 그림자
+      else a=(skyA(xs,ym)/.46)*(hb+glow*hh);
+      var rip=.55+.45*Math.sin(2*Math.PI*x/lam+ph)*Math.sin(2*Math.PI*x/(lam*2.7)+ph*.6+1);
+      a=Math.min(.66,a*.95*rip*Math.exp(-d/L.h(120)));
+      a*=sm(.02,.14,a);                                           // 문턱 없이 부드럽게 사그라진다
+      if(a>=.02)dot(x,y,a);
+    }
+    d+=L.h(3.6)+.065*d;k++;
+  }
+}
+function draw(){ /* 크기 · 배율 · 테마 · 글 자리가 그대로면 다시 그리지 않는다(보이지 않거나 문서에서 떨어졌으면 그리지 않는다) */
+  var b=cv.getBoundingClientRect();if(!b.width||!b.height||!cv.parentNode)return;
+  var tx=cv.parentNode.querySelector('.tx'),t=tx?tx.getBoundingClientRect():null,d=Math.min(window.devicePixelRatio||1,2);col();
+  var key=[b.width,b.height,d,band,one.matches,t?t.left-b.left:0,t?t.right-b.left:0].join();
+  if(key===last)return;last=key;
+  W=b.width;H=b.height;dpr=d;
+  cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,W,H);
+  L=layout(t,b);sky();far();back();
+  var polys=[];BACK.forEach(function(t){polys.push({p:poly(t),a:.26})});
+  TW.forEach(function(t){if(!t.gold)tower(t)});TW.forEach(function(t){if(t.gold)tower(t)});
+  TW.forEach(function(t){polys.push({p:poly(t),gold:!!t.gold})});
+  trees();water(polys);ctx.globalAlpha=1;
+}
+draw();
+if('ResizeObserver' in window)new ResizeObserver(function(){draw()}).observe(cv);   // 글꼴이 늦게 와 띠 높이가 바뀌어도 다시 그린다
+addEventListener('resize',function(){draw()});                                     // 배율만 바뀌는 경우(확대 · 다른 화면으로 옮김)
+new MutationObserver(function(){draw()}).observe(root,{attributes:true,attributeFilter:['data-theme']});
+})();"""
+
 CSS = r"""
 :root{
-  --bg:#f9f8f6; --surface:#fff; --surface-2:#f1efeb; --slot:#eceae6; --slot-2:#e3e1dc;
+  --bg:#f9f8f6; --surface:#fff; --surface-2:#f1efeb;
   --ink:#141414; --ink-72:rgba(20,20,20,.72); --ink-62:rgba(20,20,20,.62); --ink-30:rgba(20,20,20,.3);
   --hair:rgba(20,20,20,.08); --line:rgba(20,20,20,.14); --shot-edge:rgba(20,20,20,.09); --shot-sh1:rgba(20,20,20,.05); --shot-sh2:rgba(20,20,20,.13);
-  --band:#141414; --band-ink:#f2f1ee; --band-62:rgba(242,241,238,.62); --band-hair:rgba(255,255,255,.14); --band-slot:#222224; --band-slot-2:#1a1a1c;
+  --band:#141414; --band-ink:#f2f1ee; --band-62:rgba(242,241,238,.62);
   --font:"Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Segoe UI",sans-serif;
   --wrap:1120px; --pad:32px; --gap:24px; --sec:216px; --nav-bar:rgba(249,248,246,.72);
   color-scheme:light;
 }
 :root[data-theme="dark"]{
-  --bg:#0d0d0e; --surface:#161617; --surface-2:#1e1e20; --slot:#18181a; --slot-2:#202023;
+  --bg:#0d0d0e; --surface:#161617; --surface-2:#1e1e20;
   --ink:#ececea; --ink-72:rgba(236,236,234,.72); --ink-62:rgba(236,236,234,.62); --ink-30:rgba(236,236,234,.3);
   --hair:rgba(255,255,255,.08); --line:rgba(255,255,255,.14); --shot-edge:rgba(255,255,255,.12); --shot-sh1:rgba(0,0,0,.4); --shot-sh2:rgba(0,0,0,.6);
-  --band:#1c1c1e; --band-ink:#ececea; --band-62:rgba(236,236,234,.62); --band-hair:rgba(255,255,255,.12); --band-slot:#262628; --band-slot-2:#202022;
+  --band:#1c1c1e; --band-ink:#ececea; --band-62:rgba(236,236,234,.62);
   --nav-bar:rgba(13,13,14,.72);
   color-scheme:dark;
 }
@@ -324,14 +481,6 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .search input{flex:1;min-width:0;align-self:stretch;border:0;background:transparent;font:400 17px/24px var(--font);color:var(--ink);outline:0;padding:0}
 .search input::placeholder{color:var(--ink-62)}
 .search .btn{height:40px;padding:0 18px}
-
-/* 그림 자리 — 만들지 않고 표시만(종류 · 비율 · 한 줄 이름) */
-.slot{position:relative;border-radius:20px;overflow:hidden;background-color:var(--slot);background-image:linear-gradient(155deg,var(--slot),var(--slot-2))}
-.slot .st{position:absolute;top:18px;left:18px;display:inline-flex;align-items:center;gap:7px;height:28px;padding:0 12px 0 10px;border-radius:999px;border:1px solid var(--line);
-  font:600 12px/1 var(--font);color:var(--ink-72)}
-.slot .st svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round}
-.slot .st span{font-weight:500;color:var(--ink-62)}
-.slot figcaption{position:absolute;left:22px;right:22px;bottom:20px;font:500 14px/1.45 var(--font);color:var(--ink-62)}
 
 /* 리포트 절 그림 — 상자 없이 실제 리포트 화면만(scripts/concepts/landing_art.py 가 찍는다 · 2026-10-01 사장 "이미지 박스를 없애고
    리포트만"). 넓은 화면은 데스크톱 화면 한 장이 오른쪽 끝까지 이어지고, 한 열에서는 휴대폰 화면 두 장이 나란히 선다. 가장자리는
@@ -429,9 +578,7 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
 .tx .more{margin-top:22px}
 .split{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);align-items:center}
 .split>.tx{grid-column:1/6;grid-row:1}
-.split>.slot{grid-column:7/13;grid-row:1;aspect-ratio:4/5}
 .split.rev>.tx{grid-column:8/13}
-.split.rev>.slot{grid-column:1/7}
 /* 태도 절 — 그림 없는 선언 한 줄은 가운데에(빈 반쪽이 그림 빠진 자리처럼 보이지 않게) */
 .solo{text-align:center} .solo .h2{margin:0 auto;max-width:900px} .solo .sub{margin-left:auto;margin-right:auto;max-width:560px}
 /* 숫자 하나 — 첫 화면 제목('증권사가 다루지 않는 종목까지')의 증거라 첫 화면 바로 다음 절(사장 2026-10-01). 제목이 숫자를 설명하고
@@ -450,12 +597,15 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
 /* 모닝브리핑 — 어두운 띠 하나 */
 .band{margin-top:var(--sec);min-height:calc(100vh - 60px);min-height:calc(100svh - 60px);display:flex;align-items:center;padding:96px 0;background:var(--band);color:var(--band-ink);scroll-margin-top:-24px}
 .band>.w{width:100%}
-@media (min-width:821px){.band .slot{aspect-ratio:1/1}}
 :root[data-theme="dark"] .band{box-shadow:inset 0 1px 0 var(--hair),inset 0 -1px 0 var(--hair)}
 .band .eyebrow{color:var(--band-ink)} .band .sub{color:var(--band-62)}
 .band .more{color:var(--band-ink)}
-.band .slot{background-color:var(--band-slot);background-image:linear-gradient(155deg,var(--band-slot),var(--band-slot-2))}
-.band .slot .st{border-color:var(--band-hair);color:var(--band-ink)} .band .slot .st span,.band .slot figcaption{color:var(--band-62)}
+/* 브리핑 띠 그림 — 개장 전 여의도의 새벽(DAWN_JS 가 띠 전체에 그린다 · 사장 2026-10-02). 글은 띠 위쪽에 두고 그림은 그 아래와 오른쪽에.
+   한 열에서는 글 아래에 그림 자리를 비워 둔다 — 탑의 가장 높은 곳(설계 305 × 배율)에 글과의 틈 28 과 물가 아래 108 을 더하고
+   띠의 아래 안쪽 여백 72 를 뺀 만큼(64 + 305 × 배율). 배율이나 가장 높은 탑을 바꾸면 #brief>.w 의 아래 여백도 같이 고친다 */
+#brief{position:relative;align-items:flex-start}
+#brief>.w{position:relative;z-index:1}
+#brief .dawn{position:absolute;left:0;top:0;width:100%;height:100%;display:block;pointer-events:none}
 
 /* 마무리 — 질문 하나 · 같은 검색창(특정 종목 칩은 두지 않는다) */
 .end{padding-top:var(--sec);text-align:center}
@@ -494,15 +644,11 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
   .nav,.nav.scrolled{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}
   .mmenu.open{display:flex}
   .split{display:block}
-  .split>.slot{margin-top:56px;aspect-ratio:4/5;max-width:560px}
+  #brief>.w{padding-bottom:calc(64px + min(57.872vw, 305px))}   /* 배율 0.74 × 폭 ÷ 390(최대 1) × 305 — DAWN_JS 의 한 열 배율과 같다 */
   .nav.on-band,.nav.on-band.scrolled{background:var(--band)}
   .nav.on-band:not(.scrolled){background:transparent}   /* 첫 화면 맨 위에서는 무대의 빛이 머리 뒤까지 이어지게 */
   .proof{grid-template-columns:1fr;row-gap:28px;margin-top:40px}
   .proof p{max-width:none}
-}
-/* 태블릿 세로(721~820px) — 그림은 전폭 4:3 */
-@media (min-width:721px) and (max-width:820px){
-  .split>.slot{max-width:none;aspect-ratio:4/3}
 }
 /* 휴대폰 */
 @media (max-width:720px){
@@ -524,8 +670,6 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
   .solo{text-align:left} .solo .h2,.solo .sub{margin-left:0}   /* 한 열에서는 빈 반쪽이 없으니 다른 절처럼 왼쪽 정렬 */
   .stat-n{margin-top:10px}
   .stat .sub{margin-top:20px}
-  .split>.slot{margin-top:44px;aspect-ratio:1/1}
-  .slot{border-radius:16px}
   .band{padding:72px 0}
   .end .search{margin-top:36px}
   .fgrid{grid-template-columns:auto auto auto;justify-content:space-between;column-gap:16px}
@@ -537,8 +681,6 @@ main{overflow-x:hidden;overflow-x:clip}   /* 오른쪽 끝까지 이어지는 �
 I = {
     "arrow": '<svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
     "search": '<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-3.5-3.5"/></svg>',
-    "video": '<svg viewBox="0 0 24 24"><path d="M8 6.5v11l9-5.5z"/></svg>',
-    "image": '<svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="2"/><path d="M3.5 16l5-5 4 4 3-3 5 5"/></svg>',
     "moon": '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>',
     "ham": '<svg class="ham" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>',
     "x": '<svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>',
@@ -549,12 +691,6 @@ LINKS = [("홈", "#"), ("리포트", "#report"), ("업종 분석", "#sectors"), 
 def sents(text):
     """문장마다 한 덩어리(.s = inline-block) — 줄은 문장 사이에서만 바뀐다. 한 문장이 칸보다 길면 그 안에서 바뀐다."""
     return " ".join(f'<span class="s">{g(x)}</span>' for x in re.split(r"(?<=[.?!])\s+", text) if x)
-
-
-def slot(kind, icon, ratio, name):
-    """그림 자리 — 이름표(종류 · 비율)와 한 줄 이름만. 자세한 권장 소재는 보고서에."""
-    return (f'<figure class="slot" aria-label="{esc(kind)} 자리 — {esc(name)}"><span class="st">{I[icon]}{esc(kind)}<span>{esc(ratio)}</span></span>'
-            f'<figcaption>{esc(name)}</figcaption></figure>')
 
 
 # 리포트 절 · 업종 절 그림 — landing_art.py 가 찍는 실제 화면. 이름: (가로, 세로) — img 의 width · height(자리를 미리 잡아 밀림이 없게).
@@ -796,8 +932,8 @@ def page():
     pts = "".join(f'<li class="rv"><h3>{g(t)}</h3><p>{sents(d)}</p></li>' for t, d in C["trust_points"])
     sec_trust = (f'<section class="sec w trust"><h2 class="h2 rv">{C["trust"][1]}</h2><ul class="proof">{pts}</ul>'
                  + more(C["trust_link"]).replace('class="more"', 'class="more rv"', 1) + '</section>')   # 링크는 작성 방식(회사 소개) — 특정 종목 예시는 두지 않는다(사장)
-    sec_brief = (f'<section class="band dz" id="brief"><div class="w split"><div class="tx">{head_block("brief", more(C["brief_link"]))}</div>'
-                 + slot("사진", "image", "1:1", "개장 전 아침, 책상 위 휴대폰") + '</div></section>')
+    sec_brief = (f'<section class="band dz" id="brief"><canvas class="dawn" id="dawn" aria-hidden="true"></canvas>'
+                 f'<div class="w split"><div class="tx">{head_block("brief", more(C["brief_link"]))}</div></div></section>')   # 그림은 DAWN_JS
     sec_sectors = (f'<section class="sec w stack" id="sectors">{head_block("sectors", more(C["sectors_link"]))}'
                    + shot("sector", C["sectors_shot"], "shot full") + '</section>')
     sec_stance = f'<section class="sec w solo">{head_block("stance")}</section>'
@@ -807,6 +943,7 @@ def page():
     orb_js = "<script>" + ORB_JS + "</script>"
     rv_js = "<script>" + RV_JS + "</script>"   # 다른 스크립트와 따로 — 저쪽이 실패해도 글이 숨은 채로 남지 않게
     cyc_js = "<script>" + CYC_JS + "</script>"   # 공시 시계도 따로 — 실패해도 다른 것은 돈다
+    dawn_js = "<script>" + DAWN_JS + "</script>"   # 브리핑 띠 그림도 따로
     js = ("<script>(function(){"
           "var root=document.documentElement,nav=document.getElementById('nav'),zs=[].slice.call(document.querySelectorAll('.dz')),"
           "meta=document.querySelector('meta[name=\"theme-color\"]'),tick=false;"
@@ -840,7 +977,7 @@ def page():
             f'<meta property="og:description" content="{esc(C["og_desc"])}">'
             f'<link rel="stylesheet" href="{FONTS}/pretendard-subset.css"><link rel="stylesheet" href="landing.css">{theme}</head><body>')
     return (head + nav() + f"<main>{hero}{sec_gap}{sec_report}{sec_stance}{sec_trust}{sec_fresh}{sec_sectors}{sec_brief}{sec_end}</main>"
-            + foot() + rv_js + cyc_js + orb_js + js + "</body></html>")
+            + foot() + rv_js + cyc_js + dawn_js + orb_js + js + "</body></html>")
 
 
 if __name__ == "__main__":
