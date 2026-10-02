@@ -306,6 +306,23 @@ WebKit 소스(LocalFrameView::fixedContainerEdges)로 확인한 기제:
     손가락 기기(hover:none·pointer:coarse)에서만, 랜딩은 끈다. theme-color 메타는 다른 브라우저용으로 남긴다.
   · 이 환경에는 사파리가 없다. 실기기(사장 휴대폰)에서만 확인된다. 되돌리거나 띠를 얇게/투명하게 하면 재발한다.
 
+## 휠 감속은 한 칸씩 끊기는 마우스 휠에만 — 맥과 터치패드는 원래 스크롤 *(2026-10-02 사장)*
+
+사장(맥북): 랜딩을 트랙패드 두 손가락으로 스크롤하니 "좀 이상하더라". 트랙패드는 운영체제가 이미 관성을 주는데
+`smooth-scroll.js`(lenis)가 그 위에 0.6~0.7초 감속을 한 번 더 걸어, 화면이 손가락보다 늦게 따라오고 손을 뗀 뒤에도
+한 번 더 미끄러졌다. lenis 는 원래 윈도우 마우스 휠(한 칸에 100px 씩 뚝뚝)을 위해 넣은 것이다.
+
+  · 맥이면 켜지 않는다(`isMac` — userAgentData 'macOS' · platform 'MacIntel' · UA 'Macintosh'). 맥에 꽂은 보통 마우스도 맥의 원래 스크롤이다.
+  · 다른 곳에서도 wheelDeltaY 가 120 의 배수인 휠(한 칸)만 감속한다(`sortWheel` 이 이벤트마다 `lenis.options.smoothWheel` 을 정한다).
+    윈도우 정밀 터치패드 · 크롬북과 리눅스 터치패드 · 고해상도 휠은 잘게 오고 관성 구간은 0 이라 브라우저에 맡긴다. 한 동작(0.4초 안에
+    이어진 휠)은 첫 이벤트가 정하고, 중간에 잘게 오면 끝까지 원래 스크롤이다 — 판단이 서지 않으면 원래 스크롤 쪽으로 둔다.
+  · 남는 것: 휠 한 칸을 흉내 내는 옛 터치패드 드라이버(정밀 터치패드가 아닌 것)는 마우스와 구분되지 않아 전처럼 감속된다.
+  · 두 사본(실사이트 · 스테이징)은 정해 둔 세 자리(스테이징 머리말 · duration · defaultPrevented 한 줄) 말고 같아야 한다. 지키는 검사
+    `staging/tests/smooth-wheel.test.mjs` — 마우스는 진짜 입력(CDP), 터치패드는 wheelDeltaY 를 넣은 가짜 이벤트, 맥은 위장해서 본다.
+    고치기 전 파일로 돌리면 20개가 걸린다.
+  · 이 환경에는 맥 · 터치패드 실기기가 없다. 실기기(사장 맥북)에서만 최종 확인된다. 맥에서 다시 켜려고 트랙패드 판별 요령
+    (`wheelDeltaY === -3 * deltaY` 등)을 쓰지 말 것 — 실기기 없이 검증할 수 없다.
+
 ## 스테이징은 새 디자인이다 — 생성기가 만든다, 손으로 고치지 마라 *(2026-09-26 사장 "스테이징에 적용해줘")*
 
 `staging/*.html` 은 이제 손으로 쓰는 파일이 아니다. 시안 생성기(`scripts/build_*_comp.py` + `comp_common.py`)가
@@ -334,7 +351,8 @@ WebKit 소스(LocalFrameView::fixedContainerEdges)로 확인한 기제:
     `patch_header.py` · `patch_biz_footer.py` 의 옛 템플릿 검사는 새 구조 검사(생성기 = 저장소)로 바꾼다.
   · 휠 스크롤(2026-09-26 사장): `staging/lenis.js` · `staging/smooth-scroll.js` 는 실사이트 사본이고 `duration` 만 0.7 → 0.6
     (사장 "실사이트보다 조금 더 빠르게" · 휠 한 번 694ms → 614ms). `comp_common.finish()` 가 모든 스테이징 페이지 꼬리에 붙인다.
-    휴대폰(pointer:coarse)·움직임 줄임에서는 스스로 꺼진다. 메뉴·업종 시트가 열리면 `KOSSmoothScroll.stop()` — html overflow:hidden
+    휴대폰(pointer:coarse)·움직임 줄임·맥에서는 스스로 꺼지고, 켜져도 휠 한 칸 입력만 감속한다(아래 '휠 감속' 절).
+    메뉴·업종 시트가 열리면 `KOSSmoothScroll.stop()` — html overflow:hidden
     은 프로그램 스크롤을 못 막아서다. 목차 클릭(TOC_JS)은 lenis 가 있으면 lenis 로 옮기고 전파를 막는다(문서 핸들러의 -90 offset 을
     타면 헤더 여백이 어긋난다). 실사이트로 옮기는 날 0.6 을 실사이트에도 쓸지 정한다.
   · 페이지 전환: `@view-transition{navigation:auto}`(실사이트와 같음) + 띠·헤더에 `view-transition-name` 을 줘 본문만 크로스페이드한다.
