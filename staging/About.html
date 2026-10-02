@@ -84,7 +84,7 @@ a{color:inherit;text-decoration:none}
 .nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--hair);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
 .nav-in{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;position:relative}
 .brand img{height:14px;display:block} .brand .dk{display:none} :root[data-theme="dark"] .brand .lt{display:none} :root[data-theme="dark"] .brand .dk{display:block}
-.links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:28px}
+.links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:34px}   /* 28 → 34(사장 2026-10-02) — 랜딩 머리와 같은 값이어야 페이지를 옮길 때 메뉴가 움직이지 않는다 */
 .links a{font:500 14px/1 var(--font);color:var(--ink-72);transition:color .12s} .links a:hover,.links a.on{color:var(--ink)} .links a.on{font-weight:600}
 .right{display:flex;align-items:center;gap:6px} .login{font:600 13px/1 var(--font);color:var(--ink-72);padding:8px 10px} .login:hover{color:var(--ink)}
 .ib{width:38px;height:38px;border:0;background:transparent;color:var(--ink-72);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;border-radius:10px} .ib:hover{color:var(--ink)} .ib svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
@@ -267,14 +267,14 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
   <header class="page-hero">
     <p class="crumb">회사</p>
     <h1>한국 상장사 정보,<br>누구나 제대로<br>이해할 수 있도록.</h1>
-    <p class="sub">KOSAI는 코스피·코스닥 전 종목의 시세·시가총액·공시 데이터를 AI가 정리해 보여주는 리서치 도구입니다. 개인 투자자가 무엇을 봐야 할지 막막할 때, 시작점이 되는 한 페이지를 만드는 것이 목표입니다.</p>
+    <p class="sub">KOSAI는 국내 상장 종목의 시세·시가총액·공시 데이터를 AI가 정리해 보여주는 리서치 도구입니다. 개인 투자자가 무엇을 봐야 할지 막막할 때, 시작점이 되는 한 페이지를 만드는 것이 목표입니다.</p>
     <div class="steps3"><div><div class="k">01 · COLLECT</div><h3>시세·시가총액·공시</h3><p>분산된 원천 데이터를 한 곳으로 모읍니다.</p></div><div><div class="k">02 · STRUCTURE</div><h3>AI 분석·정리</h3><p>사람이 읽기 쉬운 형태로 구조화합니다.</p></div><div><div class="k">03 · DISCLOSE</div><h3>투명한 출처</h3><p>근거 데이터와 갱신 시각을 함께 보여드립니다.</p></div></div>
   </header>
   <div class="body">
     <aside class="toc" id="toc"><a href="#s01"><span class="n">01</span>서비스 소개</a><a href="#s02"><span class="n">02</span>문제 의식</a><a href="#s03"><span class="n">03</span>AI는 어떻게 종목을 분석하는가</a><a href="#s04"><span class="n">04</span>우리가 사용하는 데이터</a><a href="#s05"><span class="n">05</span>AI 분석의 한계</a><a href="#s06"><span class="n">06</span>데이터는 얼마나 자주 업데이트되나</a><a href="#s07"><span class="n">07</span>중요 안내사항 (면책 조항)</a><a href="#s08"><span class="n">08</span>연락처</a></aside>
     <div class="content">
       <div class="chips-mark" id="chipsMark"></div><div class="chips-bar" id="chipsBar"><nav class="chips" id="chips"><a href="#s01">01 서비스 소개</a><a href="#s02">02 문제 의식</a><a href="#s03">03 AI는 어떻게 종목을 분석하는가</a><a href="#s04">04 우리가 사용하는 데이터</a><a href="#s05">05 AI 분석의 한계</a><a href="#s06">06 데이터는 얼마나 자주 업데이트되나</a><a href="#s07">07 중요 안내사항 (면책 조항)</a><a href="#s08">08 연락처</a></nav></div>
-      <section class="sec wide" id="s01"><div class="sec-h"><span class="num">01</span><h2>서비스 소개</h2></div><div class="prose"><p>KOSAI는 한국 증시에 상장된 기업의 정보를 AI가 정리해 보여주는 리서치 사이트입니다. 종목 검색·업종별 탐색·조건 검색·관심종목을 통해 코스피·코스닥 전 종목(약 2,700개)의 기본 정보와 최근 흐름을 확인할 수 있습니다.</p>
+      <section class="sec wide" id="s01"><div class="sec-h"><span class="num">01</span><h2>서비스 소개</h2></div><div class="prose"><p>KOSAI는 한국 증시에 상장된 기업의 정보를 AI가 정리해 보여주는 리서치 사이트입니다. 종목 검색·업종별 탐색·조건 검색·관심종목을 통해 국내 상장 종목(약 2,700개)의 기본 정보와 최근 흐름을 확인할 수 있습니다.</p>
       <p>각 종목 페이지에는 종가·거래량·시가총액 등 기본 시장 데이터와 함께 AI가 작성한 요약 리포트가 제공됩니다. 리포트는 사업 구조·최근 실적·강세 요인·약세 요인·리스크 요인을 균형 있게 다루며, 특정 매매 판단을 권유하는 형태가 아닌 정보 정리를 목적으로 합니다.</p>
       <p>업종 분석 페이지에서는 반도체·2차전지·바이오 등 산업군별 AI 분석을 확인할 수 있으며, 리포트 페이지에서 업종·시가총액·PER·PBR·배당수익률·매출 성장률 등의 조건으로 종목을 추릴 수 있습니다. 관심종목 기능으로 원하는 종목을 모아 관리할 수도 있습니다.</p>
       <p>모든 콘텐츠는 무료로 제공됩니다. 종목 정보·리포트·업종 분석·조건 검색은 로그인 없이 이용할 수 있으며, 관심종목은 여러 기기에서 동기화되도록 로그인(이메일 또는 Google·카카오·네이버 계정)이 필요합니다. 저희가 직접 매매를 중개하거나 자문하지 않으며, 어떠한 형태의 종목 추천도 제공하지 않습니다.</p></div></section><section class="sec wide" id="s02"><div class="sec-h"><span class="num">02</span><h2>문제 의식</h2></div><div class="prose"><p>한국에서 개인 투자자가 한 종목을 제대로 이해하려면, 공시는 DART에서, 시세는 증권사 HTS에서, 뉴스는 포털에서, 컨센서스는 별도 유료 서비스에서 따로 봐야 합니다. 정보가 흩어져 있을 뿐 아니라, 상당수의 자료가 기관 투자자 기준의 용어와 형식으로 작성되어 있어 진입 장벽이 큰 편입니다.</p>

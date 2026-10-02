@@ -91,7 +91,7 @@ MOBILE_CSS = '''@media (max-width:820px){
 
 BODY = '''<main class="wrap">
   <header class="hero">
-    <p class="eyebrow" id="eyebrow">코스피 · 코스닥 상장사 리서치</p>
+    <p class="eyebrow" id="eyebrow">국내 상장사 리서치</p>
     <h1>한국 상장사,<br>AI 리서치로 한눈에.</h1>
     <p class="sub">재무·실적·밸류에이션을 한 페이지에. 핵심만 정리한 종목 분석으로 시장을 빠르게 파악하실 수 있습니다.</p>
     <div class="search-wrap">
@@ -129,7 +129,7 @@ JS = r'''(function(){
     amt:function(n){return !n?'—':(n>=1e12?(n/1e12).toFixed(1)+'조':Math.round(n/1e8).toLocaleString('ko-KR')+'억')}};
   // 리포트가 있는 종목 수 하나만 — 종목 수와 리포트 수를 나란히 두면 새로 상장돼 아직 리포트가 없는 종목만큼 어긋나 보인다
   var nBoth=live.filter(function(s){return RREP[s.ticker]}).length;
-  document.getElementById('eyebrow').textContent='코스피 · 코스닥 상장사 '+nBoth.toLocaleString('ko-KR')+'종목 리포트';
+  document.getElementById('eyebrow').textContent='국내 상장사 '+nBoth.toLocaleString('ko-KR')+'종목 리포트';
 
   /* ---- 최신 리포트 6편 (Home.html 과 같은 규칙) ---- */
   var REPORTS=live.filter(function(s){return RREP[s.ticker]}).map(function(s){var r=RREP[s.ticker];return Object.assign({},s,{reportDate:r.reportDate,reportTs:r.reportTs||r.reportDate,title:(r.title&&r.title.ko)||''})});
