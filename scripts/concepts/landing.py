@@ -43,7 +43,7 @@ FONTS = "../../../fonts"
 # 어디에 내나 — 'preview'(preview/concepts/landing/) · 'staging'(staging/index.html · build_staging() 가 바꾼다)
 MODE = "preview"
 # 스테이징에서 링크가 가는 곳(staging/ 안의 상대 주소). 시안은 '#'(머리의 리포트 · 업종 분석 · 모닝브리핑은 같은 페이지의 절)
-HREF = {"홈": "Home.html", "리포트": "Reports.html", "업종 분석": "industry.html", "관심종목": "Watchlist.html", "모닝브리핑": "brief.html",
+HREF = {"홈": "Home.html", "리포트": "Reports.html", "업종 분석": "industry.html", "관심종목": "Watchlist.html", "멤버십": "pricing.html", "모닝브리핑": "brief.html",
         "회사 소개": "About.html", "문의하기": "Contact.html", "피드백": "Feedback.html", "이용약관": "Terms.html", "개인정보 처리방침": "Privacy.html",
         "로그인": "Login.html", "회원가입": "Signup.html", "brand": "./",
         "hero_link": "Reports.html", "trust_link": "About.html#s03", "brief_link": "brief.html", "sectors_link": "industry.html"}
@@ -542,7 +542,7 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .nav-in{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;position:relative}
 .brand{display:flex;align-items:center;min-height:44px}
 .brand img{height:14px;display:block} .brand .dk{display:none} :root[data-theme="dark"] .brand .lt{display:none} :root[data-theme="dark"] .brand .dk{display:block}
-.links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:28px}
+.links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:34px}   /* 28 → 34(사장 2026-10-02 "조금만 더 벌려줘") — comp_common 머리와 같은 값 */
 .links a{padding:15px 0;font:500 14px/1 var(--font);color:var(--ink-72);transition:color .12s} .links a:hover{color:var(--ink)}
 .nav.on-band{--nav-bar:rgba(20,20,20,.72);--ink:#f2f1ee;--ink-72:rgba(242,241,238,.72);--hair:rgba(255,255,255,.1)}
 .nav.on-band .brand .lt{display:none} .nav.on-band .brand .dk{display:block}
@@ -865,7 +865,16 @@ I = {
     "ham": '<svg class="ham" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>',
     "x": '<svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>',
 }
-LINKS = [("홈", "#"), ("리포트", "#report"), ("업종 분석", "#sectors"), ("관심종목", "#"), ("모닝브리핑", "#brief")]   # 멤버십은 뺐다 — 랜딩은 KOSAI 소개, 가격 문구는 유료화 법정 절차 뒤(CLAUDE.md)
+LINKS = [("홈", "#"), ("리포트", "#report"), ("업종 분석", "#sectors"), ("관심종목", "#"), ("모닝브리핑", "#brief")]   # 시안 — 멤버십 없음(랜딩은 KOSAI 소개)
+
+
+def nav_links():
+    """머리 · 휴대폰 메뉴의 링크. 스테이징은 다른 스테이징 페이지 머리(comp_common.PAGES_STAGING)와 같은 자리 — 관심종목 다음 — 에 멤버십을 둔다
+    (사장 2026-10-02 "스테이징 랜딩페이지 헤더에는 멤버십 버튼도 넣어야지"). 꼬리와 시안에는 넣지 않았다."""
+    if MODE != "staging":
+        return LINKS
+    i = [t for t, _ in LINKS].index("관심종목") + 1
+    return LINKS[:i] + [("멤버십", "#")] + LINKS[i:]
 
 
 def sents(text):
@@ -958,7 +967,7 @@ def more(label, href="#"):
 def nav():
     """머리 · 휴대폰 메뉴. 스테이징은 실제 페이지로 가고, 로그인 상태(auth-state.js)가 찾는 자리(#navRight · #acct · #mauth)를 둔다."""
     stg = MODE == "staging"
-    lk = "".join(f'<a href="{href(t, h)}">{t}</a>' for t, h in LINKS)
+    lk = "".join(f'<a href="{href(t, h)}">{t}</a>' for t, h in nav_links())
     a = lambda t: f'<a href="{href(t)}">{t}</a>'
     return ('<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>'
             f'<nav class="nav on-band" id="nav"><div class="nav-in"><a class="brand" href="{href("brand")}"><img class="lt" src="{ASSETS}/kosai-wordmark-black.png" alt="KOSAI">'

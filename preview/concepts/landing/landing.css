@@ -40,7 +40,7 @@ svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .nav-in{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;position:relative}
 .brand{display:flex;align-items:center;min-height:44px}
 .brand img{height:14px;display:block} .brand .dk{display:none} :root[data-theme="dark"] .brand .lt{display:none} :root[data-theme="dark"] .brand .dk{display:block}
-.links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:28px}
+.links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:34px}   /* 28 → 34(사장 2026-10-02 "조금만 더 벌려줘") — comp_common 머리와 같은 값 */
 .links a{padding:15px 0;font:500 14px/1 var(--font);color:var(--ink-72);transition:color .12s} .links a:hover{color:var(--ink)}
 .nav.on-band{--nav-bar:rgba(20,20,20,.72);--ink:#f2f1ee;--ink-72:rgba(242,241,238,.72);--hair:rgba(255,255,255,.1)}
 .nav.on-band .brand .lt{display:none} .nav.on-band .brand .dk{display:block}

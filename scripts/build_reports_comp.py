@@ -100,7 +100,7 @@ MOBILE_CSS = '''@media (max-width:820px){
 
 BODY = '''<main class="wrap">
   <header class="hero">
-    <p class="crumb" id="eyebrow">코스피 · 코스닥 상장사 리서치</p>
+    <p class="crumb" id="eyebrow">국내 상장사 리서치</p>
     <h1>종목 리포트</h1>
     <p class="sub">한국 상장사의 분석 리포트를 종목별로 확인하실 수 있습니다. 종목을 선택하시면 상세 리포트로 이동합니다.</p>
   </header>
@@ -149,7 +149,7 @@ JS = r'''(function(){
   var SORT_LABEL={mcap_desc:'시가총액 높은 순',mcap_asc:'시가총액 낮은 순',change_desc:'등락률 높은 순',change_asc:'등락률 낮은 순',date:'최신 리포트순',name:'종목명순',per_asc:'PER 낮은 순',pbr_asc:'PBR 낮은 순',div_desc:'배당수익률 높은 순'};
   var rowsEl=document.getElementById('rows'),rlEl=document.getElementById('rl'),emptyEl=document.getElementById('empty'),pagerEl=document.getElementById('pager');
   var nBoth=REPORTS.filter(function(s){return RREP[s.ticker]}).length;
-  document.getElementById('eyebrow').textContent='코스피 · 코스닥 상장사 '+nBoth.toLocaleString('ko-KR')+'종목 리포트';
+  document.getElementById('eyebrow').textContent='국내 상장사 '+nBoth.toLocaleString('ko-KR')+'종목 리포트';
   /* 값이 없는 종목은 방향과 상관없이 뒤로 보낸다. 앞에 두면 'PER 낮은 순'의 첫 화면이 전부 '—' 가 된다. */
   function byNum(k,d){return function(a,b){var x=a[k],y=b[k],xb=(x==null||isNaN(x)),yb=(y==null||isNaN(y));if(xb&&yb)return (b.mcap||0)-(a.mcap||0);if(xb)return 1;if(yb)return -1;return (x-y)*d}}
   function repTitle(tk){var R=RREP[tk];return R&&R.title?(R.title.ko||R.title.en||''):''} function repDate(tk){var R=RREP[tk];return R&&R.reportDate?R.reportDate:''} function repTs(tk){var R=RREP[tk];return R?(R.reportTs||R.reportDate||''):''}
