@@ -2,11 +2,13 @@
 
    사장이 맥북 트랙패드로 랜딩을 스크롤해 보고 "좀 이상하더라" 고 했다. 트랙패드는 운영체제가 이미 관성을
    주는데 lenis 가 그 위에 감속을 한 번 더 걸어서였다 — 화면이 손가락보다 늦게 따라오고, 손을 뗀 뒤에도 한 번
-   더 미끄러진다. 이제 smooth-scroll.js 가 맥이면 켜지 않고, 다른 곳에서도 wheelDeltaY 가 120 의 배수인
-   이벤트(휠 한 칸)만 감속한다. 실사이트 · 스테이징 사본을 둘 다 본다.
+   더 미끄러진다. 이제 smooth-scroll.js 가 맥이면 켜지 않고, 다른 곳에서도 wheelDeltaY 가 휠 한 칸 값인
+   이벤트만 감속한다. 한 칸 값은 120 의 배수이고, 크롬(123판부터)은 그것을 화면 배율로 나눠 소수점을 버린다
+   (125% 화면은 96). 이 배율 항목을 빼먹은 판은 125~200% 화면의 마우스 휠까지 감속을 놓쳤다 — 여기서 8개가 걸린다.
+   실사이트 · 스테이징 사본을 둘 다 본다.
 
-   마우스 휠은 진짜 입력(CDP)으로 본다 — 크로미움은 한 칸을 120 으로 적는다. 터치패드는 진짜로 만들 수 없어
-   (CDP 가 만드는 휠은 늘 120 이다) wheelDeltaY 를 넣은 가짜 휠 이벤트로 본다. 가짜 이벤트에는 브라우저가
+   마우스 휠은 진짜 입력(CDP)으로 본다 — 크로미움은 한 칸을 120(배율 100%)으로 적는다. 터치패드는 진짜로 만들 수
+   없어(CDP 가 만드는 휠은 늘 한 칸 값이다) wheelDeltaY 를 넣은 가짜 휠 이벤트로 본다. 가짜 이벤트에는 브라우저가
    화면을 옮기지 않으므로, 막히지 않았으면(defaultPrevented 거짓) 시험이 그만큼 직접 옮긴다 — 브라우저가 할 일이다.
 
      node staging/tests/smooth-wheel.test.mjs
@@ -64,7 +66,7 @@ const PAGE = `<!doctype html><meta charset="utf-8"><title>휠</title>
 <style>html,body{margin:0}</style><div style="height:20000px"></div>
 <script src="lenis.js"></script><script src="smooth-scroll.js"></script>
 <script>
-  addEventListener("wheel", function (e) { window.__last = { prevented: e.defaultPrevented, trusted: e.isTrusted }; });
+  addEventListener("wheel", function (e) { window.__last = { prevented: e.defaultPrevented, trusted: e.isTrusted, w: e.wheelDeltaY }; });
   /* 가짜 휠 — 막히지 않았으면 브라우저 대신 옮긴다 */
   window.__wheel = function (o) {
     var ev = new WheelEvent("wheel", Object.assign({ bubbles: true, cancelable: true, deltaMode: 0, clientX: 300, clientY: 300 }, o));
@@ -141,8 +143,8 @@ async function site(label, dir) {
     ok(pad.out.slice(11).every((r) => !r.prevented), "관성 구간(wheelDeltaY 0)도 원래 스크롤");
     ok(Math.abs(pad.y - 167) < 1, `손가락이 움직인 만큼만 바로 옮겨진다(${pad.y}px / 167px)`);
 
-    /* ④ 0.4초 넘게 쉬면 새 동작 — 다시 마우스 휠은 감속 */
-    await page.waitForTimeout(450);
+    /* ④ 0.5초 넘게 쉬면 새 동작 — 다시 마우스 휠은 감속 */
+    await page.waitForTimeout(600);
     const again = await page.evaluate(() => window.__wheel({ deltaY: 100, wheelDeltaY: -120 }));
     ok(again.prevented && again.state === "smooth", "쉬었다가 굴린 마우스 휠은 다시 감속한다", JSON.stringify(again));
 
@@ -151,7 +153,7 @@ async function site(label, dir) {
     ok(!handoff.prevented && handoff.state !== "smooth", "감속 중 터치패드 입력이 오면 감속을 멈추고 넘긴다", JSON.stringify(handoff));
 
     /* ⑥ 가로 휠 · 확대(ctrl)는 판정을 바꾸지 않는다, 두 칸 묶음(240)은 한 칸과 같다 */
-    await page.waitForTimeout(450);
+    await page.waitForTimeout(600);
     const mix = await page.evaluate(async () => {
       const a = window.__wheel({ deltaY: 100, wheelDeltaY: -120 });
       await new Promise((r) => setTimeout(r, 30));
@@ -164,10 +166,10 @@ async function site(label, dir) {
     ok(mix.every((r) => r.prevented), "가로 휠 · 확대(ctrl)가 끼어도 마우스 휠 감속은 그대로, 두 칸 묶음(240)도 감속", JSON.stringify(mix));
 
     /* ⑦ 고해상도 휠(한 칸을 잘게 — 15) · 맥 마우스식 값(12)은 원래 스크롤 */
-    await page.waitForTimeout(450);
+    await page.waitForTimeout(600);
     const fine = await page.evaluate(async () => {
       const a = window.__wheel({ deltaY: 12.5, wheelDeltaY: -15 });
-      await new Promise((r) => setTimeout(r, 450));
+      await new Promise((r) => setTimeout(r, 600));
       const b = window.__wheel({ deltaY: 4.000244140625, wheelDeltaY: -12 });
       return [a, b];
     });
@@ -175,7 +177,29 @@ async function site(label, dir) {
     await ctx.close();
   }
 
-  /* ⑧ 맥 — 크롬(userAgentData · platform) · 사파리(platform 만)식 모두 켜지지 않는다 */
+  /* ⑧ 화면 배율 — 크롬(123판부터)은 휠 한 칸을 120 ÷ 배율(소수점 버림)로 적는다. 125% 화면은 96, 150% 는 80.
+     윈도 노트북 · 큰 모니터는 125~150% 가 흔하다 — 여기서 마우스 휠 감속이 빠지면 안 된다 */
+  for (const dsf of [1.25, 1.5, 1.75, 2]) {
+    const { ctx, page } = await open(dir, { deviceScaleFactor: dsf });
+    await page.mouse.wheel(0, 100);
+    const last = await lastWheel(page);
+    ok(last && last.trusted && last.prevented, `배율 ${dsf * 100}% — 마우스 휠 한 칸(wheelDeltaY ${last && last.w})은 감속한다`, JSON.stringify(last));
+    await page.waitForTimeout(600);
+    const r = await page.evaluate(async () => {
+      const out = [];
+      out.push(window.__wheel({ deltaY: 100, wheelDeltaY: -120 }));     // 파이어폭스식 — 배율과 관계없이 120
+      await new Promise((res) => setTimeout(res, 600));
+      for (const d of [2, 6, 11, 17, 23]) { out.push(window.__wheel({ deltaY: d, wheelDeltaY: -d })); await new Promise((res) => setTimeout(res, 16)); }
+      const one = Math.trunc(120 / devicePixelRatio);                     // 터치패드가 우연히 한 칸 값을 냈다
+      out.push(window.__wheel({ deltaY: one, wheelDeltaY: -one }));
+      return out;
+    });
+    ok(r[0].prevented, `배율 ${dsf * 100}% — 파이어폭스식 120 도 감속한다`, JSON.stringify(r[0]));
+    ok(r.slice(1).every((x) => !x.prevented), `배율 ${dsf * 100}% — 터치패드식 입력은 원래 스크롤(우연한 한 칸 값 포함)`, JSON.stringify(r.slice(1)));
+    await ctx.close();
+  }
+
+  /* ⑨ 맥 — 크롬(userAgentData · platform) · 사파리(platform 만)식 모두 켜지지 않는다 */
   const macs = [
     ["맥 크롬", { userAgent: MAC_CHROME }, () => {
       Object.defineProperty(Navigator.prototype, "platform", { get: () => "MacIntel" });
@@ -198,7 +222,7 @@ async function site(label, dir) {
     await ctx.close();
   }
 
-  /* ⑨ 움직임 줄임 — 전과 같이 켜지지 않는다 */
+  /* ⑩ 움직임 줄임 — 전과 같이 켜지지 않는다 */
   {
     const { ctx, page } = await open(dir, { reducedMotion: "reduce" });
     ok(await page.evaluate(() => !window.KOSSmoothScroll), "움직임 줄임 설정이면 켜지지 않는다");
