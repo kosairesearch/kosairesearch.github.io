@@ -292,8 +292,8 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
 .rk-c{font:600 14px/24px var(--font)} .rk-b p{margin:0 0 12px;font:400 15px/24px var(--font);color:var(--ink-72)} .rk-b p:last-child{margin:0}
 /* 체크포인트 */
 .cps{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-.cps li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;align-items:start;padding:16px 0;border-bottom:1px solid var(--hair)}
-.cps .when{font:500 13px/24px var(--font);color:var(--ink-62);white-space:nowrap}
+.cps li{display:grid;grid-template-columns:180px minmax(0,1fr);gap:24px;align-items:start;padding:16px 0;border-bottom:1px solid var(--hair)}
+.cps .when{padding-top:2px;font:500 13px/20px var(--font);color:var(--ink-62);word-break:keep-all;overflow-wrap:anywhere}
 .cps p{margin:0;font:400 15px/24px var(--font)}
 .verdict p{font-size:17px}
 /* 출처 */

@@ -125,6 +125,8 @@ JS = r'''(function(){
   clearBtn.addEventListener('click',function(){if(!confirm('관심종목을 전체 삭제하시겠습니까?'))return;setEdit(false);page=1;if(W){W.clear();return}LIST=[];render()});
   rowsEl.addEventListener('click',function(e){var rm=e.target.closest('[data-rm]');if(rm){e.preventDefault();if(W){W.remove(rm.dataset.rm);return}LIST=LIST.filter(function(s){return s.ticker!==rm.dataset.rm});render()}});
   document.getElementById('pctl').addEventListener('click',function(e){var b=e.target.closest('button[data-pg]');if(!b)return;var pg=b.dataset.pg;if(pg==='prev')page=Math.max(1,page-1);else if(pg==='next')page++;else page=+pg;render();window.scrollTo({top:0,behavior:'smooth'})});
+  /* 페이지 단추 수(휴대폰 5 · 그 밖 10)는 그릴 때 화면 폭으로 정한다 — 가로로 연 휴대폰을 세로로 돌리면 10개가 남아 화면 밖으로 넘쳤다(2026-10-03) */
+  var mqBlk=matchMedia('(max-width:640px)');if(mqBlk.addEventListener)mqBlk.addEventListener('change',function(){render()});
   render();
 })();
 '''
