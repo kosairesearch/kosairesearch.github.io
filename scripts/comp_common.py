@@ -596,10 +596,12 @@ PROSE_CSS = """.prose{font:400 16px/28px var(--font);color:var(--ink)} .prose p{
 @media (max-width:820px){.page-hero{padding-top:20px} .page-hero h1{font-size:32px;line-height:38px} .page-hero .sub{font-size:15px;line-height:24px} .prose{font-size:15px;line-height:26px} .page-body{padding:28px 0 48px}}"""
 
 # 계정 — 로그인·회원가입·약관 동의·계정 인증·설정. 400px 한 단
+# .sbtn.naver 는 네이버 로그인 버튼 사용 가이드를 따른다 — 지정 녹색 #03A94D · N 로고 16px(글자 14px 보다 크게) · 로고와 글자 사이 8px
+# (2026-10-04 · build_auth_comp.N_SVG 의 공식 로고와 짝. staging/tests/naver-button.test.mjs 가 실제 화면에서 잰다).
 AUTH_CSS = """.auth{max-width:400px;padding:44px 0 72px} .auth .crumb{font:500 13px/20px var(--font);color:var(--ink-62)} .auth h1{margin:12px 0 0;font:700 32px/40px var(--font);letter-spacing:-.02em} .auth .sub{margin:12px 0 0;font:400 15px/24px var(--font);color:var(--ink-72)}
 .social{display:flex;flex-direction:column;gap:10px;margin-top:32px}
 .sbtn{display:flex;align-items:center;justify-content:center;gap:10px;height:44px;border:1px solid var(--line);border-radius:999px;background:transparent;font:600 14px/1 var(--font);color:var(--ink);cursor:pointer;transition:border-color .12s} .sbtn:hover{border-color:var(--ink)} .sbtn svg{width:18px;height:18px;flex:none}
-.sbtn.kakao{background:#FEE500;border-color:#FEE500;color:#191600} .sbtn.naver{background:#03C75A;border-color:#03C75A;color:#fff}
+.sbtn.kakao{background:#FEE500;border-color:#FEE500;color:#191600} .sbtn.naver{background:#03A94D;border-color:#03A94D;color:#fff;gap:8px} .sbtn.naver svg{width:16px;height:16px}
 .divider{display:flex;align-items:center;gap:12px;margin:26px 0 22px;font:400 12px/16px var(--font);color:var(--ink-62)} .divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--hair)}
 .auth .btn{width:100%;justify-content:center;height:44px;font-size:14px}
 .auth .row-r{display:flex;justify-content:flex-end;margin:-14px 0 22px} .auth .row-r a{font:400 13px/20px var(--font);color:var(--ink-62);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .auth .row-r a:hover{color:var(--ink)}
