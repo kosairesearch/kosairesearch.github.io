@@ -100,7 +100,8 @@
     return t == null ? null : fill(t, '#', n.nums);
   }
   function fmt(v, dp) { return v.toLocaleString('en-US', { maximumFractionDigits: dp == null ? 1 : dp }); }
-  /* 표 · 지표 칸의 금액과 주식 수. 실사이트 영어 화면과 같은 꼴(₩1.42T · ₩769.7B · ₩78,400 · 30M). */
+  /* 표 · 지표 칸의 금액과 주식 수. 실사이트 영어 화면과 같은 꼴(₩1.42T · ₩769.7B · ₩78,400 · 30M).
+     주식 수는 1,000주부터 K 로 줄인다(100K) — '100,000 shares' 가 지표 줄의 좁은 칸을 넘어 옆 값과 겹쳤다(2026-10-03). */
   function money(s) {
     var m = s.match(/^([+\-−]?)([\d,]+(?:\.\d+)?) ?(조|억|만)? ?(원|주)?$/);
     if (!m || (!m[3] && !m[4])) return null;
@@ -109,6 +110,7 @@
       var n = u === '억' ? v * 1e8 : u === '만' ? v * 1e4 : v;
       if (n >= 1e9) return sg + fmt(n / 1e9, 2) + 'B';
       if (n >= 1e6) return sg + fmt(n / 1e6, 1) + 'M';
+      if (n >= 1e3) return sg + fmt(n / 1e3, 1) + 'K';
       return sg + fmt(n, 0) + ' shares';
     }
     var w = u === '조' ? v * 1e12 : u === '억' ? v * 1e8 : u === '만' ? v * 1e4 : v;
