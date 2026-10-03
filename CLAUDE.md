@@ -537,6 +537,8 @@ Consent · auth-action · Settings · stock · 404)은 스테이징과 같은 �
 발행한 브리핑마다 고정 페이지 `brief-YYYY-MM-DD.html` 과 목록 `brief-archive.html` 을 둔다 — 실사이트(루트)와 스테이징(`staging/`) 모두.
 같은 함수 `build_brief_comp.build_archive()` 가 만든다. brief.html 에는 날짜 줄 앞 '모닝브리핑 제N호 · '(영어 'Morning Brief No. N · ' — CSS 가
 `data-no` · `data-n` 으로 그린다)와 이전 호 · '지난 호 전체 보기', 지난 호에는 맨 위 '지난 호입니다. 최신 호 보기'와 이전 호 · 다음 호가 붙는다.
+이전 호 · 다음 호는 화면 폭과 관계없이 위아래로 쌓고 모두 왼쪽 정렬한다(2026-10-04 사장 "정렬이 어색한데" — 두 칸으로 나눠 다음 호를 오른쪽
+정렬했을 때 두 줄 제목의 왼쪽 끝이 들쭉날쭉했다). 두 칸 배치로 되돌리지 말 것 — brief-archive.test ⑦ 이 옛 배치를 잡는다.
 
   · **누가 만드나** — 실사이트는 아침 작업 ④의 `render_brief.py` 가 brief.html 을 쓰고 발행 기록을 남긴 직후 지난 호 전체를 다시 쓴다(그날 호 ·
     전날 호의 '다음 호' · 목록). ⑥ 커밋이 `git add -- 'brief-*.html'` 로 올린다. 스테이징은 `build_staging.py` 맨 끝. 손으로는 `build_live.py` ·
