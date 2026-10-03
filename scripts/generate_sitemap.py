@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""sitemap.xml 생성 — 정적 페이지 + 업종 상세 + 종목 페이지(stock/{종목코드}.html) + 영어 종목 페이지(en/stock/).
+"""sitemap.xml 생성 — 정적 페이지 + 모닝브리핑 지난 호 + 업종 상세 + 종목 페이지(stock/{종목코드}.html) + 영어 종목 페이지(en/stock/).
 
 데이터 갱신 워크플로에서 종목 페이지를 만든 뒤(build_stock_static.py) 실행해 sitemap을 항상 최신으로 유지한다.
 """
@@ -59,6 +59,20 @@ def main():
             f"<url><loc>{SITE}{path}</loc><lastmod>{lastmod}</lastmod>"
             f"<changefreq>{freq}</changefreq><priority>{prio}</priority></url>"
         )
+    # 모닝브리핑 지난 호(2026-10-04 · scripts/build_brief_comp.py) — 목록 brief-archive.html 과 호마다 고정 페이지 brief-YYYY-MM-DD.html.
+    # 가장 최근 호의 고정 페이지는 brief.html 과 같은 글이라 대표 주소(canonical)가 brief.html 이다 — 사이트맵에는 대표 주소만 올리므로
+    # 빼고, 다음 호가 나와 자기 주소가 대표가 된 뒤에 올린다(lastmod 는 그날 — 다음 호 연결이 붙은 날).
+    issues = sorted(ROOT.glob("brief-????-??-??.html"))
+    if issues:
+        out.append(
+            f"<url><loc>{SITE}/brief-archive.html</loc><lastmod>{issues[-1].stem[6:]}</lastmod>"
+            f"<changefreq>daily</changefreq><priority>0.5</priority></url>"
+        )
+    for f, nxt in zip(issues, issues[1:]):
+        out.append(
+            f"<url><loc>{SITE}/{f.name}</loc><lastmod>{nxt.stem[6:]}</lastmod>"
+            f"<changefreq>monthly</changefreq><priority>0.4</priority></url>"
+        )
     for sec in sectors:
         loc = f"{SITE}/industry.html?sector={quote(sec)}"
         out.append(
@@ -95,7 +109,7 @@ def main():
     # 세는 것과 적는 것이 같아야 한다. tickers 를 세고 있었는데 그 목록은
     # 이제 사이트맵에 들어가지 않는다 — 실제로 적힌 줄만 센다.
     print(
-        f"sitemap.xml: 정적 {len(STATIC_PAGES)} + 업종 {len(sectors)} "
+        f"sitemap.xml: 정적 {len(STATIC_PAGES)} + 브리핑 지난 호 {max(len(issues) - 1, 0)}(+목록) + 업종 {len(sectors)} "
         f"+ 종목 페이지 {len(pages)} + 영어 종목 페이지 {len(pages_en)} URL (종목 {len(tickers)}개 중)"
     )
 

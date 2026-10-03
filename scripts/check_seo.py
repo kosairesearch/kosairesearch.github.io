@@ -67,14 +67,27 @@ check('naver-site-verification' in s, "네이버 사이트 소유확인 메타 �
 # 6) canonical 이 서로 겹치지 않음(각 페이지가 자기 자신을 가리킴)
 # noindex 페이지(옛 주소 리다이렉트 껍데기)는 뺀다. 그쪽은 목적지를
 # canonical 로 가리키는 것이 정상이라, 겹쳐도 문제가 아니다.
+# 모닝브리핑 지난 호(2026-10-04) — 가장 최근 호의 고정 페이지는 brief.html 과 같은 글이라 brief.html 을 대표로 가리킨다
+# (build_brief_comp._issue_seo · 다음 호가 나오면 자기 주소로 바뀐다). 그 한 장만 겹쳐도 된다 — 다른 호가 brief.html 을 가리키면 걸린다.
+issues = sorted(p.name for p in pages if re.fullmatch(r"brief-\d{4}-\d\d-\d\d\.html", p.name))
 canon = {}
 for p in pages:
     t = p.read_text(errors="ignore")
     if re.search(r'<meta name="robots"[^>]*noindex', t): continue
     m = re.search(r'<link rel="canonical" href="([^"]+)"', t)
-    if m: canon.setdefault(m.group(1), []).append(p.name)
+    if not m: continue
+    if issues and p.name == issues[-1] and m.group(1) == "https://kosai.kr/brief.html": continue
+    canon.setdefault(m.group(1), []).append(p.name)
 clash = {k: v for k, v in canon.items() if len(v) > 1}
 check(not clash, "canonical 이 겹치는 페이지 없음", str(clash))
+if issues:   # 지난 호 — 최신 호만 brief.html 을, 나머지는 자기 주소를 대표로
+    _bad = []
+    for name in issues:
+        m = re.search(r'<link rel="canonical" href="([^"]+)"', (ROOT / name).read_text(errors="ignore"))
+        want = "https://kosai.kr/brief.html" if name == issues[-1] else f"https://kosai.kr/{name}"
+        if not m or m.group(1) != want:
+            _bad.append(f"{name} → {m.group(1) if m else '없음'}")
+    check(not _bad, f"모닝브리핑 지난 호 {len(issues)}편의 대표 주소(최신 호는 brief.html · 나머지는 자기 주소)", ", ".join(_bad[:3]))
 
 # 7) 첫 화면의 매일 바뀌는 값이 실제와 같은가 — 리포트 수 · 업종 수 · 출처 평균 · 브리핑 호수 · '지난해' · 행성 자료,
 #    그리고 문서 제목 · 검색 설명 · 공유 설명의 '국내 상장 N개 종목'.

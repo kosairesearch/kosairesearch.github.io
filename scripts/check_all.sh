@@ -97,6 +97,9 @@ run "마케팅 시트"  python3 scripts/tests/marketing_sheet_test.py
 run "집계 제외"    node tests/analytics-optout.test.mjs
 run "행동 기록"    node tests/analytics-events.test.mjs
 run "브리핑 생성"   python3 scripts/test_brief_gen.py
+# 모닝브리핑 지난 호(2026-10-04) — 아침 작업의 render_brief 가 발행할 때 호수를 적고 지난 호(그날 호 · 전날 호의 '다음 호' · 목록)를
+# 만드는지, 그것이 멈춰도 발행은 계속되는지, render_brief 가 쓴 brief.html 이 실사이트 생성기 결과와 같은지 자료 사본으로 본다.
+run "브리핑 지난 호" python3 scripts/tests/brief_archive_flow_test.py
 # 생성기는 DART·KRX 를 부르고 요금이 나가서 통째로 못 돌린다. 그래서 분모를
 # 되묻는 블록만 원문에서 꺼내 실제 값으로 돌려 본다 — 틀렸던 종목은 고쳐지고
 # 맞았던 종목(삼성생명)은 안 건드리는지.

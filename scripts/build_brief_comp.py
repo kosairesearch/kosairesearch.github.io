@@ -48,11 +48,14 @@ MOBILE_CSS = '''@media (max-width:820px){
   .mb-sec--cov{margin-top:44px;padding-top:30px}
 }'''
 
-# ── 지난 호(스테이징 · 2026-10-04 사장 "모닝브리핑 지난 호 스테이징에 만들어봐") ─────────────────────────────────────────
-# 발행한 브리핑(meta.publishedAt)마다 호별 페이지 brief-YYYY-MM-DD.html 과 목록 brief-archive.html 을 낸다. 호수는 발행한 순서다
-# (제1호 = 2026-08-18) — 랜딩의 '제N호 읽기'(stamp_counts.brief_no)와 같은 수. 실사이트(live)와 시안(preview)에는 아직 없다 —
-# page_html() 은 issue 를 주지 않으면 전과 글자 하나까지 같은 페이지를 낸다(render_brief · build_live --check 가 그 길로 그린다).
-# 스테이징 페이지는 상대 주소라 폴더(brief/…)에 넣지 않고 다른 페이지와 같은 층에 둔다.
+# ── 지난 호(2026-10-04 사장 "모닝브리핑 지난 호 스테이징에 만들어봐" → "그냥 최대한 좋은 쪽으로 해줘") ─────────────────────────
+# 발행한 브리핑(meta.publishedAt)마다 호별 페이지 brief-YYYY-MM-DD.html 과 목록 brief-archive.html 을 낸다 — 스테이징과 실사이트(루트).
+# 시안(preview)에는 없다 — page_html() 은 issue 를 주지 않으면 전과 글자 하나까지 같은 페이지를 낸다.
+# 페이지는 폴더(brief/…) 없이 다른 페이지와 같은 층에 둔다 — 모듈 · 도장(?v=) · 검사가 모두 그 층을 본다.
+#   · 호수는 발행할 때 브리핑에 적어 둔 meta.issueNo 다(render_brief 가 처음 발행할 때 적는다 · 그 전 31편은 발행한 순서로 채웠다).
+#     매번 세지 않으므로 지난 호 하나를 내려도 뒤 호수가 밀리지 않는다. 적힌 호수가 없으면 발행한 순서로 센다.
+#   · 대표 주소(canonical) — 가장 최근 호는 brief.html 이 대표다(같은 글이 두 주소에 있어 검색엔진에 하나를 알린다). 그날 고정 페이지는
+#     다음 호가 나오면 자기 주소가 대표가 된다. 지난 호마다 그 호의 요약으로 검색 설명을 단다(실사이트만 · 스테이징은 noindex).
 ARCHIVE = 'brief-archive.html'
 
 ISSUE_EN = {'지난 호': 'Past issues', '이전 호': 'Previous issue', '다음 호': 'Next issue', '지난 호 전체 보기': 'View all past issues',
@@ -139,6 +142,18 @@ def _titles(doc):
     return RB.to_key(t.get('ko') or ''), (t.get('en') or '').strip()
 
 
+def number_of(doc, pos):
+    """호수 — 발행할 때 적어 둔 meta.issueNo. 없으면 pos(발행한 순서 · 1부터)."""
+    n = (doc.get('meta') or {}).get('issueNo')
+    return n if isinstance(n, int) and not isinstance(n, bool) and n > 0 else pos
+
+
+def next_issue_no(date):
+    """처음 발행하는 브리핑(date)에 붙일 호수 — 이미 발행한 다른 호 가운데 가장 큰 호수 + 1(render_brief 가 부른다)."""
+    others = [doc for d, doc in published() if d != date]
+    return max((number_of(doc, j + 1) for j, doc in enumerate(others)), default=0) + 1
+
+
 def published():
     """발행한 브리핑 — [(날짜, 문서)] 오래된 순. 만들어만 두고 올리지 않은 원고(9월 13일 시험 원고 등)는 빠진다."""
     out = []
@@ -157,9 +172,9 @@ def issue_info(items, i):
     def side(j):
         if 0 <= j < len(items):
             d, doc = items[j]
-            return {'date': d, 'no': j + 1, 'title': _titles(doc)}
+            return {'date': d, 'no': number_of(doc, j + 1), 'title': _titles(doc)}
         return None
-    return {'no': i + 1, 'prev': side(i - 1), 'next': side(i + 1), 'latest': i == len(items) - 1}
+    return {'no': number_of(items[i][1], i + 1), 'date': items[i][0], 'prev': side(i - 1), 'next': side(i + 1), 'latest': i == len(items) - 1}
 
 
 def _issue_parts(body, dic, issue):
@@ -188,6 +203,31 @@ def _issue_parts(body, dic, issue):
     return body, dic
 
 
+def _issue_desc(doc, issue, limit=110):
+    """호별 페이지의 검색 설명 — '2026년 10월 2일 (금) 모닝브리핑 제31호.' 뒤에 그 호의 요약을 문장 단위로 limit 자까지.
+    요약(summary)이 없는 초기 호(8월 18일 무렵)는 머리말(lead)을 쓴다."""
+    ko = lambda v: ((v.get('ko') if isinstance(v, dict) else v) or '') if v else ''  # noqa: E731
+    text = RB.to_key(ko(doc.get('summary')) or ko(doc.get('lead')))
+    out = f"{_date_ko(issue['date'])} 모닝브리핑 {_no(issue['no'])[0]}."
+    for sent in re.split(r'(?<=다\.)\s+', text):
+        if len(out) + 1 + len(sent) <= limit:
+            out += ' ' + sent
+            continue
+        if len(out) < limit * 0.65:   # 아직 짧으면(첫 문장부터 길거나 앞 문장이 짧으면) 낱말 경계에서 자르고 줄임표
+            cut = sent[:max(0, limit - len(out) - 2)].rsplit(' ', 1)[0].rstrip(',')
+            out += (' ' + cut + '…') if cut else ''
+        break
+    return out
+
+
+def _issue_seo(doc, issue, head_title):
+    """실사이트 호별 페이지의 검색 노출 머리. 가장 최근 호는 brief.html 이 대표 주소다 — 다음 호가 나오면 자기 주소가 된다."""
+    import html as _h
+    url = f"{C.SITE}/{issue_file(issue['date'])}"
+    canon = f'{C.SITE}/brief.html' if issue['latest'] else url
+    return C.seo_tags(canon, _h.unescape(head_title), _issue_desc(doc, issue), og_type='article')
+
+
 def html_escape(s):
     return (s or '').replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;')
 
@@ -205,10 +245,11 @@ def latest_published():
     return files[-1] if files else None
 
 
-def page_html(doc, at, issue=None):
+def page_html(doc, at, issue=None, page='brief.html'):
     """브리핑 한 편의 페이지(모드에 맞는 옷). 본문은 실사이트와 같은 render_brief.build() — 아침 브리핑 작업(render_brief.py)도 이 함수로
     실사이트 brief.html 을 그린다. 금액 표기는 render_brief 와 같은 규칙으로 맞춘 뒤 그린다(두 길이 같은 글을 내게).
-    issue(issue_info) 를 주면 지난 호 덧붙임(호수 · 지난 호 알림 · 이전 호와 다음 호)을 넣는다 — 지금은 스테이징만 준다."""
+    issue(issue_info) 를 주면 지난 호 덧붙임(호수 · 지난 호 알림 · 이전 호와 다음 호)을 넣는다(스테이징 · 실사이트).
+    page — 내보낼 파일 이름. 실사이트의 호별 페이지(brief-YYYY-MM-DD.html)는 검색 노출 머리를 여기서 단다(brief.html 은 finish 가 LIVE_SEO 로)."""
     _n, doc = number_spacing.normalize_report(doc)
     body, dic = RB.build(doc, at)
     if issue:
@@ -229,7 +270,8 @@ def page_html(doc, at, issue=None):
         i18n = ('<script type="application/json" data-kos-i18n>'
                 + json.dumps(dic, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + '</script>\n')
     css = C.CSS + '\n' + CSS + ('\n' + ISSUE_CSS if issue else '') + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + ('\n' + ISSUE_MOBILE_CSS if issue else '')
-    return (C.head(head_title) + '\n<style>\n' + css + '\n</style>\n</head>\n<body>\n'
+    extra = _issue_seo(doc, issue, head_title) if C.MODE == 'live' and issue and page != 'brief.html' else ''
+    return (C.head(head_title, extra=extra) + '\n<style>\n' + css + '\n</style>\n</head>\n<body>\n'
             + C.nav('모닝브리핑') + '\n<main class="wrap">\n  <article class="mb">\n' + body + '\n  </article>\n</main>\n' + C.FOOTER + '\n' + i18n
             + '<script>\n' + C.JS + '\n</script>\n</body>\n</html>')
 
@@ -243,7 +285,7 @@ def build(date=None, out_path=None):
     path = (RB.BRIEFS / f'{date}.json') if date else latest_published()
     doc = json.loads(Path(path).read_text(encoding='utf-8'))
     issue = None
-    if C.MODE == 'staging':   # 지난 호 — 스테이징만(위 '지난 호' 머리말). 이웃 호를 못 읽어도 이번 호는 그린다(--check 는 build_archive 가 잡는다)
+    if C.MODE in ('staging', 'live'):   # 지난 호(위 '지난 호' 머리말). 이웃 호를 못 읽어도 이번 호는 그린다(--check 는 build_archive 가 잡는다)
         try:
             items = published()
             dates = [d for d, _ in items]
@@ -276,7 +318,7 @@ def archive_html(items):
             dic[mk] = me
             groups.append([mk, []])
             cur = mon
-        no_ko, no_en = _no(i + 1)
+        no_ko, no_en = _no(number_of(doc, i + 1))
         t_ko, t_en = _titles(doc)
         dic[no_ko] = no_en
         dic[_md_ko(d)] = _md_en(d)
@@ -287,32 +329,35 @@ def archive_html(items):
     lists = ''.join(f'\n  <section class="ba-m"><h2>{mk}</h2><ol class="ba-list">' + ''.join(rows) + '</ol></section>' for mk, rows in groups)
     i18n = ('<script type="application/json" data-kos-i18n>'
             + json.dumps(dic, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + '</script>\n')
-    return (C.head(head_title) + '\n<style>\n' + C.CSS + '\n' + C.PROSE_CSS + '\n' + ARCHIVE_CSS + '\n' + C.MOBILE_CSS + '\n' + ARCHIVE_MOBILE_CSS
+    extra = C.seo_tags(f'{C.SITE}/{ARCHIVE}', head_title, sub) if C.MODE == 'live' else ''   # 실사이트 — 대표 주소 · 검색 설명
+    return (C.head(head_title, extra=extra) + '\n<style>\n' + C.CSS + '\n' + C.PROSE_CSS + '\n' + ARCHIVE_CSS + '\n' + C.MOBILE_CSS + '\n' + ARCHIVE_MOBILE_CSS
             + '\n</style>\n</head>\n<body>\n' + C.nav('모닝브리핑') + '\n<main class="wrap">\n  <header class="page-hero">\n'
             + '    <p class="crumb">모닝브리핑</p>\n    <h1>지난 호</h1>\n' + f'    <p class="sub">{sub}</p>\n  </header>\n'
             + '  <div class="ba">' + lists + '\n  </div>\n</main>\n' + C.FOOTER + '\n' + i18n + '<script>\n' + C.JS + '\n</script>\n</body>\n</html>')
 
 
 def build_archive(out_dir):
-    """스테이징의 지난 호 — 발행한 브리핑마다 brief-YYYY-MM-DD.html, 그리고 목록 brief-archive.html. 발행 목록에서 빠진 호의 페이지
+    """지난 호(스테이징 · 실사이트) — 발행한 브리핑마다 brief-YYYY-MM-DD.html, 그리고 목록 brief-archive.html. 발행 목록에서 빠진 호의 페이지
     (원고를 내렸을 때)는 지운다 — 남겨 두면 목록에 없는 호가 주소로는 열린다.
     모두 만든 뒤에 쓴다 — 중간에 멈추면 있던 파일을 하나도 건드리지 않는다(아침 브리핑 작업이 반쯤 바뀐 지난 호를 올리지 않게).
     발행한 브리핑을 하나도 못 읽었거나 한 번에 세 호 이상이 목록에서 빠지면 지우지 않고 멈춘다 — 자료를 잘못 읽은 날 지난 호가 통째로
     사라지거나 호수가 밀리지 않게."""
-    assert C.MODE == 'staging', C.MODE
+    assert C.MODE in ('staging', 'live'), C.MODE
     out_dir = Path(out_dir)
     items = published()
     if not items:
         raise RuntimeError('발행한 브리핑을 하나도 읽지 못했다 — 지난 호를 만들지 않는다')
+    done = (lambda h: C.live_stamp(h)) if C.MODE == 'live' else (lambda h: h)   # C.emit 과 같다 — 실사이트는 ?v= 도장까지
     pages = {}
     for i, (d, doc) in enumerate(items):
-        pages[issue_file(d)] = C.finish(page_html(doc, _at(doc), issue_info(items, i)), issue_file(d))
-    pages[ARCHIVE] = C.finish(archive_html(items), ARCHIVE)
+        name = issue_file(d)
+        pages[name] = done(C.finish(page_html(doc, _at(doc), issue_info(items, i), page=name), name))
+    pages[ARCHIVE] = done(C.finish(archive_html(items), ARCHIVE))
     stale = sorted(f for f in out_dir.glob('brief-????-??-??.html') if f.name not in pages)
     if len(stale) > 2:
         raise RuntimeError(f'발행 목록에서 {len(stale)}호가 한꺼번에 빠졌다 — 지우지 않고 멈춘다: ' + ', '.join(f.name for f in stale[:5]))
     out_dir.mkdir(parents=True, exist_ok=True)
-    for name, html in pages.items():   # C.emit 과 같다(스테이징은 finish 뒤 그대로 쓴다)
+    for name, html in pages.items():
         (out_dir / name).write_text(html, encoding='utf-8')
     for f in stale:
         f.unlink()
