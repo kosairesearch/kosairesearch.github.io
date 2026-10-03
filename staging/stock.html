@@ -242,16 +242,18 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
   .chips a{flex:none;position:relative;font:500 13px/44px var(--font);color:var(--ink-62);transition:color .12s} .chips a.on{color:var(--ink);font-weight:600}
   .sec{padding-bottom:64px}
 }
-/* 유료 구간 — 잠긴 첫 절의 제목과 첫 문단 첫머리를 실제 글 그대로 보여 주고, 두 줄 아래부터 바탕으로 옅어지게 한 뒤 잠금 카드.
+/* 유료 구간 — 잠긴 첫 절의 제목과 앞 문단들을 실제 글 그대로 보여 주고, 두 줄 아래부터 바탕으로 옅어지게 한 뒤 잠금 카드.
    흐림은 쓰지 않는다 — 상자째 흐리는 filter:blur 도, 글자마다 그림자만 남기는 채움 글자(color:transparent + text-shadow)도.
    글자를 흐리면 줄마다 회색 막대가 되어 네모난 모자이크로 보였다(2026-10-03 사장 "모자이크 부분이 어색" →
    "모자이크가 딱 네모낳게 저렇게 티가 난다는 게 어색"). 해외 경제지의 유료 기사와 같은 방식이다.
-   옅어지는 범위는 줄 높이(28px · 휴대폰 27px)의 배수로 잰다 — 글 길이와 관계없이 늘 두 줄이 또렷하고 두 줄에 걸쳐 사라진다.
+   창은 열두 줄이다 — 두 줄은 또렷하고, 열 줄에 걸쳐 천천히 옅어진다(다섯째 줄 무렵 60% · 여덟째 줄 30% · 열두째 줄에 사라짐).
+   옅은 꼬리가 길어야 글이 아래로 이어지는 것으로 읽힌다. 네 줄로 짧게 끊었을 때는 "분량이 없는 것 같잖아. 리포트가 그냥
+   끝난 것 같기도 하고"(같은 날 사장). 범위는 줄 높이(28px · 휴대폰 27px)의 배수로 잰다.
    상자·유리 없이 가는 선 하나로 나눈다(인쇄된 리서치 리포트). */
 .tz{max-width:880px;padding:0 0 88px}
 .tz-peek{pointer-events:none;user-select:none;-webkit-user-select:none}
 .tz-peek .sec{padding-bottom:0}
-.tz-fade{max-height:112px;overflow:hidden;-webkit-mask-image:linear-gradient(to bottom,#000 0,#000 56px,transparent 112px);mask-image:linear-gradient(to bottom,#000 0,#000 56px,transparent 112px)}
+.tz-fade{max-height:336px;overflow:hidden;-webkit-mask-image:linear-gradient(to bottom,#000 0,#000 56px,rgba(0,0,0,.6) 126px,rgba(0,0,0,.3) 224px,transparent 336px);mask-image:linear-gradient(to bottom,#000 0,#000 56px,rgba(0,0,0,.6) 126px,rgba(0,0,0,.3) 224px,transparent 336px)}
 .lockwrap{max-width:720px}
 .lockwrap.pending{visibility:hidden}
 .lock{border-top:1px solid var(--line);padding:32px 0;margin:24px 0 0}
@@ -265,7 +267,7 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
 .toc a .lk{width:11px;height:11px;flex:none;margin-left:auto;align-self:center;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;opacity:.55}
 .chips a .lk{display:inline-block;width:11px;height:11px;vertical-align:-1px;margin-left:5px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;opacity:.55}
 .pending p a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .pending p a:hover{text-decoration-color:var(--ink)}
-@media (max-width:820px){.tz{padding-bottom:64px} .tz-fade{max-height:108px;-webkit-mask-image:linear-gradient(to bottom,#000 0,#000 54px,transparent 108px);mask-image:linear-gradient(to bottom,#000 0,#000 54px,transparent 108px)}}
+@media (max-width:820px){.tz{padding-bottom:64px} .tz-fade{max-height:324px;-webkit-mask-image:linear-gradient(to bottom,#000 0,#000 54px,rgba(0,0,0,.6) 122px,rgba(0,0,0,.3) 216px,transparent 324px);mask-image:linear-gradient(to bottom,#000 0,#000 54px,rgba(0,0,0,.6) 122px,rgba(0,0,0,.3) 216px,transparent 324px)}}
 </style>
 <link rel="icon" href="../assets/favicon.png?v=k2">
 <link rel="stylesheet" href="../fonts/pretendard-subset.css">
@@ -676,8 +678,8 @@ var PAID=null, _lockOff=null, _lockWait=false, FORCE_LOCK=(qp('paywall')!=='0');
 function paywalled(){ return TIER==='v2' && !PAID && (FORCE_LOCK || (REP&&REP.hasPaid===true)); }
 function nextParam(){ var page=location.pathname.split('/').pop()||'stock.html'; return encodeURIComponent(page+(location.search||'')); }
 
-/* 미리보기 — 잠긴 첫 절의 제목과 첫 문단 첫머리만 실제 글로 보여 준다(.tz-fade 가 네 줄에서 자르고 옅어지게 한다).
-   서버가 내려 줄 것은 teaser(절마다 문단 · 항목의 글자 수 — 잠금 카드의 읽는 시간)와 첫 절의 앞부분(lead · 한 문단 예산만큼)뿐이다.
+/* 미리보기 — 잠긴 첫 절의 제목과 앞 문단들만 실제 글로 보여 준다(.tz-fade 가 열두 줄에서 자르고 옅어지게 한다).
+   서버가 내려 줄 것은 teaser(절마다 문단 · 항목의 글자 수 — 잠금 카드의 읽는 시간)와 첫 절의 앞부분(lead · 세 문단 예산만큼)뿐이다.
    나머지 본문은 내려보내지 않는다. 흐린 채움 글자는 쓰지 않는다 — 줄마다 회색 막대가 되어 네모난 모자이크로 보였다
    (2026-10-03 사장 "모자이크가 딱 네모낳게 저렇게 티가 난다는 게 어색"). */
 var TZ_KEYS=['earnings','industry','outlook','valuation_comment','bull','bear','risks','checkpoints','verdict'];
@@ -711,15 +713,15 @@ function deriveTeaser(){
   return out;
 }
 /* 미리보기에 보일 글 — 서버가 준 lead, 없으면 정적 파일에 남은 본문(publish_paid.py 전). 잠금을 풀었을 때와 같은 자르기
-   (prose · chunkPara)의 첫 문단부터, 한 문단 예산(PARA_KO · PARA_EN)이 찰 때까지만 — 첫 문단이 '연간 흐름은 뚜렷하다.' 처럼 한 줄이면
-   다음 문단까지 담아 네 줄 창이 빈 채로 끝나지 않게 한다. 산문 절만 — 요인 · 리스크 · 일정은 쓰지 않는다. */
+   (prose · chunkPara)의 첫 문단부터 세 문단 예산(PARA_KO · PARA_EN 의 세 배)이 찰 때까지 — 열두 줄 창이 끝까지 차서 글이 아래로
+   이어지는 것으로 읽힌다(첫 문단이 '연간 흐름은 뚜렷하다.' 처럼 한 줄이어도). 본문에서 가져올 때는 절의 마지막 문단을 늘 남긴다 —
+   실적 분석이 짧은 리포트(600자대 · 26편)가 미리보기에 통째로 실리지 않게. 산문 절만 — 요인 · 리스크 · 일정은 쓰지 않는다. */
 function tzLead(key,t){
-  var src=(t&&t.lead)?t.lead:(TZ_PROSE.indexOf(key)<0?'':REP[key]);
-  var txt=String(pk(src)), out=[], n=0, budget=/[가-힣]/.test(txt)?PARA_KO:PARA_EN;
-  txt.split(/\n\n+/).some(function(b){
-    chunkPara(b.trim()).some(function(c){ if(c){ out.push(c); n+=c.length; } return n>=budget; });
-    return n>=budget;
-  });
+  var own=!(t&&t.lead), txt=String(pk(own?(TZ_PROSE.indexOf(key)<0?'':REP[key]):t.lead));
+  var all=[], out=[], n=0, budget=3*(/[가-힣]/.test(txt)?PARA_KO:PARA_EN);
+  txt.split(/\n\n+/).forEach(function(b){ chunkPara(b.trim()).forEach(function(c){ if(c) all.push(c); }); });
+  if(own && all.length>1) all.pop();
+  for(var i=0;i<all.length && n<budget;i++){ out.push(all[i]); n+=all[i].length; }
   return out;
 }
 /* 잠긴 절 04~12 중 첫 절 하나만 그린다. 절 번호는 열렸을 때와 같아야 목차가 흔들리지 않는다. */
@@ -732,7 +734,7 @@ function teaserPane(P){
     chars+=tzChars(t); names.push(s[1]);
     if(!h && (lead=tzLead(key,t)).length) h=secH(s[0],s[1],'<div class="tz-fade"><div class="prose">'+lead.map(function(c){ return '<p>'+esc(c)+'</p>'; }).join('')+'</div></div>',s[3],s[4],'div');
   });
-  /* 첫 문단이 없으면(서버가 lead 를 주지 않은 경우 등) 첫 절의 제목만 — 흐린 글자로 메우지 않는다 */
+  /* 미리보기 글이 없으면(서버가 lead 를 주지 않은 경우 등) 첫 절의 제목만 — 흐린 글자로 메우지 않는다 */
   if(!h && P.paid.length){ var f=P.paid[0]; h=secH(f[0],f[1],'',f[3],f[4],'div'); }
   return {html:h, secs:P.paid.length, names:names, mins:Math.max(1,Math.round(chars/500))};   /* 묵독 분당 500자 */
 }
