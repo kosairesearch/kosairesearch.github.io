@@ -891,14 +891,26 @@ noen = GOODREP()
 for x in noen["bull"]:
     x["title"]["en"] = ""; x["body"]["en"] = ""
 noen["risks"][0]["body"]["en"] = ""; noen["risks"][0]["body_en_note"] = "Regulatory pressure."
+class FillMsgsU(FillMsgs):
+    """영문 채우기 응답에 사용량을 단다 — 회수 단계 보정의 사용량 기록(2026-10-03)을 본다."""
+    def create(self, **kw):
+        r = super().create(**kw)
+        r.usage = types.SimpleNamespace(input_tokens=1_000, cache_creation_input_tokens=0, cache_read_input_tokens=0,
+                                        output_tokens=500, server_tool_use=None)
+        return r
 cl2 = FakeClient()
-fm2 = FillMsgs(); cl2.messages.create = fm2.create
+fm2 = FillMsgsU(); cl2.messages.create = fm2.create
 cl2.messages.batches.store["msgbatch_EN"] = batch_obj("msgbatch_EN", "ended", [
     result("005930", text="===JSON_START===" + json.dumps(noen, ensure_ascii=False) + "===JSON_END===")])
 S.bump_fail("005930")
 M.pickup(cl2, "2026-09-05 03:00")
 saved = S.OUT_DIR / "005930.json"
 ok(saved.exists(), "영문이 빠진 결과도 되살려 저장한다")
+stEN = json.loads(S.batch_path("msgbatch_EN").read_text(encoding="utf-8"))
+us = (stEN.get("usage_sync") or {}).get("claude-sonnet-5") or {}
+# 즉시 호출이라 정가 — (1,000 × $2 + 500 × $10) / 1M = $0.007. 배치 사용량(usage)과 섞지 않는다.
+ok(us.get("n") == 1 and us.get("in") == 1_000 and abs(us.get("usd", 0) - 0.007) < 1e-9 and not stEN.get("usage"),
+   "회수 단계 보정(영문 채우기)의 사용량을 정가로 따로 남긴다", str(us))
 got = json.loads(saved.read_text(encoding="utf-8")) if saved.exists() else {}
 ok(bool(got) and got["bull"][0]["body"]["en"].startswith("EN"), "저장된 글에 영문이 있다", str(got.get("bull", [{}])[0]))
 ok(bool(got) and got["risks"][0]["body"]["en"] == "Regulatory pressure." and "body_en_note" not in got["risks"][0],

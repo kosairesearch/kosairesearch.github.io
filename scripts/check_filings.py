@@ -5,7 +5,9 @@ KOS ai — DART 정기보고서(분기·반기·사업) 신규 제출 감지 (�
 상장 전 종목 중, '마지막 리포트 날짜보다 새로운' 정기보고서를 제출한 종목을 골라
 GitHub Actions output(new_tickers, count)으로 내보낸다.
 
-상태는 별도 파일이 아니라 data/reports.js(각 종목 reportDate) 자체를 사용한다.
+상태는 별도 파일이 아니라 리포트의 reportDate 자체를 사용한다 — 목록 색인(data/reports-index.js)과
+리포트 파일(data/reports_v2 · data/reports) 중 늦은 날짜. 색인은 워치독 동기화 때만 고쳐지므로, 배치를
+회수한 직후에는 파일이 더 새 날짜다(2026-10-03 색인만 보다가 같은 9개 종목을 두 번 주문했다).
   · 리포트가 없거나, 공시 접수일(rcept_dt)이 기존 reportDate보다 최신 → 재생성 대상
   · 생성에 성공하면 reportDate 가 갱신되어 자동으로 대상에서 빠진다
   · 생성 실패/타임아웃 종목은 reportDate 가 그대로라 다음 실행에서 자동 재시도(누락 방지)
@@ -99,6 +101,15 @@ def main():
         gh_output(new_tickers="", count=0)
         sys.exit(0)
 
+    # ticker -> 이미 쓴 리포트의 날짜(YYYYMMDD) — 색인과 리포트 파일 중 늦은 쪽. 회수 · 백필은 파일만
+    # 커밋하고 색인은 워치독 동기화 때 고쳐지므로, 색인만 보면 방금 만든 종목을 같은 공시로 또 주문한다.
+    known, by_file = {}, set()
+
+    def have(sc):
+        if sc not in known:
+            known[sc] = max(reps.get(sc, ""), (S.file_report_date(sc) or "").replace("-", ""))
+        return known[sc]
+
     # ticker -> 가장 최신 공시 접수일(YYYYMMDD)
     cand = {}
     if df is not None and not getattr(df, "empty", True):
@@ -111,10 +122,15 @@ def main():
             if len(fdate) != 8 or not fdate.isdigit():
                 continue
             # 기존 리포트보다 새로운 공시만(없으면 신규)
-            if fdate <= reps.get(sc, ""):
+            if fdate <= have(sc):
+                if fdate > reps.get(sc, ""):
+                    by_file.add(sc)
                 continue
             if fdate > cand.get(sc, ""):
                 cand[sc] = fdate
+
+    if by_file:
+        print(f"  · 색인보다 새 리포트 파일이 있어 뺀 종목 {len(by_file)}개(색인 동기화 전): {','.join(sorted(by_file)[:20])}")
 
     # 이미 주문이 들어가 결과를 기다리는 종목은 뺀다 — 다시 주문하면 돈만 두 번 나간다.
     inflight = S.inflight_tickers()
@@ -128,7 +144,7 @@ def main():
     # 주문한다. 갱신이 끝나면(전부 기준일 이후) 이 조건은 저절로 아무것도 안 뺀다.
     refresh = S.refresh_date()
     if refresh:
-        stale = [sc for sc in cand if (reps.get(sc, "") < refresh.replace("-", ""))]
+        stale = [sc for sc in cand if (have(sc) < refresh.replace("-", ""))]
         for sc in stale:
             cand.pop(sc, None)
         if stale:
@@ -140,7 +156,7 @@ def main():
     picked = ranked[:MAX_PER_RUN] if MAX_PER_RUN > 0 else ranked
 
     for sc in picked:
-        print(f"  · 갱신 대상: {sc} {uni[sc][0]} — 공시 {cand[sc]} (기존 리포트 {reps.get(sc,'없음')})")
+        print(f"  · 갱신 대상: {sc} {uni[sc][0]} — 공시 {cand[sc]} (기존 리포트 {have(sc) or '없음'})")
 
     backlog = total - len(picked)
     print(f"\n📋 {start}~{end} 정기보고서 기준 갱신 대상 {total}개 중 이번 실행 {len(picked)}개"

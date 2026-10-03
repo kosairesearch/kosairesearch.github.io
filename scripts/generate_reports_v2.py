@@ -2459,9 +2459,10 @@ def poll(cl, batch_id, budget=None):
     return False
 
 
-# 배치 단가(USD / 1M 토큰). 배치는 정가의 절반이다. 캐시 읽기는 입력의 10%,
-# 캐시 쓰기는 125% 로 잡는다. 웹 검색은 1,000회에 $10. 청구서가 아니라 규모를
-# 가늠하는 추정이다 — 실제 청구는 콘솔이 답이다.
+# 배치 단가(USD / 1M 토큰). 배치는 정가의 절반이다(정가표는 generate_reports.PRICE). 캐시 읽기는
+# 입력의 10%, 캐시 쓰기는 125% 로 잡는다. 웹 검색은 1,000회에 $10. 회수 단계의 보정(영문 채우기 ·
+# 표현 교정)은 즉시 호출이라 정가다(batch=False). 청구서가 아니라 규모를 가늠하는 추정이다 —
+# 실제 청구는 콘솔이 답이다.
 _PRICE = {"claude-opus-5": (2.5, 12.5), "claude-sonnet-5": (1.0, 5.0),
           "claude-opus-4-8": (2.5, 12.5), "claude-sonnet-4-6": (1.5, 7.5)}
 
@@ -2479,10 +2480,43 @@ def _usage_of(message):
             "search": (getattr(st, "web_search_requests", 0) or 0) if st else 0}
 
 
-def _cost_usd(model, u):
+def _cost_usd(model, u, batch=True):
     pin, pout = _PRICE.get(model, (2.5, 12.5))
-    return ((u["in"] + u["cache_w"] * 1.25 + u["cache_r"] * 0.1) * pin
-            + u["out"] * pout) / 1e6 + u["search"] * 0.01
+    tok = ((u["in"] + u["cache_w"] * 1.25 + u["cache_r"] * 0.1) * pin + u["out"] * pout) / 1e6
+    return tok * (1 if batch else 2) + u["search"] * 0.01
+
+
+class _Metered:
+    """회수 단계의 즉시 호출(영문 채우기 · 표현 교정)이 쓴 사용량을 모은다. messages.create 만 가로채고
+    나머지는 그대로 넘긴다. 이 호출들은 배치 사용량에 들지 않아 기록이 없었다 — 2026-10-03 하루에
+    다섯 번을 불렀는데 콘솔 청구와 맞춰 볼 숫자가 없었다."""
+
+    def __init__(self, cl):
+        self._cl = cl
+        self.usage = {}
+        outer = self
+
+        class _Msgs:
+            def create(self, *a, **kw):
+                resp = outer._cl.messages.create(*a, **kw)
+                u = _usage_of(resp)
+                if u:
+                    mdl = kw.get("model") or getattr(resp, "model", None) or "?"
+                    agg = outer.usage.setdefault(mdl, {"n": 0, "in": 0, "cache_w": 0, "cache_r": 0,
+                                                       "out": 0, "search": 0, "usd": 0.0})
+                    agg["n"] += 1
+                    for k in ("in", "cache_w", "cache_r", "out", "search"):
+                        agg[k] += u[k]
+                    agg["usd"] += _cost_usd(mdl, u, batch=False)
+                return resp
+
+            def __getattr__(self, name):
+                return getattr(outer._cl.messages, name)
+
+        self.messages = _Msgs()
+
+    def __getattr__(self, name):
+        return getattr(self._cl, name)
 
 
 def collect(cl, as_of, state):
@@ -2504,6 +2538,7 @@ def collect(cl, as_of, state):
     ok, fail, done, flagged = 0, 0, [], []
     usage = {}
     repair_off = False
+    mcl = _Metered(cl)      # 보정 호출(즉시 · 정가)의 사용량을 따로 센다
     for result in cl.messages.batches.results(batch_id):
         tk = result.custom_id
         if result.result.type == "succeeded":
@@ -2537,7 +2572,7 @@ def collect(cl, as_of, state):
                 filled = 0
                 if valid_v2(rep, en=False, quiet=True):
                     try:
-                        filled = fill_missing_en(cl, rep)
+                        filled = fill_missing_en(mcl, rep)
                     except Exception as e:
                         # 모델을 못 부르는 것과 모델이 못 쓴 것은 다르다. 앞의 것을
                         # 종목 탓으로 적으면 결제 문제 하나로 종목이 영영 묻힌다.
@@ -2599,7 +2634,7 @@ def collect(cl, as_of, state):
                 bad_text = []
             if bad_text and not repair_off and os.getenv("REPORT_REPAIR", "1") != "0":
                 try:
-                    fixed = check_report_text.repair(cl, rep, bad_text)
+                    fixed = check_report_text.repair(mcl, rep, bad_text)
                 except Exception as e:
                     fixed = None
                     log(f"  · ({tk} 교정 호출 실패: {type(e).__name__}: {e})")
@@ -2658,6 +2693,12 @@ def collect(cl, as_of, state):
                 f"· 출력 {a['out']:,} · 검색 {a['search']} → 약 ${a['usd']:.2f} "
                 f"(장당 ${a['usd'] / a['n']:.3f})")
         state["usage"] = usage
+    if mcl.usage:
+        for mdl, a in mcl.usage.items():
+            a["usd"] = round(a["usd"], 3)
+            log(f"💵 {mdl} 보정 {a['n']}회(즉시 호출 · 정가) · 입력 {a['in']:,}(캐시쓰기 {a['cache_w']:,}·읽기 {a['cache_r']:,}) "
+                f"· 출력 {a['out']:,} → 약 ${a['usd']:.2f}")
+        state["usage_sync"] = mcl.usage
     return ok, fail
 
 
