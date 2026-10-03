@@ -411,11 +411,16 @@ Consent · auth-action · Settings · stock · 404)은 스테이징과 같은 �
 
   · 종목 상세는 `scripts/build_stock_staging.py` — 2,682장을 미리 만들지 않고 JS 로 그린다(페이월 때문). 문단 자르기
     함수 셋은 실사이트 stock.html 과 글자 하나까지 같다(`same-paragraphs.test.mjs`).
-  · 잠금 구간 미리보기(2026-10-03 사장 "모자이크 부분이 어색"): 잠긴 첫 절의 제목은 또렷하게 두고, 본문 첫머리(6줄 안팎)만
-    글자 모양으로 옅게 비치다 사라진 뒤 잠금 카드가 온다(`build_stock_staging.LOCK_CSS` · `teaserPane`). 상자째 흐리는 `filter:blur` 로
-    되돌리지 말 것 — 제목까지 번지고 상자 가장자리가 네모로 비쳐, 진한 막대가 520px 동안 검열 모자이크처럼 보였다. 글자는
-    `color:transparent` + `text-shadow` 8px 라 상자 자국이 없고, 고대비 모드(forced-colors)에서는 채움 글자가 그대로 읽히므로 숨긴다.
-    지키는 검사 `staging/tests/paywall-peek.test.mjs`(옛 옷을 덧씌우면 걸린다). 실사이트 종목 페이지에는 잠금이 없어 해당 없다.
+  · 잠금 구간 미리보기(2026-10-03 사장 "모자이크 부분이 어색" → "모자이크가 딱 네모낳게 저렇게 티가 난다는 게 어색"): 잠긴 첫 절의
+    제목과 첫 문단 첫머리를 실제 글 그대로 보여 주고, 두 줄 아래부터 두 줄에 걸쳐 바탕으로 옅어진 뒤 잠금 카드가 온다(해외 경제지의
+    유료 기사 방식 · `build_stock_staging.LOCK_CSS` · `teaserPane` · `tzLead`). **흐림으로 되돌리지 말 것** — 상자째 흐리는 `filter:blur` 는
+    제목까지 번지고 상자 가장자리가 네모로 비쳤고, 글자마다 그림자만 남기는 채움 글자(`color:transparent` + `text-shadow`)는 줄마다 회색
+    막대가 되어 여전히 네모난 모자이크로 보였다(같은 날 두 번 거절). 글은 잠금을 풀었을 때와 같은 자르기(chunkPara)의 첫 문단부터 한 문단
+    예산(170자 · 영문 320자)이 찰 때까지만 싣는다 — 첫 문단이 '연간 흐름은 뚜렷하다.'(12자)처럼 한 줄인 리포트도 다음 문단까지 담겨 창이 찬다.
+    산문 절(실적 분석 · 산업 분석 · 전망 · 밸류에이션)만 쓰고, 글이 없으면 제목만 둔다(흐린 글자로 메우지 않는다).
+    **유료화 때**: publish_paid.py 가 본문을 정적 파일에서 빼면 미리보기 글도 사라진다 — teaser 의 첫 절에 `lead`(첫 문단 한두 개)를 함께
+    내려 줘야 한다. 그 밖의 본문은 내려보내지 않는다. 지키는 검사 `staging/tests/paywall-peek.test.mjs`(옛 옷 둘을 덧씌우면 걸린다).
+    실사이트 종목 페이지에는 잠금이 없어 해당 없다.
   · 설정은 페이지(`Settings.html?tab=…`)다. 내용은 `settings-panel.js` 의 `renderSettings` 가 그리고 옷만 새로 입혔다.
     `billing.html` 은 `Settings.html?tab=subscription` 으로 넘기는 껍데기. 헤더 계정 메뉴는 `staging/auth-state.js`(새 DOM용으로
     다시 씀 · 실사이트 auth-state 의 guardConsent 도 들어 있다). 로그인·가입·동의·인증의 실제 Firebase 코드는
