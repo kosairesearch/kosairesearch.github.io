@@ -546,7 +546,6 @@ async function kakaoProfile(code, redirectUri){
     id: String(me.id),
     email: emailOkByKakao && acc.email ? acc.email : null,
     name: prof.nickname || (me.properties && me.properties.nickname) || "",
-    photo: prof.profile_image_url || (me.properties && me.properties.profile_image) || null,
     terms: await kakaoServiceTerms(tok.access_token)
   };
 }
@@ -592,7 +591,6 @@ async function naverProfile(code, redirectUri, state){
     id: String(r.id),
     email: r.email || null,
     name: r.name || r.nickname || "",
-    photo: r.profile_image || null,
     raw,
     /* 약관 동의 내역은 프로필과 다른 창구에서 온다. 카카오와 같은 자리에
        담아 아래 처리를 하나로 쓴다. */
@@ -719,7 +717,8 @@ exports.socialLogin = onCall(
     const uid = `${provider}:${p.id}`;
     const userProps = {};
     if(p.name) userProps.displayName = p.name;
-    if(p.photo) userProps.photoURL = p.photo;
+    /* 프로필 사진은 저장하지 않는다(2026-10-04 · 개인정보 처리방침 2항). 화면 어디에도 쓰지 않는 정보이고,
+       네이버 로그인 검수는 쓰지 않는 정보를 요청하면 반려한다. 예전에 저장한 사진 주소는 아래에서 지운다. */
 
     /* 이메일을 Firebase 사용자에도 심는다.
 
@@ -771,6 +770,10 @@ exports.socialLogin = onCall(
           `이 주소는 이미 ${other.label}으로 등록되어 있습니다. 그 방법으로 로그인하여 주시기 바랍니다.`, { method: other.method });
       }
     }
+
+    /* 기존 회원은 예전에 저장한 프로필 사진 주소를 이번 로그인에서 지운다(updateUser 의 photoURL: null).
+       새 계정은 처음부터 넣지 않는다 — createUser 에는 넣을 자리가 없다. */
+    if(exists) userProps.photoURL = null;
 
     try{
       if(exists) await admin.auth().updateUser(uid, userProps);

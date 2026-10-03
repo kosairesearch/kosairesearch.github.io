@@ -19,7 +19,10 @@ import comp_common as C  # noqa: E402
 
 G_SVG = '<svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>'
 K_SVG = '<svg viewBox="0 0 24 24"><path fill="#191600" d="M12 3C6.99 3 3 6.2 3 10.13c0 2.52 1.68 4.73 4.2 5.99-.18.65-.67 2.42-.77 2.8-.12.47.17.46.36.34.15-.1 2.39-1.62 3.36-2.28.6.09 1.22.13 1.85.13 5.01 0 9-3.2 9-7.18S17.01 3 12 3z"/></svg>'
-N_SVG = '<svg viewBox="0 0 24 24"><path fill="#fff" d="M14.7 12.55 9.05 4.5H4.5v15h4.8v-8.05l5.65 8.05h4.55v-15h-4.8z"/></svg>'
+# 네이버 N — 네이버 개발자센터 '네이버 로그인 버튼 사용 가이드'가 내려 주는 공식 원본(NAVER_login_KR.ai 의 20px 판) 좌표 그대로다.
+# 가이드: 로고는 완성형 버튼에서 16px 이상, 글자는 로고보다 작게, 로고와 글자 사이 8px, 배경은 지정 녹색 #03A94D(2026-10-04 확인 ·
+# comp_common.AUTH_CSS 의 .sbtn.naver). 크기와 녹색을 가이드 아래로 내리지 말 것 — 네이버 로그인 이용약관 특약 1.2 ⑨가 지키라고 한다.
+N_SVG = '<svg viewBox="0 0 20 20"><path fill="#fff" d="M13.561 10.706 6.146 0H0v20h6.439V9.298L13.854 20H20V0h-6.439z"/></svg>'
 CHECK = '<svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>'
 
 
@@ -38,6 +41,8 @@ CSS = '''
 .ac-body form{text-align:left}
 /* 약관 동의 */
 .consent{margin-top:28px;border-top:1px solid var(--line)} .consent .check{padding:13px 0} .consent .check.all{font-weight:600;border-bottom:1px solid var(--line)}
+.consent .check{align-items:flex-start} .consent .check .box{margin-top:1px} .consent .doc{margin-top:2px;flex:none}
+.consent .det{display:block;margin-top:6px;font:400 12px/18px var(--font);color:var(--ink-62)} .consent .det span{display:block}
 .consent .doc{margin-left:auto;font:400 12px/16px var(--font);color:var(--ink-62);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .consent .doc:hover{color:var(--ink)}
 .acts{display:flex;flex-direction:column;align-items:center;gap:16px;margin-top:28px} .acts .btn{width:100%}
 /* 계정 인증 */
@@ -103,8 +108,8 @@ CONSENT = f'''<main class="wrap"><div class="auth">
     <label class="check all" data-k="all"><span class="box">{CHECK}</span>전체 동의</label>
     <label class="check" data-k="age14" data-req="1"><span class="box">{CHECK}</span>[필수] 만 14세 이상입니다</label>
     <label class="check" data-k="terms" data-req="1"><span class="box">{CHECK}</span>[필수] 이용약관 동의<a class="doc" href="/preview/terms.html" target="_blank" rel="noopener">보기</a></label>
-    <label class="check" data-k="privacy" data-req="1"><span class="box">{CHECK}</span>[필수] 개인정보 수집·이용 동의<a class="doc" href="/preview/privacy.html" target="_blank" rel="noopener">보기</a></label>
-    <label class="check" data-k="marketing"><span class="box">{CHECK}</span>[선택] 마케팅 정보 수신 동의</label>
+    <label class="check" data-k="privacy" data-req="1"><span class="box">{CHECK}</span><span class="lt">[필수] 개인정보 수집·이용 동의<span class="det"><span>수집 항목: 이메일, 이름 또는 닉네임, 회원 식별번호, 비밀번호(이메일 가입 시), 연결 해제용 인증 정보(네이버 로그인 시)</span><span>이용 목적: 회원 식별과 서비스 제공</span><span>보유 기간: 회원 탈퇴 시까지</span></span></span><a class="doc" href="/preview/privacy.html" target="_blank" rel="noopener">보기</a></label>
+    <label class="check" data-k="marketing"><span class="box">{CHECK}</span><span class="lt">[선택] 마케팅 정보 수신 동의<span class="det"><span>새 리포트 발행 알림, 서비스 소식과 이벤트 안내를 이메일로 받습니다. 설정에서 언제든 철회할 수 있습니다.</span></span></span></label>
   </div>
   <div class="alert" id="authErr" role="alert"></div>
   <div class="acts"><button type="button" class="btn btn-ink" id="agreeBtn">동의하고 시작하기</button><button type="button" class="tbtn" id="cancelBtn">동의하지 않고 취소</button></div>
