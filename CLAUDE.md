@@ -82,8 +82,8 @@ demo-backend.js)이 들어 있어서 언젠가 실사이트로 올리게 되는�
   · **전수 검사** — `scripts/tests/check_report_text_test.py`(check_all '본문 금지표현')가 화면에 나오는 리포트
     전부(v2 + v2 없는 v1)와 업종 분석(data/sectors.js)을 훑어 결함이 하나라도 있으면 실패한다.
 
-손으로 본문을 고쳤으면 복사본도 같이 — `r/{ticker}.html`(generate_geo_pages · update_data 가 매일),
-`data/reports-index.js`(제목 · `_reindex.py` · 워치독이 30분마다), `preview/stock/`. 모닝브리핑 본문의 `**굵게**` 는
+손으로 본문을 고쳤으면 복사본도 같이 — `stock/{ticker}.html`(종목마다 미리 만든 페이지 · `build_stock_static.py` · 워치독이
+30분마다 · update_data 가 매일), `data/reports-index.js`(제목 · `_reindex.py` · 워치독이 30분마다), `preview/stock/`. 모닝브리핑 본문의 `**굵게**` 는
 render_brief 가 굵은 글씨로 바꾸는 기능이라 결함이 아니다(검사 대상도 아니다).
 
 ## 브리핑 생성 규칙·검사기를 고쳤으면 — 그날 안에 live 시험을 돌린다 *(2026-09-14 기록)*
@@ -336,9 +336,10 @@ WebKit 소스(LocalFrameView::fixedContainerEdges)로 확인한 기제:
 
 루트의 페이지 18장(index · Home · Reports · industry · Watchlist · brief · About · Terms · Privacy · Contact · Feedback · Login · Signup ·
 Consent · auth-action · Settings · stock · 404)은 스테이징과 같은 생성기가 `comp_common.set_mode('live')` 로 만든다. 옷 · 문구는 스테이징과
-글자 하나까지 같고(본문 비교로 확인), 다른 것은 live 모드가 맡는다.
+글자 하나까지 같고(본문 비교로 확인), 다른 것은 live 모드가 맡는다. 종목 상세는 2026-10-03 부터 종목마다 미리 만든 페이지(`stock/{코드}.html`)이고
+루트 `stock.html` 은 옛 주소를 넘기는 껍데기다(아래 '종목 페이지는 종목마다 미리 만든다' 절).
 
-    python3 scripts/build_live.py            # 루트 페이지 · i18n.js · auth-state.js · img/ 를 다시 만들고 ?v= 를 찍는다
+    python3 scripts/build_live.py            # 루트 페이지 · i18n.js · auth-state.js · img/ · 종목 페이지(stock/)를 다시 만들고 ?v= 를 찍는다
     python3 scripts/build_live.py --check    # 저장소 = 생성기 결과인지 · 멤버십/스테이징 흔적이 없는지 (check_all '실사이트 생성기')
 
   · **멤버십은 실사이트에 없다.** 머리 · 꼬리 · 휴대폰 메뉴에 '멤버십' 없음(`PAGES_LIVE` · 랜딩 `nav_links`), 종목 상세 잠금 없음
@@ -494,17 +495,37 @@ Consent · auth-action · Settings · stock · 404)은 스테이징과 같은 �
     `--rise` · `--fall` 을 쓴다. 초록은 빨강과 밝기를 맞춰 바탕에 대한 명암비 라이트 5.4:1 · 다크 6.5:1(빨강 5.5:1 · 6.2:1)이다 — 실사이트 영어판의
     초록 #1f9d57 은 3.3:1 이라 글자 기준(4.5:1)에 못 미쳐 쓰지 않았다.
 
-## 종목 페이지는 종목마다 미리 만든다 — r/ 로봇용 사본은 갈 것 *(2026-09-25 사장 "대기업처럼 해줘")*
+## 종목 페이지는 종목마다 미리 만든다 — stock/{종목코드}.html *(2026-09-25 사장 "대기업처럼 해줘" · 2026-10-03 "1안")*
 
-`stock.html` 은 빈 틀이고 글은 JS 가 그린다. 로봇은 JS 를 안 돌려 `r/{ticker}.html`(로봇용 사본 2,681장)을
-따로 두고 있었는데, 사람이 검색으로 그 페이지에 떨어진다. 결정: 큰 회사처럼 종목마다 완성된 HTML 을 미리 만든다.
+옛 종목 화면(`stock.html?ticker=`)은 2,685 종목이 같이 쓰는 빈 틀이라 로봇이 본문을 못 읽었고, 그래서 둔 로봇용 사본(`r/`)에
+검색으로 들어온 사람이 머리도 꼬리도 없이 떨어졌다. 2026-10-03 부터 종목마다 완성된 페이지를 미리 만든다 — 사람과 로봇이 같은 페이지를 본다.
 
-  · 그리는 모듈 `scripts/stock_page.py` — 시안 한 장(`build_stock_comp.py` → preview/stock.html)과 전 종목 생성기
-    (`build_stock_pages.py` → stock/{ticker}.html · assets 한 벌)가 같은 render 를 쓴다. 옷은 한 곳(PAGE_CSS)에만 있다.
-  · 등급 셋: 전체(v2) · 옛 형식(v1, 재무 수치 없음) · 리포트 준비 중(새 상장). 셋 다 페이지가 있어야 한다.
-  · 지금은 표본 38장만 `preview/stock/` 에 있다(noindex). 전 종목(약 100MB, r/ 와 같음)은 실사이트로 옮기는 날
-    `--all --out stock --index` 로. 순서(자동화 교체 · 링크 · 옛 주소 껍데기 · r/ 폐기 · 사이트맵)는
-    `docs/design/static-stock-pages.md` 에 있다. 그날까지 `generate_geo_pages.py` 와 r/ 는 그대로 둔다.
+    python3 scripts/build_stock_static.py          # stock/ 를 다시 만든다(바뀐 페이지만 쓴다 · 20초 안팎) — build_live.py 도 끝에 부른다
+    python3 scripts/build_stock_static.py --check  # 틀 · 공용 파일 · 종목 수 (check_all '종목 페이지')
+
+  · **글은 화면 스크립트가 그린 그대로다.** 리포트 상세의 스크립트(`build_stock_staging.PAGE_JS` 실사이트 판)를 노드에서 가짜 문서로 돌려
+    (`scripts/prerender_stock.mjs`) 받은 글을 HTML 에 넣는다. 파이썬 판(`stock_page.render`)으로 바꾸지 말 것 — 문단 자르기가 달라
+    화면이 열리자마자 한 번 더 그려진다. 브라우저는 자료를 받아 다시 그린 글의 지문(`kosHash`)을 미리 그린 글의 지문(`data-pre`)과 견주어
+    같으면 그대로 둔다. 지키는 검사 `staging/tests/stock-static.test.mjs`(본문을 다시 넣으면 · 로그인 주소가 상대 주소면 · 옛 주소가 안 넘어가면 걸린다).
+  · 공용 옷 · 스크립트 · 영어 사전은 `stock/assets/` 한 벌(내용 해시 ?v=). 페이지마다 다른 것은 머리(제목 · 설명 · canonical · 공유 · 구조화
+    데이터)와 본문뿐이다. 영어로 정한 사람에게는 처음부터 영어로 그린다(미리 그린 한국어는 `#page[data-pre]` 로 가린다).
+    상장 폐지로 리포트만 남은 종목(17개)은 페이지는 두되 noindex · 사이트맵 제외(옛 실사이트에서도 색인되지 않던 종목이다).
+  · 다시 만드는 때: 시세는 데이터 갱신(update_data · 매일), 리포트 · valuation 은 리포트 워치독(30분). 바뀐 페이지만 커밋한다.
+    화면은 자료를 받아 다시 견주므로 사람은 그 사이에도 새 글을 본다.
+  · 폴더가 한 단 아래라 모듈의 이동 주소는 맨 위부터 쓴다 — `staging/auth-state.js`(실사이트 사본은 build_live 가 만든다) · `auth-guard.js` 의
+    `siteBase()` · `here()`('stock/005930.html'). 상대 주소('Login.html')로 되돌리면 /stock/Login.html(없는 주소)로 간다.
+  · 사이트 안 링크: 생성기는 시안 · 스테이징과 같은 `/stock.html?ticker=` 를 쓰고 실사이트 `finish()` 만 `/stock/코드.html` 로 바꾼다
+    (`comp_common.live_stock_links`). 스테이징은 유료 구간 잠금 때문에 지금처럼 껍데기 한 장이다. build_live 감사가 실사이트 페이지에
+    옛 주소가 남으면 막는다.
+  · 옛 주소: `stock.html?ticker=` 는 껍데기(`build_stock_staging.FWD_JS`)가 머리 맨 앞에서 새 주소로 넘긴다(꼬리표 · #절 그대로 ·
+    통계는 `KOS_LEAVING` 으로 건너뛴다). `r/{코드}.html` 은 새 주소로 보내는 껍데기다(0초 메타 리프레시 + canonical — 네이버 서치어드바이저가
+    서버 이동이 안 될 때 권하는 방식 · `scripts/retire_r_pages.py`). **r/ 은 검색 엔진이 새 주소를 색인한 뒤(몇 주 · 서치 콘솔 ·
+    서치어드바이저에서 확인) 폴더째 지운다. 그 전에 지우지 말 것.** 옛 생성기 `generate_geo_pages.py` 는 지웠다(돌리면 옛 사본이 되살아난다).
+  · 통계: GA4 에는 옛 주소 모양(`/stock.html?ticker=005930`)으로 싣는다(`analytics.js` 의 `page_location`) — 주간 보고서 · 마케팅 도구가
+    '/stock.html' 한 덩어리로 리포트를 연 사람을 센다(사람 수는 페이지마다 더할 수 없다). 바꾸면 그 숫자가 끊긴다(`tests/analytics-events.test.mjs` ⑩).
+  · 영어 본문은 정적 HTML 에 없다(한국어 페이지 · 영어는 화면에서 자료로 그린다). 옛 r/ 은 두 말을 다 담았었다 — llms.txt 도 그에 맞췄다.
+  · **유료화 때**: 미리 만든 페이지에 유료 구간 글이 들어 있으면 누구나 읽는다 — 그날 이 생성기에 무료 구간만 그리는 잠금을 넣어야 한다.
+  · `preview/stock/`(파이썬 판 표본 38장)과 `build_stock_pages.py` · `stock_page.py` 는 시안용으로 남아 있다(랜딩 그림이 stock_page.render 를 쓴다).
 
 ## 디자인 헌장 — docs/design/KOSAI-design-charter.md *(2026-09-24, 아직 적용 전)*
 

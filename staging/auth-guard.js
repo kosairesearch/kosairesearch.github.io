@@ -31,7 +31,11 @@ if(window.KOSi18n) window.KOSi18n.register({
 function pwOnly(u){ return !!(u && u.providerData && u.providerData.length && u.providerData.every(function(p){ return p.providerId === 'password'; })); }
 function verified(u){ return !pwOnly(u) || u.emailVerified; }
 
-function here(){ return location.pathname.split('/').pop() || 'Home.html'; }
+/* 사이트 맨 위 — 실사이트 '/', 스테이징 '/staging/'. 종목 페이지는 한 단 아래(/stock/005930.html)에 있어 'Login.html' 같은 상대 주소가
+   /stock/Login.html(없는 주소)로 풀린다. 그래서 이 창이 내는 이동 주소는 맨 위부터 쓴다(2026-10-03 종목 페이지를 종목마다 만들며). */
+function siteBase(){ return location.pathname.indexOf('/staging/') === 0 ? '/staging/' : '/'; }
+/* 지금 페이지 — 맨 위부터의 주소(Watchlist.html · stock/005930.html). 돌아올 곳(?next=)과 보호 페이지 판별에 쓴다. */
+function here(){ var p = location.pathname, b = siteBase(); return (p.indexOf(b) === 0 ? p.slice(b.length) : p.split('/').pop()) || 'Home.html'; }
 function nextParam(){ try{ return encodeURIComponent(decodeURIComponent(here())); }catch(e){ return encodeURIComponent(here()); } }
 
 function injectCss(){
@@ -84,10 +88,10 @@ function buildCard(opts){
     '<h2 class="kg-title">' + tt('로그인이 필요합니다') + '</h2>' +
     '<p class="kg-sub">' + tt(opts.msg) + '</p>' +
     '<div class="kg-btns">' +
-      '<a class="kg-btn kg-primary" href="Login.html?next=' + n + '">' + tt('로그인') + '</a>' +
-      '<a class="kg-btn" href="Signup.html?next=' + n + '">' + tt('회원가입') + '</a>' +
+      '<a class="kg-btn kg-primary" href="' + siteBase() + 'Login.html?next=' + n + '">' + tt('로그인') + '</a>' +
+      '<a class="kg-btn" href="' + siteBase() + 'Signup.html?next=' + n + '">' + tt('회원가입') + '</a>' +
     '</div>' +
-    (opts.dismissable ? '' : '<a class="kg-home" href="Home.html">' + tt('홈으로') + '</a>');
+    (opts.dismissable ? '' : '<a class="kg-home" href="' + siteBase() + 'Home.html">' + tt('홈으로') + '</a>');
   return card;
 }
 function tt(m){ return (window.KOSi18n ? window.KOSi18n.t(m) : m); }
@@ -149,7 +153,7 @@ function lockVerify(user){
     if(user.emailVerified) location.reload();
   });
   card.querySelector('#kgLogout').addEventListener('click', async function(e){
-    e.preventDefault(); try{ await signOut(auth); }catch(e2){} location.href = 'Login.html';
+    e.preventDefault(); try{ await signOut(auth); }catch(e2){} location.href = siteBase() + 'Login.html';
   });
   reveal();
 }

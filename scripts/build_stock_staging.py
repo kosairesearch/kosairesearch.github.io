@@ -98,6 +98,16 @@ LOCK_CSS = '''/* 유료 구간 — 흐린 미리보기 뒤에 잠금 카드. 상
 .pending p a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .pending p a:hover{text-decoration-color:var(--ink)}
 @media (max-width:820px){.tz{padding-bottom:64px} .tz-body{max-height:440px}}'''
 
+# 실사이트 옛 주소 — stock.html?ticker=005930 은 검색 · 공유 · 즐겨찾기로 퍼져 있다. 종목마다 미리 만든 페이지(/stock/005930.html ·
+# scripts/build_stock_static.py)로 넘긴다. GitHub Pages 는 서버 쪽 이동(301)을 못 해서 머리 맨 앞의 스크립트로 넘긴다 — 번역 · 통계
+# 스크립트보다 먼저(통계가 옛 주소로 한 번 더 세지 않게 KOS_LEAVING 을 단다). 나머지 쿼리(utm 등)와 #절은 그대로 실어 간다.
+# 넘기는 것은 페이지가 있는 종목뿐이다(목록 stock/assets/pages.js — 종목 페이지 생성기가 같이 쓴다). 없는 종목코드 · 모양이 아닌 값은
+# 넘기지 않고 이 껍데기가 '종목을 찾을 수 없습니다'를 그린다 — 옛 화면과 같은 안내(영어 화면 포함)다. 목록을 못 받으면 넘긴다.
+FWD_JS = '''<script src="/stock/assets/pages.js"></script>
+<script>(function(){try{var q=location.search,m=q.match(/[?&]ticker=([^&#]*)/);if(!m)return;var t=decodeURIComponent(m[1]).replace(/[^0-9A-Za-z]/g,'').toUpperCase();if(!/^[0-9A-Z]{6}$/.test(t))return;
+var L=window.KOS_STOCK_PAGES;if(typeof L==='string'&&(','+L+',').indexOf(','+t+',')<0)return;
+window.KOS_LEAVING=1;location.replace('/stock/'+t+'.html'+q.replace(/[?&]ticker=[^&#]*/,'').replace(/^&/,'?')+location.hash)}catch(e){}})();</script>'''
+
 # 종목별 canonical 을 받자마자 맞춘다 — 뒤의 setSEO() 가 제목·설명·JSON-LD 를 마저 채운다.
 CANON_JS = '''<script>(function(){try{var m=location.search.match(/[?&]ticker=([^&]+)/);if(!m)return;var t=decodeURIComponent(m[1]).replace(/[^0-9A-Za-z]/g,'');if(!t)return;
 var u='https://kosai.kr/stock.html?ticker='+t;function set(sel,attr,val){var e=document.querySelector(sel);if(e)e.setAttribute(attr,val)}set('link[rel=canonical]','href',u);set('meta[property="og:url"]','content',u)}catch(e){}})();</script>'''
@@ -113,7 +123,11 @@ var LIVE=(window.KOS_LIVE_DATA&&KOS_LIVE_DATA.stocks)||[];
 var DATA_DATE=String((window.KOS_LIVE_DATA&&KOS_LIVE_DATA.dataDate)||'');
 var REPORTS=(window.KOS_REPORTS&&KOS_REPORTS.reports)||{};
 var VALS=(window.KOS_VALUATION&&KOS_VALUATION.stocks)||{};
-var SITE_URL='https://kosai.kr/stock.html?ticker=';
+/* 종목 페이지의 대표 주소 — 실사이트는 종목마다 미리 만든 페이지(stock/005930.html · scripts/build_stock_static.py)다.
+   옛 주소(stock.html?ticker=)는 그리로 넘긴다. 없는 종목코드만 옛 주소 그대로 둔다. */
+function stockUrl(t){ return 'https://kosai.kr/stock/'+encodeURIComponent(t)+'.html'; }
+/* 미리 그린 글의 지문 — 노드로 미리 그린 글(scripts/prerender_stock.mjs)과 브라우저가 그린 글이 같은지 견준다(FNV-1a 32비트) */
+window.kosHash=function(s){ var x=0x811c9dc5; for(var k=0;k<s.length;k++){ x^=s.charCodeAt(k); x=Math.imul(x,0x01000193); } return ('0000000'+(x>>>0).toString(16)).slice(-8); };
 /* 영어 화면(staging/i18n.js) — 리포트 본문은 자료의 영어 쪽(pk), 라벨은 아래 T, 나머지 한국어 문구는 사전이 바꾼다. */
 var I18=window.KOSi18n; function EN(){ return !!(I18&&I18.lang==='en'); }
 var T_EN={ watch:'Add to Watchlist', watched:'In Watchlist',/*@paid*/
@@ -132,7 +146,9 @@ if(EN()) T=T_EN;
 var LOCK_SVG='<svg class="lk" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
 function qp(n){ return new URLSearchParams(location.search).get(n); }
 
-var TK=String(qp('ticker')||'').replace(/[^0-9A-Za-z]/g,'');
+/* 미리 만든 페이지는 종목코드(data-tk)와 미리 그린 글의 지문(data-pre)을 본문 자리에 달고 온다. 옛 껍데기(stock.html)는 ?ticker= 로 받는다. */
+var PG=document.getElementById('page'), PRE=PG&&PG.getAttribute('data-pre');
+var TK=String((PG&&PG.getAttribute('data-tk'))||qp('ticker')||'').replace(/[^0-9A-Za-z]/g,'');
 if(!TK){ var ks=Object.keys(REPORTS); TK=ks[0]||(LIVE[0]&&LIVE[0].ticker)||'005930'; }
 var STOCK=null,i; for(i=0;i<LIVE.length;i++){ if(LIVE[i].ticker===TK){ STOCK=LIVE[i]; break; } }
 var REP=null, TIER='none', KNOWN=!!STOCK, LOADED=false;
@@ -451,8 +467,8 @@ function pendingH(){
   return '<div class="pending"><h2>이 종목의 리포트는 준비 중입니다</h2><p>새로 상장된 종목은 상장 직후 리포트를 작성합니다. 시세·시가총액·PER·PBR 같은 지표는 매 거래일 저녁에 갱신됩니다.</p><ol class="srcs">'+li+'</ol><p class="disc">'+DISC+'</p></div>';
 }
 function notFoundH(){   // 종목코드가 문장 안에 들어가 사전으로는 못 바꾼다 — 영어 화면은 여기서 바로
-  if(EN()) return '<div class="pending"><h2>Stock not found</h2><p>No stock matches the ticker you requested ('+esc(TK)+'). Please look it up again in the <a href="Reports.html">report list</a>.</p></div>';
-  return '<div class="pending"><h2>종목을 찾을 수 없습니다</h2><p>요청하신 종목코드('+esc(TK)+')에 해당하는 종목이 없습니다. <a href="Reports.html">리포트 목록</a>에서 종목을 다시 찾아 주시기 바랍니다.</p></div>';
+  if(EN()) return '<div class="pending"><h2>Stock not found</h2><p>No stock matches the ticker you requested ('+esc(TK)+'). Please look it up again in the <a href="__ROOT__Reports.html">report list</a>.</p></div>';
+  return '<div class="pending"><h2>종목을 찾을 수 없습니다</h2><p>요청하신 종목코드('+esc(TK)+')에 해당하는 종목이 없습니다. <a href="__ROOT__Reports.html">리포트 목록</a>에서 종목을 다시 찾아 주시기 바랍니다.</p></div>';
 }
 function render(){
   var st=STOCK||{ticker:TK, name:(REP&&REP.name)||TK, name_en:(REP&&REP.name_en)||'', market:(REP&&REP.market)||'', sector:(REP&&REP.sector)||'', price:null, change:0};
@@ -468,9 +484,16 @@ function render(){
     }
     else h+=KNOWN?pendingH():notFoundH();
   }
-  /* 휴대폰 목차 띠가 헤더 안에 붙어 있으면(pin) 본문 밖에 있다 — 새로 그리기 전에 뗀다. 안 그러면 id 가 둘이 된다. */
-  var old=document.getElementById('chipsBar'); if(old) old.parentNode.removeChild(old);
-  var main=document.getElementById('page'); main.innerHTML=h;
+  var main=document.getElementById('page');
+  /* 미리 만든 페이지 — 자료를 받아 그린 글이 미리 그린 글과 같으면(지문이 같으면) 그대로 둔다. 다시 넣으면 읽던 자리의
+     펼친 출처 · 고른 글이 풀린다. 자료가 그사이 바뀌었거나 영어 화면이면 그린다. */
+  var same=!!(PRE&&LOADED&&!EN()&&kosHash(h)===PRE);
+  if(!same){
+    /* 휴대폰 목차 띠가 헤더 안에 붙어 있으면(pin) 본문 밖에 있다 — 새로 그리기 전에 뗀다. 안 그러면 id 가 둘이 된다. */
+    var old=document.getElementById('chipsBar'); if(old) old.parentNode.removeChild(old);
+    main.innerHTML=h;
+  }
+  if(PRE){ PRE=null; main.removeAttribute('data-pre'); }   /* 한 번 견주면 끝 — 영어 화면의 가림(data-pre)도 여기서 걷힌다 */
   if(window.kosFitCharts) window.kosFitCharts();   /* 차트 값 라벨이 옆 막대·라벨에 닿으면 비켜 세운다(stock_page.CHART_FIT_JS) */
   if(LOADED) main.setAttribute('data-tier',REP?TIER:(KNOWN?'none':'unknown'));
   if(window.kosTocInit) window.kosTocInit();
@@ -508,7 +531,7 @@ document.addEventListener('click',function(e){
 /* 제목 · 설명 · canonical · OG · JSON-LD — stock_page.render() 와 같은 내용을 종목이 정해진 뒤 채운다 */
 function setSEO(locked){
   try{
-    var url=SITE_URL+encodeURIComponent(TK), name=(STOCK&&STOCK.name)||(REP&&REP.name)||TK, rt=REP?pk(REP.title):'', ttl, dsc;
+    var url=(REP||KNOWN)?stockUrl(TK):'https://kosai.kr/stock.html?ticker='+encodeURIComponent(TK), name=(STOCK&&STOCK.name)||(REP&&REP.name)||TK, rt=REP?pk(REP.title):'', ttl, dsc;
     if(EN()){ var ne=STOCK&&I18?I18.nameEn(STOCK):name;
       if(REP){ ttl=ne+' ('+TK+') Report'+(rt?' — '+rt:'')+' | KOSAI'; dsc=String(pk(REP.lead)||pk(REP.desc)).replace(/\s+/g,' ').slice(0,158); }
       else if(KNOWN){ ttl=ne+' ('+TK+') — Report in preparation | KOSAI'; dsc=ne+' ('+TK+') price, market cap, P/E and P/B. Reports for newly listed stocks are written right after listing.'; }
@@ -538,7 +561,8 @@ function setSEO(locked){
 
 /* ── 리포트 본문은 종목별 파일에서 그때 받는다(전체 리포트 v2 → 옛 형식 v1) ── */
 function getJson(u){ return fetch(u,{cache:'no-cache'}).then(function(r){ return r.ok?r.json():null; }).catch(function(){ return null; }); }
-render();   /* 히어로·지표는 바로 — 본문은 받은 뒤 */
+/* 히어로·지표는 바로 — 본문은 받은 뒤. 미리 만든 페이지의 한국어 글은 그대로 두고 자료를 받은 뒤 한 번만 견준다(영어 화면은 바로 그린다) */
+if(PRE&&!EN()) syncWatch(); else render();
 getJson('/data/reports_v2/'+encodeURIComponent(TK)+'.json').then(function(r){
   if(r){ REP=r; TIER='v2'; return; }
   return getJson('/data/reports/'+encodeURIComponent(TK)+'.json').then(function(r1){ if(r1){ REP=r1; TIER='v1'; } });
@@ -573,7 +597,8 @@ def for_mode(js):
 def page_js():
     const = ('var DISC=' + json.dumps(S.DISC, ensure_ascii=False) + ', PRIMARY_SRC=' + json.dumps(S.PRIMARY_SRC, ensure_ascii=False)
              + ', SECTIONS_V2=' + json.dumps(S.SECTIONS_V2, ensure_ascii=False) + ';')
-    return for_mode(PAGE_JS).replace('__CONST__', const).replace('__LIVE_FUNCS__', live_paragraph_code())
+    root = '/' if C.MODE == 'live' else ''   # 실사이트는 맨 위부터 쓴 주소(종목 페이지가 /stock/ 아래에 있다) · 스테이징은 제 폴더 안
+    return for_mode(PAGE_JS).replace('__CONST__', const).replace('__LIVE_FUNCS__', live_paragraph_code()).replace('__ROOT__', root)
 
 
 def build_html():
@@ -591,6 +616,9 @@ def build_html():
              + CANON_JS + '\n'
              '<style>\n' + C.CSS + '\n' + S.PAGE_CSS + '\n' + ('' if live else LOCK_CSS + '\n') + '</style>\n')
     head = C.head(TITLE, extra=extra)
+    if live:   # 옛 주소 넘김 — 머리 맨 앞(번역 · 통계 스크립트보다 먼저)
+        assert head.count('<meta charset="utf-8">\n') == 1
+        head = head.replace('<meta charset="utf-8">\n', '<meta charset="utf-8">\n' + FWD_JS + '\n', 1)
     return f'''{head}
 </head>
 <body>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<script src="/i18n.js?v=bc892c22"></script>
+<script src="/analytics.js?v=864040c2"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#f9f8f6">
+<title>타스컴(336040) 리포트 — 자본잠식 속 POCT 기술 승부 | KOSAI</title>
+<meta name="description" content="타스컴은 자체 개발한 현장진단 플랫폼 SimplexTAS를 앞세워 글로벌 IVD 시장 공략을 모색 중이나, 완전자본잠식·지속적 영업손실·극히 낮은 시장 유동성이 핵심 제약 요인으로 작용하고 있다.">
+<link rel="canonical" href="https://kosai.kr/stock/336040.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="KOSAI">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="타스컴(336040) 리포트 — 자본잠식 속 POCT 기술 승부 | KOSAI">
+<meta property="og:description" content="타스컴은 자체 개발한 현장진단 플랫폼 SimplexTAS를 앞세워 글로벌 IVD 시장 공략을 모색 중이나, 완전자본잠식·지속적 영업손실·극히 낮은 시장 유동성이 핵심 제약 요인으로 작용하고 있다.">
+<meta property="og:url" content="https://kosai.kr/stock/336040.html">
+<meta property="og:image" content="https://kosai.kr/assets/og-image.png?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="타스컴(336040) 리포트 — 자본잠식 속 POCT 기술 승부 | KOSAI">
+<meta name="twitter:description" content="타스컴은 자체 개발한 현장진단 플랫폼 SimplexTAS를 앞세워 글로벌 IVD 시장 공략을 모색 중이나, 완전자본잠식·지속적 영업손실·극히 낮은 시장 유동성이 핵심 제약 요인으로 작용하고 있다.">
+<meta name="twitter:image" content="https://kosai.kr/assets/og-image.png?v=3">
+<link rel="icon" type="image/svg+xml" href="/assets/kosai-icon-dark.svg?v=k2">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=k2">
+<script type="application/ld+json" id="kos-jsonld">{"@context":"https://schema.org","@type":"Article","headline":"타스컴 (336040) — 자본잠식 속 POCT 기술 승부","datePublished":"2026-06-08","dateModified":"2026-10-02","inLanguage":"ko","isAccessibleForFree":true,"mainEntityOfPage":"https://kosai.kr/stock/336040.html","author":{"@type":"Organization","name":"KOSAI","url":"https://kosai.kr"},"about":{"@type":"Corporation","name":"타스컴","legalName":"TASCOM Co.,Ltd.","tickerSymbol":"336040"}}</script>
+<link rel="stylesheet" href="/stock/assets/stock.css?v=27c10de1">
+<link rel="icon" href="/assets/favicon.png?v=k2">
+<link rel="stylesheet" href="/fonts/pretendard-subset.css">
+<script>(function(){var t='light';try{t=localStorage.getItem('kos-theme')||'light'}catch(e){}document.documentElement.setAttribute('data-theme',t);})();</script>
+<script id="kosThemeColor">(function(){var m=document.querySelector('meta[name="theme-color"]'),r=document.documentElement;
+  function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0d0d0e':'#f9f8f6')}
+  tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme']})})();</script>
+<script>
+/* 활성 표시선 — 컨테이너마다 선 하나를 두고, 활성 항목(.on)의 자리로 미끄러뜨린다.
+   axis 'x' = 밑줄, 'y' = 왼쪽 세로선. sel 로 활성 항목 선택자를 바꿀 수 있다(기본 .on).
+   첫 자리는 그냥 놓고, 그 뒤부터 element.animate() 로 이전 자리에서 새 자리로 움직인다.
+   CSS transition 을 안 쓰는 이유: 휴대폰 목차 띠가 헤더 안으로 옮겨 붙는 프레임에 항목이 같이 바뀌면
+   방금 옮겨진 요소라 transition 이 시작되지 않는다. animate() 는 DOM 이동과 무관하게 움직인다.
+   window.kosIndMs 로 길이를 바꿀 수 있다(시험용). 움직임 줄이기 설정이면 바로 놓는다. */
+window.kosInd=function(box,axis,sel){
+  if(!box)return function(){};
+  if(box.__ind)return box.__ind;
+  var ind=document.createElement('span');ind.className='ind '+(axis==='y'?'ind-v':'ind-h');ind.setAttribute('aria-hidden','true');box.appendChild(ind);
+  var last=null,placed=false,anim=null,rm=window.matchMedia?matchMedia('(prefers-reduced-motion:reduce)'):null;
+  function move(force){
+    var a=box.querySelector(sel||'.on');
+    if(!a){ind.style.opacity='0';last=null;return}
+    if(a===last&&!force)return;
+    var b=box.getBoundingClientRect(),r=a.getBoundingClientRect();
+    if(!r.width&&!r.height)return;
+    last=a;
+    var x=r.left-b.left-box.clientLeft+box.scrollLeft,y=r.top-b.top-box.clientTop+box.scrollTop;
+    var to={transform:'translate('+x+'px,'+(axis==='y'?y:y+r.height-2)+'px)'};
+    if(axis==='y')to.height=r.height+'px';else to.width=r.width+'px';
+    var from=null;
+    if(placed&&ind.animate&&!(rm&&rm.matches)){var cs=getComputedStyle(ind);from={transform:cs.transform};if(axis==='y')from.height=cs.height;else from.width=cs.width;if(anim){anim.cancel();anim=null}}
+    ind.style.opacity='';ind.style.transform=to.transform;if(axis==='y')ind.style.height=to.height;else ind.style.width=to.width;
+    if(from){anim=ind.animate([from,to],{duration:window.kosIndMs||300,easing:'cubic-bezier(.2,.8,.2,1)'});anim.onfinish=function(){anim=null}}
+    placed=true;
+  }
+  addEventListener('resize',function(){move(true)});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){move(true)});
+  box.__ind=move;move();return move;
+};
+</script>
+</head>
+<body>
+<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>
+<nav class="nav" id="nav"><div class="nav-in">
+  <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <div class="links"><a href="/Home.html">홈</a><a href="/Reports.html" class="on">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div>
+  <div class="right" id="navRight"><a class="login" href="/Login.html">로그인</a><div class="acct" id="acct"></div>
+    <button class="ib" id="themeBtn" aria-label="테마 전환"><svg viewBox="0 0 24 24" id="themeIcon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    <button class="ib menu" id="menuBtn" aria-label="메뉴" aria-expanded="false" aria-controls="mmenu"><svg class="ham" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+</div>
+</nav>
+<div class="mmenu" id="mmenu"><div class="mm-links"><a href="/Home.html">홈</a><a href="/Reports.html" class="on">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div><div class="sep"></div><div class="mm-auth" id="mauth"><a href="/Login.html">로그인</a><a href="/Signup.html">회원가입</a></div>
+<div class="mm-foot"><a href="/About.html">회사 소개</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보 처리방침</a></div></div>
+<main class="wrap" id="page" data-tk="336040" data-pre="6704ab1e"><header class="hero"><div><div class="eyebrow"><b>코넥스</b><span>전자·부품</span><span>336040</span></div><h1 class="name">타스컴</h1><div class="price"><span class="p">4,000원</span><span class="c flat"> 0.00%</span><span class="d">2026-10-02 장마감</span></div><div class="actions"><button type="button" class="btn btn-ink ico" id="watchBtn" aria-pressed="false"><svg class="wb-add" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><svg class="wb-on" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span id="watchTxt">관심종목 추가</span></button></div></div></header><section class="stats" aria-label="핵심 지표"><div class="st"><div class="st-k">시가총액</div><div class="st-v">232억원</div></div><div class="st"><div class="st-k">거래대금</div><div class="st-v">4,000원</div></div><div class="st"><div class="st-k">거래량</div><div class="st-v">1주</div></div><div class="st"><div class="st-k">상장주식수</div><div class="st-v">579만주</div></div><div class="st"><div class="st-k">PER</div><div class="st-v">—</div></div><div class="st"><div class="st-k">PBR</div><div class="st-v">—</div></div><div class="st"><div class="st-k">EPS</div><div class="st-v">—</div></div><div class="st"><div class="st-k">배당수익률</div><div class="st-v">—</div></div></section><p class="stats-note">PER·PBR·배당수익률은 최근 확정 실적(EPS·BPS·주당배당금)과 현재 주가로 산출 · 시세 2026-10-02 장마감</p><div class="body"><aside class="toc" id="toc"><a href="#s01"><span class="n">01</span>리포트 개요</a><a href="#s02"><span class="n">02</span>사업 구조</a><a href="#s03"><span class="n">03</span>최근 동향</a><a href="#s04"><span class="n">04</span>전망</a><a href="#s05"><span class="n">05</span>강세 요인</a><a href="#s06"><span class="n">06</span>약세 요인</a><a href="#s07"><span class="n">07</span>리스크 요인</a><a href="#s08"><span class="n">08</span>종합 의견</a><a href="#s09"><span class="n">09</span>참고 출처</a></aside><div class="content"><div class="chips-mark" id="chipsMark"></div><div class="chips-bar" id="chipsBar"><nav class="chips" id="chips"><a href="#s01">01 리포트 개요</a><a href="#s02">02 사업 구조</a><a href="#s03">03 최근 동향</a><a href="#s04">04 전망</a><a href="#s05">05 강세 요인</a><a href="#s06">06 약세 요인</a><a href="#s07">07 리스크 요인</a><a href="#s08">08 종합 의견</a><a href="#s09">09 참고 출처</a></nav></div><section class="sec" id="s01"><div class="sec-h sec-h-quiet"><span class="num">01</span><h2>리포트 개요</h2></div><div class="abstract"><h3 class="ab-title">자본잠식 속 POCT 기술 승부</h3><p class="ab-lead">타스컴은 자체 개발한 현장진단 플랫폼 SimplexTAS를 앞세워 글로벌 IVD 시장 공략을 모색 중이나, 완전자본잠식·지속적 영업손실·극히 낮은 시장 유동성이 핵심 제약 요인으로 작용하고 있다.</p><ol class="kp"><li><span class="n">1</span><p>2014년 설립, 면역화학·POCT·당뇨 분야 특화 IVD 기업으로 SimplexTAS를 자체 연구·개발·제조·판매하며 전 세계 100여 개 독점 딜러망 보유</p></li><li><span class="n">2</span><p>2024년 별도 기준 매출 16.4% 감소에도 불구하고 영업손실 62.7%·당기순손실 58.4% 축소, 제품 믹스 전환에 따른 수익 구조 개선 진행 중</p></li><li><span class="n">3</span><p>2024년 상반기 기준 완전자본잠식(자본총계 –2.2억원), 유동부채 68.4억원 집중으로 단기 유동성 리스크 상존</p></li><li><span class="n">4</span><p>2025년 12월 약 20억원 규모 제3자 배정 유상증자 결의(주당 2,700원, 74만 740주 신주 발행), 운영자금·채무 상환 목적</p></li><li><span class="n">5</span><p>미국·브라질·독일 등 직접 판매 법인 보유, 미국 FDA 승인 신청 준비 중으로 글로벌 최대 단일 시장 진입 여부가 중기 성장의 분기점</p></li></ol></div></section><section class="sec" id="s02"><div class="sec-h"><span class="num">02</span><h2>사업 구조</h2></div><div class="prose"><p>타스컴은 2014년 설립된 IVD 의료기기 전문 기업으로, 체외진단 중 면역화학진단·POCT·당뇨 관련 의료기기 판매 및 자체 플랫폼 SimplexTAS의 연구·개발·제조·판매를 주력 사업으로 영위하고 있다.</p><p>SimplexTAS는 세계 최초로 모세혈관 혈액(손끝 채혈)을 직접 사용하며 혈구 방해 작용을 제거한 시스템으로, 당화혈색소(HbA1c)·콜레스테롤·크레아틴카이네이즈 등 14개 이상의 항목을 약 13분 내에 분석하며 40여 종의 바이오마커 측정을 목표로 개발 중이다.</p><p>제품은 식품의약품안전처 품목 허가를 취득하였으며, 유럽 CE 인증 이후 네덜란드·헝가리·브라질 등 해외 의료 현장 및 스포츠팀에 납품이 확대되어 현재 한국을 포함한 14개국에 공급되고 있다.</p><p>글로벌 영업망은 전 세계 100여 개의 독점 딜러 네트워크를 기반으로 구축되어 있으며, 미국·브라질·독일 등 주요국에서는 M&amp;A 및 법인 설립을 통한 직접 판매 방식으로 확장을 도모하고 있다.</p><p>부가적으로 당뇨 환자용 인슐린 펜니들·혈당측정기(아이센스 제품 재판매) 등의 소모품 사업을 운영해왔으나, 2024년 상반기 기준 반기 매출액 33.9억원 중 20.3억원을 차지하던 해당 품목 영업을 전략적으로 종료하고 체외진단기기 사업에 역량을 집중하기로 하였다.</p><p>로슈(Roche)가 30년간 글로벌 판매 후 단종한 체외진단기기 Reflotron의 대체재로 SimplexTAS를 포지셔닝하는 협상을 추진한 바 있어, 글로벌 임상 현장의 교체 수요를 공략할 수 있는 기회 요인도 존재한다.</p><p>장기 파이프라인으로는 줄기세포를 활용한 당뇨병 세포치료제 개발 플랫폼을 병행 추진 중으로, 진단기기 사업을 넘어 치료제 분야로의 사업 다각화 가능성도 열려 있다.</p><p>타스컴이 공략하는 만성질환 POCT 시장은 고령화 및 만성질환 증가에 따라 치료 중심에서 진단·예방 중심으로 의료 패러다임이 전환되면서 지속적인 성장이 예상되는 분야로, 이 시장의 방향성이 타스컴의 사업 전략과 부합한다.</p></div></section><section class="sec" id="s03"><div class="sec-h"><span class="num">03</span><h2>최근 동향</h2></div><div class="prose"><p>2024년 결산 기준(별도) 매출액은 전년 대비 16.4% 감소하였고, 영업손실은 62.7% 축소되었으며, 당기순손실도 58.4% 감소하였다.</p><p>체외진단기기 부문의 매출 하락에도 불구하고 매출총이익이 개선되어 손실 폭이 줄어든 데 기인하는 것으로, 고마진 SimplexTAS 중심 제품 믹스 전환이 효과를 발휘하고 있는 것으로 해석된다.</p><p>2024년 상반기 보도에 따르면 당시 반기 매출액은 약 33억 9천만원이었으며, 영업손실 약 10억 3천만원, 순손실 약 10억 6천만원을 기록하였다.</p><p>자본 측면에서는 2024년 상반기 기준 자본총계가 –2억 2천만원으로 완전자본잠식 상태에 진입하였으며, 부채총계 68억 6천만원 중 유동부채가 68억 4천만원에 달해 사실상 전체 채무가 단기로 집중되어 있었다.</p><p>현금성 자산은 17억 2천만원 수준으로, 자체 현금흐름만으로 채무를 감당하기 어려운 재무 구조가 확인되었다.</p><p>이러한 상황에서 타스컴은 2025년 12월 31일 제3자 배정 방식의 유상증자를 결의하였으며, 신주 74만 740주를 주당 2,700원(기준주가 2,706원 대비 0.23% 할인)에 발행해 약 20억원을 조달하기로 하였다.</p><p>해당 자금은 인건비 등 필수 운영경비 약 13억 9천만원과 MiCo BioMed USA 및 KAI-타이온유니콘조합7호에 대한 차입금 상환 6억원에 배분될 예정이었다.</p><p>주가는 2025년 중 5,000원 이상의 수준을 형성한 바 있으나, 2026년 6월 7일 기준 2,900원(전일 대비 –3.33%)으로 하락하였으며, 일 거래대금 22만 2천원대에 불과해 코넥스 시장 특성상 유동성이 극히 제한적인 상태가 지속되고 있다.</p></div></section><section class="sec" id="s04"><div class="sec-h"><span class="num">04</span><h2>전망</h2></div><div class="prose"><p>단기적으로는 재무 구조 안정화가 가장 시급한 과제이다. 유상증자를 통해 확보한 약 20억원은 운영자금과 채무 상환에 즉각 소요될 규모로, 완전자본잠식 상태 탈출과 추가 외부 자금 조달 필요성이 핵심 관찰 포인트다.</p><p>중기적으로는 미국 FDA 승인이 성장의 가장 중요한 이정표로, 승인 취득 시 미국 직접 판매 법인을 통한 매출 레버리지가 현실화될 수 있다. 소모품 사업 축소에 따른 매출 공백을 SimplexTAS가 얼마나 빠르게 메울 수 있는지가 흑자 전환 시점을 결정하는 변수로 작용할 것이다.</p><p>로슈 Reflotron 대체 수요를 실제 계약으로 전환할 수 있다면 글로벌 임상 현장에서의 수요 확대가 기대되며, 이는 딜러 네트워크 활성화와도 시너지를 낼 수 있다.</p><p>장기적으로는 SimplexTAS의 바이오마커 측정 종수 확대(40여 종 목표)와 줄기세포 기반 당뇨병 세포치료제 임상 진입이 기업 가치 재평가 트리거가 될 수 있다. 다만 코넥스 시장 특성상 구조적 유동성 부재와 흑자 전환 시점의 불투명성이 현 시점에서의 실적 가시성을 저하시키는 주요 요인이다.</p></div></section><section class="sec" id="s05"><div class="sec-h"><span class="num">05</span><h2>강세 요인</h2></div><div class="fcs"><article class="fc bull"><h4><i class="dot"></i>영업손실 급격한 축소, 수익 구조 전환 진행 중</h4><p>2024년 결산 기준 영업손실이 전년 대비 62.7% 감소하였고, 당기순손실도 58.4% 축소되었다. 매출이 줄어드는 가운데에도 매출총이익이 개선된 것은 고마진 SimplexTAS 중심으로 제품 믹스가 전환되고 있음을 시사한다.</p><p>인건비 등 고정비 절감 및 저마진 소모품 사업 축소가 이익 구조 개선에 기여하고 있으며, 매출 회복이 뒷받침될 경우 흑자 전환 속도가 빨라질 수 있다.</p></article><article class="fc bull"><h4><i class="dot"></i>Roche Reflotron 단종 공백과 글로벌 유통 인프라</h4><p>로슈가 30년간 판매하던 체외진단기기 Reflotron이 단종됨에 따라 글로벌 임상 현장에 상당한 교체 수요가 발생하였으며, 타스컴은 SimplexTAS로 이 공백을 대체하는 협상을 추진한 바 있다.</p><p>전 세계 100여 개의 독점 딜러망과 미국·브라질·독일 직접 판매 법인이라는 기존 인프라가 이 기회를 현실화할 수 있는 실질적 공급 역량을 제공한다. 유럽 CE 인증 이후 14개국에 납품 중이며, 미국 FDA 승인이 추가될 경우 최대 단일 시장에서의 성장 경로가 열리게 된다.</p></article><article class="fc bull"><h4><i class="dot"></i>만성질환 POCT 시장의 구조적 성장</h4><p>고령화 및 만성질환 증가로 의료 패러다임이 치료 중심에서 진단·예방 중심으로 전환되면서 POCT 시장의 장기 성장이 예상되며, 이는 타스컴 사업 전략과 방향성이 일치한다.</p><p>당뇨병·고혈압·고지혈증 등 관리 필요 만성질환 환자 층이 전 세계적으로 확대되고 있어, 현장에서 즉시 결과를 확인할 수 있는 SimplexTAS의 수요 잠재력은 크다.</p><p>국내 양로원·헬스클럽 판매와 해외 스포츠팀 납품 확대는 적용 시장의 다양성을 확인해주는 사례로, 타깃 고객층이 의료 기관에 한정되지 않는다는 점도 강점이다.</p></article></div></section><section class="sec" id="s06"><div class="sec-h"><span class="num">06</span><h2>약세 요인</h2></div><div class="fcs"><article class="fc bear"><h4><i class="dot"></i>완전자본잠식과 단기 유동성 집중 리스크</h4><p>2024년 상반기 기준 자본총계가 –2억 2천만원으로 완전자본잠식 상태이며, 유동부채 68억 4천만원으로 사실상 전체 부채가 단기로 집중되어 있다.</p><p>현금성 자산 17억 2천만원으로는 자체 현금흐름으로 채무를 감당하기 어렵고, 2025년 12월 유상증자로 조달한 약 20억원도 운영자금과 채무 상환에 즉시 소요될 규모다.</p><p>추가 손실이 지속될 경우 외부감사인의 계속기업 불확실성 의견 표명 가능성도 배제하기 어려우며, 재무 건전성 복원에 상당한 시간이 소요될 전망이다.</p></article><article class="fc bear"><h4><i class="dot"></i>지속적 매출 감소와 흑자 전환 시점 불투명</h4><p>2024년 전체 매출이 전년 대비 16.4% 감소하였으며, 반기 매출의 약 60%를 차지하던 인슐린 펜니들 등 소모품 사업의 전략적 축소로 단기 추가 매출 감소 압력이 예상된다.</p><p>SimplexTAS 자체 매출이 소모품 감소분을 충분히 상쇄할 수 있는지의 여부가 불확실한 상태이며, 구체적인 흑자 전환 시점이 제시되지 않고 있다. 실적 가시성이 낮은 환경에서는 투자 판단 기준이 기술 잠재력과 재무 리스크 간의 정성적 균형에 의존할 수밖에 없다.</p></article><article class="fc bear"><h4><i class="dot"></i>코넥스 시장의 구조적 유동성 부재</h4><p>기준일(2026년 6월 7일) 일 거래대금이 22만원대에 불과하며, 시가총액 규모도 극히 소액이어서 일반적인 매수·매도 거래가 사실상 어렵다. 시장 유동성 부재는 공정가치 발견을 왜곡하고, 소량의 수급 변화에도 가격 변동성을 극대화한다.</p><p>코스닥으로의 이전 상장이나 기관 투자자 유입 등의 변화 없이는 유동성 개선을 기대하기 어려운 구조적 한계가 지속될 것으로 보인다.</p></article></div></section><section class="sec wide" id="s07"><div class="sec-h"><span class="num">07</span><h2>리스크 요인</h2></div><div class="rks"><div class="rk"><div class="rk-c">규제·인허가 리스크</div><div class="rk-b"><p>미국 FDA 승인은 글로벌 매출 확대의 가장 중요한 전제 조건이나, 승인 일정과 결과에 대한 구체적인 공시 내용이 확인되지 않아 불확실성이 크다. 해외 인허가 절차의 지연 또는 반려는 글로벌 영업망 활성화 계획에 직접적인 차질을 줄 수 있다.</p><p>국내외 의료기기 규제 환경의 변화도 기존 품목 허가 유지 및 신규 바이오마커 항목 출시 일정에 영향을 미칠 수 있다.</p></div></div><div class="rk"><div class="rk-c">재무 건전성 악화 리스크</div><div class="rk-b"><p>완전자본잠식 상태에서 추가 손실이 지속될 경우 코넥스 상장 유지 기준 미충족 또는 외부감사인의 계속기업 불확실성 의견 표명 가능성이 있다. 향후 운영자금 조달을 위해 추가 유상증자가 필요할 경우 기존 주주에 대한 지분 희석 압력이 가중될 수 있다. 유동부채 집중에 따른 채무 상환 차질이 발생할 경우 채무불이행(디폴트) 리스크도 배제하기 어렵다.</p></div></div><div class="rk"><div class="rk-c">경쟁 및 거시 리스크</div><div class="rk-b"><p>글로벌 IVD 시장은 로슈·애보트·지멘스 등 대형 다국적 기업이 주도하고 있어 독립 전문 기업이 시장 점유율을 확보하기 쉽지 않은 경쟁 구도다. 타스컴이 공략하는 POCT 세그먼트에서도 경쟁 제품의 기술·가격 경쟁력이 강화될 경우 SimplexTAS의 차별성이 약화될 수 있다.</p><p>글로벌 경기 둔화나 환율 변동 등 거시 환경 변화는 해외 수출 매출과 글로벌 딜러 네트워크 유지에 직접적인 영향을 미칠 수 있다.</p></div></div></div></section><section class="sec" id="s08"><div class="sec-h"><span class="num">08</span><h2>종합 의견</h2></div><div class="prose verdict wrapup"><p>타스컴은 만성질환 POCT라는 구조적 성장 시장에서 차별화된 기술 플랫폼(SimplexTAS)을 보유한 기업으로, 2024년 영업손실의 대폭 축소는 수익 구조 전환의 초기 신호로 평가된다.</p><p>그러나 완전자본잠식, 단기 부채 집중, 지속적인 매출 감소, 코넥스 시장 내 극히 낮은 유동성은 일반적인 투자 접근을 구조적으로 제한한다.</p><p>2025년 12월~2026년 1월 단행된 약 20억원 규모의 유상증자는 단기 숨통을 트이게 했으나, 재무 건전성 복원의 충분조건이 되기에는 규모가 제한적이며, SimplexTAS 매출의 유의미한 회복이 선행되어야 한다.</p><p>미국 FDA 승인 취득 및 로슈 Reflotron 대체 수요의 실제 계약 전환 여부가 중기 성장의 분기점이 될 것으로 판단되나, 이 두 이정표의 실현 시점이 현재로서는 불분명하다.</p><p>줄기세포 기반 당뇨병 세포치료제 파이프라인은 장기적 가치 재평가 요소로 잠재력을 보유하나, 임상 진입까지의 경로와 자금 조달 능력이 검증되지 않은 상황이다.</p><p>종합적으로 이 기업은 기술적 잠재력과 재무적 취약성이 공존하는 고위험 초소형주로, 실적 반전의 구체적 증거와 유동성 개선의 신호가 확인되기 전까지는 신중한 관찰이 요구된다.</p></div></section><section class="sec" id="s09"><div class="sec-h"><span class="num">09</span><h2>참고 출처</h2></div><ol class="srcs"><li><a href="https://www.krx.co.kr" target="_blank" rel="noopener">한국거래소(KRX) — 시세 · 시가총액 · 거래량</a></li><li><a href="https://dart.fss.or.kr" target="_blank" rel="noopener">금융감독원 전자공시(DART) — 재무제표 · 배당 공시</a></li></ol><details class="srcmore"><summary>기사·자료 6건 더 보기</summary><ol class="srcs"><li><a href="https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A336040" target="_blank" rel="noopener nofollow">comp.fnguide.com</a></li><li><a href="https://www.digitaltoday.co.kr/news/articleView.html?idxno=617363" target="_blank" rel="noopener nofollow">digitaltoday.co.kr</a></li><li><a href="https://www.prestocknews.com/news/articleView.html?idxno=19840" target="_blank" rel="noopener nofollow">prestocknews.com</a></li><li><a href="https://pharm.edaily.co.kr/News/Read?newsId=01318566629283768&amp;mediaCodeNo=257" target="_blank" rel="noopener nofollow">pharm.edaily.co.kr</a></li><li><a href="https://www.saramin.co.kr/zf_user/company-info/view/csn/cDVuS2dQbWR5TDhpK2Y3VnhyZDRXdz09/company_nm/(%EC%A3%BC)%ED%83%80%EC%8A%A4%EC%BB%B4" target="_blank" rel="noopener nofollow">saramin.co.kr</a></li><li><a href="https://markets.hankyung.com/stock/336040" target="_blank" rel="noopener nofollow">markets.hankyung.com</a></li></ol></details></section><p class="rdate">리포트 작성 2026-06-08 · 데이터 기준 2026-06-05</p><p class="disc">본 콘텐츠는 AI가 시장 데이터와 웹 검색 결과를 분석한 정보 제공용이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 책임은 투자자 본인에게 있습니다. 데이터는 지연되거나 오류가 포함될 수 있습니다.</p></div></div></main>
+<footer class="foot"><div class="wrap">
+  <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <div class="fgrid">
+    <div class="fcol"><h4>서비스</h4><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div>
+    <div class="fcol"><h4>회사</h4><a href="/About.html">회사 소개</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a></div>
+    <div class="fcol"><h4>정책</h4><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보 처리방침</a></div>
+  </div>
+  <div class="biz"><span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span><span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span></div>
+  <div class="copy">© 2026 KOSAI</div>
+</div></footer>
+<script src="/data/stocks.js"></script>
+<script src="/data/valuation.js"></script>
+<script src="/stock/assets/stock.js?v=cacc1a5b"></script>
+<script src="/stock/assets/i18n-dict.js?v=0d6a1c32"></script>
+<script type="module" src="/auth-guard.js?v=9abd3186"></script>
+<script type="module" src="/watchlist.js?v=1e5f550a"></script>
+<script type="module" src="/auth-state.js?v=82a9b999"></script>
+<script src="/lenis.js?v=3a0cb7e8"></script>
+<script src="/smooth-scroll.js?v=bd8a60e4"></script>
+</body>
+</html>

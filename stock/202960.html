@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<script src="/i18n.js?v=bc892c22"></script>
+<script src="/analytics.js?v=864040c2"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#f9f8f6">
+<title>판도라티비(202960) 리포트 — 매출 역성장 속 영업이익 개선의 역설 | KOSAI</title>
+<meta name="description" content="판도라티비는 검색광고 매출 감소와 가상자산 시장 변동성으로 2025년 연결 매출이 역성장했으나, 비용 효율화로 영업이익은 개선되는 이중적 실적 구조를 보이고 있다.">
+<link rel="canonical" href="https://kosai.kr/stock/202960.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="KOSAI">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="판도라티비(202960) 리포트 — 매출 역성장 속 영업이익 개선의 역설 | KOSAI">
+<meta property="og:description" content="판도라티비는 검색광고 매출 감소와 가상자산 시장 변동성으로 2025년 연결 매출이 역성장했으나, 비용 효율화로 영업이익은 개선되는 이중적 실적 구조를 보이고 있다.">
+<meta property="og:url" content="https://kosai.kr/stock/202960.html">
+<meta property="og:image" content="https://kosai.kr/assets/og-image.png?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="판도라티비(202960) 리포트 — 매출 역성장 속 영업이익 개선의 역설 | KOSAI">
+<meta name="twitter:description" content="판도라티비는 검색광고 매출 감소와 가상자산 시장 변동성으로 2025년 연결 매출이 역성장했으나, 비용 효율화로 영업이익은 개선되는 이중적 실적 구조를 보이고 있다.">
+<meta name="twitter:image" content="https://kosai.kr/assets/og-image.png?v=3">
+<link rel="icon" type="image/svg+xml" href="/assets/kosai-icon-dark.svg?v=k2">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=k2">
+<script type="application/ld+json" id="kos-jsonld">{"@context":"https://schema.org","@type":"Article","headline":"판도라티비 (202960) — 매출 역성장 속 영업이익 개선의 역설","datePublished":"2026-06-08","dateModified":"2026-10-02","inLanguage":"ko","isAccessibleForFree":true,"mainEntityOfPage":"https://kosai.kr/stock/202960.html","author":{"@type":"Organization","name":"KOSAI","url":"https://kosai.kr"},"about":{"@type":"Corporation","name":"판도라티비","legalName":"PANDORA TV CO.,LTD.","tickerSymbol":"202960"}}</script>
+<link rel="stylesheet" href="/stock/assets/stock.css?v=27c10de1">
+<link rel="icon" href="/assets/favicon.png?v=k2">
+<link rel="stylesheet" href="/fonts/pretendard-subset.css">
+<script>(function(){var t='light';try{t=localStorage.getItem('kos-theme')||'light'}catch(e){}document.documentElement.setAttribute('data-theme',t);})();</script>
+<script id="kosThemeColor">(function(){var m=document.querySelector('meta[name="theme-color"]'),r=document.documentElement;
+  function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0d0d0e':'#f9f8f6')}
+  tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme']})})();</script>
+<script>
+/* 활성 표시선 — 컨테이너마다 선 하나를 두고, 활성 항목(.on)의 자리로 미끄러뜨린다.
+   axis 'x' = 밑줄, 'y' = 왼쪽 세로선. sel 로 활성 항목 선택자를 바꿀 수 있다(기본 .on).
+   첫 자리는 그냥 놓고, 그 뒤부터 element.animate() 로 이전 자리에서 새 자리로 움직인다.
+   CSS transition 을 안 쓰는 이유: 휴대폰 목차 띠가 헤더 안으로 옮겨 붙는 프레임에 항목이 같이 바뀌면
+   방금 옮겨진 요소라 transition 이 시작되지 않는다. animate() 는 DOM 이동과 무관하게 움직인다.
+   window.kosIndMs 로 길이를 바꿀 수 있다(시험용). 움직임 줄이기 설정이면 바로 놓는다. */
+window.kosInd=function(box,axis,sel){
+  if(!box)return function(){};
+  if(box.__ind)return box.__ind;
+  var ind=document.createElement('span');ind.className='ind '+(axis==='y'?'ind-v':'ind-h');ind.setAttribute('aria-hidden','true');box.appendChild(ind);
+  var last=null,placed=false,anim=null,rm=window.matchMedia?matchMedia('(prefers-reduced-motion:reduce)'):null;
+  function move(force){
+    var a=box.querySelector(sel||'.on');
+    if(!a){ind.style.opacity='0';last=null;return}
+    if(a===last&&!force)return;
+    var b=box.getBoundingClientRect(),r=a.getBoundingClientRect();
+    if(!r.width&&!r.height)return;
+    last=a;
+    var x=r.left-b.left-box.clientLeft+box.scrollLeft,y=r.top-b.top-box.clientTop+box.scrollTop;
+    var to={transform:'translate('+x+'px,'+(axis==='y'?y:y+r.height-2)+'px)'};
+    if(axis==='y')to.height=r.height+'px';else to.width=r.width+'px';
+    var from=null;
+    if(placed&&ind.animate&&!(rm&&rm.matches)){var cs=getComputedStyle(ind);from={transform:cs.transform};if(axis==='y')from.height=cs.height;else from.width=cs.width;if(anim){anim.cancel();anim=null}}
+    ind.style.opacity='';ind.style.transform=to.transform;if(axis==='y')ind.style.height=to.height;else ind.style.width=to.width;
+    if(from){anim=ind.animate([from,to],{duration:window.kosIndMs||300,easing:'cubic-bezier(.2,.8,.2,1)'});anim.onfinish=function(){anim=null}}
+    placed=true;
+  }
+  addEventListener('resize',function(){move(true)});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){move(true)});
+  box.__ind=move;move();return move;
+};
+</script>
+</head>
+<body>
+<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>
+<nav class="nav" id="nav"><div class="nav-in">
+  <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <div class="links"><a href="/Home.html">홈</a><a href="/Reports.html" class="on">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div>
+  <div class="right" id="navRight"><a class="login" href="/Login.html">로그인</a><div class="acct" id="acct"></div>
+    <button class="ib" id="themeBtn" aria-label="테마 전환"><svg viewBox="0 0 24 24" id="themeIcon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    <button class="ib menu" id="menuBtn" aria-label="메뉴" aria-expanded="false" aria-controls="mmenu"><svg class="ham" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+</div>
+</nav>
+<div class="mmenu" id="mmenu"><div class="mm-links"><a href="/Home.html">홈</a><a href="/Reports.html" class="on">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div><div class="sep"></div><div class="mm-auth" id="mauth"><a href="/Login.html">로그인</a><a href="/Signup.html">회원가입</a></div>
+<div class="mm-foot"><a href="/About.html">회사 소개</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보 처리방침</a></div></div>
+<main class="wrap" id="page" data-tk="202960" data-pre="4fab42aa"><header class="hero"><div><div class="eyebrow"><b>코넥스</b><span>미디어·엔터</span><span>202960</span></div><h1 class="name">판도라티비</h1><div class="price"><span class="p">488원</span><span class="c down">▼ 1.61%</span><span class="d">2026-10-02 장마감</span></div><div class="actions"><button type="button" class="btn btn-ink ico" id="watchBtn" aria-pressed="false"><svg class="wb-add" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><svg class="wb-on" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span id="watchTxt">관심종목 추가</span></button></div></div></header><section class="stats" aria-label="핵심 지표"><div class="st"><div class="st-k">시가총액</div><div class="st-v">58억원</div></div><div class="st"><div class="st-k">거래대금</div><div class="st-v">406,076원</div></div><div class="st"><div class="st-k">거래량</div><div class="st-v">831주</div></div><div class="st"><div class="st-k">상장주식수</div><div class="st-v">1,192만주</div></div><div class="st"><div class="st-k">PER</div><div class="st-v">—</div></div><div class="st"><div class="st-k">PBR</div><div class="st-v">—</div></div><div class="st"><div class="st-k">EPS</div><div class="st-v">—</div></div><div class="st"><div class="st-k">배당수익률</div><div class="st-v">—</div></div></section><p class="stats-note">PER·PBR·배당수익률은 최근 확정 실적(EPS·BPS·주당배당금)과 현재 주가로 산출 · 시세 2026-10-02 장마감</p><div class="body"><aside class="toc" id="toc"><a href="#s01"><span class="n">01</span>리포트 개요</a><a href="#s02"><span class="n">02</span>사업 구조</a><a href="#s03"><span class="n">03</span>최근 동향</a><a href="#s04"><span class="n">04</span>전망</a><a href="#s05"><span class="n">05</span>강세 요인</a><a href="#s06"><span class="n">06</span>약세 요인</a><a href="#s07"><span class="n">07</span>리스크 요인</a><a href="#s08"><span class="n">08</span>종합 의견</a><a href="#s09"><span class="n">09</span>참고 출처</a></aside><div class="content"><div class="chips-mark" id="chipsMark"></div><div class="chips-bar" id="chipsBar"><nav class="chips" id="chips"><a href="#s01">01 리포트 개요</a><a href="#s02">02 사업 구조</a><a href="#s03">03 최근 동향</a><a href="#s04">04 전망</a><a href="#s05">05 강세 요인</a><a href="#s06">06 약세 요인</a><a href="#s07">07 리스크 요인</a><a href="#s08">08 종합 의견</a><a href="#s09">09 참고 출처</a></nav></div><section class="sec" id="s01"><div class="sec-h sec-h-quiet"><span class="num">01</span><h2>리포트 개요</h2></div><div class="abstract"><h3 class="ab-title">매출 역성장 속 영업이익 개선의 역설</h3><p class="ab-lead">판도라티비는 검색광고 매출 감소와 가상자산 시장 변동성으로 2025년 연결 매출이 역성장했으나, 비용 효율화로 영업이익은 개선되는 이중적 실적 구조를 보이고 있다.</p><ol class="kp"><li><span class="n">1</span><p>KM플레이어: 전 세계 230여 개국, 3억 명 이상 사용자 기반의 글로벌 플랫폼으로, 광고 수익이 회사의 핵심 캐시카우 역할</p></li><li><span class="n">2</span><p>FY2025 영업이익 25.6% 개선: 매출 감소에도 비용 절감·운영 효율화로 영업 수익성이 제고됐으나, 당기순이익 -55.6%로 비영업 손익 변동성 잔존</p></li><li><span class="n">3</span><p>Web3 전환 전략: 무비블록(RWA 모델 도입)·코박(Write to Earn 생태계 확장) 중심으로 콘텐츠-블록체인 융합 비즈니스 추진 중</p></li><li><span class="n">4</span><p>일일 거래대금 약 3.2만원 수준의 극저유동성 코넥스 종목으로, 주가 변동 리스크와 가격 발견 기능이 사실상 작동하지 않는 구간에 위치</p></li><li><span class="n">5</span><p>자회사 파일쿠키(콘텐츠 유통)·희일커뮤니케이션(네이버 공식 광고대행사)을 통한 디지털 마케팅·콘텐츠 유통 부문이 광고 수익 다변화 역할 수행</p></li></ol></div></section><section class="sec" id="s02"><div class="sec-h"><span class="num">02</span><h2>사업 구조</h2></div><div class="prose"><p>판도라티비는 1999년 세계 최초 UCC 동영상 플랫폼 '판도라TV'를 출시하며 국내 뉴미디어 산업을 개척한 1세대 벤처기업이다.</p><p>현재 사업은 크게 ① 글로벌 미디어 플레이어(KM플레이어), ② 블록체인 기반 콘텐츠(무비블록·코박), ③ 디지털 광고·콘텐츠 유통(희일커뮤니케이션·파일쿠키)의 세 축으로 구성된다.</p><p>KM플레이어는 PC·모바일 앱을 통해 전 세계 230여 개국에서 3억 명 이상이 이용하는 글로벌 멀티미디어 재생 솔루션으로, 광고 네트워크와 연계한 수익 구조가 회사 매출의 핵심 근간을 이룬다.</p><p>무비블록은 2019년 출시된 블록체인 기반 독립영화·단편영화 유통 플랫폼으로, MBL 유틸리티 토큰을 통해 콘텐츠 큐레이션·거래·창작자 보상 생태계를 운영하며 CJ ENM, 일본 사만사(Samansa) 등 파트너십을 통해 콘텐츠 라인업을 확대하고 있다.</p><p>코박은 암호화폐 커뮤니티 플랫폼으로 'Write to Earn' 모델을 기반으로 CBK 토큰 생태계를 운영하며, CC·CBK 듀얼 토큰 구조로 탈중앙화를 추진하고 있다. 희일커뮤니케이션은 네이버 공인 광고대행사로서 검색광고 매출을 담당하며, 파일쿠키는 유료 콘텐츠 유통을 지원한다.</p><p>유튜브 독점 심화로 인해 자체 동영상 소셜 플랫폼 출시 계획은 보류된 바 있으며, 회사는 이후 블록체인 기반 서비스로 전략 축을 전환했다. 임직원 수는 국민연금 가입 기준 30명 내외로, 소형 플랫폼 기업의 특성을 보인다.</p><p>경쟁 구도 측면에서 KM플레이어는 VLC 등 글로벌 무료 플레이어와 경쟁하고 있으며, 무비블록·코박은 각각 독립영화 스트리밍 플랫폼 및 국내외 암호화폐 커뮤니티와 경합한다.</p></div></section><section class="sec" id="s03"><div class="sec-h"><span class="num">03</span><h2>최근 동향</h2></div><div class="prose"><p>FnGuide가 집계한 FY2025 연결 기준 실적에 따르면, 매출액은 전년 대비 15.5% 감소했으며 검색광고 매출 감소와 가상자산 시장 변동성이 주된 요인으로 지목됐다. 반면 영업이익은 비용 절감과 운영 효율화 덕분에 25.6% 증가하며 수익성이 개선됐다.</p><p>그러나 당기순이익은 55.6% 급감해, 비영업 부문(가상자산 평가 손익 등)에서의 변동성이 순이익을 크게 압박한 것으로 추정된다. 참고로 원티드인사이트가 공개한 2024 사업연도 기준 매출액은 약 58억 4,594만원 수준으로 확인되며, 2025년 실적은 이에 대한 역성장임을 감안해야 한다.</p><p>주가는 52주 기준 1,400원 고점(2025년 상반기)에서 2026년 6월 7일 현재 489원까지 하락했으며, 이는 가상자산 시장 냉각과 광고 매출 부진이 주가에 선반영된 결과로 해석된다. 일일 거래대금이 3만원대에 불과할 정도로 유동성이 극히 낮아, 가격 발견 기능이 제대로 작동하지 않는 상황이다.</p><p>무비블록은 2024년 로드맵을 100% 달성했다고 자체 발표했으며, 코박 역시 2024년 CBK 듀얼 토큰 구조 고도화 및 로드맵 완수를 보고했으나 이들 사업의 재무 기여도는 공개 수치로 확인되지 않는다.</p><p>직원 수는 약 30명 수준을 유지하고 있어 인건비 구조는 안정적이나, 성장 투자 여력에 한계가 있는 소규모 조직임을 방증한다.</p></div></section><section class="sec" id="s04"><div class="sec-h"><span class="num">04</span><h2>전망</h2></div><div class="prose"><p>무비블록은 2025년 RWA(실물 자산 연계) 모델 본격 도입을 목표로 하며, 2026년에는 창작자 수익 확대·UX 개선·대학 교육 기관 협업을 로드맵에 명시했다. 이는 독립영화 생태계 내 Web3의 실질적 역할 확장을 추구하는 중장기 전략의 일환이다.</p><p>코박은 2025년을 'Web3 원년'으로 선언하고 Write to Earn 생태계를 글로벌로 확장하는 동시에, CC·CBK 기반의 참여형 경제 모델 고도화를 추진하고 있다.</p><p>KM플레이어는 글로벌 3억 명 이상의 사용자 기반을 유지하는 가운데 AI 기반 광고 타겟팅 강화가 향후 광고 단가 및 수익성 개선의 변수로 작용할 수 있다. 반면 검색광고 시장의 구조적 침체와 유튜브·빅테크 플랫폼의 광고 점유율 확대는 매출 반등의 구조적 제약으로 남는다.</p><p>단기적으로는 가상자산 시장 변동성에 따른 무비블록·코박 사업 가치 재평가와 이에 연동된 비영업 손익 변동이 순이익의 주요 불확실성 요인이다. 전반적으로 매출 회복 시점과 Web3 수익화 가시성은 아직 불분명하며, 추가적인 공시 및 사업 성과 검증이 필요한 국면이다.</p></div></section><section class="sec" id="s05"><div class="sec-h"><span class="num">05</span><h2>강세 요인</h2></div><div class="fcs"><article class="fc bull"><h4><i class="dot"></i>KM플레이어의 글로벌 사용자 기반</h4><p>KM플레이어는 전 세계 230여 개국에서 3억 명 이상이 사용하는 세계 1위 수준의 멀티미디어 플레이어로, 해당 사용자 기반은 광고 수익 모델의 견고한 기반을 제공한다.</p><p>PC 및 모바일 플랫폼 양방향으로 운영되며, AI 기반 광고 타겟팅 기술이 업계 핵심 경쟁 요소로 부상하는 환경에서 광고 단가 개선 여지가 존재한다. FY2025에 전사 매출이 역성장했음에도 영업이익이 개선된 것은 KM플레이어 기반의 안정적인 수익 창출력 덕분으로 해석할 수 있다.</p><p>글로벌 확장성 측면에서도 이미 광범위한 국가에 서비스를 제공 중이라는 점이 신규 시장 진입 대비 낮은 비용 구조를 가능케 한다.</p></article><article class="fc bull"><h4><i class="dot"></i>비용 구조 효율화와 영업 레버리지</h4><p>FY2025에 매출이 15.5% 감소했음에도 영업이익이 25.6% 증가한 것은, 회사가 고정비 및 운영 비용을 효과적으로 절감하고 있음을 보여준다. 약 30명 내외의 소규모 인력 구조는 인건비 유연성을 높이며, 향후 매출이 회복될 경우 영업 레버리지 효과가 크게 나타날 수 있다.</p><p>코넥스 소형주 특성상 구조적 비용 통제가 재무 생존력의 핵심이며, 현재 비용 개선 트렌드는 지속 가능성 측면에서 긍정적 신호다. 적자 위험 없이 수익을 유지할 수 있는 비즈니스 구조를 갖추고 있다는 점은 장기 존속 가능성을 지지한다.</p></article><article class="fc bull"><h4><i class="dot"></i>Web3 사업의 성장 옵션 가치</h4><p>무비블록은 2024년 로드맵을 100% 달성했다고 공개했으며, 2025년 RWA 모델 도입과 2026년 대학·교육기관과의 협업 확대 등 구체적인 성장 로드맵을 보유하고 있다.</p><p>코박 역시 Write to Earn 모델을 통해 참여형 Web3 커뮤니티를 구축하며, 글로벌 암호화폐 커뮤니티 중심 플랫폼으로의 도약을 목표로 한다. 가상자산 시장 사이클이 회복될 경우, 이들 블록체인 사업부문의 토큰 생태계 가치 재평가와 사용자 유입 확대가 기대된다.</p><p>현재 시가총액이 지극히 낮은 수준인 만큼, Web3 사업 모멘텀이 가시화될 경우 밸류에이션 재평가 여지가 존재한다.</p></article></div></section><section class="sec" id="s06"><div class="sec-h"><span class="num">06</span><h2>약세 요인</h2></div><div class="fcs"><article class="fc bear"><h4><i class="dot"></i>구조적 매출 감소와 수익원 다변화 미완</h4><p>FY2025 매출이 전년 대비 15.5% 감소했으며, 검색광고 매출 감소가 주요 원인으로 지목됐다. 검색광고 시장은 네이버·구글 등 대형 플랫폼의 점유율 집중으로 구조적 침체가 예상되어, 단기 내 광고 수익 반등을 기대하기 어렵다.</p><p>유튜브의 동영상 광고 독점 심화로 인해 자체 동영상 소셜 플랫폼 진출도 보류된 상태이며, KM플레이어 이외의 대체 수익원이 아직 가시적인 수준으로 성장하지 못했다. 매출 규모가 수십 억 원대의 소형사로서, 경쟁사 대비 규모의 경제 실현이 어렵다.</p></article><article class="fc bear"><h4><i class="dot"></i>당기순이익 급감과 비영업 손익 변동성</h4><p>FY2025 당기순이익은 전년 대비 55.6% 급감했으며, 영업이익 개선폭(+25.6%)을 크게 상회하는 순이익 감소는 비영업 손익—가상자산 평가 손실 가능성 등—에서 기인한 것으로 추정된다.</p><p>무비블록(MBL 토큰)·코박(CBK 토큰) 등 보유 가상자산의 가격 변동이 매 결산기마다 순이익 예측을 어렵게 만든다. 이는 투자자 관점에서 이익 가시성을 낮추는 핵심 리스크 요인이며, 순이익 기반의 밸류에이션 산출을 사실상 어렵게 한다. 가상자산 시장의 규제 불확실성이 잔존하는 환경에서 이 변동성은 지속될 가능성이 높다.</p></article><article class="fc bear"><h4><i class="dot"></i>극저유동성과 코넥스 시장 구조적 한계</h4><p>2026년 6월 7일 기준 일일 거래대금이 약 32,352원에 불과해, 사실상 시장가격 발견이 기능하지 않는 수준이다. 코넥스 시장은 코스닥·코스피 대비 공시 의무와 투자자 풀이 제한되어 있어, 유동성 공급이 구조적으로 어렵다.</p><p>주가는 52주 고점(약 1,400원) 대비 65% 이상 하락한 489원에 위치해 있어 시장 신뢰도 저하가 뚜렷하다. 거래 부재 상황에서 대량 매도 또는 정보 이벤트 발생 시 주가 충격이 극대화될 수 있으며, 이는 리스크 관리의 핵심 제약이다.</p></article></div></section><section class="sec wide" id="s07"><div class="sec-h"><span class="num">07</span><h2>리스크 요인</h2></div><div class="rks"><div class="rk"><div class="rk-c">가상자산 규제 및 시장 리스크</div><div class="rk-b"><p>무비블록(MBL 토큰)과 코박(CBK 토큰)은 국내외 가상자산 규제 변화에 직접적으로 노출돼 있다. 가상자산 시장의 침체 또는 규제 강화는 토큰 생태계 사용자 이탈과 사업 가치 하락으로 이어질 수 있다.</p><p>블록체인 플랫폼은 제도권 편입과 규제 준수 역량이 경쟁력의 핵심으로 부상하고 있어, 관련 법제도 변화에 대한 선제적 대응이 필수적이다. 가상자산 보유 평가 손익은 매 결산기 순이익 변동성의 주요 원천이다.</p></div></div><div class="rk"><div class="rk-c">플랫폼 경쟁 심화 리스크</div><div class="rk-b"><p>KM플레이어는 VLC를 비롯한 글로벌 무료 미디어 플레이어와의 경쟁 속에서 수익화 차별화가 지속적으로 요구된다. 유튜브 등 빅테크의 동영상 광고 독점 심화는 KM플레이어 광고 단가 및 수익성에 구조적 하방 압력을 가한다.</p><p>독립영화 스트리밍 시장에서는 국내외 OTT 플랫폼의 예술영화 콘텐츠 확대가 무비블록의 콘텐츠 경쟁력을 잠식할 수 있다. 경쟁사 대비 마케팅·R&amp;D 투자 여력이 제한적인 소규모 조직 특성이 이러한 경쟁 리스크를 증폭시킨다.</p></div></div><div class="rk"><div class="rk-c">유동성 및 소규모 기업 리스크</div><div class="rk-b"><p>코넥스 시장 특성상 외부 자금 조달 여력이 제한적이며, 사업 확장을 위한 투자 재원 확보가 구조적으로 어렵다. 임직원 약 30명의 소규모 조직은 핵심 인력 이탈 시 사업 연속성에 리스크가 발생할 수 있다.</p><p>일일 거래대금이 수만 원대에 불과한 극저유동성 환경은 주가 발견 기능을 제한하고, 투자자의 포지션 청산 자체가 불가능한 구간이 발생할 수 있다. 매출 규모가 수십 억 원대로 소형인 만큼 매출 구성 변화 또는 주요 파트너 이탈이 재무 건전성에 미치는 충격이 상대적으로 클 수 있다.</p></div></div></div></section><section class="sec" id="s08"><div class="sec-h"><span class="num">08</span><h2>종합 의견</h2></div><div class="prose verdict wrapup"><p>판도라티비는 세계 최초 UCC 동영상 플랫폼에서 Web3 기반 콘텐츠·커뮤니티 기업으로의 전환을 지속 추진하고 있으며, KM플레이어의 3억 명 이상 글로벌 사용자 기반과 비용 효율화에 따른 영업이익 개선은 명확한 강점이다.</p><p>그러나 FY2025 매출 15.5% 역성장과 당기순이익 55.6% 급감은 수익 구조의 취약성을 드러내며, 검색광고 시장의 구조적 침체와 가상자산 시장 변동성이라는 이중 역풍이 가시적 매출 반등을 제약하고 있다.</p><p>Web3 사업(무비블록·코박)은 구체적 로드맵을 보유하고 있으나 수익 기여 규모와 시점이 불투명하며, 이를 재무 성과로 전환하는 데 상당한 시간이 소요될 것으로 판단된다.</p><p>더불어 일일 거래대금 수만 원 수준의 코넥스 극저유동성은 투자자 접근성을 사실상 차단하는 구조적 제약으로, 가격 발견 기능과 포지션 관리가 모두 어려운 상황이다. 따라서 현 시점에서는 Web3 수익화 가시성 확보와 KM플레이어 광고 수익 안정화 여부를 공시·실적을 통해 추가 검증하는 것이 선행 과제이다.</p></div></section><section class="sec" id="s09"><div class="sec-h"><span class="num">09</span><h2>참고 출처</h2></div><ol class="srcs"><li><a href="https://www.krx.co.kr" target="_blank" rel="noopener">한국거래소(KRX) — 시세 · 시가총액 · 거래량</a></li><li><a href="https://dart.fss.or.kr" target="_blank" rel="noopener">금융감독원 전자공시(DART) — 재무제표 · 배당 공시</a></li></ol><details class="srcmore"><summary>기사·자료 4건 더 보기</summary><ol class="srcs"><li><a href="https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?pGB=1&amp;gicode=A202960&amp;MenuYn=Y&amp;ReportGB=D&amp;NewMenuID=Y&amp;stkGb=701" target="_blank" rel="noopener nofollow">comp.fnguide.com</a></li><li><a href="https://insight.wanted.co.kr/company/29b9dbdba1deaa28d5c9390691481441bdb7c075" target="_blank" rel="noopener nofollow">insight.wanted.co.kr</a></li><li><a href="https://www.jobkorea.co.kr/Recruit/GI_Read/44923824" target="_blank" rel="noopener nofollow">jobkorea.co.kr</a></li><li><a href="https://www.ittimes.com/news/articleView.html?idxno=29939" target="_blank" rel="noopener nofollow">ittimes.com</a></li></ol></details></section><p class="rdate">리포트 작성 2026-06-08 · 데이터 기준 2026-06-05</p><p class="disc">본 콘텐츠는 AI가 시장 데이터와 웹 검색 결과를 분석한 정보 제공용이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 책임은 투자자 본인에게 있습니다. 데이터는 지연되거나 오류가 포함될 수 있습니다.</p></div></div></main>
+<footer class="foot"><div class="wrap">
+  <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <div class="fgrid">
+    <div class="fcol"><h4>서비스</h4><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div>
+    <div class="fcol"><h4>회사</h4><a href="/About.html">회사 소개</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a></div>
+    <div class="fcol"><h4>정책</h4><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보 처리방침</a></div>
+  </div>
+  <div class="biz"><span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span><span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span></div>
+  <div class="copy">© 2026 KOSAI</div>
+</div></footer>
+<script src="/data/stocks.js"></script>
+<script src="/data/valuation.js"></script>
+<script src="/stock/assets/stock.js?v=cacc1a5b"></script>
+<script src="/stock/assets/i18n-dict.js?v=0d6a1c32"></script>
+<script type="module" src="/auth-guard.js?v=9abd3186"></script>
+<script type="module" src="/watchlist.js?v=1e5f550a"></script>
+<script type="module" src="/auth-state.js?v=82a9b999"></script>
+<script src="/lenis.js?v=3a0cb7e8"></script>
+<script src="/smooth-scroll.js?v=bd8a60e4"></script>
+</body>
+</html>

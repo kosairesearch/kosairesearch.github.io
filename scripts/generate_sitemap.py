@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-"""sitemap.xml 생성 — 정적 페이지 + 전 종목 상세 페이지 URL.
+"""sitemap.xml 생성 — 정적 페이지 + 업종 상세 + 종목 페이지(stock/{종목코드}.html).
 
-data/stocks.js 를 읽어 종목별 URL을 만들고, 데이터 갱신 워크플로에서
-collect_data 이후에 실행해 sitemap을 항상 최신으로 유지한다.
+데이터 갱신 워크플로에서 종목 페이지를 만든 뒤(build_stock_static.py) 실행해 sitemap을 항상 최신으로 유지한다.
 """
 import json
 import re
@@ -24,8 +23,6 @@ STATIC_PAGES = [
     # noindex 인 주소를 사이트맵에 올리면 "색인하지 마라" 와 "색인해라" 를
     # 동시에 말하는 셈이 된다.
     ("/industry.html", "daily", "0.7"),
-    # 종목 화면 자체는 한 줄만. 티커별 URL 은 넣지 않는다 — 아래 참고.
-    ("/stock.html", "daily", "0.5"),
     ("/About.html", "monthly", "0.5"),
     ("/Contact.html", "monthly", "0.3"),
     ("/Feedback.html", "monthly", "0.3"),
@@ -68,36 +65,19 @@ def main():
             f"<url><loc>{loc}</loc><lastmod>{lastmod}</lastmod>"
             f"<changefreq>weekly</changefreq><priority>0.6</priority></url>"
         )
-    # stock.html?ticker=… 는 사이트맵에 넣지 않는다.
+    # 종목 페이지 — 2026-10-03 부터 종목마다 미리 만든 페이지(stock/{종목코드}.html · scripts/build_stock_static.py)다.
+    # canonical 이 저마다 자기 주소이고, 자바스크립트 없이 리포트 글이 다 들어 있다. 지금 상장된 종목만 올린다 — 상장 폐지로
+    # 리포트만 남은 종목의 페이지는 noindex 라 올리지 않는다("색인하지 마라" 와 "색인해라" 를 같이 말하지 않게).
     #
-    # 넣고 있었다. 종목 수만큼 2,687줄이 들어갔는데, stock.html 의 canonical 이
-    # 티커 없이 "https://kosai.kr/stock.html" 로 고정이라 그 2,687개가 크롤러
-    # 에게 전부 "나는 /stock.html 이다" 라고 답한다.
-    #
-    #   크롤러가 2,687번 방문 → 색인되는 페이지는 1개
-    #   그 1개에 사이트맵 절반의 무게가 실린다
-    #
-    # 그래서 네이버에서 'kosai' 를 찾으면 랜딩페이지가 아니라 종목 상세가
-    # 사이트 대표로 올라왔다. 우리가 그렇게 알려 준 셈이다.
-    #
-    # 종목별 검색은 r/{ticker}.html 이 이미 맡고 있다. 그쪽은 티커마다 제목이
-    # 다르고 canonical 도 자기 자신이며, 무엇보다 JS 없이 본문이 읽힌다.
-    # stock.html 은 그 리포트를 눌러 보는 화면이라 검색으로 들어올 자리가
-    # 아니다. 아래 STATIC_PAGES 에 대표 URL 하나만 남긴다.
-
-
-    # GEO 정적 리포트 페이지(r/*.html) — 크롤러가 JS 없이 전문을 읽는 버전
-    geo = sorted((ROOT / "r").glob("*.html")) if (ROOT / "r").exists() else []
-    if geo:
+    # 옛 주소 둘은 올리지 않는다.
+    #   · stock.html?ticker=…  — 새 주소로 넘기는 껍데기다. 전에 2,687줄을 올렸다가, canonical 이 하나라 크롤러에게 전부
+    #     "나는 /stock.html 이다" 라고 답해 네이버에서 'kosai' 를 찾으면 종목 상세가 사이트 대표로 올라온 일이 있었다.
+    #   · r/{종목코드}.html     — 옛 로봇용 사본. 새 주소로 보내는 껍데기(scripts/retire_r_pages.py)로 바뀌었다.
+    listed = set(tickers)
+    pages = sorted(f for f in (ROOT / "stock").glob("*.html") if f.stem in listed) if (ROOT / "stock").exists() else []
+    for f in pages:
         out.append(
-            f"<url><loc>{SITE}/r/</loc><lastmod>{lastmod}</lastmod>"
-            f"<changefreq>daily</changefreq><priority>0.8</priority></url>"
-        )
-    for f in geo:
-        if f.name == "index.html":
-            continue
-        out.append(
-            f"<url><loc>{SITE}/r/{f.name}</loc><lastmod>{lastmod}</lastmod>"
+            f"<url><loc>{SITE}/stock/{f.name}</loc><lastmod>{lastmod}</lastmod>"
             f"<changefreq>daily</changefreq><priority>0.7</priority></url>"
         )
     out.append("</urlset>\n")
@@ -107,8 +87,7 @@ def main():
     # 이제 사이트맵에 들어가지 않는다 — 실제로 적힌 줄만 센다.
     print(
         f"sitemap.xml: 정적 {len(STATIC_PAGES)} + 업종 {len(sectors)} "
-        f"+ 종목 리포트 {len([f for f in geo if f.name != 'index.html'])} URL "
-        f"(종목 {len(tickers)}개 중)"
+        f"+ 종목 페이지 {len(pages)} URL (종목 {len(tickers)}개 중)"
     )
 
 

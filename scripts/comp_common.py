@@ -429,6 +429,19 @@ def i18n_block(html, page):
 PREVIEW2LIVE = {v: k for k, v in LIVE2PREVIEW.items()}
 
 
+# 실사이트 종목 링크 — 종목마다 미리 만든 페이지(/stock/005930.html · scripts/build_stock_static.py · 2026-10-03).
+# 생성기들은 시안 · 스테이징과 같은 글(/stock.html?ticker=…)을 쓰고 실사이트만 여기서 바꾼다 — 스테이징은 유료 구간 잠금 때문에
+# 종목 화면이 껍데기 한 장(stock.html?ticker=)이다. 자바스크립트 식('/stock.html?ticker='+d.ticker+'"…)과 정적 링크(href="/stock.html?ticker=005930")
+# 두 모양을 본다. 옛 주소로 가도 껍데기가 새 주소로 넘기지만, 한 번 더 거치지 않게 처음부터 새 주소로 둔다.
+_STOCK_JS = re.compile(r"""/stock\.html\?ticker='\+(encodeURIComponent\([A-Za-z_$][\w$.]*\)|[A-Za-z_$][\w$.]*)(\+')?""")
+_STOCK_HTML = re.compile(r'(href=")/stock\.html\?ticker=([0-9A-Za-z]{6})(")')
+
+
+def live_stock_links(html):
+    html = _STOCK_JS.sub(lambda m: f"/stock/'+{m.group(1)}+'.html" + ('' if m.group(2) else "'"), html)
+    return _STOCK_HTML.sub(r'\1/stock/\2.html\3', html)
+
+
 def finish(html, page):
     """페이지 하나를 내기 직전에. staging: 절대 경로를 상대로, 시안 주소를 스테이징 이름으로, 꼬리 모듈을 붙인다.
     live: 시안 주소를 실사이트 주소로, 검색 노출 머리(LIVE_SEO)와 꼬리(번역 사전 · 루트 모듈 · 휠 스크롤)를 붙인다.
@@ -438,6 +451,8 @@ def finish(html, page):
             return html
         for pv, lv in sorted(PREVIEW2LIVE.items(), key=lambda x: -len(x[0])):
             html = html.replace(pv, lv)
+        if page != 'stock.html':   # 옛 주소 껍데기 자신은 그대로(없는 종목 안내만 그린다)
+            html = live_stock_links(html)
         if '<link rel="canonical"' not in html:   # 머리를 생성기가 직접 쓴 페이지(종목 · 첫 화면)는 그대로
             import html as _h
             desc, robots = LIVE_SEO[page]
@@ -445,6 +460,8 @@ def finish(html, page):
             assert m, page
             html = html.replace(m.group(0), m.group(0) + seo_tags(f'{SITE}/{page}', _h.unescape(m.group(1)), desc, robots), 1)
         tail = i18n_block(html, page)
+        if page != 'stock.html':   # 사전 값(영어 문단)의 종목 링크도 — JSON 안이라 따옴표가 \" 로 적혀 있다
+            tail = re.sub(r'href=\\"/?stock\.html\?ticker=([0-9A-Za-z]{6})\\"', r'href=\\"/stock/\1.html\\"', tail)
         tail += ''.join(f'<script type="module" src="{m}"></script>\n' for m in LIVE_PAGE_SCRIPTS.get(page, ['auth-state.js']))
         tail += '<script src="lenis.js"></script>\n<script src="smooth-scroll.js"></script>\n'
         assert html.count('</body>') == 1, page

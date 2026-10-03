@@ -77,6 +77,9 @@ def page_html(doc, at):
         title_en = re.sub(r'<[^>]+>', '', (doc['title'].get('en') or '')).strip()
         if title_en:
             dic[C._i18n_norm(head_title)] = f'{title_en} — Morning Brief | KOSAI'
+        if C.MODE == 'live':   # 영어 문단의 종목 링크도 종목마다 만든 페이지로(본문 쪽은 comp_common.finish 가 바꾼다)
+            dic = {k: re.sub(r'href="stock\.html\?ticker=([0-9A-Za-z]{6})"', r'href="/stock/\1.html"', v) if isinstance(v, str) else v
+                   for k, v in dic.items()}
         i18n = ('<script type="application/json" data-kos-i18n>'
                 + json.dumps(dic, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + '</script>\n')
     return (C.head(head_title) + '\n<style>\n' + C.CSS + '\n' + CSS + '\n' + C.MOBILE_CSS + '\n' + MOBILE_CSS + '\n</style>\n</head>\n<body>\n'

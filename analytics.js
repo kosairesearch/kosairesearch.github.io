@@ -34,6 +34,10 @@
   var OPTOUT_KEY = "kosai_no_analytics";
 
   var path = (location.pathname || "");
+  /* 종목 리포트는 2026-10-03 부터 종목마다 미리 만든 페이지(/stock/005930.html)다. 통계에는 옛 주소 모양
+     (/stock.html?ticker=005930)으로 싣는다 — 주간 보고서와 마케팅 도구가 '/stock.html' 한 덩어리로 리포트를 연 사람을
+     센다(사람 수는 페이지마다 더할 수 없어 2,700개 주소로 흩어지면 셀 수 없다). 종목은 ticker 로 따로 남는다. */
+  var stockPage = /^\/stock\/([0-9A-Z]{6})\.html$/.exec(path);
 
   /* 스테이징은 '파일'이 아니라 '주소'로 판단합니다.
      staging/analytics.js 안에 꺼 두면, 나중에 이 폴더를 실사이트로 올릴 때
@@ -80,7 +84,8 @@
   var optedOut = false;
   try { optedOut = localStorage.getItem(OPTOUT_KEY) === "1"; } catch (e) {}
 
-  var skip = isStaging || isAdmin || optedOut;
+  /* 옛 주소 껍데기(stock.html?ticker=)가 새 주소로 넘기는 중이면 세지 않는다 — 넘어간 페이지가 센다(한 번만). */
+  var skip = isStaging || isAdmin || optedOut || !!window.KOS_LEAVING;
   if (skip) {
     /* 아무것도 싣지 않습니다. 다만 KOSA.track 은 있어야 합니다 —
        부르는 쪽이 없는 함수를 부르면 그 자리에서 화면이 멈춥니다. */
@@ -104,10 +109,15 @@
        않으면 켜진 채로 돈다. 개인정보처리방침 9번이 '광고를 목적으로 한 행태정보를
        수집하지 않는다' 고 적고 있으므로, 관리자 콘솔 설정과 무관하게 코드에서
        보장해야 그 문장이 참이 된다. */
-    gtag("config", GA4_ID, {
+    var cfg = {
       allow_google_signals: false,
       allow_ad_personalization_signals: false
-    });
+    };
+    if (stockPage) {
+      var qs = (location.search || "").replace(/^\?/, "");
+      cfg.page_location = location.origin + "/stock.html?ticker=" + stockPage[1] + (qs ? "&" + qs : "");
+    }
+    gtag("config", GA4_ID, cfg);
   }
 
   // ── Naver Analytics (한국 검색 유입 분석) ──
@@ -146,6 +156,7 @@
   function pageKey() {
     /* 종목 리포트는 주소가 stock.html?ticker=005930 인데, 페이지 이름으로는
        전부 /stock.html 한 덩어리다. 그래서 종목은 ticker 로 따로 싣는다. */
+    if (stockPage) return "/stock.html";
     return (location.pathname || "/").replace(/\/index\.html$/i, "/");
   }
 
@@ -239,7 +250,8 @@
       try {
         var a = ev.target && ev.target.closest && ev.target.closest("a[href]");
         if (!a) return;
-        var m = /stock\.html\?(?:[^#]*&)?ticker=(\d{6})/.exec(a.getAttribute("href") || "");
+        var href = a.getAttribute("href") || "";
+        var m = /stock\.html\?(?:[^#]*&)?ticker=([0-9A-Z]{6})/.exec(href) || /\/stock\/([0-9A-Z]{6})\.html/.exec(href);
         if (m) KOSA.track("stock_click", { ticker: m[1] });
       } catch (e) {}
     }, true);
@@ -250,8 +262,8 @@
        ①(누름)과 다르다 — 눌러 놓고 안 읽고 닫는 사람이 있고, 즐겨찾기나
        검색으로 링크를 안 거치고 바로 들어오는 사람도 있다. */
     try {
-      var seenTicker = /[?&]ticker=(\d{6})\b/.exec(location.search || "");
-      if (seenTicker && /\/stock\.html$/i.test(path)) {
+      var seenTicker = stockPage || /[?&]ticker=([0-9A-Z]{6})\b/.exec(location.search || "");
+      if (seenTicker && (stockPage || /\/stock\.html$/i.test(path))) {
         KOSA.track("report_view", { ticker: seenTicker[1] });
         bumpSeen();
       }
