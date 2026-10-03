@@ -18,7 +18,10 @@
      ⑥ 검색 노출 — 스테이징은 모두 noindex. 실사이트는 색인 대상이고, 대표 주소(canonical)는 brief.html · 목록 · 지난 호가 자기 주소,
         가장 최근 호의 고정 페이지만 brief.html(같은 글). 호마다 '날짜 모닝브리핑 제N호.' 로 시작하는 검색 설명
      ⑦ 화면 — 목록 · 최신 호 · 가운데 호 · 첫 호(실사이트는 목록 · 가운데 호)를 컴퓨터 1280 · 휴대폰 390 에서 열어 가로 넘침이 없고,
-        영어로 열면 한글이 남지 않는다(글 · 속성 · 문서 제목 · 날짜 줄 앞의 호수 'Morning Brief No. N')
+        영어로 열면 한글이 남지 않는다(글 · 속성 · 문서 제목 · 날짜 줄 앞의 호수 'Morning Brief No. N').
+        이전 호 · 다음 호는 위아래로 쌓여 모두 왼쪽 정렬이고, 첫 칸 위에 선이 겹치지 않는다(2026-10-04 사장 "정렬이 어색한데" —
+        두 칸으로 나눠 다음 호를 오른쪽 정렬했을 때 두 줄 제목의 왼쪽 끝이 들쭉날쭉했고, 다음 호만 있는 첫 호는 휴대폰에서 선이 두 줄이었다).
+        그 옛 배치를 덧씌우면 이 확인이 걸리는 것도 본다
      ⑧ 눌러서 옮겨 가기 — 목록에서 호를 누르면 그 호로, '다음 호' · '지난 호 전체 보기' · '최신 호 보기' 를 누르면 그곳으로 간다
      ⑨ 이 검사가 실제로 잡는지 — 목록에서 한 호를 빼거나, 호수를 하나 밀거나, 시험 원고의 페이지를 두거나, 다음 호 주소를
         엉뚱한 호로 바꾸거나, 지난 호의 대표 주소를 brief.html 로 바꾸면 ①~⑥ 이 걸린다
@@ -213,8 +216,24 @@ function look() {
   const md = document.querySelector(".mb-date");
   const before = md ? getComputedStyle(md, "::before").content : "";
   note(before, ".mb-date::before");
-  return { left, before, wide: document.documentElement.scrollWidth - document.documentElement.clientWidth, lang: document.documentElement.lang };
+  // 이전 호 · 다음 호 — 칸마다 왼쪽 끝이 칸 묶음의 왼쪽 끝과 같고(왼쪽 정렬), 위아래로 쌓이고, 첫 칸 위에 선이 없다(묶음의 위 선과 겹치지 않게)
+  const nav = document.querySelector(".mb-nav");
+  let navOk = null, navNote = "";
+  if (nav) {
+    const L = nav.getBoundingClientRect().left, cards = [...nav.querySelectorAll(".mb-nv")];
+    const flush = cards.every((c) => Math.abs(c.getBoundingClientRect().left - L) < 1
+      && [c, c.querySelector(".mb-nv-t")].every((e) => e && /^(start|left)$/.test(getComputedStyle(e).textAlign)));
+    const stacked = cards.every((c, i) => !i || c.getBoundingClientRect().top >= cards[i - 1].getBoundingClientRect().bottom - 0.5);
+    const firstRule = cards.length ? parseFloat(getComputedStyle(cards[0]).borderTopWidth) : 0;
+    navOk = cards.length > 0 && flush && stacked && !firstRule;
+    navNote = `칸 ${cards.length} · ${flush ? "왼쪽 정렬" : "정렬 어긋남"} · ${stacked ? "위아래" : "나란히"}${firstRule ? " · 첫 칸 위 선 겹침" : ""}`;
+  }
+  return { left, before, navOk, navNote, wide: document.documentElement.scrollWidth - document.documentElement.clientWidth, lang: document.documentElement.lang };
 }
+// 고치기 전 배치(2026-10-04 까지) — 두 칸으로 나눠 다음 호를 오른쪽 정렬, 휴대폰에서는 다음 호 위에 늘 선
+const OLD_NAV_CSS = `.mb-nav{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 40px}
+.mb-nv+.mb-nv{margin-top:0;border-top:0} .mb-nv--next{grid-column:2;text-align:right}
+@media (max-width:820px){.mb-nav{grid-template-columns:minmax(0,1fr)} .mb-nv--next{grid-column:1;text-align:left;margin-top:20px;border-top:1px solid var(--hair)}}`;
 
 if (N) {
   const mid = Math.floor(N / 2);
@@ -228,11 +247,23 @@ if (N) {
         const { ctx, page } = await open(lang, w, HOST + s.base + path);
         const r = await page.evaluate(look);
         await ctx.close();
-        const fine = r.wide <= 1 && (lang === "ko" ? (path === "brief-archive.html" || /모닝브리핑/.test(r.before)) : (r.lang === "en" && !r.left.length && (path === "brief-archive.html" || /Morning Brief No\. \d+/.test(r.before))));
+        const fine = r.wide <= 1 && (path === "brief-archive.html" || r.navOk)
+          && (lang === "ko" ? (path === "brief-archive.html" || /모닝브리핑/.test(r.before)) : (r.lang === "en" && !r.left.length && (path === "brief-archive.html" || /Morning Brief No\. \d+/.test(r.before))));
         if (!fine) ok = false;
-        rows.push(`${name} 넘침 ${r.wide}${lang === "en" ? ` · 한글 ${r.left.length}${r.left.length ? " (" + r.left.join(" / ") + ")" : ""}` : ""}${path === "brief-archive.html" ? "" : ` · 호수 ${r.before}`}`);
+        rows.push(`${name} 넘침 ${r.wide}${lang === "en" ? ` · 한글 ${r.left.length}${r.left.length ? " (" + r.left.join(" / ") + ")" : ""}` : ""}${path === "brief-archive.html" ? "" : ` · 호수 ${r.before} · ${r.navNote}`}`);
       }
       t(ok, `${s.name} ⑦ ${lang === "ko" ? "한국어" : "영어"} · ${w}px — ${rows.join(" | ")}`);
+    }
+    if (s === SITES[0]) {   // 옛 배치를 덧씌우면 걸리는지 — 컴퓨터는 가운데 호(두 칸 · 오른쪽 정렬), 휴대폰은 첫 호(다음 호 위 선 겹침)
+      const caught = [];
+      for (const [w, path] of [[1280, `brief-${items[mid]}.html`], [390, `brief-${items[0]}.html`]]) {
+        const { ctx, page } = await open("ko", w, HOST + s.base + path);
+        await page.addStyleTag({ content: OLD_NAV_CSS });
+        const r = await page.evaluate(look);
+        await ctx.close();
+        caught.push([r.navOk === false, `${w}px ${path} ${r.navNote}`]);
+      }
+      t(caught.every(([c]) => c), `${s.name} ⑦ 옛 배치를 덧씌우면 걸린다 — ${caught.map(([c, m]) => `${c ? "걸림" : "못 잡음"} ${m}`).join(" | ")}`);
     }
 
     /* ⑧ 눌러서 옮겨 가기 — 목록 → 가운데 호 → 다음 호 → 지난 호 전체 보기 → 첫 호 → (지난 호의) 최신 호 보기 */

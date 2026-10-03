@@ -62,14 +62,17 @@ ISSUE_EN = {'지난 호': 'Past issues', '이전 호': 'Previous issue', '다음
             '지난 호입니다.': 'This is a past issue.', '최신 호 보기': 'Read the latest issue', '이전 호와 다음 호': 'Previous and next issues',
             '모닝브리핑 지난 호': 'Morning Brief archive'}
 
+# 이전 호 · 다음 호는 화면 폭과 관계없이 위아래로 쌓고 모두 왼쪽 정렬한다(2026-10-04 사장 "정렬이 어색한데"). 두 칸으로 나눠
+# 다음 호를 오른쪽 정렬했을 때 두 줄 제목의 왼쪽 끝이 들쭉날쭉했고, 첫 호 · 최신 호처럼 한쪽만 있으면 반쪽이 비었다.
+# 구분선은 두 칸 사이에만 둔다(.mb-nv+.mb-nv) — 다음 호만 있는 첫 호에서 위 선과 겹쳐 두 줄로 보이지 않게.
 ISSUE_CSS = '''
 /* 지난 호 — 날짜 줄의 호수 · 지난 호 알림 · 이전 호와 다음 호 */
 .mb-date[data-no]::before{content:"모닝브리핑 " attr(data-no) " · "} html[lang="en"] .mb-date[data-no]::before{content:"Morning Brief No. " attr(data-n) " · "}
 .mb-old{margin:0 0 22px;padding:0 0 12px;border-bottom:1px solid var(--hair);font:500 13px/20px var(--font);color:var(--ink-62)}
 .mb-old a{margin-left:6px;color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .mb-old a:hover{text-decoration-color:var(--ink)}
-.mb-nav{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 40px;margin:56px 0 0;border-top:1px solid var(--line)}
+.mb-nav{margin:56px 0 0;border-top:1px solid var(--line)}
 .mb-nv{display:block;padding:20px 0 0}
-.mb-nv--next{grid-column:2;text-align:right}
+.mb-nv+.mb-nv{margin-top:20px;border-top:1px solid var(--hair)}
 .mb-nv-k{display:block;font:600 12px/16px var(--font);color:var(--ink-62)}
 .mb-nv-t{display:block;margin-top:8px;font:600 16px/24px var(--font);letter-spacing:-.01em;color:var(--ink);text-wrap:pretty}
 .mb-nv:hover .mb-nv-t{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
@@ -79,8 +82,7 @@ ISSUE_CSS = '''
 .mb-all svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 '''
 ISSUE_MOBILE_CSS = '''@media (max-width:820px){
-  .mb-nav{grid-template-columns:minmax(0,1fr);margin-top:44px}
-  .mb-nv--next{grid-column:1;text-align:left;margin-top:20px;border-top:1px solid var(--hair)}
+  .mb-nav{margin-top:44px}
   .mb-nv-t{font-size:15px;line-height:23px}
 }'''
 
