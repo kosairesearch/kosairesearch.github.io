@@ -1,227 +1,217 @@
 {
  "title": {
-  "ko": "첫 기술이전 vs 반복된 임상 철회",
-  "en": "First Licensing Deal vs. Repeated Trial Withdrawals"
+  "ko": "엔다리 매출 개시, NT-I7 이중전략 점검",
+  "en": "Endari Sales Begin, NT-I7's Dual-Track Strategy in Focus"
  },
  "lead": {
-  "ko": "네오이뮨텍은 2026년 8월 코스닥 상장 후 첫 기술이전 계약을 체결했지만, 핵심물질 NT-I7은 과거 네 차례 임상 자진 철회를 거치며 적응증을 좁혀온 이력이 공존한다.",
-  "en": "NeoImmuneTech signed its first licensing deal since its KOSDAQ listing in August 2026, but its core asset NT-I7 also carries a history of four voluntary trial withdrawals that narrowed its indication scope."
+  "ko": "네오이뮨텍은 엔다리(Endari) 북미 판매 개시로 첫 상업 매출을 확보했고 NT-I7은 급성방사선증후군(ARS)과 CAR-T 병용이라는 두 갈래로 상업화를 추진하고 있다.",
+  "en": "NeoImmuneTech has secured its first commercial revenue through the North American launch of Endari, while advancing NT-I7 commercialization along two tracks: acute radiation syndrome (ARS) and CAR-T combination therapy."
  },
  "keypoints": [
   {
-   "ko": "2026년 8월 미국 Tolerance Bio에 NT-I7의 흉선 기능부전 적응증(미주·유럽)을 최대 2억 6,000만달러(약 3,669억원) 마일스톤 규모로 기술이전, 계약금은 현금 대신 Tolerance Bio 지분 4%로 수취",
-   "en": "In August 2026, licensed NT-I7's thymic dysfunction indication (Americas/Europe) to US-based Tolerance Bio for up to $260 million (about KRW 366.9 billion) in milestones, with the upfront paid as a 4% equity stake instead of cash"
+   "ko": "2026년 상반기부터 희귀질환 치료제 엔다리(Endari) 미국 판매가 시작되며 분기 매출이 2025년 평균 대비 뚜렷하게 늘었다.",
+   "en": "US sales of the rare-disease drug Endari began in the first half of 2026, lifting quarterly revenue well above the 2025 average."
   },
   {
-   "ko": "연간 영업손실이 2022년 623.5억원에서 2025년 245.5억원으로, 순손실도 647.3억원에서 309.5억원으로 4년 연속 축소",
-   "en": "Annual operating loss narrowed from KRW 62.35 billion in 2022 to KRW 24.55 billion in 2025, with net loss also shrinking from KRW 64.73 billion to KRW 30.95 billion over the same four years"
+   "ko": "2026년 8월 미국 톨러런스바이오와 NT-I7 흉선 기능부전 적응증에 대해 최대 2억 6,000만달러 규모의 기술이전 계약을 체결했다.",
+   "en": "In August 2026, the company signed a licensing deal worth up to $260 million with US-based Tolerance Bio for NT-I7's thymic dysfunction indication."
   },
   {
-   "ko": "2026년 2분기 지배주주 순손실이 4.16억원으로 직전 분기(71.3억원) 대비 크게 줄며 분기별 변동성이 확인됨",
-   "en": "Second-quarter 2026 net loss attributable to owners narrowed sharply to KRW 416 million from KRW 7.13 billion in the prior quarter, highlighting quarterly volatility"
+   "ko": "NT-I7은 ARS 치료제로 FDA Animal Rule 경로를 밟고 있으며 BARDA BAA 프로그램 참여를 통해 미국 정부 조달 연계를 모색하고 있다.",
+   "en": "NT-I7 is pursuing the FDA's Animal Rule pathway as an ARS treatment, with engagement in the BARDA BAA program aimed at linking to US government procurement."
   },
   {
-   "ko": "면역항암 영역(CAR-T 병용 등)은 기술이전 대상에서 제외돼 회사가 권리를 직접 보유, 예스카타·브레얀지·카빅티 등 복수 CAR-T 제품과 병용 임상 진행 중",
-   "en": "Immuno-oncology programs including CAR-T combinations were excluded from the licensing deal and remain company-held, with combination trials ongoing across multiple CAR-T products including Yescarta, Breyanzi, and Carvykti"
+   "ko": "CAR-T 병용 임상(NIT-126)은 600µg/kg 코호트에서 용량제한독성 없이 720µg/kg 증량 단계로 진입했다.",
+   "en": "The CAR-T combination trial (NIT-126) advanced to a 720µg/kg dose-escalation cohort after no dose-limiting toxicity was observed at 600µg/kg."
   },
   {
-   "ko": "2020년 IND 승인 후 5년 6개월 만에 비소세포폐암 2상을 자진 철회하는 등 2023~2026년 사이 네 차례 임상이 중단된 이력",
-   "en": "The company voluntarily withdrew its non-small cell lung cancer Phase 2 trial 5.5 years after IND approval, one of four trial discontinuations recorded between 2023 and 2026"
+   "ko": "연간 영업손실과 순손실은 2022년 이후 매년 축소되는 흐름을 보였고, 2025년 자본총계는 유상증자 효과로 전년보다 늘었다.",
+   "en": "Both annual operating and net losses have narrowed each year since 2022, and 2025 total equity rose from the prior year on the back of a capital raise."
   }
  ],
  "business": {
-  "ko": "네오이뮨텍은 2014년 설립돼 국내 제넥신의 기술을 기반으로 미국에서 출발한 T세포 기반 면역치료제 개발기업으로, 2021년 3월 코스닥에 상장했다. 핵심 파이프라인은 장기지속형 인터루킨-7(IL-7) 후보물질 'NT-I7(에피넵타킨 알파)'로, T세포의 생존과 증식을 촉진해 면역 기능이 저하된 환자의 면역 회복을 돕는 기전을 갖고 있다. 회사는 NT-I7을 면역항암제 병용, 급성방사선증후군(ARS) 치료, 특발성 CD4 림프구 감소증(ICL) 등 여러 영역에서 개발해왔으며, 최근에는 CD19 CAR-T 치료제(예스카타·브레얀지) 및 카빅티와의 병용 임상에 역량을 집중하고 있다. 2026년 8월에는 미국 바이오기업 Tolerance Bio와 흉선 기능부전(HIV 감염인의 면역 재구성 등) 적응증에 대해 미주·유럽 독점 개발·상업화 권리를 이전하는 계약을 체결했는데, 이는 상장 후 첫 기술이전 성과다. 이 계약에서 면역항암 등 회사가 직접 개발하는 핵심 영역은 라이선스 범위에서 제외돼 권리를 그대로 보유한다. 최대주주는 제넥신으로 2025년 3월 말 기준 21.18%의 지분을 보유하고 있다. 매출은 아직 연구용역이나 기술료 등 제한적인 수준에 머물러 있으며, 상업화된 제품은 없는 임상단계 바이오텍이다. 자금 조달은 상장 공모, 전환사채, 수차례의 유상증자를 통해 이뤄져 왔으며 2025년 9월에는 472억원 규모의 주주배정 유상증자를 완료했다. 경쟁구도는 직접적인 동일 기전 경쟁사가 뚜렷하지 않은 가운데, CAR-T 병용이라는 틈새 영역에서 플랫폼 기술력을 입증하는 전략을 취하고 있다.",
-  "en": "Founded in 2014 based on licensed technology from Korea's Genexine, NeoImmuneTech is a US-based T cell-focused immunotherapy developer that listed on KOSDAQ in March 2021. Its core pipeline asset is the long-acting interleukin-7 (IL-7) candidate NT-I7 (efineptakin alfa), which works by promoting T cell survival and proliferation to help restore immune function in immunocompromised patients. The company has developed NT-I7 across multiple areas including immuno-oncology combinations, acute radiation syndrome (ARS) treatment, and idiopathic CD4 lymphocytopenia (ICL), and has recently concentrated resources on combination trials with CD19 CAR-T therapies (Yescarta, Breyanzi) and Carvykti. In August 2026, the company signed its first licensing deal since listing, transferring exclusive development and commercialization rights for NT-I7 in thymic dysfunction indications (including HIV-related immune reconstitution) in the Americas and Europe to US biotech Tolerance Bio. The immuno-oncology programs the company develops directly were excluded from that license scope and remain company-held. The largest shareholder is Genexine, which held a 21.18% stake as of end-March 2025. Revenue remains minimal, limited to research services and license-related income, as the company has no commercialized products and operates as a clinical-stage biotech. Financing has come through the IPO, convertible bonds, and multiple rights offerings, including a KRW 47.2 billion rights offering completed in September 2025. The competitive landscape lacks a clearly identical-mechanism rival, with the company pursuing a niche strategy of demonstrating platform value through CAR-T combination approaches."
+  "ko": "네오이뮨텍은 2014년 미국 메릴랜드주에서 설립돼 2021년 코스닥에 기술성장기업 특례로 상장한 T세포 기반 면역치료 바이오텍이다. 핵심 파이프라인은 장기지속형 인터루킨-7 융합단백질 'NT-I7(에피넵타킨 알파)'로, 체내 T세포를 증폭시키는 기전을 활용해 여러 적응증에 적용하는 플랫폼 전략을 취하고 있다. 회사는 NT-I7의 개발 영역을 면역항암(CAR-T 병용), 급성방사선증후군(ARS) 치료제, 흉선 기능부전 등으로 나누고, 직접 개발이 어려운 영역은 파트너링을 통해 가치를 확장하는 '선택과 집중' 전략을 공식화했다. 2026년 8월에는 미국 바이오기업 톨러런스바이오에 HIV 감염인 면역 재구성 등 흉선 기능부전 관련 적응증의 미주·유럽 독점 개발·상업화 권리를 이전했으며, 면역항암 영역은 계약 대상에서 제외해 자체 보유했다. 또한 2025년 12월 미국 엠마우스라이프사이언스로부터 겸상적혈구질환 치료제 '엔다리(Endari)'의 북미 판권을 도입해 2026년 상반기부터 미국 내 판매를 개시, 연구개발 중심에서 상업화 매출을 겸한 구조로 전환 중이다. CAR-T 병용 분야에서는 예스카타·브레얀지 등 승인된 CAR-T 치료제 투여 후 NT-I7을 병용하는 연구자 주도 임상이 미국 워싱턴대 의료진 주도로 진행되고 있으며, 이뮤노코어의 ImmTAC 플랫폼과의 병용 가능성도 공동연구 형태로 검토되고 있다. 최대주주는 제넥신으로 2025년 9월 말 기준 지분 16.63%를 보유하고 있다. 매출 기반이 아직 초기 단계인 임상개발 바이오텍인 만큼 경쟁구도는 글로벌 IL-7 계열 개발사, CAR-T 지속성 개선 기술을 보유한 빅파마·바이오텍과의 파트너십 경쟁 구도로 형성돼 있다.",
+  "en": "Founded in Maryland in 2014, NeoImmuneTech listed on KOSDAQ in 2021 under the technology growth company special listing track, operating as a T cell-based immunotherapy biotech. Its core pipeline asset is the long-acting interleukin-7 fusion protein NT-I7 (efineptakin alfa), built on a T cell expansion mechanism applied across multiple indications as a platform strategy. The company has formalized a 'focus and selectivity' approach, splitting NT-I7 development into immuno-oncology (CAR-T combination), acute radiation syndrome (ARS) treatment, and thymic dysfunction, outsourcing areas it cannot develop directly to partners. In August 2026, it licensed exclusive development and commercialization rights for thymic dysfunction indications, including HIV-related immune reconstitution, in the Americas and Europe to US biotech Tolerance Bio, while retaining its immuno-oncology rights in-house. In December 2025, the company also acquired North American marketing rights for the sickle cell disease drug Endari from Emmaus Life Sciences, beginning US sales in the first half of 2026 and shifting toward a structure that combines R&D with commercial revenue. In the CAR-T combination field, an investigator-initiated trial led by physicians at Washington University administers NT-I7 following approved CAR-T therapies such as Yescarta or Breyanzi, while a joint research collaboration with Immunocore's ImmTAC platform is also being explored for combination potential. The largest shareholder is Genexine, holding a 16.63% stake as of the end of September 2025. As a clinical-stage biotech with still nascent revenue, the company's competitive landscape is shaped by rivalry among global IL-7 class developers and big pharma or biotech players with CAR-T persistence-enhancing technologies for partnership opportunities."
  },
  "earnings": {
-  "ko": "연간 실적을 보면 영업손실이 2022년 623.5억원, 2023년 589.9억원, 2024년 406.4억원, 2025년 245.5억원으로 4년 연속 축소됐고, 지배주주 순손실도 647.3억원→566.4억원→415.0억원→309.5억원 순으로 꾸준히 줄었다. 이는 2023년 교모세포종·피부암·위암 임상 중단, 2026년 4월 비소세포폐암 2상 자진 철회 등으로 자체 임상 파이프라인을 줄이며 연구개발비 부담이 경감된 영향으로 해석할 수 있다. 매출은 2022~2023년 0원에서 2024년 1.7억원, 2025년 0.9억원 수준으로 여전히 미미하다. 분기별로는 2025년 2분기 지배주주 순손실 70.5억원, 3분기 56.9억원, 4분기 102.9억원, 2026년 1분기 71.3억원을 기록한 뒤 2분기에는 4.16억원으로 크게 줄며 최근 다섯 개 분기 중 가장 작은 손실을 기록했다. 매출 역시 2026년 1분기 4.98억원, 2분기 10.91억원으로 직전 분기들(0.2억~0.4억원대)보다 뚜렷하게 늘어난 점이 눈에 띈다. 자본총계는 2022년 1,307.6억원에서 2024년 392.4억원까지 줄었다가 2025년 571.3억원으로 반등했는데, 이는 2025년 9월 완료된 472억원 규모 유상증자 효과로 보인다. 부채비율은 2022년 16.9%에서 2024년 57.0%까지 높아진 뒤 2025년 38.6%로 낮아졌다. 영업활동현금흐름은 매년 큰 폭의 마이너스를 이어가고 있어(2025년 -243.9억원) 외부 자금조달에 대한 의존이 지속되는 구조다.",
-  "en": "Annual operating losses narrowed for four consecutive years, from KRW 62.35 billion in 2022 to KRW 58.99 billion in 2023, KRW 40.64 billion in 2024, and KRW 24.55 billion in 2025, with net loss attributable to owners also steadily declining from KRW 64.73 billion to KRW 56.64 billion, KRW 41.50 billion, and KRW 30.95 billion over the same period. This likely reflects reduced R&D burden as the company trimmed its proprietary trial pipeline, discontinuing glioblastoma, skin cancer, and gastric cancer trials in 2023 and voluntarily withdrawing a lung cancer Phase 2 trial in April 2026. Revenue remained minimal, moving from zero in 2022-2023 to KRW 173 million in 2024 and KRW 92 million in 2025. On a quarterly basis, net loss attributable to owners was KRW 7.05 billion in Q2 2025, KRW 5.69 billion in Q3 2025, KRW 10.29 billion in Q4 2025, and KRW 7.13 billion in Q1 2026, before narrowing sharply to KRW 416 million in Q2 2026, the smallest loss of the recent five quarters. Revenue also rose notably in 2026, reaching KRW 498 million in Q1 and KRW 1.09 billion in Q2, up from the KRW 20-40 million range in preceding quarters. Total equity fell from KRW 130.76 billion in 2022 to KRW 39.24 billion in 2024 before rebounding to KRW 57.13 billion in 2025, likely reflecting the KRW 47.2 billion rights offering completed in September 2025. The debt ratio rose from 16.9% in 2022 to 57.0% in 2024 before easing to 38.6% in 2025. Operating cash flow has remained deeply negative every year (KRW -24.39 billion in 2025), underscoring the company's continued reliance on external financing."
+  "ko": "2025년 연결 매출은 약 0.9억원으로 2024년 약 1.7억원보다 줄었으나, 영업손실은 2024년 약 406억원에서 2025년 약 246억원으로, 순손실(지배주주)은 같은 기간 약 415억원에서 약 310억원으로 각각 축소됐다. 2022년부터 이어진 연간 흐름을 보면 영업손실이 2022년 약 624억원, 2023년 약 590억원, 2024년 약 406억원, 2025년 약 246억원으로 4년 연속 줄어드는 추세가 뚜렷하다. 분기 기준으로는 2025년 3분기 매출 약 0.18억원, 4분기 약 0.37억원 수준에 머물렀다가 2026년 1분기 약 4.98억원, 2분기 약 10.91억원으로 뛰어올랐는데, 이는 엔다리 미국 판매 개시 효과가 반영된 결과로 해석된다. 영업손실도 2025년 2분기 약 66억원에서 2026년 2분기 약 39억원으로 분기별로 완만하게 축소되는 흐름을 보였다. 순손실(지배주주)은 2025년 4분기 약 103억원까지 확대됐다가 2026년 1분기 약 71억원, 2분기에는 약 4억원 수준으로 크게 줄었는데, 영업손실 축소뿐 아니라 비영업 항목의 영향도 있었던 것으로 보인다. 자본총계(지배주주)는 2022년 약 1,308억원에서 2023년 약 804억원, 2024년 약 392억원으로 누적 손실에 따라 줄다가, 2025년 약 571억원으로 다시 늘었는데 이는 2025년 9월 완료된 주주배정 유상증자(발행가 721원, 조달목표 650억원) 효과로 설명된다. 부채비율은 2024년 57.0%에서 2025년 38.6%로 낮아졌고, 영업활동현금흐름도 2023년 약 -534억원에서 2025년 약 -244억원으로 현금 유출 규모가 줄어드는 방향으로 개선됐다.",
+  "en": "Consolidated revenue in 2025 was about KRW 90 million, down from roughly KRW 170 million in 2024, while operating loss narrowed from about KRW 40.6 billion in 2024 to about KRW 24.6 billion in 2025, and net loss attributable to owners shrank from about KRW 41.5 billion to about KRW 31.0 billion over the same period. Looking at the multi-year trend since 2022, operating losses have declined for four consecutive years, from roughly KRW 62.4 billion in 2022 to KRW 59.0 billion in 2023, KRW 40.6 billion in 2024, and KRW 24.6 billion in 2025. On a quarterly basis, revenue stayed minimal at about KRW 18 million in Q3 2025 and KRW 37 million in Q4 2025 before jumping to roughly KRW 498 million in Q1 2026 and KRW 1.09 billion in Q2 2026, a move attributable to the start of Endari sales in the US. Operating losses also eased gradually on a quarterly basis, from about KRW 6.6 billion in Q2 2025 to roughly KRW 3.9 billion in Q2 2026. Net loss attributable to owners widened to about KRW 10.3 billion in Q4 2025 before narrowing to roughly KRW 7.1 billion in Q1 2026 and sharply to about KRW 0.4 billion in Q2 2026, a move likely reflecting both the narrower operating loss and the impact of non-operating items. Total equity attributable to owners fell from about KRW 130.8 billion in 2022 to KRW 80.4 billion in 2023 and KRW 39.2 billion in 2024 as accumulated losses mounted, then rose to about KRW 57.1 billion in 2025, a recovery explained by a rights offering completed in September 2025 (issue price of KRW 721, with a target of KRW 65 billion). The debt ratio fell from 57.0% in 2024 to 38.6% in 2025, and operating cash outflow also improved, narrowing from about negative KRW 53.4 billion in 2023 to about negative KRW 24.4 billion in 2025."
  },
  "industry": {
-  "ko": "면역항암제 및 세포치료제 시장은 CAR-T 치료제의 상업화가 확산되는 가운데, 효능 지속성과 재발 문제를 해결하기 위한 병용요법 수요가 커지고 있는 국면이다. NT-I7이 겨냥하는 CAR-T 효과 증강·지속 영역은 예스카타·브레얀지·카빅티 등 이미 상업화된 CAR-T 제품을 보유한 글로벌 제약사들의 수요와 직결되며, 네오이뮨텍은 경쟁보다는 연구자주도임상(IIT) 형태의 병용 데이터 축적을 통해 파트너십 확대를 모색하고 있다. 동시에 국내 바이오 업계 전반은 자금 조달 환경이 침체된 분위기 속에서도 개별 기업의 기술이전 성과가 투자심리를 가르는 요인으로 작용하고 있다는 평가가 나온다. 흉선 기능 회복이라는 새로운 영역에서는 Tolerance Bio가 일본 타나베파마로부터 IL-33 중화항체 TLB-33을 추가로 도입하며 흉선 중심 파이프라인을 확대하는 등, NT-I7의 플랫폼 확장 여부가 파트너사의 전략에 좌우되는 구조로 바뀌었다. 경쟁 구도 측면에서는 동일한 장기지속형 IL-7 기전으로 직접 경쟁하는 뚜렷한 기업이 제한적이나, CAR-T 병용이라는 영역 자체는 다양한 사이토카인·T세포 증폭 전략들과 간접적으로 경쟁한다. 사이클상으로는 네오이뮨텍이 자체 임상을 축소하고 파트너십·기술이전 중심으로 전환하는 구간에 있어, 플랫폼 가치의 외부 검증이 이제 막 시작된 단계로 볼 수 있다.",
-  "en": "The immuno-oncology and cell therapy market is in a phase where CAR-T commercialization continues to expand, alongside growing demand for combination approaches that address durability and relapse issues. NeoImmuneTech's targeted area of enhancing and extending CAR-T effect ties directly to the needs of global pharmaceutical companies holding commercialized CAR-T products such as Yescarta, Breyanzi, and Carvykti, and the company is pursuing partnership expansion through investigator-initiated trial (IIT) data accumulation rather than direct competition. At the same time, industry observers note that even amid a subdued financing environment across Korea's broader biotech sector, individual licensing achievements have become a differentiating factor for investor sentiment. In the emerging area of thymic function restoration, Tolerance Bio's additional in-licensing of the anti-IL-33 antibody TLB-33 from Mitsubishi Tanabe Pharma has expanded its thymus-focused pipeline, meaning the extent of NT-I7's platform expansion now depends heavily on the partner's own strategy. In terms of competitive positioning, few companies compete directly on an identical long-acting IL-7 mechanism, though the CAR-T combination space itself indirectly competes with various cytokine and T cell amplification strategies. Cycle-wise, the company is in a transition period of scaling back proprietary trials in favor of partnership- and licensing-driven development, with external validation of its platform value only beginning to materialize."
+  "ko": "면역항암 분야에서 CAR-T 치료제는 혈액암에서 상용화됐지만 고형암 승인 사례가 아직 없고, 투여 후 세포 지속성이 낮다는 한계가 업계 공통의 과제로 지적된다. NT-I7과 같은 지속형 IL-7은 CAR-T의 확장·지속성을 보완하는 병용 옵션으로 주목받고 있으며, 네오이뮨텍 외에도 다수의 글로벌 바이오텍이 유사한 사이토카인 기반 병용 전략을 탐색하고 있다. ARS 치료제 시장은 일반 의약품 시장과 달리 정부 비축 수요에 기반한 조달형 구조로, 기존 승인된 ARS 치료제는 대부분 호중구·혈소판 회복 기전에 집중돼 있어 림프구 회복을 겨냥한 NT-I7의 기전적 차별점이 부각된다. 다만 ARS 치료제 시장 진입을 위해서는 미국 BARDA의 BAA 프로그램 평가와 FDA의 Animal Rule 승인이 선행돼야 하며, 이는 일반적인 임상 3상 경로와는 다른 별도의 규제·조달 절차를 거쳐야 한다. 유럽에서도 지정학적 긴장에 따른 핵 위기 대응 예산이 늘고 있어 ARS 치료제의 지역적 수요 확장 가능성이 거론된다. 겸상적혈구질환 치료제 시장은 엔다리와 같은 기존 승인 의약품이 이미 미국 처방약급여관리업체(PBM) 등재를 마친 상태로, 치료 옵션이 제한적인 희귀질환 특성상 상대적으로 안정적인 매출 기반을 제공할 수 있는 시장으로 평가된다. 종합하면 네오이뮨텍은 아직 매출 규모가 작은 초기 상업화 단계에 있으며, 경쟁은 개별 제품 시장 점유보다는 글로벌 파트너십 확보 경쟁 구도로 형성돼 있다.",
+  "en": "In immuno-oncology, CAR-T therapies have been commercialized for blood cancers but have yet to gain approval for solid tumors, and limited cell persistence after infusion remains a common industry challenge. Long-acting IL-7 agents such as NT-I7 are drawing attention as combination options to enhance CAR-T expansion and persistence, with multiple global biotechs besides NeoImmuneTech exploring similar cytokine-based combination strategies. The ARS treatment market differs from conventional pharmaceutical markets in that it is procurement-driven, based on government stockpiling demand; since most approved ARS treatments focus on neutrophil or platelet recovery mechanisms, NT-I7's lymphocyte-recovery mechanism stands out as a differentiator. However, market entry for ARS treatments requires prior evaluation through the US BARDA BAA program and FDA Animal Rule approval, a regulatory and procurement pathway distinct from the conventional Phase 3 clinical route. In Europe, rising defense budgets tied to geopolitical tensions and nuclear risk response are cited as a potential driver for expanding regional demand for ARS treatments. The sickle cell disease treatment market already has established approved drugs like Endari listed with US pharmacy benefit managers (PBMs), offering a relatively stable revenue base given the limited treatment options for this rare disease. Overall, NeoImmuneTech remains at an early commercialization stage with still-small revenue scale, and competition is shaped less by market share in individual products than by rivalry to secure global partnerships."
  },
  "outlook": {
-  "ko": "회사는 2026년 8월 체결한 Tolerance Bio와의 계약에서 임상개발 및 매출 조건을 충족할 때마다 단계별 마일스톤을 수령하는 구조이며, 상업화 이후에는 연간 순매출액에 연동한 경상기술료도 받는다. 톨러런스 바이오는 NT-I7 및 TLB-33의 임상 개발을 지원할 투자 유치를 추진하고 있다고 밝혀, 해당 투자 성사 여부가 네오이뮨텍의 마일스톤 실현 속도에 영향을 줄 수 있다. 핵심 자체 파이프라인인 CAR-T 병용 임상 NIT-126은 2026년 9월 첫 용량군(600µg/kg)에서 용량제한독성이 관찰되지 않아 2차 용량군(720µg/kg) 평가로 넘어갔으며, 투약 스케줄을 CAR-T 주입 후 10일차·31일차 2회로 앞당겨 지속성 개선을 시험하는 설계로 바뀌었다. 같은 달에는 카빅티와 NT-I7을 병용하는 별도 임상에서 첫 환자 투약이 시작돼 파이프라인이 다변화되고 있다. 앞서 2026년 8월 공개된 NT-I7·키트루다 병용 1b/2a상 결과보고서(CSR)에서는 215명의 진행성 고형암 환자 중 일부, 특히 종양 내 T세포 침윤이 제한적인 'cold tumor' 환자군에서 생존기간 개선 신호가 확인됐다고 회사 측이 밝혔다. 반면 2026년 4월에는 비소세포폐암 2상을 피험자 모집 부진을 이유로 자진 취하해, 선택과 집중 전략에 따른 적응증 재편이 계속되고 있다. 종합적으로 향후 전망은 CAR-T 병용 임상의 용량증량 결과와 Tolerance Bio의 자금 조달 성사 여부가 핵심 변수로 남아 있다.",
-  "en": "Under the August 2026 agreement with Tolerance Bio, the company receives staged milestone payments upon meeting clinical development and sales conditions, plus royalties tied to annual net sales after commercialization. Tolerance Bio has stated it is pursuing investment to support clinical development of both NT-I7 and TLB-33, meaning the success of that fundraising could affect the pace at which NeoImmuneTech's milestones materialize. For its core proprietary pipeline, the CAR-T combination trial NIT-126 cleared its first dose cohort (600µg/kg) without dose-limiting toxicity in September 2026, advancing to the second dose cohort (720µg/kg), with the dosing schedule redesigned to two administrations at days 10 and 31 post CAR-T infusion to test durability improvement. That same month, a separate trial combining Carvykti with NT-I7 dosed its first patient, further diversifying the pipeline. Earlier, in August 2026, the clinical study report for the NT-I7/Keytruda combination Phase 1b/2a trial showed survival improvement signals in a subset of the 215 advanced solid tumor patients enrolled, particularly among patients with limited tumor T cell infiltration, or \"cold tumors,"
+  "ko": "회사는 2026년을 '매출 창출 전환점'으로 설정하고 엔다리 매출 확대와 NT-I7 기술이전을 동시에 추진한다는 방침을 밝혔다. 2026년 7월 기업설명회 자료에 따르면 2026년 6월 말 기준 가용 현금은 약 450억원, 잔여 전환사채는 약 100억원 규모로 2027년까지 추가 자금조달 없이 운영 가능하다고 설명했다. ARS 치료제 개발과 관련해서는 영장류 모델을 활용한 핵심 효능 실험이 진행 중이며, 회사 관계자는 2026년 중 최종 데이터 확보를 전망한 바 있다. NT-I7 기반 CAR-T 병용 임상(NIT-126)은 600µg/kg 코호트에서 용량제한독성이 관찰되지 않아 720µg/kg 증량 단계로 진입했으며, 투약 시점을 앞당기고 투약 횟수를 늘린 설계 변경의 효과를 추가로 확인해야 하는 단계다. 톨러런스바이오와의 계약에 따라 해당 파트너사는 임상 개발과 매출 목표 달성에 따른 단계별 마일스톤을 네오이뮨텍에 지급하며, 톨러런스바이오 측은 2027년 중 관련 적응증 임상 2상 개발 착수를 목표로 제시한 바 있다. 엔다리 사업은 선별적 마케팅 투자를 통해 이익률 개선을 모색하는 단계로, 회사는 현재 매출 수준에서도 일정한 영업이익 창출 가능성이 있다고 설명했다. 다만 ARS 치료제의 허가 예상 시점은 빨라야 2028년으로 전망되는 등, 주요 파이프라인의 상업화까지는 여전히 다년의 시간이 필요한 구조다.",
+  "en": "The company has designated 2026 as a 'revenue generation turning point,' stating its plan to simultaneously expand Endari sales and pursue NT-I7 licensing deals. According to July 2026 IR materials, available cash stood at about KRW 45 billion as of end-June 2026, with roughly KRW 10 billion in remaining convertible bonds, which the company said would allow operations through 2027 without additional fundraising. For ARS treatment development, a key efficacy study using a primate model is underway, with company representatives having projected final data availability sometime in 2026. The NT-I7-based CAR-T combination trial (NIT-126) advanced to a 720µg/kg dose-escalation cohort after no dose-limiting toxicity was observed at the 600µg/kg level, and the effect of the redesigned protocol—with earlier and more frequent dosing—remains to be further confirmed. Under the Tolerance Bio agreement, the partner will pay NeoImmuneTech staged milestones tied to clinical development and sales targets, and Tolerance Bio has indicated a goal of initiating Phase 2 trials for the related indication sometime in 2027. The Endari business is at a stage of pursuing margin improvement through selective marketing investment, with the company stating that some level of operating profit generation is possible even at current sales volumes. However, with ARS treatment approval not expected before 2028 at the earliest, commercialization of key pipeline assets still requires a multi-year horizon."
  },
  "valuation_comment": {
-  "ko": "네오이뮨텍은 수년째 영업손실과 순손실을 기록하고 있어 통상적인 이익 기준 밸류에이션 지표를 적용하기 어려운 임상단계 바이오텍의 특성을 그대로 보여준다. 주가는 회사가 자체 산출한 주당순자산 대비 소폭의 프리미엄이 붙은 수준에서 거래되고 있으며, 이는 2026년 8월 기술이전 계약 발표 이후 시장의 관심이 유입된 영향으로 해석할 수 있다. 배당은 현재 지급되지 않고 있어 배당 관련 지표는 의미를 갖기 어렵다. 다년간의 재무 흐름을 보면 영업손실과 순손실의 절대 규모가 매년 축소되는 추세가 뚜렷하지만, 이것이 곧 이익 전환을 의미하지는 않으며 매출 기반이 아직 미미한 단계다. 자본총계는 2024년 저점을 찍은 뒤 2025년 유상증자를 거쳐 회복됐는데, 향후 추가적인 자금조달이 발생할 경우 주당 지표에 다시 변화가 생길 수 있다는 점을 염두에 둘 필요가 있다.",
-  "en": "NeoImmuneTech has posted operating and net losses for several consecutive years, illustrating the typical profile of a clinical-stage biotech for which conventional earnings-based valuation metrics are difficult to apply meaningfully. The stock trades at a modest premium to the company's self-calculated book value per share, which can be interpreted as reflecting heightened market attention following the August 2026 licensing deal announcement. The company currently pays no dividend, making dividend-related metrics not meaningful at this stage. Looking at the multi-year financial trend, both operating loss and net loss have shrunk in absolute terms each year, though this does not equate to a turn to profitability, as the revenue base remains minimal. Total equity bottomed in 2024 before recovering via the 2025 rights offering, and readers should keep in mind that any future capital raise could again alter per-share metrics going forward."
+  "ko": "현재 주가는 자체 산출 기준 순자산가치 대비 1배를 다소 웃도는 수준에서 거래되며, 지속적인 순손실로 인해 통상적인 주가수익비율 산출이 의미를 갖기 어려운 상태다. 2022년부터 2025년까지 순손실 규모가 매년 축소되는 방향성은 확인되지만, 아직 이익 전환에는 이르지 못해 수익성 기반의 밸류에이션 접근은 제한적이다. 배당은 지급 이력이 없어 배당 관련 지표로 평가하기 어려운 구조이며, 이는 임상 단계 바이오텍에서 일반적으로 나타나는 특징이다. 2025년과 2026년에 걸쳐 주주배정 유상증자와 제3자배정 유상증자가 반복적으로 이뤄지며 상장주식수가 늘어난 점은 주당 지표를 해석할 때 함께 고려할 필요가 있는 요소다. 결국 현재 밸류에이션은 과거 실적보다는 엔다리 매출 확대, NT-I7 기술이전·ARS 허가 진행 등 향후 이벤트에 대한 시장의 기대가 더 크게 반영된 구간으로 볼 수 있다.",
+  "en": "The current share price trades at a level modestly above net asset value on a self-calculated basis, while persistent net losses make conventional price-to-earnings analysis of limited usefulness. While the scale of net losses has narrowed each year from 2022 through 2025, the company has not yet reached profitability, which constrains profitability-based valuation approaches. There is no dividend payment history, making dividend-related metrics inapplicable, a common feature for clinical-stage biotech companies. The repeated rights offerings and third-party share placements across 2025 and 2026, which increased the share count, are a factor worth considering when interpreting per-share metrics. Ultimately, the current valuation appears to reflect market expectations around future events—such as Endari sales expansion and progress on NT-I7 licensing and ARS approval—more than past financial performance."
  },
  "bull": [
   {
    "title": {
-    "ko": "상장 후 첫 기술이전 성과",
-    "en": "First Licensing Deal Since Listing"
+    "ko": "엔다리 상업 매출 가시화",
+    "en": "Endari Commercial Revenue Becoming Visible"
    },
    "body": {
-    "ko": "2026년 8월 Tolerance Bio와의 계약으로 NT-I7의 플랫폼 가치가 외부 파트너로부터 처음으로 검증받았다. 계약금을 현금이 아닌 파트너사 지분 4%로 받는 구조여서, 향후 Tolerance Bio의 기업가치 상승에 따른 추가적인 지분가치 이익을 기대할 수 있는 여지가 있다. 면역항암 등 핵심 영역은 계약 대상에서 제외돼 회사가 그대로 보유하고 있다는 점도 특징이다.",
-    "en": "The August 2026 agreement with Tolerance Bio marks the first external validation of NT-I7's platform value by a partner since listing. Because the upfront is structured as a 4% equity stake in the partner rather than cash, there is potential for additional value if Tolerance Bio's enterprise value rises. Core immuno-oncology programs were excluded from the deal and remain fully company-held."
+    "ko": "2026년 상반기부터 엔다리 미국 판매가 본격화되며 분기 매출이 2025년 평균 대비 수십 배 늘어났다. 회사는 희귀질환 특성상 치료 옵션이 제한적인 시장에서 선별적 마케팅을 통해 이익률 개선 가능성을 언급했다. 연구개발 중심 바이오텍에서 상업 매출을 보유한 구조로 전환되고 있다는 점이 긍정적으로 평가될 수 있다.",
+    "en": "Endari sales in the US gained momentum from the first half of 2026, lifting quarterly revenue by multiples versus the 2025 average. The company has pointed to potential margin improvement through selective marketing in a rare-disease market with limited treatment options. The shift from a pure R&D-focused biotech toward one with commercial revenue can be viewed positively."
    }
   },
   {
    "title": {
-    "ko": "4년 연속 손실 규모 축소",
-    "en": "Losses Narrowing for Four Straight Years"
+    "ko": "NT-I7 기술이전 레퍼런스 확보",
+    "en": "NT-I7 Licensing Track Record Established"
    },
    "body": {
-    "ko": "영업손실이 2022년 623.5억원에서 2025년 245.5억원으로, 순손실도 647.3억원에서 309.5억원으로 매년 줄어드는 흐름이 확인된다. 2026년 2분기에는 지배주주 순손실이 4.16억원까지 축소돼 최근 다섯 개 분기 중 가장 작은 규모를 기록했다. 자체 임상 파이프라인을 선택적으로 정리하며 비용 통제 효과가 반영되고 있는 것으로 해석할 수 있다.",
-    "en": "Operating loss narrowed from KRW 62.35 billion in 2022 to KRW 24.55 billion in 2025, with net loss also declining from KRW 64.73 billion to KRW 30.95 billion over the same span. In Q2 2026, net loss attributable to owners shrank to KRW 416 million, the smallest of the past five quarters. This can be interpreted as reflecting cost discipline from selectively trimming the proprietary trial pipeline."
+    "ko": "2026년 8월 톨러런스바이오와의 최대 2억 6,000만달러 규모 계약은 코스닥 상장 이후 첫 기술이전으로, NT-I7의 플랫폼 가치를 외부에서 인정받은 사례로 해석될 수 있다. 계약금은 현금이 아닌 지분 4%로 수취해 파트너사의 성장에 따른 추가 가치 상승 여지도 있다. 핵심 영역인 면역항암 권리는 계약 대상에서 제외돼 자체 개발 여력도 유지하고 있다.",
+    "en": "The up-to-$260 million agreement with Tolerance Bio in August 2026 marks the company's first licensing deal since its KOSDAQ listing, which can be interpreted as external validation of NT-I7's platform value. The upfront payment was received as a 4% equity stake rather than cash, leaving room for additional value appreciation tied to the partner's growth. Core immuno-oncology rights were excluded from the deal, preserving the company's own development capacity."
    }
   },
   {
    "title": {
-    "ko": "다수의 CAR-T 병용 임상 동시 진행",
-    "en": "Multiple Concurrent CAR-T Combination Trials"
+    "ko": "ARS 치료제의 차별적 기전과 정부 조달 연계",
+    "en": "Differentiated ARS Mechanism with Government Procurement Linkage"
    },
    "body": {
-    "ko": "예스카타·브레얀지 병용 임상(NIT-126)이 첫 용량군에서 DLT 없이 다음 단계로 진입했고, 2026년 9월에는 카빅티와의 병용 임상에서도 첫 환자 투약이 시작됐다. 서로 다른 복수의 상업화된 CAR-T 제품과 병용 데이터를 쌓는 전략은 향후 파트너십 후보를 넓히는 효과를 기대할 수 있다.",
-    "en": "The Yescarta/Breyanzi combination trial (NIT-126) advanced to the next dose cohort without observing dose-limiting toxicity in the first cohort, and in September 2026 a separate Carvykti combination trial dosed its first patient. Building combination data across multiple distinct commercialized CAR-T products could broaden the pool of potential future partnership candidates."
+    "ko": "NT-I7은 기존 승인된 ARS 치료제와 달리 절대 림프구 수를 늘리는 기전으로 차별화되며, FDA Animal Rule을 통해 임상시험 없이 동물 데이터로 허가받을 수 있는 경로를 밟고 있다. ARS 치료제는 정부 비축 수요 기반의 조달형 시장으로 승인 이후 반복적 매출 구조를 가질 수 있다는 특징이 있다. BARDA BAA 프로그램 참여를 통해 미국 정부와의 협력 접점을 넓혀가고 있다.",
+    "en": "Unlike existing approved ARS treatments, NT-I7 is differentiated by its mechanism of increasing absolute lymphocyte count, and it is pursuing an approval pathway based on animal data under the FDA's Animal Rule rather than human trials. ARS treatments operate in a procurement-driven market based on government stockpiling demand, which could support a recurring revenue structure post-approval. The company has been expanding its engagement with the US government through participation in the BARDA BAA program."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 기반 부재와 지속적 외부자금 의존",
-    "en": "Lack of Revenue Base and Continued Reliance on External Financing"
+    "ko": "장기간 지속된 영업손실 구조",
+    "en": "Prolonged Operating Loss Structure"
    },
    "body": {
-    "ko": "2025년 매출은 약 0.9억원에 불과해 회사는 여전히 상업화 제품이 없는 임상단계 바이오텍이다. 영업활동현금흐름이 매년 수백억원대 마이너스를 이어가고 있어(2025년 -243.9억원), 2025년 472억원 유상증자처럼 외부 자금조달에 계속 의존해야 하는 구조다. 추가적인 자금조달이 발생할 경우 기존 주주의 지분 희석이 이어질 수 있다.",
-    "en": "2025 revenue was only about KRW 92 million, underscoring that the company remains a clinical-stage biotech with no commercialized product. Operating cash flow has remained negative by several tens of billions of won each year (KRW -24.39 billion in 2025), meaning the company must continue relying on external financing such as the KRW 47.2 billion rights offering completed in 2025. Any further capital raise could continue to dilute existing shareholders."
+    "ko": "2022년부터 2025년까지 매년 수백억원대 영업손실이 이어졌고, 매출 규모는 여전히 손실 대비 매우 작다. 손실 축소 추세는 확인되지만 흑자 전환 시점은 아직 가시화되지 않았다. 엔다리 매출이 늘어나더라도 NT-I7 연구개발비를 충당하기에는 아직 부족한 규모다.",
+    "en": "Operating losses in the tens of billions of won have persisted every year from 2022 through 2025, with revenue remaining very small relative to losses. While a narrowing trend in losses is evident, a turn to profitability has not yet come into view. Even as Endari sales grow, the scale remains insufficient to cover NT-I7 R&D spending."
    }
   },
   {
    "title": {
-    "ko": "반복된 임상 자진 철회 이력",
-    "en": "History of Repeated Voluntary Trial Withdrawals"
+    "ko": "반복적 자금조달에 따른 희석",
+    "en": "Dilution from Repeated Fundraising"
    },
    "body": {
-    "ko": "2023년 교모세포종·피부암·위암 임상에 이어 2026년 4월에는 비소세포폐암 2상까지 피험자 모집 부진을 이유로 자진 취하해, 네 번째 임상 철회 공시로 집계됐다. 업계 관계자는 5년 넘게 80명 내외의 환자 등록조차 마치지 못한 점에 대해 임상 진행 동력이 부족했던 것 아니냐는 의문을 제기한 바 있다. 이러한 이력은 향후 신규 적응증 개발의 실행력에 대한 의문으로 이어질 수 있다.",
-    "en": "Following the 2023 withdrawals of glioblastoma, skin cancer, and gastric cancer trials, the company voluntarily withdrew its non-small cell lung cancer Phase 2 trial in April 2026 citing poor enrollment, marking its fourth recorded trial withdrawal disclosure. An industry source questioned why the trial could not complete enrollment of roughly 80 patients over more than five years, suggesting a possible lack of execution momentum. This track record could raise questions about execution capability for future indication development."
+    "ko": "2025년 9월 주주배정 유상증자와 2026년 6~7월 제3자배정 유상증자가 잇따라 이뤄지며 상장주식수가 늘었다. 지속적인 손실 구조 속에서 추가 자금조달이 필요해질 경우 추가 희석 가능성을 배제할 수 없다. 전환사채 잔액도 남아 있어 전환 시 주식수 변동 요인이 될 수 있다.",
+    "en": "A rights offering in September 2025 and a third-party share placement in June-July 2026 both increased the share count in succession. Given the ongoing loss structure, additional dilution cannot be ruled out if further fundraising becomes necessary. Outstanding convertible bonds also remain a factor that could alter share count upon conversion."
    }
   },
   {
    "title": {
-    "ko": "기술이전 가치의 실현 불확실성",
-    "en": "Uncertainty Over Realization of Licensing Deal Value"
+    "ko": "ARS 상업화까지의 긴 시계와 불확실성",
+    "en": "Long and Uncertain Path to ARS Commercialization"
    },
    "body": {
-    "ko": "Tolerance Bio와의 계약금 3,669억원은 임상 개발과 매출 성과 등 여러 단계의 조건을 모두 충족해야 받을 수 있는 최대 마일스톤 규모로, 계약 체결과 동시에 유입되는 금액이 아니다. 계약금 역시 현금이 아닌 초기 단계 파트너사의 지분으로 받는 구조여서, 해당 파트너의 자금조달과 임상 성과에 따라 실제 가치가 달라질 수 있다. 흉선 기능부전 적응증 자체도 아직 임상 2상 단계 이전의 초기 영역이다.",
-    "en": "The KRW 366.9 billion figure associated with the Tolerance Bio deal represents the maximum milestone amount contingent on meeting multiple clinical development and sales conditions, not a sum received at signing. The upfront itself is an equity stake in an early-stage partner rather than cash, meaning its realized value depends on that partner's own fundraising and clinical progress. The thymic dysfunction indication itself remains an early-stage area that has not yet entered Phase 2 trials."
+    "ko": "업계 전망에 따르면 ARS 치료제의 허가 예상 시점은 빨라야 2028년으로, 상업화까지는 여전히 다년의 시간이 필요하다. BARDA와의 협력은 아직 기술 공유 단계로, 구체적인 구매 물량이나 가격 등 계약 조건이 확정되지 않았다. 영장류 실험 데이터 결과에 따라 허가 전략 자체가 바뀔 가능성도 배제할 수 없다.",
+    "en": "Industry projections suggest ARS treatment approval is unlikely before 2028 at the earliest, meaning commercialization still requires a multi-year horizon. Cooperation with BARDA remains at a technology-sharing stage, with no confirmed purchase volumes or pricing terms yet. The approval strategy itself could also shift depending on the outcome of primate study data."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "자금조달·희석 리스크",
-    "en": "Financing and Dilution Risk"
+    "ko": "임상·규제 리스크",
+    "en": "Clinical and Regulatory Risk"
    },
    "body": {
-    "ko": "회사는 과거 상장 공모, 전환사채, 복수의 유상증자를 통해 자금을 조달해왔으며 2025년 9월에도 472억원 규모 유상증자를 완료했다. 영업활동현금흐름이 지속적으로 마이너스인 구조상 향후에도 추가적인 자금조달이 필요할 가능성이 있으며, 이는 기존 주주의 지분 희석으로 이어질 수 있다. 과거 법인세비용차감전계속사업손실이 자본금의 50%를 초과해 관리종목 지정 우려가 제기된 바 있다는 점도 참고할 필요가 있다.",
-    "en": "The company has historically financed itself through its IPO, convertible bonds, and multiple rights offerings, including a KRW 47.2 billion rights offering completed in September 2025. Given persistently negative operating cash flow, further capital raises may be needed going forward, which could dilute existing shareholders. It is also worth noting that pre-tax loss exceeding 50% of capital has previously raised concerns about administrative issue designation."
+    "ko": "CAR-T 병용 임상(NIT-126)은 아직 초기 용량 증량 단계로, 유효성 데이터 확보까지 시간이 필요하다. ARS 치료제는 FDA Animal Rule이라는 비교적 드문 허가 경로를 거쳐야 해 일반적인 임상 3상과는 다른 불확실성이 존재한다. 고형암 영역의 CAR-T 병용 효과는 아직 FDA 승인 사례가 없는 미개척 분야로 추가 검증이 필요하다.",
+    "en": "The CAR-T combination trial (NIT-126) remains at an early dose-escalation stage, requiring more time before efficacy data becomes available. ARS treatments must navigate the relatively uncommon FDA Animal Rule pathway, carrying different uncertainties than a conventional Phase 3 trial. CAR-T combination efficacy in solid tumors remains an uncharted area with no FDA-approved precedent, requiring further validation."
    }
   },
   {
    "cat": {
-    "ko": "임상 개발·규제 리스크",
-    "en": "Clinical Development and Regulatory Risk"
+    "ko": "재무·자금조달 리스크",
+    "en": "Financial and Fundraising Risk"
    },
    "body": {
-    "ko": "네오이뮨텍은 2023~2026년 사이 네 차례 임상을 자진 철회했으며, 가장 최근인 비소세포폐암 2상은 IND 승인 5년 6개월 만에 피험자 모집을 마치지 못해 취하됐다. CAR-T 병용 임상 NIT-126은 아직 용량증량 단계의 안전성 평가 단계로, 효능을 평가하는 2상으로 이어질지는 확정되지 않았다. 임상 결과가 기대에 미치지 못할 경우 파이프라인 가치에 직접적인 영향을 줄 수 있다.",
-    "en": "NeoImmuneTech voluntarily withdrew four trials between 2023 and 2026, with the most recent, a non-small cell lung cancer Phase 2 trial, withdrawn after failing to complete enrollment 5.5 years after IND approval. The CAR-T combination trial NIT-126 remains at the dose-escalation safety evaluation stage, and whether it advances to an efficacy-focused Phase 2 is not yet determined. Clinical results falling short of expectations could directly affect pipeline value."
+    "ko": "2026년 6월 말 기준 가용 현금은 약 450억원, 잔여 전환사채는 약 100억원 규모로 회사는 2027년까지 추가 조달 없이 운영 가능하다고 설명했으나, 지속적인 손실 구조상 그 이후의 자금 계획은 지켜봐야 한다. 과거 수년간 반복된 유상증자 이력을 고려하면 추가 조달 필요성이 재부각될 가능성도 있다. 기술이전 계약의 마일스톤·로열티는 임상·허가·매출 성과에 연동돼 있어 수취 시점과 규모가 불확실하다.",
+    "en": "As of end-June 2026, available cash was about KRW 45 billion with roughly KRW 10 billion in remaining convertible bonds, and the company stated it can operate through 2027 without additional funding, though its funding plans beyond that point warrant monitoring given the ongoing loss structure. Considering the history of repeated capital raises in recent years, the need for further fundraising could resurface. Milestones and royalties from licensing agreements are tied to clinical, regulatory, and sales performance, making their timing and scale uncertain."
    }
   },
   {
    "cat": {
-    "ko": "파트너사 의존 리스크",
-    "en": "Partner Dependency Risk"
+    "ko": "사업 집중도·파트너십 의존 리스크",
+    "en": "Business Concentration and Partnership Dependency Risk"
    },
    "body": {
-    "ko": "Tolerance Bio는 설립 초기 단계의 미국 바이오기업으로, NT-I7과 TLB-33의 임상 개발을 지원할 투자 유치를 추진 중이라고 스스로 밝혔다. 해당 투자가 지연되거나 성사되지 않을 경우 네오이뮨텍이 기대하는 마일스톤 수령 시점도 함께 늦춰질 수 있다. 계약금으로 받은 지분 4%의 가치 역시 파트너사의 성장 여부에 전적으로 연동돼 있다.",
-    "en": "Tolerance Bio is an early-stage US biotech that has itself stated it is pursuing investment to support clinical development of both NT-I7 and TLB-33. If that fundraising is delayed or fails to materialize, the timing of milestone payments NeoImmuneTech anticipates could also be pushed back. The value of the 4% equity stake received as upfront payment is also entirely tied to the partner's future growth."
+    "ko": "엔다리 매출은 아직 초기 단계이며, 회사의 중장기 가치는 NT-I7의 추가 기술이전과 ARS 허가 진행에 크게 의존하는 구조다. 글로벌 빅파마와의 파트너링 논의가 지연되거나 결렬될 경우 성장 경로에 영향을 줄 수 있다. 소수 파이프라인에 집중된 사업 구조상 특정 프로그램의 부정적 데이터가 전체 기업가치에 미치는 영향이 상대적으로 클 수 있다.",
+    "en": "Endari revenue remains at an early stage, and the company's mid-to-long-term value depends heavily on further NT-I7 licensing deals and progress toward ARS approval. Delays or breakdowns in partnership discussions with global pharma companies could affect the growth trajectory. Given a business structure concentrated on a small number of pipeline assets, negative data from any single program could have a relatively outsized impact on overall company value."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "Q4 2026"
+    "ko": "2026년 11월 중",
+    "en": "November 2026"
    },
    "what": {
-    "ko": "NIT-126 2차 용량군(720µg/kg)의 DLT 평가 결과 발표 여부 확인 — 안전성이 재확인되면 2상 전환 논의로 이어질 수 있다.",
-    "en": "Watch for disclosure of DLT evaluation results from the NIT-126 second dose cohort (720µg/kg) — confirmed safety could support discussion of advancing to Phase 2."
+    "ko": "3분기 분기보고서 공시 예정으로, 엔다리 매출의 분기별 지속 증가 여부와 영업손실 축소 흐름이 이어지는지 확인할 필요가 있다.",
+    "en": "The Q3 quarterly report is expected to be disclosed, making it worth checking whether Endari revenue continues its quarter-over-quarter growth and whether operating losses keep narrowing."
    }
   },
   {
    "when": {
-    "ko": "2026년 11월경",
-    "en": "Around November 2026"
+    "ko": "2026년 연말",
+    "en": "End of 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시(DART) 확인 — 2분기에 나타난 매출 증가와 순손실 축소 흐름이 이어지는지 점검한다.",
-    "en": "Check the Q3 2026 earnings disclosure on DART — assess whether the revenue increase and net loss narrowing seen in Q2 continues."
+    "ko": "ARS 치료제 영장류 모델 핵심 효능 실험의 최종 데이터 확보가 예상되는 시점으로, 결과에 따라 FDA Animal Rule 허가 전략의 구체화 여부를 가늠할 수 있다.",
+    "en": "Final data from the key primate-model efficacy study for the ARS treatment is anticipated around this time, which could clarify the direction of the FDA Animal Rule approval strategy."
    }
   },
   {
    "when": {
-    "ko": "카빅티 병용 임상 초기 데이터 공개 시점",
-    "en": "Timing of initial Carvykti combination trial data"
+    "ko": "2026년 4분기~2027년 초",
+    "en": "Q4 2026 to early 2027"
    },
    "what": {
-    "ko": "2026년 9월 투약을 시작한 카빅티+NT-I7 병용 임상의 초기 안전성 신호 공개 여부를 확인한다.",
-    "en": "Monitor for disclosure of initial safety signals from the Carvykti+NT-I7 combination trial that began dosing in September 2026."
+    "ko": "NIT-126 임상의 720µg/kg 코호트 DSMB 심의 결과 및 추가 증량 여부를 확인해 CAR-T 병용 설계 변경의 효과를 점검할 시점이다.",
+    "en": "Monitoring the DSMB review outcome for the 720µg/kg cohort of the NIT-126 trial and whether further dose escalation proceeds will help assess the effect of the redesigned CAR-T combination protocol."
    }
   },
   {
    "when": {
-    "ko": "Tolerance Bio 투자 유치 결과 발표 시",
-    "en": "Upon announcement of Tolerance Bio's fundraising outcome"
+    "ko": "2027년 중",
+    "en": "During 2027"
    },
    "what": {
-    "ko": "Tolerance Bio가 NT-I7·TLB-33 개발 지원을 위해 추진 중인 투자 유치의 성사 여부와 규모를 확인한다 — 네오이뮨텍의 마일스톤 실현 속도에 영향을 줄 수 있다.",
-    "en": "Check whether and at what scale Tolerance Bio succeeds in its ongoing fundraising to support NT-I7 and TLB-33 development — this could affect the pace of NeoImmuneTech's milestone realization."
-   }
-  },
-  {
-   "when": {
-    "ko": "TLB-33 임상 2상 개시 예정 시점(2027년)",
-    "en": "Planned TLB-33 Phase 2 initiation (2027)"
-   },
-   "what": {
-    "ko": "Tolerance Bio가 2027년 개시를 제시한 TLB-33 임상 2상의 실제 진행 여부를 확인한다.",
-    "en": "Verify whether Tolerance Bio actually initiates the TLB-33 Phase 2 trial it has targeted for 2027."
+    "ko": "톨러런스바이오가 목표로 제시한 TLB-33 관련 임상 2상 개시 및 투자 유치 완료 발표 여부를 확인해 파트너사 자금력이 NT-I7 개발 속도에 미치는 영향을 점검할 필요가 있다.",
+    "en": "Checking whether Tolerance Bio announces the start of Phase 2 trials related to TLB-33 and completion of its targeted investment round will help gauge how the partner's funding capacity affects the pace of NT-I7 development."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "네오이뮨텍은 2026년 8월 상장 후 첫 기술이전 계약을 성사시키며 NT-I7 플랫폼의 외부 검증 사례를 처음으로 확보했으나, 해당 계약의 핵심 가치는 현금이 아닌 파트너사 지분과 향후 단계별 마일스톤에 걸려 있어 실제 현금 유입 시점은 불확실하다. 재무적으로는 영업손실과 순손실이 4년 연속 축소되는 긍정적 흐름이 확인되지만, 매출 기반이 여전히 미미해 외부 자금조달에 의존하는 구조는 그대로 유지되고 있다. 자체 핵심 파이프라인인 CAR-T 병용 임상은 복수의 상업화된 CAR-T 제품을 대상으로 동시에 진행되며 초기 안전성 데이터를 쌓아가고 있지만, 2023~2026년 사이 네 차례의 임상 자진 철회 이력은 실행력에 대한 의문을 남긴다. 결국 이 회사에 대한 평가는 기술이전을 통한 플랫폼 가치 입증이라는 긍정적 신호와, 반복된 임상 중단 이력 및 지속적인 손실·자금조달 필요성이라는 부정적 요인이 동시에 작용하는 구도로 요약된다. 향후 CAR-T 병용 임상의 용량증량 결과와 Tolerance Bio의 자금조달 성사 여부가 핵심 변수로 남아 있다. 투자 판단은 이러한 강세·약세 요인을 종합적으로 고려해 독자 스스로 내려야 한다.",
-   "en": "NeoImmuneTech secured its first external validation of the NT-I7 platform through its first licensing deal since listing in August 2026, but the core value of that deal rests on partner equity and staged future milestones rather than cash, leaving the actual timing of cash inflows uncertain. Financially, operating and net losses have narrowed for four consecutive years, a positive trend, but the revenue base remains minimal and the structure of dependence on external financing persists. The company's core proprietary pipeline, CAR-T combination trials, is progressing across multiple commercialized CAR-T products while accumulating early safety data, yet the history of four voluntary trial withdrawals between 2023 and 2026 leaves questions about execution capability. Overall, the assessment of this company is a mix of positive signals from platform value validation through licensing and negative factors stemming from repeated trial discontinuations and ongoing losses requiring continued financing. The key variables going forward remain the dose-escalation results of the CAR-T combination trials and whether Tolerance Bio successfully secures its own financing. Readers should weigh these bullish and bearish factors together in forming their own judgment."
+   "ko": "네오이뮨텍은 2026년 상반기부터 엔다리 미국 판매로 첫 상업 매출을 확보했고, 8월에는 톨러런스바이오와 NT-I7 기술이전 계약을 체결하며 플랫폼 가치를 외부에서 인정받는 레퍼런스를 하나 쌓았다. 연간 영업손실과 순손실은 2022년 이후 매년 축소되는 흐름을 이어왔고 2025년 자본총계도 유상증자 효과로 전년 대비 늘었다. 다만 매출 규모는 여전히 손실 대비 매우 작고, ARS 치료제 허가는 빨라야 2028년으로 전망되는 등 핵심 파이프라인의 상업화까지는 다년의 시간이 더 필요한 구조다. 반복된 유상증자와 전환사채 잔존으로 상장주식수 변동 요인도 남아 있어 주당 지표 해석 시 함께 살펴볼 부분이다. CAR-T 병용 임상의 증량 단계 진전과 BARDA·ARS 관련 데이터 확보 여부, 추가 기술이전 소식이 향후 사업 방향을 가늠하는 핵심 변수가 될 것으로 보인다.",
+   "en": "NeoImmuneTech secured its first commercial revenue through Endari's US sales launch starting in the first half of 2026, and in August signed a licensing agreement with Tolerance Bio for NT-I7, adding an external validation point for its platform value. Both annual operating and net losses have continued narrowing each year since 2022, and 2025 total equity also rose year-over-year due to a capital raise. However, revenue remains very small relative to losses, and with ARS treatment approval not expected before 2028 at the earliest, commercialization of core pipeline assets still requires a multi-year horizon. Repeated capital raises and outstanding convertible bonds remain factors that could affect share count, which is worth considering when interpreting per-share metrics. Progress in the CAR-T combination trial's dose-escalation stage, data from BARDA/ARS-related work, and news of further licensing deals are likely to be the key variables shaping the company's future direction."
   }
  },
  "sources": [
+  "https://dealsite.co.kr/articles/155347",
+  "https://www.press9.kr/news/articleView.html?idxno=76927",
   "https://www.hankyung.com/article/202609303402i",
-  "https://www.hankyung.com/article/202608198923i",
   "https://newsway.co.kr/news/view?ud=2026092310165837004",
-  "http://www.press9.kr/news/articleView.html?idxno=83037",
+  "https://www.hankyung.com/article/202608198923i",
   "https://clinicaltrials.gov/study/NCT04893018",
-  "https://m.news.nate.com/view/20260818n28670",
-  "https://m.news.nate.com/view/20260818n28698",
-  "https://news.nate.com/view/20260424n31043",
-  "https://news.nate.com/view/20260511n04093",
-  "https://m.news.nate.com/view/20260819n28416",
-  "https://www.g-enews.com/article/Securities/2026/08/20260821092256723844093b5d4e_1",
-  "https://dealsite.co.kr/articles/167507",
-  "https://m.news.nate.com/view/20260819n31851",
-  "https://www.getnews.co.kr/news/articleView.html?idxno=878319",
-  "https://www.mt.co.kr/stock/2026/08/21/2026082109303121490",
-  "https://www.chickstockfi.com/disclosures/20260819900464",
-  "https://supple.kr/news/cmt27ugrn0064jbtp9kdrkdj4",
-  "https://m.news.nate.com/view/20260819n32316"
+  "https://www.biorxiv.org/content/10.1101/2025.09.15.676444.full.pdf",
+  "https://cdn.clinicaltrials.gov/large-docs/53/NCT04332653/Prot_000.pdf",
+  "https://clinicaltrials.gov/study/NCT04781309",
+  "https://www.topstarnews.net/news/articleView.html?idxno=16122561",
+  "https://securities.miraeasset.com/hku/hku4042/p02.do?check_data=init&BaseDate11=20250801&Stcd3=95022&DataBit=01&DataBit2=1",
+  "https://pharm.edaily.co.kr/News/Read?newsId=02305846642205328&mediaCodeNo=257",
+  "https://marketin.edaily.co.kr/News/ReadE?newsId=04060646642239768",
+  "https://paxnet.co.kr/tbbs/list?id=950220&tbbsType=L",
+  "https://news.nate.com/view/20260610n28991",
+  "https://www.investing.com/equities/neoimmunetech-drc",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A950220",
+  "https://www.chickstockfi.com/stocks/950220"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -234,7 +224,7 @@
  ],
  "market": "코스닥",
  "reportDate": "2026-10-03",
- "reportTs": "2026-10-03 08:56",
+ "reportTs": "2026-10-03 09:48",
  "dataDate": "20261002",
  "quant": {
   "asOf": "2026-08-23",

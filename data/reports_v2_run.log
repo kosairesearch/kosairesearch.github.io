@@ -1,8 +1,8 @@
-=== 공시 트리거 v2 생성 Fri Oct  2 16:31:19 UTC 2026 · 대상 310210,048410,204620,307750,027710,950220,026940,019490,043340 ===
+=== 공시 트리거 v2 생성 Sat Oct  3 00:38:25 UTC 2026 · 대상 310210,048410,204620,307750,027710,950220,026940,019490,043340 ===
 ## 🤖 리포트 v2 Batch 제출 — 9개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
 - 정량 재사용 9개(숫자가 이미 최신·완전) · 다시 받을 0개
 - 모델 배분: claude-opus-5 1개 · claude-sonnet-5 8개
-- ✅ 배치 제출: msgbatch_017xBfUZMY2jzCpi6LyFThPe (9건) → data/batches_v2/msgbatch_017xBfUZMY2jzCpi6LyFThPe.json
+- ✅ 배치 제출: msgbatch_015kA8v5voVkji7uJRerCzYb (9건) → data/batches_v2/msgbatch_015kA8v5voVkji7uJRerCzYb.json
   · 상태 in_progress · 처리 9/성공 0/오류 0
   · 상태 in_progress · 처리 9/성공 0/오류 0
   · 상태 in_progress · 처리 9/성공 0/오류 0
@@ -13,25 +13,12 @@
   · 상태 in_progress · 처리 9/성공 0/오류 0
   · 상태 in_progress · 처리 9/성공 0/오류 0
   · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-- ⏳ 시간 내 미완료 — 남은 배치는 collect_batch 가 회수한다
-- 아직 처리 중 — 여기서 끝낸다. collect_batch 가 회수한다(msgbatch_017xBfUZMY2jzCpi6LyFThPe).
+  · 상태 ended · 처리 0/성공 9/오류 0
+- msgbatch_015kA8v5voVkji7uJRerCzYb · 상태 ended · 처리 0/성공 9/오류 0/만료 0/취소 0 · 주문 2026-10-03 09:38
+  · ✏️ 310210 표현 교정 2건 → 남은 0건
+  · 🈯 043340 영문 10곳을 채워 되살렸다
+
+✅ v2 회수 완료 · 성공 9/실패 0 → data/reports_v2/ (2563개)
+💵 claude-sonnet-5 8건 · 입력 47,886(캐시쓰기 426,831·읽기 561,061) · 출력 213,202 · 검색 38 → 약 $2.08 (장당 $0.261)
+💵 claude-opus-5 1건 · 입력 5,965(캐시쓰기 59,767·읽기 70,037) · 출력 22,811 · 검색 6 → 약 $0.56 (장당 $0.564)
+✅ msgbatch_015kA8v5voVkji7uJRerCzYb 회수 완료 · 성공 9/실패 0
