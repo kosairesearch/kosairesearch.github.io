@@ -8,6 +8,10 @@
 시안 빌더(build_*_comp.py)와 같은 코드가 comp_common.set_mode('staging') 으로 돈다 — 상대 경로 · STAGING 띠 ·
 실제 모듈 연결은 comp_common.finish() 가 한다. 그래서 시안과 스테이징의 옷은 늘 같다.
 
+모닝브리핑 지난 호(2026-10-04 사장 "모닝브리핑 지난 호 스테이징에 만들어봐")는 build_brief_comp.build_archive() 가 낸다 — 발행한 브리핑마다
+brief-YYYY-MM-DD.html 과 목록 brief-archive.html. 아침 브리핑 작업이 이 생성기를 돌리고 staging/ 을 통째로 올리므로 새 호도 그날 생긴다.
+랜딩처럼 실패해도 다른 페이지는 만들고 있던 지난 호를 그대로 둔다(--check 에서는 실패로 친다).
+
 첫 페이지(index.html)는 랜딩 새 디자인이다(2026-10-02 사장 "일단 우리가 만든 랜딩페이지 새 디자인을 스테이징 사이트로 옮겨줘") —
 scripts/concepts/landing.py 의 build_staging() 이 낸다(그림은 staging/img/ 로 복사). 매일 바뀌는 값은 data-live 로 표시돼 있어
 --check 는 그 자리를 빼고 견준다(landing.mask). 아침 브리핑 작업이 이 생성기를 돌리므로, 랜딩이 실패해도 다른 페이지는 만들고
@@ -61,6 +65,14 @@ def build_all(out_dir: Path, strict=False):
         if strict:
             raise
         print(f'⚠ 랜딩(index.html)을 만들지 못했다 — 있던 파일을 그대로 둔다: {e}')
+    # 지난 호 — 호마다 brief-YYYY-MM-DD.html 과 목록 brief-archive.html(2026-10-04). 맨 끝에 둔다: 앞의 페이지에서 멈추면 새 호 파일이
+    # 생기지 않고(아침 작업은 staging 을 되돌린다), 여기서 멈추면 있던 지난 호를 그대로 둔다(build_archive 는 다 만든 뒤에 쓴다).
+    try:
+        build_brief_comp.build_archive(out_dir)
+    except Exception as e:
+        if strict:
+            raise
+        print(f'⚠ 지난 호를 만들지 못했다 — 있던 파일을 그대로 둔다: {e}')
 
 
 def main():
@@ -86,6 +98,9 @@ def main():
                     have, fresh = landing.mask(have), landing.mask(fresh)
                 if have != fresh:
                     bad.append(f.name)
+            for f in sorted((ROOT / 'staging').glob('brief-????-??-??.html')):   # 지난 호 — 발행 목록에서 빠진 호의 페이지가 남아 있으면
+                if not (Path(td) / f.name).exists():
+                    bad.append(f.name + '(생성기에 없는 호)')
             for f in sorted((Path(td) / 'img').glob('*.webp')):   # 랜딩 그림(시안 그림의 사본)
                 cur = ROOT / 'staging' / 'img' / f.name
                 if not cur.exists() or cur.read_bytes() != f.read_bytes():

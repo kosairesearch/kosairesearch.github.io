@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="ko" data-staging>
+<head>
+<meta charset="utf-8">
+<script src="i18n.js?v=53cc0da2"></script>
+<script type="module" src="demo-backend.js?v=7f8de79b"></script>
+<script src="analytics.js?v=c23defd1"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#f9f8f6">
+<title>인상 이틀째, 10년물은 4.95%로 물러섰다 — 원화 기준값은 1,380원 — 모닝브리핑 | KOSAI</title>
+<link rel="icon" href="../assets/favicon.png?v=k2">
+<link rel="stylesheet" href="../fonts/pretendard-subset.css">
+<script>(function(){var t='light';try{t=localStorage.getItem('kos-theme')||'light'}catch(e){}document.documentElement.setAttribute('data-theme',t);})();</script>
+<script id="kosThemeColor">(function(){var m=document.querySelector('meta[name="theme-color"]'),r=document.documentElement;
+  function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0d0d0e':'#f9f8f6')}
+  tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme']})})();</script>
+<script>
+/* 활성 표시선 — 컨테이너마다 선 하나를 두고, 활성 항목(.on)의 자리로 미끄러뜨린다.
+   axis 'x' = 밑줄, 'y' = 왼쪽 세로선. sel 로 활성 항목 선택자를 바꿀 수 있다(기본 .on).
+   첫 자리는 그냥 놓고, 그 뒤부터 element.animate() 로 이전 자리에서 새 자리로 움직인다.
+   CSS transition 을 안 쓰는 이유: 휴대폰 목차 띠가 헤더 안으로 옮겨 붙는 프레임에 항목이 같이 바뀌면
+   방금 옮겨진 요소라 transition 이 시작되지 않는다. animate() 는 DOM 이동과 무관하게 움직인다.
+   window.kosIndMs 로 길이를 바꿀 수 있다(시험용). 움직임 줄이기 설정이면 바로 놓는다. */
+window.kosInd=function(box,axis,sel){
+  if(!box)return function(){};
+  if(box.__ind)return box.__ind;
+  var ind=document.createElement('span');ind.className='ind '+(axis==='y'?'ind-v':'ind-h');ind.setAttribute('aria-hidden','true');box.appendChild(ind);
+  var last=null,placed=false,anim=null,rm=window.matchMedia?matchMedia('(prefers-reduced-motion:reduce)'):null;
+  function move(force){
+    var a=box.querySelector(sel||'.on');
+    if(!a){ind.style.opacity='0';last=null;return}
+    if(a===last&&!force)return;
+    var b=box.getBoundingClientRect(),r=a.getBoundingClientRect();
+    if(!r.width&&!r.height)return;
+    last=a;
+    var x=r.left-b.left-box.clientLeft+box.scrollLeft,y=r.top-b.top-box.clientTop+box.scrollTop;
+    var to={transform:'translate('+x+'px,'+(axis==='y'?y:y+r.height-2)+'px)'};
+    if(axis==='y')to.height=r.height+'px';else to.width=r.width+'px';
+    var from=null;
+    if(placed&&ind.animate&&!(rm&&rm.matches)){var cs=getComputedStyle(ind);from={transform:cs.transform};if(axis==='y')from.height=cs.height;else from.width=cs.width;if(anim){anim.cancel();anim=null}}
+    ind.style.opacity='';ind.style.transform=to.transform;if(axis==='y')ind.style.height=to.height;else ind.style.width=to.width;
+    if(from){anim=ind.animate([from,to],{duration:window.kosIndMs||300,easing:'cubic-bezier(.2,.8,.2,1)'});anim.onfinish=function(){anim=null}}
+    placed=true;
+  }
+  addEventListener('resize',function(){move(true)});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){move(true)});
+  box.__ind=move;move();return move;
+};
+</script>
+<style>
+:root{
+  --bg:#f9f8f6; --surface:#ffffff; --surface-2:#f1efeb;
+  --ink:#141414; --ink-72:rgba(20,20,20,.72); --ink-62:rgba(20,20,20,.62); --ink-30:rgba(20,20,20,.30);
+  --hair:rgba(20,20,20,.08); --line:rgba(20,20,20,.14);
+  --up:#c8102e; --down:#1e5fbf; --up-bg:rgba(200,16,46,.08); --down-bg:rgba(30,95,191,.08);
+  --font:"Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --wrap:1120px; --pad:32px; --nav-bar:rgba(249,248,246,.72);
+  color-scheme:light;
+}
+:root[data-theme="dark"]{
+  --bg:#0d0d0e; --surface:#161617; --surface-2:#1e1e20;
+  --ink:#ececea; --ink-72:rgba(236,236,234,.72); --ink-62:rgba(236,236,234,.62); --ink-30:rgba(236,236,234,.30);
+  --hair:rgba(255,255,255,.08); --line:rgba(255,255,255,.14);
+  --up:#f0655f; --down:#6f9cf5; --up-bg:rgba(240,101,95,.12); --down-bg:rgba(111,156,245,.12);
+  --nav-bar:rgba(13,13,14,.72);
+  color-scheme:dark;
+}
+/* 가격 방향 색 — 한국어는 오르면 빨강 · 내리면 파랑, 영어는 해외 관례대로 오르면 초록 · 내리면 빨강(실사이트 영어판과 같은 방향).
+   --up 은 오류 · 경고 글자에도 쓰므로 그대로 두고, 가격 방향(.up · .down · 강세/약세 점)만 이 둘을 쓴다.
+   초록은 빨강과 밝기를 맞췄다 — 바탕에 대한 명암비 라이트 5.4:1 · 다크 6.5:1(빨강 5.5:1 · 6.2:1). */
+:root{--rise:var(--up);--fall:var(--down)}
+:root[lang="en"]{--rise:#0a7637;--fall:var(--up)}
+:root[lang="en"][data-theme="dark"]{--rise:#31aa64}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(84px + var(--kos-bar-h,0px));overflow-x:clip}
+/* 페이지 전환 — 실사이트와 같은 문서 간 크로스페이드(크롬 126+ · 사파리 18.2+). 띠와 헤더는 이름을 줘 제자리에 두고 본문만 바뀐다. */
+@view-transition{navigation:auto}
+.kos-staging-bar{view-transition-name:kos-bar} .nav{view-transition-name:kos-nav}
+/* 옛 모듈(auth-state · settings-panel · auth-guard · consent · checkout)이 쓰는 토큰 이름 — 새 토큰에 잇는다. 모듈을 새 이름으로 고칠 때까지의 다리 */
+:root{--font-sans:var(--font);--fg-1:var(--ink);--fg-2:var(--ink-72);--fg-3:var(--ink-62);--bg-1:var(--surface);--border-2:var(--line);--shadow-2:0 8px 24px rgba(20,20,20,.08);--brand-blue:var(--ink);--brand-cyan:var(--ink-72);--radius-sm:8px;--radius-md:12px;--radius-lg:16px}
+[hidden]{display:none!important} /* hidden 속성이 .pager{display:flex} 같은 클래스 규칙에 밀리지 않게 */
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums lining-nums;word-break:keep-all;overflow-wrap:anywhere}
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(20,20,20,.14)} :root[data-theme="dark"] ::selection{background:rgba(255,255,255,.22)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.up{color:var(--rise)} .down{color:var(--fall)} .flat{color:var(--ink-62)}
+/* 헤더 — 사이트 규칙 그대로(60px · 맨 위 투명 · 내리면 띠) */
+.nav{position:sticky;top:var(--kos-bar-h,0px);z-index:50;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0;transition:background-color .2s,box-shadow .2s}
+.nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--hair);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+.nav-in{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;position:relative}
+.brand img{height:14px;display:block} .brand .dk{display:none} :root[data-theme="dark"] .brand .lt{display:none} :root[data-theme="dark"] .brand .dk{display:block}
+.links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:34px;width:max-content;white-space:nowrap}   /* 28 → 34(사장 2026-10-02) — 랜딩 머리와 같은 값이어야 페이지를 옮길 때 메뉴가 움직이지 않는다 */
+.links a{font:500 14px/1 var(--font);color:var(--ink-72);transition:color .12s} .links a:hover,.links a.on{color:var(--ink)} .links a.on{font-weight:600}
+.right{display:flex;align-items:center;gap:6px} .login{font:600 13px/1 var(--font);color:var(--ink-72);padding:8px 10px} .login:hover{color:var(--ink)}
+.ib{width:38px;height:38px;border:0;background:transparent;color:var(--ink-72);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;border-radius:10px} .ib:hover{color:var(--ink)} .ib svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.menu{display:none}
+@media (max-width:820px){.links,.login,.right .acct,.right .acct.show{display:none} .menu{display:inline-flex}}  /* 휴대폰은 햄버거 메뉴 안(#mauth)에 설정·로그아웃이 있어 아바타를 겹쳐 두지 않는다. 뒤에 오는 .acct.show{inline-flex} 보다 세게(.right 를 붙여) 적어야 로그인 뒤에도 숨는다 */
+/* 휴대폰 메뉴 — ☰ 를 누르면 헤더 아래를 페이지색 한 장이 다 덮는다. 큰 글자 다섯 · 계정 · 맨 아래 작은 링크.
+   (9/26 사장: 헤더에서 내려오던 목록이 안 예쁘다 — 그건 기능만 있던 자리였다.) nav 바깥에 둔다: .nav.scrolled 의
+   backdrop-filter 가 fixed 의 기준이 되어 안에 두면 내린 뒤 여는 순간 높이가 0 이 된다. */
+.menu .x{display:none} .nav.menu-open .menu .ham{display:none} .nav.menu-open .menu .x{display:block}
+.mmenu{display:none;position:fixed;top:calc(60px + var(--kos-bar-h,0px));left:0;right:0;bottom:0;z-index:49;background:var(--bg);flex-direction:column;box-sizing:border-box;padding:22px var(--pad) max(28px,env(safe-area-inset-bottom));overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+@media (max-width:820px){.mmenu.open{display:flex;animation:mmIn .18s ease-out}} @keyframes mmIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}} @media (prefers-reduced-motion:reduce){.mmenu.open{animation:none}}
+.mm-links{display:flex;flex-direction:column} .mm-links a{display:block;padding:10px 0;font:600 28px/36px var(--font);letter-spacing:-.02em;color:var(--ink-72);text-decoration:none} .mm-links a.on{color:var(--ink);font-weight:700}
+.mmenu .sep{height:1px;background:var(--hair);margin:20px 0 22px}
+.mm-auth{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px} .mm-auth a,.mm-auth button{border:0;background:none;padding:0;font:600 16px/24px var(--font);color:var(--ink);text-decoration:none;cursor:pointer}
+.mm-foot{margin-top:auto;padding-top:32px;display:flex;flex-wrap:wrap;gap:6px 18px} .mm-foot a{font:400 13px/20px var(--font);color:var(--ink-62);text-decoration:none}
+/* 계정(로그인 상태) — 이메일 첫 글자 동그라미와 작은 메뉴. 시안은 ?user=이메일 로 켠다 */
+.acct{position:relative;display:none;align-items:center} .acct.show{display:inline-flex} .right.user .login{display:none}
+.avatar{width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--bg);font:600 13px/1 var(--font);display:inline-flex;align-items:center;justify-content:center;border:0;cursor:pointer;padding:0;margin:0 4px}
+.acct-menu{display:none;position:absolute;right:0;top:calc(100% + 10px);min-width:220px;background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:6px 0;box-shadow:0 8px 24px rgba(20,20,20,.08);z-index:60}
+.acct.open .acct-menu{display:block} .acct-menu .em{padding:8px 16px 10px;font:400 12px/16px var(--font);color:var(--ink-62);border-bottom:1px solid var(--hair);margin-bottom:4px;word-break:break-all}
+.acct-menu a,.acct-menu button{display:block;width:100%;box-sizing:border-box;text-align:left;border:0;background:none;padding:9px 16px;font:500 14px/20px var(--font);color:var(--ink-72);cursor:pointer;text-decoration:none} .acct-menu a:hover,.acct-menu button:hover{background:var(--surface-2);color:var(--ink)}
+/* 단추 */
+/* 활성 표시선(kosInd) — 목차 세로선·밑줄 탭·쪽 번호가 쓴다. 움직임은 IND_JS 의 animate() */
+.ind{position:absolute;left:0;top:0;background:var(--ink);pointer-events:none;will-change:transform} .ind-v{width:2px} .ind-h{height:2px}
+.btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 18px;border-radius:999px;border:0;font:600 14px/1 var(--font);cursor:pointer;transition:background-color .12s,color .12s} .btn.ico{padding-left:14px}
+.btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+.btn-ink,.btn-primary{background:var(--ink);color:var(--bg)} .btn-ink:hover,.btn-primary:hover{opacity:.9}
+/* 키보드 포커스 — 먹색 2px 윤곽을 2px 띄워 두른다(브라우저 기본 고리는 파랑·이중선이라 옷과 따로 논다). 마우스로 누를 땐 안 나온다(:focus-visible).
+   가로로 넘기는 띠(.chips·.tabs·.seg·.sorts·설정 탭·표 틀) 안에서는 윤곽이 잘리므로 안쪽에 그린다. 밑줄 입력칸·검색창은 원래 밑줄이 먹색으로 바뀌는데, 거기에 1px 을 더해 2px 로 굵게 한다. */
+:is(a,button,summary,select,[tabindex],[role=tab],[role=button],[role=radio],input[type=checkbox],input[type=radio]):focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+:is(.chips,.tabs,.seg,.sorts,.ks-nav,.tbl-wrap,.fchips) :focus-visible{outline-offset:-2px}
+:is(.fld input:not([type=checkbox]):not([type=radio]),.fld textarea,.range-inputs input,.dlg textarea,.dlg input.type,.ks-dlg-d,.wd-detail,.wd-type):focus-visible,.search:focus-within{box-shadow:0 1px 0 0 var(--ink)}
+/* 로그인 가림창 — auth-guard.js 가 그리는 .kg-* . 모듈은 실사이트와 같아야 해서(auth-table.test) 손대지 않고 옷만 여기서 덮는다.
+   모듈이 <style id=kosGateCss> 를 나중에 꽂고 다크 규칙이 :root[data-theme=dark] .kg-*(0,3,0)라, :root[data-theme] body …(0,3,1)로 적어야 라이트·다크 모두 이긴다. 덮개는 헤더 아래부터 페이지색으로
+   덮고(z 40 — 헤더 50·휴대폰 메뉴 49 아래라 메뉴·테마 단추가 그대로 산다), 자물쇠는 먹색 선, 단추는 알약이다. */
+:root[data-theme] body .kg-overlay{top:calc(60px + var(--kos-bar-h,0px));left:0;right:0;bottom:0;z-index:40;align-items:flex-start;padding:clamp(56px,14vh,128px) var(--pad) 40px;
+  background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}
+:root[data-theme] body .kg-overlay.kg-dismiss{background:var(--bg)}
+:root[data-theme] body .kg-card{width:min(100%,400px);padding:0;border-radius:0;background:transparent;border:0;box-shadow:none;text-align:center}
+:root[data-theme] body .kg-ico{width:auto;height:auto;margin:0 0 22px;border-radius:0;background:none;display:block}
+:root[data-theme] body .kg-ico svg{width:30px;height:30px;stroke:var(--ink);stroke-width:1.4;fill:none}
+:root[data-theme] body .kg-title{margin:0 0 10px;font:600 24px/32px var(--font);letter-spacing:-.01em;color:var(--ink)}
+:root[data-theme] body .kg-sub{margin:0 0 28px;font:400 15px/24px var(--font);color:var(--ink-62)}
+:root[data-theme] body .kg-btns{display:flex;flex-direction:column;gap:10px;max-width:320px;margin:0 auto}
+:root[data-theme] body .kg-btn{display:flex;align-items:center;justify-content:center;height:48px;padding:0 20px;border-radius:999px;border:1px solid var(--line);
+  background:transparent;color:var(--ink);font:600 15px/1 var(--font);text-decoration:none;box-shadow:none;cursor:pointer}
+:root[data-theme] body .kg-btn:hover{background:var(--surface-2)}
+:root[data-theme] body .kg-primary,:root[data-theme] body .kg-primary:hover{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+:root[data-theme] body .kg-primary:hover{opacity:.9}
+:root[data-theme] body .kg-home{display:inline-block;margin-top:24px;font:400 14px/20px var(--font);color:var(--ink-62);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
+:root[data-theme] body .kg-home:hover{color:var(--ink)}
+:root[data-theme] body .kg-x{position:fixed;top:calc(66px + var(--kos-bar-h,0px));right:calc(var(--pad) - 10px);width:44px;height:44px;border:0;border-radius:22px;background:none;
+  color:var(--ink-62);font-size:22px;line-height:44px;text-align:center;cursor:pointer}
+:root[data-theme] body .kg-x:hover{color:var(--ink)}
+.btn-soft{background:var(--surface-2);color:var(--ink)} .btn-soft:hover{background:var(--line)}
+/* 절 제목 · 더보기 링크 */
+.sec-h{display:flex;align-items:baseline;gap:14px;margin:0 0 22px}
+.sec-h .num{font:600 13px/20px var(--font);color:var(--ink-62)}
+.sec-h h2{margin:0;font:700 24px/32px var(--font);letter-spacing:-.02em}
+.sec-h .more{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font:500 14px/20px var(--font);color:var(--ink-72);white-space:nowrap} .sec-h .more:hover{color:var(--ink)}
+.sec-h .more svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+/* 표 — 틀 없이 줄로만 */
+.tbl-wrap{overflow-x:auto}
+.tbl{width:100%;border-collapse:collapse}
+.tbl caption{text-align:left;padding:0 0 10px} .tbl .cap{display:flex;justify-content:space-between;align-items:baseline;font:500 13px/20px var(--font);color:var(--ink-72)} .tbl .cap .u{font-weight:400;color:var(--ink-62)}
+.tbl th,.tbl td{padding:11px 12px;font:400 14px/20px var(--font);text-align:right;white-space:nowrap;border-top:1px solid var(--hair)}
+.tbl thead th{font:500 12px/16px var(--font);color:var(--ink-62);border-top:0;border-bottom:1px solid var(--line);padding-top:0}
+.tbl th:first-child,.tbl td:first-child{text-align:left;padding-left:0;font-weight:500} .tbl th:last-child,.tbl td:last-child{padding-right:0}
+.tbl tbody th{font-weight:500}
+/* 푸터 */
+.foot{margin-top:96px;border-top:1px solid var(--hair);padding:56px 0 48px}
+.foot .brand img{height:13px}
+.fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;max-width:560px;margin-top:32px}
+.fcol{display:flex;flex-direction:column;gap:9px} .fcol h4{margin:0 0 4px;font:600 12px/16px var(--font);color:var(--ink-62)} .fcol a{font:400 14px/20px var(--font);color:var(--ink-72)} .fcol a:hover{color:var(--ink)}
+.biz{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:4px 16px;font:400 12px/18px var(--font);color:var(--ink-62)} .copy{margin-top:32px;font:400 12px/18px var(--font);color:var(--ink-62)}
+/* 휴대폰 사파리 상태바·주소창 뒤 색 — 페이지색 띠 (CLAUDE.md 2026-09-24) */
+#kosEdgeTop,#kosEdgeBot{display:none}
+@media (hover:none) and (pointer:coarse){#kosEdgeTop,#kosEdgeBot{display:block;position:fixed;left:0;right:0;height:12px;z-index:60;pointer-events:none;opacity:.2;background:var(--bg)} #kosEdgeTop{top:0} #kosEdgeBot{bottom:0}}
+
+/* 글 한 단 — 읽기 폭 720 */
+.mb{max-width:720px;padding:44px 0 0}
+.mb-date{font:500 13px/20px var(--font);color:var(--ink-62)} .mb-date::before{content:"모닝브리핑 · "} html[lang="en"] .mb-date::before{content:"Morning Brief · "}
+.mb h1{margin:12px 0 0;font:700 36px/48px var(--font);letter-spacing:-.025em;text-wrap:balance}
+.mb-lead{margin:18px 0 0;font:400 18px/30px var(--font);color:var(--ink-72)}
+.mb-meta{margin-top:14px;font:400 13px/20px var(--font);color:var(--ink-62)}
+/* 요약 — 상자 대신 위아래 줄 */
+.mb-sum{margin:36px 0 0;padding:26px 0 8px;border-top:1px solid var(--line);border-bottom:1px solid var(--hair)}
+.mb-sum-h{font:600 12px/16px var(--font);color:var(--ink-62);margin:0 0 14px}
+.mb-sum-p{margin:0 0 18px;font:400 18px/30px var(--font);letter-spacing:-.005em}
+/* 절 */
+.mb-sec{padding-top:48px}
+.mb-sec h2{margin:0 0 18px;font:700 24px/32px var(--font);letter-spacing:-.02em;text-wrap:balance}
+.mb-sec p{margin:0 0 20px;font:400 17px/28px var(--font);letter-spacing:-.005em} .mb-sec p:last-child{margin-bottom:0}
+.mb-sec a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px;text-decoration-thickness:1px} .mb-sec a:hover{text-decoration-color:var(--ink)}
+.mb-sec b{font-weight:600}
+/* KOSAI 리포트 확인 지점 — 우리 리포트에서 나온 절이라 줄 하나로 구분 */
+.mb-sec--cov{margin-top:56px;padding-top:36px;border-top:1px solid var(--line)}
+.mb-src{font:600 12px/16px var(--font);color:var(--ink-62);margin:0 0 10px}
+.mb-disc{margin:56px 0 0;padding-top:18px;border-top:1px solid var(--hair);font:400 12px/18px var(--font);color:var(--ink-62)}
+
+
+/* 지난 호 — 날짜 줄의 호수 · 지난 호 알림 · 이전 호와 다음 호 */
+.mb-date[data-no]::before{content:"모닝브리핑 " attr(data-no) " · "} html[lang="en"] .mb-date[data-no]::before{content:"Morning Brief No. " attr(data-n) " · "}
+.mb-old{margin:0 0 22px;padding:0 0 12px;border-bottom:1px solid var(--hair);font:500 13px/20px var(--font);color:var(--ink-62)}
+.mb-old a{margin-left:6px;color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .mb-old a:hover{text-decoration-color:var(--ink)}
+.mb-nav{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 40px;margin:56px 0 0;border-top:1px solid var(--line)}
+.mb-nv{display:block;padding:20px 0 0}
+.mb-nv--next{grid-column:2;text-align:right}
+.mb-nv-k{display:block;font:600 12px/16px var(--font);color:var(--ink-62)}
+.mb-nv-t{display:block;margin-top:8px;font:600 16px/24px var(--font);letter-spacing:-.01em;color:var(--ink);text-wrap:pretty}
+.mb-nv:hover .mb-nv-t{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
+.mb-nv-d{display:block;margin-top:6px;font:400 13px/20px var(--font);color:var(--ink-62)} .mb-nv-d span+span::before{content:" · "}
+.mb-all{margin:32px 0 0;padding-top:18px;border-top:1px solid var(--hair)}
+.mb-all a{display:inline-flex;align-items:center;gap:6px;font:500 14px/20px var(--font);color:var(--ink-72)} .mb-all a:hover{color:var(--ink)}
+.mb-all svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+@media (max-width:820px){
+  :root{--pad:20px}
+  .nav{display:block;height:60px;padding:0} .nav-in{height:60px;padding:0 var(--pad)}
+  .nav,.nav.scrolled{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}
+  .sec-h h2{font-size:22px;line-height:28px}
+  .tbl th,.tbl td{padding:10px 10px;font-size:13px} .tbl th:first-child,.tbl td:first-child{position:sticky;left:0;background:var(--bg)}
+}
+@media (max-width:820px){
+  .mb{padding:20px 0 0} .mb h1{font-size:28px;line-height:38px} .mb-lead{font-size:16px;line-height:27px}
+  .mb-sum{margin-top:28px;padding:22px 0 4px} .mb-sum-p{font-size:16px;line-height:27px}
+  .mb-sec{padding-top:40px} .mb-sec h2{font-size:21px;line-height:29px} .mb-sec p{font-size:16px;line-height:27px}
+  .mb-sec--cov{margin-top:44px;padding-top:30px}
+}
+@media (max-width:820px){
+  .mb-nav{grid-template-columns:minmax(0,1fr);margin-top:44px}
+  .mb-nv--next{grid-column:1;text-align:left;margin-top:20px;border-top:1px solid var(--hair)}
+  .mb-nv-t{font-size:15px;line-height:23px}
+}
+</style>
+</head>
+<body>
+<div class="kos-staging-bar">
+  <b>STAGING</b><span><em class="long">미리보기입니다. 결제는 모의 결제이며 실제로 돈이 오가지 않습니다.</em><em class="short">모의 결제 · 돈이 오가지 않습니다</em><em class="tiny">모의 결제</em></span>
+  <a href="#" id="kosDemoReset">구독 초기화</a>
+  <a href="../">실제 사이트로</a>
+</div>
+<style>.kos-staging-bar{position:sticky;top:0;z-index:60;display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:9px 16px;background:#b4341f;color:#fff;font:600 12.5px var(--font),system-ui,sans-serif}
+.kos-staging-bar b{font-weight:800;letter-spacing:.05em} .kos-staging-bar span{margin-right:auto} .kos-staging-bar em{font-style:normal} .kos-staging-bar .short,.kos-staging-bar .tiny{display:none} .kos-staging-bar a{color:#fff;text-decoration:underline;text-underline-offset:2px}
+@media (max-width:640px){.kos-staging-bar{gap:10px;padding:8px 16px;font-size:12px}.kos-staging-bar .long{display:none}.kos-staging-bar .short{display:inline}}
+@media (max-width:400px){.kos-staging-bar .short{display:none}.kos-staging-bar .tiny{display:inline}}</style>
+<script>(function(){var bar=document.querySelector('.kos-staging-bar');if(!bar)return;
+  function measure(){document.documentElement.style.setProperty('--kos-bar-h',bar.offsetHeight+'px')}
+  measure();addEventListener('resize',measure);addEventListener('load',measure);if(window.ResizeObserver)new ResizeObserver(measure).observe(bar);})();
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('#kosDemoReset');if(!a)return;e.preventDefault();
+  try{if(window.KOSDemo&&KOSDemo.reset)KOSDemo.reset();else['kos-demo-sub','kos-demo-reads','kos-demo-pays','kos-demo-reasons'].forEach(function(k){localStorage.removeItem(k)})}catch(x){}location.reload()});</script>
+<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>
+<nav class="nav" id="nav"><div class="nav-in">
+  <a class="brand" href="./"><img class="lt" src="../assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="../assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <div class="links"><a href="Home.html">홈</a><a href="Reports.html">리포트</a><a href="industry.html">업종 분석</a><a href="Watchlist.html">관심종목</a><a href="pricing.html">멤버십</a><a href="brief.html" class="on">모닝브리핑</a></div>
+  <div class="right" id="navRight"><a class="login" href="Login.html">로그인</a><div class="acct" id="acct"></div>
+    <button class="ib" id="themeBtn" aria-label="테마 전환"><svg viewBox="0 0 24 24" id="themeIcon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    <button class="ib menu" id="menuBtn" aria-label="메뉴" aria-expanded="false" aria-controls="mmenu"><svg class="ham" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+</div>
+</nav>
+<div class="mmenu" id="mmenu"><div class="mm-links"><a href="Home.html">홈</a><a href="Reports.html">리포트</a><a href="industry.html">업종 분석</a><a href="Watchlist.html">관심종목</a><a href="pricing.html">멤버십</a><a href="brief.html" class="on">모닝브리핑</a></div><div class="sep"></div><div class="mm-auth" id="mauth"><a href="Login.html">로그인</a><a href="Signup.html">회원가입</a></div>
+<div class="mm-foot"><a href="About.html">회사 소개</a><a href="Contact.html">문의하기</a><a href="Feedback.html">피드백</a><a href="Terms.html">이용약관</a><a href="Privacy.html">개인정보 처리방침</a></div></div>
+<main class="wrap">
+  <article class="mb">
+    <p class="mb-old">지난 호입니다.<a href="brief.html">최신 호 보기</a></p>
+    <header class="mb-head">
+      <div class="mb-date" data-no="제23호" data-n="23">2026년 9월 18일 (금) 07:28</div>
+      <h1>인상 이틀째, 10년물은 4.95%로 물러섰다 — 원화 기준값은 1,380원</h1>
+      <div class="mb-meta">국내 증시 개장 · 직전 거래일 9월 17일(목) 종가 기준</div>
+    </header>
+
+    <aside class="mb-sum">
+      <div class="mb-sum-h">요약</div>
+      <p class="mb-sum-p" data-i18n-block>연준 인상 다음 날 뉴욕은 금리가 내리고 반도체가 3% 넘게 오르며 되돌렸지만, 원화 기준값은 1,380원으로 올라섰고 국내 보도는 한은의 연내 추가 인상 가능성과 금감원의 증시·환율 변동성 점검을 함께 전했다.</p>
+      <p class="mb-sum-p" data-i18n-block>직전 국내 장은 시가총액 가중으로 사실상 제자리였는데 안에서는 조선·항공방산·정유가 3~5% 오르고 전자부품은 밀리는 갈림이 있었고, 거래는 여전히 반도체 두 종목에 몰렸지만 주가는 내렸다. 다음 주에는 예정된 미국 지표가 없고 9월 29일 JOLTS부터 GDP·PCE·고용보고서가 이어진다.</p>
+    </aside>
+
+    <section class="mb-sec">
+      <h2>유가와 금리가 함께 내려오자 마이크론이 5.50% 올랐다</h2>
+      <p data-i18n-block>9월 17일 뉴욕은 S&amp;P 500 +1.14%, 나스닥 +1.69%, 다우 +0.61%로 마감했다. 로이터는 유가가 진정되고 국채 수익률이 내리면서 기술주가 상승을 이끌었다고 전했고, WSJ은 연준 결정 뒤 국채 수익률이 내렸다고 보도했다.</p>
+      <p data-i18n-block>숫자로 보면 10년물 4.95%(전일 5.01%), WTI 101.09달러 -1.31%, VIX 15.44로 -12.82%다. 인상 발표 당일 5% 위에 올라섰던 장기금리가 하루 만에 아래로 내려온 것이 이날 되돌림의 축이다.</p>
+      <p data-i18n-block>그 힘은 반도체에 가장 크게 실렸다. 필라델피아 반도체 지수 +3.14%, 마이크론 977.50달러 +5.50%, TSMC 430.26달러 +3.00%, 엔비디아 219.34달러 +2.54%다. 원자재 쪽에서는 구리가 6.61달러로 2.84% 올랐고 금은 4,380.60달러로 0.16% 내렸다.</p>
+    </section>
+
+    <section class="mb-sec">
+      <h2>8조원이 두 종목을 지나갔는데 둘 다 마이너스로 끝났다</h2>
+      <p data-i18n-block>9월 17일 국내 거래대금 1·2위는 <a href="stock.html?ticker=000660">SK하이닉스</a> 4조 9,178억원(-0.80%)과 <a href="stock.html?ticker=005930">삼성전자</a> 3조 48억원(-0.39%)이었다. 합쳐 약 8조원이 오갔는데 등락은 1% 안쪽 하락이다.</p>
+      <p data-i18n-block>연합뉴스와 MBC는 SK하이닉스와 인텔의 미국 생산 협상 보도에 두 회사 주가가 나란히 올랐다고 전했지만, 그 재료가 국내 종가로는 남지 않았다. 반도체 업종 전체도 -0.52%였다. 간밤 필라델피아 반도체가 3.14% 오른 자리에서 오늘 이 간격이 좁혀지는지가 첫 확인 지점이다.</p>
+      <p data-i18n-block>같은 반도체 업종 안에서도 방향은 갈렸다. <a href="stock.html?ticker=078350">한양디지텍</a>은 25.49% 올라 이날 상승률 맨 위였고, <a href="stock.html?ticker=420770">기가비스</a>는 5.48% 내려 하락 상위에 있었다.</p>
+    </section>
+
+    <section class="mb-sec">
+      <h2>정유가 하루 만에 하위 첫 자리에서 상위 셋째로 올라왔다</h2>
+      <p data-i18n-block>9월 17일 장은 시가총액 가중 +0.06%, 종목 중앙값 +0.10%로 무게만 보면 제자리였다. 상승 1,363종목·하락 1,017종목·보합 303종목으로 폭은 위쪽이 넓었지만, 실제 크기는 업종별로 갈렸다.</p>
+      <p data-i18n-block>상위는 조선 +5.24%, 항공·방산 +4.56%, 정유 +3.59%, 운송·물류 +1.89%, 기계·장비 +1.75%였고 하위는 전자·부품 -1.93%, 미디어·엔터 -1.61%, 2차전지 -0.83%였다.</p>
+      <p data-i18n-block>개별로는 <a href="stock.html?ticker=272210">한화시스템</a>이 12.65% 올랐고, 비즈니스포스트와 글로벌이코노믹은 아랍에미리트 통합 대공망 구축 참여를 이유로 들었다.</p>
+      <p data-i18n-block><a href="stock.html?ticker=329180">HD현대중공업</a> +6.58%, <a href="stock.html?ticker=010140">삼성중공업</a> +6.44%, <a href="stock.html?ticker=009540">HD한국조선해양</a> +4.81%로 조선이 함께 움직였고 뉴스핌은 수주 기대 회복을 배경으로 짚었다. 눈여겨볼 곳은 정유다.</p>
+      <p data-i18n-block>하루 전 이 브리핑은 WTI 3.60% 하락과 함께 정유가 업종 하위 첫 자리로 밀렸다고 적었는데, 9월 17일 WTI가 1.31% 더 내리는 동안 <a href="stock.html?ticker=010950">S-Oil</a>은 5.62% 올랐다. 반대편에서는 <a href="stock.html?ticker=009150">삼성전기</a>가 5,804억원 거래에 3.69% 내려 대형주 부진 첫 자리였다.</p>
+    </section>
+
+    <section class="mb-sec">
+      <h2>달러인덱스는 100.22로 내렸는데 원화 기준값만 1.20% 올랐다</h2>
+      <p data-i18n-block>9월 17일 기준 원/달러 기준값은 1,380.00원으로 직전 1,363.57원 대비 1.20% 올랐다. 같은 날 달러인덱스는 100.22로 0.09% 내렸고 미 장기금리도 물러섰다. 달러 전반이 약해진 날에 원화만 반대로 움직인 셈이다.</p>
+      <p data-i18n-block>서울파이낸스·자본시장뉴스는 매파적 연준을 배경으로 원·달러가 1,380원대로 올라섰다고 전했고, 연합뉴스와 디지털데일리는 미국의 긴축 전환을 두고 한국은행의 연내 추가 인상 가능성과 11월 금통위로 쏠린 관심을 다뤘다. 조선비즈와 디지털데일리는 금융감독원이 미 금리 인상에 따른 증시·환율 변동성을 집중 점검한다고 보도했다.</p>
+    </section>
+
+    <section class="mb-sec">
+      <h2>다음 주는 미 지표 공백, 9월 29일부터 넷이 연달아</h2>
+      <p data-i18n-block>일정표에 잡힌 미국 지표는 9월 29일(화) 구인·이직(JOLTS), 9월 30일(수) GDP와 개인소비·PCE, 10월 2일(금) 고용보고서다. 즉 다음 주(9월 21~27일)에는 확인할 지표가 없고, 그 다음 주에 물가·성장·고용이 사흘 만에 몰려 나온다. 인상 직후 금리가 5% 위와 아래를 오가는 구간에서 다음 주는 지표 없이 가격만 움직이는 주간이 된다.</p>
+    </section>
+
+    <section class="mb-sec mb-sec--cov">
+      <div class="mb-src">KOSAI 리포트 확인 지점</div>
+      <h2>에코프로 정정 반기보고서 — 첫 가격 신호는 9월 28일 권리 거래</h2>
+      <p data-i18n-block><a href="stock.html?ticker=086520">에코프로</a>(시가총액 11.2조원)의 기재정정 반기보고서(2026년 6월)가 접수됐다. 직전 장에서 2차전지 업종은 -0.83%였고 <a href="stock.html?ticker=003670">포스코퓨처엠</a>은 3.19% 내려 대형주 부진 쪽에 있었다.</p>
+      <p data-i18n-block>오늘자 KOSAI 리포트는 원료 내재화와 유상증자를 이 지주사의 두 축으로 놓고, 확인 지점으로 9월 28일부터 10월 2일까지의 에코프로비엠 신주인수권증서 상장·거래 기간을 먼저 꼽았다 — 권리의 가격과 거래량이 증자에 대한 시장 반응을 가장 먼저 보여주는 자리라는 이유다.</p>
+      <p data-i18n-block>그 다음이 10월 12일 최종 발행가액 확정과 10월 15~21일 청약으로, 지주사가 실제로 넣는 금액과 실권 규모가 그때 드러난다. 같은 리포트는 니켈 수급권 확대를 강세 쪽에, 지분 희석 부담과 양극재 가동률을 약세 쪽에 적어 두었다.</p>
+    </section>
+
+    <p class="mb-disc" data-i18n-block>본 자료는 공시(DART)·국내 시장 데이터와 공개된 해외 시장·일정 자료를 바탕으로 작성한 정보 제공 자료이며 투자 권유가 아닙니다. 국내 수치는 2026년 9월 17일 종가 기준입니다.</p>
+    <nav class="mb-nav" aria-label="이전 호와 다음 호"><a class="mb-nv mb-nv--prev" href="brief-2026-09-17.html"><span class="mb-nv-k">이전 호</span><span class="mb-nv-t">연준이 3년 만에 올렸다 — 달러인덱스 100.31, 원화 기준값 1,376원</span><span class="mb-nv-d"><span>제22호</span><span>2026년 9월 17일 (목)</span></span></a><a class="mb-nv mb-nv--next" href="brief-2026-09-21.html"><span class="mb-nv-k">다음 호</span><span class="mb-nv-t">유가는 96달러로 내려왔는데, 10년물은 다시 5%에 앉았다</span><span class="mb-nv-d"><span>제24호</span><span>2026년 9월 21일 (월)</span></span></a></nav>
+    <p class="mb-all"><a href="brief-archive.html">지난 호 전체 보기 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </article>
+</main>
+<footer class="foot"><div class="wrap">
+  <a class="brand" href="./"><img class="lt" src="../assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="../assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <div class="fgrid">
+    <div class="fcol"><h4>서비스</h4><a href="Home.html">홈</a><a href="Reports.html">리포트</a><a href="industry.html">업종 분석</a><a href="Watchlist.html">관심종목</a><a href="pricing.html">멤버십</a><a href="brief.html">모닝브리핑</a></div>
+    <div class="fcol"><h4>회사</h4><a href="About.html">회사 소개</a><a href="Contact.html">문의하기</a><a href="Feedback.html">피드백</a></div>
+    <div class="fcol"><h4>정책</h4><a href="Terms.html">이용약관</a><a href="Privacy.html">개인정보 처리방침</a></div>
+  </div>
+  <div class="biz"><span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span><span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span></div>
+  <div class="copy">© 2026 KOSAI</div>
+</div></footer>
+<script type="application/json" data-kos-i18n>{"모닝 브리핑":"Morning Brief","2026년 9월 18일 (금) 07:28":"Friday, September 18, 2026 · 07:28 KST","국내 증시 개장 · 직전 거래일 9월 17일(목) 종가 기준":"Korean markets open · Figures as of the Thursday, September 17 close","본 자료는 공시(DART)·국내 시장 데이터와 공개된 해외 시장·일정 자료를 바탕으로 작성한 정보 제공 자료이며 투자 권유가 아닙니다. 국내 수치는 2026년 9월 17일 종가 기준입니다.":"This material is compiled from regulatory filings (DART), Korean market data and publicly available overseas market and calendar sources, for information purposes only. It is not investment advice. Korean figures are as of the September 17, 2026 close.","인상 이틀째, 10년물은 4.95%로 물러섰다 — 원화 기준값은 1,380원":"Day Two After the Hike: 10-Year Back to 4.95%, Won Reference at 1,380","요약":"In brief","연준 인상 다음 날 뉴욕은 금리가 내리고 반도체가 3% 넘게 오르며 되돌렸지만, 원화 기준값은 1,380원으로 올라섰고 국내 보도는 한은의 연내 추가 인상 가능성과 금감원의 증시·환율 변동성 점검을 함께 전했다.":"A day after the Fed hike, New York reversed course as yields fell and chips gained more than 3%, but the won's reference value climbed to 1,380 while domestic coverage pointed to the chance of another Bank of Korea hike this year and to the financial watchdog's review of equity and currency volatility.","직전 국내 장은 시가총액 가중으로 사실상 제자리였는데 안에서는 조선·항공방산·정유가 3~5% 오르고 전자부품은 밀리는 갈림이 있었고, 거래는 여전히 반도체 두 종목에 몰렸지만 주가는 내렸다. 다음 주에는 예정된 미국 지표가 없고 9월 29일 JOLTS부터 GDP·PCE·고용보고서가 이어진다.":"The last domestic session was essentially flat on a cap-weighted basis yet sharply split inside, with shipbuilding, aerospace-defense and refining up 3-5% while electronic components fell, and turnover again concentrated in two chip names that nonetheless closed lower. No US data is scheduled next week; JOLTS on September 29 opens a run that includes GDP, PCE and the jobs report.","유가와 금리가 함께 내려오자 마이크론이 5.50% 올랐다":"With Oil and Yields Both Easing, Micron Jumped 5.50%","9월 17일 뉴욕은 S&P 500 +1.14%, 나스닥 +1.69%, 다우 +0.61%로 마감했다. 로이터는 유가가 진정되고 국채 수익률이 내리면서 기술주가 상승을 이끌었다고 전했고, WSJ은 연준 결정 뒤 국채 수익률이 내렸다고 보도했다.":"On September 17 New York closed with the S&P 500 up 1.14%, the Nasdaq up 1.69% and the Dow up 0.61%. Reuters said tech led the advance as oil eased and Treasury yields dipped; the WSJ reported yields falling after the Fed decision.","숫자로 보면 10년물 4.95%(전일 5.01%), WTI 101.09달러 -1.31%, VIX 15.44로 -12.82%다. 인상 발표 당일 5% 위에 올라섰던 장기금리가 하루 만에 아래로 내려온 것이 이날 되돌림의 축이다.":"The numbers: the 10-year at 4.95% versus 5.01% the day before, WTI at $101.09 (-1.31%) and VIX at 15.44, down 12.82%. The axis of the rebound was the long end coming back below the 5% line it had crossed on decision day.","그 힘은 반도체에 가장 크게 실렸다. 필라델피아 반도체 지수 +3.14%, 마이크론 977.50달러 +5.50%, TSMC 430.26달러 +3.00%, 엔비디아 219.34달러 +2.54%다. 원자재 쪽에서는 구리가 6.61달러로 2.84% 올랐고 금은 4,380.60달러로 0.16% 내렸다.":"That move landed hardest on semiconductors: the SOX rose 3.14%, Micron closed at $977.50 (+5.50%), TSMC at $430.26 (+3.00%) and Nvidia at $219.34 (+2.54%). In commodities, copper rose 2.84% to $6.61 while gold slipped 0.16% to $4,380.60.","8조원이 두 종목을 지나갔는데 둘 다 마이너스로 끝났다":"Eight Trillion Won Passed Through Two Names, Both Ended Lower","9월 17일 국내 거래대금 1·2위는 SK하이닉스 4조 9,178억원(-0.80%)과 삼성전자 3조 48억원(-0.39%)이었다. 합쳐 약 8조원이 오갔는데 등락은 1% 안쪽 하락이다.":"The two largest turnover names on September 17 were <a href=\"stock.html?ticker=000660\">SK Hynix<\/a> at 4.92 trillion won (-0.80%) and <a href=\"stock.html?ticker=005930\">Samsung Electronics<\/a> at 3.00 trillion won (-0.39%) — roughly 8 trillion won changing hands for declines of less than 1%. Yonhap and MBC reported that shares of SK Hynix and Intel both rose on news of talks over US production, but that catalyst did not survive into the domestic close.","연합뉴스와 MBC는 SK하이닉스와 인텔의 미국 생산 협상 보도에 두 회사 주가가 나란히 올랐다고 전했지만, 그 재료가 국내 종가로는 남지 않았다. 반도체 업종 전체도 -0.52%였다. 간밤 필라델피아 반도체가 3.14% 오른 자리에서 오늘 이 간격이 좁혀지는지가 첫 확인 지점이다.":"The semiconductor sector as a whole finished at -0.52%. With the SOX up 3.14% overnight, whether that gap narrows today is the first thing to check.","같은 반도체 업종 안에서도 방향은 갈렸다. 한양디지텍은 25.49% 올라 이날 상승률 맨 위였고, 기가비스는 5.48% 내려 하락 상위에 있었다.":"Within that same semiconductor sector the direction split: <a href=\"stock.html?ticker=078350\">Hanyang Digitech<\/a> rose 25.49%, the day's biggest gainer, while <a href=\"stock.html?ticker=420770\">Gigavis<\/a> fell 5.48%, among the day's larger decliners.","정유가 하루 만에 하위 첫 자리에서 상위 셋째로 올라왔다":"Refining Went From Worst Sector to Third-Best in a Single Day","9월 17일 장은 시가총액 가중 +0.06%, 종목 중앙값 +0.10%로 무게만 보면 제자리였다. 상승 1,363종목·하락 1,017종목·보합 303종목으로 폭은 위쪽이 넓었지만, 실제 크기는 업종별로 갈렸다.":"The September 17 session was flat by weight: cap-weighted +0.06%, median stock +0.10%.","상위는 조선 +5.24%, 항공·방산 +4.56%, 정유 +3.59%, 운송·물류 +1.89%, 기계·장비 +1.75%였고 하위는 전자·부품 -1.93%, 미디어·엔터 -1.61%, 2차전지 -0.83%였다.":"Breadth leaned up — 1,363 advancers, 1,017 decliners, 303 unchanged — but the size of the moves sat in specific sectors. Leaders were shipbuilding +5.24%, aerospace-defense +4.56%, refining +3.59%, transport-logistics +1.89% and machinery +1.75%; laggards were electronic components -1.93%, media-entertainment -1.61% and secondary batteries -0.83%.","개별로는 한화시스템이 12.65% 올랐고, 비즈니스포스트와 글로벌이코노믹은 아랍에미리트 통합 대공망 구축 참여를 이유로 들었다.":"Individually, <a href=\"stock.html?ticker=272210\">Hanwha Systems<\/a> rose 12.65%, with Businesspost and Global Economic citing its participation in a UAE integrated air-defense network.","HD현대중공업 +6.58%, 삼성중공업 +6.44%, HD한국조선해양 +4.81%로 조선이 함께 움직였고 뉴스핌은 수주 기대 회복을 배경으로 짚었다. 눈여겨볼 곳은 정유다.":"Shipbuilders moved together — <a href=\"stock.html?ticker=329180\">HD Hyundai Heavy Industries<\/a> +6.58%, <a href=\"stock.html?ticker=010140\">Samsung Heavy Industries<\/a> +6.44%, <a href=\"stock.html?ticker=009540\">HD Korea Shipbuilding<\/a> +4.81% — as Newspim pointed to a recovery in order expectations.","하루 전 이 브리핑은 WTI 3.60% 하락과 함께 정유가 업종 하위 첫 자리로 밀렸다고 적었는데, 9월 17일 WTI가 1.31% 더 내리는 동안 S-Oil은 5.62% 올랐다. 반대편에서는 삼성전기가 5,804억원 거래에 3.69% 내려 대형주 부진 첫 자리였다.":"Refining is the one to note: a day earlier this briefing recorded refining as the worst sector alongside a 3.60% drop in WTI, yet on September 17, with WTI down another 1.31%, <a href=\"stock.html?ticker=010950\">S-Oil<\/a> rose 5.62%. On the other side, <a href=\"stock.html?ticker=009150\">Samsung Electro-Mechanics<\/a> fell 3.69% on 580.4 billion won of turnover, the weakest of the large caps.","달러인덱스는 100.22로 내렸는데 원화 기준값만 1.20% 올랐다":"The Dollar Index Slipped to 100.22 While the Won's Reference Value Rose 1.20%","9월 17일 기준 원/달러 기준값은 1,380.00원으로 직전 1,363.57원 대비 1.20% 올랐다. 같은 날 달러인덱스는 100.22로 0.09% 내렸고 미 장기금리도 물러섰다. 달러 전반이 약해진 날에 원화만 반대로 움직인 셈이다.":"On the September 17 basis, the won's reference value stood at 1,380.00 per dollar, up 1.20% from 1,363.57. The same day the dollar index fell 0.09% to 100.22 and US long yields retreated — a day when the dollar broadly softened but the won moved the other way.","서울파이낸스·자본시장뉴스는 매파적 연준을 배경으로 원·달러가 1,380원대로 올라섰다고 전했고, 연합뉴스와 디지털데일리는 미국의 긴축 전환을 두고 한국은행의 연내 추가 인상 가능성과 11월 금통위로 쏠린 관심을 다뤘다. 조선비즈와 디지털데일리는 금융감독원이 미 금리 인상에 따른 증시·환율 변동성을 집중 점검한다고 보도했다.":"Seoul Finance and Capital Market News tied the move above 1,380 to a hawkish Fed, while Yonhap and Digital Daily wrote about the possibility of another Bank of Korea hike this year and attention shifting to the November rate meeting. Chosun Biz and Digital Daily reported that the Financial Supervisory Service is running a focused review of equity and currency volatility stemming from the US hike.","다음 주는 미 지표 공백, 9월 29일부터 넷이 연달아":"A Data-Free Next Week, Then Four Releases From September 29","일정표에 잡힌 미국 지표는 9월 29일(화) 구인·이직(JOLTS), 9월 30일(수) GDP와 개인소비·PCE, 10월 2일(금) 고용보고서다. 즉 다음 주(9월 21~27일)에는 확인할 지표가 없고, 그 다음 주에 물가·성장·고용이 사흘 만에 몰려 나온다. 인상 직후 금리가 5% 위와 아래를 오가는 구간에서 다음 주는 지표 없이 가격만 움직이는 주간이 된다.":"The scheduled US releases are JOLTS on Tuesday, September 29, GDP and personal spending/PCE on Wednesday, September 30, and the jobs report on Friday, October 2. In other words there is nothing to check next week (September 21-27), and then inflation, growth and employment all arrive within three days the week after. With yields oscillating around the 5% line right after the hike, next week is a stretch where prices move without data underneath them.","에코프로 정정 반기보고서 — 첫 가격 신호는 9월 28일 권리 거래":"Ecopro's Amended Half-Year Filing — First Price Signal Comes With Rights Trading on September 28","KOSAI 리포트 확인 지점":"From KOSAI report checkpoints","에코프로(시가총액 11.2조원)의 기재정정 반기보고서(2026년 6월)가 접수됐다. 직전 장에서 2차전지 업종은 -0.83%였고 포스코퓨처엠은 3.19% 내려 대형주 부진 쪽에 있었다.":"An amended half-year report (June 2026) has been filed for <a href=\"stock.html?ticker=086520\">Ecopro<\/a>, a 11.2 trillion won market cap.","오늘자 KOSAI 리포트는 원료 내재화와 유상증자를 이 지주사의 두 축으로 놓고, 확인 지점으로 9월 28일부터 10월 2일까지의 에코프로비엠 신주인수권증서 상장·거래 기간을 먼저 꼽았다 — 권리의 가격과 거래량이 증자에 대한 시장 반응을 가장 먼저 보여주는 자리라는 이유다.":"In the last session the secondary-battery sector was down 0.83% and <a href=\"stock.html?ticker=003670\">POSCO Future M<\/a> fell 3.19%, among the weaker large caps. Today's KOSAI report frames the holding company around raw-material integration and a rights offering, and flags first the September 28 to October 2 listing and trading window for Ecopro BM subscription warrants — the price and volume of those rights are the earliest read on how the market takes the offering.","그 다음이 10월 12일 최종 발행가액 확정과 10월 15~21일 청약으로, 지주사가 실제로 넣는 금액과 실권 규모가 그때 드러난다. 같은 리포트는 니켈 수급권 확대를 강세 쪽에, 지분 희석 부담과 양극재 가동률을 약세 쪽에 적어 두었다.":"Next come the final issue price on October 12 and the subscription period of October 15-21, when the amount the holding company actually pays in and the size of any forfeiture become visible. The same report lists expanded nickel sourcing on the positive side and dilution plus cathode utilization on the negative side.","제22호":"No. 22","2026년 9월 17일 (목)":"Thu, Sep 17, 2026","연준이 3년 만에 올렸다 — 달러인덱스 100.31, 원화 기준값 1,376원":"Fed hikes for the first time in three years — dollar index 100.31, won reference 1,376","제24호":"No. 24","2026년 9월 21일 (월)":"Mon, Sep 21, 2026","유가는 96달러로 내려왔는데, 10년물은 다시 5%에 앉았다":"Oil Slid to $96, Yet the 10-Year Is Back at 5%","지난 호":"Past issues","이전 호":"Previous issue","다음 호":"Next issue","지난 호 전체 보기":"View all past issues","지난 호입니다.":"This is a past issue.","최신 호 보기":"Read the latest issue","이전 호와 다음 호":"Previous and next issues","모닝브리핑 지난 호":"Morning Brief archive","인상 이틀째, 10년물은 4.95%로 물러섰다 — 원화 기준값은 1,380원 — 모닝브리핑 | KOSAI":"Day Two After the Hike: 10-Year Back to 4.95%, Won Reference at 1,380 — Morning Brief | KOSAI"}</script>
+<script>
+(function(){
+  var nav=document.getElementById('nav'),tick=false;
+  function upd(){tick=false;nav.classList.toggle('scrolled',window.scrollY>32);if(window.kosOnScroll)window.kosOnScroll()}
+  addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+  var sun='<path d="M12 4V2M12 22v-2M4.9 4.9 3.5 3.5M20.5 20.5l-1.4-1.4M4 12H2M22 12h-2M4.9 19.1l-1.4 1.4M20.5 3.5l-1.4 1.4"/><circle cx="12" cy="12" r="4"/>',moon='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
+  var root=document.documentElement,icon=document.getElementById('themeIcon');function paint(){icon.innerHTML=root.getAttribute('data-theme')==='dark'?sun:moon}paint();window.__kosPaintTheme=paint;
+  document.getElementById('themeBtn').addEventListener('click',function(){var t=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',t);try{localStorage.setItem('kos-theme',t)}catch(e){}paint();});
+  /* 휴대폰 메뉴 */
+  var mb=document.getElementById('menuBtn'),mm=document.getElementById('mmenu');
+  function setMenu(on){nav.classList.toggle('menu-open',on);mm.classList.toggle('open',on);mb.setAttribute('aria-expanded',on?'true':'false');document.documentElement.style.overflow=on?'hidden':'';if(window.KOSSmoothScroll){on?window.KOSSmoothScroll.stop():window.KOSSmoothScroll.start()}}  /* html 에 건다 — body 에 걸면 sticky 헤더가 사라진다(html 이 overflow-x:hidden 이라 body 가 스크롤 상자가 됨) */
+  mb.addEventListener('click',function(){setMenu(!nav.classList.contains('menu-open'))});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('menu-open'))setMenu(false)});
+  window.matchMedia('(min-width:821px)').addEventListener('change',function(e){if(e.matches)setMenu(false)});
+})();
+</script>
+<script type="application/json" data-kos-i18n>{"#-#-# 종가 기준":"As of the #-#-# close","#개":"#","#개 종목":"# stocks","#배":"#×","(선택)":"(optional)","2차전지":"Batteries","@ 작성":"Written @","AI 리포트":"AI report","BASIC으로 변경":"Switch to BASIC","BASIC으로 변경하시겠습니까?":"Switch to BASIC?","Firebase 설정이 필요합니다. firebase-config.js를 확인하여 주시기 바랍니다.":"Firebase is not configured yet. See firebase-config.js.","HD현대중공업":"HD Hyundai Heavy","IT 서비스":"IT Services","IT·소프트웨어":"IT & Software","KOSAI 리포트 확인 지점":"From KOSAI report checkpoints","PRO로 업그레이드":"Upgrade to PRO","PRO로 업그레이드하시겠습니까?":"Upgrade to PRO?","SK하이닉스":"SK Hynix","[선택] 마케팅 정보 수신 동의":"[Selective] Marketing messages","[필수] 개인정보 수집·이용 동의":"[Required] Collection and use of personal data","[필수] 만 14세 이상입니다":"[Required] I am 14 or older","[필수] 이용약관 동의":"[Required] Terms of Service","{a}이 환불됩니다.":"{a} will be refunded.","{date} 이후에도 {p} 플랜이 그대로 유지됩니다.":"You stay on {p} after {date}.","{date}까지는 그대로 이용하실 수 있으며, 그 이후 결제되지 않습니다. 해지는 언제든지 취소하실 수 있습니다.":"You keep access until {date}, and you will not be charged after that. You can undo this anytime.","{date}부터 BASIC이 적용됩니다. 그때까지는 PRO를 그대로 이용하실 수 있습니다.":"BASIC applies from {date}. You keep PRO until then.","{d}부터 {p}":"{p} from {d}","{d}부터 {p} 플랜으로 변경됩니다.":"You move to {p} on {d}.","{p} 업그레이드 차액":"{p} upgrade difference","{p} 월 구독":"{p} monthly","{p} 플랜이 바로 적용되었습니다. 지금 청구된 금액은 없습니다.":"You are on {p} as of now. Nothing was charged.","{p} 플랜이 바로 적용되었습니다. 차액 {a}이 결제되었습니다.":"You are on {p} as of now. {a} has been charged.","{r}개 / {l}개":"{r} of {l}","가격":"Pricing","가격이 부담됩니다":"Too expensive","가입":" joined","가입 완료":"Almost done","가입을 완료하시려면 아래 항목에 동의하여 주시기 바랍니다":"To finish signing up, please accept the items below","개 종목":" stocks","개인정보 처리방침":"Privacy Policy","개인정보처리방침":"Privacy Policy","거래대금":"Turnover","거래량":"Volume","건설":"Construction","건설·건자재":"Construction & Materials","검색":"Search","게임":"Games","결제 금액":"Amount","결제 내역":"Payment history","결제 수단":"Payment method","결제 수단 변경":"Change card","결제 수단이 변경되었습니다. 다음 결제일부터 새 카드로 청구됩니다.":"Your payment method has been updated. The new card will be charged from your next billing date.","결제 실패":"Payment failed","결제 완료":"Paid","결제 재시도가 중지되며 구독이 즉시 종료됩니다. 이미 결제된 금액은 없으므로 추가로 청구되는 금액도 없습니다.":"Retries stop and your subscription ends immediately. Nothing was charged for this period, so there is nothing further to bill.","계정":"Account","계정 메뉴":"Account menu","계정 설정을 보려면 로그인이 필요합니다.":"Sign in to view your account settings.","계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.":"Your account and saved watchlist will be permanently deleted. This cannot be undone.","공시":"Disclosures","과":" and ","관심":"Watch","관심종목":"Watchlist","구글":"Google","구독":"Subscription","구독 관리":"Subscription","구독 관리로 이동":"Go to subscription","구독 시작일":"Started","구독 초기화":"Reset subscription","구독 해지":"Cancel subscription","구독을 해지하시겠습니까?":"Cancel your subscription?","구독이 해지되었으며, 결제 재시도도 중지되었습니다.":"Your subscription has been cancelled and payment retries have stopped.","국내 상장 #개 종목":"# stocks listed in Korea","그동안 이용해 주셔서 감사합니다.":"Thank you for using KOSAI.","금액":"Amount","금융":"Finance","기계·장비":"Machinery","기술":"Tech","기준 #-#-#":"As of #-#-#","기타":"Others","내용":"Message","네이버":"Naver","네이버 동의 화면":"Naver consent screen","네이버 로그인":"Naver sign-in","네트워크 연결을 확인하여 주시기 바랍니다.":"Please check your network connection.","닉네임":"Nickname","다시 시작하기":"Start again","다음 결제일":"Next billing date","다크":"Dark","닫기":"Close","대비":"vs.","대표":"CEO","대표 임범준":"CEO Beomjun Lim","더보기":"More","데이터 #-#-#":"Data as of #-#-#","동의 시각":"Agreed","동의 안 함":"No","동의를 저장하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"Could not save your agreement. Please try again in a moment.","동의서 판":"Consent version","동의하고 가입 완료":"Agree and finish signing up","동의하지 않고 취소":"Cancel","동의하지 않으면 가입이 진행되지 않습니다. 계정은 아직 생성되지 않았습니다.":"Without your consent we will not create the account — nothing has been created yet.","동의하지 않으면 가입이 취소됩니다.":"If you do not agree, your sign-up is cancelled.","동의함":"Yes","뒤로":"Back","등록된 주소 없음":"No address on file","등록된 카드가 없습니다.":"No card registered.","등록하신 카드":"Card on file","등록하신 카드로 결제가 승인되지 않았습니다. 결제일로부터 1일·3일·5일·7일째에 자동으로 다시 시도하며, 결제가 완료되면 그 시점부터 새로운 이용 기간이 시작됩니다. 카드를 다시 등록하시면 즉시 재개하실 수 있습니다.":"The card on file was declined. We retry automatically on days 1, 3, 5 and 7 after the billing date; once a payment succeeds, a new billing period starts from that moment. Registering a card again restores access immediately.","떠나시는 이유를 알려주시면 개선에 반영하겠습니다 (복수 선택 가능)":"Telling us why helps us improve (select all that apply)","라이트":"Light","로그아웃":"Sign out","로그인":"Sign in","로그인 요청이 만료되었습니다. 다시 시도하여 주시기 바랍니다.":"Your sign-in request expired. Please try again.","로그인 창이 닫혔습니다. 다시 시도하여 주시기 바랍니다.":"The sign-in window was closed. Please try again.","로그인 페이지로":"Go to sign in","로그인이 필요합니다":"Sign-in required","로그인이 필요합니다.":"Please sign in.","로봇":"Robotics","리포트":"Reports","리포트 내용이 기대와 다릅니다":"Reports were not what I expected","마케팅":"Marketing","마케팅 동의":"Marketing opt-in","마케팅 수신 설정":"Marketing messages","마케팅 정보 수신":"Marketing messages","만 14세 이상이며,":"I am 14 or older, and agree to the","메뉴":"Menu","멤버십":"Membership","멤버십 보기":"See plans","모닝 브리핑":"Morning Brief","모닝브리핑":"Morning Brief","모의 결제":"Simulated payments","모의 결제 · 돈이 오가지 않습니다":"Simulated payments · No money changes hands","목적":"Purpose","무료":"Free","무료로 이용하고 계십니다. 분석과 전망, 리스크 진단은 멤버십 구독 후 보실 수 있습니다.":"You are on the free plan. The analysis, outlook, and risk sections come with a membership.","문의하기":"Contact","미디어·엔터":"Media & Entertainment","미리보기입니다. 결제는 모의 결제이며 실제로 돈이 오가지 않습니다.":"This is a preview. Payments are simulated and no money changes hands.","미리보기입니다. 실제로 돈이 오가지 않습니다.":"Preview only — no real payment is made.","및":"and","바이오·제약":"Biotech & Pharma","반도체":"Semiconductors","반도체 업종":"Semiconductors","받지 않아도 서비스 이용에는 아무 영향이 없습니다.":"Turning this off does not affect your use of the service.","변경 취소":"Undo change","보기":"View","보안을 위해 다시 로그인하신 뒤 진행하여 주시기 바랍니다.":"For security, please sign in again and then continue.","보안을 위해 다시 로그인하신 뒤 탈퇴를 진행하여 주시기 바랍니다.":"For security, please sign in again and then delete your account.","보유 기간: 회원 탈퇴 시까지":"Retained: until the account is deleted","보통":"It's okay","보험":"Insurance","부동산·리츠":"Real Estate & REITs","불러오는 중…":"Loading…","불러오지 못했습니다.":"Could not load.","불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"Could not load. Please try again in a moment.","브라우저가 팝업을 막았습니다. 팝업을 허용하신 뒤 다시 시도하여 주시기 바랍니다.":"Your browser blocked the popup. Please allow popups and try again.","비밀번호":"Password","비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.":"Password must be at least 8 characters with letters and numbers.","사업자등록번호":"Business Reg. No.","사업자등록번호 380-25-02019":"Business Reg. No. 380-25-02019","사유를 알려주시면 개선에 반영하겠습니다 (복수 선택 가능)":"Telling us why helps us improve (select all that apply)","삭제":"Delete","삼성전기":"Samsung Electro-Mechanics","삼성전자":"Samsung Electronics","삼성중공업":"Samsung Heavy Industries","상태":"Status","상호":"Company","상호 코사이":"Company KOSAI","새 리포트·서비스 소식을 이메일로 받습니다. 동의하지 않아도 가입할 수 있습니다.":"Receive news about new reports and the service by email. You can sign up without agreeing.","새 리포트와 서비스 소식을 이메일로 받습니다.":"Get news about new reports and the service by email.","새 리포트와 서비스 소식을 이메일로 받습니다. 받지 않아도 서비스 이용에는 아무 영향이 없습니다.":"Get news about new reports and the service by email. Turning this off does not affect your use of the service.","서비스":"Services","서비스가 기대와 다릅니다":"The service was not what I expected","서비스를 이용하려면 약관 동의가 필요합니다":"Using the service requires your agreement","서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호":"#459, 4F Dongseong Bldg., 50 Mokdongdong-ro 12-gil, Yangcheon-gu, Seoul, Republic of Korea","설정":"Settings","섬유·패션·생활":"Apparel & Living","소셜 로그인에 실패했습니다.":"Social sign-in failed.","수신 동의 안 함":"Not subscribed","수신 동의함":"Subscribed","수집 항목: 이메일, 닉네임, 로그인 수단":"Collected: email, nickname, sign-in provider","시가총액":"Market Cap","시작하기":"Get started","시장":"Market","식음료":"Food & Beverage","식품":"Food & Beverage","실수로 결제했습니다":"I paid by mistake","실제 사이트로":"Go to live site","실패":"failed","아직 결제 내역이 없습니다.":"No payments yet.","알림":"Notifications","약관 동의":"Agreements","약관과 개인정보 처리에 관한 내용은":"You can review our","언어":"Language","언제든 철회할 수 있습니다.":"You can withdraw at any time.","업종":"Industry","업종 분석":"Industry Analysis","없음":"None","에너지":"Energy","에너지·전력":"Energy & Power","에서 확인할 수 있습니다.":".","에코프로비엠":"EcoPro BM","엔터":"Entertainment","예약해 두신 {p} 플랜 변경은 함께 취소됩니다.":" Your scheduled change to {p} will be dropped.","예약해 두신 해지는 함께 취소됩니다.":" Your scheduled cancellation will be undone.","예정된 변경":"Scheduled change","오늘":"Today","오늘 남은 열람":"Left today","오늘 리포트를 보셨다면 오늘까지 이용하실 수 있고, 오늘 한 건도 보지 않으셨다면 오늘은 차감하지 않고 이용이 바로 종료됩니다.":"If you opened a report today, you keep access until midnight; if you opened none today, today is not charged and your access ends right away.","오늘 자정까지 이용하실 수 있습니다.":"You keep access until midnight today.","오류·장애로 정상적으로 이용하지 못했습니다":"I could not use it because of a fault or outage","완료":"Verified","요금제":"Pricing","요약":"Summary","요청이 많아 잠시 막혔습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"Too many attempts. Please try again in a moment.","운송·물류":"Transport & Logistics","워치리스트":"Watchlist","원하는 종목·정보가 부족합니다":"Missing stocks or information I want","월 #원":"<b>₩#<\/b><span>/month<\/span>","위 내용을 이해했으며 되돌릴 수 없음에 동의합니다":"I understand this is permanent and cannot be undone","유통·소비재":"Retail & Consumer","은행":"Banks","이 계정은 사용이 중지되었습니다. hello@kosai.kr로 문의하여 주시기 바랍니다.":"This account has been disabled. Please contact hello@kosai.kr.","이 이메일은 다른 방법으로 가입되어 있습니다. 아래 버튼 중 처음 가입하실 때 쓰신 것으로 로그인하여 주시기 바랍니다.":"This email is registered with a different sign-in method. Please use the one you signed up with.","이름":"Name","이메일":"Email","이메일 hello@kosai.kr":"Email hello@kosai.kr","이메일 가입":"Email sign-up","이메일 또는 비밀번호가 올바르지 않습니다.":"Incorrect email or password.","이메일 형식이 올바르지 않습니다.":"That email address looks invalid.","이미 가입된 이메일입니다.":"This email is already registered.","이미 다른 방법으로 가입된 이메일입니다.":"This email is already registered with another sign-in method.","이용 목적: 회원 식별과 서비스 제공":"Purpose: identifying members and providing the service","이용 방법이 불편합니다":"Hard to use","이용 종료됨":"Ended","이용 종료일":"Access until","이용 중":"Active","이용 중인 구독이 있습니다":"You have an active subscription","이용 중인 플랜":"Current plan","이용분 차감":"usage deducted","이용약관":"Terms of Service","이용은 신청 즉시 종료됩니다.":"Your access ends as soon as you confirm.","인공지능(AI)":"AI","일반":"General","일시적으로 이용을 중단합니다":"Pausing for now","일자":"Date","임범준":"Beomjun Lim","자동차":"Automotive","자동차·부품":"Autos & Parts","자세한 의견 (선택)":"Tell us more (optional)","자주 이용하지 않습니다":"I don't use it often","잔여 기간":"remaining days","잠시 후 다시 시도하여 주시기 바랍니다.":"Too many attempts — please try again shortly.","장비":"Equipment","저장":"Save","저장하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"Could not save. Please try again in a moment.","저장했습니다.":"Saved.","적용":"Apply","전기":"Prior","전기장비":"Electrical Equipment","전망":"Outlook","전자·부품":"Electronic Components","전체":"All","전체 동의":"Agree to all","절대":"Absolute","정기결제 실패":"Renewal failed","정리":"Wrap-up","정말 탈퇴하시겠습니까?":"Delete your account?","정보가 정확하지 않습니다":"Information isn't accurate","정유":"Oil Refining","정의":"Definitions","정책":"Legal","조선":"Shipbuilding","조회":"Search","종목":"Stock","종목 리포트":"Stock reports","종목 수":"Stocks","주소":"Address","주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호":"Address #459, 4F Dongseong Bldg., 50 Mokdongdong-ro 12-gil, Yangcheon-gu, Seoul, Republic of Korea","주소 없음":"no address","중복으로 결제되었습니다":"I was charged twice","즉시 PRO가 적용됩니다. 남은 기간에 해당하는 BASIC 금액을 차감한 차액 {a}이 등록하신 카드로 지금 결제되며, 결제일은 그대로 유지됩니다.":"PRO applies immediately. The unused part of BASIC is credited and the difference, {a}, is charged to your card now; your billing date stays the same.","즉시 PRO가 적용됩니다. 이번 결제 주기가 거의 끝나 지금 청구되는 금액은 없으며, 다음 결제일부터 PRO 요금으로 청구됩니다.":"PRO applies immediately. This billing period is nearly over, so nothing is charged now — PRO pricing starts from your next billing date.","증권":"Securities","증권사가 다루지 않는 종목까지":"Beyond broker<br>coverage","지주":"Holding Companies","지표":"Metric","처리 중 오류가 발생했습니다.":"Something went wrong.","처리하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"Could not complete. Please try again in a moment.","철강":"Steel","철강·금속":"Steel & Metals","청약철회":"withdrawal","체크박스":"Checkbox","취소":"Cancel","카카오":"Kakao","카카오·네이버 로그인은 앱 키 설정이 필요합니다. (firebase-config.js 참고)":"Kakao/Naver sign-in needs app keys to be configured (see firebase-config.js).","코넥스":"KONEX","코사이":"KOSAI","코스닥":"KOSDAQ","코스피":"KOSPI","탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"Something went wrong while deleting your account. Please try again later.","탈퇴하기":"Delete account","탈퇴하시면 구독이 즉시 해지되고, 환불 기준에 따라 산정된 금액이 자동으로 환불됩니다. 오늘 리포트를 열람하셨다면 오늘은 이용일로 차감되며, 계정이 삭제되므로 오늘 남은 열람은 사용하실 수 없습니다. 금액을 먼저 확인하시거나 오늘 남은 열람을 사용하신 뒤 나가시려면 구독 관리에서 환불을 신청하여 주시기 바랍니다.":"Deleting your account cancels the subscription right away and refunds the amount due under our refund terms. If you opened a report today, today counts as a used day, and because the account is deleted you cannot use the rest of today's limit. To see the amount first, or to use the rest of today before leaving, request the refund under Subscription instead.","테마":"Themes","테마 전환":"Toggle theme","통신":"Telecom","포스코퓨처엠":"POSCO Future M","포함":"Included","플랜 변경만 원하시는 경우에는 환불 대신 위의 ‘플랜 변경’을 이용하여 주시기 바랍니다. 남은 기간에 대한 차액만 결제되며 즉시 적용됩니다.":"If you only want to switch plans, use “Change plan” above instead of a refund — you are charged only the difference for the remaining period, and it applies immediately.","플랜 변경을 취소하시겠습니까?":"Undo the scheduled change?","플랜 변경이 취소되었습니다.":"The scheduled change has been cancelled.","피드백":"Feedback","필수 항목에 모두 동의하셔야 가입하실 수 있습니다.":"You must accept the required items to continue.","하루 열람 한도":"Daily viewing limit","한국어":"Korean","항공·방산":"Aerospace & Defense","해지 예약됨":"Ends soon","해지 예약이 완료되었습니다.":"Your subscription will end at the period end.","해지 취소":"Keep subscription","해지가 취소되었습니다.":"Your subscription continues.","해지하시면 이미 결제하신 이용 기간이 끝날 때까지는 그대로 이용하실 수 있습니다.":"If you cancel, you keep access until the period you have paid for ends.","현재":"Current","호텔·레저":"Hotel & Leisure","홈":"Home","홈으로":"Back to home","화장품":"Cosmetics","화학":"Chemicals","확인":"Confirm","환불":"Refunded","환불 금액은 이용하신 일수를 차감해 산정됩니다.":"The refund deducts the days you have used.","환불 신청":"Request a refund","환불 신청이 접수되었습니다.":"Your refund request has been received.","환불 신청이 접수되었습니다. {a}이 환불되며, 오늘 자정까지 이용하실 수 있습니다.":"Refund requested. {a} will be returned, and you keep access until midnight tonight.","환불 신청이 접수되었습니다. {a}이 환불되며, 이용은 지금 종료됩니다.":"Refund requested. {a} will be returned, and your access ends now.","환불 완료":"Refunded","환불을 신청하시겠습니까?":"Request a refund?","환불을 처리하지 못하여 탈퇴를 진행하지 않았습니다. 구독 관리에서 환불을 먼저 신청하여 주시기 바랍니다.":"We could not process the refund, so your account was not deleted. Please request the refund on the subscription page first.","환불이 완료되어 이용이 종료되었습니다. 언제든 다시 시작하실 수 있습니다.":"Refunded. Your access has ended. You can start again whenever you like.","환불이 완료되었습니다. 오늘 자정까지 이용하실 수 있으며, 언제든 다시 시작하실 수 있습니다.":"Refunded. You keep access until midnight tonight, and you can start again whenever you like.","회사":"Company","회사 소개":"About","회원 탈퇴":"Delete account","회원 탈퇴가 완료되었습니다":"Your account has been deleted","회원 탈퇴가 완료되었습니다. 그동안 이용해 주셔서 감사합니다.":"Your account has been deleted. Thank you for using KOSAI.","회원가입":"Sign up"}</script>
+<script>window.KOSi18n&&KOSi18n.load()</script>
+<script type="module" src="auth-state.js?v=d57c008a"></script>
+<script src="lenis.js?v=3a0cb7e8"></script>
+<script src="smooth-scroll.js?v=e5bb28fd"></script>
+</body>
+</html>
