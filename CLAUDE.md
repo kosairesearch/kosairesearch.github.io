@@ -349,6 +349,8 @@ Consent · auth-action · Settings · stock · 404)은 스테이징과 같은 �
     (`LIVE_PAGE_SCRIPTS` 가 paywall · checkout 을 뺀다), 설정의 '구독' 칸 없음(루트 settings-panel.js 는 구독 칸 없는 판, `TABS` 에서도 뺀다).
     pricing · checkout · billing · demo-backend · subscription-api · payment-config 는 루트에 두지 않는다 — `build_live --check` 가 막는다.
     유료화하는 날 이 표시들을 걷어 내면 스테이징 판이 그대로 실사이트 판이 된다.
+    그날 영어 머리 메뉴를 먼저 볼 것 — 멤버십이 들어가면 화면 폭 821~865px 에서 'Morning Brief' 와 'Sign in' 이 겹치고 900px 까지
+    16px 미만으로 붙는다(스테이징 2026-10-03 실측 · 실사이트와 한국어는 괜찮다). 링크 간격 34px 은 사장이 정한 값이라 손대기 전에 묻는다.
   · 페이지 끝 번역 사전에도 멤버십 말을 싣지 않는다 — 화면에는 안 보여도 페이지 소스에는 보인다. 스테이징 전용 말(STAGING 띠 · 멤버십 메뉴)은
     `scripts/i18n/staging.json` 에 두어 스테이징에만 늘 싣고, 모듈 주석 · 코드에 걸려 실리던 멤버십 낱말 넷은 `comp_common.LIVE_DICT_DROP` 으로
     뺀다(`build_live --check` 감사가 본다). **사전을 고를 때 주석을 통째로 빼지 말 것** — 자료에서 그리는 글('업종 내 주요 종목' 등)이 주석 덕에
