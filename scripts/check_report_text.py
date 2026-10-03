@@ -16,7 +16,7 @@
 level 로 구분한다.
 
 글자 결함(defects)도 여기서 본다 — 깨진 글자(�)·엉뚱한 글자('경쁴력')·태그
-('<sup index=…>')·모델이 받은 자료를 가리키는 말('제공된 데이터셋'). 표현이 아니라
+('<sup index=…>')와 그 조각·모델이 받은 자료를 가리키는 말('제공된 데이터셋'). 표현이 아니라
 글자 자체가 망가진 것이라 읽는 사람이 바로 본다(2026-09-26, 사장이 먼저 봤다).
 태그는 clean_markup 이 저장 전에 지우고, 나머지는 교정(repair)이 그 섹션만 고친다.
 """
@@ -145,10 +145,17 @@ def sentences(rep):
 # 금지 표현 검사는 표현만 봤지 글자는 보지 않았다. 엉뚱한 글자는 자주 쓰는 한글 2,350자(KS X 1001)
 # 밖이라는 점으로 잡는다 — 2,564개 리포트에서 그 밖의 글자 123곳 중 맞는 말은 셋(아래 _KS_OK)뿐이었다.
 # 2,350자 안에서 바뀐 것('경쨍')은 못 잡는다 — 가장 흔한 '경쟁' 은 _KO_GLITCH 로 따로 본다.
+# 2026-10-03 — 같은 배치에 태그가 반쯤 지워진 조각이 더 있었다. 위 규칙은 온전한 태그만 봐서 놓쳤다.
+#   · 모델 자신의 인용 태그 조각 — 조흥 5곳('제한\antml:cite>될' · '생산\antml:cite>하는')
+#   · 속성 끝만 남은 조각 — 한스바이오메드 4곳('제출">하며' · '부연">했다')
+#   · 따옴표 앞 역슬래시 — 스튜디오미르 1곳('X-Men \'97')
+# 조각도 태그와 같은 등급(markup · 위험)이다. 역슬래시는 본문에 쓸 일이 없어 어디에 있든 결함으로 본다.
 _MARKUP = (
     (re.compile(r"<sup\b[^<>]*>.*?</sup>", re.S | re.I), ""),        # 인용 번호 — 뜻이 없다
     (re.compile(r"<sup\b[^<>]*/?>|</sup>", re.I), ""),
     (re.compile(r"</?(?:citation|cite)\b[^<>]*>", re.I), ""),        # 인용이 감싼 글은 남긴다
+    (re.compile(r"<?\\?/?\\?antml:[a-z_]+\b[^<>\n]{0,80}>", re.I), ""),  # 모델의 인용 태그와 그 조각 — 감싼 글은 남긴다
+    (re.compile(r"\\(?=[\"'])"), ""),                                 # 따옴표 앞 역슬래시
     (re.compile(r"<a\s[^<>]*href\s*=[^<>]*>|</a>", re.I), ""),       # 링크가 감싼 글은 남긴다
     (re.compile(r"<br\s*/?>|</br>", re.I), " "),
     (re.compile(r"\*\*(?=\S)(.+?)(?<=\S)\*\*"), r"\1"),              # 마크다운 굵게
@@ -158,6 +165,14 @@ _MARKUP = (
 )
 
 
+_QGT = re.compile(r"[\"']>")
+
+
+def _stray_qgt(t):
+    """속성 끝만 남은 조각('제출">하며')의 자리들. 열린 꺾쇠 안(제목 <'오징어 게임'> · 온전한 태그)은 빼고 본다."""
+    return [m.span() for m in _QGT.finditer(t) if t.rfind("<", 0, m.start()) <= t.rfind(">", 0, m.start())]
+
+
 def clean_markup(s):
     """태그·인용 표시·마크다운·HTML 이름표를 지운다. 감싼 글은 남긴다. 결정적이라 저장 전에 늘 돌린다."""
     if not isinstance(s, str) or not s:
@@ -165,6 +180,8 @@ def clean_markup(s):
     t = s
     for pat, rep in _MARKUP:
         t = pat.sub(rep, t)
+    for a, b in reversed(_stray_qgt(t)):
+        t = t[:a] + t[b:]
     if t != s:
         t = re.sub(r"[ \t]{2,}", " ", t)
         t = re.sub(r"[ \t]*\n[ \t]*", "\n", t).strip()
@@ -175,7 +192,8 @@ _NOT_TEXT = {"sources", "quant", "ticker", "name", "name_en", "market", "sector"
              "reportDate", "reportTs", "dataDate", "v", "hasPaid", "model", "usage", "meta", "asOf"}
 _KS_OK = set("웻몐퀜")          # 2,350자 밖이지만 맞는 말 — 웻 스테이션 · 쓰촨성 몐양 · 초전도 코일 퀜치
 _TAG = re.compile(r"<\s*/?\s*(?:sup|sub|citation|cite|br|span|div|p|b|i|em|strong|u|small|mark|ref|source|li|ul|ol|table|tr|td|h[1-6])"
-                  r"\b[^<>]{0,160}>|<a\s[^<>]*href|\b(?:index|href|src|class)\s*=\s*\"|\*\*|&(?:amp|lt|gt|quot|nbsp|#\d+);", re.I)
+                  r"\b[^<>]{0,160}>|<a\s[^<>]*href|\b(?:index|href|src|class)\s*=\s*\"|\*\*|&(?:amp|lt|gt|quot|nbsp|#\d+);"
+                  r"|antml:|\\", re.I)
 _ODD = re.compile("[\ufffd\u0400-\u04ff\u0590-\u08ff\u0900-\u0dff\u0e00-\u0eff]")   # 깨진 글자 · 키릴·히브리·아랍·인도계·타이 문자
 _KO_GLITCH = re.compile("경[쁌쳥쟰쁁쨍쟃쁏숁섄쪆쥉쁀쭁쟐쁙쥰쁩쁭쁠쁨쟟쁄쁴쁜쇄]")        # '경쟁' 이 깨진 꼴(2,350자 안에 드는 것까지)
 _HAN_IN_EN = re.compile(r"[一-鿿]")
@@ -219,8 +237,9 @@ def defects(rep):
 
     for sec, lang, s in _texts(rep):
         m = _TAG.search(s)
-        if m:
-            add("markup", "위험", sec, s, m.start(), m.end(), "태그·인용 표시·마크다운이 글자 그대로 찍힌다 — 지우고 글만 남길 것")
+        q = m.span() if m else next(iter(_stray_qgt(s)), None)
+        if q:
+            add("markup", "위험", sec, s, q[0], q[1], "태그·인용 표시·마크다운이 글자 그대로 찍힌다 — 지우고 글만 남길 것")
         m = _ODD.search(s) or (_KO_GLITCH.search(s) if lang != "en" else None) or (_HAN_IN_EN.search(s) if lang == "en" else None)
         if not m and lang != "en":
             i = next((i for i, ch in enumerate(s) if "가" <= ch <= "힣" and _ks_bad(ch)), -1)
@@ -290,7 +309,7 @@ _RULE_TEXT = "\n".join(f"  · {key}: {why}" for key, _lv, _pat, why in RULES) + 
     "\n  · hangul_en: 영어(en) 문장에 한글을 쓰지 말 것 — 고유명사는 로마자/영문 명칭으로."
     "\n  · broken_char: 깨진 글자(�)나 엉뚱한 글자가 섞인 단어('경쁴력' · '플랕폼' · '꾽힌다' · '용인캠�스')를 문맥과"
     " 짝 언어(ko↔en)에 맞는 올바른 단어로 고칠 것('경쟁력' · '플랫폼' · '꼽힌다' · '용인캠퍼스'). 영어에 섞인 한자·다른 문자도 영어로."
-    "\n  · markup: 태그·링크·인용 표시(<sup …>, <a href>, [1])와 마크다운(**)을 지우고 글만 남길 것."
+    "\n  · markup: 태그·링크·인용 표시(<sup …>, <a href>, [1])와 그 조각('\">' · 역슬래시), 마크다운(**)을 지우고 글만 남길 것."
     "\n  · hanja: 한국어 문장에 한자를 섞지 말 것('88億원' → '88억원', '오너家' → '오너 일가')."
     "\n  · meta: '제공된 데이터(셋)'·'자료 창'·'data window'·'provided data' 처럼 받은 자료를 가리키는 말을 쓰지 말 것"
     " — '공시 기준'·'확인되지 않는다'·'the period shown' 처럼.")
