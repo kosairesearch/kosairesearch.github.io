@@ -96,7 +96,6 @@ LOCK_CSS = '''/* 유료 구간 — 잠긴 첫 절의 제목과 앞 문단들을 
 .lock{border-top:1px solid var(--line);padding:32px 0;margin:24px 0 0}
 .lock h3{margin:0;font:700 22px/30px var(--font);letter-spacing:-.02em}
 .lock-sub{margin:8px 0 0;font:400 14px/22px var(--font);color:var(--ink-72)}
-.lock-list{margin:14px 0 0;font:400 13px/20px var(--font);color:var(--ink-62)} .lock-list span+span::before{content:" · "}
 .lock-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
 .lock-note{margin:14px 0 0;font:400 12px/18px var(--font);color:var(--ink-62)}
 .lock-err{display:none;margin:12px 0 0;font:400 13px/20px var(--font);color:var(--up)} .lock-err.show{display:block}
@@ -391,24 +390,23 @@ function tzLead(key,t){
 function teaserPane(P){
   var tz=REP.teaser; if(!tz||!tz.length) tz=deriveTeaser();
   var byKey={}; (tz||[]).forEach(function(t){ byKey[t.k]=t; });
-  var h='', chars=0, names=[];
+  var h='', chars=0;
   P.paid.forEach(function(s){
     var key=TZ_KEYS[s[0]-4], t=byKey[key], lead;
-    chars+=tzChars(t); names.push(s[1]);
+    chars+=tzChars(t);
     if(!h && (lead=tzLead(key,t)).length) h=secH(s[0],s[1],'<div class="tz-fade"><div class="prose">'+lead.map(function(c){ return '<p>'+esc(c)+'</p>'; }).join('')+'</div></div>',s[3],s[4],'div');
   });
   /* 미리보기 글이 없으면(서버가 lead 를 주지 않은 경우 등) 첫 절의 제목만 — 흐린 글자로 메우지 않는다 */
   if(!h && P.paid.length){ var f=P.paid[0]; h=secH(f[0],f[1],'',f[3],f[4],'div'); }
-  return {html:h, secs:P.paid.length, names:names, mins:Math.max(1,Math.round(chars/500))};   /* 묵독 분당 500자 */
+  return {html:h, secs:P.paid.length, mins:Math.max(1,Math.round(chars/500))};   /* 묵독 분당 500자 */
 }
-/* 잠금 카드. 두 번째 단추는 스크립트가 못 떠도 죽지 않도록 링크로 두고, wireLock() 이 로그인·구독 상태에 맞는 동작을 얹는다. */
+/* 잠금 카드. 두 번째 단추는 스크립트가 못 떠도 죽지 않도록 링크로 두고, wireLock() 이 로그인·구독 상태에 맞는 동작을 얹는다.
+   잠긴 절 이름은 늘어놓지 않는다 — 목차(컴퓨터 왼쪽 · 휴대폰 위 절 이동 띠)가 자물쇠로 이미 보여 준다(2026-10-04 사장 "왼쪽에 목차가 있는데 굳이 넣어야 해?"). */
 function lockBlock(tz){
   var sub=tz?T.lockSubN.replace('{s}',tz.secs).replace('{m}',tz.mins):T.lockSub;
-  var names=(tz&&tz.names&&tz.names.length)?tz.names:['실적 분석','산업 분석','전망','밸류에이션','리스크 요인','종합 의견'];
   return '<div class="tz" id="tz">'+(tz&&tz.html?'<div class="tz-peek" aria-hidden="true">'+tz.html+'</div>':'')
     +'<div class="lockwrap"><div class="lock" id="lockCard">'
     +'<h3>'+esc(T.lockTitle)+'</h3><p class="lock-sub">'+esc(sub)+'</p>'
-    +'<div class="lock-list">'+names.map(function(x){ return '<span>'+esc(x)+'</span>'; }).join('')+'</div>'
     +'<div class="lock-cta"><a class="btn btn-ink" href="pricing.html">'+esc(T.cta)+'</a><a class="btn btn-soft" id="lockBtn" href="Login.html?next='+nextParam()+'">'+esc(T.ctaLogin)+'</a></div>'
     +'<p class="lock-note">'+esc(T.note)+'</p><div class="lock-err" id="lockErr"></div>'
     +'</div></div></div>';

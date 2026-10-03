@@ -20,6 +20,8 @@
      ⑥ 실적 분석이 짧은 리포트(003780 · 631자)도 절의 마지막 문단은 미리보기에 싣지 않는다 — 절이 통째로 보이지 않게
      ⑦ 산문 절의 글이 없으면 제목만 — 채움 글자로 메우지 않는다
      ⑧ 이 검사가 실제로 잡는지 — 옛 옷 둘(통째 blur · 그림자 채움 글자)을 덧씌우면 ①② 가, 네 줄 창을 덧씌우면 ④ 가 걸린다
+     ⑨ 잠금 카드에 잠긴 절 이름을 늘어놓지 않는다 — 목차(컴퓨터 왼쪽 · 휴대폰 위 절 이동 띠)가 자물쇠로 이미 보여 준다
+        (2026-10-04 사장 "왼쪽에 목차가 있는데 굳이 넣어야 해?")
 
    실행
      node staging/tests/paywall-peek.test.mjs
@@ -85,6 +87,7 @@ function measure() {
     mask: mask || "none", fadeH: fr ? Math.round(fr.height) : null, toCard: hr && cr ? Math.round(cr.top - hr.bottom) : null,
     more: fade ? fade.scrollHeight - fade.clientHeight : null,
     peekText: (tz.querySelector(".tz-peek") || { textContent: "" }).textContent.replace(/\s+/g, " ").trim(), card: !!card,
+    cardText: card ? card.textContent.replace(/\s+/g, " ").trim() : "",
   };
 }
 
@@ -144,6 +147,9 @@ for (const [w, theme, lang] of [[1280, "light", "ko"], [1280, "dark", "ko"], [39
   t(same && r.textAlpha > 0.9, `③ ${tag} 실제 글 — 잠금을 풀었을 때의 04 절 첫 문단과 같다 (${r.texts.length}문단 · '${(r.texts[0] || "").slice(0, 24)}…' · 글자 불투명도 ${r.textAlpha})`);
   const m = maskStops(r.mask);
   const lines = r.lineH ? r.fadeH / r.lineH : 99;
+  const NAMES = lang === "en" ? ["Industry analysis", "Bull factors", "Bear factors", "Risk factors", "Overall view"] : ["산업 분석", "강세 요인", "약세 요인", "리스크 요인", "다음 체크포인트", "종합 의견"];
+  const listed = NAMES.filter((x) => r.cardText.includes(x));
+  t(r.card && listed.length === 0, `⑨ ${tag} 잠금 카드에 절 이름 목록 없음${listed.length ? " — " + listed.join(", ") : ""} ('${r.cardText.slice(0, 40)}…')`);
   t(lines > 10 && lines <= 12.05 && m.solid >= r.lineH && m.end != null && m.end <= r.fadeH + 1 && r.more > 0 && r.toCard <= 420,
     `④ ${tag} 창 ${r.fadeH}px(${lines.toFixed(1)}줄) · 또렷 ${m.solid}px → 투명 ${m.end}px · 창 아래로 이어지는 글 ${r.more}px · 제목에서 잠금 카드까지 ${r.toCard}px`);
 }
