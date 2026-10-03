@@ -242,13 +242,19 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
   .chips a{flex:none;position:relative;font:500 13px/44px var(--font);color:var(--ink-62);transition:color .12s} .chips a.on{color:var(--ink);font-weight:600}
   .sec{padding-bottom:64px}
 }
-/* 유료 구간 — 흐린 미리보기 뒤에 잠금 카드. 상자·유리 없이 가는 선 하나로 나눈다(인쇄된 리서치 리포트) */
+/* 유료 구간 — 잠긴 첫 절의 제목은 그대로 두고, 본문 첫머리만 글자 모양으로 옅게 비치다 사라진 뒤 잠금 카드.
+   상자·유리 없이 가는 선 하나로 나눈다(인쇄된 리서치 리포트). 상자째 흐리는 filter:blur 는 쓰지 않는다 — 제목까지
+   번지고 상자 가장자리가 네모로 비쳐, 진한 막대가 검열 모자이크처럼 보였다(2026-10-03 사장 "모자이크 부분이 어색").
+   글자마다 그림자만 남기는 방식(color:transparent + text-shadow)이라 상자 자국이 없다. */
 .tz{max-width:880px;padding:0 0 88px}
-.tz-body{filter:blur(6px);-webkit-filter:blur(6px);pointer-events:none;user-select:none;-webkit-user-select:none;max-height:520px;overflow:hidden;-webkit-mask-image:linear-gradient(to bottom,#000 40%,transparent);mask-image:linear-gradient(to bottom,#000 40%,transparent)}
-.tz-body .sec{padding-bottom:64px}
+.tz-peek{pointer-events:none;user-select:none;-webkit-user-select:none}
+.tz-peek .sec{padding-bottom:0}
+.tz-fade{max-height:180px;overflow:hidden;-webkit-mask-image:linear-gradient(to bottom,#000 0,rgba(0,0,0,.45) 55%,transparent);mask-image:linear-gradient(to bottom,#000 0,rgba(0,0,0,.45) 55%,transparent)}
+.tz-fade *{color:transparent!important;text-shadow:0 0 8px rgba(128,128,128,.55);text-shadow:0 0 8px color-mix(in srgb,var(--ink) 34%,transparent)}
+@media (forced-colors:active){.tz-fade{display:none}}   /* 고대비 모드는 글자색을 되돌려 채움 글자가 그대로 읽힌다 */
 .lockwrap{max-width:720px}
 .lockwrap.pending{visibility:hidden}
-.lock{border-top:1px solid var(--line);padding:32px 0;margin:0}
+.lock{border-top:1px solid var(--line);padding:32px 0;margin:24px 0 0}
 .lock h3{margin:0;font:700 22px/30px var(--font);letter-spacing:-.02em}
 .lock-sub{margin:8px 0 0;font:400 14px/22px var(--font);color:var(--ink-72)}
 .lock-list{margin:14px 0 0;font:400 13px/20px var(--font);color:var(--ink-62)} .lock-list span+span::before{content:" · "}
@@ -259,7 +265,7 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
 .toc a .lk{width:11px;height:11px;flex:none;margin-left:auto;align-self:center;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;opacity:.55}
 .chips a .lk{display:inline-block;width:11px;height:11px;vertical-align:-1px;margin-left:5px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;opacity:.55}
 .pending p a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .pending p a:hover{text-decoration-color:var(--ink)}
-@media (max-width:820px){.tz{padding-bottom:64px} .tz-body{max-height:440px}}
+@media (max-width:820px){.tz{padding-bottom:64px} .tz-fade{max-height:162px}}
 </style>
 <link rel="icon" href="../assets/favicon.png?v=k2">
 <link rel="stylesheet" href="../fonts/pretendard-subset.css">
@@ -733,9 +739,12 @@ function teaserPane(P){
   var h='', chars=0, names=[];
   P.paid.forEach(function(s){
     var key=TZ_KEYS[s[0]-4], t=byKey[key], body=t?tzSection(t):{h:'',n:0};
-    if(key==='valuation_comment') body.h=P.vstrip+body.h+P.vnote;   /* 지표 띠·각주는 무료 구간 값 — 그대로 둔다 */
     chars+=body.n; names.push(s[1]);
-    h+=secH(s[0],s[1],body.h,s[3],s[4],'div');
+    /* 잠긴 첫 절 하나만 비친다 — 제목은 그대로, 본문은 첫머리만(.tz-fade 가 높이를 자르고 사라지게 한다) */
+    if(!h && body.n){
+      if(key==='valuation_comment') body.h=P.vstrip+body.h+P.vnote;   /* 지표 띠·각주는 무료 구간 값 — 그대로 둔다 */
+      h=secH(s[0],s[1],'<div class="tz-fade">'+body.h+'</div>',s[3],s[4],'div');
+    }
   });
   return {html:h, secs:P.paid.length, names:names, mins:Math.max(1,Math.round(chars/500))};   /* 묵독 분당 500자 */
 }
@@ -743,7 +752,7 @@ function teaserPane(P){
 function lockBlock(tz){
   var sub=tz?T.lockSubN.replace('{s}',tz.secs).replace('{m}',tz.mins):T.lockSub;
   var names=(tz&&tz.names&&tz.names.length)?tz.names:['실적 분석','산업 분석','전망','밸류에이션','리스크 요인','종합 의견'];
-  return '<div class="tz" id="tz">'+(tz&&tz.html?'<div class="tz-body" aria-hidden="true">'+tz.html+'</div>':'')
+  return '<div class="tz" id="tz">'+(tz&&tz.html?'<div class="tz-peek" aria-hidden="true">'+tz.html+'</div>':'')
     +'<div class="lockwrap"><div class="lock" id="lockCard">'
     +'<h3>'+esc(T.lockTitle)+'</h3><p class="lock-sub">'+esc(sub)+'</p>'
     +'<div class="lock-list">'+names.map(function(x){ return '<span>'+esc(x)+'</span>'; }).join('')+'</div>'
