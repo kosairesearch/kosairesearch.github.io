@@ -166,8 +166,8 @@ const openMenu = async (page) => { await page.setViewportSize({ width: 390, heig
 const openDetails = async (page) => page.evaluate(() => document.querySelectorAll("details").forEach((d) => (d.open = true)));
 const scrollAll = async (page) => { for (let y = 0; y < 12000; y += 700) { await page.evaluate((y) => scrollTo(0, y), y); await page.waitForTimeout(120); } };
 
-/* 장면 — [이름, 사이트 안 주소, { signedIn 로그인 · act 동작 · pending 준비 중 · paid 멤버십 장면 }].
-   paid 장면(요금제 · 결제 · 설정의 구독 칸)은 실사이트에 없어 스테이징에서만 돈다. */
+/* 장면 — [이름, 사이트 안 주소, { signedIn 로그인 · act 동작 · pending 준비 중 · paid 멤버십 장면 · live 실사이트에만 있는 장면 }].
+   paid 장면(요금제 · 결제 · 설정의 구독 칸)은 실사이트에 없어 스테이징에서만 돈다. live 장면(영어 종목 페이지)은 실사이트에서만 돈다. */
 const SCENES = [
   ["첫 화면(랜딩)", "/", { act: seq(scrollAll, typeIn("#q, input[type=search], .search input", "sam")) }],
   ["첫 화면 — 휴대폰 메뉴", "/", { act: openMenu }],
@@ -205,9 +205,14 @@ const SCENES = [
   ["리포트 상세 — 옛 형식", "/stock.html?ticker=0001A0", { act: openDetails }],
   ["리포트 상세 — 준비 중", `/stock.html?ticker=${PENDING}`, { pending: true }],
   ["리포트 상세 — 없는 종목", "/stock.html?ticker=999999", {}],
+  /* 영어 종목 페이지(/en/stock/ · 실사이트에만 있다) — 미리 번역해 둔 글이 화면에서도 영어로 남는가 */
+  ["영어 종목 페이지 — 새 형식", "/en/stock/005930.html", { act: openDetails, live: true }],
+  ["영어 종목 페이지 — 새 형식(로그인)", "/en/stock/005930.html", { signedIn: true, act: openDetails, live: true }],
+  ["영어 종목 페이지 — 옛 형식", "/en/stock/0001A0.html", { act: openDetails, live: true }],
+  ["영어 종목 페이지 — 휴대폰 메뉴", "/en/stock/005930.html", { act: openMenu, live: true }],
 ];
 const SITES = [["스테이징", "/staging"], ["실사이트", ""]];
-const CASES = SITES.flatMap(([site, pre]) => SCENES.filter(([, , opt]) => !(opt.paid && !pre))
+const CASES = SITES.flatMap(([site, pre]) => SCENES.filter(([, , opt]) => !(opt.paid && !pre) && !(opt.live && pre))
   .map(([name, path, opt]) => [`${site} · ${name}`, pre + path, opt]));
 
 const only = process.env.ONLY ? new RegExp(process.env.ONLY) : null;

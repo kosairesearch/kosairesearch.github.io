@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""sitemap.xml 생성 — 정적 페이지 + 업종 상세 + 종목 페이지(stock/{종목코드}.html).
+"""sitemap.xml 생성 — 정적 페이지 + 업종 상세 + 종목 페이지(stock/{종목코드}.html) + 영어 종목 페이지(en/stock/).
 
 데이터 갱신 워크플로에서 종목 페이지를 만든 뒤(build_stock_static.py) 실행해 sitemap을 항상 최신으로 유지한다.
 """
@@ -80,6 +80,15 @@ def main():
             f"<url><loc>{SITE}/stock/{f.name}</loc><lastmod>{lastmod}</lastmod>"
             f"<changefreq>daily</changefreq><priority>0.7</priority></url>"
         )
+    # 영어 종목 페이지(en/stock/{종목코드}.html · 2026-10-03) — 영어로 묻는 검색 · 인공지능이 읽는 영어판. 한국어 페이지와
+    # 서로를 hreflang 으로 가리킨다(페이지 머리). 한국어 페이지가 있는 상장 종목만 올린다.
+    en_dir = ROOT / "en" / "stock"
+    pages_en = sorted(f for f in en_dir.glob("*.html") if f.stem in listed and (ROOT / "stock" / f.name).exists()) if en_dir.exists() else []
+    for f in pages_en:
+        out.append(
+            f"<url><loc>{SITE}/en/stock/{f.name}</loc><lastmod>{lastmod}</lastmod>"
+            f"<changefreq>daily</changefreq><priority>0.6</priority></url>"
+        )
     out.append("</urlset>\n")
 
     (ROOT / "sitemap.xml").write_text("\n".join(out), encoding="utf-8")
@@ -87,7 +96,7 @@ def main():
     # 이제 사이트맵에 들어가지 않는다 — 실제로 적힌 줄만 센다.
     print(
         f"sitemap.xml: 정적 {len(STATIC_PAGES)} + 업종 {len(sectors)} "
-        f"+ 종목 페이지 {len(pages)} URL (종목 {len(tickers)}개 중)"
+        f"+ 종목 페이지 {len(pages)} + 영어 종목 페이지 {len(pages_en)} URL (종목 {len(tickers)}개 중)"
     )
 
 

@@ -82,7 +82,7 @@ demo-backend.js)이 들어 있어서 언젠가 실사이트로 올리게 되는�
   · **전수 검사** — `scripts/tests/check_report_text_test.py`(check_all '본문 금지표현')가 화면에 나오는 리포트
     전부(v2 + v2 없는 v1)와 업종 분석(data/sectors.js)을 훑어 결함이 하나라도 있으면 실패한다.
 
-손으로 본문을 고쳤으면 복사본도 같이 — `stock/{ticker}.html`(종목마다 미리 만든 페이지 · `build_stock_static.py` · 워치독이
+손으로 본문을 고쳤으면 복사본도 같이 — `stock/{ticker}.html` · 영어 `en/stock/{ticker}.html`(종목마다 미리 만든 페이지 · `build_stock_static.py` · 워치독이
 30분마다 · update_data 가 매일), `data/reports-index.js`(제목 · `_reindex.py` · 워치독이 30분마다), `preview/stock/`. 모닝브리핑 본문의 `**굵게**` 는
 render_brief 가 굵은 글씨로 바꾸는 기능이라 결함이 아니다(검사 대상도 아니다).
 
@@ -336,8 +336,8 @@ WebKit 소스(LocalFrameView::fixedContainerEdges)로 확인한 기제:
 
 루트의 페이지 18장(index · Home · Reports · industry · Watchlist · brief · About · Terms · Privacy · Contact · Feedback · Login · Signup ·
 Consent · auth-action · Settings · stock · 404)은 스테이징과 같은 생성기가 `comp_common.set_mode('live')` 로 만든다. 옷 · 문구는 스테이징과
-글자 하나까지 같고(본문 비교로 확인), 다른 것은 live 모드가 맡는다. 종목 상세는 2026-10-03 부터 종목마다 미리 만든 페이지(`stock/{코드}.html`)이고
-루트 `stock.html` 은 옛 주소를 넘기는 껍데기다(아래 '종목 페이지는 종목마다 미리 만든다' 절).
+글자 하나까지 같고(본문 비교로 확인), 다른 것은 live 모드가 맡는다. 종목 상세는 2026-10-03 부터 종목마다 미리 만든 페이지(`stock/{코드}.html` ·
+영어 `en/stock/{코드}.html`)이고 루트 `stock.html` 은 옛 주소를 넘기는 껍데기다(아래 '종목 페이지는 종목마다 미리 만든다' 절).
 
     python3 scripts/build_live.py            # 루트 페이지 · i18n.js · auth-state.js · img/ · 종목 페이지(stock/)를 다시 만들고 ?v= 를 찍는다
     python3 scripts/build_live.py --check    # 저장소 = 생성기 결과인지 · 멤버십/스테이징 흔적이 없는지 (check_all '실사이트 생성기')
@@ -500,8 +500,8 @@ Consent · auth-action · Settings · stock · 404)은 스테이징과 같은 �
 옛 종목 화면(`stock.html?ticker=`)은 2,685 종목이 같이 쓰는 빈 틀이라 로봇이 본문을 못 읽었고, 그래서 둔 로봇용 사본(`r/`)에
 검색으로 들어온 사람이 머리도 꼬리도 없이 떨어졌다. 2026-10-03 부터 종목마다 완성된 페이지를 미리 만든다 — 사람과 로봇이 같은 페이지를 본다.
 
-    python3 scripts/build_stock_static.py          # stock/ 를 다시 만든다(바뀐 페이지만 쓴다 · 20초 안팎) — build_live.py 도 끝에 부른다
-    python3 scripts/build_stock_static.py --check  # 틀 · 공용 파일 · 종목 수 (check_all '종목 페이지')
+    python3 scripts/build_stock_static.py          # stock/ · en/stock/ 를 다시 만든다(바뀐 페이지만 쓴다 · 40초 안팎) — build_live.py 도 끝에 부른다
+    python3 scripts/build_stock_static.py --check  # 두 말의 틀 · 공용 파일 · 종목 수 (check_all '종목 페이지')
 
   · **글은 화면 스크립트가 그린 그대로다.** 리포트 상세의 스크립트(`build_stock_staging.PAGE_JS` 실사이트 판)를 노드에서 가짜 문서로 돌려
     (`scripts/prerender_stock.mjs`) 받은 글을 HTML 에 넣는다. 파이썬 판(`stock_page.render`)으로 바꾸지 말 것 — 문단 자르기가 달라
@@ -515,7 +515,8 @@ Consent · auth-action · Settings · stock · 404)은 스테이징과 같은 �
     휴대폰, 검색 로봇의 렌더링) 미리 그린 글 · 제목 · 대표 주소를 그대로 둔다(`data-pre-tier` · `data-pre-known` 과 견준다). 준비 중 →
     리포트처럼 자료가 늘어난 경우만 새로 그린다. 그러지 않으면 다 있던 리포트가 '준비 중' · '찾을 수 없습니다'로 바뀐다(독립 검토가 잡았다).
   · 다시 만드는 때: 시세는 데이터 갱신(update_data · 매일), 새 상장은 신규 상장 작업(new_listings · 그 자리에서 — 링크가 빈 주소가 되지
-    않게), 리포트 · valuation 은 리포트 워치독(30분). 바뀐 페이지만 커밋한다. 화면은 자료를 받아 다시 견주므로 사람은 그 사이에도 새 글을 본다.
+    않게), 리포트 · valuation 은 리포트 워치독(30분). 바뀐 페이지만 커밋한다(세 작업 모두 `git add … stock/ en/` — en/ 을 빼면 영어 페이지가
+    옛것으로 남는다). 화면은 자료를 받아 다시 견주므로 사람은 그 사이에도 새 글을 본다.
   · 종목 하나가 그리다 멈추면(깨진 리포트 파일) 그 종목만 옛 페이지로 두고 나머지는 계속 만든 뒤 실패로 끝난다(`prerender_stock.mjs` 가 종목마다
     오류를 붙잡는다). 시세 자료의 종목 수가 지금 페이지 수의 절반 아래로 줄면 아무것도 바꾸지 않고 멈춘다(수집이 일부만 받은 날).
   · 모듈(auth-state · watchlist 등)을 고치면 `stamp_assets.py` 는 루트 · 스테이징만 찍는다 — 종목 페이지의 ?v= 는 `build_stock_static.py`
@@ -534,7 +535,20 @@ Consent · auth-action · Settings · stock · 404)은 스테이징과 같은 �
     서치어드바이저에서 확인) 폴더째 지운다. 그 전에 지우지 말 것.** 옛 생성기 `generate_geo_pages.py` 는 지웠다(돌리면 옛 사본이 되살아난다).
   · 통계: GA4 에는 옛 주소 모양(`/stock.html?ticker=005930`)으로 싣는다(`analytics.js` 의 `page_location`) — 주간 보고서 · 마케팅 도구가
     '/stock.html' 한 덩어리로 리포트를 연 사람을 센다(사람 수는 페이지마다 더할 수 없다). 바꾸면 그 숫자가 끊긴다(`tests/analytics-events.test.mjs` ⑩).
-  · 영어 본문은 정적 HTML 에 없다(한국어 페이지 · 영어는 화면에서 자료로 그린다). 옛 r/ 은 두 말을 다 담았었다 — llms.txt 도 그에 맞췄다.
+    영어 페이지는 같은 덩어리에 `&lang=en` 을 붙인다(옛 영어 화면 `stock.html?ticker=…&lang=en` 과 같은 모양 · marketing_mcp 의 종목 집계도 그대로).
+  · **영어 페이지 `en/stock/{종목코드}.html`**(2026-10-03 사장 승인) — 옛 r/ 에 있던 영어 본문(영어로 묻는 검색 · 인공지능이 읽던 것)을 대신한다.
+    같은 생성기가 같은 종목을 영어로도 미리 그린다: 페이지 스크립트를 영어 화면으로 돌리고(`prerender_stock.mjs` lang en), 남은 한국어 라벨과
+    머리 · 꼬리는 브라우저와 같은 번역 엔진(i18n.js)의 walk 가 작은 HTML 나무(`scripts/mini_dom.mjs`) 위에서 바꾼다 — 자바스크립트 없이도
+    영어다(html lang=en · 영어 제목 · 설명 · 구조화 데이터 · og:locale en_US). 두 페이지는 hreflang 으로 서로를 가리키고(x-default 한국어)
+    사이트맵 · llms.txt 에 둘 다 있다. 지문은 번역 전의 글로 잰다 — 브라우저의 스크립트가 영어 화면에서 그린 글과 견주어 같으면 미리 번역한
+    글을 그대로 둔다(`stock-static.test` ⑨ 가 지문을 틀리게 바꿔 새로 그린 글 = 미리 번역한 글인지 본다).
+  · 영어 페이지는 머리에서 `KOS_PAGE_LANG='en'` 을 번역 엔진보다 먼저 단다(staging/i18n.js) — 저장된 말과 관계없이 영어로 보이고 가리지 않는다.
+    말을 정하지 않은 방문자는 영어로 저장된다(다른 페이지로 옮겨도 영어). 한국어를 이미 고른 사람의 설정은 바꾸지 않는다. 그 페이지에서 말을
+    바꾸면(setLang) hreflang 의 경로로 간다. 번역 엔진을 못 받아도(로봇 렌더링 중 파일 하나를 건너뛴 경우) 미리 그린 영어 글을 덮지 않는다
+    (PAGE_JS `keepEn`). 한국어 페이지를 영어로 정한 사람에게는 지금처럼 화면이 영어로 그리고, 대표 주소는 한국어 페이지 그대로다.
+  · 영어판이 없는 칸(옛 형식 2편의 종합 의견)과 리포트 영어 원문에 섞인 한국어 고유명사(환매청구권 등 · 15편 안팎)는 그대로 보인다 —
+    생성기가 경고로 알리고, 많아지면(사전 누락 신호) 실패로 끝난다. 영문명이 없는 종목(3개)은 이름이 한국어다.
+  · 로그인 뒤 돌아갈 주소(auth-util `NEXT_OK`)는 하위 폴더 두 단계까지 받는다 — en/stock/005930.html 로 돌아오게(`auth-table.test`).
   · **유료화 때**: 미리 만든 페이지에 유료 구간 글이 들어 있으면 누구나 읽는다 — 그날 이 생성기에 무료 구간만 그리는 잠금을 넣어야 한다.
   · `preview/stock/`(파이썬 판 표본 38장)과 `build_stock_pages.py` · `stock_page.py` 는 시안용으로 남아 있다(랜딩 그림이 stock_page.render 를 쓴다).
 

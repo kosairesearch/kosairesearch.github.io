@@ -221,4 +221,4 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
   .chips a{flex:none;position:relative;font:500 13px/44px var(--font);color:var(--ink-62);transition:color .12s} .chips a.on{color:var(--ink);font-weight:600}
   .sec{padding-bottom:64px}
 }
-html[lang="en"] #page[data-pre]{visibility:hidden;animation:kosPreShow 0s 4s forwards} @keyframes kosPreShow{to{visibility:visible}}
+html[lang="en"] #page[data-pre]:not([data-pre-lang="en"]){visibility:hidden;animation:kosPreShow 0s 4s forwards} @keyframes kosPreShow{to{visibility:visible}}

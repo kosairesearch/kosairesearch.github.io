@@ -24,6 +24,11 @@ check(len([l for l in locs if re.search(r"/stock/[0-9A-Z]{6}\.html$", l)]) > 200
       f"{len([l for l in locs if re.search(r'/stock/[0-9A-Z]{6}.html$', l)])}개")
 check(not [l for l in locs if "/r/" in l or l.endswith("/stock.html")],
       "사이트맵에 옛 주소(r/ · stock.html) 없음")
+# 영어 종목 페이지(en/stock/) — 한국어 종목 페이지와 같은 수(상장 종목마다 한 쌍)
+_ko = [l for l in locs if re.search(r"kosai\.kr/stock/[0-9A-Z]{6}\.html$", l)]
+_en = [l for l in locs if re.search(r"kosai\.kr/en/stock/[0-9A-Z]{6}\.html$", l)]
+check(len(_en) > 2000 and len(_en) == len(_ko), "사이트맵에 영어 종목 페이지(en/stock/)가 한국어 페이지와 같은 수만큼 있음",
+      f"영어 {len(_en)} · 한국어 {len(_ko)}")
 _missing = [l for l in locs if re.search(r"/stock/[0-9A-Z]{6}\.html$", l) and not (ROOT / l.split("kosai.kr/", 1)[1]).exists()]
 check(not _missing, "사이트맵의 종목 페이지가 모두 있음", ", ".join(_missing[:5]))
 check(len(locs) == len(set(locs)), "사이트맵에 중복 URL 없음")

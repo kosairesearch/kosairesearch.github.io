@@ -56,7 +56,7 @@ jobs:
           REPORT_MODEL: claude-sonnet-4-6
         run: python scripts/generate_reports_batch.py auto 2>&1 | tee -a data/reports_run.log
 
-      # 새 종목이 시세 자료에 들어가면 홈 검색 · 업종 표 · 첫 화면 검색이 곧바로 그 종목의 페이지(/stock/{코드}.html)를 가리킨다.
+      # 새 종목이 시세 자료에 들어가면 홈 검색 · 업종 표 · 첫 화면 검색이 곧바로 그 종목의 페이지(/stock/{코드}.html · 영어 /en/stock/)를 가리킨다.
       # 리포트 워치독(30분)을 기다리면 그 사이 링크가 빈 주소가 되므로 여기서 바로 만든다(바뀐 페이지만 쓴다 · 노드는 러너에 있다).
       - name: 종목 페이지 생성 (stock/*.html)
         if: always()
@@ -67,7 +67,7 @@ jobs:
         run: |
           git config --global user.email "bot@kosairesearch.github.io"
           git config --global user.name "KOS ai Bot"
-          git add -A data/ stock/
+          git add -A data/ stock/ en/
           git commit -m "🆕 신규 상장 자동 업데이트 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')" || echo "변경 없음"
           for i in 1 2 3 4 5; do
             git fetch origin main && git rebase -X theirs origin/main && git push origin main && break

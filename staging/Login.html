@@ -2,9 +2,9 @@
 <html lang="ko" data-staging>
 <head>
 <meta charset="utf-8">
-<script src="i18n.js?v=bc892c22"></script>
+<script src="i18n.js?v=f0236b4e"></script>
 <script type="module" src="demo-backend.js?v=7f8de79b"></script>
-<script src="analytics.js?v=e5cec7c2"></script>
+<script src="analytics.js?v=c23defd1"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="format-detection" content="telephone=no">
 <meta name="robots" content="noindex,nofollow">
@@ -313,8 +313,8 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 import { auth, isConfigured } from "./firebase-config.js?v=7b8f27a5";
 import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signOut, getAdditionalUserInfo }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { wireSocialButtons } from "./social-login.js?v=d995066d";
-import { goNext, mapAuthError, isUserCancelled } from "./auth-util.js?v=0ad15dc5";
+import { wireSocialButtons } from "./social-login.js?v=9cadfdc8";
+import { goNext, mapAuthError, isUserCancelled } from "./auth-util.js?v=d1d76aa5";
 import { sendVerifyEmail, sendResetEmail } from "./auth-emails.js?v=bce0955f";
 
 const $ = s => document.querySelector(s);

@@ -37,7 +37,10 @@
   /* 종목 리포트는 2026-10-03 부터 종목마다 미리 만든 페이지(/stock/005930.html)다. 통계에는 옛 주소 모양
      (/stock.html?ticker=005930)으로 싣는다 — 주간 보고서와 마케팅 도구가 '/stock.html' 한 덩어리로 리포트를 연 사람을
      센다(사람 수는 페이지마다 더할 수 없어 2,700개 주소로 흩어지면 셀 수 없다). 종목은 ticker 로 따로 남는다. */
-  var stockPage = /^\/stock\/([0-9A-Z]{6})\.html$/.exec(path);
+  var stockPage = /^\/(?:en\/)?stock\/([0-9A-Z]{6})\.html$/.exec(path);
+  /* 영어 종목 페이지(/en/stock/005930.html · 2026-10-03)도 같은 덩어리로 싣되 &lang=en 을 붙인다 — 옛 영어 화면
+     (stock.html?ticker=…&lang=en)과 같은 모양이라 마케팅 도구의 종목 집계(ticker=)도 그대로 센다. */
+  var stockEn = !!stockPage && path.indexOf("/en/") === 0;
 
   /* 스테이징은 '파일'이 아니라 '주소'로 판단합니다.
      staging/analytics.js 안에 꺼 두면, 나중에 이 폴더를 실사이트로 올릴 때
@@ -126,7 +129,7 @@
     };
     if (stockPage) {
       var qs = (location.search || "").replace(/^\?/, "");
-      cfg.page_location = location.origin + "/stock.html?ticker=" + stockPage[1] + (qs ? "&" + qs : "");
+      cfg.page_location = location.origin + "/stock.html?ticker=" + stockPage[1] + (stockEn ? "&lang=en" : "") + (qs ? "&" + qs : "");
     }
     if (referrer !== (document.referrer || "")) cfg.page_referrer = referrer;   // 옛 주소에서 넘어왔으면 원래 출처
     gtag("config", GA4_ID, cfg);

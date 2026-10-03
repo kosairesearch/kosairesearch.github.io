@@ -19,8 +19,8 @@
 
 | | 파일 | 하는 일 |
 |---|---|---|
-| 생성기 | `scripts/build_stock_static.py` | `stock/{종목코드}.html` 2,702장 + `stock/assets/`(옷 · 스크립트 · 영어 사전 한 벌) + `stock/index.html`(리포트 목록으로) |
-| 미리 그리기 | `scripts/prerender_stock.mjs` | 리포트 상세 화면의 스크립트(`build_stock_staging.PAGE_JS` 실사이트 판)를 노드에서 가짜 문서로 돌려 글 · 머리 값을 받는다 |
+| 생성기 | `scripts/build_stock_static.py` | `stock/{종목코드}.html` 2,702장 · 영어 `en/stock/{종목코드}.html` 2,702장 + `stock/assets/`(옷 · 스크립트 · 영어 사전 한 벌) + 목록으로 보내는 `stock/index.html` · `en/stock/index.html` · `en/index.html` |
+| 미리 그리기 | `scripts/prerender_stock.mjs` · `scripts/mini_dom.mjs` | 리포트 상세 화면의 스크립트(`build_stock_staging.PAGE_JS` 실사이트 판)를 노드에서 가짜 문서로 돌려 글 · 머리 값을 받는다. 영어는 번역 엔진(i18n.js)의 walk 로 남은 한국어 라벨 · 머리 · 꼬리를 바꾼다 |
 | 옛 주소 껍데기 | `stock.html`(build_live) · `scripts/retire_r_pages.py` | `stock.html?ticker=` · `r/{코드}.html` 을 새 주소로 넘긴다 |
 | 검사 | `build_stock_static.py --check` · `staging/tests/stock-static.test.mjs` · `retire_r_pages.py --check` | 틀 · 공용 파일 · 종목 수 / 브라우저에서 다시 그리지 않음 · 주소 · 영어 / r/ 껍데기 |
 
@@ -44,14 +44,15 @@
 - 꼬리: 시세 · valuation 자료, `stock/assets/stock.js`(목차 · 공통 · 차트 라벨 · 페이지 스크립트), 영어 사전, 로그인 상태 · 관심종목 · 안내창 모듈, 휠 스크롤.
 - 크기: 장당 33~44KB, 전 종목 약 107MB(옛 r/ 101MB 와 비슷 · r/ 은 껍데기가 되어 약 1MB).
 - 시세 자료에 없는 종목(상장 폐지 · 합병 · 거래 정지 등으로 리포트만 남은 17개)은 noindex · 사이트맵 제외.
-- 영어 본문은 정적 HTML 에 없다 — 페이지는 한국어로 열리고, 영어는 사이트 말을 영어로 정한 사람에게 화면이 자료(`en`)로 그린다.
-  옛 r/ 은 두 말을 다 담았었다(검색 · AI 로봇이 읽던 영어 전문이 빠진 것). llms.txt 도 그에 맞췄다.
+- 영어 페이지(`en/stock/{코드}.html` · 2026-10-03 사장 승인) — 옛 r/ 에 있던 영어 본문을 대신한다. 자바스크립트 없이도 머리 · 본문 · 꼬리가
+  영어이고(html lang=en), 한국어 페이지와 hreflang 으로 서로를 가리킨다(x-default 한국어). 머리에서 `KOS_PAGE_LANG='en'` 을 달아 저장된 말과
+  관계없이 영어로 보인다. 한국어 페이지를 영어로 정한 사람에게는 화면이 자료(`en`)로 영어를 그린다(대표 주소는 한국어 페이지 그대로).
 - 자료(리포트 파일 · 시세)를 못 받으면 미리 그린 글 · 제목 · 대표 주소를 그대로 둔다(`data-pre-tier` · `data-pre-known`). 자료가 늘어난
   경우(준비 중 → 리포트)만 새로 그린다.
 
 ## 옮긴 순서(2026-10-03)
 
-1. **생성** — `build_stock_static.py`. `stock/assets/` 도 같이 커밋.
+1. **생성** — `build_stock_static.py`. `stock/assets/` 도 같이 커밋. 영어 페이지(`en/stock/`)는 같은 날 뒤이어 추가했다(자동 작업의 `git add` 에 `en/`).
 2. **매일 자동화** — `update_data.yml` 이 `generate_geo_pages.py` 자리에서 이 생성기를 돌린다(시세 · 매일). 리포트 워치독(30분 · 리포트 · valuation)과
    신규 상장 작업(new_listings · 새 종목의 링크가 빈 주소가 되지 않게)도 돈다. 종목 하나가 그리다 멈추면 그 종목만 옛 페이지로 둔다.
 3. **링크** — 홈 · 리포트 목록 · 업종 · 관심종목 · 브리핑(본문 · 영어 사전) · 첫 화면 검색. 생성기는 시안 · 스테이징과 같은
