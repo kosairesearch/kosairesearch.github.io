@@ -11,11 +11,11 @@
     data/stocks.js · valuation.js 에서 온다.
   · 옷은 scripts/stock_page.py 의 PAGE_CSS 그대로다. 그 모듈이 파이썬으로 그리는 DOM(히어로 · 지표 · 목차 · 절 · 표 · 차트)을
     여기 자바스크립트가 같은 클래스·id 로 만든다 — 그래서 미리 만든 종목 페이지(preview/stock/)와 이 페이지가 같아 보인다.
-    옷을 고칠 때는 stock_page.PAGE_CSS 한 곳만 고친다. 여기서는 잠금 카드·흐린 미리보기 옷(LOCK_CSS)만 보탠다.
+    옷을 고칠 때는 stock_page.PAGE_CSS 한 곳만 고친다. 여기서는 잠금 카드·미리보기 옷(LOCK_CSS)만 보탠다.
   · 문단 자르기는 실사이트 stock.html 의 splitSentences · chunkPara · ps 를 빌드할 때 그 파일에서 떼어 와 그대로 넣는다.
     staging/tests/same-paragraphs.test.mjs 가 글자 하나까지 같은지 본다(CLAUDE.md 2026-09-14). 파이썬 chunk() 는 쓰지 않는다 —
     그래서 이 페이지의 문단은 실사이트와 같고, stock_page.render() 와는 문장 경계 규칙만큼 다르다.
-  · 유료 구간(실적 분석 ~ 종합 의견)은 흐린 미리보기 + 잠금 카드. 열고 닫는 것은 paywall.js(실제) · demo-backend.js(모의)의
+  · 유료 구간(실적 분석 ~ 종합 의견)은 잠긴 첫 절의 첫머리 미리보기 + 잠금 카드. 열고 닫는 것은 paywall.js(실제) · demo-backend.js(모의)의
     window.KOSPaywall 이다. ?paywall=0 이면 잠그지 않는다. 옛 형식(v1)은 잠그지 않는다.
   · 스테이징 경로(../data · 모듈 꼬리 스크립트 · STAGING 띠)는 comp_common.set_mode('staging') + emit() 이 맡는다.
 """
@@ -78,17 +78,17 @@ def live_paragraph_code():
     return '\n'.join([parts[0], m.group(0), parts[1], parts[2]])
 
 
-# ── 잠금 카드 · 흐린 미리보기 · 목차 자물쇠 (이 페이지만의 옷) ─────────────────
-LOCK_CSS = '''/* 유료 구간 — 잠긴 첫 절의 제목은 그대로 두고, 본문 첫머리만 글자 모양으로 옅게 비치다 사라진 뒤 잠금 카드.
-   상자·유리 없이 가는 선 하나로 나눈다(인쇄된 리서치 리포트). 상자째 흐리는 filter:blur 는 쓰지 않는다 — 제목까지
-   번지고 상자 가장자리가 네모로 비쳐, 진한 막대가 검열 모자이크처럼 보였다(2026-10-03 사장 "모자이크 부분이 어색").
-   글자마다 그림자만 남기는 방식(color:transparent + text-shadow)이라 상자 자국이 없다. */
+# ── 잠금 카드 · 미리보기 · 목차 자물쇠 (이 페이지만의 옷) ─────────────────
+LOCK_CSS = '''/* 유료 구간 — 잠긴 첫 절의 제목과 첫 문단 첫머리를 실제 글 그대로 보여 주고, 두 줄 아래부터 바탕으로 옅어지게 한 뒤 잠금 카드.
+   흐림은 쓰지 않는다 — 상자째 흐리는 filter:blur 도, 글자마다 그림자만 남기는 채움 글자(color:transparent + text-shadow)도.
+   글자를 흐리면 줄마다 회색 막대가 되어 네모난 모자이크로 보였다(2026-10-03 사장 "모자이크 부분이 어색" →
+   "모자이크가 딱 네모낳게 저렇게 티가 난다는 게 어색"). 해외 경제지의 유료 기사와 같은 방식이다.
+   옅어지는 범위는 줄 높이(28px · 휴대폰 27px)의 배수로 잰다 — 글 길이와 관계없이 늘 두 줄이 또렷하고 두 줄에 걸쳐 사라진다.
+   상자·유리 없이 가는 선 하나로 나눈다(인쇄된 리서치 리포트). */
 .tz{max-width:880px;padding:0 0 88px}
 .tz-peek{pointer-events:none;user-select:none;-webkit-user-select:none}
 .tz-peek .sec{padding-bottom:0}
-.tz-fade{max-height:180px;overflow:hidden;-webkit-mask-image:linear-gradient(to bottom,#000 0,rgba(0,0,0,.45) 55%,transparent);mask-image:linear-gradient(to bottom,#000 0,rgba(0,0,0,.45) 55%,transparent)}
-.tz-fade *{color:transparent!important;text-shadow:0 0 8px rgba(128,128,128,.55);text-shadow:0 0 8px color-mix(in srgb,var(--ink) 34%,transparent)}
-@media (forced-colors:active){.tz-fade{display:none}}   /* 고대비 모드는 글자색을 되돌려 채움 글자가 그대로 읽힌다 */
+.tz-fade{max-height:112px;overflow:hidden;-webkit-mask-image:linear-gradient(to bottom,#000 0,#000 56px,transparent 112px);mask-image:linear-gradient(to bottom,#000 0,#000 56px,transparent 112px)}
 .lockwrap{max-width:720px}
 .lockwrap.pending{visibility:hidden}
 .lock{border-top:1px solid var(--line);padding:32px 0;margin:24px 0 0}
@@ -102,7 +102,7 @@ LOCK_CSS = '''/* 유료 구간 — 잠긴 첫 절의 제목은 그대로 두고,
 .toc a .lk{width:11px;height:11px;flex:none;margin-left:auto;align-self:center;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;opacity:.55}
 .chips a .lk{display:inline-block;width:11px;height:11px;vertical-align:-1px;margin-left:5px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;opacity:.55}
 .pending p a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .pending p a:hover{text-decoration-color:var(--ink)}
-@media (max-width:820px){.tz{padding-bottom:64px} .tz-fade{max-height:162px}}'''
+@media (max-width:820px){.tz{padding-bottom:64px} .tz-fade{max-height:108px;-webkit-mask-image:linear-gradient(to bottom,#000 0,#000 54px,transparent 108px);mask-image:linear-gradient(to bottom,#000 0,#000 54px,transparent 108px)}}'''
 
 # 실사이트 옛 주소 — stock.html?ticker=005930 은 검색 · 공유 · 즐겨찾기로 퍼져 있다. 종목마다 미리 만든 페이지(/stock/005930.html ·
 # scripts/build_stock_static.py)로 넘긴다. GitHub Pages 는 서버 쪽 이동(301)을 못 해서 머리 맨 앞의 스크립트로 넘긴다 — 번역 · 통계
@@ -339,34 +339,23 @@ var PAID=null, _lockOff=null, _lockWait=false, FORCE_LOCK=(qp('paywall')!=='0');
 function paywalled(){ return TIER==='v2' && !PAID && (FORCE_LOCK || (REP&&REP.hasPaid===true)); }
 function nextParam(){ var page=location.pathname.split('/').pop()||'stock.html'; return encodeURIComponent(page+(location.search||'')); }
 
-/* 흐린 미리보기 — 서버가 주는 것은 '어느 절에 문단이 몇 개, 각각 몇 글자' 뿐이다(teaser). 글자는 여기서 아무 뜻 없이
-   만들어 깔고 흐린다. 진짜 본문을 내려보내 흐리게 덮으면 개발자 도구에서 filter 한 줄만 지워도 다 읽힌다.
-   문단 수·항목 수·길이와 마크업은 실제 렌더와 같게 맞춘다 — 그래야 흐린 판이 진짜 리포트가 이어지는 것처럼 보인다. */
+/* 미리보기 — 잠긴 첫 절의 제목과 첫 문단 첫머리만 실제 글로 보여 준다(.tz-fade 가 네 줄에서 자르고 옅어지게 한다).
+   서버가 내려 줄 것은 teaser(절마다 문단 · 항목의 글자 수 — 잠금 카드의 읽는 시간)와 첫 절의 앞부분(lead · 한 문단 예산만큼)뿐이다.
+   나머지 본문은 내려보내지 않는다. 흐린 채움 글자는 쓰지 않는다 — 줄마다 회색 막대가 되어 네모난 모자이크로 보였다
+   (2026-10-03 사장 "모자이크가 딱 네모낳게 저렇게 티가 난다는 게 어색"). */
 var TZ_KEYS=['earnings','industry','outlook','valuation_comment','bull','bear','risks','checkpoints','verdict'];
 var TZ_NUM={earnings:4,industry:5,outlook:6,valuation_comment:7,bull:8,bear:9,risks:10,checkpoints:11,verdict:12};
-var TZ_POOL_EN='revenueoperatingprofitdemandsupplypriceoutlookgrowthmarginshareinvestmentcostmarketresultsbasisgainlossyearquarter'
-           +'0123456789.%()0123456789$₩TB202520262027';
-var TZ_POOL='매출영업이익수요공급가격전망성장확대둔화개선부담경쟁점유율투자비용시장실적기준증가감소'
-           +'대비수익구조원가환율금리재고출하단가물량비중전년동기수준유지회복'
-           +'0123456789.%()0123456789조원억달러202520262027';
-var _tzSeed=0;
-/* 길이만 맞춘 글자. 같은 리포트면 늘 같은 모양이 나오도록 난수는 결정적으로 돌린다 — 다시 그릴 때마다 출렁이면 거슬린다. */
-function fillerText(len){
-  var out='',gap=0,k,r=(_tzSeed=(_tzSeed*1103515245+12345)&0x7fffffff)||9973;
-  var en=EN(), pool=en?TZ_POOL_EN:TZ_POOL, wmin=en?3:2;
-  len=Math.max(2,Math.round(len*(en?1.8:1)));
-  for(k=0;k<len;k++){
-    r=(r*1103515245+12345)&0x7fffffff;
-    out+=pool.charAt(r%pool.length);
-    if(++gap>=wmin+(r>>9)%5 && k<len-1){ out+=' '; gap=0; }   /* 서너 글자마다 띄어 줄바꿈 자리가 실제와 비슷해진다 */
-  }
-  return out;
-}
-function tzP(n){ return '<p>'+esc(fillerText(n))+'</p>'; }
+var TZ_PROSE=['earnings','industry','outlook','valuation_comment'];
 function tzLens(v){ return v==null ? [] : (v.length===undefined ? [v] : v); }
 function tzSum(v){ var t=0; tzLens(v).forEach(function(L){ t+=L; }); return t; }
-function tzPs(v){ return tzLens(v).map(tzP).join(''); }
-/* publish_paid.py 를 아직 안 돌린 동안에는 정적 파일에 본문이 그대로 있다. 그때도 미리보기를 확인할 수 있게
+/* 잠긴 절 하나의 글자 수 — 문단 길이(산문 · 종합 의견)와 항목의 머리 + 본문 길이(요인 · 리스크 · 일정)를 더한다 */
+function tzChars(t){
+  var n=0; if(!t) return 0;
+  (t.paras||[]).forEach(function(L){ n+=L; });
+  (t.items||[]).forEach(function(it){ n+=it[0]+tzSum(it[1]); });
+  return n;
+}
+/* publish_paid.py 를 아직 안 돌린 동안에는 정적 파일에 본문이 그대로 있다. 그때도 잠금 카드의 읽는 시간을 셀 수 있게
    같은 뼈대(문단별 글자 수)를 여기서 만든다. 서버가 teaser 를 주기 시작하면 쓰이지 않는다. */
 function deriveTeaser(){
   function paras(o){ var t=pk(o); if(!t) return []; var out=[]; String(t).split(/\n\n+/).forEach(function(b){ chunkPara(b.trim()).forEach(function(c){ if(c) out.push(c.length); }); }); return out; }
@@ -384,31 +373,30 @@ function deriveTeaser(){
   add('verdict','wrapup',REP.verdict?paras(REP.verdict.body):[]);
   return out;
 }
-/* 실제 렌더(prose · factors · risksH · cpsH · verdictH)와 같은 마크업 — 클래스가 다르면 여백이 달라져 덩어리 위치가 어긋난다. */
-function tzSection(t){
-  var n=0;
-  if(t.t==='prose'){ (t.paras||[]).forEach(function(L){ n+=L; }); return {h:'<div class="prose">'+(t.paras||[]).map(tzP).join('')+'</div>', n:n}; }
-  if(t.t==='wrapup'){ (t.paras||[]).forEach(function(L){ n+=L; }); return {h:'<div class="prose verdict">'+(t.paras||[]).map(tzP).join('')+'</div>', n:n}; }
-  if(t.t==='factors'){ return {h:'<div class="fcs">'+(t.items||[]).map(function(it){ n+=it[0]+tzSum(it[1]); return '<article class="fc '+(t.k==='bull'?'bull':'bear')+'"><h4><i class="dot"></i>'+esc(fillerText(it[0]))+'</h4>'+tzPs(it[1])+'</article>'; }).join('')+'</div>', n:n}; }
-  if(t.t==='pairs'&&t.k==='risks'){ return {h:'<div class="rks">'+(t.items||[]).map(function(it){ n+=it[0]+tzSum(it[1]); return '<div class="rk"><div class="rk-c">'+esc(fillerText(it[0]))+'</div><div class="rk-b">'+tzPs(it[1])+'</div></div>'; }).join('')+'</div>', n:n}; }
-  if(t.t==='pairs'){ return {h:'<ol class="cps">'+(t.items||[]).map(function(it){ n+=it[0]+it[1]; return '<li><span class="when">'+esc(fillerText(it[0]))+'</span><p>'+esc(fillerText(it[1]))+'</p></li>'; }).join('')+'</ol>', n:n}; }
-  return {h:'', n:0};
+/* 미리보기에 보일 글 — 서버가 준 lead, 없으면 정적 파일에 남은 본문(publish_paid.py 전). 잠금을 풀었을 때와 같은 자르기
+   (prose · chunkPara)의 첫 문단부터, 한 문단 예산(PARA_KO · PARA_EN)이 찰 때까지만 — 첫 문단이 '연간 흐름은 뚜렷하다.' 처럼 한 줄이면
+   다음 문단까지 담아 네 줄 창이 빈 채로 끝나지 않게 한다. 산문 절만 — 요인 · 리스크 · 일정은 쓰지 않는다. */
+function tzLead(key,t){
+  var src=(t&&t.lead)?t.lead:(TZ_PROSE.indexOf(key)<0?'':REP[key]);
+  var txt=String(pk(src)), out=[], n=0, budget=/[가-힣]/.test(txt)?PARA_KO:PARA_EN;
+  txt.split(/\n\n+/).some(function(b){
+    chunkPara(b.trim()).some(function(c){ if(c){ out.push(c); n+=c.length; } return n>=budget; });
+    return n>=budget;
+  });
+  return out;
 }
-/* 잠긴 절 04~12 를 번호 그대로 흐리게 깐다. 절 번호는 열렸을 때와 같아야 목차가 흔들리지 않는다. */
+/* 잠긴 절 04~12 중 첫 절 하나만 그린다. 절 번호는 열렸을 때와 같아야 목차가 흔들리지 않는다. */
 function teaserPane(P){
   var tz=REP.teaser; if(!tz||!tz.length) tz=deriveTeaser();
   var byKey={}; (tz||[]).forEach(function(t){ byKey[t.k]=t; });
-  _tzSeed=0;
   var h='', chars=0, names=[];
   P.paid.forEach(function(s){
-    var key=TZ_KEYS[s[0]-4], t=byKey[key], body=t?tzSection(t):{h:'',n:0};
-    chars+=body.n; names.push(s[1]);
-    /* 잠긴 첫 절 하나만 비친다 — 제목은 그대로, 본문은 첫머리만(.tz-fade 가 높이를 자르고 사라지게 한다) */
-    if(!h && body.n){
-      if(key==='valuation_comment') body.h=P.vstrip+body.h+P.vnote;   /* 지표 띠·각주는 무료 구간 값 — 그대로 둔다 */
-      h=secH(s[0],s[1],'<div class="tz-fade">'+body.h+'</div>',s[3],s[4],'div');
-    }
+    var key=TZ_KEYS[s[0]-4], t=byKey[key], lead;
+    chars+=tzChars(t); names.push(s[1]);
+    if(!h && (lead=tzLead(key,t)).length) h=secH(s[0],s[1],'<div class="tz-fade"><div class="prose">'+lead.map(function(c){ return '<p>'+esc(c)+'</p>'; }).join('')+'</div></div>',s[3],s[4],'div');
   });
+  /* 첫 문단이 없으면(서버가 lead 를 주지 않은 경우 등) 첫 절의 제목만 — 흐린 글자로 메우지 않는다 */
+  if(!h && P.paid.length){ var f=P.paid[0]; h=secH(f[0],f[1],'',f[3],f[4],'div'); }
   return {html:h, secs:P.paid.length, names:names, mins:Math.max(1,Math.round(chars/500))};   /* 묵독 분당 500자 */
 }
 /* 잠금 카드. 두 번째 단추는 스크립트가 못 떠도 죽지 않도록 링크로 두고, wireLock() 이 로그인·구독 상태에 맞는 동작을 얹는다. */
@@ -538,7 +526,7 @@ function render(){
   if(LOADED) setSEO(locked);
 }
 
-/*@paid*//* 잠긴 절의 목차 항목 — 흐린 판 속으로 들어가지 않고 유료 구간이 시작하는 자리로 간다 */
+/*@paid*//* 잠긴 절의 목차 항목 — 미리보기 속으로 들어가지 않고 유료 구간이 시작하는 자리로 간다 */
 document.addEventListener('click',function(e){
   var a=e.target.closest&&e.target.closest('#toc a[data-lock], #chips a[data-lock]'); if(!a) return;
   var tz=document.getElementById('tz'); if(!tz) return;
