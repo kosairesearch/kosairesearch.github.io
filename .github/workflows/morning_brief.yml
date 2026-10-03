@@ -325,6 +325,9 @@ jobs:
           # 올리느니 전날 글을 그대로 두는 게 낫다.
           if [ "${{ steps.render.outcome }}" = "success" ]; then
             git add data/briefs brief.html staging
+            # 지난 호(실사이트 · 2026-10-04) — render_brief 가 발행 직후 만든 그날 호의 고정 페이지 · 전날 호 · 목록(루트 brief-*.html).
+            # 따옴표 안의 글 틀은 git 이 맞춘다. 맞는 파일이 없어도 이 단계(발행)를 멈추지 않게 실패를 넘긴다.
+            git add -- 'brief-*.html' 2>/dev/null || true
             MSG="📰 모닝 브리핑 $D"
           else
             # ④가 페이지를 반쯤 쓰다 멈췄을 수 있다. 되돌려 놔야 한다 —

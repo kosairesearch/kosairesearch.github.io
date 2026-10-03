@@ -15,7 +15,9 @@
 나머지 모듈은 루트 파일을 그대로 쓴다(settings-panel.js 는 구독 칸이 없는 루트 판 — tests/settings-panel.test.mjs).
 
 매일 바뀌는 첫 화면 값(data-live="이름")은 --check 가 빼고 견준다 — 값은 stamp_counts.py 가 30분마다 맞추고 그쪽 --check 가 본다.
-모닝브리핑(brief.html)은 아침 작업의 render_brief.py 가 같은 생성기로 그린다(발행된 가장 최근 브리핑).
+모닝브리핑(brief.html)은 아침 작업의 render_brief.py 가 같은 생성기로 그린다(발행된 가장 최근 브리핑). 지난 호(호마다
+brief-YYYY-MM-DD.html · 목록 brief-archive.html · 2026-10-04)도 render_brief 가 발행 직후에 만들고, 여기서도 같은 함수(build_brief_comp.build_archive)로
+다시 만든다 — --check 는 발행 목록에서 빠진 호의 페이지가 남아 있어도 잡는다.
 """
 import argparse
 import json
@@ -70,6 +72,7 @@ def build_pages(out_dir: Path):
     build_industry_comp.build(o('industry.html'))
     build_watchlist_comp.build(o('Watchlist.html'))
     build_brief_comp.build(None, o('brief.html'))   # 발행된 가장 최근 브리핑
+    build_brief_comp.build_archive(out_dir)         # 지난 호 — 호마다 brief-YYYY-MM-DD.html 과 목록 brief-archive.html(2026-10-04)
     build_about_comp.build(o('About.html'))
     build_legal_comp.build('terms', o('Terms.html'))
     build_legal_comp.build('privacy', o('Privacy.html'))
@@ -101,11 +104,16 @@ def visible_text(html):
     return re.sub(r'<[^>]+>', ' ', t)
 
 
+def archive_pages(dir_: Path):
+    """지난 호 페이지 이름 — 호마다 brief-YYYY-MM-DD.html 과 목록 brief-archive.html(build_brief_comp.build_archive)."""
+    return sorted(f.name for f in dir_.glob('brief-????-??-??.html')) + [build_brief_comp.ARCHIVE]
+
+
 def audit(dir_: Path):
     """멤버십 · 스테이징 흔적, 색인 설정, 모듈 문법. 문제 목록을 돌려준다."""
     bad = []
     stg_keys = {re.sub(r'\s+', ' ', k).strip() for k in json.loads((ROOT / 'scripts/i18n/staging.json').read_text(encoding='utf-8')) if not k.startswith('//')}
-    for name in PAGES:
+    for name in PAGES + archive_pages(dir_):
         f = dir_ / name
         if not f.exists():
             bad.append(f'{name} 없음')
@@ -175,7 +183,7 @@ def main():
                 cur = ROOT / name
                 if not cur.exists() or unstamped(cur.read_text(encoding='utf-8')) != unstamped((t / name).read_text(encoding='utf-8')):
                     diff.append(name)
-            for name in PAGES:
+            for name in PAGES + archive_pages(t):
                 cur = ROOT / name
                 have = cur.read_text(encoding='utf-8') if cur.exists() else None
                 fresh = (t / name).read_text(encoding='utf-8')
@@ -183,6 +191,9 @@ def main():
                     have, fresh = (re.sub(r'(국내 상장 )[\d,]+(개 종목)', r'\1#\2', landing.mask(x)) for x in (have, fresh))
                 if have != fresh:
                     diff.append(name)
+            for name in archive_pages(ROOT):   # 지난 호 — 발행 목록에서 빠진 호의 페이지가 남아 있으면
+                if not (t / name).exists():
+                    diff.append(name + '(생성기에 없는 호)')
             for f in sorted((t / 'img').glob('*.webp')):
                 cur = ROOT / 'img' / f.name
                 if not cur.exists() or cur.read_bytes() != f.read_bytes():
@@ -193,7 +204,7 @@ def main():
             if bad:
                 print('❌ 실사이트 점검:\n   ' + '\n   '.join(bad))
             if not diff and not bad:
-                print(f'✅ 실사이트 = 생성기 결과 ({len(PAGES)}장 · 모듈 {len(MODULES)}) · 멤버십 · 스테이징 흔적 없음')
+                print(f'✅ 실사이트 = 생성기 결과 ({len(PAGES)}장 · 지난 호 {len(archive_pages(t)) - 1}편 · 모듈 {len(MODULES)}) · 멤버십 · 스테이징 흔적 없음')
             sys.exit(1 if diff or bad else 0)
     build_modules(ROOT)
     subprocess.run([sys.executable, str(ROOT / 'scripts/stamp_assets.py')], check=True)   # 새 모듈 안의 import 에 ?v= — 페이지 도장의 바탕

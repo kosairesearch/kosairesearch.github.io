@@ -350,11 +350,25 @@ def verify(page, dic):
     return verify_body(page[page.index(BODY_START):page.index(BODY_END)], dic)
 
 
-def live_page(doc, at):
-    """새 디자인 brief.html 한 장(실사이트 모드 · ?v= 도장까지). 아침 브리핑 작업이 이것으로 실사이트 페이지를 쓴다."""
+def live_page(doc, at, issue=None):
+    """새 디자인 brief.html 한 장(실사이트 모드 · ?v= 도장까지). 아침 브리핑 작업이 이것으로 실사이트 페이지를 쓴다.
+    issue — 지난 호 연결(호수 · 이전 호 · 지난 호 목록 · brief_issue). build_live.py 가 내는 brief.html 과 글자 하나까지 같다."""
     import build_brief_comp as BB
     BB.C.set_mode("live")
-    return BB.C.live_stamp(BB.C.finish(BB.page_html(doc, at), "brief.html"))
+    return BB.C.live_stamp(BB.C.finish(BB.page_html(doc, at, issue), "brief.html"))
+
+
+def brief_issue(date, doc):
+    """지난 호 연결(2026-10-04) — 이번 호를 발행한 것으로 치고 호수와 이전 · 다음 호를 찾는다(build_brief_comp.issue_info).
+    처음 발행하는 호면 붙일 호수(이미 발행한 호 가운데 가장 큰 호수 + 1)도 돌려준다 — main 이 발행 시각과 함께 브리핑에 적는다.
+    호수를 적어 두므로 지난 호 하나를 내려도 뒤 호수가 밀리지 않는다."""
+    import build_brief_comp as BB
+    BB.C.set_mode("live")
+    meta = doc.get("meta") or {}
+    new_no = None if meta.get("publishedAt") else BB.next_issue_no(date)
+    me = dict(doc, meta=dict(meta, issueNo=new_no) if new_no else meta)
+    items = sorted([(d, x) for d, x in BB.published() if d != date] + [(date, me)], key=lambda t: t[0])
+    return new_no, BB.issue_info(items, [d for d, _ in items].index(date))
 
 
 def verify_body(body, dic):
@@ -422,6 +436,7 @@ def main():
         return 3
     page_path = Path(a.page) if a.page else PAGE
     old_page = page_path.read_text(encoding="utf-8") if page_path.exists() else ""
+    new_no = None
     if BODY_START in old_page:
         # 옛 디자인 페이지(표식 넷이 있는 brief.html) — 두 구역만 갈아끼운다. --page 로 옛 틀을 줄 때만 쓴다.
         page = splice(old_page, body, dict_js(dic))
@@ -429,8 +444,14 @@ def main():
         # 새 디자인(2026-10-03 실사이트 이전) — 페이지 전체를 생성기(build_brief_comp · 실사이트 모드)가 그린다.
         # 머리 · 꼬리 · 번역 사전 · 모듈 도장까지 build_live.py 가 내는 brief.html 과 글자 하나까지 같다.
         # 그리다 멈추면 3 으로 끝낸다 — 1 은 '영문 사전에 빠진 문단'(발행은 되는 경고)이라 브리핑 다시 써 보기가 그것과 섞지 않게.
+        # 지난 호 연결(호수 · 이전 호 · 목록 · 2026-10-04)을 못 붙이면 이번 호만 그린다 — 발행을 막지 않는다.
         try:
-            page = live_page(doc, at)
+            new_no, issue = brief_issue(src.stem, doc)
+        except Exception as e:  # noqa: BLE001
+            log(f"⚠️ 지난 호 연결을 붙이지 못했습니다 — 이번 호만 그립니다: {type(e).__name__}: {e}")
+            new_no, issue = None, None
+        try:
+            page = live_page(doc, at, issue)
         except Exception as e:  # noqa: BLE001
             log(f"❌ 새 디자인 brief.html 을 그리지 못했습니다: {type(e).__name__}: {e}")
             return 3
@@ -459,6 +480,8 @@ def main():
     first_publish = not meta.get("publishedAt")
     if first_publish:
         meta["publishedAt"] = at.isoformat(timespec="minutes")
+        if new_no:   # 호수 — 처음 발행할 때 한 번만 적는다(지난 호 페이지 · 랜딩 '제N호 읽기'가 이 수를 쓴다 · 2026-10-04)
+            meta["issueNo"] = new_no
         src.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
     # "2026-08-24T07:28+09:00" 에서 07:28 만. 뒤에서 다섯 글자를 집으면
     # 시간대(+09:00)를 집는다.
@@ -469,6 +492,16 @@ def main():
     log(f"   제목 {doc['title']['ko']}")
     log(f"   문단 {n_para}개 · 영문 사전 {len(dic)}항목 · "
         f"{'개장' if doc.get('marketOpen') else '휴장'}")
+    # 지난 호(실사이트 · 2026-10-04) — 이번 호의 고정 페이지(brief-날짜.html) · 전날 호의 '다음 호' · 지난 호 목록(brief-archive.html).
+    # brief.html 과 발행 기록은 위에서 이미 썼다 — 여기서 멈춰도 브리핑은 발행된다. 경고만 남기고, 다음 발행(또는 build_live.py)이
+    # 지난 호 전체를 다시 맞춘다. 새 디자인으로 실사이트 brief.html 을 쓸 때만 돈다(--page 로 다른 틀을 줄 때는 건너뛴다).
+    if BODY_START not in old_page and page_path.resolve() == PAGE.resolve():
+        try:
+            import build_brief_comp as BB
+            BB.C.set_mode("live")
+            BB.build_archive(PAGE.parent)   # brief.html 과 같은 층(실사이트 루트)
+        except Exception as e:  # noqa: BLE001
+            log(f"⚠️ 지난 호 페이지를 만들지 못했습니다 — 브리핑은 그대로 발행합니다: {type(e).__name__}: {e}")
     return 0
 
 

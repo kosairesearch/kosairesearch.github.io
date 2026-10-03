@@ -19,7 +19,7 @@ data-live="이름" 표시가 있고, 이 스크립트가 그 자리를 고친다
            검색 설명 · 공유 설명의 같은 문구도 함께 고친다. 홈 · 리포트 페이지 머리 줄과 같은 정의다.
     sec    업종 분석 수 — 분석 글이 있는 대표 업종(sector_count)
     src    출처 평균 — 화면에 나오는 리포트의 출처 수 평균(sources_avg)
-    brief  모닝브리핑 호수 — 발행한 브리핑 수(meta.publishedAt 이 있는 것 · brief_no)
+    brief  모닝브리핑 호수 — 가장 최근 호의 호수(발행할 때 적는 meta.issueNo · 없으면 발행한 브리핑 수 · brief_no)
     when   '지난해' — 바깥 통계(GAP)의 집계 해 다음 해에만 '지난해', 그 뒤는 'YYYY년'
     orb    첫 화면 행성의 반짝임 몫(최근 14일 리포트)
 
@@ -126,16 +126,19 @@ def _briefs():
 
 
 def brief_no() -> int:
-    """모닝브리핑 호수 — 발행한 브리핑 수(meta.publishedAt 이 있는 것). 파일 수를 세면 발행하지 않은
-    원고(9월 13일 시험 원고 · 발행 대기 초안)까지 들어가 하나 많아진다(10/2 실측: 파일 32 · 발행 31)."""
-    n = 0
+    """모닝브리핑 호수 — 가장 최근에 발행한 호의 호수. 발행할 때 브리핑에 적는 meta.issueNo 다(2026-10-04 부터 · render_brief ·
+    지난 호 페이지의 호수와 같다 — build_brief_comp.number_of). 적힌 호수가 없으면 발행한 브리핑 수(meta.publishedAt 이 있는 것).
+    파일 수를 세면 발행하지 않은 원고(9월 13일 시험 원고 · 발행 대기 초안)까지 들어가 하나 많아진다(10/2 실측: 파일 32 · 발행 31)."""
+    n, last = 0, None
     for p in _briefs():
         try:
-            if (json.loads(p.read_text(encoding="utf-8")).get("meta") or {}).get("publishedAt"):
-                n += 1
+            doc = json.loads(p.read_text(encoding="utf-8"))
         except (ValueError, OSError):
             continue
-    return n
+        if (doc.get("meta") or {}).get("publishedAt"):
+            n, last = n + 1, doc
+    no = ((last or {}).get("meta") or {}).get("issueNo")
+    return no if isinstance(no, int) and not isinstance(no, bool) and no > 0 else n
 
 
 def today() -> datetime.date:

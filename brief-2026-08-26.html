@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<script src="i18n.js?v=53cc0da2"></script>
+<script src="analytics.js?v=c23defd1"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#f9f8f6">
+<title>반도체는 오르고, 원전이 코스피를 흔들었다 — 모닝브리핑 | KOSAI</title>
+<meta name="description" content="2026년 8월 26일 (수) 모닝브리핑 제7호. 미국 증시는 S&amp;P 500과 나스닥, 다우가 모두 올랐고 필라델피아 반도체 지수가 1.44%로 가장 크게 상승했다.">
+<link rel="canonical" href="https://kosai.kr/brief-2026-08-26.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="KOSAI">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="반도체는 오르고, 원전이 코스피를 흔들었다 — 모닝브리핑 | KOSAI">
+<meta property="og:description" content="2026년 8월 26일 (수) 모닝브리핑 제7호. 미국 증시는 S&amp;P 500과 나스닥, 다우가 모두 올랐고 필라델피아 반도체 지수가 1.44%로 가장 크게 상승했다.">
+<meta property="og:url" content="https://kosai.kr/brief-2026-08-26.html">
+<meta property="og:image" content="https://kosai.kr/assets/og-image.png?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="반도체는 오르고, 원전이 코스피를 흔들었다 — 모닝브리핑 | KOSAI">
+<meta name="twitter:description" content="2026년 8월 26일 (수) 모닝브리핑 제7호. 미국 증시는 S&amp;P 500과 나스닥, 다우가 모두 올랐고 필라델피아 반도체 지수가 1.44%로 가장 크게 상승했다.">
+<meta name="twitter:image" content="https://kosai.kr/assets/og-image.png?v=3">
+<link rel="icon" type="image/svg+xml" href="/assets/kosai-icon-dark.svg?v=k2">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=k2">
+<link rel="icon" href="/assets/favicon.png?v=k2">
+<link rel="stylesheet" href="/fonts/pretendard-subset.css">
+<script>(function(){var t='light';try{t=localStorage.getItem('kos-theme')||'light'}catch(e){}document.documentElement.setAttribute('data-theme',t);})();</script>
+<script id="kosThemeColor">(function(){var m=document.querySelector('meta[name="theme-color"]'),r=document.documentElement;
+  function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0d0d0e':'#f9f8f6')}
+  tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme']})})();</script>
+<script>
+/* 활성 표시선 — 컨테이너마다 선 하나를 두고, 활성 항목(.on)의 자리로 미끄러뜨린다.
+   axis 'x' = 밑줄, 'y' = 왼쪽 세로선. sel 로 활성 항목 선택자를 바꿀 수 있다(기본 .on).
+   첫 자리는 그냥 놓고, 그 뒤부터 element.animate() 로 이전 자리에서 새 자리로 움직인다.
+   CSS transition 을 안 쓰는 이유: 휴대폰 목차 띠가 헤더 안으로 옮겨 붙는 프레임에 항목이 같이 바뀌면
+   방금 옮겨진 요소라 transition 이 시작되지 않는다. animate() 는 DOM 이동과 무관하게 움직인다.
+   window.kosIndMs 로 길이를 바꿀 수 있다(시험용). 움직임 줄이기 설정이면 바로 놓는다. */
+window.kosInd=function(box,axis,sel){
+  if(!box)return function(){};
+  if(box.__ind)return box.__ind;
+  var ind=document.createElement('span');ind.className='ind '+(axis==='y'?'ind-v':'ind-h');ind.setAttribute('aria-hidden','true');box.appendChild(ind);
+  var last=null,placed=false,anim=null,rm=window.matchMedia?matchMedia('(prefers-reduced-motion:reduce)'):null;
+  function move(force){
+    var a=box.querySelector(sel||'.on');
+    if(!a){ind.style.opacity='0';last=null;return}
+    if(a===last&&!force)return;
+    var b=box.getBoundingClientRect(),r=a.getBoundingClientRect();
+    if(!r.width&&!r.height)return;
+    last=a;
+    var x=r.left-b.left-box.clientLeft+box.scrollLeft,y=r.top-b.top-box.clientTop+box.scrollTop;
+    var to={transform:'translate('+x+'px,'+(axis==='y'?y:y+r.height-2)+'px)'};
+    if(axis==='y')to.height=r.height+'px';else to.width=r.width+'px';
+    var from=null;
+    if(placed&&ind.animate&&!(rm&&rm.matches)){var cs=getComputedStyle(ind);from={transform:cs.transform};if(axis==='y')from.height=cs.height;else from.width=cs.width;if(anim){anim.cancel();anim=null}}
+    ind.style.opacity='';ind.style.transform=to.transform;if(axis==='y')ind.style.height=to.height;else ind.style.width=to.width;
+    if(from){anim=ind.animate([from,to],{duration:window.kosIndMs||300,easing:'cubic-bezier(.2,.8,.2,1)'});anim.onfinish=function(){anim=null}}
+    placed=true;
+  }
+  addEventListener('resize',function(){move(true)});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){move(true)});
+  box.__ind=move;move();return move;
+};
+</script>
+<style>
+:root{
+  --bg:#f9f8f6; --surface:#ffffff; --surface-2:#f1efeb;
+  --ink:#141414; --ink-72:rgba(20,20,20,.72); --ink-62:rgba(20,20,20,.62); --ink-30:rgba(20,20,20,.30);
+  --hair:rgba(20,20,20,.08); --line:rgba(20,20,20,.14);
+  --up:#c8102e; --down:#1e5fbf; --up-bg:rgba(200,16,46,.08); --down-bg:rgba(30,95,191,.08);
+  --font:"Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --wrap:1120px; --pad:32px; --nav-bar:rgba(249,248,246,.72);
+  color-scheme:light;
+}
+:root[data-theme="dark"]{
+  --bg:#0d0d0e; --surface:#161617; --surface-2:#1e1e20;
+  --ink:#ececea; --ink-72:rgba(236,236,234,.72); --ink-62:rgba(236,236,234,.62); --ink-30:rgba(236,236,234,.30);
+  --hair:rgba(255,255,255,.08); --line:rgba(255,255,255,.14);
+  --up:#f0655f; --down:#6f9cf5; --up-bg:rgba(240,101,95,.12); --down-bg:rgba(111,156,245,.12);
+  --nav-bar:rgba(13,13,14,.72);
+  color-scheme:dark;
+}
+/* 가격 방향 색 — 한국어는 오르면 빨강 · 내리면 파랑, 영어는 해외 관례대로 오르면 초록 · 내리면 빨강(실사이트 영어판과 같은 방향).
+   --up 은 오류 · 경고 글자에도 쓰므로 그대로 두고, 가격 방향(.up · .down · 강세/약세 점)만 이 둘을 쓴다.
+   초록은 빨강과 밝기를 맞췄다 — 바탕에 대한 명암비 라이트 5.4:1 · 다크 6.5:1(빨강 5.5:1 · 6.2:1). */
+:root{--rise:var(--up);--fall:var(--down)}
+:root[lang="en"]{--rise:#0a7637;--fall:var(--up)}
+:root[lang="en"][data-theme="dark"]{--rise:#31aa64}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(84px + var(--kos-bar-h,0px));overflow-x:clip}
+/* 페이지 전환 — 실사이트와 같은 문서 간 크로스페이드(크롬 126+ · 사파리 18.2+). 띠와 헤더는 이름을 줘 제자리에 두고 본문만 바뀐다. */
+@view-transition{navigation:auto}
+.nav{view-transition-name:kos-nav}
+/* 옛 모듈(auth-state · settings-panel · auth-guard · consent · checkout)이 쓰는 토큰 이름 — 새 토큰에 잇는다. 모듈을 새 이름으로 고칠 때까지의 다리 */
+:root{--font-sans:var(--font);--fg-1:var(--ink);--fg-2:var(--ink-72);--fg-3:var(--ink-62);--bg-1:var(--surface);--border-2:var(--line);--shadow-2:0 8px 24px rgba(20,20,20,.08);--brand-blue:var(--ink);--brand-cyan:var(--ink-72);--radius-sm:8px;--radius-md:12px;--radius-lg:16px}
+[hidden]{display:none!important} /* hidden 속성이 .pager{display:flex} 같은 클래스 규칙에 밀리지 않게 */
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums lining-nums;word-break:keep-all;overflow-wrap:anywhere}
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(20,20,20,.14)} :root[data-theme="dark"] ::selection{background:rgba(255,255,255,.22)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.up{color:var(--rise)} .down{color:var(--fall)} .flat{color:var(--ink-62)}
+/* 헤더 — 사이트 규칙 그대로(60px · 맨 위 투명 · 내리면 띠) */
+.nav{position:sticky;top:var(--kos-bar-h,0px);z-index:50;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0;transition:background-color .2s,box-shadow .2s}
+.nav.scrolled{background:var(--nav-bar);box-shadow:0 1px 0 var(--hair);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+.nav-in{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;position:relative}
+.brand img{height:14px;display:block} .brand .dk{display:none} :root[data-theme="dark"] .brand .lt{display:none} :root[data-theme="dark"] .brand .dk{display:block}
+.links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:34px;width:max-content;white-space:nowrap}   /* 28 → 34(사장 2026-10-02) — 랜딩 머리와 같은 값이어야 페이지를 옮길 때 메뉴가 움직이지 않는다 */
+.links a{font:500 14px/1 var(--font);color:var(--ink-72);transition:color .12s} .links a:hover,.links a.on{color:var(--ink)} .links a.on{font-weight:600}
+.right{display:flex;align-items:center;gap:6px} .login{font:600 13px/1 var(--font);color:var(--ink-72);padding:8px 10px} .login:hover{color:var(--ink)}
+.ib{width:38px;height:38px;border:0;background:transparent;color:var(--ink-72);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;border-radius:10px} .ib:hover{color:var(--ink)} .ib svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.menu{display:none}
+@media (max-width:820px){.links,.login,.right .acct,.right .acct.show{display:none} .menu{display:inline-flex}}  /* 휴대폰은 햄버거 메뉴 안(#mauth)에 설정·로그아웃이 있어 아바타를 겹쳐 두지 않는다. 뒤에 오는 .acct.show{inline-flex} 보다 세게(.right 를 붙여) 적어야 로그인 뒤에도 숨는다 */
+/* 휴대폰 메뉴 — ☰ 를 누르면 헤더 아래를 페이지색 한 장이 다 덮는다. 큰 글자 다섯 · 계정 · 맨 아래 작은 링크.
+   (9/26 사장: 헤더에서 내려오던 목록이 안 예쁘다 — 그건 기능만 있던 자리였다.) nav 바깥에 둔다: .nav.scrolled 의
+   backdrop-filter 가 fixed 의 기준이 되어 안에 두면 내린 뒤 여는 순간 높이가 0 이 된다. */
+.menu .x{display:none} .nav.menu-open .menu .ham{display:none} .nav.menu-open .menu .x{display:block}
+.mmenu{display:none;position:fixed;top:calc(60px + var(--kos-bar-h,0px));left:0;right:0;bottom:0;z-index:49;background:var(--bg);flex-direction:column;box-sizing:border-box;padding:22px var(--pad) max(28px,env(safe-area-inset-bottom));overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+@media (max-width:820px){.mmenu.open{display:flex;animation:mmIn .18s ease-out}} @keyframes mmIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}} @media (prefers-reduced-motion:reduce){.mmenu.open{animation:none}}
+.mm-links{display:flex;flex-direction:column} .mm-links a{display:block;padding:10px 0;font:600 28px/36px var(--font);letter-spacing:-.02em;color:var(--ink-72);text-decoration:none} .mm-links a.on{color:var(--ink);font-weight:700}
+.mmenu .sep{height:1px;background:var(--hair);margin:20px 0 22px}
+.mm-auth{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px} .mm-auth a,.mm-auth button{border:0;background:none;padding:0;font:600 16px/24px var(--font);color:var(--ink);text-decoration:none;cursor:pointer}
+.mm-foot{margin-top:auto;padding-top:32px;display:flex;flex-wrap:wrap;gap:6px 18px} .mm-foot a{font:400 13px/20px var(--font);color:var(--ink-62);text-decoration:none}
+/* 계정(로그인 상태) — 이메일 첫 글자 동그라미와 작은 메뉴. 시안은 ?user=이메일 로 켠다 */
+.acct{position:relative;display:none;align-items:center} .acct.show{display:inline-flex} .right.user .login{display:none}
+.avatar{width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--bg);font:600 13px/1 var(--font);display:inline-flex;align-items:center;justify-content:center;border:0;cursor:pointer;padding:0;margin:0 4px}
+.acct-menu{display:none;position:absolute;right:0;top:calc(100% + 10px);min-width:220px;background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:6px 0;box-shadow:0 8px 24px rgba(20,20,20,.08);z-index:60}
+.acct.open .acct-menu{display:block} .acct-menu .em{padding:8px 16px 10px;font:400 12px/16px var(--font);color:var(--ink-62);border-bottom:1px solid var(--hair);margin-bottom:4px;word-break:break-all}
+.acct-menu a,.acct-menu button{display:block;width:100%;box-sizing:border-box;text-align:left;border:0;background:none;padding:9px 16px;font:500 14px/20px var(--font);color:var(--ink-72);cursor:pointer;text-decoration:none} .acct-menu a:hover,.acct-menu button:hover{background:var(--surface-2);color:var(--ink)}
+/* 단추 */
+/* 활성 표시선(kosInd) — 목차 세로선·밑줄 탭·쪽 번호가 쓴다. 움직임은 IND_JS 의 animate() */
+.ind{position:absolute;left:0;top:0;background:var(--ink);pointer-events:none;will-change:transform} .ind-v{width:2px} .ind-h{height:2px}
+.btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 18px;border-radius:999px;border:0;font:600 14px/1 var(--font);cursor:pointer;transition:background-color .12s,color .12s} .btn.ico{padding-left:14px}
+.btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+.btn-ink,.btn-primary{background:var(--ink);color:var(--bg)} .btn-ink:hover,.btn-primary:hover{opacity:.9}
+/* 키보드 포커스 — 먹색 2px 윤곽을 2px 띄워 두른다(브라우저 기본 고리는 파랑·이중선이라 옷과 따로 논다). 마우스로 누를 땐 안 나온다(:focus-visible).
+   가로로 넘기는 띠(.chips·.tabs·.seg·.sorts·설정 탭·표 틀) 안에서는 윤곽이 잘리므로 안쪽에 그린다. 밑줄 입력칸·검색창은 원래 밑줄이 먹색으로 바뀌는데, 거기에 1px 을 더해 2px 로 굵게 한다. */
+:is(a,button,summary,select,[tabindex],[role=tab],[role=button],[role=radio],input[type=checkbox],input[type=radio]):focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+:is(.chips,.tabs,.seg,.sorts,.ks-nav,.tbl-wrap,.fchips) :focus-visible{outline-offset:-2px}
+:is(.fld input:not([type=checkbox]):not([type=radio]),.fld textarea,.range-inputs input,.dlg textarea,.dlg input.type,.ks-dlg-d,.wd-detail,.wd-type):focus-visible,.search:focus-within{box-shadow:0 1px 0 0 var(--ink)}
+/* 로그인 가림창 — auth-guard.js 가 그리는 .kg-* . 모듈은 실사이트와 같아야 해서(auth-table.test) 손대지 않고 옷만 여기서 덮는다.
+   모듈이 <style id=kosGateCss> 를 나중에 꽂고 다크 규칙이 :root[data-theme=dark] .kg-*(0,3,0)라, :root[data-theme] body …(0,3,1)로 적어야 라이트·다크 모두 이긴다. 덮개는 헤더 아래부터 페이지색으로
+   덮고(z 40 — 헤더 50·휴대폰 메뉴 49 아래라 메뉴·테마 단추가 그대로 산다), 자물쇠는 먹색 선, 단추는 알약이다. */
+:root[data-theme] body .kg-overlay{top:calc(60px + var(--kos-bar-h,0px));left:0;right:0;bottom:0;z-index:40;align-items:flex-start;padding:clamp(56px,14vh,128px) var(--pad) 40px;
+  background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}
+:root[data-theme] body .kg-overlay.kg-dismiss{background:var(--bg)}
+:root[data-theme] body .kg-card{width:min(100%,400px);padding:0;border-radius:0;background:transparent;border:0;box-shadow:none;text-align:center}
+:root[data-theme] body .kg-ico{width:auto;height:auto;margin:0 0 22px;border-radius:0;background:none;display:block}
+:root[data-theme] body .kg-ico svg{width:30px;height:30px;stroke:var(--ink);stroke-width:1.4;fill:none}
+:root[data-theme] body .kg-title{margin:0 0 10px;font:600 24px/32px var(--font);letter-spacing:-.01em;color:var(--ink)}
+:root[data-theme] body .kg-sub{margin:0 0 28px;font:400 15px/24px var(--font);color:var(--ink-62)}
+:root[data-theme] body .kg-btns{display:flex;flex-direction:column;gap:10px;max-width:320px;margin:0 auto}
+:root[data-theme] body .kg-btn{display:flex;align-items:center;justify-content:center;height:48px;padding:0 20px;border-radius:999px;border:1px solid var(--line);
+  background:transparent;color:var(--ink);font:600 15px/1 var(--font);text-decoration:none;box-shadow:none;cursor:pointer}
+:root[data-theme] body .kg-btn:hover{background:var(--surface-2)}
+:root[data-theme] body .kg-primary,:root[data-theme] body .kg-primary:hover{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+:root[data-theme] body .kg-primary:hover{opacity:.9}
+:root[data-theme] body .kg-home{display:inline-block;margin-top:24px;font:400 14px/20px var(--font);color:var(--ink-62);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
+:root[data-theme] body .kg-home:hover{color:var(--ink)}
+:root[data-theme] body .kg-x{position:fixed;top:calc(66px + var(--kos-bar-h,0px));right:calc(var(--pad) - 10px);width:44px;height:44px;border:0;border-radius:22px;background:none;
+  color:var(--ink-62);font-size:22px;line-height:44px;text-align:center;cursor:pointer}
+:root[data-theme] body .kg-x:hover{color:var(--ink)}
+.btn-soft{background:var(--surface-2);color:var(--ink)} .btn-soft:hover{background:var(--line)}
+/* 절 제목 · 더보기 링크 */
+.sec-h{display:flex;align-items:baseline;gap:14px;margin:0 0 22px}
+.sec-h .num{font:600 13px/20px var(--font);color:var(--ink-62)}
+.sec-h h2{margin:0;font:700 24px/32px var(--font);letter-spacing:-.02em}
+.sec-h .more{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font:500 14px/20px var(--font);color:var(--ink-72);white-space:nowrap} .sec-h .more:hover{color:var(--ink)}
+.sec-h .more svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+/* 표 — 틀 없이 줄로만 */
+.tbl-wrap{overflow-x:auto}
+.tbl{width:100%;border-collapse:collapse}
+.tbl caption{text-align:left;padding:0 0 10px} .tbl .cap{display:flex;justify-content:space-between;align-items:baseline;font:500 13px/20px var(--font);color:var(--ink-72)} .tbl .cap .u{font-weight:400;color:var(--ink-62)}
+.tbl th,.tbl td{padding:11px 12px;font:400 14px/20px var(--font);text-align:right;white-space:nowrap;border-top:1px solid var(--hair)}
+.tbl thead th{font:500 12px/16px var(--font);color:var(--ink-62);border-top:0;border-bottom:1px solid var(--line);padding-top:0}
+.tbl th:first-child,.tbl td:first-child{text-align:left;padding-left:0;font-weight:500} .tbl th:last-child,.tbl td:last-child{padding-right:0}
+.tbl tbody th{font-weight:500}
+/* 푸터 */
+.foot{margin-top:96px;border-top:1px solid var(--hair);padding:56px 0 48px}
+.foot .brand img{height:13px}
+.fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;max-width:560px;margin-top:32px}
+.fcol{display:flex;flex-direction:column;gap:9px} .fcol h4{margin:0 0 4px;font:600 12px/16px var(--font);color:var(--ink-62)} .fcol a{font:400 14px/20px var(--font);color:var(--ink-72)} .fcol a:hover{color:var(--ink)}
+.biz{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:4px 16px;font:400 12px/18px var(--font);color:var(--ink-62)} .copy{margin-top:32px;font:400 12px/18px var(--font);color:var(--ink-62)}
+/* 휴대폰 사파리 상태바·주소창 뒤 색 — 페이지색 띠 (CLAUDE.md 2026-09-24) */
+#kosEdgeTop,#kosEdgeBot{display:none}
+@media (hover:none) and (pointer:coarse){#kosEdgeTop,#kosEdgeBot{display:block;position:fixed;left:0;right:0;height:12px;z-index:60;pointer-events:none;opacity:.2;background:var(--bg)} #kosEdgeTop{top:0} #kosEdgeBot{bottom:0}}
+
+/* 글 한 단 — 읽기 폭 720 */
+.mb{max-width:720px;padding:44px 0 0}
+.mb-date{font:500 13px/20px var(--font);color:var(--ink-62)} .mb-date::before{content:"모닝브리핑 · "} html[lang="en"] .mb-date::before{content:"Morning Brief · "}
+.mb h1{margin:12px 0 0;font:700 36px/48px var(--font);letter-spacing:-.025em;text-wrap:balance}
+.mb-lead{margin:18px 0 0;font:400 18px/30px var(--font);color:var(--ink-72)}
+.mb-meta{margin-top:14px;font:400 13px/20px var(--font);color:var(--ink-62)}
+/* 요약 — 상자 대신 위아래 줄 */
+.mb-sum{margin:36px 0 0;padding:26px 0 8px;border-top:1px solid var(--line);border-bottom:1px solid var(--hair)}
+.mb-sum-h{font:600 12px/16px var(--font);color:var(--ink-62);margin:0 0 14px}
+.mb-sum-p{margin:0 0 18px;font:400 18px/30px var(--font);letter-spacing:-.005em}
+/* 절 */
+.mb-sec{padding-top:48px}
+.mb-sec h2{margin:0 0 18px;font:700 24px/32px var(--font);letter-spacing:-.02em;text-wrap:balance}
+.mb-sec p{margin:0 0 20px;font:400 17px/28px var(--font);letter-spacing:-.005em} .mb-sec p:last-child{margin-bottom:0}
+.mb-sec a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px;text-decoration-thickness:1px} .mb-sec a:hover{text-decoration-color:var(--ink)}
+.mb-sec b{font-weight:600}
+/* KOSAI 리포트 확인 지점 — 우리 리포트에서 나온 절이라 줄 하나로 구분 */
+.mb-sec--cov{margin-top:56px;padding-top:36px;border-top:1px solid var(--line)}
+.mb-src{font:600 12px/16px var(--font);color:var(--ink-62);margin:0 0 10px}
+.mb-disc{margin:56px 0 0;padding-top:18px;border-top:1px solid var(--hair);font:400 12px/18px var(--font);color:var(--ink-62)}
+
+
+/* 지난 호 — 날짜 줄의 호수 · 지난 호 알림 · 이전 호와 다음 호 */
+.mb-date[data-no]::before{content:"모닝브리핑 " attr(data-no) " · "} html[lang="en"] .mb-date[data-no]::before{content:"Morning Brief No. " attr(data-n) " · "}
+.mb-old{margin:0 0 22px;padding:0 0 12px;border-bottom:1px solid var(--hair);font:500 13px/20px var(--font);color:var(--ink-62)}
+.mb-old a{margin-left:6px;color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .mb-old a:hover{text-decoration-color:var(--ink)}
+.mb-nav{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 40px;margin:56px 0 0;border-top:1px solid var(--line)}
+.mb-nv{display:block;padding:20px 0 0}
+.mb-nv--next{grid-column:2;text-align:right}
+.mb-nv-k{display:block;font:600 12px/16px var(--font);color:var(--ink-62)}
+.mb-nv-t{display:block;margin-top:8px;font:600 16px/24px var(--font);letter-spacing:-.01em;color:var(--ink);text-wrap:pretty}
+.mb-nv:hover .mb-nv-t{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
+.mb-nv-d{display:block;margin-top:6px;font:400 13px/20px var(--font);color:var(--ink-62)} .mb-nv-d span+span::before{content:" · "}
+.mb-all{margin:32px 0 0;padding-top:18px;border-top:1px solid var(--hair)}
+.mb-all a{display:inline-flex;align-items:center;gap:6px;font:500 14px/20px var(--font);color:var(--ink-72)} .mb-all a:hover{color:var(--ink)}
+.mb-all svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+@media (max-width:820px){
+  :root{--pad:20px}
+  .nav{display:block;height:60px;padding:0} .nav-in{height:60px;padding:0 var(--pad)}
+  .nav,.nav.scrolled{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}
+  .sec-h h2{font-size:22px;line-height:28px}
+  .tbl th,.tbl td{padding:10px 10px;font-size:13px} .tbl th:first-child,.tbl td:first-child{position:sticky;left:0;background:var(--bg)}
+}
+@media (max-width:820px){
+  .mb{padding:20px 0 0} .mb h1{font-size:28px;line-height:38px} .mb-lead{font-size:16px;line-height:27px}
+  .mb-sum{margin-top:28px;padding:22px 0 4px} .mb-sum-p{font-size:16px;line-height:27px}
+  .mb-sec{padding-top:40px} .mb-sec h2{font-size:21px;line-height:29px} .mb-sec p{font-size:16px;line-height:27px}
+  .mb-sec--cov{margin-top:44px;padding-top:30px}
+}
+@media (max-width:820px){
+  .mb-nav{grid-template-columns:minmax(0,1fr);margin-top:44px}
+  .mb-nv--next{grid-column:1;text-align:left;margin-top:20px;border-top:1px solid var(--hair)}
+  .mb-nv-t{font-size:15px;line-height:23px}
+}
+</style>
+</head>
+<body>
+<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>
+<nav class="nav" id="nav"><div class="nav-in">
+  <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <div class="links"><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html" class="on">모닝브리핑</a></div>
+  <div class="right" id="navRight"><a class="login" href="/Login.html">로그인</a><div class="acct" id="acct"></div>
+    <button class="ib" id="themeBtn" aria-label="테마 전환"><svg viewBox="0 0 24 24" id="themeIcon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    <button class="ib menu" id="menuBtn" aria-label="메뉴" aria-expanded="false" aria-controls="mmenu"><svg class="ham" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+</div>
+</nav>
+<div class="mmenu" id="mmenu"><div class="mm-links"><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html" class="on">모닝브리핑</a></div><div class="sep"></div><div class="mm-auth" id="mauth"><a href="/Login.html">로그인</a><a href="/Signup.html">회원가입</a></div>
+<div class="mm-foot"><a href="/About.html">회사 소개</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보 처리방침</a></div></div>
+<main class="wrap">
+  <article class="mb">
+    <p class="mb-old">지난 호입니다.<a href="brief.html">최신 호 보기</a></p>
+    <header class="mb-head">
+      <div class="mb-date" data-no="제7호" data-n="7">2026년 8월 26일 (수) 07:28</div>
+      <h1>반도체는 오르고, 원전이 코스피를 흔들었다</h1>
+      <div class="mb-meta">국내 증시 개장 · 직전 거래일 8월 25일(화) 종가 기준</div>
+    </header>
+
+    <aside class="mb-sum">
+      <div class="mb-sum-h">요약</div>
+      <p class="mb-sum-p" data-i18n-block>미국 증시는 S&amp;P 500과 나스닥, 다우가 모두 올랐고 필라델피아 반도체 지수가 1.44%로 가장 크게 상승했다. WTI는 4% 넘게 밀렸고 미 10년물 금리도 내렸다.</p>
+      <p class="mb-sum-p" data-i18n-block>직전 국내 장에서는 상승 종목이 1,765개로 하락의 두 배를 넘었고 기계·장비와 철강·금속, 에너지·전력이 강했던 반면 정유와 2차전지, 바이오·제약이 눌렸다. 외국인은 코스피에서 3조 8천억원 넘게 팔았지만 코스닥에서는 순매수였다.</p>
+      <p class="mb-sum-p" data-i18n-block>원/달러는 1,380.00원으로 내렸고, 27일 엔비디아 실적과 잭슨홀 회의가 이번 주 일정에 함께 걸려 있다.</p>
+    </aside>
+
+    <section class="mb-sec">
+      <h2>반도체가 앞서고 유가가 무너졌다</h2>
+      <p data-i18n-block>8월 25일 미국 증시는 <b>S&amp;P 500 7,677.28(+0.32%)</b>, <b>나스닥 26,151.30(+0.66%)</b>, <b>다우 53,577.40(+0.30%)</b> 로 세 지수가 함께 올랐다. 폭이 가장 컸던 곳은 <b>필라델피아 반도체 지수 11,588.04(+1.44%)</b> 다.</p>
+      <p data-i18n-block>관련 보도에서는 AMD·인텔에 대한 투자은행 등급 상향 소식과 엔비디아 실적 대기 심리가 함께 언급됐다. 다만 로이터를 비롯한 매체는 이란 관련 제재 확대와 기술주 흐름을 두고 장중 방향이 엇갈렸다는 점도 함께 전했다.</p>
+      <p data-i18n-block>국내로 옮겨붙는 성격을 가르는 건 반도체와 원자재다. 반도체 지수가 지수들보다 앞서 오른 만큼 국내 대형 반도체주가 받는 방향은 나쁘지 않지만, 직전 국내 장에서 외국인이 반도체를 대거 팔았다는 보도가 나온 뒤라 지수 상승분이 그대로 이어질지는 수급으로 확인할 대목이다.</p>
+      <p data-i18n-block><b>WTI 81.09달러(-4.61%)</b> 의 낙폭은 직전 국내 장에서 정유 업종이 -2.59%로 가장 부진했던 흐름과 겹친다. <b>미 10년물 4.64%(-1.38%)</b> 와 <b>달러인덱스 98.91(-0.09%)</b> 은 방향이 완만했다.</p>
+    </section>
+
+    <section class="mb-sec">
+      <h2>오른 종목이 하락의 두 배를 넘었다</h2>
+      <p data-i18n-block>8월 25일 장의 폭을 보면 상승 1,765 · 하락 683 · 보합 239(총 2,687)로 오른 종목이 하락의 두 배를 넘었다. 시총가중 +0.84%, 중앙값 +0.88%로 둘이 거의 붙어 있어 대형주와 중소형주가 함께 올라간 모양이다.</p>
+      <p data-i18n-block>업종은 <b>기계·장비 +6.12%</b>, 철강·금속 +5.33%, 에너지·전력 +5.05%, 화장품 +4.21%, 건설·건자재 +3.57%가 앞섰고, 정유 -2.59%, 2차전지 -1.92%, 통신 -1.25%, 바이오·제약 -0.90%가 뒤쳐졌다. 반도체 밖에서 순환매가 돌았다는 시황 보도와 결이 같다.</p>
+      <p data-i18n-block>수급은 코스피에서 외국인 -38,140억원, 개인 +10,509억원, 기관계 +11,711억원, 기타법인 +15,920억원으로 갈렸고, 코스닥은 외국인 +1,327억원으로 방향이 반대였다.</p>
+      <p data-i18n-block>거래는 <b><a href="/stock/000660.html">SK하이닉스</a></b> 65,064억원(+0.42%)과 <b><a href="/stock/005930.html">삼성전자</a></b> 54,454억원(0.00%)에 크게 쏠렸다.</p>
+      <p data-i18n-block>시장 대비 앞선 대형주는 <a href="/stock/000720.html">현대건설</a> +14.87%, <a href="/stock/034020.html">두산에너빌리티</a> +10.55%, <a href="/stock/278470.html">에이피알</a> +7.57%, <a href="/stock/086280.html">현대글로비스</a> +7.39% 순이었고, 두 원전 관련주에는 북미 신규 원전 시장 확대 기대를 다룬 기사가 함께 나왔다.</p>
+      <p data-i18n-block>반대편에서는 <a href="/stock/008930.html">한미사이언스</a> -18.05%, <a href="/stock/128940.html">한미약품</a> -7.22%, <a href="/stock/196170.html">알테오젠</a> -4.68% 등 제약·바이오가 눌렸다.</p>
+    </section>
+
+    <section class="mb-sec">
+      <h2>내일 새벽 엔비디아, 그리고 잭슨홀</h2>
+      <p data-i18n-block>원/달러는 <b>1,380.00원(-0.36%)</b> 으로 내렸다. 직전 국내 장 마감 보도에서는 외국인 대규모 순매도와 달러 강세가 함께 거론됐는데, 기준일 종가는 원화가 강해진 쪽으로 찍혔다.</p>
+      <p data-i18n-block>달러인덱스가 98.91(-0.09%)로 거의 움직이지 않았고 미 10년물이 4.64%(-1.38%)로 내려온 점을 함께 놓고 보면, 오늘 환율은 외국인 수급이 코스피에서 어느 방향으로 정리되는지에 더 붙어 움직일 자리다.</p>
+      <p data-i18n-block>일정은 8월 27일에 몰려 있다. 엔비디아의 회계 2분기 실적이 나오고, 같은 날부터 29일까지 잭슨홀 회의에서 워시 의장 기조연설이 예정돼 있다.</p>
+      <p data-i18n-block>미국 반도체 관련 보도가 이미 '엔비디아 실적 대기'를 이유로 언급되고 있는 만큼, 오늘과 내일 국내 반도체 대형주의 거래대금 쏠림이 어떻게 유지되는지가 첫 관전 지점이다. 두 번째는 원전·기계·건설로 옮겨간 순환매가 하루짜리였는지 여부다.</p>
+      <p data-i18n-block><a href="/stock/000720.html">현대건설</a>과 <a href="/stock/034020.html">두산에너빌리티</a>는 거래대금 상위에도 올라 있었다. 세 번째는 유가다. WTI가 4% 넘게 밀린 뒤 정유와 2차전지가 국내 업종 하위에 나란히 있었던 점을 함께 보면 된다.</p>
+    </section>
+
+    <section class="mb-sec mb-sec--cov">
+      <div class="mb-src">KOSAI 리포트 확인 지점</div>
+      <h2>8월 리포트가 짚어 둔 대목들</h2>
+      <p data-i18n-block>정기보고서 접수 명단에 KOSAI 커버리지 종목이 올라왔다.</p>
+      <p data-i18n-block><b><a href="/stock/079550.html">LIG디펜스앤에어로스페이스</a></b> 는 8월 14일 리포트에서 하반기 중 중동 추가 계약 진전 여부를 단일판매·공급계약 공시로 확인하는 것을 확인 지점으로 꼽아 뒀고, 수출 비중과 분기 이익 변동성을 함께 볼 대목으로 적어 뒀다. 이번에 기재정정 반기보고서가 접수됐다.</p>
+      <p data-i18n-block><b><a href="/stock/002320.html">한진</a></b> 은 8월 18일 리포트에서 11월 초 3분기 실적의 이익률 개선 지속 여부와 신용평가사 정기평가 시점의 등급 상향 트리거 충족 여부를 확인 지점으로 뒀다. <b><a href="/stock/377460.html">큐에이드</a></b> 는 같은 날짜 리포트에서 거래정지 해제와 상장 적격성 심사 결과 공시를 유동성 회복의 핵심 변수로 적어 뒀는데, 시점이 정해져 있지 않아 공시 자체를 기다리는 항목이다.</p>
+      <p data-i18n-block><b><a href="/stock/246710.html">티앤알바이오팹</a></b> 은 6월 19일 리포트가 8월 중순 2분기 실적에서 영업흑자 전환 경로를 볼 것으로 꼽았고, <b><a href="/stock/900310.html">컬러레이</a></b> 도 같은 날짜 리포트에서 2분기 실적으로 1분기 영업이익 반등이 추세인지 확인하도록 적어 뒀다. 두 종목 모두 반기보고서가 접수된 만큼 내용 확인이 가능한 시점에 들어왔다.</p>
+    </section>
+
+    <p class="mb-disc" data-i18n-block>본 자료는 공시(DART)·국내 시장 데이터와 공개된 해외 시장·일정 자료를 바탕으로 작성한 정보 제공 자료이며 투자 권유가 아닙니다. 국내 수치는 2026년 8월 25일 종가 기준입니다.</p>
+    <nav class="mb-nav" aria-label="이전 호와 다음 호"><a class="mb-nv mb-nv--prev" href="brief-2026-08-25.html"><span class="mb-nv-k">이전 호</span><span class="mb-nv-t">반도체만 양쪽에서 눌렸다</span><span class="mb-nv-d"><span>제6호</span><span>2026년 8월 25일 (화)</span></span></a><a class="mb-nv mb-nv--next" href="brief-2026-08-27.html"><span class="mb-nv-k">다음 호</span><span class="mb-nv-t">엔비디아와 잭슨홀이 같은 날에 걸렸다</span><span class="mb-nv-d"><span>제8호</span><span>2026년 8월 27일 (목)</span></span></a></nav>
+    <p class="mb-all"><a href="brief-archive.html">지난 호 전체 보기 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </article>
+</main>
+<footer class="foot"><div class="wrap">
+  <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <div class="fgrid">
+    <div class="fcol"><h4>서비스</h4><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div>
+    <div class="fcol"><h4>회사</h4><a href="/About.html">회사 소개</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a></div>
+    <div class="fcol"><h4>정책</h4><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보 처리방침</a></div>
+  </div>
+  <div class="biz"><span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span><span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span></div>
+  <div class="copy">© 2026 KOSAI</div>
+</div></footer>
+<script type="application/json" data-kos-i18n>{"모닝 브리핑":"Morning Brief","2026년 8월 26일 (수) 07:28":"Wednesday, August 26, 2026 · 07:28 KST","국내 증시 개장 · 직전 거래일 8월 25일(화) 종가 기준":"Korean markets open · Figures as of the Tuesday, August 25 close","본 자료는 공시(DART)·국내 시장 데이터와 공개된 해외 시장·일정 자료를 바탕으로 작성한 정보 제공 자료이며 투자 권유가 아닙니다. 국내 수치는 2026년 8월 25일 종가 기준입니다.":"This material is compiled from regulatory filings (DART), Korean market data and publicly available overseas market and calendar sources, for information purposes only. It is not investment advice. Korean figures are as of the August 25, 2026 close.","반도체는 오르고, 원전이 코스피를 흔들었다":"Chips Up Abroad, Nuclear Names Stirring at Home","요약":"In brief","미국 증시는 S&P 500과 나스닥, 다우가 모두 올랐고 필라델피아 반도체 지수가 1.44%로 가장 크게 상승했다. WTI는 4% 넘게 밀렸고 미 10년물 금리도 내렸다.":"U.S. stocks rose across the board, with the Philadelphia Semiconductor Index leading at +1.44%.","직전 국내 장에서는 상승 종목이 1,765개로 하락의 두 배를 넘었고 기계·장비와 철강·금속, 에너지·전력이 강했던 반면 정유와 2차전지, 바이오·제약이 눌렸다. 외국인은 코스피에서 3조 8천억원 넘게 팔았지만 코스닥에서는 순매수였다.":"WTI fell more than 4% and the 10-year Treasury yield eased. In the last domestic session, advancers numbered 1,765, more than double decliners, as machinery, steel and power led while refining, batteries and pharma lagged.","원/달러는 1,380.00원으로 내렸고, 27일 엔비디아 실적과 잭슨홀 회의가 이번 주 일정에 함께 걸려 있다.":"Foreigners sold over 3.8 trillion won on KOSPI but bought KOSDAQ. The won firmed to 1,380.00, and Nvidia's earnings plus the Jackson Hole meeting land on the calendar this week.","반도체가 앞서고 유가가 무너졌다":"Chips Led, Crude Broke Down","8월 25일 미국 증시는 S&P 500 7,677.28(+0.32%), 나스닥 26,151.30(+0.66%), 다우 53,577.40(+0.30%) 로 세 지수가 함께 올랐다. 폭이 가장 컸던 곳은 필라델피아 반도체 지수 11,588.04(+1.44%) 다.":"On Aug 25 U.S. stocks closed higher across the board: <b>S&amp;P 500 at 7,677.28 (+0.32%)<\/b>, <b>Nasdaq at 26,151.30 (+0.66%)<\/b> and <b>Dow at 53,577.40 (+0.30%)<\/b>. The widest move came from the <b>Philadelphia Semiconductor Index at 11,588.04 (+1.44%)<\/b>.","관련 보도에서는 AMD·인텔에 대한 투자은행 등급 상향 소식과 엔비디아 실적 대기 심리가 함께 언급됐다. 다만 로이터를 비롯한 매체는 이란 관련 제재 확대와 기술주 흐름을 두고 장중 방향이 엇갈렸다는 점도 함께 전했다.":"Coverage cited an investment-bank upgrade touching AMD and Intel alongside positioning ahead of Nvidia's results. Reuters and others also noted that expanded Iran-related sanctions and tech-sector swings pulled the tape in both directions intraday.","국내로 옮겨붙는 성격을 가르는 건 반도체와 원자재다. 반도체 지수가 지수들보다 앞서 오른 만큼 국내 대형 반도체주가 받는 방향은 나쁘지 않지만, 직전 국내 장에서 외국인이 반도체를 대거 팔았다는 보도가 나온 뒤라 지수 상승분이 그대로 이어질지는 수급으로 확인할 대목이다.":"What carries over hinges on chips and commodities. With the semiconductor index outpacing the headline benchmarks, the setup for large-cap Korean chipmakers is not unfavorable, though reports of heavy foreign selling in semiconductors during the last domestic session mean the flow side still needs checking.","WTI 81.09달러(-4.61%) 의 낙폭은 직전 국내 장에서 정유 업종이 -2.59%로 가장 부진했던 흐름과 겹친다. 미 10년물 4.64%(-1.38%) 와 달러인덱스 98.91(-0.09%) 은 방향이 완만했다.":"The drop in <b>WTI to $81.09 (-4.61%)<\/b> overlaps with refining being the weakest sector at -2.59% in the last local session. The <b>U.S. 10-year at 4.64% (-1.38%)<\/b> and the <b>dollar index at 98.91 (-0.09%)<\/b> moved only modestly.","오른 종목이 하락의 두 배를 넘었다":"Advancers Outnumbered Decliners Two to One","8월 25일 장의 폭을 보면 상승 1,765 · 하락 683 · 보합 239(총 2,687)로 오른 종목이 하락의 두 배를 넘었다. 시총가중 +0.84%, 중앙값 +0.88%로 둘이 거의 붙어 있어 대형주와 중소형주가 함께 올라간 모양이다.":"Breadth in the Aug 25 session showed 1,765 advancers against 683 decliners and 239 unchanged out of 2,687 — more than two to one. Cap-weighted breadth came in at +0.84% and the median at +0.88%, nearly identical, suggesting large and small caps rose together.","업종은 기계·장비 +6.12%, 철강·금속 +5.33%, 에너지·전력 +5.05%, 화장품 +4.21%, 건설·건자재 +3.57%가 앞섰고, 정유 -2.59%, 2차전지 -1.92%, 통신 -1.25%, 바이오·제약 -0.90%가 뒤쳐졌다. 반도체 밖에서 순환매가 돌았다는 시황 보도와 결이 같다.":"Sector leaders were <b>machinery &amp; equipment +6.12%<\/b>, steel &amp; metals +5.33%, energy &amp; power +5.05%, cosmetics +4.21% and construction +3.57%, while refining -2.59%, batteries -1.92%, telecom -1.25% and pharma -0.90% trailed. That matches press accounts of rotation outside semiconductors.","수급은 코스피에서 외국인 -38,140억원, 개인 +10,509억원, 기관계 +11,711억원, 기타법인 +15,920억원으로 갈렸고, 코스닥은 외국인 +1,327억원으로 방향이 반대였다.":"Flows split on KOSPI: foreigners -3,814.0bn won, retail +1,050.9bn, institutions +1,171.1bn and other corporates +1,592.0bn, while foreigners were net buyers on KOSDAQ at +132.7bn.","거래는 SK하이닉스 65,064억원(+0.42%)과 삼성전자 54,454억원(0.00%)에 크게 쏠렸다.":"Turnover concentrated in <b><a href=\"/stock/000660.html\">SK Hynix<\/a><\/b> at 6,506.4bn won (+0.42%) and <b><a href=\"/stock/005930.html\">Samsung Electronics<\/a><\/b> at 5,445.4bn won (0.00%).","시장 대비 앞선 대형주는 현대건설 +14.87%, 두산에너빌리티 +10.55%, 에이피알 +7.57%, 현대글로비스 +7.39% 순이었고, 두 원전 관련주에는 북미 신규 원전 시장 확대 기대를 다룬 기사가 함께 나왔다.":"Large caps outperforming the market included <a href=\"/stock/000720.html\">Hyundai E&amp;C<\/a> +14.87%, <a href=\"/stock/034020.html\">Doosan Enerbility<\/a> +10.55%, <a href=\"/stock/278470.html\">APR<\/a> +7.57% and <a href=\"/stock/086280.html\">Hyundai Glovis<\/a> +7.39%, with both nuclear-linked names drawing coverage on expectations for North American new-build.","반대편에서는 한미사이언스 -18.05%, 한미약품 -7.22%, 알테오젠 -4.68% 등 제약·바이오가 눌렸다.":"On the other side, pharma and bio lagged: <a href=\"/stock/008930.html\">Hanmi Science<\/a> -18.05%, <a href=\"/stock/128940.html\">Hanmi Pharm<\/a> -7.22% and <a href=\"/stock/196170.html\">Alteogen<\/a> -4.68%.","내일 새벽 엔비디아, 그리고 잭슨홀":"Nvidia Tomorrow, Then Jackson Hole","원/달러는 1,380.00원(-0.36%) 으로 내렸다. 직전 국내 장 마감 보도에서는 외국인 대규모 순매도와 달러 강세가 함께 거론됐는데, 기준일 종가는 원화가 강해진 쪽으로 찍혔다.":"The won firmed to <b>1,380.00 (-0.36%)<\/b>.","달러인덱스가 98.91(-0.09%)로 거의 움직이지 않았고 미 10년물이 4.64%(-1.38%)로 내려온 점을 함께 놓고 보면, 오늘 환율은 외국인 수급이 코스피에서 어느 방향으로 정리되는지에 더 붙어 움직일 자리다.":"Closing reports from the last local session cited heavy foreign selling and dollar strength, yet the reference close printed on the stronger-won side. With the dollar index nearly flat at 98.91 (-0.09%) and the 10-year down to 4.64% (-1.38%), today's currency move looks more tied to how foreign flows on KOSPI settle.","일정은 8월 27일에 몰려 있다. 엔비디아의 회계 2분기 실적이 나오고, 같은 날부터 29일까지 잭슨홀 회의에서 워시 의장 기조연설이 예정돼 있다.":"The calendar clusters on Aug 27: Nvidia reports fiscal Q2 results, and the Jackson Hole meeting runs through the 29th with a keynote from Chair Warsh.","미국 반도체 관련 보도가 이미 '엔비디아 실적 대기'를 이유로 언급되고 있는 만큼, 오늘과 내일 국내 반도체 대형주의 거래대금 쏠림이 어떻게 유지되는지가 첫 관전 지점이다. 두 번째는 원전·기계·건설로 옮겨간 순환매가 하루짜리였는지 여부다.":"Since U.S. chip coverage already cites positioning ahead of Nvidia, the first thing to watch is whether turnover stays concentrated in Korea's large-cap chipmakers today and tomorrow.","현대건설과 두산에너빌리티는 거래대금 상위에도 올라 있었다. 세 번째는 유가다. WTI가 4% 넘게 밀린 뒤 정유와 2차전지가 국내 업종 하위에 나란히 있었던 점을 함께 보면 된다.":"Second is whether the rotation into nuclear, machinery and construction lasts beyond a single session — <a href=\"/stock/000720.html\">Hyundai E&amp;C<\/a> and <a href=\"/stock/034020.html\">Doosan Enerbility<\/a> both ranked among the top turnover names. Third is crude: WTI fell more than 4%, and refining and batteries sat together at the bottom of the domestic sector table.","8월 리포트가 짚어 둔 대목들":"What August Reports Flagged","KOSAI 리포트 확인 지점":"From KOSAI report checkpoints","정기보고서 접수 명단에 KOSAI 커버리지 종목이 올라왔다.":"Several KOSAI coverage names appear in the periodic filings list.","LIG디펜스앤에어로스페이스 는 8월 14일 리포트에서 하반기 중 중동 추가 계약 진전 여부를 단일판매·공급계약 공시로 확인하는 것을 확인 지점으로 꼽아 뒀고, 수출 비중과 분기 이익 변동성을 함께 볼 대목으로 적어 뒀다. 이번에 기재정정 반기보고서가 접수됐다.":"For <b><a href=\"/stock/079550.html\">LIG Defense &amp; Aerospace<\/a><\/b>, our Aug 14 report flagged progress on additional Middle East contracts in the second half — to be confirmed via single supply-contract disclosures — as a checkpoint, alongside export mix and quarterly earnings volatility. An amended semiannual report was filed.","한진 은 8월 18일 리포트에서 11월 초 3분기 실적의 이익률 개선 지속 여부와 신용평가사 정기평가 시점의 등급 상향 트리거 충족 여부를 확인 지점으로 뒀다. 큐에이드 는 같은 날짜 리포트에서 거래정지 해제와 상장 적격성 심사 결과 공시를 유동성 회복의 핵심 변수로 적어 뒀는데, 시점이 정해져 있지 않아 공시 자체를 기다리는 항목이다.":"For <b><a href=\"/stock/002320.html\">Hanjin<\/a><\/b>, our Aug 18 report set two checkpoints: whether margin improvement continues in early-November Q3 results, and whether credit-rating upgrade triggers are met at the agencies' regular review. <b><a href=\"/stock/377460.html\">QAid<\/a><\/b>, in a report of the same date, pointed to the lifting of its trading halt and the listing-eligibility review outcome as the key liquidity variable — timing undetermined, so it is a wait-for-the-filing item. <b><a href=\"/stock/246710.html\">T&amp;R Biofab<\/a><\/b> was flagged in our Jun 19 report for the mid-August Q2 print and its path toward operating breakeven, and <b><a href=\"/stock/900310.html\">Colorray<\/a><\/b>, in a report of the same date, for whether Q2 confirms the Q1 operating-profit rebound as a trend.","티앤알바이오팹 은 6월 19일 리포트가 8월 중순 2분기 실적에서 영업흑자 전환 경로를 볼 것으로 꼽았고, 컬러레이 도 같은 날짜 리포트에서 2분기 실적으로 1분기 영업이익 반등이 추세인지 확인하도록 적어 뒀다. 두 종목 모두 반기보고서가 접수된 만큼 내용 확인이 가능한 시점에 들어왔다.":"Both have now filed semiannual reports, putting the details within reach.","제6호":"No. 6","2026년 8월 25일 (화)":"Tue, Aug 25, 2026","반도체만 양쪽에서 눌렸다":"Chips Got Hit on Both Sides","제8호":"No. 8","2026년 8월 27일 (목)":"Thu, Aug 27, 2026","엔비디아와 잭슨홀이 같은 날에 걸렸다":"Nvidia and Jackson Hole Land on the Same Day","지난 호":"Past issues","이전 호":"Previous issue","다음 호":"Next issue","지난 호 전체 보기":"View all past issues","지난 호입니다.":"This is a past issue.","최신 호 보기":"Read the latest issue","이전 호와 다음 호":"Previous and next issues","모닝브리핑 지난 호":"Morning Brief archive","반도체는 오르고, 원전이 코스피를 흔들었다 — 모닝브리핑 | KOSAI":"Chips Up Abroad, Nuclear Names Stirring at Home — Morning Brief | KOSAI"}</script>
+<script>
+(function(){
+  var nav=document.getElementById('nav'),tick=false;
+  function upd(){tick=false;nav.classList.toggle('scrolled',window.scrollY>32);if(window.kosOnScroll)window.kosOnScroll()}
+  addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+  var sun='<path d="M12 4V2M12 22v-2M4.9 4.9 3.5 3.5M20.5 20.5l-1.4-1.4M4 12H2M22 12h-2M4.9 19.1l-1.4 1.4M20.5 3.5l-1.4 1.4"/><circle cx="12" cy="12" r="4"/>',moon='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
+  var root=document.documentElement,icon=document.getElementById('themeIcon');function paint(){icon.innerHTML=root.getAttribute('data-theme')==='dark'?sun:moon}paint();window.__kosPaintTheme=paint;
+  document.getElementById('themeBtn').addEventListener('click',function(){var t=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',t);try{localStorage.setItem('kos-theme',t)}catch(e){}paint();});
+  /* 휴대폰 메뉴 */
+  var mb=document.getElementById('menuBtn'),mm=document.getElementById('mmenu');
+  function setMenu(on){nav.classList.toggle('menu-open',on);mm.classList.toggle('open',on);mb.setAttribute('aria-expanded',on?'true':'false');document.documentElement.style.overflow=on?'hidden':'';if(window.KOSSmoothScroll){on?window.KOSSmoothScroll.stop():window.KOSSmoothScroll.start()}}  /* html 에 건다 — body 에 걸면 sticky 헤더가 사라진다(html 이 overflow-x:hidden 이라 body 가 스크롤 상자가 됨) */
+  mb.addEventListener('click',function(){setMenu(!nav.classList.contains('menu-open'))});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('menu-open'))setMenu(false)});
+  window.matchMedia('(min-width:821px)').addEventListener('change',function(e){if(e.matches)setMenu(false)});
+})();
+</script>
+<script type="application/json" data-kos-i18n>{"#-#-# 종가 기준":"As of the #-#-# close","#개":"#","#개 종목":"# stocks","#배":"#×","(선택)":"(optional)","2차전지":"Batteries","@ 작성":"Written @","AI 리포트":"AI report","Firebase 설정이 필요합니다. firebase-config.js를 확인하여 주시기 바랍니다.":"Firebase is not configured yet. See firebase-config.js.","IT 서비스":"IT Services","IT·소프트웨어":"IT & Software","KOSAI 리포트 확인 지점":"From KOSAI report checkpoints","SK하이닉스":"SK Hynix","[선택] 마케팅 정보 수신 동의":"[Selective] Marketing messages","[필수] 개인정보 수집·이용 동의":"[Required] Collection and use of personal data","[필수] 만 14세 이상입니다":"[Required] I am 14 or older","[필수] 이용약관 동의":"[Required] Terms of Service","가격":"Pricing","가입":" joined","가입 방법":"Sign-up","가입 완료":"Almost done","가입을 완료하시려면 아래 항목에 동의하여 주시기 바랍니다":"To finish signing up, please accept the items below","개 종목":" stocks","개인정보 처리방침":"Privacy Policy","개인정보처리방침":"Privacy Policy","거래대금":"Turnover","건설":"Construction","건설·건자재":"Construction & Materials","검색":"Search","게임":"Games","계정":"Account","계정 메뉴":"Account menu","계정 설정을 보려면 로그인이 필요합니다.":"Sign in to view your account settings.","계정과 저장된 관심종목이 영구 삭제되며, 되돌릴 수 없습니다.":"Your account and saved watchlist will be permanently deleted. This cannot be undone.","공시":"Disclosures","과":" and ","관심":"Watch","관심종목":"Watchlist","구글":"Google","국내 상장 #개 종목":"# stocks listed in Korea","그동안 이용해 주셔서 감사합니다.":"Thank you for using KOSAI.","금액":"Amount","금융":"Finance","기계·장비":"Machinery","기술":"Tech","기준 #-#-#":"As of #-#-#","기타":"Others","내용":"Message","네이버":"Naver","네이버 동의 화면":"Naver consent screen","네이버 로그인":"Naver sign-in","네트워크 연결을 확인하여 주시기 바랍니다.":"Please check your network connection.","닉네임":"Nickname","다크":"Dark","닫기":"Close","대비":"vs.","대표":"CEO","대표 임범준":"CEO Beomjun Lim","더보기":"More","데이터 #-#-#":"Data as of #-#-#","동의 시각":"Agreed","동의 안 함":"No","동의를 저장하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"Could not save your agreement. Please try again in a moment.","동의서 판":"Consent version","동의하고 가입 완료":"Agree and finish signing up","동의하지 않고 취소":"Cancel","동의하지 않으면 가입이 진행되지 않습니다. 계정은 아직 생성되지 않았습니다.":"Without your consent we will not create the account — nothing has been created yet.","동의하지 않으면 가입이 취소됩니다.":"If you do not agree, your sign-up is cancelled.","동의함":"Yes","두산에너빌리티":"Doosan Enerbility","뒤로":"Back","등록된 주소 없음":"No address on file","떠나시는 이유를 알려주시면 개선에 반영하겠습니다 (복수 선택 가능)":"Telling us why helps us improve (select all that apply)","라이트":"Light","로그아웃":"Sign out","로그인":"Sign in","로그인 요청이 만료되었습니다. 다시 시도하여 주시기 바랍니다.":"Your sign-in request expired. Please try again.","로그인 창이 닫혔습니다. 다시 시도하여 주시기 바랍니다.":"The sign-in window was closed. Please try again.","로그인 페이지로":"Go to sign in","로그인이 필요합니다":"Sign-in required","로그인이 필요합니다.":"Please sign in.","로봇":"Robotics","리포트":"Reports","마케팅":"Marketing","마케팅 동의":"Marketing opt-in","마케팅 수신 설정":"Marketing messages","마케팅 정보 수신":"Marketing messages","만 14세 이상이며,":"I am 14 or older, and agree to the","메뉴":"Menu","모닝 브리핑":"Morning Brief","모닝브리핑":"Morning Brief","목적":"Purpose","문의하기":"Contact","미디어·엔터":"Media & Entertainment","및":"and","바이오":"Biotech","바이오·제약":"Biotech & Pharma","반도체":"Semiconductors","받지 않아도 서비스 이용에는 아무 영향이 없습니다.":"Turning this off does not affect your use of the service.","보기":"View","보안을 위해 다시 로그인하신 뒤 진행하여 주시기 바랍니다.":"For security, please sign in again and then continue.","보안을 위해 다시 로그인하신 뒤 탈퇴를 진행하여 주시기 바랍니다.":"For security, please sign in again and then delete your account.","보유 기간: 회원 탈퇴 시까지":"Retained: until the account is deleted","보통":"It's okay","보험":"Insurance","부동산·리츠":"Real Estate & REITs","분기":"Quarter","분기 실적":"Quarterly results","불러오지 못했습니다.":"Could not load.","불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"Could not load. Please try again in a moment.","브라우저가 팝업을 막았습니다. 팝업을 허용하신 뒤 다시 시도하여 주시기 바랍니다.":"Your browser blocked the popup. Please allow popups and try again.","비밀번호":"Password","비밀번호는 영문과 숫자를 포함해 8자 이상이어야 합니다.":"Password must be at least 8 characters with letters and numbers.","비중":"Share","사업자등록번호":"Business Reg. No.","사업자등록번호 380-25-02019":"Business Reg. No. 380-25-02019","삭제":"Delete","삼성전자":"Samsung Electronics","상승 종목":"Gainers","상태":"Status","상호":"Company","상호 코사이":"Company KOSAI","새 리포트·서비스 소식을 이메일로 받습니다. 동의하지 않아도 가입할 수 있습니다.":"Receive news about new reports and the service by email. You can sign up without agreeing.","새 리포트와 서비스 소식을 이메일로 받습니다.":"Get news about new reports and the service by email.","새 리포트와 서비스 소식을 이메일로 받습니다. 받지 않아도 서비스 이용에는 아무 영향이 없습니다.":"Get news about new reports and the service by email. Turning this off does not affect your use of the service.","서비스":"Services","서비스를 이용하려면 약관 동의가 필요합니다":"Using the service requires your agreement","서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호":"#459, 4F Dongseong Bldg., 50 Mokdongdong-ro 12-gil, Yangcheon-gu, Seoul, Republic of Korea","설정":"Settings","섬유·패션·생활":"Apparel & Living","소셜 로그인에 실패했습니다.":"Social sign-in failed.","수신 동의 안 함":"Not subscribed","수신 동의함":"Subscribed","수집 항목: 이메일, 닉네임, 로그인 수단":"Collected: email, nickname, sign-in provider","시장":"Market","시총":"Mkt cap","식음료":"Food & Beverage","식품":"Food & Beverage","실적":"Earnings","실패":"failed","알림":"Notifications","알테오젠":"Alteogen","약관 동의":"Agreements","약관과 개인정보 처리에 관한 내용은":"You can review our","언어":"Language","언제든 철회할 수 있습니다.":"You can withdraw at any time.","업종":"Industry","업종 분석":"Industry Analysis","없음":"None","에너지":"Energy","에너지·전력":"Energy & Power","에서 확인할 수 있습니다.":".","영업이익":"Operating profit","오늘":"Today","완료":"Verified","요약":"Summary","요청이 많아 잠시 막혔습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"Too many attempts. Please try again in a moment.","운송·물류":"Transport & Logistics","워치리스트":"Watchlist","원하는 종목·정보가 부족합니다":"Missing stocks or information I want","월 #원":"<b>₩#<\/b><span>/month<\/span>","위 내용을 이해했으며 되돌릴 수 없음에 동의합니다":"I understand this is permanent and cannot be undone","유통·소비재":"Retail & Consumer","은행":"Banks","이 계정은 사용이 중지되었습니다. hello@kosai.kr로 문의하여 주시기 바랍니다.":"This account has been disabled. Please contact hello@kosai.kr.","이 이메일은 다른 방법으로 가입되어 있습니다. 아래 버튼 중 처음 가입하실 때 쓰신 것으로 로그인하여 주시기 바랍니다.":"This email is registered with a different sign-in method. Please use the one you signed up with.","이름":"Name","이메일":"Email","이메일 hello@kosai.kr":"Email hello@kosai.kr","이메일 가입":"Email sign-up","이메일 또는 비밀번호가 올바르지 않습니다.":"Incorrect email or password.","이메일 형식이 올바르지 않습니다.":"That email address looks invalid.","이미 가입된 이메일입니다.":"This email is already registered.","이미 다른 방법으로 가입된 이메일입니다.":"This email is already registered with another sign-in method.","이용 목적: 회원 식별과 서비스 제공":"Purpose: identifying members and providing the service","이용 방법이 불편합니다":"Hard to use","이용약관":"Terms of Service","인공지능(AI)":"AI","일반":"General","임범준":"Beomjun Lim","자동차":"Automotive","자동차·부품":"Autos & Parts","자세한 의견 (선택)":"Tell us more (optional)","자주 이용하지 않습니다":"I don't use it often","잠시 후 다시 시도하여 주시기 바랍니다.":"Too many attempts — please try again shortly.","장비":"Equipment","저장":"Save","저장하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"Could not save. Please try again in a moment.","저장했습니다.":"Saved.","전기장비":"Electrical Equipment","전자·부품":"Electronic Components","전체":"All","전체 동의":"Agree to all","절대":"Absolute","정리":"Wrap-up","정말 탈퇴하시겠습니까?":"Delete your account?","정보가 정확하지 않습니다":"Information isn't accurate","정유":"Oil Refining","정의":"Definitions","정책":"Legal","조선":"Shipbuilding","조회":"Search","종목":"Stock","종목 리포트":"Stock reports","주소":"Address","주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호":"Address #459, 4F Dongseong Bldg., 50 Mokdongdong-ro 12-gil, Yangcheon-gu, Seoul, Republic of Korea","주소 없음":"no address","증권":"Securities","증권사가 다루지 않는 종목까지":"Beyond broker<br>coverage","지주":"Holding Companies","지표":"Metric","처리 중 오류가 발생했습니다.":"Something went wrong.","철강":"Steel","철강·금속":"Steel & Metals","체크박스":"Checkbox","취소":"Cancel","카카오":"Kakao","카카오·네이버 로그인은 앱 키 설정이 필요합니다. (firebase-config.js 참고)":"Kakao/Naver sign-in needs app keys to be configured (see firebase-config.js).","코넥스":"KONEX","코사이":"KOSAI","코스닥":"KOSDAQ","코스피":"KOSPI","탈퇴 처리 중 오류가 발생했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"Something went wrong while deleting your account. Please try again later.","탈퇴하기":"Delete account","테마":"Themes","테마 전환":"Toggle theme","통신":"Telecom","포함":"Included","피드백":"Feedback","필수 항목에 모두 동의하셔야 가입하실 수 있습니다.":"You must accept the required items to continue.","한국어":"Korean","항공·방산":"Aerospace & Defense","현재":"Current","호텔·레저":"Hotel & Leisure","홈":"Home","홈으로":"Back to home","화장품":"Cosmetics","화학":"Chemicals","확인":"Confirm","회사":"Company","회사 소개":"About","회원 탈퇴":"Delete account","회원 탈퇴가 완료되었습니다":"Your account has been deleted","회원 탈퇴가 완료되었습니다. 그동안 이용해 주셔서 감사합니다.":"Your account has been deleted. Thank you for using KOSAI.","회원가입":"Sign up"}</script>
+<script>window.KOSi18n&&KOSi18n.load()</script>
+<script type="module" src="auth-state.js?v=82a9b999"></script>
+<script src="lenis.js?v=3a0cb7e8"></script>
+<script src="smooth-scroll.js?v=bd8a60e4"></script>
+</body>
+</html>
