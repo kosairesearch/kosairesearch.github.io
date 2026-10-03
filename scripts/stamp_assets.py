@@ -41,6 +41,9 @@ auth-state.js 는 판본이 붙어 캐시가 갈렸지만, 그 안에서 부르�
 
 배포 전에 돌린다(idempotent — 여러 번 돌려도 결과가 같다).
 
+종목 페이지(stock/{종목코드}.html · 2,700장 · 맨 위부터 쓴 /x.js?v= 주소)는 여기서 찍지 않는다 — 모듈을 고쳤으면
+scripts/build_stock_static.py(또는 build_live.py)를 돌린다. check_all '종목 페이지'가 어긋남을 잡고, 리포트 워치독이 30분 안에 맞춘다.
+
   python3 scripts/stamp_assets.py            # 붙이기/갱신
   python3 scripts/stamp_assets.py --check    # 쓰지 않고 검사만
 """

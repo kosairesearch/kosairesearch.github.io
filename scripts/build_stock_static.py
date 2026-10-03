@@ -20,8 +20,10 @@
   · 옷(CSS) · 스크립트 · 영어 사전은 stock/assets/ 에 한 벌. 주소에 내용 해시(?v=)를 붙인다. 페이지마다 다른 것은 머리(제목 · 설명 ·
     canonical · 공유 · 구조화 데이터)와 본문뿐이다.
   · 머리 · 꼬리 · 모듈은 실사이트 다른 페이지와 같은 생성기(comp_common live 모드)다. 폴더 한 단 아래라 모듈 주소를 맨 위부터 쓴다.
-  · 시세는 매일 바뀌므로 데이터 갱신 작업(update_data.yml)이 매일, 리포트가 새로 쓰이면 리포트 워치독(30분)이 다시 만든다.
-    바뀐 페이지만 쓰므로 자료가 그대로면 커밋도 없다.
+  · 시세는 매일 바뀌므로 데이터 갱신 작업(update_data.yml)이 매일, 새 상장은 신규 상장 작업(new_listings.yml)이 그 자리에서, 리포트가
+    새로 쓰이면 리포트 워치독(30분)이 다시 만든다. 바뀐 페이지만 쓰므로 자료가 그대로면 커밋도 없다.
+  · 종목 하나가 그리다 멈추면 그 종목만 옛 페이지로 두고 나머지를 만든 뒤 실패로 끝난다. 시세 자료가 지금 페이지 수의 절반 아래로 줄면 멈춘다.
+  · 모듈의 ?v= 도장은 여기서 찍는다(stamp_assets.py 는 루트 · 스테이징만 본다) — 모듈을 고쳤으면 이것(또는 build_live.py)을 돌린다.
 
 옛 주소
   · stock.html?ticker= — 껍데기(build_stock_staging, 실사이트 판)가 머리 맨 앞에서 /stock/{종목코드}.html 로 넘긴다.
@@ -64,8 +66,8 @@ def tickers():
 
 
 def listed():
-    """지금 상장된 종목(시세가 있는 종목). 나머지(상장 폐지 · 합병으로 리포트만 남은 종목)는 페이지는 두되 검색에 올리지 않는다 —
-    옛 실사이트도 그 종목들은 색인되지 않았다(옛 화면은 canonical 이 하나, 로봇용 사본 r/ 은 시세가 있는 종목만 만들었다)."""
+    """시세 자료(data/stocks.js)에 있는 종목. 나머지(상장 폐지 · 합병 · 거래 정지 등으로 리포트만 남은 종목)는 페이지는 두되 검색에
+    올리지 않는다(noindex · 사이트맵 제외) — 옛 실사이트에서도 사이트맵 · 로봇용 사본(r/)에 없던 종목이다. 시세가 다시 생기면 저절로 올라간다."""
     return set(S.load_data()['stocks'])
 
 
@@ -115,7 +117,9 @@ def abs_modules(page):
 
 
 def page_html(r, ver, on_market=True):
-    """종목 한 장. r 은 미리 그린 결과(prerender_stock.mjs 한 줄), ver 는 공용 파일의 내용 해시. on_market=False 는 상장 폐지 종목(noindex)."""
+    """종목 한 장. r 은 미리 그린 결과(prerender_stock.mjs 한 줄), ver 는 공용 파일의 내용 해시. on_market=False 는 시세 자료에 없는 종목(noindex).
+    본문 자리에 미리 그릴 때의 리포트 형식(data-pre-tier)과 시세 유무(data-pre-known)를 단다 — 화면이 자료를 못 받았을 때(통신 끊김 ·
+    검색 로봇의 렌더링) 미리 그린 글을 '준비 중'으로 덮지 않는 근거다(build_stock_staging.PAGE_JS render)."""
     tk, title, desc, url = r['tk'], r['title'], r['desc'] or '', r['canonical']
     assert url == f'{SITE}/stock/{tk}.html' and r['ogUrl'] == url, f'{tk}: 대표 주소가 다르다 ({url})'
     extra = (C.seo_tags(url, title, desc, robots=None if on_market else 'noindex,follow', og_type='article')
@@ -123,7 +127,8 @@ def page_html(r, ver, on_market=True):
              + f'<link rel="stylesheet" href="/stock/assets/stock.css?v={ver["stock.css"]}">\n')
     head = C.head(H.escape(title, quote=False), extra=extra)
     body = (f'\n</head>\n<body>\n{C.nav("리포트")}\n'
-            f'<main class="wrap" id="page" data-tk="{tk}" data-pre="{r["hash"]}">{r["h"]}</main>\n'
+            f'<main class="wrap" id="page" data-tk="{tk}" data-pre="{r["hash"]}" data-pre-tier="{r["tier"]}" data-pre-known="{1 if on_market else 0}">'
+            f'{r["h"]}</main>\n'
             f'{C.FOOTER}\n'
             '<script src="/data/stocks.js"></script>\n<script src="/data/valuation.js"></script>\n'
             f'<script src="/stock/assets/stock.js?v={ver["stock.js"]}"></script>\n'
@@ -178,22 +183,32 @@ def build(only=None):
     have = {p.stem for p in OUT.glob('*.html') if TICKER.match(p.stem)}
     if not only and have and len(tks) < len(have) * 0.5:
         raise SystemExit(f'❌ 만들 종목이 {len(tks)}개뿐이다(지금 {len(have)}장) — 자료가 깨졌을 수 있어 아무것도 지우지 않고 멈춘다')
-    tiers, made, wrote, market = {}, set(), 0, listed()
+    market = listed()
+    # 시세 자료가 갑자기 크게 줄면(수집이 일부만 받은 날) 대부분의 페이지가 noindex · 시세 없음으로 바뀌고 사이트맵이 줄어든다 — 멈춘다
+    if not only and have and len(market) < len(have) * 0.5:
+        raise SystemExit(f'❌ 시세 자료의 종목이 {len(market)}개뿐이다(지금 페이지 {len(have)}장) — 자료가 깨졌을 수 있어 아무것도 바꾸지 않고 멈춘다')
+    tiers, made, wrote, failed = {}, set(), 0, []
     for r in prerender(tks, B.page_js()):
+        if r.get('error'):   # 그 종목만 그리다 멈췄다(깨진 리포트 파일 등) — 옛 페이지를 그대로 두고 끝에 실패로 알린다
+            failed.append((r['tk'], r['error']))
+            continue
         made.add(r['tk'])
         tiers[r['tier']] = tiers.get(r['tier'], 0) + 1
         wrote += write_if_changed(OUT / f'{r["tk"]}.html', page_html(r, ver, r['tk'] in market))
     gone = 0
     if not only:
-        for tk in sorted(have - made):
+        for tk in sorted(have - made - {t for t, _ in failed}):
             (OUT / f'{tk}.html').unlink()
             gone += 1
     changed += write_if_changed(OUT / 'assets' / 'pages.js', pages_js(on_disk()))
     print(f'✅ stock/ {len(made):,}장 (전체 {tiers.get("v2", 0):,} · 옛 형식 {tiers.get("v1", 0):,} · 준비 중 {tiers.get("none", 0):,} · '
-          f'상장 폐지 {len(made - market):,}) · 새로 쓴 페이지 {wrote:,} · 지운 페이지 {gone} · 공용 파일 갱신 {changed}')
+          f'시세 없음 {len(made - market):,}) · 새로 쓴 페이지 {wrote:,} · 지운 페이지 {gone} · 공용 파일 갱신 {changed}')
     odd = {k: v for k, v in tiers.items() if k not in ('v2', 'v1', 'none')}
     if odd:
         raise SystemExit(f'❌ 그릴 수 없는 종목이 있다: {odd}')
+    if failed:
+        raise SystemExit(f'❌ 그리다 멈춘 종목 {len(failed)}개 — 옛 페이지를 그대로 두었다(리포트 파일을 확인할 것):\n   '
+                         + '\n   '.join(f'{t}: {e[:200]}' for t, e in failed[:10]))
 
 
 # ── 검사 ────────────────────────────────────────────────────────────────────
@@ -203,7 +218,8 @@ def skeleton(page):
     s = s.replace('<meta name="robots" content="noindex,follow">\n', '', 1)
     s = re.sub(r'(<meta (?:name|property)="(?:description|og:title|og:description|twitter:title|twitter:description)" content=")[^"]*"', r'\1#"', s)
     s = re.sub(r'(<script type="application/ld\+json" id="kos-jsonld">).*?(</script>)', r'\1#\2', s, count=1, flags=re.S)
-    s = re.sub(r'<main class="wrap" id="page" data-tk="[0-9A-Z]{6}" data-pre="[0-9a-f]{8}">.*?</main>', '<main #>#</main>', s, count=1, flags=re.S)
+    s = re.sub(r'<main class="wrap" id="page" data-tk="[0-9A-Z]{6}" data-pre="[0-9a-f]{8}" data-pre-tier="(?:v2|v1|none)" data-pre-known="[01]">.*?</main>',
+               '<main #>#</main>', s, count=1, flags=re.S)
     return re.sub(r'/stock/[0-9A-Z]{6}\.html', '/stock/#.html', s)
 
 
@@ -238,11 +254,14 @@ def check():
     want = set(tickers())
     have = {p.stem for p in OUT.glob('*.html') if TICKER.match(p.stem)}
     # 틀 — 종목 하나를 새로 그려 틀을 얻고, 모든 페이지의 틀이 그것과 같은지 본다(머리 · 꼬리 · 모듈 도장 · 공용 파일 해시)
-    sample = sorted(want & have)[:1] or sorted(want)[:1]
     ref = None
-    for r in prerender(sample, B.page_js()):
-        ref = skeleton(page_html(r, ver))
-    off, market = [], listed()
+    for r in prerender(sorted(want & have)[:5] or sorted(want)[:5], B.page_js()):   # 첫 종목이 그리다 멈춰도 다음 종목으로 틀을 얻는다
+        if not r.get('error'):
+            ref = skeleton(page_html(r, ver))
+            break
+    if ref is None:
+        bad.append('틀을 얻을 종목을 하나도 그리지 못했다 — python3 scripts/build_stock_static.py 의 오류를 볼 것')
+    off, drift, market = [], [], listed()
     for p in sorted(OUT.glob('*.html')):
         if not TICKER.match(p.stem):
             continue
@@ -252,14 +271,16 @@ def check():
         elif f'<link rel="canonical" href="{SITE}/stock/{p.stem}.html">' not in t or f'data-tk="{p.stem}"' not in t:
             off.append(p.stem)
         elif ('<meta name="robots" content="noindex' in t) == (p.stem in market):
-            off.append(p.stem)   # 상장 종목은 색인, 상장 폐지 종목만 noindex
+            drift.append(p.stem)   # 시세 자료에 있는 종목은 색인, 없는 종목만 noindex — 시세 자료가 바뀐 뒤 아직 다시 안 만든 경우
     if off:
         bad.append(f'틀이 생성기와 다른 페이지 {len(off):,}장({", ".join(off[:5])} …) → python3 scripts/build_stock_static.py')
     missing, extra = sorted(want - have), sorted(have - want)
-    # 종목이 늘거나 줄어든 직후에는 자동 작업(데이터 갱신 · 리포트 워치독 30분)이 맞출 때까지 어긋날 수 있다 — 조금이면 알리기만 한다
-    if missing or extra:
-        msg = f'페이지가 없는 종목 {len(missing)}개({", ".join(missing[:5])}) · 종목이 없어진 페이지 {len(extra)}장({", ".join(extra[:5])})'
-        (bad if len(missing) + len(extra) > max(20, len(want) // 50) else warn).append(msg)
+    # 자료가 바뀐 직후(종목이 늘거나 줄거나 시세 자료에서 빠지거나)에는 자동 작업(데이터 갱신 · 신규 상장 · 리포트 워치독 30분)이
+    # 맞출 때까지 어긋날 수 있다 — 조금이면 알리기만 한다. 틀(머리 · 꼬리 · 모듈 도장)의 어긋남은 위에서 늘 실패다.
+    if missing or extra or drift:
+        msg = (f'페이지가 없는 종목 {len(missing)}개({", ".join(missing[:5])}) · 종목이 없어진 페이지 {len(extra)}장({", ".join(extra[:5])}) · '
+               f'색인 여부가 시세 자료와 다른 페이지 {len(drift)}장({", ".join(drift[:5])})')
+        (bad if len(missing) + len(extra) + len(drift) > max(20, len(want) // 50) else warn).append(msg)
     for w in warn:
         print(f'  ⚠ {w} — 자동 작업이 곧 맞춘다')
     if bad:

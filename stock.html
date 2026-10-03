@@ -5,10 +5,10 @@
 <script src="/stock/assets/pages.js"></script>
 <script>(function(){try{var q=location.search,m=q.match(/[?&]ticker=([^&#]*)/);if(!m)return;var t=decodeURIComponent(m[1]).replace(/[^0-9A-Za-z]/g,'').toUpperCase();if(!/^[0-9A-Z]{6}$/.test(t))return;
 var L=window.KOS_STOCK_PAGES;if(typeof L==='string'&&(','+L+',').indexOf(','+t+',')<0)return;
-window.KOS_LEAVING=1;location.replace('/stock/'+t+'.html'+q.replace(/[?&]ticker=[^&#]*/,'').replace(/^&/,'?')+location.hash)}catch(e){}})();</script>
+window.KOS_LEAVING=1;try{sessionStorage.setItem('kos-fwd-ref',document.referrer||'')}catch(e){}location.replace('/stock/'+t+'.html'+q.replace(/[?&]ticker=[^&#]*/,'').replace(/^&/,'?')+location.hash)}catch(e){}})();</script>
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <script src="i18n.js?v=bc892c22"></script>
-<script src="analytics.js?v=864040c2"></script>
+<script src="analytics.js?v=e5cec7c2"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="format-detection" content="telephone=no">
 <meta name="theme-color" content="#f9f8f6">
@@ -424,6 +424,7 @@ function qp(n){ return new URLSearchParams(location.search).get(n); }
 
 /* 미리 만든 페이지는 종목코드(data-tk)와 미리 그린 글의 지문(data-pre)을 본문 자리에 달고 온다. 옛 껍데기(stock.html)는 ?ticker= 로 받는다. */
 var PG=document.getElementById('page'), PRE=PG&&PG.getAttribute('data-pre');
+var PRE_TIER=PG&&PG.getAttribute('data-pre-tier'), PRE_KNOWN=!!(PG&&PG.getAttribute('data-pre-known')==='1');   /* 미리 그릴 때의 리포트 형식 · 시세 유무 */
 var TK=String((PG&&PG.getAttribute('data-tk'))||qp('ticker')||'').replace(/[^0-9A-Za-z]/g,'');
 if(!TK){ var ks=Object.keys(REPORTS); TK=ks[0]||(LIVE[0]&&LIVE[0].ticker)||'005930'; }
 var STOCK=null,i; for(i=0;i<LIVE.length;i++){ if(LIVE[i].ticker===TK){ STOCK=LIVE[i]; break; } }
@@ -640,7 +641,15 @@ function notFoundH(){   // 종목코드가 문장 안에 들어가 사전으로�
   if(EN()) return '<div class="pending"><h2>Stock not found</h2><p>No stock matches the ticker you requested ('+esc(TK)+'). Please look it up again in the <a href="/Reports.html">report list</a>.</p></div>';
   return '<div class="pending"><h2>종목을 찾을 수 없습니다</h2><p>요청하신 종목코드('+esc(TK)+')에 해당하는 종목이 없습니다. <a href="/Reports.html">리포트 목록</a>에서 종목을 다시 찾아 주시기 바랍니다.</p></div>';
 }
+var RANK={none:0,v1:1,v2:2};
 function render(){
+  /* 미리 만든 페이지 — 받은 자료가 미리 그린 때보다 모자라면(리포트 파일 · 시세를 못 받았으면 — 통신이 끊긴 휴대폰, 검색 로봇의 렌더링)
+     미리 그린 글과 머리를 그대로 둔다. 그리면 다 있던 리포트가 '준비 중' · '찾을 수 없습니다'로 바뀐다(독립 검토 2026-10-03).
+     새 리포트가 생긴 경우(준비 중 → 리포트)는 아래에서 새로 그린다. 영어 화면은 처음부터 다시 그리므로 해당 없다. */
+  if(PRE&&LOADED&&!EN()&&((RANK[REP?TIER:'none']||0)<(RANK[PRE_TIER]||0)||(PRE_KNOWN&&!KNOWN))){
+    var pm=document.getElementById('page'); PRE=null; pm.removeAttribute('data-pre'); pm.setAttribute('data-tier',PRE_TIER||'none');
+    if(window.kosFitCharts) window.kosFitCharts(); if(window.kosTocInit) window.kosTocInit(); syncWatch(); return;
+  }
   var st=STOCK||{ticker:TK, name:(REP&&REP.name)||TK, name_en:(REP&&REP.name_en)||'', market:(REP&&REP.market)||'', sector:(REP&&REP.sector)||'', price:null, change:0};
   var stats=statsH(st);
   var h='<header class="hero">'+heroH(st)+'</header><section class="stats" aria-label="핵심 지표">'+stats.html+'</section><p class="stats-note">'+stats.note+' · 시세 '+fdate(DATA_DATE)+' 장마감</p>';

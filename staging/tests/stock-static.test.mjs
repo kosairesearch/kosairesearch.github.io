@@ -16,6 +16,9 @@
      ⑤ 옛 주소 — stock.html?ticker= 는 새 주소로 넘어간다(꼬리표 · #절 그대로, 소문자 종목코드도). 종목코드 모양이 아니면
         넘기지 않고 '종목을 찾을 수 없습니다'(리포트 목록 링크는 /Reports.html). r/{종목코드}.html 도 새 주소로 넘어간다
      ⑥ 사이트 안 링크 — 리포트 목록의 종목 줄이 새 주소를 가리킨다
+     ⑦ 바깥(검색 결과 등)에서 옛 주소로 들어온 방문 — 넘어간 뒤에도 원래 출처가 방문 기록에 남는다(넘기는 페이지가 출처 자리를
+        차지해 검색 유입이 '내부'로 잡히던 것 · 독립 검토 2026-10-03). r/ 은 유입 꼬리표(utm)도 실어 간다
+     ⑧ 자료(리포트 파일 · 시세)를 못 받아도 미리 그린 글 · 제목 · 대표 주소가 그대로다('준비 중' · '찾을 수 없습니다'로 덮지 않는다)
 
    실행
      node staging/tests/stock-static.test.mjs
@@ -39,6 +42,12 @@ if (!existsSync(join(ROOT, "stock/005930.html"))) { console.error("stock/ 가 �
 
 const server = createServer(async (req, res) => {
   try {
+    if (req.url.startsWith("/__ext.html")) {   // 바깥 사이트 흉내 — localhost 로 열면 127.0.0.1 과 다른 출처다
+      const to = new URL(req.url, "http://x").searchParams.get("to") || "/";
+      res.writeHead(200, { "content-type": "text/html; charset=utf-8" });
+      res.end(`<!doctype html><title>ext</title><a id="go" href="http://127.0.0.1:${server.address().port}${to}">go</a>`);
+      return;
+    }
     let rel = normalize(decodeURIComponent(req.url.split("?")[0])).replace(/^(\.\.[/\\])+/, "");
     if (rel.endsWith("/")) rel += "index.html";
     const body = await readFile(join(ROOT, rel));
@@ -77,7 +86,7 @@ const ok = (cond, name, extra = "") => {
 const browser = await chromium.launch({ executablePath: CHROME });
 async function ctxOf(opts = {}) {
   const ctx = await browser.newContext(Object.assign({ viewport: { width: 1280, height: 900 } }, opts));
-  await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, (route) => {
+  await ctx.route(/^https?:\/\/(?!127\.0\.0\.1|localhost)/, (route) => {
     const m = route.request().url().match(/gstatic\.com\/firebasejs\/[\d.]+\/(firebase-[a-z-]+)\.js/);
     if (m && FAKE[m[1]]) return route.fulfill({ status: 200, contentType: "text/javascript", body: FAKE[m[1]] });
     return route.abort();
@@ -205,6 +214,9 @@ console.log("\n⑤ 옛 주소");
   await page.goto(`${BASE}/r/`);
   await page.waitForURL(/\/Reports\.html/, { timeout: 10000 }).catch(() => {});
   ok(/\/Reports\.html$/.test(page.url()), "r/ 목록 → 리포트 목록", page.url());
+  await page.goto(`${BASE}/r/005930.html?utm_source=t#s03`);
+  await page.waitForURL(/\/stock\/005930\.html/, { timeout: 10000 }).catch(() => {});
+  ok(page.url() === `${BASE}/stock/005930.html?utm_source=t#s03`, "r/ 도 꼬리표 · #절 그대로", page.url());
   await ctx.close();
 }
 
@@ -218,6 +230,37 @@ console.log("\n⑥ 사이트 안 링크");
   ok(hrefs.length > 0 && hrefs.every((h) => /^\/stock\/[0-9A-Z]{6}\.html$/.test(h)), "리포트 목록의 종목 줄", hrefs.slice(0, 2).join(" , "));
   const st = await (await ctx.request.get(BASE + hrefs[0])).status();
   ok(st === 200, "그 주소의 페이지가 있다");
+  await ctx.close();
+}
+
+console.log("\n⑦ 바깥에서 옛 주소로 들어온 방문 — 원래 출처가 남는다");
+for (const [label, to] of [["stock.html?ticker=", "/stock.html?ticker=005930"], ["r/", "/r/005930.html"]]) {
+  const ctx = await ctxOf();
+  const page = await ctx.newPage();
+  await page.goto(`http://localhost:${server.address().port}/__ext.html?to=${encodeURIComponent(to)}`);
+  await Promise.all([page.waitForURL(/\/stock\/005930\.html/, { timeout: 15000 }).catch(() => {}), page.click("#go")]);
+  await loaded(page);
+  const entry = await page.evaluate(() => { try { return JSON.parse(sessionStorage.getItem("kosai_entry")); } catch (e) { return null; } });
+  ok(!!entry && entry.source === "localhost", `${label} 를 거쳐도 유입처가 바깥 사이트(내부 아님)`, JSON.stringify(entry));
+  await ctx.close();
+}
+
+console.log("\n⑧ 자료를 못 받아도 미리 그린 글은 그대로");
+for (const [label, pat] of [["리포트 파일을", /\/data\/reports(_v2)?\/005930\.json/], ["리포트 파일과 시세를", /\/data\/(reports(_v2)?\/005930\.json|stocks\.js)/]]) {
+  const ctx = await ctxOf();
+  await ctx.route(pat, (route) => route.abort());
+  const page = await ctx.newPage();
+  const errors = [];
+  page.on("pageerror", (e) => errors.push(String(e)));
+  await page.goto(`${BASE}/stock/005930.html`);
+  await loaded(page);
+  const r = await page.evaluate(() => ({ secs: document.querySelectorAll("#page section.sec").length, pending: !!document.querySelector("#page .pending"),
+    title: document.title, canon: document.querySelector("link[rel=canonical]").getAttribute("href"), price: !!document.querySelector("#page .price .p"),
+    tier: document.getElementById("page").getAttribute("data-tier") }));
+  ok(r.secs === 13 && !r.pending && r.price, `${label} 못 받아도 본문 13절 · 시세가 그대로`, JSON.stringify(r));
+  ok(r.title.includes("삼성전자") && !/준비 중|찾을 수 없습니다/.test(r.title), `${label} — 제목 그대로`, r.title);
+  ok(r.canon === "https://kosai.kr/stock/005930.html" && r.tier === "v2", `${label} — 대표 주소 그대로`, r.canon);
+  ok(errors.length === 0, `${label} — 페이지 오류 없음`, errors.slice(0, 2).join(" | "));
   await ctx.close();
 }
 

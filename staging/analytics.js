@@ -93,6 +93,17 @@
     return;
   }
 
+  /* 옛 주소(stock.html?ticker= · r/{종목코드}.html)에서 넘어온 방문 — 넘기는 페이지가 출처 자리를 차지해, 그대로 두면
+     검색으로 들어온 사람이 '직접 · 내부'로 잡힌다. 넘기기 전에 남겨 둔 원래 출처(kos-fwd-ref)를 쓴다(빈 값이면 출처가 없던 방문 —
+     주소 직접 입력 · 즐겨찾기). 위의 건너뛰기 뒤에서 읽어야 한다 — 넘기는 껍데기 자신이 지우지 않게. */
+  var referrer = document.referrer || "";
+  try {
+    var fwdRef = sessionStorage.getItem("kos-fwd-ref");
+    sessionStorage.removeItem("kos-fwd-ref");
+    if (fwdRef !== null && stockPage && referrer.indexOf(location.origin + "/") === 0 &&
+        /^\/(stock\.html\?|r\/)/.test(referrer.slice(location.origin.length))) referrer = fwdRef;
+  } catch (e) {}
+
   // ── Google Analytics 4 ──
   if (GA4_ID && GA4_ID.indexOf("G-") === 0) {
     var g = document.createElement("script");
@@ -117,6 +128,7 @@
       var qs = (location.search || "").replace(/^\?/, "");
       cfg.page_location = location.origin + "/stock.html?ticker=" + stockPage[1] + (qs ? "&" + qs : "");
     }
+    if (referrer !== (document.referrer || "")) cfg.page_referrer = referrer;   // 옛 주소에서 넘어왔으면 원래 출처
     gtag("config", GA4_ID, cfg);
   }
 
@@ -168,7 +180,7 @@
       var v = sessionStorage.getItem(SS_ENTRY);
       if (v) return JSON.parse(v);
     } catch (e) {}
-    var ref = document.referrer || "";
+    var ref = referrer;
     var src = "direct";
     try {
       if (ref) {

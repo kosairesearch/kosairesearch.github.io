@@ -8,7 +8,9 @@
   r/ 주소는 구글 · 네이버에 색인되어 있다. 지우면 404 가 되어 검색에서 들어온 사람이 빈 페이지를 보고, 그 주소에 쌓인
   평판도 새 주소로 넘어가지 않는다. GitHub Pages 는 서버 쪽 이동(301)을 할 수 없어서, 네이버 서치어드바이저가 그런 경우에
   권하는 메타 리프레시(0초)와 canonical(새 주소)로 보낸다 — 구글도 0초 메타 리프레시를 영구 이동으로 본다.
-  사람은 바로 새 페이지(머리 · 꼬리가 있는 새 디자인)를 보게 된다.
+  사람은 바로 새 페이지(머리 · 꼬리가 있는 새 디자인)를 보게 된다. 유입 꼬리표(utm) · #절은 그대로 실어 가고, 넘기기 전에 원래
+  출처(검색 결과 등)를 남겨 둔다 — 넘어간 페이지의 방문 통계가 그것을 쓴다(analytics.js · 남기지 않으면 검색 유입이 '직접'으로 잡힌다).
+  이미 껍데기인 파일은 회사 이름이 바뀌어도 다시 쓰지 않는다 — 가리키는 주소와 넘김 방식만 견준다(mask).
 
 언제 지우나
   검색 엔진이 새 주소를 색인한 뒤(몇 주 — 서치 콘솔 · 서치어드바이저에서 r/ 이 빠졌는지 보고) 폴더째 지운다.
@@ -36,11 +38,16 @@ def shell(target, title, label):
 <title>{H.escape(title, quote=False)}</title>
 <link rel="canonical" href="https://kosai.kr{target}">
 <meta http-equiv="refresh" content="0; url={target}">
-<script>location.replace("{target}"+location.hash)</script>
+<script>try{{sessionStorage.setItem("kos-fwd-ref",document.referrer||"")}}catch(e){{}}location.replace("{target}"+location.search+location.hash)</script>
 </head>
 <body><p><a href="{target}">{H.escape(label, quote=False)}</a></p></body>
 </html>
 '''
+
+
+def mask(text):
+    """제목 · 링크 글(회사 이름)을 뺀 모양 — 이름이 바뀌어도 껍데기는 그대로 둔다(가리키는 주소와 넘김 방식만 본다)."""
+    return re.sub(r'(<a href="[^"]+">)[^<]*(</a>)', r'\1#\2', re.sub(r'<title>.*?</title>', '<title>#</title>', text))
 
 
 def plan():
@@ -66,7 +73,7 @@ def main():
         print('r/ 가 없다 — 이미 지웠으면 이 검사는 필요 없다(check_all.sh 에서 뺄 것)')
         return 0
     want = plan()
-    diff = [n for n, t in want.items() if (R / n).read_text(encoding='utf-8') != t]
+    diff = [n for n, t in want.items() if mask((R / n).read_text(encoding='utf-8')) != mask(t)]
     if a.check:
         if diff:
             print(f'❌ r/ 에 옛 사본이 {len(diff)}장 남았다({", ".join(diff[:5])} …) → python3 scripts/retire_r_pages.py')

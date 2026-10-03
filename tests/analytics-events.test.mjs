@@ -292,6 +292,33 @@ const cfgOf = (w) => { const c = (w.dataLayer || []).find((a) => a && a[0] === "
   doc.getElementById("lnk").dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
   eq("새 주소 링크를 눌러도 stock_click", (events.find((x) => x.name === "stock_click") || {}).params?.ticker, "000660");
 }
+/* 옛 주소(stock.html?ticker= · r/)를 거쳐 온 방문 — 넘기는 페이지가 출처 자리를 차지한다. 넘기기 전에 남긴 원래 출처(kos-fwd-ref)를
+   써야 검색 유입이 '내부 · 직접'으로 잡히지 않는다(독립 검토 2026-10-03). */
+for (const via of ["https://kosai.kr/stock.html?ticker=005930", "https://kosai.kr/r/005930.html"]) {
+  const NAVER = "https://m.search.naver.com/search.naver?query=%EC%82%BC%EC%84%B1";
+  const session = { "kos-fwd-ref": NAVER };
+  const { w, events } = open("https://kosai.kr/stock/005930.html", { referrer: via, session });
+  w.KOSA.track("t");
+  const short = via.replace("https://kosai.kr", "");
+  eq(`${short} 를 거쳐 와도 유입처는 네이버`, events.find((e) => e.name === "t").params.entry_source, "naver");
+  eq(`${short} — GA4 의 출처도 네이버`, cfgOf(w) && cfgOf(w).page_referrer, NAVER);
+  eq(`${short} — 남긴 출처는 한 번 쓰고 지운다`, "kos-fwd-ref" in session, false);
+}
+{
+  const session = { "kos-fwd-ref": "" };   // 주소 직접 입력 · 즐겨찾기로 옛 주소에 온 사람
+  const { w, events } = open("https://kosai.kr/stock/005930.html", { referrer: "https://kosai.kr/stock.html?ticker=005930", session });
+  w.KOSA.track("t");
+  eq("원래 출처가 없던 방문은 직접", events.find((e) => e.name === "t").params.entry_source, "direct");
+  eq("GA4 의 출처도 비운다", cfgOf(w) && cfgOf(w).page_referrer, "");
+}
+{
+  // 사이트 안의 다른 페이지에서 왔으면 남은 값이 있어도 쓰지 않는다(옛 주소를 거친 것이 아니다)
+  const session = { "kos-fwd-ref": "https://www.google.com/" };
+  const { w, events } = open("https://kosai.kr/stock/005930.html", { referrer: "https://kosai.kr/Reports.html", session });
+  w.KOSA.track("t");
+  eq("옛 주소를 거치지 않은 방문은 그대로", events.find((e) => e.name === "t").params.entry_source, "internal");
+  eq("GA4 출처도 그대로(덮지 않는다)", cfgOf(w) && "page_referrer" in cfgOf(w), false);
+}
 {
   // 옛 주소 껍데기는 새 주소로 넘기는 중이다(KOS_LEAVING) — 거기서 세면 같은 방문이 두 번 잡힌다
   const dom = new JSDOM(`<!doctype html><html><head></head><body></body></html>`,

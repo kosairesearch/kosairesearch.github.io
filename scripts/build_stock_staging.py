@@ -103,10 +103,12 @@ LOCK_CSS = '''/* 유료 구간 — 흐린 미리보기 뒤에 잠금 카드. 상
 # 스크립트보다 먼저(통계가 옛 주소로 한 번 더 세지 않게 KOS_LEAVING 을 단다). 나머지 쿼리(utm 등)와 #절은 그대로 실어 간다.
 # 넘기는 것은 페이지가 있는 종목뿐이다(목록 stock/assets/pages.js — 종목 페이지 생성기가 같이 쓴다). 없는 종목코드 · 모양이 아닌 값은
 # 넘기지 않고 이 껍데기가 '종목을 찾을 수 없습니다'를 그린다 — 옛 화면과 같은 안내(영어 화면 포함)다. 목록을 못 받으면 넘긴다.
+# 넘기기 전에 원래 출처(document.referrer — 검색 결과 등)를 kos-fwd-ref 에 남긴다. 넘어간 페이지의 출처 자리는 이 껍데기가 차지하므로,
+# 남기지 않으면 검색 유입이 '직접 · 내부'로 잡힌다(analytics.js 가 읽는다 · 독립 검토 2026-10-03).
 FWD_JS = '''<script src="/stock/assets/pages.js"></script>
 <script>(function(){try{var q=location.search,m=q.match(/[?&]ticker=([^&#]*)/);if(!m)return;var t=decodeURIComponent(m[1]).replace(/[^0-9A-Za-z]/g,'').toUpperCase();if(!/^[0-9A-Z]{6}$/.test(t))return;
 var L=window.KOS_STOCK_PAGES;if(typeof L==='string'&&(','+L+',').indexOf(','+t+',')<0)return;
-window.KOS_LEAVING=1;location.replace('/stock/'+t+'.html'+q.replace(/[?&]ticker=[^&#]*/,'').replace(/^&/,'?')+location.hash)}catch(e){}})();</script>'''
+window.KOS_LEAVING=1;try{sessionStorage.setItem('kos-fwd-ref',document.referrer||'')}catch(e){}location.replace('/stock/'+t+'.html'+q.replace(/[?&]ticker=[^&#]*/,'').replace(/^&/,'?')+location.hash)}catch(e){}})();</script>'''
 
 # 종목별 canonical 을 받자마자 맞춘다 — 뒤의 setSEO() 가 제목·설명·JSON-LD 를 마저 채운다.
 CANON_JS = '''<script>(function(){try{var m=location.search.match(/[?&]ticker=([^&]+)/);if(!m)return;var t=decodeURIComponent(m[1]).replace(/[^0-9A-Za-z]/g,'');if(!t)return;
@@ -148,6 +150,7 @@ function qp(n){ return new URLSearchParams(location.search).get(n); }
 
 /* 미리 만든 페이지는 종목코드(data-tk)와 미리 그린 글의 지문(data-pre)을 본문 자리에 달고 온다. 옛 껍데기(stock.html)는 ?ticker= 로 받는다. */
 var PG=document.getElementById('page'), PRE=PG&&PG.getAttribute('data-pre');
+var PRE_TIER=PG&&PG.getAttribute('data-pre-tier'), PRE_KNOWN=!!(PG&&PG.getAttribute('data-pre-known')==='1');   /* 미리 그릴 때의 리포트 형식 · 시세 유무 */
 var TK=String((PG&&PG.getAttribute('data-tk'))||qp('ticker')||'').replace(/[^0-9A-Za-z]/g,'');
 if(!TK){ var ks=Object.keys(REPORTS); TK=ks[0]||(LIVE[0]&&LIVE[0].ticker)||'005930'; }
 var STOCK=null,i; for(i=0;i<LIVE.length;i++){ if(LIVE[i].ticker===TK){ STOCK=LIVE[i]; break; } }
@@ -470,7 +473,15 @@ function notFoundH(){   // 종목코드가 문장 안에 들어가 사전으로�
   if(EN()) return '<div class="pending"><h2>Stock not found</h2><p>No stock matches the ticker you requested ('+esc(TK)+'). Please look it up again in the <a href="__ROOT__Reports.html">report list</a>.</p></div>';
   return '<div class="pending"><h2>종목을 찾을 수 없습니다</h2><p>요청하신 종목코드('+esc(TK)+')에 해당하는 종목이 없습니다. <a href="__ROOT__Reports.html">리포트 목록</a>에서 종목을 다시 찾아 주시기 바랍니다.</p></div>';
 }
+var RANK={none:0,v1:1,v2:2};
 function render(){
+  /* 미리 만든 페이지 — 받은 자료가 미리 그린 때보다 모자라면(리포트 파일 · 시세를 못 받았으면 — 통신이 끊긴 휴대폰, 검색 로봇의 렌더링)
+     미리 그린 글과 머리를 그대로 둔다. 그리면 다 있던 리포트가 '준비 중' · '찾을 수 없습니다'로 바뀐다(독립 검토 2026-10-03).
+     새 리포트가 생긴 경우(준비 중 → 리포트)는 아래에서 새로 그린다. 영어 화면은 처음부터 다시 그리므로 해당 없다. */
+  if(PRE&&LOADED&&!EN()&&((RANK[REP?TIER:'none']||0)<(RANK[PRE_TIER]||0)||(PRE_KNOWN&&!KNOWN))){
+    var pm=document.getElementById('page'); PRE=null; pm.removeAttribute('data-pre'); pm.setAttribute('data-tier',PRE_TIER||'none');
+    if(window.kosFitCharts) window.kosFitCharts(); if(window.kosTocInit) window.kosTocInit(); syncWatch(); return;
+  }
   var st=STOCK||{ticker:TK, name:(REP&&REP.name)||TK, name_en:(REP&&REP.name_en)||'', market:(REP&&REP.market)||'', sector:(REP&&REP.sector)||'', price:null, change:0};
   var stats=statsH(st);
   var h='<header class="hero">'+heroH(st)+'</header><section class="stats" aria-label="핵심 지표">'+stats.html+'</section><p class="stats-note">'+stats.note+' · 시세 '+fdate(DATA_DATE)+' 장마감</p>';

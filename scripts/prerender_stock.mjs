@@ -8,7 +8,9 @@
 
    입력(표준 입력 · JSON)   {"root": 저장소, "js": 페이지 스크립트 파일, "tickers": ["005930", …]}
    출력(표준 출력)          종목마다 JSON 한 줄 {tk, h, hash, tier, title, desc, canonical, ogTitle, ogDesc, ogUrl, ld}
-   실패                     그리기가 끝나지 않은 종목이 있으면 그 종목을 적고 1 로 끝난다(빈 페이지를 쓰지 않게)
+   실패                     종목 하나가 그리다 멈추면(깨진 리포트 파일 등) 그 종목만 {tk, error} 로 알리고 다음 종목을 그린다 —
+                            한 종목 때문에 뒤의 종목이 모두 옛 페이지로 남지 않게(독립 검토 2026-10-03). 파이썬 쪽이 그 종목의
+                            옛 페이지를 그대로 두고 끝에 실패로 알린다.
 
    자료(data/stocks.js · valuation.js · reports-index.js)는 한 번 읽고, 리포트(data/reports_v2 · data/reports)는 스크립트가
    fetch 로 부르는 주소를 디스크에서 읽어 준다. 브라우저에서 r.json() 이 실패하면 null 이 되는 것과 같게, 깨진 JSON 은 거절한다.
@@ -44,9 +46,13 @@ function fetchFor(u) {
 }
 
 const tick = () => new Promise((r) => setImmediate(r));
-const out = [];
-let failed = [];
+/* 페이지 스크립트의 약속 사슬에는 catch 가 없다 — 그리다 던진 오류는 '처리되지 않은 거절'로 온다. 노드가 그것으로 멈추지 않게
+   붙잡아 지금 종목의 실패로 적는다. 종목마다 자료를 받은 뒤의 그리기가 끝날 때까지 기다리므로 앞 종목의 오류가 섞이지 않는다. */
+let pageErr = null;
+process.on("unhandledRejection", (e) => { pageErr = e || new Error("거절"); });
+const emit = (o) => process.stdout.write(JSON.stringify(o) + "\n");
 for (const tk of spec.tickers) {
+  pageErr = null;
   const main = el();
   main.attrs["data-tk"] = tk;
   let html = null;
@@ -72,19 +78,18 @@ for (const tk of spec.tickers) {
     history: { replaceState: () => {} },
     KOSi18n: undefined, KOSA: undefined, KOSWatch: undefined, KOSPaywall: undefined, kosFitCharts: undefined, kosTocInit: undefined,
   });
-  page.runInContext(ctx);
-  for (let i = 0; i < 200 && !("data-tier" in main.attrs); i++) await tick();   // 자료를 받은 뒤의 그리기(LOADED)가 data-tier 를 단다
-  if (!("data-tier" in main.attrs) || !html) { failed.push(tk); continue; }
+  try { page.runInContext(ctx); } catch (e) { pageErr = e; }
+  for (let i = 0; i < 200 && !("data-tier" in main.attrs) && !pageErr; i++) await tick();   // 자료를 받은 뒤의 그리기(LOADED)가 data-tier 를 단다
+  if (pageErr || !("data-tier" in main.attrs) || !html) {
+    emit({ tk, error: String((pageErr && (pageErr.stack || pageErr.message)) || pageErr || "그리기가 끝나지 않았다").split("\n").slice(0, 3).join(" | ") });
+    continue;
+  }
   const ld = kids.find((e) => e.id === "kos-jsonld");
   const meta = (sel, k) => (metas[sel] ? metas[sel].attrs[k] : null);
-  process.stdout.write(JSON.stringify({
+  emit({
     tk, h: html, hash: ctx.kosHash(html), tier: main.attrs["data-tier"], title: doc.title,
     desc: meta("meta[name=description]", "content"), canonical: meta("link[rel=canonical]", "href"),
     ogTitle: meta('meta[property="og:title"]', "content"), ogDesc: meta('meta[property="og:description"]', "content"),
     ogUrl: meta('meta[property="og:url"]', "content"), ld: ld ? ld.textContent : null,
-  }) + "\n");
-}
-if (failed.length) {
-  console.error(`그리기가 끝나지 않은 종목 ${failed.length}개: ${failed.slice(0, 20).join(", ")}`);
-  process.exit(1);
+  });
 }
