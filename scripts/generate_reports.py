@@ -45,6 +45,51 @@ def log(msg):
             f.write(msg + "\n")
 
 
+# ── 사용량 기록 — 모델에 쓴 값을 실측으로 남긴다 (2026-10-03) ─────────────────
+# 이 생성기는 사용량을 남기지 않아, 신규 상장 2개사를 만든 날 콘솔 청구와 맞춰 볼 기록이 없었다.
+# 시도마다(잘려 버린 시도까지) 사용량을 더하고, 실행 끝에 모델별 합계와 추정 금액을 로그에 남긴다.
+# 정가(USD / 100만 토큰 · 입력, 출력) — 2026-10-03 공식 요금표 대조. 배치는 이 값의 절반이고,
+# 캐시 쓰기(5분)는 입력의 1.25배 · 캐시 읽기는 0.1배, 웹 검색은 1회 $0.01 이다.
+# 청구서가 아니라 추정이다 — 실제 청구는 콘솔이 답이다.
+PRICE = {"claude-opus-5": (5.0, 25.0), "claude-sonnet-5": (2.0, 10.0),
+         "claude-opus-4-8": (5.0, 25.0), "claude-sonnet-4-6": (3.0, 15.0)}
+SPENT = {}   # 이번 실행의 모델별 합계(즉시 호출)
+
+
+def usage_of(message):
+    """응답 하나의 사용량 → dict(in · cache_w · cache_r · out · search). 없으면 None."""
+    u = getattr(message, "usage", None)
+    if u is None:
+        return None
+    st = getattr(u, "server_tool_use", None)
+    return {"in": getattr(u, "input_tokens", 0) or 0,
+            "cache_w": getattr(u, "cache_creation_input_tokens", 0) or 0,
+            "cache_r": getattr(u, "cache_read_input_tokens", 0) or 0,
+            "out": getattr(u, "output_tokens", 0) or 0,
+            "search": (getattr(st, "web_search_requests", 0) or 0) if st else 0}
+
+
+def cost_usd(model, u, batch=False):
+    pin, pout = PRICE.get(model, (5.0, 25.0))
+    tok = ((u["in"] + u["cache_w"] * 1.25 + u["cache_r"] * 0.1) * pin + u["out"] * pout) / 1e6
+    return tok * (0.5 if batch else 1.0) + u["search"] * 0.01
+
+
+def add_usage(book, model, u, batch=False):
+    """book[model] 에 응답 하나의 사용량을 더한다."""
+    a = book.setdefault(model, {"n": 0, "in": 0, "cache_w": 0, "cache_r": 0, "out": 0, "search": 0, "usd": 0.0})
+    a["n"] += 1
+    for k in ("in", "cache_w", "cache_r", "out", "search"):
+        a[k] += u[k]
+    a["usd"] += cost_usd(model, u, batch)
+    return a
+
+
+def usage_line(model, a, how):
+    return (f"💵 {model} {a['n']}회({how}) · 입력 {a['in']:,}(캐시쓰기 {a['cache_w']:,}·읽기 {a['cache_r']:,}) "
+            f"· 출력 {a['out']:,} · 검색 {a['search']} → 약 ${a['usd']:.2f}")
+
+
 # ── 리포트 저장소: 종목별 JSON + 가벼운 인덱스 (모바일 로딩 최적화) ──────────
 def load_existing_reports():
     """기존 리포트를 {ticker: report} 로 읽는다.
@@ -449,6 +494,13 @@ def generate_one(client, stock, as_of, dart_block=""):
     ) as stream:
         message = stream.get_final_message()
 
+    # 글을 읽기 전에 센다 — 잘리거나 깨져서 버리는 시도에도 돈은 나갔다.
+    u = usage_of(message)
+    if u:
+        add_usage(SPENT, MODEL, u)
+        log(f"- 사용량: 입력 {u['in']:,}(캐시쓰기 {u['cache_w']:,}·읽기 {u['cache_r']:,}) · 출력 {u['out']:,} "
+            f"· 검색 {u['search']} → 약 ${cost_usd(MODEL, u):.2f}")
+
     searches = 0
     try:
         searches = message.usage.server_tool_use.web_search_requests
@@ -581,15 +633,20 @@ def main():
                 nme = type(e).__name__
                 is_net = any(k in nme for k in ("Protocol", "Connection", "ReadError", "Timeout", "ReadTimeout"))
                 parse_tries += 1
-                limit = NET_RETRY if is_net else PARSE_RETRY
+                # 재시도 한도. 예전에는 이 자리에서 1회 최대 생성 수(limit)를 덮어써, 한 번 실패하면
+                # 그 실행의 상한이 1로 줄었다(2026-10-03 REPORT_LIMIT 2 로 돌렸는데 1개만 만들고 멈췄다).
+                retry_max = NET_RETRY if is_net else PARSE_RETRY
                 log(f"- ⚠️ 시도 실패: {nme}: {e}")
-                if parse_tries > limit:
+                if parse_tries > retry_max:
                     log(f"- ❌ {nm} 리포트 생성 실패 — 건너뜀")
                     break
                 time.sleep(15 if is_net else 10)
         last_gen = i
         if aborted:
             break
+
+    for mdl, a in SPENT.items():
+        log(usage_line(mdl, a, "즉시 호출 · 정가 · 실패한 시도 포함"))
 
     if not reports:
         log("❌ 생성된 리포트가 없습니다.")

@@ -17,8 +17,12 @@ known 목록은 항상 현재 전체로 갱신한다. 첫 실행(known 없음)�
 배치 한 건 값으로 다시 쓴다 — 로그의 '재시도' 줄이 며칠째 같으면 사람이 본다.
 """
 import os
+import sys
 import json
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import _reports_state as S  # noqa: E402  — 리포트 파일의 날짜(색인 동기화 전에도 '있음'으로 친다)
 
 ROOT = Path(__file__).resolve().parent.parent
 STOCKS_JS = ROOT / "data" / "stocks.js"
@@ -59,12 +63,21 @@ def main():
             reported = set(_load_obj(REPORTS_JS).get("reports", {}).keys())
         except Exception:
             pass
+    # 색인에 아직 오르지 않은 리포트 파일도 '있음'으로 친다. 배치 회수 · 백필은 파일만 커밋하고 색인은
+    # 워치독 동기화 때 고쳐지므로, 색인만 보면 그 사이 같은 종목을 또 만든다(2026-10-03 공시 트리거가
+    # 같은 원인으로 9개 종목을 두 번 주문했다).
+    # 폭주 방지는 색인만으로 판단한다(파일로 채운 수를 넣으면 색인이 깨진 날에도 재시도가 열린다).
+    idx_n = len(reported)
+    on_file = {t for t in cur if t not in reported and S.file_report_date(t)}
+    if on_file:
+        print(f"색인 동기화 전 리포트 파일이 있는 종목 {len(on_file)}개 — 있는 것으로 친다: {','.join(sorted(on_file)[:20])}")
+    reported |= on_file
     # 전에 보았지만 아직 리포트가 하나도 없는 종목 — 지난 생성이 실패한 신규 상장
     retry = []
-    if len(reported) >= len(cur_set) // 2:
+    if idx_n >= len(cur_set) // 2:
         retry = [t for t in cur if t not in reported and t not in new]
     else:
-        print(f"⚠️ 리포트 인덱스가 비정상({len(reported)}개) — 재시도 대상은 이번에 보지 않는다")
+        print(f"⚠️ 리포트 인덱스가 비정상({idx_n}개) — 재시도 대상은 이번에 보지 않는다")
     for t in retry[:40]:
         print(f"  · 재시도 {t} {nm.get(t,'')} (리포트 없음)")
     todo = ([t for t in new if t not in reported] + retry)[:MAX_NEW]

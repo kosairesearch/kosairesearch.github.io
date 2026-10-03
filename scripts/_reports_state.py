@@ -29,6 +29,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUT_DIR = DATA / "reports_v2"
+V1_DIR = DATA / "reports"            # 옛 형식(신규 상장 직후 · 수동) — 색인에는 그 생성기가 바로 쓴다
 SKIP_DIR = DATA / "reports_v2_skip"
 SKIP_LEGACY = DATA / "reports_v2_skip.txt"
 HOLD_DIR = DATA / "reports_v2_hold"
@@ -252,6 +253,30 @@ def report_date(tk):
         return str(json.loads(p.read_text(encoding="utf-8")).get("reportDate") or "")[:10] or None
     except Exception:
         return None
+
+
+def file_report_date(tk):
+    """리포트 파일(v2 · v1)에 적힌 가장 늦은 날짜('YYYY-MM-DD'). 없으면 None.
+
+    목록 색인(data/reports-index.js)은 워치독의 동기화(_reindex) 때만 고쳐진다. 배치 회수 · 백필은
+    리포트 파일만 커밋하므로 그 사이 색인은 옛 날짜다. 색인만 보고 대상을 고르면 방금 만든 종목을
+    또 주문한다(2026-10-03 — 08:57 회수분 9개를 09:38 공시 트리거가 같은 공시로 다시 주문했다).
+    색인과 같은 기준으로 센다 — 제목이 있는(색인에 오를) 파일만 본다."""
+    best = None
+    for d in (OUT_DIR, V1_DIR):
+        p = d / f"{tk}.json"
+        if not p.exists():
+            continue
+        try:
+            r = json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        if not isinstance(r, dict) or not r.get("title"):
+            continue
+        v = str(r.get("reportDate") or "")[:10]
+        if len(v) == 10 and (best is None or v > best):
+            best = v
+    return best
 
 
 def has_current_report(tk, refresh=None):
