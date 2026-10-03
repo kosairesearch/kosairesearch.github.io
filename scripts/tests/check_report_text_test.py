@@ -103,6 +103,14 @@ eq("마크다운 굵게", cm("크게 **하이테크 사업부문**과"), "크게
 eq("HTML 이름표", cm("LS CABLE &amp; SYSTEM"), "LS CABLE & SYSTEM")
 eq("꺾쇠로 쓴 제목은 그대로", cm("<세브란스: 단절> 과 <A Killer Paradox>"), "<세브란스: 단절> 과 <A Killer Paradox>")
 eq("멀쩡한 글은 그대로", cm("매출은 1,797억원이다."), "매출은 1,797억원이다.")
+# 2026-10-03 — 태그가 반쯤 지워진 조각(조흥 · 한스바이오메드)과 따옴표 앞 역슬래시(스튜디오미르)
+NS = "antml:cite"   # 모델 자신의 인용 태그 — '<' 와 붙여 쓰지 않으려고 따로 적는다
+eq("인용 태그 조각", cm("공동 개발\\" + NS + "> 등 신규"), "공동 개발 등 신규")
+eq("인용 태그 — 감싼 글은 남긴다", cm("매출은 <" + NS + ' index="3-1">1,797억원이다<' + "/" + NS + ">."), "매출은 1,797억원이다.")
+eq("속성 끝 조각", cm('항소 포기서를 제출">하며 소송이'), "항소 포기서를 제출하며 소송이")
+eq("따옴표 앞 역슬래시", cm("'도타: 용의 피', 'X-Men \\'97' 등"), "'도타: 용의 피', 'X-Men '97' 등")
+eq("꺾쇠 안 따옴표는 그대로", cm("<'오징어 게임'>은 흥행했다"), "<'오징어 게임'>은 흥행했다")
+eq("닫힌 꺾쇠 뒤 조각은 지운다", cm('<세브란스: 단절> 흥행 뒤 제출">하며'), "<세브란스: 단절> 흥행 뒤 제출하며")
 
 
 def drules(ko, en="ok"):
@@ -115,6 +123,10 @@ for ko in ["규모의 경�제 측면에서", "가격 경쁴력을 갖췄다", 
     eq(ko, drules(ko), ["broken_char"])
 eq("영문에 섞인 한자", drules("정상", "the半-year report"), ["broken_char"])
 eq("남은 태그", drules('나뉜다<sup index="1-2"></sup>.'), ["markup"])
+eq("인용 태그 조각", drules("수익성 개선이 제한\\" + NS + ">될 수"), ["markup"])
+eq("속성 끝 조각", drules('존속이 어렵다고 부연">했다'), ["markup"])
+eq("역슬래시", drules("'X-Men \\'97'"), ["markup"])
+eq("영문 역슬래시", drules("정상", "the \\'97 series"), ["markup"])
 eq("단어에 붙은 한자", drules("영업이익은 88億원"), ["hanja"])
 eq("받은 자료를 가리키는 말", drules("3분기 수치는 제공된 데이터셋에 포함되지 않아"), ["meta"])
 eq("영문 data window", drules("정상", "the highest within the disclosed data window"), ["meta"])
@@ -126,6 +138,8 @@ for ko in ["디스플레이용 웻 스테이션", "쓰촨성 몐양 라인", "�
            "AI 학습용 데이터셋 사업"]:
     eq(ko, drules(ko), [])
 eq("영문 TGF-β·®", drules("정상", "TGF-β and NeoPAC® are fine"), [])
+eq("꺾쇠 안 따옴표", drules("<'오징어 게임'>은 흥행했다"), [])
+eq("영문 화살표 · 부등호", drules("정상", "KRW 35.9bn -> 54.4bn (<100-employee businesses)"), [])
 eq("출처·숫자 칸은 보지 않는다", C.defects({"sources": ["https://x.kr/<sup>"], "quant": {"note": "�"}}), [])
 
 print("\n── 교정 지시에 글자 결함 규칙이 들어갔나 ──")
