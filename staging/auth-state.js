@@ -62,18 +62,22 @@ if(window.KOSi18n) window.KOSi18n.register({
 });
 
 /* ────────────────── 주소 도우미 ────────────────── */
-function here(){ return location.pathname.split('/').pop() || 'Home.html'; }
+/* 사이트 맨 위 — 실사이트 '/', 스테이징 '/staging/'. 종목 페이지는 한 단 아래(/stock/005930.html)에 있어 'Login.html' 같은 상대 주소가
+   /stock/Login.html(없는 주소)로 풀린다. 그래서 이 모듈이 내는 이동 주소는 맨 위부터 쓴다(2026-10-03 종목 페이지를 종목마다 만들며). */
+function siteBase(){ return location.pathname.indexOf('/staging/') === 0 ? '/staging/' : '/'; }
+/* 지금 페이지 — 맨 위부터의 주소(Home.html · stock/005930.html). 돌아올 곳(?next=)과 화면 판별에 쓴다. */
+function here(){ const p = location.pathname, b = siteBase(); return (p.indexOf(b) === 0 ? p.slice(b.length) : p.split('/').pop()) || 'Home.html'; }
 function isAuthPage(){ return /^(Login|Signup)\.html$/i.test(here()); }
 /* 로그인 뒤 돌아올 곳 — 지금 페이지 이름에 쿼리까지(stock.html?ticker=… 로 되돌아와야 한다).
    값을 실어 보낼 뿐이다. 받는 쪽(Login.html 의 safeNext)이 우리 사이트 안의 .html 하나만 통과시킨다. */
 function nextHere(){ return encodeURIComponent(here() + (location.search || '')); }
-function loginHref(){ return 'Login.html?next=' + nextHere(); }
+function loginHref(){ return siteBase() + 'Login.html?next=' + nextHere(); }
 
 /* 설정은 페이지다. 칸 이름은 아는 넷만 주소에 싣는다 — 모르는 값은 버리고 설정 첫 칸으로. */
 const SETTINGS_TABS = /^(general|notifications|subscription|account)$/;
 function settingsHref(tab, card){
   const t = SETTINGS_TABS.test(tab || '') ? tab : '';
-  return 'Settings.html' + (t ? '?tab=' + t : '') + (card ? (t ? '&' : '?') + 'card=1' : '');
+  return siteBase() + 'Settings.html' + (t ? '?tab=' + t : '') + (card ? (t ? '&' : '?') + 'card=1' : '');
 }
 function openSettings(tab){ location.href = settingsHref(tab, false); }
 
@@ -208,7 +212,7 @@ async function finishWithdraw(user, email, reason, detail, ov, hadSub){
         <p class="wd-done-sub">${T("그동안 이용해 주셔서 감사합니다.")}</p>
         <button type="button" class="wd-home">${T("홈으로")}</button>
       </div>`;
-    const home = () => { location.href = "Home.html"; };
+    const home = () => { location.href = siteBase() + "Home.html"; };
     ov.querySelector('.wd-home').addEventListener('click', home);
     ov.onclick = e => { if(e.target === ov) home(); };
   }catch(e){
@@ -346,7 +350,7 @@ function bindMenuOnce(){
 
 async function logout(){
   try{ await signOut(auth); }catch(e){}
-  location.href = 'Home.html';
+  location.href = siteBase() + 'Home.html';
 }
 
 /* 로그아웃 상태 — 정적 '로그인' 링크를 그대로 쓰되 돌아올 곳만 붙인다.
@@ -360,7 +364,7 @@ function renderLoggedOut(S){
   if(S.mauth){
     clear(S.mauth);
     S.mauth.appendChild(el('a', { href: loginHref() }, '로그인'));
-    S.mauth.appendChild(el('a', { href: 'Signup.html' }, '회원가입'));
+    S.mauth.appendChild(el('a', { href: siteBase() + 'Signup.html' }, '회원가입'));
   }
   applyI18n();
 }
@@ -382,7 +386,7 @@ function renderLoggedIn(S, user){
     'aria-haspopup': 'true', 'aria-expanded': 'false', 'aria-label': '계정 메뉴' }, initial);
   const menu = el('div', { 'class': 'acct-menu', role: 'menu' });
   menu.appendChild(el('div', { 'class': 'em' }, email));
-  menu.appendChild(el('a', { href: 'Settings.html' }, '설정'));
+  menu.appendChild(el('a', { href: siteBase() + 'Settings.html' }, '설정'));
   const out = el('button', { type: 'button', 'class': 'logout' }, '로그아웃');
   out.addEventListener('click', logout);
   menu.appendChild(out);
@@ -392,7 +396,7 @@ function renderLoggedIn(S, user){
   btn.addEventListener('click', () => setMenu(S.acct, !S.acct.classList.contains('open')));
   if(S.mauth){
     clear(S.mauth);
-    S.mauth.appendChild(el('a', { href: 'Settings.html' }, '설정'));
+    S.mauth.appendChild(el('a', { href: siteBase() + 'Settings.html' }, '설정'));
     const mout = el('button', { type: 'button', 'class': 'logout' }, '로그아웃');
     mout.addEventListener('click', logout);
     S.mauth.appendChild(mout);
@@ -474,7 +478,7 @@ async function guardConsent(user){
     /* 돌아갈 곳에 쿼리를 붙이지 않는다. 소셜 로그인 직후처럼 주소에 ?code=… 가
        남아 있을 때 그 인가코드까지 next 에 실려 가면, 동의를 마친 뒤 그 주소로
        되돌아가 이미 써 버린 코드로 로그인을 한 번 더 시도하게 된다. 페이지면 충분하다. */
-    location.replace('Consent.html?next=' + encodeURIComponent(here()));
+    location.replace(siteBase() + 'Consent.html?next=' + encodeURIComponent(here()));
   }catch(e){ /* 표시·이동용 — 실패하면 그냥 둔다 */ }
 }
 

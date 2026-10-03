@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<script src="/i18n.js?v=bc892c22"></script>
+<script src="/analytics.js?v=e5cec7c2"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#f9f8f6">
+<title>머니무브(179720) 리포트 — AI 신용평가 온투업, 유동성이 발목 | KOSAI</title>
+<meta name="description" content="머니무브는 AI 머신러닝 대안신용평가 기술을 앞세워 중신용자 개인대출 시장을 공략하는 온투업 전문 핀테크 기업이나, 사실상 제로에 가까운 거래대금이 투자 접근성을 구조적으로 제한한다.">
+<link rel="canonical" href="https://kosai.kr/stock/179720.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="KOSAI">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="머니무브(179720) 리포트 — AI 신용평가 온투업, 유동성이 발목 | KOSAI">
+<meta property="og:description" content="머니무브는 AI 머신러닝 대안신용평가 기술을 앞세워 중신용자 개인대출 시장을 공략하는 온투업 전문 핀테크 기업이나, 사실상 제로에 가까운 거래대금이 투자 접근성을 구조적으로 제한한다.">
+<meta property="og:url" content="https://kosai.kr/stock/179720.html">
+<meta property="og:image" content="https://kosai.kr/assets/og-image.png?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="머니무브(179720) 리포트 — AI 신용평가 온투업, 유동성이 발목 | KOSAI">
+<meta name="twitter:description" content="머니무브는 AI 머신러닝 대안신용평가 기술을 앞세워 중신용자 개인대출 시장을 공략하는 온투업 전문 핀테크 기업이나, 사실상 제로에 가까운 거래대금이 투자 접근성을 구조적으로 제한한다.">
+<meta name="twitter:image" content="https://kosai.kr/assets/og-image.png?v=3">
+<link rel="icon" type="image/svg+xml" href="/assets/kosai-icon-dark.svg?v=k2">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=k2">
+<script type="application/ld+json" id="kos-jsonld">{"@context":"https://schema.org","@type":"Article","headline":"머니무브 (179720) — AI 신용평가 온투업, 유동성이 발목","datePublished":"2026-06-08","dateModified":"2026-10-02","inLanguage":"ko","isAccessibleForFree":true,"mainEntityOfPage":"https://kosai.kr/stock/179720.html","author":{"@type":"Organization","name":"KOSAI","url":"https://kosai.kr"},"about":{"@type":"Corporation","name":"머니무브","legalName":"MoneyMove Co., Ltd.","tickerSymbol":"179720"}}</script>
+<link rel="stylesheet" href="/stock/assets/stock.css?v=27c10de1">
+<link rel="icon" href="/assets/favicon.png?v=k2">
+<link rel="stylesheet" href="/fonts/pretendard-subset.css">
+<script>(function(){var t='light';try{t=localStorage.getItem('kos-theme')||'light'}catch(e){}document.documentElement.setAttribute('data-theme',t);})();</script>
+<script id="kosThemeColor">(function(){var m=document.querySelector('meta[name="theme-color"]'),r=document.documentElement;
+  function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0d0d0e':'#f9f8f6')}
+  tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme']})})();</script>
+<script>
+/* 활성 표시선 — 컨테이너마다 선 하나를 두고, 활성 항목(.on)의 자리로 미끄러뜨린다.
+   axis 'x' = 밑줄, 'y' = 왼쪽 세로선. sel 로 활성 항목 선택자를 바꿀 수 있다(기본 .on).
+   첫 자리는 그냥 놓고, 그 뒤부터 element.animate() 로 이전 자리에서 새 자리로 움직인다.
+   CSS transition 을 안 쓰는 이유: 휴대폰 목차 띠가 헤더 안으로 옮겨 붙는 프레임에 항목이 같이 바뀌면
+   방금 옮겨진 요소라 transition 이 시작되지 않는다. animate() 는 DOM 이동과 무관하게 움직인다.
+   window.kosIndMs 로 길이를 바꿀 수 있다(시험용). 움직임 줄이기 설정이면 바로 놓는다. */
+window.kosInd=function(box,axis,sel){
+  if(!box)return function(){};
+  if(box.__ind)return box.__ind;
+  var ind=document.createElement('span');ind.className='ind '+(axis==='y'?'ind-v':'ind-h');ind.setAttribute('aria-hidden','true');box.appendChild(ind);
+  var last=null,placed=false,anim=null,rm=window.matchMedia?matchMedia('(prefers-reduced-motion:reduce)'):null;
+  function move(force){
+    var a=box.querySelector(sel||'.on');
+    if(!a){ind.style.opacity='0';last=null;return}
+    if(a===last&&!force)return;
+    var b=box.getBoundingClientRect(),r=a.getBoundingClientRect();
+    if(!r.width&&!r.height)return;
+    last=a;
+    var x=r.left-b.left-box.clientLeft+box.scrollLeft,y=r.top-b.top-box.clientTop+box.scrollTop;
+    var to={transform:'translate('+x+'px,'+(axis==='y'?y:y+r.height-2)+'px)'};
+    if(axis==='y')to.height=r.height+'px';else to.width=r.width+'px';
+    var from=null;
+    if(placed&&ind.animate&&!(rm&&rm.matches)){var cs=getComputedStyle(ind);from={transform:cs.transform};if(axis==='y')from.height=cs.height;else from.width=cs.width;if(anim){anim.cancel();anim=null}}
+    ind.style.opacity='';ind.style.transform=to.transform;if(axis==='y')ind.style.height=to.height;else ind.style.width=to.width;
+    if(from){anim=ind.animate([from,to],{duration:window.kosIndMs||300,easing:'cubic-bezier(.2,.8,.2,1)'});anim.onfinish=function(){anim=null}}
+    placed=true;
+  }
+  addEventListener('resize',function(){move(true)});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){move(true)});
+  box.__ind=move;move();return move;
+};
+</script>
+</head>
+<body>
+<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>
+<nav class="nav" id="nav"><div class="nav-in">
+  <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <div class="links"><a href="/Home.html">홈</a><a href="/Reports.html" class="on">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div>
+  <div class="right" id="navRight"><a class="login" href="/Login.html">로그인</a><div class="acct" id="acct"></div>
+    <button class="ib" id="themeBtn" aria-label="테마 전환"><svg viewBox="0 0 24 24" id="themeIcon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    <button class="ib menu" id="menuBtn" aria-label="메뉴" aria-expanded="false" aria-controls="mmenu"><svg class="ham" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+</div>
+</nav>
+<div class="mmenu" id="mmenu"><div class="mm-links"><a href="/Home.html">홈</a><a href="/Reports.html" class="on">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div><div class="sep"></div><div class="mm-auth" id="mauth"><a href="/Login.html">로그인</a><a href="/Signup.html">회원가입</a></div>
+<div class="mm-foot"><a href="/About.html">회사 소개</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보 처리방침</a></div></div>
+<main class="wrap" id="page" data-tk="179720" data-pre="5fde24a1" data-pre-tier="v1" data-pre-known="1"><header class="hero"><div><div class="eyebrow"><b>코넥스</b><span>금융</span><span>179720</span></div><h1 class="name">머니무브</h1><div class="price"><span class="p">7,000원</span><span class="c up">▲ 6.06%</span><span class="d">2026-10-02 장마감</span></div><div class="actions"><button type="button" class="btn btn-ink ico" id="watchBtn" aria-pressed="false"><svg class="wb-add" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><svg class="wb-on" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span id="watchTxt">관심종목 추가</span></button></div></div></header><section class="stats" aria-label="핵심 지표"><div class="st"><div class="st-k">시가총액</div><div class="st-v">193억원</div></div><div class="st"><div class="st-k">거래대금</div><div class="st-v">422,500원</div></div><div class="st"><div class="st-k">거래량</div><div class="st-v">66주</div></div><div class="st"><div class="st-k">상장주식수</div><div class="st-v">275만주</div></div><div class="st"><div class="st-k">PER</div><div class="st-v">—</div></div><div class="st"><div class="st-k">PBR</div><div class="st-v">—</div></div><div class="st"><div class="st-k">EPS</div><div class="st-v">—</div></div><div class="st"><div class="st-k">배당수익률</div><div class="st-v">—</div></div></section><p class="stats-note">PER·PBR·배당수익률은 최근 확정 실적(EPS·BPS·주당배당금)과 현재 주가로 산출 · 시세 2026-10-02 장마감</p><div class="body"><aside class="toc" id="toc"><a href="#s01"><span class="n">01</span>리포트 개요</a><a href="#s02"><span class="n">02</span>사업 구조</a><a href="#s03"><span class="n">03</span>최근 동향</a><a href="#s04"><span class="n">04</span>전망</a><a href="#s05"><span class="n">05</span>강세 요인</a><a href="#s06"><span class="n">06</span>약세 요인</a><a href="#s07"><span class="n">07</span>리스크 요인</a><a href="#s08"><span class="n">08</span>종합 의견</a><a href="#s09"><span class="n">09</span>참고 출처</a></aside><div class="content"><div class="chips-mark" id="chipsMark"></div><div class="chips-bar" id="chipsBar"><nav class="chips" id="chips"><a href="#s01">01 리포트 개요</a><a href="#s02">02 사업 구조</a><a href="#s03">03 최근 동향</a><a href="#s04">04 전망</a><a href="#s05">05 강세 요인</a><a href="#s06">06 약세 요인</a><a href="#s07">07 리스크 요인</a><a href="#s08">08 종합 의견</a><a href="#s09">09 참고 출처</a></nav></div><section class="sec" id="s01"><div class="sec-h sec-h-quiet"><span class="num">01</span><h2>리포트 개요</h2></div><div class="abstract"><h3 class="ab-title">AI 신용평가 온투업, 유동성이 발목</h3><p class="ab-lead">머니무브는 AI 머신러닝 대안신용평가 기술을 앞세워 중신용자 개인대출 시장을 공략하는 온투업 전문 핀테크 기업이나, 사실상 제로에 가까운 거래대금이 투자 접근성을 구조적으로 제한한다.</p><ol class="kp"><li><span class="n">1</span><p>온투법 등록 온투업 사업자로서, 금융감독 체계 내에서 중금리(최저 6.5%~최고 16.99%, 2025년 2월 기준) 개인신용대출 및 대환대출 서비스를 운영 중이다.</p></li><li><span class="n">2</span><p>287개 CB 데이터와 비금융 상환여력 정보를 머신러닝으로 처리하는 AI 신용평가 시스템이 핵심 기술 차별화 요소로, 2025년 12월 NICE평가정보 기술분석보고서(IT 부문)를 통해 외부 공인을 받았다.</p></li><li><span class="n">3</span><p>대출 한도 최소 300만원~최대 5,000만원, 주요 타깃은 연소득 2,500만원 이상·재직 3개월 이상 근로자 중 중신용자 계층이다.</p></li><li><span class="n">4</span><p>2026년 6월 7일 기준 거래대금 0원, 52주 주가 범위는 약 7,000원~15,000원 수준(investing.com 2025년 9월 기준)이며, 현재가 8,600원은 이 범위의 하단 근처다.</p></li><li><span class="n">5</span><p>금융위원회의 2024년 1월 온투업 규제개선 방안(비교·추천 서비스 허용, 예약거래 가이드라인 제시, 주선 수수료 수취 허용 등)은 온투업 성장 지원 정책 환경을 조성하고 있다.</p></li></ol></div></section><section class="sec" id="s02"><div class="sec-h"><span class="num">02</span><h2>사업 구조</h2></div><div class="prose"><p>머니무브는 온라인투자연계금융업(온투업) 전문 핀테크 기업으로, 모바일 앱(moneymove.ai)을 통해 개인신용대출과 대환대출 서비스를 제공한다.</p><p>주요 타깃 고객층은 저축은행·캐피탈·카드론 등 2금융권을 이용하는 중신용자로, 연소득 2,500만원 이상·재직 3개월 이상의 근로자가 대상이다(연소득 2,000만~2,500만원 구간은 재직 1년 이상 요건 적용).</p><p>대출 한도는 최소 300만원에서 최대 5,000만원이며, 금리는 2025년 2월 기준 최저 6.5%~최고 16.99%로 은행 대출과 대부업 사이의 중금리 시장을 담당한다.</p><p>핵심 기술 경쟁력은 287개의 CB(신용평가기관) 데이터와 비금융 상환여력 정보를 머신러닝 알고리즘으로 처리하는 AI 신용평가 시스템으로, 기존 금융권의 획일적 신용평가와 차별화된 대안신용평가를 통해 금융 소외 중신용자를 공략한다.</p><p>상환 방식은 만기 일시상환과 원리금 균등분할상환으로 나뉘어 차입자의 선택권을 제공한다. 수익 구조는 차입자로부터 수취하는 이자수익과 중개·주선 수수료를 근간으로 하며, 연계투자자에게는 수익을 배분하는 온투법상의 연계투자 구조를 운영한다.</p><p>2025년 12월 NICE평가정보가 IT 부문 기술분석보고서를 발간한 사실은 금융 서비스 기업을 넘어선 기술 기업으로서의 정체성을 방증한다.</p><p>온투업 경쟁 환경은 렌딧·피플펀드·8퍼센트 등 기존 P2P 금융사 외에도 인터넷전문은행과 핀테크 플랫폼의 중신용자 대출 시장 진입이 가속되고 있어 차별화 압력이 점차 높아지고 있다.</p><p>코넥스 상장 특성상 자금조달 접근성은 코스닥·코스피 대비 제한적이며, 향후 코스닥 이전상장 여부가 중요한 중기 성장 이벤트가 될 수 있다.</p></div></section><section class="sec" id="s03"><div class="sec-h"><span class="num">03</span><h2>최근 동향</h2></div><div class="prose"><p>2026년 6월 7일 기준 머니무브의 주가는 8,600원으로 전일 대비 등락이 없으며, 거래대금은 0원을 기록해 시장에서의 실질적인 거래가 중단된 상태다. 코넥스 시장의 구조적 저유동성을 감안하더라도 연속적인 거래량 0은 시장 참여자의 관심이 사실상 없음을 나타낸다.</p><p>investing.com의 2025년 9월 기준 데이터에 따르면 당시 52주 주가 범위는 7,000원~15,000원으로, 현재가 8,600원은 이 범위의 하단에 근접해 있다. 시가총액은 집계상 0.0조원으로 표시될 만큼 초소형이며, 코넥스 내에서도 거래 비활성 종목으로 분류된다.</p><p>DART 공시를 통한 최신 확정 재무수치(매출·영업이익·대출잔액·연체율 등)는 본 조사에서 직접 확인되지 않았으나, 앱 컴플라이언스 모니터링 심사 완료 기록(No.07_2504_03, 2025.04.11~2026.04.10)이 확인되어 영업이 지속 중임을 알 수 있다.</p><p>2025년 12월 NICE평가정보의 기술분석보고서 발간은 외부 신용평가 전문기관의 관심이 유지되고 있음을 시사한다.</p><p>국내 온투업 시장은 2022년 기준 업계 누적 대출 6조원 돌파가 전망될 정도로 성장세를 보였으나, 이후 금리 상승 국면에서 연체율 관리 강화 및 투자자 유치 환경 악화가 업권 전반의 과제로 부상했다.</p><p>금융위원회는 2020년 8월부터 온투법령을 본격 시행한 이래 중·저신용자 대상 대안신용평가 모형의 활용과 틈새시장 발굴이 가능한 사업자를 지속 지원하고 있다. 확인되지 않은 개별 재무 수치의 추정은 지양하며, 투자 판단에는 DART 공시 원문의 직접 확인이 필요하다.</p></div></section><section class="sec" id="s04"><div class="sec-h"><span class="num">04</span><h2>전망</h2></div><div class="prose"><p>금융위원회의 2024년 1월 온투업 규제개선 방안은 연계투자상품 비교·추천 서비스 허용, 예약거래 가이드라인 제시, 주선 수수료 수취 허용 등 온투업 사업자의 수익 다변화와 투자자 접근성 개선에 직접 기여하는 내용으로, 머니무브와 같은 등록 사업자에게 중기 성장 기회를 제공할 수 있다.</p><p>AI 신용평가 시스템의 지속적 고도화가 이어질 경우, 기존 금융권이 흡수하지 못하는 중신용자 대출 수요를 보다 정밀하게 흡수해 대출 잔액 성장으로 연결될 가능성이 있다.</p><p>중장기적으로는 코스닥 이전상장이 가장 유의미한 구조적 성장 촉매로, 실현 시 공모를 통한 대출 재원 확충, 브랜드 인지도 제고, 투자자 기반 확대가 동시에 기대된다. 반면 금리 인하 사이클이 가속화될 경우 은행권 중신용자 접근성이 개선되어 플랫폼 경유 대출 수요 자체가 위축될 수 있다.</p><p>연체율 상승은 연계투자자의 수익률을 훼손하고 자금 조달 기반을 약화시키는 리스크로, 경기 둔화 국면에서 특히 유의해야 할 변수다. 온투업 업권 내 경쟁 강화와 인터넷전문은행의 중신용자 시장 잠식 또한 지속적인 차별화 과제로 남는다.</p></div></section><section class="sec" id="s05"><div class="sec-h"><span class="num">05</span><h2>강세 요인</h2></div><div class="fcs"><article class="fc bull"><h4><i class="dot"></i>AI 대안신용평가의 기술 해자</h4><p>287개 CB 데이터와 비금융 상환여력 변수를 머신러닝으로 처리하는 AI 신용평가 시스템은 기존 금융권의 획일적 평가 방식과 차별화된 경쟁 우위를 제공하며, 금융 이력이 부족한 중신용자를 보다 정교하게 심사해 승인율과 부실률을 동시에 관리하는 이중 목표를 달성할 수 있다.</p><p>2025년 12월 NICE평가정보가 IT 부문 기술분석보고서를 발간한 것은 외부 전문기관도 이 기술 역량을 공식 인정했음을 의미한다. 기술 기반이 심화될수록 유사 업권 내 후발 경쟁자의 모방 및 진입 장벽이 높아져 장기적 경쟁력의 원천이 될 수 있다.</p><p>금융위원회 역시 온투업자의 '대안신용평가모형' 활용을 적극 지원하고 있어, 머니무브의 핵심 기술이 정책 방향과 정합성을 갖는다는 점도 긍정적이다.</p></article><article class="fc bull"><h4><i class="dot"></i>온투업 규제 정상화의 수혜 구도</h4><p>2024년 1월 금융위원회의 온투업 규제개선 방안은 연계투자상품 비교·추천 서비스 허용, 예약거래 가이드라인 제시, 차입자 주선 수수료 수취 허용 등을 포함해 온투업 사업자의 사업 확대 및 수익 다변화에 직접 기여하는 내용으로 구성됐다.</p><p>온투법 프레임워크 내에서 합법적으로 운영하는 등록 사업자로서 머니무브는 규제 준수 비용을 이미 내재화해 규제 강화 시 미등록 업체 대비 상대적 우위를 유지할 수 있다. 포용금융 정책 기조 하에서 중·저신용자 대상 중금리 대출 공급이 지속 장려되는 정책 환경은 온투업 업권 전반에 긍정적이다.</p><p>국내 온투법 시행 이후 선도적으로 제도화된 중금리 대출 채널로서 머니무브는 정책 지원의 직접적 수혜 위치에 있다.</p></article><article class="fc bull"><h4><i class="dot"></i>코스닥 이전상장 잠재 촉매</h4><p>코넥스에서 코스닥으로의 이전상장은 자본시장 접근성을 획기적으로 개선해 공모를 통한 대출 재원 확충, 투자자 기반 확대, 브랜드 인지도 제고를 동시에 가능하게 한다. 코넥스 이전상장 기업은 코스닥 상장예비심사 청구 시 심사 기간이 15일에서 10일로 단축되는 제도적 인센티브도 존재한다.</p><p>이전상장이 실현될 경우 현재의 유동성 디스카운트가 해소되어 주가 재평가 가능성이 열릴 수 있다. 2025년 12월 NICE평가정보의 기술분석보고서 발간이 상장 요건 충족을 위한 준비 과정의 일환일 가능성도 배제할 수 없어, 중기적으로 이전상장 추진 시나리오를 열어두고 있다.</p></article></div></section><section class="sec" id="s06"><div class="sec-h"><span class="num">06</span><h2>약세 요인</h2></div><div class="fcs"><article class="fc bear"><h4><i class="dot"></i>사실상 제로인 시장 유동성</h4><p>2026년 6월 7일 기준 거래대금 0원은 시장에서 이 종목에 대한 실질적인 수요가 없음을 직접적으로 나타낸다. 코넥스 시장의 구조적 저유동성은 이미 알려진 사실이나, 연속적인 0원 거래는 진입과 청산 모두 사실상 불가능한 상황임을 의미한다.</p><p>유동성 부재는 공정 가격 발견을 저해하고, 어떠한 규모의 매매도 과도한 슬리피지를 수반하게 만든다. 시장 전반의 침체나 투자심리 위축 시 매도 기회 자체가 박탈될 가능성이 있어, 투자자 위험 측면에서 가장 핵심적인 구조적 제약이다.</p></article><article class="fc bear"><h4><i class="dot"></i>재무 정보 불투명성</h4><p>코넥스 상장 초소형 기업의 특성상 공시 빈도, 실적 설명회, 기관 커버리지 등이 극히 제한적이며, 외부 투자자가 대출 잔액·연체율·매출·영업이익 등 핵심 KPI를 적시에 검증하기 어렵다.</p><p>DART 공시가 사실상 유일한 정보 채널이나, 대형 상장사 대비 공시 빈도와 세부성이 낮아 정보 비대칭이 구조적으로 심화돼 있다. 증권사 애널리스트의 정기 커버리지가 부재한 상황에서 독립적인 가치 평가 자체가 높은 불확실성을 내포한다. 이 같은 정보 환경은 시장 신뢰 형성을 저해하고, 적정 주가 산정을 어렵게 하는 근본적인 제약이다.</p></article><article class="fc bear"><h4><i class="dot"></i>중금리 대출 시장 경쟁 심화</h4><p>렌딧·피플펀드 등 기존 온투업 경쟁사 외에도 카카오뱅크·토스 등 인터넷전문은행이 AI 신용평가를 적극 활용하며 중신용자 대출 시장 점유율을 확대하고 있어, 머니무브의 기술 차별화 여지가 점차 좁아지고 있다.</p><p>전통 저축은행도 디지털 채널을 강화하며 유사 타깃 고객층을 공략하고 있어 경쟁 강도가 다층적으로 심화되는 구조다. 소규모 플랫폼은 자금 조달 비용과 고객 획득 비용 모두에서 대형 플랫폼 대비 불리한 위치에 있어, 중장기 수익성 개선 경로가 도전적이다.</p><p>시장 금리 인하 국면에서는 은행권 경쟁력이 강화되어 중금리 대출 수요 자체가 위축될 수 있는 점도 유의해야 한다.</p></article></div></section><section class="sec wide" id="s07"><div class="sec-h"><span class="num">07</span><h2>리스크 요인</h2></div><div class="rks"><div class="rk"><div class="rk-c">거시·금융 리스크</div><div class="rk-b"><p>금리 인하 사이클이 가속화될 경우 은행권 대출 기준이 완화되어 중신용자의 은행 접근성이 높아지고, 머니무브의 핵심 고객 기반이 이탈할 가능성이 있다.</p><p>반대로 경기 침체 또는 고용 악화 국면에서는 차입자의 채무상환 능력이 저하되어 연체율이 상승할 수 있으며, 이는 연계투자자 수익률 훼손과 자금 조달 기반 약화로 이어진다.</p><p>개인신용 대출 시장의 연체율이 업권 전반에서 악화될 경우 온투업 전체에 대한 부정적 인식이 확산되어 투자자 이탈과 규제 강화가 동시에 발생할 수 있다.</p></div></div><div class="rk"><div class="rk-c">규제·정책 리스크</div><div class="rk-b"><p>온투법은 투자 한도, 차입자 한도, 광고 규제 등 다양한 운영 제약을 부과하고 있으며, 향후 규제 강화는 사업 규모 확대를 직접적으로 제한할 수 있다. 금융 정책 기조 변화에 따라 포용금융 지원 정책이 축소되면 업권 전반의 성장 모멘텀이 약화될 수 있다.</p><p>개인정보보호법·신용정보법 강화는 AI 신용평가 모델에 활용 가능한 데이터 범위를 제한해 핵심 기술 경쟁력에 간접적 영향을 미칠 수 있다.</p></div></div><div class="rk"><div class="rk-c">플랫폼·운영 리스크</div><div class="rk-b"><p>AI 신용평가 모델의 성능은 충분한 데이터 축적과 지속적인 모델 업데이트에 의존하며, 데이터 품질 저하나 모델 오류 발생 시 부실 대출 증가로 직결될 수 있다. 소규모 핀테크 기업으로서 IT 인프라 장애·사이버 보안 침해·내부 통제 미비 등 운영 리스크에 상대적으로 취약하다.</p><p>플랫폼 브랜드 인지도와 신뢰도의 부족은 고객 획득 비용을 높이고, 대형 경쟁사 대비 성장 속도를 구조적으로 제약한다.</p></div></div></div></section><section class="sec" id="s08"><div class="sec-h"><span class="num">08</span><h2>종합 의견</h2></div><div class="prose verdict wrapup"><p>머니무브는 AI 대안신용평가 기술을 바탕으로 중신용자 대출 시장에서 차별화된 포지셔닝을 구축하고 있으며, 온투법 등록 사업자로서 2024년 금융위원회 규제개선 방안의 직접적 수혜가 기대되는 위치에 있다.</p><p>포용금융 정책 기조와 AI 기반 대안신용평가 모델 활용 지원이라는 긍정적 정책 환경도 중기 성장 모멘텀을 뒷받침한다. 그러나 2026년 6월 기준 거래대금 0원으로 대표되는 극히 낮은 시장 유동성은 이 종목에 대한 투자 접근성을 실질적으로 차단하는 가장 큰 구조적 제약이다.</p><p>공개 재무 정보의 접근성 한계와 기관 커버리지 부재에 따른 정보 비대칭, 중금리 대출 시장 내 경쟁 심화 및 연체율 리스크도 중기 전망의 불확실성을 높인다. 코스닥 이전상장이라는 잠재적 구조적 촉매가 존재하나, 실행 시점과 가능성은 현재 공개적으로 확인된 바 없다.</p><p>이상의 요소를 종합해 본 보고서는 머니무브에 대해 중립적 관점을 유지하며, 투자 판단에 앞서 DART 공시를 통해 최신 재무제표와 사업 현황을 직접 확인할 것을 권고한다.</p></div></section><section class="sec" id="s09"><div class="sec-h"><span class="num">09</span><h2>참고 출처</h2></div><ol class="srcs"><li><a href="https://www.krx.co.kr" target="_blank" rel="noopener">한국거래소(KRX) — 시세 · 시가총액 · 거래량</a></li><li><a href="https://dart.fss.or.kr" target="_blank" rel="noopener">금융감독원 전자공시(DART) — 재무제표 · 배당 공시</a></li></ol><details class="srcmore"><summary>기사·자료 9건 더 보기</summary><ol class="srcs"><li><a href="https://moneymove.ai/" target="_blank" rel="noopener nofollow">moneymove.ai</a></li><li><a href="https://kind.krx.co.kr/external/dst/corpReport/64826120251209100539.pdf" target="_blank" rel="noopener nofollow">kind.krx.co.kr</a></li><li><a href="https://play.google.com/store/apps/details?id=kr.co.lendingmachine.moneymove&amp;hl=en_US" target="_blank" rel="noopener nofollow">play.google.com</a></li><li><a href="https://apps.apple.com/kr/app/%EB%A8%B8%EB%8B%88%EB%AC%B4%EB%B8%8C-%EB%8C%80%EC%B6%9C/id1634168008" target="_blank" rel="noopener nofollow">apps.apple.com</a></li><li><a href="https://www.fsc.go.kr/no010101/81543" target="_blank" rel="noopener nofollow">fsc.go.kr</a></li><li><a href="https://markets.hankyung.com/stock/179720" target="_blank" rel="noopener nofollow">markets.hankyung.com</a></li><li><a href="https://www.investing.com/equities/yelopay-corp" target="_blank" rel="noopener nofollow">investing.com</a></li><li><a href="https://www.gminsights.com/industry-analysis/peer-to-peer-lending-market" target="_blank" rel="noopener nofollow">gminsights.com</a></li><li><a href="https://dart.fss.or.kr/" target="_blank" rel="noopener nofollow">dart.fss.or.kr</a></li></ol></details></section><p class="rdate">리포트 작성 2026-06-08 · 데이터 기준 2026-06-05</p><p class="disc">본 콘텐츠는 AI가 시장 데이터와 웹 검색 결과를 분석한 정보 제공용이며, 투자 권유나 추천이 아닙니다. 투자 판단과 그 책임은 투자자 본인에게 있습니다. 데이터는 지연되거나 오류가 포함될 수 있습니다.</p></div></div></main>
+<footer class="foot"><div class="wrap">
+  <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <div class="fgrid">
+    <div class="fcol"><h4>서비스</h4><a href="/Home.html">홈</a><a href="/Reports.html">리포트</a><a href="/industry.html">업종 분석</a><a href="/Watchlist.html">관심종목</a><a href="/brief.html">모닝브리핑</a></div>
+    <div class="fcol"><h4>회사</h4><a href="/About.html">회사 소개</a><a href="/Contact.html">문의하기</a><a href="/Feedback.html">피드백</a></div>
+    <div class="fcol"><h4>정책</h4><a href="/Terms.html">이용약관</a><a href="/Privacy.html">개인정보 처리방침</a></div>
+  </div>
+  <div class="biz"><span>상호 코사이</span><span>대표 임범준</span><span>사업자등록번호 380-25-02019</span><span>주소 서울시 양천구 목동동로12길 50, 동성빌딩 4층 459호</span><span>이메일 hello@kosai.kr</span></div>
+  <div class="copy">© 2026 KOSAI</div>
+</div></footer>
+<script src="/data/stocks.js"></script>
+<script src="/data/valuation.js"></script>
+<script src="/stock/assets/stock.js?v=adcd5531"></script>
+<script src="/stock/assets/i18n-dict.js?v=0d6a1c32"></script>
+<script type="module" src="/auth-guard.js?v=9abd3186"></script>
+<script type="module" src="/watchlist.js?v=1e5f550a"></script>
+<script type="module" src="/auth-state.js?v=82a9b999"></script>
+<script src="/lenis.js?v=3a0cb7e8"></script>
+<script src="/smooth-scroll.js?v=bd8a60e4"></script>
+</body>
+</html>

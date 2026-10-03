@@ -17,9 +17,15 @@ locs = [u[0].text for u in tree]
 check(len([l for l in locs if "stock.html?ticker" in l]) == 0,
       "사이트맵에 stock.html?ticker= 없음")
 check("https://kosai.kr/" in locs, "사이트맵에 루트(/) 있음")
-check(len([l for l in locs if re.search(r"/r/[0-9A-Z]{6}\.html$", l)]) > 2000,
-      "사이트맵에 종목 리포트(r/) 있음",
-      f"{len([l for l in locs if re.search(r'/r/[0-9A-Z]{6}.html$', l)])}개")
+# 종목 리포트는 2026-10-03 부터 종목마다 미리 만든 페이지(stock/{종목코드}.html)다. 옛 로봇용 사본(r/)은 새 주소로 보내는
+# 껍데기가 됐고(scripts/retire_r_pages.py), 옛 화면(stock.html)도 넘기는 껍데기라 둘 다 올리지 않는다.
+check(len([l for l in locs if re.search(r"/stock/[0-9A-Z]{6}\.html$", l)]) > 2000,
+      "사이트맵에 종목 페이지(stock/) 있음",
+      f"{len([l for l in locs if re.search(r'/stock/[0-9A-Z]{6}.html$', l)])}개")
+check(not [l for l in locs if "/r/" in l or l.endswith("/stock.html")],
+      "사이트맵에 옛 주소(r/ · stock.html) 없음")
+_missing = [l for l in locs if re.search(r"/stock/[0-9A-Z]{6}\.html$", l) and not (ROOT / l.split("kosai.kr/", 1)[1]).exists()]
+check(not _missing, "사이트맵의 종목 페이지가 모두 있음", ", ".join(_missing[:5]))
 check(len(locs) == len(set(locs)), "사이트맵에 중복 URL 없음")
 
 # 2) 브랜드 로고가 루트를 가리킴

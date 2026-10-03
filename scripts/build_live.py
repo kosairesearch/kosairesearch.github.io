@@ -2,7 +2,7 @@
 """실사이트(kosai.kr 루트)를 새 디자인으로 낸다 — 2026-10-03 사장 "우리가 새로 디자인한 페이지들 … 실사이트로 옮겨줘.
 근데 실사이트에는 멤버십 페이지가 없잖아. 그런 거 잘 고려해서 옮겨줘".
 
-    python3 scripts/build_live.py            # 루트 페이지 · 모듈 둘(i18n.js · auth-state.js) · 첫 화면 그림을 다시 만들고 ?v= 를 찍는다
+    python3 scripts/build_live.py            # 루트 페이지 · 모듈 둘(i18n.js · auth-state.js) · 첫 화면 그림 · 종목 페이지(stock/)를 다시 만들고 ?v= 를 찍는다
     python3 scripts/build_live.py --check    # 만든 결과가 저장소와 같은지 · 멤버십 흔적이 없는지만 본다 (check_all.sh)
 
 스테이징(build_staging.py)과 같은 생성기가 comp_common.set_mode('live') 로 돈다. 다른 점은 comp_common 의 live 모드가 맡는다 —
@@ -114,6 +114,9 @@ def audit(dir_: Path):
         for w in FORBIDDEN:
             if w in h:
                 bad.append(f'{name}: "{w}"')
+        # 종목 링크는 종목마다 만든 페이지(/stock/005930.html)로 — 옛 주소는 껍데기(stock.html) 자신만 안다(comp_common.live_stock_links)
+        if name != 'stock.html' and 'stock.html?ticker=' in h:
+            bad.append(f'{name}: 옛 종목 주소(stock.html?ticker=)가 남았다 — /stock/종목코드.html 로 가야 한다')
         # 공통 사전(comp_common.i18n_block) 블록만 — 모닝브리핑 본문 사전(기사 문장)은 화면에 보이는 글이라 보지 않는다
         for m in re.finditer(r'<script type="application/json" data-kos-i18n>(.*?)</script>', h, re.S):
             if not h.startswith('\n<script>window.KOSi18n&&KOSi18n.load()</script>', m.end()):
@@ -196,6 +199,8 @@ def main():
     subprocess.run([sys.executable, str(ROOT / 'scripts/stamp_assets.py')], check=True)   # 새 모듈 안의 import 에 ?v= — 페이지 도장의 바탕
     build_pages(ROOT)
     subprocess.run([sys.executable, str(ROOT / 'scripts/stamp_assets.py')], check=True)   # 모듈이 바뀌어 도장이 달라진 페이지(관리자 화면 등)까지
+    import build_stock_static   # 종목마다 미리 만든 페이지(stock/) — 머리 · 꼬리 · 모듈 도장이 위 페이지들과 같아야 한다
+    build_stock_static.build()
     bad = audit(ROOT)
     if bad:
         print('❌ 실사이트 점검:\n   ' + '\n   '.join(bad))

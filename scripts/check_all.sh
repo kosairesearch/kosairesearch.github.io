@@ -53,6 +53,11 @@ run "스테이징 생성기" python3 scripts/build_staging.py --check
 # 실사이트(루트)도 2026-10-03 부터 같은 생성기의 결과다(live 모드 · 멤버십 없음). 손으로 고친 페이지가 생성기와 어긋나거나,
 # 멤버십 · 스테이징 흔적(pricing · paywall · STAGING 띠 · 시안 주소)이 실사이트에 실리면 여기서 막는다.
 run "실사이트 생성기" python3 scripts/build_live.py --check
+# 종목 페이지(stock/{종목코드}.html)도 2026-10-03 부터 같은 생성기의 결과다 — 종목마다 미리 만든다. 머리 · 꼬리 · 모듈 도장 ·
+# 공용 파일이 생성기와 어긋나면 막는다(종목이 늘거나 준 직후의 몇 장은 자동 작업이 맞출 때까지 알리기만 한다).
+run "종목 페이지"   python3 scripts/build_stock_static.py --check
+# 옛 로봇용 사본(r/)은 새 주소로 보내는 껍데기다. 옛 생성기를 되살리거나 손으로 고치면 여기서 걸린다(r/ 를 지우는 날 이 줄도 뺀다).
+run "옛 주소 r/"    python3 scripts/retire_r_pages.py --check
 run "헤더(실사이트)" python3 scripts/patch_header.py . --check
 # 푸터의 면책 상자는 2026-09-24 에 뺐다(무료라 법정 의무 없음 · 리포트 본문 한 줄과 약관 제15조만 남김).
 # 옛 페이지를 복사해 오면 되살아나므로 여기서 잡는다. 유료화 때는 scripts/strip_footer_disclaimer.py 머리말 참고.

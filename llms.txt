@@ -1,24 +1,30 @@
-# KOSAI — Korean Stocks in English
+# KOSAI — AI research reports on Korean stocks
 
-> AI-generated English research reports on ~2,700 Korean listed companies (KOSPI, KOSDAQ
-> and KONEX), updated daily from public disclosures (DART) and market data (KRX).
+> AI-generated research reports on ~2,700 Korean listed companies (KOSPI, KOSDAQ
+> and KONEX), written in Korean and English and updated daily from public
+> disclosures (DART) and market data (KRX).
 > All numeric metrics are computed from primary sources, never model-generated.
 > Free to read. Informational only — not investment advice.
 
 ## Reports (static, crawler-friendly)
 
-- [All companies index](https://kosai.kr/r/): links to every report
-- Per-company report: https://kosai.kr/r/{6-digit-ticker}.html
-  (e.g. https://kosai.kr/r/005930.html for Samsung Electronics)
-- Each report: summary, key points, business, earnings, industry, outlook,
-  valuation, bull/bear cases, risk factors, watch points, and daily-updated
-  metrics (price, market cap, P/E, P/B, ROE, dividend yield).
+- Per-company report: https://kosai.kr/stock/{6-character-code}.html
+  (e.g. https://kosai.kr/stock/005930.html for Samsung Electronics; newer codes
+  can contain a letter, e.g. https://kosai.kr/stock/0220W0.html)
+- [Sitemap](https://kosai.kr/sitemap.xml): lists every company page
+- Each page has the full report in its HTML: summary, key points, business,
+  earnings, industry, outlook, valuation, bull/bear cases, risk factors, watch
+  points, sources, and daily-updated metrics (price, market cap, P/E, P/B,
+  EPS, dividend yield). Pages are served in Korean; the English version of the
+  same report is shown when the site language is set to English.
+- Old addresses (https://kosai.kr/r/{code}.html and
+  https://kosai.kr/stock.html?ticker={code}) redirect to the pages above.
 
 ## Site
 
 - [Home](https://kosai.kr/): market overview
-- [Interactive reports](https://kosai.kr/Reports.html): human-facing version
-- [Sitemap](https://kosai.kr/sitemap.xml)
+- [Report list](https://kosai.kr/Reports.html)
+- [Morning brief](https://kosai.kr/brief.html): pre-market summary on trading days
 
 ## Attribution
 

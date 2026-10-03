@@ -1274,7 +1274,9 @@ def page():
                 f'<link rel="icon" href="{ASSETS}/favicon.png?v=k2"><link rel="stylesheet" href="{FONTS}/pretendard-subset.css">'
                 f'<style>\n{CSS.strip()}\n{LIVE_CSS.strip()}\n</style>{theme}</head><body>')
         return (head + nav() + main + foot() + rv_js + cyc_js + dawn_js + orb_js + js
-                + "<script>" + SEARCH_JS.replace("'../data/stocks.js'", "'/data/stocks.js'") + "</script>\n</body></html>")
+                # 종목 링크는 맨 위부터 쓴 옛 모양으로 두면 comp_common.finish 가 종목마다 만든 페이지(/stock/005930.html)로 바꾼다
+                + "<script>" + SEARCH_JS.replace("'../data/stocks.js'", "'/data/stocks.js'").replace("'stock.html?ticker='", "'/stock.html?ticker='")
+                .replace('href="stock.html?ticker=', 'href="/stock.html?ticker=') + "</script>\n</body></html>")
     if stg:
         # 스테이징 — 다른 스테이징 페이지와 같은 머리 스크립트(모의 결제 · 통계 끔) · 전화번호 자동인식 끔 · 아이콘. 옷은 한 장에 담는다(생성기 비교가
         # html 만 보므로). 설명 · 공유 메타는 두지 않는다(noindex). STAGING 띠는 머리 위, 로그인 상태 · 휠 스크롤 모듈은 comp_common.finish 가 붙인다

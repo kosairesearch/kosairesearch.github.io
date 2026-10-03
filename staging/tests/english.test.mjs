@@ -172,7 +172,9 @@ const SCENES = [
   ["첫 화면(랜딩)", "/", { act: seq(scrollAll, typeIn("#q, input[type=search], .search input", "sam")) }],
   ["첫 화면 — 휴대폰 메뉴", "/", { act: openMenu }],
   ["홈", "/Home.html", { act: typeIn("input[type=search], .search input, #q", "sam") }],
-  ["홈 — 로그인", "/Home.html", { signedIn: true, act: clickAll("#acct button, .acct button, .acct-btn") }],
+  /* 계정 메뉴를 연 화면 — 메뉴를 여는 단추(#acctBtn)만 누른다. 메뉴 안의 단추를 다 누르면 '로그아웃'까지 눌려 페이지가 새로
+     열리고, 컴퓨터가 바쁠 때는 덜 그려진 새 페이지를 검사해 걸렸다(2026-10-03). 메뉴를 연 채로 보는 것이 이 장면의 뜻이다. */
+  ["홈 — 로그인", "/Home.html", { signedIn: true, act: clickAll("#acctBtn, .acct-btn") }],
   ["리포트 목록", "/Reports.html", { act: clickAll(".flt button, .filters button, [data-sort], .sort button") }],
   ["리포트 목록 — 검색 결과 없음", "/Reports.html", { act: typeIn("input[type=search], .search input, #q", "zzzzzz") }],
   ["업종 분석", "/industry.html", {}],
