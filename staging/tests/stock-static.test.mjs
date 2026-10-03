@@ -20,8 +20,9 @@
         차지해 검색 유입이 '내부'로 잡히던 것 · 독립 검토 2026-10-03). r/ 은 유입 꼬리표(utm)도 실어 간다
      ⑧ 자료(리포트 파일 · 시세)를 못 받아도 미리 그린 글 · 제목 · 대표 주소가 그대로다('준비 중' · '찾을 수 없습니다'로 덮지 않는다)
      ⑨ 영어 페이지(/en/stock/ · 옛 r/ 의 영어 본문을 대신한다) — 자바스크립트 없이 머리 · 본문 · 꼬리가 영어, 한국어 페이지와
-        서로를 hreflang 으로 가리킨다. 저장된 말과 관계없이 영어로 보이고(말을 정하지 않은 방문자는 영어로 저장된다) 본문을 다시
-        넣지 않는다. 화면이 새로 그려도 미리 그린 글과 같고, 번역 엔진을 못 받아도 영어 글이 남는다. 한국어로 바꾸면 한국어 페이지로 간다
+        서로를 hreflang 으로 가리킨다. 저장된 말과 관계없이 영어로 보이고 저장된 말은 바꾸지 않는다(한 번 열었다고 사이트 전체가
+        영어로 굳지 않게 — 다른 페이지는 한국어 그대로). 자료를 기다리는 동안에도 가리지 않고, 본문을 다시 넣지 않는다. 화면이 새로
+        그려도 미리 그린 글과 같고, 번역 엔진을 못 받아도 영어 글이 남는다. 한국어로 바꾸면 한국어 페이지로 간다
 
    실행
      node staging/tests/stock-static.test.mjs
@@ -318,7 +319,7 @@ const enState = (page) => page.evaluate(() => ({ swaps: window.__swaps, lang: do
   vis: getComputedStyle(document.getElementById("page")).visibility + "/" + getComputedStyle(document.body).visibility,
   han: (document.body.innerText.match(/[가-힣]+/g) || []).slice(0, 6), stored: localStorage.getItem("kos-lang"),
   watch: (document.getElementById("watchTxt") || {}).textContent || "" }));
-for (const [label, stored, want] of [["말을 정하지 않은 방문자", null, "en"], ["한국어를 고른 방문자", "ko", "ko"], ["영어를 고른 방문자", "en", "en"]]) {
+for (const [label, stored, want] of [["말을 정하지 않은 방문자", null, null], ["한국어를 고른 방문자", "ko", "ko"], ["영어를 고른 방문자", "en", "en"]]) {
   for (const tk of ["005930", "0220W0"]) {
     const ctx = await ctxOf();
     if (stored) await ctx.addInitScript((v) => { try { localStorage.setItem("kos-lang", v); } catch (e) {} }, stored);
@@ -334,10 +335,32 @@ for (const [label, stored, want] of [["말을 정하지 않은 방문자", null,
     ok(r.swaps === 0 && r.pre === null, `${label} · ${tk} — 본문을 다시 넣지 않았다(미리 번역한 글 그대로)`, `${r.swaps}번`);
     ok(r.canon === `https://kosai.kr/en/stock/${tk}.html`, `${label} · ${tk} — 자료를 받은 뒤에도 대표 주소가 영어 주소`, r.canon);
     ok(r.vis === "visible/visible" && r.watch === "Add to Watchlist", `${label} · ${tk} — 가리지 않고 · 단추도 영어`, `${r.vis} · ${r.watch}`);
-    ok(r.stored === want, `${label} · ${tk} — 저장된 말 ${want}`, String(r.stored));
+    ok(r.stored === want, `${label} · ${tk} — 저장된 말을 바꾸지 않는다(${want})`, String(r.stored));
     ok(errors.length === 0, `${label} · ${tk} — 페이지 오류 없음`, errors.slice(0, 2).join(" | "));
+    if (stored !== "en" && tk === "005930") {   // 영어 페이지를 연 뒤 다른 페이지 — 그 사람이 고른 말(정하지 않았으면 한국어) 그대로
+      await page.goto(`${BASE}/Reports.html`);
+      await page.waitForTimeout(500);
+      const after = await page.evaluate(() => [document.documentElement.lang, localStorage.getItem("kos-lang")]);
+      ok(after[0] === "ko" && after[1] === stored, `${label} — 영어 페이지를 연 뒤 다른 페이지는 한국어 그대로`, after.join(" · "));
+    }
     await ctx.close();
   }
+}
+{
+  // 자료(리포트 파일)를 기다리는 동안에도 미리 번역한 본문이 보인다 — 한국어 페이지를 영어로 볼 때의 가림이 영어 페이지에 걸리면 안 된다
+  const ctx = await ctxOf();
+  let release;
+  const hold = new Promise((r) => { release = r; });
+  await ctx.route(/\/data\/reports(_v2)?\/005930\.json/, async (route) => { await hold; route.continue(); });
+  const page = await ctx.newPage();
+  await page.goto(`${BASE}/en/stock/005930.html`, { waitUntil: "domcontentloaded" });
+  await page.waitForTimeout(800);
+  const v = await page.evaluate(() => [getComputedStyle(document.getElementById("page")).visibility, getComputedStyle(document.body).visibility,
+    document.getElementById("page").hasAttribute("data-pre"), document.querySelectorAll("#page section.sec").length]);
+  ok(v[0] === "visible" && v[1] === "visible" && v[2] === true && v[3] === 13, "자료를 기다리는 동안에도 영어 본문이 보인다(가리지 않는다)", v.join(" · "));
+  release();
+  await loaded(page);
+  await ctx.close();
 }
 /* 미리 번역한 글과 화면이 새로 그린 글이 같은가 — 지문을 틀리게 바꿔 페이지 스크립트가 영어로 새로 그리고 번역 엔진이 라벨을 바꾸게 한 뒤 견준다.
    다르면 자료가 바뀐 날(새로 그리는 날) 화면의 글이 한 번 바뀐다 */

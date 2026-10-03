@@ -45,10 +45,9 @@
   } catch (e) {}
   /* 말이 정해진 페이지 — 영어 종목 페이지(/en/stock/{종목코드}.html · scripts/build_stock_static.py)는 이 파일보다 먼저
      window.KOS_PAGE_LANG='en' 을 단다. 그 페이지는 저장된 말과 관계없이 그 말로 보인다 — 글이 이미 그 말로 미리 그려져 있고,
-     검색 · 인공지능 수집 로봇이 읽는 것도 그 글이다. 저장된 말이 없으면 그 말을 저장한다(영어 검색 결과로 들어온 사람이 다른
-     페이지로 옮겨도 영어로 보이게). 한국어를 이미 고른 사람의 설정은 바꾸지 않는다 — 그 페이지만 영어다. */
+     검색 · 인공지능 수집 로봇이 읽는 것도 그 글이다. 저장된 말은 바꾸지 않는다 — 그 페이지만 그 말이다. 저장하면 영어 링크를
+     한 번 연 방문자의 사이트 전체가 영어로 굳는데, 로그인 전에는 말을 바꾸는 자리(설정)가 보이지 않아 되돌릴 수 없다(독립 검토 2026-10-03). */
   var PAGE_LANG = window.KOS_PAGE_LANG === 'en' || window.KOS_PAGE_LANG === 'ko' ? window.KOS_PAGE_LANG : null;
-  if (PAGE_LANG) { try { if (localStorage.getItem(KEY) == null) localStorage.setItem(KEY, PAGE_LANG); } catch (e) {} }
   var lang = PAGE_LANG || getLang();
   var mo = null, started = false;
 

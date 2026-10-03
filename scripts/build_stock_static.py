@@ -31,7 +31,8 @@
   · 페이지 스크립트를 영어 화면으로 돌리고(prerender_stock.mjs · lang en), 남은 한국어 라벨은 브라우저와 같은 번역 엔진(i18n.js)이
     사전으로 바꾼다 — 머리 · 꼬리도 같다. 그래서 자바스크립트 없이도 영어다(<html lang="en"> · 영어 제목 · 설명 · 구조화 데이터).
   · 두 페이지는 서로를 hreflang 으로 가리킨다(x-default 는 한국어). 영어 페이지는 머리에서 KOS_PAGE_LANG='en' 을 달아,
-    저장된 말과 관계없이 영어로 보인다(staging/i18n.js). 한국어 페이지를 영어로 정한 사람은 지금처럼 화면이 영어로 그린다.
+    저장된 말과 관계없이 영어로 보인다(staging/i18n.js · 저장된 말은 바꾸지 않는다). 한국어 페이지를 영어로 정한 사람은 지금처럼
+    화면이 영어로 그린다.
   · 지문(data-pre)은 번역 전의 글로 잰다 — 브라우저의 페이지 스크립트가 영어 화면에서 그린 글과 견주어 같으면 그대로 둔다.
 
 옛 주소
@@ -273,18 +274,24 @@ def build(only=None):
     sh_left = [hangul_left(x, ())[0] for x in shell]
     if any(sh_left):
         raise SystemExit(f'❌ 영어 머리 · 꼬리에 번역되지 않은 한국어가 남았다(머리 {sh_left[0]} · 꼬리 {sh_left[1]}자) — scripts/i18n/*.json 을 볼 것')
-    tiers, made, wrote, failed, han = {}, set(), 0, [], []
+    tiers, made, made_en, wrote, failed, han = {}, set(), set(), 0, [], []
     for rk, re_ in zip(g_ko, g_en):
         tk = rk['tk']
         if re_['tk'] != tk:
             raise SystemExit(f'❌ 한국어 · 영어 종목 순서가 어긋났다({tk} · {re_["tk"]})')
-        if rk.get('error') or re_.get('error'):   # 그 종목만 그리다 멈췄다(깨진 리포트 파일 등) — 옛 페이지를 그대로 두고 끝에 실패로 알린다
-            failed.append((tk, rk.get('error') or ('영어: ' + re_['error'])))
-            continue
-        made.add(tk)
-        tiers[rk['tier']] = tiers.get(rk['tier'], 0) + 1
         on = tk in market
-        wrote += write_if_changed(OUT / f'{tk}.html', page_html(rk, ver, on))
+        # 그리다 멈춘 쪽(깨진 리포트 파일 · 번역 오류 등)만 옛 페이지를 그대로 두고 끝에 실패로 알린다. 다른 쪽은 쓴다 — 영어만 멈췄는데
+        # 한국어까지 쓰지 않으면 새 상장 종목은 한국어 페이지가 없어 홈 검색 · 업종 표의 링크가 빈 주소가 된다(독립 검토 2026-10-03)
+        if rk.get('error'):
+            failed.append((tk, rk['error']))
+        else:
+            made.add(tk)
+            tiers[rk['tier']] = tiers.get(rk['tier'], 0) + 1
+            wrote += write_if_changed(OUT / f'{tk}.html', page_html(rk, ver, on))
+        if re_.get('error'):
+            failed.append((tk, '영어: ' + re_['error']))
+            continue
+        made_en.add(tk)
         wrote += write_if_changed(OUT_EN / f'{tk}.html', page_html(re_, ver, on, 'en', shell))
         if re_.get('han'):   # 영어판이 없는 리포트 칸 · 영문명이 없는 종목명 — 종목명은 빼고 센다
             st = D['stocks'].get(tk)
@@ -297,13 +304,14 @@ def build(only=None):
             raise SystemExit('❌ 한국어 · 영어 종목 수가 다르다')
     gone = 0
     if not only:
-        for out in (OUT, OUT_EN):
-            for tk in sorted({p.stem for p in out.glob('*.html') if TICKER.match(p.stem)} - made - {t for t, _ in failed}):
+        bad_tk = {t for t, _ in failed}
+        for out, mk in ((OUT, made), (OUT_EN, made_en)):
+            for tk in sorted({p.stem for p in out.glob('*.html') if TICKER.match(p.stem)} - mk - bad_tk):
                 (out / f'{tk}.html').unlink()
                 gone += 1
     changed += write_if_changed(OUT / 'assets' / 'pages.js', pages_js(on_disk()))
-    print(f'✅ stock/ · en/stock/ 각 {len(made):,}장 (전체 {tiers.get("v2", 0):,} · 옛 형식 {tiers.get("v1", 0):,} · 준비 중 {tiers.get("none", 0):,} · '
-          f'시세 없음 {len(made - market):,}) · 새로 쓴 페이지 {wrote:,} · 지운 페이지 {gone} · 공용 파일 갱신 {changed}')
+    print(f'✅ stock/ {len(made):,}장 · en/stock/ {len(made_en):,}장 (전체 {tiers.get("v2", 0):,} · 옛 형식 {tiers.get("v1", 0):,} · '
+          f'준비 중 {tiers.get("none", 0):,} · 시세 없음 {len(made - market):,}) · 새로 쓴 페이지 {wrote:,} · 지운 페이지 {gone} · 공용 파일 갱신 {changed}')
     if han:   # 영어판이 빈 칸이 조금 있는 것은 자료 사정(옛 형식 리포트 2편의 종합 의견 등) — 많으면 사전이 빠진 것이다
         print(f'  ⚠ 영어 페이지 {len(han)}장에 영어판이 없는 글이 남았다(한국어로 보인다): '
               + ' · '.join(f'{t} {n}자 "{smp[:24]}"' for t, n, smp in han[:5]))
@@ -313,7 +321,7 @@ def build(only=None):
     if failed:
         raise SystemExit(f'❌ 그리다 멈춘 종목 {len(failed)}개 — 옛 페이지를 그대로 두었다(리포트 파일을 확인할 것):\n   '
                          + '\n   '.join(f'{t}: {e[:200]}' for t, e in failed[:10]))
-    if len(han) > max(20, len(made) // 50):
+    if len(han) > max(20, len(made_en) // 50):
         raise SystemExit(f'❌ 영어 페이지 {len(han)}장에 한국어가 남았다 — 번역 사전(scripts/i18n/*.json)이 빠졌을 수 있다')
 
 
@@ -399,7 +407,8 @@ def check():
         msg = (f'페이지가 없는 종목 {len(missing)}개({", ".join(missing[:5])}) · 종목이 없어진 페이지 {len(extra)}장({", ".join(extra[:5])}) · '
                f'영어 페이지가 없는 종목 {len(missing_en)}개({", ".join(missing_en[:5])}) · 종목이 없어진 영어 페이지 {len(extra_en)}장 · '
                f'색인 여부가 시세 자료와 다른 페이지 {len(drift)}장({", ".join(drift[:5])})')
-        n = len(missing) + len(extra) + len(drift) + len(missing_en) + len(extra_en)
+        # 종목 수로 센다 — 한 종목의 한국어 · 영어 페이지가 함께 어긋나도 한 종목이다(두 번 세면 허용치가 절반이 된다 · 독립 검토)
+        n = len(set(missing) | set(extra) | set(missing_en) | set(extra_en) | {d.split(':', 1)[1] for d in drift})
         (bad if n > max(20, len(want) // 50) else warn).append(msg)
     for w in warn:
         print(f'  ⚠ {w} — 자동 작업이 곧 맞춘다')
