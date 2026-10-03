@@ -411,6 +411,11 @@ Consent · auth-action · Settings · stock · 404)은 스테이징과 같은 �
 
   · 종목 상세는 `scripts/build_stock_staging.py` — 2,682장을 미리 만들지 않고 JS 로 그린다(페이월 때문). 문단 자르기
     함수 셋은 실사이트 stock.html 과 글자 하나까지 같다(`same-paragraphs.test.mjs`).
+  · 잠금 구간 미리보기(2026-10-03 사장 "모자이크 부분이 어색"): 잠긴 첫 절의 제목은 또렷하게 두고, 본문 첫머리(6줄 안팎)만
+    글자 모양으로 옅게 비치다 사라진 뒤 잠금 카드가 온다(`build_stock_staging.LOCK_CSS` · `teaserPane`). 상자째 흐리는 `filter:blur` 로
+    되돌리지 말 것 — 제목까지 번지고 상자 가장자리가 네모로 비쳐, 진한 막대가 520px 동안 검열 모자이크처럼 보였다. 글자는
+    `color:transparent` + `text-shadow` 8px 라 상자 자국이 없고, 고대비 모드(forced-colors)에서는 채움 글자가 그대로 읽히므로 숨긴다.
+    지키는 검사 `staging/tests/paywall-peek.test.mjs`(옛 옷을 덧씌우면 걸린다). 실사이트 종목 페이지에는 잠금이 없어 해당 없다.
   · 설정은 페이지(`Settings.html?tab=…`)다. 내용은 `settings-panel.js` 의 `renderSettings` 가 그리고 옷만 새로 입혔다.
     `billing.html` 은 `Settings.html?tab=subscription` 으로 넘기는 껍데기. 헤더 계정 메뉴는 `staging/auth-state.js`(새 DOM용으로
     다시 씀 · 실사이트 auth-state 의 guardConsent 도 들어 있다). 로그인·가입·동의·인증의 실제 Firebase 코드는
