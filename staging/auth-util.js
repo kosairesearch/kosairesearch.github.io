@@ -36,9 +36,9 @@ if (window.KOSi18n) window.KOSi18n.register({
 
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
 
-/* 우리 사이트 안의 페이지 이름만 허용한다. 하위 폴더는 한 단계까지
-   (리포트가 r/005930.html 에 있다). */
-const NEXT_OK = /^[A-Za-z0-9 _.\-]+(\/[A-Za-z0-9 _.\-]+)?\.html(\?[^#]*)?(#[^#]*)?$/;
+/* 우리 사이트 안의 페이지 이름만 허용한다. 하위 폴더는 두 단계까지
+   (종목 페이지가 stock/005930.html, 영어 종목 페이지가 en/stock/005930.html 에 있다). */
+const NEXT_OK = /^[A-Za-z0-9 _.\-]+(\/[A-Za-z0-9 _.\-]+){0,2}\.html(\?[^#]*)?(#[^#]*)?$/;
 
 /* 로그인 뒤 돌아갈 주소.
 

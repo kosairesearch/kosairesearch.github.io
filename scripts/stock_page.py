@@ -400,7 +400,8 @@ def _stats(st, rep, tier, D):
              ('PER', f(per, '{:.1f}배')), ('PBR', f(pbr, '{:.1f}배')), ('EPS', f(eps, '{:,.0f}원')), ('배당수익률', f(div, '{:.2f}%'))]
     html = ''.join(f'<div class="st"><div class="st-k">{esc(k)}</div><div class="st-v">{esc(v)}</div></div>' for k, v in stats)
     if tier == 'v2':
-        note = f'PER·EPS·PBR·BPS는 최근 4개 분기({esc(window)}) 기준 자체 산출 · 배당수익률은 주당 {dps:,.0f}원 기준' if dps is not None else f'PER·EPS·PBR·BPS는 최근 4개 분기({esc(window)}) 기준 자체 산출'
+        span = f'({esc(window)})' if window else ''   # 산출 기간이 빈 리포트는 빈 괄호를 쓰지 않는다(build_stock_staging.statsH 와 같다)
+        note = f'PER·EPS·PBR·BPS는 최근 4개 분기{span} 기준 자체 산출 · 배당수익률은 주당 {dps:,.0f}원 기준' if dps is not None else f'PER·EPS·PBR·BPS는 최근 4개 분기{span} 기준 자체 산출'
     else:
         note = 'PER·PBR·배당수익률은 최근 확정 실적(EPS·BPS·주당배당금)과 현재 주가로 산출'
     return html, note

@@ -43,16 +43,21 @@
       if (qlang === 'en' || qlang === 'ko') localStorage.setItem(KEY, qlang);
     }
   } catch (e) {}
-  var lang = getLang();
+  /* 말이 정해진 페이지 — 영어 종목 페이지(/en/stock/{종목코드}.html · scripts/build_stock_static.py)는 이 파일보다 먼저
+     window.KOS_PAGE_LANG='en' 을 단다. 그 페이지는 저장된 말과 관계없이 그 말로 보인다 — 글이 이미 그 말로 미리 그려져 있고,
+     검색 · 인공지능 수집 로봇이 읽는 것도 그 글이다. 저장된 말은 바꾸지 않는다 — 그 페이지만 그 말이다. 저장하면 영어 링크를
+     한 번 연 방문자의 사이트 전체가 영어로 굳는데, 로그인 전에는 말을 바꾸는 자리(설정)가 보이지 않아 되돌릴 수 없다(독립 검토 2026-10-03). */
+  var PAGE_LANG = window.KOS_PAGE_LANG === 'en' || window.KOS_PAGE_LANG === 'ko' ? window.KOS_PAGE_LANG : null;
+  var lang = PAGE_LANG || getLang();
   var mo = null, started = false;
 
   function getLang() { try { return localStorage.getItem(KEY) === 'en' ? 'en' : 'ko'; } catch (e) { return 'ko'; } }
   function norm(s) { return (s == null ? '' : String(s)).replace(/\s+/g, ' ').trim(); }
 
-  /* 영어로 정한 사람에게는 번역이 끝날 때까지 본문을 가린다(머리에서 바로). */
+  /* 영어로 정한 사람에게는 번역이 끝날 때까지 본문을 가린다(머리에서 바로). 말이 정해진 페이지는 글이 이미 그 말이라 가리지 않는다. */
   var root = document.documentElement;
   root.setAttribute('lang', lang);
-  if (lang === 'en') root.classList.add('kos-i18n-wait');
+  if (lang === 'en' && !PAGE_LANG) root.classList.add('kos-i18n-wait');
   (function css() {
     var st = document.createElement('style');
     st.textContent = 'html.kos-i18n-wait body{visibility:hidden;animation:kosI18nShow 0s 1.5s forwards}' +
@@ -299,6 +304,13 @@
     if (l === lang) return;
     var saved = false;
     try { localStorage.setItem(KEY, l); saved = localStorage.getItem(KEY) === l; } catch (e) {}
+    /* 말이 정해진 페이지는 고른 말의 주소(<link rel="alternate" hreflang>)로 간다 — 같은 주소를 다시 열면 또 그 말이다.
+       주소의 경로만 쓴다(같은 사이트 안에서 · 꼬리표와 #절 그대로) — hreflang 은 kosai.kr 로 적혀 있어 미러 · 시험 서버에서 밖으로 나가지 않게 */
+    if (PAGE_LANG && l !== PAGE_LANG) {
+      var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+      var path = alt && (alt.getAttribute('href') || '').replace(/^https?:\/\/[^\/]+/, '');
+      if (path && path.charAt(0) === '/') { location.href = path + location.search + location.hash; return; }
+    }
     /* 페이지를 다시 연다 — 모듈과 페이지 스크립트가 그린 글(목록 · 리포트 본문 · 설정 칸)까지 처음부터 그 말로 그리게.
        그 자리에서 바꾸면 영어로 그려진 글은 한국어 원문을 몰라 되돌리지 못한다(설정 칸이 영어로 남았다).
        저장소를 못 쓰는 창(사생활 보호 등)은 다시 열어도 말이 그대로라 그 자리에서만 바꾼다 */

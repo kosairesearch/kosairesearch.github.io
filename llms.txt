@@ -8,15 +8,18 @@
 
 ## Reports (static, crawler-friendly)
 
-- Per-company report: https://kosai.kr/stock/{6-character-code}.html
+- Per-company report (Korean): https://kosai.kr/stock/{6-character-code}.html
   (e.g. https://kosai.kr/stock/005930.html for Samsung Electronics; newer codes
   can contain a letter, e.g. https://kosai.kr/stock/0220W0.html)
-- [Sitemap](https://kosai.kr/sitemap.xml): lists every company page
+- Per-company report (English): https://kosai.kr/en/stock/{6-character-code}.html
+  (e.g. https://kosai.kr/en/stock/005930.html). The two versions link to each
+  other with hreflang.
+- [Sitemap](https://kosai.kr/sitemap.xml): lists every company page in both
+  languages
 - Each page has the full report in its HTML: summary, key points, business,
   earnings, industry, outlook, valuation, bull/bear cases, risk factors, watch
   points, sources, and daily-updated metrics (price, market cap, P/E, P/B,
-  EPS, dividend yield). Pages are served in Korean; the English version of the
-  same report is shown when the site language is set to English.
+  EPS, dividend yield).
 - Old addresses (https://kosai.kr/r/{code}.html and
   https://kosai.kr/stock.html?ticker={code}) redirect to the pages above.
 

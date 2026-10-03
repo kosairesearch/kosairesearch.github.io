@@ -283,6 +283,22 @@ const cfgOf = (w) => { const c = (w.dataLayer || []).find((a) => a && a[0] === "
      "https://kosai.kr/stock.html?ticker=0220W0&utm_source=naver");
 }
 {
+  // 영어 종목 페이지(/en/stock/) — 같은 덩어리로 싣고 &lang=en 을 붙인다(옛 영어 화면 stock.html?ticker=…&lang=en 과 같은 모양)
+  const store = {};
+  const { w, events } = open("https://kosai.kr/en/stock/005930.html?utm_source=x", { store });
+  const rv = events.filter((e) => e.name === "report_view");
+  eq("영어 페이지 — 리포트를 열면 한 번 뜬다", rv.length, 1);
+  eq("영어 페이지 — 어느 종목인지 실린다", rv[0] && rv[0].params.ticker, "005930");
+  eq("영어 페이지 — 페이지 이름은 옛 덩어리 그대로", rv[0] && rv[0].params.from_page, "/stock.html");
+  eq("영어 페이지 — 통계에 싣는 주소(lang=en · 꼬리표)", cfgOf(w) && cfgOf(w).page_location,
+     "https://kosai.kr/stock.html?ticker=005930&lang=en&utm_source=x");
+  eq("영어 페이지 — 본 리포트 수도 센다", store.kosai_reports_seen, "1");
+}
+{
+  const { w } = open("https://kosai.kr/en/Reports.html");
+  eq("en/ 아래라도 종목 페이지가 아니면 주소를 바꾸지 않는다", cfgOf(w) && "page_location" in cfgOf(w), false);
+}
+{
   const { w } = open("https://kosai.kr/Reports.html");
   eq("다른 페이지는 주소를 바꾸지 않는다", cfgOf(w) && "page_location" in cfgOf(w), false);
 }

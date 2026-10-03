@@ -128,6 +128,7 @@ var VALS=(window.KOS_VALUATION&&KOS_VALUATION.stocks)||{};
 /* 종목 페이지의 대표 주소 — 실사이트는 종목마다 미리 만든 페이지(stock/005930.html · scripts/build_stock_static.py)다.
    옛 주소(stock.html?ticker=)는 그리로 넘긴다. 없는 종목코드만 옛 주소 그대로 둔다. */
 function stockUrl(t){ return 'https://kosai.kr/stock/'+encodeURIComponent(t)+'.html'; }
+function stockUrlEn(t){ return 'https://kosai.kr/en/stock/'+encodeURIComponent(t)+'.html'; }   /* 영어 페이지(검색 · 인공지능 로봇이 읽는 영어판) */
 /* 미리 그린 글의 지문 — 노드로 미리 그린 글(scripts/prerender_stock.mjs)과 브라우저가 그린 글이 같은지 견준다(FNV-1a 32비트) */
 window.kosHash=function(s){ var x=0x811c9dc5; for(var k=0;k<s.length;k++){ x^=s.charCodeAt(k); x=Math.imul(x,0x01000193); } return ('0000000'+(x>>>0).toString(16)).slice(-8); };
 /* 영어 화면(staging/i18n.js) — 리포트 본문은 자료의 영어 쪽(pk), 라벨은 아래 T, 나머지 한국어 문구는 사전이 바꾼다. */
@@ -144,13 +145,19 @@ var T={ watch:'관심종목 추가', watched:'관심종목 추가됨',/*@paid*/
   note:'이미 구독 중이시라면 로그인하여 주시기 바랍니다.',
   limitT:'하루 열람 한도에 도달했습니다', limitS:'열람 한도는 매일 자정(한국 시간)에 초기화됩니다.', upgrade:'PRO로 업그레이드',
   errNone:'이 종목은 유료 구간이 아직 준비되지 않았습니다.', errFail:'불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.'/*@/paid*/ };
-if(EN()) T=T_EN;
 var LOCK_SVG='<svg class="lk" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
 function qp(n){ return new URLSearchParams(location.search).get(n); }
 
 /* 미리 만든 페이지는 종목코드(data-tk)와 미리 그린 글의 지문(data-pre)을 본문 자리에 달고 온다. 옛 껍데기(stock.html)는 ?ticker= 로 받는다. */
 var PG=document.getElementById('page'), PRE=PG&&PG.getAttribute('data-pre');
 var PRE_TIER=PG&&PG.getAttribute('data-pre-tier'), PRE_KNOWN=!!(PG&&PG.getAttribute('data-pre-known')==='1');   /* 미리 그릴 때의 리포트 형식 · 시세 유무 */
+/* 미리 그린 글의 말 — 영어 페이지(/en/stock/)는 'en'(번역까지 마친 글), 한국어 페이지는 없음(한국어). 그 페이지의 대표 주소도 이것으로 정한다 */
+var PRE_LANG=(PG&&PG.getAttribute('data-pre-lang'))||'ko';
+function preOk(){ return !!PRE&&(EN()?PRE_LANG==='en':PRE_LANG!=='en'); }   /* 미리 그린 글이 지금 보이는 말과 같은가 — 같을 때만 그대로 둔다 */
+/* 영어 페이지인데 번역 엔진(i18n.js)을 못 받았으면(검색 로봇이 렌더링하다 파일 하나를 건너뛴 경우 등) 미리 그린 영어 글을 그대로 둔다 —
+   다시 그리면 라벨이 한국어로 남은 글로 덮인다 */
+function keepEn(){ return PRE_LANG==='en'&&!EN(); }
+if(EN()||PRE_LANG==='en') T=T_EN;
 var TK=String((PG&&PG.getAttribute('data-tk'))||qp('ticker')||'').replace(/[^0-9A-Za-z]/g,'');
 if(!TK){ var ks=Object.keys(REPORTS); TK=ks[0]||(LIVE[0]&&LIVE[0].ticker)||'005930'; }
 var STOCK=null,i; for(i=0;i<LIVE.length;i++){ if(LIVE[i].ticker===TK){ STOCK=LIVE[i]; break; } }
@@ -242,6 +249,7 @@ function heroH(st){
   var ph=(price!=null)
     ?'<span class="p">'+pyf(price,0,true)+'원</span><span class="c '+cls+'">'+arrow+' '+pct(Math.abs(chg),true).replace(/^\+/,'')+'</span><span class="d">'+fdate(DATA_DATE)+' 장마감</span>'
     :'<span class="d">시세 없음</span>';
+  if(EN()&&I18&&I18.name) name=I18.name(st)||name;   /* 영어 화면은 영문명(자료의 name_en 을 다듬은 것) — 상장 폐지로 시세 자료에 없는 종목도 리포트의 영문명으로 */
   return '<div><div class="eyebrow"><b>'+esc(st.market||'')+'</b><span>'+esc(st.sector||'')+'</span><span>'+TK+'</span></div><h1 class="name">'+esc(name)+'</h1><div class="price">'+ph+'</div>'
     +'<div class="actions"><button type="button" class="btn btn-ink ico" id="watchBtn" aria-pressed="false"><svg class="wb-add" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><svg class="wb-on" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span id="watchTxt">'+T.watch+'</span></button></div></div>';
 }
@@ -265,7 +273,8 @@ function statsH(st){
     ['EPS', f(eps,function(x){ return pyf(x,0,true)+'원'; })],
     ['배당수익률', f(div,function(x){ return pyf(x,2)+'%'; })]];
   var html=rows.map(function(r){ return '<div class="st"><div class="st-k">'+esc(r[0])+'</div><div class="st-v">'+esc(r[1])+'</div></div>'; }).join('');
-  if(TIER==='v2') note='PER·EPS·PBR·BPS는 최근 4개 분기('+esc(win)+') 기준 자체 산출'+(dps!=null?' · 배당수익률은 주당 '+pyf(dps,0,true)+'원 기준':'');
+  /* 산출 기간(ttm_window)이 빈 리포트(6편)는 괄호를 쓰지 않는다 — '최근 4개 분기() 기준'으로 빈 괄호가 보였다 */
+  if(TIER==='v2') note='PER·EPS·PBR·BPS는 최근 4개 분기'+(win?'('+esc(win)+')':'')+' 기준 자체 산출'+(dps!=null?' · 배당수익률은 주당 '+pyf(dps,0,true)+'원 기준':'');
   else note='PER·PBR·배당수익률은 최근 확정 실적(EPS·BPS·주당배당금)과 현재 주가로 산출';
   return {html:html, note:note};
 }
@@ -475,10 +484,15 @@ function notFoundH(){   // 종목코드가 문장 안에 들어가 사전으로�
 }
 var RANK={none:0,v1:1,v2:2};
 function render(){
+  if(keepEn()){
+    var km=document.getElementById('page'); if(LOADED&&PRE){ PRE=null; km.removeAttribute('data-pre'); km.setAttribute('data-tier',PRE_TIER||'none'); }
+    if(window.kosFitCharts) window.kosFitCharts(); if(window.kosTocInit) window.kosTocInit(); syncWatch(); return;
+  }
   /* 미리 만든 페이지 — 받은 자료가 미리 그린 때보다 모자라면(리포트 파일 · 시세를 못 받았으면 — 통신이 끊긴 휴대폰, 검색 로봇의 렌더링)
      미리 그린 글과 머리를 그대로 둔다. 그리면 다 있던 리포트가 '준비 중' · '찾을 수 없습니다'로 바뀐다(독립 검토 2026-10-03).
-     새 리포트가 생긴 경우(준비 중 → 리포트)는 아래에서 새로 그린다. 영어 화면은 처음부터 다시 그리므로 해당 없다. */
-  if(PRE&&LOADED&&!EN()&&((RANK[REP?TIER:'none']||0)<(RANK[PRE_TIER]||0)||(PRE_KNOWN&&!KNOWN))){
+     새 리포트가 생긴 경우(준비 중 → 리포트)는 아래에서 새로 그린다. 미리 그린 글이 지금 말과 다르면(한국어 페이지를 영어로 보는 사람)
+     처음부터 다시 그리므로 해당 없다. */
+  if(preOk()&&LOADED&&((RANK[REP?TIER:'none']||0)<(RANK[PRE_TIER]||0)||(PRE_KNOWN&&!KNOWN))){
     var pm=document.getElementById('page'); PRE=null; pm.removeAttribute('data-pre'); pm.setAttribute('data-tier',PRE_TIER||'none');
     if(window.kosFitCharts) window.kosFitCharts(); if(window.kosTocInit) window.kosTocInit(); syncWatch(); return;
   }
@@ -497,14 +511,15 @@ function render(){
   }
   var main=document.getElementById('page');
   /* 미리 만든 페이지 — 자료를 받아 그린 글이 미리 그린 글과 같으면(지문이 같으면) 그대로 둔다. 다시 넣으면 읽던 자리의
-     펼친 출처 · 고른 글이 풀린다. 자료가 그사이 바뀌었거나 영어 화면이면 그린다. */
-  var same=!!(PRE&&LOADED&&!EN()&&kosHash(h)===PRE);
+     펼친 출처 · 고른 글이 풀린다. 자료가 그사이 바뀌었거나 미리 그린 글과 말이 다르면 그린다. 영어 페이지의 지문은 번역 엔진이
+     바꾸기 전의 글(이 스크립트가 영어 화면에서 그리는 h)로 잰다 — 같으면 번역까지 마친 미리 그린 글을 그대로 둔다. */
+  var same=!!(preOk()&&LOADED&&kosHash(h)===PRE);
   if(!same){
     /* 휴대폰 목차 띠가 헤더 안에 붙어 있으면(pin) 본문 밖에 있다 — 새로 그리기 전에 뗀다. 안 그러면 id 가 둘이 된다. */
     var old=document.getElementById('chipsBar'); if(old) old.parentNode.removeChild(old);
     main.innerHTML=h;
   }
-  if(PRE){ PRE=null; main.removeAttribute('data-pre'); }   /* 한 번 견주면 끝 — 영어 화면의 가림(data-pre)도 여기서 걷힌다 */
+  if(PRE){ PRE=null; main.removeAttribute('data-pre'); }   /* 한 번 견주면 끝 — 한국어 페이지를 영어로 볼 때의 가림(data-pre)도 여기서 걷힌다 */
   if(window.kosFitCharts) window.kosFitCharts();   /* 차트 값 라벨이 옆 막대·라벨에 닿으면 비켜 세운다(stock_page.CHART_FIT_JS) */
   if(LOADED) main.setAttribute('data-tier',REP?TIER:(KNOWN?'none':'unknown'));
   if(window.kosTocInit) window.kosTocInit();
@@ -542,8 +557,11 @@ document.addEventListener('click',function(e){
 /* 제목 · 설명 · canonical · OG · JSON-LD — stock_page.render() 와 같은 내용을 종목이 정해진 뒤 채운다 */
 function setSEO(locked){
   try{
-    var url=(REP||KNOWN)?stockUrl(TK):'https://kosai.kr/stock.html?ticker='+encodeURIComponent(TK), name=(STOCK&&STOCK.name)||(REP&&REP.name)||TK, rt=REP?pk(REP.title):'', ttl, dsc;
-    if(EN()){ var ne=STOCK&&I18?I18.nameEn(STOCK):name;
+    /* 대표 주소는 페이지의 말로 — 영어 페이지는 영어 주소, 한국어 페이지는 영어로 보는 사람에게도 한국어 주소(그 페이지 자신)다 */
+    var url=(REP||KNOWN)?(PRE_LANG==='en'?stockUrlEn(TK):stockUrl(TK)):'https://kosai.kr/stock.html?ticker='+encodeURIComponent(TK), name=(STOCK&&STOCK.name)||(REP&&REP.name)||TK, rt=REP?pk(REP.title):'', ttl, dsc;
+    /* 다듬은 영문명 — 시세 자료(name_en)에서, 시세 자료에 없는 종목은 리포트의 영문명에서. 없으면 빈 값 */
+    var en0=(STOCK&&STOCK.name_en)||(REP&&REP.name_en)||'', ne=(en0&&I18&&I18.cleanEn)?I18.cleanEn(en0):'';
+    if(EN()){ ne=ne||name;
       if(REP){ ttl=ne+' ('+TK+') Report'+(rt?' — '+rt:'')+' | KOSAI'; dsc=String(pk(REP.lead)||pk(REP.desc)).replace(/\s+/g,' ').slice(0,158); }
       else if(KNOWN){ ttl=ne+' ('+TK+') — Report in preparation | KOSAI'; dsc=ne+' ('+TK+') price, market cap, P/E and P/B. Reports for newly listed stocks are written right after listing.'; }
       else{ ttl=TK+' — Stock not found | KOSAI'; dsc='No stock matches the requested code.'; }
@@ -558,12 +576,16 @@ function setSEO(locked){
     setMeta('meta[property="og:title"]','content',ttl);
     setMeta('meta[property="og:description"]','content',dsc);
     setMeta('meta[property="og:url"]','content',url);
+    /* 회사 — 보이는 말의 이름이 name, 다른 말의 이름이 alternateName(옛 로봇용 사본 r/ 에 있던 영문명. 영어로 묻는 검색이 회사를 잇는 끈) */
+    var en=EN(), cn=en?ne:name, alt=en?(name!==ne?name:''):(ne&&ne!==name?ne:'');
+    var corp={'@type':'Corporation','name':cn}; if(alt) corp.alternateName=alt;
+    corp.legalName=en0||name; corp.tickerSymbol=TK;
     var ld={'@context':'https://schema.org','@type':'Article',
-      'headline':(REP&&rt)?name+' ('+TK+') — '+rt:name+' ('+TK+')',
+      'headline':(REP&&rt)?cn+' ('+TK+') — '+rt:cn+' ('+TK+')',
       'datePublished':(REP&&REP.reportDate)||fdate(DATA_DATE),'dateModified':fdate(DATA_DATE),
-      'inLanguage':'ko','isAccessibleForFree':!locked,'mainEntityOfPage':url,
+      'inLanguage':en?'en':'ko','isAccessibleForFree':!locked,'mainEntityOfPage':url,
       'author':{'@type':'Organization','name':'KOSAI','url':'https://kosai.kr'},
-      'about':{'@type':'Corporation','name':name,'legalName':(STOCK&&STOCK.name_en)||(REP&&REP.name_en)||name,'tickerSymbol':TK}};
+      'about':corp};
     var s=document.getElementById('kos-jsonld');
     if(!s){ s=document.createElement('script'); s.type='application/ld+json'; s.id='kos-jsonld'; document.head.appendChild(s); }
     s.textContent=JSON.stringify(ld);
@@ -572,8 +594,9 @@ function setSEO(locked){
 
 /* ── 리포트 본문은 종목별 파일에서 그때 받는다(전체 리포트 v2 → 옛 형식 v1) ── */
 function getJson(u){ return fetch(u,{cache:'no-cache'}).then(function(r){ return r.ok?r.json():null; }).catch(function(){ return null; }); }
-/* 히어로·지표는 바로 — 본문은 받은 뒤. 미리 만든 페이지의 한국어 글은 그대로 두고 자료를 받은 뒤 한 번만 견준다(영어 화면은 바로 그린다) */
-if(PRE&&!EN()) syncWatch(); else render();
+/* 히어로·지표는 바로 — 본문은 받은 뒤. 미리 만든 페이지의 글이 지금 말과 같으면 그대로 두고 자료를 받은 뒤 한 번만 견준다
+   (한국어 페이지를 영어로 보는 사람에게는 바로 영어로 그린다) */
+if(preOk()||keepEn()) syncWatch(); else render();
 getJson('/data/reports_v2/'+encodeURIComponent(TK)+'.json').then(function(r){
   if(r){ REP=r; TIER='v2'; return; }
   return getJson('/data/reports/'+encodeURIComponent(TK)+'.json').then(function(r1){ if(r1){ REP=r1; TIER='v1'; } });

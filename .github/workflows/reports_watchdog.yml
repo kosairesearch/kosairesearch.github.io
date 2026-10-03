@@ -38,7 +38,7 @@ jobs:
       #   · data/valuation.js      상단 그리드 EPS·BPS — 리포트 quant 를 그대로 옮긴다.
       #     원래 collect_valuation 이 맞추는데 두 시간에 한 번 돌아서, 전 종목을 다시
       #     만드는 동안에는 화면과 본문의 숫자가 몇 시간씩 다르게 보였다(20종목).
-      #   · stock/{종목코드}.html  종목마다 미리 만든 페이지 — 리포트가 새로 쓰이면 30분 안에 글이 바뀐다
+      #   · stock/{종목코드}.html  종목마다 미리 만든 페이지(영어 en/stock/ 도 함께) — 리포트가 새로 쓰이면 30분 안에 글이 바뀐다
       #     (바뀐 페이지만 쓴다 · 노드로 미리 그린다). 화면은 자료를 받아 다시 견주므로 사람은 그 전에도 새 글을 본다.
       #
       # 모두 저장소 내용만 보고 만드는 파일이라, 미는 사이에 남이 먼저 밀었으면
@@ -54,7 +54,7 @@ jobs:
             python scripts/stamp_counts.py || true
             python scripts/_sync_grid.py || true
             python scripts/build_stock_static.py || echo "::warning::종목 페이지(stock/)를 다시 만들지 못했다 — 다음 실행이 다시 시도한다"
-            git add data/reports-index.js data/valuation.js index.html stock/
+            git add data/reports-index.js data/valuation.js index.html stock/ en/
             if git diff --cached --quiet; then
               echo "인덱스·그리드 변경 없음"
               break
