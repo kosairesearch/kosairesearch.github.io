@@ -58,6 +58,8 @@ if(window.KOSi18n) window.KOSi18n.register({
   "탈퇴하기":"Delete account", "취소":"Cancel",
   "회원 탈퇴가 완료되었습니다":"Your account has been deleted",
   "그동안 이용해 주셔서 감사합니다.":"Thank you for using KOSAI.",
+  /*@paid*/"시연용 탈퇴 처리가 완료되었습니다":"Demo account deletion completed",
+  "스테이징에서는 실제 계정을 삭제하지 않습니다. 계정을 삭제하시려면 실사이트에서 탈퇴하여 주시기 바랍니다.":"Staging does not delete real accounts. To delete your account, please do so on the live site.",/*@/paid*/
   "홈으로":"Go to home"
 });
 
