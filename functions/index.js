@@ -788,6 +788,19 @@ exports.signinHint = onCall({ region: REGION, cors: true }, async (req) => {
   } catch (e) { return { method: null }; }
 });
 
+/* 비밀번호가 없는 계정이면 가입 방법(kakao · naver · google), 있으면 null — sendResetEmail 이 쓴다.
+   uid 와 제공자 판정은 signinHint ① 과 같다. 소셜로 가입했어도 비밀번호가 있으면(재설정 메일로 비밀번호를
+   만든 경우) null 이라 전처럼 재설정 메일을 보낸다 — 그 비밀번호로 로그인하는 사람을 막지 않는다. */
+function noPasswordMethod(user) {
+  const ids = ((user && user.providerData) || []).map(x => x.providerId);
+  if (ids.includes("password")) return null;
+  const uid = String((user && user.uid) || "");
+  if (uid.startsWith("kakao:")) return "kakao";
+  if (uid.startsWith("naver:")) return "naver";
+  if (ids.includes("google.com")) return "google";
+  return null;
+}
+
 exports.socialLogin = onCall(
   {
     region: REGION,
@@ -1673,19 +1686,57 @@ exports.sendVerifyEmail = onCall(
   }
 );
 
-// 비밀번호 재설정 메일 — 비로그인 상태에서 호출. 없는 사용자는 조용히 성공.
+/* 비밀번호 재설정 메일 — 비로그인 상태에서 호출(로그인 화면의 '비밀번호를 잊으셨나요?').
+
+   가입 여부를 먼저 본다(2026-10-04). 가입되지 않은 이메일로 누르면 '처리 중 오류가 발생했습니다.
+   (functions/internal)' 가 떴다(사장 실사이트). 이 프로젝트는 파이어베이스의 '이메일 열거 방지'가
+   켜져 있어, 없는 주소로 링크를 만들면 email-not-found 가 아니라 링크 없는 성공이 돌아오고 관리자
+   SDK 가 그것을 internal-error('Unable to create the email action link')로 던진다. 형식이 틀린 주소
+   ('a@!b.com')는 invalid-email 이다. 둘 다 아래 'internal' 로 떨어졌다 — 없는 주소는 조용히
+   돌려보낸다던 원래 뜻과 달리 늘 오류였다.
+
+   돌려주는 것 — 화면이 이것으로 문구를 고른다(옛 화면은 값을 보지 않고 '보냈다'고 안내한다).
+     { sent: true }                                    보냈다
+     { sent: false, reason: "unregistered" }           가입되지 않은 이메일
+     { sent: false, reason: "no-password", method }    비밀번호 없이 카카오 · 네이버 · 구글로 가입한 계정 — 재설정할
+                                                       비밀번호가 없어 메일 대신 가입 방법을 알린다(로그인 화면의
+                                                       '네이버 계정으로 가입된 이메일입니다' 와 같은 판정 · 같은 문구)
+     invalid-argument                                  형식이 틀린 주소
+   가입 여부와 가입 방법을 알려 주는 것은 signinHint 가 이미 하는 일이라 여기서 새로 새는 것은 없다. */
 exports.sendResetEmail = onCall(
   { region: REGION, cors: true, secrets: [RESEND_API_KEY] },
   async (req) => {
     const email = ((req.data && req.data.email) || "").trim().toLowerCase();
     const lang = (req.data && req.data.lang) === "en" ? "en" : "ko";
     if(!emailOk(email)) throw new HttpsError("invalid-argument", "유효한 이메일이 필요합니다.");
+    let user;
+    try{ user = await admin.auth().getUserByEmail(email); }
+    catch(e){
+      if(e && e.code === "auth/invalid-email") throw new HttpsError("invalid-argument", "유효한 이메일이 필요합니다.");
+      if(!e || e.code !== "auth/user-not-found"){
+        console.error("[sendResetEmail] lookup:", e);
+        throw new HttpsError("internal", "요청 처리에 실패했습니다.");
+      }
+      /* 이메일을 심기 전에 만들어진 옛 카카오 · 네이버 계정은 Auth 에 주소가 없고 users/{uid}.email 에만 있다
+         (signinHint ②). 그 사람에게 '가입되지 않은 이메일'이라고 하면 틀린 말이다. 조회가 실패하면 모르는
+         것이므로 미가입이라고 하지 않는다. */
+      let other;
+      try{ other = await findOtherAccountByEmail(admin.firestore(), email, null); }
+      catch(e2){
+        console.error("[sendResetEmail] users:", e2);
+        throw new HttpsError("internal", "요청 처리에 실패했습니다.");
+      }
+      const m = other && other.method;
+      if(m === "kakao" || m === "naver" || m === "google") return { ok: true, sent: false, reason: "no-password", method: m };
+      return { ok: true, sent: false, reason: "unregistered" };
+    }
+    const method = noPasswordMethod(user);
+    if(method) return { ok: true, sent: false, reason: "no-password", method };
     let link;
-    /* 링크를 먼저 만든다. 이것만으로는 메일이 나가지 않으므로, 없는 주소는
-       여기서 조용히 돌려보낸 뒤 실제로 보낼 사람만 센다. */
+    /* 링크를 먼저 만든다. 이것만으로는 메일이 나가지 않으므로, 실제로 보낼 사람만 센다. */
     try{ link = customActionLink(await admin.auth().generatePasswordResetLink(email, ACTION_SETTINGS), lang); }
     catch(e){
-      if(e.code === "auth/user-not-found" || e.code === "auth/email-not-found") return { ok: true };
+      if(e.code === "auth/user-not-found" || e.code === "auth/email-not-found") return { ok: true, sent: false, reason: "unregistered" };
       console.error("[sendResetEmail] link:", e);
       throw new HttpsError("internal", "요청 처리에 실패했습니다.");
     }
@@ -1695,7 +1746,7 @@ exports.sendResetEmail = onCall(
     const resend = new Resend(RESEND_API_KEY.value());
     const { error } = await resend.emails.send({ from: MAIL_FROM, to: email, subject: mail.subject, html: mail.html });
     if(error){ console.error("[sendResetEmail] resend:", error); throw new HttpsError("internal", "메일 발송에 실패했습니다."); }
-    return { ok: true };
+    return { ok: true, sent: true };
   }
 );
 

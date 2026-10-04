@@ -20,6 +20,10 @@ export async function sendVerifyEmail(email){
   await httpsCallable(fns, "sendVerifyEmail")({ email: email || "", lang: curLang() });
 }
 
+/* 서버가 결과를 돌려준다 — { sent:true } 보냄 · { sent:false, reason:"unregistered" } 가입되지 않은 이메일 ·
+   { sent:false, reason:"no-password", method } 비밀번호 없이 카카오 · 네이버 · 구글로 가입한 계정(2026-10-04).
+   화면이 이것으로 문구를 고른다. */
 export async function sendResetEmail(email){
-  await httpsCallable(fns, "sendResetEmail")({ email: email || "", lang: curLang() });
+  const res = await httpsCallable(fns, "sendResetEmail")({ email: email || "", lang: curLang() });
+  return (res && res.data) || {};
 }

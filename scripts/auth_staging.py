@@ -189,8 +189,25 @@ $('#forgotLink').addEventListener('click', async e => {
   if(!email) fldMsg('email', '이메일을 먼저 입력하여 주시기 바랍니다.');
   else if(!EMAIL.test(email)) fldMsg('email', '올바른 이메일 형식이 아닙니다.');
   if(focusBad(['email'])) return;
-  try{ await sendResetEmail(email); showErr('비밀번호 재설정 메일을 보내 드렸습니다. 메일함을 확인하여 주시기 바랍니다.', true); }
-  catch(err){ showErr(mapAuthError(err)); }
+  /* 서버가 돌려준 결과로 문구를 고른다(2026-10-04 — 가입되지 않은 이메일에 '처리 중 오류가 발생했습니다.
+     (functions/internal)' 가 떴다). 보내지 않았으면 그 까닭을 알린다 — 가입되지 않은 이메일, 또는 비밀번호 없이
+     카카오 · 네이버 · 구글로 가입한 계정(로그인 화면과 같은 '네이버 계정으로 가입된 이메일입니다'). sent 가 없는
+     응답(배포 전의 서버)은 전처럼 '보냈다'로 안내한다. 형식이 틀린 주소는 서버가 invalid-argument 로 알린다. */
+  try{
+    const r = await sendResetEmail(email);
+    if(r && r.sent === false){
+      let hint = '';
+      if(r.method){ try{ const { hintText } = await import("./auth-hint.js"); hint = hintText(r.method); }catch(_){} }
+      showErr(hint || (r.method ? '이미 다른 방법으로 가입된 이메일입니다.' : '가입되지 않은 이메일입니다.'));
+    }
+    else showErr('비밀번호 재설정 메일을 보내 드렸습니다. 메일함을 확인하여 주시기 바랍니다.', true);
+  }
+  catch(err){
+    if(String((err && err.code) || '').includes('invalid-argument')){ fldMsg('email', '올바른 이메일 형식이 아닙니다.'); focusBad(['email']); return; }
+    showErr(mapAuthError(err));
+  }
+  /* 휴대폰에서는 이 링크가 첫 화면 맨 아래에 있어 안내가 화면 밖에 뜬다(390×667 기준 약 25px 아래) — 화면 안으로 끌어온다 */
+  try{ const b = errBox.getBoundingClientRect(); if(b.top < 0 || b.bottom > innerHeight) errBox.scrollIntoView({ block: 'center' }); }catch(_){}
 });
 
 /* 카카오 · 네이버 — OAuth 리다이렉트 + Cloud Functions 커스텀 토큰. #kakaoBtn · #naverBtn 을 id 로 찾고
