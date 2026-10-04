@@ -698,6 +698,9 @@ exports.socialLogin = onCall(
     secrets: [KAKAO_REST_KEY, KAKAO_CLIENT_SECRET, NAVER_CLIENT_ID, NAVER_CLIENT_SECRET]
   },
   async (req) => {
+    /* 미리 깨우기 — 로그인 · 회원가입 화면이 열릴 때 보내는 빈 요청(2026-10-04). 쉬고 있던 함수를 미리 띄워 두려는 것이라
+       아무것도 읽거나 쓰지 않고 바로 돌려준다. 네이버 · 카카오에서 돌아온 뒤의 진짜 요청은 이미 떠 있는 함수가 받는다. */
+    if(req.data && req.data.warm === true) return { warm: true };
     const { provider, code, redirectUri, state } = req.data || {};
     if(!provider || !code || !redirectUri){
       throw new HttpsError("invalid-argument", "provider, code, redirectUri 가 필요합니다.");
