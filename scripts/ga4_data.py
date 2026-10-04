@@ -278,12 +278,15 @@ def _property():
 # ────────────────────────────── 조회 ──────────────────────────────
 
 def _run(client, prop, start, end, metrics, dimensions=None, limit=25, order=None,
-         event_filter=None):
+         event_filter=None, where=None):
     """GA4 한 번 물어보기. (행 목록) 을 돌려준다.
 
     event_filter 를 주면 그 이름의 이벤트만 센다. 'sign_up 이 어느 페이지에서
     일어났나' 처럼, 같은 매개변수를 여러 이벤트가 공유할 때 꼭 필요하다 —
     안 거르면 모든 이벤트의 from_page 가 뭉쳐서 아무 뜻도 없는 수가 된다.
+
+    where 는 [(측정기준, 값), …] — 모두 맞는 것만 센다(값이 정확히 같을 때).
+    '중국에서 온 사람만' · '어디서 왔는지 기록 안 된 방문만' 처럼 한 갈래 안을 쪼갤 때 쓴다.
     """
     from google.analytics.data_v1beta.types import (
         DateRange, Dimension, Metric, RunReportRequest, OrderBy,
@@ -295,10 +298,15 @@ def _run(client, prop, start, end, metrics, dimensions=None, limit=25, order=Non
         dimensions=[Dimension(name=d) for d in (dimensions or [])],
         limit=limit,
     )
+    conds = list(where or [])
     if event_filter:
-        req.dimension_filter = FilterExpression(filter=Filter(
-            field_name="eventName",
-            string_filter=Filter.StringFilter(value=event_filter)))
+        conds.append(("eventName", event_filter))
+    if conds:
+        from google.analytics.data_v1beta.types import FilterExpressionList
+        exprs = [FilterExpression(filter=Filter(
+            field_name=d, string_filter=Filter.StringFilter(value=v))) for d, v in conds]
+        req.dimension_filter = (exprs[0] if len(exprs) == 1 else
+                                FilterExpression(and_group=FilterExpressionList(expressions=exprs)))
     if order:
         req.order_bys = [OrderBy(metric=OrderBy.MetricOrderBy(metric_name=order),
                                  desc=True)]

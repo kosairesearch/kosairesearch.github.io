@@ -23,6 +23,7 @@
     experiment_add / experiment_start / experiment_drop
     refresh       GA4 에서 지금 새로 받아오기
     day           하루가 이상할 때 — 그날을 갈래마다 쪼개 평소와 견준다(봇·시험 가리기)
+    slice         한 갈래 안을 쪼갠다 (where 로 거르고 by 로 나눈다)
     weeks         받아 둔 주가 몇 개인지
 
 어떻게 붙이나 (Claude Desktop)
@@ -885,10 +886,12 @@ def t_day(date=None, base=28, top=8):
     try:
         hd = q(D, D, ["hour"], limit=50, order=None)
         hb = q(B0, B1, ["date", "hour"], order=None)
-        hc = {r["key"]: r for r in day_compare(hd, hb, "hour", nb)}
+        # GA4 는 시간을 '0'~'23' 으로 준다(한 자리는 앞에 0 이 없다) — 숫자로 맞춘다.
+        hc = {int(r["key"]): r for r in day_compare(hd, hb, "hour", nb)
+              if str(r["key"]).isdigit()}
         L.append("■ 시간대별 (그날 · 평소 같은 시간)")
         for h in range(24):
-            r = hc.get(f"{h:02d}")
+            r = hc.get(h)
             if not r or (r["users"] == 0 and r["avg"] < 0.5):
                 continue
             spike = "  ⚠️ 평소의 2배 넘게" if (r["users"] >= 2 * r["avg"] + 5) else ""
@@ -952,6 +955,83 @@ def t_day(date=None, base=28, top=8):
     L.append("※ 읽는 법 — 봇·시험은 대개 한 갈래(한 도시 · 한 화면 크기 · 한 언어)에 몰리고,"
              " 제대로 본 방문이 거의 없고, 모두 처음 온 사람이다.")
     L.append("  진짜 손님이 늘면 늘어난 몫이 네이버 · 휴대폰 · 한국 도시에 고루 퍼지고 읽은 시간이 평소와 비슷하다.")
+    return "\n".join(L)
+
+
+
+SLICE_METRICS = ["activeUsers", "newUsers", "sessions", "engagedSessions",
+                 "screenPageViews", "userEngagementDuration", "eventCount"]
+
+
+def parse_where(text):
+    """'country:China;sessionDefaultChannelGroup:Organic%20Search' → [(측정기준, 값)].
+    값의 빈칸은 %20 으로 적는다(물어보기 칸이 빈칸·쉼표로 인자를 가른다)."""
+    from urllib.parse import unquote
+    out = []
+    for part in str(text or "").split(";"):
+        if ":" not in part:
+            continue
+        d, v = part.split(":", 1)
+        d, v = d.strip(), unquote(v.strip())
+        if d:
+            out.append((d, v))
+    return out
+
+
+def t_slice(date=None, start=None, end=None, where="", by="eventName", top=20):
+    """한 갈래 안을 쪼갠다 — where 로 거르고 by 로 나눈다. by 는 '+' 로 잇고 ';' 로 여러 번.
+    예: date=2026-10-04 where=sessionDefaultChannelGroup:Unassigned by=eventName;hour+deviceCategory"""
+    import ga4_data as G
+    if not os.environ.get("GA4_PROPERTY_ID"):
+        return ("GA4_PROPERTY_ID 가 없습니다 — 이 물음은 GA4 에 직접 물어봅니다."
+                " 깃허브 Actions 의 '마케팅 숫자 물어보기' 로 돌려 주세요.")
+    today = datetime.datetime.now(G.KST).date()
+    try:
+        d0 = datetime.date.fromisoformat(str(start or date or today))
+        d1 = datetime.date.fromisoformat(str(end or date or start or today))
+    except ValueError:
+        return f"날짜를 못 읽었습니다 (예: date=2026-10-04 · start=2026-09-21 end=2026-10-04)"
+    conds = parse_where(where)
+    top_n = max(1, min(int(top or 20), 200))
+    try:
+        cl, prop = G._client(), G._property()
+    except (Exception, SystemExit) as e:
+        return f"GA4 에 붙지 못했습니다 — {type(e).__name__}: {e}"
+    head = f"[{d0} ~ {d1}]" if d0 != d1 else f"[{d0}]"
+    cond_s = " · ".join(f"{d} = {v}" for d, v in conds) or "전체"
+    L = [f"{head} 거른 갈래: {cond_s}", ""]
+    for spec in [x for x in str(by or "eventName").split(";") if x.strip()]:
+        dims = [x.strip() for x in spec.split("+") if x.strip()][:7]
+        rows, used = None, SLICE_METRICS
+        for metrics in (SLICE_METRICS, ["activeUsers", "eventCount"], ["eventCount"]):
+            try:
+                rows = G._run(cl, prop, d0.isoformat(), d1.isoformat(), metrics, dims,
+                              limit=max(top_n, 50), order=metrics[0], where=conds)
+                used = metrics
+                break
+            except (Exception, SystemExit) as e:
+                err = f"{type(e).__name__}: {str(e)[:160]}"
+        L.append(f"■ {' / '.join(dims)}")
+        if rows is None:
+            L.append(f"  못 받았습니다 — {err}")
+            L.append("")
+            continue
+        if not rows:
+            L.append("  (없음)")
+        for r in rows[:top_n]:
+            key = " / ".join(str(r.get(d, "")) or "(빈 값)" for d in dims)
+            rr = day_rates(r)
+            parts = []
+            if "activeUsers" in used:
+                parts.append(f"{r.get('activeUsers', 0)}명")
+            if "sessions" in used:
+                sec = "—" if rr["sec"] is None else f"{rr['sec']:.0f}초"
+                parts.append(f"방문 {rr['sessions']} · 제대로 봄 {_pc(rr['eng'])} · 1인당 {sec}"
+                             f" · 처음 {_pc(rr['new'])} · 조회 {r.get('screenPageViews', 0)}")
+            if "eventCount" in used:
+                parts.append(f"기록 {r.get('eventCount', 0)}건")
+            L.append(f"  {key[:70]}  " + " · ".join(parts))
+        L.append("")
     return "\n".join(L)
 
 
@@ -1105,6 +1185,16 @@ TOOLS = [
          "date": {"type": "string", "description": "볼 날 YYYY-MM-DD (기본 오늘 · '어제' 도 된다)"},
          "base": {"type": "integer", "description": "평소로 볼 앞 날 수 (기본 28)"},
          "top": {"type": "integer", "description": "갈래마다 보여 줄 줄 수 (기본 8)"}}}},
+    {"name": "slice", "fn": t_slice,
+     "description": "한 갈래 안을 쪼갠다 — where(측정기준:값, ';' 로 여럿)로 거르고 by(측정기준을 '+' 로 잇고 "
+                    "';' 로 여러 번)로 나눈다. day 로 수상한 갈래를 찾은 다음, 그 안이 무엇인지 볼 때 부른다.",
+     "inputSchema": {"type": "object", "properties": {
+         "date": {"type": "string", "description": "하루 YYYY-MM-DD (또는 start · end)"},
+         "start": {"type": "string", "description": "시작일"},
+         "end": {"type": "string", "description": "끝일"},
+         "where": {"type": "string", "description": "예: country:China;sessionDefaultChannelGroup:Unassigned (빈칸은 %20)"},
+         "by": {"type": "string", "description": "예: eventName;hour+deviceCategory+browser"},
+         "top": {"type": "integer", "description": "줄 수 (기본 20)"}}}},
     {"name": "weeks", "fn": t_weeks,
      "description": "받아 둔 주가 몇 개이고 어디에 저장돼 있는지. 숫자가 "
                     "안 나올 때 여기부터 본다.",
