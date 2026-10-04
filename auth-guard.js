@@ -10,7 +10,7 @@
 import { auth, isConfigured } from "./firebase-config.js?v=7b8f27a5";
 import { onAuthStateChanged, signOut }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { sendVerifyEmail } from "./auth-emails.js?v=bce0955f";
+import { sendVerifyEmail } from "./auth-emails.js?v=84fe3640";
 
 if(window.KOSi18n) window.KOSi18n.register({
   "로그인이 필요합니다":"Sign-in required",

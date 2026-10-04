@@ -289,6 +289,22 @@ KOSAI 계정은 없는데 연결만 남은 사람은 화면 없이 계정이 만
     `FN_INDEX=옛 파일` 로 돌리면 고치기 전 코드가 31건 걸린다), `staging/tests/social-return.test.mjs`(화면 30건 — 다시 보내기 · 두 번째
     reauth 멈춤 · needConsent · 취소 · 휴대폰 안내 · 키보드 체크 · 인증 뒤 이동, `SITE_ROOT=고치기 전 사본` 이면 걸린다).
 
+## 비밀번호 재설정 — 가입 여부를 먼저 본다 *(2026-10-04 사장 "등록되어 있지 않은 이메일을 … 비밀번호를 잊으셨나요?를 누르면 … 어색한 문장이 나와")*
+
+가입되지 않은 이메일로 '비밀번호를 잊으셨나요?'를 누르면 '처리 중 오류가 발생했습니다. (functions/internal)' 가 떴다. 이 프로젝트는
+파이어베이스의 **이메일 열거 방지가 켜져 있어**, 없는 주소로 재설정 링크를 만들면 email-not-found 가 아니라 링크 없는 성공이 오고 관리자 SDK 가
+그것을 internal-error 로 던진다(형식이 틀린 주소는 invalid-email). 서버는 둘 다 'internal' 로 돌려주었다 — 없는 주소는 조용히 넘긴다던 원래
+뜻과 달리 늘 오류였다. **관리자 SDK 의 링크 함수(generate…Link)로 가입 여부를 판정하지 말 것** — getUserByEmail 로 먼저 본다.
+
+  · `sendResetEmail` 은 결과를 돌려준다: `{sent:true}` · `{sent:false, reason:"unregistered"}` · `{sent:false, reason:"no-password", method}`
+    (비밀번호 없이 카카오 · 네이버 · 구글로 가입 — 메일 대신 로그인 화면과 같은 '카카오 계정으로 가입된 이메일입니다') · invalid-argument(형식).
+    판정은 signinHint 와 같다(옛 소셜 계정은 users 문서로 찾는다 · 비밀번호가 있으면 소셜 가입이어도 보낸다). 가입 여부를 알려 주는 것은
+    signinHint 가 이미 하는 일이라 새로 새는 것은 없다.
+  · 화면(auth_staging LOGIN_JS)은 그 값으로 문구를 고른다 — '가입되지 않은 이메일입니다.' · 칸 아래 '올바른 이메일 형식이 아닙니다.' · 보냈으면
+    전과 같은 안내. sent 가 없는 응답(배포 전 서버)은 '보냈다'로 본다. 휴대폰(390×667)에서는 링크가 첫 화면 맨 아래라 안내를 화면 안으로 끌어온다.
+  · 지키는 검사 — `functions/tests/reset-email.test.mjs`(진짜 sendResetEmail · 열거 방지를 흉내 낸 가짜 관리자 SDK · 26건, `FN_INDEX=옛 파일` 이면
+    15건 걸린다), `staging/tests/forgot-password.test.mjs`(두 사이트 로그인 화면 · 한국어 · 영어 · 휴대폰 34건, `SITE_ROOT=고치기 전 사본` 이면 18건).
+
 ## 유료화를 시작할 때 — 먼저 볼 것 *(2026-09-14 기록, 미뤄 둔 일)*
 
 사장이 "나중에 유료화 생각할 때 하자" 고 미뤄 둔 것들이다. 유료화·페이월·

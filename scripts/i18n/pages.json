@@ -65,6 +65,8 @@
  "네이버 계정을 확인하고 있습니다.": "Verifying your Naver account.",
  "카카오 계정을 확인하고 있습니다.": "Verifying your Kakao account.",
  "로그인 처리가 지연되고 있습니다. 잠시 후 다시 시도하여 주시기 바랍니다.": "Sign-in is taking longer than expected. Please try again shortly.",
+ "// 로그인 — '비밀번호를 잊으셨나요?'에서 재설정 메일을 보내지 않은 까닭(2026-10-04 · 비밀번호 없이 가입한 계정은 auth-hint.js 의 문구)": "",
+ "가입되지 않은 이메일입니다.": "This email is not registered.",
  "// 약관 동의 — 항목 안내(2026-10-04 · 개인정보 처리방침 2항 · 4항 · 15항과 같은 말. '이용 목적' · '보유 기간' 줄은 live.json)": "",
  "수집 항목: 이메일, 이름 또는 닉네임, 회원 식별번호, 비밀번호(이메일 가입 시), 연결 해제용 인증 정보(네이버 로그인 시)": "Collected: email, name or nickname, member ID, password (email sign-up), unlink credential (Naver login)",
  "새 리포트 발행 알림, 서비스 소식과 이벤트 안내를 이메일로 받습니다. 설정에서 언제든 철회할 수 있습니다.": "Receive new report alerts, service news and event announcements by email. You can withdraw at any time in Settings.",
