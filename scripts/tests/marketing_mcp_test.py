@@ -485,6 +485,73 @@ for _tk, _v in m.items():
 ok("코스피·코스닥 대형주가 각 100개 = 200개", _sizes.get("대형주") == 200, str(_sizes))
 ok("도구 목록에 tickers 가 있다", any(x["name"] == "tickers" for x in X.TOOLS))
 
+print("\n▣ 하루 쪼개 보기(day) — 봇·시험을 가린다")
+ok("도구 목록에 day 가 있다", any(x["name"] == "day" for x in X.TOOLS))
+ok("새 종목 페이지(옛 주소 꼴로 보냄)는 종목 리포트", X.landing_kind("/stock.html?ticker=005930") == "종목 리포트")
+ok("영어판은 따로 센다", X.landing_kind("/stock.html?ticker=005930&lang=en") == "종목 리포트(영어)")
+ok("첫 화면", X.landing_kind("/") == "첫 화면(랜딩)")
+ok("브리핑 지난 호도 브리핑", X.landing_kind("/brief/2026-10-02.html") == "모닝 브리핑")
+ok("(not set) 은 '기록 없음'", X.landing_kind("(not set)") == "(기록 없음)")
+_D = [{"hostName": "kosai.kr", "activeUsers": 60, "newUsers": 40, "sessions": 70,
+       "engagedSessions": 50, "screenPageViews": 140, "userEngagementDuration": 3000},
+      {"hostName": "127.0.0.1", "activeUsers": 40, "newUsers": 40, "sessions": 40,
+       "engagedSessions": 2, "screenPageViews": 41, "userEngagementDuration": 10}]
+_B = [{"date": "202609%02d" % (i + 1), "hostName": "kosai.kr", "activeUsers": 55} for i in range(28)]
+_c = X.day_compare(_D, _B, "hostName", 28)
+ok("평소보다 늘어난 갈래가 위", _c[0]["key"] == "127.0.0.1" and round(_c[0]["diff"]) == 40, str(_c[0]))
+ok("평소 하루 평균은 날짜 수로 나눈다", round(_c[1]["avg"]) == 55, str(_c[1]))
+ok("봇 표시 셋이 겹친다", len(X.bot_flags(_c[0])) == 3, str(X.bot_flags(_c[0])))
+ok("사람처럼 읽은 갈래엔 표시가 없다", X.bot_flags(_c[1]) == [], str(X.bot_flags(_c[1])))
+ok("몇 명 안 되는 갈래는 판정하지 않는다", X.bot_flags(dict(_c[0], users=3)) == [])
+ok("없던 날은 0 으로 친다 — 하루만 28명이면 평균 1명",
+   round(X.day_compare([], [{"date": "20260901", "city": "A", "activeUsers": 28}], "city", 28)[0]["avg"], 2) == 1.0)
+ok("처음 연 페이지는 종류로 묶어 더한다",
+   X.day_compare([{"landingPagePlusQueryString": "/stock.html?ticker=005930", "activeUsers": 3},
+                  {"landingPagePlusQueryString": "/stock.html?ticker=000660", "activeUsers": 4}],
+                 [], "landingPagePlusQueryString", 28, X.landing_kind)[0]["users"] == 7)
+
+# 진짜 GA4 없이 끝까지 돌려 본다 — 묻는 모양마다 그럴듯한 줄을 돌려주는 가짜 _run
+import datetime as _dtm
+import ga4_data as _G
+_saved = (_G._run, _G._client, _G._property, os.environ.get("GA4_PROPERTY_ID"))
+_asked = []
+def _fake_run(cl, prop, s, e, metrics, dims=None, limit=25, order=None, event_filter=None):
+    _asked.append(tuple(dims or []))
+    s0, e0 = _dtm.date.fromisoformat(s), _dtm.date.fromisoformat(e)
+    out = []
+    for i in range((e0 - s0).days + 1):
+        d = (s0 + _dtm.timedelta(days=i)).strftime("%Y%m%d")
+        combos = [{}]
+        for dim in dims or []:
+            vals = [d] if dim == "date" else (["%02d" % h for h in range(24)] if dim == "hour" else ["가", "나"])
+            combos = [dict(c, **{dim: v}) for c in combos for v in vals]
+        for c in combos:
+            out.append(dict(c, **{m: 10 for m in metrics}))
+    return out[:limit]
+_G._run, _G._client, _G._property = _fake_run, (lambda: None), (lambda: "properties/1")
+os.environ["GA4_PROPERTY_ID"] = "1"
+try:
+    _t = X.t_day(date="2026-10-04", base=28, top=5)
+finally:
+    _G._run, _G._client, _G._property = _saved[:3]
+    if _saved[3] is None:
+        os.environ.pop("GA4_PROPERTY_ID", None)
+    else:
+        os.environ["GA4_PROPERTY_ID"] = _saved[3]
+ok("끝까지 돈다 — 합계 · 날짜별 · 시간대 · 갈래 · 묶음 · 기록",
+   all(h in _t for h in ("■ 하루 합계", "■ 날짜별", "■ 시간대별", "■ 사이트 주소", "■ 처음 연 페이지",
+                         "■ 묶어 보기", "■ 무슨 일을 했나")) and "못 받았습니다" not in _t, _t[:600])
+ok("평소는 앞 28일 — 그날을 넣지 않는다", "2026-09-06 ~ 2026-10-03" in _t, _t[:120])
+ok("같은 요일 평균도 같이", "같은 요일(일)" in _t, _t[:400])
+ok("갈래마다 그날 하나 · 평소 하나 — 서른 번 안팎만 묻는다", 20 <= len(_asked) <= 40, str(len(_asked)))
+os.environ["GA4_PROPERTY_ID"] = "1"
+_bad = X.t_day(date="10월4일")
+if _saved[3] is None:
+    os.environ.pop("GA4_PROPERTY_ID", None)
+else:
+    os.environ["GA4_PROPERTY_ID"] = _saved[3]
+ok("날짜를 못 읽으면 말해 준다", "못 읽었습니다" in _bad, _bad)
+
 print("\n" + "=" * 52)
 print(f"PASS {P}  FAIL {F}")
 sys.exit(1 if F else 0)
