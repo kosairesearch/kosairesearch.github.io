@@ -105,7 +105,8 @@ $('#googleBtn').addEventListener('click', async () => {
 '''
 
 # ══════════════════════════════════════════════════════════════════════════════
-LOGIN_JS = r'''import { auth, isConfigured } from "./firebase-config.js";
+LOGIN_JS = r'''import { app, auth, isConfigured, SOCIAL } from "./firebase-config.js";
+import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
 import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signOut, getAdditionalUserInfo }
   from "''' + FIREBASE_AUTH + r'''";
 import { wireSocialButtons } from "./social-login.js";
@@ -194,11 +195,22 @@ $('#forgotLink').addEventListener('click', async e => {
 
 /* 카카오 · 네이버 — OAuth 리다이렉트 + Cloud Functions 커스텀 토큰. #kakaoBtn · #naverBtn 을 id 로 찾고
    ?code= 복귀도 여기서 처리한다. 돌아갈 곳은 social-login.js 안에서 safeNext 를 거친다. */
-wireSocialButtons({ onError: showErr });
+/* 카카오 · 네이버 로그인을 맡는 서버 함수(socialLogin)를 이 화면이 열릴 때 미리 깨워 둔다(2026-10-04). 한동안 쓰이지 않은 함수는
+   첫 요청에 몇 초가 더 걸린다(콜드 스타트) — 깨워 두면 네이버 · 카카오를 다녀오는 동안 준비가 끝난다. 돌아온 길(?code=)에서는
+   곧 진짜 요청이 나가므로 보내지 않는다. 주소는 wireSocialButtons 보다 먼저 본다 — 그쪽이 code 를 주소에서 지운다.
+   서버는 warm 이면 아무것도 하지 않고 바로 돌려준다. 결과는 보지 않는다. */
+if(isConfigured && !new URLSearchParams(location.search).get("code")){
+  try{ httpsCallable(getFunctions(app, SOCIAL.functionsRegion), "socialLogin")({ warm: true }).catch(() => {}); }catch(_){}
+}
+
+/* 돌아온 직후의 진행 표시(build_auth_comp.OAUTH_WAIT 의 data-oauth)는 실패하면 거두고 안내를 띄운다 — 성공하면 다음 페이지로
+   넘어가므로 둘 필요가 없다. */
+wireSocialButtons({ onError: msg => { document.documentElement.removeAttribute("data-oauth"); showErr(msg); } });
 '''
 
 # ══════════════════════════════════════════════════════════════════════════════
-SIGNUP_JS = r'''import { auth, isConfigured } from "./firebase-config.js";
+SIGNUP_JS = r'''import { app, auth, isConfigured, SOCIAL } from "./firebase-config.js";
+import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
 import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, getAdditionalUserInfo }
   from "''' + FIREBASE_AUTH + r'''";
 import { wireSocialButtons } from "./social-login.js";
@@ -283,7 +295,17 @@ $('#emailForm').addEventListener('submit', async e => {
 });
 ''' + _GOOGLE + r'''
 /* 카카오 · 네이버 — 서버가 계정을 만들면서 같은 호출 안에 동의를 남긴다. 여기서 담아 보낼 것이 없다. */
-wireSocialButtons({ onError: showErr });
+/* 카카오 · 네이버 로그인을 맡는 서버 함수(socialLogin)를 이 화면이 열릴 때 미리 깨워 둔다(2026-10-04). 한동안 쓰이지 않은 함수는
+   첫 요청에 몇 초가 더 걸린다(콜드 스타트) — 깨워 두면 네이버 · 카카오를 다녀오는 동안 준비가 끝난다. 돌아온 길(?code=)에서는
+   곧 진짜 요청이 나가므로 보내지 않는다. 주소는 wireSocialButtons 보다 먼저 본다 — 그쪽이 code 를 주소에서 지운다.
+   서버는 warm 이면 아무것도 하지 않고 바로 돌려준다. 결과는 보지 않는다. */
+if(isConfigured && !new URLSearchParams(location.search).get("code")){
+  try{ httpsCallable(getFunctions(app, SOCIAL.functionsRegion), "socialLogin")({ warm: true }).catch(() => {}); }catch(_){}
+}
+
+/* 돌아온 직후의 진행 표시(build_auth_comp.OAUTH_WAIT 의 data-oauth)는 실패하면 거두고 안내를 띄운다 — 성공하면 다음 페이지로
+   넘어가므로 둘 필요가 없다. */
+wireSocialButtons({ onError: msg => { document.documentElement.removeAttribute("data-oauth"); showErr(msg); } });
 '''
 
 # ══════════════════════════════════════════════════════════════════════════════

@@ -32,10 +32,31 @@ def social(next_page):
             f'<button type="button" class="sbtn naver" id="naverBtn" data-user="you@naver.com">{N_SVG}네이버로 계속하기</button></div>')
 
 
+# 카카오 · 네이버에서 돌아온 순간(?code=&state=) — 서버 확인 · 로그인 · 이동이 끝날 때까지 폼 대신 진행 표시를 둔다(2026-10-04 사장
+# "네이버로 로그인하면 그냥 이 화면이 떠. 한참 기다려야 로그인된 걸로 뜨는데"). 전에는 돌아온 페이지가 로그인 폼을 그대로 보여 주고
+# 뒤에서 몇 초를 기다려, 아무 일도 일어나지 않은 것처럼 보였다. 표시는 페이지 맨 앞 스크립트가 그리기 전에 단다(data-oauth) —
+# social-login.js 와 같은 조건(저장해 둔 요청의 nonce 와 state 가 같을 때)에서만. 실패하면 페이지 스크립트(auth_staging 의 onError)가
+# 거두고 안내를 띄우며, 40초가 지나도 남아 있으면 스스로 거둔다(모듈을 못 받은 경우). 뒤로 가기로 되살아난 페이지(bfcache)에서도 거둔다.
+OAUTH_WAIT = ('<script>(function(){var d=document.documentElement,q=new URLSearchParams(location.search),s=null;if(!q.get("code"))return;'
+              'try{s=JSON.parse(sessionStorage.getItem("kos_social")||"null")}catch(e){}if(!s||s.nonce!==q.get("state"))return;'
+              'd.setAttribute("data-oauth",s.provider==="kakao"?"kakao":"naver");'
+              'setTimeout(function(){if(!d.hasAttribute("data-oauth"))return;d.removeAttribute("data-oauth");var e=document.getElementById("authErr");'
+              'if(e&&!e.classList.contains("show")){e.textContent="로그인 처리가 지연되고 있습니다. 잠시 후 다시 시도하여 주시기 바랍니다.";e.classList.add("show")}},40000);'
+              'addEventListener("pageshow",function(v){if(v.persisted)d.removeAttribute("data-oauth")})})();</script>'
+              '<div class="ow" role="status"><div class="spin" aria-hidden="true"></div>'
+              '<p class="ow-t"><span data-p="naver">네이버 계정을 확인하고 있습니다.</span><span data-p="kakao">카카오 계정을 확인하고 있습니다.</span></p>'
+              '<p class="ow-s">잠시만 기다려 주시기 바랍니다.</p></div>')
+
+
 CSS = '''
 /* 로그인·회원가입·약관 동의·계정 인증은 400px 단을 가운데에 — 제목도 가운데, 입력 칸 이름표는 왼쪽(읽는 방향) */
 .auth:not(.wide){margin-left:auto;margin-right:auto} .auth:not(.wide) .crumb,.auth:not(.wide) h1,.auth:not(.wide) .sub{text-align:center}
 .ac-body{text-align:center}
+/* 카카오 · 네이버에서 돌아와 기다리는 동안(OAUTH_WAIT) — 진행 표시만 두고 소개 · 버튼 · 폼 · 아래 안내는 감춘다(제목은 그대로) */
+.ow{display:none;padding:36px 0 12px;text-align:center} .ow .spin{margin:0 auto 18px}
+.ow-t{margin:0;font:600 16px/24px var(--font);color:var(--ink)} .ow-t span{display:none} .ow-s{margin:6px 0 0;font:400 14px/22px var(--font);color:var(--ink-62)}
+:root[data-oauth] .ow{display:block} :root[data-oauth="naver"] .ow-t [data-p="naver"],:root[data-oauth="kakao"] .ow-t [data-p="kakao"]{display:inline}
+:root[data-oauth] .auth>.sub,:root[data-oauth] .auth>.social,:root[data-oauth] .auth>.divider,:root[data-oauth] .auth>form,:root[data-oauth] .auth>.auth-foot{display:none}
 .alert.info{color:var(--ink-72)}
 .consent+.alert{margin:14px 0 0}
 .ac-body form{text-align:left}
@@ -73,6 +94,7 @@ CSS = '''
 
 LOGIN = f'''<main class="wrap"><div class="auth">
   <p class="crumb">계정</p><h1>로그인</h1>
+  {OAUTH_WAIT}
   <p class="sub">KOSAI 계정으로 로그인하시면 관심종목과 리포트를 이어서 보실 수 있습니다.</p>
   {social('home')}
   <div class="divider">또는 이메일로 로그인</div>
@@ -88,6 +110,7 @@ LOGIN = f'''<main class="wrap"><div class="auth">
 
 SIGNUP = f'''<main class="wrap"><div class="auth">
   <p class="crumb">계정</p><h1>회원가입</h1>
+  {OAUTH_WAIT}
   <p class="sub">무료 계정을 만드시면 관심종목을 저장하고 여러 기기에서 함께 보실 수 있습니다.</p>
   {social('consent')}
   <div class="divider">또는 이메일로 가입</div>
