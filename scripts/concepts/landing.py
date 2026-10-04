@@ -1154,10 +1154,13 @@ def copy_text(n_rep, n_sec, brief_no, src_avg):
         "end": "궁금한 종목의<br>리포트를 확인하세요",
         "brief_link": f"제{brief_no}호 읽기",
         "sectors_link": "전체 업종 보기",
-        "title": f"KOSAI — {SCOPE} {n_rep:,}개 종목의 기업 분석 리포트",
+        # 문서 제목 · 검색 설명 · 공유 설명 — 상호로 시작하고 바뀌는 숫자를 넣지 않는다(2026-10-04 사장 승인). 네이버 웹마스터 가이드: 메인 페이지
+        # 제목은 브랜드명으로 쓰고, 검색 노출을 위해 메인 페이지 제목 · 설명을 자주 바꾸면 불이익을 받을 수 있다. 종목 수를 넣었을 때는 수가 바뀔
+        # 때마다 제목이 바뀌었고 설명에는 상호가 없었다 — 네이버 'kosai' 검색에서 회사 소개 페이지가 첫 화면보다 앞에 나왔다
+        "title": "KOSAI — 기업 분석 리포트",
         "og_title": "KOSAI — 증권사가 다루지 않는 종목까지",
-        "desc": f"{SCOPE} {n_rep:,}개 종목의 기업 분석 리포트와 모닝브리핑, 업종 분석을 제공합니다.",
-        "og_desc": f"{SCOPE} {n_rep:,}개 종목의 기업 분석 리포트",
+        "desc": f"KOSAI는 {SCOPE} 종목의 기업 분석 리포트와 모닝브리핑, 업종 분석을 제공합니다.",
+        "og_desc": f"{SCOPE} 종목의 기업 분석 리포트",
     }
 
 
@@ -1263,7 +1266,7 @@ def page():
     if MODE == "live":
         # 실사이트 — 멤버십 · STAGING 띠 · 모의 결제 없음. 검색 노출 머리는 옛 실사이트 첫 화면에서 지키던 것을 그대로 둔다:
         # canonical https://kosai.kr/ · 네이버 소유확인 · 구조화 데이터(Organization + WebSite) · 공유 그림. 문서 제목 · 설명 · 공유 설명은
-        # copy_text 의 것(국내 상장 N개 종목)이고, 그 N 은 stamp_counts.py 가 30분마다 맞춘다(머리의 같은 문구 넷).
+        # copy_text 의 것이고 바뀌는 숫자가 없다(상호로 시작하는 고정 문구 · check_seo 7번이 지킨다).
         # 번역 엔진 · 통계는 머리, 로그인 상태 · 휠 스크롤 모듈과 번역 사전은 comp_common.finish 가 꼬리에 붙인다
         import comp_common as CC
         head = ('<!doctype html><html lang="ko"><head><meta charset="utf-8">\n' + CC.LIVE_HEAD
@@ -1283,7 +1286,7 @@ def page():
         import comp_common as CC
         head = ('<!doctype html><html lang="ko" data-staging><head><meta charset="utf-8">\n' + CC.STAGING_HEAD
                 + '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="format-detection" content="telephone=no">'
-                f'<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#141414"><title data-live>{esc(C["title"])}</title>'
+                f'<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#141414"><title>{esc(C["title"])}</title>'
                 f'<link rel="icon" href="{ASSETS}/favicon.png?v=k2"><link rel="stylesheet" href="{FONTS}/pretendard-subset.css">'
                 f'<style>\n{CSS.strip()}\n{STAGING_CSS.strip()}\n</style>{theme}</head><body>')
         return (head + CC.STAGING_BAR + nav() + main + foot() + rv_js + cyc_js + dawn_js + orb_js + js

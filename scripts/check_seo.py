@@ -89,11 +89,22 @@ if issues:   # 지난 호 — 최신 호만 brief.html 을, 나머지는 자기 
             _bad.append(f"{name} → {m.group(1) if m else '없음'}")
     check(not _bad, f"모닝브리핑 지난 호 {len(issues)}편의 대표 주소(최신 호는 brief.html · 나머지는 자기 주소)", ", ".join(_bad[:3]))
 
-# 7) 첫 화면의 매일 바뀌는 값이 실제와 같은가 — 리포트 수 · 업종 수 · 출처 평균 · 브리핑 호수 · '지난해' · 행성 자료,
-#    그리고 문서 제목 · 검색 설명 · 공유 설명의 '국내 상장 N개 종목'.
+# 7) 첫 화면의 매일 바뀌는 값이 실제와 같은가 — 리포트 수 · 업종 수 · 출처 평균 · 브리핑 호수 · '지난해' · 행성 자료.
 #    손으로 적어 둔 숫자라 아무도 안 고쳐 2,684 로 굳어 있던 일이 있었다. 이제 stamp_counts.py 가 리포트 워치독 ·
 #    모닝브리핑에서 박아 넣는데(data-live="이름" 자리), 그 단계가 언젠가 빠지거나 마크업이 바뀌어 자리를 못 찾으면 여기서 걸린다.
 #    값의 정의(리포트가 있는 상장 종목 · 분석 글이 있는 대표 업종 · 발행한 브리핑 수 …)는 그 스크립트 한 곳에 있다.
+#    문서 제목 · 검색 설명 · 공유 설명은 반대로 바뀌지 않아야 한다(2026-10-04 사장 승인) — 네이버 웹마스터 가이드가 메인 페이지 제목은
+#    브랜드명으로 쓰고 제목 · 설명을 자주 바꾸지 말라고 한다. 종목 수를 넣어 두었을 때 네이버 'kosai' 검색에서 회사 소개 페이지가
+#    첫 화면보다 앞에 나왔다. 그래서 상호로 시작하는지 · 숫자가 없는지를 본다.
+_hd = s[:s.find("</head>")]
+_metas = [m.group(1) for m in re.finditer(r'<title>([^<]*)</title>', _hd)] + \
+    re.findall(r'<meta (?:name|property)="(?:description|og:title|og:description|twitter:title|twitter:description)" content="([^"]*)"', _hd)
+check(len(_metas) >= 5 and not [x for x in _metas if re.search(r'\d', x)],
+      "첫 화면 문서 제목 · 검색 설명 · 공유 글에 바뀌는 숫자가 없음", " / ".join(x for x in _metas if re.search(r'\d', x)))
+_ttl = re.search(r'<title>([^<]*)</title>', _hd)
+_dsc = re.search(r'<meta name="description" content="([^"]*)"', _hd)
+check(bool(_ttl and _ttl.group(1).startswith("KOSAI") and _dsc and _dsc.group(1).startswith("KOSAI")),
+      "첫 화면 문서 제목 · 검색 설명이 상호(KOSAI)로 시작", f"{_ttl.group(1) if _ttl else '없음'} / {_dsc.group(1) if _dsc else '없음'}")
 try:
     import stamp_counts
     vals = stamp_counts.values()
