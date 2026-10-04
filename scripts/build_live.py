@@ -187,7 +187,7 @@ def main():
                 cur = ROOT / name
                 have = cur.read_text(encoding='utf-8') if cur.exists() else None
                 fresh = (t / name).read_text(encoding='utf-8')
-                if name == 'index.html' and have is not None:   # 첫 화면 — 매일 바뀌는 값(data-live · 머리의 종목 수)은 빼고 견준다
+                if name == 'index.html' and have is not None:   # 첫 화면 — 매일 바뀌는 값(data-live)은 빼고 견준다(머리에는 숫자가 없다 · check_seo 7)
                     have, fresh = (re.sub(r'(국내 상장 )[\d,]+(개 종목)', r'\1#\2', landing.mask(x)) for x in (have, fresh))
                 if have != fresh:
                     diff.append(name)

@@ -15,8 +15,9 @@
 첫 화면은 새 디자인 랜딩이다(2026-10-03 실사이트 이전 · scripts/concepts/landing.py). 매일 바뀌는 값마다
 data-live="이름" 표시가 있고, 이 스크립트가 그 자리를 고친다.
 
-    rep    '국내 상장 N개 종목'의 N — 리포트가 있는 상장 종목 수(상장 종목 ∩ 리포트 색인). 문서 제목 ·
-           검색 설명 · 공유 설명의 같은 문구도 함께 고친다. 홈 · 리포트 페이지 머리 줄과 같은 정의다.
+    rep    '국내 상장 N개 종목'의 N — 리포트가 있는 상장 종목 수(상장 종목 ∩ 리포트 색인). 홈 · 리포트 페이지
+           머리 줄과 같은 정의다. 문서 제목 · 검색 설명 · 공유 설명에는 숫자를 두지 않으므로(2026-10-04 · 네이버 가이드 —
+           메인 페이지 제목 · 설명을 자주 바꾸지 않는다) 머리는 고치지 않는다.
     sec    업종 분석 수 — 분석 글이 있는 대표 업종(sector_count)
     src    출처 평균 — 화면에 나오는 리포트의 출처 수 평균(sources_avg)
     brief  모닝브리핑 호수 — 가장 최근 호의 호수(발행할 때 적는 meta.issueNo · 없으면 발행한 브리핑 수 · brief_no)
@@ -180,8 +181,6 @@ def values() -> dict:
 
 
 _LIVE = r'(<(span|script)\b[^>]*\sdata-live="%s"[^>]*>)(.*?)(</\2>)'
-_HEAD_REP = re.compile(r'(국내 상장 )([\d,]+)(개 종목)')
-HEAD_MIN = 4   # 문서 제목 · 검색 설명 · 공유 설명(og · twitter)
 
 
 def stamp(html, vals=None):
@@ -198,15 +197,6 @@ def stamp(html, vals=None):
             if m.group(3) != want:
                 changes.append(f"{name} {m.group(3)[:24]} → {want[:24]}")
         html = pat.sub(lambda m: m.group(1) + want + m.group(4), html)
-    end = html.find("</head>")
-    head = html[:end] if end >= 0 else ""
-    if len(_HEAD_REP.findall(head)) < HEAD_MIN:
-        missing.append("head")
-    else:
-        new_head = _HEAD_REP.sub(lambda m: m.group(1) + vals["rep"] + m.group(3), head)
-        if new_head != head:
-            changes.append(f"제목 · 설명의 종목 수 → {vals['rep']}")
-            html = new_head + html[end:]
     return html, changes, missing
 
 
