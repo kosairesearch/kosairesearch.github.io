@@ -55,6 +55,7 @@ if(window.KOSi18n) window.KOSi18n.register({
   "탈퇴하기":"Delete account", "취소":"Cancel",
   "회원 탈퇴가 완료되었습니다":"Your account has been deleted",
   "그동안 이용해 주셔서 감사합니다.":"Thank you for using KOSAI.",
+  
   "홈으로":"Go to home"
 });
 
