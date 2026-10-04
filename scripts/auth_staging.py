@@ -205,7 +205,12 @@ if(isConfigured && !new URLSearchParams(location.search).get("code")){
 
 /* 돌아온 직후의 진행 표시(build_auth_comp.OAUTH_WAIT 의 data-oauth)는 실패하면 거두고 안내를 띄운다 — 성공하면 다음 페이지로
    넘어가므로 둘 필요가 없다. */
-wireSocialButtons({ onError: msg => { document.documentElement.removeAttribute("data-oauth"); showErr(msg); } });
+/* 안내 칸(#authErr)은 폼 안, 이메일 단추 위에 있다. 카카오 · 네이버에서 돌아와 실패하거나 취소한 안내는
+   휴대폰에서 첫 화면 아래에 떠 보이지 않았다(390×667 기준 약 670px 아래) — 화면 안으로 끌어온다(2026-10-04). */
+wireSocialButtons({ onError: msg => {
+  document.documentElement.removeAttribute("data-oauth"); showErr(msg);
+  try{ const r = errBox.getBoundingClientRect(); if(r.top < 0 || r.bottom > innerHeight) errBox.scrollIntoView({ block: 'center' }); }catch(_){}
+} });
 '''
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -305,7 +310,12 @@ if(isConfigured && !new URLSearchParams(location.search).get("code")){
 
 /* 돌아온 직후의 진행 표시(build_auth_comp.OAUTH_WAIT 의 data-oauth)는 실패하면 거두고 안내를 띄운다 — 성공하면 다음 페이지로
    넘어가므로 둘 필요가 없다. */
-wireSocialButtons({ onError: msg => { document.documentElement.removeAttribute("data-oauth"); showErr(msg); } });
+/* 안내 칸(#authErr)은 폼 안, 이메일 단추 위에 있다. 카카오 · 네이버에서 돌아와 실패하거나 취소한 안내는
+   휴대폰에서 첫 화면 아래에 떠 보이지 않았다(390×667 기준 약 670px 아래) — 화면 안으로 끌어온다(2026-10-04). */
+wireSocialButtons({ onError: msg => {
+  document.documentElement.removeAttribute("data-oauth"); showErr(msg);
+  try{ const r = errBox.getBoundingClientRect(); if(r.top < 0 || r.bottom > innerHeight) errBox.scrollIntoView({ block: 'center' }); }catch(_){}
+} });
 '''
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -337,7 +347,13 @@ const NEXT = safeNext();
 const allRow = $('#consentMount .check[data-k="all"]');
 let items = [...document.querySelectorAll('#consentMount .check')].filter(r => r !== allRow);
 function isOn(r){ return r.classList.contains('on'); }
-function syncAll(){ allRow.classList.toggle('on', items.every(isOn)); }
+/* 키보드 · 화면 낭독기(2026-10-04). 줄마다 체크 칸(.box)이 role=checkbox 이고 상태(aria-checked)는 .on 을 따라간다.
+   스페이스 · 엔터는 그 줄을 누른 것과 같다. 전에는 마우스로만 체크할 수 있어 키보드로는 가입을 마칠 수 없었다. */
+function paintAria(){ [allRow, ...items].forEach(r => { const b = r.querySelector('.box'); if(b) b.setAttribute('aria-checked', isOn(r) ? 'true' : 'false'); }); }
+function syncAll(){ allRow.classList.toggle('on', items.every(isOn)); paintAria(); }
+document.querySelectorAll('#consentMount .check .box').forEach(b => b.addEventListener('keydown', e => {
+  if(e.key === ' ' || e.key === 'Enter'){ e.preventDefault(); b.closest('.check').click(); }
+}));
 allRow.addEventListener('click', () => { const on = !isOn(allRow); items.forEach(r => r.classList.toggle('on', on)); syncAll(); hideErr(); });
 items.forEach(r => r.addEventListener('click', e => {
   if(e.target.closest('a')) return;      /* 약관을 보려던 것뿐이다 — 체크를 건드리지 않는다 */
@@ -348,7 +364,7 @@ function validate(){
   const bad = items.filter(r => r.dataset.req && !isOn(r));
   if(!bad.length) return true;
   showErr('필수 항목에 모두 동의하셔야 가입하실 수 있습니다.');
-  try{ bad[0].scrollIntoView({ block: 'center', behavior: 'smooth' }); }catch(_){}
+  try{ bad[0].scrollIntoView({ block: 'center', behavior: 'smooth' }); bad[0].querySelector('.box').focus({ preventScroll: true }); }catch(_){}
   return false;
 }
 
@@ -548,7 +564,15 @@ const oobCode = params.get('oobCode');
 /* 메일의 링크를 누르고 온 사람이 다음에 갈 곳. 주소에 그대로 실려 오는 값이라 믿으면 안 된다 —
    safeNext 가 우리 사이트 안의 .html 하나만 통과시킨다(로그인·가입 화면과 같은 자물쇠). 화면은
    createElement 로만 그리므로 문자열이 마크업으로 읽힐 자리도 없다. */
-const continueUrl = safeNext(params.get('continueUrl'));
+/* 파이어베이스는 메일을 보낼 때 받은 주소를 그대로 싣는다(서버 ACTION_SETTINGS — https://kosai.kr/Login.html).
+   safeNext 는 'https:' 로 시작하는 값을 모두 막으므로, 그대로 넘기면 '로그인하러 가기' 가 홈으로 갔다(2026-10-04).
+   우리 사이트 주소면 경로만 떼어 넘긴다 — 다른 사이트 주소는 그대로 넘겨 safeNext 가 막는다. */
+function sameSitePath(raw){
+  if(!raw) return raw;
+  try{ const u = new URL(raw, location.href); if(u.origin === location.origin || /^(www\.)?kosai\.kr$/i.test(u.hostname)) return u.pathname + u.search; }catch(_){}
+  return raw;
+}
+const continueUrl = safeNext(sameSitePath(params.get('continueUrl')));
 
 const crumbEl = $('#crumbLabel'), titleEl = $('#acTitle'), descEl = $('#acDesc'), bodyEl = $('#acBody'), errEl = $('#acErr');
 function showErrMsg(msg){ errEl.textContent = msg; errEl.classList.add('show'); }

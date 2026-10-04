@@ -307,7 +307,7 @@ function renderLoggedIn(wrap, user){
    페이지에 실리는데, 설정 창은 눌러야 열린다. 누르는 순간 받아 온다. */
 async function openSettings(){
   try{
-    const m = await import("./settings-panel.js?v=79e4a801");
+    const m = await import("./settings-panel.js?v=ef675553");
     m.openSettings();
   }catch(e){
     console.warn("[settings] 불러오지 못했습니다:", e && e.message);
@@ -395,7 +395,7 @@ async function guardConsent(user){
   if(consentChecked || !user || CONSENT_SKIP.test(here())) return;
   consentChecked = true;
   try{
-    const { consentState } = await import("./consent.js?v=206cdd28");
+    const { consentState } = await import("./consent.js?v=a8eed02c");
     const state = await consentState(user.uid);
     if(state === true){
       /* 기록이 제자리를 찾았다. 다음에 정말로 필요해지면(약관 개정 등)

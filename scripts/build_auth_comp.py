@@ -128,11 +128,11 @@ CONSENT = f'''<main class="wrap"><div class="auth">
   <p class="crumb">계정</p><h1 id="ttl">약관 동의</h1>
   <p class="sub" id="lede">가입을 완료하시려면 아래 항목에 동의하여 주시기 바랍니다.</p>
   <div class="consent" id="consentMount">
-    <label class="check all" data-k="all"><span class="box">{CHECK}</span>전체 동의</label>
-    <label class="check" data-k="age14" data-req="1"><span class="box">{CHECK}</span>[필수] 만 14세 이상입니다</label>
-    <label class="check" data-k="terms" data-req="1"><span class="box">{CHECK}</span>[필수] 이용약관 동의<a class="doc" href="/preview/terms.html" target="_blank" rel="noopener">보기</a></label>
-    <label class="check" data-k="privacy" data-req="1"><span class="box">{CHECK}</span><span class="lt">[필수] 개인정보 수집·이용 동의<span class="det"><span>수집 항목: 이메일, 이름 또는 닉네임, 회원 식별번호, 비밀번호(이메일 가입 시), 연결 해제용 인증 정보(네이버 로그인 시)</span><span>이용 목적: 회원 식별과 서비스 제공</span><span>보유 기간: 회원 탈퇴 시까지</span></span></span><a class="doc" href="/preview/privacy.html" target="_blank" rel="noopener">보기</a></label>
-    <label class="check" data-k="marketing"><span class="box">{CHECK}</span><span class="lt">[선택] 마케팅 정보 수신 동의<span class="det"><span>새 리포트 발행 알림, 서비스 소식과 이벤트 안내를 이메일로 받습니다. 설정에서 언제든 철회할 수 있습니다.</span></span></span></label>
+    <label class="check all" data-k="all"><span class="box" role="checkbox" tabindex="0" aria-checked="false" aria-labelledby="ckAll">{CHECK}</span><span id="ckAll">전체 동의</span></label>
+    <label class="check" data-k="age14" data-req="1"><span class="box" role="checkbox" tabindex="0" aria-checked="false" aria-labelledby="ckAge14">{CHECK}</span><span id="ckAge14">[필수] 만 14세 이상입니다</span></label>
+    <label class="check" data-k="terms" data-req="1"><span class="box" role="checkbox" tabindex="0" aria-checked="false" aria-labelledby="ckTerms">{CHECK}</span><span id="ckTerms">[필수] 이용약관 동의</span><a class="doc" href="/preview/terms.html" target="_blank" rel="noopener">보기</a></label>
+    <label class="check" data-k="privacy" data-req="1"><span class="box" role="checkbox" tabindex="0" aria-checked="false" aria-labelledby="ckPrivacy" aria-describedby="ckPrivacyD">{CHECK}</span><span class="lt"><span id="ckPrivacy">[필수] 개인정보 수집·이용 동의</span><span class="det" id="ckPrivacyD"><span>수집 항목: 이메일, 이름 또는 닉네임, 회원 식별번호, 비밀번호(이메일 가입 시), 연결 해제용 인증 정보(네이버 로그인 시)</span><span>이용 목적: 회원 식별과 서비스 제공</span><span>보유 기간: 회원 탈퇴 시까지</span></span></span><a class="doc" href="/preview/privacy.html" target="_blank" rel="noopener">보기</a></label>
+    <label class="check" data-k="marketing"><span class="box" role="checkbox" tabindex="0" aria-checked="false" aria-labelledby="ckMkt" aria-describedby="ckMktD">{CHECK}</span><span class="lt"><span id="ckMkt">[선택] 마케팅 정보 수신 동의</span><span class="det" id="ckMktD"><span>새 리포트 발행 알림, 서비스 소식과 이벤트 안내를 이메일로 받습니다. 설정에서 언제든 철회할 수 있습니다.</span></span></span></label>
   </div>
   <div class="alert" id="authErr" role="alert"></div>
   <div class="acts"><button type="button" class="btn btn-ink" id="agreeBtn">동의하고 시작하기</button><button type="button" class="tbtn" id="cancelBtn">동의하지 않고 취소</button></div>
@@ -219,7 +219,9 @@ SIGNUP_JS = r'''(function(){''' + JS_COMMON + r'''
 CONSENT_JS = r'''(function(){''' + JS_COMMON + r'''
   var qs=new URLSearchParams(location.search),email=qs.get('user')||'you@example.com';
   var rows=[].slice.call(document.querySelectorAll('#consentMount .check')),all=rows.shift();
-  function sync(){all.classList.toggle('on',rows.every(function(r){return r.classList.contains('on')}))}
+  function sync(){all.classList.toggle('on',rows.every(function(r){return r.classList.contains('on')}));
+    [all].concat(rows).forEach(function(r){var b=r.querySelector('.box');if(b)b.setAttribute('aria-checked',r.classList.contains('on')?'true':'false')})}
+  [].forEach.call(document.querySelectorAll('#consentMount .box'),function(b){b.addEventListener('keydown',function(e){if(e.key===' '||e.key==='Enter'){e.preventDefault();b.closest('.check').click()}})});
   all.addEventListener('click',function(){var on=!all.classList.contains('on');rows.forEach(function(r){r.classList.toggle('on',on)});sync();hideErr()});
   rows.forEach(function(r){r.addEventListener('click',function(e){if(e.target.closest('a'))return;r.classList.toggle('on');sync();hideErr()})});
   document.getElementById('agreeBtn').addEventListener('click',function(){var ok=rows.filter(function(r){return r.dataset.req}).every(function(r){return r.classList.contains('on')});

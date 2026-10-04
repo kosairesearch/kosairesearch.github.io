@@ -26,7 +26,7 @@
 import { app, auth, isConfigured } from "./firebase-config.js?v=7b8f27a5";
 import { onAuthStateChanged, signOut }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { getMarketing, setMarketing, accountInfo } from "./consent.js?v=206cdd28";
+import { getMarketing, setMarketing, accountInfo } from "./consent.js?v=a8eed02c";
 
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
 

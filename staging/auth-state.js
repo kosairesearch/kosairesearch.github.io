@@ -58,6 +58,8 @@ if(window.KOSi18n) window.KOSi18n.register({
   "탈퇴하기":"Delete account", "취소":"Cancel",
   "회원 탈퇴가 완료되었습니다":"Your account has been deleted",
   "그동안 이용해 주셔서 감사합니다.":"Thank you for using KOSAI.",
+  /*@paid*/"시연용 탈퇴 처리가 완료되었습니다":"Demo account deletion completed",
+  "스테이징에서는 실제 계정을 삭제하지 않습니다. 계정을 삭제하시려면 실사이트에서 탈퇴하여 주시기 바랍니다.":"Staging does not delete real accounts. To delete your account, please do so on the live site.",/*@/paid*/
   "홈으로":"Go to home"
 });
 
@@ -192,9 +194,10 @@ async function recordReason(email, reason, detail){
 async function finishWithdraw(user, email, reason, detail, ov, hadSub){
   try{
     await recordReason(email, reason, detail);
+    let demo = false;     // 시연(스테이징) — 실제 계정은 지우지 않았다
     try{
       const fns = getFunctions(app, "asia-northeast3");
-      if (window.__KOSDEMO) await window.KOSDemo.call('deleteAccount');
+      if (window.__KOSDEMO) demo = !!((((await window.KOSDemo.call('deleteAccount')) || {}).data || {}).demo);
       else await httpsCallable(fns, "deleteAccount")({});
       try{ await signOut(auth); }catch(_){}    // 계정은 서버가 지웠다 — 토큰만 정리
     }catch(e){
@@ -208,8 +211,10 @@ async function finishWithdraw(user, email, reason, detail, ov, hadSub){
     ov.querySelector('.wd-card').innerHTML = `
       <div class="wd-done">
         <div class="wd-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-        <h2 class="wd-done-h">${T("회원 탈퇴가 완료되었습니다")}</h2>
-        <p class="wd-done-sub">${T("그동안 이용해 주셔서 감사합니다.")}</p>
+        <h2 class="wd-done-h">${/*@paid*/demo ? T("시연용 탈퇴 처리가 완료되었습니다") : /*@/paid*/T("회원 탈퇴가 완료되었습니다")}</h2>
+        <p class="wd-done-sub">${/*@paid*//* 스테이징의 탈퇴는 시연이다(demo-backend — 실제 계정을 지우면 실사이트 계정이 사라진다).
+           전에는 여기서도 '탈퇴가 완료되었습니다' 라고 해, 계정이 남은 채 다시 가입하면 동의 화면 없이 로그인됐다(2026-10-04). */
+          demo ? T("스테이징에서는 실제 계정을 삭제하지 않습니다. 계정을 삭제하시려면 실사이트에서 탈퇴하여 주시기 바랍니다.") : /*@/paid*/T("그동안 이용해 주셔서 감사합니다.")}</p>
         <button type="button" class="wd-home">${T("홈으로")}</button>
       </div>`;
     const home = () => { location.href = siteBase() + "Home.html"; };
@@ -449,14 +454,25 @@ let consentChecked = false;
       못 물어보는 편이 낫다 — 동의는 다음 접속에 다시 물어볼 수 있지만, 갇힌 사람은
       아무것도 할 수 없다.
 
-   한 탭에서 한 번만 보낸다. 두 번째부터는 보내지 않고 콘솔에만 남긴다. */
+   한 탭에서 한 번만 보낸다. 두 번째부터는 보내지 않고 콘솔에만 남긴다.
+
+   셈은 계정마다 따로 센다('uid:횟수'). 전에는 탭 하나에 숫자 하나라, 같은 탭에서
+   로그아웃하고 다른 계정으로 들어오거나 탈퇴 뒤 다시 가입하면 그 새 계정은 한 번도
+   보내지 않은 채 동의 없이 사이트를 쓰게 됐다(2026-10-04). */
 const CONSENT_BOUNCE = "kos_consent_bounce";
+function bounceCount(uid){
+  try{
+    const v = sessionStorage.getItem(CONSENT_BOUNCE) || "";
+    const i = v.lastIndexOf(":");
+    return (i > 0 && v.slice(0, i) === uid) ? (parseInt(v.slice(i + 1), 10) || 0) : 0;
+  }catch(e){ return 0; }
+}
 
 async function guardConsent(user){
   if(consentChecked || !user || CONSENT_SKIP.test(here())) return;
   consentChecked = true;
   try{
-    const { consentState } = await import("./consent.js?v=206cdd28");
+    const { consentState } = await import("./consent.js?v=a8eed02c");
     const state = await consentState(user.uid);
     if(state === true){
       /* 기록이 제자리를 찾았다. 다음에 정말로 필요해지면(약관 개정 등)
@@ -466,14 +482,13 @@ async function guardConsent(user){
     }
     if(state !== false) return;            // null — 못 읽었다. 건드리지 않는다
 
-    let bounced = 0;
-    try{ bounced = parseInt(sessionStorage.getItem(CONSENT_BOUNCE) || "0", 10) || 0; }catch(e){}
+    const bounced = bounceCount(user.uid);
     if(bounced >= 1){
       console.warn("[consent] 동의 기록이 아직 없지만 이미 한 번 보냈다 —",
         "또 보내면 갇힌다. 이번엔 그냥 둔다.", user.uid);
       return;
     }
-    try{ sessionStorage.setItem(CONSENT_BOUNCE, String(bounced + 1)); }catch(e){}
+    try{ sessionStorage.setItem(CONSENT_BOUNCE, user.uid + ":" + (bounced + 1)); }catch(e){}
 
     /* 돌아갈 곳에 쿼리를 붙이지 않는다. 소셜 로그인 직후처럼 주소에 ?code=… 가
        남아 있을 때 그 인가코드까지 next 에 실려 가면, 동의를 마친 뒤 그 주소로
