@@ -329,10 +329,11 @@ export async function saveConsent(uid, values, method, email) {
    표시하는 셈이다. Signup.html 에서는 필수 체크박스 세 개 바로 아래에
    그 문장이 붙어 있었다.
 
-   ⚠️ 남은 일. functions/index.js 의 socialLogin 은 아직 신규 소셜 가입자의
-      동의를 age14/terms/privacy = true 로 하드코딩한다. 카카오 간편가입이
-      승인되면 service_terms API 로 실제 동의 내역을 받아 그대로 기록해야
-      한다. 그래야 마케팅 선택 동의도 사람마다 제대로 들어온다. */
+   카카오 · 네이버 가입자의 동의는 socialLogin 이 제공자 동의 내역(카카오
+   service_terms · 네이버 agreement)을 읽어 기록한다. 이번 가입에서 제공자
+   동의 화면을 거치지 않았으면 연결을 끊고 그 화면으로 한 번 더 보내고,
+   그래도 받지 못하면 동의 없이 계정을 만들어 Consent.html 에서 받는다
+   (2026-10-04 — 전에는 약관을 못 읽은 새 계정에 필수 세 항목을 true 로 적었다). */
 
 /* 이 계정이 현재 판(version)의 동의를 갖고 있나.
    읽기에 실패하면 null 을 돌려준다 — '없다'와 구분해야 한다. 통신이 잠깐

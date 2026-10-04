@@ -370,22 +370,13 @@ function mapNaverTerms(list){
   };
 }
 
-/* 제공자가 알려 준 동의를 그대로 믿어도 되는가.
+/* 제공자가 알려 준 동의 시각이 '이번 동의 화면' 의 것으로 볼 수 있는 한도.
 
-     withdrawnAt  마지막 탈퇴 시각(ms). 0 이면 탈퇴한 적 없음,
-                  -1 이면 조회에 실패해 모름
-     agreedAt     제공자가 알려 준 동의 시각(ms). 0 이면 모름
-
-   탈퇴한 적이 없으면 그냥 믿는다. 탈퇴한 적이 있으면 그 뒤에 다시 받은
-   동의여야 한다. 둘 중 하나라도 모르면 다시 받는다 — 동의를 한 번 더
-   받는 것은 번거로울 뿐이지만, 받지 않은 동의를 받았다고 적는 것은
-   되돌릴 수 없다. */
-function isStaleProviderConsent(withdrawnAt, agreedAt){
-  if(withdrawnAt === 0) return false;            // 탈퇴한 적 없음
-  if(withdrawnAt < 0) return true;               // 이력을 못 읽음
-  if(!agreedAt) return true;                     // 동의 시각을 모름
-  return agreedAt <= withdrawnAt;                // 탈퇴 이전 동의면 옛것
-}
+   동의 화면에서 누르는 순간 인가 코드가 나오고, 코드는 10분이면 만료된다(카카오 · 네이버).
+   그러니 우리 서버가 동의 내역을 읽는 때는 누른 지 길어야 10분 남짓이다. 시계 차이를 감안해
+   15분까지 받는다. 그보다 오래된 동의는 이번 가입에서 받은 것이 아니다 — socialLogin 의
+   '새 계정의 동의 근거' 참고. (2026-10-04 전에는 탈퇴 시각과만 견주었다 — isStaleProviderConsent) */
+const FRESH_CONSENT_MS = 15 * 60 * 1000;
 
 /* 탈퇴할 때 카카오 앱 연결을 끊는다.
 
@@ -400,7 +391,8 @@ function isStaleProviderConsent(withdrawnAt, agreedAt){
 
    실패해도 탈퇴는 계속한다. 카카오 쪽이 안 끊겼다고 우리 쪽 탈퇴를 막으면
    사용자는 계정을 못 지운다 — 그게 더 나쁘다. 대신 실패를 기록에 남기고,
-   그 사람이 다시 가입하면 isStaleProviderConsent 가 옛 동의를 걸러 낸다. */
+   그 사람이 다시 가입하면 socialLogin 이 그 사람의 토큰으로 연결을 끊고
+   카카오 동의 화면으로 다시 보낸다(unlinkByUserToken · 2026-10-04). */
 /* ── 네이버 연결 끊기 ────────────────────────────────────────────
    카카오에는 탈퇴할 때 unlink 를 걸어 두고 네이버에는 걸지 않았다. 그
    하나가 오늘 겪은 네이버 문제 대부분의 뿌리다.
@@ -418,9 +410,17 @@ function isStaleProviderConsent(withdrawnAt, agreedAt){
    카카오와 다른 점은 어드민 키가 없다는 것이다. 네이버는 그 사람의 접근
    토큰이 있어야 끊어 준다.
 
-     GET https://nid.naver.com/oauth2.0/token
-         ?grant_type=delete&client_id=…&client_secret=…
-         &access_token=…&service_provider=NAVER
+     POST https://nid.naver.com/oauth2.0/revoke
+          client_id=…&client_secret=…&token=…&token_type_hint=access_token
+
+   네이버 개발자 가이드 4.3 '토큰 폐기'(옛 이름 '연동 해제')다. 성공하면 '연결된
+   서비스 관리' 에서 KOSAI 가 빠지고, 다시 연결할 때 동의 화면이 새로 뜬다.
+   2026-10-04 전에는 옛 창구(token?grant_type=delete)를 썼다 — 새 창구가 실패할
+   때만 그쪽으로 한 번 더 시도한다.
+
+   ⚠️ 새 창구는 토큰이 이미 무효여도 200 을 준다(가이드의 '중요' 안내). 그래서
+      갱신 토큰을 바로 폐기하지 않고, 먼저 새 접근 토큰으로 바꿔 본다 — 바뀌면
+      연결이 살아 있다는 뜻이고, 그 토큰을 폐기해야 '끊었다' 가 참이 된다.
 
    접근 토큰은 한 시간이면 만료되므로 로그인할 때 갱신 토큰을 받아 두었다가
    탈퇴하는 순간 새 접근 토큰으로 바꿔서 쓴다. 갱신 토큰은 서버만 읽는
@@ -430,6 +430,26 @@ function isStaleProviderConsent(withdrawnAt, agreedAt){
    실패해도 탈퇴는 계속한다. 네이버 쪽이 안 끊겼다고 우리 쪽 탈퇴를 막으면
    사용자는 계정을 못 지운다 — 그게 더 나쁘다. 대신 결과를 기록에 남기고,
    못 끊은 사람은 아래 마케팅 문턱이 계속 지켜 준다. */
+/* 네이버 토큰 폐기(= 연결 끊기). 200 이면 성공이다 — 본문은 없다. */
+async function naverRevoke(accessToken){
+  try{
+    const res = await fetch("https://nid.naver.com/oauth2.0/revoke", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded;charset=utf-8" },
+      body: new URLSearchParams({
+        client_id: (NAVER_CLIENT_ID.value() || "").trim(),
+        client_secret: (NAVER_CLIENT_SECRET.value() || "").trim(),
+        token: accessToken, token_type_hint: "access_token"
+      })
+    });
+    if(res.ok) return true;
+    console.warn(`[naver] 토큰 폐기 HTTP ${res.status}:`, (await res.text()).slice(0, 300));
+  }catch(e){
+    console.warn("[naver] 토큰 폐기 오류:", e && e.message);
+  }
+  return false;
+}
+
 async function naverUnlink(uid){
   const db = admin.firestore();
   const ref = db.doc(`providerTokens/${uid}`);
@@ -457,14 +477,19 @@ async function naverUnlink(uid){
     const at = r.access_token;
     if(!at) throw new Error("no_access_token");
 
-    const d = await asJson(await fetch("https://nid.naver.com/oauth2.0/token?" +
-      new URLSearchParams({
-        grant_type: "delete",
-        client_id: id, client_secret: secret,
-        access_token: at, service_provider: "NAVER"
-      })), "naver_delete");
-    ok = d.result === "success";
-    console.log("[naver] 연결 끊기", uid, JSON.stringify(d).slice(0, 200));
+    ok = await naverRevoke(at);
+    if(!ok){
+      const d = await asJson(await fetch("https://nid.naver.com/oauth2.0/token?" +
+        new URLSearchParams({
+          grant_type: "delete",
+          client_id: id, client_secret: secret,
+          access_token: at, service_provider: "NAVER"
+        })), "naver_delete");
+      ok = d.result === "success";
+      console.log("[naver] 연결 끊기(옛 창구)", uid, JSON.stringify(d).slice(0, 200));
+    }else{
+      console.log("[naver] 연결 끊기(토큰 폐기)", uid);
+    }
   }catch(e){
     console.warn("[naver] 연결 끊기 실패", uid, e && e.message);
   }
@@ -502,6 +527,72 @@ async function kakaoUnlink(uid){
     console.error("[kakao] 연결 끊기 오류:", uid, e && e.message);
     return false;
   }
+}
+
+/* ── 가입하는 순간에 제공자 연결 끊기 (2026-10-04) ──────────────────
+   카카오 · 네이버의 동의 화면(이용약관 · 개인정보 수집 · 이용 · 만 14세 · 마케팅)은
+   그 사람과 우리 앱이 '처음 연결될 때만' 뜬다. 연결이 남아 있으면 건너뛴다.
+
+     카카오 — "동의 화면은 사용자와 앱을 처음 연결하는 경우에만 표시" · 다시 띄우려면
+              "연결 해제 API 호출 후 다시 인가 코드를 요청"(카카오 로그인 REST API 문서)
+     네이버 — "연동 해제 이후 사용자는 다시 연동을 수행할 수 있으며, 연동 과정에서
+              새로운 사용자 동의 절차가 진행됩니다"(네이버 로그인 개발 가이드 4.3)
+
+   KOSAI 계정은 없는데 연결만 남은 사람이 있다 — 탈퇴할 때 연결을 못 끊었거나(카카오
+   어드민 키 미설정), 계정이 탈퇴 아닌 길(콘솔 삭제 · 미완료 계정 정리)로 지워졌거나,
+   예전 가입 시도가 중간에 멈춘 경우다. 이 사람이 다시 가입하면 동의 화면 없이 계정이
+   만들어지고, 우리는 예전에 받은 동의를 새 계정에 붙이게 된다.
+
+   그래서 새 계정을 만들기 직전, 이번 가입에서 동의 화면을 거치지 않았으면 방금 받은
+   그 사람의 접근 토큰으로 연결을 끊고 제공자로 한 번 더 보낸다(socialLogin 의 reauth).
+   어드민 키가 필요 없다. 끊지 못하면 우리 동의 화면(Consent.html)에서 받는다. */
+async function unlinkByUserToken(provider, accessToken){
+  if(!accessToken) return false;
+  if(provider === "naver") return naverRevoke(accessToken);
+  if(provider !== "kakao") return false;
+  try{
+    const res = await fetch("https://kapi.kakao.com/v1/user/unlink", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+        "Content-Type": "application/x-www-form-urlencoded;charset=utf-8"
+      }
+    });
+    if(res.ok) return true;
+    console.warn(`[kakao] 연결 끊기(사용자 토큰) HTTP ${res.status}:`, (await res.text()).slice(0, 300));
+  }catch(e){
+    console.warn("[kakao] 연결 끊기(사용자 토큰) 오류:", e && e.message);
+  }
+  return false;
+}
+
+/* 우리가 이 사람의 제공자 연결을 끊은 뒤로 다시 연결된 적이 없는가.
+
+   끊은 기록은 둘이다 — 탈퇴하면서 끊은 것(withdraw · providerUnlinked: true)과 가입하는
+   순간에 끊은 것(provider_unlink). 끊은 뒤의 연결은 반드시 동의 화면을 거친다.
+
+   그 뒤에 다른 사건(가입 · 동의 대기 · 약관 맞추기 · 끊지 못한 탈퇴 …)이 있으면 그때
+   다시 연결된 것이므로 '끊긴 상태' 가 아니다. 탈퇴할 때 사건 기록을 모두 지우고 탈퇴
+   한 줄만 남기므로(deleteAccount) 남은 사건은 마지막 탈퇴 이후의 것뿐이다.
+
+   읽지 못하면 끊지 않은 것으로 본다 — 동의 화면을 한 번 더 거치게 될 뿐이다. */
+async function providerCutState(db, uid){
+  let cutAt = 0, linkAt = 0;
+  try{
+    const evs = await db.collection("consentEvents").where("uid", "==", uid).limit(500).get();
+    evs.forEach(d => {
+      const e = d.data() || {};
+      const ms = e.at && e.at.toDate ? e.at.toDate().getTime() : 0;
+      if(!ms) return;
+      const cut = e.kind === "provider_unlink" || (e.kind === "withdraw" && e.providerUnlinked === true);
+      if(cut){ if(ms > cutAt) cutAt = ms; }
+      else if(ms > linkAt) linkAt = ms;
+    });
+  }catch(e){
+    console.warn("[social] 연결 기록 조회 실패", uid, e && e.message);
+    return { cut: false, cutAt: 0, linkAt: 0 };
+  }
+  return { cut: cutAt > 0 && cutAt > linkAt, cutAt, linkAt };
 }
 
 async function kakaoProfile(code, redirectUri){
@@ -546,7 +637,10 @@ async function kakaoProfile(code, redirectUri){
     id: String(me.id),
     email: emailOkByKakao && acc.email ? acc.email : null,
     name: prof.nickname || (me.properties && me.properties.nickname) || "",
-    terms: await kakaoServiceTerms(tok.access_token)
+    terms: await kakaoServiceTerms(tok.access_token),
+    /* 새 계정인데 동의 화면을 거치지 않았으면 이 토큰으로 연결을 끊는다(unlinkByUserToken).
+       어디에도 저장하지 않는다. */
+    accessToken: tok.access_token
   };
 }
 
@@ -597,7 +691,10 @@ async function naverProfile(code, redirectUri, state){
     terms: await naverAgreements(tok.access_token),
     /* 탈퇴할 때 연결을 끊는 데 쓴다. 그때는 접근 토큰이 이미 만료돼 있으므로
        갱신 토큰을 들고 있어야 한다. naverUnlink 참고. */
-    refreshToken: tok.refresh_token || null
+    refreshToken: tok.refresh_token || null,
+    /* 새 계정인데 동의 화면을 거치지 않았으면 이 토큰으로 연결을 끊는다(unlinkByUserToken).
+       어디에도 저장하지 않는다. */
+    accessToken: tok.access_token
   };
 }
 
@@ -709,6 +806,11 @@ exports.socialLogin = onCall(
     const safeRedirect = checkRedirectUri(redirectUri);
     /* 이 인가가 동의 화면을 거쳐 왔는가(네이버). 아래 두 곳에서 쓴다. */
     const reprompted = (req.data || {}).reprompt === true;
+    /* 2026-10-04 부터의 클라이언트는 flow: 2 를 보낸다 — reauth · needConsent 대답을 알아듣는다.
+       reauth: true 는 '연결을 끊고 제공자로 다시 보낸 길에서 돌아왔다' 는 표시다. 한 번만
+       보내기 위한 것일 뿐 동의의 근거로 쓰지 않는다 — 근거는 서버가 남긴 끊은 기록이다. */
+    const flow2 = (req.data || {}).flow === 2;
+    const reauthTry = (req.data || {}).reauth === true;
 
     let p;
     if(provider === "kakao") p = await kakaoProfile(code, safeRedirect);
@@ -761,7 +863,11 @@ exports.socialLogin = onCall(
        없다' 며 2차를 요구하기 때문이다. 실제로 그렇게 됐다.
 
        뿌리를 고치면 그 위에 얹었던 땜질은 걷어내야 한다. 남겨 두면 그 땜질이
-       새 증상이 된다. */
+       새 증상이 된다.
+
+       연결이 남은 채 새 계정을 만드는 경우(탈퇴할 때 못 끊었거나 탈퇴 아닌 길로
+       계정이 없어진 경우)는 아래 '새 계정의 동의 근거' 가 맡는다(2026-10-04). 그때는
+       우리가 끊은 기록으로 판정하므로 끊은 뒤의 첫 연결에서 다시 묻지 않는다. */
     /* 새 소셜 계정을 만들기 전에, 같은 이메일을 쓰는 계정이 이미 있는지 본다.
        있으면 만들지 않는다 — 만들었다 지우는 것보다 애초에 안 만드는 쪽이
        확실하다. 기존 사용자(exists)는 검사하지 않는다. 이미 쓰고 있는
@@ -771,27 +877,6 @@ exports.socialLogin = onCall(
       if(other){
         throw new HttpsError("already-exists",
           `이 주소는 이미 ${other.label}으로 등록되어 있습니다. 그 방법으로 로그인하여 주시기 바랍니다.`, { method: other.method });
-      }
-    }
-
-    /* 기존 회원은 예전에 저장한 프로필 사진 주소를 이번 로그인에서 지운다(updateUser 의 photoURL: null).
-       새 계정은 처음부터 넣지 않는다 — createUser 에는 넣을 자리가 없다. */
-    if(exists) userProps.photoURL = null;
-
-    try{
-      if(exists) await admin.auth().updateUser(uid, userProps);
-      else await admin.auth().createUser({ uid, ...userProps });
-    }catch(e){
-      /* 이메일이 다른 계정에 이미 물려 있는 경우. 새 계정이면 위 검사에서
-         이미 걸러졌어야 하지만, 이메일을 심기 시작하기 전에 만들어진 계정을
-         갱신할 때 여기서 만날 수 있다. 그때는 이메일 없이 진행한다 —
-         로그인을 끊는 것보다 낫고, 중복 자체는 위 검사가 막는다. */
-      if(e && e.code === "auth/email-already-exists" && exists){
-        console.warn(`[social] 이메일 심기 건너뜀 ${uid}: 다른 계정이 쓰는 중`);
-        delete userProps.email; delete userProps.emailVerified;
-        try{ await admin.auth().updateUser(uid, userProps); }catch(_){}
-      } else {
-        throw new HttpsError("internal", `user_upsert_failed: ${e.code || e.message}`);
       }
     }
 
@@ -844,8 +929,8 @@ exports.socialLogin = onCall(
        근거는 '동의 화면을 거친 인가' 다. reprompted 는 옛 클라이언트가 아직
        보내는 값이고(그 왕복은 없앴다), 참이면 방금 그 화면을 보고 눌렀다는
        뜻이라 그대로 인정한다. 새 클라이언트에서는 늘 거짓이므로 이 자리는
-       사실상 쓰이지 않는다 — agreement 를 못 읽었을 때 우리 동의 화면으로
-       보내는 쪽(staleConsent)이 맡는다.
+       사실상 쓰이지 않는다 — agreement 를 못 읽었을 때는 계정을 동의 없이
+       만들고 우리 동의 화면(Consent.html)에서 받는다(needConsent).
 
        ⚠️ 필수 세 항목을 true 로 적는 것은, 네이버 개발자센터에 우리 이용약관·
           개인정보 수집·이용이 '필수' 동의항목으로 등록돼 있고 '만 14세
@@ -856,33 +941,13 @@ exports.socialLogin = onCall(
        보내게 된다. false 로 두고 설정 화면에서 본인이 켜게 한다. */
     const naverConsent = provider === "naver" && reprompted && !kt;
     /* 기존 회원의 기록. 마케팅을 맞춰 줄지 판단하는 데 쓴다. */
-    let snapBefore = null;
+    let snapBefore = null, snapRead = false;
     if(exists){
-      try{ snapBefore = (await db.collection("users").doc(uid).get()).data() || null; }
+      try{ snapBefore = (await db.collection("users").doc(uid).get()).data() || null; snapRead = true; }
       catch(e){ console.warn("[social] 기존 기록 조회 실패", uid, e && e.message); }
     }
     let syncedTerms = null;
 
-    /* 탈퇴했다가 다시 가입하는 경우.
-
-       탈퇴해도 카카오·네이버 쪽 앱 연결은 남는다. 그래서 다시 로그인하면
-       그쪽이 동의를 다시 묻지 않고 곧장 통과시킨다. 그 상태로 우리가
-       service_terms 를 읽으면 '동의함' 이 오는데, 그건 탈퇴 전에 받은
-       동의다. 새 계약에 옛 동의를 붙이는 셈이고, 계정 생성일보다 동의일이
-       앞서는 기록이 남는다.
-
-       탈퇴 기록으로 가려낸다. deleteAccount 가 개인정보를 지우면서도
-       'withdraw' 한 줄은 남겨 두므로(uid 와 시각뿐이라 개인정보가 아니다)
-       그 시각과 제공자가 알려 준 동의 시각을 견준다.
-
-         동의 시각이 탈퇴 뒤   → 다시 받은 동의다. 그대로 쓴다
-         동의 시각이 탈퇴 전   → 옛 동의다. 우리 동의 화면에서 다시 받는다
-         동의 시각을 모른다    → 옛 동의로 본다. 애매하면 다시 묻는다
-
-       조회에 실패하면 다시 묻는 쪽으로 기운다. 동의를 한 번 더 받는 것은
-       번거로울 뿐이지만, 받지 않은 동의를 받았다고 적는 것은 되돌릴 수
-       없다. */
-    let staleConsent = false;
     /* 제공자가 알려 준 동의 시각이 탈퇴보다 앞서 그대로 적을 수 없을 때 참.
        기록에 '계정 생성일보다 앞선 동의일' 을 남기지 않으려고 본다. */
     let providerAgreedAtStale = false;
@@ -964,47 +1029,87 @@ exports.socialLogin = onCall(
         `탈퇴 ${withdrawnAt}`, `연결끊김 ${unlinkedAtWithdraw}`);
     }
 
+    /* ── 새 계정의 동의 근거 (2026-10-04) ─────────────────────────────
+       새 계정은 '이번 가입에서 받은 동의' 로만 만든다. 카카오 · 네이버의 동의 화면은 처음
+       연결할 때만 뜨므로, 연결이 남아 있던 사람은 화면 없이 여기까지 온다. 아래 셋 중
+       하나면 이번에 그 화면을 거친 것이다.
+
+         · 우리가 이 사람의 연결을 끊은 뒤 다시 연결된 적이 없다(providerCutState)
+           — 끊긴 뒤의 연결은 반드시 동의 화면을 거친다
+         · 제공자가 알려 준 동의 시각이 방금이다(FRESH_CONSENT_MS 안)
+           — 인가 코드는 10분이면 만료되므로, 그보다 오래된 동의는 이번 화면의 것이 아니다
+         · 옛 클라이언트의 reprompt(동의 화면을 거친 인가)
+
+       ⚠️ 네이버는 연결을 끊었다가 다시 동의해도 agreeDate 를 처음 동의한 날로 준다(위
+          naverUnlink 주석 · 2026-08 실측). 그래서 네이버의 재가입은 날짜가 아니라 '끊은
+          기록' 으로 판정된다 — 끊은 기록을 지우거나 날짜로만 보게 되돌리면 네이버 재가입자가
+          동의 화면을 두 번 보거나 우리 동의 화면까지 세 번 묻게 된다.
+
+       전에는 탈퇴 기록과 날짜만 견주었다. 탈퇴 아닌 길로 계정이 없어진 사람(콘솔 삭제 ·
+       미완료 계정 정리 · 멈춘 가입)은 '탈퇴한 적 없음' 이라 옛 동의를 그대로 새 계정에
+       붙였고, 제공자 약관을 못 읽은 새 계정은 아무 화면도 거치지 않은 채 필수 세 항목을
+       true 로 적었다(signup-notice — 그 고지 문구는 2026-08-20 에 화면에서 지웠다). */
+    let fresh = true;               // 새 계정에서만 의미가 있다
+    let requiredOk = false;         // 제공자가 필수 세 항목을 모두 받아 주었다
+    let justAgreed = false;         // 제공자가 알려 준 동의 시각이 방금이다
     if(!exists){
       if(kt && kt.agreedAt && withdrawnAt > 0 && kt.agreedAt.getTime() <= withdrawnAt){
         providerAgreedAtStale = true;
       }
-
-      /* 제공자가 '언제 동의했는지' 를 알려 준 시각.
-
-         reprompt 를 맨 앞에 둔다. 그 값이 참이면 방금 제공자의 동의 화면을
-         보고 눌렀다는 뜻이고, 그건 어떤 날짜보다도 확실한 근거다.
-
-         이 줄이 없어서 재가입이 통째로 막혔다. 네이버는 탈퇴해도 자기 쪽
-         동의 기록을 지우지 않는다 — 동의 화면을 다시 띄워 눌러도 agreeDate
-         는 처음 동의한 날 그대로 온다. 그 날짜를 탈퇴 시각과 견주니 늘
-         '옛 동의' 로 판정됐고, consents 를 안 써서 우리 동의 화면이 또
-         떴다. 제공자 화면과 우리 화면을 둘 다 보게 되는 그 증상이다.
-
-         날짜가 오지 않거나(파싱 실패 포함) 탈퇴 이전이어도 마찬가지다.
-         reprompt 를 거쳤으면 방금 받은 동의다.
-
-         unlinkedAtWithdraw 도 같은 자리에 둔다. 탈퇴할 때 제공자 연결을
-         실제로 끊었다면 다음 로그인은 첫 연결이고, 그러면 제공자가 동의
-         화면을 반드시 띄운다 — 여기 도달했다는 것은 그 화면을 보고 눌렀다는
-         뜻이다. 제공자가 알려 주는 날짜가 무엇이든 상관없다.
-
-         ⚠️ 이 줄이 없어서 우리 동의 화면이 떴다. reprompt 왕복을 걷어내면서
-            '방금 동의 화면을 봤다' 는 근거가 통째로 사라졌는데, 그 자리를
-            대신할 근거(연결을 끊었다)를 넣지 않았다. 그래서 판정이 늘
-            제공자 날짜로 떨어졌고, 그 날짜는 옛 것이라 '옛 동의' 가 됐다.
-
-            땜질을 걷어낼 때는 그 땜질이 대신하던 일을 무엇이 맡을지까지
-            같이 정해야 한다. */
-      const providerConsentAt =
-        reprompted ? Date.now()               // 방금 동의 화면을 보고 눌렀다
-        : unlinkedAtWithdraw ? Date.now()     // 연결을 끊었으니 이번이 첫 연결이다
-        : kt && kt.agreedAt ? kt.agreedAt.getTime()
-        : naverConsent ? Date.now()
-        : 0;
-      staleConsent = isStaleProviderConsent(withdrawnAt, providerConsentAt);
-      console.log(`[social] 재가입 판정 ${uid} — 탈퇴 ${withdrawnAt}`,
+      requiredOk = !!(kt && kt.age14 === true && kt.terms === true && kt.privacy === true);
+      const cut = await providerCutState(db, uid);
+      const agreedMs = kt && kt.agreedAt ? kt.agreedAt.getTime() : 0;
+      justAgreed = agreedMs > 0 && Date.now() - agreedMs <= FRESH_CONSENT_MS;
+      fresh = reprompted || cut.cut || justAgreed;
+      console.log(`[social] 새 계정 판정 ${uid} —`,
         `제공자동의 ${kt && kt.agreedAt ? kt.agreedAt.toISOString() : "없음"}`,
-        `reprompt ${reprompted}`, `→ ${staleConsent ? "다시 받는다" : "그대로 쓴다"}`);
+        `필수 ${requiredOk}`, `끊은 기록 ${cut.cut}(${cut.cutAt}/${cut.linkAt})`,
+        `탈퇴 ${withdrawnAt}`, `reprompt ${reprompted}`, `재시도 ${reauthTry}`,
+        `→ ${fresh ? "이번 동의" : "옛 동의"}`);
+
+      /* 이번 동의가 아니면 연결을 끊고 제공자 동의 화면으로 한 번 더 보낸다. 계정은 아직
+         만들지 않았다 — 돌아오면 처음부터 다시 판정한다.
+
+         한 번만 보낸다. 돌아온 길(reauthTry)에서 또 '옛 동의' 가 나오면 끊은 기록이 남지
+         않은 것이니 더 보내지 않고 우리 동의 화면에서 받는다. 끊지 못해도 우리 동의 화면이다.
+         옛 클라이언트(flow 없음)는 이 대답을 모르므로 보내지 않는다. */
+      if(!fresh && requiredOk && flow2 && !reauthTry && p.accessToken){
+        if(await unlinkByUserToken(provider, p.accessToken)){
+          try{
+            /* 끊은 기록. 동의가 아니라 '끊었다' 는 사실이라 IP · 단말을 남기지 않는다. */
+            await db.collection("consentEvents").add({
+              uid, kind: "provider_unlink", provider, why: "reauth",
+              at: admin.firestore.FieldValue.serverTimestamp(),
+            });
+          }catch(e){
+            console.warn("[social] 끊은 기록 저장 실패", uid, e && e.message);
+          }
+          console.log(`[social] ${uid} — 연결을 끊었다. 제공자 동의 화면으로 다시 보낸다`);
+          return { reauth: true };
+        }
+        console.warn(`[social] ${uid} — 연결을 끊지 못했다. 우리 동의 화면에서 받는다`);
+      }
+    }
+
+    /* 기존 회원은 예전에 저장한 프로필 사진 주소를 이번 로그인에서 지운다(updateUser 의 photoURL: null).
+       새 계정은 처음부터 넣지 않는다 — createUser 에는 넣을 자리가 없다. */
+    if(exists) userProps.photoURL = null;
+
+    try{
+      if(exists) await admin.auth().updateUser(uid, userProps);
+      else await admin.auth().createUser({ uid, ...userProps });
+    }catch(e){
+      /* 이메일이 다른 계정에 이미 물려 있는 경우. 새 계정이면 위 검사에서
+         이미 걸러졌어야 하지만, 이메일을 심기 시작하기 전에 만들어진 계정을
+         갱신할 때 여기서 만날 수 있다. 그때는 이메일 없이 진행한다 —
+         로그인을 끊는 것보다 낫고, 중복 자체는 위 검사가 막는다. */
+      if(e && e.code === "auth/email-already-exists" && exists){
+        console.warn(`[social] 이메일 심기 건너뜀 ${uid}: 다른 계정이 쓰는 중`);
+        delete userProps.email; delete userProps.emailVerified;
+        try{ await admin.auth().updateUser(uid, userProps); }catch(_){}
+      } else {
+        throw new HttpsError("internal", `user_upsert_failed: ${e.code || e.message}`);
+      }
     }
 
     const patch = { signupMethod: provider, updatedAt: now };
@@ -1016,36 +1121,34 @@ exports.socialLogin = onCall(
          남으므로 개인정보가 아니다. 약관은 여기 오지 않는다 — 그건 위의
          agreement 창구에서 따로 받아 consents.kakaoTerms 에 담긴다. */
       if(provider === "naver" && p.raw) patch.providerRaw = p.raw;
-      if(staleConsent){
-        /* consents 를 쓰지 않는다. 그러면 auth-state.js 의 guardConsent 가
-           다음 화면에서 동의 페이지로 보낸다 — 구글과 같은 길이다. */
-      } else {
+      /* 동의는 '이번 가입에서 받은 것' 이 확인될 때만 적는다(위 '새 계정의 동의 근거').
+         아니면 consents 를 쓰지 않고 우리 동의 화면(Consent.html)에서 받는다 — 구글과 같은
+         길이다. 새 클라이언트는 needConsent 를 보고 곧바로 그리로 가고, 옛 클라이언트는
+         auth-state.js 의 guardConsent 가 다음 화면에서 보낸다. 받지 못한 채 하루가 지나면
+         purgeUnconsented 가 계정을 지운다. */
+      if(fresh && (requiredOk || naverConsent)){
         /* 적을 동의 시각. 사용자가 실제로 누른 시각이 우리 서버 시각보다
            맞다 — 다만 그 값이 탈퇴보다 앞서면 쓸 수 없다. 네이버는 탈퇴해도
            자기 쪽 동의 기록을 지우지 않아서 처음 동의한 날이 그대로 온다.
-           그걸 그대로 적으면 계정 생성일보다 앞선 동의일이 남는다. */
-        const ktAt = (kt && kt.agreedAt && !providerAgreedAtStale) ? kt.agreedAt : now;
-        patch.consents = kt ? {
+           그걸 그대로 적으면 계정 생성일보다 앞선 동의일이 남는다.
+           방금 받은 시각(justAgreed)이 아니면 서버 시각을 쓴다 — 끊은 기록으로
+           '이번 동의' 를 확인한 네이버 재가입은 날짜가 옛것이다. */
+        const ktAt = (kt && kt.agreedAt && justAgreed && !providerAgreedAtStale) ? kt.agreedAt : now;
+        patch.consents = requiredOk ? {
           version: CONSENT_VERSION,
           method: ktMethod,             // 제공자 동의 화면에서 받은 동의
           age14: kt.age14, terms: kt.terms, privacy: kt.privacy,
           marketing: kt.marketing,
           kakaoTerms: kt.raw,           // 받은 그대로. 매핑이 틀려도 자료는 남는다
           agreedAt: ktAt
-        } : naverConsent ? {
+        } : {
           version: CONSENT_VERSION,
           method: "naver-consent",      // 네이버 동의 화면에서 받은 동의
           age14: true, terms: true, privacy: true,
           marketing: false,             // 목록을 못 읽었다. 설정에서 켠다
           agreedAt: now
-        } : {
-          version: CONSENT_VERSION,
-          method: "signup-notice",
-          age14: true, terms: true, privacy: true,
-          marketing: false,             // 선택 — 설정 페이지에서 켠다
-          agreedAt: now
         };
-        patch.marketingAt = (kt && kt.marketing) ? ktAt : null;
+        patch.marketingAt = (requiredOk && kt.marketing) ? ktAt : null;
       }
     } else if(kt){
       /* 이미 있는 회원. 마케팅만 맞춰 준다. 그리고 우리 쪽에서 한 번도
@@ -1058,7 +1161,13 @@ exports.socialLogin = onCall(
          반대로 만진 적이 없는 회원은 우리가 marketing:false 를 박아 둔
          탓에 미동의로 남아 있다. 그 사람들이 여기서 제자리를 찾는다. */
       const cur = (snapBefore && snapBefore.consents) || {};
-      const touched = !!(snapBefore && (snapBefore.marketingAt || snapBefore.marketingOffAt));
+      /* 우리 동의 화면(체크박스)에서 받은 회원은 그 화면에서 마케팅을 직접 골랐다.
+         제공자 값(연결이 남아 있던 시절의 옛 동의일 수 있다)으로 덮지 않고, 받은
+         방식도 그대로 둔다(2026-10-04). 전에는 마케팅을 고르지 않고 동의한 사람이
+         다음 로그인에 제공자의 옛 동의로 '수신 동의' 가 됐다 — 동의하지 않은 사람에게
+         광고가 나가는 쪽이다. */
+      const viaOurs = cur.method === "checkbox";
+      const touched = viaOurs || !!(snapBefore && (snapBefore.marketingAt || snapBefore.marketingOffAt));
       const needsFix = !touched && cur.marketing !== kt.marketing;
 
       /* 필수 항목이 false 로 굳어 버린 기록을 되살린다.
@@ -1080,7 +1189,7 @@ exports.socialLogin = onCall(
       /* 고칠 기록이 실제로 있을 때만 손댄다.
 
          ⚠️ 이 조건이 없어서 무한 루프가 났다. 계정은 있는데 동의 기록이
-            없는 상태(위에서 staleConsent 로 consents 를 안 쓴 계정)에서
+            없는 상태(위에서 consents 를 안 쓰고 만든 계정)에서
             여기 들어오면 cur 가 {} 인데, 아래 Object.assign 이 그 위에
             kakaoTerms 와 method 만 얹어 반쪽짜리 기록을 만든다.
 
@@ -1111,7 +1220,7 @@ exports.socialLogin = onCall(
            보인다. */
         patch.consents = Object.assign({}, cur, raise, {
           kakaoTerms: kt.raw,
-          method: ktMethod,
+          method: viaOurs ? "checkbox" : ktMethod,
         });
         if(needsFix){
           patch.consents.marketing = kt.marketing;
@@ -1159,11 +1268,12 @@ exports.socialLogin = onCall(
         marketing: patch.consents.marketing === true,
         kakaoTerms: kt ? kt.raw : null,
       }, req);
-    } else if(!exists && staleConsent){
+    } else if(!exists){
       /* 아직 동의를 받지 않았다. 가입으로 적으면 안 된다 — 동의 화면을
-         마쳐야 recordSignupConsent 가 'signup' 을 남긴다. 다만 재가입
-         시도가 있었다는 사실은 남겨 둔다. */
-      await logConsent(db, uid, "rejoin_pending", { provider }, req);
+         마쳐야 recordSignupConsent 가 'signup' 을 남긴다. 다만 가입(탈퇴한
+         적이 있으면 재가입) 시도가 있었다는 사실은 남겨 둔다. 이 줄은 '이때
+         다시 연결됐다' 는 표시로도 쓰인다(providerCutState). */
+      await logConsent(db, uid, withdrawnAt !== 0 ? "rejoin_pending" : "signup_pending", { provider }, req);
     } else if(syncedTerms){
       await logConsent(db, uid, "provider_sync", {
         email: (patch.email || (snapBefore && snapBefore.email)) || null,
@@ -1177,7 +1287,14 @@ exports.socialLogin = onCall(
       provider,
       email: p.email || ""
     });
-    return { token };
+    /* 동의 화면으로 곧바로 보낼지. 새 클라이언트는 이 값이 참이면 원래 가려던 화면 대신
+       Consent.html 로 간다 — 한 탭에 한 번만 보내는 guardConsent 에 기대지 않는다.
+       기존 회원의 기록을 못 읽었으면 보내지 않는다(모르는 것을 '없다' 로 읽지 않는다). */
+    const cNow = patch.consents || (exists && snapBefore ? snapBefore.consents : null) || null;
+    const needConsent = (!exists || snapRead) && !(cNow &&
+      cNow.age14 === true && cNow.terms === true && cNow.privacy === true &&
+      cNow.version === CONSENT_VERSION);
+    return { token, needConsent };
   }
 );
 

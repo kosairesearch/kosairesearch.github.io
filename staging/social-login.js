@@ -17,6 +17,8 @@ if(window.KOSi18n) window.KOSi18n.register({
   "소셜 로그인에 실패했습니다.":"Social sign-in failed.",
   "이미 다른 방법으로 가입된 이메일입니다.":"This email is already registered with a different sign-in method.",
   "로그인 요청이 만료되었습니다. 다시 시도하여 주시기 바랍니다.":"Your sign-in request expired. Please try again.",
+  "로그인이 취소되었습니다.":"Sign-in was cancelled.",
+  "동의 절차를 마치지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.":"The consent step could not be completed. Please try again shortly.",
   "카카오·네이버 로그인은 앱 키 설정이 필요합니다. (firebase-config.js 참고)":"Kakao/Naver sign-in needs app keys to be configured (see firebase-config.js)."
 });
 const T = m => (window.KOSi18n ? window.KOSi18n.t(m) : m);
@@ -53,14 +55,16 @@ function ready(provider){
    needsConsent 를 돌려주니 2차에서 또 띄웠다. 뿌리를 고치고도 땜질을
    남겨 두면 그 땜질이 새 증상이 된다.
 
-   연결 끊기가 실패한 계정은 동의 화면이 안 뜰 수 있다. 그때는 서버가
-   제공자 동의 시각을 탈퇴 시각과 견주어 걸러 내고(staleConsent) 우리 동의
-   화면으로 보낸다. 막다른 길이 아니라 물러설 자리가 있다. */
-function redirectToProvider(provider, next){
+   연결이 남은 채 새 계정을 만들게 되면(탈퇴할 때 못 끊었거나 계정이 탈퇴 아닌
+   길로 없어진 경우) 동의 화면이 뜨지 않는다. 그때는 서버가 그 사람의 토큰으로
+   연결을 끊고 reauth 로 알려 준다 — 여기서 제공자로 딱 한 번 더 보내면 동의
+   화면이 뜬다(2026-10-04). 다시 보낸 길에는 reauth 표시를 달아 두 번 보내지
+   않는다. 끊지 못하면 서버가 needConsent 로 우리 동의 화면을 가리킨다. */
+function redirectToProvider(provider, next, reauth){
   const redirectUri = location.origin + location.pathname; // 예: https://.../Login.html
   const nonce = Math.random().toString(36).slice(2) + Date.now().toString(36);
   sessionStorage.setItem("kos_social",
-    JSON.stringify({ provider, next, nonce, redirectUri }));
+    JSON.stringify({ provider, next, nonce, redirectUri, reauth: !!reauth }));
   const clientId = provider === "kakao" ? SOCIAL.kakaoRestKey : SOCIAL.naverClientId;
   const url = `${AUTHORIZE[provider]}?response_type=code&client_id=${encodeURIComponent(clientId)}`
     + `&redirect_uri=${encodeURIComponent(redirectUri)}&state=${nonce}`;
@@ -71,26 +75,47 @@ async function completeLogin(code, returnedState, saved, onError){
   try{
     const fns = getFunctions(app, SOCIAL.functionsRegion);
     const call = httpsCallable(fns, "socialLogin");
+    /* flow: 2 — 서버의 reauth · needConsent 대답을 알아듣는다는 표시(2026-10-04).
+       reauth — 연결을 끊고 다시 보낸 길에서 돌아왔다는 표시. 서버는 이걸 보고
+       두 번 보내지 않는다. */
     const payload = {
       provider: saved.provider,
       code,
       redirectUri: saved.redirectUri,
-      state: returnedState
+      state: returnedState,
+      flow: 2
     };
+    if(saved.reauth) payload.reauth = true;
 
-    /* 우리 동의 화면을 띄우지 않는다.
-       카카오·네이버는 자기 동의 화면을 이미 보여 준다(카카오 '연결된 서비스',
-       네이버 '외부 사이트 연결' 에서 확인된다). 거기에 우리 화면을 한 번 더
-       얹으면 같은 걸 두 번 묻는 셈이다.
-
-       대신 버튼 아래 고지 문구로 받고, 서버가 계정을 만들면서 같은 호출 안에
-       동의를 기록한다(method: "signup-notice"). 기록에 실패하면 계정도
-       만들지 않는다. */
+    /* 동의는 카카오·네이버의 동의 화면에서 받는다(이용약관 · 개인정보 수집 ·
+       이용 · 만 14세 · 마케팅). 서버가 그 결과를 읽어 계정과 함께 기록한다.
+       이번 가입에서 그 화면을 거치지 않았으면 서버가 reauth 로 제공자에게 한
+       번 더 보내게 하고, 그래도 받지 못하면 needConsent 로 우리 동의 화면을
+       가리킨다. */
     const { data } = await call(payload);
+
+    if(data && data.reauth === true){
+      if(saved.reauth){
+        /* 서버는 두 번 보내지 않는다. 그래도 왔다면 여기서 멈춘다 — 제공자와
+           우리 사이를 끝없이 오가게 하지 않는다. */
+        history.replaceState({}, "", location.pathname);
+        onError && onError(T("동의 절차를 마치지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다."));
+        return;
+      }
+      redirectToProvider(saved.provider, saved.next || "", true);
+      return;
+    }
 
     if(!data || !data.token) throw new Error("가입을 마치지 못했습니다.");
 
     await signInWithCustomToken(auth, data.token);
+    /* 동의 기록이 없는 계정 — 곧바로 우리 동의 화면으로 간다. 다음 화면의
+       guardConsent 에 맡기면 한 탭에 한 번만 보내므로 놓칠 수 있다. 돌아갈
+       곳은 동의 화면이 safeNext 로 다시 거른다. */
+    if(data.needConsent === true){
+      location.replace("Consent.html?next=" + encodeURIComponent(saved.next || ""));
+      return;
+    }
     /* 돌아갈 곳은 반드시 safeNext 를 거친다.
 
        여기만 그냥 쓰고 있었다. next 는 주소에 실려 오는 값이라
@@ -147,12 +172,28 @@ export function wireSocialButtons(opts = {}){
         onError && onError(T("카카오·네이버 로그인은 앱 키 설정이 필요합니다. (firebase-config.js 참고)"));
         return;
       }
-      /* 처음에는 동의 화면 없이 보낸다. 필요하면 서버가 알려 준다. */
+      /* 처음 보내는 길이다(reauth 아님). 이번 가입에서 동의 화면을 거치지
+         않았으면 서버가 알려 준다. */
       redirectToProvider(provider, params.get("next") || "", false);
     });
   }
 
   // 2) OAuth 복귀 처리
+  /* 제공자 화면에서 취소하고 돌아온 경우(동의 화면의 '취소' 등) — ?error=access_denied.
+     전에는 아무 말 없이 첫 화면을 그대로 보여 주었다. 우리가 보낸 요청이 맞을 때만
+     알린다(state 가 저장해 둔 nonce 와 같을 때). */
+  if(!code && params.get("error")){
+    let saved = null;
+    try{ saved = JSON.parse(sessionStorage.getItem("kos_social") || "null"); }catch(e){}
+    if(saved && saved.nonce === returnedState){
+      sessionStorage.removeItem("kos_social");
+      history.replaceState({}, "", location.pathname);
+      const why = params.get("error");
+      onError && onError(why === "access_denied"
+        ? T("로그인이 취소되었습니다.")
+        : T("소셜 로그인에 실패했습니다.") + " (" + why + ")");
+    }
+  }
   if(code){
     let saved = null;
     try{ saved = JSON.parse(sessionStorage.getItem("kos_social") || "null"); }catch(e){}

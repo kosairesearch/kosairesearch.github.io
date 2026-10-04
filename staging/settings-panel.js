@@ -37,7 +37,7 @@
 import { app, auth, isConfigured } from "./firebase-config.js?v=7b8f27a5";
 import { onAuthStateChanged, signOut }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { getMarketing, setMarketing, accountInfo } from "./consent.js?v=206cdd28";
+import { getMarketing, setMarketing, accountInfo } from "./consent.js?v=a8eed02c";
 import { call } from "./subscription-api.js?v=7e5d7618";
 import { PLANS, planOf, won, fmtDay, payReady, upgradeDiff, MIN_CHARGE }
   from "./payment-config.js?v=4ae73997";
