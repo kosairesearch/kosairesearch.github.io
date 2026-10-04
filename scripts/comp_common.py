@@ -63,7 +63,8 @@ STAGING_HEAD = '''<script src="i18n.js"></script>
 # 404.html 은 없는 주소 어디에서나 열리므로(상대 주소가 깨진다) 스크립트를 넣지 않는다(head(scripts=False)).
 LIVE_HEAD = '<meta name="referrer" content="strict-origin-when-cross-origin">\n<script src="i18n.js"></script>\n<script src="analytics.js"></script>\n'
 SITE = 'https://kosai.kr'
-OG_IMAGE = SITE + '/assets/og-image.png?v=3'   # 1200×630 — 옛 실사이트 페이지와 같은 그림
+OG_IMAGE = SITE + '/assets/og-image.png?v=4'   # 1200×630 — 첫 화면의 점 행성과 로고(scripts/build_og_image.mjs · 2026-10-04 사장 1안).
+#   그림을 바꾸면 ?v= 를 올린다 — 카카오톡은 사진 주소로 휴대폰에 보관해, 주소가 같으면 옛 사진이 남는다
 # 페이지마다 검색 설명 · 색인 여부. 설명은 그 페이지 머리의 소개 문장(새 디자인 문구)을 쓴다 — 머리에 소개 문장이 없는 페이지만 따로 적었다.
 # 색인 여부는 옛 실사이트와 같다: 관심종목 · 약관 동의 · 계정 인증만 noindex(robots.txt 도 관심종목 · 계정 인증을 막는다).
 # 종목 상세(stock.html)와 첫 화면(index.html)은 생성기가 머리를 직접 쓴다(종목별 canonical · 구조화 데이터).
