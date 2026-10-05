@@ -467,6 +467,10 @@ def metrics_block(doc, today=None):
     st = stale_note(cur, today)
     if st:
         L.append(st)
+    # 2026-10-05 사장 지시 — 사장에게 주는 숫자는 국내 접속 방문자만(ga4_data.HOME_COUNTRY).
+    # 지난주가 아니라는 경고가 맨 위에 와야 해서 그 아래에 둔다.
+    L.append("대상  국내(대한민국) 접속 방문자" if doc.get("scope") == "KR"
+             else "대상  모든 나라 (해외 접속 포함 — 국내 접속만으로 다시 받아야 합니다)")
     L.append("")
 
     L.append("■ 얼마나 왔나")
@@ -1125,7 +1129,14 @@ def main():
         return 2
 
     # ① 지난주에 시작한 실험이 있으면 이번 숫자에 대 본다.
+    #    그 전에, 숫자의 범위(나라)가 바뀌었으면 기준값을 같은 범위로 다시 잰다 —
+    #    모든 나라로 잰 기준값을 국내만인 숫자에 대 보면 판정이 틀린다.
     exp = experiments.load()
+    moved = experiments.rebase(exp, weeks)
+    if moved:
+        experiments.save(exp)
+        log(f"· 실험 {len(moved)}건 기준값을 같은 범위로 다시 잼: "
+            + ", ".join(f"{x['id']} {x.get('baseValueBefore')}→{x.get('baseValue')}" for x in moved))
     done = experiments.review(exp, weeks)
     if done:
         experiments.save(exp)

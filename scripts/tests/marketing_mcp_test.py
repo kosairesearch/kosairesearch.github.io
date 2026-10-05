@@ -515,8 +515,11 @@ import datetime as _dtm
 import ga4_data as _G
 _saved = (_G._run, _G._client, _G._property, os.environ.get("GA4_PROPERTY_ID"))
 _asked = []
-def _fake_run(cl, prop, s, e, metrics, dims=None, limit=25, order=None, event_filter=None):
+_kw = []
+def _fake_run(cl, prop, s, e, metrics, dims=None, limit=25, order=None, event_filter=None,
+              **kw):
     _asked.append(tuple(dims or []))
+    _kw.append(kw)
     s0, e0 = _dtm.date.fromisoformat(s), _dtm.date.fromisoformat(e)
     out = []
     for i in range((e0 - s0).days + 1):
@@ -544,6 +547,37 @@ ok("끝까지 돈다 — 합계 · 날짜별 · 시간대 · 갈래 · 묶음 ·
 ok("평소는 앞 28일 — 그날을 넣지 않는다", "2026-09-06 ~ 2026-10-03" in _t, _t[:120])
 ok("같은 요일 평균도 같이", "같은 요일(일)" in _t, _t[:400])
 ok("갈래마다 그날 하나 · 평소 하나 — 서른 번 안팎만 묻는다", 20 <= len(_asked) <= 40, str(len(_asked)))
+ok("기본은 국내 접속만 — 모든 나라 스위치를 켜지 않는다",
+   _kw and not any(k.get("all_countries") for k in _kw), _kw[:2])
+ok("국내 접속만이라고 적는다", "국내(대한민국)에서 접속한 방문자만" in _t, _t[:300])
+
+_G._run, _G._client, _G._property = _fake_run, (lambda: None), (lambda: "properties/1")
+os.environ["GA4_PROPERTY_ID"] = "1"
+try:
+    _kw.clear()
+    _ta = X.t_day(date="2026-10-04", base=28, top=5, country="all")
+    _kw_day_all = list(_kw)
+    _kw.clear()
+    _ts = X.t_slice(date="2026-10-04", by="eventName")
+    _kw_slice = list(_kw)
+    _kw.clear()
+    _tc = X.t_slice(date="2026-10-04", where="country:China", by="eventName")
+    _kw.clear()
+    _tk = X.t_slice(date="2026-10-04", where="country:South%20Korea", by="eventName", country="all")
+finally:
+    _G._run, _G._client, _G._property = _saved[:3]
+    if _saved[3] is None:
+        os.environ.pop("GA4_PROPERTY_ID", None)
+    else:
+        os.environ["GA4_PROPERTY_ID"] = _saved[3]
+ok("country=all 이면 모든 나라로 묻는다(내부 점검용)",
+   _kw_day_all and all(k.get("all_countries") for k in _kw_day_all), _kw_day_all[:2])
+ok("모든 나라로 물었으면 사장에게 그대로 주지 말라고 적는다", "그대로 드리지 않습니다" in _ta, _ta[:300])
+ok("갈래 쪼개 보기도 기본은 국내 접속만",
+   _kw_slice and not any(k.get("all_countries") for k in _kw_slice) and "국내(대한민국)에서 접속한" in _ts,
+   _ts[:200])
+ok("다른 나라를 골라 보면 내부 점검용이라고 적는다", "그대로 드리지 않습니다" in _tc, _tc[:200])
+ok("국내를 골라 보면 내부 점검용 경고가 없다", "그대로 드리지 않습니다" not in _tk, _tk[:200])
 os.environ["GA4_PROPERTY_ID"] = "1"
 _bad = X.t_day(date="10월4일")
 if _saved[3] is None:
