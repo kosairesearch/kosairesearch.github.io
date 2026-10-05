@@ -26,6 +26,8 @@
   · 둘 다 개인·외국인·기관 셋뿐이라 기타법인이 없다. 셋의 합은 0 이 아니고
     (9/22 낮 실측: 개인 -1.6조 · 외국인 +0.2조 · 기관 -0.05조), 합 검증을 그대로
     걸면 멀쩡한 값이 죽는다. 키 이름이 뜻을 못 박는 응답은 합 검증을 건너뛴다.
+  · (2026-10-06) 셋뿐인 응답에는 나머지를 기타법인으로 넣는다(_rest). 빼고 주면
+    브리핑이 '기관만 샀다' 처럼 쓴다 — 코스피 기타법인이 날마다 +1.6조 안팎이다.
   · 날짜가 맞는 행만 쓴다. 장중에 부르면 오늘 미완성 행이 맨 위에 오는데,
     그걸 '직전 장' 이라고 브리핑에 내보내면 안 된다.
 
@@ -386,7 +388,8 @@ def market(sosok, code, bizdate):
         d, vals = picked
         # keys_used 는 JSON 이면 [[키, 키, 키]], 라벨 파서면 ["라벨 인접값"] — 펴서 본다.
         used = {k for ks in keys_used for k in (ks if isinstance(ks, list) else [ks])}
-        ok, why = _score(vals, named=bool(used) and used <= NAMED_KEYS)
+        named = bool(used) and used <= NAMED_KEYS
+        ok, why = _score(vals, named=named)
         if not ok:
             log(f"· {name} 검증 실패({why}) — 버린다 · 값 {vals}")
             continue
@@ -394,14 +397,30 @@ def market(sosok, code, bizdate):
         if mul is None:
             log(f"· {name} 단위 판정 실패({unit_note}) — 버린다")
             continue
+        values = {k: round(v * mul) for k, v in vals.items()}
+        if named and set(values) == {"개인", "외국인", "기관"}:
+            values["기타법인"] = _rest(values)
+            why += " · 기타법인=나머지"
         return {
             "source": name,
             "date": d.isoformat(),
             "unit": "억원",
             "check": f"{why} · {unit_note}" + (f" · 키 {keys_used[0]}" if keys_used else ""),
-            "values": {k: round(v * mul) for k, v in vals.items()},
+            "values": values,
         }
     return None
+
+
+def _rest(values):
+    """개인·외국인·기관만 주는 응답에서 기타법인 = 셋의 합의 반대.
+
+    투자자별 순매수는 합이 0 이다(누가 사면 누가 판다). 9/17 까지 쓰던 옛 표는
+    기타법인 칸이 따로 있었고 네 주체 합이 날마다 0(±1억)이었다 — 그 기타법인이
+    8월 말부터 거의 매일 +1조 6천억 안팎이었다. 9/22 에 셋뿐인 주소로 바꾸면서
+    이 칸이 빠졌고, 브리핑이 '기관만 샀다'·'받아낸 것은 개인' 처럼 썼다
+    (9/23 · 9/28 · 10/1 · 10/2 — 실제로는 기타법인이 가장 많이 샀다).
+    """
+    return -(values["개인"] + values["외국인"] + values["기관"])
 
 
 def _pick(rows, bizdate):
