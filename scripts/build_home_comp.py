@@ -48,7 +48,6 @@ CSS = '''
 .r-title{font:400 16px/24px var(--font);color:var(--ink)}
 .r-price{text-align:right;font:500 16px/22px var(--font);white-space:nowrap} .r-price .c{margin-left:8px;font:600 13px/18px var(--font)}
 .r-date{text-align:right;font:400 13px/18px var(--font);color:var(--ink-62)}
-.empty{margin:0;padding:28px 0;font:400 14px/20px var(--font);color:var(--ink-62)}
 /* 업종 탭 — 데스크톱: 정해진 순서로 전부 두 줄(더보기 없음). 줄 사이 23px 로 가로 간격(22px)과 맞춘다 — 한 줄용 44px 칸을
    그대로 쌓으면 줄 사이가 51px 로 벌어져 두 덩어리로 보인다(9/26 사장). 간격은 어디나 22px 로 같다 — 묶음 사이만
    1.5배 띄워 봤더니 묶음이 아니라 '간격이 제각각'으로 읽혔다(9/26 사장). 묶음은 순서로만 보이고, 휴대폰 시트에는 이름표가 있다. */
@@ -106,7 +105,6 @@ BODY = '''<main class="wrap">
   <section class="sec" id="reports">
     <div class="sec-h"><h2>최신 리포트</h2><a class="more" href="/Reports.html">전체 리포트 보기 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
     <div class="rows" id="reportRows"></div>
-    <p class="empty" id="reportEmpty" hidden>검색 결과가 없습니다.</p>
   </section>
   <section class="sec" id="movers">
     <div class="sec-h"><h2>업종별 거래대금 상위 종목</h2><a class="more" href="/industry.html">전체 업종 보기 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
@@ -122,7 +120,7 @@ JS = r'''(function(){
   var live=(window.KOS_LIVE_DATA&&KOS_LIVE_DATA.stocks)||[], RREP=(window.KOS_REPORTS&&KOS_REPORTS.reports)||{};
   var dd=(window.KOS_LIVE_DATA&&KOS_LIVE_DATA.dataDate)||''; var dateF=dd?dd.slice(0,4)+'-'+dd.slice(4,6)+'-'+dd.slice(6,8):'';
   /* 영어 화면(staging/i18n.js) — 리포트 제목은 자료의 영어 쪽, 검색은 영문명으로도. 한국어 문구는 사전이 바꾼다. */
-  var I=window.KOSi18n, EN=function(){return !!(I&&I.lang==='en')}, PK=function(o){return I?I.pick(o):(o&&o.ko)||''}, NM=function(s){return I?I.name(s):s.name};
+  var I=window.KOSi18n, EN=function(){return !!(I&&I.lang==='en')}, PK=function(o){return I?I.pick(o):(o&&o.ko)||''};
   function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
   var fmt={won:function(n){return n==null?'—':n.toLocaleString('ko-KR')+'원'},
     chg:function(c){c=c||0;return (c>0?'▲ ':c<0?'▼ ':'')+Math.abs(c).toFixed(2)+'%'},
@@ -136,14 +134,12 @@ JS = r'''(function(){
   /* ---- 최신 리포트 6편 (Home.html 과 같은 규칙) ---- */
   var REPORTS=live.filter(function(s){return RREP[s.ticker]}).map(function(s){var r=RREP[s.ticker];return Object.assign({},s,{reportDate:r.reportDate,reportTs:r.reportTs||r.reportDate,title:r.title||''})});
   REPORTS.sort(function(a,b){return String(b.reportTs||'').localeCompare(String(a.reportTs||''))||(b.mcap||0)-(a.mcap||0)}); REPORTS=REPORTS.slice(0,6);
-  var rowsEl=document.getElementById('reportRows'),emptyEl=document.getElementById('reportEmpty');
-  function renderReports(q){
-    var t=(q||'').trim().toLowerCase();
-    var list=REPORTS.filter(function(d){return !t||d.name.toLowerCase().indexOf(t)>=0||NM(d).toLowerCase().indexOf(t)>=0||d.ticker.indexOf(t)>=0||(d.sector||'').toLowerCase().indexOf(t)>=0});
-    rowsEl.innerHTML=list.map(function(d){var c=d.change||0;
+  /* 검색어로 이 목록을 거르지 않는다 — 6편 안에서만 찾아 '검색 결과가 없습니다'가 떴다(2026-10-05 사장 지적 화면). 검색은 위 검색창이 맡는다 */
+  var rowsEl=document.getElementById('reportRows');
+  function renderReports(){
+    rowsEl.innerHTML=REPORTS.map(function(d){var c=d.change||0;
       return '<a class="row" href="/stock.html?ticker='+d.ticker+'"><div><div class="r-name">'+esc(d.name)+'</div><div class="r-meta">'+d.ticker+' · '+esc(d.market)+' · '+esc(d.sector)+'<span class="md"> · '+esc(d.reportDate)+'</span></div></div>'
         +'<div class="r-title">'+esc(PK(d.title))+'</div><div class="r-price">'+fmt.won(d.price)+'<span class="c '+fmt.dir(c)+'">'+fmt.chg(c)+'</span></div><div class="r-date">'+esc(d.reportDate)+'</div></a>'}).join('');
-    emptyEl.hidden=!!list.length;
   }
 
   /* ---- 업종 탭 + 거래대금 순 종목 표 ---- */
@@ -210,7 +206,7 @@ JS = r'''(function(){
       :'<div class="ac-empty">'+(EN()?'No results for “'+esc(q.trim())+'”':'“'+esc(q.trim())+'” 검색 결과가 없습니다')+'</div>';open()}
   function goStock(tk){try{input.blur()}catch(e){}location.href='/stock.html?ticker='+tk}
   function setActive(n){var els=ac.querySelectorAll('.ac-item');if(!els.length)return;act=(n+els.length)%els.length;els.forEach(function(el,i){el.classList.toggle('active',i===act)});els[act].scrollIntoView({block:'nearest'})}
-  input.addEventListener('input',function(){renderReports(input.value);renderAC()});
+  input.addEventListener('input',renderAC);
   input.addEventListener('focus',function(){input.value.trim()?renderAC():renderRecent()});
   ac.addEventListener('click',function(e){var x=e.target.closest('.ac-x');if(x){e.preventDefault();e.stopPropagation();setRecent(getRecent().filter(function(r){return r.t!==x.dataset.tk}));renderRecent();return}
     if(e.target.closest('#acClear')){e.preventDefault();setRecent([]);closeAC();return}var row=e.target.closest('.ac-recent');if(row)goStock(row.dataset.tk)});
@@ -220,9 +216,14 @@ JS = r'''(function(){
     if(e.key==='ArrowDown'){e.preventDefault();setActive(act+1)}else if(e.key==='ArrowUp'){e.preventDefault();setActive(act-1)}else if(e.key==='Escape')closeAC()});
   document.addEventListener('click',function(e){if(!e.target.closest('.search-wrap'))closeAC()});
   window.addEventListener('pageshow',function(e){if(e.persisted){try{input.blur()}catch(_){}closeAC()}});
-  document.getElementById('searchBtn').addEventListener('click',function(){renderReports(input.value);closeAC();document.getElementById('reports').scrollIntoView({behavior:'smooth',block:'start'})});
+  /* '리포트 찾기' — 첫 화면(landing SEARCH_JS)과 같은 규칙: 고른 후보, 이름이나 종목코드가 꼭 맞는 종목, 결과가 하나뿐인 종목이면 그 리포트로 가고,
+     여럿이면 후보를 펼친다(없으면 '검색 결과가 없습니다'가 후보 자리에 뜬다). 빈 칸이면 검색창으로 */
+  document.getElementById('searchBtn').addEventListener('click',function(){var q=input.value.trim();if(!q){input.focus();return}
+    if(act>=0&&items[act]){goStock(items[act].ticker);return}
+    var rs=search(q),ex=rs.filter(function(s){return s.name===q||s.ticker===q})[0];if(ex||rs.length===1){goStock((ex||rs[0]).ticker);return}
+    renderAC();input.focus()});
 
-  renderReports('');renderTabs();renderMovers();
+  renderReports();renderTabs();renderMovers();
 })();
 '''
 
