@@ -803,7 +803,19 @@ def _day_line(r, width=22, with_avg=True):
     return head + f"  · 제대로 봄 {_pc(r['eng'])} · 1인당 {sec} · 처음 {_pc(r['new'])}{tail}"
 
 
-def t_day(date=None, base=28, top=8):
+def everywhere(country):
+    """country=all · 전체 면 다른 나라까지 본다(기계 접속 찾기). 기본은 국내 접속만."""
+    return str(country or "").strip().lower() in ("all", "전체", "모두", "everywhere")
+
+
+def scope_line(foreign):
+    if foreign:
+        return ("  ※ 국내 접속이 아닌 방문이 들어 있습니다 — 기계 접속을 찾는 내부 점검용입니다."
+                " 사장님께 이 숫자를 그대로 드리지 않습니다(국내 접속만 · 2026-10-05 지시).")
+    return "  ※ 국내(대한민국)에서 접속한 방문자만 셉니다."
+
+
+def t_day(date=None, base=28, top=8, country=None):
     """그날 온 사람이 진짜 손님인가 — 갈래마다 쪼개 평소 하루 평균과 견준다."""
     import ga4_data as G
     if not os.environ.get("GA4_PROPERTY_ID"):
@@ -830,11 +842,14 @@ def t_day(date=None, base=28, top=8):
     except (Exception, SystemExit) as e:
         return f"GA4 에 붙지 못했습니다 — {type(e).__name__}: {e}"
 
+    all_c = everywhere(country)
+
     def q(s, e, dims, limit=10000, metrics=DAY_METRICS, order="activeUsers"):
-        return G._run(cl, prop, s, e, metrics, dims, limit=limit, order=order)
+        return G._run(cl, prop, s, e, metrics, dims, limit=limit, order=order,
+                      all_countries=all_c)
 
     L = [f"[{D}({WEEKDAY_KO[day.weekday()]})] 그날 온 사람 쪼개 보기"
-         f" — 평소 = 앞 {nb}일({B0} ~ {B1})의 하루 평균"]
+         f" — 평소 = 앞 {nb}일({B0} ~ {B1})의 하루 평균", scope_line(all_c)]
     if day == today:
         L.append(f"  ※ 오늘은 아직 안 끝났습니다(지금 {now:%H:%M}). 평소보다 작게 나오는 게 정상입니다.")
     L.append("")
@@ -978,7 +993,7 @@ def parse_where(text):
     return out
 
 
-def t_slice(date=None, start=None, end=None, where="", by="eventName", top=20):
+def t_slice(date=None, start=None, end=None, where="", by="eventName", top=20, country=None):
     """한 갈래 안을 쪼갠다 — where 로 거르고 by 로 나눈다. by 는 '+' 로 잇고 ';' 로 여러 번.
     예: date=2026-10-04 where=sessionDefaultChannelGroup:Unassigned by=eventName;hour+deviceCategory"""
     import ga4_data as G
@@ -997,16 +1012,20 @@ def t_slice(date=None, start=None, end=None, where="", by="eventName", top=20):
         cl, prop = G._client(), G._property()
     except (Exception, SystemExit) as e:
         return f"GA4 에 붙지 못했습니다 — {type(e).__name__}: {e}"
+    all_c = everywhere(country)
+    korea = any(d == "country" and v == G.HOME_COUNTRY for d, v in conds)
+    other = any(d == "country" and v != G.HOME_COUNTRY for d, v in conds)
     head = f"[{d0} ~ {d1}]" if d0 != d1 else f"[{d0}]"
     cond_s = " · ".join(f"{d} = {v}" for d, v in conds) or "전체"
-    L = [f"{head} 거른 갈래: {cond_s}", ""]
+    L = [f"{head} 거른 갈래: {cond_s}", scope_line(other or (all_c and not korea)), ""]
     for spec in [x for x in str(by or "eventName").split(";") if x.strip()]:
         dims = [x.strip() for x in spec.split("+") if x.strip()][:7]
         rows, used = None, SLICE_METRICS
         for metrics in (SLICE_METRICS, ["activeUsers", "eventCount"], ["eventCount"]):
             try:
                 rows = G._run(cl, prop, d0.isoformat(), d1.isoformat(), metrics, dims,
-                              limit=max(top_n, 50), order=metrics[0], where=conds)
+                              limit=max(top_n, 50), order=metrics[0], where=conds,
+                              all_countries=all_c)
                 used = metrics
                 break
             except (Exception, SystemExit) as e:
@@ -1041,7 +1060,9 @@ def t_weeks():
     import ga4_store
     if not weeks:
         return f"받아 둔 주가 없습니다. 저장 위치: {ga4_store.where()}"
-    L = [f"받아 둔 주 {len(weeks)}개 · 저장 위치: {ga4_store.where()}"]
+    L = [f"받아 둔 주 {len(weeks)}개 · 저장 위치: {ga4_store.where()}",
+         "  범위: " + ("국내(대한민국) 접속 방문자만" if doc.get("scope") == "KR"
+                      else "모든 나라 — 국내 접속만으로 다시 받아야 한다(2026-10-05 지시)")]
     for w in weeks:
         L.append(f"  {w.get('week')} ~ {w.get('to')}  방문자 {w.get('users', 0):,}명"
                  + ("  (행동 자료 있음)" if any(
@@ -1184,7 +1205,8 @@ TOOLS = [
      "inputSchema": {"type": "object", "properties": {
          "date": {"type": "string", "description": "볼 날 YYYY-MM-DD (기본 오늘 · '어제' 도 된다)"},
          "base": {"type": "integer", "description": "평소로 볼 앞 날 수 (기본 28)"},
-         "top": {"type": "integer", "description": "갈래마다 보여 줄 줄 수 (기본 8)"}}}},
+         "top": {"type": "integer", "description": "갈래마다 보여 줄 줄 수 (기본 8)"},
+         "country": {"type": "string", "description": "기본은 국내 접속만. all 이면 모든 나라(기계 접속 찾기 · 내부 점검용)"}}}},
     {"name": "slice", "fn": t_slice,
      "description": "한 갈래 안을 쪼갠다 — where(측정기준:값, ';' 로 여럿)로 거르고 by(측정기준을 '+' 로 잇고 "
                     "';' 로 여러 번)로 나눈다. day 로 수상한 갈래를 찾은 다음, 그 안이 무엇인지 볼 때 부른다.",
@@ -1194,7 +1216,8 @@ TOOLS = [
          "end": {"type": "string", "description": "끝일"},
          "where": {"type": "string", "description": "예: country:China;sessionDefaultChannelGroup:Unassigned (빈칸은 %20)"},
          "by": {"type": "string", "description": "예: eventName;hour+deviceCategory+browser"},
-         "top": {"type": "integer", "description": "줄 수 (기본 20)"}}}},
+         "top": {"type": "integer", "description": "줄 수 (기본 20)"},
+         "country": {"type": "string", "description": "기본은 국내 접속만. all 이면 모든 나라(내부 점검용) · where 에 country 를 적어도 된다"}}}},
     {"name": "weeks", "fn": t_weeks,
      "description": "받아 둔 주가 몇 개이고 어디에 저장돼 있는지. 숫자가 "
                     "안 나올 때 여기부터 본다.",

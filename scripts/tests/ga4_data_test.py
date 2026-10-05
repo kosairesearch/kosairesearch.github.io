@@ -274,6 +274,79 @@ try:
 finally:
     G._run = _run0
 
+print("⑨ 사장에게 주는 숫자는 국내 접속만 — 2026-10-05 사장 지시")
+
+
+class _Cl:
+    """요청만 받아 두는 가짜 GA4."""
+    def __init__(self):
+        self.reqs = []
+
+    def run_report(self, req):
+        self.reqs.append(req)
+
+        class _R:
+            rows = []
+        return _R()
+
+
+def _countries(req):
+    """요청에 걸린 나라 조건 값들."""
+    f = req.dimension_filter
+    exprs = list(f.and_group.expressions) or [f]
+    return [x.filter.string_filter.value for x in exprs if x.filter.field_name == "country"]
+
+
+cl = _Cl()
+G._run(cl, "p", "2026-10-01", "2026-10-04", ["activeUsers"], ["date"])
+eq("아무 조건이 없어도 국내 접속만 묻는다", _countries(cl.reqs[-1]), ["South Korea"])
+G._run(cl, "p", "2026-10-01", "2026-10-04", ["eventCount"], ["eventName"],
+       event_filter="sign_up", where=[("pagePath", "/stock.html")])
+eq("다른 조건과 같이 걸려도 국내 조건이 남는다", _countries(cl.reqs[-1]), ["South Korea"])
+ok("다른 조건도 그대로 걸린다",
+   {x.filter.field_name for x in cl.reqs[-1].dimension_filter.and_group.expressions}
+   == {"country", "pagePath", "eventName"})
+G._run(cl, "p", "2026-10-01", "2026-10-04", ["activeUsers"], where=[("country", "China")])
+eq("나라를 적으면 그 나라만 — 국내 조건을 덧붙이지 않는다", _countries(cl.reqs[-1]), ["China"])
+G._run(cl, "p", "2026-10-01", "2026-10-04", ["activeUsers"], all_countries=True)
+eq("all_countries 면 나라 조건이 없다(기계 접속 찾기 · 내부 점검용)", _countries(cl.reqs[-1]), [])
+
+G.retention(cl, "p", weeks=2)
+eq("코호트(붙잡는 힘)도 국내 접속만", _countries(cl.reqs[-1]), ["South Korea"])
+G.retention(cl, "p", weeks=2, all_countries=True)
+eq("코호트도 all_countries 면 나라 조건이 없다", _countries(cl.reqs[-1]), [])
+
+_run1 = G._run
+try:
+    G._run = lambda *a, **k: [{"totalUsers": 10, "newUsers": 8}]
+    row = G.one_week(None, "p", datetime.date(2026, 9, 28), datetime.date(2026, 10, 4))
+    eq("한 주 기록에 범위를 적는다", row.get("scope"), "KR")
+finally:
+    G._run = _run1
+
+_saved9 = (G._client, G._property, G.one_week, G.retention)
+try:
+    G._client, G._property = (lambda: None), (lambda: "properties/1")
+    G.one_week = lambda c, p_, mon, sun, deep=False: {"week": mon.isoformat(), "to": sun.isoformat(),
+                                                       "scope": G.SCOPE, "users": 5}
+    G.retention = lambda c, p_, weeks=6: []
+    got = G.collect(2, today=datetime.date(2026, 10, 5))
+    eq("모은 기록에 범위를 적는다", got.get("scope"), "KR")
+finally:
+    G._client, G._property, G.one_week, G.retention = _saved9
+
+old = {"weeks": [{"week": "2026-09-21", "users": 296}, {"week": "2026-09-28", "users": 445}],
+       "retention": [{"week": "2026-09-21", "size": 9, "back": {"1": 1}}]}
+new = {"scope": "KR", "weeks": [{"week": "2026-09-28", "scope": "KR", "users": 316}], "retention": []}
+m = G._merge(old, new)
+eq("범위가 다른 옛 기록과는 합치지 않는다 — 이번에 받은 주만 남는다",
+   [(w["week"], w["users"]) for w in m["weeks"]], [("2026-09-28", 316)])
+ok("범위가 다른 옛 코호트도 가져오지 않는다", not m.get("retention"), m.get("retention"))
+m2 = G._merge(m, {"scope": "KR", "weeks": [{"week": "2026-10-05", "scope": "KR", "users": 1}]})
+eq("같은 범위끼리는 전처럼 합친다", [w["week"] for w in m2["weeks"]], ["2026-09-28", "2026-10-05"])
+m3 = G._merge({"weeks": [{"week": "2026-09-21", "users": 1}]}, {"weeks": [{"week": "2026-09-28", "users": 2}]})
+eq("범위 표시가 없는 기록끼리는 전처럼 합친다", [w["week"] for w in m3["weeks"]], ["2026-09-21", "2026-09-28"])
+
 print("\n" + "=" * 52)
 print(f"PASS {P}  FAIL {F}")
 sys.exit(1 if F else 0)

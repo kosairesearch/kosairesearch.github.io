@@ -800,6 +800,32 @@ finally:
     else:
         os.environ["ANTHROPIC_API_KEY"] = _saved_key
 
+
+print("\n▣ 숫자의 범위(나라)가 바뀌면 실험 기준값도 같은 범위로 다시 잰다 — 2026-10-05")
+import experiments as XR
+wk = [{"week": "2026-09-21", "to": "2026-09-27", "scope": "KR", "users": 236, "pageViews": 700},
+      {"week": "2026-09-28", "to": "2026-10-04", "scope": "KR", "users": 316, "pageViews": 900}]
+dx = {"items": [
+    {"id": "exp_10", "status": "제안됨", "metric": "pageViews", "baseWeek": "2026-09-28", "baseValue": 912},
+    {"id": "exp_3", "status": "끝남", "metric": "users", "baseWeek": "2026-09-21", "baseValue": 296},
+    {"id": "exp_11", "status": "제안됨", "metric": "users", "baseWeek": "2026-09-28", "baseValue": 316,
+     "scope": "KR"},
+    {"id": "exp_4", "status": "진행중", "metric": "users", "baseWeek": "2026-06-01", "baseValue": 50}]}
+mv = XR.rebase(dx, wk)
+eq("범위가 다른 진행 전 실험만 다시 잰다", [x["id"] for x in mv], ["exp_10"])
+it10 = dx["items"][0]
+eq("같은 주 · 같은 지표를 새 범위로", (it10["baseValue"], it10["baseValueBefore"], it10["scope"]),
+   (900, 912, "KR"))
+eq("끝난 실험은 건드리지 않는다", dx["items"][1]["baseValue"], 296)
+eq("기준 주를 못 찾으면 그대로 둔다", (dx["items"][3]["baseValue"], dx["items"][3].get("scope")), (50, None))
+eq("두 번 돌려도 그대로", XR.rebase(dx, wk), [])
+nw, why = XR.propose({"items": []}, "새 제안", "이유", "users", "할 일", wk[-1])
+eq("새 제안은 범위를 같이 적는다", nw.get("scope"), "KR")
+mb_kr = M.metrics_block({"scope": "KR", "weeks": [dict(w, scope="KR") for w in H],
+                         "health": {"ok": True, "problems": []}}, today=today)
+ok("숫자판에 대상(국내 접속)을 적는다", "대상  국내(대한민국) 접속 방문자" in mb_kr, mb_kr[:200])
+mb_all = M.metrics_block({"weeks": H, "health": {"ok": True, "problems": []}}, today=today)
+ok("옛 기록(모든 나라)이면 그렇다고 적는다", "대상  모든 나라" in mb_all, mb_all[:200])
 print("\n" + "=" * 52)
 print(f"PASS {P}  FAIL {F}")
 sys.exit(1 if F else 0)

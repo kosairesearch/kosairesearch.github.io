@@ -119,6 +119,7 @@ def propose(doc, title, why, metric, action, week):
         "metricLabel": METRICS[metric],
         "baseWeek": week.get("week"),
         "baseValue": value_of(week, metric),
+        "scope": week.get("scope"),
         "proposedAt": datetime.datetime.now(KST).date().isoformat(),
         "status": "제안됨",
         "startedWeek": None,
@@ -126,6 +127,32 @@ def propose(doc, title, why, metric, action, week):
     }
     doc["items"].append(item)
     return item, None
+
+
+def rebase(doc, weeks):
+    """숫자의 범위(나라)가 바뀌었으면 아직 안 끝난 실험의 기준값을 같은 범위로 다시 잰다.
+
+    2026-10-05 사장 지시로 숫자를 국내 접속만으로 바꿨다(ga4_data.SCOPE). 그 전에 올린
+    실험은 모든 나라로 잰 기준값을 들고 있다 — 그대로 두면 국내만인 '지금' 과 견줘
+    '역효과' 처럼 읽힌다. 같은 주 · 같은 지표를 새 범위로 다시 읽는 것이라 좋은 숫자를
+    고르는 것이 아니다. 옛 값은 baseValueBefore 에 남긴다. (다시 잰 실험 목록)"""
+    if not weeks:
+        return []
+    scope = weeks[-1].get("scope")
+    by_week = {w.get("week"): w for w in weeks}
+    moved = []
+    for it in doc.get("items") or []:
+        if it.get("status") not in ("제안됨", "진행중") or it.get("scope") == scope:
+            continue
+        w = by_week.get(it.get("baseWeek"))
+        if not w or w.get("scope") != scope:
+            continue
+        it["baseValueBefore"] = it.get("baseValue")
+        it["baseValue"] = value_of(w, it.get("metric"))
+        it["scope"] = scope
+        it["rebasedAt"] = datetime.datetime.now(KST).date().isoformat()
+        moved.append(it)
+    return moved
 
 
 RATE_METRICS = ("returnRate", "engagedRate", "signUpRate", "stickiness")

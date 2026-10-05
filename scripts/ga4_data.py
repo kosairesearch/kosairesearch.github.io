@@ -36,6 +36,17 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "ga4" / "weekly.json"
 KST = datetime.timezone(datetime.timedelta(hours=9))
 
+# 사장에게 주는 숫자는 국내(대한민국)에서 접속한 방문자만 센다 — 2026-10-05 사장 지시
+# ("지금까지 나온 데이터를 나한테 줄 때, 그리고 앞으로 나올 데이터를 줄 때도 오로지
+# 한국인들의 데이터만 이용해"). 해외 수집 기계(중국 · 미국 데이터센터)가 사람처럼 잡혀
+# 방문자 수를 부풀렸다(SKILL.md 규칙 ⑯). 모든 조회가 _run · retention 을 지나므로 거기서
+# 한 번 건다 — 부르는 곳마다 적으면 하나는 빠진다.
+# GA4 는 국적을 모른다. 접속 위치(IP)로 센다 — 해외의 한국인은 빠지고 국내의 외국인은 든다.
+# 다른 나라를 봐야 할 때(기계 접속 찾기)만 all_countries=True(도구에서는 country=all) —
+# 그 결과는 사장에게 그대로 주지 않는다.
+HOME_COUNTRY = "South Korea"
+SCOPE = "KR"            # 저장한 주간 기록의 범위. 범위가 다른 옛 기록과는 합치지 않는다(_merge)
+
 # 페이지 주소를 사람이 읽는 이름으로. 보고서에 /stock.html 보다
 # '종목 리포트'가 낫다.
 # 페이지 주소 → 사람이 읽는 이름. 실제 파일 이름이 대문자로 시작하므로
@@ -278,7 +289,7 @@ def _property():
 # ────────────────────────────── 조회 ──────────────────────────────
 
 def _run(client, prop, start, end, metrics, dimensions=None, limit=25, order=None,
-         event_filter=None, where=None):
+         event_filter=None, where=None, all_countries=False):
     """GA4 한 번 물어보기. (행 목록) 을 돌려준다.
 
     event_filter 를 주면 그 이름의 이벤트만 센다. 'sign_up 이 어느 페이지에서
@@ -287,6 +298,9 @@ def _run(client, prop, start, end, metrics, dimensions=None, limit=25, order=Non
 
     where 는 [(측정기준, 값), …] — 모두 맞는 것만 센다(값이 정확히 같을 때).
     '중국에서 온 사람만' · '어디서 왔는지 기록 안 된 방문만' 처럼 한 갈래 안을 쪼갤 때 쓴다.
+
+    나라 조건이 없으면 국내 접속(HOME_COUNTRY)만 센다. where 에 country 를 적었거나
+    all_countries 를 켰을 때만 다른 나라가 들어온다.
     """
     from google.analytics.data_v1beta.types import (
         DateRange, Dimension, Metric, RunReportRequest, OrderBy,
@@ -299,6 +313,8 @@ def _run(client, prop, start, end, metrics, dimensions=None, limit=25, order=Non
         limit=limit,
     )
     conds = list(where or [])
+    if not all_countries and not any(d == "country" for d, _ in conds):
+        conds.insert(0, ("country", HOME_COUNTRY))
     if event_filter:
         conds.append(("eventName", event_filter))
     if conds:
@@ -396,6 +412,7 @@ def one_week(client, prop, mon, sun, deep=False):
     row = {
         "week": mon.isoformat(),
         "to": sun.isoformat(),
+        "scope": SCOPE,
         "users": core.get("totalUsers", 0),
         "mau28": mau,
         "wau7": wau7,
@@ -521,7 +538,7 @@ def recent_events(client, prop, days=3):
     return out
 
 
-def retention(client, prop, weeks=6):
+def retention(client, prop, weeks=6, all_countries=False):
     """첫 방문 뒤 몇 주째에 다시 오나.
 
     "첫 방문 후 재방문까지 걸린 시간" 은 보통 이렇게 본다 — 같은 주에
@@ -537,7 +554,7 @@ def retention(client, prop, weeks=6):
     """
     from google.analytics.data_v1beta.types import (
         Cohort, CohortSpec, CohortsRange, DateRange, Dimension, Metric,
-        RunReportRequest)
+        RunReportRequest, FilterExpression, Filter)
 
     today = datetime.datetime.now(KST).date()
     bounds = week_bounds(today, weeks)
@@ -561,6 +578,10 @@ def retention(client, prop, weeks=6):
                 start_offset=0, end_offset=max(1, weeks - 1))),
         limit=500,
     )
+    # _run 과 같은 규칙 — 국내 접속만. 코호트는 _run 을 안 지나서 여기서 따로 건다.
+    if not all_countries:
+        req.dimension_filter = FilterExpression(filter=Filter(
+            field_name="country", string_filter=Filter.StringFilter(value=HOME_COUNTRY)))
     resp = client.run_report(req)
     box = {}
     for r in resp.rows:
@@ -728,6 +749,7 @@ def collect(weeks=8, today=None, deep_all=False):
     return {
         "collectedAt": datetime.datetime.now(KST).isoformat(timespec="seconds"),
         "propertyId": os.environ.get("GA4_PROPERTY_ID", ""),
+        "scope": SCOPE,
         "weeks": rows,
         "retention": keep,
         "health": {"ok": not problems, "problems": problems},
@@ -783,6 +805,13 @@ def _merge(prev, doc):
     (GA4 가 며칠 뒤에 숫자를 살짝 고치기도 한다), 새 기록에 없는 칸은 옛것을
     그대로 둔다.
     """
+    # 범위(나라)가 다른 기록과는 섞지 않는다. 합치면 옛 주는 모든 나라, 새 주는 국내만인
+    # 줄이 한 표에 서서 '지난주보다 줄었다' 같은 틀린 말이 나온다. 이번에 받은 주만으로
+    # 새로 쓴다 — 그래서 범위를 바꾼 첫 수집은 지금까지 쌓인 주 수만큼(--weeks) 받는다.
+    if (prev or {}).get("weeks") and (prev or {}).get("scope") != doc.get("scope"):
+        log(f"· 저장된 기록의 범위({(prev or {}).get('scope') or '모든 나라'})가 이번"
+            f"({doc.get('scope') or '모든 나라'})과 달라 합치지 않고 새로 쓴다")
+        prev = {}
     old = {w["week"]: w for w in (prev or {}).get("weeks") or []}
     for w in doc.get("weeks") or []:
         k = w["week"]
