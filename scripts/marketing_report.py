@@ -29,7 +29,10 @@ OUTDIR = ROOT / "data" / "ga4" / "reports"
 KST = datetime.timezone(datetime.timedelta(hours=9))
 
 MODEL = os.getenv("MARKETING_MODEL", "claude-opus-5")
-MAX_TOKENS = 4000
+# 적응형 사고의 토큰도 이 한도 안에서 센다. 4,000 이던 때 2026-10-05 보고서가 사고에
+# 한도를 다 쓰고 '다음 주에 할 것' 한가운데서 잘렸다(출력 4,000 토큰 · 본문 2,591자).
+# 한도는 상한일 뿐이라 쓴 만큼만 낸다. 스트리밍이라 큰 값이어도 시간 초과가 없다.
+MAX_TOKENS = 16000
 # 100만 토큰당 달러 (입력, 출력). generate_brief.py 와 같은 표다.
 PRICES = {
     "claude-opus-5": (5.0, 25.0),
@@ -1046,6 +1049,11 @@ def generate(prompt):
                             thinking={"type": "adaptive"},
                             messages=[{"role": "user", "content": prompt}]) as s:
         msg = s.get_final_message()
+    stop = getattr(msg, "stop_reason", None)
+    if stop == "max_tokens":
+        log(f"⚠️ 출력 한도({MAX_TOKENS:,} 토큰)에 걸려 보고서가 중간에 잘렸다 — MAX_TOKENS 를 올려라")
+    elif stop == "refusal":
+        log("⚠️ 모델이 답을 거절했다 — 보고서가 비었거나 짧을 수 있다")
     text = "\n".join(b.text for b in msg.content
                      if getattr(b, "type", None) == "text").strip()
     return text, msg.usage
