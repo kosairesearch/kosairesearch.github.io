@@ -745,6 +745,61 @@ try:
 finally:
     X.load, X.save, _GS.load, sys.argv = _ld, _sv, _gl, _argv
 
+print("\n▣ 보고서가 출력 한도에 걸리면 알린다")
+# 2026-10-05. 적응형 사고가 한도 4,000 토큰을 다 써서 '다음 주에 할 것' 한가운데서 잘렸는데
+# 아무 표시가 없었다. 한도를 올리고, 걸리면 기록에 남긴다.
+import io as _io
+import contextlib as _cl
+ok("한도는 사고까지 넉넉하게 — 16,000 이상", M.MAX_TOKENS >= 16000, str(M.MAX_TOKENS))
+
+class _FakeStream:
+    def __init__(self, stop):
+        self.stop = stop
+    def __enter__(self):
+        return self
+    def __exit__(self, *a):
+        return False
+    def get_final_message(self):
+        blk = types.SimpleNamespace(type="text", text="본문")
+        return types.SimpleNamespace(content=[blk], usage="쓴 양", stop_reason=self.stop)
+
+class _FakeClient:
+    stop = "end_turn"
+    seen = {}
+    def __init__(self, api_key=None):
+        self.messages = self
+    def stream(self, **kw):
+        _FakeClient.seen = kw
+        return _FakeStream(_FakeClient.stop)
+
+_fake_mod = types.SimpleNamespace(Anthropic=_FakeClient)
+_saved_mod = sys.modules.get("anthropic")
+_saved_key = os.environ.get("ANTHROPIC_API_KEY")
+sys.modules["anthropic"] = _fake_mod
+os.environ["ANTHROPIC_API_KEY"] = "x"
+try:
+    for _stop, _want in (("max_tokens", "출력 한도"), ("refusal", "거절"), ("end_turn", None)):
+        _FakeClient.stop = _stop
+        _buf = _io.StringIO()
+        with _cl.redirect_stdout(_buf), _cl.redirect_stderr(_buf):
+            _txt, _use = M.generate("물음")
+        _out = _buf.getvalue()
+        if _want:
+            ok(f"{_stop} 이면 기록에 경고가 남는다", _want in _out, _out)
+        else:
+            ok("끝까지 썼으면 경고가 없다", "⚠️" not in _out, _out)
+        ok(f"{_stop} 이어도 받은 본문은 돌려준다", _txt == "본문", _txt)
+    ok("한도를 그대로 넘긴다", _FakeClient.seen.get("max_tokens") == M.MAX_TOKENS, str(_FakeClient.seen.get("max_tokens")))
+finally:
+    if _saved_mod is None:
+        sys.modules.pop("anthropic", None)
+    else:
+        sys.modules["anthropic"] = _saved_mod
+    if _saved_key is None:
+        os.environ.pop("ANTHROPIC_API_KEY", None)
+    else:
+        os.environ["ANTHROPIC_API_KEY"] = _saved_key
+
 print("\n" + "=" * 52)
 print(f"PASS {P}  FAIL {F}")
 sys.exit(1 if F else 0)
