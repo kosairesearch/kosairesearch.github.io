@@ -95,6 +95,9 @@ CUR = 2026
 REAL_DATE = datetime.date          # M.datetime 은 같은 모듈 객체라 아래 패치가 여기도 미친다
 M.datetime.date = type("D", (), {"today": staticmethod(lambda: REAL_DATE(CUR, 9, 5)),
                                  "fromisoformat": staticmethod(REAL_DATE.fromisoformat)})
+# 상태 파일의 시계(S.now_kst → today_kst)도 같은 날로 — 실패 횟수 · 회수 파일 정리가 '며칠 지났나'를 이 시계로 잰다.
+# 실제 시계로 두면 검사 속 회수 날짜(9월 5일)에서 30일이 지난 2026-10-06 부터 방금 회수한 상태 파일이 정리돼 ⑦이 깨졌다.
+S.now_kst = lambda: datetime.datetime(CUR, 9, 5, 9, 0, tzinfo=S.KST)
 
 
 def fin_factory(annual_rows, quarters=None, ccy="KRW"):
