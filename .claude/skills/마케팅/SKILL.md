@@ -38,8 +38,9 @@ description: >
 기록(로그 · 요약 칸)을 누구나 본다(2026-10-06 사장 "외부에서 우리 마케팅 데이터를 보면 안되지").
 네가 만든 공개 열쇠로 작업이 답을 잠그고, 여는 열쇠는 이 세션에만 있다. 다섯 단계다.
 
-0. 저장소를 최신으로 맞추고 공개 열쇠를 꺼낸다 — **물을 때마다** 한다
-   `git pull origin main`
+0. 잠그는 도구를 최신으로 받고 공개 열쇠를 꺼낸다 — **물을 때마다** 한다
+   `git fetch -q origin main && git checkout origin/main -- scripts/marketing_seal.py .claude/skills/마케팅/SKILL.md`
+   (이 두 파일만 본선 것으로 받는다 — 작업 가지를 통째로 합치지 않아도 된다)
    `python3 scripts/marketing_seal.py newkey` ← 한 줄이 찍힌다. 그것이 key 다
    (처음이면 열쇠를 만들고, 있으면 같은 열쇠를 다시 찍는다. 공개 열쇠라 보여도 된다)
 
