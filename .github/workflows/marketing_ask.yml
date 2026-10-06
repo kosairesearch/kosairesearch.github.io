@@ -5,10 +5,16 @@ name: 📊 마케팅 숫자 물어보기
 # 왜 있나
 #   주간 보고는 월요일에 한 번 온다. 그 사이에 "네이버에서 온 사람 중
 #   몇 명이 가입했지?" 가 궁금해지면 다음 주까지 기다려야 했다.
-#   여기서 돌리면 바로 나온다. 요약(Summary) 칸에 찍힌다.
-#
 #   클로드(대화창)한테 물어보면 클로드가 이걸 대신 돌리고 읽어 준다.
-#   사람이 직접 돌려도 된다 — Run workflow 를 누르고 아래에서 고르면 된다.
+#
+# 답은 잠가서만 찍는다 (2026-10-06 사장 "외부에서 우리 마케팅 데이터를 보면 안되지")
+#   이 저장소는 GitHub Pages 무료 요금제라 공개이고, 실행 기록(로그 · 요약 칸)도
+#   GitHub 에 로그인한 누구나 본다. 전에는 답을 요약 칸에 그대로 찍어 방문자 수 ·
+#   유입 경로 · 인기 종목이 밖에서 보였다.
+#   이제 묻는 쪽(클로드 세션)이 만든 공개 열쇠(key)로 잠근 글만 찍고, 여는 열쇠는 묻는
+#   쪽에만 있다 — scripts/marketing_seal.py · .claude/skills/마케팅/SKILL.md '숫자를 어떻게
+#   가져오나'. key 가 없으면 묻지 않고 끝난다. 답을 그대로 찍는 길을 다시 만들지 마라.
+#   사람이 Run workflow 를 눌러도 숫자는 보이지 않는다 — 클로드에게 물으면 된다.
 #
 # 돈 안 든다. 모델을 부르지 않고 이미 받아 둔 숫자를 꺼내 보기만 한다.
 
@@ -36,6 +42,9 @@ on:
       args:
         description: "더 볼 것 (예: week=2026-08-31 · metric=returnRate weeks=8)"
         default: ''
+      key:
+        description: '잠글 공개 열쇠 — scripts/marketing_seal.py newkey 가 찍은 한 줄 (없으면 묻지 않는다)'
+        default: ''
 
 permissions:
   contents: read
@@ -50,6 +59,18 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+
+      # 열쇠부터 본다 — 열쇠 없이 물으면 답을 찍을 곳이 공개 기록뿐이다.
+      - name: 열쇠 확인
+        env:
+          KEY: ${{ inputs.key }}
+        run: |
+          if [ -z "$KEY" ]; then
+            echo "::error title=열쇠 없음::key 가 비어 있어 묻지 않았다. 이 저장소는 공개라 답을 그대로 찍지 않는다 — 클로드에게 물어라(.claude/skills/마케팅/SKILL.md '숫자를 어떻게 가져오나')"
+            exit 1
+          fi
+          python3 scripts/marketing_seal.py check --key "$KEY"
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -57,20 +78,17 @@ jobs:
       - run: pip install -r requirements.txt
 
       # 고른 값은 env 로 넘긴다 — 쉘 명령줄에 그대로 붙이면 따옴표
-      # 하나로 명령이 바뀐다.
-      - name: 물어본다
+      # 하나로 명령이 바뀐다. 답(오류 줄까지)은 파일로만 받고, 기록에는 잠근 줄만 찍는다.
+      - name: 물어본다 (답은 잠가서만 찍는다)
         env:
           GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
           TOOL: ${{ inputs.tool }}
           ARGS: ${{ inputs.args }}
+          KEY: ${{ inputs.key }}
         run: |
-          python3 scripts/marketing_mcp.py --ask "$TOOL" --args "$ARGS" \
-            2>&1 | tee /tmp/answer.txt
-          {
-            echo "## $TOOL ${ARGS:+· $ARGS}"
-            echo ''
-            echo '```'
-            cat /tmp/answer.txt
-            echo '```'
-          } >> $GITHUB_STEP_SUMMARY
+          rc=0
+          python3 scripts/marketing_mcp.py --ask "$TOOL" --args "$ARGS" > /tmp/answer.txt 2>&1 || rc=$?
+          python3 scripts/marketing_seal.py seal --key "$KEY" --in /tmp/answer.txt
+          echo "## $TOOL — 답은 잠겨 있습니다 (끝 코드 $rc)" >> "$GITHUB_STEP_SUMMARY"
+          exit $rc

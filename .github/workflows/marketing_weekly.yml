@@ -38,6 +38,14 @@ name: 📈 주간 성과 보고 (마케팅)
 #   1. GA4_PROPERTY_ID 를 GitHub 시크릿에 넣는다 (GA4 관리>속성 의 숫자 9자리)
 #   2. 구글 클라우드에서 'Google Analytics Data API' 를 켠다
 #   3. 서비스 계정 이메일을 GA4 속성에 '뷰어'로 추가한다
+#
+# 숫자 · 보고서 · 실험 대장은 실행 기록에 찍지 않는다 (2026-10-06 사장 "외부에서 우리 마케팅 데이터를 보면 안되지")
+#   실행 기록(로그 · 요약 칸)은 GitHub 에 로그인한 누구나 본다. 전에는 ① 이 주마다 이용자 · 방문 · 조회를
+#   찍고, ② 가 보고서 전문을, 실험 표시가 실험 대장을 요약 칸에 붙였다. 이제 단계마다 나온 글은 /tmp/out 에
+#   모으고, 맨 끝 단계가 key(묻는 쪽의 공개 열쇠 · scripts/marketing_seal.py)가 있으면 잠가서 찍고 없으면
+#   상태만 찍는다. 예약 실행은 늘 상태만이다. 보고서 원문은 Firestore 에 있다 — 마케팅 창이 marketing_ask 의
+#   report 로 읽는다. started · dropped · why · propose 칸에 적은 글은 실행 기록의 env 줄에 그대로 보인다 —
+#   번호만 적고 숫자는 적지 마라. 새 단계를 넣을 때도 숫자가 나오는 출력은 /tmp/out 으로 보낸다.
 
 on:
   schedule:
@@ -98,6 +106,9 @@ on:
       propose:
         description: '새 실험 올리기 — JSON 목록 [{"title","why","metric","action"}]'
         default: ''
+      key:
+        description: '잠글 공개 열쇠 — scripts/marketing_seal.py newkey 가 찍은 한 줄. 넣으면 출력(실패 줄 포함)을 잠가서 찍는다'
+        default: ''
 
 permissions:
   contents: read
@@ -112,11 +123,23 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+
+      # 열쇠를 넣었으면 먼저 본다 — 잘못된 열쇠로 끝까지 돌고(② 는 돈이 든다) 나서야 출력을 못 찍는 일이
+      # 없게. 여기서 실패하면 !cancelled() 로 도는 단계들도 keycheck 를 보고 서지 않는다.
+      - name: 열쇠 확인 (key 를 넣었을 때만)
+        id: keycheck
+        if: inputs.key != ''
+        env:
+          KEY: ${{ inputs.key }}
+        run: python3 scripts/marketing_seal.py check --key "$KEY"
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
       - run: pip install -r requirements.txt
+      - name: 출력 모을 자리
+        run: mkdir -p /tmp/out
 
       # 처음 설정용. 서비스 계정 이메일을 찍어 준다 — 구글 콘솔을 뒤지지
       # 않아도 되게. 이메일은 비밀이 아니다(신분증이지 열쇠가 아니다).
@@ -138,9 +161,8 @@ jobs:
           GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
         run: |
-          python3 scripts/ga4_data.py --probe 2>&1 | tee /tmp/probe.txt
-          { echo '## GA4 에서 뭘 물어볼 수 있나'; echo '```'; cat /tmp/probe.txt; echo '```'; } \
-            >> $GITHUB_STEP_SUMMARY
+          python3 scripts/ga4_data.py --probe > /tmp/out/probe.txt 2>&1
+          echo "가능 $(grep -c '✅' /tmp/out/probe.txt || true)개 · 불가 $(grep -c '❌' /tmp/out/probe.txt || true)개 — 항목별 결과는 key 를 넣어 돌리면 잠겨서 나온다"
 
       - name: ① GA4 에서 주간 숫자를 받는다
         if: inputs.setup != true && inputs.probe != true && inputs.sheet != true
@@ -149,8 +171,13 @@ jobs:
           GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
         run: |
+          rc=0
           python3 scripts/ga4_data.py --weeks ${{ inputs.weeks || '12' }} --write --check \
-            ${{ inputs.deep == true && '--deep' || '' }}
+            ${{ inputs.deep == true && '--deep' || '' }} > /tmp/out/1-ga4.txt 2>&1 || rc=$?
+          # --check 의 경고 줄(::warning)은 무엇이 막혔는지만 적혀 있어 그대로 내보낸다 — 숫자는 없다.
+          grep '^::warning' /tmp/out/1-ga4.txt || true
+          echo "① 끝 · 끝 코드 $rc — 받은 숫자는 Firestore 에 쌓였다(실행 기록에는 찍지 않는다)"
+          exit $rc
 
       # 휴대폰으로 보고를 읽다가 "그거 했다" 를 누를 수 있어야 한다.
       # 터미널을 열어야만 표시할 수 있으면 실험 대장은 결국 안 쓰인다.
@@ -159,7 +186,7 @@ jobs:
       # 칸에 적힌 값은 env 로 넘긴다 — 쉘 명령줄에 그대로 붙이면 따옴표
       # 하나로 명령이 바뀐다.
       - name: 실험 대장에 표시 (번호를 적었을 때만)
-        if: ${{ !cancelled() && (inputs.started != '' || inputs.dropped != '' || inputs.propose != '') }}
+        if: ${{ !cancelled() && steps.keycheck.outcome != 'failure' && (inputs.started != '' || inputs.dropped != '' || inputs.propose != '') }}
         env:
           GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
           STARTED: ${{ inputs.started }}
@@ -167,21 +194,26 @@ jobs:
           WHY: ${{ inputs.why }}
           PROPOSE: ${{ inputs.propose }}
         run: |
-          if [ -n "$STARTED" ]; then
-            python3 scripts/experiments.py --start "$STARTED"
-          fi
-          if [ -n "$DROPPED" ]; then
-            python3 scripts/experiments.py --drop "$DROPPED" --why "${WHY:-사장이 안 하기로 함}"
-          fi
-          if [ -n "$PROPOSE" ]; then
-            python3 scripts/experiments.py --propose "$PROPOSE"
-          fi
-          python3 scripts/experiments.py --list 2>&1 | tee -a $GITHUB_STEP_SUMMARY
+          rc=0
+          {
+            if [ -n "$STARTED" ]; then
+              python3 scripts/experiments.py --start "$STARTED" || rc=$?
+            fi
+            if [ -n "$DROPPED" ]; then
+              python3 scripts/experiments.py --drop "$DROPPED" --why "${WHY:-사장이 안 하기로 함}" || rc=$?
+            fi
+            if [ -n "$PROPOSE" ]; then
+              python3 scripts/experiments.py --propose "$PROPOSE" || rc=$?
+            fi
+            python3 scripts/experiments.py --list || true
+          } > /tmp/out/exp.txt 2>&1
+          echo "실험 대장 표시 끝 · 끝 코드 $rc — 대장은 marketing_ask 의 experiments 로 본다(실행 기록에는 찍지 않는다)"
+          exit $rc
 
       # ①이 실패해도 여기까지는 온다. 받아 둔 지난 기록으로라도 보고서를
       # 쓸 수 있으면 쓴다 — 이번 주 숫자가 없으면 재료가 그렇게 말해 준다.
       - name: ② 보고서를 쓴다
-        if: ${{ !cancelled() && inputs.setup != true && inputs.probe != true && inputs.sheet != true }}
+        if: ${{ !cancelled() && steps.keycheck.outcome != 'failure' && inputs.setup != true && inputs.probe != true && inputs.sheet != true }}
         id: write
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -194,21 +226,45 @@ jobs:
           # 이제 보고는 클로드의 마케팅 창으로 간다(월요일 10시 루틴).
           SEND=""
           [ "${{ inputs.send }}" = "true" ] && SEND="--send"
-          python3 scripts/marketing_report.py $SEND | tee /tmp/report.md
-          {
-            echo "## 주간 성과 보고"
-            echo ""
-            cat /tmp/report.md
-          } >> $GITHUB_STEP_SUMMARY
+          # 보고서는 Firestore 에 저장된다(마케팅 창이 report 로 읽는다). 기록에는 끝 코드만 — 비용 줄은
+          # marketing_report.py 가 요약 칸에 직접 남긴다(숫자가 아니라 돈이다).
+          rc=0
+          python3 scripts/marketing_report.py $SEND > /tmp/out/2-report.md 2> /tmp/out/2-report-log.txt || rc=$?
+          echo "② 끝 · 끝 코드 $rc — 보고서 원문은 Firestore 에(실행 기록에는 찍지 않는다)"
+          exit $rc
 
       # ③ 숫자를 구글 시트에 한 줄 붙인다 — 시간이 갈수록 한 눈에 보이게.
       #    ② 뒤에 두는 이유: 이번 주 보고가 올린 새 실험까지 실험 탭에 실린다.
       #    시크릿이 없으면 조용히 건너뛴다. 못 붙이면 이 단계만 빨갛게 남고
       #    보고는 그대로 나간다 — 조용히 넘어가서 한 주를 잃은 적이 있다(2026-09-14).
       - name: ③ 시트에 붙인다
-        if: ${{ !cancelled() && inputs.setup != true && inputs.probe != true }}
+        if: ${{ !cancelled() && steps.keycheck.outcome != 'failure' && inputs.setup != true && inputs.probe != true }}
         continue-on-error: true
         env:
           GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
           MARKETING_SHEET_ID: ${{ secrets.MARKETING_SHEET_ID }}
+        # 붙인 줄 수와 실패 이유만 찍는다 — 숫자는 시트(비공개)에 있다.
         run: python3 scripts/marketing_sheet.py
+
+      # 모은 출력 — key 를 넣었으면 잠가서, 아니면 상태만. 앞 단계가 실패해도 남긴다(실패 줄을 봐야 하므로).
+      - name: 출력 (key 가 있으면 잠가서)
+        if: ${{ always() && steps.keycheck.outcome != 'failure' }}
+        env:
+          KEY: ${{ inputs.key }}
+        run: |
+          shopt -s nullglob
+          files=(/tmp/out/*)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "모은 출력이 없다"
+            exit 0
+          fi
+          if [ -z "$KEY" ]; then
+            echo "출력 ${#files[@]}개는 공개 기록이라 찍지 않았다 — 보려면 key 를 넣어 다시 돌려라(.claude/skills/마케팅/SKILL.md)"
+            exit 0
+          fi
+          for f in "${files[@]}"; do
+            echo "===== $(basename "$f")"
+            cat "$f"
+            echo
+          done > /tmp/all.txt
+          python3 scripts/marketing_seal.py seal --key "$KEY" --in /tmp/all.txt
