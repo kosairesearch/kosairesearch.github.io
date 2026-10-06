@@ -141,13 +141,13 @@ function stockUrlEn(t){ return 'https://kosai.kr/en/stock/'+encodeURIComponent(t
 window.kosHash=function(s){ var x=0x811c9dc5; for(var k=0;k<s.length;k++){ x^=s.charCodeAt(k); x=Math.imul(x,0x01000193); } return ('0000000'+(x>>>0).toString(16)).slice(-8); };
 /* 영어 화면(staging/i18n.js) — 리포트 본문은 자료의 영어 쪽(pk), 라벨은 아래 T, 나머지 한국어 문구는 사전이 바꾼다. */
 var I18=window.KOSi18n; function EN(){ return !!(I18&&I18.lang==='en'); }
-var T_EN={ watch:'Add to Watchlist', watched:'In Watchlist',/*@paid*/
+var T_EN={ watch:'Add to Watchlist', watched:'In Watchlist', peers:'Other reports in this industry', peersMore:'View industry analysis',/*@paid*/
   lockTitle:'The full report is available to members', lockSub:'BASIC from ₩9,900 a month', lockSubN:'{s} sections · about {m} min read · BASIC from ₩9,900 a month',
   cta:'See membership', ctaLogin:'Sign in to keep reading', ctaOpen:'Continue reading', loading:'Loading…',
   note:'Already a member? Please sign in.',
   limitT:'You have reached your daily reading limit', limitS:'Your reading limit resets every day at midnight (Korea time).', upgrade:'Upgrade to PRO',
   errNone:'The members-only sections for this stock are not ready yet.', errFail:'Could not load. Please try again shortly.'/*@/paid*/ };
-var T={ watch:'관심종목 추가', watched:'관심종목 추가됨',/*@paid*/
+var T={ watch:'관심종목 추가', watched:'관심종목 추가됨', peers:'같은 업종의 다른 리포트', peersMore:'업종 분석 보기',/*@paid*/
   lockTitle:'리포트 전체는 구독 회원에게 제공됩니다', lockSub:'BASIC 월 9,900원부터', lockSubN:'{s}개 섹션 · 약 {m}분 분량 · BASIC 월 9,900원부터',
   cta:'멤버십 보기', ctaLogin:'로그인하고 이어 보기', ctaOpen:'이어서 읽기', loading:'불러오는 중…',
   note:'이미 구독 중이시라면 로그인하여 주시기 바랍니다.',
@@ -481,6 +481,44 @@ function notFoundH(){   // 종목코드가 문장 안에 들어가 사전으로�
   if(EN()) return '<div class="pending"><h2>Stock not found</h2><p>No stock matches the ticker you requested ('+esc(TK)+'). Please look it up again in the <a href="__ROOT__Reports.html">report list</a>.</p></div>';
   return '<div class="pending"><h2>종목을 찾을 수 없습니다</h2><p>요청하신 종목코드('+esc(TK)+')에 해당하는 종목이 없습니다. <a href="__ROOT__Reports.html">리포트 목록</a>에서 종목을 다시 찾아 주시기 바랍니다.</p></div>';
 }
+/* ── 같은 업종의 다른 리포트 — 리포트 끝(면책 문장 다음)에 같은 대표 업종에서 시가총액이 가까운 리포트 다섯 편과 업종 분석 링크
+   (2026-10-06 사장 "같은 업종의 다른 리포트 부분만 실사이트랑 스테이징에 적용해줘"). 고르는 규칙: 대표 업종(sector)이 같고, 자기 자신이
+   아니고, 시가총액과 리포트가 있는 종목을 시가총액 차이가 작은 순으로 — 거래대금 · 조회수는 쓰지 않는다. '기타'는 한 업종이 아니라
+   두지 않는다(분석 글도 없다). 미리 만든 페이지(stock/ · en/stock/)는 리포트 색인(reports-index.js)을 받지 않으므로 미리 그릴 때 고른
+   목록(제목 · 날짜까지)을 페이지에 싣고(window.KOS_PEERS — scripts/build_stock_static.py) 그것으로 그린다 — 브라우저가 다시 그려도
+   글이 같아 지문이 맞는다. 스테이징 · 옛 주소 껍데기는 색인을 받으므로 여기서 고른다. ── */
+var PEER_N=5;
+window.kosPeers=[];   /* 미리 그리기(prerender_stock.mjs)가 종목마다 읽어 페이지에 싣는다 */
+__PEER_HREF__
+function secHref(s){ return '__ROOT__industry.html?sector='+encodeURIComponent(s).replace(/[!'()*]/g,function(c){ return '%'+c.charCodeAt(0).toString(16).toUpperCase(); }); }   /* 사이트맵과 같은 글자(urllib.parse.quote) */
+function peerPick(st){
+  if(Array.isArray(window.KOS_PEERS)) return window.KOS_PEERS;
+  if(!st||!st.sector||st.sector==='기타'||st.mcap==null) return [];
+  var c=[];
+  for(var k=0;k<LIVE.length;k++){
+    var s=LIVE[k], r=REPORTS[s.ticker];
+    if(s.ticker===st.ticker||s.sector!==st.sector||s.mcap==null||!r||!r.title) continue;
+    c.push({d:Math.abs(s.mcap-st.mcap), k:k, s:s, r:r});
+  }
+  c.sort(function(a,b){ return (a.d-b.d)||(a.k-b.k); });
+  return c.slice(0,PEER_N).map(function(x){ return [x.s.ticker, x.r.title.ko||'', x.r.title.en||'', x.r.reportDate||'']; });
+}
+function peersH(st){
+  var list=peerPick(st), by={}, rows=[];
+  window.kosPeers=list;
+  LIVE.forEach(function(s){ by[s.ticker]=s; });
+  list.forEach(function(p){
+    var s=by[p[0]]; if(!s) return;
+    var nm=s.name||p[0]; if(EN()&&I18&&I18.name) nm=I18.name(s)||nm;
+    var ti=(EN()&&p[2])?p[2]:(p[1]||p[2]);
+    /* 이름 칸은 div — span 안에 span 만 있으면 번역 엔진(i18n.js autoBlock)이 덩어리째 글자로 바꿔 이름과 종목코드가 한 줄로 붙는다 */
+    rows.push('<a class="pr" href="'+esc(peerHref(p[0]))+'"><div class="pr-n"><div class="pr-name">'+esc(nm)+'</div><div class="pr-meta">'+esc(p[0])+' · '+esc(s.market||'')+'</div></div>'
+      +'<span class="pr-title">'+esc(ti)+'</span><span class="pr-date">'+esc(p[3])+'</span></a>');
+  });
+  if(!rows.length) return '';
+  return '<section class="peers" aria-labelledby="peers-h"><div class="sec-h"><h2 id="peers-h">'+esc(T.peers)+'</h2></div><div class="pr-rows">'+rows.join('')+'</div>'
+    +'<a class="pr-more" href="'+esc(secHref(st.sector))+'">'+esc(T.peersMore)+' <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></section>';
+}
 var RANK={none:0,v1:1,v2:2};
 function render(){
   if(keepEn()){
@@ -504,7 +542,7 @@ function render(){
       var b=(TIER==='v2')?bodyV2():bodyV1(), t=tocH(b.titles,b.locked);
       locked=b.locked.length>0;
       h+='<div class="body"><aside class="toc" id="toc">'+t.toc+'</aside><div class="content"><div class="chips-mark" id="chipsMark"></div><div class="chips-bar" id="chipsBar"><nav class="chips" id="chips">'+t.chips+'</nav></div>'
-        +b.html+'<p class="rdate">리포트 작성 '+esc(REP.reportDate)+' · 데이터 기준 '+fdate(REP.dataDate)+'</p><p class="disc">'+DISC+'</p></div></div>';
+        +b.html+'<p class="rdate">리포트 작성 '+esc(REP.reportDate)+' · 데이터 기준 '+fdate(REP.dataDate)+'</p><p class="disc">'+DISC+'</p>'+peersH(st)+'</div></div>';
     }
     else h+=KNOWN?pendingH():notFoundH();
   }
@@ -631,7 +669,11 @@ def page_js():
     const = ('var DISC=' + json.dumps(S.DISC, ensure_ascii=False) + ', PRIMARY_SRC=' + json.dumps(S.PRIMARY_SRC, ensure_ascii=False)
              + ', SECTIONS_V2=' + json.dumps(S.SECTIONS_V2, ensure_ascii=False) + ';')
     root = '/' if C.MODE == 'live' else ''   # 실사이트는 맨 위부터 쓴 주소(종목 페이지가 /stock/ 아래에 있다) · 스테이징은 제 폴더 안
-    return for_mode(PAGE_JS).replace('__CONST__', const).replace('__LIVE_FUNCS__', live_paragraph_code()).replace('__ROOT__', root)
+    # 다른 종목 리포트로 가는 주소 — 실사이트는 종목마다 미리 만든 페이지(영어 페이지에서는 영어 페이지로), 스테이징은 껍데기 한 장(유료 구간 잠금 때문)
+    peer_href = ("function peerHref(t){ return (PRE_LANG==='en'?'/en/stock/':'/stock/')+encodeURIComponent(t)+'.html'; }" if C.MODE == 'live'
+                 else "function peerHref(t){ return 'stock.html?ticker='+encodeURIComponent(t); }")
+    return (for_mode(PAGE_JS).replace('__CONST__', const).replace('__LIVE_FUNCS__', live_paragraph_code())
+            .replace('__PEER_HREF__', peer_href).replace('__ROOT__', root))
 
 
 def build_html():

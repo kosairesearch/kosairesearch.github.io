@@ -150,5 +150,8 @@ for (const tk of spec.tickers) {
     ogTitle: meta('meta[property="og:title"]', "content"), ogDesc: meta('meta[property="og:description"]', "content"),
     ogUrl: meta('meta[property="og:url"]', "content"), ld: ld ? ld.textContent : null,
     han: LANG === "en" ? hangulLeft(out) : null,
+    // 같은 업종의 다른 리포트 — 페이지 스크립트가 고른 목록([종목코드, 제목, 영어 제목, 발행일]). 페이지에 window.KOS_PEERS 로 싣는다 —
+    // 브라우저에는 리포트 색인이 없어서, 이것이 있어야 다시 그린 글이 미리 그린 글과 같다(build_stock_staging.PAGE_JS peerPick)
+    peers: cJSON.parse(cJSON.stringify(ctx.kosPeers || [])),
   });
 }
