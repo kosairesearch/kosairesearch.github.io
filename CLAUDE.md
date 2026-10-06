@@ -309,6 +309,19 @@ KOSAI 계정은 없는데 연결만 남은 사람은 화면 없이 계정이 만
   · 지키는 검사 — `functions/tests/reset-email.test.mjs`(진짜 sendResetEmail · 열거 방지를 흉내 낸 가짜 관리자 SDK · 26건, `FN_INDEX=옛 파일` 이면
     15건 걸린다), `staging/tests/forgot-password.test.mjs`(두 사이트 로그인 화면 · 한국어 · 영어 · 휴대폰 34건, `SITE_ROOT=고치기 전 사본` 이면 18건).
 
+## 마케팅 숫자 — 공개 실행 기록에 찍지 않는다 *(2026-10-06 사장 "외부에서 우리 마케팅 데이터를 보면 안되지")*
+
+이 저장소는 공개라 Actions 실행 기록(로그 · 요약 칸)도 누구나 본다. '마케팅 숫자 물어보기'(marketing_ask.yml)가 답을,
+'주간 성과 보고'(marketing_weekly.yml)가 보고서 전문 · 주마다의 이용자 수 · 실험 대장을 그대로 찍고 있었다.
+
+  · 물어보기는 묻는 쪽(클로드 세션)이 만든 공개 열쇠(key)로 잠근 글만 찍는다(`scripts/marketing_seal.py` · 여는 열쇠는
+    `~/.kosai/marketing-key.pem` — 저장소 밖). key 가 없으면 묻지 않는다. 쓰는 법은 `.claude/skills/마케팅/SKILL.md`.
+  · 주간 보고는 단계마다 나온 글을 /tmp/out 에 모으고, key 를 넣은 실행만 잠가서 찍는다(예약 실행은 상태만). 보고서
+    원문은 Firestore — 마케팅 창이 `report` 로 읽는다. 요약 칸에는 비용 줄(돈)만 남는다.
+  · 작업 입력(key · started · dropped · why · propose)은 기록의 env 줄에 그대로 보인다 — 공개 열쇠와 번호만 넣는다.
+  · **답을 그대로 찍는 길을 다시 만들지 말 것.** 지키는 검사 `scripts/tests/marketing_seal_test.py`(check_all
+    '마케팅 숫자 잠금') — 두 작업의 단계를 가짜 숫자로 실제로 돌려, 기록에 숫자가 나오면 걸린다.
+
 ## 유료화를 시작할 때 — 먼저 볼 것 *(2026-09-14 기록, 미뤄 둔 일)*
 
 사장이 "나중에 유료화 생각할 때 하자" 고 미뤄 둔 것들이다. 유료화·페이월·

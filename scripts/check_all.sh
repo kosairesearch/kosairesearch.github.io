@@ -94,6 +94,9 @@ run "GA4 수집"     python3 scripts/tests/ga4_data_test.py
 run "성과 보고"    python3 scripts/tests/marketing_report_test.py
 run "마케팅 MCP"  python3 scripts/tests/marketing_mcp_test.py
 run "마케팅 시트"  python3 scripts/tests/marketing_sheet_test.py
+# 마케팅 숫자는 공개 실행 기록(로그 · 요약 칸)에 찍지 않는다(2026-10-06 사장 "외부에서 우리 마케팅 데이터를 보면 안되지").
+# 물어보기 · 주간 보고의 단계를 가짜 숫자로 실제로 돌려 기록에 숫자가 안 나오는지, 잠긴 답이 묻는 쪽 열쇠로만 열리는지 본다.
+run "마케팅 숫자 잠금" python3 scripts/tests/marketing_seal_test.py
 run "집계 제외"    node tests/analytics-optout.test.mjs
 run "행동 기록"    node tests/analytics-events.test.mjs
 run "브리핑 생성"   python3 scripts/test_brief_gen.py
