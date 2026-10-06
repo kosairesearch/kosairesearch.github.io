@@ -1,24 +1,48 @@
-=== 공시 트리거 v2 생성 Sat Oct  3 00:38:25 UTC 2026 · 대상 310210,048410,204620,307750,027710,950220,026940,019490,043340 ===
-## 🤖 리포트 v2 Batch 제출 — 9개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
-- 정량 재사용 9개(숫자가 이미 최신·완전) · 다시 받을 0개
-- 모델 배분: claude-opus-5 1개 · claude-sonnet-5 8개
-- ✅ 배치 제출: msgbatch_015kA8v5voVkji7uJRerCzYb (9건) → data/batches_v2/msgbatch_015kA8v5voVkji7uJRerCzYb.json
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 in_progress · 처리 9/성공 0/오류 0
-  · 상태 ended · 처리 0/성공 9/오류 0
-- msgbatch_015kA8v5voVkji7uJRerCzYb · 상태 ended · 처리 0/성공 9/오류 0/만료 0/취소 0 · 주문 2026-10-03 09:38
-  · ✏️ 310210 표현 교정 2건 → 남은 0건
-  · 🈯 043340 영문 10곳을 채워 되살렸다
+=== 공시 트리거 v2 생성 Tue Oct  6 01:49:43 UTC 2026 · 대상 261520 ===
+## 🤖 리포트 v2 Batch 제출 — 1개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
+KRX 로그인 시도...
+  로그인 ID: qjawnsdla
+⚠️ KRX 비밀번호 변경이 필요합니다.
+   오류 메시지: 패스워드 변경 필요
+   https://www.krx.co.kr 에서 비밀번호를 변경한 후 다시 시도하세요.
+KRX 로그인 실패: 자격 증명을 확인하세요.
+KRX 로그인 시도...
+  로그인 ID: qjawnsdla
+⚠️ KRX 비밀번호 변경이 필요합니다.
+   오류 메시지: 패스워드 변경 필요
+   https://www.krx.co.kr 에서 비밀번호를 변경한 후 다시 시도하세요.
+KRX 로그인 실패: 자격 증명을 확인하세요.
+Error occurred in get_market_fundamental_by_ticker: Expecting value: line 1 column 1 (char 0)
+- (KRX 펀더멘털 실패: KeyError: "None of [Index(['BPS', 'PER', 'PBR', 'EPS', 'DIV', 'DPS'], dtype='object')] are in the [columns]") — KRX 값 없이 진행
+- 정량 수집 261520 이지스...
+  · 2024 연간은 2025 보고서의 전기 비교치로 채운다(같은 회계 기준으로 다시 쓴 값)
+  · EPS 입력: 공시롤포워드=없음(작년연간 -591 − 작년동기누적 None + 올해누적 -458) · 대안=순이익÷발행총수 -468 → 채택 -468
+  · BPS 입력: 자본 0.0조(분기말·총자본-폴백) ÷ 주식수 8백만(가중평균) = BPS 5590
+  ❌ 이지스 중대오류 차단 → 해당 지표 숨김: EPS -468↔ref -734.0 / BPS 5590↔ref 4425.0
+### 이지스
+  2025: 매출 213억 영업이익 -68억 지배순이익 -48억 OPM -32.0% ROE -9.8% 부채비율 37.9%
+  2024: 매출 303억 영업이익 24억 지배순이익 31억 OPM 7.9% ROE 9.9% 부채비율 70.4%
+  2025Q2: 매출 — 영업이익 — 지배순이익 —
+  2025Q3: 매출 — 영업이익 — 지배순이익 —
+  2025Q4: 매출 — 영업이익 — 지배순이익 —
+  2026Q1: 매출 58억 영업이익 -22억 지배순이익 -17억
+  2026Q2: 매출 56억 영업이익 -24억 지배순이익 -29억
+  PER None | EPS None | PBR None | BPS None | ROE -9.8 | 배당 None% | DPS None
+- 모델 배분: claude-opus-5 0개 · claude-sonnet-5 1개
+- ✅ 배치 제출: msgbatch_01W1CxuM31yDLEZw2wSavbhc (1건) → data/batches_v2/msgbatch_01W1CxuM31yDLEZw2wSavbhc.json
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 1/오류 0
+- msgbatch_01W1CxuM31yDLEZw2wSavbhc · 상태 ended · 처리 0/성공 1/오류 0/만료 0/취소 0 · 주문 2026-10-06 10:49
+  · 🈯 261520 영문 9곳을 채워 되살렸다
 
-✅ v2 회수 완료 · 성공 9/실패 0 → data/reports_v2/ (2563개)
-💵 claude-sonnet-5 8건 · 입력 47,886(캐시쓰기 426,831·읽기 561,061) · 출력 213,202 · 검색 38 → 약 $2.08 (장당 $0.261)
-💵 claude-opus-5 1건 · 입력 5,965(캐시쓰기 59,767·읽기 70,037) · 출력 22,811 · 검색 6 → 약 $0.56 (장당 $0.564)
-✅ msgbatch_015kA8v5voVkji7uJRerCzYb 회수 완료 · 성공 9/실패 0
+✅ v2 회수 완료 · 성공 1/실패 0 → data/reports_v2/ (2563개)
+💵 claude-sonnet-5 1건 · 입력 5,696(캐시쓰기 61,294·읽기 85,810) · 출력 11,858 · 검색 5 → 약 $0.20 (장당 $0.200)
+💵 claude-sonnet-5 보정 1회(즉시 호출 · 정가) · 입력 1,950(캐시쓰기 0·읽기 0) · 출력 1,433 → 약 $0.02
+✅ msgbatch_01W1CxuM31yDLEZw2wSavbhc 회수 완료 · 성공 1/실패 0
