@@ -150,6 +150,15 @@ def alternates(tk):
 PAGE_LANG_EN = "<script>window.KOS_PAGE_LANG='en'</script>\n"
 
 
+def peers_script(peers):
+    """같은 업종의 다른 리포트 — 미리 그릴 때 고른 목록([종목코드, 제목, 영어 제목, 발행일] 다섯)을 페이지 스크립트보다 먼저 싣는다.
+    종목 페이지는 리포트 색인(reports-index.js · 수백 KB)을 받지 않으므로, 이것으로 그려야 브라우저가 다시 그린 글이 미리 그린 글과
+    같다(지문이 맞는다). 빈 목록('기타' · 시세 없는 종목)도 싣는다 — 색인이 없는 브라우저가 고르려 들지 않게."""
+    js = json.dumps(peers or [], ensure_ascii=False, separators=(',', ':'))
+    js = js.replace('</', '<\\/').replace('\u2028', '\\u2028').replace('\u2029', '\\u2029')
+    return f'<script>window.KOS_PEERS={js};</script>\n'
+
+
 def page_html(r, ver, on_market=True, lang='ko', shell=None):
     """종목 한 장. r 은 미리 그린 결과(prerender_stock.mjs 한 줄), ver 는 공용 파일의 내용 해시. on_market=False 는 시세 자료에 없는 종목(noindex).
     본문 자리에 미리 그릴 때의 리포트 형식(data-pre-tier)과 시세 유무(data-pre-known)를 단다 — 화면이 자료를 못 받았을 때(통신 끊김 ·
@@ -177,7 +186,8 @@ def page_html(r, ver, on_market=True, lang='ko', shell=None):
             f'{r["h"]}</main>\n'
             f'{foot}\n'
             '<script src="/data/stocks.js"></script>\n<script src="/data/valuation.js"></script>\n'
-            f'<script src="/stock/assets/stock.js?v={ver["stock.js"]}"></script>\n'
+            + peers_script(r.get('peers'))
+            + f'<script src="/stock/assets/stock.js?v={ver["stock.js"]}"></script>\n'
             f'<script src="/stock/assets/i18n-dict.js?v={ver["i18n-dict.js"]}"></script>\n'
             + ''.join(f'<script type="module" src="{m}"></script>\n' for m in C.LIVE_PAGE_SCRIPTS['stock.html'])
             + '<script src="lenis.js"></script>\n<script src="smooth-scroll.js"></script>\n</body>\n</html>\n')
@@ -296,7 +306,13 @@ def build(only=None):
         if re_.get('han'):   # 영어판이 없는 리포트 칸 · 영문명이 없는 종목명 — 종목명은 빼고 센다
             st = D['stocks'].get(tk)
             name = st.get('name') if st and not st.get('name_en') else ((S.load_report(tk, D)[0] or {}).get('name') if not st else None)
-            n, _ = hangul_left(re_['h'], {name} if name else ())
+            # 같은 업종의 다른 리포트에 실린 종목도 영문명이 없으면 한국어 이름으로 보인다 — 그 이름도 뺀다
+            names = {name} if name else set()
+            for p in re_.get('peers') or []:
+                ps = D['stocks'].get(p[0])
+                if ps and not ps.get('name_en') and ps.get('name'):
+                    names.add(ps['name'])
+            n, _ = hangul_left(re_['h'], names)
             if n:
                 han.append((tk, n, re_['han'].get('sample', '')))
     for g in (g_ko, g_en):   # 둘 다 끝까지 읽어야 노드의 실패(종료 코드)가 드러난다
@@ -334,6 +350,7 @@ def skeleton(page):
     s = re.sub(r'(<script type="application/ld\+json" id="kos-jsonld">).*?(</script>)', r'\1#\2', s, count=1, flags=re.S)
     s = re.sub(r'<main class="wrap" id="page" data-tk="[0-9A-Z]{6}" data-pre="[0-9a-f]{8}" data-pre-tier="(?:v2|v1|none)" data-pre-known="[01]"( data-pre-lang="en")?>.*?</main>',
                r'<main #\1>#</main>', s, count=1, flags=re.S)
+    s = re.sub(r'<script>window\.KOS_PEERS=.*?;</script>', '<script>window.KOS_PEERS=#;</script>', s, count=1, flags=re.S)
     return re.sub(r'/stock/[0-9A-Z]{6}\.html', '/stock/#.html', s)
 
 
