@@ -338,10 +338,10 @@
    }
   ],
   "valuation": {
-   "price": 1040,
-   "mcap": 0.0173,
-   "shares": 16669660,
-   "total_shares": 16669660,
+   "price": 4990,
+   "mcap": 0.0166,
+   "shares": 3333932,
+   "total_shares": 3333932,
    "wavg_shares": null,
    "per": null,
    "eps": null,
@@ -362,6 +362,13 @@
     "dps": "no_div",
     "eps": "ref_mismatch",
     "bps": "ref_mismatch"
+   },
+   "shares_patched": {
+    "on": "2026-10-06",
+    "was": 16669660,
+    "now": 3333932,
+    "factor": 5.0,
+    "why": "액면병합·분할·감자 — 배수로 환산"
    }
   }
  }
