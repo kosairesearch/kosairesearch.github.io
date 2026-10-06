@@ -65,8 +65,10 @@ jobs:
         env:
           KEY: ${{ inputs.key }}
         run: |
+          # 옛 설명서를 읽고 key 없이 물은 세션도 이 줄만 보고 따라올 수 있게, 할 일을 명령으로 적는다
+          # (월요일 예약 작업은 그 대화창에서만 문구를 바꿀 수 있다 — 2026-10-06).
           if [ -z "$KEY" ]; then
-            echo "::error title=열쇠 없음::key 가 비어 있어 묻지 않았다. 이 저장소는 공개라 답을 그대로 찍지 않는다 — 클로드에게 물어라(.claude/skills/마케팅/SKILL.md '숫자를 어떻게 가져오나')"
+            echo "::error title=열쇠 없음::key 가 비어 있어 묻지 않았다. 2026-10-06 부터 답은 잠겨서만 나온다(공개 기록). 1) git fetch -q origin main && git checkout origin/main -- scripts/marketing_seal.py .claude/skills/마케팅/SKILL.md  2) python3 scripts/marketing_seal.py newkey 가 찍은 한 줄을 inputs 의 key 로 넣어 다시 돌린다  3) python3 scripts/marketing_seal.py open --job <job id> 로 연다. 자세한 것은 SKILL.md '숫자를 어떻게 가져오나'"
             exit 1
           fi
           python3 scripts/marketing_seal.py check --key "$KEY"
