@@ -1,21 +1,23 @@
-=== 공시 트리거 v2 생성 Tue Oct  6 17:04:45 UTC 2026 · 대상 250060,408900,038870,065420 ===
-## 🤖 리포트 v2 Batch 제출 — 4개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
-- 정량 재사용 4개(숫자가 이미 최신·완전) · 다시 받을 0개
-- 모델 배분: claude-opus-5 0개 · claude-sonnet-5 4개
-- ✅ 배치 제출: msgbatch_01LG4UCxNVuSQ1ZfDtxy4bz4 (4건) → data/batches_v2/msgbatch_01LG4UCxNVuSQ1ZfDtxy4bz4.json
-  · 상태 in_progress · 처리 4/성공 0/오류 0
-  · 상태 in_progress · 처리 4/성공 0/오류 0
-  · 상태 in_progress · 처리 4/성공 0/오류 0
-  · 상태 in_progress · 처리 4/성공 0/오류 0
-  · 상태 in_progress · 처리 4/성공 0/오류 0
-  · 상태 in_progress · 처리 4/성공 0/오류 0
-  · 상태 in_progress · 처리 4/성공 0/오류 0
-  · 상태 in_progress · 처리 4/성공 0/오류 0
-  · 상태 in_progress · 처리 4/성공 0/오류 0
-  · 상태 ended · 처리 0/성공 4/오류 0
-- msgbatch_01LG4UCxNVuSQ1ZfDtxy4bz4 · 상태 ended · 처리 0/성공 4/오류 0/만료 0/취소 0 · 주문 2026-10-07 02:04
-  · 408900 한자 1곳 한글로: 션 프로젝트, 그리고 넷플→ 대상
+=== 공시 트리거 v2 생성 Wed Oct  7 00:56:47 UTC 2026 · 대상 298830 ===
+## 🤖 리포트 v2 Batch 제출 — 1개 · 상위300 claude-opus-5 / 나머지 claude-sonnet-5
+- 정량 재사용 1개(숫자가 이미 최신·완전) · 다시 받을 0개
+- 모델 배분: claude-opus-5 0개 · claude-sonnet-5 1개
+- ✅ 배치 제출: msgbatch_01CGobXwpHWfHAaKLjbxTWtY (1건) → data/batches_v2/msgbatch_01CGobXwpHWfHAaKLjbxTWtY.json
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 1/오류 0
+- msgbatch_01CGobXwpHWfHAaKLjbxTWtY · 상태 ended · 처리 0/성공 1/오류 0/만료 0/취소 0 · 주문 2026-10-07 09:56
 
-✅ v2 회수 완료 · 성공 4/실패 0 → data/reports_v2/ (2563개)
-💵 claude-sonnet-5 4건 · 입력 23,944(캐시쓰기 203,299·읽기 305,898) · 출력 98,242 · 검색 20 → 약 $1.00 (장당 $0.250)
-✅ msgbatch_01LG4UCxNVuSQ1ZfDtxy4bz4 회수 완료 · 성공 4/실패 0
+✅ v2 회수 완료 · 성공 1/실패 0 → data/reports_v2/ (2563개)
+💵 claude-sonnet-5 1건 · 입력 6,014(캐시쓰기 39,798·읽기 28,044) · 출력 21,500 · 검색 4 → 약 $0.21 (장당 $0.206)
+✅ msgbatch_01CGobXwpHWfHAaKLjbxTWtY 회수 완료 · 성공 1/실패 0

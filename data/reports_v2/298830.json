@@ -1,227 +1,217 @@
 {
  "title": {
-  "ko": "SDV 검증 수요 속 이익 회복세",
-  "en": "Auto SDV Verification Demand, Profit Recovery"
+  "ko": "자동차·AI 검증 성장 속 수익 변동성 과제",
+  "en": "Auto/AI Verification Growth, Earnings Volatility Remains"
  },
  "lead": {
-  "ko": "슈어소프트테크는 현대차그룹을 핵심 고객으로 자동차 소프트웨어 검증 사업을 이어가는 가운데, 모비젠 인수로 AI·빅데이터 부문까지 사업을 넓히며 2025년 영업이익이 큰 폭으로 개선됐다.",
-  "en": "SureSoftTech continues its automotive software verification business centered on the Hyundai Motor Group while expanding into AI and big data through its Mobigen acquisition, with operating profit improving sharply in 2025."
+  "ko": "현대차그룹과의 SDV 협력을 축으로 자동차·방산·원자력 검증 사업을 넓혀온 슈어소프트테크는 2025년 매출 939.38억원·영업이익 126.00억원으로 외형과 수익성이 동시에 개선됐지만, 분기별 실적 편차와 지배주주 순이익 흐름은 아직 안정적이지 않다.",
+  "en": "SureSoftTech, which has expanded its automotive, defense, and nuclear verification business around a software-defined-vehicle (SDV) partnership with Hyundai Motor Group, posted 2025 revenue of KRW 93.938 billion and operating profit of KRW 12.600 billion, improving both scale and profitability, yet quarterly earnings swings and owner-attributable net income trends remain unsettled."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출 939.4억원, 영업이익 126.0억원(영업이익률 13.4%)으로 전년 대비 외형과 수익성이 동반 개선됐다.",
-   "en": "2025 consolidated revenue reached KRW 93.94 billion with operating profit of KRW 12.60 billion (13.4% operating margin), improving both top line and profitability year on year."
+   "ko": "2025년 연결 매출 939.38억원, 영업이익 126.00억원으로 전년 대비 각각 5.8%, 59.7% 증가",
+   "en": "2025 consolidated revenue reached KRW 93.938 billion and operating profit KRW 12.600 billion, up 5.8% and 59.7% year-over-year respectively"
   },
   {
-   "ko": "2026년 1분기 영업손실(-4.2억원)을 냈다가 2분기 매출 264.5억원·영업이익 27.6억원으로 재차 흑자 전환하며 분기별 변동성이 큰 실적 구조를 보였다.",
-   "en": "After posting an operating loss of KRW 0.42 billion in Q1 2026, the company swung back to profit in Q2 2026 with revenue of KRW 26.45 billion and operating profit of KRW 2.76 billion, underscoring a quarter-to-quarter volatile earnings pattern."
+   "ko": "2026년 1분기 영업손실(-4.15억원) 이후 2분기 영업이익 27.55억원으로 흑자전환, 분기 변동성 지속",
+   "en": "After a 1Q26 operating loss of KRW 415 million, the company returned to an operating profit of KRW 2.755 billion in 2Q26, though quarterly volatility persists"
   },
   {
-   "ko": "자동차(현대차그룹) 매출 비중이 2024년 44%대까지 낮아졌다가 2025년 상반기 56%로 다시 과반을 넘어섰다는 보도가 있어, 고객 집중도가 여전히 실적의 핵심 변수다.",
-   "en": "Reports indicate the automotive (Hyundai Motor Group) revenue share fell to around 44% in 2024 before rising back above half to 56% in H1 2025, meaning customer concentration remains a key swing factor for results."
+   "ko": "현대차그룹이 지분 7.32%를 보유한 2대주주로서 SDV 가속화 업무협약 체결, 자회사 모비젠으로 빅데이터·AI 영역 확장",
+   "en": "Hyundai Motor Group, holding a 7.32% stake as the second-largest shareholder, signed an MOU to accelerate SDV development, while subsidiary Mobigen extends the company into big data and AI"
   },
   {
-   "ko": "2023년 8월 인수한 모비젠(빅데이터·AI Ops)이 4분기 매출 집중형 계절성을 지녀, 연간 실적의 상당 부분이 하반기에 좌우된다.",
-   "en": "Mobigen (big data and AI Ops), acquired in August 2023, carries seasonality concentrated in the fourth quarter, meaning a substantial portion of annual results depends on the second half."
+   "ko": "부채비율이 2022년 74.6%에서 2025년 46.8%로 4년 연속 하락, 영업현금흐름은 179.02억원으로 확대",
+   "en": "The debt ratio fell for four consecutive years from 74.6% in 2022 to 46.8% in 2025, while operating cash flow expanded to KRW 17.902 billion"
   },
   {
-   "ko": "2대 주주였던 현대차의 지분 매각 이력이 반복적으로 뉴스화되며 수급 측 오버행 우려가 주가 변수로 작용해왔다.",
-   "en": "Repeated news coverage of stake sales by former second-largest shareholder Hyundai Motor has kept share-supply overhang concerns as a recurring stock price variable."
+   "ko": "2025년 지배주주 순이익은 85.83억원으로 2024년 108.06억원보다 줄어, 영업이익 증가세와 엇갈린 흐름을 보임",
+   "en": "2025 owner-attributable net income declined to KRW 8.583 billion from KRW 10.806 billion in 2024, diverging from the operating profit uptrend"
   }
  ],
  "business": {
-  "ko": "슈어소프트테크는 2002년 설립된 고신뢰·고위험 소프트웨어(Mission Critical Software) 안전성 검증 전문기업으로, 검증 활동을 자동화하는 자동화 툴 개발·공급과 검증 서비스를 주력으로 한다. 2023년 반기 사업보고서 기준 매출 비중은 코드검증 솔루션 46.4%, 시스템검증 솔루션 25.8%, 미래기술검증 솔루션 18.8%, 모델검증 솔루션 9.0%로 구성됐으며, 같은 시기 산업별로는 자동차향이 75.6%로 압도적이었고 국방/우주항공 12.2%, 원자력/에너지 5.0% 순이었다. 이후 자동차 비중은 2024년 44%대까지 낮아졌다가 2025년 상반기 56%로 다시 과반을 넘어섰다는 분석이 나온 바 있다. 2010년경부터 현대차그룹과 차량 소프트웨어 안전성 검증 협력을 이어왔고, 주요 고객은 자동차 부문에서 현대차·현대모비스·현대케피코, 방위산업에서 한화 그룹사·KAI·LIG넥스원, 원자력 부문에서 두산에너빌리티 등으로 파악된다. 2022년에는 미국 뉴스케일파워의 소형모듈원자로(SMR) 관련 해외 소프트웨어 사업을 수주한 이력도 보유하고 있다. 종속회사로는 미주 현지법인 V-cubed Solutions Inc(지분 100%) 등이 있으며, 2023년 8월에는 229억원을 들여 빅데이터·AI Ops 전문기업 모비젠 지분 43.7%를 인수해 4분기부터 연결 대상으로 편입했다. 모비젠은 통신사·대형 SI 기업·공공기관을 대상으로 빅데이터 분석과 AI Ops 솔루션을 공급하며, 공공·금융 부문 비중이 높아 4분기에 매출이 몰리는 계절성을 지닌다. 회사는 2023년 4월 엔에이치스팩22호와의 합병을 통해 코스닥 시장에 상장했으며, 국내에서 미션 크리티컬 소프트웨어 검증 분야의 뚜렷한 경쟁사가 없는 것으로 파악되는 등 시장 내 위치를 확보하고 있다.",
-  "en": "Founded in 2002, SureSoftTech specializes in verifying mission-critical software, focusing on developing and supplying automated verification tools along with verification services. Based on the H1 2023 business report, revenue was split among code verification solutions (46.4%), system verification solutions (25.8%), future-technology verification solutions (18.8%), and model verification solutions (9.0%), with automotive accounting for an overwhelming 75.6% of industry mix at the time, followed by defense/aerospace at 12.2% and nuclear/energy at 5.0%. Analysts have since noted the automotive share fell to around 44% in 2024 before climbing back above half to 56% in H1 2025. The company has partnered with the Hyundai Motor Group on vehicle software safety verification since around 2010, with key customers including Hyundai Motor, Hyundai Mobis, and Hyundai Kefico in automotive; Hanwha Group companies, Korea Aerospace Industries, and LIG Nex1 in defense; and Doosan Enerbility in nuclear. In 2022 it also secured an overseas software contract related to NuScale Power's small modular reactor business in the United States. Subsidiaries include the wholly owned U.S. entity V-cubed Solutions Inc, and in August 2023 the company acquired a 43.7% stake in big data and AI Ops specialist Mobigen for KRW 22.9 billion, consolidating it from the fourth quarter of that year. Mobigen supplies big data analytics and AI Ops solutions to telecom operators, large system integrators, and public institutions, and carries seasonality with revenue concentrated in the fourth quarter given its heavy public/financial sector weighting. The company listed on KOSDAQ in April 2023 via a merger with NH Special Purpose Acquisition Company 22, and is understood to face no clear direct domestic competitor in mission-critical software verification."
+  "ko": "슈어소프트테크는 2002년 설립된 미션 크리티컬 소프트웨어 자동화 검증 및 Safe Intelligence 사업 전문 기업으로, 고신뢰·고위험 소프트웨어의 안전성 검증 자동화 도구 개발·공급과 제3자 검증 서비스를 핵심 사업으로 영위한다. 차별화된 미션 크리티컬 소프트웨어 검증 역량을 바탕으로 AI 테스트를 수행하는 Safe Intelligence 사업을 추진하며 Trustworthy AI 영역으로 확장하고 있다. 2025년 기준 분석자료에 따르면 사업 구성은 소프트웨어 시험검증이 약 63.1%, 빅데이터/AI가 약 36.8%, 기타가 0.1% 수준으로 파악된다. 2023년 8월 빅데이터 전문기업 모비젠 지분 43.75%를 인수해 연결 자회사로 편입했으며, 모비젠은 통신사·대형 SI 기업·공공기업을 대상으로 빅데이터 분석 및 AI Ops 솔루션을 공급한다. 주요 매출 고객은 현대차 전기차 부문, 현대모비스 인포테인먼트 부문, 한화 방산 부문, 두산에너빌리티 원자력 부문 등으로 자동차·방산·원자력을 3대 전방시장으로 꼽을 수 있다. 특히 현대차그룹은 지분 7.32%를 보유한 2대주주이며, 소프트웨어 중심 차량(SDV) 가속화를 위한 SW 개발 업무협약을 체결한 바 있다. 비교 가능한 국내 소프트웨어 상장사로는 엠로, 더존비즈온, 안랩 등이 거론되지만 이들은 영위 분야가 서로 달라 직접 경쟁관계라기보다 업종 비교 대상 성격이 강하다. 고객 교육 수요 증가에 따라 온오프라인 교육 사업과 교육용 소프트웨어 공급 사업도 사업영역에 추가된 상태다.",
+  "en": "Founded in 2002, SureSoftTech specializes in automated verification of mission-critical software and the Safe Intelligence business, with core operations in developing and supplying automation tools for safety verification of high-reliability, high-risk software, as well as third-party verification services. Leveraging its differentiated mission-critical software verification capabilities, the company runs a Safe Intelligence business conducting AI testing and is expanding into the Trustworthy AI domain. According to a 2025-based analysis, the business mix is roughly 63.1% software testing/verification, 36.8% big data/AI, and 0.1% other. In August 2023, the company acquired a 43.75% stake in big data specialist Mobigen, consolidating it as a subsidiary; Mobigen supplies big data analytics and AI Ops solutions to telecom carriers, large system integrators, and public institutions. Major revenue-contributing customers include Hyundai Motor's EV division, Hyundai Mobis's infotainment division, Hanwha's defense division, and Doosan Enerbility's nuclear division, placing automotive, defense, and nuclear power as the three core end markets. Notably, Hyundai Motor Group is the second-largest shareholder with a 7.32% stake and has signed a software development MOU to accelerate software-defined vehicle (SDV) initiatives. Comparable domestic listed software firms such as Ellomay, Douzone Bizon, and AhnLab are sometimes cited, though they operate in different niches and serve more as sector benchmarks than direct competitors. The company has also added offline and online training services along with educational software supply as customer education demand has grown."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 939.4억원으로 2024년 888.0억원 대비 증가했고, 영업이익은 126.0억원으로 2024년 78.9억원에서 크게 늘어 영업이익률이 8.9%에서 13.4%로 개선됐다. 다만 지배주주 순이익은 2025년 85.8억원으로 2024년 108.1억원보다 오히려 줄었는데, 이는 연결 전체 순이익(2024년 100.8억원, 2025년 96.3억원)과 지배주주 순이익의 격차에서 비롯된다. 2024년에는 연결 전체 순이익보다 지배주주 순이익이 더 컸던 반면 2025년에는 그 반대였는데, 모비젠에 대한 비지배주주 지분(3분기24 기준 지분율 50.5%)의 손익 기여가 해마다 달라진 영향으로 해석할 수 있다. 분기 흐름을 보면 2025년 2분기 매출 215.0억원·영업이익 1.9억원으로 저점을 기록한 뒤, 3분기 235.7억원·36.0억원, 4분기 319.5억원·109.0억원으로 뚜렷한 상저하고 흐름을 보였다. 이는 모비젠의 4분기 매출 집중형 계절성과도 맞물린다. 그러나 2026년 1분기에는 매출이 202.2억원으로 줄고 영업손실 4.2억원을 기록하며 재차 부진했고, 2분기에는 매출 264.5억원·영업이익 27.6억원·지배주주 순이익 27.8억원으로 회복했다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순이익은 약 114.0억원으로, 연간 단위로도 이익 기반이 이어지고 있음을 보여준다. 재무 안정성 측면에서는 부채비율이 2022년 74.6%에서 2025년 46.8%로 꾸준히 낮아졌고, 영업활동현금흐름(CFO)도 2022년 93.4억원에서 2025년 179.0억원으로 늘어 이익의 현금 전환력이 개선되는 모습이다.",
-  "en": "2025 consolidated revenue rose to KRW 93.94 billion from KRW 88.80 billion in 2024, while operating profit jumped to KRW 12.60 billion from KRW 7.89 billion, lifting the operating margin from 8.9% to 13.4%. Net income attributable to owners, however, actually declined to KRW 8.58 billion in 2025 from KRW 10.81 billion in 2024, a gap that stems from the difference between total consolidated net income (KRW 10.08 billion in 2024, KRW 9.63 billion in 2025) and the owners' share. In 2024, owners' net income exceeded total consolidated net income, while the opposite held in 2025 — a pattern that can be linked to year-to-year swings in the profit contribution of non-controlling shareholders in Mobigen, in which the company held a 50.5% stake as of Q3 2024. On a quarterly basis, revenue bottomed at KRW 21.50 billion with operating profit of just KRW 0.19 billion in Q2 2025, before rising to KRW 23.57 billion / KRW 3.60 billion in Q3 and KRW 31.95 billion / KRW 10.90 billion in Q4, a clear back-loaded pattern that also reflects Mobigen's fourth-quarter revenue concentration. That momentum reversed in Q1 2026, when revenue fell to KRW 20.22 billion and the company posted an operating loss of KRW 0.42 billion, before recovering in Q2 2026 with revenue of KRW 26.45 billion, operating profit of KRW 2.76 billion, and owners' net income of KRW 2.78 billion. Summed over the most recent four quarters (Q3 2025 through Q2 2026), owners' net income totaled roughly KRW 11.40 billion, indicating a profit base that has persisted on an annualized basis as well. On the balance sheet side, the debt ratio has steadily declined from 74.6% in 2022 to 46.8% in 2025, while operating cash flow grew from KRW 9.34 billion in 2022 to KRW 17.90 billion in 2025, pointing to improving cash conversion of earnings."
+  "ko": "2025년 연결 매출은 939.38억원으로 2024년 888.03억원에서 5.8% 늘었고, 영업이익은 126.00억원으로 전년 78.91억원 대비 59.7% 증가하며 영업이익률이 8.9%에서 13.4%로 회복됐다. 다만 지배주주 순이익은 85.83억원으로 2024년 108.06억원보다 줄어 영업이익 개선과 다른 방향으로 움직였는데, 이는 비지배지분 손익 변동 등 영업외 요인이 작용한 결과로 해석된다. 2022~2023년에는 영업이익률이 각각 22.3%, 18.1%로 높았으나 2024년 8.9%까지 낮아진 뒤 2025년 다시 반등하는 흐름을 보였다. 분기별로 보면 2025년 2분기 매출 214.99억원에 영업이익은 1.88억원에 불과해 이익률이 1%를 밑돌았고, 3분기에는 매출 235.73억원·영업이익 35.99억원으로 개선됐다. 4분기에는 매출 319.48억원·영업이익 109.02억원으로 한 해 중 가장 큰 규모의 실적을 기록해 연간 실적에서 4분기 비중이 두드러지는 계절적 특징이 재확인됐다. 2026년 1분기에는 매출 202.24억원에 영업손실 4.15억원을 기록했으나 전년 동기 대비 손실 규모는 줄었고, 당기순이익은 소폭(1.22억원) 흑자를 유지했다. 2분기에는 매출 264.48억원·영업이익 27.55억원·지배주주 순이익 27.78억원으로 흑자전환이 뚜렷해졌다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순이익은 약 114.02억원으로, 분기 간 편차가 큰 가운데서도 연간 단위로는 이익 회복 흐름이 이어지고 있음을 보여준다. 영업현금흐름은 2025년 179.02억원으로 2024년 94.68억원보다 크게 늘어 이익의 질적 측면에서도 개선이 뒤따랐다.",
+  "en": "2025 consolidated revenue came in at KRW 93.938 billion, up 5.8% from KRW 88.803 billion in 2024, while operating profit rose 59.7% to KRW 12.600 billion from KRW 7.891 billion, lifting the operating margin from 8.9% to 13.4%. However, owner-attributable net income fell to KRW 8.583 billion from KRW 10.806 billion in 2024, moving opposite to the operating profit trend, a divergence attributable to non-controlling interest and other non-operating factors. Operating margins stood high at 22.3% and 18.1% in 2022 and 2023 respectively, dropped to 8.9% in 2024, then rebounded in 2025. On a quarterly basis, 2Q25 revenue of KRW 21.499 billion produced an operating profit of only KRW 188 million, a margin below 1%, before improving to KRW 23.573 billion revenue and KRW 3.599 billion operating profit in 3Q25. 4Q25 delivered the year's largest quarter with KRW 31.948 billion revenue and KRW 10.902 billion operating profit, reaffirming a seasonal pattern where the fourth quarter carries a disproportionate share of annual results. In 1Q26, revenue was KRW 20.224 billion with an operating loss of KRW 415 million, a narrower loss than the prior-year period, while net income stayed marginally positive at KRW 122 million. 2Q26 revenue reached KRW 26.448 billion with operating profit of KRW 2.755 billion and owner net income of KRW 2.778 billion, a clear swing back to profitability. Combined owner-attributable net income over the most recent four quarters (3Q25-2Q26) totaled roughly KRW 11.402 billion, showing that despite sizable quarter-to-quarter swings, the annual earnings recovery trend has continued. Operating cash flow rose sharply to KRW 17.902 billion in 2025 from KRW 9.468 billion in 2024, supporting the quality of the earnings improvement."
  },
  "industry": {
-  "ko": "전방 산업인 자동차 부문에서는 SDV(Software Defined Vehicle, 소프트웨어 중심 차량) 전환이 핵심 화두로, 슈어소프트테크는 자동차 제어기 시험검증 사업을 발판으로 자동차 소프트웨어에 특화된 시험검증 솔루션 개발까지 영역을 확대해왔다. 자동차 제어기 소프트웨어의 복잡성이 커질수록 검증의 중요성이 높아지는 구조이며, 민감한 정보를 다루는 검증 특성상 완성차 업체가 검증 파트너사를 쉽게 다변화하기 어려운 측면도 경쟁 우위 요인으로 지목된다. 방위산업 부문에서는 한화에어로스페이스에 HILS(Hardware In the Loop Simulation) 시스템 검증 서비스를 공급한 이력이 있으며, 방산 매출은 방산 기업의 수출 실적보다 각 기업의 현금 여력에 따른 연구개발(R&D) 투자와 더 밀접하게 연동되는 구조로 파악된다. 원자력 부문에서는 두산에너빌리티를 비롯해 국제 표준에 기반한 계측제어시스템(MMIS) 검증 이력을 갖고 있고, 미국 뉴스케일파워의 SMR(소형모듈원자로) 관련 소프트웨어 사업 수주 이력도 보유해 글로벌 SMR 시장 확대 국면에서 주목받은 바 있다. 모비젠 인수를 통해서는 AI·빅데이터 검증(미래기술검증 솔루션)으로 사업 영역을 넓혀, 자율주행차 등에서 AI·기계학습 적용이 확대됨에 따른 소프트웨어 테스트 수요 증가에 대응하는 구도다. 국내에서 미션 크리티컬 소프트웨어 검증을 전문으로 하는 뚜렷한 경쟁사가 없는 것으로 파악되는 만큼, 산업 성장에 따른 수요 확대의 수혜를 상당 부분 흡수할 수 있는 위치에 있다는 평가가 존재한다.",
-  "en": "In the automotive end-market, the shift toward Software Defined Vehicles (SDV) is the central theme, and SureSoftTech has expanded from automotive controller testing and verification into developing verification solutions specialized for automotive software. As controller software complexity rises, the importance of verification grows correspondingly, and because verification work handles sensitive information, automakers face difficulty easily diversifying verification partners — a factor cited as a competitive advantage. In defense, the company has a track record of supplying Hardware-In-the-Loop Simulation (HILS) system verification services to Hanwha Aerospace, with defense-related revenue understood to correlate more closely with individual defense companies' R&D spending capacity than with their export performance. In nuclear energy, the company has a track record of verifying instrumentation and control systems (MMIS) based on international standards for clients including Doosan Enerbility, and has also won a software contract related to NuScale Power's small modular reactor (SMR) business in the United States, drawing attention amid the expanding global SMR market. Through the Mobigen acquisition, the company has broadened into AI and big data verification (future-technology verification solutions), positioning itself to address growing software testing demand as AI and machine learning applications expand in areas such as autonomous driving. With no clear direct domestic competitor identified in mission-critical software verification, some assessments view the company as positioned to capture a substantial share of demand growth as the underlying industries expand."
+  "ko": "자동차 산업은 소프트웨어 중심 차량(SDV)으로의 전환이 가속화되면서 소프트웨어 시험·검증 수요가 함께 늘어나는 구조적 흐름에 있다. 2022년 10월 현대차그룹이 2025년까지 전 차종을 SDV로 전환하겠다고 발표한 데 이어, 기아 역시 향후 5년간 전동화·목적기반모빌리티(PBV)·SDV 등 미래사업에 대규모 투자를 계획하고 있다고 밝힌 바 있다. 방위산업과 원자력 분야는 고신뢰성·고안전성 소프트웨어 검증이 필수적인 영역으로, 정부 발주 프로젝트와 수출 확대에 따라 관련 검증 수요가 꾸준히 발생하는 구조다. 국토교통부와 기상청은 한국형 도심항공교통(K-UAM) 안전운용체계 고도화를 위해 2027년부터 2030년까지 총 4천억원 규모의 신규 국가연구개발 사업 예비타당성 조사를 신청한 상태로, 항행·교통관리·버티포트 운용 등 분야에서 안전성 검증 기술에 대한 수요가 이어질 잠재적 환경이 조성되고 있다. 산업 전반에서는 신뢰할 수 있는 인공지능(Trustworthy AI)에 대한 인증·검증 수요가 부각되며, 소프트웨어 검증 기업들이 AI 안전성 평가 영역으로 사업을 확장하는 흐름도 관찰된다. 국내 소프트웨어 검증 시장은 특정 대형 산업(자동차·방산·원자력)에 의존하는 구조여서 전방산업 투자 사이클에 따라 수요 변동성이 발생할 수 있다는 점도 함께 고려할 부분이다.",
+  "en": "The automotive industry is undergoing structural change as the shift toward software-defined vehicles (SDVs) accelerates, correspondingly increasing demand for software testing and verification. Hyundai Motor Group announced in October 2022 its plan to convert all vehicle models to SDVs by 2025, and Kia has separately stated plans for large-scale investment over the next five years in electrification, purpose-built vehicles (PBVs), and SDVs. Defense and nuclear power are sectors where high-reliability, high-safety software verification is essential, generating steady demand for verification services tied to government-funded projects and export expansion. Korea's Ministry of Land, Infrastructure and Transport and the Korea Meteorological Administration have applied for a preliminary feasibility study on a new KRW 400 billion national R&D program running from 2027 to 2030 to advance the safety operation system for Korean urban air mobility (K-UAM), creating a potential environment for continued demand in navigation, traffic management, and vertiport operation safety verification technologies. Across the industry, demand for certification and verification of Trustworthy AI is gaining prominence, with software verification companies observed expanding into AI safety assessment. It is also worth noting that the domestic software verification market is structurally concentrated in a few large end-markets (automotive, defense, nuclear), which can introduce demand volatility tied to the investment cycles of those downstream industries."
  },
  "outlook": {
-  "ko": "2026년 1분기 실적은 전년 동기 대비 매출이 19.5% 증가하고 영업손실은 80.1% 감소, 당기순이익은 흑자로 전환한 것으로 알려졌으며, 회사는 자동차 소프트웨어 분야를 사업 성장의 핵심 영역으로 지목하고 글로벌 SDV 체제 전환과 소프트웨어 시험검증 사업의 밀접한 관계를 강조하고 있다. 회사는 Safe Intelligence 사업을 통해 신뢰 가능한 AI(Trustworthy AI) 영역으로 확장을 추진 중이며, 관련 솔루션과 인증 제도로 고객사의 AI 안전 도입을 지원한다는 방향을 제시하고 있다. 자동차 부문에서는 차세대 차량의 제어기 일부 소프트웨어를 직접 개발하는 등 단순 검증을 넘어 자동차 소프트웨어 종합 엔지니어링 파트너로 영역을 넓히고 있다는 점이 향후 매출 구조 변화의 관전 포인트다. 모비젠 부문은 4분기 매출 집중형 계절성이 뚜렷한 만큼, 하반기 실적이 연간 성과를 좌우하는 구조가 이어질 가능성이 있다. 원자력 부문에서는 미국 SMR 시장 확대에 따른 뉴스케일파워 등 관련 프로젝트의 추가 진행 여부가 잠재적 수주 모멘텀으로 거론된다. 다만 이러한 방향성은 회사와 시장이 제시한 기대에 기반한 것으로, 구체적인 수주 규모나 시기가 공시로 확정되기 전까지는 불확실성이 남아있다.",
-  "en": "Q1 2026 results reportedly showed revenue up 19.5% year on year, the operating loss narrowing 80.1%, and net income turning positive, with the company identifying automotive software as the core growth area and emphasizing the close relationship between the global SDV transition and its software testing and verification business. The company is pursuing expansion into the Trustworthy AI domain through its Safe Intelligence business, positioning related solutions and certification programs to support customers' adoption of AI safety measures. In the automotive segment, the company has moved beyond pure verification to directly developing certain controller software for next-generation vehicles, expanding into a comprehensive automotive software engineering partner role — a development worth monitoring for future revenue mix shifts. Given Mobigen's pronounced fourth-quarter revenue concentration, second-half performance is likely to continue driving the full-year outcome. In nuclear energy, further progress on projects tied to NuScale Power and the broader U.S. SMR market expansion is cited as a potential source of additional order momentum. That said, these directions reflect expectations expressed by the company and the market, and uncertainty remains until specific order sizes and timing are confirmed through disclosures."
+  "ko": "회사는 SDV 체제 전환에 따른 자동차 소프트웨어 시험검증 수요 확대를 사업 성장의 핵심 축으로 제시하고 있으며, 글로벌 SDV 전환 흐름과 소프트웨어 시험검증 사업이 밀접한 관계를 형성하고 있다고 설명한다. Safe Intelligence 사업을 통해 Trustworthy AI 영역을 확대하며 관련 솔루션과 인증 제도로 고객사의 AI 안전 도입을 지원하는 방향을 제시하고 있다. 자회사 모비젠과의 시너지는 기존 검증 솔루션에 AI와 빅데이터 기술을 접목한 AI 검증 기술 공동 개발로 이어질 것으로 기대되고 있으며, 차량 빅데이터 수집·분석·활용 영역에서의 기술 협업이 중장기 과제로 거론된다. 현대차그룹과 체결한 SDV 가속화 SW 개발 업무협약은 향후 구체적 프로젝트 수주로 이어질지가 관찰 포인트다. 2026년 1분기 영업손실에서 2분기 흑자전환으로 이어진 흐름이 하반기까지 안정적으로 지속되는지가 단기적으로 중요한 확인 대상이다. 연간 단위로는 2022년부터 2025년까지 매출이 꾸준히 증가해온 추세가 이어질지, 그리고 영업이익률이 2025년 수준(13.4%)에서 추가로 회복될 수 있는지가 핵심 관전 포인트로 꼽힌다.",
+  "en": "The company positions growing demand for automotive software testing and verification driven by the SDV transition as a core growth axis, noting that the global shift to SDVs is closely tied to its software testing and verification business. Through its Safe Intelligence business, it is expanding into the Trustworthy AI domain, aiming to support customers' adoption of AI safety via related solutions and certification schemes. Synergy with subsidiary Mobigen is expected to produce jointly developed AI verification technologies combining existing verification solutions with AI and big data capabilities, with vehicle big data collection, analysis, and utilization cited as a mid-to-long-term focus area. Whether the SDV-acceleration software development MOU signed with Hyundai Motor Group translates into concrete project orders is a point to watch going forward. In the near term, whether the swing from a 1Q26 operating loss to 2Q26 profitability can be sustained stably through the second half is an important thing to verify. On an annual basis, whether the steady revenue growth trend from 2022 through 2025 continues, and whether the operating margin can recover further from its 2025 level of 13.4%, stand out as key points to monitor."
  },
  "valuation_comment": {
-  "ko": "현재 주가는 순자산 대비 프리미엄이 존재하는 구간에서 거래되고 있으며, 이는 2025년 이후 이익 회복 흐름이 어느 정도 반영된 결과로 해석할 수 있다. 회사는 현재 별도의 현금배당을 지급하지 않고 있어, 배당을 통한 주주환원보다는 사업 성장과 이익 개선 여부가 주가 평가의 핵심 변수로 작용하는 구조다. 2023~2025년 영업이익률이 18.1%→8.9%→13.4%로 등락을 보인 만큼, 밸류에이션 논의에서는 특정 시점의 이익 수준보다 여러 분기·연도에 걸친 이익의 지속성과 방향성을 함께 살펴볼 필요가 있다. 소형 코스닥 종목 특성상 유동성과 주요주주(현대차 등)의 지분 변동에 따른 수급 요인이 밸류에이션 프리미엄·디스카운트에 영향을 줄 수 있다는 점도 함께 고려할 부분이다.",
-  "en": "The current share price trades in a range that carries a premium over net asset value, which can be interpreted as reflecting the profit recovery trend seen since 2025 to some degree. The company currently pays no cash dividend, meaning that business growth and earnings improvement — rather than dividend-based shareholder returns — serve as the key variables in how the stock is valued. Given that the operating margin fluctuated from 18.1% to 8.9% to 13.4% between 2023 and 2025, valuation discussions warrant looking at the continuity and direction of earnings across multiple quarters and years rather than any single period's profit level. As is typical for a small-cap KOSDAQ name, liquidity conditions and supply-demand effects tied to changes in major shareholders' stakes, including Hyundai Motor's, are also factors that can influence valuation premiums or discounts."
+  "ko": "주가수익비율은 최근 1년여 사이 40배를 웃돌던 시점부터 20배 안팎까지 낮아지는 구간을 거치며 넓은 밴드를 형성해온 것으로 파악된다. 현재 수준은 과거 고점 대비로는 낮아졌지만, 여전히 소프트웨어 업종 내에서 상대적으로 높은 배수에서 거래되는 편에 속한다는 시장 자료가 있다. 주가순자산비율 측면에서는 순자산 대비 일정한 프리미엄이 유지되는 구간으로 파악되며, 자기자본 규모가 2022년 이후 꾸준히 늘어난 점이 이러한 밸류에이션 형성의 배경으로 작용하는 것으로 보인다. 배당은 공시 기준 지급 내역이 없어 배당수익률에 따른 투자 매력도 평가는 해당되지 않는 것으로 파악된다. 분기별 이익 변동성이 큰 업종 특성을 감안할 때, 밸류에이션 지표는 특정 시점의 실적 서프라이즈나 쇼크에 따라 단기적으로 출렁일 수 있다는 점도 함께 고려할 부분이다.",
+  "en": "Over roughly the past year, the price-to-earnings ratio appears to have traced a wide band, moving from levels above 40 times down to around the 20-times area. While the current level is lower than past peaks, available market data suggests the stock still trades at a relatively high multiple within the software sector. On a price-to-book basis, the stock appears to maintain a certain premium over net asset value, a pattern that seems tied to the steady growth in shareholders' equity since 2022. As there is no disclosed dividend payment, dividend-yield-based attractiveness assessment does not apply. Given the sector's characteristic of large quarterly earnings swings, it is also worth considering that valuation metrics can fluctuate in the near term depending on earnings surprises or shortfalls in any given period."
  },
  "bull": [
   {
    "title": {
-    "ko": "SDV 전환에 따른 구조적 검증 수요",
-    "en": "Structural verification demand from the SDV transition"
+    "ko": "SDV 전환 핵심 파트너 지위",
+    "en": "Core Partner Position in SDV Transition"
    },
    "body": {
-    "ko": "완성차 업계의 SDV 전환이 가속화되면서 차량 제어기 소프트웨어의 복잡성이 높아지고 있으며, 이는 시험검증 수요 확대로 이어지는 구조다. 회사는 현대차그룹과 다년간 협력관계를 유지하며 차세대 차량 제어기 일부 소프트웨어를 직접 개발하는 단계까지 영역을 넓혔다. 검증 업무의 민감한 정보 특성상 완성차 업체가 검증 파트너를 쉽게 바꾸기 어렵다는 점도 관계 지속성에 유리하게 작용할 수 있다.",
-    "en": "As automakers accelerate the SDV transition, vehicle controller software complexity is rising, which structurally expands demand for testing and verification. The company has maintained a multi-year partnership with the Hyundai Motor Group and has expanded into directly developing certain next-generation vehicle controller software. The sensitive nature of verification work also makes it difficult for automakers to easily switch verification partners, which can favor relationship continuity."
+    "ko": "현대차그룹이 지분 7.32%를 보유한 2대주주로서 SDV 가속화 SW 개발 업무협약을 체결한 만큼, 완성차 업계의 소프트웨어 중심 전환 가속화는 검증 수요 확대로 이어질 잠재력이 있다. 기아 역시 전동화·PBV·SDV 등 미래사업에 대규모 투자를 계획하고 있어 전방산업 전반의 투자 사이클이 우호적으로 형성되고 있다. 이러한 구조적 관계는 신규 프로젝트 수주 가능성을 뒷받침하는 요인으로 꼽힌다.",
+    "en": "With Hyundai Motor Group as the second-largest shareholder holding a 7.32% stake and having signed an SDV-acceleration software development MOU, the accelerating software-centric transition in the automaker industry carries potential to expand verification demand. Kia has also outlined large-scale investment plans in electrification, PBVs, and SDVs, forming a favorable investment cycle across the downstream industry. This structural relationship is cited as a factor supporting the possibility of new project wins."
    }
   },
   {
    "title": {
-    "ko": "모비젠을 통한 사업 다각화",
-    "en": "Business diversification through Mobigen"
+    "ko": "Safe Intelligence·모비젠 시너지로 사업영역 확장",
+    "en": "Business Expansion via Safe Intelligence and Mobigen Synergy"
    },
    "body": {
-    "ko": "2023년 인수한 모비젠은 통신사·대형 SI·공공기관을 대상으로 빅데이터·AI Ops 솔루션을 공급하며 자동차 의존도를 낮추는 축으로 자리매김하고 있다. AI·빅데이터 검증(미래기술검증 솔루션)과의 기술적 시너지도 기대되는 부분이다. 다만 모비젠은 4분기 매출 집중형 계절성을 지녀 연간 실적의 상당 부분이 하반기에 좌우된다.",
-    "en": "Mobigen, acquired in 2023, supplies big data and AI Ops solutions to telecom operators, large system integrators, and public institutions, serving as a pillar that reduces automotive dependence. Technical synergies with AI/big data verification (future-technology verification solutions) are also expected. However, Mobigen carries fourth-quarter revenue concentration, meaning a substantial portion of annual results depends on the second half."
+    "ko": "미션 크리티컬 소프트웨어 검증 역량을 바탕으로 AI 테스트를 수행하는 Safe Intelligence 사업이 Trustworthy AI 영역으로 확장되고 있다. 자회사 모비젠의 빅데이터·AI Ops 역량과 결합해 차량 빅데이터 수집·분석·검증 기술을 공동 개발할 여지가 있다. 이는 기존 검증 사업 외에 새로운 매출원을 확보하는 방향으로 해석된다.",
+    "en": "Built on mission-critical software verification capabilities, the Safe Intelligence business conducting AI testing is expanding into the Trustworthy AI domain. Combined with subsidiary Mobigen's big data and AI Ops capabilities, there is room to jointly develop vehicle big data collection, analysis, and verification technologies. This is interpreted as a path toward securing new revenue sources beyond the existing verification business."
    }
   },
   {
    "title": {
-    "ko": "재무구조 개선과 이익의 현금 전환력 강화",
-    "en": "Improving balance sheet and stronger cash conversion of earnings"
+    "ko": "재무구조 개선과 현금창출력 강화",
+    "en": "Improved Financial Structure and Stronger Cash Generation"
    },
    "body": {
-    "ko": "부채비율이 2022년 74.6%에서 2025년 46.8%로 꾸준히 낮아지며 재무 안정성이 개선되고 있다. 영업활동현금흐름도 2022년 93.4억원에서 2025년 179.0억원으로 늘어, 손익상 이익이 실제 현금으로 전환되는 흐름이 함께 강화되고 있다. 2025년 영업이익률은 13.4%로 2024년 8.9%에서 회복됐다.",
-    "en": "The debt ratio has steadily declined from 74.6% in 2022 to 46.8% in 2025, improving financial stability. Operating cash flow also grew from KRW 9.34 billion in 2022 to KRW 17.90 billion in 2025, strengthening the conversion of accounting profit into actual cash. The 2025 operating margin recovered to 13.4% from 8.9% in 2024."
+    "ko": "부채비율은 2022년 74.6%에서 2025년 46.8%까지 4년 연속 낮아졌고, 영업현금흐름은 같은 기간 93.40억원에서 179.02억원으로 확대됐다. 2025년 영업이익률은 13.4%로 2024년 8.9% 대비 회복되는 흐름을 보였다. 이러한 재무 건전성 개선은 신규 투자나 인수합병 재원 확보 측면에서 우호적인 배경으로 작용할 수 있다.",
+    "en": "The debt ratio fell for four consecutive years from 74.6% in 2022 to 46.8% in 2025, while operating cash flow expanded from KRW 9.340 billion to KRW 17.902 billion over the same period. The 2025 operating margin recovered to 13.4% from 8.9% in 2024. This improvement in financial health could serve as a favorable backdrop for securing funds for new investments or M&A."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "여전히 높은 고객 집중도",
-    "en": "Still-high customer concentration"
+    "ko": "분기별 실적 편차가 큰 사업 구조",
+    "en": "Business Structure with Large Quarterly Earnings Swings"
    },
    "body": {
-    "ko": "자동차(현대차그룹) 매출 비중이 2024년 44%대로 낮아졌다가 2025년 상반기 56%로 다시 과반을 넘어섰다는 분석이 있어, 특정 고객군의 투자·R&D 사이클에 실적이 민감하게 반응할 수 있는 구조가 여전하다. 방산·원자력 부문 역시 개별 고객사의 현금 여력이나 프로젝트 진행 상황에 좌우되는 측면이 있다.",
-    "en": "Analysis indicates the automotive (Hyundai Motor Group) revenue share fell to around 44% in 2024 before rising back above half to 56% in H1 2025, meaning results remain sensitive to the investment and R&D cycles of a concentrated customer base. The defense and nuclear segments are also subject to individual clients' cash capacity and project progress."
+    "ko": "2025년 2분기 영업이익률은 1%를 밑돌았으나 4분기에는 34%를 넘는 등 분기 간 편차가 매우 크다. 2026년 1분기에는 영업손실(-4.15억원)을 기록한 뒤 2분기에 흑자전환했는데, 이러한 변동성은 연간 실적만 보는 투자자에게는 분기 단위 불확실성으로 체감될 수 있다. 프로젝트 인도 시점에 실적이 쏠리는 특성이 구조적으로 자리하고 있다.",
+    "en": "The operating margin fell below 1% in 2Q25 but exceeded 34% in 4Q25, reflecting very large swings between quarters. After an operating loss of KRW 415 million in 1Q26, the company swung back to profit in 2Q26, and this volatility can be felt as quarter-to-quarter uncertainty for investors focused only on annual results. A structural tendency for results to cluster around project delivery timing persists."
    }
   },
   {
    "title": {
-    "ko": "분기별 실적 변동성",
-    "en": "Quarter-to-quarter earnings volatility"
+    "ko": "영업이익과 괴리된 순이익 흐름",
+    "en": "Net Income Diverging from Operating Profit Trend"
    },
    "body": {
-    "ko": "2025년 2분기 영업이익 1.9억원에서 4분기 109.0억원까지 분기 간 낙폭이 컸고, 2026년 1분기에는 다시 영업손실 4.2억원을 기록했다. 모비젠의 4분기 매출 집중형 계절성이 이런 변동성을 키우는 요인 중 하나로 지목된다.",
-    "en": "Operating profit swung sharply from KRW 0.19 billion in Q2 2025 to KRW 10.90 billion in Q4 2025, before the company posted another operating loss of KRW 0.42 billion in Q1 2026. Mobigen's fourth-quarter revenue concentration is cited as one factor amplifying this volatility."
+    "ko": "2025년 영업이익은 전년 대비 59.7% 늘었지만 지배주주 순이익은 85.83억원으로 2024년 108.06억원보다 오히려 감소했다. 이는 비지배지분 손익 변동 등 영업외 요인이 지배주주 귀속 이익에 영향을 준 결과로 해석되며, 영업이익 개선이 곧바로 지배주주 이익 개선으로 연결되지 않을 가능성을 보여준다. 향후 비지배지분 구조 변화를 지속적으로 살펴볼 필요가 있다.",
+    "en": "While 2025 operating profit rose 59.7% year-over-year, owner-attributable net income actually declined to KRW 8.583 billion from KRW 10.806 billion in 2024. This is interpreted as reflecting non-operating factors such as non-controlling interest fluctuations affecting owner-attributable earnings, indicating that operating profit improvement does not automatically translate into improved owner earnings. Continued monitoring of the non-controlling interest structure is warranted."
    }
   },
   {
    "title": {
-    "ko": "대주주 지분 변동에 따른 수급 부담",
-    "en": "Supply-demand pressure from major shareholder stake changes"
+    "ko": "특정 전방산업 의존도",
+    "en": "Dependence on a Concentrated Set of End-Markets"
    },
    "body": {
-    "ko": "2대 주주였던 현대차는 2023년 9월 보유 지분의 절반을 블록딜로 매각(14.91%→7.45%)했으며, 이후에도 지분 매각 관련 보도가 반복되고 있다. 소형 코스닥 종목 특성상 대주주의 추가 지분 매각 가능성은 수급 측 오버행 요인으로 남아있다.",
-    "en": "Former second-largest shareholder Hyundai Motor sold half its stake via a block deal in September 2023, reducing its holding from 14.91% to 7.45%, and reports of further stake sales have recurred since then. Given the characteristics of a small-cap KOSDAQ stock, the possibility of additional stake sales by the major shareholder remains a share-supply overhang factor."
+    "ko": "매출 상위 고객이 자동차·방산·원자력 등 특정 대형 산업에 집중되어 있어, 해당 산업의 투자 사이클이나 발주 일정 변화가 실적에 직접 영향을 줄 수 있다. 완성차의 SDV 투자 속도나 정부 발주 프로젝트 일정이 지연될 경우 단기 실적 변동성이 확대될 가능성이 있다.",
+    "en": "Top revenue-contributing customers are concentrated in a few large end-markets such as automotive, defense, and nuclear power, meaning shifts in those industries' investment cycles or project ordering schedules can directly affect performance. If automakers' pace of SDV investment or government project timelines were to slow, near-term earnings volatility could widen."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객·전방산업 집중 리스크",
-    "en": "Customer and end-market concentration risk"
+    "ko": "고객 집중 리스크",
+    "en": "Customer Concentration Risk"
    },
    "body": {
-    "ko": "매출이 현대차그룹을 비롯한 소수의 대형 고객사에 상당 부분 의존하고 있어, 해당 고객사의 예산·R&D 정책 변화가 실적에 직접적인 영향을 줄 수 있다. 방산·원자력 부문 역시 국내 대기업 몇 곳에 대한 의존도가 높은 구조다.",
-    "en": "Revenue depends heavily on a small number of large customers, including the Hyundai Motor Group, so changes in those customers' budget or R&D policies can directly affect results. The defense and nuclear segments similarly show high dependence on a handful of large domestic conglomerates."
+    "ko": "현대차·기아, 현대모비스, 한화, 두산에너빌리티 등 소수 대형 고객에 매출이 집중되어 있어, 특정 고객사의 발주 축소나 내부 프로젝트 일정 변경이 실적에 직접적인 영향을 줄 수 있다. 신규 고객 다변화 속도가 더딜 경우 이러한 의존 구조는 장기화될 수 있다.",
+    "en": "Revenue is concentrated among a small number of large customers including Hyundai Motor/Kia, Hyundai Mobis, Hanwha, and Doosan Enerbility, so a reduction in orders from any one customer or changes to internal project schedules could directly affect results. If diversification into new customers proceeds slowly, this dependency structure could persist over the long term."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성 및 계절성 리스크",
-    "en": "Earnings volatility and seasonality risk"
+    "ko": "정책·예산 변동 리스크",
+    "en": "Policy and Budget Variability Risk"
    },
    "body": {
-    "ko": "분기별 매출·영업이익 편차가 크고, 모비젠 부문의 4분기 매출 집중형 계절성이 연간 실적의 예측 가능성을 낮추는 요인으로 작용한다. 2026년 1분기와 같이 일시적 영업손실이 재발할 가능성도 배제할 수 없다.",
-    "en": "Quarterly revenue and operating profit show large swings, and Mobigen's fourth-quarter revenue concentration reduces the predictability of full-year results. The recurrence of a temporary operating loss, as seen in Q1 2026, cannot be ruled out."
+    "ko": "방위산업·원자력·UAM 등 정부 관련 프로젝트는 예산 편성, 예비타당성 조사 통과 여부, 정책 방향 변화에 따라 일정이 변경될 수 있다. K-UAM 관련 신규 R&D 사업은 아직 예비타당성 조사 신청 단계로, 통과 여부와 시기가 확정되지 않았다.",
+    "en": "Government-related projects in defense, nuclear power, and UAM can see their schedules shift depending on budget allocation, the outcome of preliminary feasibility studies, and changes in policy direction. The new K-UAM-related R&D program is still at the preliminary feasibility study application stage, with its approval and timing not yet confirmed."
    }
   },
   {
    "cat": {
-    "ko": "지분 오버행 및 유동성 리스크",
-    "en": "Share overhang and liquidity risk"
+    "ko": "자회사 편입·지배구조 리스크",
+    "en": "Subsidiary Consolidation and Governance Risk"
    },
    "body": {
-    "ko": "시가총액이 작은 코스닥 종목 특성상 유동성이 제한적일 수 있으며, 과거 대주주였던 현대차의 지분 매각 이력과 관련 보도가 반복되며 추가 매각 가능성에 대한 시장의 경계감이 이어지고 있다.",
-    "en": "As a small-cap KOSDAQ stock, liquidity may be limited, and recurring news related to former major shareholder Hyundai Motor's stake sale history has kept the market wary of the possibility of further sales."
+    "ko": "모비젠 등 연결 자회사의 손익 변동과 비지배지분 구조는 지배주주 귀속 순이익의 변동성을 키우는 요인으로 작용할 수 있다. 추가적인 지분 변동이나 인수합병이 발생할 경우 재무구조와 지배구조에 변화가 생길 수 있다.",
+    "en": "Earnings fluctuations at consolidated subsidiaries such as Mobigen and the non-controlling interest structure can increase the volatility of owner-attributable net income. Any further changes in equity stakes or additional M&A could alter the financial structure and governance arrangement."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "Around November 2026"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시 예정 시기로, 2분기에 재개된 이익 회복 흐름이 이어지는지, 모비젠 등 부문별 기여도가 어떻게 나타나는지 확인이 필요하다.",
-    "en": "The scheduled timing for Q3 2026 earnings disclosure; worth checking whether the profit recovery resumed in Q2 continues and how segments such as Mobigen contribute."
+    "ko": "2026년 3분기보고서 공시 예정으로, 2분기 흑자전환이 3분기까지 이어지는지와 분기별 영업이익률 추이를 확인할 시점이다.",
+    "en": "The 3Q26 quarterly report is due around this time, making it a key point to check whether the 2Q26 return to profit continued into the third quarter and how the quarterly operating margin trended."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Q4 2026"
+    "ko": "2026년 4분기 중",
+    "en": "During 4Q 2026"
    },
    "what": {
-    "ko": "모비젠 부문의 매출 집중형 계절성이 반복되는 시기로, 연간 실적에서 4분기가 차지하는 비중과 공공·금융 부문 수주 상황을 확인할 필요가 있다.",
-    "en": "The period when Mobigen's revenue-concentration seasonality typically recurs; worth checking the fourth quarter's share of annual results and order conditions in the public/financial sector."
+    "ko": "과거 4분기에 실적이 집중되는 계절적 패턴이 재현되는지, 현대차그룹과의 SDV 협력이 구체적 수주로 이어지는지 확인할 필요가 있다.",
+    "en": "It will be worth checking whether the historical pattern of earnings concentrating in the fourth quarter repeats, and whether SDV cooperation with Hyundai Motor Group translates into concrete orders."
    }
   },
   {
    "when": {
-    "ko": "수시(대량보유 변경보고 공시 시)",
-    "en": "Ongoing (upon large shareholding change disclosures)"
+    "ko": "2027년 3월 말 전후",
+    "en": "Around late March 2027"
    },
    "what": {
-    "ko": "현대차 등 주요주주의 지분 변동 공시가 나올 경우, 매각 규모와 목적(단순 처분 여부)을 확인해 수급 영향을 점검할 필요가 있다.",
-    "en": "If a major shareholder such as Hyundai Motor files a stake-change disclosure, the sale size and stated purpose (whether a simple disposal) should be checked to assess supply-demand impact."
+    "ko": "2026 사업연도 사업보고서 및 감사보고서 제출 기한으로, 연간 매출·영업이익률 추세 지속 여부와 지배주주 순이익 흐름을 확정치로 확인할 시점이다.",
+    "en": "This is the filing deadline for the FY2026 annual business report and audit report, a point to confirm on a finalized basis whether the annual revenue and operating-margin trend continued, along with the owner-attributable net income trajectory."
    }
   },
   {
    "when": {
-    "ko": "2027년 1월 CES 2027 전후",
-    "en": "Around CES 2027 in January 2027"
+    "ko": "2026년 4분기~2027년 초",
+    "en": "Q4 2026 to early 2027"
    },
    "what": {
-    "ko": "현대차·기아 등 완성차 업체의 SDV 관련 신규 발표나 협력 소식이 나올 경우, 회사의 자동차 부문 수주·협업 확대 가능성과 연결지어 확인할 필요가 있다.",
-    "en": "If Hyundai, Kia, or other automakers announce new SDV-related plans or partnerships, this should be checked against the potential for expanded automotive-segment orders or collaboration for the company."
-   }
-  },
-  {
-   "when": {
-    "ko": "뉴스케일파워 등 미국 SMR 프로젝트 관련 공시·보도 시",
-    "en": "Upon disclosures or reports on NuScale Power and other U.S. SMR projects"
-   },
-   "what": {
-    "ko": "미국 SMR 시장 확대에 따른 관련 소프트웨어 사업의 추가 수주 여부가 원자력 부문 성장의 관전 포인트다.",
-    "en": "Whether additional related software orders materialize amid the expanding U.S. SMR market is a key point to watch for growth in the nuclear segment."
+    "ko": "국토교통부·기상청이 신청한 K-UAM 안전운용체계 실증(RISE) 국가연구개발 사업의 예비타당성 조사 결과 발표 여부를 확인할 필요가 있다.",
+    "en": "It is worth monitoring whether the preliminary feasibility study results for the K-UAM Safety Operation System Demonstration (RISE) national R&D program, applied for by the Ministry of Land, Infrastructure and Transport and the Korea Meteorological Administration, are announced."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "슈어소프트테크는 현대차그룹을 중심으로 한 자동차 소프트웨어 검증 사업을 기반으로, 모비젠 인수를 통해 AI·빅데이터 부문까지 사업을 다각화하며 2025년 영업이익률을 8.9%에서 13.4%로 끌어올렸다. 다만 지배주주 순이익은 비지배주주 손익 배분 변화 등의 영향으로 2024년보다 오히려 줄었고, 2026년 1분기 일시적 영업손실 이후 2분기 재차 흑자 전환하는 등 분기별 변동성이 뚜렷하다. 자동차 부문 의존도가 다시 과반을 넘어섰다는 분석과 함께, 과거 2대 주주였던 현대차의 지분 매각 이력이 반복적으로 뉴스화되며 수급 측 부담 요인도 상존한다. 재무구조 측면에서는 부채비율 하락과 영업활동현금흐름 증가 등 안정성 개선이 관찰된다. 향후에는 3분기·4분기 실적을 통한 이익 지속성 확인, 모비젠의 계절적 매출 기여, 현대차 지분 변동 공시, SDV·SMR 관련 사업 확대 여부 등이 핵심 점검 사항이 될 것으로 보인다.",
-   "en": "SureSoftTech, built on automotive software verification centered on the Hyundai Motor Group, has diversified into AI and big data through the Mobigen acquisition, lifting its 2025 operating margin to 13.4% from 8.9% in 2024. However, owners' net income actually declined from 2024 due in part to shifts in profit attribution to non-controlling interests, and quarterly volatility remains pronounced, with a temporary operating loss in Q1 2026 followed by a return to profit in Q2. Alongside analysis suggesting the automotive segment's revenue share has again risen above half, recurring news coverage of stake sales by former second-largest shareholder Hyundai Motor represents an ongoing supply-side overhang factor. On the balance sheet side, stability has improved, as reflected in a declining debt ratio and rising operating cash flow. Going forward, key items to monitor include the sustainability of profit through Q3 and Q4 results, Mobigen's seasonal revenue contribution, disclosures on changes in Hyundai's stake, and progress on SDV- and SMR-related business expansion."
+   "ko": "슈어소프트테크는 2025년 매출과 영업이익이 동시에 늘어나며 외형과 수익성 측면에서 회복세를 보였으나, 지배주주 순이익은 영업이익과 다른 방향으로 움직여 비지배지분 등 영업외 요인에 대한 주의가 필요하다. 분기별로는 2025년 2분기의 낮은 마진과 4분기의 높은 마진이 대조를 이루고, 2026년에도 1분기 영업손실에서 2분기 흑자전환으로 이어지는 등 변동성이 이어지고 있다. 현대차그룹과의 SDV 협력 관계와 자회사 모비젠을 통한 Safe Intelligence·빅데이터 사업 확장은 중장기 성장 스토리의 핵심 축으로 꼽힌다. 동시에 자동차·방산·원자력이라는 소수 전방산업에 대한 의존도와 정부 프로젝트 일정 변동성은 균형 있게 살펴야 할 요인이다. 재무구조 면에서는 부채비율 하락과 영업현금흐름 확대가 긍정적 신호로 해석되지만, 분기 실적의 변동성은 당분간 지속될 가능성이 있다. 투자자는 다가오는 분기 실적 공시와 SDV·AI 검증 관련 구체적 수주 소식을 통해 추세의 지속성을 점검할 필요가 있다.",
+   "en": "SureSoftTech showed a recovery in both scale and profitability in 2025 as revenue and operating profit rose together, though owner-attributable net income moved in the opposite direction from operating profit, warranting attention to non-operating factors such as non-controlling interests. On a quarterly basis, the low margin in 2Q25 contrasted with the high margin in 4Q25, and volatility continued into 2026 with an operating loss in 1Q26 followed by a return to profit in 2Q26. The SDV partnership with Hyundai Motor Group and the expansion into Safe Intelligence and big data through subsidiary Mobigen stand out as core pillars of the mid-to-long-term growth narrative. At the same time, dependence on a concentrated set of end-markets—automotive, defense, and nuclear power—and the variability of government project schedules are factors that should be weighed in balance. On the financial structure side, the declining debt ratio and expanding operating cash flow are read as positive signals, but quarterly earnings volatility may persist for some time. Investors will need to check the sustainability of these trends through upcoming quarterly earnings disclosures and concrete order news related to SDV and AI verification."
   }
  },
  "sources": [
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250319000408&docno=&viewerhost=",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251112000297&docno=&viewerhost=",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A298830",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1698880736430.pdf",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A298830&cID=&MenuYn=Y&ReportGB=D&NewMenuID=103&stkGb=701",
-  "https://file.alphasquare.co.kr/media/pdfs/company-report/_250318%20%EC%8A%88%EC%96%B4%EC%86%8C%ED%94%84%ED%8A%B8%ED%85%8C%ED%81%AC%20%ED%83%90%EB%B0%A9%EB%85%B8%ED%8A%B8_%EC%A0%95%EC%9A%B0%EC%84%B1_6_%EC%9D%B4%EC%8A%88%EB%B8%8C%EB%A6%AC%ED%94%84_%EC%8A%88%EC%96%B4%EC%86%8C%ED%94%84%ED%8A%B8%ED%85%8C%ED%81%AC.pdf",
-  "https://comp.wisereport.co.kr/company/c1070001.aspx?cmp_cd=298830&cn=",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=searchInitInfo&acptNo=20240321000569",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=298830",
-  "https://kr.investing.com/equities/suresofttech",
   "https://kr.investing.com/equities/suresofttech-earnings",
-  "https://www.saramin.co.kr/zf_user/company-info/view-inner-finance/csn/bjd5WjB2KzFrdE12OXllL09DdmhTQT09/company_nm/%EC%8A%88%EC%96%B4%EC%86%8C%ED%94%84%ED%8A%B8%ED%85%8C%ED%81%AC(%EC%A3%BC)?nomo=1",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=298830",
   "https://www.judal.co.kr/?view=stockAI&shareToken=aDoV93AQyzX1HYBS",
-  "https://comp.wisereport.co.kr/company/c1050001.aspx?cmp_cd=298830&cn=",
+  "https://www.chickstockfi.com/stocks/298830",
+  "https://m.thinkpool.com/compDiscuss/cont/1011853",
   "https://markets.hankyung.com/stock/298830/consensus",
-  "https://alphasquare.co.kr/home/stock-summary?code=298830",
-  "https://m.thinkpool.com/compDiscuss/cont/1016056",
-  "https://m.thinkpool.com/compDiscuss/cont/1011853"
+  "https://judal.co.kr/?shareToken=MJ5kBFTsWN3nrvRC&view=stockAI",
+  "https://judal.co.kr/?shareToken=pfWfTObJUtyuPTsZ&view=stockAI",
+  "https://judal.co.kr/?shareToken=h1k8IuHyflIb7o9t&view=stockAI",
+  "https://judal.co.kr/?shareToken=m9wHO4gfXbW21S7I&view=stockAI",
+  "https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202100022122",
+  "https://www.ntis.go.kr/ThSearchProjectList.do?searchWord=uam&dbt=project&sort=RANK/DESC",
+  "https://www.pwcconsulting.co.kr/ko/publications/pwcconsulting_uam-ready-for-takeoff.pdf",
+  "https://www.airportal.go.kr/file/htmlOpen/upload/library/UAM(%EB%8F%84%EC%8B%AC_%ED%95%AD%EA%B3%B5_%EB%AA%A8%EB%B9%8C%EB%A6%AC%ED%8B%B0)_%EC%82%B0%EC%97%85%EC%9D%98_DNA_%ED%99%9C%EC%9A%A9_%ED%98%84%ED%99%A9_%EB%B0%8F_%EC%A0%84%EB%A7%9D.pdf",
+  "https://www.codil.or.kr/viewDtlConRpt.do;jsessionid=b9Mi42PpA15SWYaoIaCyWaEfBFds2sZLHuo56kFrH9Rw84VB7pY28tsjTxjyk2wy.codil_servlet_engine1?pMetaCode=OTKCRK210955&gubun=rpt",
+  "https://splendid-7.com/entry/18-%EB%8F%84%EC%8B%AC%ED%95%AD%EA%B3%B5%EA%B5%90%ED%86%B5UAM-%EA%B4%80%EB%A0%A8-%EC%A3%BC%EC%9A%94-%EA%B5%AD%EC%A0%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%99%80-%EC%A0%95%EB%B6%80-%EC%A7%80%EC%9B%90-%EC%A0%95%EC%B1%85",
+  "https://www.ntis.go.kr/ThSearchTotalList.do?searchWord=uam",
+  "https://www.kma.go.kr/kma/news/notice.jsp?mode=view&num=1193399"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -233,9 +223,9 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 06:04",
- "dataDate": "20260904",
+ "reportDate": "2026-10-07",
+ "reportTs": "2026-10-07 10:08",
+ "dataDate": "20261006",
  "quant": {
   "asOf": "2026-09-04",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -339,14 +329,14 @@
    }
   ],
   "valuation": {
-   "price": 4380,
-   "mcap": 0.2341,
+   "price": 4450,
+   "mcap": 0.2379,
    "shares": 53458499,
    "total_shares": 53458499,
    "wavg_shares": 52717475,
-   "per": 20.184,
+   "per": 20.507,
    "eps": 217,
-   "pbr": 2.1007,
+   "pbr": 2.1343,
    "bps": 2085,
    "roe_ttm": 11.3,
    "ttm_window": "2025Q3~2026Q2",
