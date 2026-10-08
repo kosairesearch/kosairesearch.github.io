@@ -482,9 +482,10 @@ def defects(rep, message=None, info=None, sources=None):
       · 인코딩이 깨진 자리(U+FFFD)가 본문에 박힘
 
     2026-10-08 부터 둘을 더 본다.
-      · 글자 결함 — 리포트 본문과 같은 검사(check_report_text.defects: 깨진 글자 · 태그 ·
-        받은 자료를 가리키는 말 · 한자). 검사 묶음의 전수 검사가 data/sectors.js 도 보는데,
-        생성기는 저장 전에 보지 않아 결함이 있으면 사이트에 먼저 걸릴 수 있었다.
+      · 글자 결함 · 금지 표현 — 리포트 본문과 같은 검사(check_report_text: 깨진 글자 · 태그 ·
+        받은 자료를 가리키는 말 · 한자 · 투자 권유 · 가치 단정 · 영문 속 한글). 검사 묶음의 전수
+        검사가 data/sectors.js 도 보는데, 생성기는 저장 전에 보지 않아 결함이 있으면 사이트에
+        먼저 걸릴 수 있었다.
       · 출처 0건 — sources 를 넘기면(목록) 웹 검색 인용이 하나도 없는 글을 거른다.
         None 이면 보지 않는다(마지막 회차 · collect 의 strict_sources 참고).
     """
@@ -512,11 +513,25 @@ def defects(rep, message=None, info=None, sources=None):
     if "�" in json.dumps(rep, ensure_ascii=False):
         out.append("깨진 문자(U+FFFD)")
     out += live_number_hits(rep, info)
-    for h in C.defects(rep):
-        out.append(f"글자 결함 {h['rule']}({h['section']}) {h['match']!r}")
+    for h in C.check(_as_report(rep)):
+        if h["level"] == "위험" or h["rule"] in ("hanja", "meta", "hangul_en"):
+            out.append(f"글자 결함 {h['rule']}({_FROM_REPORT.get(h['section'], h['section'])}) {h['match']!r}")
     if sources is not None and not sources:
         out.append("출처 0건(웹 검색 인용 없음)")
     return out
+
+
+# 리포트 본문 검사(check_report_text.check)는 리포트의 칸 이름으로 훑는다 — 업종 분석의 개요 · 구조 · 동향을 리포트 칸에
+# 옮겨 넣어 같은 검사를 다 받게 한다(옮기지 않으면 요지 · 전망 · 리스크만 훑는다). 걸러 내는 것은 위험 등급(투자 권유 ·
+# 가치 단정 · 목표주가 인용 조건 · 태그 · 깨진 글자)과 한자 · 받은 자료 언급 · 영문 속 한글 — 리포트 화면용 품질 규칙
+# (ROE · TTM · 말투 · 주당지표 수치)은 업종 분석에 걸지 않는다(금융 업종의 'ROE' 같은 말이 다시 쓰기를 부른다).
+_AS_REPORT = {"lead": "lead", "overview": "business", "structure": "industry", "trends": "earnings",
+              "outlook": "outlook", "risks": "risks"}
+_FROM_REPORT = {v: k for k, v in _AS_REPORT.items()}
+
+
+def _as_report(rep):
+    return {_AS_REPORT[k]: v for k, v in (rep or {}).items() if k in _AS_REPORT}
 
 
 def clean(o):

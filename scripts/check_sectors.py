@@ -253,8 +253,8 @@ check(bool(r_sec) and r_sec == r_rep, "추정액 단가가 리포트 생성기�
 check("[작성 기준일]" in gen and "build_prompt(sec, sectors[sec], as_of)" in gen, "지시문에 작성 기준일을 준다")
 check("_fin_line" in gen and "[상위 종목 최근 분기 실적" in gen, "상위 종목의 최근 분기 실적(공시 확정치)을 재료로 준다")
 check("반드시 웹 검색으로" in gen, "웹 검색을 반드시 하게 한다")
-check("for h in C.defects(rep)" in gen and "clean(g.parse_report(text))" in gen,
-      "저장 전에 리포트와 같은 글자 정리 · 검사를 한다")
+check("for h in C.check(_as_report(rep))" in gen and "clean(g.parse_report(text))" in gen,
+      "저장 전에 리포트와 같은 글자 정리 · 검사(금지 표현 포함)를 한다")
 check("strict_sources=(rnd < ROUNDS)" in gen, "출처 0건은 다시 쓰고, 마지막 회차만 받는다")
 IND = (ROOT / "scripts" / "build_industry_comp.py").read_text(encoding="utf-8")
 check("src.length?'업종 내 상장사 자료와 웹 검색 참고':'업종 내 상장사 자료 참고'" in IND,

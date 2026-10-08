@@ -128,6 +128,11 @@ eq("sources=None 이면 출처를 보지 않는다(마지막 회차)", S.defects
 true("받은 자료를 가리키는 말은 거른다(리포트와 같은 검사)",
      any(x.startswith("글자 결함 meta") for x in S.defects(rep("제공된 데이터에 따르면 업황이 좋다."), None, INFO, sources=["u"])))
 true("한자가 붙은 말은 거른다", any(x.startswith("글자 결함 hanja") for x in S.defects(rep("오너家 지배력이 크다."), None, INFO, sources=["u"])))
+true("개요 · 구조 · 동향의 투자 권유도 거른다(리포트 칸에 옮겨 검사)",
+     any(x.startswith("글자 결함 solicit(trends)") for x in S.defects(rep("지금이 기회다."), None, INFO, sources=["u"])))
+r_en = rep(); r_en["structure"] = {"ko": "구조가 단순하다.", "en": "Samsung 전자 leads the chain."}
+true("영문에 남은 한글을 거른다", any(x.startswith("글자 결함 hangul_en(structure)") for x in S.defects(r_en, None, INFO, sources=["u"])))
+eq("리포트 화면용 품질 규칙(ROE)은 걸지 않는다", S.defects(rep("증권사는 ROE 유지가 관건이다."), None, INFO, sources=["u"]), [])
 c = S.clean({**rep("업황이<sup>3</sup> 좋다. **수요**가 늘었다."), "sources": ["https://x.com/<a>"]})
 eq("태그 · 굵게 표시를 지운다", c["trends"]["ko"], "업황이 좋다. 수요가 늘었다.")
 eq("출처 목록은 건드리지 않는다", c["sources"], ["https://x.com/<a>"])
