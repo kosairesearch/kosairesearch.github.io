@@ -426,9 +426,9 @@ ok("changes 목록을 {경로: 글} 로 — 모양이 틀린 항목은 버린다
 ok("자리를 하나도 못 짚는 사유면 전부 연다(빈 enum 을 API 에 보내지 않는다)",
    G._allowed_paths(_orig, ["제목이 이상하다"]) == {p for p, _ in G._walk(_orig)})
 _u = type("Usage", (), {"input_tokens": 20000, "output_tokens": 5000})()   # 아래 ⑬의 U() 와 같은 값
-ok("수리 모델은 Sonnet · 값이 그 단가($2/$10)로 계산된다 (2만/5천 토큰 → $0.09, Opus 면 $0.225)",
+ok("수리 모델은 Sonnet · 값이 그 단가($2/$10)로 계산된다 (2만/5천 토큰 → $0.09, Opus 5.5 면 $0.18)",
    G.REPAIR_MODEL == "claude-sonnet-5" and abs(G.cost(_u, model="claude-sonnet-5")["usd"] - 0.09) < 1e-6
-   and abs(G.cost(_u)["usd"] - 0.225) < 1e-6, str(G.cost(_u, model="claude-sonnet-5")))
+   and abs(G.cost(_u)["usd"] - 0.18) < 1e-6, str(G.cost(_u, model="claude-sonnet-5")))
 ok("출력 한도 24,000 — 사고 토큰까지 담는다", G.MAX_TOKENS >= 24000)
 # 30자 상한이 "A는 올랐고 B는 내렸다" 식 짧은 대비 제목만 살아남게 했다.
 ok("35자 제목은 이제 통과",
@@ -822,9 +822,13 @@ class U:
 
 
 c = G.cost(U(), batch=False)
-# opus-5 는 입력 $5 / 출력 $25 — 20K*5 + 5K*25 = 100,000 + 125,000 = $0.225
-ok("동기 비용", abs(c["usd"] - 0.225) < 1e-6, str(c))
-ok("배치는 반값", abs(G.cost(U(), batch=True)["usd"] - 0.1125) < 1e-6)
+# opus-5-5 는 입력 $4 / 출력 $20 — 20K*4 + 5K*20 = 80,000 + 100,000 = $0.18
+ok("동기 비용", abs(c["usd"] - 0.18) < 1e-6, str(c))
+ok("배치는 반값", abs(G.cost(U(), batch=True)["usd"] - 0.09) < 1e-6)
+ok("Opus 5 단가도 그대로 남긴다", abs(G.cost(U(), model="claude-opus-5")["usd"] - 0.225) < 1e-6)
+_p = G._params("물음")
+ok("Opus 5.5 요청에 사고 깊이 medium 을 적는다(사장 승인)", _p.get("output_config") == {"effort": "medium"}
+   and _p["model"] == "claude-opus-5-5" and _p["thinking"] == {"type": "adaptive"}, str(_p.get("output_config")))
 ok("키가 없으면 None", G.cost(None) is None)
 
 print("\n⑫ 렌더러 — 문단 나누기")

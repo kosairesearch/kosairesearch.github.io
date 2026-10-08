@@ -27,7 +27,7 @@ BRIEF_BATCH_CUTOFF 초 안에 안 끝나면 취소하고 동기로 다시 부른
 
 환경변수
     ANTHROPIC_API_KEY   필수(생성 시)
-    BRIEF_MODEL         기본 claude-opus-5
+    BRIEF_MODEL         기본 claude-opus-5-5
     BRIEF_USE_BATCH     1 이면 Batch API 시도 후 실패 시 동기로 폴백
     BRIEF_BATCH_CUTOFF  배치를 기다릴 최대 초(기본 2400 = 40분)
     DART_API_KEY        공시 섹션용(없으면 그 부분만 빠진다)
@@ -49,7 +49,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 KST = datetime.timezone(datetime.timedelta(hours=9))
 
-MODEL = os.getenv("BRIEF_MODEL", "claude-opus-5")
+MODEL = os.getenv("BRIEF_MODEL", "claude-opus-5-5")
+# 사고 깊이 — Opus 5.5 는 medium(2026-10-08 사장 승인). high 로 둔 시험은 출력이 53% 늘어 한 편 값이 Opus 5 보다
+# 9% 높았다(같은 단계에서도 Opus 5.5 가 더 생각한다). 공식 안내로는 Opus 5.5 의 medium 이 Opus 5 의 high 보다
+# 품질이 높다. 표에 없는 모델은 적지 않는다.
+EFFORT = {"claude-opus-5-5": "medium"}
 # 사고(thinking) 토큰도 이 한도 안에서 센다. 통과한 글이 9,500~11,600 토큰을
 # 썼는데 한도가 16,000 이면 재료가 많은 날 잘린다 — 잘린 JSON 은 repair 가
 # 억지로 닫아 빈 칸 투성이 글이 되고, 그건 거부돼 $0.3 가 날아간다. 쓴 만큼만
@@ -72,6 +76,7 @@ MAX_DATA_LAG = int(os.getenv("BRIEF_MAX_DATA_LAG", "0"))
 # 백만 토큰당 (입력, 출력) 달러. 예상 비용 표시용이며 청구와 무관하다.
 # Sonnet 5 는 2026-08-31 까지 도입가 $2/$10 이 적용된다.
 PRICES = {
+    "claude-opus-5-5": (4.0, 20.0),     # 2026-10-08 요금표 — Opus 5 보다 20% 낮다
     "claude-opus-5": (5.0, 25.0),
     "claude-opus-4-8": (5.0, 25.0),
     "claude-sonnet-5": (2.0, 10.0),     # 9/21 요금표 확인 — 출시 특가 $2/$10 이 정식 요금이 됐다
@@ -960,6 +965,7 @@ def _params(prompt):
         # 잡을지. 사고 예산은 모델이 정하게 둔다.
         "thinking": {"type": "adaptive"},
         "messages": [{"role": "user", "content": prompt}],
+        **({"output_config": {"effort": EFFORT[MODEL]}} if MODEL in EFFORT else {}),
     }
 
 

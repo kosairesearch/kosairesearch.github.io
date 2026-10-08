@@ -116,9 +116,11 @@ def _no_credit(e):
     """잔액이 바닥났는가 — 오늘은 다시 시도해 봐야 소용없다."""
     return bool(_CREDIT_RE.search(str(e)))
 
-MODEL = os.getenv("REPORT_MODEL_V2", "claude-opus-5")  # 폴백
+MODEL = os.getenv("REPORT_MODEL_V2", "claude-opus-5-5")  # 폴백
 # 모델 정책: 시총 상위 MODEL_TOP_N개는 고급 모델(Opus), 나머지는 효율 모델(Sonnet)
-MODEL_TOP = os.getenv("REPORT_MODEL_TOP", "claude-opus-5")
+# 2026-10-08 Opus 5 → Opus 5.5(사장 승인 — 단가 20% 낮음 · 캐시 읽기 60% 낮음). Sonnet 은 5 그대로다 —
+# Sonnet 5.5 는 단가가 같고 사고 끄기(thinking disabled)가 400 이라 브리핑 수리가 깨진다.
+MODEL_TOP = os.getenv("REPORT_MODEL_TOP", "claude-opus-5-5")
 MODEL_REST = os.getenv("REPORT_MODEL_REST", "claude-sonnet-5")
 MODEL_TOP_N = int(os.getenv("REPORT_MODEL_TOP_N", "300"))
 TOP_N = int(os.getenv("REPORT_TOP_N", "10"))
@@ -131,6 +133,19 @@ SHORT_WAIT = int(os.getenv("BATCH_SHORT_WAIT_SEC", "1800"))
 def model_for(rank):
     """시총 순위(1=최대)에 따른 모델 선택."""
     return MODEL_TOP if (rank is not None and rank <= MODEL_TOP_N) else MODEL_REST
+
+
+# 모델마다 사고 깊이(effort)를 적어 둔다. Opus 5.5 는 medium(2026-10-08 사장 승인). 같은 단계에서도 Opus 5.5 가
+# Opus 5 보다 더 생각한다 — high 로 둔 브리핑 시험은 출력이 53% 늘어 한 편 값이 Opus 5 보다 9% 높았다. 공식 안내로는
+# Opus 5.5 의 medium 이 Opus 5 의 high 보다 품질이 높다. 기본값도 medium 이지만 바뀌어도 그대로 가게 적는다.
+# 표에 없는 모델은 적지 않는다(기본값 그대로).
+EFFORT = {"claude-opus-5-5": "medium"}
+
+
+def output_config(model):
+    """요청에 붙일 output_config — 없으면 빈 dict(요청 모양을 바꾸지 않는다)."""
+    e = EFFORT.get(model)
+    return {"output_config": {"effort": e}} if e else {}
 
 TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 6,
           "blocked_domains": ["namu.wiki", "librewiki.net", "dcinside.com", "fmkorea.com"],
@@ -2474,6 +2489,7 @@ def submit(cl, as_of):
                 thinking={"type": "adaptive"},
                 tools=TOOLS,
                 messages=[{"role": "user", "content": build_prompt_v2(st, q, as_of)}],
+                **output_config(mdl),
             ),
         ))
     # skip 은 DART 가 '조회된 데이터 없음' 을 준 종목만, 그리고 자동 백필(fill)과
@@ -2636,8 +2652,10 @@ def poll(cl, batch_id, budget=None):
 # 입력의 10%, 캐시 쓰기는 125% 로 잡는다. 웹 검색은 1,000회에 $10. 회수 단계의 보정(영문 채우기 ·
 # 표현 교정)도 배치다(2026-10-08 — 전에는 즉시 호출 · 정가). 청구서가 아니라 규모를 가늠하는 추정이다 —
 # 실제 청구는 콘솔이 답이다.
-_PRICE = {"claude-opus-5": (2.5, 12.5), "claude-sonnet-5": (1.0, 5.0),
+_PRICE = {"claude-opus-5-5": (2.0, 10.0), "claude-opus-5": (2.5, 12.5), "claude-sonnet-5": (1.0, 5.0),
           "claude-opus-4-8": (2.5, 12.5), "claude-sonnet-4-6": (1.5, 7.5)}
+# 캐시 읽기는 입력 단가의 몇 배인가. Opus 5.5 는 $0.20 / $4 = 0.05(2026-10-08 요금표) — 나머지는 0.1.
+_CACHE_R = {"claude-opus-5-5": 0.05}
 
 
 def _usage_of(message):
@@ -2655,7 +2673,7 @@ def _usage_of(message):
 
 def _cost_usd(model, u, batch=True):
     pin, pout = _PRICE.get(model, (2.5, 12.5))
-    tok = ((u["in"] + u["cache_w"] * 1.25 + u["cache_r"] * 0.1) * pin + u["out"] * pout) / 1e6
+    tok = ((u["in"] + u["cache_w"] * 1.25 + u["cache_r"] * _CACHE_R.get(model, 0.1)) * pin + u["out"] * pout) / 1e6
     return tok * (1 if batch else 2) + u["search"] * 0.01
 
 
