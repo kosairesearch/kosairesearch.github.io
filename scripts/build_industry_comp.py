@@ -109,7 +109,8 @@ JS = r'''(function(){
     if(an){secs.push({t:'업종 개요',h:paras(an.overview)});secs.push({t:'산업 구조·가치사슬',h:paras(an.structure)});secs.push({t:'최근 동향',h:paras(an.trends)});secs.push({t:'향후 전망',h:paras(an.outlook)});
       var risks=(an.risks||[]).map(function(r){return '<div class="rk"><h4>'+esc(PK(r.title))+'</h4><p>'+esc(PK(r.body))+'</p></div>'}).join('');
       var d=fmtDay(an.generatedAt||(window.KOS_SECTORS&&KOS_SECTORS.lastUpdated)),src=an.sources||[];
-      var tail=(d?'<p class="stamp">'+d+' 작성 · 업종 내 상장사 자료와 웹 검색 참고 · 본문 수치는 작성 시점 기준이며, 위 지표는 '+(dateF||'최근')+' 종가입니다.</p>':'')
+      /* 웹 검색 인용이 없는 글(생성기가 마지막 회차에 받은 것 · generate_sectors.collect)에는 '웹 검색 참고' 를 쓰지 않는다 — 두 문구 모두 글자 그대로 둔다(번역 사전이 페이지 글에서 찾는다) */
+      var tail=(d?'<p class="stamp">'+d+' 작성 · '+(src.length?'업종 내 상장사 자료와 웹 검색 참고':'업종 내 상장사 자료 참고')+' · 본문 수치는 작성 시점 기준이며, 위 지표는 '+(dateF||'최근')+' 종가입니다.</p>':'')
         +(src.length?'<details class="srcmore"><summary>참고 자료 '+src.length+'건 더 보기</summary><ol class="srcs">'+src.map(function(u){return '<li><a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(host(u))+'</a></li>'}).join('')+'</ol></details>':'');
       if(risks)secs.push({t:'리스크 요인',h:'<div class="rks">'+risks+'</div>'+tail});else if(tail)secs[secs.length-1].h+=tail}
     else if(sec==='기타'){secs.push({t:'분류 안내',h:'<div class="prose"><p>여러 업종에 걸쳐 있거나 기존 분류에 속하지 않는 기업을 모은 구간입니다. 사업 내용이 서로 달라 하나의 업황으로 묶이지 않으므로 AI 업종 분석을 제공하지 않습니다.</p><p>각 기업의 사업 구조와 실적은 아래 종목의 개별 리포트에서 확인하실 수 있습니다.</p></div>'})}

@@ -3,8 +3,23 @@
 KOS ai — 업종(섹터) AI 분석 생성기 (Batch API 전용 · Sonnet)
 
 각 업종에 대해 개요·구조(가치사슬)·최근동향·전망·리스크를 한/영으로 생성해
-data/sectors.js (window.KOS_SECTORS) 를 만든다. 업종별 상위 종목·집계 통계를
+data/sectors.js (window.KOS_SECTORS) 를 만든다. 업종별 상위 종목·집계 통계와
+작성 기준일, 상위 종목의 최근 분기 실적(공시 확정치 · 기업 리포트 자료)을
 프롬프트에 제공한다. 종목 리포트 배치 로직을 일부 재사용.
+
+■ 2026-10-08 보완 — 근거 숫자 · 시점 · 출처
+
+  9월 4일 판 30편을 전수로 보니 셋이 약했다.
+    · 재료가 업종 이름 · 상위 종목 이름뿐이라 우리가 가진 공시 실적을 쓰지 못했다
+      (6편은 금액 · 비율 수치가 하나도 없었다).
+    · 작성 기준일을 주지 않아, 이미 끝난 분기를 '예상'으로 쓴 문장이 나왔다
+      (반도체 '최근 동향' — 9월 4일 작성인데 2분기 가격을 전망으로 썼다).
+    · 7편은 웹 검색 인용이 0건인데 화면에는 '웹 검색 참고'라고 나갔다.
+  그래서 기준일과 상위 종목의 최근 분기 실적을 재료로 주고, 웹 검색을 반드시 하게
+  하고, 저장 전에 리포트와 같은 글자 검사(check_report_text)를 돌린다. 출처가 0건인
+  글은 다시 쓰게 하되 마지막 회차는 받는다 — 같은 이유로 계속 버리면 그 업종이
+  옛 글에 갇히고 돈만 나간다. 그런 글은 화면이 '웹 검색 참고'를 빼고 보여 준다
+  (build_industry_comp).
 
 ■ Batch API 만 쓴다 (예외 없음)
 
@@ -37,7 +52,7 @@ import json
 import time
 import hashlib
 import datetime
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 import number_spacing       # 금액 표기 통일(79조3,187억원 → 79조 3,187억원)
@@ -47,9 +62,11 @@ from anthropic.types.message_create_params import MessageCreateParamsNonStreamin
 from anthropic.types.messages.batch_create_params import Request
 
 import generate_reports as g  # extract_text / parse_report / collect_sources 재사용
+import check_report_text as C  # clean_markup · defects — 리포트 본문과 같은 글자 기준
 
 ROOT = Path(__file__).resolve().parent.parent
 STOCKS_JS = ROOT / "data" / "stocks.js"
+REPORTS_V2 = ROOT / "data" / "reports_v2"   # 기업 리포트 — quant.quarterly 가 공시 확정 분기 실적이다
 OUT_JS = ROOT / "data" / "sectors.js"
 STATE = ROOT / "data" / "sector_batch_state.json"
 
@@ -76,7 +93,14 @@ SYSTEM = (
     "  (O) 전체 시장 시가총액의 절반에 가까운 비중을 차지하는 최대 업종이다\n"
     "  (X) 상장 종목은 119개로 시가총액 합계는 약 47.5조원이다\n"
     "  (O) 종목 수는 많지만 개별 규모는 작아 시장 비중은 1%를 밑도는 업종이다\n"
-    "개별 기업의 점유율·실적·수주처럼 공시나 검색으로 확인한 값은 수치로 써도 된다."
+    "개별 기업의 점유율·실적·수주처럼 공시나 검색으로 확인한 값은 수치로 써도 된다.\n\n"
+    "[상위 종목 최근 분기 실적]은 공시 확정치다. 매 거래일 바뀌는 값이 아니므로 최근 동향의 근거로 "
+    "수치를 인용해도 된다. 그 자료를 '제공된 자료'·'주어진 데이터'처럼 받은 자료로 가리키지 말고 "
+    "'2분기 공시 기준'처럼 출처로 말한다.\n"
+    "[작성 기준일]보다 앞서 끝난 기간(지난 분기·지난해)은 이미 나온 결과로 쓴다. 그 기간을 "
+    "'예상된다'·'전망이다'처럼 앞으로의 일로 쓰지 않는다. 검색 결과가 그 기간을 아직 전망으로 "
+    "다루고 있으면 실제 결과를 확인해 쓰고, 확인하지 못하면 그 내용은 쓰지 않는다.\n"
+    "최근 업황은 반드시 웹 검색으로 확인하고, 검색으로 확인한 사실은 그 결과를 인용해 쓴다."
 )
 
 # en 자리를 ""로 비워 보였더니 모델이 템플릿 그대로 빈 문자열을 내놓는 일이 있었다
@@ -146,27 +170,136 @@ def load_sectors():
         cats = s.get("categories") or [s.get("sector", "기타")]
         for c in cats:
             by[c].append(s)
-    out = {}
+    out, tops = {}, {}
     for sec, lst in by.items():
         mc = sum(s.get("mcap", 0) or 0 for s in lst)
         top = sorted(lst, key=lambda x: x.get("mcap", 0) or 0, reverse=True)[:12]
+        tops[sec] = top
         out[sec] = {
             "count": len(lst), "mcap": round(mc, 1),
             "weight": round(mc / total * 100, 1) if total else 0,
             "top": [(t["name"], t.get("mcap", 0) or 0) for t in top],
         }
+    # 상위 종목의 최근 분기 실적 — 기업 리포트 자료(quant · 공시 확정치)에서. 돈이 들지 않는다.
+    # '가장 최근 분기' 는 상위 종목들의 마지막 분기 가운데 가장 많은 것(지금 2026Q2)이다.
+    # 그보다 늦은 이름의 분기가 있는 회사는 결산월이 달라 회계 분기 이름이 앞서는 것이라 뺀다
+    # (금비 · 풍강 등 '2026Q3' — 달력으로는 아직 공시될 수 없는 분기다).
+    qs = {}
+    for top in tops.values():
+        for t in top:
+            tk = t.get("ticker")
+            if tk and tk not in qs:
+                qs[tk] = _quant(tk)
+    lasts = [r[-1]["q"] for r in (_rows(q) for q in qs.values()) if r]
+    latest = Counter(lasts).most_common(1)[0][0] if lasts else None
+    for sec, top in tops.items():
+        out[sec]["latestQ"] = latest
+        out[sec]["fin"] = [x for x in (_fin_line(t["name"], qs.get(t.get("ticker")), latest,
+                                                 no_rev=t.get("sector") in NO_REV) for t in top) if x]
     return out
 
 
-def build_prompt(sec, info):
+# 매출 칸이 매출이 아닌 업종(영업수익 · 일부 계정) — 실적 줄에 매출을 싣지 않는다(_fin_line).
+NO_REV = ("금융", "보험")
+
+
+def _quant(ticker):
+    """기업 리포트의 quant(공시 확정 재무). 없거나 깨졌으면 None."""
+    try:
+        d = json.loads((REPORTS_V2 / f"{ticker}.json").read_text(encoding="utf-8"))
+    except Exception:
+        return None
+    q = d.get("quant") if isinstance(d, dict) else None
+    return q if isinstance(q, dict) else None
+
+
+def _rows(q):
+    """분기 실적 줄 가운데 매출이나 영업이익이 있는 것(시간순)."""
+    return [x for x in ((q or {}).get("quarterly") or [])
+            if isinstance(x, dict) and re.fullmatch(r"\d{4}Q[1-4]", str(x.get("q") or ""))
+            and (x.get("rev") is not None or x.get("op") is not None)]
+
+
+def _won(v):
+    """원 → '74조 5,663억원' · '2,078억원' · '8,500만원' — 리포트 금액 표기(맞춤법 제44항)와 같은 꼴."""
+    a = abs(v)
+    eok = round(a / 1e8)
+    sign = "-" if v < 0 else ""
+    if eok >= 10000:
+        jo, rest = divmod(eok, 10000)
+        return sign + (f"{jo:,}조 {rest:,}억원" if rest else f"{jo:,}조원")
+    if a >= 1e8:
+        return sign + f"{eok:,}억원"
+    return sign + f"{round(a / 1e4):,}만원"
+
+
+def _qtext(label):
+    """'2026Q2' → '2026년 2분기'"""
+    m = re.fullmatch(r"(\d{4})Q([1-4])", str(label or ""))
+    return f"{m.group(1)}년 {m.group(2)}분기" if m else str(label or "")
+
+
+def _chg(cur, prev, op=False):
+    """전년 같은 분기와 견준 말. 증감률은 둘 다 양수일 때만 — 적자가 끼면 비율이 뜻을 잃어 영업이익만 말로 쓴다."""
+    if cur is None or prev is None:
+        return ""
+    if cur > 0 and prev > 0:
+        return f"전년 동기 대비 {(cur / prev - 1) * 100:+,.1f}%"
+    if not op:
+        return ""
+    if prev <= 0 < cur:
+        return "흑자 전환"
+    if prev > 0 >= cur:
+        return "적자 전환"
+    if prev < 0 and cur < 0:
+        return "적자 지속"
+    return ""
+
+
+def _fin_line(name, q, latest, no_rev=False):
+    """상위 종목 한 곳의 최근 분기 실적 한 줄 — '삼성전자(연결): 2026년 2분기 매출 …(전년 동기 대비 +5.1%), 영업이익 …'.
+    자료가 없거나, 마지막 분기 이름이 latest 보다 늦은 회사(결산월이 다르다)는 None.
+    no_rev 면 매출을 싣지 않는다 — 금융 · 보험의 '매출' 칸은 영업수익이나 일부 계정이라(신한지주 9,164억원 ·
+    영업이익 2조 4,763억원) 매출로 읽히면 틀린 문장이 된다. 다른 업종도 매출이 영업이익보다 작으면 같은 경우라 뺀다."""
+    rows = _rows(q)
+    if not rows or not latest or rows[-1]["q"] > latest:
+        return None
+    cur = rows[-1]
+    y, n = cur["q"].split("Q")
+    prev = next((x for x in rows if x["q"] == f"{int(y) - 1}Q{n}"), {})
+    basis = str(q.get("fs_basis") or "").split("(")[0].strip()          # '연결' · '별도'
+    parts = []
+    if cur.get("rev") is not None and not no_rev and not (cur.get("op") is not None and 0 < cur["rev"] < cur["op"]):
+        c = _chg(cur["rev"], prev.get("rev"))
+        parts.append(f"매출 {_won(cur['rev'])}" + (f"({c})" if c else ""))
+    if cur.get("op") is not None:
+        c = _chg(cur["op"], prev.get("op"), op=True)
+        amt = f"영업이익 {_won(cur['op'])}" if cur["op"] >= 0 else f"영업손실 {_won(-cur['op'])}"
+        parts.append(amt + (f"({c})" if c else ""))
+    return f"{name}{f'({basis})' if basis in ('연결', '별도') else ''}: {_qtext(cur['q'])} " + ", ".join(parts)
+
+
+def _day(as_of):
+    """'2026-10-08 18:20' → '2026년 10월 8일'"""
+    m = re.match(r"(\d{4})-(\d{2})-(\d{2})", as_of or "")
+    return f"{int(m.group(1))}년 {int(m.group(2))}월 {int(m.group(3))}일" if m else ""
+
+
+def build_prompt(sec, info, as_of=None):
     tops = "\n".join(f"  - {nm} (시총 {number_spacing.mcap_text(mc)})" for nm, mc in info["top"])
+    day, lq, fin = _day(as_of), info.get("latestQ"), info.get("fin") or []
+    head = (f"[작성 기준일] {day}" + (f" · 공시로 확인되는 가장 최근 분기는 {_qtext(lq)}" if lq else "") + "\n") if day else ""
+    fins = ("[상위 종목 최근 분기 실적 · 공시 확정치, 수치 인용 가능]\n"
+            + "\n".join(f"  - {x}" for x in fin) + "\n\n") if fin else ""
     return (
-        f"[업종] {sec}\n"
+        head
+        + f"[업종] {sec}\n"
         f"[집계 · 참고용, 본문에 수치로 옮기지 말 것] 상장 종목 {info['count']}개 · "
         f"업종 시가총액 합계 약 {info['mcap']}조원 (전체 시장의 약 {info['weight']}%)\n"
-        f"[시총 상위 종목 · 종목명은 쓰되 금액은 본문에 옮기지 말 것]\n{tops}\n\n"
-        f"위 업종에 대해 한국 증시 관점의 업종 분석을 작성하세요. 위 상위 종목들을 적절히 언급하고, "
-        f"필요하면 웹 검색으로 최근 업황을 확인하세요.\n\n" + SCHEMA
+        f"[시총 상위 종목 · 종목명은 쓰되 시가총액 금액은 본문에 옮기지 말 것]\n{tops}\n\n"
+        + fins
+        + "위 업종에 대해 한국 증시 관점의 업종 분석을 작성하세요. 위 상위 종목들을 적절히 언급하고, "
+        "반드시 웹 검색으로 최근 업황을 확인하세요.\n\n" + SCHEMA
     )
 
 
@@ -222,7 +355,7 @@ def submit(cl, as_of, force=None):
                 model=MODEL, max_tokens=24000,
                 system=[{"type": "text", "text": SYSTEM, "cache_control": {"type": "ephemeral"}}],
                 thinking={"type": "adaptive"}, tools=TOOLS,
-                messages=[{"role": "user", "content": build_prompt(sec, sectors[sec])}],
+                messages=[{"role": "user", "content": build_prompt(sec, sectors[sec], as_of)}],
             )))
         log(f"  · 준비 {sec} ({sectors[sec]['count']}종목)")
     batch = cl.messages.batches.create(requests=reqs)
@@ -306,6 +439,10 @@ def live_number_hits(rep, info):
 
     숫자 옆(앞뒤 30자)에 '시가총액'·'비중'·'종목' 같은 말이 있을 때만 잡는다.
     같은 숫자가 우연히 다른 뜻으로 나올 수 있기 때문이다(영업이익률 0.8% 등).
+
+    숫자는 온전한 수로만 찾는다 — 앞에 다른 숫자가 붙어 있으면 다른 수다. 비중 '2' 를
+    찾다가 '매출 비중 12%' 의 '2%' 를 잡으면 멀쩡한 글을 버리고 다시 쓰게 된다(2026-10-08 ·
+    상위 종목 분기 실적을 재료로 넣으면서 본문의 숫자가 늘었다).
     """
     if not info:
         return []
@@ -322,7 +459,7 @@ def live_number_hits(rep, info):
         if not val:
             continue
         for var in _num_variants(val):
-            for m in re.finditer(re.escape(var) + unit, body):
+            for m in re.finditer(r"(?<![\d.,])" + re.escape(var) + unit, body):
                 a, b = max(0, m.start() - 30), m.end() + 30
                 if re.search(near, body[a:b]):
                     hits.append(f"{label}({var}) 본문에 박힘")
@@ -333,7 +470,7 @@ def live_number_hits(rep, info):
     return hits
 
 
-def defects(rep, message=None, info=None):
+def defects(rep, message=None, info=None, sources=None):
     """저장하면 안 되는 결함 목록. 비어 있으면 정상.
 
     2026-08 생성분에서 실제로 나온 것들이다. 한 번 저장되면 다음 분기까지 그대로
@@ -343,6 +480,13 @@ def defects(rep, message=None, info=None):
       · 영어 본문이 통째로 빈 채로 저장 → 영어 모드에서 한국어가 그대로 노출
       · max_tokens 로 잘려 json_repair 가 문장 중간을 닫아버림
       · 인코딩이 깨진 자리(U+FFFD)가 본문에 박힘
+
+    2026-10-08 부터 둘을 더 본다.
+      · 글자 결함 — 리포트 본문과 같은 검사(check_report_text.defects: 깨진 글자 · 태그 ·
+        받은 자료를 가리키는 말 · 한자). 검사 묶음의 전수 검사가 data/sectors.js 도 보는데,
+        생성기는 저장 전에 보지 않아 결함이 있으면 사이트에 먼저 걸릴 수 있었다.
+      · 출처 0건 — sources 를 넘기면(목록) 웹 검색 인용이 하나도 없는 글을 거른다.
+        None 이면 보지 않는다(마지막 회차 · collect 의 strict_sources 참고).
     """
     out = []
     if getattr(message, "stop_reason", None) == "max_tokens":
@@ -368,7 +512,23 @@ def defects(rep, message=None, info=None):
     if "�" in json.dumps(rep, ensure_ascii=False):
         out.append("깨진 문자(U+FFFD)")
     out += live_number_hits(rep, info)
+    for h in C.defects(rep):
+        out.append(f"글자 결함 {h['rule']}({h['section']}) {h['match']!r}")
+    if sources is not None and not sources:
+        out.append("출처 0건(웹 검색 인용 없음)")
     return out
+
+
+def clean(o):
+    """태그 · 인용 표시 · 마크다운을 지운다(감싼 글은 남긴다) — 리포트와 같은 저장 전 정리(clean_markup).
+    결정적이라 돈이 들지 않는다. 출처 목록은 건드리지 않는다."""
+    if isinstance(o, str):
+        return C.clean_markup(o)
+    if isinstance(o, list):
+        return [clean(x) for x in o]
+    if isinstance(o, dict):
+        return {k: (v if k == "sources" else clean(v)) for k, v in o.items()}
+    return o
 
 
 def _tally(use, message):
@@ -387,10 +547,11 @@ def _tally(use, message):
     use["web_search"] += getattr(stu, "web_search_requests", 0) or 0 if stu else 0
 
 
-# Batch API 요금(1M 토큰당, 즉시 호출의 절반). 2026-09 기준이며 요금표가
-# 바뀌면 아래 추정액만 어긋난다 — 토큰 수 자체는 그대로 남으므로 나중에
-# 다시 계산할 수 있다.
-_RATE = {"claude-sonnet-5": (1.50, 7.50), "claude-opus-5": (2.50, 12.50)}
+# Batch API 요금(1M 토큰당, 즉시 호출의 절반). 요금표가 바뀌면 아래 추정액만
+# 어긋난다 — 토큰 수 자체는 그대로 남으므로 나중에 다시 계산할 수 있다.
+# 리포트 생성기의 배치 단가표(generate_reports_v2._PRICE)와 같아야 한다 — 한때 옛 정가의
+# 절반을 적어 두어 추정액이 실제보다 1.5배 크게 찍혔다(check_sectors 가 두 표를 견준다).
+_RATE = {"claude-sonnet-5": (1.00, 5.00), "claude-opus-5": (2.50, 12.50)}
 _WEB_SEARCH_PER_1K = 10.0                       # 웹 검색 1,000회당(배치 할인 없음)
 
 
@@ -410,7 +571,10 @@ def _log_usage(use, model):
         log(f"  요금표에 없는 모델({model}) — 토큰 수로 직접 계산할 것")
 
 
-def collect(cl, as_of):
+def collect(cl, as_of, strict_sources=True):
+    """회수해 저장한다. strict_sources 면 웹 검색 인용이 0건인 글을 거르고(다음 회차가 다시 쓴다),
+    아니면 받는다 — 마지막 회차에서까지 거르면 그 업종은 옛 글에 갇힌 채 돈만 나간다. 그렇게 받은
+    글은 출처가 없으므로 화면이 '웹 검색 참고' 를 빼고 보여 준다(build_industry_comp)."""
     if not STATE.exists():
         log("❌ state 없음"); sys.exit(1)
     st = json.loads(STATE.read_text(encoding="utf-8"))
@@ -434,14 +598,18 @@ def collect(cl, as_of):
         _tally(use, result.result.message)
         try:
             text = g.extract_text(result.result.message)
-            rep = g.parse_report(text)
-            why = defects(rep, result.result.message, agg.get(sec))
+            rep = clean(g.parse_report(text))
+            srcs = g.collect_sources(result.result.message)
+            why = defects(rep, result.result.message, agg.get(sec),
+                          sources=srcs if strict_sources else None)
             if why:
                 fail += 1; dropped.append(sec)
                 log(f"  · ⚠️ {sec} 불완전 — 건너뜀 ({'; '.join(why)})"); continue
-            srcs = g.collect_sources(result.result.message)
+            rep.pop("sources", None)        # 출처는 웹 검색 인용에서만 — 모델이 글 안에 적은 목록은 쓰지 않는다
             if srcs:
                 rep["sources"] = srcs[:10]
+            else:
+                log(f"  · {sec} 출처 0건 — 마지막 회차라 저장한다(화면은 '웹 검색 참고' 를 빼고 보인다)")
             rep["sector"] = sec
             # 업종별 작성 시점. FORCE 없이 돌리면 새로 만든 업종과 예전 것이 섞이므로
             # 전체 lastUpdated 만으로는 화면에 정확한 날짜를 못 쓴다.
@@ -509,7 +677,7 @@ def main():
             log(f"\n❌ {rnd}차 배치가 {MAX_WAIT // 60}분 안에 안 끝났다.")
             log("   만들어진 것이 없다. 실행 기록을 보고 다시 돌릴 것.")
             sys.exit(1)
-        collect(cl, as_of)
+        collect(cl, as_of, strict_sources=(rnd < ROUNDS))
         left = load_retry()
         if not left:
             log(f"\n■ {rnd}차에서 전부 저장됐다.")

@@ -234,6 +234,32 @@ if WD.exists():
 #    이게 없어서 "월 1회로 늘리면 얼마 더 드나" 를 기록으로 답할 수 없었다.
 check("_tally" in gen and "_log_usage" in gen, "쓴 토큰과 웹 검색 횟수를 로그에 남긴다")
 
+#    추정액의 단가가 리포트 생성기의 배치 단가표와 같아야 한다. 한때 옛 정가의 절반($1.5/$7.5)을
+#    적어 두어 추정액이 실제보다 1.5배 크게 찍혔다(2026-10-08 · 정가는 generate_brief.PRICES 의 $2/$10).
+def _rate(path, name):
+    m = re.search(r'"claude-sonnet-5":\s*\(([\d.]+),\s*([\d.]+)\)', (ROOT / "scripts" / path).read_text(encoding="utf-8")
+                  .split(name, 1)[-1])
+    return (float(m.group(1)), float(m.group(2))) if m else None
+
+
+r_sec, r_rep = _rate("generate_sectors.py", "_RATE = "), _rate("generate_reports_v2.py", "_PRICE = ")
+check(bool(r_sec) and r_sec == r_rep, "추정액 단가가 리포트 생성기의 배치 단가와 같다", f"{r_sec} · {r_rep}")
+
+# ── 10) 근거 숫자 · 시점 · 출처 (2026-10-08 보완) ───────────────
+#
+#    9월 4일 판 30편 중 6편은 금액 · 비율 수치가 없었고(재료가 종목 이름뿐), 반도체 '최근 동향'은 이미 끝난
+#    2분기를 '예상'으로 썼고(기준일을 주지 않았다), 7편은 웹 검색 인용이 0건인데 화면에 '웹 검색 참고'가 나갔다.
+#    동작은 scripts/tests/sectors_gen_test.py 가 실제로 돌려 본다. 여기서는 연결이 끊기지 않았는지만 본다.
+check("[작성 기준일]" in gen and "build_prompt(sec, sectors[sec], as_of)" in gen, "지시문에 작성 기준일을 준다")
+check("_fin_line" in gen and "[상위 종목 최근 분기 실적" in gen, "상위 종목의 최근 분기 실적(공시 확정치)을 재료로 준다")
+check("반드시 웹 검색으로" in gen, "웹 검색을 반드시 하게 한다")
+check("for h in C.defects(rep)" in gen and "clean(g.parse_report(text))" in gen,
+      "저장 전에 리포트와 같은 글자 정리 · 검사를 한다")
+check("strict_sources=(rnd < ROUNDS)" in gen, "출처 0건은 다시 쓰고, 마지막 회차만 받는다")
+IND = (ROOT / "scripts" / "build_industry_comp.py").read_text(encoding="utf-8")
+check("src.length?'업종 내 상장사 자료와 웹 검색 참고':'업종 내 상장사 자료 참고'" in IND,
+      "출처가 없는 글은 화면에 '웹 검색 참고'를 쓰지 않는다")
+
 print(f"통과 {len(ok)} · 실패 {len(fail)}\n")
 for m in ok:
     print("  PASS", m)
