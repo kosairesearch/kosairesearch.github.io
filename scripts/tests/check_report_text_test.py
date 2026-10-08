@@ -170,5 +170,25 @@ for where, h in bad[:8]:
     print(f"      {where} [{h['section']}] {h['rule']} {h['match']!r} — {h['sentence'][:70]}")
 eq(f"리포트 {n:,}개 · 업종 {len(sectors)}개 — 깨진 글자·태그·받은 자료 언급·한자 0", len(bad), 0)
 
+# 모닝브리핑 — 화면은 [이름](여섯 자리) 만 링크로 바꾸므로 나머지 대괄호는 괄호째 찍힌다(9/2 '[기재정정]' ·
+# 10/2 '[마이크론]'). 생성기의 strip_brackets 가 저장 전에 벗긴다. 이 전수는 아침 작업의 회귀 시험
+# (test_brief_gen)에 두지 않는다 — 지난 호 하나 때문에 그날 브리핑이 막히면 안 된다.
+print("\n── 전수: 발행한 모닝브리핑에 링크가 아닌 대괄호가 없다 ──")
+BARE = re.compile(r"\[[^\[\]\n]{1,80}\](?!\(\d{6}\))")
+bb, nb = [], 0
+for f in sorted((ROOT / "data" / "briefs").glob("*.json")):
+    doc = json.loads(f.read_text(encoding="utf-8"))
+    if not (doc.get("meta") or {}).get("publishedAt"):
+        continue
+    nb += 1
+    texts = [(doc.get(k) or {}).get(lg) for k in ("title", "lead", "summary") for lg in ("ko", "en")]
+    for s in doc.get("sections") or []:
+        texts += [(s.get("heading") or {}).get(lg) for lg in ("ko", "en")]
+        texts += [p.get(lg) for p in s.get("paragraphs") or [] for lg in ("ko", "en")]
+    bb += [(f.stem, m.group(0)) for t in texts if isinstance(t, str) for m in BARE.finditer(t)]
+for where, h in bb[:8]:
+    print(f"      {where} {h}")
+eq(f"브리핑 {nb}편 — 링크가 아닌 대괄호 0", len(bb), 0)
+
 print(f"\nPASS {PASS}  FAIL {FAIL}")
 sys.exit(1 if FAIL else 0)

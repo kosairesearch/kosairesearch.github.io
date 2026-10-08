@@ -10,6 +10,10 @@
 const crypto = require("crypto");
 const { waitUntil } = require("@vercel/functions");
 
+// 2026-10-08 운영 중지(사장 "엑스 안 쓰니까 중지해"). CRC 에도 410 으로 답해 X 가 이 웹훅을 무효로
+// 돌리고 이벤트 배달을 멈춘다. 다시 쓰려면 네 진입점(webhook · work · poll · preview)의 STOPPED 를
+// 같이 끄고 scripts/register_webhook.py 로 다시 등록한다(README 첫머리).
+const STOPPED = true;
 const BOT = (process.env.BOT_HANDLE || "kosai_x").replace(/^@/, "").toLowerCase();
 const PROC_TTL = 7 * 24 * 3600; // store.py PROC_TTL과 동일(처리 멘션ID 7일 보관)
 
@@ -120,6 +124,7 @@ function signatureOk(raw, header) {
 }
 
 module.exports = async (req, res) => {
+  if (STOPPED) return res.status(410).json({ stopped: true });
   // ① CRC 검증 (등록 시 + X가 주기적으로 보냄)
   if (req.method === "GET") {
     const token = req.query.crc_token;

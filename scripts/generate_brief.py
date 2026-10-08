@@ -1485,6 +1485,52 @@ def normalize_links(brief, valid_tickers):
     return dropped
 
 
+# 공시 제목의 꼬리표. 재료에는 보고서 이름에 붙여 적혀 있어([기재정정]반기보고서)
+# 괄호만 벗기면 '기재정정반기보고서' 가 된다 — 이것들은 뒤를 한 칸 띄운다.
+DART_TAGS = ("기재정정", "첨부정정", "첨부추가", "변경등록", "연장결정", "발행조건확정")
+BRACKET = re.compile(r"\[([^\[\]\n]{1,80})\](\(\d{6}\))?")
+
+
+def strip_brackets(brief):
+    """링크가 아닌 [ ] 를 벗긴다. 벗긴 말을 돌려준다.
+
+    재료(공시 · 뉴스 제목)에 [기재정정] · [속보] 같은 꼬리표가 많아 모델이 가끔
+    그대로 옮겨 적고, 종목코드가 없는 해외 종목에도 [마이크론] 처럼 괄호만 친다.
+    화면은 [이름](여섯 자리) 만 링크로 바꾸므로 나머지는 괄호째 찍혔다
+    (2026-09-02 '[기재정정] 사업보고서' · 10-02 '[마이크론]').
+    normalize_links 뒤에 돈다 — 그때 남은 [이름](여섯 자리) 는 모두 확인된 링크라 그것만 둔다.
+    """
+    stripped = []
+
+    def fix(s):
+        def one(m):
+            if m.group(2):
+                return m.group(0)
+            label = m.group(1).strip()
+            stripped.append(label)
+            if re.fullmatch(r"[\d,\-\s]*", label):
+                return ""           # [1] 같은 각주 표시 — 가리킬 출처가 없다
+            nxt = m.string[m.end():m.end() + 1]
+            if label in DART_TAGS and nxt and not nxt.isspace():
+                return label + " "
+            return label
+        return BRACKET.sub(one, s or "")
+
+    for key in ("title", "lead", "summary"):
+        for lang in ("ko", "en"):
+            if (brief.get(key) or {}).get(lang):
+                brief[key][lang] = fix(brief[key][lang])
+    for s in brief.get("sections") or []:
+        for lang in ("ko", "en"):
+            if (s.get("heading") or {}).get(lang):
+                s["heading"][lang] = fix(s["heading"][lang])
+        for p in s.get("paragraphs") or []:
+            for lang in ("ko", "en"):
+                if p.get(lang):
+                    p[lang] = fix(p[lang])
+    return stripped
+
+
 def measure(brief):
     """한국어 본문 글자 수와 커버리지 섹션 비중."""
     total, cov = 0, 0
@@ -2177,6 +2223,9 @@ def main():
         dropped = normalize_links(cand, tickers)
         if dropped:
             log("· 확인되지 않은 종목 링크를 평문으로 바꿨다: " + ", ".join(dropped[:8]))
+        bare = strip_brackets(cand)
+        if bare:
+            log(f"· 링크가 아닌 대괄호 {len(bare)}곳을 벗겼다: " + ", ".join(bare[:8]))
         n_sum = repair_summary(cand)
         if n_sum:
             log(f"· 요약 {n_sum}곳에서 링크·강조·글머리표를 벗겨 한 문단으로 이었다")
