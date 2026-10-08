@@ -403,8 +403,17 @@ stt = json.loads(path.read_text(encoding="utf-8"))
 ok(path.exists() and stt["tickers"] == r["tickers"] and set(stt["quant"]) == set(r["tickers"]), "상태 파일에 tickers·quant")
 ok(S.inflight_tickers() == set(r["tickers"]), "주문한 종목은 곧바로 '진행 중'")
 req = cl.messages.batches.created[0][1][0]
-ok(req["params"]["model"] in ("claude-opus-5", "claude-sonnet-5") and req["params"]["thinking"] == {"type": "adaptive"}
+ok(req["params"]["model"] in ("claude-opus-5-5", "claude-sonnet-5") and req["params"]["thinking"] == {"type": "adaptive"}
    and req["params"]["max_tokens"] == 96000, "요청 모양(모델·adaptive thinking·max_tokens)")
+_by = {r["custom_id"]: r["params"] for r in cl.messages.batches.created[0][1]}
+ok(all((p.get("output_config") == {"effort": "medium"}) == (p["model"] == "claude-opus-5-5") for p in _by.values())
+   and any(p["model"] == "claude-opus-5-5" for p in _by.values()),
+   "Opus 5.5 요청에만 사고 깊이 medium 을 적는다(사장 승인 · high 는 출력이 53% 늘었다)",
+   str({k: (p["model"], p.get("output_config")) for k, p in _by.items()}))
+_u = {"in": 100_000, "cache_w": 0, "cache_r": 1_000_000, "out": 10_000, "search": 0}
+# Opus 5.5 배치: (100,000 + 1,000,000 × 0.05) × $2/M + 10,000 × $10/M = $0.30 + $0.10 = $0.40
+ok(abs(M._cost_usd("claude-opus-5-5", _u) - 0.40) < 1e-9, "Opus 5.5 배치 단가 · 캐시 읽기 0.05배",
+   f"{M._cost_usd('claude-opus-5-5', _u):.4f}")
 # 같은 조건으로 다시 주문하면 진행 중이라 아무것도 안 한다
 r2 = M.submit(cl, "2026-09-05 02:01")
 ok(r2["batch_id"] is None and len(cl.messages.batches.created) == 1, "진행 중 종목은 재주문하지 않는다")
