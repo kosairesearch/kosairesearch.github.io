@@ -72,7 +72,8 @@ jobs:
           mkdir -p data
           echo "DART_KEY_SET=$DART_KEY_SET (len=${#DART_API_KEY})" > data/run.log
           echo "=== 스크립트 시작 $(date -u) ===" >> data/run.log
-          python scripts/collect_data.py 2>&1 | tee -a data/run.log
+          # pykrx 는 한국거래소에 로그인할 때 아이디를 찍는다 — 저장소에 남는 기록에서는 가린다(2026-10-08).
+          python scripts/collect_data.py 2>&1 | sed -u 's/\(로그인 ID: \).*/\1(가림)/' | tee -a data/run.log
 
       # 결과물만 보고 판정하는 독립 감시선. 수집기가 조용히 실패하거나 아예 안
       # 돌아도 여기서 드러난다. 낡으면 이 단계가 실패해 실행이 빨갛게 남는다.

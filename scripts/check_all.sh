@@ -97,6 +97,9 @@ run "마케팅 시트"  python3 scripts/tests/marketing_sheet_test.py
 # 마케팅 숫자는 공개 실행 기록(로그 · 요약 칸)에 찍지 않는다(2026-10-06 사장 "외부에서 우리 마케팅 데이터를 보면 안되지").
 # 물어보기 · 주간 보고의 단계를 가짜 숫자로 실제로 돌려 기록에 숫자가 안 나오는지, 잠긴 답이 묻는 쪽 열쇠로만 열리는지 본다.
 run "마케팅 숫자 잠금" python3 scripts/tests/marketing_seal_test.py
+# 한국거래소 로그인 아이디(2026-10-08) — pykrx 가 로그인 때 찍는 아이디가 data/ 기록 파일로 커밋돼 공개 저장소에 올라갔다.
+# 로그인 정보를 쓰는 단계의 기록이 가림 필터를 거치는지, 저장소에 가리지 않은 아이디가 남았는지 본다.
+run "로그인 아이디 가림" python3 scripts/tests/krx_id_test.py
 run "집계 제외"    node tests/analytics-optout.test.mjs
 run "행동 기록"    node tests/analytics-events.test.mjs
 run "브리핑 생성"   python3 scripts/test_brief_gen.py

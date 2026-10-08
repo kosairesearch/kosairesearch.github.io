@@ -28,7 +28,8 @@ jobs:
           KRX_ID: ${{ secrets.KRX_ID }}
           KRX_PW: ${{ secrets.KRX_PW }}
         run: |
-          python scripts/probe_krx_fundamental.py 2>&1 | tee data/probe_result.txt || true
+          # pykrx 는 한국거래소에 로그인할 때 아이디를 찍는다 — 저장소에 남는 기록에서는 가린다(2026-10-08).
+          python scripts/probe_krx_fundamental.py 2>&1 | sed -u 's/\(로그인 ID: \).*/\1(가림)/' | tee data/probe_result.txt || true
 
       - name: 결과 커밋
         run: |

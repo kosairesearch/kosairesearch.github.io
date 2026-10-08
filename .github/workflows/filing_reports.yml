@@ -54,7 +54,9 @@ jobs:
           KRX_ID: ${{ secrets.KRX_ID }}
           KRX_PW: ${{ secrets.KRX_PW }}
           VAL_TICKERS: ${{ steps.filings.outputs.new_tickers }}
-        run: python scripts/collect_valuation.py 2>&1 | tee data/valuation_run.log || true
+        run: |
+          # pykrx 는 한국거래소에 로그인할 때 아이디를 찍는다 — 저장소에 남는 기록에서는 가린다(2026-10-08).
+          python scripts/collect_valuation.py 2>&1 | sed -u 's/\(로그인 ID: \).*/\1(가림)/' | tee data/valuation_run.log || true
 
       - name: 신규 제출 종목 리포트 생성 (v2 · batch · 상위500 Opus/나머지 Sonnet)
         if: steps.filings.outputs.count != '0' && steps.filings.outputs.count != ''
@@ -76,7 +78,8 @@ jobs:
         run: |
           set -o pipefail
           echo "=== 공시 트리거 v2 생성 $(date -u) · 대상 ${{ steps.filings.outputs.new_tickers }} ===" > data/reports_v2_run.log
-          python scripts/generate_reports_v2.py auto 2>&1 | tee -a data/reports_v2_run.log
+          # pykrx 는 한국거래소에 로그인할 때 아이디를 찍는다 — 저장소에 남는 기록에서는 가린다(2026-10-08).
+          python scripts/generate_reports_v2.py auto 2>&1 | sed -u 's/\(로그인 ID: \).*/\1(가림)/' | tee -a data/reports_v2_run.log
 
       - name: 커밋 & 푸시
         if: always()
