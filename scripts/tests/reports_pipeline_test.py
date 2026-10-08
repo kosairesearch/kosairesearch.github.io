@@ -619,6 +619,7 @@ ok("한글 문자를 한 글자도" in pr and "증권사명 없이 범위를" in
 
 # (f) 교정 — 가짜 클라이언트가 고친 JSON 을 돌려주면 채택, 모양이 다르면 버린다
 import check_report_text as T
+REAL_T_REPAIR = T.repair
 rep0 = {"lead": {"ko": "저평가된 상태다.", "en": "GC녹십자 is fine."}, "business": {"ko": "본문.", "en": "Body."}}
 hits0 = T.check(rep0)
 ok({h["rule"] for h in hits0} == {"valuejudge", "hangul_en"}, "검사가 둘 다 잡는다", str([h["rule"] for h in hits0]))
@@ -887,7 +888,8 @@ ok(r["bull"][0]["title"]["en"] == "EN0" and r["bull"][2]["body"]["en"] == "EN5",
 ok(fm.sent[0]["model"] == "claude-sonnet-5", "값싼 모델을 쓴다", str(fm.sent[0]["model"]))
 ok(M.fill_missing_en(cl_fill, GOODREP()) == 0 and len(fm.sent) == 1, "채울 자리가 없으면 모델을 부르지 않는다")
 
-# (j) 회수 경로 통합 — 영문이 빠진 배치 결과가 저장까지 간다
+# (j) 회수 경로 통합 — 영문이 빠진 배치 결과는 보정을 배치로 주문하고(즉시 호출 없음 · 2026-10-08),
+#     답을 받은 다음 회수에서 그 종목만 다시 처리해 저장한다
 for p in S.BATCH_DIR.glob("*.json"):
     p.unlink()
 (S.OUT_DIR / "005930.json").unlink(missing_ok=True)
@@ -896,31 +898,116 @@ noen = GOODREP()
 for x in noen["bull"]:
     x["title"]["en"] = ""; x["body"]["en"] = ""
 noen["risks"][0]["body"]["en"] = ""; noen["risks"][0]["body_en_note"] = "Regulatory pressure."
-class FillMsgsU(FillMsgs):
-    """영문 채우기 응답에 사용량을 단다 — 회수 단계 보정의 사용량 기록(2026-10-03)을 본다."""
-    def create(self, **kw):
-        r = super().create(**kw)
-        r.usage = types.SimpleNamespace(input_tokens=1_000, cache_creation_input_tokens=0, cache_read_input_tokens=0,
-                                        output_tokens=500, server_tool_use=None)
-        return r
-cl2 = FakeClient()
-fm2 = FillMsgsU(); cl2.messages.create = fm2.create
+
+def _no_sync(**kw):
+    raise AssertionError("즉시 호출을 했다")
+
+def answer_for(params):
+    """보정 요청 하나에 대한 가짜 답 — 영문 채우기는 EN0·EN1…, 표현 교정은 걸린 표현을 바꾼 같은 모양의 JSON."""
+    c = params["messages"][0]["content"]
+    if "===INPUT===" in c:
+        part = json.loads(c.split("===INPUT===\n", 1)[1].rsplit("\n===INPUT_END===", 1)[0])
+        out = json.loads(json.dumps(part, ensure_ascii=False).replace("저평가된 상태다", "순자산을 밑도는 구간이다"))
+    else:
+        out = {k: f"EN{k}" for k in json.loads(c.split("\n\n", 1)[1])}
+    return "===JSON_START===" + json.dumps(out, ensure_ascii=False) + "===JSON_END==="
+
+def answer_batch(bid, reqs, kind="succeeded"):
+    res = []
+    for rq in reqs:
+        msg = types.SimpleNamespace(
+            content=[types.SimpleNamespace(type="text", text=answer_for(rq["params"]))], model=rq["params"]["model"],
+            stop_reason="end_turn", usage=types.SimpleNamespace(input_tokens=1_000, cache_creation_input_tokens=0,
+                                                               cache_read_input_tokens=0, output_tokens=500,
+                                                               server_tool_use=None))
+        res.append(types.SimpleNamespace(custom_id=rq["custom_id"], result=types.SimpleNamespace(type=kind, message=msg)))
+    return batch_obj(bid, "ended", res)
+
+cl2 = FakeClient(); cl2.messages.create = _no_sync
 cl2.messages.batches.store["msgbatch_EN"] = batch_obj("msgbatch_EN", "ended", [
-    result("005930", text="===JSON_START===" + json.dumps(noen, ensure_ascii=False) + "===JSON_END===")])
+    result("005930", text="===JSON_START===" + json.dumps(noen, ensure_ascii=False) + "===JSON_END===", usage=USAGE)])
 S.bump_fail("005930")
+f_before = S.fail_count("005930")
 M.pickup(cl2, "2026-09-05 03:00")
 saved = S.OUT_DIR / "005930.json"
-ok(saved.exists(), "영문이 빠진 결과도 되살려 저장한다")
 stEN = json.loads(S.batch_path("msgbatch_EN").read_text(encoding="utf-8"))
-us = (stEN.get("usage_sync") or {}).get("claude-sonnet-5") or {}
-# 즉시 호출이라 정가 — (1,000 × $2 + 500 × $10) / 1M = $0.007. 배치 사용량(usage)과 섞지 않는다.
-ok(us.get("n") == 1 and us.get("in") == 1_000 and abs(us.get("usd", 0) - 0.007) < 1e-9 and not stEN.get("usage"),
-   "회수 단계 보정(영문 채우기)의 사용량을 정가로 따로 남긴다", str(us))
+ok(not saved.exists() and stEN.get("deferred") == ["005930"] and not stEN.get("collected"),
+   "영문 채우기는 배치로 넘기고 저장을 미룬다", str(stEN.get("deferred")))
+ok(len(cl2.messages.batches.created) == 1, "보정 배치 하나를 주문한다 — 즉시 호출은 없다")
+rbid, rreqs = cl2.messages.batches.created[0]
+ok(rbid == (stEN.get("repair") or {}).get("batch_id") and len(rreqs) == 1 and rreqs[0]["custom_id"].startswith("005930-")
+   and rreqs[0]["params"]["model"] == "claude-sonnet-5" and len(rreqs[0]["custom_id"]) <= 64,
+   "주문 모양(종목 이름 · 값싼 모델)", str(rreqs[0]["custom_id"]))
+ok("quant" in stEN and "005930" in S.inflight_tickers(), "답을 기다리는 동안 '진행 중' — 같은 종목을 다시 주문하지 않는다")
+ok(S.fail_count("005930") == f_before, "미룬 종목은 실패로 세지 않는다", f"{f_before} → {S.fail_count('005930')}")
+cl2.messages.batches.store[rbid] = batch_obj(rbid, "in_progress", [])
+M.pickup(cl2, "2026-09-05 03:30")
+ok(not saved.exists() and not json.loads(S.batch_path("msgbatch_EN").read_text(encoding="utf-8")).get("collected"),
+   "보정이 끝나기 전에는 기다린다")
+cl2.messages.batches.store[rbid] = answer_batch(rbid, rreqs)
+M.pickup(cl2, "2026-09-05 04:00")
+stEN = json.loads(S.batch_path("msgbatch_EN").read_text(encoding="utf-8"))
+ok(saved.exists(), "답을 받은 다음 회수에서 저장한다")
+us = (stEN.get("usage_repair") or {}).get("claude-sonnet-5") or {}
+# 배치 단가 — (1,000 × $1 + 500 × $5) / 1M = $0.0035. 본 배치 사용량(usage)은 처음 회수 때 한 번만 센다.
+ok(us.get("n") == 1 and us.get("in") == 1_000 and abs(us.get("usd", 0) - 0.0035) < 1e-9 and "usage_sync" not in stEN,
+   "보정 사용량을 배치 단가로 따로 남긴다", str(us))
+ua = (stEN.get("usage") or {}).get("claude-sonnet-5") or {}
+ok(ua.get("n") == 1, "본 배치 사용량은 두 번 세지 않는다", str(ua.get("n")))
+ok(stEN.get("collected") and stEN.get("result") == {"ok": 1, "fail": 0} and "quant" not in stEN
+   and "repair_answers" not in stEN and "deferred" not in stEN, "회수 완료 — 받아 둔 답 · 정량은 지운다",
+   str(stEN.get("result")))
 got = json.loads(saved.read_text(encoding="utf-8")) if saved.exists() else {}
 ok(bool(got) and got["bull"][0]["body"]["en"].startswith("EN"), "저장된 글에 영문이 있다", str(got.get("bull", [{}])[0]))
 ok(bool(got) and got["risks"][0]["body"]["en"] == "Regulatory pressure." and "body_en_note" not in got["risks"][0],
    "곁키는 제자리로 가고 사라진다", str(got.get("risks", [{}])[0]))
 ok("005930" not in S.load_failed_out() and S.fail_count("005930") == 0, "되살린 종목은 실패 기록이 지워진다")
+
+# (j2) 보정 답이 실패면 보정 없이 마무리한다 — 영문을 못 채운 글은 전처럼 실패로 센다
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+(S.OUT_DIR / "000020.json").unlink(missing_ok=True)
+S.clear_fail("000020")
+mk("msgbatch_EN2", ["000020"])
+cl5 = FakeClient(); cl5.messages.create = _no_sync
+cl5.messages.batches.store["msgbatch_EN2"] = batch_obj("msgbatch_EN2", "ended", [
+    result("000020", text="===JSON_START===" + json.dumps(noen, ensure_ascii=False) + "===JSON_END===")])
+M.pickup(cl5, "2026-09-05 03:00")
+rbid5, rreqs5 = cl5.messages.batches.created[0]
+cl5.messages.batches.store[rbid5] = answer_batch(rbid5, rreqs5, kind="errored")
+M.pickup(cl5, "2026-09-05 03:30")
+st5 = json.loads(S.batch_path("msgbatch_EN2").read_text(encoding="utf-8"))
+ok(not (S.OUT_DIR / "000020.json").exists() and S.fail_count("000020") == 1 and st5.get("collected")
+   and len(cl5.messages.batches.created) == 1, "보정 답이 실패면 저장하지 않고 실패로 센다 — 다시 주문하지 않는다",
+   f"fail={S.fail_count('000020')} 주문={len(cl5.messages.batches.created)}")
+
+# (j3) 영문 채우기와 표현 교정이 다 걸리면 두 번 오간다
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+(S.OUT_DIR / "000020.json").unlink(missing_ok=True)
+S.clear_fail("000020")
+T.repair = REAL_T_REPAIR
+two = json.loads(json.dumps(noen, ensure_ascii=False))
+two["earnings"]["ko"] = two["earnings"]["ko"].replace("문장이다.", "저평가된 상태다.", 1)
+mk("msgbatch_TWO", ["000020"])
+cl6 = FakeClient(); cl6.messages.create = _no_sync
+cl6.messages.batches.store["msgbatch_TWO"] = batch_obj("msgbatch_TWO", "ended", [
+    result("000020", text="===JSON_START===" + json.dumps(two, ensure_ascii=False) + "===JSON_END===")])
+for when in ("03:00", "03:30", "04:00"):
+    M.pickup(cl6, f"2026-09-05 {when}")
+    for bid_, reqs_ in cl6.messages.batches.created:
+        if bid_ not in cl6.messages.batches.store:
+            cl6.messages.batches.store[bid_] = answer_batch(bid_, reqs_)
+st6 = json.loads(S.batch_path("msgbatch_TWO").read_text(encoding="utf-8"))
+kinds = ["표현" if "===INPUT===" in r[0]["params"]["messages"][0]["content"] else "영문"
+         for _, r in cl6.messages.batches.created]
+ok(kinds == ["영문", "표현"] and st6.get("collected"), "영문 → 표현 교정 순서로 두 번 오가고 마무리한다", str(kinds))
+g6 = json.loads((S.OUT_DIR / "000020.json").read_text(encoding="utf-8")) if (S.OUT_DIR / "000020.json").exists() else {}
+ok(bool(g6) and "저평가된" not in g6["earnings"]["ko"] and "순자산을 밑도는" in g6["earnings"]["ko"]
+   and g6["bull"][0]["body"]["en"].startswith("EN"), "두 보정이 모두 반영돼 저장된다")
+ok(len(st6.get("repairs") or []) == 2 and (st6.get("usage_repair") or {}).get("claude-sonnet-5", {}).get("n") == 2,
+   "보정 배치 두 번 · 사용량 두 건", str(st6.get("repairs")))
+T.repair = _repair_stub
 
 # (k) 통째로 잘린 결과는 모델을 부르지 않고 버린다
 for p in S.BATCH_DIR.glob("*.json"):
@@ -933,7 +1020,8 @@ fm3 = FillMsgs(); cl3.messages.create = fm3.create
 cl3.messages.batches.store["msgbatch_CUT"] = batch_obj("msgbatch_CUT", "ended", [
     result("000020", text="===JSON_START===" + json.dumps(cut, ensure_ascii=False) + "===JSON_END===")])
 M.pickup(cl3, "2026-09-05 03:00")
-ok(not (S.OUT_DIR / "000020.json").exists() and fm3.sent == [], "잘린 글은 버리고 돈을 더 쓰지 않는다", f"calls={len(fm3.sent)}")
+ok(not (S.OUT_DIR / "000020.json").exists() and fm3.sent == [] and cl3.messages.batches.created == [],
+   "잘린 글은 버리고 돈을 더 쓰지 않는다(보정 주문도 없다)", f"calls={len(fm3.sent)}")
 ok(S.fail_count("000020") >= 1, "실패로 세어 다음 run 이 다시 만든다")
 
 
@@ -1013,7 +1101,7 @@ ok(r.get("no_credit") and called == [], "잔액 마커가 오늘이면 정량 �
 M.pick_targets = REAL_PICK
 S.CREDIT_FILE.unlink(missing_ok=True)
 
-# 회수 중에 막히면 — 실패로 세지 않고, 배치를 버리지도 않는다
+# 회수 중에 막히면(보정 배치를 주문하다 잔액이 막힘) — 실패로 세지 않고, 배치를 버리지도 않는다
 for p in S.BATCH_DIR.glob("*.json"):
     p.unlink()
 (S.OUT_DIR / "000020.json").unlink(missing_ok=True)
@@ -1026,6 +1114,9 @@ class DeadMsgs:
     def create(self, **kw):
         raise CREDIT
 cl4 = FakeClient(); cl4.messages.create = DeadMsgs().create
+def _dead_batch(requests):
+    raise CREDIT
+cl4.messages.batches.create = _dead_batch
 cl4.messages.batches.store["msgbatch_NOCREDIT"] = batch_obj("msgbatch_NOCREDIT", "ended", [
     result("000020", text="===JSON_START===" + json.dumps(noen, ensure_ascii=False) + "===JSON_END===")])
 try:
