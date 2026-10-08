@@ -5,8 +5,9 @@ name: 🎨 X 스타일 예시 수집(Apify)
 # 내용·종목·추천은 인용하지 않고 톤·리듬만 학습.
 
 on:
-  schedule:
-    - cron: '23 21 * * 0'   # 매주 일요일 06:23 KST
+  # ⏸ 자동 실행 중지(2026-10-08 사장 "엑스 안 쓰니까 중지해"). 아래 schedule 블록을 되살리면 다시 돈다.
+  # schedule:
+  #   - cron: '23 21 * * 0'   # 매주 일요일 06:23 KST
   workflow_dispatch:
     inputs:
       queries:

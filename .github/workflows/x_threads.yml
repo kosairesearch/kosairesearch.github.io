@@ -1,9 +1,10 @@
 name: X 스레드 초안 생성(매일)
 
 on:
+  # ⏸ 자동 실행 중지(2026-10-08 사장 "엑스 안 쓰니까 중지해"). 아래 schedule 블록을 되살리면 다시 돈다.
+  # schedule:
+  #   - cron: '0 22 * * *'   # 매일 07:00 KST — 장 시작 전 초안 준비
   workflow_dispatch:
-  schedule:
-    - cron: '0 22 * * *'   # 매일 07:00 KST — 장 시작 전 초안 준비
 
 concurrency:
   group: kos-marketing

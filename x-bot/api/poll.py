@@ -95,8 +95,15 @@ def _key_ok(q):
     return bool(secret) and hmac.compare_digest(key.encode("utf-8"), secret.encode("utf-8"))
 
 
+# 2026-10-08 운영 중지(사장 "엑스 안 쓰니까 중지해"). 웹훅(webhook.js)과 함께 410 만 돌려준다 —
+# 다시 쓰려면 네 진입점(webhook · work · poll · preview)의 STOPPED 를 같이 끈다(README 첫머리).
+STOPPED = True
+
+
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
+        if STOPPED:
+            self.send_response(410); self.end_headers(); self.wfile.write(b"stopped"); return
         q = parse_qs(urlparse(self.path).query)
         if not _key_ok(q):
             self.send_response(403); self.end_headers(); self.wfile.write(b"forbidden"); return

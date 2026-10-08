@@ -321,6 +321,33 @@ b2 = copy.deepcopy(base)
 b2["sections"][3]["paragraphs"][0]["ko"] = "[현대차](005380) 는 올랐다."
 check("제목을 보게 해도 본문 처리는 그대로", G.normalize_links(b2, COV), [])
 
+print("\n⑦-4c 링크가 아닌 대괄호는 벗긴다 — 화면에 괄호째 찍혔다(9/2 · 10/2)")
+# 재료의 [기재정정] · [속보] 꼬리표를 옮겨 적거나, 코드가 없는 해외 종목에 괄호만 쳤다.
+b = copy.deepcopy(base)
+b["title"] = {"ko": "[TSMC] 가 이끈 반도체", "en": "[TSMC] leads chips"}
+b["lead"]["ko"] = "[마이크론] 호실적 이후 3.03% 추가 상승했다. " + b["lead"]["ko"]
+b["lead"]["en"] = "Chips rose after [Micron]'s results. " + b["lead"]["en"]
+b["summary"]["ko"] = "[속보] " + b["summary"]["ko"]
+b["sections"][0]["heading"] = {"ko": "[엔비디아] 와 [TSMC]", "en": "[Nvidia] and [TSMC]"}
+b["sections"][3]["paragraphs"][0]["ko"] = \
+    "[현대차](005380)은 [기재정정]반기보고서(2026.06)를, [삼성전자](005930)는 [기재정정] 사업보고서를 냈다[1]."
+b["sections"][3]["paragraphs"][0]["en"] = "[Hyundai](005380) filed an amended half-year report."
+G.normalize_links(b, COV)
+bare = G.strip_brackets(b)
+check("해외 종목의 괄호만 벗긴다", b["lead"]["ko"].split(" 호실적")[0], "마이크론")
+ok("영문도 벗긴다", b["lead"]["en"].startswith("Chips rose after Micron's results."), b["lead"]["en"])
+check("제목도 벗긴다", b["title"]["ko"], "TSMC 가 이끈 반도체")
+check("섹션 제목도 벗긴다", b["sections"][0]["heading"]["en"], "Nvidia and TSMC")
+ok("요약의 뉴스 꼬리표도 벗긴다", b["summary"]["ko"].startswith("속보 "), b["summary"]["ko"])
+check("공시 꼬리표는 붙여 쓴 것도 한 칸 띄우고, 확인된 링크는 그대로 둔다",
+      b["sections"][3]["paragraphs"][0]["ko"],
+      "[현대차](005380)은 기재정정 반기보고서(2026.06)를, [삼성전자](005930)는 기재정정 사업보고서를 냈다.")
+ok("벗긴 말을 보고한다", "마이크론" in bare and "기재정정" in bare and len(bare) == 12, str(bare))
+html_all = "".join(R.to_html(s) for _, s in G._walk(b))
+ok("화면에 대괄호가 남지 않는다", "[" not in html_all and "]" not in html_all, html_all[:200])
+ok("링크는 화면에서 살아 있다", "ticker=005380" in html_all and "ticker=005930" in html_all)
+check("벗길 것이 없으면 그대로", G.strip_brackets(copy.deepcopy(base)), [])
+
 print("\n⑦-5 섹션 제목 — 매일 새로 쓰기로 했으니 매일 검증한다")
 
 
