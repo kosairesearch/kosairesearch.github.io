@@ -1180,6 +1180,41 @@ d = _q(GOOD); d["annual"] = d["annual"][:3]; d["annual"][0]["liab"] = None
 ok(M.quant_diff(base, d) == [], "해가 밀려 빠진 연도 · 새로 받은 쪽의 빈칸은 견주지 않는다", str(M.quant_diff(base, d)))
 d = _q(GOOD); d["fs_basis"] = "별도(OFS)"
 ok(len(M.quant_diff(base, d)) == 1 and "작성 기준" in M.quant_diff(base, d)[0], "작성 기준이 바뀌면 잡는다")
+# 실제 정정 공시 38개 종목으로 견줘 본 결과(2026-10-08 러너) — 정정과 관계없이 '바뀜' 으로 나오던 것들
+o2 = _q(GOOD)
+for r in o2["annual"]:
+    r.pop("equity_nci", None); r["cfo"] = None
+d = _q(GOOD)
+for i, r in enumerate(d["annual"]):
+    r["equity_nci"] = 1_000_000 * (i + 1); r["cfo"] = 70_000_000
+ok(M.quant_diff(o2, d) == [], "옛 리포트에 없던 칸(비지배지분 · 나중에 채운 칸)은 견주지 않는다", str(M.quant_diff(o2, d)))
+d = _q(GOOD); d["valuation"].update(eps=101, bps=505)
+ok(M.quant_diff(base, d) == [], "EPS · BPS 의 1원 · 1% 안 차이는 같다(분모가 바뀐 반올림)", str(M.quant_diff(base, d)))
+d = _q(GOOD); d["valuation"].update(bps=575)
+ok(M.quant_diff(base, d) == ["bps 500 → 575"], "BPS 가 15% 달라지면 잡는다(이랜텍 11,486 → 13,203)", str(M.quant_diff(base, d)))
+d = _q(GOOD); d["valuation"]["ttm_window"] = "2025Q4~2026Q3"
+ok(any("TTM 기간" in x for x in M.quant_diff(base, d)), "TTM 기간이 바뀌면 잡는다", str(M.quant_diff(base, d)))
+# 외화 공시 회사 — 환율만큼 모든 금액 · 주당값이 같이 움직이면 같다. 그 위에 한 칸이 더 바뀌면 잡는다.
+fx_old = _q(GOOD); fx_old["valuation"]["ccy"] = "USD"
+for r in fx_old["annual"]:
+    r["eps_basic"] = 0.12          # 공시 주당이익은 원래 통화(달러) 그대로 담는다 — 환율이 걷히면 안 된다
+fx_new = _q(fx_old)
+def _scale(q, k=1.0108):
+    for r in q["annual"]:
+        for f in ("rev", "op", "np", "np_owner", "equity", "equity_owner", "liab"):
+            r[f] = r[f] * k
+    for r in q["quarterly"]:
+        for f in ("rev", "op", "np_owner"):
+            r[f] = r[f] * k
+    q["valuation"]["ttm_np_owner"] *= k
+    q["valuation"]["eps"] = round(q["valuation"]["eps"] * k)
+    q["valuation"]["bps"] = round(q["valuation"]["bps"] * k)
+_scale(fx_new)
+ok(M.quant_diff(fx_old, fx_new) == [], "외화 공시 회사는 환율로 같이 움직인 것을 걷어 낸다(프레스티지바이오파마 1.08%)",
+   str(M.quant_diff(fx_old, fx_new)[:3]))
+fx_new["annual"][1]["np_owner"] *= 1.2
+ok(M.quant_diff(fx_old, fx_new) == [f"연간 2024 np_owner {fx_old['annual'][1]['np_owner']} → {fx_new['annual'][1]['np_owner']}"],
+   "외화 공시 회사도 정정으로 바뀐 칸은 잡는다", str(M.quant_diff(fx_old, fx_new)))
 
 os.environ["REPORT_CORRECTIONS"] = "005930:20260904, 000020:20260904,bad,204840:2026-09-05"
 ok(M.corrections_env() == {"005930": "20260904", "000020": "20260904"}, "넘겨받은 목록을 읽는다(모양이 틀린 것은 버린다)",

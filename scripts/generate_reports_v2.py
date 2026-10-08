@@ -2266,10 +2266,18 @@ def collect_all_quant(targets, data, allow_reuse=False, fresh=()):
 #
 # 견주는 것은 공시 재무제표에서 온 숫자뿐이다. 주가 · 시가총액 · 주가에 딸린 배수(PER · PBR ·
 # 배당수익률) · KRX 참고값 · 배당(KRX 로 보완)은 날마다, 또는 거래소 접속 여부에 따라 달라져
-# 정정과 관계없이 '바뀜' 으로 나온다.
-_CMP_ANNUAL = ("rev", "op", "np", "np_owner", "equity", "equity_owner", "equity_nci", "liab", "cfo", "eps_basic")
+# 정정과 관계없이 '바뀜' 으로 나온다. 실제 정정 공시 38개 종목으로 견줘 본 결과(2026-10-08 러너)로
+# 세 가지를 더 걸렀다.
+#   · 비지배지분(equity_nci)은 견주지 않는다 — 화면에 안 쓰고, 8월 하순 이전 리포트에는 칸이 없다.
+#   · 한쪽이 빈 칸은 견주지 않는다 — 수집 코드가 나중에 채우게 된 칸이 '바뀜' 으로 나왔다.
+#   · EPS · BPS 는 1원 또는 1% 안의 차이를 같다고 본다 — 주식수 분모가 바뀌어 반올림이 1원씩 달랐다
+#     (-74 → -75 · 4,497 → 4,498). 이랜텍처럼 15% 달라진 것은 잡는다.
+#   · 외화로 공시하는 회사(국내 상장 외국기업)는 원화로 바꿔 담아 환율만큼 모든 금액이 같이 움직인다
+#     (프레스티지바이오파마 모든 칸 1.08%). 금액들의 가운데 비율을 환율로 보고 걷어 낸 뒤 견준다.
+#     공시 주당이익(eps_basic)은 원화로 바꾸지 않고 담으므로(collect_quant 의 단위보정) 환율을 걷지 않는다.
+_CMP_ANNUAL = ("rev", "op", "np", "np_owner", "equity", "equity_owner", "liab", "cfo")
 _CMP_QUARTER = ("rev", "op", "np_owner")
-_CMP_VAL = ("ttm_window", "ttm_np_owner", "eps", "bps")
+_PER_SHARE = ("eps", "bps")             # 계산값 — 1원 또는 1% 안은 같다
 
 
 def corrections_env():
@@ -2295,9 +2303,9 @@ def quant_diff(old, new):
     """정정 전(저장된 리포트) · 정정 후(새로 받은) 정량에서 공시 재무 숫자가 달라진 곳. 같으면 [].
 
     새로 받은 쪽에만 있는 기간은 '바뀜' 이다(리포트에 없는 숫자다). 저장된 쪽에만 있는 기간과
-    새로 받은 쪽이 비어 있는 칸은 견주지 않는다 — 해가 바뀌어 연간 표의 창이 밀렸거나 DART 가
-    잠시 못 준 것이라, 그것 때문에 다시 쓰면 숫자가 더 빈 리포트가 된다."""
-    diffs = []
+    어느 한쪽이 빈 칸은 견주지 않는다 — 해가 바뀌어 연간 표의 창이 밀렸거나, DART 가 잠시 못 줬거나,
+    수집 코드가 나중에 채우게 된 칸이라 정정과 관계없다."""
+    diffs, pairs = [], []      # pairs: (이름, 정정 전, 정정 후, 종류 — 금액 · 원래 통화 · 주당값)
     if (old.get("fs_basis") or "") != (new.get("fs_basis") or ""):
         diffs.append(f"작성 기준 {old.get('fs_basis')} → {new.get('fs_basis')}")
     for label, rows, key, fields in (("연간", "annual", "year", _CMP_ANNUAL),
@@ -2311,14 +2319,31 @@ def quant_diff(old, new):
                 diffs.append(f"{label} {k} 새로 생김")
                 continue
             for f in fields:
-                a, b = o[k].get(f), r.get(f)
-                if b is not None and a != b:
-                    diffs.append(f"{label} {k} {f} {a} → {b}")
+                pairs.append((f"{label} {k} {f}", o[k].get(f), r.get(f), "금액"))
+            if rows == "annual":
+                pairs.append((f"{label} {k} eps_basic", o[k].get("eps_basic"), r.get("eps_basic"), "원래 통화"))
     ov, nv = old.get("valuation") or {}, new.get("valuation") or {}
-    for f in _CMP_VAL:
-        a, b = ov.get(f), nv.get(f)
-        if b is not None and a != b:
-            diffs.append(f"{f} {a} → {b}")
+    if ov.get("ttm_window") and nv.get("ttm_window") and ov["ttm_window"] != nv["ttm_window"]:
+        diffs.append(f"TTM 기간 {ov['ttm_window']} → {nv['ttm_window']}")
+    pairs.append(("ttm_np_owner", ov.get("ttm_np_owner"), nv.get("ttm_np_owner"), "금액"))
+    pairs += [(f, ov.get(f), nv.get(f), "주당값") for f in _PER_SHARE]
+    pairs = [(n, a, b, kind) for n, a, b, kind in pairs
+             if isinstance(a, (int, float)) and isinstance(b, (int, float))]
+    fx = 1.0
+    if (nv.get("ccy") or "KRW") != "KRW":
+        ratios = sorted(b / a for _, a, b, kind in pairs if a and b and kind == "금액")
+        fx = ratios[len(ratios) // 2] if ratios else 1.0
+    for name, a, b, kind in pairs:
+        if kind == "원래 통화":
+            same = a == b
+        elif kind == "주당값":
+            same = abs(a * fx - b) <= max(1, abs(a * fx) * 0.01)
+        elif fx == 1.0:
+            same = a == b
+        else:
+            same = abs(a * fx - b) <= abs(b) * 0.005
+        if not same:
+            diffs.append(f"{name} {a} → {b}")
     return diffs
 
 
