@@ -11,6 +11,8 @@
   ③ 사용량 기록   옛 생성기 · 신규 상장용 배치 생성기는 사용량을 남기지 않았다. 잘려 버린 시도까지 센다.
   ④ 재시도 한도   옛 생성기가 실패 한 번에 '1회 최대 생성 수'를 1로 덮어썼다(REPORT_LIMIT 2 → 1개만).
   ⑤ 못 받은 배치  신규 상장용 배치가 80분을 넘기면 그대로 버려졌다(2026-09-24). 다음 실행이 먼저 받는다.
+  ⑥ 정정 공시     정정 공시만 나온 종목을 따로 알린다(생성기가 숫자를 견준다). 숫자가 같았던 정정 공시는
+                  다시 고르지 않는다(2026-10-07 같은 숫자로 14개를 다시 써 $3.97).
 """
 import io
 import json
@@ -47,7 +49,7 @@ def ok(cond, what, detail=""):
 TMP = Path(tempfile.mkdtemp(prefix="kosai_orders_"))
 DATA = TMP / "data"
 DATA.mkdir()
-for attr in ("OUT_DIR", "V1_DIR", "SKIP_DIR", "HOLD_DIR", "FAIL_DIR", "BATCH_DIR"):
+for attr in ("OUT_DIR", "V1_DIR", "SKIP_DIR", "HOLD_DIR", "FAIL_DIR", "BATCH_DIR", "CHECKED_DIR"):
     setattr(S, attr, DATA / getattr(S, attr).name)
     getattr(S, attr).mkdir(exist_ok=True)
 S.LEGACY_STATE = DATA / "batch_state_v2.json"
@@ -144,6 +146,34 @@ ok(got == [B, D, E], "B(낡은 리포트) · D(리포트 없음) · E(제목 없
 ok("색인보다 새 리포트 파일이 있어 뺀 종목 2개" in text, "뺀 이유를 로그에 남긴다",
    next((ln.strip() for ln in text.splitlines() if "색인보다" in ln), "없음"))
 ok(f"{B} 나회사 — 공시 20261002 (기존 리포트 20260905)" in text, "기존 리포트 날짜를 같이 찍는다")
+ok(out.get("corrections") == f"{B}:20261002,{D}:20261002,{E}:20261002",
+   "⑥ 정정 공시만 나온 종목은 접수일과 함께 따로 알린다", str(out.get("corrections")))
+ok(CF.is_amendment("[기재정정]반기보고서 (2026.06)") and CF.is_amendment(" [첨부추가]사업보고서 (2025.12)")
+   and not CF.is_amendment("반기보고서 (2026.06)"), "⑥ 보고서명 앞 꼬리표로 정정 공시를 가린다")
+
+# ⑥ 처음 내는 보고서가 하나라도 있으면 정정 공시로 치지 않는다(새 기간의 숫자다)
+ROWS.append({"stock_code": D, "report_nm": "반기보고서 (2026.06)", "rcept_dt": "20261001"})
+out, text = gh_out(CF.main)
+ok(out.get("corrections") == f"{B}:20261002,{E}:20261002", "⑥ 원래 보고서가 함께 있는 D 는 정정 목록에서 뺀다",
+   str(out.get("corrections")))
+ok(f"{B} 나회사 — 공시 20261002 (기존 리포트 20260905) · 정정 공시 — 숫자가 바뀐 경우에만 다시 쓴다" in text,
+   "⑥ 정정 공시라는 것을 로그에 남긴다")
+ROWS.pop()
+
+# ⑥ 숫자가 같았던 정정 공시는 다시 고르지 않는다 — 그보다 새 공시가 오면 다시 고른다
+S.mark_checked(B, "20261002")
+out, text = gh_out(CF.main)
+got = out.get("new_tickers", "").split(",") if out.get("new_tickers") else []
+ok(got == [D, E], "⑥ 숫자가 같았던 B 는 같은 공시로 다시 고르지 않는다", str(got))
+ok(f"정정 공시를 견줘 숫자가 같았던 종목 1개는 뺀다: {B}" in text, "⑥ 뺀 이유를 로그에 남긴다")
+ROWS.append({"stock_code": B, "report_nm": "[기재정정]반기보고서 (2026.06)", "rcept_dt": "20261005"})
+out, text = gh_out(CF.main)
+got = out.get("new_tickers", "").split(",") if out.get("new_tickers") else []
+ok(got == [B, D, E] and f"{B}:20261005" in out.get("corrections", ""), "⑥ 그 뒤의 새 정정 공시는 다시 고른다",
+   f"{got} {out.get('corrections')}")
+ok("숫자가 같았던 종목" not in text, "⑥ 다시 고른 종목은 '뺐다'고 적지 않는다")
+ROWS.pop()
+(S.CHECKED_DIR / B).unlink()
 
 # 갱신 기준일(전 종목 다시 쓰기)이 있으면 그보다 낡은 리포트는 워치독 몫 — 판단도 늦은 날짜로
 S.REFRESH_FILE.write_text("2026-09-20\n", encoding="utf-8")

@@ -13,6 +13,8 @@
                없음' 과 구분이 안 돼 한 run 의 종목 전부가 생성 불가로 영구 기록됐다.
   ⑤ 배치 상태  주문마다 파일 하나. 회수는 파일별로 한 번. 진행 중 종목은 재주문 금지.
   ⑥ 대상 선정  갱신 기준일·hold·fail·skip·진행 중 배치를 생성기와 워치독이 같은 규칙으로 본다.
+  ⑯ 정정 공시  2026-10-07 정정 공시 14개 종목을 다시 써 $3.97 이 나갔다 — 13개는 저장된 숫자를 재사용해
+               정정조차 반영하지 않았다. 숫자를 새로 받아 견주고 바뀐 경우에만 다시 쓴다.
 """
 import datetime
 import io
@@ -51,7 +53,7 @@ def ok(cond, what, detail=""):
 TMP = Path(tempfile.mkdtemp(prefix="kosai_pipe_"))
 DATA = TMP / "data"
 DATA.mkdir()
-for attr in ("OUT_DIR", "SKIP_DIR", "HOLD_DIR", "FAIL_DIR", "BATCH_DIR"):
+for attr in ("OUT_DIR", "SKIP_DIR", "HOLD_DIR", "FAIL_DIR", "BATCH_DIR", "CHECKED_DIR"):
     setattr(S, attr, DATA / getattr(S, attr).name)
 S.SKIP_LEGACY = DATA / "reports_v2_skip.txt"
 S.LEGACY_STATE = DATA / "batch_state_v2.json"
@@ -387,7 +389,7 @@ def fake_collect_all(targets, data, die_after=None, no_data=()):
 
 cl = FakeClient()
 os.environ["REPORT_FILL_TO"] = "3000"; M.TOP_N = 100
-M.collect_all_quant = lambda targets, data, allow_reuse=False: fake_collect_all(targets, data, no_data={"000040"})
+M.collect_all_quant = lambda targets, data, allow_reuse=False, fresh=(): fake_collect_all(targets, data, no_data={"000040"})
 S.REFRESH_FILE.write_text("2026-09-01\n", encoding="utf-8")
 for p in S.BATCH_DIR.glob("*.json"):
     p.unlink()
@@ -410,7 +412,7 @@ ok(r2["batch_id"] is None and len(cl.messages.batches.created) == 1, "진행 중
 S.clear_hold("000890")
 for p in S.BATCH_DIR.glob("*.json"):
     p.unlink()
-M.collect_all_quant = lambda targets, data, allow_reuse=False: fake_collect_all(targets, data, die_after=2)
+M.collect_all_quant = lambda targets, data, allow_reuse=False, fresh=(): fake_collect_all(targets, data, die_after=2)
 r3 = M.submit(cl, "2026-09-05 02:02")
 ok(r3["batch_id"] is not None and r3["unavailable"] is not None and len(r3["tickers"]) == 2, "한도에 걸려도 모은 만큼 주문 + unavailable", f"{r3['tickers']} {r3['unavailable']}")
 ok(not (set(S.load_skip()) - {"000040"}), "한도로 못 모은 종목은 skip 이 아니다", str(S.load_skip()))
@@ -1152,6 +1154,88 @@ S.BPS_SUPPRESS_FILE = DATA / "없는파일.txt"
 ok(S.load_bps_suppress() == set(), "목록 파일이 없으면 아무것도 안 가린다")
 S.BPS_SUPPRESS_FILE = _real_file
 M.BPS_SUPPRESS = REAL_SUPPRESS
+
+print()
+print("⑯ 정정 공시 — 숫자가 바뀐 경우에만 다시 쓴다")
+_q = lambda x: json.loads(json.dumps(x))
+base = _q(GOOD)
+ok(M.quant_diff(base, _q(GOOD)) == [], "같은 숫자면 다른 곳이 없다")
+d = _q(GOOD)
+d["valuation"].update(price=2000, mcap=1.0, shares=2_000_000, per=20.0, pbr=4.0, div=None, dps=None,
+                      bps_krx=None, pbr_krx=None, hidden={"dps": "no_div"}, basis="다른 문구")
+d["asOf"] = "2026-10-08"
+ok(M.quant_diff(base, d) == [], "주가 · 주가에 딸린 배수 · KRX 참고값 · 배당 · 수집일은 견주지 않는다",
+   str(M.quant_diff(base, d)))
+d = _q(GOOD); d["annual"][0]["op"] = 210_000_000
+ok(M.quant_diff(base, d) == ["연간 2025 op 200000000 → 210000000"], "연간 영업이익이 바뀌면 잡는다",
+   str(M.quant_diff(base, d)))
+d = _q(GOOD); d["quarterly"][-1]["np_owner"] = 20_000_000
+ok(M.quant_diff(base, d) == ["분기 2026Q2 np_owner 25000000 → 20000000"], "분기 지배주주 순이익이 바뀌면 잡는다",
+   str(M.quant_diff(base, d)))
+d = _q(GOOD); d["valuation"].update(bps=480)
+ok(M.quant_diff(base, d) == ["bps 500 → 480"], "분기말 자본(BPS)만 바뀐 정정도 잡는다", str(M.quant_diff(base, d)))
+d = _q(GOOD); d["quarterly"].append({"q": "2026Q3", "rev": 1, "op": 1, "np_owner": 1})
+ok(M.quant_diff(base, d) == ["분기 2026Q3 새로 생김"], "리포트에 없는 기간이 생기면 잡는다", str(M.quant_diff(base, d)))
+d = _q(GOOD); d["annual"] = d["annual"][:3]; d["annual"][0]["liab"] = None
+ok(M.quant_diff(base, d) == [], "해가 밀려 빠진 연도 · 새로 받은 쪽의 빈칸은 견주지 않는다", str(M.quant_diff(base, d)))
+d = _q(GOOD); d["fs_basis"] = "별도(OFS)"
+ok(len(M.quant_diff(base, d)) == 1 and "작성 기준" in M.quant_diff(base, d)[0], "작성 기준이 바뀌면 잡는다")
+
+os.environ["REPORT_CORRECTIONS"] = "005930:20260904, 000020:20260904,bad,204840:2026-09-05"
+ok(M.corrections_env() == {"005930": "20260904", "000020": "20260904"}, "넘겨받은 목록을 읽는다(모양이 틀린 것은 버린다)",
+   str(M.corrections_env()))
+
+# submit — 같으면 주문하지 않고 접수일을 적는다 · 다르면 새 숫자로 주문 · 오늘 공시는 적지 않는다 ·
+# 저장된 숫자가 없으면 새로 쓴다 · 정정 종목은 저장된 숫자가 최신 · 완전해도 다시 받는다
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+for tk in ("005930", "000020", "204840"):
+    put(tk, GOOD)
+(S.OUT_DIR / "276730.json").unlink(missing_ok=True)
+changed = _q(GOOD); changed["quarterly"][-1]["op"] = 40_000_000
+FRESH = {"005930": GOOD, "000020": changed, "204840": GOOD, "276730": GOOD}
+called = []
+M.collect_quant = lambda dart, tk, row, stock: (called.append(tk), _q(FRESH[tk]))[1]
+S.clear_hold("000020"); S.clear_hold("276730")
+os.environ["REPORT_TICKERS"] = "005930,000020,204840,276730"
+os.environ["REPORT_CORRECTIONS"] = "005930:20260904,000020:20260904,204840:20260905,276730:20260904"
+buf = io.StringIO()
+with __import__("contextlib").redirect_stdout(buf):
+    cl6 = FakeClient()
+    r = M.submit(cl6, "2026-09-05 10:00")
+log6 = buf.getvalue()
+ok(sorted(called) == ["000020", "005930", "204840", "276730"], "정정 종목은 재사용하지 않고 모두 새로 받는다", str(called))
+ok(r["tickers"] == ["000020", "276730"], "숫자가 바뀐 종목 · 저장된 숫자가 없는 종목만 주문한다", str(r["tickers"]))
+stt = json.loads(S.batch_path(r["batch_id"]).read_text(encoding="utf-8")) if r["batch_id"] else {}
+ok((stt.get("quant") or {}).get("000020", {}).get("quarterly", [{}])[-1].get("op") == 40_000_000,
+   "다시 쓰는 리포트는 새로 받은 숫자로 쓴다")
+ok(S.checked_date("005930") == "20260904", "숫자가 같으면 공시 접수일을 적는다", S.checked_date("005930"))
+ok(S.checked_date("204840") == "", "오늘 낸 공시는 적지 않는다 — 다음 실행에서 한 번 더 견준다")
+ok(S.checked_date("000020") == "" and S.checked_date("276730") == "", "주문한 종목은 적지 않는다")
+ok("숫자가 바뀌었다 — 새 숫자로 다시 쓴다: 분기 2026Q2 op 50000000 → 40000000" in log6, "무엇이 바뀌었는지 로그에 남긴다")
+ok("저장된 숫자가 없어 견줄 수 없다" in log6, "견줄 수 없는 이유를 남긴다")
+
+# 모두 같으면 주문 자체를 하지 않는다
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+os.environ["REPORT_TICKERS"] = "005930,204840"
+os.environ["REPORT_CORRECTIONS"] = "005930:20260904,204840:20260903"
+cl7 = FakeClient()
+r = M.submit(cl7, "2026-09-05 10:00")
+ok(r["batch_id"] is None and cl7.messages.batches.created == [], "정정 공시가 모두 숫자가 같으면 주문하지 않는다")
+ok(S.checked_date("204840") == "20260903", "어제 이전 공시면 적는다")
+# 정정 목록이 없으면 전과 같다 — 재사용 규칙 그대로
+os.environ.pop("REPORT_CORRECTIONS")
+called.clear()
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+r = M.submit(FakeClient(), "2026-09-05 10:00")
+ok(called == [] and set(r["tickers"]) == {"005930", "204840"}, "정정 목록이 없으면 전처럼 재사용하고 주문한다",
+   f"{called} {r['tickers']}")
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+os.environ.pop("REPORT_TICKERS")
+M.collect_quant = REAL_COLLECT_QUANT
 
 print()
 print(f"통과 {passed} · 실패 {failed}")

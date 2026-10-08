@@ -22,14 +22,18 @@ KOSAI 리포트 v2 — '정량 + 정성 분리' 구조 (Message Batches API)
 collect_batch 워크플로가 30분마다 남은 파일을 보고 회수한다. 상태 파일이 커밋되지
 않으면 배치 ID 가 run 과 함께 사라져 돈만 나간다 — 8월 20일 479건이 그랬다.
 
-돈이 나가는 주문 앞에는 빗장이 셋이다.
+돈이 나가는 주문 앞에는 빗장이 넷이다.
   · data/reports_paused 가 있으면 주문하지 않는다.
   · 이미 주문이 들어가 있는 종목(진행 중 배치)은 다시 주문하지 않는다.
   · 정량 숫자가 항등식(check_valuation.HARD)에 걸리는 종목은 글을 쓰지 않는다.
     그 종목만 빼고 나머지는 진행한다 — 한 종목의 공시 오류가 전체를 멈추지 않는다.
+  · 정정 공시만 새로 나온 종목(REPORT_CORRECTIONS)은 숫자를 새로 받아 저장된 리포트와
+    견주고, 공시 재무 숫자가 같으면 주문하지 않는다(settle_corrections).
 
 환경변수: ANTHROPIC_API_KEY, DART_API_KEY, KRX_ID, KRX_PW,
           REPORT_MODEL_TOP/REST/TOP_N, REPORT_TICKERS, REPORT_TOP_N(기본 10),
+          REPORT_CORRECTIONS(정정 공시만 나온 종목 '종목:접수일,…' — 공시 트리거가 넘긴다),
+          REPORT_NO_REUSE(1 이면 정량을 재사용하지 않고 모두 새로 받는다),
           REPORT_FILL_TO/FROM/SHARDS/SHARD(자동 백필), REPORT_BACKFILL(skip 재시도 run),
           REPORT_ALLOW_INFLIGHT(진행 중인 종목도 다시 주문), BATCH_SHORT_WAIT_SEC
 """
@@ -2184,8 +2188,8 @@ def reusable_quant(tk, stock, today=None):
     return _repriced(q, stock), None
 
 
-def collect_all_quant(targets, data, allow_reuse=False):
-    """(quants, errors, unavailable).
+def collect_all_quant(targets, data, allow_reuse=False, fresh=()):
+    """(quants, errors, unavailable). fresh 에 든 종목은 재사용하지 않고 새로 받는다(정정 공시 비교).
 
     quants      {ticker: quant} — 수집된 것
     errors      {ticker: 사유} — 그 종목만의 예외(파싱 실패 등). skip 대상이 아니다.
@@ -2202,6 +2206,11 @@ def collect_all_quant(targets, data, allow_reuse=False):
     if allow_reuse and os.getenv("REPORT_NO_REUSE") != "1":
         why_count = {}
         for st in targets:
+            if st["ticker"] in fresh:
+                need.append(st)
+                why = "정정 공시 — 새로 받아 견준다"
+                why_count[why] = why_count.get(why, 0) + 1
+                continue
             q, why = reusable_quant(st["ticker"], st)
             if q is not None:
                 reused[st["ticker"]] = q
@@ -2248,6 +2257,104 @@ def collect_all_quant(targets, data, allow_reuse=False):
     return out, errors, None
 
 
+# ── 정정 공시 — 숫자가 바뀐 경우에만 다시 쓴다 ─────────────────────────
+# 2026-10-07 정정 공시([기재정정]반기보고서 등) 14개 종목을 다시 써 $3.97 이 나갔는데, 13개는
+# 저장된 숫자를 그대로 재사용해 정정 내용조차 반영되지 않았다. 정정 공시는 대개 재무 숫자가
+# 아닌 서술(임원 · 주주 현황 등)을 고친다. 그래서 숫자를 새로 받아 견주고(DART 호출만 · 돈 안 듦),
+# 같으면 다시 쓰지 않는다. 다르면 새 숫자로 전체를 다시 쓴다 — 표만 바꾸면 실적 분석 글과
+# 어긋난다(2026-10-08 사장 승인).
+#
+# 견주는 것은 공시 재무제표에서 온 숫자뿐이다. 주가 · 시가총액 · 주가에 딸린 배수(PER · PBR ·
+# 배당수익률) · KRX 참고값 · 배당(KRX 로 보완)은 날마다, 또는 거래소 접속 여부에 따라 달라져
+# 정정과 관계없이 '바뀜' 으로 나온다.
+_CMP_ANNUAL = ("rev", "op", "np", "np_owner", "equity", "equity_owner", "equity_nci", "liab", "cfo", "eps_basic")
+_CMP_QUARTER = ("rev", "op", "np_owner")
+_CMP_VAL = ("ttm_window", "ttm_np_owner", "eps", "bps")
+
+
+def corrections_env():
+    """REPORT_CORRECTIONS='종목:접수일(YYYYMMDD),…' → {종목: 접수일}."""
+    out = {}
+    for part in os.getenv("REPORT_CORRECTIONS", "").replace(" ", "").split(","):
+        tk, _, d = part.partition(":")
+        if tk and len(d) == 8 and d.isdigit():
+            out[tk] = d
+    return out
+
+
+def stored_quant(tk):
+    """저장된 리포트의 정량. 없거나 읽지 못하면 None."""
+    try:
+        q = (json.loads((OUT_DIR / f"{tk}.json").read_text(encoding="utf-8")) or {}).get("quant")
+    except Exception:
+        return None
+    return q if isinstance(q, dict) and q.get("annual") else None
+
+
+def quant_diff(old, new):
+    """정정 전(저장된 리포트) · 정정 후(새로 받은) 정량에서 공시 재무 숫자가 달라진 곳. 같으면 [].
+
+    새로 받은 쪽에만 있는 기간은 '바뀜' 이다(리포트에 없는 숫자다). 저장된 쪽에만 있는 기간과
+    새로 받은 쪽이 비어 있는 칸은 견주지 않는다 — 해가 바뀌어 연간 표의 창이 밀렸거나 DART 가
+    잠시 못 준 것이라, 그것 때문에 다시 쓰면 숫자가 더 빈 리포트가 된다."""
+    diffs = []
+    if (old.get("fs_basis") or "") != (new.get("fs_basis") or ""):
+        diffs.append(f"작성 기준 {old.get('fs_basis')} → {new.get('fs_basis')}")
+    for label, rows, key, fields in (("연간", "annual", "year", _CMP_ANNUAL),
+                                     ("분기", "quarterly", "q", _CMP_QUARTER)):
+        o = {r.get(key): r for r in old.get(rows) or [] if isinstance(r, dict)}
+        for r in new.get(rows) or []:
+            if not isinstance(r, dict):
+                continue
+            k = r.get(key)
+            if k not in o:
+                diffs.append(f"{label} {k} 새로 생김")
+                continue
+            for f in fields:
+                a, b = o[k].get(f), r.get(f)
+                if b is not None and a != b:
+                    diffs.append(f"{label} {k} {f} {a} → {b}")
+    ov, nv = old.get("valuation") or {}, new.get("valuation") or {}
+    for f in _CMP_VAL:
+        a, b = ov.get(f), nv.get(f)
+        if b is not None and a != b:
+            diffs.append(f"{f} {a} → {b}")
+    return diffs
+
+
+def settle_corrections(corr, quants, errors, today=None):
+    """정정 공시만 새로 나온 종목의 새 숫자를 저장된 리포트와 견준다. 돌려주는 것: 주문하지 않을 종목.
+
+    같으면 주문하지 않고 공시 접수일을 data/reports_v2_checked/ 에 적는다 — 공시 트리거가 같은
+    공시로 다시 고르지 않는다. 다만 오늘 낸 공시는 적지 않는다: DART 재무제표 조회가 공시 직후에는
+    정정 전 숫자를 줄 수 있어, 다음 실행(다음 날 아침)에 한 번 더 받아 본다(돈 안 듦).
+    숫자를 못 받은 종목(DART 장애 · 예외)은 여기서 판단하지 않는다 — 원래대로 이번에는 주문하지
+    않고 다음 실행이 다시 고른다. 저장된 숫자가 없으면 견줄 수 없으니 새로 쓴다(전과 같음)."""
+    today = (today or S.today_kst()).strftime("%Y%m%d")
+    same = set()
+    for tk, fdate in corr.items():
+        q = quants.get(tk)
+        if q is None or tk in errors:
+            continue
+        old = stored_quant(tk)
+        if old is None:
+            log(f"  · {tk} 정정 공시({fdate}) — 저장된 숫자가 없어 견줄 수 없다. 새로 쓴다.")
+            continue
+        diff = quant_diff(old, q)
+        if diff:
+            log(f"  · {tk} 정정 공시({fdate})로 숫자가 바뀌었다 — 새 숫자로 다시 쓴다: "
+                + " · ".join(diff[:4]) + (f" 외 {len(diff) - 4}곳" if len(diff) > 4 else ""))
+            continue
+        same.add(tk)
+        if fdate < today:
+            S.mark_checked(tk, fdate)
+            log(f"  · {tk} 정정 공시({fdate}) — 공시 재무 숫자가 같아 다시 쓰지 않는다.")
+        else:
+            log(f"  · {tk} 정정 공시({fdate}) — 공시 재무 숫자가 같아 다시 쓰지 않는다"
+                f"(오늘 낸 공시라 다음 실행에서 한 번 더 견준다).")
+    return same
+
+
 # ── 배치 제출/회수 ────────────────────────────────────────────────────
 def _write_state(path, state):
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -2288,8 +2395,19 @@ def submit(cl, as_of):
     # 전체 universe 시총 순위(1=최대) → 종목별 모델 결정
     rank_of = {s["ticker"]: i + 1 for i, s in enumerate(_ranked(data))}
     log(f"## 🤖 리포트 v2 Batch 제출 — {len(targets)}개 · 상위{MODEL_TOP_N} {MODEL_TOP} / 나머지 {MODEL_REST}")
-    quants, errors, unavailable = collect_all_quant(targets, data, allow_reuse=True)
+    picked = {s["ticker"] for s in targets}
+    corr = {tk: d for tk, d in corrections_env().items() if tk in picked}
+    quants, errors, unavailable = collect_all_quant(targets, data, allow_reuse=True, fresh=set(corr))
     result["unavailable"] = unavailable
+    if corr:
+        log(f"- 정정 공시만 새로 나온 {len(corr)}개 — 새 숫자를 저장된 리포트와 견준다")
+        same = settle_corrections(corr, quants, errors)
+        if same:
+            targets = [s for s in targets if s["ticker"] not in same]
+            log(f"- 숫자가 같아 주문하지 않는 정정 공시 {len(same)}개: {','.join(sorted(same)[:30])}")
+            if not targets:
+                log("- 주문할 종목이 없다.")
+                return result
 
     fill_mode = os.getenv("REPORT_FILL_TO", "0") not in ("0", "")
     backfill = os.getenv("REPORT_BACKFILL") == "1"

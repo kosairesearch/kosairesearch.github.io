@@ -16,6 +16,8 @@ git 충돌이 없다).
   data/reports_v2_skip/<tk>        생성 불가(DART 에 재무제표가 없다). 내용은 기록한 날짜.
   data/reports_v2_hold/<tk>        숫자가 항등식에 걸려 글을 쓰지 않았다. 내용은 사유.
   data/reports_v2_fail/<tk>        배치 결과가 깨진 횟수. FAIL_LIMIT 이상이면 자동 백필에서 뺀다.
+  data/reports_v2_checked/<tk>     정정 공시를 받아 숫자를 견줘 보니 같아서 다시 쓰지 않았다. 내용은 '공시 접수일 확인일'.
+                                   공시 트리거는 이 접수일까지의 공시를 반영한 것으로 본다.
   data/batches_v2/<batch_id>.json  주문 하나의 상태. collected/abandoned 가 없으면 '진행 중'.
   data/reports_v2_refresh          갱신 기준일(YYYY-MM-DD). 이 날짜 이전 리포트는 '없는 것' 으로 본다.
   data/reports_paused              있으면 돈이 드는 모드를 전부 멈춘다.
@@ -34,6 +36,7 @@ SKIP_DIR = DATA / "reports_v2_skip"
 SKIP_LEGACY = DATA / "reports_v2_skip.txt"
 HOLD_DIR = DATA / "reports_v2_hold"
 FAIL_DIR = DATA / "reports_v2_fail"
+CHECKED_DIR = DATA / "reports_v2_checked"
 BATCH_DIR = DATA / "batches_v2"
 LEGACY_STATE = DATA / "batch_state_v2.json"
 REFRESH_FILE = DATA / "reports_v2_refresh"
@@ -192,6 +195,17 @@ def clear_fail(tk):
 def load_failed_out():
     """FAIL_LIMIT 이상 깨진 종목 — 자동 백필이 더 돈을 쓰지 않는다."""
     return {tk for tk in _names(FAIL_DIR) if fail_count(tk) >= FAIL_LIMIT}
+
+
+# ── checked: 정정 공시를 받았지만 숫자가 같아 다시 쓰지 않은 종목 ─────────────
+def checked_date(tk):
+    """숫자가 같아 넘긴 정정 공시의 접수일('YYYYMMDD'). 없으면 ''."""
+    d = (_read(CHECKED_DIR, tk) or "").split(" ", 1)[0]
+    return d if len(d) == 8 and d.isdigit() else ""
+
+
+def mark_checked(tk, fdate, day=None):
+    _write(CHECKED_DIR, tk, f"{fdate} {(day or today_kst()).isoformat()}")
 
 
 # ── universe · 리포트 보유 · 갱신 기준일 ────────────────────────────────
