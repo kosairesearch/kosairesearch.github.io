@@ -314,7 +314,7 @@ function v2Parts(){
     vstrip:vstrip, vnote:vnote
   };
 }
-function bodyV2(){/*@paid*/ if(MOCK) return bodyMock();/*@/paid*/
+function bodyV2(){
   var P=v2Parts(), locked=paywalled();
   var sec=function(s){ return secH(s[0],s[1],s[2],s[3],s[4]); };
   var html=P.free.map(sec).join('');
@@ -461,61 +461,6 @@ function wireLock(){
     }
   }
   btn.addEventListener('click',open);
-}
-/* ── 리포트 구조 시안 — 스테이징 삼성전자만 ─────────────────────────────
-   2026-10-08 사장 "새 시안 자체를 스테이징 사이트 삼성전자에 적용해볼래?". 13개 절을 10개 절로 다시 묶은 글(mock/005930.json — 9월 5일 판
-   리포트의 문장을 옮기고 새로 쓴 문장을 더한 것)을 지금 리포트 화면의 부품(제목 · 요지 · 번호 목록 · 산문 · 강세/약세 · 리스크 · 일정) 그대로
-   그린다. 새 옷(테두리 상자 · 회색 채움 · 작은 회색 이름표 · 색 꼬리표 · 점선)은 쓰지 않는다 — 같은 날 사장이 그런 시안을 'AI 같은 디자인'으로
-   거절했다. 지금 리포트 글의 지문이 시안을 만들 때(sig)와 같을 때만 쓴다 — 리포트가 새로 쓰이면 저절로 현재 구조로 돌아간다.
-   한국어 화면에만(영어는 현재 구조) · ?mock=0 이면 현재 구조. 유료화 후 구간: 01~03 과 10 무료, 04~09 잠금. */
-var MOCK=null, MOCK_TK={'005930':1};
-function mockSig(){
-  var parts=[];
-  function add(v){
-    if(v==null){ parts.push(''); return; }
-    if(typeof v==='string'){ parts.push(v); return; }
-    if(Array.isArray(v)){ v.forEach(add); return; }
-    if(typeof v==='object'){ if('ko' in v){ add(v.ko); return; } Object.keys(v).sort().forEach(function(k){ if(k!=='en') add(v[k]); }); return; }
-    parts.push(String(v));
-  }
-  ['title','lead','keypoints','business','earnings','industry','outlook','valuation_comment','bull','bear','risks','checkpoints','verdict'].forEach(function(k){ add(REP[k]); });
-  return window.kosHash(parts.join('|'));
-}
-function mockLoad(){
-  if(TIER!=='v2'||!REP||!MOCK_TK[TK]||EN()||qp('mock')==='0') return;
-  return getJson('mock/'+encodeURIComponent(TK)+'.json').then(function(m){ if(m&&m.sig&&m.sig===mockSig()) MOCK=m; });
-}
-function mockParas(list){ var out=[]; (list||[]).forEach(function(t){ String(t==null?'':t).split(/\n\n+/).forEach(function(p){ chunkPara(p.trim()).forEach(function(c){ if(c) out.push(c); }); }); }); return out; }
-function mockProse(list,cls){ return '<div class="prose'+(cls?' '+cls:'')+'">'+mockParas(list).map(function(c){ return '<p>'+esc(c)+'</p>'; }).join('')+'</div>'; }
-function bodyMock(){
-  var M=MOCK, P=v2Parts(), locked=paywalled(), T10=M.titles;
-  function fc(cls,lab,x){ return '<article class="fc '+cls+'"><h4><i class="dot"></i>'+esc(lab+' — '+x.title)+'</h4>'+ps(x.body)+'</article>'; }
-  function cps(a){ return '<ol class="cps">'+(a||[]).map(function(x){ return '<li><span class="when">'+esc(x.when)+'</span><p>'+esc(x.what)+'</p></li>'; }).join('')+'</ol>'; }
-  var abs='<div class="abstract"><h3 class="ab-title">'+esc(pk(REP.title))+'</h3><p class="ab-lead">'+esc(pk(REP.lead))+'</p><p class="ab-lead">'+esc(M.change)+'</p>'
-    +'<ol class="kp">'+M.kp.map(function(k,i){ return '<li><span class="n">'+(i+1)+'</span><p>'+esc(k)+'</p></li>'; }).join('')+'</ol></div>';
-  var s04=[M.first['04'], pk(REP.earnings)];
-  var iss=mockProse(M.issues.lead,'verdict wrapup')
-    +M.issues.items.map(function(x,i){ return '<div class="fcs"><article class="fc"><h4>'+esc('쟁점 '+(i+1)+'. '+x.q)+'</h4>'+ps(x.judge)+ps(x.bg)+'</article>'
-      +x.bull.map(function(f){ return fc('bull','강세 근거',f); }).join('')+x.bear.map(function(f){ return fc('bear','약세 근거',f); }).join('')+'</div>'+cps(x.cps); }).join('')
-    +mockProse([M.issues.end],'verdict wrapup');
-  var oth=mockProse([M.first['09']])+'<div class="rks">'+M.other.risks.map(function(r){ return '<div class="rk"><div class="rk-c">'+esc(r.cat)+'</div><div class="rk-b">'+ps(r.body)+'</div></div>'; }).join('')+'</div>'+cps(M.other.cps);
-  var free=[[1,T10[0],abs,false,true],[2,T10[1],mockProse([M.first['02'],pk(REP.business)]),false,false],[3,T10[2],P.free[2][2],true,false]];
-  var paid=[[4,T10[3],mockProse(s04),false,false],[5,T10[4],mockProse(M.competition),false,false],[6,T10[5],mockProse([M.first['06'],pk(REP.outlook)]),false,false],
-            [7,T10[6],iss,false,false],[8,T10[7],P.vstrip+mockProse([M.first['08'],M.valuation])+P.vnote,true,false],[9,T10[8],oth,true,false]];
-  var tail=[[10,T10[9],sourcesH(REP),false,false]];
-  function sec(x){ return secH(x[0],x[1],x[2],x[3],x[4]); }
-  var html=free.map(sec).join('');
-  if(locked){
-    /* 미리보기 — 잠금을 풀었을 때의 04 절 문단 그대로, 세 문단 예산 · 절의 마지막 문단은 남긴다(tzLead 와 같은 규칙) */
-    var all=mockParas(s04), lead=[], n=0; if(all.length>1) all.pop();
-    for(var j=0;j<all.length&&n<3*PARA_KO;j++){ lead.push(all[j]); n+=all[j].length; }
-    var chars=0; paid.forEach(function(x){ chars+=x[2].replace(/<[^>]+>/g,'').length; });
-    html+=lockBlock({html:secH(4,T10[3],lead.length?'<div class="tz-fade"><div class="prose">'+lead.map(function(x){ return '<p>'+esc(x)+'</p>'; }).join('')+'</div></div>':'',false,false,'div'),
-                     secs:paid.length, names:paid.map(function(x){ return x[1]; }), mins:Math.max(1,Math.round(chars/500))});
-  }
-  else html+=paid.map(sec).join('');
-  html+=tail.map(sec).join('');
-  return {titles:T10, html:html, locked:locked?paid.map(function(x){ return x[0]-1; }):[]};
 }/*@/paid*//*@live
 /* 실사이트 — 유료 구간이 없다(멤버십 전). 잠금 카드 · 흐린 미리보기 · paywall 모듈을 싣지 않고 모든 절을 그린다 */
 var _lockOff=null; function paywalled(){ return false; }
@@ -692,7 +637,7 @@ if(preOk()||keepEn()) syncWatch(); else render();
 getJson('/data/reports_v2/'+encodeURIComponent(TK)+'.json').then(function(r){
   if(r){ REP=r; TIER='v2'; return; }
   return getJson('/data/reports/'+encodeURIComponent(TK)+'.json').then(function(r1){ if(r1){ REP=r1; TIER='v1'; } });
-})/*@paid*/.then(mockLoad)/*@/paid*/.then(function(){
+}).then(function(){
   LOADED=true; render();
   if(window.KOSA) KOSA.track(REP?'report_view':'stock_view',{ticker:TK, name:(STOCK&&STOCK.name)||(REP&&REP.name)||TK});
   /* 최근 본 종목(검색창 드롭다운용) — 기기에만 둔다 */
