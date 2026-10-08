@@ -21,6 +21,7 @@ import json
 import os
 import re
 import sys
+import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -31,8 +32,10 @@ KST = datetime.timezone(datetime.timedelta(hours=9))
 MODEL = os.getenv("MARKETING_MODEL", "claude-opus-5")
 # 적응형 사고의 토큰도 이 한도 안에서 센다. 4,000 이던 때 2026-10-05 보고서가 사고에
 # 한도를 다 쓰고 '다음 주에 할 것' 한가운데서 잘렸다(출력 4,000 토큰 · 본문 2,591자).
-# 한도는 상한일 뿐이라 쓴 만큼만 낸다. 스트리밍이라 큰 값이어도 시간 초과가 없다.
+# 한도는 상한일 뿐이라 쓴 만큼만 낸다. 배치라 큰 값이어도 시간 초과가 없다.
 MAX_TOKENS = 16000
+# 배치를 기다리는 최대 시간. 넘기면 취소한다 — 처리되지 않은 요청은 청구되지 않는다.
+BATCH_WAIT = int(os.getenv("MARKETING_BATCH_WAIT_SEC", "3000"))
 # 100만 토큰당 달러 (입력, 출력). generate_brief.py 와 같은 표다.
 PRICES = {
     "claude-opus-5": (5.0, 25.0),
@@ -1046,22 +1049,47 @@ def already_reported(cur_week, box=None):
 
 
 def generate(prompt):
+    """보고서 글을 쓴다 — Batch API 로만(2026-10-08 사장 "무조건 batch API만 · 모닝브리핑 제외", 요금 절반).
+
+    BATCH_WAIT 안에 끝나지 않으면 배치를 취소하고 실패로 끝낸다. 처리되지 않은 요청은 청구되지 않으니
+    다시 돌리면 된다. 그 사이 끝난 답이 있으면 그 답을 쓴다."""
     import anthropic
     key = os.getenv("ANTHROPIC_API_KEY")
     if not key:
         raise SystemExit("❌ ANTHROPIC_API_KEY 가 없다")
     cl = anthropic.Anthropic(api_key=key)
-    with cl.messages.stream(model=MODEL, max_tokens=MAX_TOKENS, system=SYSTEM,
-                            thinking={"type": "adaptive"},
-                            messages=[{"role": "user", "content": prompt}]) as s:
-        msg = s.get_final_message()
+    b = cl.messages.batches.create(requests=[{"custom_id": "report", "params": {
+        "model": MODEL, "max_tokens": MAX_TOKENS, "system": SYSTEM, "thinking": {"type": "adaptive"},
+        "messages": [{"role": "user", "content": prompt}]}}])
+    log(f"· 배치 주문 {b.id} — 최대 {BATCH_WAIT // 60}분 기다린다")
+    waited = 0
+    while b.processing_status != "ended":
+        if waited >= BATCH_WAIT:
+            log("⚠️ 시간 안에 끝나지 않아 배치를 취소한다(처리 전 요청은 청구되지 않는다) — 다시 돌리면 된다")
+            cl.messages.batches.cancel(b.id)
+            for _ in range(18):
+                time.sleep(10)
+                b = cl.messages.batches.retrieve(b.id)
+                if b.processing_status == "ended":
+                    break
+            break
+        time.sleep(20)
+        waited += 20
+        b = cl.messages.batches.retrieve(b.id)
+    msg = None
+    if b.processing_status == "ended":
+        for r in cl.messages.batches.results(b.id):
+            if r.custom_id == "report" and r.result.type == "succeeded":
+                msg = r.result.message
+    if msg is None:
+        raise SystemExit("❌ 보고서 배치가 끝나지 않았거나 실패했다 — 다시 돌리면 된다")
     stop = getattr(msg, "stop_reason", None)
     if stop == "max_tokens":
         log(f"⚠️ 출력 한도({MAX_TOKENS:,} 토큰)에 걸려 보고서가 중간에 잘렸다 — MAX_TOKENS 를 올려라")
     elif stop == "refusal":
         log("⚠️ 모델이 답을 거절했다 — 보고서가 비었거나 짧을 수 있다")
-    text = "\n".join(b.text for b in msg.content
-                     if getattr(b, "type", None) == "text").strip()
+    text = "\n".join(x.text for x in msg.content
+                     if getattr(x, "type", None) == "text").strip()
     return text, msg.usage
 
 
@@ -1194,9 +1222,9 @@ def main():
     # 조용히 새는 비용은 아무도 안 본다.
     if usage:
         pin, pout = PRICES.get(MODEL, (0.0, 0.0))
-        usd = (usage.input_tokens * pin + usage.output_tokens * pout) / 1e6
+        usd = (usage.input_tokens * pin + usage.output_tokens * pout) / 1e6 * 0.5     # 배치 — 절반
         line = (f"입력 {usage.input_tokens:,} / 출력 {usage.output_tokens:,} 토큰 · "
-                f"${usd:.3f} (약 {usd * USD_KRW:,.0f}원)")
+                f"${usd:.3f} (약 {usd * USD_KRW:,.0f}원 · 배치)")
         log("· " + line)
         sm = os.environ.get("GITHUB_STEP_SUMMARY")
         if sm:

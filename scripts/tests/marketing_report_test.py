@@ -752,25 +752,32 @@ import io as _io
 import contextlib as _cl
 ok("한도는 사고까지 넉넉하게 — 16,000 이상", M.MAX_TOKENS >= 16000, str(M.MAX_TOKENS))
 
-class _FakeStream:
-    def __init__(self, stop):
-        self.stop = stop
-    def __enter__(self):
-        return self
-    def __exit__(self, *a):
-        return False
-    def get_final_message(self):
+class _FakeBatches:
+    """배치 창구 흉내 — 주문 · 상태 · 결과 · 취소. 즉시 호출 창구(create · stream)는 없다."""
+    def __init__(self, outer):
+        self.o = outer
+    def create(self, requests):
+        _FakeClient.seen = requests[0]["params"]
+        _FakeClient.orders += 1
+        return types.SimpleNamespace(id="msgbatch_fake", processing_status=_FakeClient.status)
+    def retrieve(self, bid):
+        return types.SimpleNamespace(id=bid, processing_status=_FakeClient.status_after)
+    def cancel(self, bid):
+        _FakeClient.cancelled = True
+    def results(self, bid):
         blk = types.SimpleNamespace(type="text", text="본문")
-        return types.SimpleNamespace(content=[blk], usage="쓴 양", stop_reason=self.stop)
+        msg = types.SimpleNamespace(content=[blk], usage="쓴 양", stop_reason=_FakeClient.stop)
+        return [types.SimpleNamespace(custom_id="report", result=types.SimpleNamespace(type="succeeded", message=msg))]
 
 class _FakeClient:
     stop = "end_turn"
+    status = "ended"
+    status_after = "ended"
     seen = {}
+    orders = 0
+    cancelled = False
     def __init__(self, api_key=None):
-        self.messages = self
-    def stream(self, **kw):
-        _FakeClient.seen = kw
-        return _FakeStream(_FakeClient.stop)
+        self.messages = types.SimpleNamespace(batches=_FakeBatches(self))
 
 _fake_mod = types.SimpleNamespace(Anthropic=_FakeClient)
 _saved_mod = sys.modules.get("anthropic")
@@ -790,6 +797,20 @@ try:
             ok("끝까지 썼으면 경고가 없다", "⚠️" not in _out, _out)
         ok(f"{_stop} 이어도 받은 본문은 돌려준다", _txt == "본문", _txt)
     ok("한도를 그대로 넘긴다", _FakeClient.seen.get("max_tokens") == M.MAX_TOKENS, str(_FakeClient.seen.get("max_tokens")))
+    ok("배치로만 주문한다(즉시 호출 창구가 없는 가짜로 통과)", _FakeClient.orders == 3, str(_FakeClient.orders))
+    # 시간 안에 끝나지 않으면 취소하고 실패로 끝낸다 — 처리 전 요청은 청구되지 않는다
+    _FakeClient.stop, _FakeClient.status, _FakeClient.status_after = "end_turn", "in_progress", "canceling"
+    _wait, _sleep = M.BATCH_WAIT, M.time.sleep
+    M.BATCH_WAIT, M.time.sleep = 0, (lambda *_: None)
+    try:
+        with _cl.redirect_stdout(_io.StringIO()), _cl.redirect_stderr(_io.StringIO()):
+            M.generate("물음")
+        _ended = "끝남"
+    except SystemExit as e:
+        _ended = str(e)
+    finally:
+        M.BATCH_WAIT, M.time.sleep = _wait, _sleep
+    ok("시간 안에 끝나지 않으면 배치를 취소하고 실패로 끝낸다", _FakeClient.cancelled and "배치" in _ended, _ended)
 finally:
     if _saved_mod is None:
         sys.modules.pop("anthropic", None)

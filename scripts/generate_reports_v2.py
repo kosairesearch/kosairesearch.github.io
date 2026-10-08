@@ -40,12 +40,14 @@ collect_batch 워크플로가 30분마다 남은 파일을 보고 회수한다. 
 
 import contextlib
 import datetime
+import hashlib
 import io
 import json
 import os
 import re
 import sys
 import time
+import types
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -2531,20 +2533,40 @@ def pickup(cl, as_of):
     n = 0
     for path, state in pend:
         bid = state["batch_id"]
-        try:
-            b = cl.messages.batches.retrieve(bid)
-        except anthropic.NotFoundError:
-            log(f"- {bid} 를 찾을 수 없다(만료·삭제) — 버린다")
-            state["abandoned"] = f"{as_of} · 배치를 찾을 수 없음"
-            state.pop("quant", None)
-            _write_state(path, state)
-            continue
-        rc = b.request_counts
-        log(f"- {bid} · 상태 {b.processing_status} · 처리 {rc.processing}/성공 {rc.succeeded}/오류 {rc.errored}"
-            f"/만료 {rc.expired}/취소 {rc.canceled} · 주문 {state.get('created')}")
-        if b.processing_status != "ended":
-            log("  아직 처리 중 — 다음 차례에 다시 온다")
-            continue
+        rq = state.get("repair")
+        if rq:
+            # 보정 배치를 기다리는 회수 — 본 배치는 이미 끝났다. 보정 답을 받아 미룬 종목만 다시 처리한다.
+            try:
+                rb = cl.messages.batches.retrieve(rq["batch_id"])
+                status = rb.processing_status
+            except anthropic.NotFoundError:
+                status = "missing"
+            log(f"- {bid} · 보정 배치 {rq['batch_id']} 상태 {status} · 기다리는 종목 {len(state.get('deferred') or [])}개")
+            if status not in ("ended", "missing"):
+                log("  보정이 아직 처리 중 — 다음 차례에 다시 온다")
+                continue
+            answers = state.setdefault("repair_answers", {})
+            if status == "missing":
+                answers.update({k: {"error": "보정 배치를 찾을 수 없음"} for k in rq.get("keys", [])})
+            else:
+                answers.update(_answers_from(cl, rq["batch_id"], rq.get("keys", []), state))
+            state.setdefault("repairs", []).append(rq["batch_id"])
+            state.pop("repair", None)
+        else:
+            try:
+                b = cl.messages.batches.retrieve(bid)
+            except anthropic.NotFoundError:
+                log(f"- {bid} 를 찾을 수 없다(만료·삭제) — 버린다")
+                state["abandoned"] = f"{as_of} · 배치를 찾을 수 없음"
+                state.pop("quant", None)
+                _write_state(path, state)
+                continue
+            rc = b.request_counts
+            log(f"- {bid} · 상태 {b.processing_status} · 처리 {rc.processing}/성공 {rc.succeeded}/오류 {rc.errored}"
+                f"/만료 {rc.expired}/취소 {rc.canceled} · 주문 {state.get('created')}")
+            if b.processing_status != "ended":
+                log("  아직 처리 중 — 다음 차례에 다시 온다")
+                continue
         try:
             ok, fail = collect(cl, as_of, state)
         except ApiUnavailable as e:
@@ -2563,11 +2585,19 @@ def pickup(cl, as_of):
             state.pop("quant", None)
             _write_state(path, state)
             continue
+        prev = state.get("result") or {}
+        state["result"] = {"ok": prev.get("ok", 0) + ok, "fail": prev.get("fail", 0) + fail}
+        if state.get("repair"):
+            # 보정 배치를 주문했다 — 미룬 종목은 다음 회수가 마무리한다. 그때까지 '진행 중' 이라
+            # 같은 종목을 다시 주문하지 않는다. 정량은 다시 처리할 때 쓰므로 남긴다.
+            _write_state(path, state)
+            log(f"⏳ {bid} 일부 회수 · 성공 {ok}/실패 {fail} · 보정을 기다리는 종목 {len(state.get('deferred') or [])}개")
+            continue
         state["collected"] = as_of
-        state["result"] = {"ok": ok, "fail": fail}
-        state.pop("quant", None)              # 회수 뒤에는 필요 없다 — 저장소를 작게
+        for k in ("quant", "deferred", "repair_answers"):
+            state.pop(k, None)                # 회수 뒤에는 필요 없다 — 저장소를 작게
         _write_state(path, state)
-        log(f"✅ {bid} 회수 완료 · 성공 {ok}/실패 {fail}")
+        log(f"✅ {bid} 회수 완료 · 성공 {state['result']['ok']}/실패 {state['result']['fail']}")
         n += 1
     _housekeep_batches()
     return n
@@ -2604,7 +2634,7 @@ def poll(cl, batch_id, budget=None):
 
 # 배치 단가(USD / 1M 토큰). 배치는 정가의 절반이다(정가표는 generate_reports.PRICE). 캐시 읽기는
 # 입력의 10%, 캐시 쓰기는 125% 로 잡는다. 웹 검색은 1,000회에 $10. 회수 단계의 보정(영문 채우기 ·
-# 표현 교정)은 즉시 호출이라 정가다(batch=False). 청구서가 아니라 규모를 가늠하는 추정이다 —
+# 표현 교정)도 배치다(2026-10-08 — 전에는 즉시 호출 · 정가). 청구서가 아니라 규모를 가늠하는 추정이다 —
 # 실제 청구는 콘솔이 답이다.
 _PRICE = {"claude-opus-5": (2.5, 12.5), "claude-sonnet-5": (1.0, 5.0),
           "claude-opus-4-8": (2.5, 12.5), "claude-sonnet-4-6": (1.5, 7.5)}
@@ -2629,37 +2659,99 @@ def _cost_usd(model, u, batch=True):
     return tok * (1 if batch else 2) + u["search"] * 0.01
 
 
-class _Metered:
-    """회수 단계의 즉시 호출(영문 채우기 · 표현 교정)이 쓴 사용량을 모은다. messages.create 만 가로채고
-    나머지는 그대로 넘긴다. 이 호출들은 배치 사용량에 들지 않아 기록이 없었다 — 2026-10-03 하루에
-    다섯 번을 불렀는데 콘솔 청구와 맞춰 볼 숫자가 없었다."""
+class _Deferred(BaseException):
+    """보정 요청을 배치로 넘겼다 — 답이 오면 그 종목을 처음부터 다시 처리한다.
 
-    def __init__(self, cl):
-        self._cl = cl
-        self.usage = {}
+    Exception 이 아니라 BaseException 이다. 보정 호출은 'except Exception' 으로 감싸여 있어(호출이
+    실패해도 리포트는 쓴다), 보통 예외면 그 자리에서 '실패' 로 삼켜진다."""
+
+
+def _req_key(tk, params):
+    """보정 요청의 이름 — 배치의 custom_id 로 쓴다. 종목 + 요청 내용의 지문이라, 같은 종목을 다시
+    처리할 때 같은 요청이면 같은 이름이 나온다(코드가 바뀌어 요청이 달라지면 이름도 달라진다)."""
+    h = hashlib.sha1(json.dumps(params, ensure_ascii=False, sort_keys=True, default=str).encode("utf-8")).hexdigest()
+    return f"{tk}-{h[:24]}"
+
+
+class _RepairQueue:
+    """회수 단계의 보정(영문 채우기 · 표현 교정)을 배치로 보낸다(2026-10-08 사장 "무조건 batch API만").
+
+    보정 함수(fill_missing_en · check_report_text.repair)는 그대로 cl.messages.create(...) 를 부른다.
+    이 대리인이 그 요청을 받아
+      · 지난 보정 배치에서 받아 둔 답이 있으면 그 답을 돌려주고,
+      · 없으면 요청을 대기열에 적고 _Deferred 를 던진다 — 그 종목은 이번에 저장하지 않는다.
+    회수가 끝나면 대기열을 배치 하나로 주문한다. 다음 회수(30분마다)가 답을 받아 그 종목들을 처음부터
+    다시 처리한다 — 같은 배치 결과 · 같은 답이라 같은 요청이 같은 자리에서 다시 나온다. 영문 채우기와
+    표현 교정이 한 종목에 다 걸리면 두 번 오간다.
+
+    last=True 면 더 미루지 않는다 — 답이 없는 요청은 실패로 돌려준다(보정 없이 전처럼 처리한다).
+    받은 답이 실패면 보통 예외를 던진다 — 보정 함수를 부르는 쪽이 '호출 실패' 로 다룬다(전과 같다)."""
+
+    def __init__(self, answers=None, last=False):
+        self.answers = answers or {}
+        self.last = last
+        self.queue = {}
+        self.tk = None
         outer = self
 
         class _Msgs:
-            def create(self, *a, **kw):
-                resp = outer._cl.messages.create(*a, **kw)
-                u = _usage_of(resp)
-                if u:
-                    mdl = kw.get("model") or getattr(resp, "model", None) or "?"
-                    agg = outer.usage.setdefault(mdl, {"n": 0, "in": 0, "cache_w": 0, "cache_r": 0,
-                                                       "out": 0, "search": 0, "usd": 0.0})
-                    agg["n"] += 1
-                    for k in ("in", "cache_w", "cache_r", "out", "search"):
-                        agg[k] += u[k]
-                    agg["usd"] += _cost_usd(mdl, u, batch=False)
-                return resp
+            def create(self, **kw):
+                return outer._ask(kw)
 
-            def __getattr__(self, name):
-                return getattr(outer._cl.messages, name)
+            def stream(self, **kw):
+                raise RuntimeError("보정은 배치로만 보낸다")
 
         self.messages = _Msgs()
 
-    def __getattr__(self, name):
-        return getattr(self._cl, name)
+    def _ask(self, params):
+        key = _req_key(self.tk, params)
+        got = self.answers.get(key)
+        if got is None and not self.last:
+            self.queue[key] = params
+            raise _Deferred(key)
+        if got is None or got.get("error"):
+            raise RuntimeError(f"보정 배치 답 없음({(got or {}).get('error') or '대기 횟수 초과'})")
+        return types.SimpleNamespace(content=[types.SimpleNamespace(type="text", text=got.get("text") or "")],
+                                     model=got.get("model"), usage=None, stop_reason=got.get("stop_reason"))
+
+
+# 보정 배치를 몇 번까지 오가나. 한 종목은 영문 채우기 · 표현 교정 두 번이면 끝난다. 코드가 바뀌어
+# 요청 이름이 달라지는 경우에 대비한 한도다 — 넘기면 답이 없는 보정은 실패로 다루고 마무리한다.
+REPAIR_ROUNDS = 3
+
+
+def _answers_from(cl, batch_id, keys, state):
+    """보정 배치의 답을 {요청 이름: {text · model} 또는 {error}} 로. 사용량은 state["usage_repair"] 에 더한다."""
+    out = {}
+    agg_all = state.setdefault("usage_repair", {})
+    for r in cl.messages.batches.results(batch_id):
+        if r.result.type != "succeeded":
+            out[r.custom_id] = {"error": r.result.type}
+            continue
+        msg = r.result.message
+        text = "".join(getattr(b, "text", "") for b in (msg.content or []) if getattr(b, "type", "") == "text")
+        mdl = getattr(msg, "model", None) or "?"
+        out[r.custom_id] = {"text": text, "model": mdl, "stop_reason": getattr(msg, "stop_reason", None)}
+        u = _usage_of(msg)
+        if u:
+            agg = agg_all.setdefault(mdl, {"n": 0, "in": 0, "cache_w": 0, "cache_r": 0, "out": 0, "search": 0, "usd": 0.0})
+            agg["n"] += 1
+            for k in ("in", "cache_w", "cache_r", "out", "search"):
+                agg[k] += u[k]
+            agg["usd"] = round(agg["usd"] + _cost_usd(mdl, u), 6)
+    for k in keys:
+        out.setdefault(k, {"error": "결과 없음"})
+    return out
+
+
+def _submit_repairs(cl, queue, as_of):
+    """대기열을 배치 하나로 주문한다. 배치 ID 를 돌려준다."""
+    from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
+    from anthropic.types.messages.batch_create_params import Request
+    reqs = [Request(custom_id=k, params=MessageCreateParamsNonStreaming(**p)) for k, p in queue.items()]
+    b = cl.messages.batches.create(requests=reqs)
+    log(f"- 🔧 보정 {len(reqs)}건을 배치로 주문했다: {b.id} — 다음 회수에서 받아 마무리한다")
+    return b.id
 
 
 def collect(cl, as_of, state):
@@ -2671,6 +2763,10 @@ def collect(cl, as_of, state):
 
     사용량(토큰·검색 횟수)을 모델별로 합쳐 state["usage"] 에 남긴다. 리포트 한 장에
     얼마가 드는지를 추정이 아니라 실측으로 알기 위해서다.
+
+    보정(영문 채우기 · 표현 교정)이 필요한 종목은 저장하지 않고 미룬다(_RepairQueue). 그 요청을 배치로
+    주문해 state["repair"] 에 적고, 미룬 종목을 state["deferred"] 에 남긴다 — pickup 이 답을 받은 뒤
+    그 종목만 다시 처리한다(state["deferred"] 가 있으면 그 종목만 본다 · 사용량은 처음에 이미 셌다).
     """
     batch_id = state["batch_id"]
     data = g.load_stocks()
@@ -2678,13 +2774,18 @@ def collect(cl, as_of, state):
     now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    ok, fail, done, flagged = 0, 0, [], []
+    ok, fail, done, flagged, deferred = 0, 0, [], [], []
     usage = {}
     repair_off = False
-    mcl = _Metered(cl)      # 보정 호출(즉시 · 정가)의 사용량을 따로 센다
+    replay = set(state.get("deferred") or [])
+    rounds = len(state.get("repairs") or [])
+    mcl = _RepairQueue(state.get("repair_answers"), last=rounds >= REPAIR_ROUNDS)
     for result in cl.messages.batches.results(batch_id):
         tk = result.custom_id
-        if result.result.type == "succeeded":
+        if replay and tk not in replay:
+            continue                          # 지난 회수에서 끝낸 종목
+        mcl.tk = tk
+        if result.result.type == "succeeded" and not replay:
             u = _usage_of(result.result.message)
             if u:
                 mdl = state.get("models", {}).get(tk) or state.get("model", MODEL)
@@ -2814,6 +2915,9 @@ def collect(cl, as_of, state):
             S.clear_hold(tk)
             done.append(tk)
             ok += 1
+        except _Deferred:
+            deferred.append(tk)
+            log(f"  · ⏳ {tk} 보정을 배치로 넘긴다 — 답을 받은 뒤 저장한다")
         except ApiUnavailable:
             # 종목 문제가 아니다 — 아래 '파싱 실패' 로 세면 결제 문제 하나로
             # 종목이 묻힌다. 여기서 그대로 올려보내 회수 자체를 멈춘다.
@@ -2836,12 +2940,24 @@ def collect(cl, as_of, state):
                 f"· 출력 {a['out']:,} · 검색 {a['search']} → 약 ${a['usd']:.2f} "
                 f"(장당 ${a['usd'] / a['n']:.3f})")
         state["usage"] = usage
-    if mcl.usage:
-        for mdl, a in mcl.usage.items():
-            a["usd"] = round(a["usd"], 3)
-            log(f"💵 {mdl} 보정 {a['n']}회(즉시 호출 · 정가) · 입력 {a['in']:,}(캐시쓰기 {a['cache_w']:,}·읽기 {a['cache_r']:,}) "
-                f"· 출력 {a['out']:,} → 약 ${a['usd']:.2f}")
-        state["usage_sync"] = mcl.usage
+    for mdl, a in (state.get("usage_repair") or {}).items():
+        log(f"💵 {mdl} 보정 {a['n']}건(배치) · 입력 {a['in']:,} · 출력 {a['out']:,} → 약 ${a['usd']:.3f}")
+    state["deferred"] = deferred
+    if mcl.queue:
+        try:
+            rb = _submit_repairs(cl, mcl.queue, as_of)
+        except Exception as e:
+            if _api_unavailable(e):
+                raise ApiUnavailable(f"{type(e).__name__}: {str(e)[:200]}") from e
+            # 주문이 거절됐다(요청 모양 등) — 미룬 종목은 보정 없이 마무리한다(전에 호출이 실패했을 때와 같다).
+            log(f"  · (보정 배치를 주문하지 못했다: {type(e).__name__}: {e} — 보정 없이 마무리한다)")
+            answers = state.setdefault("repair_answers", {})
+            for k in mcl.queue:
+                answers[k] = {"error": f"주문 실패 {type(e).__name__}"}
+            state.setdefault("repairs", []).append(f"주문 실패 {as_of}")
+            ok2, fail2 = collect(cl, as_of, state)
+            return ok + ok2, fail + fail2
+        state["repair"] = {"batch_id": rb, "created": as_of, "keys": list(mcl.queue)}
     return ok, fail
 
 
@@ -2951,10 +3067,15 @@ def recover(cl, as_of, batch_id=""):
     _write_state(path, state)
     log(f"- 상태 재구성 완료(quant {len(quants)}) → 회수 시작")
     ok, fail = collect(cl, as_of, state)
-    state["collected"] = as_of
     state["result"] = {"ok": ok, "fail": fail}
-    state.pop("quant", None)
-    _write_state(path, state)
+    if state.get("repair"):
+        _write_state(path, state)             # 보정을 기다리는 종목은 다음 회수(pickup)가 마무리한다
+        log(f"⏳ 보정을 기다리는 종목 {len(state.get('deferred') or [])}개 — 다음 회수가 마무리한다")
+    else:
+        state["collected"] = as_of
+        for k in ("quant", "deferred", "repair_answers"):
+            state.pop(k, None)
+        _write_state(path, state)
     if unavailable:
         _die_dart(unavailable)
 
@@ -3025,6 +3146,14 @@ def main():
         log("❌ ANTHROPIC_API_KEY 없음")
         sys.exit(1)
     cl = anthropic.Anthropic(api_key=key)
+
+    # 즉시 호출 창구를 막는다 — 리포트는 배치로만 부른다(2026-10-08 사장 "무조건 batch API만 · 모닝브리핑
+    # 제외"). 회수 단계의 보정도 _RepairQueue 로 배치에 실린다. 실수로 부르면 그 자리에서 멈춘다.
+    def _blocked(*_a, **_kw):
+        raise RuntimeError("리포트는 Batch API 로만 부른다 — messages.create 가 아니라 messages.batches.create")
+
+    cl.messages.create = _blocked
+    cl.messages.stream = _blocked
 
     if mode == "submit":
         r = submit(cl, as_of)

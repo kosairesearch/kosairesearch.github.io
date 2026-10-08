@@ -120,7 +120,8 @@ concurrency:
 jobs:
   report:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # 보고서는 배치로 쓴다(2026-10-08 · 요금 절반). 배치를 최대 50분 기다리고, 넘기면 취소한다.
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v4
 

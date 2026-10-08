@@ -7,7 +7,11 @@ data/sector_map.json {ticker: 카테고리} 캐시를 만든다.
 한 번 분류하면 캐시를 재사용하고, 캐시에 없는(신규 상장) 종목만 추가 분류한다.
 (CLASSIFY_FORCE=1 이면 전 종목 재분류)
 
-비용: 웹검색 없음, 짧은 출력 → 매우 저렴(Haiku). 약 40종목/요청.
+비용: 웹검색 없음, 짧은 출력 → 매우 저렴. 약 40종목/요청.
+
+Batch API 로만 부른다(2026-10-08 사장 "무조건 batch API만 · 모닝브리핑 제외"). 즉시 호출 창구는 막아 둔다.
+배치가 CLASSIFY_BATCH_WAIT_SEC(기본 30분) 안에 끝나지 않으면 취소한다 — 처리되지 않은 요청은 청구되지
+않고, 캐시에 없는 종목은 다음 실행이 다시 분류한다.
 """
 import os
 import re
@@ -25,6 +29,7 @@ CACHE = ROOT / "data" / "sector_map.json"
 MODEL = os.getenv("CLASSIFY_MODEL", "claude-sonnet-4-6")
 FORCE = os.getenv("CLASSIFY_FORCE", "") == "1"
 BATCH = int(os.getenv("CLASSIFY_BATCH", "40"))
+WAIT = int(os.getenv("CLASSIFY_BATCH_WAIT_SEC", "1800"))
 
 # 고정 카테고리(프론트 필터와 동일하게 유지). 이 목록에서만 선택.
 CATEGORIES = [
@@ -116,15 +121,40 @@ def parse_json(text):
             return {}
 
 
-def classify_chunk(client, chunk):
-    msg = client.messages.create(
-        model=MODEL,
-        max_tokens=3000,
-        system=SYSTEM,
-        messages=[{"role": "user", "content": build_prompt(chunk)}],
-    )
-    text = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
-    return parse_json(text)
+def classify_batch(client, chunks):
+    """묶음마다 요청 하나로 배치 하나를 주문하고 {묶음 번호: 답 JSON} 을 돌려준다.
+
+    WAIT 안에 끝나지 않으면 취소한다. 처리되지 않은 요청은 청구되지 않는다 — 그 사이 끝난 답은 쓴다."""
+    reqs = [{"custom_id": f"c{i}", "params": {
+                "model": MODEL, "max_tokens": 3000, "system": SYSTEM,
+                "messages": [{"role": "user", "content": build_prompt(chunk)}]}}
+            for i, chunk in enumerate(chunks)]
+    b = client.messages.batches.create(requests=reqs)
+    log(f"- 배치 주문 {b.id} ({len(reqs)}건) — 최대 {WAIT // 60}분 기다린다")
+    waited = 0
+    while b.processing_status != "ended":
+        if waited >= WAIT:
+            log("- 시간 안에 끝나지 않아 취소한다(처리 전 요청은 청구되지 않는다) — 남은 종목은 다음 실행이 분류한다")
+            client.messages.batches.cancel(b.id)
+            for _ in range(18):
+                time.sleep(10)
+                b = client.messages.batches.retrieve(b.id)
+                if b.processing_status == "ended":
+                    break
+            if b.processing_status != "ended":
+                return {}
+            break
+        time.sleep(30)
+        waited += 30
+        b = client.messages.batches.retrieve(b.id)
+    out = {}
+    for r in client.messages.batches.results(b.id):
+        if r.result.type != "succeeded":
+            log(f"  · ⚠️ {r.custom_id} 결과 {r.result.type}")
+            continue
+        text = "".join(getattr(x, "text", "") for x in r.result.message.content if getattr(x, "type", "") == "text")
+        out[int(r.custom_id[1:])] = parse_json(text)
+    return out
 
 
 def main():
@@ -134,6 +164,12 @@ def main():
         sys.exit(1)
     client = anthropic.Anthropic(api_key=key)
 
+    def _blocked(*_a, **_kw):
+        raise RuntimeError("업종 분류는 Batch API 로만 부른다 — messages.batches.create 를 쓸 것")
+
+    client.messages.create = _blocked
+    client.messages.stream = _blocked
+
     stocks = load_stocks()
     cache = load_cache()
     todo = [s for s in stocks if FORCE or s["ticker"] not in cache]
@@ -142,19 +178,12 @@ def main():
         log("- 분류할 신규 종목 없음(캐시 최신).")
         return
 
+    chunks = [todo[i:i + BATCH] for i in range(0, len(todo), BATCH)]
+    answers = classify_batch(client, chunks)
     done = 0
-    for i in range(0, len(todo), BATCH):
-        chunk = todo[i:i + BATCH]
-        try:
-            res = classify_chunk(client, chunk)
-        except Exception as e:
-            log(f"  · ⚠️ 배치 {i//BATCH+1} 오류: {type(e).__name__}: {e} — 재시도")
-            time.sleep(3)
-            try:
-                res = classify_chunk(client, chunk)
-            except Exception as e2:
-                log(f"  · ❌ 재시도 실패: {e2}")
-                continue
+    for n, chunk in enumerate(chunks):
+        i = n * BATCH
+        res = answers.get(n)
         if not isinstance(res, dict):
             res = {}
         for s in chunk:

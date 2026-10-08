@@ -115,6 +115,9 @@ run "리포트 파이프라인" python3 scripts/tests/reports_pipeline_test.py
 # 워치독 동기화 때만 고쳐진다). 대상 판단이 리포트 파일의 날짜도 보는지, 사용량이 남지 않던 생성기
 # (옛 생성기 · 신규 상장용 배치)가 기록하는지, 80분을 넘긴 배치를 다음 실행이 먼저 받는지 본다.
 run "리포트 주문"   python3 scripts/tests/report_orders_test.py
+# 2026-10-08 사장 "무조건 batch API만 · 모닝브리핑 제외". 즉시 호출(값 두 배)이 예약 작업 둘(신규 상장의 업종 분류 ·
+# 마케팅 주간 보고)과 리포트 회수 단계 보정에 남아 있었다. 즉시 호출 자리가 새로 생기거나, 옛 스크립트에 예약이 걸리면 여기서 걸린다.
+run "배치 전용"     python3 scripts/tests/batch_only_test.py
 # 분기 창·TTM 롤포워드 — 시즌마다 최신 분기가 표에 들어오는지.
 run "분기 창"       python3 scripts/test_quant_quarters.py
 # 시세 원본(FinanceData KRX 캐시 CSV)이 2026-09-08 부터 404 가 됐는데, 수집기가
