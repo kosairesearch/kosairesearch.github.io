@@ -67,6 +67,11 @@ jobs:
           REPORT_MODEL_REST: 'claude-sonnet-5'
           REPORT_MODEL_TOP_N: '300'
           REPORT_TICKERS: ${{ steps.filings.outputs.new_tickers }}
+          # 정정 공시만 나온 종목 — 숫자를 새로 받아 저장된 리포트와 견주고, 같으면 다시 쓰지 않는다.
+          REPORT_CORRECTIONS: ${{ steps.filings.outputs.corrections }}
+          # 공시로 다시 쓰는 리포트는 늘 새로 받은 숫자로 쓴다. 저장된 숫자를 재사용하면 정정 · 이른 분기
+          # 공시의 숫자가 빠진 채 다시 써진다(2026-10-07 정정 14개 중 13개가 그랬다).
+          REPORT_NO_REUSE: '1'
           BATCH_MAX_WAIT_SEC: ${{ vars.BATCH_MAX_WAIT_SEC || '18000' }}
         run: |
           set -o pipefail

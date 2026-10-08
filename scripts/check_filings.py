@@ -12,6 +12,11 @@ GitHub Actions output(new_tickers, count)으로 내보낸다.
   · 생성에 성공하면 reportDate 가 갱신되어 자동으로 대상에서 빠진다
   · 생성 실패/타임아웃 종목은 reportDate 가 그대로라 다음 실행에서 자동 재시도(누락 방지)
 
+정정 공시(보고서명 앞에 '[기재정정]' · '[첨부정정]' · '[첨부추가]' 같은 꼬리표)만 새로 나온 종목은
+따로 알린다(corrections='종목:접수일,…'). 생성기가 숫자를 새로 받아 저장된 리포트와 견주고, 같으면
+다시 쓰지 않고 그 접수일을 data/reports_v2_checked/ 에 적는다 — 여기서 그 날짜까지의 공시는 반영된
+것으로 본다(2026-10-08 사장 승인 · 10월 7일 정정 공시 14개 종목을 같은 숫자로 다시 써 $3.97 이 나갔다).
+
 대량 공시(실적 시즌) 대비, 1회 실행당 시총 상위순으로 MAX_PER_RUN 개만 내보내
 여러 번에 나눠 백로그를 비운다(분산 처리).
 """
@@ -41,6 +46,12 @@ MAX_PER_RUN = int(os.getenv("FILINGS_MAX_PER_RUN", "120") or "0")
 # 조회 창. 백로그를 다 비울 때까지 공시가 창 안에 남아 있어야 하므로 넉넉히.
 LOOKBACK = int(os.getenv("FILINGS_LOOKBACK_DAYS", "30"))
 KEYWORDS = ("분기보고서", "반기보고서", "사업보고서")
+
+
+def is_amendment(report_nm):
+    """이미 낸 보고서를 고친 공시인가. DART 는 '[기재정정]반기보고서 (2026.06)' 처럼 보고서명 앞에
+    꼬리표를 붙인다(기재정정 · 첨부정정 · 첨부추가). 처음 내는 보고서에는 꼬리표가 없다."""
+    return str(report_nm or "").lstrip().startswith("[")
 
 
 def _load_json_blob(path):
@@ -103,15 +114,20 @@ def main():
 
     # ticker -> 이미 쓴 리포트의 날짜(YYYYMMDD) — 색인과 리포트 파일 중 늦은 쪽. 회수 · 백필은 파일만
     # 커밋하고 색인은 워치독 동기화 때 고쳐지므로, 색인만 보면 방금 만든 종목을 같은 공시로 또 주문한다.
-    known, by_file = {}, set()
+    known, by_file, by_check, checked = {}, set(), set(), {}
 
     def have(sc):
         if sc not in known:
             known[sc] = max(reps.get(sc, ""), (S.file_report_date(sc) or "").replace("-", ""))
         return known[sc]
 
-    # ticker -> 가장 최신 공시 접수일(YYYYMMDD)
-    cand = {}
+    def checked_upto(sc):
+        if sc not in checked:
+            checked[sc] = S.checked_date(sc)
+        return checked[sc]
+
+    # ticker -> 가장 최신 공시 접수일(YYYYMMDD) · 처음 내는 보고서가 하나라도 있는 종목
+    cand, orig = {}, set()
     if df is not None and not getattr(df, "empty", True):
         for _, r in df.iterrows():
             sc = str(r.get("stock_code", "")).strip()
@@ -126,11 +142,20 @@ def main():
                 if fdate > reps.get(sc, ""):
                     by_file.add(sc)
                 continue
+            # 정정 공시를 견줘 보니 숫자가 같았던 종목 — 그 접수일까지의 공시는 반영된 것으로 본다.
+            if fdate <= checked_upto(sc):
+                by_check.add(sc)
+                continue
+            if not is_amendment(nm):
+                orig.add(sc)
             if fdate > cand.get(sc, ""):
                 cand[sc] = fdate
 
     if by_file:
         print(f"  · 색인보다 새 리포트 파일이 있어 뺀 종목 {len(by_file)}개(색인 동기화 전): {','.join(sorted(by_file)[:20])}")
+    by_check -= set(cand)
+    if by_check:
+        print(f"  · 정정 공시를 견줘 숫자가 같았던 종목 {len(by_check)}개는 뺀다: {','.join(sorted(by_check)[:20])}")
 
     # 이미 주문이 들어가 결과를 기다리는 종목은 뺀다 — 다시 주문하면 돈만 두 번 나간다.
     inflight = S.inflight_tickers()
@@ -155,13 +180,17 @@ def main():
     total = len(ranked)
     picked = ranked[:MAX_PER_RUN] if MAX_PER_RUN > 0 else ranked
 
+    corr = [sc for sc in picked if sc not in orig]
     for sc in picked:
-        print(f"  · 갱신 대상: {sc} {uni[sc][0]} — 공시 {cand[sc]} (기존 리포트 {have(sc) or '없음'})")
+        print(f"  · 갱신 대상: {sc} {uni[sc][0]} — 공시 {cand[sc]} (기존 리포트 {have(sc) or '없음'})"
+              + (" · 정정 공시 — 숫자가 바뀐 경우에만 다시 쓴다" if sc in corr else ""))
 
     backlog = total - len(picked)
     print(f"\n📋 {start}~{end} 정기보고서 기준 갱신 대상 {total}개 중 이번 실행 {len(picked)}개"
+          + (f"(정정 공시만 {len(corr)}개)" if corr else "")
           + (f" · 남은 백로그 {backlog}개(다음 실행에서 이어서)" if backlog > 0 else ""))
-    gh_output(new_tickers=",".join(picked), count=len(picked))
+    gh_output(new_tickers=",".join(picked), count=len(picked),
+              corrections=",".join(f"{sc}:{cand[sc]}" for sc in corr))
 
 
 if __name__ == "__main__":
