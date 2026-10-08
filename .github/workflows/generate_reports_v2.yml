@@ -104,7 +104,8 @@ jobs:
           # 부분 결과는 그대로 커밋해야 하므로 여기서 죽이지는 않고, 코드를 남겨
           # 커밋 뒤에 잡을 실패로 표시한다.
           set +e
-          python scripts/generate_reports_v2.py "${{ inputs.mode }}" 2>&1 | tee data/reports_v2_run.log
+          # pykrx 는 한국거래소에 로그인할 때 아이디를 찍는다 — 저장소에 남는 기록에서는 가린다(2026-10-08).
+          python scripts/generate_reports_v2.py "${{ inputs.mode }}" 2>&1 | sed -u 's/\(로그인 ID: \).*/\1(가림)/' | tee data/reports_v2_run.log
           code=${PIPESTATUS[0]}
           echo "code=$code" >> "$GITHUB_OUTPUT"
           echo "스크립트 종료 코드: $code"
