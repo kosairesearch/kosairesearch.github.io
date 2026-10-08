@@ -483,3 +483,102 @@
 ❌ 3차까지 했는데 4개가 남았다: 반도체, 보험, 식음료, 화장품
    그 업종은 지난번 글이 그대로 걸려 있다.
    워치독이 하루 뒤에 이 목록만 다시 만든다.
+## generate_sectors 시작 — mode='auto' · MODEL=claude-sonnet-5 · FORCE=False
+- 지난번에 걸러진 4개를 다시 만든다: 반도체, 보험, 식음료, 화장품
+## 업종 분석 batch 제출 — 대상 4개 / 전체 31개 · 모델 claude-sonnet-5
+  · 준비 반도체 (171종목)
+  · 준비 보험 (12종목)
+  · 준비 식음료 (97종목)
+  · 준비 화장품 (37종목)
+- ✅ 배치 제출: msgbatch_01Lia8QwSqb1tFYgL89jrBwp (4건)
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · in_progress · 처리 4/성공 0/오류 0
+  · ended · 처리 0/성공 4/오류 0
+  · ⚠️ 화장품 불완전 — 건너뜀 (출처 0건(웹 검색 인용 없음))
+  · ⚠️ 반도체 불완전 — 건너뜀 (상장 종목 수(171) 본문에 박힘; 글자 결함 hanja(risks) '向')
+
+■ 사용량 — 입력 147,134 토큰 · 출력 20,552 토큰 · 웹 검색 9회
+  대략 $0.34 (Batch 요금 · claude-sonnet-5 · 2026-09 요금표 기준 추정)
+
+✅ 회수 완료 · 성공 2/실패 2 · 총 30개 → data/sectors.js
+
+■ 1차에서 2개가 걸러졌다 — 그것만 다시 만든다: 반도체, 화장품
+- 지난번에 걸러진 2개를 다시 만든다: 반도체, 화장품
+## 업종 분석 batch 제출 — 대상 2개 / 전체 31개 · 모델 claude-sonnet-5
+  · 준비 반도체 (171종목)
+  · 준비 화장품 (37종목)
+- ✅ 배치 제출: msgbatch_016kwZ4JBGfUGQk7nAGYVrtD (2건)
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · ended · 처리 0/성공 2/오류 0
+  · ⚠️ 화장품 불완전 — 건너뜀 (출처 0건(웹 검색 인용 없음))
+  · ⚠️ 반도체 불완전 — 건너뜀 (상장 종목 수(171) 본문에 박힘; 출처 0건(웹 검색 인용 없음))
+
+■ 사용량 — 입력 55,762 토큰 · 출력 8,683 토큰 · 웹 검색 4회
+  대략 $0.14 (Batch 요금 · claude-sonnet-5 · 2026-09 요금표 기준 추정)
+
+✅ 회수 완료 · 성공 0/실패 2 · 총 30개 → data/sectors.js
+
+■ 2차에서 2개가 걸러졌다 — 그것만 다시 만든다: 반도체, 화장품
+- 지난번에 걸러진 2개를 다시 만든다: 반도체, 화장품
+## 업종 분석 batch 제출 — 대상 2개 / 전체 31개 · 모델 claude-sonnet-5
+  · 준비 반도체 (171종목)
+  · 준비 화장품 (37종목)
+- ✅ 배치 제출: msgbatch_01LtnBCut8BihoXTZhqig6Fs (2건)
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · in_progress · 처리 2/성공 0/오류 0
+  · ended · 처리 0/성공 2/오류 0
+  · 화장품 출처 0건 — 마지막 회차라 저장한다(화면은 '웹 검색 참고' 를 빼고 보인다)
+
+■ 사용량 — 입력 58,474 토큰 · 출력 9,736 토큰 · 웹 검색 4회
+  대략 $0.15 (Batch 요금 · claude-sonnet-5 · 2026-09 요금표 기준 추정)
+
+✅ 회수 완료 · 성공 2/실패 0 · 총 30개 → data/sectors.js
+
+■ 3차에서 전부 저장됐다.

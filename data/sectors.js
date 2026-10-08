@@ -1,6 +1,6 @@
 // KOS ai — 업종 AI 분석 (자동 생성). 직접 수정 금지.
 window.KOS_SECTORS = {
-  "lastUpdated": "2026-10-08 19:06",
+  "lastUpdated": "2026-10-08 19:52",
   "model": "claude-sonnet-5",
   "sectors": {
     "유통·소비재": {
@@ -443,67 +443,65 @@ window.KOS_SECTORS = {
     },
     "식음료": {
       "lead": {
-        "ko": "내수 성장 정체 속에서도 K-라면과 K-과자를 앞세운 수출 확대가 업종 전체의 실적 차별화를 이끌고 있는 국면이다.",
-        "en": "Even as domestic demand growth stalls, expanding exports led by K-ramen and K-snacks are driving performance divergence across the sector."
+        "ko": "K-푸드 수출 호조와 원가·환율 변수가 교차하는 가운데 내수 방어력과 해외 성장성으로 종목별 차별화가 진행 중인 업종이다.",
+        "en": "A sector navigating a crosscurrent of robust K-food export growth and raw-material/currency swings, with stock-level differentiation driven by domestic defensiveness versus overseas growth potential."
       },
       "overview": {
-        "ko": "식음료 업종은 라면, 제과, 조미료·가공식품, 주류, 담배, 음료 등 필수소비재를 아우르는 방어적 성격의 산업으로, 한국 증시에서는 종목 수가 많지만 개별 시가총액은 상대적으로 작아 시장 전체 비중은 크지 않은 업종에 속한다. KT&G는 담배와 인삼 사업을 기반으로 업종 내 최대 시가총액을 유지하고 있으며, 삼양식품은 불닭 브랜드의 해외 확산에 힘입어 최근 시가총액이 크게 늘어난 대표적 사례다. 오리온, CJ제일제당, 농심 등 전통 식품 대기업들이 그 뒤를 잇고 있으며, 동서, 동원산업, 롯데웰푸드, 오뚜기, 하이트진로, 롯데칠성, 빙그레 등이 각 세부 카테고리를 대표한다. 내수 소비 둔화와 원재료비 부담이라는 공통 과제를 안고 있지만, 최근 몇 년간 수출을 통한 성장 스토리가 업종 전반의 투자 관심을 재조명시키고 있다. 필수소비재 특성상 경기 방어적 성격이 강한 반면, 개별 브랜드의 해외 흥행 여부에 따라 종목별 실적 차별화가 뚜렷하게 나타나고 있다.",
-        "en": "The food and beverage sector encompasses defensive consumer staples spanning instant noodles, confectionery, seasonings and processed foods, alcoholic beverages, tobacco, and beverages; within the Korean equity market it comprises a large number of listed names but relatively modest individual market capitalizations, keeping its overall market weight limited. KT&G maintains the largest market capitalization in the sector on the back of its tobacco and ginseng businesses, while Samyang Foods stands out as a case where market capitalization has surged recently, driven by the global spread of its Buldak brand. Traditional food conglomerates such as Orion, CJ CheilJedang, and Nongshim follow behind, with Dongsuh, Dongwon Industries, Lotte Wellfood, Ottogi, Hite Jinro, Lotte Chilsung, and Binggrae each representing distinct sub-categories. While the sector shares common challenges of slowing domestic consumption and raw material cost burdens, an export-driven growth narrative over recent years has renewed investor attention across the group. Despite the defensive nature typical of consumer staples, performance is increasingly differentiated at the individual stock level depending on the overseas success of specific brands."
+        "ko": "식음료 업종은 라면, 제과, 유가공, 주류, 조미료 등 생활 필수 소비재를 아우르며 경기 변동에 상대적으로 둔감한 방어적 성격을 지닌다. 코스피·코스닥 전체 시가총액에서 차지하는 비중은 크지 않지만 KT&G, 삼양식품, 오리온, CJ제일제당 등 내수 대표주를 다수 포함하고 있어 지수 내 상징성은 작지 않다. 최근 몇 년간 라면과 과자류를 중심으로 한 K-푸드 수출 확대가 업종 전반의 성장 스토리를 재편하는 핵심 변수로 부상했다. 전통적으로 내수 중심 성장에 머물렀던 업종이 해외 매출 비중 확대를 통해 밸류에이션 재평가 국면을 맞고 있다는 점이 특징적이다. 다만 곡물, 원당, 나프타 등 원자재 대부분을 해외 수입에 의존해 환율과 국제 원자재 가격 변동에 수익성이 민감하게 반응하는 구조다.",
+        "en": "The food and beverage sector spans daily consumer staples such as instant noodles, confectionery, dairy, alcoholic beverages, and seasonings, carrying a defensive profile relatively insulated from economic cycles. While its share of total KOSPI/KOSDAQ market capitalization is modest, the sector includes prominent domestic names such as KT&G, Samyang Foods, Orion, and CJ CheilJedang, giving it outsized symbolic weight within the index. In recent years, the expansion of K-food exports—led by instant noodles and snacks—has emerged as the central variable reshaping the sector's growth narrative. Notably, a segment traditionally anchored in domestic-led growth is now undergoing a valuation re-rating as overseas sales contribution expands. However, heavy reliance on imported raw materials such as grains, raw sugar, and naphtha leaves profitability highly sensitive to currency and global commodity price swings."
       },
       "structure": {
-        "ko": "밸류체인은 크게 원재료 조달·가공, 제조·브랜드, 국내외 유통 채널의 세 단계로 나뉜다. 라면·과자 부문에서는 삼양식품과 농심이 해외 수출 비중을 빠르게 늘리고 있으며, 특히 삼양식품은 밀양·원주 등 국내 생산기지에서 전량 생산해 해외로 수출하는 구조를 통해 밀양과 원주 지역에서 라면을 수출하는 기업은 삼양식품이 사실상 유일하다는 지위를 확보하고 있다. CJ제일제당은 가공식품과 바이오·소재 사업을 겸영하며 다각화된 사업구조를 보유하고, 오뚜기는 조미료·소스와 즉석밥 등 가정간편식 중심의 포트폴리오를 갖고 있다. 제과 부문은 오리온과 롯데웰푸드가 국내외에서 경쟁하며, 음료·주류는 하이트진로와 롯데칠성이, 유업·냉동간편식은 빙그레와 동원산업이 각각 담당하는 구조다. KT&G는 담배 전매 성격의 사업 특성상 업종 내에서 독립적인 위상을 지니며 다른 식품 종목들과는 사업모델이 이질적이다.",
-        "en": "The value chain broadly divides into three stages: raw material sourcing and processing, manufacturing and branding, and domestic/overseas distribution channels. In instant noodles and snacks, Samyang Foods and Nongshim are rapidly expanding export shares, with Samyang Foods in particular manufacturing entirely at domestic plants in Miryang and Wonju for overseas shipment, a structure through which it has secured a position where Samyang Foods is effectively the sole company exporting ramen from the Miryang and Wonju regions. CJ CheilJedang holds a diversified business structure combining processed foods with bio and materials operations, while Ottogi maintains a portfolio centered on seasonings, sauces, and home meal replacement products such as instant rice. In confectionery, Orion and Lotte Wellfood compete both domestically and abroad, while Hite Jinro and Lotte Chilsung cover beverages and alcohol, and Binggrae and Dongwon Industries handle dairy and frozen convenience foods respectively. KT&G occupies a distinct position within the sector given its tobacco monopoly-derived business characteristics, which differ structurally from other food names."
+        "ko": "밸류체인은 크게 원재료 조달, 가공·제조, 브랜드·유통으로 구분되며 각 단계에서 대표 기업의 포지셔닝이 뚜렷하다. 라면·스낵 부문은 농심과 삼양식품, 오뚜기가 경쟁하며 삼양식품은 불닭 시리즈를 앞세운 수출 확대로 존재감을 키웠다. 종합식품·가공식품군은 CJ제일제당과 동원산업, 롯데웰푸드가 바이오·소재 사업까지 포괄하는 다각화된 사업구조를 갖추고 있다. 음료·주류 부문은 롯데칠성과 하이트진로가, 유제품은 빙그레가 대표적이며 KT&G는 담배 본업에 인삼류 사업을 더해 업종 내 최대 시가총액을 보유하고 있다. 동서는 커피 프림·믹스 중심의 특화 사업자로 분류된다. 업종 내 상위 소수 종목에 시가총액이 집중되는 경향이 있어 개별 종목의 수출 성과와 가격 전가력이 업종 전반의 체감 경기를 좌우한다.",
+        "en": "The value chain divides broadly into raw material sourcing, processing/manufacturing, and brand/distribution, with clear positioning among leading players at each stage. In instant noodles and snacks, Nongshim, Samyang Foods, and Ottogi compete, with Samyang Foods notably expanding its export presence through its Buldak spicy noodle lineup. Diversified food conglomerates such as CJ CheilJedang, Dongwon Industries, and Lotte Wellfood operate business structures extending into bio and materials segments. In beverages and alcohol, Lotte Chilsung and Hite Jinro lead, while Binggrae represents dairy, and KT&G holds the sector's largest market capitalization through its core tobacco business supplemented by ginseng products. Dongsuh is classified as a specialized player centered on coffee creamer and mix products. Market capitalization tends to concentrate among a small number of top names, meaning individual export performance and pricing power significantly shape the sector's overall market sentiment."
       },
       "trends": {
-        "ko": "최근 업황의 핵심 키워드는 K-푸드 수출 확대다. 2026년 상반기 K푸드플러스 수출액이 전년 동기 대비 4.1% 증가한 70억 5000만달러를 기록했고, 라면은 상반기에 10억달러 수출실적을 달성했다. 특히 삼양식품은 2분기 연결기준 매출 7703억원, 영업이익 1762억원을 기록했다고 공시했으며 전년 동기와 비교해 매출은 39.3%, 영업이익은 46.7% 증가했다. 해외 매출 비중이 크게 높아지면서 2분기 영업이익률은 22.9%를 기록하며 지난해 1분기 이후 6분기 연속으로 20%대를 유지했는데, 고수익 권역 중심의 수출 확대와 생산 효율성 제고, 고환율 효과 등이 맞물린 결과로 분석된다. 농심 역시 해외 수요에 힘입어 올해 2분기 연결기준 매출액 9561억원으로 전년 동기 대비 10.2% 증가하는 등 라면 업체 전반의 수출 실적이 개선되는 흐름을 보이고 있다. 반면 국내에서 생산하는 냉동김밥과 만두 등은 운송과 보관 과정에서 일정한 온도를 유지해야 해 상온 제품보다 물류비 부담이 크다는 점과 국가별 식품첨가물과 원재료 표시 기준, 통관·검역 규정에 맞춰 제품을 별도로 설계해야 하는 점이 수출 확대의 제약 요인으로 지목되고 있어 라면 외 품목의 수출 다변화는 여전히 과제로 남아 있다.",
-        "en": "The key theme in recent industry conditions is the expansion of K-food exports. K-Food Plus exports in the first half of 2026 rose 4.1% year-on-year to reach USD 7.05 billion, with ramen achieving USD 1 billion in export performance during the half. Samyang Foods in particular reported second-quarter consolidated revenue of KRW 770.3 billion and operating profit of KRW 176.2 billion, up 39.3% and 46.7% year-on-year respectively. With overseas revenue share rising sharply, the second-quarter operating margin reached 22.9%, maintaining a 20%-plus level for six consecutive quarters since the first quarter of the prior year, a result attributed to export expansion centered on high-margin regions, improved production efficiency, and favorable exchange rate effects. Nongshim also saw improved export performance driven by overseas demand, with second-quarter consolidated revenue of KRW 956.1 billion, up 10.2% year-on-year, reflecting a broader improvement trend among ramen makers. On the other hand, constraints on broader export diversification remain, as domestically produced frozen kimbap and dumplings require constant temperature control during transport and storage, incurring higher logistics costs than ambient-temperature products, and products must be separately designed to meet country-specific food additive and ingredient labeling standards as well as customs and quarantine regulations."
+        "ko": "2026년 상반기 농식품 수출은 역대 최고치를 경신했으며 라면 수출액이 전년 동기 대비 큰 폭으로 증가하며 수출 증가세를 견인했다. 농림축산식품부가 발표한 2026년 상반기 K-푸드 플러스 수출 동향에 따르면 올해 상반기 농식품 수출액은 53억 8190만 달러로 지난해 같은 기간보다 5% 가량 증가하며 역대 최대 실적을 기록했고, 이 가운데 라면 수출액은 9억 3540만 달러로 27.9% 늘었다. 2분기 실적에서도 이러한 수출 호조가 반영돼 삼양식품과 오리온은 두 자릿수 매출·이익 증가를 기록했고 롯데웰푸드와 빙그레는 영업이익이 전년 동기 대비 크게 늘었다. 반면 상반기 내내 포장재의 원료가 되는 나프타 가격 급등과 높은 환율 등으로 수입 가격이 급등하면서 매출에서 차지하는 원가율이 지난 2022년 이후 처음으로 상승 반전하는 등 원가 부담이 업종 전반의 수익성을 압박했다. 이에 따라 CJ제일제당과 롯데칠성은 매출 성장에도 영업이익이 전년 동기 대비 감소하는 모습을 보였다. 하반기 들어서는 잠잠하던 식품 가격이 하반기 들어 다시 움직이며 식품업체들의 가격 인상이 이어지는 가운데 해태제과 등이 여러 브랜드의 가격을 인상하는 등 비용 전가가 재개되는 흐름이 포착된다.",
+        "en": "South Korea's agri-food exports hit a record high in the first half of 2026, with instant noodle exports posting sharp year-on-year growth that drove the overall export increase. According to the Ministry of Agriculture, Food and Rural Affairs, first-half agri-food exports reached a record high with instant noodles rising significantly year-on-year. These export tailwinds were reflected in second-quarter results, with Samyang Foods and Orion posting double-digit growth in both sales and profit, while Lotte Wellfood and Binggrae recorded sharp year-on-year increases in operating income. Conversely, cost pressures weighed on sector-wide profitability throughout the first half, as surging naphtha prices and elevated exchange rates drove import costs higher, pushing the cost-of-sales ratio to its first year-on-year increase since 2022. As a result, CJ CheilJedang and Lotte Chilsung saw operating profit decline year-on-year despite revenue growth. Entering the second half, a renewed trend of cost pass-through has emerged, with previously stable food prices beginning to move again and several manufacturers implementing price increases across multiple brands."
       },
       "outlook": {
-        "ko": "향후 업종의 핵심 관전 포인트는 라면·과자 중심의 수출 성장세가 다른 카테고리로 얼마나 확산되느냐에 달려 있다. K-라면의 경우 이미 중국·미국 중심의 수출 구조를 넘어 유럽, 중동, 동남아, CIS까지 시장 저변을 넓히고 있다는 점에서 지역 다변화가 이어질 가능성이 있으며, 오뚜기 등도 현재 65개국에 수출 중인 라면을 올해 70개국까지 확대할 계획을 밝히는 등 개별 기업 차원의 해외 채널 확대 시도가 계속되고 있다. 삼양식품의 경우 생산능력 확충과 유럽 법인 설립을 통한 현지 유통망 직접 관리 체계 구축이 향후 실적의 지속가능성을 가늠하는 변수가 될 것으로 보인다. 다만 미국 관세 이슈, 국가별 식품 규제, 환율 변동, 특정 히트상품 의존도는 언제든 성장률의 속도를 흔들 수 있다는 지적처럼 대외 변수에 대한 민감도는 여전히 높은 상태다. 내수 시장에서는 소비 둔화와 원가 부담이 이어지는 가운데, 수출 비중 확대에 성공한 기업과 내수 의존도가 높은 기업 간 실적 격차가 향후에도 지속될 가능성이 있다.",
-        "en": "The key point to watch going forward is whether the export growth momentum centered on ramen and snacks spreads to other categories. In K-ramen's case, given that the export structure has already expanded beyond China and the United States into Europe, the Middle East, Southeast Asia, and the CIS, further regional diversification appears likely, with companies such as Ottogi continuing efforts to expand overseas channels, having stated plans to expand ramen exports, currently reaching 65 countries, to 70 countries this year. For Samyang Foods, expanded production capacity and the establishment of a European subsidiary to directly manage local distribution networks are likely to serve as variables in assessing the sustainability of future performance. That said, sensitivity to external variables remains elevated, as noted that US tariff issues, country-specific food regulations, exchange rate fluctuations, and dependence on specific hit products could shake the pace of growth at any time. Amid ongoing consumption slowdown and cost pressures in the domestic market, the performance gap between companies that have successfully expanded export exposure and those more reliant on domestic demand is likely to persist."
+        "ko": "하반기 전망의 핵심 변수는 원·달러 환율 방향성과 가격 인상 효과의 실적 반영 시점이다. 증권가에서는 상반기 비용 부담 속에서도 실적 방어에 성공한 음식료 업종이 하반기 가격 인상 효과 본격화, 원·달러 환율 하락, 해외 공장 증설 모멘텀을 동시에 맞이하며 재평가 국면에 들어설 것이라는 분석을 내놓았다. 다만 최근 해외 사업 비중이 커지며 종목별 환율 영향력은 엇갈리는 모습으로, 과거 환율 하락의 대표 수혜주로 꼽혔던 업종이 해외 매출 비중 확대에 따라 기업별 온도차가 뚜렷해지고 있다는 점에서 일괄적 접근보다는 종목별 수출 경쟁력과 원가 구조에 대한 선별적 점검이 필요하다. K-푸드 수출은 라면 편중 구조에서 벗어나 과자, 즉석밥, 냉동식품 등으로 품목 다변화를 모색하는 단계에 있어 이 과정의 성과가 중장기 성장성을 좌우할 전망이다. 내수 소비 둔화가 이어지는 상황에서는 담배·인삼 등 경기 방어적 사업 비중이 큰 기업과 해외 유통망을 확보한 수출 기업 간 체감 경기 격차가 지속될 가능성이 있다.",
+        "en": "The key variables shaping the second-half outlook are the direction of the won-dollar exchange rate and the timing of price-increase effects flowing through to earnings. Market analysts have suggested that the food and beverage sector, having successfully defended earnings despite first-half cost pressures, may enter a re-rating phase as price hikes take full effect, the won strengthens, and overseas capacity expansion gains momentum in the second half. However, as overseas business weight grows, currency sensitivity now varies meaningfully by company, meaning a sector-wide approach is less useful than selective review of individual export competitiveness and cost structures. K-food exports are in a phase of diversifying beyond their heavy reliance on instant noodles toward snacks, instant rice, and frozen foods, and the success of this diversification will likely shape medium-term growth prospects. Amid continued softness in domestic consumption, a persistent gap in perceived business conditions may continue between defensively positioned companies with tobacco or ginseng exposure and export-oriented firms with established overseas distribution networks."
       },
       "risks": [
         {
           "title": {
-            "ko": "환율 및 대외 변수 민감도",
-            "en": "Sensitivity to Exchange Rates and External Variables"
+            "ko": "원자재·환율 변동성",
+            "en": "Raw Material and Currency Volatility"
           },
           "body": {
-            "ko": "수출 비중이 높은 기업일수록 환율 변동에 따른 실적 영향이 커지는 구조로, 고환율 국면에서는 수익성 개선 효과를 볼 수 있으나 원화 강세로 전환될 경우 반대 방향의 압력이 발생할 수 있다. 미국 등 주요 수출 대상국의 관세 정책 변화도 향후 실적에 영향을 줄 수 있는 요인이다.",
-            "en": "Companies with higher export exposure are more sensitive to exchange rate movements, benefiting from margin improvements during periods of currency weakness but facing opposite pressure should the won strengthen. Tariff policy changes in major export destinations such as the United States could also affect future performance."
+            "ko": "곡물, 원당, 나프타 등 핵심 원재료의 해외 의존도가 높아 국제 가격과 원·달러 환율 변동이 원가율에 직접적인 영향을 미친다. 2026년 상반기 주요 식음료 기업들의 매출 원가율이 4년 만에 최고 수준으로 상승한 바 있어 하반기 환율·유가 흐름에 따라 수익성 변동폭이 커질 수 있다.",
+            "en": "Heavy reliance on imported grains, raw sugar, and naphtha means international commodity prices and the won-dollar exchange rate directly affect cost ratios. With the cost-of-sales ratio among major food and beverage companies rising to a four-year high in the first half of 2026, profitability swings could widen depending on second-half currency and oil price trends."
           }
         },
         {
           "title": {
-            "ko": "특정 브랜드·품목 의존도",
-            "en": "Dependence on Specific Brands and Product Categories"
+            "ko": "수출 품목 편중 리스크",
+            "en": "Export Concentration Risk"
           },
           "body": {
-            "ko": "라면 업종 수출 성장의 상당 부분이 특정 브랜드의 흥행에 의존하고 있어, 소비자 트렌드 변화나 경쟁 제품 출현 시 성장세가 둔화될 위험이 존재한다. 히트 상품에 대한 과도한 의존은 실적 변동성을 높일 수 있는 요인으로 지목된다.",
-            "en": "A significant portion of ramen export growth depends on the popularity of specific brands, creating risk that growth could slow amid shifting consumer trends or the emergence of competing products. Excessive reliance on hit products is cited as a factor that could increase earnings volatility."
+            "ko": "K-푸드 수출 증가세가 라면 품목에 과도하게 집중돼 있어 특정 카테고리의 수요 둔화나 경쟁 심화가 업종 전체 수출 모멘텀에 큰 영향을 줄 수 있다. 과자, 즉석식품 등 후속 품목의 수출 규모가 아직 라면과 상당한 격차를 보이고 있어 다변화 성과가 가시화되기까지 시간이 필요할 수 있다.",
+            "en": "Since the growth in K-food exports is heavily concentrated in instant noodles, a slowdown in that single category or intensifying competition could materially affect sector-wide export momentum. Follow-up categories such as snacks and ready-to-eat foods still trail far behind instant noodles in export scale, meaning diversification results may take time to materialize."
           }
         },
         {
           "title": {
-            "ko": "내수 소비 둔화와 원가 부담",
-            "en": "Domestic Consumption Slowdown and Cost Pressures"
+            "ko": "내수 소비 둔화 및 가격 인상 저항",
+            "en": "Domestic Consumption Slowdown and Pricing Resistance"
           },
           "body": {
-            "ko": "내수 시장에 대한 의존도가 높은 기업들은 소비 둔화와 원재료·물류비 부담이 지속될 경우 수익성 개선에 어려움을 겪을 수 있다. 냉동식품 등 일부 품목은 물류비 부담으로 수출 확대에 제약이 있어 카테고리별 성장 속도에 차이가 발생할 수 있다.",
-            "en": "Companies more dependent on the domestic market may face difficulty improving profitability if consumption slowdown and raw material or logistics cost burdens persist. Certain categories such as frozen foods face constraints on export expansion due to logistics cost burdens, which could result in differing growth speeds across categories."
+            "ko": "내수 시장에서는 소비 둔화가 이어지는 가운데 비용 전가를 위한 가격 인상이 소비자 저항이나 판매량 감소로 이어질 가능성이 상존한다. 일부 업체는 가격 인상 대신 중량 축소를 선택하는 등 소비자 체감 부담을 관리하려는 움직임도 나타나고 있어 수익성 개선 속도가 기대에 못 미칠 위험이 있다.",
+            "en": "Amid ongoing domestic consumption softness, price increases implemented to offset cost pressures carry the risk of consumer resistance or declining sales volumes. Some companies have opted to reduce product weight rather than raise prices to manage perceived consumer burden, suggesting the pace of profitability improvement could fall short of expectations."
           }
         }
       ],
       "sources": [
-        "https://biz.newdaily.co.kr/site/data/html/2026/04/20/2026042000093.html",
-        "https://v.daum.net/v/20260705111600624?f=p",
-        "https://www.insight.co.kr/news/568398",
-        "https://www.hankyung.com/article/202608142113g",
         "https://zdnet.co.kr/view/?no=20260714162133",
-        "https://www.koreabizreview.com/articles/kbr-legacy-7778"
+        "https://www.fnnews.com/news/202609081451577171",
+        "https://www.kukinews.com/article/view/kuk202610060200",
+        "https://www.etoday.co.kr/news/view/2622742"
       ],
       "sector": "식음료",
-      "generatedAt": "2026-09-04 13:44"
+      "generatedAt": "2026-10-08 19:21"
     },
     "IT·소프트웨어": {
       "lead": {
@@ -570,59 +568,65 @@ window.KOS_SECTORS = {
     },
     "보험": {
       "lead": {
-        "ko": "성장 정체와 수익성 압박 속에서도 대형사 중심으로 자본력과 이익 체력 격차가 뚜렷해지는 업종이다.",
-        "en": "A sector marked by growth stagnation and profitability pressure, where capital strength and earnings resilience are increasingly concentrated among large-cap players."
+        "ko": "금리와 손해율에 민감한 전통 금융업종으로, IFRS17 체제 안착 국면에서 대형 손해보험사와 생명보험사 간 실적 양극화가 뚜렷하게 나타나고 있는 업종이다.",
+        "en": "A traditional financial sector highly sensitive to interest rates and loss ratios, currently showing a clear earnings divergence between large non-life insurers and life insurers as the IFRS17 regime settles in."
       },
       "overview": {
-        "ko": "보험업은 생명보험과 손해보험 두 축으로 나뉘며, 국내 증시에서는 삼성생명·삼성화재 등 대형 금융지주 계열사가 시장을 주도하는 구조다. 전체 상장 종목 수는 제한적이나 개별 기업 간 시가총액 격차가 매우 커서, 상위 2~3개사가 업종 전체 무게중심을 좌우하는 특성을 보인다. 2023년 IFRS17 신회계기준 도입 이후 보험계약마진(CSM)과 K-ICS 자본비율 등 새로운 지표가 실적 평가의 핵심으로 자리잡았다. 업종 특성상 금리·주식시장 변동에 따른 투자손익 민감도가 높고, 손해율·해지율 등 계리적 가정 변화가 실적 변동성을 키우는 요인으로 작용한다. 배당 관련 준비금 적립 부담도 투자자들이 주목하는 구조적 이슈다.",
-        "en": "The insurance sector is split into life and non-life (property & casualty) segments, dominated in the Korean equity market by large financial group affiliates such as Samsung Life and Samsung Fire & Marine Insurance. While the number of listed names is limited, market capitalization is heavily concentrated among the top two or three players, who effectively determine the sector's overall trajectory. Since the 2023 adoption of the IFRS17 accounting standard, metrics such as the Contractual Service Margin (CSM) and the K-ICS capital ratio have become central to earnings assessment. The sector shows high sensitivity to interest rate and equity market movements through investment income, while changes in actuarial assumptions such as loss ratios and lapse rates add to earnings volatility. Reserve accumulation burdens affecting dividend capacity remain a structural issue closely watched by investors."
+        "ko": "보험업은 생명보험, 손해보험(장기·일반·자동차), 재보험, 보증보험, 보험대리점(GA) 등으로 세분화되는 전통 금융 산업이다. 국내 증시에서는 상장 종목 수가 많지 않고 삼성생명과 삼성화재 등 소수 대형사에 시가총액이 크게 쏠려 있는 구조적 특징을 보인다. 생명보험사는 저축성·보장성 보험과 변액보험을, 손해보험사는 자동차·장기보험·일반보험을 주력으로 하며 코리안리는 재보험, 서울보증보험은 보증보험이라는 독자적 영역을 담당한다. 2023년 IFRS17 도입 이후 업계 전반의 경영 초점이 외형 성장보다 계약서비스마진(CSM) 중심의 수익성·자본관리로 이동한 점도 업종 전반의 공통된 특징이다. 저금리·저성장 환경과 인구구조 변화 속에서 업종 전체의 성장 탄력은 제한적인 편이다.",
+        "en": "The insurance industry is segmented into life insurance, non-life insurance (long-term, general, and auto), reinsurance, surety insurance, and insurance agencies (GA), representing a traditional pillar of the financial sector. On the Korean market, the number of listed names is relatively limited, with market capitalization heavily concentrated in a few large-cap names such as Samsung Life Insurance and Samsung Fire & Marine Insurance. Life insurers focus on savings-type, protection-type, and variable insurance products, while non-life insurers center on auto, long-term, and general insurance; Korean Re operates in reinsurance and Seoul Guarantee Insurance occupies the distinct surety insurance niche. Since the adoption of IFRS17 in 2023, the industry's management focus has broadly shifted from volume growth toward profitability and capital management centered on the contractual service margin (CSM). Amid a low-interest-rate, low-growth environment and demographic shifts, overall sector growth momentum remains constrained."
       },
       "structure": {
-        "ko": "밸류체인 최상단에는 생명보험 1위 삼성생명과 손해보험 1위 삼성화재가 위치하며, 두 회사가 업종 시가총액의 절대적 비중을 차지한다. 손해보험 부문에는 DB손해보험·현대해상·한화손해보험·롯데손해보험·흥국화재 등이 자동차보험과 장기보험 시장에서 경쟁하며, 재보험 전문사인 코리안리가 별도 영역을 형성한다. 생명보험 부문에는 한화생명·미래에셋생명이 삼성생명에 이어 중대형사로 자리하며, 보증보험 특화사인 서울보증보험과 GA(법인보험대리점) 연계 판매 전문 에이플러스에셋이 각각 니치 영역을 담당한다. 업종 집중도가 높아 상위 대형사의 실적·정책 변화가 업종 전체 흐름에 큰 영향을 미치는 구조다. 최근에는 대형사를 중심으로 요양·헬스케어 등 부수사업으로 밸류체인이 확장되는 추세다.",
-        "en": "At the top of the value chain sit Samsung Life, the leading life insurer, and Samsung Fire & Marine Insurance, the leading non-life insurer, which together account for the overwhelming majority of sector market capitalization. In the non-life segment, DB Insurance, Hyundai Marine & Fire Insurance, Hanwha General Insurance, Lotte Insurance, and Heungkuk Fire & Marine compete in auto and long-term insurance markets, while Korean Reinsurance occupies a distinct reinsurance niche. In the life segment, Hanwha Life and Mirae Asset Life rank as mid-to-large players behind Samsung Life, while Seoul Guarantee Insurance specializes in surety insurance and A-Plus Asset focuses on general agency (GA)-linked distribution. Given the high concentration of the sector, earnings and policy shifts at the leading large-caps exert outsized influence on overall sector trends. Recently, large insurers have been expanding their value chains into ancillary businesses such as elderly care and healthcare services."
+        "ko": "밸류체인 측면에서는 원수보험을 담당하는 생명·손해보험사가 중심에 있고, 그 위험을 분산하는 재보험사(코리안리), 신용·보증 리스크를 인수하는 보증보험사(서울보증보험), 판매 채널 역할을 하는 GA(에이플러스에셋)가 주변부를 구성한다. 생명보험 대표주는 삼성생명·한화생명·미래에셋생명이며, 손해보험은 삼성화재·DB손해보험·현대해상·한화손해보험·롯데손해보험·흥국화재 등으로 다수를 이룬다. 시가총액 기준으로는 삼성생명과 삼성화재 두 종목이 업종 내 압도적 비중을 차지하고, DB손해보험이 그 뒤를 이어 상위권을 형성하는 집중도 높은 구조다. 중소형 손해보험사들은 자동차보험·장기보험 손해율 변동에 상대적으로 민감하며, 실적 변동성도 대형사 대비 큰 편이다.",
+        "en": "Within the value chain, primary insurers—both life and non-life—sit at the center, flanked by reinsurers that diversify risk (Korean Re), surety insurers that underwrite credit and guarantee risk (Seoul Guarantee Insurance), and GA distribution channels (A-Plus Asset). Representative life insurance names include Samsung Life, Hanwha Life, and Mirae Asset Life, while the non-life segment is populated by a larger group including Samsung Fire & Marine, DB Insurance, Hyundai Marine & Fire, Hanwha General Insurance, Lotte Non-Life Insurance, and Heungkuk Fire & Marine. By market capitalization, Samsung Life and Samsung Fire & Marine together command an overwhelming share of the sector, with DB Insurance following as the next-largest name, reflecting a highly concentrated structure. Mid- and small-cap non-life insurers tend to be relatively more exposed to fluctuations in auto and long-term insurance loss ratios, resulting in comparatively greater earnings volatility than the large-cap peers."
       },
       "trends": {
-        "ko": "2026년 보험산업 전체 보험료 성장률은 2.3%로 전망되며, 이는 전년 대비 5%포인트 이상 낮아진 수준으로 성장 정체 국면에 진입했다는 평가가 나온다. 생명보험업계는 보장성보험과 퇴직연금을 중심으로 소폭 성장하겠지만 저축성·변액보험 판매 감소가 외형 확대를 제약하는 구조다. 반면 대형 상장사의 개별 실적은 투자손익 확대에 힘입어 견조한 흐름을 보였는데, 삼성생명과 삼성화재는 국내 증시 호황에 따른 투자손익 증가로 상반기 IFRS17 도입 이후 최대 순이익을 기록했다. 다만 삼성생명은 2분기 생존·사망 담보 손해율 상승과 변액보험 헤지 손실로 보험손익이 전년 대비 절반 수준으로 줄어드는 등 본업 부진이 부각된 반면, 삼성화재는 장기보험과 일반보험 손익이 고르게 개선되며 보험 본업과 투자 부문이 동반 성장하는 대조적 모습을 보였다. 손해보험업계 전반에서는 자동차보험 손해율 관리와 GA(법인보험대리점) 채널 확대에 따른 사업비 부담이 동시에 이슈로 부각되고 있다.",
-        "en": "Industry premium growth for 2026 is projected at 2.3%, a decline of more than five percentage points from the prior year, signaling entry into a growth stagnation phase. The life insurance segment is expected to see modest growth centered on protection-type products and retirement pensions, while declining sales of savings-type and variable insurance constrain overall expansion. In contrast, individual large-cap earnings held up well on the back of expanding investment income, with Samsung Life and Samsung Fire & Marine both posting their highest first-half net profits since IFRS17 was introduced, driven by a buoyant domestic equity market. However, Samsung Life's underwriting profit roughly halved year-on-year in the second quarter due to rising mortality and morbidity loss ratios and variable insurance hedging losses, highlighting core business weakness, whereas Samsung Fire & Marine saw balanced improvement across long-term and general insurance lines, with underwriting and investment segments growing in tandem. Across the non-life sector, managing auto insurance loss ratios and rising expense burdens tied to expanding general agency (GA) distribution channels have emerged as parallel concerns."
+        "ko": "2026년 2분기 실적은 종목별로 뚜렷하게 엇갈렸다. DB손해보험은 2분기 영업이익이 전년 동기 대비 47.0% 증가했고 한화생명은 160.4% 급증했으며, 현대해상(+33.0%), 코리안리(+26.9%), 흥국화재(+83.8%) 등도 두 자릿수 이상 증가세를 보였다. 반면 삼성생명은 2분기 영업이익이 전년 동기 대비 32.0% 감소했고, 미래에셋생명(-63.6%)과 롯데손해보험(-93.7%)은 큰 폭의 이익 감소를 기록했다. 업황 측면에서는 자동차보험이 상반기 기준 6년 만에 영업손실로 전환했는데, 한국 손해보험업계의 자동차보험이 2026년 상반기 약 1,890억원의 영업손실을 기록하며 2020년 상반기 이후 6년 만에 적자로 돌아섰다. 다만 1분기 손해율은 85.9%로 전년보다 급등했다가 중동전쟁발 고유가로 차량 운행량이 줄면서 2분기엔 다소 개선된 것으로 나타났다. 삼성화재의 경우 보상원가 상승에도 사고율 감소와 손익 관리를 통해 2분기 자동차보험 보험손익이 흑자 전환했다. 한편 신계약 CSM은 한화손해보험 등 일부사에서 분기 최대치를 경신하며 성장세를 이어갔으나, 생명보험 CSM은 2025년에서 2026년으로 가면서 감소 전환이 추정되고, 손해보험 CSM도 증가율이 크게 둔화될 것으로 제시되는 등 업종 전반의 미래이익 성장 속도는 둔화되는 흐름이다.",
+        "en": "Second-quarter 2026 earnings diverged sharply across names. DB Insurance posted a 47.0% year-on-year increase in operating profit, Hanwha Life surged 160.4%, and Hyundai Marine & Fire (+33.0%), Korean Re (+26.9%), and Heungkuk Fire & Marine (+83.8%) also recorded double-digit or higher growth. In contrast, Samsung Life's operating profit fell 32.0% year-on-year, while Mirae Asset Life (-63.6%) and Lotte Non-Life Insurance (-93.7%) saw sharp declines. On the industry front, auto insurance swung to an operating loss in the first half for the first time in six years, as Korea's non-life insurance industry's auto insurance segment posted an operating loss of roughly KRW 189 billion in the first half of 2026, turning negative for the first time in six years since the first half of 2020. That said, the first-quarter loss ratio spiked to 85.9% year-on-year before improving somewhat in the second quarter as high oil prices from the Middle East conflict reduced vehicle usage. At Samsung Fire & Marine specifically, despite rising claims costs, a decline in accident rates and loss management led its second-quarter auto insurance result to turn profitable. Meanwhile, new-business CSM continued to grow at some insurers, with Hanwha General Insurance setting quarterly records, yet the broader trajectory shows deceleration, as life insurance CSM is projected to turn negative between 2025 and 2026, and non-life insurance CSM growth is also expected to slow sharply."
       },
       "outlook": {
-        "ko": "향후 업종의 관전 포인트는 IFRS17 체계 안착 이후 성장보다 수익성과 자본 관리 중심으로 경영 초점이 이동하는 흐름이 지속될지 여부다. 2026년 시행되는 GA 설계사 1,200%룰과 계리감독 선진화 방안 등 제도 변화는 신계약 CSM의 질적 수준과 보험료 인상 압력에 영향을 줄 수 있는 요인으로 꼽힌다. 초고령사회 진입을 앞두고 요양·헬스케어 연계 상품과 톤틴형 연금 등 고령층 특화 서비스로의 사업모델 확장도 중장기 성장 동인으로 주목받고 있다. 대형사와 중소형사 간 K-ICS 자본비율 격차가 확대될 가능성이 있어 건전성 차별화가 심화될 수 있으며, 이는 배당 여력에도 영향을 미칠 수 있는 변수다. 금리 및 증시 흐름에 따른 투자손익 변동성은 여전히 업종 실적의 핵심 스윙 요인으로 작용할 전망이다.",
-        "en": "A key focus going forward is whether the shift in management priorities from growth toward profitability and capital management, following IFRS17 stabilization, will continue. Regulatory changes taking effect in 2026, including the GA agent 1,200% rule and enhanced actuarial supervision guidelines, are cited as factors that could affect the quality of new-contract CSM and premium pricing pressure. Ahead of Korea's transition into a super-aged society, business model expansion into care and healthcare-linked products as well as tontine-style pension offerings tailored to elderly customers is drawing attention as a medium-to-long-term growth driver. Divergence in K-ICS capital ratios between large and smaller insurers may widen, intensifying differentiation in financial soundness, which in turn could affect dividend capacity. Investment income volatility tied to interest rate and equity market conditions is expected to remain a core swing factor for sector earnings."
+        "ko": "향후 관전 포인트는 크게 세 가지다. 첫째, 자동차보험 손해율의 추가 개선 여부로, 업계는 보험료 인상과 할인특약 정비 효과가 하반기로 갈수록 본격화될 것으로 기대하고 있다. 둘째, IFRS17 원칙 중심 회계가 안착하는 과정에서 신계약 CSM 확보 속도와 질적 수익성(가치배수) 개선 여부가 각사 미래이익 체력을 가늠하는 핵심 지표로 남아 있다. 셋째, 2023년 IFRS17 도입 이후 손해율 조정이 보험사의 이익뿐 아니라 CSM, 자본 적정성에도 영향을 미치는 핵심 변수로 떠오르면서 보험료 인상 압력도 지속될 가능성이 있어 규제·보험료 정책 변화가 업종 전반의 비용 구조에 영향을 줄 수 있다. 아울러 시니어·헬스케어 연계 보험상품 개발과 디지털 언더라이팅 고도화 등 신성장동력 모색도 중장기 관전 포인트로 꼽힌다. 자본비율(K-ICS) 관리와 주주환원 정책 확대 여부 역시 대형사를 중심으로 지속적으로 관찰할 필요가 있다.",
+        "en": "Several factors warrant monitoring going forward. First is whether auto insurance loss ratios continue to improve, as the industry expects premium hikes and the restructuring of discount riders to take fuller effect in the second half. Second, as IFRS17's principle-based accounting framework matures, the pace of new-business CSM accumulation and qualitative profitability metrics such as value multiples remain key gauges of each insurer's future earnings capacity. Third, since the introduction of IFRS17 in 2023, loss ratio adjustments have emerged as a key variable affecting not only profits but also CSM and capital adequacy, with continued pressure for premium increases likely, meaning regulatory and pricing policy shifts could continue to shape the sector's cost structure. Additionally, the development of senior- and healthcare-linked insurance products and advances in digital underwriting represent medium-term growth themes worth tracking. Capital ratio (K-ICS) management and the scope of shareholder return policies, particularly among large-cap insurers, also merit ongoing attention."
       },
       "risks": [
         {
           "title": {
-            "ko": "성장 정체와 계리적 가정 변동성",
-            "en": "Growth Stagnation and Actuarial Assumption Volatility"
+            "ko": "자동차·장기보험 손해율 변동성",
+            "en": "Volatility in Auto and Long-Term Insurance Loss Ratios"
           },
           "body": {
-            "ko": "2026년 보험료 성장률이 2.3%로 급격히 낮아질 전망이며, 계리가정 변경과 경험조정이 반복되면서 보험계약마진(CSM) 성장세가 둔화되고 있다. 손해율·해지율 가정 변화에 대한 민감도가 높아 실적 예측 불확실성이 커질 수 있다.",
-            "en": "Premium growth is projected to slow sharply to 2.3% in 2026, while repeated changes in actuarial assumptions and experience adjustments are dampening CSM growth. High sensitivity to loss ratio and lapse rate assumptions could increase earnings forecast uncertainty."
+            "ko": "자동차보험은 상반기 기준 6년 만에 적자로 전환했으며, 손해율이 손익분기점을 상회하는 구간이 이어지고 있다. 유가·운행량 등 외부 변수에 따라 분기별 손익 변동성이 커질 수 있는 점은 관련 손해보험사 실적의 주요 변수다.",
+            "en": "Auto insurance turned unprofitable in the first half for the first time in six years, with loss ratios persistently above the breakeven threshold. Quarterly earnings volatility tied to external variables such as oil prices and driving volume remains a key factor for non-life insurers exposed to this line."
           }
         },
         {
           "title": {
-            "ko": "배당 제약과 준비금 부담",
-            "en": "Dividend Constraints and Reserve Accumulation Burden"
+            "ko": "CSM 성장 둔화와 규제 변화",
+            "en": "Slowing CSM Growth and Regulatory Shifts"
           },
           "body": {
-            "ko": "IFRS17 도입 이후 해약환급금준비금 적립 부담이 커지면서 이익 증가에도 실제 배당 여력은 제한되는 구조적 모순이 지속되고 있다. 일부 대형사는 높은 ROE에도 수년째 배당을 하지 못하는 사례가 나타나고 있다.",
-            "en": "Since IFRS17 implementation, growing burdens from cancellation refund reserve accumulation have created a structural mismatch where rising profits do not translate into greater dividend capacity. Some large insurers have reportedly been unable to pay dividends for several consecutive years despite high ROE."
+            "ko": "생명·손해보험 모두 신계약 CSM 증가율이 둔화될 것으로 전망되는 가운데, 수수료 규제 및 손해율·사업비 가이드라인 등 정책 변화가 신계약 확보 전략에 영향을 미칠 수 있다. 이는 업종 전반의 중장기 이익 체력을 좌우하는 변수다.",
+            "en": "With new-business CSM growth projected to slow across both life and non-life insurers, policy changes such as commission regulations and loss ratio/expense guidelines could influence new-business acquisition strategies. This represents a variable shaping the sector's medium- to long-term earnings capacity."
           }
         },
         {
           "title": {
-            "ko": "금리·증시 의존적 투자손익 변동성",
-            "en": "Investment Income Volatility Tied to Rates and Equities"
+            "ko": "금리·자본건전성 민감도",
+            "en": "Sensitivity to Interest Rates and Capital Adequacy"
           },
           "body": {
-            "ko": "최근 대형사 실적 개선은 국내 증시 호황에 따른 투자손익 확대에 크게 기인하고 있어, 보험 본업 경쟁력과는 별개로 외부 시장 환경 변화에 실적이 좌우될 위험이 있다. 금리 하락 국면이 지속될 경우 지급여력(K-ICS) 부담이 확대될 가능성도 있다.",
-            "en": "Recent earnings improvement among large insurers has been substantially driven by expanding investment income amid a buoyant domestic equity market, raising the risk that results depend heavily on external market conditions rather than core underwriting competitiveness. A prolonged period of falling interest rates could also increase pressure on K-ICS solvency ratios."
+            "ko": "보험사 자산운용수익과 K-ICS 비율은 금리 환경 변화에 민감하게 반응하며, 금리 하락이나 해지율 상승 등 비우호적 가정 변경은 자본건전성 지표에 부담을 줄 수 있다. 회사별 리스크 관리 역량에 따라 영향의 폭이 달라질 수 있다.",
+            "en": "Insurers' investment income and K-ICS ratios respond sensitively to shifts in the interest rate environment, and unfavorable assumption changes such as rate declines or rising lapse rates could pressure capital adequacy indicators. The magnitude of impact may vary depending on each company's risk management capabilities."
           }
         }
       ],
+      "sources": [
+        "https://www.newsspace.kr/news/article.html?no=14959",
+        "https://www.nspna.com/news/?mode=view&newsid=824258",
+        "https://www.insjournal.co.kr/news/articleView.html?idxno=28590",
+        "https://www.insjournal.co.kr/news/articleView.html?idxno=29000"
+      ],
       "sector": "보험",
-      "generatedAt": "2026-09-04 13:44"
+      "generatedAt": "2026-10-08 19:21"
     },
     "바이오·제약": {
       "lead": {
@@ -687,69 +691,59 @@ window.KOS_SECTORS = {
     },
     "화장품": {
       "lead": {
-        "ko": "미국·유럽 중심 수출 확대와 대형 브랜드·ODM의 이익 레버리지가 동시에 부각되는 국내 화장품 업종.",
-        "en": "Korea's cosmetics sector where export expansion centered on the US and Europe is converging with improving profit leverage at large brand owners and ODM manufacturers."
+        "ko": "미국·유럽으로 수출 지역이 다변화되며 구조적 성장과 수익성 개선이 동시에 나타나는 업종이다.",
+        "en": "A sector experiencing structural growth and simultaneous profitability improvement, driven by export diversification toward the United States and Europe."
       },
       "overview": {
-        "ko": "화장품 업종은 브랜드사, 제조자개발생산(ODM) 업체, 용기·부자재 공급사, 역직구 유통 플랫폼 등 다양한 사업모델이 혼재된 소비재 섹터다. 국내 증시 전체에서 차지하는 비중 자체는 크지 않지만, 최근 몇 년간 케이뷰티의 글로벌 확산으로 투자자 관심이 꾸준히 높아진 업종이다. 아모레퍼시픽, LG생활건강 등 전통 대형 브랜드사와 에이피알, 달바글로벌 등 신흥 브랜드사가 함께 상장돼 있어 세대교체 흐름이 뚜렷하게 나타난다. 한국콜마, 코스맥스, 코스메카코리아 등 국내 대표 ODM 업체들이 다수의 중소 브랜드 물량을 위탁생산하는 구조여서 브랜드 성장과 ODM 실적이 서로 맞물려 움직이는 특징이 있다. 최근에는 개별 브랜드의 단기 판매량보다 수출의 구조적 확대가 ODM에서 용기, 유통, 브랜드로 얼마나 넓게 확산되는지가 업종 이해의 핵심 관전 포인트로 부각되고 있다.",
-        "en": "The cosmetics sector encompasses a mix of business models including brand owners, original design manufacturers (ODM), packaging/component suppliers, and cross-border retail platforms. While its overall weight in the Korean market is modest, investor attention has steadily grown alongside the global expansion of K-beauty in recent years. Traditional large brand owners such as Amorepacific and LG Household & Health Care coexist with emerging brands like APR and Dalba Global, reflecting a clear generational shift within the sector. Leading domestic ODM firms including Kolmar Korea, Cosmax, and Cosmecca Korea manufacture on behalf of numerous smaller brands, creating a structure where brand growth and ODM performance move closely together. Recently, the key point for understanding the sector has shifted toward how broadly the structural expansion of exports is spreading from ODM to packaging, distribution, and branding, rather than focusing solely on short-term sales of individual brands."
+        "ko": "화장품 업종은 브랜드사, ODM/OEM 생산, 원료·용기 부품, 수출 유통까지 이어지는 밸류체인을 갖춘 소비재 산업이다. 한국 증시 내에서는 상장 종목 수가 적지 않지만 개별 기업의 규모 편차가 커 전체 시장 비중은 크지 않은 중소형 업종으로 분류된다. 과거에는 중국 소비 및 면세 채널 의존도가 높아 중국 수요 변동에 민감했으나, 최근에는 미국·유럽 등 선진 시장으로 수출 축이 이동하며 업종 체질이 달라지고 있다. 대형 브랜드사부터 ODM 전문기업, 디바이스·이커머스 유통사까지 사업모델이 다양해 업종 내 개별 종목 간 실적 편차도 뚜렷하다.",
+        "en": "The cosmetics sector encompasses a value chain spanning brands, ODM/OEM manufacturing, raw materials and packaging components, and export distribution. Within the Korean equity market, while the number of listed companies is not small, the wide disparity in individual company scale classifies it as a small-to-mid-cap sector with limited overall market weight. Historically sensitive to Chinese consumption and duty-free channel fluctuations due to heavy dependence on that market, the sector's composition is now shifting as export focus moves toward developed markets such as the United States and Europe. With business models ranging from large brand companies to specialized ODM firms and device/e-commerce distributors, performance divergence among individual names within the sector is also pronounced."
       },
       "structure": {
-        "ko": "밸류체인 최상단에는 용기·부자재를 공급하는 펌텍코리아가 위치하며, 중간 단계에는 위탁생산을 담당하는 한국콜마·코스맥스·코스메카코리아 등 ODM 3사가 자리한다. 이들 ODM사는 국내외 다수 브랜드의 스킨케어·색조 제품을 생산하며 업종 내 수주 흐름을 가늠하는 선행지표 역할을 한다. 브랜드 단계에서는 아모레퍼시픽과 LG생활건강이 전통적인 대형 브랜드사로서 다양한 카테고리와 유통망을 보유하고 있고, 에이피알은 화장품과 뷰티디바이스를 결합한 사업모델로 빠르게 외형을 확대하고 있다. 달바글로벌, 브이티, 네오팜, 애경산업 등은 각각 프리미엄 스킨케어, 색조, 더마코스메틱, 생활용품 겸업 등 세분 카테고리에 특화된 중소형 브랜드사로 분류된다. 유통 단계에서는 실리콘투가 국내 중소 브랜드의 해외 역직구·수출 유통을 대행하는 플랫폼으로서 브랜드사들과 파트너십을 맺고 있다. 이처럼 밸류체인 전 단계에 걸쳐 상장 종목이 배치돼 있으나, 상위 몇 개 브랜드사와 ODM사에 시가총액이 집중되는 구조를 보인다.",
-        "en": "At the upstream end of the value chain sits Pumtech Korea, which supplies packaging and components, while the mid-stream is occupied by the three major ODM firms—Kolmar Korea, Cosmax, and Cosmecca Korea—that handle contract manufacturing. These ODM companies produce skincare and color cosmetics for numerous domestic and overseas brands, making their order flow a leading indicator for the broader sector. At the brand level, Amorepacific and LG Household & Health Care remain traditional large-cap brand owners with diversified categories and distribution networks, while APR is rapidly expanding scale through a business model combining cosmetics with beauty devices. Dalba Global, VT, Neopharm, and Aekyung Industrial are classified as small-to-mid-cap brand owners specialized in premium skincare, color cosmetics, dermocosmetics, and household goods respectively. On the distribution side, Silicon2 operates as a platform handling overseas cross-border and export distribution on behalf of smaller domestic brands, maintaining partnerships across the brand layer. Although listed names span the entire value chain, market capitalization remains concentrated among a handful of leading brand owners and ODM companies."
+        "ko": "밸류체인 상단에는 아모레퍼시픽, LG생활건강 등 종합 브랜드사와 에이피알, 브이티, 달바글로벌 등 특화 브랜드사가 위치하며, 이들은 자체 브랜드력과 유통망을 통해 수출 성장의 직접 수혜를 받는다. 중간 단계인 ODM/OEM에는 코스맥스, 한국콜마, 코스메카코리아, 한국화장품제조가 자리하며, 국내외 브랜드사의 주문 확대에 따라 생산 레버리지가 발생하는 구조다. 용기·부품 공급망에는 펌텍코리아, 네오팜 등이 위치해 있으며, 이들은 브랜드사·ODM사의 생산 증가에 연동되는 후방산업 성격을 갖는다. 유통·플랫폼 영역에서는 실리콘투가 해외 K뷰티 상품을 유통하는 벤더 역할을 수행하며 수출 확대의 또 다른 경로를 담당한다. 전반적으로 상위 기업 간 사업모델이 명확히 구분되어 있어, 수출 확산이 브랜드→ODM→용기→유통 전 구간으로 퍼지는 낙수효과가 관찰되는 구조다.",
+        "en": "At the upper end of the value chain are comprehensive brand companies such as Amorepacific and LG Household & Health Care, alongside specialized brands including APR, VT, and D'ALBA Global, which directly benefit from export growth through their brand equity and distribution networks. The intermediate ODM/OEM tier includes Cosmax, Kolmar Korea, Cosmecca Korea, and Korea Cosmetic Manufacturing, where production leverage arises from expanding orders from domestic and overseas brands. The container and component supply chain includes Pum-Tech Korea and Neopharm, which function as upstream-dependent industries linked to rising production volumes at brand and ODM companies. In distribution and platform areas, Silicon2 serves as a vendor distributing K-beauty products overseas, representing another channel for export expansion. Overall, the clearly differentiated business models among leading companies create a trickle-down effect whereby export expansion spreads across the brand-ODM-container-distribution chain."
       },
       "trends": {
-        "ko": "2026년 1분기 누적 화장품 수출액은 25.5억 달러로 전년 대비 17.7% 성장했고, 5월 전체 화장품 수출액은 전년 동월 대비 24% 증가하며 견조한 흐름을 이어갔다. 수출 비중이 가장 큰 미국 시장은 1분기 4.8억 달러로 전년 동기 대비 37.4% 성장하며 성장을 주도했고, 동남아 수출 역시 2026년 최대 18~20% 증가 가능성이 제기되는 등 지역 다변화가 뚜렷하다. 개별 기업 실적에서는 에이피알이 2026년 1분기 매출 5,934억원(전년 대비 +123.0%), 영업이익 1,523억원(+179.0%)을 기록했으며, 미국 아마존 뷰티 카테고리에서 2026년 1분기 점유율 14.1%로 1위를 차지하는 등 브랜드 경쟁력이 실적으로 확인되고 있다. ODM 업체 중에서는 한국콜마가 한국법인 위주 스킨케어 수출 수요 강세로 이익 레버리지 효과가 상승하는 모습을 보였다. 반면 중국 시장은 2015~2020년 케이뷰티 성장의 최대 동력이었으나 2023년 이후 구조 변화가 본격화되며 기회보다 리스크가 큰 관리형 시장으로 인식이 바뀌고 있다.",
-        "en": "Cumulative cosmetics exports in the first quarter of 2026 grew 17.7% year-on-year, and total exports in May rose 24% year-on-year, maintaining solid momentum. The United States, the largest export destination, led growth with 37.4% year-on-year expansion in the first quarter, while Southeast Asia is also cited as a potential growth area with projected increases of up to 18-20% for 2026, underscoring clear regional diversification. At the individual company level, APR reported first-quarter 2026 revenue of KRW 593.4 billion (up 123.0% year-on-year) and operating profit of KRW 152.3 billion (up 179.0%), and secured the top ranking with a 14.1% share in the US Amazon beauty category, confirming brand competitiveness through actual results. Among ODM companies, Kolmar Korea showed rising profit leverage driven by strong export demand for skincare products centered on its domestic entity. Conversely, China, once the primary growth engine for K-beauty between 2015 and 2020, has increasingly been viewed as a managed market carrying more risk than opportunity since structural changes accelerated from 2023 onward."
+        "ko": "최근 업황은 수출 중심의 구조적 성장이 뚜렷하게 확인된다. 하나증권은 2026년 한국 화장품 산업이 전년 대비 25% 이상 수출이 증가하며 역대 최대 글로벌 모멘텀을 향유하고 있다고 진단했다. 특히 2026년 들어 미국이 중국을 제치고 최대 수출국으로 부상하는 구조적 전환이 확인되고 있으며, 2026년 1분기 미국향 수출은 전년 동기 대비 급증한 반면 중국향은 감소하는 대조적 흐름이 나타났다. 2026년 2분기 공시 기준으로도 이러한 흐름이 실적에 반영돼, 에이피알은 매출 7,675억원(전년 동기 대비 +134.2%), 영업이익 1,906억원(전년 동기 대비 +125.4%)을 기록했고 실리콘투도 매출 4,026억원(전년 동기 대비 +51.8%), 영업이익 830억원(전년 동기 대비 +59.0%)으로 고성장을 이어갔다. 아모레퍼시픽과 LG생활건강 등 대형 브랜드사는 매출 성장률은 상대적으로 낮았으나 영업이익이 각각 전년 동기 대비 +59.3%, +87.5%로 크게 개선돼 수익성 레버리지가 부각됐다. 한편 최근에는 중국향 수출도 저점 대비 반등 조짐이 나타나 업종 전반의 수출처 다변화가 동시에 진행되고 있다.",
+        "en": "Recent industry conditions clearly confirm export-driven structural growth. According to Hana Securities, Korea's 2026 cosmetics industry is enjoying its largest-ever global momentum as exports grew more than 25% year-over-year. In particular, a structural shift has been confirmed in 2026 whereby the United States overtook China as the largest export destination, with first-quarter 2026 exports to the US surging year-over-year while shipments to China contracted. This trend was also reflected in second-quarter 2026 disclosed results, as APR recorded revenue of KRW 767.5 billion (up 134.2% year-over-year) and operating profit of KRW 190.6 billion (up 125.4%), while Silicon2 also sustained rapid growth with revenue of KRW 402.6 billion (up 51.8%) and operating profit of KRW 83.0 billion (up 59.0%). Large brand companies such as Amorepacific and LG Household & Health Care posted relatively modest revenue growth but saw operating profit improve sharply by 59.3% and 87.5% respectively, highlighting emerging profitability leverage. Meanwhile, exports to China have also shown signs of rebounding from their lows, indicating that export destination diversification is proceeding across the sector simultaneously."
       },
       "outlook": {
-        "ko": "정부와 업계는 2026년을 수출 150억 달러 돌파를 위한 추격과 재편의 해로 규정하고 있으며, 일부 기관은 2026년 화장품 수출이 125억 달러에 이를 것으로 전망하는 등 성장 지속에 대한 기대가 유지되고 있다. 성장 동인으로는 기초, 헤어, 바디케어 등 수출 품목 다변화에 성공한 기업들이 향후 성장을 이끌 것이라는 시각이 우세하며, ODM 업체 중에서는 한국콜마와 코스메카코리아가 포트폴리오 확장에 따른 수혜가 클 것으로 기대된다. 다만 대형 브랜드사의 하반기 매출 성장률과 영업이익률 개선 폭이 중소 브랜드사보다 뚜렷할 것으로 전망돼, 규모별 실적 차별화가 지속될 가능성이 있다. 밸류에이션 측면에서는 화장품사들의 2026년 예상 실적 기준 PER이 2023년 대비 50% 낮은 20배 이하에 머무르는 점이 향후 리레이팅 여부를 판단하는 참고 지표로 거론된다. 관전 포인트는 수출 성장률의 지속 여부와, 2026년 수출 성장률이 워낙 높은 만큼 2027년 기저효과로 성장률이 자연스럽게 낮아질 가능성에 대한 대응이다.",
-        "en": "Government and industry sources are framing 2026 as a year of pursuit and restructuring aimed at surpassing USD 15 billion in cosmetics exports, with some institutions projecting exports to reach USD 12.5 billion, reflecting continued expectations for sustained growth. The prevailing view is that companies successful in diversifying export categories into skincare, hair, and body care will lead future growth, with ODM firms Kolmar Korea and Cosmecca Korea expected to benefit significantly from portfolio expansion. However, large brand owners are forecast to show more pronounced revenue growth and margin improvement in the second half compared to smaller brands, suggesting scale-based performance differentiation may persist. On valuation, the fact that cosmetics companies' forward P/E based on 2026 estimates remains below 20x, roughly 50% lower than 2023 levels, is cited as a reference point for assessing potential re-rating. Key monitoring points include whether export growth rates can be sustained, given that the unusually high growth in 2026 raises the possibility of a natural slowdown from base effects in 2027."
+        "ko": "향후 업종의 핵심 관전 포인트는 미국·유럽 시장에서의 유통 채널 확장이다. 아마존 중심이었던 온라인 판매에서 세포라, 얼타뷰티, 타겟, 코스트코 등 오프라인 채널로 확대되는 흐름이 매출 기여도를 키울 수 있는 요인으로 지목된다. 기초 화장품과 색조뿐 아니라 헤어케어, 바디케어, 홈뷰티 디바이스 등 카테고리 확장도 성장 동인으로 거론되며, 이는 브랜드사뿐 아니라 ODM사와 부품 공급사로도 수혜가 확산될 수 있는 구조다. 동시에 중국향 수출이 반등 조짐을 보이는 점은 기존 성장축인 미국·유럽에 더해 추가적인 수요 모멘텀으로 작용할 가능성이 있다. 업종 전반적으로는 매출 성장과 함께 영업비용 부담을 흡수하는 수익성 레버리지가 지속될 수 있는지가 향후 실적 흐름을 가늠하는 핵심 변수로 꼽힌다.",
+        "en": "The key factor to monitor going forward is the expansion of distribution channels in the US and European markets. The shift from primarily Amazon-centered online sales toward offline channels such as Sephora, Ulta Beauty, Target, and Costco is cited as a factor that could increase revenue contribution. Category expansion beyond basic skincare and color cosmetics into haircare, bodycare, and home beauty devices is also mentioned as a growth driver, with a structure in which benefits could spread not only to brand companies but also to ODM firms and component suppliers. At the same time, signs of a rebound in exports to China could serve as an additional demand catalyst alongside the existing US and European growth axes. Across the sector overall, whether profitability leverage that absorbs operating expense burdens alongside revenue growth can be sustained is cited as the key variable for future earnings trends."
       },
       "risks": [
         {
           "title": {
-            "ko": "중국 시장 구조적 리스크",
-            "en": "Structural Risk in the China Market"
+            "ko": "환율 및 관세 변동성",
+            "en": "Exchange Rate and Tariff Volatility"
           },
           "body": {
-            "ko": "중국은 과거 케이뷰티 성장의 핵심 동력이었으나 2023년 이후 구조 변화가 본격화되면서 기회보다 리스크가 큰 관리형 시장으로 성격이 바뀌고 있다. 규제·물류·재고 리스크가 동시에 증가하는 국면이어서 중국 노출도가 높은 기업의 실적 변동성을 주시할 필요가 있다.",
-            "en": "China was historically the core growth driver for K-beauty, but since structural changes accelerated from 2023, it has increasingly become a managed market with more risk than opportunity. As regulatory, logistics, and inventory risks rise simultaneously, earnings volatility at companies with high China exposure warrants close monitoring."
+            "ko": "수출 비중이 높아진 만큼 원달러·원유로 환율 변동이 실적에 미치는 영향이 커졌다. 미국 등 주요 수출국의 관세 정책 변화도 수출 채산성에 영향을 줄 수 있는 변수로 꼽힌다.",
+            "en": "As export exposure has increased, the impact of KRW/USD and KRW/EUR exchange rate fluctuations on earnings has grown accordingly. Changes in tariff policy in major export destinations such as the United States are also cited as a variable that could affect export profitability."
           }
         },
         {
           "title": {
-            "ko": "브랜드 편중 및 트렌드 의존 리스크",
-            "en": "Brand Concentration and Trend Dependency Risk"
+            "ko": "채널·브랜드 집중 리스크",
+            "en": "Channel and Brand Concentration Risk"
           },
           "body": {
-            "ko": "하나의 브랜드와 소수 히트제품에 실적이 집중된 기업은 성장률이 낮아지는 순간 밸류에이션 할인 위험이 커질 수 있다. 소셜미디어 기반 트렌드 변화 속도가 빠른 업종 특성상 특정 브랜드·제품 의존도가 높은 중소형 브랜드사의 경우 수요 변동에 따른 실적 충격이 상대적으로 클 수 있다.",
-            "en": "Companies whose earnings are concentrated in a single brand or a small number of hit products may face heightened valuation discount risk once growth rates decelerate. Given the rapid pace of trend shifts driven by social media, smaller brand companies with high dependency on specific products may be more exposed to earnings shocks from demand volatility."
+            "ko": "온라인 플랫폼 또는 특정 오프라인 유통사에 매출이 집중될 경우 해당 채널의 정책 변화나 입점 조건 변동이 개별 기업 실적에 직접적 영향을 줄 수 있다. 인디 브랜드 중심의 빠른 트렌드 교체 속에서 특정 브랜드 의존도가 높은 기업은 유행 변화에 따른 변동성에 노출될 수 있다.",
+            "en": "When revenue is concentrated in online platforms or specific offline retailers, changes in that channel's policies or listing terms can directly affect individual companies' earnings. Companies with high dependence on specific brands may be exposed to volatility stemming from trend shifts amid the rapid turnover characteristic of indie brand-driven growth."
           }
         },
         {
           "title": {
-            "ko": "수출 성장률 둔화 및 기저효과",
-            "en": "Export Growth Deceleration and Base Effect"
+            "ko": "경쟁 심화 및 중국 저가 공세",
+            "en": "Intensifying Competition and Low-Cost Chinese Rivalry"
           },
           "body": {
-            "ko": "2026년 수출 성장률이 워낙 높기 때문에 2027년에는 기저효과로 성장률이 자연스럽게 낮아질 가능성이 있다. 아울러 글로벌 리테일러와 브랜드가 예상보다 많은 재고를 확보할 경우 이후 ODM 발주가 일시적으로 감소할 수 있어 재고 사이클에 따른 실적 변동에도 유의할 필요가 있다.",
-            "en": "Because export growth in 2026 is unusually high, there is a possibility of a natural slowdown in growth rates in 2027 due to base effects. Additionally, if global retailers and brands secure more inventory than expected, subsequent ODM orders could temporarily decline, warranting attention to earnings fluctuations tied to the inventory cycle."
+            "ko": "아시아·태평양 지역에서는 중국 화장품의 저가 공세로 성장세가 둔화되는 모습이 나타난 바 있어, 이 지역 내 경쟁 구도 변화가 지속적인 관찰 대상이다. 글로벌 시장에서도 현지 브랜드 및 타국 뷰티 브랜드와의 경쟁이 심화될 경우 점유율 확대 속도에 영향을 줄 수 있다.",
+            "en": "In the Asia-Pacific region, growth has shown signs of slowing due to low-cost competition from Chinese cosmetics brands, making shifts in the regional competitive landscape an ongoing point of observation. Intensifying competition from local and other international beauty brands in global markets could also affect the pace of market share expansion."
           }
         }
       ],
-      "sources": [
-        "https://finance.thesmileinfo.com/2026/08/beauty.html",
-        "https://www.lever.me/blog/3439",
-        "https://www.shinhangroup.com/kr/archive/insight/extend/detail/32899",
-        "https://www.cosmorning.com/news/article.html?no=51899",
-        "https://kbthink.com/securities-view.html?docId=20260507082050367K",
-        "https://palms.blog/apr/1q26-earning",
-        "https://www.shinhangroup.com/kr/archive/insight/extend/detail/32835",
-        "http://www.cmn.co.kr/mobile/sub_view.asp?news_idx=48759"
-      ],
       "sector": "화장품",
-      "generatedAt": "2026-09-04 15:34"
+      "generatedAt": "2026-10-08 19:52"
     },
     "전기장비": {
       "lead": {
@@ -1195,67 +1189,64 @@ window.KOS_SECTORS = {
     },
     "반도체": {
       "lead": {
-        "ko": "AI 인프라 투자 확대에 따른 메모리 슈퍼사이클이 업종 전반을 견인하고 있으며, 한국 증시 최대 업종으로서 지수 흐름에 미치는 영향력이 매우 크다.",
-        "en": "The industry is being driven by a memory super-cycle fueled by expanding AI infrastructure investment, and as the largest sector in the Korean stock market it exerts substantial influence on overall index movements."
+        "ko": "AI 인프라 투자 확대에 따른 메모리 슈퍼사이클이 지속되며 국내 반도체 업종 전반의 실적 모멘텀이 강화되고 있다.",
+        "en": "The domestic semiconductor sector continues to benefit from a memory supercycle driven by expanding AI infrastructure investment, reinforcing earnings momentum across the industry."
       },
       "overview": {
-        "ko": "반도체 업종은 메모리(D램·낸드), 시스템반도체(파운드리·팹리스), 후공정(패키징·테스트), 소재·부품·장비(소부장)로 구성되는 광범위한 산업이다. 한국 증시에서는 시가총액 기준 압도적인 최대 업종으로, 전체 시장에서 차지하는 비중이 다른 어떤 업종보다도 크다는 점이 특징이다. 다만 상장 종목 수는 많으나 개별 기업 규모의 편차가 매우 커서, 초대형주 소수와 중소형 소부장 다수로 구성된 이원적 구조를 보인다. 메모리 분야에서는 한국이 글로벌 시장을 주도하고 있으며, 특히 고대역폭메모리(HBM) 등 AI용 첨단 메모리에서 기술 경쟁력을 보유하고 있다. 파운드리와 첨단 패키징, 장비 국산화 등은 여전히 해외 의존도가 존재해 산업 전반의 경쟁 구도가 복합적이다.",
-        "en": "The semiconductor industry encompasses memory (DRAM/NAND), system semiconductors (foundry/fabless), back-end processes (packaging/testing), and materials, parts and equipment, forming an extensive value chain. In the Korean stock market it is by far the largest sector by market capitalization, occupying a share of the overall market unmatched by any other industry. While the number of listed companies is large, the disparity in individual company scale is substantial, resulting in a dual structure of a handful of mega-caps alongside numerous small and mid-cap equipment and materials suppliers. In memory, Korea leads the global market, holding particular technological competitiveness in advanced AI memory such as high-bandwidth memory (HBM). Foundry, advanced packaging, and equipment localization still involve dependence on overseas suppliers, making the overall competitive landscape multifaceted."
+        "ko": "반도체 업종은 메모리와 시스템반도체(파운드리·팹리스), 그리고 이를 뒷받침하는 장비·소재·후공정 기업들로 구성된 한국 증시 최대 업종이다. 전체 시장 시가총액의 절반 가까이를 차지할 만큼 비중이 압도적이며, 이는 삼성전자와 SK하이닉스 두 메모리 공급사의 압도적 위상에 기인한다. 상장 종목 수는 170여 개에 달해 소재·부품·장비 전 분야에 걸쳐 두터운 공급망을 형성하고 있다는 점도 특징이다. 다만 시가총액은 상위 소수 종목에 극도로 집중돼 있어 업종 지수의 등락이 메모리 양강 기업의 주가 흐름에 좌우되는 구조다. 한국 증시에서 반도체는 수출과 경기 민감도가 높은 대표 업종으로, 글로벌 IT 수요 사이클과 환율, 미중 기술 패권 경쟁의 영향을 직접적으로 받는다.",
+        "en": "The semiconductor sector is the largest industry group on the Korean stock market, encompassing memory and system semiconductor (foundry/fabless) producers along with the equipment, materials, and back-end process companies that support them. Its weight is overwhelming, accounting for nearly half of total market capitalization, a reflection of the dominant positions held by Samsung Electronics and SK Hynix in memory. With roughly 170 listed companies, the sector also features a deep supply chain spanning materials, components, and equipment. However, market capitalization is heavily concentrated among a handful of top names, meaning the sector index tends to move in lockstep with the two memory giants. As Korea's leading export- and cycle-sensitive industry, semiconductors are directly exposed to global IT demand cycles, currency movements, and US-China technology competition."
       },
       "structure": {
-        "ko": "밸류체인 최상단에는 메모리 종합반도체 기업인 삼성전자와 SK하이닉스가 위치하며, 이들이 업종 시가총액의 절대다수를 차지하는 압도적 집중도를 보인다. 파운드리 영역에서는 DB하이텍이 아날로그·특화공정 중심으로 자리하고 있다. 후공정·패키징 장비 쪽에서는 한미반도체가 HBM 생산에 필수적인 TC 본더 시장에서 글로벌 1위 지위를 보유하고 있으며, 이오테크닉스는 레이저 마킹·본딩 장비, ISC는 테스트 소켓 분야에서 각각 경쟁력을 갖추고 있다. 전공정 장비에서는 원익IPS와 주성엔지니어링이 증착 장비를 공급하며, HPSP는 고압수소어닐링 장비에서 독자적 지위를 확보하고 있다. 기판·패키징 소재 부문에서는 대덕전자와 심텍이 반도체 패키지 기판을, 리노공업은 테스트 소켓 및 프로브카드 부품을 공급하며 밸류체인 전반에 걸쳐 다양한 중소형 전문기업들이 분포한다.",
-        "en": "At the top of the value chain sit integrated memory device makers Samsung Electronics and SK hynix, which together account for an overwhelming majority of the sector's market capitalization, reflecting extreme concentration. In foundry, DB HiTek is positioned around analog and specialty processes. In back-end packaging equipment, Hanmi Semiconductor holds the global No. 1 position in the TC bonder market essential for HBM production, while EO Technics specializes in laser marking and bonding equipment and ISC in test sockets. In front-end equipment, Wonik IPS and Jusung Engineering supply deposition equipment, and HPSP has secured a distinct position in high-pressure hydrogen annealing equipment. In substrate and packaging materials, Daeduck Electronics and SIMMTECH supply semiconductor package substrates, while Leeno Industrial provides test sockets and probe card components, illustrating a diverse array of small and mid-cap specialists distributed across the value chain."
+        "ko": "밸류체인 최상단에는 메모리 종합반도체기업(IDM)인 삼성전자와 SK하이닉스가 위치하며, 양사는 D램·낸드 생산은 물론 HBM 등 고부가 제품까지 아우르는 수직계열화 구조를 갖추고 있다. 파운드리·시스템반도체 영역에서는 DB하이텍이 8인치 아날로그·혼성신호 파운드리를 전문으로 하며 독자적 입지를 확보하고 있다. 후공정·패키징 관련해서는 한미반도체와 이오테크닉스가 각각 TC본더·레이저 장비, 대덕전자와 심텍이 반도체 기판(패키지 서브스트레이트) 분야에서 역할을 담당한다. 전공정 장비에서는 주성엔지니어링과 원익IPS가 증착·식각 장비를, HPSP는 고압수소 어닐링 장비로 특화된 공정 솔루션을 제공한다. 검사·테스트 분야에서는 리노공업과 ISC가 테스트 소켓·프로브 핀 시장에서 높은 점유율을 보유하고 있어, 업종 내 세분화된 전문 기업들이 메모리 양강을 중심으로 유기적인 공급망을 형성하고 있다.",
+        "en": "At the top of the value chain sit Samsung Electronics and SK Hynix, integrated device manufacturers that operate vertically integrated structures spanning DRAM and NAND production as well as high-value-added products such as HBM. In foundry and system semiconductors, DB HiTek has carved out a distinct niche as a specialized 8-inch analog and mixed-signal foundry. In back-end packaging, Hanmi Semiconductor and EO Technics supply TC bonders and laser equipment respectively, while Daeduck Electronics and Simmtech serve the package substrate segment. In front-end equipment, Jusung Engineering and Wonik IPS provide deposition and etching tools, and HPSP offers specialized high-pressure hydrogen annealing solutions. In inspection and testing, Leeno Industries and ISC hold substantial shares of the test socket and probe pin markets, together forming a tightly interlinked supply chain anchored by the two memory leaders."
       },
       "trends": {
-        "ko": "최근 업황은 인공지능 인프라 투자 확산에 따른 메모리 수요 급증이 핵심 동력으로 작용하고 있다. 삼성전자와 SK하이닉스는 2025년 사상 최대 실적을 발판 삼아 2026년 역대 최대 규모의 설비투자에 나서고 있으며, HBM 시장 주도권 확보와 선단 공정 전환을 위해 전례 없는 투자를 단행하고 있다. SK하이닉스는 HBM을 포함한 D램과 낸드플래시 생산 능력이 2026년까지 사실상 완판 상태에 도달해 판매자 우위 시장이 형성됐다. 2026년 2분기 범용 D램 계약 가격은 전 분기 대비 58~63%, 낸드플래시는 70~75% 급등할 것으로 예상되는 등 가격 상승세가 뚜렷하다. HBM 부문에서는 2026년 1분기 매출 기준 시장 점유율이 SK하이닉스 58%, 삼성전자·마이크론이 각 21%로 나타났으며, 삼성전자는 HBM4 공급 확대로 연말까지 점유율 확대를 목표로 하고 있다. 장비 부문에서도 한미반도체가 TC본더 시장에서 71.2% 점유율로 글로벌 1위를 유지하며 차세대 HBM5·HBM6용 장비 개발을 진행하고 있다.",
-        "en": "Recent industry conditions have been driven primarily by surging memory demand tied to the expansion of AI infrastructure investment. Samsung Electronics and SK hynix are undertaking record-scale capital expenditure in 2026 on the back of record 2025 earnings, making unprecedented investments to secure HBM market leadership and advance leading-edge process transitions. SK hynix's DRAM, NAND, and HBM production capacity has reached effective sell-out status through 2026, creating a firmly seller-favorable market. Pricing momentum has been pronounced, with general-purpose DRAM contract prices expected to surge and NAND flash prices rising sharply quarter-on-quarter in the second quarter of 2026. In HBM, first-quarter 2026 revenue-based market share showed SK hynix at 58% and Samsung Electronics and Micron tied at 21% each, with Samsung targeting expanded share by year-end through increased HBM4 supply. In equipment, Hanmi Semiconductor has maintained global No. 1 status in the TC bonder market with a 71.2% share while developing next-generation equipment for HBM5 and HBM6."
+        "ko": "2026년 2분기 공시 기준 삼성전자는 매출 171조 4,995억원, 영업이익 89조 4,924억원을 기록하며 전년 동기 대비 각각 130.0%, 1,813.8% 증가하는 폭발적 성장세를 보였다. SK하이닉스 역시 같은 기간 매출 79조 3,187억원, 영업이익 60조 5,426억원으로 전년 대비 각각 256.8%, 557.2% 늘어나며 메모리 가격 상승의 수혜를 직접적으로 반영했다. 카운터포인트리서치에 따르면 2026년 2분기 글로벌 HBM 시장에서 SK하이닉스가 매출 기준 점유율 50%로 1위를 지켰으나, 전년 동기 64%였던 점유율보다는 낮아진 것으로 나타났다. 반면 삼성은 점유율을 21%(1분기)에서 33%로 크게 끌어올리며 격차를 좁혔다. 장비·소재·후공정 기업들의 실적도 전반적으로 메모리 호황 수혜를 공유해, 한미반도체·대덕전자·심텍·DB하이텍·ISC 등이 2분기 두 자릿수 이상의 매출 성장을 기록한 반면, 주성엔지니어링과 원익IPS는 고객사 투자 시기 차이 등으로 매출과 영업이익이 전년 대비 감소하는 등 하위 종목 간 실적 편차가 뚜렷하게 나타났다.",
+        "en": "According to Q2 2026 disclosures, Samsung Electronics posted sales of KRW 171.4995 trillion and operating profit of KRW 89.4924 trillion, representing year-on-year increases of 130.0% and 1,813.8% respectively, an explosive growth trajectory. SK Hynix likewise recorded sales of KRW 79.3187 trillion and operating profit of KRW 60.5426 trillion in the same period, up 256.8% and 557.2% year-on-year, directly reflecting the benefits of rising memory prices. According to Counterpoint Research, in the second quarter of 2026 SK Hynix retained the top spot in the global HBM market with a revenue-based share of 50%, though this was down from 64% in the same period a year earlier. By contrast, Samsung sharply increased its share from 21% in the first quarter to 33%, narrowing the gap. Equipment, materials, and back-end companies broadly shared in the memory boom, with Hanmi Semiconductor, Daeduck Electronics, Simmtech, DB HiTek, and ISC posting double-digit or higher sales growth in the second quarter, while Jusung Engineering and Wonik IPS saw sales and operating profit decline year-on-year amid differing customer investment timing, highlighting a clear divergence in performance among second-tier names."
       },
       "outlook": {
-        "ko": "향후 전망의 핵심 동인은 AI 서버 및 데이터센터 확산에 따른 HBM 수요의 지속적 확대다. 글로벌 업체들은 HBM을 중심으로 한 AI 전용 메모리 수요가 2025~2028년 사이 빠른 증가세를 보일 것으로 예상되며, 2026년 HBM 시장 규모는 전년 대비 58% 증가할 것으로 추산된다. 차세대 HBM4 세대에서도 SK하이닉스가 약 70%의 점유율을 달성할 것으로 예상되는 등 국내 기업의 리더십 지속 여부가 관전 포인트다. 장비 부문에서는 TC 본더 시장이 2025년 단기 정상화를 거친 후 2026년부터 다시 본격적인 반등이 예상되며 2030년까지 연평균 13% 성장할 것이라는 전망이 나온다. 다만 2026년 이후 HBM 가격이 경쟁 심화와 생산능력 확대로 조정 국면에 들어갈 가능성도 제기되는 만큼, 공급 확대 속도와 가격 흐름의 지속성이 향후 실적 방향을 좌우할 것으로 보인다. 파운드리·소부장 국산화 진척도와 후발 업체들의 기술 추격 속도 역시 중장기 경쟁 구도에 영향을 줄 변수다.",
-        "en": "The key driver going forward is the continued expansion of HBM demand tied to the proliferation of AI servers and data centers. Demand for AI-dedicated memory centered on HBM is expected to grow rapidly between 2025 and 2028, with the 2026 HBM market estimated to expand 58% year-on-year. Whether domestic firms sustain their leadership is a key point to watch, with SK hynix projected to achieve roughly 70% share in the next-generation HBM4 market as well. In equipment, the TC bonder market is expected to rebound from 2026 following a brief normalization in 2025, growing at an average annual rate of about 13% through 2030. However, given the possibility that HBM pricing could enter an adjustment phase after 2026 amid intensifying competition and capacity expansion, the pace of supply growth and the durability of pricing trends will likely shape future earnings direction. The progress of foundry and equipment localization, along with the pace of technological catch-up by later entrants, are also variables that could affect the medium- to long-term competitive landscape."
+        "ko": "업계 전망에 따르면 DRAM 3사가 2026년 CapEx를 전년 대비 평균 40% 이상 상향했지만, 유의미한 출하 확대는 2027년 하반기 이후에나 반영될 가능성이 높다는 분석이 나오고 있어, 당분간 공급 제약이 가격 강세를 뒷받침하는 구조가 이어질 가능성이 거론된다. HBM 시장에서는 현재 매출의 대부분이 HBM3E에서 발생하고 있으며, HBM4 출하는 2026년 하반기부터 본격적으로 가시화될 전망이어서 차세대 제품 전환이 하반기 이후 주요 관전 포인트로 꼽힌다. 다만 일각에서는 중국 기업의 공격적 생산능력 확대에 따라 메모리 가격 하락 가능성도 제기되고 있어, 공급 측 변수가 사이클의 지속 기간을 좌우할 전망이다. 후공정·장비 기업들은 HBM 및 선단 공정 전환 투자 확대의 직접적 수혜 범위에 있어, 관련 투자 집행 속도와 고객사 발주 동향이 개별 기업 실적의 주요 변수로 작용할 것으로 보인다. 시스템반도체·파운드리 영역은 메모리 대비 상대적으로 완만한 흐름을 보이고 있어, 메모리와의 실적 격차가 업종 내 종목별 주가 차별화 요인으로 작용할 가능성이 있다.",
+        "en": "Industry analysis suggests that while the three major DRAM makers have raised their 2026 capex by an average of more than 40% year-on-year, meaningful shipment expansion is unlikely to materialize before the second half of 2027, implying that supply constraints could continue to underpin price strength for some time. In the HBM market, most current revenue is still generated from HBM3E, with HBM4 shipments expected to become fully visible from the second half of 2026, making the transition to next-generation products a key point to watch in the latter half of the year. At the same time, some observers have raised the possibility of a decline in memory prices driven by aggressive capacity expansion from Chinese manufacturers, suggesting that supply-side variables will determine how long the current cycle persists. Back-end and equipment companies stand to benefit directly from expanded investment in HBM and leading-edge process transitions, making the pace of related capex execution and customer order flow key variables for individual company performance. The system semiconductor and foundry segment has shown comparatively subdued momentum relative to memory, which could drive further differentiation in stock performance within the sector."
       },
       "risks": [
         {
           "title": {
-            "ko": "메모리 가격 사이클 반전 위험",
-            "en": "Risk of Memory Price Cycle Reversal"
+            "ko": "메모리 가격 사이클 반전 리스크",
+            "en": "Memory Price Cycle Reversal Risk"
           },
           "body": {
-            "ko": "현재의 가격 급등세는 공급 제약과 수요 급증이 겹친 결과이며, 증설된 생산능력이 가동되는 시점에 공급 과잉으로 전환될 가능성이 존재한다. 일부 시장조사기관은 2026년 이후 HBM 가격이 경쟁 심화로 조정 국면에 진입할 가능성을 제기하고 있어 업황 반전 시 실적 변동성이 커질 수 있다.",
-            "en": "The current price surge results from the coincidence of supply constraints and a demand spike, and there is a possibility of a shift toward oversupply once expanded capacity comes online. Some market research firms have raised the possibility that HBM pricing could enter an adjustment phase after 2026 amid intensifying competition, which could increase earnings volatility if conditions reverse."
+            "ko": "현재의 가격 강세는 공급 제약에 크게 의존하고 있어, 중국 업체의 생산능력 확대나 투자 사이클 변화에 따라 가격 흐름이 급반전될 가능성이 상존한다. 메모리 비중이 높은 업종 특성상 가격 변동은 상위 기업뿐 아니라 장비·소재 밸류체인 전반의 실적에 직접적인 영향을 미친다.",
+            "en": "The current price strength depends heavily on supply constraints, meaning a shift in Chinese capacity expansion or investment cycles could trigger a sharp reversal in pricing trends. Given the sector's heavy memory weighting, price swings directly affect not only the top companies but the entire equipment and materials value chain."
           }
         },
         {
           "title": {
-            "ko": "중국 업체의 추격 및 지정학적 리스크",
-            "en": "Chinese Competitor Catch-up and Geopolitical Risk"
+            "ko": "업종 내 양극화 심화",
+            "en": "Growing Polarization Within the Sector"
           },
           "body": {
-            "ko": "중국 CXMT와 YMTC 등이 D램·낸드 분야에서 생산능력을 빠르게 확대하며 점유율을 늘려가고 있어 중장기적으로 경쟁 구도에 변화를 줄 수 있다. 미중 반도체 규제 변화, 대중 수출 통제 등 지정학적 요인도 국내 기업의 공급망과 매출 구조에 영향을 미칠 수 있는 변수다.",
-            "en": "Chinese firms such as CXMT and YMTC are rapidly expanding production capacity in DRAM and NAND and gaining share, which could alter the competitive landscape over the medium to long term. Geopolitical factors such as changes in U.S.-China semiconductor regulations and export controls toward China are also variables that could affect the supply chains and revenue structures of domestic companies."
+            "ko": "2분기 실적을 보면 메모리 대형주와 HBM 관련 후공정 장비주는 큰 폭의 성장을 기록한 반면, 일부 전공정 장비 기업은 매출과 이익이 오히려 감소해 수혜의 편중이 뚜렷하다. 고객사 투자 시점과 제품 포트폴리오에 따라 개별 기업 간 실적 격차가 계속 벌어질 가능성이 있다.",
+            "en": "Second-quarter results show large memory names and HBM-related back-end equipment makers posting substantial growth, while some front-end equipment companies saw sales and profit decline, indicating a pronounced concentration of benefits. Performance gaps between individual companies could continue to widen depending on customer investment timing and product portfolios."
           }
         },
         {
           "title": {
-            "ko": "특정 고객사·제품 의존도에 따른 집중 위험",
-            "en": "Concentration Risk from Customer and Product Dependence"
+            "ko": "지정학·공급망 변수",
+            "en": "Geopolitical and Supply Chain Variables"
           },
           "body": {
-            "ko": "업종 내 상당수 소부장 기업들이 소수 대형 메모리 제조사에 매출이 집중되어 있어, 고객사의 투자 계획이나 특정 세대 제품 전환 시점 변화가 실적에 직접적인 영향을 미칠 수 있다. HBM 등 특정 제품 비중이 높은 기업의 경우 차세대 기술(하이브리드 본딩 등) 전환 지연이나 조기 도입 여부에 따른 매출 변동성도 관전 대상이다.",
-            "en": "A significant number of equipment and materials companies in the sector derive a large share of revenue from a small number of major memory manufacturers, meaning changes in customer capital expenditure plans or product generation transition timing can directly affect earnings. For companies with high exposure to specific products such as HBM, revenue volatility tied to delays or early adoption of next-generation technologies such as hybrid bonding also warrants monitoring."
+            "ko": "미중 기술 패권 경쟁에 따른 수출 통제, 관세 정책 변화 등은 반도체 업종의 대외 의존도가 높은 만큼 공급망 전반에 영향을 줄 수 있는 변수다. 주요 고객사의 지역별 생산 전략 변화나 규제 강화는 개별 기업의 매출 구조에도 파급될 수 있다.",
+            "en": "Export controls and tariff policy shifts stemming from US-China technology competition represent variables that could affect the broader supply chain, given the sector's high dependence on external markets. Changes in major customers' regional production strategies or tightened regulations could also ripple through individual companies' revenue structures."
           }
         }
       ],
       "sources": [
-        "https://www.g-enews.com/article/Global-Biz/2026/01/202601011740189328fbbec65dfb_1",
-        "https://www.epnc.co.kr/news/articleView.html?idxno=400242",
-        "https://linkareer.com/stem-community/stem-employment/6220007",
-        "https://v.daum.net/v/20260211095705346",
-        "https://news.skhynix.co.kr/2026-market-outlook/",
-        "https://www.sisajournal-e.com/news/articleView.html?idxno=417986"
+        "https://korea.counterpointresearch.com/global-hbm-market-share-q2-2026/",
+        "https://www.shinhangroup.com/kr/archive/insight/extend/detail/32873",
+        "https://tradersunion.com/ko/news/financial-news/show/2072010-korea-memory-semiconductor-2026-price-drop/"
       ],
       "sector": "반도체",
-      "generatedAt": "2026-09-04 13:44"
+      "generatedAt": "2026-10-08 19:52"
     },
     "게임": {
       "lead": {
