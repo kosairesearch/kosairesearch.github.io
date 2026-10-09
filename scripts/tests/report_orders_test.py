@@ -193,6 +193,14 @@ got = out.get("new_tickers", "").split(",") if out.get("new_tickers") else []
 ok(C not in got, "C — 리포트 파일이 있으니 다시 만들지 않는다", str(got))
 ok(got == [D, E], "D(파일 없음) · E(제목 없는 파일) 만 재시도", str(got))
 ok("색인 동기화 전 리포트 파일이 있는 종목 1개" in text, "로그에 남긴다")
+# 연속 3번 저장하지 못한 종목은 다시 주문하지 않는다(2026-10-09) — 2번까지는 다시 주문한다
+NL.FAIL_JS = DATA / "new_listing_fail.json"
+NL.FAIL_JS.write_text(json.dumps({D: {"n": 3, "last": "2026-10-09 23:30", "why": "검사 위반(style)"},
+                                  E: {"n": 2, "last": "2026-10-09 23:30", "why": "불완전(잘림 의심)"}}), encoding="utf-8")
+out, text = gh_out(NL.main)
+got = out.get("new_tickers", "").split(",") if out.get("new_tickers") else []
+ok(got == [E] and "다시 주문하지 않는다" in text and D in text, "연속 3번 저장하지 못한 D 는 빼고, 2번인 E 는 다시 주문한다", str(got))
+NL.FAIL_JS.unlink()
 # 색인을 못 읽으면 재시도하지 않는다(폭주 방지 그대로) — 파일로 채운 수가 그 판단을 바꾸지 않는다
 INDEX_JS.write_text("깨진 색인", encoding="utf-8")
 out, text = gh_out(NL.main)
@@ -322,6 +330,7 @@ def fake_client(status, results):
 
 
 GB.STATE_JS = DATA / "batch_state.json"
+GB.FAIL_JS = DATA / "new_listing_fail.json"
 GB.load_existing = lambda: ({}, set())
 GB.log = lambda *a, **k: None
 written.clear()
@@ -343,6 +352,8 @@ GB.collect_pending(cl, "2026-10-03 23:30")
 GB.REVIEW = False
 st = json.loads(GB.STATE_JS.read_text(encoding="utf-8"))
 ok(D in written and E not in written, "못 받은 배치의 리포트를 저장한다(불완전한 글은 버린다)", str(sorted(written)))
+fl = json.loads(GB.FAIL_JS.read_text(encoding="utf-8")) if GB.FAIL_JS.exists() else {}
+ok(fl.get(E, {}).get("n") == 1 and D not in fl, "저장하지 못한 E 를 센다(저장한 D 는 세지 않는다)", str(fl))
 ok(len(cl.messages.batches.reviews) == 1 and [r["custom_id"][:9] for r in cl.messages.batches.reviews[0]] == ["rv_" + D],
    "저장 전 검토를 배치 하나로 주문한다(완전한 글만)", str([[r["custom_id"] for r in q] for q in cl.messages.batches.reviews]))
 ok(not st.get("pending") and st.get("collected") == "2026-10-03 23:30", "회수 표시", str({k: st.get(k) for k in ('pending', 'collected')}))
