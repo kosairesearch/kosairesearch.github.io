@@ -191,6 +191,37 @@ for ko in ["가시화되기 전까지는 보수적 접근이 타당하다는 판
 for ko in ["KB증권은 단기 실적에는 보수적 접근이 바람직하다고 평가했다.", "규제기관의 보수적 접근이 심화될 리스크가 있다.",
            "분기 실적을 순차적으로 확인하는 접근이 유효하다."]:
     eq(ko[:30], rules_of(ko), [])
+print("\n── 연속 연수(streak): 정점 · 저점 다음 해부터 센다 ──")
+QA = {"annual": [{"year": y} for y in (2022, 2023, 2024, 2025)]}
+
+
+def srules(ko, quant=QA):
+    return sorted(h["rule"] for h in C.check({"lead": {"ko": ko, "en": "ok"}, **({"quant": quant} if quant else {})}))
+
+
+for ko in ["매출액은 2023년 729억원을 정점으로 2024년 687억원, 2025년 460억원으로 3년 연속 감소했다.",        # 본느(고치기 전)
+           "매출은 2022년 정점 이후 4년 연속 줄었다.",                                                     # DS단석
+           "연간 매출도 2023년 3,105억원을 정점으로 2년 연속 감소하며 3년 연속 매출 축소 흐름을 보였다.",     # 남선알미늄 — 둘째 표현
+           "영업이익은 2023년 15조 1,269억원을 정점으로 2024년 14조 2,396억원, 2025년 11조 4,679억원으로 줄었고 영업이익률은 "
+           "9.3%→8.1%→6.2%로 3년 연속 하락했다."]:                                                       # 현대차
+    eq(ko[:34], "streak" in srules(ko), True)
+for ko in ["매출은 2023년을 정점으로 2년 연속 감소했다.",
+           "레모나산 매출은 2022년 201억원으로 정점을 찍은 뒤 지난해 144억원까지 3년 연속 하락했다.",
+           "매출도 2022년 저점 이후 3년 연속 늘어나는 흐름을 보이고 있다.",
+           "2022년 752억원이던 연결 매출이 2025년 139억원까지 4년 연속 줄며 정점 대비 약 81% 감소했다.",       # '정점 대비'
+           "국내 패션시장 규모가 2023년 정점 이후 3년 연속 줄어 2026년 44.5조원까지 축소될 것으로 전망했다.",  # 전망 · 시장 규모
+           "국내 패션시장은 2023년 정점 이후 3년 연속 축소되는 구조적 조정 국면에 있다.",                     # 회사 실적이 아님
+           "순이익은 2023년 정점을 지나 2024~2025년 연속 감소했다."]:                                       # '2025년 연속'을 5년으로 읽지 않는다
+    eq(ko[:34], srules(ko), [])
+eq("실적 표가 없으면 판정하지 않는다(업종 분석 · 옛 형식)", srules("매출은 2022년 정점 이후 4년 연속 줄었다.", quant=None), [])
+eq("교정 지시에 연속 연수 규칙", "streak:" in C._RULE_TEXT, True)
+print("\n── 보고서 문체(style): 합쇼체 · 해요체 · 명사형 종결 ──")
+for ko in ["클라우드 전환이 빠르게 진행되고 있습니다.", "핵심 동인입니다.", "가능성이 큽니다.", "자동차시트 제조 및 판매를 영위하고 있음.",
+           "상호를 변경하였음.", "회사 가이던스가 확인됨.", "수익성이 제한적임.", "소각하기로 함.", "매출이 늘었어요."]:
+    eq(ko, "style" in rules_of(ko), True)
+for ko in ["매출이 늘었다.", "주가 상승으로 연결되기 어려운 구조다.", "확정된 것은 아니다.", "2025년 영업이익 149억원으로 흑자 전환",
+           "'시너지 효과'를 기대함", "본 자료는 투자 권유가 아니다."]:
+    eq(ko, "style" in rules_of(ko), False)
 print("\n── 검사 범위: 핵심 포인트 {ko, en} · 제목 · 옛 형식 칸 · 문자열 종합 의견 ──")
 eq("핵심 포인트의 가치 단정", [h["rule"] for h in C.check({"keypoints": [{"ko": "장부가치 대비 현저히 저평가된 상태", "en": "x"}]})], ["valuejudge"])
 eq("핵심 포인트 영문의 한글", [h["rule"] for h in C.check({"keypoints": [{"ko": "정상", "en": "Naver's '가 Sejong' data center"}]})], ["hangul_en"])
@@ -308,7 +339,7 @@ sectors = json.loads(re.search(r"=\s*(\{.*\})\s*;?\s*$", sec_js, re.S).group(1))
 # 업종 분석은 생성기(generate_sectors.defects)와 같은 기준 — 리포트 칸으로 옮겨 위험 등급 · 글자 결함 · 상대 시점 · 영어 낱말 ·
 # 영문 속 한글을 본다(리포트 화면용 품질 규칙 ROE · 말투 · 주당지표는 걸지 않는다).
 AS_REPORT = {"lead": "lead", "overview": "business", "structure": "industry", "trends": "earnings", "outlook": "outlook", "risks": "risks"}
-SEC_GATE = ("hanja", "meta", "hangul_en", "stale_time", "en_word")
+SEC_GATE = ("hanja", "meta", "hangul_en", "stale_time", "en_word", "style")
 for name, obj in sectors.items():
     if isinstance(obj, dict):
         bad += [("sectors/" + name, h) for h in C.defects(obj)]

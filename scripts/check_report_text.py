@@ -88,6 +88,12 @@ RULES = (
         r"매수\s*(추천|권[유고])|매도\s*(추천|권[유고])|지금이\s*기회"
         r"|(?<![가-힣])담을\s*만하|사\s*모을\s*만하"),
      "투자 권유로 읽히는 표현"),
+    # 보고서 문체가 아닌 문장 끝(2026-10-09) — 합쇼체 · 해요체 8편 78문장(더존비즈온은 본문 전체), 기업 개요를 그대로 옮긴 명사형
+    # 종결('…영위하고 있음.' · '…변경하였음.') 49문장. 문장 끝에서 마침표가 있을 때만 본다(핵심 포인트의 명사구는 보지 않는다).
+    ("style", "품질", re.compile(
+        r"(?:(?:습|입|합|됩|십|옵|큽|갑|봅|줍|냅|납|집|칩)니다|(?:해|에|예|어|아)요"
+        r"|있음|없음|했음|됐음|되었음|하였음|이었음|였음|(?<=[가-힣\s])(?:함|됨|임))[.!?]$"),
+     "보고서 문체가 아니다('…있습니다' · '…있음.') — '…이다 · …했다'로 끝낼 것"),
 )
 
 
@@ -363,6 +369,46 @@ def defects(rep):
     return hits
 
 
+# 'N년 연속 감소 · 증가' — 정점 · 저점 다음 해부터 센 햇수보다 크게 쓰면 실적 표와 어긋난다(2026-10-09 검토 시험에서 본느
+# '2023년 729억원을 정점으로 2024년 687억원, 2025년 460억원으로 3년 연속 감소'. 전수로 8건 · 6종목 — 모두 정점이 든 해까지 센 오류).
+# 글만 보고 판정하되 확실할 때만: 정점 연도가 '정점으로 · 정점을 찍은 뒤 · 정점 이후' 꼴로 있고, 회사 실적(매출 · 이익)을 말하고, 실적 표보다
+# 늦은 해(전망)가 없을 때. 끝 연도는 문장에 적힌 더 늦은 해, 없으면 실적 표의 마지막 해. '정점 대비' · 시장 규모 · 전망은 보지 않는다.
+_STREAK_PEAK = re.compile(r"(20\d\d)년[^.]{0,25}?(정점|고점|저점|바닥)(?:으로|을 찍은 뒤|을 찍고|을 지나| ?이후|에서)")
+_STREAK_N = re.compile(r"(?<![\d,])(\d|두|세|네|다섯)\s*년\s*연속\s*(?:[가-힣]{0,6}\s*)?"
+                       r"(감소|줄|축소|하락|역성장|증가|늘|확대|성장|상승|개선)")
+_STREAK_KO_N = {"두": 2, "세": 3, "네": 4, "다섯": 5}
+_STREAK_METRIC = re.compile(r"매출|영업이익|순이익|영업손실|순손실|이익률")
+
+
+def streak_hits(rep):
+    """정점 · 저점 다음 해부터 센 햇수보다 큰 'N년 연속'. 실적 표(quant.annual)가 없으면 판정하지 않는다."""
+    q = rep.get("quant") if isinstance(rep.get("quant"), dict) else {}
+    last_data = max((a.get("year") for a in (q.get("annual") or []) if isinstance(a, dict) and isinstance(a.get("year"), int)),
+                    default=None)
+    if not last_data:
+        return []
+    hits = []
+    for sec, s in sentences(rep):
+        pk = _STREAK_PEAK.search(s)
+        if not pk or not _STREAK_METRIC.search(s):
+            continue
+        yrs = [int(y) for y in re.findall(r"20\d\d", s)]
+        if any(y > last_data for y in yrs):
+            continue
+        peak = int(pk.group(1))
+        later = [y for y in yrs if y > peak]
+        span = (max(later) if later else last_data) - peak
+        for st in _STREAK_N.finditer(s, pk.end()):
+            n = _STREAK_KO_N.get(st.group(1)) or int(st.group(1))
+            if (pk.group(2) in ("정점", "고점")) != (st.group(2) in ("감소", "줄", "축소", "하락", "역성장")):
+                continue
+            if n > span:
+                hits.append({"rule": "streak", "level": "위험", "section": sec, "match": st.group(0),
+                             "why": f"{peak}년 {pk.group(2)} 뒤로는 {span}년인데 '{n}년 연속' — 정점 · 저점 다음 해부터 센다",
+                             "sentence": s[:160]})
+    return hits
+
+
 def check(rep):
     """위반 목록을 돌려준다. [] 면 통과."""
     hits = []
@@ -401,7 +447,7 @@ def check(rep):
             hits.append({"rule": "hangul_en", "level": "품질", "section": sec,
                          "match": t[i:i + 12], "why": "영문에 한글이 남았다 — 로마자/영문 명칭으로",
                          "sentence": t[max(0, i - 60):i + 60]})
-    return hits + defects(rep)
+    return hits + streak_hits(rep) + defects(rep)
 
 
 # ── 교정: 걸린 문장만 다시 쓴다 ──────────────────────────────────────────
@@ -422,7 +468,9 @@ _RULE_TEXT = "\n".join(f"  · {key}: {why}" for key, _lv, _pat, why in RULES) + 
     "\n  · stale_time: '지난달'·'이번 주'·'오늘'·'다음 달' 같은 상대 시점을 쓰지 말 것 — 날짜를 알면 '2026년 9월'처럼, 모르면"
     " 시점 표현을 뺀다."
     "\n  · en_word: 한국어 문장에 영어 일반 낱말을 섞지 말 것('Phase에 진입' → '단계에 진입', 'niche 영역' → '틈새 영역',"
-    " 'valuation' → '밸류에이션').")
+    " 'valuation' → '밸류에이션')."
+    "\n  · streak: 'N년 연속 감소 · 증가'는 실적 표에서 다시 센다 — 정점 · 저점 다음 해부터 센 햇수다('2023년 정점 → 2024 · 2025년 감소'는"
+    " 2년 연속). 햇수만 고치고, 같은 칸의 영어(three consecutive years 등)도 같이 고칠 것.")
 
 
 def _parse_json(text):
@@ -679,6 +727,7 @@ _WHY_EXTRA = {
     "target_price": "목표주가 인용 조건 미충족", "hangul_en": "영문에 한글이 남았다",
     "markup": "태그 · 인용 표시 · 마크다운", "broken_char": "깨지거나 엉뚱한 글자", "hanja": "한국어 문장 속 한자",
     "meta": "받은 자료를 가리키는 말", "stale_time": "상대 시점(지난달 · 이번 주 · 오늘)", "en_word": "한국어 문장 속 영어 낱말",
+    "streak": "연속 연수가 실적 표와 다름(정점 다음 해부터 센다)",
 }
 
 
