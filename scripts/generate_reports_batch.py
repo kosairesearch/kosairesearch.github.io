@@ -30,6 +30,31 @@ import check_report_text as C   # 저장 전 정리 · 검사 · 검토(2026-10-
 
 ROOT = Path(__file__).resolve().parent.parent
 STATE_JS = ROOT / "data" / "batch_state.json"
+# 저장하지 못한 신규 상장 종목의 연속 횟수(2026-10-09). 저장하지 못한 종목은 '리포트 없음'으로 남아 신규 상장 작업이 평일 밤마다
+# 다시 주문하는데, 같은 이유(검사 위반 · 잘린 글)로 계속 걸리면 상한 없이 돈이 나간다. new_listings.py 가 FAIL_MAX 번째부터
+# 재시도하지 않는다. 저장하면 그 종목 줄을 지운다. 사람이 다시 시도하게 하려면 이 파일에서 그 종목을 지운다.
+FAIL_JS = ROOT / "data" / "new_listing_fail.json"
+FAIL_MAX = 3
+
+
+def load_fails():
+    try:
+        return json.loads(FAIL_JS.read_text(encoding="utf-8")) if FAIL_JS.exists() else {}
+    except Exception:                                            # noqa: BLE001
+        return {}
+
+
+def save_fails(fails):
+    if fails:
+        FAIL_JS.write_text(json.dumps(fails, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    elif FAIL_JS.exists():
+        FAIL_JS.unlink()
+
+
+def bump_fail(fails, tk, why, as_of):
+    n = int((fails.get(tk) or {}).get("n", 0)) + 1
+    fails[tk] = {"n": n, "last": as_of, "why": str(why)[:120]}
+    return n
 
 MODEL = os.getenv("REPORT_MODEL", "claude-sonnet-4-6")
 TOP_N = int(os.getenv("REPORT_TOP_N", "100"))
@@ -220,6 +245,7 @@ def collect(cl, as_of):
 
     reports, _ = load_existing()
     ok, fail = 0, 0
+    fails = load_fails()     # 저장하지 못한 연속 횟수 — 글이 왔는데 쓰지 못한 경우만 센다(돈은 나갔다)
     cand = {}    # 검토 · 검사를 거칠 글 — {종목: 리포트}
     usage = {}   # 모델별 사용량 — 버린 결과까지 센다(돈은 나갔다)
     for result in cl.messages.batches.results(batch_id):
@@ -238,6 +264,7 @@ def collect(cl, as_of):
             rep = g.parse_report(text)
             if not g.valid_report(rep):
                 fail += 1
+                bump_fail(fails, tk, "불완전(잘림 의심)", as_of)
                 log(f"  · ⚠️ {tk} 불완전(잘림 의심) — 건너뜀, 기존 유지")
                 continue
             srcs = g.collect_sources(result.result.message)
@@ -255,6 +282,7 @@ def collect(cl, as_of):
             cand[tk] = C.prepare(fix_shape(rep))
         except Exception as e:
             fail += 1
+            bump_fail(fails, tk, f"파싱 실패 {type(e).__name__}", as_of)
             log(f"  · ⚠️ {tk} 파싱 실패: {type(e).__name__}: {e}")
 
     # 저장 전 검토 · 검사(2026-10-09). 전에는 회수한 글을 그대로 저장해, 신규 상장 리포트에 영문 속 한글 · 가치 단정 ·
@@ -282,13 +310,18 @@ def collect(cl, as_of):
         bad = C.check(rep)
         if bad:
             fail += 1
-            log(f"  · 🚫 {tk} 검사 위반 {len(bad)}건({', '.join(sorted({h['rule'] for h in bad}))}) — 저장하지 않음 · "
-                f"[{bad[0]['section']}] {bad[0]['match']!r} · {bad[0]['sentence'][:60]}")
+            rules = ", ".join(sorted({h['rule'] for h in bad}))
+            n = bump_fail(fails, tk, f"검사 위반({rules})", as_of)
+            log(f"  · 🚫 {tk} 검사 위반 {len(bad)}건({rules}) — 저장하지 않음 · "
+                f"[{bad[0]['section']}] {bad[0]['match']!r} · {bad[0]['sentence'][:60]}"
+                + (f" · 연속 {n}번째 — 신규 상장 작업이 더는 다시 주문하지 않는다" if n >= FAIL_MAX else ""))
             continue
         reports[tk] = rep
+        fails.pop(tk, None)
         ok += 1
 
     g.write_reports(reports, state.get("model", MODEL), as_of)
+    save_fails(fails)
     log(f"\n✅ 회수 완료 · 성공 {ok}/실패 {fail} · 총 보유 {len(reports)}개 → data/reports/ + reports-index.js")
     for mdl, a in usage.items():
         log(g.usage_line(mdl, a, "배치"))
