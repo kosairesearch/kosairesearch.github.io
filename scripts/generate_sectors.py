@@ -566,8 +566,9 @@ def live_number_hits(rep, info):
 
 
 # 저장을 막는 리포트 검사 규칙(위험 등급은 모두) — 2026-10-09 상대 시점 · 영어 낱말을 더했다(10월 8일 판의 '지난달에만' ·
-# 'Phase에 진입' · 'niche 영역'). 리포트 화면용 품질 규칙(ROE · TTM · 말투 · 주당지표)은 업종 분석에 걸지 않는다.
-GATE_RULES = ("hanja", "meta", "hangul_en", "stale_time", "en_word")
+# 'Phase에 진입' · 'niche 영역'). 리포트 화면용 품질 규칙(ROE · TTM · 말투 · 주당지표)은 업종 분석에 걸지 않는다. 보고서 문체(style —
+# '…있습니다' · '…있음.')는 업종 분석에도 같은 기준이라 건다(2026-10-09 · 30편 모두 0건).
+GATE_RULES = ("hanja", "meta", "hangul_en", "stale_time", "en_word", "style")
 
 # 상장 종목 수 — 어림수도 매 거래일 바뀌는 값이고 화면이 본문 위에서 정확한 수를 보여 준다. 10월 8일 판에 '170여 개' ·
 # '200개를 웃돌' · '20개에 못 미치는' · '100개를 넘지만' · 'roughly 170 listed companies' 가 있었다(live_number_hits 는 준 값과
