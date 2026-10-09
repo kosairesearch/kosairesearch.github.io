@@ -26,6 +26,7 @@ from anthropic.types.message_create_params import MessageCreateParamsNonStreamin
 from anthropic.types.messages.batch_create_params import Request
 
 import generate_reports as g  # 프롬프트/DART/파싱 재사용 (import 시 main 실행 안 됨)
+import check_report_text as C   # 저장 전 정리 · 검사 · 검토(2026-10-09 — 리포트 v2 · 업종 분석과 같은 기준)
 
 ROOT = Path(__file__).resolve().parent.parent
 STATE_JS = ROOT / "data" / "batch_state.json"
@@ -35,6 +36,9 @@ TOP_N = int(os.getenv("REPORT_TOP_N", "100"))
 FRESH_DAYS = int(os.getenv("REPORT_FRESH_DAYS", "6"))
 FORCE = os.getenv("REPORT_FORCE", "") == "1"
 MAX_WAIT = int(os.getenv("BATCH_MAX_WAIT_SEC", "4800"))  # 80분
+# 저장 전 검토 — 회수한 리포트를 값싼 모델이 한 번 더 읽고 고칠 곳만 돌려준다(배치 · 리포트 한 편 약 2~4센트).
+# 끄면(0) 정리 · 검사만 하고, 검사에 걸리는 리포트는 저장하지 않는다.
+REVIEW = os.getenv("NEW_LISTING_REVIEW", "1") != "0"
 
 TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 5,
           "blocked_domains": ["namu.wiki", "librewiki.net", "dcinside.com", "fmkorea.com"],
@@ -48,7 +52,15 @@ def client():
     if not key:
         log("❌ ANTHROPIC_API_KEY 가 없습니다.")
         sys.exit(1)
-    return anthropic.Anthropic(api_key=key)
+    cl = anthropic.Anthropic(api_key=key)
+
+    # 즉시 호출 창구를 막는다(2026-10-09 — 저장 전 검토를 붙이며). 생성 · 검토 모두 배치로만 보낸다.
+    def _blocked(*_a, **_kw):
+        raise RuntimeError("신규 상장 리포트는 Batch API 로만 보낸다(요금 절반) — messages.batches.create 를 쓸 것")
+
+    cl.messages.create = _blocked
+    cl.messages.stream = _blocked
+    return cl
 
 
 def load_existing():
@@ -126,6 +138,68 @@ def poll(cl, batch_id):
     return False
 
 
+def fix_shape(rep):
+    """곁키에 빠진 영문을 제자리로 — {"body": {"ko": …, "body_en_placeholder": ""}, "body_en": "…"} → {"body": {"ko", "en"}}.
+    2026-10-09 신규 상장 리포트 두 편의 종합 의견이 이 꼴이라 영어 화면에 한국어가 그대로 나왔다(리포트 v2 는 normalize_shape 가 한다)."""
+    def rec(o):
+        if isinstance(o, list):
+            return [rec(x) for x in o]
+        if not isinstance(o, dict):
+            return o
+        o = {k: rec(v) for k, v in o.items()}
+        for k in list(o):
+            if k.endswith("_en") and isinstance(o[k], str):
+                base = k[:-3]
+                tgt = o.get(base)
+                if isinstance(tgt, dict) and "ko" in tgt and not (tgt.get("en") or "").strip():
+                    tgt["en"] = o.pop(k)
+        if "ko" in o:
+            if not (o.get("en") or "").strip():
+                side = next((k for k in o if k.endswith("_en") and isinstance(o[k], str) and o[k].strip()), None)
+                if side:
+                    o["en"] = o[side]
+            for k in [k for k in o if k not in ("ko", "en")]:
+                o.pop(k)
+        return o
+    return rec(rep)
+
+
+def review_all(cl, cand, as_of):
+    """검토 배치 하나 — {종목: (고친 리포트 또는 None, 기록)}."""
+    import hashlib
+    jobs, ctx = {}, {}
+    for tk, rep in cand.items():
+        part = {k: v for k, v in rep.items() if k not in C._NOT_TEXT}
+        names = (f"  - {rep.get('name') or tk}({C.clean_en(rep.get('name_en'))}) — 이 리포트의 회사"
+                 + (f" · 업종 분류 {rep.get('sector')}" if rep.get("sector") else ""))
+        params = C.review_params(part, kind="report", as_of=(as_of or "")[:10], names=names, hits=C.check(rep),
+                                 hints=C.en_gap_hints(rep))
+        key = "rv_" + tk + "_" + hashlib.sha1(json.dumps(params, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:12]
+        jobs[key] = params
+        ctx[key] = (tk, part, names)
+    got = C.send_batch(cl, jobs, wait_sec=MAX_WAIT, log=log)
+    out, use = {}, {}
+    for key, msg in got.items():
+        tk, part, names = ctx[key]
+        if msg is None:
+            out[tk] = (None, "검토 답 없음")
+            continue
+        u = g.usage_of(msg)
+        if u:
+            g.add_usage(use, C.REVIEW_MODEL, u, batch=True)
+        new_part, applied, dropped = C.apply_review(part, C.message_text(msg), extra=names, as_of=as_of or "")
+        if new_part is None:
+            out[tk] = (None, "검토 답을 읽지 못함 — " + "; ".join(dropped))
+            continue
+        merged = dict(cand[tk])
+        merged.update(new_part)
+        out[tk] = (merged, f"검토 고침 {applied}곳" + (f" · 버림 {len(dropped)}곳" if dropped else ""))
+    for mdl, a in use.items():
+        log(g.usage_line(mdl, a, "검토 배치"))
+        a["usd"] = round(a["usd"], 4)
+    return out, use
+
+
 def collect(cl, as_of):
     if not STATE_JS.exists():
         log("❌ data/batch_state.json 이 없습니다. 먼저 submit 하세요.")
@@ -145,6 +219,7 @@ def collect(cl, as_of):
 
     reports, _ = load_existing()
     ok, fail = 0, 0
+    cand = {}    # 검토 · 검사를 거칠 글 — {종목: 리포트}
     usage = {}   # 모델별 사용량 — 버린 결과까지 센다(돈은 나갔다)
     for result in cl.messages.batches.results(batch_id):
         tk = result.custom_id
@@ -176,11 +251,41 @@ def collect(cl, as_of):
                 "reportDate": report_date, "reportTs": report_ts,
                 "dataDate": data.get("dataDate", ""),
             })
-            reports[tk] = rep
-            ok += 1
+            cand[tk] = C.prepare(fix_shape(rep))
         except Exception as e:
             fail += 1
             log(f"  · ⚠️ {tk} 파싱 실패: {type(e).__name__}: {e}")
+
+    # 저장 전 검토 · 검사(2026-10-09). 전에는 회수한 글을 그대로 저장해, 신규 상장 리포트에 영문 속 한글 · 가치 단정 ·
+    # 받은 자료 언급('제공된 기준 데이터상 0.0조원') · 곁키에 빠진 영문이 그대로 걸렸다. 정리(prepare) → 검토(배치) →
+    # 검사(check)를 거쳐 위반이 하나도 없는 글만 저장한다. 걸린 종목은 저장하지 않는다 — 신규 상장 작업이 리포트 없는 종목을
+    # 다음 실행에서 다시 주문한다.
+    reviewed = {}
+    if cand and REVIEW:
+        try:
+            reviewed, use_rv = review_all(cl, cand, state.get("created") or as_of)
+            if use_rv:
+                state["usage_review"] = use_rv     # 검토 배치 사용량 — 생성 배치(usage)와 섞지 않는다
+        except Exception as e:                                   # noqa: BLE001
+            log(f"  · ⚠️ 검토 배치 실패: {type(e).__name__}: {e} — 이번 회수분은 저장하지 않는다(다음 실행이 다시 주문한다)")
+            reviewed = {tk: (None, "검토 배치 실패") for tk in cand}
+    for tk, rep in cand.items():
+        if REVIEW:
+            got, note = reviewed.get(tk, (None, "검토 답 없음"))
+            if got is None:
+                fail += 1
+                log(f"  · ⚠️ {tk} {note} — 저장하지 않음")
+                continue
+            rep = C.prepare(got)
+            log(f"  · 🔎 {tk} {note}")
+        bad = C.check(rep)
+        if bad:
+            fail += 1
+            log(f"  · 🚫 {tk} 검사 위반 {len(bad)}건({', '.join(sorted({h['rule'] for h in bad}))}) — 저장하지 않음 · "
+                f"[{bad[0]['section']}] {bad[0]['match']!r} · {bad[0]['sentence'][:60]}")
+            continue
+        reports[tk] = rep
+        ok += 1
 
     g.write_reports(reports, state.get("model", MODEL), as_of)
     log(f"\n✅ 회수 완료 · 성공 {ok}/실패 {fail} · 총 보유 {len(reports)}개 → data/reports/ + reports-index.js")

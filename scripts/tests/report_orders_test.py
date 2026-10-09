@@ -296,15 +296,24 @@ def bres(tk, kind="succeeded", text=None):
 
 
 class FakeBatches:
+    """생성 배치는 받은 결과를, 검토 배치(2026-10-09)는 '고칠 것 없음' 답을 돌려준다."""
     def __init__(self, status, results):
-        self.status, self._results, self.retrieved = status, results, []
+        self.status, self._results, self.retrieved, self.reviews = status, results, [], []
+
+    def create(self, requests):
+        self.reviews.append(requests)
+        return types.SimpleNamespace(id=f"msgbatch_RV{len(self.reviews)}")
 
     def retrieve(self, bid):
         self.retrieved.append(bid)
-        return types.SimpleNamespace(processing_status=self.status,
+        return types.SimpleNamespace(processing_status="ended" if bid.startswith("msgbatch_RV") else self.status,
                                      request_counts=types.SimpleNamespace(processing=0, succeeded=1, errored=0))
 
     def results(self, bid):
+        if bid.startswith("msgbatch_RV"):
+            reqs = self.reviews[int(bid[11:]) - 1]
+            return [types.SimpleNamespace(custom_id=r["custom_id"], result=types.SimpleNamespace(
+                type="succeeded", message=msg("===JSON_START===" + json.dumps({"patches": []}) + "===JSON_END==="))) for r in reqs]
         return list(self._results)
 
 
@@ -331,6 +340,8 @@ cl = fake_client("ended", [bres(D), bres(E, text="===JSON_START==={\"business\":
 GB.collect_pending(cl, "2026-10-03 23:30")
 st = json.loads(GB.STATE_JS.read_text(encoding="utf-8"))
 ok(D in written and E not in written, "못 받은 배치의 리포트를 저장한다(불완전한 글은 버린다)", str(sorted(written)))
+ok(len(cl.messages.batches.reviews) == 1 and [r["custom_id"][:9] for r in cl.messages.batches.reviews[0]] == ["rv_" + D],
+   "저장 전 검토를 배치 하나로 주문한다(완전한 글만)", str([[r["custom_id"] for r in q] for q in cl.messages.batches.reviews]))
 ok(not st.get("pending") and st.get("collected") == "2026-10-03 23:30", "회수 표시", str({k: st.get(k) for k in ('pending', 'collected')}))
 ua = (st.get("usage") or {}).get("claude-sonnet-4-6") or {}
 ok(ua.get("n") == 2 and abs(ua.get("usd", 0) - round(0.35495 * 2, 3)) < 1e-6,

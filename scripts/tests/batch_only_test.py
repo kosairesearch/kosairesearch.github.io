@@ -11,7 +11,8 @@
   ① scripts/ 의 즉시 호출 자리를 모두 찾는다(파이썬은 구문 나무로 — 주석 · 문자열은 세지 않는다).
      허용은 셋뿐이다.
        · 모닝브리핑(generate_brief.py) — 사장이 정한 예외.
-       · 배치 대기열을 거치는 보정 함수 둘 — 받는 cl 이 _RepairQueue 다(리포트 파이프라인 검사 (j)가 본다).
+       · 배치 대기열을 거치는 보정 함수 셋(영문 채우기 · 표현 교정 · 저장 전 검토) — 받는 cl 이 _RepairQueue 다
+         (리포트 파이프라인 검사 (j) · (l)이 본다).
        · 쓰지 않는 옛 스크립트 — 예약(schedule) 작업이 돌리지 않을 때만. 예약을 걸면 여기서 걸린다.
   ② 배치로 바꾼 생성기가 즉시 호출 창구를 막아 두었는지 — 실수로 부르면 그 자리에서 멈춘다.
   ③ 업종 분류가 배치 하나로 주문하고 답으로 캐시를 채우는지, 늦으면 취소하는지(가짜 배치로).
@@ -46,6 +47,7 @@ ALLOWED = {
 ROUTED = {
     ("scripts/generate_reports_v2.py", "fill_missing_en"): "회수 단계 영문 채우기 — 배치 대기열로 간다",
     ("scripts/check_report_text.py", "repair"): "회수 단계 표현 교정 — 배치 대기열로 간다",
+    ("scripts/check_report_text.py", "review"): "회수 단계 저장 전 검토(2026-10-09) — 배치 대기열로 간다",
 }
 # 쓰지 않는 옛 스크립트 — 수동 실행만 남아 있다. 예약 작업이 돌리면 실패한다.
 LEGACY = {
@@ -138,7 +140,8 @@ for (rel, fn), why in ROUTED.items():
 ok("scripts/generate_brief.py" in found, "모닝브리핑은 즉시 호출(예외) — 목록이 낡지 않았는지")
 
 print("② 배치로 바꾼 생성기는 즉시 호출 창구를 막아 둔다")
-for rel in ("scripts/generate_reports_v2.py", "scripts/generate_sectors.py", "scripts/classify_sectors.py"):
+for rel in ("scripts/generate_reports_v2.py", "scripts/generate_sectors.py", "scripts/classify_sectors.py",
+            "scripts/generate_reports_batch.py"):
     txt = (ROOT / rel).read_text(encoding="utf-8")
     ok(re.search(r"\.messages\.create\s*=\s*_blocked", txt) and re.search(r"\.messages\.stream\s*=\s*_blocked", txt),
        f"{rel} 가 create · stream 을 막는다")
