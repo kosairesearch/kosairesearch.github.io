@@ -718,7 +718,9 @@ def prepare(rep):
 # 검토로 고칠 수 없는 결함 — 글이 잘렸거나 비었거나 출처가 없다. 이런 글은 다시 쓴다(다음 회차).
 _REWRITE = ("max_tokens", "리스크 3개 미만", " 빔", "문장 안 끝남", "출처 0건")
 # 검토를 켜고 끈다. 끄면 2026-10-08 판처럼 기계 검사만 하고 저장한다(검토 비용이 들지 않는다).
-REVIEW = os.getenv("SECTOR_REVIEW", "1") != "0"
+# 기본은 끔(2026-10-09) — 시험(review_replay)에서 검토 모델이 출처 있는 수치를 '재료에 없다'며 지우고, 영문명을 대소문자 ·
+# 옛 이름으로 바꾸는 틀린 고침을 냈다. 고친 뒤 시험을 통과하면 SECTOR_REVIEW=1 로 켠다.
+REVIEW = os.getenv("SECTOR_REVIEW", "0") == "1"
 REVIEW_KEYS = BODY_KEYS + ("risks",)
 
 

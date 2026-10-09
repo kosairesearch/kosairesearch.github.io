@@ -145,7 +145,7 @@ check("listed_count_hits" in gen, "상장 종목 수를 어림수로 쓴 문장(
 #    상대 시점 · 영어 낱말이 있었다(사장이 크게 질책했다). 회수할 때 정리(prepare) → 검토(배치) → 검사를 거쳐야 저장한다.
 check("def prepare(rep)" in gen and "commas=True" in gen, "저장 전 정리(태그 · 한자 · 천 단위 쉼표)를 거친다")
 check("def review_round(" in gen and "review_round(cl, cand" in gen, "회수할 때 검토 배치를 거친다")
-check('os.getenv("SECTOR_REVIEW", "1")' in gen, "검토는 기본으로 켜져 있다(SECTOR_REVIEW=0 으로만 끈다)")
+check('os.getenv("SECTOR_REVIEW", "0") == "1"' in gen, "검토는 기본으로 꺼져 있다(시험에서 틀린 고침 · SECTOR_REVIEW=1 로만 켠다)")
 check("검토 뒤에도 결함" in gen and "검토 답 없음" in gen, "검토가 못 고치거나 답이 없으면 저장하지 않는다")
 check(all(r in gen for r in ('"stale_time"', '"en_word"', '"meta"', '"hanja"')), "상대 시점 · 영어 낱말 · 받은 자료 언급 · 한자를 거른다")
 check("company_lines(" in gen and "[회사 설명" in gen, "지시문에 회사 설명(기업 리포트 첫 문장 · 영문명)을 준다")

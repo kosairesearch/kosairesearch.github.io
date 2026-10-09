@@ -37,8 +37,9 @@ FRESH_DAYS = int(os.getenv("REPORT_FRESH_DAYS", "6"))
 FORCE = os.getenv("REPORT_FORCE", "") == "1"
 MAX_WAIT = int(os.getenv("BATCH_MAX_WAIT_SEC", "4800"))  # 80분
 # 저장 전 검토 — 회수한 리포트를 값싼 모델이 한 번 더 읽고 고칠 곳만 돌려준다(배치 · 리포트 한 편 약 2~4센트).
-# 끄면(0) 정리 · 검사만 하고, 검사에 걸리는 리포트는 저장하지 않는다.
-REVIEW = os.getenv("NEW_LISTING_REVIEW", "1") != "0"
+# 끄면 정리 · 검사만 하고, 검사에 걸리는 리포트는 저장하지 않는다. 기본은 끔(2026-10-09) — 시험에서 검토 모델이
+# 반올림한 재료 수치로 정확한 본문 수치를 바꾸는 등 틀린 고침을 냈다. 고친 뒤 시험을 통과하면 NEW_LISTING_REVIEW=1 로 켠다.
+REVIEW = os.getenv("NEW_LISTING_REVIEW", "0") == "1"
 
 TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 5,
           "blocked_domains": ["namu.wiki", "librewiki.net", "dcinside.com", "fmkorea.com"],

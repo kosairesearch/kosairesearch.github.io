@@ -337,7 +337,10 @@ ok(cl.messages.batches.retrieved == [] and not written, "표시 없는 옛 상�
 GB.STATE_JS.write_text(json.dumps({"batch_id": "msgbatch_LATE", "model": "claude-sonnet-4-6", "count": 1,
                                    "pending": True}), encoding="utf-8")
 cl = fake_client("ended", [bres(D), bres(E, text="===JSON_START==={\"business\": \"x\"}===JSON_END===")])
+ok(GB.REVIEW is False, "저장 전 검토는 기본으로 꺼져 있다(2026-10-09 시험에서 틀린 고침 · NEW_LISTING_REVIEW=1 로만 켠다)", str(GB.REVIEW))
+GB.REVIEW = True                    # 아래는 검토를 켰을 때의 길 — 검토 요청이 배치 하나로 나가는지 본다
 GB.collect_pending(cl, "2026-10-03 23:30")
+GB.REVIEW = False
 st = json.loads(GB.STATE_JS.read_text(encoding="utf-8"))
 ok(D in written and E not in written, "못 받은 배치의 리포트를 저장한다(불완전한 글은 버린다)", str(sorted(written)))
 ok(len(cl.messages.batches.reviews) == 1 and [r["custom_id"][:9] for r in cl.messages.batches.reviews[0]] == ["rv_" + D],
