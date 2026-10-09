@@ -304,6 +304,72 @@ true("한국어의 비율이 영어에 없으면 확인할 곳으로", any("영�
 eq("재료와 같은 비율은 넘기지 않는다", S.review_hints(rep("가나는 영업이익이 25.0% 늘었다."), hint_info)[:1],
    ["[trends] 한국어의 비율 ['25.0'] 이 영어에 없다"])
 
+# ── ⑨ 회사별 숫자 · 묶음 말 대조(fin_hits) · 묶음 요약(group_summary) — 2026-10-10 ─────────────────────
+# 10월 8일 판 '전기장비'의 실제 문장(영업이익 '60~90%대' — HD현대일렉트릭 37.2% · 가온전선 55.5% · 대한전선 113.0% 가 섞였다)을
+# 잡는지, 맞는 문장 · 다른 기간 · 다른 낱말 속 이름('SKT' 의 'KT')은 건드리지 않는지 본다.
+print("⑨ 회사별 숫자 · 묶음 말(fin_hits) · 묶음 요약(group_summary)")
+B = 100_000_000
+F9 = {"LS ELECTRIC": {"rev": 13000 * B, "rev_p": 9833 * B, "op": 1600 * B, "op_p": 973 * B},
+      "HD현대일렉트릭": {"rev": 12000 * B, "rev_p": 9524 * B, "op": 2500 * B, "op_p": 1822 * B},
+      "가온전선": {"rev": 4000 * B, "rev_p": 2961 * B, "op": 150 * B, "op_p": 96.4 * B},
+      "대한전선": {"rev": 9000 * B, "rev_p": 6881 * B, "op": 500 * B, "op_p": 235 * B},
+      "KT": {"rev": 66798.7 * B, "rev_p": 64000 * B, "op": 5000 * B, "op_p": 5500 * B},
+      "SK텔레콤": {"rev": 45000 * B, "rev_p": 44000 * B, "op": 4800 * B, "op_p": 3000 * B},
+      "제룡전기": {"rev": 300 * B, "rev_p": 508 * B, "op": -20 * B, "op_p": 30 * B}}
+for v in F9.values():
+    v["rev_all"], v["op_all"] = [v["rev"], v["rev_p"], 50000 * B], [v["op"], v["op_p"]]
+I9 = {"latestQ": "2026Q2", "facts": F9}
+
+
+def fh(ko, info=I9):
+    return S.fin_hits({"trends": {"ko": ko, "en": "x"}}, info)
+
+
+old_ko = ("2026년 2분기 실적 공시를 보면 LS ELECTRIC, HD현대일렉트릭, 가온전선, 대한전선 등 주요 기업 대부분이 전년 동기 대비 "
+          "두 자릿수 매출 성장과 함께 영업이익이 60~90%대로 급증하는 모습을 보였다.")
+h = fh(old_ko)
+true("10월 8일 판 '60~90%대' 문장을 잡는다(넷 중 셋이 범위 밖 — '대부분'이어도 3분의 1을 넘는다)",
+     len(h) == 1 and "60~90%대" in h[0] and "HD현대일렉트릭(영업이익 +37.2%)" in h[0] and "대한전선(영업이익 +112.8%)" in h[0], h)
+eq("고친 문장(회사별 값)은 건드리지 않는다",
+   fh("2026년 2분기 LS ELECTRIC은 영업이익이 전년 동기 대비 64.4% 늘었고, HD현대일렉트릭은 37.2% 늘었다."), [])
+eq("맞는 범위는 건드리지 않는다", fh("2026년 2분기 LS ELECTRIC, HD현대일렉트릭, 가온전선, 대한전선의 영업이익은 37~113%로 늘었다."), [])
+true("두 자릿수 묶음 — 늘지 않은 회사가 끼면 잡는다(제룡전기 -40.9%)",
+     fh("2026년 2분기 LS ELECTRIC · 제룡전기 등이 두 자릿수 매출 성장을 기록했다.") != [])
+eq("두 자릿수 묶음 — 모두 맞으면 통과", fh("2026년 2분기 LS ELECTRIC · 가온전선 등이 두 자릿수 매출 성장을 기록했다."), [])
+true("한 회사 금액 — 자리를 틀리면 잡는다",
+     fh("2026년 2분기 LS ELECTRIC은 매출 1조 3,000억원, 영업이익 1,060억원을 기록했다.") != [])
+eq("한 회사 금액 — 맞으면 통과(이름 뒤 '연결 기준 2분기' 순서도)",
+   fh("LS ELECTRIC은 연결 기준 2026년 2분기 매출 1조 3,000억원, 영업이익 1,600억원을 기록했다."), [])
+true("한 회사 증감률 — '각각 A%, B%' 를 지표 순서대로 대조한다",
+     fh("2026년 2분기 LS ELECTRIC은 매출 1조 3,000억원, 영업이익 1,600억원으로 전년 동기 대비 각각 32.2%, 46.4% 늘었다.") != [])
+eq("한 회사 증감률 — 맞으면 통과",
+   fh("2026년 2분기 LS ELECTRIC은 매출 1조 3,000억원, 영업이익 1,600억원으로 전년 동기 대비 각각 32.2%, 64.4% 늘었다."), [])
+eq("다른 낱말 속 이름은 그 회사가 아니다('SKT의' 의 'KT')",
+   fh("2분기 SK텔레콤의 AI 데이터센터는 SKT의 사업 가운데 가장 빠르다. 2분기 AI DC 매출은 1,362억원으로 92.5% 늘었다."), [])
+eq("다른 기간(연간 · 다른 분기 · 상반기)을 말하는 문장은 보지 않는다",
+   fh("LS ELECTRIC은 2025년 연간 매출 4조원을 기록했다. LS ELECTRIC의 상반기 영업이익은 2,500억원이다."), [])
+true("기간을 밝히지 않은 문장은 그 회사의 어느 기간 값과도 다를 때만 잡는다",
+     fh("LS ELECTRIC은 매출 2조 1,000억원을 기록했다.") != [] and fh("LS ELECTRIC은 매출 5조원을 기록했다.") == [])
+true("영업손실 — 적자 회사의 '영업이익 X'는 잡고 '영업손실 X'는 통과",
+     fh("2026년 2분기 제룡전기는 영업이익 20억원을 기록했다.") != [] and fh("2026년 2분기 제룡전기는 영업손실 20억원을 기록했다.") == [])
+true("저장 문턱(defects)이 함께 본다", any("묶음 말" in x for x in S.defects(
+    {"lead": {"ko": "가.", "en": "a."}, "overview": {"ko": "가.", "en": "a."}, "structure": {"ko": "가.", "en": "a."},
+     "trends": {"ko": old_ko, "en": "a."}, "outlook": {"ko": "가.", "en": "a."},
+     "risks": [{"title": {"ko": "가", "en": "a"}, "body": {"ko": "가.", "en": "a."}}] * 3}, info=I9)))
+gs = S.group_summary(I9)
+true("묶음 요약 — 늘어난 회사 · 줄어든 회사 · 증가율 범위 · 적자 전환을 코드가 센다",
+     "늘어난 회사" in gs and "줄어든 회사 1곳(제룡전기 -40.9%)" in gs and "적자 전환 1곳(제룡전기)" in gs
+     and "늘어난 회사의 증가율 범위" in gs, gs)
+true("지시문에 묶음 요약이 들어간다", "[상위 종목 묶음 요약" in S.build_prompt("전기장비", dict(
+    count=70, mcap=100.0, weight=2.0, top=[("LS ELECTRIC", 10.0)], latestQ="2026Q2", fin=["LS ELECTRIC(연결): …"], facts=F9),
+    "2026-10-10 10:00"))
+real = S.load_sectors()
+true("실제 자료 — 업종마다 facts(최근 분기 사실)가 생긴다", all(isinstance(v.get("facts"), dict) for v in real.values()))
+_secjs = (ROOT / "data" / "sectors.js").read_text(encoding="utf-8")
+_cur = json.loads(_secjs[_secjs.find("{"): _secjs.rfind("}") + 1]).get("sectors") or {}
+_bad = [(k, x) for k, o in _cur.items() if isinstance(o, dict) for x in S.fin_hits(o, real.get(k))]
+eq("지금 화면에 나오는 업종 분석 — 회사별 숫자 · 묶음 말 위반 0", _bad[:3], [])
+
 # ── 묶는 줄 — 회차마다 출처 기준을 넘긴다 ───────────────────────
 gen = (ROOT / "scripts" / "generate_sectors.py").read_text(encoding="utf-8")
 true("auto 의 회차마다 마지막만 출처 0건을 받는다", "collect(cl, as_of, strict_sources=(rnd < ROUNDS))" in gen)

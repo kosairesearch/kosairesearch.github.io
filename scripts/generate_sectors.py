@@ -215,6 +215,9 @@ def load_sectors():
         out[sec]["latestQ"] = latest
         out[sec]["fin"] = [x for x in (_fin_line(t["name"], qs.get(t.get("ticker")), latest,
                                                  no_rev=t.get("sector") in NO_REV) for t in top) if x]
+        # 같은 사실을 구조로도 — 묶음 요약(group_summary)과 본문 숫자 대조(fin_hits)가 쓴다(2026-10-10)
+        out[sec]["facts"] = {t["name"]: f for t in top
+                             if (f := _fin_fact(qs.get(t.get("ticker")), latest, no_rev=t.get("sector") in NO_REV))}
     return out
 
 
@@ -275,10 +278,10 @@ def _chg(cur, prev, op=False):
     return ""
 
 
-def _fin_line(name, q, latest, no_rev=False):
-    """상위 종목 한 곳의 최근 분기 실적 한 줄 — '삼성전자(연결): 2026년 2분기 매출 …(전년 동기 대비 +5.1%), 영업이익 …'.
+def _fin_fact(q, latest, no_rev=False):
+    """상위 종목 한 곳의 최근 분기 사실 — {'q', 'rev', 'op', 'rev_p', 'op_p', 'basis'}(전년 같은 분기 값은 _p).
     자료가 없거나, 마지막 분기 이름이 latest 보다 늦은 회사(결산월이 다르다)는 None.
-    no_rev 면 매출을 싣지 않는다 — 금융 · 보험의 '매출' 칸은 영업수익이나 일부 계정이라(신한지주 9,164억원 ·
+    no_rev 면 매출을 비운다 — 금융 · 보험의 '매출' 칸은 영업수익이나 일부 계정이라(신한지주 9,164억원 ·
     영업이익 2조 4,763억원) 매출로 읽히면 틀린 문장이 된다. 다른 업종도 매출이 영업이익보다 작으면 같은 경우라 뺀다."""
     rows = _rows(q)
     if not rows or not latest or rows[-1]["q"] > latest:
@@ -286,16 +289,31 @@ def _fin_line(name, q, latest, no_rev=False):
     cur = rows[-1]
     y, n = cur["q"].split("Q")
     prev = next((x for x in rows if x["q"] == f"{int(y) - 1}Q{n}"), {})
-    basis = str(q.get("fs_basis") or "").split("(")[0].strip()          # '연결' · '별도'
+    rev_ok = cur.get("rev") is not None and not no_rev and not (cur.get("op") is not None and 0 < cur["rev"] < cur["op"])
+    every = [x for x in (q.get("annual") or []) + (q.get("quarterly") or []) if isinstance(x, dict)]
+    return {"q": cur["q"], "rev": cur["rev"] if rev_ok else None, "rev_p": prev.get("rev") if rev_ok else None,
+            "op": cur.get("op"), "op_p": prev.get("op"), "basis": str(q.get("fs_basis") or "").split("(")[0].strip(),
+            # 기간을 밝히지 않은 문장('한화에어로스페이스는 매출 9조 2,929억원')은 이 회사의 어느 기간 값과도 같은지만 본다
+            "rev_all": [x["rev"] for x in every if x.get("rev") is not None] if rev_ok else [],
+            "op_all": [x["op"] for x in every if x.get("op") is not None]}
+
+
+def _fin_line(name, q, latest, no_rev=False):
+    """상위 종목 한 곳의 최근 분기 실적 한 줄 — '삼성전자(연결): 2026년 2분기 매출 …(전년 동기 대비 +5.1%), 영업이익 …'.
+    자료가 없거나, 마지막 분기 이름이 latest 보다 늦은 회사(결산월이 다르다)는 None(_fin_fact)."""
+    f = _fin_fact(q, latest, no_rev)
+    if not f:
+        return None
+    basis = f["basis"]                                                   # '연결' · '별도'
     parts = []
-    if cur.get("rev") is not None and not no_rev and not (cur.get("op") is not None and 0 < cur["rev"] < cur["op"]):
-        c = _chg(cur["rev"], prev.get("rev"))
-        parts.append(f"매출 {_won(cur['rev'])}" + (f"({c})" if c else ""))
-    if cur.get("op") is not None:
-        c = _chg(cur["op"], prev.get("op"), op=True)
-        amt = f"영업이익 {_won(cur['op'])}" if cur["op"] >= 0 else f"영업손실 {_won(-cur['op'])}"
+    if f["rev"] is not None:
+        c = _chg(f["rev"], f["rev_p"])
+        parts.append(f"매출 {_won(f['rev'])}" + (f"({c})" if c else ""))
+    if f["op"] is not None:
+        c = _chg(f["op"], f["op_p"], op=True)
+        amt = f"영업이익 {_won(f['op'])}" if f["op"] >= 0 else f"영업손실 {_won(-f['op'])}"
         parts.append(amt + (f"({c})" if c else ""))
-    return f"{name}{f'({basis})' if basis in ('연결', '별도') else ''}: {_qtext(cur['q'])} " + ", ".join(parts)
+    return f"{name}{f'({basis})' if basis in ('연결', '별도') else ''}: {_qtext(f['q'])} " + ", ".join(parts)
 
 
 def _day(as_of):
@@ -382,6 +400,7 @@ def build_prompt(sec, info, as_of=None):
     head = (f"[작성 기준일] {day}" + (f" · 공시로 확인되는 가장 최근 분기는 {_qtext(lq)}" if lq else "") + "\n") if day else ""
     fins = ("[상위 종목 최근 분기 실적 · 공시 확정치, 수치 인용 가능]\n"
             + "\n".join(f"  - {x}" for x in fin) + "\n\n") if fin else ""
+    fins += group_summary(info)
     comp = company_lines([nm for nm, _ in info.get("top") or []])
     comps = ("[회사 설명 · 각 회사의 사업(기업 리포트 첫 문장) · 영문명 — 회사 소개와 영어 회사명은 이것에 맞출 것]\n"
              + "\n".join(comp) + "\n\n") if comp else ""
@@ -593,6 +612,217 @@ def listed_count_hits(rep):
     return hits
 
 
+# ── 회사별 숫자 · 묶음 말 대조(2026-10-10) ─────────────────────────────────────────────────────────────────────
+# 10월 8일 판의 숫자 오류는 상위 종목 재료(최근 분기 실적)를 묶어 옮기다 생겼다 — 'LS ELECTRIC · 효성중공업 · HD현대일렉트릭 ·
+# 가온전선 · 대한전선 · 일진전기 등 주요 기업 대부분이 … 영업이익이 60~90%대로 급증'(실제 37.2% · 55.5% · 113.0% 가 섞였다).
+# 재료에 묶음 요약을 주고(group_summary — 예방), 그래도 틀린 숫자는 저장 전에 잡는다(fin_hits — 검사).
+# 꼴이 분명한 문장만 본다: 회사 이름 바로 뒤의 '(최근 분기) 매출 X원 · 영업이익 Y원 … 전년 동기 대비 (각각) A%, B% 증가',
+# 여러 회사를 앞에 둔 '두 자릿수 매출 성장' · 'A~B%(대)로 급증' · '매출과 영업이익이 감소'. 문장에 최근 분기가 아닌 기간
+# (다른 해 · 다른 분기 · 상반기 · 누적 · 연간)이 있으면 보지 않는다. 회사 이름은 다른 낱말 속에서 찾지 않는다('SKT' 의 'KT').
+# 측정(2026-10-10): 지금 30편 위반 0 · 10월 8일 판(고치기 전)에서는 '60~90%대' 문장의 3개사를 잡았다.
+_FH_AMT = C._AMT_KO
+_FH_PCT = r"(\d[\d,]*(?:\.\d+)?)\s*%"
+_FH_UP = r"(?:증가|늘|성장|확대|급증|개선|상승)"
+_FH_DOWN = r"(?:감소|줄|축소|급감|하락|역성장)"
+_FH_MET = r"매출액|매출|영업이익|영업손실"
+
+
+def _yoy(c, p):
+    """전년 같은 분기 대비 증감률(%). 둘 다 양수일 때만 — 적자가 끼면 비율이 뜻을 잃는다."""
+    if c is None or p is None or c <= 0 or p <= 0:
+        return None
+    return (c / p - 1) * 100
+
+
+def _pct_text(x):
+    return f"{x:+,.1f}%"
+
+
+def group_summary(info):
+    """[상위 종목 묶음 요약] — 여러 회사를 묶어 쓸 때 틀리지 않게, 늘어난 회사 · 줄어든 회사 · 증감률 범위를 코드가 센다."""
+    facts, lq = (info or {}).get("facts") or {}, (info or {}).get("latestQ")
+    if not facts or not lq:
+        return ""
+    q = _qtext(lq)
+    lines = []
+    for key, nm in (("rev", "매출"), ("op", "영업이익")):
+        up, down, rng = [], [], []
+        to_p, to_l, stay_l = [], [], []
+        for name, f in facts.items():
+            c, pv = f.get(key), f.get(key + "_p")
+            r = _yoy(c, pv)
+            if r is not None:
+                (up if r > 0 else down).append(f"{name} {_pct_text(r)}")
+                if r > 0:
+                    rng.append(r)
+            elif key == "op" and c is not None and pv is not None:
+                if pv <= 0 < c:
+                    to_p.append(name)
+                elif c < 0 < pv:
+                    to_l.append(name)
+                elif c < 0 and pv < 0:
+                    stay_l.append(name)
+        if not (up or down or to_p or to_l or stay_l):
+            continue
+        parts = []
+        if up:
+            parts.append(f"늘어난 회사 {len(up)}곳({' · '.join(up)})")
+        if down:
+            parts.append(f"줄어든 회사 {len(down)}곳({' · '.join(down)})")
+        if to_p:
+            parts.append(f"흑자 전환 {len(to_p)}곳({' · '.join(to_p)})")
+        if to_l:
+            parts.append(f"적자 전환 {len(to_l)}곳({' · '.join(to_l)})")
+        if stay_l:
+            parts.append(f"적자 지속 {len(stay_l)}곳({' · '.join(stay_l)})")
+        if len(rng) >= 2:
+            parts.append(f"늘어난 회사의 증가율 범위 {min(rng):,.1f}~{max(rng):,.1f}%")
+        lines.append(f"  - {q} {nm}(전년 동기 대비): " + " · ".join(parts))
+    if not lines:
+        return ""
+    return ("[상위 종목 묶음 요약 · 코드가 계산 — 여러 회사를 묶어 쓸 때는 이 값만 근거로 쓴다]\n" + "\n".join(lines) + "\n"
+            "  - '대부분' · '모두' · '두 자릿수' · 'N~M%대'처럼 묶어 쓰는 말은 묶은 회사가 모두 그 말에 들어맞을 때만 쓴다. "
+            "맞지 않으면 회사별 값을 쓴다.\n\n")
+
+
+def _name_re(names):
+    """회사 이름 — 다른 낱말 속에서 찾지 않는다('SKT' 의 'KT' · 'KT&G' 의 'KT')."""
+    alt = "|".join(re.escape(x) for x in sorted(names, key=len, reverse=True))
+    return re.compile(rf"(?<![A-Za-z0-9가-힣&])(?:{alt})(?![A-Za-z0-9&])")
+
+
+def fin_hits(rep, info):
+    """본문의 상위 종목 숫자가 재료(최근 분기 실적)와 다른 자리. 저장 문턱 — defects 가 함께 본다."""
+    facts, lq = (info or {}).get("facts") or {}, (info or {}).get("latestQ")
+    if not facts or not lq:
+        return []
+    ly, lqn = lq.split("Q")
+    name_re = _name_re(facts)
+    other = re.compile(rf"(?<!\d)(?!{ly}년)20\d\d년|상반기|하반기|반기|누적|연간|1~2분기|(?<!\d)(?!{lqn}분기)[1-4]분기")
+    has_q = re.compile(rf"(?:{ly}년\s*)?{lqn}분기")
+    filler = re.compile(rf"(?:\s*(?:의|은|는|이|가|도|역시|또한|연결|별도|기준|공시|(?:{ly}년\s*)?{lqn}분기(?:에는|에도|에|은|는)?"
+                        rf"|같은 기간(?:에는|에도|에|은|는)?|같은 분기(?:에는|에도|에|은|는)?)(?![가-힣]))*\s*")
+    q_lead = re.compile(rf"(?:{ly}년\s*)?{lqn}분기\s*(?:연결\s*)?(?:기준\s*)?")
+    item = re.compile(rf"(?P<m>{_FH_MET})(?:은|는|이|가|도)?\s*(?:(?P<a>{_FH_AMT})(?:\([^()]*\))?)?")
+    sep = re.compile(r"\s*(?:,|·|와|과|및)\s*")
+    tail = re.compile(rf"\s*(?:으로|로)?(?:\s*(?:을|를)\s*(?:기록|달성|냈)(?:하며|해|했고|했으며|하고|으며|고)?)?\s*,?\s*"
+                      rf"(?:전년 동기 대비|전년 대비|1년 전보다|전년 같은 분기보다)\s*(?P<each>각각\s*)?{_FH_PCT}"
+                      rf"(?:\s*(?:,|와|과|및)\s*{_FH_PCT})?\s*(?:씩\s*)?(?P<v>{_FH_UP}|{_FH_DOWN})")
+    out = []
+
+    def yo(nm, key):
+        f = facts[nm]
+        return _yoy(f.get(key), f.get(key + "_p"))
+
+    def met_key(m):
+        return "rev" if m.startswith("매출") else "op"
+
+    for path, v in C._flat_fields({k: rep.get(k) for k in BODY_KEYS + ("risks",) if rep.get(k)}).items():
+        prev_q = False
+        for sent in re.split(r"(?<=[.!?])\s+", v.get("ko") or ""):
+            q_here = bool(has_q.search(sent)) and not other.search(sent)
+            occ = [(m.start(), m.end(), m.group(0)) for m in name_re.finditer(sent)]
+            # ① 한 회사의 금액 · 증감률 — 이름 바로 뒤의 지표 사슬, 또는 그 회사 몫(다음 회사 이름 전)에서 '2분기 매출 …' 처럼
+            #    최근 분기 바로 뒤에 오는 지표 사슬. 기간을 전혀 밝히지 않은 문장은 그 회사의 어느 기간 값과도 다를 때만 잡는다.
+            no_period = not has_q.search(sent) and not other.search(sent) and not re.search(r"같은 기간|같은 분기", sent)
+            starts = []
+            for i, (a0, a1, nm) in enumerate(occ):
+                fm = filler.match(sent, a1)
+                same = "같은 기간" in fm.group(0) or "같은 분기" in fm.group(0)
+                if q_here or (same and prev_q and not other.search(sent)):
+                    starts.append((nm, fm.end(), True))
+                    stop = occ[i + 1][0] if i + 1 < len(occ) else len(sent)
+                    for qm in q_lead.finditer(sent, fm.end(), stop):
+                        if qm.end() > fm.end():
+                            starts.append((nm, qm.end(), True))
+                elif no_period:
+                    starts.append((nm, fm.end(), False))
+            for nm, pos, strict in starts:
+                items = []
+                while True:
+                    im = item.match(sent, pos)
+                    if not im:
+                        break
+                    items.append((im.group("m"), im.group("a"), im.end()))
+                    pos = im.end()
+                    sm = sep.match(sent, pos)
+                    if not sm or not item.match(sent, sm.end()):
+                        break
+                    pos = sm.end()
+                for met, amt, end in items:
+                    if not amt:
+                        continue
+                    key, val = met_key(met), facts[nm].get(met_key(met))
+                    if val is None:
+                        continue
+                    num, unit = C._amt_value(amt)
+                    if unit is None:
+                        continue
+                    loss = met == "영업손실" or bool(re.match(r"\s*(?:의\s*)?(?:적자|손실)", sent[end:]))
+                    if strict:
+                        if (val < 0) != loss or abs(abs(val) - num) > unit * 1.5:
+                            out.append(f"숫자 대조({path}) {nm} {met} {amt} — 재료는 {'영업손실 ' if val < 0 else ''}{_won(abs(val))}")
+                    else:
+                        alls = facts[nm].get(key + "_all") or []
+                        if alls and not any((x < 0) == loss and abs(abs(x) - num) <= unit * 1.5 for x in alls):
+                            out.append(f"숫자 대조({path}) {nm} {met} {amt} — 이 회사의 어느 기간 값과도 다르다"
+                                       f"(최근 분기 {'영업손실 ' if val < 0 else ''}{_won(abs(val))})")
+                tm = tail.match(sent, pos) if (items and strict) else None
+                if tm:
+                    pcts = [x for x in (tm.group(2), tm.group(3)) if x]
+                    mets = [m for m, _, _ in items]
+                    pairs = list(zip(mets, pcts)) if len(pcts) == len(mets) else []
+                    sign = 1 if re.match(_FH_UP, tm.group("v")) else -1
+                    for met, pc in pairs:
+                        r = yo(nm, met_key(met))
+                        if r is None:
+                            continue
+                        want = float(pc.replace(",", "")) * sign
+                        tol = 0.15 if "." in pc else 0.55
+                        if abs(want - round(r, 1)) > tol:
+                            out.append(f"숫자 대조({path}) {nm} {met} 전년 동기 대비 {pc}% — 재료는 {_pct_text(r)}")
+            # ② 여러 회사를 앞에 둔 묶음 말
+            if q_here and len({nm for _, _, nm in occ}) >= 2:
+                most = bool(re.search(r"대부분|상당수|대체로", sent))
+
+                def judge(label, names, ok, keys):
+                    vals = [(n, ok(n)) for n in dict.fromkeys(names)]
+                    bad = [n for n, good in vals if good is False]
+                    seen = [n for n, good in vals if good is not None]
+                    if bad and (not most or len(bad) * 3 > len(seen)):
+                        def why(n):
+                            return " ".join(f"{'매출' if k == 'rev' else '영업이익'} {_pct_text(yo(n, k))}" for k in keys
+                                            if yo(n, k) is not None)
+                        out.append(f"묶음 말({path}) '{label}' — 들어맞지 않는 회사: " + " · ".join(f"{n}({why(n)})" for n in bad))
+
+                m2 = re.search(rf"(세|두) 자릿수(?: 이상)?(?:의)?\s*({_FH_MET})\s*(?:성장|증가)|({_FH_MET})(?:이|은|도)?\s*(세|두) 자릿수(?: 이상)?\s*(?:성장|증가|늘)", sent)
+                if m2:
+                    lo = 100 if (m2.group(1) or m2.group(4)) == "세" else 10
+                    key = met_key(m2.group(2) or m2.group(3))
+                    names = [nm for a0, _, nm in occ if a0 < m2.start()]
+                    judge(m2.group(0), names, lambda n: None if yo(n, key) is None else yo(n, key) >= lo, [key])
+                m3 = re.search(rf"(\d[\d,]*(?:\.\d+)?)\s*~\s*(\d[\d,]*(?:\.\d+)?)\s*%(대)?(?:로|의|에)?\s*(?:\S+\s*)?(?:{_FH_UP}|{_FH_DOWN})", sent)
+                if m3:
+                    before = sent[:m3.start()]
+                    km = list(re.finditer(_FH_MET, before))
+                    if km:
+                        key = met_key(km[-1].group(0))
+                        lo3 = float(m3.group(1).replace(",", ""))
+                        hi3 = float(m3.group(2).replace(",", "")) + (9.99 if m3.group(3) else 0)
+                        names = [nm for a0, _, nm in occ if a0 < m3.start()]
+                        judge(m3.group(0), names, lambda n: None if yo(n, key) is None else lo3 - 0.55 <= yo(n, key) <= hi3 + 0.55,
+                              [key])
+                m4 = re.search(rf"(매출과 영업이익|영업이익과 매출|{_FH_MET})(?:이|은|도|가)?\s*(?:모두\s*)?(?:전년 (?:동기 )?대비\s*)?(?:{_FH_DOWN})", sent)
+                if m4:
+                    keys = ["rev", "op"] if "과" in m4.group(1) else [met_key(m4.group(1))]
+                    gap = [nm for a0, a1, nm in occ if a0 < m4.start() and len(re.sub(r"[\s·,와과및은는이가도]|등", "", sent[a1:m4.start()])) <= 30]
+                    if len(gap) >= 2:
+                        judge(m4.group(0), gap, lambda n: None if any(yo(n, k) is None for k in keys)
+                              else all(yo(n, k) < 0 for k in keys), keys)
+            prev_q = q_here
+    return list(dict.fromkeys(out))
+
+
 def defects(rep, message=None, info=None, sources=None):
     """저장하면 안 되는 결함 목록. 비어 있으면 정상.
 
@@ -637,6 +867,7 @@ def defects(rep, message=None, info=None, sources=None):
         out.append("깨진 문자(U+FFFD)")
     out += live_number_hits(rep, info)
     out += listed_count_hits(rep)
+    out += fin_hits(rep, info)
     for h in C.check(_as_report(rep)):
         if h["level"] == "위험" or h["rule"] in GATE_RULES:
             out.append(f"글자 결함 {h['rule']}({_FROM_REPORT.get(h['section'], h['section'])}) {h['match']!r}")
