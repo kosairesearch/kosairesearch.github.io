@@ -1,6 +1,6 @@
 // KOS ai — 업종 AI 분석 (자동 생성). 직접 수정 금지.
 window.KOS_SECTORS = {
-  "lastUpdated": "2026-10-09 21:45",
+  "lastUpdated": "2026-10-09 22:23",
   "model": "claude-sonnet-5",
   "sectors": {
     "유통·소비재": {
@@ -691,59 +691,59 @@ window.KOS_SECTORS = {
     },
     "화장품": {
       "lead": {
-        "ko": "미국·유럽으로 수출 지역이 다변화되며 구조적 성장과 수익성 개선이 동시에 나타나는 업종이다.",
-        "en": "A sector experiencing structural growth and simultaneous profitability improvement, driven by export diversification toward the United States and Europe."
+        "ko": "K-뷰티 수출이 미국·유럽 중심으로 구조적 확장을 이어가며 화장품 업종 전반의 실적 개선이 뚜렷하게 나타나고 있는 국면이다.",
+        "en": "K-beauty exports continue to expand structurally around the US and Europe, driving a broad-based earnings recovery across the cosmetics sector."
       },
       "overview": {
-        "ko": "화장품 업종은 브랜드사, ODM/OEM 생산, 원료·용기 부품, 수출 유통까지 이어지는 밸류체인을 갖춘 소비재 산업이다. 한국 증시 내에서는 상장 종목 수가 적지 않지만 개별 기업의 규모 편차가 커 전체 시장 비중은 크지 않은 중소형 업종으로 분류된다. 과거에는 중국 소비 및 면세 채널 의존도가 높아 중국 수요 변동에 민감했으나, 최근에는 미국·유럽 등 선진 시장으로 수출 축이 이동하며 업종 체질이 달라지고 있다. 대형 브랜드사부터 ODM 전문기업, 디바이스·이커머스 유통사까지 사업모델이 다양해 업종 내 개별 종목 간 실적 편차도 뚜렷하다.",
-        "en": "The cosmetics sector encompasses a value chain spanning brands, ODM/OEM manufacturing, raw materials and packaging components, and export distribution. Within the Korean equity market, while the number of listed companies is not small, the wide disparity in individual company scale classifies it as a small-to-mid-cap sector with limited overall market weight. Historically sensitive to Chinese consumption and duty-free channel fluctuations due to heavy dependence on that market, the sector's composition is now shifting as export focus moves toward developed markets such as the United States and Europe. With business models ranging from large brand companies to specialized ODM firms and device/e-commerce distributors, performance divergence among individual names within the sector is also pronounced."
+        "ko": "화장품 업종은 브랜드사, 위탁개발생산(ODM) 전문기업, 용기·부자재 기업, 유통·브랜드사 등으로 구성된 소비재 산업이다. 코스피·코스닥을 합쳐 상장 종목 수는 다른 업종에 비해 적은 편이지만, 에이피알·아모레퍼시픽 등 개별 종목의 시가총액이 커지면서 업종 내 쏠림이 존재한다. 업종 전체 시가총액이 전체 시장에서 차지하는 비중은 크지 않으나, 해외 매출 비중이 높아지면서 투자자들의 관심이 꾸준히 이어지고 있다. 아모레퍼시픽과 LG생활건강은 브랜드와 생활용품을 함께 영위하는 종합 소비재 기업이고, 코스맥스·한국콜마·코스메카코리아·한국화장품제조는 브랜드사의 제품을 위탁 개발·생산하는 ODM 기업으로 분류된다. 실리콘투는 국내 인디 브랜드 제품을 해외에 유통하는 수출 유통 기업이며, 펌텍코리아는 화장품 용기를 전문으로 생산하는 부자재 기업이다.",
+        "en": "The cosmetics sector comprises brand owners, original development and manufacturing (ODM) specialists, packaging and materials makers, and export distributors within the consumer goods space. Combined across the KOSPI and KOSDAQ, the number of listed names is relatively small compared with other sectors, though the growing market capitalization of individual names such as APR and Amorepacific has created concentration within the sector. The sector's aggregate market capitalization accounts for a modest share of the overall market, but rising overseas sales exposure continues to draw sustained investor attention. Amorepacific and LG H&H operate as diversified consumer goods companies spanning brands and household products, while Cosmax, Kolmar Korea, Cosmecca Korea, and Hankook Cosmetics Manufacturing are classified as ODM firms that develop and manufacture products on behalf of brand owners. Silicon 2 is an export distributor that supplies domestic indie brand products to overseas retailers, while Pum-tech Korea specializes in manufacturing cosmetics containers as a materials supplier."
       },
       "structure": {
-        "ko": "밸류체인 상단에는 아모레퍼시픽, LG생활건강 등 종합 브랜드사와 에이피알, 브이티, 달바글로벌, 네오팜 등 특화 브랜드사가 위치하며, 이들은 자체 브랜드력과 유통망을 통해 수출 성장의 직접 수혜를 받는다. 중간 단계인 ODM/OEM에는 코스맥스, 한국콜마, 코스메카코리아, 한국화장품제조가 자리하며, 국내외 브랜드사의 주문 확대에 따라 생산 레버리지가 발생하는 구조다. 용기 공급망에는 펌텍코리아가 위치해 있으며, 브랜드사·ODM사의 생산 증가에 연동되는 후방산업 성격을 갖는다. 유통·플랫폼 영역에서는 실리콘투가 해외 K뷰티 상품을 유통하는 벤더 역할을 수행하며 수출 확대의 또 다른 경로를 담당한다. 전반적으로 상위 기업 간 사업모델이 명확히 구분되어 있어, 수출 확산이 브랜드→ODM→용기→유통 전 구간으로 퍼지는 낙수효과가 관찰되는 구조다.",
-        "en": "At the upper end of the value chain are comprehensive brand companies such as Amorepacific and LG Household & Health Care, alongside specialized brands including APR, VT, d'Alba Global, and Neopharm, which directly benefit from export growth through their brand equity and distribution networks. The intermediate ODM/OEM tier includes Cosmax, Kolmar Korea, Cosmecca Korea, and Korea Cosmetic Manufacturing, where production leverage arises from expanding orders from domestic and overseas brands. The container supply chain includes Pum-Tech Korea, whose business is linked to rising production volumes at brand and ODM companies. In distribution and platform areas, Silicon2 serves as a vendor distributing K-beauty products overseas, representing another channel for export expansion. Overall, the clearly differentiated business models among leading companies create a trickle-down effect whereby export expansion spreads across the brand-ODM-container-distribution chain."
+        "ko": "가치사슬은 원료·부자재 조달부터 제형 개발, 생산, 브랜드 마케팅, 유통까지 이어진다. 상류 단계에서는 펌텍코리아가 용기 금형 설계부터 사출·증착까지 전 공정을 내재화해 부자재를 공급하고, 중류 단계에서는 코스맥스·한국콜마·코스메카코리아·한국화장품제조가 브랜드사의 위탁을 받아 처방 개발과 생산을 대행하는 ODM 구조를 이룬다. 하류 단계의 브랜드사 중 아모레퍼시픽과 LG생활건강은 자체 브랜드와 유통망을 보유한 전통 대형사이고, 에이피알·달바글로벌·브이티·네오팜은 특정 브랜드나 제품군에 집중한 중소형 브랜드사다. 실리콘투는 생산이 아닌 해외 유통 단계에 위치해 인디 브랜드 제품을 매입해 해외 유통업체에 공급하는 역할을 맡는다. ODM 시장은 코스맥스와 한국콜마 양사로 집중도가 높은 편이며, 두 회사의 국내 공장 가동률 상승이 업종 성장의 핵심 축으로 꼽힌다.",
+        "en": "The value chain runs from raw material and components sourcing through formulation development, manufacturing, brand marketing, and distribution. At the upstream stage, Pum-tech Korea supplies packaging by internalizing the entire process from mold design to injection molding and metallization, while at the midstream stage Cosmax, Kolmar Korea, Cosmecca Korea, and Hankook Cosmetics Manufacturing form an ODM structure that develops formulations and manufactures products on commission for brand owners. Among downstream brand owners, Amorepacific and LG H&H are traditional large-cap companies with their own brands and distribution networks, while APR, d'Alba Global, Vt, and NeopharmCO are small and mid-cap brand companies focused on specific brands or product categories. Silicon 2 sits at the overseas distribution stage rather than manufacturing, purchasing indie brand products and supplying them to overseas retailers. The ODM market shows relatively high concentration around Cosmax and Kolmar Korea, with rising utilization rates at their domestic plants cited as a key driver of sector growth."
       },
       "trends": {
-        "ko": "최근 업황은 수출 중심의 구조적 성장이 뚜렷하게 확인된다. 하나증권은 2026년 한국 화장품 수출이 전년 대비 25% 이상 늘며 역대 최대 수준의 성장세를 보이고 있다고 진단했다. 특히 2026년 들어 미국이 중국을 제치고 최대 수출국으로 부상하는 구조적 전환이 확인되고 있으며, 2026년 1분기 미국 수출은 전년 동기 대비 크게 늘어난 반면 중국 수출은 줄어드는 대조적 흐름이 나타났다. 2026년 2분기 공시 기준으로도 이러한 흐름이 실적에 반영돼, 에이피알은 매출 7,675억원(전년 동기 대비 +134.2%), 영업이익 1,906억원(전년 동기 대비 +125.4%)을 기록했고 실리콘투도 매출 4,026억원(전년 동기 대비 +51.8%), 영업이익 830억원(전년 동기 대비 +59.0%)으로 고성장을 이어갔다. 아모레퍼시픽과 LG생활건강 등 대형 브랜드사는 매출 성장률은 상대적으로 낮았으나 영업이익이 전년 동기 대비 각각 59.3%, 87.5% 늘어 수익성 개선이 두드러졌다. 한편 최근에는 중국 수출도 저점 대비 반등 조짐이 나타나 업종 전반의 수출처 다변화가 동시에 진행되고 있다.",
-        "en": "Recent industry conditions clearly confirm export-driven structural growth. According to Hana Securities, Korea's cosmetics exports in 2026 are growing more than 25% year-over-year, the strongest momentum on record. In particular, a structural shift has been confirmed in 2026 whereby the United States overtook China as the largest export destination, with first-quarter 2026 exports to the US surging year-over-year while shipments to China contracted. This trend was also reflected in second-quarter 2026 disclosed results, as APR recorded revenue of KRW 767.5 billion (up 134.2% year-over-year) and operating profit of KRW 190.6 billion (up 125.4%), while Silicon2 also sustained rapid growth with revenue of KRW 402.6 billion (up 51.8%) and operating profit of KRW 83.0 billion (up 59.0%). Large brand companies such as Amorepacific and LG Household & Health Care posted relatively modest revenue growth but saw operating profit improve sharply by 59.3% and 87.5% respectively, highlighting emerging profitability leverage. Meanwhile, exports to China have also shown signs of rebounding from their lows, indicating that export destination diversification is proceeding across the sector simultaneously."
+        "ko": "2026년 상반기 국내 화장품 수출액은 전년 동기보다 27.3% 늘어난 70억 달러로 역대 모든 상반기 중 최대치를 기록했다. 미국이 상반기 수출의 20.7%를 차지하며 중국(14.4%)을 제치고 최대 수출국 자리를 지켰고, 미국향 수출은 전년 동기보다 41.5% 늘었다. 반면 중국향 수출은 6.6% 줄며 아시아·태평양 지역의 성장 둔화가 뚜렷해졌다. 이 같은 흐름 속에 주요 화장품 기업들은 2026년 2분기에 시장 전망치를 웃도는 실적을 발표했는데, 에이피알은 2분기 매출 7,675억원(전년 동기 대비 +134.2%)과 영업이익 1,906억원(전년 동기 대비 +125.4%)을 기록하며 북미·유럽 매출이 각각 246.6%, 380.3% 급증했다. 아모레퍼시픽은 2분기 영업이익 1,173억원으로 시장 컨센서스를 상회했고, 코스맥스와 한국콜마도 각각 매출 27.5%, 17.8% 늘며 국내 공장 가동률 상승의 수혜를 받았다. 다만 ODM 양사의 북미 사업은 희비가 엇갈렸는데, 코스맥스는 신규 고객 확보로 북미 생산 물량이 늘어난 반면 한국콜마 미국 법인은 2분기 매출이 3% 줄고 14억원의 영업손실을 내며 고객 포트폴리오 재편 과정의 공백을 겪었다.",
+        "en": "In the first half of 2026, Korea's cosmetics exports rose 27.3% year on year to $7.0 billion, the highest first-half figure on record. The US accounted for 20.7% of first-half exports, overtaking China (14.4%) to remain the top destination, with exports to the US up 41.5% year on year, while exports to China fell 6.6% amid a slowdown across the Asia-Pacific region. Against this backdrop, major cosmetics companies posted second-quarter 2026 results that exceeded market expectations: APR reported second-quarter sales of KRW 767.5 billion (up 134.2% year on year) and operating profit of KRW 190.6 billion (up 125.4% year on year), with North American and European sales surging 246.6% and 380.3%, respectively. Amorepacific's second-quarter operating profit of KRW 117.3 billion beat market consensus, while Cosmax and Kolmar Korea grew sales 27.5% and 17.8%, respectively, benefiting from higher domestic plant utilization rates. However, the two leading ODM firms diverged in North America, as Cosmax expanded production volume on new client wins while Kolmar Korea's US subsidiary saw second-quarter sales fall 3% and post an operating loss of KRW 1.4 billion amid a client portfolio transition."
       },
       "outlook": {
-        "ko": "향후 업종의 핵심 관전 포인트는 미국·유럽 시장에서의 유통 채널 확장이다. 아마존 중심이었던 온라인 판매에서 세포라, 얼타뷰티, 타겟, 코스트코 등 오프라인 채널로 확대되는 흐름이 매출 기여도를 키울 수 있는 요인으로 지목된다. 기초 화장품과 색조뿐 아니라 헤어케어, 바디케어, 홈뷰티 디바이스 등 카테고리 확장도 성장 동인으로 거론되며, 이는 브랜드사뿐 아니라 ODM사와 부품 공급사로도 수혜가 확산될 수 있는 구조다. 동시에 중국 수출이 반등 조짐을 보이는 점은 기존 성장축인 미국·유럽에 더해 추가적인 수요 모멘텀으로 작용할 가능성이 있다. 업종 전반적으로는 매출 성장과 함께 영업비용 부담을 흡수하는 수익성 레버리지가 지속될 수 있는지가 향후 실적 흐름을 가늠하는 핵심 변수로 꼽힌다.",
-        "en": "The key factor to monitor going forward is the expansion of distribution channels in the US and European markets. The shift from primarily Amazon-centered online sales toward offline channels such as Sephora, Ulta Beauty, Target, and Costco is cited as a factor that could increase revenue contribution. Category expansion beyond basic skincare and color cosmetics into haircare, bodycare, and home beauty devices is also mentioned as a growth driver, with a structure in which benefits could spread not only to brand companies but also to ODM firms and component suppliers. At the same time, signs of a rebound in exports to China could serve as an additional demand catalyst alongside the existing US and European growth axes. Across the sector overall, whether profitability leverage that absorbs operating expense burdens alongside revenue growth can be sustained is cited as the key variable for future earnings trends."
+        "ko": "수출 다변화는 지속되는 흐름으로 보이며, 기초화장품과 바디케어·홈뷰티 디바이스 등 퍼스널케어 전반에서 수출 증가세가 나타나고 있어 특정 품목이나 지역에 국한되지 않는 구조적 확장이 관전 포인트다. 미국 관세 체계는 2026년 들어 여러 차례 바뀌었는데, 2월 24일 이후 15% 상호관세가 중단되고 7월 24일부터는 최혜국 관세를 포함해 12.5%로 적용되고 있어 관세 부담 추이가 기업별 수익성에 영향을 줄 수 있다. 한국콜마는 북미·유럽 성장세를 반영해 연간 매출 목표를 상향 조정했고, 코스맥스와 한국콜마 모두 3분기에도 해외 수요 확대에 따른 수주 증가가 이어질 것으로 업계에서는 보고 있다. 유통 채널 측면에서는 아마존 중심에서 타겟·월마트·코스트코·세포라·울타 등 미국 오프라인 채널로 입점이 확대되는 흐름이 이어지고 있어, 채널 다변화의 성과가 하반기 이후 실적에 어떻게 반영되는지가 관찰 대상이다.",
+        "en": "Export diversification appears set to continue, with growth broadening across personal care categories including basic skincare, body care, and home beauty devices rather than being confined to specific products or regions, which stands as a key point to watch. The US tariff regime shifted multiple times in 2026: the 15% reciprocal tariff ceased after February 24, and since July 24 a combined rate of 12.5% including the most-favored-nation rate has applied, meaning tariff trends could affect company-level profitability going forward. Kolmar Korea raised its full-year sales target to reflect North American and European growth momentum, and industry observers expect both Cosmax and Kolmar Korea to see continued order growth from expanding overseas demand into the third quarter. On the distribution side, expansion continues from an Amazon-centered presence into US offline channels such as Target, Walmart, Costco, Sephora, and Ulta, making it worth monitoring how this channel diversification translates into results in subsequent periods."
       },
       "risks": [
         {
           "title": {
-            "ko": "환율 및 관세 변동성",
-            "en": "Exchange Rate and Tariff Volatility"
+            "ko": "미국 관세 정책의 불확실성",
+            "en": "Uncertainty over US tariff policy"
           },
           "body": {
-            "ko": "수출 비중이 높아진 만큼 원달러·원유로 환율 변동이 실적에 미치는 영향이 커졌다. 미국 등 주요 수출국의 관세 정책 변화도 수출 채산성에 영향을 줄 수 있는 변수로 꼽힌다.",
-            "en": "As export exposure has increased, the impact of KRW/USD and KRW/EUR exchange rate fluctuations on earnings has grown accordingly. Changes in tariff policy in major export destinations such as the United States are also cited as a variable that could affect export profitability."
+            "ko": "2026년 들어 미국의 한국산 화장품에 대한 관세율이 15%에서 중단된 뒤 7월 24일부터 12.5%로 재조정되는 등 제도 변화가 잦았다. 관세 부담은 소매 마진과 마케팅 분담금 책정 이전 단계에서 발생하기 때문에 현지 가격 구조 재설계가 필요하며, 추가적인 통상 협상 결과에 따라 기업별 수익성이 달라질 수 있다.",
+            "en": "US tariffs on Korean cosmetics changed frequently through 2026, moving from a 15% reciprocal rate that stopped being collected to a reconfigured 12.5% rate effective July 24. Because the tariff is incurred before retail margins and marketing contributions are set, pricing structures require rebuilding in the US market, and further trade negotiation outcomes could alter company-level profitability."
           }
         },
         {
           "title": {
-            "ko": "채널·브랜드 집중 리스크",
-            "en": "Channel and Brand Concentration Risk"
+            "ko": "중국 시장 수요 둔화",
+            "en": "Slowing demand in the Chinese market"
           },
           "body": {
-            "ko": "온라인 플랫폼 또는 특정 오프라인 유통사에 매출이 집중될 경우 해당 채널의 정책 변화나 입점 조건 변동이 개별 기업 실적에 직접적 영향을 줄 수 있다. 인디 브랜드 중심의 빠른 트렌드 교체 속에서 특정 브랜드 의존도가 높은 기업은 유행 변화에 따른 변동성에 노출될 수 있다.",
-            "en": "When revenue is concentrated in online platforms or specific offline retailers, changes in that channel's policies or listing terms can directly affect individual companies' earnings. Companies with high dependence on specific brands may be exposed to volatility stemming from trend shifts amid the rapid turnover characteristic of indie brand-driven growth."
+            "ko": "2026년 상반기 중국향 화장품 수출은 전년 동기 대비 6.6% 감소하며 아시아·태평양 지역 전반의 성장 둔화가 나타났다. 중국 사업 비중이 높은 기업일수록 중국 소비 경기와 현지 저가 경쟁 심화에 따른 실적 영향을 더 크게 받을 수 있다.",
+            "en": "Cosmetics exports to China fell 6.6% year on year in the first half of 2026, reflecting a broader slowdown across the Asia-Pacific region. Companies with greater exposure to the Chinese market may be more affected by trends in Chinese consumer spending and intensifying low-price competition locally."
           }
         },
         {
           "title": {
-            "ko": "경쟁 심화 및 중국 저가 공세",
-            "en": "Intensifying Competition and Low-Cost Chinese Rivalry"
+            "ko": "ODM 기업 간 북미 사업 격차",
+            "en": "Diverging North American performance among ODM firms"
           },
           "body": {
-            "ko": "아시아·태평양 지역에서는 중국 화장품의 저가 공세로 성장세가 둔화되는 모습이 나타난 바 있어, 이 지역 내 경쟁 구도 변화가 지속적인 관찰 대상이다. 글로벌 시장에서도 현지 브랜드 및 타국 뷰티 브랜드와의 경쟁이 심화될 경우 점유율 확대 속도에 영향을 줄 수 있다.",
-            "en": "In the Asia-Pacific region, growth has shown signs of slowing due to low-cost competition from Chinese cosmetics brands, making shifts in the regional competitive landscape an ongoing point of observation. Intensifying competition from local and other international beauty brands in global markets could also affect the pace of market share expansion."
+            "ko": "같은 ODM 업종 내에서도 북미 사업의 성과는 고객 포트폴리오와 생산 품목 구성에 따라 갈리고 있다. 한국콜마 미국 법인은 메이크업 매출 비중이 높은 반면 선케어·스킨케어 비중이 낮아 북미 수요 변화에 대한 대응이 상대적으로 더 필요한 구조다.",
+            "en": "Even within the same ODM category, North American performance diverges based on client portfolios and production mix. Kolmar Korea's US subsidiary carries a high proportion of makeup sales but a low share of sun care and skincare, leaving it structurally more exposed to the need to adapt to shifting North American demand."
           }
         }
       ],
       "sector": "화장품",
-      "generatedAt": "2026-10-08 19:52"
+      "generatedAt": "2026-10-09 22:23"
     },
     "전기장비": {
       "lead": {
