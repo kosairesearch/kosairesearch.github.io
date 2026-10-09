@@ -157,6 +157,18 @@ def main():
     if by_check:
         print(f"  · 정정 공시를 견줘 숫자가 같았던 종목 {len(by_check)}개는 뺀다: {','.join(sorted(by_check)[:20])}")
 
+    # 저장 문턱(검사 위반 · 잘린 글)에 연속으로 걸린 종목은 다시 주문하지 않는다(2026-10-10). 저장하지 못하면 리포트가
+    # 공시보다 낡은 채로 남아, 이 트리거가 하루 세 번 같은 공시로 다시 주문한다 — 같은 이유로 또 걸리면 돈만 나간다.
+    # 실패 횟수는 생성기가 센다(_reports_state.bump_fail · 저장하면 지운다). FAIL_LIMIT(3)번부터 빼고, 마지막 실패가
+    # FAIL_RESET_DAYS(14일)보다 오래되면 다시 고른다 — 자동 백필과 같은 기준이다.
+    stuck = S.load_failed_out()
+    held = sorted(sc for sc in cand if sc in stuck)
+    for sc in held:
+        cand.pop(sc, None)
+    if held:
+        print(f"  · 저장 문턱에 {S.FAIL_LIMIT}번 연속 걸려 뺀 종목 {len(held)}개(data/reports_v2_fail · "
+              f"{S.FAIL_RESET_DAYS}일 뒤 다시 본다): {','.join(held[:20])}")
+
     # 이미 주문이 들어가 결과를 기다리는 종목은 뺀다 — 다시 주문하면 돈만 두 번 나간다.
     inflight = S.inflight_tickers()
     busy = [sc for sc in cand if sc in inflight]

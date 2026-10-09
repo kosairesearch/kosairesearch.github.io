@@ -175,6 +175,22 @@ ok("숫자가 같았던 종목" not in text, "⑥ 다시 고른 종목은 '뺐�
 ROWS.pop()
 (S.CHECKED_DIR / B).unlink()
 
+# ⑦ 저장 문턱에 연속으로 걸린 종목은 공시 트리거가 다시 주문하지 않는다(2026-10-10) — 저장하지 못한 리포트는 공시보다
+#    낡은 채로 남아 하루 세 번 같은 공시로 다시 주문됐다. 고치기 전 코드면 B 가 계속 주문된다.
+for _ in range(S.FAIL_LIMIT):
+    S.bump_fail(B)
+out, text = gh_out(CF.main)
+got = out.get("new_tickers", "").split(",") if out.get("new_tickers") else []
+ok(B not in got and got == [D, E], "⑦ 저장 문턱에 3번 연속 걸린 B 는 다시 주문하지 않는다", str(got))
+ok(f"저장 문턱에 {S.FAIL_LIMIT}번 연속 걸려 뺀 종목 1개" in text and B in text, "⑦ 뺀 이유를 로그에 남긴다",
+   next((ln.strip() for ln in text.splitlines() if "저장 문턱" in ln), "없음"))
+S.clear_fail(B)
+S.bump_fail(B)
+out, text = gh_out(CF.main)
+got = out.get("new_tickers", "").split(",") if out.get("new_tickers") else []
+ok(got == [B, D, E], "⑦ 한두 번 실패는 그대로 다시 주문한다(일시 장애 · 다음 회차가 다시 만든다)", str(got))
+S.clear_fail(B)
+
 # 갱신 기준일(전 종목 다시 쓰기)이 있으면 그보다 낡은 리포트는 워치독 몫 — 판단도 늦은 날짜로
 S.REFRESH_FILE.write_text("2026-09-20\n", encoding="utf-8")
 out, text = gh_out(CF.main)
