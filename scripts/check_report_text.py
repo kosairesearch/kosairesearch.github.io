@@ -409,6 +409,165 @@ def streak_hits(rep):
     return hits
 
 
+# ── 금액: 본문의 이 회사 실적 금액이 공시 값과 같은가(2026-10-10) ─────────────────────────────────────────────────
+# 작성 모델이 원 단위 원자료를 '억 · 만'으로 옮기다 자리를 틀렸다 — 2,563편을 대조하니 23편에서 실제로 틀린 금액이 나왔다.
+# '2025년 4분기 영업이익은 8.6억원'(실제 8,600만원 · 열 배) · '2025년 연결 매출액은 3,427억 7,375만원'(실제 3,427억 3,774만원) ·
+# '2022년 매출 1조 1,148억원'(실제 1조 115억원). 재료를 본문 표기로 주는 것(fin_material)이 예방이고, 이 검사가 마지막 빗장이다.
+# 오탐을 막으려고 꼴이 분명한 문장만 본다 — '2025년 (연결) 매출(은) X원' · '2026년 2분기 영업이익 X원' 과 그 뒤에 이어지는 같은
+# 기간의 나열('· 영업이익 Y원'). 연도 앞에 다른 회사 · 부문 이름이 오거나, 잠정 · 전망 · 부문 · 누적 · 반기 같은 말이 있거나,
+# 어림 표현('… 대' · '을 넘' · '에서')이 붙으면 보지 않는다. 표기의 자릿수만큼(마지막 자리 1.5칸) 차이는 반올림으로 본다.
+# 측정(2026-10-10 · 한국어 7,024곳 · 영어 2,024곳): 걸린 29곳 중 오탐은 주어를 앞 문장에 둔 자회사 문장 1곳이었다.
+_AN = r"\d{1,3}(?:,\d{3})*(?:\.\d+)?|\d+(?:\.\d+)?"
+_AMT_KO = rf"(?:(?:{_AN})조(?: (?:{_AN})억)?(?: (?:{_AN})만)?|(?:{_AN})억(?: (?:{_AN})만)?|(?:{_AN})만)원"
+_AMT_MET = r"매출액|매출|영업이익|영업손실|지배주주 ?순이익|지배주주 ?순손실|당기순이익|당기순손실|순이익|순손실"
+_AMT_APPROX = (r"\s*(?:대|가량|안팎|수준|내외|이상|이하|미만|초과|남짓|규모|선|정도|에서|에 육박|에 못 미|에 달|에 이르|에 가까|가까이"
+               r"|[을를] (?:\S+ )?(?:넘|웃|밑|돌파|상회|하회))")
+_AMT_HEAD = re.compile(rf"(?<![\d~·∼\-])(?P<y>20\d\d)년(?: (?P<n>[1-4])분기)?(?: 연간)?(?: 연결)? (?P<m>{_AMT_MET})(?:은|는|이|가)? "
+                       rf"(?P<a>{_AMT_KO})(?!{_AMT_APPROX})")
+_AMT_NEXT = re.compile(rf"(?:\([^()]*\))?(?:으로|로|이고|이며|였고|이었고|를 기록했고|을 기록했고)?\s*(?:,|·|및|과|와|그리고)?\s*"
+                       rf"(?P<m>{_AMT_MET})(?:은|는|이|가|도)? (?P<a>{_AMT_KO})(?!{_AMT_APPROX})")
+_AMT_SKIP = re.compile(r"잠정|전망|예상|추정|컨센서스|목표|가이던스|계획|부문|사업부|자회사|종속|별도|누적|상반기|하반기|반기|합산|평균")
+_AMT_LEAD = (r"(?:(?:실제로|다만|한편|반면|또한|특히|이후|그러나|하지만|결국|그 결과|이에 따라|공시 기준으로|공시 기준|연결 기준으로|연결 기준"
+             r"|회사 공시 기준|확정 실적에서|확정 실적 기준)\s*,?\s*)*")
+_AMT_LOSS_AFTER = re.compile(r"\s*(?:의\s*)?(?:적자|손실)")
+_EN_MET = (r"revenue|sales|operating profit|operating income|operating loss"
+           r"|net profit attributable to (?:owners|controlling shareholders)(?: of the parent)?"
+           r"|net income attributable to (?:owners|controlling shareholders)(?: of the parent)?"
+           r"|controlling(?: interest)? net (?:profit|income)|attributable net (?:profit|income)|owner net (?:profit|income)"
+           r"|net profit|net income|net loss")
+_EN_AMT = r"(?:KRW|₩)\s?(?P<x>\d{1,3}(?:,\d{3})*(?:\.\d+)?|\d+(?:\.\d+)?)\s?(?P<u>trillion|billion|million|tn|bn|mn)\b"
+_EN_VERB = (r"(?:\s(?:was|were|of|came in at|came to|reached|totaled|totalled|stood at|amounted to|hit|rose|fell|grew|declined|dropped"
+            r"|increased|decreased|climbed|slipped|recovered|expanded|shrank|shrinking|narrowed|narrowing|widened|widening|swung|turned"
+            r"|improved|jumped|surged|plunged|tumbled|at)"
+            r"(?:\s(?:sharply|slightly|further|significantly|modestly|steeply|substantially|marginally|again))?(?:\s(?:to|at))?)?"
+            r"(?:\s(?:a|an))?(?:\s(?:record|new))?")
+_EN_HEAD = re.compile(rf"(?:(?:In|in|For|for|The|the)\s)?(?:(?P<qq>Q[1-4])\s(?P<qy>20\d\d)|(?P<y2>20\d\d)\s(?P<q2>Q[1-4])"
+                      rf"|(?:the\s)?(?P<o>first|second|third|fourth)[- ]quarter(?: of)?\s(?P<oy>20\d\d)|(?P<y>20\d\d))"
+                      rf"(?:\s(?:full-year|annual|consolidated))*,?\s(?P<m>{_EN_MET}){_EN_VERB}\s{_EN_AMT}"
+                      rf"(?!\s*(?:-plus|\+|range|level|mark))")
+_EN_SKIP = re.compile(r"(?i)preliminary|forecast|expect|estimate|consensus|target|guidance|segment|division|subsidiar|affiliate"
+                      r"|cumulative|first half|second half|half-year|\bH1\b|\bH2\b|year-to-date|average|plan")
+_EN_LEAD = re.compile(r"(?:(?:The company|It|The firm)(?:'s)?\s*)?(?:(?:However|Meanwhile|In addition|Moreover|Also|Indeed|Specifically"
+                      r"|By contrast|In contrast|As a result|Since then|Subsequently),?\s*)?")
+_EN_UNIT = {"trillion": 1e12, "tn": 1e12, "billion": 1e9, "bn": 1e9, "million": 1e6, "mn": 1e6}
+_EN_ORD = {"first": 1, "second": 2, "third": 3, "fourth": 4}
+
+
+def _amt_value(a):
+    """'1,137억 8,253만원' → (값, 마지막 자리 한 칸). '8,700만' 처럼 끝이 0 이면 그만큼 반올림한 표기로 본다."""
+    m = re.fullmatch(rf"(?:(?P<jo>{_AN})조)? ?(?:(?P<eok>{_AN})억)? ?(?:(?P<man>{_AN})만)?", a[:-1])
+    v, unit = 0.0, None
+    for g, mul in (("jo", 1e12), ("eok", 1e8), ("man", 1e4)):
+        x = m.group(g) if m else None
+        if x:
+            raw = x.replace(",", "")
+            v += float(raw) * mul
+            dec = len(raw.split(".")[1]) if "." in raw else 0
+            unit = mul / 10 ** dec
+            if g == "man" and dec == 0:
+                unit = mul * 10 ** min(len(raw) - len(raw.rstrip("0")), 3)
+    return v, unit
+
+
+def _amt_keys(met, quarterly):
+    """본문 지표 → 공시 칸. 분기의 '순이익'(지배주주 아님)은 공시 칸이 없어(분기는 지배주주 순이익만) 보지 않는다(None)."""
+    if met.startswith("매출") or met == "revenue" or met == "sales":
+        return ["rev"]
+    if met.startswith("영업") or met.startswith("operating"):
+        return ["op"]
+    owner = "지배" in met or "attributable" in met or "controlling" in met or "owner" in met
+    if owner:
+        return ["np_owner"]
+    return None if quarterly else ["np", "np_owner"]
+
+
+def amount_hits(rep):
+    """본문의 이 회사 실적 금액 ↔ 공시 값(quant). 다르면 '위험'. 공시 값이 없거나 외화 공시 회사면 보지 않는다."""
+    import fin_material as F                                  # noqa: E402 — 표준 라이브러리만 쓴다(돌림 의존 없음)
+    q = rep.get("quant") if isinstance(rep, dict) else None
+    if not isinstance(q, dict):
+        return []
+    if str((q.get("valuation") or {}).get("ccy") or "KRW").upper() != "KRW":
+        return []
+    an = {a.get("year"): a for a in (q.get("annual") or []) if isinstance(a, dict)}
+    qs = {r.get("q"): r for r in (q.get("quarterly") or []) if isinstance(r, dict)}
+    if not an and not qs:
+        return []
+    no_rev = bool(q.get("rev_label"))
+    me = re.escape(str(rep.get("name") or "")) or "(?!)"
+    lead_ko = re.compile(rf"(?:(?:{me}|회사|동사|당사|이 회사)(?:의|는|은|도|가|이)?\s*)?{_AMT_LEAD}")
+    hits = []
+
+    def judge(sec, s, label, row, met, val, unit, loss, en):
+        keys = _amt_keys(met.lower() if en else met, quarterly=label[1])
+        if keys is None or (no_rev and keys == ["rev"]):
+            return
+        vals = [row.get(k) for k in keys if row.get(k) is not None and not (k == "rev" and row.get(k) == 0)]
+        if not vals:
+            return
+        good = [x for x in vals if (x < 0) == loss or x == 0]
+        if any(abs(abs(x) - val) <= unit * 1.5 for x in good):
+            return
+        x = vals[0]
+        name = {"rev": "매출", "op": "영업이익" if x >= 0 else "영업손실"}.get(keys[0]) or ("순이익" if x >= 0 else "순손실")
+        shown = F.won_en(x) if en else F.won(x)
+        when = (F.qtext(label[0]) if label[1] else f"{label[0]}년")
+        hits.append({"rule": "amount", "level": "위험", "section": sec, "match": s[:0] + met,
+                     "why": f"금액이 공시 값과 다르다 — {when} {name} 공시 값은 {shown}"
+                            + (" (지배주주 기준)" if keys == ["np_owner"] else "")
+                            + " · 이 회사의 값이 아니면 문장 앞에 그 회사 · 부문 이름을 쓸 것",
+                     "sentence": s[:160]})
+
+    for path, f in _flat_fields({k: v for k, v in rep.items() if k not in _NOT_TEXT}).items():
+        sec = path.split(".")[0]
+        for s in re.split(r"(?<=[.!?])\s+", f.get("ko") or ""):
+            if _AMT_SKIP.search(s):
+                continue
+            for m in _AMT_HEAD.finditer(s):
+                if not lead_ko.fullmatch(s[:m.start()].strip()):
+                    continue
+                label = (f"{m.group('y')}Q{m.group('n')}", True) if m.group("n") else (int(m.group("y")), False)
+                row = qs.get(label[0]) if label[1] else an.get(label[0])
+                if not row:
+                    continue
+                pairs, pos = [(m.group("m"), m.group("a"), m.end())], m.end()
+                while True:
+                    nx = _AMT_NEXT.match(s, pos)
+                    if not nx:
+                        break
+                    pairs.append((nx.group("m"), nx.group("a"), nx.end()))
+                    pos = nx.end()
+                for met, a, end in pairs:
+                    val, unit = _amt_value(a)
+                    if unit is None:
+                        continue
+                    loss = "손실" in met or bool(_AMT_LOSS_AFTER.match(s, end))
+                    judge(sec, s, label, row, met, val, unit, loss, en=False)
+        for s in re.split(r"(?<=[.!?])\s+", f.get("en") or ""):
+            if _EN_SKIP.search(s):
+                continue
+            for m in _EN_HEAD.finditer(s):
+                if not _EN_LEAD.fullmatch(s[:m.start()].strip()):
+                    continue
+                if m.group("qq"):
+                    label = (f"{m.group('qy')}Q{m.group('qq')[1]}", True)
+                elif m.group("q2"):
+                    label = (f"{m.group('y2')}Q{m.group('q2')[1]}", True)
+                elif m.group("o"):
+                    label = (f"{m.group('oy')}Q{_EN_ORD[m.group('o')]}", True)
+                else:
+                    label = (int(m.group("y")), False)
+                row = qs.get(label[0]) if label[1] else an.get(label[0])
+                if not row:
+                    continue
+                x = m.group("x").replace(",", "")
+                u = _EN_UNIT[m.group("u")]
+                unit = u / 10 ** (len(x.split(".")[1]) if "." in x else 0)
+                loss = "loss" in m.group("m").lower() or bool(re.match(r"\s*(?:loss|deficit)", s[m.end():]))
+                judge(sec, s, label, row, m.group("m"), float(x) * u, unit, loss, en=True)
+    return hits
+
+
 def check(rep):
     """위반 목록을 돌려준다. [] 면 통과."""
     hits = []
@@ -447,7 +606,7 @@ def check(rep):
             hits.append({"rule": "hangul_en", "level": "품질", "section": sec,
                          "match": t[i:i + 12], "why": "영문에 한글이 남았다 — 로마자/영문 명칭으로",
                          "sentence": t[max(0, i - 60):i + 60]})
-    return hits + streak_hits(rep) + defects(rep)
+    return hits + streak_hits(rep) + amount_hits(rep) + defects(rep)
 
 
 # ── 교정: 걸린 문장만 다시 쓴다 ──────────────────────────────────────────
@@ -470,7 +629,10 @@ _RULE_TEXT = "\n".join(f"  · {key}: {why}" for key, _lv, _pat, why in RULES) + 
     "\n  · en_word: 한국어 문장에 영어 일반 낱말을 섞지 말 것('Phase에 진입' → '단계에 진입', 'niche 영역' → '틈새 영역',"
     " 'valuation' → '밸류에이션')."
     "\n  · streak: 'N년 연속 감소 · 증가'는 실적 표에서 다시 센다 — 정점 · 저점 다음 해부터 센 햇수다('2023년 정점 → 2024 · 2025년 감소'는"
-    " 2년 연속). 햇수만 고치고, 같은 칸의 영어(three consecutive years 등)도 같이 고칠 것.")
+    " 2년 연속). 햇수만 고치고, 같은 칸의 영어(three consecutive years 등)도 같이 고칠 것."
+    "\n  · amount: 이 회사의 실적 금액이 공시 값과 다르다 — 위반 설명에 적힌 공시 값으로 그 금액만 고친다(같은 문장의 '전 분기 · 전년'"
+    " 금액이 같은 자리에서 틀렸으면 그것도, 같은 칸의 영어 금액도 같은 값으로). 그 문장이 이 회사가 아니라 자회사 · 부문 · 다른 회사의"
+    " 수치라면 금액은 두고 문장 앞에 그 이름을 밝힌다.")
 
 
 def _parse_json(text):
@@ -508,7 +670,8 @@ def repair(cl, rep, hits, model=None):
         "아래는 기업 리서치 리포트의 일부 섹션(JSON)입니다. 표현 규칙 검사에서 다음 위반이 나왔습니다.\n"
         f"{listing}\n\n규칙:\n{_RULE_TEXT}\n\n"
         "지시:\n"
-        "1. 위반된 문장만 규칙에 맞게 고쳐 쓰세요. 사실(숫자·고유명사·인과)은 바꾸지 말고 표현만 바꾸세요. "
+        "1. 위반된 문장만 규칙에 맞게 고쳐 쓰세요. 사실(숫자·고유명사·인과)은 바꾸지 말고 표현만 바꾸세요 — "
+        "다만 amount · streak 위반은 위반 설명에 적힌 공시 값 · 햇수로 그 숫자만 고치세요. "
         "목표주가는 증권사명·시점을 알 수 없으면 수치를 지우고 정성 서술로 바꾸세요.\n"
         "2. 위반이 없는 문장은 글자 하나도 바꾸지 마세요. 키 구조·배열 길이·ko/en 짝을 그대로 유지하세요.\n"
         "3. 영어(en)에 한글이 있으면 로마자 또는 영문 명칭으로 바꾸세요. 한국어(ko)에 한자를 쓰지 마세요.\n"
@@ -728,6 +891,7 @@ _WHY_EXTRA = {
     "markup": "태그 · 인용 표시 · 마크다운", "broken_char": "깨지거나 엉뚱한 글자", "hanja": "한국어 문장 속 한자",
     "meta": "받은 자료를 가리키는 말", "stale_time": "상대 시점(지난달 · 이번 주 · 오늘)", "en_word": "한국어 문장 속 영어 낱말",
     "streak": "연속 연수가 실적 표와 다름(정점 다음 해부터 센다)",
+    "amount": "본문 금액이 공시 값과 다름",
 }
 
 

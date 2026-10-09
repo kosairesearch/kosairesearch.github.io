@@ -622,7 +622,10 @@ ok(not M.valid_v2(bad2), "keypoints 에 en 이 없으면 실패")
 
 # (e) 프롬프트 — 반영 범위·주당 지표 금지·영문 한글 금지
 pr = M.build_prompt_v2(STOCKS[0], q, "2026-09-05 02:00")
-ok("재무 반영 범위" in pr and "2026Q2" in pr and "checkpoints 의 when 은 이 날짜 이후" in pr, "기준 범위·체크포인트 날짜 지시")
+# 2026-10-10 — 원자료(JSON) 대신 본문 표기로 바꾼 [공시 실적]을 준다(fin_material). 범위는 '2026년 2분기'처럼 사람이 읽는 이름.
+ok("정기보고서로 공시된 실적은" in pr and "2026년 2분기" in pr and "[공시 실적" in pr and "checkpoints 의 when 은 이 날짜 이후" in pr,
+   "기준 범위·체크포인트 날짜 지시")
+ok("ttm_window" not in pr and "np_owner" not in pr and "분기 창" not in pr.replace("'분기 창'", ""), "원자료 칸 이름 · 지시문 말이 본문으로 새지 않게")
 ok("주당 지표(EPS·BPS·DPS)의 수치도" in pr and "valuation.eps·bps" not in pr, "주당 지표 수치 인용 금지")
 ok("한글 문자를 한 글자도" in pr and "증권사명 없이 범위를" in pr, "영문 한글 금지·목표주가 범위 금지")
 
