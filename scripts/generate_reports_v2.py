@@ -1639,6 +1639,13 @@ def build_prompt_v2(stock, quant, as_of):
         (X) "저평가된 상태가 지속되고 있다"
    · 매수·매도 권유, "지금이 기회" "담을 만하다" 류의 표현.
    면책 문구에서 이 단어들을 쓰는 것("매수·매도 의견을 포함하지 않는다")은 예외다.
+6-2. **표기 · 시점 · 서술** (2026-10-09 — 업종 분석 · 리포트에서 사람이 먼저 본 결함들이다)
+   · 1,000 이상의 수에는 천 단위 쉼표를 쓴다 — "9,000억원"(O) "9000억원"(X). 연도 · 제품 번호(4680 배터리)는 예외.
+   · 상대 시점을 쓰지 않는다 — '지난달' · '이달' · '이번 주' · '오늘' · '다음 달' 은 리포트가 걸려 있는 동안 다른 날을 가리킨다. "2026년 9월"처럼 날짜로 쓰고, 날짜를 모르면 시점 표현을 뺀다. 기사의 날짜를 확인해 이미 지난 일을 앞으로의 일('…할 예정' · '…되면')로 쓰지 않는다.
+   · 받은 자료를 가리키지 않는다 — '제공된 분기 구간' · '제공된 확정 재무 데이터' · '분기 창' · 'the quarters provided' · 'quarterly window' 대신 "최근 5개 분기 중" · "공시 실적 기준" · "the last five quarters". 독자는 이 지시문을 보지 못한다.
+   · 한국어 문장에 영어 일반 낱말을 섞지 않는다 — 'valuation' · 'discount' · 'momentum' · 'risk' · 'niche' → '밸류에이션' · '할인' · '모멘텀' · '리스크' · '틈새'. 업계 약어(HBM · CAPEX)와 고유명사는 된다.
+   · 한 문장에 한 사실 — 검색 결과의 문장 조각을 이어 붙이지 않는다. 여러 대상을 묶은 말('대부분' · '모두' · '두 자릿수')은 묶은 값이 모두 그 말에 들어맞을 때만 쓴다. 다른 회사의 수치를 이 회사 문장에 붙이지 않는다. 적자를 이익 증가처럼 쓰지 않는다. '폭증' · '폭발적' · '역대급' 같은 과장 대신 수치로.
+   · 우리 목소리의 투자 판단을 쓰지 않는다 — '보수적 접근이 타당하다' · '현 밸류에이션이 위험을 충분히 반영하지 않았다' · '업사이드가 아직 주가에 반영되지 않았다' 대신 사실과 다음에 확인할 지점으로.
 6-1. **한자를 섞지 말 것**: '전년比'→'전년 대비', '삼성디스플레이向'→'삼성디스플레이 대상', '데이터센터發'→'데이터센터발', '美/中/日'→'미국/중국/일본', 'A社'→'A사'. 한자를 읽지 못하는 독자가 많다. 한국어 뒤 괄호 병기('상저하고(上低下高)')만 예외.
 
 [출력 형식]
@@ -2733,9 +2740,26 @@ class _RepairQueue:
                                      model=got.get("model"), usage=None, stop_reason=got.get("stop_reason"))
 
 
+# 저장 전 검토를 켜고 끈다(2026-10-09). 1단계는 끈 채로 올리고, 시험 회수(review_replay)로 고침의 품질과 값을 본 뒤 켠다.
+# 켜면 리포트마다 검토 요청 하나가 보정 배치에 실린다(Sonnet 5 배치 · 한 편 약 3~5센트).
+REVIEW_ON = os.getenv("REPORT_REVIEW", "0") == "1"
+
+
+def review_material(name, q):
+    """검토용 재료 — 실적 표의 연간 · 분기 값(매출 · 영업이익 · 지배순이익). 화면에 없는 지표(ROE)는 넣지 않는다."""
+    if not isinstance(q, dict):
+        return ""
+    out = []
+    for a in q.get("annual") or []:
+        out.append(f"  - {name} {a.get('year')}년: 매출 {_eok(a.get('rev'))} · 영업이익 {_eok(a.get('op'))} · 지배순이익 {_eok(a.get('np_owner'))}")
+    for r in q.get("quarterly") or []:
+        out.append(f"  - {name} {r.get('q')}: 매출 {_eok(r.get('rev'))} · 영업이익 {_eok(r.get('op'))} · 지배순이익 {_eok(r.get('np_owner'))}")
+    return "\n".join(out)
+
+
 # 보정 배치를 몇 번까지 오가나. 한 종목은 영문 채우기 · 표현 교정 두 번이면 끝난다. 코드가 바뀌어
 # 요청 이름이 달라지는 경우에 대비한 한도다 — 넘기면 답이 없는 보정은 실패로 다루고 마무리한다.
-REPAIR_ROUNDS = 3
+REPAIR_ROUNDS = 4 if REVIEW_ON else 3   # 검토를 켜면 영문 채우기 · 검토 · 표현 교정이 한 종목에 다 걸릴 수 있다
 
 
 def _answers_from(cl, batch_id, keys, state):
@@ -2880,7 +2904,7 @@ def collect(cl, as_of, state):
             # 만 단위를 붙여 쓴 곳이 9,074군데(72%), 한 리포트 안에서 두 방식이
             # 섞인 것도 34개였다. 정규식으로 확정할 수 있는 종류라 저장 전에 맞춘다.
             try:
-                _nsp, rep = number_spacing.normalize_report(rep)
+                _nsp, rep = number_spacing.normalize_report(rep, commas=True)
                 if _nsp:
                     log(f"  · {tk} 금액 표기 {_nsp}곳 정리 (79조3,187억원 → 79조 3,187억원)")
             except Exception as e:
@@ -2894,6 +2918,27 @@ def collect(cl, as_of, state):
                 bad_text = check_report_text.check(rep)
             except Exception:
                 bad_text = []
+            # 저장 전 검토(2026-10-09) — 기계 검사가 못 잡는 깨진 문장 · 재료와 다른 서술 · 앞뒤 모순 · 낡은 기사 · 회사 설명 오류를
+            # 값싼 모델이 재료(실적 표)와 함께 읽고 고칠 곳만 돌려준다(check_report_text.review). 배치 대기열(mcl)을 거친다 — 답이
+            # 오기 전에는 이 종목을 미룬다. 고친 뒤에도 남은 위반은 아래 표현 교정이 한 번 더 고친다.
+            if REVIEW_ON and not repair_off:
+                try:
+                    got = check_report_text.review(
+                        mcl, rep, bad_text, kind="report", as_of=(state.get("created") or as_of)[:10],
+                        material=review_material(rep.get("name") or tk, rep.get("quant")),
+                        names=f"  - {rep.get('name') or tk}({check_report_text.clean_en(rep.get('name_en'))}) — 이 리포트의 회사",
+                        hints=check_report_text.en_gap_hints(rep))
+                except Exception as e:
+                    got = None
+                    log(f"  · ({tk} 검토 호출 실패: {type(e).__name__}: {e})")
+                    if _api_unavailable(e):
+                        repair_off = True
+                        log("  · (검토 · 교정은 이번 회수에서 접는다 — 모델을 부를 수 없다)")
+                if got:
+                    rep, _after, note = got
+                    rep = check_report_text.prepare(rep)
+                    bad_text = check_report_text.check(rep)
+                    log(f"  · 🔎 {tk} {note} → 남은 위반 {len(bad_text)}건")
             if bad_text and not repair_off and os.getenv("REPORT_REPAIR", "1") != "0":
                 try:
                     fixed = check_report_text.repair(mcl, rep, bad_text)
@@ -2918,13 +2963,16 @@ def collect(cl, as_of, state):
             # 깨진 글자·태그는 표현이 아니라 글자가 망가진 것이다 — 화면에 '경�쟁'·'경쁴력'·'<sup …>' 가
             # 그대로 찍힌다(2026-09-26 사장이 먼저 봤다). 교정 뒤에도 남았으면 저장하지 않는다. 있던
             # 리포트는 그대로 둔다(낡아도 읽힌다). fail 에 세므로 다음 회차가 다시 만들고, 거듭 실패하면
-            # 다른 실패와 같이 멈춰 사람이 본다. 나머지 표현 문제는 전처럼 로그만 남기고 쓴다.
-            broken = [h for h in bad_text if h["rule"] in ("broken_char", "markup")]
-            if broken:
+            # 다른 실패와 같이 멈춰 사람이 본다.
+            # 2026-10-09 부터는 검사 위반이 하나라도 남으면 저장하지 않는다(받은 자료 언급 · 상대 시점 · 영어 낱말 · 투자 판단까지).
+            # 전에는 표현 문제는 로그만 남기고 썼는데, 검사 묶음의 전수 검사(check_report_text_test)는 사람이 돌릴 때만 돌아
+            # 사이트에 먼저 걸렸다(업종 분석 30편 · 리포트 2,703편 중 690편 — 사장이 크게 질책했다).
+            if bad_text:
                 fail += 1
                 n = S.bump_fail(tk)
-                log(f"  · 🚫 {tk} 깨진 글자·태그 {len(broken)}곳이 교정 뒤에도 남아 저장하지 않음 ({n}번째 실패) "
-                    f"— [{broken[0]['section']}] {broken[0]['match']!r} · {broken[0]['sentence'][:60]}")
+                h0 = bad_text[0]
+                log(f"  · 🚫 {tk} 검사 위반 {len(bad_text)}건({', '.join(sorted({h['rule'] for h in bad_text}))})이 교정 뒤에도 남아 "
+                    f"저장하지 않음 ({n}번째 실패) — [{h0['section']}] {h0['match']!r} · {h0['sentence'][:60]}")
                 continue
 
             (OUT_DIR / f"{tk}.json").write_text(

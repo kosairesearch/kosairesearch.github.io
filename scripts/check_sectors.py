@@ -137,6 +137,18 @@ check(rows[0] and rows[0] == rows[1], "실사이트와 스테이징의 안내가
 check("live_number_hits" in gen, "회수할 때 집계 수치가 박혔는지 본다")
 check('"agg": agg' in gen or '"agg": agg,' in gen or '"agg"' in gen,
       "제출 시점 집계를 적어 둔다(회수할 때 그 값으로 비교)")
+check("listed_count_hits" in gen, "상장 종목 수를 어림수로 쓴 문장('170여 개')도 본다")
+
+# ── 5-1) 저장 전 정리 · 검토(2026-10-09) ──────────────────────
+#
+#    10월 8일 판 30편을 사람이 읽으니 검사를 다 통과한 글에 깨진 문장 · 재료와 다른 수치 · 회사 설명 오류 · 낡은 기사 ·
+#    상대 시점 · 영어 낱말이 있었다(사장이 크게 질책했다). 회수할 때 정리(prepare) → 검토(배치) → 검사를 거쳐야 저장한다.
+check("def prepare(rep)" in gen and "commas=True" in gen, "저장 전 정리(태그 · 한자 · 천 단위 쉼표)를 거친다")
+check("def review_round(" in gen and "review_round(cl, cand" in gen, "회수할 때 검토 배치를 거친다")
+check('os.getenv("SECTOR_REVIEW", "1")' in gen, "검토는 기본으로 켜져 있다(SECTOR_REVIEW=0 으로만 끈다)")
+check("검토 뒤에도 결함" in gen and "검토 답 없음" in gen, "검토가 못 고치거나 답이 없으면 저장하지 않는다")
+check(all(r in gen for r in ('"stale_time"', '"en_word"', '"meta"', '"hanja"')), "상대 시점 · 영어 낱말 · 받은 자료 언급 · 한자를 거른다")
+check("company_lines(" in gen and "[회사 설명" in gen, "지시문에 회사 설명(기업 리포트 첫 문장 · 영문명)을 준다")
 
 # ── 6) 업종마다 작성 시점이 찍혀 있는가 ──────────────────────
 #
@@ -253,7 +265,7 @@ check(bool(r_sec) and r_sec == r_rep, "추정액 단가가 리포트 생성기�
 check("[작성 기준일]" in gen and "build_prompt(sec, sectors[sec], as_of)" in gen, "지시문에 작성 기준일을 준다")
 check("_fin_line" in gen and "[상위 종목 최근 분기 실적" in gen, "상위 종목의 최근 분기 실적(공시 확정치)을 재료로 준다")
 check("반드시 웹 검색으로" in gen, "웹 검색을 반드시 하게 한다")
-check("for h in C.check(_as_report(rep))" in gen and "clean(g.parse_report(text))" in gen,
+check("for h in C.check(_as_report(rep))" in gen and "prepare(g.parse_report(text))" in gen and "rep = clean(rep)" in gen,
       "저장 전에 리포트와 같은 글자 정리 · 검사(금지 표현 포함)를 한다")
 check("strict_sources=(rnd < ROUNDS)" in gen, "출처 0건은 다시 쓰고, 마지막 회차만 받는다")
 IND = (ROOT / "scripts" / "build_industry_comp.py").read_text(encoding="utf-8")

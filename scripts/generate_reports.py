@@ -611,6 +611,15 @@ def main():
                     "reportTs": as_of,
                     "dataDate": data.get("dataDate", ""),
                 })
+                # 저장 전 정리 · 검사(2026-10-09) — 리포트 v2 · 신규 상장 배치와 같은 기준. 이 옛 생성기는 예약이 없고 즉시
+                # 호출이라 검토 모델을 붙이지 않는다 — 검사에 걸리면 저장하지 않는다(있던 리포트 그대로).
+                import check_report_text as _C
+                rep = _C.prepare(rep)
+                _bad = _C.check(rep)
+                if _bad:
+                    log(f"- 🚫 검사 위반 {len(_bad)}건({', '.join(sorted({h['rule'] for h in _bad}))}) — 저장하지 않음 · "
+                        f"[{_bad[0]['section']}] {_bad[0]['sentence'][:60]}")
+                    break
                 reports[tk] = rep
                 gen_count += 1
                 log(f"- ✅ 완료 ({time.time()-t0:.0f}s · 검색 {searches}회)")

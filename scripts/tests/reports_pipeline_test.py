@@ -912,8 +912,14 @@ def _no_sync(**kw):
     raise AssertionError("즉시 호출을 했다")
 
 def answer_for(params):
-    """보정 요청 하나에 대한 가짜 답 — 영문 채우기는 EN0·EN1…, 표현 교정은 걸린 표현을 바꾼 같은 모양의 JSON."""
+    """보정 요청 하나에 대한 가짜 답 — 영문 채우기는 EN0·EN1…, 표현 교정은 걸린 표현을 바꾼 같은 모양의 JSON,
+    저장 전 검토(2026-10-09)는 '제공된 분기 구간 중 최대였다.' 를 고치는 고침 목록."""
     c = params["messages"][0]["content"]
+    if '"patches"' in c:
+        flat = json.loads(c.split("===INPUT===\n", 1)[1].rsplit("\n===INPUT_END===", 1)[0])
+        pt = [{"path": k, "lang": "ko", "old": "제공된 분기 구간 중 최대였다.", "new": "최근 5개 분기 중 최대였다.", "why": "6"}
+              for k, v in flat.items() if "제공된 분기 구간 중 최대였다." in (v.get("ko") or "")]
+        return "===JSON_START===" + json.dumps({"patches": pt}, ensure_ascii=False) + "===JSON_END==="
     if "===INPUT===" in c:
         part = json.loads(c.split("===INPUT===\n", 1)[1].rsplit("\n===INPUT_END===", 1)[0])
         out = json.loads(json.dumps(part, ensure_ascii=False).replace("저평가된 상태다", "순자산을 밑도는 구간이다"))
@@ -1033,6 +1039,57 @@ ok(not (S.OUT_DIR / "000020.json").exists() and fm3.sent == [] and cl3.messages.
    "잘린 글은 버리고 돈을 더 쓰지 않는다(보정 주문도 없다)", f"calls={len(fm3.sent)}")
 ok(S.fail_count("000020") >= 1, "실패로 세어 다음 run 이 다시 만든다")
 
+
+# (l) 저장 전 검토(2026-10-09) — REPORT_REVIEW 를 켜면 검토 요청이 보정 배치에 실린다(즉시 호출 없음). 답을 받은 다음
+#     회수에서 고침을 적용하고, 다시 정리 · 검사해 위반이 없으면 저장한다.
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+(S.OUT_DIR / "000020.json").unlink(missing_ok=True)
+S.clear_fail("000020")
+M.REVIEW_ON = True
+T.repair = REAL_T_REPAIR
+rv = GOODREP()
+rv["earnings"]["ko"] = rv["earnings"]["ko"].replace("문장이다.", "제공된 분기 구간 중 최대였다.", 1)
+mk("msgbatch_RV", ["000020"])
+cl7 = FakeClient(); cl7.messages.create = _no_sync
+cl7.messages.batches.store["msgbatch_RV"] = batch_obj("msgbatch_RV", "ended", [
+    result("000020", text="===JSON_START===" + json.dumps(rv, ensure_ascii=False) + "===JSON_END===")])
+M.pickup(cl7, "2026-09-05 03:00")
+st7 = json.loads(S.batch_path("msgbatch_RV").read_text(encoding="utf-8"))
+ok(not (S.OUT_DIR / "000020.json").exists() and st7.get("deferred") == ["000020"], "검토는 배치로 넘기고 저장을 미룬다",
+   str(st7.get("deferred")))
+rbid7, rreqs7 = cl7.messages.batches.created[0]
+c7 = rreqs7[0]["params"]["messages"][0]["content"]
+ok(len(rreqs7) == 1 and '"patches"' in c7 and "[재료 — 공시 확정치" in c7 and "[작성 기준일] 2026-09-05" in c7
+   and "[기계 검사에서 걸린 곳 — 반드시 고칠 것]" in c7 and rreqs7[0]["params"]["model"] == "claude-sonnet-5",
+   "검토 요청 — 값싼 모델 · 작성 기준일 · 재료(실적 표) · 기계 검사에 걸린 곳")
+cl7.messages.batches.store[rbid7] = answer_batch(rbid7, rreqs7)
+M.pickup(cl7, "2026-09-05 03:30")
+g7 = json.loads((S.OUT_DIR / "000020.json").read_text(encoding="utf-8")) if (S.OUT_DIR / "000020.json").exists() else {}
+ok(bool(g7) and "최근 5개 분기 중 최대였다." in g7["earnings"]["ko"] and "제공된" not in g7["earnings"]["ko"] and not T.check(g7),
+   "검토의 고침을 적용해 저장한다 — 저장된 글은 검사를 통과한다")
+st7 = json.loads(S.batch_path("msgbatch_RV").read_text(encoding="utf-8"))
+ok((st7.get("usage_repair") or {}).get("claude-sonnet-5", {}).get("n") == 1, "검토 사용량을 보정 사용량에 남긴다(배치 단가)",
+   str(st7.get("usage_repair")))
+M.REVIEW_ON = False
+
+# (m) 저장 문턱(2026-10-09) — 교정 뒤에도 검사 위반(상대 시점 · 받은 자료 언급 등)이 하나라도 남으면 저장하지 않는다.
+#     전에는 깨진 글자 · 태그만 막고 나머지는 로그만 남긴 채 썼다.
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+(S.OUT_DIR / "000020.json").unlink(missing_ok=True)
+S.clear_fail("000020")
+T.repair = lambda cl_, rep_, hits_, model=None: None          # 교정이 고치지 못한 경우
+st_ = GOODREP()
+st_["outlook"]["ko"] = st_["outlook"]["ko"].replace("문장이다.", "지난달 공급계약을 맺었다.", 1)
+mk("msgbatch_GATE", ["000020"])
+cl8 = FakeClient()
+cl8.messages.batches.store["msgbatch_GATE"] = batch_obj("msgbatch_GATE", "ended", [
+    result("000020", text="===JSON_START===" + json.dumps(st_, ensure_ascii=False) + "===JSON_END===")])
+M.pickup(cl8, "2026-09-05 04:00")
+ok(not (S.OUT_DIR / "000020.json").exists() and S.fail_count("000020") == 1,
+   "상대 시점이 남으면 저장하지 않고 실패로 센다(다음 회차가 다시 만든다)", f"fail={S.fail_count('000020')}")
+T.repair = _repair_stub
 
 print()
 print("⑫ 그리드 동기화 — 화면 위 숫자는 리포트에서 나온다")

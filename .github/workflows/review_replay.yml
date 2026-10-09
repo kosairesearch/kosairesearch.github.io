@@ -1,0 +1,62 @@
+name: 🔎 저장 전 검토 시험 (수동 · 저장 안 함)
+
+# 업종 분석 · 리포트 생성기가 저장 전에 거치는 검토(check_report_text.review)를 지금 사이트에 걸린 글에 시험으로 돌린다.
+# 고침 목록만 실행 기록과 첨부파일로 남기고, 아무것도 저장 · 커밋하지 않는다(2026-10-09).
+#
+#   · sectors — 업종 분석 전부(30편 · 약 $1)
+#   · reports — 고른 리포트, 또는 최근에 쓴 리포트 N편(한 편 3~5센트)
+#
+# 배치로만 보낸다. 리포트 생성기의 검토(REPORT_REVIEW)를 켜기 전에 고침의 품질과 값을 이 잡으로 확인한다.
+
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'sectors(업종 분석 전부) 또는 reports(리포트)'
+        default: 'sectors'
+      tickers:
+        description: '리포트 종목코드(공백 구분) — reports 일 때. 비우면 최근 N편'
+        default: ''
+      recent:
+        description: '최근 리포트 N편 — reports 이고 종목코드가 비었을 때'
+        default: '20'
+      ref:
+        description: '어느 가지의 코드로 돌릴지'
+        default: 'main'
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+
+      - name: 검토 시험 (배치 · 저장 안 함)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TARGET: ${{ inputs.target }}
+          TICKERS: ${{ inputs.tickers }}
+          RECENT: ${{ inputs.recent }}
+        run: |
+          set -o pipefail
+          if [ "$TARGET" = "sectors" ]; then
+            python3 scripts/review_replay.py sectors | tee review_replay.log
+          elif [ -n "$TICKERS" ]; then
+            python3 scripts/review_replay.py reports $TICKERS | tee review_replay.log
+          else
+            python3 scripts/review_replay.py reports --recent "$RECENT" | tee review_replay.log
+          fi
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: review-replay
+          path: review_replay.log
+          if-no-files-found: ignore
