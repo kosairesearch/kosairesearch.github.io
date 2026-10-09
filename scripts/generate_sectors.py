@@ -86,7 +86,7 @@ SYSTEM = (
     "너는 한국 증시 섹터(업종) 애널리스트다. 주어진 업종의 한국 상장사들을 바탕으로 "
     "투자 참고용 업종 분석을 작성한다. 매수/매도·목표주가 등 투자권유 표현은 쓰지 않는다. "
     "수치는 확인된 것만 쓰고 과장·날조하지 않는다. 전문 애널리스트 톤.\n\n"
-    "[집계]로 주는 수치(업종 시가총액 합계·전체 시장 비중·상장 종목 수)와 "
+    "[집계]로 주는 수치(업종 시가총액 합계·전체 시장 비중)와 "
     "[시총 상위 종목]의 시총 금액은 문장에 그대로 옮기지 않는다. 이 값들은 매 거래일 "
     "바뀌고 화면이 본문 위에서 최신 값을 따로 보여 주므로, 문장에 박으면 그날부터 "
     "화면과 본문이 서로 다른 숫자를 말하게 된다. 규모는 '관계'로 서술한다.\n"
@@ -370,6 +370,12 @@ def mentioned(rep, extra=()):
     return seen[:30]
 
 
+def _count_band(n):
+    """상장 종목 수를 수치 없이 준다 — 본문에 옮겨 적지 않게. 2026-10-09 화장품 재작성이 세 회차 중 두 번 '37개 종목' ·
+    '상장 종목은 37개'를 써서 검사(live_number_hits · listed_count_hits)에 걸렸다. '참고용, 본문에 옮기지 말 것'만으로는 막지 못했다."""
+    return "많은 편" if n >= 150 else ("중간 수준" if n >= 50 else "적은 편")
+
+
 def build_prompt(sec, info, as_of=None):
     tops = "\n".join(f"  - {nm} (시총 {number_spacing.mcap_text(mc)})" for nm, mc in info["top"])
     day, lq, fin = _day(as_of), info.get("latestQ"), info.get("fin") or []
@@ -382,7 +388,7 @@ def build_prompt(sec, info, as_of=None):
     return (
         head
         + f"[업종] {sec}\n"
-        f"[집계 · 참고용, 본문에 수치로 옮기지 말 것] 상장 종목 {info['count']}개 · "
+        f"[집계 · 참고용, 본문에 수치로 옮기지 말 것] 상장 종목 수는 업종 가운데 {_count_band(info['count'])} · "
         f"업종 시가총액 합계 약 {info['mcap']}조원 (전체 시장의 약 {info['weight']}%)\n"
         f"[시총 상위 종목 · 종목명은 쓰되 시가총액 금액은 본문에 옮기지 말 것]\n{tops}\n\n"
         + fins

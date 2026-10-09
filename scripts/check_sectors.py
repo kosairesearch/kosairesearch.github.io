@@ -263,6 +263,8 @@ check(bool(r_sec) and r_sec == r_rep, "추정액 단가가 리포트 생성기�
 #    2분기를 '예상'으로 썼고(기준일을 주지 않았다), 7편은 웹 검색 인용이 0건인데 화면에 '웹 검색 참고'가 나갔다.
 #    동작은 scripts/tests/sectors_gen_test.py 가 실제로 돌려 본다. 여기서는 연결이 끊기지 않았는지만 본다.
 check("[작성 기준일]" in gen and "build_prompt(sec, sectors[sec], as_of)" in gen, "지시문에 작성 기준일을 준다")
+check("상장 종목 {info['count']}개" not in gen and "_count_band(info['count'])" in gen,
+      "지시문에 상장 종목 수를 수치로 주지 않는다(옮겨 적어 검사에 걸렸다 · 2026-10-09 화장품)")
 check("_fin_line" in gen and "[상위 종목 최근 분기 실적" in gen, "상위 종목의 최근 분기 실적(공시 확정치)을 재료로 준다")
 check("반드시 웹 검색으로" in gen, "웹 검색을 반드시 하게 한다")
 check("for h in C.check(_as_report(rep))" in gen and "prepare(g.parse_report(text))" in gen and "rep = clean(rep)" in gen,
