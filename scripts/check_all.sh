@@ -89,6 +89,9 @@ run "검증기 자체"   python3 scripts/tests/verify_numbers_test.py
 run "금액 표기"     python3 scripts/tests/number_spacing_test.py
 run "밸류 합치기"   python3 scripts/tests/merge_valuation_test.py
 run "본문 금지표현" python3 scripts/tests/check_report_text_test.py
+# 작성 재료 — 공시 실적을 본문 표기로 · 연속 · 전환을 코드가 센다 · 회사 영문명(2026-10-10). 재료를 그대로 옮긴 문장이
+# 금액 · 연속 연수 검사를 통과하는지, 지시문에 원자료 · 새던 말이 없는지 본다.
+run "작성 재료"     python3 scripts/tests/fin_material_test.py
 run "브리핑 일정"   python3 scripts/tests/calendar_data_test.py
 run "브리핑 뉴스"   python3 scripts/tests/news_data_test.py
 run "금통위 일정"   python3 scripts/tests/bok_schedule_test.py
