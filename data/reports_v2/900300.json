@@ -338,15 +338,15 @@
    }
   ],
   "valuation": {
-   "price": 3630,
-   "mcap": 0.0747,
-   "shares": 20580097,
+   "price": 2470,
+   "mcap": 0.1465,
+   "shares": 58580097,
    "total_shares": 20580097,
    "wavg_shares": null,
    "per": null,
-   "eps": -1419,
-   "pbr": 0.2625,
-   "bps": 13829,
+   "eps": null,
+   "pbr": null,
+   "bps": null,
    "roe_ttm": -11.1,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": -29211409912.15771,
@@ -360,6 +360,13 @@
    "div": 0.0,
    "hidden": {
     "per": "loss"
+   },
+   "shares_patched": {
+    "on": "2026-10-15",
+    "was": 20580097,
+    "now": 58580097,
+    "factor": null,
+    "why": "주식수가 배수로 안 떨어진다(증자 등) — 자본을 다시 받아야 해서 값을 숨긴다"
    }
   }
  }
