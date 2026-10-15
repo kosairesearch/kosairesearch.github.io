@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-10-16 04:10",
+  "lastUpdated": "2026-10-16 06:48",
   "dataDate": "20261015",
   "stocks": [
     {
@@ -14186,7 +14186,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "179880",
       "name": "멜콘",
-      "name_en": "",
+      "name_en": "MELCON Co., Ltd.",
       "market": "코스닥",
       "sector": "전자·부품",
       "price": 17470,
@@ -14195,6 +14195,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 596139202300,
       "mcap": 0.2201,
       "shares": 12600000,
+      "induty_code": "292",
       "categories": [
         "전자·부품"
       ],
