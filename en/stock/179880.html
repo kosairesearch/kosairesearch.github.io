@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>window.KOS_PAGE_LANG='en'</script>
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<script src="/i18n.js?v=53cc0da2"></script>
+<script src="/analytics.js?v=c23defd1"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#f9f8f6">
+<title>멜콘 (179880) — Report in preparation | KOSAI</title>
+<meta name="description" content="멜콘 (179880) price, market cap, P/E and P/B. Reports for newly listed stocks are written right after listing.">
+<link rel="canonical" href="https://kosai.kr/en/stock/179880.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="KOSAI">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="멜콘 (179880) — Report in preparation | KOSAI">
+<meta property="og:description" content="멜콘 (179880) price, market cap, P/E and P/B. Reports for newly listed stocks are written right after listing.">
+<meta property="og:url" content="https://kosai.kr/en/stock/179880.html">
+<meta property="og:image" content="https://kosai.kr/assets/og-image.png?v=4">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="멜콘 (179880) — Report in preparation | KOSAI">
+<meta name="twitter:description" content="멜콘 (179880) price, market cap, P/E and P/B. Reports for newly listed stocks are written right after listing.">
+<meta name="twitter:image" content="https://kosai.kr/assets/og-image.png?v=4">
+<link rel="icon" type="image/svg+xml" href="/assets/kosai-icon-dark.svg?v=k2">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=k2">
+<link rel="alternate" hreflang="ko" href="https://kosai.kr/stock/179880.html">
+<link rel="alternate" hreflang="en" href="https://kosai.kr/en/stock/179880.html">
+<link rel="alternate" hreflang="x-default" href="https://kosai.kr/stock/179880.html">
+<script type="application/ld+json" id="kos-jsonld">{"@context":"https://schema.org","@type":"Article","headline":"멜콘 (179880)","datePublished":"2026-10-15","dateModified":"2026-10-15","inLanguage":"en","isAccessibleForFree":true,"mainEntityOfPage":"https://kosai.kr/en/stock/179880.html","author":{"@type":"Organization","name":"KOSAI","url":"https://kosai.kr"},"about":{"@type":"Corporation","name":"멜콘","legalName":"멜콘","tickerSymbol":"179880"}}</script>
+<link rel="stylesheet" href="/stock/assets/stock.css?v=d1036da5">
+<link rel="icon" href="/assets/favicon.png?v=k2">
+<link rel="stylesheet" href="/fonts/pretendard-subset.css">
+<script>(function(){var t='light';try{t=localStorage.getItem('kos-theme')||'light'}catch(e){}document.documentElement.setAttribute('data-theme',t);})();</script>
+<script id="kosThemeColor">(function(){var m=document.querySelector('meta[name="theme-color"]'),r=document.documentElement;
+  function tc(){m.setAttribute('content',r.getAttribute('data-theme')==='dark'?'#0d0d0e':'#f9f8f6')}
+  tc();new MutationObserver(tc).observe(r,{attributes:true,attributeFilter:['data-theme']})})();</script>
+<script>
+/* 활성 표시선 — 컨테이너마다 선 하나를 두고, 활성 항목(.on)의 자리로 미끄러뜨린다.
+   axis 'x' = 밑줄, 'y' = 왼쪽 세로선. sel 로 활성 항목 선택자를 바꿀 수 있다(기본 .on).
+   첫 자리는 그냥 놓고, 그 뒤부터 element.animate() 로 이전 자리에서 새 자리로 움직인다.
+   CSS transition 을 안 쓰는 이유: 휴대폰 목차 띠가 헤더 안으로 옮겨 붙는 프레임에 항목이 같이 바뀌면
+   방금 옮겨진 요소라 transition 이 시작되지 않는다. animate() 는 DOM 이동과 무관하게 움직인다.
+   window.kosIndMs 로 길이를 바꿀 수 있다(시험용). 움직임 줄이기 설정이면 바로 놓는다. */
+window.kosInd=function(box,axis,sel){
+  if(!box)return function(){};
+  if(box.__ind)return box.__ind;
+  var ind=document.createElement('span');ind.className='ind '+(axis==='y'?'ind-v':'ind-h');ind.setAttribute('aria-hidden','true');box.appendChild(ind);
+  var last=null,placed=false,anim=null,rm=window.matchMedia?matchMedia('(prefers-reduced-motion:reduce)'):null;
+  function move(force){
+    var a=box.querySelector(sel||'.on');
+    if(!a){ind.style.opacity='0';last=null;return}
+    if(a===last&&!force)return;
+    var b=box.getBoundingClientRect(),r=a.getBoundingClientRect();
+    if(!r.width&&!r.height)return;
+    last=a;
+    var x=r.left-b.left-box.clientLeft+box.scrollLeft,y=r.top-b.top-box.clientTop+box.scrollTop;
+    var to={transform:'translate('+x+'px,'+(axis==='y'?y:y+r.height-2)+'px)'};
+    if(axis==='y')to.height=r.height+'px';else to.width=r.width+'px';
+    var from=null;
+    if(placed&&ind.animate&&!(rm&&rm.matches)){var cs=getComputedStyle(ind);from={transform:cs.transform};if(axis==='y')from.height=cs.height;else from.width=cs.width;if(anim){anim.cancel();anim=null}}
+    ind.style.opacity='';ind.style.transform=to.transform;if(axis==='y')ind.style.height=to.height;else ind.style.width=to.width;
+    if(from){anim=ind.animate([from,to],{duration:window.kosIndMs||300,easing:'cubic-bezier(.2,.8,.2,1)'});anim.onfinish=function(){anim=null}}
+    placed=true;
+  }
+  addEventListener('resize',function(){move(true)});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){move(true)});
+  box.__ind=move;move();return move;
+};
+</script>
+</head>
+<body>
+<div id="kosEdgeTop" aria-hidden="true"></div><div id="kosEdgeBot" aria-hidden="true"></div>
+<nav class="nav" id="nav"><div class="nav-in">
+  <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <div class="links"><a href="/Home.html">Home</a><a href="/Reports.html" class="on">Reports</a><a href="/industry.html">Industry Analysis</a><a href="/Watchlist.html">Watchlist</a><a href="/brief.html">Morning Brief</a></div>
+  <div class="right" id="navRight"><a class="login" href="/Login.html">Sign in</a><div class="acct" id="acct"></div>
+    <button class="ib" id="themeBtn" aria-label="Toggle theme"><svg viewBox="0 0 24 24" id="themeIcon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    <button class="ib menu" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="mmenu"><svg class="ham" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+</div>
+</nav>
+<div class="mmenu" id="mmenu"><div class="mm-links"><a href="/Home.html">Home</a><a href="/Reports.html" class="on">Reports</a><a href="/industry.html">Industry Analysis</a><a href="/Watchlist.html">Watchlist</a><a href="/brief.html">Morning Brief</a></div><div class="sep"></div><div class="mm-auth" id="mauth"><a href="/Login.html">Sign in</a><a href="/Signup.html">Sign up</a></div>
+<div class="mm-foot"><a href="/About.html">About</a><a href="/Contact.html">Contact</a><a href="/Feedback.html">Feedback</a><a href="/Terms.html">Terms of Service</a><a href="/Privacy.html">Privacy Policy</a></div></div>
+<main class="wrap" id="page" data-tk="179880" data-pre="5c0ab28c" data-pre-tier="none" data-pre-known="1" data-pre-lang="en"><header class="hero"><div><div class="eyebrow"><b>KOSDAQ</b><span>Others</span><span>179880</span></div><h1 class="name">멜콘</h1><div class="price"><span class="p">₩17,050</span><span class="c up">▲ 38.62%</span><span class="d">2026-10-15 close</span></div><div class="actions"><button type="button" class="btn btn-ink ico" id="watchBtn" aria-pressed="false"><svg class="wb-add" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><svg class="wb-on" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span id="watchTxt">Add to Watchlist</span></button></div></div></header><section class="stats" aria-label="Key metrics"><div class="st"><div class="st-k">Market Cap</div><div class="st-v">₩220.1B</div></div><div class="st"><div class="st-k">Turnover</div><div class="st-v">₩571.1B</div></div><div class="st"><div class="st-k">Volume</div><div class="st-v">27.5M</div></div><div class="st"><div class="st-k">Shares out.</div><div class="st-v">12.6M</div></div><div class="st"><div class="st-k">PER</div><div class="st-v">—</div></div><div class="st"><div class="st-k">PBR</div><div class="st-v">—</div></div><div class="st"><div class="st-k">EPS</div><div class="st-v">—</div></div><div class="st"><div class="st-k">Dividend Yield</div><div class="st-v">—</div></div></section><p class="stats-note">PER, PBR and dividend yield are calculated from the latest confirmed results (EPS, BPS, dividend per share) and the current share price · Prices as of the 2026-10-15 close</p><div class="pending"><h2>The report on this stock is in preparation</h2><p>Reports on newly listed stocks are written shortly after listing. Metrics such as price, market cap, PER and PBR are updated every trading-day evening.</p><ol class="srcs"><li>Korea Exchange (KRX) — Prices · Market Cap · Volume</li><li>FSS electronic disclosure system (DART) — Financial statements · Dividend filings</li></ol><p class="disc">This content is AI analysis of market data and web search results, provided for information only. It is not a solicitation or recommendation to invest. Investment decisions and their consequences are the investor's own responsibility. Data may be delayed or contain errors.</p></div></main>
+<footer class="foot"><div class="wrap">
+  <a class="brand" href="/"><img class="lt" src="/assets/kosai-wordmark-black.png" alt="KOSAI"><img class="dk" src="/assets/kosai-wordmark-white.png" alt="KOSAI"></a>
+  <div class="fgrid">
+    <div class="fcol"><h4>Services</h4><a href="/Home.html">Home</a><a href="/Reports.html">Reports</a><a href="/industry.html">Industry Analysis</a><a href="/Watchlist.html">Watchlist</a><a href="/brief.html">Morning Brief</a></div>
+    <div class="fcol"><h4>Company</h4><a href="/About.html">About</a><a href="/Contact.html">Contact</a><a href="/Feedback.html">Feedback</a></div>
+    <div class="fcol"><h4>Legal</h4><a href="/Terms.html">Terms of Service</a><a href="/Privacy.html">Privacy Policy</a></div>
+  </div>
+  <div class="biz"><span>Company KOSAI</span><span>CEO Beomjun Lim</span><span>Business Reg. No. 380-25-02019</span><span>Address #459, 4F Dongseong Bldg., 50 Mokdongdong-ro 12-gil, Yangcheon-gu, Seoul, Republic of Korea</span><span>Email hello@kosai.kr</span></div>
+  <div class="copy">© 2026 KOSAI</div>
+</div></footer>
+<script src="/data/stocks.js"></script>
+<script src="/data/valuation.js"></script>
+<script>window.KOS_PEERS=[];</script>
+<script src="/stock/assets/stock.js?v=9863cc7f"></script>
+<script src="/stock/assets/i18n-dict.js?v=f83022e5"></script>
+<script type="module" src="/auth-guard.js?v=d73518cf"></script>
+<script type="module" src="/watchlist.js?v=1e5f550a"></script>
+<script type="module" src="/auth-state.js?v=27c154ed"></script>
+<script src="/lenis.js?v=3a0cb7e8"></script>
+<script src="/smooth-scroll.js?v=bd8a60e4"></script>
+</body>
+</html>
