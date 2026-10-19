@@ -1,227 +1,227 @@
 {
  "title": {
-  "ko": "피지컬AI 인프라 파트너십, 외형성장 가속",
-  "en": "Physical AI Infrastructure Partnerships Fuel Growth"
+  "ko": "임베디드 강자, 엔비디아 AI 인프라로 외형 확장",
+  "en": "Embedded Leader Expands via NVIDIA AI Infrastructure"
  },
  "lead": {
-  "ko": "MDS테크는 엔비디아 젯슨·현대차 모빌진 총판을 축으로 한 임베디드·AI 인프라 사업에서 2026년 상반기 매출이 전년 대비 크게 늘며 외형과 수익성이 동반 개선됐다.",
-  "en": "MDS Tech, anchored by its NVIDIA Jetson and Hyundai Motor Mobilgene distribution business, posted sharply higher first-half 2026 revenue alongside improved profitability."
+  "ko": "MDS테크는 임베디드 소프트웨어 본업에 엔비디아 AI 인프라·피지컬 AI 사업을 더하며 2025년까지 매출이 3년 연속 늘었으나, 영업이익률은 하락세를 보이고 있다.",
+  "en": "MDS Tech has layered NVIDIA AI infrastructure and physical AI business onto its core embedded software operations, driving three straight years of revenue growth through 2025, even as its operating margin has trended lower."
  },
  "keypoints": [
   {
-   "ko": "2025년 연결 매출액은 1,877억원으로 전년 1,656억원 대비 증가했으나 영업이익은 58억원으로 소폭 감소, 영업이익률은 3.1%로 낮아졌다.",
-   "en": "2025 consolidated revenue rose to KRW 187.7 billion from KRW 165.6 billion, while operating profit slipped slightly to KRW 5.8 billion and operating margin fell to 3.1%."
+   "ko": "2025년 매출 1,877억원으로 전년 대비 13.4% 증가, 4년 연속 매출 신기록을 경신했다.",
+   "en": "2025 revenue reached KRW 187.7 billion, up 13.4% year on year, extending four straight years of revenue growth."
   },
   {
-   "ko": "2026년 상반기 연결 매출액은 전년 동기 대비 29.3% 늘어난 1,085억원, 영업이익은 87억원으로 창사 이래 반기 기준 최대 실적을 기록했다.",
-   "en": "First-half 2026 consolidated revenue jumped 29.3% year-on-year to KRW 108.5 billion, with operating profit of KRW 8.7 billion marking the company's best-ever half-year performance."
+   "ko": "영업이익은 2023년을 정점으로 2024~2025년 2년 연속 감소했고 영업이익률도 5.6%에서 3.1%로 낮아졌다.",
+   "en": "Operating profit peaked in 2023 and has declined for two consecutive years through 2025, with the operating margin slipping from 5.6% to 3.1%."
   },
   {
-   "ko": "엔비디아 젯슨 국내 총판(2014년~)과 현대차그룹 차량용 OS '모빌진' 총판, TRACE32 디버깅 솔루션 공급을 결합한 사업구조가 핵심 경쟁력으로 꼽힌다.",
-   "en": "The company's core competitive edge combines its NVIDIA Jetson domestic distribution (since 2014), exclusive distribution of Hyundai Motor Group's Mobilgene vehicle OS, and TRACE32 debugging solution supply."
+   "ko": "2026년 2분기 매출은 576억원으로 전년 동기 대비 52.1% 늘었고 지배주주 순이익도 흑자 전환했다.",
+   "en": "Second-quarter 2026 revenue rose 52.1% year on year to KRW 57.6 billion, with net income attributable to controlling shareholders swinging back to profit."
   },
   {
-   "ko": "자회사 MDS인텔리전스는 자동차 SW 개발 자동화 솔루션 '래피드오토 프로'에 생성형 AI 기능을 결합해 2026년 1월 출시했다.",
-   "en": "Subsidiary MDS Intelligence launched a generative-AI-enhanced version of its RapidAUTO Pro automotive software development automation solution in January 2026."
+   "ko": "엔비디아 젯슨 총판(13년)에 DGX·GPU 서버 공급을 더해 AI 학습부터 로봇·자율주행 추론까지 포트폴리오를 넓히고 있다.",
+   "en": "Building on 13 years as an NVIDIA Jetson distributor, the company has added DGX and GPU server supply, extending its portfolio from AI training to robotics and autonomous-driving inference."
   },
   {
-   "ko": "2022년 순손실에서 2023~2025년 흑자로 전환됐으나 분기별 손익 변동성은 여전히 크다.",
-   "en": "The company swung from a net loss in 2022 to profits from 2023 through 2025, though quarterly earnings remain volatile."
+   "ko": "SZ센싱, 유니컨 등과 잇따라 협력해 피지컬 AI(휴머노이드·자율주행) 영역으로 사업을 확장하고 있다.",
+   "en": "Partnerships with firms such as SZ Sensing Tech and Uniqconn are extending the company's reach into physical AI areas including humanoid robots and autonomous driving."
   }
  ],
  "business": {
-  "ko": "MDS테크는 1998년 설립돼 코스닥에 상장된 임베디드 소프트웨어 및 AI 인프라 솔루션 전문기업이다. 2025년 3분기 기준 사업부문별 매출 비중은 임베디드 시스템SW 33.7%, 임베디드 SW 개발솔루션 21.1%이며 산업자동화 솔루션 17.5%, 사무자동화 솔루션 및 기타가 27.7%를 차지한다. 회사는 2014년 엔비디아와 공식 총판 계약을 체결한 이후 젯슨(Jetson) 시리즈 및 DGX·GPU 서버 등 AI 인프라 제품군을 국내에 공급해왔다. 또한 현대오토에버가 개발한 현대차그룹 자체 차량용 OS 플랫폼 '모빌진(Mobilgene)'의 그룹 외 단독 총판을 맡고 있으며, 모빌진은 현대·기아·제네시스 전 차종에 적용되고 있다. 로봇·차량 제어 개발에 필요한 디버깅 솔루션 'TRACE32'도 현대오토에버와 협력해 공급 중이다. 100% 자회사 MDS인텔리전스는 AUTOSAR·ISO26262·A-SPICE 표준을 반영한 자동차 SW 개발 자동화 솔루션 '래피드오토 프로'를 주력 제품으로 보유하고 있다. 2023년부터 AI반도체 스타트업 프라임마스에 TRACE32를 공급하며 기술협력을 이어오다 최근 펀드 투자로 관계를 확장했으며, 2026년 7월에는 중국 AI 이미징 기업 SZ센싱과 전략적 파트너십을 체결해 AI 비전 솔루션 사업도 확대하고 있다. 주요 고객군은 현대차그룹을 포함한 국내외 완성차·Tier-1 부품사, 그리고 정부·기업의 AI 인프라·데이터센터 구축 수요처다.",
-  "en": "Founded in 1998 and listed on KOSDAQ, MDS Tech specializes in embedded software and AI infrastructure solutions. As of the third quarter of 2025, its revenue mix by segment was embedded system software at 33.7%, embedded software development solutions at 21.1%, industrial automation solutions at 17.5%, and office automation and other at 27.7%. Since signing an official NVIDIA distribution agreement in 2014, the company has supplied Jetson series products along with DGX and GPU servers in the domestic market. It also holds the exclusive distribution rights outside Hyundai Motor Group for 'Mobilgene,' the group's proprietary vehicle OS platform developed by Hyundai AutoEver, which is applied across all Hyundai, Kia, and Genesis models. It supplies the TRACE32 debugging solution needed for robotics and vehicle control development in cooperation with Hyundai AutoEver. Wholly-owned subsidiary MDS Intelligence's flagship product is RapidAUTO Pro, an automotive software development automation solution built around AUTOSAR, ISO 26262, and A-SPICE standards. The company has supplied TRACE32 to AI semiconductor startup Primemass since 2023 and recently expanded the relationship through a fund investment, while in July 2026 it formed a strategic partnership with China's SZ Sensing to expand its AI vision solutions business. Its key customer base includes Hyundai Motor Group and other domestic and global automakers and Tier-1 suppliers, as well as government and corporate customers building AI infrastructure and data centers."
+  "ko": "MDS테크는 1994년 설립된 임베디드 시스템 토탈 솔루션 공급업체로, 고객이 임베디드 소프트웨어나 시스템을 개발할 때 필요한 개발 솔루션(툴·컨설팅·교육)과 OS·애플리케이션 등 소프트웨어 솔루션을 공급한다. 현재 매출 구성은 OS번들·미들웨어·애플리케이션SW 등 임베디드 시스템 SW가 46.3%, 임베디드 SW 개발솔루션이 19.9%, 산업자동화 솔루션이 18.1%, 기타가 15.7%를 차지한다. 임베디드 시스템SW 솔루션 부문은 OS번들, 애플리케이션 SW, 디지털트윈 시각화 솔루션 등 자체 개발솔루션으로 사업을 확대하고 있다. 주요 고객은 자동차, 국방/항공, 정부기관 등이며, 자동차 전장 분야에서는 현대오토에버가 개발한 현대차그룹 자체 OS 브랜드 '모빌진'의 국내 총판을 맡고 있다. 2014년 엔비디아와 공식 파트너십을 맺은 이후 임베디드 플랫폼 영역에 본격 진입했고, 최근에는 DGX·GPU 서버 등 AI 인프라 유통으로 사업 영역을 넓히고 있다. 주요 종속회사는 ㈜MDS인텔리전스(구 한컴인텔리전스) 등이며, 과거 보유했던 ㈜알파녹스 지분은 매각해 연결범위에서 제외됐다. 회사는 서울대 로보틱스연구소와의 인재 양성 협력, SZ센싱(SZ Sensing Tech)과의 AI 비전 카메라 독점 총판 계약, 유니컨(Uniqconn)과의 비접촉 무선 데이터 전송 기술 협력 등을 통해 휴머노이드·자율주행 등 피지컬 AI 분야로 포트폴리오를 확장하고 있다. 코스닥 상장사이며 최대주주 측 지분율은 25.28%(2026년 5월 기준)로 나타났다.",
+  "en": "Founded in 1994, MDS Tech supplies total embedded-system solutions, providing development tools, consulting and training, along with OS and application software that customers need to build embedded software or systems. The current revenue mix is composed of embedded system software, including OS bundles, middleware and application software, at 46.3%, embedded software development solutions at 19.9%, industrial automation solutions at 18.1%, and other businesses at 15.7%. The embedded system software segment is expanding through self-developed solutions such as OS bundles, application software and digital-twin visualization tools. Core customers span automotive, defense/aerospace and government institutions, and in the automotive sector the company is the domestic distributor of Mobilgene, Hyundai Motor Group's proprietary OS brand developed by Hyundai Autoever. After forming an official partnership with NVIDIA in 2014, the company entered the embedded AI platform business in earnest and has since broadened into distributing DGX and GPU servers for AI infrastructure. Key subsidiaries include MDS Intelligence (formerly Hancom Intelligence), while its former stake in Alphanox was divested and removed from the consolidation scope. The company is extending its portfolio into physical AI areas such as humanoid robots and autonomous driving through talent-development cooperation with the Seoul National University Robotics Institute, an exclusive distribution agreement for AI vision cameras with SZ Sensing Tech, and a technology partnership with Uniqconn on contactless high-speed wireless data transmission. MDS Tech is listed on KOSDAQ, and as of May 2026 its controlling shareholder held a 25.28% stake."
  },
  "earnings": {
-  "ko": "2025년 연결 매출액은 1,877억원으로 2024년 1,656억원 대비 늘었지만, 영업이익은 58억원으로 2024년 59억원에서 소폭 줄어 영업이익률이 3.6%에서 3.1%로 낮아졌다. 반면 지배주주순이익은 82억원으로 2024년 69억원 대비 증가했다. 2023년에는 영업이익 87억원, 영업이익률 5.6%를 기록하고도 지배주주순이익은 14억원에 그쳤고, 2022년에는 영업이익 82억원에도 불구하고 지배주주순손실 68억원을 기록해 영업이익과 순이익 간 괴리가 반복돼왔다. 분기별로도 변동성이 뚜렷한데, 2025년 2분기에는 매출 379억원에 지배주주순손실 36억원을 냈고, 3분기에는 매출 477억원에 순이익이 74억원으로 큰 폭 반전됐으며, 4분기에는 매출 515억원에도 영업이익이 0.4억원 수준까지 줄어드는 등 분기 간 편차가 컸다. 2026년 들어서는 1분기 매출 509억원·영업이익 45억원, 2분기 매출 576억원·영업이익 42억원으로 두 분기 연속 40억원대 영업이익을 기록하며 안정성이 개선되는 모습을 보였다. 이에 따라 2026년 상반기 연결 매출액은 전년 동기 대비 29.3% 증가한 1,085억원, 영업이익은 87억원을 기록해 반기 만에 2025년 연간 영업이익과 순이익을 모두 넘어섰다고 회사 측이 밝혔다. 현금흐름 측면에서는 2025년 영업활동현금흐름이 161억원으로 2024년 29억원 대비 크게 개선됐으며, 부채비율도 2024년 59.8%에서 2025년 48.0%로 낮아졌다. 한편 2024년 말 220억원 수준이던 비지배지분은 2025년 말 19억원으로 큰 폭 축소돼 연결범위 또는 지분구조 변화가 있었음을 시사한다.",
-  "en": "2025 consolidated revenue rose to KRW 187.7 billion from KRW 165.6 billion in 2024, but operating profit edged down slightly to KRW 5.8 billion from KRW 5.9 billion, pulling the operating margin down from 3.6% to 3.1%. Net income attributable to owners, however, increased to KRW 8.2 billion from KRW 6.9 billion. In 2023, the company posted operating profit of KRW 8.7 billion and a 5.6% operating margin yet owners' net income of only KRW 1.4 billion, and in 2022 operating profit of KRW 8.2 billion coincided with a net loss attributable to owners of KRW 6.8 billion, reflecting a recurring gap between operating and bottom-line results. Quarterly volatility has also been pronounced: second-quarter 2025 revenue of KRW 37.9 billion came with a net loss attributable to owners of KRW 3.6 billion, third-quarter revenue of KRW 47.7 billion swung to net income of KRW 7.4 billion, and fourth-quarter revenue of KRW 51.5 billion saw operating profit shrink to roughly KRW 40 million. Into 2026, the company posted operating profit in the KRW 4-billion-plus range for two consecutive quarters—KRW 4.5 billion on KRW 50.9 billion revenue in the first quarter and KRW 4.2 billion on KRW 57.6 billion revenue in the second—suggesting improved stability. As a result, first-half 2026 consolidated revenue rose 29.3% year-on-year to KRW 108.5 billion and operating profit reached KRW 8.7 billion, with the company stating that both operating profit and net income for the half already exceeded full-year 2025 figures. On the cash flow front, 2025 operating cash flow improved sharply to KRW 16.1 billion from KRW 2.9 billion in 2024, and the debt ratio fell from 59.8% in 2024 to 48.0% in 2025. Meanwhile, non-controlling interests shrank sharply from roughly KRW 22.0 billion at the end of 2024 to KRW 1.9 billion at the end of 2025, suggesting a change in the scope of consolidation or ownership structure."
+  "ko": "연간 매출은 2022년 1,535억원에서 2023년 1,553억원(1.2% 증가), 2024년 1,656억원(6.6% 증가), 2025년 1,877억원(13.4% 증가)으로 늘어 2023년부터 2025년까지 3년 연속 증가했으며 2022~2025년 중 가장 큰 해는 2025년, 가장 작은 해는 2022년이다. 반면 영업이익은 2022년 81.5억원, 2023년 87.2억원(6.9% 증가)으로 정점을 찍은 뒤 2024년 59.4억원(31.8% 감소), 2025년 58.1억원(2.2% 감소)으로 2024년부터 2025년까지 2년 연속 감소했다. 영업이익률도 2023년 5.6%에서 2024년 3.6%, 2025년 3.1%로 낮아져 매출 성장에도 수익성은 개선되지 못했는데, 이는 상대적으로 마진이 낮은 AI 서버·GPU 유통 비중이 커진 영향으로 풀이된다. 지배주주 순이익은 2022년 순손실 67.7억원에서 2023년 14.2억원으로 흑자 전환한 뒤 2024년 68.7억원(384.2% 증가), 2025년 82.3억원(19.8% 증가)으로 2년 연속 증가했다. 분기별로 보면 2025년 4분기 영업이익이 4,013만원까지 급감했다가 2026년 1분기 45.3억원으로 급반등했고, 2026년 2분기에는 42억원(전 분기 대비 7.2% 감소, 전년 동기 대비 72.4% 증가)을 기록해 변동성이 큰 모습을 보였다. 2026년 2분기 매출은 576억원으로 전 분기 대비 13.3%, 전년 동기 대비 52.1% 늘었고, 지배주주 순이익은 67.5억원으로 전 분기 대비 207.4% 늘고 전년 동기 대비 흑자 전환했다. 최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주 순이익 합계는 197억원으로 집계됐다. 영업활동 현금흐름은 2022년 -41.1억원에서 2023년 263억원으로 크게 개선된 뒤 2024년 29억원, 2025년 161억원으로 등락했다.",
+  "en": "Annual revenue rose from KRW 153.5 billion in 2022 to KRW 155.3 billion in 2023 (up 1.2%), KRW 165.6 billion in 2024 (up 6.6%), and KRW 187.7 billion in 2025 (up 13.4%), marking three consecutive years of growth from 2023 through 2025, with 2025 the largest year and 2022 the smallest in the 2022-2025 span. Operating profit, by contrast, peaked in 2023 at KRW 8.72 billion after rising from KRW 8.15 billion in 2022 (up 6.9%), then fell to KRW 5.94 billion in 2024 (down 31.8%) and KRW 5.81 billion in 2025 (down 2.2%), a two-year consecutive decline from 2024 through 2025. The operating margin also slipped from 5.6% in 2023 to 3.6% in 2024 and 3.1% in 2025, meaning profitability failed to keep pace with revenue growth, a pattern consistent with a rising share of relatively lower-margin AI server and GPU distribution revenue. Net income attributable to controlling shareholders swung from a loss of KRW 6.77 billion in 2022 to a profit of KRW 1.42 billion in 2023, then rose for two consecutive years to KRW 6.87 billion in 2024 (up 384.2%) and KRW 8.23 billion in 2025 (up 19.8%). On a quarterly basis, operating profit plunged to just KRW 40.13 million in the fourth quarter of 2025 before rebounding sharply to KRW 4.53 billion in the first quarter of 2026, then came in at KRW 4.2 billion in the second quarter of 2026 (down 7.2% quarter on quarter, up 72.4% year on year), reflecting notable volatility. Second-quarter 2026 revenue was KRW 57.6 billion, up 13.3% quarter on quarter and 52.1% year on year, while net income attributable to controlling shareholders reached KRW 6.75 billion, up 207.4% quarter on quarter and swinging back to profit year on year. Net income attributable to controlling shareholders over the trailing four quarters (Q3 2025 through Q2 2026) totaled KRW 19.7 billion. Operating cash flow improved from -KRW 4.11 billion in 2022 to KRW 26.3 billion in 2023, before fluctuating to KRW 2.9 billion in 2024 and KRW 16.1 billion in 2025."
  },
  "industry": {
-  "ko": "임베디드 소프트웨어 시장은 IoT 기기 확산, AI 융합, 자동차 ADAS 수요 증가에 힘입어 2030년 302억 달러 규모로 성장할 것으로 전망되고 있다. 다만 매출 증가에도 비용 부담으로 수익성은 제한적이라는 평가가 병존한다. 자동차 산업에서는 소프트웨어 중심 자동차(SDV) 전환이 가속화되며 AUTOSAR·ISO26262·A-SPICE 등 규제 대응을 위한 개발 자동화 솔루션 수요가 커지고 있다. AI 인프라 측면에서는 정부의 소버린 AI 전략에 따라 한국 정부와 현대차·삼성전자·네이버·SK 등에 약 25만 장 규모의 엔비디아 블랙웰 GPU가 공급될 예정으로, 이는 정부의 '소버린 AI' 전략과 민간 'AI 팩토리' 구축을 위한 핵심 사업으로 꼽힌다. 이러한 흐름 속에서 MDS테크는 엔비디아 관련 매출액이 2020년 대비 300% 이상 성장하는 등 강력한 협력 관계를 유지해온 것으로 전해진다. 경쟁구도 측면에서는 증권가 리포트가 MDS테크를 젯슨·모빌진·TRACE32를 결합한 턴키형 피지컬 AI 솔루션을 제공하는 국내 유일의 기업으로 평가한 바 있다. 다만 현대차그룹의 로봇 사업에서 MDS테크의 구체적 역할은 아직 확정되지 않았으며, 회사 관계자도 엔비디아와 현대차 간 협력 방향에 따라 참여 가능성이 열려 있으나 현재로선 구체적으로 정해진 계획은 없다고 밝힌 바 있다.",
-  "en": "The embedded software market is projected to grow to USD 30.2 billion by 2030, driven by IoT device proliferation, AI convergence, and rising automotive ADAS demand, though profitability is described as constrained by cost burdens despite revenue growth. In the automotive sector, the shift toward software-defined vehicles is accelerating demand for development automation solutions that comply with AUTOSAR, ISO 26262, and A-SPICE standards. On the AI infrastructure front, roughly 250,000 NVIDIA Blackwell GPUs are slated for supply to the Korean government, Hyundai Motor, Samsung Electronics, Naver, and SK Group under the government's sovereign AI strategy, a project described as central to both the sovereign AI initiative and private-sector AI factory buildout. Amid this backdrop, MDS Tech's NVIDIA-related revenue is reported to have grown more than 300% compared with 2020, reflecting a strong partnership. On the competitive front, a brokerage research note characterized MDS Tech as the sole domestic company able to offer a turnkey physical AI solution combining Jetson, Mobilgene, and TRACE32. That said, MDS Tech's specific role within Hyundai Motor Group's robotics business has not been finalized, with a company official stating that while cooperation possibilities remain open depending on how the Hyundai-NVIDIA partnership evolves, there is currently no concrete plan in place."
+  "ko": "글로벌 피지컬 AI 시장은 2025년 816억달러에서 2033년 9,604억달러로 약 11.8배 성장할 것으로 전망되는 가운데, MDS테크는 데이터센터용 DGX·GPU 서버(학습)와 젯슨 기반 엣지 플랫폼(추론)을 모두 공급하는 구조를 구축하고 있다. 엔비디아 파트너 생태계 안에서 서버·GPU나 비전 AI 등 특정 영역에 특화된 업체가 다수 존재하는 가운데, 한 독립리서치는 MDS테크가 학습부터 엣지 보드·모듈·주변장치까지 아우르는 하드웨어 포트폴리오를 보유했다는 점을 차별화 요소로 꼽았다. 국내에서는 '소버린 AI' 정책에 따른 공공·민간 GPU 투자 확대가 거론되고 있어 AI 인프라 유통 사업자에게 우호적인 정책 환경이 조성되고 있다는 평가가 나온다. 자동차 전장 부문에서는 소프트웨어 중심 차량(SDV) 전환에 따라 임베디드 개발 솔루션 수요가 이어지고 있고, 국방·항공 분야에서도 고신뢰성 임베디드 시스템 수요가 꾸준하다. 다만 임베디드 개발 툴·OS 유통 시장은 성숙 단계에 들어서 있어 고성장은 AI 인프라·피지컬 AI 신사업 쪽에 집중돼 있는 모습이다. 경쟁 측면에서는 국내 AI 인프라 유통·SI 사업자들이 늘고 있어, 엔비디아 파트너십의 지속 여부와 서비스 통합 역량이 차별화의 핵심으로 거론된다.",
+  "en": "The global physical AI market is projected to grow roughly 11.8-fold, from USD 81.6 billion in 2025 to USD 960.4 billion in 2033, and MDS Tech has built a structure supplying both data-center DGX/GPU servers for training and Jetson-based edge platforms for inference. Within the NVIDIA partner ecosystem, where many firms specialize in either servers/GPUs or vision AI, one independent research house highlighted MDS Tech's hardware portfolio spanning training through edge boards, modules and peripherals as a point of differentiation. In Korea, expanding public and private GPU investment tied to the government's 'sovereign AI' policy direction has been cited as a favorable policy backdrop for AI infrastructure distributors. In the automotive electronics segment, demand for embedded development solutions continues amid the shift toward software-defined vehicles, while defense and aerospace markets maintain steady demand for high-reliability embedded systems. That said, the traditional embedded development tool and OS distribution market appears to have matured, with higher growth concentrated in the newer AI infrastructure and physical AI businesses. Competitively, a growing number of domestic AI infrastructure distributors and system integrators means the durability of the NVIDIA partnership and the breadth of integrated service capability are cited as key differentiators."
  },
  "outlook": {
-  "ko": "회사 측은 반도체와 자동차 등 전방 산업의 호조가 예상되는 가운데 본업인 임베디드 솔루션 등 핵심 사업의 경쟁력을 더욱 강화하고, 실적 모멘텀을 창출할 신규 비즈니스를 적극 발굴하겠다고 밝혔다. 2026년 7월에는 엔비디아 로봇·비전 분야 엘리트 파트너인 중국 SZ센싱과 전략적 파트너십을 체결해 차량용·산업용 AI 카메라를 국내에 공급하고 젯슨 플랫폼 사업과 연계한 AI 비전 솔루션 사업을 확대한다는 계획이다. MDS인텔리전스는 현대자동차 미래전략본부의 사내 스타트업팀과 함께 래피드오토 프로 기반 자동화 솔루션의 적용 범위를 단계적으로 확대해 나갈 계획이라고 밝힌 바 있다. 2026년 1월 말 아리스(이재모 연구원)는 MDS테크의 2026년 연간 매출액을 1,950억원(전년 대비 +9%), 영업이익을 105억원(전년 대비 +10%)으로 전망한 바 있는데, 실제로 2026년 상반기에만 매출 1,085억원, 영업이익 87억원을 기록해 해당 전망치에 근접하는 속도로 실적이 진행되고 있다. 같은 시점 아리스는 MDS인텔리전스의 2025년 매출액을 약 200억원, 영업이익을 약 20억원 수준으로 추정하기도 했다. 다만 이들 수치는 2026년 초 시점의 증권가 추정치로, 이후 실제 공시되는 분기·반기 실적과는 괴리가 있을 수 있다. 2026년 3분기 분기보고서는 자본시장법상 11월 16일까지 공시돼야 하며, 이를 통해 상반기의 이익률 개선 흐름이 3분기에도 이어지는지 확인할 수 있을 전망이다.",
-  "en": "Management has said it will strengthen competitiveness in its core embedded solutions business amid an expected upturn in the semiconductor and automotive end-markets, while actively seeking new businesses to drive further earnings momentum. In July 2026, the company formed a strategic partnership with China's SZ Sensing, an NVIDIA Robot & Vision elite partner, to supply automotive- and industrial-grade AI cameras domestically and expand its AI vision solutions business in conjunction with its Jetson platform operations. MDS Intelligence has stated it plans to gradually expand the application scope of its RapidAUTO Pro-based automation solutions together with an in-house startup team at Hyundai Motor's future strategy division. In late January 2026, Aris analyst Lee Jae-mo forecast MDS Tech's full-year 2026 revenue at KRW 195.0 billion (up 9% year-on-year) and operating profit at KRW 10.5 billion (up 10% year-on-year); actual first-half 2026 results of KRW 108.5 billion in revenue and KRW 8.7 billion in operating profit are tracking at a pace approaching that full-year estimate. At the same time, Aris estimated MDS Intelligence's 2025 revenue at roughly KRW 20.0 billion and operating profit at roughly KRW 2.0 billion. These figures, however, are brokerage estimates from early 2026 and may diverge from subsequently disclosed quarterly and half-year results. The third-quarter 2026 report is legally required to be filed by November 16, 2026, which should show whether the margin improvement seen in the first half continued into the third quarter."
+  "ko": "2026년 상반기 연결 매출은 1분기 509억원과 2분기 576억원을 합쳐 1,085억원으로 집계되며 반기 매출 1,000억원을 처음 넘어섰다고 보도됐다(언론 보도, 2026년 8월). 회사는 엔비디아 젯슨 파트너 데이에 공식 초청받아 차세대 AI 슈퍼컴퓨터 플랫폼 '베라 루빈(Vera Rubin)' 도입에 대응하는 시스템 컨설팅 역량을 강화하겠다고 밝혔다(2026년 3월). SZ센싱과의 AI 비전 카메라 독점 총판 계약(2026년 7월), 유니컨과의 피지컬 AI MOU(2026년 8월) 등 신규 협력이 이어지며 휴머노이드·자율주행 분야 매출원 다변화를 시도하고 있다. 과학기술정보통신부·ETRI가 주관하는 '개인 AI 에이전트' 기술개발 사업(AI 글라스 컨소시엄)에도 합류해 웨어러블 AI 연산 단말 개발을 맡는다고 밝혔다(2026년 9월). 기존 임베디드 고객 약 1,500개사를 대상으로 AI 솔루션을 교차판매할 수 있다는 점이 성장 여력으로 거론된다. 다만 이들 신규 협력은 대부분 기술 검증·MOU 단계로, 실제 매출 인식 시점과 규모는 향후 공시를 통해 확인이 필요하다.",
+  "en": "First-half 2026 consolidated revenue, combining KRW 50.9 billion in the first quarter and KRW 57.6 billion in the second quarter, totaled KRW 108.5 billion, and media reports described this as the first time first-half revenue surpassed KRW 100 billion (media report, August 2026). The company said it was officially invited to NVIDIA's Jetson Partner Day and plans to strengthen its systems-consulting capability in response to the rollout of the next-generation AI supercomputer platform Vera Rubin (March 2026). New partnerships, including an exclusive AI vision camera distribution agreement with SZ Sensing Tech (July 2026) and a physical AI MOU with Uniqconn (August 2026), aim to diversify revenue sources toward humanoid robotics and autonomous driving. The company also said it joined a 'personal AI agent' technology-development project led by the Ministry of Science and ICT and ETRI (an AI-glasses consortium), taking charge of wearable AI computing device development (September 2026). The potential to cross-sell AI solutions to its roughly 1,500 existing embedded customers has been cited as a growth lever. However, most of these new partnerships remain at the technology-verification or MOU stage, so the timing and scale of actual revenue recognition will need to be confirmed through future disclosures."
  },
  "valuation_comment": {
-  "ko": "MDS테크는 2022년 순손실을 기록한 이후 2023~2025년 흑자 기조로 전환됐고, 2026년 상반기에는 영업이익률이 전년 동기 대비 개선되는 등 수익성 회복 흐름이 이어지고 있다. 일부 금융 데이터 제공업체는 동사의 주가수익비율·주가순자산비율·주가매출비율이 업종 중앙값을 밑도는 수준이라고 평가하면서도, 매출 성장이 순이익과 영업이익률 개선으로 온전히 전환되지 못하는 점은 중립적으로 지적하고 있다. 재무구조 면에서는 부채비율이 2024년 59.8%에서 2025년 48.0%로 낮아지고 영업활동현금흐름도 함께 개선되는 등 대차대조표 체력은 다소 나아진 모습이다. 다만 최근 사업연도 기준 현금배당을 실시하지 않아 배당을 통한 주주환원은 확인되지 않는다. 시가총액이 0.1조원 수준인 소형주 특성상 주가는 피지컬 AI·엔비디아 관련 테마 수급에 민감하게 반응해온 것으로 보이며, 이는 밸류에이션 지표의 변동성을 키우는 요인으로 작용할 수 있다.",
-  "en": "MDS Tech shifted from a net loss in 2022 to a run of profitable years from 2023 through 2025, and the operating margin improvement seen in first-half 2026 versus the prior-year period suggests the profitability recovery trend has continued. Some financial data providers note that the company's price-to-earnings, price-to-book, and price-to-sales ratios sit below sector medians, while also flagging, in neutral terms, that revenue growth has not been fully converted into net income and operating margin gains. On the balance sheet side, the debt ratio declined from 59.8% in 2024 to 48.0% in 2025 alongside improved operating cash flow, pointing to somewhat healthier financial footing. That said, the company has not paid a cash dividend in its most recent fiscal year, so no shareholder return through dividends is currently evident. Given its small-cap status with a market capitalization of roughly KRW 0.1 trillion, the stock appears to have been sensitive to thematic flows tied to physical AI and NVIDIA-related news, a factor that can amplify volatility in its valuation metrics."
+  "ko": "MDS테크는 2022년 적자에서 2023년 흑자로 전환한 뒤 2024~2025년 지배주주 순이익이 2년 연속 늘어나는 이익 회복 구간에 있다. 주가는 지배주주 순자산가치를 밑도는 수준에서 거래되고 있어, 자산 가치 대비로는 할인된 구간에 위치한다. 반면 영업이익률은 2023년 이후 낮아지는 추세여서, 외형 성장이 수익성 개선으로 곧바로 이어지지는 않고 있다. 배당금을 지급하지 않고 있어 배당수익률 측면에서는 배당을 주는 업종 평균 대비 매력이 낮은 편이다. 최근 분기 실적 변동성(영업이익이 분기별로 수억 원에서 수십억 원대까지 등락)은 밸류에이션을 해석할 때 분기별 일회성 요인을 함께 살펴야 함을 시사한다.",
+  "en": "MDS Tech swung from a net loss attributable to controlling shareholders in 2022 to a profit in 2023, and has since seen that profit grow for two consecutive years through 2025, placing it in an earnings-recovery phase. The share price trades below the per-share net asset value attributable to controlling shareholders, putting it at a discount on an asset-value basis. At the same time, the operating margin has trended lower since 2023, meaning top-line growth has not directly translated into improved profitability. The company does not pay dividends, which leaves it less attractive on a dividend-yield basis relative to peers that do. The volatility in recent quarterly operating profit, which has swung from tens of millions of won to several billion won, suggests that quarter-specific, one-off factors need to be weighed alongside any valuation read."
  },
  "bull": [
   {
    "title": {
-    "ko": "AI 인프라 유통망 내 독점적 지위",
-    "en": "Exclusive Position in AI Infrastructure Distribution"
+    "ko": "엔비디아 생태계 내 포지션 확대",
+    "en": "Expanding Position Within the NVIDIA Ecosystem"
    },
    "body": {
-    "ko": "MDS테크는 2014년부터 엔비디아 젯슨의 국내 총판을 맡아왔고, 관련 매출액이 2020년 대비 300% 이상 성장한 것으로 전해진다. 여기에 현대차그룹 차량용 OS '모빌진'의 그룹 외 단독 총판, TRACE32 디버깅 솔루션 공급까지 결합해 증권가에서는 턴키형 피지컬 AI 솔루션을 제공하는 국내 유일 기업으로 평가받고 있다. 정부의 소버린 AI 전략에 따른 대규모 블랙웰 GPU 공급 계획도 이러한 유통망 지위와 맞물려 있다.",
-    "en": "MDS Tech has served as the domestic distributor of NVIDIA Jetson since 2014, with related revenue reported to have grown more than 300% versus 2020. Combined with its exclusive distribution of Hyundai Motor Group's Mobilgene vehicle OS and supply of the TRACE32 debugging solution, brokerage research has described it as the sole domestic company offering a turnkey physical AI solution. The government's large-scale Blackwell GPU supply plan under its sovereign AI strategy also intersects with this distribution position."
+    "ko": "13년간 쌓은 엔비디아 젯슨 총판 역량에 DGX·GPU 서버 공급까지 더해져 AI 학습부터 로봇·자율주행 추론까지 아우르는 하드웨어 포트폴리오를 갖췄다. 독립리서치는 이러한 구조가 특정 영역에만 특화된 다른 파트너사와 차별화되는 지점이라고 평가했다. 국내 소버린 AI 정책 기조에 따른 공공·민간 GPU 투자 확대가 지속될 경우 유통·설계·기술지원을 아우르는 토털 서비스 역할이 부각될 수 있다.",
+    "en": "Thirteen years of experience as an NVIDIA Jetson distributor, now supplemented by DGX and GPU server supply, has given the company a hardware portfolio spanning AI training through robotics and autonomous-driving inference. One independent research house noted this breadth differentiates the company from partners specialized in narrower segments. Continued public and private GPU investment under Korea's sovereign AI policy direction could further highlight its role as a one-stop distribution, design and technical-support provider."
    }
   },
   {
    "title": {
-    "ko": "2026년 상반기 외형·수익성 동반 개선",
-    "en": "Simultaneous Revenue and Profitability Improvement in H1 2026"
+    "ko": "피지컬 AI 신사업 다변화",
+    "en": "Diversification into New Physical AI Businesses"
    },
    "body": {
-    "ko": "2026년 상반기 연결 매출액은 전년 동기 대비 29.3% 증가한 1,085억원으로 반기 기준 역대 최대를 기록했다. 영업이익은 87억원, 영업이익률은 8.0%로 전년 동기 대비 4.2%포인트 상승했다고 회사 측이 밝혔다. 2분기 연속 영업이익 40억원대를 이어가며 과거 대비 손익 안정성이 개선되는 모습도 나타났다.",
-    "en": "First-half 2026 consolidated revenue rose 29.3% year-on-year to KRW 108.5 billion, a record for a half-year period. Operating profit reached KRW 8.7 billion with an operating margin of 8.0%, up 4.2 percentage points year-on-year according to the company. Operating profit stayed in the KRW 4-billion-plus range for two consecutive quarters, suggesting improved earnings stability versus prior periods."
+    "ko": "SZ센싱과의 AI 비전 카메라 독점 총판, 유니컨과의 비접촉 무선 전송 기술 협력, ETRI 주관 AI 글라스 컨소시엄 참여 등 피지컬 AI 관련 제휴가 여러 건 이어지고 있다. 이는 기존 임베디드 개발 솔루션 매출에 더해 휴머노이드·자율주행·웨어러블 등 새로운 매출원을 모색하는 시도로 해석된다. 기존 임베디드 고객 약 1,500개사를 대상으로 한 교차판매 가능성도 거론된다.",
+    "en": "A series of physical AI partnerships have followed one another, including an exclusive AI vision camera distribution deal with SZ Sensing Tech, a contactless wireless transmission technology collaboration with Uniqconn, and participation in an ETRI-led AI glasses consortium. These efforts represent attempts to add humanoid robotics, autonomous driving and wearable devices as new revenue sources alongside legacy embedded development solutions. The potential to cross-sell to roughly 1,500 existing embedded customers has also been cited."
    }
   },
   {
    "title": {
-    "ko": "신사업 다각화를 통한 성장동력 확대",
-    "en": "Growth Diversification Through New Businesses"
+    "ko": "매출 성장세와 이익 회복",
+    "en": "Revenue Growth and Earnings Recovery"
    },
    "body": {
-    "ko": "자회사 MDS인텔리전스는 생성형 AI 기능을 결합한 '래피드오토 프로 AI'를 2026년 1월 출시하며 자동차 SW 개발 자동화 시장 공략을 강화하고 있다. 2023년부터 관계를 이어온 AI반도체 스타트업 프라임마스에는 최근 펀드 투자까지 단행해 CXL 시장 내 입지를 넓혔다. 2026년 7월에는 중국 SZ센싱과 파트너십을 맺어 AI 비전 솔루션으로 사업영역을 확장했다.",
-    "en": "Subsidiary MDS Intelligence launched RapidAUTO Pro AI, incorporating generative AI features, in January 2026, strengthening its push into the automotive software development automation market. The company has also made a fund investment in AI semiconductor startup Primemass, a relationship dating to 2023, expanding its footprint in the CXL market. In July 2026, it partnered with China's SZ Sensing to expand into AI vision solutions."
+    "ko": "매출은 2022년부터 2025년까지 3년 연속 증가했고 2026년 상반기에도 전년 동기 대비 두 자릿수 증가율을 이어갔다. 지배주주 순이익은 2023년 흑자 전환 이후 2024~2025년 2년 연속 증가했고, 2026년 2분기에는 전년 동기 대비 흑자 전환하는 모습을 보였다. 영업활동 현금흐름도 2023년 이후 플러스 기조를 유지하고 있다.",
+    "en": "Revenue has grown for three consecutive years from 2022 through 2025, and continued at a double-digit year-on-year growth rate in the first half of 2026. Net income attributable to controlling shareholders has risen for two consecutive years since turning profitable in 2023, and swung back to profit year on year in the second quarter of 2026. Operating cash flow has also remained positive since 2023."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "영업이익과 순이익 간 괴리 반복",
-    "en": "Recurring Gap Between Operating Profit and Net Income"
+    "ko": "수익성 둔화 추세",
+    "en": "Deteriorating Profitability Trend"
    },
    "body": {
-    "ko": "2022년에는 영업이익 82억원에도 지배주주순손실 68억원을 기록했고, 2023년에도 영업이익률 5.6%에 비해 지배주주순이익은 14억원에 그쳤다. 2025년 4분기에는 매출 515억원에도 영업이익이 0.4억원 수준까지 줄어드는 등 분기별 손익 변동폭이 크다. 이러한 패턴은 향후에도 일회성 요인에 따라 분기 실적이 출렁일 수 있음을 시사한다.",
-    "en": "In 2022, operating profit of KRW 8.2 billion coincided with a net loss attributable to owners of KRW 6.8 billion, and in 2023 a 5.6% operating margin translated into owners' net income of only KRW 1.4 billion. In the fourth quarter of 2025, operating profit shrank to roughly KRW 40 million despite revenue of KRW 51.5 billion, underscoring large swings in quarterly results. This pattern suggests quarterly earnings could remain volatile going forward depending on one-off items."
+    "ko": "영업이익은 2023년을 정점으로 2024~2025년 2년 연속 감소했고 영업이익률도 5.6%에서 3.1%로 낮아졌다. 매출 성장을 이끈 AI 서버·GPU 유통 사업의 마진 구조가 기존 임베디드 솔루션 대비 낮을 가능성이 제기된다. 외형이 커져도 수익성 개선이 뒤따르지 않으면 이익 체력에 대한 의문이 이어질 수 있다.",
+    "en": "Operating profit peaked in 2023 and has declined for two consecutive years through 2025, with the operating margin falling from 5.6% to 3.1%. There is a possibility that the AI server and GPU distribution business driving revenue growth carries a lower margin structure than legacy embedded solutions. If top-line expansion is not accompanied by profitability improvement, questions about underlying earnings strength could persist."
    }
   },
   {
    "title": {
-    "ko": "매출 성장 대비 더딘 수익 전환",
-    "en": "Slow Conversion of Revenue Growth Into Profit"
+    "ko": "분기 실적 변동성",
+    "en": "Quarterly Earnings Volatility"
    },
    "body": {
-    "ko": "일부 금융 데이터 업체는 동사의 매출 성장이 순이익과 영업이익률 개선으로 충분히 전환되지 못하는 점을 중립적으로 지적하고 있다. 임베디드 시스템SW 솔루션 부문 역시 매출은 늘었지만 비용 부담으로 수익성이 제한적이라는 평가가 있다. 2024년 영업이익률 3.6%에서 2025년 3.1%로 낮아진 점도 이러한 우려와 궤를 같이한다.",
-    "en": "Some financial data providers have noted, in neutral terms, that the company's revenue growth has not fully translated into improved net income and operating margins. The embedded system software solutions segment has also been described as having limited profitability due to cost burdens despite revenue growth. The decline in operating margin from 3.6% in 2024 to 3.1% in 2025 aligns with this concern."
+    "ko": "2025년 4분기 영업이익은 4,013만원까지 급감했다가 2026년 1분기 45.3억원으로 급반등하는 등 분기별 변동 폭이 크다. 지배주주 순이익도 2025년 2분기 순손실 35.9억원에서 3분기 73.8억원 흑자로 급변했다. 이러한 변동성은 특정 분기의 일회성 요인이나 대형 프로젝트 인식 시점에 따른 효과일 가능성이 있어 분기별 해석에 유의가 필요하다.",
+    "en": "Quarterly results show wide swings, with operating profit plunging to just KRW 40.13 million in the fourth quarter of 2025 before rebounding sharply to KRW 4.53 billion in the first quarter of 2026. Net income attributable to controlling shareholders also swung from a loss of KRW 3.59 billion in the second quarter of 2025 to a profit of KRW 7.38 billion in the third quarter. Such volatility may reflect one-off factors or the timing of large-project revenue recognition in specific quarters, warranting caution in interpreting any single quarter."
    }
   },
   {
    "title": {
-    "ko": "소수 파트너·고객사에 대한 의존",
-    "en": "Reliance on a Limited Set of Partners and Customers"
+    "ko": "신사업 다수가 아직 초기 단계",
+    "en": "Many New Businesses Still in Early Stages"
    },
    "body": {
-    "ko": "매출의 상당 부분이 엔비디아 총판 계약과 현대차그룹 모빌진·TRACE32 공급 관계에서 비롯되는 구조다. 현대차그룹의 로봇 사업에서 MDS테크의 구체적 역할은 아직 확정되지 않았으며, 회사 측도 현재로선 구체적으로 정해진 계획이 없다고 밝힌 바 있다. 특정 벤더·고객사와의 계약 조건이나 전략 변화가 실적에 직접적인 영향을 줄 수 있는 구조다.",
-    "en": "A significant portion of revenue stems from the NVIDIA distribution agreement and the Mobilgene/TRACE32 supply relationships with Hyundai Motor Group. MDS Tech's specific role in Hyundai Motor Group's robotics business remains undetermined, with the company stating there is currently no concrete plan in place. Changes in contract terms or strategy at these specific vendors or customers could directly affect results."
+    "ko": "SZ센싱·유니컨과의 협력, ETRI 컨소시엄 참여 등은 대부분 2026년 하반기에 체결된 MOU·업무협약 수준이며 구체적인 매출 기여 규모나 시점은 아직 공시되지 않았다. 피지컬 AI 시장이 장기 성장 전망을 보이더라도 실제 수주·매출 인식까지는 시차가 발생할 수 있다. 신사업 투자가 기존 임베디드 사업의 수익성 둔화를 상쇄하지 못할 가능성도 배제할 수 없다.",
+    "en": "Cooperation with SZ Sensing Tech and Uniqconn, as well as participation in the ETRI consortium, remain mostly at the memorandum-of-understanding stage signed in the second half of 2026, with no specific revenue contribution scale or timing yet disclosed. Even if the physical AI market shows strong long-term growth prospects, there can be a lag before actual orders and revenue recognition materialize. It cannot be ruled out that new-business investment may fail to offset the profitability slowdown in the legacy embedded business."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "공급망·파트너십 집중 리스크",
-    "en": "Supply Chain and Partnership Concentration Risk"
+    "ko": "사업 구조 리스크",
+    "en": "Business Structure Risk"
    },
    "body": {
-    "ko": "엔비디아 GPU 공급망 상황이나 총판 계약 조건 변경, 정부 소버린 AI 예산 집행 시기 지연 등은 관련 매출에 직접 영향을 줄 수 있다. 현대차그룹과의 모빌진·TRACE32 공급 관계 역시 특정 고객사 전략 변화에 노출돼 있다. 다변화를 위한 SZ센싱·프라임마스 등 신규 파트너십의 상업적 성과는 아직 검증 단계에 있다.",
-    "en": "Conditions in the NVIDIA GPU supply chain, changes to distribution contract terms, or delays in government sovereign AI budget execution could directly affect related revenue. The Mobilgene and TRACE32 supply relationships with Hyundai Motor Group are also exposed to shifts in that customer's strategy. Commercial results from newer diversification partnerships such as SZ Sensing and Primemass remain to be validated."
+    "ko": "AI 서버·GPU 유통 비중이 커질수록 특정 공급사(엔비디아)에 대한 의존도가 높아질 수 있다. 공급 계약 조건 변경이나 글로벌 반도체 수급 상황 변화가 실적에 영향을 줄 수 있다. 부문별 매출 비중은 분기마다 달라질 수 있어 특정 사업부 의존도가 지나치게 커지지 않는지 지속적인 확인이 필요하다.",
+    "en": "As the share of AI server and GPU distribution grows, dependence on a single supplier, NVIDIA, could increase. Changes in supply contract terms or shifts in global semiconductor supply-demand conditions could affect results. Because segment revenue mix can shift quarter to quarter, ongoing monitoring is needed to ensure dependence on any single business line does not become excessive."
    }
   },
   {
    "cat": {
-    "ko": "재무구조·연결범위 변동 리스크",
-    "en": "Financial Structure and Consolidation Scope Risk"
+    "ko": "수익성 리스크",
+    "en": "Profitability Risk"
    },
    "body": {
-    "ko": "부채비율은 2024년 59.8%에서 2025년 48.0%로 개선됐지만 과거 수년간 변동 폭이 있었다. 비지배지분이 2024년 말 220억원에서 2025년 말 19억원으로 크게 줄어드는 등 연결범위나 지분구조에 변화가 있었던 것으로 보인다. 이러한 변화의 배경이 향후 공시를 통해 구체적으로 확인될 필요가 있다.",
-    "en": "The debt ratio improved from 59.8% in 2024 to 48.0% in 2025, though it has fluctuated over past years. Non-controlling interests fell sharply from roughly KRW 22.0 billion at the end of 2024 to KRW 1.9 billion at the end of 2025, suggesting a change in consolidation scope or ownership structure. The background behind this change warrants further confirmation through future disclosures."
+    "ko": "영업이익률이 2023년 이후 2년 연속 낮아진 만큼, 매출 성장이 계속되더라도 이익률 반등 여부를 확인할 필요가 있다. 하드웨어 유통 비중 확대가 구조적으로 마진을 낮추는 요인이라면 이익률 회복에는 시간이 걸릴 수 있다.",
+    "en": "Given that the operating margin has declined for two consecutive years since 2023, it will be important to monitor whether margins can rebound even if revenue growth continues. If the expanding share of hardware distribution is a structural factor compressing margins, any margin recovery could take time."
    }
   },
   {
    "cat": {
-    "ko": "소형주 변동성·유동성 리스크",
-    "en": "Small-Cap Volatility and Liquidity Risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New Business Execution Risk"
    },
    "body": {
-    "ko": "시가총액이 0.1조원 수준인 소형주로, 피지컬 AI·엔비디아 관련 테마 뉴스에 주가가 단기간 크게 움직인 사례가 다수 보도된 바 있다. 테마성 수급이 빠지면 밸류에이션 지표도 함께 큰 폭으로 변동할 수 있다. 유동성이 낮은 소형주 특성상 매매 시 가격 충격이 상대적으로 클 수 있다.",
-    "en": "As a small-cap stock with a market capitalization of roughly KRW 0.1 trillion, the shares have reportedly moved sharply over short periods in response to physical AI and NVIDIA-related thematic news. If thematic flows reverse, valuation metrics could swing significantly as well. Given the lower liquidity typical of small-cap stocks, price impact from trading can be relatively large."
+    "ko": "피지컬 AI·AI 글라스 등 신규 협력은 대부분 MOU·협약 단계로, 기술 검증이나 상용화로 이어지지 않을 가능성이 있다. 정부 주도 사업(ETRI 컨소시엄)의 경우 예산·정책 일정 변경에 따라 사업 진행 속도가 달라질 수 있다.",
+    "en": "Most new partnerships in physical AI and AI glasses remain at the MOU or agreement stage, with the possibility that they may not progress to technology validation or commercialization. For the government-led project (the ETRI consortium), the pace of progress could vary with changes in budget allocation or policy scheduling."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 16일까지",
-    "en": "By November 16, 2026"
+    "ko": "2026년 11월 중순",
+    "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 3분기 분기보고서의 법정 공시 기한으로, 상반기에 나타난 영업이익률 개선 흐름이 3분기에도 이어지는지 확인할 시점이다.",
-    "en": "This is the legal filing deadline for the third-quarter 2026 report, a point to check whether the operating margin improvement seen in the first half continued into the third quarter."
+    "ko": "2026년 3분기 정기보고서·잠정실적 발표 예정(investing.com 집계 기준, 변동 가능) — 2026년 2분기까지 이어진 매출 성장세와 영업이익률 흐름이 이어지는지 확인해야 한다.",
+    "en": "The third-quarter 2026 regular report and preliminary results are expected to be released (per investing.com's tracking, subject to change) — worth checking whether the revenue growth and operating margin trends seen through the second quarter of 2026 continue."
    }
   },
   {
    "when": {
     "ko": "2026년 4분기 중",
-    "en": "During the fourth quarter of 2026"
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "정부 소버린 AI 전략에 따른 약 25만 장 규모의 엔비디아 블랙웰 GPU 공급 및 관련 매출 인식 진행 상황을 점검할 필요가 있다.",
-    "en": "It will be worth monitoring progress on the roughly 250,000-unit NVIDIA Blackwell GPU supply tied to the government's sovereign AI strategy and the related revenue recognition timeline."
+    "ko": "유니컨과의 피지컬 AI 기술 검증 결과 공개 여부와 신규 사업모델 구체화 진행 상황을 확인할 필요가 있다.",
+    "en": "Worth monitoring whether the technical validation results from the Uniqconn physical AI collaboration are disclosed and how any new business model takes concrete shape."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "During the fourth quarter of 2026"
+    "ko": "2026년 4분기~2027년",
+    "en": "Q4 2026 through 2027"
    },
    "what": {
-    "ko": "2026년 7월 체결된 SZ센싱과의 AI 비전 파트너십이 실제 매출로 이어지는 상업화 진행 상황을 확인할 필요가 있다.",
-    "en": "It will be worth checking the commercialization progress of the AI vision partnership with SZ Sensing formed in July 2026 and whether it translates into actual revenue."
+    "ko": "베라 루빈(Vera Rubin) 플랫폼 기반 AI 인프라 컨설팅·공급 계약이 실제 매출로 인식되는 시점과 규모를 확인해야 한다.",
+    "en": "Worth confirming the timing and scale at which AI infrastructure consulting and supply contracts tied to the Vera Rubin platform are actually recognized as revenue."
    }
   },
   {
    "when": {
-    "ko": "2027년 초 2026년 사업보고서 공시 시점",
-    "en": "Around the filing of the FY2026 annual report in early 2027"
+    "ko": "2027년",
+    "en": "2027"
    },
    "what": {
-    "ko": "2026년 1월 아리스가 제시했던 연간 매출 1,950억원·영업이익 105억원 전망치와 실제 확정 실적의 부합 여부를 비교해볼 수 있다.",
-    "en": "Actual confirmed full-year results can be compared against the January 2026 Aris forecast of KRW 195.0 billion in revenue and KRW 10.5 billion in operating profit."
+    "ko": "과기부·ETRI 주관 AI 글라스 컨소시엄 사업의 시제품·상용화 일정이 공개되는지 확인해야 한다.",
+    "en": "Worth checking whether a prototype or commercialization schedule is disclosed for the Ministry of Science and ICT/ETRI-led AI glasses consortium project."
    }
   },
   {
    "when": {
-    "ko": "수시 확인",
-    "en": "Ongoing monitoring"
+    "ko": "2026년 4분기",
+    "en": "Q4 2026"
    },
    "what": {
-    "ko": "현대차그룹의 로봇·자율주행 전략에서 MDS테크의 구체적 역할이 확정되는지, 엔비디아-현대차 협력 구도 변화가 있는지 지속적으로 살펴볼 필요가 있다.",
-    "en": "It is worth continuously monitoring whether MDS Tech's specific role in Hyundai Motor Group's robotics and autonomous driving strategy becomes concrete, and whether the NVIDIA-Hyundai partnership structure changes."
+    "ko": "SZ센싱과의 AI 비전 카메라 국내 공급 개시 여부와 매출 기여 수준을 확인할 필요가 있다.",
+    "en": "Worth confirming whether domestic supply of SZ Sensing Tech's AI vision cameras commences and its contribution to revenue."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "MDS테크는 엔비디아 젯슨·현대차 모빌진 총판이라는 유통망 지위를 기반으로 피지컬 AI·SDV 관련 신사업을 확장해온 임베디드 소프트웨어 기업이다. 2025년 매출은 늘었으나 영업이익률이 소폭 낮아졌던 흐름과 달리, 2026년 상반기에는 매출과 영업이익률이 동시에 개선되며 반기 기준 최대 실적을 냈다. 다만 2022~2023년에 드러났듯 영업이익과 순이익 간 괴리, 분기별 손익 변동성은 이 회사 실적을 해석할 때 유의해야 할 특징이다. 자회사 MDS인텔리전스의 AI 기능 탑재 제품 출시, SZ센싱·프라임마스 등과의 신규 파트너십은 성장동력을 다변화하는 요인으로 볼 수 있으나, 상업적 성과는 아직 검증 단계에 있다. 소형주 특성상 주가는 테마성 수급 영향을 받아온 것으로 보이며, 밸류에이션 지표의 변동성도 함께 고려할 필요가 있다. 투자 판단에 앞서 2026년 3분기 실적 공시와 신규 파트너십의 매출 기여 여부를 지속적으로 확인하는 것이 바람직하다.",
-   "en": "MDS Tech is an embedded software company that has leveraged its distribution positions in NVIDIA Jetson and Hyundai Motor's Mobilgene platform to expand into physical AI and software-defined vehicle-related businesses. In contrast to 2025, when revenue grew but operating margin slipped slightly, first-half 2026 saw both revenue and operating margin improve simultaneously, producing the company's best-ever half-year results. However, as seen in 2022-2023, the gap between operating profit and net income and quarterly earnings volatility are features that warrant caution when interpreting this company's results. The launch of AI-enabled products by subsidiary MDS Intelligence and new partnerships with SZ Sensing and Primemass can be viewed as factors diversifying growth drivers, though their commercial impact remains to be validated. Given its small-cap characteristics, the stock appears to have been influenced by thematic flows, and the resulting volatility in valuation metrics should also be considered. Before making investment decisions, it would be prudent to continue monitoring the third-quarter 2026 earnings disclosure and whether new partnerships contribute meaningfully to revenue."
+   "ko": "MDS테크는 임베디드 소프트웨어 본업을 바탕으로 엔비디아 AI 인프라·피지컬 AI 사업을 더해 2022년부터 2025년까지 매출이 3년 연속 늘어난 성장 궤적을 보여왔다. 동시에 영업이익률은 2023년 이후 2년 연속 낮아지며 외형 성장과 수익성 개선이 함께 가지는 못하고 있다. 지배주주 순이익은 2023년 흑자 전환 이후 2년 연속 증가했고 2026년 2분기에도 전년 동기 대비 흑자 전환을 기록해 이익 회복 흐름은 이어지고 있다. SZ센싱, 유니컨, ETRI 컨소시엄 등 신규 협력은 아직 대부분 초기 단계로, 실제 매출 기여 규모와 시점은 추후 공시를 통해 확인해야 한다. 분기별 실적 변동 폭이 크다는 점도 해석에 유의할 부분이다. 다음 분기 정기보고서와 신규 협력 사업의 구체화 여부가 향후 실적 흐름을 가늠할 주요 지표가 될 것으로 보인다.",
+   "en": "MDS Tech has built on its core embedded software business by adding NVIDIA AI infrastructure and physical AI operations, producing three consecutive years of revenue growth from 2022 through 2025. At the same time, the operating margin has declined for two consecutive years since 2023, meaning top-line growth and profitability improvement have not moved together. Net income attributable to controlling shareholders has risen for two consecutive years since turning profitable in 2023 and swung back to profit year on year again in the second quarter of 2026, suggesting the earnings-recovery trend is continuing. New partnerships with SZ Sensing Tech, Uniqconn and the ETRI consortium remain mostly at an early stage, and their actual revenue contribution in scale and timing will need to be confirmed through future disclosures. The wide swings in quarterly results are another point warranting careful interpretation. The next regular quarterly report and the extent to which these new partnerships take concrete shape are likely to be key indicators for gauging the company's future earnings trajectory."
   }
  },
  "sources": [
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=086960",
   "https://alphasquare.co.kr/home/stock-summary?code=086960",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260318001422&rcpno=20260318001050&orgid=F&tran=Y&langTpCd=0",
-  "https://stocks.pluconnect.com/086960_mds%ED%85%8C%ED%81%AC/",
-  "https://invest.kiwoom.com/inv/disclosure_detail?date=2026.02.09&seq=00012016&type=02&code=02&keyword=MDS%ED%85%8C%ED%81%AC&stockCode=&tp=",
-  "http://www.dailyinvest.kr/news/articleView.html?idxno=69953",
-  "https://wonforecast.com/mds-tech",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=exARKVbXpNJFN7sU",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=WNhoVSBHnEBlijFh",
-  "https://rootingview.com/2026-mds%ED%85%8C%ED%81%AC-%EC%A3%BC%EA%B0%80-%EC%A0%84%EB%A7%9D-%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%ED%95%B5%EC%8B%AC-%EA%B5%AD%EC%82%B0-sw-%EC%84%B1%EC%9E%A5-%EA%B8%B0%ED%9A%8C/",
-  "https://www.chickstockfi.com/stocks/086960",
-  "https://www.chickstockfi.com/stocks/086960/earnings",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=086960",
   "https://www.investing.com/equities/mds-technology-co-ltd",
-  "https://www.chickstockfi.com/stocks/086960/reports",
-  "https://m.irgo.co.kr/IR-COMP/086960/-IR-PAGE",
-  "https://kpinfo.kr/stock/086960",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03066806645320016",
-  "https://www.newspim.com/news/view/20260121000162"
+  "https://markets.hankyung.com/stock/086960/consensus",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A086960",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1694387797052.pdf",
+  "https://littlebproject.com/stock/086960/290/29697",
+  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A086960&MenuYn=Y&ReportGB=B&NewMenuID=105&stkGb=701",
+  "https://www.mdstech.co.kr/business",
+  "https://www.pinpointnews.co.kr/news/articleView.html?idxno=409057",
+  "https://m.thinkpool.com/compDiscuss/cont/1021076",
+  "https://jasoseol.com/companies/5902",
+  "https://100.daum.net/encyclopedia/view/47XCOMD000478",
+  "https://www.jobplanet.co.kr/companies/19441/landing/%EC%97%A0%EB%94%94%EC%97%90%EC%8A%A4%ED%85%8C%ED%81%AC",
+  "https://www.fnnews.com/news/202607141432182849",
+  "https://www.etoday.co.kr/news/view/2618700",
+  "https://www.irobotnews.com/news/articleView.html?idxno=48144",
+  "https://www.etoday.co.kr/news/view/2533655"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -233,9 +233,9 @@
   "IT·소프트웨어"
  ],
  "market": "코스닥",
- "reportDate": "2026-10-01",
- "reportTs": "2026-10-01 05:30",
- "dataDate": "20260930",
+ "reportDate": "2026-10-20",
+ "reportTs": "2026-10-20 01:01",
+ "dataDate": "20261019",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +338,14 @@
    }
   ],
   "valuation": {
-   "price": 2305,
-   "mcap": 0.0961,
+   "price": 2245,
+   "mcap": 0.0959,
    "shares": 42528670,
    "total_shares": 97757104,
    "wavg_shares": 41066653,
-   "per": 4.812,
+   "per": 4.687,
    "eps": 479,
-   "pbr": 0.5859,
+   "pbr": 0.5707,
    "bps": 3934,
    "roe_ttm": 13.7,
    "ttm_window": "2025Q3~2026Q2",

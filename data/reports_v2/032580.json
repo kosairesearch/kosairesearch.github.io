@@ -1,147 +1,147 @@
 {
  "title": {
-  "ko": "구형 메모리 품귀 속 실적 턴어라운드",
-  "en": "Turnaround Amid Legacy Memory Shortage"
+  "ko": "레거시 메모리 품귀, 피델릭스 흑자 전환",
+  "en": "Legacy Memory Shortage Lifts Fidelix Back to Profit"
  },
  "lead": {
-  "ko": "레거시 D램·낸드 가격 강세와 대형 공급계약이 맞물리며 피델릭스는 2025년 4분기 이후 분기 기준 흑자 전환과 이익 확대 흐름을 이어가고 있다.",
-  "en": "Fidelix has posted expanding quarterly operating profit since the fourth quarter of 2025, supported by a legacy DRAM/NAND price rally and a string of large supply contracts."
+  "ko": "피델릭스는 레거시 메모리 공급 부족에 따른 가격 상승과 매출 확대에 힘입어 2025년 4분기 흑자 전환 이후 2026년 1분기부터 2026년 2분기까지 영업이익과 지배주주 순이익이 2개 분기 연속 증가했다.",
+  "en": "Fidelix swung to an operating profit in the fourth quarter of 2025 and saw both operating profit and net profit attributable to owners rise for two consecutive quarters through the second quarter of 2026, driven by higher prices and sales amid a legacy memory supply shortage."
  },
  "keypoints": [
   {
-   "ko": "2025년 4분기 분기 흑자 전환 이후 2026년 1·2분기까지 매출과 영업이익이 분기마다 확대됐다.",
-   "en": "After turning to quarterly operating profit in Q4 2025, revenue and operating profit expanded further in both Q1 and Q2 2026."
+   "ko": "2026년 2분기 매출은 334억원[KRW 33.4 billion]으로 전 분기 대비 55.6%, 전년 동기 대비 179.8% 증가했으며, 2025년 3분기부터 2026년 2분기까지 4개 분기 연속 매출이 늘었다.",
+   "en": "Second-quarter 2026 revenue reached KRW 33.4 billion, up 55.6% quarter-on-quarter and 179.8% year-on-year, marking four consecutive quarters of revenue growth from the third quarter of 2025 through the second quarter of 2026."
   },
   {
-   "ko": "레거시 D램·낸드 공급 부족에 따른 가격 급등이 LPDDR·NOR/NAND 비중이 높은 회사의 판가에 우호적으로 작용하고 있다는 분석이 나온다.",
-   "en": "Analysts note that the shortage-driven price surge in legacy DRAM and NAND is favorable for average selling prices at a company with heavy exposure to LPDDR and NOR/NAND products."
+   "ko": "2025년 연간 매출은 536억원[KRW 53.6 billion](전년 대비 19.6% 증가)이었으나 영업손실 20.7억원[KRW 2.07 billion]으로 2024년부터 2년 연속 적자를 기록했다.",
+   "en": "Full-year 2025 revenue was KRW 53.6 billion, up 19.6% year-on-year, but the company posted an operating loss of KRW 2.07 billion, marking two consecutive years of operating losses since 2024."
   },
   {
-   "ko": "2026년 들어 삼성전자, Semtech, Alliance Memory 등과 잇따라 대형 메모리반도체 공급계약을 체결했다.",
-   "en": "In 2026 the company signed a series of large memory-chip supply contracts with Samsung Electronics, Semtech, and Alliance Memory."
+   "ko": "신한투자증권은 2026년 8월 11일 보고서에서 종합반도체기업들의 HBM·서버 D램 증설에 따른 레거시 메모리 공급 부족이 피델릭스에 반사 수혜가 될 수 있다고 평가했다.",
+   "en": "Shinhan Investment Corp stated in an August 11, 2026 report that legacy memory supply tightness caused by IDMs expanding HBM and server DRAM capacity could translate into a positive spillover for Fidelix."
   },
   {
-   "ko": "최대주주는 중국계 반도체 회사 Dosilicon이며, 플래시 메모리 부문에서 SMIC와 전략적 제휴 관계를 맺고 있는 것으로 알려져 있다.",
-   "en": "The largest shareholder is China-linked Dosilicon, and the company is reported to have a strategic flash-memory partnership with SMIC."
+   "ko": "피델릭스는 2026년 9월 29일 미국 반도체 유통사 얼라이언스 메모리와 192억 4,400만원 규모의 메모리반도체 공급계약을 체결했다고 밝혔다.",
+   "en": "Fidelix announced on September 29, 2026 that it signed a memory semiconductor supply contract worth KRW 19.244 billion with US semiconductor distributor Alliance Memory."
   },
   {
-   "ko": "2022~2025년 연간 실적은 흑자와 적자를 오가며 변동성이 컸던 이력이 있어, 최근 개선의 지속성은 추가 분기 실적으로 확인이 필요하다.",
-   "en": "Annual results swung between profit and loss from 2022 to 2025, so the durability of the recent improvement needs confirmation from upcoming quarters."
+   "ko": "최대주주는 중국계 동심반도체(Dosilicon)이며 동방항신그룹(Orient Evertrust Capital Group)에 속해, 중국 현지 수요·SMIC 협력 관계와 지정학적 변수가 동시에 걸려 있다.",
+   "en": "The largest shareholder is China-linked Dosilicon Co., Ltd., part of the Orient Evertrust Capital Group, tying the company simultaneously to Chinese demand and SMIC cooperation as well as geopolitical variables."
   }
  ],
  "business": {
-  "ko": "피델릭스는 대한민국에 설립된 코스닥 상장 반도체 기업으로, 설립은 1990년이며 코스닥 종목코드는 032580이다. 핵심 사업은 메모리 반도체 설계와 판매이며, 대규모 공장을 직접 운영하기보다 설계는 자체 수행하고 생산은 외부 파운드리와 후공정 업체에 위탁하는 팹리스 구조에 가깝다. 주요 제품군은 DRAM과 Flash Memory, MCP로 구성되며 DRAM에서는 LPDDR 계열을, Flash Memory에서는 NOR Flash와 NAND Flash를 취급하고, MCP는 NAND Flash와 DRAM 등을 하나의 패키지로 구성해 공간과 시스템 효율을 높인 제품이다. 최대주주는 중국계 기업인 Dosilicon으로 약 30.18%의 지분을 보유하고 있다. 플래시 메모리 부문에서는 중국 최대 파운드리인 SMIC와 전략적 제휴 관계를 맺고 있는 것으로 알려져 있다. 최근 들어 미국 Semtech Corporation과 메모리반도체 공급계약을 체결했고, 삼성전자와도 114.3억원 규모의 공급계약을 체결했으며, 미국 Alliance Memory와도 192억 4,400만원 규모의 공급계약을 체결하는 등 국내외 고객사와의 거래가 이어지고 있다. 이 중 삼성전자와의 계약은 2027년 4월 1일부터 2028년 12월 31일까지 약 1년 8개월에 걸쳐 이행되는 장기 계약이다. 경쟁구도 측면에서는 삼성전자·SK하이닉스 같은 종합반도체기업과 달리 레거시 공정 메모리 제품 중심의 틈새시장에서 사업을 영위하고 있다.",
-  "en": "Fidelix is a Korea-based, KOSDAQ-listed semiconductor company founded in 1990, trading under ticker 032580. Its core business is memory semiconductor design and sales, operating a fabless model in which the company handles design in-house and outsources production to external foundries and back-end packaging partners rather than running its own large-scale fabs. Its main product lines are DRAM, flash memory, and MCP, with LPDDR-series products in DRAM, NOR and NAND flash in the flash-memory line, and MCP products that combine NAND flash and DRAM into a single package to save space and improve system efficiency. Its largest shareholder is China-linked Dosilicon, holding roughly 30.18 percent of shares. The company is reported to have a strategic partnership with SMIC, China's largest foundry, in the flash-memory segment. More recently it has signed a memory-chip supply contract with US-based Semtech Corporation, a roughly KRW 11.43 billion supply contract with Samsung Electronics, and a roughly KRW 19.24 billion contract with US-based Alliance Memory, reflecting an ongoing mix of domestic and overseas customers. The Samsung Electronics contract runs from April 1, 2027 through December 31, 2028, a roughly 20-month delivery period. Competitively, unlike integrated device manufacturers such as Samsung Electronics and SK hynix, Fidelix operates in the niche of legacy-process memory products."
+  "ko": "피델릭스는 1990년 설립되어 1997년 코스닥에 상장한 메모리 반도체 팹리스 기업이다. 2006년 코아매직을 흡수합병하며 메모리 팹리스 사업을 주력 사업으로 확립했다. 주요 제품은 저전력 D램 계열인 LP-SDRAM·LPDDR과 PSRAM, NOR·NAND 플래시 메모리, 그리고 이들을 결합한 멀티칩패키지(MCP)로 구성된다. 과거 한 증권사 분석 자료는 2023년 3분기 누적 기준 제품별 매출 비중을 MCP 70.0%, DRAM 16.0%, NAND 9.0%, NOR Flash 5.0%로 제시한 바 있어, 전통적으로 MCP 의존도가 높은 구조였음을 보여준다. 전방 시장은 과거 휴대폰용 버퍼 메모리 중심에서 가전·사물인터넷(IoT)·전장용으로 확장되는 과정에 있으며, 차량용 칩셋 업체와 협업해 인증을 확보하고 모듈 업체를 통한 생산 확대도 추진하고 있다. 국내 유사 사업구조를 가진 상장사로는 제주반도체가 꼽힌다. 2015년 6월 동심반도체(Dosilicon Co., Ltd.)가 최대주주로 올라서며 중국계 동방항신그룹(Orient Evertrust Capital Group) 산하로 편입되었고, 이 지분 구조는 중국 현지 반도체 기업 SMIC와의 협력 관계가 부각되는 배경이 되고 있다. 판매 채널은 국내외 모듈 업체와 유통사를 통한 공급이 중심이며, 최근에는 미국 유통사와의 신규 계약을 통해 해외 채널 확대를 시도하고 있다.",
+  "en": "Fidelix was established in 1990 and listed on KOSDAQ in 1997 as a fabless memory semiconductor company. It absorbed Core Magic in 2006, which cemented memory fabless design as its core business. Its main products span low-power DRAM lines such as LP-SDRAM and LPDDR, PSRAM, NOR and NAND flash memory, and multi-chip packages (MCP) that combine these components. A past brokerage research note cited a product mix of 70.0% MCP, 16.0% DRAM, 9.0% NAND, and 5.0% NOR Flash on a cumulative basis through the third quarter of 2023, indicating the company's historically heavy reliance on MCP. Its end markets have been shifting from legacy mobile-phone buffer memory toward consumer electronics, IoT, and automotive applications, including certification work with automotive chipset makers and expanded production through module partners. Jeju Semiconductor is commonly cited as a domestically listed peer with a similar fabless memory business structure. In June 2015, Dosilicon Co., Ltd. became the controlling shareholder, bringing Fidelix under the China-linked Orient Evertrust Capital Group, an ownership link that underpins reported cooperation with China's SMIC. Sales channels center on domestic and overseas module makers and distributors, and the company has recently sought to broaden its overseas channel through a new contract with a US distributor."
  },
  "earnings": {
-  "ko": "확정 재무 기준으로 피델릭스의 연간 실적은 뚜렷한 굴곡을 보여왔다. 2022년 매출 725.6억원, 영업이익 62.8억원(영업이익률 8.7%), 순이익 82.5억원으로 호실적을 기록했으나, 2023년에는 매출이 527.8억원으로 줄며 영업이익도 7.1억원(영업이익률 1.3%)으로 급감했다. 2024년에는 매출이 448.1억원까지 줄었고 영업손실 45.3억원(영업이익률 -10.1%), 순손실 22.1억원을 기록하며 적자로 전환했다. 2025년에는 매출이 536.2억원으로 반등했음에도 영업손실 20.7억원, 순손실 29.6억원을 나타내 연간 기준으로는 2년 연속 적자를 이어갔다. 다만 분기별 흐름을 보면 하반기로 갈수록 뚜렷한 개선이 확인된다. 2025년 2분기 매출 119.5억원에 영업손실 15.9억원, 순손실 28.7억원이었던 실적은 3분기 매출 125.4억원, 영업손실 8.9억원으로 적자 폭이 줄었고, 4분기에는 매출 182.5억원, 영업이익 10.4억원, 순이익 12.5억원으로 흑자 전환에 성공했다. 이러한 흐름은 2026년 들어 가속화됐는데, 1분기 매출은 214.9억원으로 늘며 영업이익 43.3억원, 순이익 52.5억원을 기록했고, 2분기에는 매출이 334.3억원으로 전 분기 대비 큰 폭으로 증가하며 영업이익 96.1억원, 순이익 95.3억원을 나타냈다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산으로는 매출 857.1억원, 영업이익 140.9억원 수준으로 분기를 거듭할수록 수익성이 개선되는 구간에 들어선 모습이다. 재무구조 측면에서는 부채비율이 2023년 14.9%에서 2025년 28.2%로 다소 높아졌고, 영업활동현금흐름도 2024년 -15.5억원, 2025년 -24.3억원으로 마이너스를 이어가 손익 회복과 현금흐름 개선 간 시차가 존재함을 보여준다.",
-  "en": "Based on confirmed financial data, Fidelix's annual results have shown wide swings. In 2022 the company posted revenue of KRW 72.56 billion, operating profit of KRW 6.28 billion (8.7% operating margin), and net profit of KRW 8.25 billion, but in 2023 revenue fell to KRW 52.78 billion and operating profit shrank sharply to KRW 0.71 billion (1.3% margin). In 2024 revenue declined further to KRW 44.81 billion, with an operating loss of KRW 4.53 billion (-10.1% margin) and a net loss of KRW 2.21 billion, marking a swing into deficit. In 2025 revenue rebounded to KRW 53.62 billion, yet the company still posted an operating loss of KRW 2.07 billion and a net loss of KRW 2.96 billion, extending the annual loss streak to two years. Quarterly trends, however, show a clear improvement in the second half. After an operating loss of KRW 1.59 billion and net loss of KRW 2.87 billion on revenue of KRW 11.95 billion in Q2 2025, the operating loss narrowed to KRW 0.89 billion on revenue of KRW 12.54 billion in Q3, before turning to an operating profit of KRW 1.04 billion and net profit of KRW 1.25 billion on revenue of KRW 18.25 billion in Q4. This trend accelerated into 2026: Q1 revenue rose to KRW 21.49 billion with operating profit of KRW 4.33 billion and net profit of KRW 5.25 billion, and Q2 revenue jumped further to KRW 33.43 billion with operating profit of KRW 9.61 billion and net profit of KRW 9.53 billion. Over the most recent four quarters (Q3 2025 through Q2 2026), combined revenue reached KRW 85.71 billion and operating profit KRW 14.09 billion, indicating a quarter-by-quarter improvement in profitability. On the balance sheet side, the debt ratio rose from 14.9% in 2023 to 28.2% in 2025, while operating cash flow remained negative at KRW -1.55 billion in 2024 and KRW -2.43 billion in 2025, showing a lag between the earnings recovery and cash-flow improvement."
+  "ko": "연간 실적은 뚜렷한 등락을 보였다. 매출은 2022년 726억원[KRW 72.6 billion]에서 2023년 528억원[KRW 52.8 billion](전년 대비 27.3% 감소), 2024년 448억원[KRW 44.8 billion](전년 대비 15.1% 감소)까지 줄었다가 2025년 536억원[KRW 53.6 billion](전년 대비 19.6% 증가)으로 반등했다. 같은 기간 영업이익은 2022년 62.8억원[KRW 6.28 billion]에서 2023년 7.1억원[KRW 710 million](전년 대비 88.7% 감소)으로 급감했고, 2024년 영업손실 45.3억원[KRW 4.53 billion](전년 대비 적자 전환), 2025년 영업손실 20.7억원[KRW 2.07 billion](전년 대비 적자 지속, 손실 축소)으로 2024년부터 2년 연속 적자를 이어갔다. 지배주주 순이익도 2022년 82.5억원[KRW 8.25 billion]에서 2023년 10.6억원[KRW 1.06 billion](전년 대비 87.1% 감소)으로 줄었고, 2024년 지배주주 순손실 22.1억원[KRW 2.21 billion](적자 전환), 2025년 지배주주 순손실 29.6억원[KRW 2.96 billion](적자 지속, 손실 확대)으로 2년 연속 적자를 냈다. 분기 흐름은 2025년 2분기부터 뚜렷하게 개선되는 모습이다. 매출은 2025년 2분기 119억원[KRW 11.9 billion]에서 2025년 3분기 125억원[KRW 12.5 billion](전 분기 대비 5.0% 증가), 2025년 4분기 182억원[KRW 18.2 billion](전 분기 대비 45.5% 증가), 2026년 1분기 215억원[KRW 21.5 billion](전 분기 대비 17.8% 증가), 2026년 2분기 334억원[KRW 33.4 billion](전 분기 대비 55.6% 증가, 전년 동기 대비 179.8% 증가)으로 4개 분기 연속 증가했다. 영업이익은 2025년 2분기 영업손실 15.9억원[KRW 1.59 billion], 3분기 영업손실 8.9억원[KRW 894 million](적자 지속, 손실 축소)을 거쳐 4분기 영업이익 10.4억원[KRW 1.04 billion](흑자 전환)으로 돌아선 뒤, 2026년 1분기 영업이익 43.3억원[KRW 4.33 billion](전 분기 대비 316.7% 증가), 2026년 2분기 영업이익 96.1억원[KRW 9.61 billion](전 분기 대비 121.9% 증가, 전년 동기 대비 흑자 전환)으로 2분기 연속 늘었다. 지배주주 순이익 역시 2025년 4분기 12.5억원[KRW 1.25 billion]으로 흑자 전환한 뒤 2026년 1분기 52.5억원[KRW 5.25 billion], 2026년 2분기 95.3억원[KRW 9.53 billion]으로 2개 분기 연속 늘었으며, 최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주 순이익 합계는 155억원[KRW 15.5 billion]이다. 영업이익률은 2022년 8.7%에서 2023년 1.3%로 낮아진 뒤 2024년 -10.1%, 2025년 -3.9%로 마이너스 구간을 거쳤고, 영업활동 현금흐름도 2024년 -15.5억원[-KRW 1.55 billion], 2025년 -24.3억원[-KRW 2.43 billion]으로 2년 연속 순유출을 기록해 연간 기준으로는 아직 수익성과 현금창출력 회복이 완전히 확인되지 않은 상태다.",
+  "en": "Annual results showed sharp swings. Revenue fell from KRW 72.6 billion in 2022 to KRW 52.8 billion in 2023 (down 27.3% year-on-year) and KRW 44.8 billion in 2024 (down 15.1%), before rebounding to KRW 53.6 billion in 2025 (up 19.6%). Over the same period, operating profit plunged from KRW 6.28 billion in 2022 to KRW 710 million in 2023 (down 88.7%), then turned into an operating loss of KRW 4.53 billion in 2024 and an operating loss of KRW 2.07 billion in 2025 (loss continuing but narrowing), marking two consecutive years of operating losses since 2024. Net profit attributable to owners likewise fell from KRW 8.25 billion in 2022 to KRW 1.06 billion in 2023 (down 87.1%), then swung to a net loss of KRW 2.21 billion in 2024 and a wider net loss of KRW 2.96 billion in 2025, two straight years of losses. The quarterly trend has clearly improved since the second quarter of 2025. Revenue rose from KRW 11.9 billion in the second quarter of 2025 to KRW 12.5 billion in the third quarter (up 5.0% quarter-on-quarter), KRW 18.2 billion in the fourth quarter (up 45.5%), KRW 21.5 billion in the first quarter of 2026 (up 17.8%), and KRW 33.4 billion in the second quarter of 2026 (up 55.6% quarter-on-quarter and 179.8% year-on-year), four consecutive quarters of growth. Operating profit moved from a loss of KRW 1.59 billion in the second quarter of 2025 to a loss of KRW 894 million in the third quarter (loss narrowing), then turned positive at KRW 1.04 billion in the fourth quarter, before rising to KRW 4.33 billion in the first quarter of 2026 (up 316.7% quarter-on-quarter) and KRW 9.61 billion in the second quarter of 2026 (up 121.9% quarter-on-quarter, turning positive year-on-year), two consecutive quarters of increase. Net profit attributable to owners similarly turned positive at KRW 1.25 billion in the fourth quarter of 2025 before rising to KRW 5.25 billion in the first quarter of 2026 and KRW 9.53 billion in the second quarter of 2026, with the trailing four quarters (third quarter of 2025 through second quarter of 2026) totaling KRW 15.5 billion. The operating margin fell from 8.7% in 2022 to 1.3% in 2023, then turned negative at -10.1% in 2024 and -3.9% in 2025, and operating cash flow was negative for two straight years at -KRW 1.55 billion in 2024 and -KRW 2.43 billion in 2025, meaning a full annual recovery in profitability and cash generation has not yet been confirmed on a full-year basis."
  },
  "industry": {
-  "ko": "최근 반도체 업계에서는 AI 서버·데이터센터향 고대역폭메모리(HBM) 수요 급증이 범용 D램과 낸드 생산라인을 잠식하면서, 레거시 공정 메모리의 공급 부족과 가격 급등이 동시에 나타나는 현상이 관측된다. 카운터포인트리서치는 삼성전자와 SK하이닉스는 물론 중국의 CXMT 등 주요 업체들이 고마진 서버용 DDR5로 생산을 전환하면서 LPDDR4, eMMC 등 구형 기술의 공급이 빠르게 축소되고 있다고 분석했다. 트렌드포스는 2026년 1분기 범용 D램 계약가격이 전 분기 대비 55~60%, 낸드플래시가 33~38% 급등할 것으로 예측했다. 2분기에도 범용 D램 계약가격이 전 분기 대비 58~63%, 낸드플래시는 70~75% 급등할 것으로 예상됐다. 업계에서는 2026년 전체 D램 생산능력이 전년 대비 약 24% 늘어날 것으로 보이지만 이마저도 AI발 폭증 수요를 감당하기에는 역부족이라는 진단도 나온다. 이런 구도는 LPDDR·NOR/NAND 등 레거시 제품 비중이 높은 피델릭스와 같은 팹리스 업체에는 판가 상승이라는 우호적 환경으로 작용할 수 있는 반면, 파운드리 위탁생산 구조상 웨이퍼 확보 경쟁이 치열해질 경우 원가 부담으로 이어질 가능성도 있다. 서버용 제품의 가격 강세는 연말까지 이어질 수 있다는 전망도 나온다. 서버용 DDR5 D램의 4분기 가격 상승률은 15~20%에 이를 것으로 예상됐다. 경쟁구도 면에서 피델릭스는 종합반도체기업들이 축소하는 레거시 공정의 틈새 수요를 흡수하는 위치에 가깝다는 평가가 나오지만, 이 같은 초강세 사이클의 지속 기간에 대해서는 시장 전망이 엇갈린다.",
-  "en": "In the semiconductor industry, surging demand for high-bandwidth memory (HBM) used in AI servers and data centers has been displacing conventional DRAM and NAND production lines, resulting in a simultaneous shortage and price surge for legacy-process memory. Counterpoint Research noted that as Samsung Electronics, SK hynix, and China's CXMT shift production toward higher-margin server DDR5, supply of older technologies such as LPDDR4 and eMMC is shrinking rapidly. TrendForce forecast that conventional DRAM contract prices would jump 55-60% quarter-on-quarter in the first quarter of 2026, with NAND flash up 33-38%. A further 58-63% quarter-on-quarter increase in conventional DRAM contract prices and 70-75% for NAND flash was expected for the second quarter. Industry sources assessed that overall 2026 DRAM capacity would grow roughly 24% year-on-year, but that this would still be insufficient to meet AI-driven demand. This backdrop could be favorable for pricing at fabless companies like Fidelix with heavy exposure to legacy LPDDR and NOR/NAND products, though intensifying competition for wafer capacity at outsourced foundries could also raise cost pressure given its fabless model. Strength in server-product pricing is expected to continue through year-end. Server DDR5 DRAM prices were projected to rise 15-20% in the fourth quarter. Competitively, Fidelix appears positioned to absorb niche demand in legacy processes that integrated device manufacturers are scaling back, though market views differ on how long this unusually strong cycle will persist."
+  "ko": "글로벌 메모리 반도체 산업은 2025년 하반기부터 공급 부족에 따른 가격 급등 국면에 진입했다. 카운터포인트리서치는 메모리 가격이 2025년 4분기 40~50% 급등한 데 이어 2026년 1분기에도 추가로 40~50% 상승할 것으로 전망했으며, 삼성전자와 SK하이닉스는 물론 중국 CXMT까지 고마진 서버 D램으로 생산을 전환하면서 LPDDR4, eMMC 등 구형 기술의 공급이 빠르게 줄고 있다고 분석했다. 2026년 10월 보도에서도 삼성전자와 SK하이닉스 등 주요 공급사가 고대역폭메모리와 차세대 규격 양산에 팹 역량을 집중하면서 레거시 D램의 공급 절벽이 현실화해 구형 제품의 가격 상승 폭이 신형 제품을 앞지르는 현상까지 나타난 것으로 전해졌다. 신한투자증권은 2026년 8월 11일 보고서에서 이러한 종합반도체기업(IDM)들의 HBM·서버 D램 생산능력 확대가 레거시 메모리 공급 부족으로 이어지고 있으며, 그 수혜가 피델릭스의 실적 개선으로 연결될 가능성이 있다고 평가했다. 피델릭스는 이 구도에서 대형 IDM이 철수한 저용량·저전력 레거시 메모리 틈새 시장을 공략하는 팹리스 업체로 자리매김하고 있으며, 국내 유사 사업구조의 제주반도체와 경쟁 구도를 형성한다. 다만 레거시 메모리 가격 상승은 구조적 공급 부족에 따른 일시적 국면일 수도 있어, 대형 IDM들이 레거시 라인 증설이나 생산 재배분에 나설 경우 공급 여건이 다시 바뀔 가능성도 함께 고려해야 한다.",
+  "en": "The global memory semiconductor industry entered a phase of supply-driven price surges from the second half of 2025. Counterpoint Research projected memory prices would jump 40-50% in the fourth quarter of 2025 and rise a further 40-50% in the first quarter of 2026, noting that Samsung Electronics, SK hynix, and China's CXMT were all shifting production toward higher-margin server DRAM, rapidly reducing supply of older technologies such as LPDDR4 and eMMC. An October 2026 report similarly described how major suppliers concentrating fab capacity on high-bandwidth memory and next-generation specifications has created a legacy DRAM supply cliff, to the point where price increases for older products have outpaced newer ones. Shinhan Investment Corp stated in an August 11, 2026 report that this capacity expansion by IDMs into HBM and server DRAM is tightening legacy memory supply, with potential spillover benefits for Fidelix's earnings. Within this landscape, Fidelix positions itself as a fabless player targeting the low-capacity, low-power legacy memory niche that large IDMs have been vacating, competing against domestically listed peer Jeju Semiconductor, which has a similar business structure. That said, the legacy memory price surge may prove to be a temporary phase tied to structural supply tightness, and supply conditions could shift again if large IDMs expand legacy lines or reallocate production."
  },
  "outlook": {
-  "ko": "피델릭스는 2026년 들어 다수의 대형 공급계약을 잇따라 공시하며 수주 모멘텀을 이어가고 있다. 7월에는 미국 Semtech Corporation과 66억 4,020만원 규모의 메모리반도체 공급계약을 체결했으며, 이는 2025년 개별기준 매출액의 12.3%에 해당한다. 9월에는 같은 고객사와 60억 2,055만원 규모의 추가 계약을 맺었고, 계약기간은 2026년 9월 10일부터 2027년 3월 1일까지다. 8월에는 삼성전자와 114.3억원 규모의 공급계약을 체결했는데, 계약기간은 2027년 4월 1일부터 2028년 12월 31일까지로 약 1년 8개월에 걸친 장기 계약이다. 같은 달 미국 Alliance Memory와도 약 124억원 규모의 공급계약을 체결했으며, 계약기간은 2026년 11월 30일까지다. 9월 말에는 Alliance Memory와 192억 4,400만원 규모의 추가 계약을 체결했고, 계약기간은 2027년 2월 28일까지다. 회사 측은 Alliance Memory와 최근 3년간 동종 계약을 이행해 온 이력이 있다고 밝혔다. 다수의 계약이 선수금 100% 지급 및 취소불가 조건을 포함하고 있어 계약 이행의 안정성은 상대적으로 높게 설계된 것으로 파악된다. 향후 관전 포인트는 이러한 개별 계약들이 실제 매출로 얼마나 안정적으로 이어지는지, 그리고 레거시 메모리 가격 강세가 2026년 4분기 이후에도 유지되는지 여부다.",
-  "en": "Fidelix has continued to disclose a series of large supply contracts through 2026. In July it signed a roughly KRW 6.64 billion memory supply contract with US-based Semtech Corporation, equivalent to 12.3% of 2025 standalone revenue. In September it signed an additional roughly KRW 6.02 billion contract with the same customer, covering the delivery period from September 10, 2026 to March 1, 2027. In August it signed a roughly KRW 11.43 billion supply contract with Samsung Electronics, running from April 1, 2027 through December 31, 2028, a roughly 20-month long-term agreement. That same month it also signed a roughly KRW 12.4 billion contract with US-based Alliance Memory, with delivery through November 30, 2026. In late September it signed a further roughly KRW 19.24 billion contract with Alliance Memory, running through February 28, 2027. The company stated it has fulfilled similar contracts with Alliance Memory over the past three years. Many of these contracts include 100% upfront payment and non-cancellable terms, suggesting relatively high execution certainty. Key items to watch going forward are how reliably these individual contracts translate into actual revenue, and whether legacy memory price strength persists beyond the fourth quarter of 2026."
+  "ko": "피델릭스는 2026년 9월 29일 미국 반도체 유통 전문기업 얼라이언스 메모리와 192억 4,400만원 규모의 메모리반도체 공급계약을 체결했다고 밝혀 해외 채널 확대 흐름을 이어가고 있다. 관련 보도는 2026년 상반기 실적 호조가 중국 레거시 메모리 국산화와 현지 수요 회복의 수혜를 상당 부분 입은 결과였다고 분석했으며, 이번 미국향 공급계약으로 지역 다변화 시도가 본격화되는 모습이다. 다만 같은 보도는 수주 랠리 속에서도 팹리스 구조상 마진 방어가 향후 관건이 될 것이라는 점을 함께 지적했다. 시장에서는 영업이익이 흑자 전환 이후 증가세를 이어가고 있는 점과 레거시 메모리 가격 상승이 하반기에도 이어질 가능성에 주목하며 실적 확대 기대를 거론하고 있으나, 이는 회사의 공식 가이던스가 아니라 외부 분석과 보도에 근거한 전망이라는 점에 유의할 필요가 있다. 피델릭스는 2026년 5월에는 단기 주가 급등으로 투자주의종목 지정이 예고되는 등 수급 변동성이 커진 이력이 있어, 펀더멘털 개선과 주가 움직임이 항상 같은 속도로 가지는 않았다는 점도 함께 살펴볼 대목이다. 회사 측의 구체적인 증설이나 신제품 양산 일정에 대한 공식 발표는 추가로 확인되지 않았으며, 다음 정기보고서를 통한 3분기 실적 확정이 향후 방향성을 가늠할 주요 지표가 될 전망이다.",
+  "en": "Fidelix announced on September 29, 2026 that it signed a KRW 19.244 billion memory semiconductor supply contract with US-based distributor Alliance Memory, extending its push to broaden overseas sales channels. Related coverage noted that strong first-half 2026 results were substantially attributable to localization of legacy memory in China and a recovery in local demand, and the new US-facing contract appears to mark a more concrete step toward geographic diversification. The same coverage also flagged that, despite the order momentum, defending margins under a fabless structure will remain a key question going forward. Market commentary has pointed to the continued rise in operating profit since the turnaround and the possibility that legacy memory price increases persist into the second half, but it is worth noting these are external analyses and news-based expectations rather than formal company guidance. Fidelix has a history of elevated trading volatility, including a May 2026 episode in which a rapid short-term share price surge led to an advance notice of investment-caution designation, underscoring that fundamental improvement and share price movement have not always tracked at the same pace. No specific capacity expansion or new product mass-production schedule has been separately confirmed from the company, and confirmation of third-quarter results through the next regular filing will be a key reference point for gauging future direction."
  },
  "valuation_comment": {
-  "ko": "피델릭스는 2024~2025년 연간 기준 순손실을 기록하다가 2025년 4분기 이후 분기 흑자로 전환한 만큼, 이익 기준 밸류에이션 해석에는 주의가 필요한 구간을 지나왔다. 과거 적자 구간에서는 이익 기준 배수 자체가 성립하지 않았던 반면, 최근 분기 흑자 전환 이후에는 최근 네 개 분기 합산 이익을 기준으로 한 배수가 새롭게 형성되는 단계다. 주가순자산 관점에서는 산출 기준(발행주식수·자기자본 산정 방식)에 따라 배수가 다소 다르게 나타날 수 있어, 특정 수치의 고저를 단정하기보다는 산출 방식의 차이로 이해할 필요가 있다. 회사는 최근 회계연도 기준으로 별도의 현금배당을 지급하지 않고 있어, 배당 측면의 투자 매력은 제한적인 구조다. 코스닥 소형 반도체주 특성상 유동성과 주가 변동성이 상대적으로 크며, 중국 관련 정책 뉴스나 개별 수주 공시에 주가가 민감하게 반응해온 이력이 있다는 점도 함께 참고할 부분이다.",
-  "en": "Having recorded annual net losses in 2024 and 2025 before turning to quarterly operating profit from the fourth quarter of 2025, Fidelix has passed through a stretch where earnings-based valuation multiples were difficult to interpret in the usual way. In the loss-making period, earnings-based multiples were effectively not meaningful, whereas since the recent return to quarterly profit, multiples based on the trailing four quarters' combined earnings have begun to form anew. From a price-to-book perspective, multiples can differ depending on how shares outstanding and equity are calculated, so such differences should be read as a function of methodology rather than a judgment on whether the level is high or low. The company has not paid a cash dividend in the most recent fiscal years, limiting its appeal from an income standpoint. As a small-cap KOSDAQ semiconductor stock, liquidity and price volatility tend to be relatively high, and the shares have historically shown sensitivity to China-related policy headlines and individual order disclosures, which is also worth keeping in mind."
+  "ko": "피델릭스는 2022년 이후 2023~2025년까지 이익이 줄거나 적자를 내다가 2025년 4분기부터 분기 기준으로 흑자 전환해 이익 회복 국면에 들어선 상태다. 이 때문에 현재 거래되는 수준은 과거 적자 국면에서 형성된 주가 흐름과는 성격이 다른, 이익 회복 기대가 일부 반영된 구간으로 볼 수 있다. 순자산 대비로는 상당한 프리미엄에서 거래되는 편이며, 이는 분기 실적이 뚜렷하게 개선되고 있는 점과 레거시 메모리 공급 부족 수혜 기대가 함께 반영된 결과로 해석할 수 있다. 배당은 최근 지급 이력이 확인되지 않아 배당수익률 측면의 매력은 제한적인 편이다. 동일 업종 내 비교에서는 흑자 전환 초기 기업 특유의 변동성이 함께 나타나는 만큼, 연간 기준 수익성과 현금흐름 회복이 분기 호조만큼 뚜렷해지는지 추가로 확인할 필요가 있다.",
+  "en": "Fidelix saw profits shrink or turn negative from 2023 through 2025 before swinging back to a quarterly operating profit starting in the fourth quarter of 2025, placing the company in an early earnings-recovery phase. As a result, current trading levels differ in character from the pattern seen during the earlier loss-making period and appear to partly price in expectations for continued earnings recovery. The shares trade at a notable premium to net asset value, which can be read as reflecting both the clear quarterly earnings improvement and expectations tied to the legacy memory supply shortage. No recent dividend payment history has been confirmed, limiting the stock's appeal from a dividend-yield standpoint. Compared with industry peers, the volatility typical of a company in the early stages of a turnaround is also evident, making it worth further confirming whether full-year profitability and cash-flow recovery become as clear as the recent quarterly improvement."
  },
  "bull": [
   {
    "title": {
-    "ko": "레거시 메모리 가격 강세",
-    "en": "Strength in Legacy Memory Pricing"
+    "ko": "레거시 메모리 공급 부족 수혜",
+    "en": "Legacy Memory Shortage Tailwind"
    },
    "body": {
-    "ko": "AI 서버향 HBM 생산 확대로 삼성전자·SK하이닉스·CXMT 등이 서버용 DDR5로 생산을 전환하면서 LPDDR4, eMMC 등 구형 기술의 공급이 빠르게 축소되고 있다는 분석이 나온다. 이는 해당 제품군 비중이 높은 피델릭스의 판가와 마진에 직접적인 영향을 줄 수 있는 우호적 환경으로 해석된다. 실제로 2025년 4분기부터 2026년 2분기까지 분기 매출과 영업이익이 뚜렷하게 개선된 점은 이러한 업황 변화와 시기적으로 맞물려 있다.",
-    "en": "Analysts note that as Samsung Electronics, SK hynix, and CXMT shift production toward server DDR5 to meet AI-driven HBM demand, supply of older technologies such as LPDDR4 and eMMC is shrinking rapidly. This could be a favorable environment for pricing and margins at Fidelix, given its heavy exposure to these legacy product lines. Indeed, the marked improvement in quarterly revenue and operating profit from Q4 2025 through Q2 2026 coincided with this industry shift."
+    "ko": "대형 IDM들이 HBM과 서버 D램으로 생산을 전환하면서 LPDDR4, eMMC 등 레거시 제품의 공급이 줄어드는 구조적 변화가 진행되고 있다. 신한투자증권은 이러한 흐름이 피델릭스의 실적 개선으로 이어질 가능성이 있다고 평가했다. 2026년 1분기와 2분기 연속으로 영업이익과 지배주주 순이익이 늘어난 점은 이 구도가 실제 실적에 일부 반영되고 있음을 보여준다.",
+    "en": "A structural shift is underway as large IDMs redirect production toward HBM and server DRAM, reducing supply of legacy products such as LPDDR4 and eMMC. Shinhan Investment Corp assessed that this trend could translate into earnings improvement for Fidelix. The consecutive rise in operating profit and net profit attributable to owners in the first and second quarters of 2026 suggests this dynamic has already been partly reflected in results."
    }
   },
   {
    "title": {
-    "ko": "대형 고객사향 공급계약 확대",
-    "en": "Expanding Supply Contracts with Major Customers"
+    "ko": "흑자 전환 이후 개선 흐름",
+    "en": "Improving Trend After Turning Profitable"
    },
    "body": {
-    "ko": "2026년 들어 삼성전자, Semtech, Alliance Memory 등과 잇따라 메모리반도체 공급계약을 체결한 사실이 공시를 통해 확인된다. 특히 삼성전자와의 계약은 2027년부터 2028년까지 이어지는 장기 계약이라는 점에서 단기 수급 개선을 넘어선 거래 관계의 연속성을 시사한다. 다수 계약이 선수금 100% 지급 조건을 포함하고 있어 계약 이행의 안정성도 상대적으로 높은 편이다.",
-    "en": "Disclosures confirm that Fidelix signed a series of memory supply contracts with Samsung Electronics, Semtech, and Alliance Memory through 2026. In particular, the Samsung Electronics contract extends from 2027 into 2028, suggesting a continuing relationship beyond a short-term supply pickup. Many contracts also include 100% upfront payment terms, giving relatively high execution certainty."
+    "ko": "2025년 4분기 영업이익과 지배주주 순이익이 모두 흑자로 전환된 뒤 2026년 1분기와 2분기까지 2개 분기 연속 증가했다. 매출도 2025년 3분기부터 2026년 2분기까지 4개 분기 연속 늘었다. 최근 4개 분기 지배주주 순이익 합계는 155억원으로, 2024~2025년의 적자 기조에서 벗어나는 모습을 보이고 있다.",
+    "en": "Both operating profit and net profit attributable to owners turned positive in the fourth quarter of 2025 and then rose for two consecutive quarters through the second quarter of 2026. Revenue also grew for four straight quarters from the third quarter of 2025 through the second quarter of 2026. The trailing four-quarter net profit attributable to owners totaled KRW 15.5 billion, marking a departure from the loss-making pattern of 2024-2025."
    }
   },
   {
    "title": {
-    "ko": "흑자 전환 구간 진입",
-    "en": "Entering a Profit-Generating Phase"
+    "ko": "해외 채널 확대 시도",
+    "en": "Expanding Overseas Channels"
    },
    "body": {
-    "ko": "2025년 2분기까지 이어지던 영업손실이 3분기 축소를 거쳐 4분기 흑자로 전환했고, 2026년 1·2분기에는 영업이익 규모가 분기를 거듭하며 확대됐다. 최근 네 개 분기 합산으로는 영업이익이 순차적으로 누적되는 구간에 들어선 모습이다. 이는 과거 2년 연속 연간 적자를 기록했던 것과 대비되는 흐름이다.",
-    "en": "The operating loss that persisted through Q2 2025 narrowed in Q3 and turned to profit in Q4, with operating profit then expanding further in both Q1 and Q2 2026. Over the trailing four quarters, operating profit has been accumulating sequentially. This contrasts with the two consecutive years of annual losses recorded previously."
+    "ko": "2026년 9월 29일 미국 반도체 유통사 얼라이언스 메모리와 192억 4,400만원 규모의 공급계약을 체결했다. 이는 중국 중심이던 매출 구조에서 벗어나 지역을 다변화하려는 움직임으로 해석된다. 전장용·IoT용 제품 라인업 확대와 함께 고객 기반을 넓히려는 전략도 지속되고 있다.",
+    "en": "On September 29, 2026, the company signed a KRW 19.244 billion supply contract with US semiconductor distributor Alliance Memory. This is seen as a move to diversify beyond a revenue structure that had been centered on China. The company continues to pursue a broader customer base alongside an expanding automotive and IoT product lineup."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "이익 변동성의 역사",
-    "en": "A History of Earnings Volatility"
+    "ko": "이익 변동성이 큰 과거 실적",
+    "en": "History of Highly Volatile Earnings"
    },
    "body": {
-    "ko": "피델릭스는 2022년 흑자에서 2023~2024년 이익 급감과 적자, 2025년 재차 적자를 거치는 등 연간 실적의 진폭이 컸다. 최근의 개선이 구조적인 수익성 회복인지, 메모리 가격 사이클에 따른 일시적 현상인지는 추가 분기 실적을 통해 확인이 필요하다. 과거 사례를 보면 업황이 반전될 경우 이익이 다시 빠르게 축소된 이력이 있다.",
-    "en": "Fidelix swung from profit in 2022 to a sharp earnings decline and losses in 2023-2024, and losses again in 2025, showing wide annual volatility. Whether the recent improvement represents a structural recovery or a temporary effect of the memory price cycle needs confirmation through further quarterly results. Past patterns show earnings can contract quickly again if the industry backdrop reverses."
+    "ko": "2022년 영업이익 62.8억원에서 2023년 7.1억원으로 급감한 뒤 2024년과 2025년에는 영업손실을 기록했다. 매출 역시 2022년 726억원에서 2024년 448억원까지 줄었다가 2025년에야 반등했다. 최근의 개선 흐름이 과거와 같은 수준의 등락 없이 지속될지는 추가로 지켜볼 부분이다.",
+    "en": "Operating profit plunged from KRW 6.28 billion in 2022 to KRW 710 million in 2023, before turning into operating losses in both 2024 and 2025. Revenue similarly fell from KRW 72.6 billion in 2022 to KRW 44.8 billion in 2024, only rebounding in 2025. Whether the recent improvement can continue without the kind of swings seen in prior years remains to be seen."
    }
   },
   {
    "title": {
-    "ko": "중국 관련 지분·거래 구조에 따른 민감도",
-    "en": "Sensitivity Tied to China-Linked Ownership and Dealings"
+    "ko": "제품 구조의 집중도",
+    "en": "Concentrated Product Structure"
    },
    "body": {
-    "ko": "최대주주가 중국계 반도체 회사이고 플래시 메모리 부문에서 SMIC와 제휴 관계에 있다는 점이 알려지면서, 주가가 중국 반도체 정책 뉴스에 따라 큰 폭으로 움직인 사례가 다수 확인된다. 이는 미중 기술 패권 경쟁이나 수출통제 환경 변화에 따라 사업과 주가 모두 영향을 받을 수 있음을 시사한다. 회사의 펀더멘털과 무관한 테마성 변동성이 나타날 가능성도 배제하기 어렵다.",
-    "en": "Given that the largest shareholder is a China-linked semiconductor company and the firm has a flash-memory partnership with SMIC, the stock has repeatedly moved sharply on China-related semiconductor policy news. This suggests both the business and the share price could be affected by shifts in US-China technology competition or export-control rules. Theme-driven volatility unrelated to underlying fundamentals cannot be ruled out."
+    "ko": "과거 자료 기준으로 매출의 상당 부분이 MCP 제품에 집중되어 있어 단일 제품군 의존도가 높은 편이다. 고부가가치 신제품의 매출 기여가 아직 뚜렷하게 확인되지 않고 있다. 레거시 제품 중심 구조는 가격 상승기에는 유리하지만, 공급 여건이 정상화될 경우 마진 방어력에 대한 의문이 제기될 수 있다.",
+    "en": "Based on past disclosures, a large portion of revenue has been concentrated in MCP products, indicating relatively high reliance on a single product category. Revenue contribution from higher-value new products has not yet been clearly confirmed. While a legacy-product-centered structure is advantageous during price upcycles, questions about margin defensibility could resurface if supply conditions normalize."
    }
   },
   {
    "title": {
-    "ko": "팹리스 구조의 원가 노출",
-    "en": "Cost Exposure from the Fabless Structure"
+    "ko": "밸류에이션과 주가 변동성",
+    "en": "Valuation and Share Price Volatility"
    },
    "body": {
-    "ko": "피델릭스는 자체 생산시설 없이 외부 파운드리와 후공정 업체에 생산을 위탁하는 팹리스 구조로, 레거시 공정의 웨이퍼 확보 경쟁이 치열해질 경우 위탁생산 단가 상승이 원가 부담으로 전이될 수 있다. 최근 산업 전반의 공급 부족 국면은 판가 상승이라는 호재와 동시에, 파운드리 협상력 약화라는 양면적 요인으로 작용할 수 있다. 원재료 및 위탁생산 비용의 변동은 향후 마진 흐름을 좌우할 핵심 변수다.",
-    "en": "As a fabless company that outsources production to external foundries and back-end partners rather than operating its own facilities, Fidelix could face rising foundry costs if competition for legacy-process wafer capacity intensifies. The current industry-wide supply shortage could be a double-edged sword, boosting selling prices while also weakening the company's negotiating leverage with foundries. Changes in outsourced production costs will be a key variable for future margins."
+    "ko": "2026년 5월에는 단기 주가 급등에 따른 투자주의종목 지정이 예고된 바 있어 수급 변동성이 컸다. 순자산 대비로는 상당한 프리미엄에서 거래되는 구간으로, 이익 회복 기대가 선반영된 측면이 있다. 분기 실적 개선 속도가 둔화될 경우 밸류에이션 재평가 압력이 생길 가능성도 배제할 수 없다.",
+    "en": "In May 2026, an advance notice of investment-caution designation followed a rapid short-term share price surge, reflecting significant trading volatility. The shares trade at a notable premium to net asset value, suggesting earnings-recovery expectations are already partly priced in. If the pace of quarterly earnings improvement slows, pressure for valuation reassessment cannot be ruled out."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "고객·계약 집중 위험",
-    "en": "Customer and Contract Concentration Risk"
+    "ko": "업황 사이클 리스크",
+    "en": "Industry Cycle Risk"
    },
    "body": {
-    "ko": "최근 공시된 개별 공급계약들은 각각 최근 매출의 10%대~30%대에 이르는 규모로, 특정 고객사에 대한 의존도가 높아질 경우 계약 종료나 물량 축소 시 실적 변동성이 커질 수 있다. 계약 다수가 6개월 안팎의 상대적으로 짧은 공급 기간으로 설정돼 있어 재계약 여부를 지속적으로 확인할 필요가 있다.",
-    "en": "Recently disclosed individual supply contracts each represent roughly 10% to 30% of recent revenue, meaning increased reliance on specific customers could raise earnings volatility if a contract ends or volumes shrink. Many of these contracts have relatively short delivery windows of around six months, so renewal status needs to be monitored continuously."
+    "ko": "현재의 레거시 메모리 가격 상승은 대형 IDM들의 생산 전환에 따른 공급 부족에서 비롯된 측면이 크다. IDM들이 레거시 라인 증설이나 생산 재배분에 나설 경우 공급 여건이 다시 바뀔 수 있다. 가격 하락 국면이 올 경우 매출과 영업이익 모두 민감하게 반응할 가능성이 있다.",
+    "en": "The current legacy memory price upcycle largely stems from supply tightness caused by large IDMs shifting production elsewhere. If IDMs expand legacy lines or reallocate production, supply conditions could shift again. In a downturn scenario, both revenue and operating profit could react sensitively."
    }
   },
   {
    "cat": {
-    "ko": "지정학·수출통제 리스크",
-    "en": "Geopolitical and Export-Control Risk"
+    "ko": "주주구조·지정학 리스크",
+    "en": "Shareholder Structure and Geopolitical Risk"
    },
    "body": {
-    "ko": "최대주주가 중국계 기업이고 중국 파운드리인 SMIC와의 협력 관계가 있다는 점은 미중 반도체 패권 경쟁이 심화될 경우 수출통제나 거래 제한 등 규제 리스크에 노출될 가능성을 내포한다. 관련 정책 변화는 사업 자체뿐 아니라 주가에도 테마성 변동을 유발해 온 이력이 있다.",
-    "en": "With the largest shareholder being a China-linked firm and a cooperative relationship with Chinese foundry SMIC, the company could be exposed to export-control or trade-restriction risk should US-China semiconductor competition intensify further. Related policy shifts have historically triggered theme-driven swings in both the business outlook and the share price."
+    "ko": "최대주주는 중국계 동심반도체(Dosilicon)이며 동방항신그룹 산하에 속해 있고, 중국 SMIC와의 협력 관계도 거론된다. 미국의 대중국 반도체 규제가 강화되는 국면에서는 이 지분 구조와 협력 관계가 반사 수혜 요인으로 작용할 수도 있지만, 반대로 규제 대상이 확대될 경우 영향을 받을 가능성도 함께 존재한다. 지정학적 환경 변화에 따라 이 요인의 성격이 바뀔 수 있다는 점을 유의할 필요가 있다.",
+    "en": "The largest shareholder is China-linked Dosilicon Co., Ltd., part of the Orient Evertrust Capital Group, and the company has reported cooperation with China's SMIC. Amid tightening US restrictions on semiconductors tied to China, this ownership and cooperation structure could act as a source of spillover benefit, but it could equally be affected if the scope of restrictions expands. The character of this factor could change depending on shifts in the geopolitical environment."
    }
   },
   {
    "cat": {
-    "ko": "메모리 가격 사이클 반전 리스크",
-    "en": "Risk of a Memory Price Cycle Reversal"
+    "ko": "변동성·현금흐름 리스크",
+    "en": "Volatility and Cash Flow Risk"
    },
    "body": {
-    "ko": "현재의 레거시 메모리 가격 강세는 AI발 HBM 수요 집중이라는 특수한 구도에서 비롯된 것으로, 공급사들의 생산라인 전환이나 재고 확충이 본격화될 경우 가격 상승폭이 둔화되거나 반전될 가능성이 있다. 실제로 일부 시장조사기관은 D램 가격 상승률이 분기를 거듭할수록 둔화되고 연말에는 높은 가격에서 안정될 것으로 전망하고 있어, 업황 피크아웃 시점에 대한 모니터링이 필요하다.",
-    "en": "The current strength in legacy memory prices stems from the unusual concentration of AI-driven HBM demand, and price gains could slow or reverse if suppliers shift production lines back or rebuild inventory. Some market research firms have in fact projected that DRAM price growth will decelerate quarter by quarter and stabilize at elevated levels by year-end, so the timing of a potential cycle peak warrants monitoring."
+    "ko": "2026년 5월 투자주의종목 지정 예고 사례에서 보듯 주가 변동성이 큰 편이다. 영업활동 현금흐름은 2024년과 2025년 모두 순유출을 기록해 연간 기준 현금창출력 회복이 아직 완전히 확인되지 않았다. 분기 실적 개선이 연간 전체의 재무구조 개선으로 이어지는지 추가 확인이 필요하다.",
+    "en": "Share price volatility has been elevated, as shown by the May 2026 investment-caution designation notice. Operating cash flow was negative in both 2024 and 2025, meaning a full-year recovery in cash generation has not yet been fully confirmed. Further confirmation is needed on whether quarterly earnings improvement translates into a broader annual financial structure recovery."
    }
   }
  ],
@@ -152,28 +152,8 @@
     "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 3분기 분기보고서 공시 시점으로, 최근 두 분기간 이어진 흑자 전환 흐름이 3분기에도 이어지는지 확인할 시점이다.",
-    "en": "Around the Q3 2026 quarterly report filing, a point to check whether the profit-turnaround trend seen in the prior two quarters continued into the third quarter."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 11월 말~2027년 3월 초",
-    "en": "Late November 2026 to Early March 2027"
-   },
-   "what": {
-    "ko": "Semtech(2027년 3월 1일까지)와 Alliance Memory(2026년 11월 30일까지)와 체결한 공급계약의 이행 완료 시점으로, 예정대로 매출에 반영되는지 확인할 시점이다.",
-    "en": "The scheduled completion of supply contracts with Semtech (through March 1, 2027) and Alliance Memory (through November 30, 2026), a point to verify whether deliveries are reflected in revenue as planned."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 2월 말",
-    "en": "Late February 2027"
-   },
-   "what": {
-    "ko": "Alliance Memory와 체결한 192억 4,400만원 규모 계약(공급기간 2026년 9월 29일~2027년 2월 28일)의 이행 완료 여부와 후속 계약 체결 여부를 확인할 시점이다.",
-    "en": "The scheduled completion of the roughly KRW 19.24 billion Alliance Memory contract (delivery period September 29, 2026 to February 28, 2027), a point to check for completion and any follow-on contracts."
+    "ko": "2026년 3분기 분기보고서 공시를 통해 레거시 메모리 가격 상승 효과가 3분기 실적에 얼마나 반영됐는지 확인할 필요가 있다.",
+    "en": "The third-quarter 2026 regular filing will show how much of the legacy memory price upcycle was reflected in third-quarter results."
    }
   },
   {
@@ -182,46 +162,56 @@
     "en": "During Q4 2026"
    },
    "what": {
-    "ko": "시장조사기관이 전망한 서버용 DDR5 D램의 4분기 15~20%대 추가 가격 상승 및 연말까지의 가격 강세 지속 여부를 확인할 시점이다.",
-    "en": "A point to check whether forecasts of a further 15-20% Q4 price increase for server DDR5 DRAM and continued year-end price strength materialize."
+    "ko": "레거시 D램·낸드 현물가격 추이와 IDM들의 레거시 라인 증설 여부를 점검해 공급 부족 국면의 지속 여부를 가늠할 필요가 있다.",
+    "en": "Tracking legacy DRAM and NAND spot price trends and whether IDMs expand legacy lines will help gauge whether the supply shortage phase persists."
    }
   },
   {
    "when": {
-    "ko": "2027년 4월",
-    "en": "April 2027"
+    "ko": "2026년 4분기 이후",
+    "en": "From Q4 2026 onward"
    },
    "what": {
-    "ko": "삼성전자와 체결한 114.3억원 규모 장기 공급계약의 실제 공급 개시 시점으로, 계약 이행 여부를 확인할 시점이다.",
-    "en": "The scheduled start of deliveries under the roughly KRW 11.43 billion long-term supply contract with Samsung Electronics, a point to confirm contract execution."
+    "ko": "얼라이언스 메모리향 공급계약의 매출 인식 시점과 추가 해외 수주 공시 여부를 확인할 필요가 있다.",
+    "en": "It will be important to monitor when revenue from the Alliance Memory supply contract is recognized and whether additional overseas order disclosures follow."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
+   },
+   "what": {
+    "ko": "2026 사업연도 사업보고서를 통해 연간 기준 흑자 전환 여부와 영업활동 현금흐름 회복 여부가 최종 확정된다.",
+    "en": "The FY2026 annual report will finalize whether the company achieved a full-year operating profit and recovered positive operating cash flow."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "피델릭스는 2024~2025년 연간 적자를 기록한 뒤 2025년 4분기부터 분기 기준 흑자로 전환했고, 2026년 들어서는 매출과 영업이익 모두 분기마다 확대되는 흐름을 보이고 있다. 이러한 회복은 AI발 HBM 수요 집중으로 레거시 D램·낸드 공급이 위축되며 나타난 업계 전반의 가격 강세와 맞물려 있으며, 동시에 삼성전자·Semtech·Alliance Memory 등과의 잇따른 대형 공급계약 체결이 뒷받침하고 있다. 다만 회사는 과거 2년 연속 적자를 포함해 연간 실적의 진폭이 컸던 이력이 있고, 최대주주가 중국계 기업이며 중국 파운드리와의 협력 관계를 맺고 있다는 점에서 지정학적 변수에 대한 민감도도 함께 고려할 필요가 있다. 팹리스 구조 특성상 위탁생산 단가와 파운드리 협상력 변화도 향후 마진에 영향을 줄 수 있는 변수다. 최근의 실적 개선이 구조적인 것인지, 메모리 가격 사이클에 따른 일시적 현상인지는 향후 몇 개 분기의 실적과 레거시 메모리 가격 추이를 함께 지켜봐야 판단할 수 있는 사안이다. 본 리포트는 정보 제공을 목적으로 하며 특정 종목에 대한 매수·매도 의견을 포함하지 않는다.",
-   "en": "After recording annual losses in 2024 and 2025, Fidelix turned to quarterly operating profit from the fourth quarter of 2025, and revenue and operating profit have both expanded quarter by quarter through 2026. This recovery coincides with an industry-wide price rally in legacy DRAM and NAND caused by AI-driven HBM demand concentration, and has been supported by a series of large supply contracts with Samsung Electronics, Semtech, and Alliance Memory. That said, the company has a history of wide annual earnings swings, including two consecutive years of losses, and its China-linked largest shareholder and cooperative ties with a Chinese foundry mean geopolitical variables also warrant consideration. Given its fabless structure, changes in outsourced production costs and foundry bargaining power are additional variables that could affect future margins. Whether the recent earnings improvement is structural or a temporary effect of the memory price cycle is something that can only be assessed by tracking results over the coming quarters alongside legacy memory price trends. This report is for informational purposes only and does not include a buy or sell opinion on any specific security."
+   "ko": "피델릭스는 2022년 이후 매출과 이익이 크게 줄어드는 하락기를 거친 뒤, 2025년 4분기부터 분기 기준 흑자로 전환해 2026년 1분기와 2분기까지 영업이익과 지배주주 순이익이 연속 증가하는 회복 국면에 들어섰다. 이러한 개선은 대형 IDM들의 HBM·서버 D램 집중에 따른 레거시 메모리 공급 부족과 가격 상승이라는 산업 환경 변화와 맞물려 있으며, 신한투자증권도 이 흐름이 수혜 요인이 될 수 있다고 평가했다. 2026년 9월에는 미국 얼라이언스 메모리와의 공급계약 체결로 해외 채널 다변화 움직임도 확인됐다. 다만 2025년 연간 기준으로는 여전히 영업손실과 순손실, 영업활동 현금흐름 순유출을 기록하고 있어 분기 호조가 연간 전체의 재무구조 개선으로 이어졌는지는 아직 확정되지 않았다. 최대주주가 중국계 동심반도체이며 동방항신그룹과 SMIC 협력 관계가 거론되는 지분 구조는 지정학적 환경 변화에 따라 수혜와 리스크 양쪽으로 작용할 수 있는 변수다. 주가 변동성도 커서 2026년 5월에는 투자주의종목 지정이 예고된 이력이 있다. 다음 분기보고서와 연간 사업보고서를 통한 수치 확정이 이 회복 흐름의 지속성을 가늠하는 핵심 변수가 될 것으로 보인다.",
+   "en": "Fidelix went through a downturn with sharply lower revenue and profit after 2022, before turning to a quarterly operating profit starting in the fourth quarter of 2025 and entering a recovery phase with consecutive increases in operating profit and net profit attributable to owners through the first and second quarters of 2026. This improvement coincides with an industry-wide shift as large IDMs concentrate on HBM and server DRAM, tightening legacy memory supply and pushing up prices, a dynamic Shinhan Investment Corp also assessed as a potential benefit for the company. In September 2026, a supply contract with US-based Alliance Memory confirmed a move toward diversifying overseas channels. However, on a full-year 2025 basis the company still recorded an operating loss, a net loss, and negative operating cash flow, so it remains unconfirmed whether the quarterly improvement has translated into a broader annual financial recovery. The ownership structure, with China-linked Dosilicon as the largest shareholder and reported cooperation with the Orient Evertrust Capital Group and SMIC, is a variable that could cut either way depending on shifts in the geopolitical environment. Share price volatility has also been significant, including an investment-caution designation notice in May 2026. Confirmation of figures through the next quarterly filing and the annual report will be a key variable in gauging the durability of this recovery trend."
   }
  },
  "sources": [
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1704236865551.pdf",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A032580",
+  "https://www.k5.co.kr/stock/032580",
+  "https://m.thinkpool.com/compDiscuss/cont/1026004",
+  "https://stockcatcher.co.kr/%ED%94%BC%EB%8D%B8%EB%A6%AD%EC%8A%A4-%EC%A3%BC%EA%B0%80-%EA%B0%80%EC%B9%98-%ED%85%8C%EB%A7%88%EC%A3%BC-%EC%A0%95%EB%A6%AC-%ED%88%AC%EC%9E%90-%EC%A0%84%EB%A7%9D-%EB%B6%84%EC%84%9D/",
+  "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/fecd9d6534dd11ee13de88cd6ff968bb.pdf",
+  "https://file.alphasquare.co.kr/media/pdfs/company-ir/20190107%ED%94%BC%EB%8D%B8%EB%A6%AD%EC%8A%A4,%20%ED%9A%8C%EC%82%AC%ED%98%84%ED%99%A9%20%EC%86%8C%EA%B0%9C%20%EB%B0%8F%20%EC%A0%84%EB%A7%9D%20%EC%84%A4%EB%AA%85(%EA%B5%AD%EB%82%B4).pdf",
+  "https://m.irgo.co.kr/IR-ROOM/032580/%ED%94%BC%EB%8D%B8%EB%A6%AD%EC%8A%A4-IR-ROOM",
+  "https://www.investing.com/equities/fidelix-co-ltd",
   "https://www.butler.works/ko/companies/00189538",
-  "https://www.indexergo.com/series/?frq=D&detailId=23106",
-  "https://www.chickstockfi.com/stocks/032580",
-  "https://judal.co.kr/?shareToken=Xd20lZ2OlCnQPvj8&view=stockAI",
-  "https://kr.investing.com/indices/phlx-semiconductor-news",
-  "https://alphasquare.co.kr/home/stock-summary?code=SOX",
-  "https://kita.net/researchTrade/report/tradeBrief/downloadTradeBriefFile.do;JSESSIONID_KITA=6258EC877AA45CE1F56C5709D544D6A2.Hyper?no=960BC4669ECB61EC1C90F592AD863E03&fileSeq=B0721B9F23054DDC7FE56C2811A12715",
-  "https://keyzard.cc/views/nb/Myo8NCZyPD4rZWVtbWtrb21vam5mamw",
-  "https://www.topstarnews.net/news/articleView.html?idxno=16143304",
-  "https://www.datatooza.com/article/20260910142741327452ef38256e_80",
-  "https://www.cbci.co.kr/news/articleView.html?idxno=591009",
-  "https://www.cbci.co.kr/news/articleView.html?idxno=605607",
-  "https://m.news.nate.com/view/20260803n26181",
-  "https://www.cbci.co.kr/news/articleView.html?idxno=610663",
-  "https://www.chickstockfi.com/disclosures/20260929900153",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03896646645551584",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04227926645517144",
-  "https://www.asiae.co.kr/article/2025091715070987149"
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cn=&cmp_cd=032580",
+  "https://www.investing.com/equities/fidelix-co-ltd-financial-summary",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=0UmwrAvwQYr9becI",
+  "https://www.navercorp.com/api/article/download/a769655e-43a9-4be8-8e78-d091981b1803",
+  "https://judal.co.kr/?shareToken=ZXg6M8APjpTvRAPB&view=stockAI",
+  "https://judal.co.kr/?shareToken=TvbCtBnqT4ubxl2Q&view=stockAI",
+  "https://www.thedailymoney.com/news/articleView.html?idxno=1139720",
+  "https://m.thinkpool.com/compDiscuss/cont/1026020"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -233,9 +223,9 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-10-01",
- "reportTs": "2026-10-01 05:30",
- "dataDate": "20260930",
+ "reportDate": "2026-10-20",
+ "reportTs": "2026-10-20 01:01",
+ "dataDate": "20261019",
  "quant": {
   "asOf": "2026-08-23",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +328,14 @@
    }
   ],
   "valuation": {
-   "price": 7890,
-   "mcap": 0.2624,
+   "price": 5950,
+   "mcap": 0.1981,
    "shares": 33132064,
    "total_shares": 33132064,
    "wavg_shares": 33296499,
-   "per": 16.895,
+   "per": 12.741,
    "eps": 467,
-   "pbr": 4.4551,
+   "pbr": 3.3597,
    "bps": 1771,
    "roe_ttm": 30.0,
    "ttm_window": "2025Q3~2026Q2",
