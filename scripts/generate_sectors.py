@@ -78,6 +78,7 @@ MAX_WAIT = int(os.getenv("BATCH_MAX_WAIT_SEC", "4800"))
 ROUNDS = max(1, int(os.getenv("SECTOR_ROUNDS", "3")))
 
 TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 3,
+          "blocked_domains": list(g.NO_USE_DOMAINS),   # 협의 없이 쓰지 않는 사이트(generate_reports 참고)
           "user_location": {"type": "approximate", "country": "KR", "timezone": "Asia/Seoul"}}]
 
 log = g.log
@@ -873,6 +874,10 @@ def defects(rep, message=None, info=None, sources=None):
             out.append(f"글자 결함 {h['rule']}({_FROM_REPORT.get(h['section'], h['section'])}) {h['match']!r}")
     if sources is not None and not sources:
         out.append("출처 0건(웹 검색 인용 없음)")
+    # 협의 없이 쓰지 않는 사이트(치킨스탁 등)가 검색 결과 · 인용에 들어왔으면 그 글은 쓰지 않는다(2026-10-19) — 다시 쓴다
+    leak = g.no_use_urls(message) if message is not None else []
+    if leak:
+        out.append(f"쓰지 않기로 한 사이트가 검색 결과에 들어옴({leak[0]})")
     return out
 
 
@@ -954,7 +959,7 @@ def prepare(rep):
 
 
 # 검토로 고칠 수 없는 결함 — 글이 잘렸거나 비었거나 출처가 없다. 이런 글은 다시 쓴다(다음 회차).
-_REWRITE = ("max_tokens", "리스크 3개 미만", " 빔", "문장 안 끝남", "출처 0건")
+_REWRITE = ("max_tokens", "리스크 3개 미만", " 빔", "문장 안 끝남", "출처 0건", "쓰지 않기로 한 사이트")
 # 검토를 켜고 끈다. 끄면 2026-10-08 판처럼 기계 검사만 하고 저장한다(검토 비용이 들지 않는다).
 # 기본은 끔(2026-10-09) — 시험(review_replay)에서 검토 모델이 출처 있는 수치를 '재료에 없다'며 지우고, 영문명을 대소문자 ·
 # 옛 이름으로 바꾸는 틀린 고침을 냈다. 고친 뒤 시험을 통과하면 SECTOR_REVIEW=1 로 켠다.

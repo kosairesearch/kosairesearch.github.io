@@ -274,6 +274,16 @@ for ko in ["클라우드 전환이 빠르게 진행되고 있습니다.", "핵�
 for ko in ["매출이 늘었다.", "주가 상승으로 연결되기 어려운 구조다.", "확정된 것은 아니다.", "2025년 영업이익 149억원으로 흑자 전환",
            "'시너지 효과'를 기대함", "본 자료는 투자 권유가 아니다."]:
     eq(ko, "style" in rules_of(ko), False)
+print("\n── 협의 없이 쓰지 않는 사이트(no_use): 치킨스탁 이름 · 주소 (2026-10-19) ──")
+for ko, en in [("치킨스탁에 따르면 2분기 영업이익은 늘었다.", "ok"), ("치킨 스탁 집계 기준이다.", "ok"),
+               ("알프소프트 자료로 보면 늘었다.", "ok"), ("정상 문장이다.", "According to ChickStock, margins rose."),
+               ("정상 문장이다.", "Data from chickstockfi.com show a rise.")]:
+    eq(f"잡는다 — {ko[:14]} / {en[:22]}", "no_use" in rules_of(ko, en), True)
+for ko, en in [("치킨스톡 소스 매출이 늘었다.", "Sales of chicken stock cubes rose."), ("Chick-fil-A 매장이 늘었다.", "ok")]:
+    eq(f"건드리지 않는다 — {ko[:14]}", "no_use" in rules_of(ko, en), False)
+eq("위험 등급(저장 문턱)", {h["level"] for h in C.check({"lead": {"ko": "치킨스탁에 따르면", "en": "ok"}}) if h["rule"] == "no_use"}, {"위험"})
+eq("교정 지시에 규칙 설명이 있다", "no_use:" in C._RULE_TEXT and "no_use" in C._WHY_EXTRA, True)
+
 print("\n── 검사 범위: 핵심 포인트 {ko, en} · 제목 · 옛 형식 칸 · 문자열 종합 의견 ──")
 eq("핵심 포인트의 가치 단정", [h["rule"] for h in C.check({"keypoints": [{"ko": "장부가치 대비 현저히 저평가된 상태", "en": "x"}]})], ["valuejudge"])
 eq("핵심 포인트 영문의 한글", [h["rule"] for h in C.check({"keypoints": [{"ko": "정상", "en": "Naver's '가 Sejong' data center"}]})], ["hangul_en"])

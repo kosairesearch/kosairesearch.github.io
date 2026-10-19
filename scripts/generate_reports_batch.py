@@ -67,7 +67,7 @@ MAX_WAIT = int(os.getenv("BATCH_MAX_WAIT_SEC", "4800"))  # 80분
 REVIEW = os.getenv("NEW_LISTING_REVIEW", "0") == "1"
 
 TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 5,
-          "blocked_domains": ["namu.wiki", "librewiki.net", "dcinside.com", "fmkorea.com"],
+          "blocked_domains": g.BLOCKED_DOMAINS,
           "user_location": {"type": "approximate", "country": "KR", "timezone": "Asia/Seoul"}}]
 
 log = g.log
@@ -258,6 +258,13 @@ def collect(cl, as_of):
         if rt != "succeeded":
             fail += 1
             log(f"  · ⚠️ {tk} 결과 {rt}")
+            continue
+        # 협의 없이 쓰지 않는 사이트(치킨스탁 등)가 검색 결과 · 인용에 들어왔으면 그 글은 저장하지 않는다(2026-10-19).
+        leak = g.no_use_urls(result.result.message)
+        if leak:
+            fail += 1
+            bump_fail(fails, tk, "쓰지 않기로 한 사이트가 검색 결과에 들어옴", as_of)
+            log(f"  · 🚫 {tk} 쓰지 않기로 한 사이트가 검색 결과에 들어왔다({leak[0]} 등 {len(leak)}건) — 저장하지 않음")
             continue
         try:
             text = g.extract_text(result.result.message)

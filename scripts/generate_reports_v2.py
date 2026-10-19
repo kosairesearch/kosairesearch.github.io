@@ -149,7 +149,7 @@ def output_config(model):
     return {"output_config": {"effort": e}} if e else {}
 
 TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 6,
-          "blocked_domains": ["namu.wiki", "librewiki.net", "dcinside.com", "fmkorea.com"],
+          "blocked_domains": g.BLOCKED_DOMAINS,
           "user_location": {"type": "approximate", "country": "KR", "timezone": "Asia/Seoul"}}]
 
 log = g.log
@@ -235,7 +235,7 @@ def collect_sources_v2(message):
     for u in searched:
         if u not in out:
             out.append(u)
-    return [u for u in out if not _low_trust_src(u)]
+    return [u for u in out if not _low_trust_src(u) and not g._no_use_src(u)]
 
 
 # ── 정량 1: DART 전체 재무제표 ────────────────────────────────────────
@@ -2853,6 +2853,13 @@ def collect(cl, as_of, state):
                 log(f"  · ⚠️ {tk} 결과 errored ({n}번째 실패)")
             else:
                 log(f"  · ⚠️ {tk} 결과 {result.result.type}")
+            continue
+        # 협의 없이 쓰지 않는 사이트(치킨스탁 등)가 검색 결과 · 인용에 들어왔으면 그 글은 저장하지 않는다(2026-10-19).
+        leak = g.no_use_urls(result.result.message)
+        if leak:
+            fail += 1
+            n = S.bump_fail(tk)
+            log(f"  · 🚫 {tk} 쓰지 않기로 한 사이트가 검색 결과에 들어왔다({leak[0]} 등 {len(leak)}건) — 저장하지 않음 ({n}번째 실패)")
             continue
         try:
             text = g.extract_text(result.result.message)

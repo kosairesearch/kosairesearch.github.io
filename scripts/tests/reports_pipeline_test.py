@@ -1432,6 +1432,64 @@ for p in S.BATCH_DIR.glob("*.json"):
 os.environ.pop("REPORT_TICKERS")
 M.collect_quant = REAL_COLLECT_QUANT
 
+print("⑰ 협의 없이 쓰지 않는 사이트 — 웹 검색에서 빼고 출처 목록에도 싣지 않는다")
+import inspect                         # noqa: E402
+import generate_reports as GR          # noqa: E402
+import generate_reports_batch as GRB   # noqa: E402
+import generate_sectors as GS          # noqa: E402
+_no = "chickstockfi.com"
+ok(_no in GR.NO_USE_DOMAINS and _no in GR.BLOCKED_DOMAINS, "목록에 치킨스탁이 있다", str(GR.BLOCKED_DOMAINS))
+ok(all(_no in t["blocked_domains"] for t in (M.TOOLS[0], GRB.TOOLS[0], GS.TOOLS[0])),
+   "리포트 v2 · 신규 상장 배치 · 업종 분석의 웹 검색이 막는다")
+ok("BLOCKED_DOMAINS" in inspect.getsource(GR.generate_one), "옛 생성기의 웹 검색도 같은 목록을 쓴다")
+ok(all(d in M.TOOLS[0]["blocked_domains"] for d in ("namu.wiki", "dcinside.com")), "원래 막던 위키 · 커뮤니티는 그대로")
+_N = types.SimpleNamespace
+_msg = _N(content=[
+    _N(type="text", citations=[_N(url="https://www.chickstockfi.com/stocks/005930/earnings"),
+                               _N(url="https://www.hankyung.com/article/1")]),
+    _N(type="web_search_tool_result", citations=None,
+       content=[_N(url="https://chickstockfi.com/stocks/005930"), _N(url="https://m.chickstockfi.com/x"),
+                _N(url="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=1"),
+                _N(url="https://notchickstockfi.com/a")]),
+])
+_got = M.collect_sources_v2(_msg)
+ok(_got == ["https://www.hankyung.com/article/1", "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=1",
+            "https://notchickstockfi.com/a"], "v2 출처 목록에서 빠진다(하위 주소까지 · 이름이 비슷한 다른 사이트는 남는다)",
+   str(_got))
+_got = GR.collect_sources(_msg)
+ok(_got == ["https://www.hankyung.com/article/1"], "옛 생성기 · 업종 분석의 출처 목록에서도 빠진다", str(_got))
+_got = GR.no_use_urls(_msg)
+ok(_got == ["https://www.chickstockfi.com/stocks/005930/earnings", "https://chickstockfi.com/stocks/005930",
+            "https://m.chickstockfi.com/x"], "검색 결과 · 인용에 들어온 그 사이트 주소를 모두 찾는다", str(_got))
+_err = _N(content=[_N(type="web_search_tool_result", citations=None, content=_N(error_code="unavailable"))])
+ok(GR.no_use_urls(_err) == [] and GR.no_use_urls(_N(content=[])) == [], "검색 실패(오류 객체) · 빈 글은 넘어간다")
+# 회수 — 차단이 듣지 않아 그 사이트가 검색 결과에 들어온 글은 저장하지 않고 실패로 센다
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+for p in S.OUT_DIR.glob("*.json"):
+    p.unlink()
+os.environ["REPORT_REPAIR"] = "0"
+mk("msgbatch_NU", ["005930", "000020"])
+_leak_msg = _N(content=[
+    _N(type="web_search_tool_result", citations=None, content=[_N(url="https://www.chickstockfi.com/stocks/000020/earnings")]),
+    _N(type="text", text=report_text("000020"), citations=None)], usage=None)
+cl = FakeClient()
+cl.messages.batches.store["msgbatch_NU"] = batch_obj("msgbatch_NU", "ended", [
+    result("005930"), _N(custom_id="000020", result=_N(type="succeeded", message=_leak_msg))])
+_f0 = S.fail_count("000020")
+M.pickup(cl, "2026-09-05 05:00")
+ok((S.OUT_DIR / "005930.json").exists() and not (S.OUT_DIR / "000020.json").exists()
+   and S.fail_count("000020") == _f0 + 1, "회수 — 그 사이트가 검색 결과에 들어온 글은 저장하지 않고 실패로 센다",
+   f"{sorted(p.stem for p in S.OUT_DIR.glob('*.json'))} fail {_f0}→{S.fail_count('000020')}")
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+for p in S.OUT_DIR.glob("*.json"):
+    p.unlink()
+# 업종 분석 — 같은 경우를 결함으로 보고 다시 쓴다
+_why = GS.defects({"risks": []}, _leak_msg)
+ok(any("쓰지 않기로 한 사이트" in w for w in _why) and GS._needs_rewrite([w for w in _why if "쓰지 않기로" in w]),
+   "업종 분석은 결함으로 보고 다음 회차가 다시 쓴다", str(_why[-1:]))
+
 print()
 print(f"통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)
