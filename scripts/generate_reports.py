@@ -469,6 +469,23 @@ def _no_use_src(url):
     return any(host == d or host.endswith("." + d) for d in NO_USE_DOMAINS)
 
 
+def no_use_urls(message):
+    """검색 결과 · 인용에 들어온 '협의 없이 쓰지 않는 사이트' 주소. 웹 검색 차단(blocked_domains)이 들으면 늘 빈 목록이다.
+    비어 있지 않으면 차단이 듣지 않은 것이고 그 글은 그 사이트 내용을 읽고 썼을 수 있다 — 생성기는 그 글을 저장하지
+    않는다(2026-10-19 사장 '치킨스탁 데이터가 포함되지 않도록 철저히 검증')."""
+    hits = []
+    for block in getattr(message, "content", None) or []:
+        urls = [getattr(c, "url", None) for c in (getattr(block, "citations", None) or [])]
+        if getattr(block, "type", None) == "web_search_tool_result":
+            items = getattr(block, "content", None)
+            if isinstance(items, list):          # 검색이 실패하면 목록이 아니라 오류 객체가 온다
+                urls += [getattr(it, "url", None) for it in items]
+        for u in urls:
+            if u and _no_use_src(u) and u not in hits:
+                hits.append(u)
+    return hits
+
+
 def collect_sources(message):
     """웹검색 인용(citations)에서 실제 출처 URL을 수집(중복 제거, 저신뢰 · 사용 안 함 도메인 제외)."""
     urls = []
@@ -536,6 +553,10 @@ def generate_one(client, stock, as_of, dart_block=""):
     except Exception:
         pass
 
+    # 협의 없이 쓰지 않는 사이트(치킨스탁 등)가 검색 결과 · 인용에 들어왔으면 그 글은 쓰지 않는다(2026-10-19).
+    leak = no_use_urls(message)
+    if leak:
+        raise ValueError(f"쓰지 않기로 한 사이트가 검색 결과에 들어왔다({leak[0]} 등 {len(leak)}건)")
     text = extract_text(message)
     try:
         report = parse_report(text)

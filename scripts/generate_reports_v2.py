@@ -2854,6 +2854,13 @@ def collect(cl, as_of, state):
             else:
                 log(f"  · ⚠️ {tk} 결과 {result.result.type}")
             continue
+        # 협의 없이 쓰지 않는 사이트(치킨스탁 등)가 검색 결과 · 인용에 들어왔으면 그 글은 저장하지 않는다(2026-10-19).
+        leak = g.no_use_urls(result.result.message)
+        if leak:
+            fail += 1
+            n = S.bump_fail(tk)
+            log(f"  · 🚫 {tk} 쓰지 않기로 한 사이트가 검색 결과에 들어왔다({leak[0]} 등 {len(leak)}건) — 저장하지 않음 ({n}번째 실패)")
+            continue
         try:
             text = g.extract_text(result.result.message)
             rep = g.parse_report(text)
