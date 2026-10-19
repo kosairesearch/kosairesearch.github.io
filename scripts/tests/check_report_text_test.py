@@ -432,6 +432,19 @@ for f in files:
                for m in _N.no_comma_hits(v.get("ko") or "")]
 eq("천 단위 쉼표가 빠진 수 0", nc[:5], [])
 
+# 협의 없이 쓰지 않는 사이트(치킨스탁) — 화면에 나오는 리포트 · 업종 분석 · 브리핑 · 종목 페이지 · 시안의 출처와 본문에 0건이어야 한다.
+# 2026-10-19 운영사(알프소프트) 문의 뒤 사장 지시로 그 사이트를 출처로 단 리포트 153편을 다시 썼다. 생성기는 검색에서 막고 저장 전에
+# 다시 보지만(generate_reports.no_use_urls · 규칙 no_use), 손으로 고친 글이나 옛 파일로 되살아나는 길은 여기서 막는다.
+print("\n── 전수: 협의 없이 쓰지 않는 사이트(치킨스탁)가 어디에도 없다 ──")
+_nu = [f.parent.name + "/" + f.stem for f in files if C.NO_USE_NAME.search(f.read_text(encoding="utf-8"))]
+if C.NO_USE_NAME.search(sec_js):
+    _nu.append("data/sectors.js")
+_nu += ["data/briefs/" + f.name for f in sorted((ROOT / "data" / "briefs").glob("*.json"))
+        if C.NO_USE_NAME.search(f.read_text(encoding="utf-8"))]
+for d in ("stock", "en/stock", "preview/stock", "staging"):
+    _nu += [d + "/" + f.name for f in sorted((ROOT / d).glob("*.html")) if b"chickstock" in f.read_bytes().lower()]
+eq(f"리포트 {n:,}개 · 업종 분석 · 브리핑 · 종목 페이지 · 시안 — 치킨스탁 주소 · 이름 0건", _nu[:5], [])
+
 # 모닝브리핑 — 화면은 [이름](여섯 자리) 만 링크로 바꾸므로 나머지 대괄호는 괄호째 찍힌다(9/2 '[기재정정]' ·
 # 10/2 '[마이크론]'). 생성기의 strip_brackets 가 저장 전에 벗긴다. 이 전수는 아침 작업의 회귀 시험
 # (test_brief_gen)에 두지 않는다 — 지난 호 하나 때문에 그날 브리핑이 막히면 안 된다.
