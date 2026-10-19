@@ -78,6 +78,7 @@ MAX_WAIT = int(os.getenv("BATCH_MAX_WAIT_SEC", "4800"))
 ROUNDS = max(1, int(os.getenv("SECTOR_ROUNDS", "3")))
 
 TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 3,
+          "blocked_domains": list(g.NO_USE_DOMAINS),   # 협의 없이 쓰지 않는 사이트(generate_reports 참고)
           "user_location": {"type": "approximate", "country": "KR", "timezone": "Asia/Seoul"}}]
 
 log = g.log

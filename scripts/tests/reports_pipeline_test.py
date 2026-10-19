@@ -1432,6 +1432,33 @@ for p in S.BATCH_DIR.glob("*.json"):
 os.environ.pop("REPORT_TICKERS")
 M.collect_quant = REAL_COLLECT_QUANT
 
+print("⑰ 협의 없이 쓰지 않는 사이트 — 웹 검색에서 빼고 출처 목록에도 싣지 않는다")
+import inspect                         # noqa: E402
+import generate_reports as GR          # noqa: E402
+import generate_reports_batch as GRB   # noqa: E402
+import generate_sectors as GS          # noqa: E402
+_no = "chickstockfi.com"
+ok(_no in GR.NO_USE_DOMAINS and _no in GR.BLOCKED_DOMAINS, "목록에 치킨스탁이 있다", str(GR.BLOCKED_DOMAINS))
+ok(all(_no in t["blocked_domains"] for t in (M.TOOLS[0], GRB.TOOLS[0], GS.TOOLS[0])),
+   "리포트 v2 · 신규 상장 배치 · 업종 분석의 웹 검색이 막는다")
+ok("BLOCKED_DOMAINS" in inspect.getsource(GR.generate_one), "옛 생성기의 웹 검색도 같은 목록을 쓴다")
+ok(all(d in M.TOOLS[0]["blocked_domains"] for d in ("namu.wiki", "dcinside.com")), "원래 막던 위키 · 커뮤니티는 그대로")
+_N = types.SimpleNamespace
+_msg = _N(content=[
+    _N(type="text", citations=[_N(url="https://www.chickstockfi.com/stocks/005930/earnings"),
+                               _N(url="https://www.hankyung.com/article/1")]),
+    _N(type="web_search_tool_result", citations=None,
+       content=[_N(url="https://chickstockfi.com/stocks/005930"), _N(url="https://m.chickstockfi.com/x"),
+                _N(url="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=1"),
+                _N(url="https://notchickstockfi.com/a")]),
+])
+_got = M.collect_sources_v2(_msg)
+ok(_got == ["https://www.hankyung.com/article/1", "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=1",
+            "https://notchickstockfi.com/a"], "v2 출처 목록에서 빠진다(하위 주소까지 · 이름이 비슷한 다른 사이트는 남는다)",
+   str(_got))
+_got = GR.collect_sources(_msg)
+ok(_got == ["https://www.hankyung.com/article/1"], "옛 생성기 · 업종 분석의 출처 목록에서도 빠진다", str(_got))
+
 print()
 print(f"통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)

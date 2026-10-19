@@ -149,7 +149,7 @@ def output_config(model):
     return {"output_config": {"effort": e}} if e else {}
 
 TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 6,
-          "blocked_domains": ["namu.wiki", "librewiki.net", "dcinside.com", "fmkorea.com"],
+          "blocked_domains": g.BLOCKED_DOMAINS,
           "user_location": {"type": "approximate", "country": "KR", "timezone": "Asia/Seoul"}}]
 
 log = g.log
@@ -235,7 +235,7 @@ def collect_sources_v2(message):
     for u in searched:
         if u not in out:
             out.append(u)
-    return [u for u in out if not _low_trust_src(u)]
+    return [u for u in out if not _low_trust_src(u) and not g._no_use_src(u)]
 
 
 # ── 정량 1: DART 전체 재무제표 ────────────────────────────────────────

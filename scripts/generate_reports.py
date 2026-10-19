@@ -456,14 +456,27 @@ def _low_trust_src(url):
     return any(b in host for b in LOW_TRUST_SRC)
 
 
+# 협의 없이 쓰지 않는 사이트 — 웹 검색에서 빼고(blocked_domains) 출처 목록에도 싣지 않는다.
+# chickstockfi.com(치킨스탁 · 알프소프트): 2026-10-19 운영사가 '데이터의 외부 재사용 · 상업적 활용은
+# 별도 협의가 필요하다'고 알려 왔다. 그 전에는 검색 결과로 리포트 152편의 출처 목록에 460건이 실렸다.
+NO_USE_DOMAINS = ("chickstockfi.com",)
+# 리포트 생성기(v2 · 신규 상장 배치 · 옛 생성기)의 웹 검색 차단 목록 — 위키 · 커뮤니티와 위 사이트
+BLOCKED_DOMAINS = ["namu.wiki", "librewiki.net", "dcinside.com", "fmkorea.com", *NO_USE_DOMAINS]
+
+
+def _no_use_src(url):
+    host = _re_src.sub(r"^https?://", "", url or "").split("/")[0].lower()
+    return any(host == d or host.endswith("." + d) for d in NO_USE_DOMAINS)
+
+
 def collect_sources(message):
-    """웹검색 인용(citations)에서 실제 출처 URL을 수집(중복 제거, 저신뢰 도메인 제외)."""
+    """웹검색 인용(citations)에서 실제 출처 URL을 수집(중복 제거, 저신뢰 · 사용 안 함 도메인 제외)."""
     urls = []
     for block in message.content:
         cits = getattr(block, "citations", None) or []
         for c in cits:
             u = getattr(c, "url", None)
-            if u and u not in urls and not _low_trust_src(u):
+            if u and u not in urls and not _low_trust_src(u) and not _no_use_src(u):
                 urls.append(u)
     return urls
 
@@ -503,7 +516,7 @@ def generate_one(client, stock, as_of, dart_block=""):
         system=SYSTEM,
         thinking={"type": "adaptive"},
         tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 5,
-                "blocked_domains": ["namu.wiki", "librewiki.net", "dcinside.com", "fmkorea.com"],
+                "blocked_domains": BLOCKED_DOMAINS,
                 "user_location": {"type": "approximate", "country": "KR",
                                   "timezone": "Asia/Seoul"}}],
         messages=[{"role": "user", "content": prompt}],
