@@ -1,16 +1,7 @@
-=== 리포트 생성 시작 Fri Oct  2 17:38:18 UTC 2026 ===
-## 🤖 AI 리포트 생성 — 지정 1개 종목
-- 모델: `claude-sonnet-4-6` · 1회 최대 1개
-- 기존 리포트 2683개 로드 · 최근(6일내) 5개 유지
-
-### [1/1] 와이즈플래닛컴퍼니 (0010S0)
-- DART 재무: 없음(웹검색만)
-- ✅ 완료 (579s · 검색 4회)
-
-✅ 현재 리포트 2684개 보유 · 이번 실행 웹검색 4회 · → data/reports/ + reports-index.js
-## 🤖 Batch 제출 — 대상 1개 / 상위 100개 (최근 0개 건너뜀) · 모델 claude-sonnet-4-6
-  · 준비 179880 멜콘 (DART X)
-- ✅ 배치 제출 완료: msgbatch_01YW7u68ZuotJFhW6ev15KgP (1건) → data/batch_state.json
+=== 배치(auto) 시작 Mon Oct 19 14:50:55 UTC 2026 ===
+## 🤖 Batch 제출 — 대상 1개 / 상위 1개 (최근 1개 건너뜀) · 모델 claude-sonnet-4-6
+  · 준비 0220W0 한화머시너리앤서비스홀딩스 (DART X)
+- ✅ 배치 제출 완료: msgbatch_01RrkrWYBf7MRMSswYA635QJ (1건) → data/batch_state.json
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 in_progress · 처리 1/성공 0/오류 0
@@ -21,7 +12,7 @@
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 ended · 처리 0/성공 1/오류 0
-- 🧹 유니버스 제외 종목 리포트 정리: 4건 (341170, 005110, 005030, 196490)
+- 🧹 유니버스 제외 종목 리포트 정리: 1건 (028080)
 
-✅ 회수 완료 · 성공 1/실패 0 · 총 보유 2681개 → data/reports/ + reports-index.js
-💵 claude-sonnet-4-6 1회(배치) · 입력 4,249(캐시쓰기 43,233·읽기 29,446) · 출력 36,155 · 검색 4 → 약 $0.40
+✅ 회수 완료 · 성공 1/실패 0 · 총 보유 2680개 → data/reports/ + reports-index.js
+💵 claude-sonnet-4-6 1회(배치) · 입력 4,349(캐시쓰기 43,587·읽기 28,030) · 출력 32,400 · 검색 4 → 약 $0.38
