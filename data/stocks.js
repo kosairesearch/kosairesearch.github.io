@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-10-21 03:54",
+  "lastUpdated": "2026-10-21 04:18",
   "dataDate": "20261020",
   "stocks": [
     {
@@ -6727,7 +6727,7 @@ window.KOS_LIVE_DATA = {
       "name": "엘리스",
       "name_en": "",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "IT·소프트웨어",
       "price": 61500,
       "change": -32.04,
       "volume": 5907799,
@@ -6735,7 +6735,8 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.6844,
       "shares": 11128864,
       "categories": [
-        "기타"
+        "IT·소프트웨어",
+        "인공지능(AI)"
       ],
       "rank": 374
     },
