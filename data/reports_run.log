@@ -16,3 +16,19 @@
 
 ✅ 회수 완료 · 성공 1/실패 0 · 총 보유 2680개 → data/reports/ + reports-index.js
 💵 claude-sonnet-4-6 1회(배치) · 입력 4,349(캐시쓰기 43,587·읽기 28,030) · 출력 32,400 · 검색 4 → 약 $0.38
+## 🤖 Batch 제출 — 대상 1개 / 상위 100개 (최근 2개 건너뜀) · 모델 claude-sonnet-4-6
+  · 준비 0158S0 엘리스 (DART X)
+- ✅ 배치 제출 완료: msgbatch_01GPksfjpejcknPsPZqo3tFD (1건) → data/batch_state.json
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 1/오류 0
+
+✅ 회수 완료 · 성공 1/실패 0 · 총 보유 2681개 → data/reports/ + reports-index.js
+💵 claude-sonnet-4-6 1회(배치) · 입력 4,295(캐시쓰기 48,677·읽기 28,342) · 출력 33,867 · 검색 4 → 약 $0.40
