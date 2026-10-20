@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-21",
+  "tradeDate": "20261020",
+  "marketOpen": true,
+  "title": {
+    "ko": "뉴욕 메모리 반등을 받지 못한 코스피 -3.73%, SK하이닉스엔 자사주 매입 종료·중복상장 부담 — 금통위는 내일",
+    "en": "KOSPI falls 3.73% despite the U.S. memory rebound as SK Hynix faces a buyback end and listing worries; BOK decides tomorrow"
+  },
+  "lead": {
+    "ko": "어제 이 브리핑은 뉴욕 반도체의 반등을 메모리가 이끌었다고 적었다. 그 반등은 국내로 넘어오지 않았다. 코스피는 3.73% 빠졌고, 거래대금 1위 [SK하이닉스](000660)가 4.23% 내렸다. 이 종목에는 자사주 매입 종료를 앞둔 수급 공백 우려와 솔리다임 중복상장 경고가 함께 나왔다. 간밤 필라델피아 반도체 지수는 0.29% 내렸고 마이크론도 0.98% 밀려, 오늘 아침 메모리를 받쳐 줄 재료는 밖에서 오지 않았다. 내일은 한국은행 금통위다.",
+    "en": "Yesterday this briefing noted that memory had led the rebound in U.S. chips. That rebound did not carry over to Seoul. The KOSPI fell 3.73%, and [SK Hynix](000660), the most-traded stock, dropped 4.23%. The stock faced two worries at once: a gap in demand as its share buyback nears its end, and a regulator's warning over a duplicate listing of Solidigm. Overnight the Philadelphia Semiconductor Index slipped 0.29% and Micron lost 0.98%, so no outside support for memory arrived this morning. The Bank of Korea's rate meeting is tomorrow."
+  },
+  "summary": {
+    "ko": "코스피가 3.73% 내린 날 SK하이닉스에는 자사주 매입 종료를 앞둔 수급 공백 우려와 솔리다임 중복상장 경고가 겹쳤고, 간밤 뉴욕 반도체도 0.29% 내려 메모리를 받치지 못했다. 매도는 반도체 밖으로도 번져 방산이 9.65% 빠졌고 내린 종목이 2,059개였다. 가장 많이 판 쪽은 기관이었고 개인과 기타법인이 받았으며, 금융·담배·통신 같은 방어주가 시장보다 덜 빠졌다. WTI가 5.29% 내리고 미 10년물이 5.12%로 낮아진 가운데 내일 금통위가 열리고, 시장은 매파적 동결에 무게를 두고 있다.",
+    "en": "On a day the KOSPI fell 3.73%, SK Hynix faced worries over a demand gap as its buyback nears its end, along with a warning over a duplicate listing of Solidigm. U.S. chips slipped 0.29% overnight and gave memory no support. Selling spread beyond chips: defense lost 9.65%, and 2,059 stocks declined. Institutions were the largest sellers, while retail investors and other corporations bought. Defensive names in finance, tobacco and telecom fell less than the market. WTI dropped 5.29% and the U.S. 10-year yield eased to 5.12%. The Bank of Korea meets tomorrow, and the market leans toward a hawkish hold."
+  },
+  "sections": [
+    {
+      "id": "chips",
+      "heading": {
+        "ko": "SK하이닉스 4조 2천억원 거래, 자사주 매입 종료·중복상장 겹쳐",
+        "en": "SK Hynix Trades 4.2 Trillion Won as Buyback End, Listing Concerns Collide"
+      },
+      "paragraphs": [
+        {
+          "ko": "어제 지수를 가장 크게 누른 자리는 메모리였다. [SK하이닉스](000660)에 하루 4조 2,312억원이 몰리며 4.23% 빠졌고, [삼성전자](005930)도 2.98% 내렸다. SK하이닉스에는 하루 사이 악재 두 가지가 함께 나왔다. 하나는 자사주 매입 종료를 하루 앞두고 삼성전자에 이어 수급 공백이 생길 수 있다는 우려다. 다른 하나는 금융당국이 솔리다임 중복상장에 경고를 낸 일이다. 옆 업종인 지주회사 [SK스퀘어](402340)도 5.00% 밀렸다.",
+          "en": "Memory weighed most on the index yesterday. [SK Hynix](000660) drew 4.2312 trillion won in turnover and fell 4.23%, while [Samsung Electronics](005930) lost 2.98%. Two pieces of bad news hit SK Hynix on the same day. One was the worry that, with its buyback a day from ending, it could face the same demand gap seen at Samsung Electronics. The other was a warning from financial regulators over a duplicate listing of Solidigm. [SK Square](402340), a holding company in a neighboring sector, slid 5.00%."
+        },
+        {
+          "ko": "오늘 아침 바깥 재료도 도움이 되지 않는다. 간밤 나스닥은 보합에 머물렀고 필라델피아 반도체 지수는 0.29% 내렸다. 마이크론은 0.98% 밀렸다. 오늘 메모리 대형주의 수급이 매입 종료 뒤 어떻게 바뀌는지가 첫 번째로 볼 대목이다.",
+          "en": "Overnight cues offer little help. The Nasdaq ended flat, the Philadelphia Semiconductor Index fell 0.29%, and Micron slipped 0.98%. The first thing to watch today is how trading in the big memory names changes once the buyback ends."
+        }
+      ]
+    },
+    {
+      "id": "defense",
+      "heading": {
+        "ko": "방산 -9.65%, 한화시스템은 한화오션 주가에 묶인 부담이 다시 불거졌다",
+        "en": "Defense sinks 9.65% as Hanwha Systems' exposure to Hanwha Ocean's share price resurfaces"
+      },
+      "paragraphs": [
+        {
+          "ko": "업종별로 보면 가장 많이 빠진 곳은 반도체가 아니라 방산이었다. [한화시스템](272210)이 13.90%, [한화에어로스페이스](012450)가 11.71% 내렸다. 한화시스템에는 한화오션 지분 매각 대금과 PRS(주가수익스와프) 부담이 결국 한화오션 주가에 달려 있다는 보도가 이어졌다. 정유·조선·화학·철강·금속도 모두 5% 넘게 빠졌다. 종목 중앙값은 -1.68%, 내린 종목은 2,059개로 오른 412개의 다섯 배에 가까웠다. 매도는 대형주만이 아니라 시장 전반에 걸쳐 있었다.",
+          "en": "By sector, the steepest fall came in defense, not chips. [Hanwha Systems](272210) dropped 13.90% and [Hanwha Aerospace](012450) 11.71%. Reports on Hanwha Systems kept pointing out that both the proceeds from its Hanwha Ocean stake sale and its price-return-swap burden ultimately depend on Hanwha Ocean's share price. Refining, shipbuilding, chemicals and steel all fell more than 5%. The median stock lost 1.68%, and 2,059 decliners outnumbered 412 gainers nearly five to one. The selling was not limited to large caps; it ran across the whole market."
+        }
+      ]
+    },
+    {
+      "id": "flows",
+      "heading": {
+        "ko": "가장 많이 판 쪽은 기관 9,901억원, 버틴 곳은 금융·담배·통신",
+        "en": "Institutions sell 990.1 billion won, while finance, tobacco and telecom hold up"
+      },
+      "paragraphs": [
+        {
+          "ko": "코스피에서 가장 많이 판 쪽은 기관(9,901억원)이었다. 외국인은 4,884억원을 팔았다. 이 물량은 개인(8,475억원)과 기타법인(6,310억원)이 받았다. 그 사이 [우리금융지주](316140)와 [KT&G](033780)는 0.47%씩 올랐다. 우리금융지주에는 주주환원율 상향 기대가, KT&G에는 경기 방어주라는 평가가 따라붙었다. 통신·보험도 시장보다 3%포인트 넘게 덜 빠졌다.",
+          "en": "Institutions were the biggest sellers on the KOSPI at 990.1 billion won, and foreigners sold 488.4 billion won. Retail investors (847.5 billion won) and other corporations (631.0 billion won) absorbed the selling. Meanwhile [Woori Financial Group](316140) and [KT&G](033780) each rose 0.47%. Woori was helped by hopes of a higher shareholder-return ratio, and KT&G by its standing as a defensive stock. Telecom and insurance also beat the market by more than 3 percentage points."
+        }
+      ]
+    },
+    {
+      "id": "rates",
+      "heading": {
+        "ko": "내일 금통위, 유가 5.29% 하락과 10년물 5.12% 속에서 '매파적 동결'에 무게",
+        "en": "Tomorrow's BOK meeting leans toward a hawkish hold as oil drops 5.29% and the 10-year sits at 5.12%"
+      },
+      "paragraphs": [
+        {
+          "ko": "10월 22일(목) 한국은행 금통위가 열린다. 두 차례 연속 인상 뒤 첫 회의다. 시장은 동결에 무게를 두지만, '매파적 동결'이 될지가 관전 포인트로 꼽힌다. 회의 앞에서 부담으로 거론되던 것은 유가였다. 10월 20일 기준 WTI는 98.18달러로 5.29% 내렸고, 미 10년물도 5.12%로 0.02%포인트 낮아졌다. 원/달러 기준값(10월 20일)은 1,326.24원으로 직전보다 0.54% 낮아졌다. 미국 일정은 다음 주로 이어진다. 28일(수) FOMC가 끝나고, 29일(목) GDP와 개인소비·PCE가 나온다.",
+          "en": "The Bank of Korea's Monetary Policy Committee meets on Thursday, October 22. It is the first meeting after two straight hikes. The market leans toward a hold, and the question is whether it will be a hawkish one. Oil had been cited as a burden ahead of the meeting. As of October 20, WTI fell 5.29% to $98.18, and the U.S. 10-year yield eased 0.02 percentage point to 5.12%. The won-dollar reference rate (October 20) stood at 1,326.24, 0.54% lower than the prior value. The U.S. calendar continues next week: the FOMC ends on the 28th (Wed), and GDP and personal spending/PCE data follow on the 29th (Thu)."
+        }
+      ]
+    },
+    {
+      "id": "coverage",
+      "heading": {
+        "ko": "거래 재개된 아이큐어, 기재정정 반기보고서 접수 — 다음 확인은 11월 중순",
+        "en": "iCure, back in trading, files a corrected half-year report; next check comes in mid-November"
+      },
+      "paragraphs": [
+        {
+          "ko": "[아이큐어](175250)가 어제 기재정정 반기보고서를 냈다. KOSAI는 어제(10월 20일) 쓴 리포트에서 이 종목의 다음 확인 지점으로 11월 중순 3분기 보고서를 꼽아 두었다. 화장품이 이끈 2분기 영업흑자가 이어지는지를 보는 자리다.",
+          "en": "[iCure](175250) filed a corrected half-year report yesterday. In a report written yesterday (October 20), KOSAI flagged the third-quarter report due in mid-November as the stock's next checkpoint. It will show whether the cosmetics-led second-quarter operating profit holds up."
+        }
+      ]
+    }
+  ],
+  "factsDigest": "[오늘] 20261021 · 국내 증시 개장 · 직전 거래일 20261020\n  [요일] 오늘 10월 21일(수) · 이번 주 10월 19일(월)~10월 25일(일) · 10월 26일(월)부터 다음 주. 날짜를 '이번 주'·'다음 주'로 옮길 때는 이 범위만 쓴다 — 범위 밖 날짜에 '이번 주 안에'를 붙이지 마라.\n\n[미국·해외 · 종가와 전일 대비]\n  S&P 500: 7,712.57 +0.28%  (기준일 2026-10-20)\n  나스닥: 26,424.82 -0.02%  (기준일 2026-10-20)\n  다우: 52,495.88 +1.02%  (기준일 2026-10-20)\n  필라델피아 반도체: 11,283.81 -0.29%  (기준일 2026-10-20)\n  미 10년물: 5.12% (전일 5.14% → -0.02%p · 상대 변화 -0.37%)  (기준일 2026-10-20)\n  WTI: 98.18달러 -5.29%  (기준일 2026-10-20)\n  달러인덱스: 101.71 -0.27%  (기준일 2026-10-20)\n  아시아(오늘 장은 아직 열리기 전 · 아래는 직전 마감값): 닛케이 64,916.70 -0.62%(2026-10-19) · 항셍 24,186.83 +0.52%(2026-10-16) · 상하이종합 3,730.92 +0.39%(2026-10-19)\n  미국 개별: 엔비디아 216.47달러 -0.29% · TSMC 425.08달러 +1.16% · 마이크론 896.07달러 -0.98% · 테슬라 373.71달러 +1.54%  (기준일 2026-10-20)\n  원자재: 금 4,142.50달러 -0.42% · 구리 6.62달러 +1.19% · 천연가스 2.99달러 -2.13%  (기준일 2026-10-20)\n  심리·기타: VIX 17.31 -6.13% · 비트코인 82,763.00달러 +1.11%  (기준일 2026-10-20)\n\n[직전 국내 장 · 20261020 (10월 20일)]\n  코스피: 5,552.74 -3.73%\n  코스닥: 781.97 -3.33%\n  코스피 투자자별 순매수: 개인 +8,475억원 · 외국인 -4,884억원 · 기관 -9,901억원 · 기타법인 +6,310억원\n  코스닥 투자자별 순매수: 개인 +2,778억원 · 외국인 -1,697억원 · 기관 -1,087억원 · 기타법인 +6억원\n  장폭: 시총가중 -3.64% · 중앙값 -1.68% · 상승 412 / 하락 2,059 / 보합 211 (총 2,682)\n  기준 등락률 -3.73% — 아래 rel 은 이 값 대비 초과 등락이다. 시장이 +2% 오른 날의 +0.2% 는 상승이 아니라 부진이다.\n  대형주 선전(시장 대비): 우리금융지주(316140·금융) +0.47% rel +4.20 · KT&G(033780·식음료) +0.47% rel +4.20 · KT(030200·통신) -0.20% rel +3.53 · DB손해보험(005830·보험) -0.32% rel +3.41 · 셀트리온(068270·바이오·제약) -0.40% rel +3.33 · 삼성화재(000810·보험) -0.82% rel +2.91\n  대형주 부진(시장 대비): 한화시스템(272210·항공·방산) -13.90% rel -10.17 · 한화에어로스페이스(012450·항공·방산) -11.71% rel -7.98 · 에코프로비엠(247540·2차전지) -9.15% rel -5.42 · SK이노베이션(096770·정유) -9.14% rel -5.41 · LG화학(051910·화학) -8.35% rel -4.62 · 고려아연(010130·철강·금속) -8.31% rel -4.58\n  절대 상승: 지투지바이오(456160·바이오·제약) +14.91% rel +18.64 · 코리아써키트(007810·전자·부품) +12.40% rel +16.13 · 비나텍(126340·2차전지) +11.83% rel +15.56 · 프로티나(468530·바이오·제약) +7.38% rel +11.11 · 에이블씨엔씨(078520·화장품) +5.90% rel +9.63 · 예스티(122640·반도체) +5.61% rel +9.34\n  절대 하락: 엘리스(0158S0·IT·소프트웨어) -32.04% rel -28.31 · 큐리옥스바이오시스템즈(445680·바이오·제약) -22.08% rel -18.35 · LS에코에너지(229640·지주) -14.59% rel -10.86 · 피노(033790·기계·장비) -13.98% rel -10.25 · 한화시스템(272210·항공·방산) -13.90% rel -10.17 · 현대로템(064350·항공·방산) -13.70% rel -9.97\n  거래대금 상위: SK하이닉스(000660·반도체) 42,312억원 -4.23% · 삼성전자(005930·반도체) 35,159억원 -2.98% · 삼성전기(009150·전자·부품) 8,386억원 -1.28% · 삼성SDI(006400·2차전지) 4,037억원 -6.08% · 엘리스(0158S0·IT·소프트웨어) 3,833억원 -32.04% · SK스퀘어(402340·지주) 3,568억원 -5.00%\n  이 목록을 다 옮기지 마라. 한 문단에 종목 넷·등락률 대여섯 개까지다. 나머지는 업종으로 묶어 말하라 — 목록은 화면의 표가 보여 준다.\n  종목 괄호 안 뒤쪽이 업종이다. 종목을 '같은 업종·같은 부품·같은 반도체' 처럼 묶어 쓸 때는 이 업종이 같을 때만 그렇게 쓴다. 다르면 '옆 업종인' 처럼 다르다고 쓴다.\n  업종 상위(시총가중): 식음료 -0.14% · 부동산·리츠 -0.42% · 게임 -0.86% · 기타 -0.87% · 미디어·엔터 -1.18%\n  업종 하위: 항공·방산 -9.65% · 정유 -8.43% · 조선 -6.92% · 화학 -6.15% · 철강·금속 -5.85%\n\n[환율] 원/달러 1,326.24원 -0.54% · 직전 값 1,333.43원 대비 (야후 KRW=X · 기준일 2026-10-20)\n  ※ 서울 외환시장 마감가와 다른 시계열이다. 뉴스 제목의 '마감 환율'과 이 값의 등락률을 같은 자리에서 견주지 마라 — 쓰려면 '기준값' 이라고 부르고 기준일을 붙여라.\n\n[일정 · 2026-10-21 ~ 2026-11-04]\n  2026-10-22(목·이번 주) 국내 지표 한국은행 금융통화위원회(통화정책방향)\n  2026-10-28(수·다음 주) FOMC 10월 FOMC 회의 종료\n  2026-10-29(목·다음 주) 해외 지표 미국 GDP\n  2026-10-29(목·다음 주) 해외 지표 미국 개인소비·PCE\n  2026-10-30(금·다음 주) 해외 지표 미국 고용비용지수\n  2026-11-03(화·그 다음) 해외 지표 미국 구인·이직(JOLTS)\n\n[정기보고서 접수 · 커버리지 종목]\n  아이큐어(175250) [기재정정]반기보고서 (2026.06) · 시총 890억\n     └ 리포트 작성일 2026-10-20 · 제목 「거래재개 아이큐어, 화장품이 이끈 흑자전환」\n     └ 확인 지점 [2026년 11월 중순] 2026년 3분기 정기보고서 공시 예정 — 2분기 영업흑자 전환이 3분기까지 이어지는지, 화장품 ODM 매출 비중 확대 추세가 지속되는지 확인한다.\n     └ 확인 지점 [2026년 4분기 중] 전 대표 최영권씨에 대한 배임·횡령 형사재판 및 회사의 구상금 청구소송 진행상황을 점검해 추가 비용·충당금 발생 가능성을 확인한다.\n     └ 강세: 화장품 ODM 고성장과 고객 다변화 / 9년 만의 분기 영업흑자 전환\n     └ 약세: 제약사업 구조적 둔화와 해외 전략 차질 / 재무구조 악화와 누적 순손실\n  아진산업(013310) [기재정정]반기보고서 (2026.06) · 시총 870억\n     └ 리포트 작성일 2026-09-05 · 제목 「차체부품 넘어 로봇 자동화로 영역 확장」\n     └ 확인 지점 [2026년 11월 중(예상)] 2026년 3분기 실적 공시를 확인해 2026년 2분기 순손실 이후 이익이 회복되는지 점검할 필요가 있다.\n     └ 확인 지점 [2026년 하반기~2027년] HMGMA를 비롯한 북미 완성차·전기차 생산라인에서 로봇 자동화시스템의 추가 수주가 나오는지 확인이 필요하다.\n     └ 강세: 로봇 자동화 신사업 확장 / 매출 성장과 마진 개선\n     └ 약세: 분기 실적 변동성 확대 / 현금창출력 저하\n  키이스트(054780) [기재정정]반기보고서 (2026.06) · 시총 390억\n     └ 리포트 작성일 2026-09-05 · 제목 「경영권 교체기, 매출 회복 속 적자 지속」\n     └ 확인 지점 [2026년 11월 중순] 2026년 3분기 보고서 공시를 통해 매출 회복 추세가 지속되는지, 영업손실·순손실 폭이 축소되는지 확인할 필요가 있다.\n     └ 확인 지점 [2026년 4분기 중] JTBC '골드디거' 방영 개시와 소속 배우 출연작 흥행 여부가 매니지먼트·콘텐츠 매출에 미치는 영향을 확인해야 한다.\n     └ 강세: 매출 회복 국면 진입 / 새로운 사업 파트너십의 확장 가능성\n     └ 약세: 지속되는 순손실 구조 / 경영권 변경에 따른 불확실성\n  투비소프트(079970) [기재정정]반기보고서 (2026.06) · 시총 80억\n     └ 리포트 작성일 2026-09-05 · 제목 「적자 탈출한 UI플랫폼, AI전환 승부수」\n     └ 확인 지점 [2026년 11월 중] 2026년 3분기 실적 공시를 확인해 상반기 이익 회복세가 이어지는지, 2026년 1분기와 같은 일시적 손실이 재발하는지 점검할 필요가 있다.\n     └ 확인 지점 [2027년 초] 차세대 제품 '넥사크로 K'의 출시 일정과 초기 시장 반응을 확인할 필요가 있다.\n     └ 강세: 적자 탈출, 이익 체력 회복 / AI 네이티브 플랫폼과 공공 레퍼런스 확대\n     └ 약세: 매출 기반 축소 지속 / 투자·지배구조 잡음\n\n[커버리지] 리포트 보유 2,704종목\n\n[뉴스 제목 — '왜 움직였나'의 단서. 제목 속 숫자는 쓰지 말 것]\n  · 시황\n      [마감시황] 외국인 매도세 완화…코스피, 장 초반 3% 급락 딛고 1.8% 상승 마감 - 뉴스핌 (뉴스핌)\n      [마감시황] 기관 순매수 코스피, 장 초반 3%대 급락 딛고 1.76% 상승 마감 - 아주경제 (아주경제)\n      코스피·코스닥, 오후 들어 상승폭 키우며 '고점 마감' - 이투데이 (이투데이)\n      코스피, 장 초반 급락 딛고 상승 마감…외국인·기관 동반 매수 - 서울경제TV (서울경제TV)\n  · 환율\n      [외환-마감] '네고·옵션 셀'에 3거래일 연속 연저점 | - 연합인포맥스 (연합인포맥스)\n      원·달러 환율, 올해 최저 종가…2.2원 내린 1328.1원 마감 [김혜란의 FX] - 서울경제 (서울경제)\n      [외환] 원·달러 환율 1328.1원 마감···2.2원↓ - 서울파이낸스 (서울파이낸스)\n      원달러 환율 2년 만에 최저치…국제유가 혼조세 - 중기이코노미 (중기이코노미)\n      코스피·코스닥 1%대 상승 전환 마감...원-달러 환율 1,330.7원 - YTN (YTN)\n      원·달러 환율, 또 2년 만에 최저…2.2원 내린 1328.1원 마감 - 뉴시스 (뉴시스)\n  · 국내 금리·통화정책\n      채권시장 참여자 93% \"10월 금통위서 기준금리 동결 예상\" - 연합뉴스 (연합뉴스)\n      2번 연속 금리 올린 한국은행…“또 올리나” vs “동결하나” 관심 집중 - 매일경제 (매일경제)\n      채권시장 종사자 93% \"10월 한은 금통위, 기준금리 동결할 것\" - 머니투데이 - 머니투데이 (머니투데이)\n      [집중취재] 백투백 인상 후 첫 금통위…'매파적 동결' 무게, 관전 포인트는? - 매일경제TV (매일경제TV)\n      10월 금통위 '금리 동결' 무게…증시 반등 불씨 될까 - 글로벌이코노믹 (글로벌이코노믹)\n      채권시장 93% \"10월 금통위 기준금리 동결 전망\" - MTN 머니투데이방송 (MTN 머니투데이방송)\n  · 국내 물가·경기\n      [금통위 인터뷰] 스테이트스트리트 \"10월 동결 후 11월 인상\" - KB Think (KB Think)\n      금리 올리려는 일본은행, 돈 풀려는 정부…물가 인식 온도차 - 한국경제 (한국경제)\n      美 경제, '물가 상승·고용 정체' 이중고…AI 투자에 성장 의존 - 글로벌이코노믹 (글로벌이코노믹)\n      9월 환율 3.4% 내려도 수입물가 반등…금통위 앞 유가 부담 - 메트로신문 (메트로신문)\n      [끈적한 물가] 3%대 성장 기대 속 물가 부담…2% 안착 언제쯤? - 아주경제 (아주경제)\n      물가 2.9%·기준금리 3.00%…가계·자영업자 '이중 부담'에 민생경제 경고등 - https://www.ppss.kr/ (https://www.ppss.kr/)\n  · 국내 수출입·무역\n      유로 지역 무역적자와 수출 증가 해석 - 코리아비즈니스리뷰 (코리아비즈니스리뷰)\n      전북 9월 수출 10.3% 증가…9개월 연속 상승, 무역흑자 1.2조원 - 전북제일신문 (전북제일신문)\n      전북 무역흑자 '12억 달러' 돌파··· 지난해 연간 실적 넘었다 - 전라일보 (전라일보)\n      평택직할세관, 9월 수출 116.9% 증가…11개월 연속 무역흑자 - 수도권지역뉴스 (수도권지역뉴스)\n      전북 수출 9개월 연속 '순항'…9월 수출 10.3% 증가 - 전민일보 (전민일보)\n      [2026 국감] 펫푸드 수출 예산 5배 늘었는데…무역적자 8500억원 - 푸드투데이 (푸드투데이)\n  · 국내 정책·제도\n      금융당국 \"솔리다임 중복상장\" 경고…국내 주식시장 영향은? - 연합뉴스 (연합뉴스)\n      금감원 국감도 단종레 난타전…'책임공방' 종감까지 간다 - 연합인포맥스 (연합인포맥스)\n      [국감 2026] IBK투자증권, 부동산펀드 불완전판매 의혹…금감원 \"위법 여부 점검\" - DealSite경제TV (DealSite경제TV)\n      국힘 “금감원장, 레버리지ETF 졸속 심사 인정… ‘증시 파탄 특검’ 추진” - 조선일보 (조선일보)\n      \"폭락장 또 오면 어쩌나\" 새 빚투 막아도...'강제 청산' 공포 째깍째깍 - 머니투데이 - 머니투데이 (머니투데이)\n      단일종목 레버리지 ETF, '정책 일정'에 심사도 앞당겼다⋯금감원장 \"증시 급락에 일부 영향\" - 포커스온경제 (포커스온경제)\n  · 미국 지수\n      S&P rises and Nasdaq jumps over 1%, rebounding after their worst week since June - Investing.com (Investing.com)\n      Nasdaq stays below waters; S&P 500, Dow push higher amid tech trade turbulence - Seeking Alpha (Seeking Alpha)\n      Dow, S&P 500, Nasdaq Edge Higher Amid Tech Rebound As Q3 Earnings Season Forges Ahead: DJT, AMZN, CBRS, CRWV Stocks In Focus - Yahoo Finance (Yahoo Finance)\n      Nasdaq Bounces Back as AI Trade Freshens Up: Stock Market Today - Yahoo Finance (Yahoo Finance)\n      Nasdaq climbs as chip and AI-linked stocks bounce back - Reuters (Reuters)\n      S&P 500, Nasdaq, Dow Forecast: Wall Street Split Widens Into Month-End - StoneX (StoneX)\n  · 미국 반도체\n      Semiconductor Sell-Off: 5 Stocks to Buy on the Dip - The Globe and Mail (The Globe and Mail)\n      Semiconductor Sell-Off: 5 Stocks to Buy on the Dip - The Motley Fool (The Motley Fool)\n  · 미국 지표\n      How is the US economy really doing under President Trump? - BBC (BBC)\n      Treasury yields move higher as investors assess U.S. inflation backdrop - CNBC (CNBC)\n      U.S. Inflation in September and Implications for the Fed - Funds Society (Funds Society)\n      Gold prices declined amid cautious anticipation of the Federal Reserve meeting and US inflation data - صوت الإمارات (صوت الإمارات)\n      10-Year T-Note at Key Resistance After Hot Inflation Data: Webinar Replay - Investing.com (Investing.com)\n      The Nasdaq remains under pressure amid an ugly mix of higher inflation, growth concerns and widening credit spreads - investingLive (investingLive)\n  · 미국 금리·연준\n      10-year Treasury yield moves lower after weak housing data - CNBC (CNBC)\n      Gold edges lower as firm dollar, elevated yields weigh - Reuters (Reuters)\n      Treasury yields move higher as investors assess U.S. inflation backdrop - CNBC (CNBC)\n      Gold Slips As Traders Wait For The Fed’s Next Signal - Finimize (Finimize)\n      Gold tumbles below $4,150 amid elevated US Treasury yields - FXStreet (FXStreet)\n      U.S. Treasury yields dip as investors await key economic data and Fed rate decision. - Pluang (Pluang)\n  · 원자재·에너지\n      Oil Prices Top $100 Again... This Time, the \"Oil Route\" Is Key [Click e-Market] - 아시아경제 (아시아경제)\n  · 아시아 증시\n      Hong Kong Stocks Close (Oct 20) | Hang Seng Index closes down 1.32%; domestic and international catalysts ignite interest in Physical AI; Hansoh Pharmaceutical (03692) surges over 8%, leading blue-chip gains - Moomoo (Moomoo)\n      Hong Kong Stock Exchange: Hang Seng Index Falls to 23,867.74 as Tech Slides After Chung Yeung Break - BBN Times (BBN Times)\n      Japan stocks lower at close of trade; Nikkei 225 down 1.16% - Investing.com (Investing.com)\n      Hang Seng closes down 1% while mainland China stocks rise - 24/7 Wall St. (24/7 Wall St.)\n      Chinese shares close mixed Tuesday - Xinhua (Xinhua)\n      Hong Kong Stocks Close (Oct 20) | Hang Seng Index closes down 1.32%; domestic and international catalysts ignite interest in Physical AI; Hansoh Pharmaceutical (03692) surges over 8%, leading blue-chip gains - 富途牛牛 (富途牛牛)\n  · 중국·일본 거시\n      Bank of Japan may raise inflation forecast, stand pat on rates, sources say - Reuters (Reuters)\n      Internship Spotlight: Hsin-Yuan Lee ’27, Drivemode - Yale School of Management (Yale School of Management)\n      Japanese Prime Minister Takaichi rejects criticism around weak yen and high interest rates - CNBC (CNBC)\n      Dollar Falls on Chinese Yuan Strength and Weak US Housing News - Yahoo Finance (Yahoo Finance)\n      PBOC Rate Shift Plan Would Lower Borrowing Costs, Says Analysts - Bloomberg.com (Bloomberg.com)\n      China’s Economy Expanded 4.5% in Third Quarter, Powered by Exports - WSJ (WSJ)\n  · 우리금융지주(316140)\n      우리금융지주 주가 150원 상승 후 장마감 - 아시아뉴스통신\n      [A 증시리포트] 우리금융지주, 주주환원율 상향 기대 - 아시아에이\n      [특징주] 우리금융지주 3만1950원 기록 장중 소폭 상승 : 기업주식정보 - 재경일보\n      우리금융지주 주가 상승 중 - 아시아뉴스통신\n  · KT&G(033780)\n      폭락장에서 KT&G·삼양식품은 올랐다··· 식품주에 투자자 몰리는 이유 - 그린포스트코리아\n      경기 방어주 부각 속...KT&G, 장중 '연일 강세' · 호재는? - 초이스경제\n      KT&G, 하락장 속 나홀로 '빨간불'…장초반 0.8% 상승 - 뉴시스\n      '방어주' KT&G, 연말까지 주가흐름 양호 - 하나증권 - PRESS9\n  · 한화시스템(272210)\n      기준가 반년 새 절반…한화오션 주가에 묶인 한화시스템 1.4조 - 마켓인\n      한화시스템, 조선 팔아 3.4조 쥐었지만… 부채비율은 189%로, 열쇠는 한화오션 주가 - 에너지경제신문\n      한신평 \"한화시스템, 한화오션 지분 매각 유동성에 긍정적…PRS 부담 주시\" - 연합인포맥스\n      한화시스템 주가, 12%대↓... 증권가 전망은? - 금강일보\n  · SK하이닉스(000660)\n      SKHY 4.67% 올랐는데…SK하이닉스는 왜 6% 하락이죠? - 한국경제\n      SK하이닉스 자사주 매입 종료 D-1···삼성전자 이어 ‘수급공백’ 우려 확산 - 시사저널e\n      \"솔리다임 중복 상장 논란, SK하닉 주가 더 '나락'가나\" - YTN\n      SK하이닉스 주가, 오늘 급등한 이유는? - Investing.com 한국어",
+  "meta": {
+    "model": "claude-opus-5-5",
+    "batched": false,
+    "chars": 2025,
+    "coverageRatio": 0.082,
+    "usage": {
+      "inputTokens": 18808,
+      "outputTokens": 6797,
+      "usd": 0.2112,
+      "krw": 296,
+      "attempts": 2,
+      "usdAll": 0.2203,
+      "repaired": {
+        "model": "claude-sonnet-5",
+        "fields": 2,
+        "usd": 0.0091
+      }
+    },
+    "generatedAt": "2026-10-21T06:41:37+09:00",
+    "publishedAt": "2026-10-21T07:28+09:00",
+    "issueNo": 42
+  }
+}
