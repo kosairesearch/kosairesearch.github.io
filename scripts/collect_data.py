@@ -100,6 +100,9 @@ NAME_EN_OVERRIDE = {
     "0117P0": "Piece Peace Studio",
     "0156T0": "HL Genomics",
     "0203K0": "Songwoo Information & Technology",
+    # 2026-10-22 상장 첫날. DART 영문명이 아직 비어 있다 — 상장 예비심사 자료 · 사업자 정보 · 영문 기사가
+    # 같은 표기(MSBIO)를 쓴다. DART 에 영문명이 생기면 그 값으로 자동 교체된다.
+    "0013Y0": "MSBIO",
 }
 
 # 우선주(전환·신주·우B·우C 등 포함)·스팩 판별 정규식 — universe(회사 리서치)에서 제외.
