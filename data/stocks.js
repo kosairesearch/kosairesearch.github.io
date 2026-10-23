@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-10-23 18:25",
+  "lastUpdated": "2026-10-23 18:43",
   "dataDate": "20261023",
   "stocks": [
     {
@@ -10045,7 +10045,7 @@ window.KOS_LIVE_DATA = {
       "name": "디티에스",
       "name_en": "",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "IT·소프트웨어",
       "price": 24950,
       "change": 34.86,
       "volume": 20872039,
@@ -10053,7 +10053,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.372,
       "shares": 14881735,
       "categories": [
-        "기타"
+        "IT·소프트웨어"
       ],
       "rank": 558
     },
@@ -37156,7 +37156,7 @@ window.KOS_LIVE_DATA = {
       "name": "모비콘텐츠테크",
       "name_en": "",
       "market": "코넥스",
-      "sector": "기타",
+      "sector": "미디어·엔터",
       "price": 60000,
       "change": 0.0,
       "volume": 0,
@@ -37164,7 +37164,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.036,
       "shares": 600000,
       "categories": [
-        "기타"
+        "미디어·엔터"
       ],
       "rank": 2062
     },
