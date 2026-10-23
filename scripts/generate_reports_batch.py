@@ -127,7 +127,9 @@ def submit(cl, as_of):
             custom_id=st["ticker"],
             params=MessageCreateParamsNonStreaming(
                 model=MODEL,
-                max_tokens=48000,
+                # 사고 토큰도 이 안에서 센다. 한 편에 4만 1천 안팎을 써 48,000 에 닿으면 글이 끝에서 잘렸다
+                # (2026-10-23 디티에스 — 종합 의견까지 오지 않아 버렸다). 리포트 v2 와 같은 한도다. 쓴 만큼만 낸다.
+                max_tokens=96000,
                 system=[{"type": "text", "text": g.SYSTEM, "cache_control": {"type": "ephemeral"}}],
                 thinking={"type": "adaptive"},
                 tools=TOOLS,
@@ -271,8 +273,9 @@ def collect(cl, as_of):
             rep = g.parse_report(text)
             if not g.valid_report(rep):
                 fail += 1
-                bump_fail(fails, tk, "불완전(잘림 의심)", as_of)
-                log(f"  · ⚠️ {tk} 불완전(잘림 의심) — 건너뜀, 기존 유지")
+                why = getattr(result.result.message, "stop_reason", None)   # max_tokens 면 한도에 닿아 잘린 것이다
+                bump_fail(fails, tk, f"불완전(잘림 의심 · 중단 사유 {why})", as_of)
+                log(f"  · ⚠️ {tk} 불완전(잘림 의심 · 중단 사유 {why}) — 건너뜀, 기존 유지")
                 continue
             srcs = g.collect_sources(result.result.message)
             if srcs:
