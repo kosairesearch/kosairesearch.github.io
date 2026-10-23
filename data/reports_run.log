@@ -47,3 +47,24 @@
 
 ✅ 회수 완료 · 성공 1/실패 0 · 총 보유 2682개 → data/reports/ + reports-index.js
 💵 claude-sonnet-4-6 1회(배치) · 입력 4,332(캐시쓰기 47,277·읽기 26,295) · 출력 41,226 · 검색 4 → 약 $0.45
+## 🤖 Batch 제출 — 대상 2개 / 상위 100개 (최근 3개 건너뜀) · 모델 claude-sonnet-4-6
+  · 준비 0015M0 디티에스 (DART X)
+  · 준비 0077H0 모비콘텐츠테크 (DART X)
+- ✅ 배치 제출 완료: msgbatch_0187XXFTDKy3MAJ8cL6mFFFB (2건) → data/batch_state.json
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 2/오류 0
+  · ⚠️ 0015M0 불완전(잘림 의심) — 건너뜀, 기존 유지
+  · 🚫 0077H0 검사 위반 2건(pershare, roe) — 저장하지 않음 · [recent] '주당순이익은 669원' · 당기순이익은 4억원, 주당순이익은 669원이며, 한국거래소 공개 기업 개요 기준 별도 매출은 285억 3,4
+
+✅ 회수 완료 · 성공 0/실패 2 · 총 보유 2682개 → data/reports/ + reports-index.js
+💵 claude-sonnet-4-6 2회(배치) · 입력 8,650(캐시쓰기 92,629·읽기 58,623) · 출력 75,241 · 검색 8 → 약 $0.84
