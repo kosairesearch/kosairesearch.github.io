@@ -976,23 +976,23 @@ def en_gap_hints(rep, limit=25):
     return out[:limit]
 
 
-def send_batch(cl, jobs, *, wait_sec=4800, log=print, sleep=None):
+def send_batch(cl, jobs, *, wait_sec=4800, log=print, sleep=None, label="검토"):
     """요청 묶음 {이름: params} 를 배치 하나로 보내고 끝날 때까지 기다린다 — {이름: 답(message) 또는 None(실패)}.
-    시간을 넘기면 TimeoutError. 회수 단계 안에서 검토를 끝내야 하는 생성기(업종 분석 · 신규 상장 리포트)가 쓴다."""
+    시간을 넘기면 TimeoutError. 회수 단계 안에서 검토 · 교정을 끝내야 하는 생성기(업종 분석 · 신규 상장 리포트)가 쓴다."""
     import time
     from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
     from anthropic.types.messages.batch_create_params import Request
     sleep = sleep or time.sleep
     reqs = [Request(custom_id=k, params=MessageCreateParamsNonStreaming(**p)) for k, p in jobs.items()]
     b = cl.messages.batches.create(requests=reqs)
-    log(f"- 🔎 검토 배치 제출: {b.id} ({len(reqs)}건)")
+    log(f"- 🔎 {label} 배치 제출: {b.id} ({len(reqs)}건)")
     waited = 0
     while True:
         st = cl.messages.batches.retrieve(b.id)
         if st.processing_status == "ended":
             break
         if waited >= wait_sec:
-            raise TimeoutError(f"검토 배치가 {wait_sec // 60}분 안에 끝나지 않았다({b.id})")
+            raise TimeoutError(f"{label} 배치가 {wait_sec // 60}분 안에 끝나지 않았다({b.id})")
         sleep(60)
         waited += 60
     out = {k: None for k in jobs}

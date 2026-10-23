@@ -65,6 +65,12 @@ MAX_WAIT = int(os.getenv("BATCH_MAX_WAIT_SEC", "4800"))  # 80분
 # 끄면 정리 · 검사만 하고, 검사에 걸리는 리포트는 저장하지 않는다. 기본은 끔(2026-10-09) — 시험에서 검토 모델이
 # 반올림한 재료 수치로 정확한 본문 수치를 바꾸는 등 틀린 고침을 냈다. 고친 뒤 시험을 통과하면 NEW_LISTING_REVIEW=1 로 켠다.
 REVIEW = os.getenv("NEW_LISTING_REVIEW", "0") == "1"
+# 저장 전 교정(2026-10-23) — 검사에 걸린 글을 버리지 않고 걸린 문장만 값싼 모델이 고친다(리포트 v2 회수 단계와 같은
+# check_report_text.repair · 배치로만). 전에는 걸리면 곧바로 버려, 10/23 모비콘텐츠테크가 '주당순이익 669원' 한 문장
+# 때문에 작성비(약 0.4달러)를 날리고 다음 실행이 처음부터 다시 썼다. 교정 배치는 한 편에 1~2센트다.
+REPAIR = os.getenv("NEW_LISTING_REPAIR", "1") != "0"
+REPAIR_WAIT = int(os.getenv("NEW_LISTING_REPAIR_WAIT_SEC", "1800"))   # 교정 배치를 기다리는 시간(30분)
+REPAIR_ROUNDS = 2                    # 한 번에 다 고치지 못하면 남은 위반으로 한 번 더
 
 TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 5,
           "blocked_domains": g.BLOCKED_DOMAINS,
@@ -228,6 +234,84 @@ def review_all(cl, cand, as_of):
     return out, use
 
 
+class _Ask(BaseException):
+    """check_report_text.repair 가 보내려던 요청. 모델을 부르지 않고 받아 둔다 — BaseException 이라 부르는 쪽의
+    'except Exception' 이 삼키지 않는다."""
+
+    def __init__(self, params):
+        super().__init__()
+        self.params = params
+
+
+class _OneShot:
+    """repair 에 넘기는 대리인 — 답이 없으면 요청을 _Ask 로 던지고, 있으면 그 답을 돌려준다. 즉시 호출은 하지 않는다."""
+
+    def __init__(self, answer=None):
+        outer = self
+        self.answer = answer
+
+        class _Msgs:
+            def create(self, **kw):
+                if outer.answer is None:
+                    raise _Ask(kw)
+                return outer.answer
+
+        self.messages = _Msgs()
+
+
+def repair_all(cl, todo):
+    """검사에 걸린 글의 걸린 문장만 교정 배치로 고친다 — ({종목: (리포트, 남은 위반)}, 사용량).
+
+    한 회차에 걸린 글 전부를 배치 하나로 보낸다. 고쳐서 위반이 줄었지만 남은 글만 다음 회차로 넘기고(REPAIR_ROUNDS),
+    답이 없거나 고치지 못한 글은 그대로 돌려준다(부르는 쪽이 저장하지 않는다)."""
+    import hashlib
+    cur, use = dict(todo), {}
+    left = [tk for tk, (_, bad) in cur.items() if bad]
+    for rnd in range(1, REPAIR_ROUNDS + 1):
+        jobs, ctx = {}, {}
+        for tk in left:
+            rep, bad = cur[tk]
+            try:
+                C.repair(_OneShot(), rep, bad)          # 고칠 섹션이 없으면 요청 없이 끝난다
+            except _Ask as a:
+                h = hashlib.sha1(json.dumps(a.params, ensure_ascii=False, sort_keys=True, default=str).encode()).hexdigest()
+                jobs[f"fx{rnd}_{tk}_{h[:12]}"] = a.params
+                ctx[f"fx{rnd}_{tk}_{h[:12]}"] = tk
+        if not jobs:
+            break
+        try:
+            got = C.send_batch(cl, jobs, wait_sec=REPAIR_WAIT, log=log, label="교정")
+        except TimeoutError as e:
+            log(f"  · ⚠️ {e} — 이번 교정은 받지 않는다")
+            break
+        left = []
+        for key, msg in got.items():
+            tk = ctx[key]
+            rep, bad = cur[tk]
+            if msg is None:
+                log(f"  · ⚠️ {tk} 교정 답 없음")
+                continue
+            u = g.usage_of(msg)
+            if u:
+                g.add_usage(use, C.REPAIR_MODEL, u, batch=True)
+            try:
+                fixed = C.repair(_OneShot(msg), rep, bad)
+            except Exception as e:                     # noqa: BLE001
+                fixed = None
+                log(f"  · ⚠️ {tk} 교정 답을 읽지 못함: {type(e).__name__}: {e}")
+            if not fixed:
+                log(f"  · ⚠️ {tk} 교정이 위반을 줄이지 못함 — 고치기 전 글로 판정한다")
+                continue
+            rep2 = C.prepare(fixed[0])
+            cur[tk] = (rep2, C.check(rep2))
+            log(f"  · ✏️ {tk} 표현 교정 {len(bad)}건 → 남은 {len(cur[tk][1])}건")
+            if cur[tk][1]:
+                left.append(tk)
+        if not left:
+            break
+    return cur, use
+
+
 def collect(cl, as_of):
     if not STATE_JS.exists():
         log("❌ data/batch_state.json 이 없습니다. 먼저 submit 하세요.")
@@ -297,9 +381,9 @@ def collect(cl, as_of):
 
     # 저장 전 검토 · 검사(2026-10-09). 전에는 회수한 글을 그대로 저장해, 신규 상장 리포트에 영문 속 한글 · 가치 단정 ·
     # 받은 자료 언급('제공된 기준 데이터상 0.0조원') · 곁키에 빠진 영문이 그대로 걸렸다. 정리(prepare) → 검토(배치) →
-    # 검사(check)를 거쳐 위반이 하나도 없는 글만 저장한다. 걸린 종목은 저장하지 않는다 — 신규 상장 작업이 리포트 없는 종목을
-    # 다음 실행에서 다시 주문한다.
-    reviewed = {}
+    # 검사(check)를 거쳐 위반이 하나도 없는 글만 저장한다. 걸린 글은 교정(배치)으로 걸린 문장만 고친 뒤 다시 보고(2026-10-23),
+    # 그래도 걸리면 저장하지 않는다 — 신규 상장 작업이 리포트 없는 종목을 다음 실행에서 다시 주문한다.
+    reviewed, judged = {}, {}
     if cand and REVIEW:
         try:
             reviewed, use_rv = review_all(cl, cand, state.get("created") or as_of)
@@ -317,7 +401,22 @@ def collect(cl, as_of):
                 continue
             rep = C.prepare(got)
             log(f"  · 🔎 {tk} {note}")
-        bad = C.check(rep)
+        judged[tk] = (rep, C.check(rep))
+    # 걸린 글은 버리기 전에 걸린 문장만 고친다(배치). 고친 뒤에도 남으면 저장하지 않는다.
+    to_fix = {tk: v for tk, v in judged.items() if v[1]}
+    if to_fix and REPAIR:
+        try:
+            fixed, use_fx = repair_all(cl, to_fix)
+        except Exception as e:                         # noqa: BLE001
+            fixed, use_fx = {}, {}
+            log(f"  · ⚠️ 교정 배치 실패: {type(e).__name__}: {e} — 걸린 글은 저장하지 않는다(다음 실행이 다시 주문한다)")
+        judged.update(fixed)
+        if use_fx:
+            for mdl, a in use_fx.items():
+                log(g.usage_line(mdl, a, "교정 배치"))
+                a["usd"] = round(a["usd"], 4)
+            state["usage_repair"] = use_fx     # 교정 배치 사용량 — 생성 배치(usage)와 섞지 않는다
+    for tk, (rep, bad) in judged.items():
         if bad:
             fail += 1
             rules = ", ".join(sorted({h['rule'] for h in bad}))
