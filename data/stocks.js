@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-10-23 18:43",
+  "lastUpdated": "2026-10-23 18:56",
   "dataDate": "20261023",
   "stocks": [
     {
@@ -10043,7 +10043,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0015M0",
       "name": "디티에스",
-      "name_en": "",
+      "name_en": "DTS",
       "market": "코스닥",
       "sector": "IT·소프트웨어",
       "price": 24950,
