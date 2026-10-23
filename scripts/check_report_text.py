@@ -908,12 +908,36 @@ _WHY_EXTRA = {
 }
 
 
-_EN_ACR = {"LG", "SK", "KB", "KT", "HD", "CJ", "GS", "LS", "DB", "NH", "SC", "POSCO", "NAVER", "HMM", "OCI", "DL", "BGF", "JYP",
-           "YG", "SM", "HLB", "KCC", "DGB", "BNK", "JB", "NHN", "SDI", "BM", "IPS", "NC", "LX", "KG", "DN"}
+_EN_ACR = {"LG", "SK", "KB", "KT", "HD", "CJ", "GS", "LS", "DB", "NH", "SC", "POSCO", "NAVER", "HMM", "OCI", "DL", "BGF", "JYP", "YG", "SM", "HLB",
+           "KCC", "DGB", "BNK", "JB", "NHN", "SDI", "BM", "IPS", "NC", "LX", "KG", "DN", "AI", "KBI", "SY", "DY", "DI", "IS", "ISU", "KEC", "IB",
+           "ICD", "ICH", "ICTK", "IDP", "IMS", "IMT", "IMGT", "ISC", "ITX", "KGA", "LAT", "MOT", "NI", "OA", "OSP", "PHA", "PIE", "PIM", "PNE", "SEC",
+           "SI", "SOS", "STO", "TEC", "TFE", "TI", "TSE", "TSI", "TYM", "UIL", "UST", "UTI", "UVC", "UXN", "WSI", "YBM", "YC", "YM", "YMC", "YMT",
+           "YTN", "YW", "BHI", "BI", "BTI", "BYC", "CSA", "CU", "DAP", "DIT", "DKME", "DYA", "DYC", "DYD", "DYP", "EB", "EG", "ELC", "ELP", "EMB",
+           "ENM", "ES", "EV", "GA", "GFI", "GIS", "GSE", "HYTC", "AFW", "ALT", "APR", "APS", "AU", "AUK", "AL", "WIA", "SYTS", "NGVI", "TEMC",
+           "S-OIL", "IT", "REIT", "REITS"}
+
+
+def _en_cap(w):
+    """대문자 영문명의 낱말 하나 — 약어(목록 · 모음 없는 낱말 · 숫자가 든 낱말)는 대문자 그대로, 그 밖은 첫 글자만 대문자.
+    하이픈으로 이은 낱말은 조각마다 본다. staging/i18n.js 의 cleanEn 안 cap 과 같다(2026-10-23)."""
+    wu = re.sub(r"[.,]", "", w.upper())
+    if wu in _EN_ACR:
+        return wu
+    if "&" in w and w == w.upper():
+        return w
+    if re.search(r"\d", w):
+        return w
+    if w.find("-") > 0:
+        return "-".join(_en_cap(p) for p in w.split("-"))
+    core = re.sub(r"[^A-Z]", "", wu)
+    if len(core) >= 2 and not re.search(r"[AEIOUY]", core):
+        return wu
+    return w[:1].upper() + w[1:].lower()
 
 
 def clean_en(s):
-    """영문명을 화면과 같은 꼴로 — 'SAMSUNG ELECTRONICS CO,.LTD' → 'Samsung Electronics'(staging/i18n.js 의 cleanEn 과 같다).
+    """영문명을 화면과 같은 꼴로 — 'SAMSUNG ELECTRONICS CO,.LTD' → 'Samsung Electronics' · 'SAMSUNG SDS' → 'Samsung SDS'
+    (staging/i18n.js 의 cleanEn 과 같다 — check_report_text_test 가 시세 자료 전부로 둘을 견준다).
     시세 자료의 영문명은 공시 그대로라 대문자 · 'Co., Ltd.' 꼬리가 붙어 있다 — 그대로 주면 영어 문장에 그 꼴이 옮겨진다."""
     s = (s or "").strip()
     while s:
@@ -924,11 +948,7 @@ def clean_en(s):
     s = re.sub(r"[,.\s]+$", "", s).strip()
     letters, upper = re.sub(r"[^A-Za-z]", "", s), re.sub(r"[^A-Z]", "", s)
     if letters and len(upper) / len(letters) > 0.8:
-        words = []
-        for w in s.split():
-            wu = re.sub(r"[.,]", "", w.upper())
-            words.append(wu if wu in _EN_ACR else w if ("&" in w and w == w.upper()) else w[:1].upper() + w[1:].lower())
-        s = " ".join(words)
+        s = " ".join(_en_cap(w) for w in s.split())
     return s
 
 

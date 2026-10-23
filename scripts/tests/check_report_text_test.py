@@ -299,6 +299,23 @@ eq("숫자 · 출처 칸은 그대로", (pr["quant"], pr["sources"]), ({"n": "90
 eq("몇 번 돌려도 같다", C.prepare(pr), pr)
 eq("영문명을 화면 꼴로", [C.clean_en(x) for x in ("SAMSUNG ELECTRONICS CO,.LTD", "SK hynix Inc.", "NAVER Corp.")],
    ["Samsung Electronics", "SK hynix", "NAVER"])
+# 약어는 대문자 그대로(2026-10-23) — 전에는 목록 밖 약어를 소문자로 바꿔 영어 화면에 'Samsung Sds' · 'LG Cns' · 'Skc' · 'Dts' 가 나왔다.
+# 모음이 없는 낱말은 약어로 보고, 모음이 든 약어는 목록(_EN_ACR)에 둔다. 보통 낱말 · 로마자 음절은 전처럼 첫 글자만 대문자.
+eq("약어는 대문자 그대로 · 보통 낱말은 첫 글자만", [C.clean_en(x) for x in (
+    "SAMSUNG SDS CO., LTD.", "LG CNS Co., Ltd.", "SKC LTD", "DTS", "CJ ENM", "APR Co., Ltd.", "HYUNDAI WIA", "S-OIL CORPORATION",
+    "KOREAN AIR LINES CO.,LTD", "A-JIN INDUSTRY", "3C TAE YANG", "DI DONG IL", "KIA CORPORATION", "SAMSUNG BIOLOGICS")],
+   ["Samsung SDS", "LG CNS", "SKC", "DTS", "CJ ENM", "APR", "Hyundai WIA", "S-OIL",
+    "Korean Air Lines", "A-Jin Industry", "3C Tae Yang", "DI Dong Il", "Kia", "Samsung Biologics"])
+# 화면(staging/i18n.js 의 cleanEn)과 같은지 — 시세 자료의 영문명 전부를 두 판에 넣어 견준다. 한쪽만 고치면 여기서 걸린다.
+import json as _jsn, re as _re, subprocess as _sp  # noqa: E402
+_root = HERE.parent.parent
+_t = (_root / "data" / "stocks.js").read_text(encoding="utf-8")
+_names = sorted({s.get("name_en") for s in _jsn.loads(_t[_t.index("{"):_t.rindex("}") + 1])["stocks"] if s.get("name_en")})
+_fn = _re.search(r"function cleanEn\(s\) \{[\s\S]*?\n  \}\n", (_root / "staging" / "i18n.js").read_text(encoding="utf-8")).group(0)
+_js = _sp.run(["node", "-e", _fn + "process.stdout.write(JSON.stringify(JSON.parse(require('fs').readFileSync(0,'utf8')).map(cleanEn)))"],
+              input=_jsn.dumps(_names), capture_output=True, text=True, check=True).stdout
+_diff = [(n, a, b) for n, a, b in zip(_names, _jsn.loads(_js), [C.clean_en(n) for n in _names]) if a != b]
+eq(f"영문명 {len(_names):,}개 — 화면(cleanEn)과 파이썬(clean_en)이 같은 꼴", _diff[:5], [])
 eq("검토 단서 — 한국어의 비율이 영어에 없다", C.en_gap_hints({"lead": {"ko": "영업이익이 37.2% 늘었다.", "en": "Profit rose."}}),
    ["[lead] 한국어의 비율 ['37.2'] 이 영어에 없다"])
 
