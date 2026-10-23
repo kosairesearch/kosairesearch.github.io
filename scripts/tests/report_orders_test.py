@@ -336,9 +336,22 @@ class FakeBatches:
     def results(self, bid):
         if bid.startswith("msgbatch_RV"):
             reqs = self.reviews[int(bid[11:]) - 1]
-            return [types.SimpleNamespace(custom_id=r["custom_id"], result=types.SimpleNamespace(
-                type="succeeded", message=msg("===JSON_START===" + json.dumps({"patches": []}) + "===JSON_END==="))) for r in reqs]
+            out = []
+            for r in reqs:
+                cid = r["custom_id"]
+                if cid.startswith("fx"):           # 교정 요청(2026-10-23) — 종목별 답, 없으면 오류
+                    ans = FIXES.get(cid.split("_")[1])
+                    out.append(types.SimpleNamespace(custom_id=cid, result=types.SimpleNamespace(
+                        type="succeeded" if ans else "errored",
+                        message=msg("===JSON_START===" + json.dumps(ans, ensure_ascii=False) + "===JSON_END===") if ans else None)))
+                    continue
+                out.append(types.SimpleNamespace(custom_id=cid, result=types.SimpleNamespace(
+                    type="succeeded", message=msg("===JSON_START===" + json.dumps({"patches": []}) + "===JSON_END==="))))
+            return out
         return list(self._results)
+
+
+FIXES = {}   # 교정 배치의 답 — {종목: 고친 섹션}
 
 
 def fake_client(status, results):
@@ -395,6 +408,43 @@ GB.STATE_JS.write_text(json.dumps({"batch_id": "msgbatch_DONE", "model": "claude
 GB.poll = lambda cl, bid: False
 GB.main()
 ok(submitted != [], "받을 배치가 없으면 평소대로 주문한다")
+
+# (e) 검사에 걸린 글 — 버리지 않고 걸린 문장만 교정 배치로 고쳐 저장한다(2026-10-23 모비콘텐츠테크 '주당순이익 669원')
+print("⑤-e 신규 상장 — 검사에 걸린 글은 교정 배치로 고쳐 저장한다")
+EPS = {"ko": "당기순이익은 4억원이며, 주당순이익은 669원이다.", "en": "Net income was KRW 0.4 billion, and earnings per share were KRW 669."}
+FIXED = {"recent": {"ko": "당기순이익은 4억원이다.", "en": "Net income was KRW 0.4 billion."}}
+G.load_stocks = lambda: {"stocks": [{"ticker": D, "name": "라회사"}, {"ticker": E, "name": "마회사"}], "dataDate": "20261023"}
+written.clear()
+GB.FAIL_JS.unlink(missing_ok=True)
+FIXES.clear()
+FIXES[D] = FIXED                                     # D 는 교정 답이 오고, E 는 교정 배치가 오류로 끝난다
+GB.STATE_JS.write_text(json.dumps({"batch_id": "msgbatch_EPS", "model": "claude-sonnet-4-6", "count": 2,
+                                   "pending": True}), encoding="utf-8")
+_bad = lambda: "===JSON_START===" + json.dumps(dict(GOOD, recent=EPS), ensure_ascii=False) + "===JSON_END==="
+cl = fake_client("ended", [bres(D, text=_bad()), bres(E, text=_bad())])
+GB.collect_pending(cl, "2026-10-23 23:30")
+st = json.loads(GB.STATE_JS.read_text(encoding="utf-8"))
+fl = json.loads(GB.FAIL_JS.read_text(encoding="utf-8")) if GB.FAIL_JS.exists() else {}
+fx = [r["custom_id"] for q in cl.messages.batches.reviews for r in q]
+ok(D in written and "주당순이익" not in json.dumps(written[D], ensure_ascii=False) and "4억원" in json.dumps(written[D], ensure_ascii=False),
+   "교정 답이 온 글은 걸린 문장만 고쳐 저장한다", str(written.get(D, {}).get("recent")))
+ok(E not in written and fl.get(E, {}).get("n") == 1 and "pershare" in fl.get(E, {}).get("why", "") and D not in fl,
+   "교정 답이 없으면 저장하지 않고 실패로 센다(저장한 D 는 세지 않는다)", str(fl))
+ok(len(cl.messages.batches.reviews) == 1 and sorted(c.split("_")[1] for c in fx) == sorted([D, E]) and all(c.startswith("fx1_") for c in fx),
+   "걸린 글의 교정 요청을 배치 하나로 보낸다(오류로 끝난 E 는 같은 요청을 다시 보내지 않는다)", str(fx))
+ok(((st.get("usage_repair") or {}).get(GB.C.REPAIR_MODEL) or {}).get("n") == 1 and (st.get("usage") or {}).get("claude-sonnet-4-6", {}).get("n") == 2,
+   "교정 배치 사용량을 생성 배치와 따로 남긴다", str({k: st.get(k) for k in ("usage", "usage_repair")}))
+# 교정을 끄면 걸린 글은 전처럼 저장하지 않는다(교정 배치도 없다)
+written.clear()
+GB.FAIL_JS.unlink(missing_ok=True)
+GB.REPAIR = False
+GB.STATE_JS.write_text(json.dumps({"batch_id": "msgbatch_EPS2", "model": "claude-sonnet-4-6", "count": 1,
+                                   "pending": True}), encoding="utf-8")
+cl = fake_client("ended", [bres(D, text=_bad())])
+GB.collect_pending(cl, "2026-10-23 23:30")
+GB.REPAIR = True
+ok(not written and cl.messages.batches.reviews == [], "교정을 끄면(NEW_LISTING_REPAIR=0) 걸린 글은 저장하지 않는다")
+ok(GB.REPAIR_ROUNDS == 2 and GB.REPAIR_WAIT == 1800, "교정은 두 회차 · 30분까지 기다린다", f"{GB.REPAIR_ROUNDS} · {GB.REPAIR_WAIT}")
 
 print(f"\n통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)
