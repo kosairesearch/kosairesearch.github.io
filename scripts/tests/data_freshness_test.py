@@ -497,6 +497,87 @@ nanres = M.collect_pykrx_bulk("20260909")
 ok("000001" in nanres and "000005" not in nanres,
    "값이 NaN 인 종목은 조용히 제외되고 나머지는 남는다", f"수집 {sorted(nanres)}")
 
+print("⑫ 영문명 — DART · 수동 목록 뒤에도 빈 종목은 한국거래소 영문 종목명으로")
+# 2026-10-23 엘리스 · 모비콘텐츠테크 등 신규 상장 5개가 영어 화면에 한국어 이름으로 보였다.
+# DART 영문명은 회사가 등록해야 생겨 몇 주에서 몇 달 비어 있고, 한국거래소는 상장 첫날부터 준다.
+import pandas as _pd                                                  # noqa: E402
+
+def _fake_krx_basic(rows):
+    """pykrx.website.krx.market.core.전종목기본정보 를 가짜로 끼운다(실제 응답의 칸 이름 그대로)."""
+    class _Basic:
+        def fetch(self, mktId="ALL", segTpCd="ALL"):
+            return _pd.DataFrame(rows, columns=["ISU_CD", "ISU_SRT_CD", "ISU_NM", "ISU_ENG_NM"])
+    names = ["pykrx", "pykrx.website", "pykrx.website.krx", "pykrx.website.krx.market",
+             "pykrx.website.krx.market.core"]
+    for nm in names:
+        sys.modules[nm] = types.ModuleType(nm)
+    sys.modules["pykrx.website.krx.market.core"].전종목기본정보 = _Basic
+
+_fake_krx_basic([
+    ("KR70158S0009", "0158S0", "엘리스그룹", "ELICE GROUP CO., LTD."),
+    ("KR7005930003", "005930", "삼성전자", "SamsungElectronics"),
+    ("KR70077H0009", "0077H0", "모비콘텐츠테크", None),
+    ("KR70161M0009", "0161M0", "네오사피엔스", "네오사피엔스"),
+    ("KR70035S0009", "0035S0", "빅웨이브로보틱스", "  "),
+])
+got = M.krx_english_names()
+ok(got == {"0158S0": "ELICE GROUP CO., LTD.", "005930": "SamsungElectronics", "0161M0": "네오사피엔스"},
+   "실제 응답 칸(ISU_SRT_CD · ISU_ENG_NM)에서 읽고 빈 값은 버린다", got)
+
+R = {"005930": {"ticker": "005930", "name_en": "SAMSUNG ELECTRONICS CO,.LTD"},
+     "0158S0": {"ticker": "0158S0", "name_en": ""},
+     "0077H0": {"ticker": "0077H0"},
+     "0161M0": {"ticker": "0161M0", "name_en": ""},
+     "0035S0": {"ticker": "0035S0", "name_en": ""}}
+n = M.fill_name_en_from_krx(R)
+ok(n == 1 and R["0158S0"]["name_en"] == "ELICE GROUP CO., LTD.", "★ 빈 종목을 한국거래소 영문명으로 채운다",
+   (n, R["0158S0"]))
+ok(R["005930"]["name_en"] == "SAMSUNG ELECTRONICS CO,.LTD", "이미 있는 영문명은 덮지 않는다", R["005930"])
+ok(not R["0161M0"]["name_en"], "한글이 든 값은 영문명으로 쓰지 않는다", R["0161M0"])
+ok(not R["0077H0"].get("name_en") and not R["0035S0"]["name_en"], "값이 없는 종목은 빈 채로 둔다")
+
+calls = []
+def _boom():
+    calls.append(1)
+    raise RuntimeError("로그인 필요")
+R2 = {"0158S0": {"ticker": "0158S0", "name_en": ""}}
+ok(M.fill_name_en_from_krx(R2, fetch=_boom) == 0 and not R2["0158S0"]["name_en"] and calls,
+   "★ 받지 못하면 건너뛴다(수집을 멈추지 않는다)")
+calls.clear()
+ok(M.fill_name_en_from_krx({"005930": {"ticker": "005930", "name_en": "X Co"}}, fetch=_boom) == 0
+   and not calls, "빈 종목이 없으면 한국거래소를 부르지 않는다")
+
+# main() 의 순서 — 수동 목록(NAME_EN_OVERRIDE)이 한국거래소 값보다 먼저다.
+with tempfile.TemporaryDirectory() as td:
+    cwd = os.getcwd()
+    os.chdir(td)
+    _saved = (M.get_latest_trading_date, M.collect_pykrx, M.enrich_with_dart, M.apply_categories,
+              M.krx_english_names)
+    try:
+        Path("data").mkdir()
+        ov = next(iter(M.NAME_EN_OVERRIDE))
+        base = [rec(str(i).zfill(6), "20260909") for i in range(60)]
+        base += [rec(ov, "20260909"), rec("0158S0", "20260909")]
+        Path("data/stocks.js").write_text(
+            "window.KOS_LIVE_DATA = " + json.dumps(
+                {"lastUpdated": "x", "dataDate": "20260908", "stocks": []}) + ";", encoding="utf-8")
+        M.get_latest_trading_date = lambda: "20260909"
+        M.collect_pykrx = lambda d: ({r["ticker"]: dict(r) for r in base}, "20260909")
+        M.enrich_with_dart = lambda r: r
+        M.apply_categories = lambda r: r
+        M.krx_english_names = lambda: {ov: "KRX NAME CO., LTD.", "0158S0": "ELICE GROUP CO., LTD."}
+        M.main()
+        raw = Path("data/stocks.js").read_text(encoding="utf-8")
+        out = {s["ticker"]: s for s in json.loads(raw[raw.find("{"): raw.rfind("}") + 1])["stocks"]}
+        ok(out.get(ov, {}).get("name_en") == M.NAME_EN_OVERRIDE[ov],
+           "★ 수동 목록 종목은 수동 값 그대로(한국거래소 값으로 바꾸지 않는다)", out.get(ov))
+        ok(out.get("0158S0", {}).get("name_en") == "ELICE GROUP CO., LTD.",
+           "★ main() 이 빈 종목을 한국거래소 영문명으로 채워 게시한다", out.get("0158S0"))
+    finally:
+        (M.get_latest_trading_date, M.collect_pykrx, M.enrich_with_dart, M.apply_categories,
+         M.krx_english_names) = _saved
+        os.chdir(cwd)
+
 print("⑩ 모듈 표면 — 함수를 통째로 갈아끼우다 상수를 흘리지 않았는지")
 # 실제로 한 번 흘렸다. collect_pykrx 를 정규식으로 잘라 바꾸면서 바로 뒤에
 # 붙어 있던 CORP_CLS_MARKET 이 같이 지워졌고, 962줄에서 그걸 쓰는 DART 보강이
