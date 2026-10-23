@@ -856,6 +856,12 @@ Consent · auth-action · Settings · stock · 404)은 스테이징과 같은 �
     모음이 없는 낱말(SDS · CNS · DTS)과 숫자가 든 낱말(3S · YES24)은 대문자 그대로, 하이픈 낱말은 조각마다(A-Jin · Dong-A ST), 보통 낱말 ·
     로마자 음절은 첫 글자만 대문자(Samsung · Korean Air Lines · Dong Il). 새 상장사의 모음이 든 약어가 소문자로 보이면 두 목록(staging/i18n.js
     cleanEn 의 `ACR` · check_report_text `_EN_ACR`)에 같이 더한다 — check_report_text_test 가 시세 자료의 영문명 전부를 두 판에 넣어 견준다.
+  · **영문명이 빈 신규 상장사는 한국거래소 공식 영문 종목명으로**(2026-10-23 사장 "모비콘텐츠테크랑 엘리스는 영어모드에서 이름이 한국어로
+    보이는데?") — DART 영문명(corp_name_eng)은 회사가 등록해야 생겨 신규 상장사는 몇 주에서 몇 달 비어 있다(그날 5개). 수집(collect_data.py)이
+    DART · 수동 목록(NAME_EN_OVERRIDE) 뒤에도 빈 종목을 한국거래소 전종목 기본정보의 영문 종목명(pykrx `전종목기본정보` · 로그인 필요)으로
+    채운다(`fill_name_en_from_krx` · 수동 목록이 먼저 · 받지 못하면 건너뛰고 실행 요약에 '남은 빈 종목' 수를 남긴다). 새 상장마다 수동 목록에
+    손으로 더하지 않아도 된다. 영문명 없이 쓴 신규 상장 리포트는 영어 본문의 회사 이름이 공식 이름과 다를 수 있다 — 그날 3편 · 모회사 리포트
+    1편을 공식 표기로 맞췄다('Mobi Contents Tech' → 'Mobicontents Tech' 등). 지키는 검사 data_freshness_test ⑫.
     종목코드 · 이메일이 문장 안에 끼는 안내('없는 종목' · 비밀번호 재설정)는 사전으로 못 바꿔 화면 코드가 영어 문장을 직접 쓴다.
   · 랜딩 카피 영어판(landing.json)은 직역하지 않고 같은 목소리로 — 기관 리서치의 말투, 큰 제목은 명사구 두 줄(휴대폰에서도 두 줄에 들어가게 짧게:
     'Beyond broker coverage' · 'Full analysis in one report'), 서브는 끝까지 쓴 문장, 과장·감탄 없음. 한국어 카피를 고치면 이 파일도 같이 고친다.
