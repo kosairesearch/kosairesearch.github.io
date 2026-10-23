@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-10-23 23:16",
+  "lastUpdated": "2026-10-23 23:25",
   "dataDate": "20261023",
   "stocks": [
     {
@@ -5229,7 +5229,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0158S0",
       "name": "엘리스",
-      "name_en": "",
+      "name_en": "Elice Inc.",
       "market": "코스닥",
       "sector": "IT·소프트웨어",
       "price": 94200,
@@ -13988,7 +13988,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0035S0",
       "name": "빅웨이브로보틱스",
-      "name_en": "",
+      "name_en": "Bigwave Robotics Corp",
       "market": "코스닥",
       "sector": "기계·장비",
       "price": 22300,
@@ -24787,7 +24787,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0161M0",
       "name": "네오사피엔스",
-      "name_en": "",
+      "name_en": "Neosapience, Inc.",
       "market": "코스닥",
       "sector": "IT·소프트웨어",
       "price": 7310,
@@ -26483,7 +26483,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0010S0",
       "name": "와이즈플래닛컴퍼니",
-      "name_en": "",
+      "name_en": "Wise Planet Company CO., LTD.",
       "market": "코스닥",
       "sector": "미디어·엔터",
       "price": 7820,
@@ -37154,7 +37154,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0077H0",
       "name": "모비콘텐츠테크",
-      "name_en": "",
+      "name_en": "MOBICONTENTS TECH INC.",
       "market": "코넥스",
       "sector": "미디어·엔터",
       "price": 60000,
