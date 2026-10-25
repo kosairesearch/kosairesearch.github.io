@@ -409,7 +409,10 @@ Firebase Functions 의 `NAVER_CLIENT_ID` 는 네이버 로그인용이라 다른
   · **프로필 사진은 저장하지 않는다** — 화면 어디에도 쓰지 않는다. `functions/index.js` 의 socialLogin 이 저장하지 않고, 예전에 저장한
     카카오 · 네이버 사진 주소는 그 회원의 다음 로그인 때 지운다(`updateUser` 의 `photoURL: null`). 구글 로그인은 Firebase 가 사진 주소를
     스스로 기록한다 — 처리방침 2항에 적었다. 함수를 고치면 Actions → 🚀 Firebase 배포(deploy_functions.yml)를 돌려야 실제로 바뀐다.
-    그 배포 로그(9/14)에 Node.js 20 실행 환경이 2026-10-30 에 종료된다는 경고가 있다 — 그 뒤에는 실행 환경을 올려야 배포된다.
+    실행 환경은 노드 22 다(2026-10-25 · 노드 20 은 2026-10-30 에 지원이 끝나 그 뒤로는 배포할 수 없고 함수가 멈출 수 있었다 — 배포 도구 경고).
+    판은 세 자리에 있다 — firebase.json 의 runtime · functions/package.json 의 engines · deploy_functions.yml 의 setup-node. 함께 고친다
+    (지키는 검사 functions/tests/runtime.test.mjs — 셋이 다르거나 끝난 판이면 걸린다). 배포 기록(data/deploy_functions.log)에 다음 판의
+    종료 경고가 보이면 그때 올린다.
   · **처리방침**(2026-10-04 공고 · 10-11 시행 · 원문 `scripts/content/privacy.src.html`) — 회원 식별번호(소셜 로그인 uid 는 `naver:{id}` ·
     `kakao:{id}`), 네이버 연결 해제용 갱신 토큰(탈퇴 때 쓰고 지운다), GitHub, Inc.(웹사이트 호스팅 · 접속 기록) 위탁과 국외 이전,
     구글 애널리틱스 정보의 국외 이전을 넣었다. **새로 저장하는 정보나 새 위탁처가 생기면 처리방침부터** — 방침은 실제 처리와 같아야 한다.

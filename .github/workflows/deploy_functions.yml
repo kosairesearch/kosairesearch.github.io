@@ -20,7 +20,7 @@ jobs:
       - name: Node 설정
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: 함수 의존성 설치
         run: cd functions && npm install
@@ -100,6 +100,21 @@ jobs:
           firebase deploy --project kosai-ae167 --non-interactive --force \
             --only functions:socialLogin,functions:sendVerifyEmail,functions:sendResetEmail,functions:submitForm,functions:getReport,functions:deleteAccount,functions:getUsage,functions:recordSignupConsent,functions:setMarketingConsent,functions:purgeUnconsented,functions:signinHint,functions:adminConsentStats,functions:adminConsentLookup,functions:adminMarketingList,functions:adminUserList,functions:adminNotifyUnconsented,functions:wakeMorningBrief,functions:wakeMorningBriefBackup,functions:watchMorningBrief,functions:adminWakeBrief,functions:adminPurgeOrphans,functions:marketingRecheck,functions:adminMarketingRecheck,functions:reviewAdminAccessLogs \
             2>&1 | tee -a /tmp/deploy.log
+
+      # 올라간 함수가 실제로 요청을 받는지 본다(2026-10-25 실행 환경을 노드 22 로 올리며 더함).
+      # 로그인 함수의 '미리 깨우기' 요청은 아무것도 읽거나 쓰지 않고 {warm:true} 만 돌려준다.
+      - name: 배포 뒤 응답 확인
+        run: |
+          for i in 1 2 3; do
+            out=$(curl -sS -m 30 -X POST -H 'Content-Type: application/json' \
+              -d '{"data":{"warm":true}}' \
+              https://asia-northeast3-kosai-ae167.cloudfunctions.net/socialLogin || true)
+            echo "socialLogin 응답: $out" | tee -a /tmp/deploy.log
+            echo "$out" | grep -q '"warm":true' && exit 0
+            sleep $((i*10))
+          done
+          echo "로그인 함수가 응답하지 않습니다" | tee -a /tmp/deploy.log
+          exit 1
 
       - name: 배포 로그 저장(디버그)
         if: always()
