@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-10-27 05:22",
+  "lastUpdated": "2026-10-27 05:33",
   "dataDate": "20261026",
   "stocks": [
     {
@@ -42813,7 +42813,7 @@ window.KOS_LIVE_DATA = {
       "name": "이스트엔드",
       "name_en": "EASTEND CO.,LTD.",
       "market": "코넥스",
-      "sector": "기타",
+      "sector": "미디어·엔터",
       "price": 10620,
       "change": 0.0,
       "volume": 0,
@@ -42821,7 +42821,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.0228,
       "shares": 2150800,
       "categories": [
-        "기타"
+        "미디어·엔터"
       ],
       "rank": 2376
     },
