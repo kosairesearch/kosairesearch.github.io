@@ -1,0 +1,37 @@
+name: 🔎 네이버 수집 요청 (수동 · 한 번만)
+
+# 사이트맵의 종목 페이지(한국어 · 영어) 주소를 네이버에 한 번에 알린다(IndexNow).
+# 2026-10-03 종목 페이지 주소가 바뀐 뒤 네이버 검색 방문이 절반 안팎으로 줄어(2026-10-19 · 10-26 주간 보고) 만들었다.
+# 같은 주소를 매일 되풀이해 보내지 않는다 — 예약(schedule)을 걸지 말 것(걸어도 스크립트가 보내지 않고 멈춘다).
+# 주소가 대량으로 새로 생겼을 때만 손으로 돌린다. 돈 안 든다. 아무것도 커밋하지 않고, 보낸 주소 수와 응답 코드만 남긴다.
+# 쓰는 법 · 보낸 날은 CLAUDE.md '네이버 검색' 절.
+
+on:
+  workflow_dispatch:
+    inputs:
+      send:
+        description: '실제로 보낼지 (끄면 몇 개를 보낼지만 본다)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 네이버에 알리기
+        env:
+          SEND: ${{ inputs.send }}
+        run: |
+          if [ "$SEND" = "true" ]; then
+            python3 scripts/naver_indexnow.py --send
+          else
+            python3 scripts/naver_indexnow.py
+          fi

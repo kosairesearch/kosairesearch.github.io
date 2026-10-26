@@ -105,6 +105,8 @@ run "마케팅 숫자 잠금" python3 scripts/tests/marketing_seal_test.py
 # 한국거래소 로그인 아이디(2026-10-08) — pykrx 가 로그인 때 찍는 아이디가 data/ 기록 파일로 커밋돼 공개 저장소에 올라갔다.
 # 로그인 정보를 쓰는 단계의 기록이 가림 필터를 거치는지, 저장소에 가리지 않은 아이디가 남았는지 본다.
 run "로그인 아이디 가림" python3 scripts/tests/krx_id_test.py
+# 네이버 수집 요청(2026-10-26) — 사이트맵의 종목 페이지만, 손으로 한 번만 보내는지(예약 실행이면 멈춘다) 가짜 네이버로 받아 본다.
+run "네이버 수집 요청" python3 scripts/tests/naver_indexnow_test.py
 run "집계 제외"    node tests/analytics-optout.test.mjs
 run "행동 기록"    node tests/analytics-events.test.mjs
 run "브리핑 생성"   python3 scripts/test_brief_gen.py
