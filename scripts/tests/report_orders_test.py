@@ -13,6 +13,9 @@
   ⑤ 못 받은 배치  신규 상장용 배치가 80분을 넘기면 그대로 버려졌다(2026-09-24). 다음 실행이 먼저 받는다.
   ⑥ 정정 공시     정정 공시만 나온 종목을 따로 알린다(생성기가 숫자를 견준다). 숫자가 같았던 정정 공시는
                   다시 고르지 않는다(2026-10-07 같은 숫자로 14개를 다시 써 $3.97).
+  ⑦ 옛 형식 갱신  새 형식을 만들 수 없는 종목(코넥스 · 리츠 · 외국 기업 · 사업보고서 전 신규 상장)은 공시가 나와도
+                  옛 형식 리포트가 그대로였다 — 6월 옛 형식 110편(2026-10-27). 공시 트리거가 옛 형식 생성기(배치)로
+                  넘기고, 세 번 저장하지 못한 종목은 14일 동안 다시 주문하지 않는다.
 """
 import io
 import json
@@ -31,6 +34,7 @@ import check_filings as CF            # noqa: E402
 import new_listings as NL             # noqa: E402
 import generate_reports as G          # noqa: E402
 import generate_reports_batch as GB   # noqa: E402
+_GB_SUBMIT = GB.submit                # ⑤ 가 가짜로 바꾸기 전의 진짜 주문 함수(⑦ 이 쓴다)
 
 passed = failed = 0
 
@@ -445,6 +449,66 @@ GB.collect_pending(cl, "2026-10-23 23:30")
 GB.REPAIR = True
 ok(not written and cl.messages.batches.reviews == [], "교정을 끄면(NEW_LISTING_REPAIR=0) 걸린 글은 저장하지 않는다")
 ok(GB.REPAIR_ROUNDS == 2 and GB.REPAIR_WAIT == 1800, "교정은 두 회차 · 30분까지 기다린다", f"{GB.REPAIR_ROUNDS} · {GB.REPAIR_WAIT}")
+
+print("⑦ 공시 트리거 — 새 형식을 만들 수 없는 종목의 옛 형식 리포트를 배치로 다시 쓴다(2026-10-27)")
+import datetime as _dt   # noqa: E402
+_td = _dt.date.today()
+_ago = lambda n: (_td - _dt.timedelta(days=n)).isoformat() + " 23:30"
+_fails = {A: {"n": 3, "last": _ago(1)}, B: {"n": 3, "last": _ago(20)}, C: {"n": 2, "last": _ago(1)}, D: {"n": 5, "last": ""}}
+ok(GB.stuck_tickers(_fails) == {A, D}, "세 번 저장하지 못했고 마지막 실패가 14일 안인 종목만 막는다(날짜를 모르면 막는다)",
+   str(sorted(GB.stuck_tickers(_fails))))
+
+
+class _SubBatches:
+    def __init__(self):
+        self.reqs = []
+
+    def create(self, requests):
+        self.reqs.append(requests)
+        return types.SimpleNamespace(id=f"msgbatch_LEG{len(self.reqs)}")
+
+
+_saved7 = (GB.SKIP_FAILED, G.get_dart_financials, G.build_prompt, G.load_stocks, GB.load_existing, os.environ.get("REPORT_TICKERS"))
+try:
+    G.load_stocks = lambda: {"stocks": [{"ticker": t, "name": f"회사{t}", "mcap": 1} for t in (A, B, C, D)], "dataDate": "20261027"}
+    G.get_dart_financials = lambda tk: None
+    G.build_prompt = lambda st, as_of, dart: f"재료 {st['ticker']}"
+    GB.load_existing = lambda: ({}, set())
+    GB.FAIL_JS.write_text(json.dumps(_fails), encoding="utf-8")
+    os.environ["REPORT_TICKERS"] = ",".join([A, B, C, D])
+    _sb = _SubBatches()
+    _cl7 = types.SimpleNamespace(messages=types.SimpleNamespace(batches=_sb))
+    GB.SKIP_FAILED = True
+    _GB_SUBMIT(_cl7, "2026-10-27 20:30")
+    _st7 = json.loads(GB.STATE_JS.read_text(encoding="utf-8"))
+    _got = [r["custom_id"] for r in _sb.reqs[0]]
+    ok(_got == [B, C] and _st7.get("tickers") == [B, C] and _st7.get("pending") is True,
+       "공시 트리거가 넘긴 종목 — 막힌 종목(A · D)을 빼고 주문하고, 주문한 종목을 상태 파일에 적는다", f"{_got} · {_st7.get('tickers')}")
+    _p = _sb.reqs[0][0]["params"]
+    ok(_p["model"] == GB.MODEL == "claude-sonnet-5-5" and _p["thinking"] == {"type": "adaptive"} and _p["max_tokens"] == 96000,
+       "요청 — Sonnet 5.5 · adaptive · 출력 한도 96,000", str({k: _p[k] for k in ("model", "thinking", "max_tokens")}))
+    GB.SKIP_FAILED = False
+    _GB_SUBMIT(_cl7, "2026-10-27 20:31")
+    ok([r["custom_id"] for r in _sb.reqs[1]] == [A, B, C, D], "손으로 지정한 실행은 빼지 않는다")
+finally:
+    GB.SKIP_FAILED, G.get_dart_financials, G.build_prompt, G.load_stocks, GB.load_existing = _saved7[:5]
+    if _saved7[5] is None:
+        os.environ.pop("REPORT_TICKERS", None)
+    else:
+        os.environ["REPORT_TICKERS"] = _saved7[5]
+
+_wf = (HERE.parent.parent / ".github" / "workflows" / "filing_reports.yml").read_text(encoding="utf-8")
+import yaml   # noqa: E402
+_steps = yaml.safe_load(_wf)["jobs"]["trigger"]["steps"]
+_v2 = next((i for i, x in enumerate(_steps) if x.get("id") == "v2"), None)
+_leg = next((i for i, x in enumerate(_steps) if "generate_reports_batch.py" in (x.get("run") or "")), None)
+_e = (_steps[_leg].get("env") or {}) if _leg is not None else {}
+ok(_v2 is not None and _leg == _v2 + 1 and _steps[_leg].get("if") == "steps.v2.outputs.legacy != ''"
+   and _e.get("REPORT_TICKERS") == "${{ steps.v2.outputs.legacy }}" and _e.get("REPORT_MODEL") == "claude-sonnet-5-5"
+   and _e.get("REPORT_SKIP_FAILED") == "1" and "generate_reports_batch.py auto" in _steps[_leg]["run"]
+   and "generate_reports.py" not in _steps[_leg]["run"].replace("generate_reports_batch.py", ""),
+   "공시 트리거 작업 — 새 형식 단계 바로 뒤에서 legacy 종목을 옛 형식 생성기(배치 · Sonnet 5.5)로 다시 쓴다",
+   f"새 형식 단계 {_v2} · 옛 형식 단계 {_leg}")
 
 print(f"\n통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)

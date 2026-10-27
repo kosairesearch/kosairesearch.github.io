@@ -58,7 +58,8 @@ jobs:
           # pykrx 는 한국거래소에 로그인할 때 아이디를 찍는다 — 저장소에 남는 기록에서는 가린다(2026-10-08).
           python scripts/collect_valuation.py 2>&1 | sed -u 's/\(로그인 ID: \).*/\1(가림)/' | tee data/valuation_run.log || true
 
-      - name: 신규 제출 종목 리포트 생성 (v2 · batch · 상위500 Opus/나머지 Sonnet)
+      - name: 신규 제출 종목 리포트 생성 (v2 · batch · 상위300 Opus/나머지 Sonnet)
+        id: v2
         if: steps.filings.outputs.count != '0' && steps.filings.outputs.count != ''
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -80,6 +81,24 @@ jobs:
           echo "=== 공시 트리거 v2 생성 $(date -u) · 대상 ${{ steps.filings.outputs.new_tickers }} ===" > data/reports_v2_run.log
           # pykrx 는 한국거래소에 로그인할 때 아이디를 찍는다 — 저장소에 남는 기록에서는 가린다(2026-10-08).
           python scripts/generate_reports_v2.py auto 2>&1 | sed -u 's/\(로그인 ID: \).*/\1(가림)/' | tee -a data/reports_v2_run.log
+
+      # 새 형식을 만들 수 없는 종목(공시 재무 조회에 연간 재무가 없다 — 코넥스 · 리츠 · 인프라펀드 · 외국 기업 · 사업보고서를
+      # 아직 내지 않은 신규 상장)은 옛 형식 리포트를 그 공시로 다시 쓴다(2026-10-27 · 배치만 · Sonnet 5.5). 위 단계가 그 종목을
+      # legacy 로 넘긴다(정정 공시만 나온 종목은 넘기지 않는다). 지난 옛 형식 배치를 받기 전에는 새로 주문하지 않고, 저장하지
+      # 못한 횟수가 세 번인 종목은 뺀다(REPORT_SKIP_FAILED). 한 시간 안에 끝나지 않으면 다음 실행 · 신규 상장 작업이 받는다.
+      - name: 새 형식을 만들 수 없는 종목 — 옛 형식 리포트 갱신 (batch · Sonnet 5.5)
+        if: steps.v2.outputs.legacy != ''
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          REPORT_MODEL: 'claude-sonnet-5-5'
+          REPORT_TICKERS: ${{ steps.v2.outputs.legacy }}
+          REPORT_SKIP_FAILED: '1'
+          BATCH_MAX_WAIT_SEC: '3600'
+        run: |
+          set -o pipefail
+          echo "=== 공시 트리거 옛 형식 갱신 $(date -u) · 대상 $REPORT_TICKERS ===" > data/reports_run.log
+          python scripts/generate_reports_batch.py auto 2>&1 | tee -a data/reports_run.log
 
       - name: 커밋 & 푸시
         if: always()

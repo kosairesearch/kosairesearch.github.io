@@ -11,7 +11,10 @@ generate_reports.py 의 프롬프트·DART·파싱 로직을 그대로 재사용
   auto     — submit 후 완료까지 폴링하고 collect (기본)
 
 환경변수: ANTHROPIC_API_KEY(필수), DART_API_KEY, REPORT_MODEL, REPORT_TOP_N,
-          REPORT_FRESH_DAYS, REPORT_FORCE, BATCH_MAX_WAIT_SEC
+          REPORT_FRESH_DAYS, REPORT_FORCE, BATCH_MAX_WAIT_SEC, REPORT_TICKERS, REPORT_SKIP_FAILED
+
+쓰는 곳: 신규 상장 작업(new_listings.yml · 평일 밤), 공시 트리거(filing_reports.yml — 새 형식을 만들 수 없는 종목의
+옛 형식 리포트를 그 공시로 다시 쓴다 · 2026-10-27), 손으로 돌리는 대량 생성(generate_reports_batch.yml).
 """
 
 import os
@@ -35,6 +38,11 @@ STATE_JS = ROOT / "data" / "batch_state.json"
 # 재시도하지 않는다. 저장하면 그 종목 줄을 지운다. 사람이 다시 시도하게 하려면 이 파일에서 그 종목을 지운다.
 FAIL_JS = ROOT / "data" / "new_listing_fail.json"
 FAIL_MAX = 3
+# 공시 트리거가 넘긴 종목(REPORT_SKIP_FAILED=1)은 저장하지 못한 횟수가 FAIL_MAX 번인 종목을 뺀다(2026-10-27). 공시 트리거는
+# 리포트가 공시보다 낡으면 하루 세 번 같은 종목을 다시 고른다 — 같은 이유로 또 걸리면 돈만 나간다. 리포트 v2 와 같이
+# 마지막 실패에서 FAIL_RESET_DAYS(14일)가 지나면 다시 고른다. 손으로 종목을 지정한 실행은 빼지 않는다.
+SKIP_FAILED = os.getenv("REPORT_SKIP_FAILED", "") == "1"
+FAIL_RESET_DAYS = 14
 
 
 def load_fails():
@@ -49,6 +57,22 @@ def save_fails(fails):
         FAIL_JS.write_text(json.dumps(fails, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     elif FAIL_JS.exists():
         FAIL_JS.unlink()
+
+
+def stuck_tickers(fails, today=None):
+    """저장하지 못한 횟수가 FAIL_MAX 번 이상이고 마지막 실패가 FAIL_RESET_DAYS 안인 종목."""
+    today = today or datetime.date.today()
+    out = set()
+    for tk, e in (fails or {}).items():
+        if not isinstance(e, dict) or int(e.get("n", 0)) < FAIL_MAX:
+            continue
+        try:
+            last = datetime.date.fromisoformat(str(e.get("last", ""))[:10])
+        except ValueError:
+            last = today                     # 날짜를 모르면 막는다(돈이 나가는 쪽을 피한다)
+        if (today - last).days <= FAIL_RESET_DAYS:
+            out.add(tk)
+    return out
 
 
 def bump_fail(fails, tk, why, as_of):
@@ -121,6 +145,13 @@ def submit(cl, as_of):
         stocks = sorted(data["stocks"], key=lambda x: x.get("mcap", 0) or 0, reverse=True)[:TOP_N]
     _, fresh = load_existing()
     targets = [s for s in stocks if FORCE or s["ticker"] not in fresh]
+    if SKIP_FAILED:
+        stuck = stuck_tickers(load_fails())
+        held = [s["ticker"] for s in targets if s["ticker"] in stuck]
+        if held:
+            log(f"- 저장하지 못한 횟수가 {FAIL_MAX}번인 {len(held)}개는 다시 주문하지 않는다"
+                f"(data/new_listing_fail.json · 마지막 실패에서 {FAIL_RESET_DAYS}일 뒤 다시 고른다): {','.join(held[:20])}")
+            targets = [s for s in targets if s["ticker"] not in stuck]
     log(f"## 🤖 Batch 제출 — 대상 {len(targets)}개 / 상위 {TOP_N}개 (최근 {len(fresh)}개 건너뜀) · 모델 {MODEL}")
     if not targets:
         log("- 갱신할 종목이 없습니다(모두 최근). 종료.")
@@ -152,6 +183,7 @@ def submit(cl, as_of):
         "model": MODEL,
         "dataDate": data.get("dataDate", ""),
         "count": len(reqs),
+        "tickers": [r["custom_id"] for r in reqs],
         "pending": True,      # 회수하면 지운다 — 다음 실행이 못 받은 배치를 먼저 받는다(collect_pending)
     }
     STATE_JS.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
