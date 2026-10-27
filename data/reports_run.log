@@ -1,32 +1,4 @@
-=== 배치(submit) 시작 Tue Oct 27 11:43:13 UTC 2026 ===
-## 🤖 Batch 제출 — 대상 3개 / 상위 100개 (최근 112개 건너뜀) · 모델 claude-sonnet-5-5
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+=== 배치(collect) 시작 Tue Oct 27 12:09:59 UTC 2026 ===
 
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-  · 준비 244880 나눔테크 (DART X)
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-  · 준비 417030 니어스랩 (DART O)
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-{'status': '013', 'message': '조회된 데이타가 없습니다.'}
-
-  · 준비 0070X0 에스테크엠 (DART X)
-- ✅ 배치 제출 완료: msgbatch_015i9KvAMJ4DZhJyTRyUHE8m (3건) → data/batch_state.json
+✅ 회수 완료 · 성공 3/실패 0 · 총 보유 2685개 → data/reports/ + reports-index.js
+💵 claude-sonnet-5-5 3회(배치) · 입력 13,582(캐시쓰기 167,814·읽기 144,330) · 출력 53,872 · 검색 15 → 약 $0.65

@@ -9,5 +9,16 @@
     "417030",
     "0070X0"
   ],
-  "pending": true
+  "collected": "2026-10-27 21:10",
+  "usage": {
+    "claude-sonnet-5-5": {
+      "n": 3,
+      "in": 13582,
+      "cache_w": 167814,
+      "cache_r": 144330,
+      "out": 53872,
+      "search": 15,
+      "usd": 0.65
+    }
+  }
 }
