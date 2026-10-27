@@ -207,12 +207,25 @@ def poll(cl, batch_id):
     return False
 
 
+def _count_types(blocks):
+    """응답 블록 종류별 개수 — [('text', 12), ('thinking', 3), …](처음 나온 순서)."""
+    seen = {}
+    for blk in blocks:
+        t = getattr(blk, "type", "?")
+        seen[t] = seen.get(t, 0) + 1
+    return list(seen.items())
+
+
 def diagnose(message):
     """저장 문턱(valid_report)에 걸린 글의 사정 — 무엇이 빠졌고 JSON 이 어디서 깨졌는가(2026-10-27). 그날 옛 형식 110편 중
     3편이 정상 종료(end_turn)인데 필수 항목이 비어 버려졌고, 원문이 남지 않아 까닭을 알 수 없었다. 돈이 들지 않는다."""
     text = g.extract_text(message)
     m = re.search(r"===JSON_START===(.*?)===JSON_END===", text, re.S)
+    u = getattr(message, "usage", None)
+    st = getattr(u, "server_tool_use", None)
     out = {"stop": getattr(message, "stop_reason", None), "len": len(text),
+           "out_tokens": getattr(u, "output_tokens", None), "searches": getattr(st, "web_search_requests", None),
+           "blocks": ",".join(f"{t}{n}" for t, n in _count_types(getattr(message, "content", None) or [])),
            "markers": text.count("===JSON_START==="), "closed": bool(m)}
     chunk = (m.group(1) if m else text).strip()
     a, b = chunk.find("{"), chunk.rfind("}")
