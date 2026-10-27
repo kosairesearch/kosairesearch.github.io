@@ -131,6 +131,9 @@ run "공시 종목코드" python3 scripts/tests/dart_reader_test.py
 # 2026-10-08 사장 "무조건 batch API만 · 모닝브리핑 제외". 즉시 호출(값 두 배)이 예약 작업 둘(신규 상장의 업종 분류 ·
 # 마케팅 주간 보고)과 리포트 회수 단계 보정에 남아 있었다. 즉시 호출 자리가 새로 생기거나, 옛 스크립트에 예약이 걸리면 여기서 걸린다.
 run "배치 전용"     python3 scripts/tests/batch_only_test.py
+# 2026-10-27 사장 "예전에는 100편에 10달러도 안 들었다 · 이유를 찾아라". 계정 전체의 배치 비용을 결과에서 다시 세는 점검
+# (💵 배치 비용 점검 · 돈 안 듦)이 모델을 부르지 않고, 성공한 요청만 배치 단가로 세는지.
+run "배치 비용 점검" python3 scripts/tests/batch_cost_audit_test.py
 # 분기 창·TTM 롤포워드 — 시즌마다 최신 분기가 표에 들어오는지.
 run "분기 창"       python3 scripts/test_quant_quarters.py
 # 시세 원본(FinanceData KRX 캐시 CSV)이 2026-09-08 부터 404 가 됐는데, 수집기가
