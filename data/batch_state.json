@@ -4,5 +4,27 @@
   "model": "claude-sonnet-5-5",
   "dataDate": "20261026",
   "count": 110,
-  "pending": true
+  "usage_repair": {
+    "claude-sonnet-5-5": {
+      "n": 29,
+      "in": 108183,
+      "cache_w": 0,
+      "cache_r": 0,
+      "out": 56227,
+      "search": 0,
+      "usd": 0.3893
+    }
+  },
+  "collected": "2026-10-27 17:40",
+  "usage": {
+    "claude-sonnet-5-5": {
+      "n": 110,
+      "in": 554738,
+      "cache_w": 5834016,
+      "cache_r": 4659170,
+      "out": 1849090,
+      "search": 511,
+      "usd": 22.436
+    }
+  }
 }
