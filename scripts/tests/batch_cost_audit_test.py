@@ -78,7 +78,8 @@ RESULTS = {
 }
 BATCHES = [batch("b_new", NOW - datetime.timedelta(hours=3), n=3),
            batch("b_run", NOW - datetime.timedelta(hours=1), status="in_progress", n=2),
-           batch("b_sec", NOW - datetime.timedelta(days=2), n=1)] + \
+           batch("b_sec", NOW - datetime.timedelta(days=2), n=1),
+           batch("b_gone", NOW - datetime.timedelta(days=28, hours=20), n=7)] + \
           [batch(f"b_old{i}", NOW - datetime.timedelta(days=40 + i), n=1) for i in range(25)]
 
 
@@ -91,6 +92,8 @@ class FakeBatches:
 
     def results(self, bid):
         self.read.append(bid)
+        if bid == "b_gone":     # 보관 기간 경계 — 결과가 먼저 지워졌다(실제 404 'has no available results')
+            raise RuntimeError("Batch b_gone has no available results.")
         return iter(RESULTS.get(bid, RESULTS["b_old"]))
 
     def create(self, **_kw):
@@ -119,6 +122,7 @@ ok(sorted(x["id"] for x in r["batches"]) == ["b_new", "b_sec"], "기간 안 · �
    str(cl.messages.batches.read))
 ok(not any(b.startswith("b_old") for b in cl.messages.batches.read), "기간 밖 배치의 결과는 받지 않는다")
 ok([p["id"] for p in r["pending"]] == ["b_run"], "처리 중인 배치는 따로 둔다")
+ok([g_["id"] for g_ in r["gone"]] == ["b_gone"], "결과가 이미 지워진 배치는 멈추지 않고 따로 적는다")
 want = g.cost_usd(S55, A._usage(msg(S55, U1)), batch=True) * 2 + g.cost_usd(O55, A._usage(msg(O55, U2)), batch=True) \
     + g.cost_usd(S55, A._usage(msg(S55, U3)), batch=True)
 got = sum(b["usd"] for b in r["by_kind"].values())
@@ -164,7 +168,7 @@ ok(cl2.messages.counted == 1 and f"업종 분석 작성 · {S55}" in share2, "�
 RESULTS["b_sec"] = [res("sec_0123456789abcdef", msg(S55, U1))]
 text = A.report(r, share, (2, 0.5), days=29, dates={})
 for need in ("청구 조건 확인", "일의 종류별", "모델별 평균", "금액 구성", "날짜별", "배치별", "리포트 v2 보정", "(처리 중)",
-             "모닝브리핑(즉시 호출) 2편 $0.50", "9,000 (56%)"):
+             "모닝브리핑(즉시 호출) 2편 $0.50", "9,000 (56%)", "(결과 지워짐)", "결과가 이미 지워진 배치 1개"):
     ok(need in text, f"표에 '{need}'")
 
 print("③-2 주문 대비 저장 — 다시 주문한 종목 · 저장되지 않은 주문")
