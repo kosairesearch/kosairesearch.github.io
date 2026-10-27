@@ -249,7 +249,7 @@ check("_tally" in gen and "_log_usage" in gen, "쓴 토큰과 웹 검색 횟수�
 #    추정액의 단가가 리포트 생성기의 배치 단가표와 같아야 한다. 한때 옛 정가의 절반($1.5/$7.5)을
 #    적어 두어 추정액이 실제보다 1.5배 크게 찍혔다(2026-10-08 · 정가는 generate_brief.PRICES 의 $2/$10).
 def _rate(path, name):
-    m = re.search(r'"claude-sonnet-5":\s*\(([\d.]+),\s*([\d.]+)\)', (ROOT / "scripts" / path).read_text(encoding="utf-8")
+    m = re.search(r'"claude-sonnet-5-5":\s*\(([\d.]+),\s*([\d.]+)\)', (ROOT / "scripts" / path).read_text(encoding="utf-8")
                   .split(name, 1)[-1])
     return (float(m.group(1)), float(m.group(2))) if m else None
 

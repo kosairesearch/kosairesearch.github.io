@@ -453,9 +453,35 @@ ok("changes 목록을 {경로: 글} 로 — 모양이 틀린 항목은 버린다
 ok("자리를 하나도 못 짚는 사유면 전부 연다(빈 enum 을 API 에 보내지 않는다)",
    G._allowed_paths(_orig, ["제목이 이상하다"]) == {p for p, _ in G._walk(_orig)})
 _u = type("Usage", (), {"input_tokens": 20000, "output_tokens": 5000})()   # 아래 ⑬의 U() 와 같은 값
-ok("수리 모델은 Sonnet · 값이 그 단가($2/$10)로 계산된다 (2만/5천 토큰 → $0.09, Opus 5.5 면 $0.18)",
-   G.REPAIR_MODEL == "claude-sonnet-5" and abs(G.cost(_u, model="claude-sonnet-5")["usd"] - 0.09) < 1e-6
-   and abs(G.cost(_u)["usd"] - 0.18) < 1e-6, str(G.cost(_u, model="claude-sonnet-5")))
+ok("수리 모델은 Sonnet 5.5 · 값이 그 단가($2/$10)로 계산된다 (2만/5천 토큰 → $0.09, Opus 5.5 면 $0.18)",
+   G.REPAIR_MODEL == "claude-sonnet-5-5" and abs(G.cost(_u, model="claude-sonnet-5-5")["usd"] - 0.09) < 1e-6
+   and abs(G.cost(_u)["usd"] - 0.18) < 1e-6, str(G.cost(_u, model="claude-sonnet-5-5")))
+
+
+# 수리 호출의 '사고 끔'(2026-10-27 · Sonnet 5.5 로 옮기며). Sonnet 5.5 는 thinking disabled 를 400 으로 거절하고,
+# between_tools 는 Sonnet 5.5 밖의 모델이 거절한다. 400 이면 수리가 통째로 실패해 예비 실행이 글을 새로 쓴다($0.3).
+class _RepMsgs:
+    def __init__(self):
+        self.sent = []
+
+    def create(self, **kw):
+        from types import SimpleNamespace as _NS
+        self.sent.append(kw)
+        return _NS(content=[_NS(type="text", text='{"changes": []}')], usage=_u)
+
+
+import model_params as _MP   # noqa: E402
+ok("사고 끔 설정 — Sonnet 5.5 는 between_tools · Sonnet 5 는 disabled · 4.x 는 비워 둔다",
+   _MP.thinking_off("claude-sonnet-5-5") == {"thinking": {"type": "between_tools"}}
+   and _MP.thinking_off("claude-sonnet-5") == {"thinking": {"type": "disabled"}}
+   and _MP.thinking_off("claude-sonnet-4-6") == {})
+_rc = type("CL", (), {})()
+_rc.messages = _RepMsgs()
+G.repair(_rc, copy.deepcopy(_src), ["summary.ko 에 등락률 11개 — 나열이다. 대여섯 개까지만 두고 나머지는 말로 하라"])
+_rk = _rc.messages.sent[0] if _rc.messages.sent else {}
+ok("수리 호출 — Sonnet 5.5 · 사고는 between_tools 로 끈다(disabled 는 400) · 출력 틀(json_schema)",
+   _rk.get("model") == "claude-sonnet-5-5" and _rk.get("thinking") == {"type": "between_tools"}
+   and (_rk.get("output_config") or {}).get("format", {}).get("type") == "json_schema", str({k: _rk.get(k) for k in ("model", "thinking")}))
 ok("출력 한도 24,000 — 사고 토큰까지 담는다", G.MAX_TOKENS >= 24000)
 # 30자 상한이 "A는 올랐고 B는 내렸다" 식 짧은 대비 제목만 살아남게 했다.
 ok("35자 제목은 이제 통과",

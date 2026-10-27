@@ -623,7 +623,7 @@ def check(rep):
 # 프롬프트는 부탁이라 3.9% 가 샌다. 검사에서 걸린 섹션만 작은 모델에 넘겨 위반
 # 문장을 규칙에 맞게 고쳐 쓰게 한다. 사실은 바꾸지 않고 표현만 바꾼다. 고친 결과가
 # 검사를 더 적게 걸려야만 채택하고, 아니면 원문을 그대로 둔다(로그에 남는다).
-REPAIR_MODEL = os.getenv("REPORT_REPAIR_MODEL", "claude-sonnet-5")
+REPAIR_MODEL = os.getenv("REPORT_REPAIR_MODEL", "claude-sonnet-5-5")   # 2026-10-27 Sonnet 5 → 5.5(사장 승인)
 _RULE_TEXT = "\n".join(f"  · {key}: {why}" for key, _lv, _pat, why in RULES) + (
     "\n  · target_price: 목표주가 숫자는 증권사명과 시점이 같은 문장에 있을 때만. 둘 중 하나라도 없으면"
     " 그 수치를 지우고 정성 서술로(예: '증권사 목표주가는 큰 폭으로 갈린다')."
@@ -718,7 +718,7 @@ def repair(cl, rep, hits, model=None):
 # 글 전체를 다시 쓰게 하지 않는다 — 고칠 곳만 바꾸므로 멀쩡한 문장은 그대로고, 출력도 짧아 값이 싸다.
 # 받은 고침은 그대로 믿지 않는다: 옛 글이 그 칸에 정확히 한 번 있어야 하고, 새 글에 본문 · 재료에 없던 수치가 들어
 # 있으면 버린다(새 사실을 만들지 못하게). 고친 뒤 글자 결함이 늘면 검토 전체를 버린다. 배치로만 보낸다.
-REVIEW_MODEL = os.getenv("REPORT_REVIEW_MODEL", "claude-sonnet-5")
+REVIEW_MODEL = os.getenv("REPORT_REVIEW_MODEL", "claude-sonnet-5-5")
 REVIEW_MAX_PATCHES = 60
 
 _REVIEW_ITEMS = (

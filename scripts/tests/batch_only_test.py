@@ -217,6 +217,11 @@ try:
     ok(len(fb.created) == 1 and len(fb.created[0]) == 3, "새 종목 84개를 40개씩 3건으로 배치 하나에 주문한다",
        f"주문 {len(fb.created)} · 건 {len(fb.created[0]) if fb.created else 0}")
     ok(len(cache) == 85 and cache["900000"]["s"] == "화학", "답으로 캐시를 채우고 있던 분류는 그대로 둔다", str(len(cache)))
+    # Sonnet 5 이후는 thinking 을 비워 두면 사고가 켜져 출력 한도 3,000 을 먹는다(분류 JSON 이 잘린다). Sonnet 5.5 는
+    # disabled 가 400 이라 between_tools 로 끈다(2026-10-27 · model_params).
+    p0 = fb.created[0][0]["params"]
+    ok(p0["model"] == C.MODEL == "claude-sonnet-5-5" and p0.get("thinking") == {"type": "between_tools"},
+       "분류 요청 — Sonnet 5.5 · 사고는 between_tools 로 끈다", str({k: p0.get(k) for k in ("model", "thinking")}))
     try:
         holder["c"].messages.create(model="x")
         blocked = False

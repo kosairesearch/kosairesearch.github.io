@@ -54,8 +54,10 @@ def log(msg):
 # 정가(USD / 100만 토큰 · 입력, 출력) — 2026-10-03 공식 요금표 대조. 배치는 이 값의 절반이고,
 # 캐시 쓰기(5분)는 입력의 1.25배 · 캐시 읽기는 0.1배, 웹 검색은 1회 $0.01 이다.
 # 청구서가 아니라 추정이다 — 실제 청구는 콘솔이 답이다.
-PRICE = {"claude-opus-5-5": (4.0, 20.0), "claude-opus-5": (5.0, 25.0), "claude-sonnet-5": (2.0, 10.0),
-         "claude-opus-4-8": (5.0, 25.0), "claude-sonnet-4-6": (3.0, 15.0)}
+PRICE = {"claude-opus-5-5": (4.0, 20.0), "claude-opus-5": (5.0, 25.0), "claude-sonnet-5-5": (2.0, 10.0),
+         "claude-sonnet-5": (2.0, 10.0), "claude-opus-4-8": (5.0, 25.0), "claude-sonnet-4-6": (3.0, 15.0)}
+# 캐시 읽기가 입력의 0.1배가 아닌 모델(2026-10-27 요금표 — Opus 5.5 · Sonnet 5.5 는 0.05배).
+CACHE_R = {"claude-opus-5-5": 0.05, "claude-sonnet-5-5": 0.05}
 SPENT = {}   # 이번 실행의 모델별 합계(즉시 호출)
 
 
@@ -74,7 +76,7 @@ def usage_of(message):
 
 def cost_usd(model, u, batch=False):
     pin, pout = PRICE.get(model, (5.0, 25.0))
-    tok = ((u["in"] + u["cache_w"] * 1.25 + u["cache_r"] * 0.1) * pin + u["out"] * pout) / 1e6
+    tok = ((u["in"] + u["cache_w"] * 1.25 + u["cache_r"] * CACHE_R.get(model, 0.1)) * pin + u["out"] * pout) / 1e6
     return tok * (0.5 if batch else 1.0) + u["search"] * 0.01
 
 

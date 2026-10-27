@@ -22,11 +22,16 @@ from pathlib import Path
 
 import anthropic
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from model_params import thinking_off   # noqa: E402 — 모델마다 다른 '사고 끔' 설정
+
 ROOT = Path(__file__).resolve().parent.parent
 STOCKS_JS = ROOT / "data" / "stocks.js"
 CACHE = ROOT / "data" / "sector_map.json"
 
-MODEL = os.getenv("CLASSIFY_MODEL", "claude-sonnet-4-6")
+# 2026-10-27 Sonnet 4.6 → Sonnet 5.5(사장 "소넷 5.5 사용해"). 사고는 끈다 — Sonnet 4.6 은 thinking 을 비워 두면
+# 꺼졌지만 Sonnet 5.5 는 켜지고, 사고 토큰이 출력 한도(3,000)를 먹어 분류 JSON 이 잘린다(model_params).
+MODEL = os.getenv("CLASSIFY_MODEL", "claude-sonnet-5-5")
 FORCE = os.getenv("CLASSIFY_FORCE", "") == "1"
 BATCH = int(os.getenv("CLASSIFY_BATCH", "40"))
 WAIT = int(os.getenv("CLASSIFY_BATCH_WAIT_SEC", "1800"))
@@ -126,7 +131,7 @@ def classify_batch(client, chunks):
 
     WAIT 안에 끝나지 않으면 취소한다. 처리되지 않은 요청은 청구되지 않는다 — 그 사이 끝난 답은 쓴다."""
     reqs = [{"custom_id": f"c{i}", "params": {
-                "model": MODEL, "max_tokens": 3000, "system": SYSTEM,
+                "model": MODEL, "max_tokens": 3000, "system": SYSTEM, **thinking_off(MODEL),
                 "messages": [{"role": "user", "content": build_prompt(chunk)}]}}
             for i, chunk in enumerate(chunks)]
     b = client.messages.batches.create(requests=reqs)

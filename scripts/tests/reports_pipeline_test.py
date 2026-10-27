@@ -403,7 +403,7 @@ stt = json.loads(path.read_text(encoding="utf-8"))
 ok(path.exists() and stt["tickers"] == r["tickers"] and set(stt["quant"]) == set(r["tickers"]), "상태 파일에 tickers·quant")
 ok(S.inflight_tickers() == set(r["tickers"]), "주문한 종목은 곧바로 '진행 중'")
 req = cl.messages.batches.created[0][1][0]
-ok(req["params"]["model"] in ("claude-opus-5-5", "claude-sonnet-5") and req["params"]["thinking"] == {"type": "adaptive"}
+ok(req["params"]["model"] in ("claude-opus-5-5", "claude-sonnet-5-5") and req["params"]["thinking"] == {"type": "adaptive"}
    and req["params"]["max_tokens"] == 96000, "요청 모양(모델·adaptive thinking·max_tokens)")
 _by = {r["custom_id"]: r["params"] for r in cl.messages.batches.created[0][1]}
 ok(all((p.get("output_config") == {"effort": "medium"}) == (p["model"] == "claude-opus-5-5") for p in _by.values())
@@ -897,7 +897,7 @@ for x in r["bull"]:
 n = M.fill_missing_en(cl_fill, r)
 ok(n == 6 and M.valid_v2(r, quiet=True), "빈 영문 6곳을 채운다", f"n={n}")
 ok(r["bull"][0]["title"]["en"] == "EN0" and r["bull"][2]["body"]["en"] == "EN5", "순서대로 제자리에", str([x["title"]["en"] for x in r["bull"]]))
-ok(fm.sent[0]["model"] == "claude-sonnet-5", "값싼 모델을 쓴다", str(fm.sent[0]["model"]))
+ok(fm.sent[0]["model"] == "claude-sonnet-5-5", "값싼 모델을 쓴다", str(fm.sent[0]["model"]))
 ok(M.fill_missing_en(cl_fill, GOODREP()) == 0 and len(fm.sent) == 1, "채울 자리가 없으면 모델을 부르지 않는다")
 
 # (j) 회수 경로 통합 — 영문이 빠진 배치 결과는 보정을 배치로 주문하고(즉시 호출 없음 · 2026-10-08),
@@ -954,7 +954,7 @@ ok(not saved.exists() and stEN.get("deferred") == ["005930"] and not stEN.get("c
 ok(len(cl2.messages.batches.created) == 1, "보정 배치 하나를 주문한다 — 즉시 호출은 없다")
 rbid, rreqs = cl2.messages.batches.created[0]
 ok(rbid == (stEN.get("repair") or {}).get("batch_id") and len(rreqs) == 1 and rreqs[0]["custom_id"].startswith("005930-")
-   and rreqs[0]["params"]["model"] == "claude-sonnet-5" and len(rreqs[0]["custom_id"]) <= 64,
+   and rreqs[0]["params"]["model"] == "claude-sonnet-5-5" and len(rreqs[0]["custom_id"]) <= 64,
    "주문 모양(종목 이름 · 값싼 모델)", str(rreqs[0]["custom_id"]))
 ok("quant" in stEN and "005930" in S.inflight_tickers(), "답을 기다리는 동안 '진행 중' — 같은 종목을 다시 주문하지 않는다")
 ok(S.fail_count("005930") == f_before, "미룬 종목은 실패로 세지 않는다", f"{f_before} → {S.fail_count('005930')}")
@@ -966,7 +966,7 @@ cl2.messages.batches.store[rbid] = answer_batch(rbid, rreqs)
 M.pickup(cl2, "2026-09-05 04:00")
 stEN = json.loads(S.batch_path("msgbatch_EN").read_text(encoding="utf-8"))
 ok(saved.exists(), "답을 받은 다음 회수에서 저장한다")
-us = (stEN.get("usage_repair") or {}).get("claude-sonnet-5") or {}
+us = (stEN.get("usage_repair") or {}).get("claude-sonnet-5-5") or {}
 # 배치 단가 — (1,000 × $1 + 500 × $5) / 1M = $0.0035. 본 배치 사용량(usage)은 처음 회수 때 한 번만 센다.
 ok(us.get("n") == 1 and us.get("in") == 1_000 and abs(us.get("usd", 0) - 0.0035) < 1e-9 and "usage_sync" not in stEN,
    "보정 사용량을 배치 단가로 따로 남긴다", str(us))
@@ -1023,7 +1023,7 @@ ok(kinds == ["영문", "표현"] and st6.get("collected"), "영문 → 표현 �
 g6 = json.loads((S.OUT_DIR / "000020.json").read_text(encoding="utf-8")) if (S.OUT_DIR / "000020.json").exists() else {}
 ok(bool(g6) and "저평가된" not in g6["earnings"]["ko"] and "순자산을 밑도는" in g6["earnings"]["ko"]
    and g6["bull"][0]["body"]["en"].startswith("EN"), "두 보정이 모두 반영돼 저장된다")
-ok(len(st6.get("repairs") or []) == 2 and (st6.get("usage_repair") or {}).get("claude-sonnet-5", {}).get("n") == 2,
+ok(len(st6.get("repairs") or []) == 2 and (st6.get("usage_repair") or {}).get("claude-sonnet-5-5", {}).get("n") == 2,
    "보정 배치 두 번 · 사용량 두 건", str(st6.get("repairs")))
 T.repair = _repair_stub
 
@@ -1064,7 +1064,7 @@ ok(not (S.OUT_DIR / "000020.json").exists() and st7.get("deferred") == ["000020"
 rbid7, rreqs7 = cl7.messages.batches.created[0]
 c7 = rreqs7[0]["params"]["messages"][0]["content"]
 ok(len(rreqs7) == 1 and '"patches"' in c7 and "[재료 — 공시 확정치" in c7 and "[작성 기준일] 2026-09-05" in c7
-   and "[기계 검사에서 걸린 곳 — 반드시 고칠 것]" in c7 and rreqs7[0]["params"]["model"] == "claude-sonnet-5",
+   and "[기계 검사에서 걸린 곳 — 반드시 고칠 것]" in c7 and rreqs7[0]["params"]["model"] == "claude-sonnet-5-5",
    "검토 요청 — 값싼 모델 · 작성 기준일 · 재료(실적 표) · 기계 검사에 걸린 곳")
 cl7.messages.batches.store[rbid7] = answer_batch(rbid7, rreqs7)
 M.pickup(cl7, "2026-09-05 03:30")
@@ -1072,7 +1072,7 @@ g7 = json.loads((S.OUT_DIR / "000020.json").read_text(encoding="utf-8")) if (S.O
 ok(bool(g7) and "최근 5개 분기 중 최대였다." in g7["earnings"]["ko"] and "제공된" not in g7["earnings"]["ko"] and not T.check(g7),
    "검토의 고침을 적용해 저장한다 — 저장된 글은 검사를 통과한다")
 st7 = json.loads(S.batch_path("msgbatch_RV").read_text(encoding="utf-8"))
-ok((st7.get("usage_repair") or {}).get("claude-sonnet-5", {}).get("n") == 1, "검토 사용량을 보정 사용량에 남긴다(배치 단가)",
+ok((st7.get("usage_repair") or {}).get("claude-sonnet-5-5", {}).get("n") == 1, "검토 사용량을 보정 사용량에 남긴다(배치 단가)",
    str(st7.get("usage_repair")))
 M.REVIEW_ON = False
 
