@@ -510,5 +510,49 @@ ok(_v2 is not None and _leg == _v2 + 1 and _steps[_leg].get("if") == "steps.v2.o
    "공시 트리거 작업 — 새 형식 단계 바로 뒤에서 legacy 종목을 옛 형식 생성기(배치 · Sonnet 5.5)로 다시 쓴다",
    f"새 형식 단계 {_v2} · 옛 형식 단계 {_leg}")
 
+print("⑦-b 저장하지 못한 글의 사정 — 무엇이 빠졌고 JSON 이 어디서 깨졌는가(2026-10-27 · 110편 중 3편이 까닭 없이 버려졌다)")
+_broken = ('===JSON_START===' + '{"title": {"ko": "제목", "en": "t"}, "business": {"ko": "회사는 "드론" 사업을 한다", "en": "b"},'
+           ' "verdict": "v", "keypoints": ["a", "b", "c"], "risks": [{"x": 1}, {"y": 2}]}' + '===JSON_END===')
+_d = GB.diagnose(msg(_broken))
+ok(str(_d.get("json")).startswith("Expecting") and "드론" in _d.get("near", "") and _d["markers"] == 1 and _d["closed"],
+   "깨진 JSON — 오류 자리와 그 둘레 글을 남긴다", str({k: _d.get(k) for k in ("json", "markers", "closed")}))
+_d2 = GB.diagnose(msg("===JSON_START===" + json.dumps(dict(GOOD, risks=[{"x": 1}]), ensure_ascii=False) + "===JSON_END==="))
+ok(_d2["json"] == "ok" and _d2["need"] == {"verdict": True, "risks": 1, "keypoints": 3, "business": True},
+   "필수 항목 수를 센다(위험 요인 1개면 저장 문턱에 걸린다)", str(_d2.get("need")))
+_logs = []
+_saved7b = GB.log
+GB.log = lambda *a, **k: _logs.append(" ".join(str(x) for x in a))
+try:
+    GB.STATE_JS.write_text(json.dumps({"batch_id": "msgbatch_DUMP", "model": "claude-sonnet-5-5", "count": 2}), encoding="utf-8")
+    GB.FAIL_JS.write_text(json.dumps({D: {"n": 1, "last": "2026-10-27 17:40", "why": "불완전"}}), encoding="utf-8")
+    _fb7 = FakeBatches("ended", [bres(D, text=_broken), bres(E)])
+    _seen = GB.dump(types.SimpleNamespace(messages=types.SimpleNamespace(batches=_fb7)))
+    ok(_seen == {D} and any("Expecting" in x for x in _logs) and not any(f"### {E}" in x for x in _logs) and _fb7.reviews == [],
+       "dump — 저장하지 못한 종목만 다시 읽어 사정을 찍는다(모델 호출 · 저장 없음)", str(sorted(_seen)))
+    # 회수 때도 버리는 자리에서 사정을 남긴다
+    _logs.clear()
+    written.clear()
+    GB.STATE_JS.write_text(json.dumps({"batch_id": "msgbatch_BRK", "model": "claude-sonnet-5-5", "count": 1, "pending": True}),
+                           encoding="utf-8")
+    GB.collect_pending(fake_client("ended", [bres(D, text=_broken.replace('"risks": [{"x": 1}, {"y": 2}]', '"risks": []'))]),
+                       "2026-10-27 17:40")
+    ok(D not in written and any("사정: JSON" in x and "Expecting" in x for x in _logs), "회수 — 버리는 글의 사정을 기록에 남긴다",
+       next((x for x in _logs if "사정" in x), "")[:120])
+finally:
+    GB.log = _saved7b
+# 지시문 — 그날 3편은 Sonnet 5.5 가 outlook · bull · bear · risks · verdict 를 빈칸으로 닫고 끝냈다(출력 5천~1만 3천 토큰 ·
+# 한도 9만 6천). '중간에 끊기지 않도록'만 적힌 지시문을 지나치게 따른 것으로 보고, 한도가 충분하다는 것과 빈칸 · 생략 금지를 적었다.
+_src_g = (HERE.parent / "generate_reports.py").read_text(encoding="utf-8")
+_src_v2 = (HERE.parent / "generate_reports_v2.py").read_text(encoding="utf-8")
+ok('"en":""' not in G.SCHEMA_DESC and '"ko":""' not in G.SCHEMA_DESC
+   and all("빈 목록([])" in x and "출력 한도는" in x for x in (_src_g, _src_v2)),
+   "지시문 — 틀에 빈 문자열을 보이지 않고, 한도가 충분하니 빈칸 · 생략으로 닫지 말라고 적는다(옛 형식 · 새 형식)")
+_wfb = yaml.safe_load((HERE.parent.parent / ".github" / "workflows" / "generate_reports_batch.yml").read_text(encoding="utf-8"))
+_bs = _wfb["jobs"]["batch"]["steps"]
+_modes = ((_wfb.get(True) or _wfb.get("on"))["workflow_dispatch"]["inputs"]["mode"]["options"])
+ok("dump" in _modes and any("collect_data.py" in (x.get("run") or "") and "'dump'" in str(x.get("if")) for x in _bs)
+   and any("git push" in (x.get("run") or "") and "'dump'" in str(x.get("if")) for x in _bs),
+   "작업 파일 — dump 는 시세 갱신 · 커밋을 하지 않는다", str(_modes))
+
 print(f"\n통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)

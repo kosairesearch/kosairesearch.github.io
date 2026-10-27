@@ -5,10 +5,10 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: '실행 모드 (auto=제출+회수 / submit=제출만 / collect=회수만)'
+        description: '실행 모드 (auto=제출+회수 / submit=제출만 / collect=회수만 / dump=저장하지 못한 글의 사정만 · 돈 안 듦)'
         type: choice
         default: auto
-        options: [auto, submit, collect]
+        options: [auto, submit, collect, dump]
       top_n:
         description: '대상 종목 수 (시총 상위 N개)'
         type: string
@@ -45,8 +45,8 @@ jobs:
       - name: 패키지 설치
         run: pip install -r requirements.txt
 
-      - name: 최신 시세 갱신 (collect 모드에서는 생략)
-        if: ${{ inputs.mode != 'collect' }}
+      - name: 최신 시세 갱신 (collect · dump 모드에서는 생략)
+        if: ${{ inputs.mode != 'collect' && inputs.mode != 'dump' }}
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
         run: |
@@ -68,8 +68,9 @@ jobs:
           echo "=== 배치(${{ inputs.mode }}) 시작 $(date -u) ===" > data/reports_run.log
           python scripts/generate_reports_batch.py "${{ inputs.mode }}" 2>&1 | tee -a data/reports_run.log
 
+      # dump 는 읽기만 한다 — 커밋하지 않는다.
       - name: 변경사항 커밋 & 푸시
-        if: always()
+        if: ${{ always() && inputs.mode != 'dump' }}
         run: |
           git config --global user.email "bot@kosairesearch.github.io"
           git config --global user.name "KOS ai Bot"

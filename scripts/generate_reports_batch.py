@@ -9,6 +9,7 @@ generate_reports.py 의 프롬프트·DART·파싱 로직을 그대로 재사용
   submit   — 대상 종목 요청을 묶어 배치 제출, data/batch_state.json 저장
   collect  — 저장된 batch_id 결과를 회수해 data/reports.js 갱신
   auto     — submit 후 완료까지 폴링하고 collect (기본)
+  dump     — 회수한 배치의 결과를 다시 읽어 저장하지 못한 글의 사정을 찍는다(모델을 부르지 않는다 · 저장 · 커밋 없음)
 
 환경변수: ANTHROPIC_API_KEY(필수), DART_API_KEY, REPORT_MODEL, REPORT_TOP_N,
           REPORT_FRESH_DAYS, REPORT_FORCE, BATCH_MAX_WAIT_SEC, REPORT_TICKERS, REPORT_SKIP_FAILED
@@ -18,6 +19,7 @@ generate_reports.py 의 프롬프트·DART·파싱 로직을 그대로 재사용
 """
 
 import os
+import re
 import sys
 import json
 import time
@@ -203,6 +205,46 @@ def poll(cl, batch_id):
         waited += 60
     log(f"- ⏳ {MAX_WAIT//60}분 내 미완료. 나중에 `collect` 모드로 회수하세요.")
     return False
+
+
+def _count_types(blocks):
+    """응답 블록 종류별 개수 — [('text', 12), ('thinking', 3), …](처음 나온 순서)."""
+    seen = {}
+    for blk in blocks:
+        t = getattr(blk, "type", "?")
+        seen[t] = seen.get(t, 0) + 1
+    return list(seen.items())
+
+
+def diagnose(message):
+    """저장 문턱(valid_report)에 걸린 글의 사정 — 무엇이 빠졌고 JSON 이 어디서 깨졌는가(2026-10-27). 그날 옛 형식 110편 중
+    3편이 정상 종료(end_turn)인데 필수 항목이 비어 버려졌고, 원문이 남지 않아 까닭을 알 수 없었다. 돈이 들지 않는다."""
+    text = g.extract_text(message)
+    m = re.search(r"===JSON_START===(.*?)===JSON_END===", text, re.S)
+    u = getattr(message, "usage", None)
+    st = getattr(u, "server_tool_use", None)
+    out = {"stop": getattr(message, "stop_reason", None), "len": len(text),
+           "out_tokens": getattr(u, "output_tokens", None), "searches": getattr(st, "web_search_requests", None),
+           "blocks": ",".join(f"{t}{n}" for t, n in _count_types(getattr(message, "content", None) or [])),
+           "markers": text.count("===JSON_START==="), "closed": bool(m)}
+    chunk = (m.group(1) if m else text).strip()
+    a, b = chunk.find("{"), chunk.rfind("}")
+    chunk = chunk[a:b + 1] if a >= 0 and b > a else chunk
+    try:
+        json.loads(chunk)
+        out["json"] = "ok"
+    except json.JSONDecodeError as e:
+        out["json"] = f"{e.msg} @{e.pos}/{len(chunk)}"
+        out["near"] = chunk[max(0, e.pos - 160): e.pos + 160].replace("\n", "⏎")
+    try:
+        rep = g.parse_report(text)
+    except Exception as e:                                   # noqa: BLE001
+        rep, out["parse"] = None, type(e).__name__
+    if isinstance(rep, dict):
+        out["need"] = {"verdict": bool(rep.get("verdict")), "risks": len(rep.get("risks") or []),
+                       "keypoints": len(rep.get("keypoints") or []), "business": bool(rep.get("business"))}
+        out["keys"] = ",".join(sorted(rep))
+    return out
 
 
 def fix_shape(rep):
@@ -393,6 +435,9 @@ def collect(cl, as_of):
                 why = getattr(result.result.message, "stop_reason", None)   # max_tokens 면 한도에 닿아 잘린 것이다
                 bump_fail(fails, tk, f"불완전(잘림 의심 · 중단 사유 {why})", as_of)
                 log(f"  · ⚠️ {tk} 불완전(잘림 의심 · 중단 사유 {why}) — 건너뜀, 기존 유지")
+                d = diagnose(result.result.message)
+                log(f"    사정: JSON {d.get('json')} · 필수 항목 {d.get('need')} · 표시 {d.get('markers')}개"
+                    + (f" · 깨진 곳 …{d['near']}…" if d.get("near") else ""))
                 continue
             srcs = g.collect_sources(result.result.message)
             if srcs:
@@ -504,11 +549,39 @@ def collect_pending(cl, as_of):
     collect(cl, as_of)
 
 
+def dump(cl):
+    """회수한 배치의 결과를 다시 읽어 종목마다 사정(diagnose)과 글의 끝부분을 찍는다. 모델을 부르지 않는다 — 결과 조회는
+    무료다. 대상은 REPORT_TICKERS(비우면 저장하지 못한 종목 — data/new_listing_fail.json), 배치는 DUMP_BATCH_ID(비우면 상태 파일)."""
+    st = json.loads(STATE_JS.read_text(encoding="utf-8")) if STATE_JS.exists() else {}
+    bid = os.getenv("DUMP_BATCH_ID", "").strip() or st.get("batch_id")
+    want = [t for t in os.getenv("REPORT_TICKERS", "").replace(" ", "").split(",") if t] or sorted(load_fails())
+    log(f"## 배치 결과 진단 — {bid} · 대상 {len(want)}개")
+    seen = set()
+    for r in cl.messages.batches.results(bid):
+        tk = r.custom_id
+        if tk not in want:
+            continue
+        seen.add(tk)
+        if r.result.type != "succeeded":
+            log(f"### {tk} — 결과 {r.result.type}")
+            continue
+        log(f"### {tk}")
+        for k, v in diagnose(r.result.message).items():
+            log(f"  · {k}: {v}")
+        log("  · 끝 400자: " + g.extract_text(r.result.message)[-400:].replace("\n", "⏎"))
+    missing = [t for t in want if t not in seen]
+    if missing:
+        log(f"- 이 배치에 없는 종목: {','.join(missing)}")
+    return seen
+
+
 def main():
     mode = sys.argv[1] if len(sys.argv) > 1 else "auto"
     cl = client()
     as_of = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime("%Y-%m-%d %H:%M")
-    if mode == "submit":
+    if mode == "dump":
+        dump(cl)
+    elif mode == "submit":
         submit(cl, as_of)
     elif mode == "collect":
         collect(cl, as_of)
