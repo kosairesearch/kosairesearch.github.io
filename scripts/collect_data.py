@@ -662,8 +662,8 @@ def build_universe(date):
     # 2) DART corp_codes(전 상장사=stock_code 6자리) — Actions에서 DART 키가 작동하므로 주 경로
     if len(universe) < 200 and DART_API_KEY:
         try:
-            import OpenDartReader
-            dart = OpenDartReader(DART_API_KEY)
+            import dart_reader
+            dart = dart_reader.reader(DART_API_KEY)
             cc = getattr(dart, "corp_codes", None)
             if cc is None and hasattr(dart, "corp_code"):
                 cc = dart.corp_code  # 일부 버전 호환
@@ -1238,8 +1238,8 @@ def enrich_with_dart(results):
         return results
 
     try:
-        import OpenDartReader
-        dart = OpenDartReader(DART_API_KEY)
+        import dart_reader   # 영문이 섞인 종목코드('0011A0')도 찾는다(2026-10-27)
+        dart = dart_reader.reader(DART_API_KEY)
     except Exception as e:
         print(f"  [DART] 초기화 실패: {e}")
         return results

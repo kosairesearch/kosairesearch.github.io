@@ -2275,6 +2275,12 @@ def collect_all_quant(targets, data, allow_reuse=False, fresh=()):
         if fund is not None and tk in fund.index:
             krx_row = fund.loc[tk]
         try:
+            # 공시 회사 목록에서 이 종목코드를 못 찾으면 재무제표 조회가 전부 빈손으로 돌아와 '재무 자료 없음'(생성
+            # 불가 · 30일 skip)과 똑같이 보인다. 영문이 섞인 종목코드 36개가 그렇게 넉 달 가까이 빠져 있었다
+            # (2026-10-27). 못 찾은 것은 그 종목의 실패로 센다 — 기록에 남고, 세 번이면 2주 쉬었다가 다시 본다.
+            find = getattr(dart, "find_corp_code", None)
+            if find and not find(tk):
+                raise LookupError(f"공시 회사 목록에 종목코드 {tk} 가 없다")
             out[tk] = collect_quant(dart, tk, krx_row, st)
             cross_check(tk, st["name"], out[tk]["valuation"])
             log(quant_summary(st["name"], out[tk]))
