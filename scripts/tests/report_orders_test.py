@@ -343,6 +343,12 @@ class FakeBatches:
             out = []
             for r in reqs:
                 cid = r["custom_id"]
+                if cid.startswith("en_"):          # 영문 채우기(2026-10-27) — 종목별 답, 없으면 오류
+                    ans = ENFILLS.get(cid.split("_")[1])
+                    out.append(types.SimpleNamespace(custom_id=cid, result=types.SimpleNamespace(
+                        type="succeeded" if ans else "errored",
+                        message=msg("===JSON_START===" + json.dumps(ans, ensure_ascii=False) + "===JSON_END===") if ans else None)))
+                    continue
                 if cid.startswith("fx"):           # 교정 요청(2026-10-23) — 종목별 답, 없으면 오류
                     ans = FIXES.get(cid.split("_")[1])
                     out.append(types.SimpleNamespace(custom_id=cid, result=types.SimpleNamespace(
@@ -356,6 +362,7 @@ class FakeBatches:
 
 
 FIXES = {}   # 교정 배치의 답 — {종목: 고친 섹션}
+ENFILLS = {}   # 영문 채우기 답(2026-10-27) — {종목: {번호: 영어}}
 
 
 def fake_client(status, results):
@@ -547,6 +554,39 @@ _src_v2 = (HERE.parent / "generate_reports_v2.py").read_text(encoding="utf-8")
 ok('"en":""' not in G.SCHEMA_DESC and '"ko":""' not in G.SCHEMA_DESC
    and all("빈 목록([])" in x and "출력 한도는" in x for x in (_src_g, _src_v2)),
    "지시문 — 틀에 빈 문자열을 보이지 않고, 한도가 충분하니 빈칸 · 생략으로 닫지 말라고 적는다(옛 형식 · 새 형식)")
+# 영어가 빈 칸(null) — 같은 칸의 한국어를 옮겨 채운 뒤 저장한다. 답이 없으면 저장하지 않는다(2026-10-27 코스모로보틱스).
+_REP_EN = dict(GOOD, verdict={"body": {"ko": "종합 의견 문단이다.", "en": None}},
+               lead={"ko": "한 문장 요지다.", "en": "One-line thesis."})
+_ok_en = GB.en_gaps(_REP_EN)
+ok([p for _c, p in _ok_en] == ["verdict.body"], "영문 빈 칸을 찾는다 — null 도 빈 칸이다", str([p for _c, p in _ok_en]))
+_mis = {"verdict": {"body": {"ko": "종합 의견이다."}, "en": "Overall view."}, "lead": {"ko": "요지다.", "en": "Thesis."}}
+ok([p for _c, p in GB.en_gaps(_mis)] == ["verdict.body"], "영문을 한 단계 위에 둔 꼴도 빈 칸으로 찾는다(그날 코스모로보틱스 종합 의견)")
+_fx = GB.fix_shape(json.loads(json.dumps(_mis)))
+ok(_fx["verdict"] == {"body": {"ko": "종합 의견이다.", "en": "Overall view."}} and not GB.en_gaps(_fx),
+   "모양 정리(fix_shape)가 그 영문을 제자리로 옮긴다 — 채우기 배치가 필요 없다", str(_fx["verdict"]))
+_saved_log = GB.log
+try:
+    for _ans, _want in (({"0": "This is the overall view."}, True), (None, False)):
+        written.clear()
+        GB.FAIL_JS.unlink(missing_ok=True)
+        ENFILLS[D] = _ans
+        GB.STATE_JS.write_text(json.dumps({"batch_id": "msgbatch_ENF", "model": "claude-sonnet-5-5", "count": 1, "pending": True}),
+                               encoding="utf-8")
+        _cl8 = fake_client("ended", [bres(D, text="===JSON_START===" + json.dumps(_REP_EN, ensure_ascii=False) + "===JSON_END===")])
+        GB.collect_pending(_cl8, "2026-10-27 17:40")
+        _st8 = json.loads(GB.STATE_JS.read_text(encoding="utf-8"))
+        _fl8 = json.loads(GB.FAIL_JS.read_text(encoding="utf-8")) if GB.FAIL_JS.exists() else {}
+        _en_reqs = [r["custom_id"] for q in _cl8.messages.batches.reviews for r in q if r["custom_id"].startswith("en_")]
+        if _want:
+            ok(D in written and ((written[D].get("verdict") or {}).get("body") or {}).get("en") == "This is the overall view."
+               and len(_en_reqs) == 1 and (_st8.get("usage_en") or {}).get(GB.C.REPAIR_MODEL, {}).get("n") == 1,
+               "영문 빈 칸을 배치로 채워 저장하고 사용량을 따로 남긴다", str(_en_reqs))
+        else:
+            ok(D not in written and "en_missing" in (_fl8.get(D) or {}).get("why", ""),
+               "채우지 못하면 저장하지 않고 실패로 센다", str(_fl8.get(D)))
+finally:
+    GB.log = _saved_log
+    ENFILLS.clear()
 _wfb = yaml.safe_load((HERE.parent.parent / ".github" / "workflows" / "generate_reports_batch.yml").read_text(encoding="utf-8"))
 _bs = _wfb["jobs"]["batch"]["steps"]
 _modes = ((_wfb.get(True) or _wfb.get("on"))["workflow_dispatch"]["inputs"]["mode"]["options"])

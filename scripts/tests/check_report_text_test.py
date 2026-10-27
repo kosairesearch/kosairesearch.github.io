@@ -428,14 +428,34 @@ for where, h in bad[:8]:
     print(f"      {where} [{h['section']}] {h['rule']} {h['match']!r} — {h['sentence'][:70]}")
 eq(f"리포트 {n:,}개 · 업종 {len(sectors)}개 — 검사 위반 0(글자 결함 · 받은 자료 언급 · 상대 시점 · 영어 낱말 · 투자 판단 · 주당지표 …)", len(bad), 0)
 miss = []
+
+
+def _en_gaps(o, path=""):
+    """한국어는 있는데 영어가 빈(없음 · null · 빈 문자열) 칸 — 칸이 어디 있든. _flat_fields 는 ko · en 이 문자열인 칸만 글 칸으로 보고,
+    영어를 한 단계 위에 둔 꼴({"body": {"ko": …}, "en": "…"})은 바깥을 글 칸으로 읽어 안쪽을 보지 않았다(2026-10-27 코스모로보틱스
+    종합 의견이 그 꼴로 저장돼 영어 화면에 한국어가 나왔다)."""
+    if isinstance(o, dict):
+        if isinstance(o.get("ko"), str) and o["ko"].strip():
+            return [] if (o.get("en") or "").strip() else [path]
+        return [x for k, v in o.items() for x in _en_gaps(v, f"{path}.{k}" if path else k)]
+    if isinstance(o, list):
+        return [x for i, v in enumerate(o) for x in _en_gaps(v, f"{path}.{i}" if path else str(i))]
+    return []
+
+
 for f in files:
     try:
         rep = json.loads(f.read_text(encoding="utf-8"))
     except Exception:
         continue
     if isinstance(rep, dict):
-        miss += [(f.stem, k) for k, v in C._flat_fields({k: x for k, x in rep.items() if k not in C._NOT_TEXT}).items()
+        txt = {k: x for k, x in rep.items() if k not in C._NOT_TEXT}
+        miss += [(f.stem, k) for k, v in C._flat_fields(txt).items()
                  if (v.get("ko") or "").strip() and not (v.get("en") or "").strip()]
+        miss += [(f.stem, x) for x in _en_gaps(txt)]
+eq("영문 빈 칸 찾기 — 영문을 한 단계 위에 둔 꼴 · null 도 잡는다",
+   (_en_gaps({"verdict": {"body": {"ko": "가"}, "en": "A"}}), _en_gaps({"lead": {"ko": "가", "en": None}}),
+    _en_gaps({"lead": {"ko": "가", "en": "A"}})), (["verdict.body"], ["lead"], []))
 eq("영문이 빈 칸 0 — 영어 화면에 한국어가 나오지 않는다", miss[:5], [])
 import number_spacing as _N  # noqa: E402
 nc = []

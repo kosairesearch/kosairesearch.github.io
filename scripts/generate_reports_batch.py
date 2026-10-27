@@ -256,6 +256,12 @@ def fix_shape(rep):
         if not isinstance(o, dict):
             return o
         o = {k: rec(v) for k, v in o.items()}
+        # 영문을 한 단계 위에 둔 꼴 — {"body": {"ko": …}, "en": "…"} → {"body": {"ko", "en"}}. 2026-10-27 코스모로보틱스 종합 의견이
+        # 이 꼴로 와 영어 화면에 한국어가 나왔다(검사 · 전수 검사 모두 놓쳤다). 한국어만 있는 칸이 하나뿐일 때만 옮긴다.
+        if "ko" not in o and isinstance(o.get("en"), str):
+            kids = [k for k, v in o.items() if isinstance(v, dict) and isinstance(v.get("ko"), str) and not (v.get("en") or "").strip()]
+            if len(kids) == 1:
+                o[kids[0]]["en"] = o.pop("en")
         for k in list(o):
             if k.endswith("_en") and isinstance(o[k], str):
                 base = k[:-3]
@@ -387,6 +393,85 @@ def repair_all(cl, todo):
     return cur, use
 
 
+# 영어가 빈 칸을 옮겨 채우는 요청 — 리포트 v2 의 fill_missing_en 과 같은 말(2026-10-27).
+EN_FILL_PROMPT = ("아래 JSON 은 한국어 기업 리서치 리포트의 일부다. 각 값을 같은 뜻의 영어로 옮겨라.\n"
+                  "· 같은 키를 그대로 쓰고, 값만 영어로 바꾼 JSON 하나만 출력한다.\n"
+                  "· 회사·제품·기관 이름은 로마자 또는 영문 명칭으로 쓴다. 영어에 한글을 쓰지 않는다.\n"
+                  "· 숫자·단위·사실을 바꾸지 않는다. 문장 수도 원문과 맞춘다.\n"
+                  "· ===JSON_START=== 와 ===JSON_END=== 사이에만 쓴다.\n")
+
+
+def en_gaps(rep):
+    """한국어는 있는데 영어가 빈(없음 · null · 빈 문자열) 칸 — [(담은 dict, 경로)]. 검사(check)는 빈 영어를 보지 않고,
+    검사 묶음의 전수 검사도 빈 문자열만 셌다 — 2026-10-27 코스모로보틱스 종합 의견의 en 이 null 로 와 그대로 저장됐다
+    (영어 화면에 한국어가 나온다)."""
+    out = []
+
+    def walk(o, path):
+        if isinstance(o, dict):
+            if isinstance(o.get("ko"), str) and o["ko"].strip():
+                if not (o.get("en") or "").strip():
+                    out.append((o, path))
+                return
+            for k, v in o.items():
+                if path or k not in C._NOT_TEXT:
+                    walk(v, f"{path}.{k}" if path else k)
+        elif isinstance(o, list):
+            for i, v in enumerate(o):
+                walk(v, f"{path}.{i}" if path else str(i))
+    walk(rep, "")
+    return out
+
+
+def fill_en_all(cl, reps):
+    """영어가 빈 칸을 같은 칸의 한국어에서 옮겨 채운다(배치 하나 · 교정과 같은 값싼 모델) — ({종목: 채운 리포트}, 사용량).
+    다 채우지 못했거나 채운 뒤 검사에 걸리는 글은 돌려주지 않는다 — 부르는 쪽이 저장하지 않는다."""
+    import hashlib
+    jobs, ctx, use, out = {}, {}, {}, {}
+    for tk, rep in reps.items():
+        nodes = en_gaps(rep)
+        if not nodes:
+            continue
+        payload = {str(i): c["ko"] for i, (c, _p) in enumerate(nodes)}
+        name = C.clean_en(rep.get("name_en")) or ""
+        prompt = EN_FILL_PROMPT + (f"· 이 회사의 영문명은 {name} 이다.\n" if name else "") + "\n" + json.dumps(payload, ensure_ascii=False)
+        key = "en_" + tk + "_" + hashlib.sha1(prompt.encode()).hexdigest()[:12]
+        jobs[key] = {"model": C.REPAIR_MODEL, "max_tokens": 16000, "thinking": {"type": "adaptive"},
+                     "messages": [{"role": "user", "content": prompt}]}
+        ctx[key] = (tk, nodes)
+    if not jobs:
+        return out, use
+    try:
+        got = C.send_batch(cl, jobs, wait_sec=REPAIR_WAIT, log=log, label="영문 채우기")
+    except TimeoutError as e:
+        log(f"  · ⚠️ {e} — 영문 채우기 답을 받지 않는다")
+        return out, use
+    for key, msg in got.items():
+        tk, nodes = ctx[key]
+        if msg is None:
+            log(f"  · ⚠️ {tk} 영문 채우기 답 없음")
+            continue
+        u = g.usage_of(msg)
+        if u:
+            g.add_usage(use, C.REPAIR_MODEL, u, batch=True)
+        ans = C._parse_json(C.message_text(msg))
+        if not isinstance(ans, dict):
+            log(f"  · ⚠️ {tk} 영문 채우기 답을 읽지 못함")
+            continue
+        for i, (c, _p) in enumerate(nodes):
+            v = ans.get(str(i))
+            if isinstance(v, str) and v.strip():
+                c["en"] = v.strip()
+        rep = reps[tk]
+        left, bad = en_gaps(rep), C.check(rep)
+        if left or bad:
+            log(f"  · ⚠️ {tk} 영문 채우기 뒤에도 빈 칸 {len(left)} · 검사 위반 {len(bad)}")
+            continue
+        out[tk] = rep
+        log(f"  · ✏️ {tk} 영문 빈 칸 {len(nodes)}곳을 채웠다")
+    return out, use
+
+
 def collect(cl, as_of):
     if not STATE_JS.exists():
         log("❌ data/batch_state.json 이 없습니다. 먼저 submit 하세요.")
@@ -494,6 +579,27 @@ def collect(cl, as_of):
                 log(g.usage_line(mdl, a, "교정 배치"))
                 a["usd"] = round(a["usd"], 4)
             state["usage_repair"] = use_fx     # 교정 배치 사용량 — 생성 배치(usage)와 섞지 않는다
+    # 영어가 빈 칸(없음 · null)은 같은 칸의 한국어를 옮겨 채운다(2026-10-27). 채우지 못하면 저장하지 않는다 — 영어 화면에
+    # 한국어가 나온다. 교정을 끈 실행(NEW_LISTING_REPAIR=0)은 채우지 않고 저장하지도 않는다.
+    need_en = {tk: rep for tk, (rep, bad) in judged.items() if not bad and en_gaps(rep)}
+    if need_en:
+        filled, use_en = {}, {}
+        if REPAIR:
+            try:
+                filled, use_en = fill_en_all(cl, need_en)
+            except Exception as e:                     # noqa: BLE001
+                log(f"  · ⚠️ 영문 채우기 배치 실패: {type(e).__name__}: {e} — 그 글은 저장하지 않는다")
+        for tk, rep in need_en.items():
+            if tk not in filled:
+                gap = en_gaps(rep)
+                where = gap[0][1] if gap else "?"
+                judged[tk] = (rep, [{"rule": "en_missing", "level": "위험", "section": where.split(".")[0],
+                                     "match": where, "sentence": "", "why": "영어가 빈 칸"}])
+        if use_en:
+            for mdl, a in use_en.items():
+                log(g.usage_line(mdl, a, "영문 채우기 배치"))
+                a["usd"] = round(a["usd"], 4)
+            state["usage_en"] = use_en          # 영문 채우기 사용량 — 생성 · 교정과 섞지 않는다
     for tk, (rep, bad) in judged.items():
         if bad:
             fail += 1

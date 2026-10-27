@@ -67,6 +67,9 @@ console.log("① 자료 — 미리 만든 페이지 전부");
 const longest = { name: ["", ""], title: ["", ""] };   // [종목코드, 글] — 영문명 · 영어 제목이 가장 긴 것
 for (const s of LIVE) {
   const r = REPORTS[s.ticker];
+  // 칸에 실릴 수 있는 종목만 — 대표 업종 · 시가총액 · 리포트 제목이 있어야 한다(expected 와 같은 조건). 2026-10-27 상장한
+  // 스팩(0205H0 · 업종 '기타' · 리포트 없음)이 영문명이 가장 긴 종목이 되어, 어느 페이지에도 실릴 수 없는 종목을 찾다 걸렸다.
+  if (!r || !r.title || !s.sector || s.sector === "기타" || s.mcap == null) continue;
   if (s.name_en && s.name_en.length > longest.name[1].length) longest.name = [s.ticker, s.name_en];
   if (r && r.title && r.title.en && r.title.en.length > longest.title[1].length) longest.title = [s.ticker, r.title.en];
 }
