@@ -540,6 +540,13 @@ try:
        next((x for x in _logs if "사정" in x), "")[:120])
 finally:
     GB.log = _saved7b
+# 지시문 — 그날 3편은 Sonnet 5.5 가 outlook · bull · bear · risks · verdict 를 빈칸으로 닫고 끝냈다(출력 5천~1만 3천 토큰 ·
+# 한도 9만 6천). '중간에 끊기지 않도록'만 적힌 지시문을 지나치게 따른 것으로 보고, 한도가 충분하다는 것과 빈칸 · 생략 금지를 적었다.
+_src_g = (HERE.parent / "generate_reports.py").read_text(encoding="utf-8")
+_src_v2 = (HERE.parent / "generate_reports_v2.py").read_text(encoding="utf-8")
+ok('"en":""' not in G.SCHEMA_DESC and '"ko":""' not in G.SCHEMA_DESC
+   and all("빈 목록([])" in x and "출력 한도는" in x for x in (_src_g, _src_v2)),
+   "지시문 — 틀에 빈 문자열을 보이지 않고, 한도가 충분하니 빈칸 · 생략으로 닫지 말라고 적는다(옛 형식 · 새 형식)")
 _wfb = yaml.safe_load((HERE.parent.parent / ".github" / "workflows" / "generate_reports_batch.yml").read_text(encoding="utf-8"))
 _bs = _wfb["jobs"]["batch"]["steps"]
 _modes = ((_wfb.get(True) or _wfb.get("on"))["workflow_dispatch"]["inputs"]["mode"]["options"])
