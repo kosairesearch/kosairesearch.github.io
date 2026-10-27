@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-10-27 15:01",
+  "lastUpdated": "2026-10-27 17:02",
   "dataDate": "20261026",
   "stocks": [
     {
@@ -1302,7 +1302,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0126Z0",
       "name": "삼성에피스홀딩스",
-      "name_en": "Samsung Epis Holdings",
+      "name_en": "SAMSUNG EPIS HOLDINGS Co., Ltd.",
       "market": "코스피",
       "sector": "바이오·제약",
       "price": 316000,
@@ -1311,6 +1311,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 7157498500,
       "mcap": 7.9004,
       "shares": 24883049,
+      "induty_code": "64992",
       "categories": [
         "바이오·제약"
       ],
@@ -4348,7 +4349,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0009K0",
       "name": "에임드바이오",
-      "name_en": "AimedBio",
+      "name_en": "Aimed Bio Inc.",
       "market": "코스닥",
       "sector": "바이오·제약",
       "price": 21550,
@@ -4357,6 +4358,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 7780619375,
       "mcap": 1.42,
       "shares": 65137661,
+      "induty_code": "70113",
       "categories": [
         "바이오·제약"
       ],
@@ -6725,7 +6727,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0220W0",
       "name": "한화머시너리앤서비스홀딩스",
-      "name_en": "Hanwha Machinery & Service Holdings",
+      "name_en": "Hanwha Machinery & Service Holdings Co., Ltd",
       "market": "코스피",
       "sector": "지주",
       "price": 7600,
@@ -6734,6 +6736,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 6526752015,
       "mcap": 0.6406,
       "shares": 84515535,
+      "induty_code": "64992",
       "categories": [
         "지주"
       ],
@@ -10493,7 +10496,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0015M0",
       "name": "디티에스",
-      "name_en": "DTS",
+      "name_en": "DTS Inc.",
       "market": "코스닥",
       "sector": "IT·소프트웨어",
       "price": 22100,
@@ -10502,6 +10505,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 132367901100,
       "mcap": 0.3378,
       "shares": 14881735,
+      "induty_code": "292",
       "categories": [
         "IT·소프트웨어"
       ],
@@ -10960,7 +10964,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0120G0",
       "name": "삼양바이오팜",
-      "name_en": "Samyang Biopharm",
+      "name_en": "Samyang Biopharm Corporation",
       "market": "코스피",
       "sector": "바이오·제약",
       "price": 41900,
@@ -10969,6 +10973,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 1076103350,
       "mcap": 0.3145,
       "shares": 7435870,
+      "induty_code": "212",
       "categories": [
         "바이오·제약"
       ],
@@ -11430,7 +11435,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0013Y0",
       "name": "엠에스바이오",
-      "name_en": "MSBIO",
+      "name_en": "MSBIO. Inc",
       "market": "코스닥",
       "sector": "바이오·제약",
       "price": 10390,
@@ -11439,6 +11444,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 172197737580,
       "mcap": 0.2932,
       "shares": 27202650,
+      "induty_code": "27199",
       "categories": [
         "바이오·제약"
       ],
@@ -13826,7 +13832,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0030R0",
       "name": "대신밸류리츠",
-      "name_en": "Daishin Value REIT",
+      "name_en": "Daishin Value REIT Co., Ltd.",
       "market": "코스피",
       "sector": "부동산·리츠",
       "price": 3770,
@@ -13835,6 +13841,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 9768895,
       "mcap": 0.2275,
       "shares": 59780000,
+      "induty_code": "642",
       "categories": [
         "부동산·리츠"
       ],
@@ -15231,7 +15238,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0011T0",
       "name": "채비",
-      "name_en": "Chaevi",
+      "name_en": "CHAEVI CO., LTD",
       "market": "코스닥",
       "sector": "에너지·전력",
       "price": 4105,
@@ -15240,6 +15247,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 278301685,
       "mcap": 0.1925,
       "shares": 46949591,
+      "induty_code": "28119",
       "categories": [
         "에너지·전력"
       ],
@@ -16005,7 +16013,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0008Z0",
       "name": "에스엔시스",
-      "name_en": "SNSYS",
+      "name_en": "S&SYS CO.,LTD",
       "market": "코스닥",
       "sector": "IT·소프트웨어",
       "price": 19180,
@@ -16014,6 +16022,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 193151825,
       "mcap": 0.1812,
       "shares": 9436564,
+      "induty_code": "28123",
       "categories": [
         "IT·소프트웨어"
       ],
@@ -16510,7 +16519,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0001A0",
       "name": "덕양에너젠",
-      "name_en": "Deokyang Energen",
+      "name_en": "DEOKYANG ENERGEN CORPORATION",
       "market": "코스닥",
       "sector": "에너지·전력",
       "price": 6960,
@@ -16519,6 +16528,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 136350005,
       "mcap": 0.1752,
       "shares": 25468962,
+      "induty_code": "352",
       "categories": [
         "에너지·전력"
       ],
@@ -19794,7 +19804,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0088M0",
       "name": "메쥬",
-      "name_en": "Mezoo",
+      "name_en": "MEZOO Co., Ltd.",
       "market": "코스닥",
       "sector": "바이오·제약",
       "price": 13170,
@@ -19803,6 +19813,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 1091702150,
       "mcap": 0.131,
       "shares": 9881750,
+      "induty_code": "27112",
       "categories": [
         "바이오·제약"
       ],
@@ -19865,7 +19876,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0082N0",
       "name": "카나프테라퓨틱스",
-      "name_en": "Kanaph Therapeutics",
+      "name_en": "Kanaph Therapeutics Inc.",
       "market": "코스닥",
       "sector": "바이오·제약",
       "price": 9820,
@@ -19874,6 +19885,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 403365490,
       "mcap": 0.1307,
       "shares": 13300580,
+      "induty_code": "70113",
       "categories": [
         "바이오·제약"
       ],
@@ -20785,7 +20797,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0015G0",
       "name": "그린광학",
-      "name_en": "Green Optics",
+      "name_en": "Green Optics Co.,Ltd.",
       "market": "코스닥",
       "sector": "전자·부품",
       "price": 10130,
@@ -20794,6 +20806,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 312533770,
       "mcap": 0.1201,
       "shares": 11702541,
+      "induty_code": "273",
       "categories": [
         "전자·부품"
       ],
@@ -21271,7 +21284,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0007C0",
       "name": "아크릴",
-      "name_en": "Acryl",
+      "name_en": "Acryl Inc.",
       "market": "코스닥",
       "sector": "화학",
       "price": 14400,
@@ -21280,6 +21293,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 957340935,
       "mcap": 0.1148,
       "shares": 8030324,
+      "induty_code": "58222",
       "categories": [
         "화학"
       ],
@@ -21703,7 +21717,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0039P0",
       "name": "매드업",
-      "name_en": "MADUP",
+      "name_en": "Madup Inc.",
       "market": "코스닥",
       "sector": "IT·소프트웨어",
       "price": 5750,
@@ -21712,6 +21726,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 1089652790,
       "mcap": 0.1099,
       "shares": 18820400,
+      "induty_code": "713",
       "categories": [
         "IT·소프트웨어"
       ],
@@ -21828,7 +21843,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0015N0",
       "name": "아로마티카",
-      "name_en": "Aromatica",
+      "name_en": "AROMATICA CO.",
       "market": "코스닥",
       "sector": "화장품",
       "price": 8620,
@@ -21837,6 +21852,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 1399794190,
       "mcap": 0.1092,
       "shares": 12576922,
+      "induty_code": "20423",
       "categories": [
         "화장품"
       ],
@@ -26359,7 +26375,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0017J0",
       "name": "세미티에스",
-      "name_en": "SemiTS",
+      "name_en": "SEMI Total Solution INC",
       "market": "코스닥",
       "sector": "반도체",
       "price": 2580,
@@ -26368,6 +26384,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 1627375658,
       "mcap": 0.0785,
       "shares": 30151041,
+      "induty_code": "29299",
       "categories": [
         "반도체"
       ],
@@ -28035,17 +28052,18 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0011A0",
       "name": "액스비스",
-      "name_en": "Axbis",
+      "name_en": "AXBIS CO.,LTD",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "전기장비",
       "price": 7340,
       "change": -6.5,
       "volume": 102178,
       "trading_value": 771586380,
       "mcap": 0.0693,
       "shares": 9333740,
+      "induty_code": "289",
       "categories": [
-        "기타"
+        "전기장비"
       ],
       "rank": 1556
     },
@@ -28772,17 +28790,18 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0007J0",
       "name": "인벤테라",
-      "name_en": "Inventera",
+      "name_en": "Inventera Inc.",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "바이오·제약",
       "price": 8350,
       "change": -4.57,
       "volume": 24486,
       "trading_value": 207122200,
       "mcap": 0.0668,
       "shares": 7865714,
+      "induty_code": "70113",
       "categories": [
-        "기타"
+        "바이오·제약"
       ],
       "rank": 1597
     },
@@ -29565,7 +29584,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0117P0",
       "name": "피스피스스튜디오",
-      "name_en": "Piece Peace Studio",
+      "name_en": "PIECE PEACE STUDIO Co., Ltd.",
       "market": "코스닥",
       "sector": "미디어·엔터",
       "price": 4440,
@@ -29574,6 +29593,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 125779433,
       "mcap": 0.0633,
       "shares": 14168911,
+      "induty_code": "474",
       "categories": [
         "미디어·엔터"
       ],
@@ -29782,7 +29802,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0218L0",
       "name": "네오뷰",
-      "name_en": "NeoView",
+      "name_en": "Neovue CO., LTD",
       "market": "코스닥",
       "sector": "전자·부품",
       "price": 11700,
@@ -29791,6 +29811,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 449482320,
       "mcap": 0.0624,
       "shares": 5276175,
+      "induty_code": "265",
       "categories": [
         "전자·부품"
       ],
@@ -30538,7 +30559,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0015S0",
       "name": "페스카로",
-      "name_en": "Fescaro",
+      "name_en": "FESCARO  Co., Ltd.",
       "market": "코스닥",
       "sector": "IT·소프트웨어",
       "price": 5900,
@@ -30547,6 +30568,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 105660430,
       "mcap": 0.0597,
       "shares": 9866730,
+      "induty_code": "739",
       "categories": [
         "IT·소프트웨어"
       ],
@@ -31457,7 +31479,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0156T0",
       "name": "에이치엘지노믹스",
-      "name_en": "HL Genomics",
+      "name_en": "HL GENOMICS Co., Ltd.",
       "market": "코스닥",
       "sector": "바이오·제약",
       "price": 7160,
@@ -31466,6 +31488,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 194278600,
       "mcap": 0.0556,
       "shares": 7782161,
+      "induty_code": "211",
       "categories": [
         "바이오·제약"
       ],
@@ -32341,7 +32364,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0004V0",
       "name": "엔비알모션",
-      "name_en": "NVR Motion",
+      "name_en": "NBR Motion Co., Ltd.",
       "market": "코스닥",
       "sector": "기계·장비",
       "price": 4740,
@@ -32350,6 +32373,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 720166212,
       "mcap": 0.0521,
       "shares": 11010384,
+      "induty_code": "259",
       "categories": [
         "기계·장비",
         "로봇"
@@ -32811,7 +32835,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0155E0",
       "name": "해치텍",
-      "name_en": "Haechitech",
+      "name_en": "HAECHITECH CORPORATION",
       "market": "코스닥",
       "sector": "기계·장비",
       "price": 9190,
@@ -32820,6 +32844,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 22905138545,
       "mcap": 0.0505,
       "shares": 5487150,
+      "induty_code": "26112",
       "categories": [
         "기계·장비"
       ],
@@ -33839,7 +33864,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0013V0",
       "name": "삼진식품",
-      "name_en": "Samjin Food",
+      "name_en": "Samjinfood  Co., Ltd.",
       "market": "코스닥",
       "sector": "식음료",
       "price": 4750,
@@ -33848,6 +33873,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 78877745,
       "mcap": 0.0469,
       "shares": 9918656,
+      "induty_code": "10211",
       "categories": [
         "식음료"
       ],
@@ -36219,7 +36245,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0010V0",
       "name": "제이피아이헬스케어",
-      "name_en": "JPI Healthcare",
+      "name_en": "JPI Healthcare Co., Ltd.",
       "market": "코스닥",
       "sector": "바이오·제약",
       "price": 7740,
@@ -36228,6 +36254,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 34930240,
       "mcap": 0.0386,
       "shares": 5105400,
+      "induty_code": "27199",
       "categories": [
         "바이오·제약"
       ],
@@ -38379,7 +38406,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0203K0",
       "name": "송우인포텍",
-      "name_en": "Songwoo Information & Technology",
+      "name_en": "SONGWOO Information & Technology Inc.",
       "market": "코넥스",
       "sector": "IT·소프트웨어",
       "price": 10850,
@@ -38388,6 +38415,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 0,
       "mcap": 0.0326,
       "shares": 3000000,
+      "induty_code": "582",
       "categories": [
         "IT·소프트웨어"
       ],
@@ -38918,7 +38946,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0010F0",
       "name": "보원케미칼",
-      "name_en": "Bowon Chemical",
+      "name_en": "BOWON CHEMICAL CO.,LTD.",
       "market": "코스닥",
       "sector": "화학",
       "price": 2765,
@@ -38927,6 +38955,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 4275954387,
       "mcap": 0.0316,
       "shares": 11143601,
+      "induty_code": "2221",
       "categories": [
         "화학"
       ],
@@ -45824,7 +45853,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0070X0",
       "name": "에스테크엠",
-      "name_en": "S-Tech M",
+      "name_en": "Stechm Co., Ltd.",
       "market": "코넥스",
       "sector": "전자·부품",
       "price": 11100,
@@ -45833,6 +45862,7 @@ window.KOS_LIVE_DATA = {
       "trading_value": 1102600,
       "mcap": 0.0168,
       "shares": 1510000,
+      "induty_code": "29299",
       "categories": [
         "전자·부품"
       ],
