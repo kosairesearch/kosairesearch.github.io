@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-10-28 04:46",
+  "lastUpdated": "2026-10-28 05:11",
   "dataDate": "20261027",
   "stocks": [
     {
@@ -24643,7 +24643,7 @@ window.KOS_LIVE_DATA = {
       "name": "액스비스",
       "name_en": "AXBIS CO.,LTD",
       "market": "코스닥",
-      "sector": "전기장비",
+      "sector": "기계·장비",
       "price": 9650,
       "change": 29.88,
       "volume": 2345479,
@@ -24652,7 +24652,7 @@ window.KOS_LIVE_DATA = {
       "shares": 9333740,
       "induty_code": "289",
       "categories": [
-        "전기장비"
+        "기계·장비"
       ],
       "rank": 1367
     },
@@ -46503,7 +46503,7 @@ window.KOS_LIVE_DATA = {
       "name": "에스케이증권제14호기업인수목적",
       "name_en": "SK Securities No.14 Special Purpose Acquisition Company",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "금융",
       "price": 1890,
       "change": -5.5,
       "volume": 90924314,
@@ -46511,7 +46511,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.013,
       "shares": 6670000,
       "categories": [
-        "기타"
+        "금융"
       ],
       "rank": 2579
     },
