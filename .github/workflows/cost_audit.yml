@@ -1,16 +1,30 @@
 name: 💵 배치 비용 점검 (수동 · 돈 안 듦)
 
-# 이 계정이 낸 배치를 결과에서 하나도 빼지 않고 다시 세어(배치 결과는 만든 날부터 29일 보관) 일의 종류 · 모델 · 날짜 · 배치별
-# 금액과, 작성 한 편에 무엇이 드는지(출력 중 사고 · 글, 검색 결과, 검색 요금)를 실행 요약에 표로 찍는다(2026-10-27 사장
-# "예전에는 100편에 10달러도 안 들었다 · 이유를 찾아라"). 모델을 부르지 않는다 — 목록 · 결과 받기 · 토큰 세기(무료)뿐이다.
+# batches — 이 계정이 낸 배치를 결과에서 하나도 빼지 않고 다시 세어(배치 결과는 만든 날부터 29일 보관) 일의 종류 · 모델 · 날짜 ·
+#   배치별 금액과, 작성 한 편에 무엇이 드는지(출력 중 사고 · 글, 검색 결과, 검색 요금)를 실행 요약에 표로 찍는다(2026-10-27 사장
+#   "예전에는 100편에 10달러도 안 들었다 · 이유를 찾아라"). 모델을 부르지 않는다 — 목록 · 결과 받기 · 토큰 세기(무료)뿐이다.
+# billing — 콘솔의 실제 청구 기록(비용 · 사용량)을 관리자 키(저장소 비밀 값 ANTHROPIC_ADMIN_KEY)로 받아 월별 · 모델별 · 항목별로
+#   묶는다(2026-10-27 사장 "저번 분기 전 종목 작성에 10만원"). 금액은 공개 기록이라 그대로 찍지 않는다 — 묻는 세션이 넘긴 공개
+#   열쇠(key · scripts/marketing_seal.py newkey)로 잠근 줄만 찍는다. 관리자 키는 이 단계에만 넘긴다.
 # 아무것도 저장 · 커밋하지 않는다. 마케팅 숫자는 다루지 않는다.
 
 on:
   workflow_dispatch:
     inputs:
+      mode:
+        description: 'batches(배치 결과 다시 세기) 또는 billing(콘솔 청구 기록 · 관리자 키 필요)'
+        type: choice
+        default: batches
+        options: [batches, billing]
       days:
-        description: '지난 며칠(최대 29 — 배치 결과 보관 기간)'
+        description: 'batches — 지난 며칠(최대 29 — 배치 결과 보관 기간)'
         default: '29'
+      key:
+        description: 'billing — 잠글 공개 열쇠(scripts/marketing_seal.py newkey 가 찍은 한 줄 · 없으면 조회하지 않는다)'
+        default: ''
+      since:
+        description: 'billing — 이날부터(YYYY-MM-DD)'
+        default: '2026-06-01'
 
 permissions:
   contents: read
@@ -28,7 +42,16 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: 배치 비용 점검 (모델 호출 없음)
+        if: ${{ inputs.mode != 'billing' }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           AUDIT_DAYS: ${{ inputs.days }}
         run: python3 scripts/batch_cost_audit.py
+
+      - name: 콘솔 청구 기록 조회 (관리자 키 · 잠가서만 찍는다)
+        if: ${{ inputs.mode == 'billing' }}
+        env:
+          ANTHROPIC_ADMIN_KEY: ${{ secrets.ANTHROPIC_ADMIN_KEY }}
+          KEY: ${{ inputs.key }}
+          BILLING_SINCE: ${{ inputs.since }}
+        run: python3 scripts/billing_report.py

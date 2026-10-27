@@ -134,6 +134,9 @@ run "배치 전용"     python3 scripts/tests/batch_only_test.py
 # 2026-10-27 사장 "예전에는 100편에 10달러도 안 들었다 · 이유를 찾아라". 계정 전체의 배치 비용을 결과에서 다시 세는 점검
 # (💵 배치 비용 점검 · 돈 안 듦)이 모델을 부르지 않고, 성공한 요청만 배치 단가로 세는지.
 run "배치 비용 점검" python3 scripts/tests/batch_cost_audit_test.py
+# 같은 날 사장 "저번 분기 전 종목 작성에 10만원". 콘솔의 실제 청구 기록을 관리자 키로 받는 조회(billing)가 금액을 잠가서만 찍고,
+# 관리자 키를 그 단계에만 넘기는지.
+run "청구 내역 조회" python3 scripts/tests/billing_report_test.py
 # 분기 창·TTM 롤포워드 — 시즌마다 최신 분기가 표에 들어오는지.
 run "분기 창"       python3 scripts/test_quant_quarters.py
 # 시세 원본(FinanceData KRX 캐시 CSV)이 2026-09-08 부터 404 가 됐는데, 수집기가
