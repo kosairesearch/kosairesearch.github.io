@@ -427,6 +427,33 @@ ok(r3["batch_id"] is not None and r3["unavailable"] is not None and len(r3["tick
 ok(not (set(S.load_skip()) - {"000040"}), "한도로 못 모은 종목은 skip 이 아니다", str(S.load_skip()))
 os.environ.pop("REPORT_FILL_TO")
 
+# 새 형식을 만들 수 없는 종목 — 공시 트리거가 지정한 run 이면 작업 출력 legacy 로 넘겨 옛 형식 생성기가 다시 쓴다
+# (2026-10-27 · 6월 옛 형식 110편이 넉 달 넘게 갱신되지 않았다). 정정 공시만 나온 종목 · 백필 run 은 넘기지 않는다.
+_gho = DATA / "gh_output.txt"
+os.environ["GITHUB_OUTPUT"] = str(_gho)
+os.environ["REPORT_TICKERS"] = "000040,005930"
+M.collect_all_quant = lambda targets, data, allow_reuse=False, fresh=(): fake_collect_all(targets, data, no_data={"000040"})
+_legacy_runs = []
+for _env in ({}, {"REPORT_CORRECTIONS": "000040:20260904"}, {"REPORT_BACKFILL": "1"}):
+    for p in S.BATCH_DIR.glob("*.json"):
+        p.unlink()
+    _gho.unlink(missing_ok=True)
+    os.environ.update(_env)
+    _r = M.submit(cl, "2026-09-05 03:00")
+    for k in _env:
+        os.environ.pop(k)
+    _legacy_runs.append((_r["tickers"], _r.get("legacy"), _gho.read_text(encoding="utf-8") if _gho.exists() else ""))
+ok(_legacy_runs[0] == (["005930"], ["000040"], "legacy=000040\n"),
+   "지정 run — 연간 재무가 없는 종목은 작업 출력 legacy 로 넘긴다(새 형식은 나머지만 주문)", str(_legacy_runs[0]))
+ok(_legacy_runs[1][1] is None and "legacy=" not in _legacy_runs[1][2],
+   "정정 공시만 나온 종목은 넘기지 않는다(옛 형식은 숫자를 견줄 수 없다)", str(_legacy_runs[1]))
+ok(_legacy_runs[2][1] is None and "legacy=" not in _legacy_runs[2][2] and "000040" in S.load_skip(),
+   "백필 run 은 넘기지 않고 생성 불가로 적는다", str(_legacy_runs[2]))
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+os.environ.pop("GITHUB_OUTPUT")
+os.environ.pop("REPORT_TICKERS")
+
 # ═══ ⑦ 회수(pickup) ═════════════════════════════════════════════════════
 print("⑦ pickup — 여러 배치, 파일별 한 번, 실패 횟수")
 os.environ["REPORT_REPAIR"] = "0"

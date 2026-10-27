@@ -2422,6 +2422,16 @@ def settle_corrections(corr, quants, errors, today=None):
 
 
 # ── 배치 제출/회수 ────────────────────────────────────────────────────
+def _gh_output(**kv):
+    """작업 출력(GITHUB_OUTPUT) — 작업 파일의 다음 단계가 읽는다. 작업 밖에서 돌리면 아무것도 하지 않는다."""
+    path = os.getenv("GITHUB_OUTPUT")
+    if not path:
+        return
+    with open(path, "a", encoding="utf-8") as f:
+        for k, v in kv.items():
+            f.write(f"{k}={v}\n")
+
+
 def _write_state(path, state):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -2516,6 +2526,16 @@ def submit(cl, as_of):
                 **output_config(mdl),
             ),
         ))
+    # 새 형식을 만들 수 없는 종목(공시 재무 조회에 연간 재무가 없다 — 코넥스 · 리츠 · 인프라펀드 · 외국 기업 · 사업보고서를
+    # 아직 내지 않은 신규 상장)은 옛 형식 리포트에 머문다. 지정 run(공시 트리거)이면 그 종목을 작업 출력 legacy 로
+    # 넘기고, 작업 파일이 옛 형식 생성기(generate_reports_batch · 배치)로 다시 쓴다(2026-10-27 — 6월 옛 형식 110편이
+    # 넉 달 넘게 갱신되지 않았다). 정정 공시만 나온 종목은 넘기지 않는다 — 옛 형식은 숫자를 견줄 수 없고, 정정 공시는
+    # 숫자가 바뀐 경우에만 다시 쓴다. 자동 백필 · 백필 run 은 아래에서 생성 불가로 적는다.
+    legacy = [tk for tk in no_data if tk not in corr]
+    if legacy and not (fill_mode or backfill):
+        _gh_output(legacy=",".join(legacy))
+        result["legacy"] = legacy
+        log(f"- 새 형식을 만들 수 없어 옛 형식 생성기로 넘기는 종목 {len(legacy)}개: {','.join(legacy[:30])}")
     # skip 은 DART 가 '조회된 데이터 없음' 을 준 종목만, 그리고 자동 백필(fill)과
     # 백필 run 에서만 남긴다. 명시 지정 run 은 skip 을 건드리지 않는다(병렬 안전).
     # 한도 초과·점검으로 못 모은 종목은 여기 오지 않는다(quants 에 없다).
