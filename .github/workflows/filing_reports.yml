@@ -66,7 +66,7 @@ jobs:
           KRX_ID: ${{ secrets.KRX_ID }}
           KRX_PW: ${{ secrets.KRX_PW }}
           REPORT_MODEL_TOP: 'claude-opus-5-5'
-          REPORT_MODEL_REST: 'claude-sonnet-5'
+          REPORT_MODEL_REST: 'claude-sonnet-5-5'
           REPORT_MODEL_TOP_N: '300'
           REPORT_TICKERS: ${{ steps.filings.outputs.new_tickers }}
           # 정정 공시만 나온 종목 — 숫자를 새로 받아 저장된 리포트와 견주고, 같으면 다시 쓰지 않는다.

@@ -231,7 +231,7 @@ true("받은 자료를 가리키는 글은 검토가 고쳐 저장한다", saved
 true("있던 업종은 그대로", "옛업종" in saved)
 eq("검토 배치는 한 번 · 다시 쓸 글은 빼고 두 건", [sorted(r["custom_id"][:3] for r in q) for q in fb.created], [["rv_", "rv_"]])
 rq = fb.created[0][0]["params"]
-true("검토 요청 — 배치 · 값싼 모델 · 작성 기준일 · 재료", rq["model"] == "claude-sonnet-5"
+true("검토 요청 — 배치 · 값싼 모델 · 작성 기준일 · 재료", rq["model"] == "claude-sonnet-5-5"
      and "[작성 기준일] 2026년 10월 8일" in rq["messages"][0]["content"], rq["messages"][0]["content"][:80])
 dreq = next(r["params"]["messages"][0]["content"] for r in fb.created[0] if "제공된 자료를 보면" in r["params"]["messages"][0]["content"])
 true("기계 검사에 걸린 곳을 '반드시 고칠 것' 으로 넘긴다", "[기계 검사에서 걸린 곳 — 반드시 고칠 것]" in dreq and "meta" in dreq)

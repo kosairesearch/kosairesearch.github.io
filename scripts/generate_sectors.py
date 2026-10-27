@@ -43,7 +43,7 @@ data/sectors.js (window.KOS_SECTORS) 를 만든다. 업종별 상위 종목·집
   정리되고, 업황 해설도 아직 안 나와 검색할 것이 없다.
 
 모드: submit / collect / auto(기본)
-환경변수: ANTHROPIC_API_KEY(필수), REPORT_MODEL(기본 claude-sonnet-5), SECTOR_FORCE, BATCH_MAX_WAIT_SEC
+환경변수: ANTHROPIC_API_KEY(필수), REPORT_MODEL(기본 claude-sonnet-5-5), SECTOR_FORCE, BATCH_MAX_WAIT_SEC
 """
 import os
 import re
@@ -71,7 +71,7 @@ REPORTS_V2 = ROOT / "data" / "reports_v2"   # 기업 리포트 — quant.quarter
 OUT_JS = ROOT / "data" / "sectors.js"
 STATE = ROOT / "data" / "sector_batch_state.json"
 
-MODEL = os.getenv("REPORT_MODEL", "claude-sonnet-5")
+MODEL = os.getenv("REPORT_MODEL", "claude-sonnet-5-5")   # 2026-10-27 Sonnet 5 → 5.5(사장 승인)
 FORCE = os.getenv("SECTOR_FORCE", "") == "1"
 MAX_WAIT = int(os.getenv("BATCH_MAX_WAIT_SEC", "4800"))
 # 걸러진 것을 다시 만드는 횟수(1차 포함). 회차마다 대상이 줄어든다.
@@ -926,7 +926,7 @@ def _tally(use, message):
 # 어긋난다 — 토큰 수 자체는 그대로 남으므로 나중에 다시 계산할 수 있다.
 # 리포트 생성기의 배치 단가표(generate_reports_v2._PRICE)와 같아야 한다 — 한때 옛 정가의
 # 절반을 적어 두어 추정액이 실제보다 1.5배 크게 찍혔다(check_sectors 가 두 표를 견준다).
-_RATE = {"claude-sonnet-5": (1.00, 5.00), "claude-opus-5": (2.50, 12.50)}
+_RATE = {"claude-sonnet-5-5": (1.00, 5.00), "claude-sonnet-5": (1.00, 5.00), "claude-opus-5": (2.50, 12.50)}
 _WEB_SEARCH_PER_1K = 10.0                       # 웹 검색 1,000회당(배치 할인 없음)
 
 

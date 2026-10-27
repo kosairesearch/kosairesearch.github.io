@@ -119,10 +119,11 @@ def _no_credit(e):
 
 MODEL = os.getenv("REPORT_MODEL_V2", "claude-opus-5-5")  # 폴백
 # 모델 정책: 시총 상위 MODEL_TOP_N개는 고급 모델(Opus), 나머지는 효율 모델(Sonnet)
-# 2026-10-08 Opus 5 → Opus 5.5(사장 승인 — 단가 20% 낮음 · 캐시 읽기 60% 낮음). Sonnet 은 5 그대로다 —
-# Sonnet 5.5 는 단가가 같고 사고 끄기(thinking disabled)가 400 이라 브리핑 수리가 깨진다.
+# 2026-10-08 Opus 5 → Opus 5.5(사장 승인 — 단가 20% 낮음 · 캐시 읽기 60% 낮음).
+# 2026-10-27 Sonnet 5 → Sonnet 5.5(사장 "소넷 5.5 사용해" — 단가 같음 · 캐시 읽기 절반). 사고 설정은 그대로
+# adaptive · 사고 깊이는 적지 않는다(기본 high — Sonnet 5 때와 같다). 사고를 끄는 호출은 model_params 를 본다.
 MODEL_TOP = os.getenv("REPORT_MODEL_TOP", "claude-opus-5-5")
-MODEL_REST = os.getenv("REPORT_MODEL_REST", "claude-sonnet-5")
+MODEL_REST = os.getenv("REPORT_MODEL_REST", "claude-sonnet-5-5")
 MODEL_TOP_N = int(os.getenv("REPORT_MODEL_TOP_N", "300"))
 TOP_N = int(os.getenv("REPORT_TOP_N", "10"))
 MAX_WAIT = int(os.getenv("BATCH_MAX_WAIT_SEC", "10800"))
@@ -1849,7 +1850,7 @@ def fill_missing_en(cl, rep, model=None):
         return 0
     payload = {str(i): c[k]["ko"] for i, (c, k) in enumerate(nodes)}
     resp = cl.messages.create(
-        model=model or os.getenv("REPORT_REPAIR_MODEL", "claude-sonnet-5"),
+        model=model or os.getenv("REPORT_REPAIR_MODEL", "claude-sonnet-5-5"),
         max_tokens=16000, thinking={"type": "adaptive"},
         messages=[{"role": "user", "content":
                    "아래 JSON 은 한국어 기업 리서치 리포트의 일부다. 각 값을 같은 뜻의 "
@@ -2675,10 +2676,11 @@ def poll(cl, batch_id, budget=None):
 # 입력의 10%, 캐시 쓰기는 125% 로 잡는다. 웹 검색은 1,000회에 $10. 회수 단계의 보정(영문 채우기 ·
 # 표현 교정)도 배치다(2026-10-08 — 전에는 즉시 호출 · 정가). 청구서가 아니라 규모를 가늠하는 추정이다 —
 # 실제 청구는 콘솔이 답이다.
-_PRICE = {"claude-opus-5-5": (2.0, 10.0), "claude-opus-5": (2.5, 12.5), "claude-sonnet-5": (1.0, 5.0),
-          "claude-opus-4-8": (2.5, 12.5), "claude-sonnet-4-6": (1.5, 7.5)}
-# 캐시 읽기는 입력 단가의 몇 배인가. Opus 5.5 는 $0.20 / $4 = 0.05(2026-10-08 요금표) — 나머지는 0.1.
-_CACHE_R = {"claude-opus-5-5": 0.05}
+_PRICE = {"claude-opus-5-5": (2.0, 10.0), "claude-opus-5": (2.5, 12.5), "claude-sonnet-5-5": (1.0, 5.0),
+          "claude-sonnet-5": (1.0, 5.0), "claude-opus-4-8": (2.5, 12.5), "claude-sonnet-4-6": (1.5, 7.5)}
+# 캐시 읽기는 입력 단가의 몇 배인가. Opus 5.5 는 $0.20 / $4 = 0.05(2026-10-08 요금표), Sonnet 5.5 는
+# $0.10 / $2 = 0.05(2026-10-27 요금표) — 나머지는 0.1.
+_CACHE_R = {"claude-opus-5-5": 0.05, "claude-sonnet-5-5": 0.05}
 
 
 def _usage_of(message):

@@ -66,7 +66,7 @@ jobs:
       - name: 업종 분석 생성
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          REPORT_MODEL: claude-sonnet-5
+          REPORT_MODEL: claude-sonnet-5-5
           # 정기 실행은 항상 전 업종 재생성. 이게 없으면 submit() 의
           # `FORCE or s not in existing` 조건에 걸려 '대상 0개'로 조용히 끝난다
           # (실제로 7·8월 크론이 그렇게 아무것도 안 하고 성공으로 끝났다).

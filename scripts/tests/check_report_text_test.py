@@ -365,7 +365,7 @@ eq("review — 고친 글 · 남은 위반 0 · 기록", (got[0]["lead"]["ko"].e
 p0 = cl_rv.messages.sent[0]
 eq("review 요청 — 값싼 모델 · 사고 · 기준일 · 재료 · 반드시 고칠 곳", (p0["model"], p0["thinking"], "[작성 기준일] 2026-10-08" in p0["messages"][0]["content"],
    "[재료 — 공시 확정치" in p0["messages"][0]["content"], "meta" in p0["messages"][0]["content"]),
-   ("claude-sonnet-5", {"type": "adaptive"}, True, True, True))
+   ("claude-sonnet-5-5", {"type": "adaptive"}, True, True, True))
 cl_bad = type("CL", (), {})()
 cl_bad.messages = _Msgs(ans([{"path": "lead", "lang": "ko", "old": "늘었다.", "new": "늘었다<sup>1</sup>.", "why": "1"}]))
 eq("review — 고친 글에 태그가 생기면 검토 전체를 버린다", C.review(cl_bad, REP, []), None)

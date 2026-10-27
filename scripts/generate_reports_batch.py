@@ -56,7 +56,8 @@ def bump_fail(fails, tk, why, as_of):
     fails[tk] = {"n": n, "last": as_of, "why": str(why)[:120]}
     return n
 
-MODEL = os.getenv("REPORT_MODEL", "claude-sonnet-4-6")
+# 2026-10-27 Sonnet 4.6 → Sonnet 5.5(사장 "소넷 5.5 사용해" — 배치 단가 $1.5/$7.5 → $1/$5). 사고는 그대로 adaptive.
+MODEL = os.getenv("REPORT_MODEL", "claude-sonnet-5-5")
 TOP_N = int(os.getenv("REPORT_TOP_N", "100"))
 FRESH_DAYS = int(os.getenv("REPORT_FRESH_DAYS", "6"))
 FORCE = os.getenv("REPORT_FORCE", "") == "1"
