@@ -96,7 +96,8 @@ def scan(cl, days=DAYS, now=None, log=print):
     out = {"batches": [], "by_day": defaultdict(lambda: defaultdict(_new_book)),
            "by_kind": defaultdict(_new_book), "by_model_write": defaultdict(_new_book),
            "samples": defaultdict(list), "stop": defaultdict(lambda: defaultdict(int)),
-           "think_chars": defaultdict(int), "text_chars": defaultdict(int), "pending": []}
+           "think_chars": defaultdict(int), "text_chars": defaultdict(int), "pending": [],
+           "orders": defaultdict(list)}
     older = 0
     for b in cl.messages.batches.list(limit=100):
         created = b.created_at
@@ -133,6 +134,8 @@ def scan(cl, days=DAYS, now=None, log=print):
             row["cache_w"] += u["cache_w"]
             _add(out["by_day"][day][kind], u, usd)
             _add(out["by_kind"][kind], u, usd)
+            if kind == "리포트 작성":
+                out["orders"][r.custom_id].append((row["created"].strftime("%Y-%m-%d"), usd, b.id))
             if kind in WRITE_KINDS:
                 key = f"{kind} · {model}"
                 _add(out["by_model_write"][key], u, usd)
@@ -164,6 +167,36 @@ def text_share(cl, samples, log=print):
     return share
 
 
+def report_dates(root=ROOT):
+    """종목 → 지금 화면에 있는 리포트의 작성일(새 형식 · 옛 형식 중 늦은 날)."""
+    dates = {}
+    for sub in ("reports_v2", "reports"):
+        for p in (root / "data" / sub).glob("*.json"):
+            try:
+                d = json.loads(p.read_text(encoding="utf-8")).get("reportDate") or ""
+            except Exception:
+                continue
+            if d > dates.get(p.stem, ""):
+                dates[p.stem] = d
+    return dates
+
+
+def waste(orders, dates):
+    """리포트 작성 주문 가운데 같은 종목을 다시 주문한 것 · 주문한 날 뒤로 저장된 리포트가 없는 것.
+
+    배치를 주문한 뒤 회수하지 못하거나(작업이 끊김 · 상태 파일 유실) 저장 문턱에 걸리면 돈은 나가고 리포트는
+    없다 — 그러면 다음 회차가 같은 종목을 다시 주문한다. 우리 사용량 기록은 회수한 배치만 세므로 이런 돈은
+    기록에 없다."""
+    n = sum(len(v) for v in orders.values())
+    repeat = {tk: v for tk, v in orders.items() if len(v) > 1}
+    extra_n = sum(len(v) - 1 for v in repeat.values())
+    extra_usd = sum(sum(x[1] for x in sorted(v)[:-1]) for v in repeat.values())
+    unsaved = [(tk, d, usd) for tk, v in orders.items() for d, usd, _ in v if dates.get(tk, "") < d]
+    return {"n": n, "tickers": len(orders), "repeat": repeat, "extra_n": extra_n, "extra_usd": extra_usd,
+            "unsaved_n": len(unsaved), "unsaved_usd": sum(x[2] for x in unsaved),
+            "unsaved": sorted(unsaved, key=lambda x: x[1])}
+
+
 def brief_cost(days=DAYS, now=None):
     """모닝브리핑(즉시 호출) — 발행 기록의 usdAll 을 같은 기간으로 더한다."""
     now = now or datetime.datetime.now(datetime.timezone.utc)
@@ -183,9 +216,10 @@ def brief_cost(days=DAYS, now=None):
     return n, tot
 
 
-def report(res, share, brief, days=DAYS):
+def report(res, share, brief, days=DAYS, dates=None):
     L = []
     w = L.append
+    ws = waste(res["orders"], dates if dates is not None else report_dates())
     allusd = sum(k["usd"] for k in res["by_kind"].values())
     w(f"## 💵 배치 비용 점검 — 지난 {days}일 (배치 단가 · 추정)")
     w("")
@@ -223,6 +257,17 @@ def report(res, share, brief, days=DAYS):
                  (b["in"] + b["cache_r"] * cr) * pin / 1e6]
         tot = sum(parts) or 1
         w(f"| {key} | {parts[0]/tot:.0%} | {parts[1]/tot:.0%} | {parts[2]/tot:.0%} | {parts[3]/tot:.0%} |")
+    w("")
+    w("### 주문 대비 저장 — 돈은 나갔는데 리포트로 남지 않은 주문")
+    w(f"- 리포트 작성 주문 {ws['n']:,}건 · 종목 {ws['tickers']:,}개")
+    w(f"- 같은 종목을 두 번 이상 주문: {len(ws['repeat']):,}개 종목 · 추가 주문 {ws['extra_n']:,}건 · ${ws['extra_usd']:,.2f}")
+    w(f"- 주문한 날 뒤로 저장된 리포트가 없는 주문: {ws['unsaved_n']:,}건 · ${ws['unsaved_usd']:,.2f}")
+    if ws["repeat"]:
+        top = sorted(ws["repeat"].items(), key=lambda x: (-len(x[1]), x[0]))[:15]
+        w("- 여러 번 주문한 종목(많은 순): " + " · ".join(
+            f"{tk} {len(v)}회(${sum(x[1] for x in v):.2f})" for tk, v in top))
+    if ws["unsaved"]:
+        w("- 저장되지 않은 주문(앞 20건): " + " · ".join(f"{tk} {d[5:]}" for tk, d, _ in ws["unsaved"][:20]))
     w("")
     w("### 날짜별(배치를 만든 날 · 한국 시간)")
     w("| 날짜 | 리포트 작성 편수 | 작성 금액 | 그 밖의 배치 | 합계 |")

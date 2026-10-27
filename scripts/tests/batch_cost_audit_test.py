@@ -133,9 +133,23 @@ ok(r["stop"][f"리포트 작성 · {O55}"].get("max_tokens") == 1, "잘린 글(m
 share = A.text_share(cl, r["samples"], log=lambda *_: None)
 ok(cl.messages.counted == 3 and all(0 < v <= 1 for v in share.values()), "글 토큰은 표본마다 토큰 세기로 잰다(무료)",
    str(share))
-text = A.report(r, share, (2, 0.5), days=29)
+text = A.report(r, share, (2, 0.5), days=29, dates={})
 for need in ("일의 종류별", "모델별 평균", "금액 구성", "날짜별", "배치별", "리포트 v2 보정", "(처리 중)", "모닝브리핑(즉시 호출) 2편 $0.50"):
     ok(need in text, f"표에 '{need}'")
+
+print("③-2 주문 대비 저장 — 다시 주문한 종목 · 저장되지 않은 주문")
+orders = {"005930": [("2026-10-20", 0.3, "b1"), ("2026-10-27", 0.2, "b2")],   # 두 번 주문 · 마지막 주문 뒤 저장
+          "000660": [("2026-10-27", 0.4, "b2")],                              # 저장 안 됨(리포트가 그 전 날짜)
+          "035420": [("2026-10-26", 0.25, "b3")]}                             # 저장됨
+dates = {"005930": "2026-10-27", "000660": "2026-09-05", "035420": "2026-10-26"}
+ws = A.waste(orders, dates)
+ok(ws["n"] == 4 and ws["tickers"] == 3, "주문 4건 · 종목 3개")
+ok(set(ws["repeat"]) == {"005930"} and ws["extra_n"] == 1 and abs(ws["extra_usd"] - 0.3) < 1e-9,
+   "다시 주문 — 앞선 주문의 금액을 낭비로 센다", f"{ws['extra_n']} · ${ws['extra_usd']}")
+ok(ws["unsaved_n"] == 1 and abs(ws["unsaved_usd"] - 0.4) < 1e-9,
+   "주문한 날 뒤로 리포트가 없는 주문은 000660 하나(005930 의 앞선 주문은 다시 주문으로 센다)", str(ws["unsaved"]))
+text2 = A.report(r, share, (0, 0.0), days=29, dates={})
+ok("주문 대비 저장" in text2 and "저장되지 않은 주문" in text2, "표에 주문 대비 저장 절")
 
 print("④ 모델을 부르는 창구는 막혀 있다")
 src = (ROOT / "scripts" / "batch_cost_audit.py").read_text(encoding="utf-8")
