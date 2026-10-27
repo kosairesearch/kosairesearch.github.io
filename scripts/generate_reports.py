@@ -230,8 +230,8 @@ def get_dart():
             _dart = False
         else:
             try:
-                import OpenDartReader
-                _dart = OpenDartReader(DART_API_KEY)
+                import dart_reader   # 영문이 섞인 종목코드('0011A0')도 찾는다(2026-10-27)
+                _dart = dart_reader.reader(DART_API_KEY)
             except Exception as e:
                 _dart_err = f"{type(e).__name__}: {e}"
                 log(f"- (DART 초기화 실패) {e}")

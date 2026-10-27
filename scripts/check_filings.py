@@ -95,8 +95,8 @@ def main():
         gh_output(new_tickers="", count=0)
         sys.exit(1)
 
-    import OpenDartReader
-    dart = OpenDartReader(DART_API_KEY)
+    import dart_reader   # 영문이 섞인 종목코드('0011A0')도 찾는 공시 객체(2026-10-27)
+    dart = dart_reader.reader(DART_API_KEY)
 
     uni = universe()
     reps = report_dates()
