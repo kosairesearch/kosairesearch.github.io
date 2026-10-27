@@ -123,7 +123,7 @@ def scan(cl, days=DAYS, now=None, log=print):
            "by_kind": defaultdict(_new_book), "by_model_write": defaultdict(_new_book),
            "samples": defaultdict(list), "stop": defaultdict(lambda: defaultdict(int)), "pending": [],
            "orders": defaultdict(list), "tier": defaultdict(int), "geo": defaultdict(int),
-           "cw5m": 0, "cw1h": 0}
+           "cw5m": 0, "cw1h": 0, "gone": []}
     older = 0
     for b in cl.messages.batches.list(limit=100):
         created = b.created_at
@@ -142,7 +142,13 @@ def scan(cl, days=DAYS, now=None, log=print):
             out["pending"].append(row)
             continue
         day = row["created"].strftime("%m-%d")
-        for r in cl.messages.batches.results(b.id):
+        try:
+            results = list(cl.messages.batches.results(b.id))
+        except Exception as e:      # 보관 기간 경계에서 결과가 먼저 지워진 배치 — 'has no available results'(404)
+            log(f"  · {b.id} 결과를 받을 수 없음({type(e).__name__}) — 건너뜀")
+            out["gone"].append(row)
+            continue
+        for r in results:
             if getattr(r.result, "type", "") != "succeeded":
                 continue                 # 오류 · 취소 · 만료는 청구되지 않는다
             m = r.result.message
@@ -255,7 +261,9 @@ def report(res, share, brief, days=DAYS, dates=None):
     w("")
     w(f"배치 {len(res['batches'])}개 · 응답의 청구 조건으로 계산한 합계 **${allusd:,.2f}** "
       f"(생성기 기록 방식으로는 ${allrec:,.2f}) · 모닝브리핑(즉시 호출) {brief[0]}편 ${brief[1]:,.2f}"
-      + (f" · 아직 처리 중인 배치 {len(res['pending'])}개(결과 전이라 빠짐)" if res["pending"] else ""))
+      + (f" · 아직 처리 중인 배치 {len(res['pending'])}개(결과 전이라 빠짐)" if res["pending"] else "")
+      + (f" · 결과가 이미 지워진 배치 {len(res['gone'])}개(빠짐 — 성공 {sum(r['ok'] for r in res['gone']):,}건)"
+         if res["gone"] else ""))
     w("")
     w("### 청구 조건 확인 — 응답에 실려 온 그대로")
     tiers = " · ".join(f"{k} {v:,}건" for k, v in sorted(res["tier"].items(), key=lambda x: -x[1]))
@@ -337,6 +345,9 @@ def report(res, share, brief, days=DAYS, dates=None):
           f"| {r['ok']}/{r['err']}/{r['cancel']}/{r['expired']} | {r['out']:,} | {r['search']} | ${r['usd']:,.2f} |")
     for r in res["pending"]:
         w(f"| {r['created']:%m-%d %H:%M} | {r['id'][-10:]} | (처리 중) | — | 처리 {r['proc']} | — | — | — |")
+    for r in res["gone"]:
+        w(f"| {r['created']:%m-%d %H:%M} | {r['id'][-10:]} | (결과 지워짐) | — "
+          f"| {r['ok']}/{r['err']}/{r['cancel']}/{r['expired']} | — | — | — |")
     return "\n".join(L)
 
 
