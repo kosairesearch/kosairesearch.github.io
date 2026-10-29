@@ -549,3 +549,9 @@
   · 1/1 처리 (누적 분류 1)
 
 ✅ 분류 완료 · 신규 1개 · 캐시 총 2724개 → data/sector_map.json
+## AI 업종 분류 — 대상 1/2688개 · 모델 claude-sonnet-5-5
+- 업종코드가 없어 리포트의 회사 설명을 함께 주는 종목 1개
+- 배치 주문 msgbatch_01FhLSJWFFqerETCn7sTZDTs (1건) — 최대 30분 기다린다
+  · 1/1 처리 (누적 분류 1)
+
+✅ 분류 완료 · 신규 1개 · 캐시 총 2724개 → data/sector_map.json
