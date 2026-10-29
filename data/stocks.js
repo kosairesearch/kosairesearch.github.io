@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-10-29 18:13",
+  "lastUpdated": "2026-10-29 19:57",
   "dataDate": "20261029",
   "stocks": [
     {
@@ -13381,9 +13381,9 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0053F0",
       "name": "티앤이코리아",
-      "name_en": "",
+      "name_en": "TNE Korea Co.,Ltd.",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "기계·장비",
       "price": 21050,
       "change": 37.58,
       "volume": 15881580,
@@ -13391,7 +13391,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.2389,
       "shares": 11351096,
       "categories": [
-        "기타"
+        "기계·장비"
       ],
       "rank": 743
     },
