@@ -117,6 +117,21 @@ jobs:
           echo "로그인 함수가 응답하지 않습니다" | tee -a /tmp/deploy.log
           exit 1
 
+      # 메일의 수신거부 링크가 부르는 함수(unsubscribeMarketing · 2026-10-29)는 로그인 없이 불린다 — 공개 호출로 올라갔는지
+      # 빈 요청으로 본다. 회원 번호 · 표가 없으면 아무것도 읽거나 바꾸지 않고 INVALID_ARGUMENT('링크가 올바르지 않습니다')로 돌려준다.
+      - name: 수신거부 함수 응답 확인
+        run: |
+          for i in 1 2 3; do
+            out=$(curl -sS -m 30 -X POST -H 'Content-Type: application/json' \
+              -d '{"data":{}}' \
+              https://asia-northeast3-kosai-ae167.cloudfunctions.net/unsubscribeMarketing || true)
+            echo "unsubscribeMarketing 응답: $out" | tee -a /tmp/deploy.log
+            echo "$out" | grep -q 'INVALID_ARGUMENT' && exit 0
+            sleep $((i*10))
+          done
+          echo "수신거부 함수가 응답하지 않습니다" | tee -a /tmp/deploy.log
+          exit 1
+
       - name: 배포 로그 저장(디버그)
         if: always()
         run: |
