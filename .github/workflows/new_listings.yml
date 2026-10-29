@@ -56,6 +56,15 @@ jobs:
           REPORT_MODEL: claude-sonnet-5-5
         run: python scripts/generate_reports_batch.py auto 2>&1 | tee -a data/reports_run.log
 
+      # 상장 직후 종목은 공시 업종코드가 없어 2)가 이름만으로는 업종을 정하지 못한다 — 근거 없이 나온 '기타'는 캐시에 적지
+      # 않는다. 방금 쓴 리포트의 회사 설명으로 한 번 더 분류하고, 다음 시세 갱신이 그 업종을 시세 자료에 반영한다
+      # (2026-10-29 티앤이코리아가 '기타'로 굳었다).
+      - name: 4-2) 신규 종목 업종 다시 분류(리포트의 회사 설명으로)
+        if: steps.detect.outputs.has_new == '1'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/classify_sectors.py 2>&1 | tee -a data/classify.log || echo "(분류 건너뜀)"
+
       # 새 종목이 시세 자료에 들어가면 홈 검색 · 업종 표 · 첫 화면 검색이 곧바로 그 종목의 페이지(/stock/{코드}.html · 영어 /en/stock/)를 가리킨다.
       # 리포트 워치독(30분)을 기다리면 그 사이 링크가 빈 주소가 되므로 여기서 바로 만든다(바뀐 페이지만 쓴다 · 노드는 러너에 있다).
       - name: 종목 페이지 생성 (stock/*.html)
