@@ -1,12 +1,11 @@
 - VAL_TICKERS 지정 — 3개만 즉시 재수집
-- 리포트 동기화 2562건 — 그리드=리포트 항상 일치(무료)
-  · 900290 GRT: EPS=1012 BPS=None ROE=8.4 DPS=0.0 성장=8.1
-  · 900120 씨엑스아이: EPS=None BPS=None ROE=2.5 DPS=None 성장=-21.2
-  · 2024 연간은 2025 보고서의 전기 비교치로 채운다(같은 회계 기준으로 다시 쓴 값)
-  · EPS 입력: 공시롤포워드=669(작년연간 669 − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 669 → 채택 669
-  · BPS 입력: 자본 0.0조(2025년말·연간폴백) ÷ 주식수 1백만(가중평균) = BPS 53639
-  ✅ 모비콘텐츠테크 검증 통과 PER 89.686 PBR 1.1186 EPS 669 BPS 53639 | 참조 EPS None BPS None PER None
-  · 0077H0 모비콘텐츠테크: EPS=669 BPS=53639 ROE=1.2 DPS=None 성장=30.5
+- 리포트 동기화 2563건 — 그리드=리포트 항상 일치(무료)
+  · 417310 코람코더원리츠: EPS=None BPS=4826 ROE=1.5 DPS=354.0 성장=2.0
+  · 412540 제일엠앤에스: EPS=-568 BPS=None ROE=None DPS=0.0 성장=1.2
+  · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
+  · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 2백만(발행총수) = BPS None
+  ✅ 이스트엔드 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS None BPS None PER None
+  · 0230E0 이스트엔드: EPS=None BPS=None ROE=None DPS=None 성장=None
 
 ✅ 밸류에이션 수집 — 이번 3건 신규 / 건너뜀 0 / 보유 2710/2687개 / 갱신필요 0개
 - VALUATION_COMPLETE 전 종목 최신 — 추가 수집 없음
