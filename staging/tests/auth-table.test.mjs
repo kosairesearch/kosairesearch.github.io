@@ -131,7 +131,8 @@ console.log("\n── ② 이동하는 자리가 전부 자물쇠를 거치는�
        `${site}auth-action.html — 단추 주소는 만든 요소의 a.href 에 글자로만 넣는다`);
     const hrefs = [...am.matchAll(/\bhref:\s*([^,}\s]+)/g)].map(m => m[1]);
     const gos = [...am.matchAll(/goBtn\('[^']*',\s*([^)]+)\)/g)].map(m => m[1].trim());
-    const fixed = v => /^'[A-Za-z0-9_-]+\.html'$/.test(v);
+    // 고정 주소 — 글자로 적은 페이지 이름(꼬리표도 글자로 적은 것만 · 'Settings.html?tab=notifications')
+    const fixed = v => /^'[A-Za-z0-9_-]+\.html(\?[A-Za-z0-9_=&-]+)?'$/.test(v);
     ok(hrefs.length > 0 && hrefs.every(v => v === "continueUrl" || fixed(v))
          && gos.length > 0 && gos.every(v => v === "s.href" || fixed(v)),
        `${site}auth-action.html — 단추가 가는 곳은 자물쇠를 거친 continueUrl 이나 고정 주소뿐이다`,

@@ -310,6 +310,9 @@ def build(outs=None):
         if stg and key == 'settings':
             continue
         html = page(title if stg else title.replace(' | KOSAI', ' — 디자인 시안 | KOSAI'), body, js, module=real.get(key))
+        if stg and key == 'action':   # 주소의 인증 코드 · 수신거부 표를 통계 스크립트보다 먼저 걷는다(auth_staging.ACTION_HEAD)
+            assert html.count('<meta charset="utf-8">\n') == 1, out
+            html = html.replace('<meta charset="utf-8">\n', '<meta charset="utf-8">\n' + A.ACTION_HEAD + '\n', 1)
         C.emit(ROOT / out, html)
         print(f'✅ {ROOT / out} · {len(html):,}자')
 

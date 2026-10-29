@@ -113,7 +113,16 @@ async function prime(p, base, page, { provider = "naver", next = "Watchlist.html
     sessionStorage.setItem("__replies", JSON.stringify(rp));
   }, [provider, base, page, next, replies, reauth]);
 }
-const log = (p) => p.evaluate(() => JSON.parse(sessionStorage.getItem("__log") || "[]")).catch(() => []);
+/* 기록은 sessionStorage 에 있다. 관심종목 화면에 닿은 직후 그 화면이 한 번 더 넘어가면 읽는 도중 실행 문맥이 사라진다
+   ('Execution context was destroyed'). 그 오류를 빈 기록으로 바꾸면 컴퓨터가 바쁜 날에만 '[]' 로 걸린다(2026-10-29 전체
+   검사에서 걸렸고, 처리기에 부하를 걸어 재현했다) — 넘어간 뒤 다시 읽는다. 기록이 정말 비었으면 그대로 [] 를 돌려준다. */
+const log = async (p) => {
+  for (let i = 0; i < 20; i++) {
+    try { return await p.evaluate(() => JSON.parse(sessionStorage.getItem("__log") || "[]")); }
+    catch (e) { await p.waitForLoadState("load").catch(() => {}); await p.waitForTimeout(150); }
+  }
+  return [];
+};
 const errText = (p) => p.evaluate(() => { const e = document.getElementById("authErr"); return e && e.classList.contains("show") ? e.textContent : ""; });
 
 for (const [site, base] of [["실사이트", ""], ["스테이징", "staging/"]]) {

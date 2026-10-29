@@ -1337,8 +1337,15 @@ function customActionLink(rawLink, lang){
 
 function esc(s){ return String(s || "").replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c])); }
 
-function mailLayout({ lang, heading, intro, btnText, link, outro }){
+function mailLayout({ lang, heading, intro, btnText, link, outro, unsubLink }){
   const en = lang === "en";
+  /* 마케팅 수신에 관한 메일에만 붙는 수신거부 줄(처리방침 15항 — '발송되는 모든 메일 하단의 수신거부 링크').
+     인증 · 비밀번호 재설정 · 동의 안내처럼 회원이 요청했거나 법에 따라 보내야 하는 안내에는 붙이지 않는다. */
+  const unsub = unsubLink
+    ? (en
+      ? `<br>To stop receiving marketing messages from KOSAI, <a href="${esc(unsubLink)}" style="color:#8a8c97;text-decoration:underline;">unsubscribe here</a>.`
+      : `<br>마케팅 정보 수신을 원하지 않으시면 <a href="${esc(unsubLink)}" style="color:#8a8c97;text-decoration:underline;">수신거부</a>를 눌러 주십시오.`)
+    : "";
   const footBrand = en ? "KOSAI · AI research on Korean listed companies" : "KOSAI · 한국 상장사 AI 리서치";
   const footContact = en ? "Contact" : "문의";
   /* '계정 활동에 따라' 라고 적었는데, 동의 안내처럼 회원이 아무것도 하지
@@ -1366,7 +1373,7 @@ function mailLayout({ lang, heading, intro, btnText, link, outro }){
     </td></tr>
     <tr><td style="padding:22px 32px 28px;">
       <hr style="border:none;border-top:1px solid #eceef5;margin:0 0 16px;">
-      <p style="margin:0;font:400 12px/1.65 ${FONT};color:#a7a9b4;">${footBrand}<br>${footContact} <a href="mailto:hello@kosai.kr" style="color:#8a8c97;text-decoration:none;">hello@kosai.kr</a> · <a href="${SITE_URL}" style="color:#8a8c97;text-decoration:none;">kosai.kr</a></p>
+      <p style="margin:0;font:400 12px/1.65 ${FONT};color:#a7a9b4;">${footBrand}<br>${footContact} <a href="mailto:hello@kosai.kr" style="color:#8a8c97;text-decoration:none;">hello@kosai.kr</a> · <a href="${SITE_URL}" style="color:#8a8c97;text-decoration:none;">kosai.kr</a>${unsub}</p>
     </td></tr>
   </table>
   <p style="max-width:480px;margin:14px auto 0;font:400 11px/1.5 ${FONT};color:#b3b5bf;">${autoNote}</p>
@@ -1512,7 +1519,9 @@ function recheckDueAt(ms){
   return Date.UTC(y, m - 1, day) - 9 * 3600 * 1000;
 }
 
-function marketingRecheckMail(lang, agreedAtText){
+function marketingRecheckMail(lang, agreedAtText, unsubLink){
+  /* 수신거부 링크 없이는 만들지 않는다 — 철회 방법이 법정 기재 사항이고, 처리방침이 링크를 약속한다. */
+  if (!unsubLink) throw new Error("marketingRecheckMail: 수신거부 링크가 없다");
   const link = SITE_URL + "/Settings.html";
   const en = lang === "en";
   if(en){
@@ -1525,11 +1534,12 @@ function marketingRecheckMail(lang, agreedAtText){
                "We are writing to confirm the following.<br><br>" +
                "&middot; Sender: KOSAI<br>" +
                `&middot; You consented to receive marketing messages on <b>${esc(agreedAtText)}</b>, and that consent remains in effect.<br>` +
-               "&middot; To withdraw, open Settings and switch off <b>Marketing messages</b>. You may also reply to this email.<br><br>" +
+               "&middot; To withdraw, use the <b>unsubscribe</b> link at the bottom of this email, or open Settings and switch off <b>Marketing messages</b>. You may also reply to this email.<br><br>" +
                "If you wish to continue receiving them, no action is needed. " +
                "Withdrawing places no restriction on your use of the service.",
         btnText: "Open settings", link,
-        outro: "This message is a statutory confirmation notice concerning your consent, not a commercial advertisement. For enquiries, please contact hello@kosai.kr." })
+        outro: "This message is a statutory confirmation notice concerning your consent, not a commercial advertisement. For enquiries, please contact hello@kosai.kr.",
+        unsubLink })
     };
   }
   return {
@@ -1540,12 +1550,42 @@ function marketingRecheckMail(lang, agreedAtText){
              "수신 동의 여부를 2년마다 확인해 드리고 있습니다. 아래 내용을 안내드립니다.<br><br>" +
              "&middot; 전송자: KOSAI<br>" +
              `&middot; 회원님은 <b>${esc(agreedAtText)}</b>에 마케팅 정보 수신에 동의하셨으며, 현재 동의가 유지되고 있습니다.<br>` +
-             "&middot; 철회 방법: 설정 화면에서 <b>마케팅 정보 수신</b>을 끄시면 즉시 철회됩니다. 본 메일에 회신하셔도 됩니다.<br><br>" +
+             "&middot; 철회 방법: 이 메일 아래의 <b>수신거부</b>를 누르시거나, 설정 화면에서 <b>마케팅 정보 수신</b>을 끄시면 즉시 철회됩니다. 본 메일에 회신하셔도 됩니다.<br><br>" +
              "계속 받아 보길 원하시면 따로 하실 일은 없습니다. " +
              "철회하셔도 서비스 이용에는 아무런 제한이 없습니다.",
       btnText: "설정 화면 열기", link,
-      outro: "본 메일은 수신 동의 확인을 위한 법정 안내이며 광고성 정보가 아닙니다. 문의사항은 hello@kosai.kr로 연락 주시기 바랍니다." })
+      outro: "본 메일은 수신 동의 확인을 위한 법정 안내이며 광고성 정보가 아닙니다. 문의사항은 hello@kosai.kr로 연락 주시기 바랍니다.",
+      unsubLink })
   };
+}
+
+/* ── 수신거부 링크 ───────────────────────────────────────────────
+   처리방침 15항은 '설정 페이지에서 언제든 해제할 수 있으며, 발송되는 모든 메일 하단의 수신거부 링크로도 즉시 해제할
+   수 있다'고 약속한다. 2026-10-29 점검 때 링크도, 링크를 받아 처리할 곳도 없었다 — 마케팅 수신에 관한 메일은 2년
+   재확인 하나이고(첫 발송 2028년), 그 메일의 철회 방법은 로그인해야 열리는 설정 화면과 회신뿐이었다.
+
+   회원마다 무작위 표(unsubToken · 24바이트 · 32자)를 처음 쓸 때 한 번 만들어 users 문서에 둔다. 링크는 계정 인증
+   화면(auth-action.html?mode=unsubscribe&u=…&t=…)으로 가고, 그 화면에서 단추를 눌러야 철회된다 — 메일 보안 검사기가
+   링크를 미리 열어 보는 것만으로 철회되지 않게. 로그인은 묻지 않는다(수신거부는 쉬워야 한다). 표는 철회밖에 하지
+   못하고, 탈퇴하면 문서와 함께 지워진다. */
+const UNSUB_RE = /^[A-Za-z0-9_-]{32}$/;
+function newUnsubToken(){ return crypto.randomBytes(24).toString("base64url"); }
+
+async function unsubTokenFor(ref, data){
+  const have = data && data.unsubToken;
+  if (typeof have === "string" && UNSUB_RE.test(have)) return have;
+  const t = newUnsubToken();
+  await ref.set({ unsubToken: t }, { merge: true });
+  return t;
+}
+
+function unsubLinkFor(uid, token, lang){
+  const u = new URL(ACTION_PAGE);
+  u.searchParams.set("mode", "unsubscribe");
+  u.searchParams.set("u", uid);
+  u.searchParams.set("t", token);
+  if (lang === "en") u.searchParams.set("lang", "en");
+  return u.toString();
 }
 
 function emailOk(e){ return typeof e === "string" && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e); }
@@ -2110,6 +2150,40 @@ exports.setMarketingConsent = onCall({ region: REGION, cors: true }, async (req)
   await logConsent(db, uid, on ? "marketing_on" : "marketing_off",
     { email: mine.email || null, version: CONSENT_VERSION }, req);
   return { ok: true, marketing: on };
+});
+
+/* 메일의 수신거부 링크 — 로그인 없이 마케팅 수신 동의를 철회한다(위 '수신거부 링크' 주석).
+
+   표(t)가 그 회원 문서의 unsubToken 과 같을 때만 철회한다. 틀리면 무엇이 틀렸는지 말하지 않는다 — 없는 회원인지
+   표만 틀렸는지를 알려 주면 회원 번호를 떠보는 데 쓰인다. 이미 철회한 사람은 그대로 성공(already)으로 돌려준다.
+   철회는 설정 화면(setMarketingConsent)과 같은 칸을 같은 값으로 바꾸고, 이력에 같은 이름(marketing_off)으로
+   남기되 경로(via: email_link)를 붙인다. */
+exports.unsubscribeMarketing = onCall({ region: REGION, cors: true }, async (req) => {
+  const d = req.data || {};
+  const uid = typeof d.u === "string" ? d.u.trim() : "";
+  const token = typeof d.t === "string" ? d.t.trim() : "";
+  if (!uid || uid.length > 128 || uid.includes("/") || !UNSUB_RE.test(token)) {
+    throw new HttpsError("invalid-argument", "링크가 올바르지 않습니다.");
+  }
+  const db = admin.firestore();
+  const ref = db.collection("users").doc(uid);
+  const snap = await ref.get();
+  const u = snap.exists ? (snap.data() || {}) : {};
+  const have = typeof u.unsubToken === "string" ? u.unsubToken : "";
+  const same = have.length === token.length &&
+    crypto.timingSafeEqual(Buffer.from(have), Buffer.from(token));
+  if (!same) throw new HttpsError("permission-denied", "링크가 올바르지 않습니다.");
+  if (!(u.consents && u.consents.marketing === true)) return { ok: true, already: true };
+  const now = admin.firestore.FieldValue.serverTimestamp();
+  await ref.set({
+    consents: { marketing: false },
+    marketingAt: null,
+    marketingOffAt: now,
+    updatedAt: now
+  }, { merge: true });
+  await logConsent(db, uid, "marketing_off",
+    { email: u.email || null, version: CONSENT_VERSION, via: "email_link" }, req);
+  return { ok: true, already: false };
 });
 
 exports.deleteAccount = onCall(
@@ -4200,11 +4274,23 @@ async function runMarketingRecheck({ dryRun = true, limit = 100 } = {}){
       continue;
     }
 
-    const mail = marketingRecheckMail("ko", agreedAtText);
+    let unsubLink;
+    try{
+      unsubLink = unsubLinkFor(d.id, await unsubTokenFor(d.ref, u), "ko");
+    }catch(e){
+      /* 수신거부 링크 없이는 보내지 않는다. 시계도 돌리지 않는다 — 다음 날 다시 대상이 된다. */
+      console.error("[recheck] 수신거부 표 만들기 실패", d.id, e && e.message);
+      out.failed++;
+      continue;
+    }
+    const mail = marketingRecheckMail("ko", agreedAtText, unsubLink);
     try{
       const resend = new Resend(RESEND_API_KEY.value());
+      /* 메일 프로그램의 '수신 거부' 단추(List-Unsubscribe)도 같은 화면으로 간다. 한 번에 철회하는
+         List-Unsubscribe-Post 는 싣지 않는다 — 우리 링크는 화면에서 단추를 눌러야 철회되기 때문이다. */
       const { error } = await resend.emails.send({
-        from: MAIL_FROM, to: email, subject: mail.subject, html: mail.html });
+        from: MAIL_FROM, to: email, subject: mail.subject, html: mail.html,
+        headers: { "List-Unsubscribe": `<${unsubLink}>` } });
       if(error) throw new Error(error.message || "resend_failed");
     }catch(e){
       /* 한 사람 실패가 나머지를 막지 않는다. 시계도 돌리지 않는다 —
