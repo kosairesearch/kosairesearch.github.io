@@ -568,8 +568,9 @@ $('#cancelBtn').addEventListener('click', async () => {
 '''
 
 # ══════════════════════════════════════════════════════════════════════════════
-ACTION_JS = r'''import { auth } from "./firebase-config.js";
+ACTION_JS = r'''import { auth, app, SOCIAL } from "./firebase-config.js";
 import { safeNext } from "./auth-util.js";
+import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
 import { applyActionCode, verifyPasswordResetCode, confirmPasswordReset }
   from "''' + FIREBASE_AUTH + r'''";
 
@@ -577,6 +578,10 @@ const $ = s => document.querySelector(s);
 const params = new URLSearchParams(location.search);
 const mode = params.get('mode');
 const oobCode = params.get('oobCode');
+/* 마케팅 수신거부(mode=unsubscribe) — 메일 꼬리의 링크가 회원 번호(u)와 수신거부 표(t)를 싣고 온다(2026-10-29 ·
+   처리방침 15항 '메일 하단의 수신거부 링크'). 로그인은 묻지 않는다. 화면을 여는 것만으로는 철회하지 않고 단추를
+   눌러야 서버(unsubscribeMarketing)를 부른다 — 메일 보안 검사기가 링크를 미리 열어 보아도 철회되지 않게. */
+const unsubU = params.get('u'), unsubT = params.get('t');
 
 /* 메일의 링크를 누르고 온 사람이 다음에 갈 곳. 주소에 그대로 실려 오는 값이라 믿으면 안 된다 —
    safeNext 가 우리 사이트 안의 .html 하나만 통과시킨다(로그인·가입 화면과 같은 자물쇠). 화면은
@@ -629,6 +634,17 @@ function render(){
   } else if(s.kind === 'error'){
     paint(s.crumb || '계정 인증', s.title, s.desc);
     bodyEl.appendChild(goBtn('로그인하러 가기', 'Login.html'));   // 같은 곳으로 가는 단추는 같은 이름(2026-10-03)
+  } else if(s.kind === 'unsub'){
+    paint('마케팅 정보 수신', '마케팅 정보 수신 거부', 'KOSAI의 마케팅 정보(새 리포트 발행 알림, 서비스 소식, 이벤트 안내) 수신 동의를 철회합니다. 아래 단추를 누르면 바로 처리됩니다.');
+    const b = el('button', 'btn btn-ink', '수신 거부하기'); b.type = 'button'; b.id = 'unsubBtn';
+    b.addEventListener('click', onUnsub);
+    bodyEl.appendChild(b);
+  } else if(s.kind === 'unsubDone'){
+    paint('마케팅 정보 수신', s.title, s.desc);
+    bodyEl.appendChild(goBtn('홈으로', 'Home.html'));
+  } else if(s.kind === 'unsubErr'){
+    paint('마케팅 정보 수신', '링크가 올바르지 않습니다', '설정 화면에서 마케팅 정보 수신을 끄시거나, hello@kosai.kr로 알려 주시면 처리하겠습니다.');
+    bodyEl.appendChild(goBtn('설정 화면 열기', 'Settings.html?tab=notifications'));
   } else if(s.kind === 'reset'){
     // 이메일이 문장 안에 들어가 사전으로는 못 바꾼다 — 영어 화면(i18n.js)은 여기서 바로
     const en = !!(window.KOSi18n && window.KOSi18n.lang === 'en');
@@ -668,7 +684,28 @@ async function onResetSubmit(ev){
   }
 }
 
+async function onUnsub(){
+  clearErr();
+  const b = $('#unsubBtn'); if(b) b.disabled = true;
+  try{
+    const r = await httpsCallable(getFunctions(app, SOCIAL.functionsRegion), 'unsubscribeMarketing')({ u: unsubU, t: unsubT });
+    state = (r && r.data && r.data.already)
+      ? { kind: 'unsubDone', title: '이미 수신 거부된 상태입니다', desc: '마케팅 정보를 보내지 않고 있습니다. 다시 받으시려면 설정 화면에서 켜실 수 있습니다.' }
+      : { kind: 'unsubDone', title: '수신 거부가 완료되었습니다', desc: '앞으로 마케팅 정보를 보내지 않습니다. 다시 받으시려면 설정 화면에서 켜실 수 있습니다.' };
+    render();
+  }catch(e){
+    if(b) b.disabled = false;
+    const c = String((e && e.code) || '');
+    if(c.includes('permission-denied') || c.includes('invalid-argument')){ state = { kind: 'unsubErr' }; render(); }
+    else showErrMsg('처리하지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.');
+  }
+}
+
 async function run(){
+  if(mode === 'unsubscribe'){
+    state = (unsubU && unsubT) ? { kind: 'unsub' } : { kind: 'unsubErr' };
+    render(); return;
+  }
   if(!mode || !oobCode){
     state = { kind: 'error', title: '잘못된 접근입니다', desc: '유효하지 않은 링크입니다. 메일의 버튼을 다시 눌러 주시기 바랍니다.' };
     render(); return;
