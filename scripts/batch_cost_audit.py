@@ -45,6 +45,7 @@ KIND = [
     (re.compile(r"^rv_"), "저장 전 검토"),
     (re.compile(r"^sec_"), "업종 분석 작성"),
     (re.compile(r"^rep_"), "검토 시험"),
+    (re.compile(r"^trial-"), "비용 시험"),
     (re.compile(r"^c\d+$"), "업종 분류"),
     (re.compile(r"^report$"), "마케팅 주간 보고"),
     (re.compile(r"^brief$"), "모닝브리핑(배치)"),
