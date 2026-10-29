@@ -17,6 +17,8 @@
      ④ 틀린 표 · 다른 회원의 표 · 없는 회원 · 표가 없는 회원 → 같은 거절(permission-denied) · 아무것도 바뀌지 않음
      ⑤ 모양이 틀린 값 → invalid-argument
      ⑥ 인증 · 비밀번호 재설정 메일에는 수신거부 줄을 싣지 않는다(회원이 요청한 안내)
+     ⑦ 시험 발송(adminMarketingRecheck sample) — 관리자 본인에게만 한 통 · [시험] 제목 · 그 계정의 실제 링크로 철회된다 ·
+        재확인 시계와 동의 이력은 그대로 · 계정 문서가 없으면 보내지 않는다 · 관리자가 아니면 거절
    ============================================================ */
 import Module, { createRequire } from "node:module";
 
@@ -207,6 +209,44 @@ await call(fns.sendResetEmail, { email: "me@kosai.kr" });
 await call(fns.sendVerifyEmail, { email: "me@kosai.kr", lang: "en" });
 ok("⑥ 인증 · 비밀번호 재설정 메일(한국어 · 영어)이 나간다", S.sent.length === 3, String(S.sent.length));
 ok("⑥ 그 메일들에는 수신거부 줄 · 머리글이 없다", S.sent.every((m) => !/수신거부|unsubscribe/i.test(m.html) && !m.headers));
+
+/* ── ⑦ 시험 발송(sample) — 관리자 본인에게 한 통 · 실제 링크 · 시계와 이력은 그대로 ─────────────── */
+const ADMIN_UID = "google:admin1";
+const asAdmin = (data, uid = ADMIN_UID, email = "hello@kosai.kr") => has(fns.adminMarketingRecheck)
+  ? silent(() => fns.adminMarketingRecheck({ data, auth: { uid, token: { email, email_verified: true } }, rawRequest: { headers: {} } })
+      .catch((e) => ({ error: e.code })))
+  : Promise.resolve({ error: "없음" });
+reset();
+seedMember();
+S.docs["users/" + ADMIN_UID] = { email: "hello@kosai.kr", consents: { marketing: true, agreedAt: ts("2026-08-20T00:00:00Z") },
+  marketingAt: ts("2026-08-21T00:00:00Z") };
+r = await asAdmin({ sample: true });
+const sm = S.sent[0] || { html: "", headers: {}, subject: "" };
+const at = (S.docs["users/" + ADMIN_UID] || {}).unsubToken;
+const slink = `https://kosai.kr/auth-action.html?mode=unsubscribe&u=${encodeURIComponent(ADMIN_UID)}&t=${at}`;
+ok("⑦ 시험 발송은 관리자 본인에게 한 통만 간다", r.sent === true && S.sent.length === 1 && sm.to === "hello@kosai.kr",
+   JSON.stringify({ r, to: S.sent.map((m) => m.to) }));
+ok("⑦ 제목 앞에 [시험] · 실제와 같은 재확인 메일", sm.subject.startsWith("[시험] ") && sm.html.includes("2026-08-21") && sm.html.includes("이 메일 아래의 <b>수신거부</b>"),
+   sm.subject);
+ok("⑦ 링크 · 머리글은 관리자 계정의 실제 표", TOKEN_RE.test(String(at)) && sm.html.includes(`href="${slink.replace(/&/g, "&amp;")}"`)
+   && (sm.headers || {})["List-Unsubscribe"] === `<${slink}>`);
+ok("⑦ 재확인 시계 · 동의 이력은 건드리지 않는다", !("marketingRecheckedAt" in S.docs["users/" + ADMIN_UID]) && S.events.length === 0
+   && !(S.docs["users/" + UID] || {}).unsubToken);
+r = has(fns.unsubscribeMarketing) ? await call(fns.unsubscribeMarketing, { u: ADMIN_UID, t: at }) : {};
+ok("⑦ 그 링크로 실제로 철회된다", r.ok === true && r.already === false && S.docs["users/" + ADMIN_UID].consents.marketing === false, JSON.stringify(r));
+S.sent = [];
+r = await asAdmin({ sample: true });
+ok("⑦ 동의가 꺼진 계정에도 보내고(동의일 자리에 '시험 발송'), 같은 표를 다시 쓴다",
+   r.sent === true && r.marketing === false && (S.sent[0] || { html: "" }).html.includes("<b>시험 발송</b>")
+   && S.docs["users/" + ADMIN_UID].unsubToken === at, JSON.stringify(r));
+reset();
+r = await asAdmin({ sample: true });
+ok("⑦ 계정 문서가 없으면 보내지 않고 문서도 만들지 않는다", r.sent === false && r.reason === "no-user-doc" && S.sent.length === 0
+   && !S.docs["users/" + ADMIN_UID], JSON.stringify(r));
+reset();
+seedMember();
+r = await asAdmin({ sample: true }, UID, "me@kosai.kr");
+ok("⑦ 관리자가 아니면 거절(permission-denied) · 보내지 않는다", r.error === "permission-denied" && S.sent.length === 0, JSON.stringify(r));
 
 console.log(`\n통과 ${pass} · 실패 ${fail}`);
 process.exit(fail ? 1 : 0);

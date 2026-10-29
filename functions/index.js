@@ -4321,6 +4321,35 @@ async function runMarketingRecheck({ dryRun = true, limit = 100 } = {}){
   return out;
 }
 
+/* 시험 발송 — 2년 재확인 메일을 관리자 본인에게 한 통 보낸다(2026-10-29 사장 "수신거부링크 누르면 되나 안되나 보게").
+   실제 발송과 같은 메일(marketingRecheckMail)에 제목 앞 '[시험] ' 만 붙인다. 수신거부 링크는 그 관리자 계정의 실제 표로
+   만든다 — 누르면 그 계정의 마케팅 수신 동의가 실제로 철회된다(이미 꺼져 있으면 '이미 수신 거부된 상태'). 재확인 시계
+   (marketingRecheckedAt)와 동의 이력(marketing_recheck)은 건드리지 않는다 — 시험이 법정 확인을 한 것으로 남지 않게.
+   계정 문서가 없으면 보내지 않는다(표만 든 빈 문서를 만들지 않게). 마케팅 동의가 꺼져 있으면 동의일 자리에 '시험 발송'. */
+async function sendRecheckSample(uid, email){
+  const ref = admin.firestore().collection("users").doc(uid);
+  const snap = await ref.get();
+  if(!snap.exists) return { sent: false, reason: "no-user-doc" };
+  const u = snap.data() || {};
+  const c = u.consents || {};
+  const ms = (t) => (t && t.toDate ? t.toDate().getTime() : 0);
+  const at = c.marketing === true ? (ms(u.marketingAt) || ms(u.marketingRecheckedAt) || ms(c.agreedAt)) : 0;
+  const agreedAtText = at
+    ? new Intl.DateTimeFormat("sv-SE", { timeZone: "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date(at))
+    : "시험 발송";
+  const unsubLink = unsubLinkFor(uid, await unsubTokenFor(ref, u), "ko");
+  const mail = marketingRecheckMail("ko", agreedAtText, unsubLink);
+  const resend = new Resend(RESEND_API_KEY.value());
+  const { error } = await resend.emails.send({
+    from: MAIL_FROM, to: email, subject: "[시험] " + mail.subject, html: mail.html,
+    headers: { "List-Unsubscribe": `<${unsubLink}>` } });
+  if(error){
+    console.error("[recheck-sample] 발송 실패", error.message || error.name || "");
+    throw new HttpsError("internal", "시험 메일을 보내지 못했습니다.");
+  }
+  return { sent: true, marketing: c.marketing === true };
+}
+
 /* 매일 12:40 KST.
 
    ⚠️ 처음에는 매달 1일로 두었다. 틀렸다. 조문이 기한을 이렇게 정한다.
@@ -4363,6 +4392,11 @@ exports.adminMarketingRecheck = onCall(
   { region: REGION, cors: true, secrets: [RESEND_API_KEY] },
   async (req) => {
     const who = assertAdmin(req);
+    /* 시험 발송(sample) — 관리자 본인 주소로만 한 통(sendRecheckSample). 다른 주소는 받지 않는다. */
+    if((req.data || {}).sample === true){
+      await logAdminAccess(admin.firestore(), who, req, "마케팅 2년 재확인 메일 시험 발송", "관리자 본인");
+      return await sendRecheckSample(req.auth.uid, who);
+    }
     const dryRun = (req.data || {}).dryRun !== false;
     await logAdminAccess(admin.firestore(), who, req,
       dryRun ? "마케팅 2년 재확인 대상 확인" : "마케팅 2년 재확인 메일 발송", "재확인 대상 회원");
