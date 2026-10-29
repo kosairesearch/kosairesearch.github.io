@@ -4343,7 +4343,10 @@ async function sendRecheckSample(uid, email){
   const { error } = await resend.emails.send({
     from: MAIL_FROM, to: email, subject: "[시험] " + mail.subject, html: mail.html,
     headers: { "List-Unsubscribe": `<${unsubLink}>` } });
-  if(error) throw new HttpsError("internal", "시험 메일을 보내지 못했습니다.");
+  if(error){
+    console.error("[recheck-sample] 발송 실패", error.message || error.name || "");
+    throw new HttpsError("internal", "시험 메일을 보내지 못했습니다.");
+  }
   return { sent: true, marketing: c.marketing === true };
 }
 
