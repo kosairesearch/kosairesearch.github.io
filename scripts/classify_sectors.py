@@ -7,6 +7,11 @@ data/sector_map.json {ticker: 카테고리} 캐시를 만든다.
 한 번 분류하면 캐시를 재사용하고, 캐시에 없는(신규 상장) 종목만 추가 분류한다.
 (CLASSIFY_FORCE=1 이면 전 종목 재분류)
 
+상장 직후 종목은 공시 업종코드(KSIC)가 아직 없다. 이름만 보고 낸 '기타'가 캐시에 굳어 액스비스 · 인벤테라(10/27) ·
+티앤이코리아(10/29 — SOFC 발전용 에어블로워 제조사)가 '기타'로 남았다. 그래서 업종코드가 없는 종목에는 이미 쓴 리포트의
+회사 설명(첫 문장)을 함께 주고, 업종코드도 회사 설명도 없이 나온 '기타'는 캐시에 적지 않는다 — 다음 실행이 업종코드나
+리포트 설명으로 다시 분류한다(신규 상장 작업은 리포트를 쓴 뒤 한 번 더 분류한다).
+
 비용: 웹검색 없음, 짧은 출력 → 매우 저렴. 약 40종목/요청.
 
 Batch API 로만 부른다(2026-10-08 사장 "무조건 batch API만 · 모닝브리핑 제외"). 즉시 호출 창구는 막아 둔다.
@@ -28,6 +33,7 @@ from model_params import thinking_off   # noqa: E402 — 모델마다 다른 '�
 ROOT = Path(__file__).resolve().parent.parent
 STOCKS_JS = ROOT / "data" / "stocks.js"
 CACHE = ROOT / "data" / "sector_map.json"
+REPORT_DIRS = (ROOT / "data" / "reports_v2", ROOT / "data" / "reports")   # 회사 설명을 꺼낼 리포트(새 형식 먼저)
 
 # 2026-10-27 Sonnet 4.6 → Sonnet 5.5(사장 "소넷 5.5 사용해"). 사고는 끈다 — Sonnet 4.6 은 thinking 을 비워 두면
 # 꺼졌지만 Sonnet 5.5 는 켜지고, 사고 토큰이 출력 한도(3,000)를 먹어 분류 JSON 이 잘린다(model_params).
@@ -75,7 +81,27 @@ def save_cache(cache):
     CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=0), encoding="utf-8")
 
 
-def build_prompt(chunk):
+def describe(ticker):
+    """업종코드가 없는 종목에 붙일 회사 설명 — 이미 쓴 리포트의 사업 · 요약 칸 첫 문장(150자까지). 없으면 ''."""
+    for d in REPORT_DIRS:
+        p = d / f"{ticker}.json"
+        if not p.exists():
+            continue
+        try:
+            rep = json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        for k in ("business", "lead", "desc"):
+            v = rep.get(k)
+            t = re.sub(r"\s+", " ", ((v.get("ko") if isinstance(v, dict) else v) or "")).strip()
+            if t:
+                m = re.search(r"[.!?](?=\s|$)", t)
+                return (t[:m.end()] if m else t)[:150]
+    return ""
+
+
+def build_prompt(chunk, desc=None):
+    desc = desc or {}
     lines = [
         "카테고리 목록(반드시 이 중에서만 선택):",
         ", ".join(CATEGORIES),
@@ -89,6 +115,7 @@ def build_prompt(chunk):
         "- 증권/은행/카드/캐피탈은 '금융', 손해·생명보험사만 '보험'. 광고/엔터/방송/콘텐츠는 '미디어·엔터'.",
         "- 여행/카지노/면세/레저는 '호텔·레저'. 정수기/렌탈/생활가전은 '유통·소비재'. 전력/원전/신재생은 '에너지·전력'.",
         "- 애매하면 가장 비중 큰 사업으로. 정말 모르겠을 때만 '기타'(남용 금지).",
+        "- KSIC 가 '-' 인 종목(상장 직후)은 줄 끝의 회사 설명으로 주력 사업을 판단한다.",
         "",
         "추가로, 각 종목이 '핵심 AI 기업'인지(ai) 판단:",
         "- ai=true: AI 소프트웨어·플랫폼·솔루션·언어/영상 AI·AI반도체 설계 등 'AI 그 자체'가 주력인 회사",
@@ -110,7 +137,10 @@ def build_prompt(chunk):
         "분류할 종목:",
     ]
     for s in chunk:
-        lines.append(f"- {s['ticker']} {s['name']} (KSIC {s.get('induty_code') or '-'})")
+        line = f"- {s['ticker']} {s['name']} (KSIC {s.get('induty_code') or '-'})"
+        if not s.get("induty_code") and desc.get(s["ticker"]):
+            line += f" — 회사 설명: {desc[s['ticker']]}"
+        lines.append(line)
     return "\n".join(lines)
 
 
@@ -126,13 +156,13 @@ def parse_json(text):
             return {}
 
 
-def classify_batch(client, chunks):
+def classify_batch(client, chunks, desc=None):
     """묶음마다 요청 하나로 배치 하나를 주문하고 {묶음 번호: 답 JSON} 을 돌려준다.
 
     WAIT 안에 끝나지 않으면 취소한다. 처리되지 않은 요청은 청구되지 않는다 — 그 사이 끝난 답은 쓴다."""
     reqs = [{"custom_id": f"c{i}", "params": {
                 "model": MODEL, "max_tokens": 3000, "system": SYSTEM, **thinking_off(MODEL),
-                "messages": [{"role": "user", "content": build_prompt(chunk)}]}}
+                "messages": [{"role": "user", "content": build_prompt(chunk, desc)}]}}
             for i, chunk in enumerate(chunks)]
     b = client.messages.batches.create(requests=reqs)
     log(f"- 배치 주문 {b.id} ({len(reqs)}건) — 최대 {WAIT // 60}분 기다린다")
@@ -184,8 +214,12 @@ def main():
         return
 
     chunks = [todo[i:i + BATCH] for i in range(0, len(todo), BATCH)]
-    answers = classify_batch(client, chunks)
-    done = 0
+    desc = {s["ticker"]: describe(s["ticker"]) for s in todo if not s.get("induty_code")}
+    desc = {k: v for k, v in desc.items() if v}
+    if desc:
+        log(f"- 업종코드가 없어 리포트의 회사 설명을 함께 주는 종목 {len(desc)}개")
+    answers = classify_batch(client, chunks, desc)
+    done, held = 0, []
     for n, chunk in enumerate(chunks):
         i = n * BATCH
         res = answers.get(n)
@@ -200,6 +234,9 @@ def main():
                 robot = bool(e.get("robot"))
             elif isinstance(e, str):
                 sec = e
+            if sec == "기타" and not s.get("induty_code") and s["ticker"] not in desc:
+                held.append(f"{s['ticker']} {s['name']}")   # 근거 없이 낸 '기타' — 굳히지 않고 다음 실행이 다시 분류한다
+                continue
             if sec in VALID:
                 # 기존 캐시의 업종(s)·AI(ai)는 검증된 값이므로 보존하고, robot 플래그만 추가/갱신.
                 prev = cache.get(s["ticker"])
@@ -213,6 +250,9 @@ def main():
         save_cache(cache)
         log(f"  · {min(i+BATCH, len(todo))}/{len(todo)} 처리 (누적 분류 {done})")
 
+    if held:
+        log(f"- 업종코드 · 회사 설명 없이 '기타'로 답한 {len(held)}개는 캐시에 적지 않는다(다음 실행이 다시 분류): "
+            + ", ".join(held[:20]))
     log(f"\n✅ 분류 완료 · 신규 {done}개 · 캐시 총 {len(cache)}개 → data/sector_map.json")
 
 

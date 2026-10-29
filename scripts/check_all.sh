@@ -137,7 +137,12 @@ run "배치 비용 점검" python3 scripts/tests/batch_cost_audit_test.py
 # 같은 날 사장 "저번 분기 전 종목 작성에 10만원". 콘솔의 실제 청구 기록을 관리자 키로 받는 조회(billing)가 금액을 잠가서만 찍고,
 # 관리자 키를 그 단계에만 넘기는지.
 run "청구 내역 조회" python3 scripts/tests/billing_report_test.py
+# 2026-10-29 사장 "전 종목 다시 작성해도 20만원 이하". 설정(모델 · 웹 검색 횟수 · 사고 깊이)별 실제 사용량을 재는 시험(🧪 리포트
+# 비용 시험)이 리포트 v2 와 같은 요청을 내고, 공식 단가로 세고, 아무것도 저장하지 않는지.
 run "리포트 비용 시험" python3 scripts/tests/report_trial_test.py
+# 같은 날 티앤이코리아 업종이 '기타'로 굳었다(상장 당일 공시 업종코드 없음). 업종코드가 없으면 리포트의 회사 설명을 주고,
+# 근거 없이 나온 '기타'는 캐시에 적지 않는지.
+run "업종 분류" python3 scripts/tests/classify_sectors_test.py
 # 분기 창·TTM 롤포워드 — 시즌마다 최신 분기가 표에 들어오는지.
 run "분기 창"       python3 scripts/test_quant_quarters.py
 # 시세 원본(FinanceData KRX 캐시 CSV)이 2026-09-08 부터 404 가 됐는데, 수집기가
