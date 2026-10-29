@@ -574,6 +574,11 @@ KOSAI 계정은 없는데 연결만 남은 사람은 화면 없이 계정이 만
   · 배포는 사이트(계정 인증 화면)가 먼저, 함수가 나중이다(Actions → 🚀 Firebase 배포). 배포 작업은 올릴 함수를 이름으로 적는다(결제
     함수를 빼려고) — 10/29 첫 배포에서 unsubscribeMarketing 이 그 목록에 없어 올라가지 않았다(같은 날 목록에 더해 다시 배포).
     새 함수를 만들면 deploy_functions.yml 의 `--only` 목록에 더한다 — functions/tests/runtime.test.mjs ③ 이 함수 파일의 내보내기와 견준다.
+  · **시험 발송** — Actions → 📧 수신거부 메일 시험 발송(mail_sample.yml · 수동 · `scripts/send_recheck_sample.cjs`)이 2년 재확인 메일을
+    관리자 주소(hello@kosai.kr)로 한 통 보낸다(제목 앞 '[시험]'). 함수 파일을 그대로 불러 `adminMarketingRecheck({sample:true})`
+    (`sendRecheckSample`)를 돌리므로 메일 · 링크 · 표가 실제 발송과 같다. 링크는 관리자 계정의 실제 링크라, '수신 거부하기'까지 누르면 그 계정의
+    마케팅 수신 동의가 실제로 철회된다(설정 화면에서 다시 켠다). 재확인 시계 · 동의 이력은 건드리지 않는다. 받는 주소는 바꿀 수 없다 —
+    다른 주소를 받게 만들지 말 것(발송 창구가 된다). 실행 기록은 공개라 링크 · 표 · 회원 번호를 찍지 않는다.
   · 지키는 검사 — `functions/tests/unsubscribe.test.mjs`(진짜 함수 · 재확인 메일의 링크 · 머리글 · 표 재사용 · 미리 보기 무기록 · 철회 · 거절 ·
     인증 · 재설정 메일에 수신거부 줄 없음 · 고치기 전 코드는 19건 걸린다), `staging/tests/unsubscribe-page.test.mjs`(두 사이트 · 여는 것만으로
     철회하지 않음 · 완료 · 이미 철회 · 거절 · 일시 오류 · 영어 · 주소에서 걷기 — 가짜로 끼운 통계 스크립트가 본 주소 · 다음 페이지의 출처 ·
