@@ -15,6 +15,10 @@
      ⑥ 표가 빠진 링크 → 서버를 부르지 않고 '링크가 올바르지 않습니다'
      ⑦ 영어 메일의 링크(?lang=en) → 화면 전체가 영어(한국어가 남지 않는다)
      ⑧ 원래 일(이메일 인증)은 그대로 된다
+     ⑨ 회원 번호 · 표 · 인증 코드가 주소에서 걷힌다 — 방문 통계(구글 · 네이버 애널리틱스 — 가짜로 끼워 그 스크립트가 본
+        주소 · 출처를 남긴다)에도, '홈으로'를 눌러 간 다음 페이지의 출처(Referer)에도 실리지 않는다(auth_staging.ACTION_HEAD)
+     ⑩ 걷은 뒤 같은 탭에서 새로 고쳐도 같은 확인 화면이고, 누르면 같은 회원 번호 · 표로 철회한다
+     ⑪ 비밀번호 재설정 코드도 주소에서 걷히고, 화면은 그 코드로 재설정 칸을 연다
 
    실행
      node staging/tests/unsubscribe-page.test.mjs
@@ -45,8 +49,10 @@ const FAKE = {
     export class GoogleAuthProvider { setCustomParameters(){} addScope(){} }
     const no = async () => ({});
     export const signInWithCustomToken = no, createUserWithEmailAndPassword = no, deleteUser = no, signInWithEmailAndPassword = no,
-      signInWithPopup = no, signOut = no, applyActionCode = no, confirmPasswordReset = no;
-    export async function verifyPasswordResetCode(){ return "me@kosai.kr"; }
+      signInWithPopup = no, signOut = no, confirmPasswordReset = no;
+    /* 화면이 받은 인증 코드를 남긴다 — 주소에서 걷은 코드가 모듈까지 가는지(⑧ ⑪) */
+    export async function applyActionCode(a, code){ (window.__codes = window.__codes || []).push(code); return {}; }
+    export async function verifyPasswordResetCode(a, code){ (window.__codes = window.__codes || []).push(code); return "me@kosai.kr"; }
     export function getAdditionalUserInfo(){ return null; }`,
   "firebase-firestore": `
     export function getFirestore(){ return {}; } export function doc(){ return {}; } export function deleteField(){ return {}; }
@@ -90,8 +96,13 @@ const q = (o) => Object.entries(o).map(([k, v]) => `${k}=${encodeURIComponent(v)
 async function open(base, query, reply) {
   const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
   await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, (route) => {
-    const m = route.request().url().match(/gstatic\.com\/firebasejs\/[\d.]+\/(firebase-[a-z-]+)\.js/);
+    const url = route.request().url();
+    const m = url.match(/gstatic\.com\/firebasejs\/[\d.]+\/(firebase-[a-z-]+)\.js/);
     if (m && FAKE[m[1]]) return route.fulfill({ status: 200, contentType: "text/javascript", body: FAKE[m[1]] });
+    /* 통계 스크립트(구글 · 네이버) 대신 — 그 스크립트가 읽게 될 주소 · 출처를 남긴다(⑨) */
+    const an = /googletagmanager\.com\/gtag\/js/.test(url) ? "ga" : /wcs\.naver\.net\/wcslog\.js/.test(url) ? "naver" : "";
+    if (an) return route.fulfill({ status: 200, contentType: "text/javascript",
+      body: `(window.__seen = window.__seen || []).push(${JSON.stringify(an)} + " " + location.href + " " + document.referrer);` });
     return route.abort();
   });
   await ctx.addInitScript((r) => { window.__reply = r; window.__calls = []; }, reply);
@@ -114,8 +125,11 @@ const read = (p) => p.evaluate(() => {
     alert: err && err.classList.contains("show") ? err.textContent.trim() : "",
     calls: (window.__calls || []).map((c) => c.name + ":" + JSON.stringify(c.data)),
     main: ($("main") || document.body).innerText,
+    search: location.search, seen: window.__seen || [], codes: window.__codes || [],
   };
 });
+/* 회원 번호(숫자 부분) · 표 · 인증 코드가 글에 들어 있나 */
+const leaks = (s) => ["1234567", TOK, "CODE", "KEY"].filter((x) => String(s).includes(x));
 async function press(p, reply) {
   await p.evaluate((r) => { window.__reply = r; }, reply);
   await p.click("#unsubBtn", { timeout: 3000 }).catch(() => {});   // 고치기 전 판에는 단추가 없다 — 아래 검사가 걸린다
@@ -176,7 +190,43 @@ for (const [site, base] of [["실사이트", ""], ["스테이징", "staging/"]])
 
   p = await open(base, q({ mode: "verifyEmail", oobCode: "CODE" }), null);
   r = await read(p);
-  t(r.title === "이메일 인증이 완료되었습니다" && r.calls.length === 0, `⑧ 이메일 인증은 그대로 — '${r.title}'`);
+  t(r.title === "이메일 인증이 완료되었습니다" && r.calls.length === 0 && r.codes.join() === "CODE",
+    `⑧ 이메일 인증은 그대로 — '${r.title}' · 받은 코드 ${JSON.stringify(r.codes)}`);
+  await p.ctx.close();
+
+  /* ⑨ 주소 · 통계 · 다음 페이지의 출처 */
+  p = await open(base, q({ mode: "unsubscribe", u: UID, t: TOK }), null);
+  r = await read(p);
+  t(r.search === "?mode=unsubscribe", `⑨ 주소에서 회원 번호 · 표를 걷는다 — '${r.search}'`);
+  if (!base) {   // 스테이징은 통계를 싣지 않는다(analytics.js 가 /staging/ 을 건너뛴다)
+    t(r.seen.length === 2 && r.seen.every((s) => !leaks(s).length),
+      `⑨ 통계 스크립트가 본 주소 · 출처에 없다 — ${r.seen.map((s) => s.split(" ")[0] + (leaks(s).length ? "(새어 나감: " + leaks(s).join(", ") + ")" : "")).join(" · ") || "통계 스크립트가 실리지 않음"}`);
+  }
+  r = await press(p, { ok: true, already: false });
+  const next = p.waitForRequest((q2) => /\/Home\.html/.test(q2.url()), { timeout: 5000 }).catch(() => null);
+  await p.click("#acBody .btn", { timeout: 3000 }).catch(() => {});
+  const req = await next;
+  const ref = req ? (await req.allHeaders())["referer"] || "" : null;
+  t(ref !== null && !leaks(ref).length, `⑨ '홈으로'로 간 다음 페이지의 출처에 없다 — ${ref === null ? "다음 페이지로 가지 않음" : `'${ref.replace(HOST, "/")}'`}`);
+  await p.ctx.close();
+
+  /* ⑩ 새로 고침 */
+  p = await open(base, q({ mode: "unsubscribe", u: UID, t: TOK }), null);
+  await p.reload({ waitUntil: "networkidle" });
+  await p.waitForTimeout(300);
+  r = await read(p);
+  t(r.title === "마케팅 정보 수신 거부" && r.btn === "수신 거부하기", `⑩ 새로 고쳐도 확인 화면 — '${r.title}'`);
+  r = await press(p, { ok: true, already: false });
+  t(r.calls.join() === `unsubscribeMarketing:${JSON.stringify({ u: UID, t: TOK })}` && r.title === "수신 거부가 완료되었습니다",
+    `⑩ 같은 회원 번호 · 표로 철회 — ${r.calls.join(", ") || "부르지 않음"} · '${r.title}'`);
+  await p.ctx.close();
+
+  /* ⑪ 비밀번호 재설정 코드 */
+  p = await open(base, q({ mode: "resetPassword", oobCode: "CODE", apiKey: "KEY", lang: "ko" }), null);
+  r = await read(p);
+  t(r.search === "?mode=resetPassword&lang=ko" && r.codes.join() === "CODE",
+    `⑪ 재설정 코드를 주소에서 걷고 화면은 그 코드를 쓴다 — '${r.search}' · 받은 코드 ${JSON.stringify(r.codes)}`);
+  if (!base) t(r.seen.length === 2 && r.seen.every((s) => !leaks(s).length), "⑪ 통계 스크립트가 본 주소에 재설정 코드가 없다");
   await p.ctx.close();
 }
 

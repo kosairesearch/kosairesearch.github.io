@@ -568,6 +568,18 @@ $('#cancelBtn').addEventListener('click', async () => {
 '''
 
 # ══════════════════════════════════════════════════════════════════════════════
+# 계정 인증 화면 머리의 맨 앞(번역 · 통계 스크립트보다 먼저) — 주소에 실려 온 인증 코드(oobCode · apiKey) · 회원 번호(u) ·
+# 수신거부 표(t)를 걷어 window.KOS_ACTION 에 옮긴다. 주소에 남겨 두면 방문 통계(구글 · 네이버 애널리틱스)가 주소 전체를
+# 기록하고, 이 화면에서 우리 다른 페이지로 가면 그 페이지의 출처(referrer)로 다시 실린다(2026-10-29 — 기한이 없는 수신거부
+# 표를 넣으며 확인했다. 비밀번호 재설정 코드도 같은 길로 나가고 있었다). 같은 탭에서 새로 고쳐도 되도록 sessionStorage 에도
+# 두고, 주소의 mode 가 같을 때만 되살린다. 모듈(ACTION_JS)은 주소에 없는 값을 여기서 채운다. build_auth_comp 가 붙인다.
+ACTION_HEAD = ('<script>(function(){try{var K=["oobCode","apiKey","u","t"],q=new URLSearchParams(location.search),s={},n=0,S="kos-action";'
+               'K.forEach(function(k){if(q.has(k)){s[k]=q.get(k);q.delete(k);n++}});'
+               'if(n){try{sessionStorage.setItem(S,JSON.stringify({m:q.get("mode"),s:s}))}catch(e){}'
+               'history.replaceState(history.state,"",location.pathname+(String(q)?"?"+q:"")+location.hash)}'
+               'else{try{var o=JSON.parse(sessionStorage.getItem(S)||"null");if(o&&o.m===q.get("mode"))s=o.s||{}}catch(e){}}'
+               'window.KOS_ACTION=s}catch(e){}})();</script>')
+
 ACTION_JS = r'''import { auth, app, SOCIAL } from "./firebase-config.js";
 import { safeNext } from "./auth-util.js";
 import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
@@ -576,6 +588,8 @@ import { applyActionCode, verifyPasswordResetCode, confirmPasswordReset }
 
 const $ = s => document.querySelector(s);
 const params = new URLSearchParams(location.search);
+/* 인증 코드 · 회원 번호 · 수신거부 표는 머리의 첫 스크립트(ACTION_HEAD)가 주소에서 걷어 옮겨 두었다 — 통계 · 출처로 새지 않게. */
+for (const [k, v] of Object.entries(window.KOS_ACTION || {})) if (!params.has(k)) params.set(k, v);
 const mode = params.get('mode');
 const oobCode = params.get('oobCode');
 /* 마케팅 수신거부(mode=unsubscribe) — 메일 꼬리의 링크가 회원 번호(u)와 수신거부 표(t)를 싣고 온다(2026-10-29 ·
