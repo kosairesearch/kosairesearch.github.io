@@ -88,8 +88,9 @@ jobs:
       #
       # 목록에 없는 함수는 올라가지 않는다. reviewAdminAccessLogs(매월 1일
       # 접속기록 점검 메일)는 9월 6일에 만들고 여기 넣는 것을 빠뜨려 아흐레
-      # 동안 올라가지 않았다. 새 함수를 만들면 여기까지가 한 일이다 —
-      # admin-access-log.test 가 이 목록을 같이 본다.
+      # 동안 올라가지 않았다. unsubscribeMarketing(메일 수신거부 처리)도 10월 29일
+      # 첫 배포에서 빠졌다. 새 함수를 만들면 여기까지가 한 일이다 —
+      # functions/tests/runtime.test.mjs ③ 이 함수 파일의 내보내기와 이 목록을 견준다.
       #
       # 그래서 올릴 함수를 하나씩 적는다. 결제를 실제로 넣을 때 아래 목록에
       # confirmBilling·changePlan·cancelSubscription·resumeSubscription·
@@ -98,7 +99,7 @@ jobs:
         run: |
           set -o pipefail
           firebase deploy --project kosai-ae167 --non-interactive --force \
-            --only functions:socialLogin,functions:sendVerifyEmail,functions:sendResetEmail,functions:submitForm,functions:getReport,functions:deleteAccount,functions:getUsage,functions:recordSignupConsent,functions:setMarketingConsent,functions:purgeUnconsented,functions:signinHint,functions:adminConsentStats,functions:adminConsentLookup,functions:adminMarketingList,functions:adminUserList,functions:adminNotifyUnconsented,functions:wakeMorningBrief,functions:wakeMorningBriefBackup,functions:watchMorningBrief,functions:adminWakeBrief,functions:adminPurgeOrphans,functions:marketingRecheck,functions:adminMarketingRecheck,functions:reviewAdminAccessLogs \
+            --only functions:socialLogin,functions:sendVerifyEmail,functions:sendResetEmail,functions:submitForm,functions:getReport,functions:deleteAccount,functions:getUsage,functions:recordSignupConsent,functions:setMarketingConsent,functions:purgeUnconsented,functions:signinHint,functions:adminConsentStats,functions:adminConsentLookup,functions:adminMarketingList,functions:adminUserList,functions:adminNotifyUnconsented,functions:wakeMorningBrief,functions:wakeMorningBriefBackup,functions:watchMorningBrief,functions:adminWakeBrief,functions:adminPurgeOrphans,functions:marketingRecheck,functions:adminMarketingRecheck,functions:reviewAdminAccessLogs,functions:unsubscribeMarketing \
             2>&1 | tee -a /tmp/deploy.log
 
       # 올라간 함수가 실제로 요청을 받는지 본다(2026-10-25 실행 환경을 노드 22 로 올리며 더함).
@@ -114,6 +115,21 @@ jobs:
             sleep $((i*10))
           done
           echo "로그인 함수가 응답하지 않습니다" | tee -a /tmp/deploy.log
+          exit 1
+
+      # 메일의 수신거부 링크가 부르는 함수(unsubscribeMarketing · 2026-10-29)는 로그인 없이 불린다 — 공개 호출로 올라갔는지
+      # 빈 요청으로 본다. 회원 번호 · 표가 없으면 아무것도 읽거나 바꾸지 않고 INVALID_ARGUMENT('링크가 올바르지 않습니다')로 돌려준다.
+      - name: 수신거부 함수 응답 확인
+        run: |
+          for i in 1 2 3; do
+            out=$(curl -sS -m 30 -X POST -H 'Content-Type: application/json' \
+              -d '{"data":{}}' \
+              https://asia-northeast3-kosai-ae167.cloudfunctions.net/unsubscribeMarketing || true)
+            echo "unsubscribeMarketing 응답: $out" | tee -a /tmp/deploy.log
+            echo "$out" | grep -q 'INVALID_ARGUMENT' && exit 0
+            sleep $((i*10))
+          done
+          echo "수신거부 함수가 응답하지 않습니다" | tee -a /tmp/deploy.log
           exit 1
 
       - name: 배포 로그 저장(디버그)

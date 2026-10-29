@@ -488,7 +488,7 @@ Firebase Functions 의 `NAVER_CLIENT_ID` 는 네이버 로그인용이라 다른
     스스로 기록한다 — 처리방침 2항에 적었다. 함수를 고치면 Actions → 🚀 Firebase 배포(deploy_functions.yml)를 돌려야 실제로 바뀐다.
     실행 환경은 노드 22 다(2026-10-25 · 노드 20 은 2026-10-30 에 지원이 끝나 그 뒤로는 배포할 수 없고 함수가 멈출 수 있었다 — 배포 도구 경고).
     판은 세 자리에 있다 — firebase.json 의 runtime · functions/package.json 의 engines · deploy_functions.yml 의 setup-node. 함께 고친다
-    (지키는 검사 functions/tests/runtime.test.mjs — 셋이 다르거나 끝난 판이면 걸린다). 배포 기록(data/deploy_functions.log)에 다음 판의
+    (지키는 검사 functions/tests/runtime.test.mjs — 셋이 다르거나 끝난 판이면 걸린다 · 배포 목록에서 빠진 함수도 잡는다). 배포 기록(data/deploy_functions.log)에 다음 판의
     종료 경고가 보이면 그때 올린다.
   · **처리방침**(2026-10-04 공고 · 10-11 시행 · 원문 `scripts/content/privacy.src.html`) — 회원 식별번호(소셜 로그인 uid 는 `naver:{id}` ·
     `kakao:{id}`), 네이버 연결 해제용 갱신 토큰(탈퇴 때 쓰고 지운다), GitHub, Inc.(웹사이트 호스팅 · 접속 기록) 위탁과 국외 이전,
@@ -571,7 +571,9 @@ KOSAI 계정은 없는데 연결만 남은 사람은 화면 없이 계정이 만
   · **광고 메일(새 리포트 알림 · 서비스 소식 · 이벤트)을 만들게 되면** — 마케팅 수신 동의(consents.marketing === true)한 회원에게만, 제목 앞
     '(광고)', 전송자 이름 · 연락처, 위 수신거부 링크(`unsubLinkFor` + `mailLayout({unsubLink})` + `List-Unsubscribe`), 오후 9시 ~ 오전 8시
     발송 금지(처리방침 15항에 적었다). 수신거부 링크 없이 광고 메일을 보내는 길을 만들지 말 것.
-  · 배포는 사이트(계정 인증 화면)가 먼저, 함수가 나중이다(Actions → 🚀 Firebase 배포).
+  · 배포는 사이트(계정 인증 화면)가 먼저, 함수가 나중이다(Actions → 🚀 Firebase 배포). 배포 작업은 올릴 함수를 이름으로 적는다(결제
+    함수를 빼려고) — 10/29 첫 배포에서 unsubscribeMarketing 이 그 목록에 없어 올라가지 않았다(같은 날 목록에 더해 다시 배포).
+    새 함수를 만들면 deploy_functions.yml 의 `--only` 목록에 더한다 — functions/tests/runtime.test.mjs ③ 이 함수 파일의 내보내기와 견준다.
   · 지키는 검사 — `functions/tests/unsubscribe.test.mjs`(진짜 함수 · 재확인 메일의 링크 · 머리글 · 표 재사용 · 미리 보기 무기록 · 철회 · 거절 ·
     인증 · 재설정 메일에 수신거부 줄 없음 · 고치기 전 코드는 19건 걸린다), `staging/tests/unsubscribe-page.test.mjs`(두 사이트 · 여는 것만으로
     철회하지 않음 · 완료 · 이미 철회 · 거절 · 일시 오류 · 영어 · 주소에서 걷기 — 가짜로 끼운 통계 스크립트가 본 주소 · 다음 페이지의 출처 ·

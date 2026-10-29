@@ -1,5 +1,6 @@
 /* ============================================================
    함수 실행 환경 — 세 자리가 같은 판을 가리키고, 끝난 판을 쓰지 않는가
+   (③ 배포 작업의 함수 목록이 함수 파일의 내보내기와 같은가 — 2026-10-29)
 
    왜 있는가. 함수의 노드 판은 세 자리에 적혀 있다 — 배포 설정(firebase.json
    의 runtime), 함수 패키지(functions/package.json 의 engines), 배포 작업
@@ -48,6 +49,30 @@ ok(setup.length > 0 && setup.every((v) => v === want), "deploy_functions.yml 의
 console.log("\n② 지원이 끝난 판을 쓰지 않는가");
 ok(!(want in ENDED) && Number(want) > Math.max(...Object.keys(ENDED).map(Number)),
    `노드 ${want} — 끝난 판(노드 ${Object.keys(ENDED).join(" · ")} 이하)보다 새 판이다`);
+
+/* ③ 배포 작업은 올릴 함수를 이름으로 적는다(결제 함수를 빼려고 — deploy_functions.yml 주석). 목록에 없는 함수는 올라가지
+   않고 아무 경고도 없다 — reviewAdminAccessLogs(9월 6일 · 아흐레)와 unsubscribeMarketing(10월 29일 · 메일 수신거부 처리,
+   첫 배포에서 빠졌다)이 그렇게 빠졌다. 그래서 함수 파일의 내보내기와 목록을 견준다. 결제 함수(if (PAYMENTS_LIVE) exports.…)는
+   배포 작업이 KOSAI_PAYMENTS=on 을 줄 때만 목록에 있어야 한다. */
+console.log("\n③ 배포 목록이 함수 파일의 내보내기와 같은가");
+const src = read("functions/index.js");
+const always = [...src.matchAll(/^exports\.([A-Za-z0-9_]+)\s*=/gm)].map((m) => m[1]);
+const paid = [...src.matchAll(/^if \(PAYMENTS_LIVE\) exports\.([A-Za-z0-9_]+)\s*=/gm)].map((m) => m[1]);
+const other = [...src.matchAll(/^.*\bexports\.([A-Za-z0-9_]+)\s*=.*$/gm)]
+  .filter((m) => !/^(if \(PAYMENTS_LIVE\) )?exports\./.test(m[0])).map((m) => m[1]);
+const only = (/--only\s+(functions:[^\s\\]+)/.exec(yml) || [])[1] || "";
+const listed = only.split(",").map((s) => s.replace(/^functions:/, "")).filter(Boolean);
+const payOn = /KOSAI_PAYMENTS:\s*['"]?on\b/.test(yml);
+ok(always.length > 0 && other.length === 0, "함수 파일의 내보내기를 모두 읽었다(그 밖의 꼴 없음)",
+   `늘 ${always.length} · 결제 ${paid.length}${other.length ? " · 모르는 꼴 " + other.join(", ") : ""}`);
+const missing = always.filter((f) => !listed.includes(f));
+ok(listed.length > 0 && missing.length === 0, "늘 내보내는 함수는 모두 배포 목록에 있다", missing.length ? `빠짐: ${missing.join(", ")}` : `${listed.length}개`);
+const stray = listed.filter((f) => !always.includes(f) && !paid.includes(f));
+ok(stray.length === 0, "배포 목록에 함수 파일에 없는 이름이 없다", stray.join(", "));
+const paidListed = paid.filter((f) => listed.includes(f));
+ok(payOn ? paidListed.length === paid.length : paidListed.length === 0,
+   payOn ? "결제를 켰다(KOSAI_PAYMENTS=on) — 결제 함수가 모두 목록에 있다" : "결제를 켜지 않았다 — 결제 함수는 목록에 없다",
+   paidListed.join(", "));
 
 console.log(`\n통과 ${pass} · 실패 ${fail}`);
 process.exit(fail ? 1 : 0);
