@@ -1,11 +1,9 @@
-- VAL_TICKERS 지정 — 3개만 즉시 재수집
+- VAL_TICKERS 지정 — 1개만 즉시 재수집
 - 리포트 동기화 2563건 — 그리드=리포트 항상 일치(무료)
-  · 192820 코스맥스: EPS=16242 BPS=56989 ROE=34.0 DPS=3300.0 성장=10.7
-  · 221800 지구홀딩스: EPS=-464 BPS=3632 ROE=-12.8 DPS=100.0 성장=2.2
   · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 None + 올해누적 None) · 대안=순이익÷발행총수 없음 → 채택 None
   · BPS 입력: 자본 0.0조(분기말·연간폴백) ÷ 주식수 2백만(발행총수) = BPS None
   ✅ 이스트엔드 검증 통과 PER None PBR None EPS None BPS None | 참조 EPS None BPS None PER None
   · 0230E0 이스트엔드: EPS=None BPS=None ROE=None DPS=None 성장=None
 
-✅ 밸류에이션 수집 — 이번 3건 신규 / 건너뜀 0 / 보유 2711/2688개 / 갱신필요 0개
+✅ 밸류에이션 수집 — 이번 1건 신규 / 건너뜀 0 / 보유 2711/2688개 / 갱신필요 0개
 - VALUATION_COMPLETE 전 종목 최신 — 추가 수집 없음
