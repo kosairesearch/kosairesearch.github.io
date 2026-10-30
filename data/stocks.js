@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-10-31 04:53",
+  "lastUpdated": "2026-10-31 05:02",
   "dataDate": "20261030",
   "stocks": [
     {
@@ -10174,7 +10174,7 @@ window.KOS_LIVE_DATA = {
       "name": "인텔리빅스",
       "name_en": "IntelliVIX CO.,LTD.",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "IT·소프트웨어",
       "price": 30750,
       "change": 241.67,
       "volume": 54701336,
@@ -10182,7 +10182,8 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.3514,
       "shares": 11335408,
       "categories": [
-        "기타"
+        "IT·소프트웨어",
+        "인공지능(AI)"
       ],
       "rank": 565
     },
@@ -20453,7 +20454,7 @@ window.KOS_LIVE_DATA = {
       "name": "크리에이츠",
       "name_en": "CREATZ Inc.",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "IT·소프트웨어",
       "price": 9010,
       "change": -39.93,
       "volume": 15832477,
@@ -20461,7 +20462,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.1229,
       "shares": 13130380,
       "categories": [
-        "기타"
+        "IT·소프트웨어"
       ],
       "rank": 1135
     },
