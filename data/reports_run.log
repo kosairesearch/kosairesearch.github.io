@@ -1,3 +1,17 @@
 === 공시 트리거 옛 형식 갱신 Fri Oct 30 17:16:38 UTC 2026 · 대상 0230E0 ===
 ## 🤖 Batch 제출 — 대상 0개 / 상위 100개 (최근 113개 건너뜀) · 모델 claude-sonnet-5-5
 - 갱신할 종목이 없습니다(모두 최근). 종료.
+## 🤖 Batch 제출 — 대상 2개 / 상위 100개 (최근 113개 건너뜀) · 모델 claude-sonnet-5-5
+  · 준비 420610 인텔리빅스 (DART X)
+  · 준비 439270 크리에이츠 (DART X)
+- ✅ 배치 제출 완료: msgbatch_01Kcs45N74wu58ryyksw6aUT (2건) → data/batch_state.json
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 2/오류 0
+
+✅ 회수 완료 · 성공 2/실패 0 · 총 보유 2689개 → data/reports/ + reports-index.js
+💵 claude-sonnet-5-5 2회(배치) · 입력 8,920(캐시쓰기 106,835·읽기 45,843) · 출력 34,555 · 검색 8 → 약 $0.40
