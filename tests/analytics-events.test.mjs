@@ -20,6 +20,7 @@
      · 스크롤 단계가 한 번씩만 뜨는가
      · 페이지를 떠날 때 머문 시간과 읽은 깊이가 남는가, 두 번 안 뜨는가
      · 집계를 끈 경우엔 아무것도 안 뜨는가
+     · 리포트를 한 번 열면 report_view 가 한 건인가 (종목 페이지 스크립트는 보내지 않는다)
 
    실행
      node tests/analytics-events.test.mjs
@@ -347,6 +348,22 @@ for (const via of ["https://kosai.kr/stock.html?ticker=005930", "https://kosai.k
   w.eval(SRC);
   eq("넘기는 중에는 아무것도 싣지 않는다", (w.dataLayer || []).length, 0);
   ok("KOSA.track 은 있다(부르는 쪽이 멈추지 않게)", typeof w.KOSA.track === "function");
+}
+
+console.log("\n⑪ 리포트를 한 번 열면 report_view 는 한 건 (2026-11-02)");
+/* 9/13 ~ 11/1 에는 측정 코드(위 ⑧ · ⑩)와 종목 페이지 스크립트(build_stock_staging.PAGE_JS)가 둘 다 report_view 를 보내
+   한 번 열 때 두 건이 찍혔다 — 사람 수는 그대로였고 건수와 reports_seen 묶음만 부풀었다. 측정 코드 한 곳만 남겼다.
+   페이지 쪽이 다시 보내면 여기서 걸린다(리포트가 없는 종목의 stock_view 는 페이지 쪽이 보낸다). */
+{
+  const ROOT = join(HERE, "..");
+  const strip = (s) => s.replace(/\/\*[\s\S]*?\*\//g, "").replace(/(^|[^:\\])\/\/[^\n]*/g, "$1");
+  const calls = (s) => strip(s).match(/KOSA\.track\([^)]*\)/g) || [];
+  for (const f of ["scripts/build_stock_staging.py", "stock/assets/stock.js", "stock.html", "staging/stock.html"]) {
+    const src = readFileSync(join(ROOT, f), "utf8");
+    eq(`${f} — 페이지 스크립트는 report_view 를 보내지 않는다`, calls(src).filter((c) => c.includes("report_view")), []);
+    ok(`${f} — 리포트가 없는 종목은 stock_view 로 알린다`, calls(src).some((c) => c.includes("'stock_view'")));
+  }
+  eq("측정 코드에는 report_view 를 보내는 자리가 하나", calls(SRC).filter((c) => c.includes('"report_view"')).length, 1);
 }
 
 console.log("\n" + "=".repeat(52));
