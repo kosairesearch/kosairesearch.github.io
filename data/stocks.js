@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-11-03 08:08",
+  "lastUpdated": "2026-11-03 08:16",
   "dataDate": "20261102",
   "stocks": [
     {
@@ -15293,7 +15293,7 @@ window.KOS_LIVE_DATA = {
       "name": "영광",
       "name_en": "YOUNGKWANG Co., Ltd",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "조선",
       "price": 21500,
       "change": 26.47,
       "volume": 40484716,
@@ -15301,7 +15301,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.1947,
       "shares": 9056463,
       "categories": [
-        "기타"
+        "조선"
       ],
       "rank": 849
     },
