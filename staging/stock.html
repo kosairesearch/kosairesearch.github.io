@@ -989,7 +989,9 @@ getJson('../data/reports_v2/'+encodeURIComponent(TK)+'.json').then(function(r){
   return getJson('../data/reports/'+encodeURIComponent(TK)+'.json').then(function(r1){ if(r1){ REP=r1; TIER='v1'; } });
 }).then(function(){
   LOADED=true; render();
-  if(window.KOSA) KOSA.track(REP?'report_view':'stock_view',{ticker:TK, name:(STOCK&&STOCK.name)||(REP&&REP.name)||TK});
+  /* 리포트 열람(report_view)은 측정 코드(analytics.js)가 페이지를 여는 순간 한 번 보낸다 — 여기서 또 보내면 한 번 열 때
+     두 건이 된다(9/13 ~ 11/1 이 그랬다 · 2026-11-02 고침). 리포트가 없는 종목(준비 중)만 stock_view 로 따로 알린다 */
+  if(window.KOSA && !REP) KOSA.track('stock_view',{ticker:TK, name:(STOCK&&STOCK.name)||TK});
   /* 최근 본 종목(검색창 드롭다운용) — 기기에만 둔다 */
   try{
     var RK='kos-recent', rc=JSON.parse(localStorage.getItem(RK)||'[]').filter(function(x){ return x&&x.t&&x.t!==TK; });
