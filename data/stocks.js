@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-11-04 05:47",
+  "lastUpdated": "2026-11-04 06:00",
   "dataDate": "20261103",
   "stocks": [
     {
@@ -14426,7 +14426,7 @@ window.KOS_LIVE_DATA = {
       "name": "래블업",
       "name_en": "Lablup Inc.",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "IT·소프트웨어",
       "price": 14220,
       "change": -25.16,
       "volume": 39071717,
@@ -14434,7 +14434,8 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.2071,
       "shares": 14565939,
       "categories": [
-        "기타"
+        "IT·소프트웨어",
+        "인공지능(AI)"
       ],
       "rank": 801
     },
