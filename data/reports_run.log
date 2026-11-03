@@ -1,7 +1,5 @@
-=== 공시 트리거 옛 형식 갱신 Mon Nov  2 20:43:28 UTC 2026 · 대상 0230E0 ===
-## 🤖 Batch 제출 — 대상 0개 / 상위 100개 (최근 115개 건너뜀) · 모델 claude-sonnet-5-5
-- 갱신할 종목이 없습니다(모두 최근). 종료.
-## 🤖 Batch 제출 — 대상 1개 / 상위 100개 (최근 115개 건너뜀) · 모델 claude-sonnet-5-5
+=== 공시 트리거 옛 형식 갱신 Tue Nov  3 03:10:46 UTC 2026 · 대상 0230E0 ===
+## 🤖 Batch 제출 — 대상 1개 / 상위 100개 (최근 5개 건너뜀) · 모델 claude-sonnet-5-5
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
@@ -12,13 +10,12 @@
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-  · 준비 359410 영광 (DART X)
-- ✅ 배치 제출 완료: msgbatch_016fga3xuGqo44v3FPmwHTfW (1건) → data/batch_state.json
-  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 준비 0230E0 이스트엔드 (DART X)
+- ✅ 배치 제출 완료: msgbatch_01P5vNmnWaWsmhr9UbRpqmiE (1건) → data/batch_state.json
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 ended · 처리 0/성공 1/오류 0
 
 ✅ 회수 완료 · 성공 1/실패 0 · 총 보유 2690개 → data/reports/ + reports-index.js
-💵 claude-sonnet-5-5 1회(배치) · 입력 4,400(캐시쓰기 62,066·읽기 39,556) · 출력 18,664 · 검색 5 → 약 $0.23
+💵 claude-sonnet-5-5 1회(배치) · 입력 4,474(캐시쓰기 52,763·읽기 38,727) · 출력 13,360 · 검색 4 → 약 $0.18
