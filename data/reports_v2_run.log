@@ -1,14 +1,14 @@
-=== 공시 트리거 v2 생성 Tue Nov  3 07:40:02 UTC 2026 · 대상 063440 ===
+=== 공시 트리거 v2 생성 Tue Nov  3 18:13:44 UTC 2026 · 대상 063440 ===
 ## 🤖 리포트 v2 Batch 제출 — 1개 · 상위300 claude-opus-5-5 / 나머지 claude-sonnet-5-5
 KRX 로그인 시도...
   로그인 ID: (가림)
 KRX 로그인 완료.
-  로그인 시간: 2026-11-03 07:40:06
-  만료 시간: 2026-11-03 08:40:06
+  로그인 시간: 2026-11-03 18:13:47
+  만료 시간: 2026-11-03 19:13:47
 - 정량 수집 063440 SM Life Design...
   · EPS 입력: 공시롤포워드=없음(작년연간 None − 작년동기누적 133 + 올해누적 86) · 대안=순이익÷발행총수 73 → 채택 73
   · BPS 입력: 자본 0.1조(분기말·지배지분) ÷ 주식수 45백만(가중평균) = BPS 1543
-  ✅ SM Life Design 검증 통과 PER 15.178 PBR 0.7181 EPS 73 BPS 1543 | 참조 EPS 114.0 BPS 1533.0 PER 9.8 · EPS 는 자체 대조로 확인(참조값 시차)
+  ✅ SM Life Design 검증 통과 PER 14.959 PBR 0.7077 EPS 73 BPS 1543 | 참조 EPS 114.0 BPS 1533.0 PER 9.74 · EPS 는 자체 대조로 확인(참조값 시차)
 ### SM Life Design
   2025: 매출 533억 영업이익 46억 지배순이익 55억 OPM 8.6% ROE 8.2% 부채비율 9.2%
   2024: 매출 448억 영업이익 35억 지배순이익 49억 OPM 7.9% ROE 7.9% 부채비율 12.5%
@@ -19,18 +19,17 @@ KRX 로그인 완료.
   2026Q1: 매출 97억 영업이익 7억 지배순이익 8억
   2026Q2: 매출 143억 영업이익 23억 지배순이익 25억
   2026Q3: 매출 76억 영업이익 4억 지배순이익 6억
-  PER 15.178 | EPS 73 | PBR 0.7181 | BPS 1543 | ROE 4.8 | 배당 0.0% | DPS 0.0
+  PER 14.959 | EPS 73 | PBR 0.7077 | BPS 1543 | ROE 4.8 | 배당 0.0% | DPS 0.0
 - 모델 배분: claude-opus-5-5 0개 · claude-sonnet-5-5 1개
-- ✅ 배치 제출: msgbatch_01Y8VKfjcfVqPPnAmFs2KifN (1건) → data/batches_v2/msgbatch_01Y8VKfjcfVqPPnAmFs2KifN.json
+- ✅ 배치 제출: msgbatch_01DMZ5qASrPK9k8Mni5n1nPF (1건) → data/batches_v2/msgbatch_01DMZ5qASrPK9k8Mni5n1nPF.json
+  · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 ended · 처리 0/성공 1/오류 0
-- msgbatch_01Y8VKfjcfVqPPnAmFs2KifN · 상태 ended · 처리 0/성공 1/오류 0/만료 0/취소 0 · 주문 2026-11-03 16:40
-    (검증 실패: risks 항목 구조 ['body'])
-  · ⚠️ 063440 스키마 불완전 — 건너뜀 (1번째 실패)
+- msgbatch_01DMZ5qASrPK9k8Mni5n1nPF · 상태 ended · 처리 0/성공 1/오류 0/만료 0/취소 0 · 주문 2026-11-04 03:13
 
-✅ v2 회수 완료 · 성공 0/실패 1 → data/reports_v2/ (2586개)
-💵 claude-sonnet-5-5 1건 · 입력 9,745(캐시쓰기 70,906·읽기 50,291) · 출력 25,730 · 검색 5 → 약 $0.28 (장당 $0.280)
-✅ msgbatch_01Y8VKfjcfVqPPnAmFs2KifN 회수 완료 · 성공 0/실패 1
+✅ v2 회수 완료 · 성공 1/실패 0 → data/reports_v2/ (2586개)
+💵 claude-sonnet-5-5 1건 · 입력 9,747(캐시쓰기 76,409·읽기 60,034) · 출력 25,554 · 검색 6 → 약 $0.30 (장당 $0.296)
+✅ msgbatch_01DMZ5qASrPK9k8Mni5n1nPF 회수 완료 · 성공 1/실패 0
