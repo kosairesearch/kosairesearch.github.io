@@ -39,3 +39,23 @@
 
 ✅ 회수 완료 · 성공 1/실패 0 · 총 보유 2691개 → data/reports/ + reports-index.js
 💵 claude-sonnet-5-5 1회(배치) · 입력 4,401(캐시쓰기 50,801·읽기 2,864) · 출력 13,073 · 검색 3 → 약 $0.16
+## 🤖 Batch 제출 — 대상 1개 / 상위 100개 (최근 6개 건너뜀) · 모델 claude-sonnet-5-5
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 495910 이에스티 (DART X)
+- ✅ 배치 제출 완료: msgbatch_01Chi1V7gaSdbZoAAHXqbuVk (1건) → data/batch_state.json
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 1/오류 0
+
+✅ 회수 완료 · 성공 1/실패 0 · 총 보유 2692개 → data/reports/ + reports-index.js
+💵 claude-sonnet-5-5 1회(배치) · 입력 4,399(캐시쓰기 46,549·읽기 38,619) · 출력 14,945 · 검색 4 → 약 $0.18
