@@ -120,7 +120,7 @@
     "en": "Quarterly earnings volatility"
    },
    "body": {
-    "ko": "제공된 5개 분기 중 2025년 2분기와 2026년 1분기 두 차례 영업손실을 기록하는 등 분기별 편차가 크다. 1분기는 연중 매출 비중이 낮은 반면 인건비 등 고정비 부담은 지속돼 계절적 적자가 반복되는 패턴을 보인다. 연간 실적이 하반기에 몰리는 구조는 여전히 완전히 해소되지 않았다.",
+    "ko": "최근 5개 분기 중 2025년 2분기와 2026년 1분기 두 차례 영업손실을 기록하는 등 분기별 편차가 크다. 1분기는 연중 매출 비중이 낮은 반면 인건비 등 고정비 부담은 지속돼 계절적 적자가 반복되는 패턴을 보인다. 연간 실적이 하반기에 몰리는 구조는 여전히 완전히 해소되지 않았다.",
     "en": "Across the five quarters disclosed, the company posted operating losses twice—in Q2 2025 and Q1 2026—reflecting significant quarter-to-quarter variability. The first quarter typically carries a low share of annual revenue while fixed costs such as personnel expenses persist, producing a recurring seasonal loss pattern. The structure in which annual results are concentrated in the second half has not yet been fully resolved."
    }
   },
@@ -328,25 +328,32 @@
    }
   ],
   "valuation": {
-   "price": 1343,
-   "mcap": 0.0907,
-   "shares": 67539374,
-   "total_shares": 71462308,
-   "wavg_shares": 70806855,
-   "per": 3.461,
-   "eps": 388,
-   "pbr": 0.7102,
-   "bps": 1891,
+   "price": 6190,
+   "mcap": 0.0836,
+   "shares": 13507874,
+   "total_shares": 14292462,
+   "wavg_shares": 14161371,
+   "per": 3.19,
+   "eps": 1940,
+   "pbr": 0.65,
+   "bps": 9455,
    "roe_ttm": 22.3,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 27507480892,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 0.77,
-   "bps_krx": 1717.0,
+   "pbr_krx": 0.72,
+   "bps_krx": 8585.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 42.0,
-   "div": 3.13
+   "div": 3.13,
+   "shares_patched": {
+    "on": "2026-11-02",
+    "was": 67539374,
+    "now": 13507874,
+    "factor": 5.0,
+    "why": "액면병합·분할·감자 — 배수로 환산"
+   }
   }
  }
 }

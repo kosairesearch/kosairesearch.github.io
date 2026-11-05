@@ -1,0 +1,46 @@
+name: 🧪 리포트 비용 시험 (수동 · 저장 · 커밋 안 함)
+
+# 2026-10-29 사장 "전 종목 다시 작성해도 20만원 이하가 나와야한다". 모델 · 웹 검색 횟수 · 사고 깊이를 바꿔 리포트 몇 편을
+# 배치로 써 보고, 응답의 실제 사용량 × 공식 배치 단가로 편당 비용 · 전 종목 환산 · 저장 전 검사 결과를 실행 요약에 찍는다
+# (scripts/report_trial.py). 모델을 부르므로 돈이 든다 — 설정 셋 × 8편이면 1달러 안팎. 아무것도 저장 · 커밋하지 않는다.
+# 설정 이름: 모델(h 하이쿠 5.5 · s 소넷 5.5 · o 오퍼스 5.5) + 웹 검색 최대 횟수 + 사고 깊이(l · m · h · 없으면 기본).
+
+on:
+  workflow_dispatch:
+    inputs:
+      configs:
+        description: '설정(쉼표) — 예: h2,h0,s2l (지금 설정은 s6 · 상위 300 은 o6m)'
+        default: 'h2,h0,s2l'
+      tickers:
+        description: '종목코드(쉼표) — 비우면 시총 순위가 고르게 퍼진 8개'
+        default: ''
+      batch_id:
+        description: '이미 낸 시험 배치를 다시 받을 때(비우면 새로 주문)'
+        default: ''
+      show:
+        description: '본문을 기록에 찍을 종목 수'
+        default: '2'
+
+permissions:
+  contents: read
+
+jobs:
+  trial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+
+      - name: 리포트 비용 시험 (배치 · 저장 안 함)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          REPORT_TRIAL_CONFIGS: ${{ inputs.configs }}
+          REPORT_TRIAL_TICKERS: ${{ inputs.tickers }}
+          REPORT_TRIAL_BATCH: ${{ inputs.batch_id }}
+          REPORT_TRIAL_SHOW: ${{ inputs.show }}
+        run: python3 scripts/report_trial.py

@@ -99,8 +99,49 @@ def normalize(text):
     return out
 
 
-def normalize_report(obj, _key=None):
-    """리포트 한 건의 한국어 본문을 모두 손본다. (바뀐 곳 수, 객체) 를 준다."""
+# 천 단위 쉼표 — 1,000 이상의 수에 쉼표가 빠진 것('9000억원' · '1조 2902억원' · '1200문')을 채운다(2026-10-09).
+# 업종 분석 30편 중 11편 22곳 · 리포트 457편 5,325곳이 쉼표 없이 저장돼 있었다 — 같은 글 안에서 '74조 5,663억원' 과
+# '1조 2902억원' 이 섞였다. 금액 · 수량 단위가 바로 뒤에 올 때만 손댄다. 연도('2026년') · 종목코드('005930') ·
+# 전화번호('1688') · 모델명('A350' · 'RTX 5090' · 'Phase2') · 소수 아래 자리('0.1234%')는 건드리지 않는다.
+# 수 바로 뒤에 붙는 단위. 단어의 첫 글자와 겹치는 것('원통형' · '대비' · '배터리' · '장기')은 뒤 글자로 거른다.
+_UNIT = (r"조|억|만|천|원(?!통)|달러|유로|엔|위안|파운드|명|개|곳|건|척|톤|대(?!비|형|응|한|표|적)|장(?!기|비)|문|배럴"
+         r"|가구|세대|평|배(?!터|당|급|제|치|포)|포인트|주(?!년)|%(?!\s*룰)"
+         r"|㎡|㎥|㎞|㎾|㎿|㎸|m3|MW|GW|kW|kV|TWh|GWh|MWh|kWh|km|t(?![A-Za-z])")
+# 띄어 쓴 뒤에 와도 되는 단위 — '4680 배터리' · '2022 개정' · '2025 대한민국' 처럼 수 뒤에 띄어 오는 말은 대개 단위가 아니다.
+_UNIT_SP = r"달러|유로|엔|위안|파운드|톤|배럴|포인트"
+_AFTER = r"(?:(?:" + _UNIT + r")|\s+(?:" + _UNIT_SP + r"))"
+# 범위('5000~6000억원')의 앞 수도 같이 본다. 앞에 붙은 '-' 는 모델명('A-1000')일 때만 건너뛴다(음수 '-2555억원' 은 고친다).
+NO_COMMA = re.compile(r"(?<![\d,.A-Za-z_/#])(?<![A-Za-z\d]-)([1-9]\d{3,})"
+                      r"(?=(?:\.\d+)?(?:" + _AFTER + r"|\s*[~∼]\s*-?\d[\d,]*(?:\.\d+)?" + _AFTER + r"))")
+# '2030세대'(20~30대) · '4050세대' · '3050 세대' 는 수가 아니라 두 연령대를 붙인 말이다
+_AGE_PAIR = {f"{a}{b}" for a in range(10, 90, 10) for b in range(a + 10, 100, 10)}
+
+
+def add_commas(text):
+    """천 단위 쉼표를 넣는다. 여러 번 돌려도 결과가 같다. 쉼표만 더하므로 쉼표 · 공백을 걷어낸 알맹이는 그대로다."""
+    if not text:
+        return text
+
+    def one(m):
+        d = m.group(1)
+        if d in _AGE_PAIR and re.match(r"\s*세?대", text[m.end():]):
+            return d
+        return f"{int(d):,}"
+    out = NO_COMMA.sub(one, text)
+    if _bare(out).replace(",", "") != _bare(text).replace(",", ""):
+        raise AssertionError("쉼표 말고 글자가 바뀌었다\n  전: %r\n  후: %r" % (text, out))
+    return out
+
+
+def no_comma_hits(text):
+    """쉼표가 빠진 큰 수의 자리 — 검사용(add_commas 가 고칠 곳)."""
+    return [m for m in NO_COMMA.finditer(text or "")
+            if not (m.group(1) in _AGE_PAIR and re.match(r"\s*세?대", text[m.end():]))]
+
+
+def normalize_report(obj, _key=None, commas=False):
+    """리포트 한 건의 한국어 본문을 모두 손본다. (바뀐 곳 수, 객체) 를 준다.
+    commas=True 면 천 단위 쉼표도 채운다(리포트 · 업종 분석 생성기). 브리핑은 지금처럼 띄어쓰기만 맞춘다."""
     n = 0
     if isinstance(obj, dict):
         for k, v in obj.items():
@@ -108,16 +149,18 @@ def normalize_report(obj, _key=None):
                 continue
             if k == "ko" and isinstance(v, str):
                 fixed = normalize(v)
+                if commas:
+                    fixed = add_commas(fixed)
                 if fixed != v:
                     # 바뀐 '군데' 수 — 문자열 하나에 여러 군데일 수 있다
-                    n += len(UNIT_GAP.findall(v)) + len(WON_JOIN.findall(v))
+                    n += len(UNIT_GAP.findall(v)) + len(WON_JOIN.findall(v)) + (len(no_comma_hits(v)) if commas else 0)
                     obj[k] = fixed
             else:
-                c, obj[k] = normalize_report(v, k)
+                c, obj[k] = normalize_report(v, k, commas)
                 n += c
     elif isinstance(obj, list):
         for i, v in enumerate(obj):
-            c, obj[i] = normalize_report(v, _key)
+            c, obj[i] = normalize_report(v, _key, commas)
             n += c
     return n, obj
 
@@ -146,7 +189,7 @@ def dump_like(original, obj):
     return None
 
 
-def run(dirs, apply):
+def run(dirs, apply, commas=False):
     total_files = total_hits = touched = 0
     skipped = []
     for d in dirs:
@@ -163,7 +206,7 @@ def run(dirs, apply):
             except Exception as e:
                 print(f"  ⚠️ {f.name} 읽기 실패: {e}")
                 continue
-            n, rep = normalize_report(rep)
+            n, rep = normalize_report(rep, commas=commas)
             if n:
                 hits += n
                 tf += 1
@@ -192,7 +235,7 @@ SECTORS = "data/sectors.js"
 _SECTORS_HEAD = "window.KOS_SECTORS = "
 
 
-def run_sectors(apply):
+def run_sectors(apply, commas=False):
     f = ROOT / SECTORS
     if not f.is_file():
         print(f"  {SECTORS}: 파일 없음 — 건너뜀")
@@ -205,11 +248,11 @@ def run_sectors(apply):
         print(f"  ⚠️ {SECTORS}: 모양이 예상과 다르다 — 건너뜀")
         return 0
     obj = json.loads(payload[:-1])
-    n, obj = normalize_report(obj)
+    n, obj = normalize_report(obj, commas=commas)
     if n and apply:
         out = head + sep + json.dumps(obj, ensure_ascii=False, indent=2) + ";" + tail
-        # 글자가 아니라 공백만 바뀌었는지 파일 단위로도 확인한다
-        if _bare(out) != _bare(raw):
+        # 글자가 아니라 공백(과 쉼표)만 바뀌었는지 파일 단위로도 확인한다
+        if (_bare(out).replace(",", "") if commas else _bare(out)) != (_bare(raw).replace(",", "") if commas else _bare(raw)):
             print(f"  ⚠️ {SECTORS}: 공백 말고 다른 것이 바뀌려 한다 — 건너뜀")
             return 0
         f.write_text(out, encoding="utf-8")
@@ -218,9 +261,10 @@ def run_sectors(apply):
 
 
 if __name__ == "__main__":
-    args = [a for a in sys.argv[1:] if a != "--apply"]
+    args = [a for a in sys.argv[1:] if a not in ("--apply", "--commas")]
     apply = "--apply" in sys.argv
-    total = run(args or DEFAULT_DIRS, apply)
+    commas = "--commas" in sys.argv          # 천 단위 쉼표까지(리포트 · 업종 분석 생성기와 같은 정리)
+    total = run(args or DEFAULT_DIRS, apply, commas)
     if not args:
-        total += run_sectors(apply)
+        total += run_sectors(apply, commas)
         print(f"업종 분석까지 합쳐 {total:,}군데")

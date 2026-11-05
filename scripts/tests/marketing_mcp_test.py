@@ -201,6 +201,31 @@ with Server() as s:
     ok("주를 고르면 흐름도 그 주에서 끝난다",
        "2026-08-31" in t and "2026-09-07" not in t, t[-300:])
 
+print("\n④-2 국내 접속만 받은 기록은 숫자판도 '국내' 라고 밝힌다")
+# 2026-10-26 까지 숫자판이 범위를 넘겨받지 못해 국내 숫자에 '대상 모든 나라' 가 찍혔다.
+KR_BOX = tempfile.mkdtemp(prefix="mcp-kr-")
+(Path(KR_BOX) / "weekly.json").write_text(
+    json.dumps({"weeks": WEEKS, "scope": "KR", "health": {"ok": True, "problems": []},
+                "retention": [{"week": "2026-08-31", "size": 350, "back": {"1": 77}}]},
+               ensure_ascii=False), encoding="utf-8")
+
+
+class Korea(Server):
+    env = env_for(KR_BOX)
+
+
+with Korea() as s:
+    s.ask(id=1, method="initialize", params={"protocolVersion": "2025-06-18"})
+    t, _ = s.call("weekly", weeks=2)
+    ok("숫자판이 국내 범위를 밝힌다",
+       "대상  국내(대한민국)" in t and "모든 나라" not in t, t[:300])
+    t, _ = s.call("weeks")
+    ok("받아 둔 주 목록과 같은 범위를 말한다", "국내(대한민국)" in t, t[:200])
+with Server() as s:
+    s.ask(id=1, method="initialize", params={"protocolVersion": "2025-06-18"})
+    t, _ = s.call("weekly")
+    ok("범위가 적히지 않은 기록은 지금처럼 '모든 나라' 로 밝힌다", "대상  모든 나라" in t, t[:300])
+
     t, err = s.call("traffic")
     ok("유입 경로가 온다", "검색으로 들어옴" in t and not err, t[:200])
     ok("유입처별 가입 전환이 온다", "들어옴 220" in t and "가입 5" in t, t)

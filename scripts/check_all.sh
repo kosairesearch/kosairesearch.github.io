@@ -89,6 +89,9 @@ run "검증기 자체"   python3 scripts/tests/verify_numbers_test.py
 run "금액 표기"     python3 scripts/tests/number_spacing_test.py
 run "밸류 합치기"   python3 scripts/tests/merge_valuation_test.py
 run "본문 금지표현" python3 scripts/tests/check_report_text_test.py
+# 작성 재료 — 공시 실적을 본문 표기로 · 연속 · 전환을 코드가 센다 · 회사 영문명(2026-10-10). 재료를 그대로 옮긴 문장이
+# 금액 · 연속 연수 검사를 통과하는지, 지시문에 원자료 · 새던 말이 없는지 본다.
+run "작성 재료"     python3 scripts/tests/fin_material_test.py
 run "브리핑 일정"   python3 scripts/tests/calendar_data_test.py
 run "브리핑 뉴스"   python3 scripts/tests/news_data_test.py
 run "금통위 일정"   python3 scripts/tests/bok_schedule_test.py
@@ -102,6 +105,8 @@ run "마케팅 숫자 잠금" python3 scripts/tests/marketing_seal_test.py
 # 한국거래소 로그인 아이디(2026-10-08) — pykrx 가 로그인 때 찍는 아이디가 data/ 기록 파일로 커밋돼 공개 저장소에 올라갔다.
 # 로그인 정보를 쓰는 단계의 기록이 가림 필터를 거치는지, 저장소에 가리지 않은 아이디가 남았는지 본다.
 run "로그인 아이디 가림" python3 scripts/tests/krx_id_test.py
+# 네이버 수집 요청(2026-10-26) — 사이트맵의 종목 페이지만, 손으로 한 번만 보내는지(예약 실행이면 멈춘다) 가짜 네이버로 받아 본다.
+run "네이버 수집 요청" python3 scripts/tests/naver_indexnow_test.py
 run "집계 제외"    node tests/analytics-optout.test.mjs
 run "행동 기록"    node tests/analytics-events.test.mjs
 run "브리핑 생성"   python3 scripts/test_brief_gen.py
@@ -120,9 +125,24 @@ run "리포트 파이프라인" python3 scripts/tests/reports_pipeline_test.py
 # 워치독 동기화 때만 고쳐진다). 대상 판단이 리포트 파일의 날짜도 보는지, 사용량이 남지 않던 생성기
 # (옛 생성기 · 신규 상장용 배치)가 기록하는지, 80분을 넘긴 배치를 다음 실행이 먼저 받는지 본다.
 run "리포트 주문"   python3 scripts/tests/report_orders_test.py
+# 2026-10-27 공시 조회 라이브러리가 숫자 6자리만 종목코드로 봐서, 영문이 섞인 종목코드('0011A0') 36개 종목이 재무제표를
+# 못 받아 새 형식 리포트에서 생성 불가로 빠져 있었다. 공시 객체를 직접 만드는 자리가 생기거나 생성 불가 기록이 다시 쌓이면 걸린다.
+run "공시 종목코드" python3 scripts/tests/dart_reader_test.py
 # 2026-10-08 사장 "무조건 batch API만 · 모닝브리핑 제외". 즉시 호출(값 두 배)이 예약 작업 둘(신규 상장의 업종 분류 ·
 # 마케팅 주간 보고)과 리포트 회수 단계 보정에 남아 있었다. 즉시 호출 자리가 새로 생기거나, 옛 스크립트에 예약이 걸리면 여기서 걸린다.
 run "배치 전용"     python3 scripts/tests/batch_only_test.py
+# 2026-10-27 사장 "예전에는 100편에 10달러도 안 들었다 · 이유를 찾아라". 계정 전체의 배치 비용을 결과에서 다시 세는 점검
+# (💵 배치 비용 점검 · 돈 안 듦)이 모델을 부르지 않고, 성공한 요청만 배치 단가로 세는지.
+run "배치 비용 점검" python3 scripts/tests/batch_cost_audit_test.py
+# 같은 날 사장 "저번 분기 전 종목 작성에 10만원". 콘솔의 실제 청구 기록을 관리자 키로 받는 조회(billing)가 금액을 잠가서만 찍고,
+# 관리자 키를 그 단계에만 넘기는지.
+run "청구 내역 조회" python3 scripts/tests/billing_report_test.py
+# 2026-10-29 사장 "전 종목 다시 작성해도 20만원 이하". 설정(모델 · 웹 검색 횟수 · 사고 깊이)별 실제 사용량을 재는 시험(🧪 리포트
+# 비용 시험)이 리포트 v2 와 같은 요청을 내고, 공식 단가로 세고, 아무것도 저장하지 않는지.
+run "리포트 비용 시험" python3 scripts/tests/report_trial_test.py
+# 같은 날 티앤이코리아 업종이 '기타'로 굳었다(상장 당일 공시 업종코드 없음). 업종코드가 없으면 리포트의 회사 설명을 주고,
+# 근거 없이 나온 '기타'는 캐시에 적지 않는지.
+run "업종 분류" python3 scripts/tests/classify_sectors_test.py
 # 분기 창·TTM 롤포워드 — 시즌마다 최신 분기가 표에 들어오는지.
 run "분기 창"       python3 scripts/test_quant_quarters.py
 # 시세 원본(FinanceData KRX 캐시 CSV)이 2026-09-08 부터 404 가 됐는데, 수집기가

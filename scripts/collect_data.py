@@ -67,6 +67,8 @@ def today_kst():
     return now_kst().date()
 
 # DART에서 영문명을 못 가져오는 특수 티커(영문/숫자 혼합 등) 수동 영문명.
+# 여기에 없는 종목은 한국거래소 공식 영문 종목명으로 채운다(fill_name_en_from_krx · 2026-10-23) —
+# 새 상장마다 손으로 더하지 않아도 된다. 여기 적은 값이 한국거래소 값보다 먼저다.
 NAME_EN_OVERRIDE = {
     "0126Z0": "Samsung Epis Holdings",
     "0009K0": "AimedBio",
@@ -100,6 +102,11 @@ NAME_EN_OVERRIDE = {
     "0117P0": "Piece Peace Studio",
     "0156T0": "HL Genomics",
     "0203K0": "Songwoo Information & Technology",
+    # 2026-10-22 상장 첫날. DART 영문명이 아직 비어 있다 — 상장 예비심사 자료 · 사업자 정보 · 영문 기사가
+    # 같은 표기(MSBIO)를 쓴다. DART 에 영문명이 생기면 그 값으로 자동 교체된다.
+    "0013Y0": "MSBIO",
+    # 2026-10-23 상장 첫날. 영문 기사(서울경제 · 아시아경제 · 이데일리)와 모회사 다산네트웍스가 같은 표기(DTS)를 쓴다.
+    "0015M0": "DTS",
 }
 
 # 우선주(전환·신주·우B·우C 등 포함)·스팩 판별 정규식 — universe(회사 리서치)에서 제외.
@@ -655,8 +662,8 @@ def build_universe(date):
     # 2) DART corp_codes(전 상장사=stock_code 6자리) — Actions에서 DART 키가 작동하므로 주 경로
     if len(universe) < 200 and DART_API_KEY:
         try:
-            import OpenDartReader
-            dart = OpenDartReader(DART_API_KEY)
+            import dart_reader
+            dart = dart_reader.reader(DART_API_KEY)
             cc = getattr(dart, "corp_codes", None)
             if cc is None and hasattr(dart, "corp_code"):
                 cc = dart.corp_code  # 일부 버전 호환
@@ -1231,8 +1238,8 @@ def enrich_with_dart(results):
         return results
 
     try:
-        import OpenDartReader
-        dart = OpenDartReader(DART_API_KEY)
+        import dart_reader   # 영문이 섞인 종목코드('0011A0')도 찾는다(2026-10-27)
+        dart = dart_reader.reader(DART_API_KEY)
     except Exception as e:
         print(f"  [DART] 초기화 실패: {e}")
         return results
@@ -1298,6 +1305,43 @@ def enrich_with_dart(results):
 
     print("  [DART] 영문명·시총 보강 완료")
     return results
+
+
+def krx_english_names():
+    """한국거래소 전종목 기본정보의 영문 종목명 {종목코드: 영문명}.
+
+    DART 영문명(corp_name_eng)은 회사가 공시 시스템에 등록해야 생겨, 신규 상장사는 몇 주에서
+    몇 달까지 비어 있다(2026-10-23 엘리스 · 모비콘텐츠테크 등 5개가 영어 화면에 한국어 이름으로
+    보였다). 한국거래소는 상장 첫날부터 공식 영문 종목명을 준다. 로그인이 필요하다(KRX_ID · KRX_PW).
+    """
+    from pykrx.website.krx.market.core import 전종목기본정보   # [12005] 전종목 기본정보
+    df = 전종목기본정보().fetch(mktId="ALL")
+    return {str(c).strip(): e.strip() for c, e in zip(df["ISU_SRT_CD"], df["ISU_ENG_NM"])
+            if isinstance(e, str) and e.strip()}
+
+
+def fill_name_en_from_krx(results, fetch=None):
+    """DART · 수동 목록을 거친 뒤에도 영문명이 빈 종목만 한국거래소 영문 종목명으로 채운다.
+
+    이미 영문명이 있는 종목은 건드리지 않는다. 받지 못하면 건너뛴다 — 영문명이 비면 화면이
+    한국어 이름을 쓸 뿐, 수집을 멈출 일은 아니다. 채운 값은 다음 날부터 stocks.js 에서 이월된다.
+    """
+    empty = [tk for tk, s in results.items() if not s.get("name_en")]
+    if not empty:
+        return 0
+    try:
+        names = (fetch or krx_english_names)()
+    except Exception as e:
+        print(f"  [영문명] 한국거래소 기본정보를 받지 못함 — 건너뜀: {type(e).__name__}: {e}")
+        return 0
+    n = 0
+    for tk in empty:
+        en = (names.get(tk) or "").strip()
+        if re.search(r"[A-Za-z]{2}", en) and not re.search(r"[가-힣]", en):
+            results[tk]["name_en"] = en
+            n += 1
+    print(f"  [영문명] 한국거래소 영문 종목명으로 {n}개 채움(빈 종목 {len(empty)}개)")
+    return n
 
 
 def apply_categories(results):
@@ -1480,6 +1524,11 @@ def main():
     for tk, en in NAME_EN_OVERRIDE.items():
         if tk in results and not results[tk].get("name_en"):
             results[tk]["name_en"] = en
+
+    # 그래도 빈 종목은 한국거래소 공식 영문 종목명으로 — 신규 상장사는 DART 영문명이 늦게 생긴다.
+    n_krx = fill_name_en_from_krx(results)
+    n_empty = sum(1 for s in results.values() if not s.get("name_en"))
+    log_summary(f"- 영문명 한국거래소 보완: {n_krx}개 · 남은 빈 종목: {n_empty}개")
 
     # 수집 실패 가드: 이번에 새로 수집한 종목이 너무 적으면 갱신 건너뜀(기존 데이터 보존)
     if len(results) < 50:

@@ -13,6 +13,9 @@
   ⑤ 못 받은 배치  신규 상장용 배치가 80분을 넘기면 그대로 버려졌다(2026-09-24). 다음 실행이 먼저 받는다.
   ⑥ 정정 공시     정정 공시만 나온 종목을 따로 알린다(생성기가 숫자를 견준다). 숫자가 같았던 정정 공시는
                   다시 고르지 않는다(2026-10-07 같은 숫자로 14개를 다시 써 $3.97).
+  ⑦ 옛 형식 갱신  새 형식을 만들 수 없는 종목(코넥스 · 리츠 · 외국 기업 · 사업보고서 전 신규 상장)은 공시가 나와도
+                  옛 형식 리포트가 그대로였다 — 6월 옛 형식 110편(2026-10-27). 공시 트리거가 옛 형식 생성기(배치)로
+                  넘기고, 세 번 저장하지 못한 종목은 14일 동안 다시 주문하지 않는다.
 """
 import io
 import json
@@ -31,6 +34,7 @@ import check_filings as CF            # noqa: E402
 import new_listings as NL             # noqa: E402
 import generate_reports as G          # noqa: E402
 import generate_reports_batch as GB   # noqa: E402
+_GB_SUBMIT = GB.submit                # ⑤ 가 가짜로 바꾸기 전의 진짜 주문 함수(⑦ 이 쓴다)
 
 passed = failed = 0
 
@@ -175,6 +179,22 @@ ok("숫자가 같았던 종목" not in text, "⑥ 다시 고른 종목은 '뺐�
 ROWS.pop()
 (S.CHECKED_DIR / B).unlink()
 
+# ⑦ 저장 문턱에 연속으로 걸린 종목은 공시 트리거가 다시 주문하지 않는다(2026-10-10) — 저장하지 못한 리포트는 공시보다
+#    낡은 채로 남아 하루 세 번 같은 공시로 다시 주문됐다. 고치기 전 코드면 B 가 계속 주문된다.
+for _ in range(S.FAIL_LIMIT):
+    S.bump_fail(B)
+out, text = gh_out(CF.main)
+got = out.get("new_tickers", "").split(",") if out.get("new_tickers") else []
+ok(B not in got and got == [D, E], "⑦ 저장 문턱에 3번 연속 걸린 B 는 다시 주문하지 않는다", str(got))
+ok(f"저장 문턱에 {S.FAIL_LIMIT}번 연속 걸려 뺀 종목 1개" in text and B in text, "⑦ 뺀 이유를 로그에 남긴다",
+   next((ln.strip() for ln in text.splitlines() if "저장 문턱" in ln), "없음"))
+S.clear_fail(B)
+S.bump_fail(B)
+out, text = gh_out(CF.main)
+got = out.get("new_tickers", "").split(",") if out.get("new_tickers") else []
+ok(got == [B, D, E], "⑦ 한두 번 실패는 그대로 다시 주문한다(일시 장애 · 다음 회차가 다시 만든다)", str(got))
+S.clear_fail(B)
+
 # 갱신 기준일(전 종목 다시 쓰기)이 있으면 그보다 낡은 리포트는 워치독 몫 — 판단도 늦은 날짜로
 S.REFRESH_FILE.write_text("2026-09-20\n", encoding="utf-8")
 out, text = gh_out(CF.main)
@@ -193,6 +213,14 @@ got = out.get("new_tickers", "").split(",") if out.get("new_tickers") else []
 ok(C not in got, "C — 리포트 파일이 있으니 다시 만들지 않는다", str(got))
 ok(got == [D, E], "D(파일 없음) · E(제목 없는 파일) 만 재시도", str(got))
 ok("색인 동기화 전 리포트 파일이 있는 종목 1개" in text, "로그에 남긴다")
+# 연속 3번 저장하지 못한 종목은 다시 주문하지 않는다(2026-10-09) — 2번까지는 다시 주문한다
+NL.FAIL_JS = DATA / "new_listing_fail.json"
+NL.FAIL_JS.write_text(json.dumps({D: {"n": 3, "last": "2026-10-09 23:30", "why": "검사 위반(style)"},
+                                  E: {"n": 2, "last": "2026-10-09 23:30", "why": "불완전(잘림 의심)"}}), encoding="utf-8")
+out, text = gh_out(NL.main)
+got = out.get("new_tickers", "").split(",") if out.get("new_tickers") else []
+ok(got == [E] and "다시 주문하지 않는다" in text and D in text, "연속 3번 저장하지 못한 D 는 빼고, 2번인 E 는 다시 주문한다", str(got))
+NL.FAIL_JS.unlink()
 # 색인을 못 읽으면 재시도하지 않는다(폭주 방지 그대로) — 파일로 채운 수가 그 판단을 바꾸지 않는다
 INDEX_JS.write_text("깨진 색인", encoding="utf-8")
 out, text = gh_out(NL.main)
@@ -296,16 +324,45 @@ def bres(tk, kind="succeeded", text=None):
 
 
 class FakeBatches:
+    """생성 배치는 받은 결과를, 검토 배치(2026-10-09)는 '고칠 것 없음' 답을 돌려준다."""
     def __init__(self, status, results):
-        self.status, self._results, self.retrieved = status, results, []
+        self.status, self._results, self.retrieved, self.reviews = status, results, [], []
+
+    def create(self, requests):
+        self.reviews.append(requests)
+        return types.SimpleNamespace(id=f"msgbatch_RV{len(self.reviews)}")
 
     def retrieve(self, bid):
         self.retrieved.append(bid)
-        return types.SimpleNamespace(processing_status=self.status,
+        return types.SimpleNamespace(processing_status="ended" if bid.startswith("msgbatch_RV") else self.status,
                                      request_counts=types.SimpleNamespace(processing=0, succeeded=1, errored=0))
 
     def results(self, bid):
+        if bid.startswith("msgbatch_RV"):
+            reqs = self.reviews[int(bid[11:]) - 1]
+            out = []
+            for r in reqs:
+                cid = r["custom_id"]
+                if cid.startswith("en_"):          # 영문 채우기(2026-10-27) — 종목별 답, 없으면 오류
+                    ans = ENFILLS.get(cid.split("_")[1])
+                    out.append(types.SimpleNamespace(custom_id=cid, result=types.SimpleNamespace(
+                        type="succeeded" if ans else "errored",
+                        message=msg("===JSON_START===" + json.dumps(ans, ensure_ascii=False) + "===JSON_END===") if ans else None)))
+                    continue
+                if cid.startswith("fx"):           # 교정 요청(2026-10-23) — 종목별 답, 없으면 오류
+                    ans = FIXES.get(cid.split("_")[1])
+                    out.append(types.SimpleNamespace(custom_id=cid, result=types.SimpleNamespace(
+                        type="succeeded" if ans else "errored",
+                        message=msg("===JSON_START===" + json.dumps(ans, ensure_ascii=False) + "===JSON_END===") if ans else None)))
+                    continue
+                out.append(types.SimpleNamespace(custom_id=cid, result=types.SimpleNamespace(
+                    type="succeeded", message=msg("===JSON_START===" + json.dumps({"patches": []}) + "===JSON_END==="))))
+            return out
         return list(self._results)
+
+
+FIXES = {}   # 교정 배치의 답 — {종목: 고친 섹션}
+ENFILLS = {}   # 영문 채우기 답(2026-10-27) — {종목: {번호: 영어}}
 
 
 def fake_client(status, results):
@@ -313,6 +370,7 @@ def fake_client(status, results):
 
 
 GB.STATE_JS = DATA / "batch_state.json"
+GB.FAIL_JS = DATA / "new_listing_fail.json"
 GB.load_existing = lambda: ({}, set())
 GB.log = lambda *a, **k: None
 written.clear()
@@ -328,9 +386,16 @@ ok(cl.messages.batches.retrieved == [] and not written, "표시 없는 옛 상�
 GB.STATE_JS.write_text(json.dumps({"batch_id": "msgbatch_LATE", "model": "claude-sonnet-4-6", "count": 1,
                                    "pending": True}), encoding="utf-8")
 cl = fake_client("ended", [bres(D), bres(E, text="===JSON_START==={\"business\": \"x\"}===JSON_END===")])
+ok(GB.REVIEW is False, "저장 전 검토는 기본으로 꺼져 있다(2026-10-09 시험에서 틀린 고침 · NEW_LISTING_REVIEW=1 로만 켠다)", str(GB.REVIEW))
+GB.REVIEW = True                    # 아래는 검토를 켰을 때의 길 — 검토 요청이 배치 하나로 나가는지 본다
 GB.collect_pending(cl, "2026-10-03 23:30")
+GB.REVIEW = False
 st = json.loads(GB.STATE_JS.read_text(encoding="utf-8"))
 ok(D in written and E not in written, "못 받은 배치의 리포트를 저장한다(불완전한 글은 버린다)", str(sorted(written)))
+fl = json.loads(GB.FAIL_JS.read_text(encoding="utf-8")) if GB.FAIL_JS.exists() else {}
+ok(fl.get(E, {}).get("n") == 1 and D not in fl, "저장하지 못한 E 를 센다(저장한 D 는 세지 않는다)", str(fl))
+ok(len(cl.messages.batches.reviews) == 1 and [r["custom_id"][:9] for r in cl.messages.batches.reviews[0]] == ["rv_" + D],
+   "저장 전 검토를 배치 하나로 주문한다(완전한 글만)", str([[r["custom_id"] for r in q] for q in cl.messages.batches.reviews]))
 ok(not st.get("pending") and st.get("collected") == "2026-10-03 23:30", "회수 표시", str({k: st.get(k) for k in ('pending', 'collected')}))
 ua = (st.get("usage") or {}).get("claude-sonnet-4-6") or {}
 ok(ua.get("n") == 2 and abs(ua.get("usd", 0) - round(0.35495 * 2, 3)) < 1e-6,
@@ -354,6 +419,180 @@ GB.STATE_JS.write_text(json.dumps({"batch_id": "msgbatch_DONE", "model": "claude
 GB.poll = lambda cl, bid: False
 GB.main()
 ok(submitted != [], "받을 배치가 없으면 평소대로 주문한다")
+
+# (e) 검사에 걸린 글 — 버리지 않고 걸린 문장만 교정 배치로 고쳐 저장한다(2026-10-23 모비콘텐츠테크 '주당순이익 669원')
+print("⑤-e 신규 상장 — 검사에 걸린 글은 교정 배치로 고쳐 저장한다")
+EPS = {"ko": "당기순이익은 4억원이며, 주당순이익은 669원이다.", "en": "Net income was KRW 0.4 billion, and earnings per share were KRW 669."}
+FIXED = {"recent": {"ko": "당기순이익은 4억원이다.", "en": "Net income was KRW 0.4 billion."}}
+G.load_stocks = lambda: {"stocks": [{"ticker": D, "name": "라회사"}, {"ticker": E, "name": "마회사"}], "dataDate": "20261023"}
+written.clear()
+GB.FAIL_JS.unlink(missing_ok=True)
+FIXES.clear()
+FIXES[D] = FIXED                                     # D 는 교정 답이 오고, E 는 교정 배치가 오류로 끝난다
+GB.STATE_JS.write_text(json.dumps({"batch_id": "msgbatch_EPS", "model": "claude-sonnet-4-6", "count": 2,
+                                   "pending": True}), encoding="utf-8")
+_bad = lambda: "===JSON_START===" + json.dumps(dict(GOOD, recent=EPS), ensure_ascii=False) + "===JSON_END==="
+cl = fake_client("ended", [bres(D, text=_bad()), bres(E, text=_bad())])
+GB.collect_pending(cl, "2026-10-23 23:30")
+st = json.loads(GB.STATE_JS.read_text(encoding="utf-8"))
+fl = json.loads(GB.FAIL_JS.read_text(encoding="utf-8")) if GB.FAIL_JS.exists() else {}
+fx = [r["custom_id"] for q in cl.messages.batches.reviews for r in q]
+ok(D in written and "주당순이익" not in json.dumps(written[D], ensure_ascii=False) and "4억원" in json.dumps(written[D], ensure_ascii=False),
+   "교정 답이 온 글은 걸린 문장만 고쳐 저장한다", str(written.get(D, {}).get("recent")))
+ok(E not in written and fl.get(E, {}).get("n") == 1 and "pershare" in fl.get(E, {}).get("why", "") and D not in fl,
+   "교정 답이 없으면 저장하지 않고 실패로 센다(저장한 D 는 세지 않는다)", str(fl))
+ok(len(cl.messages.batches.reviews) == 1 and sorted(c.split("_")[1] for c in fx) == sorted([D, E]) and all(c.startswith("fx1_") for c in fx),
+   "걸린 글의 교정 요청을 배치 하나로 보낸다(오류로 끝난 E 는 같은 요청을 다시 보내지 않는다)", str(fx))
+ok(((st.get("usage_repair") or {}).get(GB.C.REPAIR_MODEL) or {}).get("n") == 1 and (st.get("usage") or {}).get("claude-sonnet-4-6", {}).get("n") == 2,
+   "교정 배치 사용량을 생성 배치와 따로 남긴다", str({k: st.get(k) for k in ("usage", "usage_repair")}))
+# 교정을 끄면 걸린 글은 전처럼 저장하지 않는다(교정 배치도 없다)
+written.clear()
+GB.FAIL_JS.unlink(missing_ok=True)
+GB.REPAIR = False
+GB.STATE_JS.write_text(json.dumps({"batch_id": "msgbatch_EPS2", "model": "claude-sonnet-4-6", "count": 1,
+                                   "pending": True}), encoding="utf-8")
+cl = fake_client("ended", [bres(D, text=_bad())])
+GB.collect_pending(cl, "2026-10-23 23:30")
+GB.REPAIR = True
+ok(not written and cl.messages.batches.reviews == [], "교정을 끄면(NEW_LISTING_REPAIR=0) 걸린 글은 저장하지 않는다")
+ok(GB.REPAIR_ROUNDS == 2 and GB.REPAIR_WAIT == 1800, "교정은 두 회차 · 30분까지 기다린다", f"{GB.REPAIR_ROUNDS} · {GB.REPAIR_WAIT}")
+
+print("⑦ 공시 트리거 — 새 형식을 만들 수 없는 종목의 옛 형식 리포트를 배치로 다시 쓴다(2026-10-27)")
+import datetime as _dt   # noqa: E402
+_td = _dt.date.today()
+_ago = lambda n: (_td - _dt.timedelta(days=n)).isoformat() + " 23:30"
+_fails = {A: {"n": 3, "last": _ago(1)}, B: {"n": 3, "last": _ago(20)}, C: {"n": 2, "last": _ago(1)}, D: {"n": 5, "last": ""}}
+ok(GB.stuck_tickers(_fails) == {A, D}, "세 번 저장하지 못했고 마지막 실패가 14일 안인 종목만 막는다(날짜를 모르면 막는다)",
+   str(sorted(GB.stuck_tickers(_fails))))
+
+
+class _SubBatches:
+    def __init__(self):
+        self.reqs = []
+
+    def create(self, requests):
+        self.reqs.append(requests)
+        return types.SimpleNamespace(id=f"msgbatch_LEG{len(self.reqs)}")
+
+
+_saved7 = (GB.SKIP_FAILED, G.get_dart_financials, G.build_prompt, G.load_stocks, GB.load_existing, os.environ.get("REPORT_TICKERS"))
+try:
+    G.load_stocks = lambda: {"stocks": [{"ticker": t, "name": f"회사{t}", "mcap": 1} for t in (A, B, C, D)], "dataDate": "20261027"}
+    G.get_dart_financials = lambda tk: None
+    G.build_prompt = lambda st, as_of, dart: f"재료 {st['ticker']}"
+    GB.load_existing = lambda: ({}, set())
+    GB.FAIL_JS.write_text(json.dumps(_fails), encoding="utf-8")
+    os.environ["REPORT_TICKERS"] = ",".join([A, B, C, D])
+    _sb = _SubBatches()
+    _cl7 = types.SimpleNamespace(messages=types.SimpleNamespace(batches=_sb))
+    GB.SKIP_FAILED = True
+    _GB_SUBMIT(_cl7, "2026-10-27 20:30")
+    _st7 = json.loads(GB.STATE_JS.read_text(encoding="utf-8"))
+    _got = [r["custom_id"] for r in _sb.reqs[0]]
+    ok(_got == [B, C] and _st7.get("tickers") == [B, C] and _st7.get("pending") is True,
+       "공시 트리거가 넘긴 종목 — 막힌 종목(A · D)을 빼고 주문하고, 주문한 종목을 상태 파일에 적는다", f"{_got} · {_st7.get('tickers')}")
+    _p = _sb.reqs[0][0]["params"]
+    ok(_p["model"] == GB.MODEL == "claude-sonnet-5-5" and _p["thinking"] == {"type": "adaptive"} and _p["max_tokens"] == 96000,
+       "요청 — Sonnet 5.5 · adaptive · 출력 한도 96,000", str({k: _p[k] for k in ("model", "thinking", "max_tokens")}))
+    GB.SKIP_FAILED = False
+    _GB_SUBMIT(_cl7, "2026-10-27 20:31")
+    ok([r["custom_id"] for r in _sb.reqs[1]] == [A, B, C, D], "손으로 지정한 실행은 빼지 않는다")
+finally:
+    GB.SKIP_FAILED, G.get_dart_financials, G.build_prompt, G.load_stocks, GB.load_existing = _saved7[:5]
+    if _saved7[5] is None:
+        os.environ.pop("REPORT_TICKERS", None)
+    else:
+        os.environ["REPORT_TICKERS"] = _saved7[5]
+
+_wf = (HERE.parent.parent / ".github" / "workflows" / "filing_reports.yml").read_text(encoding="utf-8")
+import yaml   # noqa: E402
+_steps = yaml.safe_load(_wf)["jobs"]["trigger"]["steps"]
+_v2 = next((i for i, x in enumerate(_steps) if x.get("id") == "v2"), None)
+_leg = next((i for i, x in enumerate(_steps) if "generate_reports_batch.py" in (x.get("run") or "")), None)
+_e = (_steps[_leg].get("env") or {}) if _leg is not None else {}
+ok(_v2 is not None and _leg == _v2 + 1 and _steps[_leg].get("if") == "steps.v2.outputs.legacy != ''"
+   and _e.get("REPORT_TICKERS") == "${{ steps.v2.outputs.legacy }}" and _e.get("REPORT_MODEL") == "claude-sonnet-5-5"
+   and _e.get("REPORT_SKIP_FAILED") == "1" and "generate_reports_batch.py auto" in _steps[_leg]["run"]
+   and "generate_reports.py" not in _steps[_leg]["run"].replace("generate_reports_batch.py", ""),
+   "공시 트리거 작업 — 새 형식 단계 바로 뒤에서 legacy 종목을 옛 형식 생성기(배치 · Sonnet 5.5)로 다시 쓴다",
+   f"새 형식 단계 {_v2} · 옛 형식 단계 {_leg}")
+
+print("⑦-b 저장하지 못한 글의 사정 — 무엇이 빠졌고 JSON 이 어디서 깨졌는가(2026-10-27 · 110편 중 3편이 까닭 없이 버려졌다)")
+_broken = ('===JSON_START===' + '{"title": {"ko": "제목", "en": "t"}, "business": {"ko": "회사는 "드론" 사업을 한다", "en": "b"},'
+           ' "verdict": "v", "keypoints": ["a", "b", "c"], "risks": [{"x": 1}, {"y": 2}]}' + '===JSON_END===')
+_d = GB.diagnose(msg(_broken))
+ok(str(_d.get("json")).startswith("Expecting") and "드론" in _d.get("near", "") and _d["markers"] == 1 and _d["closed"],
+   "깨진 JSON — 오류 자리와 그 둘레 글을 남긴다", str({k: _d.get(k) for k in ("json", "markers", "closed")}))
+_d2 = GB.diagnose(msg("===JSON_START===" + json.dumps(dict(GOOD, risks=[{"x": 1}]), ensure_ascii=False) + "===JSON_END==="))
+ok(_d2["json"] == "ok" and _d2["need"] == {"verdict": True, "risks": 1, "keypoints": 3, "business": True},
+   "필수 항목 수를 센다(위험 요인 1개면 저장 문턱에 걸린다)", str(_d2.get("need")))
+_logs = []
+_saved7b = GB.log
+GB.log = lambda *a, **k: _logs.append(" ".join(str(x) for x in a))
+try:
+    GB.STATE_JS.write_text(json.dumps({"batch_id": "msgbatch_DUMP", "model": "claude-sonnet-5-5", "count": 2}), encoding="utf-8")
+    GB.FAIL_JS.write_text(json.dumps({D: {"n": 1, "last": "2026-10-27 17:40", "why": "불완전"}}), encoding="utf-8")
+    _fb7 = FakeBatches("ended", [bres(D, text=_broken), bres(E)])
+    _seen = GB.dump(types.SimpleNamespace(messages=types.SimpleNamespace(batches=_fb7)))
+    ok(_seen == {D} and any("Expecting" in x for x in _logs) and not any(f"### {E}" in x for x in _logs) and _fb7.reviews == [],
+       "dump — 저장하지 못한 종목만 다시 읽어 사정을 찍는다(모델 호출 · 저장 없음)", str(sorted(_seen)))
+    # 회수 때도 버리는 자리에서 사정을 남긴다
+    _logs.clear()
+    written.clear()
+    GB.STATE_JS.write_text(json.dumps({"batch_id": "msgbatch_BRK", "model": "claude-sonnet-5-5", "count": 1, "pending": True}),
+                           encoding="utf-8")
+    GB.collect_pending(fake_client("ended", [bres(D, text=_broken.replace('"risks": [{"x": 1}, {"y": 2}]', '"risks": []'))]),
+                       "2026-10-27 17:40")
+    ok(D not in written and any("사정: JSON" in x and "Expecting" in x for x in _logs), "회수 — 버리는 글의 사정을 기록에 남긴다",
+       next((x for x in _logs if "사정" in x), "")[:120])
+finally:
+    GB.log = _saved7b
+# 지시문 — 그날 3편은 Sonnet 5.5 가 outlook · bull · bear · risks · verdict 를 빈칸으로 닫고 끝냈다(출력 5천~1만 3천 토큰 ·
+# 한도 9만 6천). '중간에 끊기지 않도록'만 적힌 지시문을 지나치게 따른 것으로 보고, 한도가 충분하다는 것과 빈칸 · 생략 금지를 적었다.
+_src_g = (HERE.parent / "generate_reports.py").read_text(encoding="utf-8")
+_src_v2 = (HERE.parent / "generate_reports_v2.py").read_text(encoding="utf-8")
+ok('"en":""' not in G.SCHEMA_DESC and '"ko":""' not in G.SCHEMA_DESC
+   and all("빈 목록([])" in x and "출력 한도는" in x for x in (_src_g, _src_v2)),
+   "지시문 — 틀에 빈 문자열을 보이지 않고, 한도가 충분하니 빈칸 · 생략으로 닫지 말라고 적는다(옛 형식 · 새 형식)")
+# 영어가 빈 칸(null) — 같은 칸의 한국어를 옮겨 채운 뒤 저장한다. 답이 없으면 저장하지 않는다(2026-10-27 코스모로보틱스).
+_REP_EN = dict(GOOD, verdict={"body": {"ko": "종합 의견 문단이다.", "en": None}},
+               lead={"ko": "한 문장 요지다.", "en": "One-line thesis."})
+_ok_en = GB.en_gaps(_REP_EN)
+ok([p for _c, p in _ok_en] == ["verdict.body"], "영문 빈 칸을 찾는다 — null 도 빈 칸이다", str([p for _c, p in _ok_en]))
+_mis = {"verdict": {"body": {"ko": "종합 의견이다."}, "en": "Overall view."}, "lead": {"ko": "요지다.", "en": "Thesis."}}
+ok([p for _c, p in GB.en_gaps(_mis)] == ["verdict.body"], "영문을 한 단계 위에 둔 꼴도 빈 칸으로 찾는다(그날 코스모로보틱스 종합 의견)")
+_fx = GB.fix_shape(json.loads(json.dumps(_mis)))
+ok(_fx["verdict"] == {"body": {"ko": "종합 의견이다.", "en": "Overall view."}} and not GB.en_gaps(_fx),
+   "모양 정리(fix_shape)가 그 영문을 제자리로 옮긴다 — 채우기 배치가 필요 없다", str(_fx["verdict"]))
+_saved_log = GB.log
+try:
+    for _ans, _want in (({"0": "This is the overall view."}, True), (None, False)):
+        written.clear()
+        GB.FAIL_JS.unlink(missing_ok=True)
+        ENFILLS[D] = _ans
+        GB.STATE_JS.write_text(json.dumps({"batch_id": "msgbatch_ENF", "model": "claude-sonnet-5-5", "count": 1, "pending": True}),
+                               encoding="utf-8")
+        _cl8 = fake_client("ended", [bres(D, text="===JSON_START===" + json.dumps(_REP_EN, ensure_ascii=False) + "===JSON_END===")])
+        GB.collect_pending(_cl8, "2026-10-27 17:40")
+        _st8 = json.loads(GB.STATE_JS.read_text(encoding="utf-8"))
+        _fl8 = json.loads(GB.FAIL_JS.read_text(encoding="utf-8")) if GB.FAIL_JS.exists() else {}
+        _en_reqs = [r["custom_id"] for q in _cl8.messages.batches.reviews for r in q if r["custom_id"].startswith("en_")]
+        if _want:
+            ok(D in written and ((written[D].get("verdict") or {}).get("body") or {}).get("en") == "This is the overall view."
+               and len(_en_reqs) == 1 and (_st8.get("usage_en") or {}).get(GB.C.REPAIR_MODEL, {}).get("n") == 1,
+               "영문 빈 칸을 배치로 채워 저장하고 사용량을 따로 남긴다", str(_en_reqs))
+        else:
+            ok(D not in written and "en_missing" in (_fl8.get(D) or {}).get("why", ""),
+               "채우지 못하면 저장하지 않고 실패로 센다", str(_fl8.get(D)))
+finally:
+    GB.log = _saved_log
+    ENFILLS.clear()
+_wfb = yaml.safe_load((HERE.parent.parent / ".github" / "workflows" / "generate_reports_batch.yml").read_text(encoding="utf-8"))
+_bs = _wfb["jobs"]["batch"]["steps"]
+_modes = ((_wfb.get(True) or _wfb.get("on"))["workflow_dispatch"]["inputs"]["mode"]["options"])
+ok("dump" in _modes and any("collect_data.py" in (x.get("run") or "") and "'dump'" in str(x.get("if")) for x in _bs)
+   and any("git push" in (x.get("run") or "") and "'dump'" in str(x.get("if")) for x in _bs),
+   "작업 파일 — dump 는 시세 갱신 · 커밋을 하지 않는다", str(_modes))
 
 print(f"\n통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)

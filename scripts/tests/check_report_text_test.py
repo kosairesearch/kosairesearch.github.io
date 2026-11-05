@@ -145,6 +145,258 @@ eq("출처·숫자 칸은 보지 않는다", C.defects({"sources": ["https://x.k
 print("\n── 교정 지시에 글자 결함 규칙이 들어갔나 ──")
 eq("_RULE_TEXT 에 broken_char·markup·meta·hanja", all(k in C._RULE_TEXT for k in ("broken_char", "markup", "meta", "hanja")), True)
 
+# ── 2026-10-09: 상대 시점 · 영어 낱말 · 받은 자료 언급(넓힘) · 투자 판단 · 핵심 포인트 칸 · 검토 ─────────────────────
+# 업종 분석 30편을 사람이 읽으니 검사를 다 통과한 글에 결함이 많았다(사장이 크게 질책했다). 리포트에도 같은 종류가 85편에
+# 있었다. 규칙을 넓히고, 저장 전에 글 전체를 읽는 검토(review)를 붙였다. 여기서는 규칙이 잡을 것을 잡고 멀쩡한 말은
+# 건드리지 않는지, 검토의 고침을 그대로 믿지 않는지(옛 글이 한 번만 · 새 수치 금지 · 길이) 본다.
+print("\n── 상대 시점(stale_time): 잡아야 하는 것 ──")
+for ko in ["효성중공업은 지난달에만 수주가 늘었다.", "이달 초 정례회의에서 의결된다.", "이달 정례회의에서 의결이 예상된다.",
+           "다음 달 1일부터 매수에 들어간다.", "오늘 기준 아직 도래하지 않았다.", "지난 주말 인기 순위 1위를 차지했다.",
+           "어제와 같은 흐름이다.", "이번 주 발표된다.", "다음달 중 공급한다.", "이달(2026년 9월) 서울에서 열린다."]:
+    eq(ko, "stale_time" in drules(ko), True)
+print("\n── 상대 시점: 건드리면 안 되는 것 ──")
+for ko in ["오늘이엔엠의 실적이 늘었다.", "모레모 브랜드가 성장했다.", "오늘의집 거래액이 늘었다.", "미디어오늘 보도에 따르면",
+           "그 다음 달에 회복했다.", "'내일도 출근!' 이 흥행했다.", "올해 매출이 늘었다.", "지난해 영업이익이 줄었다.",
+           "지난 2분기 실적이 개선됐다.", "2026년 9월 정례회의에서 의결됐다."]:
+    eq(ko, drules(ko), [])
+print("\n── 영어 낱말(en_word) · 한자(hanja) ──")
+for ko in ["특정 niche 영역에서 성장했다.", "Phase에 진입했다.", "valuation의 핵심 변수다.", "실적 risk", "이 discount가 좁혀질지 관건이다.",
+           "체질전환 momentum"]:
+    eq(ko, "en_word" in drules(ko), True)
+for ko in ["니치(niche) 시장이다.", "Point-of-Care 진단기기다.", "Phase 3 임상에 들어갔다.", "임상 3상 upLIFT 연구가 진행 중이다.",
+           "Core·Growth·Financial·Seed로 나눈다.", "Growth(성장·30%) 자산이다.", "Tier 1 고객사다.", "RISK 관리 체계를 갖췄다."]:
+    eq(ko, drules(ko), [])
+eq("영문 옆 한자도 잡는다 — 'ESS向'", drules("ESS向 공급이 늘었다."), ["hanja"])
+eq("읽기를 붙인 이름은 그대로 — '楽一(라쿠이치)'", drules("楽一(라쿠이치) 브랜드다."), [])
+print("\n── 받은 자료를 가리키는 말(meta): 넓힌 꼴 ──")
+for ko in ["제공된 분기 구간 중 최대였다.", "제공된 다섯 개 분기 가운데 가장 높다.", "제공된 5개 분기 중 최고치다.", "최근 4개 분기 창에서 가장 강했다.",
+           "본 리포트의 확정 데이터 범위 내에서 특정되지 않는다.", "우리 확정 데이터 범위 밖의 정보다.", "분기 기준 첫 흑자 전환(제공 데이터 기준)",
+           "제공된 [확정 재무] 데이터에는 없다.", "제시된 분기 구간 내 최고 수준이다.", "시가총액은 제공된 기준 데이터상 0.0조원이다."]:
+    eq(ko, "meta" in drules(ko), True)
+for en in ["the highest of the five quarters provided", "in the disclosed quarterly window", "outside our confirmed dataset",
+           "the strongest quarter in the dataset", "not yet reflected in the confirmed financial data used in this report",
+           "The provided results are on a pre-split basis."]:
+    eq(en, "meta" in drules("정상", en), True)
+for ko in ["담보로 제공된 유형자산 비중이 높다.", "통합 물류 서비스를 제공한다.", "IMS 데이터 기준 점유율 16%다.", "임상 확정 데이터 공개 여부를 본다.",
+           "2026년 2분기 창사 이래 첫 흑자다.", "한국경제 시장 데이터 기준 52주 최고가다.", "모델에 활용 가능한 데이터 범위를 제한한다."]:
+    eq(ko, drules(ko), [])
+for en in ["the first confirmed data point on margins", "the highest of the four years shown", "growth in the data center market",
+           "a lack of data provided by subsidiaries", "with four data center steam turbines"]:
+    eq(en, drules("정상", en), [])
+print("\n── 우리 목소리의 투자 판단(stance) ──")
+for ko in ["가시화되기 전까지는 보수적 접근이 타당하다는 판단이다.", "신중한 접근이 합리적이다.",
+           "현 밸류에이션이 실행 위험을 충분히 반영하지 않은 상태로 판단된다.", "시장이 자산가치를 아직 온전히 반영하지 않은 상태로 볼 수 있다.",
+           "업사이드 기대가 아직 주가에 충분히 반영되지 않았을 가능성이 있다."]:
+    eq(ko[:30], "stance" in rules_of(ko), True)
+for ko in ["KB증권은 단기 실적에는 보수적 접근이 바람직하다고 평가했다.", "규제기관의 보수적 접근이 심화될 리스크가 있다.",
+           "분기 실적을 순차적으로 확인하는 접근이 유효하다."]:
+    eq(ko[:30], rules_of(ko), [])
+print("\n── 연속 연수(streak): 정점 · 저점 다음 해부터 센다 ──")
+QA = {"annual": [{"year": y} for y in (2022, 2023, 2024, 2025)]}
+
+
+def srules(ko, quant=QA):
+    return sorted(h["rule"] for h in C.check({"lead": {"ko": ko, "en": "ok"}, **({"quant": quant} if quant else {})}))
+
+
+for ko in ["매출액은 2023년 729억원을 정점으로 2024년 687억원, 2025년 460억원으로 3년 연속 감소했다.",        # 본느(고치기 전)
+           "매출은 2022년 정점 이후 4년 연속 줄었다.",                                                     # DS단석
+           "연간 매출도 2023년 3,105억원을 정점으로 2년 연속 감소하며 3년 연속 매출 축소 흐름을 보였다.",     # 남선알미늄 — 둘째 표현
+           "영업이익은 2023년 15조 1,269억원을 정점으로 2024년 14조 2,396억원, 2025년 11조 4,679억원으로 줄었고 영업이익률은 "
+           "9.3%→8.1%→6.2%로 3년 연속 하락했다."]:                                                       # 현대차
+    eq(ko[:34], "streak" in srules(ko), True)
+for ko in ["매출은 2023년을 정점으로 2년 연속 감소했다.",
+           "레모나산 매출은 2022년 201억원으로 정점을 찍은 뒤 지난해 144억원까지 3년 연속 하락했다.",
+           "매출도 2022년 저점 이후 3년 연속 늘어나는 흐름을 보이고 있다.",
+           "2022년 752억원이던 연결 매출이 2025년 139억원까지 4년 연속 줄며 정점 대비 약 81% 감소했다.",       # '정점 대비'
+           "국내 패션시장 규모가 2023년 정점 이후 3년 연속 줄어 2026년 44.5조원까지 축소될 것으로 전망했다.",  # 전망 · 시장 규모
+           "국내 패션시장은 2023년 정점 이후 3년 연속 축소되는 구조적 조정 국면에 있다.",                     # 회사 실적이 아님
+           "순이익은 2023년 정점을 지나 2024~2025년 연속 감소했다."]:                                       # '2025년 연속'을 5년으로 읽지 않는다
+    eq(ko[:34], srules(ko), [])
+eq("실적 표가 없으면 판정하지 않는다(업종 분석 · 옛 형식)", srules("매출은 2022년 정점 이후 4년 연속 줄었다.", quant=None), [])
+eq("교정 지시에 연속 연수 규칙", "streak:" in C._RULE_TEXT, True)
+print("\n── 금액(amount): 이 회사의 실적 금액이 공시 값과 같은가 (2026-10-10) ──")
+# 2,563편 전수 대조에서 실제로 틀린 금액 23편이 나왔다 — 자리 뒤바뀜 · 열 배. 고치기 전 문장을 그대로 시험한다.
+QM = {"annual": [{"year": 2022, "rev": 1011484981702, "op": 97554876588, "np": 89438212718, "np_owner": 89438212718},
+                 {"year": 2025, "rev": 342737745051, "op": 10812879962, "np": 34647175100, "np_owner": 14635277022}],
+      "quarterly": [{"q": "2025Q4", "rev": 53732964178, "op": 86003919, "np_owner": 228472207},
+                    {"q": "2026Q2", "rev": 16925590744, "op": -81436366, "np_owner": 99298633}],
+      "valuation": {"ccy": "KRW"}}
+
+
+def arules(ko="", en="ok", quant=QM, name="가나다"):
+    rep = {"name": name, "earnings": {"ko": ko, "en": en}}
+    if quant is not None:
+        rep["quant"] = quant
+    return [h["rule"] for h in C.amount_hits(rep)]
+
+
+for ko in ["2025년 4분기 영업이익은 8.6억원으로 급감했다.",                          # 열 배(실제 8,600만원) — 서연탑메탈
+           "2025년 연결 매출액은 3,427억 7,375만원으로 4.7% 감소했다.",               # 자리 뒤바뀜(실제 3,427억 3,775만원) — 인성정보
+           "2022년 매출 1조 1,148억원·영업이익 976억원에서 크게 꺾였다.",             # 1조 115억원 — 원익IPS
+           "2026년 2분기 영업손실이 8.1억원으로 축소됐다.",                           # 실제 8,144만원 — 뱅크웨어글로벌
+           "실제로 2025년 연결 영업이익 108.1억원, 순이익 347.9억원을 기록했다.",      # 나열의 둘째(순이익) — 제일파마홀딩스
+           "가나다의 2025년 매출은 3,724억원이다."]:                                   # 주어가 이 회사 이름(자리 뒤바뀜)
+    eq(ko[:36], arules(ko), ["amount"])
+eq("영어 금액도 본다(열 배 — KRW 0.86 billion, 실제 8,600만원)",
+   arules(en="In Q4 2025, operating profit was KRW 0.86 billion."), ["amount"])
+eq("영어 — The Q2 2026 operating loss narrowed sharply to KRW 0.8 billion(실제 8,144만원)",
+   arules(en="The Q2 2026 operating loss narrowed sharply to KRW 0.8 billion from KRW 1.18 billion."), ["amount"])
+for ko in ["2025년 4분기 영업이익은 8,600만원으로 급감했다.",
+           "2025년 연결 매출액은 3,427억 3,775만원으로 감소했다.",
+           "2025년 매출 3,427억원, 영업이익 108억원이다.",                             # 반올림한 표기
+           "가나다의 2025년 매출은 3,428억원이다.",                                    # 억 단위 반올림(3,427.4)
+           "2026년 2분기 영업손실 8,144만원, 지배주주 순이익 9,930만원이다.",
+           "2025년 당기순이익 346.5억원으로 흑자 전환했다.",                            # 비지배 포함 순이익
+           "2025년 지배주주 순이익 146.4억원이다.",
+           "2023년 영업이익 2조 3,397억원 적자는 진폭을 보여준다.",                    # 그해 공시 값이 없다
+           "2025년 매출 1,000억원을 처음 넘어섰다.",                                  # 어림 표현
+           "2025년 매출이 3,595억원에서 3,427억원으로 줄었다.",                       # '에서' — 앞 금액은 다른 해
+           "자회사 ○○의 2025년 매출은 4,534억원이다.",                                # 주어가 다른 회사
+           "한국타이어앤테크놀로지는 2026년 2분기 연결 매출 5조 6,824억원을 냈다.",       # 다른 상장사
+           "2026년 2분기 순이익 77억원으로 흑자 전환했다.",                            # 분기 '순이익'은 공시 칸이 없다(지배주주만)
+           "2025년 4분기 소주 매출은 3,827억원이다.",                                  # 부문(지표 앞에 다른 말)
+           "증권사는 2026년 2분기 매출 150억원을 전망했다.",                           # 전망
+           "2025년 상반기 매출은 2,929억원이다."]:                                     # 반기 · 누적
+    eq(ko[:36], arules(ko), [])
+eq("외화 공시 회사는 보지 않는다", arules("2025년 매출은 1억원이다.", quant=dict(QM, valuation={"ccy": "USD"})), [])
+eq("공시 값이 없으면 보지 않는다(업종 분석 · 옛 형식)", arules("2025년 매출은 1억원이다.", quant=None), [])
+eq("위반 설명에 공시 값을 적는다(교정이 그 값으로 고친다)",
+   "8,600만원" in C.amount_hits({"name": "x", "quant": QM, "lead": {"ko": "2025년 4분기 영업이익은 8.6억원이다.", "en": "ok"}})[0]["why"], True)
+eq("check() 가 금액 검사를 함께 돌린다", [h["rule"] for h in C.check({"name": "x", "quant": QM,
+   "lead": {"ko": "2025년 4분기 영업이익은 8.6억원이다.", "en": "ok"}})], ["amount"])
+eq("교정 지시에 금액 규칙 · 숫자를 고쳐도 되는 예외", ("amount:" in C._RULE_TEXT, "amount · streak 위반은" in C.repair.__code__.co_consts.__repr__()),
+   (True, True))
+print("\n── 보고서 문체(style): 합쇼체 · 해요체 · 명사형 종결 ──")
+for ko in ["클라우드 전환이 빠르게 진행되고 있습니다.", "핵심 동인입니다.", "가능성이 큽니다.", "자동차시트 제조 및 판매를 영위하고 있음.",
+           "상호를 변경하였음.", "회사 가이던스가 확인됨.", "수익성이 제한적임.", "소각하기로 함.", "매출이 늘었어요."]:
+    eq(ko, "style" in rules_of(ko), True)
+for ko in ["매출이 늘었다.", "주가 상승으로 연결되기 어려운 구조다.", "확정된 것은 아니다.", "2025년 영업이익 149억원으로 흑자 전환",
+           "'시너지 효과'를 기대함", "본 자료는 투자 권유가 아니다."]:
+    eq(ko, "style" in rules_of(ko), False)
+print("\n── 협의 없이 쓰지 않는 사이트(no_use): 치킨스탁 이름 · 주소 (2026-10-19) ──")
+for ko, en in [("치킨스탁에 따르면 2분기 영업이익은 늘었다.", "ok"), ("치킨 스탁 집계 기준이다.", "ok"),
+               ("알프소프트 자료로 보면 늘었다.", "ok"), ("정상 문장이다.", "According to ChickStock, margins rose."),
+               ("정상 문장이다.", "Data from chickstockfi.com show a rise.")]:
+    eq(f"잡는다 — {ko[:14]} / {en[:22]}", "no_use" in rules_of(ko, en), True)
+for ko, en in [("치킨스톡 소스 매출이 늘었다.", "Sales of chicken stock cubes rose."), ("Chick-fil-A 매장이 늘었다.", "ok")]:
+    eq(f"건드리지 않는다 — {ko[:14]}", "no_use" in rules_of(ko, en), False)
+eq("위험 등급(저장 문턱)", {h["level"] for h in C.check({"lead": {"ko": "치킨스탁에 따르면", "en": "ok"}}) if h["rule"] == "no_use"}, {"위험"})
+eq("교정 지시에 규칙 설명이 있다", "no_use:" in C._RULE_TEXT and "no_use" in C._WHY_EXTRA, True)
+
+print("\n── 검사 범위: 핵심 포인트 {ko, en} · 제목 · 옛 형식 칸 · 문자열 종합 의견 ──")
+eq("핵심 포인트의 가치 단정", [h["rule"] for h in C.check({"keypoints": [{"ko": "장부가치 대비 현저히 저평가된 상태", "en": "x"}]})], ["valuejudge"])
+eq("핵심 포인트 영문의 한글", [h["rule"] for h in C.check({"keypoints": [{"ko": "정상", "en": "Naver's '가 Sejong' data center"}]})], ["hangul_en"])
+eq("제목의 가치 단정", [h["rule"] for h in C.check({"title": {"ko": "저평가된 상태", "en": "t"}})], ["valuejudge"])
+eq("옛 형식 '최근 동향'", [h["rule"] for h in C.check({"recent": {"ko": "저평가 상태로 인식하고 있다.", "en": "x"}})], ["valuejudge"])
+eq("종합 의견이 문자열이어도 멈추지 않는다", C.check({"verdict": "종합 의견"}), [])
+eq("명령줄 집계의 사유 — 규칙마다 제 설명", (C._WHY_EXTRA["stale_time"], C._WHY_EXTRA["meta"]), ("상대 시점(지난달 · 이번 주 · 오늘)", "받은 자료를 가리키는 말"))
+
+print("\n── 저장 전 정리(prepare) ──")
+pr = C.prepare({"lead": {"ko": "매출 9000억원<sup>1</sup>, ESS向 공급", "en": "x"}, "quant": {"n": "9000억원"}, "sources": ["https://a/<b>"]})
+eq("태그 · 한자 · 쉼표를 한 번에", pr["lead"]["ko"], "매출 9,000억원, ESS 대상 공급")
+eq("숫자 · 출처 칸은 그대로", (pr["quant"], pr["sources"]), ({"n": "9000억원"}, ["https://a/<b>"]))
+eq("몇 번 돌려도 같다", C.prepare(pr), pr)
+eq("영문명을 화면 꼴로", [C.clean_en(x) for x in ("SAMSUNG ELECTRONICS CO,.LTD", "SK hynix Inc.", "NAVER Corp.")],
+   ["Samsung Electronics", "SK hynix", "NAVER"])
+# 약어는 대문자 그대로(2026-10-23) — 전에는 목록 밖 약어를 소문자로 바꿔 영어 화면에 'Samsung Sds' · 'LG Cns' · 'Skc' · 'Dts' 가 나왔다.
+# 모음이 없는 낱말은 약어로 보고, 모음이 든 약어는 목록(_EN_ACR)에 둔다. 보통 낱말 · 로마자 음절은 전처럼 첫 글자만 대문자.
+eq("약어는 대문자 그대로 · 보통 낱말은 첫 글자만", [C.clean_en(x) for x in (
+    "SAMSUNG SDS CO., LTD.", "LG CNS Co., Ltd.", "SKC LTD", "DTS", "CJ ENM", "APR Co., Ltd.", "HYUNDAI WIA", "S-OIL CORPORATION",
+    "KOREAN AIR LINES CO.,LTD", "A-JIN INDUSTRY", "3C TAE YANG", "DI DONG IL", "KIA CORPORATION", "SAMSUNG BIOLOGICS")],
+   ["Samsung SDS", "LG CNS", "SKC", "DTS", "CJ ENM", "APR", "Hyundai WIA", "S-OIL",
+    "Korean Air Lines", "A-Jin Industry", "3C Tae Yang", "DI Dong Il", "Kia", "Samsung Biologics"])
+# 화면(staging/i18n.js 의 cleanEn)과 같은지 — 시세 자료의 영문명 전부를 두 판에 넣어 견준다. 한쪽만 고치면 여기서 걸린다.
+import json as _jsn, re as _re, subprocess as _sp  # noqa: E402
+_root = HERE.parent.parent
+_t = (_root / "data" / "stocks.js").read_text(encoding="utf-8")
+_names = sorted({s.get("name_en") for s in _jsn.loads(_t[_t.index("{"):_t.rindex("}") + 1])["stocks"] if s.get("name_en")})
+_fn = _re.search(r"function cleanEn\(s\) \{[\s\S]*?\n  \}\n", (_root / "staging" / "i18n.js").read_text(encoding="utf-8")).group(0)
+_js = _sp.run(["node", "-e", _fn + "process.stdout.write(JSON.stringify(JSON.parse(require('fs').readFileSync(0,'utf8')).map(cleanEn)))"],
+              input=_jsn.dumps(_names), capture_output=True, text=True, check=True).stdout
+_diff = [(n, a, b) for n, a, b in zip(_names, _jsn.loads(_js), [C.clean_en(n) for n in _names]) if a != b]
+eq(f"영문명 {len(_names):,}개 — 화면(cleanEn)과 파이썬(clean_en)이 같은 꼴", _diff[:5], [])
+eq("검토 단서 — 한국어의 비율이 영어에 없다", C.en_gap_hints({"lead": {"ko": "영업이익이 37.2% 늘었다.", "en": "Profit rose."}}),
+   ["[lead] 한국어의 비율 ['37.2'] 이 영어에 없다"])
+
+print("\n── 검토(review): 고침을 그대로 믿지 않는다 ──")
+import json as _json  # noqa: E402
+REP = {"lead": {"ko": "매출은 1,234억원으로 늘었다. 제공된 분기 구간 중 최대였다.", "en": "Revenue rose to KRW 123.4bn."},
+       "risks": [{"cat": {"ko": "수요", "en": "Demand"}, "body": {"ko": "수요가 줄 수 있다.", "en": "Demand may fall."}}],
+       "quant": {"x": 1}}
+
+
+def ans(patches):
+    return "===JSON_START===" + _json.dumps({"patches": patches}, ensure_ascii=False) + "===JSON_END==="
+
+
+new, n_ok, dropped = C.apply_review(REP, ans([
+    {"path": "lead", "lang": "ko", "old": "제공된 분기 구간 중 최대였다.", "new": "최근 5개 분기 중 최대였다.", "why": "6"},
+    {"path": "lead", "lang": "en", "old": "KRW 123.4bn.", "new": "KRW 123.4bn, up 52.7%.", "why": "7"},
+    {"path": "lead", "lang": "ko", "old": "없는 글", "new": "x", "why": "1"},
+    {"path": "business", "lang": "ko", "old": "x", "new": "y", "why": "1"},
+    {"path": "risks.0.body", "lang": "ko", "old": "수요가 줄 수 있다.", "new": "", "why": "1"},
+    {"path": "lead", "lang": "ko", "old": "늘었다.", "new": "늘었다. " * 80, "why": "1"},
+]), extra="  - 가나 2026Q2: 매출 1,234억", as_of="2026-10-08")
+eq("맞는 고침만 적용(1곳)", (n_ok, new["lead"]["ko"]), (1, "매출은 1,234억원으로 늘었다. 최근 5개 분기 중 최대였다."))
+eq("새 수치(52.7) · 없는 옛 글 · 없는 칸 · 칸이 비게 됨 · 너무 긴 새 글은 버린다", len(dropped), 5)
+eq("원본은 건드리지 않는다", REP["lead"]["ko"], "매출은 1,234억원으로 늘었다. 제공된 분기 구간 중 최대였다.")
+eq("숫자 칸은 보내지도 바꾸지도 않는다", "quant" in _json.loads(C.review_params({k: v for k, v in REP.items() if k not in C._NOT_TEXT})["messages"][0]["content"].split("===INPUT===\n", 1)[1].rsplit("\n===INPUT_END===", 1)[0]), False)
+eq("읽을 수 없는 답", C.apply_review(REP, "모르겠다")[0], None)
+amt = C._amount_forms("영업이익 4조 1,246억원 · 3,865억원 · 1억 3,341만달러")
+eq("한국어 금액의 영어 꼴(4.1246 tn · 386.5 bn · 133.41 mn)은 새 수치가 아니다", all(x in amt for x in ("4.1246", "386.5", "133.41")), True)
+
+
+class _Msgs:
+    def __init__(self, text):
+        self.text, self.sent = text, []
+
+    def create(self, **kw):
+        self.sent.append(kw)
+        from types import SimpleNamespace as _NS
+        return _NS(content=[_NS(type="text", text=self.text)])
+
+
+cl_rv = type("CL", (), {})()
+cl_rv.messages = _Msgs(ans([{"path": "lead", "lang": "ko", "old": "제공된 분기 구간 중 최대였다.", "new": "최근 5개 분기 중 최대였다.", "why": "6"}]))
+got = C.review(cl_rv, REP, C.check(REP), kind="report", as_of="2026-10-08", material="  - 가나: 매출 1,234억")
+eq("review — 고친 글 · 남은 위반 0 · 기록", (got[0]["lead"]["ko"].endswith("최근 5개 분기 중 최대였다."), got[1], got[2]),
+   (True, [], "검토 고침 1곳"))
+p0 = cl_rv.messages.sent[0]
+eq("review 요청 — 값싼 모델 · 사고 · 기준일 · 재료 · 반드시 고칠 곳", (p0["model"], p0["thinking"], "[작성 기준일] 2026-10-08" in p0["messages"][0]["content"],
+   "[재료 — 공시 확정치" in p0["messages"][0]["content"], "meta" in p0["messages"][0]["content"]),
+   ("claude-sonnet-5-5", {"type": "adaptive"}, True, True, True))
+cl_bad = type("CL", (), {})()
+cl_bad.messages = _Msgs(ans([{"path": "lead", "lang": "ko", "old": "늘었다.", "new": "늘었다<sup>1</sup>.", "why": "1"}]))
+eq("review — 고친 글에 태그가 생기면 검토 전체를 버린다", C.review(cl_bad, REP, []), None)
+
+
+class _Batches:
+    def __init__(self):
+        self.reqs = None
+
+    def create(self, requests):
+        self.reqs = requests
+        from types import SimpleNamespace as _NS
+        return _NS(id="b1")
+
+    def retrieve(self, bid):
+        from types import SimpleNamespace as _NS
+        return _NS(processing_status="ended")
+
+    def results(self, bid):
+        from types import SimpleNamespace as _NS
+        return [_NS(custom_id="a", result=_NS(type="succeeded", message=_NS(content=[_NS(type="text", text="ok")]))),
+                _NS(custom_id="b", result=_NS(type="errored"))]
+
+
+cl_b = type("CL", (), {})()
+cl_b.messages = type("M", (), {})()
+cl_b.messages.batches = _Batches()
+res = C.send_batch(cl_b, {"a": C.review_params({"lead": {"ko": "가.", "en": "a."}}), "b": C.review_params({"lead": {"ko": "나.", "en": "b."}})},
+                   log=lambda *_: None, sleep=lambda *_: None)
+eq("send_batch — 배치 하나 · 성공은 답 · 실패는 None", (len(cl_b.messages.batches.reqs), C.message_text(res["a"]), res["b"]), (2, "ok", None))
+
 print("\n── 전수: 화면에 나오는 리포트·업종 분석에 글자 결함이 없다 ──")
 import json, re  # noqa: E402
 ROOT = HERE.parent.parent
@@ -160,15 +412,75 @@ for f in files:
     if not isinstance(rep, dict):
         continue
     n += 1
-    bad += [(f.parent.name + "/" + f.stem, h) for h in C.defects(rep)]
+    bad += [(f.parent.name + "/" + f.stem, h) for h in C.check(rep)]        # 2026-10-09 부터 모든 규칙(생성기의 저장 문턱과 같다)
 sec_js = (ROOT / "data" / "sectors.js").read_text(encoding="utf-8")
 sectors = json.loads(re.search(r"=\s*(\{.*\})\s*;?\s*$", sec_js, re.S).group(1)).get("sectors") or {}
+# 업종 분석은 생성기(generate_sectors.defects)와 같은 기준 — 리포트 칸으로 옮겨 위험 등급 · 글자 결함 · 상대 시점 · 영어 낱말 ·
+# 영문 속 한글을 본다(리포트 화면용 품질 규칙 ROE · 말투 · 주당지표는 걸지 않는다).
+AS_REPORT = {"lead": "lead", "overview": "business", "structure": "industry", "trends": "earnings", "outlook": "outlook", "risks": "risks"}
+SEC_GATE = ("hanja", "meta", "hangul_en", "stale_time", "en_word", "style")
 for name, obj in sectors.items():
     if isinstance(obj, dict):
         bad += [("sectors/" + name, h) for h in C.defects(obj)]
+        bad += [("sectors/" + name, h) for h in C.check({AS_REPORT[k]: v for k, v in obj.items() if k in AS_REPORT})
+                if h["level"] == "위험" or h["rule"] in SEC_GATE]
 for where, h in bad[:8]:
     print(f"      {where} [{h['section']}] {h['rule']} {h['match']!r} — {h['sentence'][:70]}")
-eq(f"리포트 {n:,}개 · 업종 {len(sectors)}개 — 깨진 글자·태그·받은 자료 언급·한자 0", len(bad), 0)
+eq(f"리포트 {n:,}개 · 업종 {len(sectors)}개 — 검사 위반 0(글자 결함 · 받은 자료 언급 · 상대 시점 · 영어 낱말 · 투자 판단 · 주당지표 …)", len(bad), 0)
+miss = []
+
+
+def _en_gaps(o, path=""):
+    """한국어는 있는데 영어가 빈(없음 · null · 빈 문자열) 칸 — 칸이 어디 있든. _flat_fields 는 ko · en 이 문자열인 칸만 글 칸으로 보고,
+    영어를 한 단계 위에 둔 꼴({"body": {"ko": …}, "en": "…"})은 바깥을 글 칸으로 읽어 안쪽을 보지 않았다(2026-10-27 코스모로보틱스
+    종합 의견이 그 꼴로 저장돼 영어 화면에 한국어가 나왔다)."""
+    if isinstance(o, dict):
+        if isinstance(o.get("ko"), str) and o["ko"].strip():
+            return [] if (o.get("en") or "").strip() else [path]
+        return [x for k, v in o.items() for x in _en_gaps(v, f"{path}.{k}" if path else k)]
+    if isinstance(o, list):
+        return [x for i, v in enumerate(o) for x in _en_gaps(v, f"{path}.{i}" if path else str(i))]
+    return []
+
+
+for f in files:
+    try:
+        rep = json.loads(f.read_text(encoding="utf-8"))
+    except Exception:
+        continue
+    if isinstance(rep, dict):
+        txt = {k: x for k, x in rep.items() if k not in C._NOT_TEXT}
+        miss += [(f.stem, k) for k, v in C._flat_fields(txt).items()
+                 if (v.get("ko") or "").strip() and not (v.get("en") or "").strip()]
+        miss += [(f.stem, x) for x in _en_gaps(txt)]
+eq("영문 빈 칸 찾기 — 영문을 한 단계 위에 둔 꼴 · null 도 잡는다",
+   (_en_gaps({"verdict": {"body": {"ko": "가"}, "en": "A"}}), _en_gaps({"lead": {"ko": "가", "en": None}}),
+    _en_gaps({"lead": {"ko": "가", "en": "A"}})), (["verdict.body"], ["lead"], []))
+eq("영문이 빈 칸 0 — 영어 화면에 한국어가 나오지 않는다", miss[:5], [])
+import number_spacing as _N  # noqa: E402
+nc = []
+for f in files:
+    try:
+        rep = json.loads(f.read_text(encoding="utf-8"))
+    except Exception:
+        continue
+    if isinstance(rep, dict):
+        nc += [(f.stem, m.group(0)) for k, v in C._flat_fields({k: x for k, x in rep.items() if k not in C._NOT_TEXT}).items()
+               for m in _N.no_comma_hits(v.get("ko") or "")]
+eq("천 단위 쉼표가 빠진 수 0", nc[:5], [])
+
+# 협의 없이 쓰지 않는 사이트(치킨스탁) — 화면에 나오는 리포트 · 업종 분석 · 브리핑 · 종목 페이지 · 시안의 출처와 본문에 0건이어야 한다.
+# 2026-10-19 운영사(알프소프트) 문의 뒤 사장 지시로 그 사이트를 출처로 단 리포트 153편을 다시 썼다. 생성기는 검색에서 막고 저장 전에
+# 다시 보지만(generate_reports.no_use_urls · 규칙 no_use), 손으로 고친 글이나 옛 파일로 되살아나는 길은 여기서 막는다.
+print("\n── 전수: 협의 없이 쓰지 않는 사이트(치킨스탁)가 어디에도 없다 ──")
+_nu = [f.parent.name + "/" + f.stem for f in files if C.NO_USE_NAME.search(f.read_text(encoding="utf-8"))]
+if C.NO_USE_NAME.search(sec_js):
+    _nu.append("data/sectors.js")
+_nu += ["data/briefs/" + f.name for f in sorted((ROOT / "data" / "briefs").glob("*.json"))
+        if C.NO_USE_NAME.search(f.read_text(encoding="utf-8"))]
+for d in ("stock", "en/stock", "preview/stock", "staging"):
+    _nu += [d + "/" + f.name for f in sorted((ROOT / d).glob("*.html")) if b"chickstock" in f.read_bytes().lower()]
+eq(f"리포트 {n:,}개 · 업종 분석 · 브리핑 · 종목 페이지 · 시안 — 치킨스탁 주소 · 이름 0건", _nu[:5], [])
 
 # 모닝브리핑 — 화면은 [이름](여섯 자리) 만 링크로 바꾸므로 나머지 대괄호는 괄호째 찍힌다(9/2 '[기재정정]' ·
 # 10/2 '[마이크론]'). 생성기의 strip_brackets 가 저장 전에 벗긴다. 이 전수는 아침 작업의 회귀 시험

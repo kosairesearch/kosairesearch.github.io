@@ -1,220 +1,230 @@
 {
  "title": {
-  "ko": "삼성 외주화 수혜와 지속되는 적자 사이",
-  "en": "Between Samsung Outsourcing Tailwind and Persistent Losses"
+  "ko": "DDR5 외주로 매출 회복, 흑자 전환은 미확인",
+  "en": "DDR5 Outsourcing Lifts Sales; Profit Unproven"
  },
  "lead": {
-  "ko": "삼성전자 HBM 확대에 따른 범용 메모리 후공정 외주화 수혜가 기대되지만, 실제 손익은 5개 분기 연속 적자를 벗어나지 못하고 있다.",
-  "en": "SFA Semicon is positioned as a beneficiary of Samsung's HBM-driven outsourcing of general-purpose memory back-end work, yet actual operating results have stayed in the red for five straight quarters."
+  "ko": "SFA반도체는 삼성전자의 범용 메모리 후공정 외주 확대에 힘입어 2026년 2분기 매출이 전년 동기 대비 65.9% 늘었지만 5개 분기 연속 영업손실을 기록 중이며, 필리핀 DDR5 라인 증설이 실제 이익으로 이어지는지가 핵심 검증 과제다.",
+  "en": "SFA Semicon's Q2 2026 revenue rose 65.9% year on year on the back of Samsung Electronics' expanded outsourcing of commodity memory back-end work, yet the company has posted five consecutive quarterly operating losses, and the key test is whether its Philippine DDR5 capacity expansion translates into actual profit."
  },
  "keypoints": [
   {
-   "ko": "분기 매출은 2025년 3분기 965억원에서 2026년 2분기 1,263억원까지 대체로 순차 회복했으나 영업손실은 계속됐다.",
-   "en": "Quarterly revenue broadly recovered from KRW 96.5bn in 3Q25 to KRW 126.3bn in 2Q26, but operating losses continued."
+   "ko": "공시 실적 기준 연간 매출은 2022년 6,994억원에서 2025년 3,674억원으로 줄었고, 영업이익은 2023년부터 2025년까지 3년 연속 적자였다.",
+   "en": "On a reported basis, annual revenue fell from KRW 699.4 billion in 2022 to KRW 367.4 billion in 2025, and the company posted operating losses for three straight years from 2023 to 2025."
   },
   {
-   "ko": "삼성전자가 HBM 라인 확장을 위해 온양 사업장 후공정 물량을 SFA반도체 국내·필리핀 법인으로 이관하는 구조가 핵심 변수다.",
-   "en": "A key variable is Samsung shifting Onyang plant back-end volume to SFA Semicon's domestic and Philippine plants to make room for HBM lines."
+   "ko": "분기 매출은 2025년 2분기 761억원에서 2026년 2분기 1,263억원으로 늘었지만 영업손실 61.5억원이 이어져 매출 증가가 아직 이익으로 연결되지 않았다.",
+   "en": "Quarterly revenue grew from KRW 76.1 billion in Q2 2025 to KRW 126.3 billion in Q2 2026, but an operating loss of KRW 6.15 billion persisted, so top-line growth has not yet reached the bottom line."
   },
   {
-   "ko": "부채비율은 2022년 39.5%에서 2025년 16.2%로 낮아졌고 영업활동현금흐름은 4개 연도 모두 양(+)을 유지했다.",
-   "en": "The debt ratio fell from 39.5% in 2022 to 16.2% in 2025, and operating cash flow stayed positive in all four years."
+   "ko": "회사는 2026년 9월 8일 필리핀 관계회사 SSP에 7,500만달러(약 1,007억원)를 대여하기로 공시했고, 올해 필리핀에 대여한 금액은 모두 1,302억원에 이른다.",
+   "en": "On September 8, 2026, the company disclosed a USD 75 million (about KRW 100.7 billion) loan to its Philippine affiliate SSP, bringing total loans to the Philippines this year to KRW 130.2 billion."
   },
   {
-   "ko": "증권가가 제시했던 2026년 1분기 흑자전환 전망은 실제 실적과 어긋났고, 최근 보고서는 '상저하고' 흐름에 초점을 맞추고 있다.",
-   "en": "A sell-side forecast for a 1Q26 return to operating profit did not match actual results, and recent reports have shifted focus to a low-first-half, high-second-half pattern."
+   "ko": "필리핀 법인의 DDR5 테스트 생산능력은 2026년 4분기 월 100억원 수준에서 2027년 2분기 말 월 200억원으로 늘어날 전망이다.",
+   "en": "The Philippine unit's DDR5 test capacity is expected to rise from about KRW 10 billion per month in Q4 2026 to KRW 20 billion per month by the end of Q2 2027."
   },
   {
-   "ko": "매출은 메모리와 삼성전자 한 고객사에 집중된 구조여서, 고객사 정책 변화에 따른 실적 민감도가 높다.",
-   "en": "Revenue remains concentrated in memory and a single customer, Samsung Electronics, making results sensitive to that customer's policy shifts."
+   "ko": "2025년 말 부채비율은 16.2%로 낮아 재무 여력은 있지만, 2025년 영업활동 현금흐름은 54.6억원으로 2024년 531억원보다 크게 줄었다.",
+   "en": "The debt-to-equity ratio was a low 16.2% at end-2025, giving financial headroom, but operating cash flow in 2025 shrank to KRW 5.46 billion from KRW 53.1 billion in 2024."
   }
  ],
  "business": {
-  "ko": "SFA반도체는 1998년 설립되어 2001년 코스닥에 상장한 반도체 후공정(OSAT) 전문기업이다. 2015년 워크아웃을 거쳐 에스에프에이(SFA)에 인수되면서 현재의 사명으로 변경됐고, 이후 SFA그룹의 반도체 후공정 계열사로 자리매김했다. 주력 사업은 웨이퍼 단위로 넘어온 반도체를 조립(패키징)하고 검사(테스트)하는 공정으로, 반도체 제조의 마지막 단계인 패키징과 테스트를 담당하며 주요 고객사는 삼성전자, SK하이닉스, Micron이다. 2024년 초 공개된 자료 기준으로 매출 비중은 메모리 81.31%, 비메모리 17.75%, 기타 0.94%였으며, 고객사별 매출 비중은 삼성전자향이 80% 정도로 가장 많다. 최근에는 범핑(Bumping) 공정 수요 증가에 대응한 설비투자와 CAPA 확대를 추진하고 있고, 지난해 말부터 SSD 모듈 라인 2개를 구축해 순차적으로 가동하는 등 사업 영역을 넓히고 있다. 해외 생산기지로는 필리핀 법인(SSP)을 운영하며, 국내 메이저 고객사의 DDR5 테스트 설비 120대가 필리핀으로 이전되고 국내 법인에는 모듈 라인 5개가 추가 배정되는 등 생산 재배치가 진행되고 있다. 경쟁사로는 네패스, 시그네틱스, 원팩 등이 있으며 하나마이크론 등도 국내 후공정 시장에서 경쟁하고 있다. 국내에서 메모리·비메모리를 모두 다루는 패키징 토탈 솔루션 사업자라는 점이 회사의 차별점으로 꼽힌다.",
-  "en": "SFA Semicon is an outsourced semiconductor assembly and test (OSAT) specialist founded in 1998 and listed on KOSDAQ in 2001. Following a 2015 corporate workout, the company was acquired by SFA Co. and renamed SFA Semicon, becoming the back-end semiconductor affiliate of the SFA Group. Its core business is packaging and testing chips received in wafer form, and it handles the final assembly and test stage of chip manufacturing, with Samsung Electronics, SK Hynix, and Micron as its main customers. Based on data disclosed in early 2024, the revenue mix was about 81.31% memory, 17.75% non-memory, and 0.94% other, and Samsung Electronics accounted for roughly 80% of revenue by customer. More recently the company has been expanding capital investment and capacity to meet growing demand for bumping processes, and since late last year it has built and sequentially ramped up two new SSD module lines to broaden its business scope. As an overseas production base it operates a Philippine subsidiary (SSP), and 120 DDR5 test units from a major domestic customer have been relocated to the Philippines while five additional module lines were assigned to the domestic plant, reflecting an ongoing reallocation of production. Competitors include Nepes, Signetics, and WonPac, with Hana Micron also competing in the domestic back-end market. A differentiating factor is that the company operates as a total packaging solutions provider covering both memory and non-memory domestically."
+  "ko": "SFA반도체는 반도체 후공정 중 조립(패키징)과 테스트를 맡는 외주 업체(OSAT)이며, 삼성전자, Micron 등에 패키징 솔루션을 제공한다. 제품별로는 2026년 2분기 매출 기준 메모리 84%, 비메모리 16%로 메모리 의존도가 높다. 국내에는 MCP 위주의 K1 공장과 비메모리 범핑·테스트를 하는 K2 공장이 있으며, K2는 가동률이 60% 후반까지 올라왔지만 K1은 가동률이 저조한 것으로 파악됐다(2026년 2월 BNK투자증권). 핵심 생산거점은 필리핀 법인으로, 서버·PC용 조립, 파이널 테스트, 모듈을 턴키로 제공한다. 생산 분업도 정리되고 있으며, 천안 공장은 메모리 칩 FBGA 패키징을, 필리핀 공장은 최종 테스트와 모듈 조립을 맡는다. 필리핀 법인의 2025년 실적은 매출 2,238억원, 순손실 225억원으로, 연결 손익의 방향을 좌우하는 사업장이다. 신사업으로는 SSD 모듈 라인 2개를 구축해 순차 가동하고 있다. 최대주주는 에스에프에이로, 특수관계인 포함 지분율은 55.00%(2026년 9월 16일 기준)이다. 경쟁 구도에서는 하나마이크론이 SK하이닉스 물량을, SFA반도체가 삼성전자 물량을 주로 맡는 구조이며, 삼성 외주가 늘고 있지만 독식 구조는 아니라는 분석이 있다.",
+  "en": "SFA Semicon is an outsourced semiconductor assembly and test (OSAT) provider handling back-end packaging and testing, supplying packaging solutions to Samsung Electronics, Micron and others. By product, memory accounted for 84% and non-memory for 16% of Q2 2026 revenue, which means a heavy reliance on memory. In Korea, it runs the K1 plant focused on MCP and the K2 plant for non-memory bumping and test; according to BNK Investment & Securities in February 2026, K2 utilization had climbed to the high-60% range while K1 utilization remained weak. The main production base is the Philippine subsidiary, which provides turnkey assembly, final test and module services for server and PC products. A division of labor is taking shape: the Cheonan plant handles FBGA packaging of memory chips, while the Philippine plant handles final test and module assembly. The Philippine unit posted 2025 revenue of KRW 223.8 billion and a net loss of KRW 22.5 billion, so it is the site that drives the direction of consolidated earnings. As a new business, the company has built two SSD module lines and is bringing them online in sequence. The largest shareholder is SFA Engineering, holding 55.00% together with related parties as of September 16, 2026. In the competitive landscape, HanaMicron mainly serves SK hynix volumes while SFA Semicon mainly serves Samsung Electronics, and one analysis notes that Samsung's outsourcing is growing, but it is not a winner-take-all structure."
  },
  "earnings": {
-  "ko": "연간 매출은 2022년 6,994억원에서 2023년 4,376억원, 2024년 4,005억원, 2025년 3,674억원으로 3년 연속 감소했다. 영업손익은 2022년 629억원 흑자에서 2023년 -167억원, 2024년 -0.3억원(사실상 손익분기)으로 개선되는 듯했으나 2025년 다시 -196억원으로 적자 폭이 확대됐다. 지배주주 순이익도 2022년 429억원 흑자에서 2023년 -127억원 적자, 2024년 205억원 흑자, 2025년 -191억원 적자로 등락을 반복했다. 2025년 연결 매출액은 전년 대비 8.3% 감소했고 영업손실 규모가 크게 늘었으며, 메모리 반도체 수요 둔화, 비메모리 사업 성장 지연, 경쟁 심화, 원가 부담 증가가 수익성 저하와 매출 감소의 배경으로 지목됐다. 분기별로는 2025년 2분기 매출 761억원에서 3분기 965억원, 4분기 1,196억원, 2026년 1분기 1,073억원, 2분기 1,263억원으로 대체로 순차 회복하는 흐름을 보였다. 그러나 영업손익은 같은 기간 각각 -67억원, -63억원, -6억원, -62억원, -62억원으로 5개 분기 연속 적자를 벗어나지 못했다. 특히 BNK투자증권이 2026년 2월 보고서에서 제시한 1분기 매출 1,207억원·영업이익 21억원 흑자전환 전망과 달리, 실제 2026년 1분기는 매출 1,073억원, 영업손실 62억원을 기록해 예상보다 부진했다(단, 지배주주 순이익은 12억원으로 유일하게 흑자를 기록). 최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주 순손실 합계는 약 104억원으로, 매출 회복에도 손익 개선은 아직 뚜렷하지 않다. 반면 부채비율은 2022년 39.5%에서 2025년 16.2%까지 낮아지고 영업활동현금흐름은 4개 연도 모두 양(+)을 유지해, 손익 부진에도 재무 건전성은 유지되고 있다.",
-  "en": "Annual revenue declined for three straight years, from KRW 699.4bn in 2022 to KRW 437.6bn in 2023, KRW 400.5bn in 2024, and KRW 367.4bn in 2025. Operating profit swung from a KRW 62.9bn gain in 2022 to a loss of KRW 16.7bn in 2023 and a near-breakeven KRW 0.03bn loss in 2024, before the loss widened again to KRW 19.6bn in 2025. Owner net income also fluctuated from a KRW 42.9bn profit in 2022 to a KRW 12.7bn loss in 2023, a KRW 20.5bn profit in 2024, and a KRW 19.1bn loss in 2025. Consolidated 2025 revenue fell 8.3% year over year with a sharply widened operating loss, attributed to weaker memory demand, delayed growth in the non-memory business, intensified competition, and rising cost burdens. On a quarterly basis, revenue broadly recovered from KRW 76.1bn in 2Q25 to KRW 96.5bn in 3Q25, KRW 119.6bn in 4Q25, KRW 107.3bn in 1Q26, and KRW 126.3bn in 2Q26. Operating losses persisted throughout, however, at roughly KRW 6.7bn, 6.3bn, 0.6bn, 6.2bn, and 6.2bn respectively over the same five quarters. Notably, contrary to BNK Securities' February 2026 forecast of KRW 120.7bn in 1Q26 revenue and a KRW 2.1bn operating profit, actual 1Q26 results came in at KRW 107.3bn revenue with a KRW 6.2bn operating loss, falling short of expectations (though owner net income was the one positive figure at KRW 1.2bn). Over the most recent four quarters (3Q25-2Q26), cumulative owner net loss was about KRW 10.4bn, suggesting that despite revenue recovery, a clear profitability turnaround has not yet materialized. On the other hand, the debt ratio declined from 39.5% in 2022 to 16.2% in 2025, and operating cash flow stayed positive in all four years, indicating balance-sheet stability persisted despite weak earnings."
+  "ko": "연간 매출은 2022년 6,994억원에서 2023년 4,376억원(전년 대비 37.4% 감소), 2024년 4,005억원(8.5% 감소), 2025년 3,674억원(8.3% 감소)으로 2023년부터 2025년까지 3년 연속 감소했고, 2022~2025년 중 가장 작은 해는 2025년이다. 영업이익은 2022년 629억원(영업이익률 9.0%)에서 2023년 영업손실 167억원으로 적자 전환했다. 이후 2024년 영업손실 3,100만원으로 손실이 거의 없어졌다가 2025년 영업손실 196억원(영업이익률 -5.3%)으로 다시 커졌다. 지배주주 순이익은 2024년 213억원으로 흑자 전환했으나 2025년 지배주주 순손실 191억원으로 다시 적자 전환했다. 2024년에 영업손익이 손익분기 수준이었는데도 순이익이 난 것은 영업외 손익이 크게 기여했다는 뜻이다. 분기 매출은 2025년 2분기 761억원에서 2025년 4분기 1,196억원까지 늘었고, 2026년 1분기 1,073억원으로 줄었다가 2026년 2분기 1,263억원(전년 동기 대비 65.9% 증가)으로 다시 늘었다. 2025년 4분기에는 영업손실이 5.9억원까지 줄었는데, BNK투자증권은 그 배경으로 필리핀 공장 가동률이 30%대에서 60%대까지 예상보다 빠르게 상승한 점을 들었다. 그러나 2026년 1분기 영업손실 61.8억원, 2분기 영업손실 61.5억원으로 손실 폭이 다시 커지면서 2025년 2분기부터 2026년 2분기까지 5개 분기 연속 적자가 이어졌다. 순이익은 2026년 1분기 지배주주 순이익 11.9억원으로 흑자 전환했다가 2분기 지배주주 순손실 53.5억원으로 적자 전환했고, 최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주 순손실 합계는 104억원이다.",
+  "en": "Annual revenue fell from KRW 699.4 billion in 2022 to KRW 437.6 billion in 2023 (down 37.4% year on year), KRW 400.5 billion in 2024 (down 8.5%) and KRW 367.4 billion in 2025 (down 8.3%), declining for three straight years from 2023 to 2025, with 2025 the smallest year in the 2022-2025 period. Operating profit of KRW 62.9 billion in 2022 (9.0% operating margin) swung to an operating loss of KRW 16.7 billion in 2023. The loss then nearly disappeared, narrowing to KRW 31 million in 2024, before widening again to KRW 19.6 billion in 2025 (operating margin of -5.3%). Net income attributable to owners of the parent turned positive at KRW 21.3 billion in 2024 but swung back to a net loss of KRW 19.1 billion in 2025. A net profit in 2024 despite a roughly break-even operating result indicates a large contribution from non-operating items. Quarterly revenue grew from KRW 76.1 billion in Q2 2025 to KRW 119.6 billion in Q4 2025, dipped to KRW 107.3 billion in Q1 2026 and rebounded to KRW 126.3 billion in Q2 2026 (up 65.9% year on year). The operating loss narrowed to KRW 590 million in Q4 2025, which BNK Investment & Securities attributed to Philippine plant utilization rising from the 30% range to the 60% range faster than expected. However, losses widened again to KRW 6.18 billion in Q1 2026 and KRW 6.15 billion in Q2 2026, extending the run of operating losses to five consecutive quarters from Q2 2025 through Q2 2026. Net income attributable to owners of the parent turned positive at KRW 1.19 billion in Q1 2026, then swung to a net loss of KRW 5.35 billion in Q2, and the combined net loss for the last four quarters (Q3 2025 to Q2 2026) totals KRW 10.4 billion."
  },
  "industry": {
-  "ko": "메모리 반도체 업황은 AI 서버·데이터센터 투자 확대를 축으로 강한 사이클 국면에 들어서 있다는 평가가 많다. SK하이닉스는 1분기 매출 52조 6,000억원과 영업이익률 72%라는 기록적 실적을 냈고, D램 가격은 전분기 대비 60%대 중반, 낸드는 70%대 중반까지 올랐다. 삼성전자 역시 HBM 월 생산량을 17만 장에서 20만 장으로 끌어올리고 평택 P4-4 구역 준공 시점을 2027년에서 2026년 1분기로 앞당기는 등 HBM 중심 생산 확대에 속도를 내고 있다. 이 과정에서 HBM 라인을 늘리려면 기존 범용 D램에 투입됐던 후공정 인력과 설비를 재배치해야 하고, 자연스럽게 범용 메모리의 테스트·패키징 공정을 외주로 전환하는 구조가 형성되고 있다는 분석이 나온다. 미래에셋증권 장다현 연구원은 메이저 고객사들의 HBM 생산 확대로 후공정 여력이 제한되면서 범용 메모리 외주가 구조적으로 증가하는 국면이라고 평가했다. 이 흐름 속에서 BNK투자증권 이민희 연구원은 SFA반도체가 칩 제조사들의 생산 전략 변화에 따른 반사이익을 얻고 있다고 진단했으며, BNK투자증권은 대덕전자, 원익QnC와 함께 SFA반도체를 눈여겨볼 종목으로 제시했다(2026년 5월 기사 기준). 다만 시장 전체적으로는 하반기에도 반도체 공급 부족은 이어지겠지만 가격 상승의 강도는 완화될 것이란 전망도 함께 나온다. 국내 후공정 경쟁구도는 네패스·시그네틱스·원팩·하나마이크론 등이 각각 메모리·비메모리 영역에서 경쟁하는 다자간 구도로, SFA반도체는 필리핀 생산기지 확장을 통한 규모 대응을 추진하고 있다.",
-  "en": "The memory chip cycle is widely seen as being in a strong upcycle, driven by expanding AI server and data center investment. SK Hynix reported record first-quarter revenue of KRW 52.6 trillion with a 72% operating margin, while DRAM prices rose in the mid-60% range and NAND prices in the mid-70% range quarter over quarter. Samsung Electronics is also accelerating HBM-centered production expansion, having raised monthly HBM output from 170,000 to 200,000 wafers and moved forward the completion of the Pyeongtaek P4-4 area from 2027 to the first quarter of 2026. In this process, analysts note that expanding HBM lines requires reallocating back-end personnel and equipment previously devoted to general-purpose DRAM, naturally creating a structure in which general-purpose memory test and packaging work shifts to outsourcing. Mirae Asset Securities analyst Jang Da-hyun assessed this as a phase where structural outsourcing of general-purpose memory is increasing as major customers' back-end capacity is constrained by HBM production expansion. Within this trend, BNK Securities analyst Lee Min-hee said SFA Semicon is benefiting from chipmakers' shift in production strategy, and BNK Securities flagged SFA Semicon alongside Daeduck Electronics and Wonik QnC as stocks worth watching, as of a May 2026 article. That said, the broader market view also includes a forecast that semiconductor supply shortages will persist in the second half but the intensity of price increases will moderate. The domestic back-end competitive landscape features Nepes, Signetics, WonPac, and Hana Micron competing across memory and non-memory segments, with SFA Semicon pursuing scale through expansion of its Philippine production base."
+  "ko": "메모리 업황은 강한 확장 국면에 있다. 삼성전자는 2026년 3분기 잠정 실적으로 연결 매출 195조원, 영업이익 107.4조원을 발표했다. 후공정 외주 업체에 더 직접적인 변수는 삼성전자의 외주 정책 변화로, 삼성전자는 범용 메모리 모듈 증산 물량을 외주로 돌리는 방향을 잡았다. 이에 따라 SFA반도체는 삼성전자 온양캠퍼스에서 쓰던 DDR5 테스트·모듈 조립 장비를 필리핀 공장으로 옮기고 있다. 업계 사이클 측면에서는 업황 중후반부로 갈수록 가동률이 오르며 후공정 업체가 강세를 보이는 것이 일반적이라는 증권사 분석이 있다. 다만 외주 물량을 두고 경쟁도 진행 중이며, 한양디지텍도 상반기 베트남 공장 설비와 자동화에 315억원 이상을 투자했다. 외주 확대가 삼성전자 내부 공간 부족에서 출발했다는 점에서, 신공장 가동 이후에도 범용 제품 외주 기조가 유지될지는 아직 확인되지 않았다. 거시 환경에서는 2026년 9월 AI 투자 속도 조절론과 미국의 기준금리 인상이 겹쳐 국내 증시 변동성이 커졌다.",
+  "en": "The memory market is in a strong expansion phase. Samsung Electronics reported preliminary Q3 2026 results of KRW 195 trillion in consolidated revenue and KRW 107.4 trillion in operating profit. The more direct variable for back-end OSAT providers is Samsung's outsourcing policy, as Samsung has decided to shift incremental commodity memory module output to outsourcing. Accordingly, SFA Semicon is relocating DDR5 test and module assembly equipment previously used at Samsung's Onyang campus to its Philippine plant. On the cycle, one brokerage analysis notes that back-end players typically outperform in the mid-to-late stages of an upturn as utilization rises. However, competition for outsourced volumes is under way, and Hanyang Digitech invested more than KRW 31.5 billion in Vietnam plant equipment and automation in the first half. Because the outsourcing expansion started from a space shortage inside Samsung, it has not been confirmed whether the commodity outsourcing stance will continue after new fabs come online. On the macro side, in September 2026 concerns about a slowdown in AI investment and a US rate hike combined to increase volatility in the Korean market."
  },
  "outlook": {
-  "ko": "회사의 실적 개선 스토리는 필리핀 법인(SSP)의 가동률 상승과 삼성전자 범용 메모리 후공정 물량 이관에 크게 의존하고 있다. BNK투자증권은 2026년 2월 보고서에서 필리핀 공장이 전년 약 2,500억원 매출을 기록했으며 다음 해까지 연 4,000억원 이상 수준으로 증가할 것으로 전망했다. 같은 보고서는 지난해 말부터 신사업으로 구축한 SSD 모듈 라인 2개가 순차적으로 가동되고 있다고 밝혔다. 다만 실제 2026년 1분기 실적은 해당 보고서가 제시한 흑자전환 전망과 달리 영업손실을 지속했고, BNK투자증권은 2026년 4월 27일 보고서에서 실적 흐름을 '뚜렷한 상저하고'로 재정의하며 하반기 개선에 초점을 맞췄다. 한국투자증권은 2026년 4월 2일 보고서에서 '필리핀 곳간 채워지는 중, 국내도 순항 중'이라며 매수(신규) 의견과 목표주가 8,000원을 제시했다. 구조적으로는 삼성전자의 HBM 투자 확대가 SFA반도체에 직접적인 HBM 매출을 만드는 것이 아니라 기존 DDR5 패키징·테스트 물량의 외주화를 촉진하는 간접적인 경로로 실적에 영향을 준다는 분석이 지배적이다. 아울러 일부 이전 장비를 고객사가 무상 임대하는 방식이어서 캐펙스와 감가상각비 부담이 상대적으로 제한적이라는 점도 우호적 요인으로 거론된다. 회사 측은 범핑 공정 CAPA 확대와 비메모리 고객 다변화를 통한 신성장 동력 확보 계획을 밝히고 있어, 향후 실적 정상화 속도는 이 계획의 실행 여부에 좌우될 것으로 보인다.",
-  "en": "The company's earnings-improvement narrative depends heavily on rising utilization at its Philippine plant (SSP) and on the transfer of general-purpose memory back-end volume from Samsung Electronics. In a February 2026 report, BNK Securities forecast that the Philippine plant, which posted roughly KRW 250bn in revenue the prior year, would grow to over KRW 400bn annually by the following year. The same report noted that two new SSD module lines built as a new business since late last year are being ramped up sequentially. However, actual 1Q26 results continued to show an operating loss, contrary to that report's breakeven forecast, and in an April 27, 2026 report BNK Securities redefined the earnings pattern as clearly weighted toward the second half, shifting focus to improvement later in the year. Korea Investment & Securities, in an April 2, 2026 report, stated that 'the Philippine warehouse is filling up, domestic operations are also cruising,' issuing a new Buy rating with a KRW 8,000 target price. Structurally, the prevailing view is that Samsung's HBM investment expansion affects SFA Semicon's results not by generating direct HBM revenue but by accelerating outsourcing of existing DDR5 packaging and test volume. It is also noted as a favorable factor that some relocated equipment is provided on free lease by the customer, relatively limiting the company's capex and depreciation burden. Management has stated plans to secure new growth drivers through expanded bumping process capacity and diversification of non-memory customers, and the pace of future earnings normalization is likely to hinge on execution of this plan."
+  "ko": "필리핀 DDR5 라인은 2026년 11월 1단계, 2027년 2분기 2단계 가동이 예정돼 있다. 한국투자증권은 2027년 매출을 필리핀 5,520억원, 한국 3,360억원으로 전망했으며, 이는 2026년 대비 각각 45.3%, 90.6% 증가한 수치다. 같은 증권사는 한국공장에서 DDR5 메모리와 SSD용 FBGA 패키징 물량도 늘어날 것이라고 밝혔다. SK증권은 2027년 영업이익을 785억원으로 추정했다(2026년 9월 보도 기준). 반면 하나증권은 2026년 연간 영업적자를 33억원으로 예상해, 연간 흑자 전환은 2026년보다 늦어질 수 있다는 시각도 있다. 과거 전망과 실제 실적의 차이도 참고할 점으로, BNK투자증권은 2026년 2월 2026년 1분기 영업이익 21억원을 예상했지만 공시된 2026년 1분기 실적은 영업손실 61.8억원이었다. 회사 차원의 공식 실적 가이던스는 확인되지 않아, 판단 근거는 증권사 추정과 분기 공시에 의존해야 한다.",
+  "en": "The Philippine DDR5 lines are scheduled to start phase one in November 2026 and phase two in Q2 2027. Korea Investment & Securities forecast 2027 revenue of KRW 552 billion for the Philippines and KRW 336 billion for Korea, up 45.3% and 90.6% respectively from 2026. The same brokerage said FBGA packaging volumes for DDR5 memory and SSDs at the Korean plant will also increase. SK Securities estimated 2027 operating profit at KRW 78.5 billion, according to September 2026 reports. By contrast, Hana Securities expects a 2026 full-year operating loss of KRW 3.3 billion, which suggests the full-year turnaround may come later than 2026. The gap between past forecasts and actual results is also worth noting: in February 2026, BNK Investment & Securities forecast Q1 2026 operating profit of KRW 2.1 billion, but the reported Q1 2026 result was an operating loss of KRW 6.18 billion. No official company earnings guidance has been confirmed, so assessments must rely on brokerage estimates and quarterly filings."
  },
  "valuation_comment": {
-  "ko": "회사가 최근 순손실을 지속하고 있어 주가수익비율(PER)은 통상적인 방식으로 산출되지 않는 구간에 있다. 대신 시장에서는 주가순자산비율(PBR) 중심으로 주가를 설명하는 경우가 많은데, 현재 주가는 순자산가치에 일정한 프리미엄이 얹힌 수준에서 거래되고 있다. 회사는 최근 별도의 현금배당을 실시하지 않고 있어, 배당을 통한 주주환원 매력은 상대적으로 크지 않은 편이다. 실적 측면에서는 2022년 흑자, 2023~2025년 대체로 적자라는 다년간의 등락이 있었고, 최근 네 개 분기(2025년 3분기~2026년 2분기) 기준으로도 순손실이 이어지고 있어 이익 회복의 지속성은 아직 확인이 필요한 단계다. 이런 가운데 일부 증권사는 하반기 실적 개선 가능성에 주목하고 있는 반면, 실제 발표된 분기 실적은 예상과 엇갈린 결과를 보여 왔던 만큼 밸류에이션 판단에는 추가적인 실적 확인이 선행될 필요가 있다.",
-  "en": "With the company posting recent net losses, the price-to-earnings ratio (PER) sits in a range where it cannot be calculated in the conventional way. Investors instead tend to frame the stock more through price-to-book (PBR), and the current share price trades at a level carrying a certain premium over net asset value. The company has not been paying regular cash dividends recently, so the appeal of shareholder returns through dividends is relatively limited. On the earnings side, there has been multi-year volatility, with a profit in 2022 followed by mostly losses from 2023 through 2025, and net losses have continued over the most recent four quarters (3Q25-2Q26), meaning the durability of any profit recovery still needs to be confirmed. Against this backdrop, some brokerages are focusing on potential second-half improvement, while actual quarterly results have repeatedly diverged from expectations, so any valuation assessment warrants further confirmation of actual earnings."
+  "ko": "최근 4개 분기 합산 지배주주 순손실이 이어져 주가수익비율(PER)은 산출되지 않으며, 배당도 지급되지 않고 있다. 주가순자산비율(PBR)은 순자산 대비 큰 프리미엄이 붙은 구간이고, 2025년 말 실적 기준으로 산출된 배수보다도 높아진 상태다. BNK투자증권은 2025년 8월 당시 주가가 역사적 밸류에이션 바닥에 있다고 평가했는데, 이후 순자산 대비 배수는 그 시점보다 크게 높아졌다. 현재 주가는 이미 공시된 실적보다 2027년 이익 회복에 대한 증권사 추정을 반영하는 성격이 강하며, 이 추정이 분기 실적으로 확인되는지가 배수 해석의 핵심이다. 한국투자증권은 2026년 9월 14일 리포트에서 투자의견 '매수'를 유지하면서 목표주가를 기존 1만원에서 1만 2,000원으로 상향 제시했다.",
+  "en": "With combined net losses attributable to owners of the parent over the last four quarters, the price-to-earnings ratio cannot be calculated, and no dividend is paid. The price-to-book ratio sits in a range carrying a large premium to net assets, and is higher than the multiple calculated on end-2025 figures. In August 2025, BNK Investment & Securities assessed the stock as sitting at a historical valuation bottom, and the multiple to net assets has risen sharply since then. The share price now reflects brokerage estimates of a 2027 earnings recovery more than reported results, so whether quarterly filings confirm those estimates is central to interpreting the multiple. In a September 14, 2026 report, Korea Investment & Securities maintained a Buy rating and raised its target price from KRW 10,000 to KRW 12,000."
  },
  "bull": [
   {
    "title": {
-    "ko": "HBM 확장에 따른 외주화 수혜 구조",
-    "en": "Structural Beneficiary of HBM-Driven Outsourcing"
+    "ko": "삼성전자 DDR5 외주 확대의 직접 수혜",
+    "en": "Direct beneficiary of Samsung's DDR5 outsourcing"
    },
    "body": {
-    "ko": "삼성전자가 HBM 생산 공간을 확보하기 위해 온양 사업장 후공정 물량을 재배치하면서 기존 DDR5 등 범용 메모리 물량의 외주 이관이 이어지고 있다. 이 과정에서 국내 메이저 고객사의 DDR5 테스트 설비 120대가 필리핀으로 이전되는 등 SFA반도체의 국내·필리핀 법인에 설비가 순차적으로 반입되고 있다. 미래에셋증권은 이런 흐름을 범용 메모리 외주가 구조적으로 증가하는 국면이라고 진단했다. 일부 이전 장비는 고객사가 무상 임대하는 방식이어서 회사의 캐펙스 부담이 상대적으로 제한적이라는 분석도 나온다.",
-    "en": "As Samsung Electronics reallocates back-end volume at its Onyang plant to make room for HBM production, outsourcing of existing general-purpose memory volume such as DDR5 has continued. In this process, 120 DDR5 test units from a major domestic customer have been relocated to the Philippines, with equipment sequentially arriving at SFA Semicon's domestic and Philippine plants. Mirae Asset Securities described this trend as a phase of structurally increasing outsourcing of general-purpose memory. Some analysts also note that certain relocated equipment is provided on free lease by the customer, relatively limiting the company's capex burden."
+    "ko": "BNK투자증권은 2026년 2월 주요 고객사의 외주 정책 변화로 필리핀 공장이 수익성 좋은 DDR5 파이널 테스트 위주로 매출이 크게 성장할 것으로 봤다. 실제로 분기 매출은 2025년 2분기 761억원에서 2026년 2분기 1,263억원으로 늘었다. 한국투자증권은 이미 확보한 DDR5 외주물량 외에도 추가 수주 가능성이 열려 있다고 밝혔다.",
+    "en": "In February 2026, BNK Investment & Securities expected that due to the main customer's outsourcing policy change, the Philippine plant's revenue will grow sharply, centered on profitable DDR5 final test. Quarterly revenue did rise from KRW 76.1 billion in Q2 2025 to KRW 126.3 billion in Q2 2026. Korea Investment & Securities said additional orders are possible beyond the DDR5 outsourcing volumes already secured."
    }
   },
   {
    "title": {
-    "ko": "매출 순차 회복과 필리핀 법인 확대",
-    "en": "Sequential Revenue Recovery and Philippine Plant Expansion"
+    "ko": "가동률 상승에 따른 영업 레버리지",
+    "en": "Operating leverage from rising utilization"
    },
    "body": {
-    "ko": "분기 매출은 2025년 3분기 965억원에서 2026년 2분기 1,263억원까지 대체로 늘어나는 흐름을 보였다. BNK투자증권은 필리핀 공장 매출이 전년 약 2,500억원에서 향후 연 4,000억원 이상으로 늘어날 수 있다고 전망했다. 지난해 말부터는 SSD 모듈 라인 2개를 새로 구축해 순차적으로 가동하며 사업 영역도 넓히고 있다.",
-    "en": "Quarterly revenue broadly increased from KRW 96.5bn in 3Q25 to KRW 126.3bn in 2Q26. BNK Securities forecast that Philippine plant revenue could grow from roughly KRW 250bn the prior year to over KRW 400bn annually. Since late last year the company has also been broadening its business scope by building and sequentially ramping up two new SSD module lines."
+    "ko": "후공정은 고정비 비중이 커서 가동률이 오르면 영업이익률 개선 여지가 크다. 2025년 4분기 필리핀 가동률이 높아지자 영업손실이 5.9억원까지 줄어든 사례가 이를 보여준다. 필리핀 DDR5 생산능력이 2027년 2분기 말까지 두 배로 늘어날 계획이어서, 물량이 채워지면 손익 구조가 바뀔 수 있다.",
+    "en": "Back-end operations carry high fixed costs, so rising utilization leaves substantial room for operating margin improvement. Q4 2025 illustrates this: as Philippine utilization climbed, the operating loss narrowed to KRW 590 million. With Philippine DDR5 capacity planned to double by the end of Q2 2027, filled volumes could reshape the profit structure."
    }
   },
   {
    "title": {
-    "ko": "낮아진 부채비율과 꾸준한 현금창출력",
-    "en": "Lower Leverage and Steady Cash Generation"
+    "ko": "낮은 부채비율과 계열 지원 구조",
+    "en": "Low leverage and group backing"
    },
    "body": {
-    "ko": "부채비율은 2022년 39.5%에서 2025년 16.2%까지 낮아지며 재무구조가 개선됐다. 영업활동현금흐름은 2022~2025년 4개 연도 모두 양(+)을 유지해, 손익상 적자를 기록한 해에도 현금창출력은 유지됐다. 이는 향후 필리핀 법인 증설 등 투자에 필요한 재원을 자체적으로 조달할 수 있는 여력을 시사한다.",
-    "en": "The debt ratio fell from 39.5% in 2022 to 16.2% in 2025, reflecting an improved balance sheet. Operating cash flow stayed positive in all four years from 2022 to 2025, so cash generation held up even in years with net losses. This suggests capacity to self-fund future investment needs such as expansion of the Philippine plant."
+    "ko": "부채비율은 2022년 39.5%에서 2025년 16.2%로 꾸준히 낮아졌다. 2025년 말 자본총계 4,728억원 대비 부채총계는 766억원에 그친다. 이런 재무 여력 덕분에 외부 차입 없이 필리핀 법인에 대규모 증설 자금을 댈 수 있었다.",
+    "en": "The debt-to-equity ratio declined steadily from 39.5% in 2022 to 16.2% in 2025. Total liabilities were only KRW 76.6 billion against total equity of KRW 472.8 billion at end-2025. This financial capacity allowed the company to fund large-scale expansion at the Philippine unit without external borrowing."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "5개 분기 연속 영업손실",
-    "en": "Five Consecutive Quarters of Operating Losses"
+    "ko": "매출 성장에도 이어지는 영업손실",
+    "en": "Operating losses persist despite sales growth"
    },
    "body": {
-    "ko": "2025년 2분기부터 2026년 2분기까지 5개 분기 연속으로 영업손실을 기록했다. BNK투자증권이 2026년 2월 보고서에서 제시한 1분기 매출 1,207억원·영업이익 21억원 흑자전환 전망과 달리, 실제 2026년 1분기 영업손실은 62억원으로 시장 기대에 못 미쳤다. 매출이 순차적으로 회복되고 있음에도 손익 개선 속도는 아직 더딘 모습이다.",
-    "en": "The company recorded operating losses for five consecutive quarters from 2Q25 through 2Q26. Contrary to BNK Securities' February 2026 forecast of KRW 120.7bn revenue and a KRW 2.1bn operating profit for 1Q26, the actual 1Q26 operating loss was KRW 6.2bn, falling short of expectations. Even as revenue has recovered sequentially, the pace of profitability improvement remains slow."
+    "ko": "2026년 2분기 매출은 전년 동기 대비 65.9% 늘었지만 영업손실은 61.5억원으로 전년 동기 67.2억원과 큰 차이가 없다. 2026년 1분기 흑자 전환 전망도 실현되지 않았다. 흑자 전환 시점이 거듭 뒤로 밀리면서 증권사 추정의 신뢰도가 시험대에 올라 있다.",
+    "en": "Q2 2026 revenue rose 65.9% year on year, but the operating loss of KRW 6.15 billion was little changed from KRW 6.72 billion a year earlier. The forecast turnaround in Q1 2026 also failed to materialize. With the break-even point repeatedly pushed back, the reliability of brokerage estimates is being tested."
    }
   },
   {
    "title": {
-    "ko": "삼성전자·메모리 편중 매출구조",
-    "en": "Heavy Reliance on Samsung and Memory"
+    "ko": "약해진 현금 창출력과 대규모 투자",
+    "en": "Weaker cash generation amid heavy investment"
    },
    "body": {
-    "ko": "2024년 초 기준 자료에서 매출의 약 81%가 메모리 부문에서 나왔고, 고객사별로는 삼성전자향이 약 80%를 차지했다. 비메모리 사업의 성장 지연도 함께 지목된다. 특정 고객·제품에 대한 의존도가 높은 구조는 해당 고객사의 발주 정책이나 메모리 업황 변화에 실적이 크게 출렁일 수 있는 요인이다.",
-    "en": "Based on data from early 2024, about 81% of revenue came from the memory segment, and Samsung Electronics accounted for roughly 80% of revenue by customer. Delayed growth in the non-memory business has also been cited as a factor. This high dependence on a specific customer and product category means results can swing significantly with that customer's order policy or memory cycle changes."
+    "ko": "2025년 영업활동 현금흐름은 54.6억원으로 2024년 531억원에서 크게 줄었다. 반면 필리핀 대여금은 자기자본 대비 21.3% 규모이며, 상환은 SSP의 영업 성과에 달려 있다. 대여 이자는 연결 재무제표에서 내부거래로 상계되므로 연결 기준 효과는 가동률과 이익으로만 확인된다.",
+    "en": "Operating cash flow in 2025 fell to KRW 5.46 billion from KRW 53.1 billion in 2024. Meanwhile, the Philippine loan amounts to 21.3% of equity, and repayment depends on SSP's operating performance. Loan interest is eliminated as an intercompany transaction in the consolidated statements, so the consolidated benefit shows up only through utilization and profit."
    }
   },
   {
    "title": {
-    "ko": "다년간 이어진 실적 변동성",
-    "en": "Multi-Year Earnings Volatility"
+    "ko": "실적보다 앞서 움직인 배수",
+    "en": "Multiple running ahead of earnings"
    },
    "body": {
-    "ko": "연간 매출은 2022년 6,994억원에서 2025년 3,674억원으로 3년 연속 줄어들며 정점 대비 절반 수준까지 축소됐다. 지배주주 순이익도 2022년 흑자에서 2023년 적자, 2024년 흑자, 2025년 다시 적자로 등락을 반복했다. 이러한 변동성은 메모리 업황 사이클에 실적이 크게 좌우되는 사업 구조를 보여준다.",
-    "en": "Annual revenue fell for three straight years, from KRW 699.4bn in 2022 to KRW 367.4bn in 2025, shrinking to roughly half its peak level. Owner net income also alternated between profit in 2022, loss in 2023, profit in 2024, and loss again in 2025. This volatility reflects a business structure heavily driven by the memory cycle."
+    "ko": "공시 실적은 적자인데 주가는 순자산 대비 큰 프리미엄 구간에 있다. 이는 2027년 이익 회복 추정이 상당 부분 반영됐다는 뜻으로, 분기 실적이 기대에 못 미치면 배수 변동이 클 수 있다. 실제로 2026년 10월 12일 하루에 주가가 6.65% 움직이는 등 변동성이 크다.",
+    "en": "Reported results are loss-making, yet the shares trade at a large premium to net assets. This implies the 2027 recovery estimates are largely reflected, so the multiple could swing sharply if quarterly results disappoint. Volatility is already high: on October 12, 2026, the stock moved 6.65% in a single session."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "메모리 업황·가격 변동 리스크",
-    "en": "Memory Cycle and Pricing Risk"
+    "ko": "고객 집중·외주 정책",
+    "en": "Customer concentration and outsourcing policy"
    },
    "body": {
-    "ko": "SFA반도체의 물량은 메모리 반도체 업황과 고객사의 생산 전략에 직접 연동돼 있다. D램·낸드 가격이 큰 폭으로 오르내리는 사이클 특성상, 외주화 확대가 둔화되거나 반대로 내재화로 전환될 가능성도 배제할 수 없다. 하반기에도 반도체 공급 부족은 이어지겠지만 가격 상승의 강도는 완화될 것이란 전망도 나오는 만큼 업황 변화에 대한 모니터링이 필요하다.",
-    "en": "SFA Semicon's volume is directly linked to memory chip industry conditions and its customers' production strategies. Given the large swings in DRAM and NAND prices through the cycle, the possibility that outsourcing expansion slows or reverses to in-house production cannot be ruled out. As some forecasts suggest supply shortages will persist in the second half but price growth will moderate, ongoing monitoring of industry conditions is warranted."
+    "ko": "매출의 상당 부분이 삼성전자의 메모리 외주 물량에 달려 있다. 외주 확대의 계기가 삼성전자의 공간 부족이었던 만큼, 신공장이 가동되면 외주 기조가 달라질 수 있다. 경쟁 OSAT 업체의 증설도 물량 배분에 영향을 줄 수 있다.",
+    "en": "A large share of revenue depends on Samsung Electronics' memory outsourcing volumes. Because the outsourcing push stemmed from Samsung's space constraints, the stance could change once new fabs come online. Capacity additions by rival OSAT providers could also affect volume allocation."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중·물량 이관 정책 리스크",
-    "en": "Customer Concentration and Volume Reallocation Risk"
+    "ko": "증설 실행·수율",
+    "en": "Expansion execution and yield"
    },
    "body": {
-    "ko": "매출의 상당 부분이 삼성전자 한 고객사에 집중돼 있어, 해당 고객사의 후공정 내재화·외주화 정책 변화가 실적에 직접적인 영향을 준다. 한 삼성전자 관계자는 후공정을 완전히 외주로 돌리는 것은 아니고 일부 외주 물량을 확대하는 것이라고 밝힌 바 있어, 이관 범위가 제한적일 가능성도 있다. SK하이닉스, Micron 등 다른 고객사와의 거래 비중을 어떻게 늘려가는지도 지켜볼 부분이다.",
-    "en": "A significant portion of revenue is concentrated with a single customer, Samsung Electronics, so any change in that customer's in-house versus outsourcing policy for back-end work directly affects results. A Samsung Electronics representative stated that the company is not fully outsourcing back-end work but expanding a portion of outsourced volume, suggesting the scope of reallocation may be limited. How the company grows its share of business with other customers such as SK Hynix and Micron also warrants attention."
+    "ko": "장비 이전과 신규 라인 가동에는 초기 비용과 수율 안정화 기간이 따른다. 해외 생산시설 투자는 초기 가동 비용과 수율 안정화가 수익성을 좌우한다는 지적이 있다. 2026년 11월 1단계 가동이 늦어지거나 수율이 낮으면 흑자 전환 시점이 더 밀릴 수 있다.",
+    "en": "Equipment relocation and new line start-ups involve initial costs and a yield stabilization period. It has been noted that for overseas plant investments, start-up costs and yield stabilization determine profitability. If the phase-one start in November 2026 slips or yields are low, the turnaround could be delayed further."
    }
   },
   {
    "cat": {
-    "ko": "해외법인 운영·환율 리스크",
-    "en": "Overseas Operations and FX Risk"
+    "ko": "메모리 사이클·환율",
+    "en": "Memory cycle and FX"
    },
    "body": {
-    "ko": "필리핀 법인(SSP)의 가동률 상승이 실적 개선의 핵심 변수인 만큼, 현지 인력 운용과 설비 이전 일정이 계획대로 진행되지 않을 경우 기대했던 매출 기여가 지연될 수 있다. 해외 생산기지 운영에는 환율 변동, 물류비, 현지 인건비 상승 등의 변수도 상존한다. 경쟁사인 네패스, 시그네틱스, 원팩 등도 해외 후공정 거점을 확대하고 있어 경쟁 강도도 함께 높아질 수 있다.",
-    "en": "Since rising utilization at the Philippine plant (SSP) is a key variable for earnings improvement, expected revenue contribution could be delayed if local workforce operations and equipment relocation schedules do not proceed as planned. Operating an overseas production base also carries risks such as currency fluctuations, logistics costs, and rising local labor costs. Competitors such as Nepes, Signetics, and WonPac are also expanding their overseas back-end footprints, which could intensify competition."
+    "ko": "매출 대부분이 메모리여서 메모리 업황이 꺾이면 가동률이 빠르게 떨어질 수 있다. 고정비가 큰 구조여서 가동률 하락은 곧바로 손실 확대로 이어진다. 필리핀 법인 대여금이 달러로 집행돼 환율 변동도 손익에 영향을 준다.",
+    "en": "With most revenue coming from memory, a downturn in the memory market could quickly cut utilization. Given the high fixed-cost structure, lower utilization translates directly into wider losses. The loan to the Philippine unit is denominated in US dollars, so exchange-rate moves also affect earnings."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
+    "ko": "2026년 10월 말",
+    "en": "Late October 2026"
+   },
+   "what": {
+    "ko": "삼성전자 3분기 확정 실적과 컨퍼런스콜에서 범용 메모리 증산과 후공정 외주 방향에 대한 언급을 확인한다. 외주 기조 유지 여부가 SFA반도체 물량 전망의 전제다.",
+    "en": "Check Samsung Electronics' final Q3 results and conference call for comments on commodity memory output and back-end outsourcing. Continuation of the outsourcing stance underpins SFA Semicon's volume outlook."
+   }
+  },
+  {
+   "when": {
     "ko": "2026년 11월 중순",
     "en": "Mid-November 2026"
    },
    "what": {
-    "ko": "2026년 3분기(7~9월) 실적 발표를 통해 영업손익 흑자 전환 여부와 필리핀 법인의 매출 기여도를 확인할 필요가 있다.",
-    "en": "Check the 3Q26 (July-September) earnings release for whether operating profit turns positive and how much the Philippine plant contributes to revenue."
+    "ko": "SFA반도체 2026년 3분기 실적 발표에서 영업손실이 축소되는지, 흑자로 돌아서는지를 확인한다. 5개 분기 연속 적자 흐름이 끊기는지가 핵심이다.",
+    "en": "Check whether SFA Semicon's Q3 2026 results show a narrower operating loss or a return to profit. The key question is whether the five-quarter run of losses ends."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Fourth quarter of 2026"
+    "ko": "2026년 11월",
+    "en": "November 2026"
    },
    "what": {
-    "ko": "필리핀 법인(SSP) 매출이 BNK투자증권이 제시했던 연 4,000억원 이상 목표에 근접하는지, DDR5 테스트 설비 추가 이전 여부를 점검해야 한다.",
-    "en": "Monitor whether Philippine plant (SSP) revenue approaches the over-KRW-400bn annual target cited by BNK Securities, and whether additional DDR5 test equipment relocations occur."
+    "ko": "필리핀 DDR5 테스트·모듈 1단계 라인이 예정대로 가동되는지 확인한다. 가동 시점과 초기 가동률이 2027년 실적 추정의 출발점이다.",
+    "en": "Confirm whether the phase-one Philippine DDR5 test and module line starts on schedule. The start date and initial utilization are the starting point for 2027 earnings estimates."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기~2027년 초",
-    "en": "Second half of 2026 through early 2027"
+    "ko": "2027년 2~3월",
+    "en": "February-March 2027"
    },
    "what": {
-    "ko": "삼성전자 온양 사업장의 HBM 라인 확장에 따른 후속 외주 물량 확정 공시와 관련 증권사 리포트 업데이트를 확인해야 한다.",
-    "en": "Watch for confirmed disclosures on follow-on outsourcing volume tied to Samsung's Onyang HBM line expansion and related brokerage report updates."
+    "ko": "2026년 연간 실적과 사업보고서에서 연간 영업손익, 영업활동 현금흐름, 필리핀 법인 손익을 확인한다. 대규모 대여 이후 현금 흐름과 재무 구조 변화도 함께 점검한다.",
+    "en": "Review 2026 annual results and the annual report for full-year operating results, operating cash flow and Philippine unit earnings. Also check changes in cash flow and the balance sheet after the large loans."
    }
   },
   {
    "when": {
-    "ko": "2027년 3월경",
-    "en": "Around March 2027"
+    "ko": "2027년 2분기",
+    "en": "Q2 2027"
    },
    "what": {
-    "ko": "2026년 연간 사업보고서(감사보고서) 확정 실적을 통해 연간 기준 영업손익 흑자 전환 여부를 최종 확인해야 한다.",
-    "en": "Confirm final full-year 2026 audited results to determine whether annual operating profit ultimately turned positive."
+    "ko": "필리핀 2단계 라인 가동과 DDR5 테스트 생산능력 월 200억원 달성 여부를 확인한다. 증권사들의 2027년 이익 추정이 이 일정에 기반한다.",
+    "en": "Check the start of the phase-two Philippine line and whether DDR5 test capacity reaches KRW 20 billion per month. Brokerage 2027 profit estimates are built on this schedule."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "SFA반도체는 삼성전자의 HBM 생산 확대에 따른 범용 메모리 후공정 외주화의 구조적 수혜 후보로 거론되고 있다. 분기 매출은 2025년 3분기 이후 대체로 순차 회복하는 흐름을 보였지만, 영업손익은 2025년 2분기부터 2026년 2분기까지 5개 분기 연속 적자를 벗어나지 못했다. 증권가 일부가 제시했던 2026년 1분기 흑자전환 전망은 실제 실적과 차이를 보였고, 최근 보고서들은 '상저하고' 흐름과 하반기 개선 가능성에 초점을 맞추고 있다. 재무 측면에서는 부채비율이 꾸준히 낮아지고 영업활동현금흐름이 유지되는 등 안정성은 유지되고 있다. 반면 삼성전자·메모리 부문에 대한 높은 의존도와 다년간 반복된 실적 변동성은 여전한 과제로 남아 있다. 향후 3분기 실적과 필리핀 법인의 매출 기여 속도가 손익 정상화 여부를 가르는 핵심 변수가 될 것으로 보인다.",
-   "en": "SFA Semicon is cited as a candidate structural beneficiary of the outsourcing of general-purpose memory back-end work driven by Samsung Electronics' HBM production expansion. Quarterly revenue has broadly recovered sequentially since 3Q25, but operating results remained in the red for five straight quarters from 2Q25 through 2Q26. A sell-side forecast for a return to operating profit in 1Q26 diverged from actual results, and recent reports have shifted focus to a low-first-half, high-second-half pattern and potential improvement later in the year. On the financial side, stability has been maintained, with a steadily declining debt ratio and sustained positive operating cash flow. On the other hand, high dependence on Samsung Electronics and the memory segment, along with multi-year earnings volatility, remain ongoing challenges. Third-quarter results and the pace of revenue contribution from the Philippine plant are likely to be the key variables determining whether profitability normalizes going forward."
+   "ko": "SFA반도체는 삼성전자의 범용 메모리 외주 확대라는 뚜렷한 구조 변화의 중심에 있다. 분기 매출은 이미 회복 흐름을 보이고 있으며, 필리핀 DDR5 생산능력 확대 일정도 구체적으로 제시돼 있다. 그러나 공시 실적은 5개 분기 연속 영업손실이며, 2026년 초 흑자 전환 전망은 실현되지 않았다. 대규모 필리핀 대여로 재무 여력의 일부가 한 사업장에 집중됐고, 2025년 영업활동 현금흐름도 약했다. 주가는 순자산 대비 큰 프리미엄 구간에서 2027년 이익 회복 추정을 반영하고 있어, 2026년 11월 3분기 실적과 필리핀 1단계 가동이 첫 검증 지점이 된다. 이 리포트는 정보 제공을 목적으로 하며, 투자 판단은 독자의 몫이다.",
+   "en": "SFA Semicon sits at the center of a clear structural shift: Samsung Electronics' expanded outsourcing of commodity memory. Quarterly revenue is already recovering, and a concrete schedule for expanding Philippine DDR5 capacity has been laid out. However, reported results show five consecutive quarterly operating losses, and the early-2026 turnaround forecast did not materialize. The large Philippine loans have concentrated part of the company's financial capacity in a single site, and 2025 operating cash flow was weak. The shares reflect 2027 recovery estimates at a large premium to net assets, making the Q3 results and phase-one Philippine start in November 2026 the first verification points. This report is intended for informational purposes; investment decisions are left to the reader."
   }
  },
  "sources": [
-  "https://alphasquare.co.kr/home/stock-summary?code=036540",
-  "https://www.investing.com/equities/sfa-semicon-co-ltd-earnings",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=036540",
-  "https://littlebproject.com/stock/036540",
-  "https://m.irgo.co.kr/IR-ROOM/036540",
-  "https://news.nate.com/view/20260504n23803",
-  "https://linkareer.com/stem-community/stem-employment/6217213",
-  "https://www.investing.com/equities/sfa-semicon-co-ltd",
-  "https://www.newspim.com/news/view/20260213000144",
-  "https://theviewers.co.kr/View.aspx?No=3195783",
-  "https://www.leadeconomy.co.kr/news/articleView.html?idxno=6554",
-  "https://plus.hankyung.com/apps/newsinside.view?aid=202604281775a&category=&sns=y",
-  "https://www.cbci.co.kr/news/articleView.html?idxno=602756",
-  "https://www.kfenews.co.kr/news/articleView.html?idxno=653627",
-  "https://www.finomy.com/news/articleView.html?idxno=250828",
+  "https://www.job-post.co.kr/news/articleView.html?idxno=231727",
+  "https://news.nate.com/view/20260331n40512",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=YA3rnrN3NASEcXRW",
   "https://www.judal.co.kr/?view=stockAI&shareToken=hz3cuahM0z4YR232",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=ORoC7YCumMqL3b9c",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=YA3rnrN3NASEcXRW"
+  "https://www.judal.co.kr/?view=stockAI&shareToken=ders9MrMbINrfqik",
+  "https://www.newspim.com/news/view/20260213000144",
+  "https://judal.co.kr/?shareToken=eCJaB3YXX3a4dhco&view=stockAI",
+  "https://m.thinkpool.com/stockDiscuss/036540/cont/11835245",
+  "https://www.bosoop.com/6ff14ff0-d568-4855-bf37-05756e8bec7e/",
+  "https://www.butler.works/ko/companies/00301246",
+  "https://www.thinkpool.com/item/036540/news/16411722",
+  "http://www.dailyinvest.kr/news/articleView.html?idxno=62580",
+  "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-3%EB%B6%84%EA%B8%B0-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C",
+  "https://m.news.nate.com/view/20250818n03443?mid=m02&list=recent&cpcd=",
+  "https://www.leadeconomy.co.kr/news/articleView.html?idxno=9879",
+  "https://news.nate.com/view/20260213n07699",
+  "https://m.thinkpool.com/stockDiscuss/036540/cont/11765111"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-opus-5-5",
  "ticker": "036540",
  "name": "SFA반도체",
  "name_en": "SFA Semicon Co., Ltd",
@@ -223,11 +233,11 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 06:37",
- "dataDate": "20260904",
+ "reportDate": "2026-10-13",
+ "reportTs": "2026-10-13 17:03",
+ "dataDate": "20261012",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-10-13",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -238,6 +248,7 @@
     "np_owner": -19130997781,
     "equity": 472827187628,
     "equity_owner": 472827187628,
+    "equity_nci": 0,
     "liab": 76627410257,
     "cfo": 5456325212,
     "eps_basic": null,
@@ -250,14 +261,15 @@
     "rev": 400482861805,
     "op": -31004226,
     "np": 20458863208,
-    "np_owner": 20458863208,
+    "np_owner": 21334708478,
     "equity": 497907590933,
     "equity_owner": 496754352174,
+    "equity_nci": 1153238759,
     "liab": 125578068973,
     "cfo": 53080396079,
     "eps_basic": 56,
     "opm": -0.0,
-    "roe": 4.1,
+    "roe": 4.3,
     "debt_ratio": 25.2
    },
    {
@@ -268,6 +280,7 @@
     "np_owner": -12714471146,
     "equity": 470160714693,
     "equity_owner": 448805326793,
+    "equity_nci": 21355387900,
     "liab": 139749351905,
     "cfo": 36015764547,
     "eps_basic": -78,
@@ -283,6 +296,7 @@
     "np_owner": 42897894040,
     "equity": 483917637617,
     "equity_owner": 455603848239,
+    "equity_nci": 28313789378,
     "liab": 190956704120,
     "cfo": 94908137157,
     "eps_basic": 262,
@@ -324,23 +338,29 @@
    }
   ],
   "valuation": {
-   "price": 5610,
-   "mcap": 0.9226,
+   "price": 10840,
+   "mcap": 1.7827,
    "shares": 164460303,
    "total_shares": 164460303,
    "wavg_shares": 166552680,
    "per": null,
    "eps": -63,
-   "pbr": 1.9472,
+   "pbr": 3.7626,
    "bps": 2881,
    "roe_ttm": -2.2,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": -10368754902,
-   "pbr_krx": 1.93,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "순이익÷주식수",
+   "pbr_krx": 3.76,
    "bps_krx": 2884.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
  }
 }

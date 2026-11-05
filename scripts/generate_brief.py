@@ -42,6 +42,7 @@ import time
 from pathlib import Path
 
 import number_spacing       # 금액 표기 통일(79조3,187억원 → 79조 3,187억원)
+from model_params import thinking_off   # 모델마다 다른 '사고 끔' 설정
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "data" / "briefs"
@@ -61,9 +62,12 @@ EFFORT = {"claude-opus-5-5": "medium"}
 MAX_TOKENS = int(os.getenv("BRIEF_MAX_TOKENS", "24000"))
 # 1차 글이 검사에 걸렸을 때 그 자리만 고치는 모델. 글 전체를 Opus 로 다시
 # 쓰면 $0.31, 걸린 자리만 Sonnet 으로 고치면 $0.05 안팎이다.
-REPAIR_MODEL = os.getenv("BRIEF_REPAIR_MODEL", "claude-sonnet-5")
+# 2026-10-27 Sonnet 5 → Sonnet 5.5(사장 "소넷 5.5 사용해" · 단가 같음 · 캐시 읽기 절반).
+REPAIR_MODEL = os.getenv("BRIEF_REPAIR_MODEL", "claude-sonnet-5-5")
 # 사고(thinking)는 켜지 않는다. 편집이라 필요 없고, 9/21 시험에서 사고 토큰이
-# 한도 8,000 을 먹어 답이 잘리고 $0.14 가 나갔다. 한도는 넉넉히 — 쓴 만큼만 낸다.
+# 한도 8,000 을 먹어 답이 잘리고 $0.14 가 나갔다. 끄는 법은 모델마다 다르다 —
+# Sonnet 5.5 는 disabled 가 400 이라 between_tools(model_params.thinking_off).
+# 한도는 넉넉히 — 쓴 만큼만 낸다.
 REPAIR_MAX_TOKENS = 16000
 USE_BATCH = os.getenv("BRIEF_USE_BATCH", "") == "1"
 BATCH_CUTOFF = int(os.getenv("BRIEF_BATCH_CUTOFF", "2400"))
@@ -79,6 +83,7 @@ PRICES = {
     "claude-opus-5-5": (4.0, 20.0),     # 2026-10-08 요금표 — Opus 5 보다 20% 낮다
     "claude-opus-5": (5.0, 25.0),
     "claude-opus-4-8": (5.0, 25.0),
+    "claude-sonnet-5-5": (2.0, 10.0),   # 2026-10-27 요금표 — Sonnet 5 와 같다(캐시 읽기만 절반)
     "claude-sonnet-5": (2.0, 10.0),     # 9/21 요금표 확인 — 출시 특가 $2/$10 이 정식 요금이 됐다
     "claude-sonnet-4-6": (3.0, 15.0),
     "claude-haiku-4-5": (1.0, 5.0),
@@ -1317,11 +1322,12 @@ def repair(cl, brief, reasons):
     돌려주는 것: (고친 자리 수, usage). 0 이면 부르는 쪽이 포기한다.
     """
     prompt, allowed = _repair_prompt(brief, reasons)
-    # 사고는 끈다. Sonnet 5 는 thinking 을 비워 두면 사고가 *켜진다* — 9/21 시험에서
+    # 사고는 끈다. Sonnet 5 이후는 thinking 을 비워 두면 사고가 *켜진다* — 9/21 시험에서
     # 출력 7,745 토큰 중 고친 글은 2,000 남짓이고 나머지가 사고였다. 옮기고 줄이는
-    # 일이라 사고 없이 된다. 출력 틀(output_config.format)은 JSON 밖의 글을 막는다.
+    # 일이라 사고 없이 된다. 끄는 법은 모델마다 다르다(Sonnet 5.5 는 between_tools —
+    # disabled 는 400). 출력 틀(output_config.format)은 JSON 밖의 글을 막는다.
     params = dict(model=REPAIR_MODEL, max_tokens=REPAIR_MAX_TOKENS,
-                  thinking={"type": "disabled"},
+                  **thinking_off(REPAIR_MODEL),
                   messages=[{"role": "user", "content": prompt}])
     try:
         msg = cl.messages.create(output_config={"format": {

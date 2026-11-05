@@ -1,230 +1,220 @@
 {
  "title": {
-  "ko": "이익 회복 속 상장유지 리스크 공존",
-  "en": "Profit Recovery Amid Listing Risk"
+  "ko": "건강식품 둔화 속 AI 기업 인수로 재편",
+  "en": "Health food slowdown, AI acquisition reshapes CXI"
  },
  "lead": {
-  "ko": "매출은 4년째 축소되는 가운데 2024년 일회성 이익으로 순이익이 급증했다가 2025년 정상화됐고, 회사는 감자·증자·신사업 다각화로 코스닥 상장유지에 총력을 기울이고 있다.",
-  "en": "Revenue has contracted for four straight years while net profit spiked in 2024 on one-off gains before normalizing in 2025, as the company pursues capital restructuring and new businesses to defend its KOSDAQ listing."
+  "ko": "씨엑스아이는 중국 건강식품 사업의 매출과 이익이 줄어드는 가운데, 2026년 10월 13일 AIDT Technologies 지분 55%를 606억원에 양수하기로 결정하며 사업 구조 전환에 나섰다.",
+  "en": "As revenue and profit at its China health food business shrink, CXI Healthcare Technology Group decided on October 13, 2026 to acquire a 55% stake in AIDT Technologies for about KRW 60.6 billion, moving to reshape its business mix."
  },
  "keypoints": [
   {
-   "ko": "2022~2025년 연간 매출이 1,102억원→762억원→762억원→600억원으로 지속 감소했다.",
-   "en": "Annual revenue kept declining from KRW 110.2bn in 2022 to KRW 76.2bn in 2023, KRW 76.2bn in 2024 and KRW 60.0bn in 2025."
+   "ko": "연간 매출은 2022년 1,081억원에서 2025년 589억원(원화 환산)으로 줄었고, 영업이익은 2024년 203억원에서 2025년 99.5억원으로 51.0% 감소했다.",
+   "en": "Annual revenue fell from KRW 108.1 billion in 2022 to KRW 58.9 billion in 2025 (converted to KRW), and operating profit dropped 51.0% from KRW 20.3 billion in 2024 to KRW 9.95 billion in 2025."
   },
   {
-   "ko": "부채비율이 2022년 2.2%에서 2025년 0.5%까지 낮아지며 재무구조는 매우 견조하다.",
-   "en": "The debt ratio fell from 2.2% in 2022 to 0.5% in 2025, indicating a very lean balance sheet."
+   "ko": "2025년 2분기 영업손실 36.8억원을 저점으로 3분기에 흑자 전환했고, 4분기 영업이익은 77.4억원으로 회복했으나 전년 동기 대비로는 51.3% 감소한 수준이다.",
+   "en": "After an operating loss of KRW 3.68 billion in the second quarter of 2025, the company returned to profit in the third quarter, and fourth-quarter operating profit recovered to KRW 7.74 billion, still 51.3% below the year-earlier quarter."
   },
   {
-   "ko": "2025년 2분기 영업손실(-37억원)을 겪었으나 4분기에는 다시 영업이익 79억원으로 반등하는 등 분기별 변동성이 크다.",
-   "en": "The company posted an operating loss of about KRW 3.7bn in 2025Q2 but rebounded to roughly KRW 7.9bn operating profit in 2025Q4, showing large quarter-to-quarter swings."
+   "ko": "2025년 말 부채비율은 0.5%, 자본총계는 5,154억원, 부채총계는 26.6억원이고 2025년 영업활동 현금흐름은 422억원이다.",
+   "en": "At the end of 2025 the debt ratio was 0.5%, with total equity of KRW 515.4 billion against total liabilities of KRW 2.66 billion, and 2025 operating cash flow was KRW 42.2 billion."
   },
   {
-   "ko": "건강식품 중심 사업에서 화장품 유통, AI 헬스케어(병원 AI 진단시스템)로 사업 다각화를 추진 중이다.",
-   "en": "The company is diversifying beyond its core health-food business into cosmetics distribution and AI healthcare, including hospital AI diagnostic systems."
+   "ko": "2026년 10월 8일 공시된 잠정 실적(외부감사 전 내부결산)에서 2026년 6월 종료 사업연도 연결 영업이익은 약 29.9억원으로 69.3% 감소했고 매출은 약 494.8억원으로 14.2% 감소했다.",
+   "en": "In preliminary results disclosed on October 8, 2026 (internal pre-audit accounts), consolidated operating profit for the fiscal year ended June 2026 was about KRW 2.99 billion, down 69.3%, and revenue was about KRW 49.5 billion, down 14.2%."
   },
   {
-   "ko": "코스닥 동전주·시가총액 상장폐지 요건 강화에 대응해 감자·주식병합과 대규모 제3자배정 증자를 반복적으로 진행했다.",
-   "en": "The firm has repeatedly carried out capital reductions, share consolidations and large third-party share placements in response to tightened KOSDAQ delisting rules for low-priced, small-cap stocks."
+   "ko": "AIDT 인수대금 4,537만 5,000달러 가운데 660만달러는 자회사 차입, 나머지 3,877만 5,000달러는 자기자금으로 조달한다고 2026년 10월 22일 정정 공시했다.",
+   "en": "In a corrected filing on October 22, 2026, the company said USD 6.6 million of the USD 45.375 million AIDT purchase price would be borrowed from a subsidiary and the remaining USD 38.775 million funded from its own cash."
   }
  ],
  "business": {
-  "ko": "씨엑스아이는 케이맨제도에 설립된 지주회사로, 2010년 코스닥에 상장된 중국계 기업이다. 복건금산대도 유한공사 등 9개 계열사를 지배하며, 중국에서 충초·금선련 등 건강식품을 생산·판매해왔다. 주요 제품은 충초, 금선련, 종용, 쇄양과 같은 건강식품과 무이산차와 같은 선물세트 등이다. 수출입 전문 자회사와 온라인 마케팅 자회사를 통해 유통채널을 다변화하고 신규 브랜드 유통을 확대해왔다. 최근에는 국내 화장품 제조사 코빅스의 'Answer Garden' 브랜드에 대한 중국 총판 계약을 체결해 앰플·토너·폼클렌저 등 15종 제품을 중국에서 유통하기 시작했으며, K-인디 브랜드 발굴을 화장품 사업부의 새 전략으로 삼고 있다. 동시에 자회사를 통해 베이징 소재 의료기술 기업과 병원용 AI 진단시스템 기술지원 공급계약을 체결하고, 중국 AI 데이터 기업에는 AI 학습용 데이터 구축 사업 협력을 위한 투자의향서를 전달하며 AI 헬스케어 영역으로 사업 범위를 넓히고 있다. 이처럼 회사는 전통적인 건강식품 제조·유통업에서 화장품 유통과 AI 헬스케어까지 포괄하는 다각화 전략을 취하고 있다. 경쟁구도 측면에서는 중국 내 건강식품 시장의 다수 로컬·글로벌 브랜드와 경쟁해야 하며, 화장품·AI 헬스케어 부문은 아직 초기 단계로 매출 기여도가 제한적인 것으로 판단된다.",
-  "en": "CXI is a Cayman Islands holding company listed on KOSDAQ since 2010 and classified as a China-based issuer. It controls nine affiliates including Fujian Jinshandadao Co., and has historically produced and sold health foods such as Chinese caterpillar fungus, Cynomorium and other tonics in China. Its core products include several health-food items and gift sets such as Wuyi tea sets. The company has diversified distribution channels through import-export and online-marketing subsidiaries to expand new brand distribution. More recently, it signed a China distribution agreement for the domestic cosmetics maker Kobix's 'Answer Garden' brand, covering fifteen products such as ampoules, toners and foam cleansers, and has made sourcing K-indie beauty brands a new strategy for its cosmetics division. At the same time, a subsidiary signed a technical-support supply contract for a hospital AI diagnostic system with a Beijing-based medical technology firm, and the company delivered a letter of intent to a Chinese AI data firm to cooperate on AI training-data infrastructure, extending its reach into AI healthcare. Overall, the company is shifting from a traditional health-food manufacturing and distribution model toward a more diversified portfolio spanning cosmetics distribution and AI healthcare. It competes against numerous local and global brands in China's health-food market, while the cosmetics and AI healthcare businesses remain at an early stage with limited revenue contribution so far."
+  "ko": "씨엑스아이는 2009년 2월 설립되어 중국에서 건강식품을 생산·판매하는 회사이다. 케이맨제도에 설립된 지주회사로, 코스닥에 상장된 중국계 기업이며 9개 계열사를 지배한다. 옛 사명은 CKH Food & Health였고 2023년 10월 현재 사명으로 바꿨다. 한약재를 기반으로 영생활력 브랜드를 통해 캡슐, 정제, 과립, 차 형태의 건강기능식품을 제조·판매한다. 동충하초와 찻잎 같은 원재료 유통을 자체 운영해 품질 제고와 원가 절감을 추구한다. 판매는 징동닷컴, 티몰글로벌, 더우인 등 온라인 쇼핑몰이 중심이다. 화장품 사업은 TUNEMAKERS 브랜드 스킨케어 제품 판매 계약에 더해, 2025년 10월 국내 제조사의 앤서가든 브랜드 15종을 중국에서 유통하는 총판계약으로 넓혔다. 2026년 7월에는 자회사를 통해 3,379만위안(약 73억원) 규모의 병원 AI 진단시스템 기술지원 서비스 공급계약을 체결했다. 부문별 매출 비중은 확인된 자료가 없어 수치로 쓰지 않으며, 공시 포털에는 업종이 기타 금융업으로 표기되나 실제 사업은 건강식품 중심이다.",
+  "en": "CXI Healthcare Technology Group was founded in February 2009 and produces and sells health food in China. It is a Cayman Islands holding company listed on KOSDAQ that controls nine affiliates. It was formerly called CKH Food & Health and adopted its current name in October 2023. Its core business makes traditional-medicine-based supplements in capsule, tablet, granule and tea forms under the Yongsheng Huoli brand. It runs raw-material distribution for ingredients such as cordyceps and tea leaves in-house to support quality and cost control. Sales are centered on online platforms including JD.com, Tmall Global and Douyin. In cosmetics it sells the TUNEMAKERS skincare brand and, in October 2025, signed a distribution contract to sell 15 products of the Korean brand Answer Garden in China. In July 2026 a subsidiary signed a hospital AI diagnostic-system technical support contract worth CNY 33.79 million (about KRW 7.3 billion). Segment revenue shares could not be verified, so no figures are given, and although disclosure portals classify the company as other financial services, its actual operations are centered on health food."
  },
  "earnings": {
-  "ko": "연간 매출은 2022년 1,101억 6,566만원에서 2023년 761억 8,363만원, 2024년 761억 6,336만원, 2025년 600억 1,589만원으로 4년 연속 축소됐다. 영업이익률은 2022년 6.2%, 2023년 10.0%, 2024년 27.2%로 크게 개선됐다가 2025년 16.9%로 낮아졌는데, 2024년의 급격한 마진 개선은 매출 감소 속에서도 비용 통제와 일회성 이익이 반영된 결과로 해석된다. 지배주주 순이익은 2022년 65억원, 2023년 80억원에서 2024년 322억원으로 급증한 뒤 2025년 133억원으로 정상화됐다. 분기별로 보면 2024년 4분기 지배주주 순이익이 231억원에 달해 연간 실적을 크게 끌어올렸으며, 이는 자산 매각이나 지분 평가이익 등 비반복적 요인이 반영됐을 가능성을 시사한다. 2025년 들어서는 1분기 49억원 순이익에서 2분기 -38억원 순손실로 전환됐다가, 3분기 15억원, 4분기 107억원으로 재차 반등하는 등 분기별 변동성이 매우 크다. 이 같은 등락은 매출 인식 시점이 특정 계약이나 일회성 항목에 좌우되는 사업 구조와 관련이 있는 것으로 보인다. 반면 재무건전성은 꾸준히 강화돼 부채총계가 2022년 94억 6,324만원에서 2025년 27억 70만원까지 줄었고, 부채비율은 2.2%에서 0.5%로 하락했다. 자본총계는 2022년 4,390억원에서 2025년 5,251억원으로 늘어 이익 축적과 유상증자 효과가 함께 반영된 것으로 보인다.",
-  "en": "Annual revenue fell for four straight years, from KRW 110.17bn in 2022 to KRW 76.18bn in 2023, KRW 76.16bn in 2024 and KRW 60.02bn in 2025. The operating margin improved sharply from 6.2% in 2022 to 10.0% in 2023 and 27.2% in 2024 before easing to 16.9% in 2025; the 2024 margin surge appears to reflect both cost discipline and one-off gains even as revenue declined. Net profit attributable to owners jumped from KRW 6.5bn in 2022 and KRW 8.0bn in 2023 to KRW 32.2bn in 2024, before normalizing to KRW 13.3bn in 2025. On a quarterly basis, owners' net profit reached KRW 23.1bn in 2024Q4 alone, lifting the full-year figure and suggesting the presence of non-recurring items such as asset sales or valuation gains. Through 2025, owners' net profit swung from KRW 4.9bn in Q1 to a loss of about KRW 3.8bn in Q2, then back to KRW 1.5bn in Q3 and KRW 10.7bn in Q4, underscoring significant quarter-to-quarter volatility. This pattern appears tied to a business structure where revenue recognition is sensitive to specific contracts or one-off items. Meanwhile, balance-sheet health has steadily strengthened, with total liabilities falling from KRW 9.46bn in 2022 to KRW 2.71bn in 2025 and the debt ratio dropping from 2.2% to 0.5%. Total equity rose from KRW 439.1bn in 2022 to KRW 525.2bn in 2025, reflecting both retained earnings and the effect of share issuances."
+  "ko": "연간 매출은 2022년 1,081억원에서 2023년 748억원(전년 대비 30.8% 감소), 2024년 747억원(전년 대비 변동 없음), 2025년 589억원(전년 대비 21.2% 감소)으로 이어져 2023년부터 2025년까지 3년 연속 감소했다(모두 원화 환산). 영업이익은 2022년 67.1억원, 2023년 74.5억원, 2024년 203억원, 2025년 99.5억원으로, 2024년이 2022~2025년 중 가장 크고 2025년은 전년 대비 51.0% 감소했다. 영업이익률은 6.2%, 10.0%, 27.2%, 16.9%로 움직였는데, 2024년에는 매출이 거의 같았는데도 영업이익이 172.7% 증가해 마진이 이익 증가를 이끌었고 2025년에는 매출 감소와 함께 마진이 줄었다. 지배주주 순이익은 63.8억원, 78.6억원, 316억원, 130억원이며 2025년은 전년 대비 58.8% 감소했다. 2024년과 2025년 모두 지배주주 순이익이 영업이익보다 큰데, 그 차이의 구성은 공시 실적만으로 확인되지 않는다. 분기로 보면 2024년 4분기 매출 277억원, 영업이익 159억원에서 2025년 1분기 매출 167억원, 영업이익 49.4억원으로 내려갔고, 2분기에는 매출 73.5억원에 영업손실 36.8억원과 지배주주 순손실 37.6억원을 기록했다. 3분기에는 매출 151억원, 영업이익 9.5억원으로 흑자 전환했고 4분기에는 매출 197억원, 영업이익 77.4억원, 지배주주 순이익 105억원으로 3분기부터 2개 분기 연속 매출이 증가했으나, 4분기 매출과 영업이익은 전년 동기 대비 각각 28.7%, 51.3% 감소했다. 영업활동 현금흐름은 2022년 370억원, 2023년 346억원, 2024년 455억원, 2025년 422억원으로 2025년 지배주주 순이익 130억원을 크게 웃돌았다. 잠정 실적은 별도다. 2026년 10월 8일 내부결산으로 공시된 2025년 7월~2026년 6월 연결 실적은 영업이익 약 29.9억원(69.3% 감소), 매출 약 494.8억원(14.2% 감소), 당기순이익 약 80.7억원(36.7% 감소)이며, 주요 종속회사 영생활력의 매출과 이익 감소가 주요 원인으로 기재됐다. 2026년 10월 28일 주주총회 공시에서는 연결재무제표 감사의견이 적정으로 보고됐다. 다만 이 수치는 정기보고서가 아니며, 위 연간 표와는 원화 환산 기준이 달라 직접 비교하지 않는다.",
+  "en": "Annual revenue went from KRW 108.1 billion in 2022 to KRW 74.8 billion in 2023 (down 30.8%), KRW 74.7 billion in 2024 (unchanged year on year) and KRW 58.9 billion in 2025 (down 21.2%), a decline in each year from 2023 through 2025 (all converted to KRW). Operating profit was KRW 6.71 billion in 2022, KRW 7.45 billion in 2023, KRW 20.3 billion in 2024 and KRW 9.95 billion in 2025; 2024 was the largest year of 2022-2025, and 2025 was down 51.0% year on year. The operating margin moved from 6.2% to 10.0%, 27.2% and 16.9%; in 2024 revenue was flat yet operating profit rose 172.7%, so margin drove the gain, while in 2025 the margin narrowed alongside lower revenue. Net income attributable to controlling shareholders was KRW 6.38 billion, KRW 7.86 billion, KRW 31.6 billion and KRW 13 billion, with 2025 down 58.8%. In both 2024 and 2025 that figure exceeded operating profit, and the composition of the gap cannot be determined from the reported figures alone. By quarter, revenue was KRW 27.7 billion and operating profit KRW 15.9 billion in the fourth quarter of 2024, falling to KRW 16.7 billion and KRW 4.94 billion in the first quarter of 2025. The second quarter brought revenue of KRW 7.35 billion, an operating loss of KRW 3.68 billion and a net loss attributable to controlling shareholders of KRW 3.76 billion. The third quarter returned to profit with revenue of KRW 15.1 billion and operating profit of KRW 0.95 billion, and the fourth quarter posted revenue of KRW 19.7 billion, operating profit of KRW 7.74 billion and net income attributable to controlling shareholders of KRW 10.5 billion, so revenue rose in two consecutive quarters from the third quarter, though fourth-quarter revenue and operating profit were still 28.7% and 51.3% below the year-earlier quarter. Operating cash flow was KRW 37 billion in 2022, KRW 34.6 billion in 2023, KRW 45.5 billion in 2024 and KRW 42.2 billion in 2025, well above 2025 net income attributable to controlling shareholders of KRW 13 billion. Preliminary figures are separate: in internal accounts disclosed on October 8, 2026, consolidated results for July 2025 through June 2026 showed operating profit of about KRW 2.99 billion (down 69.3%), revenue of about KRW 49.5 billion (down 14.2%) and net income of about KRW 8.07 billion (down 36.7%), with lower revenue and profit at the main subsidiary Yongsheng Huoli cited as the main cause. A shareholder-meeting disclosure on October 28, 2026 reported an unqualified audit opinion on the consolidated statements. These figures are not from a periodic report, and because the currency conversion basis differs from the annual figures above, they are not compared directly."
  },
  "industry": {
-  "ko": "중국 건강식품 시장은 다수의 로컬 브랜드와 글로벌 기업이 경쟁하는 성숙 시장으로, 회사의 매출이 여러 해에 걸쳐 축소된 배경에는 시장 성장 정체와 경쟁 심화가 영향을 미친 것으로 판단된다. 반면 중국 화장품 시장에서는 K-뷰티, 특히 K-인디 브랜드에 대한 관심이 이어지고 있어, 회사가 국내 중소 화장품 브랜드의 중국 유통을 대행하는 전략을 취하는 배경이 된다. AI 헬스케어 분야에서는 중국 의료기관들이 진단 효율성과 서비스 접근성을 높이기 위해 AI·데이터 기술 도입을 확대하는 추세로, 회사는 이 흐름에 맞춰 병원용 AI 진단시스템 공급을 첫 사업화 단계로 진행했다. 다만 해당 계약 규모는 최근 연간 매출의 약 10% 수준으로 알려져 있어, 기존 건강식품 사업을 대체하기보다는 보완하는 성격이 강하다. 코스닥 시장 자체적으로는 2026년 7월 1일부터 시가총액 상장폐지 기준이 200억원으로 상향되고 주가 1,000원 미만 동전주에 대한 별도 상장폐지 요건이 도입되는 등 소형주에 대한 규제가 강화됐다. 이는 회사와 유사한 소형 코스닥 상장사, 특히 중국계 기업 전반에 자본정책 대응 부담을 가중시키는 산업적 배경으로 작용하고 있다.",
-  "en": "China's health-food market is a mature arena with intense competition from numerous local brands and global players, and the market's slowing growth combined with heightened competition appears to be a key factor behind the company's multi-year revenue decline. In cosmetics, however, interest in K-beauty and particularly K-indie brands remains strong in China, which underpins the company's strategy of acting as a China distribution partner for smaller Korean cosmetics brands. In AI healthcare, Chinese medical institutions are increasingly adopting AI and data technologies to improve diagnostic efficiency and service accessibility, and the company has taken its first commercialization step in this area by supplying a hospital AI diagnostic system. That said, the disclosed contract size is reported at roughly 10% of the company's recent annual revenue, suggesting it is complementary to, rather than a replacement for, the core health-food business. At the exchange level, KOSDAQ regulation for small-cap stocks has tightened, with the market-cap delisting threshold raised to KRW 20bn and a separate delisting rule introduced for stocks trading below KRW 1,000, both effective from July 1, 2026. This regulatory backdrop adds capital-policy pressure not only on this company but on small-cap KOSDAQ issuers broadly, including other China-linked names."
+  "ko": "중국 건강기능식품 시장의 규모와 성장률은 신뢰할 만한 출처에서 확인하지 못해 수치로 쓰지 않는다. 회사의 판매 구조를 보면 징동닷컴, 티몰글로벌, 더우인 등 온라인 쇼핑몰 의존도가 높아 플랫폼 채널의 경쟁과 소비 흐름에 민감한 구조로 볼 수 있다. 2026년 6월 종료 사업연도에는 주요 종속회사 영생활력의 매출과 이익 감소가 실적 변동의 주요 원인으로 공시돼, 핵심 건강식품 사업의 업황이 부담으로 작용한 것으로 읽힌다. 회사는 일반식품 형태로 제품을 다양화하기 위한 연구개발을 진행 중이며 화장품 쪽에서는 한국의 인디 브랜드를 중국에 들여오는 방식으로 라인업을 넓히고 있다. 동종 업계 비교 자료는 제한적이고, 같은 금융 업종으로 분류된 KB금융 같은 상장사들과는 사업 성격이 달라 직접 비교 대상이 아니다. 새로 진출하는 AI 분야에서는 AIDT Technologies가 데이터 수집·가공부터 AI 모델 훈련, 산업별 응용서비스까지 잇는 Data-to-AI 밸류체인 기반의 버티컬 AI 솔루션을 제공하는 구조이다. 외부평가기관은 AIDT 연결 매출이 2027년 약 5,207만달러까지 늘고 2029년까지 연평균 약 40% 성장을 유지할 것으로 추정했는데, 이는 외부 추정이며 실제 성과로 확인된 값이 아니다.",
+  "en": "Size and growth statistics for China's health supplement market could not be verified from reliable sources, so none are given. The company's sales structure relies heavily on online platforms such as JD.com, Tmall Global and Douyin, which leaves it sensitive to platform competition and consumer trends. For the fiscal year ended June 2026, lower revenue and profit at the main subsidiary Yongsheng Huoli were cited as the main cause of the earnings change, which suggests the core health food business weighed on results. The company is running research and development to diversify into general food formats, and in cosmetics it is widening its lineup by bringing Korean indie brands into China. Comparable peer data is limited, and listed companies in the same financial classification, such as KB Financial Group, differ in business nature and are not direct comparisons. In its new AI area, AIDT Technologies offers vertical AI solutions built on a Data-to-AI value chain that links data collection and processing, model training and industry-specific applications. An external valuation firm estimated that AIDT consolidated revenue would rise to about USD 52.07 million in 2027 and keep growing at roughly 40% a year through 2029, but this is an outside estimate, not a confirmed result."
  },
  "outlook": {
-  "ko": "회사는 상장유지와 기업가치 제고를 위해 수익성 중심 경영 강화, 핵심 사업 경쟁력 확대, 신규 성장동력 확보, 재무 건전성 및 경영 효율성 개선 등을 추진 방향으로 제시했다. 신규 성장동력으로는 화장품 유통과 AI 헬스케어 사업이 핵심으로 꼽히며, 병원 AI 진단시스템 공급계약은 2026년 7월 27일부터 2027년 7월 26일까지 1년간 수행되며 실제 이용 건수에 따라 분기별로 정산될 예정이다. 회사는 이 계약을 통해 확보한 레퍼런스를 바탕으로 후속 고객을 확보하고 AI 기반 헬스케어 사업을 단계적으로 확대할 계획이라고 밝혔다. 아울러 중국 AI 데이터 기업 H&P 인터내셔널에 투자의향서를 전달하며 AI 학습용 데이터 구축 사업 및 향후 기업용 AI 구축 사업으로의 협력 확대를 검토하고 있다고 밝혔다. 화장품 부문에서는 'Answer Garden' 외에도 다수의 K-인디 브랜드와 중국 시장 진출 협의를 진행 중이며, 연내 추가 브랜드 라인업 확대를 기대하고 있다고 설명했다. 최대주주인 린진성 대표는 2026년 3월과 6월 유상증자, 이어 7월 480억원 규모 제3자배정 유상증자에 잇따라 참여하며 누적 약 300억원을 투입했고, 유입 자금은 건강기능식품·화장품 부문 신제품 연구개발과 핵심 인력 확충에 투입할 계획이라고 밝혔다. 다만 이러한 자본정책이 실제 매출 성장이나 이익 개선으로 이어질지는 후속 공시와 분기 실적을 통해 확인이 필요하다.",
-  "en": "To defend its listing and enhance corporate value, the company has outlined a plan centered on profitability-focused management, strengthening its core business competitiveness, securing new growth drivers, and improving financial soundness and operating efficiency. Cosmetics distribution and AI healthcare are cited as the key new growth drivers, with the hospital AI diagnostic system supply contract running for one year from July 27, 2026 to July 26, 2027 and being settled quarterly based on actual usage. The company said it plans to use the reference built through this contract to secure follow-on customers and gradually expand its AI-based healthcare business. It has also delivered a letter of intent to Chinese AI data firm H&P International, saying it is reviewing expanded cooperation on AI training-data infrastructure and, eventually, enterprise AI-building services. In cosmetics, beyond 'Answer Garden' the company said it is in talks with multiple K-indie brands for entry into the Chinese market and expects to add more brands to its lineup within the year. Major shareholder and CEO Lin Jin Sheng participated in capital raises in March and June 2026 and then in a KRW 48bn third-party placement in July 2026, cumulatively injecting roughly KRW 30bn, with proceeds earmarked for R&D on new health-supplement and cosmetics products and for expanding core personnel. Whether these capital measures translate into actual revenue growth or profit improvement, however, will need to be confirmed through subsequent disclosures and quarterly results."
+  "ko": "회사가 제시한 정량 가이던스는 확인되지 않았고, 전망은 공시된 사업 이벤트를 기준으로 정리한다. AIDT Technologies 주식 2만 7,500주(지분 55%)를 606억원에 양수하기로 2026년 10월 13일 결정했고, 양수예정일은 2026년 10월 19일로 기재됐다. 이후 정정 공시에서 대금 조달 방식이 전액 자기자금에서 자회사 차입과 자기자금 혼합으로 바뀌어, 거래 완료 여부와 연결 편입 시점은 후속 공시로 확인해야 한다. 회사 설명에 따르면 AIDT의 2026년 상반기(1~6월) 매출은 3,697만달러(약 536억원), 영업이익은 724만달러(약 105억원)이다. 외부평가에서 현금흐름할인법으로 추정한 주당 가치는 1,618~1,950달러이고 거래 단가는 주당 1,650달러로 평가 범위 안에 있다. 자본정책으로는 액면가액 0.5달러를 0.1달러로 낮추는 감자를 재무구조 개선과 주주환원정책 기반 마련을 이유로 결정했고, 보통주 5대 1 주식병합도 진행했다. 액면병합에 따른 변경상장으로 매매거래정지가 해제됐다는 공시가 2026년 10월 2일 등록됐다. 또한 최대주주 린진성을 대상으로 약 72억원 규모의 제3자배정 유상증자를 결정했다. 2026년 10월 28일 정기주총에서는 자회사 청산을 포함한 11개 안건이 모두 가결됐다.",
+  "en": "No quantitative company guidance was found, so the outlook rests on disclosed business events. On October 13, 2026 the company decided to buy 27,500 shares of AIDT Technologies (a 55% stake) for about KRW 60.6 billion, with a planned acquisition date of October 19, 2026. A later corrected filing changed the funding from entirely its own cash to a mix of a subsidiary loan and its own cash, so completion and the timing of consolidation need to be confirmed in follow-up filings. According to the company, AIDT posted first-half 2026 revenue of USD 36.97 million (about KRW 53.6 billion) and operating profit of USD 7.24 million (about KRW 10.5 billion). In the external valuation, the discounted cash flow estimate per share was USD 1,618 to USD 1,950, and the transaction price of USD 1,650 per share fell within that range. On capital policy, the company decided to cut par value from USD 0.5 to USD 0.1 citing balance sheet improvement and a base for shareholder returns, and it also carried out a 5-for-1 reverse share consolidation. A filing registered on October 2, 2026 reported that the trading halt was lifted following the listing change for the consolidated shares. It also decided on a roughly KRW 7.2 billion third-party rights offering directed at its largest shareholder, Lin Jinsheng. At the regular shareholder meeting on October 28, 2026, all 11 agenda items, including a subsidiary liquidation, were approved."
  },
  "valuation_comment": {
-  "ko": "회사의 자본총계는 최근까지 꾸준히 늘어난 반면, 현재 시가총액은 이에 비해 현저히 낮은 수준에 머물러 있어 순자산 대비 시가총액의 괴리가 큰 구간에 해당한다. 회사 측은 순자산 대비 시가총액이 낮은 수준으로 장기간 유지되어 왔다는 점을 공개적으로 언급한 바 있다. 다만 이는 회사의 자체 평가이며, 시장에서의 평가는 상장유지 불확실성, 반복적인 지분 희석, 중국계 기업에 대한 신뢰 이슈 등 다른 변수들과 함께 형성되고 있다는 점도 함께 고려할 필요가 있다. 최근 수년간 이익이 적자에서 흑자로 전환되고 다시 큰 폭의 순이익 증가와 정상화를 거친 궤적은 이 회사의 밸류에이션을 평가할 때 일회성 요인과 지속 가능한 이익을 구분해서 볼 필요성을 시사한다. 배당 관련 공시는 확인되지 않아 주주환원 정책의 구체적 방향은 아직 불투명하다.",
-  "en": "The company's total equity has grown steadily in recent years, while its current market capitalization remains markedly lower relative to that equity base, placing it in a range with a wide gap between net asset value and market value. The company itself has publicly noted that its market capitalization has remained low relative to its net asset value for an extended period. This is the company's own assessment, however, and the market's view appears to also reflect other variables such as listing-maintenance uncertainty, repeated share dilution, and trust issues associated with China-linked issuers. The trajectory of earnings moving from losses to profit, then to a sharp profit surge followed by normalization over recent years, suggests that any valuation assessment needs to separate one-off items from sustainable earnings power. No dividend-related disclosure has been identified, leaving the direction of shareholder return policy still unclear."
+  "ko": "주가는 2025년 말 자본총계에 비해 큰 폭으로 낮은 수준에서 거래되며, 순자산 대비 할인 폭이 매우 큰 구간이다. 이익 기준 배수는 2024년 이후 이익이 줄어든 데다 최근 분기 실적의 변동 폭이 커서 한 해 수치에 따라 크게 달라진다. 현금배당수익률은 집계상 0%로 표시돼 배당 면에서는 업종 평균을 밑도는 편이다. 낮은 부채비율과 순자산 규모는 재무 안정성의 근거이나, 순자산 가운데 중국 자회사에 있는 자산을 지주회사가 어떻게 활용할 수 있는지는 별개의 확인 사항이다. 인수 대금 지출이 확정되면 순자산과 현금 구성이 달라질 수 있어 인수 완료 이후 재무제표가 밸류에이션 판단의 기준점이 된다.",
+  "en": "The share price trades far below the level implied by total equity at the end of 2025, which is a deep discount to net assets. Earnings-based multiples swing widely depending on the year chosen, because profit has declined since 2024 and recent quarterly results have been volatile. The cash dividend yield is shown as 0% in the data aggregator, below the sector average on the dividend dimension. The low debt ratio and large net assets support balance sheet stability, but how the holding company can use assets sitting in its China subsidiaries is a separate question to verify. Once the acquisition payment is finalized, net assets and the cash mix may change, so the financial statements after completion become the reference point for judging valuation."
  },
  "bull": [
   {
    "title": {
-    "ko": "매우 낮은 부채비율과 견조한 재무구조",
-    "en": "Very Low Leverage and a Solid Balance Sheet"
+    "ko": "무차입에 가까운 재무 구조",
+    "en": "Near debt-free balance sheet"
    },
    "body": {
-    "ko": "부채비율이 2022년 2.2%에서 2025년 0.5%까지 하락하며 사실상 무차입에 가까운 재무구조를 유지하고 있다. 같은 기간 자본총계는 4,390억원에서 5,251억원으로 늘어나 자기자본 기반이 지속적으로 확충됐다. 이는 신규 사업 투자나 자본정책 대응에 있어 재무적 여력을 제공하는 요인이다.",
-    "en": "The debt ratio dropped from 2.2% in 2022 to 0.5% in 2025, leaving the company with a near debt-free balance sheet. Over the same period total equity rose from KRW 439.1bn to KRW 525.2bn, steadily expanding its equity base. This provides financial flexibility to fund new business investments or capital-policy responses."
+    "ko": "부채비율은 2022년 2.2%에서 2025년 0.5%로 낮아졌고, 2025년 말 부채총계는 26.6억원으로 자본총계 5,154억원에 비해 미미하다. 영업활동 현금흐름은 2022~2025년 내내 346억원에서 455억원 사이를 유지했다. 이익이 줄어든 국면에서도 재무 부담이 크지 않다는 점이 확인된다.",
+    "en": "The debt ratio fell from 2.2% in 2022 to 0.5% in 2025, and total liabilities of KRW 2.66 billion at the end of 2025 are minimal against total equity of KRW 515.4 billion. Operating cash flow stayed between KRW 34.6 billion and KRW 45.5 billion throughout 2022-2025. Even as profit declined, financial burden has remained small."
    }
   },
   {
    "title": {
-    "ko": "건강식품 외 화장품·AI 헬스케어로 사업 다각화",
-    "en": "Diversification Beyond Health Food Into Cosmetics and AI Healthcare"
+    "ko": "분기 실적의 회복 흐름",
+    "en": "Quarterly recovery trend"
    },
    "body": {
-    "ko": "국내 화장품 브랜드의 중국 총판 계약 체결과 병원용 AI 진단시스템 공급계약 등 신사업이 구체적인 매출 창출 단계로 진입했다. AI 학습용 데이터 구축 사업에 대한 투자의향서 전달 등 추가 협력도 검토되고 있다. 기존 건강식품 사업의 매출 축소를 신사업으로 일부 상쇄할 잠재력이 있다.",
-    "en": "New businesses, including a China distribution deal for a Korean cosmetics brand and a hospital AI diagnostic system supply contract, have entered a concrete revenue-generating stage. Additional cooperation, such as a letter of intent for an AI training-data business, is also under review. These new businesses have the potential to partially offset the decline in the core health-food business."
+    "ko": "2025년 2분기 영업손실 36.8억원에서 3분기 흑자 전환(영업이익 9.5억원)을 거쳐 4분기 영업이익 77.4억원으로 올라섰다. 매출도 3분기와 4분기에 2개 분기 연속 증가해 4분기 197억원을 기록했다. 4분기 지배주주 순이익 105억원은 최근 4개 분기 합계 130억원의 대부분을 차지한다.",
+    "en": "Operating loss of KRW 3.68 billion in the second quarter of 2025 gave way to a return to profit in the third quarter (KRW 0.95 billion) and operating profit of KRW 7.74 billion in the fourth. Revenue also rose in two consecutive quarters, reaching KRW 19.7 billion in the fourth quarter. Fourth-quarter net income attributable to controlling shareholders of KRW 10.5 billion makes up most of the KRW 13 billion total for the last four quarters."
    }
   },
   {
    "title": {
-    "ko": "최대주주의 대규모·반복적 자금 투입",
-    "en": "Large, Repeated Capital Injections by the Major Shareholder"
+    "ko": "이익을 내는 AI 사업의 편입",
+    "en": "Adding a profitable AI business"
    },
    "body": {
-    "ko": "대표이사 린진성이 2026년 3월과 6월 유상증자, 7월 480억원 규모 제3자배정 증자에 잇따라 참여해 누적 약 300억원을 회사에 투입했다. 이를 통해 최대주주 지위를 확보하고 책임경영 의지를 보여주고 있다. 유입 자금은 R&D와 핵심 인력 확충에 투입될 계획이라고 회사는 설명했다.",
-    "en": "CEO Lin Jin Sheng has participated in successive capital raises—in March, June and a KRW 48bn third-party placement in July 2026—cumulatively injecting about KRW 30bn into the company. This has secured his position as major shareholder and signals a commitment to responsible management. The company said proceeds will be used for R&D and expanding core personnel."
+    "ko": "회사는 이미 매출과 이익을 내는 AI 기업의 경영권을 확보하는 점이 초기 단계 신사업과 다르다고 설명했다. AIDT의 2026년 상반기 매출과 영업이익은 전년 동기 대비 각각 93.5%, 144.0% 증가했고 영업이익률은 19.6%였다. 연결 편입이 이뤄지면 건강식품 사업의 부진을 일부 보완할 수 있는 구조다.",
+    "en": "The company stressed that it is taking control of an AI business that already generates revenue and profit, unlike an early-stage venture. AIDT's first-half 2026 revenue and operating profit rose 93.5% and 144.0% from a year earlier, and its operating margin was 19.6%. If consolidated, it could offset part of the weakness in the health food business."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "4년 연속 매출 축소",
-    "en": "Revenue Has Contracted for Four Straight Years"
+    "ko": "매출 감소와 마진 축소의 지속",
+    "en": "Persistent revenue decline and margin compression"
    },
    "body": {
-    "ko": "연간 매출은 2022년 1,102억원에서 2025년 600억원으로 꾸준히 줄었다. 핵심인 중국 건강식품 사업의 성장 정체가 주된 배경으로 판단된다. 신사업 매출 기여가 아직 제한적인 상황에서 매출 축소 추세가 이어질 경우 이익 기반이 약해질 수 있다.",
-    "en": "Annual revenue has steadily declined from KRW 110.2bn in 2022 to KRW 60.0bn in 2025, primarily reflecting stagnant growth in the core China health-food business. With new-business revenue contribution still limited, a continued revenue decline could weaken the earnings base."
+    "ko": "연간 매출은 2022년 1,081억원에서 2025년 589억원으로 줄었고 영업이익률은 2024년 27.2%에서 2025년 16.9%로 낮아졌다. 잠정 실적에서도 2026년 6월 종료 사업연도 영업이익이 69.3% 감소해 하락 흐름이 이어진 것으로 나타났다. 2025년 4분기가 전년 동기 대비 매출 28.7%, 영업이익 51.3% 감소한 점도 회복의 폭이 제한적임을 보여준다.",
+    "en": "Annual revenue declined from KRW 108.1 billion in 2022 to KRW 58.9 billion in 2025, and the operating margin fell from 27.2% in 2024 to 16.9% in 2025. Preliminary results show operating profit down 69.3% in the fiscal year ended June 2026, so the downtrend continued. Fourth-quarter 2025 revenue and operating profit were down 28.7% and 51.3% from the year-earlier quarter, which shows the recovery is limited in scale."
    }
   },
   {
    "title": {
-    "ko": "분기 실적의 큰 변동성과 일회성 요인 의존",
-    "en": "High Quarterly Earnings Volatility Dependent on One-off Items"
+    "ko": "대규모 인수에 따른 자본 배분 부담",
+    "en": "Capital allocation burden from a large acquisition"
    },
    "body": {
-    "ko": "2025년 2분기 영업손실과 순손실을 기록한 뒤 3분기와 4분기에 다시 흑자로 반등하는 등 분기별 실적 편차가 매우 크다. 2024년 4분기의 이례적인 순이익 급증은 일회성 요인이 반영된 결과로 해석되며, 이런 항목을 제외한 핵심 사업의 지속적인 이익창출력은 상대적으로 완만한 수준으로 판단된다.",
-    "en": "After posting an operating and net loss in 2025Q2, the company swung back to profit in Q3 and Q4, showing very large quarterly earnings swings. The unusually large net-profit spike in 2024Q4 is likely attributable to one-off items, suggesting that the core business's underlying, recurring earnings power is comparatively modest once such items are excluded."
+    "ko": "인수대금은 공시에 기재된 자기자본의 12.33%에 해당하는 규모이다. 기존 건강식품 사업의 이익 규모에 비해 큰 지출이며, 일부는 자회사 차입으로 바뀌어 조달 계획이 정정됐다. 인수 이후 성과가 외부 추정에 못 미칠 경우 순자산에 미치는 영향이 커질 수 있다.",
+    "en": "The purchase price equals 12.33% of the equity stated in the filing. It is a large outlay relative to the earnings of the existing health food business, and part of the funding was changed to a subsidiary loan through a corrected plan. If post-acquisition performance falls short of external estimates, the effect on net assets could be larger."
    }
   },
   {
    "title": {
-    "ko": "상장유지 불확실성과 반복적 지분 희석",
-    "en": "Listing-Maintenance Uncertainty and Repeated Share Dilution"
+    "ko": "이익 변동성과 영업 외 의존",
+    "en": "Earnings volatility and reliance on non-operating items"
    },
    "body": {
-    "ko": "현재 주가가 코스닥 동전주 상장폐지 기준선인 1,000원에 근접해 있고, 시가총액도 2026년 7월부터 강화된 200억원 기준에 크게 못 미치는 것으로 알려져 있다. 이에 대응해 감자·주식병합과 대규모 제3자배정 유상증자가 반복적으로 이뤄지면서 기존 주주의 지분 희석이 지속되고 있다. 금융감독원이 감자 공시에 대해 정정명령을 부과한 사례도 있어 절차적 리스크도 존재한다.",
-    "en": "The current share price is close to the KRW 1,000 threshold used for KOSDAQ's coin-stock delisting rule, and the market capitalization reportedly falls well short of the tightened KRW 20bn threshold effective from July 2026. In response, the company has repeatedly carried out capital reductions, share consolidations and large third-party placements, resulting in ongoing dilution for existing shareholders. There has also been at least one instance of the Financial Supervisory Service issuing a correction order on a capital-reduction disclosure, indicating procedural risk as well."
+    "ko": "2025년 2분기에는 영업손실 36.8억원과 지배주주 순손실 37.6억원이 발생해 분기 이익이 한 해 안에서도 크게 달라졌다. 2024년과 2025년 지배주주 순이익이 영업이익보다 큰 점은 본업 외 손익이 순이익에 영향을 줬을 가능성을 시사한다. 2026년 6월 종료 사업연도에도 법인세비용차감전계속사업이익은 약 83.4억원으로 영업이익보다 컸다.",
+    "en": "In the second quarter of 2025 the company recorded an operating loss of KRW 3.68 billion and a net loss attributable to controlling shareholders of KRW 3.76 billion, so quarterly profit swung widely within a single year. In both 2024 and 2025 net income attributable to controlling shareholders exceeded operating profit, which suggests non-operating items may have affected net income. For the fiscal year ended June 2026, pre-tax income from continuing operations of about KRW 8.34 billion was also larger than operating profit."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "상장폐지 리스크",
-    "en": "Delisting Risk"
+    "ko": "인수 실행·통합",
+    "en": "Acquisition execution and integration"
    },
    "body": {
-    "ko": "2026년 7월 1일부터 코스닥 시가총액 상장폐지 기준이 200억원으로 상향되고, 주가가 30거래일 연속 1,000원 미만이면 관리종목으로 지정되며 이후 90거래일의 유예기간 중 45거래일 연속으로 1,000원을 회복하지 못하면 최종 상장폐지되는 규정이 도입됐다. 현재 주가 수준이 이 기준선에 근접해 있어 지속적인 모니터링이 필요한 구간이다.",
-    "en": "From July 1, 2026, the KOSDAQ market-cap delisting threshold was raised to KRW 20bn, and a new rule was introduced under which a stock trading below KRW 1,000 for 30 consecutive trading days is designated an administrative issue, followed by a 90-trading-day grace period during which failing to recover above KRW 1,000 for 45 consecutive trading days results in delisting. The current share price is close to this threshold, warranting ongoing monitoring."
+    "ko": "AIDT의 성장 전망은 외부평가기관의 추정과 회사 측 설명에 근거하며, 편입 이후 실적으로 확인된 것이 아니다. 취득 예정일 이후 정정 공시가 이어져 거래 완료 시점과 대금 조달 구조를 후속 공시로 확인해야 한다. 건강식품과 AI는 사업 성격이 달라 경영 자원 배분과 통합 과정에서 불확실성이 있다.",
+    "en": "AIDT's growth outlook rests on an external valuation firm's estimates and the company's own description, not on results confirmed after consolidation. Corrected filings followed the planned acquisition date, so the completion timing and funding structure must be confirmed in follow-up filings. Health food and AI differ in nature, which leaves uncertainty in resource allocation and integration."
    }
   },
   {
    "cat": {
-    "ko": "지분 희석 리스크",
-    "en": "Share Dilution Risk"
+    "ko": "지배구조·공시",
+    "en": "Governance and disclosure"
    },
    "body": {
-    "ko": "상장유지와 자본 확충을 위해 수차례의 제3자배정 유상증자가 이뤄졌으며, 2026년 7월에는 480억원 규모의 증자가 추진됐다. 이러한 반복적 증자는 회사의 자본 기반을 늘리는 동시에 기존 주주의 지분율을 지속적으로 낮추는 효과를 동반한다. 추가 증자 가능성도 배제할 수 없어 주주구성 변화를 지켜볼 필요가 있다.",
-    "en": "Multiple third-party placements have been carried out to support listing maintenance and capital reinforcement, including a KRW 48bn raise pursued in July 2026. While such repeated capital raises expand the company's equity base, they also continually reduce the ownership share of existing shareholders. The possibility of further raises cannot be ruled out, making changes in shareholder composition worth watching."
+    "ko": "씨엑스아이는 외국지주회사로 국제회계기준에 따른 연결재무제표만 작성하고 별도 재무제표는 작성하지 않는다. 순자산과 이익이 중국 자회사에 집중돼 있어 자금 이동과 현지 규제 환경을 독자가 따로 점검해야 한다. 최대주주를 대상으로 한 증자와 인수대금 조달 정정이 이어진 점도 공시 변경을 추적할 필요성을 높인다.",
+    "en": "As a foreign holding company, CXI prepares only consolidated financial statements under international accounting standards and no separate statements. Net assets and profit are concentrated in China subsidiaries, so readers need to check fund transfers and the local regulatory environment separately. A rights offering directed at the largest shareholder and corrections to the acquisition funding also raise the need to track disclosure changes."
    }
   },
   {
    "cat": {
-    "ko": "중국계 기업 특유의 신뢰·규제 리스크",
-    "en": "China-Linked Company Trust and Regulatory Risk"
+    "ko": "상장 유지·주가 변동성",
+    "en": "Listing maintenance and share price volatility"
    },
    "body": {
-    "ko": "회사는 케이맨제도에 설립된 지주회사를 통해 중국 내 자회사를 지배하는 구조로, 크로스보더 회계·공시 투명성에 대한 시장의 우려가 상존해왔다. 실제로 감자 공시 과정에서 금융감독원의 정정명령이 부과된 사례가 있어 공시 절차상의 리스크도 확인됐다. 아울러 실적이 위안화 기준으로 발생해 원화로 환산되는 구조상 환율 변동에 따른 재무수치 변동 위험도 내재한다.",
-    "en": "The company operates through a Cayman Islands holding structure controlling mainland China subsidiaries, and market concerns over cross-border accounting and disclosure transparency have persisted. A Financial Supervisory Service correction order issued during a capital-reduction disclosure process illustrates this procedural risk. In addition, because results are generated in Chinese yuan and translated into Korean won, the company's reported financials carry inherent foreign-exchange translation risk."
+    "ko": "회사는 감자와 주식병합을 2026년 6월 말까지 마쳐 7월 시행 예정인 새 상장유지 요건을 사전에 충족하겠다는 계획을 밝혔다. 병합과 변경상장 과정에서 매매거래정지가 있었고 이후 거래가 재개돼, 주가 흐름에는 자본정책의 영향이 섞여 있다. 거래가 이뤄지는 유통 물량이 적은 편이라 가격 변동성이 커질 수 있다.",
+    "en": "The company said it planned to complete the capital reduction and share consolidation by the end of June 2026 to satisfy in advance the new listing maintenance requirements due to take effect in July. Trading was halted during the consolidation and listing change and then resumed, so share price moves reflect the effects of capital policy. A relatively small tradable float can amplify price volatility."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 9월 말~10월 중",
-    "en": "Late September to October 2026"
+    "ko": "2026년 11월 중순(법정 제출기한 기준)",
+    "en": "Mid-November 2026 (based on the statutory filing deadline)"
    },
    "what": {
-    "ko": "주가가 코스닥 동전주 상장폐지 기준(1,000원) 및 시가총액 기준(200억원)을 충족하는지 30거래일 연속 여부를 포함해 지속적으로 확인해야 한다.",
-    "en": "Continue tracking whether the share price satisfies KOSDAQ's coin-stock delisting threshold (KRW 1,000) and market-cap requirement (KRW 20bn), including the 30-consecutive-trading-day test."
+    "ko": "6월 결산 법인의 2027년 사업연도 1분기(2026년 7~9월) 분기보고서이다. 영업이익이 흑자를 이어가는지와 건강식품 매출 추세를 확인할 첫 정기 공시이다.",
+    "en": "This is the first-quarter report for the fiscal year ending June 2027 (July to September 2026) from a June fiscal year-end company. It is the first periodic filing to show whether operating profit stays positive and how health food revenue is trending."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "Q4 2026"
+    "ko": "2026년 11월 이후",
+    "en": "From November 2026"
    },
    "what": {
-    "ko": "2026년 7월 27일 시작된 병원 AI 진단시스템 공급계약의 첫 분기 정산 결과와 실제 매출 인식 규모를 확인해 신사업 기여도를 점검해야 한다.",
-    "en": "Check the first quarterly settlement and actual revenue recognition from the hospital AI diagnostic system supply contract that began on July 27, 2026, to gauge the new business's contribution."
+    "ko": "AIDT Technologies 인수 완료와 자회사 편입에 관한 후속 공시이다. 대금 조달 방식, 연결 반영 시점, 인수 후 첫 실적이 핵심 확인 사항이다.",
+    "en": "Follow-up filings on completion of the AIDT Technologies acquisition and its consolidation as a subsidiary. The funding method, the timing of consolidation and the first post-acquisition results are the key items."
    }
   },
   {
    "when": {
-    "ko": "확정 시점 미정(후속 공시 확인 필요)",
-    "en": "Timing to be confirmed via follow-up disclosure"
+    "ko": "사업보고서 제출 시(일정 미확인)",
+    "en": "When the annual report is filed (date unconfirmed)"
    },
    "what": {
-    "ko": "H&P 인터내셔널과의 AI 학습용 데이터 구축 관련 투자의향서(LOI)가 정식 계약이나 추가 투자로 이어지는지 후속 공시를 통해 확인해야 한다.",
-    "en": "Watch for follow-up disclosures on whether the letter of intent with H&P International for the AI training-data business advances into a definitive contract or further investment."
+    "ko": "2026년 6월 종료 사업연도 정기보고서가 나오면 잠정 실적과 DART 확정 수치를 대조한다. 지배주주 순이익과 영업외 손익의 구성, 자본총계 변화를 확인할 수 있다.",
+    "en": "When the periodic report for the fiscal year ended June 2026 is filed, compare the preliminary figures with the reported numbers. It will show the composition of net income attributable to controlling shareholders and non-operating items, as well as changes in total equity."
    }
   },
   {
    "when": {
-    "ko": "다음 분기보고서 공시 시점",
-    "en": "At the next quarterly report filing"
+    "ko": "2027년 6월 종료 사업연도 중",
+    "en": "During the fiscal year ending June 2027"
    },
    "what": {
-    "ko": "2025년 2분기의 영업손실 이후 이어진 실적 변동성이 이어지는지, 아니면 안정적인 흑자 기조로 전환되는지를 다음 분기 실적으로 확인해야 한다.",
-    "en": "The next quarterly results should be checked to see whether the earnings volatility seen since the 2025Q2 operating loss persists or shifts toward a more stable profit trend."
-   }
-  },
-  {
-   "when": {
-    "ko": "후속 공시 확인 필요",
-    "en": "Pending further disclosure"
-   },
-   "what": {
-    "ko": "감자·주식병합 관련 금융감독원 정정명령 이후 재공시된 내용과 향후 추가 자본정책(증자·매집) 여부를 확인해야 한다.",
-    "en": "Confirm the re-disclosed content following the Financial Supervisory Service's correction order on the capital reduction/share consolidation, and monitor for any further capital-policy actions such as additional raises or share purchases."
+    "ko": "2026년 7월 체결한 3,379만위안 규모 병원 AI 진단시스템 기술지원 계약과 AI 학습용 데이터 구축 사업의 매출 인식 여부이다. 신사업이 연결 매출에 실제로 얼마나 기여하는지 가늠할 수 있다.",
+    "en": "Whether revenue is recognized from the CNY 33.79 million hospital AI diagnostic-system technical support contract signed in July 2026 and from the AI training data business. It indicates how much the new businesses actually contribute to consolidated revenue."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "씨엑스아이는 중국 건강식품 사업을 기반으로 하되, 매출이 4년 연속 축소되는 가운데 화장품 유통과 AI 헬스케어로 사업을 다각화하고 있는 코스닥 상장 중국계 기업이다. 재무구조는 부채비율이 0.5%까지 낮아지는 등 매우 견조하지만, 분기별 실적은 2025년 2분기 적자와 4분기 큰 폭의 반등이 공존할 만큼 변동성이 크고 2024년의 이익 급증은 일회성 요인의 영향이 컸던 것으로 보인다. 회사는 코스닥의 강화된 동전주·시가총액 상장유지 기준에 대응하기 위해 감자, 주식병합, 대규모 제3자배정 유상증자를 반복적으로 시행해왔고, 이 과정에서 최대주주가 누적 약 300억원을 투입하며 책임경영 의지를 보였다. 동시에 이러한 자본정책은 기존 주주의 지분 희석과 절차적 리스크(금융감독원 정정명령)를 동반했다. 신사업인 병원 AI 진단시스템 공급계약과 화장품 총판 계약은 아직 초기 단계로, 매출 기여도와 지속가능성은 향후 분기 실적을 통해 확인이 필요하다. 종합적으로 이 종목은 견조한 재무 기반과 사업 다각화 시도라는 강점과, 매출 축소 추세·실적 변동성·상장유지 불확실성이라는 약점이 동시에 존재하는 구조로 판단된다. 투자 판단에 앞서 다가오는 분기 실적과 상장유지 관련 공시를 지속적으로 확인하는 것이 중요하다.",
-   "en": "CXI is a KOSDAQ-listed China-linked company built on a health-food business that has seen revenue decline for four straight years, while diversifying into cosmetics distribution and AI healthcare. Its balance sheet is very solid, with the debt ratio falling to 0.5%, but quarterly results have been volatile, coexisting an operating loss in 2025Q2 with a sharp rebound in Q4, and the 2024 profit surge appears to have been heavily influenced by one-off items. To address KOSDAQ's tightened coin-stock and market-cap listing-maintenance thresholds, the company has repeatedly carried out capital reductions, share consolidations and large third-party placements, during which the major shareholder injected roughly KRW 30bn cumulatively, signaling a commitment to responsible management. At the same time, these capital measures have brought dilution for existing shareholders and procedural risk, including a Financial Supervisory Service correction order. The new hospital AI diagnostic system supply contract and cosmetics distribution deal remain at an early stage, and their revenue contribution and sustainability will need to be confirmed through future quarterly results. On balance, this stock combines a solid financial base and diversification efforts with weaknesses including a declining revenue trend, earnings volatility and listing-maintenance uncertainty. Before forming any investment judgment, it is important to continue monitoring upcoming quarterly results and listing-related disclosures."
+   "ko": "씨엑스아이는 부채가 거의 없고 자본총계가 큰 중국 건강식품 지주회사이지만, 공시 실적 기준 매출은 2023년부터 2025년까지 3년 연속 감소했다. 영업이익은 2024년 203억원을 정점으로 2025년 99.5억원으로 줄었고, 분기 기준으로는 2025년 2분기 영업손실 이후 4분기 영업이익 77.4억원까지 회복했으나 전년 동기 수준에는 못 미쳤다. 2026년 6월 종료 사업연도 잠정 실적(2026년 10월 8일 공시)은 영업이익 약 29.9억원으로 69.3% 감소했다. 강세 쪽에서는 재무 안정성과 이익을 내는 AI 기업의 편입이, 약세 쪽에서는 본업의 부진과 대규모 인수에 따른 자본 배분 부담이 쟁점이다. 인수 완료 여부, 대금 조달 구조, 연결 편입 후 실적은 아직 확정되지 않았다. 다음 분기보고서와 인수 후속 공시, 사업보고서가 이 구도를 가를 확인 지점이다. 이 리포트는 정보 제공용이며 매수·매도 의견이나 목표주가를 포함하지 않는다.",
+   "en": "CXI Healthcare Technology Group is a China health food holding company with almost no debt and large total equity, but its revenue declined in each year from 2023 through 2025 based on reported results. Operating profit peaked at KRW 20.3 billion in 2024 and fell to KRW 9.95 billion in 2025; on a quarterly basis it recovered to KRW 7.74 billion in the fourth quarter of 2025 after an operating loss in the second quarter, but remained below the year-earlier level. Preliminary results for the fiscal year ended June 2026 (disclosed October 8, 2026) showed operating profit of about KRW 2.99 billion, down 69.3%. On the bullish side the issues are financial stability and adding a profitable AI business, and on the bearish side weakness in the core business and the capital allocation burden of a large acquisition. Completion of the deal, the funding structure and post-consolidation results are not yet settled. The next quarterly report, follow-up acquisition filings and the annual report are the points that will test this picture. This report is for information only and contains no buy or sell opinion or target price."
   }
  },
  "sources": [
-  "https://markets.hankyung.com/stock/900120",
-  "https://m.thinkpool.com/item/900120",
-  "https://www.kokstock.com/stock/item.asp?item_cd=900120",
-  "https://www.paxnet.co.kr/stock/analysis/main?abbrSymbol=900120",
-  "https://deepsearch.com/analytics/company-analysis/KRX:900120/history?c-name=CKH&c-symbol=KRX:900120",
-  "https://www.seoul.co.kr/news/economy/securities/2026/02/13/20260213500071",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A900120",
-  "https://www.sedaily.com/NewsView/2GZ79TIN9H",
-  "http://www.ckhfnh.co.kr/company/summary",
-  "https://www.sedaily.com/article/20071534",
-  "https://m.irgo.co.kr/IR-COMP/900120/%EC%94%A8%EC%97%91%EC%8A%A4%EC%95%84%EC%9D%B4-IR-PAGE",
+  "https://www.k5.co.kr/stock/900120",
+  "https://m.sedaily.com/article/20101331",
+  "https://valueline.co.kr/finance/summary/900120",
   "https://www.sedaily.com/article/20072706",
-  "https://www.asiae.co.kr/article/2026032409505057601",
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=092870",
-  "https://m.irgo.co.kr/IR-COMP/092870",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250317001315&docno=&viewerhost=",
-  "https://kind.krx.co.kr/common/stockschedule.do?method=StockScheduleMain",
-  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx?cn=&cmp_cd=443250"
+  "https://www.sedaily.com/article/20071534",
+  "https://www.sedaily.com/article/14130481",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=706068",
+  "https://marketin.edaily.co.kr/News/ReadE?newsId=03122566645386600",
+  "https://www.investing.com/equities/ckh-food-health-ltd",
+  "http://www.ckhfnh.co.kr/company/summary",
+  "https://stockanalysis.com/quote/kosdaq/900120/company/",
+  "https://finance.yahoo.com/quote/900120.KQ/profile/",
+  "https://www.msn.com/en-us/money/stockdetails/fi-ajsbxm",
+  "https://simplywall.st/stock/kosdaq/a900120",
+  "https://stockanalysis.com/quote/kosdaq/900120/statistics/",
+  "https://www.stockopedia.com/share-prices/cxi-healthcare-technology-KOSDAQ:900120/",
+  "https://www.marketscreener.com/quote/stock/CXI-HEALTHCARE-TECHNOLOGY-15831548/quotes/",
+  "https://www.marketscreener.com/news/cxi-healthcare-technology-group-limited-announced-that-it-expects-to-receive-krw-7-2335-billion-in-f-ce7f5dd2dc81ff20"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-sonnet-5-5",
  "ticker": "900120",
  "name": "씨엑스아이",
  "name_en": "CXI Healthcare Technology Group Limited",
@@ -233,24 +223,24 @@
   "금융"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:44",
- "dataDate": "20260904",
+ "reportDate": "2026-10-29",
+ "reportTs": "2026-10-29 02:14",
+ "dataDate": "20261028",
  "quant": {
-  "asOf": "2026-09-05",
+  "asOf": "2026-10-28",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
     "year": 2025,
-    "rev": 60015898235.95199,
-    "op": 10138380863.513634,
-    "np": 13266624542.46855,
-    "np_owner": 13266624542.46855,
-    "equity": 525173089610.9818,
-    "equity_owner": 525173089610.9818,
+    "rev": 58897220144.65555,
+    "op": 9949404527.466103,
+    "np": 13019338695.59565,
+    "np_owner": 13019338695.59565,
+    "equity": 515384022934.4069,
+    "equity_owner": 515384022934.4069,
     "equity_nci": 0.0,
-    "liab": 2707018381.8087482,
-    "cfo": 42979678631.77146,
+    "liab": 2656560382.4206443,
+    "cfo": 42178550492.90238,
     "eps_basic": null,
     "opm": 16.9,
     "roe": 2.5,
@@ -258,15 +248,15 @@
    },
    {
     "year": 2024,
-    "rev": 76163361527.6115,
-    "op": 20698073910.412895,
-    "np": 32192371926.03008,
-    "np_owner": 32199976088.471004,
-    "equity": 510523341410.1025,
-    "equity_owner": 510523341410.1025,
+    "rev": 74743699631.26768,
+    "op": 20312268107.34749,
+    "np": 31592315903.558636,
+    "np_owner": 31599778326.724213,
+    "equity": 501007341584.7627,
+    "equity_owner": 501007341584.7627,
     "equity_nci": 0.0,
-    "liab": 2890196801.3028483,
-    "cfo": 46332649729.93025,
+    "liab": 2836324411.882944,
+    "cfo": 45469023229.485146,
     "eps_basic": null,
     "opm": 27.2,
     "roe": 6.3,
@@ -274,15 +264,15 @@
    },
    {
     "year": 2023,
-    "rev": 76183637542.92511,
-    "op": 7590625766.879154,
-    "np": 8007833888.84694,
-    "np_owner": 8007857327.925492,
-    "equity": 460311695123.44086,
-    "equity_owner": 460490465581.74005,
-    "equity_nci": -178770458.29917002,
-    "liab": 3935798536.808874,
-    "cfo": 35264301602.27564,
+    "rev": 74763597707.82211,
+    "op": 7449138811.018662,
+    "np": 7858570300.47282,
+    "np_owner": 7858593302.654077,
+    "equity": 451731625114.69696,
+    "equity_owner": 451907063346.02045,
+    "equity_nci": -175438231.32351,
+    "liab": 3862436449.0238223,
+    "cfo": 34606985744.86331,
     "eps_basic": 0,
     "opm": 10.0,
     "roe": 1.7,
@@ -290,15 +280,15 @@
    },
    {
     "year": 2022,
-    "rev": 110165669194.39577,
-    "op": 6837054946.08987,
-    "np": 6499718111.08131,
-    "np_owner": 6499992914.07123,
-    "equity": 439071522810.4604,
-    "equity_owner": 439250269829.68097,
-    "equity_nci": -178747019.220618,
-    "liab": 9463244271.695112,
-    "cfo": 37722599030.88415,
+    "rev": 108112214623.80408,
+    "op": 6709614321.15561,
+    "np": 6378565342.16193,
+    "np_owner": 6378835022.90769,
+    "equity": 430887363154.1447,
+    "equity_owner": 431062778383.2869,
+    "equity_nci": -175415229.142254,
+    "liab": 9286852276.398937,
+    "cfo": 37019461257.01124,
     "eps_basic": null,
     "opm": 6.2,
     "roe": 1.5,
@@ -308,40 +298,40 @@
   "quarterly": [
    {
     "q": "2024Q4",
-    "rev": 28182612387.15548,
-    "op": 16173422475.277897,
-    "np_owner": 23084898314.319565
+    "rev": 27657297063.054836,
+    "op": 15871954798.942488,
+    "np_owner": 22654602830.237892
    },
    {
     "q": "2025Q1",
-    "rev": 17022554621.384706,
-    "op": 5031399261.90369,
-    "np_owner": 4941387138.433351
+    "rev": 16705259380.08092,
+    "op": 4937615509.79307,
+    "np_owner": 4849281184.93005
    },
    {
     "q": "2025Q2",
-    "rev": 7493719725.460218,
-    "op": -3749039393.943912,
-    "np_owner": -3827647597.454616
+    "rev": 7354039068.741055,
+    "op": -3679158439.785336,
+    "np_owner": -3756301410.288648
    },
    {
     "q": "2025Q3",
-    "rev": 15395993097.25494,
-    "op": 971612646.958242,
-    "np_owner": 1488789449.255418
+    "rev": 15109016468.09682,
+    "op": 953502082.702326,
+    "np_owner": 1461038866.686654
    },
    {
     "q": "2025Q4",
-    "rev": 20103630791.85212,
-    "op": 7884408348.595614,
-    "np_owner": 10664095552.234398
+    "rev": 19728905227.736755,
+    "op": 7737445374.7560425,
+    "np_owner": 10465320054.267595
    }
   ],
   "valuation": {
-   "price": 4885,
-   "mcap": 0.0554,
+   "price": 3185,
+   "mcap": 0.0361,
    "shares": 11333932,
-   "total_shares": 3333932,
+   "total_shares": 11333932,
    "wavg_shares": null,
    "per": null,
    "eps": null,
@@ -349,7 +339,7 @@
    "bps": null,
    "roe_ttm": 2.5,
    "ttm_window": "2025Q1~2025Q4",
-   "ttm_np_owner": 13266624542.46855,
+   "ttm_np_owner": 13019338695.59565,
    "ccy": "CNY",
    "bps_src": "자체",
    "eps_src": "순이익÷주식수",
@@ -362,13 +352,6 @@
     "dps": "no_div",
     "eps": "ref_mismatch",
     "bps": "ref_mismatch"
-   },
-   "shares_patched": {
-    "on": "2026-10-07",
-    "was": 3333932,
-    "now": 11333932,
-    "factor": null,
-    "why": "주식수가 배수로 안 떨어진다(증자 등) — 자본을 다시 받아야 해서 값을 숨긴다"
    }
   }
  }

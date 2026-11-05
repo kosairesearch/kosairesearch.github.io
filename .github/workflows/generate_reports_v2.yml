@@ -77,7 +77,7 @@ jobs:
           KRX_ID: ${{ secrets.KRX_ID }}
           KRX_PW: ${{ secrets.KRX_PW }}
           REPORT_MODEL_TOP: 'claude-opus-5-5'
-          REPORT_MODEL_REST: 'claude-sonnet-5'
+          REPORT_MODEL_REST: 'claude-sonnet-5-5'
           REPORT_MODEL_TOP_N: '300'
           REPORT_TICKERS: ${{ inputs.tickers }}
           REPORT_TOP_N: ${{ inputs.top_n }}

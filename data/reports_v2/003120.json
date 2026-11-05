@@ -56,7 +56,7 @@
     "en": "Low Leverage and a Thick Cash Cushion"
    },
    "body": {
-    "ko": "부채비율이 2025년 4.3%까지 낮아졌고 차입금 부담이 거의 없어 재무 안정성이 높다. 2200억원 규모의 현금 및 단기금융상품을 보유한 것으로 알려져 있어, 이 자산에서 나오는 금융수익이 본업 적자를 상당 부분 상쇄하고 있다. 이러한 재무 여력은 CMO 투자나 신규 라이센스 도입 등 추가 사업 확장의 기반이 될 수 있다.",
+    "ko": "부채비율이 2025년 4.3%까지 낮아졌고 차입금 부담이 거의 없어 재무 안정성이 높다. 2,200억원 규모의 현금 및 단기금융상품을 보유한 것으로 알려져 있어, 이 자산에서 나오는 금융수익이 본업 적자를 상당 부분 상쇄하고 있다. 이러한 재무 여력은 CMO 투자나 신규 라이센스 도입 등 추가 사업 확장의 기반이 될 수 있다.",
     "en": "The debt ratio fell to 4.3% in 2025 with minimal borrowings, giving the company strong financial stability. It reportedly holds around KRW 220 billion in cash and short-term financial products, and the financial income generated from these assets has offset a substantial portion of the operating loss. This financial capacity could underpin further business expansion such as CMO investment or new in-licensing deals."
    }
   },
@@ -328,26 +328,33 @@
    }
   ],
   "valuation": {
-   "price": 20550,
-   "mcap": 0.2733,
-   "shares": 13300000,
+   "price": 21200,
+   "mcap": 0.2256,
+   "shares": 10640000,
    "total_shares": 13300000,
    "wavg_shares": 6857852,
-   "per": 25.688,
-   "eps": 800,
-   "pbr": 0.3711,
-   "bps": 55377,
+   "per": null,
+   "eps": null,
+   "pbr": null,
+   "bps": null,
    "roe_ttm": 1.5,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 5542365194,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 0.38,
-   "bps_krx": 53943.0,
+   "pbr_krx": null,
+   "bps_krx": null,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 1200.0,
-   "div": 5.84
+   "div": 5.84,
+   "shares_patched": {
+    "on": "2026-10-29",
+    "was": 13300000,
+    "now": 10640000,
+    "factor": null,
+    "why": "주식수가 배수로 안 떨어진다(증자 등) — 자본을 다시 받아야 해서 값을 숨긴다"
+   }
   }
  }
 }

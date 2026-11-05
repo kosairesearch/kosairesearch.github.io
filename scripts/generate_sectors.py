@@ -43,7 +43,7 @@ data/sectors.js (window.KOS_SECTORS) 를 만든다. 업종별 상위 종목·집
   정리되고, 업황 해설도 아직 안 나와 검색할 것이 없다.
 
 모드: submit / collect / auto(기본)
-환경변수: ANTHROPIC_API_KEY(필수), REPORT_MODEL(기본 claude-sonnet-5), SECTOR_FORCE, BATCH_MAX_WAIT_SEC
+환경변수: ANTHROPIC_API_KEY(필수), REPORT_MODEL(기본 claude-sonnet-5-5), SECTOR_FORCE, BATCH_MAX_WAIT_SEC
 """
 import os
 import re
@@ -62,7 +62,8 @@ from anthropic.types.message_create_params import MessageCreateParamsNonStreamin
 from anthropic.types.messages.batch_create_params import Request
 
 import generate_reports as g  # extract_text / parse_report / collect_sources 재사용
-import check_report_text as C  # clean_markup · defects — 리포트 본문과 같은 글자 기준
+import check_report_text as C  # clean_markup · defects · 검토(review) — 리포트 본문과 같은 기준
+import fix_hanja               # 한자 → 한글(리포트와 같은 저장 전 정리)
 
 ROOT = Path(__file__).resolve().parent.parent
 STOCKS_JS = ROOT / "data" / "stocks.js"
@@ -70,13 +71,14 @@ REPORTS_V2 = ROOT / "data" / "reports_v2"   # 기업 리포트 — quant.quarter
 OUT_JS = ROOT / "data" / "sectors.js"
 STATE = ROOT / "data" / "sector_batch_state.json"
 
-MODEL = os.getenv("REPORT_MODEL", "claude-sonnet-5")
+MODEL = os.getenv("REPORT_MODEL", "claude-sonnet-5-5")   # 2026-10-27 Sonnet 5 → 5.5(사장 승인)
 FORCE = os.getenv("SECTOR_FORCE", "") == "1"
 MAX_WAIT = int(os.getenv("BATCH_MAX_WAIT_SEC", "4800"))
 # 걸러진 것을 다시 만드는 횟수(1차 포함). 회차마다 대상이 줄어든다.
 ROUNDS = max(1, int(os.getenv("SECTOR_ROUNDS", "3")))
 
 TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 3,
+          "blocked_domains": list(g.NO_USE_DOMAINS),   # 협의 없이 쓰지 않는 사이트(generate_reports 참고)
           "user_location": {"type": "approximate", "country": "KR", "timezone": "Asia/Seoul"}}]
 
 log = g.log
@@ -85,7 +87,7 @@ SYSTEM = (
     "너는 한국 증시 섹터(업종) 애널리스트다. 주어진 업종의 한국 상장사들을 바탕으로 "
     "투자 참고용 업종 분석을 작성한다. 매수/매도·목표주가 등 투자권유 표현은 쓰지 않는다. "
     "수치는 확인된 것만 쓰고 과장·날조하지 않는다. 전문 애널리스트 톤.\n\n"
-    "[집계]로 주는 수치(업종 시가총액 합계·전체 시장 비중·상장 종목 수)와 "
+    "[집계]로 주는 수치(업종 시가총액 합계·전체 시장 비중)와 "
     "[시총 상위 종목]의 시총 금액은 문장에 그대로 옮기지 않는다. 이 값들은 매 거래일 "
     "바뀌고 화면이 본문 위에서 최신 값을 따로 보여 주므로, 문장에 박으면 그날부터 "
     "화면과 본문이 서로 다른 숫자를 말하게 된다. 규모는 '관계'로 서술한다.\n"
@@ -100,7 +102,25 @@ SYSTEM = (
     "[작성 기준일]보다 앞서 끝난 기간(지난 분기·지난해)은 이미 나온 결과로 쓴다. 그 기간을 "
     "'예상된다'·'전망이다'처럼 앞으로의 일로 쓰지 않는다. 검색 결과가 그 기간을 아직 전망으로 "
     "다루고 있으면 실제 결과를 확인해 쓰고, 확인하지 못하면 그 내용은 쓰지 않는다.\n"
-    "최근 업황은 반드시 웹 검색으로 확인하고, 검색으로 확인한 사실은 그 결과를 인용해 쓴다."
+    "최근 업황은 반드시 웹 검색으로 확인하고, 검색으로 확인한 사실은 그 결과를 인용해 쓴다.\n\n"
+    # 2026-10-09 — 10월 8일 판 30편을 사람이 읽으니 아래가 나왔다(사장이 크게 질책했다). 저장 전 검토가 다시 보지만
+    # 처음부터 쓰지 않게 지시한다.
+    "문장은 한 문장에 한 사실로 쓴다. 검색 결과의 문장을 이어 붙여 주어가 둘이 되거나 같은 말을 되풀이하지 않는다\n"
+    "  (X) 174,000㎥급 LNG운반선 가격은 17만 4000m3급 LNG선의 신조선가는 척당 …\n"
+    "  (O) 17만 4,000㎥급 LNG운반선의 신조선가는 척당 2억 4,850만달러로 …\n"
+    "[상위 종목 최근 분기 실적]에 있는 회사의 수치는 그 값 그대로 쓴다. 여러 회사를 묶어 말할 때('대부분' · '60~90%대' ·\n"
+    "'두 자릿수' · '70% 넘게')는 묶은 회사의 실제 값이 모두 그 안에 들 때만 쓰고, 아니면 회사별 값이나 실제 범위로 쓴다.\n"
+    "  (X) 주요 기업 대부분이 영업이익이 60~90%대로 급증했다   ← 실제는 37.2~113.0%\n"
+    "  (O) 영업이익 증가율은 HD현대일렉트릭 37.2%에서 대한전선 113.0%까지 분포했다\n"
+    "적자 회사를 이익이 늘어난 것처럼 쓰지 않는다. 요약(lead) · 본문 · 위험 요인이 같은 대상을 서로 반대로 말하지 않게 한다.\n"
+    "회사의 사업은 [회사 설명]에 맞게 쓴다. 업종 분류상 함께 묶였지만 사업이 다른 회사(예: 전기장비 업종의 의료기기 회사)는\n"
+    "그 사업으로 소개하고, 영어 문장의 회사명은 [회사 설명]의 영문명을 쓴다.\n"
+    "상대 시점(지난달 · 이번 주 · 어제 · 오늘 · 다음 달)을 쓰지 않는다 — 글은 몇 달 동안 걸려 있으므로 '2026년 9월'처럼 날짜로\n"
+    "쓴다. 검색한 기사의 날짜를 확인해, [작성 기준일]보다 오래된 기사의 계획 · 전망은 결과를 확인해 쓰거나 빼고, 이미 끝난\n"
+    "일(이미 가동 중인 공장 · 지난 분기 일정)을 앞으로의 일로 쓰지 않는다.\n"
+    "상장 종목 수는 어림수('170여 개' · '200개를 웃돈다')로도 쓰지 않는다. 1,000 이상의 수에는 쉼표를 쓴다(9,000억원).\n"
+    "한국어 문장에 영어 낱말(Phase · niche)이나 과장 표현(폭증 · 폭발적 · 역대급)을 섞지 않는다. 영어 문장에는 같은 칸\n"
+    "한국어의 수치를 빠짐없이 옮긴다."
 )
 
 # en 자리를 ""로 비워 보였더니 모델이 템플릿 그대로 빈 문자열을 내놓는 일이 있었다
@@ -196,6 +216,9 @@ def load_sectors():
         out[sec]["latestQ"] = latest
         out[sec]["fin"] = [x for x in (_fin_line(t["name"], qs.get(t.get("ticker")), latest,
                                                  no_rev=t.get("sector") in NO_REV) for t in top) if x]
+        # 같은 사실을 구조로도 — 묶음 요약(group_summary)과 본문 숫자 대조(fin_hits)가 쓴다(2026-10-10)
+        out[sec]["facts"] = {t["name"]: f for t in top
+                             if (f := _fin_fact(qs.get(t.get("ticker")), latest, no_rev=t.get("sector") in NO_REV))}
     return out
 
 
@@ -256,10 +279,10 @@ def _chg(cur, prev, op=False):
     return ""
 
 
-def _fin_line(name, q, latest, no_rev=False):
-    """상위 종목 한 곳의 최근 분기 실적 한 줄 — '삼성전자(연결): 2026년 2분기 매출 …(전년 동기 대비 +5.1%), 영업이익 …'.
+def _fin_fact(q, latest, no_rev=False):
+    """상위 종목 한 곳의 최근 분기 사실 — {'q', 'rev', 'op', 'rev_p', 'op_p', 'basis'}(전년 같은 분기 값은 _p).
     자료가 없거나, 마지막 분기 이름이 latest 보다 늦은 회사(결산월이 다르다)는 None.
-    no_rev 면 매출을 싣지 않는다 — 금융 · 보험의 '매출' 칸은 영업수익이나 일부 계정이라(신한지주 9,164억원 ·
+    no_rev 면 매출을 비운다 — 금융 · 보험의 '매출' 칸은 영업수익이나 일부 계정이라(신한지주 9,164억원 ·
     영업이익 2조 4,763억원) 매출로 읽히면 틀린 문장이 된다. 다른 업종도 매출이 영업이익보다 작으면 같은 경우라 뺀다."""
     rows = _rows(q)
     if not rows or not latest or rows[-1]["q"] > latest:
@@ -267,16 +290,31 @@ def _fin_line(name, q, latest, no_rev=False):
     cur = rows[-1]
     y, n = cur["q"].split("Q")
     prev = next((x for x in rows if x["q"] == f"{int(y) - 1}Q{n}"), {})
-    basis = str(q.get("fs_basis") or "").split("(")[0].strip()          # '연결' · '별도'
+    rev_ok = cur.get("rev") is not None and not no_rev and not (cur.get("op") is not None and 0 < cur["rev"] < cur["op"])
+    every = [x for x in (q.get("annual") or []) + (q.get("quarterly") or []) if isinstance(x, dict)]
+    return {"q": cur["q"], "rev": cur["rev"] if rev_ok else None, "rev_p": prev.get("rev") if rev_ok else None,
+            "op": cur.get("op"), "op_p": prev.get("op"), "basis": str(q.get("fs_basis") or "").split("(")[0].strip(),
+            # 기간을 밝히지 않은 문장('한화에어로스페이스는 매출 9조 2,929억원')은 이 회사의 어느 기간 값과도 같은지만 본다
+            "rev_all": [x["rev"] for x in every if x.get("rev") is not None] if rev_ok else [],
+            "op_all": [x["op"] for x in every if x.get("op") is not None]}
+
+
+def _fin_line(name, q, latest, no_rev=False):
+    """상위 종목 한 곳의 최근 분기 실적 한 줄 — '삼성전자(연결): 2026년 2분기 매출 …(전년 동기 대비 +5.1%), 영업이익 …'.
+    자료가 없거나, 마지막 분기 이름이 latest 보다 늦은 회사(결산월이 다르다)는 None(_fin_fact)."""
+    f = _fin_fact(q, latest, no_rev)
+    if not f:
+        return None
+    basis = f["basis"]                                                   # '연결' · '별도'
     parts = []
-    if cur.get("rev") is not None and not no_rev and not (cur.get("op") is not None and 0 < cur["rev"] < cur["op"]):
-        c = _chg(cur["rev"], prev.get("rev"))
-        parts.append(f"매출 {_won(cur['rev'])}" + (f"({c})" if c else ""))
-    if cur.get("op") is not None:
-        c = _chg(cur["op"], prev.get("op"), op=True)
-        amt = f"영업이익 {_won(cur['op'])}" if cur["op"] >= 0 else f"영업손실 {_won(-cur['op'])}"
+    if f["rev"] is not None:
+        c = _chg(f["rev"], f["rev_p"])
+        parts.append(f"매출 {_won(f['rev'])}" + (f"({c})" if c else ""))
+    if f["op"] is not None:
+        c = _chg(f["op"], f["op_p"], op=True)
+        amt = f"영업이익 {_won(f['op'])}" if f["op"] >= 0 else f"영업손실 {_won(-f['op'])}"
         parts.append(amt + (f"({c})" if c else ""))
-    return f"{name}{f'({basis})' if basis in ('연결', '별도') else ''}: {_qtext(cur['q'])} " + ", ".join(parts)
+    return f"{name}{f'({basis})' if basis in ('연결', '별도') else ''}: {_qtext(f['q'])} " + ", ".join(parts)
 
 
 def _day(as_of):
@@ -285,19 +323,96 @@ def _day(as_of):
     return f"{int(m.group(1))}년 {int(m.group(2))}월 {int(m.group(3))}일" if m else ""
 
 
+_META = None
+
+
+def _stock_meta():
+    """종목 이름 → (종목코드, 영문명, 업종). 시세 자료에서 한 번만 읽는다."""
+    global _META
+    if _META is None:
+        try:
+            raw = STOCKS_JS.read_text(encoding="utf-8")
+            st = json.loads(raw[raw.find("{"): raw.rfind("}") + 1])["stocks"]
+        except Exception:
+            st = []
+        _META = {s["name"]: (s.get("ticker"), s.get("name_en") or "", s.get("sector") or "") for s in st if s.get("name")}
+    return _META
+
+
+def _first_sentence(ticker):
+    """기업 리포트 사업 칸의 첫 문장(160자 안) — 회사가 무엇을 하는 곳인지 한 줄. 없으면 ''."""
+    try:
+        d = json.loads((REPORTS_V2 / f"{ticker}.json").read_text(encoding="utf-8"))
+        b = ((d.get("business") or {}).get("ko") or "").strip()
+    except Exception:
+        return ""
+    s = re.split(r"(?<=[.!?])\s+", b)[0] if b else ""
+    return s if len(s) <= 160 else s[:157] + "…"
+
+
+def _clean_en(s):
+    """영문명을 화면과 같은 꼴로 — check_report_text.clean_en(리포트 검토와 같은 함수)."""
+    return C.clean_en(s)
+
+
+def company_lines(names):
+    """[회사 설명] 줄 — '삼성전자(Samsung Electronics) · 업종 분류 반도체 · 삼성전자는 …'.
+
+    2026-10-08 판에서 회사의 사업을 틀리게 쓴 문장이 여럿 나왔다 — 콘크리트 펌프카 회사(전진건설로봇)를 '건설 중장비용 로봇',
+    핀테크 회사(더즌)를 '알뜰폰 통신사', 중형 조선소(대한조선)를 '블록 협력사', 협동로봇 회사(뉴로메카)를 '소프트웨어' 로.
+    영문명도 'Yujin Robotics'(유일로보틱스 — 유진로봇은 다른 회사다) · 'Daehan Cable'(대한전선) 처럼 지어냈다. 업종 분류만 보고
+    짐작하지 않게, 우리가 가진 기업 리포트의 첫 문장과 공시 영문명을 같이 준다(돈이 들지 않는다)."""
+    meta = _stock_meta()
+    out = []
+    for nm in names:
+        m = meta.get(nm)
+        if not m:
+            continue
+        tk, en, sec = m
+        desc = _first_sentence(tk) if tk else ""
+        out.append(f"  - {nm}({_clean_en(en) or '영문명 없음'}) · 업종 분류 {sec or '—'}" + (f" · {desc}" if desc else ""))
+    return out
+
+
+def mentioned(rep, extra=()):
+    """본문에 나온 상장사 이름(긴 이름부터) + extra. 두 글자 이름은 앞이 한글이 아닐 때만 — '투자 대상' 의 '대상' 을 줄인다."""
+    text = " ".join(v.get("ko", "") for v in C._flat_fields(rep).values())
+    seen = list(dict.fromkeys(extra))
+    for nm in sorted(_stock_meta(), key=len, reverse=True):
+        if nm in seen or len(nm) < 2:
+            continue
+        i = text.find(nm)
+        if i < 0 or (len(nm) == 2 and i > 0 and "가" <= text[i - 1] <= "힣"):
+            continue
+        seen.append(nm)
+        text = text.replace(nm, "□")
+    return seen[:30]
+
+
+def _count_band(n):
+    """상장 종목 수를 수치 없이 준다 — 본문에 옮겨 적지 않게. 2026-10-09 화장품 재작성이 세 회차 중 두 번 '37개 종목' ·
+    '상장 종목은 37개'를 써서 검사(live_number_hits · listed_count_hits)에 걸렸다. '참고용, 본문에 옮기지 말 것'만으로는 막지 못했다."""
+    return "많은 편" if n >= 150 else ("중간 수준" if n >= 50 else "적은 편")
+
+
 def build_prompt(sec, info, as_of=None):
     tops = "\n".join(f"  - {nm} (시총 {number_spacing.mcap_text(mc)})" for nm, mc in info["top"])
     day, lq, fin = _day(as_of), info.get("latestQ"), info.get("fin") or []
     head = (f"[작성 기준일] {day}" + (f" · 공시로 확인되는 가장 최근 분기는 {_qtext(lq)}" if lq else "") + "\n") if day else ""
     fins = ("[상위 종목 최근 분기 실적 · 공시 확정치, 수치 인용 가능]\n"
             + "\n".join(f"  - {x}" for x in fin) + "\n\n") if fin else ""
+    fins += group_summary(info)
+    comp = company_lines([nm for nm, _ in info.get("top") or []])
+    comps = ("[회사 설명 · 각 회사의 사업(기업 리포트 첫 문장) · 영문명 — 회사 소개와 영어 회사명은 이것에 맞출 것]\n"
+             + "\n".join(comp) + "\n\n") if comp else ""
     return (
         head
         + f"[업종] {sec}\n"
-        f"[집계 · 참고용, 본문에 수치로 옮기지 말 것] 상장 종목 {info['count']}개 · "
+        f"[집계 · 참고용, 본문에 수치로 옮기지 말 것] 상장 종목 수는 업종 가운데 {_count_band(info['count'])} · "
         f"업종 시가총액 합계 약 {info['mcap']}조원 (전체 시장의 약 {info['weight']}%)\n"
         f"[시총 상위 종목 · 종목명은 쓰되 시가총액 금액은 본문에 옮기지 말 것]\n{tops}\n\n"
         + fins
+        + comps
         + "위 업종에 대해 한국 증시 관점의 업종 분석을 작성하세요. 위 상위 종목들을 적절히 언급하고, "
         "반드시 웹 검색으로 최근 업황을 확인하세요.\n\n" + SCHEMA
     )
@@ -470,6 +585,245 @@ def live_number_hits(rep, info):
     return hits
 
 
+# 저장을 막는 리포트 검사 규칙(위험 등급은 모두) — 2026-10-09 상대 시점 · 영어 낱말을 더했다(10월 8일 판의 '지난달에만' ·
+# 'Phase에 진입' · 'niche 영역'). 리포트 화면용 품질 규칙(ROE · TTM · 말투 · 주당지표)은 업종 분석에 걸지 않는다. 보고서 문체(style —
+# '…있습니다' · '…있음.')는 업종 분석에도 같은 기준이라 건다(2026-10-09 · 30편 모두 0건).
+GATE_RULES = ("hanja", "meta", "hangul_en", "stale_time", "en_word", "style")
+
+# 상장 종목 수 — 어림수도 매 거래일 바뀌는 값이고 화면이 본문 위에서 정확한 수를 보여 준다. 10월 8일 판에 '170여 개' ·
+# '200개를 웃돌' · '20개에 못 미치는' · '100개를 넘지만' · 'roughly 170 listed companies' 가 있었다(live_number_hits 는 준 값과
+# 똑같은 수만 봐서 놓쳤다). 업계 집계('섬유패션 상장사 76개사')처럼 '개사' 로 끝나는 바깥 통계는 뺀다.
+_LISTED_KO = re.compile(r"상장\s*(?:종목|기업|회사|사)\s*(?:수(?:는|가)?|은|는|이|가)(?![가-힣])\s*[^.\n]{0,12}?\d[\d,]*\s*(?:여\s*)?개(?!사)"
+                        r"|(?<!상위 )(?<![~∼\d,])[1-9]\d[\d,]*\s*(?:여\s*)?개(?!사)(?:의)?\s*(?:상장\s*)?(?:종목|상장사)"
+                        r"|(?<!상위 )(?<![~∼\d,])[1-9]\d[\d,]*\s*(?:여\s*)?개(?:를|가|에)?\s*(?:웃도는|넘는|넘어서는|밑도는|못 미치는|안팎의|가량의)"
+                        r"\s*(?:상장\s*)?(?:종목|상장사)")
+_LISTED_EN = re.compile(r"\b\d{2,4}\+?\s+listed\s+(?:companies|names|stocks|firms|issuers)"
+                        r"|listed\s+(?:companies|names|stocks|firms)\s+(?:exceeds?|tops?|totals?|numbers?)\s+"
+                        r"(?:roughly\s+|about\s+|over\s+|more than\s+|nearly\s+)?\d{2,4}", re.I)
+
+
+def listed_count_hits(rep):
+    """본문에 상장 종목 수를 수치로 쓴 자리."""
+    hits = []
+    for path, v in C._flat_fields({k: rep.get(k) for k in BODY_KEYS + ("risks",) if rep.get(k)}).items():
+        for lang, pat in (("ko", _LISTED_KO), ("en", _LISTED_EN)):
+            m = pat.search(v.get(lang) or "")
+            if m:
+                hits.append(f"상장 종목 수({path}.{lang}) {m.group(0)!r}")
+    return hits
+
+
+# ── 회사별 숫자 · 묶음 말 대조(2026-10-10) ─────────────────────────────────────────────────────────────────────
+# 10월 8일 판의 숫자 오류는 상위 종목 재료(최근 분기 실적)를 묶어 옮기다 생겼다 — 'LS ELECTRIC · 효성중공업 · HD현대일렉트릭 ·
+# 가온전선 · 대한전선 · 일진전기 등 주요 기업 대부분이 … 영업이익이 60~90%대로 급증'(실제 37.2% · 55.5% · 113.0% 가 섞였다).
+# 재료에 묶음 요약을 주고(group_summary — 예방), 그래도 틀린 숫자는 저장 전에 잡는다(fin_hits — 검사).
+# 꼴이 분명한 문장만 본다: 회사 이름 바로 뒤의 '(최근 분기) 매출 X원 · 영업이익 Y원 … 전년 동기 대비 (각각) A%, B% 증가',
+# 여러 회사를 앞에 둔 '두 자릿수 매출 성장' · 'A~B%(대)로 급증' · '매출과 영업이익이 감소'. 문장에 최근 분기가 아닌 기간
+# (다른 해 · 다른 분기 · 상반기 · 누적 · 연간)이 있으면 보지 않는다. 회사 이름은 다른 낱말 속에서 찾지 않는다('SKT' 의 'KT').
+# 측정(2026-10-10): 지금 30편 위반 0 · 10월 8일 판(고치기 전)에서는 '60~90%대' 문장의 3개사를 잡았다.
+_FH_AMT = C._AMT_KO
+_FH_PCT = r"(\d[\d,]*(?:\.\d+)?)\s*%"
+_FH_UP = r"(?:증가|늘|성장|확대|급증|개선|상승)"
+_FH_DOWN = r"(?:감소|줄|축소|급감|하락|역성장)"
+_FH_MET = r"매출액|매출|영업이익|영업손실"
+
+
+def _yoy(c, p):
+    """전년 같은 분기 대비 증감률(%). 둘 다 양수일 때만 — 적자가 끼면 비율이 뜻을 잃는다."""
+    if c is None or p is None or c <= 0 or p <= 0:
+        return None
+    return (c / p - 1) * 100
+
+
+def _pct_text(x):
+    return f"{x:+,.1f}%"
+
+
+def group_summary(info):
+    """[상위 종목 묶음 요약] — 여러 회사를 묶어 쓸 때 틀리지 않게, 늘어난 회사 · 줄어든 회사 · 증감률 범위를 코드가 센다."""
+    facts, lq = (info or {}).get("facts") or {}, (info or {}).get("latestQ")
+    if not facts or not lq:
+        return ""
+    q = _qtext(lq)
+    lines = []
+    for key, nm in (("rev", "매출"), ("op", "영업이익")):
+        up, down, rng = [], [], []
+        to_p, to_l, stay_l = [], [], []
+        for name, f in facts.items():
+            c, pv = f.get(key), f.get(key + "_p")
+            r = _yoy(c, pv)
+            if r is not None:
+                (up if r > 0 else down).append(f"{name} {_pct_text(r)}")
+                if r > 0:
+                    rng.append(r)
+            elif key == "op" and c is not None and pv is not None:
+                if pv <= 0 < c:
+                    to_p.append(name)
+                elif c < 0 < pv:
+                    to_l.append(name)
+                elif c < 0 and pv < 0:
+                    stay_l.append(name)
+        if not (up or down or to_p or to_l or stay_l):
+            continue
+        parts = []
+        if up:
+            parts.append(f"늘어난 회사 {len(up)}곳({' · '.join(up)})")
+        if down:
+            parts.append(f"줄어든 회사 {len(down)}곳({' · '.join(down)})")
+        if to_p:
+            parts.append(f"흑자 전환 {len(to_p)}곳({' · '.join(to_p)})")
+        if to_l:
+            parts.append(f"적자 전환 {len(to_l)}곳({' · '.join(to_l)})")
+        if stay_l:
+            parts.append(f"적자 지속 {len(stay_l)}곳({' · '.join(stay_l)})")
+        if len(rng) >= 2:
+            parts.append(f"늘어난 회사의 증가율 범위 {min(rng):,.1f}~{max(rng):,.1f}%")
+        lines.append(f"  - {q} {nm}(전년 동기 대비): " + " · ".join(parts))
+    if not lines:
+        return ""
+    return ("[상위 종목 묶음 요약 · 코드가 계산 — 여러 회사를 묶어 쓸 때는 이 값만 근거로 쓴다]\n" + "\n".join(lines) + "\n"
+            "  - '대부분' · '모두' · '두 자릿수' · 'N~M%대'처럼 묶어 쓰는 말은 묶은 회사가 모두 그 말에 들어맞을 때만 쓴다. "
+            "맞지 않으면 회사별 값을 쓴다.\n\n")
+
+
+def _name_re(names):
+    """회사 이름 — 다른 낱말 속에서 찾지 않는다('SKT' 의 'KT' · 'KT&G' 의 'KT')."""
+    alt = "|".join(re.escape(x) for x in sorted(names, key=len, reverse=True))
+    return re.compile(rf"(?<![A-Za-z0-9가-힣&])(?:{alt})(?![A-Za-z0-9&])")
+
+
+def fin_hits(rep, info):
+    """본문의 상위 종목 숫자가 재료(최근 분기 실적)와 다른 자리. 저장 문턱 — defects 가 함께 본다."""
+    facts, lq = (info or {}).get("facts") or {}, (info or {}).get("latestQ")
+    if not facts or not lq:
+        return []
+    ly, lqn = lq.split("Q")
+    name_re = _name_re(facts)
+    other = re.compile(rf"(?<!\d)(?!{ly}년)20\d\d년|상반기|하반기|반기|누적|연간|1~2분기|(?<!\d)(?!{lqn}분기)[1-4]분기")
+    has_q = re.compile(rf"(?:{ly}년\s*)?{lqn}분기")
+    filler = re.compile(rf"(?:\s*(?:의|은|는|이|가|도|역시|또한|연결|별도|기준|공시|(?:{ly}년\s*)?{lqn}분기(?:에는|에도|에|은|는)?"
+                        rf"|같은 기간(?:에는|에도|에|은|는)?|같은 분기(?:에는|에도|에|은|는)?)(?![가-힣]))*\s*")
+    q_lead = re.compile(rf"(?:{ly}년\s*)?{lqn}분기\s*(?:연결\s*)?(?:기준\s*)?")
+    item = re.compile(rf"(?P<m>{_FH_MET})(?:은|는|이|가|도)?\s*(?:(?P<a>{_FH_AMT})(?:\([^()]*\))?)?")
+    sep = re.compile(r"\s*(?:,|·|와|과|및)\s*")
+    tail = re.compile(rf"\s*(?:으로|로)?(?:\s*(?:을|를)\s*(?:기록|달성|냈)(?:하며|해|했고|했으며|하고|으며|고)?)?\s*,?\s*"
+                      rf"(?:전년 동기 대비|전년 대비|1년 전보다|전년 같은 분기보다)\s*(?P<each>각각\s*)?{_FH_PCT}"
+                      rf"(?:\s*(?:,|와|과|및)\s*{_FH_PCT})?\s*(?:씩\s*)?(?P<v>{_FH_UP}|{_FH_DOWN})")
+    out = []
+
+    def yo(nm, key):
+        f = facts[nm]
+        return _yoy(f.get(key), f.get(key + "_p"))
+
+    def met_key(m):
+        return "rev" if m.startswith("매출") else "op"
+
+    for path, v in C._flat_fields({k: rep.get(k) for k in BODY_KEYS + ("risks",) if rep.get(k)}).items():
+        prev_q = False
+        for sent in re.split(r"(?<=[.!?])\s+", v.get("ko") or ""):
+            q_here = bool(has_q.search(sent)) and not other.search(sent)
+            occ = [(m.start(), m.end(), m.group(0)) for m in name_re.finditer(sent)]
+            # ① 한 회사의 금액 · 증감률 — 이름 바로 뒤의 지표 사슬, 또는 그 회사 몫(다음 회사 이름 전)에서 '2분기 매출 …' 처럼
+            #    최근 분기 바로 뒤에 오는 지표 사슬. 기간을 전혀 밝히지 않은 문장은 그 회사의 어느 기간 값과도 다를 때만 잡는다.
+            no_period = not has_q.search(sent) and not other.search(sent) and not re.search(r"같은 기간|같은 분기", sent)
+            starts = []
+            for i, (a0, a1, nm) in enumerate(occ):
+                fm = filler.match(sent, a1)
+                same = "같은 기간" in fm.group(0) or "같은 분기" in fm.group(0)
+                if q_here or (same and prev_q and not other.search(sent)):
+                    starts.append((nm, fm.end(), True))
+                    stop = occ[i + 1][0] if i + 1 < len(occ) else len(sent)
+                    for qm in q_lead.finditer(sent, fm.end(), stop):
+                        if qm.end() > fm.end():
+                            starts.append((nm, qm.end(), True))
+                elif no_period:
+                    starts.append((nm, fm.end(), False))
+            for nm, pos, strict in starts:
+                items = []
+                while True:
+                    im = item.match(sent, pos)
+                    if not im:
+                        break
+                    items.append((im.group("m"), im.group("a"), im.end()))
+                    pos = im.end()
+                    sm = sep.match(sent, pos)
+                    if not sm or not item.match(sent, sm.end()):
+                        break
+                    pos = sm.end()
+                for met, amt, end in items:
+                    if not amt:
+                        continue
+                    key, val = met_key(met), facts[nm].get(met_key(met))
+                    if val is None:
+                        continue
+                    num, unit = C._amt_value(amt)
+                    if unit is None:
+                        continue
+                    loss = met == "영업손실" or bool(re.match(r"\s*(?:의\s*)?(?:적자|손실)", sent[end:]))
+                    if strict:
+                        if (val < 0) != loss or abs(abs(val) - num) > unit * 1.5:
+                            out.append(f"숫자 대조({path}) {nm} {met} {amt} — 재료는 {'영업손실 ' if val < 0 else ''}{_won(abs(val))}")
+                    else:
+                        alls = facts[nm].get(key + "_all") or []
+                        if alls and not any((x < 0) == loss and abs(abs(x) - num) <= unit * 1.5 for x in alls):
+                            out.append(f"숫자 대조({path}) {nm} {met} {amt} — 이 회사의 어느 기간 값과도 다르다"
+                                       f"(최근 분기 {'영업손실 ' if val < 0 else ''}{_won(abs(val))})")
+                tm = tail.match(sent, pos) if (items and strict) else None
+                if tm:
+                    pcts = [x for x in (tm.group(2), tm.group(3)) if x]
+                    mets = [m for m, _, _ in items]
+                    pairs = list(zip(mets, pcts)) if len(pcts) == len(mets) else []
+                    sign = 1 if re.match(_FH_UP, tm.group("v")) else -1
+                    for met, pc in pairs:
+                        r = yo(nm, met_key(met))
+                        if r is None:
+                            continue
+                        want = float(pc.replace(",", "")) * sign
+                        tol = 0.15 if "." in pc else 0.55
+                        if abs(want - round(r, 1)) > tol:
+                            out.append(f"숫자 대조({path}) {nm} {met} 전년 동기 대비 {pc}% — 재료는 {_pct_text(r)}")
+            # ② 여러 회사를 앞에 둔 묶음 말
+            if q_here and len({nm for _, _, nm in occ}) >= 2:
+                most = bool(re.search(r"대부분|상당수|대체로", sent))
+
+                def judge(label, names, ok, keys):
+                    vals = [(n, ok(n)) for n in dict.fromkeys(names)]
+                    bad = [n for n, good in vals if good is False]
+                    seen = [n for n, good in vals if good is not None]
+                    if bad and (not most or len(bad) * 3 > len(seen)):
+                        def why(n):
+                            return " ".join(f"{'매출' if k == 'rev' else '영업이익'} {_pct_text(yo(n, k))}" for k in keys
+                                            if yo(n, k) is not None)
+                        out.append(f"묶음 말({path}) '{label}' — 들어맞지 않는 회사: " + " · ".join(f"{n}({why(n)})" for n in bad))
+
+                m2 = re.search(rf"(세|두) 자릿수(?: 이상)?(?:의)?\s*({_FH_MET})\s*(?:성장|증가)|({_FH_MET})(?:이|은|도)?\s*(세|두) 자릿수(?: 이상)?\s*(?:성장|증가|늘)", sent)
+                if m2:
+                    lo = 100 if (m2.group(1) or m2.group(4)) == "세" else 10
+                    key = met_key(m2.group(2) or m2.group(3))
+                    names = [nm for a0, _, nm in occ if a0 < m2.start()]
+                    judge(m2.group(0), names, lambda n: None if yo(n, key) is None else yo(n, key) >= lo, [key])
+                m3 = re.search(rf"(\d[\d,]*(?:\.\d+)?)\s*~\s*(\d[\d,]*(?:\.\d+)?)\s*%(대)?(?:로|의|에)?\s*(?:\S+\s*)?(?:{_FH_UP}|{_FH_DOWN})", sent)
+                if m3:
+                    before = sent[:m3.start()]
+                    km = list(re.finditer(_FH_MET, before))
+                    if km:
+                        key = met_key(km[-1].group(0))
+                        lo3 = float(m3.group(1).replace(",", ""))
+                        hi3 = float(m3.group(2).replace(",", "")) + (9.99 if m3.group(3) else 0)
+                        names = [nm for a0, _, nm in occ if a0 < m3.start()]
+                        judge(m3.group(0), names, lambda n: None if yo(n, key) is None else lo3 - 0.55 <= yo(n, key) <= hi3 + 0.55,
+                              [key])
+                m4 = re.search(rf"(매출과 영업이익|영업이익과 매출|{_FH_MET})(?:이|은|도|가)?\s*(?:모두\s*)?(?:전년 (?:동기 )?대비\s*)?(?:{_FH_DOWN})", sent)
+                if m4:
+                    keys = ["rev", "op"] if "과" in m4.group(1) else [met_key(m4.group(1))]
+                    gap = [nm for a0, a1, nm in occ if a0 < m4.start() and len(re.sub(r"[\s·,와과및은는이가도]|등", "", sent[a1:m4.start()])) <= 30]
+                    if len(gap) >= 2:
+                        judge(m4.group(0), gap, lambda n: None if any(yo(n, k) is None for k in keys)
+                              else all(yo(n, k) < 0 for k in keys), keys)
+            prev_q = q_here
+    return list(dict.fromkeys(out))
+
+
 def defects(rep, message=None, info=None, sources=None):
     """저장하면 안 되는 결함 목록. 비어 있으면 정상.
 
@@ -513,11 +867,17 @@ def defects(rep, message=None, info=None, sources=None):
     if "�" in json.dumps(rep, ensure_ascii=False):
         out.append("깨진 문자(U+FFFD)")
     out += live_number_hits(rep, info)
+    out += listed_count_hits(rep)
+    out += fin_hits(rep, info)
     for h in C.check(_as_report(rep)):
-        if h["level"] == "위험" or h["rule"] in ("hanja", "meta", "hangul_en"):
+        if h["level"] == "위험" or h["rule"] in GATE_RULES:
             out.append(f"글자 결함 {h['rule']}({_FROM_REPORT.get(h['section'], h['section'])}) {h['match']!r}")
     if sources is not None and not sources:
         out.append("출처 0건(웹 검색 인용 없음)")
+    # 협의 없이 쓰지 않는 사이트(치킨스탁 등)가 검색 결과 · 인용에 들어왔으면 그 글은 쓰지 않는다(2026-10-19) — 다시 쓴다
+    leak = g.no_use_urls(message) if message is not None else []
+    if leak:
+        out.append(f"쓰지 않기로 한 사이트가 검색 결과에 들어옴({leak[0]})")
     return out
 
 
@@ -566,7 +926,7 @@ def _tally(use, message):
 # 어긋난다 — 토큰 수 자체는 그대로 남으므로 나중에 다시 계산할 수 있다.
 # 리포트 생성기의 배치 단가표(generate_reports_v2._PRICE)와 같아야 한다 — 한때 옛 정가의
 # 절반을 적어 두어 추정액이 실제보다 1.5배 크게 찍혔다(check_sectors 가 두 표를 견준다).
-_RATE = {"claude-sonnet-5": (1.00, 5.00), "claude-opus-5": (2.50, 12.50)}
+_RATE = {"claude-sonnet-5-5": (1.00, 5.00), "claude-sonnet-5": (1.00, 5.00), "claude-opus-5": (2.50, 12.50)}
 _WEB_SEARCH_PER_1K = 10.0                       # 웹 검색 1,000회당(배치 할인 없음)
 
 
@@ -586,10 +946,124 @@ def _log_usage(use, model):
         log(f"  요금표에 없는 모델({model}) — 토큰 수로 직접 계산할 것")
 
 
+def prepare(rep):
+    """저장 전 결정적 정리 — 태그 · 마크다운(clean) · 한자(fix_hanja) · 금액 표기와 천 단위 쉼표(number_spacing).
+    돈이 들지 않고 몇 번 돌려도 결과가 같다. 리포트 생성기와 같은 정리다."""
+    rep = clean(rep)
+    try:
+        rep, _ = fix_hanja.walk(rep)
+    except Exception as e:                              # noqa: BLE001
+        log(f"  · (한자 변환 실패: {type(e).__name__}: {e})")
+    _n, rep = number_spacing.normalize_report(rep, commas=True)
+    return rep
+
+
+# 검토로 고칠 수 없는 결함 — 글이 잘렸거나 비었거나 출처가 없다. 이런 글은 다시 쓴다(다음 회차).
+_REWRITE = ("max_tokens", "리스크 3개 미만", " 빔", "문장 안 끝남", "출처 0건", "쓰지 않기로 한 사이트")
+# 검토를 켜고 끈다. 끄면 2026-10-08 판처럼 기계 검사만 하고 저장한다(검토 비용이 들지 않는다).
+# 기본은 끔(2026-10-09) — 시험(review_replay)에서 검토 모델이 출처 있는 수치를 '재료에 없다'며 지우고, 영문명을 대소문자 ·
+# 옛 이름으로 바꾸는 틀린 고침을 냈다. 고친 뒤 시험을 통과하면 SECTOR_REVIEW=1 로 켠다.
+REVIEW = os.getenv("SECTOR_REVIEW", "0") == "1"
+REVIEW_KEYS = BODY_KEYS + ("risks",)
+
+
+def _needs_rewrite(why):
+    return [w for w in why if any(t in w for t in _REWRITE)]
+
+
+_PCT = re.compile(r"(\d[\d,]*(?:\.\d+)?)\s*%")
+
+
+def review_hints(rep, info):
+    """검토에 넘길 '확인할 곳' — 기계가 의심한 자리(틀렸을 때만 고치라고 한다).
+      · 재료에 있는 회사가 나온 문장의 증감률이 그 회사 재료에 없다(묶음 범위 · 다른 회사 값 · 오기일 수 있다)
+      · 한 문장에서 같은 말이 되풀이된다
+      · 한국어에 있는 비율이 같은 칸의 영어에 없다"""
+    fin = (info or {}).get("fin") or []
+    comp = {}
+    for line in fin:
+        nm = line.split("(")[0].split(":")[0].strip()
+        comp[nm] = {x.replace(",", "") for x in _PCT.findall(line)}
+    out = []
+    for path, v in C._flat_fields({k: rep.get(k) for k in REVIEW_KEYS if rep.get(k)}).items():
+        ko, en = v.get("ko") or "", v.get("en") or ""
+        for sent in re.split(r"(?<=[.!?])\s+", ko):
+            names = [n for n in comp if n and n in sent]
+            pcts = [x.replace(",", "") for x in _PCT.findall(sent)]
+            if names and pcts:
+                miss = [x for x in pcts if not any(x in comp[n] for n in names)]
+                if miss:
+                    ref = " / ".join(f"{n}: {', '.join(sorted(comp[n])) or '증감률 없음'}" for n in names)
+                    out.append(f"[{path}] 재료에 없는 비율 {miss} — 재료({ref}) · 문장: {sent[:140]}")
+            toks = sent.split()
+            for n in (3, 2):
+                grams = [" ".join(toks[i:i + n]) for i in range(len(toks) - n + 1)]
+                dup = next((g for i, g in enumerate(grams) if len(g.replace(" ", "")) >= 6 and not re.search(r"\d", g)
+                            and g in grams[i + n:]), None)
+                if dup:
+                    out.append(f"[{path}] 같은 말 되풀이 '{dup}' · 문장: {sent[:140]}")
+                    break
+        miss_en = sorted({x for x in (y.replace(",", "") for y in _PCT.findall(ko))} - {y.replace(",", "") for y in _PCT.findall(en)})
+        if miss_en:
+            out.append(f"[{path}] 한국어의 비율 {miss_en[:6]} 이 영어에 없다")
+    return out[:25]
+
+
+def review_round(cl, cand, agg, as_of, use):
+    """검토 배치 하나 — {업종: (고친 글 또는 None, 기록)}. 배치로만 보낸다(요금 절반 · 즉시 호출 창구는 막혀 있다).
+    재료(상위 종목 분기 실적) · 회사 설명(본문에 나온 회사의 기업 리포트 첫 문장 · 영문명) · 기계 검사 결과를 함께 준다."""
+    day = _day(as_of) or as_of
+    reqs, cmap, ctx = [], {}, {}
+    for sec, (rep, _srcs, why) in cand.items():
+        info = agg.get(sec) or {}
+        part = {k: rep[k] for k in REVIEW_KEYS if k in rep}
+        material = "\n".join(f"  - {x}" for x in info.get("fin") or [])
+        names = "\n".join(company_lines(mentioned(part, [nm for nm, _ in info.get("top") or []])))
+        hits = [dict(h, section=_FROM_REPORT.get(h["section"], h["section"])) for h in C.check(_as_report(rep))
+                if h["level"] == "위험" or h["rule"] in GATE_RULES]
+        hits += [{"section": w.split("(")[1].split(")")[0] if "(" in w else "본문", "rule": "listed_count",
+                  "why": "상장 종목 수를 수치로 썼다 — 관계로", "sentence": w} for w in why if w.startswith("상장 종목 수")]
+        hits += [{"section": "본문", "rule": "live_number", "why": "집계 수치를 본문에 옮겼다 — 관계로", "sentence": w}
+                 for w in why if "본문에 박힘" in w]
+        params = C.review_params(part, kind="sector", as_of=day, material=material, names=names, hits=hits,
+                                 hints=review_hints(rep, info))
+        cid = "rv_" + _cid(sec)[4:]
+        reqs.append(Request(custom_id=cid, params=MessageCreateParamsNonStreaming(**params)))
+        cmap[cid] = sec
+        ctx[sec] = (part, f"{material}\n{names}")
+    batch = cl.messages.batches.create(requests=reqs)
+    log(f"- 🔎 검토 배치 제출: {batch.id} ({len(reqs)}건 · {C.REVIEW_MODEL})")
+    if not poll(cl, batch.id):
+        raise RuntimeError(f"검토 배치가 {MAX_WAIT // 60}분 안에 끝나지 않았다({batch.id})")
+    out = {}
+    for r in cl.messages.batches.results(batch.id):
+        sec = cmap.get(r.custom_id)
+        if not sec:
+            continue
+        if r.result.type != "succeeded":
+            out[sec] = (None, f"검토 {r.result.type}")
+            continue
+        _tally(use, r.result.message)
+        text = "".join(getattr(x, "text", "") for x in r.result.message.content if getattr(x, "type", "") == "text")
+        part, extra = ctx[sec]
+        new_part, applied, dropped = C.apply_review(part, text, extra=extra, as_of=as_of)
+        if new_part is None:
+            out[sec] = (None, "검토 답을 읽지 못함 — " + "; ".join(dropped))
+            continue
+        merged = dict(cand[sec][0])
+        merged.update(new_part)
+        out[sec] = (merged, f"검토 고침 {applied}곳" + (f" · 버림 {len(dropped)}곳({'; '.join(dropped[:2])})" if dropped else ""))
+    return out
+
+
 def collect(cl, as_of, strict_sources=True):
     """회수해 저장한다. strict_sources 면 웹 검색 인용이 0건인 글을 거르고(다음 회차가 다시 쓴다),
     아니면 받는다 — 마지막 회차에서까지 거르면 그 업종은 옛 글에 갇힌 채 돈만 나간다. 그렇게 받은
-    글은 출처가 없으므로 화면이 '웹 검색 참고' 를 빼고 보여 준다(build_industry_comp)."""
+    글은 출처가 없으므로 화면이 '웹 검색 참고' 를 빼고 보여 준다(build_industry_comp).
+
+    2026-10-09 — 저장 전에 검토를 한 번 거친다(review_round · 배치). 기계 검사가 못 잡는 깨진 문장 · 재료와 다른 서술 ·
+    앞뒤 모순 · 낡은 기사 · 회사 설명 오류를 고친다. 고친 글을 다시 정리 · 검사해 결함이 하나라도 남으면 저장하지 않는다
+    (있던 글 그대로 · 다음 회차가 다시 만든다). 검토 답이 없거나 읽을 수 없는 업종도 저장하지 않는다."""
     if not STATE.exists():
         log("❌ state 없음"); sys.exit(1)
     st = json.loads(STATE.read_text(encoding="utf-8"))
@@ -601,8 +1075,10 @@ def collect(cl, as_of, strict_sources=True):
     # 제출할 때 적어 둔 집계를 쓴다. 옛 state 에는 없으므로 그때만 다시 읽는다.
     agg = st.get("agg") or load_sectors()
     use = defaultdict(int)
+    use_rv = defaultdict(int)
     dropped = []                       # 결함으로 저장하지 않은 업종
     ok = fail = 0
+    cand = {}                          # 검토로 넘길 글 — {업종: (글, 출처, 결함)}
     for result in cl.messages.batches.results(st["batch_id"]):
         sec = cid_map.get(result.custom_id)
         if not sec:
@@ -613,33 +1089,56 @@ def collect(cl, as_of, strict_sources=True):
         _tally(use, result.result.message)
         try:
             text = g.extract_text(result.result.message)
-            rep = clean(g.parse_report(text))
+            rep = prepare(g.parse_report(text))
             srcs = g.collect_sources(result.result.message)
             why = defects(rep, result.result.message, agg.get(sec),
                           sources=srcs if strict_sources else None)
-            if why:
+            hard = _needs_rewrite(why) if REVIEW else why
+            if hard:
                 fail += 1; dropped.append(sec)
                 log(f"  · ⚠️ {sec} 불완전 — 건너뜀 ({'; '.join(why)})"); continue
-            rep.pop("sources", None)        # 출처는 웹 검색 인용에서만 — 모델이 글 안에 적은 목록은 쓰지 않는다
-            if srcs:
-                rep["sources"] = srcs[:10]
-            else:
-                log(f"  · {sec} 출처 0건 — 마지막 회차라 저장한다(화면은 '웹 검색 참고' 를 빼고 보인다)")
-            rep["sector"] = sec
-            # 업종별 작성 시점. FORCE 없이 돌리면 새로 만든 업종과 예전 것이 섞이므로
-            # 전체 lastUpdated 만으로는 화면에 정확한 날짜를 못 쓴다.
-            rep["generatedAt"] = as_of
-            sectors[sec] = rep
-            ok += 1
+            cand[sec] = (rep, srcs, why)
         except Exception as e:
             fail += 1; dropped.append(sec)
             log(f"  · ⚠️ {sec} 파싱 실패: {e}")
+    reviewed = {}
+    if cand and REVIEW:
+        try:
+            reviewed = review_round(cl, cand, agg, st.get("created") or as_of, use_rv)
+        except Exception as e:                           # noqa: BLE001
+            log(f"  · ⚠️ 검토 배치 실패: {type(e).__name__}: {e} — 이번 회수분은 저장하지 않는다(다음 회차가 다시 만든다)")
+    for sec, (rep, srcs, why) in cand.items():
+        if REVIEW:
+            got, note = reviewed.get(sec, (None, "검토 답 없음"))
+            if got is None:
+                fail += 1; dropped.append(sec)
+                log(f"  · ⚠️ {sec} {note} — 저장하지 않음"); continue
+            rep = prepare(got)
+            why = defects(rep, None, agg.get(sec), sources=srcs if strict_sources else None)
+            if why:
+                fail += 1; dropped.append(sec)
+                log(f"  · ⚠️ {sec} 검토 뒤에도 결함 — 저장하지 않음 ({'; '.join(why)})"); continue
+            log(f"  · 🔎 {sec} {note}")
+        rep.pop("sources", None)        # 출처는 웹 검색 인용에서만 — 모델이 글 안에 적은 목록은 쓰지 않는다
+        if srcs:
+            rep["sources"] = srcs[:10]
+        else:
+            log(f"  · {sec} 출처 0건 — 마지막 회차라 저장한다(화면은 '웹 검색 참고' 를 빼고 보인다)")
+        rep["sector"] = sec
+        # 업종별 작성 시점. FORCE 없이 돌리면 새로 만든 업종과 예전 것이 섞이므로
+        # 전체 lastUpdated 만으로는 화면에 정확한 날짜를 못 쓴다.
+        rep["generatedAt"] = as_of
+        sectors[sec] = rep
+        ok += 1
     # 걸러진 업종을 적어 둔다. 다음 실행이 이 목록만 다시 만든다.
     save_retry(dropped, as_of)
     _log_usage(use, st.get("model", MODEL))
+    if use_rv:
+        log("  (검토)")
+        _log_usage(use_rv, C.REVIEW_MODEL)
     payload = {"lastUpdated": as_of, "model": st.get("model", MODEL), "sectors": sectors}
-    # 금액 표기 통일 — 리포트와 같은 규칙(한글 맞춤법 제44항)
-    _nsp, payload = number_spacing.normalize_report(payload)
+    # 금액 표기 통일 — 리포트와 같은 규칙(한글 맞춤법 제44항 · 천 단위 쉼표)
+    _nsp, payload = number_spacing.normalize_report(payload, commas=True)
     if _nsp:
         print(f"  · 금액 표기 {_nsp}곳 정리")
     OUT_JS.write_text("// KOS ai — 업종 AI 분석 (자동 생성). 직접 수정 금지.\n"

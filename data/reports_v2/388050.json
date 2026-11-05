@@ -1,169 +1,159 @@
 {
  "title": {
-  "ko": "관급 텃밭 지투파워, 원전·ESS로 영역 확장",
-  "en": "G2Power Expands From Public Tenders Into Nuclear and ESS"
+  "ko": "원전·ESS 확장 속 분기 변동성 뚜렷",
+  "en": "G2Power: Nuclear and ESS Expansion Amid Sharp Quarterly Swings"
  },
  "lead": {
-  "ko": "수배전반·태양광 관급 시장에서 점유율 1위를 지켜온 지투파워가 원전 설비와 액침냉각 ESS로 사업 영역을 넓히는 가운데, 2025년 이익 회복과 2026년 상반기 실적 변동성이 함께 나타나고 있다.",
-  "en": "G2Power, a long-time No.1 player in Korea's public-sector switchgear and solar tenders, is expanding into nuclear power equipment and immersion-cooled ESS, even as 2025 profitability recovery has been followed by uneven quarterly results in the first half of 2026."
+  "ko": "지투파워는 관급 수배전반 1위 지위를 바탕으로 원전용 배전반과 액침냉각 ESS로 사업을 넓히며 2025년까지 이익이 뚜렷이 개선됐으나, 2026년 들어서는 4분기 집중형 계절성에 따른 분기 조정이 함께 나타나고 있다.",
+  "en": "G2Power has expanded from its leading position in publicly procured switchgear into nuclear-grade switchgear and liquid-cooled ESS, driving a clear earnings recovery through 2025, even as 2026 has shown a seasonal pullback following its fourth-quarter peak."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 774억원, 영업이익 88억원으로 전년 대비 큰 폭 개선되며 영업이익률이 11.4%까지 상승했다.",
-   "en": "2025 revenue reached KRW 77.4 billion with operating profit of KRW 8.8 billion, lifting the operating margin to 11.4%, a marked improvement from prior years."
+   "ko": "2022~2025년 매출이 374억원→494억원→554억원→774억원으로 3년 연속 증가했다.",
+   "en": "Revenue rose for three straight years, from KRW 37.4 billion in 2022 to KRW 77.4 billion in 2025."
   },
   {
-   "ko": "수배전반 조달청 점유율 1위, ESS 관급 점유율 25.6%, 태양광 관급 4위 등 공공시장 지위를 유지하고 있다.",
-   "en": "The company holds the No.1 share in public-sector switchgear procurement, a 25.6% share in public ESS tenders, and ranks No.4 in public solar tenders."
+   "ko": "영업이익은 2023년 적자(-9.5억원) 이후 2024년 흑자전환, 2025년에도 88.1억원으로 증가해 영업이익률이 11.4%까지 올라갔다.",
+   "en": "Operating profit turned to a loss of KRW 945 million in 2023, swung back to profit in 2024, and rose to KRW 8.81 billion in 2025, lifting the operating margin to 11.4%."
   },
   {
-   "ko": "신한울 3·4호기 고압배전반(430억원)을 수주하며 원전 설비 시장에 진입했고, 한빛 3·4호기 입찰 결과를 기다리고 있다.",
-   "en": "The company won a KRW 43 billion high-voltage switchgear contract for the Shin Hanul 3&4 nuclear units and is awaiting results of a bid for the Hanbit 3&4 units."
+   "ko": "2025년 4분기 정점 이후 2026년 1·2분기 매출·영업이익·지배주주순이익이 2개 분기 연속 감소했다.",
+   "en": "After peaking in Q4 2025, revenue, operating profit, and net profit attributable to owners all declined for two consecutive quarters through Q2 2026."
   },
   {
-   "ko": "차세대 액침냉각 ESS를 2026년 상용화했으며 하반기부터 양산·납품을 시작할 계획이다.",
-   "en": "The company commercialized its next-generation immersion-cooled ESS in 2026 and plans to begin mass production and delivery in the second half of the year."
+   "ko": "신한울 3·4호기 배전반(430억원 규모) 수주, 한빛 3·4호기 교체 입찰 참여, 액침냉각 ESS 신제품 등 원전·ESS 신사업이 확대되고 있다.",
+   "en": "New growth drivers include the Shin-Hanul 3&4 switchgear order worth roughly KRW 43 billion, participation in the Hanbit 3&4 replacement bid, and a new liquid-immersion-cooled ESS product."
   },
   {
-   "ko": "2026년 9월 30일 이사회에서 2030년까지 매출 3,000억원·영업이익 330억원·시가총액 5,000억원을 목표로 하는 기업가치 제고 계획을 발표했다.",
-   "en": "On September 30, 2026, the board approved a value-up plan targeting KRW 300 billion revenue, KRW 33 billion operating profit, and a KRW 500 billion market cap by 2030."
+   "ko": "조달청의 재처분 제재, 경영권 매각 재무산 등 공공조달 의존 구조와 지배구조 관련 불확실성이 함께 상존한다.",
+   "en": "Risks persist around a renewed Public Procurement Service sanction and a second failed attempt to sell management control, both tied to the company's reliance on public-tender channels."
   }
  ],
  "business": {
-  "ko": "지투파워는 2010년 설립된 스마트그리드·중전기기 전문기업으로 수배전반, 태양광발전시스템, ESS·PCS(인버터)를 3대 제품군으로 영위한다. 주요 고객은 지자체·국가기관 등 공공기관이며 조달청을 통한 관급 수주 비중이 높은 사업구조다. 핵심 차별화 기술은 AI 기반 상태감시진단(CMD) 시스템으로, 각 제품에 이를 탑재해 전력설비의 이상 징후를 실시간으로 진단하는 솔루션을 제공한다. 이 기술은 정부 기관으로부터 신기술·신제품으로 인정받아 공공기관 매출 확대에 기여한 것으로 파악된다. 경쟁구도에서는 수배전반 부문 조달청 점유율 1위, ESS 부문 관급 점유율 25.6%, 태양광 부문 관급 4위를 기록하며 중소형 관급 중전기기 시장에서 확고한 지위를 다졌다. 최근에는 KEPIC 인증과 원전 최고 안전등급인 Q-Class 인증을 취득해 원자력 발전 설비 시장으로 사업영역을 확장했다. 해외 진출을 위해 '지투아메리카'를 설립하고 북미·인도·중앙아시아 시장을 겨냥하고 있으며, 건물일체형 태양광(BIPV)과 가상발전소(VPP) 플랫폼 등 신사업도 병행하고 있다. 전통적으로 대형 중전기업체들이 민간·대규모 발전 프로젝트에 집중하는 반면, 지투파워는 관급·중소형 인프라 시장에 특화된 니치 플레이어로 포지셔닝되어 있다.",
-  "en": "Founded in 2010, G2Power is a smart-grid and heavy electrical equipment specialist operating three core product lines: switchgear, solar power systems, and ESS/PCS (inverters). Its primary customers are public institutions such as local governments and national agencies, with a business structure heavily weighted toward public procurement through the Public Procurement Service. The company's key differentiator is its AI-based condition monitoring and diagnosis (CMD) system, embedded across its products to provide real-time diagnostics of power equipment anomalies. This technology has been recognized by government agencies as a new technology and product, reportedly contributing to growth in public-sector sales. Competitively, the company holds the No.1 share in public switchgear procurement, a 25.6% share in public ESS tenders, and ranks No.4 in public solar tenders, establishing a solid position in the small-to-mid-size public heavy electrical equipment market. More recently, it obtained KEPIC certification and the highest nuclear safety grade, Q-Class certification, expanding into the nuclear power equipment market. For overseas expansion, it established 'G2 America' targeting North America, India, and Central Asia, while also pursuing new businesses such as building-integrated photovoltaics (BIPV) and virtual power plant (VPP) platforms. While large heavy-electric manufacturers typically focus on private-sector and large-scale power projects, G2Power is positioned as a niche player specializing in public and small-to-mid-size infrastructure markets."
+  "ko": "지투파워는 2010년 설립돼 2022년 4월 코스닥에 상장한 스마트그리드 솔루션 기업으로, 상태감시진단(CMD) 기술을 핵심 역량으로 내세운다. 주력 제품은 수배전반, 태양광발전시스템(EPC 포함), 에너지저장시스템(ESS), 인버터(PCS)이며 각 제품에 CMD 센서를 탑재해 부분방전 등 고장·화재 징후를 사전에 감지한다. 증권사 자료에 따르면 2024년 기준 매출 비중은 배전반 63%, 태양광 발전 26%로, 매출의 70% 이상이 공공조달향에서 발생한다. 특히 수배전반 부문은 관급시장 내 수년간 점유율 1위를 유지해온 것으로 전해진다. 고객군은 중앙정부·지자체·공기업 등 공공기관이 중심이며, 최근 민수와 해외로 판매 채널을 넓히고 있다. 신성장축으로는 원전용 배전반 사업이 있는데, 한국투자증권에 따르면 원전 기자재 납품에 필요한 KEPIC 인증과 한수원 Q-Class 공급자 자격을 기반으로 2025년 2월 신한울 3·4호기 고압배전반 430억원을 수주한 바 있다. 또 다른 축은 2024년 산업부 국책과제 주관기업으로 선정돼 2025년 1월 개발을 완료한 AI 기반 액침냉각 ESS 신제품이다. 수배전반 관급시장은 다수의 중소업체가 경쟁하되 조달청 인증이 진입장벽으로 작용하는 구조로, 대형 전력기기 시장과는 결이 다른 틈새에 가깝다. 회사는 태양광 종속회사(지투에너지 등)를 통해 발전소 상업운전과 운영관리까지 사업영역을 넓히고 있다.",
+  "en": "G2Power was founded in 2010 and listed on KOSDAQ in April 2022 as a smart-grid solutions company built around its condition-monitoring-and-diagnosis (CMD) technology. Its core products are switchgear, solar power systems (including EPC work), energy storage systems (ESS), and power conditioning systems (PCS), each fitted with CMD sensors that detect partial-discharge and other failure or fire signs in advance. According to a brokerage report, as of 2024 the revenue mix was about 63% switchgear and 26% solar, with more than 70% of sales coming from public-sector procurement. The switchgear business in particular is reported to have held the top market share in the public-tender channel for several years. Its customer base is centered on central and local government bodies and state enterprises, while the company has recently been expanding into private-sector and overseas channels. One new growth pillar is nuclear-grade switchgear; according to Korea Investment & Securities, backed by KEPIC certification and Korea Hydro & Nuclear Power's Q-Class supplier qualification, G2Power won a KRW 43 billion high-voltage switchgear order for the Shin-Hanul 3&4 nuclear plant in February 2025. A second pillar is a new AI-based liquid-immersion-cooled ESS product, developed by 2025 after the company was selected to lead a government-backed R&D project in 2024. The public-tender switchgear market features many small and mid-sized competitors, with Public Procurement Service certification acting as a barrier to entry, placing the company in a niche distinct from the large-scale power equipment market. Through solar subsidiaries such as G2Energy, the company has also expanded into commercial plant operation and asset management."
  },
  "earnings": {
-  "ko": "지투파워의 연간 실적은 2022년부터 뚜렷한 회복 흐름을 보였다. 2022년 매출 374억원, 영업이익 2억원 수준에 그쳤고 2023년에는 매출이 494억원으로 늘었음에도 영업손실 9억원을 기록하며 영업이익률이 -1.9%로 적자 전환했다. 이후 2024년 매출 554억원, 영업이익 37억원(영업이익률 6.6%)으로 흑자 기조를 회복했고, 2025년에는 매출 774억원, 영업이익 88억원, 지배주주 순이익 56억원을 기록하며 영업이익률이 11.4%까지 개선됐다. 분기 흐름을 보면 계절성이 뚜렷한데, 2025년 2분기 매출 142억원·영업이익 6억원(영업이익률 약 4%)에서 3분기 156억원·22억원, 4분기에는 관급 예산 집행이 집중되며 매출 375억원·영업이익 63억원(영업이익률 약 17%)까지 확대됐다. 2026년 1분기에는 매출 192억원·영업이익 23억원으로 전년 동기 대비 개선된 흐름을 이어갔으나, 2분기에는 매출이 104억원, 영업이익이 4억원으로 다시 낮아지며 상반기 계절적 저점 패턴이 재현됐다. 최근 네 개 분기(2025년 3분기~2026년 2분기) 누적 지배주주 순이익은 약 75억원으로, 2025년 연간 순이익 56억원을 이미 넘어선 수준이다. 2025년 연간 현금흐름표 기준 영업활동현금흐름은 180억원으로 전년(69억원) 대비 크게 늘어 이익 개선과 함께 현금창출력도 강화된 것으로 나타난다. 다만 부채비율은 2024년 74.6%에서 2025년 113.3%로 크게 높아졌는데, 이는 외형 확장에 따른 재고·미청구공사 등 운전자본 부담이 커진 영향으로 해석될 수 있다.",
-  "en": "G2Power's annual results show a clear recovery trend since 2022. Revenue stood at KRW 37.4 billion with operating profit of just KRW 0.2 billion in 2022, and although revenue grew to KRW 49.4 billion in 2023, the company posted an operating loss of KRW 0.9 billion, turning the operating margin negative at -1.9%. Profitability recovered in 2024 with revenue of KRW 55.4 billion and operating profit of KRW 3.7 billion (6.6% margin), before revenue reached KRW 77.4 billion and operating profit KRW 8.8 billion in 2025, with net profit attributable to owners of KRW 5.6 billion and an operating margin that improved to 11.4%. Quarterly trends show pronounced seasonality: from KRW 14.2 billion revenue and KRW 0.6 billion operating profit (roughly a 4% margin) in the second quarter of 2025, results rose to KRW 15.6 billion revenue and KRW 2.2 billion operating profit in the third quarter, then surged in the fourth quarter as public-sector budget execution concentrated, to KRW 37.5 billion revenue and KRW 6.3 billion operating profit (roughly 17% margin). The first quarter of 2026 continued this improved trajectory with KRW 19.2 billion revenue and KRW 2.3 billion operating profit, but the second quarter pulled back to KRW 10.4 billion revenue and KRW 0.4 billion operating profit, reprising the typical first-half seasonal low. Over the trailing four quarters (Q3 2025 through Q2 2026), cumulative net profit attributable to owners reached approximately KRW 7.5 billion, already exceeding the full-year 2025 net profit of KRW 5.6 billion. Operating cash flow for full-year 2025 reached KRW 18.0 billion, up sharply from KRW 6.9 billion in 2024, suggesting cash generation strengthened alongside earnings improvement. However, the debt ratio rose sharply from 74.6% in 2024 to 113.3% in 2025, which may reflect increased working-capital burden from inventory and unbilled construction as the business scaled up."
+  "ko": "연간 매출은 2022년 374억원에서 2023년 494억원(32.2% 증가), 2024년 554억원(12.2% 증가), 2025년 774억원(39.6% 증가)으로 3년 연속 늘었다. 영업이익은 2022년 2억원 흑자에서 2023년 9.5억원 영업손실로 적자 전환했다가 2024년 36.7억원으로 흑자 전환했고, 2025년에는 88.1억원으로 전년 대비 139.9% 증가했다. 영업이익률도 2022년 0.5%, 2023년 -1.9%를 거쳐 2024년 6.6%, 2025년 11.4%로 뚜렷이 개선됐다. 증권사는 2025년 이익 개선의 배경으로 매출 성장에 따른 영업 레버리지 효과와 재고평가손 환입 등을 꼽은 바 있다. 지배주주 순이익은 2023년 6.7억원(저점)을 지나 2024년 42.1억원, 2025년 55.5억원으로 2년 연속 증가했다. 영업활동 현금흐름은 2022년 -28.1억원에서 2023년 67.3억원, 2024년 69.1억원, 2025년 180억원으로 꾸준히 개선됐다. 다만 분기 흐름을 보면 2025년 4분기 매출 375억원·영업이익 63억원·지배주주순이익 33억원으로 정점을 찍은 뒤, 2026년 1분기(매출 192억원, 영업이익 22.7억원, 지배주주순이익 18.9억원)와 2분기(매출 104억원, 영업이익 4.1억원, 지배주주순이익 3.5억원)가 2개 분기 연속 감소했다. 2026년 2분기는 전년 동기 대비로도 매출 26.8%, 영업이익 29.9%, 지배주주순이익 43.2% 각각 감소해, 최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주순이익 합계는 74.8억원으로 집계됐다. 부채비율은 2022년 45.3%에서 2025년 113.3%로 높아져, 외형 성장과 함께 재무 레버리지도 함께 커지는 모습이다.",
+  "en": "Annual revenue rose for three straight years, from KRW 37.4 billion in 2022 to KRW 49.4 billion in 2023 (+32.2%), KRW 55.4 billion in 2024 (+12.2%), and KRW 77.4 billion in 2025 (+39.6%). Operating profit swung from a KRW 204 million profit in 2022 to a KRW 945 million loss in 2023, returned to profit at KRW 3.67 billion in 2024, and rose 139.9% to KRW 8.81 billion in 2025. The operating margin improved markedly as well, from 0.5% in 2022 and -1.9% in 2023 to 6.6% in 2024 and 11.4% in 2025. A brokerage attributed the 2025 margin improvement to operating leverage from revenue growth as well as a reversal of inventory valuation losses. Net profit attributable to owners bottomed at KRW 671 million in 2023 before rising for two straight years to KRW 4.21 billion in 2024 and KRW 5.55 billion in 2025. Operating cash flow improved steadily, from -KRW 2.81 billion in 2022 to KRW 6.73 billion in 2023, KRW 6.91 billion in 2024, and KRW 18 billion in 2025. On a quarterly basis, however, after peaking in Q4 2025 (revenue KRW 37.5 billion, operating profit KRW 6.3 billion, net profit attributable to owners KRW 3.3 billion), results declined for two consecutive quarters in Q1 2026 (revenue KRW 19.2 billion, operating profit KRW 2.27 billion, net profit KRW 1.89 billion) and Q2 2026 (revenue KRW 10.4 billion, operating profit KRW 413 million, net profit KRW 349 million). Q2 2026 also fell year-over-year by 26.8% in revenue, 29.9% in operating profit, and 43.2% in net profit attributable to owners, leaving the trailing four-quarter sum (Q3 2025-Q2 2026) of net profit attributable to owners at KRW 7.48 billion. The debt-to-equity ratio climbed from 45.3% in 2022 to 113.3% in 2025, indicating that financial leverage has grown alongside the company's top-line expansion."
  },
  "industry": {
-  "ko": "지투파워가 속한 전력기기·에너지저장 산업은 두 가지 큰 흐름의 영향을 받고 있다. 하나는 인공지능(AI) 데이터센터 확산에 따른 전력수요 급증과 노후 송배전망 교체 수요이며, 다른 하나는 정부의 재생에너지 보급 확대 정책과 원전 재개 기조다. 재생에너지 관련 예산은 전년 대비 8~9%대 증가율을 기록한 것으로 파악되며, 태양광 금융지원·보급지원 예산은 이보다 더 큰 폭으로 늘어난 것으로 전해진다. 공공·지자체가 주도하는 태양광 보급(산업단지·공장 지붕, 공영주차장, 학교 등)이 정책적으로 강화되는 흐름도 관급 중심 사업자에게 우호적인 환경으로 작용하고 있다. 동시에 정부는 신한울, 한빛 등 기존 원전의 설비 교체와 체코 두코바니 원전 등 해외 프로젝트 참여를 추진하며 원전 관련 기자재 수요도 확대되고 있다. ESS 시장은 글로벌 기준 2021년 110억 달러에서 2030년 2,620억 달러 규모로 성장할 것이라는 전망이 제시된 바 있으며, 화재 안전성이 핵심 경쟁력으로 부각되면서 액침냉각 등 신기술이 주목받고 있다. 지투파워는 대형 중전기업체들이 상대적으로 덜 주목하는 관급·중소형 시장에서 점유율 우위를 확보하고 있으며, 이 지위를 바탕으로 원전·ESS 등 고부가 시장으로 영역을 넓히는 전략을 취하고 있다.",
-  "en": "The power equipment and energy storage industry in which G2Power operates is shaped by two major trends: surging power demand and aging grid replacement needs driven by AI data center expansion, and government policies promoting renewable energy deployment alongside a renewed nuclear power push. Renewable energy-related budgets reportedly grew in the high single digits year-over-year, with solar financing and deployment support budgets increasing at an even faster pace. Policy momentum toward public and local government-led solar deployment, such as rooftop installations on industrial complexes and factories, public parking lots, and schools, is also seen as favorable for procurement-focused players. At the same time, the government is pursuing equipment replacement at existing nuclear plants such as Shin Hanul and Hanbit, as well as participation in overseas projects such as the Dukovany nuclear plant in the Czech Republic, expanding demand for nuclear-related equipment. Forecasts have suggested the global ESS market could grow from USD 11 billion in 2021 to USD 262 billion by 2030, with fire safety emerging as a key competitive factor and driving attention toward new technologies such as immersion cooling. G2Power has secured a leading share in the public and small-to-mid-size segment that larger heavy-electric manufacturers tend to focus less on, and is using this position as a base to expand into higher value-added markets such as nuclear equipment and ESS."
+  "ko": "지투파워가 속한 전력기기·스마트그리드 산업은 분산에너지 활성화 특별법(2024년 6월 시행)을 통해 지역 기반 분산형 전원 운영과 가상발전소(VPP) 사업화가 법제화되면서 ESS·배전반·인버터 수요 기반이 넓어지는 국면에 있다. 정책 측면에서는 스마트그리드 확산 로드맵 2030에 따라 지자체·산단 중심의 스마트배전망 고도화와 VPP 시범사업이 확대되고 있다. 공공조달 시장은 조달청 인증(신기술·우수제품 등)이 진입장벽으로 작용해 소수 업체가 상위권을 과점하는 구조이며, 회사는 이 시장에서 배전반 점유율 1위를 유지해온 것으로 전해진다. 원전 부문에서는 신한울 3·4호기에 이어 한빛 3·4호기 교체 프로젝트 입찰이 진행 중이며, 교보증권은 2026년 2월 보고서에서 이 프로젝트 규모가 700억원 이상이고 한수원 컨소시엄을 통한 해외 프로젝트 참여 가능성도 있다고 짚었다. 대외적으로는 2026년 9월 말 한·미 양국이 대형 원전 최대 8기 건설을 포함한 대미 투자 프레임워크를 공개하며 국내 원전 공급망 전반에 대한 수혜 기대가 부각됐다. 다만 산업통상자원부는 2026년 9월 설명자료를 통해 원전 관련 사항은 2026년 4분기 사업성 검증을 거치는 프레임워크 단계이며 구체적인 내용은 아직 정해지지 않았다고 밝혀, 수주로 이어지기까지는 추가 확인이 필요한 단계다. ESS 시장에서는 데이터센터·재생에너지 연계 수요가 늘면서 액침냉각 등 고효율·고신뢰 제품에 대한 관심이 커지고 있으나, 글로벌 ESS 대형사 대비 지투파워의 생산 규모는 상대적으로 작은 편이다.",
+  "en": "The power-equipment and smart-grid industry G2Power operates in is benefiting from South Korea's Distributed Energy Activation Act, effective June 2024, which has legalized regional distributed-power operation and virtual power plant (VPP) business models, broadening demand for ESS, switchgear, and inverters. Policy-wise, the Smart Grid Expansion Roadmap 2030 is expanding smart-distribution-grid upgrades and VPP pilot projects centered on local governments and industrial complexes. The public-procurement market is structured so that Public Procurement Service certifications (new-technology and excellent-product designations) act as entry barriers, leaving a small number of players dominating the top tier, and G2Power is reported to have held the top switchgear share in this channel for years. In the nuclear segment, following the Shin-Hanul 3&4 order, a bid for the Hanbit 3&4 replacement project is underway; Kyobo Securities noted in a February 2026 report that the project is valued at over KRW 70 billion and that participation in overseas projects via a KHNP-led consortium is also possible. Externally, the late-September 2026 US-Korea investment framework, which included plans for up to eight large nuclear reactors in the United States, drew attention to potential benefits across Korea's nuclear supply chain. However, the Ministry of Trade, Industry and Energy stated in a September 2026 explainer that the nuclear portion remains at a framework stage subject to feasibility validation in Q4 2026, with specifics not yet determined, meaning further confirmation is needed before this translates into orders. In the ESS market, rising demand linked to data centers and renewable-energy integration is increasing interest in high-efficiency, high-reliability products such as liquid-immersion cooling, though G2Power's production scale remains relatively small compared with larger global ESS players."
  },
  "outlook": {
-  "ko": "지투파워는 2026년 9월 30일 이사회에서 2030년을 목표 시점으로 하는 기업가치 제고 계획을 수립했다고 공시했다. 회사는 매출 3,000억원·영업이익 330억원 달성, 시가총액 5,000억원 달성(코스피 이전상장 추진), 관급·민수·해외 매출 비중을 각 50%로 다각화하는 것을 3대 목표로 제시했으며, 변압기·무정전전원장치, AI데이터센터·마이크로그리드·액침냉각 ESS, 북미 UL 인증 배전반 제조 기반 등을 신성장 동력으로 꼽았다. 단기적으로는 한빛 3·4호기 고압배전반 입찰 결과가 확인되어야 할 이벤트로 남아 있으며, 수주에 성공할 경우 원전 설비 부문 레퍼런스가 추가로 쌓이게 된다. 회사는 2027년 1월로 예정된 체코 두코바니 5·6호기 원전 입찰에도 한국수력원자력 컨소시엄을 통해 참여를 준비하고 있는 것으로 알려졌다. 신성장동력인 차세대 액침냉각 ESS는 2026년 상반기 상용화를 완료하고 국제공인 인증도 획득한 것으로 파악되며, 하반기부터 본격적인 양산·납품이 시작될 계획이다. 건물일체형 태양광(BIPV)은 조달우수제품 인증을 확보해 시장 확대를 준비하고 있다. 다만 이러한 신사업들은 아직 초기 단계로, 실적에 본격 반영되기까지는 시간이 소요될 수 있다는 점을 함께 감안할 필요가 있다.",
-  "en": "On September 30, 2026, G2Power's board disclosed a value-up plan targeting 2030, setting three goals: achieving KRW 300 billion in revenue and KRW 33 billion in operating profit, reaching a KRW 500 billion market capitalization (while pursuing a move to the KOSPI main board), and diversifying revenue so that public procurement, private-sector, and overseas sales each account for roughly half. The plan cites transformers and uninterruptible power supplies, AI data center and microgrid solutions, immersion-cooled ESS, and a North American UL-certified switchgear manufacturing base as new growth drivers. In the near term, results of the bid for high-voltage switchgear at the Hanbit 3&4 nuclear units remain an event to watch, and a successful award would add further reference projects in the nuclear equipment segment. The company is reportedly preparing to participate, through a Korea Hydro & Nuclear Power-led consortium, in a bid for the Dukovany 5&6 nuclear project in the Czech Republic scheduled for January 2027. Its next-generation immersion-cooled ESS reportedly completed commercialization in the first half of 2026 and obtained international certification, with full-scale mass production and delivery planned to begin in the second half of the year. Its building-integrated photovoltaic (BIPV) product has secured excellent-product procurement certification as the company prepares for market expansion. However, these new businesses remain at an early stage, and it should be kept in mind that it may take time before they are meaningfully reflected in results."
+  "ko": "지투파워는 2026년 9월 30일 이사회에서 결의한 기업가치 제고 계획을 통해 2026~2028년 매출액 연평균성장률 20% 이상을 단기 목표로, 2030년까지 매출액 3,000억원, 영업이익 330억원 달성을 중장기 목표로 제시했다. 이에 앞서 2026년 3월에는 시장과의 소통 강화, 주주환원 정책 확대, 제조·구매 원가혁신과 선별적 수주 전략, 민수·해외시장 확대 등을 담은 첫 기업가치 제고 계획을 공시한 바 있다. 배당 측면에서는 지투파워가 조세특례제한법상 고배당기업에 해당하며 2025년 배당성향이 33.7%였다는 점이 공시됐다. 수주 측면에서는 신한울 3·4호기 배전반 프로젝트가 2027년부터 3년간 순차적으로 매출에 반영될 예정이라고 대신증권이 전한 바 있으며, 한빛 3·4호기 교체 프로젝트 등 후속 입찰 결과가 확인되면 수주잔고에 추가 반영될 수 있다. 신제품인 액침냉각 ESS는 교보증권이 2026년 2월 보고서에서 KC 인증이 마무리되는 대로 수주 영업이 재개될 수 있다고 짚었으나, 실제 수주 체결 시점은 시장 수요에 따라 달라질 수 있다고 덧붙였다. 한국투자증권은 2026년 하반기 보고서에서 연간 기준으로는 하반기 배전반 매출이 집중되는 계절성을 감안해 배전반이 여전히 가장 큰 비중을 차지할 전망이라고 평가했다. 미국 원전 8기 프로젝트 등 해외 공급망 편입 가능성은 2026년 4분기 사업성 검증 결과에 따라 구체화 여부가 갈릴 것으로 보인다.",
+  "en": "Through a corporate value-up plan resolved by its board on September 30, 2026, G2Power set a short-term target of 20%-plus annual revenue growth for 2026-2028 and a mid-to-long-term target of KRW 300 billion in revenue and KRW 33 billion in operating profit by 2030. This followed an initial value-up plan disclosed in March 2026 that included stronger market communication, expanded shareholder returns, cost innovation and selective order-taking, and expansion into private and overseas markets. On dividends, the company has disclosed that it qualifies as a high-dividend company under the Restriction of Special Taxation Act, with a 2025 payout ratio of 33.7%. On order execution, Daishin Securities has reported that the Shin-Hanul 3&4 switchgear project is scheduled to be recognized in revenue in stages over three years starting in 2027, and the outcome of the Hanbit 3&4 replacement bid and other follow-on tenders could add further to the order backlog once confirmed. For the new liquid-immersion-cooled ESS product, Kyobo Securities noted in a February 2026 report that order-taking could resume once KC certification is completed, while adding that actual contract timing would depend on market demand. Korea Investment & Securities assessed in a report covering the second half of 2026 that, on an annual basis, switchgear is expected to remain the largest revenue contributor given the seasonality of second-half-weighted switchgear sales. Whether the potential inclusion in supply chains for projects such as the US eight-reactor nuclear plan materializes will likely hinge on the outcome of the Q4 2026 feasibility validation."
  },
  "valuation_comment": {
-  "ko": "지투파워의 주가는 과거 거래 밴드에서 상단 수준에서 형성되는 모습을 보인 바 있으며, 이는 2023년 적자에서 2024~2025년 흑자로 전환한 이익 회복 기대가 일부 반영된 결과로 풀이된다. 순자산 대비로는 프리미엄이 있는 구간에서 거래되는 경향이 확인되는데, 이는 관급 시장 지위와 원전·ESS 신사업에 대한 성장 기대가 함께 작용하고 있음을 보여준다. 배당 측면에서는 2025년 결산 기준 현금배당을 실시했으나 배당수익률 자체는 업종 평균에 비해 낮은 편으로 파악된다. 밸류에이션 수준에 대한 해석은 후속 수주 성과와 신사업(액침냉각 ESS, 원전 설비)의 실적 반영 속도에 따라 달라질 수 있어, 단일 시점의 배수보다는 분기별 이익 추이와 수주잔고 변화를 함께 살펴보는 것이 유용하다.",
-  "en": "G2Power's share price has at times traded near the upper end of its historical range, a pattern that appears to partly reflect expectations around the earnings recovery from a 2023 operating loss to profitability in 2024 and 2025. Relative to net assets, the stock has tended to trade at a premium, suggesting that both its public-procurement market position and growth expectations tied to the nuclear equipment and ESS businesses are being factored in. On the dividend front, the company made a cash distribution based on 2025 full-year results, though the resulting yield is understood to run below the sector average. How this valuation level should be read may depend heavily on the pace of follow-on contract wins and how quickly new businesses such as immersion-cooled ESS and nuclear equipment are reflected in results, making quarterly earnings trends and order backlog changes arguably more informative than a single valuation multiple taken in isolation."
+  "ko": "지투파워는 2025년까지 매출과 이익이 함께 늘며 수익성 턴어라운드를 보여줬으나, 2026년 들어서는 2분기 연속 실적이 둔화되며 이익 모멘텀에 대한 평가가 엇갈릴 수 있는 국면에 들어섰다. 주가순자산비율은 순자산 대비 일정한 프리미엄이 반영된 구간에서 거래되는 편으로, 이는 원전·ESS 신사업 확장에 대한 기대가 일부 반영된 결과로 해석될 수 있다. 배당수익률은 성장 투자 단계에 있는 중소형 전력기기주로서는 흔히 볼 수 있는 수준으로, 회사는 2026년 기업가치 제고 계획에서 배당 정책 확대를 과제로 제시했다. 최근 네 개 분기 합산 이익을 기준으로 본 이익 대비 주가 배수는 2025년 흑자 폭 확대 국면과 2026년 상반기 조정 국면이 함께 섞여 있어, 분기별 변동성을 감안해 해석할 필요가 있다. 투자 판단에 앞서 수주잔고 전환 속도와 공공조달 매출의 계절성이 향후 분기 실적의 방향을 가를 핵심 변수로 보인다.",
+  "en": "G2Power demonstrated a profitability turnaround through 2025 as revenue and profit rose together, but the two consecutive quarters of slower results in 2026 have introduced more divided views on near-term earnings momentum. Its price-to-book ratio trades at a level that reflects a premium over net asset value, which can be read as partly capturing expectations around the nuclear and ESS growth businesses. The dividend yield sits at a level common among small and mid-cap power-equipment names still in a growth-investment phase, and the company has listed expanding dividend policy as a task in its 2026 value-up plan. The earnings multiple based on the trailing four quarters of profit blends a period of widening 2025 profitability with the 2026 first-half slowdown, so it should be read with quarterly volatility in mind. Ahead of any investment decision, the pace at which the order backlog converts into revenue and the seasonality of public-procurement sales appear to be the key variables determining the direction of coming quarters."
  },
  "bull": [
   {
    "title": {
-    "ko": "관급 시장 지배력에 기반한 이익 회복",
-    "en": "Earnings Recovery Anchored in Public-Sector Market Dominance"
+    "ko": "원전 밸류체인 진입",
+    "en": "Entry into the nuclear supply chain"
    },
    "body": {
-    "ko": "수배전반 조달청 점유율 1위, ESS 관급 점유율 25.6%라는 수치는 안정적 수주 파이프라인의 근거가 된다. 2023년 영업손실에서 2025년 영업이익률 11.4%까지 개선된 흐름은 원가 관리와 관급 매출 확대가 동시에 작동했음을 보여준다. 수주잔고가 지속적으로 늘어나는 추세는 향후 매출 가시성을 높이는 요인이다.",
-    "en": "A No.1 share in public switchgear procurement and a 25.6% share in public ESS tenders underpin a stable order pipeline. The shift from an operating loss in 2023 to an 11.4% operating margin in 2025 shows cost management and expanding public-sector sales working in tandem. A continually growing order backlog improves forward revenue visibility."
+    "ko": "KEPIC 인증과 한수원 Q-Class 자격을 기반으로 2025년 2월 신한울 3·4호기 고압배전반 430억원을 수주했으며, 한빛 3·4호기 교체 프로젝트 등 후속 입찰에도 참여하고 있다. 한수원 컨소시엄을 통한 해외 프로젝트 참여 가능성도 거론된다. 한·미 양국이 2026년 9월 발표한 대미 투자 프레임워크에는 미국 내 대형 원전 최대 8기 건설 계획이 포함돼, 국내 원전 공급망 전반에 대한 관심이 높아진 상태다.",
+    "en": "Backed by KEPIC certification and KHNP Q-Class qualification, G2Power won a roughly KRW 43 billion high-voltage switchgear order for Shin-Hanul 3&4 in February 2025 and is also participating in follow-on bids such as the Hanbit 3&4 replacement project. Participation in overseas projects via a KHNP-led consortium has also been discussed. The US-Korea investment framework announced in September 2026 includes plans for up to eight large nuclear reactors in the US, drawing wider attention to Korea's nuclear supply chain."
    }
   },
   {
    "title": {
-    "ko": "원전 설비 시장 진입 레퍼런스 확보",
-    "en": "Reference Track Record Established in Nuclear Equipment"
+    "ko": "다년간 이익 체질 개선",
+    "en": "Multi-year improvement in earnings quality"
    },
    "body": {
-    "ko": "KEPIC·Q-Class 인증 취득과 신한울 3·4호기 고압배전반 430억원 수주는 원전 설비 시장 진입의 구체적 증거다. 한빛 3·4호기 입찰과 체코 두코바니 원전 컨소시엄 참여 준비는 추가 레퍼런스 확보 가능성을 열어둔다. 원전 재개 정책 기조가 이어지는 한 관련 수주 기회는 중장기적으로 이어질 수 있다.",
-    "en": "Obtaining KEPIC and Q-Class certifications and winning the KRW 43 billion high-voltage switchgear contract for Shin Hanul 3&4 provide concrete evidence of entry into the nuclear equipment market. The Hanbit 3&4 bid and preparation to join a consortium for the Dukovany nuclear project in the Czech Republic leave room for further reference wins. As long as the nuclear power restart policy continues, related order opportunities could persist over the medium to long term."
+    "ko": "매출은 2022~2025년 3년 연속 증가했고, 영업이익은 2023년 적자에서 2024년 흑자로 전환한 뒤 2025년까지 2년 연속 늘며 영업이익률이 11.4%까지 올라갔다. 영업활동 현금흐름도 2022년 적자에서 2025년 180억원으로 꾸준히 개선됐다. 레버리지 효과와 재고평가손 환입 등 복합적 요인이 2025년 이익 확대에 기여했다.",
+    "en": "Revenue rose for three straight years from 2022 to 2025, and operating profit swung from a loss in 2023 to profit in 2024 and rose again in 2025, lifting the operating margin to 11.4%. Operating cash flow also improved steadily, from a deficit in 2022 to KRW 18 billion in 2025. A combination of operating leverage and a reversal of inventory valuation losses contributed to the 2025 profit expansion."
    }
   },
   {
    "title": {
-    "ko": "신사업 다각화와 자체 성장 목표 제시",
-    "en": "New-Business Diversification and Self-Set Growth Targets"
+    "ko": "신사업·주주환원 동시 확대",
+    "en": "Simultaneous expansion of new businesses and shareholder returns"
    },
    "body": {
-    "ko": "액침냉각 ESS 상용화, BIPV 인증 확보, 북미 법인 설립 등 신사업 포트폴리오가 다각화되고 있다. 2026년 9월 이사회가 발표한 2030년 목표(매출 3,000억원·시가총액 5,000억원·코스피 이전)는 회사가 스스로 제시한 중장기 방향성을 보여준다. 관급·민수·해외 비중을 각 50%로 맞추려는 계획은 관급 편중 구조에서 벗어나려는 시도로 해석된다.",
-    "en": "The new-business portfolio is diversifying through commercialization of immersion-cooled ESS, BIPV certification, and establishment of a North American subsidiary. The 2030 targets announced by the board in September 2026 (KRW 300 billion revenue, KRW 500 billion market cap, move to KOSPI) show the company's self-articulated medium-to-long-term direction. The plan to balance public, private, and overseas revenue at roughly 50% each can be read as an attempt to move away from a structure overly reliant on public procurement."
+    "ko": "액침냉각 ESS, 건물일체형 태양광(BIPV), 가상발전소(VPP) 등 신사업 포트폴리오를 넓히고 있으며, 분산에너지 활성화 특별법 등 정책 변화가 이들 사업의 수요 기반을 뒷받침한다. 2026년 기업가치 제고 계획에서는 2026~2028년 매출액 연평균성장률 20% 이상을 목표로 제시했고, 2025년 배당성향은 33.7%로 조세특례제한법상 고배당기업에 해당한다.",
+    "en": "The company is broadening its new-business portfolio across liquid-cooled ESS, building-integrated photovoltaics (BIPV), and virtual power plants (VPP), with policy changes such as the Distributed Energy Activation Act underpinning demand for these segments. Its 2026 value-up plan set a target of 20%-plus annual revenue growth for 2026-2028, and its 2025 payout ratio of 33.7% qualifies it as a high-dividend company under the Restriction of Special Taxation Act."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "뚜렷한 계절성과 상반기 실적 변동성",
-    "en": "Pronounced Seasonality and First-Half Earnings Volatility"
+    "ko": "4분기 정점 이후 상반기 조정",
+    "en": "First-half slowdown following the Q4 peak"
    },
    "body": {
-    "ko": "2026년 2분기 매출은 104억원, 영업이익은 4억원으로 1분기(매출 192억원·영업이익 23억원) 대비 크게 줄었다. 관급 예산이 연말에 집중 집행되는 구조상 상반기 실적만으로 연간 방향성을 판단하기 어렵다. 이러한 계절성은 분기별 실적 해석에 주의가 필요함을 시사한다.",
-    "en": "Second-quarter 2026 revenue of KRW 10.4 billion and operating profit of KRW 0.4 billion fell sharply from the first quarter's KRW 19.2 billion revenue and KRW 2.3 billion operating profit. Because public-sector budgets tend to be executed heavily toward year-end, first-half results alone are difficult to use in judging the full-year direction, underscoring the need for caution when interpreting quarterly figures."
+    "ko": "2025년 4분기 매출·영업이익·지배주주순이익이 모두 정점을 찍은 뒤 2026년 1분기와 2분기에 2개 분기 연속 감소했다. 2026년 2분기는 전년 동기 대비로도 매출·영업이익·지배주주순이익이 모두 줄었다. 한국투자증권은 하반기 배전반 매출 집중형 계절성을 지적한 바 있어, 공공조달 비중이 높은 사업 특성상 분기별 변동성이 구조적으로 크다.",
+    "en": "After revenue, operating profit, and net profit attributable to owners all peaked in Q4 2025, results declined for two consecutive quarters in Q1 and Q2 2026. Q2 2026 also fell year-over-year across all three metrics. Korea Investment & Securities has pointed to seasonality concentrated in second-half switchgear sales, meaning quarter-to-quarter volatility is structurally large given the heavy weighting toward public procurement."
    }
   },
   {
    "title": {
-    "ko": "조달청 제재 리스크의 반복",
-    "en": "Recurring Risk of Public Procurement Service Sanctions"
+    "ko": "재무 레버리지 확대",
+    "en": "Rising financial leverage"
    },
    "body": {
-    "ko": "2024년 10월 태양광발전장치 직접생산 위반 관련 입찰참가자격 제한 처분을 받았고, 2026년 1월에도 유사한 사유로 재차 제재 통지를 받은 바 있다. 회사는 두 차례 모두 법원의 집행정지 결정을 통해 실질적 영업 공백을 피했지만, 매출의 상당 부분이 조달청에서 발생하는 구조상 규제 리스크가 반복될 가능성이 있다. 최종 소송 결과에 따라 향후 관급 영업 활동에 제약이 생길 가능성도 배제할 수 없다.",
-    "en": "The company received an order suspending its bidding eligibility in October 2024 over an alleged violation of direct-production requirements for solar power equipment, and received a similar sanction notice again in January 2026. In both instances, court-ordered stays of execution avoided a substantive business interruption, but given that a substantial portion of revenue originates from the Public Procurement Service, the risk of recurring regulatory sanctions cannot be ruled out. Depending on the final outcome of the related litigation, future constraints on public-sector business activity cannot be excluded."
+    "ko": "부채비율은 2022년 45.3%에서 2025년 113.3%로 높아졌다. 외형 성장과 신사업 투자가 동시에 진행되면서 운전자본 부담이 늘어난 것으로 보인다. 영업현금흐름은 개선됐지만 재무구조의 변화 속도 자체는 지켜볼 필요가 있다.",
+    "en": "The debt-to-equity ratio rose from 45.3% in 2022 to 113.3% in 2025. Simultaneous top-line growth and new-business investment appear to have increased working-capital needs. While operating cash flow has improved, the pace of change in the balance sheet itself warrants continued monitoring."
    }
   },
   {
    "title": {
-    "ko": "최대주주 지분 매각 시도의 반복적 무산",
-    "en": "Repeated Failed Attempts to Sell Controlling Shareholder Stakes"
+    "ko": "해외 원전 수혜는 아직 프레임워크 단계",
+    "en": "Overseas nuclear upside still at the framework stage"
    },
    "body": {
-    "ko": "최대주주 일가의 지분 매각 계획이 2년 연속 무산된 것으로 알려졌으며, 희망 단가와 실제 거래 시점의 시장가 간 괴리가 원인으로 지목된다. 경영권 관련 불확실성이 반복되는 점은 지배구조 안정성 측면에서 지켜봐야 할 변수다. 다만 회사 측은 과거 기업설명회에서 최대주주 지분 매도 계획이 없다는 입장을 밝힌 바 있어, 향후 관련 공시를 지속적으로 확인할 필요가 있다.",
-    "en": "Plans by the controlling shareholder family to sell stakes reportedly fell through for two consecutive years, with a gap between the desired price and the prevailing market price at the time of the deal cited as a factor. Recurring uncertainty around ownership control is a variable worth monitoring from a governance stability standpoint, though the company has previously stated at investor briefings that it has no plans for the controlling family to sell shares, making it worthwhile to keep tracking related disclosures going forward."
+    "ko": "미국 원전 8기 프로젝트는 2026년 9월 한·미 간 투자 프레임워크에 포함됐으나, 산업통상자원부는 같은 달 설명자료에서 구체적인 사항이 아직 정해지지 않았으며 4분기 중 사업성 검증을 거칠 것이라고 밝혔다. 실제 수주로 이어지기까지는 부지 확정, 한국 기업의 수주 이행 등 다수의 변수가 남아 있다.",
+    "en": "The US eight-reactor nuclear project was included in the September 2026 US-Korea investment framework, but the Ministry of Trade, Industry and Energy stated in a September explainer that specifics remain undetermined and will undergo feasibility validation in Q4 2026. Multiple variables, including final site selection and actual order execution by Korean firms, remain before this translates into confirmed contracts."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "매출 편중 리스크",
-    "en": "Revenue Concentration Risk"
+    "ko": "공공조달 의존과 제재 리스크",
+    "en": "Dependence on public procurement and sanction risk"
    },
    "body": {
-    "ko": "매출의 상당 부분이 조달청 등 관급 채널에 편중되어 있어 정부 예산 편성이나 정책 변화에 실적이 민감하게 반응할 수 있다. 관급·민수·해외 비중을 다각화하려는 목표를 제시했지만 실제 구조 전환에는 시간이 걸릴 수 있다. 특정 발주처(원전, 조달청)에 대한 의존도가 높아지는 경우 개별 이벤트의 실적 영향력도 커질 수 있다.",
-    "en": "A significant portion of revenue is concentrated in public-sector channels such as the Public Procurement Service, making results sensitive to government budgeting or policy shifts. While the company has set a goal to diversify across public, private, and overseas revenue, an actual structural shift could take time. Higher dependence on specific buyers, such as nuclear utilities or the Public Procurement Service, could also increase the earnings impact of individual events."
+    "ko": "매출의 70% 이상이 공공조달에서 발생하는 구조에서, 더벨 보도에 따르면 조달청이 과거 법원에서 회사가 승소했던 사안에 대해 제재 수위를 조절해 재처분을 내렸고 회사는 법적 대응을 예고했다. 공공조달 자격 제한이 실제로 발효되면 핵심 매출 채널에 직접적인 영향을 줄 수 있다. 회사 측은 집행정지 신청 등을 통해 영업 공백을 막겠다는 입장을 밝힌 바 있다.",
+    "en": "With more than 70% of revenue coming from public procurement, according to a report by The Bell, the Public Procurement Service reissued a sanction—at a reduced duration—on a matter the company had previously won in court, and the company has signaled it will pursue legal action. If a procurement-eligibility restriction actually takes effect, it could directly affect the company's core sales channel. The company has stated it intends to seek an injunction to limit any operational disruption."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실행 리스크",
-    "en": "New Business Execution Risk"
+    "ko": "실적 계절성에 따른 분기 변동성",
+    "en": "Quarterly volatility from seasonality"
    },
    "body": {
-    "ko": "액침냉각 ESS, 원전 설비, BIPV 등 신사업은 아직 매출 기여가 초기 단계에 머물러 있는 것으로 파악된다. 상용화와 인증 취득이 완료됐더라도 실제 수주와 양산이 계획대로 이어지지 않을 가능성이 있다. 해외 진출(북미·인도·중앙아시아) 역시 초기 단계로, 현지 규제·인증·경쟁 환경에 따른 불확실성이 존재한다.",
-    "en": "New businesses such as immersion-cooled ESS, nuclear equipment, and BIPV appear to remain at an early stage of revenue contribution. Even where commercialization and certification have been completed, actual order intake and mass production may not proceed exactly as planned. Overseas expansion into North America, India, and Central Asia is likewise at an early stage, with uncertainty stemming from local regulations, certification requirements, and competitive conditions."
+    "ko": "2025년 4분기에 매출·이익이 집중된 뒤 2026년 1·2분기가 연속 감소하며 분기 간 편차가 크게 나타났다. 공공기관 예산 집행이 연말에 몰리는 특성상 이런 패턴이 반복될 가능성이 있다. 분기 실적만으로 추세를 단정하기 어려운 구조다.",
+    "en": "After revenue and profit were concentrated in Q4 2025, results declined in both Q1 and Q2 2026, producing large swings between quarters. Given that public-sector budget execution tends to concentrate near year-end, this pattern could recur. The structure makes it difficult to draw trend conclusions from any single quarter's results."
    }
   },
   {
    "cat": {
-    "ko": "재무구조 변화 리스크",
-    "en": "Financial Structure Change Risk"
+    "ko": "지배구조·매각 관련 불확실성",
+    "en": "Ownership and M&A-related uncertainty"
    },
    "body": {
-    "ko": "부채비율이 2024년 74.6%에서 2025년 113.3%로 크게 높아진 점은 외형 확장에 따른 운전자본 부담 증가를 시사한다. 매출이 빠르게 늘어나는 구간에서는 재고와 미청구공사 등이 함께 늘어날 수 있어 현금흐름 관리가 중요해진다. 향후 신사업 투자와 해외 진출 비용까지 고려하면 자금조달 계획에 대한 지속적인 점검이 필요하다.",
-    "en": "The sharp rise in the debt ratio from 74.6% in 2024 to 113.3% in 2025 suggests growing working-capital burden alongside business expansion. In a period of rapid revenue growth, inventory and unbilled construction can also increase together, making cash flow management increasingly important. Factoring in future investment in new businesses and overseas expansion costs, continued scrutiny of funding plans will be warranted."
+    "ko": "더벨 보도에 따르면 지투파워는 2024년 말에 이어 2025년 말에도 경영권 매각 협상이 중단되며 2년 연속 매각이 무산됐다. 같은 기간 거래처와의 거래중단 관련 공시가 여러 차례 정정되기도 했다. 지배구조 관련 불확실성은 주가와 무관하게 사업 안정성에 대한 신뢰에 영향을 줄 수 있는 변수다.",
+    "en": "According to a report by The Bell, G2Power's management-control sale negotiations were discontinued for a second straight year, following a similar outcome at the end of 2024. Over the same period, disclosures related to the discontinuation of trade with certain customers were amended multiple times. Such governance-related uncertainty is a factor that can affect confidence in business stability independent of the share price."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "During Q4 2026"
+    "ko": "2026년 11월 초(잠정, 정보제공업체 추정)",
+    "en": "Early November 2026 (provisional, per data-provider estimate)"
    },
    "what": {
-    "ko": "한빛 3·4호기 고압배전반 입찰 결과 발표 여부를 확인해야 한다. 수주 성공 시 원전 설비 부문 두 번째 레퍼런스가 확보되며 수주잔고 확장으로 이어질 수 있다.",
-    "en": "Whether the Hanbit 3&4 high-voltage switchgear bid result is announced should be checked. A successful award would secure a second nuclear equipment reference and could expand the order backlog."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 11월 중순 전후",
-    "en": "Around mid-November 2026"
-   },
-   "what": {
-    "ko": "2026년 3분기 실적 공시를 통해 2분기의 계절적 둔화가 회복되는지, 액침냉각 ESS 양산 초기 매출이 반영되는지 확인할 필요가 있다.",
-    "en": "The Q3 2026 earnings disclosure should be checked to see whether the second-quarter seasonal slowdown reverses and whether early revenue from immersion-cooled ESS mass production is reflected."
+    "ko": "정보제공업체가 추정한 다음 실적 발표 시점으로, 3분기 분기보고서 또는 잠정실적 공시가 나오면 2026년 상반기 조정 흐름이 이어지는지 확인할 수 있다.",
+    "en": "A data provider's estimated next earnings date; once the Q3 report or provisional results are disclosed, it will show whether the H1 2026 slowdown continued."
    }
   },
   {
@@ -172,56 +162,56 @@
     "en": "During Q4 2026"
    },
    "what": {
-    "ko": "액침냉각 ESS의 실제 양산·납품 개시 여부와 초도 수주 규모를 확인해야 한다. 상용화 완료가 매출로 이어지는 속도가 신사업 가치 판단의 핵심이다.",
-    "en": "Actual commencement of mass production and delivery of the immersion-cooled ESS, along with the scale of initial orders, should be checked. The speed at which commercialization translates into revenue is central to assessing the value of this new business."
+    "ko": "산업통상자원부가 예고한 미국 원전 프로젝트 사업성 검증 결과가 나오면, 해외 원전 공급망 편입 기대가 구체화될지 가늠할 수 있다.",
+    "en": "Once the feasibility validation flagged by the Ministry of Trade, Industry and Energy for the US nuclear project is completed, it will clarify whether expectations of entering the overseas nuclear supply chain become more concrete."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 이후",
-    "en": "From Q4 2026 onward"
+    "ko": "2026년 11월 중 3분기보고서 등 차기 정기공시",
+    "en": "The next regular filing, including the Q3 report expected around November 2026"
    },
    "what": {
-    "ko": "2026년 1월 조달청 제재 관련 소송의 진행 상황과 최종 판단 시점을 지속적으로 확인해야 한다. 판단 결과에 따라 관급 영업활동의 제약 여부가 달라질 수 있다.",
-    "en": "The progress and eventual ruling in the litigation related to the January 2026 Public Procurement Service sanction should be continuously monitored, as the outcome could affect constraints on public-sector business activity."
+    "ko": "신한울 3·4호기, 한빛 3·4호기 등 원전 프로젝트의 진행 상황과 수주잔고 변동을 확인할 수 있는 시점이다.",
+    "en": "This filing will allow confirmation of progress on nuclear projects such as Shin-Hanul 3&4 and Hanbit 3&4, and any change in the order backlog."
    }
   },
   {
    "when": {
-    "ko": "2027년 1월",
-    "en": "January 2027"
+    "ko": "다음 공시 발생 시",
+    "en": "At the next relevant disclosure"
    },
    "what": {
-    "ko": "체코 두코바니 5·6호기 원전 입찰 진행 상황을 확인해야 한다. 한수원 컨소시엄을 통한 참여 여부와 결과는 해외 원전 시장 진출의 분수령이 될 수 있다.",
-    "en": "Progress on the bid for the Dukovany 5&6 nuclear project in the Czech Republic should be checked. Participation through the Korea Hydro & Nuclear Power-led consortium and its outcome could be a turning point for entry into overseas nuclear markets."
+    "ko": "조달청 제재에 대한 법적 대응(집행정지 신청 등) 결과와 거래처 관련 공시의 추가 정정 여부를 확인할 필요가 있다.",
+    "en": "It will be worth checking the outcome of the company's legal response (such as an injunction request) to the Public Procurement Service sanction, and whether further amendments to customer-related disclosures occur."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "지투파워는 2023년 영업손실에서 2025년 영업이익률 11.4%까지 이익이 회복된 관급 중심 전력기기 기업으로, 수배전반·태양광·ESS 관급 시장에서 확고한 점유율을 바탕으로 원전 설비와 액침냉각 ESS라는 새로운 성장축을 구축하는 단계에 있다. 2026년 상반기는 1분기 강한 실적과 2분기 계절적 둔화가 교차하며 분기별 변동성이 여전히 크다는 점을 보여줬다. 신한울 3·4호기 수주로 원전 설비 시장 레퍼런스를 확보했고, 한빛 3·4호기와 체코 두코바니 원전 입찰이라는 후속 이벤트가 남아 있어 수주 성과에 따라 사업 궤적이 달라질 수 있다. 동시에 조달청 제재가 반복되어 온 점, 최대주주 지분 매각 시도가 연이어 무산된 점, 부채비율이 가파르게 상승한 점 등은 균형 잡힌 시각에서 함께 살펴봐야 할 변수다. 회사는 2026년 9월 이사회를 통해 2030년까지 매출 3,000억원·시가총액 5,000억원 목표와 코스피 이전상장 추진이라는 중장기 방향을 스스로 제시했다. 본 리포트에 제시된 재무 수치는 모두 확정 공시 기준이다.",
-   "en": "G2Power is a public-sector-focused power equipment company whose profitability recovered from an operating loss in 2023 to an 11.4% operating margin in 2025, and which is now building new growth pillars in nuclear equipment and immersion-cooled ESS on top of its established shares in public switchgear, solar, and ESS tenders. The first half of 2026 illustrated continued quarterly volatility, with a strong first quarter followed by a seasonal slowdown in the second. The Shin Hanul 3&4 contract has established a reference in the nuclear equipment market, and pending events such as the Hanbit 3&4 bid and the Dukovany nuclear project bid in the Czech Republic mean the company's trajectory could shift depending on order outcomes. At the same time, recurring Public Procurement Service sanctions, repeated failed attempts to sell controlling shareholder stakes, and a sharply rising debt ratio are variables that warrant balanced consideration. The company itself articulated a medium-to-long-term direction in a September 2026 board resolution, targeting KRW 300 billion in revenue, a KRW 500 billion market cap, and a move to KOSPI by 2030. All financial figures presented in this report are based on confirmed disclosures."
+   "ko": "지투파워는 관급 수배전반 1위 지위에 더해 원전용 배전반과 액침냉각 ESS로 사업 축을 넓히며 2022~2025년 매출과 이익이 함께 개선되는 턴어라운드를 보여줬다. 그러나 2025년 4분기 정점 이후 2026년 1·2분기 실적이 연속 둔화되며, 공공조달 중심 사업 구조에 내재한 계절성이 다시 부각됐다. 신한울 3·4호기 수주와 한빛 3·4호기 등 후속 입찰, 미국 원전 8기 프로젝트 논의는 중장기 성장축으로 거론되지만, 다수가 아직 프레임워크나 입찰 단계에 머물러 있어 실제 매출 반영까지는 추가 확인이 필요하다. 조달청의 재처분 제재와 두 차례의 경영권 매각 무산은 핵심 매출 채널과 지배구조 양쪽에서 불확실성 요인으로 남아 있다. 부채비율이 113.3%까지 높아진 점도 외형 성장과 함께 재무구조 변화를 지켜봐야 할 지점이다. 다음 분기보고서와 미국 원전 프로젝트의 사업성 검증 결과가 향후 방향성을 판단하는 데 중요한 단서가 될 것으로 보인다.",
+   "en": "G2Power has built on its leading position in publicly procured switchgear by expanding into nuclear-grade switchgear and liquid-cooled ESS, delivering a turnaround in which revenue and profit improved together from 2022 to 2025. However, results slowed for two consecutive quarters in Q1 and Q2 2026 after peaking in Q4 2025, re-highlighting the seasonality inherent in a business model weighted toward public procurement. The Shin-Hanul 3&4 order, the follow-on Hanbit 3&4 and other bids, and discussions around the US eight-reactor project are cited as medium-to-long-term growth drivers, but many remain at the framework or bidding stage, requiring further confirmation before they show up in revenue. A renewed Public Procurement Service sanction and two consecutive failed attempts to sell management control remain sources of uncertainty for both the core sales channel and the ownership structure. The rise in the debt-to-equity ratio to 113.3% is another point to watch alongside the company's top-line growth. The next quarterly report and the outcome of the feasibility validation for the US nuclear project are likely to provide important clues for assessing the path ahead."
   }
  },
  "sources": [
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=388050",
-  "https://file.alphasquare.co.kr/media/pdfs/market-report/%EC%A7%80%ED%88%AC%ED%8C%8C%EC%9B%8C%EC%88%AB%EC%9E%90%EB%A1%9C20260204%ED%82%A4%EC%9B%80%EC%A6%9D%EA%B6%8C.",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1714433119383.pdf",
+  "http://money2.daishin.co.kr/PDF/Out/intranet_data/Product/ResearchCenter/Report/2025/06/53868_G2Power_250610FF.pdf",
   "https://www.iprovest.com/upload/research/report/cominf/20260211/20260211_388050_20250021_57.pdf",
-  "https://www.chickstockfi.com/analysis/546",
-  "https://alphasquare.co.kr/home/stock-summary?code=388050",
-  "https://www.chickstockfi.com/stocks/388050",
-  "https://v.daum.net/v/20260204075944135",
-  "https://deepsearch.com/analytics/company-analysis/KRX:388050",
-  "https://m.thinkpool.com/item/388050",
+  "https://file.alphasquare.co.kr/media/pdfs/company-report/%EC%9C%A0%EC%A7%8420220318%EC%A7%80%ED%88%AC%ED%8C%8C%EC%9B%8C.pdf",
+  "https://www.newsprime.co.kr/news/article/?no=746964",
+  "https://m.irgo.co.kr/IR-COMP/388050/%EC%A7%80%ED%88%AC%ED%8C%8C%EC%9B%8C-IR-PAGE",
+  "https://www.valueline.co.kr/finance/summary/388050",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=388050",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=651386",
+  "https://m.news.nate.com/view/20260331n42382",
+  "https://kr.investing.com/news/global-filings/article-93CH-1944871",
+  "https://www.etoday.co.kr/news/view/2552768",
   "https://m.irgo.co.kr/IR-COMP/388050/",
-  "https://www.electimes.com/news/articleView.html?idxno=355201",
-  "https://www.etoday.co.kr/news/view/2618359",
-  "https://www.inenews.kr/news/articleView.html?idxno=16438",
-  "https://www.newspim.com/news/view/20241008000094",
-  "https://www.electimes.com/news/articleView.html?idxno=361899",
-  "https://www.kharn.kr/news/article.html?no=26086",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=8g1yAqaN4l08JoGa",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=58e8wSbkfH1Q4HyF"
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=703897",
+  "https://file.alphasquare.co.kr/media/pdfs/market-report/%EC%A7%80%ED%88%AC%ED%8C%8C%EC%9B%8C%EC%88%AB%EC%9E%90%EB%A1%9C20260204%ED%82%A4%EC%9B%80%EC%A6%9D%EA%B6%8C.",
+  "https://www.thebell.co.kr/front/newsview.asp?key=202601191537313600106815",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=708294",
+  "https://kind.krx.co.kr/external/2026/05/19/000705/20260519001635/10601.htm"
  ],
  "v": 2,
  "model": "claude-sonnet-5",
@@ -233,9 +223,9 @@
   "에너지·전력"
  ],
  "market": "코스닥",
- "reportDate": "2026-10-01",
- "reportTs": "2026-10-01 05:30",
- "dataDate": "20260930",
+ "reportDate": "2026-10-20",
+ "reportTs": "2026-10-20 01:01",
+ "dataDate": "20261019",
  "quant": {
   "asOf": "2026-08-21",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -334,14 +324,14 @@
    }
   ],
   "valuation": {
-   "price": 9990,
-   "mcap": 0.186,
+   "price": 8680,
+   "mcap": 0.1618,
    "shares": 18709437,
    "total_shares": 18709437,
    "wavg_shares": 18701278,
-   "per": 25.038,
+   "per": 21.754,
    "eps": 399,
-   "pbr": 4.4302,
+   "pbr": 3.8492,
    "bps": 2255,
    "roe_ttm": 18.9,
    "ttm_window": "2025Q3~2026Q2",
@@ -350,7 +340,7 @@
    "bps_krx": 2252.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 100.0,
-   "div": 1.0
+   "div": 1.15
   }
  }
 }

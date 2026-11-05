@@ -1,0 +1,92 @@
+{
+ "batch_id": "msgbatch_01YVtVAbgo4Psbk4ocEuGqG1",
+ "created": "2026-10-27 15:11",
+ "model": "claude-opus-5-5",
+ "models": {
+  "0126Z0": "claude-opus-5-5",
+  "0009K0": "claude-opus-5-5",
+  "0120G0": "claude-sonnet-5",
+  "0030R0": "claude-sonnet-5",
+  "0008Z0": "claude-sonnet-5",
+  "0001A0": "claude-sonnet-5",
+  "0088M0": "claude-sonnet-5",
+  "0082N0": "claude-sonnet-5",
+  "0015G0": "claude-sonnet-5",
+  "0007C0": "claude-sonnet-5",
+  "0015N0": "claude-sonnet-5",
+  "0011A0": "claude-sonnet-5",
+  "0007J0": "claude-sonnet-5",
+  "0117P0": "claude-sonnet-5",
+  "0015S0": "claude-sonnet-5",
+  "0004V0": "claude-sonnet-5",
+  "0155E0": "claude-sonnet-5",
+  "0013V0": "claude-sonnet-5",
+  "0010V0": "claude-sonnet-5",
+  "0203K0": "claude-sonnet-5",
+  "0010F0": "claude-sonnet-5"
+ },
+ "tickers": [
+  "0126Z0",
+  "0009K0",
+  "0120G0",
+  "0030R0",
+  "0008Z0",
+  "0001A0",
+  "0088M0",
+  "0082N0",
+  "0015G0",
+  "0007C0",
+  "0015N0",
+  "0011A0",
+  "0007J0",
+  "0117P0",
+  "0015S0",
+  "0004V0",
+  "0155E0",
+  "0013V0",
+  "0010V0",
+  "0203K0",
+  "0010F0"
+ ],
+ "dataDate": "20261026",
+ "count": 21,
+ "usage": {
+  "claude-sonnet-5": {
+   "n": 19,
+   "in": 164903,
+   "cache_w": 1126422,
+   "cache_r": 1567308,
+   "out": 512870,
+   "search": 92,
+   "usd": 5.214
+  },
+  "claude-opus-5-5": {
+   "n": 2,
+   "in": 17284,
+   "cache_w": 126896,
+   "cache_r": 177700,
+   "out": 34854,
+   "search": 11,
+   "usd": 0.828
+  }
+ },
+ "result": {
+  "ok": 21,
+  "fail": 0
+ },
+ "usage_repair": {
+  "claude-sonnet-5": {
+   "n": 2,
+   "in": 6417,
+   "cache_w": 0,
+   "cache_r": 0,
+   "out": 2803,
+   "search": 0,
+   "usd": 0.020432
+  }
+ },
+ "repairs": [
+  "msgbatch_017uuN7cDNRUF6sTPrDq13a1"
+ ],
+ "collected": "2026-10-27 16:34"
+}

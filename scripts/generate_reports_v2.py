@@ -55,6 +55,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import generate_reports as g  # log/extract_text/collect_sources/load_stocks 재사용
 import check_report_text     # 생성 직후 금지 표현 검사 + 걸린 문장 교정(프롬프트가 못 막은 것)
+import fin_material          # 작성 재료 — 공시 실적을 본문 표기로 · 회사 영문명(2026-10-10)
 import number_spacing       # 저장 직전 금액 표기 통일(79조3,187억원 → 79조 3,187억원)
 import fix_hanja             # 본문에 섞인 한자를 한글로(모델이 '전년比' 처럼 쓴다)
 import check_valuation       # 종목별 항등식 — 숫자가 깨진 종목은 글을 쓰지 않는다
@@ -118,10 +119,11 @@ def _no_credit(e):
 
 MODEL = os.getenv("REPORT_MODEL_V2", "claude-opus-5-5")  # 폴백
 # 모델 정책: 시총 상위 MODEL_TOP_N개는 고급 모델(Opus), 나머지는 효율 모델(Sonnet)
-# 2026-10-08 Opus 5 → Opus 5.5(사장 승인 — 단가 20% 낮음 · 캐시 읽기 60% 낮음). Sonnet 은 5 그대로다 —
-# Sonnet 5.5 는 단가가 같고 사고 끄기(thinking disabled)가 400 이라 브리핑 수리가 깨진다.
+# 2026-10-08 Opus 5 → Opus 5.5(사장 승인 — 단가 20% 낮음 · 캐시 읽기 60% 낮음).
+# 2026-10-27 Sonnet 5 → Sonnet 5.5(사장 "소넷 5.5 사용해" — 단가 같음 · 캐시 읽기 절반). 사고 설정은 그대로
+# adaptive · 사고 깊이는 적지 않는다(기본 high — Sonnet 5 때와 같다). 사고를 끄는 호출은 model_params 를 본다.
 MODEL_TOP = os.getenv("REPORT_MODEL_TOP", "claude-opus-5-5")
-MODEL_REST = os.getenv("REPORT_MODEL_REST", "claude-sonnet-5")
+MODEL_REST = os.getenv("REPORT_MODEL_REST", "claude-sonnet-5-5")
 MODEL_TOP_N = int(os.getenv("REPORT_MODEL_TOP_N", "300"))
 TOP_N = int(os.getenv("REPORT_TOP_N", "10"))
 MAX_WAIT = int(os.getenv("BATCH_MAX_WAIT_SEC", "10800"))
@@ -148,7 +150,7 @@ def output_config(model):
     return {"output_config": {"effort": e}} if e else {}
 
 TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 6,
-          "blocked_domains": ["namu.wiki", "librewiki.net", "dcinside.com", "fmkorea.com"],
+          "blocked_domains": g.BLOCKED_DOMAINS,
           "user_location": {"type": "approximate", "country": "KR", "timezone": "Asia/Seoul"}}]
 
 log = g.log
@@ -234,7 +236,7 @@ def collect_sources_v2(message):
     for u in searched:
         if u not in out:
             out.append(u)
-    return [u for u in out if not _low_trust_src(u)]
+    return [u for u in out if not _low_trust_src(u) and not g._no_use_src(u)]
 
 
 # ── 정량 1: DART 전체 재무제표 ────────────────────────────────────────
@@ -1581,7 +1583,7 @@ SCHEMA_V2 = """{
   "lead":     {"ko": "한 문장 핵심 메시지", "en": "..."},
   "keypoints":[ {"ko": "핵심 포인트", "en": "..."}, ... 4~5개 ],
   "business": {"ko": "사업 구조 문단(7~9문장). 부문별 매출 비중·주요 제품·고객·경쟁구도", "en": "..."},
-  "earnings": {"ko": "실적 분석 문단(7~9문장). 아래 [확정 재무]의 연간·분기 수치를 직접 인용·해석. 증감 원인, 마진 추이, 일회성 요인", "en": "..."},
+  "earnings": {"ko": "실적 분석 문단(7~9문장). [공시 실적]의 연간·분기 수치를 표기 그대로 인용·해석. 증감 원인, 마진 추이, 일회성 요인", "en": "..."},
   "industry": {"ko": "산업 분석 문단(6~8문장). 전방시장 수급·사이클 위치·경쟁사 대비 포지션", "en": "..."},
   "outlook":  {"ko": "전망 문단(6~8문장). 회사 가이던스·수주·증설·신제품 일정 등 확인된 사실 기반", "en": "..."},
   "valuation_comment": {"ko": "밸류에이션 해설 4~6문장. ★현재 PER·PBR·배당수익률·현재가·시가총액은 주가 따라 매일 바뀌므로 '정확한 수치'를 문장에 쓰지 말 것(그 값은 화면 카드가 실시간 표시). ★EPS·BPS·DPS 같은 주당 지표의 수치도 쓰지 말 것 — 공시가 갱신되면 값이 바뀌어 본문만 낡은 숫자로 남는다. 대신 수준을 관계로 서술 — 예: 과거 거래 밴드 상단/하단, 업종 평균 상회/하회, 순자산 대비 프리미엄/할인. ★ROE(자기자본이익률)는 절대 언급하지 말 것(서비스에서 제외된 지표). 특정 시점의 주가 수준(…원대)도 쓰지 말 것. 다년 변화가 필요하면 '적자→흑자 전환', '이익 회복' 같은 방향으로만 표현. 'TTM'·'후행' 등 전문 용어는 표면에 쓰지 말 것. '비싸다/싸다' 단정·권유 금지, 사실 비교만", "en": "..."},
@@ -1595,32 +1597,37 @@ SCHEMA_V2 = """{
 SYSTEM_V2 = (
     "당신은 한국 주식시장(코스피·코스닥)을 다루는 시니어 리서치 애널리스트입니다. "
     "공시·뉴스·시장 데이터를 근거로 깊이 있는 기업 리서치 리포트를 작성합니다. "
-    "재무 수치는 사용자가 제공한 확정 데이터만 사용하며, 투자 권유 없이 정보를 제공합니다. "
+    "이 회사의 실적 수치는 DART 정기보고서 공시 값만 쓰며, 투자 권유 없이 정보를 제공합니다. "
     "당신의 글은 한국어/영어 양국어로 동시에 제공됩니다."
 )
 
 
-def build_prompt_v2(stock, quant, as_of):
-    qjson = json.dumps(quant, ensure_ascii=False)
-    _yrs = ", ".join(str(a.get("year")) for a in (quant.get("annual") or []))
-    _qs = quant.get("quarterly") or []
-    _qwin = f"{_qs[0]['q']}~{_qs[-1]['q']}" if _qs else "없음"
-    _ttm = (quant.get("valuation") or {}).get("ttm_window") or "없음"
+def build_prompt_v2(stock, quant, as_of, stocks=None):
+    # 2026-10-10 — 원 단위 원자료(JSON) 대신 본문 표기로 바꾼 [공시 실적]과 [회사 영문명]을 준다(fin_material).
+    # 원자료를 '억 · 만'으로 옮기다 자리를 틀렸고('3,427억 7,375만원' · '영업이익 7.4억원' — 실제 7,373만원), 연수를 직접
+    # 세다 틀렸고, 지시문이 쓰던 말('제공한 확정 데이터' · '분기 창' · 'ttm_window')이 본문에 그대로 옮겨졌다.
+    # 본문에 쓰면 안 되는 값(ROE · EPS · BPS · 주당배당금)은 재료에서 뺐다.
+    _yrs = sorted(a.get("year") for a in (quant.get("annual") or []) if a.get("year"))
+    _qs = [r for r in (quant.get("quarterly") or []) if r.get("q")]
+    _span = " · ".join(x for x in (
+        f"연간 {_yrs[0]}~{_yrs[-1]}년" if _yrs else "",
+        f"분기 {fin_material.qtext(_qs[0]['q'])}~{fin_material.qtext(_qs[-1]['q'])}" if _qs else "") if x) or "없음"
     return f"""다음 종목의 기업 리서치 리포트(v2)를 작성하세요.
 
-[기준 데이터 — {as_of} KST]
+[종목 · 작성 시점 — {as_of} KST]
 - 종목명: {stock['name']} ({stock['ticker']}) · {stock.get('market','')} · {stock.get('sector','')}
-- 현재가 {stock.get('price'):,}원 · 시가총액 {stock.get('mcap'):,.1f}조원
-- 재무 반영 범위: 연간 {_yrs} · 분기 {_qwin} · 최근 4개 분기 창 {_ttm}. 이보다 최신 분기 실적은 아직 공시 확정 전이니 '확정치' 로 쓰지 말 것(검색으로 확인된 잠정치는 출처·시점과 함께 잠정임을 밝힐 것).
+- 현재가 {stock.get('price'):,}원 · 시가총액 {fin_material.won((stock.get('mcap') or 0) * 1e12)}
+- 정기보고서로 공시된 실적은 {_span}까지다. 그 뒤 분기 실적은 아직 정기보고서가 나오지 않았다 — 검색으로 확인한 잠정 실적은 '잠정'과 발표 날짜를 함께 쓰고, 공시 실적처럼 쓰지 않는다.
 - 오늘은 {as_of[:10]} 이다. checkpoints 의 when 은 이 날짜 이후에 오는 일정만 쓸 것(이미 지난 일정 금지).
 
-[확정 재무 — DART 공시·KRX 공식 값. 모든 단위 원. 아래 JSON의 숫자만 '사실'로 사용]
-{qjson}
+{fin_material.material(quant, stock.get('name') or '')}
+
+{fin_material.name_block(stock, stocks)}
 
 [작성 지침]
 1. web_search로 최신 사업 현황·업황·뉴스·가이던스를 조사하세요(한국어, 3~6회). 신뢰 출처만: DART·기업 IR·증권사 리포트·주요 언론. 나무위키 등 위키·블로그·커뮤니티 금지.
-2. **재무 수치는 위 [확정 재무] JSON의 값만 사용하세요.** 검색에서 다른 수치가 나오면 위 값을 우선합니다. 거기 없는 숫자(예: 부문별 매출액)는 검색으로 확인된 것만 출처·시점과 함께 쓰고, 확인 안 되면 정성 서술로 대체하세요. 숫자를 절대 지어내지 마세요.
-3. earnings 섹션은 제공된 연간·분기 실적 수치(과거 확정치라 안 변함)를 구체적으로 인용·해석하세요. **valuation_comment 에서는 '현재 PER·PBR·배당수익률·현재가·시가총액'의 정확한 수치를 문장에 쓰지 마세요** — 이 값들은 주가 따라 매일 바뀌고 화면 카드가 실시간으로 표시합니다. **주당 지표(EPS·BPS·DPS)의 수치도 어느 섹션에든 쓰지 마세요** — 공시가 갱신되면 값이 바뀌는데 본문은 그대로 남아 낡은 숫자가 됩니다. 대신 그 수준을 '관계'로 서술하세요(예: "과거 거래 밴드(약 10~20배)의 상단을 웃돈다", "배당수익률은 업종 평균을 밑도는 편", "순자산 대비 프리미엄이 큰 구간", "주당순자산을 크게 밑도는 주가"). 과거 특정 시점의 주가 수준("3만원대까지 올랐다가 7,500원대")도 쓰지 마세요 — 오늘 주가는 화면에 있고 옛 주가는 독자에게 소용이 없습니다. 과거 PER 밴드, 다년 실적 추세는 인용해도 됩니다. **★ROE(자기자본이익률)는 절대 언급하지 마세요 — 서비스에서 제외된 지표입니다.** 다년 변화가 필요하면 "적자에서 흑자로 전환", "이익 회복" 처럼 방향으로만 표현하세요. 'TTM'·'선행/후행' 같은 용어와 '비싸다/싸다' 단정·매수/매도 권유는 금지.
+2. **이 회사의 실적 수치는 위 [공시 실적]의 표기를 그대로 옮긴다** — 원 단위로 다시 계산하거나 다른 자릿수로 바꾸지 않는다. 영어(en) 본문의 금액은 [ ] 안의 표기를 쓴다. 검색에서 다른 수치가 나오면 [공시 실적]을 따른다. 거기 없는 숫자(예: 부문별 매출액)는 검색으로 확인된 것만 출처·시점과 함께 쓰고, 확인 안 되면 정성 서술로 대체하세요. 숫자를 절대 지어내지 마세요.
+3. earnings 섹션은 [공시 실적]의 연간·분기 실적(과거 실적이라 바뀌지 않는다)을 구체적으로 인용·해석하세요. **'N년 연속 증가 · 감소' · 'N개 분기 연속' · '흑자 전환' · '적자 지속' · '기간 중 가장 큰 해'는 [공시 실적]에 적힌 그대로만 쓴다 — 직접 세지 않는다.** 공시 실적의 첫 해보다 앞까지 이어졌다거나 '사상 최대' · '역대 최대'라고 쓰려면 그 말을 한 출처가 있어야 한다. **valuation_comment 에서는 '현재 PER·PBR·배당수익률·현재가·시가총액'의 정확한 수치를 문장에 쓰지 마세요** — 이 값들은 주가 따라 매일 바뀌고 화면 카드가 실시간으로 표시합니다. **주당 지표(EPS·BPS·DPS)의 수치도 어느 섹션에든 쓰지 마세요** — 공시가 갱신되면 값이 바뀌는데 본문은 그대로 남아 낡은 숫자가 됩니다. 대신 그 수준을 '관계'로 서술하세요(예: "과거 거래 밴드(약 10~20배)의 상단을 웃돈다", "배당수익률은 업종 평균을 밑도는 편", "순자산 대비 프리미엄이 큰 구간", "주당순자산을 크게 밑도는 주가"). 과거 특정 시점의 주가 수준("3만원대까지 올랐다가 7,500원대")도 쓰지 마세요 — 오늘 주가는 화면에 있고 옛 주가는 독자에게 소용이 없습니다. 과거 PER 밴드, 다년 실적 추세는 인용해도 됩니다. **★ROE(자기자본이익률)는 절대 언급하지 마세요 — 서비스에서 제외된 지표입니다.** 다년 변화가 필요하면 "적자에서 흑자로 전환", "이익 회복" 처럼 방향으로만 표현하세요. 'TTM'·'선행/후행' 같은 용어와 '비싸다/싸다' 단정·매수/매도 권유는 금지.
 4. checkpoints 는 '다음에 무엇을 확인해야 하는가'입니다 — 다가오는 분기 실적 발표, 수주·증설·규제 이벤트 등 확인 가능한 일정 위주로.
 5. 균형: 강세·약세 요인을 같은 무게로. **우리(코사이)의 투자의견·매수/매도·목표주가는 절대 제시하지 말 것**(정보 제공용).
 5-0. **증권사 목표주가 인용은 허용** — 우리 의견이 아니라 '누가 무엇을 제시했다'는 사실이기 때문이다. 다만 아래 셋을 모두 지킬 때만 쓰고, 하나라도 못 지키면 아예 쓰지 말 것.
@@ -1639,12 +1646,23 @@ def build_prompt_v2(stock, quant, as_of):
         (X) "저평가된 상태가 지속되고 있다"
    · 매수·매도 권유, "지금이 기회" "담을 만하다" 류의 표현.
    면책 문구에서 이 단어들을 쓰는 것("매수·매도 의견을 포함하지 않는다")은 예외다.
+6-2. **표기 · 시점 · 서술** (2026-10-09 — 업종 분석 · 리포트에서 사람이 먼저 본 결함들이다)
+   · 1,000 이상의 수에는 천 단위 쉼표를 쓴다 — "9,000억원"(O) "9000억원"(X). 연도 · 제품 번호(4680 배터리)는 예외.
+   · 상대 시점을 쓰지 않는다 — '지난달' · '이달' · '이번 주' · '오늘' · '다음 달' 은 리포트가 걸려 있는 동안 다른 날을 가리킨다. "2026년 9월"처럼 날짜로 쓰고, 날짜를 모르면 시점 표현을 뺀다. 기사의 날짜를 확인해 이미 지난 일을 앞으로의 일('…할 예정' · '…되면')로 쓰지 않는다.
+   · 받은 자료를 가리키지 않는다 — '제공된 분기 구간' · '제공된 확정 재무 데이터' · '분기 창' · 'the quarters provided' · 'quarterly window' 대신 "최근 5개 분기 중" · "공시 실적 기준" · "the last five quarters". 독자는 이 지시문을 보지 못한다.
+   · 한국어 문장에 영어 일반 낱말을 섞지 않는다 — 'valuation' · 'discount' · 'momentum' · 'risk' · 'niche' → '밸류에이션' · '할인' · '모멘텀' · '리스크' · '틈새'. 업계 약어(HBM · CAPEX)와 고유명사는 된다.
+   · 한 문장에 한 사실 — 검색 결과의 문장 조각을 이어 붙이지 않는다. 여러 대상을 묶은 말('대부분' · '모두' · '두 자릿수')은 묶은 값이 모두 그 말에 들어맞을 때만 쓴다. 다른 회사의 수치를 이 회사 문장에 붙이지 않는다. 적자를 이익 증가처럼 쓰지 않는다. '폭증' · '폭발적' · '역대급' 같은 과장 대신 수치로.
+   · 우리 목소리의 투자 판단을 쓰지 않는다 — '보수적 접근이 타당하다' · '현 밸류에이션이 위험을 충분히 반영하지 않았다' · '업사이드가 아직 주가에 반영되지 않았다' 대신 사실과 다음에 확인할 지점으로.
+6-3. **[공시 실적]의 이름을 지킬 것** — '지배주주 순이익'과 '당기순이익(비지배지분 포함)'은 다른 값이다. '순이익'이라고만 쓰면 지배주주 순이익을 뜻하게 쓴다. 자본도 '자본총계'와 '지배주주 지분'을 섞지 않는다. 손실은 '영업손실 X' · '순손실 X'로 쓴다('영업이익 -X' · '영업이익 X 적자' 금지). 다른 회사 · 자회사 · 부문의 수치는 문장 앞에 그 이름을 밝힌다(예: "자회사 ○○의 2026년 2분기 매출은 …") — 주어 없이 쓰면 이 회사의 실적으로 읽힌다.
+6-4. **문장 끝** — 보고서 문체로 '…이다 · …했다 · …된다'로 끝낸다. '…있습니다'(합쇼체) · '…있어요'(해요체) · '…있음.' · '…함.'(명사형)으로 끝내지 않는다. 검색 결과나 기업 개요의 문장을 그대로 옮기지 말고 다시 쓴다.
+6-5. **같은 문장을 되풀이하지 않는다** — lead · keypoints 의 문장을 business · bull · bear · risks · verdict 에 글자 그대로 다시 쓰지 않는다. 같은 사실을 다시 말해야 하면 다른 각도(원인 · 영향 · 다음에 확인할 점)로 쓴다.
+6-6. **영어(en) 본문의 회사 이름은 [회사 영문명]을 쓴다** — 이 회사도, 다른 상장사도. 목록에 없는 회사는 그 회사가 쓰는 공식 영문명을 확인해 쓰고, 한국어 이름을 소리 나는 대로 옮겨 짓지 않는다(이랜텍 → 'E-Lantec' 이 아니라 'Elentec').
 6-1. **한자를 섞지 말 것**: '전년比'→'전년 대비', '삼성디스플레이向'→'삼성디스플레이 대상', '데이터센터發'→'데이터센터발', '美/中/日'→'미국/중국/일본', 'A社'→'A사'. 한자를 읽지 못하는 독자가 많다. 한국어 뒤 괄호 병기('상저하고(上低下高)')만 예외.
 
 [출력 형식]
 - 검색 후 **머리말 없이** `===JSON_START===` 부터 출력. 마커 사이에 아래 스키마의 JSON 하나만. 마커 뒤에 아무것도 쓰지 않기.
 - **스키마에 없는 키를 만들지 말 것** (예: en_placeholder·body_en_note·bull_en·risks_en 금지). 모든 글은 {{"ko": …, "en": …}} 쌍 안에 넣는다. 항목의 en 을 비워 두거나 다른 키로 빼지 말 것 — 구조가 다르면 리포트 전체가 폐기된다.
-- JSON은 반드시 완결시킬 것.
+- JSON은 반드시 완결시킬 것. 출력 한도는 스키마의 분량을 다 쓰기에 충분하다 — 서두르거나 줄이지 말고 모든 칸을 끝까지 채운다. 빈 문자열("") · 빈 목록([]) · '...' 생략으로 칸을 닫고 끝내지 않는다.
 
 스키마:
 {SCHEMA_V2}
@@ -1832,7 +1850,7 @@ def fill_missing_en(cl, rep, model=None):
         return 0
     payload = {str(i): c[k]["ko"] for i, (c, k) in enumerate(nodes)}
     resp = cl.messages.create(
-        model=model or os.getenv("REPORT_REPAIR_MODEL", "claude-sonnet-5"),
+        model=model or os.getenv("REPORT_REPAIR_MODEL", "claude-sonnet-5-5"),
         max_tokens=16000, thinking={"type": "adaptive"},
         messages=[{"role": "user", "content":
                    "아래 JSON 은 한국어 기업 리서치 리포트의 일부다. 각 값을 같은 뜻의 "
@@ -2258,6 +2276,12 @@ def collect_all_quant(targets, data, allow_reuse=False, fresh=()):
         if fund is not None and tk in fund.index:
             krx_row = fund.loc[tk]
         try:
+            # 공시 회사 목록에서 이 종목코드를 못 찾으면 재무제표 조회가 전부 빈손으로 돌아와 '재무 자료 없음'(생성
+            # 불가 · 30일 skip)과 똑같이 보인다. 영문이 섞인 종목코드 36개가 그렇게 넉 달 가까이 빠져 있었다
+            # (2026-10-27). 못 찾은 것은 그 종목의 실패로 센다 — 기록에 남고, 세 번이면 2주 쉬었다가 다시 본다.
+            find = getattr(dart, "find_corp_code", None)
+            if find and not find(tk):
+                raise LookupError(f"공시 회사 목록에 종목코드 {tk} 가 없다")
             out[tk] = collect_quant(dart, tk, krx_row, st)
             cross_check(tk, st["name"], out[tk]["valuation"])
             log(quant_summary(st["name"], out[tk]))
@@ -2398,6 +2422,16 @@ def settle_corrections(corr, quants, errors, today=None):
 
 
 # ── 배치 제출/회수 ────────────────────────────────────────────────────
+def _gh_output(**kv):
+    """작업 출력(GITHUB_OUTPUT) — 작업 파일의 다음 단계가 읽는다. 작업 밖에서 돌리면 아무것도 하지 않는다."""
+    path = os.getenv("GITHUB_OUTPUT")
+    if not path:
+        return
+    with open(path, "a", encoding="utf-8") as f:
+        for k, v in kv.items():
+            f.write(f"{k}={v}\n")
+
+
 def _write_state(path, state):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -2488,10 +2522,20 @@ def submit(cl, as_of):
                 system=[{"type": "text", "text": SYSTEM_V2, "cache_control": {"type": "ephemeral"}}],
                 thinking={"type": "adaptive"},
                 tools=TOOLS,
-                messages=[{"role": "user", "content": build_prompt_v2(st, q, as_of)}],
+                messages=[{"role": "user", "content": build_prompt_v2(st, q, as_of, stocks=(data or {}).get("stocks"))}],
                 **output_config(mdl),
             ),
         ))
+    # 새 형식을 만들 수 없는 종목(공시 재무 조회에 연간 재무가 없다 — 코넥스 · 리츠 · 인프라펀드 · 외국 기업 · 사업보고서를
+    # 아직 내지 않은 신규 상장)은 옛 형식 리포트에 머문다. 지정 run(공시 트리거)이면 그 종목을 작업 출력 legacy 로
+    # 넘기고, 작업 파일이 옛 형식 생성기(generate_reports_batch · 배치)로 다시 쓴다(2026-10-27 — 6월 옛 형식 110편이
+    # 넉 달 넘게 갱신되지 않았다). 정정 공시만 나온 종목은 넘기지 않는다 — 옛 형식은 숫자를 견줄 수 없고, 정정 공시는
+    # 숫자가 바뀐 경우에만 다시 쓴다. 자동 백필 · 백필 run 은 아래에서 생성 불가로 적는다.
+    legacy = [tk for tk in no_data if tk not in corr]
+    if legacy and not (fill_mode or backfill):
+        _gh_output(legacy=",".join(legacy))
+        result["legacy"] = legacy
+        log(f"- 새 형식을 만들 수 없어 옛 형식 생성기로 넘기는 종목 {len(legacy)}개: {','.join(legacy[:30])}")
     # skip 은 DART 가 '조회된 데이터 없음' 을 준 종목만, 그리고 자동 백필(fill)과
     # 백필 run 에서만 남긴다. 명시 지정 run 은 skip 을 건드리지 않는다(병렬 안전).
     # 한도 초과·점검으로 못 모은 종목은 여기 오지 않는다(quants 에 없다).
@@ -2652,10 +2696,11 @@ def poll(cl, batch_id, budget=None):
 # 입력의 10%, 캐시 쓰기는 125% 로 잡는다. 웹 검색은 1,000회에 $10. 회수 단계의 보정(영문 채우기 ·
 # 표현 교정)도 배치다(2026-10-08 — 전에는 즉시 호출 · 정가). 청구서가 아니라 규모를 가늠하는 추정이다 —
 # 실제 청구는 콘솔이 답이다.
-_PRICE = {"claude-opus-5-5": (2.0, 10.0), "claude-opus-5": (2.5, 12.5), "claude-sonnet-5": (1.0, 5.0),
-          "claude-opus-4-8": (2.5, 12.5), "claude-sonnet-4-6": (1.5, 7.5)}
-# 캐시 읽기는 입력 단가의 몇 배인가. Opus 5.5 는 $0.20 / $4 = 0.05(2026-10-08 요금표) — 나머지는 0.1.
-_CACHE_R = {"claude-opus-5-5": 0.05}
+_PRICE = {"claude-opus-5-5": (2.0, 10.0), "claude-opus-5": (2.5, 12.5), "claude-sonnet-5-5": (1.0, 5.0),
+          "claude-sonnet-5": (1.0, 5.0), "claude-opus-4-8": (2.5, 12.5), "claude-sonnet-4-6": (1.5, 7.5)}
+# 캐시 읽기는 입력 단가의 몇 배인가. Opus 5.5 는 $0.20 / $4 = 0.05(2026-10-08 요금표), Sonnet 5.5 는
+# $0.10 / $2 = 0.05(2026-10-27 요금표) — 나머지는 0.1.
+_CACHE_R = {"claude-opus-5-5": 0.05, "claude-sonnet-5-5": 0.05}
 
 
 def _usage_of(message):
@@ -2733,9 +2778,26 @@ class _RepairQueue:
                                      model=got.get("model"), usage=None, stop_reason=got.get("stop_reason"))
 
 
+# 저장 전 검토를 켜고 끈다(2026-10-09). 1단계는 끈 채로 올리고, 시험 회수(review_replay)로 고침의 품질과 값을 본 뒤 켠다.
+# 켜면 리포트마다 검토 요청 하나가 보정 배치에 실린다(Sonnet 5 배치 · 한 편 약 3~5센트).
+REVIEW_ON = os.getenv("REPORT_REVIEW", "0") == "1"
+
+
+def review_material(name, q):
+    """검토용 재료 — 실적 표의 연간 · 분기 값(매출 · 영업이익 · 지배순이익). 화면에 없는 지표(ROE)는 넣지 않는다."""
+    if not isinstance(q, dict):
+        return ""
+    out = []
+    for a in q.get("annual") or []:
+        out.append(f"  - {name} {a.get('year')}년: 매출 {_eok(a.get('rev'))} · 영업이익 {_eok(a.get('op'))} · 지배순이익 {_eok(a.get('np_owner'))}")
+    for r in q.get("quarterly") or []:
+        out.append(f"  - {name} {r.get('q')}: 매출 {_eok(r.get('rev'))} · 영업이익 {_eok(r.get('op'))} · 지배순이익 {_eok(r.get('np_owner'))}")
+    return "\n".join(out)
+
+
 # 보정 배치를 몇 번까지 오가나. 한 종목은 영문 채우기 · 표현 교정 두 번이면 끝난다. 코드가 바뀌어
 # 요청 이름이 달라지는 경우에 대비한 한도다 — 넘기면 답이 없는 보정은 실패로 다루고 마무리한다.
-REPAIR_ROUNDS = 3
+REPAIR_ROUNDS = 4 if REVIEW_ON else 3   # 검토를 켜면 영문 채우기 · 검토 · 표현 교정이 한 종목에 다 걸릴 수 있다
 
 
 def _answers_from(cl, batch_id, keys, state):
@@ -2820,6 +2882,13 @@ def collect(cl, as_of, state):
             else:
                 log(f"  · ⚠️ {tk} 결과 {result.result.type}")
             continue
+        # 협의 없이 쓰지 않는 사이트(치킨스탁 등)가 검색 결과 · 인용에 들어왔으면 그 글은 저장하지 않는다(2026-10-19).
+        leak = g.no_use_urls(result.result.message)
+        if leak:
+            fail += 1
+            n = S.bump_fail(tk)
+            log(f"  · 🚫 {tk} 쓰지 않기로 한 사이트가 검색 결과에 들어왔다({leak[0]} 등 {len(leak)}건) — 저장하지 않음 ({n}번째 실패)")
+            continue
         try:
             text = g.extract_text(result.result.message)
             rep = g.parse_report(text)
@@ -2880,7 +2949,7 @@ def collect(cl, as_of, state):
             # 만 단위를 붙여 쓴 곳이 9,074군데(72%), 한 리포트 안에서 두 방식이
             # 섞인 것도 34개였다. 정규식으로 확정할 수 있는 종류라 저장 전에 맞춘다.
             try:
-                _nsp, rep = number_spacing.normalize_report(rep)
+                _nsp, rep = number_spacing.normalize_report(rep, commas=True)
                 if _nsp:
                     log(f"  · {tk} 금액 표기 {_nsp}곳 정리 (79조3,187억원 → 79조 3,187억원)")
             except Exception as e:
@@ -2894,6 +2963,27 @@ def collect(cl, as_of, state):
                 bad_text = check_report_text.check(rep)
             except Exception:
                 bad_text = []
+            # 저장 전 검토(2026-10-09) — 기계 검사가 못 잡는 깨진 문장 · 재료와 다른 서술 · 앞뒤 모순 · 낡은 기사 · 회사 설명 오류를
+            # 값싼 모델이 재료(실적 표)와 함께 읽고 고칠 곳만 돌려준다(check_report_text.review). 배치 대기열(mcl)을 거친다 — 답이
+            # 오기 전에는 이 종목을 미룬다. 고친 뒤에도 남은 위반은 아래 표현 교정이 한 번 더 고친다.
+            if REVIEW_ON and not repair_off:
+                try:
+                    got = check_report_text.review(
+                        mcl, rep, bad_text, kind="report", as_of=(state.get("created") or as_of)[:10],
+                        material=review_material(rep.get("name") or tk, rep.get("quant")),
+                        names=f"  - {rep.get('name') or tk}({check_report_text.clean_en(rep.get('name_en'))}) — 이 리포트의 회사",
+                        hints=check_report_text.en_gap_hints(rep))
+                except Exception as e:
+                    got = None
+                    log(f"  · ({tk} 검토 호출 실패: {type(e).__name__}: {e})")
+                    if _api_unavailable(e):
+                        repair_off = True
+                        log("  · (검토 · 교정은 이번 회수에서 접는다 — 모델을 부를 수 없다)")
+                if got:
+                    rep, _after, note = got
+                    rep = check_report_text.prepare(rep)
+                    bad_text = check_report_text.check(rep)
+                    log(f"  · 🔎 {tk} {note} → 남은 위반 {len(bad_text)}건")
             if bad_text and not repair_off and os.getenv("REPORT_REPAIR", "1") != "0":
                 try:
                     fixed = check_report_text.repair(mcl, rep, bad_text)
@@ -2918,13 +3008,16 @@ def collect(cl, as_of, state):
             # 깨진 글자·태그는 표현이 아니라 글자가 망가진 것이다 — 화면에 '경�쟁'·'경쁴력'·'<sup …>' 가
             # 그대로 찍힌다(2026-09-26 사장이 먼저 봤다). 교정 뒤에도 남았으면 저장하지 않는다. 있던
             # 리포트는 그대로 둔다(낡아도 읽힌다). fail 에 세므로 다음 회차가 다시 만들고, 거듭 실패하면
-            # 다른 실패와 같이 멈춰 사람이 본다. 나머지 표현 문제는 전처럼 로그만 남기고 쓴다.
-            broken = [h for h in bad_text if h["rule"] in ("broken_char", "markup")]
-            if broken:
+            # 다른 실패와 같이 멈춰 사람이 본다.
+            # 2026-10-09 부터는 검사 위반이 하나라도 남으면 저장하지 않는다(받은 자료 언급 · 상대 시점 · 영어 낱말 · 투자 판단까지).
+            # 전에는 표현 문제는 로그만 남기고 썼는데, 검사 묶음의 전수 검사(check_report_text_test)는 사람이 돌릴 때만 돌아
+            # 사이트에 먼저 걸렸다(업종 분석 30편 · 리포트 2,703편 중 690편 — 사장이 크게 질책했다).
+            if bad_text:
                 fail += 1
                 n = S.bump_fail(tk)
-                log(f"  · 🚫 {tk} 깨진 글자·태그 {len(broken)}곳이 교정 뒤에도 남아 저장하지 않음 ({n}번째 실패) "
-                    f"— [{broken[0]['section']}] {broken[0]['match']!r} · {broken[0]['sentence'][:60]}")
+                h0 = bad_text[0]
+                log(f"  · 🚫 {tk} 검사 위반 {len(bad_text)}건({', '.join(sorted({h['rule'] for h in bad_text}))})이 교정 뒤에도 남아 "
+                    f"저장하지 않음 ({n}번째 실패) — [{h0['section']}] {h0['match']!r} · {h0['sentence'][:60]}")
                 continue
 
             (OUT_DIR / f"{tk}.json").write_text(

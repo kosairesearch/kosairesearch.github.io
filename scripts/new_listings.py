@@ -29,6 +29,10 @@ STOCKS_JS = ROOT / "data" / "stocks.js"
 KNOWN = ROOT / "data" / "known_tickers.json"
 REPORTS_JS = ROOT / "data" / "reports-index.js"   # 분할 구조: 가벼운 인덱스(티커 목록·reportDate)
 MAX_NEW = int(os.getenv("MAX_NEW_REPORTS", "20") or "20")
+# 생성기가 저장하지 못한 연속 횟수(generate_reports_batch.FAIL_JS) — FAIL_MAX 번째부터 재시도하지 않는다(2026-10-09 · 같은 이유로
+# 계속 걸리는 종목을 평일 밤마다 다시 주문하지 않게). 다시 시도하려면 그 파일에서 종목을 지운다.
+FAIL_JS = ROOT / "data" / "new_listing_fail.json"
+FAIL_MAX = 3
 
 
 def _load_obj(path):
@@ -74,8 +78,18 @@ def main():
     reported |= on_file
     # 전에 보았지만 아직 리포트가 하나도 없는 종목 — 지난 생성이 실패한 신규 상장
     retry = []
+    try:
+        fails = json.loads(FAIL_JS.read_text(encoding="utf-8")) if FAIL_JS.exists() else {}
+    except Exception:
+        fails = {}
+    stuck = {t for t, e in fails.items() if isinstance(e, dict) and int(e.get("n", 0)) >= FAIL_MAX}
     if idx_n >= len(cur_set) // 2:
-        retry = [t for t in cur if t not in reported and t not in new]
+        retry = [t for t in cur if t not in reported and t not in new and t not in stuck]
+        held = [t for t in cur if t not in reported and t in stuck]
+        if held:
+            print(f"⛔ 저장하지 못한 횟수가 {FAIL_MAX}번인 종목 {len(held)}개는 다시 주문하지 않는다"
+                  f"(data/new_listing_fail.json 에서 지우면 다시 시도): "
+                  + ", ".join(f"{t} {nm.get(t, '')}({fails[t].get('why', '')})" for t in held[:20]))
     else:
         print(f"⚠️ 리포트 인덱스가 비정상({idx_n}개) — 재시도 대상은 이번에 보지 않는다")
     for t in retry[:40]:

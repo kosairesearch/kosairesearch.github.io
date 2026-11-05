@@ -331,13 +331,21 @@
     s = s.replace(/[,.\s]+$/, '').trim();
     var letters = s.replace(/[^A-Za-z]/g, ''), upper = s.replace(/[^A-Z]/g, '');
     if (letters && upper.length / letters.length > 0.8) {
-      var ACR = { LG: 1, SK: 1, KB: 1, KT: 1, HD: 1, CJ: 1, GS: 1, LS: 1, DB: 1, NH: 1, SC: 1, POSCO: 1, NAVER: 1, HMM: 1, OCI: 1, DL: 1, BGF: 1, JYP: 1, YG: 1, SM: 1, HLB: 1, KCC: 1, DGB: 1, BNK: 1, JB: 1, NHN: 1, SDI: 1, BM: 1, IPS: 1, NC: 1, LX: 1, KG: 1, DN: 1 };
-      s = s.split(/\s+/).map(function (w) {
+      /* 약어는 대문자 그대로 둔다 — 목록에 있는 것(모음이 든 약어: ISC · APR · CJ ENM …)과 모음이 없는 낱말(SDS · CNS · DTS — 모음 없는
+         영어 낱말은 거의 없다). 숫자가 든 낱말(3C)도 그대로, 하이픈으로 이은 낱말(A-JIN)은 조각마다 본다. 그 밖은 첫 글자만 대문자.
+         전에는 목록 밖 약어를 소문자로 바꿔 'Samsung Sds' · 'LG Cns' · 'Skc' 로 나왔다(2026-10-23). check_report_text.clean_en 과 같아야 한다. */
+      var ACR = { LG: 1, SK: 1, KB: 1, KT: 1, HD: 1, CJ: 1, GS: 1, LS: 1, DB: 1, NH: 1, SC: 1, POSCO: 1, NAVER: 1, HMM: 1, OCI: 1, DL: 1, BGF: 1, JYP: 1, YG: 1, SM: 1, HLB: 1, KCC: 1, DGB: 1, BNK: 1, JB: 1, NHN: 1, SDI: 1, BM: 1, IPS: 1, NC: 1, LX: 1, KG: 1, DN: 1, AI: 1, KBI: 1, SY: 1, DY: 1, DI: 1, IS: 1, ISU: 1, KEC: 1, IB: 1, ICD: 1, ICH: 1, ICTK: 1, IDP: 1, IMS: 1, IMT: 1, IMGT: 1, ISC: 1, ITX: 1, KGA: 1, LAT: 1, MOT: 1, NI: 1, OA: 1, OSP: 1, PHA: 1, PIE: 1, PIM: 1, PNE: 1, SEC: 1, SI: 1, SOS: 1, STO: 1, TEC: 1, TFE: 1, TI: 1, TSE: 1, TSI: 1, TYM: 1, UIL: 1, UST: 1, UTI: 1, UVC: 1, UXN: 1, WSI: 1, YBM: 1, YC: 1, YM: 1, YMC: 1, YMT: 1, YTN: 1, YW: 1, BHI: 1, BI: 1, BTI: 1, BYC: 1, CSA: 1, CU: 1, DAP: 1, DIT: 1, DKME: 1, DYA: 1, DYC: 1, DYD: 1, DYP: 1, EB: 1, EG: 1, ELC: 1, ELP: 1, EMB: 1, ENM: 1, ES: 1, EV: 1, GA: 1, GFI: 1, GIS: 1, GSE: 1, HYTC: 1, AFW: 1, ALT: 1, APR: 1, APS: 1, AU: 1, AUK: 1, AL: 1, WIA: 1, SYTS: 1, NGVI: 1, TEMC: 1, 'S-OIL': 1, IT: 1, REIT: 1, REITS: 1 };
+      var cap = function (w) {
         var wu = w.toUpperCase().replace(/[.,]/g, '');
         if (ACR[wu]) return wu;
         if (/[&]/.test(w) && w === w.toUpperCase()) return w;
+        if (/\d/.test(w)) return w;
+        if (w.indexOf('-') > 0) return w.split('-').map(cap).join('-');
+        var core = wu.replace(/[^A-Z]/g, '');
+        if (core.length >= 2 && !/[AEIOUY]/.test(core)) return wu;
         return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
-      }).join(' ');
+      };
+      s = s.split(/\s+/).map(cap).join(' ');
     }
     return s;
   }

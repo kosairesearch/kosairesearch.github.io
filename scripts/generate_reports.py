@@ -26,6 +26,9 @@ except Exception:
 
 import anthropic
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import fin_material   # noqa: E402 — 작성 재료(공시 실적 표기 · 회사 영문명, 2026-10-10)
+
 ROOT = Path(__file__).resolve().parent.parent
 STOCKS_JS = ROOT / "data" / "stocks.js"
 REPORTS_JS = ROOT / "data" / "reports.js"            # (레거시) 단일 파일 — 마이그레이션용으로만 읽음
@@ -51,8 +54,10 @@ def log(msg):
 # 정가(USD / 100만 토큰 · 입력, 출력) — 2026-10-03 공식 요금표 대조. 배치는 이 값의 절반이고,
 # 캐시 쓰기(5분)는 입력의 1.25배 · 캐시 읽기는 0.1배, 웹 검색은 1회 $0.01 이다.
 # 청구서가 아니라 추정이다 — 실제 청구는 콘솔이 답이다.
-PRICE = {"claude-opus-5-5": (4.0, 20.0), "claude-opus-5": (5.0, 25.0), "claude-sonnet-5": (2.0, 10.0),
-         "claude-opus-4-8": (5.0, 25.0), "claude-sonnet-4-6": (3.0, 15.0)}
+PRICE = {"claude-opus-5-5": (4.0, 20.0), "claude-opus-5": (5.0, 25.0), "claude-sonnet-5-5": (2.0, 10.0),
+         "claude-sonnet-5": (2.0, 10.0), "claude-opus-4-8": (5.0, 25.0), "claude-sonnet-4-6": (3.0, 15.0)}
+# 캐시 읽기가 입력의 0.1배가 아닌 모델(2026-10-27 요금표 — Opus 5.5 · Sonnet 5.5 는 0.05배).
+CACHE_R = {"claude-opus-5-5": 0.05, "claude-sonnet-5-5": 0.05}
 SPENT = {}   # 이번 실행의 모델별 합계(즉시 호출)
 
 
@@ -71,7 +76,7 @@ def usage_of(message):
 
 def cost_usd(model, u, batch=False):
     pin, pout = PRICE.get(model, (5.0, 25.0))
-    tok = ((u["in"] + u["cache_w"] * 1.25 + u["cache_r"] * 0.1) * pin + u["out"] * pout) / 1e6
+    tok = ((u["in"] + u["cache_w"] * 1.25 + u["cache_r"] * CACHE_R.get(model, 0.1)) * pin + u["out"] * pout) / 1e6
     return tok * (0.5 if batch else 1.0) + u["search"] * 0.01
 
 
@@ -227,8 +232,8 @@ def get_dart():
             _dart = False
         else:
             try:
-                import OpenDartReader
-                _dart = OpenDartReader(DART_API_KEY)
+                import dart_reader   # 영문이 섞인 종목코드('0011A0')도 찾는다(2026-10-27)
+                _dart = dart_reader.reader(DART_API_KEY)
             except Exception as e:
                 _dart_err = f"{type(e).__name__}: {e}"
                 log(f"- (DART 초기화 실패) {e}")
@@ -311,24 +316,25 @@ def get_dart_financials(ticker):
         return ""
 
     def fmt(d, label):
+        # 2026-10-10 — 원 단위('73,730,000원') · 소수 한 자리 조('1.2조원') 대신 본문 표기(fin_material)로 준다.
+        # 작성 모델이 원 단위를 억으로 옮기다 열 배를 틀렸다('영업이익 7.4억원' — 실제 7,373만원). 손실은 '영업손실'로 이름을 바꾼다.
         if not d:
             return None
         parts = []
-        for k in ("매출액", "영업이익", "당기순이익"):
+        for k, loss_k, profit in (("매출액", None, False), ("영업이익", "영업손실", True), ("당기순이익", "당기순손실", True)):
             if k in d:
                 v = d[k]
-                s = _won_unit(v["cur"])
-                if v.get("prv"):
-                    try:
-                        yoy = (v["cur"] - v["prv"]) / abs(v["prv"]) * 100
-                        s += f" (전기대비 {yoy:+.1f}%)"
-                    except Exception:
-                        pass
-                parts.append(f"{k} {s}")
+                cur = v["cur"]
+                name = loss_k if (loss_k and cur < 0) else k
+                s = f"{name} {fin_material.won(cur)}[{fin_material.won_en(cur)}]"
+                c = fin_material.chg(cur, v.get("prv"), profit)
+                if c:
+                    s += f"(전년 같은 기간 대비 {c})"
+                parts.append(s)
         return f"- {label}: " + ", ".join(parts) if parts else None
 
-    lines = ["[DART 공시 확정 재무 — 아래 숫자는 공시 원문(연결 기준)이므로 '사실'로 사용하세요. "
-             "기사/추정값과 충돌하면 이 값을 우선합니다.]"]
+    lines = ["[공시 실적 — DART 정기보고서(연결 우선) · 금액은 이 표기 그대로 본문에 옮긴다 · [ ] 안은 영어 본문 표기 · "
+             "기사나 추정치와 다르면 이 값을 따른다]"]
     for blk in (fmt(annual, f"{ann_year}년 연간"), fmt(quarter, q_label)):
         if blk:
             lines.append(blk)
@@ -336,6 +342,9 @@ def get_dart_financials(ticker):
 
 
 # ── 프롬프트 ──────────────────────────────────────────────────────────
+# 틀에 빈 문자열("")을 보이지 않는다 — 모델이 그대로 빈 문자열로 낸다(업종 분석 2026-08 · generate_sectors 의 SCHEMA).
+# 2026-10-27 Sonnet 5.5 로 옛 형식 110편을 쓰자 3편이 outlook · bull · bear · risks · verdict 를 빈칸으로 닫고 끝냈다
+# (출력 5천~1만 3천 토큰 · 한도 9만 6천). 출력 형식 절에 '한도는 충분하다 · 빈칸 · 생략 금지'를 함께 적었다.
 SCHEMA_DESC = """{
   "title":     {"ko": "리포트 헤드라인(핵심 관점. 짧은 쪽 선호하되 길이는 다양하게 — 대부분 12~24자, 길어도 30자 이내. 매수/매도 권유 금지)", "en": "headline"},
   "lead":      {"ko": "한 문장 핵심 메시지", "en": "one-sentence thesis"},
@@ -344,9 +353,9 @@ SCHEMA_DESC = """{
   "business":  {"ko": "사업구조 문단(7~9문장, 부문별 비중·경쟁구도 포함)", "en": "..."},
   "recent":    {"ko": "최근 실적/주가 흐름 문단(7~9문장, DART 수치 근거)", "en": "..."},
   "outlook":   {"ko": "향후 전망 문단(6~8문장)", "en": "..."},
-  "bull":      [ {"title": {"ko":"","en":""}, "body": {"ko":"3~4문장","en":""}}, ... 3개 ],
-  "bear":      [ {"title": {"ko":"","en":""}, "body": {"ko":"3~4문장","en":""}}, ... 3개 ],
-  "risks":     [ {"cat": {"ko":"거시 리스크","en":"Macro"}, "body": {"ko":"3~4문장","en":""}}, ... 3개 ],
+  "bull":      [ {"title": {"ko":"강세 요인 제목","en":"title in English"}, "body": {"ko":"3~4문장","en":"same, in English"}}, ... 3개 ],
+  "bear":      [ {"title": {"ko":"약세 요인 제목","en":"title in English"}, "body": {"ko":"3~4문장","en":"same, in English"}}, ... 3개 ],
+  "risks":     [ {"cat": {"ko":"거시 리스크","en":"Macro"}, "body": {"ko":"3~4문장","en":"same, in English"}}, ... 3개 ],
   "verdict":   {"body": {"ko":"종합의견 문단(5~7문장). 정보 제공용 정성 요약만. 투자의견(매수/중립/긍정 등)·등급·목표주가 표현 금지", "en":"..."}},
   "sources":   [ "https://...", ... ]
 }"""
@@ -367,25 +376,37 @@ def build_prompt(stock, as_of, dart_block=""):
     mcap_eok = stock.get("mcap")  # 조 단위로 저장됨 (예: 2065.95 = 2,065.95조? -> 실제는 조)
     trading_value = stock.get("trading_value")
 
-    mcap_txt = f"{mcap_eok:,.1f}조원" if mcap_eok else "-"
+    # 시가총액은 조 단위 값이다. 소수 한 자리 조로 쓰면 작은 회사가 '0.0조원'이 되고, 그 말이 본문에 옮겨졌다(2026-10-10).
+    mcap_txt = fin_material.won(mcap_eok * 1e12) if mcap_eok else "-"
     dart_section = ("\n" + dart_block + "\n") if dart_block else ""
+    try:
+        names = "\n" + fin_material.name_block(stock) + "\n"
+    except Exception:
+        names = ""
     return f"""다음 종목에 대한 기업 리서치 리포트를 작성하세요.
 
-[기준 데이터 — {as_of} KST]
+[종목 · 작성 시점 — {as_of} KST]
 - 종목명: {name} ({stock['ticker']})
 - 시장/업종: {market} · {sector}
 - 현재가: {price:,}원 (전일대비 {change:+.2f}%)
 - 시가총액: {mcap_txt}
 - 거래대금: {fmt_won(trading_value)}
-{dart_section}
+{dart_section}{names}
 [작성 지침]
 1. 먼저 web_search 도구로 이 기업의 최신 실적, 사업 현황, 업종 동향, 최근 뉴스를 조사하세요(한국어로 검색). 최소 2~4회 검색합니다. 출처는 **신뢰할 수 있는 것만** 사용하세요: DART 공시·기업 IR/홈페이지·증권사 리포트·주요 언론·공신력 있는 통계. **나무위키 등 위키, 개인 블로그, 종목토론방·커뮤니티 같은 비공식·검증 안 된 출처는 참고하거나 인용하지 마세요.**
-2. 재무 수치는 위 **[DART 공시 확정 재무]** 값을 최우선으로 사용하세요(공시 원문). 그 외 수치는 검색으로 **확인된 것만** 쓰고, 확인 안 된 구체적 숫자는 추정하지 말고 정성적으로 서술하세요. 데이터를 지어내지 마세요.
+2. 이 회사의 실적 수치는 위 **[공시 실적]**의 표기를 그대로 옮기세요(원 단위로 다시 계산하거나 자릿수를 바꾸지 말 것 · 영어 본문은 [ ] 안의 표기). 그 외 수치는 검색으로 **확인된 것만** 쓰고, 확인 안 된 구체적 숫자는 추정하지 말고 정성적으로 서술하세요. 숫자를 지어내지 마세요.
 3. 시점에 민감한 수치는 "최근 보도에 따르면", "2025년 기준" 처럼 출처/시점을 함께 밝히세요.
 4. 균형 있게: 강세 요인과 약세 요인을 모두 제시하세요.
 5. 한국어(ko)와 영어(en) 두 버전을 모두 작성하세요. 영어 버전에 한국어가 섞이면 안 됩니다.
 6. 문체는 전문 애널리스트 리포트 톤. 투자 권유·매수/매도 추천 표현은 쓰지 마세요(정보 제공용).
 6-1. **단정적 주가 방향성 금지(중립 필수)**: KOSAI는 등록 투자자문업자가 아닙니다. "상승 여력(충분/크다)", "추가 상승 여지", "재평가 모멘텀", "조정 후 반등", "저평가라 오른다", "매집=강세" 같이 *주가가 오른다/내린다는 우리 자신의 단정·예측*은 쓰지 마세요. 사실과 강세 vs 약세 구도만 제시하고 판단은 독자에게 맡깁니다. 밸류·방향성 의견은 *출처를 명시한 인용*으로만("○○증권은 …라고 평가했다") 쓰되 우리 voice로 동조하지 마세요. '상승 여력'은 영업이익률·가동률·환원율 등 사업 지표의 개선 여지에만 한정하고 주가/멀티플에는 쓰지 마세요. 내부자·기관 지분 매수는 '매집해서 오른다'가 아니라 사실과 중립 해석으로만 다루세요.
+6-2. **표기 · 시점 · 서술** (2026-10-10 — 리포트 v2 지시문 6-2 ~ 6-6 과 같은 규칙. 저장 전 검사가 같은 것을 본다)
+   · 1,000 이상의 수에는 천 단위 쉼표("9,000억원"). 상대 시점('지난달' · '이달' · '이번 주' · '오늘' · '지난해')을 쓰지 말고 날짜로 쓴다. 이미 지난 일을 앞으로의 일('…할 예정' · '…되면')로 쓰지 않는다.
+   · 받은 자료를 가리키지 않는다('제공된 …' · '주어진 데이터' · '분기 창') — "공시 실적 기준"처럼 쓴다. 한국어 문장에 영어 일반 낱말(valuation · niche · risk)을 섞지 않는다.
+   · 문장은 '…이다 · …했다 · …된다'로 끝낸다 — '…있습니다'(합쇼체) · '…있음.' · '…함.'(명사형) 금지. 검색 결과 · 기업 개요의 문장을 그대로 옮기지 말고 다시 쓴다. 한 문장에 한 사실.
+   · 손실은 '영업손실 X' · '당기순손실 X'로 쓴다('영업이익 -X' 금지). 다른 회사 · 자회사 · 부문의 수치는 문장 앞에 그 이름을 밝힌다.
+   · 같은 문장을 두 칸에 글자 그대로 되풀이하지 않는다(lead · keypoints 의 문장을 본문 · bull · bear 에 다시 쓰지 않는다).
+   · 영어(en) 본문의 회사 이름은 [회사 영문명]을 쓴다. 목록에 없는 회사는 그 회사가 쓰는 공식 영문명을 확인해 쓰고, 한국어 이름을 소리 나는 대로 옮겨 짓지 않는다.
 7. 제목(title)은 핵심 관점을 담은 헤드라인입니다. **짧고 강한 제목을 기본으로 하되 길이는 다양하게** 작성하세요(대부분 12~24자, 더 짧아도 좋음, 길어도 30자 이내). 매번 비슷한 길이로 획일화하지 말 것 — 특히 모든 제목을 길게 늘리지 마세요. 길이를 채우려고 ' — ' 뒤에 둘째 절을 덧붙이거나 "~할 수 있는가", "~를 가른다", "~의 검증대" 같은 수사로 패딩하지 마세요. 핵심 하나만 날카롭게. 예: "성장과 수익성의 괴리"(짧게), "AI 메모리 슈퍼사이클의 핵심 수혜주"(보통), "MLCC·FC-BGA가 여는 AI 부품 토털 솔루션"(다소 길게). 매수/매도·목표주가 등 투자권유 표현 금지.
 
 [출력 형식 — 매우 중요]
@@ -393,7 +414,7 @@ def build_prompt(stock, as_of, dart_block=""):
 - 최종 결과는 아래 스키마의 **JSON 하나**이며, `===JSON_START===` 와 `===JSON_END===` 사이에 넣습니다. 마커 뒤에는 아무것도 쓰지 마세요.
 - **충분히 상세하게** 작성하세요: business/recent/outlook 각 문단은 **7~9문장**으로 깊이 있게(부문별 비중, 경쟁사 비교, 구체적 근거·수치 포함). keypoints 4~5개, 강세·약세·리스크 각 3개이며 각 body는 3~4문장. 여러 문단이면 문단 사이를 빈 줄(\\n\\n)로 구분하세요.
 - 단, **사실에 근거**해야 하며 분량을 채우려고 내용을 지어내지 마세요. 확인 안 된 건 정성적으로.
-- JSON은 **반드시 완결**되어야 합니다(중간에 끊기지 않도록 하되 위 분량은 지키세요).
+- JSON은 **반드시 완결**되어야 합니다. 출력 한도는 위 분량을 다 쓰기에 충분합니다 — 분량 때문에 서두르거나 줄이지 말고 **모든 칸을 끝까지** 채우세요. 빈 문자열("") · 빈 목록([]) · '...' 생략으로 칸을 닫고 끝내지 마세요(outlook · bull · bear · risks · verdict 포함). 스키마에 없는 키(예: keypoints_note)를 만들지 마세요.
 
 스키마:
 {SCHEMA_DESC}
@@ -440,14 +461,44 @@ def _low_trust_src(url):
     return any(b in host for b in LOW_TRUST_SRC)
 
 
+# 협의 없이 쓰지 않는 사이트 — 웹 검색에서 빼고(blocked_domains) 출처 목록에도 싣지 않는다.
+# chickstockfi.com(치킨스탁 · 알프소프트): 2026-10-19 운영사가 '데이터의 외부 재사용 · 상업적 활용은
+# 별도 협의가 필요하다'고 알려 왔다. 그 전에는 검색 결과로 리포트 152편의 출처 목록에 460건이 실렸다.
+NO_USE_DOMAINS = ("chickstockfi.com",)
+# 리포트 생성기(v2 · 신규 상장 배치 · 옛 생성기)의 웹 검색 차단 목록 — 위키 · 커뮤니티와 위 사이트
+BLOCKED_DOMAINS = ["namu.wiki", "librewiki.net", "dcinside.com", "fmkorea.com", *NO_USE_DOMAINS]
+
+
+def _no_use_src(url):
+    host = _re_src.sub(r"^https?://", "", url or "").split("/")[0].lower()
+    return any(host == d or host.endswith("." + d) for d in NO_USE_DOMAINS)
+
+
+def no_use_urls(message):
+    """검색 결과 · 인용에 들어온 '협의 없이 쓰지 않는 사이트' 주소. 웹 검색 차단(blocked_domains)이 들으면 늘 빈 목록이다.
+    비어 있지 않으면 차단이 듣지 않은 것이고 그 글은 그 사이트 내용을 읽고 썼을 수 있다 — 생성기는 그 글을 저장하지
+    않는다(2026-10-19 사장 '치킨스탁 데이터가 포함되지 않도록 철저히 검증')."""
+    hits = []
+    for block in getattr(message, "content", None) or []:
+        urls = [getattr(c, "url", None) for c in (getattr(block, "citations", None) or [])]
+        if getattr(block, "type", None) == "web_search_tool_result":
+            items = getattr(block, "content", None)
+            if isinstance(items, list):          # 검색이 실패하면 목록이 아니라 오류 객체가 온다
+                urls += [getattr(it, "url", None) for it in items]
+        for u in urls:
+            if u and _no_use_src(u) and u not in hits:
+                hits.append(u)
+    return hits
+
+
 def collect_sources(message):
-    """웹검색 인용(citations)에서 실제 출처 URL을 수집(중복 제거, 저신뢰 도메인 제외)."""
+    """웹검색 인용(citations)에서 실제 출처 URL을 수집(중복 제거, 저신뢰 · 사용 안 함 도메인 제외)."""
     urls = []
     for block in message.content:
         cits = getattr(block, "citations", None) or []
         for c in cits:
             u = getattr(c, "url", None)
-            if u and u not in urls and not _low_trust_src(u):
+            if u and u not in urls and not _low_trust_src(u) and not _no_use_src(u):
                 urls.append(u)
     return urls
 
@@ -487,7 +538,7 @@ def generate_one(client, stock, as_of, dart_block=""):
         system=SYSTEM,
         thinking={"type": "adaptive"},
         tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 5,
-                "blocked_domains": ["namu.wiki", "librewiki.net", "dcinside.com", "fmkorea.com"],
+                "blocked_domains": BLOCKED_DOMAINS,
                 "user_location": {"type": "approximate", "country": "KR",
                                   "timezone": "Asia/Seoul"}}],
         messages=[{"role": "user", "content": prompt}],
@@ -507,6 +558,10 @@ def generate_one(client, stock, as_of, dart_block=""):
     except Exception:
         pass
 
+    # 협의 없이 쓰지 않는 사이트(치킨스탁 등)가 검색 결과 · 인용에 들어왔으면 그 글은 쓰지 않는다(2026-10-19).
+    leak = no_use_urls(message)
+    if leak:
+        raise ValueError(f"쓰지 않기로 한 사이트가 검색 결과에 들어왔다({leak[0]} 등 {len(leak)}건)")
     text = extract_text(message)
     try:
         report = parse_report(text)
@@ -611,6 +666,15 @@ def main():
                     "reportTs": as_of,
                     "dataDate": data.get("dataDate", ""),
                 })
+                # 저장 전 정리 · 검사(2026-10-09) — 리포트 v2 · 신규 상장 배치와 같은 기준. 이 옛 생성기는 예약이 없고 즉시
+                # 호출이라 검토 모델을 붙이지 않는다 — 검사에 걸리면 저장하지 않는다(있던 리포트 그대로).
+                import check_report_text as _C
+                rep = _C.prepare(rep)
+                _bad = _C.check(rep)
+                if _bad:
+                    log(f"- 🚫 검사 위반 {len(_bad)}건({', '.join(sorted({h['rule'] for h in _bad}))}) — 저장하지 않음 · "
+                        f"[{_bad[0]['section']}] {_bad[0]['sentence'][:60]}")
+                    break
                 reports[tk] = rep
                 gen_count += 1
                 log(f"- ✅ 완료 ({time.time()-t0:.0f}s · 검색 {searches}회)")

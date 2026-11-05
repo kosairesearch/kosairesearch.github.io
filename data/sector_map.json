@@ -5552,11 +5552,6 @@
 "ai": false,
 "robot": false
 },
-"0011A0": {
-"s": "기타",
-"ai": false,
-"robot": false
-},
 "036010": {
 "s": "전자·부품",
 "ai": false,
@@ -6938,11 +6933,6 @@
 },
 "000440": {
 "s": "유통·소비재",
-"ai": false,
-"robot": false
-},
-"0007J0": {
-"s": "기타",
 "ai": false,
 "robot": false
 },
@@ -13570,6 +13560,81 @@
 },
 "468670": {
 "s": "바이오·제약",
+"ai": false,
+"robot": false
+},
+"179880": {
+"s": "전자·부품",
+"ai": false,
+"robot": false
+},
+"0158S0": {
+"s": "IT·소프트웨어",
+"ai": true,
+"robot": false
+},
+"0013Y0": {
+"s": "바이오·제약",
+"ai": false,
+"robot": false
+},
+"0015M0": {
+"s": "IT·소프트웨어",
+"ai": false,
+"robot": false
+},
+"0077H0": {
+"s": "미디어·엔터",
+"ai": false,
+"robot": false
+},
+"0230E0": {
+"s": "미디어·엔터",
+"ai": false,
+"robot": false
+},
+"0011A0": {
+"s": "기계·장비",
+"ai": false,
+"robot": false
+},
+"0007J0": {
+"s": "바이오·제약",
+"ai": false,
+"robot": false
+},
+"0205H0": {
+"s": "금융",
+"ai": false,
+"robot": false
+},
+"0053F0": {
+"s": "기계·장비",
+"ai": false,
+"robot": false
+},
+"420610": {
+"s": "IT·소프트웨어",
+"ai": true,
+"robot": false
+},
+"439270": {
+"s": "IT·소프트웨어",
+"ai": false,
+"robot": false
+},
+"359410": {
+"s": "조선",
+"ai": false,
+"robot": false
+},
+"0147B0": {
+"s": "IT·소프트웨어",
+"ai": true,
+"robot": false
+},
+"495910": {
+"s": "반도체",
 "ai": false,
 "robot": false
 }

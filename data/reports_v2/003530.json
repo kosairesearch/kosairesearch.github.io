@@ -339,26 +339,33 @@
    }
   ],
   "valuation": {
-   "price": 5100,
-   "mcap": 1.0942,
-   "shares": 214547775,
+   "price": 4025,
+   "mcap": 1.0688,
+   "shares": 264547775,
    "total_shares": 219347775,
    "wavg_shares": 218436830,
-   "per": 13.673,
-   "eps": 373,
-   "pbr": 0.4922,
-   "bps": 10362,
+   "per": null,
+   "eps": null,
+   "pbr": null,
+   "bps": null,
    "roe_ttm": 4.0,
    "ttm_window": "2025Q3~2026Q2",
    "ttm_np_owner": 81684000000,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 0.54,
-   "bps_krx": 9484.0,
+   "pbr_krx": null,
+   "bps_krx": null,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "shares_patched": {
+    "on": "2026-10-22",
+    "was": 214547775,
+    "now": 264547775,
+    "factor": null,
+    "why": "주식수가 배수로 안 떨어진다(증자 등) — 자본을 다시 받아야 해서 값을 숨긴다"
+   }
   }
  }
 }

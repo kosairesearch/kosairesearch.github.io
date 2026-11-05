@@ -403,7 +403,7 @@ stt = json.loads(path.read_text(encoding="utf-8"))
 ok(path.exists() and stt["tickers"] == r["tickers"] and set(stt["quant"]) == set(r["tickers"]), "상태 파일에 tickers·quant")
 ok(S.inflight_tickers() == set(r["tickers"]), "주문한 종목은 곧바로 '진행 중'")
 req = cl.messages.batches.created[0][1][0]
-ok(req["params"]["model"] in ("claude-opus-5-5", "claude-sonnet-5") and req["params"]["thinking"] == {"type": "adaptive"}
+ok(req["params"]["model"] in ("claude-opus-5-5", "claude-sonnet-5-5") and req["params"]["thinking"] == {"type": "adaptive"}
    and req["params"]["max_tokens"] == 96000, "요청 모양(모델·adaptive thinking·max_tokens)")
 _by = {r["custom_id"]: r["params"] for r in cl.messages.batches.created[0][1]}
 ok(all((p.get("output_config") == {"effort": "medium"}) == (p["model"] == "claude-opus-5-5") for p in _by.values())
@@ -426,6 +426,33 @@ r3 = M.submit(cl, "2026-09-05 02:02")
 ok(r3["batch_id"] is not None and r3["unavailable"] is not None and len(r3["tickers"]) == 2, "한도에 걸려도 모은 만큼 주문 + unavailable", f"{r3['tickers']} {r3['unavailable']}")
 ok(not (set(S.load_skip()) - {"000040"}), "한도로 못 모은 종목은 skip 이 아니다", str(S.load_skip()))
 os.environ.pop("REPORT_FILL_TO")
+
+# 새 형식을 만들 수 없는 종목 — 공시 트리거가 지정한 run 이면 작업 출력 legacy 로 넘겨 옛 형식 생성기가 다시 쓴다
+# (2026-10-27 · 6월 옛 형식 110편이 넉 달 넘게 갱신되지 않았다). 정정 공시만 나온 종목 · 백필 run 은 넘기지 않는다.
+_gho = DATA / "gh_output.txt"
+os.environ["GITHUB_OUTPUT"] = str(_gho)
+os.environ["REPORT_TICKERS"] = "000040,005930"
+M.collect_all_quant = lambda targets, data, allow_reuse=False, fresh=(): fake_collect_all(targets, data, no_data={"000040"})
+_legacy_runs = []
+for _env in ({}, {"REPORT_CORRECTIONS": "000040:20260904"}, {"REPORT_BACKFILL": "1"}):
+    for p in S.BATCH_DIR.glob("*.json"):
+        p.unlink()
+    _gho.unlink(missing_ok=True)
+    os.environ.update(_env)
+    _r = M.submit(cl, "2026-09-05 03:00")
+    for k in _env:
+        os.environ.pop(k)
+    _legacy_runs.append((_r["tickers"], _r.get("legacy"), _gho.read_text(encoding="utf-8") if _gho.exists() else ""))
+ok(_legacy_runs[0] == (["005930"], ["000040"], "legacy=000040\n"),
+   "지정 run — 연간 재무가 없는 종목은 작업 출력 legacy 로 넘긴다(새 형식은 나머지만 주문)", str(_legacy_runs[0]))
+ok(_legacy_runs[1][1] is None and "legacy=" not in _legacy_runs[1][2],
+   "정정 공시만 나온 종목은 넘기지 않는다(옛 형식은 숫자를 견줄 수 없다)", str(_legacy_runs[1]))
+ok(_legacy_runs[2][1] is None and "legacy=" not in _legacy_runs[2][2] and "000040" in S.load_skip(),
+   "백필 run 은 넘기지 않고 생성 불가로 적는다", str(_legacy_runs[2]))
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+os.environ.pop("GITHUB_OUTPUT")
+os.environ.pop("REPORT_TICKERS")
 
 # ═══ ⑦ 회수(pickup) ═════════════════════════════════════════════════════
 print("⑦ pickup — 여러 배치, 파일별 한 번, 실패 횟수")
@@ -622,7 +649,10 @@ ok(not M.valid_v2(bad2), "keypoints 에 en 이 없으면 실패")
 
 # (e) 프롬프트 — 반영 범위·주당 지표 금지·영문 한글 금지
 pr = M.build_prompt_v2(STOCKS[0], q, "2026-09-05 02:00")
-ok("재무 반영 범위" in pr and "2026Q2" in pr and "checkpoints 의 when 은 이 날짜 이후" in pr, "기준 범위·체크포인트 날짜 지시")
+# 2026-10-10 — 원자료(JSON) 대신 본문 표기로 바꾼 [공시 실적]을 준다(fin_material). 범위는 '2026년 2분기'처럼 사람이 읽는 이름.
+ok("정기보고서로 공시된 실적은" in pr and "2026년 2분기" in pr and "[공시 실적" in pr and "checkpoints 의 when 은 이 날짜 이후" in pr,
+   "기준 범위·체크포인트 날짜 지시")
+ok("ttm_window" not in pr and "np_owner" not in pr and "분기 창" not in pr.replace("'분기 창'", ""), "원자료 칸 이름 · 지시문 말이 본문으로 새지 않게")
 ok("주당 지표(EPS·BPS·DPS)의 수치도" in pr and "valuation.eps·bps" not in pr, "주당 지표 수치 인용 금지")
 ok("한글 문자를 한 글자도" in pr and "증권사명 없이 범위를" in pr, "영문 한글 금지·목표주가 범위 금지")
 
@@ -894,7 +924,7 @@ for x in r["bull"]:
 n = M.fill_missing_en(cl_fill, r)
 ok(n == 6 and M.valid_v2(r, quiet=True), "빈 영문 6곳을 채운다", f"n={n}")
 ok(r["bull"][0]["title"]["en"] == "EN0" and r["bull"][2]["body"]["en"] == "EN5", "순서대로 제자리에", str([x["title"]["en"] for x in r["bull"]]))
-ok(fm.sent[0]["model"] == "claude-sonnet-5", "값싼 모델을 쓴다", str(fm.sent[0]["model"]))
+ok(fm.sent[0]["model"] == "claude-sonnet-5-5", "값싼 모델을 쓴다", str(fm.sent[0]["model"]))
 ok(M.fill_missing_en(cl_fill, GOODREP()) == 0 and len(fm.sent) == 1, "채울 자리가 없으면 모델을 부르지 않는다")
 
 # (j) 회수 경로 통합 — 영문이 빠진 배치 결과는 보정을 배치로 주문하고(즉시 호출 없음 · 2026-10-08),
@@ -912,8 +942,14 @@ def _no_sync(**kw):
     raise AssertionError("즉시 호출을 했다")
 
 def answer_for(params):
-    """보정 요청 하나에 대한 가짜 답 — 영문 채우기는 EN0·EN1…, 표현 교정은 걸린 표현을 바꾼 같은 모양의 JSON."""
+    """보정 요청 하나에 대한 가짜 답 — 영문 채우기는 EN0·EN1…, 표현 교정은 걸린 표현을 바꾼 같은 모양의 JSON,
+    저장 전 검토(2026-10-09)는 '제공된 분기 구간 중 최대였다.' 를 고치는 고침 목록."""
     c = params["messages"][0]["content"]
+    if '"patches"' in c:
+        flat = json.loads(c.split("===INPUT===\n", 1)[1].rsplit("\n===INPUT_END===", 1)[0])
+        pt = [{"path": k, "lang": "ko", "old": "제공된 분기 구간 중 최대였다.", "new": "최근 5개 분기 중 최대였다.", "why": "6"}
+              for k, v in flat.items() if "제공된 분기 구간 중 최대였다." in (v.get("ko") or "")]
+        return "===JSON_START===" + json.dumps({"patches": pt}, ensure_ascii=False) + "===JSON_END==="
     if "===INPUT===" in c:
         part = json.loads(c.split("===INPUT===\n", 1)[1].rsplit("\n===INPUT_END===", 1)[0])
         out = json.loads(json.dumps(part, ensure_ascii=False).replace("저평가된 상태다", "순자산을 밑도는 구간이다"))
@@ -945,7 +981,7 @@ ok(not saved.exists() and stEN.get("deferred") == ["005930"] and not stEN.get("c
 ok(len(cl2.messages.batches.created) == 1, "보정 배치 하나를 주문한다 — 즉시 호출은 없다")
 rbid, rreqs = cl2.messages.batches.created[0]
 ok(rbid == (stEN.get("repair") or {}).get("batch_id") and len(rreqs) == 1 and rreqs[0]["custom_id"].startswith("005930-")
-   and rreqs[0]["params"]["model"] == "claude-sonnet-5" and len(rreqs[0]["custom_id"]) <= 64,
+   and rreqs[0]["params"]["model"] == "claude-sonnet-5-5" and len(rreqs[0]["custom_id"]) <= 64,
    "주문 모양(종목 이름 · 값싼 모델)", str(rreqs[0]["custom_id"]))
 ok("quant" in stEN and "005930" in S.inflight_tickers(), "답을 기다리는 동안 '진행 중' — 같은 종목을 다시 주문하지 않는다")
 ok(S.fail_count("005930") == f_before, "미룬 종목은 실패로 세지 않는다", f"{f_before} → {S.fail_count('005930')}")
@@ -957,7 +993,7 @@ cl2.messages.batches.store[rbid] = answer_batch(rbid, rreqs)
 M.pickup(cl2, "2026-09-05 04:00")
 stEN = json.loads(S.batch_path("msgbatch_EN").read_text(encoding="utf-8"))
 ok(saved.exists(), "답을 받은 다음 회수에서 저장한다")
-us = (stEN.get("usage_repair") or {}).get("claude-sonnet-5") or {}
+us = (stEN.get("usage_repair") or {}).get("claude-sonnet-5-5") or {}
 # 배치 단가 — (1,000 × $1 + 500 × $5) / 1M = $0.0035. 본 배치 사용량(usage)은 처음 회수 때 한 번만 센다.
 ok(us.get("n") == 1 and us.get("in") == 1_000 and abs(us.get("usd", 0) - 0.0035) < 1e-9 and "usage_sync" not in stEN,
    "보정 사용량을 배치 단가로 따로 남긴다", str(us))
@@ -1014,7 +1050,7 @@ ok(kinds == ["영문", "표현"] and st6.get("collected"), "영문 → 표현 �
 g6 = json.loads((S.OUT_DIR / "000020.json").read_text(encoding="utf-8")) if (S.OUT_DIR / "000020.json").exists() else {}
 ok(bool(g6) and "저평가된" not in g6["earnings"]["ko"] and "순자산을 밑도는" in g6["earnings"]["ko"]
    and g6["bull"][0]["body"]["en"].startswith("EN"), "두 보정이 모두 반영돼 저장된다")
-ok(len(st6.get("repairs") or []) == 2 and (st6.get("usage_repair") or {}).get("claude-sonnet-5", {}).get("n") == 2,
+ok(len(st6.get("repairs") or []) == 2 and (st6.get("usage_repair") or {}).get("claude-sonnet-5-5", {}).get("n") == 2,
    "보정 배치 두 번 · 사용량 두 건", str(st6.get("repairs")))
 T.repair = _repair_stub
 
@@ -1033,6 +1069,57 @@ ok(not (S.OUT_DIR / "000020.json").exists() and fm3.sent == [] and cl3.messages.
    "잘린 글은 버리고 돈을 더 쓰지 않는다(보정 주문도 없다)", f"calls={len(fm3.sent)}")
 ok(S.fail_count("000020") >= 1, "실패로 세어 다음 run 이 다시 만든다")
 
+
+# (l) 저장 전 검토(2026-10-09) — REPORT_REVIEW 를 켜면 검토 요청이 보정 배치에 실린다(즉시 호출 없음). 답을 받은 다음
+#     회수에서 고침을 적용하고, 다시 정리 · 검사해 위반이 없으면 저장한다.
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+(S.OUT_DIR / "000020.json").unlink(missing_ok=True)
+S.clear_fail("000020")
+M.REVIEW_ON = True
+T.repair = REAL_T_REPAIR
+rv = GOODREP()
+rv["earnings"]["ko"] = rv["earnings"]["ko"].replace("문장이다.", "제공된 분기 구간 중 최대였다.", 1)
+mk("msgbatch_RV", ["000020"])
+cl7 = FakeClient(); cl7.messages.create = _no_sync
+cl7.messages.batches.store["msgbatch_RV"] = batch_obj("msgbatch_RV", "ended", [
+    result("000020", text="===JSON_START===" + json.dumps(rv, ensure_ascii=False) + "===JSON_END===")])
+M.pickup(cl7, "2026-09-05 03:00")
+st7 = json.loads(S.batch_path("msgbatch_RV").read_text(encoding="utf-8"))
+ok(not (S.OUT_DIR / "000020.json").exists() and st7.get("deferred") == ["000020"], "검토는 배치로 넘기고 저장을 미룬다",
+   str(st7.get("deferred")))
+rbid7, rreqs7 = cl7.messages.batches.created[0]
+c7 = rreqs7[0]["params"]["messages"][0]["content"]
+ok(len(rreqs7) == 1 and '"patches"' in c7 and "[재료 — 공시 확정치" in c7 and "[작성 기준일] 2026-09-05" in c7
+   and "[기계 검사에서 걸린 곳 — 반드시 고칠 것]" in c7 and rreqs7[0]["params"]["model"] == "claude-sonnet-5-5",
+   "검토 요청 — 값싼 모델 · 작성 기준일 · 재료(실적 표) · 기계 검사에 걸린 곳")
+cl7.messages.batches.store[rbid7] = answer_batch(rbid7, rreqs7)
+M.pickup(cl7, "2026-09-05 03:30")
+g7 = json.loads((S.OUT_DIR / "000020.json").read_text(encoding="utf-8")) if (S.OUT_DIR / "000020.json").exists() else {}
+ok(bool(g7) and "최근 5개 분기 중 최대였다." in g7["earnings"]["ko"] and "제공된" not in g7["earnings"]["ko"] and not T.check(g7),
+   "검토의 고침을 적용해 저장한다 — 저장된 글은 검사를 통과한다")
+st7 = json.loads(S.batch_path("msgbatch_RV").read_text(encoding="utf-8"))
+ok((st7.get("usage_repair") or {}).get("claude-sonnet-5-5", {}).get("n") == 1, "검토 사용량을 보정 사용량에 남긴다(배치 단가)",
+   str(st7.get("usage_repair")))
+M.REVIEW_ON = False
+
+# (m) 저장 문턱(2026-10-09) — 교정 뒤에도 검사 위반(상대 시점 · 받은 자료 언급 등)이 하나라도 남으면 저장하지 않는다.
+#     전에는 깨진 글자 · 태그만 막고 나머지는 로그만 남긴 채 썼다.
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+(S.OUT_DIR / "000020.json").unlink(missing_ok=True)
+S.clear_fail("000020")
+T.repair = lambda cl_, rep_, hits_, model=None: None          # 교정이 고치지 못한 경우
+st_ = GOODREP()
+st_["outlook"]["ko"] = st_["outlook"]["ko"].replace("문장이다.", "지난달 공급계약을 맺었다.", 1)
+mk("msgbatch_GATE", ["000020"])
+cl8 = FakeClient()
+cl8.messages.batches.store["msgbatch_GATE"] = batch_obj("msgbatch_GATE", "ended", [
+    result("000020", text="===JSON_START===" + json.dumps(st_, ensure_ascii=False) + "===JSON_END===")])
+M.pickup(cl8, "2026-09-05 04:00")
+ok(not (S.OUT_DIR / "000020.json").exists() and S.fail_count("000020") == 1,
+   "상대 시점이 남으면 저장하지 않고 실패로 센다(다음 회차가 다시 만든다)", f"fail={S.fail_count('000020')}")
+T.repair = _repair_stub
 
 print()
 print("⑫ 그리드 동기화 — 화면 위 숫자는 리포트에서 나온다")
@@ -1371,6 +1458,64 @@ for p in S.BATCH_DIR.glob("*.json"):
     p.unlink()
 os.environ.pop("REPORT_TICKERS")
 M.collect_quant = REAL_COLLECT_QUANT
+
+print("⑰ 협의 없이 쓰지 않는 사이트 — 웹 검색에서 빼고 출처 목록에도 싣지 않는다")
+import inspect                         # noqa: E402
+import generate_reports as GR          # noqa: E402
+import generate_reports_batch as GRB   # noqa: E402
+import generate_sectors as GS          # noqa: E402
+_no = "chickstockfi.com"
+ok(_no in GR.NO_USE_DOMAINS and _no in GR.BLOCKED_DOMAINS, "목록에 치킨스탁이 있다", str(GR.BLOCKED_DOMAINS))
+ok(all(_no in t["blocked_domains"] for t in (M.TOOLS[0], GRB.TOOLS[0], GS.TOOLS[0])),
+   "리포트 v2 · 신규 상장 배치 · 업종 분석의 웹 검색이 막는다")
+ok("BLOCKED_DOMAINS" in inspect.getsource(GR.generate_one), "옛 생성기의 웹 검색도 같은 목록을 쓴다")
+ok(all(d in M.TOOLS[0]["blocked_domains"] for d in ("namu.wiki", "dcinside.com")), "원래 막던 위키 · 커뮤니티는 그대로")
+_N = types.SimpleNamespace
+_msg = _N(content=[
+    _N(type="text", citations=[_N(url="https://www.chickstockfi.com/stocks/005930/earnings"),
+                               _N(url="https://www.hankyung.com/article/1")]),
+    _N(type="web_search_tool_result", citations=None,
+       content=[_N(url="https://chickstockfi.com/stocks/005930"), _N(url="https://m.chickstockfi.com/x"),
+                _N(url="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=1"),
+                _N(url="https://notchickstockfi.com/a")]),
+])
+_got = M.collect_sources_v2(_msg)
+ok(_got == ["https://www.hankyung.com/article/1", "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=1",
+            "https://notchickstockfi.com/a"], "v2 출처 목록에서 빠진다(하위 주소까지 · 이름이 비슷한 다른 사이트는 남는다)",
+   str(_got))
+_got = GR.collect_sources(_msg)
+ok(_got == ["https://www.hankyung.com/article/1"], "옛 생성기 · 업종 분석의 출처 목록에서도 빠진다", str(_got))
+_got = GR.no_use_urls(_msg)
+ok(_got == ["https://www.chickstockfi.com/stocks/005930/earnings", "https://chickstockfi.com/stocks/005930",
+            "https://m.chickstockfi.com/x"], "검색 결과 · 인용에 들어온 그 사이트 주소를 모두 찾는다", str(_got))
+_err = _N(content=[_N(type="web_search_tool_result", citations=None, content=_N(error_code="unavailable"))])
+ok(GR.no_use_urls(_err) == [] and GR.no_use_urls(_N(content=[])) == [], "검색 실패(오류 객체) · 빈 글은 넘어간다")
+# 회수 — 차단이 듣지 않아 그 사이트가 검색 결과에 들어온 글은 저장하지 않고 실패로 센다
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+for p in S.OUT_DIR.glob("*.json"):
+    p.unlink()
+os.environ["REPORT_REPAIR"] = "0"
+mk("msgbatch_NU", ["005930", "000020"])
+_leak_msg = _N(content=[
+    _N(type="web_search_tool_result", citations=None, content=[_N(url="https://www.chickstockfi.com/stocks/000020/earnings")]),
+    _N(type="text", text=report_text("000020"), citations=None)], usage=None)
+cl = FakeClient()
+cl.messages.batches.store["msgbatch_NU"] = batch_obj("msgbatch_NU", "ended", [
+    result("005930"), _N(custom_id="000020", result=_N(type="succeeded", message=_leak_msg))])
+_f0 = S.fail_count("000020")
+M.pickup(cl, "2026-09-05 05:00")
+ok((S.OUT_DIR / "005930.json").exists() and not (S.OUT_DIR / "000020.json").exists()
+   and S.fail_count("000020") == _f0 + 1, "회수 — 그 사이트가 검색 결과에 들어온 글은 저장하지 않고 실패로 센다",
+   f"{sorted(p.stem for p in S.OUT_DIR.glob('*.json'))} fail {_f0}→{S.fail_count('000020')}")
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+for p in S.OUT_DIR.glob("*.json"):
+    p.unlink()
+# 업종 분석 — 같은 경우를 결함으로 보고 다시 쓴다
+_why = GS.defects({"risks": []}, _leak_msg)
+ok(any("쓰지 않기로 한 사이트" in w for w in _why) and GS._needs_rewrite([w for w in _why if "쓰지 않기로" in w]),
+   "업종 분석은 결함으로 보고 다음 회차가 다시 쓴다", str(_why[-1:]))
 
 print()
 print(f"통과 {passed} · 실패 {failed}")
