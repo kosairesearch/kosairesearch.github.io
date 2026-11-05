@@ -5,7 +5,8 @@
 
   ① 계획 — 함수가 가리키는 버전과 가장 새 켜짐 버전만 남기고, 켜짐 · 꺼짐(돈을 받는 상태) 옛 버전을 지운다.
      지운 버전은 세지 않고, 켜짐 버전이 없는 비밀값은 건드리지 않는다.
-  ② 함수(2세대 · 1세대) · 실행 서비스 설정에서 가리키는 버전을 읽는다('latest' · 번호 · 'projects/…/secrets/이름').
+  ② 함수(2세대 · 1세대) · 실행 서비스 설정에서 가리키는 버전을 읽는다('latest' · 번호 · 'projects/…/secrets/이름' ·
+     실행 서비스의 별칭 secret-<uuid> 는 주석 'run.googleapis.com/secrets' 로 푼다).
   ③ 실제로 지우는 길 — 함수 목록이 비거나 못 받으면 하나도 지우지 않는다. 가리키는 버전이 이미 켜짐이 아니면 멈춘다.
      계획만 찍을 때는 지우지 않는다. 지운 뒤 다시 보고 가리키는 버전이 모두 켜짐인지 확인한다. 값은 읽지 않는다.
   ④ 함수 배포 작업 — 비밀값 셋 모두 지금 값과 같으면 새 버전을 만들지 않고, 응답 확인 뒤 정리 단계를 돌린다.
@@ -70,6 +71,16 @@ svcs = [{"spec": {"template": {"spec": {
     "volumes": [{"name": "v", "secret": {"secretName": "projects/1/secrets/KAKAO_ADMIN_KEY", "items": [{"key": "33", "path": "k"}]}}]}}}}]
 r = V.refs_from_run(svcs)
 ok(r == {"GH_DISPATCH_TOKEN": {33}, "KAKAO_ADMIN_KEY": {33}}, "실행 서비스의 secretKeyRef · 비밀값 볼륨('projects/…/secrets/이름')", str(r))
+aliased = [{"spec": {"template": {
+    "metadata": {"annotations": {"run.googleapis.com/secrets":
+        "secret-3bc98a67-5a3a-3f3f-9b4b-f40e8525e9f4:projects/476371644387/secrets/RESEND_API_KEY,"
+        "secret-a14b5144:projects/476371644387/secrets/NAVER_CLIENT_ID"}},
+    "spec": {"containers": [{"env": [
+        {"name": "RESEND_API_KEY", "valueFrom": {"secretKeyRef": {"name": "secret-3bc98a67-5a3a-3f3f-9b4b-f40e8525e9f4", "key": "66"}}}]}],
+             "volumes": [{"name": "v", "secret": {"secretName": "secret-a14b5144", "items": [{"key": "2", "path": "k"}]}}]}}}}]
+r = V.refs_from_run(aliased)
+ok(r == {"RESEND_API_KEY": {66}, "NAVER_CLIENT_ID": {2}},
+   "실행 서비스가 비밀값을 별칭(secret-<uuid>)으로 부르면 주석의 별칭 표로 이름을 찾는다", str(r))
 ok(V.check({"A": {3}}, {"A": [(3, "DESTROYED"), (4, "ENABLED")]}) == [("A", 3)], "가리키는 버전이 지워졌으면 잡는다")
 ok(V.check({"A": {"latest"}}, {"A": [(1, "DISABLED")]}) == [("A", "latest")], "'latest' 인데 켜짐이 없으면 잡는다")
 ok(V.check({"A": {3, "latest"}}, {"A": [(3, "ENABLED")]}) == [], "가리키는 버전이 켜짐이면 통과")
@@ -141,6 +152,11 @@ run_only = [{"spec": {"template": {"spec": {"containers": [{"env": [
 c = Cloud(fns_now, base_versions, run_only)
 code, out = run_main(c, ["--apply"])
 ok(code == 0 and ("KAKAO_ADMIN_KEY", 10) not in c.destroyed, "실행 서비스만 가리키는 옛 버전(10)도 남긴다")
+c = Cloud(fns_now, base_versions, [{"spec": {"template": {
+    "metadata": {"annotations": {"run.googleapis.com/secrets": "secret-1:projects/1/secrets/RESEND_API_KEY"}},
+    "spec": {"containers": [{"env": [{"name": "R", "valueFrom": {"secretKeyRef": {"name": "secret-1", "key": "66"}}}]}]}}}}])
+code, out = run_main(c, ["--apply"])
+ok(code == 0 and len(c.destroyed) == 98, "별칭으로 부르는 실행 서비스가 있어도 멈추지 않고 정리한다", f"종료 {code} · {len(c.destroyed)}개")
 V.gjson, V.destroy_version = orig
 src = (ROOT / "scripts" / "secret_versions.py").read_text(encoding="utf-8")
 ok("versions access" not in src and "access_secret" not in src.lower(), "정리 스크립트는 비밀값의 값을 읽지 않는다")

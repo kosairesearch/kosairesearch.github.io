@@ -69,21 +69,39 @@ def refs_from_functions(fns):
     return out
 
 
+def _aliases(meta):
+    """실행 서비스 설정의 별칭 표 — 'run.googleapis.com/secrets' 주석('secret-…:projects/번호/secrets/이름,…') → {별칭: 이름}.
+    함수가 만든 실행 서비스는 비밀값을 이름 대신 별칭(secret-<uuid>)으로 부른다(2026-11-05 첫 실행에서 이 별칭을 이름으로
+    읽어 '가리키는 버전이 없다'며 멈췄다 — 지우기 전에 멈추는 안전장치가 잡았다)."""
+    out = {}
+    raw = ((meta or {}).get("annotations") or {}).get("run.googleapis.com/secrets") or ""
+    for part in raw.split(","):
+        if ":" in part:
+            alias, full = part.split(":", 1)
+            out[alias.strip()] = _secret_name(full.strip())
+    return out
+
+
 def refs_from_run(services):
-    """gcloud run services list JSON → {비밀값: {번호 | 'latest'}} (환경 변수의 secretKeyRef · 비밀값 볼륨)"""
+    """gcloud run services list JSON → {비밀값: {번호 | 'latest'}} (환경 변수의 secretKeyRef · 비밀값 볼륨 · 별칭 풀기)"""
     out = {}
     for s in services or []:
-        spec = ((s.get("spec") or {}).get("template") or {}).get("spec") or {}
+        tmpl = (s.get("spec") or {}).get("template") or {}
+        spec = tmpl.get("spec") or {}
+        names = {**_aliases(s.get("metadata")), **_aliases(tmpl.get("metadata"))}
+
+        def real(n):
+            return names.get(str(n or ""), _secret_name(n))
         for c in spec.get("containers") or []:
             for e in c.get("env") or []:
                 ref = (e.get("valueFrom") or {}).get("secretKeyRef")
                 if ref:
-                    out.setdefault(_secret_name(ref.get("name")), set()).add(_num(ref.get("key")))
+                    out.setdefault(real(ref.get("name")), set()).add(_num(ref.get("key")))
         for v in spec.get("volumes") or []:
             sec = v.get("secret")
             if sec:
                 for it in sec.get("items") or [{"key": "latest"}]:
-                    out.setdefault(_secret_name(sec.get("secretName")), set()).add(_num(it.get("key")))
+                    out.setdefault(real(sec.get("secretName")), set()).add(_num(it.get("key")))
     return out
 
 
