@@ -137,6 +137,10 @@ run "배치 비용 점검" python3 scripts/tests/batch_cost_audit_test.py
 # 같은 날 사장 "저번 분기 전 종목 작성에 10만원". 콘솔의 실제 청구 기록을 관리자 키로 받는 조회(billing)가 금액을 잠가서만 찍고,
 # 관리자 키를 그 단계에만 넘기는지.
 run "청구 내역 조회" python3 scripts/tests/billing_report_test.py
+# 2026-11-05 사장 "firebase에서 과금되기 시작했는데 … 왜 그 요금이 나왔는지". 함수 배포가 배포마다 같은 값으로 비밀값 새 버전을
+# 만들어 139개가 쌓였고(Secret Manager 는 켜짐 · 꺼짐 버전마다 달마다 80.6원 · 6개 무료) 9월부터 달마다 8,500 ~ 10,700원이 나갔다.
+# 배포가 다시 버전을 쌓거나, 옛 버전 정리가 함수가 쓰는 버전을 지우거나 값을 읽으면 여기서 걸린다.
+run "비밀값 버전 정리" python3 scripts/tests/secret_versions_test.py
 # 2026-10-29 사장 "전 종목 다시 작성해도 20만원 이하". 설정(모델 · 웹 검색 횟수 · 사고 깊이)별 실제 사용량을 재는 시험(🧪 리포트
 # 비용 시험)이 리포트 v2 와 같은 요청을 내고, 공식 단가로 세고, 아무것도 저장하지 않는지.
 run "리포트 비용 시험" python3 scripts/tests/report_trial_test.py
