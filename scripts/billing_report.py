@@ -167,6 +167,79 @@ def run(admin_key, since=SINCE, today=None, get=None):
     return render(summarize_cost(cost), summarize_usage(usage), since, today.isoformat())
 
 
+ANALYTICS_BETA = "analytics-usage-cost-2026-08-24"
+ANALYTICS_FIRST = datetime.date(2026, 1, 1)     # 새 조회는 이날부터만 받는다(최근 365일 · 한 번에 31일까지)
+
+
+def _http_get_analytics(url, admin_key):
+    """새 조회(사용량 · 비용 분석) — 요청 수(requests)까지 준다. 베타 머리글이 필요하다."""
+    req = urllib.request.Request(url, headers={"x-api-key": admin_key, "anthropic-version": "2023-06-01",
+                                               "anthropic-beta": ANALYTICS_BETA,
+                                               "user-agent": "kosai-billing-report/1.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", "replace")[:300]
+        raise BillingError(f"새 조회 실패({e.code}): {body}")
+
+
+def fetch_analytics(kind, params, admin_key, get=None):
+    """/analytics/{usage|cost} 의 행 목록 — 쪽을 넘기며 다 받는다."""
+    get = get or _http_get_analytics
+    out, page = [], None
+    for _ in range(500):
+        q = list(params) + ([("page", page)] if page else [])
+        res = get(f"{API}/analytics/{kind}?{urllib.parse.urlencode(q)}", admin_key)
+        out.extend(res.get("data") or [])
+        if not res.get("has_more") or not res.get("next_page"):
+            return out, res.get("data_refreshed_at")
+        page = res.get("next_page")
+    raise BillingError("새 조회의 쪽이 너무 많다 — 기간을 줄일 것")
+
+
+def daily_detail(admin_key, since, today, get=None):
+    """날짜 · 모델 · 요금 등급마다 요청 수와 토큰(사용량), 항목별 금액(비용)을 한 줄씩 — 요청 한 건당 값을 계산하려고.
+    2026-11-07 사장 "10월 전까지는 전 종목 작성에 적은 비용이 들었는데 왜 갑자기 많이 드는지 콘솔의 진짜 자료로 확인해라"."""
+    start = max(ANALYTICS_FIRST, datetime.date.fromisoformat(since))
+    usage, cost, refreshed = [], [], None
+    d0 = start
+    while d0 <= today:
+        d1 = min(d0 + datetime.timedelta(days=31), today + datetime.timedelta(days=1))
+        base = [("starting_at", f"{d0}T00:00:00Z"), ("ending_at", f"{d1}T00:00:00Z"), ("time_bucket_width", "1d"),
+                ("order_by", "time"), ("order", "asc"), ("limit", "1000")]
+        rows, refreshed = fetch_analytics("usage", base + [("group_by[]", "model"), ("group_by[]", "service_tier")],
+                                          admin_key, get)
+        usage += rows
+        rows, _ = fetch_analytics("cost", base + [("group_by[]", "model"), ("group_by[]", "service_tier"),
+                                                  ("group_by[]", "cost_type"), ("group_by[]", "token_type")],
+                                  admin_key, get)
+        cost += rows
+        d0 = d1
+    L = [f"[날짜별 사용량 — 새 조회 · 자료 기준 {refreshed}]",
+         "날짜|모델|등급|요청|입력|캐시쓰기5분|캐시쓰기1시간|캐시읽기|출력|웹검색"]
+    for r in usage:
+        g, u = r.get("group") or {}, r.get("usage") or {}
+        cc = u.get("cache_creation") or {}
+        L.append("|".join(str(x) for x in (
+            (r.get("starting_at") or "")[:10], g.get("model"), g.get("service_tier"), u.get("requests"),
+            u.get("uncached_input_tokens"), cc.get("ephemeral_5m_input_tokens"), cc.get("ephemeral_1h_input_tokens"),
+            u.get("cache_read_input_tokens"), u.get("output_tokens"),
+            (u.get("server_tool_use") or {}).get("web_search_requests"))))
+    agg = defaultdict(lambda: defaultdict(float))
+    for r in cost:
+        g, c = r.get("group") or {}, r.get("cost") or {}
+        key = ((r.get("starting_at") or "")[:10], g.get("model"), g.get("service_tier"))
+        item = g.get("token_type") if (g.get("cost_type") or "") == "tokens" else g.get("cost_type")
+        agg[key][item or "?"] += _dollars(c.get("amount"))
+        agg[key]["(정가)"] += _dollars(c.get("list_amount"))
+    L += ["", "[날짜별 비용 — 새 조회 · 달러 · 항목=금액]"]
+    for key in sorted(agg, key=lambda k: (k[0], str(k[1]), str(k[2]))):
+        parts = sorted(agg[key].items())
+        L.append("|".join(str(x) for x in key) + "|" + " ".join(f"{k}={v:.4f}" for k, v in parts if v))
+    return "\n".join(L)
+
+
 def main():
     import marketing_seal as M
     admin_key = os.getenv("ANTHROPIC_ADMIN_KEY", "").strip()
@@ -180,6 +253,11 @@ def main():
     try:
         M.public_key(key)                 # 열쇠가 쓸 만한지 먼저 본다 — 조회한 뒤 못 잠그는 일이 없게
         text = run(admin_key)
+        try:                              # 날짜별 요청 수 · 요청당 사용량 — 실패해도 위의 청구 내역은 낸다
+            today = datetime.datetime.now(datetime.timezone.utc).date()
+            text += "\n\n" + daily_detail(admin_key, SINCE, today)
+        except BillingError as e:
+            text += f"\n\n[날짜별 자료 — 받지 못했다: {e}]"
         lines = M.seal(key, text.encode("utf-8"))
     except (BillingError, M.SealError) as e:
         print(f"::error title=청구 내역 조회 실패::{e}")
