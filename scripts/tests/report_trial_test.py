@@ -229,6 +229,25 @@ wf = (ROOT / ".github" / "workflows" / "report_trial.yml").read_text(encoding="u
 ok("workflow_dispatch" in wf and "schedule" not in wf and "contents: read" in wf and "git push" not in wf
    and "git commit" not in wf, "수동 실행 · 읽기 권한 · 커밋 없음")
 ok(wf.count("secrets.ANTHROPIC_API_KEY") == 1 and "scripts/report_trial.py" in wf, "시험 단계에만 모델 열쇠를 넘긴다")
+ok("actions/upload-artifact" in wf and wf.count("inputs.save == '1'") == 2 and "runner.temp" in wf,
+   "시험 글 첨부는 save 를 켰을 때만 · 저장소 밖 폴더에서")
+
+print("⑧ 시험 글 첨부 — 저장소 밖 폴더에만 쓴다")
+import tempfile  # noqa: E402
+before8 = git_status()
+rep8 = stored("005930")
+with tempfile.TemporaryDirectory() as td:
+    n8 = T.save_reports({("h2", "005930"): rep8, ("h3", "005930"): None}, [{"cfg": "h2", "tk": "005930"}], td)
+    p8 = Path(td) / "h2" / "005930.json"
+    ok(n8 == 1 and p8.exists() and json.loads(p8.read_text(encoding="utf-8")).get("title") == rep8.get("title")
+       and (Path(td) / "rows.json").exists() and not (Path(td) / "h3").exists(),
+       "글 · 결과 줄을 폴더에 쓰고 빈 글은 건너뛴다")
+try:
+    T.save_reports({("h2", "005930"): rep8}, [], ROOT / "data" / "_trial_out")
+    ok(False, "저장소 안 폴더는 거절한다")
+except ValueError:
+    ok(not (ROOT / "data" / "_trial_out").exists(), "저장소 안 폴더는 거절한다")
+ok(git_status() == before8, "첨부를 써도 저장소 파일은 그대로다")
 
 print(f"\n통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)

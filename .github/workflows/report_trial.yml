@@ -20,6 +20,9 @@ on:
       show:
         description: '본문을 기록에 찍을 종목 수'
         default: '2'
+      save:
+        description: '시험 글 전부를 실행 첨부로 남긴다(1 · 저장소에는 쓰지 않는다 · 7일 보관)'
+        default: ''
 
 permissions:
   contents: read
@@ -43,4 +46,14 @@ jobs:
           REPORT_TRIAL_TICKERS: ${{ inputs.tickers }}
           REPORT_TRIAL_BATCH: ${{ inputs.batch_id }}
           REPORT_TRIAL_SHOW: ${{ inputs.show }}
+          REPORT_TRIAL_SAVE: ${{ inputs.save == '1' && format('{0}/trial_out', runner.temp) || '' }}
         run: python3 scripts/report_trial.py
+
+      # 시험 글을 사람이 읽고 견주도록 실행 첨부로 남긴다(저장소 밖 폴더 · 커밋 없음).
+      - name: 시험 글 첨부 (save 를 켰을 때만)
+        if: ${{ inputs.save == '1' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: report-trial
+          path: ${{ runner.temp }}/trial_out
+          retention-days: 7
