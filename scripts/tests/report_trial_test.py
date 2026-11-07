@@ -229,8 +229,8 @@ wf = (ROOT / ".github" / "workflows" / "report_trial.yml").read_text(encoding="u
 ok("workflow_dispatch" in wf and "schedule" not in wf and "contents: read" in wf and "git push" not in wf
    and "git commit" not in wf, "수동 실행 · 읽기 권한 · 커밋 없음")
 ok(wf.count("secrets.ANTHROPIC_API_KEY") == 1 and "scripts/report_trial.py" in wf, "시험 단계에만 모델 열쇠를 넘긴다")
-ok("actions/upload-artifact" in wf and wf.count("inputs.save == '1'") == 2 and "runner.temp" in wf,
-   "시험 글 첨부는 save 를 켰을 때만 · 저장소 밖 폴더에서")
+ok("actions/upload-artifact" in wf and wf.count("inputs.save == '1'") == 3 and "runner.temp" in wf
+   and "BEGIN-TRIAL-TGZ" in wf, "시험 글 첨부 · 기록 묶음은 save 를 켰을 때만 · 저장소 밖 폴더에서")
 
 print("⑧ 시험 글 첨부 — 저장소 밖 폴더에만 쓴다")
 import tempfile  # noqa: E402
