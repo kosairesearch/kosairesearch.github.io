@@ -24,6 +24,7 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+ROOT_S = HERE.parent                      # scripts/ — 지시문을 읽어 볼 때
 sys.path.insert(0, str(HERE.parent))
 
 import check_report_text as C  # noqa: E402
@@ -274,6 +275,44 @@ for ko in ["클라우드 전환이 빠르게 진행되고 있습니다.", "핵�
 for ko in ["매출이 늘었다.", "주가 상승으로 연결되기 어려운 구조다.", "확정된 것은 아니다.", "2025년 영업이익 149억원으로 흑자 전환",
            "'시너지 효과'를 기대함", "본 자료는 투자 권유가 아니다."]:
     eq(ko, "style" in rules_of(ko), False)
+print("\n── 독자 · 투자자 호칭(reader) · 칸 사이 되풀이(dup) — 새로 쓰는 리포트에만 (2026-11-08 · Haiku 5.5 전환) ──")
+_H = {"ticker": "000001", "model": "claude-haiku-5-5"}
+
+
+def _rd(ko, en="ok", extra=None):
+    r = dict(_H, business={"ko": ko, "en": en}, **(extra or {}))
+    return [h["rule"] for h in C.check(r) if h["rule"] in ("reader", "dup")]
+
+
+for ko in ["독자는 3분기 정기보고서의 차입금 추이를 확인할 필요가 있다.", "판단은 독자에게 맡긴다.", "밸류에이션의 해석은 독자의 몫이다.",
+           "투자자는 변동성 확대에 대비해야 한다.", "투자자들은 신사업의 실체를 함께 확인할 필요가 있다.",
+           "투자 판단은 이러한 사실을 종합해 독자가 직접 내려야 한다.",
+           "본 리포트는 정보 제공을 목적으로 하며 투자 판단은 독자에게 맡긴다."]:     # 면책 문구는 화면 끝에 따로 있다
+    eq(f"잡는다 — {ko[:22]}", _rd(ko), ["reader"])
+for ko in ["프롬 서비스의 유료 구독자가 전년 대비 168% 늘었다.", "외국인 투자자는 3거래일 연속 순매도했다.", "독자적인 공정 기술을 갖췄다.",
+           "기관 투자자는 보유 비중을 줄여야 한다는 분석을 내놓았다.", "시장 투자자는 실적이 부진하다고 판단했다.", "독자 개발 플랫폼을 운영한다.",
+           "본 리포트는 정보 제공 목적이며 매수 · 매도 의견을 포함하지 않는다."]:
+    eq(f"건드리지 않는다 — {ko[:22]}", _rd(ko), [])
+for en, want in [("Investors should track the next quarter.", ["reader"]), ("Readers should note the delisting risk.", ["reader"]),
+                 ("The judgment is left to readers.", ["reader"]), ("Foreign investors must obtain approval to hold shares.", []),
+                 ("Institutional investors should be aware of the rule, the brokerage said.", []), ("Investors sold the stock.", [])]:
+    eq(f"영어 — {en[:30]}", _rd("정상 문장이다.", en), want)
+_dup = "영업활동 현금흐름은 2024년 8,788억원에서 2025년 1조 1,411억원으로 늘었다."
+eq("다른 칸의 문장을 글자 그대로", _rd(_dup, extra={"lead": {"ko": _dup, "en": "x"}}), ["dup"])
+eq("짧은 말(25자 미만)은 되풀이로 보지 않는다", _rd("매출이 늘었다.", extra={"lead": {"ko": "매출이 늘었다.", "en": "x"}}), [])
+_old = {"business": {"ko": "투자자는 변동성 확대에 대비해야 한다.", "en": "Investors should track it."}, "ticker": "000001"}
+eq("새로 쓰는 글에만 — 2026-11-08 전에 쓴 리포트는 다시 쓸 때 바뀐다",
+   [bool([h for h in C.check(dict(_old, **x)) if h["rule"] == "reader"]) for x in (
+       {"reportDate": "2026-10-01", "model": "claude-sonnet-5"}, {"reportDate": "2026-11-08", "model": "claude-sonnet-5-5"},
+       {"reportDate": "2026-11-08", "model": "claude-haiku-5-5"}, {"reportDate": "2026-11-09", "model": "claude-sonnet-5-5"}, {})],
+   [False, False, True, True, True])
+eq("업종 분석(종목 리포트가 아님)에는 걸지 않는다", [h["rule"] for h in C.check({"business": {"ko": "독자는 확인할 필요가 있다.", "en": "x"}})], [])
+eq("품질 등급 — 교정이 그 문장만 고친다", {h["level"] for h in C.check(dict(_H, **_old)) if h["rule"] == "reader"}, {"품질"})
+eq("교정 지시에 규칙 설명이 있다", ("reader:" in C._RULE_TEXT, "dup:" in C._RULE_TEXT), (True, True))
+eq("지시문이 '판단은 독자에게 맡긴다'를 쓰라고 하지 않는다", [m for m in ("generate_reports_v2", "generate_reports")
+   if "판단은 독자에게 맡" in (ROOT_S / f"{m}.py").read_text(encoding="utf-8")], [])
+eq("지시문에 독자 · 투자자 호칭 금지가 있다(6-7)", ("6-7. **독자 · 투자자를 부르지 않는다**" in (ROOT_S / "generate_reports_v2.py").read_text(encoding="utf-8"),
+   "독자 · 투자자를 부르지 않는다" in (ROOT_S / "generate_reports.py").read_text(encoding="utf-8")), (True, True))
 print("\n── 협의 없이 쓰지 않는 사이트(no_use): 치킨스탁 이름 · 주소 (2026-10-19) ──")
 for ko, en in [("치킨스탁에 따르면 2분기 영업이익은 늘었다.", "ok"), ("치킨 스탁 집계 기준이다.", "ok"),
                ("알프소프트 자료로 보면 늘었다.", "ok"), ("정상 문장이다.", "According to ChickStock, margins rose."),
@@ -297,6 +336,8 @@ pr = C.prepare({"lead": {"ko": "매출 9000억원<sup>1</sup>, ESS向 공급", "
 eq("태그 · 한자 · 쉼표를 한 번에", pr["lead"]["ko"], "매출 9,000억원, ESS 대상 공급")
 eq("숫자 · 출처 칸은 그대로", (pr["quant"], pr["sources"]), ({"n": "9000억원"}, ["https://a/<b>"]))
 eq("몇 번 돌려도 같다", C.prepare(pr), pr)
+eq("마침표 겹침을 하나로 — 말줄임표 · 숫자 사이는 그대로", C.prepare({"lead": {"ko": "늘었다.. 같은 시점... 1..2", "en": "rose.. U.S.."}})["lead"],
+   {"ko": "늘었다. 같은 시점... 1..2", "en": "rose. U.S."})
 eq("영문명을 화면 꼴로", [C.clean_en(x) for x in ("SAMSUNG ELECTRONICS CO,.LTD", "SK hynix Inc.", "NAVER Corp.")],
    ["Samsung Electronics", "SK hynix", "NAVER"])
 # 약어는 대문자 그대로(2026-10-23) — 전에는 목록 밖 약어를 소문자로 바꿔 영어 화면에 'Samsung Sds' · 'LG Cns' · 'Skc' · 'Dts' 가 나왔다.

@@ -492,8 +492,9 @@ try:
     ok(_got == [B, C] and _st7.get("tickers") == [B, C] and _st7.get("pending") is True,
        "공시 트리거가 넘긴 종목 — 막힌 종목(A · D)을 빼고 주문하고, 주문한 종목을 상태 파일에 적는다", f"{_got} · {_st7.get('tickers')}")
     _p = _sb.reqs[0][0]["params"]
-    ok(_p["model"] == GB.MODEL == "claude-sonnet-5-5" and _p["thinking"] == {"type": "adaptive"} and _p["max_tokens"] == 96000,
-       "요청 — Sonnet 5.5 · adaptive · 출력 한도 96,000", str({k: _p[k] for k in ("model", "thinking", "max_tokens")}))
+    ok(_p["model"] == GB.MODEL == "claude-haiku-5-5" and _p["thinking"] == {"type": "adaptive"} and _p["max_tokens"] == 96000
+       and _p["tools"][0]["max_uses"] == 2,
+       "요청 — Haiku 5.5 · adaptive · 출력 한도 96,000 · 웹 검색 2회", str({k: _p[k] for k in ("model", "thinking", "max_tokens")}))
     GB.SKIP_FAILED = False
     _GB_SUBMIT(_cl7, "2026-10-27 20:31")
     ok([r["custom_id"] for r in _sb.reqs[1]] == [A, B, C, D], "손으로 지정한 실행은 빼지 않는다")
@@ -511,7 +512,7 @@ _v2 = next((i for i, x in enumerate(_steps) if x.get("id") == "v2"), None)
 _leg = next((i for i, x in enumerate(_steps) if "generate_reports_batch.py" in (x.get("run") or "")), None)
 _e = (_steps[_leg].get("env") or {}) if _leg is not None else {}
 ok(_v2 is not None and _leg == _v2 + 1 and _steps[_leg].get("if") == "steps.v2.outputs.legacy != ''"
-   and _e.get("REPORT_TICKERS") == "${{ steps.v2.outputs.legacy }}" and _e.get("REPORT_MODEL") == "claude-sonnet-5-5"
+   and _e.get("REPORT_TICKERS") == "${{ steps.v2.outputs.legacy }}" and _e.get("REPORT_MODEL") == "claude-haiku-5-5"
    and _e.get("REPORT_SKIP_FAILED") == "1" and "generate_reports_batch.py auto" in _steps[_leg]["run"]
    and "generate_reports.py" not in _steps[_leg]["run"].replace("generate_reports_batch.py", ""),
    "공시 트리거 작업 — 새 형식 단계 바로 뒤에서 legacy 종목을 옛 형식 생성기(배치 · Sonnet 5.5)로 다시 쓴다",

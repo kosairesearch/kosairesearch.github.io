@@ -53,7 +53,7 @@ ROUTED = {
 LEGACY = {
     "scripts/daily_x_post.py": "엑스 자동 게시 — 쓰지 않는다(2026-10-08 사장 '나 X 안 해')",
     "scripts/news_alert.py": "뉴스 알림 — 수동 실행만",
-    "scripts/generate_reports.py": "옛 리포트 생성기(즉시 호출) — 수동 실행만",
+    "scripts/generate_reports.py": "옛 리포트 생성기(즉시 호출) — 작업 파일 없음(2026-11-08 사장 '무조건 batch api' · 아래 ②)",
 }
 
 
@@ -138,6 +138,12 @@ for (rel, fn), why in ROUTED.items():
     ok(any(f == fn for _, f, _k in found.get(rel, [])), f"{rel} {fn} — {why}",
        "자리가 없어졌으면 허용 목록에서 지울 것")
 ok("scripts/generate_brief.py" in found, "모닝브리핑은 즉시 호출(예외) — 목록이 낡지 않았는지")
+
+# 2026-11-08 사장 "모든 종목 리포트를 … 다 하이쿠로 · 무조건 batch api" — 즉시 호출로 리포트를 쓰는 옛 생성기는
+# 수동 작업 파일(🤖 AI 리서치 리포트 생성 · generate_reports.yml)까지 지웠다. 같은 일은 배치 생성기(generate_reports_batch.yml)가 한다.
+_runs = [wf.name for wf in sorted(WORKFLOWS.glob("*.yml"))
+         if re.search(r"(^|[\s/])scripts/generate_reports\.py\b", wf.read_text(encoding="utf-8"))]
+ok(not _runs, "옛 리포트 생성기(즉시 호출)를 돌리는 작업 파일이 없다 — 예약 · 수동 모두", ", ".join(_runs) or "없음")
 
 print("② 배치로 바꾼 생성기는 즉시 호출 창구를 막아 둔다")
 for rel in ("scripts/generate_reports_v2.py", "scripts/generate_sectors.py", "scripts/classify_sectors.py",

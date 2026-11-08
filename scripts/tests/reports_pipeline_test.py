@@ -403,13 +403,18 @@ stt = json.loads(path.read_text(encoding="utf-8"))
 ok(path.exists() and stt["tickers"] == r["tickers"] and set(stt["quant"]) == set(r["tickers"]), "상태 파일에 tickers·quant")
 ok(S.inflight_tickers() == set(r["tickers"]), "주문한 종목은 곧바로 '진행 중'")
 req = cl.messages.batches.created[0][1][0]
-ok(req["params"]["model"] in ("claude-opus-5-5", "claude-sonnet-5-5") and req["params"]["thinking"] == {"type": "adaptive"}
+ok(req["params"]["model"] == "claude-haiku-5-5" and req["params"]["thinking"] == {"type": "adaptive"}
    and req["params"]["max_tokens"] == 96000, "요청 모양(모델·adaptive thinking·max_tokens)")
 _by = {r["custom_id"]: r["params"] for r in cl.messages.batches.created[0][1]}
-ok(all((p.get("output_config") == {"effort": "medium"}) == (p["model"] == "claude-opus-5-5") for p in _by.values())
-   and any(p["model"] == "claude-opus-5-5" for p in _by.values()),
-   "Opus 5.5 요청에만 사고 깊이 medium 을 적는다(사장 승인 · high 는 출력이 53% 늘었다)",
-   str({k: (p["model"], p.get("output_config")) for k, p in _by.items()}))
+ok(all(p["model"] == "claude-haiku-5-5" and "output_config" not in p for p in _by.values())
+   and all(p["tools"][0]["max_uses"] == 2 for p in _by.values()),
+   "시가총액 순위와 관계없이 전 종목 Haiku 5.5 · 사고 깊이 기본 · 웹 검색 2회(2026-11-08 사장 '다 하이쿠로')",
+   str({k: (p["model"], p.get("output_config"), p["tools"][0]["max_uses"]) for k, p in _by.items()}))
+_uh = {"in": 60_000, "cache_w": 0, "cache_r": 0, "out": 30_000, "search": 2}
+# Haiku 5.5 배치: 60,000 × $0.05/M + 30,000 × $0.25/M + 검색 2회 × $0.01 = $0.003 + $0.0075 + $0.02 = $0.0305
+# 입력 합계가 10만 토큰을 넘으면 토큰 단가 5배: 120,000 × $0.25/M + 30,000 × $1.25/M + $0.02 = $0.0875
+ok(abs(M._cost_usd("claude-haiku-5-5", _uh) - 0.0305) < 1e-9 and abs(M._cost_usd("claude-haiku-5-5", dict(_uh, **{"in": 120_000})) - 0.0875) < 1e-9,
+   "Haiku 5.5 배치 단가 · 긴 입력(10만 토큰 초과)은 5배", f"{M._cost_usd('claude-haiku-5-5', _uh):.4f}")
 _u = {"in": 100_000, "cache_w": 0, "cache_r": 1_000_000, "out": 10_000, "search": 0}
 # Opus 5.5 배치: (100,000 + 1,000,000 × 0.05) × $2/M + 10,000 × $10/M = $0.30 + $0.10 = $0.40
 ok(abs(M._cost_usd("claude-opus-5-5", _u) - 0.40) < 1e-9, "Opus 5.5 배치 단가 · 캐시 읽기 0.05배",

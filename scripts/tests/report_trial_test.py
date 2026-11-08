@@ -92,8 +92,9 @@ ok(p_h2["messages"][0]["content"] == same_prompt and p_h2["system"][0]["text"] =
 ok(p_h2["max_tokens"] == 96000 and p_h2["thinking"] == {"type": "adaptive"}, "출력 한도 96,000 · 사고 adaptive")
 ok("tools" not in p_h0, "검색 0회면 도구를 싣지 않는다")
 t = p_h2["tools"][0]
-ok(t["max_uses"] == 2 and t["type"] == v2.TOOLS[0]["type"] and "chickstockfi.com" in t["blocked_domains"]
-   and v2.TOOLS[0]["max_uses"] == 6, "검색 횟수만 바꾸고 차단 도메인은 그대로(원본 설정은 건드리지 않는다)")
+_t3 = T.request_params("h3", st, q, as_of, stocks)["tools"][0]
+ok(t["max_uses"] == 2 and _t3["max_uses"] == 3 and t["type"] == v2.TOOLS[0]["type"] and "chickstockfi.com" in t["blocked_domains"]
+   and v2.TOOLS[0]["max_uses"] == 2, "검색 횟수만 바꾸고 차단 도메인은 그대로(원본 설정은 건드리지 않는다 · 리포트 v2 는 2회)")
 ok(p_s2l.get("output_config") == {"effort": "low"} and "output_config" not in p_h2, "사고 깊이는 적은 설정에만")
 ok(p_h2["model"] == "claude-haiku-5-5" and p_s2l["model"] == "claude-sonnet-5-5", "모델")
 

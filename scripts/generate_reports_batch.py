@@ -83,7 +83,8 @@ def bump_fail(fails, tk, why, as_of):
     return n
 
 # 2026-10-27 Sonnet 4.6 → Sonnet 5.5(사장 "소넷 5.5 사용해" — 배치 단가 $1.5/$7.5 → $1/$5). 사고는 그대로 adaptive.
-MODEL = os.getenv("REPORT_MODEL", "claude-sonnet-5-5")
+# 2026-11-08 Sonnet 5.5 → Haiku 5.5(사장 "모든 종목 리포트를 … 다 하이쿠로 · 무조건 batch api" — 배치 단가 $0.05/$0.25).
+MODEL = os.getenv("REPORT_MODEL", "claude-haiku-5-5")
 TOP_N = int(os.getenv("REPORT_TOP_N", "100"))
 FRESH_DAYS = int(os.getenv("REPORT_FRESH_DAYS", "6"))
 FORCE = os.getenv("REPORT_FORCE", "") == "1"
@@ -99,7 +100,8 @@ REPAIR = os.getenv("NEW_LISTING_REPAIR", "1") != "0"
 REPAIR_WAIT = int(os.getenv("NEW_LISTING_REPAIR_WAIT_SEC", "1800"))   # 교정 배치를 기다리는 시간(30분)
 REPAIR_ROUNDS = 2                    # 한 번에 다 고치지 못하면 남은 위반으로 한 번 더
 
-TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 5,
+# 웹 검색은 최대 2회(2026-11-08 — 리포트 v2 와 같이. 하이쿠 5.5 의 긴 입력 단가 문턱 10만 토큰 아래로).
+TOOLS = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 2,
           "blocked_domains": g.BLOCKED_DOMAINS,
           "user_location": {"type": "approximate", "country": "KR", "timezone": "Asia/Seoul"}}]
 
