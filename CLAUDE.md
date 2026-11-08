@@ -555,7 +555,7 @@ Firebase Functions 의 `NAVER_CLIENT_ID` 는 네이버 로그인용이라 다른
     스스로 기록한다 — 처리방침 2항에 적었다. 함수를 고치면 Actions → 🚀 Firebase 배포(deploy_functions.yml)를 돌려야 실제로 바뀐다.
     실행 환경은 노드 22 다(2026-10-25 · 노드 20 은 2026-10-30 에 지원이 끝나 그 뒤로는 배포할 수 없고 함수가 멈출 수 있었다 — 배포 도구 경고).
     판은 세 자리에 있다 — firebase.json 의 runtime · functions/package.json 의 engines · deploy_functions.yml 의 setup-node. 함께 고친다
-    (지키는 검사 functions/tests/runtime.test.mjs — 셋이 다르거나 끝난 판이면 걸린다 · 배포 목록에서 빠진 함수도 잡는다). 배포 기록(data/deploy_functions.log)에 다음 판의
+    (지키는 검사 functions/tests/runtime.test.mjs — 셋이 다르거나 끝난 판이면 걸린다 · 배포 목록에서 빠진 함수 · 동시 실행 수 상한이 빠진 함수도 잡는다). 배포 기록(data/deploy_functions.log)에 다음 판의
     종료 경고가 보이면 그때 올린다.
   · **처리방침**(2026-10-04 공고 · 10-11 시행 · 원문 `scripts/content/privacy.src.html`) — 회원 식별번호(소셜 로그인 uid 는 `naver:{id}` ·
     `kakao:{id}`), 네이버 연결 해제용 갱신 토큰(탈퇴 때 쓰고 지운다), GitHub, Inc.(웹사이트 호스팅 · 접속 기록) 위탁과 국외 이전,
@@ -641,6 +641,10 @@ KOSAI 계정은 없는데 연결만 남은 사람은 화면 없이 계정이 만
   · 배포는 사이트(계정 인증 화면)가 먼저, 함수가 나중이다(Actions → 🚀 Firebase 배포). 배포 작업은 올릴 함수를 이름으로 적는다(결제
     함수를 빼려고) — 10/29 첫 배포에서 unsubscribeMarketing 이 그 목록에 없어 올라가지 않았다(같은 날 목록에 더해 다시 배포).
     새 함수를 만들면 deploy_functions.yml 의 `--only` 목록에 더한다 — functions/tests/runtime.test.mjs ③ 이 함수 파일의 내보내기와 견준다.
+  · **동시 실행 수 상한**(2026-11-08 사장 "무한에 가까운 다운로드로 공격이 들어올 확률이 있어?") — 함수마다 옵션에 `maxInstances` 를 적는다
+    (`CAP_PUBLIC` 20 · `CAP_ADMIN` 2 · `CAP_SCHEDULE` 1). 적지 않으면 호출이 몰릴 때 서버가 기본 한도까지 늘어나 요금도 함께 는다 — 로그인 없이
+    부를 수 있는 함수가 여섯이다(로그인 · 가입 방법 안내 · 인증 메일 · 비밀번호 재설정 · 문의 · 수신거부). 새 함수도 적는다 — runtime.test ④ 가 잡는다.
+    예산 알림(구글 클라우드 콘솔 → 결제 → 예산 및 알림)은 사장 계정에서만 설정할 수 있다(알림만 보내고 막지는 않는다).
   · **시험 발송** — Actions → 📧 수신거부 메일 시험 발송(mail_sample.yml · 수동 · `scripts/send_recheck_sample.cjs`)이 2년 재확인 메일을
     관리자 주소(hello@kosai.kr)로 한 통 보낸다(제목 앞 '[시험]'). 함수 파일을 그대로 불러 `adminMarketingRecheck({sample:true})`
     (`sendRecheckSample`)를 돌리므로 메일 · 링크 · 표가 실제 발송과 같다. 링크는 관리자 계정의 실제 링크라, '수신 거부하기'까지 누르면 그 계정의

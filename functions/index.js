@@ -20,6 +20,12 @@ admin.initializeApp();
 
 const REGION = "asia-northeast3"; // 서울
 
+/* 동시 실행 수 상한(2026-11-08 사장 "무한에 가까운 다운로드로 공격이 들어올 확률이 있어?"). 상한을 적지 않으면 호출이 몰릴 때
+   서버가 기본 한도까지 늘어나고 요금도 함께 는다 — 로그인 없이 부를 수 있는 함수가 여섯이다. 함수마다 상한을 두어 최악의 하루
+   비용을 묶는다. 지금 이용량보다 넉넉한 값이다: 회원 · 방문자가 부르는 함수 20, 관리자 함수 2, 예약 작업 1.
+   새 함수도 옵션에 maxInstances 를 적는다 — functions/tests/runtime.test.mjs ④ 가 빠진 함수를 잡는다. */
+const CAP_PUBLIC = 20, CAP_ADMIN = 2, CAP_SCHEDULE = 1;
+
 /* 동의서 판 번호. consent.js 의 CONSENT_VERSION 과 같아야 한다.
    한쪽만 올리면 같은 날 가입한 사람이 서로 다른 판으로 기록된다. */
 const CONSENT_VERSION = "2026-08-20";
@@ -757,7 +763,7 @@ async function findOtherAccountByEmail(db, email, selfUid) {
    알려 준다(email-already-in-use). 여기서 새로 새는 것은 '어느 방법으로
    가입했는가' 뿐이고, 그것을 감추는 대가로 사용자를 가두는 편이 더 나쁘다.
    가입한 적이 없는 주소에는 아무것도 알려 주지 않는다. */
-exports.signinHint = onCall({ region: REGION, cors: true }, async (req) => {
+exports.signinHint = onCall({ region: REGION, maxInstances: CAP_PUBLIC, cors: true }, async (req) => {
   const email = String(((req.data || {}).email) || "").trim().toLowerCase();
   if (!emailOk(email)) return { method: null };
 
@@ -804,6 +810,7 @@ function noPasswordMethod(user) {
 exports.socialLogin = onCall(
   {
     region: REGION,
+    maxInstances: CAP_PUBLIC,
     cors: true,
     secrets: [KAKAO_REST_KEY, KAKAO_CLIENT_SECRET, NAVER_CLIENT_ID, NAVER_CLIENT_SECRET]
   },
@@ -1703,7 +1710,7 @@ function mailQuotaMessage(waitMs, lang) {
 // 이메일 인증 메일 — 가입 직후/재발송. 이메일 열거·스팸 방지를 위해
 // 사용자가 없거나 이미 인증된 경우엔 조용히 성공 처리(메일 미발송).
 exports.sendVerifyEmail = onCall(
-  { region: REGION, cors: true, secrets: [RESEND_API_KEY] },
+  { region: REGION, maxInstances: CAP_PUBLIC, cors: true, secrets: [RESEND_API_KEY] },
   async (req) => {
     const email = ((req.data && req.data.email) || (req.auth && req.auth.token && req.auth.token.email) || "").trim().toLowerCase();
     const lang = (req.data && req.data.lang) === "en" ? "en" : "ko";
@@ -1744,7 +1751,7 @@ exports.sendVerifyEmail = onCall(
      invalid-argument                                  형식이 틀린 주소
    가입 여부와 가입 방법을 알려 주는 것은 signinHint 가 이미 하는 일이라 여기서 새로 새는 것은 없다. */
 exports.sendResetEmail = onCall(
-  { region: REGION, cors: true, secrets: [RESEND_API_KEY] },
+  { region: REGION, maxInstances: CAP_PUBLIC, cors: true, secrets: [RESEND_API_KEY] },
   async (req) => {
     const email = ((req.data && req.data.email) || "").trim().toLowerCase();
     const lang = (req.data && req.data.lang) === "en" ? "en" : "ko";
@@ -1799,7 +1806,7 @@ exports.sendResetEmail = onCall(
 const FORM_TO = "hello@kosai.kr";
 
 exports.submitForm = onCall(
-  { region: REGION, cors: true, secrets: [RESEND_API_KEY] },
+  { region: REGION, maxInstances: CAP_PUBLIC, cors: true, secrets: [RESEND_API_KEY] },
   async (req) => {
     const d = req.data || {};
     if (d.hp) return { ok: true };                       // 허니팟에 값 → 봇, 조용히 성공
@@ -1939,7 +1946,7 @@ async function usageOf(db, uid) {
 }
 
 exports.getReport = onCall(
-  { region: REGION, cors: true },
+  { region: REGION, maxInstances: CAP_PUBLIC, cors: true },
   async (req) => {
     const ticker = String((req.data && req.data.ticker) || "").trim().toUpperCase();
     if (!/^[0-9A-Z]{6}$/.test(ticker)) {
@@ -2052,7 +2059,7 @@ async function logConsent(db, uid, kind, extra, req) {
   }
 }
 
-exports.recordSignupConsent = onCall({ region: REGION, cors: true }, async (req) => {
+exports.recordSignupConsent = onCall({ region: REGION, maxInstances: CAP_PUBLIC, cors: true }, async (req) => {
   const uid = req.auth && req.auth.uid;
   if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
   const d = req.data || {};
@@ -2133,7 +2140,7 @@ exports.recordSignupConsent = onCall({ region: REGION, cors: true }, async (req)
    동의 기록과 같은 문서에 들어가므로 여기도 서버가 쓴다. 켠 시각과 끈
    시각을 따로 남긴다. 한 칸을 켰다 껐다 하면 "언제 동의했고 언제
    철회했나" 를 답할 수 없다. */
-exports.setMarketingConsent = onCall({ region: REGION, cors: true }, async (req) => {
+exports.setMarketingConsent = onCall({ region: REGION, maxInstances: CAP_PUBLIC, cors: true }, async (req) => {
   const uid = req.auth && req.auth.uid;
   if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
   const on = (req.data || {}).on === true;
@@ -2158,7 +2165,7 @@ exports.setMarketingConsent = onCall({ region: REGION, cors: true }, async (req)
    표만 틀렸는지를 알려 주면 회원 번호를 떠보는 데 쓰인다. 이미 철회한 사람은 그대로 성공(already)으로 돌려준다.
    철회는 설정 화면(setMarketingConsent)과 같은 칸을 같은 값으로 바꾸고, 이력에 같은 이름(marketing_off)으로
    남기되 경로(via: email_link)를 붙인다. */
-exports.unsubscribeMarketing = onCall({ region: REGION, cors: true }, async (req) => {
+exports.unsubscribeMarketing = onCall({ region: REGION, maxInstances: CAP_PUBLIC, cors: true }, async (req) => {
   const d = req.data || {};
   const uid = typeof d.u === "string" ? d.u.trim() : "";
   const token = typeof d.t === "string" ? d.t.trim() : "";
@@ -2199,7 +2206,7 @@ exports.deleteAccount = onCall(
      하나로 두 경우가 다 맞는다 — 결제를 켜는 날 여기를 손대야 하는 일이 없다.
      사람이 기억해야 하는 단계로 두면 언젠가 잊고, 그러면 유료 회원이 탈퇴를
      못 하게 된다. */
-  { region: REGION, cors: true,
+  { region: REGION, maxInstances: CAP_PUBLIC, cors: true,
     secrets: [KAKAO_ADMIN_KEY, NAVER_CLIENT_ID, NAVER_CLIENT_SECRET,
               ...(TOSS_SECRET_KEY ? [TOSS_SECRET_KEY] : [])] },
   async (req) => {
@@ -2392,7 +2399,7 @@ function providerLabel(v) {
    재확인 대상은 정보통신망법 시행령 제62조의3 이 근거다. 광고성 정보
    수신동의를 받은 날부터 2년마다 수신동의 여부를 확인해야 한다. 안내할 때
    전송자 명칭·수신동의 날짜·유지 또는 철회 방법을 함께 알려야 한다. */
-exports.adminConsentStats = onCall({ region: REGION, cors: true }, async (req) => {
+exports.adminConsentStats = onCall({ region: REGION, maxInstances: CAP_ADMIN, cors: true }, async (req) => {
   const who = assertAdmin(req);
   const db = admin.firestore();
   await logAdminAccess(db, who, req, "동의 현황 통계 조회", "전체 회원(집계)");
@@ -2479,7 +2486,7 @@ exports.adminConsentStats = onCall({ region: REGION, cors: true }, async (req) =
 });
 
 /* 한 사람의 현재 동의 상태와 이력. 이메일 또는 uid 로 찾는다. */
-exports.adminConsentLookup = onCall({ region: REGION, cors: true }, async (req) => {
+exports.adminConsentLookup = onCall({ region: REGION, maxInstances: CAP_ADMIN, cors: true }, async (req) => {
   const who = assertAdmin(req);
   const db = admin.firestore();
   const q = String(((req.data || {}).q) || "").trim().toLowerCase();
@@ -2555,7 +2562,7 @@ exports.adminConsentLookup = onCall({ region: REGION, cors: true }, async (req) 
 });
 
 /* 마케팅 수신 동의자 목록 — 발송 전에 뽑는다. 내보내기(CSV)에도 쓴다. */
-exports.adminMarketingList = onCall({ region: REGION, cors: true }, async (req) => {
+exports.adminMarketingList = onCall({ region: REGION, maxInstances: CAP_ADMIN, cors: true }, async (req) => {
   const who = assertAdmin(req);
   const db = admin.firestore();
   // 개인정보를 파일로 내보내는 자리다. 조회보다 더 확실히 남겨야 한다.
@@ -2603,7 +2610,7 @@ exports.adminMarketingList = onCall({ region: REGION, cors: true }, async (req) 
       dryRun 이면 누구에게 갈지만 돌려주고 아무것도 보내지 않는다.
       화면이 먼저 이걸 부르고, 사람이 확인한 다음에 실제로 보낸다. */
 exports.adminNotifyUnconsented = onCall(
-  { region: REGION, cors: true, secrets: [RESEND_API_KEY] },
+  { region: REGION, maxInstances: CAP_ADMIN, cors: true, secrets: [RESEND_API_KEY] },
   async (req) => {
     const who = assertAdmin(req);
     const db = admin.firestore();
@@ -2690,7 +2697,7 @@ exports.adminNotifyUnconsented = onCall(
 
    Auth 에 없는 문서만 지운다. 조회가 실패하면 아무것도 지우지 않는다 —
    '못 읽었다' 를 '없다' 로 읽으면 멀쩡한 회원 문서를 지우게 된다. */
-exports.adminPurgeOrphans = onCall({ region: REGION, cors: true }, async (req) => {
+exports.adminPurgeOrphans = onCall({ region: REGION, maxInstances: CAP_ADMIN, cors: true }, async (req) => {
   const who = assertAdmin(req);
   const db = admin.firestore();
   await logAdminAccess(db, who, req, "유령 회원 문서 정리", "전체 회원(대조·삭제)");
@@ -2712,7 +2719,7 @@ exports.adminPurgeOrphans = onCall({ region: REGION, cors: true }, async (req) =
   return { count: removed.length, rows: removed };
 });
 
-exports.adminUserList = onCall({ region: REGION, cors: true }, async (req) => {
+exports.adminUserList = onCall({ region: REGION, maxInstances: CAP_ADMIN, cors: true }, async (req) => {
   const who = assertAdmin(req);
   const db = admin.firestore();
   await logAdminAccess(db, who, req, "회원 목록 조회", "전체 회원");
@@ -2779,7 +2786,7 @@ exports.adminUserList = onCall({ region: REGION, cors: true }, async (req) => {
   return { count: rows.length, truncated, rows };
 });
 
-exports.getUsage = onCall({ region: REGION, cors: true }, async (req) => {
+exports.getUsage = onCall({ region: REGION, maxInstances: CAP_PUBLIC, cors: true }, async (req) => {
   const uid = req.auth && req.auth.uid;
   if (!uid) throw new HttpsError("unauthenticated", "로그인이 필요합니다.");
   const db = admin.firestore();
@@ -2954,7 +2961,7 @@ const isoOf = (v) =>
    토스 식별자(paymentKey·orderId)는 내려보내지 않는다. 화면이 쓸 일이
    없고, 결제 건을 취소할 수 있는 열쇠라 브라우저에 둘 이유가 없다. */
 if (PAYMENTS_LIVE) exports.listPayments = onCall(
-  { region: REGION, cors: true },
+  { region: REGION, maxInstances: CAP_PUBLIC, cors: true },
   async (req) => {
     const uid = uidOrThrow(req);
     const snap = await admin.firestore()
@@ -3068,7 +3075,7 @@ async function charge(db, uid, sub, amount, description, tag, kind, idem) {
 
 /* ── 1) 카드 등록 + 첫 결제 ───────────────────────────────── */
 if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
-  { region: REGION, cors: true, secrets: [TOSS_SECRET_KEY] },
+  { region: REGION, maxInstances: CAP_PUBLIC, cors: true, secrets: [TOSS_SECRET_KEY] },
   async (req) => {
     const uid = uidOrThrow(req);
     const plan = planOrThrow(req.data && req.data.plan);
@@ -3286,7 +3293,7 @@ if (PAYMENTS_LIVE) exports.confirmBilling = onCall(
       (반대로 해지를 누르면 cancelSubscription 이 변경 예약을 지운다).
    ─────────────────────────────────────────────────────────── */
 if (PAYMENTS_LIVE) exports.changePlan = onCall(
-  { region: REGION, cors: true, secrets: [TOSS_SECRET_KEY] },
+  { region: REGION, maxInstances: CAP_PUBLIC, cors: true, secrets: [TOSS_SECRET_KEY] },
   async (req) => {
     const uid = uidOrThrow(req);
     const next = planOrThrow(req.data && req.data.plan);
@@ -3359,7 +3366,7 @@ if (PAYMENTS_LIVE) exports.changePlan = onCall(
 
    결제와도 겹친다. 새 구독을 만드는 사이에 해지가 들어오면 방금 결제한 구독이
    해지 예약된 채로 시작한다. */
-if (PAYMENTS_LIVE) exports.cancelSubscription = onCall({ region: REGION, cors: true }, async (req) => {
+if (PAYMENTS_LIVE) exports.cancelSubscription = onCall({ region: REGION, maxInstances: CAP_PUBLIC, cors: true }, async (req) => {
   const uid = uidOrThrow(req);
   const db = admin.firestore();
   const ref = db.doc(`subscriptions/${uid}`);
@@ -3398,7 +3405,7 @@ if (PAYMENTS_LIVE) exports.cancelSubscription = onCall({ region: REGION, cors: t
 });
 
 // 해지 취소도 같은 자물쇠를 잡는다 — 위 cancelSubscription 설명 참고.
-if (PAYMENTS_LIVE) exports.resumeSubscription = onCall({ region: REGION, cors: true }, async (req) => {
+if (PAYMENTS_LIVE) exports.resumeSubscription = onCall({ region: REGION, maxInstances: CAP_PUBLIC, cors: true }, async (req) => {
   const uid = uidOrThrow(req);
   const db = admin.firestore();
   const ref = db.doc(`subscriptions/${uid}`);
@@ -3543,7 +3550,7 @@ async function doRefund(db, uid, ref, sub, q) {
 }
 
 if (PAYMENTS_LIVE) exports.requestRefund = onCall(
-  { region: REGION, cors: true, secrets: [TOSS_SECRET_KEY] },
+  { region: REGION, maxInstances: CAP_PUBLIC, cors: true, secrets: [TOSS_SECRET_KEY] },
   async (req) => {
     const uid = uidOrThrow(req);
     const db = admin.firestore();
@@ -3615,7 +3622,7 @@ if (PAYMENTS_LIVE) exports.requestRefund = onCall(
    금액이 나갔다. 여기서 받은 값을 requestRefund 에 그대로 되돌려주면, 달라진
    경우 실행하지 않고 다시 묻는다.
    ─────────────────────────────────────────────────────────── */
-if (PAYMENTS_LIVE) exports.refundPreview = onCall({ region: REGION, cors: true }, async (req) => {
+if (PAYMENTS_LIVE) exports.refundPreview = onCall({ region: REGION, maxInstances: CAP_PUBLIC, cors: true }, async (req) => {
   const uid = uidOrThrow(req);
   const db = admin.firestore();
   const sub = (await db.doc(`subscriptions/${uid}`).get()).data();
@@ -3636,7 +3643,7 @@ if (PAYMENTS_LIVE) exports.refundPreview = onCall({ region: REGION, cors: true }
 if (PAYMENTS_LIVE) exports.renewSubscriptions = onSchedule(
   // 카드를 긁으려면 토스 키, 실패를 알리려면 메일 키가 필요하다. 부르는 함수가
   // 쓰는 열쇠를 여기서 선언하지 않으면 그 자리에서 터진다.
-  { region: REGION, schedule: "0 2 * * *", timeZone: "Etc/UTC",
+  { region: REGION, maxInstances: CAP_SCHEDULE, schedule: "0 2 * * *", timeZone: "Etc/UTC",
     secrets: [TOSS_SECRET_KEY, RESEND_API_KEY] },
   async () => {
     const db = admin.firestore();
@@ -4028,7 +4035,7 @@ async function alertOps(subject, lines){
    콘솔에서 따로 켜야 하는 방식은 켰는지 확인할 방법이 코드에 없어서,
    지우는 일까지 여기서 한다. */
 exports.reviewAdminAccessLogs = onSchedule(
-  { region: REGION, schedule: "0 9 1 * *", timeZone: "Asia/Seoul",
+  { region: REGION, maxInstances: CAP_SCHEDULE, schedule: "0 9 1 * *", timeZone: "Asia/Seoul",
     secrets: [RESEND_API_KEY] },
   async () => {
     const db = admin.firestore();
@@ -4115,7 +4122,7 @@ exports.reviewAdminAccessLogs = onSchedule(
 
 /* 만들고 기다렸다 07:28 에 올린다. 워크플로가 그 대기를 스스로 한다. */
 exports.wakeMorningBrief = onSchedule(
-  { region: REGION, schedule: "40 6 * * 1-5", timeZone: "Asia/Seoul",
+  { region: REGION, maxInstances: CAP_SCHEDULE, schedule: "40 6 * * 1-5", timeZone: "Asia/Seoul",
     secrets: [GH_DISPATCH_TOKEN, RESEND_API_KEY] },
   async () => {
     if(!(await dispatchBrief("06:40 본 발화"))){
@@ -4131,7 +4138,7 @@ exports.wakeMorningBrief = onSchedule(
 /* 예비. 앞엣것이 죽었으면 여기서 다시 깨운다. 이미 올라갔으면 워크플로가
    스스로 건너뛴다. */
 exports.wakeMorningBriefBackup = onSchedule(
-  { region: REGION, schedule: "15 7 * * 1-5", timeZone: "Asia/Seoul",
+  { region: REGION, maxInstances: CAP_SCHEDULE, schedule: "15 7 * * 1-5", timeZone: "Asia/Seoul",
     secrets: [GH_DISPATCH_TOKEN, RESEND_API_KEY] },
   async () => { await dispatchBrief("07:15 예비"); }
 );
@@ -4145,7 +4152,7 @@ exports.wakeMorningBriefBackup = onSchedule(
    그래서 '실행이 있었고 실패하지 않았다' 를 기준으로 삼는다 — 한국
    공휴일 목록을 여기서 다시 관리하지 않아도 된다. */
 exports.watchMorningBrief = onSchedule(
-  { region: REGION, schedule: "0 8 * * 1-5", timeZone: "Asia/Seoul",
+  { region: REGION, maxInstances: CAP_SCHEDULE, schedule: "0 8 * * 1-5", timeZone: "Asia/Seoul",
     secrets: [GH_DISPATCH_TOKEN, RESEND_API_KEY] },
   async () => {
     const token = (GH_DISPATCH_TOKEN.value() || "").trim();
@@ -4204,7 +4211,7 @@ exports.watchMorningBrief = onSchedule(
    정상이고, 우리가 보려는 것은 '실행이 만들어지는가' 까지다. 그 지점은
    생성 API 를 부르기 전이라 과금도 없다. */
 exports.adminWakeBrief = onCall(
-  { region: REGION, cors: true, secrets: [GH_DISPATCH_TOKEN] },
+  { region: REGION, maxInstances: CAP_ADMIN, cors: true, secrets: [GH_DISPATCH_TOKEN] },
   async (req) => {
     assertAdmin(req);
     const ok = await dispatchBrief("관리자 수동 시험");
@@ -4364,7 +4371,7 @@ async function sendRecheckSample(uid, email){
    그래서 매일 돌고, 기한보다 앞서 보낸다(RECHECK_LEAD_DAYS). 앞당겨 보내는
    것은 조문이 막지 않는다 — 막는 것은 늦는 것이다. */
 exports.marketingRecheck = onSchedule(
-  { region: REGION, schedule: "40 3 * * *", timeZone: "Etc/UTC", secrets: [RESEND_API_KEY] },
+  { region: REGION, maxInstances: CAP_SCHEDULE, schedule: "40 3 * * *", timeZone: "Etc/UTC", secrets: [RESEND_API_KEY] },
   async () => {
     const r = await runMarketingRecheck({ dryRun: false, limit: 100 });
     /* 나간 날에만 알린다.
@@ -4389,7 +4396,7 @@ exports.marketingRecheck = onSchedule(
 /* 관리자 화면에서 지금 돌려 보는 길. 기본은 미리 보기다 — 실제 발송은
    dryRun:false 를 명시해야 한다. 동의 안내 메일과 같은 방식이다. */
 exports.adminMarketingRecheck = onCall(
-  { region: REGION, cors: true, secrets: [RESEND_API_KEY] },
+  { region: REGION, maxInstances: CAP_ADMIN, cors: true, secrets: [RESEND_API_KEY] },
   async (req) => {
     const who = assertAdmin(req);
     /* 시험 발송(sample) — 관리자 본인 주소로만 한 통(sendRecheckSample). 다른 주소는 받지 않는다. */
@@ -4405,7 +4412,7 @@ exports.adminMarketingRecheck = onCall(
 );
 
 exports.purgeUnconsented = onSchedule(
-  { region: REGION, schedule: "30 3 * * *", timeZone: "Etc/UTC" },   // 12:30 KST
+  { region: REGION, maxInstances: CAP_SCHEDULE, schedule: "30 3 * * *", timeZone: "Etc/UTC" },   // 12:30 KST
   async () => {
     const db = admin.firestore();
     const GRACE_MS = 24 * 60 * 60 * 1000;
