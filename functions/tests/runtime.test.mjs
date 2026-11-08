@@ -1,6 +1,7 @@
 /* ============================================================
    함수 실행 환경 — 세 자리가 같은 판을 가리키고, 끝난 판을 쓰지 않는가
    (③ 배포 작업의 함수 목록이 함수 파일의 내보내기와 같은가 — 2026-10-29)
+   (④ 함수마다 동시 실행 수 상한(maxInstances)이 있는가 — 2026-11-08)
 
    왜 있는가. 함수의 노드 판은 세 자리에 적혀 있다 — 배포 설정(firebase.json
    의 runtime), 함수 패키지(functions/package.json 의 engines), 배포 작업
@@ -69,10 +70,31 @@ const missing = always.filter((f) => !listed.includes(f));
 ok(listed.length > 0 && missing.length === 0, "늘 내보내는 함수는 모두 배포 목록에 있다", missing.length ? `빠짐: ${missing.join(", ")}` : `${listed.length}개`);
 const stray = listed.filter((f) => !always.includes(f) && !paid.includes(f));
 ok(stray.length === 0, "배포 목록에 함수 파일에 없는 이름이 없다", stray.join(", "));
+/* ④ 동시 실행 수 상한(2026-11-08). 옵션에 maxInstances 를 적지 않은 함수는 호출이 몰릴 때 기본 한도까지 늘어나 요금도 함께
+   는다. 함수마다 첫 인자(옵션 객체 — 앞의 주석은 건너뛴다)에 maxInstances 가 있는지, 상한 값이 1 이상의 정수인지 본다. */
+const capOf = (name) => (new RegExp(`const[^;]*\\b${name}\\s*=\\s*(\\d+)`).exec(src) || [])[1];
+const heads = [...src.matchAll(/^(?:if \(PAYMENTS_LIVE\) )?exports\.([A-Za-z0-9_]+) = (?:onCall|onSchedule)\(/gm)];
+const uncapped = heads.filter((m) => {
+  let k = m.index + m[0].length;
+  for (;;) {
+    while (/\s/.test(src[k])) k++;
+    if (src.startsWith("/*", k)) { k = src.indexOf("*/", k) + 2; continue; }
+    if (src.startsWith("//", k)) { k = src.indexOf("\n", k); continue; }
+    break;
+  }
+  const opts = src[k] === "{" ? src.slice(k, src.indexOf("}", k) + 1) : "";
+  return !/maxInstances:\s*(CAP_[A-Z]+|\d+)/.test(opts);
+}).map((m) => m[1]);
+const caps = ["CAP_PUBLIC", "CAP_ADMIN", "CAP_SCHEDULE"].map((n) => [n, capOf(n)]);
 const paidListed = paid.filter((f) => listed.includes(f));
 ok(payOn ? paidListed.length === paid.length : paidListed.length === 0,
    payOn ? "결제를 켰다(KOSAI_PAYMENTS=on) — 결제 함수가 모두 목록에 있다" : "결제를 켜지 않았다 — 결제 함수는 목록에 없다",
    paidListed.join(", "));
+
+console.log("\n④ 함수마다 동시 실행 수 상한이 있는가");
+ok(heads.length === always.length + paid.length && uncapped.length === 0, "모든 함수의 옵션에 maxInstances 가 있다",
+   uncapped.length ? `빠짐: ${uncapped.join(", ")}` : `${heads.length}개`);
+ok(caps.every(([, v]) => v && Number(v) >= 1), "상한 값이 1 이상의 정수다", caps.map(([n, v]) => `${n}=${v}`).join(" · "));
 
 console.log(`\n통과 ${pass} · 실패 ${fail}`);
 process.exit(fail ? 1 : 0);
