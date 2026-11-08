@@ -336,6 +336,15 @@ pr = C.prepare({"lead": {"ko": "매출 9000억원<sup>1</sup>, ESS向 공급", "
 eq("태그 · 한자 · 쉼표를 한 번에", pr["lead"]["ko"], "매출 9,000억원, ESS 대상 공급")
 eq("숫자 · 출처 칸은 그대로", (pr["quant"], pr["sources"]), ({"n": "9000억원"}, ["https://a/<b>"]))
 eq("몇 번 돌려도 같다", C.prepare(pr), pr)
+_mat = C.prepare({"earnings": {"ko": "매출은 2022년 1,257억원[KRW 125.7 billion]에서 2023년 1,123억원 [KRW 112.3 billion]으로 줄었다.",
+                               "en": "Revenue fell from KRW 148.8 billion [KRW 148.8 billion] in 2022 to [KRW 20.2 billion] in 2023."},
+                  "keypoints": ["영업이익 245억원[KRW 24.5 billion]으로 늘었다.", "Profit rose to [KRW 24.5 billion]."],
+                  "quant": {"x": "[KRW 1 billion]"}})
+eq("재료의 영어 금액 표기 — 한국어 칸에서는 지우고 영어 칸에서는 겹친 것을 지우거나 괄호만 벗긴다(2026-11-08)",
+   (_mat["earnings"], _mat["keypoints"], _mat["quant"]),
+   ({"ko": "매출은 2022년 1,257억원에서 2023년 1,123억원으로 줄었다.", "en": "Revenue fell from KRW 148.8 billion in 2022 to KRW 20.2 billion in 2023."},
+    ["영업이익 245억원으로 늘었다.", "Profit rose to KRW 24.5 billion."], {"x": "[KRW 1 billion]"}))
+eq("영어 금액 정리도 몇 번 돌려도 같다", C.prepare(_mat), _mat)
 eq("마침표 겹침을 하나로 — 말줄임표 · 숫자 사이는 그대로", C.prepare({"lead": {"ko": "늘었다.. 같은 시점... 1..2", "en": "rose.. U.S.."}})["lead"],
    {"ko": "늘었다. 같은 시점... 1..2", "en": "rose. U.S."})
 eq("영문명을 화면 꼴로", [C.clean_en(x) for x in ("SAMSUNG ELECTRONICS CO,.LTD", "SK hynix Inc.", "NAVER Corp.")],
@@ -513,6 +522,21 @@ eq("천 단위 쉼표가 빠진 수 0", nc[:5], [])
 # 협의 없이 쓰지 않는 사이트(치킨스탁) — 화면에 나오는 리포트 · 업종 분석 · 브리핑 · 종목 페이지 · 시안의 출처와 본문에 0건이어야 한다.
 # 2026-10-19 운영사(알프소프트) 문의 뒤 사장 지시로 그 사이트를 출처로 단 리포트 153편을 다시 썼다. 생성기는 검색에서 막고 저장 전에
 # 다시 보지만(generate_reports.no_use_urls · 규칙 no_use), 손으로 고친 글이나 옛 파일로 되살아나는 길은 여기서 막는다.
+print("\n── 전수: 작성 재료의 영어 금액 표기([KRW …])가 한국어 본문에 없다 · 마침표 겹침이 없다 (2026-11-08) ──")
+_mat_bad, _dot_bad = [], []
+for f in files:
+    try:
+        rep = json.loads(f.read_text(encoding="utf-8"))
+    except Exception:
+        continue
+    if not isinstance(rep, dict):
+        continue
+    if any(C._MAT_EN.search(s) for _, s in C.sentences(rep)):
+        _mat_bad.append(f.stem)
+    if any(C._DOUBLE_DOT.search(s) for _, s in C.sentences(rep)) or any(C._DOUBLE_DOT.search(t) for _, t in C.en_texts(rep)):
+        _dot_bad.append(f.stem)
+eq(f"리포트 {len(files):,}편 — 한국어 본문의 [KRW …] 0 (2026-11-08 전: 25편 567곳 · 10월 소넷 5)", _mat_bad[:10], [])
+eq("마침표 겹침 0", _dot_bad[:10], [])
 print("\n── 전수: 협의 없이 쓰지 않는 사이트(치킨스탁)가 어디에도 없다 ──")
 _nu = [f.parent.name + "/" + f.stem for f in files if C.NO_USE_NAME.search(f.read_text(encoding="utf-8"))]
 if C.NO_USE_NAME.search(sec_js):

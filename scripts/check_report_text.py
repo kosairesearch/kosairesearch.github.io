@@ -1048,6 +1048,24 @@ def clean_en(s):
 # 마침표 겹침('증가했다.. 같은 시점') — 2026-11-07 Haiku 5.5 시험 한 편에 22곳(2026-11-08). 말줄임표('...')와 숫자 사이는 두고
 # 두 개짜리만 하나로 줄인다. 정리라 돈이 들지 않는다.
 _DOUBLE_DOT = re.compile(r"(?<![.\d])\.\.(?![.\d])")
+# 작성 재료([공시 실적])의 영어 금액 표기 '4,676억원[KRW 467.6 billion]' 이 본문으로 샌 것(2026-11-08) — 재료가 '[ ] 안은 영어 본문
+# 표기'라고 적어 두었는데 한국어 본문에 대괄호째 옮겼다. 지금 리포트 25편 567곳(2026-10 Sonnet 5) · Haiku 5.5 시험 20편 중 9편 293곳.
+# 한국어 칸에서는 지우고, 영어 칸에서는 바로 앞에 같은 금액이 있으면 지우고('KRW 148.8 billion [KRW 148.8 billion]') 아니면 괄호만 벗긴다.
+_MAT_EN = re.compile(r"\s?\[((?:KRW|USD|JPY|EUR|CNY)\s[^\[\]]{1,40})\]")
+
+
+def strip_material_en(text, lang):
+    """작성 재료의 대괄호 영어 금액 표기를 본문에서 걷는다. lang 은 'ko' · 'en'."""
+    if not isinstance(text, str) or "[" not in text:
+        return text
+    if lang not in ("ko", "en"):                      # {ko, en} 쌍이 아닌 글(옛 형식의 문자열 칸) — 한글이 있으면 한국어로 본다
+        lang = "ko" if HANGUL.search(text) else "en"
+    if lang == "ko":
+        return _MAT_EN.sub("", text)
+
+    def en(m):
+        return "" if m.group(1) in text[max(0, m.start() - len(m.group(1)) - 2):m.start()] else " " + m.group(1)
+    return _MAT_EN.sub(en, text)
 
 
 def prepare(rep):
@@ -1061,7 +1079,7 @@ def prepare(rep):
         if k in _NOT_TEXT:
             return o
         if isinstance(o, str):
-            return _DOUBLE_DOT.sub(".", clean_markup(o))
+            return strip_material_en(_DOUBLE_DOT.sub(".", clean_markup(o)), k)
         if isinstance(o, list):
             return [rec(x) for x in o]
         if isinstance(o, dict):
