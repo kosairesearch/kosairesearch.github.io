@@ -219,7 +219,7 @@ def material(q, name=""):
     v = q.get("valuation") or {}
     ccy = str(v.get("ccy") or "KRW").upper()
     lines = []
-    head = "[공시 실적 — DART 정기보고서 · 금액은 이 표기 그대로 본문에 옮긴다 · [ ] 안은 영어 본문 표기]"
+    head = "[공시 실적 — DART 정기보고서 · 금액은 이 표기 그대로 본문에 옮긴다 · [ ] 안은 영어(en) 본문에만 대괄호 없이 쓰는 표기]"
     if ccy != "KRW":
         head += f"\n(이 회사는 {ccy}로 공시한다 — 아래 금액은 원화로 환산한 값이다. 본문에 원화 금액을 쓸 때는 '원화 환산'이라고 밝힌다)"
     lines.append(head)

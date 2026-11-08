@@ -92,8 +92,9 @@ ok(p_h2["messages"][0]["content"] == same_prompt and p_h2["system"][0]["text"] =
 ok(p_h2["max_tokens"] == 96000 and p_h2["thinking"] == {"type": "adaptive"}, "출력 한도 96,000 · 사고 adaptive")
 ok("tools" not in p_h0, "검색 0회면 도구를 싣지 않는다")
 t = p_h2["tools"][0]
-ok(t["max_uses"] == 2 and t["type"] == v2.TOOLS[0]["type"] and "chickstockfi.com" in t["blocked_domains"]
-   and v2.TOOLS[0]["max_uses"] == 6, "검색 횟수만 바꾸고 차단 도메인은 그대로(원본 설정은 건드리지 않는다)")
+_t3 = T.request_params("h3", st, q, as_of, stocks)["tools"][0]
+ok(t["max_uses"] == 2 and _t3["max_uses"] == 3 and t["type"] == v2.TOOLS[0]["type"] and "chickstockfi.com" in t["blocked_domains"]
+   and v2.TOOLS[0]["max_uses"] == 2, "검색 횟수만 바꾸고 차단 도메인은 그대로(원본 설정은 건드리지 않는다 · 리포트 v2 는 2회)")
 ok(p_s2l.get("output_config") == {"effort": "low"} and "output_config" not in p_h2, "사고 깊이는 적은 설정에만")
 ok(p_h2["model"] == "claude-haiku-5-5" and p_s2l["model"] == "claude-sonnet-5-5", "모델")
 
@@ -229,6 +230,25 @@ wf = (ROOT / ".github" / "workflows" / "report_trial.yml").read_text(encoding="u
 ok("workflow_dispatch" in wf and "schedule" not in wf and "contents: read" in wf and "git push" not in wf
    and "git commit" not in wf, "수동 실행 · 읽기 권한 · 커밋 없음")
 ok(wf.count("secrets.ANTHROPIC_API_KEY") == 1 and "scripts/report_trial.py" in wf, "시험 단계에만 모델 열쇠를 넘긴다")
+ok("actions/upload-artifact" in wf and wf.count("inputs.save == '1'") == 3 and "runner.temp" in wf
+   and "BEGIN-TRIAL-TGZ" in wf, "시험 글 첨부 · 기록 묶음은 save 를 켰을 때만 · 저장소 밖 폴더에서")
+
+print("⑧ 시험 글 첨부 — 저장소 밖 폴더에만 쓴다")
+import tempfile  # noqa: E402
+before8 = git_status()
+rep8 = stored("005930")
+with tempfile.TemporaryDirectory() as td:
+    n8 = T.save_reports({("h2", "005930"): rep8, ("h3", "005930"): None}, [{"cfg": "h2", "tk": "005930"}], td)
+    p8 = Path(td) / "h2" / "005930.json"
+    ok(n8 == 1 and p8.exists() and json.loads(p8.read_text(encoding="utf-8")).get("title") == rep8.get("title")
+       and (Path(td) / "rows.json").exists() and not (Path(td) / "h3").exists(),
+       "글 · 결과 줄을 폴더에 쓰고 빈 글은 건너뛴다")
+try:
+    T.save_reports({("h2", "005930"): rep8}, [], ROOT / "data" / "_trial_out")
+    ok(False, "저장소 안 폴더는 거절한다")
+except ValueError:
+    ok(not (ROOT / "data" / "_trial_out").exists(), "저장소 안 폴더는 거절한다")
+ok(git_status() == before8, "첨부를 써도 저장소 파일은 그대로다")
 
 print(f"\n통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)

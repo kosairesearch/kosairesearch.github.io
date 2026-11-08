@@ -83,7 +83,7 @@ RULES = (
         r"(?:보수적|신중한|선별적)(?:인)?\s*(?:접근|대응|관점)(?:이|을)?\s*(?:타당|합리적|바람직)"
         r"|(?:아직\s*|충분히\s*|온전히\s*)+반영(?:되지|하지)\s*(?:않은|못한)\s*(?:업사이드|상태로\s*(?:판단|볼\s*수))"
         r"|업사이드\s*기대가\s*(?:아직\s*)?(?:주가에\s*)?(?:충분히\s*)?반영되지"),
-     "우리 목소리의 투자 판단 — 판단은 독자에게 맡기고 사실과 확인할 지점으로 쓸 것"),
+     "우리 목소리의 투자 판단 — 판단을 대신하지 말고 사실과 다음에 확인할 지점으로 쓸 것"),
     ("solicit", "위험", re.compile(
         r"매수\s*(추천|권[유고])|매도\s*(추천|권[유고])|지금이\s*기회"
         r"|(?<![가-힣])담을\s*만하|사\s*모을\s*만하"),
@@ -578,6 +578,92 @@ def amount_hits(rep):
     return hits
 
 
+# ── 독자 · 투자자 호칭과 칸 사이 되풀이(2026-11-08 · Haiku 5.5 전환) ─────────────────────────
+# 비용 시험(11/7 · 20종목)에서 Haiku 5.5 는 '독자는 … 확인할 필요가 있다' · '판단은 독자에게 맡긴다' · '투자자는 변동성 확대에 대비해야
+# 한다' 같은 문장을 28편 중 19편에, 다른 칸에 있는 문장을 글자 그대로 다시 쓴 것을 8편에 냈다(Sonnet 5.5 는 8편 · 4편). 리포트는
+# 사실과 다음 확인 지점을 쓰는 글이라 독자 · 투자자를 부르거나 무엇을 하라고 권하지 않는다(지시문 6-7 · 6-5).
+# 새로 쓰는 리포트에만 건다 — 2026-11-08 전에 쓴 리포트(v2 2,586편 중 한국어 525편 · 영어 642편 · 되풀이 72편)는 공시로 다시 쓸 때
+# 이 규칙을 지나 바뀐다. 3분기 보고서(11/16 마감)로 대부분이 다시 쓰인다. 업종 분석에는 걸지 않는다(종목 리포트만 — ticker).
+RULES_FROM = "2026-11-08"
+_OLD_WRITERS = ("claude-opus", "claude-sonnet")          # 전환 전에 리포트를 쓴 모델(그날 전환 전에 주문한 글은 옛 기준)
+_READER_KO = re.compile(r"(?<![가-힣])독자(?:들)?(?:은|는|가|에게|께서)(?![가-힣])|(?<![가-힣])독자(?:들)?의\s*(?:판단|몫|선택)")
+_INVESTOR_KO = re.compile(r"(?<![가-힣])투자자(?:들)?(?:은|는)\s")
+# 시장 참여자를 가리키는 '외국인 투자자는 순매도했다' 같은 사실 서술은 빼고, 권유 꼴('…해야 한다' · '…필요가 있다')만 본다.
+_INVESTOR_MOD = ("외국인", "기관", "개인", "해외", "국내", "글로벌", "일부", "전문", "기존", "신규", "소액", "재무적", "전략적", "연기금",
+                 "시장", "외부", "주요", "다수", "많은", "해당")
+_ADVISE_KO = re.compile(r"야\s*(?:한다|할|하며|하고|하는)|필요가\s*있|필요하다|바람직")
+_READER_EN = re.compile(
+    r"\b(readers?|investors?)\s+(?:should|need to|must|may want to|would do well to|are advised to|are encouraged to|have to"
+    r"|ought to|will want to|might want to)\b"
+    r"|\b(?:left|leave|leaves|leaving)\s+(?:the\s+)?(?:judg(?:e)?ment|decision|call|assessment)s?\s+(?:is\s+)?(?:up\s+)?to\s+(?:the\s+)?"
+    r"(?:readers?|investors?)\b|\bleft\s+(?:up\s+)?to\s+(?:the\s+)?(?:readers?|investors?)\b|\bup to (?:the )?readers?\b", re.I)
+_INVESTOR_MOD_EN = ("foreign", "institutional", "retail", "individual", "overseas", "domestic", "existing", "new", "strategic",
+                    "financial", "some", "many", "global", "minority", "major")
+
+
+def new_rules_apply(rep):
+    """독자 호칭 · 되풀이 규칙을 이 글에 거는가 — 종목 리포트이고, 2026-11-08 뒤에 썼거나 그날 Haiku(전환 뒤)로 썼으면."""
+    if not isinstance(rep, dict) or not rep.get("ticker"):
+        return False
+    d = str(rep.get("reportDate") or "")[:10]
+    if not d or d > RULES_FROM:
+        return True
+    if d < RULES_FROM:
+        return False
+    return not str(rep.get("model") or "").startswith(_OLD_WRITERS)
+
+
+def reader_ko(s):
+    """한국어 문장에서 독자 · 투자자를 부르는 자리 — 없으면 None."""
+    m = _READER_KO.search(s)
+    if m:
+        return m.group(0)
+    for m in _INVESTOR_KO.finditer(s):
+        pre = re.search(r"([가-힣]+)\s*$", s[:m.start()])
+        if pre and pre.group(1).endswith(_INVESTOR_MOD):
+            continue
+        if _ADVISE_KO.search(s[m.end():]):
+            return m.group(0).strip()
+    return None
+
+
+def reader_en(t):
+    for m in _READER_EN.finditer(t):
+        pre = re.search(r"([A-Za-z]+)\s*$", t[:m.start()])
+        if m.group(1) and pre and pre.group(1).lower() in _INVESTOR_MOD_EN:
+            continue
+        return m.group(0)
+    return None
+
+
+def new_rule_hits(rep):
+    """reader(독자 · 투자자 호칭) · dup(다른 칸의 문장을 글자 그대로) — 품질 등급이라 교정이 그 문장만 고친다."""
+    if not new_rules_apply(rep):
+        return []
+    hits, seen = [], {}
+    for sec, s in sentences(rep):
+        if not DISCLAIMER.search(s):
+            m = reader_ko(s)
+            if m:
+                hits.append({"rule": "reader", "level": "품질", "section": sec, "match": m,
+                             "why": "독자 · 투자자를 부르거나 무엇을 하라고 권한다 — 사실과 다음 확인 지점으로 쓸 것", "sentence": s[:160]})
+        k = re.sub(r"\s+", " ", s).strip()
+        if len(k) >= 25:
+            if k in seen:
+                hits.append({"rule": "dup", "level": "품질", "section": sec, "match": k[:24],
+                             "why": f"'{seen[k]}' 칸의 문장을 글자 그대로 되풀이했다", "sentence": s[:160]})
+            else:
+                seen[k] = sec
+    for sec, t in en_texts(rep):
+        m = reader_en(t)
+        if m:
+            i = t.find(m)
+            hits.append({"rule": "reader", "level": "품질", "section": sec, "match": m,
+                         "why": "영어에서 독자 · 투자자에게 무엇을 하라고 권한다 — 사실과 다음 확인 지점으로 쓸 것",
+                         "sentence": t[max(0, i - 60):i + 100]})
+    return hits
+
+
 def check(rep):
     """위반 목록을 돌려준다. [] 면 통과."""
     hits = []
@@ -616,7 +702,7 @@ def check(rep):
             hits.append({"rule": "hangul_en", "level": "품질", "section": sec,
                          "match": t[i:i + 12], "why": "영문에 한글이 남았다 — 로마자/영문 명칭으로",
                          "sentence": t[max(0, i - 60):i + 60]})
-    return hits + streak_hits(rep) + amount_hits(rep) + defects(rep)
+    return hits + streak_hits(rep) + amount_hits(rep) + defects(rep) + new_rule_hits(rep)
 
 
 # ── 교정: 걸린 문장만 다시 쓴다 ──────────────────────────────────────────
@@ -643,6 +729,11 @@ _RULE_TEXT = "\n".join(f"  · {key}: {why}" for key, _lv, _pat, why in RULES) + 
     "\n  · amount: 이 회사의 실적 금액이 공시 값과 다르다 — 위반 설명에 적힌 공시 값으로 그 금액만 고친다(같은 문장의 '전 분기 · 전년'"
     " 금액이 같은 자리에서 틀렸으면 그것도, 같은 칸의 영어 금액도 같은 값으로). 그 문장이 이 회사가 아니라 자회사 · 부문 · 다른 회사의"
     " 수치라면 금액은 두고 문장 앞에 그 이름을 밝힌다."
+    "\n  · reader: 독자 · 투자자를 주어로 세우거나 무엇을 확인 · 대비 · 판단하라고 권하는 문장이다('독자는 …', '투자자는 … 필요가 있다',"
+    " '판단은 독자에게 맡긴다', 영어 'Investors should …'). 주어와 권유를 빼고 사실로 고친다(예: '3분기 영업이익률이 다음 확인"
+    " 지점이다'). 판단을 누구에게 맡긴다는 문장은 통째로 지운다. 같은 칸의 짝 언어도 같은 뜻으로 고친다."
+    "\n  · dup: 다른 칸에 있는 문장을 글자 그대로 되풀이했다 — 이 칸에서는 그 문장을 지우거나, 같은 사실의 원인 · 영향 · 다음에"
+    " 확인할 점으로 바꿔 쓴다. 새 수치를 만들지 않는다. 같은 칸의 짝 언어도 같이."
     "\n  · no_use: 협의 없이 쓰지 않는 사이트(치킨스탁 · chickstockfi.com)의 이름이 있다 — 그 이름과, 그 사이트를 근거로 든 내용을"
     " 문장에서 뺀다. 다른 근거가 없는 수치나 주장이면 그 문장을 통째로 지운다. 같은 칸의 영어도 같이.")
 
@@ -905,6 +996,8 @@ _WHY_EXTRA = {
     "streak": "연속 연수가 실적 표와 다름(정점 다음 해부터 센다)",
     "amount": "본문 금액이 공시 값과 다름",
     "no_use": "협의 없이 쓰지 않는 사이트(치킨스탁)의 이름",
+    "reader": "독자 · 투자자를 부르거나 권하는 문장(2026-11-08 뒤 작성분)",
+    "dup": "다른 칸의 문장을 글자 그대로 되풀이(2026-11-08 뒤 작성분)",
 }
 
 
@@ -952,6 +1045,29 @@ def clean_en(s):
     return s
 
 
+# 마침표 겹침('증가했다.. 같은 시점') — 2026-11-07 Haiku 5.5 시험 한 편에 22곳(2026-11-08). 말줄임표('...')와 숫자 사이는 두고
+# 두 개짜리만 하나로 줄인다. 정리라 돈이 들지 않는다.
+_DOUBLE_DOT = re.compile(r"(?<![.\d])\.\.(?![.\d])")
+# 작성 재료([공시 실적])의 영어 금액 표기 '4,676억원[KRW 467.6 billion]' 이 본문으로 샌 것(2026-11-08) — 재료가 '[ ] 안은 영어 본문
+# 표기'라고 적어 두었는데 한국어 본문에 대괄호째 옮겼다. 지금 리포트 25편 567곳(2026-10 Sonnet 5) · Haiku 5.5 시험 20편 중 9편 293곳.
+# 한국어 칸에서는 지우고, 영어 칸에서는 바로 앞에 같은 금액이 있으면 지우고('KRW 148.8 billion [KRW 148.8 billion]') 아니면 괄호만 벗긴다.
+_MAT_EN = re.compile(r"\s?\[((?:KRW|USD|JPY|EUR|CNY)\s[^\[\]]{1,40})\]")
+
+
+def strip_material_en(text, lang):
+    """작성 재료의 대괄호 영어 금액 표기를 본문에서 걷는다. lang 은 'ko' · 'en'."""
+    if not isinstance(text, str) or "[" not in text:
+        return text
+    if lang not in ("ko", "en"):                      # {ko, en} 쌍이 아닌 글(옛 형식의 문자열 칸) — 한글이 있으면 한국어로 본다
+        lang = "ko" if HANGUL.search(text) else "en"
+    if lang == "ko":
+        return _MAT_EN.sub("", text)
+
+    def en(m):
+        return "" if m.group(1) in text[max(0, m.start() - len(m.group(1)) - 2):m.start()] else " " + m.group(1)
+    return _MAT_EN.sub(en, text)
+
+
 def prepare(rep):
     """저장 전 결정적 정리 — 태그 · 마크다운(clean_markup), 한자(fix_hanja), 금액 띄어쓰기 · 천 단위 쉼표(number_spacing).
     돈이 들지 않고 몇 번 돌려도 결과가 같다. 출처 · 숫자 · 메타 칸은 건드리지 않는다. 고친 사본을 돌려준다.
@@ -963,7 +1079,7 @@ def prepare(rep):
         if k in _NOT_TEXT:
             return o
         if isinstance(o, str):
-            return clean_markup(o)
+            return strip_material_en(_DOUBLE_DOT.sub(".", clean_markup(o)), k)
         if isinstance(o, list):
             return [rec(x) for x in o]
         if isinstance(o, dict):

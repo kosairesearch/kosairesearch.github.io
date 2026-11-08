@@ -301,6 +301,26 @@ def show(reps, n):
             print(f"[sources] {', '.join(rep.get('sources') or [])}")
 
 
+def save_reports(reps, rows, out_dir):
+    """시험 글과 결과 줄을 저장소 밖 폴더에 JSON 으로 남긴다 — 작업이 실행 첨부로 올려 사람이 읽고 견준다(2026-11-07 사장
+    "하이쿠로 만든 보고서 준비되어 있어?"). 저장소 안에는 쓰지 않는다 — 시험은 저장소의 파일을 바꾸지 않는다."""
+    out = Path(out_dir).resolve()
+    root = ROOT.resolve()
+    if out == root or root in out.parents:
+        raise ValueError(f"저장소 안에는 쓰지 않는다: {out}")
+    n = 0
+    for (cfg, tk), rep in sorted(reps.items()):
+        if rep is None:
+            continue
+        d = out / cfg
+        d.mkdir(parents=True, exist_ok=True)
+        (d / f"{tk}.json").write_text(json.dumps(rep, ensure_ascii=False, indent=1), encoding="utf-8")
+        n += 1
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "rows.json").write_text(json.dumps(rows, ensure_ascii=False, indent=1, default=str), encoding="utf-8")
+    return n
+
+
 def wait(cl, bid, budget=WAIT_SEC):
     waited = 0
     while True:
@@ -389,6 +409,10 @@ def main():
         with open(summ, "a", encoding="utf-8") as f:
             f.write(text + "\n")
     show(reps, int(os.getenv("REPORT_TRIAL_SHOW", "2") or "2"))
+    save = os.getenv("REPORT_TRIAL_SAVE", "").strip()
+    if save:
+        n = save_reports(reps, rows, save)
+        print(f"- 시험 글 {n}편과 결과 줄을 실행 첨부용 폴더에 남겼다(저장소 밖)")
 
 
 if __name__ == "__main__":

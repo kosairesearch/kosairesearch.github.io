@@ -66,8 +66,8 @@ jobs:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
           KRX_ID: ${{ secrets.KRX_ID }}
           KRX_PW: ${{ secrets.KRX_PW }}
-          REPORT_MODEL_TOP: 'claude-opus-5-5'
-          REPORT_MODEL_REST: 'claude-sonnet-5-5'
+          REPORT_MODEL_TOP: 'claude-haiku-5-5'   # 2026-11-08 사장 "모든 종목 리포트를 … 다 하이쿠로 · 무조건 batch api" — 저장소 변수로 바꾸지 않게 고정
+          REPORT_MODEL_REST: 'claude-haiku-5-5'
           REPORT_MODEL_TOP_N: '300'
           REPORT_TICKERS: ${{ steps.filings.outputs.new_tickers }}
           # 정정 공시만 나온 종목 — 숫자를 새로 받아 저장된 리포트와 견주고, 같으면 다시 쓰지 않는다.
@@ -91,7 +91,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
-          REPORT_MODEL: 'claude-sonnet-5-5'
+          REPORT_MODEL: 'claude-haiku-5-5'   # 2026-11-08 사장 "모든 종목 리포트를 … 다 하이쿠로 · 무조건 batch api" — 저장소 변수로 바꾸지 않게 고정
           REPORT_TICKERS: ${{ steps.v2.outputs.legacy }}
           REPORT_SKIP_FAILED: '1'
           BATCH_MAX_WAIT_SEC: '3600'

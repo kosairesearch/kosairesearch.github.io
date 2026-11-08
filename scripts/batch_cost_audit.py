@@ -88,6 +88,8 @@ def _bill(model, u, t):
     """응답에 실려 온 청구 조건으로 계산한 금액. 요금 등급이 batch 가 아니면 할인이 없다."""
     import generate_reports as g
     pin, pout = g.PRICE.get(model, (5.0, 25.0))
+    if model in g.LONG and u["in"] + u["cache_w"] + u["cache_r"] > g.LONG[model]:   # Haiku 5.5 긴 입력 — 토큰 단가 5배
+        pin, pout = pin * 5, pout * 5
     cw1h = t["cw1h"]
     cw5m = t["cw5m"] if t["cw5m"] is not None else max(0, u["cache_w"] - cw1h)
     tok = (u["in"] + cw5m * 1.25 + cw1h * 2.0 + u["cache_r"] * g.CACHE_R.get(model, 0.1)) * pin + u["out"] * pout
