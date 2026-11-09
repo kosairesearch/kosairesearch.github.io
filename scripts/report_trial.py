@@ -301,9 +301,17 @@ def show(reps, n):
             print(f"[sources] {', '.join(rep.get('sources') or [])}")
 
 
-def save_reports(reps, rows, out_dir):
+def raw_text(message):
+    """응답의 text 블록을 가공 없이 이은 글 — 인용 표시(<cite …>)를 지우기 전이다. 모델이 본문에 쓴 표시와
+    그 안의 글을 그대로 보려고 남긴다(2026-11-09 — 문장 뒤에 검색 결과 원문이 마침표 없이 붙은 글을 가리려고)."""
+    return "".join(getattr(b, "text", "") or "" for b in getattr(message, "content", None) or []
+                   if getattr(b, "type", None) == "text")
+
+
+def save_reports(reps, rows, out_dir, raws=None):
     """시험 글과 결과 줄을 저장소 밖 폴더에 JSON 으로 남긴다 — 작업이 실행 첨부로 올려 사람이 읽고 견준다(2026-11-07 사장
-    "하이쿠로 만든 보고서 준비되어 있어?"). 저장소 안에는 쓰지 않는다 — 시험은 저장소의 파일을 바꾸지 않는다."""
+    "하이쿠로 만든 보고서 준비되어 있어?"). 저장소 안에는 쓰지 않는다 — 시험은 저장소의 파일을 바꾸지 않는다.
+    raws({(설정, 종목): 가공 전 글})를 주면 raw/{설정}/{종목}.txt 로 함께 남긴다."""
     out = Path(out_dir).resolve()
     root = ROOT.resolve()
     if out == root or root in out.parents:
@@ -316,6 +324,11 @@ def save_reports(reps, rows, out_dir):
         d.mkdir(parents=True, exist_ok=True)
         (d / f"{tk}.json").write_text(json.dumps(rep, ensure_ascii=False, indent=1), encoding="utf-8")
         n += 1
+    for (cfg, tk), txt in sorted((raws or {}).items()):
+        if txt:
+            d = out / "raw" / cfg
+            d.mkdir(parents=True, exist_ok=True)
+            (d / f"{tk}.txt").write_text(txt, encoding="utf-8")
     out.mkdir(parents=True, exist_ok=True)
     (out / "rows.json").write_text(json.dumps(rows, ensure_ascii=False, indent=1, default=str), encoding="utf-8")
     return n
@@ -336,7 +349,8 @@ def wait(cl, bid, budget=WAIT_SEC):
         waited += 60
 
 
-def collect(cl, bid, by_tk):
+def collect(cl, bid, by_tk, raws=None):
+    """raws 에 dict 를 주면 가공 전 글을 {(설정, 종목): 글}로 채운다."""
     rows, reps, failed = [], {}, []
     mats = {}
     for res in cl.messages.batches.results(bid):
@@ -355,8 +369,12 @@ def collect(cl, bid, by_tk):
         if tk not in mats:
             mats[tk] = material(st)
         row, rep = evaluate(res.result.message, cfg, st, mats[tk])
+        raw = raw_text(res.result.message)
+        row["cite_tags"] = raw.count("<cite")          # 모델이 본문에 직접 쓴 인용 표시 수
         rows.append(row)
         reps[(cfg, tk)] = rep
+        if raws is not None:
+            raws[(cfg, tk)] = raw
     return rows, reps, failed
 
 
@@ -401,7 +419,8 @@ def main():
             with open(summ, "a", encoding="utf-8") as f:
                 f.write(msg + "\n")
         return
-    rows, reps, failed = collect(cl, bid, by_tk)
+    raws = {}
+    rows, reps, failed = collect(cl, bid, by_tk, raws)
     text = render(rows, len(stocks), failed) + f"\n\n시험 배치 {bid}"
     print(text)
     summ = os.getenv("GITHUB_STEP_SUMMARY")
@@ -411,8 +430,8 @@ def main():
     show(reps, int(os.getenv("REPORT_TRIAL_SHOW", "2") or "2"))
     save = os.getenv("REPORT_TRIAL_SAVE", "").strip()
     if save:
-        n = save_reports(reps, rows, save)
-        print(f"- 시험 글 {n}편과 결과 줄을 실행 첨부용 폴더에 남겼다(저장소 밖)")
+        n = save_reports(reps, rows, save, raws)
+        print(f"- 시험 글 {n}편과 결과 줄 · 가공 전 글을 실행 첨부용 폴더에 남겼다(저장소 밖)")
 
 
 if __name__ == "__main__":

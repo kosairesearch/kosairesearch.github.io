@@ -113,6 +113,49 @@ eq("따옴표 앞 역슬래시", cm("'도타: 용의 피', 'X-Men \\'97' 등"), 
 eq("꺾쇠 안 따옴표는 그대로", cm("<'오징어 게임'>은 흥행했다"), "<'오징어 게임'>은 흥행했다")
 eq("닫힌 꺾쇠 뒤 조각은 지운다", cm('<세브란스: 단절> 흥행 뒤 제출">하며'), "<세브란스: 단절> 흥행 뒤 제출하며")
 
+# 2026-11-09 — 하이쿠 5.5 가 자기 문장 바로 뒤에 인용 표시로 검색 결과 원문을 덧붙였다. 표시만 지우면 같은 사실이 원문째
+# 두 번 붙는다('…제공한다동사는 …'). 덧붙인 것만 감싼 글째 지우고, 자기 문장을 감싼 것은 글을 남긴다(drop_cite_quotes).
+print("\n── 인용 표시가 덧붙인 원문은 감싼 글째 지운다 (drop_cite_quotes) ──")
+dq = C.drop_cite_quotes
+CT = "cite"
+def ct(i, body):
+    return f'<{CT} index="{i}">{body}</{CT}>'
+eq("문장 끝 '다' 바로 뒤 — 지운다", cm("PG와 VAN 서비스를 제공한다" + ct("6-3", "동사는 온라인결제 사업부로 운영 중이며 PG 서비스를 제공함.") + ". 2025년 매출은"),
+   "PG와 VAN 서비스를 제공한다. 2025년 매출은")
+eq("띄어 쓴 뒤 · 잘린 조각 — 지운다", cm("매출의 3배를 넘는다 " + ct("1-2", "수주잔고가 2분기 말 기준 26조원을 넘었고 올해 회사가 예상한 수준이") + "."),
+   "매출의 3배를 넘는다.")
+eq("칸 끝에서 마침표 없이 — 마침표를 남긴다", cm("영업이익이 늘었다" + ct("2", "영업이익이 늘어난 것으로 나타났다")), "영업이익이 늘었다.")
+eq("자기 주장을 감쌈(문장 중간) — 글을 남긴다", cm("매출은 " + ct("3-1", "1,797억원이다") + "."), "매출은 1,797억원이다.")
+eq("자기 문장을 통째로 감쌈(문장 시작) — 글을 남긴다",
+   cm("3분기 연속 증가했다. " + ct("4", "2분기 매출은 4조 7,248억원으로 늘었다") + ". 다음"), "3분기 연속 증가했다. 2분기 매출은 4조 7,248억원으로 늘었다. 다음")
+eq("문장의 일부(조사로 이어짐) — 글을 남긴다", cm("기업가치 제고 계획은 " + ct("5", "배당성향 40% 이상 유지") + "를 목표로 한다."),
+   "기업가치 제고 계획은 배당성향 40% 이상 유지를 목표로 한다.")
+eq("문장 중간이라도 앞 문장의 숫자를 되풀이한 영문 원문 — 지운다",
+   cm("The Q2-end backlog passed KRW 26 trillion, more than three times the KRW 8 trillion energy revenue the company had projected for 2026"
+      + ct("7", "the backlog passed 26 trillion won at the end of Q2, more than three times the energy revenue projected for 2026") + "."),
+   "The Q2-end backlog passed KRW 26 trillion, more than three times the KRW 8 trillion energy revenue the company had projected for 2026.")
+eq("이어지는 절이 새 숫자를 담으면 — 글을 남긴다(소넷 5.5 시험 글)",
+   cm("2026년 2분기 영업이익은 전년 동기 대비 21.1% 감소했고, " + ct("9", "3분기 잠정 영업이익도 전년 동기 대비 12.64% 감소했다.") + " 영업이익률은"),
+   "2026년 2분기 영업이익은 전년 동기 대비 21.1% 감소했고, 3분기 잠정 영업이익도 전년 동기 대비 12.64% 감소했다. 영업이익률은")
+eq("영문 술어를 감싼 절 — 글을 남긴다",
+   cm("It noted that third-quarter results " + ct("6-2", "exceeded market expectations of KRW 37.9 billion in revenue and KRW 4.7 billion in operating profit.") + " Broker"),
+   "It noted that third-quarter results exceeded market expectations of KRW 37.9 billion in revenue and KRW 4.7 billion in operating profit. Broker")
+eq("표시가 낱말을 가름('…한다<cite>는 점이') — 글을 남긴다",
+   cm("교체용 예비품도 회사가 국내에서 공급한다" + ct("3", "는 점이 수요 기반으로 꼽힌다.")), "교체용 예비품도 회사가 국내에서 공급한다는 점이 수요 기반으로 꼽힌다.")
+eq("문장 중간의 이어지는 절 — 글을 남긴다(겹침이 작다)",
+   cm("2분기 매출은 4조 7,248억원으로 늘었고, " + ct("8", "2분기 실적은 시장 예상치를 웃돈 것으로 보도됐다") + "."),
+   "2분기 매출은 4조 7,248억원으로 늘었고, 2분기 실적은 시장 예상치를 웃돈 것으로 보도됐다.")
+_raw = '{"business": {"ko": "서비스를 제공한다' + f'<{CT} index=\\"6-3\\">동사는 서비스를 제공함.</{CT}>' + '. 끝", "en": "' \
+       + f'<{CT} index=\\"1\\">It provides PG services.</{CT}>' + '"}}'
+eq("응답 원문(JSON 글) — 칸 시작의 감싼 글은 남기고 덧붙인 원문만 지운다", dq(_raw),
+   '{"business": {"ko": "서비스를 제공한다. 끝", "en": "' + f'<{CT} index=\\"1\\">It provides PG services.</{CT}>' + '"}}')
+eq("표시가 없으면 그대로", dq("매출은 1,797억원이다."), "매출은 1,797억원이다.")
+import types as _types  # noqa: E402
+import generate_reports as _G  # noqa: E402
+_msg = _types.SimpleNamespace(content=[_types.SimpleNamespace(type="text", text='{"ko": "증가했다'),
+                                       _types.SimpleNamespace(type="text", text=f'<{CT} index=\\"2\\">매출이 증가한 것으로 나타났다</{CT}>' + '."}')])
+eq("응답에서 글을 꺼낼 때(extract_text) 덧붙인 원문을 지운다", _G.extract_text(_msg), '{"ko": "증가했다."}')
+
 
 def drules(ko, en="ok"):
     return sorted({h["rule"] for h in C.defects({"lead": {"ko": ko, "en": en}})})
