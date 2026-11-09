@@ -2344,6 +2344,51 @@ def corrections_env():
     return out
 
 
+def filed_env():
+    """REPORT_FILED='종목:접수일(YYYYMMDD),…' — 공시 트리거가 원래 보고서(정정 아님)로 고른 종목 → {종목: 접수일}."""
+    out = {}
+    for part in os.getenv("REPORT_FILED", "").replace(" ", "").split(","):
+        tk, _, d = part.partition(":")
+        if tk and len(d) == 8 and d.isdigit():
+            out[tk] = d
+    return out
+
+
+# ── 공시 당일 — 재무 조회에 새 분기가 아직 없으면 기다린다 ─────────────────
+# 2026-11-06 이렘은 3분기보고서를 낸 그날 오후 공시 트리거가 골랐는데, DART 재무 조회에 3분기가 아직 없어
+# 반기까지의 숫자로 리포트를 다시 썼다. 리포트 날짜가 공시보다 늦어졌으니 공시 트리거는 그 공시를 반영한
+# 것으로 보고 다시 고르지 않는다 — 다음 정기보고서(이듬해 3월)까지 3분기가 빠진 채 남는다. 같은 날 같은
+# 실행의 다른 세 종목은 3분기가 들어 있었다(조회에 들어오는 시각이 회사마다 다르다).
+# 그래서 원래 보고서로 다시 쓰는 종목은 새로 받은 숫자의 마지막 분기가 저장된 리포트보다 뒤가 아니면 이번에는
+# 주문하지 않는다. 리포트를 쓰지 않으니 공시 트리거가 다음 실행에서 다시 고른다. 공시 뒤 WAIT_QUARTER_DAYS 일이
+# 지나도 그대로면 있는 숫자로 쓴다(조회가 끝내 그 분기를 주지 않는 회사가 30일 동안 하루 세 번 DART 호출만
+# 태우지 않게). 결산월이 다른 회사(신영증권 3월 결산 — 11월 공시가 반기)도 마지막 분기가 한 칸 나아가므로 그대로 쓴다.
+WAIT_QUARTER_DAYS = int(os.getenv("REPORT_WAIT_QUARTER_DAYS", "3") or "0")
+
+
+def _last_quarter(q):
+    qs = (q or {}).get("quarterly") or []
+    last = qs[-1] if qs and isinstance(qs[-1], dict) else {}
+    return str(last.get("q") or "")
+
+
+def new_quarter_missing(tk, q, filed, today=None):
+    """원래 보고서로 다시 쓰는 종목의 새 정량에 그 공시의 분기가 아직 없으면 사유를, 쓰면 되면 None."""
+    old = stored_quant(tk)
+    o, n = _last_quarter(old), _last_quarter(q)
+    if not o or not n or n > o:
+        return None
+    today = today or S.today_kst()
+    try:
+        waited = (today - datetime.datetime.strptime(filed, "%Y%m%d").date()).days
+    except ValueError:
+        return None
+    if waited > WAIT_QUARTER_DAYS:
+        log(f"  · ⚠️ {tk} 공시({filed}) 뒤 {waited}일이 지나도 재무 조회의 마지막 분기가 {n} 이다 — 있는 숫자로 쓴다")
+        return None
+    return f"재무 조회에 공시({filed})의 분기가 아직 없다 — 마지막 분기 {n}(저장된 리포트와 같음)"
+
+
 def stored_quant(tk):
     """저장된 리포트의 정량. 없거나 읽지 못하면 None."""
     try:
@@ -2500,8 +2545,9 @@ def submit(cl, as_of):
 
     fill_mode = os.getenv("REPORT_FILL_TO", "0") not in ("0", "")
     backfill = os.getenv("REPORT_BACKFILL") == "1"
+    filed = {tk: d for tk, d in filed_env().items() if tk in picked and tk not in corr}
     reqs, models, tickers = [], {}, []
-    no_data, held, broken = [], [], []
+    no_data, held, broken, waiting = [], [], [], []
     for st in targets:
         tk = st["ticker"]
         if tk in errors:
@@ -2514,6 +2560,13 @@ def submit(cl, as_of):
             log(f"  · ⚠️ {tk} 정량 데이터 없음 — 제외")
             no_data.append(tk)
             continue
+        # 공시 당일 — 재무 조회에 그 공시의 분기가 아직 없으면 쓰지 않고 다음 실행에 맡긴다(위 new_quarter_missing).
+        if tk in filed:
+            why = new_quarter_missing(tk, q, filed[tk])
+            if why:
+                log(f"  · ⏳ {tk} {st['name']} {why} — 이번에는 주문하지 않고 다음 실행에서 다시 본다")
+                waiting.append(tk)
+                continue
         # 숫자가 항등식에 걸리면 그 종목은 글을 쓰지 않는다. 틀린 근거로 쓴 글은
         # 나중에 숫자만 고쳐도 본문에 그대로 남고, 다시 만들려면 돈이 또 든다.
         # 전체를 멈추지는 않는다 — 한 회사의 공시 오류가 2,600개를 세울 이유는 없다.
@@ -2559,6 +2612,9 @@ def submit(cl, as_of):
         log(f"- 항등식에 걸려 보류 {len(held)}개 → data/reports_v2_hold/: {','.join(held[:30])}")
     if broken:
         log(f"- 수집 예외 {len(broken)}개(다음 run 에 다시): {','.join(broken[:30])}")
+    if waiting:
+        result["waiting"] = waiting
+        log(f"- 재무 조회에 새 분기가 아직 없어 다음 실행으로 넘긴 종목 {len(waiting)}개: {','.join(waiting[:30])}")
     if not reqs:
         log("❌ 제출할 요청이 없습니다.")
         return result
