@@ -574,6 +574,11 @@ def bs_link(d, anchor):
     return ("equity" in keys and len(same) == len(keys)), keys
 
 
+def _fsset(d):
+    """이 보고서와 이어 붙일 수 있는 작성 기준 — 제 표시와, 전기 칸으로 확인한 그 전해 기준(_fs_also)."""
+    return {f for f in ((d or {}).get("_fs"), (d or {}).get("_fs_also")) if f}
+
+
 def _cum_eps(d):
     """누적 주당이익. 확실할 때만 돌려주고, 아니면 None.
 
@@ -710,9 +715,11 @@ def collect_quant(dart, ticker, krx_row, stock):
         return _fin_cache[k]
 
     def fin(year, code):
-        """분기 보고서는 작성 기준 표시가 그 전해 사업보고서와 다르면 숫자로 다시 본다(basis_link 참고).
-        전기 칸이 지난해 공시를 그대로 되풀이하면 그 전해 사업보고서의 기준으로 맞춘다 — 분기 표의 뺄셈 ·
-        TTM · 주당지표가 모두 이 표시를 보고 이어 붙인다."""
+        """분기 보고서는 작성 기준 표시가 그 전해 사업보고서와 다르면 숫자로 다시 본다(bs_link · is_link 참고).
+        전기 칸이 지난해 공시를 그대로 되풀이하면 그 전해 사업보고서의 기준(_fs_also)으로도 이어 붙일 수 있다고
+        적는다. 제 표시(_fs)는 그대로 둔다 — 같은 해 사업보고서가 그 표시를 달고 오면 그쪽과도 이어져야 한다
+        (한양증권 2025 반기 · 3분기는 별도 표시, 2024 연간은 연결, 2025 연간은 다시 별도 — 표시를 하나로 바꾸면
+        2분기를 채우는 대신 4분기가 빈다. 2026-11-09 실제 재무 88종목에서 70칸이 그렇게 비었다)."""
         d = _raw(year, code)
         if d and code in Q_CODE and (year, code) not in _aligned:
             _aligned.add((year, code))
@@ -725,8 +732,10 @@ def collect_quant(dart, ticker, krx_row, stock):
                 if b_ok and i_ok:
                     log(f"  · {year} {QNAME[code]} 보고서 — 작성 기준 표시({d['_fs']})가 {year - 1} 연간({a_fs})과 "
                         f"다르지만 전기 칸({'·'.join(b_keys + i_keys)})이 지난해 공시와 같아 같은 기준으로 본다")
-                    d["_fs_shown"] = d["_fs"]
-                    d["_fs"] = a_fs
+                    d["_fs_also"] = a_fs
+                else:
+                    log(f"  · {year} {QNAME[code]} 보고서 — 작성 기준 표시({d['_fs']})가 {year - 1} 연간({a_fs})과 다르고 "
+                        f"전기 칸도 {'재무상태표가' if not b_ok else '손익이'} 지난해 공시와 달라 표시대로 둔다")
         return d
 
     ann = {a["year"]: a for a in annual}
@@ -755,10 +764,10 @@ def collect_quant(dart, ticker, krx_row, stock):
         # 표시가 달라도 이 보고서의 전기 누적 칸이 지난해 같은 기간 공시와 같으면 같은 숫자를 빼는 셈이라 성립한다
         # (지난해 4분기에 처음 연결한 회사 — 지난해 분기는 별도뿐이고 올해는 연결이다).
         dp, fs = fin(py, code), d.get("_fs")
-        if dp is not None and dp.get("_fs") != fs and not is_link(d, dp)[0]:
+        if dp is not None and not (_fsset(d) & _fsset(dp)) and not is_link(d, dp)[0]:
             log(f"  · {cur} {qname} 보고서 — 작성 기준({fs})이 {py} 같은 기간({dp.get('_fs')})과 달라 채택하지 않는다")
             continue
-        if base_fs is not None and fs != base_fs:
+        if base_fs is not None and base_fs not in _fsset(d):
             log(f"  · {cur} {qname} 보고서 — 작성 기준({fs})이 {py} 연간({base_fs})과 달라 채택하지 않는다")
             continue
         cur_qi, d_cur = qi, d
@@ -801,7 +810,7 @@ def collect_quant(dart, ticker, krx_row, stock):
         예: 상상인(038540)은 3분기 누적 5,225억인데 사업보고서 연간이 4,186억으로
             잡혀 4분기 매출이 −1,039억으로 나왔다.
         """
-        if fa is not None and fb is not None and fa != fb:
+        if fa and fb and not (fa & fb):          # 기준 집합(_fsset)이 겹치지 않으면 섞인 뺄셈이다
             return None
         return _sub(a, b)
 
@@ -813,11 +822,11 @@ def collect_quant(dart, ticker, krx_row, stock):
         else:
             ds = [fin(year, c) for c in Q_CODE]
             c1, ch, c9 = (_cum(d, key) for d in ds)
-            f1, fh, f9 = ((d or {}).get("_fs") for d in ds)
+            f1, fh, f9 = (_fsset(d) for d in ds)
         return {f"{year}Q1": c1,
                 f"{year}Q2": diff(ch, c1, fh, f1),
                 f"{year}Q3": diff(c9, ch, f9, fh),
-                f"{year}Q4": diff(fy_total, c9, fy_fs, f9)}
+                f"{year}Q4": diff(fy_total, c9, {fy_fs} if fy_fs else None, f9)}
 
     def series(key, fy_key, years, getter=None):
         s = {}
