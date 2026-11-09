@@ -354,8 +354,8 @@ eq("품질 등급 — 교정이 그 문장만 고친다", {h["level"] for h in C
 eq("교정 지시에 규칙 설명이 있다", ("reader:" in C._RULE_TEXT, "dup:" in C._RULE_TEXT), (True, True))
 # 2026-11-09 — 5.5 세대가 글을 쓴 과정 · 지시문 · 다른 회사 해명을 본문에 옮겼고(하이쿠 시험 85~100%), 3분기 보고서를 낸 뒤 다시 쓴
 # 리포트가 그 보고서를 '다음 확인 일정'으로 썼다(PS일렉트로닉스). 지시문을 고친 뒤 쓴 리포트(작성 시각 PROCESS_FROM 부터)에만 건다.
-print("\n── 글을 쓴 과정(process) · 이미 공시된 분기를 다음 일정으로(stale_cp) — 2026-11-09 17:40(PROCESS_FROM) 뒤 작성분 ──")
-_P = {"ticker": "000001", "model": "claude-haiku-5-5", "reportDate": "2026-11-09", "reportTs": "2026-11-09 19:00"}
+print("\n── 글을 쓴 과정(process) · 이미 공시된 분기를 다음 일정으로(stale_cp) — 2026-11-09 지시문으로 쓴 글(textRules) ──")
+_P = {"ticker": "000001", "model": "claude-haiku-5-5", "reportDate": "2026-11-09", "reportTs": "2026-11-09 19:00", "textRules": 2}
 
 
 def _pr(ko, en="ok", extra=None):
@@ -404,9 +404,13 @@ eq("지난 보고서를 지난 일로 서술하면 그대로",
    _pr("가장 가까운 확인 지점은 2026년 사업보고서이며, 2026년 반기보고서는 2026년 8월 14일에 제출됐다.", extra=_q3), [])
 eq("재료가 2분기까지면 3분기 분기보고서는 다음 일정이다", _cp("2026년 11월 중순", "3분기 분기보고서 제출 시점이다.",
    {"quant": {"quarterly": [{"q": "2026Q2"}], "annual": [{"year": 2025}]}}), [])
-eq("새로 쓰는 글에만 — PROCESS_FROM 전에 쓴 리포트 · 업종 분석에는 걸지 않는다",
-   [bool([h for h in C.check(dict(_P, business={"ko": "이번 조사에서 확인하지 못했다.", "en": "x"}, **x)) if h["rule"] == "process"])
-    for x in ({"reportTs": "2026-11-09 16:36"}, {"reportTs": "2026-11-09 18:00"}, {"ticker": ""})], [False, True, False])
+eq("새 지시문으로 쓴 글(textRules)과 시험 글에만 — 옛 지시문의 리포트 · 업종 분석에는 걸지 않는다",
+   [bool([h for h in C.check(dict({k: v for k, v in _P.items() if k != "textRules"}, business={"ko": "이번 조사에서 확인하지 못했다.", "en": "x"}, **x))
+          if h["rule"] == "process"])
+    for x in ({"reportTs": "2026-11-09 16:36"}, {"reportTs": "2026-11-09 21:00"}, {"textRules": 2}, {"textRules": 2, "ticker": ""},
+              {"reportDate": "", "reportTs": ""})], [False, False, True, False, True])
+eq("생성기 둘이 저장하는 글에 textRules 를 단다", [m for m in ("generate_reports_v2", "generate_reports_batch")
+   if "TEXT_RULES" not in (ROOT_S / f"{m}.py").read_text(encoding="utf-8")], [])
 eq("품질 등급 · 교정 지시에 규칙 설명", ({h["level"] for h in C.check(dict(_P, business={"ko": "이번 검색으로 확인되지 않았다.", "en": "x"}))},
    "process:" in C._RULE_TEXT, "stale_cp:" in C._RULE_TEXT), ({"품질"}, True, True))
 import fin_material as _FM  # noqa: E402

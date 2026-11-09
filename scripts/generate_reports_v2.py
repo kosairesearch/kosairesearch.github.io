@@ -2956,6 +2956,8 @@ def collect(cl, as_of, state):
                 "reportTs": now.strftime("%Y-%m-%d %H:%M"),
                 "dataDate": state.get("dataDate") or data.get("dataDate", ""),
                 "quant": (state.get("quant") or {}).get(tk, {}),
+                # 이 글을 쓴 지시문이 지킨 본문 규칙의 판 — 검사가 그 판의 규칙(글을 쓴 과정 · 지난 분기 일정)을 이 글에만 건다.
+                "textRules": check_report_text.TEXT_RULES,
             })
             # 한자 → 한글. 프롬프트가 금지해도 '전년比'·'-253億원' 처럼 샌다(228개 리포트).
             # 읽는 사람이 못 읽는 글자는 그 자체로 결함이라 저장 전에 고친다.

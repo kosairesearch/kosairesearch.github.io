@@ -536,6 +536,7 @@ def collect(cl, as_of):
                 "sector": st.get("sector", ""), "categories": st.get("categories", []),
                 "market": st.get("market", ""),
                 "reportDate": report_date, "reportTs": report_ts,
+                "textRules": C.TEXT_RULES,       # 이 글을 쓴 지시문의 본문 규칙 판 — 검사가 그 판의 규칙을 이 글에만 건다
                 "dataDate": data.get("dataDate", ""),
             })
             cand[tk] = C.prepare(fix_shape(rep))

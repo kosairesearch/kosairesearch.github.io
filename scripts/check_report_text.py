@@ -278,7 +278,7 @@ def clean_markup(s):
 
 
 _NOT_TEXT = {"sources", "quant", "ticker", "name", "name_en", "market", "sector", "categories",
-             "reportDate", "reportTs", "dataDate", "v", "hasPaid", "model", "usage", "meta", "asOf"}
+             "reportDate", "reportTs", "dataDate", "v", "hasPaid", "model", "usage", "meta", "asOf", "textRules"}
 _KS_OK = set("웻몐퀜")          # 2,350자 밖이지만 맞는 말 — 웻 스테이션 · 쓰촨성 몐양 · 초전도 코일 퀜치
 _TAG = re.compile(r"<\s*/?\s*(?:sup|sub|citation|cite|br|span|div|p|b|i|em|strong|u|small|mark|ref|source|li|ul|ol|table|tr|td|h[1-6])"
                   r"\b[^<>]{0,160}>|<a\s[^<>]*href|\b(?:index|href|src|class)\s*=\s*\"|\*\*|&(?:amp|lt|gt|quot|nbsp|#\d+);"
@@ -731,9 +731,10 @@ def new_rule_hits(rep):
 # 정확하다' · '목표주가는 확인되지 않아 인용하지 않는다' · '이는 대한전선의 수치로 대원전선 실적과 섞지 않는다' 처럼 글을 쓴 과정과
 # 지시문을 본문에 옮긴다. 사이트의 소넷 5 리포트는 2,251편 중 3% 였는데, 소넷 5.5 는 22편 전부, 하이쿠 시험은 85~100%(편당 3~5문장)였다.
 # 또 3분기 보고서를 낸 뒤 다시 쓴 리포트(PS일렉트로닉스)가 그 3분기 보고서를 '다음 확인 일정'으로 썼다(재료에 3분기가 들어 있었다).
-# 둘 다 품질 등급이라 교정이 그 문장만 고친다. 지시문에 이 규칙을 적은 뒤에 쓴 리포트(작성 시각 PROCESS_FROM 부터)에만 건다 —
-# 그 전 글은 공시로 다시 쓸 때 바뀐다. 면책 문장('이 리포트는 정보 제공 목적이며 …')은 걸지 않는다.
-PROCESS_FROM = "2026-11-09 17:40"     # 고친 지시문을 병합한 때 — 그 뒤에 쓴 리포트부터
+# 둘 다 품질 등급이라 교정이 그 문장만 고친다. 이 규칙을 적은 지시문으로 쓴 리포트에만 건다 — 생성기(리포트 v2 · 옛 형식 배치)가
+# 저장하는 글에 'textRules': TEXT_RULES 를 단다(작성 시각으로 가르면 병합 시각에 따라 옛 지시문의 글이 걸린다). 그 전 글은 공시로
+# 다시 쓸 때 바뀐다. 면책 문장('이 리포트는 정보 제공 목적이며 …')은 걸지 않는다.
+TEXT_RULES = 2
 _PROCESS_KO = re.compile(
     r"이번\s*(?:검색|조사|확인|리포트)"
     r"|검색(?:으로|에서)(?:는|도)?\s*(?:확인|찾지|파악)"
@@ -763,11 +764,12 @@ _CP_CUE = re.compile(r"확인\s*지점|다음\s*확인|확인할|보는\s*것|�
 
 
 def process_rules_apply(rep):
-    """글을 쓴 과정 · 지난 분기 일정 규칙을 거는가 — 종목 리포트이고 작성 시각이 PROCESS_FROM 뒤면."""
+    """글을 쓴 과정 · 지난 분기 일정 규칙을 거는가 — 종목 리포트이고, 이 규칙을 적은 지시문으로 썼으면(textRules)."""
     if not isinstance(rep, dict) or not rep.get("ticker"):
         return False
-    ts = str(rep.get("reportTs") or rep.get("reportDate") or "")
-    return not ts or ts >= PROCESS_FROM           # 작성 시각이 없으면(시험 글) 건다
+    if (rep.get("textRules") or 0) >= TEXT_RULES:
+        return True
+    return not (rep.get("reportTs") or rep.get("reportDate"))   # 작성 시각이 없으면(비용 시험의 글) 건다
 
 
 def _stale_report(text, latest_q, latest_y, year):
@@ -1219,8 +1221,8 @@ _WHY_EXTRA = {
     "no_use": "협의 없이 쓰지 않는 사이트(치킨스탁)의 이름",
     "reader": "독자 · 투자자를 부르거나 권하는 문장(2026-11-08 뒤 작성분)",
     "dup": "다른 칸의 문장을 글자 그대로 되풀이(2026-11-08 뒤 작성분)",
-    "process": "글을 쓴 과정 · 지시문 · 다른 회사 해명(2026-11-09 17:40 뒤 작성분)",
-    "stale_cp": "이미 공시된 분기를 다음 일정으로 씀(2026-11-09 17:40 뒤 작성분)",
+    "process": "글을 쓴 과정 · 지시문 · 다른 회사 해명(2026-11-09 지시문으로 쓴 글)",
+    "stale_cp": "이미 공시된 분기를 다음 일정으로 씀(2026-11-09 지시문으로 쓴 글)",
 }
 
 
