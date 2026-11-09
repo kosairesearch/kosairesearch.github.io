@@ -47,7 +47,7 @@ jobs:
           MAX_NEW_REPORTS: ${{ inputs.max_new || '20' }}
         run: python scripts/new_listings.py
 
-      - name: 4) 신규 종목 리포트 생성 (batch + Sonnet)
+      - name: 4) 신규 종목 리포트 생성 (batch + Haiku 5.5)
         if: steps.detect.outputs.has_new == '1'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
