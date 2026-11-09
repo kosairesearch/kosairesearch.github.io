@@ -445,6 +445,10 @@ def extract_text(message):
             parts.append(block.text)
     text = "".join(parts)
     # 웹검색 인용 태그(<cite index="..">..</cite>)가 본문에 새는 것 제거
+    # 자기 문장 뒤에 덧붙인 인용 원문은 감싼 글째 지운다(2026-11-09 — 표시만 지우면 '…제공한다동사는 …'처럼 원문이 두 번
+    # 붙는다 · check_report_text.drop_cite_quotes). 남은 인용 표시는 표시만 지우고 감싼 글은 남긴다.
+    import check_report_text as _C
+    text = _C.drop_cite_quotes(text)
     return re.sub(r"</?cite[^>]*>", "", text)
 
 

@@ -193,6 +193,54 @@ _MARKUP = (
 )
 
 
+# ── 인용 표시가 덧붙인 원문 — 감싼 글까지 지운다(2026-11-09) ─────────────────────────────────────────
+# 하이쿠 5.5 가 자기 문장을 쓴 바로 뒤에 <cite index="…">검색 결과 원문</cite> 을 덧붙인다 — '…PG와 VAN 서비스를
+# 제공한다<cite …>동사는 … 서비스를 제공함.</cite>. 2025년 …'. 표시만 지우면(감싼 글은 남긴다) 같은 사실이 원문째 두 번,
+# 마침표 없이 붙는다('제공한다동사는 …'). 글자 수를 적은 지시문 시험(11/9) 20편 중 4편이 표시를 썼고(143곳), 자리는
+#   · 문장 끝 '다' 바로 뒤(띄어쓰기 포함) 69곳 — 모두 덧붙인 원문이다(중간에 잘린 조각 포함 · NHN KCP · 우진)
+#   · 문장 시작 47곳 — 자기 문장을 통째로 감쌌다(두산에너빌리티). 글을 남긴다
+#   · 문장 중간 27곳 — 24곳은 자기 문장의 일부('계획은 <cite>…</cite>를 목표로 한다'), 3곳만 덧붙인 원문이었고 앞 문장과
+#     겹침이 0.62~0.68 이었다(나머지는 0.40 이하).
+# 그래서 앞 글이 문장 끝 '다'로 끝나면 감싼 글까지 지우고, 그 밖에는 감싼 글이 앞 문장과 크게 겹칠 때(낱말 · 숫자의 절반
+# 이상 · 5개 이상)만 지운다. 나머지는 지금처럼 표시만 지우고 글을 남긴다. 응답의 원문(JSON 글)에도, 읽은 칸 글에도 쓴다.
+_CITE = re.compile(r"(\s*)<(?:antml:)?cite\b[^<>]*>(.*?)</(?:antml:)?cite>", re.S | re.I)
+_CITE_TOK = re.compile(r"\d[\d,.]*\d|\d|[가-힣]{2,}|[A-Za-z]{3,}")
+_CITE_START = re.compile(r'(?<!\\)"|\.\s|\n')       # 문장 · 칸의 시작 — 마침표 뒤 · 줄바꿈 · JSON 글의 따옴표(\" 는 글 안)
+
+
+def _cite_toks(s):
+    out = set()
+    for x in _CITE_TOK.findall(s):
+        x = x.replace(",", "")
+        out.add(x[:2] if "가" <= x[0] <= "힣" else x.lower())   # 한국어는 앞 두 글자 — '수주잔고가' · '수주잔고는' 을 같게
+    return out
+
+
+def drop_cite_quotes(s):
+    """자기 문장 뒤에 덧붙인 인용 원문(<cite>…</cite>)을 감싼 글째 지운다. 나머지 인용 표시는 그대로 둔다(clean_markup 이
+    표시만 지운다). 문장 끝 '다' 뒤에서 지웠는데 다음 글자가 문장부호가 아니면 마침표를 남긴다."""
+    if not isinstance(s, str) or "cite" not in s:
+        return s
+
+    def rep(m):
+        pre = m.string[:m.start()]
+        cut = max((x.end() for x in _CITE_START.finditer(pre)), default=0)
+        prev = re.sub(r"<[^<>]*>", "", pre[cut:]).replace('\\"', '"').strip()
+        if not prev or prev[-1] in ".!?:;{[(\"'”’":
+            return m.group(0)                                  # 문장 시작 — 자기 문장을 감쌌다
+        inner = m.group(2)
+        nxt = m.string[m.end():m.end() + 1]
+        if re.search(r"[가-힣]다$", prev):
+            return "" if nxt and nxt in ".,;:!?)" else "."       # 글 끝('')이면 마침표를 남긴다
+        a = _cite_toks(inner)
+        shared = len(a & _cite_toks(prev))
+        if a and shared >= 5 and shared / len(a) >= 0.5:
+            return ""
+        return m.group(0)
+
+    return _CITE.sub(rep, s)
+
+
 _QGT = re.compile(r"[\"']>")
 
 
@@ -205,7 +253,7 @@ def clean_markup(s):
     """태그·인용 표시·마크다운·HTML 이름표를 지운다. 감싼 글은 남긴다. 결정적이라 저장 전에 늘 돌린다."""
     if not isinstance(s, str) or not s:
         return s
-    t = s
+    t = drop_cite_quotes(s)
     for pat, rep in _MARKUP:
         t = pat.sub(rep, t)
     for a, b in reversed(_stray_qgt(t)):
