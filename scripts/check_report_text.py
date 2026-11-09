@@ -733,7 +733,7 @@ def new_rule_hits(rep):
 # 또 3분기 보고서를 낸 뒤 다시 쓴 리포트(PS일렉트로닉스)가 그 3분기 보고서를 '다음 확인 일정'으로 썼다(재료에 3분기가 들어 있었다).
 # 둘 다 품질 등급이라 교정이 그 문장만 고친다. 지시문에 이 규칙을 적은 뒤에 쓴 리포트(작성 시각 PROCESS_FROM 부터)에만 건다 —
 # 그 전 글은 공시로 다시 쓸 때 바뀐다. 면책 문장('이 리포트는 정보 제공 목적이며 …')은 걸지 않는다.
-PROCESS_FROM = "2026-11-09 18:00"
+PROCESS_FROM = "2026-11-09 17:40"     # 고친 지시문을 병합한 때 — 그 뒤에 쓴 리포트부터
 _PROCESS_KO = re.compile(
     r"이번\s*(?:검색|조사|확인|리포트)"
     r"|검색(?:으로|에서)(?:는|도)?\s*(?:확인|찾지|파악)"
@@ -751,13 +751,14 @@ _PROCESS_EN = re.compile(
     r"|\bdescribed\s+(?:only\s+)?qualitatively\b|\bqualitatively\s+only\b"
     r"|\bthis\s+(?:report|section)\s+(?:treats|covers|does not|did not|uses|describes|discusses|focuses)\b"
     r"|\bnot\s+(?:cited|quoted|attributed)\s+here\b|\bnot\s+(?:to\s+be\s+)?mixed\s+with\b|\bnot\s+the\s+subject\s+of\s+this\s+report\b", re.I)
-_EN_DISCLAIMER = re.compile(r"information(?:al)?\s+(?:purposes\s+)?only|investment\s+(?:advice|recommendation|decision)"
-                            r"|buy\s+or\s+sell|not\s+an\s+offer", re.I)
+_EN_DISCLAIMER = re.compile(r"information(?:al)?\s+(?:purposes\s+)?only|investment\s+(?:advice|recommendation|decision|opinion)"
+                            r"|buy\s+or\s+sell|not\s+an\s+offer|target\s+price", re.I)
 # 이미 공시된 분기를 '다음 확인 일정'으로 쓴 것 — 체크포인트(시점과 내용 첫머리)와, 확인 지점을 말하는 문장만 본다
 # (실적 분석이 '3분기 분기보고서 기준 …'처럼 낸 보고서를 근거로 드는 것은 맞다).
 _CP_Q = re.compile(r"(?:(\d{4})\s*년\s*)?([1-4])\s*분기\s*(?:분기\s*)?(?:잠정\s*)?(?:보고서|실적\s*(?:발표|공시)?)")
 _CP_H = re.compile(r"(?:(\d{4})\s*년\s*)?반기\s*보고서")
 _CP_A = re.compile(r"(\d{4})\s*년\s*(?:연간\s*)?사업\s*보고서")
+_CP_DONE = re.compile(r"\s*(?:은|는|이|가)?\s.{0,30}?(?:제출됐|제출되었|제출했|나왔|공시됐|공시되었|공시했|발표됐|발표되었|발표했)")
 _CP_CUE = re.compile(r"확인\s*지점|다음\s*확인|확인할|보는\s*것|볼\s*것|점검할|지켜볼")
 
 
@@ -777,24 +778,24 @@ def _stale_report(text, latest_q, latest_y, year):
     for m in _CP_Q.finditer(text):
         key = (int(m.group(1) or year), int(m.group(2)))
         if latest_q and key <= latest_q:
-            past.append(m.group(0))
+            if not _CP_DONE.match(text, m.end()):          # '2025년 3분기 실적은 11월 13일에 발표됐다' — 시점 참고
+                past.append(m.group(0))
         else:
             future = True
     for m in _CP_H.finditer(text):
         key = (int(m.group(1) or year), 2)
         if latest_q and key <= latest_q:
-            past.append(m.group(0))
+            if not _CP_DONE.match(text, m.end()):
+                past.append(m.group(0))
         else:
             future = True
     for m in _CP_A.finditer(text):
         if latest_y and int(m.group(1)) <= latest_y:
-            past.append(m.group(0))
+            if not _CP_DONE.match(text, m.end()):
+                past.append(m.group(0))
         else:
             future = True
     return past[0] if past and not future else None
-
-
-_CP_DONE = re.compile(r"\s*(?:은|는|이|가)?\s.{0,30}?(?:제출됐|제출되었|제출했|나왔|공시됐|공시되었|공시했|발표됐|발표되었|발표했)")
 
 
 def _stale_in_sentence(s, latest_q, latest_y, year):
@@ -1218,8 +1219,8 @@ _WHY_EXTRA = {
     "no_use": "협의 없이 쓰지 않는 사이트(치킨스탁)의 이름",
     "reader": "독자 · 투자자를 부르거나 권하는 문장(2026-11-08 뒤 작성분)",
     "dup": "다른 칸의 문장을 글자 그대로 되풀이(2026-11-08 뒤 작성분)",
-    "process": "글을 쓴 과정 · 지시문 · 다른 회사 해명(2026-11-09 18시 뒤 작성분)",
-    "stale_cp": "이미 공시된 분기를 다음 일정으로 씀(2026-11-09 18시 뒤 작성분)",
+    "process": "글을 쓴 과정 · 지시문 · 다른 회사 해명(2026-11-09 17:40 뒤 작성분)",
+    "stale_cp": "이미 공시된 분기를 다음 일정으로 씀(2026-11-09 17:40 뒤 작성분)",
 }
 
 

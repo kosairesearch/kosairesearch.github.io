@@ -354,7 +354,7 @@ eq("품질 등급 — 교정이 그 문장만 고친다", {h["level"] for h in C
 eq("교정 지시에 규칙 설명이 있다", ("reader:" in C._RULE_TEXT, "dup:" in C._RULE_TEXT), (True, True))
 # 2026-11-09 — 5.5 세대가 글을 쓴 과정 · 지시문 · 다른 회사 해명을 본문에 옮겼고(하이쿠 시험 85~100%), 3분기 보고서를 낸 뒤 다시 쓴
 # 리포트가 그 보고서를 '다음 확인 일정'으로 썼다(PS일렉트로닉스). 지시문을 고친 뒤 쓴 리포트(작성 시각 PROCESS_FROM 부터)에만 건다.
-print("\n── 글을 쓴 과정(process) · 이미 공시된 분기를 다음 일정으로(stale_cp) — 2026-11-09 18시 뒤 작성분 ──")
+print("\n── 글을 쓴 과정(process) · 이미 공시된 분기를 다음 일정으로(stale_cp) — 2026-11-09 17:40(PROCESS_FROM) 뒤 작성분 ──")
 _P = {"ticker": "000001", "model": "claude-haiku-5-5", "reportDate": "2026-11-09", "reportTs": "2026-11-09 19:00"}
 
 
@@ -379,6 +379,7 @@ for en, want in [("Whether the company issued guidance was not confirmed in this
                  ("Segment shares are described qualitatively here.", ["process"]),
                  ("Because profit swings widely, this report treats annual and quarterly trends separately.", ["process"]),
                  ("This report is for information only and does not contain a buy or sell opinion.", []),
+                 ("This report does not include an investment opinion or target price.", []),
                  ("Naver's search advertising revenue rose 9%.", [])]:
     eq(f"영어 — {en[:34]}", _pr("정상 문장이다.", en), want)
 _q3 = {"quant": {"quarterly": [{"q": "2026Q2"}, {"q": "2026Q3"}], "annual": [{"year": 2025}]}}
@@ -392,6 +393,9 @@ eq("3분기가 공시됐는데 3분기 분기보고서를 다음 일정으로 �
    _cp("2026년 11월 14일 전후", "3분기 분기보고서 제출 시점으로, 고객별 매출 비중을 확인한다."), ["stale_cp"])
 eq("다음 정기보고서(사업보고서)는 그대로", _cp("2027년 3월", "2026년 사업보고서와 4분기 실적이 나온다."), [])
 eq("내년 시점이 지난해 보고서를 시점 참고로 들면 그대로", _cp("2027년 5월 중순", "(지난해 1분기보고서는 2026년 5월 15일 제출) 2027년 1분기 실적을 본다."), [])
+eq("체크포인트가 지난 실적을 '…에 발표됐다'로 시점 참고만 하면 그대로",
+   _cp("2026년 11월 중순 무렵", "2025년 3분기 실적은 2025년 11월 13일에 발표됐다. 2026년 3분기 실적을 본다.",
+       {"quant": {"quarterly": [{"q": "2026Q2"}], "annual": [{"year": 2025}]}}), [])
 eq("앞으로 나올 보고서와 지난 보고서를 함께 말한 체크포인트는 그대로",
    _cp("2026년 12월", "2026년 3분기 보고서는 이미 나왔고 2026년 사업보고서가 다음이다."), [])
 eq("확인 지점 문장에 지난 분기 보고서를 나열하면 — 잡는다",
@@ -400,7 +404,7 @@ eq("지난 보고서를 지난 일로 서술하면 그대로",
    _pr("가장 가까운 확인 지점은 2026년 사업보고서이며, 2026년 반기보고서는 2026년 8월 14일에 제출됐다.", extra=_q3), [])
 eq("재료가 2분기까지면 3분기 분기보고서는 다음 일정이다", _cp("2026년 11월 중순", "3분기 분기보고서 제출 시점이다.",
    {"quant": {"quarterly": [{"q": "2026Q2"}], "annual": [{"year": 2025}]}}), [])
-eq("새로 쓰는 글에만 — 18시 전에 쓴 리포트 · 업종 분석에는 걸지 않는다",
+eq("새로 쓰는 글에만 — PROCESS_FROM 전에 쓴 리포트 · 업종 분석에는 걸지 않는다",
    [bool([h for h in C.check(dict(_P, business={"ko": "이번 조사에서 확인하지 못했다.", "en": "x"}, **x)) if h["rule"] == "process"])
     for x in ({"reportTs": "2026-11-09 16:36"}, {"reportTs": "2026-11-09 18:00"}, {"ticker": ""})], [False, True, False])
 eq("품질 등급 · 교정 지시에 규칙 설명", ({h["level"] for h in C.check(dict(_P, business={"ko": "이번 검색으로 확인되지 않았다.", "en": "x"}))},
