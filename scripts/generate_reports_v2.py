@@ -345,7 +345,8 @@ def _fin_all(dart, ticker, year, reprt):
                      str(r.get("sj_div", "")),
                      g._num(r.get("thstrm_amount")),
                      g._num(r.get("thstrm_add_amount")),
-                     g._num(r.get("frmtrm_amount"))))      # 전기(직전 연도) — 빠진 해를 채울 때 쓴다
+                     g._num(r.get("frmtrm_amount")),       # 전기(직전 연도) — 빠진 해를 채울 때 쓴다
+                     g._num(r.get("frmtrm_add_amount"))))  # 전기 누적(분기 보고서의 지난해 같은 기간) — 작성 기준 대조(basis_link)
 
     def sj_ok(key, sj):
         if key in ("rev", "rev_ins", "op", "np", "np_owner", "np_nci", "eps_basic"):
@@ -368,16 +369,16 @@ def _fin_all(dart, ticker, year, reprt):
     rows.sort(key=lambda r: 0 if r[2] == "IS" else 1)
 
     # 1차: 표준 account_id 정확 일치 (가장 신뢰)
-    for aid, anm, sj, amt, add, prv in rows:
+    for aid, anm, sj, amt, add, prv, padd in rows:
         for key in ACC_IDS:
             if key in out or amt is None or not sj_ok(key, sj):
                 continue
             if aid in ACC_IDS[key]:
-                out[key] = {"amt": amt, "add": add, "prv": prv}
+                out[key] = {"amt": amt, "add": add, "prv": prv, "padd": padd}
     # 2차: 계정명 폴백 — 포괄손익 계열 행 배제.
     #   np_owner 는 CIS의 '총포괄손익 귀속-지배기업소유주지분'과 행 이름이 같아
     #   오추출 위험이 커서 손익계산서(IS)에서만 명칭 매칭을 허용한다.
-    for aid, anm, sj, amt, add, prv in rows:
+    for aid, anm, sj, amt, add, prv, padd in rows:
         for key in ACC_IDS:
             if key in out or amt is None or not sj_ok(key, sj):
                 continue
@@ -388,7 +389,7 @@ def _fin_all(dart, ticker, year, reprt):
             # 은행 등은 계정명에 로마숫자·번호 접두("IV.영업이익","I.영업수익")가 붙고,
             # 적자 회사는 꼬리에 "(손실)" 이 붙는다 → 정규화한 뒤 비교(_name_hit).
             if _name_hit(key, anm):
-                out[key] = {"amt": amt, "add": add, "prv": prv}
+                out[key] = {"amt": amt, "add": add, "prv": prv, "padd": padd}
     # 지배주주 순이익이 제대로 잡혔는지 본다.
     #
     # 전에는 '|지배주주| ≤ |전체|×1.02' 를 어기면 포괄손익을 잘못 집은 것으로
@@ -435,7 +436,7 @@ def _fin_all(dart, ticker, year, reprt):
                 v = out.get(k)
                 fp.write(f"{k}={'없음' if not v else v['amt']}  ")
             fp.write("\n")
-            for aid, anm, sj, amt, add, prv in rows:
+            for aid, anm, sj, amt, add, prv, padd in rows:
                 if sj == "BS" and ("자본" in anm or "지분" in anm or "총계" in anm):
                     fp.write(f"      BS 행 | {anm} | id={aid} | 당기={amt}\n")
     if not out:
@@ -463,7 +464,7 @@ def _fin_all(dart, ticker, year, reprt):
         dbg = ROOT / "data" / "_debug_eps.txt"
         with open(dbg, "a", encoding="utf-8") as fp:
             fp.write(f"\n### {ticker} {reprt}/{fs}\n")
-            for aid, anm, sj, amt, add, prv in rows:
+            for aid, anm, sj, amt, add, prv, padd in rows:
                 if sj in ("IS", "CIS"):
                     fp.write(f"  {sj:<4} 당기={amt}  누적={add}  | {anm} | {aid}\n")
     return out
@@ -533,6 +534,44 @@ def _cum(d, key):
         return None
     v = d[key]
     return v["add"] if v["add"] is not None else v["amt"]
+
+
+# ── 작성 기준(연결 · 별도) 표시가 달라도 숫자로 같은 기준인지 본다 ─────────────────
+# DART 재무 조회는 보고서마다 연결(CFS) · 별도(OFS) 표시를 붙이는데, 표시만 믿고 뺄셈을 막으면 멀쩡한 분기가
+# 빠진다(2026-11-09 점검 — 9월 전면 갱신 때 반기가 빠진 상장사 리포트 28편의 한 갈래).
+#   · 올해 처음 연결 공시를 낸 회사(이렘 3분기 · 콜마바이오텍 반기) — 지난해까지는 자회사가 없어 별도뿐이었다.
+#     올해 연결의 전기 칸이 지난해 별도 공시와 원 단위까지 같다.
+#   · 연결 자료에 별도 표시가 붙어 온 회사(KT나스미디어 반기 · 3분기) — 지배주주 귀속 순이익이 있고, 재무상태표
+#     전기(지난해 말) 칸이 지난해 연결 사업보고서의 연말 자본과 같다.
+# 그래서 표시 대신 '이 보고서의 전기 칸이 지난해 공시를 그대로 되풀이하는가' 를 본다. 되풀이하면 같은 기준으로
+# 이어 붙일 수 있다. 하나라도 어긋나면(소마젠 2026 반기 — 매출 전기는 별도, 순이익 전기는 연결로 섞여 있다)
+# 지금처럼 채택하지 않는다.
+_LINK_IS = ("rev", "op", "np", "np_owner")
+_LINK_BS = ("equity", "assets", "liab")
+
+
+def _same_amt(a, b):
+    """옮겨 적은 전기 칸은 원 단위까지 같다 — 반올림만 봐준다(0.2%)."""
+    return a is not None and b is not None and abs(a - b) <= max(abs(b) * 0.002, 1)
+
+
+def is_link(d, prev):
+    """(같은가, 견준 계정) — d(올해 분기 보고서)의 전기 누적 칸이 prev(지난해 같은 기간 보고서)의 누적과 같은가.
+    두 계정 이상을 견줘 모두 같아야 참이다."""
+    keys = [k for k in _LINK_IS
+            if isinstance((d or {}).get(k), dict) and d[k].get("padd") is not None and _cum(prev, k) is not None]
+    same = [k for k in keys if _same_amt(d[k]["padd"], _cum(prev, k))]
+    return (len(keys) >= 2 and len(same) == len(keys)), keys
+
+
+def bs_link(d, anchor):
+    """(같은가, 견준 계정) — d(올해 분기 보고서)의 재무상태표 전기(지난해 말) 칸이 anchor(지난해 사업보고서)의
+    연말 값과 같은가. 자본총계를 반드시 포함해 모두 같아야 참이다."""
+    keys = [k for k in _LINK_BS
+            if isinstance((d or {}).get(k), dict) and d[k].get("prv") is not None
+            and isinstance((anchor or {}).get(k), dict) and anchor[k].get("amt") is not None]
+    same = [k for k in keys if _same_amt(d[k]["prv"], anchor[k]["amt"])]
+    return ("equity" in keys and len(same) == len(keys)), keys
 
 
 def _cum_eps(d):
@@ -659,15 +698,36 @@ def collect_quant(dart, ticker, krx_row, stock):
     py = cur - 1
     Q_CODE = ("11013", "11012", "11014")      # 1분기 · 반기 · 3분기 (모두 누적)
 
-    _fin_cache = {}
+    _fin_cache, _aligned = {}, set()
+    QNAME = {"11013": "1분기", "11012": "반기", "11014": "3분기"}
 
-    def fin(year, code):
+    def _raw(year, code):
         """같은 (연도, 보고서)를 여러 계정이 함께 쓰므로 한 번만 받아 캐시한다."""
         k = (year, code)
         if k not in _fin_cache:
             _fin_cache[k] = _fin_all(dart, ticker, year, code)
             time.sleep(0.3)
         return _fin_cache[k]
+
+    def fin(year, code):
+        """분기 보고서는 작성 기준 표시가 그 전해 사업보고서와 다르면 숫자로 다시 본다(basis_link 참고).
+        전기 칸이 지난해 공시를 그대로 되풀이하면 그 전해 사업보고서의 기준으로 맞춘다 — 분기 표의 뺄셈 ·
+        TTM · 주당지표가 모두 이 표시를 보고 이어 붙인다."""
+        d = _raw(year, code)
+        if d and code in Q_CODE and (year, code) not in _aligned:
+            _aligned.add((year, code))
+            anchor = d_by_year.get(year - 1)
+            a_fs = (anchor or {}).get("_fs")
+            if a_fs and d.get("_fs") != a_fs:
+                prev = _raw(year - 1, code)
+                b_ok, b_keys = bs_link(d, anchor)
+                i_ok, i_keys = is_link(d, prev) if prev else (True, [])
+                if b_ok and i_ok:
+                    log(f"  · {year} {QNAME[code]} 보고서 — 작성 기준 표시({d['_fs']})가 {year - 1} 연간({a_fs})과 "
+                        f"다르지만 전기 칸({'·'.join(b_keys + i_keys)})이 지난해 공시와 같아 같은 기준으로 본다")
+                    d["_fs_shown"] = d["_fs"]
+                    d["_fs"] = a_fs
+        return d
 
     ann = {a["year"]: a for a in annual}
     fy_row = ann.get(py)
@@ -681,7 +741,7 @@ def collect_quant(dart, ticker, krx_row, stock):
         # 두 번이 나가는데, 전 종목이면 그것만으로 하루 한도의 4분의 1이다.
         if not _reprt_available(code, cur):
             continue
-        qname = {"11013": "1분기", "11012": "반기", "11014": "3분기"}[code]
+        qname = QNAME[code]
         d = fin(cur, code)
         if not d:
             # 아직 내지 않았거나 재무 조회에 없다. 왜 그 분기에서 멈췄는지 기록에 남긴다 — 반기를 8월에 냈는데도
@@ -692,8 +752,10 @@ def collect_quant(dart, ticker, krx_row, stock):
         # 전년 연간과 기준(연결/별도)이 어긋나면 뺄셈이 성립하지 않으므로 채택하지
         # 않고 한 분기 앞의 보고서를 기준으로 남긴다. 분기 표만 막고 TTM 을 두면
         # 표는 1분기까지인데 PER 은 반기 기준인 상태가 된다.
+        # 표시가 달라도 이 보고서의 전기 누적 칸이 지난해 같은 기간 공시와 같으면 같은 숫자를 빼는 셈이라 성립한다
+        # (지난해 4분기에 처음 연결한 회사 — 지난해 분기는 별도뿐이고 올해는 연결이다).
         dp, fs = fin(py, code), d.get("_fs")
-        if dp is not None and dp.get("_fs") != fs:
+        if dp is not None and dp.get("_fs") != fs and not is_link(d, dp)[0]:
             log(f"  · {cur} {qname} 보고서 — 작성 기준({fs})이 {py} 같은 기간({dp.get('_fs')})과 달라 채택하지 않는다")
             continue
         if base_fs is not None and fs != base_fs:

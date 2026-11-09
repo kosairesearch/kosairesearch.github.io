@@ -1597,6 +1597,148 @@ for k in ("REPORT_FILED", "REPORT_TICKERS", "REPORT_NO_REUSE"):
     os.environ.pop(k, None)
 M.collect_quant = REAL_COLLECT_QUANT
 
+
+# ═══ ⑲ 작성 기준 표시 — 표시가 달라도 전기 칸이 지난해 공시와 같으면 이어 붙인다 ═══════════
+# 2026-11-09 재무 원문 점검: 올해 처음 연결 공시를 낸 회사(이렘 3분기 · 콜마바이오텍 반기)는 연결의 전기 칸이 지난해
+# 별도 공시와 원 단위까지 같았고, KT나스미디어는 반기 · 3분기 연결 자료에 별도 표시가 붙어 왔다(재무상태표 전기 칸 =
+# 지난해 연결 연말 자본). 표시만 보고 막아 새 분기가 빠졌다. 소마젠 2026 반기는 매출 전기는 별도, 순이익 전기는 연결로
+# 섞여 있어 지금처럼 채택하지 않아야 한다.
+print("⑲ 작성 기준 표시 — 전기 칸이 지난해 공시를 되풀이하면 같은 기준으로 본다")
+import contextlib as _ctx                                         # noqa: E402
+REAL_REPRT_AVAIL = M._reprt_available
+M._reprt_available = lambda code, year, today=None: True          # 3분기 보고서까지 나온 때(11월)
+E8 = 100_000_000                                                  # 1억원
+ST19 = {"ticker": "009730", "name": "이렘", "price": 10_000, "mcap": 0.1, "shares": 10_000_000,
+        "market": "코스닥", "sector": "철강·금속"}
+
+
+def rep(fs, is_=None, bs=None, reprt="11014"):
+    """가짜 재무 조회 결과. is_ = {계정: (3개월 또는 연간, 누적, 전기 누적)} · bs = {계정: (기말, 전기말)} — 억원."""
+    out = {"_fs": fs, "_reprt": reprt, "_ccy": "KRW"}
+    for k, (amt, add, padd) in (is_ or {}).items():
+        out[k] = {"amt": amt * E8, "add": None if add is None else add * E8, "prv": None,
+                  "padd": None if padd is None else padd * E8}
+    for k, (amt, prv) in (bs or {}).items():
+        out[k] = {"amt": amt * E8, "add": None, "prv": None if prv is None else prv * E8, "padd": None}
+    return out
+
+
+def ann_rep(fs, rev, np_, eq, eq_prev):
+    return rep(fs, {"rev": (rev, rev, None), "op": (rev / 10, rev / 10, None), "np": (np_, np_, None)},
+               {"equity": (eq, eq_prev), "liab": (500, 500)}, reprt="11011")
+
+
+def q_rep(fs, reprt, cum, padd, eq, eq_prev, q3m=None):
+    """cum/padd = (매출, 순이익) 누적 · 전기 누적."""
+    r3, n3 = q3m or cum
+    return rep(fs, {"rev": (r3, cum[0], padd[0]), "op": (r3 / 10, cum[0] / 10, padd[0] / 10),
+                    "np": (n3, cum[1], padd[1])},
+               {"equity": (eq, eq_prev), "liab": (500, None)}, reprt=reprt)
+
+
+def run19(table):
+    M._fin_all = lambda dart, tk, year, reprt: table.get((year, reprt))
+    M.dart_total_shares = lambda d, t: ST19["shares"]
+    M.dart_dps = lambda d, t: 0.0
+    M.g._safe_finstate = lambda *a, **k: None
+    M.g._extract_fin = lambda *a, **k: None
+    buf = io.StringIO()
+    with _ctx.redirect_stdout(buf):
+        q = M.collect_quant(None, ST19["ticker"], None, dict(ST19))
+    return q, buf.getvalue()
+
+
+def qmap(q, key="rev"):
+    return {x["q"]: (None if x.get(key) is None else round(x[key] / E8, 4)) for x in q["quarterly"]}
+
+
+BASE19 = {(2023, "11011"): ann_rep("OFS", 380, -30, 1200, 1300), (2022, "11011"): ann_rep("OFS", 370, -20, 1300, 1400),
+          (2024, "11011"): ann_rep("OFS", 400, -40, 1100, 1200), (2025, "11011"): ann_rep("OFS", 460, -46, 1000, 1100),
+          (2025, "11013"): q_rep("OFS", "11013", (100, -10), (90, -9), 1150, 1100),
+          (2025, "11012"): q_rep("OFS", "11012", (210, -21), (190, -19), 1120, 1100),
+          (2025, "11014"): q_rep("OFS", "11014", (330, -33), (300, -30), 1080, 1100),
+          (2026, "11013"): q_rep("OFS", "11013", (140, -14), (100, -10), 990, 1000),
+          (2026, "11012"): q_rep("OFS", "11012", (290, -29), (210, -21), 980, 1000)}
+
+# (a) 올해 3분기에 처음 연결 — 지난해까지 별도뿐(이렘). 연결 3분기의 전기 칸 = 지난해 별도 공시.
+T_a = dict(BASE19)
+T_a[(2026, "11014")] = q_rep("CFS", "11014", (460, -46), (330, -33), 1050, 1000)
+q_a, log_a = run19(T_a)
+v_a = q_a["valuation"]
+ok(qmap(q_a).get("2026Q3") == 170 and q_a["quarterly"][-1]["q"] == "2026Q3",
+   "(a) 처음 연결한 3분기가 분기 표에 들어온다(누적 460 − 반기 290 = 170억)", str(qmap(q_a)))
+ok(v_a["ttm_window"] == "2025Q4~2026Q3" and round(v_a["ttm_np_owner"] / E8, 4) == -59,
+   "(a) TTM 이 3분기 기준이다(2025Q4 −13 · 2026Q1 −14 · 2026Q2 −15 · 2026Q3 −17 = −59억)",
+   f"{v_a['ttm_window']} {v_a['ttm_np_owner']}")
+ok("같은 기준으로 본다" in log_a and "채택하지 않는다" not in log_a, "(a) 기록에 맞춘 사유가 남는다", log_a[-600:])
+ok(not C.check_quant(q_a), "(a) check_quant 통과", str(C.check_quant(q_a)))
+
+# (b) 연결 자료에 별도 표시가 붙어 온 회사(KT나스미디어) — 반기 · 3분기만 OFS 표시. 재무상태표 전기 = 지난해 연결 연말.
+T_b = {(2022, "11011"): ann_rep("CFS", 370, 20, 1300, 1400), (2023, "11011"): ann_rep("CFS", 380, 30, 1200, 1300),
+       (2024, "11011"): ann_rep("CFS", 400, 40, 1100, 1200), (2025, "11011"): ann_rep("CFS", 460, 46, 1000, 1100),
+       (2024, "11013"): q_rep("CFS", "11013", (90, 9), (80, 8), 1180, 1200),
+       (2024, "11012"): q_rep("OFS", "11012", (190, 19), (170, 17), 1160, 1200),
+       (2024, "11014"): q_rep("OFS", "11014", (300, 30), (270, 27), 1140, 1200),
+       (2025, "11013"): q_rep("CFS", "11013", (100, 10), (90, 9), 1150, 1100),
+       (2025, "11012"): q_rep("OFS", "11012", (210, 21), (190, 19), 1120, 1100),
+       (2025, "11014"): q_rep("OFS", "11014", (330, 33), (300, 30), 1080, 1100),
+       (2026, "11013"): q_rep("CFS", "11013", (140, 14), (100, 10), 990, 1000),
+       (2026, "11012"): q_rep("OFS", "11012", (290, 29), (210, 21), 1010, 1000)}
+q_b, log_b = run19(T_b)
+v_b = q_b["valuation"]
+ok(qmap(q_b) == {"2025Q2": 110, "2025Q3": 120, "2025Q4": 130, "2026Q1": 140, "2026Q2": 150},
+   "(b) 표시가 섞인 해도 분기 표가 빠짐없이 이어진다", str(qmap(q_b)))
+ok(v_b["ttm_window"] == "2025Q3~2026Q2" and round(v_b["ttm_np_owner"] / E8, 4) == 54,
+   "(b) TTM 이 반기 기준이다(12 + 13 + 14 + 15 = 54억)", f"{v_b['ttm_window']} {v_b['ttm_np_owner']}")
+ok(not C.check_quant(q_b), "(b) check_quant 통과", str(C.check_quant(q_b)))
+
+# (c) 원문이 섞인 회사(소마젠) — 재무상태표 전기는 연결과 같지만 매출 전기 칸은 별도(200 ≠ 연결 210). 채택하지 않는다.
+T_c = dict(T_b)
+T_c[(2025, "11012")] = q_rep("CFS", "11012", (210, 21), (190, 19), 1120, 1100)
+T_c[(2025, "11014")] = q_rep("CFS", "11014", (330, 33), (300, 30), 1080, 1100)
+T_c[(2026, "11012")] = rep("OFS", {"rev": (140, 280, 200), "op": (14, 28, 21), "np": (16, 30, 21)},
+                           {"equity": (1010, 1000), "liab": (500, None)}, reprt="11012")
+T_c[(2026, "11014")] = None
+q_c, log_c = run19(T_c)
+ok(q_c["valuation"]["ttm_window"] == "2025Q2~2026Q1" and "채택하지 않는다" in log_c and "같은 기준으로 본다" not in log_c,
+   "(c) 전기 칸이 섞여 있으면 지금처럼 1분기 기준에 머문다", f"{q_c['valuation']['ttm_window']} · {log_c[-300:]}")
+ok(qmap(q_c).get("2026Q2") is None, "(c) 섞인 반기는 분기 표에도 넣지 않는다", str(qmap(q_c)))
+
+# (d) 지난해 4분기에 처음 연결 — 지난해 분기는 별도뿐, 올해는 연결. 올해 연결의 전기 누적 = 지난해 별도 공시.
+T_d = dict(BASE19)
+T_d[(2025, "11011")] = ann_rep("CFS", 460, -46, 1000, 1100)
+T_d[(2026, "11013")] = q_rep("CFS", "11013", (140, -14), (100, -10), 990, 1000)
+T_d[(2026, "11012")] = q_rep("CFS", "11012", (290, -29), (210, -21), 980, 1000)
+q_d, log_d = run19(T_d)
+v_d = q_d["valuation"]
+ok(v_d["ttm_window"] == "2025Q3~2026Q2" and round(v_d["ttm_np_owner"] / E8, 4) == -54,
+   "(d) 반기를 채택해 TTM 을 굴린다(−46 − (−21) + (−29) = −54억)", f"{v_d['ttm_window']} {v_d['ttm_np_owner']}")
+ok(qmap(q_d).get("2026Q2") == 150 and qmap(q_d).get("2025Q4") is None,
+   "(d) 올해 분기는 이어지고, 기준이 다른 지난해 4분기 칸은 지금처럼 비운다", str(qmap(q_d)))
+
+# (e) 재무상태표 전기 칸이 지난해 연말과 다르면(다시 쓴 비교치) 맞추지 않는다
+T_e = dict(BASE19)
+T_e[(2026, "11014")] = q_rep("CFS", "11014", (460, -46), (330, -33), 1050, 1005)
+q_e, log_e = run19(T_e)
+ok(q_e["valuation"]["ttm_window"] == "2025Q3~2026Q2" and qmap(q_e).get("2026Q3") is None and "같은 기준으로 본다" not in log_e,
+   "(e) 전기 칸이 다르면 표시대로 채택하지 않는다", f"{q_e['valuation']['ttm_window']} {qmap(q_e)}")
+# (f) 기준이 처음부터 같은 회사는 아무것도 바뀌지 않는다(추가 조회도 없다)
+_calls = []
+_T = dict(BASE19)
+_T[(2026, "11014")] = q_rep("OFS", "11014", (460, -46), (330, -33), 1050, 1000)
+M._fin_all = lambda dart, tk, year, reprt: (_calls.append((year, reprt)), _T.get((year, reprt)))[1]
+with _ctx.redirect_stdout(io.StringIO()):
+    q_f = M.collect_quant(None, ST19["ticker"], None, dict(ST19))
+ok(q_f["valuation"]["ttm_window"] == "2025Q4~2026Q3" and (2024, "11014") not in _calls,
+   "(f) 표시가 같으면 지난해의 전년 보고서를 더 묻지 않는다", str(sorted(set(_calls))))
+
+# 단위 함수
+ok(M._same_amt(100, 100) and M._same_amt(100_000, 100_100) and not M._same_amt(100_000, 100_300)
+   and not M._same_amt(None, 1), "같은 금액 판정(0.2%)")
+ok(M.is_link({"rev": {"padd": 5}}, {"rev": {"amt": 5, "add": 5}})[0] is False, "계정 하나만으로는 같은 기준이라 하지 않는다")
+ok(M.bs_link({"liab": {"prv": 5}}, {"liab": {"amt": 5}})[0] is False, "자본총계 없이 맞춘다고 하지 않는다")
+M._reprt_available = REAL_REPRT_AVAIL
+
 print()
 print(f"통과 {passed} · 실패 {failed}")
 sys.exit(1 if failed else 0)
