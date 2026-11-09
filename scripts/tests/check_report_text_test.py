@@ -130,10 +130,18 @@ eq("자기 문장을 통째로 감쌈(문장 시작) — 글을 남긴다",
    cm("3분기 연속 증가했다. " + ct("4", "2분기 매출은 4조 7,248억원으로 늘었다") + ". 다음"), "3분기 연속 증가했다. 2분기 매출은 4조 7,248억원으로 늘었다. 다음")
 eq("문장의 일부(조사로 이어짐) — 글을 남긴다", cm("기업가치 제고 계획은 " + ct("5", "배당성향 40% 이상 유지") + "를 목표로 한다."),
    "기업가치 제고 계획은 배당성향 40% 이상 유지를 목표로 한다.")
-eq("문장 중간이라도 앞 문장을 되풀이한 영문 원문 — 지운다",
+eq("문장 중간이라도 앞 문장의 숫자를 되풀이한 영문 원문 — 지운다",
    cm("The Q2-end backlog passed KRW 26 trillion, more than three times the KRW 8 trillion energy revenue the company had projected for 2026"
       + ct("7", "the backlog passed 26 trillion won at the end of Q2, more than three times the energy revenue projected for 2026") + "."),
    "The Q2-end backlog passed KRW 26 trillion, more than three times the KRW 8 trillion energy revenue the company had projected for 2026.")
+eq("이어지는 절이 새 숫자를 담으면 — 글을 남긴다(소넷 5.5 시험 글)",
+   cm("2026년 2분기 영업이익은 전년 동기 대비 21.1% 감소했고, " + ct("9", "3분기 잠정 영업이익도 전년 동기 대비 12.64% 감소했다.") + " 영업이익률은"),
+   "2026년 2분기 영업이익은 전년 동기 대비 21.1% 감소했고, 3분기 잠정 영업이익도 전년 동기 대비 12.64% 감소했다. 영업이익률은")
+eq("영문 술어를 감싼 절 — 글을 남긴다",
+   cm("It noted that third-quarter results " + ct("6-2", "exceeded market expectations of KRW 37.9 billion in revenue and KRW 4.7 billion in operating profit.") + " Broker"),
+   "It noted that third-quarter results exceeded market expectations of KRW 37.9 billion in revenue and KRW 4.7 billion in operating profit. Broker")
+eq("표시가 낱말을 가름('…한다<cite>는 점이') — 글을 남긴다",
+   cm("교체용 예비품도 회사가 국내에서 공급한다" + ct("3", "는 점이 수요 기반으로 꼽힌다.")), "교체용 예비품도 회사가 국내에서 공급한다는 점이 수요 기반으로 꼽힌다.")
 eq("문장 중간의 이어지는 절 — 글을 남긴다(겹침이 작다)",
    cm("2분기 매출은 4조 7,248억원으로 늘었고, " + ct("8", "2분기 실적은 시장 예상치를 웃돈 것으로 보도됐다") + "."),
    "2분기 매출은 4조 7,248억원으로 늘었고, 2분기 실적은 시장 예상치를 웃돈 것으로 보도됐다.")

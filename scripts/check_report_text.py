@@ -208,6 +208,13 @@ _CITE_TOK = re.compile(r"\d[\d,.]*\d|\d|[가-힣]{2,}|[A-Za-z]{3,}")
 _CITE_START = re.compile(r'(?<!\\)"|\.\s|\n')       # 문장 · 칸의 시작 — 마침표 뒤 · 줄바꿈 · JSON 글의 따옴표(\" 는 글 안)
 
 
+_CITE_NUM = re.compile(r"\d+(?:[.,]\d+)*")
+
+
+def _cite_nums(s):
+    return {x.replace(",", "").rstrip(".") for x in _CITE_NUM.findall(s)}
+
+
 def _cite_toks(s):
     out = set()
     for x in _CITE_TOK.findall(s):
@@ -230,11 +237,17 @@ def drop_cite_quotes(s):
             return m.group(0)                                  # 문장 시작 — 자기 문장을 감쌌다
         inner = m.group(2)
         nxt = m.string[m.end():m.end() + 1]
+        if re.match(r"\s*(?:는|고|며|면)(?:\s|데|지|서)", inner):
+            return m.group(0)       # 표시가 낱말을 갈랐다('…공급한다<cite>는 점이 꼽힌다</cite>') — 자기 문장이다
         if re.search(r"[가-힣]다$", prev):
             return "" if nxt and nxt in ".,;:!?)" else "."       # 글 끝('')이면 마침표를 남긴다
+        # 문장 중간 — 앞 문장의 숫자를 모두 되풀이(두 개 이상)하고 낱말도 절반 넘게 겹칠 때만 덧붙인 원문으로 본다.
+        # 낱말만 보면 이어지는 절('…21.1% 감소했고, <cite>3분기 잠정 영업이익도 12.64% 감소했다</cite>')까지 지운다 — 소넷 5.5
+        # 시험 글 3곳이 그랬다. 새 사실을 담은 절은 숫자가 다르다.
         a = _cite_toks(inner)
         shared = len(a & _cite_toks(prev))
-        if a and shared >= 5 and shared / len(a) >= 0.5:
+        nums = _cite_nums(inner)
+        if len(nums) >= 2 and nums <= _cite_nums(prev) and shared >= 5 and shared / len(a) >= 0.5:
             return ""
         return m.group(0)
 
