@@ -203,7 +203,7 @@ def main():
           + (f"(정정 공시만 {len(corr)}개)" if corr else "")
           + (f" · 남은 백로그 {backlog}개(다음 실행에서 이어서)" if backlog > 0 else ""))
     # filed — 원래 보고서(정정 아님)의 접수일. 생성기가 새로 받은 재무에 그 공시의 분기가 들어왔는지 본다
-    # (공시 당일에는 DART 재무 조회에 새 분기가 아직 없을 수 있다 — 2026-11-06 이렘).
+    # (공시 당일에는 DART 재무 조회에 새 분기가 아직 없을 수 있다 — 2026-10-26 워트).
     gh_output(new_tickers=",".join(picked), count=len(picked),
               corrections=",".join(f"{sc}:{cand[sc]}" for sc in corr),
               filed=",".join(f"{sc}:{orig_date[sc]}" for sc in picked if sc in orig_date))
