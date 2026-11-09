@@ -352,6 +352,66 @@ eq("새로 쓰는 글에만 — 2026-11-08 전에 쓴 리포트는 다시 쓸 �
 eq("업종 분석(종목 리포트가 아님)에는 걸지 않는다", [h["rule"] for h in C.check({"business": {"ko": "독자는 확인할 필요가 있다.", "en": "x"}})], [])
 eq("품질 등급 — 교정이 그 문장만 고친다", {h["level"] for h in C.check(dict(_H, **_old)) if h["rule"] == "reader"}, {"품질"})
 eq("교정 지시에 규칙 설명이 있다", ("reader:" in C._RULE_TEXT, "dup:" in C._RULE_TEXT), (True, True))
+# 2026-11-09 — 5.5 세대가 글을 쓴 과정 · 지시문 · 다른 회사 해명을 본문에 옮겼고(하이쿠 시험 85~100%), 3분기 보고서를 낸 뒤 다시 쓴
+# 리포트가 그 보고서를 '다음 확인 일정'으로 썼다(PS일렉트로닉스). 지시문을 고친 뒤 쓴 리포트(작성 시각 PROCESS_FROM 부터)에만 건다.
+print("\n── 글을 쓴 과정(process) · 이미 공시된 분기를 다음 일정으로(stale_cp) — 2026-11-09 18시 뒤 작성분 ──")
+_P = {"ticker": "000001", "model": "claude-haiku-5-5", "reportDate": "2026-11-09", "reportTs": "2026-11-09 19:00"}
+
+
+def _pr(ko, en="ok", extra=None):
+    r = dict(_P, business={"ko": ko, "en": en}, **(extra or {}))
+    return [h["rule"] for h in C.check(r) if h["rule"] in ("process", "stale_cp")]
+
+
+for ko in ["구리 가격이 분기 마진에 얼마나 작용했는지도 이번 검색으로 확인되지 않았다.", "3분기 적자의 구체적 원인은 이번 조사에서 확인하지 못했다.",
+           "회사가 정량 실적 가이던스를 공개한 사실은 검색으로 확인되지 않았다.", "회사가 제시한 가이던스는 이번 확인 범위에서 찾지 못했다.",
+           "부문별 매출 비중은 확인된 자료가 없어 정성적으로만 서술한다.", "이익의 분기 편차가 커서 이 리포트에서는 연간 흐름과 분기 흐름을 나눠 다룬다.",
+           "최근 6개월 이내 증권사 목표주가는 확인되지 않아 인용하지 않는다.", "현재 배수는 주가에 따라 매일 바뀌므로 화면의 카드로 확인하는 것이 정확하다.",
+           "이는 대한전선의 수치로 대원전선 실적과 섞지 않는다.", "대신정보통신은 이 리포트의 분석 대상이 아니다.",
+           "부문별 매출액은 검증된 자료를 찾지 못해 수치로 쓰지 않는다."]:
+    eq(f"잡는다 — {ko[:24]}", _pr(ko), ["process"])
+for ko in ["본 리포트는 정보 제공 목적이며 매수 · 매도 의견을 포함하지 않는다.", "회사는 연간 가이던스를 수치로 제시하지 않았다.",
+           "네이버의 검색 광고 매출은 전년 대비 9% 늘었다.", "검색으로 유입되는 이용자가 늘었다.", "회사가 공시한 연간 가이던스는 없다.",
+           "스마트폰 화면 크기가 커지며 패널 수요가 늘었다.", "3분기 분기보고서 기준 계약부채는 40.1억원이다."]:
+    eq(f"건드리지 않는다 — {ko[:24]}", _pr(ko), [])
+for en, want in [("Whether the company issued guidance was not confirmed in this review.", ["process"]),
+                 ("Current multiples are shown live on the screen card.", ["process"]),
+                 ("Segment shares are described qualitatively here.", ["process"]),
+                 ("Because profit swings widely, this report treats annual and quarterly trends separately.", ["process"]),
+                 ("This report is for information only and does not contain a buy or sell opinion.", []),
+                 ("Naver's search advertising revenue rose 9%.", [])]:
+    eq(f"영어 — {en[:34]}", _pr("정상 문장이다.", en), want)
+_q3 = {"quant": {"quarterly": [{"q": "2026Q2"}, {"q": "2026Q3"}], "annual": [{"year": 2025}]}}
+
+
+def _cp(when, what, extra=None):
+    return _pr("정상 문장이다.", extra=dict(_q3, checkpoints=[{"when": {"ko": when, "en": "x"}, "what": {"ko": what, "en": "x"}}], **(extra or {})))
+
+
+eq("3분기가 공시됐는데 3분기 분기보고서를 다음 일정으로 — 잡는다(PS일렉트로닉스)",
+   _cp("2026년 11월 14일 전후", "3분기 분기보고서 제출 시점으로, 고객별 매출 비중을 확인한다."), ["stale_cp"])
+eq("다음 정기보고서(사업보고서)는 그대로", _cp("2027년 3월", "2026년 사업보고서와 4분기 실적이 나온다."), [])
+eq("내년 시점이 지난해 보고서를 시점 참고로 들면 그대로", _cp("2027년 5월 중순", "(지난해 1분기보고서는 2026년 5월 15일 제출) 2027년 1분기 실적을 본다."), [])
+eq("앞으로 나올 보고서와 지난 보고서를 함께 말한 체크포인트는 그대로",
+   _cp("2026년 12월", "2026년 3분기 보고서는 이미 나왔고 2026년 사업보고서가 다음이다."), [])
+eq("확인 지점 문장에 지난 분기 보고서를 나열하면 — 잡는다",
+   _pr("다음 확인 지점은 3분기 분기보고서의 현금흐름과 2026년 사업보고서의 연간 영업이익률이다.", extra=_q3), ["stale_cp"])
+eq("지난 보고서를 지난 일로 서술하면 그대로",
+   _pr("가장 가까운 확인 지점은 2026년 사업보고서이며, 2026년 반기보고서는 2026년 8월 14일에 제출됐다.", extra=_q3), [])
+eq("재료가 2분기까지면 3분기 분기보고서는 다음 일정이다", _cp("2026년 11월 중순", "3분기 분기보고서 제출 시점이다.",
+   {"quant": {"quarterly": [{"q": "2026Q2"}], "annual": [{"year": 2025}]}}), [])
+eq("새로 쓰는 글에만 — 18시 전에 쓴 리포트 · 업종 분석에는 걸지 않는다",
+   [bool([h for h in C.check(dict(_P, business={"ko": "이번 조사에서 확인하지 못했다.", "en": "x"}, **x)) if h["rule"] == "process"])
+    for x in ({"reportTs": "2026-11-09 16:36"}, {"reportTs": "2026-11-09 18:00"}, {"ticker": ""})], [False, True, False])
+eq("품질 등급 · 교정 지시에 규칙 설명", ({h["level"] for h in C.check(dict(_P, business={"ko": "이번 검색으로 확인되지 않았다.", "en": "x"}))},
+   "process:" in C._RULE_TEXT, "stale_cp:" in C._RULE_TEXT), ({"품질"}, True, True))
+import fin_material as _FM  # noqa: E402
+eq("다음 정기보고서 이름", [_FM.next_report(x) for x in ("2026Q1", "2026Q2", "2026Q3", "2026Q4", "")],
+   ["2026년 반기보고서", "2026년 3분기 분기보고서", "2026년 사업보고서", "2027년 1분기 분기보고서", ""])
+eq("지시문에 다음 정기보고서 줄 · 작성 과정 금지 · 6-7 예시가 특정 분기를 가리키지 않음",
+   (all(k in (ROOT_S / "generate_reports_v2.py").read_text(encoding="utf-8") for k in ("다음 정기보고서는 ", "글을 쓴 과정을 쓰지 않는다")),
+    "'3분기 분기보고서의 영업이익률이 다음 확인 지점이다'" in (ROOT_S / "generate_reports_v2.py").read_text(encoding="utf-8"),
+    "글을 쓴 과정을 쓰지 않는다" in (ROOT_S / "generate_reports.py").read_text(encoding="utf-8")), (True, False, True))
 eq("지시문이 '판단은 독자에게 맡긴다'를 쓰라고 하지 않는다", [m for m in ("generate_reports_v2", "generate_reports")
    if "판단은 독자에게 맡" in (ROOT_S / f"{m}.py").read_text(encoding="utf-8")], [])
 eq("지시문에 독자 · 투자자 호칭 금지가 있다(6-7)", ("6-7. **독자 · 투자자를 부르지 않는다**" in (ROOT_S / "generate_reports_v2.py").read_text(encoding="utf-8"),
