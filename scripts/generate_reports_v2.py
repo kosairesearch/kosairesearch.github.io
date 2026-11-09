@@ -48,6 +48,7 @@ import re
 import sys
 import time
 import types
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -3003,6 +3004,10 @@ def collect(cl, as_of, state):
                     bad_text = check_report_text.check(rep)
                     log(f"  · 🔎 {tk} {note} → 남은 위반 {len(bad_text)}건")
             if bad_text and not repair_off and os.getenv("REPORT_REPAIR", "1") != "0":
+                # 어느 규칙에 걸려 교정으로 가는지 남긴다 — 보정이 배치로 미뤄지면 아래 '⏳' 줄에는 종목만 남아
+                # 새 규칙(reader · dup)이 교정을 거쳤는지 기록으로 가릴 수 없었다(2026-11-09 하이쿠 첫 주문 점검).
+                log(f"  · {tk} 검사 위반 {len(bad_text)}건("
+                    f"{', '.join(f'{r} {n}' for r, n in sorted(Counter(h['rule'] for h in bad_text).items()))}) → 교정")
                 try:
                     fixed = check_report_text.repair(mcl, rep, bad_text)
                 except Exception as e:
