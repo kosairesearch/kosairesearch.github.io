@@ -243,6 +243,14 @@ with tempfile.TemporaryDirectory() as td:
     ok(n8 == 1 and p8.exists() and json.loads(p8.read_text(encoding="utf-8")).get("title") == rep8.get("title")
        and (Path(td) / "rows.json").exists() and not (Path(td) / "h3").exists(),
        "글 · 결과 줄을 폴더에 쓰고 빈 글은 건너뛴다")
+    n8b = T.save_reports({("h2", "005930"): rep8}, [], Path(td) / "b",
+                         {("h2", "005930"): "가공 전 <cite index=\"1-1\">글</cite>", ("h3", "005930"): ""})
+    p8b = Path(td) / "b" / "raw" / "h2" / "005930.txt"
+    ok(n8b == 1 and p8b.exists() and "<cite" in p8b.read_text(encoding="utf-8")
+       and not (Path(td) / "b" / "raw" / "h3").exists(), "가공 전 글을 raw/ 에 그대로 남기고 빈 글은 건너뛴다")
+msg8 = types.SimpleNamespace(content=[types.SimpleNamespace(type="server_tool_use"), types.SimpleNamespace(type="text", text="앞 "),
+                                types.SimpleNamespace(type="text", text="<cite index=\"2-1\">뒤</cite>")])
+ok(T.raw_text(msg8) == "앞 <cite index=\"2-1\">뒤</cite>", "가공 전 글은 text 블록만 잇고 인용 표시를 지우지 않는다")
 try:
     T.save_reports({("h2", "005930"): rep8}, [], ROOT / "data" / "_trial_out")
     ok(False, "저장소 안 폴더는 거절한다")
