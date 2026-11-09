@@ -3296,6 +3296,69 @@ def _die_credit(e=None):
 
 
 
+_FSDUMP_IDS = ("_Revenue", "OperatingIncomeLoss", "_ProfitLoss", "ProfitLossAttributableToOwnersOfParent",
+               "ProfitLossAttributableToNonControllingInterests", "BasicEarningsLossPerShare",
+               "_Equity", "EquityAttributableToOwnersOfParent")
+_FSDUMP_COLS = ("thstrm_amount", "thstrm_add_amount", "frmtrm_amount", "frmtrm_q_amount", "frmtrm_add_amount")
+
+
+def fs_dump(targets):
+    """재무 원문 보기(진단 · 돈 안 듦 · 저장 안 함). 종목마다 지난해 연간과 지난해 · 올해 분기 보고서를 연결(CFS) ·
+    별도(OFS) · 요약재무로 따로 불러, 있는지와 주요 계정의 당기 · 누적 · 전기 칸을 그대로 찍는다.
+    작성 기준(연결 · 별도)이 해마다 · 보고서마다 다른 회사의 분기 처리를 고칠 때 근거로 쓴다(2026-11-09)."""
+    dart = g.get_dart()
+    if not dart:
+        log("❌ DART 초기화 실패")
+        return
+    cur = datetime.date.today().year
+    combos = [(cur - 1, "11011")] + [(y, c) for y in (cur - 1, cur) for c in ("11013", "11012", "11014")]
+
+    def call(fn, *a, **kw):
+        buf, err = io.StringIO(), ""
+        try:
+            with contextlib.redirect_stdout(buf):
+                df = fn(*a, **kw)
+        except Exception as e:
+            df, err = None, f"{type(e).__name__}: {e}"
+        msg = " ".join(ln.strip() for ln in buf.getvalue().splitlines() if ln.strip())
+        for m in _DART_STATUS.finditer(msg + err):
+            if m.group(1) not in ("000", "013"):
+                raise DartUnavailable(m.group(1), m.group(2) or "")
+        return df, (err or msg)[:160]
+
+    for st in targets:
+        tk = st["ticker"]
+        log(f"### {tk} {st['name']}")
+        for y, c in combos:
+            if not _reprt_available(c, y):
+                continue
+            for fs in ("CFS", "OFS"):
+                df, note = call(dart.finstate_all, tk, y, reprt_code=c, fs_div=fs)
+                n = 0 if df is None or getattr(df, "empty", True) else len(df)
+                log(f"  {y} {c} {fs}: {n}행" + (f" · {note}" if note and not n else ""))
+                if not n:
+                    continue
+                shown = 0
+                for _, r in df.iterrows():
+                    aid = str(r.get("account_id", "")).strip()
+                    if str(r.get("sj_div", "")) not in ("IS", "CIS", "BS") or not aid.endswith(_FSDUMP_IDS):
+                        continue
+                    vals = " · ".join(f"{k.replace('_amount', '')}={r.get(k)}" for k in _FSDUMP_COLS if k in df.columns)
+                    log(f"    {r.get('sj_div')} {aid} [{str(r.get('account_nm', '')).replace(' ', '')}] {vals}")
+                    shown += 1
+                    if shown >= 14:
+                        break
+            df, note = call(g._safe_finstate, dart, tk, y, c)
+            if df is None or getattr(df, "empty", True):
+                log(f"  {y} {c} 요약재무: 0행" + (f" · {note}" if note else ""))
+                continue
+            for _, r in df.iterrows():
+                nm = str(r.get("account_nm", "")).replace(" ", "")
+                if nm in ("매출액", "영업이익", "당기순이익", "당기순이익(손실)", "자본총계"):
+                    vals = " · ".join(f"{k.replace('_amount', '')}={r.get(k)}" for k in _FSDUMP_COLS if k in df.columns)
+                    log(f"    요약 {r.get('fs_div')} [{nm}] {vals}")
+
+
 def main():
     mode = sys.argv[1] if len(sys.argv) > 1 else "auto"
     as_of = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime("%Y-%m-%d %H:%M")
@@ -3305,6 +3368,13 @@ def main():
         _, _, unavailable = collect_all_quant(targets, data)
         if unavailable:
             _die_dart(unavailable)
+        return
+    if mode == "fsdump":         # 재무 원문 보기 — 진단 · 돈 안 듦 · 저장 안 함
+        _, targets = pick_targets()
+        try:
+            fs_dump(targets)
+        except DartUnavailable as e:
+            _die_dart(e)
         return
     if mode == "patch":
         patch_quant(as_of)
