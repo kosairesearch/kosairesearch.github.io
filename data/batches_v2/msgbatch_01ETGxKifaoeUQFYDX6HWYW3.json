@@ -1,0 +1,31 @@
+{
+ "batch_id": "msgbatch_01ETGxKifaoeUQFYDX6HWYW3",
+ "created": "2026-11-09 10:05",
+ "model": "claude-haiku-5-5",
+ "models": {
+  "006340": "claude-haiku-5-5",
+  "332570": "claude-haiku-5-5"
+ },
+ "tickers": [
+  "006340",
+  "332570"
+ ],
+ "dataDate": "20261106",
+ "count": 2,
+ "usage": {
+  "claude-haiku-5-5": {
+   "n": 2,
+   "in": 20242,
+   "cache_w": 64458,
+   "cache_r": 43364,
+   "out": 56810,
+   "search": 4,
+   "usd": 0.059
+  }
+ },
+ "result": {
+  "ok": 2,
+  "fail": 0
+ },
+ "collected": "2026-11-09 10:05"
+}
