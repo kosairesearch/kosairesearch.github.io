@@ -160,6 +160,8 @@ ROWS.append({"stock_code": D, "report_nm": "반기보고서 (2026.06)", "rcept_d
 out, text = gh_out(CF.main)
 ok(out.get("corrections") == f"{B}:20261002,{E}:20261002", "⑥ 원래 보고서가 함께 있는 D 는 정정 목록에서 뺀다",
    str(out.get("corrections")))
+ok(out.get("filed") == f"{D}:20261001", "⑥ 원래 보고서의 접수일은 따로 넘긴다(생성기가 새 분기가 들어왔는지 본다)",
+   str(out.get("filed")))
 ok(f"{B} 나회사 — 공시 20261002 (기존 리포트 20260905) · 정정 공시 — 숫자가 바뀐 경우에만 다시 쓴다" in text,
    "⑥ 정정 공시라는 것을 로그에 남긴다")
 ROWS.pop()

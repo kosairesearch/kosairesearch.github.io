@@ -15,6 +15,8 @@
   ⑥ 대상 선정  갱신 기준일·hold·fail·skip·진행 중 배치를 생성기와 워치독이 같은 규칙으로 본다.
   ⑯ 정정 공시  2026-10-07 정정 공시 14개 종목을 다시 써 $3.97 이 나갔다 — 13개는 저장된 숫자를 재사용해
                정정조차 반영하지 않았다. 숫자를 새로 받아 견주고 바뀐 경우에만 다시 쓴다.
+  ⑱ 공시 당일  2026-11-06 이렘 — 3분기보고서를 낸 날 재무 조회에 3분기가 아직 없어 반기 숫자로 다시 썼고,
+               리포트 날짜가 공시보다 늦어져 다시 고르지 않았다. 마지막 분기가 나아가지 않으면 기다린다.
 """
 import datetime
 import io
@@ -1521,6 +1523,79 @@ for p in S.OUT_DIR.glob("*.json"):
 _why = GS.defects({"risks": []}, _leak_msg)
 ok(any("쓰지 않기로 한 사이트" in w for w in _why) and GS._needs_rewrite([w for w in _why if "쓰지 않기로" in w]),
    "업종 분석은 결함으로 보고 다음 회차가 다시 쓴다", str(_why[-1:]))
+
+print("⑱ 공시 당일 — 재무 조회에 새 분기가 아직 없으면 주문하지 않고 다음 실행에 맡긴다")
+os.environ["REPORT_FILED"] = "005930:20261106, 000020:20261106,bad,204840:2026-11-06"
+ok(M.filed_env() == {"005930": "20261106", "000020": "20261106"}, "넘겨받은 목록을 읽는다(모양이 틀린 것은 버린다)",
+   str(M.filed_env()))
+_today = S.today_kst()
+_d = lambda n: (_today - datetime.timedelta(days=n)).strftime("%Y%m%d")
+ADV = _q(GOOD)                                      # 3분기가 들어온 새 숫자 — 마지막 분기가 한 칸 나아간다
+ADV["quarterly"] = ADV["quarterly"][1:] + [{"q": "2026Q3", "rev": 500_000_000, "op": 50_000_000, "np_owner": 25_000_000}]
+ADV["valuation"]["ttm_window"] = "2025Q4~2026Q3"
+ok(C.check_quant(ADV) == [], "시험 표본(3분기 포함)은 항등식을 지난다", str(C.check_quant(ADV)))
+ok(M._last_quarter(GOOD) == "2026Q2" and M._last_quarter(ADV) == "2026Q3" and M._last_quarter(None) == "",
+   "마지막 분기를 읽는다")
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+for tk in ("005930", "000020", "204840", "276730"):
+    put(tk, GOOD)
+    S.clear_hold(tk)
+FRESH = {"005930": GOOD, "000020": ADV, "204840": GOOD, "276730": GOOD}
+called = []
+M.collect_quant = lambda dart, tk, row, stock: (called.append(tk), _q(FRESH[tk]))[1]
+os.environ["REPORT_NO_REUSE"] = "1"
+os.environ["REPORT_TICKERS"] = "005930,000020,204840,276730"
+# 005930 오늘 공시 · 새 분기 없음 → 기다린다 / 000020 새 분기 들어옴 → 주문 / 204840 공시 뒤 열흘째도 그대로 → 있는 숫자로 쓴다 /
+# 276730 원래 보고서 목록에 없다(정정 · 백필 등) → 전처럼 주문
+os.environ["REPORT_FILED"] = f"005930:{_d(0)},000020:{_d(0)},204840:{_d(10)}"
+_marks = lambda: (S.fail_count("005930"), "005930" in S.load_hold(), S.checked_date("005930"))
+_before = _marks()                                  # 앞 절이 남긴 기록(⑯ 의 확인 날짜 등)과 견준다
+buf = io.StringIO()
+with __import__("contextlib").redirect_stdout(buf):
+    cl8 = FakeClient()
+    r = M.submit(cl8, "2026-11-09 17:00")
+log8 = buf.getvalue()
+ok(sorted(r["tickers"]) == ["000020", "204840", "276730"], "새 분기가 아직 없는 오늘 공시 종목만 주문에서 뺀다", str(r["tickers"]))
+ok(r.get("waiting") == ["005930"], "뺀 종목을 따로 돌려준다", str(r.get("waiting")))
+ok("005930" in log8 and "재무 조회에 공시" in log8 and "다음 실행에서 다시 본다" in log8, "뺀 이유를 로그에 남긴다")
+ok("204840 공시" in log8 and "있는 숫자로 쓴다" in log8, f"{M.WAIT_QUARTER_DAYS}일이 지나면 있는 숫자로 쓰고 로그에 남긴다")
+ok(_marks() == _before and not _before[1], "기다리는 종목은 실패 · 보류 · 확인 기록을 남기지 않는다(공시 트리거가 다음 실행에서 다시 고른다)",
+   f"{_before} → {_marks()}")
+ok(json.loads((S.OUT_DIR / "005930.json").read_text(encoding="utf-8"))["quant"] == GOOD, "기다리는 종목의 리포트는 그대로 둔다")
+# 새 분기가 들어오면 다음 실행에서 주문한다
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+FRESH["005930"] = ADV
+os.environ["REPORT_TICKERS"] = "005930"
+os.environ["REPORT_FILED"] = f"005930:{_d(1)}"
+r = M.submit(FakeClient(), "2026-11-10 06:30")
+ok(r["tickers"] == ["005930"] and not r.get("waiting"), "다음 실행에서 새 분기가 들어오면 주문한다", str(r))
+# 정정 공시는 이 규칙을 타지 않는다(숫자를 견주는 길이 따로 있다)
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+FRESH["005930"] = GOOD
+os.environ["REPORT_FILED"] = f"005930:{_d(0)}"
+os.environ["REPORT_CORRECTIONS"] = f"005930:{_d(0)}"
+buf = io.StringIO()
+with __import__("contextlib").redirect_stdout(buf):
+    r = M.submit(FakeClient(), "2026-11-09 17:00")
+ok("재무 조회에 공시" not in buf.getvalue(), "정정 공시 종목은 새 분기 대기를 보지 않는다", str(r.get("waiting")))
+# 저장된 리포트가 없으면 견줄 것이 없다 — 그대로 쓴다
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+os.environ.pop("REPORT_CORRECTIONS")
+(S.OUT_DIR / "005930.json").unlink()
+r = M.submit(FakeClient(), "2026-11-09 17:00")
+ok(r["tickers"] == ["005930"], "저장된 리포트가 없으면 그대로 주문한다", str(r))
+# 작업 파일이 공시 트리거의 목록을 생성기에 넘긴다
+_wf = (HERE.parent.parent / ".github/workflows/filing_reports.yml").read_text(encoding="utf-8")
+ok("REPORT_FILED: ${{ steps.filings.outputs.filed }}" in _wf, "공시 트리거 작업이 원래 보고서 접수일을 생성기에 넘긴다")
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+for k in ("REPORT_FILED", "REPORT_TICKERS", "REPORT_NO_REUSE"):
+    os.environ.pop(k, None)
+M.collect_quant = REAL_COLLECT_QUANT
 
 print()
 print(f"통과 {passed} · 실패 {failed}")
