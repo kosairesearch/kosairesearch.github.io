@@ -681,8 +681,12 @@ def collect_quant(dart, ticker, krx_row, stock):
         # 두 번이 나가는데, 전 종목이면 그것만으로 하루 한도의 4분의 1이다.
         if not _reprt_available(code, cur):
             continue
+        qname = {"11013": "1분기", "11012": "반기", "11014": "3분기"}[code]
         d = fin(cur, code)
         if not d:
+            # 아직 내지 않았거나 재무 조회에 없다. 왜 그 분기에서 멈췄는지 기록에 남긴다 — 반기를 8월에 냈는데도
+            # 1분기에서 멈춘 리포트 28편의 사유가 기록에 없었다(2026-11-09 점검).
+            log(f"  · {cur} {qname} 보고서 — 재무 조회에서 받지 못했다(아직 내지 않았거나 조회에 없음)")
             continue
         # TTM·EPS·BPS·ROE 가 전부 이 시점을 기준으로 계산된다. 전년 같은 기간이나
         # 전년 연간과 기준(연결/별도)이 어긋나면 뺄셈이 성립하지 않으므로 채택하지
@@ -690,8 +694,10 @@ def collect_quant(dart, ticker, krx_row, stock):
         # 표는 1분기까지인데 PER 은 반기 기준인 상태가 된다.
         dp, fs = fin(py, code), d.get("_fs")
         if dp is not None and dp.get("_fs") != fs:
+            log(f"  · {cur} {qname} 보고서 — 작성 기준({fs})이 {py} 같은 기간({dp.get('_fs')})과 달라 채택하지 않는다")
             continue
         if base_fs is not None and fs != base_fs:
+            log(f"  · {cur} {qname} 보고서 — 작성 기준({fs})이 {py} 연간({base_fs})과 달라 채택하지 않는다")
             continue
         cur_qi, d_cur = qi, d
     # TTM 뺄셈의 짝 — 반드시 '전년 같은 기간' 누적이어야 뺄셈이 성립한다.
