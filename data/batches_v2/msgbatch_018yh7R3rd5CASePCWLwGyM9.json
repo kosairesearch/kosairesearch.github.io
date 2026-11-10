@@ -139,5 +139,30 @@
     }
    }
   }
+ },
+ "usage": {
+  "claude-haiku-5-5": {
+   "n": 1,
+   "in": 10327,
+   "cache_w": 43499,
+   "cache_r": 2924,
+   "out": 43180,
+   "search": 2,
+   "usd": 0.034
+  }
+ },
+ "deferred": [
+  "440110"
+ ],
+ "repair": {
+  "batch_id": "msgbatch_013QaV5rsbdJRobPPD5d1JYq",
+  "created": "2026-11-10 10:57",
+  "keys": [
+   "440110-08efe9db9bff2101d66e6744"
+  ]
+ },
+ "result": {
+  "ok": 0,
+  "fail": 0
  }
 }
