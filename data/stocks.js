@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-11-11 04:07",
+  "lastUpdated": "2026-11-11 04:45",
   "dataDate": "20261110",
   "stocks": [
     {
@@ -11777,7 +11777,7 @@ window.KOS_LIVE_DATA = {
       "name": "동원파츠",
       "name_en": "DONGWON PARTS.CO.,Ltd.",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "반도체",
       "price": 29400,
       "change": 10.94,
       "volume": 15388095,
@@ -11785,7 +11785,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.2726,
       "shares": 9271015,
       "categories": [
-        "기타"
+        "반도체"
       ],
       "rank": 654
     },
