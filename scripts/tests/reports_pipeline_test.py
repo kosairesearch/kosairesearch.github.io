@@ -1766,6 +1766,86 @@ ok(M._same_amt(100, 100) and M._same_amt(100_000, 100_100) and not M._same_amt(1
    and not M._same_amt(None, 1), "같은 금액 판정(0.2%)")
 ok(M.is_link({"rev": {"padd": 5}}, {"rev": {"amt": 5, "add": 5}})[0] is False, "계정 하나만으로는 같은 기준이라 하지 않는다")
 ok(M.bs_link({"liab": {"prv": 5}}, {"liab": {"amt": 5}})[0] is False, "자본총계 없이 맞춘다고 하지 않는다")
+
+# ═══ ⑳ 주식수 역산 — 올해 역산 주식수가 동떨어지면 작년 연간 역산을 쓴다 ═══════════════════════
+# 2026-11-10 대양금속: 2026 반기 주당이익을 1분기(16원) · 2분기(-32원)의 합(-16원)으로 공시했다. 0 에 가까운 반기
+# 순이익(-3.95억원)을 그 값으로 나눈 2,469만주를 분모로 써 주당이익이 257원(네이버 113원)으로 부풀었고, 작년 같은 기간
+# 주당이익을 액면병합으로 오판해 두 배로 고쳤다. 고치기 전 생성기는 (a) 에서 세 건이 걸린다.
+print("⑳ 주식수 역산 — 올해 누적 주당이익이 분기 합으로 공시된 회사")
+
+
+def eps_rep(r, eps_add):
+    r = dict(r)
+    r["np_owner"] = dict(r["np"])
+    r["equity_owner"] = dict(r["equity"])
+    r["eps_basic"] = {"amt": eps_add, "add": eps_add, "prv": None, "padd": None}
+    return r
+
+
+def t20(fy, q25, q26):
+    """fy = {연도: (매출, 순이익, 주당이익, 자본)} · q25 · q26 = {보고서: (누적 매출, 누적 순이익, 누적 주당이익, 자본)}
+    — 금액은 억원, 주당이익은 원."""
+    t = {}
+    for y, (rv, np_, eps, eq) in fy.items():
+        t[(y, "11011")] = eps_rep(ann_rep("CFS", rv, np_, eq, eq), eps)
+    for y, qs in ((2025, q25), (2026, q26)):
+        for reprt, (rv, np_, eps, eq) in qs.items():
+            pr = q25.get(reprt) if y == 2026 else None
+            padd = (pr[0], pr[1]) if pr else (rv * 0.9, np_)
+            t[(y, reprt)] = eps_rep(q_rep("CFS", reprt, (rv, np_), padd, eq, fy[y - 1][3]), eps)
+    return t
+
+
+def run20(table, st, total):
+    M._fin_all = lambda dart, tk, year, reprt: table.get((year, reprt))
+    M.dart_total_shares = lambda d, t: total
+    M.dart_dps = lambda d, t: 0.0
+    M.g._safe_finstate = lambda *a, **k: None
+    M.g._extract_fin = lambda *a, **k: None
+    buf = io.StringIO()
+    with _ctx.redirect_stdout(buf):
+        q = M.collect_quant(None, st["ticker"], None, dict(st))
+    return q, buf.getvalue()
+
+
+ST20 = {"ticker": "009190", "name": "대양금속", "price": 830, "mcap": 0.0373, "shares": 44_939_175,
+        "market": "코스피", "sector": "철강·금속"}
+FY20 = {2022: (2400, 50, 110, 950), 2023: (2300, 40, 88, 990), 2024: (2100, -150, -330, 903.8),
+        2025: (2000, 94, 206, 1000.8)}
+Q25 = {"11013": (480, 15, 33, 1010), "11012": (990, 26.6, 56, 1020), "11014": (1500, 60, 131, 1040)}
+
+# (a) 대양금속 — 반기 주당이익 -16원(분기 합) · 반기 순이익 -3.95억원 → 올해 역산 2,469만주(상장 4,494만 · 발행총수 5,594만)
+q20a, log20a = run20(t20(FY20, Q25, {"11013": (520, 8.4, 16, 1005), "11012": (1050, -3.95, -16, 990)}), ST20, 55_942_625)
+v20a = q20a["valuation"]
+ok(v20a["ttm_window"] == "2025Q3~2026Q2" and round(v20a["ttm_np_owner"] / E8, 4) == 63.45,
+   "(a) TTM 은 반기 기준이다(33.4 + 34 + 8.4 − 12.35 = 63.45억)", f"{v20a['ttm_window']} {v20a['ttm_np_owner']}")
+ok("작년 연간 역산을 쓴다" in log20a and "⚖️" not in log20a,
+   "(a) 올해 역산 주식수를 버리고, 액면병합으로 오판하지 않는다", log20a[-900:])
+ok(v20a["eps"] == 134 and v20a["eps_src"] == "공시",
+   "(a) 주당이익은 공시 롤포워드 134원(206 − 56 − 16 · 고치기 전 257원)", f"{v20a['eps']} {v20a['eps_src']}")
+# 대양금속은 BPS 를 내보내지 않는 목록(data/bps_suppress.txt)에 있어 저장값 대신 계산 기록을 본다.
+ok(v20a["wavg_shares"] == 45_631_067 and "= BPS 2170" in log20a,
+   "(a) 주식수 · 주당순자산도 작년 연간 역산 4,563만주로 나눈다(990억 ÷ 4,563만 = 2,170원 · 고치기 전 4,010원)",
+   f"{v20a['wavg_shares']} · {[l for l in log20a.splitlines() if 'BPS 입력' in l]}")
+ok(not C.check_quant(q20a), "(a) check_quant 통과", str(C.check_quant(q20a)))
+
+# (b) 보통 회사 — 반기 주당이익 -9원(순이익 ÷ 4,389만주)이면 올해 역산을 그대로 쓴다
+q20b, log20b = run20(t20(FY20, Q25, {"11013": (520, 8.4, 16, 1005), "11012": (1050, -3.95, -9, 990)}), ST20, 55_942_625)
+ok("작년 연간 역산을 쓴다" not in log20b and q20b["valuation"]["wavg_shares"] == 43_888_888
+   and q20b["valuation"]["eps"] == 141,
+   "(b) 올해 역산이 상장 주식수와 맞으면 그대로 쓴다(206 − 56 − 9 = 141원)",
+   f"{q20b['valuation']['wavg_shares']} {q20b['valuation']['eps']}")
+
+# (c) 아센디오 — 올해 역산 1,860만주가 상장 1,030만주와는 다르지만 공시 발행주식총수 1,939만주와 맞는다. 그대로 둔다.
+ST20c = dict(ST20, ticker="012170", name="아센디오", price=3210, mcap=0.0331, shares=10_302_348, sector="미디어·엔터")
+FY20c = {2022: (900, -50, -51, 300), 2023: (850, -60, -61, 260), 2024: (800, -74.8, -76, 195),
+         2025: (700, -136.6, -1271, 72.4)}
+Q25c = {"11013": (170, -30, -305, 160), "11012": (350, -66, -670, 130), "11014": (520, -69.2, -700, 120)}
+q20c, log20c = run20(t20(FY20c, Q25c, {"11013": (180, -2.1, -11.5, 70), "11012": (360, -8.0, -43, 64)}),
+                     ST20c, 19_393_296)
+ok("작년 연간 역산을 쓴다" not in log20c and q20c["valuation"]["wavg_shares"] == 18_604_651,
+   "(c) 올해 역산이 공시 발행주식총수와 맞으면 그대로 쓴다", f"{q20c['valuation']['wavg_shares']}")
+
 M._reprt_available = REAL_REPRT_AVAIL
 
 print()

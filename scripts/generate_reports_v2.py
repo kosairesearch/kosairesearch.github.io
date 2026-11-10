@@ -1041,8 +1041,27 @@ def collect_quant(dart, ticker, krx_row, stock):
                 return w
         return None
 
-    wavg = (implied_wavg(_cum(d_cur, "np_owner"), _cum_eps(d_cur))
-            or (implied_wavg(fy_row["np_owner"], fy_row["eps_basic"]) if fy_row else None))
+    w_cur = implied_wavg(_cum(d_cur, "np_owner"), _cum_eps(d_cur))
+    w_fy = implied_wavg(fy_row["np_owner"], fy_row["eps_basic"]) if fy_row else None
+
+    # 올해 누적으로 역산한 주식수를 믿을 수 있는가(2026-11-10). 대양금속 2026 반기는 1분기(16원)와 2분기(-32원)
+    # 주당이익을 더해 반기 주당이익(-16원)으로 공시했다. 0 에 가까운 반기 순이익(-4억원)을 그 값으로 나누니
+    # 2,470만주가 나왔다 — 상장 4,494만주 · 작년 연간 역산 4,562만주 · 공시 발행주식총수 5,594만주 어느 것과도
+    # 동떨어진 값이다. 그 값을 분모로 쓰니 주당이익이 257원으로 부풀었고(분기 표가 이어져 그동안 숨겼던 값이
+    # 드러났다), 액면병합으로 오판해 작년 같은 기간 주당이익까지 두 배로 고쳤다.
+    # 올해 역산 주식수가 작년 연간 역산 · 상장 주식수 · 공시 발행주식총수 어느 쪽과도 맞지 않고 작년 연간 역산이
+    # 상장 주식수와 맞으면, 올해 역산을 버리고 작년 연간 역산을 쓴다(주당이익 · 주당순자산 모두 — 같은 분모다).
+    # 분할 · 병합은 상장 주식수가 같이 움직이고, 대규모 증자는 공시 발행주식총수가 따라오므로 여기에 걸리지 않는다
+    # (아센디오 — 올해 역산 1,864만주가 상장 1,030만주와는 다르지만 공시 발행주식총수 1,939만주와 맞아 그대로 둔다).
+    def _near(a, b):
+        return bool(a and b and 0.6 <= a / b <= 1.67)
+    shares_doubt = bool(w_cur and w_fy and sh and _near(w_fy, sh)
+                        and not (_near(w_cur, w_fy) or _near(w_cur, sh) or _near(w_cur, total_sh)))
+    if shares_doubt:
+        log(f"  · 올해 누적 순이익 ÷ 공시 주당이익으로 역산한 주식수 {w_cur / 1e6:,.1f}백만이 작년 연간 역산 "
+            f"{w_fy / 1e6:,.1f}백만 · 상장 {sh / 1e6:,.1f}백만 · 발행총수 {total_sh / 1e6:,.1f}백만과 맞지 않는다"
+            f" — 작년 연간 역산을 쓴다")
+    wavg = w_fy if shares_doubt else (w_cur or w_fy)
 
     # EPS(TTM): 1순위 = 회사 공시 기본주당이익(EPS) 직접 합산(최근결산 − 작년1Q + 올해1Q).
     #   순이익·주식수 추출을 건너뛰어 가장 견고하고, 네이버와 동일 기준(회사 공시 EPS).
@@ -1079,7 +1098,8 @@ def collect_quant(dart, ticker, krx_row, stock):
     sh_fy = _sh_at(fy_row.get("np_owner") if fy_row else None, fy_eps)
 
     def _unsplit(eps_v, sh_old, label):
-        if not (eps_v and sh_cur and sh_old):
+        # 올해 역산 주식수를 믿을 수 없으면(shares_doubt) 그것과 견준 배수로 분할 · 병합을 판정하지 않는다.
+        if shares_doubt or not (eps_v and sh_cur and sh_old):
             return eps_v
         r = sh_cur / sh_old
         for n in range(2, 41):
