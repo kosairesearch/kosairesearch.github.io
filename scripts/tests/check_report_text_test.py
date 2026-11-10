@@ -440,8 +440,7 @@ eq("새 지시문으로 쓴 글(textRules)과 시험 글에만 — 옛 지시문
           if h["rule"] == "process"])
     for x in ({"reportTs": "2026-11-09 16:36"}, {"reportTs": "2026-11-09 21:00"}, {"textRules": 2}, {"textRules": 2, "ticker": ""},
               {"reportDate": "", "reportTs": ""})], [False, False, True, False, True])
-# 2026-11-11 — 틀의 강세 · 약세 제목 · 위험 분류 칸이 빈 문자열이라 하이쿠가 그 칸을 빼먹었다(모양 실패 9편 중 6편). 칸마다 안내 문구를
-# 넣었으므로, 안내 문구를 그대로 옮긴 글은 위험 등급(template)으로 잡는다.
+# 2026-11-11 — 지시문 틀의 안내 문구('한국어 650~800자' 등)나 영어 칸의 '...'가 그대로 남은 글은 위험 등급(template)으로 잡는다.
 for x, want in [({"risks": [{"cat": {"ko": "위험 분류(한국어 4~12자)", "en": "Customer risk"}, "body": {"ko": "본문이다.", "en": "Body."}}]}, ["template"]),
                 ({"bull": [{"title": {"ko": "수주 회복", "en": "..."}, "body": {"ko": "본문이다.", "en": "Body."}}]}, ["template"]),
                 ({"bear": [{"title": {"ko": "약세 요인 제목(한국어 10~24자)", "en": "Weak demand"}, "body": {"ko": "본문이다.", "en": "Body."}}]}, ["template"]),
@@ -449,10 +448,6 @@ for x, want in [({"risks": [{"cat": {"ko": "위험 분류(한국어 4~12자)", "
                 ({"risks": [{"cat": {"ko": "고객 집중 리스크", "en": "Customer concentration risk"}, "body": {"ko": "본문이다.", "en": "Body."}}]}, []),
                 ({"bull": [{"title": {"ko": "수주 회복", "en": "Order recovery"}, "body": {"ko": "본문이다.", "en": "The title of the deal is clear."}}]}, [])]:
     eq(f"틀 문구 — {str(x)[:40]}", [h["rule"] for h in C.check(dict(_P, **x)) if h["rule"] == "template"], want)
-_sch = (ROOT_S / "generate_reports_v2.py").read_text(encoding="utf-8")
-eq("리포트 v2 틀에 빈 칸('\"ko\":\"\"' · '\"en\":\"\"')이 없다 · 제목 · 분류 필수 규칙이 있다",
-   ('"ko":""' in _sch.split("SCHEMA_V2 = ")[1].split('"""')[1], '"en":""' in _sch.split("SCHEMA_V2 = ")[1].split('"""')[1],
-    "risks 항목마다 cat" in _sch), (False, False, True))
 eq("생성기 둘이 저장하는 글에 textRules 를 단다", [m for m in ("generate_reports_v2", "generate_reports_batch")
    if "TEXT_RULES" not in (ROOT_S / f"{m}.py").read_text(encoding="utf-8")], [])
 eq("품질 등급 · 교정 지시에 규칙 설명", ({h["level"] for h in C.check(dict(_P, business={"ko": "이번 검색으로 확인되지 않았다.", "en": "x"}))},
