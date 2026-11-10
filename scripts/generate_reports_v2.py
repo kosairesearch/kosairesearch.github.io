@@ -818,32 +818,48 @@ def collect_quant(dart, ticker, krx_row, stock, today=None):
         y, m = period_end(cur, Q_CODE.index(code) + 1, fm)
         return (today.year, today.month, today.day) >= ((y, m + 1, 25) if m < 12 else (y + 1, 1, 25))
 
-    for qi, code in enumerate(Q_CODE, 1):
-        # 아직 제출 시기가 아닌 보고서는 묻지 않는다. 없는 것을 묻는 데도 CFS·OFS
-        # 두 번이 나가는데, 전 종목이면 그것만으로 하루 한도의 4분의 1이다.
-        if not avail(code):
-            continue
-        qname = QNAME[code]
-        d = fin(cur, code)
-        if not d:
-            # 아직 내지 않았거나 재무 조회에 없다. 왜 그 분기에서 멈췄는지 기록에 남긴다 — 반기를 8월에 냈는데도
-            # 1분기에서 멈춘 리포트 28편의 사유가 기록에 없었다(2026-11-09 점검).
-            log(f"  · {cur} {qname} 보고서 — 재무 조회에서 받지 못했다(아직 내지 않았거나 조회에 없음)")
-            continue
-        # TTM·EPS·BPS·ROE 가 전부 이 시점을 기준으로 계산된다. 전년 같은 기간이나
-        # 전년 연간과 기준(연결/별도)이 어긋나면 뺄셈이 성립하지 않으므로 채택하지
-        # 않고 한 분기 앞의 보고서를 기준으로 남긴다. 분기 표만 막고 TTM 을 두면
-        # 표는 1분기까지인데 PER 은 반기 기준인 상태가 된다.
-        # 표시가 달라도 이 보고서의 전기 누적 칸이 지난해 같은 기간 공시와 같으면 같은 숫자를 빼는 셈이라 성립한다
-        # (지난해 4분기에 처음 연결한 회사 — 지난해 분기는 별도뿐이고 올해는 연결이다).
-        dp, fs = fin(py, code), d.get("_fs")
-        if dp is not None and not (_fsset(d) & _fsset(dp)) and not is_link(d, dp)[0]:
-            log(f"  · {cur} {qname} 보고서 — 작성 기준({fs})이 {py} 같은 기간({dp.get('_fs')})과 달라 채택하지 않는다")
-            continue
-        if base_fs is not None and base_fs not in _fsset(d):
-            log(f"  · {cur} {qname} 보고서 — 작성 기준({fs})이 {py} 연간({base_fs})과 달라 채택하지 않는다")
-            continue
-        cur_qi, d_cur = qi, d
+    def pick():
+        """이번 회계연도(cur)의 가장 최근 분기 보고서 — (cur_qi, d_cur). 쓸 보고서가 없으면 (0, None)."""
+        got = (0, None)
+        for qi, code in enumerate(Q_CODE, 1):
+            # 아직 제출 시기가 아닌 보고서는 묻지 않는다. 없는 것을 묻는 데도 CFS·OFS
+            # 두 번이 나가는데, 전 종목이면 그것만으로 하루 한도의 4분의 1이다.
+            if not avail(code):
+                continue
+            qname = QNAME[code]
+            d = fin(cur, code)
+            if not d:
+                # 아직 내지 않았거나 재무 조회에 없다. 왜 그 분기에서 멈췄는지 기록에 남긴다 — 반기를 8월에 냈는데도
+                # 1분기에서 멈춘 리포트 28편의 사유가 기록에 없었다(2026-11-09 점검).
+                log(f"  · {cur} {qname} 보고서 — 재무 조회에서 받지 못했다(아직 내지 않았거나 조회에 없음)")
+                continue
+            # TTM·EPS·BPS·ROE 가 전부 이 시점을 기준으로 계산된다. 전년 같은 기간이나
+            # 전년 연간과 기준(연결/별도)이 어긋나면 뺄셈이 성립하지 않으므로 채택하지
+            # 않고 한 분기 앞의 보고서를 기준으로 남긴다. 분기 표만 막고 TTM 을 두면
+            # 표는 1분기까지인데 PER 은 반기 기준인 상태가 된다.
+            # 표시가 달라도 이 보고서의 전기 누적 칸이 지난해 같은 기간 공시와 같으면 같은 숫자를 빼는 셈이라 성립한다
+            # (지난해 4분기에 처음 연결한 회사 — 지난해 분기는 별도뿐이고 올해는 연결이다).
+            dp, fs = fin(py, code), d.get("_fs")
+            if dp is not None and not (_fsset(d) & _fsset(dp)) and not is_link(d, dp)[0]:
+                log(f"  · {cur} {qname} 보고서 — 작성 기준({fs})이 {py} 같은 기간({dp.get('_fs')})과 달라 채택하지 않는다")
+                continue
+            if base_fs is not None and base_fs not in _fsset(d):
+                log(f"  · {cur} {qname} 보고서 — 작성 기준({fs})이 {py} 연간({base_fs})과 달라 채택하지 않는다")
+                continue
+            got = (qi, d)
+        return got
+
+    cur_qi, d_cur = pick()
+    # 결산월이 12월이 아닌 회사(2026-11-10) — 직전 회계연도가 끝나고 그 사업보고서가 나오기 전(결산 뒤 석 달)에는 이번 회계연도의
+    # 보고서가 하나도 없다. 그대로 두면 최근 시점이 비어 주당순자산 · 자기자본이익률이 빠진다(9월 결산 금비 · 방림 등 11월).
+    # 그 사이에는 직전 회계연도를 '올해'로 보고 그 회계연도의 분기 보고서를 최근 시점으로 쓴다. 12월 결산의 1~3월도 같은
+    # 사정이지만 지금 그대로 둔다.
+    if fm != 12 and not cur_qi and fy_row is None and ann.get(py - 1):
+        log(f"  · {py} 회계연도({fm}월 결산)의 사업보고서가 아직 없다 — 그 회계연도의 분기 보고서를 최근 시점으로 쓴다")
+        cur, py = py, py - 1
+        fy_row = ann.get(py)
+        base_fs = annual_fs.get(py)
+        cur_qi, d_cur = pick()
     # TTM 뺄셈의 짝 — 반드시 '전년 같은 기간' 누적이어야 뺄셈이 성립한다.
     # (반기까지 나왔으면 전년도 반기를 빼야지 전년도 1분기를 빼면 안 된다.)
     d_py_same = fin(py, Q_CODE[cur_qi - 1]) if cur_qi else None
