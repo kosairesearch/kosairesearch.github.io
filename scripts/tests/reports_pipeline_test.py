@@ -729,6 +729,19 @@ ok((p5930.read_text(encoding="utf-8") if p5930.exists() else None) == old5930,
 ok(S.fail_count("005930") == f0 + 1, "실패로 세어 다음 회차가 다시 만든다", f"{f0} → {S.fail_count('005930')}")
 T.repair = _repair_stub
 
+# (h2) 저장 전 정리 — 작성 재료의 영어 금액 표기('[KRW …]')가 한국어 본문에 샌 것 · 마침표 겹침은 회수의 기본 경로(검토 끔)에서도
+#      걷는다. 2026-11-08 에 정리 함수(prepare)에만 넣어 이 경로에서는 돌지 않았다 — 금비(2026-11-10)가 대괄호째 저장됐다.
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+mk("msgbatch_D2", ["000020"])
+cl = FakeClient()
+t_mat = report_text("000020").replace("실적 문장이다.", "매출은 1,894억원[KRW 189.4 billion]으로 늘었다..", 1)
+cl.messages.batches.store["msgbatch_D2"] = batch_obj("msgbatch_D2", "ended", [result("000020", text=t_mat, usage=USAGE)])
+M.pickup(cl, "2026-09-05 06:30")
+rep = json.loads((S.OUT_DIR / "000020.json").read_text(encoding="utf-8"))
+ok("[KRW" not in rep["earnings"]["ko"] and "1,894억원으로 늘었다." in rep["earnings"]["ko"] and ".." not in rep["earnings"]["ko"],
+   "(h2) 한국어 본문의 영어 금액 표기 · 마침표 겹침은 저장 전에 걷는다(검토를 끈 회수)", rep["earnings"]["ko"][:60])
+
 # ═══ ⑩ 정량 재사용 — 이미 맞다는 것이 확인될 때만 ═══════════════════════
 print("⑩ 정량 재사용")
 M.collect_all_quant = REAL_COLLECT_ALL          # ⑥에서 가짜로 바꿔 둔 것을 되돌린다

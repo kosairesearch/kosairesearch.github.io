@@ -73,12 +73,13 @@ def qtext(label):
     return f"{m.group(1)}년 {m.group(2)}분기" if m else str(label or "")
 
 
-def next_report(label):
+def next_report(label, fm=None):
     """마지막으로 공시된 분기('2026Q3') 다음의 정기보고서 이름 — '2026년 사업보고서'. 모르면 ''.
-    결산월이 12월이 아닌 회사도 분기 이름(회계 분기)을 따르므로 이름만 준다(제출 기한은 결산월마다 달라 적지 않는다).
+    결산월(fm)이 12월이 아닌 회사는 ''다 — 분기 이름이 그 3개월이 끝나는 달력 분기라(2026-11-10 · cal_q) 보고서 이름과
+    맞지 않는다(3월 결산의 '2026Q3'은 반기보고서다). 틀린 이름을 주느니 주지 않는다.
     2026-11-09 — 3분기 보고서를 낸 뒤 다시 쓴 리포트(PS일렉트로닉스)가 그 3분기 보고서를 '다음 확인 일정'으로 썼다."""
     m = re.fullmatch(r"(\d{4})Q([1-4])", str(label or ""))
-    if not m:
+    if not m or (fm and fm != 12):
         return ""
     y, q = int(m.group(1)), int(m.group(2))
     return {1: f"{y}년 반기보고서", 2: f"{y}년 3분기 분기보고서", 3: f"{y}년 사업보고서", 4: f"{y + 1}년 1분기 분기보고서"}[q]

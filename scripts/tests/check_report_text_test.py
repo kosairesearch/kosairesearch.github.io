@@ -353,7 +353,7 @@ eq("업종 분석(종목 리포트가 아님)에는 걸지 않는다", [h["rule"
 eq("품질 등급 — 교정이 그 문장만 고친다", {h["level"] for h in C.check(dict(_H, **_old)) if h["rule"] == "reader"}, {"품질"})
 eq("교정 지시에 규칙 설명이 있다", ("reader:" in C._RULE_TEXT, "dup:" in C._RULE_TEXT), (True, True))
 # 2026-11-09 — 5.5 세대가 글을 쓴 과정 · 지시문 · 다른 회사 해명을 본문에 옮겼고(하이쿠 시험 85~100%), 3분기 보고서를 낸 뒤 다시 쓴
-# 리포트가 그 보고서를 '다음 확인 일정'으로 썼다(PS일렉트로닉스). 지시문을 고친 뒤 쓴 리포트(작성 시각 PROCESS_FROM 부터)에만 건다.
+# 리포트가 그 보고서를 '다음 확인 일정'으로 썼다(PS일렉트로닉스). 지시문을 고친 뒤 쓴 리포트(생성기가 단 textRules)에만 건다.
 print("\n── 글을 쓴 과정(process) · 이미 공시된 분기를 다음 일정으로(stale_cp) — 2026-11-09 지시문으로 쓴 글(textRules) ──")
 _P = {"ticker": "000001", "model": "claude-haiku-5-5", "reportDate": "2026-11-09", "reportTs": "2026-11-09 19:00", "textRules": 2}
 
@@ -404,6 +404,9 @@ eq("지난 보고서를 지난 일로 서술하면 그대로",
    _pr("가장 가까운 확인 지점은 2026년 사업보고서이며, 2026년 반기보고서는 2026년 8월 14일에 제출됐다.", extra=_q3), [])
 eq("재료가 2분기까지면 3분기 분기보고서는 다음 일정이다", _cp("2026년 11월 중순", "3분기 분기보고서 제출 시점이다.",
    {"quant": {"quarterly": [{"q": "2026Q2"}], "annual": [{"year": 2025}]}}), [])
+eq("결산월이 12월이 아닌 회사는 지난 분기 일정을 보지 않는다(분기 이름이 달력 분기 · 2026-11-10) — 과정 문장은 그대로 본다",
+   (_cp("2026년 11월 14일 전후", "3분기 분기보고서 제출 시점으로, 고객별 매출 비중을 확인한다.", {"quant": dict(_q3["quant"], fy_end_month=3)}),
+    _pr("이번 조사에서 확인하지 못했다.", extra={"quant": dict(_q3["quant"], fy_end_month=3)})), ([], ["process"]))
 eq("새 지시문으로 쓴 글(textRules)과 시험 글에만 — 옛 지시문의 리포트 · 업종 분석에는 걸지 않는다",
    [bool([h for h in C.check(dict({k: v for k, v in _P.items() if k != "textRules"}, business={"ko": "이번 조사에서 확인하지 못했다.", "en": "x"}, **x))
           if h["rule"] == "process"])
@@ -416,6 +419,8 @@ eq("품질 등급 · 교정 지시에 규칙 설명", ({h["level"] for h in C.ch
 import fin_material as _FM  # noqa: E402
 eq("다음 정기보고서 이름", [_FM.next_report(x) for x in ("2026Q1", "2026Q2", "2026Q3", "2026Q4", "")],
    ["2026년 반기보고서", "2026년 3분기 분기보고서", "2026년 사업보고서", "2027년 1분기 분기보고서", ""])
+eq("다음 정기보고서 이름 — 결산월이 12월이 아니면 주지 않는다(3월 결산의 '2026Q3'은 반기보고서다)",
+   [_FM.next_report("2026Q3", fm) for fm in (3, 6, 11, 12, None)], ["", "", "", "2026년 사업보고서", "2026년 사업보고서"])
 eq("지시문에 다음 정기보고서 줄 · 작성 과정 금지 · 6-7 예시가 특정 분기를 가리키지 않음",
    (all(k in (ROOT_S / "generate_reports_v2.py").read_text(encoding="utf-8") for k in ("다음 정기보고서는 ", "글을 쓴 과정을 쓰지 않는다")),
     "'3분기 분기보고서의 영업이익률이 다음 확인 지점이다'" in (ROOT_S / "generate_reports_v2.py").read_text(encoding="utf-8"),

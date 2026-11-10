@@ -846,6 +846,9 @@ def process_hits(rep):
     rd = str(rep.get("reportDate") or "")[:4]
     import datetime as _dt                                    # noqa: E402
     year = int(rd) if rd.isdigit() else _dt.datetime.now(_dt.timezone(_dt.timedelta(hours=9))).year   # 연도 없는 '3분기'는 작성한 해
+    # 결산월이 12월이 아닌 회사는 보지 않는다 — 분기 이름이 달력 분기라(2026-11-10) '3분기 보고서'와 짝이 맞지 않는다.
+    if q.get("fy_end_month") in range(1, 12):
+        return hits
     if latest_q or latest_y:
         nxt = F_next_report(latest_q)
         for x in rep.get("checkpoints") or []:

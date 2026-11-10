@@ -1817,7 +1817,7 @@ def build_prompt_v2(stock, quant, as_of, stocks=None):
     # 본문에 쓰면 안 되는 값(ROE · EPS · BPS · 주당배당금)은 재료에서 뺐다.
     _yrs = sorted(a.get("year") for a in (quant.get("annual") or []) if a.get("year"))
     _qs = [r for r in (quant.get("quarterly") or []) if r.get("q")]
-    _next = fin_material.next_report(_qs[-1]["q"]) if _qs else ""
+    _next = fin_material.next_report(_qs[-1]["q"], quant.get("fy_end_month")) if _qs else ""
     _span = " · ".join(x for x in (
         f"연간 {_yrs[0]}~{_yrs[-1]}년" if _yrs else "",
         f"분기 {fin_material.qtext(_qs[0]['q'])}~{fin_material.qtext(_qs[-1]['q'])}" if _qs else "") if x) or "없음"
@@ -3230,6 +3230,10 @@ def collect(cl, as_of, state):
                     log(f"  · {tk} 금액 표기 {_nsp}곳 정리 (79조3,187억원 → 79조 3,187억원)")
             except Exception as e:
                 log(f"  · ({tk} 금액 표기 정리 실패: {type(e).__name__}: {e})")
+            # 저장 전 정리(check_report_text.prepare) — 작성 재료의 영어 금액 표기('[KRW 251 billion]')가 한국어 본문에 샌 것 ·
+            # 마침표 겹침을 걷는다. 2026-11-08 에 정리 함수에만 넣어 이 경로(검토를 끈 회수 — 기본)는 부르지 않았고, 결산월 이름이
+            # 붙은 재료를 옮긴 금비(2026-11-10)가 대괄호째 저장됐다(전수 검사가 잡았다). 몇 번 돌려도 같다.
+            rep = check_report_text.prepare(rep)
             # 금지 표현 검사 — 프롬프트는 부탁이지 강제가 아니다. 실제로 2,563개 중
             # 99개(3.9%)가 금지해 둔 표현을 담고 있었다. 걸리면 그 섹션만 작은 모델에
             # 넘겨 위반 문장을 고쳐 쓴다(check_report_text.repair). 고친 결과가 검사에
