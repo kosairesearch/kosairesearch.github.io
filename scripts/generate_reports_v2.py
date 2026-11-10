@@ -3400,6 +3400,19 @@ def fs_dump(targets):
     for st in targets:
         tk = st["ticker"]
         log(f"### {tk} {st['name']}")
+        # 결산월과 최근 정기보고서 접수 — 반기가 조회에 없을 때 결산월이 다른지, 공시가 늦었는지 가른다(2026-11-10).
+        info, note = call(dart.company, tk)
+        if isinstance(info, dict):
+            log(f"  결산월 {info.get('acc_mt')} · 법인 구분 {info.get('corp_cls')} · 업종 {info.get('induty_code')}")
+        elif note:
+            log(f"  회사 개황 조회 실패 · {note}")
+        start = (datetime.date.today() - datetime.timedelta(days=300)).strftime("%Y%m%d")
+        lst, note = call(dart.list, tk, start=start, kind="A", final=False)
+        if lst is None or getattr(lst, "empty", True):
+            log(f"  최근 정기보고서 접수: 없음" + (f" · {note}" if note else ""))
+        else:
+            for _, r in lst.head(8).iterrows():
+                log(f"  접수 {r.get('rcept_dt')} {r.get('report_nm')}")
         for y, c in combos:
             if not _reprt_available(c, y):
                 continue
