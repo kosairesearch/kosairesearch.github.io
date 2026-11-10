@@ -92,5 +92,27 @@
     "495810",
     "496320"
   ],
-  "pending": true
+  "usage_repair": {
+    "claude-sonnet-5-5": {
+      "n": 40,
+      "in": 179693,
+      "cache_w": 0,
+      "cache_r": 0,
+      "out": 72101,
+      "search": 0,
+      "usd": 0.5402
+    }
+  },
+  "collected": "2026-11-11 02:58",
+  "usage": {
+    "claude-haiku-5-5": {
+      "n": 86,
+      "in": 443626,
+      "cache_w": 2583110,
+      "cache_r": 490941,
+      "out": 2127802,
+      "search": 172,
+      "usd": 2.438
+    }
+  }
 }
