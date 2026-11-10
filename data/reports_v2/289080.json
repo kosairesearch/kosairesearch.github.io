@@ -1,169 +1,159 @@
 {
  "title": {
-  "ko": "회수 기대와 적자 축소가 엇갈리는 창투사",
-  "en": "A VC Caught Between Exit Hopes and Narrowing Losses"
+  "ko": "투자조합 수익 회복이 관건인 벤처캐피털",
+  "en": "A Venture Capital House Where Fund Income Recovery Is the Key Test"
  },
  "lead": {
-  "ko": "SV인베스트먼트는 2026년 2분기 영업이익이 흑자로 전환하며 분기 실적이 반등했지만, 연간 기준으로는 2025년 3월 결산과 2026년 3월 결산에 걸쳐 2년 연속 적자를 기록해 포트폴리오 회수가 실적에 반영되는 시점이 핵심 변수다.",
-  "en": "SV Investment returned to operating profit in Q2 2026 and its quarterly results rebounded, but it has posted losses for two consecutive fiscal years, so the timing of portfolio exits feeding into earnings is the key variable."
+  "ko": "2026년 2분기 영업이익이 흑자로 돌아서며 분기 실적에 회복 신호가 나타났지만, 2025년 3월 결산과 2026년 3월 결산의 2년 연속 적자와 최근 4개 분기 지배주주 순손실 누적은 아직 남은 과제다.",
+  "en": "Operating profit turned positive in Q2 2026, a sign of quarterly recovery, but two consecutive loss-making fiscal years and a cumulative net loss over the last four quarters remain open issues."
  },
  "keypoints": [
   {
-   "ko": "2026년 2분기 영업이익은 15.7억원으로 전년 동기 영업손실에서 흑자로 돌아섰고, 매출은 91.5억원으로 2025년 4분기부터 3개 분기 연속 증가했다.",
-   "en": "Operating profit reached KRW 1.57 billion in Q2 2026, turning positive from a year-earlier operating loss, while revenue of KRW 9.15 billion extended a three-quarter rising streak from Q4 2025."
+   "ko": "2026년 2분기 매출 91.5억원, 영업이익 15.7억원으로 전년 동기 대비 흑자 전환했고, 매출은 2025년 4분기부터 3개 분기 연속 증가했다.",
+   "en": "Q2 2026 revenue was KRW 9.15 billion and operating profit KRW 1.57 billion, a swing to profit from a year earlier, and revenue has risen for three consecutive quarters since Q4 2025."
   },
   {
-   "ko": "2025년 3월 결산부터 2026년 3월 결산까지 2년 연속 적자이며, 2026년 3월 결산 영업손실 27.2억원은 전년보다 손실이 줄었다.",
-   "en": "The company has posted losses for two consecutive fiscal years, from the year ended March 2025 through the year ended March 2026, although the FY ended March 2026 operating loss of KRW 2.72 billion was smaller than the prior year."
+   "ko": "2026년 3월 결산 영업손실은 27.2억원, 지배주주 순손실은 10억원으로 전년보다 손실 폭은 줄었지만 적자는 이어졌다.",
+   "en": "The March 2026 fiscal year posted an operating loss of KRW 2.72 billion and a net loss attributable to controlling shareholders of KRW 1 billion, a narrower loss than the prior year but still a loss."
   },
   {
-   "ko": "2026년 11월 보도에 따르면 엔키화이트햇 상장 관련 SV인베스트먼트의 지분 가치는 공모 희망가 범위 기준 263억원에서 333억원으로 추정되며, 투입 원금은 71억원이다.",
-   "en": "A November 2026 press report estimated the stake in a cybersecurity portfolio company at KRW 26.3 billion to KRW 33.3 billion on the indicative offering range, against KRW 7.1 billion invested."
+   "ko": "운용자산은 2025년 말 1조 9,000억원 수준이며 회사는 2조원 돌파를 목표로 제시했다.",
+   "en": "Assets under management were about KRW 1.9 trillion at end-2025, and the company has set a KRW 2 trillion target."
   },
   {
-   "ko": "운용자산(AUM)은 2025년 말 기준 1조 9,025억원으로 2020년 이후 매년 늘었지만, 펀드 만기와 성과보수 공백이 관리보수와 실적의 변수로 남아 있다.",
-   "en": "Assets under management reached KRW 1.9025 trillion at end-2025 and rose each year since 2020, while fund maturities and the absence of performance fees remain variables for management fee income and earnings."
+   "ko": "알파스퀘어 집계 기준 매출은 투자조합수익이 약 69%, 운용투자수익이 약 30%를 차지해 투자 성과 의존도가 높다.",
+   "en": "On Alphasquare's breakdown, investment fund income accounts for about 69% and fund investment income for about 30% of revenue, so results depend heavily on investment performance."
   },
   {
-   "ko": "2026년 3월 말 자본총계는 699억원이며 전액이 지배주주 지분이고, 부채비율은 2023년 3월 결산 10.3%에서 2026년 3월 결산 32.6%로 높아졌다.",
-   "en": "Total equity at end-March 2026 was KRW 69.9 billion, all attributable to controlling shareholders, and the debt ratio rose from 10.3% in the year ended March 2023 to 32.6% in the year ended March 2026."
+   "ko": "리벨리온 등 대형 포트폴리오의 상장 · 회수 시점이 실적 변동의 핵심 변수이며, 투자액은 보도마다 차이가 있다.",
+   "en": "The listing and exit timing of large holdings such as Rebellions is the key swing factor for results, and press reports differ on the size of the investment."
   }
  ],
  "business": {
-  "ko": "SV인베스트먼트는 2006년 4월 설립된 국내 벤처캐피털(VC)로, 투자조합을 결성해 운용하면서 관리보수와 성과보수를 받고 투자기업의 평가이익과 처분이익을 얻는 구조다. 회사는 투자 후 전략·영업·재무를 지원해 기업가치를 키우고 투자금 회수를 통해 수익을 실현한다고 설명한다. 알파스퀘어가 집계한 수익 구성은 투자조합수익이 약 69%, 운용투자수익이 약 30%, 기타영업수익이 약 1%로, 투자조합수익의 비중이 가장 크다. 블로터는 2025년 6월 보도에서 2025년 3월 결산의 관리보수가 157억원으로 소폭 감소했고 성과보수는 2년 연속 지급되지 않았다고 전했다. 운용자산(AUM)은 2025년 말 기준 1조 9,025억원이며 2020년 이후 매년 늘어난 것으로 집계된다. 더벨은 2026년 1월 보도에서 2025년 신규 펀드 결성액이 1,741억원으로 전년 465억원의 약 4배라고 밝혔다. 투자 분야는 바이오·헬스케어와 딥테크가 중심이며, 미국 지사는 바이오 기업 중심의 포트폴리오 구성을 계획하고 있다. 대표 회수 사례로는 AI 반도체 기업 리벨리온과 사이버 보안 기업 엔키화이트햇이 거론된다. 임직원은 2026년 9월 기준 38명이다. 이름이 비슷한 DSC인베스트먼트와 LB인베스트먼트는 서로 다른 상장사다.",
-  "en": "SV Investment is a Korean venture capital firm founded in April 2006 that forms and manages investment partnerships, earning management and performance fees along with valuation and disposal gains on portfolio companies. The company says it supports portfolio firms in strategy, operations and finance, and realizes returns through value creation and recovery of invested capital. According to AlphaSquare's aggregation, investment partnership income accounts for about 69% of revenue, operating investment income about 30%, and other operating income about 1%, with partnership income the largest component. Bloter reported in June 2025 that management fees for the year ended March 2025 declined slightly to KRW 15.7 billion, and no performance fees were paid for a second consecutive year. Assets under management reached KRW 1.9025 trillion at end-2025 and have risen each year since 2020 in the reported series. The Bell reported in January 2026 that new fund formation in 2025 totaled KRW 174.1 billion, roughly four times the KRW 46.5 billion of the prior year. Its focus areas are biotech, healthcare and deep tech, and its U.S. arm plans a bio-focused portfolio. Its cited exits include an AI chip designer and a cybersecurity firm now in the KOSDAQ listing process. thevc.kr lists 38 employees as of September 2026. DSC Investment and LB Investment are separate listed companies with similar names."
+  "ko": "SV인베스트먼트는 2006년 4월 설립된 중소기업 창업투자회사로, 벤처투자조합을 결성해 창업자와 중소벤처기업에 투자하는 것을 주된 사업으로 한다. 업무집행조합원으로서 관리보수를 받고, 투자기업의 가치를 키운 뒤 구주 매각·인수합병·상장으로 투자금을 회수해 수익을 얻는 구조다. 자금은 연기금과 금융기관 등 투자재원에서 조달한다. 알파스퀘어가 집계한 매출 구성은 투자조합수익이 69.10%, 운용투자수익이 30.20%, 기타영업수익이 0.70%다. 투자 분야는 바이오·헬스케어와 ICT·문화콘텐츠 등으로 나뉘며, 생명과학과 하이테크가 포트폴리오의 주축이다. tracxn 집계로 2026년 8월 기준 127개 기업에 투자했고 그중 35곳이 상장했다. 회사는 한 사업군의 선도 기업을 골라 큰 금액을 투자하고 많은 지분을 확보하는 2대주주 전략을 취한다. 운용자산은 2019년 상반기 약 5,300억원에서 2025년 말 1조 9,000억원 수준으로 커졌다. 금융지주나 대기업 계열이 아닌 독립계 벤처캐피털이라는 점이 차별점으로 거론된다. 해외에는 미국 보스턴, 중국 상하이, 싱가포르 법인을 두고 있다.",
+  "en": "SV Investment is a venture capital company established in April 2006 that forms investment partnerships and invests in founders and small and mid-sized ventures. It earns management fees as the operating general partner and aims to recover capital through secondary sales, M&A, or listings of portfolio companies. Its funds are sourced from pension funds and financial institutions. On Alphasquare's breakdown, investment fund income accounts for about 69.10%, fund investment income about 30.20%, and other operating income about 0.70%. Its investment areas span biotech and healthcare as well as ICT and cultural content, with life sciences and high-tech forming the core of the portfolio. According to tracxn, the firm had invested in 127 companies as of August 2026, and 35 of them have gone public. Its strategy is to back a few leading companies in a given sector with large checks and take significant stakes as a second-largest shareholder. Assets under management grew from about KRW 530 billion in the first half of 2019 to about KRW 1.9 trillion at end-2025. It is an independent venture capital firm, not part of a financial group or conglomerate. The firm has offices in Boston, Shanghai, and Singapore."
  },
  "earnings": {
-  "ko": "연간 매출은 2023년 3월 결산 254억원에서 2024년 3월 결산 297억원으로 전년 대비 17.3% 증가해 기간 중 가장 큰 해가 됐고, 2025년 3월 결산에는 211억원으로 29.2% 감소해 가장 작은 해가 됐다. 2026년 3월 결산 매출은 214억원으로 전년 대비 1.7% 증가했다. 영업이익은 2024년 3월 결산 63.3억원(전년 대비 39.6% 증가)까지 늘었으나, 2025년 3월 결산에는 영업손실 60.5억원으로 적자 전환했고 2026년 3월 결산 영업손실은 27.2억원으로 손실이 줄었다. 영업이익률은 2023년 3월 결산 17.9%, 2024년 3월 결산 21.3%에서 2025년 3월 결산 -28.7%, 2026년 3월 결산 -12.7%로 떨어졌다. 지배주주 순이익은 2024년 3월 결산 42.9억원에서 2025년 3월 결산 지배주주 순손실 52.3억원으로 바뀌었고, 2026년 3월 결산 지배주주 순손실은 10억원이다. 블로터는 2025년 3월 결산 적자의 배경으로 성과보수 부재, 관리보수 감소, 지분법 평가손실 확대를 꼽았고, 회사는 공정가치 하락으로 인한 평가손실 확대를 이익 하락 원인으로 설명했다. 영업활동 현금흐름은 2023년 3월 결산 -68.5억원, 2024년 3월 결산 -81.9억원, 2025년 3월 결산 -15.1억원, 2026년 3월 결산 -12억원으로 네 해 모두 마이너스였다. 분기 흐름은 2025년 2분기 매출 65.1억원, 영업손실 13.4억원에서 3분기 매출 43.2억원(전 분기 대비 33.7% 감소), 영업손실 2.7억원으로 저점을 찍은 뒤 4분기에는 영업손실 14.4억원으로 적자가 다시 확대됐다. 2026년 1분기에는 매출 60억원, 영업이익 3.3억원으로 흑자 전환했고, 2026년 2분기에는 매출 91.5억원(전 분기 대비 52.5% 증가), 영업이익 15.7억원(전 분기 대비 382.8% 증가)을 기록했다. 같은 기간 지배주주 순이익은 2026년 2분기 7.8억원으로 전 분기 대비 96.2% 증가했다. 최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주 순손실 합계는 3.4억원이다. 분기 실적의 세부 원인은 이번 조사에서 공시나 신뢰 보도로 확인되지 않아, 성과보수 인식 여부와 투자조합 평가손익의 기여분은 2026년 3분기 분기보고서에서 확인이 필요하다.",
-  "en": "Annual revenue rose from KRW 25.4 billion in the year ended March 2023 to KRW 29.7 billion in the year ended March 2024, an increase of 17.3% that made that year the largest of the four. Revenue fell 29.2% to KRW 21.1 billion in the year ended March 2025, the smallest year, and reached KRW 21.4 billion in the year ended March 2026, up 1.7%. Operating profit climbed from KRW 4.54 billion to KRW 6.33 billion in the year ended March 2024, a 39.6% increase, before the year ended March 2025 turned into an operating loss of KRW 6.05 billion. The loss narrowed to KRW 2.72 billion in the year ended March 2026. The operating margin moved from 17.9% and 21.3% in the first two years to -28.7% and -12.7% in the last two. Controlling-shareholder net income went from KRW 4.29 billion in the year ended March 2024 to a net loss of KRW 5.23 billion in the year ended March 2025 and a net loss of KRW 1 billion in the year ended March 2026. Bloter attributed the year ended March 2025 swing to two consecutive years without performance fees, lower management fees and larger equity-method valuation losses, while the company pointed to fair-value declines. Operating cash flow was negative in all four years, at KRW -6.85 billion, KRW -8.19 billion, KRW -1.51 billion and KRW -1.2 billion. Quarterly, revenue of KRW 6.51 billion and an operating loss of KRW 1.34 billion in Q2 2025 were followed by a low point in Q3 2025, with revenue of KRW 4.32 billion (down 33.7% from the prior quarter) and an operating loss of KRW 266 million. Q4 2025 brought an operating loss of KRW 1.44 billion, and Q1 2026 returned to operating profit of KRW 325 million on revenue of KRW 6 billion. Q2 2026 revenue reached KRW 9.15 billion, up 52.5% from the prior quarter and 40.4% from a year earlier, and operating profit reached KRW 1.57 billion, up 382.8% from the prior quarter. Controlling-shareholder net income in Q2 2026 was KRW 776 million. The combined controlling-shareholder net loss for the last four quarters, from Q3 2025 to Q2 2026, was KRW 345 million. The causes behind the quarterly swings were not confirmed in filings or reliable press reports in this review, so the role of performance fee recognition and fund valuation gains should be checked in the Q3 2026 quarterly report."
+  "ko": "연간 실적은 2023년 3월 결산 매출 254억원에서 2024년 3월 결산 297억원(전년 대비 17.3% 증가)으로 기간 중 가장 큰 해를 기록한 뒤, 2025년 3월 결산 211억원(전년 대비 29.2% 감소)으로 가장 작은 해가 됐다. 2026년 3월 결산 매출은 214억원으로 전년 대비 1.7% 증가에 그쳤다. 영업이익은 2024년 3월 결산 63.3억원(전년 대비 39.6% 증가)에서 2025년 3월 결산 영업손실 60.5억원으로 전년 대비 적자 전환했고, 2026년 3월 결산에는 영업손실 27.2억원으로 손실이 줄었다. 영업이익률은 2024년 3월 결산 21.3%에서 2025년 3월 결산 -28.7%, 2026년 3월 결산 -12.7%로 움직였다. 지배주주 순이익은 2024년 3월 결산 42.9억원이었으나 2025년 3월 결산 지배주주 순손실 52.3억원으로 적자 전환했고, 2026년 3월 결산 지배주주 순손실은 10억원이다. 당기순이익(비지배지분 포함)도 같은 방향으로 움직여 2026년 3월 결산 당기순손실은 10억원이다. 와이즈리포트는 2025년 결산 실적 코멘트에서 투자조합수익 감소와 조합관리보수 감소, 조합지분법이익 축소를 실적 부진의 주요 원인으로 꼽았다. 분기 흐름은 방향이 달랐다. 2025년 2분기 매출 65.1억원에서 2025년 3분기 43.2억원(전 분기 대비 33.7% 감소)으로 낮아진 뒤, 2025년 4분기 45.9억원, 2026년 1분기 60억원, 2026년 2분기 91.5억원으로 3개 분기 연속 증가했다. 영업이익은 2025년 3분기 영업손실 2.7억원과 2025년 4분기 영업손실 14.4억원을 거쳐 2026년 1분기 영업이익 3.3억원으로 흑자 전환했고, 2026년 2분기 영업이익은 15.7억원(전 분기 대비 382.8% 증가)이었다. 지배주주 순이익도 2026년 1분기 4억원, 2026년 2분기 7.8억원으로 두 분기 연속 흑자를 냈다. 다만 최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주 순손실 합계는 3.4억원이다. 영업활동 현금흐름은 2023년 3월 결산 -68.5억원에서 2026년 3월 결산 -12억원으로 적자 폭이 줄었다. 공시 수치만으로는 2026년 2분기 실적에서 투자자산 평가이익과 관리보수 중 어느 쪽이 얼마나 기여했는지 구분되지 않는다.",
+  "en": "On an annual basis, revenue rose from KRW 25.4 billion in the March 2023 fiscal year to KRW 29.7 billion in the March 2024 fiscal year, a 17.3% increase and the largest year in the period. It then fell to KRW 21.1 billion in the March 2025 fiscal year, down 29.2% and the smallest year. The March 2026 fiscal year revenue was KRW 21.4 billion, up 1.7%. Operating profit went from KRW 6.33 billion in the March 2024 fiscal year, up 39.6%, to an operating loss of KRW 6.05 billion in the March 2025 fiscal year, a swing into loss. In the March 2026 fiscal year the operating loss narrowed to KRW 2.72 billion. The operating margin moved from 21.3% in the March 2024 fiscal year to -28.7% in the March 2025 fiscal year and -12.7% in the March 2026 fiscal year. Net profit attributable to controlling shareholders was KRW 4.29 billion in the March 2024 fiscal year, then turned into a loss of KRW 5.23 billion in the March 2025 fiscal year and a loss of KRW 1 billion in the March 2026 fiscal year. Net income including non-controlling interests followed the same direction, with a net loss of KRW 1 billion in the March 2026 fiscal year. Quarterly results ran in the opposite direction at points. Revenue fell from KRW 6.51 billion in Q2 2025 to KRW 4.32 billion in Q3 2025, a 33.7% quarterly drop, then rose to KRW 4.59 billion in Q4 2025, KRW 6 billion in Q1 2026, and KRW 9.15 billion in Q2 2026. Operating profit moved from an operating loss of KRW 266 million in Q3 2025 and KRW 1.44 billion in Q4 2025 to operating profit of KRW 325 million in Q1 2026 and KRW 1.57 billion in Q2 2026, up 382.8% from the prior quarter. Net profit attributable to controlling shareholders was KRW 396 million in Q1 2026 and KRW 776 million in Q2 2026. Over the last four quarters, the combined net loss attributable to controlling shareholders was KRW 345 million. Operating cash flow improved from -KRW 6.85 billion in the March 2023 fiscal year to -KRW 1.2 billion in the March 2026 fiscal year. The filed figures alone do not separate how much of the Q2 2026 result came from investment valuation gains versus management fees."
  },
  "industry": {
-  "ko": "창업투자 업종의 실적은 투자 회수 시장과 기술 상장 흐름에 크게 좌우된다. 더벨과의 인터뷰에서 홍원호 대표는 2026년을 상장과 M&A를 통한 회수 성과로 입증해야 할 해로 보고 있다고 밝혔다. 같은 인터뷰에서 AI 변화가 가속화되며 일부 기업만 살아남는 환경이 될 가능성이 크다고 보고, 톱 노치 기업을 신중하게 발굴하겠다는 방침을 전했다. thevc.kr에 실린 언론 보도 제목에 따르면 창업투자주는 AI·딥테크 투자금 회수 기대에 함께 움직였다. 알파스퀘어가 집계한 창업투자 업종 17개사 비교에서 SV인베스트먼트의 2026년 3월 결산 영업이익률은 업종 내 하위권이며, 배당수익률도 업종 평균을 밑도는 편이다. 반면 순자산 대비 배수(PBR)는 업종 내 상위권으로, 업종 평균을 웃도는 수준으로 집계됐다. 이 비교는 집계 시점과 기준이 언론 플랫폼마다 달라 절대치보다 방향으로 읽는 편이 적절하다. 회사가 운용하는 AUM은 1조 9,025억원이며 동종 하우스와의 AUM 순위는 이번 조사에서 확인하지 못했다. 업황 측면의 IPO 시장 여건과 벤처 출자 자금 흐름은 이번 조사에서 수치로 확인되지 않아 정성 서술에 그친다.",
-  "en": "Venture capital earnings depend heavily on the exit market and the pace of technology listings. In an interview with The Bell, CEO Hong Won-ho said 2026 is the year the firm must prove its exit results through listings and M&A. The same interview said AI-driven change is likely to leave only some companies standing, and the firm will focus on selecting top-notch companies carefully. A press headline on thevc.kr said Korean VC shares moved with expectations of AI and deep-tech exits. AlphaSquare's comparison of 17 venture capital companies shows SV Investment's operating margin for the year ended March 2026 in the lower ranks of the sector, and its dividend yield below the sector average. Its price-to-book ratio, by contrast, ranks near the top of the sector and sits above the sector average. Because the aggregation dates and methods differ across platforms, these comparisons are better read as direction than as precise levels. Assets under management stand at KRW 1.9025 trillion, but this review did not confirm where that ranks against peers. Conditions in the IPO market and venture fund inflows were not confirmed with figures, so this section remains qualitative."
+  "ko": "창업투자 산업의 수익은 투자기업의 상장·M&A 등 회수 시점에 크게 좌우된다. 회사는 바이오와 딥테크 분야 투자기업을 보유하고 있어 투자자산의 가치 상승과 회수 성과가 실적에 영향을 미치는 구조다. 회사 대표는 벤처캐피털의 성과를 통상 7~10년 이상의 기간으로 평가해야 한다고 밝혔다. 국내 시장에서는 금융지주나 대기업 계열이 아닌 독립계 하우스로 분류된다. 해외 진출에서는 국내 벤처캐피털 가운데 가장 적극적인 하우스로 꼽힌다. 현지 해외 운용사와 공동운용(Co-GP) 형태로 펀드를 결성하면 현지 투자 기회에 접근하고 리스크를 분산할 수 있다는 장점이 설명된다. AI 반도체 분야에서는 리벨리온의 상장 기대가 2026년 1월 주가 상승의 배경으로 보도됐다. AI 산업 재편 속에서 일부 기업만 살아남을 가능성이 크다는 것이 회사의 판단이다.",
+  "en": "Venture capital earnings depend heavily on exit timing, meaning listings and M&A of portfolio companies. The firm holds investments in biotech and deep-tech companies, so the rise in portfolio values and exit outcomes feed directly into results. The firm's CEO has said venture capital performance should be judged over periods of seven to ten years or more. Among domestic players, the company is classed as an independent house, not part of a financial group or conglomerate. It is regarded as one of the most active domestic venture firms in overseas expansion. Forming co-GP funds with overseas managers gives access to local deal flow and spreads risk. In AI semiconductors, expectations of a Rebellions listing were reported as a driver of the share price rise in January 2026. The company's view is that only some companies may survive a reshuffle driven by AI."
  },
  "outlook": {
-  "ko": "회사가 2026년 목표로 내세운 것은 운용자산 2조원 돌파와 회수 실적의 가시화다. 홍원호 대표는 상장과 M&A를 통한 회수와 펀드레이징 성과를 2026년에 증명하겠다고 밝혔다(더벨, 2026년 1월 보도). 같은 보도에서 글로벌 오픈 이노베이션 펀드 500억원 규모의 결성을 추진 중이며, 동남아 대상 역외펀드와 미국 시장 대상 펀드레이징도 계획돼 있다고 전했다. 국내 펀드인 에스브이 Gap-Coverage펀드 5호는 2026년 3월 말까지 멀티클로징으로 약정총액을 2,000억원으로 늘릴 계획이었으나, 그 이후의 최종 결과는 이번 조사에서 확인하지 못했다. 2026년 11월 보도에 따르면 엔키화이트햇은 코스닥 상장 예심을 통과해 11월 일반 공모에 들어갔고, SV인베스트먼트에게는 상장 후 주가 흐름과 최종 회수 수익률이 성패의 기준이 될 것으로 전망됐다. 같은 보도는 회사가 제시한 연간 매출 목표(240억원대)를 4분기에 채울 수 있을지도 관전 포인트로 꼽았다. 이 목표는 회사가 제시한 수치이며 공시 실적이 아니다. 엔키화이트햇 상장 시 의무보유 확약 비율이 오버행 우려를 얼마나 줄일지도 확인할 대목이다. 회사가 제시한 방향과 실제 결과의 차이는 2026년 3분기 분기보고서와 2027년 3월 결산 사업보고서에서 확인된다.",
-  "en": "The company's stated 2026 goals are to pass KRW 2 trillion in assets under management and to make exit results visible. CEO Hong Won-ho said in a January 2026 interview with The Bell that the firm would prove its fundraising and exit results through listings and M&A this year. The same report said a KRW 50 billion global open-innovation fund was being formed with a Chinese medical device group's investment arm, alongside a planned offshore fund for Southeast Asia and U.S. fundraising focused on biotech. The domestic Gap-Coverage Fund No. 5 was slated to raise its total commitments to KRW 200 billion through multiple closings by end-March 2026, but the final outcome was not confirmed in this review. A November 2026 press report said a cybersecurity portfolio company passed the KOSDAQ preliminary review and entered its general public offering in November, and that its post-listing share price and final exit returns would be the yardstick for the firm. The same report flagged whether the company can reach its stated annual revenue target in the 240-billion-won range in the fourth quarter. That target is a company-stated figure, not a filed result. The lock-up commitment ratio at listing will also determine how much overhang concern eases. Gaps between stated direction and actual results will be visible in the Q3 2026 quarterly report and the FY2027 annual report."
+  "ko": "회사가 밝힌 목표는 운용자산 2조원 돌파다. 2026년 1월 보도에서는 운용자산이 2조원을 넘어설 것으로 전망됐다. 2025년에는 1,741억원의 신규 펀드를 조성했고, 2026년 들어서는 연내 펀드레이징 규모가 1,000억원을 넘었다고 보도됐다. 모태펀드를 포함한 2026년 출자사업이 더해지면 최종 펀딩 규모가 커질 가능성도 언급됐다. 글로벌 펀드로는 중국 대형 의료기기 업체 산하 투자사와 컨소시엄을 이뤄 500억원 규모 글로벌 오픈 이노베이션 펀드 결성을 추진하는 것으로 보도됐다. 동남아를 겨냥한 1,000만달러 규모의 웹3.0 펀드는 2026년 하반기 결성을 목표로 제시됐다. 투자 측면에서는 리벨리온과 세계 1위 동박 소재 기업 롱띠엔의 상장 · 회수 준비가 거론됐다. 리벨리온의 상장 일정은 보도에서 확정되지 않았다. 2026년 2분기 흑자 전환이 3분기 이후에도 이어지는지는 다음 분기 보고서에서 확인할 사안이다.",
+  "en": "The company's stated goal is to push assets under management above KRW 2 trillion. A January 2026 report projected that AUM would exceed KRW 2 trillion. The firm formed about KRW 174.1 billion in new funds in 2025, and in 2026 fundraising for the year already exceeded KRW 100 billion, according to press reports. Additional government fund-of-funds allocations could expand the final fundraising total. For global funds, the firm was reported to be pursuing a KRW 50 billion open innovation fund as co-GP with an investment arm of a large Chinese medical device group. A USD 10 million Web3.0 fund targeting Southeast Asia was set for formation in the second half of 2026. On exits, preparations for the listings of Rebellions and a global copper-foil materials company were mentioned. The timing of the Rebellions listing has not been fixed in reports. Whether the Q2 2026 turn to profit continues after Q3 will be checked in the next quarterly filing."
  },
  "valuation_comment": {
-  "ko": "현재 PER은 최근 네 개 분기 합산 지배주주 순손실 구조 때문에 산출되지 않는다. 순자산 대비 배수(PBR)는 업종 평균을 웃도는 수준이며, 자본총계 전액이 지배주주 지분이어서 장부상 자기자본은 모두 지배주주 몫이다. 배당수익률은 업종 평균을 밑도는 편이다. 연간 손익이 적자인 상태에서 순자산 대비 배수가 높게 형성되어 있다는 것은 장부가치 이상의 가치가 가격에 얹혀 있다는 뜻이며, 그 근거는 포트폴리오 평가와 회수 가능성이다. 회사도 투자자산의 가치 상승과 회수 성과가 실적에 영향을 준다고 설명하는 만큼, 상장이나 M&A가 실제 회수로 이어지는지가 밸류에이션 해석의 출발점이다. 과거 거래 구간과 비교하면 주가는 포트폴리오 관련 재료에 따라 큰 폭으로 움직여 온 것으로 보도됐다. 주가 수준의 적정성을 판단하는 것은 이 리포트의 범위가 아니며, 현재 주가·PBR·배당수익률 등 수치는 화면 카드에서 실시간으로 확인할 수 있다.",
-  "en": "The current P/E cannot be calculated because the controlling-shareholder net loss over the last four quarters leaves no positive earnings base. The price-to-book ratio sits above the sector average, and because total equity is entirely attributable to controlling shareholders, book value belongs wholly to the parent's holders. The dividend yield is below the sector average. With annual results still in loss, a high multiple on book value means the price reflects value beyond book, and the basis for that is portfolio valuation and exit potential. The company itself says gains in portfolio value and exit results affect its earnings, so whether listings and M&A translate into realized exits is the starting point for reading the valuation. Press reports have described the share price as moving sharply on portfolio-related news. Whether the price level is appropriate is outside the scope of this report, and current price and multiple figures are shown live on the screen."
+  "ko": "주가는 순자산가치를 웃도는 구간에 있어 주가순자산비율(PBR)은 1배를 넘는다. 순자산은 투자조합 지분과 투자자산의 공정가치 평가에 좌우되므로, 평가 수준이 바뀌면 같은 자본총계에서도 배수가 달라진다. 2026년 3월 말 자본총계는 699억원이며 이 중 지배주주 지분이 전부를 차지한다. 주가수익비율(PER)은 최근 4개 분기 지배주주 순손실 합계로 산출되지 않는다. 연간으로는 2025년 3월 결산과 2026년 3월 결산에 적자가 이어져 이익 기반 비교가 어렵다. 2026년 2분기 흑자 전환은 이익 기반이 회복되는 방향을 보여 주지만, 분기 한 번의 데이터만으로는 이익 체력을 가늠하기 어렵다. 배당은 규모가 작아 주가 대비 현금 배당 수익률이 낮은 편이다.",
+  "en": "The share price trades above net asset value, so the price-to-book ratio is above 1x. Net assets depend on the fair-value measurement of fund stakes and portfolio investments, so the multiple moves with valuation levels even when equity is unchanged. Total equity was KRW 69.9 billion at the end of March 2026, all attributable to controlling shareholders. A price-to-earnings ratio cannot be calculated from the combined net loss over the last four quarters. On an annual basis, losses in the March 2025 and March 2026 fiscal years make earnings-based comparison difficult. The Q2 2026 swing to profit points to an earnings base that is recovering, but one quarter of data is limited as a gauge of earnings power. Cash dividends are small relative to the share price, so the dividend yield is on the low side."
  },
  "bull": [
   {
    "title": {
-    "ko": "분기 흑자 전환과 매출 연속 증가",
-    "en": "Quarterly Turnaround and Rising Revenue"
+    "ko": "2026년 2분기 흑자 전환과 매출 회복",
+    "en": "Q2 2026 turned profitable as revenue recovered"
    },
    "body": {
-    "ko": "2026년 2분기 영업이익은 15.7억원으로 전년 동기 영업손실에서 흑자로 돌아섰다. 매출은 2025년 4분기부터 3개 분기 연속 증가해 91.5억원을 기록했다. 2026년 1분기 영업이익 3.3억원에 이어 2분기까지 흑자가 이어졌다는 점이 분기 흐름의 강세 요인이다.",
-    "en": "Operating profit reached KRW 1.57 billion in Q2 2026, turning positive from a year-earlier operating loss. Revenue has risen for three consecutive quarters since Q4 2025 to KRW 9.15 billion. Operating profit of KRW 325 million in Q1 2026 was followed by a second profitable quarter, which is the main bullish point in the quarterly trend."
+    "ko": "2026년 2분기 매출은 91.5억원으로 전년 동기 대비 40.4% 증가했고, 영업이익은 15.7억원으로 전년 동기 대비 흑자 전환했다. 2025년 4분기부터 2026년 2분기까지 3개 분기 연속 매출이 늘어 분기 흐름이 개선되고 있다는 근거가 된다. 다만 공시 수치만으로는 투자자산 평가이익과 관리보수 중 어느 쪽이 얼마나 기여했는지 구분되지 않는다.",
+    "en": "Q2 2026 revenue reached KRW 9.15 billion, up 40.4% from a year earlier, and operating profit was KRW 1.57 billion, a swing to profit from a year earlier. Revenue has risen for three consecutive quarters from Q4 2025 through Q2 2026, which supports the view of a quarterly recovery. However, the filed figures alone do not separate how much came from investment valuation gains versus management fees."
    }
   },
   {
    "title": {
-    "ko": "엔키화이트햇 상장을 통한 회수 기대",
-    "en": "Exit Expectations Tied to a Cybersecurity Listing"
+    "ko": "운용자산 확대와 펀드 결성 흐름",
+    "en": "Growing AUM and fund formation"
    },
    "body": {
-    "ko": "2026년 11월 보도에 따르면 엔키화이트햇 상장을 앞두고 투입 원금 71억원 대비 지분 가치가 공모 희망가 범위 기준 263억원에서 333억원으로 추정됐다. 보도는 이 상장이 LP 회수 불확실성을 줄일 수 있다고 전했다. 실제 회수 금액은 상장 후 주가와 매각 시점, 의무보유 확약 비율에 따라 달라진다.",
-    "en": "A November 2026 report estimated the stake in a cybersecurity portfolio company at KRW 26.3 billion to KRW 33.3 billion on the indicative offering range, against KRW 7.1 billion invested. The report said the listing could ease uncertainty about returns for limited partners. Actual realized proceeds will depend on post-listing share prices, the timing of sales and the lock-up commitment ratio."
+    "ko": "운용자산은 2019년 상반기 약 5,300억원에서 2025년 말 1조 9,000억원 수준으로 늘었다. 2025년 신규 펀드 결성액은 1,741억원이었고, 2026년 들어서는 연내 펀드레이징 규모가 1,000억원을 넘었다고 보도됐다. 모태펀드 출자사업이 더해지면 최종 규모가 커질 가능성도 언급됐다.",
+    "en": "Assets under management grew from about KRW 530 billion in the first half of 2019 to about KRW 1.9 trillion at end-2025. New fund formation was KRW 174.1 billion in 2025, and 2026 fundraising already exceeded KRW 100 billion by early 2026, according to press reports. Government fund-of-funds allocations could enlarge the final total."
    }
   },
   {
    "title": {
-    "ko": "AUM 확대와 펀드레이징 성과",
-    "en": "AUM Growth and Fundraising Momentum"
+    "ko": "대형 포트폴리오의 회수 기대",
+    "en": "Expected exits from large holdings"
    },
    "body": {
-    "ko": "운용자산(AUM)은 2025년 말 1조 9,025억원으로 2020년 이후 매년 늘어난 것으로 집계된다. 더벨은 2025년 신규 펀드 결성액이 1,741억원으로 전년 465억원의 약 4배라고 보도했다. 회사가 2026년 AUM 2조원 돌파를 목표로 제시한 만큼, 운용 규모가 커지면 관리보수 기반도 넓어질 수 있다.",
-    "en": "Assets under management reached KRW 1.9025 trillion at end-2025 and have risen each year since 2020 in the reported series. The Bell reported that new fund formation in 2025 totaled KRW 174.1 billion, about four times the KRW 46.5 billion of the prior year. With the company targeting above KRW 2 trillion in AUM in 2026, a larger base could widen the management fee foundation."
+    "ko": "AI 반도체 팹리스 기업 리벨리온에는 450억원 이상이 투입됐고 상장 기대가 보도됐다. 세계 1위 동박 소재 기업 롱띠엔은 미국 상장을 준비 중이라는 보도가 나왔다. 회수가 실현되면 투자자산 평가이익과 실적 변동성에 직접 반영되므로 회수 일정이 중요한 변수다.",
+    "en": "Rebellions, an AI semiconductor fabless company, received more than KRW 45 billion from the firm, and press reports covered expectations of its listing. A global copper-foil materials company was reported to be preparing a US listing. Realized exits would feed directly into valuation gains and earnings volatility, which makes timing an important variable."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "2년 연속 적자와 성과보수 공백",
-    "en": "Two Straight Loss Years and No Performance Fees"
+    "ko": "2년 연속 적자와 누적 순손실",
+    "en": "Two loss-making years and a cumulative net loss"
    },
    "body": {
-    "ko": "2025년 3월 결산 영업손실은 60.5억원, 2026년 3월 결산 영업손실은 27.2억원으로 두 해 연속 손실이다. 블로터는 2025년 3월 결산에 성과보수가 2년 연속 지급되지 않았다고 보도했다. 2026년 3월 결산 영업이익률은 -12.7%로 집계되며, 업종 내 하위권이라는 점이 약세 요인이다.",
-    "en": "Operating losses were KRW 6.05 billion in the year ended March 2025 and KRW 2.72 billion in the year ended March 2026, two consecutive loss years. Bloter reported that no performance fees were paid for two straight years through the year ended March 2025. The operating margin of -12.7% for the year ended March 2026 ranks in the lower part of the sector, which is the main bearish point."
+    "ko": "2025년 3월 결산에 영업손실 60.5억원으로 적자 전환했고, 2026년 3월 결산에도 영업손실 27.2억원이 이어졌다. 지배주주 순손실은 2026년 3월 결산 10억원으로 줄었지만 적자는 계속됐다. 최근 4개 분기(2025년 3분기~2026년 2분기) 지배주주 순손실 합계는 3.4억원이다.",
+    "en": "The March 2025 fiscal year turned to an operating loss of KRW 6.05 billion, and the March 2026 fiscal year still posted an operating loss of KRW 2.72 billion. The net loss attributable to controlling shareholders narrowed to KRW 1 billion in the March 2026 fiscal year, but the loss continued. Over the last four quarters, the combined net loss attributable to controlling shareholders was KRW 345 million."
    }
   },
   {
    "title": {
-    "ko": "만기 도래 펀드와 관리보수 감소 우려",
-    "en": "Fund Maturities and Pressure on Management Fees"
+    "ko": "투자조합수익 의존과 평가손익 변동",
+    "en": "Reliance on fund income and valuation swings"
    },
    "body": {
-    "ko": "2025년 보도에 따르면 당시 기준 '올해부터 내년까지' 만기가 도래하는 펀드 6개의 운용 규모는 약 3,500억원이었다. 펀드 만기로 AUM이 줄면 관리보수가 감소할 것이라는 우려가 제기됐다. 회사는 신규 펀드 결성으로 대응하고 있으나, 2026년 3월 말까지 목표한 펀드 결과는 이번 조사에서 확인되지 않았다.",
-    "en": "A 2025 report said six funds maturing over the following two years held roughly KRW 350 billion in assets. The report noted that concern existed that shrinking AUM from maturities would reduce management fees. The company is responding with new fund formation, but the results of the fund closings targeted for end-March 2026 were not confirmed in this review."
+    "ko": "매출의 대부분은 투자조합수익과 운용투자수익에서 나온다. 와이즈리포트는 2025년 결산 실적 코멘트에서 투자조합수익과 조합관리보수 감소, 조합지분법이익 축소를 실적 부진의 주요 원인으로 꼽았다. 금융자산 평가이익이 늘어도 비용 증가로 수익성이 악화됐다는 분석도 있다.",
+    "en": "Most revenue comes from fund-related income and fund investment income. A research summary attributed the weak 2025 results mainly to lower fund income, lower management fees, and a smaller equity-method contribution from funds. Another analysis noted that higher valuation gains were offset by rising costs, leaving profitability weaker."
    }
   },
   {
    "title": {
-    "ko": "평가손익 변동과 일부 부문의 성장통",
-    "en": "Valuation Swings and Growing Pains in Some Units"
+    "ko": "영업현금 적자와 부채 증가",
+    "en": "Operating cash outflows and rising leverage"
    },
    "body": {
-    "ko": "2025년 3월 결산 적자의 배경에는 지분법 평가손실 확대가 있었고, 회사는 공정가치 하락을 이익 하락 원인으로 설명했다. 홍원호 대표는 2025년 사모펀드(PEF)와 글로벌 부문이 성장통을 겪었다고 밝혔다. 2026년 2분기 흑자 전환도 평가이익 변동에 좌우될 수 있어 분기 실적의 지속성은 추가 확인이 필요하다.",
-    "en": "Equity-method valuation losses widened in the year ended March 2025, and the company attributed the profit decline to lower fair values. CEO Hong Won-ho said the PEF and global units went through growing pains in 2025. Because the Q2 2026 turnaround could also depend on valuation gains, the durability of quarterly profits needs further confirmation."
+    "ko": "영업활동 현금흐름은 2023년 3월 결산 -68.5억원에서 2026년 3월 결산 -12억원으로 적자 폭이 줄었지만 적자 자체는 남아 있다. 부채비율은 2023년 3월 결산 10.3%에서 2026년 3월 결산 32.6%로 올랐다. 2026년 3월 말 자본총계는 699억원, 부채총계는 228억원이다.",
+    "en": "Operating cash flow improved from -KRW 6.85 billion in the March 2023 fiscal year to -KRW 1.2 billion in the March 2026 fiscal year, but it remains negative. The debt ratio rose from 10.3% in the March 2023 fiscal year to 32.6% in the March 2026 fiscal year. At end-March 2026, total equity was KRW 69.9 billion and total liabilities KRW 22.8 billion."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "평가손익·회수 시점 리스크",
-    "en": "Valuation and Exit Timing Risk"
+    "ko": "회수 시점과 상장 일정",
+    "en": "Exit timing and listing schedules"
    },
    "body": {
-    "ko": "투자자산의 공정가치 변동이 손익에 직접 반영되는 구조다. 상장이 지연되거나 M&A가 불발되면 회수 시점이 밀리고 평가이익이 줄 수 있다. 엔키화이트햇 상장에서는 상장 후 오버행 우려와 의무보유 확약 비율이 쟁점으로 거론됐다.",
-    "en": "Earnings are directly affected by fair-value changes in portfolio assets. If listings are delayed or M&A fails, exit timing shifts and valuation gains may shrink. For the cybersecurity listing, post-listing overhang concerns and the lock-up commitment ratio have been cited as issues."
+    "ko": "투자자산 수익은 피투자기업의 상장·M&A 시점에 좌우된다. 리벨리온 투자액은 보도마다 차이가 있어 한 매체는 400억원, 다른 매체는 450억원 이상으로 전했다. 상장 일정도 보도에서 확정되지 않았으므로 회수 지연이 평가이익과 실적에 미치는 영향은 크다.",
+    "en": "Investment returns depend on when portfolio companies list or are sold. Press reports differ on the Rebellions investment size, with one citing about KRW 40 billion and another more than KRW 45 billion. Listing timing has not been fixed in reports, so any delay in exits would weigh on valuation gains and results."
    }
   },
   {
    "cat": {
-    "ko": "펀드 만기·관리보수 리스크",
-    "en": "Fund Maturity and Management Fee Risk"
+    "ko": "펀드 결성과 관리보수 기반",
+    "en": "Fund formation and management fee base"
    },
    "body": {
-    "ko": "만기가 도래하는 펀드가 많아 관리보수 기반이 줄 가능성이 있다. 2025년 3월 결산 관리보수는 157억원으로 전년 대비 소폭 감소했다. 신규 펀드 결성이 목표에 못 미치면 AUM 감소가 관리보수 감소로 누적될 수 있다.",
-    "en": "Many funds are reaching maturity, which could shrink the management fee base. Management fees for the year ended March 2025 declined slightly to KRW 15.7 billion. If new fund formation falls short of targets, AUM declines could accumulate into lower management fee income."
+    "ko": "관리보수는 운용자산과 펀드 결성 규모에 따라 달라진다. 2025년 결산에서 조합관리보수 감소가 실적 부진 요인으로 꼽혔다. 웹3.0 펀드 1,000만달러 규모는 2026년 하반기 결성을 목표로 제시됐다.",
+    "en": "Management fees move with assets under management and the size of new funds. Lower management fees were cited as a drag on the 2025 results. The planned USD 10 million Web3.0 fund was targeted for formation in the second half of 2026."
    }
   },
   {
    "cat": {
-    "ko": "성과보수 재개와 시장 변동성 리스크",
-    "en": "Performance Fee Recovery and Market Volatility"
+    "ko": "집중 투자와 산업 재편 변수",
+    "en": "Concentrated bets and industry reshuffling"
    },
    "body": {
-    "ko": "성과보수는 2년 연속 지급되지 않았고, 재개 시점은 회수 실적에 달려 있다. 창업투자주는 AI·딥테크 테마에 따라 함께 움직이는 경향이 보도에서 확인된다. 글로벌 부문의 성장통이 이어지면 해외 펀드를 통한 수익 기반이 제한될 수 있다.",
-    "en": "No performance fees were paid for two straight years, and their return depends on exit results. Press coverage shows venture capital shares moving together with AI and deep-tech themes, which adds volatility. If growing pains in the global unit persist, the earnings base from overseas funds could stay limited."
+    "ko": "소수의 톱 노치 기업에 집중하는 전략이라 개별 기업 가치 변화가 평가손익에 크게 반영된다. 회사도 AI 산업 재편으로 일부 기업만 살아남을 가능성을 언급했다. 공모시장 상황에 따라 상장을 전제로 한 평가가 달라질 수 있다.",
+    "en": "Because the firm concentrates on a few top-notch companies, changes in individual company values feed heavily into valuation gains. The company itself has noted that AI-driven change could leave only some companies standing. Listing-based valuations can also shift with conditions in the IPO market."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월",
-    "en": "November 2026"
+    "ko": "2026년 11월 14일",
+    "en": "November 14, 2026"
    },
    "what": {
-    "ko": "엔키화이트햇의 코스닥 일반 공모와 상장 절차. 상장 후 주가 흐름, 의무보유 확약 비율, SV인베스트먼트의 지분 매각 시점을 확인해 회수 규모가 실적에 어떻게 잡히는지 본다.",
-    "en": "The general public offering and listing of the cybersecurity portfolio company on KOSDAQ. Post-listing share performance, the lock-up commitment ratio and the timing of SV Investment's stake sales determine how much of the return flows into earnings."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 11월 14일까지",
-    "en": "By November 14, 2026"
-   },
-   "what": {
-    "ko": "2026년 3분기(7~9월) 분기보고서 제출 기한(분기 종료 후 45일). 2분기 흑자 전환이 3분기에도 이어지는지, 성과보수 인식 여부와 투자조합 평가손익의 기여분을 확인한다.",
-    "en": "Deadline for the Q3 2026 quarterly report covering July to September, due 45 days after quarter-end. The check is whether the Q2 profit turnaround holds in Q3 and whether performance fees or fund valuation gains were recognized."
+    "ko": "2026년 3분기(7~9월) 분기보고서 제출 기한. 영업이익의 흑자 흐름이 이어지는지, 투자조합수익 비중이 어떻게 움직였는지 확인할 지점이다.",
+    "en": "Filing deadline for the Q3 2026 (July to September) quarterly report. Check whether operating profit stays positive and how the share of fund income moved."
    }
   },
   {
@@ -172,8 +162,18 @@
     "en": "End of December 2026"
    },
    "what": {
-    "ko": "회사가 제시한 2026년 AUM 2조원 목표와 연내 신규 펀드 결성 실적. 펀드레이징이 관리보수 기반을 얼마나 넓히는지, 만기 도래 펀드의 AUM 감소분을 상쇄하는지 확인한다.",
-    "en": "The company's 2026 target of KRW 2 trillion in AUM and the year-end result of new fund formation. The check is whether fundraising offsets AUM lost to fund maturities and widens the management fee base."
+    "ko": "회사가 제시한 운용자산 2조원 목표의 달성 여부를 확인할 시점이다.",
+    "en": "The point at which the stated KRW 2 trillion AUM target can be checked."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 2월 14일",
+    "en": "February 14, 2027"
+   },
+   "what": {
+    "ko": "2026년 4분기(10~12월) 분기보고서 제출 기한. 연간 누적 영업손익이 2026년 3월 결산 대비 어떻게 바뀌는지 확인할 지점이다.",
+    "en": "Filing deadline for the Q4 2026 (October to December) quarterly report. Check how cumulative operating results compare with the March 2026 fiscal year."
    }
   },
   {
@@ -182,32 +182,33 @@
     "en": "End of June 2027"
    },
    "what": {
-    "ko": "2027년 3월 결산 사업보고서 제출 기한. 연간 영업이익 흑자 전환 여부, 성과보수 재개 여부, 영업활동 현금흐름의 개선 여부를 확인하는 기준 시점이다.",
-    "en": "Deadline for the annual report for the year ending March 2027. It is the reference point for whether annual operating profit turns positive, performance fees resume, and operating cash flow improves."
+    "ko": "2027년 3월 결산 사업보고서 제출 기한. 다음 정기보고서의 영업이익률이 흑자로 돌아서는지가 다음 확인 지점이다.",
+    "en": "Filing deadline for the annual report for the March 2027 fiscal year. Whether the operating margin turns positive in that report is the next checkpoint."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "SV인베스트먼트는 2026년 2분기 영업이익 흑자 전환과 매출 3개 분기 연속 증가로 분기 기준 개선 신호를 보였다. 다만 2025년 3월 결산과 2026년 3월 결산이 모두 영업손실과 지배주주 순손실이었던 만큼, 연간 체력은 아직 회복 단계로 보기 어렵다. 2026년 3월 말 자본총계 699억원은 전액 지배주주 지분이며 부채비율은 32.6%로 재무 부담은 제한적이다. 운용자산이 1조 9,025억원으로 늘고 신규 펀드 결성이 확대된 점은 관리보수 기반을 넓힐 수 있는 요인이다. 반면 성과보수가 2년 연속 지급되지 않았고 만기 도래 펀드의 AUM 감소 우려가 남아 있어 실적 변동성은 여전히 크다. 엔키화이트햇 상장을 포함한 포트폴리오 회수가 이어지는지가 성과보수 재개와 평가이익 회복을 가르는 핵심 변수다. PER은 산출되지 않고 PBR은 업종 평균을 웃도는 수준이어서, 시장이 장부가치 이상의 회수 가능성을 가격에 두고 있는지는 상장과 회수 결과로 확인될 사안이다. 다음 확인 지점은 2026년 3분기 분기보고서와 2027년 3월 결산 사업보고서다.",
-   "en": "SV Investment showed quarterly improvement, with operating profit turning positive in Q2 2026 and revenue rising for three consecutive quarters. However, both the year ended March 2025 and the year ended March 2026 recorded operating losses and controlling-shareholder net losses, so annual earnings power is not yet in a clear recovery. Total equity of KRW 69.9 billion at end-March 2026 is entirely attributable to controlling shareholders, and the debt ratio of 32.6% suggests limited financial strain. AUM growth to KRW 1.9025 trillion and expanded fund formation could widen the management fee base. On the other hand, no performance fees were paid for two straight years, and concern about AUM shrinkage from fund maturities remains, so earnings volatility stays high. Whether portfolio exits such as the cybersecurity listing materialize is the key variable for a return of performance fees and valuation gains. The P/E cannot be calculated, and the price-to-book ratio sits above the sector average, so whether the market is pricing in exit potential beyond book value will be shown by listing and realization outcomes. The next checkpoints are the Q3 2026 quarterly report and the annual report for the year ending March 2027."
+   "ko": "SV인베스트먼트는 벤처투자조합 결성과 투자 회수로 수익을 얻는 벤처캐피털이며, 매출의 대부분을 투자조합수익과 운용투자수익에서 얻는다. 2025년 3월 결산과 2026년 3월 결산에는 영업손실과 순손실이 이어졌고, 부채비율도 10%대에서 30%대 초반으로 올랐다. 반면 2026년 2분기에는 매출 91.5억원, 영업이익 15.7억원으로 흑자 전환했고 매출은 3개 분기 연속 증가했다. 운용자산은 1조 9,000억원 수준에서 2조원 돌파를 목표로 제시됐고, 리벨리온 등 포트폴리오의 회수 일정이 실적 변동의 핵심 변수다. 강세 요인은 분기 흐름의 회복과 펀드 결성 확대이고, 약세 요인은 투자자산 평가손익과 회수 시점에 따른 변동성, 그리고 최근 4개 분기 누적 순손실이다. 다음 확인 지점은 2026년 3분기 분기보고서와 2027년 3월 결산 사업보고서이며, 두 보고서에서 영업손익의 흑자 지속 여부와 투자조합수익 비중을 함께 볼 수 있다.",
+   "en": "SV Investment is a venture capital firm that earns income from forming investment partnerships and exiting portfolio investments, with most revenue coming from fund-related income and fund investment income. The March 2025 and March 2026 fiscal years both recorded operating and net losses, and the debt ratio rose from 10.3% to 32.6%. In contrast, Q2 2026 posted revenue of KRW 9.15 billion and operating profit of KRW 1.57 billion, a swing to profit, and revenue has risen for three consecutive quarters. AUM of about KRW 1.9 trillion at end-2025 has a stated target above KRW 2 trillion, and the exit timing of holdings such as Rebellions is a key swing factor. Strengths include the quarterly recovery and expanding fund formation. Weaknesses include volatility from valuation gains and exit timing, along with the cumulative net loss over the last four quarters. The next checkpoints are the Q3 2026 quarterly report and the annual report for the March 2027 fiscal year, where continued operating profit and the share of fund income can be checked together."
   }
  },
  "sources": [
-  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=289080",
-  "https://www.leadeconomy.co.kr/news/articleView.html?idxno=11072",
-  "https://thevc.kr/svinvestment",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A289080",
-  "https://alphasquare.co.kr/home/stock-summary?code=289080",
-  "https://m.thebell.co.kr/m/newsview.asp?svccode=00&newskey=202601201410498640102058",
-  "https://www.bloter.net/news/articleView.html?idxno=639010",
-  "https://tracxn.com/d/venture-capital/sv-investment/__J0GmoaibYuAm4wcAUOr2ax8xFlPTYUEfQS2PtyCmCho",
-  "https://www.bloter.net/news/articleView.html?idxno=640718",
-  "https://www.investing.com/equities/sv-investment-corporation",
   "https://www.jobkorea.co.kr/recruit/co_read/c/svinvest00",
+  "https://alphasquare.co.kr/home/stock-summary?code=289080",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=289080",
+  "https://www.investing.com/equities/sv-investment-corporation",
+  "https://www.jobkorea.co.kr/company/45281159",
   "https://www.thebell.co.kr/front/newsview.asp?key=202601211542229080107787",
-  "https://finance.eduinfom.com/2026/08/14063/",
-  "https://kr.investing.com/equities/sv-investment-corporation-dividends"
+  "https://tracxn.com/d/venture-capital/sv-investment/__J0GmoaibYuAm4wcAUOr2ax8xFlPTYUEfQS2PtyCmCho",
+  "https://thevc.kr/svinvestment",
+  "https://view.asiae.co.kr/en/article/2026011409523080698",
+  "https://www.topdaily.kr/articles/97170",
+  "https://www.bloter.net/news/articleView.html?idxno=643354",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A289080",
+  "https://m.thebell.co.kr/m/newsview.asp?svccode=00&newskey=202601201410498640102058",
+  "https://news.nate.com/view/20180710n26471",
+  "https://www.hanaw.com/download/research/FileServer/WEB/industry/enterprise/2018/06/20/IPO_180621_SVInvest_3.pdf"
  ],
  "v": 2,
  "model": "claude-haiku-5-5",
@@ -219,9 +220,9 @@
   "금융"
  ],
  "market": "코스닥",
- "reportDate": "2026-11-10",
- "reportTs": "2026-11-10 11:46",
- "dataDate": "20261109",
+ "reportDate": "2026-11-11",
+ "reportTs": "2026-11-11 02:48",
+ "dataDate": "20261110",
  "quant": {
   "asOf": "2026-11-10",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -325,14 +326,14 @@
    }
   ],
   "valuation": {
-   "price": 2055,
-   "mcap": 0.1236,
+   "price": 2135,
+   "mcap": 0.1284,
    "shares": 60138233,
    "total_shares": 60138233,
    "wavg_shares": 59703116,
    "per": null,
    "eps": -7,
-   "pbr": 1.5451,
+   "pbr": 1.6053,
    "bps": 1330,
    "roe_ttm": -0.5,
    "ttm_window": "2025Q3~2026Q2",
@@ -340,15 +341,16 @@
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 1.6,
+   "pbr_krx": 1.66,
    "bps_krx": 1287.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 20.0,
-   "div": 0.97,
+   "div": 0.94,
    "hidden": {
     "per": "loss"
    }
   },
   "fy_end_month": 3
- }
+ },
+ "textRules": 2
 }

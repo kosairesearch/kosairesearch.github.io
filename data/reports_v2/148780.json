@@ -1,217 +1,226 @@
 {
  "title": {
-  "ko": "비큐AI, 분기 흑자 전환과 연간 적자의 공존",
-  "en": "Becu AI: Quarterly Profit Turn Amid Annual Losses"
+  "ko": "본업 적자 속 순이익 흑전, 데이터 매출이 관건",
+  "en": "Core Losses Persist as Data Revenue Tests the Turnaround"
  },
  "lead": {
-  "ko": "비큐AI는 매출이 연 170억원 안팎에서 정체된 가운데 2026년 3분기 지배주주 순이익이 전년 동기 대비 흑자로 돌아섰지만, 영업손실은 5개 분기 연속 이어져 영업 단위 수익성 회복 여부가 핵심 확인 지점이다.",
-  "en": "Becu AI's revenue has stalled around KRW 17 billion a year, and its controlling-shareholder net income turned positive in Q3 2026, yet operating losses have persisted for five straight quarters, making operating profitability the key item to verify."
+  "ko": "비큐AI는 2026년 3분기 지배주주 순이익이 전년 동기 대비 흑자 전환했지만 영업손실은 5개 분기 연속 이어지고 있어, AI 학습 데이터 매출이 본업 적자를 얼마나 줄이는지가 핵심 확인 지점이다.",
+  "en": "Becu AI swung to a net profit attributable to controlling shareholders in Q3 2026, but operating losses have run for five consecutive quarters, so whether AI training-data revenue narrows the core losses is the key test."
  },
  "keypoints": [
   {
-   "ko": "연간 매출은 2022년 163억원에서 2025년 170억원으로 170억원 안팎에서 정체되어 있다.",
-   "en": "Annual revenue has moved within a narrow band, from KRW 16.3 billion in 2022 to KRW 17 billion in 2025."
+   "ko": "연간 매출은 2022년 163억원에서 2025년 170억원까지 163억~173억원 범위에 머물러 외형 성장이 뚜렷하지 않다.",
+   "en": "Annual revenue stayed within a narrow range of KRW 16.3 billion to KRW 17.3 billion from 2022 to 2025, ending at KRW 17 billion in 2025, so top-line growth has been limited."
   },
   {
-   "ko": "2025년 영업손실은 10.7억원, 영업이익률은 -6.3%로 2024년부터 2025년까지 2년 연속 적자다.",
-   "en": "The 2025 operating loss was KRW 1.07 billion, with an operating margin of -6.3%, marking two consecutive loss years from 2024 to 2025."
+   "ko": "2024년과 2025년 2년 연속 영업손실을 냈고, 2025년 영업손실은 10.7억원으로 전년보다 손실 폭이 커졌다.",
+   "en": "The company posted operating losses for two consecutive years, 2024 and 2025, and the 2025 operating loss widened to KRW 1.07 billion."
   },
   {
-   "ko": "2026년 3분기 지배주주 순이익은 5.5억원으로 전년 동기 대비 흑자 전환했으나, 같은 분기 영업손실 1.6억원이 나타나 이익과 영업손실의 차이는 분기보고서에서 확인해야 한다.",
-   "en": "Q3 2026 net income attributable to controlling shareholders was KRW 548 million, a swing to profit year on year, while the operating loss for the same quarter was KRW 155 million, so the gap needs confirmation in the quarterly report."
+   "ko": "2026년 3분기 지배주주 순이익은 5.5억원으로 흑자 전환했으나 같은 분기 영업손실은 1.6억원이어서, 순이익 개선에는 퓨리오사AI 지분 평가이익이 크게 작용했다.",
+   "en": "Net income attributable to controlling shareholders reached KRW 548 million in Q3 2026 against an operating loss of KRW 155 million, and the company attributed much of the gain to fair-value gains on its FuriosaAI stake."
   },
   {
-   "ko": "2026년 8월 공시된 한국언론진흥재단과의 9억 5,568만원 규모 계약(매출액 대비 5.61%)은 2026년 12월 18일 계약기간 종료를 앞두고 있다.",
-   "en": "A KRW 955.68 million contract with the Korea Press Foundation, disclosed in August 2026 and equal to 5.61% of revenue, runs until December 18, 2026."
+   "ko": "회사는 한국언론진흥재단과 국내 빅테크를 대상으로 한 AI 학습용 데이터 공급 매출이 2026년 4분기부터 본격 반영된다고 밝혔다.",
+   "en": "The company said revenue from AI training-data supply to the Korea Press Foundation and major domestic tech firms will begin to be recognized in earnest from Q4 2026."
   },
   {
-   "ko": "2026년 7월 5대1 무상병합 감자는 결손금 보전을 목적으로 했으며, 저작권 데이터 정책 변화는 수요와 비용 양쪽에 영향을 줄 수 있는 변수다.",
-   "en": "The 5-to-1 reverse stock split in July 2026 was intended to offset accumulated deficits, and changes in copyright and AI data policy could affect both demand and costs."
+   "ko": "회사는 2027년 상반기 영업이익률 10% 이상 달성을 단기 목표로 제시했고, 2025년 영업이익률은 -6.3%였다.",
+   "en": "The company set a short-term target of a 10% or higher operating margin in the first half of 2027, while the 2025 operating margin was -6.3%."
   }
  ],
  "business": {
-  "ko": "비큐AI는 1998년 설립되어 2022년 코스닥에 상장한 AI 데이터 기업으로, 뉴스 콘텐츠를 AI 학습과 서비스에 쓸 수 있는 데이터로 가공해 공급하는 사업이 핵심이다. 회사는 국내외 약 3,000여 언론 파트너와 계약해 뉴스 데이터를 받는다고 밝혔으며, 이를 실시간 데이터 파이프라인 RDPLINE으로 기업에 공급한다. 전처리와 라벨링은 AIROOT 플랫폼으로 자동화하고, 뉴스 특화 RAG 모델 RDP1과 AI 에이전트 기반 분석 플랫폼 AI서퍼를 함께 운영한다. AI서퍼는 엔터프라이즈·마케팅 분석 분야의 주력 제품으로 소개된다. 고객은 회사 측 설명으로 삼성전자, LG, SKT, KT 등 국내 대기업이며, 한국언론진흥재단과 뉴스 저작권 유통 대행 계약을 맺은 점을 차별점으로 내세운다. 부문별 매출액과 비중은 회사가 공개한 자료에서 확인하지 못했다. 다만 외부 집계 사이트는 AI서퍼 제품이 매출의 82%를 차지하고 저작권료 74.3억원이 매출의 44%에 해당한다고 정리했으며, 이는 DART 원자료가 아닌 제3자 집계이므로 참고용으로만 본다. 2024년 5월에는 베트남 법인을 설립해 전처리 센터를 옮기며 비용 경쟁력을 높이는 중이다. 같은 IT·소프트웨어 업종의 NAVER, 카카오, 다우데이타 등과 데이터 공급 규모를 직접 비교할 자료는 확인되지 않았다.",
-  "en": "Becu AI, founded in 1998 and listed on KOSDAQ in 2022, is an AI data company whose core business is processing news content into data usable for AI training and services. The company says it works with roughly 3,000 media partners in Korea and abroad to source news data, and supplies it to enterprises through its real-time data pipeline RDPLINE. Preprocessing and labeling are automated on the AIROOT platform, and the company also runs RDP1, a news-specialized RAG model, and AI-Surfer, an AI-agent-based analytics platform. AI-Surfer is presented as the flagship product in enterprise and marketing analytics. According to company statements, customers include large domestic firms such as Samsung Electronics, LG, SK Telecom and KT, and the company highlights its news copyright distribution agreement with the Korea Press Foundation as a differentiator. The company's segment revenue and mix could not be confirmed from its own disclosures. An outside data aggregator estimates that the AI-Surfer product accounts for 82% of revenue and that copyright fees of KRW 7.43 billion equal 44% of revenue, but this is third-party data rather than DART source data and should be treated as reference only. In May 2024 the company set up a Vietnam subsidiary and moved its preprocessing operations there to strengthen cost competitiveness. Direct scale comparisons with NAVER, Kakao and Daou Data in the same IT and software sector could not be confirmed from available data."
+  "ko": "비큐AI는 뉴스 데이터를 확보·가공해 AI 학습용 데이터와 분석 플랫폼으로 공급하는 AI 데이터 기업이다. 1998년 설립됐고 2022년 코스닥에 상장했다. 주력 제품은 뉴스 기반 분석·모니터링 플랫폼 AISurfer(AI서퍼)로, 2018년 공개된 버전 이후 7년 만에 클라우드 기반으로 재설계된 차세대 제품이 2026년 3월 오픈 베타 테스트에 들어갔다. AI서퍼는 3,000여 언론 매체의 뉴스 데이터를 바탕으로 검색·요약·출처 확인을 한 번에 제공하는 구조다. 데이터 공급 플랫폼 RDPLINE은 2025년 9월 공식 출시됐고, 2026년 11월 중 관련 제품군이 추가로 출시될 예정이다. 2025년 매출은 AISurfer 비중이 높은 구조였으며, 회사는 이 주력 상품 매출이 전년 대비 소폭 감소했다고 설명했다. 고객은 언론·미디어 기관, 국내 빅테크 기업, 공공·정부 과제 수요로 나뉜다. 2026년 과학기술정보통신부 주관 데이터바우처 지원사업의 공급기업으로 선정됐다. 2026년 8월에는 한국언론진흥재단의 방송자료 디지털화 지원 사업을 수주했고, 계약 규모 약 10억원은 지난해 매출의 5.61%에 해당한다. AI 학습용 데이터 공급은 계약 단위로 매출이 잡히는 구조여서 계약 시점에 따라 분기 매출 변동이 크게 나타날 수 있다. 경쟁 구도에서는 뉴스 콘텐츠 계약과 저작권 확보 여부가 차별화 요소로 꼽히며, 같은 업종의 대형 플랫폼·IT 서비스 기업과는 규모 차이가 크다. 해외에서는 2024년 5월 베트남 법인을 설립해 운영 센터를 이관했다.",
+  "en": "Becu AI is an AI data company that acquires and processes news data and supplies it as AI training data and analytics platforms. The company was founded in 1998 and listed on KOSDAQ in 2022. Its flagship product is AISurfer, a news-based analytics and monitoring platform; the next-generation version, rebuilt on a cloud-native architecture about seven years after the 2018 release, entered open beta testing in March 2026. AISurfer provides search, summarization and source verification in one interface, based on news data from more than 3,000 media outlets. The RDPLINE data supply platform was officially launched in September 2025, and related product lines are scheduled for release within November 2026. AISurfer accounts for a large share of revenue, and the company said sales of this main product declined slightly from the prior year in 2025. Customers fall into media and press organizations, major domestic tech firms, and public or government project demand. The company was selected as a supplier for the 2026 Data Voucher Support Project run by the Ministry of Science and ICT. In August 2026 it won the Korea Press Foundation's broadcast archive digitization support project, with a contract size of about KRW 1 billion, equal to 5.61% of 2025 revenue. Because AI training-data supply is recognized on a contract basis, quarterly revenue can swing sharply depending on contract timing. In competition, news content agreements and secured copyright are cited as differentiators, and the scale gap with large platform and IT service firms in the same sector is wide. Overseas, the company established a Vietnam subsidiary in May 2024 and moved its operations center there."
  },
  "earnings": {
-  "ko": "연간 매출은 2022년 163억원에서 2023년 169억원(전년 대비 3.9% 증가), 2024년 173억원(전년 대비 2.4% 증가)으로 늘었다가 2025년 170억원(전년 대비 1.7% 감소)으로 소폭 줄었다. 2022~2025년 중 가장 큰 해는 2024년, 가장 작은 해는 2022년이다. 영업이익은 2022년 영업손실 11.3억원에서 2023년 영업이익 2.4억원으로 전년 대비 흑자 전환했으나, 2024년 영업손실 8.1억원으로 적자 전환한 뒤 2025년 영업손실 10.7억원으로 적자가 지속되며 손실이 확대됐다. 영업이익률은 2022년 -6.9%, 2023년 1.4%, 2024년 -4.7%, 2025년 -6.3%로, 2023년을 제외하면 매출 대비 영업손실 구조가 이어졌다. 지배주주 순이익은 2023년 7.3억원 흑자 이후 2024년 순손실 6억원, 2025년 순손실 7.6억원으로 2024년부터 2025년까지 2년 연속 적자다. 당기순이익(비지배지분 포함)도 2024년 당기순손실 6억원, 2025년 당기순손실 7.6억원으로 같은 방향을 보였다. 회사는 2024년 적자 전환의 배경으로 100% 지분의 해외 자회사 설립에 따른 연결 범위 변동과 비용 증가를 들었다고 보도됐다. 2025년 영업손실은 언론 보도 기준 전년 대비 32.48% 확대된 것으로 공시됐다. 영업활동 현금흐름은 2022년 3.9억원, 2023년 16.1억원, 2024년 3.8억원, 2025년 2.6억원으로 2023년 이후 줄고 있다. 2025년 말 자본총계는 112억원으로 전액이 지배주주 지분이며, 부채비율은 2022년 37.7%에서 2024년 33.1%까지 낮아졌다가 2025년 35.0%로 올랐다. 분기에서는 2025년 3분기 매출 44.2억원에서 4분기 46.9억원(전 분기 대비 6.0% 증가)으로 늘었고, 2026년 1분기 37.2억원(전 분기 대비 20.5% 감소)으로 저점을 찍은 뒤 2분기 42.8억원, 3분기 44.2억원으로 2개 분기 연속 증가했다. 다만 3분기 매출은 전년 동기 대비 0.1% 감소했다. 영업손실은 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 적자이며, 2026년 3분기 영업손실 1.6억원은 전년 동기보다 적자 폭이 줄었다. 지배주주 순이익은 2025년 3분기 순손실 8,659만원에서 2025년 4분기 1,370만원 흑자 전환 후 2026년 3분기 5.5억원으로 확대됐다. 최근 4개 분기 지배주주 순이익 합계는 6.3억원이다. 2026년 3분기에 영업손실이 이어진 가운데 지배주주 순이익이 커진 이유는 공시 실적만으로는 특정할 수 없으며 영업외 항목의 내역을 분기보고서에서 확인해야 한다.",
-  "en": "Annual revenue rose from KRW 16.3 billion in 2022 to KRW 16.9 billion in 2023 (up 3.9% year on year) and KRW 17.3 billion in 2024 (up 2.4%), then edged down to KRW 17 billion in 2025 (down 1.7%). Among 2022 to 2025, 2024 was the largest year and 2022 the smallest. The operating result moved from an operating loss of KRW 1.13 billion in 2022 to an operating profit of KRW 240 million in 2023, a swing to profit, before turning to an operating loss of KRW 812 million in 2024, a swing to loss. In 2025 the operating loss widened to KRW 1.07 billion as losses continued. The operating margin was -6.9% in 2022, 1.4% in 2023, -4.7% in 2024 and -6.3% in 2025, so apart from 2023 the company operated at a loss relative to revenue. Net income attributable to controlling shareholders was positive at KRW 733 million in 2023, then a net loss of KRW 597 million in 2024 and a net loss of KRW 759 million in 2025, which makes two consecutive loss years from 2024 to 2025. Net income including non-controlling interests showed a net loss of KRW 601 million in 2024 and KRW 759 million in 2025. The company reportedly attributed the 2024 swing to losses to higher costs from changes in the consolidation scope after it set up a wholly owned overseas subsidiary. Media reports said the 2025 operating loss widened 32.48% year on year. Operating cash flow was KRW 392 million in 2022, KRW 1.61 billion in 2023, KRW 378 million in 2024 and KRW 265 million in 2025, having declined since 2023. At the end of 2025, total equity was KRW 11.2 billion, all of it attributable to controlling shareholders, and total liabilities were KRW 3.93 billion, giving a debt ratio of 35.0%, down from 37.7% in 2022 to 33.1% in 2024 before rising again in 2025. On the quarterly series, revenue rose from KRW 4.42 billion in Q3 2025 to KRW 4.69 billion in Q4 2025 (up 6.0% quarter on quarter), fell to KRW 3.72 billion in Q1 2026 (down 20.5%), then recovered to KRW 4.28 billion in Q2 2026 and KRW 4.42 billion in Q3 2026, rising for two consecutive quarters, although Q3 2026 revenue was down 0.1% year on year. The operating loss has persisted for five consecutive quarters from Q3 2025 to Q3 2026, and the Q3 2026 operating loss of KRW 155 million was narrower than a year earlier. Net income attributable to controlling shareholders swung from a loss of KRW 86.59 million in Q3 2025 to a profit of KRW 13.7 million in Q4 2025 and KRW 548 million in Q3 2026. The sum of the last four quarters' net income attributable to controlling shareholders is KRW 626 million. The reasons why controlling-shareholder net income grew in Q3 2026 despite an operating loss cannot be identified from the disclosed figures and must be checked against the non-operating items in the quarterly report."
+  "ko": "연간 매출은 2022년 163억원에서 2023년 169억원으로 3.9% 증가했고, 2024년에는 173억원으로 2.4% 늘어 2022~2025년 중 가장 큰 해가 됐다. 2025년에는 170억원으로 1.7% 줄었다. 영업이익은 2022년 영업손실 11.3억원에서 2023년 영업이익 2.4억원으로 흑자 전환했다가, 2024년 영업손실 8.1억원으로 적자 전환했다. 2025년 영업손실은 10.7억원으로 전년보다 손실 폭이 커졌고, 영업이익률은 -6.3%였다. 회사는 주력 상품 AISurfer 매출이 전년 대비 소폭 감소한 점과 해외법인 설립 이후 연간 운용비용이 발생한 효과를 주요 요인으로 들었다. 지배주주 순손실은 2024년 6억원, 2025년 7.6억원으로 2년 연속 적자였다. 2026년 1분기 매출은 37.2억원으로 전 분기 대비 20.5% 줄었지만, 2분기 42.8억원, 3분기 44.2억원으로 2개 분기 연속 증가했다. 다만 3분기 매출은 전년 동기 대비 0.1% 감소해 외형 회복이 아직 뚜렷하지 않다. 영업손실은 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 적자이며, 2026년 3분기 영업손실 1.6억원은 전 분기보다 확대됐으나 전년 동기보다는 축소됐다. 지배주주 순이익은 2025년 4분기 1,370만원으로 흑자 전환한 뒤 2026년 1분기 3,988만원, 2분기 2,404만원, 3분기 5.5억원으로 이어졌고, 3분기에는 전 분기 대비 2,179.9% 증가했다. 최근 4개 분기 지배주주 순이익 합계는 6.3억원으로, 본업 손익과 분리해 읽어야 할 성격이 강하다. 부채비율은 2022년 37.7%에서 2025년 35.0%로 30%대 초반에서 중반을 유지했고, 영업활동 현금흐름은 2023년 16.1억원을 제외하면 2억~4억원대에 머물렀다.",
+  "en": "Annual revenue rose 3.9% to KRW 16.9 billion in 2023 from KRW 16.3 billion in 2022, then grew 2.4% to KRW 17.3 billion in 2024, which was the largest year in the 2022 to 2025 period. Revenue declined 1.7% to KRW 17 billion in 2025. Operating results moved from an operating loss of KRW 1.13 billion in 2022 to an operating profit of KRW 240 million in 2023, a swing back to an operating loss of KRW 812 million in 2024, and a wider operating loss of KRW 1.07 billion in 2025, when the operating margin was -6.3%. The company cited a slight year-on-year decline in sales of its main product AISurfer, and the effect of annual operating costs incurred after the overseas subsidiary was set up, as key factors. Net loss attributable to controlling shareholders was KRW 597 million in 2024 and KRW 759 million in 2025, two consecutive loss years. Quarterly revenue fell 20.5% to KRW 3.72 billion in Q1 2026, then rose to KRW 4.28 billion in Q2 and KRW 4.42 billion in Q3, marking two consecutive quarters of growth. Q3 2026 revenue was still down 0.1% from the year-earlier quarter, so the top-line recovery is not yet clear. The operating loss has persisted for five consecutive quarters from Q3 2025 through Q3 2026; the Q3 2026 loss of KRW 155 million widened from the prior quarter but narrowed from the year-earlier quarter. Net income attributable to controlling shareholders turned positive in Q4 2025 at KRW 13.7 million, then reached KRW 39.88 million in Q1 2026, KRW 24.04 million in Q2, and KRW 548 million in Q3, a 2,179.9% increase from the prior quarter. Over the most recent four quarters the total was KRW 626 million, a figure that should be read separately from core operating results. The debt ratio was 37.7% in 2022 and 35.0% in 2025, staying in the low-to-mid 30% range, while operating cash flow was KRW 1.61 billion in 2023 and remained in the KRW 200 million to KRW 400 million range in the other years."
  },
  "industry": {
-  "ko": "비큐AI의 사업은 생성형 AI의 학습 데이터 수요에 연결되어 있다. 회사는 AI 기본법 시행에 따라 데이터 투명성 요구가 강화되고 있으며, 저작권 리스크가 없는 학습 데이터를 찾는 LLM 개발사와 AI 스타트업, 금융·언론 기업이 주요 고객층이 될 수 있다고 설명한다. 이 수요는 정책 변수에 민감하다. 회사는 AI기본법 제정 이후 AI저작권법 개정과 학습 데이터 정책에 관심이 커졌다고 언급했으며, 정책 방향에 따라 합법적으로 확보된 데이터의 가치가 달라질 수 있다. 업황의 사이클 위치를 보여주는 산업 수급 통계는 이번 조사에서 확인되지 않았다. 경쟁 측면에서 비큐AI는 20년 넘게 쌓은 뉴스 데이터 아카이브와 한국언론진흥재단과의 유통 대행 계약을 진입장벽으로 내세운다. 반면 대형 IT 기업이 자체 데이터 파이프라인과 LLM을 키우는 경우 중소 데이터 공급 업체와 수요가 겹칠 수 있다는 점은 구조적 변수다. 회사는 뉴스 외에도 이미지·영상, 전문가 질의응답 데이터로 취급 영역을 넓히고 있으며, 글로벌 스톡 콘텐츠 기업인 게티이미지코리아와 파트너십을 맺었다고 보도됐다. 비용 측면에서는 베트남 전처리 센터가 인건비 기반의 가공 비용을 낮추는 역할을 한다고 회사가 설명한다. 다만 매입 비용이 매출의 큰 비중을 차지하는 구조라 마진 개선 폭은 제한될 수 있다.",
-  "en": "Becu AI's business is tied to demand for training data for generative AI. The company says the enactment of Korea's AI Basic Act has strengthened requirements for data transparency, and that LLM developers, AI startups and financial and media firms seeking training data free of copyright risk could become key customers. This demand is sensitive to policy. The company has noted that since the AI Basic Act was enacted, attention on amendments to the AI copyright law and training-data rules has grown, and the value of legally sourced data could change with the policy direction. Industry supply and demand statistics that would show where the sector sits in its cycle were not found in this review. On competition, Becu AI cites its news data archive built over two decades and its distribution agreement with the Korea Press Foundation as barriers to entry. Conversely, if large IT companies expand their own data pipelines and LLMs, demand could overlap with smaller data suppliers, a structural variable. Beyond news, the company is widening its scope to image and video data and expert question-and-answer data, and media reports say it has a partnership with Getty Images Korea, a stock content company. On cost, the company says its Vietnam preprocessing center lowers labor-based processing costs. However, because acquisition costs make up a large share of revenue, the room for margin improvement may be limited."
+  "ko": "AI 학습용 데이터 시장은 대형 모델 개발사의 데이터 확보 경쟁과 저작권 분쟁이 맞물리며 형성되고 있다. 비큐AI 관계자는 2026년 11월 보도에서 앤트로픽이 전미 작가 등을 대상으로 1조 5,000억원 규모의 저작권 관련 합의금을 지급했다는 사례를 들어, 빅테크의 정당한 데이터 확보 경쟁이 격화될 것으로 내다봤다. 같은 관계자는 뉴욕타임스와 오픈AI 간 소송 결과가 2027년 초 가시화되면 이 흐름이 한층 강해질 것이라고 말했다. 국내에서는 방송사가 보유한 오래된 아카이브를 AI가 활용할 수 있는 메타데이터로 바꾸는 수요가 늘고 있다는 것이 회사의 설명이다. 국내에 누적된 레거시 방송 데이터 규모가 방대하다는 점도 회사가 제시한 근거다. 뉴스 데이터 유통 분야에서는 언론사 콘텐츠 계약과 저작권 확보 여부가 경쟁력을 가르는 요소로 꼽힌다. 같은 IT·소프트웨어 업종의 NAVER, 카카오, 삼성에스디에스 같은 대형사와 비교하면 매출과 시가총액 규모 모두 격차가 크다. 정부 정책도 수요 기반으로 작용하고 있다. 2026년 데이터바우처 지원사업 공급기업 선정과 정부 주도의 독자 AI 파운데이션 모델 국책과제가 대표적이다. 데이터 수요는 확대되는 국면이지만 회사 매출에 반영된 규모는 아직 작아, 사이클 안에서 회사의 위치는 초기 단계로 읽힌다.",
+  "en": "The AI training-data market is taking shape as large model developers compete to secure data while copyright disputes intensify. In a November 2026 press statement, a Becu AI official cited Anthropic's payment of a copyright settlement of KRW 1.5 trillion to authors and others, and said big tech's competition for legitimate data sources would intensify. The same official said the outcome of the New York Times lawsuit against OpenAI is expected to become visible in early 2027, which would strengthen this trend. Domestically, the company says demand is rising for converting broadcasters' legacy archives into metadata that AI can use, and it points to the large volume of accumulated legacy broadcast data as supporting evidence. In news data distribution, content agreements with media outlets and secured copyright are cited as the factors that separate competitors. Compared with larger companies in the same IT and software sector, such as NAVER, Kakao and Samsung SDS, the gap is wide in both revenue and market capitalization. Government policy also acts as a demand driver, notably the 2026 Data Voucher Support Project supplier selection and a state-led national project on an independent AI foundation model. Demand for data is expanding, but the revenue scale the company has reflected so far remains small, so its position in the cycle reads as early-stage."
  },
  "outlook": {
-  "ko": "회사는 2026년 연간 매출 가이던스를 공시에서 제시한 것으로 확인되지 않았으며, 전망은 공시된 계약과 분기 흐름에 근거해 판단해야 한다. 2026년 8월 6일 공시에 따르면 한국언론진흥재단과 2026년 방송자료 디지털화 지원 사업 단일판매·공급계약 금액은 9억 5,568만원으로 최근 매출액 대비 5.61%이며, 계약기간은 2026년 8월 5일부터 2026년 12월 18일까지다. 계약대금은 계약보증금 이행 후 계약 완료 뒤 지급되는 조건이다. 이 계약이 4분기 매출에 얼마나 반영되는지와 계약 완료 뒤 후속 매출이 이어지는지가 다음 확인 지점이다. 회사는 2026년 1월 초경량 소형언어모델 개발 성과를 발표했으며, 이는 정부의 AI 산업 육성 기조와 맞물려 보도됐다. 베트남 현지 법인을 통한 전처리 체계는 대규모 데이터 가공 수주에 대응하는 기반으로 제시된다. 같은 기간 회사는 RDPLINE 얼라이언스 사업으로 데이터 공급자와 수요자를 잇는 전용 채널을 열었다고 밝혔다. 자본 구조 측면에서는 2026년 7월 기준일의 5대1 무상병합 감자로 발행주식 수가 줄었고, 같은 해 8월 4일 매매거래가 재개됐다. 영업손실이 5개 분기 연속 이어진 만큼, 2026년 연간 잠정 실적에서 영업손실 폭이 줄었는지가 중요하다. 2026년 연간 잠정 실적은 지난해 사례를 기준으로 2027년 2월 중순 전후 공시가 예상된다.",
-  "en": "The company does not appear to have published a 2026 annual revenue guidance, so the outlook has to rest on disclosed contracts and the quarterly trend. According to the August 6, 2026 disclosure, the single sales and supply contract with the Korea Press Foundation for a 2026 broadcast archive digitization project is worth KRW 955.68 million, equal to 5.61% of recent revenue, and runs from August 5, 2026 to December 18, 2026. Payment is made after completion of the contract, subject to a performance guarantee deposit. How much of this contract is recognized in Q4 revenue, and whether follow-on revenue continues after completion, are the next items to verify. In January 2026 the company announced progress on an ultra-lightweight small language model, which media linked to the government's push for AI industry growth. The Vietnam subsidiary's preprocessing setup is presented as a base for handling large-scale data processing orders. In the same period the company opened a dedicated RDPLINE alliance channel connecting data suppliers and buyers. On capital structure, the 5-to-1 reverse split with a July 2026 record date reduced the number of issued shares, and trading resumed on August 4, 2026. Because operating losses have persisted for five consecutive quarters, whether the operating loss narrows in the 2026 annual preliminary results is the key item. Based on last year's timing, the 2026 annual preliminary results could be disclosed around mid-February 2027."
+  "ko": "회사는 2026년 4분기부터 한국언론진흥재단과 국내 주요 빅테크를 대상으로 한 AI 학습용 데이터 공급 매출이 장부에 본격 반영된다고 밝혔다. 같은 시기 신규 플랫폼 RDPLINE과 관련 제품군을 2026년 11월 중 정식 출시하겠다는 계획이다. 정부 주도의 독자 AI 파운데이션 모델 국책과제도 2026년 연말까지 완수할 방침이다. 2026년 8월에 수주한 방송자료 디지털화 지원 사업은 계약 기간이 2026년 12월 18일까지이며, 계약 규모는 약 10억원이다. 회사는 2026년 8월 IR에서 2027년 상반기 영업이익률 10% 이상 달성을 단기 목표로 제시했다. 같은 IR에서 제시된 사업 확대 방향으로는 피지컬 AI, 멀티 디바이스용 학습 데이터 플랫폼, 블록체인 기반 토큰증권(STO) 관련 플랫폼이 정관에 추가됐다. 이 가운데 실적 기여가 확인되는 분야는 데이터 공급과 공공 수주 쪽이 먼저다. 2026년 4분기 매출 반영 규모는 2026년 사업보고서에서 확인된다. 해외 전략으로는 전미 작가 소송과 뉴욕타임스·오픈AI 소송 결과가 빅테크의 데이터 확보 경쟁에 영향을 줄 것으로 회사가 전망했다. 이 전망이 실제 계약으로 이어지는지가 다음 확인 지점이다. 목표 달성 여부는 2027년 상반기 실적에서 확인된다.",
+  "en": "The company said that revenue from AI training-data supply to the Korea Press Foundation and major domestic tech firms will be recognized in earnest from Q4 2026. In the same period, it plans to officially launch the new RDPLINE platform and related product lines within November 2026. A state-led national project to develop an independent AI foundation model is also scheduled for completion by year-end 2026. The broadcast archive digitization project won in August 2026 runs through December 18, 2026, with a contract size of about KRW 1 billion. At its August 2026 IR event, the company set a short-term target of a 10% or higher operating margin in the first half of 2027. Business expansion items added to its articles of incorporation include physical AI, learning-data platforms for multiple devices, and security token and digital asset platforms based on blockchain. Among these, contributions to earnings are most visible first in data supply and public-sector contracts. The size of Q4 2026 revenue recognition will be confirmed in the 2026 annual report. On the overseas front, the company expects outcomes of copyright lawsuits, including the New York Times case against OpenAI, to influence big tech's data-acquisition competition. Whether this view translates into actual contracts is the next checkpoint. Progress toward the operating margin target will be confirmed with first-half 2027 results."
  },
  "valuation_comment": {
-  "ko": "현재 PER, PBR, 배당수익률, 현재가와 시가총액은 주가에 따라 매일 바뀌므로 화면 카드가 실시간으로 표시하는 값을 참고해야 한다. 이익 기준 배수는 최근 4개 분기 지배주주 순이익 합계가 6.3억원 규모로 작아 분기 이익 변동에 민감하게 움직인다. 주가순자산비율은 순자산 대비 프리미엄이 붙은 구간에 있으며, 자본 가치 대비 주가 수준을 해석할 때 참고할 만하다. 배당은 지급 이력이 확인되지 않아 배당수익률은 업종 평균을 밑도는 수준이다. 2022년 적자, 2023년 흑자, 2024~2025년 적자로 이익 방향이 자주 바뀌어 과거 배수 밴드를 현재와 비교하는 의미는 제한적이다. 2026년 7월 5대1 무상병합 감자로 주식 수가 줄어 주가 수준을 과거와 비교할 때는 감자 전후 기준을 맞춰야 한다. 같은 IT·소프트웨어 업종의 대형 상장사와는 사업 규모와 수익 구조가 달라 배수를 단순 비교하기 어렵다.",
-  "en": "Current PER, PBR, dividend yield, share price and market capitalization change daily with the share price, so the live values shown on the screen cards should be consulted. Earnings-based multiples are sensitive to quarterly swings, since net income attributable to controlling shareholders over the last four quarters totals only KRW 626 million. The price-to-book ratio sits in a range where the stock trades at a premium to net asset value, which is a useful reference when reading the share price against book value. No dividend payment history was confirmed, so the dividend yield is below the industry average. Profit direction has changed often, from a loss in 2022, a profit in 2023, and losses in 2024 and 2025, which limits the usefulness of comparing current multiples with past multiple bands. Because the 5-to-1 reverse split in July 2026 reduced the share count, comparisons of share price levels with earlier periods must adjust for the split. Peer comparisons with larger listed IT and software companies are difficult because business scale and earnings structure differ."
+  "ko": "이 종목의 배수는 이익 구조가 아직 안정되지 않은 상태에서 해석해야 한다. 최근 네 개 분기 지배주주 순이익 합계는 6.3억원 수준으로 작고, 3분기 순이익은 퓨리오사AI 지분 평가이익이 반영된 결과여서 본업 손익과 분리해 볼 필요가 있다. 영업손실이 5개 분기 연속 이어지는 동안 이익 기준 배수는 한두 분기의 손익 변화에도 크게 움직일 수 있다. 주가는 자본총계를 웃도는 구간에서 형성돼 있어 순자산 대비 프리미엄이 붙은 상태다. 과거 적자가 길었던 기간이 있어 과거 밸류에이션 밴드를 현재 값과 직접 비교하기는 제한적이다. 배당을 지급하지 않는 상태여서 배당 기반의 평가 접근은 적용하기 어렵다. 2025년 말 부채비율은 35.0%로 30%대 중반이며, 2026년 5월 5대1 무상감자 결정 등 재무구조 조정이 진행됐다. 다음 확인 지점은 영업손익의 흑자 전환 시점과 평가이익의 지속성이다.",
+  "en": "The valuation multiples should be read while the earnings structure is still unsettled. Net income attributable to controlling shareholders over the most recent four quarters totals KRW 626 million, a small base, and the Q3 2026 profit reflects fair-value gains on the FuriosaAI stake, so it should be separated from core operating results. While operating losses have continued for five consecutive quarters, earnings-based multiples can move sharply on the results of just one or two quarters. The share price sits above book net asset value, which means it carries a premium over net assets. Because losses persisted for long stretches in the past, comparing historical valuation bands directly with current levels has limited value. The company does not pay dividends, so a dividend-based valuation approach does not apply. The debt ratio was 35.0% at the end of 2025, in the mid-30% range, and financial restructuring has continued, including the 5-for-1 free capital reduction decided in May 2026. The next checkpoints are when operating results turn profitable and whether the fair-value gains persist."
  },
  "bull": [
   {
    "title": {
-    "ko": "저작권 정리된 뉴스 데이터의 차별화",
-    "en": "Differentiation through copyright-cleared news data"
+    "ko": "데이터 공급 매출 본격화 예고",
+    "en": "Data Supply Revenue Set to Begin Scaling"
    },
    "body": {
-    "ko": "회사는 한국언론진흥재단과 뉴스 저작권 유통 대행 계약을 맺은 국내 유일 코스닥 상장사라고 밝혔다. AI 기본법 시행으로 데이터 투명성 요구가 커지면 저작권 리스크가 정리된 학습 데이터의 수요가 늘 수 있다는 것이 회사의 논리다. 회사 측 설명으로 삼성전자, LG, SKT, KT 등 국내 대기업에 학습용 뉴스 데이터를 공급하고 있다고 밝혔다. 이 주장은 회사 측 발표에 근거한 것으로 독립적으로 검증된 수치는 아니다.",
-    "en": "The company says it is the only KOSDAQ-listed firm with a news copyright distribution agreement with the Korea Press Foundation. Its argument is that rising data-transparency requirements under the AI Basic Act could increase demand for training data with cleared copyright risk. Per company statements, it supplies news training data to large domestic firms including Samsung Electronics, LG, SK Telecom and KT. These claims rest on company statements and have not been independently verified."
+    "ko": "회사는 한국언론진흥재단과 국내 주요 빅테크를 대상으로 한 AI 학습용 데이터 공급 매출이 2026년 4분기부터 장부에 본격 반영된다고 밝혔다. 2026년 2분기와 3분기 매출이 연속 증가한 흐름이 이어진다면 본업 외형이 커질 여지가 있다. 2026년 데이터바우처 지원사업 공급기업 선정도 공공과 중소기업 수요 측면의 근거로 제시된다.",
+    "en": "The company said AI training-data supply revenue for the Korea Press Foundation and major domestic tech firms will be recognized in earnest from Q4 2026. If the sequential revenue growth recorded in Q2 and Q3 2026 continues, there is room for the core business to expand. Selection as a 2026 Data Voucher Support Project supplier is also cited as evidence of public and small-business demand."
    }
   },
   {
    "title": {
-    "ko": "분기 흐름의 개선",
-    "en": "Improving quarterly trend"
+    "ko": "자체 기술과 제품군 확장",
+    "en": "Proprietary Technology and Product Expansion"
    },
    "body": {
-    "ko": "2026년 1분기 매출 저점 이후 2분기와 3분기 매출이 2개 분기 연속 증가했다. 2026년 3분기 지배주주 순이익은 5.5억원으로 전년 동기 대비 흑자 전환했으며, 최근 4개 분기 지배주주 순이익 합계는 6.3억원이다. 2025년 4분기에도 지배주주 순이익이 1,370만원 흑자로 돌아섰다. 다만 흑자 전환의 원인이 영업이익 개선인지 영업외 항목인지는 공시 실적만으로 가려지지 않는다.",
-    "en": "After a revenue low in Q1 2026, revenue rose for two consecutive quarters in Q2 and Q3 2026. Net income attributable to controlling shareholders reached KRW 548 million in Q3 2026, a swing to profit from a year earlier, and totaled KRW 626 million over the last four quarters. It had also turned positive at KRW 13.7 million in Q4 2025. Whether this profit swing reflects operating improvement or non-operating items cannot be determined from the disclosed figures alone."
+    "ko": "자체 소형언어모델 RDP-N1은 단계적 사고 데이터셋을 활용해 오픈소스 7B 기반 모델의 성능을 기존 대비 93% 향상시켰다고 2026년 1월 발표됐다. AISurfer는 클라우드 웹 기반으로 전환돼 기기나 운영체제의 제약 없이 접근할 수 있게 됐다. RDPLINE 관련 제품군이 2026년 11월 중 출시되면 제품 라인업이 데이터 공급과 분석 양쪽으로 넓어진다.",
+    "en": "The company announced in January 2026 that its proprietary small language model RDP-N1, using a step-by-step reasoning dataset, improved performance by 93% over the base open-source 7B model. AISurfer moved to a cloud web platform, so it can be accessed without device or operating system limits. If RDPLINE-related product lines launch in November 2026, the lineup will widen across both data supply and analytics."
    }
   },
   {
    "title": {
-    "ko": "공공·언론 계약과 해외 비용 구조",
-    "en": "Public and media contracts and overseas cost structure"
+    "ko": "방송 아카이브 수주와 대주주 책임경영",
+    "en": "Broadcast Archive Contract and Major Shareholder Commitment"
    },
    "body": {
-    "ko": "2026년 8월 공시된 한국언론진흥재단과의 방송자료 디지털화 계약은 9억 5,568만원 규모로 최근 매출액 대비 5.61%다. 2024년 5월 설립한 베트남 법인으로 전처리 센터를 옮겨 가공 단가를 낮추려 하고 있다고 회사는 설명한다. 공공 계약과 해외 비용 구조가 맞물리면 대량 데이터 가공 수주에 대응할 여지가 생긴다는 것이 긍정적 논리다.",
-    "en": "The Korea Press Foundation contract disclosed in August 2026 is worth KRW 955.68 million, equal to 5.61% of recent revenue. The company explains that it moved preprocessing to its Vietnam subsidiary, set up in May 2024, to lower processing costs. The positive argument is that public contracts combined with an overseas cost base create room to take on large-scale data processing orders."
+    "ko": "회사는 한국언론진흥재단의 2026년 방송자료 디지털화 지원 사업을 수주했고, 계약 규모 약 10억원은 지난해 매출의 5.61%에 해당한다고 2026년 8월 공시했다. 회사는 이 수주로 AI 저작권 플랫폼 구축에 필요한 공급망 기술력을 입증했다고 설명했다. 최대주주가 2026년 7월 발행주식 약 3% 규모의 지분을 추가 취득하는 방안을 추진했다는 점도 책임경영 신호로 공시됐다.",
+    "en": "The company disclosed in August 2026 that it won the 2026 broadcast archive digitization support project from the Korea Press Foundation, with a contract size of about KRW 1 billion equal to 5.61% of last year's revenue. The company said the award demonstrated the supply-chain technology needed to build an AI copyright platform. In July 2026, its largest shareholder also pursued the acquisition of an additional stake of roughly 3% of issued shares, which was disclosed as a sign of management commitment."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "연간 적자의 지속",
-    "en": "Continued annual losses"
+    "ko": "영업 적자의 지속과 손실 폭",
+    "en": "Persistent Operating Losses"
    },
    "body": {
-    "ko": "2024년과 2025년 두 해 연속 지배주주 순손실이 이어졌고, 2025년 영업이익률은 -6.3%다. 2025년 영업손실 10.7억원은 전년보다 확대됐다. 2022~2025년 중 영업이익 흑자를 낸 해는 2023년 한 해뿐이다. 연간 기준의 수익성 개선이 확인되지 않은 상태에서 분기 흑자 전환은 아직 누적 적자를 되돌리는 단계가 아니다.",
-    "en": "Net losses attributable to controlling shareholders continued in 2024 and 2025, and the 2025 operating margin was -6.3%. The 2025 operating loss of KRW 1.07 billion widened from the prior year. Among 2022 to 2025, only 2023 was a year of operating profit. Without confirmed annual improvement in profitability, quarterly profit swings have not yet reversed the cumulative losses."
+    "ko": "영업손실은 2024년과 2025년 2년 연속 발생했고, 2025년 영업손실은 10.7억원으로 전년보다 확대됐다. 2025년 영업이익률은 -6.3%였다. 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 영업손실이 이어졌고, 2026년 3분기 영업손실은 1.6억원이었다.",
+    "en": "Operating losses occurred in both 2024 and 2025, and the 2025 operating loss widened to KRW 1.07 billion from the prior year. The 2025 operating margin was -6.3%. Operating losses have continued for five consecutive quarters from Q3 2025 through Q3 2026, and the Q3 2026 operating loss was KRW 155 million."
    }
   },
   {
    "title": {
-    "ko": "매출 정체와 높은 매입 비용",
-    "en": "Stagnant revenue and high acquisition costs"
+    "ko": "순이익의 비영업 손익 의존",
+    "en": "Reliance on Non-Operating Gains for Net Income"
    },
    "body": {
-    "ko": "연간 매출은 2024년 173억원을 정점으로 2025년 170억원으로 줄었고, 2023년 이후 170억원 안팎에 머물러 있다. 외부 집계는 저작권료가 매출의 44%를 차지한다고 정리했으나 이는 DART 원자료가 아닌 제3자 추정이다. 매입 비용 비중이 높으면 매출이 늘어도 마진이 얇게 남을 수 있다는 것이 약세 논리다.",
-    "en": "Annual revenue peaked at KRW 17.3 billion in 2024 and eased to KRW 17 billion in 2025, staying near KRW 17 billion since 2023. An outside aggregator puts copyright fees at 44% of revenue, though this is a third-party estimate rather than DART data. The bearish argument is that a high acquisition cost share can leave thin margins even when revenue grows."
+    "ko": "2026년 3분기 지배주주 순이익 5.5억원은 퓨리오사AI 지분 공정가치 평가이익이 반영된 결과라고 회사 공시와 언론 보도가 설명했다. 같은 분기 영업손실이 1.6억원이었던 점을 감안하면 순이익의 상당 부분은 평가 손익에 기대고 있다. 평가이익은 투자자산의 시가 변동에 따라 달라지므로 다음 분기에도 같은 방향이 이어진다는 보장이 없다.",
+    "en": "Net income attributable to controlling shareholders of KRW 548 million in Q3 2026 reflected fair-value gains on the FuriosaAI stake, according to the company's disclosure and press coverage. Given an operating loss of KRW 155 million in the same quarter, a large part of net income depends on valuation gains. Those gains move with the market value of the investment, so there is no assurance the same direction will continue in the next quarter."
    }
   },
   {
    "title": {
-    "ko": "감자와 거래 변동성",
-    "en": "Reverse split and trading volatility"
+    "ko": "매출 정체와 주력 제품 의존",
+    "en": "Stagnant Revenue and Dependence on the Core Product"
    },
    "body": {
-    "ko": "2026년 5대1 무상병합 감자는 결손금 보전을 목적으로 결정됐다. 2026년 1월 초경량 소형언어모델 개발 소식에 주가가 상한가를 기록했으며, 한국거래소는 당시 이격도 과열 종목으로 분류하며 투자자 주의를 당부했다. 2026년 7월 주권매매거래가 정지됐다가 8월 4일 재개되는 등 거래 환경의 변동성이 큰 편이다.",
-    "en": "The 5-to-1 reverse split in 2026 was decided to offset accumulated deficits. After a limit-up move in January 2026 on news of an ultra-lightweight small language model, the Korea Exchange classified the stock as overheated on its disparity index and urged investor caution. Trading was halted in July 2026 and resumed on August 4, indicating a volatile trading environment."
+    "ko": "매출은 2022~2025년 사이 163억원에서 170억원으로 뚜렷한 증가 없이 163억~173억원 범위에 머물렀다. 2025년에는 주력 상품 AISurfer 매출이 전년 대비 소폭 감소했다. 신규 제품 매출의 기여 규모가 공시에서 충분히 드러나지 않아, 외형 확대의 근거는 2026년 4분기 이후 계약 매출에 달려 있다.",
+    "en": "Revenue moved within a range of KRW 16.3 billion to KRW 17.3 billion between 2022 and 2025, with no clear growth trend. In 2025, sales of the main product AISurfer declined slightly from the prior year. The contribution of newer products is not clearly visible in the filings, so the case for a larger top line depends on contract revenue from Q4 2026 onward."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "규제·저작권 정책",
-    "en": "Regulation and copyright policy"
+    "ko": "저작권·규제 환경",
+    "en": "Copyright and Regulatory Environment"
    },
    "body": {
-    "ko": "AI 저작권법 개정과 학습 데이터 정책의 방향에 따라 합법 데이터의 가치와 공급 조건이 달라질 수 있다. 회사의 핵심 사업이 뉴스 콘텐츠의 권리 구조에 기대고 있어 정책 변화가 매출과 매입 조건 모두에 영향을 줄 수 있다. 정책 세부 방향은 이번 조사에서 확정된 내용을 확인하지 못했다.",
-    "en": "Depending on the direction of AI copyright law amendments and training-data rules, the value and supply terms of legally sourced data could change. Because the core business rests on the rights structure of news content, policy shifts could affect both revenue and acquisition terms. The specific direction of the policy could not be confirmed in this review."
+    "ko": "뉴스와 AI 학습 데이터 사업은 저작권 분쟁과 법제도 변화에 직접 영향을 받는다. 회사는 뉴욕타임스와 오픈AI 소송 결과가 2027년 초 가시화될 것으로 예상했으나, 판결 방향에 따라 데이터 가치 평가가 달라질 수 있다. AI 학습 데이터 저작권 관련 법안의 통과 여부도 주요 변수로 언급된다.",
+    "en": "The news and AI training-data business is directly exposed to copyright disputes and changes in law. The company expects the New York Times case against OpenAI to become visible in early 2027, but the valuation of data could shift depending on the direction of the ruling. Whether legislation on copyright in AI training data passes is also cited as a key variable."
    }
   },
   {
    "cat": {
-    "ko": "재무·자본 구조",
-    "en": "Financial and capital structure"
+    "ko": "재무구조와 주권 거래",
+    "en": "Capital Structure and Share Trading"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 2.6억원으로 2023년 16.1억원보다 크게 줄었다. 2025년 말 자본총계 112억원 전액이 지배주주 지분이지만, 영업손실이 5개 분기 연속 이어지면 자본 잠식의 부담이 누적될 수 있다. 2026년 결손금 보전을 위한 감자는 재무 구조 정리 수단이지만, 그 자체가 영업 수익성을 개선하지는 않는다.",
-    "en": "Operating cash flow was KRW 265 million in 2025, sharply below KRW 1.61 billion in 2023. Total equity of KRW 11.2 billion at the end of 2025 is entirely attributable to controlling shareholders, but if operating losses persist for five consecutive quarters, the burden on equity could build. The 2026 reverse split is a tool for tidying the balance sheet and does not by itself improve operating profitability."
+    "ko": "회사는 2026년 5월 5대1 무상감자를 결정해 재무구조 정상화를 추진했고, 2026년 7월에는 주권매매거래정지 공시가 있었다. 2025년 말 자본총계는 112억원이다. 본업 적자가 이어지면 자본총계가 누적 손실에 따라 줄어드는 방향으로 작용할 수 있다.",
+    "en": "In May 2026 the company decided on a 5-for-1 free capital reduction to normalize its capital structure, and a trading suspension was disclosed in July 2026. Total equity was KRW 11.2 billion at the end of 2025. If core operating losses continue, equity could decline as accumulated losses build."
    }
   },
   {
    "cat": {
-    "ko": "사업 집중과 지배구조",
-    "en": "Business concentration and governance"
+    "ko": "주가 변동성과 수급",
+    "en": "Share Price Volatility and Trading Flows"
    },
    "body": {
-    "ko": "외부 집계에 따르면 매출의 대부분이 AI서퍼 한 제품에서 나와 제품 집중도가 높다. 외부 기업 정보에서는 최대주주가 대표이사로 근무하고 있다는 점이 지적됐다. 2026년 3월 사외이사를 신규 선임하는 등 이사회 구성을 바꾸고 있으나, 경영진과 최대주주의 역할 분담은 사업보고서에서 확인해야 한다.",
-    "en": "According to an outside aggregator, most revenue comes from the AI-Surfer product, so product concentration is high. Outside company profiles have noted that the largest shareholder also serves as chief executive. The company appointed a new outside director in March 2026 as part of board changes, but the division of roles between management and the largest shareholder should be confirmed in the business report."
+    "ko": "2026년 1월에는 초경량 소형언어모델 발표 이후 주가가 상한가를 기록했고, 한국거래소는 이격도 과열 종목으로 지정했다. 개인 투자자 중심의 수급 쏠림은 단기 변동성을 키울 수 있는 요인으로 언급된다. 시가총액 규모가 작은 스몰캡 특성상 뉴스 한 건에도 주가가 크게 움직일 수 있다.",
+    "en": "In January 2026, the share price hit the daily upper limit after the announcement of a lightweight small language model, and the Korea Exchange designated the stock as overheated on a disparity-rate basis. Trading concentrated among individual investors is cited as a factor that can amplify short-term volatility. As a small-cap stock, it can move sharply on a single piece of news."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
+    "ko": "2026년 11월 중",
+    "en": "Within November 2026"
+   },
+   "what": {
+    "ko": "RDPLINE 등 주력 플랫폼과 관련 제품군의 정식 출시. 신제품이 실제 매출로 이어지는지가 확인 지점이다.",
+    "en": "Official launch of RDPLINE and related product lines. Whether the new products translate into actual revenue is the checkpoint."
+   }
+  },
+  {
+   "when": {
     "ko": "2026년 12월 18일",
     "en": "December 18, 2026"
    },
    "what": {
-    "ko": "한국언론진흥재단 방송자료 디지털화 계약기간 종료. 계약 완료 후 대금 지급과 4분기 매출 반영 규모, 후속 수주 여부를 확인한다.",
-    "en": "End of the Korea Press Foundation broadcast archive digitization contract period. Check payment after completion, how much is recognized in Q4 revenue, and whether follow-on orders follow."
+    "ko": "2026년 방송자료 디지털화 지원 사업 계약 기간 종료. 계약 규모 약 10억원의 매출 인식 완료 여부와 후속 수주 여부를 확인할 지점이다.",
+    "en": "End of the contract period for the 2026 broadcast archive digitization support project. The checkpoints are completion of revenue recognition for the roughly KRW 1 billion contract and any follow-on awards."
    }
   },
   {
    "when": {
-    "ko": "2026년 12월 31일",
-    "en": "December 31, 2026"
+    "ko": "2027년 초",
+    "en": "Early 2027"
    },
    "what": {
-    "ko": "2026 사업연도 종료. 5개 분기 연속 이어진 영업손실이 연간 기준에서 어떻게 정리되는지, 영업손실 폭의 방향을 확인한다.",
-    "en": "Close of fiscal year 2026. Check how the five consecutive quarters of operating losses resolve on an annual basis and whether the size of the operating loss narrows."
+    "ko": "뉴욕타임스와 오픈AI 소송 결과가 가시화될 것으로 회사가 예상한 시점. 판결이 데이터 공급 수요에 미치는 영향이 확인 지점이다.",
+    "en": "The timing the company expects for the New York Times and OpenAI litigation outcome to become visible. The effect of the ruling on demand for data supply is the checkpoint."
    }
   },
   {
    "when": {
-    "ko": "2027년 2월 중순 전후(예년 공시 시기 기준)",
-    "en": "Around mid-February 2027 (based on prior-year timing)"
+    "ko": "2027년 3월경",
+    "en": "Around March 2027"
    },
    "what": {
-    "ko": "2026년 연간 잠정 실적 공시. 지난해 잠정 실적은 2026년 2월 13일에 공시됐으며, 매출 수준과 영업손실 방향이 핵심 확인 지점이다.",
-    "en": "Disclosure of 2026 annual preliminary results. Last year's preliminary results were disclosed on February 13, 2026, and the revenue level and direction of the operating loss are the key items."
+    "ko": "2026년 사업보고서 공시. 지난해 사업보고서는 2026년 3월 23일 공시됐다. 2026년 연간 매출 구성과 영업이익률, 4분기 데이터 공급 매출 반영 규모가 여기서 확인된다.",
+    "en": "Filing of the 2026 annual business report. Last year's report was disclosed on March 23, 2026. The 2026 annual revenue mix, operating margin and the size of Q4 data-supply revenue recognition will be confirmed here."
    }
   },
   {
    "when": {
-    "ko": "2027년 3월 말",
-    "en": "Late March 2027"
+    "ko": "2027년 상반기",
+    "en": "First half of 2027"
    },
    "what": {
-    "ko": "2026 사업보고서 제출 기한 전후. 4분기 지배주주 순이익과 영업외 항목의 내역, 3분기 지배주주 순이익이 영업손실과 다른 방향을 보인 이유를 확인한다.",
-    "en": "Around the deadline for the 2026 business report. Check the Q4 net income attributable to controlling shareholders, the non-operating items, and the reason net income diverged from the operating loss in Q3."
+    "ko": "영업이익률 10% 이상 목표 달성 여부. 2026년 8월 IR에서 제시된 단기 목표이며, 달성 여부가 사업 전환의 가시적 신호가 된다.",
+    "en": "Whether the 10% or higher operating margin target is achieved. This short-term goal was set at the August 2026 IR, and its outcome will serve as a visible signal of the business transition."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "비큐AI는 뉴스 데이터 공급과 AI 분석 제품을 결합한 사업 구조를 갖추고 있으며, 2026년 들어 공공·언론 계약과 분기 흑자 전환 등 긍정적 신호가 나타났다. 다만 연간 기준으로는 2024년과 2025년 영업손실과 지배주주 순손실이 이어졌고, 2025년 영업이익률은 -6.3%였다. 매출은 2022년 163억원에서 2025년 170억원으로 170억원 안팎에 머물러 외형 성장 속도는 제한적이다. 2026년 3분기 지배주주 순이익 5.5억원은 흑자 전환 신호지만, 같은 분기 영업손실 1.6억원이 이어져 영업 단위의 흑자 전환은 확인되지 않았다. 수익 구조의 핵심 변수는 저작권료 등 매입 비용과 AI 학습 데이터 정책의 변화다. 부채비율은 2025년 말 35.0%이고 자본총계 112억원은 전액 지배주주 지분이다. 다음 확인 지점은 2026년 12월 18일 계약기간 종료, 2026년 연간 잠정 실적, 2026 사업보고서의 영업외 항목 내역이다.",
-   "en": "Becu AI has a business structure that combines news data supply with AI analytics products, and 2026 has brought positive signals such as public and media contracts and a quarterly swing to profit. On an annual basis, however, operating and controlling-shareholder net losses continued in 2024 and 2025, and the 2025 operating margin was -6.3%. Revenue moved from KRW 16.3 billion in 2022 to KRW 17 billion in 2025, so growth in scale has been limited. Controlling-shareholder net income of KRW 548 million in Q3 2026 is a sign of a swing to profit, but with an operating loss of KRW 155 million in the same quarter, a turn to operating profit has not been confirmed. The key variables for the earnings structure are acquisition costs such as copyright fees and changes in AI training-data policy. The debt ratio was 35.0% at the end of 2025, and all KRW 11.2 billion of total equity is attributable to controlling shareholders. The next items to verify are the December 18, 2026 contract expiry, the 2026 annual preliminary results, and the non-operating items in the 2026 business report."
+   "ko": "비큐AI는 2022~2025년 매출이 163억~173억원 범위에 머물렀고, 2024년 이후 영업손실이 이어진 기업이다. 2026년 3분기에는 지배주주 순이익이 5.5억원으로 흑자 전환했지만, 이는 퓨리오사AI 지분 평가이익의 영향이 크다는 점에서 본업 손익과 나눠 읽어야 한다. 영업손실은 2025년 3분기부터 5개 분기 연속 이어졌고, 2026년 3분기 영업손실은 1.6억원이다. 매출은 2026년 2분기와 3분기에 2개 분기 연속 증가했고, 회사는 2026년 4분기부터 AI 학습 데이터 공급 매출이 본격 반영된다고 밝혔다. 강세 요인은 데이터 공급 계약 확대, 제품군 출시, 방송자료 사업 수주이고, 약세 요인은 본업 적자 지속, 비영업 손익 의존, 주력 제품 매출 집중이다. 회사가 제시한 2027년 상반기 영업이익률 10% 이상 목표의 달성 여부가 가장 직접적인 판단 재료가 된다.",
+   "en": "Becu AI's revenue stayed within KRW 16.3 billion to KRW 17.3 billion over 2022 to 2025, and operating losses have continued since 2024. Net income attributable to controlling shareholders turned positive in Q3 2026 at KRW 548 million, but because fair-value gains on the FuriosaAI stake contributed heavily, it should be read apart from core operations. The operating loss has persisted for five consecutive quarters from Q3 2025, and the Q3 2026 operating loss was KRW 155 million. Revenue grew in Q2 and Q3 2026, two consecutive quarters, and the company said AI training-data supply revenue will be recognized in earnest from Q4 2026. Bullish factors include expansion of data supply contracts, product launches and the broadcast archive award, while bearish factors include continued core operating losses, reliance on non-operating gains and concentration on the main product. Whether the company achieves its 10% or higher operating margin target in the first half of 2027 is the most direct reference point."
   }
  },
  "sources": [
-  "https://becuai.com/en/company",
   "https://thevc.kr/becuai",
-  "https://www.wanted.co.kr/company/473",
+  "https://dealsite.co.kr/articles/172436",
+  "https://www.widedaily.com/news/articleView.html?idxno=303206",
+  "https://supple.kr/news/cmwa7blcj35w6al9pvsewgag6",
   "https://www.openbizdata.com/becuai/",
+  "https://www.finance-scope.com/article/view/scp202603040007",
   "http://www.businessreport.kr/news/articleView.html?idxno=48050",
-  "https://startups.koraia.org/company/344",
-  "https://www.esgeconomy.com/news/articleView.html?idxno=9526",
-  "https://tlo.korea.ac.kr/partnership/1379",
-  "http://www.businessreport.kr/news/articleView.html?idxno=48646",
-  "https://stockcatcher.co.kr/%EB%B9%84%ED%81%90ai-%EC%A3%BC%EA%B0%80-%EA%B0%80%EC%B9%98-%ED%85%8C%EB%A7%88%EC%A3%BC-%EC%A0%95%EB%A6%AC-%ED%88%AC%EC%9E%90-%EC%A0%84%EB%A7%9D-%EB%B6%84%EC%84%9D/",
-  "https://m.news.nate.com/view/20260806n25085",
-  "https://www.topstarnews.net/news/articleView.html?idxno=16156530",
-  "https://www.topstarnews.net/news/articleView.html?idxno=16150172",
-  "https://m.news.nate.com/view/20260331n37902",
+  "https://m.irgo.co.kr/IR-COMP/148780/%EB%B9%84%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%86%8C%ED%94%84%ED%8A%B8-IR-ROOM",
   "https://m.news.nate.com/view/20260213n32170",
-  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=688507",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05382486645451216",
-  "https://marketin.edaily.co.kr/News/ReadE?newsId=05352966645451216"
+  "https://valueline.co.kr/finance/summary/148780",
+  "https://becuai.com/en/invest/news",
+  "https://m.irgo.co.kr/IR-COMP/148780/",
+  "https://m.news.nate.com/view/20260806n26493",
+  "https://m.news.nate.com/view/20260806n27269",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=653991",
+  "https://www.topstarnews.net/news/articleView.html?idxno=15939684",
+  "https://www.newspim.com/news/view/20260106000082"
  ],
  "v": 2,
  "model": "claude-haiku-5-5",
@@ -224,9 +233,9 @@
   "인공지능(AI)"
  ],
  "market": "코스닥",
- "reportDate": "2026-11-10",
- "reportTs": "2026-11-10 12:59",
- "dataDate": "20261109",
+ "reportDate": "2026-11-11",
+ "reportTs": "2026-11-11 02:48",
+ "dataDate": "20261110",
  "quant": {
   "asOf": "2026-11-10",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -329,14 +338,14 @@
    }
   ],
   "valuation": {
-   "price": 3055,
-   "mcap": 0.0192,
+   "price": 3135,
+   "mcap": 0.0197,
    "shares": 6289145,
    "total_shares": 6289145,
    "wavg_shares": 6309957,
-   "per": 29.951,
+   "per": 30.735,
    "eps": 102,
-   "pbr": 1.6285,
+   "pbr": 1.6711,
    "bps": 1876,
    "roe_ttm": 5.4,
    "ttm_window": "2025Q4~2026Q3",
@@ -350,5 +359,6 @@
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "textRules": 2
 }

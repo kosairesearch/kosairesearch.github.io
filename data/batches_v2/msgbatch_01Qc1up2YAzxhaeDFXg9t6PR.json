@@ -793,27 +793,33 @@
    "text": "===JSON_START===\n{\"bull\": [{\"title\": {\"ko\": \"연간 이익 회복과 마진 개선\", \"en\": \"Annual profit recovery and margin gains\"}, \"body\": {\"ko\": \"2025년 영업이익은 전년보다 늘었고 영업이익률도 2022년보다 높아졌다. 지배주주 순이익도 235억원으로 전년 대비 21.2% 증가해 영업 단계의 회복이 순이익까지 이어졌다. 2024년 감소분을 2025년 실적이 상당 부분 만회한 점이 공시 수치로 확인된다.\", \"en\": \"Operating profit in 2025 rose from the prior year, and the operating margin ended the year above its 2022 level. Net income attributable to controlling shareholders reached KRW 23.5 billion, up 21.2%, so the recovery carried through from operations to net income. The disclosed figures show 2025 earnings recovered much of the 2024 decline.\"}}, {\"title\": {\"ko\": \"재무 여력과 현금창출\", \"en\": \"Financial capacity and cash generation\"}, \"body\": {\"ko\": \"2025년 말 자본총계는 1,542억원이고 부채총계는 585억원이다. 부채비율은 2022년 45.5%에서 2025년 37.9%로 낮아졌다. 영업활동 현금흐름은 2025년 210억원으로 2024년 127억원보다 늘어 이익 규모와 함께 현금창출력이 회복되는 모습이다.\", \"en\": \"Total equity at the end of 2025 was KRW 154.2 billion and total liabilities were KRW 58.5 billion. The debt-to-equity ratio fell from 45.5% in 2022 to 37.9% in 2025. Operating cash flow rose to KRW 21 billion in 2025 from KRW 12.7 billion in 2024, showing cash generation recovering alongside profit.\"}}, {\"title\": {\"ko\": \"OTC·기능성 확장 여지\", \"en\": \"Room to expand in OTC and functional products\"}, \"body\": {\"ko\": \"기능성·OTC 비중은 2024년 3분기 26.0%에서 2025년 3분기 17%로 낮아졌다. 2025년 무렵 증권가는 6개월 내 출시를 목표로 한 패스트트랙 개발 툴을 고객사에 제안하고 있으며 OTC와 기능성 제품이 성장을 주도할 것이라고 보도했다. 이 전망이 출고와 매출로 확인되는지는 분기보고서에서 살펴볼 항목이다.\", \"en\": \"The functional and OTC share fell from 26.0% in Q3 2024 to 17% in Q3 2025. Around 2025, press coverage of brokerage commentary said the company was offering clients a fast-track development tool for launches within six months, with OTC and functional products expected to drive growth. Whether that shows up in shipments and sales is a point to check in the quarterly reports.\"}}], \"bear\": [{\"title\": {\"ko\": \"3분기 적자 전환과 매출 감소\", \"en\": \"Q3 swing to loss and falling sales\"}, \"body\": {\"ko\": \"2026년 3분기 매출은 431억원으로 전년 동기 대비 28.1% 감소했고, 영업이익은 48.7억원으로 62.1% 줄었다. 지배주주 순이익은 순손실 13.5억원으로 전환했다. 최근 4개 분기 지배주주 순이익 합계는 181억원으로, 2025년 연간 지배주주 순이익 235억원보다 작다.\", \"en\": \"Q3 2026 sales were KRW 43.1 billion, down 28.1% year on year, and operating profit was KRW 4.87 billion, down 62.1%. Net income attributable to controlling shareholders turned to a net loss of KRW 1.35 billion. Over the last four quarters, net income attributable to controlling shareholders totaled KRW 18.1 billion, below the KRW 23.5 billion reported for full-year 2025.\"}}, {\"title\": {\"ko\": \"미국 지역 집중\", \"en\": \"Concentration in the United States\"}, \"body\": {\"ko\": \"2025년 3분기 기준 미국 지역 매출 비중은 95%였다. 미국 고객사의 발주가 줄면 매출 전체가 바로 흔들리는 구조라 지역 분산이 제한적이다. 2025년 1~3분기 누적으로는 한국과 미국을 제외한 지역 매출이 절반 수준으로 줄었다고 보도됐다.\", \"en\": \"The US accounted for 95% of sales as of Q3 2025. Because sales depend so heavily on US client orders, a drop in those orders would move total sales directly, and geographic diversification is limited. Press coverage of the first nine months of 2025 reported that sales outside Korea and the US had roughly halved.\"}}, {\"title\": {\"ko\": \"제품 믹스 변화와 마진 압박\", \"en\": \"Product mix shift and margin pressure\"}, \"body\": {\"ko\": \"제품 믹스에서 기능성·OTC가 차지하는 비중은 1년 사이 낮아졌다. 이 제품군 비중 축소가 영업이익률 흐름에 어떤 영향을 줬는지는 공시 자료만으로 분리하기 어렵다. 2026년 3분기 영업이익률은 2025년 3분기보다 낮아진 상태로, 매출 감소 속에서 이익률 방어가 과제로 남는다.\", \"en\": \"The functional and OTC share of the product mix declined over one year. How much that shift affected the operating margin cannot be separated cleanly using the disclosed figures alone. The Q3 2026 operating margin is lower than in Q3 2025, so defending margins during a sales decline remains a challenge.\"}}]}\n===JSON_END===",
    "model": "claude-sonnet-5-5",
    "stop_reason": "end_turn"
+  },
+  "060540-8d8402d28bd4d51e3e4fbce7": {
+   "text": "===JSON_START===\n{\"bear\": [{\"title\": {\"ko\": \"얇은 영업이익률\", \"en\": \"Thin operating margin\"}, \"body\": {\"ko\": \"2022년 이후 낮아진 영업이익률이 2025년까지 이어졌다. 매출이 늘어도 이익률이 회복되지 않아 수익 구조의 완충 폭이 작다. 2025년 영업이익은 39.1억원으로 2022년 111억원의 약 3분의 1 수준이다. 이익률 개선이 확인되지 않는 점이 약세 요인이다.\", \"en\": \"The operating margin that dropped after 2022 stayed low through 2025. Sales growth has not restored margins, leaving a thin cushion in the profit structure. Operating profit of KRW 3.91 billion in 2025 was roughly one-third of the KRW 11.1 billion recorded in 2022. The lack of margin recovery is cited as a bearish factor.\"}}, {\"title\": {\"ko\": \"3분기 적자 전환\", \"en\": \"Q3 swing to a loss\"}, \"body\": {\"ko\": \"2026년 3분기 지배주주 순손실은 14.1억원으로 적자 전환했다. 직전 분기 지배주주 순이익은 18.6억원이었다. 최근 4개 분기 지배주주 순이익 합계는 51.2억원으로 규모가 크지 않다. 순이익 단계의 악화 원인이 확인되지 않은 점이 약세 요인이다.\", \"en\": \"Net profit attributable to controlling shareholders swung to a net loss of KRW 1.41 billion in Q3 2026. The prior quarter had recorded KRW 1.86 billion. Net profit attributable to controlling shareholders over the latest four quarters totals KRW 512 million, which is not large. The cause of the deterioration at the net profit level has not been confirmed, and this is cited as a bearish factor.\"}}, {\"title\": {\"ko\": \"이익 변동성과 사업 불확실성\", \"en\": \"Earnings volatility and business uncertainty\"}, \"body\": {\"ko\": \"지배주주 순이익은 2023년 82.3%, 2025년 68.9%로 큰 폭으로 줄었다. 신규 사업인 CCTV와 VMS는 시작 시점과 매출 규모가 확인되지 않았다. 사업부문별 매출 비중도 공시로 확인되지 않아 수익원의 분산 정도를 판단하기 어렵다. 이익 변동성이 큰 상태에서 신사업 실적이 불투명한 점이 약세 요인이다.\", \"en\": \"Net profit attributable to controlling shareholders fell 82.3% in 2023 and 68.9% in 2025. The start timing and sales scale of the new CCTV and VMS businesses have not been confirmed. Segment sales shares have not been confirmed in filings either, making it hard to judge how diversified revenue is. Volatile earnings combined with unclear new-business results is cited as a bearish factor.\"}}], \"keypoints\": [{\"ko\": \"매출은 2023년 저점(1,522억원) 이후 2024년 1,551억원, 2025년 1,597억원으로 2년 연속 증가했다.\", \"en\": \"Sales rose for two consecutive years after the 2023 low, reaching KRW 155.1 billion in 2024 and KRW 159.7 billion in 2025.\"}, {\"ko\": \"영업이익률은 2022년 이후 낮아진 뒤 2025년까지 회복되지 못해, 매출 증가가 이익 개선으로 이어지지 않았다.\", \"en\": \"Operating margin, after falling from its 2022 level, did not recover through 2025, so sales growth did not translate into profit improvement.\"}, {\"ko\": \"2026년 2분기와 3분기 영업이익은 2개 분기 연속 증가했지만, 2026년 3분기 지배주주 순손실 14.1억원으로 적자 전환했다.\", \"en\": \"Operating profit rose for two straight quarters in Q2 and Q3 2026, but Q3 2026 turned into a net loss of KRW 1.41 billion attributable to controlling shareholders.\"}, {\"ko\": \"부채비율은 2022년 63.8%에서 2025년 57.1%로 낮아졌고, 영업활동 현금흐름은 2024년 21.6억원에서 2025년 107억원으로 회복됐다.\", \"en\": \"The debt ratio declined from 63.8% in 2022 to 57.1% in 2025, and operating cash flow recovered from KRW 2.16 billion in 2024 to KRW 10.7 billion in 2025.\"}, {\"ko\": \"2026년 4분기 이후 실적은 정기보고서 전이며, 신규 사업의 매출 기여는 공시로 확인되지 않았다.\", \"en\": \"Results after Q4 2026 are not yet in periodic reports, and the sales contribution from new businesses has not been confirmed in filings.\"}]}\n===JSON_END===",
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn"
   }
  },
  "usage_repair": {
   "claude-sonnet-5-5": {
-   "n": 3,
-   "in": 9075,
+   "n": 4,
+   "in": 13520,
    "cache_w": 0,
    "cache_r": 0,
-   "out": 5740,
+   "out": 8232,
    "search": 0,
-   "usd": 0.037775
+   "usd": 0.05468
   }
  },
  "repairs": [
-  "msgbatch_01SwsWFRPGUFwmkHzPp82FLi"
+  "msgbatch_01SwsWFRPGUFwmkHzPp82FLi",
+  "msgbatch_01RGczsVi5swUV4WqhupiP41"
  ],
  "repair": {
-  "batch_id": "msgbatch_01RGczsVi5swUV4WqhupiP41",
-  "created": "2026-11-10 20:30",
+  "batch_id": "msgbatch_01NFATFbEV3DTshCVxXk2UB3",
+  "created": "2026-11-11 02:09",
   "keys": [
-   "060540-8d8402d28bd4d51e3e4fbce7"
+   "060540-c2dea8142ef66a05d5beb894"
   ]
  }
 }
