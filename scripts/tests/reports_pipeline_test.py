@@ -917,6 +917,21 @@ r = GOODREP(); r["bull"][0]["why"] = "쓸데없음"; r["verdict"]["score"] = 7; 
 M.normalize_shape(r)
 ok("why" not in r["bull"][0] and "score" not in r["verdict"] and "note" not in r["lead"], "쓰레기 키 제거")
 
+# (g2) 이름표 칸을 다른 섹션 이름으로 쓴 항목 — 하이쿠가 위험 요인의 둘째 · 셋째 항목에 분류(cat) 대신 제목(title)을 붙인다
+#      (2026-11-11 · 11/8 뒤 모양 실패 9편 중 6편). 걷어내지 말고 제자리로 옮긴다.
+r = GOODREP()
+r["risks"][1] = {"title": {"ko": "품질·생산 안정성 리스크", "en": "Quality and production risk"}, "body": r["risks"][1]["body"]}
+r["risks"][2] = {"category": {"ko": "규제 리스크", "en": "Regulatory risk"}, "body": r["risks"][2]["body"]}
+r["bull"][0] = {"cat": {"ko": "수주 회복", "en": "Order recovery"}, "body": r["bull"][0]["body"]}
+n = M.normalize_shape(r)
+ok(n >= 3 and M.valid_v2(r, quiet=True) and r["risks"][1]["cat"]["ko"] == "품질·생산 안정성 리스크" and "title" not in r["risks"][1]
+   and r["risks"][2]["cat"]["ko"] == "규제 리스크" and r["bull"][0]["title"]["ko"] == "수주 회복",
+   "(g2) 위험 요인의 title · category, 강세 요인의 cat 을 제자리 이름으로 옮겨 되살린다", f"n={n}")
+r = GOODREP()
+r["risks"][0]["title"] = {"ko": "덤", "en": "Extra"}
+M.normalize_shape(r)
+ok(r["risks"][0]["cat"]["ko"] != "덤" and "title" not in r["risks"][0], "(g2) 제자리 칸이 있으면 다른 이름의 칸은 덮지 않고 걷어낸다")
+
 # (h) en=False 검증 — 영문만 빠진 글과 통째로 잘린 글을 가른다
 r = GOODREP()
 for x in r["bull"]:

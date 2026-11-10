@@ -71,8 +71,8 @@ ok(lines[1] == "- 005930 삼성전자 (KSIC 264)", "업종코드가 있으면 �
 ok(re.findall(r"^- ([0-9][0-9A-Z]{5}) ", p, re.M) == ["0053F0", "005930"], "줄 머리 모양은 그대로(배치 답 대조용)")
 ok(C.build_prompt(chunk) == C.build_prompt(chunk, {}), "설명 없이도 부를 수 있다(전 종목 재분류)")
 
-print("③ 캐시 — 근거 없는 '기타'는 적지 않는다")
-ANS = {"0053F0": "기계·장비", "0077A0": "기타", "000001": "기타", "0099Z0": "기타"}
+print("③ 캐시 — 이름만 보고 낸 답('기타' · 다른 업종)은 적지 않는다")
+ANS = {"0053F0": "기계·장비", "0077A0": "기타", "000001": "기타", "0099Z0": "기타", "0162D0": "자동차"}
 
 
 class FakeBatches:
@@ -98,7 +98,8 @@ fb = FakeBatches()
 stocks = [{"ticker": "0053F0", "name": "티앤이코리아", "induty_code": None},      # 업종코드 없음 · 리포트 설명 있음
           {"ticker": "0077A0", "name": "새상장", "induty_code": ""},              # 업종코드 없음 · 설명 없음 → '기타' 보류
           {"ticker": "000001", "name": "교육회사", "induty_code": "85503"},        # 업종코드 있는 '기타'는 적는다
-          {"ticker": "0099Z0", "name": "옛리포트", "induty_code": None}]          # 설명이 있는 '기타'는 적는다
+          {"ticker": "0099Z0", "name": "옛리포트", "induty_code": None},         # 설명이 있는 '기타'는 적는다
+          {"ticker": "0162D0", "name": "동원파츠", "induty_code": ""}]            # 이름만 보고 낸 '자동차'도 보류(11/10 상장 · 반도체 부품)
 (tmp / "stocks.js").write_text("window.KOS_LIVE_DATA = " + json.dumps({"stocks": stocks}, ensure_ascii=False) + ";",
                                encoding="utf-8")
 (tmp / "sector_map.json").write_text("{}", encoding="utf-8")
@@ -122,6 +123,7 @@ sent = fb.created[0][0]["params"]["messages"][0]["content"]
 ok("— 회사 설명: 티앤이코리아는 2014년에" in sent and "— 회사 설명: 요약 칸만" in sent, "요청에 회사 설명이 실린다")
 ok(cache.get("0053F0", {}).get("s") == "기계·장비", "회사 설명으로 고른 업종을 적는다", str(cache.get("0053F0")))
 ok("0077A0" not in cache, "업종코드 · 설명 없이 나온 '기타'는 적지 않는다(다음 실행이 다시 분류)")
+ok("0162D0" not in cache, "업종코드 · 설명 없이 이름만 보고 낸 다른 업종('자동차')도 적지 않는다(2026-11-11 동원파츠)")
 ok(cache.get("000001", {}).get("s") == "기타" and cache.get("0099Z0", {}).get("s") == "기타",
    "업종코드나 설명이 있는 '기타'는 적는다")
 log = out.getvalue()

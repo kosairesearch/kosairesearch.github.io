@@ -2039,13 +2039,35 @@ def _strip_unknown(rep):
         keep(c[k], ("ko", "en"))
 
 
+# 항목의 이름표 칸을 다른 섹션의 이름으로 쓴 것 — 하이쿠가 위험 요인의 둘째 · 셋째 항목에 분류(cat) 대신 강세 · 약세 요인의
+# 제목(title)을 붙인다(2026-11-11 · 11/8 뒤 저장 전 모양 실패 9편 중 6편 · 같은 20종목 시험에서 틀에 안내 문구를 넣자 4편으로 늘어
+# 틀은 되돌렸다). 이름만 다를 뿐 분류 문구('품질·생산 안정성 리스크')가 들어 있으므로 옮겨 담는다 — 모르는 키로 걷어내면
+# 분류가 빈 항목이 되어 글 전체를 버린다.
+_LABEL_ALIAS = {"risks": ("cat", ("title", "category", "label")),
+                "bull": ("title", ("cat", "heading")), "bear": ("title", ("cat", "heading"))}
+
+
+def _fix_item_labels(rep):
+    """항목의 이름표 칸 이름을 스키마 이름으로 바꾼다. 바꾼 개수를 돌려준다."""
+    n = 0
+    for k, (want, alts) in _LABEL_ALIAS.items():
+        for x in _items(rep, k):
+            if isinstance(x, dict) and want not in x:
+                a = next((a for a in alts if a in x), None)
+                if a:
+                    x[want] = x.pop(a)
+                    n += 1
+    return n
+
+
 def normalize_shape(rep):
     """검증 전에 공짜로 고칠 수 있는 구조 결함을 고친다. 고친 자리 수를 돌려준다.
 
     회수한 100개 중 9개가 영문을 빠뜨리거나 곁키에 적어 두는 바람에 통째로
     버려졌다 — 한 장에 0.6달러가 이미 나간 뒤였다. 돈도 글도 이미 있으니
     옮겨 담을 수 있는 것은 옮겨 담고 나서 검증한다."""
-    n = _wrap_ko(rep)
+    n = _fix_item_labels(rep)
+    n += _wrap_ko(rep)
     n += _absorb_en_siblings(rep)
     _strip_unknown(rep)
     return n
