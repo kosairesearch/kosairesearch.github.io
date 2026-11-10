@@ -1,230 +1,208 @@
 {
  "title": {
-  "ko": "레거시 메모리 호황 속 이익 급증과 회계 제재",
-  "en": "Legacy Memory Upcycle Meets an Accounting Sanction"
+  "ko": "흑자 전환 뒤 실적 급증, 지속성이 다음 쟁점",
+  "en": "Profit Turnaround Lifts Results; Durability Is the Next Test"
  },
  "lead": {
-  "ko": "피델릭스는 2026년 3분기 영업이익 477억원으로 흑자 폭을 키웠지만, 2026년 10월 28일 증권선물위원회가 2018~2022년 허위 매출 계상을 이유로 제재를 의결해 이익의 지속성과 회계 신뢰가 함께 쟁점이 됐다.",
-  "en": "Fidelix posted a third-quarter 2026 operating profit of KRW 47.7 billion, but on October 28, 2026 the Securities and Futures Commission sanctioned it over false sales booked in 2018-2022, so earnings durability and accounting credibility are now both in question."
+  "ko": "피델릭스는 2025년 4분기 흑자 전환 뒤 2026년 3분기까지 분기 실적이 크게 늘었지만, 2024~2025년 연속 적자와 짧은 분기 기록 때문에 실적 지속성 확인이 다음 쟁점이다.",
+  "en": "Fidelix swung to operating profit in the fourth quarter of 2025 and its quarterly results grew sharply through the third quarter of 2026, but after two years of losses and a short run of quarterly profits, whether the recovery lasts is the next question."
  },
  "keypoints": [
   {
-   "ko": "2026년 3분기 매출은 845억원으로 전 분기 대비 152.8% 증가, 전년 동기 대비 574.0% 증가했다. 2025년 연간 매출 536억원을 한 분기에 웃돌았다.",
-   "en": "Third-quarter 2026 revenue was KRW 84.5 billion, up 152.8% from the prior quarter and 574.0% from a year earlier. A single quarter exceeded full-year 2025 revenue of KRW 53.6 billion."
+   "ko": "2024년과 2025년 2년 연속 적자 뒤 2025년 4분기에 영업이익 흑자로 전환했다.",
+   "en": "After two consecutive loss-making years in 2024 and 2025, Fidelix posted operating profit in the fourth quarter of 2025."
   },
   {
-   "ko": "영업이익은 2025년 3분기 영업손실 8.9억원에서 2026년 3분기 영업이익 477억원으로 돌아섰고, 2026년 1분기부터 3분기까지 3개 분기 연속 증가했다.",
-   "en": "Operating results moved from an operating loss of KRW 894 million in the third quarter of 2025 to an operating profit of KRW 47.7 billion in the third quarter of 2026, rising for three straight quarters from the first quarter of 2026."
+   "ko": "2026년 3분기 매출은 845억원, 영업이익은 477억원으로 공시됐다. 같은 분기 지배주주 순이익은 323억원이다.",
+   "en": "Third-quarter 2026 sales were KRW 84.5 billion and operating profit was KRW 47.7 billion, while net profit attributable to controlling shareholders was KRW 32.3 billion."
   },
   {
-   "ko": "최근 4개 분기(2025년 4분기~2026년 3분기) 지배주주 순이익 합계는 483억원으로, 2025년 말 자본총계 448억원보다 크다.",
-   "en": "Net income attributable to controlling shareholders over the last four quarters (fourth quarter of 2025 to third quarter of 2026) totaled KRW 48.3 billion, more than total equity of KRW 44.8 billion at the end of 2025."
+   "ko": "최근 네 개 분기(2025년 4분기~2026년 3분기) 지배주주 순이익 합계는 483억원이다. 2025년 연간 지배주주 순손실 29.6억원과 대비되는 규모다.",
+   "en": "Net profit attributable to controlling shareholders totals KRW 48.3 billion over the last four quarters, from the fourth quarter of 2025 through the third quarter of 2026."
   },
   {
-   "ko": "2026년 10월 28일 증선위는 피델릭스가 2018~2022년 거래처와 공모해 매출 등 150억 6,900만원을 허위 계상했다며 감사인 지정 3년과 수사기관 고발을 의결했고, 과징금은 금융위가 추후 정한다.",
-   "en": "On October 28, 2026 the Securities and Futures Commission ordered three years of auditor designation and referred Fidelix to prosecutors for booking KRW 15.069 billion of false sales and other items with counterparties in 2018-2022; the fine is still to be set by the Financial Services Commission."
+   "ko": "성장 기반으로는 차량용 칩셋 업체와의 인증 확보와 모듈 업체를 통한 생산 확대가 거론된다.",
+   "en": "Qualification with automotive chipset makers and production expansion through module partners are cited as the growth base."
   },
   {
-   "ko": "2026년 7월부터 10월까지 미국 Semtech, 미국 Alliance Memory, 키프로스 Telit Communications 대상 공급계약이 이어졌다. 일부는 선수금 100%·취소 불가 조건이다.",
-   "en": "From July to October 2026 Fidelix disclosed supply contracts with Semtech and Alliance Memory of the United States and Telit Communications Cyprus, some on 100% prepayment and non-cancellable terms."
+   "ko": "강세 요인과 약세 요인이 함께 있다. 미국의 대중국 반도체 규제 강화를 수혜로 본 보도가 있는 반면, 규제 변화와 주가 변동성은 리스크로 남아 있다.",
+   "en": "Bullish and bearish factors coexist: some media reports credit US chip export controls on China as a tailwind, while regulatory shifts and share-price volatility remain risks."
   }
  ],
  "business": {
-  "ko": "피델릭스는 1990년 설립된 메모리 반도체 팹리스로, 1997년 코스닥에 상장했고 DRAM·플래시 메모리·MCP를 설계해 판매한다. 회사는 공시에서 스스로를 팹리스로 규정하고 공급 방식을 외주생산으로 표기했다. 제품 비중은 최신 자료를 확인하지 못했고, 한국IR협의회 기업리서치센터는 2023년 3분기 누적 기준으로 MCP 70.0%, DRAM 16.0%, NAND 9.0%, NOR Flash 5.0%로 집계했다. 2026년 2분기 기준 매출의 사실상 전부가 반도체 부문이다. 이투데이는 자체 설계 제품과 함께 삼성전자(Samsung Electronics)·SK하이닉스(SK hynix) 메모리를 외부에서 조달해 파는 구조라고 보도했다. 수출 비중은 약 70%이며 미국·유럽·중국·일본 등에 공급한다. 공시된 최근 공급계약의 상대방은 IoT 통신 모듈·솔루션 업체와 반도체 유통 업체로, 용도는 통신·IoT·산업용 쪽에 몰려 있다. 최대주주는 2015년 6월 동심반도체유한공사(Dosilicon)로 바뀌었다. 회사는 삼성전자와 SK하이닉스의 LPDDR4 생산 종료 흐름에 맞춰 자체 설계 LPDDR4를 신사업으로 추진한다. 대형 업체가 HBM 등 고부가 제품에 집중하며 비운 레거시 영역이 경쟁 구도의 핵심이고, 제품 가격 결정력은 대형 공급사보다 약한 가격 수용자에 가깝다.",
-  "en": "Fidelix is a fabless memory chip company founded in 1990 and listed on KOSDAQ in 1997; it designs and sells DRAM, flash memory and multi-chip packages (MCP). In its filings the company describes itself as a fabless company and lists its supply method as outsourced production. A current product mix was not available; the Korea IR Service research center reported, on a cumulative third-quarter 2023 basis, MCP at 70.0%, DRAM at 16.0%, NAND at 9.0% and NOR Flash at 5.0%. As of the second quarter of 2026, practically all revenue came from semiconductors. Etoday reported that the company sells its own designs alongside memory sourced externally from Samsung Electronics and SK hynix. Exports account for about 70% of sales, supplied mainly to the United States, Europe, China and Japan. Counterparties in recent supply contracts are IoT communications module makers and a chip distributor, pointing to communications, IoT and industrial uses. The largest shareholder changed to Dosilicon Co., Ltd. in June 2015. The company is pursuing in-house LPDDR4 design as a new business as Samsung Electronics and SK hynix wind down LPDDR4 output. The legacy segment that large producers are vacating while they focus on HBM and other high-value products is the core of the competitive picture, and Fidelix is more a price taker than the large suppliers."
+  "ko": "피델릭스는 1990년에 설립되어 본사를 성남에 둔 반도체 기업이며, PSRAM·SDRAM·DDR 등 메모리 계열 제품을 취급하는 것으로 알려져 있다. 버틀러 집계에 따르면 2026년 2분기 매출 기준으로 반도체 등 주요 사업부문의 비중이 100%로 나타난다. 고객 구조는 차량용 칩셋 업체와 협업해 인증을 확보하고 모듈 업체를 거쳐 생산을 늘리는 방식이다. 완제품 업체가 아니라 칩셋과 모듈을 통해 수요가 전달되는 부품 공급 구조로 읽힌다. 기업모니터의 2026년 4월 14일 기준 실적 코멘트는 이 인증 확보를 매출 기반 마련의 계기로 정리했다. 5G 통신 모듈과 자율주행용 메모리 수요가 주요 응용처로 거론되지만, 이는 보도와 코멘트의 설명이며 회사가 밝힌 수요 전망은 아니다. 경쟁 구도에서는 삼성전자, SK하이닉스 같은 대형 메모리 기업과 매출 규모 차이가 매우 크다. 피델릭스는 범용 대량 공급보다 특정 응용처 인증을 확보한 중소형 공급자로 위치하며, 인증 유지와 생산 물량 확대가 매출 변동의 핵심 변수가 된다. 상위 고객사 수와 매출 집중도는 공시에서 확인할 항목이다.",
+  "en": "Fidelix was founded in 1990 and is headquartered in Seongnam. It handles memory-related products such as PSRAM, SDRAM and DDR. According to the aggregator Butler, semiconductors make up 100% of its main business segment by sales as of the second quarter of 2026. Its customer structure runs through automotive chipset makers, with which it has worked to secure qualification, and then through module makers that expand production. It is a component supplier rather than an end-product maker, so demand reaches it through chipset and module partners. A company commentary dated April 14, 2026 framed this qualification as the basis for its sales. Use cases such as 5G communication modules and memory for autonomous driving are cited, but these come from media and commentary rather than company demand forecasts. In competition, the scale gap with large memory makers such as Samsung Electronics and SK hynix is very wide. Fidelix sits among small and mid-sized suppliers that hold qualification for specific applications rather than mass general-purpose supply, so maintaining qualification and expanding production volume are the main drivers of sales swings. The number of major customers and their share of sales are items to check in disclosures."
  },
  "earnings": {
-  "ko": "연간 매출은 2022년 726억원에서 2023년 528억원(전년 대비 27.3% 감소), 2024년 448억원(전년 대비 15.1% 감소)으로 줄었다가 2025년 536억원(전년 대비 19.6% 증가)으로 돌아섰으며, 2022~2025년 중 가장 큰 해는 2022년, 가장 작은 해는 2024년이다. 영업이익은 2022년 62.8억원, 2023년 7.1억원(전년 대비 88.7% 감소)이었고 2024년 영업손실 45.3억원으로 적자 전환했으며, 2025년 영업손실 20.7억원으로 적자가 이어졌으나 손실은 줄었다. 영업이익률은 2022년 8.7%, 2023년 1.3%, 2024년 -10.1%, 2025년 -3.9%였다. 지배주주 순이익은 2022년 82.5억원에서 2023년 10.6억원으로 줄고 2024년 지배주주 순손실 22.1억원, 2025년 지배주주 순손실 29.6억원(손실 확대)으로 2024~2025년 2년 연속 적자였다. 당기순이익(비지배지분 포함)도 같은 금액이다. 영업활동 현금흐름은 2024년 -15.5억원, 2025년 -24.3억원으로 유출이었고, 2025년 말 부채비율은 28.2%(자본총계 448억원, 부채총계 126억원)였다. 분기 매출은 2025년 3분기 125억원에서 4분기 182억원(전 분기 대비 45.5% 증가), 2026년 1분기 215억원, 2분기 334억원, 3분기 845억원(전 분기 대비 152.8% 증가, 전년 동기 대비 574.0% 증가)으로 4개 분기 연속 증가했다. 영업이익은 2025년 3분기 영업손실 8.9억원 뒤 4분기 영업이익 10.4억원으로 흑자 전환했고, 2026년 1분기 43.3억원, 2분기 96.1억원, 3분기 477억원(전 분기 대비 396.5% 증가)으로 3개 분기 연속 증가했으며, 3분기 영업이익은 매출의 절반을 넘는다. 지배주주 순이익도 2025년 3분기 순손실 5.8억원에서 4분기 12.5억원, 2026년 1분기 52.5억원, 2분기 95.3억원, 3분기 323억원으로 3개 분기 연속 늘었고, 최근 4개 분기 합계는 483억원이다. 회사는 2025년 4분기 흑자 전환 이후 수급 불균형에 따른 가격·마진 개선이 이어진다고 설명했다. 다만 3분기 이익 급증을 제품별 가격·물량·재고 효과로 나눈 자료는 확인되지 않아, 이익 구성은 분기보고서 주석에서 확인해야 한다. 증선위가 허위 계상을 지적한 기간(2018~2022년)에는 2022년이 포함되므로, 2022년 비교 수치의 정정 여부도 공시로 점검할 대상이다.",
-  "en": "Annual revenue fell from KRW 72.6 billion in 2022 to KRW 52.8 billion in 2023 (down 27.3%) and KRW 44.8 billion in 2024 (down 15.1%), then rose to KRW 53.6 billion in 2025 (up 19.6%); among 2022-2025, 2022 was the largest year and 2024 the smallest. Operating profit was KRW 6.28 billion in 2022 and KRW 710 million in 2023 (down 88.7%), turned to an operating loss of KRW 4.53 billion in 2024, and the loss continued but narrowed to KRW 2.07 billion in 2025. Operating margin was 8.7% in 2022, 1.3% in 2023, -10.1% in 2024 and -3.9% in 2025. Net income attributable to controlling shareholders fell from KRW 8.25 billion in 2022 to KRW 1.06 billion in 2023, then became a net loss of KRW 2.21 billion in 2024 and a widening net loss of KRW 2.96 billion in 2025, two consecutive loss years in 2024-2025; net income including non-controlling interests is the same amount. Operating cash flow was negative in both 2024 (-KRW 1.55 billion) and 2025 (-KRW 2.43 billion), and the debt ratio at the end of 2025 was 28.2% (total equity of KRW 44.8 billion and total liabilities of KRW 12.6 billion). Quarterly revenue rose from KRW 12.5 billion in the third quarter of 2025 to KRW 18.2 billion in the fourth quarter (up 45.5%), KRW 21.5 billion in the first quarter of 2026, KRW 33.4 billion in the second quarter and KRW 84.5 billion in the third quarter (up 152.8% from the prior quarter and 574.0% from a year earlier), four straight quarterly increases. After an operating loss of KRW 894 million in the third quarter of 2025, operating profit turned positive at KRW 1.04 billion in the fourth quarter, then rose to KRW 4.33 billion, KRW 9.61 billion and KRW 47.7 billion (up 396.5% from the prior quarter) in the first to third quarters of 2026, three straight increases, and third-quarter operating profit exceeded half of revenue. Net income attributable to controlling shareholders moved from a net loss of KRW 581 million in the third quarter of 2025 to KRW 1.25 billion, KRW 5.25 billion, KRW 9.53 billion and KRW 32.3 billion, three straight increases, with a four-quarter total of KRW 48.3 billion. The company said price and margin improvement from the supply-demand imbalance has continued since its fourth-quarter 2025 return to profit. No breakdown of the third-quarter jump into price, volume and inventory effects was found, so the composition of profit should be checked in the quarterly report notes. The period flagged by the regulator (2018-2022) includes 2022, so whether the 2022 comparison figures are restated is also something to check in filings."
+  "ko": "연간 실적은 2022년이 매출 726억원, 영업이익 62.8억원, 지배주주 순이익 82.5억원으로 공시 기간(2022~2025년) 중 가장 큰 해다. 2023년에는 매출 528억원(전년 대비 27.3% 감소), 영업이익 7.1억원(전년 대비 88.7% 감소), 지배주주 순이익 10.6억원(전년 대비 87.1% 감소)으로 줄었다. 2024년 매출은 448억원(전년 대비 15.1% 감소)으로 공시 기간 중 가장 작았고, 영업손실 45.3억원으로 적자 전환했으며 지배주주 순손실은 22.1억원이었다. 2025년에는 매출 536억원(전년 대비 19.6% 증가)으로 회복했지만 영업손실 20.7억원이 이어졌고, 지배주주 순손실은 29.6억원으로 확대됐다. 2024년부터 2025년까지 2년 연속 적자다. 영업이익률은 2022년 8.7%에서 2023년 1.3%, 2024년 -10.1%, 2025년 -3.9%로 움직였다. 부채비율은 2022년 17.7%에서 2025년 28.2%로 올랐으며, 2025년 말 자본총계는 448억원, 부채총계는 126억원이다. 영업활동 현금흐름은 2024년 -15.5억원, 2025년 -24.3억원으로 마이너스가 이어졌다. 분기로 보면 2025년 3분기 매출 125억원, 영업손실 8.9억원, 지배주주 순손실 5.8억원에서 출발해 2025년 4분기 매출 182억원, 영업이익 10.4억원으로 흑자 전환했다. 2026년 1분기 매출 215억원·영업이익 43.3억원, 2026년 2분기 매출 334억원·영업이익 96.1억원을 거쳐 2026년 3분기에는 매출 845억원, 영업이익 477억원으로 늘었다. 2026년 3분기 매출은 전 분기 대비 152.8%, 전년 동기 대비 574.0% 증가했다. 2025년 4분기부터 2026년 3분기까지 매출은 4개 분기 연속 증가했고, 영업이익은 2026년 1분기부터 3개 분기 연속 증가했다. 증가 원인과 일회성 요인 여부는 분기보고서 주석과 사업 설명에서 가려야 할 사항이다.",
+  "en": "Annual results show 2022 as the largest year in the disclosed 2022–2025 span, with sales of KRW 72.6 billion, operating profit of KRW 6.28 billion and net profit attributable to controlling shareholders of KRW 8.25 billion. In 2023, sales fell to KRW 52.8 billion, a 27.3% decline year on year, operating profit dropped to KRW 710 million, down 88.7%, and attributable net profit fell to KRW 1.06 billion, down 87.1%. 2024 sales were KRW 44.8 billion, the smallest year in the span, down 15.1%, and the company moved into an operating loss of KRW 4.53 billion with an attributable net loss of KRW 2.21 billion. 2025 sales recovered to KRW 53.6 billion, up 19.6%, but an operating loss of KRW 2.07 billion continued and the attributable net loss widened to KRW 2.96 billion. Operating losses were recorded in 2024 and 2025, two consecutive years. The operating margin moved from 8.7% in 2022 to 1.3% in 2023, -10.1% in 2024 and -3.9% in 2025. The debt-to-equity ratio rose from 17.7% in 2022 to 28.2% in 2025, when total equity was KRW 44.8 billion and total liabilities were KRW 12.6 billion. Operating cash flow was -KRW 1.55 billion in 2024 and -KRW 2.43 billion in 2025. Quarterly sales began at KRW 12.5 billion in the third quarter of 2025, with an operating loss of KRW 894 million and an attributable net loss of KRW 581 million. The fourth quarter of 2025 brought sales of KRW 18.2 billion and an operating profit of KRW 1.04 billion, a swing to profit. Sales reached KRW 21.5 billion in the first quarter of 2026 and KRW 33.4 billion in the second quarter, before jumping to KRW 84.5 billion in the third quarter of 2026, up 152.8% on the prior quarter and 574.0% on the year-earlier quarter. Operating profit was KRW 47.7 billion in the third quarter of 2026. Sales rose for four consecutive quarters from the fourth quarter of 2025 through the third quarter of 2026, and operating profit rose for three consecutive quarters from the first quarter of 2026. Whether one-off items played a role should be checked in the notes to the quarterly reports."
  },
  "industry": {
-  "ko": "전방 수급의 핵심은 대형 메모리 업체의 생산 재편이다. 삼성전자와 SK하이닉스 등은 HBM 등 차세대 제품 생산능력 확보를 위해 레거시 라인 비중을 줄였고, 공급이 줄며 가격이 오르는 구조가 됐다. 서울경제에 따르면 DDR4 8Gb 고정거래가격은 2025년 11월 8.1달러로 전월 대비 15.7% 올라, 2018년 9월 이후 7년여 만에 8달러 선을 넘었다. 트렌드포스는 2026년 1분기 일반 D램 계약 가격이 전 분기 대비 93~98% 상승한 데 이어 2분기에도 58~63% 추가 상승할 것으로 분석했다. DDR4 현물가격은 2026년 3~5월 조정 뒤 다시 올라 2026년 7월 22일 16GB 기준 81.2달러였고, 6개월 만에 8.5배가 되자 단기 급등 경계감도 퍼졌다. 지속 기간에 대한 전망은 엇갈린다. 카운터포인트리서치는 메모리 가격 상승세가 2027년 상반기까지 이어질 것으로 내다봤다. 반면 영국 연구소 BISI는 D램 가격이 2026년 중후반 정점을 지나 2027년 하반기에 부분 완화될 수 있다고 분석했다. 피델릭스는 이 가격 환경의 수혜 기업이지만 점유율을 가진 가격 선도 업체는 아니어서, 업황 변화가 매출총이익률과 판매 단가에 그대로 전달되는 위치다.",
-  "en": "The key to supply and demand is the production reshuffle at the large memory makers. Samsung Electronics, SK hynix and others cut the share of legacy lines to secure HBM and other next-generation capacity, and shrinking supply is pushing prices up. According to Seoul Economic Daily, the DDR4 8Gb fixed transaction price rose 15.7% from the prior month to 8.1 dollars in November 2025, topping 8 dollars for the first time since September 2018. TrendForce estimated that general-purpose DRAM contract prices rose 93-98% from the prior quarter in the first quarter of 2026 and would rise a further 58-63% in the second quarter. DDR4 spot prices resumed rising after a March-May 2026 correction, reaching 81.2 dollars per 16GB on July 22, 2026, and an 8.5-fold rise in six months spread wariness about a short-term spike. Views on duration differ. Counterpoint Research expected memory price increases to continue into the first half of 2027. BISI, by contrast, analyzed that DRAM prices could peak in mid-to-late 2026 and ease partially only in the second half of 2027. Fidelix benefits from this pricing environment but is not a share-holding price leader, so industry swings flow directly into its gross margin and selling prices."
+  "ko": "피델릭스의 전방 수요는 차량용 칩셋과 5G 통신 모듈 쪽으로 설명된다. 기업모니터의 2026년 4월 14일 기준 실적 코멘트는 회사가 차량용 칩셋 업체와 협업해 인증을 확보했고, 5G 시장 전환이 성장 분기점을 앞두고 있다고 적었다. 데일리머니는 2026년 5월 11일 주가 급등의 배경으로 미국의 대중국 반도체 규제 강화를 꼽았다. 이 보도는 규제 수혜를 시장 반응의 배경으로 설명한 것이며, 실적에 미친 영향을 수치로 보여준 자료는 아니다. 메모리 업황은 대형 메모리 기업의 투자와 가격 흐름에 크게 좌우되지만, 피델릭스는 그 가격 흐름을 직접 받는 대형 업체가 아니라 특정 응용처 인증을 확보한 소형 공급자다. 경쟁사 대비 포지션은 SK하이닉스, 삼성전자와 규모가 다르고, 같은 중소형 반도체 기업 가운데서는 차량용과 모듈 쪽 인증을 얼마나 넓히느냐가 차별점이다. 2024년과 2025년 적자 이후 2026년 분기 실적이 크게 늘어난 것은 이 응용처에서 주문이 늘었을 가능성을 보여준다. 다만 원인은 분기보고서에서 확인할 사항이다. 업황 판단의 핵심 지표는 분기 매출이 생산 물량 확대와 함께 이어지는지다.",
+  "en": "Fidelix's end demand is described as centering on automotive chipsets and 5G communication modules. A company commentary dated April 14, 2026 noted that it secured qualification with automotive chipset makers and that the shift to 5G is approaching a growth inflection. Daily Money attributed the share-price surge on May 11, 2026 to tighter US chip export controls on China. That report frames the regulatory tailwind as a backdrop to market reaction and does not show the effect on earnings in figures. Memory cycles are heavily driven by investment and pricing at large memory makers, but Fidelix is not a large player that directly absorbs those price moves; it is a smaller supplier holding qualification for specific applications. Against SK hynix and Samsung Electronics, the scale is very different, and among small and mid-sized chip companies, the differentiator is how far it can widen qualification in automotive and module applications. The jump in quarterly results in 2026 after losses in 2024 and 2025 suggests that orders in these applications may have grown, though the cause should be checked in the quarterly reports. The key indicator for the industry view is whether quarterly sales continue alongside higher production volume."
  },
  "outlook": {
-  "ko": "회사가 연간 실적 가이던스 수치를 제시한 자료는 확인되지 않았고, 확인된 것은 수급 판단과 계약 공시다. 회사는 현재 업황이 2027년과 2028년까지 이어질 가능성이 크다고 판단한다. 2026년 7월 22일 Semtech과 66억 4,020만원(450만 달러) 계약을 공시했고, 2026년 9월 10일에는 Semtech과 60억 2,550만원(450만 달러) 규모 계약을 공시했다. 이 계약은 선수금 100%와 취소 불가 조건이다. 2026년 9월 29일에는 Alliance Memory와 192억 4,400만원 계약을 공시했으며, 2025년 매출액의 35.8%에 해당한다. 2026년 10월 13일 Telit Communications Cyprus와 체결한 계약은 60억 9,125만원이다. 이 금액들은 수주 공시이며 매출 인식 시점과 규모는 납품 일정에 따라 정해진다. 신제품 쪽에서는 KAIST와 NPU 기반 Wide-I/O DRAM을 4년 과제로 설계 중이며, 하반기 설계를 마치고 3분기에 초도 시제품 제작에 들어간다는 목표를 밝혔다. 시제품 진행 여부는 확인되지 않았다. 신한투자증권은 2026년 6월 30일 보도 기준으로, 레거시 메모리 공급 부족의 수혜가 피델릭스의 실적 개선으로 이어질 가능성이 높다고 평가했다.",
-  "en": "No annual earnings guidance figures from the company were found; what is confirmed is its supply-demand view and contract disclosures. The company believes the current cycle is likely to last through 2027 and 2028. On July 22, 2026 it disclosed a KRW 6.64 billion (USD 4.5 million) contract with Semtech, and on September 10, 2026 a further Semtech contract worth KRW 6.0255 billion (USD 4.5 million). That contract carries 100% prepayment and non-cancellable terms. On September 29, 2026 it disclosed a KRW 19.244 billion contract with Alliance Memory, equal to 35.8% of 2025 revenue. The contract signed on October 13, 2026 with Telit Communications Cyprus is worth KRW 6.09125 billion. These amounts are order disclosures; the timing and size of revenue recognition depend on delivery schedules. On new products, the company is designing NPU-based Wide-I/O DRAM with KAIST in a four-year project and said it aims to finish design in the second half and start first prototypes in the third quarter. Whether the prototype stage has been reached has not been confirmed. In a report dated June 30, 2026, Shinhan Investment Corp. assessed that benefits from the legacy memory supply shortage were likely to flow into Fidelix's earnings."
+  "ko": "회사의 다음 확인 지점은 2026년 4분기 잠정 실적과 2026년 사업보고서다. 2026년 4분기 실적은 통상 2027년 1월 전후에 발표되는 일정이므로, 2026년 3분기까지 이어진 매출과 영업이익 증가가 연말 분기에도 유지되는지가 첫 확인 지점이다. 2026년 사업보고서는 2027년 3월 말까지 제출되며, 연간 매출과 영업이익, 지배주주 순이익이 2025년 적자 구조에서 얼마나 바뀌었는지 보여준다. 영업활동 현금흐름이 2024년과 2025년의 마이너스에서 돌아섰는지도 같은 보고서에서 확인된다. 최근 네 개 분기 지배주주 순이익 합계 483억원은 다음 분기 실적을 비교하는 기준이 된다. 강세 요인으로는 차량용 칩셋 인증 이후 모듈 업체를 통한 생산 확대, 5G 전환에 따른 수요 기대가 꼽힌다. 약세 요인으로는 2026년 분기 증가가 2025년 하반기 저점에서 시작된 비교적 짧은 회복이라는 점, 2024~2025년 2년 연속 적자와 영업활동 현금흐름의 마이너스 이력이 있다는 점이 있다. 규제 변수도 변동 요인이다. 2027년 1분기 분기보고서는 같은 해 5월 중순까지 제출되며, 2026년 1분기 매출 215억원·영업이익 43.3억원과 비교하는 기준이 된다.",
+  "en": "The next checkpoints are the fourth-quarter 2026 preliminary results and the 2026 annual report. Fourth-quarter results are typically announced around January 2027, so the first checkpoint is whether the sales and operating profit growth carried through the third quarter of 2026 holds into the year-end quarter. The 2026 annual report is due by the end of March 2027 and will show how full-year sales, operating profit and attributable net profit changed from the 2025 loss structure. The same report will also show whether operating cash flow turned positive after the negative readings in 2024 and 2025. Net profit attributable to controlling shareholders of KRW 48.3 billion over the last four quarters becomes the benchmark for the next quarters. Bullish factors include production expansion through module partners after automotive chipset qualification and demand expectations tied to the 5G transition. Bearish factors include that the 2026 gains follow a relatively short recovery that started from a low in the second half of 2025, and the record of two loss-making years in 2024 and 2025 with negative operating cash flow. Regulatory changes are another variable. The first-quarter 2027 quarterly report is due by mid-May 2027 and will be compared with first-quarter 2026 sales of KRW 21.5 billion and operating profit of KRW 4.33 billion."
  },
  "valuation_comment": {
-  "ko": "이 종목의 배수는 이익 규모가 분기마다 크게 바뀌는 시기라 해석에 주의가 필요하다. 이익 대비 배수는 최근 네 개 분기의 이익 급증이 반영돼 반도체 업종 평균을 밑도는 편이다. 반면 순자산 대비 배수는 프리미엄이 붙은 구간에 있고, 2025년 말 자본총계가 448억원인 반면 최근 4개 분기 지배주주 순이익 합계는 483억원이다. 이익 대비 배수가 낮은 것은 이 이익이 유지된다는 전제를 깔고 있으므로, 가격 사이클이 꺾이거나 증선위 조치 후속이 이익 인식에 영향을 주면 배수의 의미가 달라진다. 배당수익률은 사실상 없는 수준이어서 주주환원 측면의 비교 우위는 없다. 현재 배수는 화면 카드를 참고하면 된다.",
-  "en": "Multiples for this stock need careful reading because earnings are changing sharply from quarter to quarter. The earnings-based multiple reflects the surge over the last four quarters and sits below the semiconductor sector average. The book-value multiple, by contrast, carries a premium to net assets: total equity was KRW 44.8 billion at the end of 2025, while net income attributable to controlling shareholders over the last four quarters was KRW 48.3 billion. A low earnings multiple assumes that profit holds, so if the price cycle turns or the aftermath of the regulatory action affects earnings recognition, the meaning of that multiple changes. The dividend yield is effectively nil, so there is no shareholder-return advantage in comparison. See the live card on screen for current multiples."
+  "ko": "주가수익 배수는 2025년까지 적자가 이어져 이익 기준 비교가 어려웠다. 2026년 분기 흑자 전환 이후에는 최근 네 개 분기 지배주주 순이익 합계 483억원을 기준으로 계산할 수 있는 구간에 들어왔다. 주가순자산비율은 2025년 말 지배주주 지분 448억원에 대해 프리미엄이 붙은 구간이며, 순자산보다 이익 회복 기대가 가격에 더 반영된 구조다. 배당수익률은 0에 가까워 주주환원보다 이익 성장 여부가 밸류에이션의 중심 변수다. 2026년 3분기 이익이 단일 분기에 몰려 있어 최근 네 개 분기 기준 배수와 분기 기준 배수의 차이가 클 수 있다. 2022년 지배주주 순이익 82.5억원 수준까지 회복했는지 여부가 과거 흑자 시기와 비교하는 기준이 된다. 과거 적자 연도의 배수는 비교 의미가 작다는 점이 해석의 핵심이다.",
+  "en": "Earnings-based multiples were hard to compare while losses continued through 2025. Since the swing to profit in 2026 quarters, the multiple can be calculated on net profit attributable to controlling shareholders over the last four quarters, which totals KRW 48.3 billion. The price-to-book ratio carries a premium over equity attributable to controlling shareholders of KRW 44.8 billion at the end of 2025, so the price reflects expectations of earnings recovery more than net asset value. The dividend yield is close to zero, so earnings growth rather than shareholder returns is the central variable for valuation. Because third-quarter 2026 profit is concentrated in one quarter, the gap between a four-quarter multiple and a single-quarter multiple can be large. Whether profit recovers toward the KRW 8.25 billion attributable net profit of 2022 is the benchmark for comparison with the profitable period. For loss years, multiples carry limited comparative meaning, and that is the key point of interpretation."
  },
  "bull": [
   {
    "title": {
-    "ko": "레거시 공급 공백과 가격 환경",
-    "en": "Legacy supply gap and pricing"
+    "ko": "분기 실적의 급격한 회복",
+    "en": "Sharp quarterly recovery"
    },
    "body": {
-    "ko": "삼성전자와 SK하이닉스가 레거시 라인을 줄여 공급이 빠듯해졌다. 피델릭스는 이 공백을 겨냥해 자체 LPDDR4를 설계 중이다. 신한투자증권은 2026년 6월 30일 보도 기준으로 수혜가 실적 개선으로 이어질 가능성이 높다고 평가했다. 가격 상승 구간이 이어지면 단가 효과가 분기 실적에 계속 반영될 수 있다.",
-    "en": "Samsung Electronics and SK hynix have trimmed legacy lines, tightening supply. Fidelix is designing its own LPDDR4 to target that gap. Shinhan Investment Corp., in a report dated June 30, 2026, assessed that the benefit was likely to translate into earnings improvement. If the price-increase phase continues, the unit-price effect can keep flowing into quarterly results."
+    "ko": "2025년 4분기 흑자 전환 뒤 영업이익은 2026년 1분기 43.3억원, 2분기 96.1억원, 3분기 477억원으로 늘었다. 매출도 2026년 3분기 845억원으로 4개 분기 연속 증가했다. 2025년 연간 영업손실 20.7억원과 비교하면 단일 분기 영업이익 규모의 변화가 크다. 다만 이 흐름이 연말까지 이어지는지는 다음 분기 공시로 확인할 사항이다.",
+    "en": "After turning profitable in the fourth quarter of 2025, operating profit rose to KRW 4.33 billion in the first quarter of 2026, KRW 9.61 billion in the second and KRW 47.7 billion in the third. Sales also grew for four straight quarters to KRW 84.5 billion in the third quarter. Against the 2025 annual operating loss of KRW 2.07 billion, the single-quarter profit scale has changed sharply. Whether the trend holds through year-end is a matter for the next quarterly disclosures."
    }
   },
   {
    "title": {
-    "ko": "영업 레버리지와 이익 가시성",
-    "en": "Operating leverage and earnings visibility"
+    "ko": "차량용 칩셋 인증 기반",
+    "en": "Automotive qualification base"
    },
    "body": {
-    "ko": "영업이익은 2026년 1분기 43.3억원, 2분기 96.1억원, 3분기 477억원으로 3개 분기 연속 늘었고 3분기 영업이익은 매출의 절반을 넘는다. 자체 공장이 없는 팹리스 구조여서 매출이 늘 때 고정비 부담이 상대적으로 작다. 영업이익률은 2024년 -10.1%에서 사업 지표 기준으로 큰 폭의 개선을 보였다.",
-    "en": "Operating profit rose for three straight quarters to KRW 4.33 billion, KRW 9.61 billion and KRW 47.7 billion in the first to third quarters of 2026, and third-quarter operating profit exceeded half of revenue. As a fabless company with no plant of its own, its fixed-cost burden is relatively light when sales rise. Operating margin improved sharply from -10.1% in 2024 on this business metric."
+    "ko": "기업모니터의 2026년 4월 14일 기준 코멘트는 차량용 칩셋 업체와 협업해 인증을 확보했고, 모듈 업체를 통해 생산을 확대했다고 정리했다. 인증 확보는 특정 고객군에서 반복 주문이 나올 수 있는 진입 장벽으로 작용할 수 있다. 5G 시장 전환도 성장 분기점으로 제시됐다. 이 강세 요인이 실제 매출로 이어지는 속도는 분기 공시로 확인된다.",
+    "en": "A company commentary dated April 14, 2026 said Fidelix secured qualification with automotive chipset makers and expanded production through module partners. Qualification can act as an entry barrier that supports repeat orders from specific customers. The shift to 5G was also presented as a growth inflection. How quickly this strength converts into sales will show up in quarterly disclosures."
    }
   },
   {
    "title": {
-    "ko": "선수금 계약과 재무 구조",
-    "en": "Prepaid contracts and balance sheet"
+    "ko": "재무 부담의 상대적 여력",
+    "en": "Relative financial headroom"
    },
    "body": {
-    "ko": "Semtech과의 2026년 9월 계약과 Telit과의 2026년 10월 계약은 선수금 조건이 붙어 있어 외주생산 선행 비용 부담을 줄이는 구조다. 2025년 말 부채비율은 28.2%로 낮은 편이고, 자본총계 448억원은 전부 지배주주 지분이다. 최근 4개 분기 지배주주 순이익 합계 483억원은 이 자본 규모를 웃돌아 재무 체력을 키웠다.",
-    "en": "The September 2026 Semtech contract and the October 2026 Telit contract include prepayment terms, which eases the up-front cost of outsourced production. The debt ratio at the end of 2025 was a low 28.2%, and the KRW 44.8 billion of total equity is entirely controlling-shareholder equity. Net income attributable to controlling shareholders of KRW 48.3 billion over the last four quarters exceeds that equity base, adding to financial strength."
+    "ko": "부채비율은 2022년 17.7%에서 2025년 28.2%로 올랐지만, 2025년 말 기준 부채총계 126억원은 자본총계 448억원보다 작다. 자본 대비 부채 부담이 아직 크지 않은 구조다. 2024년과 2025년에 영업활동 현금흐름이 마이너스였다는 점은 여전히 확인할 사항이다. 흑자 전환 이후 현금흐름이 플러스로 돌아서는지가 재무 여력 판단의 핵심이다.",
+    "en": "The debt-to-equity ratio rose from 17.7% in 2022 to 28.2% in 2025, yet total liabilities of KRW 12.6 billion at the end of 2025 remain smaller than total equity of KRW 44.8 billion. The debt burden relative to equity is not large. Operating cash flow was negative in 2024 and 2025, which remains a point to verify. Whether cash flow turns positive after the profit swing is the key test of financial headroom."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "가격 사이클의 정점 논란",
-    "en": "Debate over a cycle peak"
+    "ko": "적자 이력과 짧은 흑자 기록",
+    "en": "Loss history and a short profit record"
    },
    "body": {
-    "ko": "DDR4 현물가격은 2026년 3~5월에 조정을 겪었고, 6개월 만에 8.5배가 되면서 단기 급등 경계감이 나왔다. BISI는 D램 가격이 2026년 중후반 정점을 지날 수 있다고 분석했다. 대형 업체의 증설 효과는 2027년에 시장에 반영될 전망이라, 3분기 같은 이익 수준이 유지되는지는 불확실하다.",
-    "en": "DDR4 spot prices corrected in March-May 2026, and an 8.5-fold rise in six months raised wariness about a short-term spike. BISI analyzed that DRAM prices could pass their peak in mid-to-late 2026. The effect of large producers' capacity additions is expected to reach the market in 2027, so whether third-quarter-level profit can be sustained is uncertain."
+    "ko": "2024년과 2025년에 2년 연속 적자를 냈고 지배주주 순손실은 2025년에 29.6억원으로 확대됐다. 흑자 분기 기록은 2025년 4분기부터 시작돼 4개 분기에 그친다. 영업활동 현금흐름도 2024년 -15.5억원, 2025년 -24.3억원으로 마이너스였다. 공시 기준의 흑자 기간이 짧다는 점은 실적 지속성의 약세 요인이다.",
+    "en": "Fidelix posted losses in 2024 and 2025, and the attributable net loss widened to KRW 2.96 billion in 2025. The profitable quarterly record starts in the fourth quarter of 2025 and covers only four quarters. Operating cash flow was also negative at -KRW 1.55 billion in 2024 and -KRW 2.43 billion in 2025. The short profitable period on a disclosed basis is a bearish factor for durability."
    }
   },
   {
    "title": {
-    "ko": "회계 신뢰와 후속 조치",
-    "en": "Accounting credibility and follow-up"
+    "ko": "매출 변동성과 응용처 집중",
+    "en": "Sales volatility and application concentration"
    },
    "body": {
-    "ko": "증선위는 2018~2022년 허위 계상 합계를 150억 6,900만원으로 밝혔고 외부감사 방해도 확인됐다고 했다. 회사와 전 대표이사 등은 수사기관에 고발됐고, 과징금은 아직 확정되지 않았다. 시기가 지난 사안이지만 감사인 지정 3년으로 감사 부담과 비용이 늘 수 있다.",
-    "en": "The regulator put the total false bookings in 2018-2022 at KRW 15.069 billion and found that the external audit was obstructed. The company and its former chief executive, among others, were referred to prosecutors, and the fine has not been decided. The conduct dates from earlier years, but three years of designated auditors may raise audit burden and cost."
+    "ko": "매출은 2022년 726억원에서 2024년 448억원까지 줄었고, 2025년에는 536억원으로 회복했다. 2026년 3분기 매출은 전 분기 대비 152.8% 늘어 분기 간 변동 폭이 매우 크다. 차량용 칩셋과 모듈을 통한 공급 구조는 특정 응용처 인증에 대한 의존도를 높인다. 해당 고객의 주문이 줄면 매출 충격도 집중될 수 있다.",
+    "en": "Sales fell from KRW 72.6 billion in 2022 to KRW 44.8 billion in 2024 before recovering to KRW 53.6 billion in 2025. Third-quarter 2026 sales rose 152.8% on the prior quarter, so quarter-to-quarter swings are very large. A supply structure that runs through automotive chipset and module partners increases reliance on qualification in specific applications. If orders from those customers fall, the sales impact could also be concentrated."
    }
   },
   {
    "title": {
-    "ko": "외부 조달·외주생산 의존",
-    "en": "Reliance on outsourced sourcing and production"
+    "ko": "규제와 주가 변동성",
+    "en": "Regulation and share-price volatility"
    },
    "body": {
-    "ko": "피델릭스는 삼성전자와 SK하이닉스 메모리를 외부 조달해 판매하는 구조이고 생산은 외주다. 파이낸스투데이는 외주생산 원가가 이익 기여도의 변수라고 짚었다. 메모리 공급 우선순위나 조달 단가가 바뀌면 마진이 흔들릴 수 있다.",
-    "en": "Fidelix resells memory sourced externally from Samsung Electronics and SK hynix and outsources production. Finance Today noted that outsourced production cost is a variable for profit contribution. A change in memory supply priority or procurement price could shake margins."
+    "ko": "데일리머니는 2026년 5월 11일 상한가 배경으로 미국의 대중국 반도체 규제 강화를 꼽았다. 규제가 완화되거나 방향이 바뀌면 이 수혜 논리는 약해질 수 있다. 52주 가격 범위가 매우 넓어 주가 변동성이 큰 종목으로 보인다. 실적과 무관한 수급 요인이 주가 움직임을 키울 수 있다는 점도 약세 요인이다.",
+    "en": "Daily Money cited tighter US chip export controls on China as the reason for a limit-up move on May 11, 2026. If those controls ease or change direction, the tailwind argument could weaken. The share price has moved across a very wide 52-week range, pointing to high volatility. Supply-demand factors unrelated to earnings can amplify price moves, which is also a bearish factor."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "규제·법적",
-    "en": "Regulatory and legal"
+    "ko": "실적 지속성",
+    "en": "Earnings durability"
    },
    "body": {
-    "ko": "증선위가 2026년 10월 28일 의결한 조치에는 감사인 지정 3년, 전 대표이사 등 해임 권고 상당 조치, 수사기관 고발이 포함된다. 회사와 관계자에 대한 과징금은 금융위가 추후 결정한다. 수사 결과와 과징금 규모는 아직 알 수 없고, 기존 공시 재무제표에 미치는 영향도 확인되지 않았다.",
-    "en": "The measures voted by the Securities and Futures Commission on October 28, 2026 include three years of auditor designation, a dismissal-equivalent recommendation for the former chief executive and another person, and referral to prosecutors. The fine for the company and related persons is to be decided later by the Financial Services Commission. The outcome of any investigation and the size of the fine are unknown, and the effect on previously filed financial statements has not been confirmed."
+    "ko": "2026년 3분기 영업이익 477억원은 2025년 연간 영업손실과 대비될 만큼 큰 수치다. 그러나 단일 분기 집중이 나타나면 다음 분기 반등 폭이 작아질 수 있다. 증가 원인이 일회성인지 반복 가능한 주문인지는 분기보고서 주석에서 가려야 한다. 2026년 4분기 잠정 실적이 이 지속성의 첫 시험대다.",
+    "en": "Third-quarter 2026 operating profit of KRW 47.7 billion is large compared with the 2025 annual operating loss. However, if profit concentrates in a single quarter, the rebound in following quarters could be smaller. Whether the drivers were one-off or repeatable orders should be checked in the quarterly report notes. The fourth-quarter 2026 preliminary results are the first test of durability."
    }
   },
   {
    "cat": {
-    "ko": "업황·가격",
-    "en": "Industry and pricing"
+    "ko": "고객·응용처 집중",
+    "en": "Customer and application concentration"
    },
    "body": {
-    "ko": "2026년 1분기 일반 D램 계약가는 93~98% 상승했다는 트렌드포스 분석이 나왔다. 이런 급등 뒤에는 증설과 수요 둔화가 겹치면 가격이 조정될 수 있다. 피델릭스의 이익은 단가에 민감해, 가격 정점 이후에는 매출 규모보다 이익률 하락 폭이 더 크게 나타날 수 있다.",
-    "en": "TrendForce estimated that general-purpose DRAM contract prices rose 93-98% in the first quarter of 2026. After such a surge, prices can correct if capacity additions and weaker demand coincide. Fidelix's profit is sensitive to unit price, so after a peak the margin decline could be larger than the revenue decline."
+    "ko": "차량용 칩셋 업체와의 인증과 모듈 업체를 통한 생산 구조는 특정 고객과 응용처에 대한 의존도를 높인다. 고객사의 제품 전환이나 인증 재평가가 생기면 주문이 흔들릴 수 있다. 상위 고객의 매출 비중은 사업보고서에서 확인할 항목이다. 고객 다변화 여부가 리스크 완화의 핵심이다.",
+    "en": "Qualification with automotive chipset makers and a production structure through module partners raise reliance on specific customers and applications. If a customer changes product or re-evaluates qualification, orders could be disrupted. The share of sales from major customers is an item to check in the annual report. Customer diversification is the main factor for reducing this risk."
    }
   },
   {
    "cat": {
-    "ko": "재무·현금흐름",
-    "en": "Financial and cash flow"
+    "ko": "정책·규제 변수",
+    "en": "Policy and regulatory variables"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2024년 -15.5억원, 2025년 -24.3억원으로 유출이었다. 외부 조달 매입이 늘어나는 국면에서 운전자본 부담이 커질 수 있다. 2026년 9월 30일과 10월 6일에는 단기차입금 증가 결정 공시가 나왔다. 금액과 용도는 이 자료에서 확인되지 않았으므로 공시 원문 확인이 필요하다.",
-    "en": "Operating cash flow was an outflow of KRW 1.55 billion in 2024 and KRW 2.43 billion in 2025. Working-capital burden can grow as purchases of externally sourced memory increase. Short-term borrowing increase decisions were disclosed on September 30 and October 6, 2026. The amounts and purposes were not confirmed in the sources reviewed, so the original filings should be checked."
+    "ko": "미국의 대중국 반도체 수출 규제는 강세 요인으로 거론됐지만, 정책 방향에 따라 수혜 논리가 바뀔 수 있다. 규제 변화는 고객 구매 패턴과 공급망 구성에도 영향을 줄 수 있다. 회사가 이 규제 환경에서 어떤 위치에 있는지는 사업보고서의 사업 현황과 위험 요인 서술에서 확인할 사항이다. 정책 뉴스에 따른 주가 변동과 실적 변화를 구분해 보는 것이 자료 해석의 기본이다.",
+    "en": "US export controls on chips destined for China were cited as a tailwind, but the tailwind argument could shift with policy direction. Regulatory changes could also affect customer purchasing patterns and supply-chain structure. Where the company stands in this environment should be checked in the business and risk sections of the annual report. Separating share-price moves driven by policy news from changes in reported earnings is the basic approach to reading the data."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 6일 전후",
-    "en": "Around November 6, 2026"
+    "ko": "2027년 1월 전후(통상 일정)",
+    "en": "Around January 2027 (typical timing)"
    },
    "what": {
-    "ko": "Telit Communications Cyprus 공급계약의 계약기간 종료 예정일이다. 종료일은 양사 협의로 바뀔 수 있으므로 납품과 매출 인식이 일정대로 되는지 확인한다.",
-    "en": "This is the scheduled end of the Telit Communications Cyprus supply contract period. The end date can change by mutual agreement, so check whether delivery and revenue recognition proceed on schedule."
+    "ko": "2026년 4분기 잠정 실적. 2026년 3분기까지 이어진 매출·영업이익 증가가 연말 분기에도 유지되는지, 분기 흑자의 지속성을 보여준다.",
+    "en": "Fourth-quarter 2026 preliminary results. They show whether sales and operating profit growth through the third quarter of 2026 carried into the year-end quarter, indicating the durability of quarterly profit."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 중",
-    "en": "During the fourth quarter of 2026"
+    "ko": "2027년 3월 말(사업보고서 제출 기한)",
+    "en": "End of March 2027 (annual report filing deadline)"
    },
    "what": {
-    "ko": "DRAM 고정거래가격 협상 결과와 현물가격 방향이다. 레거시 제품 가격이 3분기 수준을 유지하는지가 2026년 4분기 이익의 변수다.",
-    "en": "Watch the outcome of fixed-price DRAM negotiations and the direction of spot prices. Whether legacy product prices hold at third-quarter levels is a variable for fourth-quarter 2026 profit."
+    "ko": "2026년 사업보고서. 연간 매출·영업이익·지배주주 순이익이 2025년 적자 구조에서 얼마나 바뀌었는지, 영업활동 현금흐름이 플러스로 돌아섰는지 확인한다.",
+    "en": "The 2026 annual report. It shows how full-year sales, operating profit and attributable net profit changed from the 2025 loss structure and whether operating cash flow turned positive."
    }
   },
   {
    "when": {
-    "ko": "시점 미정(금융위 결정 시)",
-    "en": "Date to be determined (when the Financial Services Commission decides)"
+    "ko": "2027년 5월 15일 전후(1분기 분기보고서 제출 기한)",
+    "en": "Around May 15, 2027 (first-quarter report filing deadline)"
    },
    "what": {
-    "ko": "증선위 조치에 따른 과징금 규모 확정, 수사기관 고발 이후의 절차, 재무제표 정정 여부를 확인한다. 이는 이익의 신뢰성과 직결된다.",
-    "en": "Check the final fine from the Securities and Futures Commission action, procedures after the referral to prosecutors, and any restatement of financial statements. These bear directly on the reliability of earnings."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월 초",
-    "en": "Early March 2027"
-   },
-   "what": {
-    "ko": "2026년 9월 10일 공시한 Semtech 계약의 계약기간 종료 예정일(2027년 3월 1일)이다. 선수금 수령과 납품 이행이 계약대로 진행됐는지 확인한다.",
-    "en": "This is the scheduled end of the Semtech contract disclosed on September 10, 2026 (March 1, 2027). Confirm whether prepayment receipt and delivery went as contracted."
-   }
-  },
-  {
-   "when": {
-    "ko": "2027년 3월 말",
-    "en": "Late March 2027"
-   },
-   "what": {
-    "ko": "2026년 사업보고서의 법정 제출 시한이다. 연간 실적과 현금흐름, 차입금, 감사인 지정 이후 감사 의견을 확인한다.",
-    "en": "This is the statutory filing deadline for the 2026 annual report. Check full-year results, cash flow, borrowings and the audit opinion after the auditor designation."
+    "ko": "2027년 1분기 실적. 2026년 1분기 매출 215억원, 영업이익 43.3억원과 비교해 증가 흐름이 이어졌는지, 차량용 인증 기반 물량이 반영되는지 본다.",
+    "en": "First-quarter 2027 results. Comparing them with first-quarter 2026 sales of KRW 21.5 billion and operating profit of KRW 4.33 billion shows whether growth continued and whether automotive qualification volume is reflected."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "피델릭스는 2024~2025년 2년 연속 적자 뒤 2025년 4분기 흑자로 돌아서고, 2026년 3분기 영업이익 477억원까지 이익이 커진 회사다. 배경에는 삼성전자와 SK하이닉스가 줄인 레거시 메모리 공급과 가격 상승이 있고, 회사는 이 업황이 2027~2028년까지 이어질 가능성이 크다고 본다. 반면 BISI 같은 기관은 가격 정점 이후 완화 가능성을 제시해 시각이 엇갈린다. 3분기 매출은 2025년 연간 매출을 웃돌지만 이익 구성에 대한 자료는 제한적이다. 2026년 10월 28일의 증선위 제재는 2018~2022년 회계 문제로, 과징금과 수사 결과가 남아 있다. 확인할 지점은 4분기 DRAM 가격, 계약 이행과 현금흐름, 제재의 후속 절차다. 이 글은 정보 제공용이며 투자 판단은 독자의 몫이다.",
-   "en": "Fidelix swung back to profit in the fourth quarter of 2025 after two straight loss years in 2024-2025, and its operating profit reached KRW 47.7 billion in the third quarter of 2026. Behind this are the legacy memory supply cuts by Samsung Electronics and SK hynix and rising prices, and the company expects the cycle to last likely through 2027-2028. Institutions such as BISI, by contrast, point to possible easing after a price peak, so views differ. Third-quarter revenue exceeded full-year 2025 revenue, but information on the composition of profit is limited. The October 28, 2026 sanction concerns accounting problems from 2018-2022, with the fine and the investigation outcome still pending. The points to check are fourth-quarter DRAM prices, contract fulfillment and cash flow, and the follow-up to the sanction. This report is provided for information only, and investment decisions are left to the reader."
+   "ko": "피델릭스는 2024년과 2025년 2년 연속 적자 이후 2025년 4분기에 흑자로 전환했고, 2026년 3분기에는 매출 845억원과 영업이익 477억원을 공시했다. 최근 네 개 분기 지배주주 순이익 합계는 483억원으로 2025년 지배주주 순손실 29.6억원과 대비된다. 성장 기반으로는 차량용 칩셋 인증과 모듈 업체를 통한 생산 확대가 거론된다. 반면 흑자 기록은 4개 분기에 그치고, 영업활동 현금흐름은 2025년까지 마이너스였으며, 분기 매출 변동 폭이 매우 크다. 규제 수혜 보도와 주가 변동성도 함께 있어 강세와 약세 요인이 병존한다. 다음 확인 지점은 2026년 4분기 잠정 실적, 2026년 사업보고서, 2027년 1분기 분기보고서다. 이 세 공시에서 흑자 지속성과 현금흐름 전환이 확인되는지가 리포트의 핵심 검증 사항이다.",
+   "en": "Fidelix swung to operating profit in the fourth quarter of 2025 after two consecutive loss-making years in 2024 and 2025, and its third-quarter 2026 disclosure showed sales of KRW 84.5 billion and operating profit of KRW 47.7 billion. Net profit attributable to controlling shareholders over the last four quarters totals KRW 48.3 billion, compared with an attributable net loss of KRW 2.96 billion in 2025. Growth drivers cited include qualification in automotive chipsets and production expansion through module partners. On the other side, the profitable record covers only four quarters, operating cash flow was negative through 2025, and quarterly sales swings are very large. Regulatory-tailwind reporting and share-price volatility mean bullish and bearish factors coexist. The next checkpoints are the fourth-quarter 2026 preliminary results, the 2026 annual report and the first-quarter 2027 report. Whether these disclosures confirm durable profit and a turn in cash flow is the central test."
   }
  },
  "sources": [
+  "https://www.investing.com/equities/fidelix-co-ltd",
+  "https://www.kokstock.com/stock/item.asp?item_cd=032580",
+  "https://www.google.com/finance/beta/quote/032580:KOSDAQ?hl=ko",
+  "https://kr.tradingview.com/symbols/KRX-032580/",
+  "https://www.msn.com/ko-kr/money/stockdetails/fidelix-co-ltd/fi-ajoaec",
   "https://www.butler.works/ko/companies/00189538",
-  "https://ssl.pstatic.net/imgstock/upload/research/company/1704236865551.pdf",
-  "https://www.tradingkey.com/kr/news/earnings/262246636-tradingkey",
-  "https://www.tradingkey.com/kr/news/transcripts/262245684-tradingkey",
-  "https://kr.investing.com/news/earnings/article-93CH-2146519",
-  "https://kr.investing.com/news/transcripts/article-93CH-2146510",
-  "https://www.investing.com/equities/fidelix-co-ltd-financial-summary",
-  "https://www.tradingkey.com/kr/news/presentation/262245719-tradingkey",
-  "https://www.etoday.co.kr/news/view/2641331",
-  "https://www.etoday.co.kr/news/view/2583324",
-  "https://m.thinkpool.com/compDiscuss/cont/1026004",
-  "https://keyzard.cc/views/nb/Myo8NCZyPD4rZWVtbWtrb21vam5mamw",
-  "https://news.jkn.co.kr/post/916080",
+  "https://valueline.co.kr/finance/summary/032580",
+  "https://comp.wisereport.co.kr/company/dart.aspx?cmp_cd=032580",
+  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A032580",
+  "https://www.tradingkey.com/kr/news/earnings/262251992-tradingkey",
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cn=&cmp_cd=032580",
-  "https://www.msn.com/ko-kr/news/other/%ED%94%BC%EB%8D%B8%EB%A6%AD%EC%8A%A4-%EC%88%98%EC%A3%BC%EA%B3%B5%EC%8B%9C-%EB%A9%94%EB%AA%A8%EB%A6%AC%EB%B0%98%EB%8F%84%EC%B2%B4-%EA%B3%B5%EA%B8%89-609%EC%96%B5%EC%9B%90-%EB%A7%A4%EC%B6%9C%EC%95%A1%EB%8C%80%EB%B9%84-113/ar-AA2e7sfk",
-  "https://www.incruit.com/company/354034/",
-  "https://www.cbci.co.kr/news/articleView.html?idxno=585618",
-  "https://www.sedaily.com/article/14151559"
+  "https://kr.investing.com/news/transcripts/article-93CH-2167200",
+  "https://www.thedailymoney.com/news/articleView.html?idxno=1139720",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=0UmwrAvwQYr9becI",
+  "https://m.thinkpool.com/compDiscuss/cont/1026004",
+  "https://www.judal.co.kr/?view=stockAI&shareToken=epatkue1qHPK0GVl"
  ],
  "v": 2,
- "model": "claude-sonnet-5-5",
+ "model": "claude-haiku-5-5",
  "ticker": "032580",
  "name": "피델릭스",
  "name_en": "Fidelix Co., Ltd.",
@@ -233,9 +211,9 @@
   "반도체"
  ],
  "market": "코스닥",
- "reportDate": "2026-10-29",
- "reportTs": "2026-10-29 10:16",
- "dataDate": "20261028",
+ "reportDate": "2026-11-11",
+ "reportTs": "2026-11-11 03:14",
+ "dataDate": "20261110",
  "quant": {
   "asOf": "2026-10-29",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -338,14 +316,14 @@
    }
   ],
   "valuation": {
-   "price": 6770,
+   "price": 6810,
    "mcap": 0.2256,
    "shares": 33132064,
    "total_shares": 33132064,
    "wavg_shares": 33296499,
-   "per": 4.64,
+   "per": 4.668,
    "eps": 1459,
-   "pbr": 2.4699,
+   "pbr": 2.4845,
    "bps": 2741,
    "roe_ttm": 71.8,
    "ttm_window": "2025Q4~2026Q3",
@@ -359,5 +337,6 @@
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "textRules": 2
 }

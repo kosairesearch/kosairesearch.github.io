@@ -1,0 +1,59 @@
+{
+ "batch_id": "msgbatch_019bwVrwJwa247yRpvJH93z8",
+ "created": "2026-11-11 03:00",
+ "model": "claude-haiku-5-5",
+ "models": {
+  "240810": "claude-haiku-5-5",
+  "032580": "claude-haiku-5-5",
+  "417310": "claude-haiku-5-5",
+  "015360": "claude-haiku-5-5",
+  "143540": "claude-haiku-5-5",
+  "069140": "claude-haiku-5-5",
+  "170030": "claude-haiku-5-5",
+  "225570": "claude-haiku-5-5",
+  "950140": "claude-haiku-5-5"
+ },
+ "tickers": [
+  "240810",
+  "032580",
+  "417310",
+  "015360",
+  "143540",
+  "069140",
+  "170030",
+  "225570",
+  "950140"
+ ],
+ "dataDate": "20261110",
+ "count": 9,
+ "usage": {
+  "claude-haiku-5-5": {
+   "n": 9,
+   "in": 96880,
+   "cache_w": 338251,
+   "cache_r": 88592,
+   "out": 337647,
+   "search": 18,
+   "usd": 0.291
+  }
+ },
+ "result": {
+  "ok": 9,
+  "fail": 0
+ },
+ "usage_repair": {
+  "claude-sonnet-5-5": {
+   "n": 6,
+   "in": 28243,
+   "cache_w": 0,
+   "cache_r": 0,
+   "out": 13453,
+   "search": 0,
+   "usd": 0.095508
+  }
+ },
+ "repairs": [
+  "msgbatch_019so9EFEdS7uaECAJktLrK1"
+ ],
+ "collected": "2026-11-11 03:14"
+}
