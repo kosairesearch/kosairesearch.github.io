@@ -48,6 +48,7 @@ import re
 import sys
 import time
 import types
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -344,7 +345,8 @@ def _fin_all(dart, ticker, year, reprt):
                      str(r.get("sj_div", "")),
                      g._num(r.get("thstrm_amount")),
                      g._num(r.get("thstrm_add_amount")),
-                     g._num(r.get("frmtrm_amount"))))      # 전기(직전 연도) — 빠진 해를 채울 때 쓴다
+                     g._num(r.get("frmtrm_amount")),       # 전기(직전 연도) — 빠진 해를 채울 때 쓴다
+                     g._num(r.get("frmtrm_add_amount"))))  # 전기 누적(분기 보고서의 지난해 같은 기간) — 작성 기준 대조(basis_link)
 
     def sj_ok(key, sj):
         if key in ("rev", "rev_ins", "op", "np", "np_owner", "np_nci", "eps_basic"):
@@ -367,16 +369,16 @@ def _fin_all(dart, ticker, year, reprt):
     rows.sort(key=lambda r: 0 if r[2] == "IS" else 1)
 
     # 1차: 표준 account_id 정확 일치 (가장 신뢰)
-    for aid, anm, sj, amt, add, prv in rows:
+    for aid, anm, sj, amt, add, prv, padd in rows:
         for key in ACC_IDS:
             if key in out or amt is None or not sj_ok(key, sj):
                 continue
             if aid in ACC_IDS[key]:
-                out[key] = {"amt": amt, "add": add, "prv": prv}
+                out[key] = {"amt": amt, "add": add, "prv": prv, "padd": padd}
     # 2차: 계정명 폴백 — 포괄손익 계열 행 배제.
     #   np_owner 는 CIS의 '총포괄손익 귀속-지배기업소유주지분'과 행 이름이 같아
     #   오추출 위험이 커서 손익계산서(IS)에서만 명칭 매칭을 허용한다.
-    for aid, anm, sj, amt, add, prv in rows:
+    for aid, anm, sj, amt, add, prv, padd in rows:
         for key in ACC_IDS:
             if key in out or amt is None or not sj_ok(key, sj):
                 continue
@@ -387,7 +389,7 @@ def _fin_all(dart, ticker, year, reprt):
             # 은행 등은 계정명에 로마숫자·번호 접두("IV.영업이익","I.영업수익")가 붙고,
             # 적자 회사는 꼬리에 "(손실)" 이 붙는다 → 정규화한 뒤 비교(_name_hit).
             if _name_hit(key, anm):
-                out[key] = {"amt": amt, "add": add, "prv": prv}
+                out[key] = {"amt": amt, "add": add, "prv": prv, "padd": padd}
     # 지배주주 순이익이 제대로 잡혔는지 본다.
     #
     # 전에는 '|지배주주| ≤ |전체|×1.02' 를 어기면 포괄손익을 잘못 집은 것으로
@@ -434,7 +436,7 @@ def _fin_all(dart, ticker, year, reprt):
                 v = out.get(k)
                 fp.write(f"{k}={'없음' if not v else v['amt']}  ")
             fp.write("\n")
-            for aid, anm, sj, amt, add, prv in rows:
+            for aid, anm, sj, amt, add, prv, padd in rows:
                 if sj == "BS" and ("자본" in anm or "지분" in anm or "총계" in anm):
                     fp.write(f"      BS 행 | {anm} | id={aid} | 당기={amt}\n")
     if not out:
@@ -462,7 +464,7 @@ def _fin_all(dart, ticker, year, reprt):
         dbg = ROOT / "data" / "_debug_eps.txt"
         with open(dbg, "a", encoding="utf-8") as fp:
             fp.write(f"\n### {ticker} {reprt}/{fs}\n")
-            for aid, anm, sj, amt, add, prv in rows:
+            for aid, anm, sj, amt, add, prv, padd in rows:
                 if sj in ("IS", "CIS"):
                     fp.write(f"  {sj:<4} 당기={amt}  누적={add}  | {anm} | {aid}\n")
     return out
@@ -534,6 +536,49 @@ def _cum(d, key):
     return v["add"] if v["add"] is not None else v["amt"]
 
 
+# ── 작성 기준(연결 · 별도) 표시가 달라도 숫자로 같은 기준인지 본다 ─────────────────
+# DART 재무 조회는 보고서마다 연결(CFS) · 별도(OFS) 표시를 붙이는데, 표시만 믿고 뺄셈을 막으면 멀쩡한 분기가
+# 빠진다(2026-11-09 점검 — 9월 전면 갱신 때 반기가 빠진 상장사 리포트 28편의 한 갈래).
+#   · 올해 처음 연결 공시를 낸 회사(이렘 3분기 · 콜마바이오텍 반기) — 지난해까지는 자회사가 없어 별도뿐이었다.
+#     올해 연결의 전기 칸이 지난해 별도 공시와 원 단위까지 같다.
+#   · 연결 자료에 별도 표시가 붙어 온 회사(KT나스미디어 반기 · 3분기) — 지배주주 귀속 순이익이 있고, 재무상태표
+#     전기(지난해 말) 칸이 지난해 연결 사업보고서의 연말 자본과 같다.
+# 그래서 표시 대신 '이 보고서의 전기 칸이 지난해 공시를 그대로 되풀이하는가' 를 본다. 되풀이하면 같은 기준으로
+# 이어 붙일 수 있다. 하나라도 어긋나면(소마젠 2026 반기 — 매출 전기는 별도, 순이익 전기는 연결로 섞여 있다)
+# 지금처럼 채택하지 않는다.
+_LINK_IS = ("rev", "op", "np", "np_owner")
+_LINK_BS = ("equity", "assets", "liab")
+
+
+def _same_amt(a, b):
+    """옮겨 적은 전기 칸은 원 단위까지 같다 — 반올림만 봐준다(0.2%)."""
+    return a is not None and b is not None and abs(a - b) <= max(abs(b) * 0.002, 1)
+
+
+def is_link(d, prev):
+    """(같은가, 견준 계정) — d(올해 분기 보고서)의 전기 누적 칸이 prev(지난해 같은 기간 보고서)의 누적과 같은가.
+    두 계정 이상을 견줘 모두 같아야 참이다."""
+    keys = [k for k in _LINK_IS
+            if isinstance((d or {}).get(k), dict) and d[k].get("padd") is not None and _cum(prev, k) is not None]
+    same = [k for k in keys if _same_amt(d[k]["padd"], _cum(prev, k))]
+    return (len(keys) >= 2 and len(same) == len(keys)), keys
+
+
+def bs_link(d, anchor):
+    """(같은가, 견준 계정) — d(올해 분기 보고서)의 재무상태표 전기(지난해 말) 칸이 anchor(지난해 사업보고서)의
+    연말 값과 같은가. 자본총계를 반드시 포함해 모두 같아야 참이다."""
+    keys = [k for k in _LINK_BS
+            if isinstance((d or {}).get(k), dict) and d[k].get("prv") is not None
+            and isinstance((anchor or {}).get(k), dict) and anchor[k].get("amt") is not None]
+    same = [k for k in keys if _same_amt(d[k]["prv"], anchor[k]["amt"])]
+    return ("equity" in keys and len(same) == len(keys)), keys
+
+
+def _fsset(d):
+    """이 보고서와 이어 붙일 수 있는 작성 기준 — 제 표시와, 전기 칸으로 확인한 그 전해 기준(_fs_also)."""
+    return {f for f in ((d or {}).get("_fs"), (d or {}).get("_fs_also")) if f}
+
+
 def _cum_eps(d):
     """누적 주당이익. 확실할 때만 돌려주고, 아니면 None.
 
@@ -584,9 +629,74 @@ def _owner_equity(eqo, eq, nci):
     return eqo
 
 
-def collect_quant(dart, ticker, krx_row, stock):
+# ── 결산월이 12월이 아닌 회사 ─────────────────────────────────────────────────────
+# DART 재무 조회의 사업연도(bsns_year)는 보고서 기간이 끝나는 달력 연도다(2026-11-10 재무 원문으로 확인 — 3월 결산
+# 동원모빌리티의 2025 1분기 보고서 전기말 자본이 2025 사업보고서의 기말 자본과 원 단위까지 같다. 9월 결산 금비 ·
+# 풍강은 2026 사업연도에 반기 · 3분기가 있고 1분기는 없다). 그래서 3월 결산 회사의 2026 사업연도에는 2026년 3월에
+# 끝난 회계연도의 사업보고서와 그다음 회계연도의 1분기(2026년 4~6월) 보고서가 함께 들어 있다. 같은 사업연도끼리
+# 짝지어 4분기를 '앞 회계연도 연간 − 이번 회계연도 3분기 누적'으로 만들었고(3월 결산 11개사), 가장 최근 연간을
+# 받지 않았다. 회계연도는 끝나는 해로 세고, 보고서마다 DART 사업연도를 계산해 받는다.
+_K_BACK = {"11013": 9, "11012": 6, "11014": 3, "11011": 0}   # 회계연도 끝에서 그 보고서 기간 끝까지 거꾸로 센 달 수
+_FM_REPORT = re.compile(r"사업보고서\s*\((\d{4})\.(\d{2})\)")
+_FM_CACHE = {}
+
+
+def dart_year(fy, code, fm):
+    """회계연도 fy(끝나는 해)의 그 보고서가 DART 재무 조회에서 쓰는 사업연도 — 보고서 기간이 끝나는 달력 연도."""
+    return fy - 1 if fm - _K_BACK[code] <= 0 else fy
+
+
+def period_end(fy, qi, fm):
+    """회계연도 fy 의 qi 분기(1~4)가 끝나는 (해, 달)."""
+    m = fm - 3 * (4 - qi)
+    return (fy - 1, m + 12) if m <= 0 else (fy, m)
+
+
+def cal_q(label, fm):
+    """회계 분기 이름('2027Q1') → 그 3개월이 끝나는 달력 분기 이름('2026Q2' — 3월 결산의 2026년 4~6월). 12월 결산은 그대로."""
+    if fm == 12 or not re.fullmatch(r"\d{4}Q[1-4]", str(label or "")):
+        return label
+    y, m = period_end(int(label[:4]), int(label[-1]), fm)
+    return f"{y}Q{(m + 2) // 3}"
+
+
+def fiscal_end_month(dart, ticker):
+    """결산월(1~12). 최근 사업보고서 이름의 '(YYYY.MM)'(실제로 낸 보고서의 회계연도 끝)을 먼저 보고, 없으면 회사 개황의
+    결산월, 그것도 없으면 12. 회사 개황은 결산월을 바꾼 회사에서 다를 수 있다(메이슨캐피탈 — 개황 12월 · 사업보고서
+    2026.03)."""
+    if dart is None:
+        return 12
+    if ticker in _FM_CACHE:
+        return _FM_CACHE[ticker]
+    fm = None
+    start = (datetime.date.today() - datetime.timedelta(days=800)).strftime("%Y%m%d")
+    df = _dart_call(dart.list, ticker, start=start, kind="A", final=False)
+    if df is not None and not getattr(df, "empty", True):
+        best = None
+        for _, r in df.iterrows():
+            m = _FM_REPORT.search(str(r.get("report_nm") or ""))
+            if m and (best is None or str(r.get("rcept_dt") or "") > best[0]):
+                best = (str(r.get("rcept_dt") or ""), int(m.group(2)))
+        fm = best[1] if best else None
+    if not fm:
+        info = _dart_call(dart.company, ticker)
+        try:
+            fm = int(str((info or {}).get("acc_mt") or "12"))
+        except (TypeError, ValueError, AttributeError):
+            fm = 12
+    fm = fm if 1 <= fm <= 12 else 12
+    _FM_CACHE[ticker] = fm
+    return fm
+
+
+def collect_quant(dart, ticker, krx_row, stock, today=None):
     """한 종목의 정량 블록을 수집한다."""
-    cur = datetime.date.today().year  # 2026
+    today = today or datetime.date.today()
+    fm = fiscal_end_month(dart, ticker)
+    cur = today.year if today.month <= fm else today.year + 1   # 오늘이 든 회계연도(끝나는 해). 12월 결산은 올해
+    if fm != 12:
+        log(f"  · {fm}월 결산 — 회계연도는 끝나는 해로 센다({cur - 1} = {cur - 2}년 {fm + 1}월~{cur - 1}년 {fm}월) · "
+            f"분기 이름은 그 3개월이 끝나는 달력 분기")
 
     # 연간 4개년 (최근 결산 = cur-1). 먼저 해마다 보고서를 모으고, 못 구한 해는
     # ① 요약재무 ② 다음 해 보고서의 전기 비교치 순으로 채운 뒤 표를 만든다.
@@ -658,15 +768,40 @@ def collect_quant(dart, ticker, krx_row, stock):
     py = cur - 1
     Q_CODE = ("11013", "11012", "11014")      # 1분기 · 반기 · 3분기 (모두 누적)
 
-    _fin_cache = {}
+    _fin_cache, _aligned = {}, set()
+    QNAME = {"11013": "1분기", "11012": "반기", "11014": "3분기"}
 
-    def fin(year, code):
+    def _raw(year, code):
         """같은 (연도, 보고서)를 여러 계정이 함께 쓰므로 한 번만 받아 캐시한다."""
         k = (year, code)
         if k not in _fin_cache:
-            _fin_cache[k] = _fin_all(dart, ticker, year, code)
+            _fin_cache[k] = _fin_all(dart, ticker, dart_year(year, code, fm), code)
             time.sleep(0.3)
         return _fin_cache[k]
+
+    def fin(year, code):
+        """분기 보고서는 작성 기준 표시가 그 전해 사업보고서와 다르면 숫자로 다시 본다(bs_link · is_link 참고).
+        전기 칸이 지난해 공시를 그대로 되풀이하면 그 전해 사업보고서의 기준(_fs_also)으로도 이어 붙일 수 있다고
+        적는다. 제 표시(_fs)는 그대로 둔다 — 같은 해 사업보고서가 그 표시를 달고 오면 그쪽과도 이어져야 한다
+        (한양증권 2025 반기 · 3분기는 별도 표시, 2024 연간은 연결, 2025 연간은 다시 별도 — 표시를 하나로 바꾸면
+        2분기를 채우는 대신 4분기가 빈다. 2026-11-09 실제 재무 88종목에서 70칸이 그렇게 비었다)."""
+        d = _raw(year, code)
+        if d and code in Q_CODE and (year, code) not in _aligned:
+            _aligned.add((year, code))
+            anchor = d_by_year.get(year - 1)
+            a_fs = (anchor or {}).get("_fs")
+            if a_fs and d.get("_fs") != a_fs:
+                prev = _raw(year - 1, code)
+                b_ok, b_keys = bs_link(d, anchor)
+                i_ok, i_keys = is_link(d, prev) if prev else (True, [])
+                if b_ok and i_ok:
+                    log(f"  · {year} {QNAME[code]} 보고서 — 작성 기준 표시({d['_fs']})가 {year - 1} 연간({a_fs})과 "
+                        f"다르지만 전기 칸({'·'.join(b_keys + i_keys)})이 지난해 공시와 같아 같은 기준으로 본다")
+                    d["_fs_also"] = a_fs
+                else:
+                    log(f"  · {year} {QNAME[code]} 보고서 — 작성 기준 표시({d['_fs']})가 {year - 1} 연간({a_fs})과 다르고 "
+                        f"전기 칸도 {'재무상태표가' if not b_ok else '손익이'} 지난해 공시와 달라 표시대로 둔다")
+        return d
 
     ann = {a["year"]: a for a in annual}
     fy_row = ann.get(py)
@@ -675,24 +810,56 @@ def collect_quant(dart, ticker, krx_row, stock):
     # cur_qi = 1(1분기) · 2(반기) · 3(3분기) · 0(연초라 올해 보고서가 아직 없음)
     cur_qi, d_cur = 0, None
     base_fs = annual_fs.get(py)
-    for qi, code in enumerate(Q_CODE, 1):
-        # 아직 제출 시기가 아닌 보고서는 묻지 않는다. 없는 것을 묻는 데도 CFS·OFS
-        # 두 번이 나가는데, 전 종목이면 그것만으로 하루 한도의 4분의 1이다.
-        if not _reprt_available(code, cur):
-            continue
-        d = fin(cur, code)
-        if not d:
-            continue
-        # TTM·EPS·BPS·ROE 가 전부 이 시점을 기준으로 계산된다. 전년 같은 기간이나
-        # 전년 연간과 기준(연결/별도)이 어긋나면 뺄셈이 성립하지 않으므로 채택하지
-        # 않고 한 분기 앞의 보고서를 기준으로 남긴다. 분기 표만 막고 TTM 을 두면
-        # 표는 1분기까지인데 PER 은 반기 기준인 상태가 된다.
-        dp, fs = fin(py, code), d.get("_fs")
-        if dp is not None and dp.get("_fs") != fs:
-            continue
-        if base_fs is not None and fs != base_fs:
-            continue
-        cur_qi, d_cur = qi, d
+
+    def avail(code):
+        """그 보고서가 나왔을 만한 때인가 — 12월 결산은 _reprt_available, 그 밖은 기간이 끝난 다음 달 25일부터."""
+        if fm == 12:
+            return _reprt_available(code, cur, today)
+        y, m = period_end(cur, Q_CODE.index(code) + 1, fm)
+        return (today.year, today.month, today.day) >= ((y, m + 1, 25) if m < 12 else (y + 1, 1, 25))
+
+    def pick():
+        """이번 회계연도(cur)의 가장 최근 분기 보고서 — (cur_qi, d_cur). 쓸 보고서가 없으면 (0, None)."""
+        got = (0, None)
+        for qi, code in enumerate(Q_CODE, 1):
+            # 아직 제출 시기가 아닌 보고서는 묻지 않는다. 없는 것을 묻는 데도 CFS·OFS
+            # 두 번이 나가는데, 전 종목이면 그것만으로 하루 한도의 4분의 1이다.
+            if not avail(code):
+                continue
+            qname = QNAME[code]
+            d = fin(cur, code)
+            if not d:
+                # 아직 내지 않았거나 재무 조회에 없다. 왜 그 분기에서 멈췄는지 기록에 남긴다 — 반기를 8월에 냈는데도
+                # 1분기에서 멈춘 리포트 28편의 사유가 기록에 없었다(2026-11-09 점검).
+                log(f"  · {cur} {qname} 보고서 — 재무 조회에서 받지 못했다(아직 내지 않았거나 조회에 없음)")
+                continue
+            # TTM·EPS·BPS·ROE 가 전부 이 시점을 기준으로 계산된다. 전년 같은 기간이나
+            # 전년 연간과 기준(연결/별도)이 어긋나면 뺄셈이 성립하지 않으므로 채택하지
+            # 않고 한 분기 앞의 보고서를 기준으로 남긴다. 분기 표만 막고 TTM 을 두면
+            # 표는 1분기까지인데 PER 은 반기 기준인 상태가 된다.
+            # 표시가 달라도 이 보고서의 전기 누적 칸이 지난해 같은 기간 공시와 같으면 같은 숫자를 빼는 셈이라 성립한다
+            # (지난해 4분기에 처음 연결한 회사 — 지난해 분기는 별도뿐이고 올해는 연결이다).
+            dp, fs = fin(py, code), d.get("_fs")
+            if dp is not None and not (_fsset(d) & _fsset(dp)) and not is_link(d, dp)[0]:
+                log(f"  · {cur} {qname} 보고서 — 작성 기준({fs})이 {py} 같은 기간({dp.get('_fs')})과 달라 채택하지 않는다")
+                continue
+            if base_fs is not None and base_fs not in _fsset(d):
+                log(f"  · {cur} {qname} 보고서 — 작성 기준({fs})이 {py} 연간({base_fs})과 달라 채택하지 않는다")
+                continue
+            got = (qi, d)
+        return got
+
+    cur_qi, d_cur = pick()
+    # 결산월이 12월이 아닌 회사(2026-11-10) — 직전 회계연도가 끝나고 그 사업보고서가 나오기 전(결산 뒤 석 달)에는 이번 회계연도의
+    # 보고서가 하나도 없다. 그대로 두면 최근 시점이 비어 주당순자산 · 자기자본이익률이 빠진다(9월 결산 금비 · 방림 등 11월).
+    # 그 사이에는 직전 회계연도를 '올해'로 보고 그 회계연도의 분기 보고서를 최근 시점으로 쓴다. 12월 결산의 1~3월도 같은
+    # 사정이지만 지금 그대로 둔다.
+    if fm != 12 and not cur_qi and fy_row is None and ann.get(py - 1):
+        log(f"  · {py} 회계연도({fm}월 결산)의 사업보고서가 아직 없다 — 그 회계연도의 분기 보고서를 최근 시점으로 쓴다")
+        cur, py = py, py - 1
+        fy_row = ann.get(py)
+        base_fs = annual_fs.get(py)
+        cur_qi, d_cur = pick()
     # TTM 뺄셈의 짝 — 반드시 '전년 같은 기간' 누적이어야 뺄셈이 성립한다.
     # (반기까지 나왔으면 전년도 반기를 빼야지 전년도 1분기를 빼면 안 된다.)
     d_py_same = fin(py, Q_CODE[cur_qi - 1]) if cur_qi else None
@@ -700,7 +867,7 @@ def collect_quant(dart, ticker, krx_row, stock):
     # 매출 폴백 — 보험·금융사는 전체 재무제표에 '매출액' 행이 없어
     # DART 요약재무(매출액/영업수익)로 보충한다.
     def rev_fallback(year, reprt):
-        d = g._extract_fin(_dart_call(g._safe_finstate, dart, ticker, year, reprt))
+        d = g._extract_fin(_dart_call(g._safe_finstate, dart, ticker, dart_year(year, reprt, fm), reprt))
         v = (d or {}).get("매출액")
         return v["cur"] if v else None
 
@@ -732,7 +899,7 @@ def collect_quant(dart, ticker, krx_row, stock):
         예: 상상인(038540)은 3분기 누적 5,225억인데 사업보고서 연간이 4,186억으로
             잡혀 4분기 매출이 −1,039억으로 나왔다.
         """
-        if fa is not None and fb is not None and fa != fb:
+        if fa and fb and not (fa & fb):          # 기준 집합(_fsset)이 겹치지 않으면 섞인 뺄셈이다
             return None
         return _sub(a, b)
 
@@ -744,11 +911,11 @@ def collect_quant(dart, ticker, krx_row, stock):
         else:
             ds = [fin(year, c) for c in Q_CODE]
             c1, ch, c9 = (_cum(d, key) for d in ds)
-            f1, fh, f9 = ((d or {}).get("_fs") for d in ds)
+            f1, fh, f9 = (_fsset(d) for d in ds)
         return {f"{year}Q1": c1,
                 f"{year}Q2": diff(ch, c1, fh, f1),
                 f"{year}Q3": diff(c9, ch, f9, fh),
-                f"{year}Q4": diff(fy_total, c9, fy_fs, f9)}
+                f"{year}Q4": diff(fy_total, c9, {fy_fs} if fy_fs else None, f9)}
 
     def series(key, fy_key, years, getter=None):
         s = {}
@@ -963,8 +1130,27 @@ def collect_quant(dart, ticker, krx_row, stock):
                 return w
         return None
 
-    wavg = (implied_wavg(_cum(d_cur, "np_owner"), _cum_eps(d_cur))
-            or (implied_wavg(fy_row["np_owner"], fy_row["eps_basic"]) if fy_row else None))
+    w_cur = implied_wavg(_cum(d_cur, "np_owner"), _cum_eps(d_cur))
+    w_fy = implied_wavg(fy_row["np_owner"], fy_row["eps_basic"]) if fy_row else None
+
+    # 올해 누적으로 역산한 주식수를 믿을 수 있는가(2026-11-10). 대양금속 2026 반기는 1분기(16원)와 2분기(-32원)
+    # 주당이익을 더해 반기 주당이익(-16원)으로 공시했다. 0 에 가까운 반기 순이익(-4억원)을 그 값으로 나누니
+    # 2,470만주가 나왔다 — 상장 4,494만주 · 작년 연간 역산 4,562만주 · 공시 발행주식총수 5,594만주 어느 것과도
+    # 동떨어진 값이다. 그 값을 분모로 쓰니 주당이익이 257원으로 부풀었고(분기 표가 이어져 그동안 숨겼던 값이
+    # 드러났다), 액면병합으로 오판해 작년 같은 기간 주당이익까지 두 배로 고쳤다.
+    # 올해 역산 주식수가 작년 연간 역산 · 상장 주식수 · 공시 발행주식총수 어느 쪽과도 맞지 않고 작년 연간 역산이
+    # 상장 주식수와 맞으면, 올해 역산을 버리고 작년 연간 역산을 쓴다(주당이익 · 주당순자산 모두 — 같은 분모다).
+    # 분할 · 병합은 상장 주식수가 같이 움직이고, 대규모 증자는 공시 발행주식총수가 따라오므로 여기에 걸리지 않는다
+    # (아센디오 — 올해 역산 1,864만주가 상장 1,030만주와는 다르지만 공시 발행주식총수 1,939만주와 맞아 그대로 둔다).
+    def _near(a, b):
+        return bool(a and b and 0.6 <= a / b <= 1.67)
+    shares_doubt = bool(w_cur and w_fy and sh and _near(w_fy, sh)
+                        and not (_near(w_cur, w_fy) or _near(w_cur, sh) or _near(w_cur, total_sh)))
+    if shares_doubt:
+        log(f"  · 올해 누적 순이익 ÷ 공시 주당이익으로 역산한 주식수 {w_cur / 1e6:,.1f}백만이 작년 연간 역산 "
+            f"{w_fy / 1e6:,.1f}백만 · 상장 {sh / 1e6:,.1f}백만 · 발행총수 {total_sh / 1e6:,.1f}백만과 맞지 않는다"
+            f" — 작년 연간 역산을 쓴다")
+    wavg = w_fy if shares_doubt else (w_cur or w_fy)
 
     # EPS(TTM): 1순위 = 회사 공시 기본주당이익(EPS) 직접 합산(최근결산 − 작년1Q + 올해1Q).
     #   순이익·주식수 추출을 건너뛰어 가장 견고하고, 네이버와 동일 기준(회사 공시 EPS).
@@ -1001,7 +1187,8 @@ def collect_quant(dart, ticker, krx_row, stock):
     sh_fy = _sh_at(fy_row.get("np_owner") if fy_row else None, fy_eps)
 
     def _unsplit(eps_v, sh_old, label):
-        if not (eps_v and sh_cur and sh_old):
+        # 올해 역산 주식수를 믿을 수 없으면(shares_doubt) 그것과 견준 배수로 분할 · 병합을 판정하지 않는다.
+        if shares_doubt or not (eps_v and sh_cur and sh_old):
             return eps_v
         r = sh_cur / sh_old
         for n in range(2, 41):
@@ -1370,7 +1557,7 @@ def collect_quant(dart, ticker, krx_row, stock):
 
     # 배당: DART 공시 주당현금배당금(보통주) 우선, 실패 시 KRX DPS 보완.
     #   현재가 기준으로 배당수익률 산출. DPS=0 은 '무배당'(유효)로 보존.
-    dps = dart_dps(dart, ticker)
+    dps = dart_dps(dart, ticker) if fm == 12 else dart_dps(dart, ticker, years=(cur - 1, cur - 2))
     if dps is None and krx_row is not None:
         try:
             dps = round(float(krx_row.get("DPS")), 1)
@@ -1422,6 +1609,15 @@ def collect_quant(dart, ticker, krx_row, stock):
     if hidden:
         valuation["hidden"] = hidden
 
+    # 결산월이 12월이 아니면 분기 이름을 그 3개월이 끝나는 달력 분기로 바꾼다 — 위의 계산(같은 회계연도 짝 · 연간
+    # 견주기)은 회계 분기 이름으로 했다. 연간의 연도는 회계연도가 끝나는 해 그대로다(네이버의 '2026.03' 열).
+    if fm != 12:
+        for x in quarterly:
+            x["q"] = cal_q(x["q"], fm)
+        if valuation.get("ttm_window"):
+            a, _, b = valuation["ttm_window"].partition("~")
+            valuation["ttm_window"] = f"{cal_q(a, fm)}~{cal_q(b, fm)}"
+
     out = {
         "asOf": datetime.date.today().isoformat(),
         "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
@@ -1429,6 +1625,8 @@ def collect_quant(dart, ticker, krx_row, stock):
         "quarterly": quarterly,
         "valuation": valuation,
     }
+    if fm != 12:
+        out["fy_end_month"] = fm
     if rev_label:
         out["rev_label"] = rev_label
     return out
@@ -1520,12 +1718,12 @@ def dart_total_shares(dart, ticker, today=None):
     return None
 
 
-def dart_dps(dart, ticker):
+def dart_dps(dart, ticker, years=None):
     """최근 결산 주당 현금배당금(보통주, 원) — DART '배당에 관한 사항' 공시.
     KRX 배당값은 갱신이 늦어(신규 배당 미반영) 신뢰도가 낮으므로 DART 공시를 직접 사용.
-    최근 사업연도 → 그 전년 순으로 시도. 실패 시 None."""
+    최근 사업연도 → 그 전년 순으로 시도. 실패 시 None. years — 결산월이 12월이 아닌 회사의 최근 두 회계연도."""
     cur = datetime.date.today().year
-    for year in (cur - 1, cur - 2):
+    for year in (years or (cur - 1, cur - 2)):
         df = _dart_call(dart.report, ticker, "배당", year, "11011")
         if df is None or getattr(df, "empty", True):
             continue
@@ -2346,6 +2544,50 @@ def corrections_env():
     return out
 
 
+def filed_env():
+    """REPORT_FILED='종목:접수일(YYYYMMDD),…' — 공시 트리거가 원래 보고서(정정 아님)로 고른 종목 → {종목: 접수일}."""
+    out = {}
+    for part in os.getenv("REPORT_FILED", "").replace(" ", "").split(","):
+        tk, _, d = part.partition(":")
+        if tk and len(d) == 8 and d.isdigit():
+            out[tk] = d
+    return out
+
+
+# ── 공시 당일 — 재무 조회에 새 분기가 아직 없으면 기다린다 ─────────────────
+# 2026-10-26 워트는 3분기 공시로 리포트를 다시 썼는데 그때 DART 재무 조회에 3분기가 없어 반기까지의 숫자로
+# 썼다(11/9 다시 받은 재무에는 3분기가 있다). 리포트 날짜가 공시보다 늦어졌으니 공시 트리거는 그 공시를 반영한
+# 것으로 보고 다시 고르지 않는다 — 다음 정기보고서(이듬해 3월)까지 3분기가 빠진 채 남는다.
+# 그래서 원래 보고서로 다시 쓰는 종목은 새로 받은 숫자의 마지막 분기가 저장된 리포트보다 뒤가 아니면 이번에는
+# 주문하지 않는다. 리포트를 쓰지 않으니 공시 트리거가 다음 실행에서 다시 고른다. 공시 뒤 WAIT_QUARTER_DAYS 일이
+# 지나도 그대로면 있는 숫자로 쓴다(조회가 끝내 그 분기를 주지 않는 회사가 30일 동안 하루 세 번 DART 호출만
+# 태우지 않게). 결산월이 다른 회사(신영증권 3월 결산 — 11월 공시가 반기)도 마지막 분기가 한 칸 나아가므로 그대로 쓴다.
+WAIT_QUARTER_DAYS = int(os.getenv("REPORT_WAIT_QUARTER_DAYS", "3") or "0")
+
+
+def _last_quarter(q):
+    qs = (q or {}).get("quarterly") or []
+    last = qs[-1] if qs and isinstance(qs[-1], dict) else {}
+    return str(last.get("q") or "")
+
+
+def new_quarter_missing(tk, q, filed, today=None):
+    """원래 보고서로 다시 쓰는 종목의 새 정량에 그 공시의 분기가 아직 없으면 사유를, 쓰면 되면 None."""
+    old = stored_quant(tk)
+    o, n = _last_quarter(old), _last_quarter(q)
+    if not o or not n or n > o:
+        return None
+    today = today or S.today_kst()
+    try:
+        waited = (today - datetime.datetime.strptime(filed, "%Y%m%d").date()).days
+    except ValueError:
+        return None
+    if waited > WAIT_QUARTER_DAYS:
+        log(f"  · ⚠️ {tk} 공시({filed}) 뒤 {waited}일이 지나도 재무 조회의 마지막 분기가 {n} 이다 — 있는 숫자로 쓴다")
+        return None
+    return f"재무 조회에 공시({filed})의 분기가 아직 없다 — 마지막 분기 {n}(저장된 리포트와 같음)"
+
+
 def stored_quant(tk):
     """저장된 리포트의 정량. 없거나 읽지 못하면 None."""
     try:
@@ -2502,8 +2744,9 @@ def submit(cl, as_of):
 
     fill_mode = os.getenv("REPORT_FILL_TO", "0") not in ("0", "")
     backfill = os.getenv("REPORT_BACKFILL") == "1"
+    filed = {tk: d for tk, d in filed_env().items() if tk in picked and tk not in corr}
     reqs, models, tickers = [], {}, []
-    no_data, held, broken = [], [], []
+    no_data, held, broken, waiting = [], [], [], []
     for st in targets:
         tk = st["ticker"]
         if tk in errors:
@@ -2516,6 +2759,13 @@ def submit(cl, as_of):
             log(f"  · ⚠️ {tk} 정량 데이터 없음 — 제외")
             no_data.append(tk)
             continue
+        # 공시 당일 — 재무 조회에 그 공시의 분기가 아직 없으면 쓰지 않고 다음 실행에 맡긴다(위 new_quarter_missing).
+        if tk in filed:
+            why = new_quarter_missing(tk, q, filed[tk])
+            if why:
+                log(f"  · ⏳ {tk} {st['name']} {why} — 이번에는 주문하지 않고 다음 실행에서 다시 본다")
+                waiting.append(tk)
+                continue
         # 숫자가 항등식에 걸리면 그 종목은 글을 쓰지 않는다. 틀린 근거로 쓴 글은
         # 나중에 숫자만 고쳐도 본문에 그대로 남고, 다시 만들려면 돈이 또 든다.
         # 전체를 멈추지는 않는다 — 한 회사의 공시 오류가 2,600개를 세울 이유는 없다.
@@ -2561,6 +2811,9 @@ def submit(cl, as_of):
         log(f"- 항등식에 걸려 보류 {len(held)}개 → data/reports_v2_hold/: {','.join(held[:30])}")
     if broken:
         log(f"- 수집 예외 {len(broken)}개(다음 run 에 다시): {','.join(broken[:30])}")
+    if waiting:
+        result["waiting"] = waiting
+        log(f"- 재무 조회에 새 분기가 아직 없어 다음 실행으로 넘긴 종목 {len(waiting)}개: {','.join(waiting[:30])}")
     if not reqs:
         log("❌ 제출할 요청이 없습니다.")
         return result
@@ -3008,6 +3261,10 @@ def collect(cl, as_of, state):
                     bad_text = check_report_text.check(rep)
                     log(f"  · 🔎 {tk} {note} → 남은 위반 {len(bad_text)}건")
             if bad_text and not repair_off and os.getenv("REPORT_REPAIR", "1") != "0":
+                # 어느 규칙에 걸려 교정으로 가는지 남긴다 — 보정이 배치로 미뤄지면 아래 '⏳' 줄에는 종목만 남아
+                # 새 규칙(reader · dup)이 교정을 거쳤는지 기록으로 가릴 수 없었다(2026-11-09 하이쿠 첫 주문 점검).
+                log(f"  · {tk} 검사 위반 {len(bad_text)}건("
+                    f"{', '.join(f'{r} {n}' for r, n in sorted(Counter(h['rule'] for h in bad_text).items()))}) → 교정")
                 try:
                     fixed = check_report_text.repair(mcl, rep, bad_text)
                 except Exception as e:
@@ -3235,6 +3492,82 @@ def _die_credit(e=None):
 
 
 
+_FSDUMP_IDS = ("_Revenue", "OperatingIncomeLoss", "_ProfitLoss", "ProfitLossAttributableToOwnersOfParent",
+               "ProfitLossAttributableToNonControllingInterests", "BasicEarningsLossPerShare",
+               "_Equity", "EquityAttributableToOwnersOfParent")
+_FSDUMP_COLS = ("thstrm_amount", "thstrm_add_amount", "frmtrm_amount", "frmtrm_q_amount", "frmtrm_add_amount")
+
+
+def fs_dump(targets):
+    """재무 원문 보기(진단 · 돈 안 듦 · 저장 안 함). 종목마다 지난해 연간과 지난해 · 올해 분기 보고서를 연결(CFS) ·
+    별도(OFS) · 요약재무로 따로 불러, 있는지와 주요 계정의 당기 · 누적 · 전기 칸을 그대로 찍는다.
+    작성 기준(연결 · 별도)이 해마다 · 보고서마다 다른 회사의 분기 처리를 고칠 때 근거로 쓴다(2026-11-09)."""
+    dart = g.get_dart()
+    if not dart:
+        log("❌ DART 초기화 실패")
+        return
+    cur = datetime.date.today().year
+    combos = [(cur - 1, "11011")] + [(y, c) for y in (cur - 1, cur) for c in ("11013", "11012", "11014")]
+
+    def call(fn, *a, **kw):
+        buf, err = io.StringIO(), ""
+        try:
+            with contextlib.redirect_stdout(buf):
+                df = fn(*a, **kw)
+        except Exception as e:
+            df, err = None, f"{type(e).__name__}: {e}"
+        msg = " ".join(ln.strip() for ln in buf.getvalue().splitlines() if ln.strip())
+        for m in _DART_STATUS.finditer(msg + err):
+            if m.group(1) not in ("000", "013"):
+                raise DartUnavailable(m.group(1), m.group(2) or "")
+        return df, (err or msg)[:160]
+
+    for st in targets:
+        tk = st["ticker"]
+        log(f"### {tk} {st['name']}")
+        # 결산월과 최근 정기보고서 접수 — 반기가 조회에 없을 때 결산월이 다른지, 공시가 늦었는지 가른다(2026-11-10).
+        info, note = call(dart.company, tk)
+        if isinstance(info, dict):
+            log(f"  결산월 {info.get('acc_mt')} · 법인 구분 {info.get('corp_cls')} · 업종 {info.get('induty_code')}")
+        elif note:
+            log(f"  회사 개황 조회 실패 · {note}")
+        start = (datetime.date.today() - datetime.timedelta(days=300)).strftime("%Y%m%d")
+        lst, note = call(dart.list, tk, start=start, kind="A", final=False)
+        if lst is None or getattr(lst, "empty", True):
+            log(f"  최근 정기보고서 접수: 없음" + (f" · {note}" if note else ""))
+        else:
+            for _, r in lst.head(8).iterrows():
+                log(f"  접수 {r.get('rcept_dt')} {r.get('report_nm')}")
+        for y, c in combos:
+            if not _reprt_available(c, y):
+                continue
+            for fs in ("CFS", "OFS"):
+                df, note = call(dart.finstate_all, tk, y, reprt_code=c, fs_div=fs)
+                n = 0 if df is None or getattr(df, "empty", True) else len(df)
+                log(f"  {y} {c} {fs}: {n}행" + (f" · {note}" if note and not n else ""))
+                if not n:
+                    continue
+                shown = 0
+                for _, r in df.iterrows():
+                    aid = str(r.get("account_id", "")).strip()
+                    if str(r.get("sj_div", "")) not in ("IS", "CIS", "BS") or not aid.endswith(_FSDUMP_IDS):
+                        continue
+                    vals = " · ".join(f"{k.replace('_amount', '')}={r.get(k)}" for k in _FSDUMP_COLS if k in df.columns)
+                    log(f"    {r.get('sj_div')} {aid} [{str(r.get('account_nm', '')).replace(' ', '')}] {vals}")
+                    shown += 1
+                    if shown >= 14:
+                        break
+            df, note = call(g._safe_finstate, dart, tk, y, c)
+            if df is None or getattr(df, "empty", True):
+                log(f"  {y} {c} 요약재무: 0행" + (f" · {note}" if note else ""))
+                continue
+            for _, r in df.iterrows():
+                nm = str(r.get("account_nm", "")).replace(" ", "")
+                if nm in ("매출액", "영업이익", "당기순이익", "당기순이익(손실)", "자본총계"):
+                    vals = " · ".join(f"{k.replace('_amount', '')}={r.get(k)}" for k in _FSDUMP_COLS if k in df.columns)
+                    log(f"    요약 {r.get('fs_div')} [{nm}] {vals}")
+
+
 def main():
     mode = sys.argv[1] if len(sys.argv) > 1 else "auto"
     as_of = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime("%Y-%m-%d %H:%M")
@@ -3244,6 +3577,13 @@ def main():
         _, _, unavailable = collect_all_quant(targets, data)
         if unavailable:
             _die_dart(unavailable)
+        return
+    if mode == "fsdump":         # 재무 원문 보기 — 진단 · 돈 안 듦 · 저장 안 함
+        _, targets = pick_targets()
+        try:
+            fs_dump(targets)
+        except DartUnavailable as e:
+            _die_dart(e)
         return
     if mode == "patch":
         patch_quant(as_of)

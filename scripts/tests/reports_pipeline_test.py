@@ -15,6 +15,8 @@
   ⑥ 대상 선정  갱신 기준일·hold·fail·skip·진행 중 배치를 생성기와 워치독이 같은 규칙으로 본다.
   ⑯ 정정 공시  2026-10-07 정정 공시 14개 종목을 다시 써 $3.97 이 나갔다 — 13개는 저장된 숫자를 재사용해
                정정조차 반영하지 않았다. 숫자를 새로 받아 견주고 바뀐 경우에만 다시 쓴다.
+  ⑱ 공시 당일  2026-10-26 워트 — 3분기 공시로 다시 쓸 때 재무 조회에 3분기가 아직 없어 반기 숫자로 썼고,
+               리포트 날짜가 공시보다 늦어져 다시 고르지 않았다. 마지막 분기가 나아가지 않으면 기다린다.
 """
 import datetime
 import io
@@ -1521,6 +1523,421 @@ for p in S.OUT_DIR.glob("*.json"):
 _why = GS.defects({"risks": []}, _leak_msg)
 ok(any("쓰지 않기로 한 사이트" in w for w in _why) and GS._needs_rewrite([w for w in _why if "쓰지 않기로" in w]),
    "업종 분석은 결함으로 보고 다음 회차가 다시 쓴다", str(_why[-1:]))
+
+print("⑱ 공시 당일 — 재무 조회에 새 분기가 아직 없으면 주문하지 않고 다음 실행에 맡긴다")
+os.environ["REPORT_FILED"] = "005930:20261106, 000020:20261106,bad,204840:2026-11-06"
+ok(M.filed_env() == {"005930": "20261106", "000020": "20261106"}, "넘겨받은 목록을 읽는다(모양이 틀린 것은 버린다)",
+   str(M.filed_env()))
+_today = S.today_kst()
+_d = lambda n: (_today - datetime.timedelta(days=n)).strftime("%Y%m%d")
+ADV = _q(GOOD)                                      # 3분기가 들어온 새 숫자 — 마지막 분기가 한 칸 나아간다
+ADV["quarterly"] = ADV["quarterly"][1:] + [{"q": "2026Q3", "rev": 500_000_000, "op": 50_000_000, "np_owner": 25_000_000}]
+ADV["valuation"]["ttm_window"] = "2025Q4~2026Q3"
+ok(C.check_quant(ADV) == [], "시험 표본(3분기 포함)은 항등식을 지난다", str(C.check_quant(ADV)))
+ok(M._last_quarter(GOOD) == "2026Q2" and M._last_quarter(ADV) == "2026Q3" and M._last_quarter(None) == "",
+   "마지막 분기를 읽는다")
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+for tk in ("005930", "000020", "204840", "276730"):
+    put(tk, GOOD)
+    S.clear_hold(tk)
+FRESH = {"005930": GOOD, "000020": ADV, "204840": GOOD, "276730": GOOD}
+called = []
+M.collect_quant = lambda dart, tk, row, stock: (called.append(tk), _q(FRESH[tk]))[1]
+os.environ["REPORT_NO_REUSE"] = "1"
+os.environ["REPORT_TICKERS"] = "005930,000020,204840,276730"
+# 005930 오늘 공시 · 새 분기 없음 → 기다린다 / 000020 새 분기 들어옴 → 주문 / 204840 공시 뒤 열흘째도 그대로 → 있는 숫자로 쓴다 /
+# 276730 원래 보고서 목록에 없다(정정 · 백필 등) → 전처럼 주문
+os.environ["REPORT_FILED"] = f"005930:{_d(0)},000020:{_d(0)},204840:{_d(10)}"
+_marks = lambda: (S.fail_count("005930"), "005930" in S.load_hold(), S.checked_date("005930"))
+_before = _marks()                                  # 앞 절이 남긴 기록(⑯ 의 확인 날짜 등)과 견준다
+buf = io.StringIO()
+with __import__("contextlib").redirect_stdout(buf):
+    cl8 = FakeClient()
+    r = M.submit(cl8, "2026-11-09 17:00")
+log8 = buf.getvalue()
+ok(sorted(r["tickers"]) == ["000020", "204840", "276730"], "새 분기가 아직 없는 오늘 공시 종목만 주문에서 뺀다", str(r["tickers"]))
+ok(r.get("waiting") == ["005930"], "뺀 종목을 따로 돌려준다", str(r.get("waiting")))
+ok("005930" in log8 and "재무 조회에 공시" in log8 and "다음 실행에서 다시 본다" in log8, "뺀 이유를 로그에 남긴다")
+ok("204840 공시" in log8 and "있는 숫자로 쓴다" in log8, f"{M.WAIT_QUARTER_DAYS}일이 지나면 있는 숫자로 쓰고 로그에 남긴다")
+ok(_marks() == _before and not _before[1], "기다리는 종목은 실패 · 보류 · 확인 기록을 남기지 않는다(공시 트리거가 다음 실행에서 다시 고른다)",
+   f"{_before} → {_marks()}")
+ok(json.loads((S.OUT_DIR / "005930.json").read_text(encoding="utf-8"))["quant"] == GOOD, "기다리는 종목의 리포트는 그대로 둔다")
+# 새 분기가 들어오면 다음 실행에서 주문한다
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+FRESH["005930"] = ADV
+os.environ["REPORT_TICKERS"] = "005930"
+os.environ["REPORT_FILED"] = f"005930:{_d(1)}"
+r = M.submit(FakeClient(), "2026-11-10 06:30")
+ok(r["tickers"] == ["005930"] and not r.get("waiting"), "다음 실행에서 새 분기가 들어오면 주문한다", str(r))
+# 정정 공시는 이 규칙을 타지 않는다(숫자를 견주는 길이 따로 있다)
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+FRESH["005930"] = GOOD
+os.environ["REPORT_FILED"] = f"005930:{_d(0)}"
+os.environ["REPORT_CORRECTIONS"] = f"005930:{_d(0)}"
+buf = io.StringIO()
+with __import__("contextlib").redirect_stdout(buf):
+    r = M.submit(FakeClient(), "2026-11-09 17:00")
+ok("재무 조회에 공시" not in buf.getvalue(), "정정 공시 종목은 새 분기 대기를 보지 않는다", str(r.get("waiting")))
+# 저장된 리포트가 없으면 견줄 것이 없다 — 그대로 쓴다
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+os.environ.pop("REPORT_CORRECTIONS")
+(S.OUT_DIR / "005930.json").unlink()
+r = M.submit(FakeClient(), "2026-11-09 17:00")
+ok(r["tickers"] == ["005930"], "저장된 리포트가 없으면 그대로 주문한다", str(r))
+# 작업 파일이 공시 트리거의 목록을 생성기에 넘긴다
+_wf = (HERE.parent.parent / ".github/workflows/filing_reports.yml").read_text(encoding="utf-8")
+ok("REPORT_FILED: ${{ steps.filings.outputs.filed }}" in _wf, "공시 트리거 작업이 원래 보고서 접수일을 생성기에 넘긴다")
+for p in S.BATCH_DIR.glob("*.json"):
+    p.unlink()
+for k in ("REPORT_FILED", "REPORT_TICKERS", "REPORT_NO_REUSE"):
+    os.environ.pop(k, None)
+M.collect_quant = REAL_COLLECT_QUANT
+
+
+# ═══ ⑲ 작성 기준 표시 — 표시가 달라도 전기 칸이 지난해 공시와 같으면 이어 붙인다 ═══════════
+# 2026-11-09 재무 원문 점검: 올해 처음 연결 공시를 낸 회사(이렘 3분기 · 콜마바이오텍 반기)는 연결의 전기 칸이 지난해
+# 별도 공시와 원 단위까지 같았고, KT나스미디어는 반기 · 3분기 연결 자료에 별도 표시가 붙어 왔다(재무상태표 전기 칸 =
+# 지난해 연결 연말 자본). 표시만 보고 막아 새 분기가 빠졌다. 소마젠 2026 반기는 매출 전기는 별도, 순이익 전기는 연결로
+# 섞여 있어 지금처럼 채택하지 않아야 한다.
+print("⑲ 작성 기준 표시 — 전기 칸이 지난해 공시를 되풀이하면 같은 기준으로 본다")
+import contextlib as _ctx                                         # noqa: E402
+REAL_REPRT_AVAIL = M._reprt_available
+M._reprt_available = lambda code, year, today=None: True          # 3분기 보고서까지 나온 때(11월)
+E8 = 100_000_000                                                  # 1억원
+ST19 = {"ticker": "009730", "name": "이렘", "price": 10_000, "mcap": 0.1, "shares": 10_000_000,
+        "market": "코스닥", "sector": "철강·금속"}
+
+
+def rep(fs, is_=None, bs=None, reprt="11014"):
+    """가짜 재무 조회 결과. is_ = {계정: (3개월 또는 연간, 누적, 전기 누적)} · bs = {계정: (기말, 전기말)} — 억원."""
+    out = {"_fs": fs, "_reprt": reprt, "_ccy": "KRW"}
+    for k, (amt, add, padd) in (is_ or {}).items():
+        out[k] = {"amt": amt * E8, "add": None if add is None else add * E8, "prv": None,
+                  "padd": None if padd is None else padd * E8}
+    for k, (amt, prv) in (bs or {}).items():
+        out[k] = {"amt": amt * E8, "add": None, "prv": None if prv is None else prv * E8, "padd": None}
+    return out
+
+
+def ann_rep(fs, rev, np_, eq, eq_prev):
+    return rep(fs, {"rev": (rev, rev, None), "op": (rev / 10, rev / 10, None), "np": (np_, np_, None)},
+               {"equity": (eq, eq_prev), "liab": (500, 500)}, reprt="11011")
+
+
+def q_rep(fs, reprt, cum, padd, eq, eq_prev, q3m=None):
+    """cum/padd = (매출, 순이익) 누적 · 전기 누적."""
+    r3, n3 = q3m or cum
+    return rep(fs, {"rev": (r3, cum[0], padd[0]), "op": (r3 / 10, cum[0] / 10, padd[0] / 10),
+                    "np": (n3, cum[1], padd[1])},
+               {"equity": (eq, eq_prev), "liab": (500, None)}, reprt=reprt)
+
+
+def run19(table):
+    M._fin_all = lambda dart, tk, year, reprt: table.get((year, reprt))
+    M.dart_total_shares = lambda d, t: ST19["shares"]
+    M.dart_dps = lambda d, t: 0.0
+    M.g._safe_finstate = lambda *a, **k: None
+    M.g._extract_fin = lambda *a, **k: None
+    buf = io.StringIO()
+    with _ctx.redirect_stdout(buf):
+        q = M.collect_quant(None, ST19["ticker"], None, dict(ST19))
+    return q, buf.getvalue()
+
+
+def qmap(q, key="rev"):
+    return {x["q"]: (None if x.get(key) is None else round(x[key] / E8, 4)) for x in q["quarterly"]}
+
+
+BASE19 = {(2023, "11011"): ann_rep("OFS", 380, -30, 1200, 1300), (2022, "11011"): ann_rep("OFS", 370, -20, 1300, 1400),
+          (2024, "11011"): ann_rep("OFS", 400, -40, 1100, 1200), (2025, "11011"): ann_rep("OFS", 460, -46, 1000, 1100),
+          (2025, "11013"): q_rep("OFS", "11013", (100, -10), (90, -9), 1150, 1100),
+          (2025, "11012"): q_rep("OFS", "11012", (210, -21), (190, -19), 1120, 1100),
+          (2025, "11014"): q_rep("OFS", "11014", (330, -33), (300, -30), 1080, 1100),
+          (2026, "11013"): q_rep("OFS", "11013", (140, -14), (100, -10), 990, 1000),
+          (2026, "11012"): q_rep("OFS", "11012", (290, -29), (210, -21), 980, 1000)}
+
+# (a) 올해 3분기에 처음 연결 — 지난해까지 별도뿐(이렘). 연결 3분기의 전기 칸 = 지난해 별도 공시.
+T_a = dict(BASE19)
+T_a[(2026, "11014")] = q_rep("CFS", "11014", (460, -46), (330, -33), 1050, 1000)
+q_a, log_a = run19(T_a)
+v_a = q_a["valuation"]
+ok(qmap(q_a).get("2026Q3") == 170 and q_a["quarterly"][-1]["q"] == "2026Q3",
+   "(a) 처음 연결한 3분기가 분기 표에 들어온다(누적 460 − 반기 290 = 170억)", str(qmap(q_a)))
+ok(v_a["ttm_window"] == "2025Q4~2026Q3" and round(v_a["ttm_np_owner"] / E8, 4) == -59,
+   "(a) TTM 이 3분기 기준이다(2025Q4 −13 · 2026Q1 −14 · 2026Q2 −15 · 2026Q3 −17 = −59억)",
+   f"{v_a['ttm_window']} {v_a['ttm_np_owner']}")
+ok("같은 기준으로 본다" in log_a and "채택하지 않는다" not in log_a, "(a) 기록에 맞춘 사유가 남는다", log_a[-600:])
+ok(not C.check_quant(q_a), "(a) check_quant 통과", str(C.check_quant(q_a)))
+
+# (b) 연결 자료에 별도 표시가 붙어 온 회사(KT나스미디어) — 반기 · 3분기만 OFS 표시. 재무상태표 전기 = 지난해 연결 연말.
+T_b = {(2022, "11011"): ann_rep("CFS", 370, 20, 1300, 1400), (2023, "11011"): ann_rep("CFS", 380, 30, 1200, 1300),
+       (2024, "11011"): ann_rep("CFS", 400, 40, 1100, 1200), (2025, "11011"): ann_rep("CFS", 460, 46, 1000, 1100),
+       (2024, "11013"): q_rep("CFS", "11013", (90, 9), (80, 8), 1180, 1200),
+       (2024, "11012"): q_rep("OFS", "11012", (190, 19), (170, 17), 1160, 1200),
+       (2024, "11014"): q_rep("OFS", "11014", (300, 30), (270, 27), 1140, 1200),
+       (2025, "11013"): q_rep("CFS", "11013", (100, 10), (90, 9), 1150, 1100),
+       (2025, "11012"): q_rep("OFS", "11012", (210, 21), (190, 19), 1120, 1100),
+       (2025, "11014"): q_rep("OFS", "11014", (330, 33), (300, 30), 1080, 1100),
+       (2026, "11013"): q_rep("CFS", "11013", (140, 14), (100, 10), 990, 1000),
+       (2026, "11012"): q_rep("OFS", "11012", (290, 29), (210, 21), 1010, 1000)}
+q_b, log_b = run19(T_b)
+v_b = q_b["valuation"]
+ok(qmap(q_b) == {"2025Q2": 110, "2025Q3": 120, "2025Q4": 130, "2026Q1": 140, "2026Q2": 150},
+   "(b) 표시가 섞인 해도 분기 표가 빠짐없이 이어진다", str(qmap(q_b)))
+ok(v_b["ttm_window"] == "2025Q3~2026Q2" and round(v_b["ttm_np_owner"] / E8, 4) == 54,
+   "(b) TTM 이 반기 기준이다(12 + 13 + 14 + 15 = 54억)", f"{v_b['ttm_window']} {v_b['ttm_np_owner']}")
+ok(not C.check_quant(q_b), "(b) check_quant 통과", str(C.check_quant(q_b)))
+
+# (c) 원문이 섞인 회사(소마젠) — 재무상태표 전기는 연결과 같지만 매출 전기 칸은 별도(200 ≠ 연결 210). 채택하지 않는다.
+T_c = dict(T_b)
+T_c[(2025, "11012")] = q_rep("CFS", "11012", (210, 21), (190, 19), 1120, 1100)
+T_c[(2025, "11014")] = q_rep("CFS", "11014", (330, 33), (300, 30), 1080, 1100)
+T_c[(2026, "11012")] = rep("OFS", {"rev": (140, 280, 200), "op": (14, 28, 21), "np": (16, 30, 21)},
+                           {"equity": (1010, 1000), "liab": (500, None)}, reprt="11012")
+T_c[(2026, "11014")] = None
+q_c, log_c = run19(T_c)
+ok(q_c["valuation"]["ttm_window"] == "2025Q2~2026Q1" and "채택하지 않는다" in log_c and "같은 기준으로 본다" not in log_c,
+   "(c) 전기 칸이 섞여 있으면 지금처럼 1분기 기준에 머문다", f"{q_c['valuation']['ttm_window']} · {log_c[-300:]}")
+ok(qmap(q_c).get("2026Q2") is None, "(c) 섞인 반기는 분기 표에도 넣지 않는다", str(qmap(q_c)))
+
+# (d) 지난해 4분기에 처음 연결 — 지난해 분기는 별도뿐, 올해는 연결. 올해 연결의 전기 누적 = 지난해 별도 공시.
+T_d = dict(BASE19)
+T_d[(2025, "11011")] = ann_rep("CFS", 460, -46, 1000, 1100)
+T_d[(2026, "11013")] = q_rep("CFS", "11013", (140, -14), (100, -10), 990, 1000)
+T_d[(2026, "11012")] = q_rep("CFS", "11012", (290, -29), (210, -21), 980, 1000)
+q_d, log_d = run19(T_d)
+v_d = q_d["valuation"]
+ok(v_d["ttm_window"] == "2025Q3~2026Q2" and round(v_d["ttm_np_owner"] / E8, 4) == -54,
+   "(d) 반기를 채택해 TTM 을 굴린다(−46 − (−21) + (−29) = −54억)", f"{v_d['ttm_window']} {v_d['ttm_np_owner']}")
+ok(qmap(q_d).get("2026Q2") == 150 and qmap(q_d).get("2025Q4") is None,
+   "(d) 올해 분기는 이어지고, 기준이 다른 지난해 4분기 칸은 지금처럼 비운다", str(qmap(q_d)))
+
+# (e) 재무상태표 전기 칸이 지난해 연말과 다르면(다시 쓴 비교치) 맞추지 않는다
+T_e = dict(BASE19)
+T_e[(2026, "11014")] = q_rep("CFS", "11014", (460, -46), (330, -33), 1050, 1005)
+q_e, log_e = run19(T_e)
+ok(q_e["valuation"]["ttm_window"] == "2025Q3~2026Q2" and qmap(q_e).get("2026Q3") is None and "같은 기준으로 본다" not in log_e,
+   "(e) 전기 칸이 다르면 표시대로 채택하지 않는다", f"{q_e['valuation']['ttm_window']} {qmap(q_e)}")
+# (f) 기준이 처음부터 같은 회사는 아무것도 바뀌지 않는다(추가 조회도 없다)
+_calls = []
+_T = dict(BASE19)
+_T[(2026, "11014")] = q_rep("OFS", "11014", (460, -46), (330, -33), 1050, 1000)
+M._fin_all = lambda dart, tk, year, reprt: (_calls.append((year, reprt)), _T.get((year, reprt)))[1]
+with _ctx.redirect_stdout(io.StringIO()):
+    q_f = M.collect_quant(None, ST19["ticker"], None, dict(ST19))
+ok(q_f["valuation"]["ttm_window"] == "2025Q4~2026Q3" and (2024, "11014") not in _calls,
+   "(f) 표시가 같으면 지난해의 전년 보고서를 더 묻지 않는다", str(sorted(set(_calls))))
+
+# (g) 표시가 해마다 바뀌는 회사(한양증권) — 2024 연간 연결, 2025 1분기 연결, 반기 · 3분기 · 연간 별도 표시. 표시를 하나로
+#     바꾸면 2분기를 채우는 대신 4분기(2025 연간 별도 − 3분기)가 빈다(2026-11-09 실제 재무 88종목에서 70칸). 둘 다 이어져야 한다.
+T_g = dict(T_b)
+T_g[(2025, "11011")] = ann_rep("OFS", 460, 46, 1000, 1100)
+T_g[(2026, "11012")] = q_rep("OFS", "11012", (290, 29), (210, 21), 1010, 1000)
+q_g, log_g = run19(T_g)
+ok(qmap(q_g) == {"2025Q2": 110, "2025Q3": 120, "2025Q4": 130, "2026Q1": 140, "2026Q2": 150},
+   "(g) 표시가 해마다 바뀌어도 2분기와 4분기가 함께 이어진다", str(qmap(q_g)))
+ok(q_g["valuation"]["ttm_window"] == "2025Q3~2026Q2", "(g) TTM 이 반기 기준이다", q_g["valuation"]["ttm_window"])
+# (h) 지난해 3분기에 처음 연결(풍전약품) — 2024 연간 · 2025 1분기 · 반기 별도, 2025 3분기 · 연간 연결.
+#     3분기는 반기(별도)와도, 2025 연간(연결)과도 이어져야 한다.
+T_h = dict(BASE19)
+T_h[(2025, "11014")] = q_rep("CFS", "11014", (330, -33), (300, -30), 1080, 1100)
+T_h[(2025, "11011")] = ann_rep("CFS", 460, -46, 1000, 1100)
+T_h[(2026, "11013")] = q_rep("CFS", "11013", (140, -14), (100, -10), 990, 1000)
+T_h[(2026, "11012")] = q_rep("CFS", "11012", (290, -29), (210, -21), 980, 1000)
+q_h, log_h = run19(T_h)
+ok(qmap(q_h) == {"2025Q2": 110, "2025Q3": 120, "2025Q4": 130, "2026Q1": 140, "2026Q2": 150},
+   "(h) 처음 연결한 분기가 앞(별도) · 뒤(연결) 어느 쪽과도 이어진다", str(qmap(q_h)))
+ok(q_h["valuation"]["ttm_window"] == "2025Q3~2026Q2" and round(q_h["valuation"]["ttm_np_owner"] / E8, 4) == -54,
+   "(h) TTM 이 반기 기준이다(−12 − 13 − 14 − 15 = −54억)", f"{q_h['valuation']['ttm_window']} {q_h['valuation']['ttm_np_owner']}")
+# (i) 기준이 처음부터 섞인 칸은 여전히 막는다 — 표시가 다르고 전기 칸도 다르면 4분기를 만들지 않는다(상상인 3분기 누적 > 연간)
+T_i = dict(T_b)
+T_i[(2025, "11011")] = ann_rep("CFS", 460, 46, 1000, 1100)
+T_i[(2025, "11014")] = q_rep("OFS", "11014", (330, 33), (290, 29), 1080, 1095)   # 전기 칸이 지난해와 다르다
+q_i, _ = run19(T_i)
+ok(qmap(q_i).get("2025Q4") is None and qmap(q_i).get("2025Q3") is not None,
+   "(i) 전기 칸이 다르면 표시가 다른 칸끼리 빼지 않는다", str(qmap(q_i)))
+
+# 단위 함수
+ok(M._same_amt(100, 100) and M._same_amt(100_000, 100_100) and not M._same_amt(100_000, 100_300)
+   and not M._same_amt(None, 1), "같은 금액 판정(0.2%)")
+ok(M.is_link({"rev": {"padd": 5}}, {"rev": {"amt": 5, "add": 5}})[0] is False, "계정 하나만으로는 같은 기준이라 하지 않는다")
+ok(M.bs_link({"liab": {"prv": 5}}, {"liab": {"amt": 5}})[0] is False, "자본총계 없이 맞춘다고 하지 않는다")
+
+# ═══ ⑳ 주식수 역산 — 올해 역산 주식수가 동떨어지면 작년 연간 역산을 쓴다 ═══════════════════════
+# 2026-11-10 대양금속: 2026 반기 주당이익을 1분기(16원) · 2분기(-32원)의 합(-16원)으로 공시했다. 0 에 가까운 반기
+# 순이익(-3.95억원)을 그 값으로 나눈 2,469만주를 분모로 써 주당이익이 257원(네이버 113원)으로 부풀었고, 작년 같은 기간
+# 주당이익을 액면병합으로 오판해 두 배로 고쳤다. 고치기 전 생성기는 (a) 에서 세 건이 걸린다.
+print("⑳ 주식수 역산 — 올해 누적 주당이익이 분기 합으로 공시된 회사")
+
+
+def eps_rep(r, eps_add):
+    r = dict(r)
+    r["np_owner"] = dict(r["np"])
+    r["equity_owner"] = dict(r["equity"])
+    r["eps_basic"] = {"amt": eps_add, "add": eps_add, "prv": None, "padd": None}
+    return r
+
+
+def t20(fy, q25, q26):
+    """fy = {연도: (매출, 순이익, 주당이익, 자본)} · q25 · q26 = {보고서: (누적 매출, 누적 순이익, 누적 주당이익, 자본)}
+    — 금액은 억원, 주당이익은 원."""
+    t = {}
+    for y, (rv, np_, eps, eq) in fy.items():
+        t[(y, "11011")] = eps_rep(ann_rep("CFS", rv, np_, eq, eq), eps)
+    for y, qs in ((2025, q25), (2026, q26)):
+        for reprt, (rv, np_, eps, eq) in qs.items():
+            pr = q25.get(reprt) if y == 2026 else None
+            padd = (pr[0], pr[1]) if pr else (rv * 0.9, np_)
+            t[(y, reprt)] = eps_rep(q_rep("CFS", reprt, (rv, np_), padd, eq, fy[y - 1][3]), eps)
+    return t
+
+
+def run20(table, st, total):
+    M._fin_all = lambda dart, tk, year, reprt: table.get((year, reprt))
+    M.dart_total_shares = lambda d, t: total
+    M.dart_dps = lambda d, t: 0.0
+    M.g._safe_finstate = lambda *a, **k: None
+    M.g._extract_fin = lambda *a, **k: None
+    buf = io.StringIO()
+    with _ctx.redirect_stdout(buf):
+        q = M.collect_quant(None, st["ticker"], None, dict(st))
+    return q, buf.getvalue()
+
+
+ST20 = {"ticker": "009190", "name": "대양금속", "price": 830, "mcap": 0.0373, "shares": 44_939_175,
+        "market": "코스피", "sector": "철강·금속"}
+FY20 = {2022: (2400, 50, 110, 950), 2023: (2300, 40, 88, 990), 2024: (2100, -150, -330, 903.8),
+        2025: (2000, 94, 206, 1000.8)}
+Q25 = {"11013": (480, 15, 33, 1010), "11012": (990, 26.6, 56, 1020), "11014": (1500, 60, 131, 1040)}
+
+# (a) 대양금속 — 반기 주당이익 -16원(분기 합) · 반기 순이익 -3.95억원 → 올해 역산 2,469만주(상장 4,494만 · 발행총수 5,594만)
+q20a, log20a = run20(t20(FY20, Q25, {"11013": (520, 8.4, 16, 1005), "11012": (1050, -3.95, -16, 990)}), ST20, 55_942_625)
+v20a = q20a["valuation"]
+ok(v20a["ttm_window"] == "2025Q3~2026Q2" and round(v20a["ttm_np_owner"] / E8, 4) == 63.45,
+   "(a) TTM 은 반기 기준이다(33.4 + 34 + 8.4 − 12.35 = 63.45억)", f"{v20a['ttm_window']} {v20a['ttm_np_owner']}")
+ok("작년 연간 역산을 쓴다" in log20a and "⚖️" not in log20a,
+   "(a) 올해 역산 주식수를 버리고, 액면병합으로 오판하지 않는다", log20a[-900:])
+ok(v20a["eps"] == 134 and v20a["eps_src"] == "공시",
+   "(a) 주당이익은 공시 롤포워드 134원(206 − 56 − 16 · 고치기 전 257원)", f"{v20a['eps']} {v20a['eps_src']}")
+# 대양금속은 BPS 를 내보내지 않는 목록(data/bps_suppress.txt)에 있어 저장값 대신 계산 기록을 본다.
+ok(v20a["wavg_shares"] == 45_631_067 and "= BPS 2170" in log20a,
+   "(a) 주식수 · 주당순자산도 작년 연간 역산 4,563만주로 나눈다(990억 ÷ 4,563만 = 2,170원 · 고치기 전 4,010원)",
+   f"{v20a['wavg_shares']} · {[l for l in log20a.splitlines() if 'BPS 입력' in l]}")
+ok(not C.check_quant(q20a), "(a) check_quant 통과", str(C.check_quant(q20a)))
+
+# (b) 보통 회사 — 반기 주당이익 -9원(순이익 ÷ 4,389만주)이면 올해 역산을 그대로 쓴다
+q20b, log20b = run20(t20(FY20, Q25, {"11013": (520, 8.4, 16, 1005), "11012": (1050, -3.95, -9, 990)}), ST20, 55_942_625)
+ok("작년 연간 역산을 쓴다" not in log20b and q20b["valuation"]["wavg_shares"] == 43_888_888
+   and q20b["valuation"]["eps"] == 141,
+   "(b) 올해 역산이 상장 주식수와 맞으면 그대로 쓴다(206 − 56 − 9 = 141원)",
+   f"{q20b['valuation']['wavg_shares']} {q20b['valuation']['eps']}")
+
+# (c) 아센디오 — 올해 역산 1,860만주가 상장 1,030만주와는 다르지만 공시 발행주식총수 1,939만주와 맞는다. 그대로 둔다.
+ST20c = dict(ST20, ticker="012170", name="아센디오", price=3210, mcap=0.0331, shares=10_302_348, sector="미디어·엔터")
+FY20c = {2022: (900, -50, -51, 300), 2023: (850, -60, -61, 260), 2024: (800, -74.8, -76, 195),
+         2025: (700, -136.6, -1271, 72.4)}
+Q25c = {"11013": (170, -30, -305, 160), "11012": (350, -66, -670, 130), "11014": (520, -69.2, -700, 120)}
+q20c, log20c = run20(t20(FY20c, Q25c, {"11013": (180, -2.1, -11.5, 70), "11012": (360, -8.0, -43, 64)}),
+                     ST20c, 19_393_296)
+ok("작년 연간 역산을 쓴다" not in log20c and q20c["valuation"]["wavg_shares"] == 18_604_651,
+   "(c) 올해 역산이 공시 발행주식총수와 맞으면 그대로 쓴다", f"{q20c['valuation']['wavg_shares']}")
+
+
+# ═══ ㉑ 결산월이 12월이 아닌 회사 — 회계연도로 짝짓고 분기 이름은 달력 분기로 ═══════════════════════
+# DART 재무 조회의 사업연도는 보고서 기간이 끝나는 달력 연도다. 3월 결산 회사의 2025 사업연도에는 2025년 3월에 끝난
+# 회계연도의 사업보고서와, 그다음 회계연도의 1분기(2025년 4~6월) · 반기 · 3분기가 들어 있다. 같은 사업연도끼리 짝지어
+# 4분기를 '앞 회계연도 연간 − 이번 회계연도 3분기 누적'으로 만들었다(동원모빌리티 · 대신정보통신 등 11개사).
+# 9월 결산 회사는 1 · 2분기가 비었다(금비 · 풍강). 고치기 전 생성기는 여기서 아홉 건이 걸린다.
+print("㉑ 결산월이 12월이 아닌 회사 — 회계연도로 짝짓고 분기 이름은 달력 분기")
+REAL_FM = getattr(M, "fiscal_end_month", None)
+TODAY21 = REAL_DATE(2026, 11, 10)
+
+
+def run21(table, fm):
+    M.fiscal_end_month = lambda dart, tk: fm
+    M._fin_all = lambda dart, tk, year, reprt: table.get((year, reprt))
+    M.dart_total_shares = lambda d, t, today=None: ST19["shares"]
+    M.dart_dps = lambda d, t, years=None: 0.0
+    M.g._safe_finstate = lambda *a, **k: None
+    M.g._extract_fin = lambda *a, **k: None
+    buf = io.StringIO()
+    with _ctx.redirect_stdout(buf):
+        try:
+            q = M.collect_quant(None, ST19["ticker"], None, dict(ST19), today=TODAY21)
+        except TypeError:          # 고치기 전 생성기(today 없음) — 걸리는 수를 재려고 그대로 돌린다
+            q = M.collect_quant(None, ST19["ticker"], None, dict(ST19))
+    return q, buf.getvalue()
+
+
+# (a) 3월 결산(동원모빌리티 꼴) — 열쇠는 DART 사업연도. 2026 사업보고서 = 2025년 4월~2026년 3월(매출 700억),
+#     2025 1분기 · 반기 · 3분기 = 그 회계연도의 2025년 6 · 9 · 12월 누적, 2026 1분기 = 2026년 4~6월(194억).
+T21a = {(2023, "11011"): ann_rep("CFS", 538, 18, 897, 614), (2024, "11011"): ann_rep("CFS", 568, 18, 1065, 897),
+        (2025, "11011"): ann_rep("CFS", 626.2, 21, 1330, 1065), (2026, "11011"): ann_rep("CFS", 700, 30, 1797, 1330),
+        (2024, "11013"): q_rep("CFS", "11013", (160, 5), (150, 4), 1300, 1065),
+        (2024, "11012"): q_rep("CFS", "11012", (310, 10), (290, 9), 1310, 1065),
+        (2024, "11014"): q_rep("CFS", "11014", (460, 15), (430, 13), 1320, 1065),
+        (2025, "11013"): q_rep("CFS", "11013", (168, 5.5), (160, 5), 1297, 1330),
+        (2025, "11012"): q_rep("CFS", "11012", (324, 15.3), (310, 10), 1500, 1330),
+        (2025, "11014"): q_rep("CFS", "11014", (481, 25.9), (460, 15), 1600, 1330),
+        (2026, "11013"): q_rep("CFS", "11013", (194, 13.9), (168, 5.5), 1948, 1797)}
+q21a, log21a = run21(T21a, 3)
+ok(qmap(q21a) == {"2025Q2": 168, "2025Q3": 156, "2025Q4": 157, "2026Q1": 219, "2026Q2": 194},
+   "(a) 3월 결산 — 분기는 같은 회계연도끼리 빼고, 이름은 달력 분기다(2026년 1~3월 = 700 − 481 = 219억 · 고치기 전 145억)",
+   str(qmap(q21a)))
+ok([a["year"] for a in q21a["annual"]] == [2026, 2025, 2024, 2023],
+   "(a) 연간은 2026년 3월에 끝난 회계연도까지 받는다(고치기 전 2025가 마지막)", str([a["year"] for a in q21a["annual"]]))
+ok(q21a["valuation"]["ttm_window"] == "2025Q3~2026Q2" and round(q21a["valuation"]["ttm_np_owner"] / E8, 4) == 38.4,
+   "(a) 최근 4개 분기는 2025년 7월~2026년 6월(9.8 + 10.6 + 4.1 + 13.9 = 38.4억)",
+   f"{q21a['valuation']['ttm_window']} {q21a['valuation']['ttm_np_owner']}")
+ok(q21a.get("fy_end_month") == 3 and "3월 결산" in log21a, "(a) 결산월을 정량에 남긴다", str(q21a.get("fy_end_month")))
+ok(not C.check_quant(q21a), "(a) check_quant 통과", str(C.check_quant(q21a)))
+
+# (b) 9월 결산(금비 꼴) — 2025 1분기 = 2025년 10~12월(다음 회계연도), 2026 반기 · 3분기 = 2026년 3 · 6월 누적,
+#     2026년 9월에 끝난 회계연도의 사업보고서는 아직 없다(12월 말 기한).
+T21b = {(2022, "11011"): ann_rep("CFS", 245, 2, 1200, 1180), (2023, "11011"): ann_rep("CFS", 251, -7, 1228, 1200),
+        (2024, "11011"): ann_rep("CFS", 259, 4, 1249, 1228), (2025, "11011"): ann_rep("CFS", 252, 2, 1328, 1249),
+        (2024, "11013"): q_rep("CFS", "11013", (60, 0.5), (58, 0.4), 1252, 1249),
+        (2025, "11012"): q_rep("CFS", "11012", (125, 1.0), (120, 0.9), 1260, 1249),
+        (2025, "11014"): q_rep("CFS", "11014", (190, 1.5), (185, 1.4), 1270, 1249),
+        (2025, "11013"): q_rep("CFS", "11013", (61, 1.3), (60, 0.5), 1330, 1328),
+        (2026, "11012"): q_rep("CFS", "11012", (125, 2.0), (125, 1.0), 1335, 1328),
+        (2026, "11014"): q_rep("CFS", "11014", (190.5, 1.4), (190, 1.5), 1340, 1328)}
+q21b, log21b = run21(T21b, 9)
+ok(qmap(q21b) == {"2025Q2": 65, "2025Q3": 62, "2025Q4": 61, "2026Q1": 64, "2026Q2": 65.5},
+   "(b) 9월 결산 — 1 · 2분기가 비지 않고, 이름은 달력 분기다(고치기 전 2026Q1 · 2026Q2 빈칸)", str(qmap(q21b)))
+ok(q21b["valuation"]["ttm_window"] == "2025Q3~2026Q2", "(b) 최근 4개 분기는 2025년 7월~2026년 6월",
+   str(q21b["valuation"]["ttm_window"]))
+ok(not C.check_quant(q21b), "(b) check_quant 통과", str(C.check_quant(q21b)))
+# (b-2) 결산 뒤 석 달(2026년 9월 결산 사업보고서가 아직 없음)에도 최근 시점이 비지 않는다 — 2026년 6월 3분기 보고서의 재무상태표로
+#      주당순자산을 낸다. 비우면 9월 결산 6곳의 주당순자산 · 자기자본이익률이 11월에 빠졌다(2026-11-10 정량 확인).
+ok("사업보고서가 아직 없다" in log21b and q21b["valuation"]["bps"] is not None and q21b["valuation"]["roe_ttm"] is not None,
+   "(b-2) 직전 회계연도의 3분기 보고서를 최근 시점으로 써 주당순자산 · 자기자본이익률을 낸다",
+   f"bps {q21b['valuation']['bps']} roe {q21b['valuation']['roe_ttm']}")
+
+# (c) 12월 결산은 그대로다 — 같은 생성기에 결산월 12를 주면 ⑲ 의 표와 같다
+q21c, _ = run21(dict(BASE19), 12)
+ok(qmap(q21c) == {"2025Q2": 110, "2025Q3": 120, "2025Q4": 130, "2026Q1": 140, "2026Q2": 150}
+   and "fy_end_month" not in q21c, "(c) 12월 결산은 분기 이름 · 값이 바뀌지 않는다", str(qmap(q21c)))
+
+# 단위 함수
+_dy, _cq = getattr(M, "dart_year", None), getattr(M, "cal_q", None)
+ok(_dy and _dy(2027, "11013", 3) == 2026 and _dy(2027, "11011", 3) == 2027
+   and _dy(2026, "11013", 9) == 2025 and _dy(2026, "11012", 9) == 2026
+   and all(_dy(2026, c, 12) == 2026 for c in ("11013", "11012", "11014", "11011"))
+   and all(_dy(2026, c, 11) == 2026 for c in ("11013", "11012", "11014", "11011")),
+   "DART 사업연도 = 보고서 기간이 끝나는 해(3 · 9 · 11 · 12월 결산)")
+ok(_cq and [_cq(f"2027Q{i}", 3) for i in (1, 2, 3, 4)] == ["2026Q2", "2026Q3", "2026Q4", "2027Q1"]
+   and [_cq(f"2026Q{i}", 9) for i in (1, 2, 3, 4)] == ["2025Q4", "2026Q1", "2026Q2", "2026Q3"]
+   and _cq("2026Q2", 12) == "2026Q2" and _cq("2026Q3", 11) == "2026Q3",
+   "분기 이름 — 그 3개월이 끝나는 달력 분기")
+if REAL_FM is not None:
+    M.fiscal_end_month = REAL_FM
+
+M._reprt_available = REAL_REPRT_AVAIL
 
 print()
 print(f"통과 {passed} · 실패 {failed}")

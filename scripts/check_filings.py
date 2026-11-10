@@ -127,7 +127,7 @@ def main():
         return checked[sc]
 
     # ticker -> 가장 최신 공시 접수일(YYYYMMDD) · 처음 내는 보고서가 하나라도 있는 종목
-    cand, orig = {}, set()
+    cand, orig, orig_date = {}, set(), {}
     if df is not None and not getattr(df, "empty", True):
         for _, r in df.iterrows():
             sc = str(r.get("stock_code", "")).strip()
@@ -148,6 +148,7 @@ def main():
                 continue
             if not is_amendment(nm):
                 orig.add(sc)
+                orig_date[sc] = max(orig_date.get(sc, ""), fdate)
             if fdate > cand.get(sc, ""):
                 cand[sc] = fdate
 
@@ -201,8 +202,11 @@ def main():
     print(f"\n📋 {start}~{end} 정기보고서 기준 갱신 대상 {total}개 중 이번 실행 {len(picked)}개"
           + (f"(정정 공시만 {len(corr)}개)" if corr else "")
           + (f" · 남은 백로그 {backlog}개(다음 실행에서 이어서)" if backlog > 0 else ""))
+    # filed — 원래 보고서(정정 아님)의 접수일. 생성기가 새로 받은 재무에 그 공시의 분기가 들어왔는지 본다
+    # (공시 당일에는 DART 재무 조회에 새 분기가 아직 없을 수 있다 — 2026-10-26 워트).
     gh_output(new_tickers=",".join(picked), count=len(picked),
-              corrections=",".join(f"{sc}:{cand[sc]}" for sc in corr))
+              corrections=",".join(f"{sc}:{cand[sc]}" for sc in corr),
+              filed=",".join(f"{sc}:{orig_date[sc]}" for sc in picked if sc in orig_date))
 
 
 if __name__ == "__main__":

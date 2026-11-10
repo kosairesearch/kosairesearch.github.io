@@ -1,0 +1,101 @@
+{
+ "batch_id": "msgbatch_014NVkD1BkGsXcLqardwqUzR",
+ "created": "2026-11-10 10:57",
+ "model": "claude-haiku-5-5",
+ "models": {
+  "002630": "claude-haiku-5-5",
+  "018500": "claude-haiku-5-5",
+  "020180": "claude-haiku-5-5",
+  "021880": "claude-haiku-5-5",
+  "033200": "claude-haiku-5-5",
+  "060310": "claude-haiku-5-5",
+  "067010": "claude-haiku-5-5",
+  "092440": "claude-haiku-5-5",
+  "099750": "claude-haiku-5-5",
+  "190650": "claude-haiku-5-5",
+  "289080": "claude-haiku-5-5",
+  "001080": "claude-haiku-5-5",
+  "021820": "claude-haiku-5-5",
+  "030960": "claude-haiku-5-5",
+  "032800": "claude-haiku-5-5",
+  "050860": "claude-haiku-5-5",
+  "093240": "claude-haiku-5-5",
+  "097870": "claude-haiku-5-5",
+  "169330": "claude-haiku-5-5",
+  "189690": "claude-haiku-5-5",
+  "334970": "claude-haiku-5-5",
+  "900120": "claude-haiku-5-5",
+  "900290": "claude-haiku-5-5",
+  "950210": "claude-haiku-5-5",
+  "008870": "claude-haiku-5-5",
+  "003610": "claude-haiku-5-5",
+  "017250": "claude-haiku-5-5",
+  "042520": "claude-haiku-5-5",
+  "084440": "claude-haiku-5-5",
+  "093380": "claude-haiku-5-5"
+ },
+ "tickers": [
+  "002630",
+  "018500",
+  "020180",
+  "021880",
+  "033200",
+  "060310",
+  "067010",
+  "092440",
+  "099750",
+  "190650",
+  "289080",
+  "001080",
+  "021820",
+  "030960",
+  "032800",
+  "050860",
+  "093240",
+  "097870",
+  "169330",
+  "189690",
+  "334970",
+  "900120",
+  "900290",
+  "950210",
+  "008870",
+  "003610",
+  "017250",
+  "042520",
+  "084440",
+  "093380"
+ ],
+ "dataDate": "20261109",
+ "count": 30,
+ "usage": {
+  "claude-haiku-5-5": {
+   "n": 30,
+   "in": 319644,
+   "cache_w": 1045954,
+   "cache_r": 172516,
+   "out": 1007657,
+   "search": 60,
+   "usd": 0.934
+  }
+ },
+ "result": {
+  "ok": 26,
+  "fail": 4
+ },
+ "usage_repair": {
+  "claude-sonnet-5-5": {
+   "n": 11,
+   "in": 40010,
+   "cache_w": 0,
+   "cache_r": 0,
+   "out": 16784,
+   "search": 0,
+   "usd": 0.12393
+  }
+ },
+ "repairs": [
+  "msgbatch_0154h9cvCYKibXDkkWxxBQJG"
+ ],
+ "collected": "2026-11-10 12:09"
+}
