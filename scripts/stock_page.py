@@ -448,8 +448,10 @@ def _body_v2(rep):
     annual = sorted(q.get('annual') or [], key=lambda a: a['year'])
     quarterly = q.get('quarterly') or []
     q_chart = bar_chart([(x['q'][2:4] + 'Q' + x['q'][-1], x.get('rev'), x.get('op')) for x in quarterly])
-    a_chart = bar_chart([(str(a['year']), a.get('rev'), a.get('op')) for a in annual])
-    ann_rows = ''.join(f'<tr><th scope="row">{a["year"]}</th><td>{fwon(a.get("rev"))}</td><td>{fwon(a.get("op"))}</td><td>{fwon(a.get("np_owner"))}</td><td>{pct(a.get("opm"))}</td><td>{pct(a.get("roe"))}</td><td>{pct(a.get("debt_ratio"))}</td></tr>' for a in annual)
+    fm = q.get('fy_end_month')
+    ylab = (lambda y: f"{y}.{fm:02d}") if fm in range(1, 12) else str   # 결산월이 12월이 아니면 '2026.03'(build_stock_staging 과 같다)
+    a_chart = bar_chart([(ylab(a['year']), a.get('rev'), a.get('op')) for a in annual])
+    ann_rows = ''.join(f'<tr><th scope="row">{ylab(a["year"])}</th><td>{fwon(a.get("rev"))}</td><td>{fwon(a.get("op"))}</td><td>{fwon(a.get("np_owner"))}</td><td>{pct(a.get("opm"))}</td><td>{pct(a.get("roe"))}</td><td>{pct(a.get("debt_ratio"))}</td></tr>' for a in annual)
     qtr_rows = ''.join(f'<tr><th scope="row">{esc(x["q"])}</th><td>{fwon(x.get("rev"))}</td><td>{fwon(x.get("op"))}</td><td>{pct(x["op"] / x["rev"] * 100) if x.get("rev") and x.get("op") is not None else "—"}</td></tr>' for x in quarterly)
     risk_rows = ''.join(f'<div class="rk"><div class="rk-c">{esc(pk(r.get("cat")))}</div><div class="rk-b">{paras(pk(r.get("body")))}</div></div>' for r in rep.get('risks') or [])
     cp_rows = ''.join(f'<li><span class="when">{esc(pk(c.get("when")))}</span><p>{esc(pk(c.get("what")))}</p></li>' for c in rep.get('checkpoints') or [])

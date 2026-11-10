@@ -645,8 +645,10 @@ function v2Parts(){
   var q=REP.quant||{}, val=q.valuation||{};
   var annual=(q.annual||[]).slice().sort(function(a,b){ return a.year-b.year; }), quarterly=q.quarterly||[];
   var qChart=barChart(quarterly.map(function(x){ return [String(x.q).slice(2,4)+'Q'+String(x.q).slice(-1), x.rev, x.op]; }));
-  var aChart=barChart(annual.map(function(a){ return [String(a.year), a.rev, a.op]; }));
-  var annRows=annual.map(function(a){ return '<tr><th scope="row">'+a.year+'</th><td>'+fwon(a.rev)+'</td><td>'+fwon(a.op)+'</td><td>'+fwon(a.np_owner)+'</td><td>'+pct(a.opm)+'</td><td>'+pct(a.roe)+'</td><td>'+pct(a.debt_ratio)+'</td></tr>'; }).join('');
+  /* 결산월이 12월이 아닌 회사(q.fy_end_month)는 연도에 결산월을 붙인다 — 3월 결산의 2026 = 2025년 4월~2026년 3월('2026.03' · 네이버와 같은 꼴) */
+  var fm=q.fy_end_month, ylab=function(y){ return (fm&&fm!==12)?y+'.'+(fm<10?'0':'')+fm:String(y); };
+  var aChart=barChart(annual.map(function(a){ return [ylab(a.year), a.rev, a.op]; }));
+  var annRows=annual.map(function(a){ return '<tr><th scope="row">'+ylab(a.year)+'</th><td>'+fwon(a.rev)+'</td><td>'+fwon(a.op)+'</td><td>'+fwon(a.np_owner)+'</td><td>'+pct(a.opm)+'</td><td>'+pct(a.roe)+'</td><td>'+pct(a.debt_ratio)+'</td></tr>'; }).join('');
   var qtrRows=quarterly.map(function(x){ return '<tr><th scope="row">'+esc(x.q)+'</th><td>'+fwon(x.rev)+'</td><td>'+fwon(x.op)+'</td><td>'+((x.rev&&x.op!=null)?pct(x.op/x.rev*100):'—')+'</td></tr>'; }).join('');
   var lg='<div class="lg"><i class="l-rev"></i>매출액<i class="l-op"></i>영업이익</div>';
   var fin='<div class="tiles"><figure class="tile"><figcaption>분기 매출 · 영업이익</figcaption>'+qChart+lg+'</figure><figure class="tile"><figcaption>연간 매출 · 영업이익</figcaption>'+aChart+lg+'</figure></div>'
