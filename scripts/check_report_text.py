@@ -746,21 +746,78 @@ _PROCESS_KO = re.compile(
     r"|화면(?:의)?\s*카드|서비스\s*화면|화면에서\s*(?:실시간|확인|사실상)|화면에\s*표시되는\s*(?:주가|배수|값|수치|업종|현재)"
     r"|섞지\s*않(?:는다|아야)|다른\s*회사의\s*수치(?:다|이다)|분석\s*대상이\s*아니다|이 리포트의\s*(?:수치|분석)")
 _PROCESS_EN = re.compile(
-    r"\b(?:in|from|by|with|during)\s+(?:this|our|the)\s+(?:search|review|research)(?:\s+results)?\b"
+    # 'in this research.' · 'in our research, so' · 'in this research to quantify' — 뒤에 이름씨가 오면('in the research equipment market' ·
+    # 'in this research agreement' · 'during the review period') 과정 이야기가 아니다(2026-11-10 사이트 전수에서 오탐 8곳).
+    r"\b(?:in|from|by|with|during)\s+(?:this|our)\s+(?:search|review|research)(?:\s+(?:results|scope))?(?=\s*[,.;:!?)]|\s*$|\s+(?:and|but|so|to)\b)"
+    r"|\b(?:in|from|by|with|during)\s+the\s+(?:search|review|research)(?:\s+(?:results|scope))?(?=\s*[,.;:!?)]|\s*$)"
     r"|\b(?:this|our|the)\s+(?:search|review|research)\s+(?:did not|could not|does not|found|confirmed|turned up|yielded)\b"
     r"|\b(?:sources|materials)\s+reviewed\b|\bon[- ]screen\b|\bscreen\s+cards?\b|\bon\s+the\s+screen\b"
     r"|\bdescribed\s+(?:only\s+)?qualitatively\b|\bqualitatively\s+only\b"
     r"|\bthis\s+(?:report|section)\s+(?:treats|covers|does not|did not|uses|describes|discusses|focuses)\b"
     r"|\bnot\s+(?:cited|quoted|attributed)\s+here\b|\bnot\s+(?:to\s+be\s+)?mixed\s+with\b|\bnot\s+the\s+subject\s+of\s+this\s+report\b", re.I)
 _EN_DISCLAIMER = re.compile(r"information(?:al)?\s+(?:purposes\s+)?only|investment\s+(?:advice|recommendation|decision|opinion)"
-                            r"|buy\s+or\s+sell|not\s+an\s+offer|target\s+price", re.I)
+                            r"|buy\s+or\s+sell|not\s+an\s+offer|target\s+price"
+                            # 방향 판단을 내리지 않는다는 면책('this report does not offer a directional conclusion') — 한국어의
+                            # '본 리포트는 방향성 판단을 내리지 않는다'도 걸지 않는다(2026-11-10 사이트 전수)
+                            r"|\bdirection(?:al)?\b|\bconclusions?\b|\bstance\b|take\s+a\s+side|\bjudge?ments?\b", re.I)
 # 이미 공시된 분기를 '다음 확인 일정'으로 쓴 것 — 체크포인트(시점과 내용 첫머리)와, 확인 지점을 말하는 문장만 본다
 # (실적 분석이 '3분기 분기보고서 기준 …'처럼 낸 보고서를 근거로 드는 것은 맞다).
-_CP_Q = re.compile(r"(?:(\d{4})\s*년\s*)?([1-4])\s*분기\s*(?:분기\s*)?(?:잠정\s*)?(?:보고서|실적\s*(?:발표|공시)?)")
+_CP_Q = re.compile(r"(?:(\d{4})\s*년\s*)?([1-4])\s*분기\s*(?:(?:분기|연결|별도|잠정|영업)\s*){0,3}(?:보고서|실적\s*(?:발표|공시)?)")
+# '3분기 · 반기 보고서'의 앞 항목 — 뒤 보고서 이름을 함께 받는다(체크포인트에서 앞으로의 일인지 가릴 때만 쓴다)
+_CP_QL = re.compile(r"(?:(\d{4})\s*년\s*)?([1-4])\s*분기(?=\s*[·,]\s*(?:반기|[1-4]\s*분기))")
 _CP_H = re.compile(r"(?:(\d{4})\s*년\s*)?반기\s*보고서")
 _CP_A = re.compile(r"(\d{4})\s*년\s*(?:연간\s*)?사업\s*보고서")
-_CP_DONE = re.compile(r"\s*(?:은|는|이|가)?\s.{0,30}?(?:제출됐|제출되었|제출했|나왔|공시됐|공시되었|공시했|발표됐|발표되었|발표했)")
+# 언급 바로 뒤가 지난 일 · 근거 표시면 시점 참고다 — '2026년 반기보고서는 8월 14일에 제출됐다' · '반기보고서에서 … 해소됐다고 공시됐으나' ·
+# '반기보고서를 통해 확인할 수 있다고 말한 바 있어' · '3분기 분기보고서 기준 …' · '사업보고서에 따르면'. 문장을 넘지 않는다.
+_CP_DONE = re.compile(r"(?:\s*(?:기준|에\s*따르면|에\s*따른|에서\s*밝힌|에\s*실린))"
+                      r"|(?:은|는|이|가|에서|에|을|를|의|으로|로|도)?\s?[^.!?]{0,30}?"
+                      r"(?:제출됐|제출되었|제출했|나왔|공시됐|공시되었|공시했|발표됐|발표되었|발표했|바 있)")
 _CP_CUE = re.compile(r"확인\s*지점|다음\s*확인|확인할|보는\s*것|볼\s*것|점검할|지켜볼")
+# 언급 바로 앞 — 다음 해('익년 1분기')는 앞으로의 일, 일반 · 나열('향후 분기 · 반기보고서' · '1 · 2분기 잠정실적' · '사업보고서 · 반기보고서
+# 공시 시점마다')은 특정 기간을 가리키지 않으므로 보지 않는다(2026-11-10 사이트 전수의 오탐).
+_CP_NEXT_YEAR = re.compile(r"(?:익년|내년|이듬해|다음\s*해|차년도)\s*$")
+_CP_GENERIC = re.compile(r"(?:(?:향후|앞으로|이후|차기|매|각|매년)\s*|(?<!\d)분기\s*[·,]\s*)$")     # '향후 …' · '분기 · 반기 보고서'
+_CP_NUMLIST = re.compile(r"\d\s*[·,~∼]\s*$")                                                  # '1 · 2분기 잠정실적이 각각 …'
+_CP_EVERY = re.compile(r"[^.]{0,14}?마다")                                                     # '… 공시 시점마다'
+
+
+def _cp_mentions(text, latest_q, latest_y, year, events_only=False):
+    """text 안의 정기보고서 · 실적 언급마다 (말, 상태) — 상태는 'past'(마지막으로 공시된 기간을 앞으로의 일처럼) · 'future' · 'ref'(시점 참고).
+    마지막으로 공시된 기간과 같은 기간만 past 다 — 더 앞의 기간('2025년 3분기 잠정실적은 11월 19일 공시' · '1분기 보고서에서')은
+    앞으로의 일정일 수 없어 시점 참고로 본다. events_only 면 보고서 · 실적 발표 · 공시만 본다('2분기 실적 개선의 일부는 …'처럼 실적
+    자체를 말한 문장은 일정이 아니다)."""
+    out = []
+    pats = ((_CP_Q, "q"), (_CP_H, "h"), (_CP_A, "a")) + (() if events_only else ((_CP_QL, "q"),))
+    for pat, kind in pats:
+        for m in pat.finditer(text):
+            word = m.group(0)
+            if events_only and not re.search(r"보고서|발표|공시", word):
+                continue
+            pre = text[max(0, m.start() - 12):m.start()]
+            if _CP_NEXT_YEAR.search(pre):
+                out.append((word, "future"))
+                continue
+            if _CP_GENERIC.search(pre) or _CP_EVERY.match(text, m.end()):
+                continue
+            numlist = bool(_CP_NUMLIST.search(pre))
+            if kind == "a":
+                if not latest_y:
+                    continue
+                y = int(m.group(1))
+                rel = (y > latest_y) - (y < latest_y)
+            else:
+                if not latest_q:
+                    out.append((word, "future"))
+                    continue
+                key = (int(m.group(1) or year), int(m.group(2)) if kind == "q" else 2)
+                rel = (key > latest_q) - (key < latest_q)
+            if rel > 0:
+                out.append((word, "future"))
+            elif rel < 0 or numlist or _CP_DONE.match(text, m.end()):
+                out.append((word, "ref"))
+            else:
+                out.append((word, "past"))
+    return out
 
 
 def process_rules_apply(rep):
@@ -773,46 +830,21 @@ def process_rules_apply(rep):
 
 
 def _stale_report(text, latest_q, latest_y, year):
-    """text 가 가리키는 정기보고서 · 실적이 모두 이미 공시된 기간이면 그 첫 말, 아니면 None.
+    """text(체크포인트의 시점과 내용 첫머리)가 가리키는 정기보고서 · 실적이 마지막으로 공시된 기간뿐이면 그 첫 말, 아니면 None.
     앞으로 나올 보고서를 함께 말하면('2026년 3분기 보고서가 나온다. 2025년 3분기 보고서는 …에 나왔다') 지난 보고서는
     시점 참고라 걸지 않는다(시험 글 60편의 판정 5건이 모두 이 꼴이었다)."""
-    past, future = [], False
-    for m in _CP_Q.finditer(text):
-        key = (int(m.group(1) or year), int(m.group(2)))
-        if latest_q and key <= latest_q:
-            if not _CP_DONE.match(text, m.end()):          # '2025년 3분기 실적은 11월 13일에 발표됐다' — 시점 참고
-                past.append(m.group(0))
-        else:
-            future = True
-    for m in _CP_H.finditer(text):
-        key = (int(m.group(1) or year), 2)
-        if latest_q and key <= latest_q:
-            if not _CP_DONE.match(text, m.end()):
-                past.append(m.group(0))
-        else:
-            future = True
-    for m in _CP_A.finditer(text):
-        if latest_y and int(m.group(1)) <= latest_y:
-            if not _CP_DONE.match(text, m.end()):
-                past.append(m.group(0))
-        else:
-            future = True
-    return past[0] if past and not future else None
+    ms = _cp_mentions(text, latest_q, latest_y, year)
+    past = [w for w, st in ms if st == "past"]
+    return past[0] if past and not any(st == "future" for _, st in ms) else None
 
 
 def _stale_in_sentence(s, latest_q, latest_y, year):
-    """확인 지점을 말하는 문장에서 이미 공시된 기간의 보고서 · 실적을 가리킨 첫 말 — 앞으로 나올 보고서와 함께 나열해도 건다
-    ('다음 확인 지점은 3분기 분기보고서의 현금흐름, …, 2026년 사업보고서의 …'). '2026년 반기보고서는 8월 14일에 제출됐다'처럼
-    지난 일로 서술한 말은 시점 참고라 뺀다."""
-    for pat, kind in ((_CP_Q, "q"), (_CP_H, "h"), (_CP_A, "a")):
-        for m in pat.finditer(s):
-            if kind == "a":
-                past = bool(latest_y) and int(m.group(1)) <= latest_y
-            else:
-                key = (int(m.group(1) or year), int(m.group(2)) if kind == "q" else 2)
-                past = bool(latest_q) and key <= latest_q
-            if past and not _CP_DONE.match(s, m.end()):
-                return m.group(0)
+    """확인 지점을 말하는 문장에서 마지막으로 공시된 기간의 보고서 · 실적 발표를 가리킨 첫 말 — 앞으로 나올 보고서와 함께
+    나열해도 건다('다음 확인 지점은 3분기 분기보고서의 현금흐름, …, 2026년 사업보고서의 …'). 지난 일로 서술한 말 · 실적 자체를
+    말한 것('2분기 실적 개선의 일부는 …')은 뺀다."""
+    for w, st in _cp_mentions(s, latest_q, latest_y, year, events_only=True):
+        if st == "past":
+            return w
     return None
 
 

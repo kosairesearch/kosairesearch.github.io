@@ -380,7 +380,16 @@ for en, want in [("Whether the company issued guidance was not confirmed in this
                  ("Because profit swings widely, this report treats annual and quarterly trends separately.", ["process"]),
                  ("This report is for information only and does not contain a buy or sell opinion.", []),
                  ("This report does not include an investment opinion or target price.", []),
-                 ("Naver's search advertising revenue rose 9%.", [])]:
+                 ("Naver's search advertising revenue rose 9%.", []),
+                 # 2026-11-10 사이트 전수의 오탐 — 뒤에 이름씨가 오는 'the research …' · 방향 판단 면책
+                 ("The segment stands to benefit from growth in the research equipment market.", []),
+                 ("While Seonam is not the direct contracting party in this research agreement, it is linked to the program.", []),
+                 ("Export volumes during the review period were small.", []),
+                 ("Views on valuation may differ across investors, and this report does not offer a directional judgment.", []),
+                 ("Quarterly results for 2026 were not found in our research, so future filings will be needed.", ["process"]),
+                 ("No company guidance was identified in this research and should be checked in filings.", ["process"]),
+                 ("No reliable source was found in this research to quantify the cycle.", ["process"]),
+                 ("Segment revenue splits were not confirmed in the research scope.", ["process"])]:
     eq(f"영어 — {en[:34]}", _pr("정상 문장이다.", en), want)
 _q3 = {"quant": {"quarterly": [{"q": "2026Q2"}, {"q": "2026Q3"}], "annual": [{"year": 2025}]}}
 
@@ -404,6 +413,25 @@ eq("지난 보고서를 지난 일로 서술하면 그대로",
    _pr("가장 가까운 확인 지점은 2026년 사업보고서이며, 2026년 반기보고서는 2026년 8월 14일에 제출됐다.", extra=_q3), [])
 eq("재료가 2분기까지면 3분기 분기보고서는 다음 일정이다", _cp("2026년 11월 중순", "3분기 분기보고서 제출 시점이다.",
    {"quant": {"quarterly": [{"q": "2026Q2"}], "annual": [{"year": 2025}]}}), [])
+# 2026-11-10 사이트 전수(소넷 5 · 오퍼스 5 · 9월 작성)의 오탐 — 마지막으로 공시된 기간과 같은 기간만, 일정(보고서 · 발표 · 공시)만 본다
+_q2 = {"quant": {"quarterly": [{"q": "2026Q1"}, {"q": "2026Q2"}], "annual": [{"year": 2025}]}, "reportDate": "2026-09-05"}
+for when, what, want in [("2026년 11월 중순", "1·2분기 잠정실적이 각각 5월·8월 중하순에 공시된 패턴을 감안하면 3분기도 비슷하다.", []),
+                         ("2026년 12월~2027년 2월", "동절기 판매량 및 4분기~익년 1분기 실적 회복 정도를 점검", []),
+                         ("", "2026년 3분기·반기 보고서 시점 특수관계기업 관련 대손충당금 추가 상각 여부", []),
+                         ("", "반기보고서·3분기보고서 공시 시점 수주잔고와 가동률 변화를 확인", []),
+                         ("", "사업보고서·반기보고서 공시 시점마다 내수 · 수출 비중 변화를 본다", []),
+                         ("2026년 11월 중순경", "과거 공시 패턴(2025년 3분기 잠정실적은 11월 19일 공시)을 고려해 3분기 실적을 본다", []),
+                         ("2026년 10월 중순", "3분기 연결 잠정 영업실적 공시. 회사는 2026년 2분기 잠정 실적을 8월에 냈다", []),
+                         ("2026년 하반기~2027년", "회사는 1분기 보고서에서 베트남 법인 설립 계획을 밝혔다", []),
+                         ("2026년 8월 중순", "2026년 2분기 실적 발표 — 매출 회복 여부", ["stale_cp"])]:
+    eq(f"체크포인트 — {what[:26]}", _cp(when, what, _q2), want)
+for ko, want in [("다만 콘솔 가격 인상을 앞둔 선수요가 2분기 실적을 끌어올린 측면이 있어 이후 흐름을 지켜볼 필요가 있다.", []),
+                 ("2025년 반기보고서 감사의견 거절로 관리종목에 지정된 바 있어 후속 공시를 확인할 필요가 있다.", []),
+                 ("세무 영향은 반기보고서를 통해 확인할 수 있다고 말한 바 있어 괴리가 생길 수 있다.", []),
+                 ("이 시차가 언제 좁혀지는지는 분기·반기 보고서로만 확인할 수 있다.", []),
+                 ("향후 분기·반기보고서를 통해 확정치를 재확인할 필요가 있다.", []),
+                 ("세부 구성은 반기보고서에서 확인할 필요가 있다.", ["stale_cp"])]:
+    eq(f"문장 — {ko[:26]}", _pr(ko, extra=_q2), want)
 eq("결산월이 12월이 아닌 회사는 지난 분기 일정을 보지 않는다(분기 이름이 달력 분기 · 2026-11-10) — 과정 문장은 그대로 본다",
    (_cp("2026년 11월 14일 전후", "3분기 분기보고서 제출 시점으로, 고객별 매출 비중을 확인한다.", {"quant": dict(_q3["quant"], fy_end_month=3)}),
     _pr("이번 조사에서 확인하지 못했다.", extra={"quant": dict(_q3["quant"], fy_end_month=3)})), ([], ["process"]))
