@@ -44,3 +44,22 @@
 
 ✅ 회수 완료 · 성공 86/실패 0 · 총 보유 2692개 → data/reports/ + reports-index.js
 💵 claude-haiku-5-5 86회(배치) · 입력 443,626(캐시쓰기 2,583,110·읽기 490,941) · 출력 2,127,802 · 검색 172 → 약 $2.44
+## 🤖 Batch 제출 — 대상 1개 / 상위 100개 (최근 88개 건너뜀) · 모델 claude-haiku-5-5
+  · 준비 0162D0 동원파츠 (DART X)
+- ✅ 배치 제출 완료: msgbatch_01Wm3svopKhD3BSQNCzTDs2u (1건) → data/batch_state.json
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 1/오류 0
+- 🔎 교정 배치 제출: msgbatch_01ArYM5nhYjcrxjavBVE6E3d (1건)
+  · ✏️ 0162D0 표현 교정 1건 → 남은 0건
+💵 claude-sonnet-5-5 1회(교정 배치) · 입력 4,073(캐시쓰기 0·읽기 0) · 출력 1,582 · 검색 0 → 약 $0.01
+
+✅ 회수 완료 · 성공 1/실패 0 · 총 보유 2693개 → data/reports/ + reports-index.js
+💵 claude-haiku-5-5 1회(배치) · 입력 5,216(캐시쓰기 38,905·읽기 2,871) · 출력 26,468 · 검색 2 → 약 $0.03
