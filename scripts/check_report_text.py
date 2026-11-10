@@ -278,7 +278,7 @@ def clean_markup(s):
 
 
 _NOT_TEXT = {"sources", "quant", "ticker", "name", "name_en", "market", "sector", "categories",
-             "reportDate", "reportTs", "dataDate", "v", "hasPaid", "model", "usage", "meta", "asOf"}
+             "reportDate", "reportTs", "dataDate", "v", "hasPaid", "model", "usage", "meta", "asOf", "textRules"}
 _KS_OK = set("웻몐퀜")          # 2,350자 밖이지만 맞는 말 — 웻 스테이션 · 쓰촨성 몐양 · 초전도 코일 퀜치
 _TAG = re.compile(r"<\s*/?\s*(?:sup|sub|citation|cite|br|span|div|p|b|i|em|strong|u|small|mark|ref|source|li|ul|ol|table|tr|td|h[1-6])"
                   r"\b[^<>]{0,160}>|<a\s[^<>]*href|\b(?:index|href|src|class)\s*=\s*\"|\*\*|&(?:amp|lt|gt|quot|nbsp|#\d+);"
@@ -725,6 +725,196 @@ def new_rule_hits(rep):
     return hits
 
 
+# ── 글을 쓴 과정을 말하는 문장 · 이미 공시된 분기를 다음 일정으로 쓴 것(2026-11-09) ─────────────────────────
+# 사장 "최근 하이쿠로 작성된 리포트를 분석해서 문제는 없는지 검사해봐". 5.5 세대(소넷 · 오퍼스 · 하이쿠)는 '이번 조사에서 확인하지
+# 못했다' · '검색으로 확인되지 않았다' · '정성적으로만 서술한다' · '이 리포트에서는 …을 나눠 다룬다' · '화면의 카드로 확인하는 것이
+# 정확하다' · '목표주가는 확인되지 않아 인용하지 않는다' · '이는 대한전선의 수치로 대원전선 실적과 섞지 않는다' 처럼 글을 쓴 과정과
+# 지시문을 본문에 옮긴다. 사이트의 소넷 5 리포트는 2,251편 중 3% 였는데, 소넷 5.5 는 22편 전부, 하이쿠 시험은 85~100%(편당 3~5문장)였다.
+# 또 3분기 보고서를 낸 뒤 다시 쓴 리포트(PS일렉트로닉스)가 그 3분기 보고서를 '다음 확인 일정'으로 썼다(재료에 3분기가 들어 있었다).
+# 둘 다 품질 등급이라 교정이 그 문장만 고친다. 이 규칙을 적은 지시문으로 쓴 리포트에만 건다 — 생성기(리포트 v2 · 옛 형식 배치)가
+# 저장하는 글에 'textRules': TEXT_RULES 를 단다(작성 시각으로 가르면 병합 시각에 따라 옛 지시문의 글이 걸린다). 그 전 글은 공시로
+# 다시 쓸 때 바뀐다. 면책 문장('이 리포트는 정보 제공 목적이며 …')은 걸지 않는다.
+TEXT_RULES = 2
+_PROCESS_KO = re.compile(
+    r"이번\s*(?:검색|조사|확인|리포트)"
+    r"|검색(?:으로|에서)(?:는|도)?\s*(?:확인|찾지|파악)"
+    r"|(?:확인|조사)\s*범위(?:에서|에|안에서|로는|에서는)"
+    r"|정성적으로만\s*(?:서술|다루|다룬|적|기술|파악)"
+    r"|(?:이 리포트|본문)에서(?:는)?\s.{0,60}?(?:다룬다|다루지\s*않|쓰지\s*않|적었|인용하지|확인하지\s*않|확인된 자료가 없)"
+    r"|인용하지\s*않(?:는다|았다)"
+    r"|(?:수치|숫자)로\s*(?:쓰지|다루지|적지)\s*않"
+    r"|화면(?:의)?\s*카드|서비스\s*화면|화면에서\s*(?:실시간|확인|사실상)|화면에\s*표시되는\s*(?:주가|배수|값|수치|업종|현재)"
+    r"|섞지\s*않(?:는다|아야)|다른\s*회사의\s*수치(?:다|이다)|분석\s*대상이\s*아니다|이 리포트의\s*(?:수치|분석)")
+_PROCESS_EN = re.compile(
+    # 'in this research.' · 'in our research, so' · 'in this research to quantify' — 뒤에 이름씨가 오면('in the research equipment market' ·
+    # 'in this research agreement' · 'during the review period') 과정 이야기가 아니다(2026-11-10 사이트 전수에서 오탐 8곳).
+    r"\b(?:in|from|by|with|during)\s+(?:this|our)\s+(?:search|review|research)(?:\s+(?:results|scope))?(?=\s*[,.;:!?)]|\s*$|\s+(?:and|but|so|to)\b)"
+    r"|\b(?:in|from|by|with|during)\s+the\s+(?:search|review|research)(?:\s+(?:results|scope))?(?=\s*[,.;:!?)]|\s*$)"
+    r"|\b(?:this|our|the)\s+(?:search|review|research)\s+(?:did not|could not|does not|found|confirmed|turned up|yielded)\b"
+    r"|\b(?:sources|materials)\s+reviewed\b|\bon[- ]screen\b|\bscreen\s+cards?\b|\bon\s+the\s+screen\b"
+    r"|\bdescribed\s+(?:only\s+)?qualitatively\b|\bqualitatively\s+only\b"
+    r"|\bthis\s+(?:report|section)\s+(?:treats|covers|does not|did not|uses|describes|discusses|focuses)\b"
+    r"|\bnot\s+(?:cited|quoted|attributed)\s+here\b|\bnot\s+(?:to\s+be\s+)?mixed\s+with\b|\bnot\s+the\s+subject\s+of\s+this\s+report\b", re.I)
+_EN_DISCLAIMER = re.compile(r"information(?:al)?\s+(?:purposes\s+)?only|investment\s+(?:advice|recommendation|decision|opinion)"
+                            r"|buy\s+or\s+sell|not\s+an\s+offer|target\s+price"
+                            # 방향 판단을 내리지 않는다는 면책('this report does not offer a directional conclusion') — 한국어의
+                            # '본 리포트는 방향성 판단을 내리지 않는다'도 걸지 않는다(2026-11-10 사이트 전수)
+                            r"|\bdirection(?:al)?\b|\bconclusions?\b|\bstance\b|take\s+a\s+side|\bjudge?ments?\b", re.I)
+# 이미 공시된 분기를 '다음 확인 일정'으로 쓴 것 — 체크포인트(시점과 내용 첫머리)와, 확인 지점을 말하는 문장만 본다
+# (실적 분석이 '3분기 분기보고서 기준 …'처럼 낸 보고서를 근거로 드는 것은 맞다).
+_CP_Q = re.compile(r"(?:(\d{4})\s*년\s*)?([1-4])\s*분기\s*(?:(?:분기|연결|별도|잠정|영업)\s*){0,3}(?:보고서|실적\s*(?:발표|공시)?)")
+# '3분기 · 반기 보고서'의 앞 항목 — 뒤 보고서 이름을 함께 받는다(체크포인트에서 앞으로의 일인지 가릴 때만 쓴다)
+_CP_QL = re.compile(r"(?:(\d{4})\s*년\s*)?([1-4])\s*분기(?=\s*[·,]\s*(?:반기|[1-4]\s*분기))")
+_CP_H = re.compile(r"(?:(\d{4})\s*년\s*)?반기\s*보고서")
+_CP_A = re.compile(r"(\d{4})\s*년\s*(?:연간\s*)?사업\s*보고서")
+# 언급 바로 뒤가 지난 일 · 근거 표시면 시점 참고다 — '2026년 반기보고서는 8월 14일에 제출됐다' · '반기보고서에서 … 해소됐다고 공시됐으나' ·
+# '반기보고서를 통해 확인할 수 있다고 말한 바 있어' · '3분기 분기보고서 기준 …' · '사업보고서에 따르면'. 문장을 넘지 않는다.
+_CP_DONE = re.compile(r"(?:\s*(?:기준|에\s*따르면|에\s*따른|에서\s*밝힌|에\s*실린))"
+                      r"|(?:은|는|이|가|에서|에|을|를|의|으로|로|도)?\s?[^.!?]{0,30}?"
+                      r"(?:제출됐|제출되었|제출했|나왔|공시됐|공시되었|공시했|발표됐|발표되었|발표했|바 있)")
+_CP_CUE = re.compile(r"확인\s*지점|다음\s*확인|확인할|보는\s*것|볼\s*것|점검할|지켜볼")
+# 언급 바로 앞 — 다음 해('익년 1분기')는 앞으로의 일, 일반 · 나열('향후 분기 · 반기보고서' · '1 · 2분기 잠정실적' · '사업보고서 · 반기보고서
+# 공시 시점마다')은 특정 기간을 가리키지 않으므로 보지 않는다(2026-11-10 사이트 전수의 오탐).
+_CP_NEXT_YEAR = re.compile(r"(?:익년|내년|이듬해|다음\s*해|차년도)\s*$")
+_CP_GENERIC = re.compile(r"(?:(?:향후|앞으로|이후|차기|매|각|매년)\s*|(?<!\d)분기\s*[·,]\s*)$")     # '향후 …' · '분기 · 반기 보고서'
+_CP_NUMLIST = re.compile(r"\d\s*[·,~∼]\s*$")                                                  # '1 · 2분기 잠정실적이 각각 …'
+_CP_EVERY = re.compile(r"[^.]{0,14}?마다")                                                     # '… 공시 시점마다'
+
+
+def _cp_mentions(text, latest_q, latest_y, year, events_only=False):
+    """text 안의 정기보고서 · 실적 언급마다 (말, 상태) — 상태는 'past'(마지막으로 공시된 기간을 앞으로의 일처럼) · 'future' · 'ref'(시점 참고).
+    마지막으로 공시된 기간과 같은 기간만 past 다 — 더 앞의 기간('2025년 3분기 잠정실적은 11월 19일 공시' · '1분기 보고서에서')은
+    앞으로의 일정일 수 없어 시점 참고로 본다. events_only 면 보고서 · 실적 발표 · 공시만 본다('2분기 실적 개선의 일부는 …'처럼 실적
+    자체를 말한 문장은 일정이 아니다)."""
+    out = []
+    pats = ((_CP_Q, "q"), (_CP_H, "h"), (_CP_A, "a")) + (() if events_only else ((_CP_QL, "q"),))
+    for pat, kind in pats:
+        for m in pat.finditer(text):
+            word = m.group(0)
+            if events_only and not re.search(r"보고서|발표|공시", word):
+                continue
+            pre = text[max(0, m.start() - 12):m.start()]
+            if _CP_NEXT_YEAR.search(pre):
+                out.append((word, "future"))
+                continue
+            if _CP_GENERIC.search(pre) or _CP_EVERY.match(text, m.end()):
+                continue
+            numlist = bool(_CP_NUMLIST.search(pre))
+            if kind == "a":
+                if not latest_y:
+                    continue
+                y = int(m.group(1))
+                rel = (y > latest_y) - (y < latest_y)
+            else:
+                if not latest_q:
+                    out.append((word, "future"))
+                    continue
+                key = (int(m.group(1) or year), int(m.group(2)) if kind == "q" else 2)
+                rel = (key > latest_q) - (key < latest_q)
+            if rel > 0:
+                out.append((word, "future"))
+            elif rel < 0 or numlist or _CP_DONE.match(text, m.end()):
+                out.append((word, "ref"))
+            else:
+                out.append((word, "past"))
+    return out
+
+
+def process_rules_apply(rep):
+    """글을 쓴 과정 · 지난 분기 일정 규칙을 거는가 — 종목 리포트이고, 이 규칙을 적은 지시문으로 썼으면(textRules)."""
+    if not isinstance(rep, dict) or not rep.get("ticker"):
+        return False
+    if (rep.get("textRules") or 0) >= TEXT_RULES:
+        return True
+    return not (rep.get("reportTs") or rep.get("reportDate"))   # 작성 시각이 없으면(비용 시험의 글) 건다
+
+
+def _stale_report(text, latest_q, latest_y, year):
+    """text(체크포인트의 시점과 내용 첫머리)가 가리키는 정기보고서 · 실적이 마지막으로 공시된 기간뿐이면 그 첫 말, 아니면 None.
+    앞으로 나올 보고서를 함께 말하면('2026년 3분기 보고서가 나온다. 2025년 3분기 보고서는 …에 나왔다') 지난 보고서는
+    시점 참고라 걸지 않는다(시험 글 60편의 판정 5건이 모두 이 꼴이었다)."""
+    ms = _cp_mentions(text, latest_q, latest_y, year)
+    past = [w for w, st in ms if st == "past"]
+    return past[0] if past and not any(st == "future" for _, st in ms) else None
+
+
+def _stale_in_sentence(s, latest_q, latest_y, year):
+    """확인 지점을 말하는 문장에서 마지막으로 공시된 기간의 보고서 · 실적 발표를 가리킨 첫 말 — 앞으로 나올 보고서와 함께
+    나열해도 건다('다음 확인 지점은 3분기 분기보고서의 현금흐름, …, 2026년 사업보고서의 …'). 지난 일로 서술한 말 · 실적 자체를
+    말한 것('2분기 실적 개선의 일부는 …')은 뺀다."""
+    for w, st in _cp_mentions(s, latest_q, latest_y, year, events_only=True):
+        if st == "past":
+            return w
+    return None
+
+
+def process_hits(rep):
+    """process(글을 쓴 과정 · 지시문 · 다른 회사 해명) · stale_cp(이미 공시된 분기를 다음 일정으로) — 품질 등급."""
+    if not process_rules_apply(rep):
+        return []
+    hits = []
+    for sec, s in sentences(rep):
+        if DISCLAIMER.search(s):
+            continue
+        m = _PROCESS_KO.search(s)
+        if m:
+            hits.append({"rule": "process", "level": "품질", "section": sec, "match": m.group(0),
+                         "why": "글을 쓴 과정이나 지시문을 옮긴 말 — 독자에게 소용이 없다. 그 말을 빼고 사실만 남기거나 문장을 지울 것",
+                         "sentence": s[:160]})
+    for sec, t in en_texts(rep):
+        for sent in re.split(r"(?<=[.!?])\s+", t):
+            if _EN_DISCLAIMER.search(sent):
+                continue
+            m = _PROCESS_EN.search(sent)
+            if m:
+                hits.append({"rule": "process", "level": "품질", "section": sec, "match": m.group(0),
+                             "why": "영어에서 글을 쓴 과정이나 지시문을 옮긴 말 — 빼고 사실만 남기거나 문장을 지울 것",
+                             "sentence": sent[:160]})
+    q = (rep.get("quant") or {}) if isinstance(rep.get("quant"), dict) else {}
+    labels = [re.fullmatch(r"(\d{4})Q([1-4])", str(r.get("q") or "")) for r in (q.get("quarterly") or []) if isinstance(r, dict)]
+    latest_q = max(((int(x.group(1)), int(x.group(2))) for x in labels if x), default=None)
+    latest_y = max((int(a.get("year")) for a in (q.get("annual") or []) if isinstance(a, dict) and str(a.get("year") or "").isdigit()),
+                   default=None)
+    rd = str(rep.get("reportDate") or "")[:4]
+    import datetime as _dt                                    # noqa: E402
+    year = int(rd) if rd.isdigit() else _dt.datetime.now(_dt.timezone(_dt.timedelta(hours=9))).year   # 연도 없는 '3분기'는 작성한 해
+    # 결산월이 12월이 아닌 회사는 보지 않는다 — 분기 이름이 달력 분기라(2026-11-10) '3분기 보고서'와 짝이 맞지 않는다.
+    if q.get("fy_end_month") in range(1, 12):
+        return hits
+    if latest_q or latest_y:
+        nxt = F_next_report(latest_q)
+        for x in rep.get("checkpoints") or []:
+            if not isinstance(x, dict):
+                continue
+            when = _ko(x.get("when")) or ""
+            wy = re.search(r"(20\d{2})\s*년", when)
+            if wy and latest_q and int(wy.group(1)) > latest_q[0]:
+                continue                  # 시점이 마지막 공시 연도 뒤 — 앞으로의 일(지난해 보고서는 시점 참고로 든 것)
+            head = when + " " + (_ko(x.get("what")) or "")[:40]
+            m = _stale_report(head, latest_q, latest_y, int(wy.group(1)) if wy else year)
+            if m:
+                hits.append({"rule": "stale_cp", "level": "품질", "section": "checkpoints", "match": m,
+                             "why": f"이미 공시된 기간의 보고서 · 실적('{m}')을 다음 일정으로 썼다 — 다음 정기보고서({nxt or '그다음 기간'})의"
+                                    f" 일정과 확인할 내용으로 바꿀 것(시점 · 영어도 같이)", "sentence": head[:160]})
+        for sec, s in sentences(rep):
+            if sec == "checkpoints" or not _CP_CUE.search(s):
+                continue
+            m = _stale_in_sentence(s, latest_q, latest_y, year)
+            if m:
+                hits.append({"rule": "stale_cp", "level": "품질", "section": sec, "match": m,
+                             "why": f"이미 공시된 기간의 보고서 · 실적('{m}')을 다음 확인 지점으로 썼다 — 다음 정기보고서({nxt or '그다음 기간'})로"
+                                    f" 바꾸거나 그 대목을 뺄 것", "sentence": s[:160]})
+    return hits
+
+
+def F_next_report(latest_q):
+    """(2026, 3) → '2026년 사업보고서' — fin_material.next_report 와 같은 이름."""
+    if not latest_q:
+        return ""
+    import fin_material as F                                  # noqa: E402 — 표준 라이브러리만 쓴다(돌림 의존 없음)
+    return F.next_report(f"{latest_q[0]}Q{latest_q[1]}")
+
+
 def check(rep):
     """위반 목록을 돌려준다. [] 면 통과."""
     hits = []
@@ -763,7 +953,7 @@ def check(rep):
             hits.append({"rule": "hangul_en", "level": "품질", "section": sec,
                          "match": t[i:i + 12], "why": "영문에 한글이 남았다 — 로마자/영문 명칭으로",
                          "sentence": t[max(0, i - 60):i + 60]})
-    return hits + streak_hits(rep) + amount_hits(rep) + defects(rep) + new_rule_hits(rep)
+    return hits + streak_hits(rep) + amount_hits(rep) + defects(rep) + new_rule_hits(rep) + process_hits(rep)
 
 
 # ── 교정: 걸린 문장만 다시 쓴다 ──────────────────────────────────────────
@@ -795,6 +985,13 @@ _RULE_TEXT = "\n".join(f"  · {key}: {why}" for key, _lv, _pat, why in RULES) + 
     " 지점이다'). 판단을 누구에게 맡긴다는 문장은 통째로 지운다. 같은 칸의 짝 언어도 같은 뜻으로 고친다."
     "\n  · dup: 다른 칸에 있는 문장을 글자 그대로 되풀이했다 — 이 칸에서는 그 문장을 지우거나, 같은 사실의 원인 · 영향 · 다음에"
     " 확인할 점으로 바꿔 쓴다. 새 수치를 만들지 않는다. 같은 칸의 짝 언어도 같이."
+    "\n  · process: 글을 쓴 과정이나 지시문을 옮긴 문장이다('이번 조사(검색)에서 확인되지 않았다' · '확인 범위에서 찾지 못했다' ·"
+    " '정성적으로만 서술한다' · '이 리포트에서는 …을 다룬다' · '인용하지 않는다' · '화면 카드에서 확인' · '섞지 않는다' ·"
+    " '다른 회사의 수치다' · 영어 'in this review' · 'on the screen card'). 그 말을 빼고 남는 사실이 있으면 사실만 남기고, 없으면"
+    " 문장을 통째로 지운다. 새 사실 · 수치를 만들지 않는다. 같은 칸의 짝 언어도 같이."
+    "\n  · stale_cp: 이미 공시된 기간의 보고서 · 실적 발표를 다음 일정 · 확인 지점으로 썼다 — 위반 설명에 적힌 다음 정기보고서로"
+    " 바꾸고(시점은 그 보고서가 나오는 때로), 그 보고서에서 확인할 내용도 맞춘다. 체크포인트 항목은 지우지 말고 바꾼다. 같은 칸의"
+    " 짝 언어도 같이."
     "\n  · no_use: 협의 없이 쓰지 않는 사이트(치킨스탁 · chickstockfi.com)의 이름이 있다 — 그 이름과, 그 사이트를 근거로 든 내용을"
     " 문장에서 뺀다. 다른 근거가 없는 수치나 주장이면 그 문장을 통째로 지운다. 같은 칸의 영어도 같이.")
 
@@ -1059,6 +1256,8 @@ _WHY_EXTRA = {
     "no_use": "협의 없이 쓰지 않는 사이트(치킨스탁)의 이름",
     "reader": "독자 · 투자자를 부르거나 권하는 문장(2026-11-08 뒤 작성분)",
     "dup": "다른 칸의 문장을 글자 그대로 되풀이(2026-11-08 뒤 작성분)",
+    "process": "글을 쓴 과정 · 지시문 · 다른 회사 해명(2026-11-09 지시문으로 쓴 글)",
+    "stale_cp": "이미 공시된 분기를 다음 일정으로 씀(2026-11-09 지시문으로 쓴 글)",
 }
 
 

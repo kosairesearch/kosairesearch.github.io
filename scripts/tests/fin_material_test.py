@@ -195,6 +195,9 @@ st = {"ticker": tk, "name": name, "name_en": "SAMSUNG ELECTRONICS CO,.LTD", "mar
 pr = G2.build_prompt_v2(st, q, "2026-10-10 01:00", stocks=STOCKS)
 eq("리포트 지시문 — 재료 · 영문명이 들어갔다", ("[공시 실적" in pr, "[회사 영문명" in pr, "333조 6,059억원" in pr), (True, True, True))
 eq("리포트 지시문 — 원자료(JSON)가 빠졌다", ("333605938000000" in pr, "np_owner" in pr, "ttm_window" in pr), (False, False, False))
+eq("리포트 지시문 — 다음 정기보고서 줄은 12월 결산만(결산월이 다르면 분기 이름이 달력 분기라 맞지 않는다 · 2026-11-10)",
+   ("- 다음 정기보고서는 " in pr, "- 다음 정기보고서는 " in G2.build_prompt_v2(st, dict(q, fy_end_month=3), "2026-10-10 01:00", stocks=STOCKS)),
+   (True, False))
 eq("리포트 지시문 — 본문으로 새던 말이 없다",
    [w for w in ("제공한 확정", "제공된 연간", "[확정 재무]", "분기 창 ", "JSON의 값", "기준 데이터") if w in pr], [])
 eq("리포트 지시문 — 새 규칙(이름 · 문장 끝 · 되풀이 · 영문명 · 연속은 재료대로)",
