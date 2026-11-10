@@ -201,6 +201,16 @@ def _peak(labels, vals, is_year):
     return f"{span} 중 가장 큰 {unit} {hi[1]} · 가장 작은 {unit} {lo[1]}('사상 최대'는 출처가 있을 때만)"
 
 
+def _q_months(label, fm):
+    """결산월이 3의 배수가 아닌 회사의 분기 이름 옆 실제 달 — '2026Q3'(11월 결산) → '6~8월'. 그 밖은 ''."""
+    m = re.fullmatch(r"(\d{4})Q([1-4])", str(label or ""))
+    if not m or not fm or fm % 3 == 0:
+        return ""
+    n = int(m.group(2))
+    end = next(e for e in (((fm - 3 * k - 1) % 12) + 1 for k in range(4)) if 3 * n - 2 <= e <= 3 * n)
+    return f"{(end - 3) % 12 + 1}~{end}월"
+
+
 def material(q, name=""):
     """[공시 실적] 블록 — 작성 지시문에 그대로 넣는다. 자료가 없으면 ''.
 
@@ -218,16 +228,30 @@ def material(q, name=""):
     rev_label = ((q.get("rev_label") or {}).get("ko") if isinstance(q.get("rev_label"), dict) else None) or "매출"
     v = q.get("valuation") or {}
     ccy = str(v.get("ccy") or "KRW").upper()
+    # 결산월이 12월이 아닌 회사(2026-11-10) — 연간의 연도는 회계연도가 끝나는 해다(3월 결산의 2026 = 2025년 4월~2026년 3월).
+    # 'N년'으로만 주면 본문이 달력 연도처럼 옮긴다. 이름에 결산월을 붙여 준다. 분기는 생성기가 달력 분기로 이름을 붙였다.
+    fm = q.get("fy_end_month") if q.get("fy_end_month") in range(1, 12) else None
+
+    def ylab(y):
+        return f"{y}년 {fm}월 결산" if fm else f"{y}년"
+
+    def qlab(label):
+        mm = _q_months(label, fm)
+        return qtext(label) + (f"({mm})" if mm else "")
     lines = []
     head = "[공시 실적 — DART 정기보고서 · 금액은 이 표기 그대로 본문에 옮긴다 · [ ] 안은 영어(en) 본문에만 대괄호 없이 쓰는 표기]"
     if ccy != "KRW":
         head += f"\n(이 회사는 {ccy}로 공시한다 — 아래 금액은 원화로 환산한 값이다. 본문에 원화 금액을 쓸 때는 '원화 환산'이라고 밝힌다)"
+    if fm and annual:
+        y = annual[-1]["year"]
+        head += (f"\n(결산월이 {fm}월인 회사다 — 연간은 결산월에 끝나는 회계연도이고 '{ylab(y)}'은 {y - 1}년 {fm + 1}월~{y}년 {fm}월이다. "
+                 f"본문에 연간 실적을 쓸 때도 이 이름 그대로 쓴다. 분기 이름은 그 3개월이 끝나는 달력 분기다)")
     lines.append(head)
 
     if q.get("rev_label"):
         lines.append(f"('{rev_label}' 칸은 이 이름의 계정만 담는다 — 회사 전체의 매출이나 영업수익으로 쓰지 말 것)")
     if annual:
-        years = [f"{a['year']}년" for a in annual]
+        years = [ylab(a["year"]) for a in annual]
         lines.append(f"연간({years[0]}~{years[-1]})")
         for key, nm, loss_nm, profit in _METRICS:
             nm = rev_label if key == "rev" else nm
@@ -247,31 +271,32 @@ def material(q, name=""):
             if extra or pk:
                 lines.append("  · " + " · ".join(extra + ([pk] if pk else [])))
         # 순이익 두 가지 — 지배주주 몫과 비지배 포함 전체를 섞지 않게 둘 다 이름을 붙여 준다
-        nps = [(f"{a['year']}년", a.get("np")) for a in annual if a.get("np") is not None]
+        nps = [(ylab(a["year"]), a.get("np")) for a in annual if a.get("np") is not None]
         if nps:
             lines.append("- 당기순이익(비지배지분 포함 · '지배주주 순이익'과 다른 값): " + " → ".join(
                 f"{lb} {'당기순손실' if x < 0 else '당기순이익'} {won(x)}[{won_en(x)}]" for lb, x in nps))
-        opm = [(f"{a['year']}년", a.get("opm")) for a in annual if a.get("opm") is not None]
+        opm = [(ylab(a["year"]), a.get("opm")) for a in annual if a.get("opm") is not None]
         if opm:
             lines.append("- 영업이익률: " + " → ".join(f"{lb} {_pct(x)}" for lb, x in opm))
-        dr = [(f"{a['year']}년", a.get("debt_ratio")) for a in annual if a.get("debt_ratio") is not None]
+        dr = [(ylab(a["year"]), a.get("debt_ratio")) for a in annual if a.get("debt_ratio") is not None]
         if dr:
             lines.append("- 부채비율(부채총계 ÷ 자본총계): " + " → ".join(f"{lb} {_pct(x)}" for lb, x in dr))
         last = annual[-1]
         if last.get("equity") is not None:
-            eq = f"- {last['year']}년 말 자본총계 {won(last['equity'])}[{won_en(last['equity'])}]"
+            eq = (f"- {last['year']}년 {fm}월 말" if fm else f"- {last['year']}년 말") + \
+                f" 자본총계 {won(last['equity'])}[{won_en(last['equity'])}]"
             if last.get("equity_owner") is not None:
                 eq += f" · 그중 지배주주 지분 {won(last['equity_owner'])}[{won_en(last['equity_owner'])}]"
             if last.get("liab") is not None:
                 eq += f" · 부채총계 {won(last['liab'])}[{won_en(last['liab'])}]"
             lines.append(eq)
-        cfo = [(f"{a['year']}년", a.get("cfo")) for a in annual if a.get("cfo") is not None]
+        cfo = [(ylab(a["year"]), a.get("cfo")) for a in annual if a.get("cfo") is not None]
         if cfo:
             lines.append("- 영업활동 현금흐름: " + " → ".join(
                 f"{lb} {'-' if x < 0 else ''}{won(x)}[{'-' if x < 0 else ''}{won_en(x)}]" for lb, x in cfo))
 
     if quarterly:
-        qs = [qtext(r["q"]) for r in quarterly]
+        qs = [qlab(r["q"]) for r in quarterly]
         lines.append(f"분기(3개월 · {qs[0]}~{qs[-1]})")
         by_q = {r["q"]: r for r in quarterly}
         for key, nm, loss_nm, profit in _METRICS:
@@ -302,7 +327,7 @@ def material(q, name=""):
     win, ttm = v.get("ttm_window"), v.get("ttm_np_owner")
     if win and ttm is not None:
         a, _, b = str(win).partition("~")
-        lines.append(f"- 최근 4개 분기({qtext(a)}~{qtext(b)}) 지배주주 {'순손실' if ttm < 0 else '순이익'} 합계 "
+        lines.append(f"- 최근 4개 분기({qlab(a)}~{qlab(b)}) 지배주주 {'순손실' if ttm < 0 else '순이익'} 합계 "
                      f"{won(ttm)}[{won_en(ttm)}]")
     mult = []
     if v.get("per") is not None:
