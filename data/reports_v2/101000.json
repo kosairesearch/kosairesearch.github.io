@@ -328,9 +328,9 @@
    }
   ],
   "valuation": {
-   "price": 1078,
-   "mcap": 0.016,
-   "shares": 14796480,
+   "price": 846,
+   "mcap": 0.0152,
+   "shares": 17914172,
    "total_shares": 9910487,
    "wavg_shares": null,
    "per": null,
@@ -348,9 +348,9 @@
    "dps": 0.0,
    "div": 0.0,
    "shares_patched": {
-    "on": "2026-10-20",
-    "was": 9910487,
-    "now": 14796480,
+    "on": "2026-11-11",
+    "was": 14796480,
+    "now": 17914172,
     "factor": null,
     "why": "주식수가 배수로 안 떨어진다(증자 등) — 자본을 다시 받아야 해서 값을 숨긴다"
    }
