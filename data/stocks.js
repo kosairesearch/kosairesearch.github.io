@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-11-12 06:45",
+  "lastUpdated": "2026-11-12 07:01",
   "dataDate": "20261111",
   "stocks": [
     {
@@ -18719,7 +18719,7 @@ window.KOS_LIVE_DATA = {
       "name": "바로팜",
       "name_en": "BAROPHARM Co., Ltd.",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "바이오·제약",
       "price": 11780,
       "change": -28.17,
       "volume": 18507340,
@@ -18727,7 +18727,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.141,
       "shares": 11965617,
       "categories": [
-        "기타"
+        "바이오·제약"
       ],
       "rank": 1039
     },
