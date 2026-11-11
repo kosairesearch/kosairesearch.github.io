@@ -14,3 +14,17 @@
 
 ✅ 회수 완료 · 성공 1/실패 0 · 총 보유 2693개 → data/reports/ + reports-index.js
 💵 claude-haiku-5-5 1회(배치) · 입력 5,388(캐시쓰기 31,097·읽기 2,871) · 출력 20,898 · 검색 2 → 약 $0.03
+## 🤖 Batch 제출 — 대상 1개 / 상위 100개 (최근 89개 건너뜀) · 모델 claude-haiku-5-5
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 0153R0 바로팜 (DART O)
+- ✅ 배치 제출 완료: msgbatch_01C4djT9ktYpNbXRJcPou2BJ (1건) → data/batch_state.json
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 1/오류 0
+
+✅ 회수 완료 · 성공 1/실패 0 · 총 보유 2694개 → data/reports/ + reports-index.js
+💵 claude-haiku-5-5 1회(배치) · 입력 5,325(캐시쓰기 38,395·읽기 2,871) · 출력 24,285 · 검색 2 → 약 $0.03
