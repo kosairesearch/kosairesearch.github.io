@@ -1,3 +1,27 @@
-=== 공시 트리거 옛 형식 갱신 Thu Nov 12 03:11:22 UTC 2026 · 대상 0039P0 ===
-## 🤖 Batch 제출 — 대상 0개 / 상위 100개 (최근 89개 건너뜀) · 모델 claude-haiku-5-5
-- 갱신할 종목이 없습니다(모두 최근). 종료.
+=== 공시 트리거 옛 형식 갱신 Thu Nov 12 21:26:11 UTC 2026 · 대상 0220W0,0039P0,153890 ===
+## 🤖 Batch 제출 — 대상 2개 / 상위 100개 (최근 89개 건너뜀) · 모델 claude-haiku-5-5
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 0220W0 한화머시너리앤서비스홀딩스 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 153890 져스텍 (DART O)
+- ✅ 배치 제출 완료: msgbatch_01JJNCW58Pf2d3yc3BGP6aWi (2건) → data/batch_state.json
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 in_progress · 처리 2/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 2/오류 0
+- 🔎 교정 배치 제출: msgbatch_016tePJFgKHBqnFp3bDyzSEF (1건)
+  · ✏️ 153890 표현 교정 1건 → 남은 0건
+💵 claude-sonnet-5-5 1회(교정 배치) · 입력 3,591(캐시쓰기 0·읽기 0) · 출력 999 · 검색 0 → 약 $0.01
+
+✅ 회수 완료 · 성공 2/실패 0 · 총 보유 2694개 → data/reports/ + reports-index.js
+💵 claude-haiku-5-5 2회(배치) · 입력 10,749(캐시쓰기 71,374·읽기 8,613) · 출력 44,626 · 검색 4 → 약 $0.06

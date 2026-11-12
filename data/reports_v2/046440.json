@@ -1,220 +1,229 @@
 {
  "title": {
-  "ko": "PG에서 금융으로, 전환기의 KG파이낸셜",
-  "en": "KG Financial: A Business In Transition From Payments To Finance"
+  "ko": "결제에서 금융 플랫폼으로 전환 중인 KG파이낸셜",
+  "en": "KG Financial: Shifting From Payments Toward a Finance Platform"
  },
  "lead": {
-  "ko": "KG파이낸셜은 2026년 2월 사명 변경과 함께 선정산·디지털자산 신사업으로 무게중심을 옮기고 있으며, 2025년 실적은 2024년의 이익 급감에서 벗어나 회복세를 보였다.",
-  "en": "KG Financial has been shifting its business focus toward pre-settlement financing and digital-asset services since its February 2026 name change, and its 2025 results showed a recovery from the sharp profit decline seen in 2024."
+  "ko": "2026년 3분기 매출은 711억원으로 전년 동기 대비 17.0% 늘었고, 전자결제 거래 확대와 선정산·모빌카드가 성장 축으로 자리 잡는 중이다. 다만 이익 규모는 2024년 저점에서 회복하는 단계이며 분기별 등락 폭이 크다.",
+  "en": "Third-quarter 2026 revenue rose 17.0% year on year to KRW 71.1 billion, with electronic payment volume and the settlement-advance service as the main growth drivers, while profit is still recovering from the 2024 trough."
  },
  "keypoints": [
   {
-   "ko": "2026년 2월 KG모빌리언스에서 KG파이낸셜로 사명을 변경하고 결제 중심 사업구조에서 금융 인프라 기업으로의 전환을 공식화했다.",
-   "en": "In February 2026 the company changed its name from KG Mobilians to KG Financial, formally declaring a shift from a payments-centered structure to a financial infrastructure company."
+   "ko": "2025년 영업이익은 331억원으로 2024년 74.3억원에서 회복했지만, 2022년 403억원 수준에는 아직 미치지 못한다.",
+   "en": "Operating profit recovered to KRW 33.1 billion in 2025 from KRW 7.43 billion in 2024, but remains below the KRW 40.3 billion recorded in 2022."
   },
   {
-   "ko": "2025년 연결 영업이익은 331억원으로 2024년 74억원에서 크게 회복됐으나, 매출액은 2,337억원으로 전년 대비 줄었다.",
-   "en": "Consolidated operating profit recovered sharply to KRW 33.1 billion in 2025 from KRW 7.4 billion in 2024, even as revenue declined to KRW 233.8 billion from the prior year."
+   "ko": "2026년 3분기 영업이익은 104억원으로 2026년 2분기부터 3분기까지 2개 분기 연속 증가했고, 매출은 711억원으로 전년 동기 대비 17.0% 늘었다.",
+   "en": "Third-quarter 2026 operating profit of KRW 10.4 billion has risen for two consecutive quarters since the first quarter of 2026, while revenue of KRW 71.1 billion grew 17.0% year on year."
   },
   {
-   "ko": "B2B 선정산(팩토링) 서비스가 2026년 7월 정식 출시됐고, 중장기적으로 2027년 5,000억원, 2028년 1조원의 취급액 목표가 제시됐다.",
-   "en": "The B2B pre-settlement (factoring) service officially launched in July 2026, with medium-term handling volume targets of KRW 500 billion by 2027 and KRW 1 trillion by 2028."
+   "ko": "2026년 3분기 PG 거래금액은 2조 3,000억원, 누적 거래금액은 6조 1,000억원으로 2026년 11월 5일 잠정 발표에 담긴 수치다.",
+   "en": "Third-quarter PG transaction volume of KRW 2.3 trillion and cumulative volume above KRW 6.1 trillion come from the provisional release dated November 5, 2026."
   },
   {
-   "ko": "가상자산사업자(VASP) 인가를 자체 기술 기반으로 취득하는 로드맵을 추진 중이며, 솔라나 재단과 스테이블코인 기술실증(PoC)을 진행하고 있다.",
-   "en": "The company is pursuing a roadmap to obtain a virtual asset service provider (VASP) license through its own technology, and is conducting a stablecoin proof-of-concept with the Solana Foundation."
+   "ko": "선정산 서비스는 2026년 7월 말 출시 후 취급고 100억원을 넘었고, 회사는 2027년 5,000억원·2028년 1조원 취급액을 목표로 제시했다.",
+   "en": "The settlement-advance service, launched in late July 2026, has passed KRW 10 billion in cumulative volume, and the company has set targets of KRW 500 billion for 2027 and KRW 1 trillion for 2028."
   },
   {
-   "ko": "2026년 기업가치제고계획을 통해 자사주 176만 416주 소각과 5년간 조정순이익 50% 환원 정책을 공시했다.",
-   "en": "Through its 2026 value-up plan, the company disclosed the retirement of 1,760,416 treasury shares and a policy to return 50% of adjusted net income for five years."
+   "ko": "2025년 결산 배당성향은 39.8%로 기재됐고 고배당기업에 해당한다고 공시됐다. 최근 4개 분기 지배주주 순이익 합계는 235억원이다.",
+   "en": "The 2025 dividend payout ratio was reported at 39.8%, and the company is recorded as a high-dividend firm. Controlling-shareholder net income over the latest four quarters totals KRW 23.5 billion."
   }
  ],
  "business": {
-  "ko": "KG파이낸셜은 전자결제(PG), 교육, IT, 이러닝 네 개 사업부문을 영위하는 지주형 사업구조를 갖고 있다. 전자결제부문은 온라인 통합전자지불 시스템과 소프트웨어 개발을 담당하며, 휴대폰결제·신용카드·계좌이체·가상계좌 등 다양한 결제수단을 통합 제공한다. 교육부문은 교원임용시험 학원과 온라인강좌·교재 사업을 운영하고, 이러닝부문은 별도 자회사를 통해 온라인 교육 콘텐츠를 제공한다. 회사는 2026년 2월 25일 'CEO 인베스터데이'를 통해 사명을 KG모빌리언스에서 KG파이낸셜로 바꾸고, 단순 결제 처리자에서 직접 금융서비스를 제공하는 회사로의 전환을 선언했다. 2026년 8월 공시된 기업가치제고계획에 따르면 회사는 휴대폰결제 시장점유율을 37%에서 40%로, 모빌카드(선불카드) 사용자를 65만명에서 80만명으로, 거래금액을 6,800억원에서 8,000억원으로 확대하는 목표를 제시했다. 계열사 KG이니시스와 함께 전자결제업으로 분류되며, 두 회사 합산 22만개 가맹점과 70만명의 선불카드 회원을 기반으로 사업을 전개하고 있다. 국내 PG·휴대폰결제 시장은 소수 대형 사업자가 오랜 기간 점유율을 나눠온 성숙 시장으로, 최근에는 신용카드사향 수수료율 조정과 간편결제 플랫폼 간 경쟁이 함께 작용하는 구조다. 이런 환경에서 회사는 선정산·디지털자산 등 직접금융 영역으로 사업 포트폴리오를 넓혀 결제 거래액 확대에 의존하지 않는 수익 구조를 모색하고 있다.",
-  "en": "KG Financial operates a holding-style business structure spanning four segments: electronic payments (PG), education, IT, and e-learning. The electronic payments segment develops integrated online payment systems and software, offering mobile carrier billing, credit card, bank transfer, and virtual account payment methods. The education segment runs academies preparing students for teacher certification exams along with online lectures and textbook sales, while the e-learning segment provides online educational content through a separate subsidiary. On February 25, 2026, at a 'CEO Investor Day,' the company changed its name from KG Mobilians to KG Financial and declared its transition from a simple payment processor to a direct financial services provider. According to the corporate value-up plan disclosed in August 2026, the company set targets to raise its mobile carrier billing market share from 37% to 40%, expand Mobil Card prepaid users from 650,000 to 800,000, and increase transaction value from KRW 680 billion to KRW 800 billion. The company is classified together with affiliate KG Inicis in the electronic payment industry, and the two firms combined operate roughly 220,000 merchant accounts and 700,000 prepaid card members. Korea's PG and mobile billing market is a mature space long dominated by a small number of large operators, with recent dynamics shaped by adjustments in card-issuer fee rates and intensifying competition among simple-payment platforms. Against this backdrop, the company is broadening its portfolio into pre-settlement financing and digital assets to seek a revenue structure less dependent on expanding payment transaction volume alone."
+  "ko": "KG파이낸셜은 2004년 12월 코스닥에 상장된 소프트웨어 개발·공급업체이며, 2026년 3월 사명을 케이지모빌리언스에서 케이지파이낸셜로 바꾸었다. 사업은 전자결제(PG·휴대폰 결제), 선불카드 '모빌카드', 교육, IT, 이러닝 부문으로 나뉜다. 버틀러 집계 기준 2026년 2분기 매출에서 전자결제가 88%, 교육이 7%, IT가 6%를 차지했다. 전자결제 비중이 절대적이어서 PG 거래금액과 휴대폰 결제 시장의 흐름이 실적의 기본 변수가 된다. 보도에 따르면 회사는 휴대폰 결제 시장에서 점유율 1위를 유지하고 있으며, 2026년 중 점유율을 37%에서 40%로 끌어올리는 계획을 공시했다. 모빌카드는 2026년 7월 티머니 선불교통카드 기능을 탑재하고 바코드 결제를 넓힌 뒤 3분기 충전 거래금액이 2,000억원을 넘었고 회원 수는 75만명을 넘었다. 신규 사업인 선정산 서비스는 판매자가 정산 대금을 앞당겨 받는 금융 서비스로, 기존 결제 거래 데이터와 위험관리 역량을 활용한다. 2026년 2월 CEO 인베스터데이에서 회사는 결제 중심 구조에서 금융 중심 구조로 전환하겠다고 선언했다. 중장기 과제로는 2027년 가상자산사업자(VASP) 자격 취득과 스테이블코인 기반 결제 인프라가 제시됐다. 2026년 9월 1일 기준 최대주주 등 지분은 54.19%다.",
+  "en": "KG Financial listed on KOSDAQ in December 2004 as a software development and supply company, and changed its name in March 2026 from KG Mobilians to KG Financial. The business spans electronic payments (PG and mobile phone payments), the prepaid card MobilCard, education, IT and e-learning. Based on Butler's aggregation, electronic payments accounted for 88% of second-quarter 2026 revenue, education for 7% and IT for 6%. Because the payment segment dominates, PG transaction volume and conditions in the mobile payment market are the core variables for earnings. Media reports say the company remains the number one player in mobile phone payments, and the company disclosed a plan to lift its share from 37% to 40% during 2026. In July 2026 MobilCard added T-money transit card functions and expanded barcode payments, and third-quarter top-up volume exceeded KRW 200 billion with more than 750,000 members. The new settlement-advance service lets sellers receive payments ahead of the settlement date and draws on the company's existing transaction data and risk-management capability. At the CEO Investor Day in February 2026, management declared a shift from a payment-centered structure to a finance-centered one. Medium-term goals include obtaining virtual asset service provider (VASP) status in 2027 and building stablecoin-based payment infrastructure. As of September 1, 2026, the largest shareholder and related parties held 54.19%."
  },
  "earnings": {
-  "ko": "연결 기준 매출액은 2022년 2,761억원에서 2023년 2,796억원으로 소폭 늘었다가 2024년 2,661억원, 2025년 2,338억원으로 2년 연속 줄었다. 영업이익은 2022년 403억원, 2023년 330억원으로 두 자릿수 영업이익률(각각 14.6%, 11.8%)을 유지했으나 2024년 74억원(영업이익률 2.8%)으로 급감했다가 2025년 331억원(영업이익률 14.2%)으로 크게 회복됐다. 지배주주 순이익은 2022년 269억원, 2023년 413억원으로 영업이익 대비 높은 수준을 기록한 뒤 2024년 82억원까지 낮아졌고 2025년 226억원으로 다시 늘었다. 현금흐름 측면에서는 2022년 -92억원, 2023년 -625억원으로 대규모 영업활동현금흐름 유출을 기록했으나 2024년 59억원, 2025년 172억원으로 흑자 전환하며 개선세가 이어졌다. 분기별로 보면 2025년 3분기 매출 608억원·영업이익 102억원·지배주주 순이익 80억원으로 최근 다섯 개 분기 중 가장 좋은 실적을 냈고, 2025년 4분기와 2026년 1분기에는 매출이 555억원, 625억원으로 완만히 늘었지만 영업이익은 78억원, 70억원으로 다소 둔화됐다. 와이즈리포트 집계에 따르면 2026년 1분기는 전년 동기 대비 연결 매출액이 2.1% 늘었으나 영업이익은 9.0%, 순이익은 32.7% 감소했는데, 전자결제부문은 매출은 늘었지만 시스템 운영·인력 비용 증가로 영업이익이 줄었고 이러닝부문은 적자가 확대된 영향이 컸다. 2026년 2분기에는 매출 622억원·영업이익 88억원·지배주주 순이익 67억원으로 전 분기보다 이익이 다시 개선됐으며, 계열사 KG이니시스가 8월 5일 공시한 실적 발표에서도 KG파이낸셜의 매출과 영업이익이 모두 두 자릿수 증가했다고 언급됐다. 종합하면 최근 3~4년간 이익의 변동성이 컸고 2024년에는 일시적 비용 요인으로 마진이 크게 눌렸다가, 2025년 이후에는 매출 규모가 줄어드는 가운데서도 마진 회복과 현금창출력 개선이 함께 나타나는 흐름이다.",
-  "en": "Consolidated revenue rose slightly from KRW 276.1 billion in 2022 to KRW 279.6 billion in 2023, then declined for two straight years to KRW 266.1 billion in 2024 and KRW 233.8 billion in 2025. Operating profit held at double-digit margins in 2022 (KRW 40.3 billion, 14.6% margin) and 2023 (KRW 33.0 billion, 11.8% margin) before collapsing to KRW 7.4 billion (2.8% margin) in 2024, then recovering sharply to KRW 33.1 billion (14.2% margin) in 2025. Net income attributable to owners followed a similar path, running above operating profit in 2022 (KRW 26.9 billion) and 2023 (KRW 41.3 billion), falling to KRW 8.2 billion in 2024, and rebounding to KRW 22.6 billion in 2025. On the cash-flow side, operating cash flow was sharply negative in 2022 (-KRW 9.2 billion) and 2023 (-KRW 62.5 billion) but turned positive in 2024 (KRW 5.9 billion) and improved further to KRW 17.2 billion in 2025. On a quarterly basis, the third quarter of 2025 was the strongest of the last five quarters with revenue of KRW 60.8 billion, operating profit of KRW 10.2 billion, and owners' net income of KRW 8.0 billion, while revenue grew modestly to KRW 55.5 billion and KRW 62.5 billion in the fourth quarter of 2025 and first quarter of 2026 respectively, even as operating profit softened to KRW 7.8 billion and KRW 7.0 billion. According to WiseReport data, first-quarter 2026 consolidated revenue rose 2.1% year on year while operating profit fell 9.0% and net income dropped 32.7%, as the electronic payments segment saw revenue growth offset by higher system operation and labor costs, and the e-learning segment's losses widened. In the second quarter of 2026, revenue reached KRW 62.2 billion, operating profit KRW 8.8 billion, and owners' net income KRW 6.7 billion, an improvement from the prior quarter, and affiliate KG Inicis' August 5 earnings disclosure noted that KG Financial achieved double-digit growth in both revenue and operating profit. Taken together, earnings volatility has been substantial over the past three to four years, with one-off cost pressures compressing margins sharply in 2024, while the period since 2025 has shown a pattern of margin recovery and improving cash generation even as top-line revenue has contracted."
+  "ko": "연간 공시 실적에서 매출은 2022년 2,761억원, 2023년 2,796억원(전년 대비 1.3% 증가)으로 2023년에 정점을 찍은 뒤 2024년 2,661억원(전년 대비 4.8% 감소), 2025년 2,338억원(전년 대비 12.2% 감소)으로 2024년부터 2025년까지 2년 연속 줄었다. 2022~2025년 중 매출이 가장 큰 해는 2023년, 가장 작은 해는 2025년이다. 영업이익은 2022년 403억원에서 2023년 330억원(전년 대비 18.1% 감소), 2024년 74.3억원(전년 대비 77.5% 감소)으로 내려갔다가 2025년 331억원(전년 대비 345.9% 증가)으로 회복했다. 영업이익률은 2022년 14.6%, 2023년 11.8%, 2024년 2.8%, 2025년 14.2%로, 2025년 매출이 줄었는데도 마진은 2024년 저점에서 크게 올라왔다. 지배주주 순이익은 2022년 280억원, 2023년 436억원(전년 대비 55.9% 증가), 2024년 97.2억원(전년 대비 77.7% 감소), 2025년 232억원(전년 대비 139.1% 증가)이다. 같은 해 당기순이익(비지배지분 포함)은 226억원으로 지배주주 순이익보다 작아, 비지배지분 몫이 손실 방향으로 작용했다. 영업활동 현금흐름은 2022년 -92.5억원, 2023년 -625억원으로 음수였다가 2024년 58.9억원, 2025년 172억원으로 플러스로 바뀌었다. 부채비율은 2022년 49.9%에서 2024년 55.2%까지 올랐고 2025년 54.7%다. 분기에서는 2025년 3분기 매출 608억원, 4분기 555억원(전 분기 대비 8.7% 감소), 2026년 1분기 625억원, 2분기 622억원, 3분기 711억원(전 분기 대비 14.3% 증가)으로 이어졌다. 영업이익은 2025년 3분기 102억원에서 4분기 77.6억원(전 분기 대비 23.7% 감소), 2026년 1분기 70.1억원(전 분기 대비 9.7% 감소)으로 내려간 뒤 2분기 88.1억원, 3분기 104억원으로 올랐다. 2026년 1분기 감소는 언론에서 휴대폰결제 거래 확대에 따른 대손충당금의 선제 반영으로 풀이됐다.",
+  "en": "In the annual disclosed results, revenue went from KRW 276.1 billion in 2022 to KRW 279.6 billion in 2023, up 1.3% year on year, which marked the peak. It then fell 4.8% to KRW 266.1 billion in 2024 and 12.2% to KRW 233.8 billion in 2025, so revenue has declined for two consecutive years since 2023. Among the 2022 to 2025 years, 2023 was the largest for revenue and 2025 the smallest. Operating profit fell from KRW 40.3 billion in 2022 to KRW 33 billion in 2023 (down 18.1%) and then to KRW 7.43 billion in 2024 (down 77.5%), before recovering to KRW 33.1 billion in 2025 (up 345.9%). The operating margin was 14.6% in 2022, 11.8% in 2023, 2.8% in 2024 and 14.2% in 2025, so the margin climbed sharply from the 2024 trough even as 2025 revenue fell. Net profit attributable to controlling shareholders was KRW 28 billion in 2022, KRW 43.6 billion in 2023 (up 55.9%), KRW 9.72 billion in 2024 (down 77.7%) and KRW 23.2 billion in 2025 (up 139.1%). Total net profit including non-controlling interests was KRW 22.6 billion in 2025, below the controlling-shareholder figure, which means the non-controlling interests contributed a loss in that year. Operating cash flow was KRW -9.25 billion in 2022 and KRW -62.5 billion in 2023, then turned positive at KRW 5.89 billion in 2024 and KRW 17.2 billion in 2025. The debt-to-equity ratio rose from 49.9% in 2022 to 55.2% in 2024 and stood at 54.7% in 2025. On a quarterly basis, revenue went from KRW 60.8 billion in the third quarter of 2025 to KRW 55.5 billion in the fourth quarter (down 8.7% quarter on quarter), then KRW 62.5 billion in the first quarter of 2026, KRW 62.2 billion in the second and KRW 71.1 billion in the third (up 14.3% quarter on quarter). Operating profit fell from KRW 10.2 billion in the third quarter of 2025 to KRW 7.76 billion in the fourth quarter (down 23.7%) and KRW 7.01 billion in the first quarter of 2026 (down 9.7%), then rose to KRW 8.81 billion and KRW 10.4 billion. Media coverage attributed the first-quarter 2026 decline to an early provision for bad debts linked to growth in mobile phone payment transactions."
  },
  "industry": {
-  "ko": "국내 전자결제(PG)·휴대폰결제 시장은 성숙기에 접어들어 거래액 확대만으로는 성장 여력이 제한적이라는 인식이 업계 전반에 퍼져 있다. 이런 배경에서 KG파이낸셜은 결제 대행업을 넘어 현금흐름을 직접 설계하는 금융서비스로 사업영역을 넓히려 하고 있다. 회사가 진출하는 이커머스 선정산(팩토링) 시장은 약 18조원 규모로 추정되며, 플랫폼 셀러가 정산일까지 기다려야 하는 매출채권을 조기 현금화해주는 구조로 최근 여러 핀테크·결제사가 관심을 갖는 영역이다. 디지털자산 분야에서는 국내 가상자산사업자(VASP) 인가 제도가 정비되는 가운데, 스테이블코인 관련 법제화 속도와 규제 명확성이 사업 일정에 영향을 미치는 변수로 남아 있다. 경쟁구도 측면에서 회사는 계열사 KG이니시스와 함께 전자결제업으로 분류되며, 두 회사의 가맹점·회원 기반을 공유해 신사업을 전개하는 협업 구조를 취하고 있다. 교육·이러닝 부문은 결제 부문과 별개로 국내 교원임용시험 시장, 온라인 교육 수요 회복 속도에 실적이 좌우되는 소규모 사업 축이다. 전반적으로 결제 시장의 성장 둔화와 신사업(선정산·디지털자산)의 초기 단계 특성이 동시에 존재하는 구간으로, 신사업이 기존 결제 매출의 정체를 상쇄할 수 있을지가 업계의 관전 포인트로 꼽힌다.",
-  "en": "Korea's PG and mobile-payment market has entered a mature phase, and there is broad industry recognition that transaction volume growth alone offers limited room for further expansion. Against this backdrop, KG Financial is seeking to broaden its scope beyond payment processing into financial services that directly design merchants' cash flows. The e-commerce pre-settlement (factoring) market the company is entering is estimated at roughly KRW 18 trillion, providing a structure where platform sellers can convert receivables into cash before the scheduled settlement date, an area that has recently drawn interest from multiple fintech and payment companies. In the digital-asset space, as Korea's virtual asset service provider (VASP) licensing framework is being refined, the pace of stablecoin-related legislation and regulatory clarity remain variables affecting the business timeline. In terms of competitive positioning, the company is classified alongside affiliate KG Inicis in the electronic payment industry and pursues new businesses through a collaborative structure sharing the two firms' merchant and member base. The education and e-learning segments, separate from payments, are smaller business lines whose performance depends on the domestic teacher certification exam market and the pace of recovery in online education demand. Overall, this is a period in which slowing growth in the core payment market coexists with the early-stage nature of new businesses such as pre-settlement financing and digital assets, and whether these new ventures can offset stagnation in existing payment revenue is a key point industry watchers are following."
+  "ko": "국내 전자결제 시장에서 KG파이낸셜의 매출은 PG 거래금액에 직접 연동된다. 회사 설명에 따르면 2026년 3분기 신용카드 PG 거래가 늘어난 배경은 삼성전자 가전 환급 행사와 갤럭시 Z 폴드8·플립8 판매 증가였다. 이런 요인은 특정 시기의 이벤트 수요라서, 4분기 이후에도 거래 흐름이 이어지는지가 업황 판단의 기준이 된다. 누적 기준으로 보면 2026년 3분기까지 신용카드 PG 거래금액은 4조 2,746억원으로 전년 동기 대비 44.4% 늘었고, 휴대폰 결제 거래금액은 1조 8,465억원으로 2.5% 늘었다. 휴대폰 결제에서는 점유율 1위 지위를 전제로 점유율 40% 목표를 세운 상태다. 선불카드 시장에서 모빌카드의 누적 거래금액은 5,769억원으로 전년 동기 대비 12.1% 늘었다. 선정산 서비스는 판매자 입장에서 정산 대금을 앞당겨 받는 수요와 맞물리는 금융 서비스이며, 기존 결제 데이터를 바탕으로 한 신용·정산 리스크 관리가 경쟁력의 핵심이다. 디지털자산 영역은 VASP 자격 취득이 전제 조건이어서 인허가 일정과 스테이블코인 관련 제도 진행이 사업 속도를 좌우한다. 같은 금융 업종 상장사 중 은행·증권 지주와 비교하면 KG파이낸셜은 결제 수수료와 거래 규모에 기대는 수익 구조라서 이익의 변동 폭이 상대적으로 크다. 2024년 영업이익이 74.3억원까지 줄었다가 2025년 331억원으로 회복한 흐름이 이를 보여 준다.",
+  "en": "For KG Financial, revenue in domestic electronic payments is directly linked to PG transaction volume. According to the company, growth in credit-card PG volume in the third quarter of 2026 reflected Samsung Electronics appliance cashback events and stronger sales of the Galaxy Z Fold8 and Flip8. Because these drivers are tied to specific event-driven demand, whether transaction flows continue after the fourth quarter will be the test for the industry picture. On a cumulative basis through the third quarter of 2026, credit-card PG volume reached KRW 4.27 trillion, up 44.4% year on year, while mobile phone payment volume reached KRW 1.85 trillion, up 2.5%. The company is pursuing a 40% share target from a leading position in mobile phone payments. In the prepaid card market, MobilCard's cumulative volume was KRW 576.9 billion through the third quarter, up 12.1% year on year. The settlement-advance service addresses sellers' demand to receive settlement funds earlier, and credit and settlement risk management built on existing payment data is central to its competitiveness. Entry into digital assets depends first on obtaining VASP status, so licensing timing and stablecoin-related rulemaking will shape the pace. Compared with bank and securities holding companies in the same financial sector, KG Financial earns mainly from payment fees and transaction scale, so its profit swings tend to be larger. The move from KRW 7.43 billion in operating profit in 2024 to KRW 33.1 billion in 2025 illustrates that sensitivity."
  },
  "outlook": {
-  "ko": "회사는 2026년 8월 공시한 기업가치제고계획에서 올해 안에 휴대폰결제 시장점유율 40%, 모빌카드 사용자 80만명, 거래금액 8,000억원 달성을 사업 목표로 제시했다. 중장기적으로는 선정산서비스 취급액을 2027년 5,000억원, 2028년 1조원까지 늘리겠다는 계획을 명시했으며, 이 서비스는 2026년 4월 파일럿 테스트를 거쳐 7월 정식 오픈했다. 디지털자산 분야에서는 기존 사업자 인수가 아닌 자체 기술 기반으로 VASP 자격을 취득하는 방침을 세웠고, 2026년 6월 기준 정보보호관리체계(VASP-ISMS) 예비 심사를 진행 중이며 2027년 4월 취득을 목표로 준비 체계에 들어갔다고 밝혔다. 스테이블코인 관련해서는 솔라나 재단과 발행·기술실증(PoC) 공동개발을 진행 중이며, 계열사 KG이니시스와 함께 관련 상표권을 출원한 상태다. 주주환원 측면에서는 2026년 결산 시점부터 5년간 별도 기준 조정 당기순이익의 50%를 배당과 자사주 매입·소각으로 환원하는 정책을 공시했고, 2026년 보유 자사주 176만 416주(발행주식의 약 4.6%) 소각도 함께 명시했다. 이러닝 사업부문은 사업구조 개편을 통한 비용 절감으로 흑자전환을 도모하고 있으나, 수요 회복 속도가 관건으로 남아 있다. 종합적으로 회사의 향후 실적 경로는 기존 결제 사업의 안정적 운영과 선정산·디지털자산 신사업의 실행 속도, 그리고 관련 규제 일정이 동시에 맞물려 결정될 것으로 보인다.",
-  "en": "In its corporate value-up plan disclosed in August 2026, the company set near-term targets of reaching a 40% mobile carrier billing market share, 800,000 Mobil Card users, and KRW 800 billion in transaction value within the year. Over the medium term, it laid out plans to expand pre-settlement service handling volume to KRW 500 billion by 2027 and KRW 1 trillion by 2028, with the service having gone through a pilot test in April 2026 before its official launch in July. In the digital-asset area, the company set a policy to acquire a VASP license through its own technology rather than by acquiring an existing licensee, stating as of June 2026 that it was undergoing a preliminary information security management system (VASP-ISMS) review with a target acquisition date of April 2027. On the stablecoin front, the company is jointly developing issuance and technical proof-of-concept work with the Solana Foundation and has filed related trademark applications together with affiliate KG Inicis. On shareholder returns, the company disclosed a policy to return 50% of adjusted net income on a standalone basis through dividends and share buybacks/retirements for five years starting from the 2026 fiscal year settlement, alongside the retirement of 1,760,416 treasury shares (about 4.6% of shares outstanding) held as of 2026. The e-learning segment is pursuing a return to profitability through cost reduction from business restructuring, though the pace of demand recovery remains the key variable. Overall, the company's future earnings path appears likely to be shaped by the combination of stable operation of its existing payment business, the execution speed of new pre-settlement and digital-asset ventures, and the related regulatory timeline."
+  "ko": "회사는 2026년 중 휴대폰결제 시장 점유율을 37%에서 40%로 끌어올리고, 모빌카드 사용자 수를 65만명에서 80만명으로 늘리며, 거래금액을 6,800억원에서 8,000억원으로 확대하는 방안을 공시했다. 중장기로는 2027년 VASP 자격 취득을 목표로 하고, 선정산 취급액은 2027년 5,000억원, 2028년 1조원을 제시했다. 한국금융신문 보도에 따르면 회사 관계자는 2026년 4분기에도 안정적인 가맹점 기반을 바탕으로 거래금액이 점진적으로 늘어날 것으로 내다봤다. 선정산 서비스는 2026년 7월 정식 출시 후 한 달 만에 누적 신청 건수가 400건을 넘었다고 보도됐다. 디지털자산 월렛 연동과 스테이블코인 기반 결제·정산 서비스도 준비 중이다. 회사 측은 2027년에 디지털 자산을 비롯한 새로운 금융 서비스 영역으로 사업 기회를 넓히겠다고 밝혔다. 실적 측면에서 확인할 점은 4분기 전자결제 거래가 3분기 수준을 유지하는지, 그리고 영업이익률이 2026년 1분기의 저점 이후 회복된 흐름을 이어 가는지다. 신규 사업의 기여는 아직 매출에서 작은 비중이라서, 선정산 취급액과 모빌카드 충전 거래가 분기별로 얼마나 커지는지가 중장기 목표 달성 여부를 가르는 기준이 된다. 2026년 목표들은 2026년 사업보고서에서 달성 여부를 확인할 수 있다.",
+  "en": "During 2026 the company disclosed plans to lift its mobile phone payment share from 37% to 40%, expand MobilCard users from 650,000 to 800,000, and grow transaction volume from KRW 680 billion to KRW 800 billion. Over the medium term, it targets VASP status in 2027 and has set settlement-advance volume goals of KRW 500 billion for 2027 and KRW 1 trillion for 2028. According to a Korea Financial News report, a company official expects transaction volume to rise gradually in the fourth quarter of 2026 on a stable merchant base. The settlement-advance service was reported to have passed 400 cumulative applications within a month of its full launch in July 2026. The company is also preparing a digital asset wallet link and stablecoin-based payment and settlement services. Management said it would expand business opportunities into digital assets and other new financial services in 2027. On near-term earnings, the points to watch are whether electronic payment volume holds its third-quarter level in the fourth quarter and whether the operating margin continues to recover from the first-quarter 2026 low. New businesses still contribute a small share of revenue, so how quickly settlement-advance volume and MobilCard top-ups grow each quarter will indicate progress toward the medium-term targets. Whether the 2026 targets were met can be checked against the 2026 annual report."
  },
  "valuation_comment": {
-  "ko": "회사의 순이익은 2023년 정점 이후 2024년 큰 폭으로 줄었다가 2025년 다시 회복되는 흐름을 보였고, 이 과정에서 주가가 반영하는 밸류에이션 멀티플도 넓은 밴드에서 움직여왔다. 현재 주가는 순자산가치 대비 할인된 수준에서 거래되고 있어, 주가순자산비율이 1배를 밑도는 구간에 위치한다. 이익 규모 대비로는 과거 수년간의 순이익 변동성을 감안할 때, 최근 네 개 분기 실적을 기준으로 산출한 배수는 상장 이후 형성된 밴드의 중하단부에 가까운 편이다. 배당 측면에서는 회사가 2026년 결산부터 5년간 조정순이익의 절반을 배당과 자사주 매입·소각으로 환원하겠다는 정책을 공시한 만큼, 향후 주당 환원 규모의 방향성이 배당 매력의 주요 변수가 될 것으로 보인다. 다만 신사업(선정산·디지털자산)이 아직 초기 단계인 만큼, 시장이 이를 어떻게 밸류에이션에 반영할지는 실행 성과가 쌓여가는 과정에서 점차 드러날 부분이다.",
-  "en": "The company's net income peaked in 2023, fell sharply in 2024, and recovered again in 2025, and the valuation multiples the market has assigned to the stock have moved across a wide range through this cycle. The current share price trades at a discount to net asset value, placing the price-to-book ratio below 1x. Relative to earnings, and considering the profit volatility of recent years, the multiple calculated on the basis of the trailing four quarters sits closer to the lower-to-middle part of the range the stock has traded in since its listing. On the dividend side, since the company has disclosed a policy to return half of adjusted net income through dividends and share buybacks/retirements for five years starting from the 2026 fiscal year settlement, the direction of future per-share returns is likely to be a key variable for dividend appeal. However, because the new businesses in pre-settlement financing and digital assets are still at an early stage, how the market will factor these into valuation remains something that will become clearer as execution results accumulate."
+  "ko": "배수는 이익의 규모에 따라 크게 움직여 왔다. 2024년 영업이익이 74.3억원까지 줄었을 때는 같은 주가에서도 이익 기준 배수가 높아 보이는 구조였고, 2025년 영업이익이 331억원으로 회복되면서 배수 해석의 기준점이 이익 쪽으로 옮겨졌다. 최근 4개 분기 지배주주 순이익 합계가 235억원인 만큼, 배수를 읽을 때는 이 기간의 이익 수준을 기준으로 삼는 것이 공시 수치와 맞는다. 업종 평균 PER과 비교하면 KG파이낸셜의 배수는 업종 평균을 크게 밑도는 구간에 있다. PBR 관점에서는 자본총계 3,596억원 가운데 지배주주 지분이 3,554억원으로 대부분을 차지하고, 주가는 주당순자산을 크게 밑도는 구간에 있다. 배당은 2025년 결산 기준 배당성향 39.8%, 이익배당금액 90억 1,260만원으로 기재됐고 고배당기업에 해당한다고 공시됐다. 2026년 8월에는 이익소각으로 주식을 줄였고 소각 예정금액은 150억 755만원이다. 다만 배당과 소각은 이익 수준에 따라 달라지는 항목이어서, 이익 변동이 크던 2024년의 사례를 함께 봐야 한다. 이 회사의 지분 구조는 최대주주 등 54.19%로 유동주식 비율이 45.26%이므로, 거래 유동성도 밸류에이션 해석에 함께 고려할 요소다.",
+  "en": "The multiples have moved considerably with the size of earnings. When operating profit fell to KRW 7.43 billion in 2024, the earnings-based multiple at a given share price looked high, and after the rebound to KRW 33.1 billion in 2025 the reference point for reading the multiples shifted back toward earnings. With controlling-shareholder net income totaling KRW 23.5 billion over the latest four quarters, it is consistent with the disclosed figures to read the multiples against earnings for that period. Compared with the industry average PER, KG Financial's multiple sits well below the sector average. On a price-to-book basis, controlling-shareholder equity of KRW 355.4 billion makes up most of total equity of KRW 359.6 billion, and the share price is well below book value per share. The 2025 dividend was reported with a payout ratio of 39.8% and dividends of KRW 9.01 billion, and the company is recorded as a high-dividend firm. In August 2026 the company reduced its share count through a profit-based cancellation with an planned cancellation amount of KRW 15.0 billion. Dividends and cancellations depend on earnings levels, so the 2024 earnings swing should be considered alongside them. With the largest shareholder and related parties holding 54.19% and a free float ratio of 45.26%, trading liquidity is also part of the valuation context."
  },
  "bull": [
   {
    "title": {
-    "ko": "이익 마진 회복과 현금창출력 개선",
-    "en": "Margin Recovery And Improving Cash Generation"
+    "ko": "결제 거래 규모의 확대",
+    "en": "Expanding payment volume"
    },
    "body": {
-    "ko": "2025년 영업이익률은 14.2%로 2024년 2.8%에서 크게 개선됐고, 영업활동현금흐름도 2024년 59억원에서 2025년 172억원으로 늘었다. 2026년 2분기에도 영업이익 88억원, 지배주주 순이익 67억원으로 직전 분기보다 이익이 다시 확대됐다. 이는 2024년의 비용 부담이 일시적 요인에 가까웠다는 해석에 힘을 더한다.",
-    "en": "The 2025 operating margin improved sharply to 14.2% from 2.8% in 2024, and operating cash flow rose from KRW 5.9 billion in 2024 to KRW 17.2 billion in 2025. In the second quarter of 2026, operating profit of KRW 8.8 billion and owners' net income of KRW 6.7 billion again expanded from the prior quarter, lending support to the interpretation that the 2024 cost burden was closer to a temporary factor."
+    "ko": "2026년 3분기 PG 거래금액은 2조 3,000억원, 누적 거래금액은 6조 1,000억원으로 잠정 발표됐다. 3분기 매출은 711억원으로 전년 동기 대비 17.0% 늘었고 영업이익은 104억원으로 2개 분기 연속 증가했다. 신용카드 PG 누적 거래금액은 전년 동기 대비 44.4% 늘었다.",
+    "en": "Third-quarter 2026 PG volume was KRW 2.3 trillion, with cumulative volume above KRW 6.1 trillion, according to the provisional release. Third-quarter revenue of KRW 71.1 billion rose 17.0% year on year, and operating profit of KRW 10.4 billion has increased for two consecutive quarters. Cumulative credit-card PG volume grew 44.4% year on year."
    }
   },
   {
    "title": {
-    "ko": "신사업을 통한 수익원 다변화 시도",
-    "en": "Attempted Revenue Diversification Through New Businesses"
+    "ko": "신규 금융 사업의 초기 성과",
+    "en": "Early traction in new finance businesses"
    },
    "body": {
-    "ko": "선정산 서비스가 2026년 7월 정식 오픈했고, 2027년 5,000억원·2028년 1조원의 취급액 목표가 제시됐다. 디지털자산 분야에서는 솔라나 재단과의 스테이블코인 기술실증 협력, VASP 인가 추진 등 결제 이외의 성장축을 구축하려는 시도가 이어지고 있다.",
-    "en": "The pre-settlement service officially launched in July 2026, with handling volume targets of KRW 500 billion by 2027 and KRW 1 trillion by 2028. In the digital-asset area, the company continues efforts to build growth pillars beyond payments, including a stablecoin technical proof-of-concept partnership with the Solana Foundation and pursuit of a VASP license."
+    "ko": "선정산 서비스는 2026년 7월 말 출시 뒤 취급고 100억원을 넘었다. 모빌카드는 3분기 충전 거래금액 2,000억원을 돌파했고 회원 수는 75만명을 넘었다. 회사는 2027년 선정산 취급액 5,000억원과 2028년 1조원을 목표로 제시했다.",
+    "en": "The settlement-advance service passed KRW 10 billion in cumulative volume after its late-July 2026 launch. MobilCard's third-quarter top-up volume exceeded KRW 200 billion, and membership topped 750,000. The company has set settlement-advance volume targets of KRW 500 billion for 2027 and KRW 1 trillion for 2028."
    }
   },
   {
    "title": {
     "ko": "주주환원 정책의 구체화",
-    "en": "Concrete Shareholder Return Commitments"
+    "en": "Concrete shareholder return policy"
    },
    "body": {
-    "ko": "회사는 2026년 결산부터 5년간 별도 기준 조정순이익의 50%를 배당과 자사주 매입·소각으로 환원하겠다는 계획을 공시했다. 2026년 자사주 176만 416주(발행주식의 약 4.6%) 소각도 함께 명시돼, 주주환원 정책이 구체적 수치로 제시된 점이 특징이다.",
-    "en": "The company disclosed a plan to return 50% of adjusted net income on a standalone basis through dividends and share buybacks/retirements for five years starting from the 2026 fiscal year settlement. It also specified the retirement of 1,760,416 treasury shares (about 4.6% of shares outstanding) in 2026, notable for presenting the shareholder return policy in concrete figures."
+    "ko": "2025년 결산 배당성향은 39.8%로 기재됐고 회사는 고배당기업에 해당한다고 공시했다. 2026년 8월에는 보통주 176만 416주를 소각하기로 결정했고 소각 예정금액은 150억 755만원이다. 2026년 기업가치제고계획도 공시돼 주주가치 제고 방향이 문서로 제시됐다.",
+    "en": "The 2025 payout ratio was reported at 39.8%, and the company is recorded as a high-dividend firm. In August 2026 it resolved to cancel 1,760,416 common shares with a planned amount of KRW 15.0 billion. A 2026 corporate value-up plan was also disclosed, setting out its shareholder-value direction in writing."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "매출 축소 흐름이 지속",
-    "en": "Continued Revenue Contraction"
+    "ko": "이익의 높은 변동성",
+    "en": "High earnings volatility"
    },
    "body": {
-    "ko": "연결 매출액은 2023년 2,796억원에서 2024년 2,661억원, 2025년 2,338억원으로 2년 연속 줄었다. 이익 마진은 회복됐지만 외형 자체가 축소되는 흐름이 이어지고 있어, 신사업이 본격적으로 매출에 기여하기 전까지는 이 추세가 이어질 가능성이 있다.",
-    "en": "Consolidated revenue declined for two consecutive years, from KRW 279.6 billion in 2023 to KRW 266.1 billion in 2024 and KRW 233.8 billion in 2025. Although margins have recovered, the top line itself continues to shrink, and this trend could persist until new businesses begin contributing meaningfully to revenue."
+    "ko": "영업이익은 2022년 403억원에서 2024년 74.3억원으로 줄었다가 2025년 331억원으로 회복했다. 매출은 2023년 정점 뒤 2024년부터 2025년까지 2년 연속 감소했다. 2026년 1분기 영업이익은 70.1억원으로 전 분기 대비 9.7% 줄었고, 언론은 이를 대손충당금 선제 반영 때문으로 풀이했다.",
+    "en": "Operating profit fell from KRW 40.3 billion in 2022 to KRW 7.43 billion in 2024 before recovering to KRW 33.1 billion in 2025. Revenue has declined for two consecutive years since its 2023 peak. First-quarter 2026 operating profit of KRW 7.01 billion was down 9.7% quarter on quarter, which media linked to an early bad-debt provision."
    }
   },
   {
    "title": {
-    "ko": "이러닝 부문 적자 확대와 분기 실적 둔화",
-    "en": "Widening E-Learning Losses And Quarterly Earnings Softness"
+    "ko": "전자결제 비중 집중과 이벤트 의존",
+    "en": "Concentration in payments and event dependence"
    },
    "body": {
-    "ko": "2026년 1분기는 전년 동기 대비 연결 영업이익이 9.0%, 순이익이 32.7% 줄었고, 이러닝사업부문은 수요 회복 지연으로 적자가 확대됐다. 전자결제부문 역시 매출은 늘었지만 시스템 운영과 인력 비용 증가로 영업이익이 감소해, 외형 성장이 곧바로 이익 성장으로 이어지지 않는 구조적 부담이 확인된다.",
-    "en": "In the first quarter of 2026, consolidated operating profit fell 9.0% and net income dropped 32.7% year on year, with the e-learning segment's losses widening due to delayed demand recovery. The electronic payments segment also saw revenue grow while operating profit declined due to higher system operation and labor costs, confirming a structural burden in which top-line growth does not immediately translate into profit growth."
+    "ko": "2026년 2분기 매출에서 전자결제 비중은 88%로 사업이 한쪽에 집중돼 있다. 3분기 PG 증가의 배경으로 회사가 든 삼성전자 가전 환급 행사와 신제품 판매는 특정 시기에 몰린 수요다. 이 요인이 4분기 이후에도 이어지는지는 확인되지 않은 상태로 남아 있다.",
+    "en": "Electronic payments accounted for 88% of second-quarter 2026 revenue, leaving the business concentrated in one segment. The company attributed part of third-quarter PG growth to Samsung Electronics appliance cashback events and new-product sales, which are concentrated in specific periods. Whether these drivers persist after the fourth quarter remains to be seen."
    }
   },
   {
    "title": {
-    "ko": "신사업의 초기 단계 리스크",
-    "en": "Early-Stage Risk In New Business Lines"
+    "ko": "현금흐름과 부채 수준",
+    "en": "Cash flow and leverage"
    },
    "body": {
-    "ko": "선정산·디지털자산 사업은 아직 취급 규모가 크지 않은 초기 단계이며, 목표로 제시된 취급액이나 인가 취득 일정이 계획대로 진행될지는 지켜봐야 한다. 신사업 투자에 따른 비용 부담이 먼저 반영되고 매출 기여는 시차를 두고 나타날 가능성이 있다.",
-    "en": "The pre-settlement and digital-asset businesses are still at an early stage with limited handling volume, and whether the targeted handling amounts or licensing timelines proceed as planned remains to be seen. Cost burdens from new business investment may be reflected first, with revenue contribution potentially appearing only after a time lag."
+    "ko": "영업활동 현금흐름은 2022년 -92.5억원, 2023년 -625억원으로 음수였고 2024년과 2025년에 플러스로 바뀌었다. 부채비율은 2022년 49.9%에서 2024년 55.2%로 올랐고 2025년 말 부채총계는 1,966억원이다. 현금 창출이 연속으로 확인된 기간이 짧아 이익 회복의 지속성은 추가 확인이 필요하다.",
+    "en": "Operating cash flow was negative at KRW -9.25 billion in 2022 and KRW -62.5 billion in 2023 before turning positive in 2024 and 2025. The debt-to-equity ratio rose from 49.9% in 2022 to 55.2% in 2024, and total liabilities at the end of 2025 were KRW 196.6 billion. Because the period of positive operating cash flow is still short, the durability of the earnings recovery needs further confirmation."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "규제 리스크",
-    "en": "Regulatory Risk"
+    "ko": "규제·인허가",
+    "en": "Regulation and licensing"
    },
    "body": {
-    "ko": "VASP 인가 및 스테이블코인 관련 법제화 속도는 회사의 통제 밖 변수다. 회사는 2027년 4월 VASP 취득을 목표로 준비 중이라고 밝혔으나, 관련 제도 정비가 지연되면 사업 일정이 조정될 수 있다.",
-    "en": "The pace of VASP licensing and stablecoin-related legislation is a variable outside the company's control. The company has stated it is preparing for VASP acquisition with an April 2027 target, but delays in related institutional arrangements could shift the business timeline."
+    "ko": "디지털자산 사업은 2027년 VASP 자격 취득을 전제로 한다. 인허가 일정이 늦어지거나 스테이블코인 관련 제도가 바뀌면 중장기 사업 계획의 시점이 밀릴 수 있다. 회사는 디지털자산 월렛 연동과 스테이블코인 기반 결제 준비를 함께 진행하고 있다.",
+    "en": "The digital asset business depends on obtaining VASP status in 2027. Delays in licensing or changes to stablecoin rules could push back the timing of the medium-term plan. The company is preparing a digital asset wallet link and stablecoin-based payments in parallel."
    }
   },
   {
    "cat": {
-    "ko": "신용·여신 리스크",
-    "en": "Credit And Lending Risk"
+    "ko": "신용·정산 리스크",
+    "en": "Credit and settlement risk"
    },
    "body": {
-    "ko": "선정산(팩토링) 사업은 매출채권을 조기 매입하는 여신 성격의 사업으로, 입점 셀러의 부실이나 정산 지연이 발생하면 손실로 이어질 수 있다. 회사는 20년간 축적한 휴대폰결제 기반 리스크관리 역량을 강점으로 제시했으나, 신용평가 모델의 실제 성과는 아직 검증 초기 단계다.",
-    "en": "The pre-settlement (factoring) business, which involves purchasing receivables ahead of settlement, carries lending-like characteristics, and defaults or settlement delays among onboarded sellers could result in losses. The company has cited its 20 years of accumulated risk management capability from mobile billing as a strength, but the actual performance of its credit assessment model is still at an early stage of validation."
+    "ko": "2026년 1분기 영업이익 감소는 휴대폰결제 거래 확대에 따른 대손충당금 선제 반영과 연결돼 보도됐다. 선정산 서비스는 판매자에게 정산 대금을 미리 지급하는 구조여서 거래 상대방의 신용 위험을 관리하는 역량이 중요해진다. 취급고가 커질수록 충당금과 정산 리스크가 이익에 미치는 영향도 커질 수 있다.",
+    "en": "Media linked the first-quarter 2026 profit decline to an early bad-debt provision tied to expanding mobile phone payment transactions. Because the settlement-advance service pays sellers before the settlement date, managing counterparty credit risk becomes central. As volume grows, provisions and settlement risk could weigh more heavily on profit."
    }
   },
   {
    "cat": {
-    "ko": "사업부문별 실적 편차",
-    "en": "Divergence In Segment Performance"
+    "ko": "거래 집중과 점유율 목표",
+    "en": "Transaction concentration and share targets"
    },
    "body": {
-    "ko": "전자결제·교육·이러닝 부문의 실적 개선 속도가 서로 달라, 특정 부문의 부진이 연결 실적 전체를 끌어내릴 수 있다. 이러닝 부문은 수요 회복 지연으로 적자가 확대되는 모습이 최근 분기에도 이어졌다.",
-    "en": "The electronic payments, education, and e-learning segments show differing recovery speeds, and weakness in any single segment could weigh on overall consolidated results. The e-learning segment continued to show widening losses in recent quarters due to delayed demand recovery."
+    "ko": "휴대폰 결제 점유율을 40%까지 끌어올리는 목표는 시장에서 점유율을 더 가져와야 달성된다. 2026년 3분기 휴대폰 결제 누적 거래금액은 전년 동기 대비 2.5% 늘었고, 성장은 신용카드 PG 쪽이 주도했다. 점유율 확대가 거래 규모로 이어지지 않으면 목표 달성 시점이 늦어질 수 있다.",
+    "en": "Reaching a 40% mobile phone payment share requires taking more share in the market. Cumulative mobile phone payment volume through the third quarter of 2026 grew 2.5% year on year, while credit-card PG drove most of the growth. If share gains do not translate into transaction volume, the target could be reached later than planned."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 초",
-    "en": "Early November 2026"
+    "ko": "2026년 12월 말",
+    "en": "End of December 2026"
    },
    "what": {
-    "ko": "2026년 3분기 잠정 실적 공시 예정 시점으로, 선정산 서비스 매출 기여가 처음으로 반영되는지와 전자결제·이러닝 부문의 이익 흐름을 확인할 필요가 있다.",
-    "en": "Around this time the provisional third-quarter 2026 earnings are expected to be disclosed; it is worth checking whether pre-settlement service revenue is reflected for the first time and how the electronic payments and e-learning segments' profit trends evolve."
+    "ko": "휴대폰결제 점유율 40%, 모빌카드 사용자 80만명, 거래금액 8,000억원 등 2026년 목표의 달성 여부를 점검하는 기준 시점이다.",
+    "en": "This is the reference date for checking the 2026 targets, including a 40% mobile phone payment share, 800,000 MobilCard users and KRW 800 billion in transaction volume."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Fourth quarter of 2026"
+    "ko": "2027년 초(4분기 잠정 실적 발표 예상)",
+    "en": "Early 2027 (expected release of fourth-quarter provisional results)"
    },
    "what": {
-    "ko": "VASP-ISMS 예비 심사 결과와 본 심사 진행 여부를 확인해 2027년 4월 VASP 취득 목표의 진행 상황을 점검할 시점이다.",
-    "en": "This is a point to check the outcome of the VASP-ISMS preliminary review and whether the main review proceeds, gauging progress toward the April 2027 VASP acquisition target."
+    "ko": "2026년 4분기 매출과 영업이익이 3분기 수준을 유지하는지 확인한다. 3분기 잠정 발표가 11월 5일에 나온 점을 감안하면 4분기 잠정치도 연초에 나올 것으로 예상된다.",
+    "en": "Whether fourth-quarter 2026 revenue and operating profit hold near third-quarter levels. Given the third-quarter provisional release came on November 5, the fourth-quarter provisional figures are expected in early 2027."
    }
   },
   {
    "when": {
-    "ko": "2027년 초",
-    "en": "Early 2027"
+    "ko": "2027년 3월 말까지",
+    "en": "By end of March 2027"
    },
    "what": {
-    "ko": "2026년 결산배당 공시와 자사주 176만 416주 소각 완료 여부를 확인해 새로운 주주환원 정책의 첫 이행 실적을 점검할 필요가 있다.",
-    "en": "It will be important to confirm the disclosure of the 2026 fiscal year-end dividend and the completion of the 1,760,416-share treasury stock retirement, checking the first implementation results of the new shareholder return policy."
+    "ko": "2026 사업보고서가 다음 정기보고서다. 2026년 실적 확정치, 배당 결정, 연간 목표 달성 여부를 이 보고서에서 확인하는 것이 다음 기준이다.",
+    "en": "The 2026 annual report is the next periodic filing. Confirmed full-year 2026 results, dividend decisions and progress on annual targets will be checked against this report."
    }
   },
   {
    "when": {
-    "ko": "2027년",
-    "en": "2027"
+    "ko": "2027년 중",
+    "en": "During 2027"
    },
    "what": {
-    "ko": "선정산서비스 취급액이 목표치인 5,000억원에 근접하는지, VASP 인가 취득이 실제로 이뤄지는지를 확인해 신사업의 실행 속도를 판단할 근거로 삼을 수 있다.",
-    "en": "Checking whether pre-settlement service handling volume approaches the KRW 500 billion target and whether the VASP license is actually obtained can serve as a basis for assessing the execution speed of the new businesses."
+    "ko": "VASP 자격 취득 여부를 확인한다. 이 자격은 디지털자산 결제와 스테이블코인 기반 사업의 법적 전제라서 사업 일정의 분기점이 된다.",
+    "en": "Whether VASP status is obtained. This qualification is the legal precondition for digital asset payments and stablecoin-based services, making it a key milestone for the schedule."
+   }
+  },
+  {
+   "when": {
+    "ko": "2027년 말",
+    "en": "End of 2027"
+   },
+   "what": {
+    "ko": "선정산 취급액 5,000억원 목표를 점검한다. 목표 달성 여부는 신규 금융 사업이 매출과 이익에 기여하는 규모를 보여 준다.",
+    "en": "Progress toward the KRW 500 billion settlement-advance volume target. Whether the target is met will show how much the new finance businesses contribute to revenue and profit."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "KG파이낸셜은 2026년 2월 사명 변경을 계기로 결제대행 중심 사업에서 선정산·디지털자산을 포함한 금융서비스 회사로 전환을 공식화했다. 2025년 실적은 영업이익률이 2024년 2.8%에서 14.2%로 회복되고 영업활동현금흐름도 개선되는 등 이익 측면의 반등이 확인됐지만, 매출액은 2년 연속 줄어드는 흐름이 이어졌다. 2026년 들어서는 1분기 이익이 둔화됐다가 2분기 다시 개선되는 등 분기별 변동성이 여전히 크게 나타난다. 선정산서비스는 2026년 7월 정식 오픈했고 VASP 인가와 스테이블코인 사업은 2027년을 목표 시점으로 준비되고 있어, 신사업의 실질적 매출·이익 기여는 아직 확인이 필요한 단계다. 회사는 자사주 소각과 조정순이익의 절반을 환원하는 주주환원 정책을 구체적 수치로 제시해 자본정책의 방향성을 명확히 했다. 투자자 입장에서는 기존 결제사업의 안정성, 신사업 실행 속도, 그리고 관련 규제 일정이라는 세 축을 함께 확인해나가는 접근이 필요해 보인다.",
-   "en": "KG Financial formalized its transition from a payment-processing-centered business to a financial services company encompassing pre-settlement financing and digital assets, marking the shift with its February 2026 name change. The 2025 results showed a profit-side rebound, with the operating margin recovering to 14.2% from 2.8% in 2024 and operating cash flow improving, though revenue continued to decline for a second consecutive year. Entering 2026, quarterly volatility has remained significant, with first-quarter profit softening before improving again in the second quarter. The pre-settlement service officially launched in July 2026, and the VASP license and stablecoin businesses are being prepared with a 2027 target date, meaning the actual revenue and profit contribution from these new ventures still needs to be confirmed. The company has clarified the direction of its capital policy by presenting concrete figures for treasury share retirement and a policy of returning half of adjusted net income to shareholders. From an investor's perspective, an approach that tracks three axes together—the stability of the existing payment business, the execution speed of new businesses, and the related regulatory timeline—appears warranted."
+   "ko": "KG파이낸셜은 전자결제 거래 확대를 바탕으로 2026년 3분기 매출 711억원(전년 동기 대비 17.0% 증가)과 영업이익 104억원을 기록했다. 2025년 영업이익 331억원은 2024년 저점에서의 회복이지만 2022년 403억원에는 미치지 못한다. 매출은 2023년 정점 뒤 2024년과 2025년 두 해 연속 줄었고, 2026년 1분기에는 대손충당금 반영으로 영업이익이 감소했다. 강세 요인은 거래 규모의 확대, 선정산과 모빌카드 같은 신규 사업의 초기 성과, 배당과 소각을 포함한 주주환원이다. 약세 요인은 이익의 높은 변동성, 전자결제 비중 88%에 따른 사업 집중, 삼성전자 가전 환급처럼 이벤트에 기댄 거래 증가, 디지털자산 사업의 인허가 일정 불확실성이다. 배수는 업종 평균을 밑도는 구간이고 주가는 주당순자산을 밑도는 구간에 있다는 사실이 확인되지만, 이 비교가 이익의 지속성을 보장하지 않는다는 점이 함께 고려돼야 한다. 다음 확인 지점은 2026년 4분기 잠정 실적, 2026 사업보고서의 목표 달성 여부, 2027년 VASP 자격 취득 여부다.",
+   "en": "KG Financial recorded third-quarter 2026 revenue of KRW 71.1 billion, up 17.0% year on year, and operating profit of KRW 10.4 billion, supported by growth in electronic payment volume. The 2025 operating profit of KRW 33.1 billion reflects a recovery from the 2024 trough but remains below the KRW 40.3 billion of 2022. Revenue declined for two consecutive years after peaking in 2023, and first-quarter 2026 operating profit fell as a bad-debt provision was booked. Factors on the positive side include growing transaction volume, early results from new businesses such as settlement-advance and MobilCard, and shareholder returns including dividends and share cancellation. Factors on the negative side include high earnings volatility, business concentration with electronic payments at 88% of revenue, transaction gains tied to events such as Samsung Electronics cashback campaigns, and uncertainty over licensing timing for digital asset businesses. The multiples sit below the industry average and the share price is below book value per share, but these comparisons do not guarantee that earnings will hold. The next checkpoints are the provisional fourth-quarter 2026 results, progress on targets in the 2026 annual report and whether VASP status is obtained in 2027."
   }
  },
  "sources": [
   "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=046440",
+  "https://www.butler.works/ko/companies/00405278",
+  "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=712824",
+  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=046440",
   "https://www.digitaltoday.co.kr/news/articleView.html?idxno=690088",
-  "https://dartpoint.ai/00405278",
-  "https://m.thinkpool.com/item/046440",
-  "https://www.innoforest.co.kr/company/CP00018843/%EC%BC%80%EC%9D%B4%EC%A7%80%ED%8C%8C%EC%9D%B4%EB%82%B8%EC%85%9C",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/UVhTbnV1TTFiblpkeDFHOTBKOHlSdz09/company_nm/(%EC%A3%BC)%EC%BC%80%EC%9D%B4%EC%A7%80%ED%8C%8C%EC%9D%B4%EB%82%B8%EC%85%9C",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05274246645354456",
-  "https://www.bloter.net/news/articleView.html?idxno=670074",
-  "https://kind.krx.co.kr/external/dst/irReference/17517/KG%EB%AA%A8%EB%B9%8C%EB%A6%AC%EC%96%B8%EC%8A%A4%20%EA%B8%B0%EC%97%85%EC%84%A4%EB%AA%85%ED%9A%8C%20(2025.10).pdf",
-  "https://www.inicis.com/blog/archives/131095",
-  "https://ir.kkr.com/media/document/15a25fa9-8226-4da1-9ff3-027b9803d436/assets/KKR_Q226_Earnings_Release.pdf?disposition=inline",
-  "https://alphasquare.co.kr/home/stock-summary?code=046440",
-  "https://www.etnews.com/20260805000180",
-  "https://kind.krx.co.kr/common/disclsviewer.do?method=searchInitInfo&acptNo=20251114003292&docno=",
-  "https://bbn.kiwoom.com/rfCR12028",
-  "https://www.stockplus.com/m/stocks/KOREA-A046440",
-  "https://comp.wisereport.co.kr/wiseReport/summary/ReportSummary.aspx",
-  "https://file.myasset.com/sitemanager/upload/2025/1013/083240/20251013083240720_0_ko.pdf"
+  "https://www.vegannews.co.kr/news/article.html?no=401072",
+  "https://tv.edaily.co.kr/News/NewsRead?NewsId=05274246645354456&Kind=257",
+  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05100406645446296",
+  "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04067206645354128",
+  "http://www.worktoday.co.kr/news/articleView.html?idxno=91551",
+  "https://www.job-post.co.kr/news/articleView.html?idxno=236691",
+  "https://www.digitaltoday.co.kr/news/articleView.html?idxno=712829",
+  "https://www.dailian.co.kr/news/view/1711432/KG%ED%8C%8C%EC%9D%B4%EB%82%B8%EC%85%9C-3%EB%B6%84%EA%B8%B0-PG-%EA%B1%B0%EB%9E%98%EC%95%A1-2%EC%A1%B0-2026",
+  "https://www.fntimes.com/html/view.php?ud=2026110515090066669efc5ce4ae_18",
+  "https://www.widedaily.com/news/articleView.html?idxno=302953",
+  "https://www.newspim.com/news/view/20261105000317",
+  "https://www.fetv.co.kr/news/articleView.html?idxno=313137"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "046440",
  "name": "KG파이낸셜",
  "name_en": "KG Financial Co., Ltd.",
@@ -223,11 +232,11 @@
   "금융"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:08",
- "dataDate": "20260904",
+ "reportDate": "2026-11-13",
+ "reportTs": "2026-11-13 06:26",
+ "dataDate": "20261112",
  "quant": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-11-12",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -235,14 +244,15 @@
     "rev": 233770778965,
     "op": 33125178713,
     "np": 22619031186,
-    "np_owner": 22619031186,
+    "np_owner": 23241773448,
     "equity": 359612844607,
     "equity_owner": 355392456613,
+    "equity_nci": 4220387994,
     "liab": 196619291938,
     "cfo": 17199327074,
     "eps_basic": 644,
     "opm": 14.2,
-    "roe": 6.4,
+    "roe": 6.5,
     "debt_ratio": 54.7
    },
    {
@@ -250,14 +260,15 @@
     "rev": 266110739779,
     "op": 7428647507,
     "np": 8227955108,
-    "np_owner": 8227955108,
+    "np_owner": 9722240565,
     "equity": 347008283942,
     "equity_owner": 342177308476,
+    "equity_nci": 4830975466,
     "liab": 191495850675,
     "cfo": 5889570748,
     "eps_basic": 261,
     "opm": 2.8,
-    "roe": 2.4,
+    "roe": 2.8,
     "debt_ratio": 55.2
    },
    {
@@ -265,14 +276,15 @@
     "rev": 279579831420,
     "op": 32980603114,
     "np": 41335603180,
-    "np_owner": 41335603180,
+    "np_owner": 43624743837,
     "equity": 349724771474,
     "equity_owner": 343381962868,
+    "equity_nci": 6342808606,
     "liab": 179670317356,
     "cfo": -62486997616,
     "eps_basic": 1176,
     "opm": 11.8,
-    "roe": 12.0,
+    "roe": 12.7,
     "debt_ratio": 51.4
    },
    {
@@ -280,67 +292,72 @@
     "rev": 276116842169,
     "op": 40290909338,
     "np": 26880832298,
-    "np_owner": 26880832298,
+    "np_owner": 27975574946,
     "equity": 316402413155,
     "equity_owner": 307714990076,
+    "equity_nci": 8687423079,
     "liab": 157786435557,
     "cfo": -9249167520,
     "eps_basic": 754,
     "opm": 14.6,
-    "roe": 8.7,
+    "roe": 9.1,
     "debt_ratio": 49.9
    }
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 56176902707,
-    "op": 7485287668,
-    "np_owner": 4533742057
-   },
-   {
     "q": "2025Q3",
     "rev": 60808902123,
     "op": 10171383164,
-    "np_owner": 8027927884
+    "np_owner": 7715705165
    },
    {
     "q": "2025Q4",
     "rev": 55539820088,
     "op": 7761761202,
-    "np_owner": 4047012152
+    "np_owner": 4669754414
    },
    {
     "q": "2026Q1",
     "rev": 62548771452,
     "op": 7012227887,
-    "np_owner": 4012477490
+    "np_owner": 4127702403
    },
    {
     "q": "2026Q2",
     "rev": 62245653798,
     "op": 8813477065,
-    "np_owner": 6747457808
+    "np_owner": 6632232895
+   },
+   {
+    "q": "2026Q3",
+    "rev": 71123945362,
+    "op": 10441812077,
+    "np_owner": 8070532109
    }
   ],
   "valuation": {
-   "price": 4240,
-   "mcap": 0.1537,
+   "price": 3910,
+   "mcap": 0.1417,
    "shares": 36250386,
    "total_shares": 38010802,
-   "wavg_shares": 36107165,
-   "per": 6.615,
-   "eps": 641,
-   "pbr": 0.4286,
-   "bps": 9892,
-   "roe_ttm": 6.5,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": 22834875334,
-   "pbr_krx": 0.41,
+   "wavg_shares": 36073692,
+   "per": 6.006,
+   "eps": 651,
+   "pbr": 0.3861,
+   "bps": 10127,
+   "roe_ttm": 6.6,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": 23500221821,
+   "ccy": "KRW",
+   "bps_src": "자체",
+   "eps_src": "공시",
+   "pbr_krx": 0.4,
    "bps_krx": 9858.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 250.0,
-   "div": 5.9
+   "div": 6.39
   }
- }
+ },
+ "textRules": 2
 }
