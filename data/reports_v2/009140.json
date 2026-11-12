@@ -338,11 +338,11 @@
    }
   ],
   "valuation": {
-   "price": 21100,
-   "mcap": 0.0275,
-   "shares": 1314132,
-   "total_shares": 1570797,
-   "wavg_shares": 1313708,
+   "price": 10890,
+   "mcap": 0.0286,
+   "shares": 2628264,
+   "total_shares": 3141594,
+   "wavg_shares": 2627416,
    "per": null,
    "eps": null,
    "pbr": null,
@@ -358,11 +358,11 @@
    "dps": 500.0,
    "div": 2.26,
    "shares_patched": {
-    "on": "2026-10-16",
-    "was": 1570797,
-    "now": 1314132,
-    "factor": null,
-    "why": "주식수가 배수로 안 떨어진다(증자 등) — 자본을 다시 받아야 해서 값을 숨긴다"
+    "on": "2026-11-12",
+    "was": 1314132,
+    "now": 2628264,
+    "factor": 0.5,
+    "why": "액면병합·분할·감자 — 배수로 환산"
    }
   }
  }
