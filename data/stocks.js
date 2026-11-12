@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-11-13 06:52",
+  "lastUpdated": "2026-11-13 08:55",
   "dataDate": "20261112",
   "stocks": [
     {
@@ -13796,7 +13796,7 @@ window.KOS_LIVE_DATA = {
       "name": "넥스아이",
       "name_en": "NEX-I, Inc.",
       "market": "코스닥",
-      "sector": "기타",
+      "sector": "바이오·제약",
       "price": 4810,
       "change": -39.88,
       "volume": 30008437,
@@ -13804,7 +13804,7 @@ window.KOS_LIVE_DATA = {
       "mcap": 0.2205,
       "shares": 45845239,
       "categories": [
-        "기타"
+        "바이오·제약"
       ],
       "rank": 766
     },
