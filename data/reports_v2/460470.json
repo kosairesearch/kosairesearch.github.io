@@ -1,230 +1,228 @@
 {
  "title": {
-  "ko": "적자 축소 속 신사업 확장 국면",
-  "en": "Narrowing Losses Amid New Business Expansion"
+  "ko": "분기 매출 변동 속 적자 지속, 해외 수주가 관건",
+  "en": "Lumpy overseas orders keep IVIM in the red"
  },
  "lead": {
-  "ko": "아이빔테크놀로지는 수년째 이어진 영업손실 속에서도 손실 규모를 점진적으로 줄여가는 동시에, 로봇암 생체현미경과 AI 조직분석기기 등 신사업으로 포트폴리오를 넓히고 있다.",
-  "en": "IVIM Technology continues to post operating losses, but the scale of losses has gradually narrowed while the company expands its portfolio into new areas such as a robotic-arm two-photon microscope and AI-based tissue diagnostics."
+  "ko": "2026년 2분기 매출은 29.8억원으로 크게 늘었다가 3분기에 13.5억원으로 줄었고, 3분기 영업손실은 11.6억원으로 확대됐다. 해외 장비 수주가 분기 실적을 얼마나 안정적으로 떠받칠지가 핵심 쟁점이다.",
+  "en": "Revenue jumped to KRW 2.98 billion in the second quarter of 2026 before falling to KRW 1.35 billion in the third quarter, while the operating loss widened to KRW 1.16 billion. Whether overseas equipment orders can steady quarterly results is the central issue."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 43.8억원, 영업손실 41.5억원으로 2024년보다 매출은 늘고 영업손실은 소폭 줄었다.",
-   "en": "2025 revenue was KRW 4.38bn with an operating loss of KRW 4.15bn, revenue up and the operating loss slightly narrower than 2024."
+   "ko": "공시 기준 2025년 매출은 43.8억원으로 전년 대비 22.8% 증가했지만, 영업손실 41.5억원으로 적자가 이어졌다.",
+   "en": "On disclosed figures, 2025 revenue rose 22.8% year on year to KRW 4.38 billion, yet the company still posted an operating loss of KRW 4.15 billion."
   },
   {
-   "ko": "최근 4개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순손실은 약 26.8억원으로 2025년 연간 순손실(38.0억원)보다 개선된 궤적을 보였다.",
-   "en": "Over the trailing four quarters (Q3 2025-Q2 2026), the cumulative net loss attributable to owners was about KRW 2.68bn, an improved trajectory versus the full-year 2025 net loss of KRW 3.80bn."
+   "ko": "2026년 3분기 영업손실은 11.6억원으로 전 분기보다, 그리고 전년 동기보다 적자 폭이 커졌다.",
+   "en": "The operating loss in the third quarter of 2026 was KRW 1.16 billion, a wider loss than both the prior quarter and the same quarter a year earlier."
   },
   {
-   "ko": "2026년 1분기 매출이 7,680만원으로 급감한 뒤 2분기에 29.8억원으로 급증하는 등 장비 인도 시점에 따른 분기 매출 편차가 크다.",
-   "en": "Revenue plunged to KRW 76.8mn in Q1 2026 before rebounding sharply to KRW 2.98bn in Q2 2026, reflecting large quarter-to-quarter swings tied to equipment delivery timing."
+   "ko": "2026년 상반기 매출은 보도 기준 30.5억원으로, 전년 동기(8억 7,000만원) 대비 3.5배 수준으로 늘었다.",
+   "en": "Based on press reports, first-half 2026 revenue reached KRW 3.05 billion, about 3.5 times the prior-year level."
   },
   {
-   "ko": "로봇암 이광자 생체현미경(IVM-RMS)이 GMP 적합 인증과 2등급 의료기기 제조인증을 획득해 수술실 진입을 위한 제도적 요건을 갖췄다.",
-   "en": "The robotic-arm two-photon microscope (IVM-RMS) obtained GMP compliance certification and Class 2 medical device manufacturing approval, meeting the regulatory requirements for operating-room use."
+   "ko": "생체현미경 장비 판매 비중은 2023년 83.3%에서 2025년 3분기 누적 68.5%로 낮아졌고, CRO 서비스 비중은 9.5%다.",
+   "en": "The share of microscope equipment sales fell from 83.3% in 2023 to 68.5% on a cumulative basis through the third quarter of 2025, while CRO services accounted for 9.5%."
   },
   {
-   "ko": "AI 조직분석 의료기기(IVM-MS-C)는 임상시험을 신청한 상태로, 2026년 1월 보도 시점 기준 4분기 출시가 목표로 제시됐다(잠정).",
-   "en": "The AI tissue-analysis device (IVM-MS-C) has filed for clinical trials, with a Q4 2026 launch targeted as of a January 2026 report (provisional)."
+   "ko": "2025년 말 부채비율은 9.4%이고 자본총계는 276억원이지만, 영업활동 현금흐름은 2023~2025년 모두 마이너스다.",
+   "en": "The debt ratio at the end of 2025 was 9.4% with total equity of KRW 27.6 billion, but operating cash flow was negative in each year from 2023 to 2025."
   }
  ],
  "business": {
-  "ko": "아이빔테크놀로지는 2017년 KAIST의 생체현미경 원천기술을 바탕으로 설립된 생명공학 기업으로, 국내 최초로 올인원 일체형 생체현미경 장비의 상용화에 성공했다. 사업은 크게 생체현미경 장비 판매, CRO(위탁연구) 서비스, AI 기반 의료기기 개발 세 축으로 구성된다. 2025년 3분기 누적 기준 매출 비중은 생체현미경 판매가 68.5%로 가장 크고, CRO 서비스 9.5%, 이미징·액세서리 2.0%, 기타 매출이 약 20%를 차지한다. 주요 고객은 국내외 최상위 대학·연구기관이며, 글로벌 장비사 레비티(Revvity)를 통한 중국법인 공급 등 해외 레퍼런스를 넓혀가고 있다. 최근에는 이동형 로봇암을 탑재한 이광자 생체현미경(IVM-RMS)이 GMP 적합 인증과 2등급 의료기기 제조인증을 획득해 연구용 분석장비에서 수술실 현장 의료기기로 영역을 확장하는 단계에 들어섰다. 이 장비는 수술 중 절제하지 않고도 병변 조직을 세포 단위로 실시간 관찰할 수 있으며, 특정 암종에 국한되지 않는 범용 플랫폼 성격을 지닌다. 이와 별도로 기존 조직검사(동결절편분석)의 한계를 극복하기 위한 AI 조직분석 의료기기(IVM-MS-C)도 개발해 임상시험을 신청한 상태다. 회사는 올인원 생체현미경의 기술적 우위를 기반으로 국내외 최상위 연구기관 중심으로 판매처를 확대하며 글로벌 전임상 이미징 시장에서 포지션을 넓히고 있다.",
-  "en": "IVIM Technology is a biotechnology company founded in 2017 based on intravital microscopy source technology developed at KAIST, and it succeeded in commercializing Korea's first all-in-one intravital microscopy system. The business is organized around three pillars: intravital microscope equipment sales, CRO (contract research organization) services, and AI-based medical device development. On a cumulative basis through Q3 2025, revenue mix was led by microscope equipment sales at 68.5%, followed by CRO services at 9.5%, imaging and accessories at 2.0%, and other revenue at roughly 20%. Key customers are top-tier domestic and overseas universities and research institutes, and the company has been broadening its overseas references, including supply to the China subsidiary of global life-science equipment maker Revvity. More recently, its mobile robotic-arm two-photon microscope (IVM-RMS) obtained GMP compliance certification and Class 2 medical device manufacturing approval, marking a step from research-use analytical equipment toward operating-room medical devices. This device can observe lesion tissue in real time at the cellular level without excision, and is positioned as a versatile platform not limited to a specific cancer type. Separately, the company has developed an AI tissue-analysis device (IVM-MS-C) aimed at overcoming the limitations of conventional frozen-section biopsy and has filed for clinical trials. The company is expanding its customer base among top domestic and overseas research institutions on the strength of its all-in-one microscope's technological edge, broadening its position in the global preclinical imaging market."
+  "ko": "아이빔테크놀로지는 KAIST 교원창업 벤처로 2017년 설립된 생체현미경 제조사이며, 2024년 코스닥 상장 회사다. 주력 제품인 생체현미경(IVM)은 살아 있는 생체 내 세포 영상, 약물 효능 검증, 약물 전달 영상에 쓰이는 장비다. 사업 영역은 장비 판매, CRO 서비스, AI 기반 의료기기 개발로 나뉜다. 2025년 3분기 누적 매출 구성을 보면 장비 판매가 가장 크고 CRO 서비스 비중은 작은 편이다. 2023년에는 생체현미경 제품 비중이 더 높았으므로, 장비 판매 비중이 낮아지고 CRO와 기타 매출의 비중이 커진 흐름으로 읽힌다. 고객층은 대학·연구기관에서 글로벌 제약사로 확장되고 있다. 사노피는 자체 연구 프로그램에 활용하기 위해 생체현미경을 도입했고, 키에시는 CRO 서비스를 먼저 이용한 뒤 장비를 구매했다. 수출은 미국과 중국, 유럽에서 고르게 발생하며, 중국에서는 Revvity와 현지 판매를 진행한다. 해외 판매가격은 통상 약 50만달러 수준이며, 장비 공급 이후에는 유지보수 계약과 소모품, 장기별 액세서리 판매가 추가로 발생한다. 경쟁 측면에서 2024년 보도에서는 IVM 제품군을 실제 연구 현장에 공급하는 기업이 아이빔테크놀로지뿐이라고 소개했고, 대표는 해외 일부 기업이 쥐의 조직 1~2개를 촬영하는 기술을 선보이고 있지만 자사 기술에는 크게 못 미친다고 주장했다. 암 수술 중 잔존 암세포를 판별하는 AI 의료기기도 조직을 직접 촬영하고 AI를 활용해 암세포 존재 여부를 판별하는 방식으로 개발 중이다.",
+  "en": "IVIM Technology is a bioimaging equipment maker founded in 2017 as a KAIST faculty-founded venture, and it listed on KOSDAQ in 2024. Its core product, the intravital microscope (IVM), is used for in vivo cell imaging, drug efficacy testing and drug delivery imaging in living animals. The business is organized into equipment sales, contract research (CRO) services and the development of AI-based medical devices. Equipment sales accounted for the largest share of revenue on a cumulative basis through the third quarter of 2025, with CRO services and imaging accessories making up much less. The microscope share was higher in 2023, so the mix has shifted toward CRO and other revenue. The customer base has widened from universities and research institutes to global pharmaceutical companies, including Sanofi. Exports are spread across the United States, China and Europe, with Revvity handling local sales in China. Overseas list prices are typically around USD 500,000, and maintenance contracts and consumables follow after installation. In competition, the company's CEO has argued that overseas peers can image only one or two tissues at a time, while IVIM's technology handles about thirty. An AI medical device for detecting residual cancer cells during surgery is in development."
  },
  "earnings": {
-  "ko": "연간 실적을 보면 매출은 2023년 44.95억원에서 2024년 35.64억원으로 줄었다가 2025년 43.76억원으로 다시 늘었다. 영업손실은 2023년 29.05억원(영업이익률 -64.6%)에서 2024년 43.09억원(-120.9%)으로 확대된 뒤 2025년 41.53억원(-94.9%)으로 소폭 개선됐다. 지배주주 순손실은 2023년 50.44억원, 2024년 40.03억원, 2025년 38.03억원으로 3년 연속 줄어드는 흐름을 보였다. 자기자본은 2023년 128.2억원에서 2024년 상장 자금 유입으로 312.7억원까지 늘었으나, 지속된 손실로 2025년 276.4억원으로 다시 줄었다. 부채비율은 2023년 29.0%에서 2024년 11.6%, 2025년 9.4%로 매우 낮은 수준을 유지해 재무 안정성 자체는 견고한 편이다. 영업활동현금흐름은 2023년 -34.5억원, 2024년 -69.3억원, 2025년 -42.5억원으로 매년 마이너스를 기록했으며 2024년 대비로는 유출 규모가 줄었다. 분기별로는 2025년 3분기(매출 16.5억원, 영업손실 7.0억원)와 4분기(매출 18.5억원, 영업손실 7.4억원)에 손실이 눈에 띄게 완화됐으나, 2026년 1분기 매출이 7,680만원으로 급감하며 영업손실이 14.6억원으로 다시 확대됐다. 이후 2026년 2분기 매출이 29.8억원으로 급증하면서 영업손실은 2.0억원까지 줄었고, 최근 4개 분기(2025년 3분기~2026년 2분기) 합산 지배주주 순손실은 26.8억원으로 2025년 연간 순손실보다 개선된 수준을 나타냈다.",
-  "en": "Annual revenue fell from KRW 4.495bn in 2023 to KRW 3.564bn in 2024 before recovering to KRW 4.376bn in 2025. The operating loss widened from KRW 2.905bn (operating margin of -64.6%) in 2023 to KRW 4.309bn (-120.9%) in 2024, then narrowed slightly to KRW 4.153bn (-94.9%) in 2025. Net loss attributable to owners declined for three straight years, from KRW 5.044bn in 2023 to KRW 4.003bn in 2024 and KRW 3.803bn in 2025. Equity rose from KRW 12.82bn in 2023 to KRW 31.27bn in 2024 on IPO proceeds, then fell back to KRW 27.64bn in 2025 as losses continued to accumulate. The debt ratio stayed very low, moving from 29.0% in 2023 to 11.6% in 2024 and 9.4% in 2025, indicating solid balance-sheet stability. Operating cash flow was negative every year — KRW -3.45bn in 2023, KRW -6.93bn in 2024 and KRW -4.25bn in 2025 — though the cash outflow narrowed from the 2024 peak. On a quarterly basis, losses eased notably in Q3 2025 (revenue KRW 1.65bn, operating loss KRW 0.70bn) and Q4 2025 (revenue KRW 1.85bn, operating loss KRW 0.74bn), but Q1 2026 revenue plunged to KRW 76.8mn and the operating loss widened again to KRW 1.46bn. Revenue then surged to KRW 2.98bn in Q2 2026 while the operating loss shrank to KRW 0.20bn, and the trailing four-quarter (Q3 2025-Q2 2026) net loss attributable to owners of KRW 2.68bn came in better than the full-year 2025 net loss."
+  "ko": "공시 실적으로 보면 매출은 2023년 45억원에서 2024년 35.6억원(전년 대비 20.7% 감소)으로 줄었다가, 2025년 43.8억원(전년 대비 22.8% 증가)으로 회복했다. 2023~2025년 중 가장 큰 해는 2023년, 가장 작은 해는 2024년이다. 영업손실은 2023년 29.1억원, 2024년 43.1억원, 2025년 41.5억원이었고, 영업이익률은 -64.6% → -120.9% → -94.9%로 집계됐다. 2024년에는 매출이 줄면서 영업손실이 늘어 적자가 확대됐고, 2025년에는 매출이 회복되면서 손실 규모가 줄었다. 지배주주 순손실은 2023년 50.4억원, 2024년 40억원, 2025년 38억원이며, 당기순손실(비지배지분 포함)도 같은 금액으로 공시됐다. 2025년 말 자본총계는 276억원(지배주주 지분 동일)이고 부채총계는 25.9억원, 부채비율은 9.4%다. 영업활동 현금흐름은 2023년 -34.5억원, 2024년 -69.3억원, 2025년 -42.5억원이었다. 분기로 보면 2025년 3분기 매출 16.5억원, 4분기 18.5억원(전 분기 대비 11.8% 증가)이었고, 2026년 1분기에는 7,680만원(전 분기 대비 95.8% 감소)으로 급감했다. 2026년 2분기 매출은 29.8억원(전 분기 대비 3,776.8% 증가), 3분기는 13.5억원(전 분기 대비 54.6% 감소, 전년 동기 대비 18.2% 감소)이었다. 영업손실은 2025년 3분기 7억원, 4분기 7.4억원, 2026년 1분기 14.6억원, 2분기 2억원, 3분기 11.6억원으로, 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 적자다. 지배주주 순손실은 3분기 5.9억원, 4분기 6.2억원, 2026년 1분기 13.6억원, 2분기 1.1억원, 3분기 12.7억원이며, 최근 4개 분기 합계는 33.7억원이다. 장비 매출은 구매 결정까지 시간이 오래 걸리고, 잠재 고객이 실제 구매에 이르기까지 통상 약 2년이 소요되는 특성이 있어 분기별로 크게 흔들리는 구조다.",
+  "en": "On disclosed annual figures, revenue fell from KRW 4.5 billion in 2023 to KRW 3.56 billion in 2024, a 20.7% decline, before recovering to KRW 4.38 billion in 2025, a 22.8% increase. Among 2023 to 2025, 2023 was the largest revenue year and 2024 the smallest. Operating losses were KRW 2.91 billion in 2023, KRW 4.31 billion in 2024 and KRW 4.15 billion in 2025, with operating margins of -64.6%, -120.9% and -94.9%. In 2024 the operating loss widened as revenue declined, while in 2025 the loss narrowed as revenue recovered. The loss attributable to controlling shareholders was KRW 5.04 billion in 2023, KRW 4 billion in 2024 and KRW 3.8 billion in 2025, and the net loss including non-controlling interests was the same in each year. At the end of 2025, total equity was KRW 27.6 billion, total liabilities were KRW 2.59 billion and the debt ratio was 9.4%. Operating cash flow was KRW -3.45 billion in 2023, KRW -6.93 billion in 2024 and KRW -4.25 billion in 2025. On a quarterly basis, revenue was KRW 1.65 billion in the third quarter of 2025 and KRW 1.85 billion in the fourth quarter, an 11.8% quarter-on-quarter increase, before falling to KRW 76.8 million in the first quarter of 2026, a 95.8% decline. Revenue rose to KRW 2.98 billion in the second quarter of 2026, up 3,776.8% from the prior quarter, and then fell to KRW 1.35 billion in the third quarter, down 54.6% quarter on quarter and 18.2% year on year. Operating losses ran at KRW 704 million, KRW 745 million, KRW 1.46 billion, KRW 195 million and KRW 1.16 billion over the five quarters from the third quarter of 2025 to the third quarter of 2026, so the company has recorded losses for five consecutive quarters. The loss attributable to controlling shareholders was KRW 588 million, KRW 619 million, KRW 1.36 billion, KRW 114 million and KRW 1.27 billion over the same quarters, and the four-quarter total from the fourth quarter of 2025 through the third quarter of 2026 was KRW 3.37 billion. Equipment sales depend on long purchase decisions, as the company's half-year report indicates a typical lead of about two years, which helps explain the sharp quarter-to-quarter swings."
  },
  "industry": {
-  "ko": "회사가 속한 전임상 바이오이미징·CRO 시장은 글로벌 신약 개발 파이프라인 확대와 함께 완만하게 성장하고 있으며, 올인원 생체현미경의 기술적 우위를 바탕으로 주요 시장에서 장비 판매를 추진 중이다. 전 세계적으로 동물실험을 대체·축소하려는 정책적 흐름이 진행되고 있으나, 임상 프로토콜 표준화와 장비 가격 등의 제약으로 모든 연구시설이 즉시 대체 장비를 도입하기는 어려운 상황이며, 이 과도기가 CRO 사업 성장의 기회 요인으로 지목된다. 경쟁구도 측면에서는 학계 중심 거래처에서 바이오·제약사로의 직접 진출과 글로벌 OEM 공급 확대가 진행되며 매출 다각화가 시도되고 있다. 동종 업종 내에서는 액체생검·비임상 CRO 기업들의 성장 둔화 우려가 함께 거론되는 등 전임상 서비스 시장 전반의 수요 사이클도 함께 살펴볼 필요가 있다. 회사는 세계 최초의 올인원(공초점·이광자 통합) 생체현미경이라는 기술적 차별점을 보유하고 있어, 유사한 통합형 장비를 상용화한 경쟁사가 사실상 없다는 점이 경쟁 포지션의 핵심 근거로 제시된다. 다만 시장 규모 자체가 아직 크지 않은 니치 마켓이라는 점, 그리고 신제품(로봇암 현미경, AI 진단기기)의 상용화 성패가 향후 시장 지위를 좌우할 것이라는 점은 함께 고려할 부분이다.",
-  "en": "The preclinical bioimaging and CRO market the company operates in is growing gradually alongside the expansion of global drug-development pipelines, and the company is pursuing equipment sales in major markets on the strength of its all-in-one intravital microscope. A global policy trend toward reducing or replacing animal testing is underway, but constraints such as unstandardized clinical protocols and equipment cost mean not all research facilities can immediately adopt replacement equipment, and this transition period is cited as an opportunity for CRO business growth. On the competitive front, the company is attempting revenue diversification by moving from academia-centered clients toward direct engagement with biotech and pharmaceutical companies and expanding global OEM supply. Within the broader sector, concerns about slowing growth at liquid-biopsy and preclinical CRO peers have also been raised, suggesting the demand cycle for preclinical services overall warrants continued monitoring. The company holds a technological differentiator as the world's first all-in-one (confocal plus two-photon) intravital microscope, with essentially no direct competitor having commercialized a similarly integrated system. That said, the addressable market remains a relatively small niche, and the success of new products such as the robotic-arm microscope and AI diagnostic device will likely shape the company's future market standing."
+  "ko": "생체현미경 수요는 신약 후보물질이 살아 있는 생체 안에서 어떻게 이동하고 표적 세포에 도달하는지 검증하려는 제약·바이오 연구에서 나온다. 2024년 증권 자료는 글로벌 이광자 현미경 시장이 2022년부터 2031년까지 연평균 6.9% 성장할 것으로 전망된다고 정리했다. 동물실험을 줄이는 흐름은 전 세계적으로 동물실험 폐지 수순을 밟고 있어 장기적으로 대체 기술 수요를 키울 수 있다. 다만 임상 프로토콜의 표준화와 장비 가격 때문에 당장 오가노이드 대상 현미경을 도입하기에는 한계가 있다는 분석도 함께 나온다. 2026년 3월 증권사 리포트는 이 공백을 과도기적 수요로 보았다. 회사 장비의 이광자(Two-Photon) 방식은 기존 공초점 현미경과 비교해 스캔 속도가 빠르고, 실험 개체를 살아 있는 상태로 유지하는 히팅 플레이트와 AI 영상 보정 기능을 갖췄다고 설명된다. 경쟁 구도에서 회사는 레이저 기반 생체현미경 분야의 선도 기업으로 소개되며, 세계 주요 대학이나 기관, 기업 등 20여 곳이 IVM 제품을 도입한 것으로 알려졌다. 국내 유사 장비 기업과의 직접 비교 수치는 확인되지 않은 상태로, 시장 점유율은 사실로 쓸 수 없다. 장비 가격은 연구용 IVM 5종이 1대당 3억~6억원 수준으로 보도됐다. 업종 분류는 전기장비이지만 실제 사업은 기타 광학기기 제조업으로 분류된다.",
+  "en": "Demand for intravital microscopy comes from pharmaceutical and biotech research that tests how drug candidates move and reach target cells inside living bodies. A 2024 securities report projected the global two-photon microscopy market to grow at an average annual rate of 6.9% from 2022 to 2031. The global move to reduce animal testing could expand demand for alternative technologies over time. Analysts also note that protocol standardization and equipment costs limit the near-term shift to organoid-based microscopes. A 2026 securities report viewed this gap as transitional demand that the company's equipment can serve. The company's two-photon design is described as faster in scanning than confocal systems, with heating plates for keeping animals alive and AI image correction. In competition, the company is presented as a leader in laser-based intravital microscopy, with about twenty institutions reported to have adopted its IVM products. No direct quantitative comparison with domestic peers was confirmed, so market share cannot be stated. Research IVM systems have been reported at roughly KRW 300 million to KRW 600 million per unit. The sector classification is electrical equipment, while the business is classified as other optical instrument manufacturing."
  },
  "outlook": {
-  "ko": "회사는 2026년 상반기 학계 중심 거래처에서 바이오·제약 산업으로의 직접 진출과 글로벌 OEM 공급 확대 등 매출 다각화 전략이 성과로 이어지고 있다고 밝히며, 하반기에도 성장 모멘텀을 이어가겠다는 방침을 제시했다. 레비티 중국법인에 생체현미경 'IVM-CMS3'를 추가 공급하는 등 해외 레퍼런스 확대가 이어지고 있다. AI 조직분석 의료기기(IVM-MS-C)는 임상시험을 신청한 상태로, 2026년 1월 시점 보도 기준 이르면 상반기 임상을 마무리하고 4분기 출시를 목표로 제시된 바 있다(잠정 계획으로, 이후 진행 상황 확인 필요). 경영진은 2026년 5월 인터뷰에서 AI 기반 조직분석 의료기기의 허가용 임상이 그해 하반기 종료된다고 밝혔다. 같은 시기 기초과학연구원(IBS)에 생체현미경을 네 번째로 공급하는 4.4억원 규모 계약을 체결해 국내 최상위 연구기관 레퍼런스를 추가했다. 로봇암 이광자 생체현미경(IVM-RMS)은 GMP 적합 인증과 2등급 의료기기 제조인증 획득을 발판으로 AI 딥러닝 기반 암 진단보조 소프트웨어와의 연동 개발과 체내 환경 최적화를 위한 실증 임상을 순차적으로 추진할 계획이다. 이 같은 신제품 파이프라인이 계획대로 진행될 경우 장비 판매·CRO에 이어 의료기기 부문이 세 번째 매출 축으로 자리잡을 가능성이 있으나, 임상·인허가 일정은 통상 지연 가능성을 내포한다.",
-  "en": "The company stated that in H1 2026 its revenue-diversification strategy — moving from academia-centered clients toward direct engagement with the biotech and pharmaceutical industry alongside expanded global OEM supply — began translating into results, and it laid out plans to sustain that growth momentum in H2. Overseas reference expansion has continued, including additional supply of the 'IVM-CMS3' intravital microscope to Revvity's China subsidiary. The AI tissue-analysis device (IVM-MS-C) has filed for clinical trials, and as of a January 2026 report the company targeted completing trials as early as mid-2026 with a Q4 2026 launch (a provisional plan whose progress needs to be verified going forward). In a May 2026 interview, management said the approval-track clinical trial for the AI-based tissue-analysis device would conclude in H2 of that year. Around the same time, the company signed a KRW 440 million contract to supply its fourth intravital microscope to the Institute for Basic Science (IBS), adding another top-tier domestic research reference. Building on GMP compliance certification and Class 2 medical device manufacturing approval for the robotic-arm two-photon microscope (IVM-RMS), the company plans to sequentially pursue integration with AI deep-learning cancer-diagnosis assistance software and validation clinical studies optimized for in-vivo conditions. If this new-product pipeline proceeds as planned, the medical device segment could become a third revenue pillar alongside equipment sales and CRO, though clinical and regulatory timelines typically carry the risk of delay."
+  "ko": "회사는 2026년 하반기부터 생체현미경 솔루션을 활용한 CRO 사업을 본격화했다고 밝혔다. CRO 사업은 자체적으로 장비를 도입하기 어려운 바이오텍이나 대학 연구소를 대상으로 신약 후보물질의 검증과 기초의학 연구를 대행하는 서비스다. 2026년 9월 보도에 따르면 미국 국립환경보건과학연구소(NIEHS)와 예일대학교에 잇따라 생체현미경을 공급했고, 이틀 연속 약 10억 7,000만원 규모의 생체현미경 주문을 확보한 것으로 전해졌다. 유통망도 확장 중이며 베트남과 인도네시아에서 신규 대리점 계약을 체결했다. 대표는 주요 고객사와 장비 개별 공급을 넘어 대량 수주 계약을 늘리기 위해 준비하고 있다고 말했다. 중국 쪽에서는 Revvity향 전체 5-6개 프로젝트 중 4-5개 프로젝트를 2026년 내 매출로 인식하는 것을 목표로 제시됐다(2026년 3월 증권사 리포트). 같은 리포트는 한국, 중국, 미국, 유럽의 대학과 병원을 중심으로 전 세계 10여 건의 데모가 진행 중이라고 소개했다. 의료기기 사업은 수술 중 잔존 암세포 여부를 슬라이드 제작 없이 판별하는 방향으로 개발되고 있으나, 임상시험계획(IND) 승인 시점은 공개된 자료에서 확인되지 않는다. 2024년 보도 기준으로는 IND 신청을 준비 중이라고 밝혔다. 경영진은 우선 내년 손익분기점(BEP)을 맞출 수 있도록 노력하겠다는 목표를 밝혔다. 분기 매출의 변동 폭이 큰 만큼, 해외 대형 수주가 얼마나 반복적으로 나오는지가 BEP 목표의 관건이다.",
+  "en": "The company said it began scaling its CRO business using its microscopy solutions in the second half of 2026. The CRO service covers validation of drug candidates and basic medical research for biotech firms and university labs that cannot easily buy equipment themselves. According to a September 2026 press report, the company supplied microscopes to the National Institute of Environmental Health Sciences (NIEHS) and Yale University in succession, and secured orders of about KRW 1.07 billion over two consecutive days. It also signed new distributor agreements in Vietnam and Indonesia, and the CEO said the company is preparing bulk supply contracts beyond individual equipment sales. A 2026 securities report projected that four to five of five to six Revvity-linked projects would be recognized as revenue within 2026, alongside roughly ten demonstrations ongoing across Korea, China, the United States and Europe. The medical device is being developed to detect residual cancer cells during surgery, but the timing of regulatory approval for clinical trials has not been confirmed in the available material. A 2024 report said the company was preparing an IND application. Management has stated a goal of reaching breakeven in fiscal 2027. Given the wide swings in quarterly revenue, whether large overseas orders recur will determine progress toward that target."
  },
  "valuation_comment": {
-  "ko": "아이빔테크놀로지는 최근 4개 분기 연속 순손실을 기록하고 있어 주가수익비율(PER)을 산정할 수 없는 구간에 있다. 주가순자산비율(PBR)은 순자산 대비 일정한 프리미엄이 형성된 수준으로, 자체 산정치와 거래소 공시치가 유사한 범위에서 형성돼 있다. 배당은 지급되지 않고 있어 배당수익률 관련 비교도 의미를 갖기 어렵다. 연간 순손실이 2023년부터 2025년까지 매년 줄어드는 흐름을 보이며 적자 규모가 완화되는 추세이지만, 자기자본은 여전히 손실로 인해 잠식되는 구간에 있다. 시가총액 자체가 코스닥 내에서도 소형주에 해당해 거래 유동성과 가격 변동성이 상대적으로 크게 나타날 수 있는 종목이라는 점도 함께 고려할 필요가 있다.",
-  "en": "IVIM Technology has posted net losses for four consecutive quarters, putting it in a range where a price-earnings ratio cannot be calculated. Its price-to-book ratio sits at a level carrying a certain premium over net asset value, with the company's own calculation and the exchange-reported figure falling within a similar range. No dividend is paid, so dividend-yield comparisons are not meaningful either. Annual net losses have narrowed each year from 2023 through 2025, indicating a trend of easing losses, but equity is still being eroded by continued losses. It is also worth noting that the market capitalization itself places the stock among smaller names even within KOSDAQ, a segment where trading liquidity and price volatility can be relatively pronounced."
+  "ko": "최근 네 개 분기 순손실이 이어지고 있어 이익 기반 배수인 주가수익비율(PER)은 산출되지 않는 상태다. 이 때문에 비교 기준은 장부상 순자산(자본총계) 대비 주가 수준을 보는 주가순자산비율(PBR)이 중심이 된다. PBR이 1배를 웃도는 구간에 있어, 주가는 장부상 자본가치보다 높은 수준에서 형성되어 있다. 이는 장부 자산 외에 해외 수주와 CRO 사업의 성장성이 가격에 포함되어 있다는 사실적 구조로 읽힌다. 배당은 지급되지 않는 상태라 배당 기준의 비교는 적용되지 않는다. 이익 기반 배수는 영업손실이 줄어 흑자 전환이 이뤄지는 시점부터 의미를 갖게 되며, 경영진이 제시한 2027년 손익분기점 목표가 그 출발점이 된다. 부채비율이 9.4%이고 자본총계가 276억원인 재무 구조는 부채 부담이 낮은 편임을 보여 준다. 다만 영업활동 현금흐름이 2023~2025년 모두 마이너스였다는 점은 자산 기반 평가에서도 함께 봐야 할 사실이다.",
+  "en": "Because the company has posted losses for the last four quarters, the price-to-earnings ratio cannot be calculated. The price-to-book ratio, which compares the share price with book equity, therefore serves as the main reference point. The price-to-book ratio is above 1 times, which means the share price sits above book value. This structure implies that growth from overseas orders and CRO services is reflected in the price beyond the balance sheet assets. The company pays no dividend, so yield-based comparisons do not apply. Earnings-based multiples will become meaningful once operating losses narrow and the company turns profitable, and management's breakeven target for fiscal 2027 is the starting point for that comparison. A debt ratio of 9.4% and total equity of KRW 27.6 billion indicate a relatively light debt burden. Operating cash flow was negative in each year from 2023 to 2025, which is also a fact to weigh in any asset-based assessment."
  },
  "bull": [
   {
    "title": {
-    "ko": "해외 레퍼런스 확대와 2026년 상반기 매출 회복",
-    "en": "Expanding Overseas References and H1 2026 Revenue Recovery"
+    "ko": "해외 수주와 유통망 확대",
+    "en": "Overseas orders and wider distribution"
    },
    "body": {
-    "ko": "회사는 학계 중심 거래처에서 바이오·제약 산업으로 직접 진출하고 글로벌 OEM 공급을 확대하는 매출 다각화 전략이 성과로 이어지고 있다고 밝혔다. 레비티 중국법인에 생체현미경을 추가 공급하는 등 해외 레퍼런스 확대가 지속되고 있다. 2026년 2분기 매출은 29.8억원으로 직전 분기(7,680만원) 대비 크게 늘었고, 영업손실도 2.0억원까지 줄어 최근 분기 중 가장 양호한 손익을 보였다. 이런 흐름이 하반기까지 이어질지가 관전 포인트다.",
-    "en": "The company said its revenue-diversification strategy — moving from academia-centered clients toward direct engagement with biotech and pharma while expanding global OEM supply — is beginning to bear fruit. Overseas reference expansion has continued, including additional intravital microscope supply to Revvity's China subsidiary. Q2 2026 revenue jumped to KRW 2.98bn from KRW 76.8mn in the prior quarter, and the operating loss narrowed to KRW 0.20bn, the best quarterly result recently. Whether this momentum carries through H2 is a key point to watch."
+    "ko": "2026년 9월 보도에 따르면 미국 NIEHS와 예일대학교에 잇따라 생체현미경을 공급했고, 상반기 매출은 전년 동기 대비 3.5배 수준으로 늘었다. 대표는 전 사업 부문 실적이 지난해보다 약 두 배 늘었다고 밝혔다. 동남아 대리점 확보도 유통 채널 확대를 뒷받침한다.",
+    "en": "According to a September 2026 press report, the company supplied NIEHS and Yale University in succession, and first-half revenue reached about 3.5 times the prior-year level. The CEO said results across all business segments roughly doubled from the prior year. New distributor agreements in Southeast Asia also support the expansion of sales channels."
    }
   },
   {
    "title": {
-    "ko": "로봇암 이광자 현미경·AI 진단기기로 사업 다각화",
-    "en": "Business Diversification via Robotic Two-Photon Microscope and AI Diagnostics"
+    "ko": "CRO 고객층 전환",
+    "en": "Shift of CRO customers toward biotech"
    },
    "body": {
-    "ko": "로봇암 이광자 생체현미경(IVM-RMS)이 GMP 적합 인증과 2등급 의료기기 제조인증을 획득해 연구용 분석장비에서 수술실 현장 의료기기로 영역을 확장하는 계기를 마련했다. 이 장비는 특정 암종에 국한되지 않는 범용 플랫폼으로 설계돼 확장성이 있다는 평가다. 회사는 이를 발판으로 AI 딥러닝 기반 암 진단보조 소프트웨어와의 연동 개발과 실증 임상을 순차적으로 추진할 계획이다. AI 조직분석 의료기기(IVM-MS-C) 역시 임상시험을 신청한 상태로 신규 매출원 확보 가능성이 열려 있다.",
-    "en": "The robotic-arm two-photon microscope (IVM-RMS) obtained GMP compliance certification and Class 2 medical device manufacturing approval, providing a foothold to expand from research-use analytical equipment into operating-room medical devices. The device is designed as a versatile platform not limited to a specific cancer type, which is seen as supporting scalability. Building on this, the company plans to sequentially pursue integration with AI deep-learning cancer-diagnosis assistance software and validation clinical studies. The AI tissue-analysis device (IVM-MS-C) has also filed for clinical trials, keeping open the possibility of a new revenue stream."
+    "ko": "2026년 3월 증권사 리포트는 CRO 사업의 주요 고객처를 연구기관 중심에서 바이오텍으로 재편하는 중이라고 짚었다. 장비 구매 전 CRO로 먼저 접점을 만든 뒤 장비를 사는 경로도 확인된다.",
+    "en": "A March 2026 securities report noted that the CRO business is shifting its main customers from research institutes toward biotech firms. The company also has a path in which customers first use CRO services and then buy equipment."
    }
   },
   {
    "title": {
-    "ko": "낮은 부채비율과 견고한 자본구조",
-    "en": "Low Leverage and a Solid Capital Structure"
+    "ko": "재무 여력과 손익분기 목표",
+    "en": "Balance sheet capacity and breakeven target"
    },
    "body": {
-    "ko": "부채비율은 2023년 29.0%에서 2025년 9.4%로 크게 낮아져 재무 레버리지 부담이 크지 않다. 2024년 상장을 통해 유입된 자금으로 자기자본이 크게 확충됐고, 이후 손실로 일부 잠식됐음에도 여전히 자본잠식과는 거리가 있는 수준을 유지하고 있다. 이러한 자본 여력은 신제품 개발과 임상 진행에 필요한 투자를 이어갈 수 있는 기반이 된다.",
-    "en": "The debt ratio fell sharply from 29.0% in 2023 to 9.4% in 2025, indicating limited financial leverage burden. Equity was substantially bolstered by proceeds from the 2024 listing, and even after being partly eroded by subsequent losses, the company remains far from capital impairment. This capital buffer provides a foundation to continue funding new-product development and clinical trials."
+    "ko": "2025년 말 자본총계는 276억원이고 부채비율은 9.4%로, 부채 부담이 낮은 편이다. 경영진은 우선 내년 손익분기점(BEP)을 맞출 수 있도록 노력하겠다고 밝혔다. 손익이 개선되면 현재의 자본 기반이 사업 확장의 완충 역할을 할 수 있다.",
+    "en": "Total equity at the end of 2025 was KRW 27.6 billion with a debt ratio of 9.4%, a relatively light debt burden. Management said it aims to reach breakeven next year. If profitability improves, the current capital base could cushion business expansion."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "지속되는 영업손실과 마이너스 현금흐름",
-    "en": "Persistent Operating Losses and Negative Cash Flow"
+    "ko": "적자 지속과 손실 확대",
+    "en": "Persistent losses and a wider loss in Q3 2026"
    },
    "body": {
-    "ko": "영업손실은 2023년부터 2025년까지 매년 30억~43억원대에서 벗어나지 못했고, 영업활동현금흐름 역시 3년 연속 마이너스를 기록했다. 이 때문에 자기자본은 2024년 312.7억원에서 2025년 276.4억원으로 줄어드는 등 지속적인 손실이 자본을 갉아먹는 구조가 이어지고 있다. 신제품 매출이 본격화되기 전까지는 이 같은 현금 소진 흐름이 계속될 가능성이 있다.",
-    "en": "The operating loss stayed in the KRW 2.9-4.3bn range every year from 2023 through 2025, and operating cash flow was negative for three consecutive years as well. As a result, equity fell from KRW 31.27bn in 2024 to KRW 27.64bn in 2025, reflecting a structure in which ongoing losses continue to erode capital. This cash-burn pattern could persist until new-product revenue materializes at scale."
+    "ko": "2026년 3분기 영업손실은 11.6억원으로 전 분기 대비와 전년 동기 대비 모두 적자가 확대됐다. 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 적자다. 최근 4개 분기 지배주주 순손실 합계는 33.7억원이다. 흑자 전환의 시기는 명확히 제시되지 않았다는 점도 부담 요인이다.",
+    "en": "The third-quarter 2026 operating loss was KRW 1.16 billion, wider than both the prior quarter and the same quarter a year earlier. The company has recorded losses for five consecutive quarters through the third quarter of 2026. The loss attributable to controlling shareholders over the last four quarters totaled KRW 3.37 billion. No clear timeline for returning to profit has been presented."
    }
   },
   {
    "title": {
-    "ko": "분기별 매출 편차가 큰 매출 인식 구조",
-    "en": "High Quarter-to-Quarter Revenue Volatility"
+    "ko": "분기 매출의 큰 변동성",
+    "en": "Large swings in quarterly revenue"
    },
    "body": {
-    "ko": "2026년 1분기 매출은 7,680만원으로 직전 분기(18.5억원) 대비 급감했다가 2분기 29.8억원으로 다시 급증하는 등 분기별 편차가 매우 크다. 이는 고가 장비 판매의 인도·인식 시점에 매출이 크게 좌우되는 사업 구조에서 비롯된 것으로, 특정 분기의 실적만으로 추세를 단정하기 어렵게 만든다. 이러한 변동성은 향후 실적 예측의 신뢰도를 낮추는 요인이 될 수 있다.",
-    "en": "Revenue swung sharply, plunging to KRW 76.8mn in Q1 2026 from KRW 1.85bn in the prior quarter before surging back to KRW 2.98bn in Q2 2026. This reflects a business structure where revenue depends heavily on the delivery and recognition timing of high-value equipment sales, making it difficult to draw firm trend conclusions from any single quarter. Such volatility can reduce the reliability of forward earnings estimates."
+    "ko": "2026년 1분기 매출은 7,680만원으로 전 분기 대비 95.8% 급감했고, 3분기에는 13.5억원으로 전 분기 대비 54.6% 줄었다. 장비 구매 결정에는 통상 약 2년이 소요되어 대형 수주가 분기 실적을 좌우한다. 수주 시점에 따라 매출이 한 분기에 몰리거나 빠지는 구조다.",
+    "en": "First-quarter 2026 revenue fell to KRW 76.8 million, a 95.8% quarter-on-quarter decline, and third-quarter revenue fell 54.6% to KRW 1.35 billion. Purchase decisions for these instruments typically take about two years, so a few large orders drive quarterly results. Revenue tends to cluster or disappear depending on when orders close."
    }
   },
   {
    "title": {
-    "ko": "신제품 상용화 시점의 불확실성",
-    "en": "Uncertain Timing of New Product Commercialization"
+    "ko": "현금 창출력 부족",
+    "en": "Weak cash generation"
    },
    "body": {
-    "ko": "AI 조직분석 의료기기(IVM-MS-C)는 2026년 1월 보도 시점에 4분기 출시가 목표로 제시됐으나 임상·인허가 절차의 특성상 일정이 변경될 가능성이 있다. 경영진 역시 5월 인터뷰에서 허가용 임상이 하반기 종료된다고 언급했는데, 임상 결과와 규제기관 심사 결과에 따라 실제 출시 시점은 달라질 수 있다. 로봇암 현미경의 AI 소프트웨어 연동 및 실증 임상도 아직 초기 단계에 있어 상용화까지 추가 시간이 필요할 것으로 보인다.",
-    "en": "As of a January 2026 report, the AI tissue-analysis device (IVM-MS-C) targeted a Q4 2026 launch, but given the nature of clinical and regulatory approval processes, the timeline could shift. Management likewise said in a May interview that the approval-track clinical trial would conclude in H2, but the actual launch timing may vary depending on trial results and regulatory review outcomes. Integration of AI software with the robotic-arm microscope and its validation clinical studies also remain at an early stage, suggesting additional time is likely needed before commercialization."
+    "ko": "영업활동 현금흐름은 2023년 -34.5억원, 2024년 -69.3억원, 2025년 -42.5억원으로 세 해 모두 마이너스다. 장비 매출이 인식되더라도 대금 회수와 유지보수 매출이 함께 자리 잡아야 현금이 쌓이는 구조다. 현금 흐름이 개선되지 않으면 자본 기반에 의존하는 기간이 길어질 수 있다.",
+    "en": "Operating cash flow was KRW -3.45 billion in 2023, KRW -6.93 billion in 2024 and KRW -4.25 billion in 2025, negative in all three years. Even when equipment revenue is recognized, cash generation depends on collecting payments and building recurring maintenance revenue. If cash flow does not improve, the company may rely on its capital base for longer."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "실적·현금흐름 리스크",
-    "en": "Earnings and Cash Flow Risk"
+    "ko": "연구 정책과 수요 전환",
+    "en": "Research policy and demand shifts"
    },
    "body": {
-    "ko": "회사는 2023년부터 2025년까지 매년 순손실과 마이너스 영업활동현금흐름을 기록했다. 이 과정에서 자기자본은 2024년 312.7억원에서 2025년 276.4억원으로 줄었다. 신제품 매출이 계획대로 확대되지 않을 경우 추가적인 자본 조달이나 자본 잠식 우려가 제기될 수 있다.",
-    "en": "The company has posted net losses and negative operating cash flow every year from 2023 through 2025. Equity declined from KRW 31.27bn in 2024 to KRW 27.64bn in 2025 over this period. If new-product revenue fails to scale as planned, concerns about further capital raising or capital erosion could arise."
+    "ko": "동물실험을 줄이는 흐름은 동물 실험 감축 단계의 수요에 적합한 제품이라는 평가가 있으나, 장기적으로는 오가노이드 등 대체 기술이 동물 대상 장비 수요를 줄일 수 있다. 회사 장비가 과도기 수요에 머무는지, 대체 기술과 함께 성장하는지는 아직 확인되지 않았다. 연구 예산 변화도 수주 속도에 영향을 줄 수 있다.",
+    "en": "The shift away from animal testing is seen as fitting the transitional phase of demand for the company's equipment. Over the long term, organoid-based alternatives could reduce demand for animal-based microscopes. Whether the company grows alongside such alternatives remains unconfirmed. Changes in research budgets could also affect the pace of orders."
    }
   },
   {
    "cat": {
-    "ko": "매출 변동성 및 주문 인식 리스크",
-    "en": "Revenue Volatility and Order Recognition Risk"
+    "ko": "의료기기 사업화 일정",
+    "en": "Timing of medical device commercialization"
    },
    "body": {
-    "ko": "장비 판매 중심의 사업 구조상 특정 분기에 인도·매출 인식이 몰리거나 지연되는 현상이 반복되고 있다. 2026년 1분기 매출이 7,680만원까지 급감한 사례처럼, 개별 수주 건의 인도 시점 변화가 분기 실적에 큰 영향을 준다. 이는 투자자가 단일 분기 실적을 해석할 때 유의해야 할 부분이다.",
-    "en": "Given the equipment-sales-centric business model, delivery and revenue recognition tend to be concentrated or delayed in particular quarters. As seen when Q1 2026 revenue plunged to KRW 76.8mn, shifts in the delivery timing of individual orders can significantly affect quarterly results. This is a point investors should keep in mind when interpreting any single quarter's performance."
+    "ko": "AI 기반 의료기기는 수술 중 암세포 판별을 목표로 하지만, 2024년 보도 기준 임상시험계획(IND) 신청을 준비하는 단계였다. 승인과 임상 진행 일정이 불확실해 사업화 시점을 특정하기 어렵다. 의료기기 매출이 본격화되기 전까지는 장비 판매와 CRO에 실적이 의존하는 구조다.",
+    "en": "The AI medical device aims to identify cancer cells during surgery, but a 2024 report described the company as preparing an IND application. Approval and clinical timing are uncertain, making the commercialization date difficult to pin down. Until device revenue begins, results will depend on equipment sales and CRO services."
    }
   },
   {
    "cat": {
-    "ko": "규제·임상 리스크",
-    "en": "Regulatory and Clinical Trial Risk"
+    "ko": "보호예수 물량과 수급",
+    "en": "Lock-up shares and supply"
    },
    "body": {
-    "ko": "AI 조직분석 의료기기와 로봇암 생체현미경의 AI 소프트웨어 연동은 임상시험과 규제기관 인허가를 거쳐야 상용화가 가능하다. 임상 결과가 기대에 미치지 못하거나 인허가가 지연될 경우 목표로 제시된 출시 일정이 뒤로 밀릴 수 있다. 의료기기 분야는 예비 사업(장비 판매·CRO)과 달리 규제 강도가 높아 진입 장벽과 동시에 지연 리스크도 동반한다.",
-    "en": "Commercialization of the AI tissue-analysis device and the AI-software integration for the robotic-arm microscope requires clinical trials and regulatory approval. If clinical results fall short of expectations or approval is delayed, the targeted launch schedule could slip. Unlike the company's established equipment-sales and CRO businesses, the medical device field carries higher regulatory intensity, which serves as both an entry barrier and a source of delay risk."
+    "ko": "2026년 자료의 보호예수 표에는 반환 예정일이 2027.08.05로 기재된 물량이 나온다. 해당 시점에 물량이 시장에 나오면 주식 수급에 영향을 줄 수 있다. 실적 변동성이 큰 상황에서 수급 요인이 겹치면 주가의 움직임이 실적 이외 요인에 더 크게 반응할 수 있다.",
+    "en": "A lock-up table in a 2026 securities report lists a return date of August 5, 2027. If shares are released around that time, they could affect supply and demand. Given volatile earnings, supply factors overlapping with earnings swings could make the share price respond more strongly to non-earnings factors."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중",
-    "en": "Around November 2026"
+    "ko": "2026년 12월 말",
+    "en": "End of December 2026"
    },
    "what": {
-    "ko": "2026년 3분기 실적 공시를 통해 2분기의 매출 회복과 손실 축소 흐름이 이어지는지 확인할 필요가 있다.",
-    "en": "The Q3 2026 earnings disclosure should be checked to see whether the Q2 revenue recovery and loss-narrowing trend continues."
+    "ko": "Revvity향 프로젝트 가운데 4~5건을 2026년 내 매출로 인식한다는 목표가 연말까지 실현되는지 확인되는 시점이다. 실현 여부는 해외 장비 매출의 연말 집중도를 보여 준다.",
+    "en": "Whether the targeted recognition of four to five Revvity-linked projects as 2026 revenue is achieved by year-end. The result will show how concentrated overseas equipment revenue is at year-end."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기 중",
-    "en": "During H2 2026"
+    "ko": "2027년 3월 31일까지",
+    "en": "By March 31, 2027"
    },
    "what": {
-    "ko": "경영진이 밝힌 AI 조직분석 의료기기의 허가용 임상 종료 여부와 실제 결과를 확인해야 한다.",
-    "en": "Investors should check whether the approval-track clinical trial for the AI tissue-analysis device concludes as management indicated, and review the actual results."
+    "ko": "2026 사업보고서 제출 기한이다. 2026년 연간 매출, 영업손익, 영업활동 현금흐름이 확정 공시되며, 2026년 4분기 실적이 공시 실적으로 편입된다.",
+    "en": "The deadline for submitting the 2026 annual report. Annual revenue, operating results and operating cash flow for 2026 will be disclosed, and fourth-quarter 2026 results will enter the official record."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기",
-    "en": "Q4 2026"
+    "ko": "2027년 5월 15일까지",
+    "en": "By May 15, 2027"
    },
    "what": {
-    "ko": "AI 조직분석 의료기기(IVM-MS-C)의 목표 출시 시점 도달 여부와 초기 판매 성과를 점검할 시점이다.",
-    "en": "This is the point to check whether the AI tissue-analysis device (IVM-MS-C) reaches its targeted launch and to assess early sales traction."
+    "ko": "2027년 1분기 분기보고서 제출 기한이다. 2026년 3분기 이후 영업손실이 줄어드는지, 분기 매출의 변동 폭이 좁아지는지가 확인된다.",
+    "en": "The deadline for the first-quarter 2027 quarterly report. It will show whether operating losses have narrowed since the third quarter of 2026 and whether quarterly revenue swings have moderated."
    }
   },
   {
    "when": {
-    "ko": "2026년 4분기 이후",
-    "en": "From Q4 2026 onward"
+    "ko": "2027년 8월 5일",
+    "en": "August 5, 2027"
    },
    "what": {
-    "ko": "로봇암 이광자 생체현미경(IVM-RMS)의 AI 진단 소프트웨어 연동 개발과 실증 임상 진행 상황을 순차적으로 확인해야 한다.",
-    "en": "The progress of AI diagnostic software integration and validation clinical studies for the robotic-arm two-photon microscope (IVM-RMS) should be tracked sequentially."
+    "ko": "보호예수 반환 예정일로 표에 기재된 시점이다. 해당 물량의 유통 여부는 주식 수급에 영향을 줄 수 있는 사실이다.",
+    "en": "The lock-up return date listed in the securities report table. Whether these shares enter circulation can affect supply and demand."
    }
   },
   {
    "when": {
-    "ko": "2027년 8월 전후",
-    "en": "Around August 2027"
+    "ko": "2027년 사업연도 중",
+    "en": "During fiscal 2027"
    },
    "what": {
-    "ko": "상장 후 3년 보호예수 물량(약 425만주, 지분율 약 28%)의 해제 시점으로, 수급 영향 여부를 미리 확인해두는 것이 좋다.",
-    "en": "This marks the expiration of the three-year post-listing lock-up on roughly 4.25 million shares (about 28% of shares outstanding), worth monitoring in advance for potential supply-demand impact."
+    "ko": "내년 손익분기점(BEP) 달성이라는 경영진의 목표가 실제 영업이익으로 확인되는지가 관건이다. 2027년 사업보고서에서 연간 영업손익으로 확인된다.",
+    "en": "Whether management's breakeven target for next year shows up in actual operating profit. The 2027 annual report will confirm this on a full-year basis."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "아이빔테크놀로지는 세계 최초의 올인원 생체현미경이라는 기술적 차별점을 바탕으로 장비 판매와 CRO 서비스를 이어가고 있으며, 여기에 로봇암 이광자 현미경과 AI 조직분석 의료기기라는 신사업을 더해 성장 축을 넓히려 하고 있다. 연간 순손실은 2023년부터 2025년까지 매년 줄어드는 흐름을 보였고, 최근 4개 분기 합산 순손실도 2025년 연간치보다 개선됐다는 점은 긍정적으로 읽힌다. 다만 영업활동현금흐름은 여전히 마이너스이고 자기자본도 손실로 잠식되는 구간에 있어, 손익 개선의 속도와 지속성은 아직 확정된 그림이 아니다. 분기별 매출이 장비 인도 시점에 따라 크게 출렁이는 구조이기 때문에 단일 분기 실적만으로 추세를 판단하기는 어렵다. 신사업인 AI 진단기기와 로봇암 현미경은 임상·인허가 절차를 거쳐야 하는 만큼 일정 지연 가능성을 항상 열어두고 지켜볼 필요가 있다. 종합적으로 이 회사는 손실 완화와 신제품 파이프라인이라는 강세 요인과, 지속적인 현금 소진 및 매출 변동성이라는 약세 요인이 공존하는 구간에 있다.",
-   "en": "IVIM Technology continues its equipment-sales and CRO businesses on the strength of its world-first all-in-one intravital microscope, and it is now looking to broaden its growth axis with new businesses such as the robotic-arm two-photon microscope and the AI tissue-analysis device. The fact that annual net losses narrowed every year from 2023 through 2025, and that the trailing four-quarter net loss improved versus the full-year 2025 figure, reads as a positive signal. However, operating cash flow remains negative and equity is still being eroded by losses, so the pace and durability of any earnings improvement are not yet a settled picture. Because quarterly revenue swings heavily depending on equipment delivery timing, it is difficult to judge a trend from any single quarter's results. The new AI diagnostic device and robotic-arm microscope must go through clinical and regulatory approval processes, so the possibility of schedule delays should always be kept in view. On balance, the company sits in a zone where bullish factors — narrowing losses and a new-product pipeline — coexist with bearish factors of ongoing cash burn and revenue volatility."
+   "ko": "아이빔테크놀로지는 생체현미경 장비 판매와 CRO 서비스를 함께 운영하는 기업으로, 2025년 매출은 전년 대비 22.8% 늘었지만 영업손실 41.5억원으로 적자 구조가 이어졌다. 2026년 분기 매출은 1분기 7,680만원, 2분기 29.8억원, 3분기 13.5억원으로 큰 폭으로 흔들렸고, 3분기 영업손실은 11.6억원으로 확대됐다. 해외 수주는 미국 NIEHS와 예일대 등에서 이어졌고 유통망도 동남아로 넓어지는 중이다. 반면 장비 구매 결정에는 긴 시간이 걸려 분기 실적의 변동성은 클 가능성이 있다. 재무 측면에서 부채비율 9.4%와 자본총계 276억원은 낮은 부채 부담을 보여 주지만, 영업활동 현금흐름은 2023~2025년 모두 마이너스였다. 경영진의 2027년 손익분기점 목표는 향후 사업보고서에서 실제 손익으로 확인될 사항이다. 강세 요인인 해외 수주 확대와 약세 요인인 적자 지속이 함께 존재하며, 이 리포트는 주가 방향을 전제하지 않는다. 투자 의견이나 목표주가는 포함하지 않는다.",
+   "en": "IVIM Technology runs equipment sales and CRO services in parallel. Revenue rose 22.8% in 2025, but the operating loss of KRW 4.15 billion kept the company in the red. Quarterly revenue swung sharply through 2026, from KRW 76.8 million in the first quarter to KRW 2.98 billion in the second and KRW 1.35 billion in the third, while the third-quarter operating loss widened to KRW 1.16 billion. Overseas orders from NIEHS and Yale continued, and distribution is expanding in Southeast Asia. Equipment purchase decisions take a long time, so quarterly volatility is likely to remain high. On the balance sheet, a debt ratio of 9.4% and total equity of KRW 27.6 billion indicate a light debt burden, but operating cash flow was negative in each year from 2023 to 2025. Management's breakeven target for fiscal 2027 will be confirmed in future annual reports. Bullish factors such as overseas order growth and bearish factors such as continued losses coexist, and this report does not assume a direction for the share price. It contains no investment opinion or target price."
   }
  },
  "sources": [
-  "https://m.irgo.co.kr/IR-COMP/460470",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A460470",
-  "https://www.samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&inlineYn=Y&saveKey=research.pdf&fileName=2010%2F2026031114580289K_02_04.pdf",
-  "https://thevc.kr/ivimtechnology",
-  "https://m.thinkpool.com/compDiscuss/cont/1014023",
-  "https://valueline.co.kr/finance/investment/460470",
   "https://www.jobkorea.co.kr/recruit/co_read/c/ivimtech18",
-  "https://www.hankyung.com/article/202608141044i",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=gT9PV1tdrMzeOItW",
-  "https://www.judal.co.kr/?view=stockAI&shareToken=BWqpcOou0XWm8ljg",
-  "https://m.finance.daum.net/quotes/A451220/news/disclosure/20260401041049",
-  "https://comp.fnguide.com/SVO2/asp/SVD_Invest.asp?pGB=1&gicode=A460470&cID=&MenuYn=Y&ReportGB=D&NewMenuID=105&stkGb=701",
-  "https://m.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=IR3913",
-  "https://www.investing.com/equities/ivim-technology-consensus-estimates",
-  "https://alphasquare.co.kr/home/stock-summary?code=460470",
-  "https://www.investing.com/equities/ivim-technology",
+  "https://thevc.kr/ivimtechnology",
+  "https://www.saramin.co.kr/zf_user/company-info/view/csn/YjVNSEN2TlpyYm85Vm80QUVQbFdRZz09/company_nm/%EC%95%84%EC%9D%B4%EB%B9%94%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80(%EC%A3%BC)",
+  "https://www.ibric.org/bric/biomarket/company.do?mode=view&memberNo=649643",
+  "https://www.incruit.com/company/1678482097/",
+  "https://pharm.edaily.co.kr/News/Read?newsId=02309126639021760&mediaCodeNo=257",
+  "https://m.jobkorea.co.kr/info/app_down_coread.asp?Mem_Type_Code=C&Mem_ID=ivimtech18",
+  "https://www.hitnews.co.kr/news/articleView.html?idxno=55987",
+  "https://www.thebionews.net/news/articleView.html?idxno=28198",
   "https://www.eugenefn.com/common/files/amail/20240716_B_jongsun.park_2145.pdf",
-  "https://www.mfds.go.kr/brd/m_1060/view.do?seq=13613&srchTp=0&itm_seq_1=0&itm_seq_2=0&multi_itm_seq=0&Data_stts_gubun=C1004&page=1"
+  "https://www.samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&inlineYn=Y&saveKey=research.pdf&fileName=2010%2F2026031114580289K_02_04.pdf",
+  "https://pharm.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02302566639021760",
+  "https://www.thebionews.net/news/articleView.html?idxno=21279",
+  "https://www.fnnews.com/news/202412031009204649",
+  "https://supple.kr/news/cmwd6uhfulaz3al9p3vzgrsfm",
+  "https://news.bizwatch.co.kr/article/healthcare/2026/09/30/0024"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "460470",
  "name": "아이빔테크놀로지",
  "name_en": "IVIM Technology, Inc.",
@@ -233,11 +231,11 @@
   "전기장비"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 21:32",
- "dataDate": "20260904",
+ "reportDate": "2026-11-13",
+ "reportTs": "2026-11-13 08:10",
+ "dataDate": "20261112",
  "quant": {
-  "asOf": "2026-09-05",
+  "asOf": "2026-11-12",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -292,12 +290,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 721638360,
-    "op": -1184426657,
-    "np_owner": -1186917888
-   },
-   {
     "q": "2025Q3",
     "rev": 1654169806,
     "op": -703519310,
@@ -320,25 +312,31 @@
     "rev": 2977477867,
     "op": -195248470,
     "np_owner": -114080966
+   },
+   {
+    "q": "2026Q3",
+    "rev": 1352870276,
+    "op": -1157681574,
+    "np_owner": -1273805414
    }
   ],
   "valuation": {
-   "price": 2840,
-   "mcap": 0.0429,
+   "price": 2430,
+   "mcap": 0.0367,
    "shares": 15119370,
    "total_shares": 15119370,
    "wavg_shares": 15089665,
    "per": null,
-   "eps": -178,
-   "pbr": 1.6378,
-   "bps": 1734,
-   "roe_ttm": -9.8,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -2681694133,
+   "eps": -223,
+   "pbr": 1.4727,
+   "bps": 1650,
+   "roe_ttm": -12.7,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -3367404216,
    "ccy": "KRW",
    "bps_src": "자체",
    "eps_src": "공시",
-   "pbr_krx": 1.55,
+   "pbr_krx": 1.33,
    "bps_krx": 1828.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
@@ -347,5 +345,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "textRules": 2
 }

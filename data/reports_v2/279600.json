@@ -1,230 +1,218 @@
 {
  "title": {
-  "ko": "매출 반등에도 이어지는 적자 흐름",
-  "en": "Revenue Rebound, Yet Losses Persist"
+  "ko": "매출 회복 속 이어지는 적자 구조",
+  "en": "Revenue Recovers, Losses Persist"
  },
  "lead": {
-  "ko": "미디어젠은 2025년 매출이 전년 대비 크게 늘고 4분기 일시 흑자를 냈지만, 2026년 상반기 다시 대규모 적자로 돌아서며 실적 변동성이 큰 구간에 있다.",
-  "en": "MediaZen posted a sharp year-on-year revenue increase and a brief quarterly profit in late 2025, but swung back to large losses in the first half of 2026, underscoring high earnings volatility."
+  "ko": "미디어젠은 2025년 매출이 전년 대비 89.6% 늘며 외형 회복을 보였지만, 영업손실은 2026년 3분기까지 3개 분기 연속 이어져 수익성 회복 여부가 다음 확인 지점이다.",
+  "en": "MediaZen's 2025 revenue rose 89.6%, but operating losses have continued for three straight quarters through Q3 2026, so whether profitability recovers is the next checkpoint."
  },
  "keypoints": [
   {
-   "ko": "2025년 매출 227.8억원으로 전년(120.2억원) 대비 대폭 증가했으나 연간 영업손실·순손실은 지속됨",
-   "en": "2025 revenue rose sharply to KRW 22.78 billion from KRW 12.02 billion, but annual operating and net losses continued"
+   "ko": "2025년 매출은 228억원으로 전년 대비 89.6% 증가했고, 2022~2025년 중 가장 큰 해다. 영업손실은 22.3억원으로 2024년 46.7억원보다 줄었다.",
+   "en": "Revenue reached KRW 22.8 billion in 2025, up 89.6% from the prior year and the largest year in 2022–2025. Operating loss narrowed to KRW 2.23 billion from KRW 4.67 billion in 2024."
   },
   {
-   "ko": "2025년 4분기 영업이익 3.7억원, 순이익 0.5억원으로 드물게 분기 흑자 전환했으나 2026년 1~2분기 다시 각각 19.5억원, 20.6억원 영업손실로 확대",
-   "en": "Q4 2025 briefly turned profitable (operating profit KRW 0.37bn, net profit KRW 0.05bn) before operating losses widened again to KRW 1.95bn and KRW 2.06bn in Q1-Q2 2026"
+   "ko": "2026년 3분기 매출은 37.2억원으로 전년 동기 대비 78.2% 늘었지만, 영업손실 10.7억원으로 3개 분기 연속 적자다.",
+   "en": "Q3 2026 revenue was KRW 3.72 billion, up 78.2% year on year, yet the company posted an operating loss of KRW 1.07 billion, its third straight loss-making quarter."
   },
   {
-   "ko": "부채비율이 2024년 111.2%에서 2025년 153.5%로 상승하고 영업활동현금흐름이 -47.1억원으로 악화되며 재무 부담이 커짐",
-   "en": "Debt ratio rose from 111.2% (2024) to 153.5% (2025) while operating cash flow deteriorated to -KRW 4.71 billion"
+   "ko": "최근 4개 분기 지배주주 순손실 합계는 52억원이며, 부채비율은 2025년 말 153.5%로 2022년 85.7%보다 높아졌다.",
+   "en": "Attributable net losses over the last four quarters total KRW 5.2 billion, and the debt ratio stood at 153.5% at end-2025, up from 85.7% in 2022."
   },
   {
-   "ko": "음성인식(STT)·음성합성(TTS) 중심 사업에서 에듀테크(이베이글), 공공 AI, 로봇 신사업으로 다각화를 시도 중",
-   "en": "The company is diversifying beyond its core STT/TTS voice technology into edtech (e-Baigle), public-sector AI, and new robotics initiatives"
+   "ko": "차량 음성 매출이 2026년 상반기 매출의 절반가량을 차지하는 가운데, 공공 AI 과제와 무인 보관 키오스크의 일본 수출이 새 사업축으로 추진되고 있다.",
+   "en": "Automotive voice systems account for about half of first-half 2026 revenue, while public-sector AI projects and kiosk exports to Japan are being pursued as new growth lines."
   },
   {
-   "ko": "전환사채 발행·전환가 조정과 유상증자가 반복되며 주식 수 변동에 따른 희석 이슈가 상시 존재",
-   "en": "Repeated convertible bond issuances, conversion-price resets, and rights offerings create ongoing share-dilution considerations"
+   "ko": "2024년 10월 시작된 거래정지와 경영권 분쟁 이력이 있어, 지배구조와 거래 유동성이 계속 확인할 항목이다.",
+   "en": "The 2024 trading halt and control dispute keep governance and trading liquidity on the list of items to track."
   }
  ],
  "business": {
-  "ko": "미디어젠은 음성인식(STT)과 음성합성(TTS) 원천기술을 기반으로 한 AI 음성·언어 솔루션 전문기업이다. 회사 소개에 따르면 음성인식 시스템은 발화 스타일과 잡음 등 다양한 환경에 강인하도록 설계돼 있으며 서버와 임베디드 환경 모두에 대응하는 자체 기술을 보유하고 있다. 발음평가 시스템은 발음교육·치료 분야에 활용되며, 어휘 평가·문법 교정·듣기 평가 등 언어교육 관련 엔진도 다수 운영한다. 실시간 상담·회의 내용을 요약하는 대화 요약 엔진 '콜섬(CallSum)'도 주요 제품군에 포함된다. 회사는 현대·기아자동차 등 완성차 업체 대상 차량용 음성인식 양산 이력을 오랫동안 축적해 온 것으로 알려져 있으며, 차량용 음성 시스템이 매출에서 상당한 비중을 차지하는 구조로 파악된다. 최근에는 NE능률·YBM의 교육 콘텐츠와 AI 음성인식 기술을 결합한 영어 학습 플랫폼 '이베이글(E-Baigle)'을 공개하고 국내 교육박람회와 일본 도쿄의 'EDIX 도쿄 2026'에 잇따라 참가하며 공교육·대학·해외 시장 공략을 확대하고 있다. 2026년 정기주주총회에서는 전기공사업·기계설비공사업을 사업목적에 추가했고, 최근 분기보고서에서는 로봇 개발부문과 미래핵심 연구부문을 중심으로 핵심 부품·로봇 플랫폼·도메인 솔루션·AI 기술 연구개발을 지속하고 있다고 밝혀 사업 다각화 움직임이 나타나고 있다. 아울러 한국전자통신연구원(ETRI)·공정거래위원회와 협업해 법률 검색(RAG)과 음성인식 품질 개선 관련 연구성과를 학술대회에서 발표하는 등 공공부문 AI 프로젝트에도 참여하고 있다.",
-  "en": "MediaZen is an AI voice and language solutions company built on proprietary speech-to-text (STT) and text-to-speech (TTS) technology. According to company materials, its voice recognition systems are designed to remain robust across varied speaking styles and noise conditions, with proprietary technology covering both server and embedded environments. Its pronunciation assessment system is used in pronunciation education and therapy, alongside vocabulary evaluation, grammar correction, and listening-assessment engines. A conversation-summarization engine called CallSum, which automatically summarizes real-time consultations or meetings, is also part of the core product lineup. The company has a long track record of mass-production voice recognition systems for automakers including Hyundai and Kia, and vehicle-related voice systems are understood to account for a substantial share of revenue. More recently, MediaZen unveiled its AI English-learning platform E-Baigle, combining NE Neungyule and YBM educational content with its voice-recognition technology, and has been expanding into public education, university, and overseas markets through appearances at Korean education fairs and EDIX Tokyo 2026. At its 2026 annual general meeting, the company added electrical construction and mechanical installation to its stated business purposes, and its latest quarterly report states that R&D is now centered on a robotics development division and future core research covering key components, robotics platforms, domain solutions, and AI technology, signaling a diversification push. It has also participated in public-sector AI projects, presenting joint research with the Electronics and Telecommunications Research Institute (ETRI) and the Korea Fair Trade Commission on legal search (RAG) and voice-recognition quality improvement at academic conferences."
+  "ko": "미디어젠은 2000년 6월 설립되어 2019년 11월 코스닥에 상장한 음성인식·AI 솔루션 기업이다. 잡코리아가 2026년 3월 기준으로 집계한 매출 구성은 차량 음성 시스템 개발 51%, 차량용 음성 솔루션 판매 22%, 기타 16%, AI 솔루션 판매 및 개발 11%다. 같은 사이트의 다른 페이지는 같은 기준 시점에 차량 음성 시스템 개발 52%, 기타 38%, 차량용 음성 솔루션 판매 9%, AI 솔루션 판매 및 개발 1%로 분류를 달리 제시해 부문 비중은 출처에 따라 차이가 있다. 와이즈리포트 집계로 2025년 음성인식 용역 매출은 내수 81.66%, 수출 18.34%였고, 기타 매출은 수출 비중이 87.02%였다. 회사 실적 코멘트는 차량 음성 사업이 고객사와의 신뢰 관계를 바탕으로 꾸준한 매출을 내고 있다고 설명한다. 신사업으로는 AICC 영역의 거대언어모델 요약 솔루션과 2025년 이후 출시된 AI 영어 교육 서비스, 무인 보관 키오스크가 있다. 2026년 3월 주주총회에서 정관에 AI 하드웨어 제조업이 추가됐고, 회사는 일본 PSE 인증을 확보한 키오스크의 일본 수출을 추진하고 있다. 공공 영역에서는 공정거래위원회의 불공정 약관 심사 AI 플랫폼과 하도급 계약 지원 AI 시스템을 과학기술정보통신부와 NIPA의 지원을 받아 개발하고 있다. 경쟁 구도에서 같은 IT·소프트웨어 업종에는 NAVER·카카오 같은 대형 플랫폼 기업과 삼성에스디에스·LG씨엔에스 같은 대형 SI 기업이 있어, 음성 특화 기업인 미디어젠과는 사업 규모와 고객 구조가 크게 다르다.",
+  "en": "MediaZen was founded in June 2000 and listed on KOSDAQ in November 2019 as a voice recognition and AI solutions company. JobKorea's breakdown as of March 2026 puts automotive voice system development at 51%, in-car voice solution sales at 22%, other at 16%, and AI solution sales and development at 11%. Another JobKorea page, on the same reference date, shows a different split of 52%, 38%, 9% and 1%, so segment weights vary by source. WiseReport's 2025 data shows voice recognition services at 81.66% domestic and 18.34% export, while other revenue was 87.02% export. The company says its automotive voice business earns steady revenue on the basis of trust built with customers. New business lines include a large language model summary solution for AICC, a newly launched AI English education service, and an unmanned storage kiosk. At the March 2026 shareholder meeting, AI hardware manufacturing was added to the articles of incorporation, and the company is pursuing kiosk exports to Japan after obtaining Japanese PSE certification. In the public sector, it is developing an AI platform for the Korea Fair Trade Commission's unfair terms review and an AI system supporting subcontracting contracts, with support from MSIT and NIPA. Competitively, the same IT and software sector includes large platform companies such as NAVER and Kakao and large SI firms such as Samsung SDS and LG CNS, so MediaZen's scale and customer structure differ markedly."
  },
  "earnings": {
-  "ko": "2025년 연결 매출은 227.8억원으로 2024년 120.2억원 대비 크게 늘었으며, 2023년 127.5억원, 2022년 173.6억원과 비교해도 최근 4개 연도 중 가장 높은 매출 수준을 회복했다. 다만 매출 확대에도 영업손실은 -22.3억원으로 4년 연속 적자를 이어갔고, 순손실도 -27.2억원을 기록했다. 다만 손실 규모 자체는 2023년 -54.6억원, 2024년 -41.8억원에서 점차 줄어드는 추세를 보였다는 점은 주목할 부분이다. 분기별로 보면 2025년 3분기 매출이 20.8억원까지 줄며 영업손실 -7.4억원, 순손실 -8.9억원을 기록했으나, 4분기에는 매출이 77.5억원으로 급증하면서 영업이익 3.7억원, 순이익 0.5억원으로 드물게 분기 흑자로 전환됐다. 이는 연말 공공·교육 부문 등 계절적 수주 인식이 몰린 결과로 추정되며, 연간 실적 개선의 상당 부분이 4분기에 집중됐음을 보여준다. 그러나 2026년 1분기와 2분기에는 매출이 각각 33.6억원, 27.9억원으로 다시 줄었고, 영업손실은 -19.5억원, -20.6억원으로 오히려 2025년 동기간보다 확대됐다. 이 같은 분기별 큰 진폭은 매출 인식 시점이 특정 분기에 집중되는 사업 구조상 특성을 보여주며, 최근 네 개 분기(2025년 3분기~2026년 2분기) 합산으로도 여전히 순손실 상태에 머물러 있다. 자기자본은 2024년 180.2억원에서 2025년 157.6억원으로 줄었고 부채비율은 111.2%에서 153.5%로 뛰었으며, 영업활동현금흐름도 -17.7억원에서 -47.1억원으로 악화돼, 매출 성장과 별개로 현금창출력과 재무 건전성 측면의 부담이 커졌다.",
-  "en": "MediaZen's 2025 consolidated revenue reached KRW 22.78 billion, up sharply from KRW 12.02 billion in 2024, and also higher than KRW 12.75 billion in 2023 and KRW 17.36 billion in 2022, marking the strongest revenue level of the past four years. Despite the revenue growth, the operating loss stood at -KRW 2.23 billion, marking a fourth consecutive year of losses, with a net loss of -KRW 2.72 billion. Notably, however, the loss magnitude has been narrowing gradually, from -KRW 5.46 billion in 2023 and -KRW 4.18 billion in 2024. On a quarterly basis, revenue fell to KRW 2.08 billion in Q3 2025, producing an operating loss of -KRW 0.74 billion and a net loss of -KRW 0.89 billion, but then surged to KRW 7.75 billion in Q4 2025, generating a rare quarterly operating profit of KRW 0.37 billion and net profit of KRW 0.05 billion. This appears to reflect seasonal revenue recognition concentrated in public-sector and education-related contracts toward year-end, indicating that much of the annual improvement was concentrated in a single quarter. However, revenue declined again to KRW 3.36 billion and KRW 2.79 billion in Q1 and Q2 2026 respectively, and operating losses widened to -KRW 1.95 billion and -KRW 2.06 billion, larger than the same periods a year earlier. This quarter-to-quarter volatility reflects a business structure in which revenue recognition tends to cluster in specific periods, and even on a trailing four-quarter basis (Q3 2025 through Q2 2026) the company remains in a net loss position. Shareholders' equity declined from KRW 18.02 billion in 2024 to KRW 15.76 billion in 2025, the debt ratio jumped from 111.2% to 153.5%, and operating cash flow worsened from -KRW 1.77 billion to -KRW 4.71 billion — indicating that, separate from the revenue growth, pressure on cash generation and balance-sheet health has intensified."
+  "ko": "공시 실적을 연간으로 보면 매출은 2022년 174억원, 2023년 128억원(전년 대비 26.5% 감소), 2024년 120억원(전년 대비 5.8% 감소), 2025년 228억원(전년 대비 89.6% 증가)이다. 2025년 매출 증가에 대해 회사는 2026년 3월 공시에서 용역매출과 상품매출 증가에 따른 손익 개선을 주요 원인으로 들었다(개별 기준). 영업손실은 2022년 20.4억원에서 2023년 52.7억원으로 확대된 뒤 2024년 46.7억원, 2025년 22.3억원으로 줄었고, 2022년부터 2025년까지 4년 연속 적자다. 영업이익률은 2022년 -11.7%, 2023년 -41.3%, 2024년 -38.9%, 2025년 -9.8%로 2025년에 손실률이 가장 낮았다. 지배주주 순손실은 2022년 18.6억원, 2023년 54.6억원, 2024년 41.8억원, 2025년 27.2억원이며, 당기순손실도 같은 해 같은 수준으로 공시됐다. 와이즈리포트 집계(개별 기준)로 연구개발비는 2023년 20.9억원(매출 대비 16.42%), 2024년 19.8억원(16.44%), 2025년 16.7억원(7.32%)이었다. 분기로 보면 2025년 3분기 매출 20.8억원, 영업손실 7.4억원에서 4분기에는 매출 77.5억원(전 분기 대비 271.8% 증가), 영업이익 3.7억원으로 흑자 전환했고 지배주주 순이익은 4,822만원이었다. 2026년 1분기 매출은 33.6억원, 영업손실 19.5억원으로 적자 전환했고, 2분기에는 매출 27.9억원, 영업손실 20.6억원으로 손실이 커졌다. 3분기 매출은 37.2억원(전 분기 대비 33.0% 증가, 전년 동기 대비 78.2% 증가), 영업손실은 10.7억원으로 전 분기보다 줄었지만 전년 동기보다는 커졌다. 최근 4개 분기 지배주주 순손실 합계는 52억원이다. 현금 측면에서 영업활동 현금흐름은 2025년 -47.1억원으로 2022년 이후 유출 폭이 가장 컸고, 2025년 말 부채총계는 242억원, 자본총계는 158억원이다. 잡포스트 보도는 매출채권과 대손충당금을 현금흐름의 부담 요인으로 지목했다.",
+  "en": "On an annual basis, revenue was KRW 17.4 billion in 2022, KRW 12.8 billion in 2023 (down 26.5% year on year), KRW 12 billion in 2024 (down 5.8%), and KRW 22.8 billion in 2025 (up 89.6%). For the 2025 increase, the company cited improved profitability from higher service and product sales in a March 2026 filing on a standalone basis. Operating loss widened from KRW 2.04 billion in 2022 to KRW 5.27 billion in 2023, then narrowed to KRW 4.67 billion in 2024 and KRW 2.23 billion in 2025, and the company has reported losses in each of the four years from 2022 to 2025. The operating margin was -11.7% in 2022, -41.3% in 2023, -38.9% in 2024 and -9.8% in 2025, with 2025 the smallest loss rate of the period. Net losses attributable to controlling shareholders were KRW 1.86 billion in 2022, KRW 5.46 billion in 2023, KRW 4.18 billion in 2024 and KRW 2.72 billion in 2025, and the net loss including non-controlling interests shows the same levels for those years. On a standalone basis compiled by WiseReport, R&D spending was KRW 2.09 billion in 2023 (16.42% of revenue), KRW 1.98 billion in 2024 (16.44%) and KRW 1.67 billion in 2025 (7.32%). Quarterly, revenue went from KRW 2.08 billion with an operating loss of KRW 735 million in Q3 2025 to KRW 7.75 billion in Q4 2025 (up 271.8% from the prior quarter), with an operating profit of KRW 369 million and attributable net income of KRW 48.22 million. Q1 2026 revenue was KRW 3.36 billion with an operating loss of KRW 1.95 billion, and Q2 2026 revenue was KRW 2.79 billion with an operating loss of KRW 2.06 billion. Q3 2026 revenue was KRW 3.72 billion (up 33.0% from the prior quarter and up 78.2% year on year), and the operating loss of KRW 1.07 billion was smaller than in Q2 but larger than a year earlier. Attributable net losses over the last four quarters total KRW 5.2 billion. On cash flow, operating cash outflow was -KRW 4.71 billion in 2025, the largest outflow since 2022, and at end-2025 total liabilities were KRW 24.2 billion against total equity of KRW 15.8 billion. A Korean business daily identified receivables and bad-debt allowances as a burden on cash flow."
  },
  "industry": {
-  "ko": "AI 음성인식(STT)·음성합성(TTS) 시장은 최근 대규모 언어모델(LLM) 및 생성형 AI 기술과 결합되는 흐름이 강해지고 있으며, 미디어젠도 법률 검색(RAG)이나 음성구간검출(VAD) 성능 개선 등 관련 연구를 학술대회에서 발표하며 기술 트렌드에 대응하고 있다. 공공 부문에서는 과학기술정보통신부·정보통신산업진흥원(NIPA)의 지원 아래 공정거래위원회의 불공정 약관 심사 AI 플랫폼, 하도급 계약 지원 AI 시스템 개발 등 정부 프로젝트가 진행 중이며, 이는 공공 AI 수요가 늘어나는 흐름을 보여주는 사례다. 교육(에듀테크) 분야에서는 발음평가·회화 연습 등 음성인식 기반 AI 학습 솔루션에 대한 수요가 국내외에서 확대되는 추세이며, 미디어젠은 NE능률·YBM 등 콘텐츠 기업과 협업해 이베이글 플랫폼을 내놓고 일본 EDIX 도쿄와 같은 해외 전시회에 참가해 시장을 넓히려는 시도를 이어가고 있다. 차량용 음성인식 부문은 완성차 업체의 발주 일정과 신차 프로젝트 사이클에 따라 매출 인식 시점이 크게 좌우되는 특성이 있어, 분기별 실적 편차가 큰 배경으로 작용하는 것으로 보인다. 경쟁 구도 면에서는 국내 다수의 중소 음성AI 기업뿐 아니라 구글, 아마존, 오픈AI 등 글로벌 빅테크의 음성·생성형 AI 기술이 빠르게 발전하고 있어, 국내 특화 음성 솔루션 기업들은 자국어 특화 기술력과 공공·교육 등 특정 도메인 노하우로 차별화를 시도하는 구도가 이어지고 있다.",
-  "en": "The AI voice recognition (STT) and speech synthesis (TTS) market is increasingly converging with large language model (LLM) and generative AI technology, and MediaZen has presented related research at academic conferences covering legal search (RAG) and voice activity detection (VAD) performance improvements to keep pace with these trends. In the public sector, government-backed projects are underway with support from the Ministry of Science and ICT and the National IT Industry Promotion Agency (NIPA), including an AI platform for reviewing unfair contract terms and a subcontract-support AI system for the Korea Fair Trade Commission, illustrating growing public-sector AI demand. In edtech, demand for voice-based AI learning solutions such as pronunciation assessment and conversation practice appears to be expanding both domestically and abroad, and MediaZen has partnered with content providers such as NE Neungyule and YBM to launch its E-Baigle platform while exhibiting at overseas events such as EDIX Tokyo to broaden its market reach. The automotive voice recognition segment appears highly sensitive to automaker order schedules and new-vehicle project cycles, which likely contributes to the large quarter-to-quarter swings in results. In terms of competitive positioning, alongside numerous domestic small and mid-sized voice-AI firms, global technology companies such as Google, Amazon, and OpenAI continue to advance their own voice and generative AI capabilities rapidly, pushing Korean specialized voice-solution companies to differentiate through language-specific technical strength and domain expertise in areas such as public administration and education."
+  "ko": "음성 AI 시장은 두 갈래로 움직이고 있다. 한 갈래는 차량용 음성인식으로, 완성차 개발 일정에 맞춰 수주가 잡히는 구조라 분기별 매출 편차가 생기기 쉽다. 잡포스트 보도에 따르면 미디어젠의 2026년 상반기 매출 61억 5,900만원 가운데 차량 음성시스템 개발 매출이 절반가량을 차지했다. 다른 갈래는 공공과 산업의 생성형 AI 도입으로, 회사는 ETRI·공정거래위원회와 공공 행정 분야 AI 도입 워크숍을 열고 민원 응대와 음성 기반 서비스를 연구 방향으로 제시했다. 2025년 8월에는 정부 WBL 국가대표 AI 기업(K-AI) 컨소시엄에 NC AI 컨소시엄 참여 기업으로 선정되어 공공 영역 LLM 개발과 실증을 맡았다. 같은 업종의 상장사를 보면 NAVER, 카카오, 삼성에스디에스, LG씨엔에스, 현대오토에버 같은 대형 플랫폼·SI 기업이 자본과 인력 규모에서 앞선다. 미디어젠은 음성 기술에 특화된 소형 기업으로, 회사 소개에서는 21개 언어팩 개발과 IQS 지수를 통한 기술력 검증, 양산 경험을 강점으로 내세운다. 2025년 5월에는 발음 평가 시스템 특허가 등록됐다. 다만 대형 플랫폼과 비교하면 사업 규모와 재무 여력에서 제약이 있다는 점이 업종 내 위치의 한계다. 분기 매출이 2025년 3분기 20.8억원, 4분기 77.5억원, 2026년 1분기 33.6억원으로 크게 움직인 점도 사업 구조의 변동성을 보여 준다.",
+  "en": "The voice AI market is moving along two tracks. One is automotive voice recognition, where orders are placed around automakers' development schedules, which makes quarterly revenue prone to swings. According to a Korean newspaper report, automotive voice system development accounted for roughly half of MediaZen's first-half 2026 revenue of KRW 6.16 billion. The other is the adoption of generative AI in the public and corporate sectors. The company held a workshop with ETRI and the Korea Fair Trade Commission on AI adoption in public administration and has framed civil service response and voice-based services as research directions. In August 2025 it was selected as part of the NC AI consortium in the government's K-AI national LLM program, taking on LLM development and demonstration for the public sector. Among listed peers in the same sector, large platform and SI companies such as NAVER, Kakao, Samsung SDS, LG CNS and Hyundai Autoever are far ahead in capital and headcount. MediaZen is a small company specialized in voice technology, and its own profile highlights development of 21 language packs, technology verification through the IQS index and mass-production experience. A speech pronunciation evaluation patent was registered in May 2025. Compared with large platform companies, however, its scale and financial capacity are limited, which bounds its position within the sector. Quarterly revenue moving from KRW 2.08 billion in Q3 2025 to KRW 7.75 billion in Q4 2025 and KRW 3.36 billion in Q1 2026 also shows the volatility of its business structure."
  },
  "outlook": {
-  "ko": "미디어젠은 이베이글 플랫폼을 대한민국 교육박람회에서 처음 공개한 이후 지자체 AI 영어 시범사업, 공공 영어 교육 플랫폼 구축, 대학 영어교육 혁신 모델 등 공공·제도권 중심의 협력 제안을 확대할 계획이라고 밝혔다. 일본 시장에서는 EDIX 도쿄 참가를 계기로 현지 교육기관·에듀테크 기업과의 기술 협력 및 사업 논의를 이어가고, 현지화 전략을 기반으로 글로벌 에듀테크 사업을 확대하겠다는 방침을 제시했다. 최근 분기보고서에서는 로봇 개발부문과 미래핵심 연구부문을 중심으로 핵심 부품·로봇 플랫폼·도메인 솔루션·AI 기술에 대한 연구개발을 지속하고 있다고 밝혀, 기존 음성AI 사업 외에 신규 성장동력을 모색하는 움직임이 확인된다. 공공 부문에서는 ETRI·공정거래위원회와의 협업을 통해 법률·행정 분야 LLM 활용 기술과 음성인식 품질 개선 기술의 실증을 지속하겠다는 입장을 밝혔으며, 앞으로도 공공 행정·민원 응대·음성 기반 서비스 등 산업 현장에 AI를 적용하는 연구개발과 실증을 이어가겠다고 언급했다. 이 같은 다각화 시도들이 실제 매출로 얼마나 이어질지는 향후 분기 실적과 신규 계약 공시를 통해 확인이 필요한 사안이다. 재무 측면에서는 부채비율 상승과 영업현금흐름 악화가 이어지고 있어, 신규 사업 투자와 병행한 자금조달 이슈가 계속 관찰 대상이 될 것으로 보인다.",
-  "en": "Following the initial unveiling of its E-Baigle platform at a Korean education fair, MediaZen has stated plans to expand public and institutional partnership proposals, including local-government AI English pilot programs, public English education platform construction, and university English education innovation models. In Japan, building on its EDIX Tokyo appearance, the company has stated intentions to continue technical cooperation and business discussions with local education institutions and edtech companies and to expand its global edtech business based on a localization strategy. Its latest quarterly report states that R&D continues to focus on a robotics development division and future core research spanning key components, robotics platforms, domain solutions, and AI technology, indicating an effort to identify new growth drivers beyond its existing voice-AI business. In the public sector, the company has said it will continue field-testing LLM applications in legal and administrative domains and voice-recognition quality improvements through collaboration with ETRI and the Korea Fair Trade Commission, and that it will keep pursuing R&D and pilot deployments applying AI to public administration, customer-service response, and voice-based services. How much these diversification efforts translate into actual revenue will need to be verified through upcoming quarterly results and new contract disclosures. On the financial side, the rising debt ratio and deteriorating operating cash flow mean that funding needs alongside new business investment will likely remain an ongoing point to monitor."
+  "ko": "잡포스트 보도에 따르면 2026년 반기보고서 기준 수주잔고는 약 82억 1,000만원이다. 수주잔고는 납품과 검수, 고객 일정에 따라 매출 인식 시점이 달라질 수 있어, 잔고가 분기 매출로 얼마나 전환되는지가 중요하다. 가나 대학교 기자재 공급계약은 8월 정정으로 계약금액이 44억 6,285만원으로 줄었고, 일부 대금 회수 문제가 남아 있다. 키오스크 사업은 일본 PSE 인증을 확보했지만 판매 계약과 반복 주문은 별도 확인이 필요하다. 공공 AI 사업에서는 공정거래위원회의 불공정 약관 심사 AI 플랫폼과 하도급 계약 지원 AI 시스템 개발을 진행하고 있으며, 음성인식과 생성형 AI를 결합한 공공·산업 분야 서비스 고도화에 역량을 집중하고 있다고 2026년 7월 보도됐다. 2026년 3월에는 송민규 대표이사에 유영근 대표이사가 더해져 각자 대표 체제로 바뀌었고, 회사는 경영 연속성과 재무안정성을 위해 신규 대표이사를 선임했다고 설명했다. 확인할 지점은 2026년 4분기 수주잔고의 변화, 가나 계약 대금의 회수 진행, 일본 키오스크 판매 계약 체결 여부다. 이후에는 2026년 사업보고서에서 영업이익률이 2025년 -9.8%에서 어떻게 움직였는지가 다음 확인 지점이다.",
+  "en": "According to a Korean newspaper report, backlog stood at about KRW 8.21 billion in the 2026 half-year report. Because revenue recognition depends on delivery, inspection and customer schedules, the key question is how much of this backlog converts into quarterly revenue. The Ghana university equipment supply contract was amended in August, reducing the contract amount to about KRW 4.46 billion, and some payment collection issues remain. For the kiosk business, Japanese PSE certification has been obtained, but sales contracts and repeat orders still require separate confirmation. In public-sector AI, the company is developing an AI platform for the Korea Fair Trade Commission's unfair terms review and an AI system supporting subcontracting contracts, and is focusing on upgrading public and industrial AI services that combine voice recognition with generative AI, as reported in July 2026. In March 2026, Yoo Young-geun joined Song Min-gyu as a co-CEO, and the company explained that the appointment was made for management continuity and financial stability. The items to check next are the change in backlog during Q4 2026, the progress of Ghana contract payment collection, and whether a Japan kiosk sales contract is signed. After that, the 2026 annual report will show how the operating margin moved from -9.8% in 2025."
  },
  "valuation_comment": {
-  "ko": "최근 네 개 분기 합산 기준으로도 순손실이 이어지고 있어 주가수익비율은 산출되지 않는 구간에 머물러 있다. 주가순자산비율은 산출 기준에 따라 다소 차이가 있으나, 두 기준 모두 주가가 주당 순자산가치를 웃도는 수준에서 거래되고 있음을 보여준다. 회사는 최근 수년간 배당을 지급하지 않고 있어 배당 관련 지표는 형성되지 않는 상태다. 2024년에서 2025년으로 넘어오며 자기자본이 줄고 부채비율이 오른 점은 순자산가치 산정의 기초가 되는 재무구조 자체가 변화하고 있음을 시사한다. 다년간 이어진 영업손실 구조 속에서도 매출은 회복 흐름을 보였고 4분기 한 차례 흑자를 낸 바 있어, 시장에서의 평가는 과거 실적보다 사업 다각화·향후 성장성에 대한 기대치가 더 크게 반영되는 모습을 보여왔다.",
-  "en": "Because the company has remained in a net loss position even on a trailing four-quarter basis, the price-to-earnings ratio remains in a non-calculable range. The price-to-book ratio differs slightly depending on the calculation basis, but under both approaches the shares trade at a level above per-share net asset value. The company has not paid dividends in recent years, so dividend-related metrics are not established. The decline in shareholders' equity and the rise in the debt ratio between 2024 and 2025 suggest that the underlying balance-sheet structure that determines net asset value is itself shifting. Despite years of operating losses, revenue has shown a recovery trend and the company posted a rare quarterly profit in the fourth quarter, suggesting that market valuation has reflected expectations around business diversification and future growth potential more than past earnings performance."
+  "ko": "최근 네 개 분기 기준 지배주주 순손실이 이어져 주가수익비율은 산출되지 않는 상태다. 주가순자산비율은 순자산 대비 프리미엄이 붙은 구간에 있어, 주가가 장부상 자본보다 사업 회복 기대를 더 반영한 상태로 읽힌다. 배당수익률은 업종 평균을 밑도는 편이다. 공시 기준으로 흑자 분기는 2025년 4분기 한 분기뿐이어서 이익을 기준으로 한 배수 비교는 아직 제한적이다. 2024년 10월 거래정지 후 2025년 6월 거래가 재개되었고, 이 경과는 주가 수준을 해석할 때 함께 봐야 할 배경이다. 거래 유동성도 변수다. 2026년 10월 26일 보도에서는 하루 거래량이 1,536주에 그쳤다. 자본 대비 부채 비중이 2022년보다 높아진 점은 자본가치를 평가할 때 함께 보는 변수다.",
+  "en": "Because attributable net losses have continued over the last four quarters, the price-to-earnings ratio cannot be calculated. The price-to-book ratio sits in a range where the share price carries a premium over net assets, which suggests the price reflects recovery expectations beyond book value. The dividend yield is below the industry average. On a disclosed basis, Q4 2025 is the only profitable quarter, so earnings-based multiple comparisons remain limited. Trading was halted in October 2024 and resumed in June 2025, and this history is background for interpreting the price level. Trading liquidity is also a variable, since a Korean newspaper report on October 26, 2026 noted a single-day volume of 1,536 shares. The higher debt ratio compared with 2022 is another variable to consider alongside asset value."
  },
  "bull": [
   {
    "title": {
-    "ko": "매출 회복 흐름",
-    "en": "Revenue Recovery Trend"
+    "ko": "외형 회복 흐름",
+    "en": "Top-line recovery"
    },
    "body": {
-    "ko": "2025년 매출은 227.8억원으로 전년 120.2억원 대비 크게 늘었고, 2022~2024년 중 가장 낮았던 2024년보다 뚜렷하게 회복됐다. 손실 규모도 2023년 -54.6억원에서 2025년 -27.2억원으로 점진적으로 줄어드는 추세를 보였다. 2025년 4분기에는 매출 77.5억원, 영업이익 3.7억원, 순이익 0.5억원으로 드물게 분기 흑자를 기록하며 사업 회복 가능성을 보여줬다.",
-    "en": "2025 revenue climbed to KRW 22.78 billion from KRW 12.02 billion a year earlier, a marked recovery from the weaker 2024 level. Loss size has also narrowed gradually, from -KRW 5.46 billion in 2023 to -KRW 2.72 billion in 2025. In Q4 2025, revenue reached KRW 7.75 billion with a rare quarterly operating profit of KRW 0.37 billion and net profit of KRW 0.05 billion, signaling potential for business recovery."
+    "ko": "2025년 매출은 228억원으로 전년 대비 89.6% 늘었고, 2026년 3분기 매출 37.2억원은 전년 동기 대비 78.2% 증가했다. 2025년 4분기에는 매출 77.5억원과 영업이익 3.7억원으로 흑자 전환을 기록했다. 매출 증가가 분기 단위로 이어지는지가 다음 확인 지점이다.",
+    "en": "Revenue reached KRW 22.8 billion in 2025, up 89.6%, and Q3 2026 revenue of KRW 3.72 billion rose 78.2% year on year. Q4 2025 recorded revenue of KRW 7.75 billion and an operating profit of KRW 369 million, a swing to profit. Whether revenue growth carries across quarters is the next point to confirm."
    }
   },
   {
    "title": {
-    "ko": "공공·정부 프로젝트 참여 확대",
-    "en": "Expanding Public-Sector Project Participation"
+    "ko": "영업손실 축소 추세",
+    "en": "Narrowing operating losses"
    },
    "body": {
-    "ko": "미디어젠은 과학기술정보통신부·NIPA 지원 아래 공정거래위원회의 불공정 약관 심사 AI 플랫폼, 하도급 계약 지원 AI 시스템 개발을 수행하고 있다. ETRI와의 생성형 AI 기술이전 계약 체결 등 공공 연구기관과의 협업도 이어지고 있다. 공공부문 AI 수요 확대에 따른 신규 프로젝트 참여가 늘어날 경우 매출 다변화에 기여할 수 있다.",
-    "en": "MediaZen is developing an AI platform for unfair-contract-term reviews and a subcontract-support AI system for the Korea Fair Trade Commission, backed by the Ministry of Science and ICT and NIPA. Collaboration with public research institutions continues, including a generative AI technology transfer agreement with ETRI. Expanding participation in new public-sector AI projects could contribute to revenue diversification."
+    "ko": "영업손실은 2023년 52.7억원에서 2025년 22.3억원으로 줄었다. 2026년 3분기 영업손실 10.7억원은 2분기 20.6억원보다 작다. 영업이익률도 2023년 -41.3%에서 2025년 -9.8%로 손실 폭이 낮아졌다.",
+    "en": "Operating loss narrowed from KRW 5.27 billion in 2023 to KRW 2.23 billion in 2025. The Q3 2026 operating loss of KRW 1.07 billion was smaller than the KRW 2.06 billion posted in Q2 2026. The operating margin improved from -41.3% in 2023 to -9.8% in 2025."
    }
   },
   {
    "title": {
-    "ko": "사업 다각화 시도",
-    "en": "Business Diversification Efforts"
+    "ko": "공공 AI로 수요처 확장",
+    "en": "Public-sector AI expansion"
    },
    "body": {
-    "ko": "회사는 이베이글 에듀테크 플랫폼, 일본 EDIX 도쿄 참가를 통한 해외 진출, 로봇 개발부문 신설 등 기존 음성AI 사업을 넘어선 신규 성장동력 모색을 계속하고 있다. 2026년 정기주주총회에서는 전기공사업·기계설비공사업을 사업목적에 추가하기도 했다. 다각화가 성공적으로 매출화될 경우 특정 산업(차량용 음성인식)에 대한 의존도를 낮출 수 있는 잠재력이 있다.",
-    "en": "The company continues to pursue new growth drivers beyond its core voice-AI business, including the E-Baigle edtech platform, overseas expansion via EDIX Tokyo, and the establishment of a new robotics development division. At its 2026 annual general meeting, it also added electrical construction and mechanical installation to its stated business purposes. If diversification translates into revenue, it has the potential to reduce dependence on any single industry such as automotive voice recognition."
+    "ko": "2025년 8월 정부 WBL 국가대표 AI 기업 컨소시엄에 NC AI 컨소시엄 참여 기업으로 선정되어 공공 영역 LLM 개발과 실증을 맡았다. 공정거래위원회 불공정 약관 심사 AI 플랫폼은 NIPA 지원으로 개발 중이다. 차량 음성 외 공공 수요로 매출원을 넓히려는 시도다.",
+    "en": "In August 2025 the company was selected as part of the NC AI consortium in the government's K-AI national LLM program, handling LLM development and demonstration for the public sector. An AI platform for the Korea Fair Trade Commission's unfair terms review is being developed with NIPA support. These efforts aim to diversify revenue sources beyond automotive voice systems."
    }
   }
  ],
  "bear": [
   {
    "title": {
-    "ko": "실적 변동성 확대",
-    "en": "Widening Earnings Volatility"
+    "ko": "적자 지속과 누적 손실",
+    "en": "Persistent losses"
    },
    "body": {
-    "ko": "2025년 4분기 일시 흑자 이후 2026년 1분기와 2분기에는 영업손실이 각각 -19.5억원, -20.6억원으로 오히려 전년 동기보다 확대됐다. 매출도 33.6억원, 27.9억원으로 4분기 77.5억원 대비 크게 줄었다. 분기 실적의 큰 진폭은 매출 인식 시점이 특정 시기에 집중되는 사업 구조를 반영하며, 예측 가능성을 낮추는 요인이다.",
-    "en": "After the brief profit in Q4 2025, operating losses widened again to -KRW 1.95 billion and -KRW 2.06 billion in Q1 and Q2 2026, larger than the same periods a year earlier. Revenue also fell sharply to KRW 3.36 billion and KRW 2.79 billion, down from KRW 7.75 billion in Q4. The large swing in quarterly results reflects a business structure where revenue recognition concentrates in specific periods, reducing predictability."
+    "ko": "2022년부터 2025년까지 4년 연속 적자이고, 지배주주 순손실은 2023년 54.6억원에서 2025년 27.2억원으로 줄었지만 흑자는 2025년 4분기 한 분기에 그쳤다. 2026년 1분기부터 3분기까지 3개 분기 연속 적자이며, 최근 4개 분기 지배주주 순손실 합계는 52억원이다.",
+    "en": "The company has reported losses in each year from 2022 to 2025, and net losses attributable to controlling shareholders fell from KRW 5.46 billion in 2023 to KRW 2.72 billion in 2025. Profit appeared only in Q4 2025 in the disclosed period. Losses have continued for three quarters into 2026, and attributable net losses over the last four quarters total KRW 5.2 billion."
    }
   },
   {
    "title": {
-    "ko": "재무 건전성 악화",
-    "en": "Deteriorating Financial Health"
+    "ko": "재무 여력 축소",
+    "en": "Thinner financial cushion"
    },
    "body": {
-    "ko": "부채비율은 2022년 85.7%에서 2025년 153.5%로 꾸준히 상승했고, 자기자본은 2024년 180.2억원에서 2025년 157.6억원으로 줄었다. 영업활동현금흐름은 2022년 -5.6억원에서 2025년 -47.1억원으로 적자 규모가 크게 확대됐다. 현금창출력 약화가 지속될 경우 추가적인 외부 자금조달 필요성이 커질 수 있다.",
-    "en": "The debt ratio has risen steadily from 85.7% in 2022 to 153.5% in 2025, while shareholders' equity declined from KRW 18.02 billion in 2024 to KRW 15.76 billion in 2025. Operating cash flow deteriorated sharply from -KRW 0.56 billion in 2022 to -KRW 4.71 billion in 2025. Continued weakening of cash generation could increase the need for additional external funding."
+    "ko": "부채비율은 2022년 85.7%에서 2025년 153.5%로 올랐고, 2025년 말 부채총계 242억원이 자본총계 158억원을 웃돈다. 영업활동 현금흐름은 2025년 -47.1억원으로 공시 기간 중 유출 폭이 가장 컸다. 재무 여력이 줄어든 상태에서 적자가 이어지는 구조다.",
+    "en": "The debt ratio rose from 85.7% in 2022 to 153.5% in 2025, and total liabilities of KRW 24.2 billion at end-2025 exceed total equity of KRW 15.8 billion. Operating cash outflow of -KRW 4.71 billion in 2025 was the largest in the period. The company faces continued losses with a thinner financial cushion."
    }
   },
   {
    "title": {
-    "ko": "잦은 자본조달과 희석 이력",
-    "en": "Frequent Capital Raises and Dilution History"
+    "ko": "매출 변동성과 계약 리스크",
+    "en": "Revenue volatility and contract risk"
    },
    "body": {
-    "ko": "공시 자료에 따르면 전환사채 전환가액이 시가 하락 등으로 여러 차례 하향 조정됐고, 2025년 3월에는 시가를 하회하는 발행가격으로 유상증자가 실시된 바 있다. 이러한 반복적인 자본조달은 주식 수 증가에 따른 기존 주주의 지분 희석 가능성을 내포한다. 향후에도 신규 사업 투자를 위한 추가 자금조달이 이어질 경우 유사한 희석 이슈가 재현될 수 있다.",
-    "en": "According to disclosures, the convertible bond conversion price was adjusted downward on multiple occasions due to share price declines, and a rights offering priced below market value was conducted in March 2025. Such recurring capital raises carry the potential for dilution of existing shareholders as share count increases. If further fundraising is needed to support new business investments, similar dilution issues could recur."
+    "ko": "분기 매출은 2025년 4분기 77.5억원에서 2026년 1분기 33.6억원으로 전 분기 대비 56.6% 줄었다. 가나 대학교 공급계약 금액은 8월 정정으로 44억 6,285만원으로 낮아졌고 일부 대금 회수 문제가 남아 있다. 매출채권 부담이 현금흐름의 부담 요인으로 지목된다.",
+    "en": "Quarterly revenue fell 56.6% from KRW 7.75 billion in Q4 2025 to KRW 3.36 billion in Q1 2026. The Ghana contract amount was reduced to about KRW 4.46 billion in an August amendment, and some payment collection issues remain. Receivables are cited as a burden on cash flow."
    }
   }
  ],
  "risks": [
   {
    "cat": {
-    "ko": "현금흐름·유동성",
-    "en": "Cash Flow / Liquidity"
+    "ko": "지배구조·거래 리스크",
+    "en": "Governance and trading risk"
    },
    "body": {
-    "ko": "영업활동현금흐름이 4년 연속 마이너스를 기록했고 2025년에는 -47.1억원까지 확대됐다. 이 같은 현금 소진이 지속되면 외부 자금조달에 대한 의존이 커질 수 있으며, 조달 조건에 따라 주주가치에 영향을 줄 수 있다. 신규 사업(로봇, 에듀테크 등) 투자가 병행될 경우 자금 수요는 더 커질 가능성이 있다.",
-    "en": "Operating cash flow has been negative for four consecutive years, widening to -KRW 4.71 billion in 2025. Continued cash burn could increase reliance on external funding, and the terms of such funding could affect shareholder value. Funding needs could grow further if new business investments in areas such as robotics and edtech proceed in parallel."
+    "ko": "2024년 10월 상장적격성 실질심사 대상 지정으로 거래가 전면 중단됐고, 2025년 6월 거래가 재개됐다. 창업자 측과 최대주주 측의 경영권 갈등이 횡령·배임 고소와 법적 분쟁으로 이어졌던 이력이 있다(2025년 보도 기준). 2026년 3월 주총에서 대표이사 체제가 각자 대표로 바뀌었다.",
+    "en": "Trading was fully suspended after the exchange designated the company for a listing-qualification review in October 2024, and trading resumed in June 2025. A control dispute between the founder side and the largest shareholder led to embezzlement and breach-of-trust complaints and litigation, as reported in 2025. The March 2026 shareholder meeting moved the company to a co-CEO structure."
    }
   },
   {
    "cat": {
-    "ko": "매출 집중도·고객 의존",
-    "en": "Revenue Concentration / Customer Dependence"
+    "ko": "재무·현금흐름 리스크",
+    "en": "Financial and cash flow risk"
    },
    "body": {
-    "ko": "차량용 음성인식 관련 매출이 상당한 비중을 차지하는 것으로 파악되며, 완성차 업체의 신차 프로젝트 발주 일정에 따라 분기별 매출 인식 시점이 크게 달라지는 특성이 있다. 특정 고객·산업에 대한 의존도가 높을 경우 해당 산업의 수요 변화나 발주 지연이 실적에 직접적인 영향을 줄 수 있다.",
-    "en": "A substantial portion of revenue is understood to be tied to automotive voice recognition, and quarterly revenue recognition timing appears highly dependent on automakers' new-vehicle project order schedules. High dependence on specific customers or industries means that shifts in demand or order delays in that sector could directly affect results."
+    "ko": "2025년 말 부채총계는 242억원이고 자본총계는 158억원이며, 부채비율은 153.5%다. 영업활동 현금흐름은 2025년 -47.1억원으로 적자가 이어지면 추가 자금 조달 필요성이 커질 수 있다. 이 부분은 2026 사업보고서의 재무상태표와 현금흐름표에서 확인하는 항목이다.",
+    "en": "At end-2025, total liabilities were KRW 24.2 billion against total equity of KRW 15.8 billion, and the debt ratio was 153.5%. Operating cash outflow of -KRW 4.71 billion in 2025 means that continued losses could raise the need for additional funding. The balance sheet and cash flow statement in the 2026 annual report are where this will be checked."
    }
   },
   {
    "cat": {
-    "ko": "기술 경쟁·대체 위험",
-    "en": "Technology Competition / Substitution Risk"
+    "ko": "사업·계약 리스크",
+    "en": "Business and contract risk"
    },
    "body": {
-    "ko": "구글, 아마존, 오픈AI 등 글로벌 빅테크가 음성·생성형 AI 기술을 빠르게 발전시키고 있어 국내 특화 음성 솔루션 기업의 기술 차별성이 지속될지가 관건이다. 대형 플랫폼 기업들이 자체 음성AI 역량을 강화할 경우 기존 고객사와의 계약이나 신규 수주 경쟁에서 압박을 받을 가능성이 있다.",
-    "en": "As global technology companies such as Google, Amazon, and OpenAI rapidly advance their own voice and generative AI capabilities, whether domestic specialized voice-solution firms can sustain technical differentiation remains a key question. If large platform companies strengthen their own voice-AI capabilities, existing client contracts and new order competition could face increased pressure."
+    "ko": "키오스크 일본 수출은 PSE 인증을 확보했으나 판매 계약과 반복 주문은 별도 확인이 필요하다. 가나 계약 금액 축소와 대금 회수 문제는 해외 매출의 변동 요인이다. 차량 음성 매출은 상반기 매출의 절반가량을 차지하는 단일 축이라 완성차 수주 흐름에 민감하다.",
+    "en": "The kiosk export to Japan has PSE certification, but sales contracts and repeat orders still need separate confirmation. The reduced Ghana contract amount and collection problems are sources of volatility in overseas revenue. Automotive voice systems account for about half of first-half revenue, which makes the company sensitive to automaker order flow."
    }
   }
  ],
  "checkpoints": [
   {
    "when": {
-    "ko": "2026년 11월 중순",
-    "en": "Mid-November 2026"
+    "ko": "2026년 4분기 중",
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "2026년 3분기 보고서 공시 예정 시점으로, 1~2분기에 확대된 영업손실 흐름이 이어지는지 또는 4분기와 유사한 계절적 개선이 재현되는지를 확인할 필요가 있다.",
-    "en": "The Q3 2026 quarterly report is expected around this time; it will be important to check whether the widened operating losses seen in Q1-Q2 continue or whether a seasonal improvement similar to last year's Q4 recurs."
+    "ko": "수주잔고 82억 1,000만원이 분기 매출로 얼마나 전환되는지와 가나 대학교 공급계약의 대금 회수 진행 상황을 확인한다.",
+    "en": "Check how much of the KRW 8.21 billion backlog converts into quarterly revenue and the progress of payment collection on the Ghana university contract."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "Second half of 2026"
+    "ko": "2026년 4분기 중",
+    "en": "During Q4 2026"
    },
    "what": {
-    "ko": "이베이글 플랫폼의 지자체·공교육 시범사업 채택 여부와 관련 공시·보도자료가 나오는지 확인이 필요하며, 이는 에듀테크 사업의 매출화 여부를 가늠하는 지표가 될 수 있다.",
-    "en": "Watch for disclosures or press releases on whether local governments or public education programs adopt the E-Baigle platform, which would indicate whether the edtech business is translating into revenue."
+    "ko": "일본 키오스크 판매 계약과 반복 주문이 실제로 체결되는지 확인한다. 계약이 확인되어야 키오스크 사업이 매출 항목으로 읽힌다.",
+    "en": "Confirm whether sales contracts and repeat orders for kiosks in Japan are actually signed, since only signed contracts would show up as revenue for this business."
    }
   },
   {
    "when": {
-    "ko": "2026년 하반기",
-    "en": "Second half of 2026"
+    "ko": "2027년 3월 31일까지",
+    "en": "By March 31, 2027"
    },
    "what": {
-    "ko": "일본 EDIX 도쿄 참가 이후 현지 교육기관·에듀테크 기업과의 협력 계약 체결 여부를 확인해야 하며, 구체적 계약 공시가 나오는지가 해외 사업 확대의 실질적 진전을 가늠하는 기준이 된다.",
-    "en": "Following its EDIX Tokyo appearance, check whether concrete partnership contracts with local education institutions or edtech companies are announced, as this would gauge tangible progress in overseas expansion."
+    "ko": "2026 사업보고서 제출 기한이다. 2026년 연간 매출, 영업손실, 4분기 손익, 연말 부채비율을 처음으로 정기보고서 기준으로 확인하는 지점이다.",
+    "en": "This is the statutory deadline for the 2026 annual report. It is the first point where full-year 2026 revenue, operating loss, Q4 results and year-end debt ratio can be checked on a periodic-report basis."
    }
   },
   {
    "when": {
-    "ko": "지속 모니터링(2026년 하반기 이후)",
-    "en": "Ongoing monitoring (from H2 2026)"
+    "ko": "2027년 5월 15일",
+    "en": "May 15, 2027"
    },
    "what": {
-    "ko": "전환사채 전환청구에 따른 발행주식수 변동 공시와 추가 유상증자·전환사채 발행 여부를 지속적으로 확인해, 지분 희석 규모와 자금조달 방식의 변화를 점검할 필요가 있다.",
-    "en": "Continue monitoring disclosures on share count changes from convertible bond conversions and any additional rights offerings or CB issuances, to track the scale of dilution and shifts in funding methods."
-   }
-  },
-  {
-   "when": {
-    "ko": "2026년 하반기",
-    "en": "Second half of 2026"
-   },
-   "what": {
-    "ko": "로봇 개발부문·전기공사업 등 신규 사업목적과 관련된 구체적 계약·매출 발생 여부에 대한 공시를 확인해, 다각화 전략이 실제 사업으로 이어지는지 살펴볼 필요가 있다.",
-    "en": "Check for disclosures on concrete contracts or revenue generation tied to the new robotics development division and electrical construction business purpose, to assess whether the diversification strategy is materializing into actual business."
+    "ko": "2027년 1분기 분기보고서 제출 기한이다. 2026년 3분기 영업손실 10.7억원 대비 적자 폭이 줄어드는지, 3개 분기 연속 이어진 적자가 끊기는지 확인한다.",
+    "en": "This is the deadline for the Q1 2027 quarterly report. Check whether the operating loss narrows from KRW 1.07 billion in Q3 2026 and whether the string of losses since Q1 2026 is broken."
    }
   }
  ],
  "verdict": {
   "body": {
-   "ko": "미디어젠은 2025년 매출이 전년 대비 크게 늘며 회복 흐름을 보였고 4분기 한 차례 분기 흑자를 기록했지만, 2026년 상반기에는 다시 영업손실이 확대되며 손익 변동성이 매 분기 크게 나타나는 사업 구조를 다시 확인시켰다. 재무 측면에서는 부채비율이 여러 해에 걸쳐 상승하고 영업활동현금흐름의 적자 규모가 커지는 등, 매출 회복과 별개로 재무 건전성에 대한 부담이 누적되는 모습이다. 회사는 기존 차량용 음성인식·발음평가 중심 사업 외에 에듀테크(이베이글), 공공 AI 프로젝트, 로봇 신사업 등으로 다각화를 시도하며 새로운 성장동력을 모색하고 있다. 다만 이 같은 신사업들이 실제 매출과 이익으로 이어지기까지는 시간이 필요하며, 향후 분기 실적과 신규 계약 공시를 통한 확인이 필요한 단계다. 반복적인 전환사채 발행과 유상증자로 인한 지분 희석 이력도 함께 살펴봐야 할 요소다. 종합하면 매출 성장과 사업 다각화라는 긍정적 신호와, 실적 변동성·재무 부담 확대라는 부정적 신호가 동시에 존재하는 구간으로 판단된다.",
-   "en": "MediaZen showed a recovery trend with sharply higher 2025 revenue and a rare quarterly profit in Q4, but operating losses widened again in H1 2026, reaffirming a business structure with substantial quarter-to-quarter earnings volatility. On the financial side, the debt ratio has risen over several years and operating cash outflows have grown larger, suggesting that pressure on financial health has been building separately from the revenue recovery. Beyond its core automotive voice recognition and pronunciation assessment business, the company is pursuing diversification into edtech (E-Baigle), public-sector AI projects, and new robotics initiatives in search of new growth drivers. However, it will take time for these new businesses to translate into actual revenue and profit, and confirmation will require tracking upcoming quarterly results and new contract disclosures. A history of dilution from repeated convertible bond issuances and rights offerings is another factor worth watching. On balance, this appears to be a period where positive signals of revenue growth and business diversification coexist with negative signals of earnings volatility and rising financial strain."
+   "ko": "미디어젠은 2025년 매출이 228억원으로 전년 대비 89.6% 늘며 외형 회복이 확인됐고, 2026년 3분기 매출도 전년 동기 대비 78.2% 증가했다. 반면 영업손실은 2022년부터 2025년까지 4년 연속 이어졌고 2026년 1분기부터 3분기까지도 3개 분기 연속 적자다. 2025년 영업손실은 22.3억원으로 2023년 52.7억원보다 줄었으나, 흑자는 2025년 4분기 한 분기에 그쳤다. 재무 측면에서 부채비율은 153.5%로 2022년보다 높고 영업활동 현금흐름은 2025년 -47.1억원이다. 사업 구조는 차량 음성 매출을 축으로 공공 AI와 키오스크 수출이 새 축으로 더해지는 형태다. 수주잔고 82억 1,000만원의 전환 속도, 가나 계약 대금 회수 여부, 2026년 사업보고서의 영업이익률이 다음 확인 지점이다.",
+   "en": "MediaZen's 2025 revenue rose 89.6% to KRW 22.8 billion, confirming a recovery in scale, and Q3 2026 revenue rose 78.2% year on year. Operating losses, however, have been reported in every year from 2022 to 2025 and in each of the three quarters from Q1 to Q3 2026. The 2025 operating loss of KRW 2.23 billion was smaller than the KRW 5.27 billion of 2023, but the only profitable quarter in the disclosed period is Q4 2025. On the financial side, the debt ratio of 153.5% is above the 2022 level, and operating cash outflow was -KRW 4.71 billion in 2025. The business is anchored by automotive voice revenue, with public-sector AI and kiosk exports as added lines. The next checkpoints are how quickly the KRW 8.21 billion backlog converts, whether the Ghana contract payments are collected, and where the operating margin lands in the 2026 annual report."
   }
  },
  "sources": [
-  "https://m.thinkpool.com/item/279600",
-  "https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?gicode=A279600",
-  "https://www.investing.com/equities/mediazen-earnings",
-  "https://m.irgo.co.kr/IR-COMP/279600/%EB%AF%B8%EB%94%94%EC%96%B4%EC%A0%A0-IR-ROOM",
-  "https://markets.hankyung.com/stock/279600/consensus",
-  "http://www.thinkpool.com/itemanal/i/index.jsp?code=279600",
-  "https://www.investing.com/equities/mediazen",
-  "https://www.paxnet.co.kr/tbbs/list?tbbsType=L&id=279600",
-  "https://www.newspim.com/news/view/20260701000406",
-  "https://www.mediazen.co.kr/media/news_260701.html",
-  "https://www.everpuredata.com/kr/customers/mediazen.html",
-  "https://www.saramin.co.kr/zf_user/company-info/view/csn/UGFoVEZWVWtZWEJrWXVkajJXYXE4UT09/company_nm/%EB%AF%B8%EB%94%94%EC%96%B4%EC%A0%A0(%EC%A3%BC)",
-  "http://www.mediazen.co.kr/dist/sub/ai.html",
-  "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04021286645450232",
-  "https://www.thevaluenews.co.kr/news/196342",
   "https://www.jobkorea.co.kr/company/42742699",
+  "https://comp.wisereport.co.kr/company/c1010001.aspx?cmp_cd=279600",
+  "https://comp.wisereport.co.kr/company/c1020001.aspx?cmp_cd=279600&cn=",
+  "https://www.job-post.co.kr/news/articleView.html?idxno=234575",
+  "https://news.nate.com/view/20260312n36889",
+  "https://m.news.nate.com/view/20260330n27961",
+  "https://ssl.pstatic.net/imgstock/upload/research/company/1703202082965.pdf",
+  "https://www.incruit.com/company/1663388547/",
+  "https://www.newstomato.com/readnews.aspx?no=1260930",
+  "https://www.mediazen.co.kr/media/news_260701.html",
+  "https://orgo.kr/stock/279600",
+  "https://www.newspim.com/news/view/20260701000406",
+  "https://m.news.nate.com/view/20260330n27531",
+  "https://www.mediaus.co.kr/news/articleList.html",
   "https://www.jobkorea.co.kr/recruit/co_read/c/vmt8830",
-  "https://m.irgo.co.kr/IR-COMP/279600/%EB%AF%B8%EB%94%94%EC%96%B4%EC%A0%A0-IR-PAGE"
+  "https://www.mediafine.co.kr/"
  ],
  "v": 2,
- "model": "claude-sonnet-5",
+ "model": "claude-haiku-5-5",
  "ticker": "279600",
  "name": "미디어젠",
  "name_en": "MediaZen, Inc.",
@@ -234,11 +222,11 @@
   "인공지능(AI)"
  ],
  "market": "코스닥",
- "reportDate": "2026-09-05",
- "reportTs": "2026-09-05 18:44",
- "dataDate": "20260904",
+ "reportDate": "2026-11-13",
+ "reportTs": "2026-11-13 08:10",
+ "dataDate": "20261112",
  "quant": {
-  "asOf": "2026-08-23",
+  "asOf": "2026-11-12",
   "fs_basis": "연결(CFS) · DART 공시 확정치 · 지배주주 기준 순이익",
   "annual": [
    {
@@ -308,12 +296,6 @@
   ],
   "quarterly": [
    {
-    "q": "2025Q2",
-    "rev": 4858130963,
-    "op": -1146166922,
-    "np_owner": -1120834488
-   },
-   {
     "q": "2025Q3",
     "rev": 2084602132,
     "op": -735360406,
@@ -336,28 +318,39 @@
     "rev": 2794331348,
     "op": -2061346364,
     "np_owner": -2132033368
+   },
+   {
+    "q": "2026Q3",
+    "rev": 3715141614,
+    "op": -1074239830,
+    "np_owner": -1071952218
    }
   ],
   "valuation": {
-   "price": 3950,
+   "price": 3955,
    "mcap": 0.0185,
    "shares": 4684781,
    "total_shares": 4684781,
    "wavg_shares": 4681079,
    "per": null,
-   "eps": -1073,
-   "pbr": 1.5813,
-   "bps": 2498,
-   "roe_ttm": -36.1,
-   "ttm_window": "2025Q3~2026Q2",
-   "ttm_np_owner": -5025659024,
+   "eps": -1111,
+   "pbr": 1.7362,
+   "bps": 2278,
+   "roe_ttm": -40.0,
+   "ttm_window": "2025Q4~2026Q3",
+   "ttm_np_owner": -5204016831,
    "ccy": "KRW",
    "bps_src": "자체",
-   "pbr_krx": 1.11,
+   "eps_src": "공시",
+   "pbr_krx": 1.18,
    "bps_krx": 3363.0,
    "basis": "PER·EPS·PBR·BPS 모두 자체 산출(네이버·토스와 동일 방식) · 배당은 DART 공시 주당현금배당금(보완:KRX) ÷ 현재가",
    "dps": 0.0,
-   "div": 0.0
+   "div": 0.0,
+   "hidden": {
+    "per": "loss"
+   }
   }
- }
+ },
+ "textRules": 2
 }
