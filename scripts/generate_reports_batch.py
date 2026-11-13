@@ -246,6 +246,14 @@ def diagnose(message):
         out["need"] = {"verdict": bool(rep.get("verdict")), "risks": len(rep.get("risks") or []),
                        "keypoints": len(rep.get("keypoints") or []), "business": bool(rep.get("business"))}
         out["keys"] = ",".join(sorted(rep))
+        # 항목 목록의 칸 이름(2026-11-13) — 위험 요인 항목에 분류(cat)만 남은 글(033790)의 본문 칸 이름을 알 수 없었다
+        items = []
+        for k in ("bull", "bear", "risks", "checkpoints"):
+            if isinstance(rep.get(k), list):
+                names = sorted({kk for x in rep[k] if isinstance(x, dict) for kk in x})
+                items.append(f"{k}:{'/'.join(names) or len(rep[k])}")
+        if items:
+            out["items"] = " ".join(items)
     return out
 
 

@@ -517,6 +517,32 @@ def collect_sources(message):
     return urls
 
 
+# 리포트의 맨 위 칸 — 닫는 '}' 를 빠뜨려 앞 칸 안에 들어간 칸을 꺼낼 때 쓴다(옛 형식 · 리포트 v2).
+_TOP_KEYS = ("lead", "desc", "keypoints", "business", "recent", "earnings", "industry", "outlook",
+             "valuation_comment", "bull", "bear", "risks", "checkpoints", "verdict", "sources")
+# 문자열 끝에 '","' 가 덧붙은 꼴 — '…in 2025.","},"industry":{'. 2026-11-13 진단에서 항목이 빠져 저장하지 못한 하이쿠 글 8편 중 6편이
+# 실적 분석 칸을 이렇게 닫았다(1편은 닫는 '}' 누락). 자동 복구(json_repair)는 그 자리에서 글을 끊어 뒤 칸(산업 분석 ~ 종합 의견)을 모두 잃었다.
+_STRAY_QC = re.compile(r'(?<!\\)","(\s*[}\]])')
+
+
+def _hoist(obj):
+    """깨진 JSON 을 읽은 뒤의 모양을 바로잡는다(2026-11-13).
+    · 닫는 '}' 를 빠뜨려 뒤 칸들이 앞 칸 안에 들어간 꼴 — {"earnings": {"ko", "en", "industry": …, "verdict": …}} → 맨 위로 꺼낸다.
+    · 자동 복구가 값 여럿(목록)을 돌려준 꼴 — 맨 위 칸이 가장 많은 것을 쓴다(예전에는 'list' 에 .get 을 불러 멈췄다)."""
+    if isinstance(obj, list):
+        dicts = [x for x in obj if isinstance(x, dict)]
+        if not dicts:
+            return obj
+        obj = max(dicts, key=lambda d: sum(k in d for k in _TOP_KEYS))
+    if not isinstance(obj, dict) or not any(k in obj for k in ("business", "earnings", "recent")):
+        return obj
+    for v in list(obj.values()):
+        if isinstance(v, dict):
+            for k in [k for k in v if k in _TOP_KEYS and k not in obj]:
+                obj[k] = v.pop(k)
+    return obj
+
+
 def parse_report(text):
     m = re.search(r"===JSON_START===(.*?)===JSON_END===", text, re.S)
     chunk = m.group(1) if m else text
@@ -529,11 +555,18 @@ def parse_report(text):
     if start >= 0 and end > start:
         chunk = chunk[start:end + 1]
     try:
-        return json.loads(chunk)
+        return _hoist(json.loads(chunk))
     except Exception:
-        # LLM이 만든 깨진 JSON(따옴표·콤마 누락 등) 자동 복구
-        from json_repair import repair_json
-        return repair_json(chunk, return_objects=True)
+        pass
+    fixed = _STRAY_QC.sub(r'"\1', chunk)
+    if fixed != chunk:
+        try:
+            return _hoist(json.loads(fixed))
+        except Exception:
+            chunk = fixed                     # 남은 깨짐은 자동 복구에 맡긴다
+    # LLM이 만든 깨진 JSON(따옴표·콤마 누락 등) 자동 복구
+    from json_repair import repair_json
+    return _hoist(repair_json(chunk, return_objects=True))
 
 
 def valid_report(rep):

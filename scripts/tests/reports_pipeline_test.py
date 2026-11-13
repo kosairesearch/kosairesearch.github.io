@@ -555,7 +555,7 @@ _src = Path(M.__file__).read_text(encoding="utf-8")
 ok("pickup(cl, as_of, only={bid})" in _src, "auto 는 주문을 넣은 뒤 자기 주문(only={bid})만 회수한다")
 for _b in ("msgbatch_C", "msgbatch_D"):
     S.batch_path(_b).unlink()
-# 버리는 글의 사정을 기록에 남긴다(2026-11-13) — 11/11~13 하이쿠 글 17편이 모양 검증에서 떨어졌는데 원문이 남지 않았다.
+# 버리는 글의 사정을 기록에 남긴다(2026-11-13) — 11/11~13 하이쿠 글 16편이 모양 검증에서 떨어졌는데 원문이 남지 않았다.
 _msg = types.SimpleNamespace(content=[types.SimpleNamespace(
     type="text", citations=None, text='===JSON_START==={"lead": "a", "business": "b"} {"lead": "c"}===JSON_END===')],
     stop_reason="end_turn", usage=None)
@@ -993,6 +993,22 @@ ok(n == 2 and r["earnings"]["en"] == "EN0" and r["outlook"]["en"] == "EN1",
    "분량 문턱보다 짧은 영문(사업 · 실적 · 산업 · 전망)도 채운다", f"n={n}")
 r = GOODREP(); r["keypoints"][0]["en"] = "Short but fine"
 ok(M.fill_missing_en(cl_fill, r) == 0, "문턱이 없는 칸(핵심 포인트 등)의 짧은 영문은 그대로 둔다")
+# 실적 분석 칸을 닫는 자리에서 깨진 JSON 을 바로잡아 읽는다(2026-11-13 진단 — 항목이 빠져 저장하지 못한 하이쿠 글 8편 중 7편)
+_full = GOODREP()
+_t = json.dumps(_full, ensure_ascii=False)
+_en = json.dumps(_full["earnings"]["en"], ensure_ascii=False)
+_a = _t.replace(_en + "}", _en[:-1] + '","}', 1)                       # '…in 2025.","},"industry"' — 문자열 끝에 '","' 가 덧붙음
+_b = _t.replace(_en + "}", _en, 1)                                       # 실적 칸을 닫지 않아 뒤 칸이 그 안에 들어감
+ok(_a != _t and _b != _t, "시험 글을 깨뜨렸다")
+_ra = M.g.parse_report("===JSON_START===" + _a + "===JSON_END===")
+ok(sorted(_ra) == sorted(_full) and _ra["earnings"] == _full["earnings"] and M.valid_v2(_ra, quiet=True),
+   "문자열 끝에 '\",\"' 가 덧붙은 글을 온전히 읽는다", str(sorted(_ra))[:200])
+_rb = M.g.parse_report("===JSON_START===" + _b + "===JSON_END===")
+ok(sorted(_rb) == sorted(_full) and sorted(_rb["earnings"]) == ["en", "ko"] and M.valid_v2(_rb, quiet=True),
+   "닫는 '}' 를 빠뜨려 앞 칸에 들어간 칸을 맨 위로 꺼낸다", str(sorted(_rb))[:200])
+_rc = M.g.parse_report('===JSON_START==={"lead": "a", "business": "b"} {"lead": "c"}===JSON_END===')
+ok(isinstance(_rc, dict) and _rc.get("business") == "b", "값이 여럿으로 읽혀도 멈추지 않는다(맨 위 칸이 가장 많은 것)", str(_rc))
+ok(M.g.parse_report("===JSON_START===" + _t + "===JSON_END===") == _full, "멀쩡한 글은 그대로 읽는다")
 
 # (j) 회수 경로 통합 — 영문이 빠진 배치 결과는 보정을 배치로 주문하고(즉시 호출 없음 · 2026-10-08),
 #     답을 받은 다음 회수에서 그 종목만 다시 처리해 저장한다
